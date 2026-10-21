@@ -15,8 +15,8 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | SBCM-2024-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 | 25/25/25/25 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 4 | 1 | mao-2023 a mao-2026 | A 1, B 1, C 1, D 1 |
+| SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
 
@@ -94,13 +94,22 @@ padrão novo. Próximo trabalho, nesta ordem:
    acervo (lista em `.oq/simao2026-lista.txt`). Só o comentário muda; enunciado, alternativas, gabarito e id ficam.
    Aplicar: `aplicar_lote.py ~/OrtoQuestoes-Biblioteca/lotes/simao-2026 mao revisao_NN` (os 8 de cotovelo,
    ombro-cotovelo-0645 a 0652, num arquivo à parte com o tema ombro-cotovelo).
-   Feito: revisões 01 a 19 (mao-1719 a mao-1810, todas as de mão). Próximo: os 8 de cotovelo (ombro-cotovelo-0645 a 0652) em revisao_20.py e revisao_21.py, aplicados com o tema ombro-cotovelo.
+   **Concluído em 20/10/2026:** revisões 01 a 20. Todas as 92 de mão (mao-1719 a mao-1810) e 6 de cotovelo
+   (ombro-cotovelo-0646, 0648 a 0652, revisao_20.py aplicada com o tema ombro-cotovelo) refeitas. A 0645 (bifurcação
+   alta da braquial, cerca de 15%) e a 0647 (origem da braquial no redondo maior) ficaram com o comentário anterior:
+   os livros e resumos locais não trazem esses dados, e o comentário não pode ser refeito com fonte. Se o Tales mandar
+   um livro de anatomia, refazer as duas.
    Atalho: `bash ~/OrtoQuestoes-Biblioteca/.oq/revisar2026.sh NN AAAA BBBB` aplica, valida, atualiza a linha
    acima e faz commit local (cópia em docs/mao/ferramentas/). Push e PR a cada 2 a 4 revisões (AGENTS.md,
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
+7. **Próximo: SBCM 2024, lote 02** (lote 01 publicado: 1, 69, 78, 80 = mao-2023 a 2026; a 2 pendente). Dica: quando o texto
+   em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho. O `progresso.py` quebra na
+   linha do Resumo do SBCM 2024: atualizar à mão (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
+   classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
+   `PROVA = "SBCM"`, `ANO = 2024`, copia com o slug `sbcm-2024`). Depois SBCM 2022,
+   SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
 
 **Como foi feito até aqui (repetir igual):**
 - Lote novo em `~/OrtoQuestoes-Biblioteca/lotes/simao-2023/lote_NN.py` (modelo: `lote_14.py` a `lote_17.py`).
@@ -256,3 +265,117 @@ Lotes: 01 (1, 2, 7, 9, 74; a 89 ficou sem fonte) · 02 (19, 21, 41, 78, 97) · 0
 09 (4, 26, 38, 39, 42) · 10 (67, 60, 51, 93, 43) · 11 (53, 59, 72, 83, 95) · 12 (31, 80, 54, 99, 14) ·
 13 (45, 13, 36, 96, 70) · 14 (10, 23, 33, 62, 75) · 15 (76, 91, 94, 47, 98) · 16 (3, 27, 32, 40, 63) ·
 17 (52, 11, 79, 92, 28) · 18 (15, 37, 56, 55, 73) · 19 (46, 57, 64, 68) · 20 cotovelo (16, 65, 29, 69, 48, 49).
+
+## SBCM 2024
+
+Separada de `PROVA SBCM 2024 - sem resposta.pdf` em 20/10/2026 (100 questões; a 85 tem só três alternativas no
+original e a 27 veio com alternativas emendadas: conferir à mão). Resposta da correção em [dicas/sbcm-2024.md](dicas/sbcm-2024.md).
+As páginas da correção são do Green original e coincidem com a paginação impressa da tradução, por isso o capítulo abaixo
+vem da página; ler a página antes de citar. "figura": a original depende de imagem; reescrever descrevendo o achado no
+enunciado, ou deixar pendente. Cotovelo vai no tema `ombro-cotovelo` (lote 20). Fontes fora da biblioteca (The Wrist,
+livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
+
+| Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
+|---|---|---|---|---|---|---|---|
+| 1 | Dupuytren: comorbidades mais associadas | lista | cap. 4, p. 148 e 149 | mao / Doença de Dupuytren | 01 | mao-2023 | publicada |
+| 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 01 |  | pendente: figura e zonas sem fonte no Green |
+| 3 | Luxação MF dorsal complexa do polegar: estrutura interposta | fato | cap. 8, p. 358 | mao / Lesões ligamentares dos dedos | 02 |  | a fazer |
+| 4 | Artrose mediocárpica no SNAC/SLAC: tratamento de escolha | conduta | cap. 12 e 16 (correção cita livro da SBCM) | mao / Artrose do punho e artroscopia | 03 |  | a fazer |
+| 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 537 | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 6 | Reconstrução da ARUD: autor e ligamentos | epônimo, figura | cap. 14, p. 579 e 580 | mao / Fibrocartilagem triangular e punho ulnar | 04 |  | a fazer |
+| 7 | SLADE e GEISSLER: tipo com união fibrosa e traço mínimo | classificação | cap. 16, p. 696 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
+| 8 | Acesso medial over-the-top na capsulotomia: vantagem | técnica | cap. 24 (arquivo 23), p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
+| 9 | Radial no cotovelo: cinco sítios de compressão | lista | cap. 28, p. 1116 | mao / Neuropatia ulnar e outras compressões | 10 |  | a fazer |
+| 10 | Paralisia radial alta: transferência sempre presente | transferência | cap. 31, p. 1229 | mao / Transferências tendinosas e paralisias | 11 |  | a fazer |
+| 11 | Plexo: nervo que sai direto da raiz | anatomia | cap. 34, p. 1305 | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
+| 12 | Exemplo de deficiência longitudinal | classificação | cap. 35 a 38 (correção cita livro da SBCM) | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
+| 13 | MADELUNG: causa associada | fato | cap. 38, p. 1505 | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
+| 14 | Sinal de PUTTI na paralisia obstétrica | sinal | cap. 40, p. 1578 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 15 | Retalho bipediculado do polegar | epônimo | cap. 44, p. 1719 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
+| 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 |  | a fazer |
+| 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
+| 18 | Rádio distal na criança: fator de perda de redução | fato | cap. 41, p. 1625 | mao / Fratura do rádio distal | 05 |  | a fazer |
+| 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 46 (página a achar) | mao / Doença de Kienböck | 07 |  | a fazer |
+| 20 | Polegar hipoplásico: tendão preferido na oponentoplastia | transferência | cap. 37 (correção cita livro da SBCM) | mao / Outras malformações congênitas | 16 |  | a fazer |
+| 21 | Carcinoma basocelular: formas | afirmativas | cap. 58, p. 2167 | mao / Tumores da mão | 08 |  | a fazer |
+| 22 | Síndrome compartimental neonatal | afirmativas | cap. 51, p. 1967 | mao / Outros temas da mão | 09 |  | a fazer |
+| 23 | Artropatia pela imagem | diagnóstico, figura | cap. 55, p. 2041 | mao / Mão reumatoide | 08 |  | a fazer |
+| 24 | Bloqueio interescalênico | afirmativas | cap. 1 (página a achar) | mao / Anestesia em cirurgia da mão | 09 |  | a fazer |
+| 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
+| 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
+| 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist (fora da biblioteca) | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 28 | Teste de BERGER | epônimo | correção cita The Wrist; procurar no cap. 28 | mao / Exame físico da mão e punho | 11 |  | a fazer |
+| 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36 e 47, p. 1403 e 1404 | mao / Outras malformações congênitas | 16 |  | a fazer |
+| 30 | Kienböck na criança: conduta (algoritmo de Lichtman) | conduta | cap. 16, p. 733 e 737 | mao / Doença de Kienböck | 06 |  | a fazer |
+| 31 | Procedimento de LEECHAVENGVONGS | afirmativas | cap. 34, p. 1329 | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
+| 32 | Germes de mordida animal, humana e em diabético ou usuário de droga | par | cap. 2, p. 17 e 18 | mao / Infecções da mão | 09 |  | a fazer |
+| 33 | Contratura em flexão da IFP: vias de acesso | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 03 |  | a fazer |
+| 34 | Rádio distal: o que é a lágrima | anatomia | cap. 15, p. 604 | mao / Fratura do rádio distal | 05 |  | a fazer |
+| 35 | Cisto: pseudorrecidiva após ressecção artroscópica | conduta | cap. 17, p. 775 | mao / Cistos sinoviais e gangliões | 07 |  | a fazer |
+| 36 | Lesão crônica do radial: transferências de nervo | transferência | cap. 31, p. 1238 | mao / Lesões de nervos periféricos | 11 |  | a fazer |
+| 37 | Espasticidade: deformidade comum | fato | cap. 32, p. 1243 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
+| 38 | Malformações do membro: semanas de gestação | número | cap. 35, p. 1363 | mao / Outras malformações congênitas | 14 |  | a fazer |
+| 39 | Uma mão para comer e outra para limpar: qual doença | princípio | cap. 39, p. 1534 | mao / Outras malformações congênitas | 12 |  | a fazer |
+| 40 | Retalho de KITE: artéria | anatomia | cap. 44, p. 1716 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
+| 41 | Anterolateral da coxa: ramo da circunflexa femoral lateral | anatomia | cap. 45, p. 1767 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
+| 42 | Nervo ulnar no braço: relações | anatomia | cap. 28, p. 1105 | mao / Neuropatia ulnar e outras compressões | 10 |  | a fazer |
+| 43 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 | mao / Fraturas dos metacarpos e falanges | 02 |  | a fazer |
+| 44 | Tuberculose no membro superior: o que raramente envolve | fato | cap. 3, p. 106 | mao / Infecções da mão | 09 |  | a fazer |
+| 45 | WEISS-HASTINGS: tipo coronal dorsal | classificação | cap. 7, p. 285 | mao / Fraturas dos metacarpos e falanges | 02 |  | a fazer |
+| 46 | GARCIA-ELIAS: propriocepção nas lesões escafossemilunares | classificação | cap. 13, p. 514 | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
+| 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 |  | a fazer |
+| 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 |  | a fazer |
+| 50 | Paralisia obstétrica: segunda lesão mais comum | fato | cap. 40, p. 1563 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 51 | ASIA: grau pela função motora preservada | classificação | cap. 33 (página a achar) | mao / Transferências tendinosas e paralisias | 13 |  | a fazer |
+| 52 | APERT: tipo em que se resseca um dedo | classificação | cap. 36, p. 1384 | mao / Sindactilia e polidactilia | 16 |  | a fazer |
+| 53 | BAYNE modificada, tipo 3: rádio distal | classificação | cap. 38, p. 1495 | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
+| 54 | Artrogripose distal tipo 3: nome e achados | classificação | cap. 39, p. 1535 | mao / Outras malformações congênitas | 16 |  | a fazer |
+| 55 | Curativo a vácuo: quando não usar | contraindicação | cap. 43, p. 1684 | mao / Retalhos e cobertura cutânea | 10 |  | a fazer |
+| 56 | Pele palmar: estruturas da figura | anatomia, figura | cap. 44, p. 1703 | mao / Anatomia da mão e punho | 18 |  | a fazer |
+| 57 | Retalho homodigital dorsorradial do polegar: tamanho e fechamento | número | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
+| 58 | Retalho radial do antebraço: perfurantes e dimensões | anatomia, número | cap. 45, p. 1759 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
+| 59 | Tuberculose óssea na criança: local mais comum | fato | cap. 3, p. 118 | mao / Infecções da mão | 08 |  | a fazer |
+| 60 | Tetraplegia: função do punho e mão a obter | fato | cap. 33, p. 1272 | mao / Transferências tendinosas e paralisias | 13 |  | a fazer |
+| 61 | Paralisia obstétrica: sinal de avulsão | sinal | cap. 40, p. 1563 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 62 | Oponentoplastia de BURKHALTER: tendão | epônimo | cap. 31, p. 1196 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
+| 63 | Retalhos venosos | afirmativas | cap. 45, p. 1748 | mao / Microcirurgia e retalhos livres | 19 |  | a fazer |
+| 64 | Cisto volar: localização habitual | anatomia | cap. 59, p. 2201 | mao / Cistos sinoviais e gangliões | 07 |  | a fazer |
+| 65 | Dedo em gatilho: nervo digital em maior risco | anatomia | cap. 56, p. 2109 | mao / Dedo em gatilho e outras tenossinovites | 07 |  | a fazer |
+| 66 | CMC do polegar: estabilizador primário | anatomia | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 |  | a fazer |
+| 67 | Escafoide: porcentagem invisível na radiografia inicial | número | cap. 16, p. 682 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
+| 68 | Escafoide: comprimento do parafuso | número | cap. 16, p. 686 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
+| 69 | Dupuytren: estruturas da figura | anatomia, figura | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2024 | publicada |
+| 70 | Rizartrose: estágio de EATON pela imagem | classificação, figura | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 |  | a fazer |
+| 71 | CMC do polegar: ligamentos da figura | anatomia, figura | cap. 11, p. 425 | mao / Rizartrose e artrose da mão | 03 |  | a fazer |
+| 72 | Radiografia: diagnóstico | diagnóstico, figura | cap. 38 (correção aponta p. 151) | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
+| 73 | Ângulo da lágrima no desvio anterior | número | cap. 15, p. 604 | mao / Fratura do rádio distal | 05 |  | a fazer |
+| 74 | Amputação no eponíquio: zonas de TAMAI e ALLEN | classificação | cap. 49, p. 1908 | mao / Amputações e reimplantes | 10 |  | a fazer |
+| 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
+| 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36, p. 1436 | mao / Deformidades dos dedos | 16 |  | a fazer |
+| 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1853 | mao / Retalhos e cobertura cutânea | 19 |  | a fazer |
+| 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
+| 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 | mao / Outras malformações congênitas | 14 |  | a fazer |
+| 80 | PANEVA-HOLEVICH: tendão inserido na falange distal | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 01 | mao-2026 | publicada |
+| 81 | Marsupialização: onde se faz | técnica | cap. 2, p. 25 | mao / Infecções da mão | 09 |  | a fazer |
+| 82 | Paralisia cerebral: tipo de instabilidade cárpica | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 83 | Procedimento da imagem na ARUD | epônimo, figura | cap. 14, p. 587 | mao / Fibrocartilagem triangular e punho ulnar | 05 |  | a fazer |
+| 84 | Fratura-luxação radiocárpica: tipo de FERNANDEZ | classificação | cap. 15, p. 608 | mao / Fratura do rádio distal | 05 |  | a fazer |
+| 85 | Carpo sem o escafoide: osso mais fraturado | fato | cap. 16, p. 712 | mao / Fraturas do escafoide e do carpo | 06 |  | a fazer |
+| 86 | Incidência radiocapitelar: posição e inclinação | imagem | cap. 19 (página a achar) | ombro-cotovelo / Imagem do ombro e cotovelo | 20 |  | a fazer |
+| 87 | Epicondilite medial: origens mais acometidas | fato | cap. 25 (arquivo 24), p. 1026 | ombro-cotovelo / Epicondilite lateral e medial | 20 |  | a fazer |
+| 88 | Desfiladeiro torácico: compressão associada mais comum | fato | cap. 29, p. 1133 | mao / Neuropatia ulnar e outras compressões | 11 |  | a fazer |
+| 89 | LITTLER para a garra ulnar: tendão | epônimo | cap. 31, p. 1214 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
+| 90 | Grácil para o bíceps: nervo motor | anatomia | cap. 34, p. 1335 | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
+| 91 | Macrodactilia, FLATT: tipo com neurofibromatose | classificação | cap. 36, p. 1438 | mao / Outras malformações congênitas | 17 |  | a fazer |
+| 92 | Sinostose radioulnar bilateral: posição da osteotomia | número | cap. 38, p. 1516 | mao / Outras malformações congênitas | 15 |  | a fazer |
+| 93 | Último osso do carpo a ossificar | fato | cap. 41, p. 1618 | mao / Anatomia da mão e punho | 17 |  | a fazer |
+| 94 | Retalho interósseo posterior reverso: entre quais músculos | anatomia | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
+| 95 | Mão: número de compartimentos | número | cap. 51, p. 1972 | mao / Outros temas da mão | 10 |  | a fazer |
+| 96 | Lápis na xícara: qual artrite | imagem | cap. 55, p. 2040 | mao / Mão reumatoide | 07 |  | a fazer |
+| 97 | Queimadura: grau em que aparecem bolhas | fato | cap. 57, p. 2122 | mao / Queimaduras | 08 |  | a fazer |
+| 98 | Aneurisma na mão: artéria mais acometida | fato | cap. 60, p. 2251 | mao / Outros temas da mão | 08 |  | a fazer |
+| 99 | Instabilidade rotatória posterolateral: estrutura principal | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
+| 100 | Incidência de BREWERTON: o que mostra | imagem | cap. 7, p. 261 | mao / Lesões ligamentares dos dedos | 02 |  | a fazer |
+
+Lotes: 01 (1, 69, 78, 80, 2) · 02 (43, 45, 100, 3, 16) · 03 (33, 66, 70, 71, 4) · 04 (5, 46, 82, 27, 6) · 05 (83, 34, 73, 84, 18) · 06 (7, 67, 68, 85, 30) · 07 (19, 35, 64, 65, 96) · 08 (23, 21, 97, 98, 59) · 09 (32, 44, 81, 24, 22) · 10 (95, 55, 74, 9, 42) · 11 (28, 88, 10, 36, 49) · 12 (62, 89, 17, 37, 39) · 13 (51, 60, 11, 31, 90) · 14 (14, 50, 61, 38, 79) · 15 (12, 13, 53, 72, 92) · 16 (20, 29, 52, 54, 76) · 17 (91, 93, 15, 40, 57) · 18 (56, 75, 94, 58, 41) · 19 (63, 77, 25, 26) · 20 (8, 47, 48, 86, 87, 99).
