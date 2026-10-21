@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: leilão do canal de Guyon e Cirurgia da Mão</title>
+<!-- Stories de 21/10/2026, estilo Leilão (combinado com o Tales em 19/10; ordem.mjs). 3 stories:
+     1. o lote (questão mao-1971, OrtoQuestões Simulado no padrão do SIMÃO 2023, questão 4) com os quatro lances;
+     2. arrematado: a resposta e um trecho do comentário, com as páginas do Green;
+     3. o catálogo da casa: Cirurgia da Mão no site (título SBCM, SIMÃO e as provas de seleção).
+     Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-21-leilao-guyon/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Cinzel; src: url(../../fontes/cinzel-latin-600-normal.woff2) format('woff2'); font-weight: 600; }
+@font-face { font-family: Cinzel; src: url(../../fontes/cinzel-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+@font-face { font-family: Cinzel; src: url(../../fontes/cinzel-latin-900-normal.woff2) format('woff2'); font-weight: 900; }
+:root { --vinho: #3B0F18; --vinho2: #24070D; --vinho3: #5A1A26; --ouro: #E9C46A; --ouro2: #B8892E; --ouroclaro: #F8E6B0;
+  --creme: #FBF4E4; --tinta: #2A1A14; --tinta2: #6B5446; --verde: #14655E; --verdeclaro: #2FA38F; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--creme);
+  background:
+    radial-gradient(900px 700px at 50% 34%, rgba(233,196,106,.16), transparent 70%),
+    repeating-linear-gradient(90deg, rgba(0,0,0,.10) 0 3px, transparent 3px 22px),
+    linear-gradient(180deg, var(--vinho3), var(--vinho) 38%, var(--vinho2)); }
+/* Cortina de veludo nas bordas e moldura dourada */
+section::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(0,0,0,.45), transparent 9%, transparent 91%, rgba(0,0,0,.45)); }
+.moldura { position: absolute; inset: 34px; border: 3px solid rgba(233,196,106,.55); border-radius: 26px; pointer-events: none; }
+.moldura::after { content: ''; position: absolute; inset: 10px; border: 1.5px solid rgba(233,196,106,.28); border-radius: 18px; }
+.abs { position: absolute; }
+.casa { position: absolute; top: 96px; left: 0; right: 0; text-align: center; font: 700 26px Cinzel; letter-spacing: .32em; color: var(--ouro); }
+.casa small { display: block; margin-top: 10px; font: 600 19px Inter; letter-spacing: .28em; color: rgba(248,230,176,.7); }
+.contador { position: absolute; top: 104px; right: 78px; font: 700 20px Inter; letter-spacing: .12em; color: rgba(248,230,176,.6); }
+.marca { position: absolute; bottom: 96px; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; color: var(--creme); }
+.marca svg { width: 46px; height: 46px; display: block; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.ornamento { display: flex; align-items: center; justify-content: center; gap: 18px; color: var(--ouro); }
+.ornamento::before, .ornamento::after { content: ''; width: 150px; height: 2px; background: linear-gradient(90deg, transparent, var(--ouro)); }
+.ornamento::after { transform: scaleX(-1); }
+.ornamento i { width: 12px; height: 12px; background: var(--ouro); transform: rotate(45deg); }
+
+/* ---------- Story 1: o lote ---------- */
+.etiqueta { position: absolute; left: 50%; transform: translateX(-50%) rotate(-3deg); top: 250px; width: 420px; padding: 26px 30px 22px 74px;
+  background: linear-gradient(160deg, var(--ouroclaro), var(--ouro) 60%, var(--ouro2)); color: var(--vinho2); border-radius: 10px 60px 60px 10px;
+  box-shadow: 0 16px 34px rgba(0,0,0,.45); }
+.etiqueta::before { content: ''; position: absolute; left: 26px; top: 50%; width: 26px; height: 26px; margin-top: -13px; border-radius: 50%;
+  background: var(--vinho); box-shadow: inset 0 2px 4px rgba(0,0,0,.6); }
+.etiqueta b { display: block; font: 900 62px/1 Cinzel; letter-spacing: .04em; }
+.etiqueta span { display: block; margin-top: 6px; font: 700 21px Inter; letter-spacing: .14em; text-transform: uppercase; }
+.catalogo { position: absolute; left: 92px; right: 92px; background: var(--creme); color: var(--tinta); border-radius: 22px; padding: 46px 52px 44px;
+  box-shadow: 0 0 0 3px var(--ouro2), 0 24px 50px rgba(0,0,0,.45); }
+.catalogo .rot { font: 700 19px Inter; letter-spacing: .2em; text-transform: uppercase; color: #9B3245; }
+.catalogo .enun { margin-top: 16px; font: 700 50px/1.18 Playfair; letter-spacing: -.01em; text-wrap: balance; }
+.catalogo .enun em { font-style: italic; color: #9B3245; }
+.catalogo .origem { margin-top: 22px; padding-top: 18px; border-top: 2px dashed rgba(107,84,70,.35); font: 500 21px/1.4 Inter; color: var(--tinta2); }
+.catalogo .origem b { color: var(--tinta); }
+.lances { position: absolute; left: 92px; right: 92px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px 28px; }
+.lance { position: relative; display: grid; grid-template-columns: 96px 1fr; align-items: center; gap: 20px; padding: 18px 22px 18px 18px; min-height: 150px;
+  border-radius: 20px; background: rgba(36,7,13,.55); box-shadow: inset 0 0 0 2px rgba(233,196,106,.45); }
+.raquete { position: relative; width: 96px; height: 112px; }
+.raquete .placa { position: absolute; top: 0; left: 4px; width: 88px; height: 82px; border-radius: 44px 44px 40px 40px; background: var(--creme);
+  box-shadow: 0 0 0 3px var(--ouro2), 0 6px 10px rgba(0,0,0,.4); display: grid; place-items: center; font: 900 46px Cinzel; color: var(--vinho); }
+.raquete .cabo { position: absolute; left: 40px; top: 78px; width: 16px; height: 34px; border-radius: 0 0 6px 6px; background: linear-gradient(90deg, #7a4a24, #4b2a12); }
+.lance p { font: 600 33px/1.2 Inter; color: var(--creme); text-wrap: balance; }
+.pergunta { position: absolute; left: 92px; right: 92px; text-align: center; }
+.pergunta h2 { font: 700 54px/1.1 Playfair; font-style: italic; color: var(--ouro); }
+.pergunta p { margin-top: 14px; font: 500 28px/1.4 Inter; color: rgba(251,244,228,.82); }
+.martelo { position: absolute; width: 170px; height: 170px; }
+
+/* ---------- Story 2: arrematado ---------- */
+.grito { position: absolute; left: 0; right: 0; top: 240px; text-align: center; font: 600 30px/1.4 Playfair; font-style: italic; color: rgba(248,230,176,.8); }
+.vencedor { position: absolute; left: 92px; right: 92px; top: 330px; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: center;
+  padding: 34px 40px; border-radius: 26px; background: linear-gradient(160deg, rgba(233,196,106,.25), rgba(233,196,106,.08)); box-shadow: inset 0 0 0 3px var(--ouro); }
+.vencedor .raquete { width: 150px; height: 170px; transform: rotate(-8deg); }
+.vencedor .raquete .placa { width: 136px; height: 126px; left: 7px; font-size: 72px; }
+.vencedor .raquete .cabo { left: 62px; top: 120px; width: 24px; height: 50px; }
+.vencedor small { display: block; font: 700 20px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--ouro); }
+.vencedor h2 { margin-top: 8px; font: 800 58px/1.05 Playfair; color: var(--creme); }
+.carimbo { position: absolute; right: 64px; top: 548px; padding: 12px 26px; border: 5px solid #E3574F; border-radius: 12px; color: #FF8A80;
+  font: 900 40px Cinzel; letter-spacing: .14em; transform: rotate(9deg); background: rgba(36,7,13,.55); }
+.laudo { position: absolute; left: 92px; right: 92px; top: 650px; background: var(--creme); color: var(--tinta); border-radius: 22px; padding: 40px 46px 36px;
+  box-shadow: 0 0 0 3px var(--ouro2), 0 24px 50px rgba(0,0,0,.45); }
+.laudo .rot { display: flex; justify-content: space-between; align-items: center; font: 700 19px Inter; letter-spacing: .2em; text-transform: uppercase; color: #9B3245; }
+.laudo .rot span:last-child { letter-spacing: .06em; color: var(--tinta2); }
+.zonas { margin-top: 20px; display: grid; gap: 12px; }
+.zona { display: grid; grid-template-columns: 92px 1fr auto; align-items: center; gap: 18px; padding: 14px 18px; border-radius: 14px; background: #F2E7CF; }
+.zona b { font: 900 40px Cinzel; color: var(--vinho); text-align: center; }
+.zona span { font: 600 29px/1.2 Inter; }
+.zona span small { display: block; margin-top: 2px; font: 500 21px Inter; color: var(--tinta2); }
+.zona.vence { background: #15372F; color: var(--creme); box-shadow: 0 0 0 3px var(--ouro); }
+.zona.vence b { color: var(--ouro); } .zona.vence span small { color: rgba(251,244,228,.75); }
+.pag { padding: 6px 12px; border-radius: 999px; background: var(--vinho); color: var(--ouroclaro); font: 700 18px Inter; letter-spacing: .04em; white-space: nowrap; }
+.zona.vence .pag { background: var(--ouro); color: var(--vinho2); }
+.citacao { margin-top: 24px; padding: 18px 22px 18px 26px; border-left: 6px solid var(--ouro2); background: #FFF9EC; border-radius: 0 14px 14px 0;
+  font: italic 500 29px/1.4 Playfair; color: var(--tinta); }
+.citacao cite { display: block; margin-top: 8px; font: normal 600 20px Inter; color: var(--tinta2); }
+.porque { margin-top: 22px; display: grid; gap: 10px; }
+.porque p { font: 500 24px/1.35 Inter; color: var(--tinta2); }
+.porque p b { color: var(--tinta); }
+.selo-coment { position: absolute; left: 92px; right: 92px; top: 1400px; display: flex; align-items: center; gap: 22px; padding: 22px 28px; border-radius: 20px;
+  background: rgba(36,7,13,.6); box-shadow: inset 0 0 0 2px rgba(233,196,106,.5); }
+.selo-coment .livro { flex: none; width: 66px; height: 66px; border-radius: 14px; display: grid; place-items: center; background: var(--ouro); color: var(--vinho2); }
+.selo-coment .livro svg { width: 38px; height: 38px; }
+.selo-coment p { font: 600 28px/1.35 Inter; color: var(--creme); }
+.selo-coment p b { color: var(--ouro); }
+
+/* ---------- Story 3: o catálogo da casa ---------- */
+.titulo3 { position: absolute; left: 80px; right: 80px; top: 250px; text-align: center; }
+.titulo3 small { display: block; font: 700 21px Inter; letter-spacing: .24em; text-transform: uppercase; color: var(--ouro); }
+.titulo3 h1 { margin-top: 14px; font: 800 70px/1.05 Playfair; letter-spacing: -.015em; color: var(--creme); }
+.titulo3 h1 em { color: var(--ouro); }
+.titulo3 p { margin-top: 18px; font: 500 30px/1.4 Inter; color: rgba(251,244,228,.85); text-wrap: balance; }
+.duas { position: absolute; left: 80px; right: 80px; top: 640px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.lote { position: relative; padding: 34px 30px 30px; border-radius: 22px; background: var(--creme); color: var(--tinta);
+  box-shadow: 0 0 0 3px var(--ouro2), 0 18px 36px rgba(0,0,0,.4); }
+.lote .num { font: 700 18px Inter; letter-spacing: .2em; text-transform: uppercase; color: #9B3245; }
+.lote h3 { margin-top: 10px; font: 900 50px/1 Cinzel; color: var(--vinho); }
+.lote h4 { margin-top: 8px; font: 700 25px/1.25 Inter; color: var(--tinta); }
+.lote p { margin-top: 12px; font: 500 22px/1.4 Inter; color: var(--tinta2); }
+.extras { position: absolute; left: 80px; right: 80px; top: 1000px; padding: 30px 34px; border-radius: 22px; background: rgba(36,7,13,.55); box-shadow: inset 0 0 0 2px rgba(233,196,106,.45); }
+.extras h3 { font: 700 30px/1.3 Playfair; color: var(--creme); }
+.extras h3 em { color: var(--ouro); }
+.chips { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 12px; }
+.chips span { padding: 10px 18px; border-radius: 999px; background: var(--creme); color: var(--vinho2); font: 700 25px Inter; box-shadow: 0 0 0 2px var(--ouro2); }
+.vantagens { position: absolute; left: 80px; right: 80px; top: 1300px; display: grid; gap: 14px; }
+.vantagens p { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: start; font: 600 28px/1.35 Inter; color: var(--creme); }
+.vantagens p i { width: 34px; height: 34px; margin-top: 2px; border-radius: 50%; background: var(--ouro); display: grid; place-items: center; }
+.vantagens p i svg { width: 20px; height: 20px; color: var(--vinho2); }
+.chamada { position: absolute; left: 80px; right: 80px; top: 1530px; text-align: center; }
+.chamada b { display: inline-block; padding: 22px 46px; border-radius: 999px; background: linear-gradient(160deg, var(--ouroclaro), var(--ouro) 60%, var(--ouro2));
+  color: var(--vinho2); font: 800 38px Jakarta; letter-spacing: -.01em; box-shadow: 0 14px 30px rgba(0,0,0,.4); }
+.chamada span { display: block; margin-top: 16px; font: 600 26px Inter; color: rgba(251,244,228,.85); }
+.chamada span u { text-decoration: none; color: var(--ouro); font-weight: 800; }
+</style></head><body>
+
+<!-- ===================== Story 1: o lote ===================== -->
+<section id="story-1">
+  <div class="moldura"></div>
+  <div class="casa">Casa de leilões<small>Orto Questões · Cirurgia da Mão</small></div>
+  <div class="contador">1/3</div>
+  <div class="etiqueta"><b>LOTE III</b><span>Canal de Guyon</span></div>
+  <div class="catalogo" style="top:470px">
+    <div class="rot">Peça do catálogo</div>
+    <p class="enun">Que déficit causa a compressão do nervo ulnar na <em style="white-space:nowrap">zona III</em> do canal de GUYON?</p>
+    <p class="origem"><b>OrtoQuestões Simulado</b> no padrão do SIMÃO, inspirado na questão 4 da prova de 2023.</p>
+  </div>
+  <div class="lances" style="top:950px">
+    <div class="lance"><div class="raquete"><div class="placa">A</div><div class="cabo"></div></div><p>Déficit sensitivo e motor</p></div>
+    <div class="lance"><div class="raquete"><div class="placa">B</div><div class="cabo"></div></div><p>Nenhum tipo de déficit</p></div>
+    <div class="lance"><div class="raquete"><div class="placa">C</div><div class="cabo"></div></div><p>Somente déficit motor</p></div>
+    <div class="lance"><div class="raquete"><div class="placa">D</div><div class="cabo"></div></div><p>Somente déficit sensitivo</p></div>
+  </div>
+  <div class="pergunta" style="top:1360px">
+    <div class="ornamento"><i></i></div>
+    <h2 style="margin-top:22px">Qual lance arremata o lote?</h2>
+    <p>Guarde a sua letra. O martelo bate no próximo story.</p>
+  </div>
+  <div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div>
+</section>
+
+<!-- ===================== Story 2: arrematado ===================== -->
+<section id="story-2">
+  <div class="moldura"></div>
+  <div class="casa">Casa de leilões<small>Lote III · Canal de Guyon</small></div>
+  <div class="contador">2/3</div>
+  <p class="grito">Dou-lhe uma, dou-lhe duas...</p>
+  <div class="vencedor">
+    <div class="raquete"><div class="placa">D</div><div class="cabo"></div></div>
+    <div><small>Lance vencedor</small><h2>Somente déficit sensitivo</h2></div>
+  </div>
+  <div class="carimbo">Arrematado</div>
+  <div class="laudo">
+    <div class="rot"><span>Laudo do comentário</span><span>Green, cap. 28</span></div>
+    <div class="zonas">
+      <div class="zona"><b>I</b><span>Antes da bifurcação<small>motor e sensitivo (letra A)</small></span><em class="pag">p. 1103</em></div>
+      <div class="zona"><b>II</b><span>Ramo motor profundo<small>só motor (letra C)</small></span><em class="pag">p. 1103</em></div>
+      <div class="zona vence"><b>III</b><span>Ramo sensitivo superficial<small>só sensitivo (letra D)</small></span><em class="pag">p. 1103</em></div>
+    </div>
+    <p class="citacao">“O ramo sensorial superficial, a zona III, está associado a alterações sensoriais puras.”<cite>Green’s Operative Hand Surgery, 8ª ed., cap. 28, p. 1103</cite></p>
+    <div class="porque">
+      <p><b>Por que não B:</b> a zona III dá sintomas, na sensibilidade do mínimo e da metade medial do anular.</p>
+    </div>
+  </div>
+  <div class="selo-coment">
+    <span class="livro" data-livro></span>
+    <p>No site, <b>cada alternativa</b> vem comentada com o livro e <b>a página</b> de onde saiu a resposta.</p>
+  </div>
+  <div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div>
+</section>
+
+<!-- ===================== Story 3: o catálogo da casa ===================== -->
+<section id="story-3">
+  <div class="moldura"></div>
+  <div class="casa">Catálogo da casa<small>Cirurgia da Mão</small></div>
+  <div class="contador">3/3</div>
+  <div class="titulo3">
+    <small>Para entrar e para o título</small>
+    <h1>Cirurgia da Mão<br>no <em style="white-space:nowrap">Orto Questões</em></h1>
+    <p>Quem vai prestar a seleção para a residência e quem vai fazer o título treinam no mesmo lugar.</p>
+  </div>
+  <div class="duas">
+    <div class="lote"><div class="num">Lote do título</div><h3>SBCM</h3><h4>Título da Sociedade Brasileira de Cirurgia da Mão</h4><p>OrtoQuestões Simulados no padrão da prova.</p></div>
+    <div class="lote"><div class="num">Lote da seleção</div><h3>SIMÃO</h3><h4>A seleção para entrar na residência de Cirurgia da Mão</h4><p>OrtoQuestões Simulados no padrão da prova.</p></div>
+  </div>
+  <div class="extras">
+    <h3>E as provas de seleção para a residência, <em>com o nome real de cada uma</em>:</h3>
+    <div class="chips"><span>USP-SP</span><span>UFG</span><span>PUC-SP</span><span>ENARE</span><span>INTO</span><span>FMRP-USP</span><span>IAUPE</span><span>Einstein</span><span>UERJ</span></div>
+  </div>
+  <div class="vantagens">
+    <p><i data-certo></i>Comentário de cada alternativa, com o livro e a página</p>
+    <p><i data-certo></i>Treino por tema, revisão dos erros e cronograma até a prova</p>
+  </div>
+  <div class="chamada"><b>Treine grátis</b><span><u>ortoquestoes.com.br</u> · o caminho está no perfil</span></div>
+  <div class="marca" data-simbolo><b>Orto</b><span>Questões</span></div>
+</section>
+
+<template id="simbolo"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg></template>
+<template id="livro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.3C10 4.7 6.6 4.2 3.5 4.5V18c3.1-.3 6.5.2 8.5 1.7 2-1.5 5.4-2 8.5-1.7V4.5c-3.1-.3-6.5.2-8.5 1.8zM12 6.3v13.4"/></svg></template>
+<template id="certo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></template>
+<script>
+const sim = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('[data-simbolo]').forEach(e => e.insertAdjacentHTML('afterbegin', sim))
+document.querySelectorAll('[data-livro]').forEach(e => e.innerHTML = document.getElementById('livro').innerHTML)
+document.querySelectorAll('[data-certo]').forEach(e => e.innerHTML = document.getElementById('certo').innerHTML)
+</script>
+</body></html>
