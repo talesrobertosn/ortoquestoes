@@ -86,7 +86,8 @@ const PROVAS_DO_ACERVO = [
   { nome: 'R4 ENARE', cor: '#f08f78' },
   { nome: 'R4 Coluna', cor: '#8fb6ef' },
   { nome: 'Cirurgia da mão', cor: '#f0c46a' },
-  { nome: 'Título de cirurgia da mão (SIMÃO)', cor: '#f0c46a' },
+  { nome: 'Título de cirurgia da mão (SBCM)', cor: '#f0c46a' },
+  { nome: 'SIMÃO (simulado do título)', cor: '#f0c46a' },
   { nome: 'Fellowship de quadril', cor: '#c5a8f0' },
   { nome: 'TECOC', cor: '#9fd8f2' },
 ]
@@ -352,7 +353,7 @@ export function Inicio() {
 
         <section className="inicio-bloco inicio-seo" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
-          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, há OrtoQuestões Simulados no padrão do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
+          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, da SBCM, há OrtoQuestões Simulados no padrão da prova de título e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
           <nav className="inicio-guias" aria-label="Conheça o banco e organize sua preparação">
             <a href={recurso('questoes/')}>Questões por assunto</a>
             <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
