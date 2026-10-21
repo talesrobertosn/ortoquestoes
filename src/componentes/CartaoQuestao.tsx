@@ -571,8 +571,12 @@ function CartaoQuestaoExibida({
           <>
             <Resultado questao={questao} resposta={resposta!} agora={respondeuAgora} nome={nome} />
             {turma && <p className="alt-turma-resumo"><Icone nome="grupo" tamanho={15} /> {turma.porLetra
-              ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : resposta!.correta === true && turma.acertoPrimeira <= 40 ? '; você acertou uma que a maioria erra' : ''}.</>
+              ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : ''}.</>
               : <>A porcentagem da turma em cada alternativa aparece a partir de 3 pessoas{turma.respondentes ? ` (até agora, ${pessoas(turma.respondentes)})` : ''}.</>}</p>}
+            {/* Acerto raro ganha destaque e o nome da pessoa; o nome só aparece em mensagem positiva (Tales, 21/10/2026). */}
+            {turma?.porLetra && resposta!.correta === true && turma.acertoPrimeira <= 40 && (
+              <p className="alt-turma-elogio" role="status"><Icone nome="estrela" tamanho={18} /><span><strong>{nome ? `${nome}, parabéns` : 'Parabéns'}</strong>, você acertou uma que a maioria erra.</span></p>
+            )}
           </>
         )}
 
