@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 45 | 5 | mao-2023 a mao-2067 | A 12, B 11, C 11, D 11 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 49 | 6 | mao-2023 a mao-2071 | A 13, B 12, C 12, D 12 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 11** (lotes 01 a 10 publicados: mao-2023 a mao-2067; pendentes 2, 19, 23 e 71, figura, e 27, sem fonte). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 12** (lotes 01 a 11 publicados: mao-2023 a mao-2071; pendentes 2, 19, 23 e 71, figura, e 27 e 28, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -286,7 +286,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 7 | SLADE e GEISSLER: tipo com união fibrosa e traço mínimo | classificação | cap. 16, p. 696 | mao / Fraturas do escafoide e do carpo | 06 | mao-2045 | publicada |
 | 8 | Acesso medial over-the-top na capsulotomia: vantagem | técnica | cap. 24 (arquivo 23), p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
 | 9 | Radial no cotovelo: cinco sítios de compressão | lista | cap. 28, p. 1116 | mao / Neuropatia ulnar e outras compressões | 10 | mao-2066 | publicada |
-| 10 | Paralisia radial alta: transferência sempre presente | transferência | cap. 31, p. 1229 | mao / Transferências tendinosas e paralisias | 11 |  | a fazer |
+| 10 | Paralisia radial alta: transferência sempre presente | transferência | cap. 31, p. 1228 a 1230 | mao / Transferências tendinosas e paralisias | 11 | mao-2069 | publicada |
 | 11 | Plexo: nervo que sai direto da raiz | anatomia | cap. 34, p. 1305 | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
 | 12 | Exemplo de deficiência longitudinal | classificação | cap. 35 a 38 (correção cita livro da SBCM) | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
 | 13 | MADELUNG: causa associada | fato | cap. 38, p. 1505 | mao / Deficiências longitudinais e mão torta | 15 |  | a fazer |
@@ -304,7 +304,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
 | 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
 | 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 04 |  | pendente: sem fonte (valores do ângulo SL não estão no Green) |
-| 28 | Teste de BERGER | epônimo | correção cita The Wrist; procurar no cap. 28 | mao / Exame físico da mão e punho | 11 |  | a fazer |
+| 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 11 |  | pendente: sem fonte (teste de BERGER não está no Green nem no Pardini) |
 | 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36 e 47, p. 1403 e 1404 | mao / Outras malformações congênitas | 16 |  | a fazer |
 | 30 | Kienböck na criança: conduta (algoritmo de Lichtman) | conduta | cap. 16, p. 733 | mao / Doença de Kienböck | 06 | mao-2049 | publicada |
 | 31 | Procedimento de LEECHAVENGVONGS | afirmativas | cap. 34, p. 1329 | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
@@ -312,7 +312,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 33 | Contratura em flexão da IFP: vias de acesso | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 03 | mao-2032 | publicada |
 | 34 | Rádio distal: o que é a lágrima | anatomia | cap. 15, p. 604 | mao / Fratura do rádio distal | 05 | mao-2041 | publicada |
 | 35 | Cisto: pseudorrecidiva após ressecção artroscópica | conduta | cap. 17, p. 773 e 774 | mao / Cistos sinoviais e gangliões | 07 | mao-2050 | publicada |
-| 36 | Lesão crônica do radial: transferências de nervo | transferência | cap. 31, p. 1238 | mao / Lesões de nervos periféricos | 11 |  | a fazer |
+| 36 | Lesão crônica do radial: transferências de nervo | transferência | cap. 31, p. 1238 | mao / Lesões de nervos periféricos | 11 | mao-2070 | publicada |
 | 37 | Espasticidade: deformidade comum | fato | cap. 32, p. 1243 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
 | 38 | Malformações do membro: semanas de gestação | número | cap. 35, p. 1363 | mao / Outras malformações congênitas | 14 |  | a fazer |
 | 39 | Uma mão para comer e outra para limpar: qual doença | princípio | cap. 39, p. 1534 | mao / Outras malformações congênitas | 12 |  | a fazer |
@@ -325,7 +325,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 46 | GARCIA-ELIAS: propriocepção nas lesões escafossemilunares | classificação | cap. 13, p. 513 e 514 | mao / Instabilidade do carpo | 04 | mao-2037 | publicada |
 | 47 | Olécrano, MAYO: fratura com subluxação | classificação | cap. 20, p. 939 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 48 | Ossificação heterotópica, HASTINGS e GRAHAM: perda parcial da pronossupinação | classificação | cap. 21, p. 967 | ombro-cotovelo / Ossificação heterotópica | 20 |  | a fazer |
-| 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 |  | a fazer |
+| 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 | mao-2071 | publicada |
 | 50 | Paralisia obstétrica: segunda lesão mais comum | fato | cap. 40, p. 1563 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
 | 51 | ASIA: grau pela função motora preservada | classificação | cap. 33 (página a achar) | mao / Transferências tendinosas e paralisias | 13 |  | a fazer |
 | 52 | APERT: tipo em que se resseca um dedo | classificação | cap. 36, p. 1384 | mao / Sindactilia e polidactilia | 16 |  | a fazer |
@@ -364,7 +364,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 85 | Carpo sem o escafoide: osso mais fraturado | fato | cap. 16, p. 712 | mao / Fraturas do escafoide e do carpo | 06 | mao-2048 | publicada |
 | 86 | Incidência radiocapitelar: posição e inclinação | imagem | cap. 19 (página a achar) | ombro-cotovelo / Imagem do ombro e cotovelo | 20 |  | a fazer |
 | 87 | Epicondilite medial: origens mais acometidas | fato | cap. 25 (arquivo 24), p. 1026 | ombro-cotovelo / Epicondilite lateral e medial | 20 |  | a fazer |
-| 88 | Desfiladeiro torácico: compressão associada mais comum | fato | cap. 29, p. 1133 | mao / Neuropatia ulnar e outras compressões | 11 |  | a fazer |
+| 88 | Desfiladeiro torácico: compressão associada mais comum | fato | cap. 29, p. 1132 e 1133 | mao / Neuropatia ulnar e outras compressões | 11 | mao-2068 | publicada |
 | 89 | LITTLER para a garra ulnar: tendão | epônimo | cap. 31, p. 1214 | mao / Transferências tendinosas e paralisias | 12 |  | a fazer |
 | 90 | Grácil para o bíceps: nervo motor | anatomia | cap. 34, p. 1335 | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
 | 91 | Macrodactilia, FLATT: tipo com neurofibromatose | classificação | cap. 36, p. 1438 | mao / Outras malformações congênitas | 17 |  | a fazer |
