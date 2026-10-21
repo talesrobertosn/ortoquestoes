@@ -12,5 +12,5 @@ git add public/acervo docs/mao
 git commit -q -m "SIMÃO 2023: revisão das questões $2 ($3), mais perto do original e com citações do Green
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
-timeout 180 git push -q origin HEAD || { sleep 5; timeout 180 git push -q origin HEAD; }
+# push agrupado (diretriz de 20/10/2026): enviar a cada 2 a 4 revisões, junto com o PR
 git log --oneline -1
