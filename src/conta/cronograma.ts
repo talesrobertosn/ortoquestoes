@@ -126,8 +126,8 @@ export async function salvarPlano(dados: DadosPlano, incluirSimulados: boolean, 
 
 /** Planos criados antes da etapa 4 do formulário: a pessoa ainda não escolheu sobre os simulados. */
 const ETAPA_SIMULADOS_EM = Date.parse('2026-10-06T21:45:00Z')
-export function mostrarNovidadeSimulados(plano: PlanoSalvo | null | undefined): plano is PlanoSalvo {
-  return !!plano && incluiSimulados(plano) && Date.parse(plano.criado_em) < ETAPA_SIMULADOS_EM && !avisoSimuladosVisto()
+export function mostrarNovidadeSimulados(plano: PlanoSalvo | null | undefined, vistoNaConta = false): plano is PlanoSalvo {
+  return !!plano && !vistoNaConta && incluiSimulados(plano) && Date.parse(plano.criado_em) < ETAPA_SIMULADOS_EM && !avisoSimuladosVisto()
 }
 
 /** Tira os simulados do plano sem recomeçar: ele foi montado quando os simulados ainda não entravam. */

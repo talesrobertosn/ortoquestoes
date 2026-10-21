@@ -6,6 +6,7 @@ import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, op
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
 import { usarConta } from '../conta/ContextoConta'
+import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -435,7 +436,7 @@ export function PlanoEstudo() {
   if (editando || !plano || !calculo) {
     return <FormularioPlano indice={indice} respondidas={respondidas} atual={plano} aoCancelar={plano ? () => definirEditando(false) : undefined}
       aoSalvar={(novo, fazerDiagnostico) => {
-        marcarAvisoSimulados(); definirPlano(novo); definirEditando(false)
+        marcarAvisoSimulados(); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-simulados'); definirPlano(novo); definirEditando(false)
         if (fazerDiagnostico) { marcarDiagnostico(new Date().toISOString()); comecarIds(idsDiagnostico(indice, respondidas, incluiSimulados(novo)), 'diagnostico') }
       }} />
   }
@@ -556,6 +557,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   const [resumaoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
   const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
   const { sessao: sessaoConta } = usarConta()
+  // Quem já tinha fechado o tour neste aparelho leva o "já vi" para a conta.
+  useEffect(() => { if (aberto && !ficticio && tourVisto && sessaoConta) marcarAvisoNaConta(sessaoConta.user.user_metadata, 'cronograma-tour') }, [aberto, ficticio, tourVisto, sessaoConta])
   const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
   const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
   const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
@@ -669,7 +672,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   }
 
   return <>
-    {aberto && !ficticio && !tourVisto && <TourCronograma aoFechar={() => definirTourVisto(true)} />}
+    {aberto && !ficticio && !tourVisto && !avisoVistoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') && <TourCronograma aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} />}
     {ficticio && <FaixaFicticio nome={ficticio.nome} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
