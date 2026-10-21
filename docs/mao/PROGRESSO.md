@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 71 | 9 | mao-2023 a mao-2093 | A 18, B 18, C 18, D 17 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 76 | 9 | mao-2023 a mao-2098 | A 19, B 19, C 19, D 19 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 17** (lotes 01 a 16 publicados: mao-2023 a mao-2093; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 18** (lotes 01 a 17 publicados: mao-2023 a mao-2098; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -291,7 +291,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 12 | Exemplo de deficiência longitudinal | classificação | cap. 38, p. 1494 e 1495; cap. 36, p. 1395 | mao / Deficiências longitudinais e mão torta | 15 | mao-2086 | publicada |
 | 13 | MADELUNG: causa associada | fato | cap. 38, p. 1503 e 1505 | mao / Deficiências longitudinais e mão torta | 15 | mao-2087 | publicada |
 | 14 | Sinal de PUTTI na paralisia obstétrica | sinal | cap. 40, p. 1578 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2082 | publicada |
-| 15 | Retalho bipediculado do polegar | epônimo | cap. 44, p. 1719 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
+| 15 | Retalho bipediculado do polegar | epônimo | cap. 44, p. 1719; cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 | mao-2096 | publicada |
 | 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 | mao-2031 | publicada |
 | 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 | mao-2074 | publicada |
 | 18 | Rádio distal na criança: fator de perda de redução | fato | cap. 41, p. 1625 | mao / Fratura do rádio distal | 05 | mao-2044 | publicada |
@@ -316,7 +316,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 37 | Espasticidade: deformidade comum | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 | mao-2075 | publicada |
 | 38 | Malformações do membro: semanas de gestação | número | cap. 35, p. 1363 | mao / Outras malformações congênitas | 14 | mao-2085 | publicada |
 | 39 | Uma mão para comer e outra para limpar: qual doença | princípio | cap. 39, p. 1534 | mao / Outras malformações congênitas | 12 | mao-2076 | publicada |
-| 40 | Retalho de KITE: artéria | anatomia | cap. 44, p. 1716 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
+| 40 | Retalho de KITE: artéria | anatomia | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 | mao-2097 | publicada |
 | 41 | Anterolateral da coxa: ramo da circunflexa femoral lateral | anatomia | cap. 45, p. 1767 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
 | 42 | Nervo ulnar no braço: relações | anatomia | cap. 28, p. 1105 | mao / Neuropatia ulnar e outras compressões | 10 | mao-2067 | publicada |
 | 43 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2027 | publicada |
@@ -333,7 +333,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 54 | Artrogripose distal tipo 3: nome e achados | classificação | cap. 39, p. 1535 (Tabela 39.1) | mao / Outras malformações congênitas | 16 | mao-2093 | publicada |
 | 55 | Curativo a vácuo: quando não usar | contraindicação | cap. 43, p. 1684 | mao / Retalhos e cobertura cutânea | 10 | mao-2064 | publicada |
 | 56 | Pele palmar: estruturas da figura | anatomia, figura | cap. 44, p. 1703 | mao / Anatomia da mão e punho | 18 |  | a fazer |
-| 57 | Retalho homodigital dorsorradial do polegar: tamanho e fechamento | número | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
+| 57 | Retalho homodigital dorsorradial do polegar: tamanho e fechamento | número | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 | mao-2098 | publicada |
 | 58 | Retalho radial do antebraço: perfurantes e dimensões | anatomia, número | cap. 45, p. 1759 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
 | 59 | Tuberculose óssea na criança: local mais comum | fato | cap. 3, p. 119 | mao / Infecções da mão | 08 | mao-2057 | publicada |
 | 60 | Tetraplegia: função do punho e mão a obter | fato | cap. 33, p. 1268 e 1272 | mao / Transferências tendinosas e paralisias | 13 | mao-2078 | publicada |
@@ -367,9 +367,9 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 88 | Desfiladeiro torácico: compressão associada mais comum | fato | cap. 29, p. 1132 e 1133 | mao / Neuropatia ulnar e outras compressões | 11 | mao-2068 | publicada |
 | 89 | LITTLER para a garra ulnar: tendão | epônimo | cap. 31, p. 1214 | mao / Transferências tendinosas e paralisias | 12 | mao-2073 | publicada |
 | 90 | Grácil para o bíceps: nervo motor | anatomia | cap. 34, p. 1335 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2081 | publicada |
-| 91 | Macrodactilia, FLATT: tipo com neurofibromatose | classificação | cap. 36, p. 1438 | mao / Outras malformações congênitas | 17 |  | a fazer |
+| 91 | Macrodactilia, FLATT: tipo com neurofibromatose | classificação | cap. 36, p. 1438 | mao / Outras malformações congênitas | 17 | mao-2094 | publicada |
 | 92 | Sinostose radioulnar bilateral: posição da osteotomia | número | cap. 38, p. 1516 | mao / Outras malformações congênitas | 15 | mao-2089 | publicada |
-| 93 | Último osso do carpo a ossificar | fato | cap. 41, p. 1618 | mao / Anatomia da mão e punho | 17 |  | a fazer |
+| 93 | Último osso do carpo a ossificar | fato | cap. 41, p. 1618 | mao / Anatomia da mão e punho | 17 | mao-2095 | publicada |
 | 94 | Retalho interósseo posterior reverso: entre quais músculos | anatomia | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
 | 95 | Mão: número de compartimentos | número | cap. 51, p. 1972 e 1975 | mao / Outros temas da mão | 10 | mao-2063 | publicada |
 | 96 | Lápis na xícara: qual artrite | imagem | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 07 | mao-2053 | publicada |
