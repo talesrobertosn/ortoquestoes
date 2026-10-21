@@ -16,7 +16,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | SBCM-2024-questoes.json | 100 | 0 | 0 | | |
-| SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 | 25/25/25/25 |
+| SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
 
@@ -94,13 +94,18 @@ padrão novo. Próximo trabalho, nesta ordem:
    acervo (lista em `.oq/simao2026-lista.txt`). Só o comentário muda; enunciado, alternativas, gabarito e id ficam.
    Aplicar: `aplicar_lote.py ~/OrtoQuestoes-Biblioteca/lotes/simao-2026 mao revisao_NN` (os 8 de cotovelo,
    ombro-cotovelo-0645 a 0652, num arquivo à parte com o tema ombro-cotovelo).
-   Feito: revisões 01 a 19 (mao-1719 a mao-1810, todas as de mão). Próximo: os 8 de cotovelo (ombro-cotovelo-0645 a 0652) em revisao_20.py e revisao_21.py, aplicados com o tema ombro-cotovelo.
+   **Concluído em 20/10/2026:** revisões 01 a 20. Todas as 92 de mão (mao-1719 a mao-1810) e 6 de cotovelo
+   (ombro-cotovelo-0646, 0648 a 0652, revisao_20.py aplicada com o tema ombro-cotovelo) refeitas. A 0645 (bifurcação
+   alta da braquial, cerca de 15%) e a 0647 (origem da braquial no redondo maior) ficaram com o comentário anterior:
+   os livros e resumos locais não trazem esses dados, e o comentário não pode ser refeito com fonte. Se o Tales mandar
+   um livro de anatomia, refazer as duas.
    Atalho: `bash ~/OrtoQuestoes-Biblioteca/.oq/revisar2026.sh NN AAAA BBBB` aplica, valida, atualiza a linha
    acima e faz commit local (cópia em docs/mao/ferramentas/). Push e PR a cada 2 a 4 revisões (AGENTS.md,
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
+7. **Próximo: SBCM 2024** (fase 0 do protocolo: separar a prova, classificar no PROGRESSO, lotes de 5), depois SBCM 2022,
+   SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
 
 **Como foi feito até aqui (repetir igual):**
 - Lote novo em `~/OrtoQuestoes-Biblioteca/lotes/simao-2023/lote_NN.py` (modelo: `lote_14.py` a `lote_17.py`).
