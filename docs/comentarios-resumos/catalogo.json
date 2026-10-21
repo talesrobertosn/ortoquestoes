@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1612,
+  "pendente": 1592,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 46,
   "pendente-inspecao-imagem": 173,
-  "revisada": 426
+  "revisada": 446
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -316,10 +316,10 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 59,
+    "pendente": 39,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 19
+    "revisada": 39
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -327,10 +327,10 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 52,
+    "pendente": 34,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 21
+    "revisada": 39
    }
   }
  },
@@ -24538,7 +24538,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24553,7 +24553,32 @@
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "e0660feee979c0c86af3f8df1dc590131b83ce7f8a6bdfcbf5ddefbd1364f26b"
+   "questaoSha256": "e0660feee979c0c86af3f8df1dc590131b83ce7f8a6bdfcbf5ddefbd1364f26b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Epidemiologia e quem se machuca"
+      ],
+      "blocos": [
+       "epidemiologia-e-quem-se-machuca-30587465",
+       "epidemiologia-e-quem-se-machuca-b34362be",
+       "epidemiologia-e-quem-se-machuca-0c07b687"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "973799dcbaa52d98146b7f98df78e99a94ac9e2a159dc34d91563a45c90966c2"
+     }
+    ],
+    "questaoSha256": "e0660feee979c0c86af3f8df1dc590131b83ce7f8a6bdfcbf5ddefbd1364f26b",
+    "comentarioSha256": "a49f5e4a0a46c911dd99280190d731e0ac25d0dca95e2d3b78f716f7d51d4418"
+   }
   },
   "pediatria-0562": {
    "tema": "pediatria",
@@ -24948,7 +24973,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24964,7 +24989,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "f3dd8482cc34bc210b058c339f039a2a4be377ee882eb4d3440ddd58fd5516c6"
+   "questaoSha256": "f3dd8482cc34bc210b058c339f039a2a4be377ee882eb4d3440ddd58fd5516c6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "O mecanismo e a regra da rotação"
+      ],
+      "blocos": [
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-65672b02",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-16baa888",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
+       "o-mecanismo-e-a-regra-da-rotacao-07a94c6a"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "29ccb52684d13e42b8b9313969b1a1032a3de6ddeafecaa3fbb079601b8a998e"
+     }
+    ],
+    "questaoSha256": "f3dd8482cc34bc210b058c339f039a2a4be377ee882eb4d3440ddd58fd5516c6",
+    "comentarioSha256": "8a145f538e7e6fff12968ead49138518cce44bc644c1229aad3b7c5e863e8efe"
+   }
   },
   "pediatria-0597": {
    "tema": "pediatria",
@@ -25109,7 +25161,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25125,7 +25177,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "e15df129170d9d9aa3e59ff8328fd6661e20f147d44e88a47d78d4f801e34885"
+   "questaoSha256": "e15df129170d9d9aa3e59ff8328fd6661e20f147d44e88a47d78d4f801e34885",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Tratamento cirúrgico: quando e como",
+       "Tratamento conservador: toro, galho verde, completa e gesso"
+      ],
+      "blocos": [
+       "tratamento-cirurgico-quando-e-como-92091ec3",
+       "tratamento-cirurgico-quando-e-como-bf30a4c4",
+       "tratamento-cirurgico-quando-e-como-12c9f9ef",
+       "tratamento-conservador-toro-galho-verde-completa-32670de8"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "83a65e4826809ca2ab69776f6ecb4b2af798f32dcbb5885ad41ec33b2630dce8"
+     }
+    ],
+    "questaoSha256": "e15df129170d9d9aa3e59ff8328fd6661e20f147d44e88a47d78d4f801e34885",
+    "comentarioSha256": "2c5bb0525286b8f516a4971aac39a61d2ee5b66d1c2c1f16ac993d32efe5e123"
+   }
   },
   "pediatria-0606": {
    "tema": "pediatria",
@@ -27978,7 +28057,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28001,7 +28080,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "8547f73b5302114384530c2f1bfed6460334c51313acff8eb65d590b02b557e9"
+   "questaoSha256": "8547f73b5302114384530c2f1bfed6460334c51313acff8eb65d590b02b557e9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "O mecanismo e a regra da rotação",
+       "Tratamento conservador: toro, galho verde, completa e gesso"
+      ],
+      "blocos": [
+       "o-mecanismo-e-a-regra-da-rotacao-8dbf52ee",
+       "o-mecanismo-e-a-regra-da-rotacao-07a94c6a",
+       "tratamento-conservador-toro-galho-verde-completa-984d73aa"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "ae5475c7d6d5c7e5356555bb45d4be99bc53dec2ade96141d38369f023fdbea9"
+     }
+    ],
+    "questaoSha256": "8547f73b5302114384530c2f1bfed6460334c51313acff8eb65d590b02b557e9",
+    "comentarioSha256": "3cb047eec56afcc0c08f8671c1e0585360b217b7abb1bf2fbb1dbe785fe37730"
+   }
   },
   "pediatria-0748": {
    "tema": "pediatria",
@@ -28030,7 +28135,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28045,7 +28150,32 @@
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "c1ec4d2252c3998d297f15ed99af07b5462e528e8b4be188b649a8786a72bdbc"
+   "questaoSha256": "c1ec4d2252c3998d297f15ed99af07b5462e528e8b4be188b649a8786a72bdbc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Fise: a redução tardia e a parada do crescimento",
+       "Tratamento cirúrgico: quando e como"
+      ],
+      "blocos": [
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812",
+       "tratamento-cirurgico-quando-e-como-08929f2d"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "eaf6d586f912bbb8707fe7098c6f79881b7072f02e986347806113cb78c3369f"
+     }
+    ],
+    "questaoSha256": "c1ec4d2252c3998d297f15ed99af07b5462e528e8b4be188b649a8786a72bdbc",
+    "comentarioSha256": "3e60121c55cad43f3469e71d73536261f0b55f5f9a055f92b82cdce2c588fe32"
+   }
   },
   "pediatria-0751": {
    "tema": "pediatria",
@@ -28215,7 +28345,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28231,7 +28361,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "6dae2e2ca3fddcc5ca5f65211fe1d22f54b6b054ec714d649cf0ea93f873c74c"
+   "questaoSha256": "6dae2e2ca3fddcc5ca5f65211fe1d22f54b6b054ec714d649cf0ea93f873c74c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Anatomia que explica as regras",
+       "Remodelação e o que se aceita",
+       "Fise: a redução tardia e a parada do crescimento"
+      ],
+      "blocos": [
+       "anatomia-que-explica-as-regras-229b2edb",
+       "remodelacao-e-o-que-se-aceita-96930aef",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-1504c178"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "f9d7f2bfaf887c52d830152f306185253c67bfc238c0d18bcc10a887970eb5fd"
+     }
+    ],
+    "questaoSha256": "6dae2e2ca3fddcc5ca5f65211fe1d22f54b6b054ec714d649cf0ea93f873c74c",
+    "comentarioSha256": "8e790d0132353594ac0a0cf8fa65048a2cd868aa9bfab84aa816071a1553acca"
+   }
   },
   "pediatria-0768": {
    "tema": "pediatria",
@@ -28340,7 +28497,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28363,7 +28520,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "5b22824fe8d8329b323b1ec012ece484da9f96c9be289de0dc4ba99c8f3fb5ea"
+   "questaoSha256": "5b22824fe8d8329b323b1ec012ece484da9f96c9be289de0dc4ba99c8f3fb5ea",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "O mecanismo e a regra da rotação",
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND"
+      ],
+      "blocos": [
+       "o-mecanismo-e-a-regra-da-rotacao-b8c932aa",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-a798efa0",
+       "a-fise-distal-do-radio-salter-harris-e-thurston--9c362b91"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "ab78cd9d7cb77562de3c6fb100a25213f712b8eaed83f3e567f7074fcc84375c"
+     }
+    ],
+    "questaoSha256": "5b22824fe8d8329b323b1ec012ece484da9f96c9be289de0dc4ba99c8f3fb5ea",
+    "comentarioSha256": "c4e29ac81b56e0fb2e82efa8a5e6f1236d6c2b263106bbe2ee3c7dd15b6ef3bd"
+   }
   },
   "pediatria-0794": {
    "tema": "pediatria",
@@ -29100,7 +29284,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29123,7 +29307,37 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "69d38b989f9b7bdad496c5e36c466ecbf1313c33a3f896883cbcd097e0e8619f"
+   "questaoSha256": "69d38b989f9b7bdad496c5e36c466ecbf1313c33a3f896883cbcd097e0e8619f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Perda de redução e consolidação viciosa",
+       "Fise: a redução tardia e a parada do crescimento",
+       "Outras complicações"
+      ],
+      "blocos": [
+       "perda-de-reducao-e-consolidacao-viciosa-17110572",
+       "perda-de-reducao-e-consolidacao-viciosa-406e8a1a",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-65e3a894",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-85174728",
+       "outras-complicacoes-c1d9561d",
+       "outras-complicacoes-a438b01c"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "b9a486ac9553fcbfbd8b13542bce59b9e871dff80be9bc931dcfada37f9292f1"
+     }
+    ],
+    "questaoSha256": "69d38b989f9b7bdad496c5e36c466ecbf1313c33a3f896883cbcd097e0e8619f",
+    "comentarioSha256": "3c8c0361738dc5345b2a0b2307e8cb4dc75068012220468338025caa7d78ed82"
+   }
   },
   "pediatria-0850": {
    "tema": "pediatria",
@@ -29508,7 +29722,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29524,7 +29738,36 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "86b5cca304fd009275cbbcdf49691409fcd609fb89bc16d5702500b398d9dbde"
+   "questaoSha256": "86b5cca304fd009275cbbcdf49691409fcd609fb89bc16d5702500b398d9dbde",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Perda de redução e consolidação viciosa",
+       "Outras complicações",
+       "Tratamento cirúrgico: quando e como"
+      ],
+      "blocos": [
+       "perda-de-reducao-e-consolidacao-viciosa-17110572",
+       "perda-de-reducao-e-consolidacao-viciosa-406e8a1a",
+       "outras-complicacoes-a438b01c",
+       "outras-complicacoes-c1d9561d",
+       "tratamento-cirurgico-quando-e-como-92091ec3"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "3664133ae267c9d10d7bb834049392475f8948c6b7f34e8544465c0350628f7a"
+     }
+    ],
+    "questaoSha256": "86b5cca304fd009275cbbcdf49691409fcd609fb89bc16d5702500b398d9dbde",
+    "comentarioSha256": "d526b349e1d7186fd47c2c0ba2993737d93d78be78d1130d49ce8e538d88142c"
+   }
   },
   "pediatria-0918": {
    "tema": "pediatria",
@@ -30063,7 +30306,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30079,7 +30322,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "366348f49c560938414082c7ae2260dc7e631554abe322964b1c843385b3e382"
+   "questaoSha256": "366348f49c560938414082c7ae2260dc7e631554abe322964b1c843385b3e382",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "Tratamento conservador: toro, galho verde, completa e gesso"
+      ],
+      "blocos": [
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-11988e3b",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-16baa888",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
+       "tratamento-conservador-toro-galho-verde-completa-984d73aa"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "8077de18262442985945e431bbe02e055bccbf71fcb9ea900e1cd193feeaf2e0"
+     }
+    ],
+    "questaoSha256": "366348f49c560938414082c7ae2260dc7e631554abe322964b1c843385b3e382",
+    "comentarioSha256": "5e5c0e3f1e280489122ae5552b20320cebe7f5b606770beb2fa9635e69f79116"
+   }
   },
   "pediatria-0952": {
    "tema": "pediatria",
@@ -30898,7 +31168,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30921,7 +31191,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "04e0b59875c16f581ac679d926d60f510932c975709df07d5e7bc202568b9b50"
+   "questaoSha256": "04e0b59875c16f581ac679d926d60f510932c975709df07d5e7bc202568b9b50",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "Tratamento conservador: toro, galho verde, completa e gesso"
+      ],
+      "blocos": [
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-a798efa0",
+       "tratamento-conservador-toro-galho-verde-completa-c57e4835",
+       "tratamento-conservador-toro-galho-verde-completa-59f1d2a5"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "06fcd0e139f2a049f8cbc87538eec5c18bf547e7a0615c42c98b911fa76fd7a6"
+     }
+    ],
+    "questaoSha256": "04e0b59875c16f581ac679d926d60f510932c975709df07d5e7bc202568b9b50",
+    "comentarioSha256": "c7c1fd094d9cdd2fa3ce7853edfebfac5f47f6359a7adec467f42f46f6fb1649"
+   }
   },
   "pediatria-0973": {
    "tema": "pediatria",
@@ -30930,7 +31226,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30946,7 +31242,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "a314c58e395d7ea235a808e91de13db3383afde48636f58947a80b608a8ab278"
+   "questaoSha256": "a314c58e395d7ea235a808e91de13db3383afde48636f58947a80b608a8ab278",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "O mecanismo e a regra da rotação"
+      ],
+      "blocos": [
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-c8bb6a6f",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-11988e3b",
+       "o-mecanismo-e-a-regra-da-rotacao-07a94c6a"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "585c4efd3192a44278ae512afd038bb85cc477af6cf5fc3419df7774ef765cd2"
+     }
+    ],
+    "questaoSha256": "a314c58e395d7ea235a808e91de13db3383afde48636f58947a80b608a8ab278",
+    "comentarioSha256": "a8645466ea2e8c5d0f8a9caf30e8e39a2876e6a0f69abef1fdf076a5d0a3b5a7"
+   }
   },
   "pediatria-0974": {
    "tema": "pediatria",
@@ -30955,7 +31278,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30971,7 +31294,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "33318d49dda7ac372aa963e5882fc8e8acb64c04503b773d948c284cd566f837"
+   "questaoSha256": "33318d49dda7ac372aa963e5882fc8e8acb64c04503b773d948c284cd566f837",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Tratamento conservador: toro, galho verde, completa e gesso",
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "Fise: a redução tardia e a parada do crescimento"
+      ],
+      "blocos": [
+       "tratamento-conservador-toro-galho-verde-completa-984d73aa",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "472b45ca4aba33137fb284a2dce6552fd6f65f407d5aeb7c109a69ea28af8a79"
+     }
+    ],
+    "questaoSha256": "33318d49dda7ac372aa963e5882fc8e8acb64c04503b773d948c284cd566f837",
+    "comentarioSha256": "7622f33527202e83ec5943004e86470f38d81a7adceba2dc2c6c75791a8f3ee6"
+   }
   },
   "pediatria-0975": {
    "tema": "pediatria",
@@ -30980,7 +31330,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30996,7 +31346,35 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "861f309abefabbf4e975f44f32f4f9fcaab2d09a74ce5e4589fc86610139d24a"
+   "questaoSha256": "861f309abefabbf4e975f44f32f4f9fcaab2d09a74ce5e4589fc86610139d24a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Perda de redução e consolidação viciosa",
+       "Fise: a redução tardia e a parada do crescimento"
+      ],
+      "blocos": [
+       "perda-de-reducao-e-consolidacao-viciosa-17110572",
+       "perda-de-reducao-e-consolidacao-viciosa-90affede",
+       "perda-de-reducao-e-consolidacao-viciosa-e565f5f5",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-65e3a894",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "956bc14fc58b9f4967d096c69a86307965b9e2974cef840c8958c472d85f3f99"
+     }
+    ],
+    "questaoSha256": "861f309abefabbf4e975f44f32f4f9fcaab2d09a74ce5e4589fc86610139d24a",
+    "comentarioSha256": "21f55b057c6e0adb29e2f6b6e99cab4b8032ecb776871b25aeec075d7034a72d"
+   }
   },
   "pediatria-0976": {
    "tema": "pediatria",
@@ -31005,7 +31383,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31021,7 +31399,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "39010e6704783053c00ad1e91af49c3ed0e80ee49532a7e5f7ef2a1ec30f1910"
+   "questaoSha256": "39010e6704783053c00ad1e91af49c3ed0e80ee49532a7e5f7ef2a1ec30f1910",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Tratamento conservador: toro, galho verde, completa e gesso",
+       "Perda de redução e consolidação viciosa"
+      ],
+      "blocos": [
+       "tratamento-conservador-toro-galho-verde-completa-47647c4c",
+       "tratamento-conservador-toro-galho-verde-completa-0b5fde65",
+       "perda-de-reducao-e-consolidacao-viciosa-90affede"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "17ed071aadd488f45655e1555000d1d3e411cea6c934524366d97364a0941521"
+     }
+    ],
+    "questaoSha256": "39010e6704783053c00ad1e91af49c3ed0e80ee49532a7e5f7ef2a1ec30f1910",
+    "comentarioSha256": "5c0c7ba35434d0811f2949983f0f9de571ba9d276331fb86e6164c54b9a04d5c"
+   }
   },
   "pediatria-0977": {
    "tema": "pediatria",
@@ -31030,7 +31434,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31046,7 +31450,36 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "868cb605a5856b737322b18ec6dac34133386673e4fe8146bf45e15b1c321171"
+   "questaoSha256": "868cb605a5856b737322b18ec6dac34133386673e4fe8146bf45e15b1c321171",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Remodelação e o que se aceita",
+       "Tratamento cirúrgico: quando e como"
+      ],
+      "blocos": [
+       "remodelacao-e-o-que-se-aceita-91d8ddd3",
+       "remodelacao-e-o-que-se-aceita-96930aef",
+       "remodelacao-e-o-que-se-aceita-d257722a",
+       "remodelacao-e-o-que-se-aceita-7f295cc7",
+       "remodelacao-e-o-que-se-aceita-707ea452",
+       "tratamento-cirurgico-quando-e-como-12c9f9ef"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "7529af5398e8d8af38ec07bf8dcf1fb6693ca5dcb3c75883201703d3c9e2feaf"
+     }
+    ],
+    "questaoSha256": "868cb605a5856b737322b18ec6dac34133386673e4fe8146bf45e15b1c321171",
+    "comentarioSha256": "94483bdff62b74786f2ee7242eec15c06520eae72faf0ea016f42d6db6f85837"
+   }
   },
   "pediatria-0978": {
    "tema": "pediatria",
@@ -31056,7 +31489,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31072,7 +31505,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "014c7e255d275fe996d77a40b4d9bcc5bca2972446580b742c49ed9ab0c32e24"
+   "questaoSha256": "014c7e255d275fe996d77a40b4d9bcc5bca2972446580b742c49ed9ab0c32e24",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Fise: a redução tardia e a parada do crescimento",
+       "Perda de redução e consolidação viciosa",
+       "Remodelação e o que se aceita"
+      ],
+      "blocos": [
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812",
+       "perda-de-reducao-e-consolidacao-viciosa-406e8a1a",
+       "remodelacao-e-o-que-se-aceita-96930aef"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "b3dd419b622815e1a3ee1dcff93d63d6aceef8016d49a2474f6de2714b6fce7e"
+     }
+    ],
+    "questaoSha256": "014c7e255d275fe996d77a40b4d9bcc5bca2972446580b742c49ed9ab0c32e24",
+    "comentarioSha256": "372e0fb7da3a180fa930f4d6cdc5969fd24c990fe2d89c76d0f8a01a41ac81ce"
+   }
   },
   "pediatria-0979": {
    "tema": "pediatria",
@@ -31082,7 +31542,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31098,7 +31558,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "6865890de39aa0fec7a4921c0ef52d6b73c354d4c18d867b28464c1fd2f2b67e"
+   "questaoSha256": "6865890de39aa0fec7a4921c0ef52d6b73c354d4c18d867b28464c1fd2f2b67e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Fise: a redução tardia e a parada do crescimento",
+       "Ulna distal, estiloide e fibrocartilagem triangular"
+      ],
+      "blocos": [
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-65e3a894",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-1504c178",
+       "fise-a-reducao-tardia-e-a-parada-do-crescimento-85174728",
+       "ulna-distal-estiloide-e-fibrocartilagem-triangul-605affb0"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "a29f52bf6e58906d75d7c6f2b42b6e8c3620b24c566dd1f1a573fea33781a1c0"
+     }
+    ],
+    "questaoSha256": "6865890de39aa0fec7a4921c0ef52d6b73c354d4c18d867b28464c1fd2f2b67e",
+    "comentarioSha256": "dfd1478559581cb4e9eb5e614fc3972806925001816e6ce0dcad273184bb5b7d"
+   }
   },
   "pediatria-0980": {
    "tema": "pediatria",
@@ -31107,7 +31594,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31123,7 +31610,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "5470c5d28e49df2e4881017c8f8349633207ff6ee97d34c666f036a64af655bc"
+   "questaoSha256": "5470c5d28e49df2e4881017c8f8349633207ff6ee97d34c666f036a64af655bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "O Galeazzi da criança"
+      ],
+      "blocos": [
+       "o-galeazzi-da-crianca-0f8de8b6",
+       "o-galeazzi-da-crianca-e451cffa",
+       "o-galeazzi-da-crianca-9385ee8d"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "26761e249c355e04292d73219d563f0082b1c10ad1cccef6d7390a2321001a31"
+     }
+    ],
+    "questaoSha256": "5470c5d28e49df2e4881017c8f8349633207ff6ee97d34c666f036a64af655bc",
+    "comentarioSha256": "b1c91dd7ff8b74da699339b3612ed43f044e6c530af57ba86d83be467be1366d"
+   }
   },
   "pediatria-0981": {
    "tema": "pediatria",
@@ -31133,7 +31645,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31156,7 +31668,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "2e7ffe3de0c550b693a7553957a1efa231838f9bc2050ef1a522fc08c12de32d"
+   "questaoSha256": "2e7ffe3de0c550b693a7553957a1efa231838f9bc2050ef1a522fc08c12de32d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Tratamento cirúrgico: quando e como"
+      ],
+      "blocos": [
+       "tratamento-cirurgico-quando-e-como-92091ec3",
+       "tratamento-cirurgico-quando-e-como-bf30a4c4",
+       "tratamento-cirurgico-quando-e-como-d9e0edcd",
+       "tratamento-cirurgico-quando-e-como-f282f618"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "3fb731ce4c93cb9bb88d89f5b108bd5eec2839b86747e5012a687f78677a1948"
+     }
+    ],
+    "questaoSha256": "2e7ffe3de0c550b693a7553957a1efa231838f9bc2050ef1a522fc08c12de32d",
+    "comentarioSha256": "5429c78a73f1a9252894ed203040f7cc0fbb6a442b33d108461c8182a8621bb4"
+   }
   },
   "pediatria-0982": {
    "tema": "pediatria",
