@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1592,
+  "pendente": 1572,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 46,
   "pendente-inspecao-imagem": 173,
-  "revisada": 446
+  "revisada": 466
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -36,16 +36,18 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 122,
-    "pendente-inspecao-imagem": 10
+    "pendente": 120,
+    "pendente-inspecao-imagem": 10,
+    "revisada": 2
    }
   },
   "rockwood10-34-fratura-clavicula": {
    "titulo": "Fratura da clavícula",
    "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
    "estados": {
-    "pendente": 67,
-    "pendente-inspecao-imagem": 6
+    "pendente": 57,
+    "pendente-inspecao-imagem": 6,
+    "revisada": 10
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -53,8 +55,9 @@
    "sha256": "46097b05ea83a424badb01250f606ee623d8cc1f2902e8369a6675cadc8af978",
    "estados": {
     "duplicada": 4,
-    "pendente": 76,
-    "pendente-inspecao-imagem": 14
+    "pendente": 75,
+    "pendente-inspecao-imagem": 14,
+    "revisada": 1
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -74,10 +77,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 77,
+    "pendente": 76,
     "pendente-fonte": 3,
     "pendente-inspecao-imagem": 15,
-    "revisada": 72
+    "revisada": 73
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -316,10 +319,10 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 39,
+    "pendente": 30,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 39
+    "revisada": 48
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -327,10 +330,10 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 34,
+    "pendente": 25,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 39
+    "revisada": 48
    }
   }
  },
@@ -20497,7 +20500,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -20522,7 +20525,32 @@
     "rockwood10-36-umero-proximal",
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f56e3c051ca72347050860f352a3f96657263cf5c11e741a9db579be0a422701"
+   "questaoSha256": "f56e3c051ca72347050860f352a3f96657263cf5c11e741a9db579be0a422701",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Lesões neurovasculares e dissociação escapulotorácica",
+       "Ombro flutuante, costelas e terço medial"
+      ],
+      "blocos": [
+       "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59",
+       "ombro-flutuante-costelas-e-terco-medial-b753c523"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "298b7c9d80e35766a8144c8497a1f3c9dd69473e57567dbe87195258f36c65aa"
+     }
+    ],
+    "questaoSha256": "f56e3c051ca72347050860f352a3f96657263cf5c11e741a9db579be0a422701",
+    "comentarioSha256": "4b3744379fbb5a1b9611a1dc038f521262fb301bc322c23d578422cf84ecd68d"
+   }
   },
   "ombro-cotovelo-0374": {
    "tema": "ombro-cotovelo",
@@ -24280,7 +24308,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24296,7 +24324,35 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "908a5c241180302de1b3d332df54547f9c5d832bc3922ff7260614d46dc1dc88"
+   "questaoSha256": "908a5c241180302de1b3d332df54547f9c5d832bc3922ff7260614d46dc1dc88",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "O exame: rotação, nervos e lesões associadas"
+      ],
+      "blocos": [
+       "o-exame-rotacao-nervos-e-lesoes-associadas-f257c585",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-84d5b7b1",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-aca507f4",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-3388e1b8",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-48408c84",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-cf804c28"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "9a8c24c60d8b79c9d5db7d3ae1c32f657dd05da8e1859130b5dd7d7a1261befd"
+     }
+    ],
+    "questaoSha256": "908a5c241180302de1b3d332df54547f9c5d832bc3922ff7260614d46dc1dc88",
+    "comentarioSha256": "baacdc0f861b3589e222aeff463ce1cc68369b47365b03bfc135f3cd8d0e0eb5"
+   }
   },
   "pediatria-0528": {
    "tema": "pediatria",
@@ -24782,7 +24838,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24797,7 +24853,32 @@
    "resumosCandidatos": [
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "c62594a5eda4b82b00065bdb596f3095f58b56421fd607c2b3b1ccf1923951f5"
+   "questaoSha256": "c62594a5eda4b82b00065bdb596f3095f58b56421fd607c2b3b1ccf1923951f5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida"
+      ],
+      "blocos": [
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-99c4cd6c",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-c0d1d07e",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-350e1be3"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "e69d5ea551d66ed5acb844b4c2f3d3ff8d7a9dff92a44ba0da10c72cb700bbb7"
+     }
+    ],
+    "questaoSha256": "c62594a5eda4b82b00065bdb596f3095f58b56421fd607c2b3b1ccf1923951f5",
+    "comentarioSha256": "75fdf2b652d2992953c13627f754c1ae17ad0e3eaefc4c1af95ac976b59b1f66"
+   }
   },
   "pediatria-0585": {
    "tema": "pediatria",
@@ -25552,7 +25633,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25567,7 +25648,34 @@
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "a7f040559b638091c00301a7b1e7b22d412d5df3ec2e36f5da03c6730cdc4944"
+   "questaoSha256": "a7f040559b638091c00301a7b1e7b22d412d5df3ec2e36f5da03c6730cdc4944",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND",
+       "Anatomia que explica as regras",
+       "Tratamento cirúrgico: quando e como"
+      ],
+      "blocos": [
+       "a-fise-distal-do-radio-salter-harris-e-thurston--9c362b91",
+       "anatomia-que-explica-as-regras-2f04b952",
+       "tratamento-cirurgico-quando-e-como-12c9f9ef"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "29fb3e68a77bd0259ad35131020b995fe40bc22d87a2aea762eef4e3df99091a"
+     }
+    ],
+    "questaoSha256": "a7f040559b638091c00301a7b1e7b22d412d5df3ec2e36f5da03c6730cdc4944",
+    "comentarioSha256": "1a0d1fcc9db571860a703122339813c0f3c95da665a17e000b1ff6bd391e34b5"
+   }
   },
   "pediatria-0629": {
    "tema": "pediatria",
@@ -26298,7 +26406,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26314,7 +26422,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "0e00f946c01e4cbfa6847bc5bcf16b48777086039974373613f0ce4208606a3f"
+   "questaoSha256": "0e00f946c01e4cbfa6847bc5bcf16b48777086039974373613f0ce4208606a3f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Deformidade plástica: o osso que encurva"
+      ],
+      "blocos": [
+       "deformidade-plastica-o-osso-que-encurva-605a3501",
+       "deformidade-plastica-o-osso-que-encurva-eb524111",
+       "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+       "deformidade-plastica-o-osso-que-encurva-9cb06823",
+       "deformidade-plastica-o-osso-que-encurva-ad9170a0"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "e24371fbf9dc8d701b2c826864107850a4b2e996222a3511769c554d100285d4"
+     }
+    ],
+    "questaoSha256": "0e00f946c01e4cbfa6847bc5bcf16b48777086039974373613f0ce4208606a3f",
+    "comentarioSha256": "0c3af4252edef2e75c2e441f3ce8db475ca7be032d59a5404d6a831fdc9a1e6e"
+   }
   },
   "pediatria-0666": {
    "tema": "pediatria",
@@ -27334,7 +27469,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
@@ -27342,7 +27477,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "cef9665ec6e4d8e943878871fc176d859be363cee8e8f2f6cad480cf6e9d26eb"
+   "questaoSha256": "cef9665ec6e4d8e943878871fc176d859be363cee8e8f2f6cad480cf6e9d26eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Galho verde: a angulação é uma rotação",
+       "Tratamento fechado: gesso, posição e acompanhamento"
+      ],
+      "blocos": [
+       "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+       "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc",
+       "galho-verde-a-angulacao-e-uma-rotacao-66f45baa",
+       "tratamento-fechado-gesso-posicao-e-acompanhament-96d54d9f"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "ba3413caed8111fa903a21b449f0d87d88f1ee6d7978b0e1e12c693320e404e8"
+     }
+    ],
+    "questaoSha256": "cef9665ec6e4d8e943878871fc176d859be363cee8e8f2f6cad480cf6e9d26eb",
+    "comentarioSha256": "1e53d4bdd0b5d4d75407ee33d2ce1ce8355e55bc2a183accc3f382420602a2be"
+   }
   },
   "pediatria-0709": {
    "tema": "pediatria",
@@ -28838,7 +29000,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28854,7 +29016,31 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "0a2f3be354cd40dbaba6fe1663723f93bb168e4e599eec3cd2bc996ef68b643c"
+   "questaoSha256": "0a2f3be354cd40dbaba6fe1663723f93bb168e4e599eec3cd2bc996ef68b643c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Limites de angulação e remodelação"
+      ],
+      "blocos": [
+       "limites-de-angulacao-e-remodelacao-d123412f",
+       "limites-de-angulacao-e-remodelacao-aa3585d4"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "2930d5c01ba1dd3f6968fa5dfffe9931b1bb15ec702da8b8eb8cc71e50151f2e"
+     }
+    ],
+    "questaoSha256": "0a2f3be354cd40dbaba6fe1663723f93bb168e4e599eec3cd2bc996ef68b643c",
+    "comentarioSha256": "6115b3282c8e97c8debc40bad4d756de805841124b0c2f04b4a8f07c9a20ebef"
+   }
   },
   "pediatria-0829": {
    "tema": "pediatria",
@@ -30132,7 +30318,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30148,7 +30334,33 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "bcc6a15c3efcdc919f3139311efa6925752bccd1804f8604b1b48d592eead406"
+   "questaoSha256": "bcc6a15c3efcdc919f3139311efa6925752bccd1804f8604b1b48d592eead406",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "O Galeazzi da criança"
+      ],
+      "blocos": [
+       "o-galeazzi-da-crianca-0f8de8b6",
+       "o-galeazzi-da-crianca-e451cffa",
+       "o-galeazzi-da-crianca-c6b60932",
+       "o-galeazzi-da-crianca-9385ee8d"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "a998a236ae3a3636ccea2b84092bc54962208dc96240d7721e04f1e21338db56"
+     }
+    ],
+    "questaoSha256": "bcc6a15c3efcdc919f3139311efa6925752bccd1804f8604b1b48d592eead406",
+    "comentarioSha256": "529a6d1bd970a76b752215a5f8e11b700921c519a79b663381ed5b7deabbd038"
+   }
   },
   "pediatria-0941": {
    "tema": "pediatria",
@@ -30362,7 +30574,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
@@ -30370,7 +30582,39 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "f6cebf16460cb06faac3709a8d7d8e137c7802338f9d50c40cabfad5fc9463bc"
+   "questaoSha256": "f6cebf16460cb06faac3709a8d7d8e137c7802338f9d50c40cabfad5fc9463bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Galho verde: a angulação é uma rotação",
+       "Deformidade plástica: o osso que encurva",
+       "Tratamento fechado: gesso, posição e acompanhamento",
+       "Complicações",
+       "Tratamento cirúrgico: indicações e escolha do implante"
+      ],
+      "blocos": [
+       "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+       "deformidade-plastica-o-osso-que-encurva-db19d238",
+       "tratamento-fechado-gesso-posicao-e-acompanhament-7e58ac4a",
+       "complicacoes-8a823c07",
+       "complicacoes-7c55a4f3",
+       "tratamento-cirurgico-indicacoes-e-escolha-do-imp-a404b5ac"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "5a60095018ea9d8e57c51a2e3dddf2a77c9cdb1919ecf045c2b56e9b6cf20957"
+     }
+    ],
+    "questaoSha256": "f6cebf16460cb06faac3709a8d7d8e137c7802338f9d50c40cabfad5fc9463bc",
+    "comentarioSha256": "96bc313178188e36918a54737398d0997f71b38b3fdc955fd96d4b6af21e0b09"
+   }
   },
   "pediatria-0954": {
    "tema": "pediatria",
@@ -30842,7 +31086,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30858,7 +31102,32 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "ceb7c95a16624ebc32b97ba1c29579847abf58ff92c4abe4b8cf975bcb96197d"
+   "questaoSha256": "ceb7c95a16624ebc32b97ba1c29579847abf58ff92c4abe4b8cf975bcb96197d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "O exame: rotação, nervos e lesões associadas"
+      ],
+      "blocos": [
+       "o-exame-rotacao-nervos-e-lesoes-associadas-2d1fb028",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-fdb47191",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-7a4779b5"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "99bdbb71c7f3fb64b257385b81dee14ade50cd26ae454f86dfc7e30a3ab86d49"
+     }
+    ],
+    "questaoSha256": "ceb7c95a16624ebc32b97ba1c29579847abf58ff92c4abe4b8cf975bcb96197d",
+    "comentarioSha256": "a0a1709d9f6619b5c6fe435b5ccbc754d2609e5e5048c54195897d63dd65c222"
+   }
   },
   "pediatria-0966": {
    "tema": "pediatria",
@@ -31749,7 +32018,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31765,7 +32034,34 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "a9185dbcca8a3fa456b63b3dbe73289d82f6716d25f6dc233538b0dbc47036b4"
+   "questaoSha256": "a9185dbcca8a3fa456b63b3dbe73289d82f6716d25f6dc233538b0dbc47036b4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Anatomia que explica as regras",
+       "Ulna distal, estiloide e fibrocartilagem triangular"
+      ],
+      "blocos": [
+       "anatomia-que-explica-as-regras-97004d60",
+       "ulna-distal-estiloide-e-fibrocartilagem-triangul-45b90271",
+       "ulna-distal-estiloide-e-fibrocartilagem-triangul-a6ef33c4",
+       "ulna-distal-estiloide-e-fibrocartilagem-triangul-a6fe432a"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "a9ef4caccbd6b4870170509714d3df16677d12e12ef6dbd20a9b7b039e7101c7"
+     }
+    ],
+    "questaoSha256": "a9185dbcca8a3fa456b63b3dbe73289d82f6716d25f6dc233538b0dbc47036b4",
+    "comentarioSha256": "d257cdac49152b05e1976f8b8aacd3a856d54bf6938e2b27ece4c2a2d29c4ba1"
+   }
   },
   "pediatria-0984": {
    "tema": "pediatria",
@@ -39766,7 +40062,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39781,7 +40077,35 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "8557cbe69ae5920c4896c24ab47f002ad145d92cff6459e228e009477ac4cbfb"
+   "questaoSha256": "8557cbe69ae5920c4896c24ab47f002ad145d92cff6459e228e009477ac4cbfb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Mecanismo e deformidade: para onde vai cada fragmento",
+       "Consolidação viciosa e escápula alada"
+      ],
+      "blocos": [
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-e5c9da0e",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-bcfb6dd9",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-05e0589a",
+       "consolidacao-viciosa-e-escapula-alada-4ff46e30"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "3090740cd407f2eba741f8801ba76f494e13cdda95626b4e1503a58cc9b9e927"
+     }
+    ],
+    "questaoSha256": "8557cbe69ae5920c4896c24ab47f002ad145d92cff6459e228e009477ac4cbfb",
+    "comentarioSha256": "5ad835fc5589ad6939e8770440e79e4ec3619e856d5ab48def2ca845526b6e5c"
+   }
   },
   "trauma-0064": {
    "tema": "trauma",
@@ -40248,7 +40572,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40263,7 +40587,35 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "013b836ba7cae667eddd7c6a373cb9e7d2f22d19054a280d70fc37ea535d5cb3"
+   "questaoSha256": "013b836ba7cae667eddd7c6a373cb9e7d2f22d19054a280d70fc37ea535d5cb3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Mecanismo e deformidade: para onde vai cada fragmento",
+       "Consolidação viciosa e escápula alada"
+      ],
+      "blocos": [
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-e5c9da0e",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-bcfb6dd9",
+       "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
+       "consolidacao-viciosa-e-escapula-alada-71be14be",
+       "consolidacao-viciosa-e-escapula-alada-4ff46e30"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "93a2c779b29eaf7f0009b39d6330e9fa23027864baf85564bc3afbff21633fd3"
+     }
+    ],
+    "questaoSha256": "013b836ba7cae667eddd7c6a373cb9e7d2f22d19054a280d70fc37ea535d5cb3",
+    "comentarioSha256": "fa6c4eff81483ba4bd79387ceb88e2484795344407cd2522b054d13dc9854a8e"
+   }
   },
   "trauma-0086": {
    "tema": "trauma",
@@ -41519,7 +41871,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41534,7 +41886,34 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "4d737cf40d1289e797242e4d201f7d1220c91ad12cd569e51c8c0655023ee230"
+   "questaoSha256": "4d737cf40d1289e797242e4d201f7d1220c91ad12cd569e51c8c0655023ee230",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Classificações: Allman, Neer, Craig, Robinson e AO"
+      ],
+      "blocos": [
+       "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3",
+       "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+       "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+       "classificacoes-allman-neer-craig-robinson-e-ao-6ba1d129",
+       "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "d68bf79449b4da86b2c29c7a52656d4d36997c1d2331fef464614a55291bf22f"
+     }
+    ],
+    "questaoSha256": "4d737cf40d1289e797242e4d201f7d1220c91ad12cd569e51c8c0655023ee230",
+    "comentarioSha256": "f382bbec375ea996e0b0acbde51982bb1868daecec6876a4d7121f8f9fb3a8f5"
+   }
   },
   "trauma-0133": {
    "tema": "trauma",
@@ -42053,7 +42432,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42076,7 +42455,31 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "4651540ee3087b95ca899c9cd9821559194ec124aa0b77b171eda647d7630eea"
+   "questaoSha256": "4651540ee3087b95ca899c9cd9821559194ec124aa0b77b171eda647d7630eea",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Ombro flutuante, costelas e terço medial"
+      ],
+      "blocos": [
+       "ombro-flutuante-costelas-e-terco-medial-b753c523",
+       "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "f5f26692f2a47a8dd51cd407d04ae7810e871e55bb54ea7d5750a53264ce26c3"
+     }
+    ],
+    "questaoSha256": "4651540ee3087b95ca899c9cd9821559194ec124aa0b77b171eda647d7630eea",
+    "comentarioSha256": "086746ee2caa283d9d1bb3276ce81dec4bc700cbaf7642c1e7ab4b32929a32df"
+   }
   },
   "trauma-0157": {
    "tema": "trauma",
@@ -44219,7 +44622,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44234,7 +44637,33 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "0a0f45989fc3cba013caa87911bf59d1cfc1fcd5ebd7124064f2249a6f43ef33"
+   "questaoSha256": "0a0f45989fc3cba013caa87911bf59d1cfc1fcd5ebd7124064f2249a6f43ef33",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Pseudartrose, fatores de risco e operar ou não"
+      ],
+      "blocos": [
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-06adb43b",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-a45cab68",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-3d70f3c6",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-fa1836c0"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "e19b88fdab61ecea453021d7bd593b74fd239a0f9cb0ce8253409290824ab5a0"
+     }
+    ],
+    "questaoSha256": "0a0f45989fc3cba013caa87911bf59d1cfc1fcd5ebd7124064f2249a6f43ef33",
+    "comentarioSha256": "284ff61ce0945b1a30b3f4bc3be08d679ff4f451bc43904c20aa7a553efe57eb"
+   }
   },
   "trauma-0260": {
    "tema": "trauma",
@@ -44348,7 +44777,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44363,7 +44792,32 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "a2e589422fc50d6e5795858cb3b1b6238a00024df7ccd3ec44171e0fd6faffa3"
+   "questaoSha256": "a2e589422fc50d6e5795858cb3b1b6238a00024df7ccd3ec44171e0fd6faffa3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Classificações: Allman, Neer, Craig, Robinson e AO"
+      ],
+      "blocos": [
+       "classificacoes-allman-neer-craig-robinson-e-ao-5b9c0c66",
+       "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+       "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "ae1b0e9b77923a22b0aa995b4adf3bd9d285b0dbaa4cb66a4050d2380bd856ef"
+     }
+    ],
+    "questaoSha256": "a2e589422fc50d6e5795858cb3b1b6238a00024df7ccd3ec44171e0fd6faffa3",
+    "comentarioSha256": "302064c56f6c2a08e3e6c1c479b851acaca39be7a12ebb03cdc382f63624852c"
+   }
   },
   "trauma-0265": {
    "tema": "trauma",
@@ -47057,7 +47511,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47072,7 +47526,34 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "1378652547f43cb02e39e9140099e5431669ca6b26118005e283465ebd5a8428"
+   "questaoSha256": "1378652547f43cb02e39e9140099e5431669ca6b26118005e283465ebd5a8428",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Terço lateral (distal)"
+      ],
+      "blocos": [
+       "terco-lateral-distal-be04fd16",
+       "terco-lateral-distal-5462932b",
+       "terco-lateral-distal-6bc29624",
+       "terco-lateral-distal-807eaf40",
+       "terco-lateral-distal-978927a9"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "de64ace939824f8deae8d93b3081c6982bbbaedc32c720976915830ad562dbf1"
+     }
+    ],
+    "questaoSha256": "1378652547f43cb02e39e9140099e5431669ca6b26118005e283465ebd5a8428",
+    "comentarioSha256": "214663f990260c2cf98fb3b1325223526c339e965a14bd97f2764e9731176f26"
+   }
   },
   "trauma-0448": {
    "tema": "trauma",
@@ -48331,7 +48812,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -48346,7 +48827,33 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "501eb3321515c9873e445ca1bc83b563e1ad7076c4163ed7d33d00be29898735"
+   "questaoSha256": "501eb3321515c9873e445ca1bc83b563e1ad7076c4163ed7d33d00be29898735",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Lesões neurovasculares e dissociação escapulotorácica"
+      ],
+      "blocos": [
+       "lesoes-neurovasculares-e-dissociacao-escapulotor-d65fb30d",
+       "lesoes-neurovasculares-e-dissociacao-escapulotor-51cbb6a9",
+       "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59",
+       "lesoes-neurovasculares-e-dissociacao-escapulotor-1176f57b"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "d407609bda9ed9c7c530e0f0619b40e77f244b2b74cf82e7f88cbdf54827f31c"
+     }
+    ],
+    "questaoSha256": "501eb3321515c9873e445ca1bc83b563e1ad7076c4163ed7d33d00be29898735",
+    "comentarioSha256": "b1fc5d15fd1eca7103ce209c3d875395d101388339ce9fbbfda5c078194db7a8"
+   }
   },
   "trauma-0570": {
    "tema": "trauma",
@@ -56617,7 +57124,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56632,7 +57139,32 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "78bb139a71a4d911f6bb2ab69f3d1468ece5f55cff8a138bbe5e335f480e71c3"
+   "questaoSha256": "78bb139a71a4d911f6bb2ab69f3d1468ece5f55cff8a138bbe5e335f480e71c3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Placa e haste no terço médio"
+      ],
+      "blocos": [
+       "placa-e-haste-no-terco-medio-09e2065d",
+       "placa-e-haste-no-terco-medio-dd4f9b33",
+       "placa-e-haste-no-terco-medio-16941c79"
+      ],
+      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "trechosSha256": "1ff553e3265b74124b8617f1d3b0983e28d2f9ee543f67c4154d2a2717b17654"
+     }
+    ],
+    "questaoSha256": "78bb139a71a4d911f6bb2ab69f3d1468ece5f55cff8a138bbe5e335f480e71c3",
+    "comentarioSha256": "c1645d1c83c91851b7826b2d540ef5fbdd05dfc8e5da03c74bd84f9b15750c8b"
+   }
   },
   "trauma-1064": {
    "tema": "trauma",

@@ -3899,15 +3899,43 @@
   "conferido": false
  },
  "ombro-cotovelo-0372": {
+  "conceito": "**A dissociação escapulotorácica pode apresentar escápula deslocada lateralmente e fratura da clavícula com fragmentos afastados.** É a falha em tensão da cintura escapular, produzida quando o braço é tracionado violentamente para longe do tronco.\n\nIsso difere da fratura comum em que o peso do braço e os músculos aproximam os segmentos e produzem encurtamento. Aqui, a fratura distraída, em vez de cavalgada, é uma pista de mecanismo e gravidade. A falha pode ocorrer também na esternoclavicular ou na acromioclavicular; a alternativa da questão identifica o elo ósseo correspondente.\n\nO perigo não fica restrito ao osso: a lesão pode acompanhar tração do plexo e comprometimento vascular, ameaçando membro e vida. Exame neurovascular documentado é obrigatório. O resumo recomenda investigar sinais vasculares e, se o membro for salvo, estabilizar a cintura, geralmente com placa na clavícula, para favorecer a recuperação dos tecidos.\n\n**Não confundir com ombro flutuante.** A combinação clássica de clavícula e colo da escápula é uma dupla interrupção do complexo suspensório, mas a dissociação descrita aqui enfatiza afastamento lateral por tração. Uma fratura da glenoide não substitui essa interpretação de lesão dos tecidos e vasos.\n\n**Leia “Lesões agudas” e “Ombro flutuante”, na Biblioteca.** O desvio pode informar mais sobre a energia e a ameaça neurovascular do que a contagem de fraturas.",
+  "correta": "**C: clavícula.** A fratura afastada da clavícula pode acompanhar a lateralização da escápula na dissociação. É uma apresentação diferente do encurtamento habitual e exige procurar lesão neurovascular associada.",
   "incorretas": {
-   "A": "A fratura do acrômio pode ocorrer no trauma do ombro, mas não solta a escápula do tronco: a clavícula e suas articulações continuam fazendo a ligação.",
-   "B": "A fratura da glenoide afeta a articulação do ombro, mas não participa da ligação da escápula ao tronco.",
-   "D": "A fratura do coracoide entra em outro conceito, o ombro flutuante, de gravidade muito menor. O coracoide sozinho não segura a escápula contra a tração lateral."
+   "A": "**Uma fratura do acrômio não é a associação óssea que a questão pede para esse padrão de dissociação.** A falha em tensão pode envolver a articulação acromioclavicular, mas isso não é sinônimo de afirmar que o acrômio fraturou. Articulação lesionada e processo ósseo fraturado são elementos distintos.",
+   "B": "**Fratura da glenoide ou do colo escapular pode compor o ombro flutuante quando associada à clavícula.** Não deve ser usada como substituto da clavícula no mecanismo de escápula lateralizada por tração descrito aqui. A lesão deve ser interpretada pelo conjunto, e não apenas por proximidade anatômica.",
+   "D": "**O coracoide integra a anatomia de sustentação, mas sua fratura isolada não é o elo nomeado no padrão apresentado.** A fonte descreve falha na esternoclavicular, clavícula ou acromioclavicular e destaca a fratura clavicular distraída como pista. A alternativa não corresponde a essa associação."
   },
-  "conceito": "A **dissociação escapulotorácica** é uma lesão gravíssima, comparada a uma \"amputação por dentro\" do membro superior. A pele continua inteira, mas a escápula e o braço são arrancados do tronco por baixo dela.\n\nO mecanismo é um trauma de altíssima energia com tração violenta do ombro para o lado, como o motociclista que tem o braço preso e é puxado com força. A escápula se solta dos músculos que a prendem ao tórax e se desloca para fora.\n\nPara que isso aconteça, algo precisa ceder na **única ligação de osso** entre o braço e o esqueleto do tronco: a **clavícula**, com suas articulações nas duas pontas (com o esterno e com o acrômio). Por isso, a dissociação vem sempre acompanhada de **fratura da clavícula** ou de luxação de uma dessas articulações. Não é uma coincidência: é a condição para a escápula escapar.\n\nO diagnóstico pode ser suspeitado numa radiografia simples de tórax: a escápula do lado lesado fica bem mais afastada da coluna que a do outro lado.\n\nO que define a gravidade são as lesões associadas. A lesão da **artéria** subclávia ou axilar é a urgência imediata. A lesão do **plexo braquial** (os nervos do braço) define o futuro do membro. Quando o plexo é arrancado por completo, o braço fica sem movimento e sem sensibilidade, e muitas vezes se discute a amputação, porque um membro insensível, inútil e doloroso pode ser pior que a ausência dele.",
-  "correta": "Da clavícula. A clavícula é a única ligação de osso entre o braço e o tronco, e precisa ceder para que a escápula se desloque para fora.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Lesões neurovasculares e dissociação escapulotorácica; Ombro flutuante, costelas e terço medial."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Lesões neurovasculares e dissociação escapulotorácica",
+      "Ombro flutuante, costelas e terço medial"
+     ],
+     "blocos": [
+      "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59",
+      "ombro-flutuante-costelas-e-terco-medial-b753c523"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "298b7c9d80e35766a8144c8497a1f3c9dd69473e57567dbe87195258f36c65aa"
+    }
+   ],
+   "questaoSha256": "f56e3c051ca72347050860f352a3f96657263cf5c11e741a9db579be0a422701",
+   "comentarioSha256": "4b3744379fbb5a1b9611a1dc038f521262fb301bc322c23d578422cf84ecd68d"
+  }
  },
  "ombro-cotovelo-0373": {
   "incorretas": {
