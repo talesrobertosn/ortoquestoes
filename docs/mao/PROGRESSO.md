@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 67 | 8 | mao-2023 a mao-2089 | A 17, B 17, C 17, D 16 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 71 | 9 | mao-2023 a mao-2093 | A 18, B 18, C 18, D 17 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 16** (lotes 01 a 15 publicados: mao-2023 a mao-2089; pendentes 2, 19, 23, 71, 72 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 17** (lotes 01 a 16 publicados: mao-2023 a mao-2093; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -296,7 +296,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 | mao-2074 | publicada |
 | 18 | Rádio distal na criança: fator de perda de redução | fato | cap. 41, p. 1625 | mao / Fratura do rádio distal | 05 | mao-2044 | publicada |
 | 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 16, seção de enxertos vascularizados no Kienböck | mao / Doença de Kienböck | 07 |  | pendente: figura (o Green aceita várias artérias para o enxerto do Kienböck) |
-| 20 | Polegar hipoplásico: tendão preferido na oponentoplastia | transferência | cap. 37 (correção cita livro da SBCM) | mao / Outras malformações congênitas | 16 |  | a fazer |
+| 20 | Polegar hipoplásico: tendão preferido na oponentoplastia | transferência | cap. 37, p. 1457 | mao / Outras malformações congênitas | 16 | mao-2090 | publicada |
 | 21 | Carcinoma basocelular: formas | afirmativas | cap. 58, p. 2166 e 2167 | mao / Tumores da mão | 08 | mao-2054 | publicada |
 | 22 | Síndrome compartimental neonatal | afirmativas | cap. 51, p. 1967 | mao / Outros temas da mão | 09 | mao-2062 | publicada |
 | 23 | Artropatia pela imagem | diagnóstico, figura | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 08 |  | pendente: figura (diagnóstico pela imagem) |
@@ -305,7 +305,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | a fazer |
 | 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 04 |  | pendente: sem fonte (valores do ângulo SL não estão no Green) |
 | 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 11 |  | pendente: sem fonte (teste de BERGER não está no Green nem no Pardini) |
-| 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36 e 47, p. 1403 e 1404 | mao / Outras malformações congênitas | 16 |  | a fazer |
+| 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36, p. 1404 e 1423 | mao / Outras malformações congênitas | 16 | mao-2091 | publicada |
 | 30 | Kienböck na criança: conduta (algoritmo de Lichtman) | conduta | cap. 16, p. 733 | mao / Doença de Kienböck | 06 | mao-2049 | publicada |
 | 31 | Procedimento de LEECHAVENGVONGS | afirmativas | cap. 34, p. 1328 a 1330 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2080 | publicada (ângulo: divisão anterior do axilar, rotina no Green) |
 | 32 | Germes de mordida animal, humana e em diabético ou usuário de droga | par | cap. 2, p. 17 e 18 | mao / Infecções da mão | 09 | mao-2058 | publicada |
@@ -328,9 +328,9 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 49 | Mediano com intrínsecos paralisados: postura do polegar | fato | cap. 31, p. 1192 | mao / Transferências tendinosas e paralisias | 11 | mao-2071 | publicada |
 | 50 | Paralisia obstétrica: segunda lesão mais comum | fato | cap. 40, p. 1562 e 1563 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2083 | publicada |
 | 51 | ASIA: grau pela função motora preservada | classificação | cap. 33, p. 1267 (Tabela 33.1) | mao / Transferências tendinosas e paralisias | 13 | mao-2077 | publicada |
-| 52 | APERT: tipo em que se resseca um dedo | classificação | cap. 36, p. 1384 | mao / Sindactilia e polidactilia | 16 |  | a fazer |
+| 52 | APERT: tipo em que se resseca um dedo | classificação | cap. 36, p. 1382 e 1389 | mao / Sindactilia e polidactilia | 16 | mao-2092 | publicada |
 | 53 | BAYNE modificada, tipo 3: rádio distal | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 15 | mao-2088 | publicada |
-| 54 | Artrogripose distal tipo 3: nome e achados | classificação | cap. 39, p. 1535 | mao / Outras malformações congênitas | 16 |  | a fazer |
+| 54 | Artrogripose distal tipo 3: nome e achados | classificação | cap. 39, p. 1535 (Tabela 39.1) | mao / Outras malformações congênitas | 16 | mao-2093 | publicada |
 | 55 | Curativo a vácuo: quando não usar | contraindicação | cap. 43, p. 1684 | mao / Retalhos e cobertura cutânea | 10 | mao-2064 | publicada |
 | 56 | Pele palmar: estruturas da figura | anatomia, figura | cap. 44, p. 1703 | mao / Anatomia da mão e punho | 18 |  | a fazer |
 | 57 | Retalho homodigital dorsorradial do polegar: tamanho e fechamento | número | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 |  | a fazer |
@@ -352,7 +352,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 73 | Ângulo da lágrima no desvio anterior | número | cap. 15, p. 604 e 610 | mao / Fratura do rádio distal | 05 | mao-2042 | publicada |
 | 74 | Amputação no eponíquio: zonas de TAMAI e ALLEN | classificação | cap. 49, p. 1908 | mao / Amputações e reimplantes | 10 | mao-2065 | publicada |
 | 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
-| 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36, p. 1436 | mao / Deformidades dos dedos | 16 |  | a fazer |
+| 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36 | mao / Deformidades dos dedos | 16 |  | pendente: depende da imagem |
 | 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1853 | mao / Retalhos e cobertura cutânea | 19 |  | a fazer |
 | 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
 | 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 (Fig. 35.1) | mao / Outras malformações congênitas | 14 |  | pendente: figura com letras; conceito já em mao-2004 |
