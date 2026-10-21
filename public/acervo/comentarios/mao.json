@@ -30465,5 +30465,66 @@
   ],
   "geradoEm": "2026-10-21",
   "conferido": false
+ },
+ "mao-2106": {
+  "conceito": "**Onde se injeta.** No bloqueio interescalênico, 5 a 10 mL de anestésico local podem ser injetados entre C5 e C6, de lateral para medial, evitando lesão do nervo frênico (Green, cap. 1, p. 5). É um bloqueio rápido e confiável para o ombro, os dois terços laterais da clavícula e o úmero proximal (p. 5).\n\n**O que fica de fora.** O anestésico é posto no alto, junto de C5 e C6. O Green resume a desvantagem: \"cobertura incompleta do tronco inferior do plexo (raízes nervosas C8 e T1), resultando em anestesia insuficiente do nervo ulnar. Este problema torna o bloqueio interescalênico menos confiável para procedimentos de antebraço ou mão\" (cap. 1, p. 5).\n\n**Como se resolve.** \"O nervo ulnar é frequentemente perdido em um bloqueio interescalênico, portanto, a suplementação é frequentemente necessária para anestesia completa do braço\"; o ulnar é bloqueado atrás do epicôndilo medial, com 3 a 5 mL entre o olécrano e o epicôndilo (Green, cap. 1, p. 8).\n\n| Bloqueio interescalênico (Green, cap. 1, p. 5 e 8) | |\n|---|---|\n| Onde injeta | Entre C5 e C6 |\n| Bom para | Ombro, dois terços laterais da clavícula, úmero proximal |\n| Ponto fraco | Tronco inferior (C8 e T1): nervo ulnar |\n| Solução para mão e antebraço | Suplementar o ulnar atrás do epicôndilo medial |\n\n**Por que esta questão foi criada.** Inspirada na questão 73 da SBCM 2022, que cobrou o nervo em que o bloqueio interescalênico mais falha.\n\n> **Na prova:** interescalênico = ombro. Falha no tronco inferior (C8 e T1): ULNAR. Para mão e antebraço, suplementar o ulnar no cotovelo.",
+  "correta": "**B: ulnar.** O Green diz que o interescalênico cobre mal o tronco inferior (C8 e T1), o que deixa o nervo ulnar com anestesia insuficiente (cap. 1, p. 5 e 8).",
+  "incorretas": {
+   "A": "**Não é o típico.** A falha que o Green descreve é a do tronco inferior (C8 e T1), que dá o ulnar (cap. 1, p. 5).",
+   "C": "**Não é o típico.** O Green aponta a falha no tronco inferior, que dá o ulnar (cap. 1, p. 5).",
+   "D": "**Não é o típico.** A falha clássica é a do ulnar, por causa de C8 e T1 (Green, cap. 1, p. 5 e 8)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 1 (Anestesia em cirurgia da mão), p. 5 e 8"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2107": {
+  "conceito": "**Uma infecção que não é infecção.** O pioderma gangrenoso é uma dermatose neutrofílica: uma úlcera \"progressiva, necrosante, não infecciosa, autoimune\" que comumente imita uma infecção aguda ou crônica; em mais de metade dos casos indica doença inflamatória intestinal (colite ulcerativa, doença de CROHN) (Green, cap. 3, p. 84). A lesão típica é uma úlcera com borda arroxeada e solapada, que avança 1 a 2 cm por dia (cap. 2, p. 57).\n\n**Por que o desbridamento piora.** É o fenômeno da patergia: uma resposta inflamatória violenta da pele a qualquer trauma. O PG \"não responde a antibióticos tradicionais ou intervenção cirúrgica\"; é a cirurgia sem imunossupressão que piora (Green, cap. 3, p. 86). No capítulo de infecções agudas, o Green diz que a excisão cirúrgica é contraindicada e pode aumentar a necrose (cap. 2, p. 57). Uma ferida \"infectada\" que não melhora com desbridamento e se estende para fora deve levantar a suspeita; nesse caso, \"corticosteróides (não antibióticos) são o tratamento definitivo\" (cap. 3, p. 86).\n\n**O manejo.** Terapia imunossupressora com corticoide oral, prednisona 100 mg/dia; tratamento da doença de base; cuidados locais. A resposta ao corticoide é dramática em 24 horas, e em cerca de 6 semanas a lesão epiteliza. Dapsona, azatioprina e outros imunomoduladores são úteis quando o corticoide oral é contraindicado; o PG resistente ligado a CROHN responde à ciclosporina ou ao infliximabe (Green, cap. 3, p. 86).\n\n| Opção (Green, cap. 3, p. 86) | Papel no pioderma gangrenoso |\n|---|---|\n| Prednisona oral | Primeira linha |\n| Azatioprina, dapsona | Quando o corticoide é contraindicado |\n| Ciclosporina, infliximabe | Resistente ao corticoide, com CROHN |\n| Antibiótico, desbridamento sem imunossupressão | Não funcionam; a cirurgia piora |\n\n**Por que esta questão foi criada.** Inspirada na questão 15 da SBCM 2022, que cobrou o tratamento de escolha do pioderma gangrenoso.\n\n> **Na prova:** pioderma gangrenoso = úlcera violácea que piora com o desbridamento (patergia). Tratamento: CORTICOIDE (prednisona), não antibiótico.",
+  "correta": "**C: prednisona.** O Green põe a imunossupressão com corticoide oral, prednisona 100 mg/dia, como base do tratamento e diz que corticoides, não antibióticos, são o tratamento definitivo (cap. 3, p. 86).",
+  "incorretas": {
+   "A": "**Não é infecção.** O PG não responde a antibióticos tradicionais (Green, cap. 3, p. 86).",
+   "B": "**Também antibiótico.** O tratamento é imunossupressor, não antimicrobiano (Green, cap. 3, p. 86).",
+   "D": "**Segunda linha.** A azatioprina é útil quando o corticoide oral é contraindicado; a primeira escolha é a prednisona (Green, cap. 3, p. 86)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 3 (Infecções crônicas), p. 84 a 86",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 2 (Infecções agudas da mão), p. 57"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2108": {
+  "conceito": "**A infecção mais comum da mão.** \"A paroníquia é a infecção mais comum na mão, acometendo três vezes mais as mulheres do que os homens\" (Green, cap. 2, p. 20). Ela envolve a dobra de tecido mole ao redor da unha.\n\n**Como começa.** A paroníquia aguda \"geralmente resulta da inoculação bacteriana do tecido da paroníquia por uma lasca de unha ou unha, por um instrumento de manicure ou por roer as unhas\"; a quebra da barreira entre a prega e a lâmina ungueal deixa as bactérias entrarem (Green, cap. 2, p. 20). \"Embora a maioria das paroníquias sejam infecções mistas, o organismo infectante mais comum é o S. aureus\" (p. 20).\n\n**Não confundir com a crônica.** A paroníquia crônica é outro problema: eponíquio endurecido e arredondado, mais comum em mulheres de meia-idade (4:1), com imersão frequente em água e detergentes como fator predisponente; hoje é vista como condição eczematosa, e a colonização estafilocócica pode ser seguida de infecção por Candida albicans (Green, cap. 2, p. 24).\n\n| | Paroníquia aguda | Paroníquia crônica (Green, cap. 2, p. 20 e 24) |\n|---|---|---|\n| Como começa | Inoculação por lasca de unha, manicure, roer unha | Separação entre lâmina e tecido mole, imersão em água |\n| Agente | S. aureus (infecção muitas vezes mista) | Colonização estafilocócica e, depois, Candida |\n\n**Por que esta questão foi criada.** Inspirada na questão 98 da SBCM 2022, que cobrou o mecanismo e o agente da paroníquia.\n\n> **Na prova:** paroníquia AGUDA = inoculação (manicure, roer unha) + S. AUREUS. Candida é da CRÔNICA.",
+  "correta": "**D: inoculação em pequenos traumas da prega ungueal; Staphylococcus aureus.** O Green descreve a paroníquia aguda como inoculação bacteriana por lasca de unha, manicure ou roer unhas, com S. aureus como agente mais comum (cap. 2, p. 20).",
+  "incorretas": {
+   "A": "**Mecanismo errado.** O agente está certo, mas a paroníquia aguda vem de inoculação local, não da corrente sanguínea (Green, cap. 2, p. 20).",
+   "B": "**Agente da crônica.** O mecanismo está certo, mas a Candida aparece na paroníquia crônica; na aguda o mais comum é o S. aureus (Green, cap. 2, p. 20 e 24).",
+   "C": "**Os dois errados.** Nem via hematogênica nem Candida: inoculação local e S. aureus (Green, cap. 2, p. 20)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 2 (Infecções agudas da mão), p. 20 e 24"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
+ },
+ "mao-2109": {
+  "conceito": "**Recontratura não é uma coisa só.** O Green separa dois padrões de recontratura pelo tempo e pela causa.\n\n**Precoce.** \"A recontratura precoce desenvolve-se durante os primeiros três meses de pós-operatório, seguida por um platô\"; deve-se aos efeitos secundários de uma postura fletida crônica em tendões, ligamentos, pele e outros tecidos, que desequilibram o dedo a favor da flexão (Green, cap. 4, p. 156). É mais provável em contraturas da IFP maiores que 40 a 60 graus, da MF maiores que 50 graus e compostas maiores que 110 graus; são influências estáticas, que logo se estabilizam (p. 156).\n\n**Progressiva.** \"A recontratura progressiva é uma piora constante da contratura que continua a progredir após os primeiros 3 meses de pós-operatório. A recontratura progressiva é devida à doença ativa residual\" (Green, cap. 4, p. 156). Cordões múltiplos que escaparam do tratamento e tecido rico em miofibroblastos no momento da cirurgia se correlacionam com ela (p. 156).\n\n| Padrão (Green, cap. 4, p. 156) | Quando | Causa | Evolução |\n|---|---|---|---|\n| Precoce | Primeiros 3 meses | Alterações secundárias da flexão crônica | Platô |\n| Progressiva | Continua após 3 meses | Doença ativa residual | Piora constante |\n\n**Por que esta questão foi criada.** Inspirada na questão 55 da SBCM 2022, que cobrou o padrão de recorrência que começa entre 6 e 12 semanas. O Green não dá esse número: define os padrões pelos três primeiros meses e pela causa. A questão foi reescrita com a definição do livro, e a resposta é a mesma da original.\n\n> **Na prova:** recontratura PRECOCE = 3 primeiros meses, platô, efeitos secundários. PROGRESSIVA = continua depois de 3 meses, doença ATIVA residual.",
+  "correta": "**A: progressiva.** O Green define a recontratura progressiva como a piora constante que continua após os três primeiros meses, causada por doença ativa residual (cap. 4, p. 156).",
+  "incorretas": {
+   "B": "**Para no platô.** A precoce acontece nos três primeiros meses e depois estabiliza; não é doença ativa (Green, cap. 4, p. 156).",
+   "C": "**Não é um dos padrões do Green.** O livro descreve a recontratura precoce e a progressiva (cap. 4, p. 156).",
+   "D": "**É a causa, não o nome.** A doença residual ativa é o que provoca a recontratura progressiva; \"residual\" não é o nome do padrão (Green, cap. 4, p. 156)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 4 (Doença de Dupuytren), p. 156"
+  ],
+  "geradoEm": "2026-10-21",
+  "conferido": false
  }
 }
