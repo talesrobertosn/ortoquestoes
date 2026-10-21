@@ -467,7 +467,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16 | mao / Doença de Kienböck | 07 |  | a fazer |
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
-| 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326 e 345 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (ângulo: MF sem checkrein fortes; o Green não afirma isso da IFD) |
+| 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
 | 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38 e 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
