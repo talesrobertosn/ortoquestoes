@@ -1,0 +1,387 @@
+{
+  "trauma-1427": {
+    "questaoSha256": "6cec68ed72774c58ce44d3ad1af38ebd0609b2ce430fa564795dc87c24414868",
+    "comentarioAnteriorSha256": "7f0900cfba1ddf659d57b3bcbbb3f4008bef09efe6909ffbea9faef46ca87cec",
+    "comentario": {
+      "conceito": "**A faceta anteromedial pode estar fraturada mesmo sem luxação evidente na chegada.** O paciente pode relatar estalo ou redução espontânea, e a cabeça radial frequentemente não está fraturada nesse padrão. Radiografias podem mostrar apenas sinais discretos, como perda do paralelismo medial ou abertura radiocapitelar.\n\nA **tomografia com reconstrução 3D** é recomendada no resumo para definir o padrão ósseo e a congruência. Localizar a borda, a ponta e a eventual extensão ao tubérculo sublime importa para a classificação e para o suporte que será reconstruído. Subluxação estática na tomografia pesa fortemente a favor de cirurgia.\n\nO exame não responde sozinho a toda pergunta de estabilidade. A anatomia óssea se soma à avaliação do conjunto ligamentar e do comportamento da articulação. O ponto do enunciado é escolher a imagem para esclarecer a fratura e a relação articular, não um método genérico para toda dor no cotovelo.\n\n**Na Biblioteca, leia “A pista: coronoide fraturado sem cabeça do rádio fraturada”.** Relacione a discrição das radiografias à utilidade da reconstrução tomográfica, em vez de pedir imagem avançada sem saber o que pretende esclarecer.\n\n**Por que esta questão foi criada.** Treina a escolha de imagem conforme a pergunta clínica: definir uma fratura discreta e a congruência, em vez de solicitar um método sem objetivo anatômico.",
+      "correta": "**B: tomografia com reconstrução 3D.** É o exame recomendado para caracterizar o fragmento e verificar a congruência nesse padrão. A definição do apoio anteromedial tem implicação direta no planejamento.\n\nA tomografia complementa o exame e a radiografia; não prova, por si, a integridade de todos os ligamentos nem substitui o raciocínio de estabilidade.",
+      "incorretas": {
+        "A": "**Radiografia é parte da avaliação, mas pode subestimar uma lesão discreta da faceta.** O resumo recomenda tomografia 3D justamente para definir a geometria e a congruência. Limitar a avaliação à imagem simples pode deixar o padrão ósseo insuficientemente caracterizado.",
+        "C": "**Ressonância com contraste não é o exame proposto para essa tarefa no resumo.** A pergunta busca a geometria do fragmento e a relação articular, para as quais a fonte indica tomografia 3D. Isso não significa que a ressonância nunca tenha utilidade no cotovelo; apenas que não é a escolha específica descrita aqui.",
+        "D": "**Ultrassonografia dinâmica comparativa não substitui o estudo tomográfico indicado para esse padrão ósseo.** Uma avaliação dinâmica procura outro tipo de informação; o objetivo solicitado é mapear a faceta e a congruência. A alternativa muda a tarefa de imagem em vez de responder à recomendação da fonte."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Instabilidade rotatória posteromedial em varo; Fraturas do coronoide."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Instabilidade rotatória posteromedial em varo",
+          "Fraturas do coronoide"
+        ],
+        "blocos": [
+          "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+          "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+          "fraturas-do-coronoide-261ac45a"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "94233d3f483e0d12eae4013e7cf3fbc265e4f26e854aae0057980d9ac914be47"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1428": {
+    "questaoSha256": "53f6729e8d528057be72bf70fb71ede82010a3d0e489c36fb2b29bcacf434d4e",
+    "comentarioAnteriorSha256": "56d30230685f4162f8a7bb9a6ae3e43004323ec106c91269e826f60b699fc59c",
+    "comentario": {
+      "conceito": "**Uma posição que protege um lado pode não ser a melhor para uma lesão combinada.** Na deficiência lateral isolada, a pronação tende a estabilizar. Porém, na lesão anteromedial há também perda do apoio do coronoide. O resumo descreve **antebraço em neutro** para o início da reabilitação desse conjunto.\n\nA justificativa apresentada é um equilíbrio: pronação protege o lateral e supinação protege o coronoide. A posição neutra evita aplicar automaticamente a regra de um único estabilizador quando dois componentes precisam de proteção. Também se evita afastar o braço do corpo, porque isso produz varo sobre a borda comprometida.\n\nO plano depende de uma articulação congruente e de estabilidade suficiente; a posição não torna segura uma fratura mal reduzida ou uma subluxação persistente. Na indicação de tratamento, o tamanho, o desvio, a congruência e o comportamento sob carga precisam ser considerados.\n\n**Leia “Tratamento” da instabilidade posteromedial na Biblioteca e compare com “A pronação protege o lado lateral”.** A diferença entre lesão isolada e combinada explica por que respostas aparentemente opostas podem estar corretas em contextos distintos.\n\n**Por que esta questão foi criada.** Compara proteção de um ligamento isolado com proteção de uma deficiência óssea e ligamentar combinada.",
+      "correta": "**A: neutro.** É a posição descrita para equilibrar a proteção do coronoide deficiente e do lateral lesado. A resposta depende dessa combinação, expressamente delimitada no enunciado.\n\nNão é uma orientação universal para toda luxação ou fratura do cotovelo. O padrão de lesão determina qual rotação deve ser protegida.",
+      "incorretas": {
+        "B": "**Pronação favorece a proteção lateral, mas trata apenas uma parte do problema.** Na deficiência combinada com a faceta anteromedial, o resumo escolhe neutro. Repetir a regra do lateral isolado ignora o apoio ósseo que também precisa de proteção.",
+        "C": "**Supinação favorece a proteção do coronoide na explicação da fonte, mas pode desafiar o lateral deficiente.** A opção privilegia uma contenção e não o equilíbrio do conjunto. Por isso, a posição descrita para esse cenário é neutra.",
+        "D": "**Pronação máxima amplia a aplicação de uma regra que já não resolve a lesão combinada.** Não se deve supor que mais rotação protetora do lateral compense automaticamente o coronoide. O resumo recomenda neutro, junto dos demais cuidados contra varo."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Instabilidade rotatória posteromedial em varo; Quem segura o cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Instabilidade rotatória posteromedial em varo",
+          "Quem segura o cotovelo"
+        ],
+        "blocos": [
+          "instabilidade-rotatoria-posteromedial-em-varo-7668a07f",
+          "quem-segura-o-cotovelo-7b7c7f11",
+          "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "f031f20ae296196a8ad93df486a955d9ea03ae08999b778f419398445c5b011b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1429": {
+    "questaoSha256": "e51a44556527b1fa2ec3cba4eabdee427d654395ea23c9b0c7c45429e416812b",
+    "comentarioAnteriorSha256": "001a985f321f9a23fa3556ad2ff641e86bfc6f7d3591db4d2e012c7d18f75c58",
+    "comentario": {
+      "conceito": "**Os dois perfis mostram uma fratura através da região do olécrano, com deslocamento anterior do antebraço em relação ao úmero.** O padrão é de fratura-luxação **transolecraniana anterior**. A característica que a separa da leitura genérica de Monteggia é a relação radioulnar proximal relativamente mantida.\n\nNa transolecraniana, o antebraço se desloca pelo defeito da ulna proximal, sem exigir a mesma dissociação entre rádio e ulna proximais. A imagem deve ser lida acompanhando o conjunto, em vez de chamar qualquer fratura ulnar com deslocamento de Monteggia.\n\nO resumo descreve que cabeça radial e colaterais costumam estar preservados, e o coronoide, quando fratura, tende a formar um fragmento anterior grande. Essas são associações do padrão, não estruturas cuja integridade possa ser provada apenas pelos perfis apresentados.\n\nA reconstrução procura restaurar a incisura e a estabilidade com fixação apropriada; a classificação de Mayo a inclui entre os padrões instáveis. **Na Biblioteca, leia “Fratura-luxação transolecraniana” e compare com “Monteggia posterior do adulto”.** Procure primeiro a direção do antebraço e depois a relação entre rádio e ulna.\n\n**Por que esta questão foi criada.** Exige interpretar uma fratura-luxação real pela direção e pela relação radioulnar, evitando usar Monteggia para todo deslocamento com fratura da ulna.",
+      "correta": "**A: anterior e relação radioulnar proximal mantida.** O deslocamento do conjunto através da fratura do olécrano corresponde ao padrão transolecraniano descrito. “Mantida” se refere à relação proximal entre rádio e ulna, não a uma articulação umeroulnar normal.\n\nA distinção importa porque o tratamento precisa reconstruir a ulna proximal e sua superfície articular, sem presumir o mesmo mecanismo de uma luxação da cabeça radial associada a fratura ulnar.",
+      "incorretas": {
+        "B": "**A direção anterior está correta, mas a ruptura radioulnar proximal troca a característica distintiva.** O resumo descreve essa relação relativamente preservada na transolecraniana. A articulação umeroulnar estar luxada não significa que todas as relações proximais tenham se rompido.",
+        "C": "**A relação proximal preservada é compatível, mas a direção foi invertida.** O conjunto nas imagens e no padrão transolecraniano descrito desloca-se anteriormente. A opção transporta a direção posterior de outra família de fraturas-luxações.",
+        "D": "**A opção altera direção e relação radioulnar.** Deslocamento posterior com dissociação proximal não corresponde à transolecraniana anterior apresentada. Antes de escolher um epônimo, é necessário seguir no perfil onde estão antebraço, úmero e relação rádio-ulna."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad",
+          "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1",
+          "ulna-proximal-olecrano-e-monteggia-posterior-d94b44b4",
+          "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "6e307398d8cb05cef20eae3d429ff8eec2e85cb837bbfb31b9aac022b92d4e95"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1429-1.jpeg"
+    ]
+  },
+  "trauma-1430": {
+    "questaoSha256": "765ae54f47dc069564167b9ca49e9deae9237ec96cc5297b97bb006edf5588c3",
+    "comentarioAnteriorSha256": "5a4a76837b6717fd516ba9223df137e0678ab1b36a058acb77320e4e16e8b27f",
+    "comentario": {
+      "conceito": "**A cabeça radial depende da geometria da ulna para permanecer reduzida na Monteggia.** Fixar a fratura não basta se o osso ficou curto, mal angulado ou sem sua forma habitual. O resumo exige restaurar comprimento, angulação dorsal e a forma sinuosa da ulna; uma placa reta sem moldagem pode deixar a radiocapitelar mal reduzida.\n\nA Monteggia posterior do adulto pode incluir fraturas da cabeça radial e do coronoide, além de lesões dos colaterais. A complexidade não elimina o princípio ósseo: a reconstrução ulnar é a referência para o conjunto. Reparo de partes moles ou substituição da cabeça não corrige automaticamente uma ulna mal alinhada.\n\nO capítulo descreve uma ordem específica para padrões articulares IIA e IID, com redução provisória da ulna para medir corretamente a prótese quando necessária. Essa ordem técnica deve ser distinguida do princípio anatômico perguntado, que é manter a redução radiocapitelar por uma ulna correta.\n\n**Leia o parágrafo operatório de “Monteggia posterior do adulto”, na Biblioteca.** Identifique o que significa restaurar a forma, além de simplesmente obter uma osteossíntese resistente.\n\n**Por que esta questão foi criada.** Treina o princípio anatômico que explica subluxação residual da cabeça radial mesmo após uma placa ter sido colocada.",
+      "correta": "**B: restauração anatômica da ulna.** É ela que recupera as referências de comprimento e alinhamento necessárias para a cabeça radial manter sua relação com o capítulo.\n\nUma fixação firme na posição errada pode consolidar o problema. O teste da redução proximal precisa acompanhar a conferência da reconstrução óssea.",
+      "incorretas": {
+        "A": "**Sutura isolada do lateral não corrige uma ulna curta ou mal angulada.** O ligamento pode precisar de tratamento, mas a opção ignora a referência óssea que orienta a radiocapitelar. O resumo exige reconstrução do conjunto, com a geometria ulnar como princípio decisivo.",
+        "C": "**Substituir apenas a cabeça não restaura o comprimento e a forma da ulna.** Uma prótese pode ser necessária em uma cabeça irreparável, mas precisa funcionar num antebraço reconstruído. O implante não neutraliza automaticamente o desalinhamento ulnar.",
+        "D": "**Excisão do olécrano com avanço do tríceps é uma estratégia de resgate em outro perfil de fratura.** Não é a forma de restabelecer a anatomia da Monteggia posterior instável. A opção retira apoio em vez de responder à necessidade de reconstrução geométrica perguntada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-79b0260b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-e1b9aba4"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "6c30f2e06b0adc8d9fcd219a966b968514059a95e51d47063b73f835f226843c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1433": {
+    "questaoSha256": "6a1a5098c7a1c269ba3ee2de771cd5c5771a821eaec5200f552972c5e9a87888",
+    "comentarioAnteriorSha256": "d8f418419839fdbe30c87b720dacb7764df1b485e971b5469d9613621aeb1634",
+    "comentario": {
+      "conceito": "**A Monteggia posterior, Bado II, é o padrão destacado para o adulto no resumo.** Além da fratura ulnar e da luxação proximal, lesões da cabeça radial e do coronoide tornam a reconstrução mais complexa porque acrescentam perda de apoio articular ao problema de alinhamento.\n\nO capítulo descreve especialmente os padrões de Jupiter IIA e IID, que entram na articulação e podem combinar angulação posterior da ulna, cabeça radial fraturada, coronoide fraturado e lesões ligamentares. Essas associações ajudam a entender por que o planejamento não pode se limitar à diáfise ulnar.\n\nA reconstrução exige restaurar a ulna e tratar os componentes associados conforme o padrão. Uma cabeça irreparável pode precisar de prótese, medida com a ulna provisoriamente reduzida; o coronoide recebe fixação ou reparo adequado. O objetivo final é congruência estável, não apenas identificar um número de classificação.\n\n**Na Biblioteca, leia “Monteggia posterior do adulto”, incluindo as lesões associadas e o roteiro operatório.** O resumo sustenta a combinação pedida, mas não deve ser usado como se substituísse uma descrição completa de todos os tipos de Bado.\n\n**Por que esta questão foi criada.** Associa o padrão posterior do adulto às perdas de apoio articular que tornam a reconstrução mais exigente.",
+      "correta": "**B: tipo II, com fratura da cabeça radial ou do coronoide.** É a combinação apresentada para o padrão adulto e suas lesões que aumentam a complexidade. A participação dessas superfícies explica a necessidade de reconstrução articular além da fixação da ulna.\n\nA classificação de Jupiter detalha o nível e a extensão da fratura ulnar dentro do grupo posterior, ajudando a reconhecer os padrões que entram na articulação.",
+      "incorretas": {
+        "A": "**A opção não corresponde ao padrão posterior Bado II destacado para o adulto.** Também troca as associações ósseas enfatizadas, cabeça radial e coronoide, por capítulo. Isso não afirma que uma lesão capitular seja impossível em um trauma complexo; ela não é a combinação que responde ao resumo e ao enunciado.",
+        "C": "**Tipo III não é o padrão adulto indicado nesta comparação.** Lesão medial pode participar de uma lesão complexa, mas a alternativa não oferece as fraturas da cabeça ou do coronoide que a fonte destaca como fatores de complexidade. A existência de lesão ligamentar não corrige o tipo trocado.",
+        "D": "**Tipo IV com lesão radioulnar distal não é a combinação pedida.** O resumo centra a Monteggia posterior do adulto em Bado II e nas fraturas articulares proximais associadas. A articulação distal merece avaliação em traumas do antebraço, mas sua menção não substitui os componentes proximais específicos deste padrão."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1",
+          "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-79b0260b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-94f5c40a",
+          "ulna-proximal-olecrano-e-monteggia-posterior-2a8f01a4"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "6fdd63872313412f20ecb70604f768880151c0928e51e1febff8b11af5baeb19"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1434": {
+    "questaoSha256": "d448adc65cc2bafd462e424d5c74674dea76eb7ff6293e5d96691ccc02e87ae0",
+    "comentarioAnteriorSha256": "4620efa5325ef7c69d80f1a37fc2611332d8e67a9a7f9546e1c3f0ddb1a04e01",
+    "comentario": {
+      "conceito": "**Jupiter subdivide a Monteggia posterior Bado II pelo nível e pela extensão da fratura ulnar.** No **IIA**, o traço está no nível do coronoide, que pode formar fragmento separado. O **IIB** é distal ao coronoide; o **IIC**, diafisário; o **IID**, complexo do olécrano à diáfise.\n\nO enunciado localiza a fratura muito proximal e através do coronoide. Essa referência anatômica é mais útil que imaginar uma progressão de gravidade apenas pelas letras. Uma fratura complexa pode ter várias lesões, mas não é classificada como IID só porque parece importante.\n\nOs padrões que entram na articulação podem trazer cabeça radial, coronoide e ligamentos comprometidos. A reconstrução precisa restaurar o apoio articular e a anatomia ulnar; caso contrário, a radiocapitelar pode continuar mal reduzida.\n\n**Na Biblioteca, leia a lista de Jupiter em “Monteggia posterior do adulto” e acompanhe o nível de cada traço.** A localização do coronoide é a referência que separa o IIA dos padrões mais distais.\n\n**Por que esta questão foi criada.** Treina a localização do traço na subclassificação de Jupiter, sem usar as letras como uma escala genérica de gravidade.",
+      "correta": "**A: IIA.** A fratura no nível do coronoide é a definição correspondente. O fragmento coronoide pode estar separado e participar diretamente da instabilidade.\n\nO código não substitui avaliar as outras lesões, mas ajuda a antecipar a necessidade de reconstrução articular proximal.",
+      "incorretas": {
+        "B": "**IIB é distal ao coronoide.** A alternativa desloca o traço para além da referência anatômica fornecida. A pergunta não diz apenas fratura proximal da ulna; especifica atravessar o coronoide, o que aponta para IIA.",
+        "C": "**IIC é diafisário.** Esse nível não corresponde ao traço muito proximal através do coronoide. Confundir diáfise com região articular elimina a informação que o enunciado oferece para a subclassificação.",
+        "D": "**IID é uma fratura complexa que se estende do olécrano à diáfise.** Complexidade não é sinônimo de qualquer traço no coronoide. Sem essa extensão descrita, a localização específica do caso corresponde ao IIA."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-94f5c40a",
+          "ulna-proximal-olecrano-e-monteggia-posterior-e821e601",
+          "ulna-proximal-olecrano-e-monteggia-posterior-68efd8ea",
+          "ulna-proximal-olecrano-e-monteggia-posterior-2a8f01a4",
+          "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "2cc7c45643ad75b8b471486ee12da68f3eaab2c5e191fd5a6842e2fdd53bc9e2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0862": {
+    "questaoSha256": "89c09b89b824a266d545eb3f5167ce7d5ab8b21781f210aad0115408431f6d46",
+    "comentarioAnteriorSha256": "1da960f6db8ae5f2341cad2655c7a0a87d77f213e3c67fd9e4f566c7178bf43c",
+    "comentario": {
+      "conceito": "**Mayo combina o estado da fratura com a estabilidade umeroulnar.** Ela não usa apenas a quantidade de fragmentos. Os tipos são definidos por desvio e estabilidade, enquanto A e B informam se existe cominuição.\n\n| Tipo | Característica principal |\n| --- | --- |\n| I | Fratura sem desvio. |\n| II | Fratura desviada, com relação umeroulnar estável. |\n| III | Padrão instável. |\n\nEm cada tipo, **A é sem cominuição e B é com cominuição**. Assim, IIB significa desviado, estável e cominutivo. “Estável” não significa que a fratura esteja sem desvio nem que sempre possa ser tratada apenas com gesso; refere-se à relação articular considerada pela classificação.\n\nEssa combinação orienta o método de fixação. O resumo favorece placa para cominutivas e instáveis; banda de tensão é apropriada a traços simples sem cominuição e com cotovelo estável. O objetivo é manter a incisura congruente e permitir movimento precoce com fixação adequada.\n\n**Leia “Mayo: desvio, estabilidade e cominuição”, na Biblioteca, e compare os exemplos de banda e placa.** Separar o número da letra ajuda a usar a classificação para compreender o tratamento.",
+      "correta": "**A: cominuição, desvio e instabilidade umeroulnar.** São os três critérios presentes na organização do resumo. O número expressa desvio/estabilidade e a letra acrescenta a cominuição.\n\nA articulação de referência é umeroulnar. Trocar por radioulnar proximal ou umerorradial muda o sistema que a classificação está descrevendo.",
+      "incorretas": {
+        "B": "**Cominuição e desvio estão corretos, mas a estabilidade foi atribuída à radioulnar proximal.** Mayo usa a relação umeroulnar para separar o padrão desviado estável do instável. A relação rádio-ulna tem importância em outros diagnósticos, mas não substitui esse critério.",
+        "C": "**Potencial de redução não é um dos três critérios listados.** A opção também troca a estabilidade umeroulnar pela radioulnar proximal e omite a cominuição. A facilidade de reduzir pode influenciar o tratamento, sem fazer parte da definição classificatória pedida.",
+        "D": "**A cominuição está presente, mas os outros parâmetros foram trocados.** Potencial de redução não substitui o desvio, e instabilidade umerorradial não é a relação usada por Mayo. O par número/letra só faz sentido mantendo os critérios anatômicos corretos."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-15629400",
+          "ulna-proximal-olecrano-e-monteggia-posterior-e332dbdb",
+          "ulna-proximal-olecrano-e-monteggia-posterior-d94b44b4",
+          "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+          "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "81c8b091c49fae9f5d2821dfd47c26665bb7c7503575b716690f0f0c5269d2fa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0759": {
+    "questaoSha256": "d5ee47ef857788584ce05453353bfbd31b0caea72fa58b0de34295324ec40da4",
+    "comentarioAnteriorSha256": "6ac1475a2aa30782c869584edab249da65ee10da00800a401d6130d84895d743",
+    "comentario": {
+      "conceito": "**Mayo IIB significa fratura desviada, estável e cominutiva.** O II descreve a relação umeroulnar estável apesar do desvio; o B acrescenta múltiplos fragmentos. Portanto, não se deve interpretar “estável” como sinônimo de traço simples ou ausência de necessidade de reconstrução.\n\nA **placa com parafusos** é a preferência do resumo para esse padrão. Na cominuição, é necessário manter comprimento e forma da incisura sem comprimir os fragmentos de modo a estreitá-la. O capítulo alerta que compressão excessiva da ponta pode criar incongruência e artrose.\n\nA banda de tensão funciona bem quando existe um traço simples que pode receber compressão. Na cominuição, essa lógica pode encurtar e deformar a incisura, em vez de reconstruir uma superfície estável. Um parafuso isolado de compressão também não substitui automaticamente o suporte necessário aos vários fragmentos.\n\nTratamento sem cirurgia pode ser escolhido em pacientes selecionados sem condições operatórias e com requisitos próprios, mas isso não altera a resposta ao tratamento preferencial do padrão IIB. **Na Biblioteca, leia a classificação de Mayo e depois as seções “Banda de tensão” e “Placa”.** A morfologia explica a escolha do implante.",
+      "correta": "**C: placa e parafusos.** A montagem permite reconstruir e sustentar a fratura cominutiva, preservando a forma articular. A escolha responde à combinação de desvio e cominuição, não apenas ao fato de o cotovelo ser estável.\n\nA fixação deve evitar encurtamento ou estreitamento da incisura. Uma placa não compensa uma redução articular inadequada.",
+      "incorretas": {
+        "A": "**Imobilização não é o tratamento preferencial da fratura desviada e cominutiva descrita.** Há exceções para pacientes selecionados, mas elas exigem considerar condições clínicas, pele, estabilidade e demanda. A opção ignora a reconstrução indicada como preferência para o padrão IIB.",
+        "B": "**Banda de tensão pressupõe um traço simples capaz de receber compressão.** Na cominuição, comprimir pode encurtar a ulna proximal e deformar a incisura. A estabilidade umeroulnar do tipo II não transforma o subtipo B em um traço adequado à banda.",
+        "D": "**Parafuso intramedular de compressão pode ter uso em fraturas apropriadas, mas não resolve por si a cominuição IIB.** O resumo recomenda placa para preservar a geometria dos múltiplos fragmentos. Compressão isolada pode perder a forma da incisura em vez de sustentá-la."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-e332dbdb",
+          "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-706a5726",
+          "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+          "ulna-proximal-olecrano-e-monteggia-posterior-b3006742"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "814f0756a471c0af5609e45f487b7e66fecab7f95da8e41337825669070d4b30"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0879": {
+    "questaoSha256": "97e1ee72eee291ad6e53bac15cc615c70fd48db92e544321cb3994e1adb46b3c",
+    "comentarioAnteriorSha256": "f7ab983b14392f5c5c691df32e1d0b43de0ac1fb7bd0d84af0a5cd4c508163f3",
+    "comentario": {
+      "conceito": "**A letra B muda a biomecânica do tratamento da fratura Mayo II.** O número informa desvio com estabilidade umeroulnar; a letra indica cominuição. Uma fratura pode manter a relação do cotovelo e ainda precisar de fixação que reconstrua vários fragmentos sem deformar a incisura.\n\nA preferência é **placa e parafusos**. O suporte deve conservar comprimento e superfície articular. O resumo alerta contra compressão excessiva que estreite a incisura sigmoide maior, produzindo incongruência.\n\nA banda de tensão é voltada a fraturas simples, sem cominuição e proximais ao coronoide. O parafuso de tração também depende de um padrão em que a compressão tenha base para funcionar. Esses métodos não devem ser escolhidos apenas por serem técnicas conhecidas do olécrano, ignorando o B da classificação.\n\nExcisão com avanço do tríceps é uma solução de resgate para perfil selecionado, como idoso de baixa demanda com osso ruim e fragmento dentro do limite descrito. Não é a resposta padrão a toda fratura cominutiva do adulto.\n\n**Leia “Mayo: desvio, estabilidade e cominuição” e “Placa”, na Biblioteca.** O ponto é reconstruir a forma articular compatível com o padrão, e não escolher um método pela familiaridade do nome.",
+      "correta": "**D: placa e parafusos.** É a fixação preferida para a fratura desviada e cominutiva IIB. O material deve manter a redução sem encurtar ou estreitar a incisura.\n\nA necessidade de suporte vem da cominuição, mesmo quando a relação umeroulnar é classificada como estável.",
+      "incorretas": {
+        "A": "**A banda de tensão serve para traços simples, sem cominuição.** No IIB, a compressão pode colapsar a reconstrução e alterar a incisura. A alternativa trata o tipo II como se a letra B não acrescentasse uma condição decisiva.",
+        "B": "**Excisão da ponta é uma estratégia de resgate com indicação e limite próprios.** Idade, demanda, qualidade óssea e extensão do fragmento importam. O enunciado não descreve esse perfil e pede o tratamento de escolha do IIB, para o qual o resumo favorece reconstrução com placa.",
+        "C": "**Um parafuso de tração isolado não oferece automaticamente o suporte dos vários fragmentos.** A compressão precisa ser compatível com o traço; na cominuição, pode deformar a superfície. A preferência pela placa procura sustentar a geometria, não apenas aproximar dois fragmentos principais."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-e332dbdb",
+          "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+          "ulna-proximal-olecrano-e-monteggia-posterior-706a5726",
+          "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+          "ulna-proximal-olecrano-e-monteggia-posterior-e1b9aba4"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "6cc31bbe02e24b8c7ec8cadfbcfcd987010e8505e6bb7be06c8206c3ecb6278b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0535": {
+    "questaoSha256": "6806d20330a88196acd4ac9fdadcd121b9ea04a3f11c2b03c444235c7bbfef46",
+    "comentarioAnteriorSha256": "359bc1545e46655bcf2510ed10b7e13eb3129f101c0150d08b8a882962b1f9a5",
+    "comentario": {
+      "conceito": "**Excisão com avanço do tríceps é resgate, não a primeira solução para toda cominuição.** O resumo a reserva especialmente ao idoso de baixa demanda, com osso ruim e fratura que não permite fixação adequada. O fragmento a retirar deve ser **menor que 75% do olécrano** na descrição consultada.\n\nO limite existe porque o olécrano integra o encaixe que estabiliza o cotovelo. Retirar apoio demais compromete essa função. O número não deve ser tratado como autorização automática para ressecar uma grande superfície em qualquer adulto; qualidade do osso, demanda e estabilidade do conjunto continuam decisivas.\n\nO avanço do tríceps procura recuperar o mecanismo extensor depois de retirar o fragmento. A fonte descreve fixação por furos próximos da face dorsal da ulna para favorecer a força de extensão. Preservar apenas uma porcentagem de osso sem restaurar a relação funcional não completa o procedimento.\n\nA prova oferece 75% como referência superior entre as alternativas. O resumo fala estritamente em **menor que 75%**, portanto não se deve ampliar a redação para concluir que exatamente 75% é sempre seguro. **Na Biblioteca, leia “Sem cirurgia e excisão” e compare com a preferência por placa nas cominutivas reconstruíveis.** Isso coloca o resgate no contexto correto.",
+      "correta": "**D: 75%, como referência de limite da questão.** A fonte descreve fragmento menor que esse valor para a seleção da excisão com avanço. É a referência mais alta entre as opções, sem que isso dispense o perfil clínico apropriado.\n\nA escolha não equivale a recomendar ressecção de 75% em todo paciente. O procedimento depende da impossibilidade de uma fixação adequada e da preservação de estabilidade e função.",
+      "incorretas": {
+        "A": "**Dez por cento é um limite muito menor que o apresentado.** Um fragmento pequeno pode estar dentro da faixa aceitável, mas a pergunta busca a referência máxima descrita, não um exemplo conservador. Escolher 10% excluiria possibilidades de resgate que a fonte admite.",
+        "B": "**Vinte e cinco por cento também não é o teto do resumo.** O fato de uma ressecção menor poder preservar mais apoio não torna esse percentual o limite cobrado. A decisão clínica continua individual, enquanto a referência numérica da questão é 75%.",
+        "C": "**Cinquenta por cento é mais conservador que o limite descrito, mas não o reproduz.** Não se deve afirmar que qualquer fragmento acima de metade torna a excisão impossível se a fonte admite menos de 75% em pacientes selecionados. O critério de resgate inclui mais que o tamanho isolado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Ulna proximal: olécrano e Monteggia posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Ulna proximal: olécrano e Monteggia posterior"
+        ],
+        "blocos": [
+          "ulna-proximal-olecrano-e-monteggia-posterior-e1b9aba4",
+          "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "04de0a1dade79d2befb6e912c08e9d90358fd7addae65c29dac54401245163ac"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
