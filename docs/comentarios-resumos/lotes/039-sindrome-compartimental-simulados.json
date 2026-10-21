@@ -1,0 +1,386 @@
+{
+  "trauma-1593": {
+    "questaoSha256": "54020e99bb6c42d458cfc17e0f59a473daf91ad3a76c06e41fa99ad9163c99f0",
+    "comentarioAnteriorSha256": "2c00e1fa41e3690eb518ce33b58f4bbc8050f375024a95a8249d22aa55c501d4",
+    "comentario": {
+      "conceito": "**O protocolo de Edimburgo combina pressão diferencial e persistência no tempo.** Delta P é a diastólica menos a pressão do compartimento. O critério descrito para o paciente monitorizado é **abaixo de 30 mmHg por mais de duas horas**, com atenção à tendência da curva.\n\nA diferença representa margem de perfusão, não pressão absoluta. Se a pressão tecidual sobe com diastólica estável, o delta cai. Se o paciente fica hipotenso, a mesma pressão do compartimento se torna mais ameaçadora. O acompanhamento da pressão arterial é parte do método, sem substituir o valor da curva por uma medida isolada.\n\nO resumo relata falso-positivos com leitura única e valores transitórios altos depois de estabilização tibial que podem diminuir espontaneamente. Em contrapartida, sinais clínicos claros e múltiplos exigem descompressão urgente; a regra de duas horas não é autorização para esperar em um quadro já estabelecido.\n\n**Leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”, na Biblioteca.** A referência só faz sentido mantendo juntos fórmula, duração e contexto de monitorização.\n\n**Por que esta questão foi criada.** Contrasta o delta de perfusão com pressão absoluta e duração; o TARO 2015 e o ENARE R4 2025 cobraram a fórmula, e o TARO 2012 usou o número 30 em outra redação.",
+      "correta": "**D: abaixo de 30 mmHg por mais de duas horas.** É o critério do protocolo, sustentado pela persistência de uma margem de perfusão reduzida. O acompanhamento da tendência ajuda a separar um pico transitório de pressão de uma evolução ameaçadora.\n\nEm sinais clínicos claros e múltiplos, o algoritmo indica urgência sem impor essa espera.",
+      "incorretas": {
+        "A": "**Usa um corte de 20 e uma leitura única, trocando as duas partes do protocolo.** Um delta de 20 é preocupante, mas a alternativa não reproduz o limiar e a duração solicitados. A interpretação clínica continua necessária e não pode ser reduzida a aceitar ou rejeitar um único número.",
+        "B": "**Acerta o limite de 30, mas elimina a persistência temporal.** O resumo alerta para falso-positivos com medidas isoladas e orienta acompanhar a curva no cenário de monitorização. Isso é diferente de adiar a cirurgia quando os sinais já são claros.",
+        "C": "**Mantém a duração, porém reduz o limiar para 20.** Esperar necessariamente cair abaixo desse valor deixaria de incluir deltas entre 20 e 30 que satisfazem o critério descrito. O protocolo usa 30, sem exigir deterioração até 20."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-1312eae8",
+          "medida-da-pressao-e-o-delta-p-d654f7b7",
+          "medida-da-pressao-e-o-delta-p-f94386d5",
+          "o-tratamento-preferido-dos-autores-930f2a36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "febe1540fb3d618c433866c1de8ea6b435a0092bd76d842fc6f1dcc0de0d4f11"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1594": {
+    "questaoSha256": "489bba1e2f6322d3847fcf8328d6fca9ed8c9d07b8022aaa75ff35ece6fd1bbb",
+    "comentarioAnteriorSha256": "2f401ef158b2e2fdb78975133c4f6724e76acb20c3e38e057274b73e277cde23",
+    "comentario": {
+      "conceito": "**O cateter deve acompanhar o compartimento que melhor representa o risco da região.** A tabela do resumo recomenda **anterior na coxa** e **interósseos no pé**. Na lesão do retropé, considera-se também o calcâneo; o enunciado o exclui para delimitar a segunda resposta.\n\nNa coxa, o anterior é o compartimento mais acometido e contém quadríceps, sartório e nervo femoral. Uma incisão lateral pode alcançar anterior e posterior, mas o nome do acesso não muda qual espaço é o mais frequente nem o local preferido para monitorizar.\n\nO pé possui vários compartimentos e o calcâneo, central profundo, ganha atenção especial na lesão do retropé. A monitorização não se reduz a escolher uma agulha em qualquer ponto doloroso: conhecer a anatomia e o mecanismo orienta o espaço a medir. A pressão deve ser interpretada junto da pressão arterial e da tendência.\n\n**Na Biblioteca, leia “Onde colocar o cateter” e compare com “Coxa” e “Pé”.** A combinação da questão decorre da região e da lesão, não de uma regra única de medir sempre o compartimento mais profundo.\n\n**Por que esta questão foi criada.** Aplica a combinação região/compartimento cobrada no ENARE R4 2024 e relaciona o local do cateter à anatomia, incluindo a exceção do retropé.",
+      "correta": "**B: anterior e interósseos.** É o par recomendado para coxa e pé sem lesão do retropé na tabela consultada. A ordem acompanha as duas regiões expressamente pedidas.\n\nSe o retropé estiver comprometido, o calcâneo pode requerer investigação específica adicional.",
+      "incorretas": {
+        "A": "**Acerta o anterior da coxa e aplica ao pé a ênfase do retropé.** O calcâneo deve ser considerado em lesões dessa região, mas o caso as exclui e a referência geral é interósseos. A localização da lesão muda a escolha do espaço a investigar.",
+        "C": "**Troca ambos os componentes do par.** O posterior da coxa pode adoecer, mas não é o local padrão da tabela; o calcâneo é a consideração específica para retropé. A alternativa ignora a predominância anterior e a delimitação do enunciado.",
+        "D": "**Os interósseos estão corretos para o pé, mas a coxa foi trocada para posterior.** O resumo destaca o anterior como mais acometido e como local do cateter. A possibilidade de síndrome posterior não transforma esse espaço na recomendação geral."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Os compartimentos de cada região; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "Os compartimentos de cada região",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-6e9747e1",
+          "os-compartimentos-de-cada-regiao-eb26943e",
+          "os-compartimentos-de-cada-regiao-110fac19",
+          "o-tratamento-preferido-dos-autores-cb26ab73"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "4f2e05c8d20ca8caf5fa15db117d0038237805828571b83ac1016a56609cb5c6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1595": {
+    "questaoSha256": "99be7b79d0c4b6b4ed042ceb78dc63d105d030df5d334a2867624403e8fe7348",
+    "comentarioAnteriorSha256": "f1d03ccad3f31584d5c695d5c24ea3f8ad07af42faa86ab092c31cc594520fe9",
+    "comentario": {
+      "conceito": "**A vulnerabilidade isquêmica do anterior da perna é relacionada ao predomínio de fibras tipo I, oxidativas.** Essas fibras lentas dependem de oxigênio para seu metabolismo. Quando a pressão reduz o fluxo microvascular, a perda de oferta afeta de modo particular um tecido com essa dependência.\n\nO resumo contrapõe o tipo I vermelho e lento ao tipo II branco e rápido, predominantemente anaeróbio. O gastrocnêmio é citado com maior participação de tipo II, enquanto o anterior tem mais tipo I. Essa diferença pode explicar parte da suscetibilidade, sem significar que a composição de fibras seja a única causa de uma síndrome.\n\nPressão e duração também importam. A necrose pode ser maior no centro muscular, e olhar apenas a superfície não garante viabilidade. A anatomia metabólica ajuda a compreender o risco; a decisão de descompressão depende do quadro clínico e da monitorização apropriada, não de identificar o tipo de fibra no paciente.\n\n**Leia “O músculo é o tecido mais vulnerável”, na Biblioteca.** Ligue a palavra “oxidativo” à necessidade de oxigênio e depois à queda da perfusão.\n\n**Por que esta questão foi criada.** Expande a fibra tipo I cobrada no TEOT 2022 para o mecanismo metabólico da vulnerabilidade do compartimento anterior.",
+      "correta": "**A: tipo I, metabolismo oxidativo.** O par reúne a fibra e a característica que explicam a maior vulnerabilidade descrita. Não basta acertar o numeral se o metabolismo for invertido.\n\nO mecanismo é a maior dependência de oferta de oxigênio num tecido submetido a redução do fluxo.",
+      "incorretas": {
+        "B": "**Tipo I está correto, mas anaeróbio inverte a característica metabólica destacada.** A fonte descreve o I como oxidativo. Retirar essa dependência de oxigênio elimina justamente a relação causal usada para explicar a suscetibilidade.",
+        "C": "**Oxidativo é o mecanismo pertinente, mas o tipo foi trocado.** Na comparação apresentada, a maior dependência oxidativa e a vulnerabilidade são atribuídas ao I. O enunciado pede o grupo predominante no anterior, não uma classificação genérica de toda fibra muscular.",
+        "D": "**O par descreve a comparação com o grupo mais resistente da fonte, não o que explica a vulnerabilidade anterior.** Tipo II é associado a metabolismo principalmente anaeróbio e ao gastrocnêmio. A alternativa mantém uma combinação coerente, porém responde ao lado oposto da comparação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Por que a pressão mata o músculo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Por que a pressão mata o músculo"
+        ],
+        "blocos": [
+          "por-que-a-pressao-mata-o-musculo-1a07d757",
+          "por-que-a-pressao-mata-o-musculo-23e1059b"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "76484e3f770a7d473daf4bf4df60090ca9bc0883bf8028b926f4d341cee36d3a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1596": {
+    "questaoSha256": "90a99112d4377f75bfe07f13e8e39b63f3eda263e256ed807976f9cd7a2bc004",
+    "comentarioAnteriorSha256": "60e866c16aa38ce89a4939d51586244b2c074dd0fee522379b94f4037316ab7f",
+    "comentario": {
+      "conceito": "**Planta do pé e fraqueza dos flexores localizam o problema no posterior profundo.** Esse compartimento contém tibial posterior, flexores longos dos dedos e do hálux e o nervo tibial posterior. A combinação sensitiva plantar com perda de flexão dos dedos e inversão acompanha esse conjunto anatômico.\n\nO exame compartimental é uma relação entre músculo, estiramento e nervo. A dor aparece ao alongar os músculos ameaçados; a dormência surge no território do nervo que atravessa o espaço; a fraqueza compromete a função desse grupo. Um único achado pode ser pouco específico, mas uma combinação coerente ajuda a localizar o risco.\n\nA localização não deve fazer esquecer os outros espaços. O resumo recomenda descompressão dos quatro compartimentos da perna quando indicada, com inspeção muscular, sem limitar a operação ao lugar em que o paciente conseguiu relatar dormência.\n\n**Na Biblioteca, leia a tabela “Compartimentos da perna e sinais”.** Compare planta, dorso, primeiro espaço e face dorsolateral antes de escolher apenas pela palavra “pé”.\n\n**Por que esta questão foi criada.** Treina a localização por território sensitivo e ação muscular, distinguindo os compartimentos que o TARO costuma trocar em perguntas sobre dormência.",
+      "correta": "**C: posterior profundo.** A sensibilidade plantar e as funções dos flexores longos e do tibial posterior correspondem ao conteúdo descrito. É a combinação que reúne os dois componentes do enunciado.\n\nA ausência ou presença de dormência isolada não substitui a avaliação da perfusão e da pressão no contexto clínico.",
+      "incorretas": {
+        "A": "**Lateral se relaciona aos fibulares e ao nervo fibular superficial.** Seu território é o dorso do pé e a função marcante é eversão, não a combinação de planta com fraqueza de inversão. A alternativa troca nervo e grupo muscular.",
+        "B": "**Anterior contém extensores e nervo fibular profundo.** A alteração sensitiva característica é no primeiro espaço interdigital, com fraqueza de extensão do tornozelo e dedos. Isso não corresponde à sensibilidade plantar e à função flexora pedidas.",
+        "D": "**Posterior superficial está ligado ao gastrocnêmio, sóleo e nervo sural.** A dormência é dorsolateral e a fraqueza principal é de flexão plantar. Não é a mesma combinação de planta do pé com flexão dos dedos e inversão do posterior profundo."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-222f4f26",
+          "os-compartimentos-de-cada-regiao-e0295081",
+          "fasciotomia-f108fecb"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "8651a5447301c618f63d7a232f711bcced1e5a75965e621ad9c512a9960d8fa5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1597": {
+    "questaoSha256": "79f9836b68db39b69dad3760ba1a8f819be3dd367b6fb7678e94154bd1657302",
+    "comentarioAnteriorSha256": "796abe1821103d9d18b0fd89526c47788870ccfc870bb5ef91f56bca75a0b17f",
+    "comentario": {
+      "conceito": "**Juventude é o fator de risco mais importante, e a diáfise tibial é a principal origem de casos na distribuição geral.** O jovem tem maior volume muscular em um continente de tamanho fixo e, portanto, menos espaço para acomodar edema. No idoso, sarcopenia pode dar maior margem de volume; isso explica uma tendência populacional, sem excluir risco individual.\n\nA tabela do resumo atribui cerca de 36% dos casos à fratura diafisária da tíbia. Rádio distal aparece em 9,8%, mas somente cerca de 0,25% de suas fraturas cursam com síndrome. Esses números têm denominadores diferentes: um descreve de onde vieram os casos e o outro mede risco dentro de um tipo de fratura.\n\nPacientes sem fratura constituem uma exceção importante: podem ser mais velhos, com comorbidades e anticoagulação. Também há risco alto em certas fraturas do planalto. Nenhuma dessas ressalvas muda o par pedido na síntese geral, mas elas impedem usar idade ou localização como motivo para descartar o diagnóstico.\n\n**Leia “Quem tem síndrome compartimental”, na Biblioteca.** Compare população de risco, distribuição dos casos e incidência por fratura, mantendo cada dado na pergunta que ele responde.\n\n**Por que esta questão foi criada.** Combina a fratura cobrada no TARO 2013 com a associação de sexo e idade discutida nas provas, sem confundir diferentes denominadores epidemiológicos.",
+      "correta": "**B: idade jovem e fratura diafisária da tíbia.** O primeiro elemento é o fator de risco central descrito; o segundo é a lesão precipitante mais comum na distribuição geral da tabela.\n\nA combinação orienta vigilância, sem substituir a avaliação dos demais pacientes de risco.",
+      "incorretas": {
+        "A": "**A juventude está correta, mas o rádio distal não supera a diáfise tibial como origem geral dos casos.** Uma fratura frequente pode gerar muitos atendimentos e ainda ter baixa incidência individual de síndrome. É preciso separar a frequência da fratura da distribuição da complicação.",
+        "C": "**Troca ambos os componentes da síntese.** Acima de 55 anos não é o principal fator de risco apresentado, e rádio distal não é a principal origem geral dos casos. Os mais velhos podem ter síndrome, especialmente sem fratura e com comorbidades, mas esse é outro perfil.",
+        "D": "**A fratura tibial está correta, mas a faixa etária foi invertida.** A idade jovem tem maior risco na comparação populacional. Reconhecer a tíbia não autoriza deslocar o principal risco para mais de 55 anos nem dispensar as exceções clínicas."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Quem tem síndrome compartimental"
+        ],
+        "blocos": [
+          "quem-tem-sindrome-compartimental-5ca80c99",
+          "quem-tem-sindrome-compartimental-4b3a771a",
+          "quem-tem-sindrome-compartimental-2d563b4e",
+          "quem-tem-sindrome-compartimental-c9a33825",
+          "quem-tem-sindrome-compartimental-b7787f07"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "47a76ccdc8ed590f6759d1b2346d26571381811168414178f0d7f6e245d02b6c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1598": {
+    "questaoSha256": "75f4e4830bd8c20fe4efc268bb491eadede82938daba4e3da19c3c8c8b371f85",
+    "comentarioAnteriorSha256": "7066299c0188c58ecdf79966fdf7577169342a271b2364f3627170794b6db8d0",
+    "comentario": {
+      "conceito": "**O resumo destaca a fratura do planalto tibial Schatzker VI como de risco particularmente alto.** Ele reúne estudos com taxa de síndrome de 12% no planalto contra 3% na diáfise e coloca o planalto desviado como preocupação importante no tratamento preferido dos autores. Esses valores são das populações dos estudos, não uma probabilidade fixa de qualquer paciente individual.\n\nA informação não contradiz a diáfise tibial responder por grande parte dos casos de síndrome em geral. Frequência da lesão no conjunto e chance de complicação dentro de um padrão são perguntas diferentes. O enunciado pede o padrão de taxa particularmente elevada, não a fratura que gera o maior número absoluto de casos.\n\nMesmo um padrão não destacado como de maior risco precisa de exame e vigilância conforme a clínica. A síndrome pode ocorrer em baixa energia, com fratura fechada e em cenários sem fratura. Não se deve usar uma alternativa menos associada como garantia de segurança.\n\n**Na Biblioteca, leia “Planalto tibial, energia e outras exceções”.** Compare o dado de taxa com a tabela geral de lesões antes de escolher apenas o sítio que mais aparece nos atendimentos.\n\n**Por que esta questão foi criada.** Explora a ênfase proximal e masculina cobrada no TEOT 2025 e a diferença entre taxa de complicação e distribuição geral de casos.",
+      "correta": "**D: planalto Schatzker VI.** É o padrão explicitamente destacado como de risco particularmente alto nos dados apresentados. O tratamento preferido reforça a atenção ao planalto desviado.\n\nA classificação ajuda a reconhecer risco, mas não substitui monitorização e exame no paciente concreto.",
+      "incorretas": {
+        "A": "**Pilão tibial não é o padrão que o resumo destaca nessa comparação de maior taxa.** A localização distal pode cursar com síndrome e não deve ser ignorada, mas o dado específico da fonte é a ênfase no planalto, sobretudo VI. Não cabe inventar uma taxa do pilão para justificar a exclusão.",
+        "B": "**Diáfise pode gerar muitos casos, porém isso não responde à taxa particularmente elevada destacada.** O resumo compara planalto com diáfise e dá maior taxa ao primeiro nos estudos citados. Confundir número geral de casos com risco por fratura levaria a escolher esta opção pelo motivo errado.",
+        "C": "**A região do planalto está correta, mas o subtipo destacado foi trocado.** A fonte nomeia VI, não I, como particularmente preocupante. Isso não equivale a declarar o I incapaz de desenvolver síndrome; apenas preserva qual padrão sustenta o dado solicitado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Quem tem síndrome compartimental",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "quem-tem-sindrome-compartimental-c9a33825",
+          "quem-tem-sindrome-compartimental-9294b2f4",
+          "o-tratamento-preferido-dos-autores-be365766",
+          "quem-tem-sindrome-compartimental-b7787f07"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "fbaff1ebded06c581ae29490a31f63d2683eabea80a79e8c64612c1205947c54"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1599": {
+    "questaoSha256": "157ded90e10be719e4dcfac02a2846ae46726bd00d6f9e11f114bf849b43fc6c",
+    "comentarioAnteriorSha256": "8624e83020feceaca2627400681fe3c57755364ea1703004e7280109b695c6b6",
+    "comentario": {
+      "conceito": "**Na incisão lateral da fasciotomia da perna, o nervo fibular superficial merece proteção quando emerge pela fáscia.** O ponto habitual descrito é cerca de **10 cm acima do maléolo lateral**. A variabilidade anatômica exige identificação cuidadosa; a medida orienta, sem garantir que toda pessoa tenha o nervo no mesmo ponto.\n\nA incisão fica cerca de 2 cm anterior à fíbula, sobre o septo entre anterior e lateral, e abre as duas fáscias. Em aproximadamente três quartos, o nervo fica no lateral até sair; em um quarto, passa para o anterior. Isso explica por que seguir o nome do compartimento sem ver o nervo pode ser perigoso.\n\nO fibular profundo pertence ao conteúdo do anterior, mas não é o nervo que perfura a fáscia superficialmente no ponto pedido. A fasciotomia precisa liberar os compartimentos sem trocar a ameaça isquêmica por uma lesão iatrogênica. **Leia “Perna: dupla incisão, quatro compartimentos”, na Biblioteca, junto da tabela anatômica.**\n\n**Por que esta questão foi criada.** Acrescenta proteção nervosa à via lateral, diferenciando o acesso que descomprime anterior/lateral daquele posteromedial cobrado no TARO 2023.",
+      "correta": "**C: fibular superficial; 10 cm.** O par reúne o nervo em risco na emergência fascial e a referência de localização descrita. Deve-se reconhecer sua variabilidade durante a exposição.\n\nA referência de distância não dispensa visualização e proteção no trajeto real.",
+      "incorretas": {
+        "A": "**A distância está correta, mas o nervo foi trocado para profundo.** O profundo percorre o anterior e se relaciona ao primeiro espaço interdigital; a emergência fascial superficial da pergunta é do fibular superficial. Proximidade entre os compartimentos não torna os ramos equivalentes.",
+        "B": "**Troca o ramo e duplica a distância de referência.** O resumo destaca o superficial a cerca de 10 cm, não profundo a 20. A alternativa não corresponde ao risco específico da abertura lateral, embora outros nervos também exijam respeito na cirurgia.",
+        "D": "**Acerta o fibular superficial, mas desloca sua emergência habitual para 20 cm.** A medida apresentada é cerca de 10 cm acima do maléolo. A existência de variação não autoriza substituir a referência por outro número sem fonte."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia; Os compartimentos de cada região."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia",
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "fasciotomia-8bb6fb73",
+          "fasciotomia-5f056aff",
+          "os-compartimentos-de-cada-regiao-222f4f26"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "e6de17ef7444ddc81a69cfc44702b4ea47bc027cf7dc7d119aa284504e3530ef"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1600": {
+    "questaoSha256": "5978c5cbf0578452523cc35b3180d20aa4ee7f02c1e2001e71c9c45961d1daa5",
+    "comentarioAnteriorSha256": "084e1cc78741a8187d27be89714455dbcd67992ccbe71e12e21d2ae261229284",
+    "comentario": {
+      "conceito": "**A incisão medial da dupla fasciotomia libera os dois compartimentos posteriores e exige proteger veia e nervo safenos.** Ela é colocada cerca de 1 a 2 cm atrás da borda medial da tíbia, preservando ponte cutânea adequada e respeitando os vasos e nervo tibiais posteriores.\n\nAbre-se o posterior superficial e, afastando-o para trás, alcança-se o profundo. Essa segunda etapa não deve ser presumida como resolvida apenas porque a primeira fáscia foi aberta. O resumo recomenda avaliar todos os músculos e desbridar o que não for viável, com acesso suficiente para ver a extensão da lesão.\n\nA incisão lateral responde a outra metade da operação: libera anterior e lateral e coloca o fibular superficial em risco na emergência da fáscia. Misturar o par de compartimentos de um lado com o nervo do outro gera alternativas parcialmente verdadeiras, mas cirurgicamente desorientadas.\n\n**Na Biblioteca, leia “Perna: dupla incisão, quatro compartimentos”.** Faça o mapa de cada incisão com os espaços que ela abre e as estruturas que precisa poupar.\n\n**Por que esta questão foi criada.** Reformula o acesso posteromedial cobrado no TARO 2023 e o relaciona às estruturas que precisam ser protegidas.",
+      "correta": "**C: posteriores superficial e profundo; safenos.** É a combinação própria do acesso medial descrito. Ainda é necessário preservar o feixe tibial posterior e verificar a liberação completa do profundo.\n\nTer alcançado o superficial não prova que o profundo também foi adequadamente descomprimido.",
+      "incorretas": {
+        "A": "**Safenos estão corretos para o lado medial, mas anterior e lateral pertencem à outra incisão.** O acesso lateral abre esse par de compartimentos. A alternativa combina estruturas em risco de um lado com o objetivo da via oposta.",
+        "B": "**Descreve o conjunto da incisão lateral, não da medial.** Anterior/lateral e fibular superficial se relacionam à abertura próxima da fíbula. A pergunta localiza a incisão atrás da borda medial tibial, que conduz aos posteriores.",
+        "D": "**Os compartimentos posteriores estão corretos, mas o nervo destacado foi trocado.** Fibular superficial é a preocupação da incisão lateral. Na medial, o resumo orienta proteger veia e nervo safenos, além das estruturas tibiais posteriores."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "fasciotomia-8b2413f2",
+          "fasciotomia-236fb661",
+          "fasciotomia-767d74b9",
+          "fasciotomia-8bb6fb73",
+          "fasciotomia-5f056aff",
+          "fasciotomia-e52c81a8"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "2a0695d59a35a1b4e75ad2f73b78d31acb756b2c94dfed2f70000dab05613020"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1601": {
+    "questaoSha256": "6aa9e93ea65e2a18792153838d8a09b64a874ffa6c5d69e39c5f2d6f46158c9b",
+    "comentarioAnteriorSha256": "326dc0f969dcbea1d46914866ba7e25d639237c78cabfc0f90004cf94bc03eed",
+    "comentario": {
+      "conceito": "**Na lesão do retropé, o compartimento calcâneo pode exigir uma via medial própria.** Ele é o central profundo e contém o **quadrado plantar**. A fratura do calcâneo delimita o contexto em que o resumo orienta considerar essa extensão da descompressão.\n\nNo antepé, duas incisões dorsais, sobre segundo e quarto metatarsos, alcançam interósseos e compartimento central e podem bastar. A região profunda do retropé, entretanto, não deve ser presumida liberada só porque as vias dorsais foram feitas. A anatomia do compartimento determina se uma abertura adicional é necessária.\n\nO central superficial contém o flexor curto dos dedos, e não o quadrado plantar. O resumo também observa comunicação do calcâneo com o posterior profundo da perna e questiona a resistência de algumas barreiras fasciais; isso reforça avaliar a descompressão real, sem usar a nomenclatura como substituto da clínica.\n\n**Leia “Pé” e “Coxa, pé e braço” da fasciotomia, na Biblioteca.** Compare antepé e retropé e associe cada músculo ao plano antes de escolher a via.\n\n**Por que esta questão foi criada.** Treina a extensão da descompressão para o retropé e a distinção entre central superficial e calcâneo, além das vias dorsais cobradas no TARO 2026.",
+      "correta": "**A: calcâneo; quadrado plantar.** O par identifica o espaço central profundo relevante no retropé. A incisão medial é considerada quando é necessário descomprimi-lo adequadamente.\n\nIsso é uma possibilidade conforme a lesão, não uma ordem de acrescentar a via em toda síndrome de antepé.",
+      "incorretas": {
+        "B": "**O compartimento está correto, mas o músculo pertence ao central superficial.** Flexor curto dos dedos não substitui quadrado plantar no calcâneo. A distinção entre planos é justamente o que explica a possível necessidade de outra via.",
+        "C": "**O quadrado plantar foi colocado no compartimento superficial errado.** Ele é o conteúdo do central profundo, chamado calcâneo. A alternativa acerta o músculo e perde a localização que determina a preocupação com o retropé.",
+        "D": "**É um par anatômico coerente do central superficial, mas responde ao espaço errado.** Flexor curto dos dedos está nesse plano; o enunciado destaca calcâneo e retropé, para os quais o resumo aponta quadrado plantar no compartimento profundo."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-110fac19",
+          "fasciotomia-029870c3"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "5ddcbdfec466699d252fff2f0a8d5b40d6385056f0239ca5453115a0d271303a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1602": {
+    "questaoSha256": "128e5c4bf299f76562da38102e8d152560a3fac57dc7ed35704f0be30c0fb337",
+    "comentarioAnteriorSha256": "fe6abf3ff83b9abb48691aefcadb07d289882815a13d1b310d73ae8771afc1cd",
+    "comentario": {
+      "conceito": "**A extensão palmar da fasciotomia volar procura abrir o túnel do carpo, e a inspeção deve alcançar especialmente os flexores profundos.** O resumo descreve incisão do antebraço proximal até a palma, abertura fascial e avaliação cuidadosa desses músculos. Se necessário, o pronador quadrado é descomprimido à parte.\n\nA liberação não se limita ao que parece menos tenso na superfície. O músculo pode ter maior necrose central, e uma aparência externa não garante viabilidade. É preciso ver o tecido e tratar o que não é viável, mantendo as incisões abertas e programando revisão.\n\nEm geral, a via volar basta no capítulo de síndrome compartimental; se a pressão dorsal continuar alta, acrescenta-se via dorsal. A extensão ao túnel do carpo é uma etapa descrita dessa operação, sem se confundir com trocar a estrutura pela referência de outro canal do punho.\n\n**Na Biblioteca, leia “Antebraço e mão” da fasciotomia e “A ferida: aberta, revisão em 48 horas”.** A finalidade é descomprimir e inspecionar de fato, não apenas completar uma extensão cutânea.\n\n**Por que esta questão foi criada.** Relaciona a liberação volar ao túnel do carpo e à inspeção profunda, pontos discutidos no TARO 2024 e na avaliação de fasciotomia da mão/antebraço.",
+      "correta": "**A: túnel do carpo; flexores profundos.** São a estrutura alcançada pela extensão palmar e o grupo que exige cuidado particular na inspeção do antebraço volar. A operação deve confirmar liberação e viabilidade.\n\nAbrir o túnel não dispensa examinar os músculos nem verificar se os demais espaços continuam sob pressão.",
+      "incorretas": {
+        "B": "**O túnel está correto, mas a ênfase da inspeção foi deslocada para os superficiais.** Todos os tecidos expostos merecem avaliação; o resumo destaca especificamente os flexores profundos, que não devem ser presumidos viáveis só pela aparência do plano superficial.",
+        "C": "**Os flexores profundos estão corretos, mas a extensão descrita é para descompressão do túnel do carpo.** Substituí-lo por Guyon muda a estrutura-alvo apresentada na fonte. Isso não significa negar outras indicações de exploração do punho; apenas preservar qual etapa esta questão pede.",
+        "D": "**Troca a estrutura da extensão e o grupo de inspeção destacado.** A descrição consultada combina túnel do carpo e flexores profundos. Uma abertura em outro canal e avaliação apenas do plano superficial não reproduzem a finalidade anatômica e de viabilidade apresentada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia; Por que a pressão mata o músculo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia",
+          "Por que a pressão mata o músculo"
+        ],
+        "blocos": [
+          "fasciotomia-90ee7ca5",
+          "por-que-a-pressao-mata-o-musculo-1a07d757",
+          "fasciotomia-7a3f42f7"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "ba78f22b059f1586a34e7f605cfe2b9b7dac5ad65352bba3af1d76f2b86dd972"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "ombro-cotovelo-0526": {
+    "questaoSha256": "e4ba1bb620eea990a3d2bacf8cb5dbcf5c7a5a0f00370b26db1ecaf987728748",
+    "comentarioAnteriorSha256": "69880b4888121f1daefb3d40d37d41d5234d12376beb6e7e7359e14c5992c7dc",
+    "comentario": {
+      "conceito": "**Luxação lateral da cabeça radial corresponde ao tipo III de Bado.** A direção também pode ser descrita como anterolateral, e a fratura ulnar é metafisária. Esse padrão é quase exclusivo da criança, com casos isolados no adulto segundo o resumo.\n\nBado usa a direção da cabeça em relação à deformidade ulnar; não é uma escala em que aumentar o número significa aumentar obrigatoriamente a gravidade. O tipo I tem cabeça anterior, o II posterior ou posterolateral e o IV volta a ter direção anterior, porém com fratura proximal dos dois ossos no mesmo nível. O rádio também quebrado distingue IV de I, não uma direção lateral.\n\nA distribuição por idade ajuda a contextualizar, mas não substitui o achado anatômico. O enunciado já fornece a informação necessária: lateral. Não é preciso imaginar uma radiografia nem inferir idade para resolver a classificação.\n\n**Leia “A classificação de Bado”, na Biblioteca, acompanhando a coluna da direção ao lado do padrão ulnar.** Comparar III e IV evita a troca entre lateralidade e presença de fratura radial associada.",
+      "correta": "**C: tipo III.** É o tipo que associa cabeça lateral ou anterolateral a fratura metafisária da ulna. A direção informada é o elemento decisivo.\n\nA associação infantil não significa que a classificação deixe de valer se o caso ocorrer em um adulto.",
+      "incorretas": {
+        "A": "**Tipo I é anterior, não lateral.** A cabeça e o ápice ulnar apontam anteriormente nesse padrão. A alternativa mantém o diagnóstico geral de Monteggia, mas troca o dado que diferencia os tipos.",
+        "B": "**Tipo II é posterior ou posterolateral.** O componente “lateral” em posterolateral não o torna equivalente à luxação lateral ou anterolateral do III. É necessário preservar a direção completa, junto do padrão ulnar.",
+        "D": "**Tipo IV tem luxação anterior e fratura do rádio com a ulna proximal.** O acréscimo do traço radial define esse tipo, sem mudar a direção para lateral. Escolher IV por parecer uma lesão mais complexa ignora o critério classificatório informado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "22b5d050e3057524643ddf5c80ff2abc1d6772144af25b7c50fa6e30dba5b458"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1094": {
+    "questaoSha256": "a72d143d6c810da29ca0b006c99b9d92f4d3dfa5c1f56947fc20874271d843e7",
+    "comentarioAnteriorSha256": "b34ad5151e3ce6ef331aedf834a4897cfaa26e155ef6458d1d6af78b77efb2fc",
+    "comentario": {
+      "conceito": "**Na Galeazzi irredutível, o extensor ulnar do carpo é o tendão classicamente interposto.** A fratura radial vem associada ao comprometimento da radioulnar distal. Depois da osteossíntese, se a articulação não reduz, deve-se conferir antes se o rádio foi reconstruído anatomicamente; o rádio mal reduzido é a causa habitual de incongruência persistente.\n\nCom a geometria corrigida, a interposição passa a explicar o bloqueio mecânico. Além do extensor ulnar, o resumo cita outros extensores, periósteo e fragmento foveal como obstáculos possíveis. A pergunta seleciona a estrutura clássica entre as alternativas, sem autorizar dizer que só existe um mecanismo de irredutibilidade.\n\nA redução aberta é descrita por acesso dorsal, permitindo retirar o obstáculo e tratar o complexo distal. Isso difere de uma radioulnar que reduz, mas fica instável: nessa situação, pode ser necessária fixação temporária com fios e eventual reparo. Bloqueio de redução e instabilidade residual exigem raciocínios diferentes.\n\n**Na Biblioteca, leia “Radioulnar distal irredutível”.** Compare o tendão que pode ocupar o espaço articular com os músculos que apenas deformam o foco radial. Sem essa separação, um nome conhecido do acesso pode ser confundido com a causa do bloqueio.",
+      "correta": "**D: extensor ulnar do carpo.** É o tendão destacado pela fonte como interposição clássica. A hipótese faz sentido depois de confirmar a redução radial, e o obstáculo persistente exige abordagem apropriada da articulação.\n\nA identificação da estrutura não dispensa reconstruir comprimento e rotação do rádio.",
+      "incorretas": {
+        "A": "**Extensor radial curto participa de outro mapa anatômico: o intervalo de Thompson.** No proximal ele se relaciona ao extensor dos dedos, e no distal ao extensor longo do polegar. Isso explica sua importância nos acessos, mas não o coloca como interposição clássica da radioulnar distal da Galeazzi.",
+        "B": "**Flexor ulnar e extensor ulnar não são intercambiáveis.** O flexor ulnar aparece como limite da via direta para a ulna, junto do extensor ulnar. A estrutura apontada como obstáculo distal é o extensor, e não o flexor com nome semelhante.",
+        "C": "**Flexor radial do carpo é limite distal da via anterior de Henry.** A relação com o acesso radial não equivale a ocupar a articulação distal e impedir sua redução. O resumo distingue o campo da exposição do mecanismo de bloqueio, no qual destaca o extensor ulnar."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Galeazzi: o rádio quebrado e a radioulnar distal; Vias de acesso e o nervo interósseo posterior."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Galeazzi: o rádio quebrado e a radioulnar distal",
+          "Vias de acesso e o nervo interósseo posterior"
+        ],
+        "blocos": [
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-9845d4e9",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "536c4c814701ba48662cda0ff4b879d40e242d990fe5644dc5b2e60f82c2c629"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1314": {
+    "questaoSha256": "08a3b3fa61f2c6ee1f1b84704e0de9305d595561df9e12866110532129f13513",
+    "comentarioAnteriorSha256": "162c657932bad57cc5c1608f529ab00f7c9a0d20122f8b81146c9d8fb4d78583",
+    "comentario": {
+      "conceito": "**Uma cabeça radial persistentemente subluxada depois do tratamento de Monteggia faz suspeitar primeiro da redução da ulna.** A ulna organiza comprimento e forma do antebraço; reconstruí-la costuma puxar o rádio de volta pela membrana distal e pelo complexo da fibrocartilagem triangular preservados.\n\nA avaliação não termina quando há placa e parafusos. A ulna proximal possui angulação dorsal própria, e uma montagem que a retifique pode manter a cabeça fora do lugar. O resumo orienta conferir a redução clínica e radiograficamente, incluindo essa geometria, antes de atribuir a persistência a um ligamento interposto.\n\nCom a ulna realmente anatômica e a cabeça ainda irredutível, a hipótese muda para passagem em casa de botão pelo anular ou pelo ancôneo, exigindo acesso radial independente. Esse é o segundo passo, e não a resposta à causa principal sem informação adicional.\n\nEssex-Lopresti é outro problema: instabilidade longitudinal com fratura da cabeça, membrana interóssea e radioulnar distal lesadas. **Na Biblioteca, leia “Como a ulna reduz o rádio” e compare com “Lesão de Essex-Lopresti”, no resumo do cotovelo.** Diferenciar incongruência proximal por forma ulnar de migração longitudinal evita misturar diagnósticos próximos.",
+      "correta": "**B: redução não anatômica da ulna.** É a primeira causa a investigar conforme o algoritmo. Restaurar a forma ulnar pode resolver a relação radiocapitelar sem uma intervenção inicial isolada na cabeça.\n\nSomente depois de confirmar a anatomia ulnar se avança para a busca de interposição e outras causas de irredutibilidade.",
+      "incorretas": {
+        "A": "**Interposição do anular é possível, mas vem depois da conferência da ulna.** A alternativa ganha força se a geometria ulnar estiver comprovadamente anatômica e a cabeça continuar bloqueada. Sem essa informação, escolhê-la como principal causa antecipa a segunda etapa do raciocínio.",
+        "C": "**Essex-Lopresti compromete a estabilidade longitudinal do rádio e envolve cabeça, membrana e articulação distal.** Não é sinônimo de toda subluxação proximal persistente após Monteggia. A pergunta pede a causa principal dessa incongruência no algoritmo, que começa pela redução ulnar.",
+        "D": "**Uma lesão colateral pode afetar estabilidade, mas não substitui a geometria ulnar como primeira investigação da relação radiocapitelar persistente.** Reparar partes moles enquanto se mantém uma ulna mal reduzida não devolve o comprimento e a forma que organizam o rádio. A fonte prioriza a conferência óssea."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio.",
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível. Seção: Lesão de Essex-Lopresti."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3db247b5",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-bc96e99b",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "12e82fbf302e5d964827c9a5b15c2050674e03c6c9002ac69cd0487c29fb6064"
+      },
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-8dbbe2b9"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "7c2ef0c88ba38ed9ef1856c331f78ab12e3febdda81312f7cf3bee34f0ff1a38"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1504": {
+    "questaoSha256": "0ed30fa9443fb83d3b6d7b8996a040bdf780a055425c618d12b633919b9282b3",
+    "comentarioAnteriorSha256": "ae06fb1f5c78ad9e8d588ffe87f2aeaa40e36285539179f5397c29ae6b6171c2",
+    "comentario": {
+      "conceito": "**A ulna já foi revista, portanto o caso está na etapa de investigar por que a cabeça continua irredutível.** Na Monteggia, restaurar a ulna geralmente reduz o rádio. Persistindo a luxação, primeiro se confirma comprimento, alinhamento e angulação dorsal proximal; só depois ganha força a hipótese de obstáculo por partes moles.\n\nO próximo passo sustentado pelo resumo é **redução aberta por via radial independente**. A cabeça pode ter passado em casa de botão pelo **ligamento anular ou pelo ancôneo**. Fixar uma articulação incongruente sem eliminar a causa não equivale a uma redução efetiva.\n\nA alternativa C contém a conduta escolhida pela banca, mas atribui o bloqueio ao **interósseo posterior**. Esse nervo não integra a lista de interposições apresentada no resumo. Ele é uma estrutura em risco que precisa ser protegida na exposição proximal, o que é diferente de afirmar que foi o tecido aprisionado neste paciente.\n\n**Na Biblioteca, leia “Como a ulna reduz o rádio”, incluindo a ressalva sobre esta prova.** É possível preservar o gabarito e aprender a conduta correta sem promover uma atribuição anatômica não demonstrada a fato estabelecido.",
+      "correta": "**C é o gabarito oficial pela indicação de redução aberta.** Com a ulna adequadamente reconstruída e a articulação ainda irredutível, a exploração radial independente permite encontrar e remover o bloqueio.\n\nA justificativa de “provável interposição do interósseo posterior” deve ser lida com reserva: o resumo descreve anular ou ancôneo, sem confirmar a estrutura no caso e sem incluir o nervo nessa lista.",
+      "incorretas": {
+        "A": "**Fixar o cotovelo por seis semanas não remove o que mantém a cabeça fora do lugar.** A fonte orienta explorar a irredutibilidade depois de conferir a ulna, em vez de apenas sustentar uma relação incongruente. Proteção temporária pode ter outras indicações, mas não responde à causa descrita desta luxação persistente.",
+        "B": "**Artroplastia depende de uma lesão da cabeça radial que justifique substituí-la.** O enunciado informa persistência de luxação, sem descrever cabeça irreparável. Trocar uma cabeça sem essa indicação não é o passo proposto para procurar um bloqueio por partes moles após a revisão ulnar.",
+        "D": "**Redução fechada com fio radiocapitelar não resolve um bloqueio que continua depois da reconstrução anatômica.** A necessidade é identificar a causa e obter congruência, não apenas atravessar a articulação com material. O resumo indica via radial própria diante da cabeça irredutível."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio; Vias de acesso e o nervo interósseo posterior.",
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível. Seção: Fratura da cabeça do rádio, prótese."
+      ],
+      "alerta": "Gabarito C preservado pela conduta de redução aberta. O resumo do Rockwood descreve interposição em casa de botão pelo ligamento anular ou pelo ancôneo, sem incluir o interósseo posterior nessa lista. Não é possível confirmar qual estrutura está presa pelo enunciado. Não usar o comentário antigo para sustentar raridade ou frequência de interposição do nervo."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio",
+          "Vias de acesso e o nervo interósseo posterior"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-bc96e99b",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3db247b5",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c2a37150"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "524ac6da00b4b40d918056e9ec7fe27fb2873df02d204f7d8ae365a6521565c8"
+      },
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-fe207e21"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "67e3f8d3fd7ab112b05bcad69e84dccc84fa18a38785c402cbe4784ee5b86c12"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1529": {
+    "questaoSha256": "604c759a21abb8730513da1207c6f39d966693422f585bef48e5b4495b342584",
+    "comentarioAnteriorSha256": "d319ef893e448e5a7b50deb45529a7d7639c22220ba60de4df6df7d4627bf7bc",
+    "comentario": {
+      "conceito": "**Galeazzi exige reconstruir o rádio e depois verificar a radioulnar distal.** Uma articulação que permanece incongruente pode estar presa por interposição do **extensor ulnar do carpo**, depois de confirmar que a redução radial é anatômica. Esse é um bloqueio de redução, diferente da articulação que reduz, mas continua instável.\n\nA distância do traço ajuda na suspeita: o grupo a até 7,5 cm da superfície articular tem maior, não menor, associação com instabilidade. O próprio resumo ressalva a precisão limitada desses marcadores isolados, recomendando teste intraoperatório após a placa.\n\nA direção mais comum da luxação distal é dorsal, protegida habitualmente em supinação; a volar pode ser protegida em pronação. A decisão final acompanha a posição de maior estabilidade observada na sala. Não existe regra de que toda Galeazzi deva ser imobilizada em pronação.\n\nA via volar é a mais usada, porque o foco costuma estar na metade distal do rádio. **Leia as seções de tratamento e de radioulnar irredutível, na Biblioteca.** Elas unem os quatro pontos da questão: risco, bloqueio, rotação protetora e acesso, sem transformá-los em regras universais desconectadas.",
+      "correta": "**B: pode haver interposição do extensor ulnar do carpo.** É uma causa clássica de irredutibilidade distal depois de reconstruir anatomicamente o rádio. A formulação “pode” também preserva o fato de existirem outros obstáculos possíveis.\n\nAntes de explorar o tendão, a própria redução radial precisa ser conferida.",
+      "incorretas": {
+        "A": "**Inverte a associação com a distância.** O grupo distal, a até 7,5 cm, tem taxa maior de instabilidade no resumo. O achado orienta a pesquisa, sem significar que toda fratura nesse grupo exige reparo ou que uma fratura mais proximal exclua lesão.",
+        "C": "**Aplica a posição do padrão volar à situação geral.** A luxação dorsal é a mais comum e costuma ser mais protegida em supinação; pronação aparece na variante volar. O teste em diferentes rotações e a comparação contralateral orientam a proteção específica.",
+        "D": "**A via volar é a mais usada na metade distal, e não uma fixação dorsal obrigatória.** Alguns autores preferem Thompson por considerações específicas, mas isso não transforma a face dorsal em regra geral. O acesso deve permitir redução anatômica compatível com o foco e proteção dos tecidos."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Galeazzi: o rádio quebrado e a radioulnar distal."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Galeazzi: o rádio quebrado e a radioulnar distal"
+        ],
+        "blocos": [
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-66eeabbb",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-f9ef8a06"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "b0262edbd0d32daea7836be449a15ce06622b532099bf2a524e2c312b5e1e6c8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1574": {
+    "questaoSha256": "0043c0d749af8f559024fc9435d29ee027987d3b1e548a7e042755bef9cb8319",
+    "comentarioAnteriorSha256": "b9aacace2a9c0292f4f2b7db173a3f56c4cd34345dbbd37635aae85729a1fd9a",
+    "comentario": {
+      "conceito": "**O “tipo B” da Monteggia posterior é a subdivisão de Jupiter dentro do tipo II de Bado.** Bado identifica a direção posterior ou posterolateral da cabeça; Jupiter detalha onde e como a ulna fraturou. O **IIB** está na **junção da metáfise com a diáfise proximal**.\n\nA diferença entre as letras pode ser organizada pela anatomia: IIA atravessa o coronoide; IIB fica na transição metafisodiafisária; IIC é diafisário; IID é complexo, do olécrano à diáfise. As letras não são uma escala simples de cominuição crescente.\n\nA alternativa C usa a expressão mais ampla “fratura da metáfise”. É a que corresponde ao nível do B entre as opções, mas a descrição precisa da fonte é a transição para a diáfise. Não se deve memorizar apenas “B é qualquer fratura metafisária”, porque isso perde o marco que o separa do padrão mais articular do A.\n\n**Leia “Jupiter: em que altura a ulna quebrou”, na Biblioteca.** Associe cada letra ao traço e depois pense na reconstrução do apoio ósseo, em vez de usar somente a palavra “proximal”.",
+      "correta": "**C: fratura metafisária, entendida aqui como a junção metáfise-diáfise proximal do IIB.** É a localização que melhor corresponde ao subtipo B entre as alternativas. O detalhamento da fonte evita ampliar demais o rótulo usado pela prova.\n\nO enunciado já delimita Monteggia posterior; a letra acrescenta a informação ulnar.",
+      "incorretas": {
+        "A": "**Cominuição proximal isoladamente não define o IIB.** O que o classifica é o nível metafisodiafisário. Um padrão complexo extenso do olécrano à diáfise corresponde ao IID, mas “cominuição” sem essa descrição também não basta para atribuir D.",
+        "B": "**Fratura através do coronoide corresponde ao IIA.** Esse é o padrão mais proximal e articular da subdivisão apresentada. A alternativa troca B por A ao usar o marco anatômico errado.",
+        "D": "**Fratura diafisária é o IIC.** O IIB foi separado precisamente por ocorrer na transição proximal entre metáfise e diáfise. Reduzir ambos a “fratura de ulna” elimina a utilidade da subclassificação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-22d5d72f",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-018638b1",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-86b2096c",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "fdf4914735b8631ead25a807f2aa1651a7d62e5b615c5b4a0d8c4d58ad98aca6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0044": {
+    "questaoSha256": "46720f4d2bd0ad39da68bae800d77db02ef0ccee084ca5183e46ef28595534f2",
+    "comentarioAnteriorSha256": "2c40dfb7269bcfbdfa2465ea10496646997b80592236d5873f333ac394e0cf13",
+    "comentario": {
+      "conceito": "**O gabarito desta prova é I, mas o resumo consultado aponta II como o mais frequente no adulto.** A diferença precisa ser explícita: aprender o registro da banca não exige ensinar como verdadeira uma distribuição etária que a fonte contradiz.\n\nBado I tem cabeça radial anterior e ápice ulnar anterior; é o tipo predominante na criança. Bado II tem cabeça posterior ou posterolateral, ulna com ápice posterior e predomina no adulto, chegando a até 80% no resumo. Pode associar fraturas da cabeça e do coronoide, tornando mais complexo o problema de estabilidade.\n\nO III é lateral ou anterolateral, metafisário e quase exclusivo da criança. O IV tem cabeça anterior e fratura dos dois ossos proximais no mesmo nível; é descrito como exclusivo do adulto, mas isso não o torna o mais frequente. Direção, frequência e exclusividade são informações diferentes.\n\n**Na Biblioteca, leia a tabela de Bado e o alerta sobre o TARO 2018.** Guarde que o registro oficial desta questão é A, enquanto a resposta à pergunta anatômica e epidemiológica segundo a fonte é o tipo II. Essa separação impede que uma divergência seja propagada para as próximas questões.",
+      "correta": "**A é o gabarito oficial registrado, porém não coincide com a fonte para adultos.** O tipo I é anterior e predomina na criança. O resumo de Rockwood descreve tipo II como o mais frequente no adulto.\n\nPortanto, preservar A no acervo não significa recomendá-lo como conceito correto para a população adulta; a divergência é o ponto central deste comentário.",
+      "incorretas": {
+        "B": "**Tipo II é a resposta sustentada pela bibliografia para “mais comum no adulto”.** A cabeça posterior ou posterolateral acompanha o ápice posterior ulnar. Embora B não seja o gabarito oficial desta prova, o conteúdo deve ser aprendido como a distribuição descrita no resumo.",
+        "C": "**Tipo III é lateral ou anterolateral e quase exclusivo da criança.** Não substitui nem o registro oficial I nem a predominância adulta II da fonte. A ocorrência de casos adultos isolados não o transforma no padrão mais comum nessa idade.",
+        "D": "**Tipo IV é descrito como exclusivo do adulto, com fratura radial e ulnar no mesmo nível.** Exclusividade não é frequência: um padrão raro pode ocorrer só em uma faixa e ainda assim não predominar nela. É essa diferença que impede usar IV para corrigir a divergência da prova."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ],
+      "alerta": "Gabarito oficial A preservado. O resumo do Rockwood 10ª edição descreve I como predominante na criança e II como o mais frequente no adulto, chegando a até 80% das Monteggia adultas. A pergunta sobre adulto teria resposta bibliográfica B; não usar o registro da banca para ensinar I como predominante nessa população."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0804": {
+    "questaoSha256": "eac2dd4578476969b0e8ae586d46f67b5d021f4e9622d89955d53d89339ead9d",
+    "comentarioAnteriorSha256": "8e7b7986fbc15321121a67b7b023e5d58f05843f124ef8b7175e8e0f6a423678",
+    "comentario": {
+      "conceito": "**A banca selecionou o tipo II, mas “mais comum no adulto” não é sinônimo de “exclusivo do adulto”.** O resumo descreve o II como o padrão predominante adulto e o IV como ocorrendo exclusivamente nessa população. O enunciado usa “quase exclusivamente”, formulação que exige cuidado para não fundir as duas afirmações.\n\nNo II, a cabeça radial vai para posterior ou posterolateral e a ulna tem ápice posterior. Lesões associadas da cabeça e do coronoide contribuem para a complexidade adulta. No IV, a cabeça é anterior e rádio e ulna fraturam proximalmente no mesmo nível. A diferença não é apenas etária: há padrões anatômicos distintos.\n\nI e III se associam sobretudo à criança, respectivamente anterior e lateral/anterolateral. Isso ajuda a excluir esses tipos como padrão adulto típico, mas não resolve a diferença de redação entre II e IV. A escolha oficial pode ser entendida como cobrança da Monteggia típica do adulto; essa é uma leitura da prova, não a reprodução literal da palavra “exclusivamente” do livro.\n\n**Leia “A classificação de Bado” e a ressalva específica sobre o TARO 2025, na Biblioteca.** Compare o padrão mais frequente com o reservado ao adulto e mantenha os dois conceitos separados.",
+      "correta": "**B: tipo 2, conforme o gabarito oficial.** É o padrão mais frequente no adulto e corresponde à leitura da banca de “Monteggia típica do adulto”. A cabeça é posterior ou posterolateral e o ápice ulnar é posterior.\n\nA fonte, entretanto, reserva a afirmação de exclusividade ao IV; a redação do enunciado não deve apagar essa diferença.",
+      "incorretas": {
+        "A": "**Tipo I é anterior e predomina na criança.** Pode ocorrer em adultos, mas não é o tipo que a fonte destaca como típico dessa população. A resposta não se resolve escolhendo o padrão anterior mais conhecido sem considerar a distribuição etária.",
+        "C": "**Tipo III é lateral ou anterolateral e quase exclusivo da criança.** Portanto, sua associação etária vai no sentido oposto ao da pergunta. O termo “quase exclusivo” precisa ser ligado à população correta, não apenas reconhecido como frase familiar.",
+        "D": "**Tipo IV é a opção que a fonte descreve como exclusiva do adulto.** Ele associa cabeça anterior e fratura dos dois ossos no mesmo nível. Por isso, D não deve ser ensinada como falsa em sua associação etária: ela evidencia a imprecisão entre a formulação da prova e a distinção textual do resumo."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ],
+      "alerta": "Gabarito B preservado. O resumo define II como o mais comum no adulto, enquanto descreve IV como exclusivo do adulto. A banca parece ter usado “quase exclusivamente” para o padrão adulto típico, mas essa interpretação não transforma predominância e exclusividade em sinônimos. A associação etária do IV permanece verdadeira segundo a fonte."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0929": {
+    "questaoSha256": "a574db0e4ee9ef78bde46509f041c47bf7a98ea3eb60f00ed926d3fba3a04a01",
+    "comentarioAnteriorSha256": "c4f2e57027a145885eb0a3dd1c61ea629bae57c4a0e1941a0570807831fd1553",
+    "comentario": {
+      "conceito": "**Sinostose radioulnar é uma ponte óssea que une rádio e ulna e impede a rotação entre eles.** O resumo a relaciona à alta energia, cominuição dos dois ossos no mesmo nível, trauma craniano e à abordagem única dos dois ossos proximais. A combinação da pergunta que corresponde a essa advertência é **proximal e incisão única**.\n\nA prevenção procura preservar o espaço interósseo: não deixar nele enxerto, fragmentos, parafusos ou metal. O capítulo também recomenda via radial independente quando a Monteggia exige abordar o rádio depois da ulna, em vez da antiga via única proximal associada a sinostose.\n\nIsso não significa que sinostose só possa existir proximalmente. A fonte classifica padrões proximais e discute a complicação pós-traumática do antebraço; não oferece taxas numéricas comparando cada terço e cada incisão. A resposta identifica a combinação de risco explicitamente destacada, sem inventar uma porcentagem ou excluir outros locais.\n\n**Na Biblioteca, leia “Sinostose radioulnar” junto da indicação de acesso radial independente na Monteggia.** O objetivo é conservar a relação de movimento entre os ossos durante a reconstrução, não apenas obter consolidação.",
+      "correta": "**C: proximal e incisão única.** É a associação que o resumo manda evitar ao operar os dois ossos proximais. Uma via própria para o rádio reduz o problema de compartilhar o campo interósseo com a ulna.\n\nA associação não autoriza afirmar que toda via única produzirá sinostose ou que os demais terços estejam imunes.",
+      "incorretas": {
+        "A": "**Terço distal com duas incisões não reproduz a advertência específica.** A fonte destaca a abordagem única dos dois ossos proximais. Ter duas vias também não garante ausência de complicação: preservar o espaço contra fragmentos e material continua necessário.",
+        "B": "**Reconhece a incisão única, mas troca a localização destacada para distal.** O resumo faz a advertência particular para rádio e ulna proximais, inclusive na Monteggia. Não é preciso declarar a sinostose distal impossível para reconhecer que esse não é o conjunto cobrado.",
+        "D": "**Mantém a localização proximal e troca a via única por dupla.** A abordagem radial independente é justamente a orientação para evitar o campo único proximal quando é necessário tratar os dois ossos. A alternativa inverte o fator técnico destacado, sem que duas vias dispensem cuidado com o espaço interósseo."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Sinostose radioulnar; Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Sinostose radioulnar",
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "sinostose-radioulnar-62eba46d",
+          "sinostose-radioulnar-ed7e5eeb",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "ec1ac942ea3fd5cfefedcf2dc739417fc33cb57fb5053415c431ec5d909f565d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0873": {
+    "questaoSha256": "53ecf6fdd6cdc871d7eef4e0e1dfb4bb0e3c67fa9b760709f29860a8aa0adcd9",
+    "comentarioAnteriorSha256": "5013926851f81c89c0ffa97ff99a9907aeab39905390b8bee3dc6c8c9311dcee",
+    "comentario": {
+      "conceito": "**O gabarito oficial prefere fixador monolateral; o resumo consultado prefere placa imediata para a maioria das expostas do antebraço.** A divergência é clínica e precisa ser preservada. O caráter exposto exige desbridamento, avaliação de contaminação e viabilidade e antibiótico; não implica automaticamente postergar a fixação interna.\n\nO capítulo descreve lavagem, placa e possível fechamento no mesmo tempo nos tipos I, II e IIIA, desde que as condições permitam. No IIIB, a placa pode ser imediata, com desbridamentos e cobertura planejada. O fixador externo fica para cenários selecionados de perda maciça de partes moles e contaminação grosseira, com pinos fora do trajeto da futura placa.\n\nO enunciado não especifica esse cenário grave para justificar a preferência geral pelo fixador. Assim, a resposta registrada D é uma informação da prova, enquanto a escolha terapêutica segundo a fonte depende da situação do ferimento e favorece placa na maioria.\n\n**Leia “Fraturas expostas e por projétil”, na Biblioteca, incluindo o alerta sobre o TARO 2011.** Separe a indicação de controle de danos em partes moles ruins da regra geral de reconstrução anatômica dos dois ossos.",
+      "correta": "**D é o gabarito oficial: fixador externo monolateral.** Sua indicação pode existir em destruição importante de partes moles e contaminação grosseira, mas esses dados não foram oferecidos no enunciado.\n\nO resumo não o recomenda como preferência universal para toda exposição. Para a maioria, descreve desbridamento e placa imediata, razão pela qual o gabarito deve ser acompanhado da ressalva.",
+      "incorretas": {
+        "A": "**Placa e parafusos é a preferência do resumo para a maioria das expostas, embora não seja a letra oficial desta prova.** Permite reconstrução anatômica após desbridamento em condições apropriadas. Não deve ser ensinada como contraindicada apenas porque há comunicação com o meio externo.",
+        "B": "**Haste bloqueada pode ser considerada em indicações selecionadas, incluindo exposição e partes moles ruins.** Isso não a torna a preferência geral discutida, que continua sendo placa. Também é necessário distinguir a haste bloqueada contemporânea das hastes finas/elásticas com pior controle rotacional no adulto.",
+        "C": "**Fixação externa circular pertence à mesma necessidade de seleção clínica, sem preferência geral demonstrada na fonte.** O resumo reserva fixação externa a destruição e contaminação importantes e não fornece comparação entre modelos para justificar circular em toda exposta. A pergunta é genérica demais para transformar esse recurso em regra."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Fraturas expostas e por projétil; A haste intramedular."
+      ],
+      "alerta": "Gabarito oficial D preservado. O resumo do Rockwood 10ª edição recomenda desbridamento e placa imediata na maioria das expostas do antebraço, reservando fixação externa a situações selecionadas de perda maciça de partes moles e contaminação grosseira. O enunciado não oferece essas condições; não ensinar fixador monolateral como preferência universal com base apenas no gabarito desta prova."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Fraturas expostas e por projétil",
+          "A haste intramedular"
+        ],
+        "blocos": [
+          "fraturas-expostas-e-por-projetil-5aeafa05",
+          "fraturas-expostas-e-por-projetil-217de6d1",
+          "a-haste-intramedular-353c6bb3",
+          "a-haste-intramedular-418a2c99",
+          "fraturas-expostas-e-por-projetil-cffa5e06"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "144deb2e7c66f148bc9ced0ed2313c4af9c96fc0ee707a181487d9a80945f727"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
