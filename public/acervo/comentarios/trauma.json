@@ -1647,19 +1647,45 @@
   "conferido": false
  },
  "trauma-0099": {
-  "conceito": "**Os compartimentos da coxa.** A coxa tem **três compartimentos**, separados pelos septos intermusculares:\n\n| Compartimento | Músculos | Nervo |\n|---|---|---|\n| **Anterior** | **Quadríceps** (reto femoral, vastos), sartório | **Femoral** |\n| Medial (adutor) | Adutores longo, curto e magno, grácil | Obturatório |\n| Posterior | Isquiotibiais (bíceps femoral, semitendíneo, semimembranoso) | Ciático |\n\n**A síndrome compartimental da coxa.** É **rara**, porque os compartimentos da coxa são **grandes** e com fáscias complacentes, e acomodam muito volume antes de a pressão subir. Além disso, os compartimentos se comunicam com o quadril e a pelve. Quando ocorre, o compartimento **anterior** é o mais acometido, seguido do posterior. O compartimento medial é o menos acometido.\n\n**As causas.**\n- **Trauma grave** com **contusão** e esmagamento da coxa, com ou sem fratura do fêmur.\n- Fraturas do fêmur com grande sangramento, sobretudo em politraumatizados com **hipotensão** e reposição volêmica maciça.\n- Compressão externa prolongada (paciente inconsciente, coma alcoólico, cirurgias longas em certas posições).\n- Uso de **calças pneumáticas** antichoque, reperfusão após lesão vascular, coagulopatias e anticoagulantes.\n\n**O diagnóstico.** Dor desproporcional, coxa **tensa**, dor ao estiramento passivo do quadríceps (flexão passiva do joelho) e alterações no território do nervo femoral. No paciente inconsciente, mede-se a **pressão compartimental**: pressão diferencial (diastólica menos compartimental) **menor que 30 mmHg** indica fasciotomia.\n\n**O tratamento.** **Fasciotomia** por uma **incisão lateral** longa, que abre o compartimento anterior e, pelo septo intermuscular lateral, o posterior. O compartimento medial é aberto por uma incisão medial se necessário.\n\n**A mortalidade.** A síndrome compartimental da coxa costuma ocorrer em pacientes **graves**, politraumatizados. A mortalidade é alta, em parte pelas lesões associadas, pela **rabdomiólise** e pela insuficiência renal.",
-  "correta": "**Correta: C (anterior).** Na fratura diafisária do fêmur, o compartimento da coxa com maior risco de síndrome compartimental é o **anterior** (quadríceps), seguido do posterior. O medial é o menos acometido.",
+  "conceito": "**Na coxa, o compartimento anterior é o mais frequentemente acometido e merece atenção após fratura diafisária do fêmur.** Ele contém quadríceps, sartório e nervo femoral. A dor à flexão passiva do joelho estira o grupo anterior; fraqueza da extensão e alteração sensitiva no território descrito podem complementar a avaliação.\n\nA coxa tem três compartimentos: anterior, posterior e adutor, ou medial. “Lateral” é o nome de uma via de acesso, não um quarto compartimento anatômico. Uma incisão lateral pode abrir anterior e posterior, demonstrando por que posição da incisão e nome do espaço não são sinônimos.\n\nO predomínio anterior não torna posterior e adutor imunes. O resumo documenta casos posteriores e descreve o adutor como raro. É necessário avaliar o conjunto conforme clínica e pressão, sem limitar a vigilância a uma lista de frequência. O cateter de rotina também é indicado no anterior, unindo a distribuição de risco à monitorização.\n\n**Leia “Coxa” e “Onde colocar o cateter”, na Biblioteca.** Relacione localização muscular, estiramento e função antes de escolher pelo nome de uma incisão.",
+  "correta": "**C: anterior.** É o compartimento mais acometido da coxa no resumo e o local preferido para o cateter. O grupo quadríceps explica a dor ao estiramento em flexão e a possível fraqueza extensora.\n\nA fratura femoral deve levar à vigilância apropriada, sem esperar déficit motor para suspeitar da síndrome.",
   "incorretas": {
-   "A": "A coxa **não tem compartimento lateral** independente. Os compartimentos são anterior, medial e posterior.",
-   "B": "O compartimento **medial** (adutor) é o **menos** acometido.",
-   "D": "O compartimento **posterior** é o segundo mais acometido, depois do anterior."
+   "A": "**Lateral é acesso, não compartimento separado da coxa nessa divisão.** A incisão lateral pode permitir liberar anterior e posterior. Confundir o caminho cirúrgico com o espaço acometido cria uma quarta região que a classificação não contém.",
+   "B": "**Medial corresponde ao compartimento adutor e existe, mas é raramente acometido.** Seu nervo é o obturatório e seu grupo muscular são os adutores. A alternativa nomeia uma região real, porém não a de maior frequência descrita.",
+   "D": "**Posterior contém isquiotibiais e nervo isquiático.** Pode desenvolver síndrome e se relaciona à dor à extensão passiva do joelho e fraqueza de flexão. Esses achados são diferentes dos anteriores e não o colocam como o mais frequentemente envolvido."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Medida da pressão e o delta P."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Os compartimentos de cada região",
+      "Fasciotomia",
+      "Medida da pressão e o delta P"
+     ],
+     "blocos": [
+      "os-compartimentos-de-cada-regiao-eb26943e",
+      "fasciotomia-f734935c",
+      "medida-da-pressao-e-o-delta-p-6e9747e1"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
+    }
+   ],
+   "questaoSha256": "06a33972403a4f1a40faff094f6678382b35f2f3647e2a8d5c08caaccba1237a",
+   "comentarioSha256": "6eb6221bacc7cf16c10a7aeed1702af659db47c28181e84e84660d7d64a9701d"
+  }
  },
  "trauma-0100": {
   "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o SINAL DE GREY TURNER (equimose que aparece na região dos flancos, tipicamente de 24 a 48 horas após o trauma) indica a presença de HEMORRAGIA RETROPERITONEAL. O mecanismo é a dissecção de sangue, acumulado no espaço retroperitoneal, através dos planos fasciais até atingir o tecido subcutâneo do flanco, tornando-se visível clinicamente. Nas lesões do anel pélvico, essa hemorragia retroperitoneal costuma ter origem no plexo venoso pré-sacral (a fonte mais comum de sangramento pélvico) ou em uma artéria pélvica lesada, e o aparecimento tardio desse sinal reforça a importância de reavaliações seriadas do paciente com fratura pélvica, já que o sangramento retroperitoneal pode não ser evidente nas primeiras horas de atendimento.",
@@ -2700,19 +2726,43 @@
   "conferido": false
  },
  "trauma-0164": {
-  "conceito": "**A síndrome compartimental aguda da perna.** A perna é o local mais comum de síndrome compartimental, sobretudo após a **fratura da diáfise da tíbia**. Os quatro compartimentos (anterior, lateral, posterior superficial e posterior profundo) são envoltos por fáscias firmes e pouco complacentes. O **compartimento anterior** é o mais acometido.\n\n**Os fatores de risco (McQueen e outros).**\n\n| Fator | Por quê |\n|---|---|\n| **Sexo masculino** | Muito mais frequente nos homens |\n| **Idade menor que cerca de 35 anos** | Jovens têm **mais massa muscular** num compartimento com fáscia **mais firme**; e sofrem traumas de mais energia |\n| **Fratura da diáfise da tíbia** | A causa mais comum |\n| Lesão de alta energia, esmagamento | Mais edema e sangramento |\n| Fratura **fechada** (e também a exposta) | A fratura exposta não \"descomprime\" o compartimento de forma confiável |\n| **Hastes** intramedulares, tração, posição de litotomia prolongada | Aumentam a pressão |\n| Coagulopatias e anticoagulantes | Mais sangramento |\n\n**Por que os idosos têm menos.** Os pacientes mais velhos têm **menos massa muscular**, fáscias mais complacentes e muitas vezes pressão arterial mais alta (o que mantém a perfusão). Por isso, o risco é menor. Nos estudos de McQueen, o risco foi muito maior em homens jovens.\n\n**O diagnóstico.**\n- **Dor desproporcional**, que não cede com analgesia.\n- **Dor ao estiramento passivo** (por exemplo, flexão plantar passiva dos dedos estira o compartimento anterior).\n- Parestesia (no primeiro espaço interdigital: nervo fibular profundo).\n- Medida da pressão: **pressão diferencial** (diastólica menos compartimental) **menor que 30 mmHg** indica fasciotomia. A monitorização contínua é útil nos pacientes de alto risco e nos inconscientes.\n\n**O tratamento.** **Fasciotomia dos quatro compartimentos**, geralmente por **duas incisões** (anterolateral e posteromedial), o mais cedo possível. A fixação da fratura é feita no mesmo tempo, e as feridas são fechadas depois.",
-  "correta": "**Correta: D (masculino e a idade menor que 55 anos).** Os fatores predisponentes da síndrome compartimental aguda da perna incluem o sexo **masculino** e a idade **jovem**. Os homens jovens têm mais massa muscular dentro de fáscias firmes e sofrem traumas de maior energia.",
+  "conceito": "**O perfil predisponente é masculino e jovem.** O capítulo descreve homens cerca de dez vezes mais frequentes que mulheres e juventude como o fator de risco mais importante. Muito músculo em um compartimento de tamanho limitado deixa menos espaço para inchaço, ajudando a explicar a vulnerabilidade.\n\nEntre as opções, “menor que 55 anos” representa o grupo mais jovem. O resumo fornece exemplos de risco particularmente alto abaixo de 35 anos na fratura diafisária da tíbia; ele não estabelece 55 como uma fronteira biológica rígida nem torna todas as pessoas abaixo dela equivalentes.\n\nOs mais velhos e as mulheres também podem ter síndrome. Casos sem fratura, por exemplo, se associam a maior idade, comorbidades e anticoagulação. Essa exceção não troca a resposta do perfil predominante, mas impede usar a alternativa escolhida para descartar pacientes fora dele.\n\n**Na Biblioteca, leia “Quem tem síndrome compartimental” e a exceção dos casos sem fratura.** A epidemiologia deve orientar vigilância, sem substituir avaliação da perfusão, exame e monitorização quando indicados.",
+  "correta": "**D: masculino e menor que 55 anos.** É o par que corresponde ao predomínio masculino e à juventude descritos. O limite de 55 é a forma de agrupar as alternativas, não um ponto a partir do qual o risco desaparece.\n\nA intensidade do trauma, o padrão da lesão e a confiabilidade do exame continuam importantes.",
   "incorretas": {
-   "A": "O sexo **feminino** e a idade **avançada** estão associados a **menor** risco de síndrome compartimental.",
-   "B": "A idade mais jovem é fator de risco, mas a síndrome é muito mais frequente no sexo **masculino**.",
-   "C": "O sexo masculino é fator de risco, mas a idade **maior** se associa a menor risco, pela menor massa muscular e fáscias mais complacentes."
+   "A": "**Troca o predomínio masculino e a tendência de maior risco nos jovens.** Mulheres mais velhas podem ter síndrome, mas não são a combinação que responde à predisposição geral discutida. A existência de exceções clínicas não inverte a distribuição populacional.",
+   "B": "**A faixa mais jovem está no sentido correto, mas o sexo predominante foi trocado.** O capítulo descreve forte predomínio masculino. O achado é de risco, sem autorizar reduzir a investigação em uma mulher com lesão e sintomas compatíveis.",
+   "C": "**Mantém o sexo masculino e desloca o maior risco para o grupo mais velho.** O resumo destaca a juventude e a menor margem para edema. O paciente idoso continua podendo apresentar síndrome, especialmente em cenários específicos, mas isso não o torna o perfil principal desta comparação."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "McQueen MM, Gaston P, Court-Brown CM. Acute compartment syndrome. Who is at risk? J Bone Joint Surg Br. 2000;82(2):200-203."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Quem tem síndrome compartimental"
+     ],
+     "blocos": [
+      "quem-tem-sindrome-compartimental-5ca80c99",
+      "quem-tem-sindrome-compartimental-2d563b4e",
+      "quem-tem-sindrome-compartimental-9294b2f4"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "197fa843a0084768b3eeeb07b77fbe5ad7025914cd5b128c725474e2ad8d6a44"
+    }
+   ],
+   "questaoSha256": "8a5515be6553be5c5fcd0fc683d7762ed2b10061d500289dece1598045d23fd5",
+   "comentarioSha256": "b4ecb42925c874d93ba5572cc37568dcd941eada6e9f329c1ccc46da38241bd5"
+  }
  },
  "trauma-0165": {
   "conceito": "**A classificação de Mason (1954).** Descreve as fraturas da **cabeça do rádio** no adulto, que ocorrem por queda sobre a mão estendida com o cotovelo em extensão e valgo, comprimindo a cabeça contra o capítulo.\n\n| Tipo | Descrição |\n|---|---|\n| I | **Sem desvio** (ou desvio mínimo) |\n| II | Fratura **parcial com desvio** |\n| III | Fratura **cominutiva**, de toda a cabeça |\n| IV (Johnston) | Fratura da cabeça com **luxação do cotovelo** |\n\n**A modificação de Broberg e Morrey (1987).** Fizeram duas mudanças importantes:\n1. **Incluíram a fratura do colo do rádio** na mesma classificação, porque o colo e a cabeça se comportam de forma semelhante e o tratamento segue a mesma lógica.\n2. Acrescentaram **critérios numéricos** para o tipo II: desvio de **2 mm ou mais** ou acometimento de **30% ou mais** da superfície articular.\n\n**A modificação de Hotchkiss** acrescentou critérios de **tratamento** baseados no bloqueio mecânico do movimento e na possibilidade de fixação.\n\n**O tratamento por tipo.**\n- **Tipo I**: tratamento não cirúrgico com mobilização precoce; aspiração do hematoma pode aliviar a dor.\n- **Tipo II**: se há **bloqueio mecânico** da rotação do antebraço ou desvio importante, fixação com parafusos (na zona segura); sem bloqueio, há debate, e muitos evoluem bem sem cirurgia.\n- **Tipo III**: se reconstruível (até 3 fragmentos), fixação; se muito cominuído, **artroplastia** da cabeça do rádio (a ressecção isolada é evitada quando há instabilidade associada).\n- **Tipo IV**: tratamento da luxação e da fratura, com atenção ao coronoide e aos ligamentos (tríade terrível).\n\n**Lesões associadas que não podem passar.** Lesão do ligamento colateral medial, da membrana interóssea (lesão de **Essex-Lopresti**, com dor no punho e migração proximal do rádio) e do coronoide.",
@@ -3675,18 +3725,45 @@
   "conferido": false
  },
  "trauma-0229": {
+  "conceito": "**Após fratura diafisária tibial, o anterior é o compartimento mais frequentemente acometido.** Ele contém tibial anterior, extensores longos dos dedos e do hálux, fibular terceiro, nervo fibular profundo e vasos tibiais anteriores. Seu território sensitivo característico é o primeiro espaço interdigital, e a fraqueza afeta extensão do tornozelo e dos dedos.\n\nA dor ao estiramento desse grupo ocorre em flexão plantar. O resumo também relaciona sua vulnerabilidade ao predomínio de fibras tipo I, oxidativas, mais dependentes de oxigênio. Essas relações ajudam a compreender o exame, mas não exigem que todos os sinais estejam presentes para suspeitar da síndrome.\n\nO anterior é o local habitual do cateter na perna por ser mais acometido e acessível. Se a clínica sugerir posterior profundo não explicado pela medida anterior, ele também deve ser investigado. Uma localização mais comum não elimina avaliação dos demais espaços nem autoriza fasciotomia incompleta.\n\n**Leia “Perna” e “Onde colocar o cateter”, na Biblioteca.** Compare território nervoso, função muscular e monitorização para transformar a resposta em um mapa clínico útil.",
+  "correta": "**B: anterior.** A frequência de acometimento e a acessibilidade justificam sua escolha habitual para monitorização. Os extensores e o nervo fibular profundo explicam os achados associados.\n\nA hipótese de síndrome não pode depender de aparecer dormência ou paresia, que têm limitações diagnósticas importantes.",
   "incorretas": {
-   "A": "O compartimento lateral é acometido com menos frequência.",
-   "C": "O posterior profundo é temido por ser esquecido, mas é menos acometido.",
-   "D": "O posterior superficial é o mais complacente."
+   "A": "**Lateral é um dos quatro compartimentos e pode acompanhar o anterior, mas não é a resposta de maior frequência nesta pergunta.** Contém fibulares e nervo fibular superficial, com alteração de eversão e sensibilidade dorsal. A proximidade funcional e de pressão não torna seus territórios idênticos.",
+   "C": "**Posterior profundo contém flexores longos, tibial posterior e nervo tibial.** Sensibilidade plantar e fraqueza de flexão/inversão orientam para ele. É um espaço importante, inclusive na avaliação dirigida, mas a referência de maior frequência e cateter de rotina é anterior.",
+   "D": "**Posterior superficial contém gastrocnêmio, sóleo e nervo sural.** Seu padrão inclui dor à dorsiflexão, fraqueza de flexão plantar e alteração dorsolateral. A alternativa não corresponde ao grupo anterior destacado como mais frequentemente acometido."
   },
-  "conceito": "A **perna** tem quatro compartimentos, cada um com seu nervo:\n\n**anterior**: tibial anterior e extensores, com o **nervo fibular profundo**;\n\n**lateral**: fibulares longo e curto, com o **nervo fibular superficial**;\n\n**posterior superficial**: gastrocnêmio e sóleo, com o nervo sural;\n\n**posterior profundo**: tibial posterior e flexores longos, com o **nervo tibial**.\n\n**O mais acometido na fratura da tíbia**: o **anterior**. Ele fica preso entre a tíbia, a fíbula, a membrana interóssea e uma fáscia espessa: é o **menos complacente**. O primeiro sinal costuma ser a dormência no **primeiro espaço** entre os dedos (fibular profundo) e a dor ao fletir passivamente os dedos.\n\n**O compartimento traiçoeiro**: o **posterior profundo**, menos acometido, mas muitas vezes **esquecido** na fasciotomia, porque fica escondido sob o sóleo.\n\n**A fasciotomia de duas incisões**:\n\n**lateral**: abre o **anterior** e o **lateral**, de cada lado do septo intermuscular;\n\n**medial**: abre o **posterior superficial** e, soltando o sóleo da tíbia, o **posterior profundo**.\n\n**Na prova**: o compartimento mais acometido após fratura da tíbia é o **anterior**.",
-  "correta": "O compartimento anterior é o menos complacente da perna e o primeiro a sofrer na fratura da tíbia.",
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 16"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Por que a pressão mata o músculo; Os compartimentos de cada região."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Medida da pressão e o delta P",
+      "Por que a pressão mata o músculo",
+      "Os compartimentos de cada região"
+     ],
+     "blocos": [
+      "medida-da-pressao-e-o-delta-p-13e06142",
+      "por-que-a-pressao-mata-o-musculo-1a07d757",
+      "os-compartimentos-de-cada-regiao-222f4f26"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "fd3e2bd71bf4ee40c0ad479ff37b7218d85a8d8be0d1d34cb18a450356649166"
+    }
+   ],
+   "questaoSha256": "92ba81bfb4ae3fb952eaa923a8ba678732b9cc91e368377e017948056183c4d4",
+   "comentarioSha256": "b9eae80250af98a1475b309b676f6976ecb99a0caf66ffcdd83b1bbb8d29d00f"
+  }
  },
  "trauma-0231": {
   "conceito": "**A prova combina dois marcadores históricos de suspeita de lesão da radioulnar distal: encurtamento radial maior que 5 mm e traço a até 7,5 cm da articulação.** Eles sinalizam que uma fratura radial aparentemente isolada pode integrar uma Galeazzi. Não representam, sozinhos, confirmação de instabilidade.\n\nA relação de comprimento entre os ossos importa no punho. O resumo recomenda comparar a variância ulnar com o lado oposto e procurar também fratura da base do estiloide, alargamento distal e luxação no perfil. A distância do traço identifica o grupo distal, mais associado à instabilidade do que fraturas mais proximais.\n\nHá um contraponto explícito na fonte: estudos posteriores consideraram as medidas de 5 mm e 7,5 cm pouco confiáveis como critérios isolados de decisão. O exame de estabilidade no intraoperatório, depois de fixar anatomicamente o rádio, é o método recomendado para orientar o tratamento da articulação.\n\n**Leia “Quem tem a radioulnar distal lesada”, na Biblioteca, incluindo a crítica aos números.** A questão pede reconhecer quando suspeitar; não se deve transformar os mesmos números em autorização para dispensar teste ou indicar reparo automaticamente.",
@@ -4602,15 +4679,44 @@
   "conferido": false
  },
  "trauma-0306": {
+  "conceito": "**Entre as opções, a diáfise do úmero é a associação menos frequente na tabela apresentada pelo resumo.** Ela participa de cerca de **0,6% dos casos** de síndrome, em comparação com rádio distal 9,8%, fraturas do pé 1,8% e diáfise femoral 3%. Esses valores descrevem a distribuição das lesões entre os casos, não a chance de cada fratura individual desenvolver a complicação.\n\nEsse denominador muda a interpretação. Um tipo de fratura muito comum pode responder por uma parcela relevante dos casos e ainda ter incidência individual baixa. O capítulo exemplifica isso com o rádio distal, em que somente cerca de 0,25% das fraturas cursam com síndrome.\n\nAssociação menos frequente não significa risco zero. O braço tem compartimentos anterior e posterior, com sinais próprios, e pode exigir descompressão conforme o quadro. A tabela orienta suspeita e comparação epidemiológica; ela não substitui o exame de uma extremidade dolorosa ou tensa.\n\n**Na Biblioteca, leia a tabela de lesões em “Quem tem síndrome compartimental”.** Pergunte sempre se o número descreve casos de síndrome ou pacientes com aquela fratura, evitando usar uma frequência para responder à outra.",
+  "correta": "**D: diáfise do úmero.** É a menor participação entre os quatro grupos oferecidos, cerca de 0,6% na distribuição citada. A escolha é comparativa dentro das alternativas.\n\nNenhum número dessa tabela autoriza descartar síndrome no braço quando a clínica e o mecanismo geram suspeita.",
   "incorretas": {
-   "A": "A fratura do rádio distal, sobretudo de alta energia, pode causar síndrome no antebraço.",
-   "B": "As fraturas e esmagamentos do pé podem causar síndrome nos compartimentos do pé.",
-   "C": "A fratura do fêmur pode causar síndrome na coxa, embora rara."
+   "A": "**Rádio distal participa mais dos casos que a diáfise umeral na tabela.** Seu valor de 9,8% entre os casos não deve ser confundido com a incidência individual de 0,25% das fraturas distais. Essa diferença de denominadores pode fazer uma alternativa parecer menor pelo número errado.",
+   "B": "**Fraturas do pé têm participação de 1,8%, maior que os 0,6% da diáfise umeral.** O diagnóstico clínico no pé também é difícil, e sua menor frequência global não significa que possa ser ignorado. A opção não é a menor entre as apresentadas.",
+   "C": "**Diáfise femoral aparece com cerca de 3% dos casos e pode produzir síndrome da coxa.** É menos representada que a tíbia, mas ainda supera a associação umeral desta comparação. Confundir “menos que a tíbia” com “menos entre estas quatro” troca a pergunta epidemiológica."
   },
-  "conceito": "A **síndrome compartimental** aparece onde há **compartimentos fechados** por fáscias firmes e trauma suficiente para encher esses espaços de sangue e edema.\n\n**As lesões mais associadas**:\n\n**fratura da diáfise da tíbia**: a causa mais comum, cerca de 40%;\n\n**fraturas do antebraço**, inclusive do **rádio distal**, sobretudo de alta energia;\n\n**fraturas e esmagamentos do pé**, com nove compartimentos;\n\n**fratura da diáfise do fêmur**: rara na coxa, mas descrita com alta energia, esmagamento e anticoagulação.\n\n**A menos associada: a diáfise do úmero**. O **braço** tem compartimentos **amplos** e mais **complacentes**, que acomodam o inchaço; a síndrome compartimental no braço é **rara**.\n\n**O que a fratura do úmero ameaça**: o **nervo radial**, no sulco espiral, e não a pressão dos compartimentos.\n\n**Na prova**: das opções, a menos associada à síndrome compartimental é a fratura da **diáfise do úmero**.",
-  "correta": "O braço tem compartimentos amplos e complacentes, e a síndrome compartimental é rara na fratura do úmero.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental; Os compartimentos de cada região."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Quem tem síndrome compartimental",
+      "Os compartimentos de cada região"
+     ],
+     "blocos": [
+      "quem-tem-sindrome-compartimental-b7787f07",
+      "quem-tem-sindrome-compartimental-4b3a771a",
+      "os-compartimentos-de-cada-regiao-8c215981"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "296db560d9f37ccb2a6105a593ac3a7662fd35d1d03f831e0103960bbb3fce58"
+    }
+   ],
+   "questaoSha256": "9d48ce7441e24f3f43561f1cf6c3ed326f34f54349a2767d3cd02305b21df4cb",
+   "comentarioSha256": "20c3942403faf4c3e105eeafab8041a77fc44804cb0cb5793c0a380d2c7cfb99"
+  }
  },
  "trauma-0307": {
   "conceito": "**A patela e o aparelho extensor.** A patela é o maior **sesamoide** do corpo, dentro do tendão do quadríceps. Ela funciona como uma **polia**: afasta o tendão do eixo do joelho e **aumenta o braço de alavanca** do quadríceps, aumentando a força de extensão em até cerca de 50%. Sua face articular, com a cartilagem mais espessa do corpo, suporta forças de compressão muito altas.\n\n**O mecanismo da fratura.**\n- **Trauma direto** (queda sobre o joelho, painel do carro): fraturas **cominutivas** (estreladas), muitas vezes com o retináculo preservado.\n- **Trauma indireto** (contração do quadríceps com o joelho fletido): fraturas **transversas**, com ruptura dos retináculos e perda da extensão.\n\n**O exame-chave: a extensão ativa.** Pede-se ao paciente para **elevar a perna estendida** ou manter o joelho estendido contra a gravidade. Se não consegue, o **aparelho extensor** (incluindo os retináculos medial e lateral) está **rompido**.\n\n**As indicações cirúrgicas.**\n\n| Indicação | Limite |\n|---|---|\n| **Perda da extensão ativa** (aparelho extensor rompido) | Qualquer desvio |\n| **Desvio** entre os fragmentos (diástase) | **Maior que 3 mm** |\n| **Degrau articular** (incongruência) | **Maior que 2 mm** |\n| **Fragmentos osteocondrais** soltos na articulação | Presentes |\n| Fratura **exposta** | Presente |\n\n**O tratamento conservador.** Fraturas **sem desvio** ou com desvio dentro dos limites e com o **aparelho extensor íntegro** (o paciente eleva a perna estendida) são tratadas com **imobilização em extensão** (órtese ou gesso cilíndrico) por cerca de 4 a 6 semanas, com carga permitida.\n\n**O tratamento cirúrgico.**\n- **Banda de tensão** com fios de Kirschner ou parafusos canulados: transforma a força de tração do quadríceps em **compressão** na face articular durante a flexão.\n- Placas de baixo perfil nas fraturas cominutivas.\n- **Patelectomia parcial** (com reinserção do tendão) nos fragmentos do polo inferior cominutivos e irreconstruíveis.\n- A **patelectomia total** é a última opção: reduz muito a força do quadríceps.\n- Sempre **reparar os retináculos**.",
@@ -5281,32 +5387,86 @@
   "conferido": false
  },
  "trauma-0419": {
+  "conceito": "**A coxa tem três compartimentos: anterior, medial ou adutor, e posterior.** A fáscia lata e os septos organizam esses espaços. A anatomia precisa ser separada da posição das incisões usadas para alcançá-los.\n\n| Compartimento | Conteúdo e função relevantes |\n|---|---|\n| Anterior | Quadríceps, sartório e nervo femoral; extensão do joelho |\n| Medial/adutor | Adutores e nervo obturatório |\n| Posterior | Isquiotibiais e nervo isquiático; flexão do joelho |\n\nUma incisão lateral pode liberar anterior e posterior; isso não cria um compartimento lateral. Se necessário, uma via medial alcança os adutores. Já a divisão em posteriores superficial e profundo pertence à perna, que tem quatro compartimentos, e não deve ser transportada para a coxa.\n\n**Leia “Coxa” e “Coxa, pé e braço” da fasciotomia, na Biblioteca.** Associe cada espaço ao grupo muscular e ao acesso, sem confundir mapa anatômico e estratégia de descompressão.",
+  "correta": "**B: anterior, medial e posterior.** Medial é a outra forma de nomear o compartimento adutor. São três espaços na descrição usada pelo capítulo.\n\nA via lateral é um caminho de acesso a mais de um deles, sem constituir um quarto compartimento.",
   "incorretas": {
-   "A": "**Não há lateral.** O tensor da fáscia lata é do grupo glúteo, e o trato iliotibial é fáscia; falta o compartimento posterior.",
-   "C": "**Padrão inexistente.** A coxa não tem compartimentos anteriores superficial e profundo nem lateral.",
-   "D": "**Lembra a perna.** Compartimentos posteriores superficial e profundo pertencem à perna, e não à coxa."
+   "A": "**Inclui anterior e medial corretamente, mas substitui posterior por lateral.** A lateralidade descreve a incisão que pode abrir anterior/posterior. O posterior existe como compartimento próprio, contendo isquiotibiais e nervo isquiático.",
+   "C": "**Divide o anterior em superficial/profundo e acrescenta lateral, configuração que a fonte não usa para a coxa.** O mapa é de três compartimentos, com um anterior e um posterior. Criar subdivisões sem essa correspondência dificulta localizar músculos e planejar a liberação.",
+   "D": "**Traz a divisão posterior superficial/profunda da perna para a coxa.** A coxa tem um posterior que contém os isquiotibiais; a perna divide os grupos posteriores em dois espaços. A semelhança de nomes não torna os dois mapas anatômicos iguais."
   },
-  "conceito": "**Os três compartimentos da coxa.** Diferente da perna (quatro compartimentos) e do antebraço, a coxa tem **três**. **Anterior**: **quadríceps** e **sartório**, inervados pelo **femoral**; estendem o joelho. **Medial**: **adutores** (longo, curto e magno), **grácil** e obturador externo, inervados pelo **obturatório**; aduzem o quadril. **Posterior**: **isquiotibiais** (semitendíneo, semimembranáceo e bíceps femoral), inervados pelo **isquiático**; estendem o quadril e fletem o joelho. Os septos intermusculares lateral e medial e a fáscia lata os delimitam.\n\n**Não existe compartimento lateral.** O **tensor da fáscia lata** pertence funcionalmente ao grupo **glúteo**, e o **trato iliotibial** é uma fáscia espessa, não um compartimento.\n\n**A síndrome compartimental da coxa.** É **rara**, porque os compartimentos são grandes e complacentes e se comunicam parcialmente com a pelve. Ocorre em **fraturas do fêmur** de alta energia, contusões graves, esmagamento, reperfusão após lesão vascular, uso de **calças antichoque** e hematomas em anticoagulados. O **anterior** é o mais acometido. Os sinais são os mesmos: dor desproporcional, dor ao estiramento passivo (flexão do joelho para o anterior), tensão e parestesia.\n\n**A fasciotomia.** Uma **incisão lateral** longa, da região trocantérica ao côndilo lateral, abre a fáscia lata e o compartimento **anterior**; atravessando o **septo intermuscular lateral**, alcança-se o **posterior**. O **medial** raramente precisa, e quando precisa, faz-se uma incisão medial separada.\n\n**Na prova:** a coxa tem compartimentos **anterior** (femoral), **medial** (obturatório) e **posterior** (isquiático); não há compartimento lateral.",
-  "correta": "**Anterior, medial e posterior.** São os três compartimentos da coxa, cada um com seu grupo muscular e seu nervo: femoral, obturatório e isquiático.",
+  "conferido": false,
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Os compartimentos de cada região",
+      "Fasciotomia"
+     ],
+     "blocos": [
+      "os-compartimentos-de-cada-regiao-eb26943e",
+      "os-compartimentos-de-cada-regiao-9ef07de3",
+      "fasciotomia-f734935c"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "d3f6dec0b02ea6962b6c84d0f81e3cf140d3e5688c995b21cbf0b91bfd2ed979"
+    }
+   ],
+   "questaoSha256": "602ecb42b28b7e9d5ee9f2a57f9eb8897b6ba0b23678a65fc848e3fb382c1c40",
+   "comentarioSha256": "658dfb085659ca91aca4472fed8587e22362196a023fe6e04b21ebb10e45d50e"
+  }
  },
  "trauma-0420": {
+  "conceito": "**Os compartimentos posteriores superficial e profundo da perna são liberados pelo acesso posteromedial na técnica de dupla incisão.** A pele é aberta cerca de 1 a 2 cm atrás da borda medial tibial, com ponte cutânea suficiente e cuidado com safenos e feixe tibial posterior.\n\nPrimeiro se abre o superficial e, afastando-o, alcança-se o profundo. A segunda liberação precisa ser confirmada, porque uma abertura superficial satisfatória não prova que a pressão profunda foi resolvida. O resumo favorece abrir os quatro compartimentos quando há indicação, avaliando a musculatura e desbridando o que não é viável.\n\nA via anterolateral, próxima da fíbula, responde pelos compartimentos anterior e lateral. Uma técnica de incisão única sem fibulectomia pode alcançar o profundo atrás da fíbula, mas isso é uma estratégia diferente, não motivo para trocar o acesso posteromedial da técnica mais usada pelo nome de outra via.\n\n**Na Biblioteca, leia “Perna: dupla incisão, quatro compartimentos”.** Localize a incisão em relação à borda tibial e acompanhe como ela passa do superficial ao profundo.",
+  "correta": "**D: posteromedial.** É o acesso que libera os dois posteriores na técnica de dupla incisão descrita. O profundo pode exigir exposição adicional, sem presumir liberação apenas por ter aberto o superficial.\n\nA identificação de estruturas em risco acompanha a descompressão completa.",
   "incorretas": {
-   "A": "O acesso anterolateral abre os compartimentos anterior e lateral.",
-   "B": "O acesso anteromedial, sobre a tíbia, não libera os compartimentos posteriores.",
-   "C": "O acesso posterolateral não é o padrão para os compartimentos posteriores."
+   "A": "**Anterolateral libera anterior e lateral.** É a incisão próxima ao septo junto da fíbula, com atenção ao fibular superficial. Trocar por ela deixa sem resposta o acesso aos dois posteriores solicitado.",
+   "B": "**A incisão da fonte fica posterior à borda medial tibial, não anterior.** A posição permite abordar os planos posteriores e respeitar a ponte cutânea e os perfurantes. “Medial” sozinho é insuficiente se o lado da borda foi invertido.",
+   "C": "**Posterolateral não é o acesso padrão pedido na dupla incisão.** O resumo menciona abrir o profundo junto à borda posterolateral da fíbula em uma técnica de incisão única, mas não confunde essa alternativa técnica com a via posteromedial que alcança superficial e profundo na operação usual."
   },
-  "conceito": "A **fasciotomia da perna** precisa abrir os **quatro compartimentos**. A técnica mais usada tem **duas incisões**:\n\n**incisão anterolateral**: cerca de 2 cm na frente da fíbula; abre o compartimento **anterior** e o **lateral**, de cada lado do septo intermuscular; cuidado com o **nervo fibular superficial**, que atravessa a fáscia no terço distal;\n\n**incisão posteromedial**: cerca de 2 cm atrás da borda medial da tíbia; abre o compartimento **posterior superficial** e, soltando o **sóleo** da tíbia, o **posterior profundo**; cuidado com a **veia safena** e o **nervo safeno**.\n\n**O erro mais comum**: não abrir o **posterior profundo**, escondido sob o sóleo. Ele contém o nervo tibial e os flexores profundos.\n\n**A alternativa**: a incisão **única** lateral, com ou sem ressecção da fíbula, usada em alguns centros.\n\n**Depois**: as feridas ficam **abertas**, com curativo ou terapia por pressão negativa, e são fechadas ou enxertadas em 3 a 7 dias.\n\n**Na prova**: os compartimentos posteriores superficial e profundo são descomprimidos pelo acesso **posteromedial**.",
-  "correta": "A incisão posteromedial abre o posterior superficial e, soltando o sóleo, o posterior profundo.",
+  "conferido": false,
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 27"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Fasciotomia"
+     ],
+     "blocos": [
+      "fasciotomia-f108fecb",
+      "fasciotomia-8b2413f2",
+      "fasciotomia-236fb661",
+      "fasciotomia-767d74b9",
+      "fasciotomia-8bb6fb73",
+      "fasciotomia-7e6b6436"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "1a7557290cc4c1922eb9f86816b796fca2b0b14e4b505969b024ec5ae45faa7e"
+    }
+   ],
+   "questaoSha256": "30e3c46b79150027c2e01e428f5d143824222670995927e4161085fe3961d6bd",
+   "comentarioSha256": "1f827afdb14254ddef4e1962db76e0c58f8b90b5296f0b515bef711bae533d06"
+  }
  },
  "trauma-0421": {
   "incorretas": {
@@ -5907,16 +6067,58 @@
   "conferido": false
  },
  "trauma-0482": {
+  "conceito": "**O compartimento tenar contém abdutor curto, flexor curto e oponente do polegar.** Entre as alternativas, o **abdutor curto do polegar** é o integrante correto. O adutor atua no mesmo dedo, mas tem compartimento próprio e não pode ser incluído no tenar apenas por essa proximidade funcional.\n\nA mão possui dez compartimentos na descrição consultada: tenar, hipotenar, adutor e sete interósseos. Conhecer o conteúdo evita confundir o conjunto de músculos intrínsecos da mão com um único espaço fascial. A pergunta não pede todos os músculos que participam do movimento dos dedos, mas um grupo anatômico específico.\n\nOs flexores profundos, por sua vez, pertencem ao plano profundo do antebraço, embora seus tendões transmitam movimento aos dedos. A localização do ventre muscular e o trajeto tendíneo não devem ser tratados como se todo tecido que move a mão estivesse dentro da região tenar.\n\n**Leia “Braço, antebraço e mão”, na Biblioteca, identificando o adutor separado do tenar.** Essa distinção explica a alternativa mais parecida e ajuda a planejar a avaliação dos espaços na síndrome da mão.",
+  "correta": "**B: abdutor curto do polegar.** É um dos três músculos tenares nomeados no resumo. O conjunto inclui também flexor curto e oponente, sem o adutor.\n\nA resposta depende do compartimento, não apenas de o músculo atuar no polegar ou estar relacionado à mão.",
   "incorretas": {
-   "A": "**Sem compartimento próprio.** Os lumbricais correm com os tendões flexores, na palma e no canal carpal.",
-   "C": "**Estão no antebraço.** Os ventres dos flexores profundos ficam no compartimento flexor profundo do antebraço.",
-   "D": "**Compartimento próprio.** O adutor do polegar tem compartimento separado e é inervado pelo ulnar.",
-   "E": "**Compartimentos próprios.** Os interósseos dorsais ocupam quatro compartimentos entre os metacarpos."
+   "A": "**Lumbricais não compõem a lista do compartimento tenar apresentada pela fonte.** O tenar reúne os três músculos específicos do polegar citados. Confundir o conjunto de músculos da mão com esse espaço delimitado inclui estruturas sem respeitar a divisão fascial.",
+   "C": "**Os flexores profundos dos dedos estão no plano profundo volar do antebraço.** Sua participação no movimento digital não coloca os ventres no tenar. A alternativa confunde ação transmitida à mão com localização do grupo muscular.",
+   "D": "**O adutor do polegar tem compartimento próprio.** A função no mesmo dedo cria uma semelhança útil como distrator, mas não altera o fato anatômico. Na avaliação dos dez espaços, adutor e tenar entram como unidades distintas.",
+   "E": "**Os interósseos dorsais constituem quatro compartimentos próprios.** Eles precisam ser lembrados na avaliação da mão, porém não integram o tenar. A contagem total depende justamente de não fundi-los com o grupo do polegar."
   },
-  "conceito": "**Os compartimentos da mão.** A mão tem **dez** compartimentos musculares: **tenar**, **hipotenar**, **adutor do polegar**, **quatro interósseos dorsais** e **três interósseos palmares**. A síndrome compartimental da mão ocorre em esmagamentos, fraturas múltiplas dos metacarpos, queimaduras, infiltração de soro ou contraste, picadas de cobra e compressão prolongada em pacientes inconscientes.\n\n**O compartimento tenar.** Contém os três músculos **tenares**: **abdutor curto do polegar**, **flexor curto do polegar** (cabeça superficial) e **oponente do polegar**, inervados pelo **ramo recorrente** (motor) do **mediano**. O **adutor do polegar** tem compartimento **próprio**, entre o primeiro e o terceiro metacarpos, e é inervado pelo **ulnar**. Os **lumbricais** não têm compartimento próprio: correm com os tendões flexores no **canal carpal** e na palma. Os **flexores profundos** ficam no **antebraço**.\n\n**O quadro.** Mão **edemaciada** e tensa, dor desproporcional, dedos em **posição intrínseca-minus** (MF estendida e IFs fletidas) e dor ao **estiramento passivo** dos intrínsecos: estender a MF e fletir as IFs. A parestesia é menos útil, porque os nervos da mão não atravessam os compartimentos.\n\n**A fasciotomia.** **Duas incisões dorsais** longitudinais, sobre o **segundo** e o **quarto** metacarpos, liberam os interósseos dorsais e palmares e o adutor. Uma incisão na borda **radial** do primeiro metacarpo libera o **tenar**, e outra na borda **ulnar** do quinto libera o **hipotenar**. Muitas vezes associa-se a **liberação do túnel do carpo**. Nos dedos, incisões mediolaterais, se necessário.\n\n**Na prova:** compartimento **tenar** = **abdutor curto**, flexor curto e oponente do polegar (ramo recorrente do mediano); o adutor tem compartimento próprio.",
-  "correta": "**O abdutor curto do polegar.** Faz parte do compartimento tenar, junto com o flexor curto e o oponente do polegar, os três inervados pelo ramo recorrente do mediano.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região.",
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: O antebraço como articulação: arco radial, forças e rotação."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Os compartimentos de cada região"
+     ],
+     "blocos": [
+      "os-compartimentos-de-cada-regiao-231bd2af"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+    },
+    {
+     "resumo": "rockwood10-42-diafise-radio-ulna",
+     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+     "secoes": [
+      "O antebraço como articulação: arco radial, forças e rotação"
+     ],
+     "blocos": [
+      "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+     ],
+     "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+     "trechosSha256": "f5455e517fad6a7e91a497a6bbb6f4dcd9580f56d9c5dab6024680d3a3d8ca4f"
+    }
+   ],
+   "questaoSha256": "4d0cb161ad288d0fd8d4a997b99ecec4b08e7f8ed3afe610cc997af93e22ef9d",
+   "comentarioSha256": "657a421f3519336b2b3643e97d374329abf02dafdfe163c6376cd1982cb9c6bf"
+  }
  },
  "trauma-0483": {
   "incorretas": {
@@ -8042,15 +8244,45 @@
   "conferido": false
  },
  "trauma-0767": {
+  "conceito": "**A síndrome compartimental da coxa envolve mais frequentemente o anterior.** O capítulo relaciona esse espaço ao quadríceps, sartório e nervo femoral. A localização ajuda a compreender dor à flexão passiva do joelho, fraqueza de extensão e alteração sensitiva associada ao nervo.\n\nO posterior contém isquiotibiais e nervo isquiático, enquanto o medial contém adutores e nervo obturatório. São regiões possíveis de doença, mas o adutor é raro e os casos posteriores não substituem o predomínio anterior da fonte. Frequência orienta onde suspeitar e monitorizar primeiro, sem excluir os demais.\n\nO acesso lateral pode descomprimir anterior e posterior e, quando necessário, uma incisão medial alcança adutores. Por isso, o nome do acesso não deve ser confundido com um “compartimento lateral” da coxa. O resumo também recomenda o cateter no anterior.\n\n**Na Biblioteca, leia “Coxa”, comparando o exame funcional de cada espaço com a tabela de monitorização.** A resposta ganha significado quando a anatomia explica o que se procura e o que se descomprime.",
+  "correta": "**C: anterior.** É o mais acometido segundo o resumo e o local recomendado para monitorização habitual. O conteúdo muscular e nervoso organiza o exame.\n\nEsse predomínio não autoriza desconsiderar sintomas que indiquem posterior ou adutor.",
   "incorretas": {
-   "A": "**Não existe.** A coxa não tem compartimento lateral.",
-   "B": "**Menos acometido.** O compartimento medial raramente desenvolve síndrome compartimental.",
-   "D": "**Menos acometido.** O posterior pode ser envolvido, mas com frequência menor que o anterior."
+   "A": "**Lateral não é um compartimento separado da coxa nessa classificação.** É a via que pode abrir anterior e posterior. A alternativa confunde o lugar da incisão com o espaço anatômico de maior risco.",
+   "B": "**Medial, ou adutor, é um espaço real e de acometimento raro na fonte.** Inclui adutores e nervo obturatório. Não corresponde à frequência predominante solicitada, embora possa exigir avaliação e liberação se estiver sob pressão.",
+   "D": "**Posterior também existe e pode ter síndrome, com isquiotibiais e nervo isquiático.** Seu padrão inclui dor ao estiramento em extensão do joelho e fraqueza de flexão. A possibilidade clínica não o torna o mais comum na comparação apresentada."
   },
-  "conceito": "**Os compartimentos da coxa.** São três, separados pela **fáscia lata** e pelos septos intermusculares. **Anterior**: **quadríceps** e sartório, com o nervo **femoral**. **Medial**: **adutores**, grácil e pectíneo, com o nervo **obturatório**. **Posterior**: **isquiotibiais**, com o nervo **isquiático**. Não existe compartimento lateral.\n\n**Por que é rara.** A síndrome compartimental da coxa é **muito menos comum** que a da perna: os compartimentos são **grandes**, a fáscia é mais **complacente** e há comunicação parcial com a pelve, o que permite acomodar um volume grande de sangue e edema antes que a pressão suba. Quando acontece, porém, costuma haver **muito músculo** envolvido, com risco de **rabdomiólise**, insuficiência renal e mortalidade elevada.\n\n**Por que o anterior.** O compartimento **anterior** é o mais frequentemente acometido: contém a **maior massa muscular** (o quadríceps), é o mais **superficial** e exposto a **trauma direto** (contusões, esmagamento), e recebe o **hematoma** da fratura do fêmur. Causas: fraturas do fêmur de alta energia, contusão grave do quadríceps (especialmente em anticoagulados), esmagamento, reperfusão após lesão vascular, uso de calça pneumática antichoque e posição prolongada.\n\n**Como tratar.** O diagnóstico segue os mesmos sinais (dor desproporcional, dor à flexão passiva do joelho, coxa tensa) e a medida da pressão se necessário. A **fasciotomia** é feita por uma **incisão lateral** longa, abrindo a fáscia lata e o compartimento **anterior**, e, pelo **septo intermuscular lateral**, o **posterior**. O **medial**, raramente envolvido, é aberto por incisão medial separada se preciso.\n\n**Na prova:** síndrome compartimental da coxa é **rara** e acomete mais o compartimento **anterior** (quadríceps); fasciotomia por incisão **lateral**.",
-  "correta": "**Anterior.** Tem a maior massa muscular, é o mais superficial e exposto a trauma direto, e recebe o hematoma da fratura do fêmur.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Medida da pressão e o delta P."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Os compartimentos de cada região",
+      "Fasciotomia",
+      "Medida da pressão e o delta P"
+     ],
+     "blocos": [
+      "os-compartimentos-de-cada-regiao-eb26943e",
+      "fasciotomia-f734935c",
+      "medida-da-pressao-e-o-delta-p-6e9747e1"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
+    }
+   ],
+   "questaoSha256": "8a6b4836b1973ff745248b5a518b605ed4ba7cf19a76bf3ed12d51796c7cfdb5",
+   "comentarioSha256": "d172c6acc7112f7257e2602080331cc0970fd464a1a28465812d7663f5ecb3e6"
+  }
  },
  "trauma-0768": {
   "conceito": "**A fratura da clavícula.** É uma das fraturas mais comuns do adulto jovem, quase sempre no **terço médio** (cerca de 80%), onde a clavícula é mais fina e muda de curvatura, e não há inserções musculares ou ligamentares que a reforcem. O mecanismo típico é a **queda sobre o ombro**.\n\n**As forças sobre os fragmentos.**\n\n| Fragmento | Força | Desvio |\n|---|---|---|\n| **Medial** | **Esternocleidomastóideo** (porção clavicular) | Para **cima** (superior) e para trás |\n| **Lateral** | **Peso do membro superior** (gravidade) | Para **baixo** (inferior) |\n| Lateral | **Peitoral maior** e latíssimo do dorso | **Medialização** (encurtamento) e **rotação anterior** (interna) |\n\n**O resultado.** O fragmento **lateral** cai (**translação inferior**), se aproxima do medial (**encurtamento**) e **roda para a frente** (rotação anterior, com o ombro \"caído\" para a frente e para dentro). O fragmento medial fica alto. Por isso, a deformidade típica é o ombro **caído, encurtado e anteriorizado**, com a ponta do fragmento medial empurrando a pele de baixo para cima.\n\n**Quando operar.** A maioria é tratada com **tipoia**. As indicações de cirurgia incluem:\n- fratura **exposta** ou pele ameaçada (tenda cutânea);\n- lesão **vascular** ou neurológica;\n- **encurtamento** importante (mais de cerca de **2 cm**) ou desvio completo (sem contato entre os fragmentos), sobretudo em pacientes ativos, pelo maior risco de **pseudoartrose** e de alterações funcionais e estéticas;\n- **ombro flutuante** e politraumatizados.\n\n**As opções.** **Placa** (superior ou anteroinferior) ou haste intramedular. A placa anteroinferior reduz a irritação da pele e o risco às estruturas subclávias.\n\n**As estruturas em risco.** Abaixo da clavícula passam a **artéria e a veia subclávias** e o **plexo braquial**. Na cirurgia, a broca deve ser controlada para não atravessar a cortical inferior em direção a esses vasos.",
@@ -10643,18 +10875,46 @@
   "conferido": false
  },
  "trauma-0983": {
+  "conceito": "**O paciente inconsciente não fornece um exame doloroso confiável, e a fratura segmentar com esmagamento exige vigilância objetiva.** O anterior é o compartimento mais frequentemente acometido da perna e o local habitual do cateter. Por isso, o par é **anterior e anterior**.\n\nO resumo destaca que a pressão pode subir antes dos sinais clínicos. Em risco elevado e consciência rebaixada, monitorizar continuamente permite acompanhar a tendência e o delta P, documentando a pressão arterial. Pulso presente não garante perfusão muscular e não substitui essa vigilância.\n\nO anterior e o lateral podem variar juntos, e estudos citados mostram que elevação posterior pode aparecer na leitura anterior. Se houver suspeita de um profundo não explicado pela medida, ele também deve ser avaliado. A ponta é colocada a até 5 cm do foco para captar o pico, com atenção à técnica; não se deve medir um local distante e presumir que represente todo o segmento.\n\n**Leia “Onde colocar o cateter” e “Clínica ou monitorização?”, na Biblioteca.** O Glasgow 3 é decisivo para entender por que não se pode depender de dor relatada ou de esperar parestesia.",
+  "correta": "**A: anterior e anterior.** O primeiro termo identifica o padrão mais comum e o segundo o espaço de monitorização recomendado. A escolha se ajusta à impossibilidade de obter um exame clínico confiável no caso.\n\nA interpretação acompanha tendência, pressão arterial e eventuais sinais de outro compartimento, sem transformar um único sensor em garantia absoluta.",
   "incorretas": {
-   "B": "**Local errado.** O compartimento mais acometido é o anterior, e o cateter deve ficar nele.",
-   "C": "**Compartimento errado.** O lateral é menos acometido que o anterior.",
-   "D": "**Os dois errados.** Nem o lateral é o mais acometido, nem o cateter vai no posterior como padrão."
+   "B": "**Acerta o mais acometido, mas desloca o cateter de rotina para posterior.** O resumo indica anterior, reservando investigação profunda dirigida quando o quadro a sugerir. O enunciado não oferece uma localização posterior específica para substituir a recomendação habitual.",
+   "C": "**O cateter anterior está correto, mas o lateral foi colocado como o mais comum.** A proximidade e a variação conjunta de pressão não apagam a predominância anterior descrita. O par precisa manter tanto o risco anatômico quanto a recomendação de medida.",
+   "D": "**Troca a predominância para lateral e a medida habitual para posterior.** Nenhuma das duas partes reproduz o algoritmo apresentado. A possibilidade de outros espaços estarem envolvidos exige avaliação, mas não redefine a combinação inicial da fonte."
   },
-  "conceito": "**Quando a clínica não ajuda.** O diagnóstico da **síndrome compartimental** é clínico e depende de sinais **subjetivos**: dor desproporcional, dor ao estiramento passivo, parestesia. Num paciente com **Glasgow 3**, intubado, sedado ou com bloqueio regional, nada disso pode ser avaliado. Nesses pacientes, a **medida da pressão** intracompartimental é **obrigatória** quando há suspeita, e a **monitorização contínua** é recomendada nos de alto risco.\n\n**O compartimento mais acometido.** Na perna, os quatro compartimentos são o **anterior** (tibial anterior, extensores, **nervo fibular profundo**), o **lateral** (fibulares, fibular superficial), o **posterior superficial** (gastrocnêmio e sóleo) e o **posterior profundo** (tibial posterior, flexores longos, nervo tibial). O **anterior** é o **mais frequentemente** envolvido e o que atinge as **maiores pressões**: tem paredes rígidas (tíbia, fíbula, membrana interóssea e fáscia espessa) e pouca complacência. O **posterior profundo** também é muito acometido e pode ser subestimado.\n\n**Onde colocar o cateter.** No compartimento **anterior**, a até cerca de **5 cm** do **foco da fratura**, onde a pressão é **mais alta**. Se houver dúvida, medir também o **posterior profundo**. O critério de fasciotomia é o **delta P** (pressão diastólica menos pressão do compartimento) **menor que 30 mmHg**; lembrar de usar a diastólica **pré-anestésica** se o paciente estiver no centro cirúrgico.\n\n**A fasciotomia.** Duas incisões, **lateral** (anterior e lateral) e **medial** (posterior superficial e profundo), com fechamento tardio ou enxerto. Numa fratura segmentar da tíbia por esmagamento, o risco é alto, e o limiar para descomprimir deve ser **baixo**.\n\n**Na prova:** na perna, o compartimento mais envolvido é o **anterior**, e o cateter vai no **anterior**, a até 5 cm da fratura; delta P menor que 30 mmHg indica fasciotomia.",
-  "correta": "**Anterior e anterior.** O compartimento anterior é o mais acometido e o de maior pressão, e é nele que se coloca o cateter, próximo ao foco da fratura.",
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 17"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Quem tem síndrome compartimental."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-17-sindrome-compartimental",
+     "titulo": "Síndrome compartimental aguda",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+     "secoes": [
+      "Medida da pressão e o delta P",
+      "Quem tem síndrome compartimental"
+     ],
+     "blocos": [
+      "medida-da-pressao-e-o-delta-p-13e06142",
+      "quem-tem-sindrome-compartimental-c9e21614",
+      "medida-da-pressao-e-o-delta-p-491de05b",
+      "medida-da-pressao-e-o-delta-p-44efd7f7",
+      "medida-da-pressao-e-o-delta-p-6e9747e1"
+     ],
+     "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+     "trechosSha256": "b4d5c5d7f13430fb4bcd3d88d989d093e818f470ca38538b650403b5eb3277cd"
+    }
+   ],
+   "questaoSha256": "1a71531d7310853c3d477ebbfc4d62006d8fa4030585e4cd5b8bc7e6335d4c5b",
+   "comentarioSha256": "25825e4aec14889a304e6ab8b3c0de05995e0c74470a8547a3179111b6773dbc"
+  }
  },
  "trauma-0984": {
   "incorretas": {

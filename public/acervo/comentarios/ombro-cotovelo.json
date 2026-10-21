@@ -1627,20 +1627,46 @@
   "conferido": false
  },
  "ombro-cotovelo-0120": {
+  "conceito": "**A seta aponta o ramo nervoso profundo exposto na região do supinador no acesso de Thompson: o interósseo posterior.** A imagem deve ser relacionada ao campo: há dissecção posterolateral proximal, e o nervo acompanha a região muscular que envolve o rádio. Ela não mostra um trajeto sensitivo superficial isolado junto da pele.\n\nO resumo descreve Thompson entre extensor radial curto e extensor dos dedos no proximal. Para expor cabeça e colo, recomenda abrir cuidadosamente a fáscia do supinador e identificar o interósseo posterior; uma faixa de gordura costuma acompanhá-lo. O nervo é uma estrutura crítica de proteção nesse plano, não apenas um nome a reconhecer na figura.\n\nO ramo superficial do radial acompanha o braquiorradial na descrição da via anterior. Já o interósseo posterior é o ramo motor que a fonte destaca nas paralisias da cirurgia do rádio proximal. Essa diferença entre ramo sensitivo e motor ajuda a evitar trocar o nervo apenas porque ambos se originam do território radial.\n\n**Leia “Rádio por trás: Thompson” e “O nervo da cirurgia”, na Biblioteca.** Acompanhe intervalo, supinador e ramo motor, usando a posição da seta e o plano da exposição como evidência conjunta.",
+  "correta": "**C: interósseo posterior.** A estrutura assinalada corresponde ao nervo profundo relacionado ao supinador no campo de Thompson descrito. Sua identificação e proteção são necessárias quando a exposição alcança cabeça e colo radiais.\n\nO diagnóstico na figura vem do plano e do trajeto mostrados, não de presumir qual nervo costuma ser cobrado.",
   "incorretas": {
-   "A": "**Nervo do compartimento anterior.** O mediano corre na face volar do antebraço, entre o flexor superficial e o profundo, e é relevante nas vias anteriores, não no acesso dorsal.",
-   "B": "**Superficial e mais distal.** O ramo sensitivo do radial desce sob o braquiorradial e emerge no terço distal do antebraço; não é a estrutura profunda do supinador.",
-   "D": "**Via anterior do cotovelo.** O cutâneo lateral do antebraço sai lateral ao tendão do bíceps e é lembrado na via anterior e no reparo do bíceps distal."
+   "A": "**Mediano é relacionado aos grupos motores volares, não ao ramo profundo do supinador nesta exposição posterolateral.** A fonte descreve a anatomia anterior e o interósseo posterior no campo de Thompson. Escolher mediano ignora o plano cirúrgico e a relação representada pela seta.",
+   "B": "**O ramo sensitivo radial é superficial e acompanha o braquiorradial na via anterior descrita.** Ele não deve ser confundido com o ramo motor profundo identificado no supinador. O parentesco no sistema radial não torna os dois trajetos intercambiáveis.",
+   "D": "**A alternativa nomeia um nervo cutâneo, enquanto a seta e o contexto de Thompson correspondem ao ramo motor profundo descrito no supinador.** A distinção relevante é plano e função, sem atribuir ao desenho um trajeto superficial que ele não mostra. A fonte identifica o interósseo posterior como a estrutura crítica nessa etapa da exposição."
   },
-  "conceito": "**O acesso de Thompson.** É a via **dorsal** para o rádio proximal e médio. O intervalo superficial fica entre o **extensor radial curto do carpo** (inervado pelo radial) e o **extensor comum dos dedos** (inervado pelo interósseo posterior). No terço proximal, o rádio está coberto pelo **supinador**, e dentro dele passa o **nervo interósseo posterior**, que é a estrutura crítica do acesso.\n\n**O trajeto do interósseo posterior.** O nervo radial se divide perto da cabeça do rádio em ramo **superficial**, sensitivo, e ramo **profundo**, motor. O ramo profundo entra no supinador pela **arcada de Frohse**, atravessa o músculo contornando o colo do rádio e sai no dorso do antebraço como **interósseo posterior**, inervando os extensores dos dedos, do polegar e o extensor ulnar do carpo. No acesso de Thompson, ele deve ser **identificado dentro do supinador** e protegido antes de desinserir o músculo do rádio; muitos autores o localizam pela saída na borda distal do supinador e o seguem para proximal.\n\n**O que acontece se lesar.** Paralisia da extensão dos dedos e do polegar, com o punho ainda estendendo, mas em desvio radial (o extensor radial longo, inervado antes, é preservado), e **sem perda sensitiva**, porque o ramo sensitivo é o superficial.\n\n**Os outros acessos e seus nervos.** Na via **anterior de Henry**, entre o braquiorradial e o flexor radial do carpo (distal) ou o pronador redondo (proximal), o risco é o ramo superficial do radial e, profundamente, o interósseo posterior, protegido ao se desinserir o supinador com o antebraço em supinação. Na via de **Kocher**, entre o ancôneo e o extensor ulnar do carpo, a pronação afasta o interósseo posterior. O **cutâneo lateral do antebraço** emerge lateral ao tendão do bíceps e é lembrado na via anterior do cotovelo.\n\n**Na prova:** no acesso de **Thompson**, a estrutura a proteger dentro do supinador é o **nervo interósseo posterior**.",
-  "correta": "**Interósseo posterior.** É o ramo motor profundo do radial que atravessa o supinador sobre o rádio proximal, o principal risco neurológico do acesso dorsal de Thompson.",
+  "conferido": false,
   "referencias": [
-   "Variations in posterior interosseous nerve relations in Thompson approach. https://pmc.ncbi.nlm.nih.gov/articles/PMC3004093/",
-   "Forearm fractures: surgical approaches. https://www.ncbi.nlm.nih.gov/books/NBK574580/",
-   "Comprehensive review of surgical approaches to the elbow. https://pmc.ncbi.nlm.nih.gov/articles/PMC8254122/"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Vias de acesso e o nervo interósseo posterior; O antebraço como articulação: arco radial, forças e rotação."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-42-diafise-radio-ulna",
+     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+     "secoes": [
+      "Vias de acesso e o nervo interósseo posterior",
+      "O antebraço como articulação: arco radial, forças e rotação"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+      "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
+     ],
+     "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+     "trechosSha256": "16fbc2fa646ba91dbd325305f028ae19995cd638cff62cb69fdf888632274fac"
+    }
+   ],
+   "questaoSha256": "800c8efb239c1bdcc47f27f165d053fc2a59b47267fba8217270cefd342aeaff",
+   "comentarioSha256": "e334052f3385f8320f7874e7f9468b4cea9d987d21ee23265ba79da1a3f1f6d7"
+  }
  },
  "ombro-cotovelo-0121": {
   "incorretas": {
