@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1815,
+  "pendente": 1800,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 25,
   "pendente-inspecao-imagem": 181,
-  "revisada": 221
+  "revisada": 236
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -275,20 +275,20 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
    "estados": {
-    "pendente": 47,
+    "pendente": 32,
     "pendente-fonte": 4,
     "pendente-inspecao-imagem": 4,
-    "revisada": 50
+    "revisada": 65
    }
   },
   "rockwoodcriancas9-16-condilo-lateral": {
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 29,
+    "pendente": 22,
     "pendente-fonte": 4,
     "pendente-inspecao-imagem": 3,
-    "revisada": 51
+    "revisada": 58
    }
   },
   "rockwoodcriancas9-17-fise-distal-umero": {
@@ -23288,36 +23288,17 @@
        "Nervos e artéria na luxação"
       ],
       "blocos": [
-       "nervos-e-arteria-na-luxacao-91694afa",
-       "nervos-e-arteria-na-luxacao-8f5697da",
-       "nervos-e-arteria-na-luxacao-76444fa1",
-       "nervos-e-arteria-na-luxacao-927e9cfe",
-       "nervos-e-arteria-na-luxacao-9349ac14",
        "nervos-e-arteria-na-luxacao-604ccf7b",
+       "nervos-e-arteria-na-luxacao-9349ac14",
        "nervos-e-arteria-na-luxacao-fc98dd47",
-       "nervos-e-arteria-na-luxacao-e700fa85",
-       "nervos-e-arteria-na-luxacao-ec1544ad",
-       "nervos-e-arteria-na-luxacao-9e68675a",
-       "nervos-e-arteria-na-luxacao-741159f4",
-       "nervos-e-arteria-na-luxacao-c322ab8d",
-       "nervos-e-arteria-na-luxacao-343dad3b",
-       "nervos-e-arteria-na-luxacao-11998181",
-       "nervos-e-arteria-na-luxacao-5b7dad41",
-       "nervos-e-arteria-na-luxacao-dd8d287c",
-       "nervos-e-arteria-na-luxacao-877e7582",
-       "nervos-e-arteria-na-luxacao-180f56e0",
-       "nervos-e-arteria-na-luxacao-9c67a51e",
-       "nervos-e-arteria-na-luxacao-72056999",
-       "nervos-e-arteria-na-luxacao-7c77727a",
-       "nervos-e-arteria-na-luxacao-584aebf5",
-       "nervos-e-arteria-na-luxacao-0d677891"
+       "nervos-e-arteria-na-luxacao-343dad3b"
       ],
       "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
-      "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
+      "trechosSha256": "d2d808de1164354296b7f61e20b0bfaf86d04229cee4317384f91dcc538c651f"
      }
     ],
     "questaoSha256": "f0c0e1facfde3b3b91a24ffa7e0c8f54a8e94869eccbff738776acf531b5d5c3",
-    "comentarioSha256": "659d9622abc300840470c5e4db5574d7c024ab6de57e97b0188d7ab782745e65"
+    "comentarioSha256": "2fdb8ebc723fcd9420a77c0d49e1453dda196cf254a563dfbf47e3c0758ea5f6"
    }
   },
   "pediatria-0554": {
@@ -23491,64 +23472,28 @@
       "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
       "secoes": [
        "Luxação do cotovelo na criança: quem, quando e o que vem junto",
-       "Fratura do epicôndilo medial: diagnóstico e encarceramento"
+       "O epicôndilo medial: anatomia, ossificação e estabilidade",
+       "Fratura do epicôndilo medial: diagnóstico e encarceramento",
+       "Complicações da luxação",
+       "Mecanismo e exame da luxação posterior"
       ],
       "blocos": [
-       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-66a266fa",
-       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-46ce9cd3",
-       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-d2370a7b",
-       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-bcae8f6d",
-       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-0456e1ef",
        "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-f8e278f6",
+       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-0456e1ef",
        "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-ecf7483c",
-       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-89370dc1",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-140ea056",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-8d9f3860",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-0743b53e",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-7e9542af",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-7727c46b",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-ae4d1c25",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-5fe2aae3",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-29fe6eb7",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-0a789f86",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-2f0d36af",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-c60ebc08",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-468a30dd",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-b9ebdfe7",
        "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-5af08218",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-3fc9484a",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-8102296a",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-02937e66",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-721e8535",
-       "fratura-do-epicondilo-medial-diagnostico-e-encar-5e596305"
-      ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
-      "trechosSha256": "bd25cc72f8407b10ee22af5eede2dfba60ee8bbaece982bf24e93b5589611def"
-     },
-     {
-      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
-      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
-      "livro": "Rockwood and Wilkins' Fractures in Children",
-      "edicao": "9ª edição",
-      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
-      "secoes": [
-       "Complicações da luxação"
-      ],
-      "blocos": [
-       "complicacoes-da-luxacao-ff7dbd8d",
-       "complicacoes-da-luxacao-5ea1bd50",
-       "complicacoes-da-luxacao-5d81c720",
        "complicacoes-da-luxacao-64c88bd1",
-       "complicacoes-da-luxacao-55d9fe24",
-       "complicacoes-da-luxacao-67e5b8cf",
-       "complicacoes-da-luxacao-fc9081c6",
-       "complicacoes-da-luxacao-af0c8cc0"
+       "mecanismo-e-exame-da-luxacao-posterior-a935d2bf"
       ],
       "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
-      "trechosSha256": "2497eabaee4d5869c1e0be48c954563d373d0a84fabad95c2a98cd89b45faa26"
+      "trechosSha256": "cf2fd3c9a507497dd332fb8765d8416e5300f72ae6790fa5cc7d0d997822e3a1"
      }
     ],
     "questaoSha256": "27da32ba72eecb249277f70ce38267c283bf8b4074e6863ce35c1c108ad5bac5",
-    "comentarioSha256": "5fca3866175d6f5e208c7797d36a906fcac40aa87e1b1c7e25150ee160b95b72"
+    "comentarioSha256": "03c3d72fa2f5b159daa3c23d74af214acf451b849a9ebea791b986ed2d31e172"
    }
   },
   "pediatria-0574": {
@@ -23667,39 +23612,40 @@
       "edicao": "9ª edição",
       "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
       "secoes": [
-       "Nervos e artéria na luxação"
+       "Nervos e artéria na luxação",
+       "Fratura do epicôndilo medial: indicações, técnica e complicações"
       ],
       "blocos": [
-       "nervos-e-arteria-na-luxacao-91694afa",
-       "nervos-e-arteria-na-luxacao-8f5697da",
-       "nervos-e-arteria-na-luxacao-76444fa1",
-       "nervos-e-arteria-na-luxacao-927e9cfe",
        "nervos-e-arteria-na-luxacao-9349ac14",
-       "nervos-e-arteria-na-luxacao-604ccf7b",
+       "nervos-e-arteria-na-luxacao-927e9cfe",
        "nervos-e-arteria-na-luxacao-fc98dd47",
-       "nervos-e-arteria-na-luxacao-e700fa85",
-       "nervos-e-arteria-na-luxacao-ec1544ad",
-       "nervos-e-arteria-na-luxacao-9e68675a",
-       "nervos-e-arteria-na-luxacao-741159f4",
+       "nervos-e-arteria-na-luxacao-604ccf7b",
        "nervos-e-arteria-na-luxacao-c322ab8d",
        "nervos-e-arteria-na-luxacao-343dad3b",
-       "nervos-e-arteria-na-luxacao-11998181",
-       "nervos-e-arteria-na-luxacao-5b7dad41",
-       "nervos-e-arteria-na-luxacao-dd8d287c",
-       "nervos-e-arteria-na-luxacao-877e7582",
-       "nervos-e-arteria-na-luxacao-180f56e0",
-       "nervos-e-arteria-na-luxacao-9c67a51e",
-       "nervos-e-arteria-na-luxacao-72056999",
-       "nervos-e-arteria-na-luxacao-7c77727a",
-       "nervos-e-arteria-na-luxacao-584aebf5",
-       "nervos-e-arteria-na-luxacao-0d677891"
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--b2dabb8f"
       ],
       "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
-      "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
+      "trechosSha256": "d066bc439a1d8838a1fb73aadb64add1ba4b8e6e67022b81cd2a6620fcb89329"
+     },
+     {
+      "resumo": "rockwoodcriancas9-13-supracondiliana",
+      "titulo": "Fratura supracondiliana do úmero na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+      "secoes": [
+       "Lesões nervosas: frequência, exame e conduta"
+      ],
+      "blocos": [
+       "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
+       "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31"
+      ],
+      "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+      "trechosSha256": "33d68b8289729a2af1bea316f59547b687da56f48de70517be45d3bb734c5c3e"
      }
     ],
     "questaoSha256": "2b76cc82dd9e1cb65be568b517e45b3eb958e9b2204c1017722e0ce7a2a93d64",
-    "comentarioSha256": "d7d18e23472e86b835b05587be2fb1270c04f4338ca8ed189fad89bc0118b6d3"
+    "comentarioSha256": "c0b34eecb607fd1560aebc81285ccc94c6b24b9a78974073fc446d22058b59ee"
    }
   },
   "pediatria-0592": {
@@ -24665,51 +24611,25 @@
       "edicao": "9ª edição",
       "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
       "secoes": [
-       "Pronação dolorosa (cotovelo da babá)"
+       "Pronação dolorosa (cotovelo da babá)",
+       "O epicôndilo medial: anatomia, ossificação e estabilidade"
       ],
       "blocos": [
        "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
-       "pronacao-dolorosa-cotovelo-da-baba-b699a01e",
-       "pronacao-dolorosa-cotovelo-da-baba-d278b922",
-       "pronacao-dolorosa-cotovelo-da-baba-187884c5",
-       "pronacao-dolorosa-cotovelo-da-baba-b2ef5f88",
-       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
-       "pronacao-dolorosa-cotovelo-da-baba-e5dfc9bd",
        "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
-       "pronacao-dolorosa-cotovelo-da-baba-709a83e2",
-       "pronacao-dolorosa-cotovelo-da-baba-392fc59e",
-       "pronacao-dolorosa-cotovelo-da-baba-b817dedc",
+       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
        "pronacao-dolorosa-cotovelo-da-baba-ab653109",
-       "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
-       "pronacao-dolorosa-cotovelo-da-baba-077fb00d",
-       "pronacao-dolorosa-cotovelo-da-baba-e56e735f",
        "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
-       "pronacao-dolorosa-cotovelo-da-baba-aac221f7",
-       "pronacao-dolorosa-cotovelo-da-baba-9aaaee4e",
-       "pronacao-dolorosa-cotovelo-da-baba-379369a7",
-       "pronacao-dolorosa-cotovelo-da-baba-2a30365e",
-       "pronacao-dolorosa-cotovelo-da-baba-248c5465",
-       "pronacao-dolorosa-cotovelo-da-baba-e4165878",
-       "pronacao-dolorosa-cotovelo-da-baba-e2eb66b2",
-       "pronacao-dolorosa-cotovelo-da-baba-14e1a039",
        "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
        "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
-       "pronacao-dolorosa-cotovelo-da-baba-74eefc00",
-       "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
-       "pronacao-dolorosa-cotovelo-da-baba-3889fec1",
-       "pronacao-dolorosa-cotovelo-da-baba-a9402b9c",
-       "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
-       "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
-       "pronacao-dolorosa-cotovelo-da-baba-9e3ca770",
-       "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
-       "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-942055c0"
       ],
       "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
-      "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
+      "trechosSha256": "39134a38922d50af27484ca7f4805ba2198bedf2bc68bba5b7aab05ed12a8c8e"
      }
     ],
     "questaoSha256": "5c282019525d47d7f3532f5fc181bbc40bc179ce740b95884b725a11a4b445e3",
-    "comentarioSha256": "ad78783bb0f98f985670a68f91aa3b871e36b694e9698ce420797525f164277d"
+    "comentarioSha256": "e6ee843b46e3452a8eaaffd3f52492816f6cd177db3c78993ad412d86c9c57de"
    }
   },
   "pediatria-0652": {
@@ -27096,7 +27016,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -27112,7 +27032,34 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "747922426d52fe797d019be43cb56986753f278a39d34c93b6a482058bb428c5"
+   "questaoSha256": "747922426d52fe797d019be43cb56986753f278a39d34c93b6a482058bb428c5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Pronação dolorosa (cotovelo da babá)"
+      ],
+      "blocos": [
+       "pronacao-dolorosa-cotovelo-da-baba-d278b922",
+       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+       "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+       "pronacao-dolorosa-cotovelo-da-baba-d39868a6"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "b473611f12fc10329f3eb1ac4d476f80b1b1a2ad9827c51c65bef613bfccc7bf"
+     }
+    ],
+    "questaoSha256": "747922426d52fe797d019be43cb56986753f278a39d34c93b6a482058bb428c5",
+    "comentarioSha256": "c9c480f1e3a0b89bcf93bc7a9288a1033f78113698533506307cc3c3e5c44379"
+   }
   },
   "pediatria-0816": {
    "tema": "pediatria",
@@ -27958,48 +27905,19 @@
        "Pronação dolorosa (cotovelo da babá)"
       ],
       "blocos": [
-       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
-       "pronacao-dolorosa-cotovelo-da-baba-b699a01e",
-       "pronacao-dolorosa-cotovelo-da-baba-d278b922",
-       "pronacao-dolorosa-cotovelo-da-baba-187884c5",
-       "pronacao-dolorosa-cotovelo-da-baba-b2ef5f88",
-       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
-       "pronacao-dolorosa-cotovelo-da-baba-e5dfc9bd",
        "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
-       "pronacao-dolorosa-cotovelo-da-baba-709a83e2",
-       "pronacao-dolorosa-cotovelo-da-baba-392fc59e",
-       "pronacao-dolorosa-cotovelo-da-baba-b817dedc",
+       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
        "pronacao-dolorosa-cotovelo-da-baba-ab653109",
-       "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
-       "pronacao-dolorosa-cotovelo-da-baba-077fb00d",
-       "pronacao-dolorosa-cotovelo-da-baba-e56e735f",
-       "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
-       "pronacao-dolorosa-cotovelo-da-baba-aac221f7",
-       "pronacao-dolorosa-cotovelo-da-baba-9aaaee4e",
-       "pronacao-dolorosa-cotovelo-da-baba-379369a7",
-       "pronacao-dolorosa-cotovelo-da-baba-2a30365e",
-       "pronacao-dolorosa-cotovelo-da-baba-248c5465",
-       "pronacao-dolorosa-cotovelo-da-baba-e4165878",
-       "pronacao-dolorosa-cotovelo-da-baba-e2eb66b2",
-       "pronacao-dolorosa-cotovelo-da-baba-14e1a039",
        "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
-       "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
-       "pronacao-dolorosa-cotovelo-da-baba-74eefc00",
-       "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
-       "pronacao-dolorosa-cotovelo-da-baba-3889fec1",
-       "pronacao-dolorosa-cotovelo-da-baba-a9402b9c",
-       "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
-       "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
-       "pronacao-dolorosa-cotovelo-da-baba-9e3ca770",
-       "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
-       "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
+       "pronacao-dolorosa-cotovelo-da-baba-570ea5eb"
       ],
       "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
-      "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
+      "trechosSha256": "bc9995e83eefe59e59f97dca140d9667e3e396d829b1845acf54353619673b63"
      }
     ],
     "questaoSha256": "f1c37d63ecd1420ed9eee009a7b992f1a54e84e87adc4415da88c1eafb4e3375",
-    "comentarioSha256": "1bf287259c26b063c787874cd9d824976593bafa27354184969bcec114ec401e"
+    "comentarioSha256": "820a7f9ded636c2af154292816a7da1c6a47610f1b7207bfe28f135a85c9f157"
    }
   },
   "pediatria-0909": {
@@ -28042,7 +27960,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28057,7 +27975,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "30a140558ae22c0fe85aa59079f6fddb0b454ee191c9a27f25a8324cda399348"
+   "questaoSha256": "30a140558ae22c0fe85aa59079f6fddb0b454ee191c9a27f25a8324cda399348",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Pronação dolorosa (cotovelo da babá)"
+      ],
+      "blocos": [
+       "pronacao-dolorosa-cotovelo-da-baba-ab653109",
+       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+       "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+       "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
+       "pronacao-dolorosa-cotovelo-da-baba-7c96573d"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "35e431653e5f3b41097bf01118938a85cb8612131c302516ed9baefb2a7286b7"
+     }
+    ],
+    "questaoSha256": "30a140558ae22c0fe85aa59079f6fddb0b454ee191c9a27f25a8324cda399348",
+    "comentarioSha256": "91f695bf913c136e99f623cb44b721bb6dffa518fd2a32db6e1f1d20e2754f79"
+   }
   },
   "pediatria-0912": {
    "tema": "pediatria",
@@ -28626,7 +28571,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28642,7 +28587,39 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "24fcaf2e4842761bbb3684c75db9b7d5f13137034729f843ebdcb0326598264b"
+   "questaoSha256": "24fcaf2e4842761bbb3684c75db9b7d5f13137034729f843ebdcb0326598264b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Fratura do epicôndilo medial: indicações, técnica e complicações",
+       "Fratura do epicôndilo medial: diagnóstico e encarceramento",
+       "O epicôndilo medial: anatomia, ossificação e estabilidade"
+      ],
+      "blocos": [
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--1e620ff2",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--afc1cf60",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--4dd3bb40",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--898db186",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--a8d00bff",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-3fc9484a",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-c60ebc08"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "ff890f6e688240535b0d32c1c1ac185e9efed6a18c9a2ac337ea56b75b545a7e"
+     }
+    ],
+    "questaoSha256": "24fcaf2e4842761bbb3684c75db9b7d5f13137034729f843ebdcb0326598264b",
+    "comentarioSha256": "127cf2f4e2a6abb4f3bc6b2ca39e37811ccabee7c98f9812f3d3ea9ccfb7597f"
+   }
   },
   "pediatria-0944": {
    "tema": "pediatria",
@@ -28824,7 +28801,7 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -28839,7 +28816,40 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "890b9e5806454c6df841db42bda8fd182884b699e3f3fa1ffbd93cca86fbd33a"
+   "questaoSha256": "890b9e5806454c6df841db42bda8fd182884b699e3f3fa1ffbd93cca86fbd33a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Complicações da luxação",
+       "Redução e cuidados depois da redução",
+       "Nervos e artéria na luxação"
+      ],
+      "blocos": [
+       "complicacoes-da-luxacao-ff7dbd8d",
+       "complicacoes-da-luxacao-5ea1bd50",
+       "reducao-e-cuidados-depois-da-reducao-9ae6940c",
+       "reducao-e-cuidados-depois-da-reducao-e9a37fb3",
+       "nervos-e-arteria-na-luxacao-9349ac14",
+       "nervos-e-arteria-na-luxacao-fc98dd47",
+       "nervos-e-arteria-na-luxacao-343dad3b",
+       "nervos-e-arteria-na-luxacao-877e7582",
+       "nervos-e-arteria-na-luxacao-180f56e0"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "658982595b816263ef16f697edd6c6b757567db49d9bba00a25362a6bcae6511"
+     }
+    ],
+    "questaoSha256": "890b9e5806454c6df841db42bda8fd182884b699e3f3fa1ffbd93cca86fbd33a",
+    "comentarioSha256": "8ccd9ef0f37345b51145c3558079133890635f9672757ed6e8910f0256cff669"
+   }
   },
   "pediatria-0959": {
    "tema": "pediatria",
@@ -34076,7 +34086,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34092,7 +34102,38 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "87444a21a0aa46ecb1b14ffbafd246638959e77265e9bd7fa5604e55cd614326"
+   "questaoSha256": "87444a21a0aa46ecb1b14ffbafd246638959e77265e9bd7fa5604e55cd614326",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Fratura do epicôndilo medial: diagnóstico e encarceramento",
+       "O epicôndilo medial: anatomia, ossificação e estabilidade",
+       "Luxação do cotovelo na criança: quem, quando e o que vem junto"
+      ],
+      "blocos": [
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-8d9f3860",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-c60ebc08",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-31a428cf",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-c106a289",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-ae4d1c25",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
+       "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-66a266fa"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "e7f656bf559ce98c63634517e197630e145934a09a73d52a9f7d651528ea9b54"
+     }
+    ],
+    "questaoSha256": "87444a21a0aa46ecb1b14ffbafd246638959e77265e9bd7fa5604e55cd614326",
+    "comentarioSha256": "bdc5f4f5fdc8de8162b838c545ddafc1a71a7956ebbb89a5706a42501e78f986"
+   }
   },
   "pediatria-1047": {
    "tema": "pediatria",
@@ -34101,7 +34142,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34117,7 +34158,39 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "76571f6bb6d30c807c7c6cec7b416d69f47b6723d94e6944f96738ddaaabb728"
+   "questaoSha256": "76571f6bb6d30c807c7c6cec7b416d69f47b6723d94e6944f96738ddaaabb728",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Fratura do epicôndilo medial: indicações, técnica e complicações",
+       "Fratura do epicôndilo medial: diagnóstico e encarceramento",
+       "O epicôndilo medial: anatomia, ossificação e estabilidade"
+      ],
+      "blocos": [
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--1e620ff2",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--afc1cf60",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--b2dabb8f",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-3fc9484a",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--898db186",
+       "o-epicondilo-medial-anatomia-ossificacao-e-estab-c60ebc08"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "af7db21f8d05221503e25ef1ffcef50c9cfdf56860e950f954fb2b8158979e4e"
+     }
+    ],
+    "questaoSha256": "76571f6bb6d30c807c7c6cec7b416d69f47b6723d94e6944f96738ddaaabb728",
+    "comentarioSha256": "10466718db0464d44aeeb1c11ef5bc7ef3a1dc3efff255e3e9d15407e75f4ffa"
+   }
   },
   "pediatria-1048": {
    "tema": "pediatria",
@@ -34126,7 +34199,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34141,7 +34214,39 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "0305b6f3df60641fcd6f4aac1ece788d54262746592bab4299d24d34bb7fc8d4"
+   "questaoSha256": "0305b6f3df60641fcd6f4aac1ece788d54262746592bab4299d24d34bb7fc8d4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Nervos e artéria na luxação",
+       "Redução e cuidados depois da redução"
+      ],
+      "blocos": [
+       "nervos-e-arteria-na-luxacao-877e7582",
+       "nervos-e-arteria-na-luxacao-91694afa",
+       "nervos-e-arteria-na-luxacao-dd8d287c",
+       "nervos-e-arteria-na-luxacao-180f56e0",
+       "nervos-e-arteria-na-luxacao-9c67a51e",
+       "nervos-e-arteria-na-luxacao-72056999",
+       "nervos-e-arteria-na-luxacao-7c77727a",
+       "nervos-e-arteria-na-luxacao-584aebf5",
+       "reducao-e-cuidados-depois-da-reducao-dbfbb9ba"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "73728e0087a48e4746117426d9cc0c509fd89c3817e7802b8dd02beec4db7fb4"
+     }
+    ],
+    "questaoSha256": "0305b6f3df60641fcd6f4aac1ece788d54262746592bab4299d24d34bb7fc8d4",
+    "comentarioSha256": "c20bee5023d0e44b6b9117ce7196d1568f939f6752d9c246b9c601c3d8233f61"
+   }
   },
   "pediatria-1049": {
    "tema": "pediatria",
@@ -34150,7 +34255,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34166,7 +34271,36 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "31b75e97c9288eaecd777c0c82b21fab20411e1948c5e861e1578019502c941c"
+   "questaoSha256": "31b75e97c9288eaecd777c0c82b21fab20411e1948c5e861e1578019502c941c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Fratura do epicôndilo medial: diagnóstico e encarceramento",
+       "Fratura do epicôndilo medial: indicações, técnica e complicações"
+      ],
+      "blocos": [
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-7727c46b",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--5967d9b8",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--e2182ae6",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--1e620ff2"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "24ed8012f11c3352a7db4baf1f36055f6358b2f0fd2f66e6ce45e25511c36890"
+     }
+    ],
+    "questaoSha256": "31b75e97c9288eaecd777c0c82b21fab20411e1948c5e861e1578019502c941c",
+    "comentarioSha256": "b312fc74b28981432eff57e413c0efdef5b6e2e2ca0ff054006c59c54ef28d44"
+   }
   },
   "pediatria-1050": {
    "tema": "pediatria",
@@ -34175,7 +34309,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34191,7 +34325,36 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "35138b6f6d5a7dfdf0fb9ad96f08b1d7164fac4593bda1d652ea572105d6d5c7"
+   "questaoSha256": "35138b6f6d5a7dfdf0fb9ad96f08b1d7164fac4593bda1d652ea572105d6d5c7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Fratura do epicôndilo medial: indicações, técnica e complicações",
+       "Nervos e artéria na luxação"
+      ],
+      "blocos": [
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--44572730",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--209c2ce3",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--e9e89551",
+       "nervos-e-arteria-na-luxacao-91694afa",
+       "nervos-e-arteria-na-luxacao-fc98dd47",
+       "fratura-do-epicondilo-medial-indicacoes-tecnica--898db186"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "6523ea6001ba8b6999aa44f7808eacc96e34ac84073356e8aff63bf28460f453"
+     }
+    ],
+    "questaoSha256": "35138b6f6d5a7dfdf0fb9ad96f08b1d7164fac4593bda1d652ea572105d6d5c7",
+    "comentarioSha256": "725cc649198cd4c68f99a8109f43a19b5a9915109fcb8d7acc130c1caf4c0ae8"
+   }
   },
   "pediatria-1051": {
    "tema": "pediatria",
@@ -34201,7 +34364,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34217,7 +34380,38 @@
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
-   "questaoSha256": "f211fb324a0b90885e52324ec8c2ede33ee8d21b53d7a08ed1aa2c7fb61221aa"
+   "questaoSha256": "f211fb324a0b90885e52324ec8c2ede33ee8d21b53d7a08ed1aa2c7fb61221aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Nervos e artéria na luxação",
+       "Fratura do epicôndilo medial: diagnóstico e encarceramento",
+       "Redução e cuidados depois da redução"
+      ],
+      "blocos": [
+       "nervos-e-arteria-na-luxacao-c322ab8d",
+       "nervos-e-arteria-na-luxacao-9349ac14",
+       "nervos-e-arteria-na-luxacao-fc98dd47",
+       "nervos-e-arteria-na-luxacao-741159f4",
+       "nervos-e-arteria-na-luxacao-343dad3b",
+       "fratura-do-epicondilo-medial-diagnostico-e-encar-5af08218",
+       "reducao-e-cuidados-depois-da-reducao-4da02e55"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "20003999e9ca44d718dca1683cb87fa1fb92c44b8436e79132971989a61b7b27"
+     }
+    ],
+    "questaoSha256": "f211fb324a0b90885e52324ec8c2ede33ee8d21b53d7a08ed1aa2c7fb61221aa",
+    "comentarioSha256": "49090a607bb6343d2d2d60adf158f077d50e4023497fd3293647a3d1b95c0704"
+   }
   },
   "pediatria-1052": {
    "tema": "pediatria",
@@ -34226,7 +34420,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34241,7 +34435,37 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "7353c0811577ad5b9dd4793045f464fc702026a3574835d7626578ec595e1b19"
+   "questaoSha256": "7353c0811577ad5b9dd4793045f464fc702026a3574835d7626578ec595e1b19",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Redução e cuidados depois da redução",
+       "Complicações da luxação"
+      ],
+      "blocos": [
+       "reducao-e-cuidados-depois-da-reducao-9ae6940c",
+       "complicacoes-da-luxacao-5ea1bd50",
+       "complicacoes-da-luxacao-67e5b8cf",
+       "reducao-e-cuidados-depois-da-reducao-651fe73f",
+       "reducao-e-cuidados-depois-da-reducao-e9a37fb3",
+       "reducao-e-cuidados-depois-da-reducao-f83cfdb6",
+       "reducao-e-cuidados-depois-da-reducao-bc770693"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "cf0cc896dbd301d88cf0fe95d21e996ffdeb713bc01ce148a2b0b3b9e0d8bbe7"
+     }
+    ],
+    "questaoSha256": "7353c0811577ad5b9dd4793045f464fc702026a3574835d7626578ec595e1b19",
+    "comentarioSha256": "476f8af858c9d226c42a4c41daf9e59b9f72abb00f70e406b6609b35dfc49a77"
+   }
   },
   "pediatria-1053": {
    "tema": "pediatria",
@@ -34250,7 +34474,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34265,7 +34489,36 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "5c6421430263c68eb24e908bf8c9dd27ce5b7686e8910ff0b61431d2147a3575"
+   "questaoSha256": "5c6421430263c68eb24e908bf8c9dd27ce5b7686e8910ff0b61431d2147a3575",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Pronação dolorosa (cotovelo da babá)"
+      ],
+      "blocos": [
+       "pronacao-dolorosa-cotovelo-da-baba-d278b922",
+       "pronacao-dolorosa-cotovelo-da-baba-187884c5",
+       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+       "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+       "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
+       "pronacao-dolorosa-cotovelo-da-baba-7c96573d"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "be54e78008170ca07e877358212eb4c759a58a95601f5fad2a8a4ad2da93feb1"
+     }
+    ],
+    "questaoSha256": "5c6421430263c68eb24e908bf8c9dd27ce5b7686e8910ff0b61431d2147a3575",
+    "comentarioSha256": "7f6d463c385ad9818b8d1091712297a41d8b3435de72bb9f5da8e27fa1bb5dd1"
+   }
   },
   "pediatria-1054": {
    "tema": "pediatria",
@@ -34274,7 +34527,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34289,7 +34542,37 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "233e04e2b4629bcfb3441a3080a53e252b7a40efc2444bd38e99f62e561e2202"
+   "questaoSha256": "233e04e2b4629bcfb3441a3080a53e252b7a40efc2444bd38e99f62e561e2202",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Pronação dolorosa (cotovelo da babá)"
+      ],
+      "blocos": [
+       "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
+       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+       "pronacao-dolorosa-cotovelo-da-baba-e4165878",
+       "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
+       "pronacao-dolorosa-cotovelo-da-baba-4a1a035e",
+       "pronacao-dolorosa-cotovelo-da-baba-7c96573d",
+       "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
+       "pronacao-dolorosa-cotovelo-da-baba-9e3ca770"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "ff0bcb159882c8fb0ba8bf1287b2299ea1dee06c1d177faa714dab1ab8a9cb8f"
+     }
+    ],
+    "questaoSha256": "233e04e2b4629bcfb3441a3080a53e252b7a40efc2444bd38e99f62e561e2202",
+    "comentarioSha256": "3cbb2365680e14ad7842381f50517889880f545166858996f34fa49ed5fc4d55"
+   }
   },
   "pediatria-1055": {
    "tema": "pediatria",
@@ -34298,7 +34581,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34313,7 +34596,34 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "83092c28a934bd33c2090af80afde714ed787ea034b05cece95eb6bb9d974a1b"
+   "questaoSha256": "83092c28a934bd33c2090af80afde714ed787ea034b05cece95eb6bb9d974a1b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Pronação dolorosa (cotovelo da babá)"
+      ],
+      "blocos": [
+       "pronacao-dolorosa-cotovelo-da-baba-98e51fa9",
+       "pronacao-dolorosa-cotovelo-da-baba-e80fb3cf",
+       "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
+       "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
+       "pronacao-dolorosa-cotovelo-da-baba-e4165878"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "56c4fa5e8fe1964c8a1393bea4979b5510f5e03ec4af2e6c4cccdf85f3e4759b"
+     }
+    ],
+    "questaoSha256": "83092c28a934bd33c2090af80afde714ed787ea034b05cece95eb6bb9d974a1b",
+    "comentarioSha256": "9f7d1a34436c3c9496c6c78779c2ac8268b6aae0b33c7e183e0acd4c1140cea1"
+   }
   },
   "pediatria-1056": {
    "tema": "pediatria",
@@ -34322,7 +34632,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -34337,7 +34647,37 @@
    "resumosCandidatos": [
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "65196c271c70688f2fc6179bf2d2eb7b7fdfe5bb182d42be2d461321fe8ef198"
+   "questaoSha256": "65196c271c70688f2fc6179bf2d2eb7b7fdfe5bb182d42be2d461321fe8ef198",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+      "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição",
+      "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+      "secoes": [
+       "Redução e cuidados depois da redução"
+      ],
+      "blocos": [
+       "reducao-e-cuidados-depois-da-reducao-04e55ad8",
+       "reducao-e-cuidados-depois-da-reducao-dbfbb9ba",
+       "reducao-e-cuidados-depois-da-reducao-96944a11",
+       "reducao-e-cuidados-depois-da-reducao-a84074e0",
+       "reducao-e-cuidados-depois-da-reducao-4da02e55",
+       "reducao-e-cuidados-depois-da-reducao-1bacffab",
+       "reducao-e-cuidados-depois-da-reducao-a678fb7a",
+       "reducao-e-cuidados-depois-da-reducao-1e8986a9"
+      ],
+      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "trechosSha256": "4df43302e80c9f5be27937a47f3bce96e207aa72022b5488028eda4491cc188c"
+     }
+    ],
+    "questaoSha256": "65196c271c70688f2fc6179bf2d2eb7b7fdfe5bb182d42be2d461321fe8ef198",
+    "comentarioSha256": "c361aa42914cfebbab4ec50610581fb97b7b1eee8818a59dbc0526c3d973b474"
+   }
   },
   "pediatria-1057": {
    "tema": "pediatria",

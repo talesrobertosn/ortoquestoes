@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1815 |
+| pendente | 1800 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
 | pendente-fonte | 25 |
 | pendente-inspecao-imagem | 181 |
-| revisada | 221 |
+| revisada | 236 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -44,8 +44,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 13 | 0 | 6 |
-| Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança (`rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial`) | 50 | 0 | 55 |
-| Fraturas do côndilo lateral e do capítulo na criança (`rockwoodcriancas9-16-condilo-lateral`) | 51 | 0 | 36 |
+| Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança (`rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial`) | 65 | 0 | 40 |
+| Fraturas do côndilo lateral e do capítulo na criança (`rockwoodcriancas9-16-condilo-lateral`) | 58 | 0 | 29 |
 | Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo (`rockwoodcriancas9-17-fise-distal-umero`) | 31 | 0 | 9 |
 | Fraturas do rádio e da ulna distais na criança (`wilkins9-08-radio-ulna-distal-crianca`) | 0 | 0 | 82 |
 | Fraturas da diáfise do rádio e da ulna na criança (`wilkins9-09-diafise-antebraco-crianca`) | 1 | 0 | 76 |
