@@ -59,8 +59,11 @@ function partes(segundos: number) {
 /**
  * Contagem regressiva até as questões grátis voltarem: uma ampulheta em pixel
  * art que esvazia ao longo das 24 h da janela e o tempo em dígitos de jogo.
+ * `janelaMs`, `rodape` e `minutos` servem a outras contagens (o ranking, que atualiza de 10 em 10 minutos).
  */
-export function RelogioPixel({ liberaEm, rotulo = 'Grátis de novo em', compacto = false }: { liberaEm: string; rotulo?: string; compacto?: boolean }) {
+export function RelogioPixel({ liberaEm, rotulo = 'Grátis de novo em', compacto = false, janelaMs = JANELA_GRATIS_MS, rodape, minutos = false }: {
+  liberaEm: string; rotulo?: string; compacto?: boolean; janelaMs?: number; rodape?: string; minutos?: boolean
+}) {
   const fim = Date.parse(liberaEm)
   const [agora, definirAgora] = useState(Date.now())
   useEffect(() => {
@@ -71,13 +74,14 @@ export function RelogioPixel({ liberaEm, rotulo = 'Grátis de novo em', compacto
   const faltam = Math.max(0, Math.ceil((fim - agora) / 1000))
   const [h, m, s] = partes(faltam)
   const quando = new Date(fim).toLocaleString('pt-BR', { weekday: 'short', hour: '2-digit', minute: '2-digit' }).replace('.', '')
+  const falado = minutos ? `${Number(m)} minutos e ${Number(s)} segundos` : `${Number(h)} horas e ${Number(m)} minutos`
   return (
-    <div className={'relogio-pixel' + (compacto ? ' relogio-pixel--compacto' : '')} role="timer" aria-label={`${rotulo} ${Number(h)} horas e ${Number(m)} minutos`}>
-      <Ampulheta fracao={(fim - agora) / JANELA_GRATIS_MS} escala={compacto ? 3 : 4} />
+    <div className={'relogio-pixel' + (compacto ? ' relogio-pixel--compacto' : '')} role="timer" aria-label={`${rotulo} ${falado}`}>
+      <Ampulheta fracao={(fim - agora) / janelaMs} escala={compacto ? 3 : 4} />
       <div className="relogio-pixel__texto" aria-hidden="true">
         <span className="relogio-pixel__rotulo">{rotulo}</span>
-        <span className="relogio-pixel__digitos">{h}<i>:</i>{m}<i>:</i>{s}</span>
-        <span className="relogio-pixel__quando">{faltam > 0 ? `Volta ${quando}` : 'Já voltou!'}</span>
+        <span className="relogio-pixel__digitos">{minutos ? <>{m}<i>:</i>{s}</> : <>{h}<i>:</i>{m}<i>:</i>{s}</>}</span>
+        <span className="relogio-pixel__quando">{rodape ?? (faltam > 0 ? `Volta ${quando}` : 'Já voltou!')}</span>
       </div>
     </div>
   )
