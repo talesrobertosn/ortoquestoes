@@ -105,8 +105,8 @@ padrão novo. Próximo trabalho, nesta ordem:
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
 7. **Próximo: SBCM 2024, lote 02** (lote 01 publicado: 1, 69, 78, 80 = mao-2023 a 2026; a 2 pendente). Dica: quando o texto
-   em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho. O `progresso.py` quebra na
-   linha do Resumo do SBCM 2024: atualizar à mão (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
+   em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
+   (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
    `PROVA = "SBCM"`, `ANO = 2024`, copia com o slug `sbcm-2024`). Depois SBCM 2022,
    SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021; depois ENARE 2022, 2023 e 2025.
