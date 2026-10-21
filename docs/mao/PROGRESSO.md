@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | SBCM-2022-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 76 | 9 | mao-2023 a mao-2098 | A 19, B 19, C 19, D 19 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 81 | 9 | mao-2023 a mao-2103 | A 20, B 21, C 20, D 20 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **Próximo: SBCM 2024, lote 18** (lotes 01 a 17 publicados: mao-2023 a mao-2098; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
+7. **Próximo: SBCM 2024, lote 19** (lotes 01 a 18 publicados: mao-2023 a mao-2103; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 27 e 28, sem fonte). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -317,7 +317,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 38 | Malformações do membro: semanas de gestação | número | cap. 35, p. 1363 | mao / Outras malformações congênitas | 14 | mao-2085 | publicada |
 | 39 | Uma mão para comer e outra para limpar: qual doença | princípio | cap. 39, p. 1534 | mao / Outras malformações congênitas | 12 | mao-2076 | publicada |
 | 40 | Retalho de KITE: artéria | anatomia | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 | mao-2097 | publicada |
-| 41 | Anterolateral da coxa: ramo da circunflexa femoral lateral | anatomia | cap. 45, p. 1767 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
+| 41 | Anterolateral da coxa: ramo da circunflexa femoral lateral | anatomia | cap. 45, p. 1767 | mao / Microcirurgia e retalhos livres | 18 | mao-2103 | publicada |
 | 42 | Nervo ulnar no braço: relações | anatomia | cap. 28, p. 1105 | mao / Neuropatia ulnar e outras compressões | 10 | mao-2067 | publicada |
 | 43 | Cabeça do metacarpo: raio mais fraturado | fato | cap. 7, p. 260 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2027 | publicada |
 | 44 | Tuberculose no membro superior: o que raramente envolve | fato | cap. 3, p. 106 | mao / Infecções da mão | 09 | mao-2059 | publicada |
@@ -332,9 +332,9 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 53 | BAYNE modificada, tipo 3: rádio distal | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 15 | mao-2088 | publicada |
 | 54 | Artrogripose distal tipo 3: nome e achados | classificação | cap. 39, p. 1535 (Tabela 39.1) | mao / Outras malformações congênitas | 16 | mao-2093 | publicada |
 | 55 | Curativo a vácuo: quando não usar | contraindicação | cap. 43, p. 1684 | mao / Retalhos e cobertura cutânea | 10 | mao-2064 | publicada |
-| 56 | Pele palmar: estruturas da figura | anatomia, figura | cap. 44, p. 1703 | mao / Anatomia da mão e punho | 18 |  | a fazer |
+| 56 | Pele palmar: estruturas da figura | anatomia, figura | cap. 44, p. 1702 e 1703 (Fig. 44.2) | mao / Anatomia da mão e punho | 18 | mao-2099 | publicada (ângulo: localização dos receptores, sem as letras da figura) |
 | 57 | Retalho homodigital dorsorradial do polegar: tamanho e fechamento | número | cap. 48, p. 1851 | mao / Retalhos e cobertura cutânea | 17 | mao-2098 | publicada |
-| 58 | Retalho radial do antebraço: perfurantes e dimensões | anatomia, número | cap. 45, p. 1759 | mao / Microcirurgia e retalhos livres | 18 |  | a fazer |
+| 58 | Retalho radial do antebraço: perfurantes e dimensões | anatomia, número | cap. 45, p. 1759 | mao / Microcirurgia e retalhos livres | 18 | mao-2102 | publicada |
 | 59 | Tuberculose óssea na criança: local mais comum | fato | cap. 3, p. 119 | mao / Infecções da mão | 08 | mao-2057 | publicada |
 | 60 | Tetraplegia: função do punho e mão a obter | fato | cap. 33, p. 1268 e 1272 | mao / Transferências tendinosas e paralisias | 13 | mao-2078 | publicada |
 | 61 | Paralisia obstétrica: sinal de avulsão | sinal | cap. 40, p. 1563 (Tabela 40.1) | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2084 | publicada |
@@ -351,7 +351,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 72 | Radiografia: diagnóstico | diagnóstico, figura | cap. 38 | mao / Deficiências longitudinais e mão torta | 15 |  | pendente: depende da radiografia |
 | 73 | Ângulo da lágrima no desvio anterior | número | cap. 15, p. 604 e 610 | mao / Fratura do rádio distal | 05 | mao-2042 | publicada |
 | 74 | Amputação no eponíquio: zonas de TAMAI e ALLEN | classificação | cap. 49, p. 1908 | mao / Amputações e reimplantes | 10 | mao-2065 | publicada |
-| 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
+| 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 e 1732 | mao / Retalhos e cobertura cutânea | 18 | mao-2100 | publicada |
 | 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36 | mao / Deformidades dos dedos | 16 |  | pendente: depende da imagem |
 | 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1853 | mao / Retalhos e cobertura cutânea | 19 |  | a fazer |
 | 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
@@ -370,7 +370,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 91 | Macrodactilia, FLATT: tipo com neurofibromatose | classificação | cap. 36, p. 1438 | mao / Outras malformações congênitas | 17 | mao-2094 | publicada |
 | 92 | Sinostose radioulnar bilateral: posição da osteotomia | número | cap. 38, p. 1516 | mao / Outras malformações congênitas | 15 | mao-2089 | publicada |
 | 93 | Último osso do carpo a ossificar | fato | cap. 41, p. 1618 | mao / Anatomia da mão e punho | 17 | mao-2095 | publicada |
-| 94 | Retalho interósseo posterior reverso: entre quais músculos | anatomia | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 |  | a fazer |
+| 94 | Retalho interósseo posterior reverso: entre quais músculos | anatomia | cap. 44, p. 1731 | mao / Retalhos e cobertura cutânea | 18 | mao-2101 | publicada |
 | 95 | Mão: número de compartimentos | número | cap. 51, p. 1972 e 1975 | mao / Outros temas da mão | 10 | mao-2063 | publicada |
 | 96 | Lápis na xícara: qual artrite | imagem | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 07 | mao-2053 | publicada |
 | 97 | Queimadura: grau em que aparecem bolhas | fato | cap. 57, p. 2122 e 2123 | mao / Queimaduras | 08 | mao-2055 | publicada |
