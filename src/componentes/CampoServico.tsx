@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { LOCAIS_MAXIMO, LOCAL_TAMANHO, SERVICO_VARIOS, trabalhaComoEspecialista } from '../conta/perfilEstudo'
 import { SERVICOS_CONHECIDOS } from './admin/servicosConhecidos'
 import { Icone } from './Icone'
@@ -17,6 +17,41 @@ function textos(situacao: string) {
 /** Sugestões ao digitar: os serviços que o painel já reconhece pelo nome completo. */
 const ID_SUGESTOES = 'servicos-sugeridos'
 const SUGESTOES = SERVICOS_CONHECIDOS.map((s) => s.nome)
+
+const ESCREVER = '__escrever__'
+
+/**
+ * Escolha do serviço (21/10/2026, pedido do Tales): uma lista com os serviços que o site
+ * conhece, e a primeira opção dela é escrever o nome, para quem não acha o seu. Ao escolher
+ * essa opção, o campo de texto aparece logo abaixo, já com o cursor.
+ */
+function EscolherServico({ valor, aoMudar, exemplo, obrigatorio, classeEntrada }: {
+  valor: string; aoMudar: (v: string) => void; exemplo: string; obrigatorio: boolean; classeEntrada: string
+}) {
+  const conhecido = SUGESTOES.includes(valor)
+  const [escrevendo, definirEscrevendo] = useState(!!valor.trim() && !conhecido)
+  const texto = useRef<HTMLInputElement>(null)
+  // Valor que chegou de fora (perfil carregado depois): escrito à mão abre o campo de texto.
+  useEffect(() => { if (valor.trim() && !SUGESTOES.includes(valor)) definirEscrevendo(true) }, [valor])
+  function escolher(v: string) {
+    if (v === ESCREVER) {
+      definirEscrevendo(true)
+      if (conhecido) aoMudar('')
+      window.setTimeout(() => texto.current?.focus(), 0)
+      return
+    }
+    definirEscrevendo(false)
+    aoMudar(v)
+  }
+  return <>
+    <select id="campo-servico" className={'entrada campo-servico__lista ' + classeEntrada} required={obrigatorio && !escrevendo} value={escrevendo ? ESCREVER : conhecido ? valor : ''} onChange={(e) => escolher(e.target.value)}>
+      <option value="" disabled>Escolha na lista ou escreva o nome</option>
+      <option value={ESCREVER}>✎ Não achei o meu: escrever o nome</option>
+      {SUGESTOES.map((s) => <option key={s} value={s}>{s}</option>)}
+    </select>
+    {escrevendo && <input ref={texto} className={'entrada ' + classeEntrada} aria-label="Nome do serviço" required={obrigatorio} value={valor} onChange={(e) => aoMudar(e.target.value)} placeholder={exemplo} />}
+  </>
+}
 
 /**
  * Onde a pessoa estuda ou trabalha.
@@ -46,14 +81,15 @@ export function CampoServico({ situacao, valor, aoMudar, locais = [], aoMudarLoc
     return (
       <div className="campo campo-servico" data-campo="servico">
         <label className="campo-servico__rotulo" htmlFor="campo-servico">{rotulo}</label>
-        {!soVarios && <input id="campo-servico" className={'entrada ' + classeEntrada} required={obrigatorio && !soVarios} value={valor === SERVICO_VARIOS ? '' : valor} onChange={(e) => aoMudar(e.target.value)} placeholder={exemplo} list={situacao === 'estudante' ? undefined : ID_SUGESTOES} />}
+        {!soVarios && (situacao === 'estudante'
+          ? <input id="campo-servico" className={'entrada ' + classeEntrada} required={obrigatorio} value={valor} onChange={(e) => aoMudar(e.target.value)} placeholder={exemplo} />
+          : <EscolherServico valor={valor === SERVICO_VARIOS ? '' : valor} aoMudar={aoMudar} exemplo={exemplo} obrigatorio={obrigatorio} classeEntrada={classeEntrada} />)}
         {podeVarios && (
           <label className="caixa campo-servico__varios">
             <input type="checkbox" checked={soVarios} onChange={(e) => aoMudar(e.target.checked ? SERVICO_VARIOS : '')} />
             <span>Atuo em vários hospitais ou em consultório próprio</span>
           </label>
         )}
-        <datalist id={ID_SUGESTOES}>{SUGESTOES.map((s) => <option key={s} value={s} />)}</datalist>
         {extra}
       </div>
     )
@@ -79,7 +115,7 @@ export function CampoServico({ situacao, valor, aoMudar, locais = [], aoMudarLoc
   return (
     <div className="campo campo-servico" data-campo="servico">
       <label className="campo-servico__rotulo" htmlFor="campo-servico">{rotulo}{varios && especialista && <span className="meta"> (se houver um principal)</span>}</label>
-      <input id="campo-servico" className={'entrada ' + classeEntrada} required={obrigatorio && !varios} value={principal} onChange={(e) => mudarPrincipal(e.target.value)} placeholder={exemplo} list={ID_SUGESTOES} />
+      <EscolherServico valor={principal} aoMudar={mudarPrincipal} exemplo={exemplo} obrigatorio={obrigatorio && !varios} classeEntrada={classeEntrada} />
       <label className="caixa campo-servico__varios">
         <input type="checkbox" checked={varios} onChange={(e) => alternar(e.target.checked)} />
         <span>{especialista ? 'Trabalho em vários locais' : 'Também trabalho em outros serviços (plantões, clínicas)'}</span>

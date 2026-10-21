@@ -32,7 +32,7 @@ export const ANOS: Array<[AnoResidencia, string]> = [['r1', 'R1'], ['r2', 'R2'],
 
 export const PROVAS: Array<[ProvaInteresse, string, string]> = [
   ['taro', 'TARO', 'avaliação anual dos residentes, do R1 ao R3'],
-  ['teot', 'TEOT', 'título de especialista, ao fim da residência (o mesmo que TEPOT)'],
+  ['teot', 'TEOT', 'título de especialista, ao fim da residência'],
   ['mao', 'Entrada na cirurgia da mão', 'seleção para a residência em mão'],
   ['titulo_mao', 'Título de cirurgia da mão', 'prova da Sociedade Brasileira de Cirurgia da Mão'],
   ['coluna', 'R4 de coluna', 'seleção para a residência em coluna'],

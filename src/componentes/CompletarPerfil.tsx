@@ -3,9 +3,10 @@ import { usarConta } from '../conta/ContextoConta'
 import { supabase } from '../conta/supabase'
 import {
   ETAPAS_RAPIDAS, PROVAS, SERVICO_VARIOS, deveMostrarCracha, etapaRapidaDe, lerProvas, passosPerfil, provasSugeridas,
-  rotuloBotaoProva, rotuloEtapa, rotuloProva, type PassoPerfil, type ProvaInteresse,
+  rotuloBotaoProva, type PassoPerfil, type ProvaInteresse,
 } from '../conta/perfilEstudo'
 import { CampoServico } from './CampoServico'
+import { CrachaPixel, type DadosCracha } from './CrachaPixel'
 import { Icone } from './Icone'
 import { href } from '../util/rotas'
 import '../estilos/componentes/CrachaPerfil.css'
@@ -19,8 +20,6 @@ function lerVisto(id: string): { login?: string | null; em?: number } | null {
 function marcarVisto(id: string, login: string | null | undefined) {
   try { localStorage.setItem(`${CHAVE_VISTO}:${id}`, JSON.stringify({ login: login ?? null, em: Date.now() })) } catch { /* sem armazenamento */ }
 }
-
-const iniciais = (nome: string, sobrenome: string) => ((nome.trim()[0] ?? '') + (sobrenome.trim()[0] ?? '')).toLocaleUpperCase('pt-BR')
 
 /** O que cada passo pergunta, conforme a etapa (residência, faculdade, onde trabalha). */
 function textosDoPasso(passo: PassoPerfil, situacao: string): { titulo: string; apoio: string } {
@@ -147,7 +146,7 @@ export default function CompletarPerfil() {
   const feitos = passos.filter((p) => p.feito).length
   const total = passos.length
   // O crachá mostra o que já está gravado e, no passo atual, o rascunho.
-  const ver = {
+  const ver: DadosCracha = {
     situacao: passo === 'etapa' ? situacao : String(meta.situacao ?? ''),
     ano: passo === 'etapa' ? ano : String(meta.ano_residencia ?? ''),
     provas: passo === 'provas' || passo === 'etapa' ? provas : lerProvas(meta.provas_interesse),
@@ -156,37 +155,13 @@ export default function CompletarPerfil() {
     sobrenome: passo === 'nome' ? sobrenome : String(meta.sobrenome ?? ''),
     uf: passo === 'local' ? uf : String(meta.uf ?? ''),
   }
-  const textoEtapa = ver.situacao ? (ver.situacao === 'residente' && !ver.ano ? 'Residente' : rotuloEtapa(ver.situacao, ver.ano)) : ''
-  const nomeCompleto = `${ver.nome} ${ver.sobrenome}`.trim()
   const textos = passo ? textosDoPasso(passo, situacao || String(meta.situacao ?? '')) : null
   const opcional = passos.find((p) => p.passo === passo)?.opcional
 
   return (
-    <section ref={caixa} className={'cracha-perfil' + (longe ? ' cracha-perfil--longe' : '') + (concluido ? ' cracha-perfil--pronto' : '')} aria-labelledby="cracha-perfil-titulo">
+    <section ref={caixa} className={'cracha-perfil' + (concluido ? ' cracha-perfil--pronto' : '')} aria-labelledby="cracha-perfil-titulo">
       <div className="cracha-perfil__palco" aria-hidden="true">
-        <div className="cracha" data-foco={concluido ? '' : passo ?? ''}>
-          <span className="cracha__cordao" />
-          <span className="cracha__presilha" />
-          <div className="cracha__balanco">
-            <div className="cracha__cartao" key={carimbo}>
-              <span className="cracha__furo" />
-              <span className="cracha__faixa">ORTO QUESTÕES</span>
-              <div className="cracha__corpo">
-                <span className="cracha__foto">{iniciais(ver.nome, ver.sobrenome) || '?'}</span>
-                <span className="cracha__etapa" data-campo="etapa">{textoEtapa || <i className="cracha__vazio" />}</span>
-              </div>
-              <span className="cracha__nome" data-campo="nome">{nomeCompleto || <i className="cracha__vazio cracha__vazio--longo" />}</span>
-              <span className="cracha__servico" data-campo="servico">{ver.servico.trim() || <i className="cracha__vazio" />}</span>
-              <span className="cracha__rodape">
-                <span className="cracha__uf" data-campo="local">{ver.uf || '··'}</span>
-                <span className="cracha__provas" data-campo="provas">
-                  {ver.provas.length ? ver.provas.slice(0, 3).map((p) => <b key={p}>{rotuloProva(p).replace(/ \(.*\)$/, '')}</b>) : <i className="cracha__vazio cracha__vazio--curto" />}
-                </span>
-              </span>
-              {carimbo > 0 && <span className="cracha__carimbo">{concluido ? 'PRONTO' : 'OK'}</span>}
-            </div>
-          </div>
-        </div>
+        <CrachaPixel dados={ver} foco={concluido ? '' : passo ?? ''} carimbo={carimbo} textoCarimbo={concluido ? 'PRONTO' : 'OK'} parado={longe} />
       </div>
 
       <div className="cracha-perfil__cabeca">
