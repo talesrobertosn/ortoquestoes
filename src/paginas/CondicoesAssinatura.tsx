@@ -63,7 +63,7 @@ export function CondicoesAssinatura() {
     <VoltarAoTopo />
 
     <h2>1. Fornecedor e objeto</h2>
-    <I n="1.1">O fornecedor é o responsável pelo {nome} indicado na Cláusula 1 dos <a href={href('/termos')}>Termos de Uso</a>, {SITE.autor}, pessoa física, com contato pelo e-mail {contato} e pelo canal de <a href={href('/contato')}>contato</a> do site.</I>
+    <I n="1.1">O fornecedor é o responsável pelo {nome} indicado na Cláusula 1 dos <a href={href('/termos')}>Termos de Uso</a>: Tales Roberto Siqueira Nascimento, pessoa física, CPF 027.298.132-09, com endereço na Rua Alderico Bandeira de Lima, nº 1302, Edifício Zacarias, apartamento 03, e contato pelo e-mail {contato} e pelo canal de <a href={href('/contato')}>contato</a> do site (Decreto nº 7.962/2013, art. 2º).</I>
     <I n="1.2">A assinatura dá ao assinante, durante o período pago, acesso aos recursos anunciados para o plano no momento da contratação (Cláusula 3). Ela também ajuda a manter um projeto independente: estrutura do site, inclusão de provas e revisão de comentários.</I>
     <I n="1.3">A assinatura não é compra de curso, de material didático, de licença perpétua nem de acesso vitalício. Não transfere direitos sobre o Acervo e não garante aprovação em nenhuma prova, concurso ou seleção.</I>
 
