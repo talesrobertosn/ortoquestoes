@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1778,
+  "pendente": 1768,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 27,
   "pendente-inspecao-imagem": 181,
-  "revisada": 256
+  "revisada": 266
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -72,10 +72,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 122,
+    "pendente": 112,
     "pendente-fonte": 2,
     "pendente-inspecao-imagem": 17,
-    "revisada": 23
+    "revisada": 33
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -83,8 +83,9 @@
    "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
    "estados": {
     "duplicada": 8,
-    "pendente": 88,
-    "pendente-inspecao-imagem": 8
+    "pendente": 87,
+    "pendente-inspecao-imagem": 8,
+    "revisada": 1
    }
   },
   "rockwood10-44-carpo": {
@@ -19260,7 +19261,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19275,7 +19276,36 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "7917577e8614f73d938270338ef129df3b79539713875753db9e113a3b8fdf78"
+   "questaoSha256": "7917577e8614f73d938270338ef129df3b79539713875753db9e113a3b8fdf78",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posteromedial em varo",
+       "Tríade terrível"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+       "triade-terrivel-1483748a",
+       "triade-terrivel-fc91076c"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "2c0c522bc777229dc766139d5b93f78b4333c666515e9b0e89c75e0ef983ceb5"
+     }
+    ],
+    "questaoSha256": "7917577e8614f73d938270338ef129df3b79539713875753db9e113a3b8fdf78",
+    "comentarioSha256": "1a869350425625d1886774707a25908cf6eba36e699a7625186981aeb416b9cb"
+   }
   },
   "ombro-cotovelo-0245": {
    "tema": "ombro-cotovelo",
@@ -19563,7 +19593,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19578,7 +19608,34 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f76e1d3acd9a903fb6538ffd94ad53f61a7ccd9bbe8407f6d3ea3b84e1962f57"
+   "questaoSha256": "f76e1d3acd9a903fb6538ffd94ad53f61a7ccd9bbe8407f6d3ea3b84e1962f57",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo",
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-68cf7694",
+       "luxacao-simples-do-cotovelo-7877af59",
+       "luxacao-simples-do-cotovelo-e9cc7169",
+       "fratura-da-cabeca-do-radio-109bc9e4"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "d743fef0cebb1ca324e8a690644e75e5d382693c29b6bbf98bd0acbccbcd96de"
+     }
+    ],
+    "questaoSha256": "f76e1d3acd9a903fb6538ffd94ad53f61a7ccd9bbe8407f6d3ea3b84e1962f57",
+    "comentarioSha256": "d875a5a1df997834102c8d7cba7dd43502a5d1b9666f51593ec89c218f941b79"
+   }
   },
   "ombro-cotovelo-0325": {
    "tema": "ombro-cotovelo",
@@ -19588,7 +19645,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19611,7 +19668,34 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "4195c73eec9fc56025ed7f078cb66c2ed394a85ea8e71551ed19ab244582f79f"
+   "questaoSha256": "4195c73eec9fc56025ed7f078cb66c2ed394a85ea8e71551ed19ab244582f79f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Ulna proximal: olécrano e Monteggia posterior",
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "ulna-proximal-olecrano-e-monteggia-posterior-79b0260b",
+       "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1",
+       "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b",
+       "fratura-da-cabeca-do-radio-8dbbe2b9"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "305874eeea6af46cf165b7098a796ef9899b02aec13cca117e46f6bcb05cedb2"
+     }
+    ],
+    "questaoSha256": "4195c73eec9fc56025ed7f078cb66c2ed394a85ea8e71551ed19ab244582f79f",
+    "comentarioSha256": "08a24ebf71716915b0cef48e5bd3ba7d75470ec4eb5bc2b4b8832d1af2e65bf1"
+   }
   },
   "ombro-cotovelo-0332": {
    "tema": "ombro-cotovelo",
@@ -19706,7 +19790,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19721,7 +19805,35 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f6de7457c5537a8ea2dc93d36abed97edc9cb9a7bf7a13ef669d33357fabc050"
+   "questaoSha256": "f6de7457c5537a8ea2dc93d36abed97edc9cb9a7bf7a13ef669d33357fabc050",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo",
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-d4159e35",
+       "luxacao-simples-do-cotovelo-5d25ae81",
+       "quem-segura-o-cotovelo-7b7c7f11",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "3fe79b00bb1947df21da1f05b0937fdea33b0d9ce8306105a9fec22ab845e346"
+     }
+    ],
+    "questaoSha256": "f6de7457c5537a8ea2dc93d36abed97edc9cb9a7bf7a13ef669d33357fabc050",
+    "comentarioSha256": "668b1c87c7a3769f5c2dce4b24d9e43d27580cde87687dbdd81cb3437f62d04a"
+   }
   },
   "ombro-cotovelo-0351": {
    "tema": "ombro-cotovelo",
@@ -19730,7 +19842,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19745,7 +19857,34 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f15a6c36aaa1dfc78eedd86fae90c5b2687b30fc7e12fde6160e5eedc122ac0a"
+   "questaoSha256": "f15a6c36aaa1dfc78eedd86fae90c5b2687b30fc7e12fde6160e5eedc122ac0a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-d4159e35",
+       "luxacao-simples-do-cotovelo-5d25ae81",
+       "luxacao-simples-do-cotovelo-569d2234",
+       "luxacao-simples-do-cotovelo-2d8aeee9",
+       "luxacao-simples-do-cotovelo-4dc4fd08"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "07725ef7a409c7e01d28187387d792c4769e65a7bdf1e749bb502efee2ba8d18"
+     }
+    ],
+    "questaoSha256": "f15a6c36aaa1dfc78eedd86fae90c5b2687b30fc7e12fde6160e5eedc122ac0a",
+    "comentarioSha256": "6c1cd13dab19e74a829c0872aad36a481a83af29963a6a2e6f48ca9b37c7fb8f"
+   }
   },
   "ombro-cotovelo-0358": {
    "tema": "ombro-cotovelo",
@@ -19848,7 +19987,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19863,7 +20002,34 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "b1769e8aec5570c6fe2ad949796197aaa918fa57951afccfe8c3c3fb6eb528d7"
+   "questaoSha256": "b1769e8aec5570c6fe2ad949796197aaa918fa57951afccfe8c3c3fb6eb528d7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo",
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-ce2e0d90",
+       "luxacao-simples-do-cotovelo-ec03078e",
+       "quem-segura-o-cotovelo-7b7c7f11",
+       "luxacao-simples-do-cotovelo-4dc4fd08"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "27bc41bea80dcc0232aad12fab47481f53b21e53e44d1061f6028b420ebcacf7"
+     }
+    ],
+    "questaoSha256": "b1769e8aec5570c6fe2ad949796197aaa918fa57951afccfe8c3c3fb6eb528d7",
+    "comentarioSha256": "cc7002b33615ed2af5b9822c925b74e3c0fa5c21afe6c829fd9ad9d41af4f96c"
+   }
   },
   "ombro-cotovelo-0382": {
    "tema": "ombro-cotovelo",
@@ -19873,7 +20039,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -19888,7 +20054,37 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "fe271a749413c4c2cdd397a72686a525dc0f5a027248af1725fc897f3e2ae2fb"
+   "questaoSha256": "fe271a749413c4c2cdd397a72686a525dc0f5a027248af1725fc897f3e2ae2fb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posterolateral crônica",
+       "Luxação simples do cotovelo",
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "luxacao-simples-do-cotovelo-d4159e35",
+       "quem-segura-o-cotovelo-7b7c7f11",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posterolateral-cronica-6af0e518"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "e58d8421719ff85f50d8e998a1a3ec0585bd6c5938f52555993387c13356c6f4"
+     }
+    ],
+    "questaoSha256": "fe271a749413c4c2cdd397a72686a525dc0f5a027248af1725fc897f3e2ae2fb",
+    "comentarioSha256": "14625830f390f57b7f6164735315f72c1495f2431bb01d277098afb0655dd5a3"
+   }
   },
   "ombro-cotovelo-0399": {
    "tema": "ombro-cotovelo",
@@ -40985,7 +41181,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41000,7 +41196,42 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "a35c0cd9b2c0578919151441cbb610cb8c2544eb7d2eac6f4fa1bbe02e7fbf5b"
+   "questaoSha256": "a35c0cd9b2c0578919151441cbb610cb8c2544eb7d2eac6f4fa1bbe02e7fbf5b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível",
+       "Fraturas do coronoide",
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "triade-terrivel-9e6a5bba",
+       "triade-terrivel-2c2c5123",
+       "triade-terrivel-fc91076c",
+       "triade-terrivel-7f75b022",
+       "triade-terrivel-fe3d9fe4",
+       "triade-terrivel-ccad4df0",
+       "triade-terrivel-499f49dc",
+       "triade-terrivel-886bacd0",
+       "triade-terrivel-ed2e0665",
+       "fraturas-do-coronoide-fd8d6fcf",
+       "fratura-da-cabeca-do-radio-ea450acb"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "6b71d73d4c9c43df016b8085cc79e6466e5dba5126e41ea551bf59742b829e4c"
+     }
+    ],
+    "questaoSha256": "a35c0cd9b2c0578919151441cbb610cb8c2544eb7d2eac6f4fa1bbe02e7fbf5b",
+    "comentarioSha256": "1022714f4d9fb784d35bf66255c6e1e664f8cac0cc81e32b6b508556dc9245aa"
+   }
   },
   "trauma-0206": {
    "tema": "trauma",
@@ -43161,7 +43392,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43176,7 +43407,37 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "530b96f2da4a7946171b137217f566556cf5bba2abb7c27bb775cf1609af5ed6"
+   "questaoSha256": "530b96f2da4a7946171b137217f566556cf5bba2abb7c27bb775cf1609af5ed6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível",
+       "Quem segura o cotovelo",
+       "Luxação simples do cotovelo"
+      ],
+      "blocos": [
+       "triade-terrivel-fe3d9fe4",
+       "triade-terrivel-2c2c5123",
+       "quem-segura-o-cotovelo-d2f0137f",
+       "luxacao-simples-do-cotovelo-ce2e0d90",
+       "triade-terrivel-ccad4df0",
+       "triade-terrivel-499f49dc"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "10f67cf3dc696292d7ef4a6df7cb77ca845bae450ddc90d96ae91d55f6317121"
+     }
+    ],
+    "questaoSha256": "530b96f2da4a7946171b137217f566556cf5bba2abb7c27bb775cf1609af5ed6",
+    "comentarioSha256": "c747bc2fa060e7283fb0955d15782024e8fc893a4c7cf4185c3e34d2b193e6a5"
+   }
   },
   "trauma-0319": {
    "tema": "trauma",
@@ -57577,7 +57838,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57592,7 +57853,35 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "71d4207a3ee272d514b70aed452cb6cb1fd3e100a9cf984515bed0bcffc7c3be"
+   "questaoSha256": "71d4207a3ee272d514b70aed452cb6cb1fd3e100a9cf984515bed0bcffc7c3be",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível"
+      ],
+      "blocos": [
+       "triade-terrivel-fe3d9fe4",
+       "triade-terrivel-ccad4df0",
+       "triade-terrivel-499f49dc",
+       "triade-terrivel-886bacd0",
+       "triade-terrivel-fc91076c",
+       "triade-terrivel-7f75b022"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "58174445f400708396f95cdab740a6cdc07ac8025700ee961ea6749e1544666d"
+     }
+    ],
+    "questaoSha256": "71d4207a3ee272d514b70aed452cb6cb1fd3e100a9cf984515bed0bcffc7c3be",
+    "comentarioSha256": "d5f315ec49f537db5359b2b5a303e36df3a8a2dba05ca05ea444c94461a0c9fd"
+   }
   },
   "trauma-1296": {
    "tema": "trauma",

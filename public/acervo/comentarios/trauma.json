@@ -3060,15 +3060,53 @@
   "conferido": false
  },
  "trauma-0205": {
+  "conceito": "**A tríade terrível soma luxação, fratura da cabeça radial e fratura do coronoide.** A lesão combina perdas ósseas e ligamentares; recuperar apenas uma delas pode não devolver a estabilidade. Na classificação citada, Mason III indica cominuição de toda a cabeça, e Regan-Morrey II compromete menos de metade da altura do coronoide.\n\nO roteiro do resumo vai de dentro para fora: **coronoide, cabeça do rádio, colateral lateral e, se necessário, colateral medial**. O coronoide pode ser fixado com parafusos nos fragmentos maiores ou reparado pela cápsula anterior nos pequenos e cominutivos, conforme o padrão. A cabeça é fixada ou substituída para repor o apoio radiocapitelar.\n\nDepois, o lateral é reparado e a estabilidade é testada em pronação, neutro e supinação. O medial entra se a articulação ainda não se mantém estável. Portanto, o último elemento da alternativa não significa que todo paciente precise obrigatoriamente de reparo medial; trata-se de uma etapa condicional.\n\nA importância do coronoide não pode ser reduzida a “é pequeno”. Nos modelos de tríade descritos, o tipo I pequeno pode recuperar estabilidade com as outras contenções, mas os tipos II e III podem continuar instáveis mesmo após cabeça e ligamentos. Isso explica por que o enunciado fornece a classificação do fragmento.\n\n**Leia “A ordem da cirurgia” e “Por que o coronoide pesa”, no resumo da Biblioteca.** A primeira seção oferece a sequência; a segunda explica por que tratar a cabeça antes de pensar no coronoide não corresponde ao roteiro solicitado.",
+  "correta": "**A: coronoide, rádio, lateral e medial.** É a sequência usual descrita, com a precisão de que o medial só é reparado se a instabilidade persistir após as etapas anteriores e o teste.\n\nO objetivo é restaurar as contenções e verificar o resultado a cada passo. Se ainda houver instabilidade depois do reparo necessário, o capítulo considera estabilização adicional. A ordem não substitui a avaliação da qualidade da redução e da fixação.",
   "incorretas": {
-   "B": "O colateral lateral é reparado antes do medial.",
-   "C": "O coronoide vem antes do rádio, e o colateral lateral antes do medial.",
-   "D": "O coronoide é abordado antes da cabeça do rádio."
+   "B": "**Os dois componentes ósseos aparecem na ordem esperada, mas os ligamentos foram invertidos.** O lateral é reconstruído antes de decidir pelo medial. Reparar o medial como etapa anterior ignora o lado que costuma estar avulsionado e a possibilidade de obter estabilidade após o reparo lateral, sem ampliar a abordagem.",
+   "C": "**A opção antecipa o rádio ao coronoide e também troca a ordem ligamentar.** O roteiro solicitado começa com o coronoide e, após a cabeça, reconstrói o lateral. Não basta incluir todas as estruturas: a pergunta pede a sequência operatória sistemática apresentada pela fonte.",
+   "D": "**A ordem dos ligamentos está correta, mas a dos componentes ósseos foi invertida.** O capítulo descreve primeiro o coronoide, pela via lateral quando possível, e depois a cabeça radial. A opção é plausível por preservar lateral antes de medial, mas não reproduz toda a ordem usual pedida."
   },
-  "conceito": "A **tríade terrível** do cotovelo é a **luxação posterior** com fratura da **cabeça do rádio** e do **coronoide**. O tratamento cirúrgico segue uma ordem **de dentro para fora**, do mais profundo para o mais superficial:\n\n**1. coronoide**: sutura em laço pela base ou parafuso; é abordado **primeiro**, muitas vezes pelo espaço deixado pela cabeça do rádio fraturada (ou retirada para a prótese);\n\n**2. cabeça do rádio**: fixação ou, na Mason 3 irreconstruível, **prótese**; nunca ressecar sem repor;\n\n**3. ligamento colateral lateral**: reinserido no **epicôndilo lateral**, de onde costuma se soltar;\n\n**4. ligamento colateral medial** ou **fixador articulado**: só se o cotovelo continuar **instável** depois dos passos anteriores.\n\n**Por que essa ordem**: depois que a cabeça do rádio ou a prótese entra, o acesso ao coronoide fica fechado. E o colateral lateral, reparado depois das estruturas ósseas, resolve a maioria dos casos; o medial é a última opção.\n\n**Na prova**: a ordem usual é **coronoide, rádio, colateral lateral e colateral medial**.",
-  "correta": "Repara-se de dentro para fora: coronoide, cabeça do rádio, colateral lateral e, se ainda instável, colateral medial.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível; Fraturas do coronoide; Fratura da cabeça do rádio."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Tríade terrível",
+      "Fraturas do coronoide",
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "triade-terrivel-9e6a5bba",
+      "triade-terrivel-2c2c5123",
+      "triade-terrivel-fc91076c",
+      "triade-terrivel-7f75b022",
+      "triade-terrivel-fe3d9fe4",
+      "triade-terrivel-ccad4df0",
+      "triade-terrivel-499f49dc",
+      "triade-terrivel-886bacd0",
+      "triade-terrivel-ed2e0665",
+      "fraturas-do-coronoide-fd8d6fcf",
+      "fratura-da-cabeca-do-radio-ea450acb"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "6b71d73d4c9c43df016b8085cc79e6466e5dba5126e41ea551bf59742b829e4c"
+    }
+   ],
+   "questaoSha256": "a35c0cd9b2c0578919151441cbb610cb8c2544eb7d2eac6f4fa1bbe02e7fbf5b",
+   "comentarioSha256": "1022714f4d9fb784d35bf66255c6e1e664f8cac0cc81e32b6b508556dc9245aa"
+  }
  },
  "trauma-0206": {
   "conceito": "A cobertura precoce de partes moles com retalho livre microvascular em fraturas expostas com grande perda de cobertura é um dos pilares do tratamento moderno dessas lesões. O trabalho clássico de **Godina**, ainda hoje referência sobre o tema, demonstrou que a realização desse procedimento dentro de uma janela precoce (classicamente descrita como até **72 horas** do trauma) está associada a taxas significativamente menores de infecção e de pseudoartrose, em comparação com a cobertura tardia (que enfrenta um leito cada vez mais fibrótico, colonizado e com pior potencial de integração vascular do retalho).",
@@ -4383,18 +4421,48 @@
   "conferido": false
  },
  "trauma-0318": {
+  "conceito": "**Na tríade terrível, o lateral costuma ser arrancado de sua origem umeral.** A combinação de luxação com fraturas da cabeça radial e do coronoide representa falha de contenções ósseas e ligamentares. O resumo descreve o colateral lateral como quase sempre avulsionado no **epicôndilo lateral**.\n\nÉ importante separar os termos. **Origem** é o ponto umeral destacado na pergunta; **inserção**, neste contraste, é a ligação distal, com o componente ulnar lateral chegando à crista do supinador. Já lesão **intrassubstancial** é a ruptura dentro do próprio ligamento, sem que o evento principal seja arrancá-lo de uma extremidade.\n\nO padrão mais frequente explica o reparo: a contenção é recolocada anatomicamente no centro isométrico do capítulo com túneis ou âncoras. A técnica descrita tensiona em pronação e flexão a 90 graus, e depois testa a estabilidade. O medial só é abordado se ainda houver instabilidade relevante.\n\n“Mais frequente” não torna impossíveis as outras formas de ruptura. O exame cirúrgico precisa identificar o padrão real e a qualidade do tecido. A questão procura o tipo predominante dentro da tríade, não uma lei de que todo ligamento lateral se rompe da mesma maneira em qualquer trauma.\n\n**Na Biblioteca, leia o item “colateral lateral” em “A ordem da cirurgia”.** Relacione o local de avulsão ao ponto de reinserção e compare com a anatomia do complexo lateral para não confundir origem, inserção e corpo do ligamento.",
+  "correta": "**A: avulsão na origem.** O resumo localiza a lesão predominante no epicôndilo lateral, de onde o complexo se desprende. Esse padrão sustenta o reparo umeral anatômico e isométrico descrito na cirurgia da tríade.\n\nA escolha não dispensa examinar o ligamento inteiro. Se houver lesão diferente ou tecido inadequado, a estratégia deve ser adaptada; a frequência apresentada não prova que toda ruptura será idêntica.",
   "incorretas": {
-   "B": "**Menos frequente.** A avulsão na inserção ulnar, na crista do supinador, é menos comum que a umeral.",
-   "C": "**Menos frequente.** Rupturas parciais no meio do ligamento não são o padrão típico da tríade.",
-   "D": "**Menos frequente.** A ruptura completa no meio do ligamento ocorre menos que a avulsão umeral."
+   "B": "**Avulsão na inserção desloca o local da falha para a extremidade distal.** O componente ulnar lateral se relaciona à crista do supinador, enquanto o padrão predominante da tríade no resumo é o desprendimento da origem epicondilar. A alternativa usa um tipo de lesão possível, mas no endereço oposto ao perguntado.",
+   "C": "**Ruptura parcial intrassubstancial significa lesão dentro do ligamento sem atravessar toda sua espessura.** Isso é diferente de avulsão de uma extremidade. O resumo descreve o padrão típico como arrancamento da origem, não como simples lesão parcial do corpo. A opção altera tanto a localização quanto a natureza da lesão predominante.",
+   "D": "**Ruptura transfixante intrassubstancial atravessa a espessura do corpo ligamentar.** Pode representar uma lesão importante, mas não é sinônimo de avulsão umeral. Gravidade não define o tipo mais frequente: a questão cobra o local e o mecanismo de falha, que a fonte situa na origem."
   },
-  "conceito": "**A tríade terrível.** É a combinação de **luxação do cotovelo**, fratura da **cabeça do rádio** e fratura do **coronoide**. O mecanismo é a luxação **posterolateral** (supinação, valgo e carga axial), que começa pelo lado **lateral**. É terrível porque, tratada de forma incompleta, leva a **instabilidade recorrente**, rigidez e artrose.\n\n**Como o ligamento lateral rompe.** O complexo colateral **lateral** (colateral radial, **colateral ulnar lateral**, anular e acessório) converge para uma origem comum no **epicôndilo lateral**, no ponto **isométrico**, que coincide com o centro de rotação do capítulo. Na tríade terrível e nas luxações, a lesão mais frequente é a **avulsão da origem umeral**, muitas vezes deixando o epicôndilo \"careca\" (bald spot), às vezes com a origem dos extensores junto. Rupturas no meio do ligamento ou na inserção ulnar são menos comuns.\n\n**O que isso muda na cirurgia.** O reparo é uma **reinserção** do complexo lateral no epicôndilo, no ponto isométrico, com **âncoras** ou pontos **transósseos**, e não uma sutura término-terminal. Um ponto de reinserção fora do isométrico deixa o ligamento frouxo ou apertado demais durante o arco de movimento.\n\n**O protocolo de tratamento.** Reconstrói-se \"de dentro para fora\": **coronoide** (fixação com parafusos ou sutura em laço pela cápsula anterior, para fragmentos pequenos), **cabeça do rádio** (fixação ou **prótese**; nunca ressecar sem substituir nesse contexto), **complexo lateral** (reinserção) e, se o cotovelo continuar instável entre 30 e 130 graus, **colateral medial** ou **fixador articulado**. Depois, mobilização precoce.\n\n**Na prova:** na tríade terrível, o colateral lateral costuma estar **avulsionado da origem** no epicôndilo lateral; o reparo é **reinserção no ponto isométrico**.",
-  "correta": "**Avulsão na sua origem.** O complexo lateral costuma se desinserir do epicôndilo lateral, e por isso é reparado por reinserção no ponto isométrico com âncora ou ponto transósseo.",
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 39"
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível; Quem segura o cotovelo; Luxação simples do cotovelo."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Tríade terrível",
+      "Quem segura o cotovelo",
+      "Luxação simples do cotovelo"
+     ],
+     "blocos": [
+      "triade-terrivel-fe3d9fe4",
+      "triade-terrivel-2c2c5123",
+      "quem-segura-o-cotovelo-d2f0137f",
+      "luxacao-simples-do-cotovelo-ce2e0d90",
+      "triade-terrivel-ccad4df0",
+      "triade-terrivel-499f49dc"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "10f67cf3dc696292d7ef4a6df7cb77ca845bae450ddc90d96ae91d55f6317121"
+    }
+   ],
+   "questaoSha256": "530b96f2da4a7946171b137217f566556cf5bba2abb7c27bb775cf1609af5ed6",
+   "comentarioSha256": "c747bc2fa060e7283fb0955d15782024e8fc893a4c7cf4185c3e34d2b193e6a5"
+  }
  },
  "trauma-0319": {
   "incorretas": {
@@ -14542,19 +14610,47 @@
   "provavel": "C"
  },
  "trauma-1295": {
-  "conceito": "A tríade terrível combina luxação do cotovelo, fratura da cabeça radial e fratura do coronoide. O conjunto perde contenção óssea e ligamentar, com risco de instabilidade recorrente. A cabeça radial participa da estabilidade em valgo, e o coronoide ajuda a impedir deslocamentos e a sustentar a congruência ulnohumeral.\n\nDepois de reconstruir os componentes ósseos necessários, repara-se o complexo lateral e testa-se se o cotovelo permanece reduzido no arco funcional. Se persistir instabilidade, podem ser necessários reparo medial e estabilização adicional. Um ligamento medial lesado não precisa ser reparado em todos os casos, porque pode cicatrizar quando a articulação permanece congruente. A sequência busca restaurar estabilidade com a menor agressão necessária.",
-  "correta": "A sequência lateral primeiro e medial se necessário é a resposta clássica. Após reparar o lateral, testa-se a manutenção da redução; o medial é acrescentado quando persiste instabilidade clinicamente relevante. O objetivo não é reconstruir todas as estruturas lesionadas por definição, mas obter uma articulação estável e mobilizável.",
+  "conceito": "**Após reconstruir coronoide e cabeça radial, ainda é necessário recuperar a contenção lateral.** Na tríade terrível, o complexo lateral costuma estar avulsionado de sua origem no epicôndilo. O roteiro do resumo o repara, testa em diferentes rotações e só então indica reparo medial se a instabilidade persistir.\n\nA cabeça radial deve ser preservada por fixação ou substituída, e o coronoide precisa receber tratamento compatível com o padrão. Essas etapas ósseas não dispensam o lateral; de modo semelhante, reparar o lateral não garante que o medial esteja competente. O teste entre as etapas decide se é necessário ampliar a reconstrução.\n\nSe o cotovelo continua instável após o tratamento necessário das contenções, o capítulo inclui estabilização adicional, como fixador externo estático, estabilizador interno articulado ou placa-ponte temporária. Esses recursos são suporte para um conjunto ainda insuficiente, não a primeira escolha automática antes de reconstruir o lateral.\n\nA alternativa C corresponde diretamente a esse roteiro. O acervo não tem gabarito oficial para a questão; por isso a resposta é registrada como **provável pela fonte**, sem transformar a inferência em resposta oficial da prova.\n\n**Leia “A ordem da cirurgia” no resumo da Biblioteca e acompanhe os verbos “reparar”, “testar” e “se continuar instável”.** As condições importam tanto quanto os nomes dos ligamentos: evitam operar o medial ou instalar suporte adicional de forma automática.",
+  "correta": "**C: primeiro o lateral, depois o medial se persistir instabilidade.** É a resposta provável sustentada pelo resumo. O reparo lateral é seguido de teste em pronação, neutro e supinação; só o resultado residual justifica avançar para o medial dentro desse roteiro.\n\nA questão já informa que as estruturas ósseas foram tratadas. Assim, não é necessário repetir essas etapas como resposta, mas confirmar que a estabilidade obtida com elas e com o lateral é suficiente.",
   "incorretas": {
-   "A": "Começar pelo medial e deixar o lateral para uma eventual persistência de instabilidade não reproduz o algoritmo habitual. O complexo lateral é essencial para controlar a instabilidade rotatória posterolateral. A lesão medial pode existir, mas sua presença não obriga a priorizá-la antes da reconstrução lateral.",
-   "B": "O fixador articulado pode ajudar em instabilidade residual, porém não deve substituir de início o reparo de estruturas reparáveis. O suporte externo mantém congruência durante a cicatrização, sem resolver sozinho a insuficiência ligamentar. A escolha depende da estabilidade após a reconstrução, não de uma ordem automática.",
-   "D": "Usar fixação articulada antes de considerar reparo medial não é uma exigência universal. Existem cenários em que a estabilização adicional é preferida, mas a opção a transforma em etapa obrigatória. O algoritmo assinalado prioriza o reparo medial quando a reconstrução óssea e lateral não mantém congruência."
+   "A": "**A sequência ligamentar foi invertida.** O capítulo repara o lateral antes de avaliar a necessidade do medial. Começar pelo medial não reproduz o roteiro e deixa sem tratamento inicial o lado frequentemente avulsionado. A opção também perde a oportunidade de decidir a segunda abordagem a partir do teste após o primeiro reparo.",
+   "B": "**O fixador foi antecipado antes do reparo ligamentar lateral.** O suporte pode ser necessário se a reconstrução das contenções não mantiver estabilidade, mas não substitui a etapa lateral descrita. O erro principal é a ordem, e não ensinar que todo fixador articulado seja proibido em qualquer situação clínica.",
+   "D": "**O início lateral está correto, mas o suporte adicional foi colocado antes de avaliar/reparar o medial segundo a sequência da fonte.** O roteiro testa e aborda o medial se a instabilidade persiste; só depois considera estabilização adicional quando necessária. Isso não exclui adaptações em casos selecionados, mas não é a sequência pedida pelo resumo."
   },
-  "referencias": [
-   "AO Surgery Reference. Open reduction internal fixation for Terrible triad. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/fracture-dislocation-radial-head-and-or-coronoid-terrible-triad/open-reduction-internal-fixation"
-  ],
-  "geradoEm": "2026-10-07",
   "conferido": false,
-  "provavel": "C"
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível."
+  ],
+  "provavel": "C",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Tríade terrível"
+     ],
+     "blocos": [
+      "triade-terrivel-fe3d9fe4",
+      "triade-terrivel-ccad4df0",
+      "triade-terrivel-499f49dc",
+      "triade-terrivel-886bacd0",
+      "triade-terrivel-fc91076c",
+      "triade-terrivel-7f75b022"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "58174445f400708396f95cdab740a6cdc07ac8025700ee961ea6749e1544666d"
+    }
+   ],
+   "questaoSha256": "71d4207a3ee272d514b70aed452cb6cb1fd3e100a9cf984515bed0bcffc7c3be",
+   "comentarioSha256": "d5f315ec49f537db5359b2b5a303e36df3a8a2dba05ca05ea444c94461a0c9fd"
+  }
  },
  "trauma-1296": {
   "conceito": "A borda da cabeça radial articula com a incisura radial da ulna durante a pronossupinação. Colocar uma placa em uma região de contato pode bloquear a rotação e gerar impacto. A zona de segurança para implantes proeminentes é a parcela que não articula com a ulna.\n\nCaputo e colaboradores relacionaram um setor útil de 90° aos marcos distais palpáveis: estiloide radial e tubérculo de Lister. A projeção longitudinal desses marcos auxilia a localização proximal. O arco anatômico não articular médio do estudo foi maior que 90°, mas a região operacional garantida não deve ser confundida com toda essa média. Outra técnica utiliza marcas durante a rotação; ela precisa respeitar limites próprios.",
