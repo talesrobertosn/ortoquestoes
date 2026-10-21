@@ -3746,15 +3746,43 @@
   "conferido": false
  },
  "ombro-cotovelo-0363": {
+  "conceito": "**No rádio proximal, Thompson passa entre extensor radial curto do carpo e extensor comum dos dedos.** A via posterolateral prolonga distalmente o intervalo de Kaplan. Ao descer, o parceiro do radial curto muda: no distal passa a ser o extensor longo do polegar. O enunciado delimita proximal, de modo que trocar esses parceiros inverte a anatomia solicitada.\n\nA incisão vai do epicôndilo lateral ao tubérculo de Lister. Encontrar o intervalo de distal para proximal é facilitado pelos músculos do polegar que emergem entre os extensores. No proximal, o supinador recobre o rádio e contém o interósseo posterior, que precisa ser protegido; quando cabeça e colo devem ser expostos, o resumo recomenda identificá-lo cuidadosamente.\n\nO plano não é internervoso apenas porque há dois músculos separados. O radial curto recebe ramo profundo do radial, e os demais componentes são do interósseo posterior. Conhecer essa relação evita supor que seguir um intervalo superficial torna a exposição profunda automaticamente segura.\n\n**Na Biblioteca, leia “Rádio por trás: Thompson” e acompanhe o percurso de distal para proximal.** O ponto de prova ganha utilidade quando a localização do intervalo leva também à proteção do nervo.",
+  "correta": "**B: extensor radial curto e extensor comum dos dedos.** É o par proximal da via descrita. O radial curto permanece como referência ao longo da exposição, mas o parceiro muda distalmente.\n\nA aproximação do supinador exige atenção ao interósseo posterior; o nome correto do plano não dispensa esse cuidado.",
   "incorretas": {
-   "A": "O extensor radial longo do carpo fica mais acima e mais para o lado do rádio. Na região proximal, o limite clássico do intervalo é o extensor radial curto.",
-   "C": "O extensor longo do polegar só aparece como referência na parte distal da via, e não na região proximal do rádio.",
-   "D": "O extensor radial curto está certo, mas na região proximal o outro limite é o extensor comum dos dedos. O extensor longo do polegar é referência mais abaixo."
+   "A": "**O extensor dos dedos está correto, mas o radial longo foi colocado no lugar do curto.** O resumo aponta que o longo fica lateral e cobre a origem do curto. Confundir os dois muda o intervalo, mesmo mantendo um nome muito parecido.",
+   "C": "**Reúne o radial longo com o extensor longo do polegar, sem reproduzir o par proximal.** O parceiro polegar pertence à descrição distal com o radial curto, enquanto o proximal é radial curto com dos dedos. A alternativa troca a referência e o nível ao mesmo tempo.",
+   "D": "**É o par distal, não o proximal.** Extensor radial curto e extensor longo do polegar aparecem na continuação inferior da exposição. O enunciado pede a região proximal, onde o parceiro do radial curto é o extensor comum dos dedos."
   },
-  "conceito": "A via de **Thompson** é o acesso **posterior** (pelas costas do antebraço) ao rádio, usada para expor a parte de cima e o meio do osso.\n\nNa parte de cima do antebraço, o cirurgião passa entre dois músculos: o **extensor radial curto do carpo** (que estende o punho) e o **extensor comum dos dedos** (que estende os dedos). Mais abaixo, um terceiro músculo surge entre os dois grupos, o extensor longo do polegar, e passa a servir de referência na parte distal da via.\n\nA estrutura mais perigosa no caminho é o **nervo interósseo posterior**, um ramo do nervo radial que passa por dentro do músculo **supinador**, logo abaixo do cotovelo, enrolado em torno do rádio. Ele comanda a extensão dos dedos e do polegar. A sequência de segurança é: identificar o nervo dentro do supinador antes de descolar qualquer coisa, colocar o antebraço em **supinação** (palma para cima), que leva o supinador e o nervo para a frente e os afasta do campo, e descolar o supinador do osso com cuidado.\n\nVale notar a diferença em relação às vias laterais do cotovelo (Kocher e Kaplan), em que a proteção é feita com **pronação**: lá o trabalho é no colo do rádio, e a pronação afasta o nervo; aqui o trabalho é no corpo do rádio, e a supinação é que afasta.",
-  "correta": "Extensor radial curto do carpo e extensor comum dos dedos. É o intervalo da via de Thompson na região proximal do rádio.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Vias de acesso e o nervo interósseo posterior."
+  ],
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-42-diafise-radio-ulna",
+     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+     "secoes": [
+      "Vias de acesso e o nervo interósseo posterior"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-fa2b44fd"
+     ],
+     "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+     "trechosSha256": "8b19cf890f22dc236dd53460882b1915308bcaf895bc99f4d953bcb8a4bb9b2c"
+    }
+   ],
+   "questaoSha256": "42f857e8089634d2e1901af31fbef2781ea379e85876212a944f969c23ae6c5d",
+   "comentarioSha256": "f881708daf0c053a400d6494c3ff7eabb09cc2570767f532c720cbdca10dcd01"
+  }
  },
  "ombro-cotovelo-0364": {
   "incorretas": {
@@ -5990,19 +6018,43 @@
   "conferido": false
  },
  "ombro-cotovelo-0526": {
-  "conceito": "**A lesão de Monteggia.** É a fratura da ulna associada à luxação da cabeça do rádio, descrita por Giovanni Battista Monteggia em 1814. O princípio é que, num antebraço formado por dois ossos unidos por articulações e pela membrana interóssea, a fratura de um osso com desvio exige uma lesão no outro ou nas articulações. Por isso, diante de uma fratura isolada da ulna com angulação, deve-se procurar a luxação da cabeça do rádio, frequentemente perdida.\n\n**Classificação de Bado.** Baseia-se na direção da luxação da cabeça do rádio, que acompanha a direção do ápice da angulação da ulna.\n\n| Tipo | Luxação da cabeça do rádio | Frequência e observações |\n|---|---|---|\n| I | Anterior | O mais comum, especialmente em crianças |\n| II | Posterior | Mais comum em adultos, frequentemente com fratura da cabeça do rádio |\n| III | Lateral ou anterolateral | Segundo mais comum em crianças; fratura da metáfise proximal da ulna; risco ao nervo interósseo posterior |\n| IV | Anterior, com fratura do rádio e da ulna no mesmo nível | Raro |\n\n**Como diagnosticar.** A linha radiocapitular, traçada pelo centro do colo do rádio, deve passar pelo centro do capítulo em todas as incidências. Se não passar, a cabeça do rádio está luxada.\n\n**Tratamento.** Em crianças, a redução da fratura da ulna, restaurando seu comprimento e alinhamento, geralmente reduz a cabeça do rádio; pode ser feita de forma fechada ou com fixação intramedular. Em adultos, fixação da ulna com placa e verificação da redução da cabeça do rádio. Lesões crônicas, com luxação antiga, exigem reconstruções mais complexas, como osteotomia da ulna e, às vezes, reconstrução do ligamento anular.\n\n**Lesão nervosa.** O nervo interósseo posterior é o mais lesado, especialmente no tipo III, e costuma se recuperar espontaneamente após a redução.\n\n> Bado: I anterior, II posterior, III lateral, IV anterior com fratura dos dois ossos.",
-  "correta": "**C: tipo III.** No tipo III de Bado, a cabeça do rádio se luxa lateral ou anterolateralmente, geralmente associada a uma fratura da metáfise proximal da ulna com angulação em varo. É o segundo tipo mais frequente em crianças e o mais associado à lesão do nervo interósseo posterior, que passa junto à cabeça do rádio. A redução da ulna, restaurando seu alinhamento, costuma reduzir a cabeça do rádio.",
+  "conceito": "**Luxação lateral da cabeça radial corresponde ao tipo III de Bado.** A direção também pode ser descrita como anterolateral, e a fratura ulnar é metafisária. Esse padrão é quase exclusivo da criança, com casos isolados no adulto segundo o resumo.\n\nBado usa a direção da cabeça em relação à deformidade ulnar; não é uma escala em que aumentar o número significa aumentar obrigatoriamente a gravidade. O tipo I tem cabeça anterior, o II posterior ou posterolateral e o IV volta a ter direção anterior, porém com fratura proximal dos dois ossos no mesmo nível. O rádio também quebrado distingue IV de I, não uma direção lateral.\n\nA distribuição por idade ajuda a contextualizar, mas não substitui o achado anatômico. O enunciado já fornece a informação necessária: lateral. Não é preciso imaginar uma radiografia nem inferir idade para resolver a classificação.\n\n**Leia “A classificação de Bado”, na Biblioteca, acompanhando a coluna da direção ao lado do padrão ulnar.** Comparar III e IV evita a troca entre lateralidade e presença de fratura radial associada.",
+  "correta": "**C: tipo III.** É o tipo que associa cabeça lateral ou anterolateral a fratura metafisária da ulna. A direção informada é o elemento decisivo.\n\nA associação infantil não significa que a classificação deixe de valer se o caso ocorrer em um adulto.",
   "incorretas": {
-   "A": "**O tipo I é a luxação anterior da cabeça do rádio.** É o mais comum, especialmente em crianças, com fratura da diáfise da ulna angulada para anterior. O mecanismo clássico é a hiperpronação ou a queda com o cotovelo em extensão.",
-   "B": "**O tipo II é a luxação posterior.** É mais frequente em adultos e costuma vir com fratura da cabeça do rádio e fratura proximal da ulna angulada para posterior. Lembra a luxação posterior do cotovelo.",
-   "D": "**O tipo IV é a luxação anterior com fratura do rádio e da ulna no mesmo nível.** É raro e exige fixação dos dois ossos. A direção da luxação é anterior, não lateral."
+   "A": "**Tipo I é anterior, não lateral.** A cabeça e o ápice ulnar apontam anteriormente nesse padrão. A alternativa mantém o diagnóstico geral de Monteggia, mas troca o dado que diferencia os tipos.",
+   "B": "**Tipo II é posterior ou posterolateral.** O componente “lateral” em posterolateral não o torna equivalente à luxação lateral ou anterolateral do III. É necessário preservar a direção completa, junto do padrão ulnar.",
+   "D": "**Tipo IV tem luxação anterior e fratura do rádio com a ulna proximal.** O acréscimo do traço radial define esse tipo, sem mudar a direção para lateral. Escolher IV por parecer uma lesão mais complexa ignora o critério classificatório informado."
   },
+  "conferido": false,
   "referencias": [
-   "Bado JL. The Monteggia lesion. Clin Orthop Relat Res. 1967;50:71-86.",
-   "Rockwood and Green's Fractures in Children. 9ª ed. Wolters Kluwer; 2020. Lesões de Monteggia."
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-42-diafise-radio-ulna",
+     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+     "secoes": [
+      "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+     ],
+     "blocos": [
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+      "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
+     ],
+     "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+     "trechosSha256": "22b5d050e3057524643ddf5c80ff2abc1d6772144af25b7c50fa6e30dba5b458"
+    }
+   ],
+   "questaoSha256": "e4ba1bb620eea990a3d2bacf8cb5dbcf5c7a5a0f00370b26db1ecaf987728748",
+   "comentarioSha256": "7990d3ae8138f4c526ac1aa015a842c755ec086551d95ccc921b5279b9b2d600"
+  }
  },
  "ombro-cotovelo-0527": {
   "conceito": "**A instabilidade rotatória posteromedial em varo (PMRI) é causada pela fratura da faceta anteromedial do processo coronoide**, combinada com lesão do complexo ligamentar colateral lateral.\n\n### Mecanismo\n\nQueda com o cotovelo em extensão sob **carga em varo, rotação interna do antebraço e força axial**. A tróclea medial impacta a faceta anteromedial do coronoide e a fratura, enquanto o ligamento colateral lateral se rompe (avulsão do epicôndilo lateral). Diferente da tríade terrível (posterolateral, com fratura da cabeça do rádio e da ponta do coronoide), na PMRI a **cabeça do rádio geralmente está íntegra**.\n\n### Classificação de O'Driscoll das fraturas do coronoide\n\n| Tipo | Local | Subtipos | Associação |\n|---|---|---|---|\n| 1 | **Ponta** | 1: até 2 mm; 2: mais de 2 mm | Tríade terrível (instabilidade posterolateral) |\n| 2 | **Faceta anteromedial** | 1: borda (rim); 2: borda + ponta; 3: borda + tubérculo sublime (± ponta) | **Instabilidade posteromedial em varo** |\n| 3 | **Base** | 1: corpo e base; 2: + fratura do olécrano | Fratura-luxação transolecraniana |\n\nRegan e Morrey classificam pelo tamanho do fragmento da ponta (I avulsão, II menos de 50%, III mais de 50%), sem considerar a faceta anteromedial.\n\n### Por que reconhecer\n\nA fratura da faceta anteromedial pode parecer pequena na radiografia, mas é muito instável: sem fixação, o cotovelo subluxa em varo e evolui para **artrose precoce**. A **tomografia** é essencial. Tratamento: **fixação da faceta anteromedial** (placa de apoio pela via medial, entre as cabeças do flexor ulnar do carpo) e **reparo do colateral lateral**.",

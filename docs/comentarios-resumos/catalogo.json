@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1719,
+  "pendente": 1671,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 28,
+  "pendente-fonte": 36,
   "pendente-inspecao-imagem": 174,
-  "revisada": 336
+  "revisada": 376
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -16,9 +16,10 @@
    "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
    "estados": {
     "duplicada": 3,
-    "pendente": 63,
+    "pendente": 42,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 1,
-    "revisada": 3
+    "revisada": 23
    }
   },
   "rockwood10-24-fraturas-estresse": {
@@ -61,8 +62,9 @@
    "sha256": "59068fa4e61599e2066ed1522110736f83d1ce8153546e725441a1f07fb26f39",
    "estados": {
     "duplicada": 2,
-    "pendente": 37,
+    "pendente": 36,
     "pendente-anulada": 1,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 6,
     "revisada": 6
    }
@@ -72,10 +74,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 84,
-    "pendente-fonte": 2,
+    "pendente": 79,
+    "pendente-fonte": 3,
     "pendente-inspecao-imagem": 15,
-    "revisada": 66
+    "revisada": 70
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -83,10 +85,10 @@
    "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
    "estados": {
     "duplicada": 8,
-    "pendente": 48,
-    "pendente-fonte": 1,
+    "pendente": 16,
+    "pendente-fonte": 9,
     "pendente-inspecao-imagem": 3,
-    "revisada": 44
+    "revisada": 68
    }
   },
   "rockwood10-44-carpo": {
@@ -171,8 +173,9 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 69,
-    "pendente-inspecao-imagem": 1
+    "pendente": 68,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 1
    }
   },
   "rockwood10-58-femur-distal": {
@@ -206,8 +209,9 @@
    "titulo": "Fratura do planalto tibial",
    "sha256": "3ae43c688a6d7a0cbc02a3d6e5fc448b1092f5eb77969a4a46057c0164aa2a29",
    "estados": {
-    "pendente": 42,
-    "pendente-inspecao-imagem": 3
+    "pendente": 41,
+    "pendente-inspecao-imagem": 3,
+    "revisada": 1
    }
   },
   "rockwood10-63-diafise-tibia": {
@@ -215,10 +219,11 @@
    "sha256": "6a66c25cc6629c013a8f816accbb6b082a1c5a6e3eda207524377c8b31f9911c",
    "estados": {
     "duplicada": 5,
-    "pendente": 142,
+    "pendente": 124,
     "pendente-anulada": 2,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 2,
-    "revisada": 4
+    "revisada": 21
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -226,8 +231,9 @@
    "sha256": "5a24961c67a65fdca0dd2dc9a430e46cc1edce3eafedeaa444e32dae9e85a407",
    "estados": {
     "duplicada": 4,
-    "pendente": 44,
-    "pendente-inspecao-imagem": 1
+    "pendente": 43,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 1
    }
   },
   "rockwood10-65-tornozelo": {
@@ -245,8 +251,9 @@
    "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
    "estados": {
     "duplicada": 2,
-    "pendente": 47,
-    "pendente-inspecao-imagem": 4
+    "pendente": 46,
+    "pendente-inspecao-imagem": 4,
+    "revisada": 1
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -7167,8 +7174,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do capítulo 42 descreve Henry proximal entre braquiorradial e pronador redondo, mas não caracteriza o papel do braquial exigido pela alternativa oficial A nem o distingue dos três planos com flexores profundos/longos das demais opções. Falta a descrição anatômica do intervalo proximal em três músculos tal como perguntado. Não completar pelo comentário antigo; consultar fonte enviada com a anatomia da via antes de marcar baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -7182,7 +7189,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "084aeb68349814b2dbfbf3ac6bc9a6461db6dfe8a3cf33d6236aa15be20bca45"
+   "questaoSha256": "084aeb68349814b2dbfbf3ac6bc9a6461db6dfe8a3cf33d6236aa15be20bca45",
+   "pendencia": "O resumo do capítulo 42 descreve Henry proximal entre braquiorradial e pronador redondo, mas não caracteriza o papel do braquial exigido pela alternativa oficial A nem o distingue dos três planos com flexores profundos/longos das demais opções. Falta a descrição anatômica do intervalo proximal em três músculos tal como perguntado. Não completar pelo comentário antigo; consultar fonte enviada com a anatomia da via antes de marcar baseResumo."
   },
   "mao-0052": {
    "tema": "mao",
@@ -9681,8 +9689,8 @@
    ],
    "prova": "FMRP-USP",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta sustentar a associação com imobilização prolongada na alternativa oficial D e avaliar a negação de risco para fratura radial distal à ulnar em C. O resumo 42 sustenta trauma craniano, cominuição no mesmo nível e via única proximal, mas não resolve esses dois complementos; não transformar ausência de um fator na lista em prova de que não é fator de risco. Preservar a questão sem baseResumo até fonte suficiente para as quatro alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -9696,7 +9704,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "179d9a335a5134df4f93ea2dc4139c7d58b4282e8e1839f1c327bfa8c5fbb28f"
+   "questaoSha256": "179d9a335a5134df4f93ea2dc4139c7d58b4282e8e1839f1c327bfa8c5fbb28f",
+   "pendencia": "Falta sustentar a associação com imobilização prolongada na alternativa oficial D e avaliar a negação de risco para fratura radial distal à ulnar em C. O resumo 42 sustenta trauma craniano, cominuição no mesmo nível e via única proximal, mas não resolve esses dois complementos; não transformar ausência de um fator na lista em prova de que não é fator de risco. Preservar a questão sem baseResumo até fonte suficiente para as quatro alternativas."
   },
   "mao-0710": {
    "tema": "mao",
@@ -10700,7 +10709,7 @@
    ],
    "prova": "UFG",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10715,7 +10724,36 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "adcc9b69fe1d7a80881dc4e6d4fbde7716079c0f567e152ab6afb4f1da7e1bcd"
+   "questaoSha256": "adcc9b69fe1d7a80881dc4e6d4fbde7716079c0f567e152ab6afb4f1da7e1bcd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia",
+       "Medida da pressão e o delta P"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-6968671a",
+       "os-compartimentos-de-cada-regiao-231bd2af",
+       "fasciotomia-90ee7ca5",
+       "medida-da-pressao-e-o-delta-p-13e06142",
+       "os-compartimentos-de-cada-regiao-49b1c86f"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "a5bf943e14187166f601049a412d9f6d509745638673b4f851ac64dd97f27b2c"
+     }
+    ],
+    "questaoSha256": "adcc9b69fe1d7a80881dc4e6d4fbde7716079c0f567e152ab6afb4f1da7e1bcd",
+    "comentarioSha256": "c1db477343823ab8b679987d7a2d49fca3643bb4465fae7963221f78916f3bb7"
+   }
   },
   "mao-0902": {
    "tema": "mao",
@@ -11273,7 +11311,7 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11288,7 +11326,38 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "571baca9131e560f8d819f9e1f73a29987019ac9b81752bba51ff97deb6356a7"
+   "questaoSha256": "571baca9131e560f8d819f9e1f73a29987019ac9b81752bba51ff97deb6356a7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia",
+       "O tratamento preferido dos autores",
+       "Por que a pressão mata o músculo",
+       "Diagnóstico clínico: por que os sinais chegam tarde"
+      ],
+      "blocos": [
+       "fasciotomia-5f4d677f",
+       "fasciotomia-4de1412f",
+       "o-tratamento-preferido-dos-autores-930f2a36",
+       "o-tratamento-preferido-dos-autores-355d35ed",
+       "por-que-a-pressao-mata-o-musculo-7d5655e4",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "78091af69f55e886fb38685c2ab831d0ba7e3985f4e328fdcb005ada2b5650fa"
+     }
+    ],
+    "questaoSha256": "571baca9131e560f8d819f9e1f73a29987019ac9b81752bba51ff97deb6356a7",
+    "comentarioSha256": "621e4fe5ccad29124e15ee41ea15dccf53063e102f5c307ae38a2a95d46e0b05"
+   }
   },
   "mao-0964": {
    "tema": "mao",
@@ -12724,7 +12793,7 @@
    ],
    "prova": "PUC-SP",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12739,7 +12808,35 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "a72d143d6c810da29ca0b006c99b9d92f4d3dfa5c1f56947fc20874271d843e7"
+   "questaoSha256": "a72d143d6c810da29ca0b006c99b9d92f4d3dfa5c1f56947fc20874271d843e7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal",
+       "Vias de acesso e o nervo interósseo posterior"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-9845d4e9",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "536c4c814701ba48662cda0ff4b879d40e242d990fe5644dc5b2e60f82c2c629"
+     }
+    ],
+    "questaoSha256": "a72d143d6c810da29ca0b006c99b9d92f4d3dfa5c1f56947fc20874271d843e7",
+    "comentarioSha256": "7bf3f5b487e6d91e3dbce75cf2ffda574f703e3d5cd5c6c19a2728ec27f269bb"
+   }
   },
   "mao-1103": {
    "tema": "mao",
@@ -13937,7 +14034,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -13952,7 +14049,49 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "08a3b3fa61f2c6ee1f1b84704e0de9305d595561df9e12866110532129f13513"
+   "questaoSha256": "08a3b3fa61f2c6ee1f1b84704e0de9305d595561df9e12866110532129f13513",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3db247b5",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-bc96e99b",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "12e82fbf302e5d964827c9a5b15c2050674e03c6c9002ac69cd0487c29fb6064"
+     },
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-8dbbe2b9"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "7c2ef0c88ba38ed9ef1856c331f78ab12e3febdda81312f7cf3bee34f0ff1a38"
+     }
+    ],
+    "questaoSha256": "08a3b3fa61f2c6ee1f1b84704e0de9305d595561df9e12866110532129f13513",
+    "comentarioSha256": "f8d5a72ce235426004a505384f371b3283520758ce3ee714f669122e946e46d5"
+   }
   },
   "mao-1318": {
    "tema": "mao",
@@ -14043,7 +14182,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14058,7 +14197,32 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "3309a1d6f9d6b7f5bf26227c80e3ed7c3f4b90a591fac1ec665909f61abfc308"
+   "questaoSha256": "3309a1d6f9d6b7f5bf26227c80e3ed7c3f4b90a591fac1ec665909f61abfc308",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-231bd2af",
+       "fasciotomia-90ee7ca5"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "5e785797d6a0ca227fdc9c53138a85106b6736d1dd6e29333a757b9840c8e6a2"
+     }
+    ],
+    "questaoSha256": "3309a1d6f9d6b7f5bf26227c80e3ed7c3f4b90a591fac1ec665909f61abfc308",
+    "comentarioSha256": "a625f97293329b91fe9e2911345a12ab3ebe7baf5547a4cd874d652a694ed400"
+   }
   },
   "mao-1349": {
    "tema": "mao",
@@ -14434,7 +14598,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14449,7 +14613,37 @@
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental"
    ],
-   "questaoSha256": "fed928c327c145eb79fb615c7d26dc25588512867a42cdbece67c998b0232e55"
+   "questaoSha256": "fed928c327c145eb79fb615c7d26dc25588512867a42cdbece67c998b0232e55",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Diagnóstico clínico: por que os sinais chegam tarde",
+       "O tratamento preferido dos autores",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-a352bc84",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+       "o-tratamento-preferido-dos-autores-930f2a36",
+       "o-tratamento-preferido-dos-autores-355d35ed",
+       "fasciotomia-7a3f42f7"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "4e3f93f8da0782917766ff2b40779a9ace7ff2864a47f2a685c9e363e3b5eba1"
+     }
+    ],
+    "questaoSha256": "fed928c327c145eb79fb615c7d26dc25588512867a42cdbece67c998b0232e55",
+    "comentarioSha256": "8c2c2da97f1967d8551790156f3287bb630230f990ec7e0473ee059dd1a3bd60"
+   }
   },
   "mao-1471": {
    "tema": "mao",
@@ -14705,7 +14899,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14720,7 +14914,51 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "0ed30fa9443fb83d3b6d7b8996a040bdf780a055425c618d12b633919b9282b3"
+   "questaoSha256": "0ed30fa9443fb83d3b6d7b8996a040bdf780a055425c618d12b633919b9282b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio",
+       "Vias de acesso e o nervo interósseo posterior"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-bc96e99b",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3db247b5",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c2a37150"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "524ac6da00b4b40d918056e9ec7fe27fb2873df02d204f7d8ae365a6521565c8"
+     },
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-fe207e21"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "67e3f8d3fd7ab112b05bcad69e84dccc84fa18a38785c402cbe4784ee5b86c12"
+     }
+    ],
+    "questaoSha256": "0ed30fa9443fb83d3b6d7b8996a040bdf780a055425c618d12b633919b9282b3",
+    "comentarioSha256": "4fe22634f152037fc905e540fe09eaf10e7748450da206f1a49380057be10977"
+   }
   },
   "mao-1508": {
    "tema": "mao",
@@ -14882,7 +15120,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14897,7 +15135,34 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "604c759a21abb8730513da1207c6f39d966693422f585bef48e5b4495b342584"
+   "questaoSha256": "604c759a21abb8730513da1207c6f39d966693422f585bef48e5b4495b342584",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-66eeabbb",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-f9ef8a06"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "b0262edbd0d32daea7836be449a15ce06622b532099bf2a524e2c312b5e1e6c8"
+     }
+    ],
+    "questaoSha256": "604c759a21abb8730513da1207c6f39d966693422f585bef48e5b4495b342584",
+    "comentarioSha256": "d909c7cc2f214493b7d54251bf4e31e8ea1c9ab88790e9b5a50f0c4454539fd4"
+   }
   },
   "mao-1530": {
    "tema": "mao",
@@ -15306,7 +15571,7 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15321,7 +15586,34 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "0043c0d749af8f559024fc9435d29ee027987d3b1e548a7e042755bef9cb8319"
+   "questaoSha256": "0043c0d749af8f559024fc9435d29ee027987d3b1e548a7e042755bef9cb8319",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-22d5d72f",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-018638b1",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-86b2096c",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "fdf4914735b8631ead25a807f2aa1651a7d62e5b615c5b4a0d8c4d58ad98aca6"
+     }
+    ],
+    "questaoSha256": "0043c0d749af8f559024fc9435d29ee027987d3b1e548a7e042755bef9cb8319",
+    "comentarioSha256": "953aac7b608b2f4f1af369202fa43898a45816b7293d2568954dcb08e9f47e6d"
+   }
   },
   "mao-1575": {
    "tema": "mao",
@@ -20108,7 +20400,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -20123,7 +20415,32 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "42f857e8089634d2e1901af31fbef2781ea379e85876212a944f969c23ae6c5d"
+   "questaoSha256": "42f857e8089634d2e1901af31fbef2781ea379e85876212a944f969c23ae6c5d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Vias de acesso e o nervo interósseo posterior"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-c37f4bf4",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-fa2b44fd"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "8b19cf890f22dc236dd53460882b1915308bcaf895bc99f4d953bcb8a4bb9b2c"
+     }
+    ],
+    "questaoSha256": "42f857e8089634d2e1901af31fbef2781ea379e85876212a944f969c23ae6c5d",
+    "comentarioSha256": "f881708daf0c053a400d6494c3ff7eabb09cc2570767f532c720cbdca10dcd01"
+   }
   },
   "ombro-cotovelo-0364": {
    "tema": "ombro-cotovelo",
@@ -21062,8 +21379,8 @@
    ],
    "prova": "FMRP-USP",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A tabela de Bado do resumo 42 sustenta A e permite distinguir direções erradas de B/C, mas falta a afirmação anatômica sobre envolvimento da crista troclear da alternativa D. O resumo não define essa estrutura nem sua relação com os padrões de Monteggia. Não inventar uma definição/localização nem uma exclusão universal só para completar a análise; consultar fonte anatômica enviada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -21078,7 +21395,8 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "c7ad97a6ed356e5affb33a9981323313e51231d7dcb1fb3f829bfcc23301b484"
+   "questaoSha256": "c7ad97a6ed356e5affb33a9981323313e51231d7dcb1fb3f829bfcc23301b484",
+   "pendencia": "A tabela de Bado do resumo 42 sustenta A e permite distinguir direções erradas de B/C, mas falta a afirmação anatômica sobre envolvimento da crista troclear da alternativa D. O resumo não define essa estrutura nem sua relação com os padrões de Monteggia. Não inventar uma definição/localização nem uma exclusão universal só para completar a análise; consultar fonte anatômica enviada."
   },
   "ombro-cotovelo-0520": {
    "tema": "ombro-cotovelo",
@@ -21104,7 +21422,7 @@
    ],
    "prova": "UFG",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -21120,7 +21438,32 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "e4ba1bb620eea990a3d2bacf8cb5dbcf5c7a5a0f00370b26db1ecaf987728748"
+   "questaoSha256": "e4ba1bb620eea990a3d2bacf8cb5dbcf5c7a5a0f00370b26db1ecaf987728748",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "22b5d050e3057524643ddf5c80ff2abc1d6772144af25b7c50fa6e30dba5b458"
+     }
+    ],
+    "questaoSha256": "e4ba1bb620eea990a3d2bacf8cb5dbcf5c7a5a0f00370b26db1ecaf987728748",
+    "comentarioSha256": "7990d3ae8138f4c526ac1aa015a842c755ec086551d95ccc921b5279b9b2d600"
+   }
   },
   "ombro-cotovelo-0527": {
    "tema": "ombro-cotovelo",
@@ -37794,7 +38137,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -37809,7 +38152,33 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "46720f4d2bd0ad39da68bae800d77db02ef0ccee084ca5183e46ef28595534f2"
+   "questaoSha256": "46720f4d2bd0ad39da68bae800d77db02ef0ccee084ca5183e46ef28595534f2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
+     }
+    ],
+    "questaoSha256": "46720f4d2bd0ad39da68bae800d77db02ef0ccee084ca5183e46ef28595534f2",
+    "comentarioSha256": "73e5940ea73f4a103a0e08294de49ee05b2ac4807cb3593311d507d78ed60cd1"
+   }
   },
   "trauma-0045": {
    "tema": "trauma",
@@ -40336,7 +40705,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40352,7 +40721,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "5546ac041986f9d062777217570ed6e635ae79f9285e13455b5f5201c3afdf6f"
+   "questaoSha256": "5546ac041986f9d062777217570ed6e635ae79f9285e13455b5f5201c3afdf6f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-d654f7b7",
+       "medida-da-pressao-e-o-delta-p-1312eae8",
+       "medida-da-pressao-e-o-delta-p-f94386d5",
+       "o-tratamento-preferido-dos-autores-930f2a36",
+       "o-tratamento-preferido-dos-autores-cb26ab73"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "be4cebcef1d15e8ca01dbbfbf2f9dad42120d320bb2c332bc1a78862d1c82047"
+     }
+    ],
+    "questaoSha256": "5546ac041986f9d062777217570ed6e635ae79f9285e13455b5f5201c3afdf6f",
+    "comentarioSha256": "9708036a4765896bdd86ce0729d16cc192f72a1e071de01107fb47bf679a4467"
+   }
   },
   "trauma-0151": {
    "tema": "trauma",
@@ -41422,7 +41819,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41438,7 +41835,32 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "d8689728678662a3e77765dff1f26b98cf2e85acefcbdb8b60a958932433a087"
+   "questaoSha256": "d8689728678662a3e77765dff1f26b98cf2e85acefcbdb8b60a958932433a087",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Por que a pressão mata o músculo"
+      ],
+      "blocos": [
+       "por-que-a-pressao-mata-o-musculo-1a07d757",
+       "por-que-a-pressao-mata-o-musculo-7d5655e4",
+       "por-que-a-pressao-mata-o-musculo-23e1059b"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "cc873c7a8589b451397ea4ccd58b28e227d7a374adba289556a9c5dead84a8a1"
+     }
+    ],
+    "questaoSha256": "d8689728678662a3e77765dff1f26b98cf2e85acefcbdb8b60a958932433a087",
+    "comentarioSha256": "347335689e1467e89425558195860ce8579c412c79f9742e2e8fad0520b62928"
+   }
   },
   "trauma-0196": {
    "tema": "trauma",
@@ -42442,7 +42864,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42466,7 +42888,39 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "12a68609a0eb0fa0ce9dbfc81dec24426f7f22e08bf5b2d1e805315cff2994a8"
+   "questaoSha256": "12a68609a0eb0fa0ce9dbfc81dec24426f7f22e08bf5b2d1e805315cff2994a8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Diagnóstico clínico: por que os sinais chegam tarde",
+       "Por que a pressão mata o músculo",
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+       "por-que-a-pressao-mata-o-musculo-2f99dc5f",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-a352bc84",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
+       "medida-da-pressao-e-o-delta-p-491de05b",
+       "o-tratamento-preferido-dos-autores-930f2a36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "80dc98ccecaca2502df4fa8f253791baa34c66c8a208cd3db7bd0a5a9f9d030e"
+     }
+    ],
+    "questaoSha256": "12a68609a0eb0fa0ce9dbfc81dec24426f7f22e08bf5b2d1e805315cff2994a8",
+    "comentarioSha256": "7f15a85c8a9ae503718b41604170b53945b61d2b427a075eb953798cc3f01d2d"
+   }
   },
   "trauma-0258": {
    "tema": "trauma",
@@ -42902,8 +43356,8 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta o limiar absoluto de 20 mmHg no hipotenso exigido pelo gabarito B e a comparação com 10, 30 e 40 mmHg. O resumo 17 usa delta P (diastólica menos compartimento), tendência e contexto; orienta corrigir hipotensão, sem fornecer esse corte absoluto. O capítulo 42 também usa relação com diastólica, não o 20 universal. Não converter delta P em pressão absoluta nem inventar a diastólica do paciente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42926,7 +43380,8 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "507bab70959ac1e731f9e93ad2dba83da934de49a0fe906f0148d0fa6063a703"
+   "questaoSha256": "507bab70959ac1e731f9e93ad2dba83da934de49a0fe906f0148d0fa6063a703",
+   "pendencia": "Falta o limiar absoluto de 20 mmHg no hipotenso exigido pelo gabarito B e a comparação com 10, 30 e 40 mmHg. O resumo 17 usa delta P (diastólica menos compartimento), tendência e contexto; orienta corrigir hipotensão, sem fornecer esse corte absoluto. O capítulo 42 também usa relação com diastólica, não o 20 universal. Não converter delta P em pressão absoluta nem inventar a diastólica do paciente."
   },
   "trauma-0275": {
    "tema": "trauma",
@@ -44940,8 +45395,8 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta a relação entre ápice volar do traço radial e a rotação do antebraço pedida pelo gabarito D. O resumo 42 associa hiperpronação a ulna anterior e hipersupinação a ulna posterior, mas não descreve o ápice da fratura radial. Essa ponte não pode ser afirmada por memória ou pelo comentário antigo; consultar fonte enviada que relacione ápice radial e direção/rotação.",
    "temComentario": true,
    "citacoes": [
     {
@@ -44955,7 +45410,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "67ba7f5c1d8ce75f5cdeb585a210b3208c07888f6004c8fee767153d3e6ec792"
+   "questaoSha256": "67ba7f5c1d8ce75f5cdeb585a210b3208c07888f6004c8fee767153d3e6ec792",
+   "pendencia": "Falta a relação entre ápice volar do traço radial e a rotação do antebraço pedida pelo gabarito D. O resumo 42 associa hiperpronação a ulna anterior e hipersupinação a ulna posterior, mas não descreve o ápice da fratura radial. Essa ponte não pode ser afirmada por memória ou pelo comentário antigo; consultar fonte enviada que relacione ápice radial e direção/rotação."
   },
   "trauma-0438": {
    "tema": "trauma",
@@ -46829,7 +47285,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46853,7 +47309,53 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "fbd45148dd411500297bb87a0cda1db7b276266c524329f2b409b009542a9e8d"
+   "questaoSha256": "fbd45148dd411500297bb87a0cda1db7b276266c524329f2b409b009542a9e8d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia",
+       "Quem tem síndrome compartimental"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-6968671a",
+       "fasciotomia-90ee7ca5",
+       "quem-tem-sindrome-compartimental-4b3a771a",
+       "quem-tem-sindrome-compartimental-5ca80c99"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "3888386fcea4c667e69f4f5213e8779840b00efcd636172de54bb20194205edc"
+     },
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Síndrome compartimental do antebraço"
+      ],
+      "blocos": [
+       "sindrome-compartimental-do-antebraco-b4aee409",
+       "sindrome-compartimental-do-antebraco-408a137e",
+       "sindrome-compartimental-do-antebraco-d130faa9",
+       "sindrome-compartimental-do-antebraco-9723cec1"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "482a63b7745b0178153ff656890de32e2fbcaf61b460076af10aa6cfbd73a857"
+     }
+    ],
+    "questaoSha256": "fbd45148dd411500297bb87a0cda1db7b276266c524329f2b409b009542a9e8d",
+    "comentarioSha256": "03134b7b081baa30296029173f0a0101209c56cbf4fb6c24c60652863c403845"
+   }
   },
   "trauma-0670": {
    "tema": "trauma",
@@ -47223,8 +47725,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta a demonstração de que pseudartrose da ulna (gabarito C) é a principal causa de reoperação e a comparação com infecção, instabilidade e ossificação heterotópica. O resumo 42 lista afrouxamento da fixação, ressecção da cabeça e material doloroso na série de Ring, sem chamar o primeiro de pseudartrose nem fornecer ranking comparativo das alternativas. Não equiparar afrouxamento a pseudartrose para justificar o gabarito.",
    "temComentario": true,
    "citacoes": [
     {
@@ -47238,7 +47740,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "bf6d9922995b8f1518b929dfb2fecd621ae4dd66f36ea3d7aed822f7c5433e2b"
+   "questaoSha256": "bf6d9922995b8f1518b929dfb2fecd621ae4dd66f36ea3d7aed822f7c5433e2b",
+   "pendencia": "Falta a demonstração de que pseudartrose da ulna (gabarito C) é a principal causa de reoperação e a comparação com infecção, instabilidade e ossificação heterotópica. O resumo 42 lista afrouxamento da fixação, ressecção da cabeça e material doloroso na série de Ring, sem chamar o primeiro de pseudartrose nem fornecer ranking comparativo das alternativas. Não equiparar afrouxamento a pseudartrose para justificar o gabarito."
   },
   "trauma-0689": {
    "tema": "trauma",
@@ -47436,7 +47939,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47459,7 +47962,32 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "26b3510d9cbb60a7d2df601b68da564136a31a961e4d17f5cb17afce67ba8514"
+   "questaoSha256": "26b3510d9cbb60a7d2df601b68da564136a31a961e4d17f5cb17afce67ba8514",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "0e0ed90604944f2aa4ded455f03cbbf39ffb49717b0e3acfd2173af738d168a3"
+     }
+    ],
+    "questaoSha256": "26b3510d9cbb60a7d2df601b68da564136a31a961e4d17f5cb17afce67ba8514",
+    "comentarioSha256": "208f7283cfcc591df9c93ed2fecc9143cbc5deb4ed89c6b13c7c3c3eafe7d891"
+   }
   },
   "trauma-0697": {
    "tema": "trauma",
@@ -47707,7 +48235,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47730,7 +48258,36 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "ad4ff6e3b2f341d70c5b91c510943f6c029c55e80a24a17da35c0fc98a74dc9b"
+   "questaoSha256": "ad4ff6e3b2f341d70c5b91c510943f6c029c55e80a24a17da35c0fc98a74dc9b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "A fratura associada",
+       "Fasciotomia",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "a-fratura-associada-6507c0fa",
+       "fasciotomia-4de1412f",
+       "fasciotomia-7a3f42f7",
+       "fasciotomia-0f8a1c3f",
+       "o-tratamento-preferido-dos-autores-5d2471ca"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "511c20da4ca9a0e96b8ac1d58985d72cc7c1fbc3a1a03a129670b7c1cc28f89c"
+     }
+    ],
+    "questaoSha256": "ad4ff6e3b2f341d70c5b91c510943f6c029c55e80a24a17da35c0fc98a74dc9b",
+    "comentarioSha256": "95033f5079def5c5d5c16ba363ea556fc9933d99011bb5432e8923d06fa0e90c"
+   }
   },
   "trauma-0706": {
    "tema": "trauma",
@@ -49341,7 +49898,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49364,7 +49921,33 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "eac2dd4578476969b0e8ae586d46f67b5d021f4e9622d89955d53d89339ead9d"
+   "questaoSha256": "eac2dd4578476969b0e8ae586d46f67b5d021f4e9622d89955d53d89339ead9d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
+     }
+    ],
+    "questaoSha256": "eac2dd4578476969b0e8ae586d46f67b5d021f4e9622d89955d53d89339ead9d",
+    "comentarioSha256": "15cf3fd54b217b85892137fb73ecc40e5547229a90d89e5eb0da9034e0b47aac"
+   }
   },
   "trauma-0805": {
    "tema": "trauma",
@@ -50144,7 +50727,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50159,7 +50742,37 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "5364714e65d761c3b9a96d3f86403ab2dcc7e0c515fb5e49b3708b8de4ddd12a"
+   "questaoSha256": "5364714e65d761c3b9a96d3f86403ab2dcc7e0c515fb5e49b3708b8de4ddd12a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal",
+       "A haste intramedular",
+       "Fraturas expostas e por projétil"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+       "a-haste-intramedular-353c6bb3",
+       "fraturas-expostas-e-por-projetil-5aeafa05"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "fac73a1d24157fb44d6cdb4b8ccd8758c39e7ebe83d24f913e0aeb2e43dc295b"
+     }
+    ],
+    "questaoSha256": "5364714e65d761c3b9a96d3f86403ab2dcc7e0c515fb5e49b3708b8de4ddd12a",
+    "comentarioSha256": "b2912d014800c16c70c9c88153674cf1834f314fbbd7fe5b36baf67467a00796"
+   }
   },
   "trauma-0859": {
    "tema": "trauma",
@@ -50365,8 +50978,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta um ranking de maior risco no Henry proximal entre artéria radial (gabarito A), mediano, interósseo anterior e interósseo posterior. O resumo 42 descreve proteção arterial e do interósseo posterior, mas não demonstra a superioridade do risco arterial pedida. Conhecer estruturas em risco não permite inventar qual é a mais lesada; consultar fonte enviada que sustente a comparação.",
    "temComentario": true,
    "citacoes": [
     {
@@ -50381,7 +50994,8 @@
     "rockwood10-37-diafise-umero",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "f182340bd435daf891acbcc37d1a56ebabb5dab8ce73178cce35f9ebf5d4218e"
+   "questaoSha256": "f182340bd435daf891acbcc37d1a56ebabb5dab8ce73178cce35f9ebf5d4218e",
+   "pendencia": "Falta um ranking de maior risco no Henry proximal entre artéria radial (gabarito A), mediano, interósseo anterior e interósseo posterior. O resumo 42 descreve proteção arterial e do interósseo posterior, mas não demonstra a superioridade do risco arterial pedida. Conhecer estruturas em risco não permite inventar qual é a mais lesada; consultar fonte enviada que sustente a comparação."
   },
   "trauma-0867": {
    "tema": "trauma",
@@ -50536,7 +51150,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50552,7 +51166,35 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "53ecf6fdd6cdc871d7eef4e0e1dfb4bb0e3c67fa9b760709f29860a8aa0adcd9"
+   "questaoSha256": "53ecf6fdd6cdc871d7eef4e0e1dfb4bb0e3c67fa9b760709f29860a8aa0adcd9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Fraturas expostas e por projétil",
+       "A haste intramedular"
+      ],
+      "blocos": [
+       "fraturas-expostas-e-por-projetil-5aeafa05",
+       "fraturas-expostas-e-por-projetil-217de6d1",
+       "a-haste-intramedular-353c6bb3",
+       "a-haste-intramedular-418a2c99",
+       "fraturas-expostas-e-por-projetil-cffa5e06"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "144deb2e7c66f148bc9ced0ed2313c4af9c96fc0ee707a181487d9a80945f727"
+     }
+    ],
+    "questaoSha256": "53ecf6fdd6cdc871d7eef4e0e1dfb4bb0e3c67fa9b760709f29860a8aa0adcd9",
+    "comentarioSha256": "6f91d9958d2677a465bd8780916a6d173283c9f68536380c9f8909879f48069b"
+   }
   },
   "trauma-0874": {
    "tema": "trauma",
@@ -50788,8 +51430,8 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta sustentar a dificuldade de exploração neurovascular da fixação intramedular (gabarito C), ponto que o resumo 42 expressamente não desenvolve. Também é necessário delimitar geração de haste ao comparar pseudartrose e resultados: hastes antigas e bloqueadas modernas têm dados diferentes. Não usar o comentário antigo como prova nem chamar os resultados modernos de universalmente ruins para forçar C.",
    "temComentario": true,
    "citacoes": [
     {
@@ -50803,7 +51445,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "7707b4e0f548a0f324c9089f637c819a78f0bfde42da328f086190bdc35fe428"
+   "questaoSha256": "7707b4e0f548a0f324c9089f637c819a78f0bfde42da328f086190bdc35fe428",
+   "pendencia": "Falta sustentar a dificuldade de exploração neurovascular da fixação intramedular (gabarito C), ponto que o resumo 42 expressamente não desenvolve. Também é necessário delimitar geração de haste ao comparar pseudartrose e resultados: hastes antigas e bloqueadas modernas têm dados diferentes. Não usar o comentário antigo como prova nem chamar os resultados modernos de universalmente ruins para forçar C."
   },
   "trauma-0885": {
    "tema": "trauma",
@@ -51346,7 +51989,7 @@
    ],
    "prova": "TEOT/TARO",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51361,7 +52004,32 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "e0dabdb612985c6442a1e86272ec5ac122790b31a519648565132e5d4535d44f"
+   "questaoSha256": "e0dabdb612985c6442a1e86272ec5ac122790b31a519648565132e5d4535d44f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-3a12c43c",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "8c6937ddd3d5f16ac77b55468a98ba469328ef47d73a27216a1267253cfe7820"
+     }
+    ],
+    "questaoSha256": "e0dabdb612985c6442a1e86272ec5ac122790b31a519648565132e5d4535d44f",
+    "comentarioSha256": "f2854acf0457053909dcf6b8590df93cfabb90a60b258add49f1fc7bd63abf60"
+   }
   },
   "trauma-0910": {
    "tema": "trauma",
@@ -51645,7 +52313,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51660,7 +52328,34 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "eac9514ff7cdcd12cb73eafe251c8c91f6a014e4d3a9a88cd3fb5f9c236d5189"
+   "questaoSha256": "eac9514ff7cdcd12cb73eafe251c8c91f6a014e4d3a9a88cd3fb5f9c236d5189",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "O antebraço como articulação: arco radial, forças e rotação",
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "o-antebraco-como-articulacao-arco-radial-forcas--318b7cd1",
+       "o-antebraco-como-articulacao-arco-radial-forcas--35d61e34",
+       "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "3b3cba8cf70d841068a55ab31a5241a78b865a065e53097351f58d654c3a1570"
+     }
+    ],
+    "questaoSha256": "eac9514ff7cdcd12cb73eafe251c8c91f6a014e4d3a9a88cd3fb5f9c236d5189",
+    "comentarioSha256": "3dbc07bb048ca0a570269f824daa580bd7459b1f119d785f18fc8b56c384a13f"
+   }
   },
   "trauma-0929": {
    "tema": "trauma",
@@ -51669,7 +52364,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51684,7 +52379,33 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "a574db0e4ee9ef78bde46509f041c47bf7a98ea3eb60f00ed926d3fba3a04a01"
+   "questaoSha256": "a574db0e4ee9ef78bde46509f041c47bf7a98ea3eb60f00ed926d3fba3a04a01",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Sinostose radioulnar",
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "sinostose-radioulnar-62eba46d",
+       "sinostose-radioulnar-ed7e5eeb",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "ec1ac942ea3fd5cfefedcf2dc739417fc33cb57fb5053415c431ec5d909f565d"
+     }
+    ],
+    "questaoSha256": "a574db0e4ee9ef78bde46509f041c47bf7a98ea3eb60f00ed926d3fba3a04a01",
+    "comentarioSha256": "deaeacf99ae256b9efa6c62631aa545c1c318c9a435734efd67fa96b79c1fe2e"
+   }
   },
   "trauma-0932": {
    "tema": "trauma",
@@ -52240,7 +52961,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52263,7 +52984,35 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "460e20da95eb8937b2b1becf5bac4ca6fbba7fee19c52819c44963ac819cc53a"
+   "questaoSha256": "460e20da95eb8937b2b1becf5bac4ca6fbba7fee19c52819c44963ac819cc53a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+      ],
+      "blocos": [
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-41daf5fb",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-bc96e99b",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3db247b5",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
+       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "0deb911be83f922356c2e790f7e59e2e27e378335a591dc71e5b2ff4530754a1"
+     }
+    ],
+    "questaoSha256": "460e20da95eb8937b2b1becf5bac4ca6fbba7fee19c52819c44963ac819cc53a",
+    "comentarioSha256": "80f953929bd74eacb4c6229c054566c7ee575405193bab1373abc72d4cf7e69f"
+   }
   },
   "trauma-0965": {
    "tema": "trauma",
@@ -53335,7 +54084,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53350,7 +54099,33 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "5dea1c03541c50e71ace75970abb21215e5df17ce2a2d83dabdbb0ee5b2feaac"
+   "questaoSha256": "5dea1c03541c50e71ace75970abb21215e5df17ce2a2d83dabdbb0ee5b2feaac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "O antebraço como articulação: arco radial, forças e rotação"
+      ],
+      "blocos": [
+       "o-antebraco-como-articulacao-arco-radial-forcas--318b7cd1",
+       "o-antebraco-como-articulacao-arco-radial-forcas--35d61e34",
+       "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
+       "o-antebraco-como-articulacao-arco-radial-forcas--0614ee82"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "12233869e41f40fdc4d136b9028ce97dcaa6e25608846fd7f08d73b802c95a6a"
+     }
+    ],
+    "questaoSha256": "5dea1c03541c50e71ace75970abb21215e5df17ce2a2d83dabdbb0ee5b2feaac",
+    "comentarioSha256": "5fd9b8d1196682f4cfff72f1b82f785d6ab277f6dd725377d5d4710e8d364228"
+   }
   },
   "trauma-1020": {
    "tema": "trauma",
@@ -54786,7 +55561,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54825,7 +55600,35 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "6a76c1950ac166086a4849ec5ecbc89e202025ce78fabb2d719b474ce81ecee2"
+   "questaoSha256": "6a76c1950ac166086a4849ec5ecbc89e202025ce78fabb2d719b474ce81ecee2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Quem tem síndrome compartimental",
+       "Diagnóstico clínico: por que os sinais chegam tarde"
+      ],
+      "blocos": [
+       "quem-tem-sindrome-compartimental-4b3a771a",
+       "quem-tem-sindrome-compartimental-5ca80c99",
+       "quem-tem-sindrome-compartimental-c9a33825",
+       "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+       "quem-tem-sindrome-compartimental-b7787f07"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "6c37eb68b868c56a1b2ccaa2d8b478ac479c9e4499b152a941ff57c220461711"
+     }
+    ],
+    "questaoSha256": "6a76c1950ac166086a4849ec5ecbc89e202025ce78fabb2d719b474ce81ecee2",
+    "comentarioSha256": "d9941d346d692f795a8f132d36ab01db53b0d3e70b0e0bb52619b2039b58320e"
+   }
   },
   "trauma-1093": {
    "tema": "trauma",
@@ -55164,7 +55967,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55179,7 +55982,32 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "0d20433a82f9de72deb5172f34175acd66e912f0b61c876fb28a8790d5a7a198"
+   "questaoSha256": "0d20433a82f9de72deb5172f34175acd66e912f0b61c876fb28a8790d5a7a198",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Vias de acesso e o nervo interósseo posterior"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-655215a8",
+       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "95b9d2851aa941f5e5bea6028c1a979b885214b5884d09fe7c8ae1860e5f2195"
+     }
+    ],
+    "questaoSha256": "0d20433a82f9de72deb5172f34175acd66e912f0b61c876fb28a8790d5a7a198",
+    "comentarioSha256": "614518a9b2f909363e7121738bb98a54c5f23d659fc3488e0f808a3dc6e3eeb3"
+   }
   },
   "trauma-1108": {
    "tema": "trauma",
@@ -55236,7 +56064,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55251,7 +56079,35 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "636000e41f008204a2ad3a415c454e01572cdf1a0cf84a4f9ca1ae0601ddfefc"
+   "questaoSha256": "636000e41f008204a2ad3a415c454e01572cdf1a0cf84a4f9ca1ae0601ddfefc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-66eeabbb",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-61ce0ed6",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-14634e1e"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "0959ff48bc9bfc2bf5cb94460a391d31d17be45988221e033a6c8ce020966d3b"
+     }
+    ],
+    "questaoSha256": "636000e41f008204a2ad3a415c454e01572cdf1a0cf84a4f9ca1ae0601ddfefc",
+    "comentarioSha256": "e20453e077d6cc2dcf6671b7349568379a522822d55ed98e7e11c3287b080ca3"
+   }
   },
   "trauma-1113": {
    "tema": "trauma",
@@ -55284,7 +56140,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55299,7 +56155,35 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "fef81fcdb07ebb5993d8f32f4ad3108b88bc67ca37db3aeb404027f348a03765"
+   "questaoSha256": "fef81fcdb07ebb5993d8f32f4ad3108b88bc67ca37db3aeb404027f348a03765",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-2294e393",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-87e1d509",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-34a2d734",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
+      ],
+      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "trechosSha256": "609ee0b83cb7963337fbb81d0592739dbb989498097728d9fb40bb8589409793"
+     }
+    ],
+    "questaoSha256": "fef81fcdb07ebb5993d8f32f4ad3108b88bc67ca37db3aeb404027f348a03765",
+    "comentarioSha256": "37e746c12daadd4f7d14c32e866a7aa7d07019e36c4fcfa0b274283093c3f225"
+   }
   },
   "trauma-1116": {
    "tema": "trauma",
@@ -66164,7 +67048,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66187,7 +67071,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "54020e99bb6c42d458cfc17e0f59a473daf91ad3a76c06e41fa99ad9163c99f0"
+   "questaoSha256": "54020e99bb6c42d458cfc17e0f59a473daf91ad3a76c06e41fa99ad9163c99f0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-1312eae8",
+       "medida-da-pressao-e-o-delta-p-d654f7b7",
+       "medida-da-pressao-e-o-delta-p-f94386d5",
+       "o-tratamento-preferido-dos-autores-930f2a36"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "febe1540fb3d618c433866c1de8ea6b435a0092bd76d842fc6f1dcc0de0d4f11"
+     }
+    ],
+    "questaoSha256": "54020e99bb6c42d458cfc17e0f59a473daf91ad3a76c06e41fa99ad9163c99f0",
+    "comentarioSha256": "b6d5ad52576cfc203325c74ad8e160b1c43db62e5245410f19d31ea5095fbcee"
+   }
   },
   "trauma-1594": {
    "tema": "trauma",
@@ -66196,7 +67107,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66212,7 +67123,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "489bba1e2f6322d3847fcf8328d6fca9ed8c9d07b8022aaa75ff35ece6fd1bbb"
+   "questaoSha256": "489bba1e2f6322d3847fcf8328d6fca9ed8c9d07b8022aaa75ff35ece6fd1bbb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Medida da pressão e o delta P",
+       "Os compartimentos de cada região",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "medida-da-pressao-e-o-delta-p-6e9747e1",
+       "os-compartimentos-de-cada-regiao-eb26943e",
+       "os-compartimentos-de-cada-regiao-110fac19",
+       "o-tratamento-preferido-dos-autores-cb26ab73"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "4f2e05c8d20ca8caf5fa15db117d0038237805828571b83ac1016a56609cb5c6"
+     }
+    ],
+    "questaoSha256": "489bba1e2f6322d3847fcf8328d6fca9ed8c9d07b8022aaa75ff35ece6fd1bbb",
+    "comentarioSha256": "76782a1060ca83826b130edceb4a84a10af2f6eae8d3fffeccc86d50f7dc7107"
+   }
   },
   "trauma-1595": {
    "tema": "trauma",
@@ -66221,7 +67160,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66237,7 +67176,31 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "99be7b79d0c4b6b4ed042ceb78dc63d105d030df5d334a2867624403e8fe7348"
+   "questaoSha256": "99be7b79d0c4b6b4ed042ceb78dc63d105d030df5d334a2867624403e8fe7348",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Por que a pressão mata o músculo"
+      ],
+      "blocos": [
+       "por-que-a-pressao-mata-o-musculo-1a07d757",
+       "por-que-a-pressao-mata-o-musculo-23e1059b"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "76484e3f770a7d473daf4bf4df60090ca9bc0883bf8028b926f4d341cee36d3a"
+     }
+    ],
+    "questaoSha256": "99be7b79d0c4b6b4ed042ceb78dc63d105d030df5d334a2867624403e8fe7348",
+    "comentarioSha256": "dfc17cd62b67f7caf339593f74482d2b97084306d90954941da85e11cd44991a"
+   }
   },
   "trauma-1596": {
    "tema": "trauma",
@@ -66246,7 +67209,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66262,7 +67225,33 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "90a99112d4377f75bfe07f13e8e39b63f3eda263e256ed807976f9cd7a2bc004"
+   "questaoSha256": "90a99112d4377f75bfe07f13e8e39b63f3eda263e256ed807976f9cd7a2bc004",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-222f4f26",
+       "os-compartimentos-de-cada-regiao-e0295081",
+       "fasciotomia-f108fecb"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "8651a5447301c618f63d7a232f711bcced1e5a75965e621ad9c512a9960d8fa5"
+     }
+    ],
+    "questaoSha256": "90a99112d4377f75bfe07f13e8e39b63f3eda263e256ed807976f9cd7a2bc004",
+    "comentarioSha256": "bb0c65a2c4baf879859fbf662fba188068074f4889cfe9d811a52545cb437ab2"
+   }
   },
   "trauma-1597": {
    "tema": "trauma",
@@ -66272,7 +67261,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66295,7 +67284,34 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "79f9836b68db39b69dad3760ba1a8f819be3dd367b6fb7678e94154bd1657302"
+   "questaoSha256": "79f9836b68db39b69dad3760ba1a8f819be3dd367b6fb7678e94154bd1657302",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Quem tem síndrome compartimental"
+      ],
+      "blocos": [
+       "quem-tem-sindrome-compartimental-5ca80c99",
+       "quem-tem-sindrome-compartimental-4b3a771a",
+       "quem-tem-sindrome-compartimental-2d563b4e",
+       "quem-tem-sindrome-compartimental-c9a33825",
+       "quem-tem-sindrome-compartimental-b7787f07"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "47a76ccdc8ed590f6759d1b2346d26571381811168414178f0d7f6e245d02b6c"
+     }
+    ],
+    "questaoSha256": "79f9836b68db39b69dad3760ba1a8f819be3dd367b6fb7678e94154bd1657302",
+    "comentarioSha256": "56c4a28e7609cb5b5a2f2034362944b18ee8c14168b173f0d50df7f1cb998ab7"
+   }
   },
   "trauma-1598": {
    "tema": "trauma",
@@ -66305,7 +67321,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66351,7 +67367,34 @@
     "rockwood10-63-diafise-tibia",
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "75f4e4830bd8c20fe4efc268bb491eadede82938daba4e3da19c3c8c8b371f85"
+   "questaoSha256": "75f4e4830bd8c20fe4efc268bb491eadede82938daba4e3da19c3c8c8b371f85",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Quem tem síndrome compartimental",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "quem-tem-sindrome-compartimental-c9a33825",
+       "quem-tem-sindrome-compartimental-9294b2f4",
+       "o-tratamento-preferido-dos-autores-be365766",
+       "quem-tem-sindrome-compartimental-b7787f07"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "fbaff1ebded06c581ae29490a31f63d2683eabea80a79e8c64612c1205947c54"
+     }
+    ],
+    "questaoSha256": "75f4e4830bd8c20fe4efc268bb491eadede82938daba4e3da19c3c8c8b371f85",
+    "comentarioSha256": "c4003ba298fa01a0af67ef2d3527b77f8ece35efede354b1868d66f852e53398"
+   }
   },
   "trauma-1599": {
    "tema": "trauma",
@@ -66360,7 +67403,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66376,7 +67419,33 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "157ded90e10be719e4dcfac02a2846ae46726bd00d6f9e11f114bf849b43fc6c"
+   "questaoSha256": "157ded90e10be719e4dcfac02a2846ae46726bd00d6f9e11f114bf849b43fc6c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia",
+       "Os compartimentos de cada região"
+      ],
+      "blocos": [
+       "fasciotomia-8bb6fb73",
+       "fasciotomia-5f056aff",
+       "os-compartimentos-de-cada-regiao-222f4f26"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "e6de17ef7444ddc81a69cfc44702b4ea47bc027cf7dc7d119aa284504e3530ef"
+     }
+    ],
+    "questaoSha256": "157ded90e10be719e4dcfac02a2846ae46726bd00d6f9e11f114bf849b43fc6c",
+    "comentarioSha256": "13a18c203f01ffe05805ea0bfd2f2b896545113654d396b440ae779eb7caa44c"
+   }
   },
   "trauma-1600": {
    "tema": "trauma",
@@ -66385,7 +67454,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66401,7 +67470,35 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "5978c5cbf0578452523cc35b3180d20aa4ee7f02c1e2001e71c9c45961d1daa5"
+   "questaoSha256": "5978c5cbf0578452523cc35b3180d20aa4ee7f02c1e2001e71c9c45961d1daa5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "fasciotomia-8b2413f2",
+       "fasciotomia-236fb661",
+       "fasciotomia-767d74b9",
+       "fasciotomia-8bb6fb73",
+       "fasciotomia-5f056aff",
+       "fasciotomia-e52c81a8"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "2a0695d59a35a1b4e75ad2f73b78d31acb756b2c94dfed2f70000dab05613020"
+     }
+    ],
+    "questaoSha256": "5978c5cbf0578452523cc35b3180d20aa4ee7f02c1e2001e71c9c45961d1daa5",
+    "comentarioSha256": "d7423ff9029d1791cca88976dc28abd696e119912e40e8ce369cb582b4b70085"
+   }
   },
   "trauma-1601": {
    "tema": "trauma",
@@ -66411,7 +67508,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66428,7 +67525,32 @@
     "rockwood10-63-diafise-tibia",
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "6aa9e93ea65e2a18792153838d8a09b64a874ffa6c5d69e39c5f2d6f46158c9b"
+   "questaoSha256": "6aa9e93ea65e2a18792153838d8a09b64a874ffa6c5d69e39c5f2d6f46158c9b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Os compartimentos de cada região",
+       "Fasciotomia"
+      ],
+      "blocos": [
+       "os-compartimentos-de-cada-regiao-110fac19",
+       "fasciotomia-029870c3"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "5ddcbdfec466699d252fff2f0a8d5b40d6385056f0239ca5453115a0d271303a"
+     }
+    ],
+    "questaoSha256": "6aa9e93ea65e2a18792153838d8a09b64a874ffa6c5d69e39c5f2d6f46158c9b",
+    "comentarioSha256": "2725cd3d2aed5aacd623908c0ba2d17378e04259073480e2fe500b451c817c7d"
+   }
   },
   "trauma-1602": {
    "tema": "trauma",
@@ -66438,7 +67560,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66455,7 +67577,33 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "128e5c4bf299f76562da38102e8d152560a3fac57dc7ed35704f0be30c0fb337"
+   "questaoSha256": "128e5c4bf299f76562da38102e8d152560a3fac57dc7ed35704f0be30c0fb337",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+       "Fasciotomia",
+       "Por que a pressão mata o músculo"
+      ],
+      "blocos": [
+       "fasciotomia-90ee7ca5",
+       "por-que-a-pressao-mata-o-musculo-1a07d757",
+       "fasciotomia-7a3f42f7"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "ba78f22b059f1586a34e7f605cfe2b9b7dac5ad65352bba3af1d76f2b86dd972"
+     }
+    ],
+    "questaoSha256": "128e5c4bf299f76562da38102e8d152560a3fac57dc7ed35704f0be30c0fb337",
+    "comentarioSha256": "65bac36febeb7a66682d2b7ee1a4578f4ade4efc5d9d72551b0e25d7ed5a7d19"
+   }
   },
   "trauma-1603": {
    "tema": "trauma",
