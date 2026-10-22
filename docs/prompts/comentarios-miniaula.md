@@ -19,18 +19,24 @@ Não mudar enunciado, alternativas nem gabarito. Manter os campos: conceito, cor
 referencias e alerta (só se houver divergência ou problema real).
 
 COMO A MINIAULA É CONSTRUÍDA (conceito)
-1. Partir do PROBLEMA da questão: em uma ou duas frases, o caso concreto e a pergunta que ele cria.
-   Nada de introdução genérica ("A fratura X é uma lesão importante...").
-2. Ensinar a partir dos FUNDAMENTOS, peça por peça: anatomia, fisiologia, biomecânica ou mecanismo
-   que o aluno precisa para chegar à resposta sozinho. Cada peça termina numa conclusão que será usada.
+1. Partir do PROBLEMA da questão: abrir com o caso concreto, como um professor que conta a cena
+   ("Imagine uma criança que prendeu a ponta do dedo na porta do carro..."), e a pergunta que ele cria.
+   Sem rótulo no primeiro parágrafo e sem introdução genérica ("A fratura X é uma lesão importante...").
+2. Ensinar a partir dos FUNDAMENTOS: anatomia, fisiologia, biomecânica ou mecanismo que o aluno
+   precisa para chegar à resposta sozinho, cada parte levando naturalmente à seguinte.
 3. Juntar as peças e fazer o aluno ENXERGAR: onde a força atua, para onde o fragmento vai, o que
    abre e o que fecha, como aparece no exame físico e na imagem (radiografia, RM, intraoperatório).
 4. Prática só no que importa: por que isso muda a conduta, o que acontece se passar despercebido.
 5. Tabela-resumo quando houver comparação ou lista de fatos que vale revisar (opcional).
 6. Fechar com o aprendizado decisivo ("> **Na prova:** ..."), uma ou duas linhas.
-Escrever em prosa de professor, com subtítulos em negrito curtos ("**O problema da questão.**",
-"**Peça 1: ...**"). Negrito estratégico só no que decide a questão. Sem tópicos fragmentados, sem tom
-de enciclopédia, sem travessões, sem emojis.
+NATURALIDADE (regra do Tales, 22/10/2026)
+Escrever como um professor humano conversando com o aluno, em prosa corrida que flui de um parágrafo
+para o outro. NUNCA usar rótulos mecânicos ou numerados ("Peça 1", "Peça 2", "Passo 1", "Etapa A",
+"O problema da questão"): eles soam robóticos. Quando um parágrafo pedir título, usar uma frase
+natural em negrito que diga o assunto ("**Como é a ponta do dedo de uma criança.**", "**O que o
+esmagamento faz.**", "**Como reconhecer.**"), e nem todo parágrafo precisa de título. Pode usar
+imagens do dia a dia ("pense num telhado que se dobra") quando ajudam a enxergar. Negrito estratégico
+só no que decide a questão. Sem tópicos fragmentados, sem tom de enciclopédia, sem travessões, sem emojis.
 
 ALTERNATIVAS
 - correta: começa com "**X: texto da alternativa.**", explica por que está certa pelo mecanismo da aula
