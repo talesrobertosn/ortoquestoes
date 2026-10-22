@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 75 | 10 | mao-2106 a mao-2180 | A 19, B 19, C 19, D 18 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 78 | 12 | mao-2106 a mao-2183 | A 20, B 20, C 19, D 19 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -417,7 +417,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 10 | KELIKIAN/KELLAM: braquidactilia na ELLIS-VAN CREVELD | classificação | cap. 36 p. 1405 | mao / Outras malformações congênitas | 12 | mao-2152 | publicada |
 | 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 p. 1516 e 1518 | mao / Outras malformações congênitas | 13 | mao-2159 | publicada |
 | 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 p. 1762 e 1764 | mao / Microcirurgia e retalhos livres | 15 | mao-2170 | publicada (sem a figura: descreve o desenho do paraescapular) |
-| 13 | Osteocondroma na mão: localização típica | fato | cap. 59 | mao / Tumores da mão | 18 |  | a fazer |
+| 13 | Osteocondroma na mão: localização típica | fato | cap. 59, p. 2219 | mao / Tumores da mão | 18 | mao-2183 | publicada |
 | 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 15 | Pioderma gangrenoso: tratamento | conduta | cap. 3, p. 86 | mao / Infecções da mão | 01 | mao-2107 | publicada |
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 02 | mao-2111 | publicada |
@@ -447,7 +447,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 40 | Paralisia alta do mediano: objetivo das transferências | fato | cap. 31, p. 1206 | mao / Transferências tendinosas e paralisias | 09 | mao-2141 | publicada |
 | 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13, p. 491; cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2126 | publicada |
 | 42 | CAMITZ: melhor indicação | indicação | cap. 31, p. 1199 | mao / Transferências tendinosas e paralisias | 10 | mao-2142 | publicada |
-| 43 | NALEBUFF: polegar reumatoide da radiografia | classificação, figura | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
+| 43 | NALEBUFF: polegar reumatoide da radiografia | classificação, figura | cap. 55, p. 2091 a 2093 | mao / Mão reumatoide | 18 | mao-2181 | publicada |
 | 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15, p. 604 | mao / Fratura do rádio distal | 06 |  | pendente: depende da radiografia |
 | 45 | Ligamentos do punho da figura | anatomia, figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura com letras |
 | 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 04 | mao-2119 | publicada |
@@ -456,7 +456,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34, p. 1341 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2148 | publicada |
 | 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34, p. 1311 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2149 | publicada |
 | 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
-| 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
+| 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55, p. 2051 (não diz qual é a mais comum) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
 | 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2156 | publicada |
 | 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
 | 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2109 | publicada (ângulo: definição do Green, sem o 6 a 12 semanas) |
@@ -476,7 +476,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 69 | MALLET: grau pelo exame do ombro | classificação | cap. 40 p. 1564 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2163 | publicada |
 | 70 | Zetaplastia: ganho de comprimento pelo ângulo | número | cap. 44 p. 1714 | mao / Retalhos e cobertura cutânea | 15 | mao-2167 | publicada (ângulo de 60 graus, que faltava no original) |
 | 71 | Retalho inguinal: a circunflexa ilíaca superficial | afirmativas | cap. 44 p. 1736 | mao / Retalhos e cobertura cutânea | 15 | mao-2168 | publicada |
-| 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57 | mao / Queimaduras | 18 |  | a fazer |
+| 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57, p. 2144 | mao / Queimaduras | 18 | mao-2182 | publicada |
 | 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1, p. 5 e 8 | mao / Anestesia em cirurgia da mão | 01 | mao-2106 | publicada |
 | 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16, p. 736 | mao / Doença de Kienböck | 07 |  | pendente: sem fonte (artrodese junto do encurtamento do capitato não está no Green) |
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 p. 1464 | mao / Outras malformações congênitas | 13 | mao-2157 | publicada (pergunta pela articulação MCF; o Green deixa a cabeça em flexão) |
@@ -499,7 +499,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 p. 1653 | mao / Amputações e reimplantes | 14 | mao-2165 | publicada |
 | 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 p. 1767 | mao / Microcirurgia e retalhos livres | 16 | mao-2172 | publicada |
 | 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 p. 1859 a 1862 | mao / Retalhos e cobertura cutânea | 16 | mao-2175 | publicada (GILLIES só citado como fora de uso; pergunta a osteoplástica clássica) |
-| 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
+| 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 (padrão de deformidade não descrito) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
 | 96 | ENNEKING: estágio IIA | classificação | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
 | 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 p. 1756 | mao / Microcirurgia e retalhos livres | 16 | mao-2173 | publicada (pergunta o ramo do retalho lateral do braço: 'mais calibroso' não está no Green) |
 | 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
