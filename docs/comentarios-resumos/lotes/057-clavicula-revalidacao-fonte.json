@@ -1,0 +1,370 @@
+{
+  "trauma-1352": {
+    "questaoSha256": "eaa087f65e344c130d4fc0d3c205a72822b2c674b7dbbe790010f964567dbdd4",
+    "comentarioAnteriorSha256": "8c57bdd96bfe484ed9962bf07c8d9fbb132f0980f0270a488c777977b18b745c",
+    "comentario": {
+      "conceito": "**A assimetria fisiológica ocorre em cerca de 30% das pessoas, e a radiografia de um traço oblíquo longo pode superestimar o encurtamento.** São dois motivos diferentes para não transformar uma medida isolada em indicação automática de cirurgia.\n\nComparar com o lado oposto parece fornecer uma referência perfeita, mas as clavículas podem ter comprimentos naturalmente diferentes. A fonte informa assimetria média de aproximadamente 5 mm nesse grupo. Isso não autoriza subtrair 5 mm de toda medida: é uma advertência sobre a variabilidade da referência, não uma fórmula de correção individual.\n\nA segunda limitação é a projeção do traço. Nas fraturas oblíquas longas, a imagem pode fazer o encurtamento parecer maior do que é. O exame descreve medida clínica da fúrcula esternal à saliência acromioclavicular, em comparação bilateral, além da deformidade observada com o paciente em pé.\n\n**Como aplicar:** se a indicação parece depender de poucos milímetros em torno de um ponto de corte, reavalie qualidade da imagem, padrão do traço e exame clínico. A tabela do resumo considera encurtamento superior a 2 cm uma indicação relativa, que precisa ser integrada à demanda e aos demais achados.\n\n**Leia “A história e o exame”, na Biblioteca.** O objetivo não é desacreditar a radiografia, mas conhecer os limites de uma comparação antes de usar o número para decidir.\n\n**Por que esta questão foi criada.** O encurtamento aparece repetidamente nas decisões de tratamento do capítulo. A questão testa duas fontes de erro que podem modificar uma indicação baseada apenas na medida.",
+      "correta": "**D: 30% e superestimar.** A primeira informação limita a comparação com o lado oposto; a segunda limita a medida radiográfica em traços oblíquos longos. Elas não descrevem o mesmo viés e precisam ser lembradas separadamente.",
+      "incorretas": {
+        "A": "**Troca a frequência por 5% e inverte o sentido do erro radiográfico.** O número 5 aparece no resumo como milímetros médios de assimetria, não como porcentagem de pessoas. No traço oblíquo longo, a tendência descrita é superestimar, não subestimar.",
+        "B": "**Acerta a superestimação, mas confunde 5 mm com 5%.** Uma medida de diferença entre lados e a proporção de pessoas que a apresenta são grandezas distintas. O valor aproximado da frequência é 30%.",
+        "C": "**Acerta a frequência de assimetria e inverte o viés do traço.** A radiografia pode aparentar encurtamento maior, não menor, na fratura oblíqua longa. Isso deve ser distinguido da radiografia em decúbito que pode subestimar o desvio, outra comparação do capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Epidemiologia, exame e imagem; Pseudartrose, fatores de risco e operar ou não."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Epidemiologia, exame e imagem",
+          "Pseudartrose, fatores de risco e operar ou não"
+        ],
+        "blocos": [
+          "epidemiologia-exame-e-imagem-8d795dcb",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-dd7d7386"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "db9fb1670092e7f3f7cc4b66e6ba505628879b5fd87935c88376d460d8ed0d27"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1353": {
+    "questaoSha256": "40e666cd35e7d400e20bf1db2952f19ccaa61780be7a98a2b163ae7ef95b5bbd",
+    "comentarioAnteriorSha256": "4cb845fc4552c44a592797ac0160b2c383f9594fae2779193ed2aaae86e3b8f6",
+    "comentario": {
+      "conceito": "**Se houver apenas uma incidência, o resumo prefere AP com inclinação cefálica, com o paciente em pé.** A avaliação ideal usa duas: AP padrão e AP com inclinação cefálica de 15 a 40 graus. A pergunta não transforma uma incidência única no exame completo de todos os pacientes.\n\nA posição importa porque a gravidade torna o desvio mais evidente. No politraumatizado, a radiografia inicial de tórax em decúbito pode mostrar uma fratura menos desviada do que ela realmente se apresenta em pé. A fonte cita Backus, que encontrou 89% a mais de desvio nas imagens em ortostatismo, diferença capaz de alterar decisões em parte dos casos.\n\nEsse achado não significa mobilizar um politraumatizado instável apenas para obter a projeção. O resumo recomenda repetir em pé e em duas incidências assim que possível. Primeiro vêm as condições clínicas e a segurança do posicionamento; depois, a representação mais fiel da deformidade sob gravidade.\n\nUma semana após o exame inicial, a tração muscular também pode tornar o desvio mais evidente. A imagem é um retrato de uma posição e de um momento, não uma medida imutável da fratura durante todo o tratamento.\n\n**Leia “As radiografias”, na Biblioteca.** Relacione projeção e postura ao que se quer medir, em vez de tratar todas as radiografias de clavícula como equivalentes.\n\n**Por que esta questão foi criada.** A escolha da incidência e o efeito da posição são decisões simples que podem modificar a estimativa de desvio e, consequentemente, a discussão de tratamento.",
+      "correta": "**B: AP inclinada em sentido cefálico, em pé.** É a preferência da fonte se só uma incidência puder ser feita. Duas incidências continuam sendo a avaliação recomendada, e a repetição em pé depende de o paciente poder ser posicionado com segurança.",
+      "incorretas": {
+        "A": "**A postura está correta, mas a projeção não é a preferida quando só se faz uma.** O AP padrão integra o par recomendado; isoladamente, perde para o AP inclinado cefalicamente na orientação específica da fonte.",
+        "C": "**Troca a incidência preferida e escolhe uma posição que pode subestimar o desvio.** O AP em decúbito pode ser o exame inicial possível no politrauma, mas não é a combinação selecionada para representar melhor a fratura quando o paciente já pode ficar em pé.",
+        "D": "**Acerta a inclinação e mantém o limite do decúbito.** A postura sem ação equivalente da gravidade sobre a cintura escapular pode ocultar parte do desvio. A fonte orienta repetir em pé assim que possível, sem ignorar a estabilidade clínica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Epidemiologia, exame e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Epidemiologia, exame e imagem"
+        ],
+        "blocos": [
+          "epidemiologia-exame-e-imagem-aea645e3",
+          "epidemiologia-exame-e-imagem-8a5ed596",
+          "epidemiologia-exame-e-imagem-a8a6a23c"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "67fc29f64f0e3d340dffe7b8a678ec07c74049a898a0b3438cc9221f12f399b8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1354": {
+    "questaoSha256": "8d28a4d213eef3511d4ac0c985b0a74ce03228e30594b67f62f641b9060fe704",
+    "comentarioAnteriorSha256": "638b5ab3c2650eed6ca5852f53ff5e403c33bc9716a234d21c010bfba2639d96",
+    "comentario": {
+      "conceito": "**Uma placa que atravessa a esternoclavicular até o esterno é temporária: deve ser retirada depois da consolidação. Fios ou pinos lisos isolados são contraindicados.** A questão reúne duas decisões diferentes, uma de planejamento do implante e outra de segurança contra migração.\n\nUma fratura muito medial pode deixar pouco osso para obter fixação no fragmento junto ao esterno. A extensão da placa oferece uma solução de sustentação enquanto a fratura consolida. Entretanto, atravessa uma articulação móvel: a fonte informa que ela tende a soltar com o movimento, embora possa sustentar o tempo necessário, em torno de três meses no cenário descrito. Isso explica por que não se planeja mantê-la como ponte definitiva.\n\nPinos lisos isolados têm outro problema. Podem migrar e lesar vísceras, de modo que sua contraindicação não é simples preferência estética ou dificuldade de retirada. A região medial já exige atenção aos vasos subclávios, próximos do osso, sobretudo se houver desvio posterior.\n\nA tomografia ajuda a definir a lesão medial e sua relação com a articulação e as estruturas profundas. No jovem, a epífise medial ainda pode estar presente, exigindo distinguir lesão fisária de luxação verdadeira. A estratégia não deve ser aplicada indiscriminadamente a toda fratura medial, muitas das quais são pouco desviadas e consolidam sem cirurgia.\n\n**Leia “Terço medial”, na Biblioteca.** Entenda por que a ponte pode ser útil temporariamente e por que isso não valida fixação isolada com fios lisos.\n\n**Por que esta questão foi criada.** O fragmento medial pequeno e o risco de migração de pinos unem uma dificuldade técnica real a uma contraindicação de segurança com forte perfil de prova.",
+      "correta": "**C: retirada após consolidação; contraindicação a fios ou pinos lisos isolados.** A placa transarticular é uma ponte temporária quando o fragmento não oferece pega suficiente. Sua retirada planejada e a proibição dos pinos por migração têm justificativas próprias.",
+      "incorretas": {
+        "A": "**Erra os dois componentes.** A placa que cruza a articulação não é descrita para manutenção definitiva, e placa bloqueada não é o implante contraindicado pela migração visceral. A contraindicação específica é dos fios ou pinos lisos isolados.",
+        "B": "**Identifica o risco dos pinos, mas mantém a ponte para sempre.** O movimento esternoclavicular pode afrouxar a placa; o plano é sustentar até consolidar e retirá-la. Acertar o segundo componente não corrige o planejamento do primeiro.",
+        "D": "**Acerta a retirada da ponte e troca o implante proibido.** A fonte não estabelece contraindicação geral à placa bloqueada nesse contexto. O risco de migração e lesão visceral é atribuído à fixação isolada com fios ou pinos lisos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Ombro flutuante, costelas e terço medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Ombro flutuante, costelas e terço medial"
+        ],
+        "blocos": [
+          "ombro-flutuante-costelas-e-terco-medial-a2159463"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "ea52b4edcc2ffbd3618044e34cc920efb10931ed3041acc2c27a34c72762a650"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1357": {
+    "questaoSha256": "3ebe29d26972d94aa5f95b4c0906d21d0fde4cec638355ae40c65cb49d65da0a",
+    "comentarioAnteriorSha256": "fac14ca3f9570ceaa8b94677fb88f5d61db7fe0a130fbe38ffcfd8bfec4a623f",
+    "comentario": {
+      "conceito": "**A veia subclávia fica a menos de 1 cm da cortical posterior em toda a metade medial; o plexo está mais próximo no terço médio.** A pergunta exige separar o mapa de risco vascular do mapa de proximidade neural.\n\nA veia passa abaixo do subclávio e acima da primeira costela. Mais atrás ficam artéria e plexo, separados dela pelo escaleno anterior na parte medial. O subclávio funciona como amortecedor, mas não elimina a possibilidade de um instrumento, uma broca ou um parafuso penetrar no espaço profundo.\n\nNo terço lateral, as distâncias descritas passam de 45 mm. Aplicar esse espaço ao segmento medial criaria uma falsa margem de segurança. Uma distância anatômica média também não é um comprimento de broca autorizado: posicionamento, trajetória e controle da saída da cortical continuam essenciais.\n\n| Estrutura/pergunta | Região crítica descrita |\n|---|---|\n| Veia subclávia a menos de 1 cm | Metade medial, atrás da cortical |\n| Plexo mais próximo | Porção média |\n| Distâncias acima de 45 mm | Terço lateral |\n\n**Leia “Nervos e vasos”, na Biblioteca.** A utilidade da anatomia é antecipar o que está além do osso em cada segmento, não memorizar um único número para toda a clavícula.\n\n**Por que esta questão foi criada.** Ela complementa a cobrança do TECOC sobre a estrutura em risco na fixação medial, acrescentando a diferença regional entre proximidade vascular e neural.",
+      "correta": "**A: menos de 1 cm e terço médio.** A distância pequena se refere à veia na metade medial; a segunda lacuna localiza a maior proximidade do plexo. São relações distintas, ambas necessárias à resposta.",
+      "incorretas": {
+        "B": "**Acerta a distância da veia e desloca o plexo para o segmento lateral.** A fonte situa a proximidade máxima do plexo na porção média. Não se deve inferir que vasos e nervos têm a mesma relação com todos os terços.",
+        "C": "**Acerta a região do plexo, mas atribui à metade medial a folga lateral.** Quarenta e cinco milímetros não é a distância da veia atrás da cortical medial. Essa troca seria especialmente perigosa se usada como margem para instrumentação.",
+        "D": "**Erra a distância medial e a região do plexo.** O terço lateral tem maior afastamento no mapa apresentado; a veia medial permanece muito próxima e o plexo se aproxima mais na porção média."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-e75dacf6",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-018800b0",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-d10a2fd8",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-e8cc172f",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-8ade4fb4",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "60ee6a8f588567b3e06fc5bb357ef0ebcdc4fae4864e46c24c2578ad185925df"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1358": {
+    "questaoSha256": "99596ce00ac4b41bcfbf72db2f986372e555e032461f680fbe51d81dd38a3ecc",
+    "comentarioAnteriorSha256": "103aaeba8f6dd6ed8735ab8af27c9800209b931d3ee6241146263a5f748b08aa",
+    "comentario": {
+      "conceito": "**Déficit neurológico progressivo é uma das indicações “mais absolutas” de fixação na tabela do capítulo.** A palavra progressivo é decisiva. Um déficit que piora durante o acompanhamento não deve ser equiparado automaticamente a qualquer alteração sensitiva inicial e estável.\n\nA tabela também destaca fratura exposta, pele ameaçada, lesão vascular que exige reparo e ombro flutuante. Nessas situações, o tratamento precisa lidar com uma ameaça ou uma instabilidade associada, além do risco estatístico de não união.\n\nEncurtamento maior que 2 cm, fratura segmentar e bilateralidade podem pesar na decisão, mas estão entre as indicações relativas apresentadas. Elas devem ser integradas à deformidade, à demanda funcional, às condições do paciente e aos riscos. “Relativa” não significa irrelevante; significa que a indicação não decorre da presença isolada do achado com a mesma força da ameaça progressiva.\n\n**Na prática do raciocínio:** examine e documente a função neural de modo seriado. Reconhecer progressão exige uma avaliação inicial para comparação. A decisão sobre fixar a fratura não dispensa avaliar o mecanismo da lesão neural e as lesões associadas.\n\n**Leia “Quem operar”, na Biblioteca.** Compare as indicações destacadas como mais absolutas com as relativas, sem transformar um número de encurtamento em regra universal.\n\n**Por que esta questão foi criada.** O TARO 2008 cobrou indicação absoluta em alternativas com lesão nervosa, ombro flutuante e bilateralidade. O simulado explicita a progressão para evitar a ambiguidade de tratar todo déficit como equivalente.",
+      "correta": "**C: déficit neurológico progressivo.** É o item assinalado como mais absoluto entre as opções. A progressão muda a urgência da avaliação e não pode ser apagada da interpretação.",
+      "incorretas": {
+        "A": "**Encurtamento acima de 2 cm é indicação relativa na tabela.** Pode favorecer a operação, sobretudo com alta demanda e deformidade importante, mas não é o item mais absoluto pedido. O valor não substitui a avaliação global.",
+        "B": "**A fratura segmentar é um padrão que pesa na decisão e na escolha da construção.** Ainda assim, não recebe a marca de mais absoluta na tabela. Morfologia complexa e ameaça neurológica progressiva são fundamentos distintos para indicar tratamento.",
+        "D": "**Bilateralidade aumenta as dificuldades funcionais e pode favorecer fixação.** O resumo a mantém como indicação relativa, não como a mais absoluta desta lista. A capacidade de usar os braços e as condições do paciente entram na decisão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Pseudartrose, fatores de risco e operar ou não."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Pseudartrose, fatores de risco e operar ou não"
+        ],
+        "blocos": [
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-dd7d7386",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-19afc370"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "c02020687051e2e6c4945830b23942ee2b7646aa859e178fd26cdb4c354b42fe"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1360": {
+    "questaoSha256": "01e231716acd48085538d765f5e391fb76001df3588760a48548ce89057c4ae4",
+    "comentarioAnteriorSha256": "4ec078243a217e2e4b9460ce87b37f9c7d0638be5fc88ee279c572352e967f08",
+    "comentario": {
+      "conceito": "**Clement combinou tabagismo e DASH de 35 ou mais na sexta semana para estimar risco de pseudartrose sintomática.** Trata-se de uma avaliação precoce durante o seguimento, não de um teste feito no dia do trauma nem de um diagnóstico já estabelecido de não união.\n\nO DASH representa limitação funcional; persistir com escore elevado nesse momento pode sinalizar recuperação desfavorável. O tabagismo acrescenta outro preditor. Na análise citada, o risco estimado foi de cerca de 2% sem os dois fatores e 44% com ambos. São resultados daquela combinação e população, não probabilidades universais para toda fratura clavicular.\n\nO resumo também menciona outros sinais de evolução preocupante, como pouca melhora da dor entre a segunda e a quarta semanas. Eles reforçam por que acompanhar a trajetória clínica pode ser mais informativo do que decidir tudo pela primeira radiografia.\n\n**Predição não é destino.** Ter os fatores não prova que a fratura já falhou, e não tê-los não garante consolidação. O objetivo é orientar acompanhamento, discussão de riscos e eventual reconsideração do tratamento com base na evolução.\n\n**Leia “Quem faz pseudartrose”, na Biblioteca.** Guarde o momento de seis semanas, o limiar do DASH e a distinção entre pseudartrose sintomática prevista e diagnóstico de uma lesão já consolidada ou não.\n\n**Por que esta questão foi criada.** Ela testa um critério de seguimento com potencial de decisão clínica, em vez de apenas repetir listas de fatores presentes no trauma inicial.",
+      "correta": "**A: tabagismo e DASH de pelo menos 35 com seis semanas.** É a combinação específica de Clement apresentada. O tempo e o limiar funcional fazem parte do critério; não são detalhes dispensáveis.",
+      "incorretas": {
+        "B": "**Confunde o perfil epidemiológico de muitas fraturas com a combinação prognóstica pedida.** Ser homem jovem não reproduz os dois preditores de Clement. Frequência de fratura e risco de pseudartrose sintomática são perguntas diferentes.",
+        "C": "**Mantém o tabagismo e troca a limitação funcional por encurtamento menor que 1 cm.** A associação descrita usa DASH elevado na sexta semana. Uma medida pequena de encurtamento não pode ser acrescentada como segundo componente apenas por aparecer no estudo da deformidade.",
+        "D": "**Não corresponde ao par identificado por Clement no resumo.** Fraturas de costela podem modificar a avaliação do trauma e da instabilidade, mas isso não as transforma no preditor específico desta pergunta. A fonte consultada não autoriza substituir o par por diabetes e lesão costal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Pseudartrose, fatores de risco e operar ou não."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Pseudartrose, fatores de risco e operar ou não"
+        ],
+        "blocos": [
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-b6820b99",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-beee1ef1"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "432fd9fea90248353b9a7fe6e5cc6308caa32ecf92dec607bd510787012062c8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1361": {
+    "questaoSha256": "e680bdf96990d4673f35332596b26191a2902a6cc99c0b8abafe33bc1a9bcc43",
+    "comentarioAnteriorSha256": "2639deb30ca25ba0c9e2fa111ef89a12316a3c216cbc3335cc2f8ad471b869b6",
+    "comentario": {
+      "conceito": "**Nas lesões iatrogênicas de Jeyaseelan, o plexo estava aderido à face inferior da clavícula, sobretudo o tronco superior C5–C6.** A cirurgia ocorreu, em média, com três semanas. O intervalo médio descreve a série e não estabelece um dia a partir do qual todo plexo estará aderido.\n\nA redução exige mobilizar os fragmentos. Se estruturas neurais estiverem presas à face inferior, essa mobilização pode tracioná-las ou lesioná-las mesmo sem a broca atravessar o osso. O mecanismo explica a recomendação de liberar cuidadosamente as partes moles aderidas antes de manobras que modifiquem a posição.\n\nÉ preciso distinguir três cenários do capítulo: lesão por instrumentação profunda; aderência nas fixações tardias da série, com predominância do tronco superior; e compressão crônica no desfiladeiro pela consolidação viciosa, frequentemente no território C8–T1. O mesmo nome “plexo braquial” não torna todos os mecanismos e territórios equivalentes.\n\nO resumo apresenta resultados favoráveis de outras séries com fixação mais tardia. A lição não é uma proibição por calendário, e sim reconhecer que a dificuldade e os riscos mudam com o tempo, as aderências e o caso clínico.\n\n**Leia “Quando operar” e “Lesões tardias: o desfiladeiro torácico”, na Biblioteca.** Compare a lesão causada durante a mobilização com a compressão que já existia antes da cirurgia.\n\n**Por que esta questão foi criada.** O capítulo descreve uma causa de lesão neural que não depende de perfuração por broca. A comparação com C8–T1 do desfiladeiro torna a alternativa um teste de mecanismo, tempo e anatomia.",
+      "correta": "**B: aderência à face inferior; tronco superior C5–C6.** É a combinação da série citada, reunindo mecanismo e território. Não deve ser trocada pelo plexo inferior da compressão crônica.",
+      "incorretas": {
+        "A": "**Muda o mecanismo e o território.** Penetração da broca é um risco real de instrumentação, mas não explica as aderências descritas por Jeyaseelan. C8–T1 é lembrado no padrão crônico de desfiladeiro, e não como predomínio dessa série.",
+        "C": "**Acerta a aderência e troca o tronco.** O resumo destaca C5–C6, superior, nas lesões iatrogênicas da fixação tardia. Usar C8–T1 mistura esse cenário com a compressão crônica pela deformidade.",
+        "D": "**Acerta o território superior e substitui a causa pela broca.** A distinção é relevante porque controlar apenas a perfuração não previne uma lesão por mobilizar um fragmento com plexo aderido. A preparação das partes moles faz parte da prevenção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Pseudartrose, fatores de risco e operar ou não; Lesões neurovasculares e dissociação escapulotorácica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Pseudartrose, fatores de risco e operar ou não",
+          "Lesões neurovasculares e dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-5cc01da8",
+          "lesoes-neurovasculares-e-dissociacao-escapulotor-51cbb6a9"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "2bb57b3c846a2d44dad04535721eff81a2773778f7461e9d60e268e3b2bc1a31"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1362": {
+    "questaoSha256": "e9b1d849400995b1a65ff2481eef2bd1bfc34aeee6d5a3b22a89d4122b4f24a7",
+    "comentarioAnteriorSha256": "d617a8ccffdf97b93efcc43c6ea73b93b340dd5ef2513f2d810fbadba3f8e423",
+    "comentario": {
+      "conceito": "**Cutibacterium acnes predominou nas culturas positivas das séries de revisão de pseudartrose após placa citadas.** A pergunta trata de uma população selecionada: pacientes com não união depois de fixação, submetidos à revisão e coleta. Não afirma que a maioria de todas as fraturas operadas esteja infectada.\n\nO resumo descreve culturas positivas em 15 de 18 pacientes de Gausden e em 52% de outra série. Esses resultados justificam suspeitar de infecção oculta mesmo sem sinais clínicos evidentes. Não podem ser somados como se tivessem o mesmo denominador nem usados para calcular um risco universal de infecção de qualquer placa.\n\nA falha de consolidação pode exigir avaliar tanto biologia quanto estabilidade. O capítulo discute desbridar até osso viável, reabrir os canais e obter compressão/fixação adequada, além da investigação da causa. Uma radiografia de não união não informa sozinha se há bactéria ou qual microrganismo está presente.\n\n**A aplicação útil é colher e interpretar as amostras no contexto da revisão**, sem presumir ausência de infecção pela falta de manifestações exuberantes e sem atribuir automaticamente a todo caso o germe mais frequente de uma série.\n\n**Leia “Pseudartrose”, na Biblioteca.** Separe a frequência observada em pacientes revisados da incidência de infecção após uma operação primária.\n\n**Por que esta questão foi criada.** A pseudartrose após placa é rara, mas a suspeita de infecção oculta pode mudar a investigação e o planejamento da revisão. O simulado testa esse ponto menos evidente do capítulo.",
+      "correta": "**C: Cutibacterium acnes.** É o agente predominante nas séries de culturas positivas citadas. O resultado orienta suspeita e investigação; não substitui a coleta nem estabelece o diagnóstico de cada paciente.",
+      "incorretas": {
+        "A": "**Staphylococcus aureus não é o predomínio informado nessas séries específicas.** Escolher um agente lembrado em infecções ósseas em geral não responde à população de pseudartrose após placa estudada. A fonte destaca C. acnes.",
+        "B": "**Staphylococcus epidermidis não é o agente predominante descrito aqui.** A presença de implante não autoriza presumir que um único microrganismo de infecção associada a material sempre liderará todas as séries e todos os locais.",
+        "D": "**Pseudomonas aeruginosa não corresponde ao achado das séries citadas.** A questão não oferece dados clínicos ou microbiológicos individuais que sustentem essa escolha. A associação pedida é com C. acnes nas revisões estudadas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Outras complicações: infecção, pseudartrose operada, implante e refratura."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Outras complicações: infecção, pseudartrose operada, implante e refratura"
+        ],
+        "blocos": [
+          "outras-complicacoes-infeccao-pseudartrose-operad-82347ee0",
+          "outras-complicacoes-infeccao-pseudartrose-operad-744808d0"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "5d4c5aeaa334f33e35dd307e51d5e38fd4df0f1a1a9bae3e7f14caacd2203867"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1365": {
+    "questaoSha256": "8f7e2b9130daaee26351cc57bef2919a6cc2c8120e3abb57c526d8611d705a7b",
+    "comentarioAnteriorSha256": "2d65429268ee2e05c6dcd9c4e6f08fc2e2233e50a74bbaba5042f918735fd95c",
+    "comentario": {
+      "conceito": "**Com parafuso de tração interfragmentário, a fonte aceita três parafusos bicorticais de cada lado; sem ele, recomenda quatro de cada lado ou placa bloqueada.** “Três parafusos bicorticais” significa seis corticais em cada fragmento, não seis parafusos.\n\nO parafuso de tração aproxima e comprime os fragmentos do traço apropriado; a placa completa a estabilidade da construção. Sem esse recurso, o resumo exige outra estratégia para sustentar o foco. O número não deve ser aplicado ignorando tamanho do fragmento, qualidade óssea, padrão da fratura e comprimento do implante.\n\n| Construção descrita | Fixação de cada lado |\n|---|---|\n| Com parafuso de tração | Três parafusos bicorticais, seis corticais |\n| Sem parafuso de tração | Quatro parafusos ou placa bloqueada |\n\nTambém não se deve estender essa contagem para qualquer localização ou para toda pseudartrose. A pergunta é sobre a técnica do terço médio apresentada. O resumo alerta que construções insuficientes podem falhar e discute especificidades da revisão de não união separadamente.\n\n**Leia “Placa: a técnica”, na Biblioteca.** Primeiro identifique a função do parafuso de tração; depois conte parafusos e corticais, mantendo clara a unidade de medida.\n\n**Por que esta questão foi criada.** A contagem de corticais é um detalhe técnico com perfil de prova, mas só faz sentido se ligada à estabilidade interfragmentária e à diferença entre ter ou não o parafuso de tração.",
+      "correta": "**A: três bicorticais de cada lado com tração; quatro ou placa bloqueada sem ela.** A combinação corresponde ao resumo e evita confundir número de implantes com número de corticais atravessadas.",
+      "incorretas": {
+        "B": "**Reduz o primeiro grupo para duas fixações bicorticais e o segundo para três.** Não reproduz os valores apresentados. As quatro corticais obtidas por dois parafusos não equivalem às seis corticais de três bicorticais.",
+        "C": "**Acerta a primeira parte e substitui a segunda por cerclagem.** O resumo não apresenta fios de cerclagem como o reforço que responde à falta do parafuso de tração nessa regra. A estratégia descrita é quatro parafusos por lado ou placa bloqueada.",
+        "D": "**Subestima a primeira fixação e indica uma placa que a fonte alerta poder falhar.** A recomendação não é compensar duas fixações bicorticais com placa de reconstrução de 3,5 mm. Estabilidade insuficiente não se corrige trocando a contagem por um implante sem a adequação discutida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Placa e haste no terço médio."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Placa e haste no terço médio"
+        ],
+        "blocos": [
+          "placa-e-haste-no-terco-medio-702825bf",
+          "placa-e-haste-no-terco-medio-9b0953e7"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "f37347e4c57d0373016b52ada9961418413c4b3ad9ae0b5912f80632400cc6ed"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1367": {
+    "questaoSha256": "e6e6729b260da0165296ad7b5df311740fc437d4d41c1d46fdbe490d2303cca0",
+    "comentarioAnteriorSha256": "2dedf54056bd406e95900dd6bdbd92050260025fd0c2a20c38935496d730b817",
+    "comentario": {
+      "conceito": "**Na fratura distal desviada, não união radiográfica pode ser frequente sem produzir pior função média que a cirurgia nas séries comparadas.** A alternativa A combina os dois achados. Isso não significa que toda pseudartrose seja assintomática ou que a cirurgia nunca beneficie um paciente.\n\nRaval encontrou 33% de não união entre Neer II tratadas sem operar; só 4 de 43 pacientes com pseudartrose precisaram de cirurgia nesse estudo. Van der Linde encontrou 20% de não união nas desviadas conservadoras e resultados funcionais comparáveis aos operados. No ensaio de Hall, a frequência foi 36% sem cirurgia, sem diferença funcional, embora 20% do grupo conservador tenha sido operado depois e o retorno às atividades fosse mais lento.\n\nEsses são resultados de estudos distintos. “Cerca de um terço” resume parte das séries e não é uma taxa exata universal. Retorno mais lento, reoperação e função final também são desfechos diferentes; uma vantagem em um deles não determina vantagem obrigatória em todos.\n\nA conclusão do resumo aceita tratamento conservador na maioria, sobretudo com menor demanda, e reserva cirurgia para casos totalmente desviados e instáveis de alta demanda ou falha do conservador. O exame clínico e as expectativas ajudam a decidir quando a não união é um problema que precisa de intervenção.\n\n**Leia “Conservador: pseudartrose frequente, função boa”, na Biblioteca.** Compare imagens, sintomas e desfechos funcionais, evitando usar a radiografia como único resultado do tratamento.\n\n**Por que esta questão foi criada.** A alta frequência de pseudartrose distal costuma levar à conclusão automática de que todos precisam operar. O simulado testa a diferença entre consolidação e benefício funcional, um ponto central da discussão do capítulo.",
+      "correta": "**A: relativamente frequente, cerca de um terço, e função semelhante nas comparações citadas.** A resposta resume uma tendência de grupos estudados; não promete o mesmo resultado para toda pessoa nem dispensa operar uma falha sintomática.",
+      "incorretas": {
+        "B": "**A função semelhante tem apoio, mas 2% subestima muito a não união conservadora distal desviada.** A fonte apresenta 20% a 36% nas séries destacadas. Não se deve transferir uma taxa baixa da fixação de outro segmento ou contexto.",
+        "C": "**Reconhece a não união frequente e presume pior função final acentuada.** Essa inferência é justamente o que os estudos citados não confirmam em média. Alguns pacientes têm sintomas e precisam operar, mas isso difere de afirmar função muito pior de todo o grupo.",
+        "D": "**Erra tanto a frequência quanto a conclusão funcional.** A pseudartrose não é rara nesse cenário, e a comparação apresentada não demonstra função muito pior como regra. A alternativa transforma dois desfechos distintos em uma associação sem apoio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Terço lateral (distal)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Terço lateral (distal)"
+        ],
+        "blocos": [
+          "terco-lateral-distal-1053aba0",
+          "terco-lateral-distal-25d53230",
+          "terco-lateral-distal-38294fea",
+          "terco-lateral-distal-c071a8d5"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "22973f2be3c44e7b2e4018b4a1ab7525239d0621b926d359411eb3bd5ea9a30e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
