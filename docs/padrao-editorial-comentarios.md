@@ -11,9 +11,12 @@ Depois do piloto da `mao-2164` (fratura de SEYMOUR), Tales definiu a **miniaula 
 todos os comentários do site. Referência: [exemplos/mao-2164.json](exemplos/mao-2164.json). Prompt pronto
 para Claude e Codex: [prompts/comentarios-miniaula.md](prompts/comentarios-miniaula.md).
 
-- Partir do problema da questão, ensinar peça por peça a partir dos fundamentos, juntar as peças e fazer
-  o aluno enxergar (forças, deslocamento, exame físico, imagem), relacionar à prática só no que importa
-  e fechar com o aprendizado decisivo.
+- Abrir com o caso concreto, ensinar a partir dos fundamentos, fazer o aluno enxergar (forças,
+  deslocamento, exame físico, imagem), relacionar à prática só no que importa e fechar com o
+  aprendizado decisivo.
+- **Naturalidade:** prosa de professor humano, que flui. Nunca rótulos mecânicos ("Peça 1", "Passo 2",
+  "O problema da questão"); títulos, quando houver, são frases naturais em negrito, e nem todo
+  parágrafo precisa de um (Tales, 22/10/2026: "peça 1, peça 2 ficou simplesmente horrível").
 - Cada alternativa, inclusive a correta, com motivo próprio, sem repetir a aula.
 - **Tamanho flexível:** o mais importante recebe mais texto, o menos importante recebe menos.
 - **Citação moderada:** citar menos do que no piloto, mas ainda citar; a referência curta sustenta os
