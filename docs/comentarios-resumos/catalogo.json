@@ -8,7 +8,7 @@
   "pendente-figura-ausente": 2,
   "pendente-fonte": 51,
   "pendente-inspecao-imagem": 170,
-  "revisada": 546
+  "revisada": 547
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -36,9 +36,9 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 71,
+    "pendente": 70,
     "pendente-inspecao-imagem": 7,
-    "revisada": 54
+    "revisada": 55
    }
   },
   "rockwood10-34-fratura-clavicula": {
@@ -110,7 +110,7 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 79,
+    "pendente": 80,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 18,
@@ -18977,6 +18977,22 @@
     "rockwood10-45-fraturas-mao"
    ],
    "questaoSha256": "0c6ed344a49fc6e99a62561724b845d31c40cdd329f9f1333bdfbb1b2af84812"
+  },
+  "mao-2198": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "7944577b6aec1605efb3200c3d72564ae052de9f6d42e5aff8a2ce82d5f57da1"
   },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
@@ -56483,7 +56499,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56498,7 +56514,40 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "d5cb2f571d6985f0a79caba4fb350c05befae37af21e73e89a1be20c561df60d"
+   "questaoSha256": "d5cb2f571d6985f0a79caba4fb350c05befae37af21e73e89a1be20c561df60d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide",
+       "Epidemiologia, mecanismo, lesões associadas e imagem",
+       "Complicações"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-d94ae394",
+       "fraturas-da-glenoide-65e0de7d",
+       "fraturas-da-glenoide-797e1a7b",
+       "fraturas-da-glenoide-41618adb",
+       "fraturas-da-glenoide-89479f30",
+       "fraturas-da-glenoide-e47df132",
+       "fraturas-da-glenoide-489d7853",
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c",
+       "complicacoes-19395d4e"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "01ba17e650cb0bfde6493d4549e86430a2aba6c68118dda983b782267f9d2433"
+     }
+    ],
+    "questaoSha256": "d5cb2f571d6985f0a79caba4fb350c05befae37af21e73e89a1be20c561df60d",
+    "comentarioSha256": "87b40eb1c731db2fa612a7a35c7f36cb0ddc6da68c5b626b30ed7ce3f1925144"
+   }
   },
   "trauma-0999": {
    "tema": "trauma",
