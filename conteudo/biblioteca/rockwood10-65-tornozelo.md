@@ -84,7 +84,7 @@ A cirurgia da SAD II é a exceção da regra "fíbula primeiro": **começa pelo 
 
 !questoes central=trauma-0171,trauma-0766 treino=trauma-1684
 conceito: A SAD I é a avulsão transversa da fíbula abaixo da sindesmose (WEBER A) ou a lesão ligamentar lateral; a SAD II acrescenta o cisalhamento vertical do maléolo medial, com possível impacto do plafond medial.
-como: O TEOT 2021 perguntou em que estágio pode ocorrer a depressão da porção medial do plafond (II da supinação-adução), contra o I da SAD e os estágios I e II da supinação-rotação lateral (a mesma questão aparece numa prova TEOT/TARO sem ano). O TEOT 2025 descreveu quatro sequências e pediu a que corresponde ao WEBER A: lesão ligamentar lateral ou avulsão do maléolo lateral seguida da fratura vertical do maléolo medial.
+como: O TEOT 2021 perguntou em que estágio pode ocorrer a depressão da porção medial do plafond (II da supinação-adução), contra o I da SAD e os estágios I e II da supinação-rotação lateral (a mesma questão aparece numa prova de Ortopedia sem ano). O TEOT 2025 descreveu quatro sequências e pediu a que corresponde ao WEBER A: lesão ligamentar lateral ou avulsão do maléolo lateral seguida da fratura vertical do maléolo medial.
 armadilha: Avulsão do maléolo medial no estágio II: avulsão transversa é a lesão medial da pronação-abdução no estágio I; na SAD o medial é empurrado, e o traço é vertical.
 armadilha: Supinação-rotação lateral: a SER não chega ao plafond medial; sua lesão medial é o deltoide ou o maléolo medial oblíquo.
 !fim
@@ -202,7 +202,7 @@ O tornozelo tem, portanto, **três estabilizadores estáticos**: o complexo oste
 
 !questoes central=pe-tornozelo-0295 relacionadas=pe-tornozelo-0282,trauma-0883 treino=pe-tornozelo-0396
 conceito: O deltoide profundo, intra-articular, do colículo posterior ao tálus, é o componente mais forte e o que segura o tálus contra o desvio lateral; com ele e a sindesmose rotos, o tálus desliza para fora no estresse.
-como: O TARO 2014 perguntou o componente mais forte do deltoide (tibiotalar posterior, contra tibionavicular, tibiocalcâneo e tibiotalar anterior; a mesma questão aparece duas vezes no acervo). Uma prova TEOT/TARO sem ano descreveu ruptura do tibiotalar anterior e do tibiocalcâneo e pediu a camada e a função (superficial; evitar eversão e abdução do retropé). O TARO 2010 perguntou para onde o tálus desloca com deltoide e sindesmose rotos (lateralmente, no estresse em eversão).
+como: O TARO 2014 perguntou o componente mais forte do deltoide (tibiotalar posterior, contra tibionavicular, tibiocalcâneo e tibiotalar anterior; a mesma questão aparece duas vezes no acervo). Uma prova de Ortopedia sem ano descreveu ruptura do tibiotalar anterior e do tibiocalcâneo e pediu a camada e a função (superficial; evitar eversão e abdução do retropé). O TARO 2010 perguntou para onde o tálus desloca com deltoide e sindesmose rotos (lateralmente, no estresse em eversão).
 armadilha: Tibionavicular: é superficial, parte do leque que nasce no colículo anterior.
 !fim
 
@@ -287,7 +287,7 @@ Radiografia sob estresse gravitacional: decúbito lateral sobre o lado do tornoz
 
 !questoes central=trauma-0300 relacionadas=pe-tornozelo-0348 treino=trauma-1690
 conceito: A radiografia de estresse do tornozelo é feita com a articulação em neutro e rotação externa do antepé; a flexão plantar cria falso alargamento do espaço claro medial.
-como: Uma prova TEOT/TARO sem ano perguntou a posição das radiografias de instabilidade (neutro e rotação externa do antepé), contra rotação interna e flexão plantar (a mesma questão aparece duas vezes no acervo). O TARO 2009 perguntou a posição do estresse para o deltoide combinando pronação ou supinação com rotação medial ou lateral; está sem gabarito, e o capítulo descreve rotação externa (lateral) com o tornozelo em neutro, sem falar em pronação ou supinação.
+como: Uma prova de Ortopedia sem ano perguntou a posição das radiografias de instabilidade (neutro e rotação externa do antepé), contra rotação interna e flexão plantar (a mesma questão aparece duas vezes no acervo). O TARO 2009 perguntou a posição do estresse para o deltoide combinando pronação ou supinação com rotação medial ou lateral; está sem gabarito, e o capítulo descreve rotação externa (lateral) com o tornozelo em neutro, sem falar em pronação ou supinação.
 armadilha: Flexão plantar e rotação externa: a rotação está certa, mas a flexão plantar simula instabilidade.
 !fim
 

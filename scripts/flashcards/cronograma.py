@@ -332,7 +332,7 @@ def cmd_proximo(args) -> int:
         if not c or not c.get("conceito"):
             continue
         r = riqueza(c)
-        oficial = q.get("prova") in ("TEOT", "TARO", "TEOT/TARO", "CET-PR", "TECOC", "ENARE")
+        oficial = q.get("prova") in ("TEOT", "TARO", "Ortopedia", "CET-PR", "TECOC", "ENARE")
         candidatas.append(((usados[qid], not r["tabela"], not r["classificacao"], not r["naProva"], not oficial, qid), qid, r))
     candidatas.sort()
     print(f"# Assunto: {alvo['assunto']} ({alvo['area']}) · posição {alvo['posicao']} · {alvo['incidencia']} questões de prova · autorais {alvo['autorais']}/{alvo['meta']} · {len(candidatas)} questões-fonte"

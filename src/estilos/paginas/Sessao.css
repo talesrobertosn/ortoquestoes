@@ -565,10 +565,24 @@ html.oq-sessao .sx-barra { top: var(--oq-cabecalho, 56px); }
 .sx-mapa--compacto .sx-mapa__numero { font-size: 0.78rem; }
 .sx-mapa--compacto { padding: 4px; }
 
-/* Faixa do cronograma */
-.faixa-cronograma b { font-family: var(--fonte-texto); font-weight: 700; font-size: 0.8rem; }
-.faixa-cronograma__texto i { border-radius: 999px; box-shadow: none; }
-.faixa-cronograma__barra, .faixa-cronograma__barra span { height: 6px; border-radius: 999px; box-shadow: none; }
+/* Faixa do cronograma. Pílula de uma linha só, com respiro nas laterais (pedido do Tales, 21/10/2026:
+   rolando a sessão, a faixa ficava colada nas bordas). Texto, barra no meio e o número. */
+.faixa-cronograma {
+  grid-template-columns: auto minmax(3rem, 1fr) auto;
+  grid-template-areas: "texto barra numero";
+  gap: 0.75rem; width: auto; max-width: min(100% - 2rem, 34rem);
+  margin: 0 auto 0.45rem; padding: 0.3rem 0.95rem;
+  background: var(--superficie); border: 1px solid var(--traco); border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.faixa-cronograma__texto { grid-area: texto; font-size: 0.76rem; }
+.faixa-cronograma b { grid-area: numero; font-family: var(--fonte-texto); font-weight: 700; font-size: 0.78rem; color: var(--texto-2); }
+.faixa-cronograma__texto i { width: 0.5rem; height: 0.5rem; border-radius: 999px; box-shadow: none; }
+.faixa-cronograma__barra { grid-area: barra; grid-column: auto; }
+.faixa-cronograma__barra, .faixa-cronograma__barra span { height: 5px; border-radius: 999px; box-shadow: none; }
+@media (max-width: 40rem) {
+  .faixa-cronograma { max-width: calc(100% - 1.5rem); gap: 0.55rem; padding-inline: 0.8rem; }
+}
 
 /* Coluna lateral */
 .sx-lado__bloco { border: 1px solid var(--traco); border-radius: var(--raio-cartao); box-shadow: var(--sombra); }

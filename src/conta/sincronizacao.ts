@@ -34,8 +34,12 @@ const versaoInicialInvalida = (erro: unknown) => /versão inicial inválida/i.te
 const PAGINA = 500
 /** Com a leitura incremental, a conferência completa vira rede de segurança rara. */
 const RECONCILIAR_A_CADA = 30 * 60_000
-/** Intervalo com a aba visível. Trocar de aba ou de aparelho já sincroniza na hora. */
-const INTERVALO = 30_000
+/**
+ * Intervalo com a aba visível. Trocar de aba ou de aparelho já sincroniza na hora, e cada resposta
+ * é enviada no momento em que é dada (aoGravar). De 30 s para 60 s em 21/10/2026: era a chamada
+ * mais frequente do banco, e só serve para trazer o que outro aparelho fez com esta aba parada.
+ */
+const INTERVALO = 60_000
 /** Nenhum pedido segura a fila: passado o prazo, conta como falha de rede e tenta de novo. */
 const PRAZO = 30_000
 /** Foco, visibilidade e "voltou a página" chegam juntos: um ciclo basta. */

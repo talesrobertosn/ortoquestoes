@@ -16,7 +16,7 @@ const n = (v: number) => v.toLocaleString('pt-BR')
 const dataCurta = (em: number) => new Date(em).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: FUSO_DIA })
 
 /** Provas de preparação que contam tanto para o TEOT quanto para o TARO (origem a confirmar e CET-PR). */
-const PROVAS_GERAIS = ['TEOT/TARO', 'CET-PR']
+const PROVAS_GERAIS = ['Ortopedia', 'CET-PR']
 
 /** Grupos de prova do acervo, com o que cada prova de interesse do perfil inclui. */
 const GRUPOS: Array<{ id: string; rotulo: string; interesse: ProvaInteresse[]; pertence: (prova: string, area?: string) => boolean }> = [
