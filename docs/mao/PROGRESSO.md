@@ -113,7 +113,11 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Etapa (1) concluída em 22/10/2026:** revisao_01 a 09 refazem mao-2106 a 2150 (medianas por questão de 3.500 a 4.200
    caracteres). Na 2143 a alternativa B virou extensor ulnar do carpo, porque o Green cita OMER com o FDS (p. 1223).
    PR #456 leva as revisões 01 a 07; as 08 e 09 vão no próximo push. Etapa (2) em curso: lote 12 publicado no padrão
-   (mao-2151 a 2155, PR #456 já juntado antes dele). Lotes 13 a 16 publicados (mao-2156 a 2175; PR #457 juntado com 12 a 14). Próximo: lote 17.
+   (mao-2151 a 2155, PR #456 já juntado antes dele). Lotes 13 a 16 publicados (mao-2156 a 2175; PR #457 juntado com 12 a 14; 15 e 16 no PR seguinte).
+   **Retomada (22/10/2026):** `lotes/sbcm-2022/lote_17.py` (48, 88, 30, 99, 31) já está escrito e com fontes conferidas,
+   mas NÃO foi aplicado: falta só reescrever o enunciado da 99 (a copia acusou "edema e fibrose no dorso da mão",
+   7 palavras iguais ao original), rodar copia, aplicar_lote, gerar_indice, validar_acervo e progresso.py
+   (--gab depois do lote 16: A 19, B 17, C 17, D 17). Depois: lotes 18 a 20 e as pendentes; em seguida refazer a SBCM 2024.
 7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 17** (48, 88, 30, 99, 31; lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
