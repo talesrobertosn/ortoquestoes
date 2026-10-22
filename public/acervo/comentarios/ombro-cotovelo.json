@@ -2683,18 +2683,43 @@
   "conferido": false
  },
  "ombro-cotovelo-0245": {
+  "conceito": "**Zelle 2B combina a lesão musculoesquelética com déficit neurológico incompleto.** A letra B diferencia esse padrão do 2A, em que se acrescenta lesão vascular. Se o déficit neurológico incompleto vier junto de lesão vascular, passa a ser tipo 3.\n\nA dissociação escapulotorácica é uma desconexão grave da cintura escapular do esqueleto axial, com lesão de partes moles e possível comprometimento dos vasos e do plexo. Pode ocorrer com a pele intacta. Portanto, a ausência de uma ferida aberta não torna a lesão pequena nem permite dispensar o exame neurovascular.\n\n| Zelle | Elemento que se soma à lesão musculoesquelética |\n|---|---|\n| 1 | Nenhum dos componentes neurovasculares da classificação |\n| 2A | Vascular |\n| 2B | Neurológico incompleto |\n| 3 | Neurológico incompleto e vascular |\n| 4 | Avulsão completa do plexo |\n\nA extensão da lesão do plexo tem grande valor prognóstico. Classificar o déficit como incompleto não significa que seja leve; significa que ele não equivale à perda completa da função neural do tipo 4. O prognóstico e o planejamento dependem de estabelecer a extensão real da lesão, além da situação vascular e das ameaças gerais do trauma.\n\nO quadro reproduzido no resumo tem uma ressalva editorial: o tipo neurológico incompleto aparece como “2” depois do 2A; corresponde ao 2B cobrado pela prova. Isso não muda o conteúdo da categoria.\n\n**Leia “Zelle: a classificação que a prova cobra”, na Biblioteca.** Separe presença de lesão vascular, integridade neurológica e completude da lesão do plexo.",
+  "correta": "**C: musculoesquelético e neurológico incompleto.** É o tipo 2B. Acrescentar lesão vascular ao mesmo déficit mudaria a classificação para 3; avulsão completa do plexo caracteriza 4.",
   "incorretas": {
-   "A": "**É o tipo 1.** Lesão musculoesquelética isolada, sem comprometimento vascular nem neurológico.",
-   "B": "**É o tipo 2A.** A associação com lesão vascular, sem lesão neurológica, define o 2A.",
-   "D": "**É o tipo 3.** Quando se somam lesão neurológica incompleta e vascular, a lesão é tipo 3."
+   "A": "**Descreve o tipo 1, sem o componente neurovascular que define as categorias seguintes.** A lesão musculoesquelética está na base de todos os tipos, mas no 2B há déficit neurológico incompleto adicional.",
+   "B": "**Descreve o 2A.** O elemento acrescentado é vascular, enquanto no 2B é neurológico incompleto. A troca de letra muda o tipo de lesão associada, não apenas sua intensidade.",
+   "D": "**Descreve o tipo 3.** O déficit neurológico incompleto está presente, mas vem acompanhado de lesão vascular. A alternativa adiciona um componente que o 2B isoladamente não exige."
   },
-  "conceito": "**O que é a dissociação escapulotorácica.** Uma lesão rara e gravíssima, uma verdadeira **amputação interna** do membro superior. Trauma de alta energia com **tração lateral** do ombro (típico em acidentes de moto) rompe as inserções musculares da escápula e a desloca **lateralmente** sobre o gradil costal, associando-se a fratura da clavícula ou luxação acromioclavicular ou esternoclavicular, lesão da **artéria subclávia ou axilar** e lesão do **plexo braquial**, muitas vezes por **avulsão** de raízes.\n\n**Como reconhecer.** Ombro edemaciado, membro frio e sem pulso, déficit neurológico. Na radiografia de tórax **centrada**, mede-se a distância da linha média (processos espinhosos) à borda medial da escápula dos dois lados: a razão aumentada (acima de cerca de **1,29**) indica **deslocamento lateral** da escápula. Uma clavícula com fratura muito afastada é outro sinal.\n\n**A classificação de Zelle.** **Tipo 1**: lesão **musculoesquelética** isolada. **Tipo 2A**: musculoesquelética com lesão **vascular**. **Tipo 2B**: musculoesquelética com lesão **neurológica incompleta**. **Tipo 3**: musculoesquelética, **neurológica incompleta** e **vascular**. **Tipo 4**: musculoesquelética com **avulsão completa** do plexo braquial. O prognóstico é ditado pelo plexo.\n\n**O que fazer.** Prioridade à vida: controle do sangramento e reparo vascular quando o membro é viável. Fixação da clavícula ou da articulação lesada para estabilizar. A exploração do plexo é individualizada. Quando há **avulsão completa** do plexo, o membro fica sem função e dolorido, e a **amputação precoce** acima do cotovelo com artrodese do ombro, ou a amputação alta, pode ser a melhor opção funcional. A mortalidade chega a cerca de 10%.\n\n**Na prova:** Zelle **2A** = vascular; **2B** = **neurológica incompleta**; **3** = neurológica incompleta e vascular; **4** = avulsão completa do plexo.",
-  "correta": "**Musculoesquelético e neurológico incompleto.** O tipo 2B de Zelle soma à lesão musculoesquelética uma lesão incompleta do plexo, sem lesão vascular.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 32"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Dissociação escapulotorácica."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-22",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Dissociação escapulotorácica"
+     ],
+     "blocos": [
+      "dissociacao-escapulotoracica-fb39e45c",
+      "dissociacao-escapulotoracica-8b999d6b",
+      "dissociacao-escapulotoracica-2b65a722"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "2c5af8b694c231e7cf817934ef4bef831b01e9df19eeca5bf6946e1ba198e2fb"
+    }
+   ],
+   "questaoSha256": "0fb21bda9e2e42de4451e8bfc14beafdbe0e1e26604f1208e95d9139aa2235ec",
+   "comentarioSha256": "4b73052b4016aae402b92e95092efe8316e7c0cd750d7047a3e392622d639b06"
+  }
  },
  "ombro-cotovelo-0246": {
   "incorretas": {
@@ -4333,16 +4358,50 @@
   "conferido": false
  },
  "ombro-cotovelo-0401": {
+  "conceito": "**No mapa do complexo suspensor apresentado pelo resumo, coracoacromial e clavícula distal são componentes do anel.** A alternativa C reúne dois elementos pertencentes a esse conjunto. O ponto essencial é distinguir o anel de sustentação dos pilares que o apoiam.\n\nO anel reúne processo glenoidal, coracoide, coracoclaviculares e coracoacromial, clavícula lateral, acromioclavicular e acrômio. O pilar superior é o terço médio da clavícula; o inferior é a junção da parte lateral do corpo com a espinha. A espinha pode participar dessa sustentação sem se tornar, por isso, um elemento do anel na lista usada para esta pergunta.\n\nUma ruptura isolada tende a manter estabilidade. Duas rupturas, ou uma ruptura com fratura de um pilar, podem criar uma situação instável. “Potencialmente instável” não determina uma operação idêntica para todos: padrão, desvio, ligamentos remanescentes e condição clínica precisam ser definidos.\n\n**Não confunda coracoumeral e coracoacromial.** O primeiro se relaciona ao úmero e está fora da lista do anel consultada; o segundo integra a ligação entre processos da escápula no modelo apresentado. Ter “coraco” no nome não torna qualquer ligamento parte do mesmo complexo.\n\nO resumo também critica o uso amplo de “ombro flutuante” e distingue a definição clássica da glenoide totalmente desconectada. Reconhecer os componentes do anel é um passo anatômico; não substitui analisar a estabilidade efetiva de uma fratura específica.\n\n**Leia “O anel de Goss”, na Biblioteca.** Desenhe anel e pilares em camadas diferentes para entender por que B mistura um componente ligamentar com uma estrutura de apoio.",
+  "correta": "**C: coracoacromial e terço distal da clavícula.** Ambos constam da lista do anel no resumo do capítulo 33. A identificação segue essa fonte e concorda com o gabarito oficial, sem usar o comentário antigo como evidência anatômica.",
   "incorretas": {
-   "A": "O acrômio faz parte do anel, mas o ligamento coracoumeral pertence ao intervalo dos rotadores, sem papel na suspensão do braço.",
-   "B": "Pela descrição de Goss, o ligamento trapezoide faz parte do anel e a espinha da escápula, do pilar inferior. Foi considerada incorreta apenas por seguir o gabarito oficial.",
-   "D": "O processo coracoide faz parte do anel, mas o ligamento transverso do úmero fica no sulco do bíceps e não participa da suspensão."
+   "A": "**O acrômio pertence ao anel; o coracoumeral não pertence à lista apresentada.** O ligamento que a fonte inclui nessa relação é o coracoacromial. A proximidade dos nomes não dispensa conferir qual estrutura é conectada.",
+   "B": "**O trapezoide integra os coracoclaviculares, mas a espinha aparece no apoio inferior, não na lista de componentes do anel.** A alternativa mistura níveis do modelo. Participar da sustentação global não é o mesmo que pertencer ao anel específico perguntado.",
+   "D": "**O coracoide está no anel, mas o transverso do úmero não está.** A presença de um elemento correto não torna o par correto. É necessário que ambos pertençam ao conjunto definido pela fonte."
   },
-  "conceito": "O **complexo suspensor superior do ombro**, descrito por **Goss**, é o conjunto de ossos e ligamentos que mantém o braço \"pendurado\" no tronco. Ele é imaginado como um **anel** com dois **pilares**.\n\nO **anel** é formado por: glenoide e colo da escápula, processo coracoide, **ligamentos coracoclaviculares** (o conoide e o **trapezoide**, que ligam o coracoide à clavícula), **terço distal da clavícula**, articulação acromioclavicular e acrômio.\n\nOs **pilares** que sustentam esse anel são o terço médio da clavícula, em cima, e o corpo da escápula com a **espinha da escápula**, embaixo.\n\nO conceito importa por uma regra clínica: uma lesão isolada desse anel costuma ser estável e pode ser tratada sem cirurgia. Uma **dupla lesão** (dois pontos rompidos) solta a glenoide do resto e frequentemente pede fixação. O exemplo clássico é a fratura do meio da clavícula com fratura do colo da escápula, o chamado **ombro flutuante**.\n\nPela descrição de Goss, o componente ligamentar do anel são os **coracoclaviculares**, e não o ligamento coracoacromial. O gabarito oficial aponta a alternativa C, que acerta o terço distal da clavícula mas cita o coracoacromial. Já a alternativa B cita dois elementos legítimos do complexo. Por isso a questão tem um aviso.",
-  "correta": "Coracoacromial e terço distal da clavícula, segundo o gabarito. O terço distal da clavícula faz parte do anel, mas, na descrição de Goss, o ligamento do anel é o coracoclavicular, e não o coracoacromial.",
-  "alerta": "A descrição original de Goss para o complexo suspensor superior do ombro NÃO inclui o ligamento coracoacromial: o componente ligamentar do anel são os ligamentos CORACOCLAVICULARES (conoide e trapezoide). Pela descrição clássica, a alternativa B (ligamento trapezoide e espinha da escápula) nomeia dois elementos legítimos do complexo (o trapezoide no anel, a espinha no pilar inferior), enquanto a alternativa C acerta apenas o terço distal da clavícula. Leia o comentário sabendo que o gabarito oficial não corresponde à descrição consagrada.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-22",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Complexo suspensor superior, ombro flutuante e colo da escápula"
+     ],
+     "blocos": [
+      "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "6875afa5b29740efec19f908f39af0fc5c153fa33d4aff46bd6c38a1130e29fa"
+    }
+   ],
+   "questaoSha256": "84d43ca243c309446d42f78bfbbfd113efc9557347e96c37381ebd6d0e4d3d76",
+   "comentarioSha256": "b3fdf730015a77f3c02b832f3d202f4302dbb7a9506c38a9ba0e9d523e0606b2"
+  }
  },
  "ombro-cotovelo-0402": {
   "incorretas": {

@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1550,
+  "pendente": 1530,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 51,
   "pendente-inspecao-imagem": 173,
-  "revisada": 496
+  "revisada": 516
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -36,19 +36,19 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 118,
+    "pendente": 98,
     "pendente-inspecao-imagem": 10,
-    "revisada": 4
+    "revisada": 24
    }
   },
   "rockwood10-34-fratura-clavicula": {
    "titulo": "Fratura da clavícula",
    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
-    "pendente": 22,
+    "pendente": 15,
     "pendente-fonte": 5,
     "pendente-inspecao-imagem": 6,
-    "revisada": 40
+    "revisada": 47
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -20009,7 +20009,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -20024,7 +20024,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "0fb21bda9e2e42de4451e8bfc14beafdbe0e1e26604f1208e95d9139aa2235ec"
+   "questaoSha256": "0fb21bda9e2e42de4451e8bfc14beafdbe0e1e26604f1208e95d9139aa2235ec",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Dissociação escapulotorácica"
+      ],
+      "blocos": [
+       "dissociacao-escapulotoracica-fb39e45c",
+       "dissociacao-escapulotoracica-8b999d6b",
+       "dissociacao-escapulotoracica-2b65a722"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "2c5af8b694c231e7cf817934ef4bef831b01e9df19eeca5bf6946e1ba198e2fb"
+     }
+    ],
+    "questaoSha256": "0fb21bda9e2e42de4451e8bfc14beafdbe0e1e26604f1208e95d9139aa2235ec",
+    "comentarioSha256": "4b73052b4016aae402b92e95092efe8316e7c0cd750d7047a3e392622d639b06"
+   }
   },
   "ombro-cotovelo-0249": {
    "tema": "ombro-cotovelo",
@@ -20856,7 +20881,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -20871,7 +20896,39 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "84d43ca243c309446d42f78bfbbfd113efc9557347e96c37381ebd6d0e4d3d76"
+   "questaoSha256": "84d43ca243c309446d42f78bfbbfd113efc9557347e96c37381ebd6d0e4d3d76",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "6875afa5b29740efec19f908f39af0fc5c153fa33d4aff46bd6c38a1130e29fa"
+     }
+    ],
+    "questaoSha256": "84d43ca243c309446d42f78bfbbfd113efc9557347e96c37381ebd6d0e4d3d76",
+    "comentarioSha256": "b3fdf730015a77f3c02b832f3d202f4302dbb7a9506c38a9ba0e9d523e0606b2"
+   }
   },
   "ombro-cotovelo-0404": {
    "tema": "ombro-cotovelo",
@@ -45067,7 +45124,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45082,7 +45139,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "f0da078c8c7029c597b46c7a5d92cfb9e6801644f054b2db6ecea1a0f62f3bef"
+   "questaoSha256": "f0da078c8c7029c597b46c7a5d92cfb9e6801644f054b2db6ecea1a0f62f3bef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-6963932a",
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "1d1201b788aa3a6dad677d028d4f0d8842ea952e37306e57215e69c754205e18"
+     }
+    ],
+    "questaoSha256": "f0da078c8c7029c597b46c7a5d92cfb9e6801644f054b2db6ecea1a0f62f3bef",
+    "comentarioSha256": "0bc706605a7309066d409e950bd3b55bc26a91b5995f2febe7b49b2e83c02eda"
+   }
   },
   "trauma-0264": {
    "tema": "trauma",
@@ -47040,7 +47124,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47055,7 +47139,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "0d9718d28c4da4335127b912d20b367ea86a0a48c28602822c1919a47b9c509c"
+   "questaoSha256": "0d9718d28c4da4335127b912d20b367ea86a0a48c28602822c1919a47b9c509c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação",
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+       "vias-de-acesso-e-tecnica-de-fixacao-b5f2e443",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+       "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b",
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "2301ca0eb1e8b856ea52209107094e03d529cf0e9e07171f7f212b5962af901b"
+     }
+    ],
+    "questaoSha256": "0d9718d28c4da4335127b912d20b367ea86a0a48c28602822c1919a47b9c509c",
+    "comentarioSha256": "e6ea553c2a7c21a88fc88f0de2a704f883e72b0de124ea3924fc7ea6a4c352f2"
+   }
   },
   "trauma-0416": {
    "tema": "trauma",
@@ -47876,7 +47988,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47891,7 +48003,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "ba7101ada1ffe4404424ae76dcb17ae42822fe199d02d001ffe3784f1a7768eb"
+   "questaoSha256": "ba7101ada1ffe4404424ae76dcb17ae42822fe199d02d001ffe3784f1a7768eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula",
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-8bbbb416",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+       "medir-o-desvio-e-indicar-a-cirurgia-386950ef"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "d29a570ec20a83b5935fe98219f5a1a67e320921db7b1b3b894f48d984332831"
+     }
+    ],
+    "questaoSha256": "ba7101ada1ffe4404424ae76dcb17ae42822fe199d02d001ffe3784f1a7768eb",
+    "comentarioSha256": "b15bdf19a33d90baaf23705e99f554d40fb88994a46cd409e8cf8e5f208d44eb"
+   }
   },
   "trauma-0449": {
    "tema": "trauma",
@@ -54364,7 +54503,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54379,7 +54518,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "4ba5104f05b0c9502338afbaa57c8519be9d0b00c393e0e4dbbb0010c663a6af"
+   "questaoSha256": "4ba5104f05b0c9502338afbaa57c8519be9d0b00c393e0e4dbbb0010c663a6af",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo, lesões associadas e imagem"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-330e3cc8",
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-9deaa695",
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-6aeaaa87"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "cbd4510d54f55c7b503281c287c050f9a065a44032546857d08a7398e737366a"
+     }
+    ],
+    "questaoSha256": "4ba5104f05b0c9502338afbaa57c8519be9d0b00c393e0e4dbbb0010c663a6af",
+    "comentarioSha256": "3f393961884cd040e2cc4fa8638d3710cad363d5222208aac1f4fcc10027acfd"
+   }
   },
   "trauma-0908": {
    "tema": "trauma",
@@ -54747,7 +54911,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54762,7 +54926,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "82be1def80758fce3b24955e526e8b5f16f6b63ca3c2ba277586c6fc8c3d4516"
+   "questaoSha256": "82be1def80758fce3b24955e526e8b5f16f6b63ca3c2ba277586c6fc8c3d4516",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complicações",
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "complicacoes-19395d4e",
+       "complicacoes-fafb04b3",
+       "complicacoes-3f02ac41",
+       "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "9005c14356aa910f23ac94ca8d4aa506f6db888f84b6cac8cccc5457c308c5e2"
+     }
+    ],
+    "questaoSha256": "82be1def80758fce3b24955e526e8b5f16f6b63ca3c2ba277586c6fc8c3d4516",
+    "comentarioSha256": "878db279c736cb78b40df531b0a7462d74f4d51d5d779b8a4252141cf141f5c7"
+   }
   },
   "trauma-0924": {
    "tema": "trauma",
@@ -55711,7 +55902,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55726,7 +55917,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "001f147c13341b91ea7ef16416031417d4ac1757255d57cfd581c22d43effd01"
+   "questaoSha256": "001f147c13341b91ea7ef16416031417d4ac1757255d57cfd581c22d43effd01",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide",
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-d94ae394",
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "fraturas-da-glenoide-e47df132"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "eddfbf97faa3a938148dfede4bffed50cb29a94adcae383ea043e0655bd51c1d"
+     }
+    ],
+    "questaoSha256": "001f147c13341b91ea7ef16416031417d4ac1757255d57cfd581c22d43effd01",
+    "comentarioSha256": "de6fd7975af08f0782f1700ae6667a6860399d07a0be2f38bd00733777a07e0c"
+   }
   },
   "trauma-0975": {
    "tema": "trauma",
@@ -55767,7 +55984,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55782,7 +55999,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "37716092f379f5dfc4457a59accb5e292ce1d8e7196eed006a42ebc159a03b2b"
+   "questaoSha256": "37716092f379f5dfc4457a59accb5e292ce1d8e7196eed006a42ebc159a03b2b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+       "vias-de-acesso-e-tecnica-de-fixacao-d5ce803f",
+       "vias-de-acesso-e-tecnica-de-fixacao-b5f2e443",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+       "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b",
+       "vias-de-acesso-e-tecnica-de-fixacao-b44038d8"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "ff2eaa247293b9eb0d2caa791f4f661e837e8445d379db4219cabb394c96ca08"
+     }
+    ],
+    "questaoSha256": "37716092f379f5dfc4457a59accb5e292ce1d8e7196eed006a42ebc159a03b2b",
+    "comentarioSha256": "e6e3c8557d4e5858c8586eacc557872d5f733de9104441a60908174b531dada9"
+   }
   },
   "trauma-0978": {
    "tema": "trauma",
@@ -57943,7 +58188,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57958,7 +58203,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "6be23b7084d71ac4066232b5b72d91fc7a840eb089b7a1e7a2ac7218093a020b"
+   "questaoSha256": "6be23b7084d71ac4066232b5b72d91fc7a840eb089b7a1e7a2ac7218093a020b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-0ef4b3c3",
+       "fraturas-da-glenoide-b25a3b02",
+       "fraturas-da-glenoide-65e0de7d",
+       "fraturas-da-glenoide-7240e61a"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "96aef16a4bb8478186f8b96df74f3485dc51fa96106e756f3222a57220879016"
+     }
+    ],
+    "questaoSha256": "6be23b7084d71ac4066232b5b72d91fc7a840eb089b7a1e7a2ac7218093a020b",
+    "comentarioSha256": "1fcd40ca43a5de4cb520197d014b0e37d363fc7537c5a85134c4553254ef303a"
+   }
   },
   "trauma-1083": {
    "tema": "trauma",
@@ -62333,7 +62604,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62348,7 +62619,31 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "a471aa163e2051e9191f6d2c02fc574ebb3bc8fa98c82e9a23229cface65c2c5"
+   "questaoSha256": "a471aa163e2051e9191f6d2c02fc574ebb3bc8fa98c82e9a23229cface65c2c5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd",
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-58542d07"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "f4d8da196f5cc75d9528cf4d469f4036a96a6e04275c5c03ffaefcc0efb0dade"
+     }
+    ],
+    "questaoSha256": "a471aa163e2051e9191f6d2c02fc574ebb3bc8fa98c82e9a23229cface65c2c5",
+    "comentarioSha256": "bc7fe9bf142cd753e7e1926553960806060456b0cf0e4d6c9811e2d35c9a2763"
+   }
   },
   "trauma-1301": {
    "tema": "trauma",
@@ -62382,7 +62677,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62397,7 +62692,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "804bd16c23eabe248e315d22b07744602300383c662fbb244d919f7a3b427355"
+   "questaoSha256": "804bd16c23eabe248e315d22b07744602300383c662fbb244d919f7a3b427355",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "c220380db61ea81c1050021d8448822dba074dc49d9a86474789baba7d4b15c0"
+     }
+    ],
+    "questaoSha256": "804bd16c23eabe248e315d22b07744602300383c662fbb244d919f7a3b427355",
+    "comentarioSha256": "e7a990a0f56c6771343458c9b6a0eaf194e4dcac267d95ae64863a2dd0e6e94e"
+   }
   },
   "trauma-1303": {
    "tema": "trauma",
@@ -62406,7 +62726,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62421,7 +62741,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "58f1b3ab9cd3a7fd995d3f2896ca4ec082e884c4746af71d90fe26907931c641"
+   "questaoSha256": "58f1b3ab9cd3a7fd995d3f2896ca4ec082e884c4746af71d90fe26907931c641",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complicações",
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "complicacoes-3f02ac41",
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "7c9da9377b1fcedffef878e502f2da0fb9955c469c95d9b9e45ba389dfaa66de"
+     }
+    ],
+    "questaoSha256": "58f1b3ab9cd3a7fd995d3f2896ca4ec082e884c4746af71d90fe26907931c641",
+    "comentarioSha256": "46255539ef15115a9f06acc12e3533bfd330cfc257162a60678c03bff91c5ca8"
+   }
   },
   "trauma-1304": {
    "tema": "trauma",
@@ -62831,7 +63178,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62847,7 +63194,34 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "b60db1de76e7a922c2fa71dce5ceb71c33c7d9756e5683b79a229af626e61b8e"
+   "questaoSha256": "b60db1de76e7a922c2fa71dce5ceb71c33c7d9756e5683b79a229af626e61b8e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-69bcc1c9",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-d9e7456b",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "5da4c9a74f985a3531bf8d6b7a12dd8591725290729d392bcf9b83211a6cf3e3"
+     }
+    ],
+    "questaoSha256": "b60db1de76e7a922c2fa71dce5ceb71c33c7d9756e5683b79a229af626e61b8e",
+    "comentarioSha256": "790b8214cdcda49c0ae995fbaec89bd90179192c358666a91a04b4a899aeca56"
+   }
   },
   "trauma-1321": {
    "tema": "trauma",
@@ -62881,7 +63255,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62897,7 +63271,33 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "3664c1f1eb40d1c6e14bcd8a470f605098bff7a32d682d4d385d17adf37afd9a"
+   "questaoSha256": "3664c1f1eb40d1c6e14bcd8a470f605098bff7a32d682d4d385d17adf37afd9a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula",
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+       "vias-de-acesso-e-tecnica-de-fixacao-2baae6b4",
+       "vias-de-acesso-e-tecnica-de-fixacao-f0b5f7c2"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "52e473665bf09da0241bcb4a532bce3bbeec34524b0d7bd4b8bfe074e3322c03"
+     }
+    ],
+    "questaoSha256": "3664c1f1eb40d1c6e14bcd8a470f605098bff7a32d682d4d385d17adf37afd9a",
+    "comentarioSha256": "7e4b6dd3c8767f178983ad7a5d2998b7651c86a0b4f1f193cdd2f1305589bc85"
+   }
   },
   "trauma-1323": {
    "tema": "trauma",
@@ -62907,7 +63307,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62923,7 +63323,35 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "a0b0d68bcf39a89ee6148025036688dae565985676729984c6108553c5aa2cdf"
+   "questaoSha256": "a0b0d68bcf39a89ee6148025036688dae565985676729984c6108553c5aa2cdf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas do corpo e fraturas complexas",
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "fraturas-do-corpo-e-fraturas-complexas-d6f735bd",
+       "fraturas-do-corpo-e-fraturas-complexas-04f714ac",
+       "fraturas-do-corpo-e-fraturas-complexas-ffceedd8",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-d95813eb"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "dedf284b01a655d246fa76f6e1ebafe9058dca8fadec4609d7d28f2d3ffab8d2"
+     }
+    ],
+    "questaoSha256": "a0b0d68bcf39a89ee6148025036688dae565985676729984c6108553c5aa2cdf",
+    "comentarioSha256": "2b0ea7c04f6e3711527d9703984a2a187d33325f2cb4497b26fe05c0dfde298f"
+   }
   },
   "trauma-1324": {
    "tema": "trauma",
@@ -63270,7 +63698,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63286,7 +63714,46 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "01c8fbd344d8acfcc70268e4e5f6e34d11261c2a68557d925e0a227f059ea716"
+   "questaoSha256": "01c8fbd344d8acfcc70268e4e5f6e34d11261c2a68557d925e0a227f059ea716",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-cf2b403c",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-16bb4d46"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "309cd3d1111a4c6617106673b993fe936d27eea812e6cee63f2114c18b79b99e"
+     },
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Ombro flutuante, costelas e terço medial"
+      ],
+      "blocos": [
+       "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "fcf48d9d12e572c29bc1f618d90aab032c4f0e6e19965ae2adfb82a67c466150"
+     }
+    ],
+    "questaoSha256": "01c8fbd344d8acfcc70268e4e5f6e34d11261c2a68557d925e0a227f059ea716",
+    "comentarioSha256": "e9c818f517b5cd27ba3c5951009562c0ac32e59a3dc6ff30d9bb5bf71307920e"
+   }
   },
   "trauma-1339": {
    "tema": "trauma",
@@ -63320,7 +63787,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63336,7 +63803,37 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "9cca3debb6427f39e343681be1a62ec341d475558d54019c941b58d5ae5062b3"
+   "questaoSha256": "9cca3debb6427f39e343681be1a62ec341d475558d54019c941b58d5ae5062b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-514a8f28",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-9326f72f",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c257bed2",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-3e879bce",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-90e86a25"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "d07992e7b2b90821618ba62d5cdc215341419779713d619832dab6ef296a1593"
+     }
+    ],
+    "questaoSha256": "9cca3debb6427f39e343681be1a62ec341d475558d54019c941b58d5ae5062b3",
+    "comentarioSha256": "94c903d047de45c940db86df120a863e44d81cf883c688ca1a2974b26e95ef1e"
+   }
   },
   "trauma-1341": {
    "tema": "trauma",
@@ -63346,7 +63843,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63362,7 +63859,32 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "a089111b0e25ff897aa0c892dcc7e62dcdfd80048d0e3727b37fbf176e3984e3"
+   "questaoSha256": "a089111b0e25ff897aa0c892dcc7e62dcdfd80048d0e3727b37fbf176e3984e3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-69bcc1c9",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-70361297"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "7ef2e4db1ef70f1e5945c05bec10cabec30ca35039cf84226f1924b11af23a2c"
+     }
+    ],
+    "questaoSha256": "a089111b0e25ff897aa0c892dcc7e62dcdfd80048d0e3727b37fbf176e3984e3",
+    "comentarioSha256": "16a8aa407bf51c6f8aca548b334ea7042e6d78ed2296e37424ee73c2a37a62c4"
+   }
   },
   "trauma-1342": {
    "tema": "trauma",
@@ -63372,7 +63894,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63395,7 +63917,32 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "7c63ac1d58fb38c1e7d5179079e0159ecd44c7cac53f1c1cb288dcf311320605"
+   "questaoSha256": "7c63ac1d58fb38c1e7d5179079e0159ecd44c7cac53f1c1cb288dcf311320605",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-514a8f28",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-9326f72f",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "4f48a3de0d92fa51a638040547d3f6d31f1e30c4177703e174552404b4af3c6b"
+     }
+    ],
+    "questaoSha256": "7c63ac1d58fb38c1e7d5179079e0159ecd44c7cac53f1c1cb288dcf311320605",
+    "comentarioSha256": "4271698502806b7087c2ab6e5150a4a9a6c25ccc3f2b5c2b759150d112347e90"
+   }
   },
   "trauma-1343": {
    "tema": "trauma",

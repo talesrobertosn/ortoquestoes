@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1550 |
+| pendente | 1530 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
 | pendente-fonte | 51 |
 | pendente-inspecao-imagem | 173 |
-| revisada | 496 |
+| revisada | 516 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -18,8 +18,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | --- | ---: | ---: | ---: |
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 50 | 0 | 20 |
 | Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 0 | 0 | 68 |
-| Fratura da escápula (`rockwood10-33-fratura-escapula`) | 4 | 0 | 132 |
-| Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 40 | 0 | 33 |
+| Fratura da escápula (`rockwood10-33-fratura-escapula`) | 24 | 0 | 112 |
+| Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 47 | 0 | 26 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 1 | 0 | 93 |
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 7 | 0 | 45 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 73 | 0 | 106 |
