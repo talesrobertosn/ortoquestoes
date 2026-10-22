@@ -3,7 +3,7 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1537,
+  "pendente": 1550,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 51,
@@ -13,7 +13,7 @@
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
    "titulo": "Síndrome compartimental aguda",
-   "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+   "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
    "estados": {
     "duplicada": 3,
     "pendente": 5,
@@ -43,7 +43,7 @@
   },
   "rockwood10-34-fratura-clavicula": {
    "titulo": "Fratura da clavícula",
-   "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+   "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
     "pendente": 22,
     "pendente-fonte": 5,
@@ -53,7 +53,7 @@
   },
   "rockwood10-36-umero-proximal": {
    "titulo": "Fratura do úmero proximal",
-   "sha256": "46097b05ea83a424badb01250f606ee623d8cc1f2902e8369a6675cadc8af978",
+   "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
     "pendente": 75,
@@ -63,7 +63,7 @@
   },
   "rockwood10-37-diafise-umero": {
    "titulo": "Fratura da diáfise do úmero",
-   "sha256": "59068fa4e61599e2066ed1522110736f83d1ce8153546e725441a1f07fb26f39",
+   "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
    "estados": {
     "duplicada": 2,
     "pendente": 35,
@@ -78,7 +78,7 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 76,
+    "pendente": 80,
     "pendente-fonte": 3,
     "pendente-inspecao-imagem": 15,
     "revisada": 73
@@ -86,7 +86,7 @@
   },
   "rockwood10-42-diafise-radio-ulna": {
    "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
-   "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+   "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
    "estados": {
     "duplicada": 8,
     "pendente": 15,
@@ -97,20 +97,20 @@
   },
   "rockwood10-44-carpo": {
    "titulo": "Fraturas e luxações do carpo",
-   "sha256": "e5228c83b181d7017eeb82213d340371a8930bad71d097c80de23aa8f70f0d8a",
+   "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 173,
+    "pendente": 178,
     "pendente-figura-ausente": 1,
     "pendente-inspecao-imagem": 13
    }
   },
   "rockwood10-45-fraturas-mao": {
    "titulo": "Fraturas e luxações da mão",
-   "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+   "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 75,
+    "pendente": 79,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 18,
@@ -129,7 +129,7 @@
   },
   "rockwood10-49-fratura-toracolombar": {
    "titulo": "Fraturas e luxações da coluna toracolombar",
-   "sha256": "3deb639c4437f8f6d16e9b02ae52f41bdc9ef1cf0a3f9bd14686e13abb4bf7d8",
+   "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
     "pendente": 109,
@@ -138,7 +138,7 @@
   },
   "rockwood10-50-anel-pelvico": {
    "titulo": "Lesões do anel pélvico",
-   "sha256": "d9ee378f2b77ef96baf236cb33e89f6b149bff1ce7c84728d692c6191c85e54e",
+   "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
    "estados": {
     "duplicada": 2,
     "pendente": 63,
@@ -147,7 +147,7 @@
   },
   "rockwood10-51-acetabulo": {
    "titulo": "Fraturas do acetábulo",
-   "sha256": "9e2d7bdd11a0ba4cecad3e062741f65ea5871d56e8a4dc9320e3e7bc172cbe66",
+   "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
     "pendente": 65,
@@ -184,7 +184,7 @@
   },
   "rockwood10-58-femur-distal": {
    "titulo": "Fratura do fêmur distal",
-   "sha256": "83bde14871ba352e2d17b8a9f26533ae35659d7733949e89228c3c87d756f45f",
+   "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
    "estados": {
     "pendente": 38,
     "pendente-inspecao-imagem": 1
@@ -201,7 +201,7 @@
   },
   "rockwood10-61-luxacao-joelho": {
    "titulo": "Luxação do joelho e lesão multiligamentar",
-   "sha256": "3e296d2fcd1d40cb01338f3a0f72c1bddcf90c25662936ca64d715bafcbc72a6",
+   "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
     "pendente": 97,
@@ -211,7 +211,7 @@
   },
   "rockwood10-62-planalto-tibial": {
    "titulo": "Fratura do planalto tibial",
-   "sha256": "3ae43c688a6d7a0cbc02a3d6e5fc448b1092f5eb77969a4a46057c0164aa2a29",
+   "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
    "estados": {
     "pendente": 41,
     "pendente-inspecao-imagem": 3,
@@ -220,7 +220,7 @@
   },
   "rockwood10-63-diafise-tibia": {
    "titulo": "Fratura da diáfise da tíbia e da fíbula",
-   "sha256": "6a66c25cc6629c013a8f816accbb6b082a1c5a6e3eda207524377c8b31f9911c",
+   "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
     "pendente": 88,
@@ -232,7 +232,7 @@
   },
   "rockwood10-64-pilao-tibial": {
    "titulo": "Fratura do pilão tibial",
-   "sha256": "5a24961c67a65fdca0dd2dc9a430e46cc1edce3eafedeaa444e32dae9e85a407",
+   "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
    "estados": {
     "duplicada": 4,
     "pendente": 43,
@@ -242,7 +242,7 @@
   },
   "rockwood10-65-tornozelo": {
    "titulo": "Fraturas do tornozelo",
-   "sha256": "2d10ed35f4e5a18fd563ebcfdfe0cc4bc717f709630b49428533dd0e85915c69",
+   "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
     "pendente": 52,
@@ -278,7 +278,7 @@
   },
   "rockwoodcriancas9-14-fratura-em-t": {
    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
-   "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+   "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
    "estados": {
     "pendente": 5,
     "pendente-anulada": 1,
@@ -287,7 +287,7 @@
   },
   "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial": {
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
-   "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+   "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
     "pendente": 31,
     "pendente-fonte": 4,
@@ -699,7 +699,7 @@
     "Hérnia de disco e mielopatia cervical",
     "Fraturas da coluna cervical"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -765,7 +765,7 @@
    "subtemas": [
     "Vias de acesso à coluna"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -790,7 +790,7 @@
     "Imagem da coluna",
     "Fraturas da coluna cervical"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -815,7 +815,7 @@
     "Exame neurológico e radiculopatias",
     "Hérnia de disco lombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -839,7 +839,7 @@
    "subtemas": [
     "Lesão medular e síndromes medulares"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -871,7 +871,7 @@
    "subtemas": [
     "Lesão medular e síndromes medulares"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -896,7 +896,7 @@
     "Fraturas da coluna toracolombar",
     "Exame neurológico e radiculopatias"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -913,7 +913,7 @@
     "Anatomia da coluna",
     "Hérnia de disco e mielopatia cervical"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -1487,7 +1487,7 @@
     "Fraturas da coluna toracolombar",
     "Anatomia da coluna"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -1503,7 +1503,7 @@
    "subtemas": [
     "Lesão medular e síndromes medulares"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -1527,7 +1527,7 @@
    "subtemas": [
     "Lesão medular e síndromes medulares"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -4357,8 +4357,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "b2f56ed6624b37fa5933d8ef48f09026f28c471b6f1527dd2679ede5158db513",
@@ -4418,7 +4418,7 @@
    "subtemas": [
     "Imagem em ortopedia"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -4564,8 +4564,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "629db6371480f57a7e9cfbbf83833e46a1ecf990839746fb52ef9f567e55a035",
@@ -5691,7 +5691,7 @@
    "subtemas": [
     "Ruptura dos tendões patelar e quadricipital"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -5715,7 +5715,7 @@
    "subtemas": [
     "Lesão do ligamento cruzado posterior"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -5731,7 +5731,7 @@
    "subtemas": [
     "Lesão do ligamento cruzado posterior"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -5747,7 +5747,7 @@
    "subtemas": [
     "Artroplastia total do joelho"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -5771,7 +5771,7 @@
    "subtemas": [
     "Anatomia do joelho"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -5916,7 +5916,7 @@
     "Luxação do joelho",
     "Ligamento colateral medial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0556",
@@ -6007,7 +6007,7 @@
    "subtemas": [
     "Ruptura dos tendões patelar e quadricipital"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -6412,7 +6412,7 @@
    "subtemas": [
     "Imagem do joelho"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -6437,7 +6437,7 @@
     "Fratura da patela",
     "Artroplastia total do joelho"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -6501,7 +6501,7 @@
    "subtemas": [
     "Artroplastia total do joelho"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -6549,7 +6549,7 @@
    "subtemas": [
     "Anatomia do joelho"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7303,7 +7303,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -7435,7 +7435,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -7500,7 +7500,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -7513,7 +7513,7 @@
    "subtemas": [
     "Instabilidade do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7538,7 +7538,7 @@
     "Artrose do punho e artroscopia",
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7554,7 +7554,7 @@
    "subtemas": [
     "Lesões ligamentares dos dedos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -7609,8 +7609,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "1a87cb621d0515b5b6e1c0dcebed477529bedf0094211180fe57a5de80f73c42",
@@ -7622,7 +7622,7 @@
    "subtemas": [
     "Instabilidade do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7646,7 +7646,7 @@
    "subtemas": [
     "Lesões ligamentares dos dedos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -7701,8 +7701,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "29604037b20693bd862908bbabe9690d67f17ea815a7048b65f5fd62c962300d",
@@ -7714,7 +7714,7 @@
    "subtemas": [
     "Lesões ligamentares dos dedos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-fonte",
    "motivo": "O resumo sustenta reparo das avulsões do LCU e uso de âncoras, mas declara não discutir ressecção do fragmento de 10%. Conferir capítulo ou outra fonte enviada antes de sustentar essa escolha específica do gabarito E.",
@@ -7740,7 +7740,7 @@
     "Lesões ligamentares dos dedos",
     "Biomecânica da mão"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7757,7 +7757,7 @@
     "Anatomia da mão e punho",
     "Lesões ligamentares dos dedos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -7773,7 +7773,7 @@
    "subtemas": [
     "Instabilidade do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7797,7 +7797,7 @@
    "subtemas": [
     "Instabilidade do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -7917,8 +7917,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "c17f0949137a1b477183451edd2b37f907e34e2053ba8ebaf9cab47f23fff710",
@@ -8006,7 +8006,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -8098,8 +8098,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "8b627a9b518e2d4a957668d4d3487697f932435634a587a00f4ccb4dbd05face",
@@ -8308,8 +8308,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "af9700aded831f1c58f515d61e2ab17601a86a1bd38bac1f4068e54e3ba0f063",
@@ -8484,7 +8484,7 @@
    "subtemas": [
     "Lesões ligamentares dos dedos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "mao-0328",
@@ -8500,7 +8500,7 @@
    "subtemas": [
     "Lesões ligamentares dos dedos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -8555,8 +8555,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "ed0843624f421bfa96e0f30feca65e713c31b170781c97b60bf9e85949469277",
@@ -8855,8 +8855,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "774e58cdff0c8f33898dea6f582ca0cf9c6a31bab9396b2554f647a4b14fc890",
@@ -8947,7 +8947,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -9046,8 +9046,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "3c24168f32342de65b7d5f79b35bd47ae64308483833c3127e2cb23a14e9ac38",
@@ -9118,7 +9118,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -9218,7 +9218,7 @@
        "carpometacarpais-dos-dedos-e-o-reverse-bennett-84fb3543",
        "carpometacarpais-dos-dedos-e-o-reverse-bennett-e0e14c5e"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "418e10a921a49a0a313a1de55bdf99fac07367e32543d9a8ac15f3f0a83c9054"
      }
     ],
@@ -9310,7 +9310,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -9447,7 +9447,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -9561,8 +9561,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "a2ff0b12ad619581a2f04c197d1177c31665465af7bf0b8a4887b08c7b20c2bf",
@@ -9664,8 +9664,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "df739b6c7063e929568e408db45351510aa917720b5e6241342ec71bd09866dc",
@@ -9874,7 +9874,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -9977,8 +9977,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "5876f618a152c361cc478916e2f26671903623a9b4ac4ccfde57fcc534cf1f17",
@@ -10113,8 +10113,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "549aefe1b0fff2138335e4b4089c3c907a6e76554e64d88e5291e802320f0058",
@@ -10583,8 +10583,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "9380838f5c01ad779bdc39f33fcff3903398dbf3035b445c762fe6818f46313a",
@@ -10683,7 +10683,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -10753,7 +10753,7 @@
        "medida-da-pressao-e-o-delta-p-13e06142",
        "os-compartimentos-de-cada-regiao-49b1c86f"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "a5bf943e14187166f601049a412d9f6d509745638673b4f851ac64dd97f27b2c"
      }
     ],
@@ -10842,8 +10842,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "421254c500a2915d6392c47d613b3ca234f1282f1a2b54ed86d76362c97601a7",
@@ -10914,7 +10914,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -10982,7 +10982,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -11050,8 +11050,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "344d7d111f64b7325f300d1981c30c61534e4f55966fd01317787835e9be333a",
@@ -11137,8 +11137,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "787b0093cae371ed993d22dfb9e0f69cc7ba6bf9ba2852e4d1a74ba86ef88040",
@@ -11357,7 +11357,7 @@
        "por-que-a-pressao-mata-o-musculo-7d5655e4",
        "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "78091af69f55e886fb38685c2ab831d0ba7e3985f4e328fdcb005ada2b5650fa"
      }
     ],
@@ -11571,7 +11571,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -11790,8 +11790,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "15789cffcd446926c45c1ae2ba32ff7eca96e7da9fc6a5c15dfd3bc6e54248d0",
@@ -11858,8 +11858,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "09699c4fe5f7b7da9ee87308d1d55aa938587a459876209e38a31517368b7c4c",
@@ -11926,7 +11926,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -12365,8 +12365,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "a532ebe544eda6736e080340a8eda77f3352b257684371c9c384418da2040f35",
@@ -12504,8 +12504,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "12fd982e99d271aa0ce54d4e99b7e542c0c5a2f9e8f96c36f3c4db82c7fad089",
@@ -12645,7 +12645,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -12742,7 +12742,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -12836,7 +12836,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-9845d4e9",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "536c4c814701ba48662cda0ff4b879d40e242d990fe5644dc5b2e60f82c2c629"
      }
     ],
@@ -12923,8 +12923,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "158360b8a9789f32c314e4c4369f66ca9726ac1652d217a1ad44c4bb41c00b30",
@@ -13068,8 +13068,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "9e4e8e92d73f9d5572d405f3605d84e91067ddb50fd75160d74f9c479c2f45ec",
@@ -13165,7 +13165,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -13257,8 +13257,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "15ea05ea6b2df62d7dcbb8fd22d6a15caa766ed874bd35127f054fc501d0d355",
@@ -13371,8 +13371,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "f9b80ae529600d4ff36143ee5aa2a6ba1b714fa608b3889e3c40f99957d973b1",
@@ -13603,8 +13603,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "412a2a7261d1eca16aa268094e4afd333d422d475d044b99763e715a5eacb93e",
@@ -13706,8 +13706,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "061af9e2e115f83155cd6d9ddf5dd991d079d10ffff91f090bdcc84eb1774dda",
@@ -13772,7 +13772,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -13873,7 +13873,7 @@
        "luxacao-da-interfalangica-distal-63896a09",
        "luxacao-da-interfalangica-distal-489ba2c2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "4dbca150ad74c3746b9784c1cfe0b07a30b92e02f553a263e03fa98a1d4426a0"
      }
     ],
@@ -14025,8 +14025,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "a648c8b8d839d498be1ee58f5f8c4fda006cd6e575722b6412a19090c78a284e",
@@ -14076,7 +14076,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "12e82fbf302e5d964827c9a5b15c2050674e03c6c9002ac69cd0487c29fb6064"
      },
      {
@@ -14222,7 +14222,7 @@
        "os-compartimentos-de-cada-regiao-231bd2af",
        "fasciotomia-90ee7ca5"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "5e785797d6a0ca227fdc9c53138a85106b6736d1dd6e29333a757b9840c8e6a2"
      }
     ],
@@ -14401,8 +14401,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "283073a788b4529f7a2b0907c15aa34ef6ead496c536c270e057d48b1ca9c567",
@@ -14565,8 +14565,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "2412f4ebd9c46577b58b438294e4618354b7d5012dd2fb77f673b9b4d696825a",
@@ -14643,7 +14643,7 @@
        "o-tratamento-preferido-dos-autores-355d35ed",
        "fasciotomia-7a3f42f7"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "4e3f93f8da0782917766ff2b40779a9ace7ff2864a47f2a685c9e363e3b5eba1"
      }
     ],
@@ -14754,8 +14754,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "21391a442cd9b38fea6310a10860ff272ce011b6a35ba70d2bd3f7ea62d3dcaf",
@@ -14841,8 +14841,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "7cd299f3483d4caa7d8e79eba8ceeeee896f648a38b3669338781b77ffbb9e03",
@@ -14943,7 +14943,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c2a37150"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "524ac6da00b4b40d918056e9ec7fe27fb2873df02d204f7d8ae365a6521565c8"
      },
      {
@@ -15047,7 +15047,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -15162,7 +15162,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-f9ef8a06"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "b0262edbd0d32daea7836be449a15ce06622b532099bf2a524e2c312b5e1e6c8"
      }
     ],
@@ -15259,8 +15259,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "4a216246aa90a30bf594e0453ef0a65e6cd26daa200b14fb15bfe76d940abede",
@@ -15324,7 +15324,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -15490,8 +15490,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "405c9b40db06c6066dbfe186a84d43b4e5150f82b919ad01ec632925868db3a9",
@@ -15613,7 +15613,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "fdf4914735b8631ead25a807f2aa1651a7d62e5b615c5b4a0d8c4d58ad98aca6"
      }
     ],
@@ -15700,8 +15700,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "aaceb9d453762f1a3556370c5012393d3a20b71a0d1d1a0cb139c658c95ae533",
@@ -15781,7 +15781,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -16470,8 +16470,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "2e3da183fb19b070f7773a781809d369da135f7cdc6b6ac712abeca8c6bff52b",
@@ -16542,8 +16542,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "11503640edad5eaf7a84a8b845d1fa091ce854f3b681bb9cd1f708d77df04f8e",
@@ -16614,8 +16614,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "de02044d7a63763477d5823d6fbe2e8aef203096e73fb104002daf32807a2e8e",
@@ -16665,7 +16665,7 @@
        "luxacao-da-interfalangica-distal-63896a09",
        "luxacao-da-interfalangica-distal-489ba2c2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "4dbca150ad74c3746b9784c1cfe0b07a30b92e02f553a263e03fa98a1d4426a0"
      }
     ],
@@ -16753,8 +16753,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "1808c8d5dcca0a8a34ef9a73a09321c6260b1b44b7397bac2173aac22f99dd77",
@@ -16826,8 +16826,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "9a43f74e3b4dc52694719a5abd3e191fe275bc734ce8561b86357e3839a47db6",
@@ -16897,8 +16897,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "26e8c3decd8b6dd6ee6b52ccf2de5a6de8445a424391cbccf0856b927e59d2b0",
@@ -16968,8 +16968,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "892ceaa44789cb3faee6ed1e536a21ac17829e34107d33a8bd0742c28f9cd1a3",
@@ -17039,8 +17039,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "b1945cc264ffd7a925fe88b1f6bccd4c758c7d6cec77bdf4bf26ff32fe44441b",
@@ -17110,8 +17110,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "b19e70d5786dc23d1fb52ab2ba9084eeb651f3c9bb2ee035b601b58b2a703c8c",
@@ -17181,8 +17181,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "8e21d75f7d31d390362d23425e97524202cb328a4b823574c33d0fa05b947818",
@@ -17247,7 +17247,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -17312,7 +17312,7 @@
        "interfalangica-proximal-luxacoes-e-banda-central-91b35b89",
        "interfalangica-proximal-luxacoes-e-banda-central-c83691f2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "6c62e3f0d1aa16bf2d215ec22abb479ccc13823e3df51ec70bce626de5b6e8bf"
      }
     ],
@@ -17385,8 +17385,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "32f7d9a249e4f79ad8bc4f2d7f53cbb22b2579d1f6aa52817b2520bcbe85ec96",
@@ -17458,8 +17458,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "601908186a3a8ad236377be48bd5648e8da0de0e551603abf76c7858d6fca30a",
@@ -17546,8 +17546,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "7f14de9167e5a81f8dcc0d3e988e692dec6f5aba000ca148aec37b888ad635d9",
@@ -17619,8 +17619,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "1e4ed22f364e1696a1053c5cf6260bb335ed0e27a60363017bb52d1e8d7c321b",
@@ -17710,7 +17710,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -17777,7 +17777,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -17845,8 +17845,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "a8595754d0baaf5695537a3b503402f0bdfbff22a685d7ecaea7aae3f9d6a297",
@@ -17917,7 +17917,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -18017,7 +18017,7 @@
        "carpometacarpais-dos-dedos-e-o-reverse-bennett-84fb3543",
        "carpometacarpais-dos-dedos-e-o-reverse-bennett-e0e14c5e"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "418e10a921a49a0a313a1de55bdf99fac07367e32543d9a8ac15f3f0a83c9054"
      }
     ],
@@ -18305,8 +18305,8 @@
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
        "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
      }
     ],
     "questaoSha256": "36a495faaba167afac0ac8e21605c3130f156ec995bfc00a6d0dc7c0c63e20df",
@@ -18384,8 +18384,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "1a29d5bf9d62771d09aabddad89c1bd343d27487f7bb6f179476addf60ccc6e5",
@@ -18830,6 +18830,154 @@
    ],
    "questaoSha256": "3139a0cb3d9310cb1602305210bcda4f93274f8adc33d6bc8c06b34adec83ff2"
   },
+  "mao-2114": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "237ac1678e09e997c7addc5270e5c3cd94ae37df58e4dba6ce4914d7c0fa0b38"
+  },
+  "mao-2115": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos",
+    "Anatomia da mão e punho"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "17e6a610c5f6311f8e205782bba4c1d1f69e2b590f6c984570689892d0016ed1"
+  },
+  "mao-2116": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos",
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "a5ecec258dbd1e219887e583914c90da889b69a5920471b99773c349da6b25b9"
+  },
+  "mao-2124": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Exame físico da mão e punho"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "2c9e61f53017f8766b8204bbbb4ca8d91ed08162436d268c27480e3f99638c4c"
+  },
+  "mao-2125": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "02cd5a3fd1ab29fc72e714443f2b7e9c727e03eb8c5dbea53f95c2e68407028b"
+  },
+  "mao-2129": {
+   "tema": "mao",
+   "subtemas": [
+    "Fratura do rádio distal",
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "c59e029fcd9fcce782d6b7a99205ca022307e887505018a6cabf740ed0becbf1"
+  },
+  "mao-2130": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "bf91de0100ac7fd72c1cdad084f801c6abd3097b1c88f6e9eb576a1ce31d22c4"
+  },
+  "mao-2131": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "268ef81d99fcb508d7d901ef58b3bda699fa63d4a0450c3797f29b6a568d5552"
+  },
+  "mao-2164": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "0c6ed344a49fc6e99a62561724b845d31c40cdd329f9f1333bdfbb1b2af84812"
+  },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
    "subtemas": [
@@ -19099,12 +19247,12 @@
       "blocos": [
        "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
      }
     ],
     "questaoSha256": "f4c9eab704c852fc3745cf79d3eb89b29b2afc783d7dd53d6681beb1a26a8c41",
-    "comentarioSha256": "97e87eacbfb1f676f6e46c6d2022e698878a9cf74bb19ac9911542c28223a6f4"
+    "comentarioSha256": "ef938e834d55e8889a16ff2307500a45f72fc85a3e733ba491ce7d6bd6c1ce01"
    }
   },
   "ombro-cotovelo-0032": {
@@ -19176,7 +19324,7 @@
        "o-epicondilo-medial-anatomia-ossificacao-e-estab-31a428cf",
        "o-epicondilo-medial-anatomia-ossificacao-e-estab-efabbd4f"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "ba8808756346f6327f40a3fc0dde18524a4dc0d5702141a3798fcbc5b776c755"
      }
     ],
@@ -19299,7 +19447,7 @@
     "Instabilidade do cotovelo",
     "Lesões nervosas do ombro e cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -19353,7 +19501,7 @@
    "subtemas": [
     "Instabilidade do cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -19479,7 +19627,7 @@
    "subtemas": [
     "Anatomia do ombro"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -19559,7 +19707,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
        "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "16fbc2fa646ba91dbd325305f028ae19995cd638cff62cb69fdf888632274fac"
      }
     ],
@@ -19645,7 +19793,7 @@
     "Fraturas do úmero proximal e da escápula",
     "Lesões nervosas do ombro e cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -19789,7 +19937,7 @@
     "Fraturas do úmero proximal e da escápula",
     "Lesões do manguito rotador"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0533",
@@ -19955,7 +20103,7 @@
    "subtemas": [
     "Instabilidade do cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -20298,7 +20446,7 @@
        "mecanismo-e-exame-da-luxacao-posterior-a935d2bf",
        "mecanismo-e-exame-da-luxacao-posterior-12e22a02"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "28f2ddf94a247dba9bdfe626ba27c727612029c415f33ce53963a6fed0fa4feb"
      }
     ],
@@ -20455,7 +20603,7 @@
    "subtemas": [
     "Artroscopia e vias de acesso do ombro"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -20491,8 +20639,8 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-fa2b44fd"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
-      "trechosSha256": "8b19cf890f22dc236dd53460882b1915308bcaf895bc99f4d953bcb8a4bb9b2c"
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+      "trechosSha256": "58830ff3e06a8ebe8355537d6c97e0ce0b35009bcaf166322f97abc86ba17c55"
      }
     ],
     "questaoSha256": "42f857e8089634d2e1901af31fbef2781ea379e85876212a944f969c23ae6c5d",
@@ -20505,7 +20653,7 @@
     "Omartrose e artroplastia do ombro",
     "Fraturas do úmero proximal e da escápula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -20523,7 +20671,7 @@
     "Fraturas do úmero proximal e da escápula",
     "Fraturas do cotovelo e antebraço"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -20569,7 +20717,7 @@
        "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59",
        "ombro-flutuante-costelas-e-terco-medial-b753c523"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "298b7c9d80e35766a8144c8497a1f3c9dd69473e57567dbe87195258f36c65aa"
      }
     ],
@@ -20782,12 +20930,12 @@
       "blocos": [
        "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
      }
     ],
     "questaoSha256": "96ca6ca8bb40ef5c2ae8256ae604450f003eb56fc997f0dbc6bc93b16c50ebc2",
-    "comentarioSha256": "e2904938111cbddcfb9c295882e7bd0194816ba7377fcae4379ddaf30a1d85bd"
+    "comentarioSha256": "fea03767084e879cd22bb6bc3b07caa79404bd43d98b454512b190293d12a718"
    }
   },
   "ombro-cotovelo-0425": {
@@ -20861,7 +21009,7 @@
     "Fraturas do úmero proximal e da escápula",
     "Exame físico do ombro"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -21355,7 +21503,7 @@
        "nervos-e-arteria-na-luxacao-584aebf5",
        "nervos-e-arteria-na-luxacao-0d677891"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
      }
     ],
@@ -21587,7 +21735,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "22b5d050e3057524643ddf5c80ff2abc1d6772144af25b7c50fa6e30dba5b458"
      }
     ],
@@ -21738,12 +21886,12 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7",
        "classificacoes-allman-neer-craig-robinson-e-ao-5b9c0c66"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "3e992651749fa9ef9769882d0552df9d41be83f3adcb82b833c18967266bd450"
      }
     ],
     "questaoSha256": "fbdb4efd687a2add345fdb79fe218a300e8388020b1b90bd3aad6b124d4fb682",
-    "comentarioSha256": "a2a1e7a172b4a112d145677a17e89429714555df55c6a502aad172fce6f69db0"
+    "comentarioSha256": "8c686fb588d06462683a794628863d1a3a30cb1ac0a506322e2ee0376f7ec201"
    }
   },
   "ombro-cotovelo-0539": {
@@ -21928,12 +22076,12 @@
       "blocos": [
        "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
      }
     ],
     "questaoSha256": "26f4444b34104aae9654a9d9b38abb6e36bc4b5097268ef5edb1036629aeb5c0",
-    "comentarioSha256": "58edb6abc08a59970861927d3b6186f4673636d21aa25d46741568fddd59ff6f"
+    "comentarioSha256": "fb7f6d73a075db63ecce9d604e08fe934b73466a6409b6b812da93af0717656a"
    }
   },
   "ombro-cotovelo-0599": {
@@ -22768,6 +22916,72 @@
    ],
    "questaoSha256": "792f5418efeb5c75d7b756215171641bd54a0d8274a3e99ee3389115b955fb84"
   },
+  "ombro-cotovelo-0670": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo",
+    "Anatomia do cotovelo"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "7c2925c96a616b88a98c5e190273892be303e39fe553d80a9aba965eb743c111"
+  },
+  "ombro-cotovelo-0671": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço",
+    "Instabilidade do cotovelo"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "5e0f7f4149e6baefe789a2453ade6d473140266a5c0ced99d51596c6c6bd9750"
+  },
+  "ombro-cotovelo-0672": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "83d85401d2044d365f8e4e8b839a2e480b47065409f9b5ec2502dee7b04cdacf"
+  },
+  "ombro-cotovelo-0674": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "52607e4fddf631f9e74909510f330052305f4b077d88f05719c2189ce61e83ac"
+  },
   "osteometabolicas-0013": {
    "tema": "osteometabolicas",
    "subtemas": [
@@ -22965,7 +23179,7 @@
    "subtemas": [
     "Fraturas do tornozelo e do pilão tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -22990,7 +23204,7 @@
    "subtemas": [
     "Fraturas do tornozelo e do pilão tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0300",
@@ -23008,7 +23222,7 @@
     "Fraturas do tornozelo e do pilão tibial",
     "Entorse e instabilidade lateral do tornozelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -23026,7 +23240,7 @@
     "Anatomia do pé e tornozelo",
     "Fraturas do retropé, mediopé e antepé"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -23050,7 +23264,7 @@
    "subtemas": [
     "Outros temas do pé e tornozelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -23172,7 +23386,7 @@
    "subtemas": [
     "Fraturas do tornozelo e do pilão tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -23197,7 +23411,7 @@
    "subtemas": [
     "Entorse e instabilidade lateral do tornozelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -23833,7 +24047,7 @@
    "subtemas": [
     "Ombro e cotovelo da criança"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -23881,7 +24095,7 @@
    "subtemas": [
     "Fraturas do antebraço e punho na criança"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "mao-0300",
@@ -24101,7 +24315,7 @@
    "subtemas": [
     "Maus-tratos"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -24626,7 +24840,7 @@
        "por-que-a-pressao-mata-o-musculo-7d5655e4",
        "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "fd4df6b3341ce5b1e72195f095a7bdc07f63c25657e78d02589ebbe8191bfc0c"
      }
     ],
@@ -24678,7 +24892,7 @@
        "nervos-e-arteria-na-luxacao-fc98dd47",
        "nervos-e-arteria-na-luxacao-343dad3b"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "d2d808de1164354296b7f61e20b0bfaf86d04229cee4317384f91dcc538c651f"
      }
     ],
@@ -24898,7 +25112,7 @@
        "complicacoes-da-luxacao-64c88bd1",
        "mecanismo-e-exame-da-luxacao-posterior-a935d2bf"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "cf2fd3c9a507497dd332fb8765d8416e5300f72ae6790fa5cc7d0d997822e3a1"
      }
     ],
@@ -25059,7 +25273,7 @@
        "nervos-e-arteria-na-luxacao-343dad3b",
        "fratura-do-epicondilo-medial-indicacoes-tecnica--b2dabb8f"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "d066bc439a1d8838a1fb73aadb64add1ba4b8e6e67022b81cd2a6620fcb89329"
      },
      {
@@ -26222,7 +26436,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-570ea5eb",
        "o-epicondilo-medial-anatomia-ossificacao-e-estab-942055c0"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "39134a38922d50af27484ca7f4805ba2198bedf2bc68bba5b7aab05ed12a8c8e"
      }
     ],
@@ -27083,7 +27297,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
        "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
      }
     ],
@@ -28593,7 +28807,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-af3b48b7",
        "pronacao-dolorosa-cotovelo-da-baba-f132fe30"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "c086669e1e4e8de195de2b233d03308bfbc49ec4002fb6bc3817801e36c5380e"
      }
     ],
@@ -28886,7 +29100,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-36b36d14",
        "pronacao-dolorosa-cotovelo-da-baba-d39868a6"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "b473611f12fc10329f3eb1ac4d476f80b1b1a2ad9827c51c65bef613bfccc7bf"
      }
     ],
@@ -29058,8 +29272,8 @@
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
        "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "106f2f9689fb8bece24056b09b393e8ccd35f1cf7707a1075b664b19f61c84d9"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5e2a1e4801b0b540e09b764379bd5d8853f636e91eb3e7a66438e973275bc0b7"
      }
     ],
     "questaoSha256": "8c435cbd7caea0ef059db64d065248e2de40902fd98e5cd2778ff99bbcf56e24",
@@ -29772,7 +29986,7 @@
        "fratura-do-epicondilo-medial-diagnostico-e-encar-721e8535",
        "fratura-do-epicondilo-medial-diagnostico-e-encar-5e596305"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "bd25cc72f8407b10ee22af5eede2dfba60ee8bbaece982bf24e93b5589611def"
      }
     ],
@@ -29824,7 +30038,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
        "pronacao-dolorosa-cotovelo-da-baba-570ea5eb"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "bc9995e83eefe59e59f97dca140d9667e3e396d829b1845acf54353619673b63"
      }
     ],
@@ -29908,7 +30122,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-2a02edc4",
        "pronacao-dolorosa-cotovelo-da-baba-7c96573d"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "35e431653e5f3b41097bf01118938a85cb8612131c302516ed9baefb2a7286b7"
      }
     ],
@@ -30605,7 +30819,7 @@
        "fratura-do-epicondilo-medial-diagnostico-e-encar-b78723f4",
        "o-epicondilo-medial-anatomia-ossificacao-e-estab-c60ebc08"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "ff890f6e688240535b0d32c1c1ac185e9efed6a18c9a2ac337ea56b75b545a7e"
      }
     ],
@@ -30895,7 +31109,7 @@
        "nervos-e-arteria-na-luxacao-877e7582",
        "nervos-e-arteria-na-luxacao-180f56e0"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "658982595b816263ef16f697edd6c6b757567db49d9bba00a25362a6bcae6511"
      }
     ],
@@ -34835,7 +35049,7 @@
        "mecanismo-e-padrao-de-desvio-59fe4e25",
        "mecanismo-e-padrao-de-desvio-cb04cd1c"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "0f68a9dca456bf3de30c3055ec2ce04d0c2dfa3d6776138a2d88ce680cd8f2e8"
      }
     ],
@@ -34902,7 +35116,7 @@
        "principios-e-algoritmo-do-tratamento-d83d773e",
        "principios-e-algoritmo-do-tratamento-7b0cc47a"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "242453dc349bdf2fa8ef36626f454213b7560f70e022033f2a40adbfdc2bf16c"
      }
     ],
@@ -34973,7 +35187,7 @@
        "imagem-e-diagnostico-diferencial-1f5d326e",
        "imagem-e-diagnostico-diferencial-3fedcd4f"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "0e613e12bd917b0a000a574fb5e2e3e7fb41a01788d1d4dc29e38b336a9d8b99"
      },
      {
@@ -35094,7 +35308,7 @@
        "classificacao-f74de710",
        "classificacao-23ef9722"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "5657e5ceb5e30e7b302611b7d1f5e4ddd968c0bfe850837ce6801eacad0851ad"
      }
     ],
@@ -35158,7 +35372,7 @@
        "classificacao-f74de710",
        "classificacao-23ef9722"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "5bf19fb37ec9a53879648a30b38b728ae8a581ac2f31aaa367204e5cf05fde5a"
      }
     ],
@@ -35222,7 +35436,7 @@
        "classificacao-f74de710",
        "classificacao-23ef9722"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "5bf19fb37ec9a53879648a30b38b728ae8a581ac2f31aaa367204e5cf05fde5a"
      }
     ],
@@ -35284,7 +35498,7 @@
        "reducao-aberta-indicacoes-e-vias-de-acesso-1152d24c",
        "reducao-aberta-indicacoes-e-vias-de-acesso-01372126"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "756ca90b5a4cbd30e29c88a5b0a3a3bbe2e6b076cf17be76684dcb709ca67ec4"
      }
     ],
@@ -35358,8 +35572,8 @@
        "complicacoes-2896840e",
        "complicacoes-a5c3fd88"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
-      "trechosSha256": "6198896d35ef30aa959c86c9a59c31ae08abff0c1bc860b7a4bfbb6cdf3d634b"
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+      "trechosSha256": "1c132192ff7f1bf983840fadbf2d8ae7689ab8c09cdd108b1d0a726120b0c71a"
      }
     ],
     "questaoSha256": "a5a75f4f8e20b6019eb9422601e3be51c6069ad43ff8506d4c090a5e36a33a7c",
@@ -35430,7 +35644,7 @@
        "tecnica-articulacao-primeiro-colunas-depois-e83faa45",
        "tecnica-articulacao-primeiro-colunas-depois-f5d12168"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "31a02a9eed55a86f69151cbd1342b181f494609515f62635b9dff922280f322c"
      }
     ],
@@ -35513,7 +35727,7 @@
        "tratamento-nao-cirurgico-e-percutaneo-d72c7d31",
        "tratamento-nao-cirurgico-e-percutaneo-84d274f6"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
       "trechosSha256": "58c81992505aed923c233e0ee31763eda575dffce6196997d4861fbde486601c"
      }
     ],
@@ -35591,8 +35805,8 @@
        "complicacoes-2896840e",
        "complicacoes-a5c3fd88"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
-      "trechosSha256": "1fc814aa0d5f185e5efa80fdbf4a87e5c829cf51b202fbdb68f4f25b65a81a50"
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+      "trechosSha256": "4417854160b53285e6cf5543a19ecad2b100897d972daba17a2c71355c52149e"
      }
     ],
     "questaoSha256": "4ad3b548f02bde59e20a80f8ad3465e76982589c16b15e2a45bc5394252c15cf",
@@ -35675,8 +35889,8 @@
        "complicacoes-2896840e",
        "complicacoes-a5c3fd88"
       ],
-      "sha256": "3113ae037dfb1e3e5a5ba24c69ac1bb2dde344ca4b6159ceb0f19773256af16f",
-      "trechosSha256": "0b308dfd6234e1fb1f568bc32643755d4b2e2e4bbca400248bf5e3355faa9b56"
+      "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+      "trechosSha256": "124d28858463b1d6a9a3bff75f518e2f80431b5c15e294daee5099de1297ff9c"
      }
     ],
     "questaoSha256": "6a613b613861ad701497a5170789d359a454064283dcb53601d0246597659626",
@@ -36801,7 +37015,7 @@
        "fratura-do-epicondilo-medial-diagnostico-e-encar-8214df1b",
        "luxacao-do-cotovelo-na-crianca-quem-quando-e-o-q-66a266fa"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "e7f656bf559ce98c63634517e197630e145934a09a73d52a9f7d651528ea9b54"
      }
     ],
@@ -36858,7 +37072,7 @@
        "fratura-do-epicondilo-medial-indicacoes-tecnica--898db186",
        "o-epicondilo-medial-anatomia-ossificacao-e-estab-c60ebc08"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "af7db21f8d05221503e25ef1ffcef50c9cfdf56860e950f954fb2b8158979e4e"
      }
     ],
@@ -36914,7 +37128,7 @@
        "nervos-e-arteria-na-luxacao-584aebf5",
        "reducao-e-cuidados-depois-da-reducao-dbfbb9ba"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "73728e0087a48e4746117426d9cc0c509fd89c3817e7802b8dd02beec4db7fb4"
      }
     ],
@@ -36968,7 +37182,7 @@
        "fratura-do-epicondilo-medial-indicacoes-tecnica--e2182ae6",
        "fratura-do-epicondilo-medial-indicacoes-tecnica--1e620ff2"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "24ed8012f11c3352a7db4baf1f36055f6358b2f0fd2f66e6ce45e25511c36890"
      }
     ],
@@ -37022,7 +37236,7 @@
        "nervos-e-arteria-na-luxacao-fc98dd47",
        "fratura-do-epicondilo-medial-indicacoes-tecnica--898db186"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "6523ea6001ba8b6999aa44f7808eacc96e34ac84073356e8aff63bf28460f453"
      }
     ],
@@ -37079,7 +37293,7 @@
        "fratura-do-epicondilo-medial-diagnostico-e-encar-5af08218",
        "reducao-e-cuidados-depois-da-reducao-4da02e55"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "20003999e9ca44d718dca1683cb87fa1fb92c44b8436e79132971989a61b7b27"
      }
     ],
@@ -37133,7 +37347,7 @@
        "reducao-e-cuidados-depois-da-reducao-f83cfdb6",
        "reducao-e-cuidados-depois-da-reducao-bc770693"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "cf0cc896dbd301d88cf0fe95d21e996ffdeb713bc01ce148a2b0b3b9e0d8bbe7"
      }
     ],
@@ -37186,7 +37400,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-d39868a6",
        "pronacao-dolorosa-cotovelo-da-baba-7c96573d"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "be54e78008170ca07e877358212eb4c759a58a95601f5fad2a8a4ad2da93feb1"
      }
     ],
@@ -37240,7 +37454,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-9e371cc5",
        "pronacao-dolorosa-cotovelo-da-baba-9e3ca770"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "ff0bcb159882c8fb0ba8bf1287b2299ea1dee06c1d177faa714dab1ab8a9cb8f"
      }
     ],
@@ -37291,7 +37505,7 @@
        "pronacao-dolorosa-cotovelo-da-baba-93cd64e9",
        "pronacao-dolorosa-cotovelo-da-baba-e4165878"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "56c4fa5e8fe1964c8a1393bea4979b5510f5e03ec4af2e6c4cccdf85f3e4759b"
      }
     ],
@@ -37345,7 +37559,7 @@
        "reducao-e-cuidados-depois-da-reducao-a678fb7a",
        "reducao-e-cuidados-depois-da-reducao-1e8986a9"
       ],
-      "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+      "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
       "trechosSha256": "4df43302e80c9f5be27937a47f3bce96e207aa72022b5488028eda4491cc188c"
      }
     ],
@@ -38969,7 +39183,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-a6bcc01c"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "203eaa2caab2a748824015eaf973c9e8e698c5912827962d09c8ed99914c49bf"
      }
     ],
@@ -39041,7 +39255,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -39455,7 +39669,7 @@
        "a-haste-intramedular-7fc14a46",
        "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "2f89e3ccbd861494f5414027c457c89be831b1e78bc1c31f37d046762a7e3d0a"
      }
     ],
@@ -39673,8 +39887,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "39f2d55b753ea51d29f2fae1f08d1159888105cef6445ce1ca8e556ef7b81c2d",
@@ -39723,7 +39937,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
      }
     ],
@@ -39801,7 +40015,7 @@
        "por-que-a-pressao-mata-o-musculo-7d5655e4",
        "quem-tem-sindrome-compartimental-c9e21614"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "22e692e38e858d1c0f76827ef88f136643dc73ec3d5048e12e5e7c821d45932c"
      }
     ],
@@ -40198,7 +40412,7 @@
        "mecanismo-e-deformidade-para-onde-vai-cada-fragm-05e0589a",
        "consolidacao-viciosa-e-escapula-alada-4ff46e30"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "3090740cd407f2eba741f8801ba76f494e13cdda95626b4e1503a58cc9b9e927"
      }
     ],
@@ -40295,7 +40509,7 @@
        "o-antebraco-como-articulacao-arco-radial-forcas--1fddf15b",
        "o-antebraco-como-articulacao-arco-radial-forcas--e602b577"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "b6752c260d5adb70bbe2cd1164e30ddf4a73b161bfb4b8367daeedf87082b68a"
      }
     ],
@@ -40708,7 +40922,7 @@
        "consolidacao-viciosa-e-escapula-alada-71be14be",
        "consolidacao-viciosa-e-escapula-alada-4ff46e30"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "93a2c779b29eaf7f0009b39d6330e9fa23027864baf85564bc3afbff21633fd3"
      }
     ],
@@ -40832,7 +41046,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-7adfdbaf",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d7239afd"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "6fab76007b37d16a5faaf98476d0ecb444bedd790993cec2a2f2bb5bc444edf2"
      }
     ],
@@ -40904,7 +41118,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -40991,8 +41205,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "5dac2932bd0d1aacff90e41dedf1b4f821fa089e1f0d26b2b53e20c445862d7f",
@@ -41188,7 +41402,7 @@
        "fasciotomia-f734935c",
        "medida-da-pressao-e-o-delta-p-6e9747e1"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
      }
     ],
@@ -41616,8 +41830,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "defd7ba6e93f085610734c6f223c874c6cf6d5d50d673ef86f59fcaae3c6ddd7",
@@ -41712,7 +41926,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -41908,7 +42122,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "2bf37ff88fba663d6a3ecfa6a81b2483cb4eff01194866c671143c53781ca576"
      }
     ],
@@ -42007,7 +42221,7 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-6ba1d129",
        "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "d68bf79449b4da86b2c29c7a52656d4d36997c1d2331fef464614a55291bf22f"
      }
     ],
@@ -42434,7 +42648,7 @@
        "o-tratamento-preferido-dos-autores-930f2a36",
        "o-tratamento-preferido-dos-autores-cb26ab73"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "be4cebcef1d15e8ca01dbbfbf2f9dad42120d320bb2c332bc1a78862d1c82047"
      }
     ],
@@ -42573,7 +42787,7 @@
        "ombro-flutuante-costelas-e-terco-medial-b753c523",
        "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "f5f26692f2a47a8dd51cd407d04ae7810e871e55bb54ea7d5750a53264ce26c3"
      }
     ],
@@ -42676,7 +42890,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e5c273b0"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "8b7ebb46e9d5d6d7a5063548b05c840c0501a2c267b7535ec1a00bee6082eba1"
      }
     ],
@@ -42839,7 +43053,7 @@
        "quem-tem-sindrome-compartimental-2d563b4e",
        "quem-tem-sindrome-compartimental-9294b2f4"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "197fa843a0084768b3eeeb07b77fbe5ad7025914cd5b128c725474e2ad8d6a44"
      }
     ],
@@ -42958,8 +43172,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "7370e833b8d9877f6dd24e708521ed660ad77fe1957e8433114ba6a20a1c29b4",
@@ -43158,7 +43372,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -43596,7 +43810,7 @@
        "por-que-a-pressao-mata-o-musculo-7d5655e4",
        "por-que-a-pressao-mata-o-musculo-23e1059b"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "cc873c7a8589b451397ea4ccd58b28e227d7a374adba289556a9c5dead84a8a1"
      }
     ],
@@ -43828,7 +44042,7 @@
    "subtemas": [
     "Fratura do tornozelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0171",
@@ -44300,7 +44514,7 @@
        "por-que-a-pressao-mata-o-musculo-1a07d757",
        "os-compartimentos-de-cada-regiao-222f4f26"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "fd3e2bd71bf4ee40c0ad479ff37b7218d85a8d8be0d1d34cb18a450356649166"
      }
     ],
@@ -44352,7 +44566,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "78b0290ae8f3694bf6d0679038d52e988dc2e5f68c6def973dee1bec92894e26"
      }
     ],
@@ -44631,7 +44845,7 @@
    "subtemas": [
     "Síndrome compartimental"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -44683,7 +44897,7 @@
        "medida-da-pressao-e-o-delta-p-491de05b",
        "o-tratamento-preferido-dos-autores-930f2a36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "80dc98ccecaca2502df4fa8f253791baa34c66c8a208cd3db7bd0a5a9f9d030e"
      }
     ],
@@ -44696,7 +44910,7 @@
    "subtemas": [
     "Fraturas por estresse"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44720,7 +44934,7 @@
    "subtemas": [
     "Fratura da clavícula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -44757,7 +44971,7 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-3d70f3c6",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-fa1836c0"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "e19b88fdab61ecea453021d7bd593b74fd239a0f9cb0ce8253409290824ab5a0"
      }
     ],
@@ -44770,7 +44984,7 @@
    "subtemas": [
     "Fratura do colo do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44802,7 +45016,7 @@
     "Fratura da diáfise do fêmur",
     "Fraturas expostas"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44827,7 +45041,7 @@
    "subtemas": [
     "Fratura do fêmur distal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44851,7 +45065,7 @@
    "subtemas": [
     "Fratura da escápula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44875,7 +45089,7 @@
    "subtemas": [
     "Fratura da clavícula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -44911,7 +45125,7 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
        "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "ae1b0e9b77923a22b0aa995b4adf3bd9d285b0dbaa4cb66a4050d2380bd856ef"
      }
     ],
@@ -44924,7 +45138,7 @@
    "subtemas": [
     "Fratura do úmero proximal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44948,7 +45162,7 @@
    "subtemas": [
     "Fratura da diáfise do úmero"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44972,7 +45186,7 @@
    "subtemas": [
     "Fratura do úmero distal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -44996,7 +45210,7 @@
    "subtemas": [
     "Fratura da cabeça do rádio e instabilidade do cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45021,7 +45235,7 @@
     "Fratura da cabeça do rádio e instabilidade do cotovelo",
     "Fratura do olécrano"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45037,7 +45251,7 @@
    "subtemas": [
     "Fratura da cabeça do rádio e instabilidade do cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -45087,7 +45301,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -45161,8 +45375,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "9dbfd8b6a9901aaf168f2660bd5dbaaad2689eb2f5a230cfc8e5442ac6f514a2",
@@ -45174,7 +45388,7 @@
    "subtemas": [
     "Síndrome compartimental"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-fonte",
    "motivo": "Falta o limiar absoluto de 20 mmHg no hipotenso exigido pelo gabarito B e a comparação com 10, 30 e 40 mmHg. O resumo 17 usa delta P (diastólica menos compartimento), tendência e contexto; orienta corrigir hipotensão, sem fornecer esse corte absoluto. O capítulo 42 também usa relação com diastólica, não o 20 universal. Não converter delta P em pressão absoluta nem inventar a diastólica do paciente.",
@@ -45208,7 +45422,7 @@
    "subtemas": [
     "Fratura do escafoide e do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45232,7 +45446,7 @@
    "subtemas": [
     "Fratura do rádio distal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45256,7 +45470,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -45310,7 +45524,7 @@
        "luxacao-metacarpofalangica-simples-complexa-e-o--e60988b0",
        "luxacao-metacarpofalangica-simples-complexa-e-o--ef8c0f34"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "22df3d8eb1d5113cea2244440eee8360411c0470355d55e3fe5488ef9ba01f6a"
      }
     ],
@@ -45323,7 +45537,7 @@
    "subtemas": [
     "Fratura do colo do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45347,7 +45561,7 @@
    "subtemas": [
     "Fratura transtrocantérica"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45371,7 +45585,7 @@
    "subtemas": [
     "Fratura da diáfise do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45395,7 +45609,7 @@
    "subtemas": [
     "Fratura do acetábulo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45419,7 +45633,7 @@
    "subtemas": [
     "Fratura do anel pélvico"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45443,7 +45657,7 @@
    "subtemas": [
     "Fraturas da coluna cervical alta"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45467,7 +45681,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45491,7 +45705,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45516,7 +45730,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45540,7 +45754,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "coluna-0075",
@@ -45556,7 +45770,7 @@
    "subtemas": [
     "Fraturas da coluna cervical baixa"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45580,7 +45794,7 @@
    "subtemas": [
     "Fraturas da coluna cervical alta"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45604,7 +45818,7 @@
    "subtemas": [
     "Fraturas por estresse"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45629,7 +45843,7 @@
     "Fratura do fêmur distal",
     "Fratura da diáfise do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45661,7 +45875,7 @@
    "subtemas": [
     "Fratura do planalto tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45685,7 +45899,7 @@
    "subtemas": [
     "Fratura da patela e lesão do aparelho extensor"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45709,7 +45923,7 @@
    "subtemas": [
     "Luxação do joelho e lesões ligamentares"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45733,7 +45947,7 @@
    "subtemas": [
     "Fratura do pilão tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "pe-tornozelo-0086",
@@ -45749,7 +45963,7 @@
    "subtemas": [
     "Fratura do tornozelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45773,7 +45987,7 @@
    "subtemas": [
     "Fraturas do tálus e do calcâneo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45789,7 +46003,7 @@
    "subtemas": [
     "Fraturas do tálus e do calcâneo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45805,7 +46019,7 @@
    "subtemas": [
     "Fraturas do mediopé e antepé"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45829,7 +46043,7 @@
    "subtemas": [
     "Fraturas do tálus e do calcâneo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "pe-tornozelo-0096",
@@ -45845,7 +46059,7 @@
    "subtemas": [
     "Fratura da diáfise da tíbia"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -45869,7 +46083,7 @@
    "subtemas": [
     "Síndrome compartimental"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -45923,7 +46137,7 @@
        "quem-tem-sindrome-compartimental-4b3a771a",
        "os-compartimentos-de-cada-regiao-8c215981"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "296db560d9f37ccb2a6105a593ac3a7662fd35d1d03f831e0103960bbb3fce58"
      }
     ],
@@ -45936,7 +46150,7 @@
    "subtemas": [
     "Fratura da patela e lesão do aparelho extensor"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0950",
@@ -45984,7 +46198,7 @@
    "subtemas": [
     "Fratura da cabeça do rádio e instabilidade do cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -46016,7 +46230,7 @@
    "subtemas": [
     "Fratura da escápula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0963",
@@ -46032,7 +46246,7 @@
    "subtemas": [
     "Fratura do planalto tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -46080,7 +46294,7 @@
    "subtemas": [
     "Fratura do fêmur distal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -46104,7 +46318,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -46441,8 +46655,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "4c22544bd3e3e7df02fef0622dfec7e6503b074b165d334833bb5d5bae6fd6d5",
@@ -46663,7 +46877,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -46723,8 +46937,8 @@
        "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
        "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
      }
     ],
     "questaoSha256": "b10bea29fa7670a9a1bdfcea99b60a2c70e16b06397b65078e06c3a78aaa6856",
@@ -46760,7 +46974,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -46784,7 +46998,7 @@
    "subtemas": [
     "Fratura do escafoide e do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -46951,7 +47165,7 @@
        "os-compartimentos-de-cada-regiao-9ef07de3",
        "fasciotomia-f734935c"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "d3f6dec0b02ea6962b6c84d0f81e3cf140d3e5688c995b21cbf0b91bfd2ed979"
      }
     ],
@@ -47011,7 +47225,7 @@
        "fasciotomia-8bb6fb73",
        "fasciotomia-7e6b6436"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "1a7557290cc4c1922eb9f86816b796fca2b0b14e4b505969b024ec5ae45faa7e"
      }
     ],
@@ -47072,7 +47286,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -47314,7 +47528,7 @@
        "o-tratamento-preferido-dos-autores-930f2a36",
        "medida-da-pressao-e-o-delta-p-1312eae8"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "205c4327fbffde2683b4f196f12ce6ad0601430efb718e1fd2e5c54ffdc37abc"
      }
     ],
@@ -47434,8 +47648,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "e553b1bb3b89d924f50ce837dfffe449d6ed4a80ca89f84e0507e5291e49d994",
@@ -47647,7 +47861,7 @@
        "terco-lateral-distal-807eaf40",
        "terco-lateral-distal-978927a9"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "de64ace939824f8deae8d93b3081c6982bbbaedc32c720976915830ad562dbf1"
      }
     ],
@@ -47805,7 +48019,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-fonte",
    "motivo": "A questão exige subtipos de Doyle IV por porcentagem articular; o resumo 45 não usa Doyle e classifica o martelo ósseo por subluxação e lesão epifisária. É necessária a classificação primária com o intervalo que inclui 30%, preservando B oficial sem simular cobertura.",
@@ -47830,7 +48044,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -47854,7 +48068,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -47878,7 +48092,7 @@
    "subtemas": [
     "Fratura do escafoide e do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -47993,7 +48207,7 @@
       "blocos": [
        "os-compartimentos-de-cada-regiao-231bd2af"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
      },
      {
@@ -48008,7 +48222,7 @@
       "blocos": [
        "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "f5455e517fad6a7e91a497a6bbb6f4dcd9580f56d9c5dab6024680d3a3d8ca4f"
      }
     ],
@@ -48421,7 +48635,7 @@
    "subtemas": [
     "Fratura da diáfise do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "conceitos-basicos-0137",
@@ -48532,7 +48746,7 @@
        "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-1239920b",
        "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-2fa5f304"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "dc5761f08dc691265683f96e10e060a9d35da33c53d9c751b3043e3279e91459"
      }
     ],
@@ -48627,8 +48841,8 @@
        "fratura-luxacao-da-ifp-e-base-da-falange-media-79c83ccd",
        "fratura-luxacao-da-ifp-e-base-da-falange-media-37736c62"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "6292879249aa43ae290c013e8bd08f406159b46a9e24282bfb5a70dbd2b2d330"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "b56d918eabe3870b8a285aa58294e34fd10482813066f6c85a38dbc7ed1b8fab"
      }
     ],
     "questaoSha256": "349b43a153c2f7e502ae09b85a09df86955119549c68ead814535b09edb55bcd",
@@ -48759,7 +48973,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "conceitos-basicos-0140",
@@ -48775,7 +48989,7 @@
    "subtemas": [
     "Fratura da diáfise do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "conceitos-basicos-0142",
@@ -48948,7 +49162,7 @@
        "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59",
        "lesoes-neurovasculares-e-dissociacao-escapulotor-1176f57b"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "d407609bda9ed9c7c530e0f0619b40e77f244b2b74cf82e7f88cbdf54827f31c"
      }
     ],
@@ -49061,7 +49275,7 @@
        "quem-se-machuca-como-e-o-que-vem-junto-b20f609d",
        "quem-se-machuca-como-e-o-que-vem-junto-1c80acff"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "1276997924a2b530d51aaaec5ee75c8de1bb9a6cf3dddf85da4e3c7cb7dba0e8"
      }
     ],
@@ -49382,7 +49596,7 @@
        "quem-tem-sindrome-compartimental-4b3a771a",
        "quem-tem-sindrome-compartimental-5ca80c99"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "3888386fcea4c667e69f4f5213e8779840b00efcd636172de54bb20194205edc"
      },
      {
@@ -49400,7 +49614,7 @@
        "sindrome-compartimental-do-antebraco-d130faa9",
        "sindrome-compartimental-do-antebraco-9723cec1"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "482a63b7745b0178153ff656890de32e2fbcaf61b460076af10aa6cfbd73a857"
      }
     ],
@@ -50033,7 +50247,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "0e0ed90604944f2aa4ded455f03cbbf39ffb49717b0e3acfd2173af738d168a3"
      }
     ],
@@ -50120,8 +50334,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "0f70e1431c3f4d79dd27f768060bd74190085088240a447bc426b2c7b787e375",
@@ -50247,12 +50461,12 @@
       "blocos": [
        "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "4760bc7353d18981bc8cbbba616ffcce44a41b38c277be1abe709a32349a36d1"
      }
     ],
     "questaoSha256": "c65f207ffd926e919319018c24ea44a318ac6d2517c800043c7b6e588e013b9c",
-    "comentarioSha256": "9718b8e941315f26ab5ce02abad01236d8191cbb2e5615a14a375116639bf894"
+    "comentarioSha256": "57b672418ebd7620ae50674f07864ce848182890aab6c42d8f975cb4706da79b"
    }
   },
   "trauma-0703": {
@@ -50356,7 +50570,7 @@
        "fasciotomia-0f8a1c3f",
        "o-tratamento-preferido-dos-autores-5d2471ca"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "511c20da4ca9a0e96b8ac1d58985d72cc7c1fbc3a1a03a129670b7c1cc28f89c"
      }
     ],
@@ -50821,12 +51035,12 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
        "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "4a0a8d75a80daae741f04d3b00a2b1c2fbf71a35ebf67f1da5d55a2dc11f961a"
      }
     ],
     "questaoSha256": "85296cebcb7a3812ce072098b82de53d5537bcc281cb90b3ad9fcf9679e8507d",
-    "comentarioSha256": "23e0e67f025603d5d506bdb8fe193150fa712ff498d92e8609eea91d40cfcb5a"
+    "comentarioSha256": "d1d0dfed4729c9b8abe2d49dc5945dcca0f4e14cac33bf666bbe34b429f8eb13"
    }
   },
   "trauma-0745": {
@@ -51207,7 +51421,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "4799bc30b42000fdc66471c378be13150a20d0bacf466281cd2102dcf641095f"
      }
     ],
@@ -51347,7 +51561,7 @@
        "fasciotomia-f734935c",
        "medida-da-pressao-e-o-delta-p-6e9747e1"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "4b6f8952f28cd0b65b2e05252bf6b1fa6e47070a69134fb2ad54e03ef744918e"
      }
     ],
@@ -51397,12 +51611,12 @@
        "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
        "mecanismo-e-deformidade-para-onde-vai-cada-fragm-05e0589a"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "e61bb4855a4537406059258a11a6253feaff847ee2b504cec7054880f1a06bd2"
      }
     ],
     "questaoSha256": "d4a091d28e09768965d961e6bd95340d4ef9c5c466f975cc90ab5e63efd1dbb6",
-    "comentarioSha256": "d02b9d6f3154b0e6caa7ad576ab58e3d2cd3e41ea18654f764ce65e7df3f1af3"
+    "comentarioSha256": "143c60fd6c7d047613a6144a8edd11f806d908c2a3b9ebbba4ee7d231493f022"
    }
   },
   "trauma-0769": {
@@ -51970,7 +52184,7 @@
    "subtemas": [
     "Fratura do tornozelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "pe-tornozelo-0247",
@@ -52095,7 +52309,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
      }
     ],
@@ -52422,7 +52636,7 @@
        "medida-da-pressao-e-o-delta-p-f94386d5",
        "o-tratamento-preferido-dos-autores-930f2a36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
      }
     ],
@@ -52544,7 +52758,7 @@
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-2da6588c",
        "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-1a59628a"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
       "trechosSha256": "21af1f1b72e46da7c7b2ad23d3b9b87ad5bbacbfc3ad1c73987935ff34ebaf54"
      }
     ],
@@ -52947,7 +53161,7 @@
        "a-haste-intramedular-353c6bb3",
        "fraturas-expostas-e-por-projetil-5aeafa05"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "fac73a1d24157fb44d6cdb4b8ccd8758c39e7ebe83d24f913e0aeb2e43dc295b"
      }
     ],
@@ -53344,7 +53558,7 @@
        "fasciotomia-f108fecb",
        "os-compartimentos-de-cada-regiao-991d4b36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "f46edddde74d79f2ed2fd04381440a82d89a4c752be64422b696288d0d337f03"
      }
     ],
@@ -53397,7 +53611,7 @@
        "a-haste-intramedular-418a2c99",
        "fraturas-expostas-e-por-projetil-cffa5e06"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "144deb2e7c66f148bc9ced0ed2313c4af9c96fc0ee707a181487d9a80945f727"
      }
     ],
@@ -53859,7 +54073,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-abcc0cb7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "eb43ffda5227e6de83f423f2790ceab616e4ad516fb07909ce103e63aba01f50"
      }
     ],
@@ -53898,7 +54112,7 @@
    "subtemas": [
     "Fratura da diáfise da tíbia"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -53922,7 +54136,7 @@
    "subtemas": [
     "Fraturas do tálus e do calcâneo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -53938,7 +54152,7 @@
    "subtemas": [
     "Fratura da diáfise do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -53970,7 +54184,7 @@
    "subtemas": [
     "Fratura do colo do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54001,7 +54215,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54025,7 +54239,7 @@
    "subtemas": [
     "Fratura do colo do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54049,7 +54263,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54074,7 +54288,7 @@
    "subtemas": [
     "Fratura da diáfise da tíbia"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54106,7 +54320,7 @@
    "subtemas": [
     "Fraturas dos metacarpos e falanges"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -54131,7 +54345,7 @@
     "Fratura da patela e lesão do aparelho extensor",
     "Luxação do joelho e lesões ligamentares"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "joelho-0239",
@@ -54148,7 +54362,7 @@
    "subtemas": [
     "Fratura da escápula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54172,7 +54386,7 @@
    "subtemas": [
     "Fratura do escafoide e do carpo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54196,7 +54410,7 @@
    "subtemas": [
     "Fraturas diafisárias do antebraço"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "revisada",
    "motivo": "",
@@ -54232,7 +54446,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "8c6937ddd3d5f16ac77b55468a98ba469328ef47d73a27216a1267253cfe7820"
      }
     ],
@@ -54245,7 +54459,7 @@
    "subtemas": [
     "Fratura do planalto tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54269,7 +54483,7 @@
    "subtemas": [
     "Fratura do pilão tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54293,7 +54507,7 @@
    "subtemas": [
     "Fratura da diáfise do fêmur"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -54309,7 +54523,7 @@
    "subtemas": [
     "Fratura do fêmur distal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -54388,7 +54602,7 @@
        "medida-da-pressao-e-o-delta-p-6e9747e1",
        "fasciotomia-f734935c"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "452d42b099bf4bb3d3eda20f4fc600d3c4a7d759bb59a835d641c573920818d8"
      }
     ],
@@ -54443,7 +54657,7 @@
        "medida-da-pressao-e-o-delta-p-491de05b",
        "o-tratamento-preferido-dos-autores-930f2a36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "a5fea62210550a016114b5d33b99bde97effd389d333ec092ab7ac450bdce71a"
      }
     ],
@@ -54518,12 +54732,12 @@
        "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
        "consolidacao-viciosa-e-escapula-alada-b0993716"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "e4c59e08baf822f2ecf59a072b19a10147c21f556dd9271ff8310ca3596e6d8c"
      }
     ],
     "questaoSha256": "821c014328599bf8e33be630ce45c9ef84cdcf59b3d43265b73d064b4e127856",
-    "comentarioSha256": "2fd5210606dded1543a6eb8450f600b768b5be23f891902f9623fae6fd133247"
+    "comentarioSha256": "6513800335b88a896f54d9de441195d32827ee3767139ee392b4956a29249a0c"
    }
   },
   "trauma-0920": {
@@ -54642,7 +54856,7 @@
        "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "3b3cba8cf70d841068a55ab31a5241a78b865a065e53097351f58d654c3a1570"
      }
     ],
@@ -54692,7 +54906,7 @@
        "sinostose-radioulnar-ed7e5eeb",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "ec1ac942ea3fd5cfefedcf2dc739417fc33cb57fb5053415c431ec5d909f565d"
      }
     ],
@@ -54828,12 +55042,12 @@
       "blocos": [
        "anatomia-aplicada-osso-ligamentos-musculos-nervo-680fb88a"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "201921ba9695c32f5f91e750ef4323a34067bd5bec47489a0e961018acf74103"
      }
     ],
     "questaoSha256": "a331cd3754aecbe1c758e5f5750e564c83d27d5a62fd20f681aaea9c5ce68437",
-    "comentarioSha256": "0e54957905f6a5abdc4597eaeb273db3fb385aa6d984f318663c222d3258f19f"
+    "comentarioSha256": "d79231921577ca5694feb02f74e578877dfd67ee9e72ae3a7faab90fbc72f377"
    }
   },
   "trauma-0940": {
@@ -54985,7 +55199,7 @@
    "subtemas": [
     "Fratura da patela e lesão do aparelho extensor"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55009,7 +55223,7 @@
    "subtemas": [
     "Fraturas por estresse"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55065,7 +55279,7 @@
    "subtemas": [
     "Fratura do pilão tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55105,7 +55319,7 @@
    "subtemas": [
     "Fratura do anel pélvico"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -55129,7 +55343,7 @@
    "subtemas": [
     "Fraturas da coluna toracolombar"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "trauma-0343",
@@ -55162,7 +55376,7 @@
    "subtemas": [
     "Fratura da cabeça do rádio e instabilidade do cotovelo"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55187,7 +55401,7 @@
    "subtemas": [
     "Fratura do planalto tibial"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55211,7 +55425,7 @@
    "subtemas": [
     "Fratura transtrocantérica"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55235,7 +55449,7 @@
    "subtemas": [
     "Fratura do úmero proximal"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "duplicada",
    "motivo": "ombro-cotovelo-0392",
@@ -55251,7 +55465,7 @@
    "subtemas": [
     "Fratura da escápula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente-inspecao-imagem",
    "motivo": "Abrir imagens antes da revisão.",
@@ -55322,7 +55536,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "0deb911be83f922356c2e790f7e59e2e27e378335a591dc71e5b2ff4530754a1"
      }
     ],
@@ -55495,7 +55709,7 @@
    "subtemas": [
     "Fratura da escápula"
    ],
-   "prova": "TEOT/TARO",
+   "prova": "Ortopedia",
    "ano": null,
    "estado": "pendente",
    "motivo": "",
@@ -55726,7 +55940,7 @@
        "medida-da-pressao-e-o-delta-p-44efd7f7",
        "medida-da-pressao-e-o-delta-p-6e9747e1"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "b4d5c5d7f13430fb4bcd3d88d989d093e818f470ca38538b650403b5eb3277cd"
      }
     ],
@@ -56083,7 +56297,7 @@
        "fasciotomia-029870c3",
        "os-compartimentos-de-cada-regiao-110fac19"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "97ab96c39f455f31014466c6142b291c50227b82bb65ccea712f416cb867fe95"
      }
     ],
@@ -56337,7 +56551,7 @@
        "medida-da-pressao-e-o-delta-p-d654f7b7",
        "o-tratamento-preferido-dos-autores-930f2a36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "943067e6aa377888d440a8a924aef78d94c1e302a9ff9e4bd3e121ac5936ff08"
      }
     ],
@@ -56517,7 +56731,7 @@
        "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
        "o-antebraco-como-articulacao-arco-radial-forcas--0614ee82"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "12233869e41f40fdc4d136b9028ce97dcaa6e25608846fd7f08d73b802c95a6a"
      }
     ],
@@ -57385,7 +57599,7 @@
        "placa-e-haste-no-terco-medio-dd4f9b33",
        "placa-e-haste-no-terco-medio-16941c79"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "1ff553e3265b74124b8617f1d3b0983e28d2f9ee543f67c4154d2a2717b17654"
      }
     ],
@@ -58045,7 +58259,7 @@
        "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
        "quem-tem-sindrome-compartimental-b7787f07"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "6c37eb68b868c56a1b2ccaa2d8b478ac479c9e4499b152a941ff57c220461711"
      }
     ],
@@ -58127,7 +58341,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "f1f986277bef06dc8012762154c2060ee0e00b9ea1b670cf833e776c6225eca2"
      }
     ],
@@ -58424,7 +58638,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-655215a8",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "95b9d2851aa941f5e5bea6028c1a979b885214b5884d09fe7c8ae1860e5f2195"
      }
     ],
@@ -58524,7 +58738,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-14634e1e"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "0959ff48bc9bfc2bf5cb94460a391d31d17be45988221e033a6c8ce020966d3b"
      }
     ],
@@ -58600,7 +58814,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "609ee0b83cb7963337fbb81d0592739dbb989498097728d9fb40bb8589409793"
      }
     ],
@@ -58751,12 +58965,12 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
        "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "dd650034e15e7b63e782de418b9bca58c75bb3551d7ed4502ff13d72817d7505"
      }
     ],
     "questaoSha256": "191750cadaef18c1a29e2b1bc8502557896b17770b5d6c6f824b90817c554169",
-    "comentarioSha256": "8e68e62ecc26b9003685cb325b19a6149c1286805f63e156d29cb6d7832446f1"
+    "comentarioSha256": "7c891e0628ad90c2caad540ed1c2f7da760e1bb57b843ec6295658bad56d0306"
    }
   },
   "trauma-1122": {
@@ -59177,7 +59391,7 @@
        "os-compartimentos-de-cada-regiao-e0295081",
        "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "aa458baf78f148e5e10f778c322bd063d04c4276c9659f51e369f59e72fdf1e5"
      }
     ],
@@ -59664,7 +59878,7 @@
        "os-compartimentos-de-cada-regiao-222f4f26",
        "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "a8fd24efa5e348219760602a51e549b5cb9cb6648b258b8c0912ba34f61620f5"
      }
     ],
@@ -60135,7 +60349,7 @@
        "medida-da-pressao-e-o-delta-p-f94386d5",
        "o-tratamento-preferido-dos-autores-930f2a36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
      }
     ],
@@ -61043,7 +61257,7 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-c4f639b6",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-f1bc3671"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "502e493bb6408624498e3b4f13a7d02e2d5e939ccef5c7c19b6603ad8bb9d1e0"
      }
     ],
@@ -61093,7 +61307,7 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-3d70f3c6",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-fa1836c0"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "e19b88fdab61ecea453021d7bd593b74fd239a0f9cb0ce8253409290824ab5a0"
      }
     ],
@@ -61244,8 +61458,8 @@
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
        "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
       ],
-      "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
-      "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
      }
     ],
     "questaoSha256": "d0c49101263c41fd57bddd94e900ca58a1247c08bb17ff619cba1323cc50d627",
@@ -63371,7 +63585,7 @@
        "epidemiologia-exame-e-imagem-b5467ea3",
        "terco-lateral-distal-e3f5357d"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "e9a895aaa8fe458c4445ae7990c6996ae6bb4a6f9401f896d0a9a9821519d224"
      }
     ],
@@ -63421,7 +63635,7 @@
        "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
        "mecanismo-e-deformidade-para-onde-vai-cada-fragm-05e0589a"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "e61bb4855a4537406059258a11a6253feaff847ee2b504cec7054880f1a06bd2"
      }
     ],
@@ -63476,12 +63690,12 @@
       "blocos": [
        "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "4760bc7353d18981bc8cbbba616ffcce44a41b38c277be1abe709a32349a36d1"
      }
     ],
     "questaoSha256": "0211b2d9235287153ce9bab9d840870136cb57e87472b2203a147d8c338a1bca",
-    "comentarioSha256": "c7d2ec1fbe6df27456e4104198cb94e1f1bd9b5233eed208a213d903e4b2dfd9"
+    "comentarioSha256": "62af3a87ceb71e288a5521d34c4569bafd0b8e6607b479826965f8ce27af0d50"
    }
   },
   "trauma-1352": {
@@ -63525,12 +63739,12 @@
        "epidemiologia-exame-e-imagem-8d795dcb",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-dd7d7386"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "db9fb1670092e7f3f7cc4b66e6ba505628879b5fd87935c88376d460d8ed0d27"
      }
     ],
     "questaoSha256": "eaa087f65e344c130d4fc0d3c205a72822b2c674b7dbbe790010f964567dbdd4",
-    "comentarioSha256": "0784d24d471815708a75141ebb7e08d598d4c2f73fecd9d503d2d5f787826248"
+    "comentarioSha256": "9df5298844e97bc4d01e8d4ff73df5839967ad8b1d9152fceb7f00a68db960d8"
    }
   },
   "trauma-1353": {
@@ -63574,12 +63788,12 @@
        "epidemiologia-exame-e-imagem-8a5ed596",
        "epidemiologia-exame-e-imagem-a8a6a23c"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "67fc29f64f0e3d340dffe7b8a678ec07c74049a898a0b3438cc9221f12f399b8"
      }
     ],
     "questaoSha256": "40e666cd35e7d400e20bf1db2952f19ccaa61780be7a98a2b163ae7ef95b5bbd",
-    "comentarioSha256": "4d26f4a3554ae02855580a8b109f60b74c22d56de29dae1dca42b4b2201008e2"
+    "comentarioSha256": "45fc7b356553da9f13850b5cbbec56da791f20cfeacd80319840fa2b8d1a05c8"
    }
   },
   "trauma-1354": {
@@ -63621,12 +63835,12 @@
       "blocos": [
        "ombro-flutuante-costelas-e-terco-medial-a2159463"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "ea52b4edcc2ffbd3618044e34cc920efb10931ed3041acc2c27a34c72762a650"
      }
     ],
     "questaoSha256": "8d28a4d213eef3511d4ac0c985b0a74ce03228e30594b67f62f641b9060fe704",
-    "comentarioSha256": "a2e4f946a321f81e957c04a23672ba1aa90e62c578783662c9ab1a85db079d16"
+    "comentarioSha256": "c1b715a204c0b069ac1df42c93c07733d589dea2633ea0f25a6cef133472faef"
    }
   },
   "trauma-1355": {
@@ -63669,7 +63883,7 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
        "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "593ecc9a3ca1e4f3ee855634fc7a41baf603b28a593e2fc5021aaa18c0ae45a4"
      }
     ],
@@ -63721,7 +63935,7 @@
        "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
        "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "dd650034e15e7b63e782de418b9bca58c75bb3551d7ed4502ff13d72817d7505"
      }
     ],
@@ -63773,12 +63987,12 @@
        "anatomia-aplicada-osso-ligamentos-musculos-nervo-8ade4fb4",
        "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "60ee6a8f588567b3e06fc5bb357ef0ebcdc4fae4864e46c24c2578ad185925df"
      }
     ],
     "questaoSha256": "3ebe29d26972d94aa5f95b4c0906d21d0fde4cec638355ae40c65cb49d65da0a",
-    "comentarioSha256": "04883a9b5edcc8996058bd47493639754aa9c631d23d00e037ff3d44054a724d"
+    "comentarioSha256": "b2726c03675e13623d39338b36b9de704ed244d4d919bd14600e30ca8ac38ba5"
    }
   },
   "trauma-1358": {
@@ -63821,12 +64035,12 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-dd7d7386",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-19afc370"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "c02020687051e2e6c4945830b23942ee2b7646aa859e178fd26cdb4c354b42fe"
      }
     ],
     "questaoSha256": "99596ce00ac4b41bcfbf72db2f986372e555e032461f680fbe51d81dd38a3ecc",
-    "comentarioSha256": "e6ae4b5e950a0abccd1c6767496ff60d461272e45c2bafb06a11ab0d30b13e4d"
+    "comentarioSha256": "56b432fa9c5d9b54ec4b505a51c3669f057d0221e7bd3ce4b09e3fb5d18577a4"
    }
   },
   "trauma-1359": {
@@ -63872,7 +64086,7 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-f9948d41",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-fa1836c0"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "3b79bab15aa3922859113b85b8464adb5aef1dd66fa9e09c7be1b82b53b5455f"
      }
     ],
@@ -63920,12 +64134,12 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-b6820b99",
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-beee1ef1"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "432fd9fea90248353b9a7fe6e5cc6308caa32ecf92dec607bd510787012062c8"
      }
     ],
     "questaoSha256": "01e231716acd48085538d765f5e391fb76001df3588760a48548ce89057c4ae4",
-    "comentarioSha256": "733abcf54cfad8fec49421c94d93d0b3458b212dbbff446e6831539fc27f5261"
+    "comentarioSha256": "36567b4c96d2816f0c2a15604b925e9b42dfd7dbe44796a898448c1377e29780"
    }
   },
   "trauma-1361": {
@@ -63969,12 +64183,12 @@
        "pseudartrose-fatores-de-risco-e-operar-ou-nao-5cc01da8",
        "lesoes-neurovasculares-e-dissociacao-escapulotor-51cbb6a9"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "2bb57b3c846a2d44dad04535721eff81a2773778f7461e9d60e268e3b2bc1a31"
      }
     ],
     "questaoSha256": "e680bdf96990d4673f35332596b26191a2902a6cc99c0b8abafe33bc1a9bcc43",
-    "comentarioSha256": "560c2be74cc022ac5670436ce0c84dde97740746f872d8e86c2a7a028274957d"
+    "comentarioSha256": "d1370970522f1e63787b499e5563bb7ca9b247fe1fcba0541462a210607cae6c"
    }
   },
   "trauma-1362": {
@@ -64017,12 +64231,12 @@
        "outras-complicacoes-infeccao-pseudartrose-operad-82347ee0",
        "outras-complicacoes-infeccao-pseudartrose-operad-744808d0"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "5d4c5aeaa334f33e35dd307e51d5e38fd4df0f1a1a9bae3e7f14caacd2203867"
      }
     ],
     "questaoSha256": "e9b1d849400995b1a65ff2481eef2bd1bfc34aeee6d5a3b22a89d4122b4f24a7",
-    "comentarioSha256": "0b51024b95c621160f66e0235d715f7a2f352b0d9125bac6d102308c2baf4d49"
+    "comentarioSha256": "c718c1c492f4a35e6e25277872db25aa8f2d77bf8706f18831e0361b205643a0"
    }
   },
   "trauma-1363": {
@@ -64065,7 +64279,7 @@
        "lesoes-neurovasculares-e-dissociacao-escapulotor-d65fb30d",
        "lesoes-neurovasculares-e-dissociacao-escapulotor-51cbb6a9"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "cf4778a01fc35f313ea4d54504957c1af87e95e1ead14e5bccb4d6c3d62cb4f8"
      }
     ],
@@ -64116,7 +64330,7 @@
        "placa-e-haste-no-terco-medio-1df8089a",
        "placa-e-haste-no-terco-medio-2470fd89"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "a6338953ccc0bc6d5b1902697cd9e0944e2e1ea75b3ee0bebf878de7713f8883"
      }
     ],
@@ -64164,12 +64378,12 @@
        "placa-e-haste-no-terco-medio-702825bf",
        "placa-e-haste-no-terco-medio-9b0953e7"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "f37347e4c57d0373016b52ada9961418413c4b3ad9ae0b5912f80632400cc6ed"
      }
     ],
     "questaoSha256": "8f7e2b9130daaee26351cc57bef2919a6cc2c8120e3abb57c526d8611d705a7b",
-    "comentarioSha256": "d91adbc81a61712af62c361b77d4a26df12be63428884a2cf35a986907b149c9"
+    "comentarioSha256": "b29e12f899a128053476610e274c2abf29e5c649356268fc7fc122009c45e2ba"
    }
   },
   "trauma-1366": {
@@ -64238,12 +64452,12 @@
        "terco-lateral-distal-38294fea",
        "terco-lateral-distal-c071a8d5"
       ],
-      "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
       "trechosSha256": "22973f2be3c44e7b2e4018b4a1ab7525239d0621b926d359411eb3bd5ea9a30e"
      }
     ],
     "questaoSha256": "e6e6729b260da0165296ad7b5df311740fc437d4d41c1d46fdbe490d2303cca0",
-    "comentarioSha256": "6cb7a6b98631246ffbd3bd5382ad6c02f9912280698aaa9bd5e9bdffb6e148e0"
+    "comentarioSha256": "49d84e89933b9296ed1ee38459896b522af6197ecf454d9f6d14b9684097a20a"
    }
   },
   "trauma-1368": {
@@ -66013,7 +66227,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "09f6c610d07cf033e5aebd59c88498f74c3797151a3f6318c13b27160e303fd4"
      }
     ],
@@ -66063,7 +66277,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "85fe6f3648062ea92e0a313845cb29bff99d82309d6955d9e34703b4d7bd26d0"
      }
     ],
@@ -66232,7 +66446,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-7adfdbaf",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "eb7c245d106234edf5f1b2a1ed30d1a66b26800f0815206fb3f3ee602c93553f"
      }
     ],
@@ -66283,7 +66497,7 @@
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
        "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "c7d0298074b54e7a18f423a872b86b6113a2207cbae702f99789e0dfb5adf65d"
      }
     ],
@@ -66334,7 +66548,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-a6bcc01c",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-655215a8"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "aa9aedb355e63a6a5e9c7c28f63342c84ea0c9b30a63d58b51c3c6662c57099a"
      }
     ],
@@ -66384,7 +66598,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
        "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "e3cc75c3dde51a94f6396dfe8d56a3e1f551f6a253823697b701bd4c49d61c2c"
      }
     ],
@@ -66435,7 +66649,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "5fc9b986faa89d243e692288009fe50151546cca0ed5e1f9f47eac70ccb0945b"
      }
     ],
@@ -66487,7 +66701,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "78f89a76364dbc5236c0ad130b7c8975a389fd0d75917a5dd26f98605335b893"
      }
     ],
@@ -66536,7 +66750,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-abcc0cb7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "eb43ffda5227e6de83f423f2790ceab616e4ad516fb07909ce103e63aba01f50"
      }
     ],
@@ -66587,7 +66801,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-f5e1d35e"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "235ff07b530f431320fd5ea1b6129bb1b238f4d06e7760b67d3817c6c49c6f0c"
      }
     ],
@@ -66636,12 +66850,12 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "8c6937ddd3d5f16ac77b55468a98ba469328ef47d73a27216a1267253cfe7820"
      }
     ],
     "questaoSha256": "2336fb379cf5cc97f9d5b27b2acf60b4efadf16efda59220fb11fff371ea6161",
-    "comentarioSha256": "f3921661a662afc54825d5c831c6e84fba9863bf31103e7f7ebd3df16a6c6309"
+    "comentarioSha256": "76b519df8c48782886be85c66a4a4b867005e68e344dc80c9e9286f13dcc4319"
    }
   },
   "trauma-1444": {
@@ -66688,7 +66902,7 @@
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
        "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "609ee0b83cb7963337fbb81d0592739dbb989498097728d9fb40bb8589409793"
      }
     ],
@@ -66738,7 +66952,7 @@
        "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
        "o-antebraco-como-articulacao-arco-radial-forcas--0614ee82"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "12233869e41f40fdc4d136b9028ce97dcaa6e25608846fd7f08d73b802c95a6a"
      }
     ],
@@ -66787,7 +67001,7 @@
        "o-antebraco-como-articulacao-arco-radial-forcas--1fddf15b",
        "o-antebraco-como-articulacao-arco-radial-forcas--e602b577"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "b6752c260d5adb70bbe2cd1164e30ddf4a73b161bfb4b8367daeedf87082b68a"
      }
     ],
@@ -66836,7 +67050,7 @@
        "quem-se-machuca-como-e-o-que-vem-junto-b20f609d",
        "quem-se-machuca-como-e-o-que-vem-junto-1c80acff"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "1276997924a2b530d51aaaec5ee75c8de1bb9a6cf3dddf85da4e3c7cb7dba0e8"
      }
     ],
@@ -66904,7 +67118,7 @@
        "sindrome-compartimental-do-antebraco-e7ea6f10",
        "sindrome-compartimental-do-antebraco-9723cec1"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "31983ef3b38192ef1ed9b18047a0b81b8a90e52aa447becd7f112b9f1732b221"
      }
     ],
@@ -66954,7 +67168,7 @@
        "sindrome-compartimental-do-antebraco-408a137e",
        "sindrome-compartimental-do-antebraco-e7ea6f10"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "737e9a01e2a9daa8e001b532b2dcb3ea3e0659bc6ac1bcc206a1f8ba82b35b95"
      }
     ],
@@ -67003,12 +67217,12 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "f4703056de425319cd2511884b568d06f09dcb2a2b08d9a0e71525a2ed75928e"
      }
     ],
     "questaoSha256": "e0ff8eba50b8b8b50acd73b4452e9a9272561bde18fd6f06574919f50a81fd99",
-    "comentarioSha256": "46c1f86caae0da53cc94c138a3a3ed9642ab3a3511d0d0cb5bc0bfaf74c4fafd"
+    "comentarioSha256": "e1050f72611b520a96150f53978ffc2ef66efe72dc8143dcb94d0637e99b0e06"
    }
   },
   "trauma-1451": {
@@ -67053,7 +67267,7 @@
        "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
        "vias-de-acesso-e-o-nervo-interosseo-posterior-70016f08"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "22d865362f8f0ce21ddc0b0fe2e64efe5a89b356bcbaabe9be5bba7666be0567"
      }
     ],
@@ -67107,7 +67321,7 @@
        "a-placa-tecnica-que-a-prova-cobra-b28ae921",
        "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-2fa5f304"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "72cb0952a8a79e325acc81893896e688f68f6c698874e64edd1ca0a00f9b4c1f"
      }
     ],
@@ -67155,7 +67369,7 @@
        "o-antebraco-como-articulacao-arco-radial-forcas--99a6b318",
        "o-antebraco-como-articulacao-arco-radial-forcas--a65a2ca5"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "9907a8ffc48c1b609954ca065b97806411f438d8ba80358519e3bab0acbb072c"
      }
     ],
@@ -67203,7 +67417,7 @@
        "a-placa-tecnica-que-a-prova-cobra-9a510e06",
        "a-placa-tecnica-que-a-prova-cobra-8863bbb3"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "d914eca8c433e3d1c6eac6b191ad73bce025e50aa7b958507935758f6da52a5d"
      }
     ],
@@ -67254,7 +67468,7 @@
        "a-haste-intramedular-aff2082f",
        "a-placa-tecnica-que-a-prova-cobra-cdc349b7"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "5c5b795f1ba8f5bcdf17d576a3827eca2314e0a230c3f78aa43e7342f3efff8a"
      }
     ],
@@ -67307,7 +67521,7 @@
        "a-haste-intramedular-418a2c99",
        "fraturas-expostas-e-por-projetil-cffa5e06"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "6add28c139f4a0ba9b21b6069b26d1632a282b20978c1cc0df0e61e1d7765b2c"
      }
     ],
@@ -67357,7 +67571,7 @@
        "sinostose-radioulnar-62eba46d",
        "a-placa-tecnica-que-a-prova-cobra-0d9b4a72"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "5f22d1bbc187f6ccfc04b1eba2cdd6b954f4f53f08b3865ca8150a2f11e210e0"
      }
     ],
@@ -67407,7 +67621,7 @@
        "retirada-do-material-e-refratura-f53f826b",
        "retirada-do-material-e-refratura-da1712aa"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "5d3602a02b711419dd0071cd354a921a12ad8dee6c95bb37eac1995d0bca6384"
      }
     ],
@@ -67455,7 +67669,7 @@
        "consolidacao-viciosa-pseudartrose-e-infeccao-8b98a6b6",
        "consolidacao-viciosa-pseudartrose-e-infeccao-a40e83d9"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "68d638a93204b759ff508c35270994f64d37073a8d8168dabad75ee6f330981a"
      }
     ],
@@ -67506,7 +67720,7 @@
        "a-placa-tecnica-que-a-prova-cobra-0d9b4a72",
        "a-placa-tecnica-que-a-prova-cobra-9a510e06"
       ],
-      "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
       "trechosSha256": "b742cf8f92ab7127188d9540d1e46a95795e11737fbe33fdc06c714f5b7552c9"
      }
     ],
@@ -70127,7 +70341,7 @@
        "medida-da-pressao-e-o-delta-p-f94386d5",
        "o-tratamento-preferido-dos-autores-930f2a36"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "febe1540fb3d618c433866c1de8ea6b435a0092bd76d842fc6f1dcc0de0d4f11"
      }
     ],
@@ -70180,7 +70394,7 @@
        "os-compartimentos-de-cada-regiao-110fac19",
        "o-tratamento-preferido-dos-autores-cb26ab73"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "4f2e05c8d20ca8caf5fa15db117d0038237805828571b83ac1016a56609cb5c6"
      }
     ],
@@ -70229,7 +70443,7 @@
        "por-que-a-pressao-mata-o-musculo-1a07d757",
        "por-que-a-pressao-mata-o-musculo-23e1059b"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "76484e3f770a7d473daf4bf4df60090ca9bc0883bf8028b926f4d341cee36d3a"
      }
     ],
@@ -70280,7 +70494,7 @@
        "os-compartimentos-de-cada-regiao-e0295081",
        "fasciotomia-f108fecb"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "8651a5447301c618f63d7a232f711bcced1e5a75965e621ad9c512a9960d8fa5"
      }
     ],
@@ -70340,7 +70554,7 @@
        "quem-tem-sindrome-compartimental-c9a33825",
        "quem-tem-sindrome-compartimental-b7787f07"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "47a76ccdc8ed590f6759d1b2346d26571381811168414178f0d7f6e245d02b6c"
      }
     ],
@@ -70423,7 +70637,7 @@
        "o-tratamento-preferido-dos-autores-be365766",
        "quem-tem-sindrome-compartimental-b7787f07"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "fbaff1ebded06c581ae29490a31f63d2683eabea80a79e8c64612c1205947c54"
      }
     ],
@@ -70474,7 +70688,7 @@
        "fasciotomia-5f056aff",
        "os-compartimentos-de-cada-regiao-222f4f26"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "e6de17ef7444ddc81a69cfc44702b4ea47bc027cf7dc7d119aa284504e3530ef"
      }
     ],
@@ -70527,7 +70741,7 @@
        "fasciotomia-5f056aff",
        "fasciotomia-e52c81a8"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "2a0695d59a35a1b4e75ad2f73b78d31acb756b2c94dfed2f70000dab05613020"
      }
     ],
@@ -70579,7 +70793,7 @@
        "os-compartimentos-de-cada-regiao-110fac19",
        "fasciotomia-029870c3"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "5ddcbdfec466699d252fff2f0a8d5b40d6385056f0239ca5453115a0d271303a"
      }
     ],
@@ -70632,7 +70846,7 @@
        "por-que-a-pressao-mata-o-musculo-1a07d757",
        "fasciotomia-7a3f42f7"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "ba78f22b059f1586a34e7f605cfe2b9b7dac5ad65352bba3af1d76f2b86dd972"
      }
     ],
@@ -70685,7 +70899,7 @@
        "diagnostico-clinico-por-que-os-sinais-chegam-tar-bd9cdd1d",
        "medida-da-pressao-e-o-delta-p-491de05b"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "e9ba264075c6f911bf6832e26cfa9ced1768713d688f60669de6ffad9d9ba5b2"
      }
     ],
@@ -70743,7 +70957,7 @@
        "fasciotomia-f1a3c7bb",
        "fasciotomia-0f8a1c3f"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "c13d58c1cac3517a720e9ba078da69a3c4f8cb10f93bc1bc62d13f1256e07ef3"
      }
     ],
@@ -70801,7 +71015,7 @@
        "a-fratura-associada-e6fce012",
        "a-fratura-associada-33d78d60"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "dc80638e82be29dfafb0f6d0d3046ca9ee1934a320ee29644b525966e479a10e"
      }
     ],
@@ -70857,7 +71071,7 @@
        "o-tratamento-preferido-dos-autores-930f2a36",
        "fasciotomia-7a3f42f7"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "a20c40fd4644afba0627751d8d796e6479209d2dacd97ce3f1a15583bb9aa498"
      }
     ],
@@ -72284,7 +72498,7 @@
        "fasciotomia-4de1412f",
        "fasciotomia-7a3f42f7"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "d959f5a60e3eb990ef01e71543a26ca9a3313ff6777433734d4da8d8b4f094b4"
      }
     ],
@@ -74040,7 +74254,7 @@
       "blocos": [
        "os-compartimentos-de-cada-regiao-231bd2af"
       ],
-      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
       "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
      }
     ],
