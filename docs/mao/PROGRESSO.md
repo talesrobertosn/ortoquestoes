@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 24 | 6 | mao-2106 a mao-2129 | A 6, B 6, C 6, D 6 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 26 | 9 | mao-2106 a mao-2131 | A 7, B 7, C 6, D 6 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 07** (lotes 01 a 06 publicados: mao-2106 a mao-2129; pendentes 19, 34, 44, 45 e 54, figura, e 38, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 08** (lotes 01 a 07 publicados: mao-2106 a mao-2131; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38 e 74, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -395,7 +395,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 2 | FERNANDEZ (rádio distal): tipo com suspeita de lesão escafossemilunar | classificação | cap. 15, p. 615 (Fig. 15.15) | mao / Fratura do rádio distal | 06 | mao-2129 | publicada |
 | 3 | Banda sagital, lesão fechada: banda e dedos mais acometidos | fato | cap. 5, p. 185 e 204 | mao / Lesões dos tendões extensores | 02 | mao-2110 | publicada |
 | 4 | LICHTMAN: grau IV do teste de instabilidade mediocárpica | classificação | cap. 13, p. 539 | mao / Instabilidade do carpo | 05 | mao-2124 | publicada (gabarito pelo Green: grau IV = C; o oficial D é o grau V) |
-| 5 | Luxação isolada do escafoide tipo II: articulação desalinhada | classificação | cap. 16 (3 alternativas no original) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 5 | Luxação isolada do escafoide tipo II: articulação desalinhada | classificação | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: sem fonte (tipos da luxação isolada do escafoide não estão no Green) |
 | 6 | Desfiladeiro torácico: valor do potencial evocado somatossensitivo | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
 | 7 | O que mimetiza a paralisia ulnar | fato | cap. 28 | mao / Lesões de nervos periféricos | 09 |  | a fazer |
 | 8 | Pronação do antebraço na paralisia cerebral: evolução | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
@@ -411,7 +411,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11, p. 409 | mao / Rizartrose e artrose da mão | 04 | mao-2122 | publicada |
 | 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura |
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14, p. 574 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2127 | publicada |
-| 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 e 46 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: depende da foto |
 | 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
 | 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
@@ -451,7 +451,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 58 | Artrodese dos quatro cantos: estágios de SLAC e SNAC | conduta | cap. 12, p. 450 e 453 | mao / Artrose do punho e artroscopia | 05 | mao-2123 | publicada |
 | 59 | Instabilidade cárpica não dissociativa: causa | fato | cap. 13, p. 501 | mao / Instabilidade do carpo | 05 | mao-2125 | publicada |
 | 60 | Luxação isolada da ARUD reduzida: posição estável | fato | cap. 14, p. 576 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2128 | publicada |
-| 61 | SLADE e GEISSLER: cistos de 1 a 5 mm | classificação | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 61 | SLADE e GEISSLER: cistos de 1 a 5 mm | classificação | cap. 16, p. 696 (Tabela 16.2) | mao / Fraturas do escafoide e do carpo | 07 | mao-2130 | publicada |
 | 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24 (arquivo 23) | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
 | 64 | Síndrome do interósseo posterior: intervalo do acesso anterior | técnica | cap. 28 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
@@ -464,7 +464,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 71 | Retalho inguinal: a circunflexa ilíaca superficial | afirmativas | cap. 44 e 45 | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
 | 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57 | mao / Queimaduras | 18 |  | a fazer |
 | 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1, p. 5 e 8 | mao / Anestesia em cirurgia da mão | 01 | mao-2106 | publicada |
-| 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16 | mao / Doença de Kienböck | 07 |  | a fazer |
+| 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16, p. 736 | mao / Doença de Kienböck | 07 |  | pendente: sem fonte (artrodese junto do encurtamento do capitato não está no Green) |
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
 | 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
@@ -474,7 +474,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 81 | Macrodactilia: forma mais comum | fato | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
 | 82 | Retalho inguinal: artéria e onde emerge | anatomia | cap. 44 e 45 (3 alternativas, A e B iguais; repete a 71: outro ângulo) | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
 | 83 | Enxerto vascularizado do côndilo femoral medial: área da figura | figura | cap. 46 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
-| 84 | Carpo fraturado em atletas de raquete, golfe e beisebol | fato | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 84 | Carpo fraturado em atletas de raquete, golfe e beisebol | fato | cap. 16, p. 718 | mao / Fraturas do escafoide e do carpo | 07 | mao-2131 | publicada |
 | 85 | Desfiladeiro torácico: local mais comum de compressão | fato | cap. 29 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
 | 86 | Dedo mínimo abduzido na paralisia ulnar: transferência | transferência | cap. 31 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
 | 87 | Fratura de SEYMOUR: o que se interpõe | fato | cap. 41 | mao / Fraturas dos metacarpos e falanges | 14 |  | a fazer |
