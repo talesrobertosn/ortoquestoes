@@ -14,7 +14,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
-| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 10 | 8 | mao-2189 a mao-2198 | A 3, B 2, C 2, D 3 |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 11 | 8 | mao-2189 a mao-2199 | A 3, B 2, C 3, D 3 |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
@@ -33,7 +33,7 @@ As respostas e as páginas do Green apontadas pela correção estão em [dicas/]
 | SIMÃO 2023 | 100 | 0 (16 com ressalva) | correção Mão Expert |
 | SIMÃO 2024 | 95 | 5 (14, 15, 34, 46, 60) | prova + correção Mão Expert |
 | SBCM 2022 | 100 | 0 | prova + gabarito |
-| SBCM 2023 | 96 | 4 (9, 72, 88, 100 com figura) | correção Mão Expert |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 11 | 8 | mao-2189 a mao-2199 | A 3, B 2, C 3, D 3 |
 | SBCM 2024 | 100 | 0 (44 inferida) | correção Mão Expert |
 
 **Fila de comentários de provas oficiais (entraram só com a resposta em 19/10/2026):** ENARE Cirurgia da Mão
@@ -74,6 +74,26 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
+
+## Retomada atual: piloto de miniaula, 22/10/2026
+
+**Andamento:** por novo pedido do Tales, publicar uma única questão pendente com o modelo de
+`docs/prompts/comentarios-miniaula.md`: SBCM 2023, questão 59, teste de WATSON, `mao-2199`.
+Fonte lida: Green cap. 13, p. 508 a 510, incluindo a legenda da Fig. 13.22.
+Sem divergência de gabarito: o clunk de redução ocorre ao retirar a pressão; a baixa especificidade
+do teste está explicada. Lote local: `lotes/sbcm-2023/piloto_miniaula_59.py`.
+
+Lotes 01 e 02 já publicados no PR #471. Gabarito acumulado com o piloto: A 3, B 2, C 3, D 3.
+Os lotes 03 e 04 foram redigidos e aplicados somente no branch `claude/relaxed-franklin-0snpiu`,
+preservados em 55cec011 e 84296019, mas NÃO foram incorporados ao site. O pedido mais recente foi
+mostrar uma única questão no novo modelo. Antes de retomar esses lotes, rever seus comentários
+no modelo de miniaula e reaplicar sobre o acervo publicado, com IDs novos: o id mao-2199 agora
+pertence ao piloto WATSON, e os IDs antigos desses rascunhos não devem ser mesclados diretamente.
+Os textos completos permanecem na biblioteca local e no histórico do branch.
+
+Próximo id sequencial publicado: mao-2200. Primeiro lote anterior ainda não publicado: lote_03
+(91, 40, 79, 34, 37). A 40 não teve o detalhe da juntura confirmado nas p. 345 a 347 do cap. 8.
+Lote_05 (22, 42, 59, 75, 80): a 59 já está concluída neste piloto e não deve entrar outra vez.
 
 ## Retomada (atualizado em 20/10/2026, fim da sessão da conta 1)
 
@@ -120,7 +140,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Próximo (etapa 3 do 6b): refazer os comentários da SBCM 2024** (mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669)
    no padrão profundo, como `lotes/sbcm-2022/revisao_01.py` a `revisao_09.py` (atalho `_comentario.py` na pasta
    `lotes/sbcm-2024/`, mesmo enunciado e gabarito). Depois SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021 e ENARE.
-   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 18 feitas: SBCM 2024 inteira refeita no padrão profundo (mao-2023 a 2105 e ombro-cotovelo-0664 a 0669), em 22/10/2026. Aprofundar depois as revisões 02, 15 e 18 (mediana abaixo de 3.500 caracteres). Próximo: SBCM 2023, fase 0 concluída; lotes 01 e 02 aplicados e validados (mao-2189 a mao-2198); próximo lote_03 (91, 40, 79, 34, 37), próximo id mao-2199. Conferir a figura da 37 e as páginas corretas da 79 antes de escrever. Lotes locais em `lotes/sbcm-2023/`.
+   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 18 feitas: SBCM 2024 inteira refeita no padrão profundo (mao-2023 a 2105 e ombro-cotovelo-0664 a 0669), em 22/10/2026. Aprofundar depois as revisões 02, 15 e 18 (mediana abaixo de 3.500 caracteres). Próximo: SBCM 2023, fase 0 concluída; lotes 01 e 02 publicados, mais piloto_miniaula_59 (mao-2199, WATSON). Próximo id mao-2200; seguir a Retomada atual acima, que distingue os rascunhos dos lotes 03/04 da publicação efetiva. Lotes locais em `lotes/sbcm-2023/`.
 7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **SBCM 2022 fechada em 22/10/2026** (ver 6b; antes: lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
@@ -585,7 +605,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 56 | Cápsula anterior do cotovelo: inervação | anatomia | cap. 24, página a localizar | ombro-cotovelo / Anatomia do cotovelo | 20 |  | a fazer |
 | 57 | SEYMOUR: fise exposta e risco infeccioso | conduta | cap. 41, p. 1602 (pista) | mao / Fraturas dos metacarpos e falanges | 13 |  | a fazer |
 | 58 | Artrodese do mínimo: posições das três articulações | número | cap. 11, p. 414 (pista) | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
-| 59 | WATSON: momento do estalido do escafoide | exame | cap. 13, p. 509 (pista) | mao / Instabilidade do carpo | 05 |  | a fazer |
+| 59 | WATSON: momento do estalido do escafoide | exame | cap. 13, p. 508 a 510 (Fig. 13.22) | mao / Instabilidade do carpo | piloto_miniaula_59 | mao-2199 | publicada (piloto do modelo de miniaula de 22/10/2026) |
 | 60 | MONTEGGIA: restauração do alinhamento ulnar | conduta | cap. 20, p. 938 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
 | 61 | NAKAMURA: sutura transóssea na lesão foveal | técnica | cap. 17, p. 788 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 08 |  | a fazer |
 | 62 | ESSEX-LOPRESTI: preservar ou substituir cabeça radial | conduta | cap. 21, p. 968 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
