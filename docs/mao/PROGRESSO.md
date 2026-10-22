@@ -110,7 +110,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    maior do Green em volta da resposta antes de escrever. Medianas antes: SBCM 2024 conceito 1.684 e alternativa 143;
    SBCM 2022 1.534 e 126. Ordem: (1) refazer a SBCM 2022 publicada com `lotes/sbcm-2022/revisao_NN.py` (atalho
    `_comentario.py`, mesmo enunciado e gabarito); (2) lotes novos da SBCM 2022 já no padrão; (3) refazer a SBCM 2024.
-   Feito: revisao_01 a 07 (mao-2106 a 2138). Próximo: revisao_08 (mao-2139 a 2143).
+   Feito: revisao_01 a 08 (mao-2106 a 2143; na 2143 a alternativa B virou extensor ulnar do carpo, porque o Green cita OMER com o FDS). Próximo: revisao_09 (mao-2144 a 2150).
 7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 12** (lotes 01 a 11 publicados: mao-2106 a mao-2150; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
