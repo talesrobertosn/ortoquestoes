@@ -35,3 +35,5 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | mao-1971 | Canal de Guyon, zona III: déficit sensitivo puro (Simulados, padrão SIMÃO 2023) | posts/2026-10-21-leilao-guyon (stories) |
 | quadril-0022 | Quadril em ressalto interno: iliopsoas sobre a eminência iliopectínea (TARO 2016) | posts/2026-10-22-busca-quadril (feed) |
 | quadril-0019 | Ruptura do glúteo médio: mulheres acima de 50 anos (TARO 2016) | posts/2026-10-22-busca-quadril (stories) |
+| trauma-0338 | Síndrome compartimental: nervo altera a partir de 30 minutos, Matsen (TARO 2014) | posts/2026-10-23-box-isquemia (feed) |
+| coluna-0049 | Choque medular termina em 24 a 48 horas, bulbocavernoso (TEOT 2022) | posts/2026-10-23-box-isquemia (stories) |
