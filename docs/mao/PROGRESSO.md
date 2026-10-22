@@ -434,7 +434,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13, p. 491; cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2126 | publicada |
 | 42 | CAMITZ: melhor indicação | indicação | cap. 31 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
 | 43 | NALEBUFF: polegar reumatoide da radiografia | classificação, figura | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
-| 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15, p. 606 | mao / Fratura do rádio distal | 06 |  | pendente: depende da radiografia |
+| 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15, p. 604 | mao / Fratura do rádio distal | 06 |  | pendente: depende da radiografia |
 | 45 | Ligamentos do punho da figura | anatomia, figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura com letras |
 | 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 04 | mao-2119 | publicada |
 | 47 | Contratura em extensão da IFP: o que liberar | técnica | cap. 10, p. 403 | mao / Deformidades dos dedos | 04 | mao-2120 | publicada |
