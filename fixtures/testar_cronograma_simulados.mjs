@@ -1,4 +1,4 @@
-// Cronograma: de 2 a 10 OrtoQuestões Simulados por dia (no máximo ~40%), espalhados pela sessão.
+// Cronograma: OrtoQuestões Simulados em torno de 1 a cada 5 oficiais por dia (flexível, nunca mais), espalhados pela sessão.
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
@@ -36,10 +36,11 @@ try {
     }
   }
   assert.equal(primeiraNoComeco, comSim, 'algum simulado não caiu na primeira faixa')
-  // A faixa do dia (Tales, 21/10/2026): de 2 a 10, nunca mais de ~40%.
-  assert.deepEqual(m.faixaSimulados(10), { minimo: 2, maximo: 4 })
-  assert.deepEqual(m.faixaSimulados(25), { minimo: 2, maximo: 10 })
-  assert.deepEqual(m.faixaSimulados(80), { minimo: 2, maximo: 10 })
+  // A faixa do dia (Tales, 22/10/2026): em torno de 1 a cada 5 oficiais, podendo vir menos.
+  assert.deepEqual(m.faixaSimulados(5), { minimo: 0, maximo: 1 })
+  assert.deepEqual(m.faixaSimulados(12), { minimo: 1, maximo: 2 })
+  assert.deepEqual(m.faixaSimulados(30), { minimo: 2, maximo: 5 })
+  assert.deepEqual(m.faixaSimulados(80), { minimo: 5, maximo: 10 })
   assert.deepEqual(m.repartirSimulados([20, 10], 6), [4, 2])
   assert.deepEqual(m.repartirSimulados([3, 1], 7), [3, 1])
   // Dia com mais de uma área: a faixa vale para o dia inteiro, não para cada área.
@@ -52,5 +53,5 @@ try {
     assert.ok(n >= minimo && n <= maximo, `dia com 3 áreas: ${n} simulados fora de ${minimo}..${maximo}`)
     assert.equal(m.idsDoDiaPlano(indice, itens, {}, false).filter((id) => sim.has(id)).length, 0)
   }
-  console.log(`Cronograma com simulados: ${casos} sessões, de 2 a 10 por dia e simulados espalhados.`)
+  console.log(`Cronograma com simulados: ${casos} sessões, em torno de 1 a cada 5 oficiais e simulados espalhados.`)
 } finally { await rm(pasta, { recursive: true, force: true }) }

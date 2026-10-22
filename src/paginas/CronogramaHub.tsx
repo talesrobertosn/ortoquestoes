@@ -248,7 +248,7 @@ export function CartaoSimulados({ plano, feitas, total, acerto, aoTrocar }: { pl
       <div className="pe-simulados__acoes">
         {/* Colocar ou tirar quando quiser, sem recomeçar o cronograma (pedido do Tales, 21/10/2026). */}
         {incluidos
-          ? <><p className="pe-simulados__ok"><Icone nome="certo" tamanho={15} /> No seu cronograma: de 2 a 10 por dia.</p>
+          ? <><p className="pe-simulados__ok"><Icone nome="certo" tamanho={15} /> No seu cronograma: cerca de 1 a cada 5 questões oficiais.</p>
             <button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => void trocar(false)}>{salvando ? 'Salvando…' : 'Tirar do cronograma'}</button></>
           : <button type="button" className="botao botao--principal" disabled={salvando} onClick={() => void trocar(true)}>{salvando ? 'Salvando…' : 'Incluir no cronograma'}</button>}
         {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
