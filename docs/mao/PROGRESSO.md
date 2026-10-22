@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 78 | 12 | mao-2106 a mao-2183 | A 20, B 20, C 19, D 19 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 82 | 12 | mao-2106 a mao-2187 | A 21, B 21, C 20, D 20 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -418,7 +418,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 p. 1516 e 1518 | mao / Outras malformações congênitas | 13 | mao-2159 | publicada |
 | 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 p. 1762 e 1764 | mao / Microcirurgia e retalhos livres | 15 | mao-2170 | publicada (sem a figura: descreve o desenho do paraescapular) |
 | 13 | Osteocondroma na mão: localização típica | fato | cap. 59, p. 2219 | mao / Tumores da mão | 18 | mao-2183 | publicada |
-| 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 14 | MAFFUCCI: risco aumentado | fato | cap. 59, p. 2219 | mao / Tumores da mão | 19 | mao-2184 | publicada |
 | 15 | Pioderma gangrenoso: tratamento | conduta | cap. 3, p. 86 | mao / Infecções da mão | 01 | mao-2107 | publicada |
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 02 | mao-2111 | publicada |
 | 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8, p. 338 | mao / Lesões ligamentares dos dedos | 03 | mao-2116 | publicada (caso da foto descrito) |
@@ -436,7 +436,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 p. 1747 | mao / Microcirurgia e retalhos livres | 16 | mao-2171 | publicada |
 | 30 | SDRC tipo 2: em que situação | fato | cap. 53, p. 2005 e 2007 | mao / Síndrome da dor complexa regional | 17 | mao-2178 | publicada |
 | 31 | Tendinite calcária na mão e punho: tendão mais comum | fato | cap. 56, p. 2115 e 2116 | mao / Dedo em gatilho e outras tenossinovites | 17 | mao-2180 | publicada |
-| 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59, p. 2209 | mao / Tumores da mão | 19 | mao-2185 | publicada |
 | 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2134 | publicada |
 | 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | pendente: figura com letras |
 | 35 | Melanoma que surge junto a um nevo | fato | cap. 58, p. 2171 | mao / Tumores da mão | 03 | mao-2118 | publicada |
@@ -482,7 +482,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 p. 1464 | mao / Outras malformações congênitas | 13 | mao-2157 | publicada (pergunta pela articulação MCF; o Green deixa a cabeça em flexão) |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
 | 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
-| 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38 e 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38, p. 1523 e 1524 | mao / Tumores da mão | 19 | mao-2186 | publicada |
 | 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
 | 81 | Macrodactilia: forma mais comum | fato | cap. 36 p. 1438 | mao / Outras malformações congênitas | 12 | mao-2155 | publicada |
@@ -500,7 +500,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 p. 1767 | mao / Microcirurgia e retalhos livres | 16 | mao-2172 | publicada |
 | 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 p. 1859 a 1862 | mao / Retalhos e cobertura cutânea | 16 | mao-2175 | publicada (GILLIES só citado como fora de uso; pergunta a osteoplástica clássica) |
 | 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 (padrão de deformidade não descrito) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
-| 96 | ENNEKING: estágio IIA | classificação | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 96 | ENNEKING: estágio IIA | classificação | cap. 59, p. 2186 | mao / Tumores da mão | 19 | mao-2187 | publicada |
 | 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 p. 1756 | mao / Microcirurgia e retalhos livres | 16 | mao-2173 | publicada (pergunta o ramo do retalho lateral do braço: 'mais calibroso' não está no Green) |
 | 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
 | 99 | SECRETAN: causa | fato | cap. 54, p. 2036 e 2037 | mao / Outros temas da mão | 17 | mao-2179 | publicada |
