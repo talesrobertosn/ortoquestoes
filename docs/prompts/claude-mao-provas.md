@@ -4,6 +4,8 @@ Para o Tales colar no Claude Code (outra conta ou outro computador), aberto na p
 Trocar só a linha **PROVA DESTA VEZ**. Se a sessão acabar no meio, abrir outra e colar o mesmo comando:
 ele continua de onde parou pelo [PROGRESSO.md](../mao/PROGRESSO.md).
 
+Para o **ChatGPT Codex** neste mesmo computador, use [codex-mao-provas.md](codex-mao-provas.md) (22/10/2026).
+
 ---
 
 ## Segunda conta do Claude Code no mesmo PC (20/10/2026): use este
