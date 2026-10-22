@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 50 | 10 | mao-2106 a mao-2155 | A 12, B 14, C 12, D 12 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 55 | 10 | mao-2106 a mao-2160 | A 14, B 14, C 14, D 13 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -113,8 +113,8 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Etapa (1) concluída em 22/10/2026:** revisao_01 a 09 refazem mao-2106 a 2150 (medianas por questão de 3.500 a 4.200
    caracteres). Na 2143 a alternativa B virou extensor ulnar do carpo, porque o Green cita OMER com o FDS (p. 1223).
    PR #456 leva as revisões 01 a 07; as 08 e 09 vão no próximo push. Etapa (2) em curso: lote 12 publicado no padrão
-   (mao-2151 a 2155, PR #456 já juntado antes dele). Próximo: lote 13.
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 13** (53, 75, 91, 11, 26; lotes 01 a 12 publicados: mao-2106 a mao-2155; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+   (mao-2151 a 2155, PR #456 já juntado antes dele). Lote 13 publicado (mao-2156 a 2160). Próximo: lote 14.
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 14** (68, 27, 69, 87, 92; lotes 01 a 13 publicados: mao-2106 a mao-2160; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -411,7 +411,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 8 | Pronação do antebraço na paralisia cerebral: evolução | fato | cap. 32, p. 1248 e 1250 | mao / Transferências tendinosas e paralisias | 10 | mao-2144 | publicada (gabarito pelo Green: espástica; o oficial B era flácida) |
 | 9 | Plexo: romboide e serrátil paralisados indicam | fato | cap. 34, p. 1308 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2146 | publicada |
 | 10 | KELIKIAN/KELLAM: braquidactilia na ELLIS-VAN CREVELD | classificação | cap. 36 p. 1405 | mao / Outras malformações congênitas | 12 | mao-2152 | publicada |
-| 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 p. 1516 e 1518 | mao / Outras malformações congênitas | 13 | mao-2159 | publicada |
 | 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
 | 13 | Osteocondroma na mão: localização típica | fato | cap. 59 | mao / Tumores da mão | 18 |  | a fazer |
 | 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
@@ -426,7 +426,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28, p. 1103 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2135 | publicada |
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33, p. 1268 (Tabela 33.3) | mao / Transferências tendinosas e paralisias | 10 | mao-2145 | publicada |
 | 25 | Polidactilia central: dedo mais duplicado | fato | cap. 36 p. 1387 | mao / Sindactilia e polidactilia | 12 | mao-2153 | publicada |
-| 26 | Mão torta ulnar: anomalia associada | fato | cap. 38 (3 alternativas no original) | mao / Deficiências longitudinais e mão torta | 13 |  | a fazer |
+| 26 | Mão torta ulnar: anomalia associada | fato | cap. 38 p. 1500 | mao / Deficiências longitudinais e mão torta | 13 | mao-2160 | publicada (diverge do oficial HOLT-ORAM: Green dá deficiência fibular) |
 | 27 | WATERS: tipo pela tomografia do ombro | classificação, figura | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
 | 28 | Enxerto de pele: o que restaura a sensibilidade | fato | cap. 44 | mao / Cicatrização e enxertos de pele | 15 |  | a fazer |
 | 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
@@ -453,7 +453,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34, p. 1311 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2149 | publicada |
 | 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
-| 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2156 | publicada |
 | 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
 | 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2109 | publicada (ângulo: definição do Green, sem o 6 a 12 semanas) |
 | 56 | Flexor superficial dos dedos: anatomia | afirmativas | cap. 6, p. 214 | mao / Lesões dos tendões flexores | 02 | mao-2113 | publicada |
@@ -475,7 +475,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57 | mao / Queimaduras | 18 |  | a fazer |
 | 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1, p. 5 e 8 | mao / Anestesia em cirurgia da mão | 01 | mao-2106 | publicada |
 | 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16, p. 736 | mao / Doença de Kienböck | 07 |  | pendente: sem fonte (artrodese junto do encurtamento do capitato não está no Green) |
-| 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 p. 1464 | mao / Outras malformações congênitas | 13 | mao-2157 | publicada (pergunta pela articulação MCF; o Green deixa a cabeça em flexão) |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
 | 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
 | 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38 e 59 | mao / Tumores da mão | 19 |  | a fazer |
@@ -491,7 +491,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 88 | Síndrome compartimental neonatal: achados | fato | cap. 51 | mao / Outros temas da mão | 17 |  | a fazer |
 | 89 | Toxina botulínica: mecanismo | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 10 |  | pendente: sem fonte (mecanismo da toxina botulínica não está no Green) |
 | 90 | Embriologia: blastemas e tensão de oxigênio | fato | cap. 35 p. 1368 | mao / Outras malformações congênitas | 12 | mao-2151 | publicada (distrator refeito: B e D iguais na original) |
-| 91 | BLAUTH: tipos com indicação de policização | classificação | cap. 37 (Blauth repete a 53: outro ângulo) | mao / Outras malformações congênitas | 13 |  | a fazer |
+| 91 | BLAUTH: tipos com indicação de policização | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2158 | publicada |
 | 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 | mao / Amputações e reimplantes | 14 |  | a fazer |
 | 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
 | 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 | mao / Retalhos e cobertura cutânea | 16 |  | a fazer |
