@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 40 | 10 | mao-2106 a mao-2145 | A 10, B 10, C 10, D 10 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 45 | 10 | mao-2106 a mao-2150 | A 11, B 12, C 11, D 11 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 11** (lotes 01 a 10 publicados: mao-2106 a mao-2145; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 12** (lotes 01 a 11 publicados: mao-2106 a mao-2150; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -399,7 +399,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 6 | Desfiladeiro torácico: valor do potencial evocado somatossensitivo | fato | cap. 29, p. 1137 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2139 | publicada |
 | 7 | O que mimetiza a paralisia ulnar | fato | cap. 28, p. 1105 e 1121 | mao / Lesões de nervos periféricos | 09 | mao-2138 | publicada (ângulo: o Green não cita CMT; C8 também seria defensável) |
 | 8 | Pronação do antebraço na paralisia cerebral: evolução | fato | cap. 32, p. 1248 e 1250 | mao / Transferências tendinosas e paralisias | 10 | mao-2144 | publicada (gabarito pelo Green: espástica; o oficial B era flácida) |
-| 9 | Plexo: romboide e serrátil paralisados indicam | fato | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 9 | Plexo: romboide e serrátil paralisados indicam | fato | cap. 34, p. 1308 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2146 | publicada |
 | 10 | KELIKIAN/KELLAM: braquidactilia na ELLIS-VAN CREVELD | classificação | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
 | 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 | mao / Outras malformações congênitas | 13 |  | a fazer |
 | 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
@@ -429,7 +429,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2136 | publicada (alternativa B ajustada: duas eram certas pelo Green) |
 | 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6, p. 245 | mao / Lesões dos tendões flexores | 02 | mao-2112 | publicada |
 | 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10, p. 399 | mao / Deformidades dos dedos | 04 |  | pendente: sem fonte (frase dos 5 a 7 dias cortada na tradução) |
-| 39 | LEECHAVENGVONGS: ramo doador e alvo | técnica | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 39 | LEECHAVENGVONGS: ramo doador e alvo | técnica | cap. 34, p. 1329 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2147 | publicada |
 | 40 | Paralisia alta do mediano: objetivo das transferências | fato | cap. 31, p. 1206 | mao / Transferências tendinosas e paralisias | 09 | mao-2141 | publicada |
 | 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13, p. 491; cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2126 | publicada |
 | 42 | CAMITZ: melhor indicação | indicação | cap. 31, p. 1199 | mao / Transferências tendinosas e paralisias | 10 | mao-2142 | publicada |
@@ -439,8 +439,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 04 | mao-2119 | publicada |
 | 47 | Contratura em extensão da IFP: o que liberar | técnica | cap. 10, p. 403 | mao / Deformidades dos dedos | 04 | mao-2120 | publicada |
 | 48 | TSUGE, Volkmann moderada: melhor tratamento | conduta | cap. 51 | mao / Outros temas da mão | 17 |  | a fazer |
-| 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
-| 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34, p. 1341 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2148 | publicada |
+| 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34, p. 1311 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2149 | publicada |
 | 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
 | 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 | mao / Outras malformações congênitas | 13 |  | a fazer |
@@ -456,7 +456,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24 (arquivo 23) | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
 | 64 | Síndrome do interósseo posterior: intervalo do acesso anterior | técnica | cap. 28, p. 1117 e 1118 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2137 | publicada |
 | 65 | Portal 6-U: uso principal | técnica | cap. 17, p. 762, 763 e 765 | mao / Artrose do punho e artroscopia | 08 | mao-2132 | publicada (Green: 6-U é portal de saída; o gabarito falava em entrada) |
-| 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
+| 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34, p. 1313 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2150 | publicada (distratores trocados por relações do Green) |
 | 67 | Deficiência transversal: exemplo | classificação | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
 | 68 | MADELUNG: afirmativas | afirmativas | cap. 38 | mao / Deficiências longitudinais e mão torta | 14 |  | a fazer |
 | 69 | MALLET: grau pelo exame do ombro | classificação | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
