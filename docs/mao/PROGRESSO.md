@@ -120,7 +120,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Próximo (etapa 3 do 6b): refazer os comentários da SBCM 2024** (mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669)
    no padrão profundo, como `lotes/sbcm-2022/revisao_01.py` a `revisao_09.py` (atalho `_comentario.py` na pasta
    `lotes/sbcm-2024/`, mesmo enunciado e gabarito). Depois SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021 e ENARE.
-   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 14 feitas (mao-2023 a 2092). Próximo: revisão 15 (mao-2093 a 2097).
+   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 15 feitas (mao-2023 a 2097). Próximo: revisão 16 (mao-2098 a 2102).
 7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **SBCM 2022 fechada em 22/10/2026** (ver 6b; antes: lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
