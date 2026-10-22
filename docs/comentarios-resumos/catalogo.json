@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1530,
+  "pendente": 1503,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 51,
-  "pendente-inspecao-imagem": 173,
-  "revisada": 516
+  "pendente-inspecao-imagem": 170,
+  "revisada": 546
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -36,9 +36,9 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 98,
-    "pendente-inspecao-imagem": 10,
-    "revisada": 24
+    "pendente": 71,
+    "pendente-inspecao-imagem": 7,
+    "revisada": 54
    }
   },
   "rockwood10-34-fratura-clavicula": {
@@ -47,8 +47,8 @@
    "estados": {
     "pendente": 15,
     "pendente-fonte": 5,
-    "pendente-inspecao-imagem": 6,
-    "revisada": 47
+    "pendente-inspecao-imagem": 5,
+    "revisada": 48
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -62936,8 +62936,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -62952,7 +62952,31 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "f97dc8754f8b258728de96db81780076a7468e2f78f0f888b3ce4e71fb7a46ad"
+   "questaoSha256": "f97dc8754f8b258728de96db81780076a7468e2f78f0f888b3ce4e71fb7a46ad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-d95813eb"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "8b5b315298c3310e346e58de51c361b3354e60c06ce58a724800310fff13577c"
+     }
+    ],
+    "questaoSha256": "f97dc8754f8b258728de96db81780076a7468e2f78f0f888b3ce4e71fb7a46ad",
+    "comentarioSha256": "1b544c770bc849aaf0804db0f56134bfb0b64112907b1d054225117cd082eab9"
+   }
   },
   "trauma-1311": {
    "tema": "trauma",
@@ -62961,7 +62985,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62976,7 +63000,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "b58e7689f46e61ea039b61eaa5ed3b0ffea7e3860081d700fdb7ff56a68469d2"
+   "questaoSha256": "b58e7689f46e61ea039b61eaa5ed3b0ffea7e3860081d700fdb7ff56a68469d2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-d95813eb",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "99fdc128de9733a8df64e0948a33d9534cc539c34cfaca99203255d01c65cf06"
+     }
+    ],
+    "questaoSha256": "b58e7689f46e61ea039b61eaa5ed3b0ffea7e3860081d700fdb7ff56a68469d2",
+    "comentarioSha256": "ee99522961ec84a0882c4e37e9460af776da1180ba3eb2ff90847e10518abcb9"
+   }
   },
   "trauma-1312": {
    "tema": "trauma",
@@ -62985,8 +63034,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -63000,7 +63049,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "d9ef2a02733a369cf7410bce1c7fddb14dfae3bf0be6bd62bced7010003ea60e"
+   "questaoSha256": "d9ef2a02733a369cf7410bce1c7fddb14dfae3bf0be6bd62bced7010003ea60e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-0ef4b3c3",
+       "fraturas-da-glenoide-b25a3b02",
+       "fraturas-da-glenoide-7240e61a"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "7099587d4ec1320c1c1b94d7e9c659a37b9a3fac0c7478c56e49fdbbf36bb9b1"
+     }
+    ],
+    "questaoSha256": "d9ef2a02733a369cf7410bce1c7fddb14dfae3bf0be6bd62bced7010003ea60e",
+    "comentarioSha256": "2aacbb4b2777374abe3c84525ca89530483872a4d8a80258980ba06eb05e3fe3"
+   }
   },
   "trauma-1313": {
    "tema": "trauma",
@@ -63009,7 +63083,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63024,7 +63098,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "70dfab0146737a5165a456fddc1670299454f87b2440312dc3dca4a9ee9923c8"
+   "questaoSha256": "70dfab0146737a5165a456fddc1670299454f87b2440312dc3dca4a9ee9923c8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-822faf4b",
+       "fraturas-da-glenoide-ba2404e9",
+       "fraturas-da-glenoide-4ad53ade",
+       "fraturas-da-glenoide-7240e61a"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "d8b11820a86385b56fe067f7b1515dc66bc889a1d22b24d50ff8794afb2ef670"
+     }
+    ],
+    "questaoSha256": "70dfab0146737a5165a456fddc1670299454f87b2440312dc3dca4a9ee9923c8",
+    "comentarioSha256": "d458f53460e868104ea820f6fc1d1417b87a1f9daceb9409b03e4da4e75a9f98"
+   }
   },
   "trauma-1314": {
    "tema": "trauma",
@@ -63033,7 +63133,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63048,7 +63148,31 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "70297b9b35ca42961c0da3b2436896eeadea4bcf8c80c255390d25191d952c31"
+   "questaoSha256": "70297b9b35ca42961c0da3b2436896eeadea4bcf8c80c255390d25191d952c31",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-65e0de7d",
+       "fraturas-da-glenoide-41618adb"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "e0ceca5f49aea9fb53d031b25fb2874dddf7a872194f3a2f1ac931ed2e49214a"
+     }
+    ],
+    "questaoSha256": "70297b9b35ca42961c0da3b2436896eeadea4bcf8c80c255390d25191d952c31",
+    "comentarioSha256": "26878a21beff9f89615b52705bc338765a71daa75c158b143ebba43e5c7df107"
+   }
   },
   "trauma-1315": {
    "tema": "trauma",
@@ -63057,7 +63181,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63072,7 +63196,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "cc7f984577cb093f5225b8aa7036e21815f0d08228b4c2325cc39760ba34e0d9"
+   "questaoSha256": "cc7f984577cb093f5225b8aa7036e21815f0d08228b4c2325cc39760ba34e0d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-65e0de7d",
+       "fraturas-da-glenoide-89479f30",
+       "fraturas-da-glenoide-797e1a7b",
+       "fraturas-da-glenoide-489d7853"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "49c63cbe3e3d8fd48c209029095e79f9b8cbae8c2fb80c1c28cb5442f83a0a42"
+     }
+    ],
+    "questaoSha256": "cc7f984577cb093f5225b8aa7036e21815f0d08228b4c2325cc39760ba34e0d9",
+    "comentarioSha256": "d05968fbf55a3e7faf086910004bb574eade387d5433b91ce19bce4ea78d679f"
+   }
   },
   "trauma-1316": {
    "tema": "trauma",
@@ -63081,7 +63231,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63096,7 +63246,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "80de951006bd4bf38b7f9adc4173aece5c74e508491bb1ee09441ace2e9f23f8"
+   "questaoSha256": "80de951006bd4bf38b7f9adc4173aece5c74e508491bb1ee09441ace2e9f23f8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-d94ae394",
+       "fraturas-da-glenoide-797e1a7b",
+       "fraturas-da-glenoide-89479f30",
+       "fraturas-da-glenoide-65e0de7d"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "eea3c09570115b0dca74c2896a21d4febb45d056fe62e5602b0908db3bd3c088"
+     }
+    ],
+    "questaoSha256": "80de951006bd4bf38b7f9adc4173aece5c74e508491bb1ee09441ace2e9f23f8",
+    "comentarioSha256": "4969fe70a26284ec95883e776a8aac5dd5bb6261b20eb24e99e685f8fa046086"
+   }
   },
   "trauma-1317": {
    "tema": "trauma",
@@ -63105,7 +63281,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63120,7 +63296,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "321e62f25eba475f80d139919cbd6ebb05e6349e50ffe1e004bece7dfeb76f30"
+   "questaoSha256": "321e62f25eba475f80d139919cbd6ebb05e6349e50ffe1e004bece7dfeb76f30",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-d94ae394",
+       "fraturas-da-glenoide-e47df132",
+       "fraturas-da-glenoide-65e0de7d"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "ebe16c9aa74628d14c51df09ce085e82764ff3ff752b86d1df6b1892786211d1"
+     }
+    ],
+    "questaoSha256": "321e62f25eba475f80d139919cbd6ebb05e6349e50ffe1e004bece7dfeb76f30",
+    "comentarioSha256": "afb320cd6268f20826d734bce3979f59059bcdee02944411997acb0a14d0fe43"
+   }
   },
   "trauma-1318": {
    "tema": "trauma",
@@ -63129,7 +63330,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63144,7 +63345,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "18306f1575fec145eb7677ac637da22322e18371a46d1c49f804bff02bee98bf"
+   "questaoSha256": "18306f1575fec145eb7677ac637da22322e18371a46d1c49f804bff02bee98bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-489d7853",
+       "fraturas-da-glenoide-89479f30",
+       "fraturas-da-glenoide-65e0de7d"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "189a9758208a52f55f61c4576995bb7a5e9a967620a35c9f7cb663189896b4bf"
+     }
+    ],
+    "questaoSha256": "18306f1575fec145eb7677ac637da22322e18371a46d1c49f804bff02bee98bf",
+    "comentarioSha256": "5954136cecdd3feba443348750fe6d577075a5247929a4a23729178f220c9051"
+   }
   },
   "trauma-1319": {
    "tema": "trauma",
@@ -63153,7 +63379,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63168,7 +63394,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "ddb8f89b06d6b6d762d4e64de501efc0144656178421e7378c79c213805afa9d"
+   "questaoSha256": "ddb8f89b06d6b6d762d4e64de501efc0144656178421e7378c79c213805afa9d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula",
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "46ce584f9b80c340c34eb8d6516aaed7d5620b5d392ce052d3967d5fdd27926f"
+     }
+    ],
+    "questaoSha256": "ddb8f89b06d6b6d762d4e64de501efc0144656178421e7378c79c213805afa9d",
+    "comentarioSha256": "4bbe74627a785a3bfd1395d076b2c3e96b639bc3dbe279c0264471a39e1f5dce"
+   }
   },
   "trauma-1320": {
    "tema": "trauma",
@@ -63230,8 +63483,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -63245,7 +63498,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "bc681d551547bcad6cb05641c81f0731e31d80187dce2e1d9d3cb0855299c846"
+   "questaoSha256": "bc681d551547bcad6cb05641c81f0731e31d80187dce2e1d9d3cb0855299c846",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "75a68359280bc9c482e18458c9f9f9409d16a6b2fd1d543d8ac40c7fe189ec22"
+     }
+    ],
+    "questaoSha256": "bc681d551547bcad6cb05641c81f0731e31d80187dce2e1d9d3cb0855299c846",
+    "comentarioSha256": "6d5e66952b78d3305fa10199ed4956b84e35dd263b4490b32a52dc7fc43317b3"
+   }
   },
   "trauma-1322": {
    "tema": "trauma",
@@ -63360,7 +63639,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63375,7 +63654,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "4dc96a70ed18e07fdcdc6e9a04c72efd8dc498ec7e13cc767bfd67a4f113b3bd"
+   "questaoSha256": "4dc96a70ed18e07fdcdc6e9a04c72efd8dc498ec7e13cc767bfd67a4f113b3bd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd",
+       "vias-de-acesso-e-tecnica-de-fixacao-28a550b5",
+       "vias-de-acesso-e-tecnica-de-fixacao-2baae6b4"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "75bfd7334dd2b7d2557a387ab6e3799ff5b365929e996f85256c2f053a70c653"
+     }
+    ],
+    "questaoSha256": "4dc96a70ed18e07fdcdc6e9a04c72efd8dc498ec7e13cc767bfd67a4f113b3bd",
+    "comentarioSha256": "7399746f6fe5770d1c062aef72d16f067fa31337429ac94bb9e45d0fa60dfda4"
+   }
   },
   "trauma-1325": {
    "tema": "trauma",
@@ -63384,7 +63689,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63399,7 +63704,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "71e626933c0bf998488cb058f7b375f3db0e27fb4c2007070d77e3f250e9783b"
+   "questaoSha256": "71e626933c0bf998488cb058f7b375f3db0e27fb4c2007070d77e3f250e9783b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-e60abf80",
+       "vias-de-acesso-e-tecnica-de-fixacao-2baae6b4",
+       "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "740c6b8abd516fef3bee27d6d659d9b1e194b5e31bde6f7c3e270555f4521829"
+     }
+    ],
+    "questaoSha256": "71e626933c0bf998488cb058f7b375f3db0e27fb4c2007070d77e3f250e9783b",
+    "comentarioSha256": "099c70aa6588ea86c3a7009d25eed2068e267b5e88c770ceadff61c68a4881e4"
+   }
   },
   "trauma-1326": {
    "tema": "trauma",
@@ -63408,7 +63738,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63423,7 +63753,31 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "ab020337a91309304d139e0f12a6178e541faecd8e05e0591680da2162395a2a"
+   "questaoSha256": "ab020337a91309304d139e0f12a6178e541faecd8e05e0591680da2162395a2a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Processos: coracoide, acrômio e espinha lateral"
+      ],
+      "blocos": [
+       "processos-coracoide-acromio-e-espinha-lateral-77462306",
+       "processos-coracoide-acromio-e-espinha-lateral-b51c77ae"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "fe0ead5946e5a606e1317fe8cc622c1cf06de3b341e2840c034c203c198448b3"
+     }
+    ],
+    "questaoSha256": "ab020337a91309304d139e0f12a6178e541faecd8e05e0591680da2162395a2a",
+    "comentarioSha256": "fae5a9cbc5f58d5bb38e2e6f1eef8d69e7d692d575949fc042ef990dbb2a8901"
+   }
   },
   "trauma-1327": {
    "tema": "trauma",
@@ -63433,7 +63787,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63448,7 +63802,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "1bd6c9b69d7e3ff7a124a4f097db76dbee83e508d43922a2e084ae8d382b1e55"
+   "questaoSha256": "1bd6c9b69d7e3ff7a124a4f097db76dbee83e508d43922a2e084ae8d382b1e55",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Processos: coracoide, acrômio e espinha lateral"
+      ],
+      "blocos": [
+       "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+       "processos-coracoide-acromio-e-espinha-lateral-b51c77ae",
+       "processos-coracoide-acromio-e-espinha-lateral-b13a2e2f"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "21070ad0c232203fad9d0a1f742dbeb907337ad084023832790cb82fd1aca124"
+     }
+    ],
+    "questaoSha256": "1bd6c9b69d7e3ff7a124a4f097db76dbee83e508d43922a2e084ae8d382b1e55",
+    "comentarioSha256": "c153662860500bc8561aa02ea772248d5d71d5162a94b5c102273ed3883952df"
+   }
   },
   "trauma-1328": {
    "tema": "trauma",
@@ -63457,7 +63836,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63472,7 +63851,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "cab07cffd01b7f866cc850121de1e02f76ebf262e1f7d4972e41c8e1a7a75b74"
+   "questaoSha256": "cab07cffd01b7f866cc850121de1e02f76ebf262e1f7d4972e41c8e1a7a75b74",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Processos: coracoide, acrômio e espinha lateral",
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "processos-coracoide-acromio-e-espinha-lateral-2909bbf9",
+       "processos-coracoide-acromio-e-espinha-lateral-98f6fed6",
+       "processos-coracoide-acromio-e-espinha-lateral-c9c0e73a",
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "aec9dd4ddaa98b9739af9dca96d56ffee5596a5bacdd96b5a34700df12147c3f"
+     }
+    ],
+    "questaoSha256": "cab07cffd01b7f866cc850121de1e02f76ebf262e1f7d4972e41c8e1a7a75b74",
+    "comentarioSha256": "9eaad518ba2d0ed8c75ad13083428b260d9d3e2454a1cabb7d9821a25c9bfce8"
+   }
   },
   "trauma-1329": {
    "tema": "trauma",
@@ -63481,7 +63887,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63496,7 +63902,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "d81a398f23cc06926e8e504dec3e26dccf646ac0f42262eaf339920dc64e34c5"
+   "questaoSha256": "d81a398f23cc06926e8e504dec3e26dccf646ac0f42262eaf339920dc64e34c5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Processos: coracoide, acrômio e espinha lateral",
+       "Complicações"
+      ],
+      "blocos": [
+       "processos-coracoide-acromio-e-espinha-lateral-b2e194f0",
+       "processos-coracoide-acromio-e-espinha-lateral-5dc2cd32",
+       "complicacoes-19395d4e",
+       "complicacoes-fafb04b3"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "5b7bfa501b6bd35338795720a0069d98190a4b48e0bc7d34730c084a52b8720a"
+     }
+    ],
+    "questaoSha256": "d81a398f23cc06926e8e504dec3e26dccf646ac0f42262eaf339920dc64e34c5",
+    "comentarioSha256": "7ae5eb2ba72899a65b7bf34232a792f8a060f395d7968a6a998ca70dcc293c3d"
+   }
   },
   "trauma-1330": {
    "tema": "trauma",
@@ -63505,7 +63938,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63520,7 +63953,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "cb41f5cff23a46be4c48abbbd5b6677e568288de1d315f4eb18a54cc59302c3b"
+   "questaoSha256": "cb41f5cff23a46be4c48abbbd5b6677e568288de1d315f4eb18a54cc59302c3b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Processos: coracoide, acrômio e espinha lateral",
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "processos-coracoide-acromio-e-espinha-lateral-b13a2e2f",
+       "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "4bf4128ead7bc3f3b20b452b6777c919dfedbbe2d25e4b98eab3bd15d8adeff6"
+     }
+    ],
+    "questaoSha256": "cb41f5cff23a46be4c48abbbd5b6677e568288de1d315f4eb18a54cc59302c3b",
+    "comentarioSha256": "da04d88ba40f1b2e37409d5468c7888cea504471b84f189729e824e1683ae24d"
+   }
   },
   "trauma-1331": {
    "tema": "trauma",
@@ -63529,7 +63988,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63544,7 +64003,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "318dad58d5dc56170c13a24b3711328e8386dce348df84fd2567d2c83d6acf22"
+   "questaoSha256": "318dad58d5dc56170c13a24b3711328e8386dce348df84fd2567d2c83d6acf22",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "f7a4a2c1c8b925e14a272dbbda070e898f2d77dcb9f6c0d301b22d601713d5a9"
+     }
+    ],
+    "questaoSha256": "318dad58d5dc56170c13a24b3711328e8386dce348df84fd2567d2c83d6acf22",
+    "comentarioSha256": "2d34fab5a2e5d6c24cba74c04dfeb62787e5b3ebc1116cb4aab4aa0411d8a96c"
+   }
   },
   "trauma-1332": {
    "tema": "trauma",
@@ -63553,7 +64037,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63568,7 +64052,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "4d138901c95e77fed146694d40151923eec80f4f079d79ce5f7139a527a494b6"
+   "questaoSha256": "4d138901c95e77fed146694d40151923eec80f4f079d79ce5f7139a527a494b6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-6963932a",
+       "medir-o-desvio-e-indicar-a-cirurgia-816d9b6b",
+       "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "medir-o-desvio-e-indicar-a-cirurgia-c5529532"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "c3946e58ffd2e85ce4e0d208fd9dcc7256ff1184b390aeef85d275a1ecca6847"
+     }
+    ],
+    "questaoSha256": "4d138901c95e77fed146694d40151923eec80f4f079d79ce5f7139a527a494b6",
+    "comentarioSha256": "e6ebeb70da21b6b32f760556335e4b22c5bb5c08796c54eaa8dde5ef796927fe"
+   }
   },
   "trauma-1333": {
    "tema": "trauma",
@@ -63577,7 +64088,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63592,7 +64103,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "6edf7dac87c94df457c245a986c52b659948fc445ad9b61bfd511faa8de78b5c"
+   "questaoSha256": "6edf7dac87c94df457c245a986c52b659948fc445ad9b61bfd511faa8de78b5c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia",
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "fraturas-da-glenoide-d94ae394"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "540574f72d286f6fa0ce58084e67d7489844bdbbcb6f696a90733fb7bb7bbe96"
+     }
+    ],
+    "questaoSha256": "6edf7dac87c94df457c245a986c52b659948fc445ad9b61bfd511faa8de78b5c",
+    "comentarioSha256": "77077cbe7c32e88dc56e92abf95cb9d0dc1f79fc3411049e8e59cbf7d9988be5"
+   }
   },
   "trauma-1334": {
    "tema": "trauma",
@@ -63601,7 +64137,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63616,7 +64152,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "efca211905d411a1a5217cb39a1215936e2726fc23cbe480a8435e1e20626c68"
+   "questaoSha256": "efca211905d411a1a5217cb39a1215936e2726fc23cbe480a8435e1e20626c68",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-fab1b95f",
+       "medir-o-desvio-e-indicar-a-cirurgia-7bccb47b",
+       "medir-o-desvio-e-indicar-a-cirurgia-e96fe60c",
+       "medir-o-desvio-e-indicar-a-cirurgia-e5451bef",
+       "medir-o-desvio-e-indicar-a-cirurgia-5f8de20f",
+       "medir-o-desvio-e-indicar-a-cirurgia-c0c96953"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "08a457e38a927f49689678ef80edaadb45ca713be1931168c6719b6cc9408f9e"
+     }
+    ],
+    "questaoSha256": "efca211905d411a1a5217cb39a1215936e2726fc23cbe480a8435e1e20626c68",
+    "comentarioSha256": "2a3bad1c4d93c00f7e896cf7ee5a0c7af627b3e79e2f33395bc33303f6c3faac"
+   }
   },
   "trauma-1335": {
    "tema": "trauma",
@@ -63625,7 +64189,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63640,7 +64204,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "ef05e31dbb1aa944d9c10309fc123889f995de7404c2d837ab615c81ffb83287"
+   "questaoSha256": "ef05e31dbb1aa944d9c10309fc123889f995de7404c2d837ab615c81ffb83287",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia",
+       "Vias de acesso e técnica de fixação",
+       "Epidemiologia, mecanismo, lesões associadas e imagem"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-db7733a7",
+       "vias-de-acesso-e-tecnica-de-fixacao-086713d3",
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-9deaa695",
+       "vias-de-acesso-e-tecnica-de-fixacao-ac93bd03"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "bee0b08ec899b0ad12d3e8a159035a520fca25acc2c17bb7e9f44da0e01a82bd"
+     }
+    ],
+    "questaoSha256": "ef05e31dbb1aa944d9c10309fc123889f995de7404c2d837ab615c81ffb83287",
+    "comentarioSha256": "0c7d9eedf9f17ee39dee492d49510fb5123949e2a96416f426f86b67f19366da"
+   }
   },
   "trauma-1336": {
    "tema": "trauma",
@@ -63649,7 +64241,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63664,7 +64256,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "65f8d754a4ebb682df538e1775315bfd73532a5d580c342efae26e89cbf62c7f"
+   "questaoSha256": "65f8d754a4ebb682df538e1775315bfd73532a5d580c342efae26e89cbf62c7f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação",
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-b5f2e443",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+       "vias-de-acesso-e-tecnica-de-fixacao-e992297c",
+       "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b",
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "8fb80adcb62ab620471e27730dabc3c67cb26d97d6e5a5c288edf5c97911b71b"
+     }
+    ],
+    "questaoSha256": "65f8d754a4ebb682df538e1775315bfd73532a5d580c342efae26e89cbf62c7f",
+    "comentarioSha256": "44c25ebeff991f612e8c9800d97e3378065683103c2b41caec29cd9f1cba4ca3"
+   }
   },
   "trauma-1337": {
    "tema": "trauma",
@@ -63673,7 +64293,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63688,7 +64308,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "8c9fde75431f8cb6b9835771741e621becdfa870dda135fab93a8e2b34826c59"
+   "questaoSha256": "8c9fde75431f8cb6b9835771741e621becdfa870dda135fab93a8e2b34826c59",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-b44038d8",
+       "vias-de-acesso-e-tecnica-de-fixacao-374d6312",
+       "vias-de-acesso-e-tecnica-de-fixacao-47b228f0",
+       "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+       "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "9bf3fd9e9037554842e913c703e40e6428c77b0d2bbf8d969299c3b8f9d08831"
+     }
+    ],
+    "questaoSha256": "8c9fde75431f8cb6b9835771741e621becdfa870dda135fab93a8e2b34826c59",
+    "comentarioSha256": "a3f4f20c450be9fec1b53cf6860e4dd7b867cc289bbbfb46ad2ca5bb29b669c0"
+   }
   },
   "trauma-1338": {
    "tema": "trauma",
@@ -63762,7 +64409,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63777,7 +64424,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "6f339503def8fabbe1d71180c13546a5fa558320bc713527713600e33db957c7"
+   "questaoSha256": "6f339503def8fabbe1d71180c13546a5fa558320bc713527713600e33db957c7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação",
+       "Complicações"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-086713d3",
+       "complicacoes-ab0f12b1"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "1bef36268dead0928282657a4e5c31b704e75a2d33e68304ea885bb47885559f"
+     }
+    ],
+    "questaoSha256": "6f339503def8fabbe1d71180c13546a5fa558320bc713527713600e33db957c7",
+    "comentarioSha256": "862d4d32bf10f3e1385e2e48f870323396cbbd05a23c6d92d53b1aff14cf8307"
+   }
   },
   "trauma-1340": {
    "tema": "trauma",
@@ -63951,7 +64623,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63966,7 +64638,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "f976fa209c1458add5bf1210fa4fd820192d8fa58d986efcebf680ce6eea2a60"
+   "questaoSha256": "f976fa209c1458add5bf1210fa4fd820192d8fa58d986efcebf680ce6eea2a60",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Dissociação escapulotorácica"
+      ],
+      "blocos": [
+       "dissociacao-escapulotoracica-8b999d6b",
+       "dissociacao-escapulotoracica-fb39e45c",
+       "dissociacao-escapulotoracica-2b65a722"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "c967c83a7101f4478c7104550765db6b7cca40bb97564b197df6d4e96f759235"
+     }
+    ],
+    "questaoSha256": "f976fa209c1458add5bf1210fa4fd820192d8fa58d986efcebf680ce6eea2a60",
+    "comentarioSha256": "1b5cf8c46900fcfcaacf5be01a2f23b93ae64903bca2bd0f86587f1a8fcac06a"
+   }
   },
   "trauma-1344": {
    "tema": "trauma",
@@ -63999,7 +64696,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64014,7 +64711,32 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "8c93d4164cbb0e15571dfd60abaa1f860047ff8a1dadaa43af7b1739fed4766f"
+   "questaoSha256": "8c93d4164cbb0e15571dfd60abaa1f860047ff8a1dadaa43af7b1739fed4766f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Dissociação escapulotorácica"
+      ],
+      "blocos": [
+       "dissociacao-escapulotoracica-fb39e45c",
+       "dissociacao-escapulotoracica-317d48e0",
+       "dissociacao-escapulotoracica-2b65a722"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "680b7bf054776c984caa119abcdc4b376aad01a570003bcba7e400cc8e0c7565"
+     }
+    ],
+    "questaoSha256": "8c93d4164cbb0e15571dfd60abaa1f860047ff8a1dadaa43af7b1739fed4766f",
+    "comentarioSha256": "8f49e4bdcae00a6976d829b7bc7b51689280f90b10f8b59ffacba70951d8d602"
+   }
   },
   "trauma-1346": {
    "tema": "trauma",
@@ -64047,7 +64769,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64062,7 +64784,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "3c26b2ec51dc8eb18e8ef8996290292c68d089b8c57618ce22e10bd3af82a77f"
+   "questaoSha256": "3c26b2ec51dc8eb18e8ef8996290292c68d089b8c57618ce22e10bd3af82a77f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia",
+       "Complicações",
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-84a31ef5",
+       "complicacoes-ab0f12b1",
+       "complicacoes-3f02ac41",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "e7645b48aee8ea880f185628c376976850679cb07181a65d8365f42c20aa8229"
+     }
+    ],
+    "questaoSha256": "3c26b2ec51dc8eb18e8ef8996290292c68d089b8c57618ce22e10bd3af82a77f",
+    "comentarioSha256": "0694cb72e0c4c95fd36b478d9ecb03ae19d08a3f981f9c857eed19466ef12abc"
+   }
   },
   "trauma-1348": {
    "tema": "trauma",
@@ -64071,7 +64821,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64086,7 +64836,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "39306ab0c12b6453907c5a390480b4e500e6599d17dc6f3dae0180dfd8ec8ea0"
+   "questaoSha256": "39306ab0c12b6453907c5a390480b4e500e6599d17dc6f3dae0180dfd8ec8ea0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia",
+       "Fraturas da glenoide"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-04f17de0",
+       "medir-o-desvio-e-indicar-a-cirurgia-f995e48c",
+       "medir-o-desvio-e-indicar-a-cirurgia-db7733a7",
+       "fraturas-da-glenoide-d94ae394"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "8e509ca44c6cfef384df003df3356e9069fbe5530b332ed833335fe677181cba"
+     }
+    ],
+    "questaoSha256": "39306ab0c12b6453907c5a390480b4e500e6599d17dc6f3dae0180dfd8ec8ea0",
+    "comentarioSha256": "6494c494b5d26ddc0b6d1ee3d00413938c51f5049e74e9efe9d6a597d842406b"
+   }
   },
   "trauma-1349": {
    "tema": "trauma",

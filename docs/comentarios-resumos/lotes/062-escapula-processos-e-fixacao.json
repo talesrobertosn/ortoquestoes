@@ -1,0 +1,382 @@
+{
+  "trauma-1321": {
+    "questaoSha256": "bc681d551547bcad6cb05641c81f0731e31d80187dce2e1d9d3cb0855299c846",
+    "comentarioAnteriorSha256": "3ce40b84a8779e26005fb1292e1bbf4af4ac583fe34ab5a3227ab3a6a661902b",
+    "comentario": {
+      "conceito": "**A glenoide vai para distal e em valgo na forma totalmente instável óssea do colo cirúrgico.** A figura identifica o coracoide por Co e o fragmento glenoidal por G, separados. A informação de que os ligamentos estão íntegros vem do enunciado; não é uma conclusão demonstrada pela simples visualização de fibras ligamentares nesta radiografia.\n\nA diferença decisiva é a base do coracoide separada do colo. Os ligamentos podem continuar íntegros no coracoide, mas já não sustentam a peça glenoidal por uma continuidade óssea com ela. Logo, uma distância coracoclavicular normal não prova que a glenoide mantenha sua ligação estável ao conjunto.\n\n| Forma totalmente instável | O que falhou | Direção descrita |\n|---|---|---|\n| Ligamentar | Coracoclavicular e coracoacromial | Distal e medial |\n| Óssea | Base do coracoide separada do colo | Distal e valgo |\n\nNa forma ligamentar, os músculos ligados ao coracoide ainda tracionam o bloco que o inclui. Na forma óssea da pergunta, o coracoide deixou de acompanhar G e seus músculos não puxam a glenoide da mesma maneira. O desvio se aproxima do colo anatômico, cuja peça também não leva essa base.\n\n**A imagem ensina uma limitação de medidas isoladas.** É necessário seguir a continuidade dos fragmentos e não encerrar a análise porque o espaço coracoclavicular parece preservado. A reconstrução 3D ajuda a definir quais conexões foram realmente perdidas.\n\n**Leia os subtipos do colo cirúrgico, na Biblioteca.** Diferencie ligamento íntegro de ligação óssea preservada entre o ligamento e o fragmento que precisa ser sustentado.\n\n**Por que esta questão foi criada.** O capítulo distingue instabilidade ligamentar e óssea. A figura testa a exceção que impede usar distância coracoclavicular normal como sinônimo universal de estabilidade.",
+      "correta": "**C: distal e em valgo.** Co está separado do bloco G, caracterizando a falha óssea descrita. A integridade ligamentar não restabelece a continuidade entre as duas peças, e a glenoide não recebe a mesma tração do padrão ligamentar.",
+      "incorretas": {
+        "A": "**Inverte a direção longitudinal e a angulação do padrão.** A fonte descreve descida e valgo quando a base do coracoide se separa. Não há apoio para supor subida da glenoide apenas porque os ligamentos permaneceram íntegros em outro fragmento.",
+        "B": "**É o desvio da forma totalmente instável ligamentar, com coracoide ainda no bloco glenoidal.** Aqui a falha é óssea e Co foi separado de G. A mudança de continuidade altera quais forças atuam diretamente sobre a glenoide.",
+        "D": "**Combina a medialização de outro padrão com subida não descrita.** O fragmento da pergunta desce e vai em valgo. A alternativa ignora a separação do coracoide e não reproduz a mecânica apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "75a68359280bc9c482e18458c9f9f9409d16a6b2fd1d543d8ac40c7fe189ec22"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1321-1.jpeg"
+    ]
+  },
+  "trauma-1324": {
+    "questaoSha256": "4dc96a70ed18e07fdcdc6e9a04c72efd8dc498ec7e13cc767bfd67a4f113b3bd",
+    "comentarioAnteriorSha256": "e20ee7ee95002e8598b16708bc5af04e45802f7205039d907464e00ccf0b5ae9",
+    "comentario": {
+      "conceito": "**Na fratura simples do corpo, fixa-se primeiro a borda lateral, com dois parafusos em cada fragmento na montagem descrita.** A borda lateral é a estrutura-chave da reconstrução: ela integra um dos caminhos de carga que ligam a glenoide ao restante do corpo.\n\nA contratura muscular pode encavalar e encurtar essa borda. O resumo descreve redução com ganchos ou tração por parafusos colocados nos fragmentos. Uma vez restaurada a referência lateral, a posição do pilar espinal frequentemente melhora, facilitando a reconstrução do conjunto.\n\nA montagem 2 + 2 refere-se à fratura simples; com fragmentos intermediários, o autor descreve 3 + 3. Esses números não são intercambiáveis nem uma licença para ignorar qualidade óssea, tamanho dos fragmentos ou necessidade de estabilidade. O enunciado especifica qual padrão está sendo tratado.\n\n**Leia “Implantes e redução”, na Biblioteca.** Primeiro identifique a estrutura que recupera comprimento e alinhamento; depois escolha a montagem correspondente ao padrão, sem memorizar contagens fora do contexto.\n\n**Por que esta questão foi criada.** O capítulo liga arquitetura e técnica: começar pelo pilar lateral reorganiza a escápula. O simulado testa essa prioridade e a diferença entre fratura simples e fragmentos intermediários.",
+      "correta": "**A: borda lateral e 2 + 2.** É a sequência e a montagem para o padrão simples descrito. A correção lateral costuma ajudar o pilar espinal, mas isso não significa que toda segunda lesão dispense fixação.",
+      "incorretas": {
+        "B": "**Acerta a prioridade lateral e usa a contagem descrita para fragmentos intermediários.** A questão pede fratura simples, em que o resumo apresenta dois parafusos por fragmento. Mais parafusos não tornam a alternativa uma reprodução fiel do critério cobrado.",
+        "C": "**Acerta a montagem simples e inverte a prioridade.** O ângulo espinomedial não é o primeiro ponto da reconstrução proposta. Restaurar a borda lateral é a referência que pode melhorar a posição espinal.",
+        "D": "**Troca a estrutura inicial e a montagem do padrão simples.** A proposta começa pela borda lateral e usa 2 + 2; ângulo espinomedial e 3 + 3 não correspondem à combinação solicitada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular; Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd",
+          "vias-de-acesso-e-tecnica-de-fixacao-28a550b5",
+          "vias-de-acesso-e-tecnica-de-fixacao-2baae6b4"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "75bfd7334dd2b7d2557a387ab6e3799ff5b365929e996f85256c2f053a70c653"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1325": {
+    "questaoSha256": "71e626933c0bf998488cb058f7b375f3db0e27fb4c2007070d77e3f250e9783b",
+    "comentarioAnteriorSha256": "086f7d339b72e4944f6a5f5216950dbe1cd90fef2e2137b9ccacf38ef68ab50c",
+    "comentario": {
+      "conceito": "**Pode-se deixar o ângulo espinomedial sem fixação se o desvio for menor que 5 mm e o pilar lateral estiver estavelmente fixado.** São duas condições conjuntas. Um número pequeno na radiografia não substitui a estabilidade da reconstrução principal.\n\nA mobilização do infraespinal pode desestabilizar o ângulo espinomedial. Por outro lado, restaurar e fixar o pilar lateral pode melhorar a posição do pilar espinal. O autor admite algum movimento residual no ângulo pouco desviado quando essa base lateral está estável; fora dessas condições, descreve placa, parafusos bloqueados ou cerclagem.\n\nIsso não é uma regra de “não operar o ângulo no idoso”. Idade e condição clínica participam da decisão geral sobre operar a fratura, mas a pergunta trata da suficiência da montagem já escolhida. O critério técnico que completa os 5 mm é a estabilidade lateral, e não uma característica demográfica isolada.\n\n**Leia “Implantes e redução”, na Biblioteca.** Diferencie decidir se o paciente deve operar de decidir quais fragmentos precisam de fixação depois que a reconstrução foi indicada.\n\n**Por que esta questão foi criada.** O capítulo propõe evitar fixações desnecessárias quando o pilar principal já foi estabilizado. O simulado exige reconhecer as duas condições, em vez de usar apenas o limite em milímetros.",
+      "correta": "**C: menos de 5 mm e pilar lateral estavelmente fixado.** O pequeno desvio é aceito no contexto de uma reconstrução lateral estável. Retirar a segunda condição mudaria a segurança da recomendação.",
+      "incorretas": {
+        "A": "**Aumenta o limite e substitui estabilidade por idade.** Dez milímetros não é o valor informado, e ser idoso não comprova que o ângulo esteja adequadamente sustentado. São decisões de níveis diferentes.",
+        "B": "**Acerta os 5 mm, mas troca a condição técnica.** A fonte exige estabilidade do pilar lateral. Idade pode pesar na escolha global de tratamento, sem funcionar como substituto dessa estabilidade na montagem.",
+        "D": "**Acerta a estabilidade lateral e dobra o limite apresentado.** A tolerância específica é para desvio menor que 5 mm. O fato de uma condição estar satisfeita não autoriza ampliar a outra de memória."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-e60abf80",
+          "vias-de-acesso-e-tecnica-de-fixacao-2baae6b4",
+          "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "740c6b8abd516fef3bee27d6d659d9b1e194b5e31bde6f7c3e270555f4521829"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1326": {
+    "questaoSha256": "ab020337a91309304d139e0f12a6178e541faecd8e05e0591680da2162395a2a",
+    "comentarioAnteriorSha256": "237c83634b79808b1f5d84254b7cc57f752d2ad90a59ff24ddbf420fe47d8026",
+    "comentario": {
+      "conceito": "**O autor excisa o ápice desviado com reinserção do tendão conjunto e fixa a base com parafusos de tração de 3,5 mm.** O tratamento muda conforme qual parte do coracoide foi separada; “fratura do coracoide” não descreve uma única peça com uma técnica universal.\n\nO ápice, o bico e a base têm tamanhos e relações diferentes. Para o bico, o resumo descreve parafusos canulados com arruela. Para a base, parafusos de tração de 3,5 mm. No pequeno ápice desviado, a excisão deve ser acompanhada de reinserção do tendão conjunto; não é simplesmente retirar osso e abandonar sua conexão muscular.\n\nAntes de fixar diretamente, também se avalia a lesão associada. Na série do autor, o coracoide foi fixado diretamente em apenas dois dos treze casos operados: em vários outros, tratar a lesão associada permitiu redução indireta. A recomendação técnica da pergunta não significa que toda base ou todo processo fraturado exija cirurgia.\n\n**Leia “Coracoide”, na Biblioteca.** Identifique ápice, bico, base e lesões do complexo suspensor antes de escolher implante ou excisão.\n\n**Por que esta questão foi criada.** O capítulo mostra que tamanho e localização do fragmento mudam a técnica. O simulado cobra essa distinção e a necessidade de preservar a função do tendão conjunto.",
+      "correta": "**D: excisão do ápice desviado com reinserção e base com parafusos de tração de 3,5 mm.** Cada etapa corresponde a uma região diferente; nenhuma deve ser transferida automaticamente para todas as fraturas do processo.",
+      "incorretas": {
+        "A": "**Atribui ao ápice a fixação usada em outro fragmento e troca a técnica da base por placa.** O resumo descreve excisão com reinserção para o ápice desviado e parafusos de tração para a base.",
+        "B": "**Acerta a base e erra a conduta preferida para o ápice.** Canulados com arruela são descritos para o bico. O pequeno ápice desviado recebe a estratégia de excisão e reinserção, que não pode ser omitida.",
+        "C": "**Acerta a primeira parte e substitui os parafusos de tração da base por placa de reconstrução.** A placa pode ser lembrada em outras fraturas escapulares, mas não é a técnica da base especificada nesta pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Processos: coracoide, acrômio e espinha lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Processos: coracoide, acrômio e espinha lateral"
+        ],
+        "blocos": [
+          "processos-coracoide-acromio-e-espinha-lateral-77462306",
+          "processos-coracoide-acromio-e-espinha-lateral-b51c77ae"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "fe0ead5946e5a606e1317fe8cc622c1cf06de3b341e2840c034c203c198448b3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1327": {
+    "questaoSha256": "1bd6c9b69d7e3ff7a124a4f097db76dbee83e508d43922a2e084ae8d382b1e55",
+    "comentarioAnteriorSha256": "9120d31b12516b1fe38a3b8bb62701c7c5e9f5f112e48db4f198ad39bb213971",
+    "comentario": {
+      "conceito": "**Na experiência do autor, reduzir e fixar a acromioclavicular reduziu indiretamente o coracoide, que consolidou.** A associação deve ser interpretada como lesão do conjunto suspensor, e não como duas fraturas ou articulações que sempre exigem abordagens independentes.\n\nDos 39 coracoides da série, treze foram operados, mas só dois receberam fixação direta do próprio processo. Nas demais cirurgias, foi tratada a lesão associada. Nos casos com luxação acromioclavicular, a restauração dessa relação permitiu reduzir o coracoide sem uma fixação direta adicional.\n\nO dado é uma experiência clínica específica. Ele demonstra que “sempre fixar primeiro o coracoide” é uma regra excessiva, mas não garante redução indireta suficiente em todo padrão possível. Desvio residual, fragmento, estabilidade e lesões associadas precisam ser conferidos após a primeira correção.\n\n**Leia “Coracoide”, na Biblioteca.** O alvo cirúrgico pode ser a lesão que desorganizou o complexo, mesmo quando outra linha de fratura chama mais atenção na imagem.\n\n**Por que esta questão foi criada.** O capítulo ressalta que operar o conjunto não equivale a fixar cada processo. O simulado testa a redução indireta como alternativa à abordagem obrigatória do coracoide.",
+      "correta": "**A: fixar a luxação acromioclavicular pode reduzir indiretamente o coracoide.** Foi o resultado descrito na série. Deve-se conferir a redução obtida, sem transformar a observação numa garantia universal.",
+      "incorretas": {
+        "B": "**O termo “sempre” contradiz a experiência relatada.** Muitos casos foram resolvidos tratando a lesão associada sem fixar diretamente o coracoide. A necessidade e a sequência dependem do padrão e do resultado da redução.",
+        "C": "**Inverte a direção da estratégia demonstrada.** O resumo relata acromioclavicular corrigida levando à redução do coracoide, não prova de que fixar apenas o coracoide resolveria sempre a luxação. A relação indireta precisa ser atribuída à intervenção realmente estudada.",
+        "D": "**A associação não é apresentada como contraindicação à cirurgia.** Foi justamente o motivo de várias intervenções. Risco de não união e instabilidade precisam ser avaliados, sem concluir que operar está proibido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Processos: coracoide, acrômio e espinha lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Processos: coracoide, acrômio e espinha lateral"
+        ],
+        "blocos": [
+          "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+          "processos-coracoide-acromio-e-espinha-lateral-b51c77ae",
+          "processos-coracoide-acromio-e-espinha-lateral-b13a2e2f"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "21070ad0c232203fad9d0a1f742dbeb907337ad084023832790cb82fd1aca124"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1328": {
+    "questaoSha256": "cab07cffd01b7f866cc850121de1e02f76ebf262e1f7d4972e41c8e1a7a75b74",
+    "comentarioAnteriorSha256": "67c05ca03a3319a4a78983f7d22d0f6bd7dab442ae0eb0b46d5688c2904a0b7d",
+    "comentario": {
+      "conceito": "**A espinha medial pertence ao corpo na classificação do autor, e o ângulo acromial separa convencionalmente acrômio de espinha lateral.** A mesma palavra “espinha” pode aparecer em dois grupos conforme a região, por isso a localização precisa ser preservada.\n\nA parte medial participa do pilar espinal, um dos caminhos de carga do corpo biomecânico. Já espinha lateral e acrômio formam uma continuidade estrutural analisada entre os processos; o ângulo acromial é o marco usado para distingui-los.\n\nA faceta acromioclavicular situa uma relação articular, mas não é o limite convencional pedido. O resumo descreve traços do acrômio frequentemente atrás dessa faceta, enquanto o grupo de transição fica junto ao ângulo e pode levar todo o acrômio. Isso ajuda a entender por que faceta e ângulo não são intercambiáveis.\n\n**Leia “Acrômio e espinha lateral” e a arquitetura dos pilares, na Biblioteca.** Classifique a região efetivamente fraturada, sem decidir só pelo nome geral do osso.\n\n**Por que esta questão foi criada.** A organização anatômica do autor orienta os padrões e a técnica. O simulado testa a distinção entre espinha medial e lateral, que muda o grupo da fratura.",
+      "correta": "**B: corpo e ângulo acromial.** A parte medial entra no corpo por formar o pilar espinal; o ângulo é o limite convencional do conjunto acrômio–espinha lateral.",
+      "incorretas": {
+        "A": "**Acerta o grupo da espinha medial e troca o marco de transição.** A faceta acromioclavicular não é o limite convencional estabelecido entre acrômio e espinha lateral. A posição de uma articulação não substitui o ângulo anatômico usado pela classificação.",
+        "C": "**Acerta o ângulo e leva a espinha medial para os processos.** No modelo do autor, ela integra o corpo biomecânico. O grupo dos processos envolve a parte lateral da continuidade com o acrômio.",
+        "D": "**Erra a categoria medial e o marco lateral.** São necessárias as duas distinções: corpo para a espinha medial e ângulo acromial como limite convencional, não processos e faceta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Processos: coracoide, acrômio e espinha lateral; Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Processos: coracoide, acrômio e espinha lateral",
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "processos-coracoide-acromio-e-espinha-lateral-2909bbf9",
+          "processos-coracoide-acromio-e-espinha-lateral-98f6fed6",
+          "processos-coracoide-acromio-e-espinha-lateral-c9c0e73a",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "aec9dd4ddaa98b9739af9dca96d56ffee5596a5bacdd96b5a34700df12147c3f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1329": {
+    "questaoSha256": "d81a398f23cc06926e8e504dec3e26dccf646ac0f42262eaf339920dc64e34c5",
+    "comentarioAnteriorSha256": "5743793555b4480951037892d229917dd0d4593c20a648473ea15078531ecf50",
+    "comentario": {
+      "conceito": "**Na espinha lateral, o fragmento tende a varo, e a pseudartrose é relativamente frequente após tratamento conservador.** Essa é uma informação local. Ela não contradiz a consolidação viciosa como complicação conservadora mais comum no conjunto de todas as fraturas da escápula.\n\nO resumo relaciona o risco de não união à cortical espessa, à superfície estreita de fratura e à tração muscular. Um fragmento que permanece angulado pode reduzir o espaço subacromial e causar impacto. O resultado não depende apenas de haver calo em outras partes da escápula, que normalmente consolida bem.\n\nPor isso, o autor recomenda operar padrões desviados do acrômio e da espinha lateral, reconhecendo que a decisão depende do fragmento e do conjunto. Placas, parafusos ou cerclagem são opções descritas; fragmentos pequenos da borda acromial podem ser excisados. Não se deve transformar “escápula consolida rápido” em argumento para ignorar esse padrão de risco.\n\n**Leia “Acrômio e espinha lateral” e as complicações conservadoras, na Biblioteca.** Diferencie frequência global de complicação e risco específico por localização.\n\n**Por que esta questão foi criada.** O SBOT-SP cobrou consolidação viciosa como complicação geral do conservador. O simulado testa a exceção regional em que a não união merece atenção especial.",
+      "correta": "**C: varo e pseudartrose.** A combinação corresponde ao padrão lateral descrito. O qualificativo “relativamente frequente” se aplica a essa localização, não à escápula inteira.",
+      "incorretas": {
+        "A": "**Inverte a direção para valgo e usa a complicação geral como resposta regional.** A viciosa pode ocorrer, mas o destaque específico da espinha lateral é a pseudartrose, com varo do fragmento.",
+        "B": "**Acerta a não união e troca a angulação.** O resumo descreve varo. O sentido do desvio ajuda a entender o possível estreitamento subacromial quando a deformidade persiste.",
+        "D": "**Acerta o varo e perde a complicação especialmente ressaltada nessa região.** A consolidação viciosa lidera no conjunto do conservador, mas a pergunta especifica espinha lateral, onde a pseudartrose é relativamente comum."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Processos: coracoide, acrômio e espinha lateral; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Processos: coracoide, acrômio e espinha lateral",
+          "Complicações"
+        ],
+        "blocos": [
+          "processos-coracoide-acromio-e-espinha-lateral-b2e194f0",
+          "processos-coracoide-acromio-e-espinha-lateral-5dc2cd32",
+          "complicacoes-19395d4e",
+          "complicacoes-fafb04b3"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "5b7bfa501b6bd35338795720a0069d98190a4b48e0bc7d34730c084a52b8720a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1330": {
+    "questaoSha256": "cb41f5cff23a46be4c48abbbd5b6677e568288de1d315f4eb18a54cc59302c3b",
+    "comentarioAnteriorSha256": "f2b465634e39a21e1f09cafaf8f4269ea68700e3d98d50be45c04a6a4965a604",
+    "comentario": {
+      "conceito": "**O limite citado por Anavian e Hill é mais de 1 cm, em lesão isolada ou associada a ruptura dupla do complexo suspensor.** A fonte ressalta que não há consenso global e que a lesão associada muitas vezes é o motivo efetivo de operar.\n\nAcrômio e coracoide participam do complexo que sustenta a glenoide e relaciona a cintura ao tronco. Uma fratura pode ser apenas um ponto da ruptura; uma segunda lesão pode comprometer mais a estabilidade. Por isso, medir o fragmento sem procurar acromioclavicular, ligamentos e outros processos fornece uma avaliação incompleta.\n\nO valor de um centímetro não deve ser apresentado como indicação absoluta independente da demanda, pele, condição clínica e padrão. A tabela do capítulo trata essas medidas como relativas, e a experiência do autor frequentemente prioriza tratar a lesão associada, com possível redução indireta do processo.\n\n**Leia “Quando operar os processos”, na Biblioteca.** Use a medida junto com a análise do complexo, mantendo explícita a ausência de consenso e a necessidade de julgamento individual.\n\n**Por que esta questão foi criada.** A prova frequentemente cobra números de indicação. O simulado associa o limite à ruptura do complexo para evitar a leitura de que qualquer pequeno desvio ou qualquer fratura de costela seja o segundo componente relevante.",
+      "correta": "**D: mais de 1 cm e lesão dupla do complexo suspensor.** É a combinação apresentada. Trata-se do critério citado, interpretado no contexto de indicações relativas e da avaliação clínica.",
+      "incorretas": {
+        "A": "**Reduz o limite a 5 mm e substitui ruptura do complexo por costela.** Fratura costal é importante no trauma, mas não é o segundo ponto osteoligamentar do anel que esta regra discute.",
+        "B": "**Acerta o tipo de associação e troca o limite para 5 mm.** A fonte informa mais de 1 cm para os processos. Um ponto de corte de outra região, como um fragmento espinomedial já sustentado, não deve ser transportado para cá.",
+        "C": "**Acerta o centímetro e muda a associação.** Fraturas de costelas podem alterar o quadro geral, mas a regra pergunta a ruptura dupla do sistema suspensor. Gravidade do politrauma e instabilidade do anel são dimensões diferentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Processos: coracoide, acrômio e espinha lateral; Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Processos: coracoide, acrômio e espinha lateral",
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "processos-coracoide-acromio-e-espinha-lateral-b13a2e2f",
+          "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "4bf4128ead7bc3f3b20b452b6777c919dfedbbe2d25e4b98eab3bd15d8adeff6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1331": {
+    "questaoSha256": "318dad58d5dc56170c13a24b3711328e8386dce348df84fd2567d2c83d6acf22",
+    "comentarioAnteriorSha256": "4f7266a6073bc776cf8d7075de9a57809b3701b8bc164ad39d2b18fcef938a15",
+    "comentario": {
+      "conceito": "**O algoritmo relativo usa ângulo glenopolar menor que 20 graus ou maior que 60 graus.** É necessário lembrar os dois extremos. No colo anatômico, o ângulo pode aumentar muito; portanto, estar acima de 20 não prova alinhamento aceitável.\n\nO ângulo relaciona a linha dos polos superior e inferior da glenoide com a linha do polo superior ao ângulo inferior da escápula. A referência normal citada é 41 graus, entre 35 e 51 na AP verdadeira. Faixa normal, faixa do algoritmo e limite de cirurgia são conceitos distintos.\n\nO capítulo ressalta falta de padronização universal dos valores e considera as indicações relativas. Desvio da borda lateral, condição clínica, demanda e partes moles participam da decisão. Um número fora da faixa favorece a discussão cirúrgica no paciente apropriado, sem substituir o diagnóstico do padrão.\n\n**Leia “O ângulo glenopolar e os outros três critérios”, na Biblioteca.** Diferencie o intervalo anatômico habitual da faixa mais ampla tolerada no algoritmo.\n\n**Por que esta questão foi criada.** TARO 2018 e outras provas cobraram menos de 20 graus. O simulado acrescenta o extremo superior, necessário para reconhecer padrões em que o ângulo aumenta.",
+      "correta": "**B: menos de 20 ou mais de 60 graus.** São os extremos do algoritmo relativo. A pergunta não exige trocar esses valores pelos limites da faixa normal nem torná-los indicação absoluta.",
+      "incorretas": {
+        "A": "**Quarenta e cinco graus pode ser normal.** Usar todo valor acima dele como indicação ampliaria indevidamente a regra. O limite superior do algoritmo é maior que 60.",
+        "C": "**Estreita os dois extremos sem apoio no algoritmo.** Menos de 30 e mais de 45 não são os limites citados; 45 ainda pode estar no intervalo normal de referência. A decisão não deve nascer de um intervalo inventado.",
+        "D": "**Usa aproximadamente os limites da normalidade como se fossem os de cirurgia.** A faixa de 35 a 51 descreve referência anatômica, enquanto o algoritmo relativo utiliza menos de 20 ou mais de 60. Estar fora do normal não é automaticamente ultrapassar o limiar operatório."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "f7a4a2c1c8b925e14a272dbbda070e898f2d77dcb9f6c0d301b22d601713d5a9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1332": {
+    "questaoSha256": "4d138901c95e77fed146694d40151923eec80f4f079d79ce5f7139a527a494b6",
+    "comentarioAnteriorSha256": "2c0bbce997e77f55aa3b12f43c3f6997fd265ca4bf2fcee73344d6e18252d0cb",
+    "comentario": {
+      "conceito": "**A combinação é angulação maior que 40 graus no perfil e translação mediolateral maior que 20 mm.** São medidas diferentes, obtidas em vistas diferentes; não se deve tratar “desvio” como um único número sem direção e sem plano de imagem.\n\nA angulação da borda lateral é avaliada no perfil em Y, ou vista lateral da reconstrução 3D. O desvio mediolateral é avaliado na AP verdadeira ou vista anterior 3D. As referências à borda lateral são importantes porque a aparente medialização da glenoide pode ser, na realidade, lateralização da porção infraespinal do corpo.\n\nHá uma nuance na própria fonte: o algoritmo 33-1 apresenta 15 a 20 mm para o desvio mediolateral, enquanto a figura 33-19 usa mais de 20 mm. A alternativa C corresponde ao par de critérios da figura e ao corte angular do capítulo; a diferença entre as duas apresentações não deve ser escondida como se a fonte tivesse um único limiar universal.\n\nOs critérios são relativos e precisam ser integrados a ângulo glenopolar, demanda, lesões associadas, pele e condição clínica. Medidas ajudam a caracterizar deformidade, mas não dispensam definir o padrão tridimensional e o paciente que suportará a reconstrução.\n\n**Leia “Os critérios relativos de cirurgia”, na Biblioteca.** Confira valor, plano e estrutura medida antes de aplicar um limite.\n\n**Por que esta questão foi criada.** O TECOC repetiu a angulação de 45 graus em opções, compatível com corte acima de 40. O simulado associa a medida linear e explicita a nuance entre quadro e figura.",
+      "correta": "**C: mais de 40 graus e mais de 20 mm.** É a combinação da pergunta, com a ressalva de que outra apresentação do algoritmo cita 15 a 20 mm. Os números são relativos, não uma ordem de operar qualquer caso que os ultrapasse.",
+      "incorretas": {
+        "A": "**Reduz tanto a angulação quanto a translação.** Trinta graus e 10 mm não reproduzem os cortes solicitados. Usar valores menores ampliaria a indicação sem o apoio da regra apresentada.",
+        "B": "**Acerta os 20 mm e reduz o corte angular para 30 graus.** O perfil deve ser julgado pelo limite de mais de 40. Uma medida linear correta não valida um limite angular diferente.",
+        "D": "**Acerta os 40 graus e reduz a medida linear para 10 mm.** Mesmo a faixa menor do algoritmo é 15 a 20 mm, não 10. A alternativa não resolve a diferença entre as apresentações da fonte; cria outro corte."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-6963932a",
+          "medir-o-desvio-e-indicar-a-cirurgia-816d9b6b",
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-c5529532"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "c3946e58ffd2e85ce4e0d208fd9dcc7256ff1184b390aeef85d275a1ecca6847"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

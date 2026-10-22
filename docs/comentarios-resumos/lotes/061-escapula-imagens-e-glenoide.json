@@ -1,0 +1,379 @@
+{
+  "trauma-1310": {
+    "questaoSha256": "f97dc8754f8b258728de96db81780076a7468e2f78f0f888b3ce4e71fb7a46ad",
+    "comentarioAnteriorSha256": "435e77c7890b03f4a4c8a57f990db65f7d9b0a531e574ef287d0beeb3244971c",
+    "comentario": {
+      "conceito": "**A interpretação do autor é fratura do corpo em duas partes, com lateralização da porção infraespinal.** A aparente medialização da glenoide no AP pode decorrer de olhar apenas a posição relativa dos fragmentos e atribuir todo o movimento à peça glenoidal.\n\nNa figura, observa-se a interrupção da arquitetura escapular abaixo da glenoide e a relação preservada entre clavícula e coracoide descrita no enunciado. A imagem apresentada é uma radiografia; ela não mostra, por si, todas as relações tridimensionais ou a integridade de cada ligamento. A confirmação do padrão pelo autor decorre da análise tomográfica discutida no resumo, não de uma tomografia que estivesse exibida nesta questão.\n\nO mecanismo descrito é o deslocamento lateral da porção inferior do corpo por subescapular, infraespinal e redondo maior. O conjunto glenoidal pode permanecer em sua posição em relação ao tronco, sustentado pelas conexões preservadas. Assim, “um fragmento parece medial ao outro” não prova que a glenoide foi medializada.\n\n**Isso muda a leitura do ombro flutuante.** Uma fratura do corpo não se transforma em fratura verdadeira do colo apenas porque a radiografia sugere um colo infraglenoidal. No conceito do autor, é necessário verificar se a glenoide perdeu suas conexões, e a reconstrução 3D ajuda a esclarecer essa anatomia.\n\n**Leia “Por que tanta fratura do colo não é do colo”, na Biblioteca.** Identifique qual peça realmente se moveu antes de nomear a deformidade.\n\n**Por que esta questão foi criada.** O capítulo usa esse erro de interpretação para explicar a controvérsia do ombro flutuante. A imagem testa a diferença entre a aparência no AP e o padrão confirmado na análise tridimensional.",
+      "correta": "**D: corpo em duas partes e desvio lateral da porção infraespinal pelo manguito.** É a explicação do autor para a aparência radiográfica. A direção é atribuída à porção do corpo, sem presumir que a glenoide tenha sido puxada medialmente.",
+      "incorretas": {
+        "A": "**Confunde a aparência com uma fratura verdadeira do colo cirúrgico.** Nesse colo, o bloco glenoidal inclui o coracoide e o estado ligamentar decide o desvio. O resumo interpreta este padrão como corpo infraespinal, com deslocamento lateral da peça inferior, não medialização da glenoide pelo peitoral menor.",
+        "B": "**O colo anatômico pode desviar para distal e valgo, mas é outro traço.** Ele separa a fossa lateralmente à base do coracoide. A coincidência de uma direção possível não demonstra que a radiografia represente esse padrão.",
+        "C": "**Acerta corpo em duas partes e inverte qual peça se move.** O autor descreve lateralização infraespinal, enquanto a clavícula íntegra ajuda a manter a posição glenoidal. Não há fundamento para atribuir à clavícula uma tração medial da glenoide nesse caso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-d95813eb"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "8b5b315298c3310e346e58de51c361b3354e60c06ce58a724800310fff13577c"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1310-1.jpeg"
+    ]
+  },
+  "trauma-1311": {
+    "questaoSha256": "b58e7689f46e61ea039b61eaa5ed3b0ffea7e3860081d700fdb7ff56a68469d2",
+    "comentarioAnteriorSha256": "9ca64c63ad3bf88dd49f2d8976c86eb06064f924b554e5c4d44a2134f2c4c8e0",
+    "comentario": {
+      "conceito": "**O tipo IIC de Ada e Miller é interpretado pelo autor como fratura infraespinal do corpo em duas partes.** A expressão histórica “colo inferior à espinha” não corresponde necessariamente a um fragmento glenoidal realmente separado do corpo pelo colo anatômico ou cirúrgico.\n\nNa radiografia AP, o corpo deslocado pode produzir uma aparência de medialização da glenoide. A reconstrução 3D demonstra que a porção infraespinal foi para lateral e que o bloco glenoidal pode manter sua relação com a clavícula e o tronco. O nome da classificação antiga nasceu da aparência bidimensional, que não resolve toda a anatomia.\n\nAs fraturas verdadeiras do colo são separadas pelo trajeto: anatômico passa lateralmente à base do coracoide; cirúrgico parte da incisura da escápula e inclui o coracoide no fragmento; transespinhal cruza a espinha. Não se deve escolher uma delas apenas porque todas contêm a palavra “colo”.\n\nA distinção interfere na análise de estabilidade e na redução. A prioridade é reconstruir o padrão real, usando a tomografia padronizada, antes de aplicar um rótulo de ombro flutuante ou propor que a clavícula corrigirá indiretamente qualquer desvio.\n\n**Leia “Por que tanta fratura do colo não é do colo”, na Biblioteca.** Compare o trajeto da fratura com o nome histórico, mantendo explícita a interpretação autoral.\n\n**Por que esta questão foi criada.** O tipo IIC é um exemplo central da crítica do capítulo às classificações feitas por radiografias. A questão testa a mudança de interpretação produzida pela tomografia.",
+      "correta": "**A: fratura transversa em duas partes da porção infraespinal do corpo.** É a leitura de Bartoníček para o padrão chamado IIC por Ada e Miller. A resposta não renomeia todas as fraturas do colo como corpo, apenas essa categoria discutida.",
+      "incorretas": {
+        "B": "**O colo cirúrgico tem traço pela incisura e leva o coracoide com a glenoide.** É uma fratura verdadeira do ângulo lateral, diferente do padrão infraespinal do corpo. A alternativa mantém a denominação histórica que o autor está justamente questionando.",
+        "C": "**O colo anatômico passa pela região coracoglenoidal e deixa o coracoide fora da peça glenoidal.** Esse trajeto não corresponde ao IIC reinterpretado como corpo em duas partes. Uma região superior de saída diferente muda o bloco separado.",
+        "D": "**Transespinhal exige que o traço cruze a espinha.** O tipo IIC aqui é infraespinal e não se torna transespinhal por estar próximo dela. A relação com a espinha deve ser lida como trajeto, não apenas como vizinhança."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-d95813eb",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "99fdc128de9733a8df64e0948a33d9534cc539c34cfaca99203255d01c65cf06"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1312": {
+    "questaoSha256": "d9ef2a02733a369cf7410bce1c7fddb14dfae3bf0be6bd62bced7010003ea60e",
+    "comentarioAnteriorSha256": "4f8154b75fe6cd08c48a7b1124d067974e3c327a0c82a4140e2f1a57a2cabcbd",
+    "comentario": {
+      "conceito": "**O desenho mostra o segmento glenoidal superior unido ao coracoide: Ideberg-Goss III.** O traço parte da superfície articular e sai superiormente, deixando o restante da fossa e do corpo abaixo. Essa peça superior é a pista, mais informativa que tentar reconhecer o número pela forma geral do desenho.\n\nO tipo II separa a glenoide inferior e sai lateralmente. O III leva a porção superior com o coracoide e sai pela borda superior. O IV atravessa o corpo até a borda medial. O Vb combina III e IV, exigindo o trajeto adicional que não aparece como padrão isolado nesta ilustração.\n\n| Padrão | Relação principal |\n|---|---|\n| II | Fragmento inferior, saída lateral |\n| III | Fragmento superior com coracoide, saída superior |\n| IV | Traço até a borda medial |\n| Vb | Associação de III e IV |\n\nO esquema é útil para classificar o trajeto; não permite medir um degrau real, o tamanho tridimensional do fragmento ou a estabilidade de um paciente. Para decidir tratamento, o capítulo valoriza desvio, congruência e subluxação, além da classificação.\n\n**Leia “Ideberg modificada por Goss”, na Biblioteca.** Siga a linha de fratura desde a fossa até sua saída e identifique quais estruturas ficam na mesma peça.\n\n**Por que esta questão foi criada.** O TARO 2015 descreveu por texto a glenoide superior com coracoide. O simulado exige reconhecer a mesma relação num esquema.",
+      "correta": "**C: tipo III.** A peça superior inclui o coracoide e a saída do traço é superior. Não há o traço adicional até a borda medial que caracterizaria a combinação Vb.",
+      "incorretas": {
+        "A": "**Tipo II leva a parte inferior da fossa e sai pela borda lateral.** A imagem mostra a peça superior com o coracoide. Trocar superior por inferior muda o padrão, mesmo que ambos atravessem a superfície glenoidal.",
+        "B": "**Tipo IV atravessa o corpo até a borda medial.** Esse prolongamento não é o desenho isolado apresentado. Identificar um traço aproximadamente horizontal perto da glenoide não basta para chamá-lo de IV; é necessário acompanhar sua saída.",
+        "D": "**Vb é a combinação III + IV.** Reconhecer o componente superior não demonstra automaticamente o componente que cruza até a borda medial. A imagem representa o III isolado, sem a combinação adicional."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-0ef4b3c3",
+          "fraturas-da-glenoide-b25a3b02",
+          "fraturas-da-glenoide-7240e61a"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "7099587d4ec1320c1c1b94d7e9c659a37b9a3fac0c7478c56e49fdbbf36bb9b1"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1312-1.jpeg"
+    ]
+  },
+  "trauma-1313": {
+    "questaoSha256": "70dfab0146737a5165a456fddc1670299454f87b2440312dc3dca4a9ee9923c8",
+    "comentarioAnteriorSha256": "a3473d2bde96e2cbc466af1ff18e2a89a606cabb289e13a902a3965650950a81",
+    "comentario": {
+      "conceito": "**Na OTA/AO de 2018, as respostas são 14B2 e 14F0.** O código 14 identifica a escápula; B designa corpo, e F, o segmento da fossa glenoidal. É importante informar a versão, porque classificações mudam e códigos de versões diferentes não devem ser misturados.\n\nO corpo é B1 quando o traço sai da circunferência em dois pontos ou menos e B2 quando sai em três ou mais. A primeira lacuna, portanto, pede B2. Já F0 corresponde à fratura extra-articular pelo osso subcondral, chamada colo da glenoide na descrição da classificação. O zero não significa ausência de fratura.\n\nF2 representa padrão multifragmentário da fossa, não a categoria extra-articular do colo. A classificação anatômica de Bartoníček mantém o colo como grupo próprio e critica seu tratamento na AO, mas a pergunta pede os códigos da AO, não que se escolha a classificação preferida pelo autor.\n\n**Leia “A AO/OTA (14) e por que o autor a critica”, na Biblioteca.** Separe a definição formal do código da discussão sobre sua utilidade clínica.\n\n**Por que esta questão foi criada.** A nomenclatura AO é recorrente em provas. Este simulado confronta uma regra objetiva do corpo com a categoria pouco intuitiva F0, evitando confundir letra articular com necessidade de traço dentro da articulação.",
+      "correta": "**B: 14B2 e 14F0.** Três ou mais saídas periféricas definem B2; a fratura extra-articular do colo é codificada F0 na versão apresentada. As duas regras pertencem à OTA/AO de 2018.",
+      "incorretas": {
+        "A": "**Acerta F0 e usa B1 para o corpo.** B1 exige duas saídas ou menos, enquanto a pergunta informa três ou mais. O número de pontos na circunferência é o critério discriminante da primeira lacuna.",
+        "C": "**Acerta B2 e troca a categoria extra-articular por F2.** F2 corresponde à fossa multifragmentária na descrição. O colo extra-articular não se torna F2 apenas porque também está na região lateral da escápula.",
+        "D": "**Erra os dois códigos.** B1 reduz o número de saídas permitido e F2 muda colo extra-articular para fossa multifragmentária. A alternativa reúne duas categorias reais, mas nenhuma corresponde aos padrões informados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-822faf4b",
+          "fraturas-da-glenoide-ba2404e9",
+          "fraturas-da-glenoide-4ad53ade",
+          "fraturas-da-glenoide-7240e61a"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "d8b11820a86385b56fe067f7b1515dc66bc889a1d22b24d50ff8794afb2ef670"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1314": {
+    "questaoSha256": "70297b9b35ca42961c0da3b2436896eeadea4bcf8c80c255390d25191d952c31",
+    "comentarioAnteriorSha256": "93aa420f7daf4318b6e4a74e8c77d2fca25625198bbe77ed466ae3bc3cb7f0f0",
+    "comentario": {
+      "conceito": "**A borda posterior foi a fratura glenoidal mais rara da série e se associou à subluxação ou luxação posterior.** O enunciado restringe a comparação às fraturas da fossa e à população do autor. Não se trata da distribuição de todas as fraturas escapulares nem de um ranking universal em qualquer serviço.\n\nNa tabela, borda posterior representa 4%; glenoide superior, 17%; borda anterior e glenoide inferior, 32% cada. As categorias têm mecanismos e padrões diferentes: o segmento anterior se relaciona à luxação anterior; o inferior, ao impacto da cabeça em abdução; o superior inclui a base intra-articular do coracoide.\n\nEssas relações ajudam a procurar a história compatível e a interpretar a tomografia. Uma porcentagem pequena não significa lesão sem importância. A borda posterior pode afetar estabilidade, e a conduta ainda depende de desvio, tamanho e comportamento da cabeça umeral.\n\n**Leia a tabela “Fraturas da glenoide na série do autor”, na Biblioteca.** Guarde população, região e mecanismo juntos, sem transferir frequências de um padrão para outro.\n\n**Por que esta questão foi criada.** O capítulo organiza a glenoide por padrões anatômicos e mecanismos. A questão cobra o menos frequente para obrigar a diferenciar a borda posterior da glenoide superior.",
+      "correta": "**D: borda posterior e subluxação ou luxação posterior.** É o par da série citada. O dado de 4% descreve a frequência entre as fraturas da glenoide analisadas, não entre todas as lesões do ombro.",
+      "incorretas": {
+        "A": "**A glenoide superior não foi a mais rara e não é o padrão ligado à luxação anterior na tabela.** Ela inclui a base do coracoide. Luxação anterior está associada à borda anteroinferior, outra categoria.",
+        "B": "**Mantém o mecanismo posterior e troca a região.** O padrão raro é a borda posterior, não o bloco superior com o coracoide. A direção do evento não deve ser ligada a uma peça anatômica diferente.",
+        "C": "**Acerta a borda rara e inverte a direção da instabilidade associada.** A fonte relaciona borda posterior à subluxação/luxação posterior; a anterior se relaciona à borda anteroinferior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-65e0de7d",
+          "fraturas-da-glenoide-41618adb"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "e0ceca5f49aea9fb53d031b25fb2874dddf7a872194f3a2f1ac931ed2e49214a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1315": {
+    "questaoSha256": "cc7f984577cb093f5225b8aa7036e21815f0d08228b4c2325cc39760ba34e0d9",
+    "comentarioAnteriorSha256": "603d4564d1d46f5bdcb5fd7b940a28b757bd15a3bc92e40f2f5d0bf02e44cc94",
+    "comentario": {
+      "conceito": "**A glenoide inferior fratura pelo impacto direto da cabeça umeral em abdução e é abordada habitualmente por Judet.** O mecanismo é diferente do arrancamento de uma borda durante a luxação. O fragmento inferior costuma carregar parte da borda lateral e traços no corpo.\n\nEssa extensão explica a via. A Judet permite tratar tanto a fossa inferior quanto o corpo por posterior. A cápsula é aberta junto à borda posterior para ver ou palpar a redução, e a fixação da superfície articular precisa ser integrada à reconstrução do corpo.\n\nA deltopeitoral é utilizada na borda anteroinferior e no coracoide. Não deve ser escolhida apenas porque “anteroinferior” e “inferior” compartilham uma palavra. Na glenoide inferior extensa, a necessidade de alcançar o corpo é parte decisiva do planejamento.\n\nA artroscopia tem utilidade nas bordas anterior e posterior, mas a fonte considera inadequado aplicá-la como solução desse padrão inferior propagado ao corpo. Menor incisão não compensa não controlar os fragmentos que precisam ser reduzidos.\n\n**Leia os padrões glenoidais e “Quando operar a glenoide”, na Biblioteca.** Relacione mecanismo, extensão do fragmento e acesso.\n\n**Por que esta questão foi criada.** O capítulo associa de forma específica o impacto em abdução à glenoide inferior. O simulado acrescenta a via para testar se o aluno entende por que a extensão ao corpo muda o tratamento.",
+      "correta": "**A: impacto da cabeça em abdução e via de Judet.** O mecanismo produz o padrão inferior, e a via posterior permite reconstruir a fossa junto do corpo comprometido.",
+      "incorretas": {
+        "B": "**Acerta o mecanismo e troca a via habitual.** A deltopeitoral atende outros padrões anteriores e do coracoide; não oferece a mesma exposição do corpo associada à glenoide inferior que justifica Judet.",
+        "C": "**Acerta Judet e usa o mecanismo da borda anterior.** A luxação anterior se associa ao arrancamento anteroinferior, enquanto a fonte atribui a glenoide inferior ao impacto da cabeça em abdução. Sem distinguir fragmento e mecanismo, duas lesões diferentes são fundidas.",
+        "D": "**Combina mecanismo e via de outro padrão.** Luxação anterior e deltopeitoral podem se relacionar à fratura da borda anteroinferior, mas a pergunta trata da glenoide inferior com extensão ao corpo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-65e0de7d",
+          "fraturas-da-glenoide-89479f30",
+          "fraturas-da-glenoide-797e1a7b",
+          "fraturas-da-glenoide-489d7853"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "49c63cbe3e3d8fd48c209029095e79f9b8cbae8c2fb80c1c28cb5442f83a0a42"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1316": {
+    "questaoSha256": "80de951006bd4bf38b7f9adc4173aece5c74e508491bb1ee09441ace2e9f23f8",
+    "comentarioAnteriorSha256": "be65dad6b393ac91b937d11864c881a3d8248b5d2bee7c1c618bd0485e76a677",
+    "comentario": {
+      "conceito": "**A fenda vertical que separa toda a metade anterior é o padrão para o qual o autor exige redução aberta e fixação.** A categoria “borda anteroinferior” reúne lesões de tamanhos e efeitos diferentes; não se pode aplicar a mesma conduta a todas.\n\nO resumo distingue borda periférica, saliência anteroinferior e fenda vertical. Fragmentos periféricos podem seguir conservadoramente, com possibilidade de abordagem artroscópica no jovem. A saliência desviada, especialmente instável, é fixada. Já a fenda que envolve toda a metade anterior representa um bloco maior e exige reconstrução aberta no esquema descrito.\n\nA via deltopeitoral permite a exposição desse segmento; parafusos de tração ou placa pequena são os recursos mencionados. O objetivo é congruência e estabilidade, e não simplesmente eliminar qualquer linha de fratura visível. Fragmento pequeno em um ombro estável não equivale a metade anterior separada.\n\nO impacto em abdução é o mecanismo destacado para glenoide inferior, geralmente com extensão ao corpo, abordada por Judet. É outra distinção necessária para não confundir “parte inferior” com toda a categoria anteroinferior.\n\n**Leia “Quando operar a glenoide”, na Biblioteca.** Identifique qual dos três padrões anteriores existe antes de escolher a via ou o método.\n\n**Por que esta questão foi criada.** As indicações de fixação glenoidal aparecem em provas com tamanho, desvio e estabilidade. O simulado usa um padrão anatômico que muda diretamente a necessidade de redução aberta.",
+      "correta": "**B: fenda vertical de toda a metade anterior.** É o padrão nomeado como exigindo redução aberta e fixação. A extensão do fragmento e a restauração da articulação diferenciam-no das pequenas fraturas periféricas estáveis.",
+      "incorretas": {
+        "A": "**A borda periférica não recebe indicação aberta obrigatória.** O resumo admite conservador e considera artroscopia no jovem. A palavra “borda” sozinha não informa uma lesão do tamanho e do comportamento da fenda de toda a metade anterior.",
+        "C": "**Pequeno fragmento com ombro estável favorece tratamento conservador na descrição.** Não há a instabilidade ou a extensão anatômica que faria desse item a indicação inequívoca pedida. Uma fratura articular não exige aberta apenas por alcançar a articulação.",
+        "D": "**Aponta o mecanismo da glenoide inferior, outra categoria do capítulo.** Quando se opera esse padrão propagado ao corpo, a via habitual é Judet. A pergunta pede um subtipo da borda anteroinferior, não o mecanismo de outro fragmento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-d94ae394",
+          "fraturas-da-glenoide-797e1a7b",
+          "fraturas-da-glenoide-89479f30",
+          "fraturas-da-glenoide-65e0de7d"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "eea3c09570115b0dca74c2896a21d4febb45d056fe62e5602b0908db3bd3c088"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1317": {
+    "questaoSha256": "321e62f25eba475f80d139919cbd6ebb05e6349e50ffe1e004bece7dfeb76f30",
+    "comentarioAnteriorSha256": "f84e527b1fe04e219ccd0e79f7610bb91a328db49b0183864d635755bd304962",
+    "comentario": {
+      "conceito": "**Para a glenoide superior, o autor usa desvio articular maior que 4 mm ou risco de impacto do coracoide.** São duas razões distintas: incongruência da superfície e interferência mecânica do processo que acompanha o fragmento.\n\nEsse padrão é uma fratura intra-articular da base do coracoide. O fragmento leva uma parte superior da fossa e pode variar de tamanho. O polo superior é menos crítico que a área circular inferior, permitindo tolerar alguma incongruência, mas isso não elimina a indicação quando o desvio é relevante ou o coracoide ameaça impacto.\n\nA fixação é difícil por causa da tração muscular no coracoide. O resumo descreve parafusos de tração canulados através dele até a glenoide ou o colo. Portanto, o processo não é apenas um nome usado para classificar; sua posição e suas forças entram na indicação e na técnica.\n\nO supraescapular é importante em acessos e na instrumentação do colo, mas o resumo não o coloca como a segunda condição desta regra. Não se deve substituir um problema de impacto mecânico por uma ameaça neural apenas porque ambos seriam clinicamente relevantes.\n\n**Leia o item “Glenoide superior”, em “Quando operar a glenoide”, na Biblioteca.** Diferencie o limite do degrau da indicação independente por impacto.\n\n**Por que esta questão foi criada.** O capítulo diferencia a tolerância do polo superior da área de contato inferior. O simulado testa a exceção de impacto do coracoide, que uma regra baseada só em milímetros deixaria passar.",
+      "correta": "**C: mais de 4 mm ou risco de impacto do coracoide.** O limite articular e a ameaça mecânica são alternativas de indicação na descrição do autor. Não é necessário presumir que ambos coexistam.",
+      "incorretas": {
+        "A": "**Reduz o limite a 2 mm e troca impacto por lesão neural.** Nenhum dos dois componentes reproduz a regra específica. Risco ao supraescapular exige cuidado técnico, mas não é a condição que completa essa indicação glenoidal superior.",
+        "B": "**Acerta o impacto e usa um limite articular menor que o informado.** A tolerância relativa do polo superior não corresponde a operar automaticamente por mais de 2 mm. O valor da fonte é maior que 4 mm.",
+        "D": "**Acerta o limite e substitui a segunda razão.** O resumo considera impacto do coracoide, ligado à posição do fragmento. A alternativa mudaria uma condição mecânica específica por um risco neural não apresentado nessa regra."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-d94ae394",
+          "fraturas-da-glenoide-e47df132",
+          "fraturas-da-glenoide-65e0de7d"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "ebe16c9aa74628d14c51df09ce085e82764ff3ff752b86d1df6b1892786211d1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1318": {
+    "questaoSha256": "18306f1575fec145eb7677ac637da22322e18371a46d1c49f804bff02bee98bf",
+    "comentarioAnteriorSha256": "b4b2d9dcbab337cc7dd6b7ed2ede8b0900eed134a36585e633493fff1e0cd8f7",
+    "comentario": {
+      "conceito": "**A glenoide inferior propagada ao corpo é o padrão inadequado para redução e fixação assistidas por artroscopia no capítulo.** O motivo é a extensão da reconstrução: não basta restaurar uma superfície acessível dentro da articulação se o corpo e a borda lateral também precisam ser reduzidos.\n\nA artroscopia serve principalmente às bordas anterior e posterior, menos à glenoide superior. Já o padrão inferior costuma separar um a dois terços distais da fossa com parte da borda lateral e traços no corpo. A via de Judet permite tratar a glenoide e o corpo em conjunto.\n\nAssim, a decisão não depende apenas de qual técnica produz menor incisão. Depende de conseguir identificar, reduzir e estabilizar todos os fragmentos relevantes. Ver uma parte da superfície articular não garante controlar a deformidade extra-articular associada.\n\n**Leia “Quando operar a glenoide”, na Biblioteca.** Compare a fratura de borda localizada com a fossa inferior que se continua no corpo; essa extensão é o dado que muda o acesso.\n\n**Por que esta questão foi criada.** O TARO 2026 perguntou onde a artroscopia é mais indicada. O simulado inverte o raciocínio e pede o padrão em que a extensão da lesão limita sua utilização.",
+      "correta": "**D: glenoide inferior que se propaga ao corpo.** É o padrão explicitamente excluído da indicação artroscópica apresentada. O tratamento cirúrgico habitual utiliza Judet para reconstruir as duas regiões.",
+      "incorretas": {
+        "A": "**A borda anterior está entre as principais aplicações artroscópicas.** Um fragmento de borda não deve ser equiparado a uma grande fratura da fossa inferior com traços no corpo. O padrão exato e a estabilidade ainda orientam a seleção.",
+        "B": "**A borda posterior também pode receber tratamento artroscópico.** A fonte a inclui entre as aplicações, quando houver indicação de operar. Não é o padrão cuja extensão ao corpo motiva a contraindicação da pergunta.",
+        "C": "**A glenoide superior é menos adequada que as bordas em muitos casos, mas não é a exclusão explícita escolhida pelo capítulo.** A pergunta exige distinguir menor uso de inadequação do padrão inferior propagado ao corpo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-489d7853",
+          "fraturas-da-glenoide-89479f30",
+          "fraturas-da-glenoide-65e0de7d"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "189a9758208a52f55f61c4576995bb7a5e9a967620a35c9f7cb663189896b4bf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1319": {
+    "questaoSha256": "ddb8f89b06d6b6d762d4e64de501efc0144656178421e7378c79c213805afa9d",
+    "comentarioAnteriorSha256": "041dbbf493bde1b4ffbe55760963b4606768aeb625554bb4cd39f49e4a73dde3",
+    "comentario": {
+      "conceito": "**No colo anatômico, a glenoide vai para distal e valgo, e o ângulo glenopolar aumenta.** É a exceção importante à lembrança de que um ângulo muito pequeno sugere deformidade: uma fratura grave também pode produzir um valor excessivamente alto.\n\nO traço anatômico separa a fossa sem levar a base do coracoide. O bloco tem conexões diferentes das do colo cirúrgico, cujo fragmento inclui o coracoide. No padrão anatômico, a fonte descreve alargamento subacromial e ângulo que pode atingir 70 graus.\n\nA faixa padrão informada para o ângulo na AP verdadeira é 35 a 51 graus, com valor de referência de 41. No algoritmo relativo, menos de 20 ou mais de 60 favorecem cirurgia em paciente apropriado. Esses limites não substituem identificar o tipo de fratura nem são universalmente padronizados.\n\n**Não basta verificar se o ângulo está acima de 20.** A normalidade exige considerar os dois extremos e, sobretudo, o padrão. A reconstrução 3D ajuda a diferenciar a glenoide verdadeiramente separada de uma aparente medialização causada por fratura do corpo.\n\n**Leia as fraturas do colo e as ressalvas do ângulo glenopolar, na Biblioteca.** Relacione a direção do fragmento à mudança da medida.\n\n**Por que esta questão foi criada.** O TECOC cobrou distal e valgo no colo anatômico. O simulado acrescenta o aumento do ângulo, evitando que a regra de menos de 20 graus seja aplicada isoladamente a todos os padrões.",
+      "correta": "**A: distal e em valgo; aumenta.** Os dois elementos pertencem ao colo anatômico. O aumento pode ser expressivo, razão para não considerar todo valor acima de 20 graus tranquilizador.",
+      "incorretas": {
+        "B": "**Acerta a direção e inverte a mudança angular.** Nesse padrão, o resumo descreve aumento, inclusive até cerca de 70 graus. O ponto de corte inferior lembrado em outras fraturas não determina a direção da alteração aqui.",
+        "C": "**Acerta o aumento e troca valgo por varo.** O varo é destacado no transespinhal, que tem outro trajeto e outro fragmento. A pergunta nomeia colo anatômico, e os dois componentes precisam corresponder a ele.",
+        "D": "**Inverte a angulação e a alteração da medida.** O colo anatômico não segue a combinação varo com redução do ângulo oferecida. A leitura correta é distal, valgo e ângulo aumentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula; Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula",
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "46ce584f9b80c340c34eb8d6516aaed7d5620b5d392ce052d3967d5fdd27926f"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
