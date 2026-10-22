@@ -8,6 +8,10 @@ regras antigas de brevidade, limites de caracteres e proibição de tabelas/list
 
 Referência aprovada: [docs/exemplos/mao-0853.json](docs/exemplos/mao-0853.json).
 
+**Padrão do site desde 22/10/2026: comentário em formato de miniaula**, com tamanho flexível e citação moderada
+(na mão, Green com página, só no computador com os livros). Prompt: [docs/prompts/comentarios-miniaula.md](docs/prompts/comentarios-miniaula.md);
+referência: [docs/exemplos/mao-2164.json](docs/exemplos/mao-2164.json).
+
 **Capítulo enviado pelo Tales ("faça resumo disso", "questões e resumo", PDF sem comentário):** siga sozinho, sem pedir
 confirmação, o roteiro [docs/biblioteca/PILOTO-AUTOMATICO.md](docs/biblioteca/PILOTO-AUTOMATICO.md): o que cada pedido curto
 quer dizer, OrtoQuestões Simulados primeiro, resumo no mesmo jeito de escrever dos anteriores, conferir e publicar.
