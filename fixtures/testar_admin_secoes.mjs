@@ -179,7 +179,10 @@ try {
     for (const x of modelos.filter(x => x.grupo === 'campanha')) assert.ok(/candidatos_|Agendador/.test(x.gatilho.quando) && /cadência/.test(x.gatilho.paraQuem), `${x.id}: gatilho da campanha`)
     for (const x of modelos) {
       assert.ok(x.rotulo && x.descricao && x.gatilho.quando.length >= 10 && x.gatilho.paraQuem.length >= 10 && x.pessoa, `${x.id}: faltou rótulo, descrição, gatilho ou pessoa`)
-      assert.ok(x.versoes >= 5 && x.versoes <= 7, `${x.id}: ${x.versoes} versões`)
+      // Pedido do Tales (22/10/2026): as boas-vindas têm uma versão só, fixa.
+      const unica = x.tipo === 'boas_vindas_dia0'
+      if (unica) assert.equal(x.versoes, 1, `${x.id}: deve ter uma versão só`)
+      else assert.ok(x.versoes >= 5 && x.versoes <= 7, `${x.id}: ${x.versoes} versões`)
       const carta = cat.amostraDe(x, cat.sementeInicial(x))
       assert.equal(carta.tipo, x.tipo, x.id)
       if (x.faixa) assert.equal(carta.faixa, x.faixa)
@@ -187,7 +190,7 @@ try {
       // Sortear: outra semente dá outra versão (há sempre 5 ou mais).
       let k = 0
       const outra = cat.amostraDe(x, cat.outraSemente(x, carta.versao, () => (k += 0.137) % 1))
-      assert.notEqual(outra.versao, carta.versao, `${x.id}: sortear não trocou a versão`)
+      if (!unica) assert.notEqual(outra.versao, carta.versao, `${x.id}: sortear não trocou a versão`)
       assert.ok(cat.combinaBusca(x, carta, x.rotulo.slice(0, 8)), 'busca pelo rótulo')
       assert.ok(cat.combinaBusca(x, carta, carta.assunto.split(' ').slice(-1)[0]), 'busca pelo assunto')
     }
