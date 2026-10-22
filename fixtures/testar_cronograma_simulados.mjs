@@ -1,4 +1,4 @@
-// Sessões do cronograma: de 2 a 6 OrtoQuestões Simulados (no máximo ~30%), espalhados pela sessão.
+// Sessões do cronograma: 2 OrtoQuestões Simulados a cada 10 oficiais (um sexto da sessão), espalhados.
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
@@ -23,10 +23,10 @@ try {
         assert.equal(new Set(ids).size, ids.length, `${tema.slug}: repetida`)
         assert.ok(ids.length <= n, `${tema.slug} n=${n}: passou do tamanho`)
         const posicoes = ids.map((id, i) => (sim.has(id) ? i : -1)).filter((i) => i >= 0)
-        const { minimo, maximo } = m.faixaSimulados(n)
+        const cota = m.simuladosNaSessao(n)
         if (oficiaisDoTema >= n) {
           assert.equal(ids.length, n, `${tema.slug} n=${n}: tamanho`)
-          assert.ok(posicoes.length >= minimo && posicoes.length <= maximo, `${tema.slug} n=${n}: ${posicoes.length} simulados fora de ${minimo}..${maximo}`)
+          assert.equal(posicoes.length, cota, `${tema.slug} n=${n}: ${posicoes.length} simulados, esperado ${cota}`)
           // Espalhados: o 1º simulado cai na primeira faixa da sessão.
           if (posicoes.length) { comSim++; if (posicoes[0] < Math.ceil(n / posicoes.length)) primeiraNoComeco++ }
         }
@@ -36,5 +36,15 @@ try {
     }
   }
   assert.equal(primeiraNoComeco, comSim, 'algum simulado não caiu na primeira faixa')
-  console.log(`Cronograma com simulados: ${casos} sessões, faixa de 2 a 6 e simulados espalhados.`)
+  assert.deepEqual([6, 10, 12, 30, 60].map(m.simuladosNaSessao), [1, 2, 2, 5, 10], 'proporção de 2 a cada 10')
+  // Sessão com várias áreas: a cota é do dia inteiro, não um mínimo por área.
+  const slugs = indice.temas.map((t) => t.slug)
+  for (let rep = 0; rep < 50; rep++) {
+    const a = slugs[rep % slugs.length], b = slugs[(rep + 3) % slugs.length], c = slugs[(rep + 5) % slugs.length]
+    const ids = m.idsDoDiaPlano(indice, [{ slug: a, n: 21, mistura: false }, { slug: b, n: 5, mistura: true }, { slug: c, n: 4, mistura: true }], {}, true)
+    assert.equal(new Set(ids).size, ids.length, 'sessão com repetida')
+    assert.equal(ids.length, 30, 'sessão de 30 incompleta')
+    assert.equal(ids.filter((id) => sim.has(id)).length, 5, 'sessão de 30 deveria ter 5 simulados')
+  }
+  console.log(`Cronograma com simulados: ${casos} sessões, 2 a cada 10 oficiais e simulados espalhados.`)
 } finally { await rm(pasta, { recursive: true, force: true }) }

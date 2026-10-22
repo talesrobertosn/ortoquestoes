@@ -239,7 +239,7 @@ export function CartaoSimulados({ plano, feitas, total, acerto, aoIncluir }: { p
         </div>
       </div>
       <div className="pe-simulados__acoes">
-        {incluidos ? <p className="pe-simulados__ok"><Icone nome="certo" tamanho={15} /> Já entram no seu cronograma: de 2 a 6 por sessão.</p> : <button type="button" className="botao botao--principal" onClick={aoIncluir}>Incluir no cronograma</button>}
+        {incluidos ? <p className="pe-simulados__ok"><Icone nome="certo" tamanho={15} /> Já entram no seu cronograma: 2 a cada 10 questões oficiais.</p> : <button type="button" className="botao botao--principal" onClick={aoIncluir}>Incluir no cronograma</button>}
         <a className="botao" href={href('/treinar?simulados=1')}>Treinar só simulados</a>
       </div>
     </section>
