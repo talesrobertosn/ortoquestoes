@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 65 | 10 | mao-2106 a mao-2170 | A 17, B 16, C 16, D 16 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 70 | 10 | mao-2106 a mao-2175 | A 19, B 17, C 17, D 17 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -113,8 +113,8 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Etapa (1) concluída em 22/10/2026:** revisao_01 a 09 refazem mao-2106 a 2150 (medianas por questão de 3.500 a 4.200
    caracteres). Na 2143 a alternativa B virou extensor ulnar do carpo, porque o Green cita OMER com o FDS (p. 1223).
    PR #456 leva as revisões 01 a 07; as 08 e 09 vão no próximo push. Etapa (2) em curso: lote 12 publicado no padrão
-   (mao-2151 a 2155, PR #456 já juntado antes dele). Lotes 13 a 15 publicados (mao-2156 a 2170; PR #457 leva 12 a 14). Próximo: lote 16.
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 16** (29, 93, 97, 83, 94; lotes 01 a 15 publicados: mao-2106 a mao-2170; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+   (mao-2151 a 2155, PR #456 já juntado antes dele). Lotes 13 a 16 publicados (mao-2156 a 2175; PR #457 juntado com 12 a 14). Próximo: lote 17.
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 17** (48, 88, 30, 99, 31; lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -429,7 +429,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 26 | Mão torta ulnar: anomalia associada | fato | cap. 38 p. 1500 | mao / Deficiências longitudinais e mão torta | 13 | mao-2160 | publicada (diverge do oficial HOLT-ORAM: Green dá deficiência fibular) |
 | 27 | WATERS: tipo pela tomografia do ombro | classificação, figura | cap. 40 p. 1581 e 1582 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2162 | publicada (sem a tomografia: descreve a falsa glenoide, tipo IV) |
 | 28 | Enxerto de pele: o que restaura a sensibilidade | fato | cap. 44 p. 1702 | mao / Cicatrização e enxertos de pele | 15 | mao-2166 | publicada |
-| 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 p. 1747 | mao / Microcirurgia e retalhos livres | 16 | mao-2171 | publicada |
 | 30 | SDRC tipo 2: em que situação | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 |  | a fazer |
 | 31 | Tendinite calcária na mão e punho: tendão mais comum | fato | cap. 56 | mao / Dedo em gatilho e outras tenossinovites | 17 |  | a fazer |
 | 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
@@ -483,7 +483,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
 | 81 | Macrodactilia: forma mais comum | fato | cap. 36 p. 1438 | mao / Outras malformações congênitas | 12 | mao-2155 | publicada |
 | 82 | Retalho inguinal: artéria e onde emerge | anatomia | cap. 44 p. 1736 | mao / Retalhos e cobertura cutânea | 15 | mao-2169 | publicada (original com A e B iguais; refeita) |
-| 83 | Enxerto vascularizado do côndilo femoral medial: área da figura | figura | cap. 46 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 83 | Enxerto vascularizado do côndilo femoral medial: área da figura | figura | cap. 46 p. 1800 e 1801 | mao / Microcirurgia e retalhos livres | 16 | mao-2174 | publicada (sem a figura) |
 | 84 | Carpo fraturado em atletas de raquete, golfe e beisebol | fato | cap. 16, p. 718 | mao / Fraturas do escafoide e do carpo | 07 | mao-2131 | publicada |
 | 85 | Desfiladeiro torácico: local mais comum de compressão | fato | cap. 29, p. 1129 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2140 | publicada |
 | 86 | Dedo mínimo abduzido na paralisia ulnar: transferência | transferência | cap. 31, p. 1223 | mao / Transferências tendinosas e paralisias | 10 | mao-2143 | publicada |
@@ -493,11 +493,11 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 90 | Embriologia: blastemas e tensão de oxigênio | fato | cap. 35 p. 1368 | mao / Outras malformações congênitas | 12 | mao-2151 | publicada (distrator refeito: B e D iguais na original) |
 | 91 | BLAUTH: tipos com indicação de policização | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2158 | publicada |
 | 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 p. 1653 | mao / Amputações e reimplantes | 14 | mao-2165 | publicada |
-| 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
-| 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 | mao / Retalhos e cobertura cutânea | 16 |  | a fazer |
+| 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 p. 1767 | mao / Microcirurgia e retalhos livres | 16 | mao-2172 | publicada |
+| 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 p. 1859 a 1862 | mao / Retalhos e cobertura cutânea | 16 | mao-2175 | publicada (GILLIES só citado como fora de uso; pergunta a osteoplástica clássica) |
 | 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
 | 96 | ENNEKING: estágio IIA | classificação | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
-| 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
+| 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 p. 1756 | mao / Microcirurgia e retalhos livres | 16 | mao-2173 | publicada (pergunta o ramo do retalho lateral do braço: 'mais calibroso' não está no Green) |
 | 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
 | 99 | SECRETAN: causa | fato | cap. 54 | mao / Outros temas da mão | 17 |  | a fazer |
 | 100 | Capsulotomia volar da IFP: marco dos ligamentos checkrein | anatomia | cap. 10, p. 387 e 400 | mao / Deformidades dos dedos | 04 | mao-2121 | publicada |
