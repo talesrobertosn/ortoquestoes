@@ -14,7 +14,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
-| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 5 | 8 | mao-2189 a mao-2193 | A 2, B 1, C 1, D 1 |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 10 | 8 | mao-2189 a mao-2198 | A 3, B 2, C 2, D 3 |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
@@ -120,7 +120,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Próximo (etapa 3 do 6b): refazer os comentários da SBCM 2024** (mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669)
    no padrão profundo, como `lotes/sbcm-2022/revisao_01.py` a `revisao_09.py` (atalho `_comentario.py` na pasta
    `lotes/sbcm-2024/`, mesmo enunciado e gabarito). Depois SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021 e ENARE.
-   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 18 feitas: SBCM 2024 inteira refeita no padrão profundo (mao-2023 a 2105 e ombro-cotovelo-0664 a 0669), em 22/10/2026. Aprofundar depois as revisões 02, 15 e 18 (mediana abaixo de 3.500 caracteres). Próximo: SBCM 2023, fase 0 concluída; lote_01 aplicado e validado (mao-2189 a mao-2193); escrever lote_02 (76, 77, 38, 19, 78), próximo id mao-2194. Lotes locais em `lotes/sbcm-2023/`.
+   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 18 feitas: SBCM 2024 inteira refeita no padrão profundo (mao-2023 a 2105 e ombro-cotovelo-0664 a 0669), em 22/10/2026. Aprofundar depois as revisões 02, 15 e 18 (mediana abaixo de 3.500 caracteres). Próximo: SBCM 2023, fase 0 concluída; lotes 01 e 02 aplicados e validados (mao-2189 a mao-2198); próximo lote_03 (91, 40, 79, 34, 37), próximo id mao-2199. Conferir a figura da 37 e as páginas corretas da 79 antes de escrever. Lotes locais em `lotes/sbcm-2023/`.
 7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **SBCM 2022 fechada em 22/10/2026** (ver 6b; antes: lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
@@ -545,7 +545,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 16 | Artropatias: padrão simétrico e poliarticular | comparação | cap. 55, p. 2044 (pista) | mao / Mão reumatoide | 16 |  | a fazer |
 | 17 | Queimadura química: indicação de gluconato de cálcio | conduta | cap. 57, p. 2144 (pista) | mao / Queimaduras | 17 |  | a fazer |
 | 18 | Aneurisma ulnar traumático: camada arterial lesada | mecanismo | cap. 60, p. 2242 (pista) | mao / Outros temas da mão | 18 |  | a fazer |
-| 19 | DUPUYTREN: associação com índice de massa corporal baixo | associação | cap. 4, p. 149 (pista) | mao / Doença de Dupuytren | 02 |  | a fazer |
+| 19 | DUPUYTREN: associação com índice de massa corporal baixo | associação | cap. 4, p. 149 | mao / Doença de Dupuytren | 02 | mao-2197 | publicada |
 | 20 | DURAN: excursão tendínea para evitar aderências | número | cap. 6, p. 224 e 225 | mao / Lesões dos tendões flexores | 01 | mao-2192 | publicada |
 | 21 | Fusão escafocapitato: indicação na pseudartrose | conduta | cap. 12, p. 443 (pista) | mao / Artrose do punho e artroscopia | 04 |  | a fazer |
 | 22 | Reconstrução ligamentar da fileira proximal pela figura | técnica, figura | cap. 13, p. 544 (pista) | mao / Instabilidade do carpo | 05 |  | pendente: conferir figura |
@@ -564,7 +564,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 35 | MANNERFELT: ruptura do flexor longo do polegar | epônimo | cap. 55, p. 2061 (pista) | mao / Mão reumatoide | 17 |  | a fazer |
 | 36 | Queimadura: profundidade de maior dor | comparação | cap. 57, p. 2123 (pista) | mao / Queimaduras | 17 |  | a fazer |
 | 37 | Eponíquio, polia e colateral nas letras da figura | anatomia, figura | cap. 10, p. 389 (pista) | mao / Lesões ligamentares dos dedos | 03 |  | pendente: conferir figura |
-| 38 | Tenossinovite tuberculosa: dactilite e corpos de arroz | diagnóstico | cap. 3, p. 110 (pista) | mao / Infecções da mão | 02 |  | a fazer |
+| 38 | Tenossinovite tuberculosa: dactilite e corpos de arroz | diagnóstico | cap. 3, p. 91, 96, 97, 109 e 110 | mao / Infecções da mão | 02 | mao-2196 | publicada (corpos de arroz não são patognomônicos) |
 | 39 | Sutura flexora: fios múltiplos e resistência ao longo do tempo | comparação | cap. 6, p. 217 e 225 | mao / Lesões dos tendões flexores | 01 | mao-2193 | publicada |
 | 40 | Juntura intertendinosa interposta na luxação MCF | mecanismo | cap. 8, p. 347 (pista) | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
 | 41 | Prótese IFP de pirocarbono: quanto preservar dos colaterais | técnica | cap. 11, p. 417 (pista) | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
@@ -602,9 +602,9 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 73 | Bíceps distal: neuropraxia na via anterior única | complicação | cap. 25, p. 1036 (pista) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
 | 74 | Cisto ósseo aneurismático: osso mais acometido na mão | fato | cap. 59, p. 2222 (pista) | mao / Tumores da mão | 18 |  | a fazer |
 | 75 | Ligamentos volares do punho nas letras da figura | anatomia, figura | cap. 13, p. 490 (pista) | mao / Instabilidade do carpo | 05 |  | pendente: conferir figura |
-| 76 | Panarício herpético: distribuição digital | fato | cap. 2, p. 52 (pista) | mao / Infecções da mão | 02 |  | a fazer |
-| 77 | PARONA: origem da disseminação pelos flexores | anatomia | cap. 2, p. 2 (pista) | mao / Infecções da mão | 02 |  | a fazer |
-| 78 | Rotação viciosa isolada do metacarpo: sítio de osteotomia | conduta | cap. 7, p. 280-281 (pista) | mao / Fraturas dos metacarpos e falanges | 02 |  | a fazer |
+| 76 | Panarício herpético: distribuição digital | fato | cap. 2, p. 52 e 53 | mao / Infecções da mão | 02 | mao-2194 | publicada |
+| 77 | PARONA: origem da disseminação pelos flexores | anatomia | cap. 2, p. 33 e 34 | mao / Infecções da mão | 02 | mao-2195 | publicada (mínimo entre os dedos oferecidos; também pode vir do polegar) |
+| 78 | Rotação viciosa isolada do metacarpo: sítio de osteotomia | conduta | cap. 7, p. 280 e 281 | mao / Fraturas dos metacarpos e falanges | 02 | mao-2198 | publicada |
 | 79 | BENNETT: ligamento que mantém o fragmento menor | anatomia | cap. 8, p. 7 (pista) | mao / Lesões ligamentares dos dedos | 03 |  | a fazer |
 | 80 | Punho: fração de carga pela fossa semilunar | número | cap. 13, p. 496 (pista) | mao / Instabilidade do carpo | 05 |  | a fazer |
 | 81 | Membrana interóssea: bandas na figura | anatomia, figura | cap. 21, p. 21 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | pendente: conferir figura |
