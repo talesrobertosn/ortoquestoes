@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 26 | 9 | mao-2106 a mao-2131 | A 7, B 7, C 6, D 6 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 31 | 9 | mao-2106 a mao-2136 | A 8, B 8, C 7, D 8 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -104,7 +104,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    "Eficiência de desenvolvimento e GitHub Actions"). Divergências registradas nos comentários: mao-1753
    (enxerto de nervo: cap. 30 cerca de 3 semanas, cap. 43 1 a 2 semanas) e mao-1783 (Garcia-Elias: a
    alternativa chama de estágio 5 o irredutível, que na Tabela 13.4 do Green é o 6).
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 08** (lotes 01 a 07 publicados: mao-2106 a mao-2131; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38 e 74, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 09** (lotes 01 a 08 publicados: mao-2106 a mao-2136; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38 e 74, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -391,7 +391,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
-| 1 | Ligamento de STRUTHERS: músculo de inserção anômala | anatomia | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 1 | Ligamento de STRUTHERS: músculo de inserção anômala | anatomia | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2133 | publicada |
 | 2 | FERNANDEZ (rádio distal): tipo com suspeita de lesão escafossemilunar | classificação | cap. 15, p. 615 (Fig. 15.15) | mao / Fratura do rádio distal | 06 | mao-2129 | publicada |
 | 3 | Banda sagital, lesão fechada: banda e dedos mais acometidos | fato | cap. 5, p. 185 e 204 | mao / Lesões dos tendões extensores | 02 | mao-2110 | publicada |
 | 4 | LICHTMAN: grau IV do teste de instabilidade mediocárpica | classificação | cap. 13, p. 539 | mao / Instabilidade do carpo | 05 | mao-2124 | publicada (gabarito pelo Green: grau IV = C; o oficial D é o grau V) |
@@ -413,7 +413,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14, p. 574 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2127 | publicada |
 | 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: depende da foto |
 | 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
-| 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28, p. 1103 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2135 | publicada |
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33 | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
 | 25 | Polidactilia central: dedo mais duplicado | fato | cap. 36 | mao / Sindactilia e polidactilia | 12 |  | a fazer |
 | 26 | Mão torta ulnar: anomalia associada | fato | cap. 38 (3 alternativas no original) | mao / Deficiências longitudinais e mão torta | 13 |  | a fazer |
@@ -423,10 +423,10 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 30 | SDRC tipo 2: em que situação | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 |  | a fazer |
 | 31 | Tendinite calcária na mão e punho: tendão mais comum | fato | cap. 56 | mao / Dedo em gatilho e outras tenossinovites | 17 |  | a fazer |
 | 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
-| 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28 (mesmo ligamento da 1, outro ângulo) | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2134 | publicada |
 | 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | pendente: figura com letras |
 | 35 | Melanoma que surge junto a um nevo | fato | cap. 58, p. 2171 | mao / Tumores da mão | 03 | mao-2118 | publicada |
-| 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28 | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2136 | publicada (alternativa B ajustada: duas eram certas pelo Green) |
 | 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6, p. 245 | mao / Lesões dos tendões flexores | 02 | mao-2112 | publicada |
 | 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10, p. 399 | mao / Deformidades dos dedos | 04 |  | pendente: sem fonte (frase dos 5 a 7 dias cortada na tradução) |
 | 39 | LEECHAVENGVONGS: ramo doador e alvo | técnica | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
@@ -455,7 +455,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
 | 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24 (arquivo 23) | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
 | 64 | Síndrome do interósseo posterior: intervalo do acesso anterior | técnica | cap. 28 | mao / Neuropatia ulnar e outras compressões | 09 |  | a fazer |
-| 65 | Portal 6-U: uso principal | técnica | cap. 17 | mao / Artrose do punho e artroscopia | 08 |  | a fazer |
+| 65 | Portal 6-U: uso principal | técnica | cap. 17, p. 762, 763 e 765 | mao / Artrose do punho e artroscopia | 08 | mao-2132 | publicada (Green: 6-U é portal de saída; o gabarito falava em entrada) |
 | 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34 | mao / Plexo braquial e paralisia obstétrica | 11 |  | a fazer |
 | 67 | Deficiência transversal: exemplo | classificação | cap. 36 | mao / Outras malformações congênitas | 12 |  | a fazer |
 | 68 | MADELUNG: afirmativas | afirmativas | cap. 38 | mao / Deficiências longitudinais e mão torta | 14 |  | a fazer |
