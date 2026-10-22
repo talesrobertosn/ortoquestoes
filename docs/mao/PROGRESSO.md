@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 55 | 10 | mao-2106 a mao-2160 | A 14, B 14, C 14, D 13 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 60 | 10 | mao-2106 a mao-2165 | A 16, B 15, C 15, D 14 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -113,8 +113,8 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Etapa (1) concluída em 22/10/2026:** revisao_01 a 09 refazem mao-2106 a 2150 (medianas por questão de 3.500 a 4.200
    caracteres). Na 2143 a alternativa B virou extensor ulnar do carpo, porque o Green cita OMER com o FDS (p. 1223).
    PR #456 leva as revisões 01 a 07; as 08 e 09 vão no próximo push. Etapa (2) em curso: lote 12 publicado no padrão
-   (mao-2151 a 2155, PR #456 já juntado antes dele). Lote 13 publicado (mao-2156 a 2160). Próximo: lote 14.
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 14** (68, 27, 69, 87, 92; lotes 01 a 13 publicados: mao-2106 a mao-2160; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+   (mao-2151 a 2155, PR #456 já juntado antes dele). Lotes 13 e 14 publicados (mao-2156 a 2165). Próximo: lote 15.
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 15** (28, 70, 71, 82, 12; lotes 01 a 14 publicados: mao-2106 a mao-2165; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -427,7 +427,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33, p. 1268 (Tabela 33.3) | mao / Transferências tendinosas e paralisias | 10 | mao-2145 | publicada |
 | 25 | Polidactilia central: dedo mais duplicado | fato | cap. 36 p. 1387 | mao / Sindactilia e polidactilia | 12 | mao-2153 | publicada |
 | 26 | Mão torta ulnar: anomalia associada | fato | cap. 38 p. 1500 | mao / Deficiências longitudinais e mão torta | 13 | mao-2160 | publicada (diverge do oficial HOLT-ORAM: Green dá deficiência fibular) |
-| 27 | WATERS: tipo pela tomografia do ombro | classificação, figura | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 27 | WATERS: tipo pela tomografia do ombro | classificação, figura | cap. 40 p. 1581 e 1582 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2162 | publicada (sem a tomografia: descreve a falsa glenoide, tipo IV) |
 | 28 | Enxerto de pele: o que restaura a sensibilidade | fato | cap. 44 | mao / Cicatrização e enxertos de pele | 15 |  | a fazer |
 | 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
 | 30 | SDRC tipo 2: em que situação | fato | cap. 53 | mao / Síndrome da dor complexa regional | 17 |  | a fazer |
@@ -468,8 +468,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 65 | Portal 6-U: uso principal | técnica | cap. 17, p. 762, 763 e 765 | mao / Artrose do punho e artroscopia | 08 | mao-2132 | publicada (Green: 6-U é portal de saída; o gabarito falava em entrada) |
 | 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34, p. 1313 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2150 | publicada (distratores trocados por relações do Green) |
 | 67 | Deficiência transversal: exemplo | classificação | cap. 36 p. 1402 | mao / Outras malformações congênitas | 12 | mao-2154 | publicada |
-| 68 | MADELUNG: afirmativas | afirmativas | cap. 38 | mao / Deficiências longitudinais e mão torta | 14 |  | a fazer |
-| 69 | MALLET: grau pelo exame do ombro | classificação | cap. 40 | mao / Plexo braquial e paralisia obstétrica | 14 |  | a fazer |
+| 68 | MADELUNG: afirmativas | afirmativas | cap. 38 p. 1503 a 1508 | mao / Deficiências longitudinais e mão torta | 14 | mao-2161 | publicada (alternativa do trauma repetitivo refeita) |
+| 69 | MALLET: grau pelo exame do ombro | classificação | cap. 40 p. 1564 | mao / Plexo braquial e paralisia obstétrica | 14 | mao-2163 | publicada |
 | 70 | Zetaplastia: ganho de comprimento pelo ângulo | número | cap. 44 (ângulo faltando no original) | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
 | 71 | Retalho inguinal: a circunflexa ilíaca superficial | afirmativas | cap. 44 e 45 | mao / Retalhos e cobertura cutânea | 15 |  | a fazer |
 | 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57 | mao / Queimaduras | 18 |  | a fazer |
@@ -487,12 +487,12 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 84 | Carpo fraturado em atletas de raquete, golfe e beisebol | fato | cap. 16, p. 718 | mao / Fraturas do escafoide e do carpo | 07 | mao-2131 | publicada |
 | 85 | Desfiladeiro torácico: local mais comum de compressão | fato | cap. 29, p. 1129 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2140 | publicada |
 | 86 | Dedo mínimo abduzido na paralisia ulnar: transferência | transferência | cap. 31, p. 1223 | mao / Transferências tendinosas e paralisias | 10 | mao-2143 | publicada |
-| 87 | Fratura de SEYMOUR: o que se interpõe | fato | cap. 41 | mao / Fraturas dos metacarpos e falanges | 14 |  | a fazer |
+| 87 | Fratura de SEYMOUR: o que se interpõe | fato | cap. 41 p. 1602 | mao / Fraturas dos metacarpos e falanges | 14 | mao-2164 | publicada |
 | 88 | Síndrome compartimental neonatal: achados | fato | cap. 51 | mao / Outros temas da mão | 17 |  | a fazer |
 | 89 | Toxina botulínica: mecanismo | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 10 |  | pendente: sem fonte (mecanismo da toxina botulínica não está no Green) |
 | 90 | Embriologia: blastemas e tensão de oxigênio | fato | cap. 35 p. 1368 | mao / Outras malformações congênitas | 12 | mao-2151 | publicada (distrator refeito: B e D iguais na original) |
 | 91 | BLAUTH: tipos com indicação de policização | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2158 | publicada |
-| 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 | mao / Amputações e reimplantes | 14 |  | a fazer |
+| 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 p. 1653 | mao / Amputações e reimplantes | 14 | mao-2165 | publicada |
 | 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 | mao / Microcirurgia e retalhos livres | 16 |  | a fazer |
 | 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 | mao / Retalhos e cobertura cutânea | 16 |  | a fazer |
 | 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 | mao / Mão reumatoide | 18 |  | a fazer |
