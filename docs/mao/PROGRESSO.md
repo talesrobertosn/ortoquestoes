@@ -14,7 +14,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
-| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 14 | 8 | mao-2189 a mao-2202 | A 4, B 3, C 3, D 4 |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 19 | 8 | mao-2189 a mao-2207 | A 5, B 5, C 4, D 5 |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
@@ -75,6 +75,26 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
 
+## Retomada atual: 22/10/2026, Codex
+
+**Andamento:** SBCM 2023, fase 0 concluída e lotes 01 a 04 aplicados, mao-2189 a mao-2207.
+Gabarito acumulado: A 5, B 5, C 4, D 5. Continuar no lote_05 (22, 42, 59, 75, 80), próximo id mao-2208.
+Conferir as figuras de 22 e 75 antes de decidir se podem ser descritas; 42, 59 e 80 ainda exigem leitura das páginas.
+Lotes locais em ~/OrtoQuestoes-Biblioteca/lotes/sbcm-2023/; não reaplicar 01 a 04.
+
+O PR #471 publicou 01 e 02 com verificar aprovado e deploy confirmado. Os lotes 03 e 04 seguem na próxima entrega.
+A 37 foi adaptada após leitura da figura original e Fig. 10.4 (p. 389). A 40 ficou pendente: cap. 8, p. 345 a 347
+não confirma juntura intertendinosa como bloqueio de redução. A 79 usa cap. 7, p. 311, corrigindo a pista de 331.
+Na 58, Fig. 11.6 dá 55 graus na IFP do mínimo e o texto dá 60; enunciado especifica a figura.
+Na 3, o quadro final junto à Fig. 12.69 foi lido em imagem e não imprime página: referência pelo quadro, sem inventar 483.
+
+Ambiente: aplicar_lote exige Pillow, disponível no Python do runtime do Codex. Para npm test no Python padrão,
+usar PYTHONUTF8=1 e PYTHONTZPATH apontando ao diretório tzdata/zoneinfo já instalado no runtime.
+Não alterar configuração do repositório. Arquivos alheios não rastreados em .claude/ foram preservados.
+
+A fila posterior permanece a do pedido: aprofundar SBCM 2024 revisões 02/15/18; SIMÃO 2022/2024/2021;
+SIMÃO 2026 ombro-cotovelo-0645/0647 somente com fonte; ENARE 2022/2023/2025.
+
 ## Retomada (atualizado em 20/10/2026, fim da sessão da conta 1)
 
 **Ponto exato:** SIMÃO 2023 com 97 publicadas (mao-1932 a mao-2022 e ombro-cotovelo-0658 a 0663); só faltam as 3 sem fonte; as 63 primeiras já revisadas no
@@ -120,7 +140,7 @@ padrão novo. Próximo trabalho, nesta ordem:
    **Próximo (etapa 3 do 6b): refazer os comentários da SBCM 2024** (mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669)
    no padrão profundo, como `lotes/sbcm-2022/revisao_01.py` a `revisao_09.py` (atalho `_comentario.py` na pasta
    `lotes/sbcm-2024/`, mesmo enunciado e gabarito). Depois SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021 e ENARE.
-   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 18 feitas: SBCM 2024 inteira refeita no padrão profundo (mao-2023 a 2105 e ombro-cotovelo-0664 a 0669), em 22/10/2026. Aprofundar depois as revisões 02, 15 e 18 (mediana abaixo de 3.500 caracteres). Próximo: SBCM 2023, fase 0 concluída; lotes 01 a 03 aplicados e validados (mao-2189 a mao-2202); lotes 01 e 02 no PR #471, verificar passou e merge feito. Lote_04 redigido e conferido, ainda não aplicado; próximo id mao-2203. A 40 segue sem confirmação do detalhe da juntura; a 37 saiu da pendência após conferir a figura. Lotes locais em `lotes/sbcm-2023/`.
+   Andamento (lista em `.oq/sbcm2024-lista.txt`, na ordem do acervo): revisões 01 a 18 feitas: SBCM 2024 inteira refeita no padrão profundo (mao-2023 a 2105 e ombro-cotovelo-0664 a 0669), em 22/10/2026. Aprofundar depois as revisões 02, 15 e 18 (mediana abaixo de 3.500 caracteres). Próximo: SBCM 2023, fase 0 concluída; lotes 01 a 04 aplicados e validados (mao-2189 a mao-2207), gabarito A 5, B 5, C 4, D 5. Lotes 01 e 02 no PR #471, verificar passou, merge e deploy concluídos. Próximo: lote_05 (22, 42, 59, 75, 80), próximo id mao-2208. A 40 segue sem confirmação do detalhe da juntura; a 37 saiu da pendência após conferir a figura. Lotes locais em `lotes/sbcm-2023/`.
 7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **SBCM 2022 fechada em 22/10/2026** (ver 6b; antes: lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
@@ -529,8 +549,8 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 |---|---|---|---|---|---|---|---|
 | 1 | BURTON: botoeira fixa com bandas laterais retraídas | classificação | cap. 5, p. 200 e 201 | mao / Lesões dos tendões extensores | 01 | mao-2189 | publicada |
 | 2 | LEDDY-PACKER: flexor profundo retraído até a palma | classificação | cap. 6, p. 216 | mao / Lesões dos tendões flexores | 01 | mao-2191 | publicada |
-| 3 | Artroplastia do punho: fragilidade óssea como contraindicação | conduta | cap. 12, p. 483 (pista) | mao / Artrose do punho e artroscopia | 04 |  | a fazer |
-| 4 | Instabilidade adaptativa após consolidação viciosa do rádio | mecanismo | cap. 13, p. 501 (pista) | mao / Instabilidade do carpo | 04 |  | a fazer |
+| 3 | Artroplastia do punho: fragilidade óssea como contraindicação | conduta | cap. 12, p. 440 e 444; quadro Artroplastia Total do Punho, Fig. 12.69, sem número impresso | mao / Artrose do punho e artroscopia | 04 | mao-2205 | publicada |
+| 4 | Instabilidade adaptativa após consolidação viciosa do rádio | mecanismo | cap. 13, p. 501 e 502 | mao / Instabilidade do carpo | 04 | mao-2207 | publicada |
 | 5 | SOONG: proeminência da placa e risco aos flexores | classificação | cap. 15, p. 628 (pista) | mao / Fratura do rádio distal | 06 |  | a fazer |
 | 6 | TEISEN-HJARBAEK: fratura sagital do semilunar | classificação | cap. 16, p. 724 (pista) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
 | 7 | Bíceps distal sem reparo: perda de supinação e flexão | número | cap. 25, p. 1034 (pista) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
@@ -547,7 +567,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 18 | Aneurisma ulnar traumático: camada arterial lesada | mecanismo | cap. 60, p. 2242 (pista) | mao / Outros temas da mão | 18 |  | a fazer |
 | 19 | DUPUYTREN: associação com índice de massa corporal baixo | associação | cap. 4, p. 149 | mao / Doença de Dupuytren | 02 | mao-2197 | publicada |
 | 20 | DURAN: excursão tendínea para evitar aderências | número | cap. 6, p. 224 e 225 | mao / Lesões dos tendões flexores | 01 | mao-2192 | publicada |
-| 21 | Fusão escafocapitato: indicação na pseudartrose | conduta | cap. 12, p. 443 (pista) | mao / Artrose do punho e artroscopia | 04 |  | a fazer |
+| 21 | Fusão escafocapitato: indicação na pseudartrose | conduta | cap. 12, p. 443 e 444 | mao / Artrose do punho e artroscopia | 04 | mao-2206 | publicada |
 | 22 | Reconstrução ligamentar da fileira proximal pela figura | técnica, figura | cap. 13, p. 544 (pista) | mao / Instabilidade do carpo | 05 |  | pendente: conferir figura |
 | 23 | ARUD: orientação coronal mais frequente | anatomia | cap. 14, p. 563 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
 | 24 | Incidência do escafoide: posição dos dedos e punho | imagem | cap. 16, p. 680 (pista) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
@@ -567,7 +587,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 38 | Tenossinovite tuberculosa: dactilite e corpos de arroz | diagnóstico | cap. 3, p. 91, 96, 97, 109 e 110 | mao / Infecções da mão | 02 | mao-2196 | publicada (corpos de arroz não são patognomônicos) |
 | 39 | Sutura flexora: fios múltiplos e resistência ao longo do tempo | comparação | cap. 6, p. 217 e 225 | mao / Lesões dos tendões flexores | 01 | mao-2193 | publicada |
 | 40 | Juntura intertendinosa interposta na luxação MCF | mecanismo | cap. 8, p. 345 a 347 (não confirma a juntura) | mao / Lesões ligamentares dos dedos | 03 |  | pendente: sem fonte (detalhe da juntura não encontrado no trecho lido) |
-| 41 | Prótese IFP de pirocarbono: quanto preservar dos colaterais | técnica | cap. 11, p. 417 (pista) | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
+| 41 | Prótese IFP de pirocarbono: quanto preservar dos colaterais | técnica | cap. 11, p. 417 | mao / Rizartrose e artrose da mão | 04 | mao-2203 | publicada |
 | 42 | GARCIA-ELIAS estágio 6: limites da reconstrução | conduta | cap. 13, p. 526 (pista) | mao / Instabilidade do carpo | 05 |  | a fazer |
 | 43 | Luxação volar isolada da ARUD: posição estável após redução | conduta | cap. 14, p. 576 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 06 |  | a fazer |
 | 44 | Escafoide por via dorsal: flexão e risco de deslocamento | técnica | cap. 16, p. 685 (pista) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
@@ -584,7 +604,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 55 | Fibroma digital infantil: localização habitual | fato | cap. 59, página a localizar | mao / Tumores da mão | 18 |  | a fazer |
 | 56 | Cápsula anterior do cotovelo: inervação | anatomia | cap. 24, página a localizar | ombro-cotovelo / Anatomia do cotovelo | 20 |  | a fazer |
 | 57 | SEYMOUR: fise exposta e risco infeccioso | conduta | cap. 41, p. 1602 (pista) | mao / Fraturas dos metacarpos e falanges | 13 |  | a fazer |
-| 58 | Artrodese do mínimo: posições das três articulações | número | cap. 11, p. 414 (pista) | mao / Rizartrose e artrose da mão | 04 |  | a fazer |
+| 58 | Artrodese do mínimo: posições das três articulações | número | cap. 11, p. 413 e 414 (Fig. 11.6) | mao / Rizartrose e artrose da mão | 04 | mao-2204 | publicada (figura 55 graus na IFP; técnica no texto 60 graus) |
 | 59 | WATSON: momento do estalido do escafoide | exame | cap. 13, p. 509 (pista) | mao / Instabilidade do carpo | 05 |  | a fazer |
 | 60 | MONTEGGIA: restauração do alinhamento ulnar | conduta | cap. 20, p. 938 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
 | 61 | NAKAMURA: sutura transóssea na lesão foveal | técnica | cap. 17, p. 788 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 08 |  | a fazer |
