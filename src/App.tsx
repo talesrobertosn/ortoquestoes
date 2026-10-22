@@ -13,6 +13,7 @@ import { HospedeConfirmacao } from './componentes/Confirmar'
 import { EXIGIR_CONTA_PARA_QUESTOES, FLASHCARDS_LIBERADO, SITE } from './config'
 import { usarConta } from './conta/ContextoConta'
 import { contasDisponiveis } from './conta/supabase'
+import { proximoPasso } from './conta/passosPerfil'
 import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
@@ -25,6 +26,7 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 // download quando o dedo chega num link ou o aparelho fica ocioso.
 const Encontros = lazy(() => import('./eventos/Encontros'))
 const ConviteAssinar = lazy(() => import('./convite/ConviteAssinar'))
+const CompletarPerfil = lazy(() => import('./componentes/CompletarPerfil'))
 
 const Inicio = lazy(() => carregadores.Inicio().then(({ Inicio }) => ({ default: Inicio })))
 const Treinar = lazy(() => carregadores.Treinar().then(({ Treinar }) => ({ default: Treinar })))
@@ -269,6 +271,13 @@ export function App() {
   const [primeiroFundo] = fundo.segmentos
 
   const estreita = ['sessao', 'questao'].includes(primeiroFundo ?? '')
+  // Crachá do perfil no topo, para quem tem conta e ainda tem algo a responder; fora de
+  // onde a pessoa está respondendo, pagando ou já editando a conta.
+  // Depois de montado, fica até o fim da visita: a última resposta completa o perfil e ele ainda agradece.
+  const crachaNestaVisita = useRef<string | null>(null)
+  if (sessao && contasDisponiveis && proximoPasso(sessao.user.user_metadata) !== null) crachaNestaVisita.current = sessao.user.id
+  const comCracha = !!sessao && crachaNestaVisita.current === sessao.user.id
+    && !['sessao', 'questao', 'admin', 'conta', 'entrar', 'termos', 'condicoes-assinatura', 'assinatura', 'simulado-nacional', 'emails'].includes(primeiroFundo ?? '')
 
   return (
     <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
@@ -282,6 +291,7 @@ export function App() {
       <AvisoArmazenamento />
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
+          {comCracha && <Suspense fallback={null}><CompletarPerfil /></Suspense>}
           <ErroDePagina caminho={rota.caminho}>
           <Suspense fallback={<EsperaPixel />}>
             {pagina}

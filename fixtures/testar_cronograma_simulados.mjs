@@ -1,4 +1,4 @@
-// Sessões do cronograma: OrtoQuestões Simulados em torno de 1 a cada 5 oficiais (flexível, nunca mais), espalhados.
+// Cronograma: OrtoQuestões Simulados em torno de 1 a cada 5 oficiais por dia (flexível, nunca mais), espalhados pela sessão.
 import assert from 'node:assert/strict'
 import { build } from 'esbuild'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
@@ -36,16 +36,22 @@ try {
     }
   }
   assert.equal(primeiraNoComeco, comSim, 'algum simulado não caiu na primeira faixa')
-  assert.deepEqual([5, 12, 30, 60].map((n) => m.faixaSimulados(n)), [{ minimo: 0, maximo: 1 }, { minimo: 1, maximo: 2 }, { minimo: 2, maximo: 5 }, { minimo: 5, maximo: 10 }], 'faixa em torno de 1 a cada 5')
-  // Sessão com várias áreas: a cota é do dia inteiro, não um mínimo por área.
-  const slugs = indice.temas.map((t) => t.slug)
-  for (let rep = 0; rep < 50; rep++) {
-    const a = slugs[rep % slugs.length], b = slugs[(rep + 3) % slugs.length], c = slugs[(rep + 5) % slugs.length]
-    const ids = m.idsDoDiaPlano(indice, [{ slug: a, n: 21, mistura: false }, { slug: b, n: 5, mistura: true }, { slug: c, n: 4, mistura: true }], {}, true)
-    assert.equal(new Set(ids).size, ids.length, 'sessão com repetida')
-    assert.equal(ids.length, 30, 'sessão de 30 incompleta')
-    const nSim = ids.filter((id) => sim.has(id)).length
-    assert.ok(nSim >= 2 && nSim <= 5, `sessão de 30 com ${nSim} simulados (esperado de 2 a 5)`)
+  // A faixa do dia (Tales, 22/10/2026): em torno de 1 a cada 5 oficiais, podendo vir menos.
+  assert.deepEqual(m.faixaSimulados(5), { minimo: 0, maximo: 1 })
+  assert.deepEqual(m.faixaSimulados(12), { minimo: 1, maximo: 2 })
+  assert.deepEqual(m.faixaSimulados(30), { minimo: 2, maximo: 5 })
+  assert.deepEqual(m.faixaSimulados(80), { minimo: 5, maximo: 10 })
+  assert.deepEqual(m.repartirSimulados([20, 10], 6), [4, 2])
+  assert.deepEqual(m.repartirSimulados([3, 1], 7), [3, 1])
+  // Dia com mais de uma área: a faixa vale para o dia inteiro, não para cada área.
+  const [a, b, c] = indice.temas.map((t) => t.slug)
+  for (let rep = 0; rep < 40; rep++) {
+    const itens = [{ slug: a, n: 30, mistura: false }, { slug: b, n: 8, mistura: true }, { slug: c, n: 7, mistura: true }]
+    const ids = m.idsDoDiaPlano(indice, itens, {}, true)
+    const n = ids.filter((id) => sim.has(id)).length
+    const { minimo, maximo } = m.faixaSimulados(45)
+    assert.ok(n >= minimo && n <= maximo, `dia com 3 áreas: ${n} simulados fora de ${minimo}..${maximo}`)
+    assert.equal(m.idsDoDiaPlano(indice, itens, {}, false).filter((id) => sim.has(id)).length, 0)
   }
   console.log(`Cronograma com simulados: ${casos} sessões, em torno de 1 a cada 5 oficiais e simulados espalhados.`)
 } finally { await rm(pasta, { recursive: true, force: true }) }

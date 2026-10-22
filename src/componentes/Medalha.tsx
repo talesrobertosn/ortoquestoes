@@ -15,11 +15,21 @@ const METAIS: Record<NivelMedalha, [string, string, string]> = {
  * Medalha de uma conquista. Quando a conquista tem arte própria (pixel art em
  * public/emblemas), mostra a imagem; senão, o disco metálico desenhado em SVG
  * com o marco no centro. Bloqueada, aparece em cinza e translúcida.
+ *
+ * A arte tem 128 px. Reduzida com "pixelated" para tamanhos que não dividem 128 (24 px no
+ * ranking: 5,3 vezes menor), o navegador pula pixels e o emblema fica serrilhado (relato do
+ * Tales, 21/10/2026). Abaixo do tamanho original na tela, a redução é suave; acima, continua
+ * nítida, em pixel.
  */
+export const classeArte = (tamanho: number) => {
+  const densidade = typeof window === 'undefined' ? 1 : window.devicePixelRatio || 1
+  return tamanho * densidade < 128 ? ' medalha--suave' : ''
+}
+
 export function Medalha({ conquista, tamanho = 48, bloqueada = false, titulo }: { conquista: Conquista; tamanho?: number; bloqueada?: boolean; titulo?: string }) {
   const id = useId().replace(/:/g, '')
   if (EMBLEMAS_COM_IMAGEM.has(conquista.id)) {
-    return <img className={'medalha medalha--arte' + (bloqueada ? ' medalha--bloqueada' : '')} src={recurso(`emblemas/${conquista.id}.png`)}
+    return <img className={'medalha medalha--arte' + classeArte(tamanho) + (bloqueada ? ' medalha--bloqueada' : '')} src={recurso(`emblemas/${conquista.id}.png`)}
       width={tamanho} height={tamanho} alt={titulo ?? conquista.rotulo} title={titulo} loading="lazy" decoding="async" draggable={false} />
   }
   const [claro, meio, escuro] = METAIS[conquista.nivel]

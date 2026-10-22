@@ -347,7 +347,7 @@ como: O TEOT 2024 pediu o tipo 2B de Zelle (neurológico incompleto). O TARO 202
 armadilha: Tipo 2A na pergunta do 2B: o 2A é a lesão vascular.
 armadilha: Exploração do plexo ou artrodese na lesão completa: o capítulo, com Zelle, recomenda a amputação quando a função não volta.
 alerta: No TEOT 2022 (trauma-0194), o gabarito oficial foi 1,5 vez a distância do lado oposto. O capítulo não traz esse número; só diz que a radiografia de tórax é a que mostra a relação da escápula com a coluna.
-alerta: No TEOT/TARO sem ano (ombro-cotovelo-0372) e no CET-PR (trauma-0702), o gabarito associa a dissociação à **fratura da clavícula** desviada. O capítulo não faz essa associação: descreve a desconexão "em vários níveis", e o exemplo que ele mostra tem fraturas do coracoide, do acrômio e do ângulo inferior.
+alerta: Na prova de Ortopedia sem ano (ombro-cotovelo-0372) e no CET-PR (trauma-0702), o gabarito associa a dissociação à **fratura da clavícula** desviada. O capítulo não faz essa associação: descreve a desconexão "em vários níveis", e o exemplo que ele mostra tem fraturas do coracoide, do acrômio e do ângulo inferior.
 alerta: No quadro de Zelle do capítulo, o tipo neurológico incompleto aparece impresso só como "2" (depois do "2A"); é o 2B da classificação, como cobrou o TEOT 2024.
 !fim
 

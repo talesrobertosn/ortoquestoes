@@ -1,0 +1,385 @@
+{
+  "trauma-1453": {
+    "questaoSha256": "d342d8ed7109308049dbd0f19a7d44ed071d3b1ce699439a806e985cddda4dc0",
+    "comentarioAnteriorSha256": "891e1ff50037f05c35e96cc0b8c06ae5dd281a78d699ab0ea56a9662ce039d0f",
+    "comentario": {
+      "conceito": "**O desenho separa a posição da curvatura de sua altura.** Y é o comprimento de referência entre a tuberosidade bicipital e o ponto ulnar da superfície articular distal; X localiza o ponto de maior curvatura ao longo dessa linha, e **a** mede a distância perpendicular entre a linha e o osso nesse ponto.\n\nNa medida de Schemitsch e Richards citada pelo resumo, a curvatura máxima está a **60% de Y**, com magnitude média de **15,3 mm**. A figura mostra o método de medir; os valores médios vêm do estudo descrito, não de uma estimativa em pixels do desenho.\n\nA relevância é funcional. O rádio precisa de sua curvatura para girar em torno da ulna. O capítulo relaciona restauração do local e da magnitude do arco à recuperação da rotação, enquanto desvios residuais reduzem a pronossupinação. Não basta alinhar uma diáfise como uma haste reta e considerar o antebraço reconstruído.\n\nEssas médias não autorizam impor exatamente a mesma forma a toda pessoa. Elas explicam uma referência anatômica e a necessidade de respeitar a geometria. **Leia “Os ossos e a membrana”, na Biblioteca, acompanhando a figura 42-14.** Identifique primeiro Y, X e a; só depois associe os números às grandezas corretas.\n\n**Por que esta questão foi criada.** Exige interpretar as grandezas do desenho e relacionar a curvatura radial à rotação, em vez de guardar dois números sem saber o que medem.",
+      "correta": "**D: 60%; 15,3 mm.** O primeiro valor localiza o ápice do arco em relação ao comprimento Y; o segundo mede sua magnitude a. São as médias do estudo apresentado.\n\nPosição e altura são informações diferentes, ambas relevantes à reconstrução da curvatura.",
+      "incorretas": {
+        "A": "**Troca a posição e a magnitude.** O resumo informa 60%, não 40%, e 15,3 mm, não 10,3 mm. A alternativa descreve um arco mais baixo e localizado em outro ponto, sem reproduzir as médias solicitadas.",
+        "B": "**A altura está correta, mas a posição foi deslocada para 40%.** Restaurar apenas a magnitude sem seu local não recupera a referência descrita. A porcentagem se refere a Y, não à altura do arco.",
+        "C": "**Localiza corretamente o ponto em 60%, mas reduz a magnitude para 10,3 mm.** O método distingue onde o arco ocorre e quanto ele se afasta da linha. Acertar uma dimensão não corrige a outra."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: O antebraço como articulação: arco radial, forças e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--99a6b318",
+          "o-antebraco-como-articulacao-arco-radial-forcas--a65a2ca5"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "9907a8ffc48c1b609954ca065b97806411f438d8ba80358519e3bab0acbb072c"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1453-1.jpeg"
+    ]
+  },
+  "trauma-1454": {
+    "questaoSha256": "6a024debf94f1f397b3014d2c0de7dd56147cd95e3b13e1bc9fb77d8f684dbfb",
+    "comentarioAnteriorSha256": "02161aee9f5b14ee6ae6b654790f96f50800d71f4c2cf38e40b809e9712260e1",
+    "comentario": {
+      "conceito": "**A recomendação clássica é seis corticais em cada fragmento principal e placa de 3,5 mm.** Em montagem convencional com parafusos bicorticais, seis corticais correspondem a três parafusos de cada lado. O resumo aconselha que eles sejam colocados em osso íntegro, garantindo fixação suficiente para as forças de rotação do antebraço.\n\nA existência de séries com quatro corticais sem falha não torna esse o padrão recomendado. Com apenas dois parafusos por lado, o afrouxamento de um deixa a montagem especialmente vulnerável, sobretudo em osso osteoporótico. A questão distingue resultado possível em uma série de orientação técnica consagrada.\n\nA placa de 3,5 mm substituiu a de 4,5 mm com consolidação semelhante e menor refratura depois da retirada. “Maior” não é automaticamente “melhor”. A escolha deve proporcionar estabilidade sem desrespeitar a anatomia e sem acrescentar o risco observado com o implante maior.\n\nO traço também determina a função da placa: compressão é adequada à fratura simples; cominuição pede outra estratégia, como ponte. **Na Biblioteca, leia a regra das corticais e a tabela “O padrão da fratura decide a placa”.** A resposta vale para a fratura simples delimitada, não para impor compressão a todo foco.\n\n**Por que esta questão foi criada.** Treina a montagem clássica e a interpretação crítica das séries com menor número de corticais, conectando estabilidade e risco após retirada.",
+      "correta": "**D: seis corticais; 3,5 mm.** É a recomendação clássica em cada fragmento principal e o tamanho consagrado discutido no capítulo. Três parafusos bicorticais de cada lado reproduzem essa contagem em osso íntegro.\n\nA estabilidade depende também da redução e da montagem, não apenas de preencher o número de corticais.",
+      "incorretas": {
+        "A": "**Combina quatro corticais com a placa maior, sem reproduzir a recomendação.** Séries com quatro corticais não eliminam a vantagem de reserva de três parafusos por lado. A placa de 4,5 mm também foi substituída pela de 3,5 mm no padrão descrito, com menor refratura após retirada.",
+        "B": "**Acerta 3,5 mm, mas usa quatro corticais como mínimo recomendado.** O capítulo reconhece essa possibilidade em séries, porém aconselha três parafusos em osso íntegro por lado. A alternativa confunde uma experiência publicada com a orientação clássica pedida.",
+        "C": "**A contagem de corticais está correta, mas o tamanho padrão não.** A de 3,5 mm oferece consolidação semelhante à de 4,5 mm e menor refratura após a retirada nas séries discutidas. Acrescentar tamanho não corrige uma indicação que já tem referência consagrada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: A placa: técnica que a prova cobra."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "A placa: técnica que a prova cobra"
+        ],
+        "blocos": [
+          "a-placa-tecnica-que-a-prova-cobra-9a510e06",
+          "a-placa-tecnica-que-a-prova-cobra-8863bbb3"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "d914eca8c433e3d1c6eac6b191ad73bce025e50aa7b958507935758f6da52a5d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1455": {
+    "questaoSha256": "465a0978216cf44fa31d73b36f48e18d54156a0edfc310b85cd5c56c34e99754",
+    "comentarioAnteriorSha256": "013b1315948abb81fdc8a1f0b2e70d2157f04262259c621d7f158ac346243d6d",
+    "comentario": {
+      "conceito": "**A haste bloqueada é uma opção selecionada no adulto, e o par pedido combina uma indicação real com um impedimento técnico.** Fratura **segmentar** aparece entre as indicações; **canal menor que 3 mm**, entre as contraindicações do resumo. A análise precisa manter a ordem dos dois termos.\n\nA placa continua sendo o padrão-ouro pela capacidade de redução anatômica, restauração do arco e controle da rotação. A haste não é escolhida automaticamente só porque o traço é simples. As indicações discutidas incluem também fratura exposta, partes moles ruins, politrauma e osso osteopênico.\n\nÉ necessário distinguir a haste bloqueada contemporânea das hastes finas e elásticas antigas. O capítulo atribui a estas dificuldade de controle rotacional e maior necessidade de imobilização, reservando a haste elástica à criança. Resultados de uma geração de implantes não podem ser transferidos sem ressalva para outra.\n\n**Na Biblioteca, leia “A haste intramedular” junto da seção sobre placa.** Compare indicação, possibilidade de bloqueio e tamanho do canal. A alternativa correta não proclama superioridade da haste sobre a placa; identifica um cenário em que pode ser considerada e uma limitação que a impede.\n\n**Por que esta questão foi criada.** Reformula a indicação segmentar cobrada no TARO 2018 e acrescenta a necessidade de reconhecer uma contraindicação técnica, sem confundir haste bloqueada e elástica.",
+      "correta": "**A: segmentar; canal menor que 3 mm.** O primeiro é um contexto de indicação descrito e o segundo impede o uso na lista consultada. A escolha segue a ordem “indicação e contraindicação”.\n\nAinda é necessário respeitar a geometria radial e a possibilidade de bloqueio adequado.",
+      "incorretas": {
+        "B": "**Fratura transversa simples não é a indicação selecionada apresentada, e fise fechada não é a contraindicação.** A restrição citada é fise aberta. A alternativa parece uma descrição genérica de adulto, mas não fornece o par específico solicitado.",
+        "C": "**Inverte as categorias.** Fratura da cabeça ou do colo radial aparece entre contraindicações; politrauma, entre indicações. Reconhecer dois termos da lista não basta quando a pergunta determina a função de cada um.",
+        "D": "**Osso osteopênico é uma indicação descrita, mas fratura exposta também pode ser.** A segunda parte não fornece a contraindicação pedida. As condições de partes moles e contaminação ainda exigem avaliação, sem transformar toda exposição em impedimento absoluto da técnica."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: A haste intramedular; A placa: técnica que a prova cobra."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "A haste intramedular",
+          "A placa: técnica que a prova cobra"
+        ],
+        "blocos": [
+          "a-haste-intramedular-418a2c99",
+          "a-haste-intramedular-353c6bb3",
+          "a-haste-intramedular-aff2082f",
+          "a-placa-tecnica-que-a-prova-cobra-cdc349b7"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "5c5b795f1ba8f5bcdf17d576a3827eca2314e0a230c3f78aa43e7342f3efff8a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1456": {
+    "questaoSha256": "4cd263b56c61f64241ba4fa828265f1c19c07e48ff5cec43a597448a4784f8c5",
+    "comentarioAnteriorSha256": "c19a5c78a59edc4970f4390843a8727fe1486b7e8d3ee9e1ec5882d2426dac0f",
+    "comentario": {
+      "conceito": "**Uma fratura exposta tipo II, sem contaminação grosseira, não exige automaticamente fixador externo provisório.** Para a maioria das expostas diafisárias do antebraço, o resumo recomenda **desbridamento e placa imediata**. Nos tipos I, II e IIIA, lavagem, fixação e fechamento podem ocorrer no mesmo tempo se não houver dúvida de viabilidade e contaminação.\n\nO objetivo é tratar o ferimento e reconstruir os dois ossos de modo estável, restaurando a relação que permite pronossupinação. O caráter exposto exige cuidado das partes moles e antibiótico apropriado; ele não elimina, por si só, os benefícios da redução anatômica com placa.\n\nO fixador externo é reservado a situações selecionadas, como destruição maciça de partes moles e contaminação grosseira. Nesses casos, a localização dos pinos precisa preservar a futura passagem da placa. Essa exceção não descreve o caso tipo II delimitado na pergunta.\n\n**Leia “Fraturas expostas e por projétil”, na Biblioteca, incluindo a ressalva sobre o TARO 2011.** Aquela prova teve gabarito de fixador monolateral em pergunta genérica; o resumo registra a divergência com a preferência do livro. Neste simulado, o cenário foi delimitado e a resposta acompanha a recomendação consultada.\n\n**Por que esta questão foi criada.** Delimita a exposição tipo II para discutir a preferência do capítulo, preservando explicitamente a divergência já registrada com o TARO 2011.",
+      "correta": "**B: desbridamento e fixação imediata com placa.** É a preferência descrita para a maioria das expostas e particularmente compatível com tipo II sem contaminação grosseira, respeitada a viabilidade dos tecidos.\n\nA conduta não dispensa antibiótico nem a avaliação crítica do ferimento antes de decidir o fechamento.",
+      "incorretas": {
+        "A": "**Fixador com conversão tardia acrescenta uma etapa que não é necessária por princípio neste caso.** O resumo o reserva a perda maciça de partes moles e contaminação grosseira. A exposição tipo II, isoladamente, não basta para substituir a placa imediata preferida.",
+        "C": "**Haste flexível não é a preferência para reconstruir os dois ossos do adulto.** O texto a reserva à criança, devido ao controle rotacional insuficiente no adulto. A existência de indicações para haste bloqueada não transforma a haste flexível desta alternativa na mesma técnica.",
+        "D": "**Tala e antibiótico até a ferida cicatrizar não substituem o desbridamento e a estabilização indicados.** O tratamento precisa abordar osso e partes moles. Adiar a reconstrução apenas porque existe uma ferida não segue a preferência descrita para o tipo II do enunciado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Fraturas expostas e por projétil; A haste intramedular."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Fraturas expostas e por projétil",
+          "A haste intramedular"
+        ],
+        "blocos": [
+          "fraturas-expostas-e-por-projetil-5aeafa05",
+          "fraturas-expostas-e-por-projetil-217de6d1",
+          "a-haste-intramedular-418a2c99",
+          "fraturas-expostas-e-por-projetil-cffa5e06"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "6add28c139f4a0ba9b21b6069b26d1632a282b20978c1cc0df0e61e1d7765b2c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1457": {
+    "questaoSha256": "a409a9741983563548423e2b00843a2121d50ec9eb7b5642e10d70ed3fa78f6f",
+    "comentarioAnteriorSha256": "9d3d88c18584acf4463ac1042961914d9b54c44579b3d3ef5f48cec221cc4e32",
+    "comentario": {
+      "conceito": "**A radiografia mostra uma ponte óssea entre rádio e ulna, compatível com sinostose radioulnar pós-traumática.** Há material de osteossíntese e alterações do foco, mas o dado que define a complicação é a continuidade óssea ocupando o espaço entre os dois ossos. Essa união impede que o rádio gire livremente em relação à ulna.\n\nO resumo relaciona a sinostose a **fraturas dos dois ossos no mesmo nível com cominuição**, alta energia e **traumatismo craniano**. A associação com trauma de crânio se repete nas séries citadas. Isso é informação de risco da fonte; uma radiografia do antebraço não permite concluir que o paciente específico sofreu lesão craniana.\n\nA prevenção inclui evitar osso, enxerto, parafusos ou metal no espaço interósseo e não usar via única para os dois ossos proximais. A proposta não é evitar toda placa ou todo movimento, e sim preservar o espaço de rotação e reduzir fatores que favoreçam uma ponte.\n\n**Na Biblioteca, leia “Sinostose radioulnar”.** Separe o que a imagem mostra, a ponte óssea, do que a história deve pesquisar, como energia e trauma craniano. Essa distinção permite interpretar a figura sem inventar antecedentes do paciente.\n\n**Por que esta questão foi criada.** Usa uma radiografia para reconhecer a complicação e distinguir achado visível de fatores de risco, tema cobrado no SBOT-SP e na FMRP-USP 2026.",
+      "correta": "**B: mesmo nível, cominuição e trauma craniano.** São associações destacadas para a complicação representada. A ponte radioulnar explica a perda de rotação, enquanto os fatores de risco ajudam a compreender em que contexto ela pode surgir.\n\nA presença de sinostose não prova, isoladamente, nenhum antecedente craniano.",
+      "incorretas": {
+        "A": "**Troca os fatores descritos por fraturas em níveis diferentes e duas incisões.** O resumo destaca mesmo nível com cominuição e alerta contra a via única para os dois ossos proximais. Duas vias não são o fator de risco apresentado pela fonte.",
+        "C": "**Placa de 3,5 mm e seis corticais são elementos de uma montagem convencional, não a associação principal da sinostose.** O problema preventivo descrito é material ou osso no espaço interósseo, entre outros fatores. A simples presença de uma placa na imagem não identifica a causa da ponte.",
+        "D": "**Mobilização precoce não é apontada como a principal associação da complicação.** O capítulo favorece movimento após estabilização adequada, enquanto relaciona sinostose a trauma, cominuição e invasão do espaço interósseo. Não se deve inverter a orientação de reabilitação para explicar a figura."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Sinostose radioulnar; A placa: técnica que a prova cobra."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Sinostose radioulnar",
+          "A placa: técnica que a prova cobra"
+        ],
+        "blocos": [
+          "sinostose-radioulnar-ed7e5eeb",
+          "sinostose-radioulnar-62eba46d",
+          "a-placa-tecnica-que-a-prova-cobra-0d9b4a72"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "5f22d1bbc187f6ccfc04b1eba2cdd6b954f4f53f08b3865ca8150a2f11e210e0"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1457-1.jpeg"
+    ]
+  },
+  "trauma-1458": {
+    "questaoSha256": "5ac46b175e5e54a7928fc937d086a4ef0df37caf04f9d7740363e1879339de02",
+    "comentarioAnteriorSha256": "9ba90ee15606dd1ee0f0f5dfee897ca762d48f1e1e0e2184864adeb638f417cb",
+    "comentario": {
+      "conceito": "**A retirada de placa do antebraço não é rotina e tem risco de refratura.** Menos de 10% das placas precisam ser retiradas no resumo. A posição subcutânea da ulna pode causar incômodo, mas a decisão exige ponderar esse benefício contra nova cirurgia, lesão nervosa, infecção e perda de resistência óssea.\n\nPara reduzir a **refratura no foco original**, a orientação apresentada é esperar **12 a 18 meses da fixação** e proteger o antebraço com tala ou órtese por **4 a 6 semanas depois da retirada**. A espera e a proteção respondem a momentos diferentes do risco: tempo antes da cirurgia e carga sobre o osso após a remoção.\n\nO capítulo distingue refratura no foco de fratura por um furo de parafuso, que pode ocorrer meses depois com trauma mais forte. Portanto, terminar a proteção inicial não garante que todo risco desapareceu. Também não se deve usar a mera passagem de um prazo como prova de que a placa precisa sair.\n\n**Leia “Retirada do material e refratura”, na Biblioteca.** Compare indicação de retirada, prazo e proteção. Essa sequência evita transformar uma orientação para tornar a remoção mais segura em recomendação de remover todo implante.\n\n**Por que esta questão foi criada.** Treina os dois tempos de prevenção da refratura e a diferença entre retirar material por indicação e remover por rotina.",
+      "correta": "**C: 12 a 18 meses; 4 a 6 semanas.** É o par apresentado para reduzir refratura no foco após a retirada. O primeiro intervalo precede a remoção e o segundo corresponde à proteção depois dela.\n\nA resposta pressupõe indicação de retirada e consolidação apropriada, sem impor remoção rotineira.",
+      "incorretas": {
+        "A": "**Antecipa a retirada para 6 a 9 meses e dispensa proteção.** Nenhuma das duas partes reproduz a recomendação da fonte. Osso consolidado e osso imediatamente resistente após retirar material não são conceitos intercambiáveis.",
+        "B": "**A proteção de 4 a 6 semanas está correta, mas a retirada foi antecipada.** O resumo recomenda esperar 12 a 18 meses para reduzir a refratura no foco. Acertar o cuidado posterior não neutraliza o erro do momento da remoção.",
+        "D": "**O intervalo antes da retirada está correto, porém falta a proteção posterior.** A recomendação combina espera e tala ou órtese por 4 a 6 semanas. O tempo transcorrido antes da remoção não elimina a vulnerabilidade logo depois do procedimento."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Retirada do material e refratura."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Retirada do material e refratura"
+        ],
+        "blocos": [
+          "retirada-do-material-e-refratura-b54fc4a9",
+          "retirada-do-material-e-refratura-6217d6eb",
+          "retirada-do-material-e-refratura-f53f826b",
+          "retirada-do-material-e-refratura-da1712aa"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "5d3602a02b711419dd0071cd354a921a12ad8dee6c95bb37eac1995d0bca6384"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1459": {
+    "questaoSha256": "0f02097ec8111a8c90c4177a90f8e174a00c60dbd4d4216d9fb3594e96c69bee",
+    "comentarioAnteriorSha256": "bcd1c224f82fa186c0f2b3cdda80a1c5418352e61eaaa730f7fb0293f5d8a749",
+    "comentario": {
+      "conceito": "**O estudo citado avalia como angulação residual prejudica a rotação, e não uma regra de proporcionalidade simples.** No modelo de Matthews, com fratura do terço médio dos dois ossos, **10°** produziram déficit considerado aceitável e **20°** reduziram cerca de **30% da pronossupinação**.\n\nO antebraço precisa da relação espacial entre rádio e ulna para girar. Uma deformidade diafisária pode manter alguma continuidade óssea e ainda comprometer a função. O resumo também reúne outros estudos e destaca que localização e geometria pesam no resultado; não basta medir um único ângulo sem considerar o padrão.\n\nO termo “aceitável” descreve o resultado do modelo e não autoriza planejar redução com 10° de erro em toda fratura adulta. O tratamento procura anatomia, estabilidade e movimento. Também seria incorreto dizer que 20° eliminam toda rotação: a perda relatada é parcial, próxima de 30%.\n\n**Leia “Consolidação viciosa”, na Biblioteca, comparando Matthews, Tarr e Sarmiento.** Observe autor, nível do traço e desfecho antes de transportar um número para outra situação. A questão pede o resultado específico de Matthews.\n\n**Por que esta questão foi criada.** Treina a interpretação do modelo experimental de consolidação viciosa e evita converter números de um estudo em tolerância clínica universal.",
+      "correta": "**A: déficit aceitável com 10°; perda de cerca de 30% com 20°.** O par reproduz o modelo do terço médio descrito. O valor percentual se refere à pronossupinação perdida, não à angulação residual.\n\nEsses dados explicam a importância da redução anatômica, sem instituir tolerância universal de 10°.",
+      "incorretas": {
+        "B": "**Atribui a 10° a perda descrita com 20° e depois exagera para perda total.** O estudo não relata abolição completa da rotação nessa angulação. A alternativa amplia a gravidade e desloca o resultado entre os grupos.",
+        "C": "**Mantém o resultado de 10° e estende a mesma avaliação a 20°.** O grupo de 20° teve perda de cerca de 30%, portanto os dois resultados não podem ser resumidos como igualmente aceitáveis. A deformidade maior trouxe limitação relevante no modelo.",
+        "D": "**Cria uma correspondência linear entre graus e porcentagem que o estudo não apresenta.** Dez graus não significam automaticamente 10% de perda, nem vinte graus significam 20%. A resposta deve seguir o resultado medido, não uma regra numérica intuitiva."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Consolidação viciosa, pseudartrose e infecção."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Consolidação viciosa, pseudartrose e infecção"
+        ],
+        "blocos": [
+          "consolidacao-viciosa-pseudartrose-e-infeccao-8b98a6b6",
+          "consolidacao-viciosa-pseudartrose-e-infeccao-a40e83d9"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "68d638a93204b759ff508c35270994f64d37073a8d8168dabad75ee6f330981a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1460": {
+    "questaoSha256": "4bcc0bbaf513e6a5b938ca2ff7d34f4b77645c30b377892138ccba27b5b2fd8d",
+    "comentarioAnteriorSha256": "af8124512af28af690ac47f7906e4b0d10871da25c61234950246ee14b6323fd",
+    "comentario": {
+      "conceito": "**A infecção profunda precisa ser investigada na pseudartrose do antebraço, mesmo quando a montagem parece explicar o problema.** O resumo informa que ela acompanha cerca de **um terço** dos casos de pseudartrose. O número se refere a esse grupo selecionado, não a todas as fraturas operadas com placa.\n\nFalha de consolidação pode ter componente mecânico, como afastamento do foco, placa inadequada ou montagem insuficiente, e componente biológico, como alta energia, exposição, cominuição e desperiostização. Essas causas podem coexistir com infecção; escolher uma explicação mecânica não permite dispensar a pesquisa infecciosa.\n\nO tratamento descrito inclui retirada do material no contexto da revisão, culturas, desbridamento até osso vivo e nova fixação, com enxerto se houver defeito. Isso não deve ser confundido com a orientação para infecção profunda em fratura ainda em tratamento e material estável, que pode exigir preservação temporária da estabilidade até consolidar. O cenário clínico determina a estratégia.\n\n**Na Biblioteca, leia “Pseudartrose” junto de “Infecção”.** Compare o denominador das frequências e a situação do implante. O objetivo é reconhecer uma causa tratável que pode ser perdida se a revisão se limitar a trocar a placa ou acrescentar enxerto.\n\n**Por que esta questão foi criada.** Treina a pesquisa de infecção na falha de consolidação e a interpretação correta de uma frequência cujo denominador é o grupo de pseudartroses.",
+      "correta": "**D: infecção profunda.** É a condição associada a cerca de um terço das pseudartroses na fonte e que deve ser procurada. A investigação integra a avaliação mecânica e biológica, em vez de competir com ela.\n\nO achado muda o planejamento da revisão, incluindo coleta de culturas e desbridamento apropriado.",
+      "incorretas": {
+        "A": "**Tabagismo não é a condição ligada a esse “um terço” no resumo consultado.** A alternativa pode lembrar um fator clínico discutido em outros contextos, mas a pergunta solicita a associação específica da fonte. Não há base aqui para atribuir ao tabagismo o percentual dado.",
+        "B": "**Placa de 3,5 mm é o tamanho consagrado, não a causa que deve ser presumida por esse percentual.** Falha mecânica depende de escolha e montagem apropriadas, e não do número 3,5 isolado. A alternativa troca a investigação infecciosa por condenação de um implante padrão.",
+        "C": "**Ausência de enxerto inicial não explica automaticamente a pseudartrose nem corresponde ao terço informado.** O resumo descreve controvérsia sobre enxertar rotineiramente a cominuição e reserva o enxerto da revisão ao defeito ósseo. Acrescentá-lo sem pesquisar infecção pode deixar a causa principal sem tratamento."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Consolidação viciosa, pseudartrose e infecção; A placa: técnica que a prova cobra."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Consolidação viciosa, pseudartrose e infecção",
+          "A placa: técnica que a prova cobra"
+        ],
+        "blocos": [
+          "consolidacao-viciosa-pseudartrose-e-infeccao-45625fdf",
+          "consolidacao-viciosa-pseudartrose-e-infeccao-67caf6fd",
+          "a-placa-tecnica-que-a-prova-cobra-0d9b4a72",
+          "a-placa-tecnica-que-a-prova-cobra-9a510e06"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "b742cf8f92ab7127188d9540d1e46a95795e11737fbe33fdc06c714f5b7552c9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1094": {
+    "questaoSha256": "f988d04a0791de3092a9c966a1af8bab51bac24c135dc56081a6186e27e1271f",
+    "comentarioAnteriorSha256": "3c11628d010331e7da2e5c3c328675331acf7aaa13e60174a6348295a56037c5",
+    "comentario": {
+      "conceito": "**No adulto, o padrão mais frequente de Monteggia é o tipo II de Bado.** A cabeça radial luxa para posterior ou posterolateral e a ulna apresenta deformidade de ápice posterior. O resumo informa que esse tipo pode corresponder a até 80% das lesões adultas.\n\nBado organiza a lesão pela direção da cabeça em relação à deformidade ulnar. O tipo I é anterior e predomina na criança; o III é lateral ou anterolateral com fratura metafisária, quase exclusivo da criança. O IV combina luxação anterior e fratura proximal dos dois ossos, sendo descrito como exclusivo do adulto. Exclusividade e frequência não são a mesma informação: um padrão pode ser exclusivo e ainda assim ser raro.\n\nO tipo II frequentemente vem com fraturas da cabeça do rádio ou do coronoide, tornando o problema de estabilidade mais complexo. Por isso, a classificação precisa levar à procura das lesões associadas e ao planejamento da reconstrução, não terminar na escolha de um numeral.\n\n**Na Biblioteca, leia “A classificação de Bado” e depois os resultados da Monteggia no adulto.** Compare especialmente II e IV, separando o mais frequente daquele descrito como exclusivo. O resumo também registra uma cobrança divergente do TARO 2018, sem alterar o conceito do livro.",
+      "correta": "**B: tipo II.** É o padrão mais frequente no adulto segundo a fonte, com luxação posterior ou posterolateral da cabeça radial e ápice posterior da ulna. A associação a cabeça e coronoide fraturados deve ser pesquisada.\n\nO tipo IV ser exclusivo do adulto não o torna a resposta para “mais frequente”.",
+      "incorretas": {
+        "A": "**Tipo I é o mais comum na criança.** Sua direção radial e seu ápice ulnar são anteriores. A alternativa troca o grupo etário ao qual o resumo atribui a predominância, embora adultos também possam apresentar esse padrão.",
+        "C": "**Tipo III é quase exclusivo da criança e raro no adulto.** Combina cabeça lateral ou anterolateral com fratura metafisária da ulna. Nem direção nem distribuição etária o colocam como o padrão predominante solicitado.",
+        "D": "**Tipo IV é descrito como exclusivo do adulto, mas isso responde a outra pergunta.** Ele associa luxação anterior com fratura do rádio e da ulna no mesmo nível. O tipo II continua sendo o mais frequente; confundir exclusividade com frequência é a armadilha central."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "f1f986277bef06dc8012762154c2060ee0e00b9ea1b670cf833e776c6225eca2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0761": {
+    "questaoSha256": "eaf2d2666225d762abf89a1daeecf3cc7e28329cc01bb9edbc1853358d3fa8e9",
+    "comentarioAnteriorSha256": "e10d04f3630945be37997c06c6108fff26f04f1fb327176a7a09d9f9eeacbcac",
+    "comentario": {
+      "conceito": "**A subdivisão de Jupiter localiza a fratura ulnar dentro da Monteggia tipo II de Bado.** Bado informa a direção posterior ou posterolateral da cabeça; Jupiter acrescenta o nível e a extensão da lesão ulnar. Na **junção da metáfise com a diáfise proximal**, o padrão é **IIB**.\n\n| Subtipo | Fratura da ulna |\n|---|---|\n| IIA | Muito proximal, através do coronoide |\n| IIB | Junção metáfise-diáfise proximal |\n| IIC | Diafisária |\n| IID | Complexa, do olécrano à diáfise |\n\nA diferença entre IIA e IIB é mais que uma letra: atravessar o coronoide muda a informação sobre o apoio articular. O IIC se localiza na diáfise, enquanto o IID descreve comprometimento complexo extenso. A classificação organiza a reconstrução da ulna e a avaliação da estabilidade do cotovelo.\n\n**Leia “Jupiter: em que altura a ulna quebrou”, na Biblioteca.** Marque primeiro o traço descrito no enunciado e só depois associe a letra. Dizer apenas “proximal” não basta para distinguir A de B.",
+      "correta": "**B: 2B, ou IIB.** A junção metáfise-diáfise proximal é a localização específica desse subtipo. O dado decisivo é o nível do traço, dentro de uma lesão já definida como Bado II.\n\nA nomenclatura não muda a direção de Bado; acrescenta informação à fratura ulnar.",
+      "incorretas": {
+        "A": "**IIA atravessa o coronoide e é mais proximal/articular.** O enunciado descreve a junção metáfise-diáfise, correspondente ao B. Colocar toda fratura proximal em A elimina a distinção anatômica criada pela subdivisão.",
+        "C": "**IIC é o padrão diafisário.** A pergunta delimita a junção da metáfise com a diáfise proximal, que o resumo separa como IIB. A alternativa desconsidera essa região de transição.",
+        "D": "**IID é a fratura complexa que se estende do olécrano à diáfise.** O texto do caso não descreve esse comprometimento extenso. Não se deve atribuir D apenas porque uma Monteggia tipo II pode ser uma lesão complexa."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-22d5d72f",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-018638b1",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-86b2096c",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "4799bc30b42000fdc66471c378be13150a20d0bacf466281cd2102dcf641095f"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

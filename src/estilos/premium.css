@@ -364,6 +364,8 @@
 .medalha--bloqueada { filter: grayscale(1); opacity: 0.35; }
 /* Pixel art: sem suavização, para os pixels continuarem nítidos em qualquer tamanho. */
 .medalha--arte { image-rendering: pixelated; object-fit: contain; }
+/* Arte reduzida abaixo de 128 px reais: suave, sem pular pixels (Medalha.tsx, classeArte). */
+.medalha--arte.medalha--suave { image-rendering: auto; }
 .medalha--arte.medalha--bloqueada { filter: grayscale(1) brightness(0.9); opacity: 0.3; }
 .medalha-inline { display: inline-flex; vertical-align: -3px; margin-left: 0.35rem; }
 .rk-lista { margin-top: 0.75rem; }

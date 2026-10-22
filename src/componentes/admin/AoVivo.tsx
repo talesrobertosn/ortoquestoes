@@ -52,7 +52,7 @@ export function Atividade({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao'> }
  * tempo está nessa página e desde quando está online, as questões de hoje e da semana, e os atalhos
  * "Ver ficha" e "Enviar carta". Quem mudou de página há menos tempo vem primeiro; quem fez algo nos
  * últimos 60 s ganha um pulso verde. Em tela estreita a linha vira níveis, sem reticências.
- * As regras continuam as do painel: online = sinal há menos de 100 s, lista a cada 15 s, online a cada 10 s.
+ * Regras do painel (21/10/2026): online = sinal nos últimos 5 minutos, lista a cada 5 minutos ou no Atualizar.
  */
 export function AoVivo({ usuarios, sinais, atualizadoEm, abrirFicha }: {
   usuarios: LinhaUsuario[]; sinais: Map<string, SinalUsuario>; atualizadoEm: number | null; abrirFicha: (u: LinhaUsuario, aba?: AbaFicha) => void
@@ -74,8 +74,8 @@ export function AoVivo({ usuarios, sinais, atualizadoEm, abrirFicha }: {
 
   return <section className="adm-vivo adm-bloco" id="agora-online" aria-labelledby="adm-vivo-titulo">
     <header className="adm-bloco__cabeca">
-      <h2 id="adm-vivo-titulo"><span className="adm-online" aria-hidden="true" />Online agora <span className="adm-vivo__total numerico">{online.length}</span></h2>
-      <small>com o site aberto e à vista (sinal há menos de 100 s) · a lista atualiza sozinha a cada 15 s · última leitura às {horaLeitura}</small>
+      <h2 id="adm-vivo-titulo"><span className="adm-online" aria-hidden="true" />Nos últimos 5 minutos <span className="adm-vivo__total numerico">{online.length}</span></h2>
+      <small>com o site aberto e à vista nos últimos 5 minutos · a lista atualiza sozinha a cada 5 minutos ou no botão Atualizar · última leitura às {horaLeitura}</small>
     </header>
 
     {online.length > 0 && <div className="adm-bloco__controles">
@@ -85,7 +85,7 @@ export function AoVivo({ usuarios, sinais, atualizadoEm, abrirFicha }: {
       <label className="adm-bloco__busca"><Icone nome="busca" tamanho={16} /><span className="so-leitor">Buscar por nome</span><input className="entrada" type="search" placeholder="Buscar por nome" value={busca} onChange={e => definirBusca(e.target.value)} /></label>
     </div>}
 
-    {online.length === 0 ? <p className="adm-vazio"><strong>Ninguém online agora.</strong> Última leitura às {horaLeitura}; a próxima vem em até 15 s. Quem abrir o site aparece aqui, com a página, a questão ou o resumo.</p>
+    {online.length === 0 ? <p className="adm-vazio"><strong>Ninguém nos últimos 5 minutos.</strong> Última leitura às {horaLeitura}; a próxima vem em até 5 minutos, ou clique em Atualizar. Quem abrir o site aparece aqui, com a página, a questão ou o resumo.</p>
       : visiveis.length === 0 ? <p className="adm-vazio">Ninguém neste filtro{termo ? ` com "${busca.trim()}" no nome` : ''}. {online.length} online no total.</p>
         : <ol className="adm-pessoas">
           {visiveis.map(u => {

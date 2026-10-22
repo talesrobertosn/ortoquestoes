@@ -1,0 +1,404 @@
+{
+  "trauma-0046": {
+    "questaoSha256": "e4b575959ae3dcd831f0dc105f69140db00c93a5f345c4143406890b9cee64cd",
+    "comentarioAnteriorSha256": "87ff2d457ff54da60290b8a9067ecdef95f8d5bbc1a88e368cc673d092cba58c",
+    "comentario": {
+      "conceito": "**A síndrome compartimental crônica de esforço é provocada pelo exercício e melhora com o repouso.** Durante a atividade, a pressão intramuscular aumenta a ponto de comprometer a perfusão, produzindo dor e, mais raramente, sintomas neurológicos. O vínculo temporal com a atividade é o que a diferencia da síndrome aguda após uma lesão.\n\nO resumo separa três entidades: a forma aguda, na qual a pressão sustentada pode causar necrose sem descompressão; a de esforço, com sintomas relacionados ao exercício; e a contratura isquêmica de Volkmann, sequela de uma forma aguda negligenciada. “Crônica” não significa que qualquer problema vascular duradouro seja síndrome compartimental de esforço.\n\nO gesso apertado pode reduzir o espaço disponível e causar um quadro agudo. Já insuficiência arterial e insuficiência venosa dizem respeito a problemas da circulação, que podem integrar o diagnóstico diferencial de dor, mas não substituem o mecanismo de elevação compartimental durante exercício definido aqui. O resumo não apresenta tratamento detalhado da forma crônica.\n\n**Leia “Definições e história”, na Biblioteca.** Compare o evento que aumenta a pressão, a relação com repouso e a presença de lesão sustentada antes de escolher a causa.",
+      "correta": "**A: exercício físico.** É o fator que caracteriza a forma de esforço no resumo: a pressão sobe com atividade, há isquemia e dor, e os sintomas melhoram com repouso. O quadro pode evoluir para uma forma aguda se o exercício continuar, portanto o adjetivo crônico não significa ausência de risco.",
+      "incorretas": {
+        "B": "**Um aparelho gessado apertado é um envoltório externo que pode causar síndrome aguda.** Ele restringe a expansão do compartimento, sem depender do ciclo exercício/repouso que define a forma perguntada. Confundir as duas causas apaga a diferença entre compressão externa persistente e aumento de pressão relacionado ao esforço.",
+        "C": "**Insuficiência venosa crônica descreve um problema de drenagem venosa, não a entidade de esforço definida na questão.** O gradiente arteriovenoso participa da perfusão dos compartimentos, mas esse mecanismo geral não torna toda doença venosa crônica a causa da síndrome compartimental crônica de esforço.",
+        "D": "**Insuficiência arterial crônica descreve redução de aporte pela circulação arterial.** Na síndrome de esforço, o evento definidor do resumo é a elevação de pressão intramuscular durante atividade. Os dois quadros podem envolver isquemia, mas compartilhar esse resultado não os torna a mesma doença nem a mesma causa."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Definições e história; Por que a pressão mata o músculo; Quem tem síndrome compartimental."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Definições e história",
+          "Por que a pressão mata o músculo",
+          "Quem tem síndrome compartimental"
+        ],
+        "blocos": [
+          "definicoes-e-historia-e351a339",
+          "definicoes-e-historia-8ac89184",
+          "definicoes-e-historia-7d1d8abb",
+          "por-que-a-pressao-mata-o-musculo-7d5655e4",
+          "quem-tem-sindrome-compartimental-c9e21614"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "22e692e38e858d1c0f76827ef88f136643dc73ec3d5048e12e5e7c821d45932c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0434": {
+    "questaoSha256": "e682a957da421789abc66cb399d3bd0f411fe991ecc9688924e1d28a4f5fedad",
+    "comentarioAnteriorSha256": "07cb81a156067ba011d7d00b8ecb76c3834901a186f0beff1a87758773189636",
+    "comentario": {
+      "conceito": "**A resposta oficial é oito horas, mas o resumo consultado usa seis horas em contextos que precisam ser diferenciados.** O capítulo afirma que atraso até a fasciotomia superior a seis horas provavelmente produz sequelas significativas. Também relata a estimativa histórica de Volkmann de que o músculo não sobreviveria mais de seis horas sem fluxo.\n\nIsso não estabelece uma fronteira universal em que todo nervo e músculo passam simultaneamente de viáveis a mortos. Intensidade e duração da pressão, perfusão arterial e lesão prévia influenciam o dano; o resumo enfatiza que os limiares de alteração nervosa variam. “Tempo de isquemia irreversível” e “atraso até a fasciotomia” não são expressões intercambiáveis.\n\nO objetivo clínico é evitar atraso, sem aguardar seis ou oito horas. A síndrome reconhecida exige descompressão urgente, avaliação muscular e desbridamento do que não for viável. A passagem do relógio aumenta o risco de necrose, contraturas e lesão neurológica, não cria um período inicial livre de consequências.\n\n**Leia “Complicações, atraso e paciente encontrado caído” e “O músculo é o tecido mais vulnerável”, na Biblioteca.** Separe a letra histórica da banca do que a fonte efetivamente informa sobre atraso e viabilidade.",
+      "correta": "**D: oito horas, conforme o gabarito oficial.** Essa letra foi preservada, mas o resumo não demonstra oito horas como limiar universal de dano neurológico ou muscular irreversível. Ele enfatiza atraso superior a seis horas como associado a sequelas significativas.\n\nA leitura segura guarda a resposta da prova junto com essa limitação, sem transformá-la em autorização para observar uma síndrome diagnosticada.",
+      "incorretas": {
+        "A": "**Duas horas correspondem a outro critério do capítulo.** No paciente monitorado sem sinais claros, delta P abaixo de 30 mmHg por mais de duas horas integra o protocolo de indicação de fasciotomia. Esse intervalo não é um limiar de morte de todo músculo e nervo e não justifica retardar cirurgia diante de sinais clínicos claros.",
+        "B": "**Quatro horas não é apresentado pelo resumo como o limiar solicitado.** O dano é progressivo e depende da perfusão e da agressão tecidual; não há, na fonte consultada, uma regra que declare o tecido preservado antes ou morto depois desse valor. O fato de a banca não escolher quatro não torna aceitável acrescentar quatro horas de espera.",
+        "C": "**Seis horas é um número efetivamente presente no resumo, mas com outro enquadramento.** Refere-se ao atraso até a fasciotomia associado a sequelas e à estimativa histórica de sobrevivência muscular sem fluxo. É uma alternativa bibliograficamente relevante, embora não seja a letra oficial desta redação, que foi D."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Complicações, atraso e paciente encontrado caído; Por que a pressão mata o músculo; Definições e história; O tratamento preferido dos autores; Medida da pressão e o delta P."
+      ],
+      "alerta": "Gabarito oficial D preservado. O resumo do Rockwood, 10ª edição, não estabelece oito horas como limiar universal de lesão irreversível. Ele informa que atraso até a fasciotomia superior a seis horas provavelmente causa sequelas significativas, e que a tolerância nervosa é variável. São conceitos diferentes; síndrome diagnosticada exige tratamento urgente."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Complicações, atraso e paciente encontrado caído",
+          "Por que a pressão mata o músculo",
+          "Definições e história",
+          "O tratamento preferido dos autores",
+          "Medida da pressão e o delta P"
+        ],
+        "blocos": [
+          "complicacoes-atraso-e-paciente-encontrado-caido-70a47584",
+          "por-que-a-pressao-mata-o-musculo-1a07d757",
+          "por-que-a-pressao-mata-o-musculo-0bba6145",
+          "definicoes-e-historia-0e7c3cc4",
+          "o-tratamento-preferido-dos-autores-930f2a36",
+          "medida-da-pressao-e-o-delta-p-1312eae8"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "205c4327fbffde2683b4f196f12ce6ad0601430efb718e1fd2e5c54ffdc37abc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0818": {
+    "questaoSha256": "c8e20c38b41e1a04f1e3ecabf1374e604399c6bf6a04b4792288c90f928531b9",
+    "comentarioAnteriorSha256": "58d2b33c79825379f66a87cd253be89f25cc3c556ae761a34a51925bd623826d",
+    "comentario": {
+      "conceito": "**O gabarito oficial usa 30 mmHg de pressão intracompartimental absoluta, mas o resumo prioriza uma diferença de pressão.** Delta P é diastólica menos pressão compartimental. Quanto menor essa margem, mais ameaçada fica a perfusão. Uma mesma pressão no compartimento pode ter significados diferentes em pessoas normotensas e hipotensas.\n\nO resumo cita pressão muscular de repouso em torno de 10 mmHg e valores absolutos críticos de 30 a 50 mmHg já relatados. Entretanto, esses números não são equivalentes a um gatilho absoluto universal. Na validação do protocolo, pacientes com pressão acima de 30 mmHg e delta P normal não apresentaram pior função no acompanhamento descrito.\n\nPara monitorização sem quadro clínico claro, o protocolo de Edimburgo indica fasciotomia com delta P abaixo de 30 mmHg mantido por mais de duas horas, considerando a tendência. Sinais claros e múltiplos exigem descompressão urgente, sem esperar completar uma janela de monitorização.\n\n**Leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”, na Biblioteca.** Observe se a pergunta usa pressão absoluta ou diferencial: ambos podem conter o número 30 e ainda representar grandezas distintas.",
+      "correta": "**B: 30 mmHg, gabarito oficial da questão de pressão absoluta.** A letra foi preservada. A ressalva é que o protocolo apresentado no resumo usa principalmente **delta P**, e não pressão absoluta isolada, para decidir no paciente monitorado.\n\nO número não deve ser transportado de uma grandeza para outra sem escrever a fórmula.",
+      "incorretas": {
+        "A": "**Vinte mmHg não é o limite escolhido pela banca nem um corte absoluto universal no resumo.** Em um paciente com diastólica baixa, até uma pressão menos elevada pode ameaçar perfusão. É justamente essa dependência da pressão arterial que impede adotar um único número tecidual para todos.",
+        "C": "**Quarenta mmHg pode estar entre valores absolutos descritos como críticos em trabalhos históricos, mas não é a letra oficial.** O significado clínico depende da diastólica e da evolução. Não se deve aguardar que o compartimento atinja 40 quando a margem de perfusão já está comprometida.",
+        "D": "**Cinquenta mmHg também não é uma condição obrigatória para descomprimir.** Uma pessoa hipotensa pode sofrer isquemia com pressão menor; outra pode manter delta P adequado apesar de uma pressão absoluta elevada. A alternativa troca a avaliação da perfusão por um valor fixo mais alto."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ],
+      "alerta": "Gabarito oficial B preservado para a redação de pressão intracompartimental absoluta. O resumo consultado afirma que a pressão absoluta isolada não é o gatilho adequado: o protocolo usa delta P = diastólica − compartimental abaixo de 30 mmHg por mais de duas horas no paciente monitorado. Quadro clínico claro exige fasciotomia urgente."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-d654f7b7",
+          "medida-da-pressao-e-o-delta-p-1312eae8",
+          "medida-da-pressao-e-o-delta-p-f94386d5",
+          "o-tratamento-preferido-dos-autores-930f2a36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0917": {
+    "questaoSha256": "45229f7d4fa3dbc0eb4b908f5edd15943909ddda7c5071f173583fe0389376ae",
+    "comentarioAnteriorSha256": "a0040b124ed8a56aabfbbdf5aab021455a6d24070e1125c824b9a66145a1f70b",
+    "comentario": {
+      "conceito": "**Entre as alternativas, o exame físico seriado é a resposta oficial porque acompanha a evolução, em vez de depender de um achado isolado.** Reavaliar dor, necessidade de analgesia, estiramento passivo, tensão e função permite reconhecer mudanças. Um exame único após trauma pode ser pouco informativo, especialmente quando a síndrome ainda está evoluindo.\n\nO resumo, porém, ressalva que sintomas e sinais clínicos isolados têm baixa sensibilidade. Parestesia e paresia aparecem tarde; o pulso pode continuar presente mesmo com isquemia muscular. Edema é relativamente mais sensível, mas pouco específico. Logo, nem o exame seriado deve ser apresentado como proteção suficiente em todo paciente.\n\nNos pacientes de risco, os autores recomendam monitorização contínua da pressão, com documentação da pressão arterial e leitura do delta P. Isso ganha importância quando consciência reduzida ou dificuldade de comunicação torna o exame menos confiável. Já vários sinais clínicos claros sustentam fasciotomia urgente.\n\n**Leia “Diagnóstico clínico” e “Clínica ou monitorização?”, na Biblioteca.** Entenda por que C é a melhor alternativa disponível, sem concluir que a clínica exclua necessidade de monitorização.",
+      "correta": "**C: exame físico seriado, conforme a banca.** É a opção que combina achados ao longo do tempo, em lugar de eleger pulso, edema ou sensibilidade como teste isolado. A progressão pode ser decisiva para elevar a suspeita.\n\nO resumo não considera a clínica sozinha adequada para todos os pacientes de risco; monitorização contínua faz parte da estratégia recomendada.",
+      "incorretas": {
+        "A": "**Pulsos distais podem permanecer presentes.** A pressão capaz de prejudicar a microcirculação muscular é menor que a pressão arterial que mantém pulso palpável. Por isso pulso normal não exclui síndrome; ausência pode ser tardia ou indicar lesão vascular associada.",
+        "B": "**Edema é relevante, mas não define o diagnóstico isoladamente.** A tabela apresenta sensibilidade de 54% e especificidade de 76%, melhores para detecção que alguns sinais, porém insuficientes para tornar o grau de inchaço o parâmetro único principal. Edema também ocorre em traumas sem síndrome.",
+        "D": "**Alteração sensitiva pode faltar e aparecer tarde.** Parestesia tem sensibilidade baixa na tabela e pode decorrer de lesão nervosa associada. A sensibilidade dos dedos integra a reavaliação, mas esperar déficit para reconhecer a emergência deixa muitos casos evoluírem."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Diagnóstico clínico: por que os sinais chegam tarde; Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ],
+      "alerta": "Gabarito oficial C preservado. O exame seriado é útil e é a melhor alternativa disponível, mas o resumo considera a clínica isolada inadequada e recomenda monitorização contínua de pressão em pacientes de risco, sobretudo com exame pouco confiável. Pulso ou sensibilidade preservados não excluem síndrome."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Diagnóstico clínico: por que os sinais chegam tarde",
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-9a9336aa",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-5792d377",
+          "medida-da-pressao-e-o-delta-p-491de05b",
+          "o-tratamento-preferido-dos-autores-930f2a36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "a5fea62210550a016114b5d33b99bde97effd389d333ec092ab7ac450bdce71a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1606": {
+    "questaoSha256": "2533f153b80a16128d2bb54bf8a3af7476436d05416a53c7aafb3ae95119ae6d",
+    "comentarioAnteriorSha256": "8bef5cb065b08d8e4e4cc603229d862949d6594edf2c3559bef42d35b8d2af89",
+    "comentario": {
+      "conceito": "**Atraso até a fasciotomia superior a seis horas provavelmente causa sequelas significativas, segundo o resumo.** O dano decorre da intensidade e duração da perda de perfusão: pressão elevada reduz o fluxo, provoca isquemia e leva a necrose muscular, contratura e lesão neurológica. O atraso é destacado como a principal causa isolada de fracasso.\n\nO texto sugere contar o atraso a partir da admissão, por ser um marco mais definível. Isso não equivale a conhecer o início exato da isquemia em todos os casos. No esmagamento e no paciente encontrado caído, o início pode ser incerto e a viabilidade deve ser interpretada com especial cuidado.\n\nHá outros tempos no mesmo capítulo: mais de duas horas de delta P abaixo de 30 mmHg no protocolo de monitorização; cerca de 48 horas para revisão da ferida. Nenhum deles concede tempo de espera a um caso clinicamente estabelecido. Seis horas é um marco de risco de sequelas, não uma promessa de segurança até o minuto anterior.\n\n**Leia “Complicações, atraso e paciente encontrado caído”, na Biblioteca.** Diferencie atraso até tratamento de um suposto limiar universal de morte de todo tecido.\n\n**Por que esta questão foi criada.** O TARO 2023 cobra tempo de isquemia irreversível com outra redação e resposta oficial. Este simulado fixa o número que o resumo fornece especificamente para atraso até fasciotomia, evitando misturar os dois conceitos.",
+      "correta": "**C: seis horas.** O resumo associa atraso superior a esse intervalo a sequelas significativas. A expressão “provavelmente” e o marco de admissão indicam uma relação clínica de risco, não uma fronteira biológica exata.\n\nA decisão continua sendo tratar a síndrome prontamente.",
+      "incorretas": {
+        "A": "**Duas horas é o intervalo do delta P no protocolo de Edimburgo.** É um critério de monitorização para reconhecer perfusão persistentemente inadequada, não o tempo até sequelas desta pergunta. Com quadro clínico claro, nem esse intervalo deve ser aguardado para operar.",
+        "B": "**Quatro horas não é o marco de atraso referido pelo resumo.** Isso não torna um atraso dessa duração aceitável: a isquemia já pode estar progredindo. A questão pede a associação temporal descrita, cujo valor é superior a seis horas.",
+        "D": "**Oito horas é a letra oficial de uma questão com redação diferente, sobre lesão irreversível.** O resumo não usa esse valor para o atraso até fasciotomia. A semelhança do tema não autoriza transportar o número entre enunciados nem esperar oito horas em um quadro diagnosticado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Complicações, atraso e paciente encontrado caído; Por que a pressão mata o músculo; Medida da pressão e o delta P; O tratamento preferido dos autores; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Complicações, atraso e paciente encontrado caído",
+          "Por que a pressão mata o músculo",
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "complicacoes-atraso-e-paciente-encontrado-caido-70a47584",
+          "por-que-a-pressao-mata-o-musculo-1a07d757",
+          "medida-da-pressao-e-o-delta-p-1312eae8",
+          "o-tratamento-preferido-dos-autores-930f2a36",
+          "fasciotomia-7a3f42f7"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "a20c40fd4644afba0627751d8d796e6479209d2dacd97ce3f1a15583bb9aa498"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1663": {
+    "questaoSha256": "a2adbd3cde9069ecb89444d042e4caa6f0826f980ad06ea9d0a5995456d0b455",
+    "comentarioAnteriorSha256": "d41a26346d27ed5c01c36f6d894aef71a2639de5066900aa5e1b0245efd7b941",
+    "comentario": {
+      "conceito": "**Uma incisão lateral na coxa dá acesso aos compartimentos anterior e posterior.** A coxa possui três espaços: anterior, posterior e adutor, também chamado medial. “Lateral” descreve o caminho cirúrgico, não um quarto compartimento.\n\nNo anterior estão quadríceps, sartório e nervo femoral; no posterior, isquiotibiais e nervo isquiático. A liberação por via lateral permite tratar esses dois grupos. O compartimento dos adutores fica na região medial e, se necessário, recebe uma incisão medial separada.\n\nA distinção importante é entre o objetivo de descomprimir todos os espaços ameaçados e o alcance de uma única incisão. Dizer que a fasciotomia precisa ser adequada não significa que toda incisão alcance os três. Depois da liberação, a musculatura é inspecionada e a ferida permanece aberta, com revisão da viabilidade.\n\n**Leia “Coxa” e “Coxa, pé e braço” na Biblioteca.** Faça o mapa dos três espaços e associe cada via ao que efetivamente permite descomprimir.\n\n**Por que esta questão foi criada.** Questões sobre a coxa cobram qual compartimento é mais acometido. O simulado avança da localização para a via de tratamento, sem confundir incisão lateral com compartimento lateral.",
+      "correta": "**D: anterior e posterior.** É o alcance da incisão lateral única descrita. O medial é considerado separadamente e pode exigir outra via se estiver acometido.\n\nO critério é liberar adequadamente o tecido ameaçado, não reduzir o número de incisões a qualquer custo.",
+      "incorretas": {
+        "A": "**O anterior é alcançado, mas o medial não é o segundo grupo da via lateral.** A alternativa troca o posterior pelo adutor. Quando o medial precisa de liberação, o resumo descreve uma incisão medial própria.",
+        "B": "**Inclui o posterior, mas omite o anterior e acrescenta o medial.** A via lateral permite anterior/posterior; o adutor recebe outra abordagem quando necessária. A opção mistura o espaço mais afastado da via com apenas um dos dois que ela de fato alcança.",
+        "C": "**Confunde o objetivo global da descompressão com o alcance de uma via.** Todos os compartimentos acometidos precisam ser tratados, mas isso pode exigir mais de uma incisão. A via lateral única não substitui a medial quando o adutor necessita liberação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Fasciotomia; Os compartimentos de cada região."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia",
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "fasciotomia-f734935c",
+          "os-compartimentos-de-cada-regiao-eb26943e",
+          "fasciotomia-4de1412f",
+          "fasciotomia-7a3f42f7"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "d959f5a60e3eb990ef01e71543a26ca9a3313ff6777433734d4da8d8b4f094b4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1734": {
+    "questaoSha256": "add7381365d20e1879b7e3852d52d12470173e05f77a3e6f7e0b350aff7e8022",
+    "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "comentario": {
+      "conceito": "**O oponente do polegar pertence ao compartimento tenar.** O resumo descreve esse espaço com três músculos: abdutor curto, flexor curto e oponente do polegar. A presença da palavra “polegar” no nome de uma estrutura não basta para colocá-la no tenar.\n\nA mão tem dez compartimentos nessa divisão: tenar, hipotenar, adutor do polegar, quatro interósseos dorsais e três interósseos palmares. O adutor do polegar merece destaque porque possui compartimento próprio, embora também atue sobre o polegar. Os interósseos tampouco fazem parte do tenar.\n\nUma síndrome tenar ameaça a função dos músculos que ocupam esse espaço. Contudo, no esmagamento, a investigação não deve parar em uma região apenas porque o enunciado a destacou: os demais espaços podem estar envolvidos e precisam de avaliação apropriada. A divisão anatômica orienta o exame e a descompressão.\n\n**Leia “Braço, antebraço e mão”, na Biblioteca.** Compare os três músculos tenares com o adutor em compartimento separado e com os grupos interósseos.",
+      "correta": "**A: músculo oponente do polegar.** Está explicitamente listado junto com abdutor curto e flexor curto no compartimento tenar. Sua localização explica por que pode ter a função comprometida quando esse espaço sofre elevação patológica de pressão.\n\nA resposta depende de pertencer ao compartimento, não apenas de mover o polegar.",
+      "incorretas": {
+        "B": "**O adutor do polegar tem compartimento próprio.** É a principal confusão entre as opções porque também está relacionado ao polegar. O resumo o conta separadamente do tenar, de modo que não integra o trio pedido.",
+        "C": "**Um tendão flexor profundo dos dedos não é um dos três músculos tenares.** A opção troca uma estrutura tendínea dos flexores por um músculo intrínseco do grupo descrito. A lista tenar é abdutor curto, flexor curto e oponente do polegar.",
+        "D": "**Lumbricais não integram a composição tenar apresentada.** Ser uma musculatura da mão não significa pertencer a esse compartimento específico. Para esta localização, a fonte nomeia o trio ligado ao polegar, sem incluir lumbricais.",
+        "E": "**Os interósseos dorsais são contados como quatro compartimentos separados do tenar.** A opção aponta um grupo real da mão, mas em outro espaço. Essa separação importa porque avaliar ou liberar o tenar não equivale automaticamente a tratar os interósseos."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Os compartimentos de cada região."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-231bd2af"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0431": {
+    "questaoSha256": "1f9ab83b9a2d6b2733058d9e1f7eddb9bc7343898d19a372411fa54149bd20ce",
+    "comentarioAnteriorSha256": "9ed0f8137eb1baa933bc27c759bf253e2a42e7f768363d8b4b93643477e464ad",
+    "comentario": {
+      "conceito": "**Dor na articulação radioulnar distal deve levantar a suspeita de Essex-Lopresti em uma fratura da cabeça do rádio.** A lesão combina fratura proximal, ruptura da membrana interóssea e lesão da radioulnar distal. O problema atravessa o antebraço inteiro, embora a queixa inicial possa chamar atenção para o cotovelo.\n\nA cabeça do rádio e as estruturas longitudinais ajudam a manter a relação entre rádio e ulna. Quando esse conjunto falha, o rádio pode migrar proximalmente, produzindo instabilidade longitudinal. Por isso examinar o punho faz parte da avaliação de toda fratura da cabeça do rádio, em vez de considerar a dor distal uma queixa sem relação com a lesão proximal.\n\nPronação e supinação podem estar limitadas em várias lesões dolorosas ou com bloqueio mecânico da cabeça. Isso não demonstra, por si, ruptura da membrana e da articulação distal. A dor à palpação da radioulnar distal é a pista que direciona para o componente distante da tríade; ainda exige investigação apropriada, não é prova isolada de toda a lesão.\n\n**Leia “Lesão de Essex-Lopresti”, na Biblioteca.** Relacione cabeça do rádio, membrana interóssea e punho antes de encerrar o exame no cotovelo.",
+      "correta": "**C: dor à palpação da articulação radioulnar distal.** Ela chama atenção para a terceira parte da associação e para a possibilidade de instabilidade longitudinal. O resumo recomenda examinar o punho em toda fratura da cabeça do rádio porque reconhecer o quadro tardiamente dificulta o tratamento.",
+      "incorretas": {
+        "A": "**Diminuição da pronação pode resultar de dor ou bloqueio de uma fratura proximal.** É um achado relevante de função, mas não localiza a lesão distal que caracteriza a associação de Essex-Lopresti. Uma limitação isolada não substitui examinar o punho.",
+        "B": "**Diminuição da supinação também pode ocorrer em diferentes lesões do rádio e do cotovelo.** O bloqueio de rotação tem importância no tratamento da cabeça radial, porém não prova que a membrana e a radioulnar distal falharam. A pista mais dirigida entre as opções é a dor distal.",
+        "D": "**Dor na radioulnar proximal permanece próxima da própria fratura da cabeça do rádio.** Ela não demonstra o componente distal da associação. A armadilha é restringir a avaliação ao local evidente da lesão e perder o punho, justamente a região que o resumo manda examinar."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-8dbbe2b9",
+          "fratura-da-cabeca-do-radio-77543d87"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "1cf9479336adec710cc0723438745259c731f231e8027b1329ba7bb0f4dcc2bf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0541": {
+    "questaoSha256": "cba228dcadcb49b8b6fe722933ff22c1a99554133d8ff396b009113143191e76",
+    "comentarioAnteriorSha256": "9e802958958798586e4209a2fb828559ea8a15a3477344617ef33db7f3c4e8a4",
+    "comentario": {
+      "conceito": "**A complicação mais temida desse cenário é a síndrome compartimental.** O enunciado relaciona a bota gessada inicial à aplicação de tração excessiva durante a confecção da spica. O resumo associa essa situação à síndrome e explica que tração e compressão por posicionamento podem aumentar a pressão e reduzir a perfusão da perna.\n\nO perigo é manter músculo e nervo em um compartimento sem margem para expansão, com queda do gradiente de perfusão. O resumo também mostra que elevar o membro e comprimir a panturrilha podem diminuir a tolerância à isquemia. Não basta a fratura femoral parecer alinhada: uma complicação no segmento usado para aplicar tração continua possível.\n\nValgo descreve alinhamento; alongamento descreve comprimento; ferida no maléolo descreve lesão localizada de pele. Todos pertencem à avaliação do tratamento, mas nenhum traduz a ameaça difusa à viabilidade muscular que torna a síndrome a complicação destacada nesta técnica. A dor progressiva e desproporcional não deve ser atribuída automaticamente ao trauma ou ao desconforto do gesso.\n\n**Leia “A fratura associada” e a explicação do efeito da pressão na Biblioteca.** O ponto útil é distinguir boa posição do osso de perfusão segura dos tecidos. O resumo consultado não fornece um protocolo pediátrico completo de confecção da spica.",
+      "correta": "**B: síndrome compartimental.** É a complicação associada pelo resumo à tração excessiva na imobilização da fratura femoral pediátrica. A ameaça é isquemia muscular e nervosa, não somente perda de alinhamento.\n\nEsse reconhecimento não depende de esperar ausência de pulso, que pode continuar palpável.",
+      "incorretas": {
+        "A": "**Valgo é desvio angular do osso.** Pode indicar um problema de alinhamento, mas não descreve a ameaça à perfusão provocada por tração/compressão excessiva da perna. Avaliar a posição da fratura e vigiar síndrome compartimental são tarefas complementares.",
+        "C": "**Alongamento maior que 3 cm descreve uma alteração de comprimento.** O resumo não fornece esse valor como consequência característica da etapa de tração do gesso. Ele destaca o aumento de pressão e a síndrome, que podem ocorrer mesmo sem uma discrepância desse tamanho.",
+        "D": "**Ferimento por compressão no maléolo é uma lesão localizada e merece prevenção e tratamento.** Entretanto, não representa toda a ameaça de pressão sobre um compartimento com músculo e nervo. A pergunta destaca a complicação isquêmica potencialmente devastadora ligada à tração excessiva, não apenas uma ferida em proeminência óssea."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: A fratura associada; Por que a pressão mata o músculo; Diagnóstico clínico: por que os sinais chegam tarde."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "A fratura associada",
+          "Por que a pressão mata o músculo",
+          "Diagnóstico clínico: por que os sinais chegam tarde"
+        ],
+        "blocos": [
+          "a-fratura-associada-33d78d60",
+          "a-fratura-associada-17768b9c",
+          "por-que-a-pressao-mata-o-musculo-7d5655e4",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "fd4df6b3341ce5b1e72195f095a7bdc07f63c25657e78d02589ebbe8191bfc0c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0474": {
+    "questaoSha256": "961c9d9d25350e3064cebab4da20248c6cb1d74729c374fcb20229e875080a4e",
+    "comentarioAnteriorSha256": "5bc666fad3f86f8f509e420cce9ea2dd512662abcfdf19101b4f7a2d2602034d",
+    "comentario": {
+      "conceito": "**Essex-Lopresti associa fratura da cabeça do rádio, ruptura da membrana interóssea e lesão da articulação radioulnar distal.** É uma instabilidade longitudinal: quando falham a referência proximal e as contenções ao longo do antebraço, o rádio pode migrar proximalmente.\n\nA cabeça radial fraturada pode dominar os sintomas, mas o exame deve alcançar o punho. Dor na radioulnar distal é uma pista para a associação e precisa ser procurada em toda fratura da cabeça. A reconstrução tardia costuma ser mais difícil, tornando importante reconhecer a lesão completa desde o início.\n\nO colateral medial é relevante para estabilidade do cotovelo e pode participar de outras combinações de lesões. Porém, ele não substitui nenhum dos três elementos que definem Essex-Lopresti. A pergunta é de definição de uma associação específica, não uma lista de todas as estruturas que poderiam sofrer no mesmo trauma.\n\n**Leia “Lesão de Essex-Lopresti”, na Biblioteca.** Desenhe a tríade de proximal para distal e observe qual parte cada alternativa troca ou omite.",
+      "correta": "**B, resposta bibliográfica: cabeça do rádio, membrana interóssea e radioulnar distal.** A combinação explica por que uma fratura aparentemente localizada no cotovelo pode causar dor no punho e instabilidade ao longo de todo o antebraço.\n\nNão há gabarito oficial disponível; a letra deriva da definição apresentada no resumo.",
+      "incorretas": {
+        "A": "**Inclui cabeça e membrana, mas troca a radioulnar distal pelo colateral medial.** Uma lesão ligamentar no cotovelo pode aumentar instabilidade, porém não representa o componente distal que define a tríade. O punho não pode desaparecer da definição.",
+        "C": "**Inclui cabeça e articulação distal, mas omite a membrana interóssea.** A membrana é parte da contenção longitudinal entre rádio e ulna, e sua ruptura integra a associação. Acrescentar colateral medial não supre essa omissão.",
+        "D": "**Inclui membrana e radioulnar distal, mas retira a fratura da cabeça do rádio.** A referência proximal é fundamental para a definição e para compreender a migração radial. O colateral medial não substitui a cabeça radial nessa tríade."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
+      ],
+      "alerta": "Não há gabarito oficial disponível. A resposta B é bibliográfica, conforme a definição de Essex-Lopresti no resumo consultado.",
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-8dbbe2b9",
+          "fratura-da-cabeca-do-radio-702c1386",
+          "fratura-da-cabeca-do-radio-510692ed"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "861c0ab66a361f9a15d16b147d06a8dea48361368901fc55ddacf5489459242d"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -776,42 +776,48 @@ function ordemDoTema(indice: Indice, livres: string[]): string[] {
 /**
  * As questões de hoje dentro de um tema: só as que ainda não foram feitas,
  * começando pelos assuntos que mais caem (sorteadas dentro de cada nível).
- * `nSim` fixa quantos OrtoQuestões Simulados entram (a sessão com várias áreas
- * reparte a cota do dia inteiro); sem ele, sorteia dentro de faixaSimulados.
  */
-export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number, simulados = true, sortear: () => number = Math.random, nSim?: number): string[] {
+export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number, simulados = true, sortear: () => number = Math.random, alvoSimulados?: number): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === slug)
   if (tema < 0 || n <= 0) return []
   const livres = indice.questoes.filter((q) => q.t === tema && entraNoPlano(q, simulados) && !respondidas[q.id])
   if (!simulados) return ordemDoTema(indice, livres.map((q) => q.id)).slice(0, n)
   // Oficiais e simulados em filas separadas: a quantidade de simulados é controlada
-  // e eles entram espalhados, não acumulados no fim.
+  // (entre o mínimo e o máximo) e eles entram espalhados, não acumulados no fim.
   const oficiais = ordemDoTema(indice, livres.filter((q) => q.sim !== 1).map((q) => q.id))
   const doTema = embaralhar(livres.filter((q) => q.sim === 1).map((q) => q.id), sortear)
   const outros = embaralhar(indice.questoes.filter((q) => q.sim === 1 && q.t !== tema && entraNoPlano(q, true) && !respondidas[q.id]).map((q) => q.id), sortear)
-  const cota = Math.min(n, nSim ?? sortearSimulados(n, sortear))
-  // A cota pode vir de outras áreas; se faltar oficial, só os simulados do próprio tema completam.
-  const daCota = [...doTema, ...outros].slice(0, cota)
-  const extras = doTema.filter((id) => !daCota.includes(id)).slice(0, Math.max(0, n - cota - oficiais.length))
+  const { minimo, maximo } = faixaSimulados(n)
+  // Alvo: um número sorteado dentro da faixa (ou a parte desta área no alvo do dia, em
+  // idsDoDiaPlano). O alvo pode vir de outras áreas; se faltar oficial, só os simulados
+  // do próprio tema completam (antes vinham de qualquer área e a sessão enchia de simulados).
+  const alvo = Math.min(n, alvoSimulados ?? minimo + Math.floor(sortear() * (maximo - minimo + 1)))
+  const daCota = [...doTema, ...outros].slice(0, alvo)
+  const extras = doTema.filter((id) => !daCota.includes(id)).slice(0, Math.max(0, n - alvo - oficiais.length))
   const sims = [...daCota, ...extras]
   const base = oficiais.slice(0, n - sims.length)
   return intercalar(base, sims, sortear)
 }
 
 /**
- * OrtoQuestões Simulados por sessão do cronograma (Tales, 22/10/2026): o padrão é um
- * para cada cinco oficiais, mas flexível; a sessão pode ter menos (até a metade
- * disso, ou nenhum numa sessão curta), nunca mais.
+ * OrtoQuestões Simulados por dia do cronograma (Tales, 22/10/2026; antes, de 2 a 10 por dia):
+ * o padrão é um para cada cinco oficiais, mas flexível. O dia sorteia entre a metade disso
+ * e o padrão (pode vir nenhum num dia curto), nunca mais, e no máximo 10.
  */
 export function faixaSimulados(n: number): { minimo: number; maximo: number } {
   const total = Math.max(0, n)
-  return { minimo: Math.floor(total / 12), maximo: Math.round(total / 6) }
+  return { minimo: Math.min(5, Math.floor(total / 12)), maximo: Math.min(10, Math.round(total / 6)) }
 }
 
-/** Quantos simulados entram numa sessão de n questões: um número sorteado dentro da faixa. */
-export function sortearSimulados(n: number, sortear: () => number = Math.random): number {
-  const { minimo, maximo } = faixaSimulados(n)
-  return minimo + Math.floor(sortear() * (maximo - minimo + 1))
+/** O alvo de simulados do dia repartido entre as áreas, na proporção de cada uma (o resto vai às maiores). */
+export function repartirSimulados(ns: number[], alvo: number): number[] {
+  const total = ns.reduce((s, n) => s + n, 0)
+  if (!total) return ns.map(() => 0)
+  const partes = ns.map((n) => Math.min(n, Math.floor((alvo * n) / total)))
+  let falta = alvo - partes.reduce((s, p) => s + p, 0)
+  const ordem = ns.map((_, i) => i).sort((a, b) => ns[b] - ns[a])
+  for (let volta = 0; falta > 0 && volta < alvo; volta++) for (const i of ordem) { if (falta <= 0) break; if (partes[i] < ns[i]) { partes[i]++; falta-- } }
+  return partes
 }
 
 function embaralhar<T>(lista: T[], sortear: () => number): T[] {
@@ -845,27 +851,16 @@ function intercalar(oficiais: string[], sims: string[], sortear: () => number): 
  */
 export function idsDoDiaPlano(indice: Indice, itens: Array<{ slug: string; n: number; mistura: boolean }>, respondidas: Record<string, unknown>, simulados = true, sortear: () => number = Math.random): string[] {
   const usados = new Set<string>()
-  // A cota de simulados é do dia inteiro, repartida pelas áreas na proporção de cada uma
-  // (antes cada área tinha o seu mínimo, e a soma passava da conta).
-  const total = itens.reduce((s2, it) => s2 + Math.max(0, it.n), 0)
-  const cotas = repartir(simulados ? sortearSimulados(total, sortear) : 0, itens.map((it) => Math.max(0, it.n)))
-  const partes = itens.map((it, k) => {
-    const ids = idsDoDia(indice, it.slug, { ...respondidas, ...Object.fromEntries([...usados].map((id) => [id, true])) }, it.n, simulados, sortear, cotas[k]).filter((id) => !usados.has(id))
+  // A faixa de simulados vale para o dia inteiro, e não para cada área.
+  const total = itens.reduce((s, it) => s + Math.max(0, it.n), 0)
+  const { minimo, maximo } = faixaSimulados(total)
+  const alvos = simulados ? repartirSimulados(itens.map((it) => Math.max(0, it.n)), minimo + Math.floor(sortear() * (maximo - minimo + 1))) : itens.map(() => 0)
+  const partes = itens.map((it, i) => {
+    const ids = idsDoDia(indice, it.slug, respondidas, it.n, simulados, sortear, alvos[i]).filter((id) => !usados.has(id))
     ids.forEach((id) => usados.add(id))
     return { mistura: it.mistura, ids }
   })
   return espalharMistura(partes.filter((p) => !p.mistura).flatMap((p) => p.ids), partes.filter((p) => p.mistura).flatMap((p) => p.ids))
-}
-
-/** Reparte `total` pelos pesos (maiores restos), sem passar do peso de cada um. */
-function repartir(total: number, pesos: number[]): number[] {
-  const soma = pesos.reduce((s2, p) => s2 + p, 0)
-  if (!soma || !total) return pesos.map(() => 0)
-  const exatos = pesos.map((p) => (total * p) / soma)
-  const cotas = exatos.map(Math.floor)
-  const ordem = exatos.map((e, k) => ({ k, resto: e - cotas[k] })).sort((a, b) => b.resto - a.resto)
-  for (let i = 0, falta = total - cotas.reduce((s2, c) => s2 + c, 0); falta > 0 && i < ordem.length; i++, falta--) cotas[ordem[i].k] = Math.min(pesos[ordem[i].k], cotas[ordem[i].k] + 1)
-  return cotas
 }
 
 /** A mistura espalhada pela sessão: uma a cada k da área principal, começando um pouco depois do início. */

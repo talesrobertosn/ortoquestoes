@@ -1,0 +1,121 @@
+{
+  "id": "trauma-1142",
+  "campo": "gabaritoBibliografia",
+  "antes": "B",
+  "depois": "C",
+  "gabaritoOficial": null,
+  "questaoAnteriorSha256": "fbdc041442cf6bc12363fe5347ebb2f7efd1edd83f2c4f90e9794e52e41a008f",
+  "questaoPosteriorSha256": "78ca65c65fe5262e0cc6adb0e69a7b57d7839bb513bdd0ed8c29440b3ebe88d7",
+  "questaoAnterior": {
+    "id": "trauma-1142",
+    "tema": "Trauma adulto",
+    "subtemas": [
+      "Síndrome compartimental"
+    ],
+    "prova": "TARO",
+    "ano": 2008,
+    "dificuldade": null,
+    "enunciado": "Síndrome compartimental na perna, com diminuição da sensibilidade na região dorsolateral do pé sugere envolvimento do compartimento",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "anterior."
+      },
+      {
+        "letra": "B",
+        "texto": "lateral."
+      },
+      {
+        "letra": "C",
+        "texto": "posterior superficial."
+      },
+      {
+        "letra": "D",
+        "texto": "posterior profundo."
+      }
+    ],
+    "gabarito": null,
+    "comentario": null,
+    "comentariosComunidade": [],
+    "referencias": [
+      "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 433"
+    ],
+    "anulada": false,
+    "figuraPendente": false,
+    "revisado": false,
+    "subtemasPendentes": false,
+    "origem": {
+      "arquivo": "taro2008.pdf",
+      "pagina": 8,
+      "numeroOriginal": 43
+    },
+    "gabaritoBibliografia": "B"
+  },
+  "questaoPosterior": {
+    "id": "trauma-1142",
+    "tema": "Trauma adulto",
+    "subtemas": [
+      "Síndrome compartimental"
+    ],
+    "prova": "TARO",
+    "ano": 2008,
+    "dificuldade": null,
+    "enunciado": "Síndrome compartimental na perna, com diminuição da sensibilidade na região dorsolateral do pé sugere envolvimento do compartimento",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "anterior."
+      },
+      {
+        "letra": "B",
+        "texto": "lateral."
+      },
+      {
+        "letra": "C",
+        "texto": "posterior superficial."
+      },
+      {
+        "letra": "D",
+        "texto": "posterior profundo."
+      }
+    ],
+    "gabarito": null,
+    "comentario": null,
+    "comentariosComunidade": [],
+    "referencias": [
+      "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 433"
+    ],
+    "anulada": false,
+    "figuraPendente": false,
+    "revisado": false,
+    "subtemasPendentes": false,
+    "origem": {
+      "arquivo": "taro2008.pdf",
+      "pagina": 8,
+      "numeroOriginal": 43
+    },
+    "gabaritoBibliografia": "C"
+  },
+  "comentarioAnteriorSha256": "b6cea465176cead212b197c6528c507ac663c8228d425dd449bfa44014eed31a",
+  "fontes": [
+    {
+      "resumo": "rockwood10-17-sindrome-compartimental",
+      "titulo": "Síndrome compartimental aguda",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+      "secoes": [
+        "Os compartimentos de cada região"
+      ],
+      "blocos": [
+        "os-compartimentos-de-cada-regiao-222f4f26"
+      ],
+      "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+      "trechosSha256": "c4dd8f21b996946a9954577247b88c7e4382103f32fde2ea2191ad0b3d59c416"
+    }
+  ],
+  "motivo": "A tabela 17-7 no resumo atribui face dorsolateral do pé ao nervo sural, no posterior superficial (C); lateral/fibular superficial corresponde ao dorso. O dado B era bibliográfico e não oficial. A aplicação do lote 042 alinha provavel, correta e distratores com C. O gabarito da banca continua nulo.",
+  "indice": "Não contém gabaritoBibliografia; cia já verdadeiro. Sem necessidade de regeneração do índice. Tema e avulsos da questão/comentário são regenerados pelo build."
+}

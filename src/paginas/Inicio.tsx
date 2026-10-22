@@ -30,7 +30,6 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
-import { CompletarPerfil } from '../componentes/CompletarPerfil'
 import { contasDisponiveis } from '../conta/supabase'
 import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
@@ -87,7 +86,8 @@ const PROVAS_DO_ACERVO = [
   { nome: 'R4 ENARE', cor: '#f08f78' },
   { nome: 'R4 Coluna', cor: '#8fb6ef' },
   { nome: 'Cirurgia da mão', cor: '#f0c46a' },
-  { nome: 'Título de cirurgia da mão (SIMÃO)', cor: '#f0c46a' },
+  { nome: 'Título de cirurgia da mão (SBCM)', cor: '#f0c46a' },
+  { nome: 'SIMÃO (simulado do título)', cor: '#f0c46a' },
   { nome: 'Fellowship de quadril', cor: '#c5a8f0' },
   { nome: 'TECOC', cor: '#9fd8f2' },
 ]
@@ -353,7 +353,7 @@ export function Inicio() {
 
         <section className="inicio-bloco inicio-seo" aria-labelledby="inicio-apresentacao">
           <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
-          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, há OrtoQuestões Simulados no padrão do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
+          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Para o título de especialista em cirurgia da mão, da SBCM, há OrtoQuestões Simulados no padrão da prova de título e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. Estude por assunto, entenda as alternativas e revise seus erros.</p>
           <nav className="inicio-guias" aria-label="Conheça o banco e organize sua preparação">
             <a href={recurso('questoes/')}>Questões por assunto</a>
             <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
@@ -550,8 +550,8 @@ export function Inicio() {
           <VitrineAssinante />
         </div>
 
-        {/* Depois do estudo do dia, não antes: os pedidos (perfil, novidade) não podem empurrar a ação principal para baixo. */}
-        <CompletarPerfil />
+        {/* Depois do estudo do dia, não antes: a novidade não pode empurrar a ação principal para baixo.
+            O crachá do perfil fica no topo do site, uma vez por entrada (App.tsx). */}
         {cronogramaNoPainel && <NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} />}
         {!calculo && !cronograma.carregando && respondidasTotal < 30 && <AteAProva total={indice!.total} conta={Boolean(conta)} />}
 

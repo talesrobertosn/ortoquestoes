@@ -1,0 +1,430 @@
+{
+  "ombro-cotovelo-0012": {
+    "questaoSha256": "e3240ed68ba2fa72a287cba68223bdf5875dcb1eb380bac89c171c3e1a584f7a",
+    "comentarioAnteriorSha256": "a84a37ba481169714acdb7990754718ce0cf688c2cf6cb093810017fffd8179f",
+    "comentario": {
+      "conceito": "**A sequência clássica descreve a perda progressiva das contenções do cotovelo.** Numa queda sobre a mão, carga axial, valgo e rotação posterolateral do antebraço podem produzir uma lesão em anel. No modelo de O'Driscoll, também conhecido nas provas como círculo de Horii, a falha começa no **complexo colateral lateral**, atravessa a **cápsula** e chega ao **colateral medial**.\n\nO lado lateral controla varo e rotação posterolateral. Quando ele cede, rádio e ulna podem girar juntos em relação ao úmero. A progressão capsular amplia a perda de contenção; a chegada ao lado medial representa uma etapa mais extensa do modelo. O medial pode permanecer íntegro em algumas luxações, portanto “é o último” não significa “rompe obrigatoriamente em toda luxação”.\n\nEssa lógica tem consequência no tratamento: um cotovelo reduzido não precisa automaticamente de reparo de todos os ligamentos. Primeiro se confirma congruência e estabilidade. Quando há indicação cirúrgica, o capítulo começa pelo reparo lateral e só avança para o medial se a articulação continuar instável.\n\n**O modelo clássico tem limites.** O resumo também apresenta estudos de imagem e vídeo com lesões mediais predominantes e lateral preservado em alguns casos, sugerindo início medial em determinados traumas. Isso impede ensinar a sequência como uma lei universal. Nesta questão, entretanto, a sequência pedida é a descrição clássica da luxação posterolateral.\n\n**Na Biblioteca, leia “Mecanismo: de lateral para medial” e seu parágrafo de ressalva.** A leitura ajuda a guardar tanto a ordem cobrada quanto o motivo de nem todo padrão de lesão observado na clínica obedecer ao mesmo roteiro.",
+      "correta": "**A: lateral, cápsula e medial.** O complexo lateral é a primeira contenção a falhar no modelo clássico; a lesão progride pela cápsula antes de atingir o colateral medial. Essa ordem mantém a relação entre a rotação posterolateral inicial e a extensão da lesão em anel.\n\nO ponto importante não é decorar três nomes soltos. A falha lateral explica a instabilidade rotatória, a progressão capsular amplia a perda de contenção e a lesão medial fica no final do modelo. A sequência não exige que o medial esteja roto em toda luxação.",
+      "incorretas": {
+        "B": "**O início lateral foi acertado, mas as duas etapas seguintes foram invertidas.** No modelo de O'Driscoll, a progressão atravessa a cápsula antes de alcançar o colateral medial. Antecipar o medial faz perder a ideia de lesão em anel. A possibilidade de ele permanecer íntegro em algumas luxações também mostra por que não deve ser colocado como segunda etapa obrigatória.",
+        "C": "**Esta é a inversão do sentido clássico.** A opção começa pelo medial e termina no lateral, enquanto a sequência cobrada começa no complexo lateral. Estudos recentes admitem que certas lesões podem iniciar medialmente, mas isso não transforma automaticamente a alternativa na descrição do círculo clássico. É preciso distinguir a ressalva clínica apresentada pelo livro do modelo específico solicitado.",
+        "D": "**Além de iniciar pelo lado oposto ao modelo, deixa a cápsula para depois dos dois colaterais.** A cápsula participa da progressão entre o lado lateral e o medial; não é uma etapa final acrescentada quando ambos já romperam. A opção perde tanto o ponto de partida como a organização em anel que explica a sequência."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Luxação simples do cotovelo",
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posterolateral crônica"
+        ],
+        "blocos": [
+          "luxacao-simples-do-cotovelo-d4159e35",
+          "luxacao-simples-do-cotovelo-5d25ae81",
+          "quem-segura-o-cotovelo-d2f0137f",
+          "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+          "luxacao-simples-do-cotovelo-569d2234",
+          "luxacao-simples-do-cotovelo-2d8aeee9",
+          "luxacao-simples-do-cotovelo-4dc4fd08"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "fdbbd97cc68e7364c4be0d817609239e95243b4a991e9c6b7cfb2169c5ce5511"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0016": {
+    "questaoSha256": "a91ca0b2d2a365dd58ff85a0b5426f103087829bf143e678ac2e94bd4dff0989",
+    "comentarioAnteriorSha256": "60bd1f1d13c78ffe52febde39d61f7952215a5125a2334be7e8f2f89e1441a2f",
+    "comentario": {
+      "conceito": "**A estabilidade depende do encaixe ósseo e das partes moles.** O resumo organiza as contenções estáticas em dois grupos. Entre os **primários** estão o processo coronoide e os ligamentos colaterais medial e lateral. Entre os **secundários**, a cápsula, a articulação radiocapitelar e as origens comuns dos flexores e extensores.\n\nEssa divisão expressa hierarquia funcional, não uma separação entre estruturas úteis e inúteis. O coronoide participa da contenção contra varo e cargas axiais e rotatórias. O colateral medial, sobretudo seu feixe anterior, é fundamental contra o valgo; o complexo lateral controla varo e rotação posterolateral. A cabeça do rádio resiste secundariamente ao valgo e ganha importância quando outra contenção está lesada.\n\nA tróclea faz parte do encaixe ulnoumeral e não deve ser ensinada como irrelevante. O ponto da alternativa é que, **na lista usada pelo resumo**, o componente ósseo nominalmente destacado entre os três primários é o coronoide. O único par de alternativas formado por dois integrantes dessa lista é coronoide e colateral lateral.\n\nAs estruturas secundárias podem se tornar decisivas em uma combinação de lesões. É por isso que retirar a cabeça radial sem repor seu apoio pode ser problemático quando os ligamentos ou outras contenções também falharam. Classificar como secundário não autoriza desprezar o elemento na decisão clínica.\n\n**Leia “Quem segura o cotovelo” na Biblioteca, incluindo os parágrafos sobre as direções de força.** Associar cada estrutura a valgo, varo e rotação ajuda a usar a classificação em outras questões e na interpretação das fraturas-luxações.",
+      "correta": "**D: processo coronoide e ligamento colateral lateral.** Ambos pertencem ao grupo primário explicitamente apresentado no resumo. O coronoide fornece contenção óssea; o complexo lateral é uma contenção ligamentar importante para varo e rotação posterolateral.\n\nA alternativa reúne dois mecanismos complementares da estabilidade. Sua escolha não significa que a articulação possa ser entendida apenas por essas duas peças: o colateral medial completa o grupo primário, e os estabilizadores secundários e dinâmicos também participam do equilíbrio.",
+      "incorretas": {
+        "A": "**O par inclui a cápsula, classificada como secundária.** A tróclea participa do encaixe ósseo do cotovelo, mas não torna a cápsula um componente primário na organização adotada. O erro não deve ser explicado dizendo que ambas “não estabilizam”; a distinção é a hierarquia da lista pedida. A cápsula contribui e pode estar lesada, sem ocupar o mesmo grupo dos colaterais e do coronoide.",
+        "B": "**O colateral lateral é primário; a troca do coronoide pela tróclea afasta o par da lista da fonte.** A superfície troclear é parte essencial do encaixe, mas o resumo nomeia o coronoide como sua peça óssea primária na classificação utilizada. Esse cuidado evita transformar a resposta da prova em uma afirmação falsa de que a tróclea não tem importância biomecânica.",
+        "C": "**O coronoide foi reconhecido corretamente, mas a cápsula continua sendo secundária.** O primeiro oferece contenção óssea importante; a segunda integra as partes moles de apoio e participa da lesão da luxação. Colocá-los no mesmo grupo confunde participação na estabilidade com o nível atribuído a cada estrutura pela classificação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Quem segura o cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Quem segura o cotovelo"
+        ],
+        "blocos": [
+          "quem-segura-o-cotovelo-834827b5",
+          "quem-segura-o-cotovelo-e5d8f9c3",
+          "quem-segura-o-cotovelo-1ae976bf",
+          "quem-segura-o-cotovelo-e54d94bb",
+          "quem-segura-o-cotovelo-d2f0137f",
+          "quem-segura-o-cotovelo-2b1e3945"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "47e55b75db43801e4071a88e91e16138c68d3d6fcbb5b912b5f9ccf607e33852"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0022": {
+    "questaoSha256": "50e86557eec947c2265f218278b716195e48be5d73f4d1fbfb5301f2517b9820",
+    "comentarioAnteriorSha256": "442395efacf7656eab3723001faf009f1c27f4b58c7940c0e7d280e100096a43",
+    "comentario": {
+      "conceito": "**O lateral insuficiente deixa o antebraço vulnerável à rotação posterolateral.** O complexo colateral lateral, especialmente seu componente ulnar lateral, ajuda a manter rádio e ulna relacionados ao úmero. Quando essa contenção falha, rádio e ulna podem girar juntos em supinação, com subluxação posterior da cabeça radial em relação ao capítulo.\n\nA **pronação** oferece compensação parcial: tensiona estruturas mediais e extensores e favorece o fechamento do lado lateral, segundo a explicação do resumo. A supinação reproduz o sentido da instabilidade e tende a desestabilizar. É uma proteção posicional e dinâmica; não equivale a afirmar que o ligamento cicatrizou ou que qualquer cotovelo instável fica seguro apenas ao pronar.\n\nA regra aparece no teste após reduzir, no posicionamento da tala, no reparo ligamentar e na reabilitação. Com medial íntegro e lateral a proteger, o protocolo favorece o antebraço pronado e limita a rotação a posições com o cotovelo a 90 graus ou mais. Se o lateral está competente e o medial é o lado lesado, a posição pode mudar para supinação; com ambos lesados, para neutro. Assim, não existe uma rotação universal que proteja todas as lesões.\n\nA flexão também costuma ajudar a manter a redução, mas a questão procura a rotação que compensa especificamente a deficiência lateral. **Na Biblioteca, leia “A pronação protege o lado lateral” e compare com o parágrafo final de reabilitação da luxação simples.** O contraste entre lateral e medial é o que permite aplicar a regra corretamente.",
+      "correta": "**C: pronação.** Essa rotação é a compensação parcial descrita para o complexo lateral insuficiente. Ela se opõe ao padrão de supinação associado à instabilidade posterolateral e integra o posicionamento protetor após reduzir ou reparar.\n\n“Parcialmente” é uma palavra decisiva. A posição não substitui confirmar a redução concêntrica e avaliar se o cotovelo mantém um arco estável. Instabilidade persistente pode exigir outro tratamento mesmo que a pronação melhore o comportamento da articulação.",
+      "incorretas": {
+        "A": "**Flexão pode ajudar, mas não responde ao componente rotatório específico.** A posição de maior estabilidade após uma luxação posterolateral frequentemente combina flexão e pronação. Escolher apenas flexão deixa sem resposta qual rotação protege o complexo lateral deficiente. Ela não é uma afirmação de que flexionar sempre piora; é uma opção incompleta para o mecanismo perguntado.",
+        "B": "**A extensão pode expor a instabilidade residual em vez de compensá-la.** O capítulo testa o cotovelo ao longo do arco e usa bloqueio de extensão na recuperação, ampliando-o progressivamente. Isso mostra por que não basta estender para obter a proteção dinâmica pedida. A rotação protetora específica da deficiência lateral é a pronação, avaliada no contexto de um arco seguro.",
+        "D": "**Supinação é a rotação que favorece a instabilidade posterolateral.** Ela aparece no teste do reparo lateral justamente como uma posição de desafio, não como a proteção padrão desse lado. Pode ser usada para proteger um cotovelo com lateral competente e medial lesado, mas esse é outro padrão. Transferir a regra medial para uma deficiência lateral inverte a indicação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica; Luxação simples do cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posterolateral crônica",
+          "Luxação simples do cotovelo"
+        ],
+        "blocos": [
+          "quem-segura-o-cotovelo-7b7c7f11",
+          "quem-segura-o-cotovelo-d2f0137f",
+          "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+          "luxacao-simples-do-cotovelo-877efcd2",
+          "luxacao-simples-do-cotovelo-3e95d9b4",
+          "luxacao-simples-do-cotovelo-dda581c3",
+          "luxacao-simples-do-cotovelo-ec03078e"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "59f17828c4478536fd478b76e15599ce7cad5b8320a6c92b5a3b88c703e34896"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0025": {
+    "questaoSha256": "1af3597b730590813a360e9428c12b5375aefcc6636b7c6b4865b0df35695535",
+    "comentarioAnteriorSha256": "1479541f9c977f296b6183bb655522c2d9b9f5bc3bd9c4d06f5cc103d0dc8a64",
+    "comentario": {
+      "conceito": "**O estresse em valgo abre o lado medial do cotovelo.** A contenção ligamentar principal nessa direção é o **colateral medial**, em especial seu feixe anterior. Ele liga a face anteroinferior do epicôndilo medial ao tubérculo sublime da ulna e é o estabilizador-chave contra esse esforço na organização apresentada pelo resumo.\n\nA cabeça do rádio também ajuda contra valgo, mas como estabilizadora **secundária**. Essa reserva óssea ganha importância quando a contenção medial foi lesionada. O complexo lateral tem outra função predominante: resistir a varo e à rotação posterolateral. Já a cápsula integra o grupo secundário e não substitui o papel do medial no estresse descrito.\n\nA distinção tem consequência prática. Uma fratura da cabeça radial com colateral medial roto não deve ser pensada como simples fragmento a retirar: remover o apoio ósseo secundário justamente quando o primário falhou pode agravar a instabilidade. A necessidade de preservar ou reconstruir esse apoio depende do conjunto de lesões.\n\nO enunciado fixa o cotovelo a 90 graus e pergunta pela estrutura mais importante; o resumo sustenta a hierarquia do colateral medial, sem que seja necessário inventar percentuais de resistência ou arcos exatos que não foram apresentados. **Leia “O lado medial” e os dois níveis de estabilizadores em “Quem segura o cotovelo”, na Biblioteca.** Use a direção da força para distinguir o medial do lateral, e a hierarquia para distingui-lo da cabeça radial.",
+      "correta": "**D: ligamento colateral medial.** Seu feixe anterior é o principal restritor ligamentar ao valgo. A inserção entre epicôndilo medial e tubérculo sublime ajuda a visualizar a contenção do lado que tende a abrir com essa força.\n\nA pergunta não quer apenas uma estrutura que participe da estabilidade. Cabeça radial e cápsula também contribuem, mas não ocupam o papel primário destacado para o medial no esforço em valgo.",
+      "incorretas": {
+        "A": "**A cabeça do rádio resiste ao valgo, mas é secundária nessa hierarquia.** Por isso a opção é plausível e não deve ser explicada como uma estrutura que “não estabiliza”. Com o colateral medial lesado, sua contribuição ganha relevância clínica, o que pesa contra ressecção isolada. No cotovelo descrito apenas pelo estresse em valgo, entretanto, a contenção ligamentar principal é medial.",
+        "B": "**A cápsula participa da estabilidade, porém é classificada entre os secundários.** Sua presença no anel de lesão da luxação não a torna o principal restritor ao valgo a 90 graus. A alternativa confunde uma contenção que pode estar lesionada com aquela que lidera a resistência à direção de força perguntada.",
+        "C": "**O colateral lateral é primário, mas para outro padrão predominante de esforço.** O complexo controla varo e rotação posterolateral; o estresse em valgo destaca o colateral medial. Dizer apenas “é um ligamento primário” não resolve a pergunta, porque a direção e o mecanismo determinam qual contenção está sendo exigida."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Quem segura o cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Quem segura o cotovelo"
+        ],
+        "blocos": [
+          "quem-segura-o-cotovelo-2b1e3945",
+          "quem-segura-o-cotovelo-834827b5",
+          "quem-segura-o-cotovelo-e5d8f9c3",
+          "quem-segura-o-cotovelo-e54d94bb",
+          "quem-segura-o-cotovelo-d2f0137f"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "95a064cc6d5574218646a73ebf56f4b7a204836ebcb231a64ed66bcf7af13a97"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0032": {
+    "questaoSha256": "89f5191e964bf4a813c37922d6eaead449d4a9272e3e5953d645f0da8fd798db",
+    "comentarioAnteriorSha256": "e45fd9447ea5c7d9517dfc8fc5e1d5b9d14474381b3b692bed8932d175da5cd0",
+    "comentario": {
+      "conceito": "**O tubérculo sublime é uma referência da contenção medial em valgo.** O feixe anterior do ligamento colateral medial nasce na face anteroinferior do epicôndilo medial e termina nesse ponto da ulna proximal. Assim, reconhecer a inserção permite deduzir a função: ligar úmero e ulna pelo lado medial para limitar a abertura em valgo.\n\nO lado lateral tem um mapa diferente. O ligamento anular envolve a cabeça do rádio e se fixa nas bordas da incisura radial da ulna. O colateral radial se mistura a ele, enquanto o colateral ulnar lateral passa posteriormente e chega à **crista do supinador**. Portanto, tanto o tubérculo sublime quanto a crista do supinador ficam na ulna, mas pertencem a trajetos e funções distintos.\n\nO ligamento transverso também não é o feixe anterior: liga estruturas da própria ulna, entre olécrano e coronoide, e tem pouca importância funcional na descrição do resumo pediátrico usado como complemento anatômico. Não representa a mesma ponte do epicôndilo ao tubérculo sublime.\n\nEssa anatomia importa nas fraturas do coronoide. O subtipo da faceta anteromedial que inclui o tubérculo sublime pode acrescentar instabilidade em valgo, porque compromete a região de inserção do estabilizador medial. A localização do fragmento ensina mais que seu tamanho isolado.\n\n**Leia “O lado medial” no resumo adulto da Biblioteca e compare com “O lado lateral”.** Traçar origem e inserção de cada ligamento permite responder a perguntas de anatomia e interpretar a instabilidade das fraturas próximas.",
+      "correta": "**D: porção anterior do ligamento colateral medial.** O trajeto entre epicôndilo medial e tubérculo sublime corresponde ao principal feixe de contenção em valgo. A inserção é a informação anatômica direta pedida pelo enunciado.\n\nTambém ajuda a separar duas referências ulnares: tubérculo sublime é medial; crista do supinador é a referência do colateral ulnar lateral. Os nomes parecidos não tornam os trajetos intercambiáveis.",
+      "incorretas": {
+        "A": "**O anular se fixa nas bordas anterior e posterior da incisura radial e circunda a cabeça radial.** Ele está relacionado à articulação radioulnar proximal e integra o complexo lateral. A opção confunde uma fixação na ulna com a inserção específica no tubérculo sublime. O fato de ambos se prenderem à ulna não lhes dá a mesma função nem o mesmo endereço anatômico.",
+        "B": "**O transverso liga olécrano e coronoide na própria ulna.** Não é a porção que parte do úmero e se insere no tubérculo sublime para resistir ao valgo. O resumo pediátrico complementar lhe atribui pouca função estabilizadora, ao contrário da importância do feixe anterior medial. Confundi-los apaga a diferença entre uma ligação ulnar local e uma contenção umeroulnar.",
+        "C": "**O colateral ulnar lateral chega à crista do supinador, não ao tubérculo sublime.** Ele integra o complexo lateral e é importante para conter rotação posterolateral. O termo “ulnar” informa seu destino ósseo, não o transforma em um ligamento medial. Seguir o trajeto desde o epicôndilo lateral diferencia essa estrutura do feixe anterior do colateral medial."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Quem segura o cotovelo.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 15. Complemento anatômico consultado no resumo Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança, seção O epicôndilo medial: anatomia, ossificação e estabilidade, Biblioteca OrtoQuestões."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Quem segura o cotovelo",
+          "Fraturas do coronoide",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "quem-segura-o-cotovelo-2b1e3945",
+          "quem-segura-o-cotovelo-d2f0137f",
+          "fraturas-do-coronoide-261ac45a",
+          "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "2c07a73498bb6a0548f0d3bb3439ae8c4c261b118345c8bcc11a8421927d2eb6"
+      },
+      {
+        "resumo": "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
+        "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 15 · Dislocations of the Elbow and Medial Epicondylar Humerus Fractures",
+        "secoes": [
+          "O epicôndilo medial: anatomia, ossificação e estabilidade"
+        ],
+        "blocos": [
+          "o-epicondilo-medial-anatomia-ossificacao-e-estab-31a428cf",
+          "o-epicondilo-medial-anatomia-ossificacao-e-estab-efabbd4f"
+        ],
+        "sha256": "ae070b2167a6a9ccc68abc8afd1798e0fa1a9d2291b9f625b8da1f7db699a8fd",
+        "trechosSha256": "ba8808756346f6327f40a3fc0dde18524a4dc0d5702141a3798fcbc5b776c755"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0071": {
+    "questaoSha256": "0ecd9d1c98c02dfe42350afddfea0eca699c88cb4039ff2195f03367d4ace191",
+    "comentarioAnteriorSha256": "5c5f4c1edd3022d0089b87a8a2a69dbd87d66850cf94e9371b571c113014e3c8",
+    "comentario": {
+      "conceito": "**Reparar o lateral exige devolver a relação anatômica antes de tensionar a sutura.** O complexo lateral controla varo e rotação posterolateral. Depois da luxação, seu reparo pode usar túneis transósseos ou âncoras no ponto isométrico, situado no centro do arco do capítulo, correspondente ao eixo de flexão e extensão.\n\nO resumo descreve a amarração com **cotovelo a 90 graus, antebraço em pronação e carga axial**, evitando abrir o lado medial. A pronação é coerente com a proteção do lateral lesado: tende a estabilizar o padrão posterolateral, enquanto a supinação é usada para desafiar esse reparo durante o teste.\n\nTrês decisões não devem ser misturadas: onde colocar a fixação, em qual posição amarrar e como testar depois. O centro isométrico diz respeito ao trajeto do ligamento ao longo do arco; os 90 graus com pronação são a posição descrita para tensionar; a extensão por gravidade em supinação avalia se o reparo lateral contém a instabilidade.\n\nDepois do reparo lateral, reavalia-se a estabilidade. O medial só é reparado se necessário, e tensão excessiva no lateral com medial insuficiente pode piorar um padrão posteromedial. Portanto, “apertar mais” não substitui redução adequada nem avaliação de todas as contenções.\n\n**Na Biblioteca, leia “Quando operar”, dentro de “Luxação simples”, até o parágrafo da amarração e do teste.** A leitura separa uma posição protetora de uma posição de provocação, evitando inverter pronação e supinação.",
+      "correta": "**B: 90 graus de flexão e antebraço pronado.** É a posição expressamente descrita para dar a tensão ao reparo. Ela deve acompanhar uma fixação anatômica no centro isométrico e manutenção da congruência, não funcionar como uma fórmula isolada que dispensa esses cuidados.\n\nA resposta também difere da posição de teste: a supinação pode ser usada para avaliar a estabilidade do reparo lateral, mas não é a rotação indicada para a amarração na fonte.",
+      "incorretas": {
+        "A": "**A pronação está correta; o ângulo de 45 graus não é o descrito.** O resumo fixa 90 graus como referência para tensionar o reparo. Não há sustentação para substituir esse ângulo por 45 apenas porque ambos mantêm alguma flexão. Em uma pergunta técnica, acertar a rotação não torna correta toda a combinação.",
+        "C": "**As duas referências foram trocadas.** A fonte usa 90 graus e pronação, enquanto a opção oferece 45 graus e neutro. A posição neutra tem papel em alguns protocolos de reabilitação de lesões combinadas, mas isso não a torna automaticamente a posição de amarração do lateral. É necessário identificar a etapa cirúrgica solicitada.",
+        "D": "**Os 90 graus estão corretos, mas a rotação neutra não corresponde ao par descrito para o reparo.** Ela pode aparecer na proteção de outras combinações de lesão, especialmente quando ambos os lados estão comprometidos. Aqui, o alvo é tensionar o lateral conforme a técnica do resumo, que escolhe pronação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Luxação simples do cotovelo",
+          "Quem segura o cotovelo"
+        ],
+        "blocos": [
+          "luxacao-simples-do-cotovelo-ce2e0d90",
+          "quem-segura-o-cotovelo-7b7c7f11",
+          "luxacao-simples-do-cotovelo-ec03078e",
+          "luxacao-simples-do-cotovelo-4dc4fd08",
+          "luxacao-simples-do-cotovelo-dda581c3"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "bb01a064f8148305df3494bddd68faa46e4eda58a230f69d34c34fa15cdaa10a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0095": {
+    "questaoSha256": "afae1eaf7cbd4a45eb70a4f4942c8aa286f7ae909f39e4e1b0a9b8bdb6126238",
+    "comentarioAnteriorSha256": "2da93ad1a9cbac4c77cacf7b68f83ac4c0e68ae14260eea63df5bbe2c450df4f",
+    "comentario": {
+      "conceito": "**A cirurgia da luxação simples é orientada pela instabilidade que persiste após reduzir.** Na maioria dos cotovelos que ficam estáveis e congruentes, o tratamento é fechado, seguido de proteção breve e movimento precoce. Reparar todos os ligamentos de rotina não mostrou vantagem nos estudos resumidos. Quando a articulação não se mantém concêntrica, reluxa ou apresenta outra indicação relevante, o roteiro operatório começa pelo lado lateral.\n\nA sequência é **reparar o colateral lateral e a origem dos extensores**, testar e, se a instabilidade continuar, reparar o medial. Se isso ainda não basta, pode ser necessária estabilização adicional, como fixador externo estático ou estabilizador interno articulado. A existência de uma ferida medial não autoriza reparar só aquilo que está exposto e ignorar o lateral.\n\nO objetivo é permitir recuperação de movimento com estabilidade. O resumo inicia o movimento por volta de uma semana após operar e recomenda não manter imobilização acima de duas semanas nessa fase. Logo, aguardar quatro semanas como regra depois de abordar o medial contraria a estratégia de mobilização precoce.\n\nHá uma ressalva na alternativa C: testes em varo e valgo podem integrar a avaliação, mas o capítulo enfatiza o arco de flexão e extensão nas diferentes rotações, inclusive a extensão por gravidade para testar o reparo. Não é correto ensinar que examinar varo e valgo seja proibido apenas para tornar D a única frase defensável. **Leia “Quando operar” no resumo da Biblioteca, observando a ordem lateral, teste e medial: esse é o ponto diretamente sustentado para o gabarito.**",
+      "correta": "**D é o gabarito oficial: o reparo do complexo lateral é a primeira etapa ligamentar após a redução.** O colateral lateral e a origem extensora são reconstruídos antes de decidir se o medial também precisa de reparo. A estabilidade é então reavaliada, e a cirurgia é ampliada apenas quando necessário.\n\nO princípio evita duas simplificações: começar sempre pelo medial e reparar somente o lado visível de uma luxação exposta. A restauração do lateral é o primeiro passo do roteiro, mas não dispensa os testes nem garante que todo cotovelo ficará estável com esse reparo isolado.",
+      "incorretas": {
+        "A": "**Fixação externa pode ser uma opção de estabilização adicional.** O resumo a inclui quando o cotovelo continua instável depois do reparo apropriado, citando fixador estático e outras soluções de suporte. A alternativa exclui uma estratégia existente. Isso não significa indicar fixador para toda luxação: seu uso depende da instabilidade residual e da qualidade da reconstrução.",
+        "B": "**Esperar quatro semanas como regra retarda a reabilitação proposta.** Após operar, o capítulo procura iniciar movimento por volta de uma semana e evitar imobilização acima de duas. A proteção é adaptada ao lado lesado e à estabilidade obtida, mas não se deve converter o reparo medial em uma indicação automática de quatro semanas sem movimento. Rigidez é um risco importante do tratamento prolongadamente imóvel.",
+        "C": "**A frase merece ressalva, em vez de uma negação anatômica artificial.** Estresse em varo e valgo pode participar do exame, porém o roteiro consultado destaca avaliação ao longo do arco em pronação, neutro e supinação e testes específicos do reparo. Assim, C não descreve todo o teste pós-redução. O resumo, sozinho, não fundamenta declarar que qualquer uso desses estresses seja errado; D é a alternativa escolhida pela banca e a ordem operatória claramente apoiada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo."
+      ],
+      "alerta": "Gabarito oficial preservado: D. O resumo sustenta lateral primeiro, teste e medial se persistir instabilidade. Ele não permite ensinar a alternativa C como uma proibição absoluta de testar varo e valgo; a frase é incompleta diante da avaliação dinâmica nas diferentes rotações, e sua exclusão categórica não está demonstrada na fonte consultada."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Luxação simples do cotovelo"
+        ],
+        "blocos": [
+          "luxacao-simples-do-cotovelo-2d8aeee9",
+          "luxacao-simples-do-cotovelo-569d2234",
+          "luxacao-simples-do-cotovelo-4dc4fd08",
+          "luxacao-simples-do-cotovelo-100eb4d3",
+          "luxacao-simples-do-cotovelo-d7162709",
+          "luxacao-simples-do-cotovelo-e9cc7169",
+          "luxacao-simples-do-cotovelo-877efcd2",
+          "luxacao-simples-do-cotovelo-ec03078e"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "128f24efba202a19007817f2c38d4658646f4d328a4d96240c427cf4645714dc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0096": {
+    "questaoSha256": "e297f414d307159904f7d06897d7fe5d658664b84e92739a199131cb3c5d11f0",
+    "comentarioAnteriorSha256": "bc8bc3760bac26baed050935e7ef093c9237cdcd925cfc29813e0116ce7129b5",
+    "comentario": {
+      "conceito": "**A instabilidade rotatória posterolateral é a forma crônica mais comum do cotovelo.** Ela surge quando o complexo lateral não recupera sua função, particularmente o componente ulnar lateral. Rádio e ulna giram juntos em supinação sobre o úmero, enquanto a cabeça radial subluxa para trás do capítulo. O nome descreve essa relação de movimento, não uma fratura obrigatória.\n\nO capítulo a apresenta como possível consequência da cicatrização deficiente depois de uma luxação e de lesões da cabeça do rádio. É importante separar a luxação aguda já reduzida de uma instabilidade crônica estabelecida: uma radiografia precoce com discreto afastamento não recebe automaticamente o mesmo tratamento da deficiência ligamentar persistente.\n\nA pronação tende a proteger o lateral; supinação, valgo e carga axial reproduzem o padrão provocativo nas questões. Na instabilidade crônica, a reconstrução lateral com enxerto tendíneo é preferida no resumo e funciona melhor com apoio da cabeça radial nativa ou protética.\n\nA **posteromedial em varo** é outra lesão: associa-se à faceta anteromedial do coronoide, varo e pronação. Não se deve escolher entre os nomes apenas porque ambos têm “posterior”. O padrão ósseo e a direção da força ajudam a distinguir as duas histórias.\n\n**Leia “Instabilidade rotatória posterolateral crônica” na Biblioteca e compare com a abertura da seção posteromedial.** Essa comparação diferencia a forma crônica mais frequente da lesão anteromedial discreta que também pode provocar instabilidade.",
+      "correta": "**D: posterolateral.** É a forma crônica mais comum descrita. A deficiência do complexo lateral permite o movimento conjunto de rádio e ulna em supinação e a subluxação posterior da cabeça radial.\n\nO tratamento e o diagnóstico dependem de reconhecer esse mecanismo. O nome não autoriza reconstruir todo cotovelo no pós-operatório imediato; é necessário diferenciar uma deficiência crônica estabelecida de alterações precoces que podem melhorar com movimento protegido.",
+      "incorretas": {
+        "A": "**Anteromedial não é a forma crônica predominante apresentada.** O termo anteromedial aparece no capítulo como a localização de uma faceta do coronoide, cuja fratura se relaciona à instabilidade posteromedial em varo. Localização do fragmento e direção da instabilidade não são sinônimos. A pergunta sobre maior frequência crônica se resolve pela deficiência lateral e seu padrão posterolateral.",
+        "B": "**Anterolateral não corresponde ao movimento descrito para a instabilidade crônica mais comum.** Na deficiência lateral, a cabeça radial subluxa para trás do capítulo enquanto o antebraço gira em supinação. A opção troca a direção posterior por anterior e perde o mecanismo que dá nome à condição. O resumo não a apresenta como o padrão predominante.",
+        "C": "**Posteromedial é um padrão real, mas distinto e menos comum no capítulo.** Ele se liga a varo, pronação e fratura da faceta anteromedial do coronoide. A forma crônica mais frequente pedida é a posterolateral, ligada à falha lateral e supinação. Reconhecer uma lesão verdadeira entre os distratores não basta para torná-la a mais comum."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Instabilidade rotatória posterolateral crônica; Quem segura o cotovelo; Instabilidade rotatória posteromedial em varo; Luxação simples do cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Instabilidade rotatória posterolateral crônica",
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posteromedial em varo",
+          "Luxação simples do cotovelo"
+        ],
+        "blocos": [
+          "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+          "quem-segura-o-cotovelo-d2f0137f",
+          "quem-segura-o-cotovelo-7b7c7f11",
+          "instabilidade-rotatoria-posteromedial-em-varo-1a68fb84",
+          "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+          "luxacao-simples-do-cotovelo-b7ff25a2"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "eb3068dd6d8887433ca9f73f0f6c3b63eb9841618cc94d72240e9417f939d656"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0106": {
+    "questaoSha256": "e08c058d38ed97455a19ab9ec3b9fe80b5e04fb971f035361f77dbca7602114f",
+    "comentarioAnteriorSha256": "f20b9b8921f039950dfd503141dc622b02cf8543de072a07937f8c0a6dbd1090",
+    "comentario": {
+      "conceito": "**Depois de reduzir, é necessário descobrir em que posição a articulação permanece estável.** O cotovelo deve percorrer flexão e extensão em pronação, neutro e supinação. Na luxação posterolateral simples, a deficiência lateral costuma predominar; por isso, flexão com **pronação** é o par protetor descrito para a pergunta.\n\nA pronação tende a tensionar estruturas que compensam parcialmente o lateral e fecha esse lado. A supinação reproduz o componente rotatório da instabilidade posterolateral. A flexão ajuda a manter uma posição protegida, enquanto a extensão progressiva pode revelar a instabilidade residual. O teste deve confirmar isso no indivíduo, em vez de presumir estabilidade por ter escolhido uma posição tradicional de tala.\n\nO resumo recomenda considerar cirurgia se o cotovelo reluxa ainda com mais de 30 graus de flexão. Laxidão em varo ou valgo isolada após o trauma não equivale automaticamente a essa perda de congruência. O objetivo do exame é identificar um arco seguro e uma articulação que permaneça concêntrica.\n\nA tala costuma ser a 90 graus e na rotação que mais estabiliza, seguida de reavaliação em até uma semana e movimento ativo protegido. Prolongar a imobilização por segurança presumida aumenta o risco de rigidez. Em outros padrões, como medial lesado com lateral competente, a rotação de proteção pode ser diferente.\n\n**Na Biblioteca, leia “Tratamento sem cirurgia: reduzir, testar e mexer cedo”.** O trecho mostra que a posição protetora responde ao tipo de lesão e ao teste dinâmico, e não substitui a confirmação da redução.",
+      "correta": "**A: flexão e pronação.** É a combinação que favorece estabilidade no padrão posterolateral com lesão lateral predominante. A flexão mantém uma posição protegida e a pronação se opõe ao mecanismo rotatório desestabilizador.\n\nA resposta não é uma ordem para manter todo cotovelo imóvel nessa posição por semanas. É o ponto de partida para proteger a redução e definir, pelos testes e pelo seguimento, um arco de movimento seguro.",
+      "incorretas": {
+        "B": "**A flexão pode ajudar, mas a supinação desafia o complexo lateral deficiente.** Ela participa do mecanismo posterolateral e pode evidenciar subluxação residual. Supinação pode proteger outra combinação, com medial lesionado e lateral competente, mas essa regra não deve ser transportada para a luxação posterolateral simples da questão.",
+        "C": "**A pronação está correta, porém a extensão reduz a proteção oferecida pela flexão.** A articulação é testada progressivamente nesse sentido para reconhecer em que ponto perde congruência. Escolher extensão apenas porque a rotação é favorável ignora a necessidade de um arco estável. O par mais protetor descrito no enunciado é flexão com pronação.",
+        "D": "**A combinação reúne duas condições que podem revelar a instabilidade lateral residual.** A extensão aproxima o cotovelo da região do arco em que pode subluxar, e a supinação favorece a rotação posterolateral. Essas posições têm utilidade de teste controlado, mas não constituem o par de maior proteção após reduzir o padrão descrito."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Luxação simples do cotovelo",
+          "Quem segura o cotovelo"
+        ],
+        "blocos": [
+          "luxacao-simples-do-cotovelo-877efcd2",
+          "luxacao-simples-do-cotovelo-3e95d9b4",
+          "quem-segura-o-cotovelo-7b7c7f11",
+          "luxacao-simples-do-cotovelo-5adb2600",
+          "luxacao-simples-do-cotovelo-dda581c3"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "28e93f10b94dd30a6a00f660cc190f35a8c0668de29533e51013c73a50fee5fa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0296": {
+    "questaoSha256": "398854ee7e7a0a91848112a27f8017a449ee0b50e6602a82ede15d31d3a4d5b1",
+    "comentarioAnteriorSha256": "a839423b16cfa55f0f930fe14ee0ee9fa93d8e4df892e9a1f7c943fd766eb550",
+    "comentario": {
+      "conceito": "**O drop sign é um achado radiográfico, não uma indicação cirúrgica isolada.** Ele representa aumento da distância umeroulnar no perfil sem estresse e pode acompanhar discreta subluxação posterolateral. No pós-operatório imediato, o resumo ressalta que pode refletir atraso na recuperação do tônus muscular, melhorando com a retomada dos estabilizadores dinâmicos.\n\nOs músculos que cruzam o cotovelo comprimem as superfícies e ajudam a estabilizar quando as contenções estáticas estão comprometidas. Isso explica por que um **protocolo de movimento ativo protegido** pode melhorar o achado. O capítulo orienta evitar varo, manter o braço junto ao corpo, usar pronação na flexão e extensão e fazer rotação com o cotovelo a 90 graus ou mais.\n\nPortanto, a observação da resposta não significa ignorar congruência, sintomas e evolução. Se a subluxação persiste ou a articulação não se mantém reduzida, é necessário reavaliar a estabilidade e o tratamento. O ponto é não saltar de um sinal precoce para uma reconstrução ligamentar de instabilidade crônica sem considerar sua possível natureza transitória.\n\nTambém não se deve chamar todo afastamento radiográfico de “apenas muscular”. A interpretação vale para o cenário imediato delimitado, com seguimento e programa protegido. Uma articulação rigidamente subluxada e reconhecida tarde pode exigir liberação e reconstrução mais complexas.\n\n**Leia “O drop sign” no resumo da Biblioteca e compare com “Instabilidade rotatória posterolateral crônica”.** A primeira seção explica o achado precoce e a recuperação dinâmica; a segunda trata de uma deficiência persistente para a qual reconstrução tem outro significado.",
+      "correta": "**A: observação, acompanhada de movimento ativo protegido e reavaliação.** O resumo descreve melhora espontânea do drop sign precoce quando o tônus retorna. Por isso, esse achado isolado não exige reconstruir imediatamente um ligamento.\n\nA conduta pressupõe acompanhar a articulação, evitar varo e verificar se a congruência melhora. Persistência ou perda de redução muda a situação e pode demandar intervenção. “Observar” não equivale a dar alta sem plano ou a aceitar instabilidade progressiva.",
+      "incorretas": {
+        "B": "**Reparar o medial automaticamente escolhe uma estrutura sem demonstrar que ela é a causa do achado.** No roteiro operatório, o medial é abordado se a instabilidade persiste após o tratamento lateral apropriado. Um sinal radiográfico imediato que pode refletir baixo tônus não estabelece, sozinho, essa indicação. É necessário distinguir aparência precoce, lesão residual e evolução.",
+        "C": "**Reconstruir o colateral ulnar lateral é uma opção para deficiência crônica estabelecida.** Na instabilidade posterolateral persistente, um enxerto pode restaurar a contenção. Esse contexto não é equivalente ao drop sign imediato, que pode melhorar com o retorno do tônus e movimento protegido. A alternativa transforma uma medida de reconstrução em resposta automática a um sinal transitório.",
+        "D": "**Reconstrução do componente radial lateral também não é indicada apenas pelo sinal precoce.** O complexo lateral reúne componentes com papéis distintos, e a avaliação deve identificar o defeito real antes de selecionar uma reconstrução. A pergunta delimita um achado pós-operatório que a fonte acompanha inicialmente, sem apontar ruptura comprovada desse componente como causa obrigatória."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Luxação simples do cotovelo",
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posterolateral crônica"
+        ],
+        "blocos": [
+          "luxacao-simples-do-cotovelo-b7ff25a2",
+          "quem-segura-o-cotovelo-e54d94bb",
+          "luxacao-simples-do-cotovelo-4dc4fd08",
+          "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "4b530a128c87850ab88af2124cccbc41ca6ebf6fcadf6d1ce36df0fc6fd09baf"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

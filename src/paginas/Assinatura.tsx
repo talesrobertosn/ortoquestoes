@@ -8,6 +8,7 @@ import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { eventoMeta } from '../conta/consentimento'
 import { href, navegar } from '../util/rotas'
+import { cpfValido } from '../util/cpf'
 import { linkConta } from '../conta/passagem'
 import { FLASHCARDS_NA_VENDA, recurso, ROTULO_SIMULADOS, LIMITES_HABILITADOS, fraseGratis } from '../config'
 import { MENSAL, real, ECONOMIA_ANUAL } from '../dados/planos'
@@ -138,6 +139,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     if (!sessao) { navegar(linkConta('criar', `/assinatura?plano=${plano.id}`)); return }
     escolher(plano)
   }
+  const cpfInvalido = cpf.replace(/\D/g, '').length === 11 && !cpfValido(cpf)
   async function confirmarCompra() {
     if (!planoEscolhido || !aceitouCondicoes || !pagamentosHabilitados || !sessao || abrindoCheckout) return
     definirAbrindoCheckout(true)
@@ -414,22 +416,23 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
               <fieldset className="ck__meios" disabled={abrindoCheckout}>
                 <legend>Como você prefere pagar?</legend>
                 {pixHabilitado && <label className={'ck__meio' + (meioPagamento === 'pix' ? ' ck__meio--ativo' : '')}>
-                  <input type="radio" name="meio-pagamento" checked={meioPagamento === 'pix'} onChange={() => { definirMeioPagamento('pix'); definirAceitouCondicoes(false) }} />
+                  <input type="radio" name="meio-pagamento" checked={meioPagamento === 'pix'} onChange={() => { definirMeioPagamento('pix'); definirAceitouCondicoes(false); definirMensagem(null) }} />
                   <span className="ck__meio-icone ck__meio-icone--pix"><IconePix tamanho={24} /></span>
                   <span className="ck__meio-texto"><strong>Pix <em className="ck__meio-selo">o mais prático</em></strong><small>Pagamento único de {real(planoEscolhido.total)}, liberado assim que cai. Sem renovação automática.</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>}
                 {!renovarPix && <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
-                  <input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false) }} />
+                  <input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false); definirMensagem(null) }} />
                   <span className="ck__meio-icone"><IconeCartao tamanho={24} /></span>
                   <span className="ck__meio-texto"><strong>Cartão de crédito</strong><small>Renovação automática a cada {planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Desliga com um botão quando quiser.</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>}
               </fieldset>
               {renovarPix && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
-              {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} onChange={evento => definirCpf(evento.target.value)} /><small>Só para o Mercado Pago gerar o Pix. Não fica salvo no seu perfil.</small></label>}
+              {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} aria-invalid={cpfInvalido} aria-describedby="ck-cpf-ajuda" onChange={evento => { definirCpf(evento.target.value); definirMensagem(null) }} />
+                <small id="ck-cpf-ajuda" className={cpfInvalido ? 'ck__cpf-erro' : undefined}>{cpfInvalido ? 'Este CPF não é válido: confira os números. Pode ser o CPF de qualquer pessoa que vá pagar o Pix.' : 'Pode ser o CPF de qualquer pessoa que vá pagar o Pix. Só serve para o Mercado Pago gerar o código e não fica salvo no seu perfil.'}</small></label>}
               <label className="ck__aceite"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor.</span></label>
-              <button className="botao botao--principal botao--largo ck__cta" type="button" disabled={!aceitouCondicoes || abrindoCheckout || (meioPagamento === 'pix' && cpf.replace(/\D/g, '').length !== 11)} onClick={() => void confirmarCompra()}>
+              <button className="botao botao--principal botao--largo ck__cta" type="button" disabled={!aceitouCondicoes || abrindoCheckout || (meioPagamento === 'pix' && !cpfValido(cpf))} onClick={() => void confirmarCompra()}>
                 {abrindoCheckout ? 'Preparando pagamento…' : meioPagamento === 'pix' ? <><IconePix tamanho={18} /> Gerar Pix de {real(planoEscolhido.total)}</> : <><Icone nome="cadeado" tamanho={16} /> Continuar para Mercado Pago</>}
               </button>
             </>

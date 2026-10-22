@@ -182,7 +182,7 @@ def main() -> int:
             usados.add(item["q"]["id"])
             q = item["q"]
             if args.aplicar:
-                if q.get("prova") in (None, "TEOT/TARO", args.prova) or not q.get("ano"):
+                if q.get("prova") in (None, "Ortopedia", args.prova) or not q.get("ano"):
                     q["prova"], q["ano"] = args.prova, args.ano
                 q["origem"] = {"arquivo": nome, "pagina": questao["pagina"], "numeroOriginal": questao["numero"]}
             # Cadernos de cores diferentes trocam a ordem das alternativas: compara o texto da certa.

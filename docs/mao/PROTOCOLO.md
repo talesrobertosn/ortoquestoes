@@ -260,9 +260,10 @@ Cada lote tem **5 questões** do mesmo capítulo. Um lote é o ciclo inteiro:
    `python3 scripts/gerar_indice.py && python3 scripts/validar_acervo.py`.
 5. Atualizar o [PROGRESSO.md](PROGRESSO.md): ids criados por número de questão, situação `publicada`,
    gabarito do lote, pendências.
-6. Commit só dos arquivos do acervo e do PROGRESSO (`git add public/acervo docs/mao/PROGRESSO.md`), com a
-   mensagem `SIMÃO 2024: questões 1 a 5 (mao-NNNN a mao-NNNN)`, e `git push`.
-7. A cada 2 a 4 lotes (ou no fim do dia), `npx tsc -b && npm test` e publicar: PR do branch de trabalho
+6. Commit local só dos arquivos do acervo e do PROGRESSO (`git add public/acervo docs/mao/PROGRESSO.md`), com a
+   mensagem `SIMÃO 2024: questões 1 a 5 (mao-NNNN a mao-NNNN)`. Sem push a cada lote (diretriz de 20/10/2026
+   para poupar o GitHub Actions; ver AGENTS.md).
+7. A cada 2 a 4 lotes (ou no fim do dia), `npx tsc -b && npm test`, um único `git push` e publicar: PR do branch de trabalho
    para `claude/pdfs-questoes-tp64dr` e merge (a publicação já está autorizada em AGENTS.md). Se o Claude
    Code estiver direto no branch de publicação, o push já publica.
 

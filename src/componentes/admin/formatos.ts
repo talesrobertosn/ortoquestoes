@@ -203,3 +203,55 @@ export function haQuantoTempo(valor: string | null | undefined): string {
   if (h < 24) return `há ${h} h`
   return haQuanto(valor)
 }
+
+/**
+ * Envios em lote do painel (lembretes, resumo quinzenal, relatório do mês): poucos por chamada
+ * e uma espera longa. Cada e-mail leva 1 a 2 s na função; com 40 por chamada e a tela esperando
+ * só 20 s, ela desistia no meio, recarregava a lista com o servidor ainda mandando e mostrava as
+ * mesmas pessoas com o botão de enviar de novo (relato do Tales, 21/10/2026).
+ */
+export const LOTE_EMAILS = 10
+export const PRAZO_LOTE_MS = 120_000
+export interface RespostaLote { enviados: number; falhas: number; adiados?: number; recusados?: number; lote?: number; talvez_restem: boolean }
+/**
+ * Soma as voltas de um envio em lote. Quem a função pula (cadência ou e-mails desligados) não
+ * fica registrado e volta na próxima chamada; por isso a volta seguinte pede mais gente (até 80),
+ * para os pulados não taparem a fila. Para quando não sobra ninguém ou quando nem pedindo 80
+ * alguém sai.
+ */
+export async function enviarEmLotes(chamar: (limite: number) => Promise<RespostaLote>, aoAvancar: (total: number) => void, voltas = 60) {
+  const soma = { enviados: 0, falhas: 0, adiados: 0, recusados: 0 }
+  let limite = LOTE_EMAILS
+  for (let volta = 0; volta < voltas; volta++) {
+    aoAvancar(soma.enviados)
+    const r = await chamar(limite)
+    const pulados = Number(r.adiados ?? 0) + Number(r.recusados ?? 0)
+    soma.enviados += r.enviados; soma.falhas += r.falhas
+    // Os pulados voltam a cada chamada: conta a maior volta, não a soma.
+    soma.adiados = Math.max(soma.adiados, Number(r.adiados ?? 0)); soma.recusados = Math.max(soma.recusados, Number(r.recusados ?? 0))
+    if (!r.talvez_restem) break
+    if (r.enviados + r.falhas === 0 && limite >= 80) break
+    limite = Math.min(80, LOTE_EMAILS + pulados)
+  }
+  return soma
+}
+/** "3 e-mails enviados, 1 com falha, 2 ficaram para depois (outro e-mail há menos de 48 h)". */
+export function textoLote(s: { enviados: number; falhas: number; adiados: number; recusados: number }) {
+  return [
+    `${s.enviados} ${s.enviados === 1 ? 'e-mail enviado' : 'e-mails enviados'}`,
+    s.falhas ? `${s.falhas} com falha (o motivo fica na ficha de cada pessoa)` : '',
+    s.adiados ? `${s.adiados} ${s.adiados === 1 ? 'ficou' : 'ficaram'} para depois (já ${s.adiados === 1 ? 'recebeu' : 'receberam'} outro e-mail há menos de 48 h ou 3 em 14 dias)` : '',
+    s.recusados ? `${s.recusados} desligaram esses e-mails` : '',
+  ].filter(Boolean).join(', ')
+}
+
+/**
+ * Enviar e-mails é uma página só (21/10/2026): lembretes, cartas, relatórios e os últimos envios.
+ * Quando uma parte manda e-mails, as outras recarregam (a cadência e o histórico mudam para todas).
+ */
+const EVENTO_EMAILS = 'oq:admin:emails-enviados'
+export const avisarEmailsEnviados = () => window.dispatchEvent(new Event(EVENTO_EMAILS))
+export function ouvirEmailsEnviados(aoMudar: () => void) {
+  window.addEventListener(EVENTO_EMAILS, aoMudar)
+  return () => window.removeEventListener(EVENTO_EMAILS, aoMudar)
+}
