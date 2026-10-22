@@ -142,3 +142,6 @@ Os estilos aprovados seguem uma **ordem fixa**, sem sorteio e sem repetir: antes
 
 ## Sobre o Tales (orientação de 19/10/2026)
 O site, os posts e os e-mails não dizem a profissão nem a etapa do Tales: nem "ortopedista", nem "residente", nem "feito por quem vive a especialidade". Quando for preciso falar do autor, basta o nome ("Tales, do Orto Questões"). Falar do público (residentes, ortopedistas que estudam) continua normal.
+
+## Busca (aprovada em 22/10/2026)
+Tales aprovou o post de 22/10 "como se estivesse procurando algo no Google" para o arsenal: **Busca** (feed e stories), num buscador genérico com a marca Orto Questões, sem logotipo ou cores de outra empresa. [Guia e modelo executável](../../marketing/instagram/estilos/BUSCA.md).
