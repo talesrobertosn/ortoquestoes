@@ -8,6 +8,18 @@ gentil, falar sobre tempo, praticidade, sobre estudar fácil; um pouquinho maior
 Vale para todas as versões (`supabase/functions/_shared/cartas-versoes.ts`), para os blocos do motor
 (`cartas.ts`) e para os automáticos (`modelo-email.ts`).
 
+## Atualização de 22/10/2026 (Tales: "os e-mails estão cringe")
+
+Tom **fofo e gentil**, nada de se achar. Fora de todas as cartas: falar de si ou de por que o site existe ("fiz o
+site", "a parte que eu mais caprichei", "projeto independente", "quem cuida do site"), intimidade forçada ou que
+soa como vigilância ("parei no seu nome", "olhando quem estuda", "respondo pessoalmente", "sou eu que leio"),
+conselho de cima para baixo ("o que eu faria no seu lugar", "se eu pudesse te dar um conselho") e frase de coach
+("você é de quem não desiste"). No lugar: alegria e carinho com a pessoa ("que alegria ver", "lembrei de você com
+carinho", "vou gostar de saber") e sugestões leves ("uma ideia carinhosa", "se fizer sentido"). As boas-vindas têm
+uma versão só: o que o site tem (questões, Cronograma, resumos) e o pedido para contar aos colegas, porque o
+projeto cresce no boca a boca. O e-mail de pagamento aprovado é um obrigado pela assinatura. O teste
+`fixtures/testar_modelos_email.mjs` barra esses padrões.
+
 ## A voz
 
 Um amigo que entende a rotina de quem estuda: o plantão, o cansaço e a falta de tempo, e

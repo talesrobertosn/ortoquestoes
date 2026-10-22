@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: box da isquemia</title>
+<!-- Post de 23/10/2026, estilo novo "Box da Fórmula 1" (pedido do Tales: tema criativo, design perfeito).
+     Painel de cronometragem: cada tecido corre contra o relógio da isquemia. Sem desenho de carro nem de anatomia.
+     Feed (5 slides, 1080 × 1350): trauma-0338 (TARO 2014), Matsen, nervo altera a partir de 30 minutos, gabarito B.
+     Stories (3, 1080 × 1920, postados juntos à noite): coluna-0049 (TEOT 2022), choque medular, 24 a 48 horas, gabarito C.
+     Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-23-box-isquemia/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Led; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); font-weight: 400; }
+:root {
+  --fundo: #0C0E12; --painel: #151922; --painel2: #1C212C; --linha: #2A3140; --texto: #F3F5F8; --suave: #A3ACBB; --apagado: #6B7484;
+  --roxo: #B26BFF; --roxo2: #7C3AED; --verde: #2BD576; --amarelo: #FFD23F; --vermelho: #FF3B3B; --ouro: #E9C46A; --marca: #2FA38F;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--texto); }
+section { position: relative; overflow: hidden; width: 1080px; margin-bottom: 40px; background: var(--fundo); }
+.feed { height: 1350px; }
+.story { height: 1920px; }
+/* Fibra de carbono bem discreta + brilho de pista no topo */
+section::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .55;
+  background:
+    radial-gradient(900px 520px at 85% -8%, rgba(178,107,255,.16), transparent 70%),
+    radial-gradient(800px 600px at -10% 105%, rgba(43,213,118,.08), transparent 70%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,.018) 0 6px, transparent 6px 12px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.018) 0 6px, transparent 6px 12px); }
+.c { position: absolute; inset: 0; }
+
+/* Topo: marca e contador de volta */
+.topo { position: absolute; left: 64px; right: 64px; top: 54px; display: flex; align-items: center; justify-content: space-between; }
+.marca { display: flex; align-items: center; gap: 16px; font: 800 32px Jakarta; letter-spacing: -.4px; color: var(--texto); }
+.simbolo { display: flex; flex-direction: column; gap: 6px; }
+.simbolo i { display: block; height: 8px; border-radius: 4px; background: #fff; opacity: .35; }
+.simbolo i:nth-child(1) { width: 32px; } .simbolo i:nth-child(2) { width: 24px; } .simbolo i:nth-child(3) { width: 38px; background: var(--ouro); opacity: 1; }
+.volta { display: flex; align-items: center; gap: 14px; font: 700 21px Inter; letter-spacing: 3px; color: var(--suave); }
+.volta b { font: 400 44px Led; letter-spacing: 1px; color: var(--texto); line-height: 1; }
+
+/* Zebra de pista */
+.zebra { height: 18px; background: repeating-linear-gradient(90deg, var(--vermelho) 0 46px, #fff 46px 92px); }
+.zebra.fina { height: 10px; border-radius: 5px; }
+.quadri { height: 56px; background: conic-gradient(#fff 25%, #111 0 50%, #fff 0 75%, #111 0) 0 0 / 56px 56px; }
+.quadri.peq { height: 36px; background-size: 36px 36px; }
+
+/* Etiqueta de sessão (estilo transmissão) */
+.sessao { display: inline-flex; align-items: stretch; border-radius: 10px; overflow: hidden; font: 800 21px Inter; letter-spacing: 2.6px; }
+.sessao span { padding: 12px 18px; }
+.sessao .a { background: var(--vermelho); color: #fff; }
+.sessao .b { background: #fff; color: #111; }
+.sessao.roxa .a { background: var(--roxo2); }
+.sessao.amar .a { background: var(--amarelo); color: #111; }
+.sessao.verde .a { background: var(--verde); color: #08130c; }
+
+h1 { font: 800 92px Jakarta; letter-spacing: -2.6px; line-height: .98; }
+h2 { font: 800 60px Jakarta; letter-spacing: -1.6px; line-height: 1.04; }
+.sub { font: 500 33px Inter; color: var(--suave); line-height: 1.42; }
+.sub b { color: var(--texto); font-weight: 700; }
+.roxo { color: var(--roxo); } .verde { color: var(--verde); } .amarelo { color: var(--amarelo); } .vermelho { color: var(--vermelho); }
+
+/* Luzes de largada */
+.luzes { display: flex; gap: 22px; padding: 26px 30px; background: #07080b; border: 2px solid var(--linha); border-radius: 28px; width: max-content; }
+.coluna-luz { display: flex; flex-direction: column; gap: 14px; padding: 14px; background: #0f1218; border-radius: 18px; }
+.luz { width: 84px; height: 84px; border-radius: 50%; background: #2a0e0e; box-shadow: inset 0 -6px 12px rgba(0,0,0,.6); }
+.luz.on { background: radial-gradient(circle at 40% 35%, #ff8a8a, var(--vermelho) 45%, #b31212); box-shadow: 0 0 34px rgba(255,59,59,.65), inset 0 -6px 12px rgba(0,0,0,.25); }
+.luz.off { background: #1a1d24; }
+
+/* Rodapé */
+.rodape { position: absolute; left: 64px; right: 64px; bottom: 44px; display: flex; align-items: center; justify-content: space-between; font: 600 22px Inter; color: var(--apagado); }
+.deslize { display: flex; align-items: center; gap: 16px; font: 800 22px Inter; letter-spacing: 2.4px; color: var(--texto); }
+.deslize i { display: block; width: 0; height: 0; border-left: 18px solid var(--vermelho); border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+.deslize i + i { margin-left: -10px; opacity: .55; }
+
+/* Torre de tempos (alternativas) */
+.torre { border: 2px solid var(--linha); border-radius: 26px; overflow: hidden; background: var(--painel); }
+.torre .cab { display: grid; grid-template-columns: 110px 1fr 230px; padding: 16px 28px; font: 800 18px Inter; letter-spacing: 2.4px; color: var(--apagado); background: #10131a; border-bottom: 2px solid var(--linha); }
+.linha-t { display: grid; grid-template-columns: 110px 1fr 230px; align-items: center; padding: 0 28px; height: 138px; border-top: 2px solid var(--linha); }
+.linha-t:first-of-type { border-top: 0; }
+.pos { width: 64px; height: 64px; border-radius: 14px; background: #fff; color: #111; font: 800 34px Jakarta; display: flex; align-items: center; justify-content: center; }
+.piloto { font: 700 32px Jakarta; letter-spacing: -.4px; }
+.piloto small { display: block; font: 600 19px Inter; letter-spacing: 2.4px; color: var(--apagado); margin-top: 6px; }
+.tempo { justify-self: end; font: 400 66px Led; letter-spacing: 1px; color: var(--texto); line-height: 1; }
+.tempo small { font: 700 22px Inter; letter-spacing: 1.6px; color: var(--suave); margin-left: 8px; }
+.linha-t.melhor { background: linear-gradient(90deg, rgba(124,58,237,.38), rgba(124,58,237,.10)); }
+.linha-t.melhor .pos { background: var(--roxo2); color: #fff; }
+.linha-t.melhor .tempo { color: var(--roxo); }
+.linha-t.fora { opacity: .42; }
+
+/* Cartão do enunciado */
+.enunciado { background: var(--painel); border: 2px solid var(--linha); border-left: 10px solid var(--vermelho); border-radius: 22px; padding: 38px 40px; font: 600 41px Jakarta; line-height: 1.3; letter-spacing: -.3px; }
+.enunciado .fonte { display: block; font: 700 20px Inter; letter-spacing: 2.6px; color: var(--apagado); margin-bottom: 16px; }
+.comente { display: flex; align-items: center; gap: 18px; font: 800 30px Jakarta; letter-spacing: -.2px; }
+.comente .bandeira { width: 46px; height: 34px; border-radius: 4px; background: conic-gradient(#fff 25%, #111 0 50%, #fff 0 75%, #111 0) 0 0 / 17px 17px; border: 2px solid #fff; }
+
+/* Telemetria: linha do tempo */
+.pista { position: relative; height: 210px; margin-top: 10px; }
+.pista .trilho { position: absolute; left: 0; right: 0; top: 92px; height: 14px; border-radius: 7px; background: linear-gradient(90deg, var(--roxo2) 0 22%, var(--amarelo) 22% 48%, var(--vermelho) 48% 100%); }
+.marco { position: absolute; top: 0; transform: translateX(-50%); text-align: center; width: 200px; }
+.marco .t { font: 400 46px Led; line-height: 1; }
+.marco .r { font: 700 18px Inter; letter-spacing: 1.6px; color: var(--suave); margin-top: 6px; }
+.marco .pino { width: 24px; height: 24px; border-radius: 50%; background: var(--fundo); border: 6px solid #fff; margin: 14px auto 0; }
+.marco.baixo { top: 112px; }
+.marco.baixo .pino { margin: 0 auto 10px; }
+.legenda-pista { position: absolute; left: 0; right: 0; top: 192px; display: flex; justify-content: space-between; font: 700 18px Inter; letter-spacing: 2px; color: var(--apagado); }
+
+.cartoes { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cartao { background: var(--painel); border: 2px solid var(--linha); border-radius: 24px; padding: 28px 30px; }
+.cartao .tit { display: flex; align-items: center; justify-content: space-between; font: 800 22px Inter; letter-spacing: 2.6px; color: var(--suave); }
+.cartao .tag { font: 800 17px Inter; letter-spacing: 2px; padding: 7px 12px; border-radius: 8px; }
+.cartao .nome { font: 800 46px Jakarta; letter-spacing: -1px; margin-top: 10px; }
+.par { display: flex; justify-content: space-between; align-items: baseline; border-top: 2px solid var(--linha); margin-top: 14px; padding-top: 12px; }
+.par span { font: 600 23px Inter; color: var(--suave); }
+.par b { font: 400 46px Led; letter-spacing: .5px; line-height: 1; }
+.cartao.nervo { border-color: rgba(178,107,255,.55); box-shadow: 0 0 0 2px rgba(124,58,237,.18), 0 20px 50px rgba(124,58,237,.18); }
+
+.radio { background: #fff; color: #111; border-radius: 24px; padding: 26px 32px; display: grid; grid-template-columns: 74px 1fr; gap: 22px; align-items: center; }
+.radio .ic { width: 74px; height: 74px; border-radius: 50%; background: #111; display: flex; align-items: center; justify-content: center; gap: 5px; }
+.radio .ic i { display: block; width: 6px; border-radius: 3px; background: var(--amarelo); }
+.radio .ic i:nth-child(1) { height: 16px; } .radio .ic i:nth-child(2) { height: 30px; } .radio .ic i:nth-child(3) { height: 22px; } .radio .ic i:nth-child(4) { height: 36px; } .radio .ic i:nth-child(5) { height: 14px; }
+.radio p { font: 600 26px Inter; line-height: 1.38; }
+.radio p b { font-weight: 800; }
+.radio .quem { font: 800 17px Inter; letter-spacing: 2.4px; color: #6b6b6b; margin-bottom: 6px; display: block; }
+
+/* Bandeiras: sinais */
+.bandeiras { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.flag { border-radius: 26px; padding: 30px 30px 26px; border: 2px solid var(--linha); background: var(--painel); }
+.flag .pano { width: 84px; height: 54px; border-radius: 8px; margin-bottom: 16px; }
+.flag.am .pano { background: var(--amarelo); box-shadow: 0 0 30px rgba(255,210,63,.35); }
+.flag.vm .pano { background: var(--vermelho); box-shadow: 0 0 30px rgba(255,59,59,.35); }
+.flag h3 { font: 800 38px Jakarta; letter-spacing: -.5px; }
+.flag .q { font: 700 19px Inter; letter-spacing: 2.2px; color: var(--apagado); margin-top: 6px; }
+.flag ul { list-style: none; margin-top: 18px; }
+.flag li { font: 500 28px Inter; line-height: 1.3; padding: 11px 0 11px 30px; border-top: 2px solid var(--linha); position: relative; }
+.flag li::before { content: ''; position: absolute; left: 0; top: 24px; width: 12px; height: 12px; border-radius: 3px; }
+.flag.am li::before { background: var(--amarelo); } .flag.vm li::before { background: var(--vermelho); }
+.mmhg { display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center; background: var(--painel2); border: 2px solid var(--linha); border-radius: 24px; padding: 24px 30px; }
+.mmhg .n { font: 400 84px Led; line-height: .9; color: var(--amarelo); }
+.mmhg .n small { font: 700 24px Inter; letter-spacing: 1px; color: var(--suave); margin-left: 6px; }
+.mmhg p { font: 500 28px Inter; line-height: 1.4; color: var(--suave); }
+.mmhg p b { color: var(--texto); }
+
+/* Pódio / resposta */
+.podio { background: var(--painel); border: 2px solid rgba(178,107,255,.6); border-radius: 30px; overflow: hidden; box-shadow: 0 30px 70px rgba(124,58,237,.22); }
+.podio .topo-p { display: flex; align-items: center; justify-content: space-between; padding: 22px 34px; background: linear-gradient(90deg, var(--roxo2), #5b21b6); font: 800 21px Inter; letter-spacing: 2.8px; }
+.podio .corpo { display: grid; grid-template-columns: 170px 1fr; gap: 30px; align-items: center; padding: 34px; }
+.podio .letra { width: 170px; height: 170px; border-radius: 30px; background: #fff; color: var(--roxo2); font: 800 112px Jakarta; display: flex; align-items: center; justify-content: center; letter-spacing: -2px; }
+.podio .tempo-g { font: 400 150px Led; line-height: .85; color: var(--texto); }
+.podio .tempo-g small { font: 800 36px Jakarta; letter-spacing: -.5px; color: var(--roxo); margin-left: 12px; }
+.podio .exp { font: 500 28px Inter; color: var(--suave); line-height: 1.4; margin-top: 12px; }
+.podio .exp b { color: var(--texto); }
+.grid-res { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.mini { background: var(--painel); border: 2px solid var(--linha); border-radius: 20px; padding: 20px 22px; opacity: .92; }
+.mini .h { display: flex; align-items: center; gap: 12px; font: 800 26px Jakarta; }
+.mini .h .p2 { width: 42px; height: 42px; border-radius: 10px; background: #2b3140; color: var(--suave); font: 800 24px Jakarta; display: flex; align-items: center; justify-content: center; }
+.mini p { font: 500 24px Inter; color: var(--suave); line-height: 1.35; margin-top: 10px; }
+.prova { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; background: #fff; color: #111; border-radius: 22px; padding: 24px 30px; }
+.prova .k { font: 800 18px Inter; letter-spacing: 2.6px; background: #111; color: var(--ouro); padding: 10px 14px; border-radius: 8px; }
+.prova p { font: 700 31px Jakarta; letter-spacing: -.3px; line-height: 1.3; }
+
+/* Stories */
+.relogio { background: #07080b; border: 2px solid var(--linha); border-radius: 30px; padding: 30px 40px; display: flex; align-items: center; justify-content: space-between; }
+.relogio .d { font: 400 176px Led; line-height: .8; letter-spacing: 3px; color: var(--vermelho); text-shadow: 0 0 30px rgba(255,59,59,.45); }
+.relogio .r { font: 800 22px Inter; letter-spacing: 2.8px; color: var(--suave); text-align: right; line-height: 1.6; }
+.placas { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.placa { background: var(--painel); border: 2px solid var(--linha); border-radius: 26px; padding: 36px 32px; display: grid; grid-template-columns: 70px 1fr; gap: 20px; align-items: center; }
+.placa .pos { width: 70px; height: 70px; font-size: 36px; }
+.placa .v { font: 400 78px Led; line-height: .9; }
+.placa .v small { font: 700 22px Inter; letter-spacing: 1.4px; color: var(--suave); margin-left: 6px; }
+.placa.melhor { background: linear-gradient(135deg, rgba(43,213,118,.30), rgba(43,213,118,.08)); border-color: rgba(43,213,118,.7); }
+.placa.melhor .pos { background: var(--verde); color: #08130c; }
+.placa.melhor .v { color: var(--verde); }
+.placa.fora { opacity: .4; }
+.cartao-txt { background: var(--painel); border: 2px solid var(--linha); border-radius: 26px; padding: 34px 38px; }
+.cartao-txt p { font: 500 35px Inter; line-height: 1.45; color: var(--suave); }
+.cartao-txt p + p { margin-top: 18px; }
+.cartao-txt p b { color: var(--texto); }
+.site { font: 800 54px Jakarta; letter-spacing: -1px; }
+.marca-g { display: flex; align-items: center; gap: 24px; font: 800 64px Jakarta; letter-spacing: -1.4px; }
+.marca-g .simbolo { gap: 10px; } .marca-g .simbolo i { height: 14px; border-radius: 7px; }
+.marca-g .simbolo i:nth-child(1) { width: 56px; } .marca-g .simbolo i:nth-child(2) { width: 42px; } .marca-g .simbolo i:nth-child(3) { width: 66px; }
+.u { font: 700 .34em Inter; letter-spacing: 1.2px; color: var(--suave); margin-left: 6px; }
+.grid-l { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.slot { position: relative; background: var(--painel); border: 2px solid var(--linha); border-radius: 24px; padding: 26px 30px 24px 40px; overflow: hidden; }
+.slot::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 10px; }
+.slot.n::after { background: var(--roxo2); } .slot.m::after { background: var(--amarelo); }
+.slot .k { font: 800 19px Inter; letter-spacing: 2.6px; color: var(--apagado); }
+.slot .nm { font: 800 44px Jakarta; letter-spacing: -1px; margin-top: 6px; }
+.slot .tm { font: 400 70px Led; line-height: 1; margin-top: 10px; color: var(--suave); letter-spacing: 2px; }
+.linha-tempo { position: relative; background: var(--painel); border: 2px solid var(--linha); border-radius: 24px; padding: 26px 32px 30px; }
+.linha-tempo .cab2 { display: flex; justify-content: space-between; font: 800 19px Inter; letter-spacing: 2.6px; color: var(--apagado); }
+.trilho2 { position: relative; height: 16px; border-radius: 8px; margin: 120px 0 74px; background: linear-gradient(90deg, var(--roxo2) 0 17%, var(--amarelo) 17% 36%, var(--vermelho) 36% 100%); }
+.mk { position: absolute; top: 50%; transform: translate(-50%,-50%); width: 34px; height: 34px; border-radius: 50%; background: var(--fundo); border: 7px solid #fff; }
+.mk .lb { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; text-align: center; }
+.mk .lb.cima { bottom: 44px; } .mk .lb.baixo { top: 44px; }
+.mk .lb b { display: block; font: 400 44px Led; line-height: 1; }
+.mk .lb span { display: block; font: 700 16px Inter; letter-spacing: 1.6px; color: var(--suave); margin-top: 4px; }
+.mk .lb b .u { display: inline; font: 700 .4em Inter; }
+.mk .lb.cima > span { margin: 0 0 4px; }
+.torre.fecha .linha-t { height: 126px; }
+</style></head><body>
+
+<!-- ============ FEED 1: capa ============ -->
+<section id="feed-1" class="feed"><div class="c">
+  <div class="topo"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">VOLTA <b>1/5</b></div></div>
+  <div style="position:absolute;left:64px;top:150px">
+    <div class="luzes">
+      <div class="coluna-luz"><div class="luz on"></div><div class="luz on"></div></div>
+      <div class="coluna-luz"><div class="luz on"></div><div class="luz on"></div></div>
+      <div class="coluna-luz"><div class="luz on"></div><div class="luz on"></div></div>
+      <div class="coluna-luz"><div class="luz on"></div><div class="luz on"></div></div>
+      <div class="coluna-luz"><div class="luz off"></div><div class="luz off"></div></div>
+    </div>
+  </div>
+  <div style="position:absolute;left:64px;right:64px;top:440px">
+    <div class="sessao"><span class="a">GRID DE LARGADA</span><span class="b">SÍNDROME COMPARTIMENTAL</span></div>
+    <h1 style="margin-top:34px">Corrida contra<br>a <span class="vermelho">isquemia</span>.</h1>
+    <p class="sub" style="margin-top:34px;max-width:880px">O compartimento fechou. Dois tecidos estão na pista: <b>o nervo e o músculo</b>. Quem dá o primeiro sinal, e em quanto tempo?</p>
+    <div class="grid-l" style="margin-top:48px">
+      <div class="slot n"><div class="k">GRID 1</div><div class="nm">Nervo</div><div class="tm">??:??</div></div>
+      <div class="slot m"><div class="k">GRID 2</div><div class="nm">Músculo</div><div class="tm">??:??</div></div>
+    </div>
+  </div>
+  <div style="position:absolute;left:64px;right:64px;bottom:118px"><div class="zebra fina"></div></div>
+  <div class="rodape"><span>Questão do TARO 2014</span><span class="deslize">DESLIZE PARA A LARGADA <i></i><i></i></span></div>
+</div></section>
+
+<!-- ============ FEED 2: a questão ============ -->
+<section id="feed-2" class="feed"><div class="c">
+  <div class="topo"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">VOLTA <b>2/5</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:160px">
+    <div class="enunciado"><span class="fonte">QUALIFICAÇÃO · TARO 2014</span>Na síndrome compartimental aguda, segundo Matsen, existe alteração da função do nervo a partir de:</div>
+    <div class="torre" style="margin-top:34px">
+      <div class="cab"><span>POS</span><span>TEMPO DE ISQUEMIA</span><span style="text-align:right">VOLTA</span></div>
+      <div class="linha-t"><div class="pos">A</div><div class="piloto">Dez minutos<small>LARGADA RÁPIDA</small></div><div class="tempo">10<small>MIN</small></div></div>
+      <div class="linha-t"><div class="pos">B</div><div class="piloto">Trinta minutos<small>MEIA HORA</small></div><div class="tempo">30<small>MIN</small></div></div>
+      <div class="linha-t"><div class="pos">C</div><div class="piloto">Sessenta minutos<small>UMA HORA</small></div><div class="tempo">60<small>MIN</small></div></div>
+      <div class="linha-t"><div class="pos">D</div><div class="piloto">Noventa minutos<small>UMA HORA E MEIA</small></div><div class="tempo">90<small>MIN</small></div></div>
+    </div>
+    <div class="comente" style="margin-top:38px"><span class="bandeira"></span>Comente a sua letra antes de cruzar a linha.</div>
+  </div>
+  <div class="rodape"><span>Matsen · síndrome compartimental aguda</span><span class="deslize">TELEMETRIA <i></i><i></i></span></div>
+</div></section>
+
+<!-- ============ FEED 3: telemetria ============ -->
+<section id="feed-3" class="feed"><div class="c">
+  <div class="topo"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">VOLTA <b>3/5</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:160px">
+    <div class="sessao roxa"><span class="a">TELEMETRIA</span><span class="b">TEMPOS DE MATSEN</span></div>
+    <h2 style="margin-top:24px">O nervo faz a <span class="roxo">volta mais rápida</span>.<br>O músculo dá o prazo.</h2>
+    <div class="cartoes" style="margin-top:30px">
+      <div class="cartao nervo">
+        <div class="tit">TECIDO 1 <span class="tag" style="background:var(--roxo2);color:#fff">VOLTA MAIS RÁPIDA</span></div>
+        <div class="nome roxo">Nervo</div>
+        <div class="par"><span>Altera a função</span><b class="roxo">30<span class="u">min</span></b></div>
+        <div class="par"><span>Lesão irreversível</span><b>12-24<span class="u">h</span></b></div>
+      </div>
+      <div class="cartao">
+        <div class="tit">TECIDO 2 <span class="tag" style="background:var(--amarelo);color:#111">PRAZO DO BOX</span></div>
+        <div class="nome">Músculo</div>
+        <div class="par"><span>Altera a função</span><b class="amarelo">2-4<span class="u">h</span></b></div>
+        <div class="par"><span>Necrose</span><b class="vermelho">4-8<span class="u">h</span></b></div>
+      </div>
+    </div>
+    <div class="linha-tempo" style="margin-top:26px">
+      <div class="cab2"><span>CRONÔMETRO DA ISQUEMIA</span><span>MATSEN</span></div>
+      <div class="trilho2">
+        <div class="mk" style="left:7%;border-color:var(--roxo)"><div class="lb cima"><span>NERVO ALTERA</span><b class="roxo">30<span class="u">min</span></b></div></div>
+        <div class="mk" style="left:24%;border-color:var(--amarelo)"><div class="lb baixo"><b class="amarelo">2-4<span class="u">h</span></b><span>MÚSCULO ALTERA</span></div></div>
+        <div class="mk" style="left:64%;border-color:#fff"><div class="lb baixo"><b>6<span class="u">h</span></b><span>FASCIOTOMIA ATÉ</span></div></div>
+        <div class="mk" style="left:44%;border-color:var(--vermelho)"><div class="lb cima"><span>NECROSE MUSCULAR</span><b class="vermelho">4-8<span class="u">h</span></b></div></div>
+        <div class="mk" style="left:91%;border-color:var(--vermelho)"><div class="lb cima"><span>NERVO PERDIDO</span><b>12-24<span class="u">h</span></b></div></div>
+      </div>
+    </div>
+    <div class="radio" style="margin-top:20px;padding:22px 30px">
+      <div class="ic"><i></i><i></i><i></i><i></i><i></i></div>
+      <div><span class="quem">RÁDIO DO BOX</span><p>A parestesia é um <b>sinal precoce</b>: o nervo avisa primeiro. Mas é o músculo que morre em poucas horas, e por isso a <b>fasciotomia é urgência</b>, idealmente dentro de 6 horas.</p></div>
+    </div>
+  </div>
+  <div class="rodape"><span>Fonte: comentário da questão no Orto Questões</span><span class="deslize">BANDEIRAS <i></i><i></i></span></div>
+</div></section>
+
+<!-- ============ FEED 4: bandeiras ============ -->
+<section id="feed-4" class="feed"><div class="c">
+  <div class="topo"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">VOLTA <b>4/5</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:160px">
+    <div class="sessao amar"><span class="a">BANDEIRA AMARELA</span><span class="b">O ERRO CLÁSSICO</span></div>
+    <h2 style="margin-top:28px;font-size:64px">Pulso presente não<br>tira ninguém da pista.</h2>
+    <div class="bandeiras" style="margin-top:36px">
+      <div class="flag am"><div class="pano"></div><h3>Sinais precoces</h3><div class="q">ATUE AQUI</div>
+        <ul><li>Dor desproporcional à lesão, que não cede com analgesia</li><li>Dor ao estiramento passivo</li><li>Compartimento tenso</li><li>Parestesia</li></ul></div>
+      <div class="flag vm"><div class="pano"></div><h3>Sinais tardios</h3><div class="q">TARDE DEMAIS</div>
+        <ul><li>Paralisia</li><li>Ausência de pulso</li></ul>
+        <p style="font:500 24px Inter;color:var(--suave);line-height:1.4;margin-top:18px">A pressão arterial é muito maior que a do compartimento: o pulso continua lá enquanto o tecido sofre.</p></div>
+    </div>
+    <div class="mmhg" style="margin-top:28px">
+      <div class="n">&lt;30<small>mmHg</small></div>
+      <p><b>Pressão diferencial</b> (diastólica menos a do compartimento) abaixo de 30 mmHg indica fasciotomia, inclusive no paciente sedado.</p>
+    </div>
+  </div>
+  <div class="rodape"><span>Fonte: comentário da questão no Orto Questões</span><span class="deslize">RESULTADO <i></i><i></i></span></div>
+</div></section>
+
+<!-- ============ FEED 5: resposta ============ -->
+<section id="feed-5" class="feed"><div class="c">
+  <div class="quadri" style="position:absolute;left:0;right:0;top:0"></div>
+  <div class="topo" style="top:96px"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">VOLTA <b>5/5</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:200px">
+    <div class="sessao verde"><span class="a">BANDEIRA QUADRICULADA</span><span class="b">RESULTADO</span></div>
+    <div class="podio" style="margin-top:34px">
+      <div class="topo-p"><span>P1 · VOLTA MAIS RÁPIDA</span><span>TARO 2014</span></div>
+      <div class="corpo">
+        <div class="letra">B</div>
+        <div><div class="tempo-g">30<small>minutos</small></div>
+          <p class="exp">Segundo Matsen, a <b>função do nervo</b> se altera a partir de cerca de 30 minutos de isquemia. A lesão nervosa irreversível vem depois de 12 a 24 horas.</p></div>
+      </div>
+    </div>
+    <div class="grid-res" style="margin-top:28px">
+      <div class="mini"><div class="h"><span class="p2">A</span>10 min</div><p>Cedo demais: a alteração começa por volta dos 30.</p></div>
+      <div class="mini"><div class="h"><span class="p2">C</span>60 min</div><p>Tarde: aos 30 minutos o nervo já mudou.</p></div>
+      <div class="mini"><div class="h"><span class="p2">D</span>90 min</div><p>Superestima: o nervo já está disfuncional.</p></div>
+    </div>
+    <div class="prova" style="margin-top:28px"><span class="k">PARA A PROVA</span><p>O nervo dá o primeiro sinal, aos 30 minutos. O músculo dá o prazo da fasciotomia.</p></div>
+  </div>
+  <div class="quadri peq" style="position:absolute;left:0;right:0;bottom:116px"></div>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span style="color:var(--suave)">Questões das provas, comentadas</span></div>
+</div></section>
+
+<!-- ============ STORY 1: pergunta ============ -->
+<section id="story-1" class="story"><div class="c">
+  <div class="topo" style="top:150px"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">PIT STOP <b>1/3</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:290px">
+    <div class="sessao"><span class="a">RELÓGIO DO BOX</span><span class="b">TEOT 2022</span></div>
+    <h2 style="margin-top:34px;font-size:84px">Quando termina o<br><span class="vermelho">choque medular</span>?</h2>
+    <div class="relogio" style="margin-top:44px"><div class="d">??:??</div><div class="r">TRAUMA<br>RAQUIMEDULAR</div></div>
+    <div class="cartao-txt" style="margin-top:34px"><p style="color:var(--texto);font-weight:600;font-size:39px">No trauma raquimedular, a recuperação do choque medular ocorre usualmente entre</p></div>
+    <div class="placas" style="margin-top:28px">
+      <div class="placa"><div class="pos">A</div><div class="v">6-12<small>H</small></div></div>
+      <div class="placa"><div class="pos">B</div><div class="v">12-24<small>H</small></div></div>
+      <div class="placa"><div class="pos">C</div><div class="v">24-48<small>H</small></div></div>
+      <div class="placa"><div class="pos">D</div><div class="v">48-72<small>H</small></div></div>
+    </div>
+    <div class="comente" style="margin-top:56px;font-size:36px"><span class="bandeira"></span>Responda de cabeça. A resposta está no próximo.</div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:250px"><div class="zebra"></div></div>
+</div></section>
+
+<!-- ============ STORY 2: resposta ============ -->
+<section id="story-2" class="story"><div class="c">
+  <div class="topo" style="top:150px"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">PIT STOP <b>2/3</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:290px">
+    <div class="sessao verde"><span class="a">BANDEIRA VERDE</span><span class="b">RESPOSTA C</span></div>
+    <div class="relogio" style="margin-top:34px;border-color:rgba(43,213,118,.6)"><div class="d" style="color:var(--verde);text-shadow:0 0 30px rgba(43,213,118,.45)">24-48</div><div class="r">HORAS<br>APÓS O TRAUMA</div></div>
+    <div class="placas" style="margin-top:28px">
+      <div class="placa fora"><div class="pos">A</div><div class="v">6-12<small>H</small></div></div>
+      <div class="placa fora"><div class="pos">B</div><div class="v">12-24<small>H</small></div></div>
+      <div class="placa melhor"><div class="pos">C</div><div class="v">24-48<small>H</small></div></div>
+      <div class="placa fora"><div class="pos">D</div><div class="v">48-72<small>H</small></div></div>
+    </div>
+    <div class="cartao-txt" style="margin-top:30px">
+      <p>A bandeira verde é a <b>volta do reflexo bulbocavernoso</b> (arco em S2 a S4), em geral entre <b>24 e 48 horas</b>. Ela marca o fim do choque medular.</p>
+      <p>Só depois dela se classifica a lesão: <b>sem nenhuma função sacral, é completa</b> (ASIA A); qualquer preservação sacral a torna incompleta.</p>
+    </div>
+    <div class="prova" style="margin-top:30px"><span class="k">PARA A PROVA</span><p>Choque medular termina em 24 a 48 horas, com a volta do bulbocavernoso.</p></div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:250px"><div class="zebra"></div></div>
+</div></section>
+
+<!-- ============ STORY 3: fechamento ============ -->
+<section id="story-3" class="story"><div class="c">
+  <div class="quadri" style="position:absolute;left:0;right:0;top:0"></div>
+  <div class="topo" style="top:150px"><div class="marca"><div class="simbolo"><i></i><i></i><i></i></div>Orto Questões</div><div class="volta">PIT STOP <b>3/3</b></div></div>
+  <div style="position:absolute;left:64px;right:64px;top:330px">
+    <div class="sessao verde"><span class="a">VOLTA RÁPIDA DE ESTUDO</span></div>
+    <h1 style="margin-top:34px;font-size:96px">Tempo é o que<br>mais cai em<br><span class="amarelo">trauma</span>.</h1>
+    <p class="sub" style="margin-top:36px;font-size:36px">Janelas, prazos e tempos de isquemia aparecem prova após prova. Treine com as <b>questões das provas oficiais, comentadas</b> uma a uma.</p>
+    <div class="torre fecha" style="margin-top:50px">
+      <div class="linha-t" style="height:104px"><div class="pos" style="background:var(--roxo2);color:#fff">1</div><div class="piloto">Questões das provas<small>TEOT E TARO</small></div><div class="tempo" style="font-size:40px;color:var(--roxo)">P1</div></div>
+      <div class="linha-t" style="height:104px"><div class="pos">2</div><div class="piloto">Comentário de cada letra<small>O PORQUÊ DE TODAS</small></div><div class="tempo" style="font-size:40px">P2</div></div>
+      <div class="linha-t" style="height:104px"><div class="pos">3</div><div class="piloto">Cronograma até a prova<small>O SITE MONTA</small></div><div class="tempo" style="font-size:40px">P3</div></div>
+    </div>
+  </div>
+  <div style="position:absolute;left:64px;right:64px;top:1420px;display:flex;align-items:flex-end;justify-content:space-between">
+    <div><div class="site" style="font-size:62px">ortoquestoes.com.br</div><div style="font:600 28px Inter;color:var(--suave);margin-top:10px">O caminho está no nosso perfil</div></div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:250px"><div class="zebra"></div></div>
+</div></section>
+
+</body></html>
