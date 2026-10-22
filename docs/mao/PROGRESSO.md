@@ -77,6 +77,8 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 
 ## Retomada atual: piloto de miniaula, 22/10/2026
 
+Ajuste posterior pedido pelo Tales: mao-2199 reescrita em prosa natural, sem peças numeradas nem estrutura rígida. Revisão local em revisao_watson_natural.py; enunciado, alternativas, gabarito e fontes preservados.
+
 **Andamento:** por novo pedido do Tales, publicar uma única questão pendente com o modelo de
 `docs/prompts/comentarios-miniaula.md`: SBCM 2023, questão 59, teste de WATSON, `mao-2199`.
 Fonte lida: Green cap. 13, p. 508 a 510, incluindo a legenda da Fig. 13.22.
