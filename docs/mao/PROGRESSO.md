@@ -5,6 +5,23 @@ provas: só número da questão, assunto em palavras nossas, fonte e situação.
 
 Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pendente: conferir à mão`, `anulada no original`.
 
+## Pedido atual: uma questão no novo modelo de miniaula
+
+O pedido mais recente do Tales foi publicar UMA questão pendente com
+`docs/prompts/comentarios-miniaula.md`, com citação moderada e tamanho flexível.
+O piloto é a questão 59 da SBCM 2023 (WATSON), `mao-2199`, no branch
+`codex/sbcm-2023-miniaula`, PR #479. Retomar pela versão de PROGRESSO do branch
+de publicação, `claude/pdfs-questoes-tp64dr`, após esse PR.
+
+**Atenção aos rascunhos deste branch:** os lotes 03 e 04 em 55cec011 e 84296019
+foram aplicados localmente, mas NÃO foram publicados. As marcações de publicada
+e os IDs mao-2199 a mao-2207 nas tabelas abaixo descrevem apenas esse rascunho.
+Não mesclar esses IDs com o site: mao-2199 passou a pertencer ao piloto WATSON.
+Os lotes completos estão preservados fora do git em
+`~/OrtoQuestoes-Biblioteca/lotes/sbcm-2023/lote_03.py` e `lote_04.py`, e no histórico.
+Ao retomar, revisar seus comentários no novo modelo e reaplicar com os próximos
+IDs do acervo publicado. A questão 59 não deve ser criada novamente no lote 05.
+
 ## Resumo
 
 | Prova | Arquivo local | Questões | Publicadas | Pendentes | Ids | Gabarito (A/B/C/D) |
