@@ -276,7 +276,7 @@ def nota_simulado(questao: dict) -> str:
         return ""
     prova = f" {esc(questao['prova'])}" if questao.get("prova") else ""
     return (
-        '<p class="meta"><strong>OrtoQuestões Simulados</strong>: questão autoral do site, elaborada a '
+        '<p class="meta"><strong>OrtoQuestões Simulados</strong>: elaborada a '
         f"partir da bibliografia de referência e inspirada no padrão da prova{prova}. Não é questão "
         "oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.</p>"
     )
