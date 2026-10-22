@@ -362,3 +362,32 @@ Green (a correção cita The Wrist ou livros da SBCM; os PDFs do Pardini são im
   transferência de dedo do pé, cap. 36, p. 1423).
 - Nunca afirmar fato de anatomia geral que o trecho não traz (ex.: inervação do FUC, ligamento de STRUTHERS): ou se
   acha no Green, ou sai do comentário.
+
+## Prova da SBCM: SBCM 2022 (fechada em 22/10/2026)
+
+89 das 100 questões viraram OrtoQuestões Simulados com o selo da SBCM 2022 (mao-2106 a mao-2188; cotovelo em
+ombro-cotovelo-0670 a 0675), todas no padrão profundo (as 45 primeiras refeitas em revisao_01 a 09). Gabarito final:
+A 22, B 23, C 22, D 22. Pendentes: 19, 21, 34, 44, 45 e 54 dependem de figura (letras ou foto); 5, 52, 74, 89 e 95 ficaram
+sem fonte (tipos da luxação isolada do escafoide; o que mais simula ruptura extensora na AR; artrodese junto do
+encurtamento do capitato; mecanismo da toxina botulínica; deformidades da artrite psoriática).
+
+### Padrões desta prova
+- Muitas questões de figura (anatomia com letras, radiografias, fotos de técnica): quando a deformidade ou o achado
+  podiam ser descritos com o texto do Green, a questão foi reescrita descrevendo-os (27, 43, 12, 83); quando a resposta
+  dependia de letras numa figura, ficou pendente.
+- Enunciados truncados e alternativas repetidas no original (38, 70, 82, 90): completados pelo que o Green descreve.
+- Tabelas do Green como questão: NALEBUFF (Fig. 55.32), ENNEKING (Tabela 59.1), classificação do capítulo (Fig. 18.6),
+  Kurtzman e Stern já tinham caído em outras provas.
+
+### Divergências e ângulos trocados
+- 26: o gabarito oficial (HOLT-ORAM) diverge do Green, que não associa a deficiência ulnar a condições sistêmicas.
+- 51: "fratura do coronoide" também seria defensável (o Green cita a restauração inadequada do coronoide); o distrator
+  virou o ligamento anular.
+- 22: subdivisão do feixe anterior do colateral medial que o Green não traz; a questão compara os três feixes.
+- 30, 68, 75, 94, 97: ângulos ajustados ao que o livro descreve (notas no cabeçalho de cada lote).
+
+### Lições para as próximas provas
+- Frase cortada pela tradução em colunas não é "sem fonte" antes de olhar a página: `pdftotext -raw` e, se ainda faltar,
+  `pdftoppm` da folha e ler a imagem. Assim a 38 saiu da pendência (p. 398 e 399).
+- No padrão profundo, cada alternativa precisa do mecanismo e de quando seria verdadeira; a mediana ficou entre 3.200 e
+  4.400 caracteres por questão.

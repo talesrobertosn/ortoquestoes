@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 78 | 12 | mao-2106 a mao-2183 | A 20, B 20, C 19, D 19 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -114,11 +114,13 @@ padrão novo. Próximo trabalho, nesta ordem:
    caracteres). Na 2143 a alternativa B virou extensor ulnar do carpo, porque o Green cita OMER com o FDS (p. 1223).
    PR #456 leva as revisões 01 a 07; as 08 e 09 vão no próximo push. Etapa (2) em curso: lote 12 publicado no padrão
    (mao-2151 a 2155, PR #456 já juntado antes dele). Lotes 13 a 16 publicados (mao-2156 a 2175; PR #457 juntado com 12 a 14; 15 e 16 no PR seguinte).
-   **Retomada (22/10/2026):** `lotes/sbcm-2022/lote_17.py` (48, 88, 30, 99, 31) já está escrito e com fontes conferidas,
-   mas NÃO foi aplicado: falta só reescrever o enunciado da 99 (a copia acusou "edema e fibrose no dorso da mão",
-   7 palavras iguais ao original), rodar copia, aplicar_lote, gerar_indice, validar_acervo e progresso.py
-   (--gab depois do lote 16: A 19, B 17, C 17, D 17). Depois: lotes 18 a 20 e as pendentes; em seguida refazer a SBCM 2024.
-7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **Próximo: SBCM 2022, lote 17** (48, 88, 30, 99, 31; lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
+   **SBCM 2022 fechada em 22/10/2026:** lotes 17 a 21 publicados (mao-2176 a mao-2188 e ombro-cotovelo-0670 a 0675);
+   89 publicadas, gabarito A 22, B 23, C 22, D 22; a 38 saiu da pendência pela imagem da p. 398 (lote 21). Pendentes:
+   19, 21, 34, 44, 45 e 54 (figura); 5, 52, 74, 89 e 95 (sem fonte). Lições no fim de docs/simulados/simao-engenharia-reversa.md.
+   **Próximo (etapa 3 do 6b): refazer os comentários da SBCM 2024** (mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669)
+   no padrão profundo, como `lotes/sbcm-2022/revisao_01.py` a `revisao_09.py` (atalho `_comentario.py` na pasta
+   `lotes/sbcm-2024/`, mesmo enunciado e gabarito). Depois SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021 e ENARE.
+7. **SBCM 2024 fechada em 21/10/2026** (89 publicadas: mao-2023 a mao-2105 e ombro-cotovelo-0664 a 0669; pendentes 2, 19, 23, 71, 72, 76 e 79, figura, e 25, 26, 27 e 28, sem fonte; lições em docs/simulados/simao-engenharia-reversa.md). **SBCM 2022 fechada em 22/10/2026** (ver 6b; antes: lotes 01 a 16 publicados: mao-2106 a mao-2175; pendentes 19, 21, 34, 44, 45 e 54, figura, e 5, 38, 74 e 89, sem fonte. Fase 0 feita em 21/10/2026: prova em `.oq/provas/sbcm-2022.json` e `.txt`, 100 questões classificadas e divididas em 20 lotes na seção SBCM 2022 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2022/`, `PROVA = "SBCM"`, `ANO = 2022`, copia com o slug `sbcm-2022`). Dica: quando o texto
    em colunas vier truncado, `pdftotext -enc UTF-8 -raw -f FOLHA -l FOLHA "<pdf>"` recupera o trecho.
    (fase 0 feita em 20/10/2026: prova separada em `.oq/provas/sbcm-2024.json`, 100 questões
    classificadas e divididas em 20 lotes na seção SBCM 2024 abaixo; lotes em `~/OrtoQuestoes-Biblioteca/lotes/sbcm-2024/`,
@@ -418,7 +420,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 11 | CLEARY e OMER tipo IV (sinostose radioulnar): cabeça do rádio | classificação | cap. 38 p. 1516 e 1518 | mao / Outras malformações congênitas | 13 | mao-2159 | publicada |
 | 12 | Retalho escapular ou paraescapular e sua artéria | anatomia, figura | cap. 45 p. 1762 e 1764 | mao / Microcirurgia e retalhos livres | 15 | mao-2170 | publicada (sem a figura: descreve o desenho do paraescapular) |
 | 13 | Osteocondroma na mão: localização típica | fato | cap. 59, p. 2219 | mao / Tumores da mão | 18 | mao-2183 | publicada |
-| 14 | MAFFUCCI: risco aumentado | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 14 | MAFFUCCI: risco aumentado | fato | cap. 59, p. 2219 | mao / Tumores da mão | 19 | mao-2184 | publicada |
 | 15 | Pioderma gangrenoso: tratamento | conduta | cap. 3, p. 86 | mao / Infecções da mão | 01 | mao-2107 | publicada |
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 02 | mao-2111 | publicada |
 | 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8, p. 338 | mao / Lesões ligamentares dos dedos | 03 | mao-2116 | publicada (caso da foto descrito) |
@@ -426,7 +428,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura |
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14, p. 574 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2127 | publicada |
 | 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: depende da foto |
-| 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
+| 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 | ombro-cotovelo-0670 | publicada |
 | 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28, p. 1103 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2135 | publicada |
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33, p. 1268 (Tabela 33.3) | mao / Transferências tendinosas e paralisias | 10 | mao-2145 | publicada |
 | 25 | Polidactilia central: dedo mais duplicado | fato | cap. 36 p. 1387 | mao / Sindactilia e polidactilia | 12 | mao-2153 | publicada |
@@ -436,13 +438,13 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 29 | Retalho microcirúrgico cutâneo: exemplo | classificação | cap. 45 p. 1747 | mao / Microcirurgia e retalhos livres | 16 | mao-2171 | publicada |
 | 30 | SDRC tipo 2: em que situação | fato | cap. 53, p. 2005 e 2007 | mao / Síndrome da dor complexa regional | 17 | mao-2178 | publicada |
 | 31 | Tendinite calcária na mão e punho: tendão mais comum | fato | cap. 56, p. 2115 e 2116 | mao / Dedo em gatilho e outras tenossinovites | 17 | mao-2180 | publicada |
-| 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59, p. 2209 | mao / Tumores da mão | 19 | mao-2185 | publicada |
 | 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2134 | publicada |
 | 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | pendente: figura com letras |
 | 35 | Melanoma que surge junto a um nevo | fato | cap. 58, p. 2171 | mao / Tumores da mão | 03 | mao-2118 | publicada |
 | 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2136 | publicada (alternativa B ajustada: duas eram certas pelo Green) |
 | 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6, p. 245 | mao / Lesões dos tendões flexores | 02 | mao-2112 | publicada |
-| 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10, p. 399 | mao / Deformidades dos dedos | 04 |  | pendente: sem fonte (frase dos 5 a 7 dias cortada na tradução) |
+| 38 | Rigidez da MF instável após liberação: tempo dos fios | número | cap. 10, p. 398 e 399 | mao / Deformidades dos dedos | 21 | mao-2188 | publicada |
 | 39 | LEECHAVENGVONGS: ramo doador e alvo | técnica | cap. 34, p. 1329 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2147 | publicada |
 | 40 | Paralisia alta do mediano: objetivo das transferências | fato | cap. 31, p. 1206 | mao / Transferências tendinosas e paralisias | 09 | mao-2141 | publicada |
 | 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13, p. 491; cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2126 | publicada |
@@ -455,7 +457,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 48 | TSUGE, Volkmann moderada: melhor tratamento | conduta | cap. 51, p. 1978 a 1982 | mao / Outros temas da mão | 17 | mao-2176 | publicada |
 | 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34, p. 1341 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2148 | publicada |
 | 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34, p. 1311 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2149 | publicada |
-| 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
+| 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20, p. 947 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0671 | publicada |
 | 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55, p. 2051 (não diz qual é a mais comum) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
 | 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2156 | publicada |
 | 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
@@ -466,8 +468,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 59 | Instabilidade cárpica não dissociativa: causa | fato | cap. 13, p. 501 | mao / Instabilidade do carpo | 05 | mao-2125 | publicada |
 | 60 | Luxação isolada da ARUD reduzida: posição estável | fato | cap. 14, p. 576 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2128 | publicada |
 | 61 | SLADE e GEISSLER: cistos de 1 a 5 mm | classificação | cap. 16, p. 696 (Tabela 16.2) | mao / Fraturas do escafoide e do carpo | 07 | mao-2130 | publicada |
-| 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
-| 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24 (arquivo 23) | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
+| 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18, p. 866 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0672 | publicada |
+| 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24, p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 | ombro-cotovelo-0673 | publicada |
 | 64 | Síndrome do interósseo posterior: intervalo do acesso anterior | técnica | cap. 28, p. 1117 e 1118 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2137 | publicada |
 | 65 | Portal 6-U: uso principal | técnica | cap. 17, p. 762, 763 e 765 | mao / Artrose do punho e artroscopia | 08 | mao-2132 | publicada (Green: 6-U é portal de saída; o gabarito falava em entrada) |
 | 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34, p. 1313 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2150 | publicada (distratores trocados por relações do Green) |
@@ -482,9 +484,9 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 p. 1464 | mao / Outras malformações congênitas | 13 | mao-2157 | publicada (pergunta pela articulação MCF; o Green deixa a cabeça em flexão) |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
 | 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
-| 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38 e 59 | mao / Tumores da mão | 19 |  | a fazer |
-| 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
-| 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
+| 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38, p. 1523 e 1524 | mao / Tumores da mão | 19 | mao-2186 | publicada |
+| 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19, p. 918 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0674 | publicada |
+| 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25, p. 1035 a 1037 | ombro-cotovelo / Lesões do bíceps | 20 | ombro-cotovelo-0675 | publicada |
 | 81 | Macrodactilia: forma mais comum | fato | cap. 36 p. 1438 | mao / Outras malformações congênitas | 12 | mao-2155 | publicada |
 | 82 | Retalho inguinal: artéria e onde emerge | anatomia | cap. 44 p. 1736 | mao / Retalhos e cobertura cutânea | 15 | mao-2169 | publicada (original com A e B iguais; refeita) |
 | 83 | Enxerto vascularizado do côndilo femoral medial: área da figura | figura | cap. 46 p. 1800 e 1801 | mao / Microcirurgia e retalhos livres | 16 | mao-2174 | publicada (sem a figura) |
@@ -500,7 +502,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 p. 1767 | mao / Microcirurgia e retalhos livres | 16 | mao-2172 | publicada |
 | 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 p. 1859 a 1862 | mao / Retalhos e cobertura cutânea | 16 | mao-2175 | publicada (GILLIES só citado como fora de uso; pergunta a osteoplástica clássica) |
 | 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 (padrão de deformidade não descrito) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
-| 96 | ENNEKING: estágio IIA | classificação | cap. 59 | mao / Tumores da mão | 19 |  | a fazer |
+| 96 | ENNEKING: estágio IIA | classificação | cap. 59, p. 2186 | mao / Tumores da mão | 19 | mao-2187 | publicada |
 | 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 p. 1756 | mao / Microcirurgia e retalhos livres | 16 | mao-2173 | publicada (pergunta o ramo do retalho lateral do braço: 'mais calibroso' não está no Green) |
 | 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
 | 99 | SECRETAN: causa | fato | cap. 54, p. 2036 e 2037 | mao / Outros temas da mão | 17 | mao-2179 | publicada |
