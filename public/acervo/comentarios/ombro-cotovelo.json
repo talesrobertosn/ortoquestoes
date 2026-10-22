@@ -470,15 +470,42 @@
   "conferido": false
  },
  "ombro-cotovelo-0031": {
+  "conceito": "**A cápsula posterior é a principal restrição à translação posterior da clavícula medial e também à anterior.** A pergunta se resolve pelo papel mecânico da estrutura, não pela suposição de que o nome de um ligamento deve repetir a direção do deslocamento.\n\nO resumo descreve partes moles espessas na esternoclavicular e destaca o espessamento capsular posterior. A clavícula funciona como esteio entre tronco e membro superior; perder esse controle não é apenas alterar uma superfície articular, mas modificar a posição do conjunto escapular.\n\nO interclavicular tem outra tarefa predominante: une as clavículas pela borda superior do esterno e impede angulação ou translação para baixo. Os costoclaviculares saem da primeira costela e prendem-se à face inferior medial. Serem fortes e estabilizadores não lhes atribui automaticamente o papel principal em toda direção.\n\n**Há uma armadilha de nomenclatura em D.** Cápsula posterior e reforço esternoclavicular posterior não devem ser ensinados como estruturas necessariamente independentes. O resumo não fornece uma distinção anatômica que torne D inequivocamente falsa se o termo for usado para o espessamento da cápsula. A banca escolheu B, expressão exata da fonte, e essa ressalva precisa acompanhar a comparação.\n\n**Leia “A extremidade medial”, na Biblioteca.** Associe cada estabilizador ao movimento que ele restringe e reconheça quando duas expressões podem designar o mesmo complexo.",
+  "correta": "**B: cápsula posterior.** É a estrutura explicitamente destacada como mais importante contra translação anterior e posterior. A letra oficial é preservada; a proximidade de significado de D não deve ser escondida por uma separação anatômica inventada.",
   "incorretas": {
-   "A": "**Papel menor e em outra direção.** A cápsula anterior contribui principalmente para conter a translação anterior e tem importância menor no conjunto.",
-   "C": "**Estabilizador secundário.** O ligamento interclavicular une as clavículas por cima do manúbrio e resiste sobretudo à descida da extremidade lateral da clavícula, sem ser o principal contra a translação posterior.",
-   "D": "**O nome confunde, o dado é da cápsula.** O espessamento posterior é parte da cápsula, mas o que se estabeleceu como estrutura dominante foi a cápsula posterior como um todo, que é a resposta cobrada."
+   "A": "**A cápsula anterior não recebe o papel dominante descrito.** Escolhê-la apenas porque a clavícula se desloca em uma direção no espaço ignora que a tensão capsular envolve o conjunto da articulação. O dado central da fonte é a predominância posterior nos dois sentidos anteroposteriores.",
+   "C": "**O interclavicular atua sobretudo como tirante contra a queda da clavícula medial.** Sua passagem por cima do esterno ajuda a compreender essa função. Não é o principal limitador da translação posterior pedido no enunciado.",
+   "D": "**A expressão pode sobrepor-se ao reforço da cápsula posterior.** O resumo usa “cápsula posterior” e seu espessamento, sem estabelecer uma oposição inequívoca com “ligamento esternoclavicular posterior”. A resposta oficial B é a terminologia reproduzida, mas D não deve ser descartada por uma diferença anatômica que esta fonte não demonstrou."
   },
-  "conceito": "**Uma articulação que vive de partes moles.** A esternoclavicular é a única ligação entre o membro superior e o esqueleto axial, e é das menos congruentes do corpo: menos da metade da extremidade medial da clavícula se apoia no esterno. Um disco articular fica entre as superfícies. Toda a estabilidade vem da **cápsula** e dos ligamentos: a cápsula com seus reforços anterior e posterior (os ligamentos esternoclaviculares), o **ligamento interclavicular**, que une as duas clavículas por cima do manúbrio, e o **ligamento costoclavicular**, que prende a clavícula à primeira costela e funciona como pivô dos movimentos.\n\n**O estudo que responde à questão.** **Spencer e Bergfeld** cortaram cada estrutura em cadáveres e mediram a translação da clavícula. O resultado, contraintuitivo, é que a **cápsula posterior** é o estabilizador mais importante, tanto contra a translação **posterior** quanto contra a anterior. A cápsula anterior contribui sobretudo para a contenção anterior, e os ligamentos interclavicular e costoclavicular têm papel secundário.\n\n**Por que a direção da luxação importa tanto.** A luxação **anterior** é a mais comum e relativamente benigna: a clavícula fica saliente na frente, a redução fechada costuma ser instável e muitos pacientes convivem bem com ela. A luxação **posterior** é rara e potencialmente **fatal**, porque atrás da articulação estão a **traqueia**, o **esôfago**, os grandes vasos e o plexo. Disfagia, dispneia, rouquidão, estridor, congestão venosa do membro ou do pescoço e assimetria de pulsos são sinais de alarme de compressão.\n\n**Diagnóstico e redução.** A radiografia simples engana; a incidência de **serendipity** (inclinada 40 graus cefálica) ajuda pouco, e o exame de escolha é a **tomografia com contraste**, que mostra a relação com os vasos. A redução da luxação posterior é feita sob anestesia, com o paciente em decúbito dorsal e um coxim entre as escápulas, tracionando o braço em abdução e extensão, e com uma pinça de campo puxando a clavícula para a frente se necessário, sempre com **cirurgião torácico** disponível. No jovem abaixo de cerca de 25 anos, lembre que a lesão costuma ser um **descolamento fisário** da extremidade medial da clavícula, a última fise do corpo a fechar.\n\n**Na prova:** o principal estabilizador da esternoclavicular, inclusive contra a translação posterior, é a **cápsula posterior** (Spencer e Bergfeld); luxação posterior é emergência, investigada com tomografia.",
-  "correta": "**Pela cápsula posterior.** No estudo de Spencer e Bergfeld, a secção da cápsula posterior foi a que mais aumentou a translação da clavícula, tanto posterior quanto anterior, tornando-a o estabilizador dominante da articulação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito oficial B preservado. A fonte destaca a cápsula posterior e seu espessamento; não demonstra uma distinção inequívoca em relação ao nome “ligamento esternoclavicular posterior” de D. Há sobreposição terminológica possível, sem motivo para inventar estruturas independentes.",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+     ],
+     "blocos": [
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+    }
+   ],
+   "questaoSha256": "f4c9eab704c852fc3745cf79d3eb89b29b2afc783d7dd53d6681beb1a26a8c41",
+   "comentarioSha256": "97e87eacbfb1f676f6e46c6d2022e698878a9cf74bb19ac9911542c28223a6f4"
+  }
  },
  "ombro-cotovelo-0032": {
   "conceito": "**O tubérculo sublime é uma referência da contenção medial em valgo.** O feixe anterior do ligamento colateral medial nasce na face anteroinferior do epicôndilo medial e termina nesse ponto da ulna proximal. Assim, reconhecer a inserção permite deduzir a função: ligar úmero e ulna pelo lado medial para limitar a abertura em valgo.\n\nO lado lateral tem um mapa diferente. O ligamento anular envolve a cabeça do rádio e se fixa nas bordas da incisura radial da ulna. O colateral radial se mistura a ele, enquanto o colateral ulnar lateral passa posteriormente e chega à **crista do supinador**. Portanto, tanto o tubérculo sublime quanto a crista do supinador ficam na ulna, mas pertencem a trajetos e funções distintos.\n\nO ligamento transverso também não é o feixe anterior: liga estruturas da própria ulna, entre olécrano e coronoide, e tem pouca importância funcional na descrição do resumo pediátrico usado como complemento anatômico. Não representa a mesma ponte do epicôndilo ao tubérculo sublime.\n\nEssa anatomia importa nas fraturas do coronoide. O subtipo da faceta anteromedial que inclui o tubérculo sublime pode acrescentar instabilidade em valgo, porque compromete a região de inserção do estabilizador medial. A localização do fragmento ensina mais que seu tamanho isolado.\n\n**Leia “O lado medial” no resumo adulto da Biblioteca e compare com “O lado lateral”.** Traçar origem e inserção de cada ligamento permite responder a perguntas de anatomia e interpretar a instabilidade das fraturas próximas.",
@@ -4517,15 +4544,41 @@
   "conferido": false
  },
  "ombro-cotovelo-0420": {
+  "conceito": "**Na esternoclavicular, o principal estabilizador anteroposterior é o espessamento da cápsula posterior.** O dado vale para a translação tanto para trás quanto para a frente. “Posterior” nomeia a estrutura dominante, não uma restrição obrigatoriamente limitada a um único sentido.\n\nPara organizar a anatomia funcional, associe estrutura e direção. O interclavicular cruza a fúrcula e impede a clavícula medial de cair ou angular inferiormente. O costoclavicular liga a primeira costela à face inferior da clavícula e participa da contenção da translação medial. O resumo reserva à cápsula posterior a primazia específica no plano anteroposterior.\n\n| Estrutura | Papel destacado no resumo |\n|---|---|\n| Cápsula posterior | Restrição principal anterior e posterior |\n| Interclavicular | Impedir angulação/translação para baixo |\n| Costoclavicular | Conter sobretudo a translação medial |\n\nNão é necessário tornar os demais componentes inúteis para reconhecer um estabilizador principal. O erro dos distratores é substituir a hierarquia mecânica solicitada por uma lembrança geral de que determinada estrutura pertence à articulação.\n\n**Leia “A extremidade medial”, na Biblioteca.** O mapa de direções é mais útil do que decorar uma lista de ligamentos sem relacioná-los ao movimento.",
+  "correta": "**B: cápsula posterior.** Seu espessamento constitui a restrição mais importante à translação anterior e posterior da clavícula medial. A resposta permanece a mesma nos dois sentidos do eixo perguntado.",
   "incorretas": {
-   "A": "O disco melhora o encaixe e amortece a carga, mas contribui pouco para a estabilidade.",
-   "C": "O ligamento interclavicular resiste sobretudo ao deslocamento da clavícula para baixo, não no sentido anteroposterior.",
-   "D": "O ligamento costoclavicular limita principalmente a elevação da clavícula, servindo como ponto de apoio do movimento."
+   "A": "**O disco não é identificado como principal estabilizador anteroposterior.** Fazer parte do interior da articulação não basta para lhe atribuir o papel que o resumo dá à cápsula posterior. A fonte consultada não exige inventar um percentual de contribuição do disco para resolver a alternativa.",
+   "C": "**O interclavicular é sobretudo um tirante contra a descida.** Sua orientação entre as clavículas, passando pela borda superior do esterno, corresponde a essa função. Isso difere da restrição anteroposterior específica solicitada.",
+   "D": "**Os costoclaviculares são fortes, mas força não é sinônimo de predominância em todos os planos.** A fonte destaca sua resistência à translação medial e atribui à cápsula posterior a contenção principal anterior e posterior. A alternativa troca as funções relativas."
   },
-  "conceito": "A **articulação esternoclavicular** liga a clavícula ao esterno. É a única articulação de verdade entre o membro superior e o tronco. E é muito pouco encaixada: a ponta da clavícula é bem maior que a superfície do esterno onde se apoia. Com tão pouco encaixe ósseo, a estabilidade depende quase toda dos **ligamentos**, e eles são tão fortes que essa articulação raramente luxa.\n\nSão quatro estruturas principais:\n\nA **cápsula**, com reforços na frente e atrás. O reforço **posterior** é o mais importante. Um estudo biomecânico (Spencer e Kuhn) mostrou que a cápsula posterior é o principal freio contra o deslocamento da clavícula **tanto para trás quanto para a frente**.\n\nO **ligamento costoclavicular**, que prende a clavícula à primeira costela e limita a elevação.\n\nO **ligamento interclavicular**, que cruza por cima do esterno unindo as duas clavículas e resiste ao deslocamento para baixo.\n\nO **disco articular**, que melhora o encaixe e amortece a carga, mas pouco contribui para a estabilidade.\n\nIsso tem consequências práticas. Na reconstrução cirúrgica, a técnica mais usada passa um enxerto de tendão em forma de **oito** entre clavícula e esterno, reproduzindo a cápsula posterior. E nunca se usam fios metálicos para fixar essa articulação, porque eles podem migrar para dentro do tórax.\n\nA luxação **posterior** é uma emergência, porque a clavícula pode comprimir traqueia, esôfago e grandes vasos. A tomografia é o exame de escolha.",
-  "correta": "A cápsula posterior. É o principal freio contra o deslocamento da clavícula para trás e também para a frente.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+     ],
+     "blocos": [
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+    }
+   ],
+   "questaoSha256": "96ca6ca8bb40ef5c2ae8256ae604450f003eb56fc997f0dbc6bc93b16c50ebc2",
+   "comentarioSha256": "e2904938111cbddcfb9c295882e7bd0194816ba7377fcae4379ddaf30a1d85bd"
+  }
  },
  "ombro-cotovelo-0421": {
   "incorretas": {
@@ -6293,20 +6346,48 @@
   "conferido": false
  },
  "ombro-cotovelo-0537": {
-  "conceito": "**Fraturas da clavícula distal.** A classificação de Allman divide a clavícula em grupos: I (terço médio, o mais comum), II (terço distal) e III (terço medial). Neer subdividiu as fraturas do terço distal conforme a relação com os **ligamentos coracoclaviculares** (conoide, mais medial e posterior; trapezoide, mais lateral e anterior), que determinam a estabilidade.\n\n| Tipo (Neer) | Localização | Estabilidade |\n|---|---|---|\n| I | Lateral aos ligamentos coracoclaviculares, que estão íntegros | Estável |\n| **IIA** | **Medial ao ligamento conoide**; ambos os ligamentos presos ao fragmento distal | Instável |\n| IIB | Entre o conoide e o trapezoide, com ruptura do conoide; trapezoide preso ao fragmento distal | Instável |\n| III | Intra-articular (acromioclavicular), ligamentos íntegros | Estável; risco de artrose |\n| IV | Descolamento periosteal em crianças | Remodela |\n| V | Cominutiva, com fragmento inferior preso aos ligamentos | Instável |\n\n**Por que o tipo II é instável.** O fragmento medial perde a ancoragem ligamentar e é puxado para cima pelo trapézio e pelo esternocleidomastóideo, enquanto o fragmento distal fica preso à escápula, que desce com o peso do braço. O desvio é grande e a pseudoartrose é frequente (até 30% no tratamento conservador).\n\n**Tratamento.** Fixação cirúrgica nos tipos instáveis em pacientes ativos: placa anatômica distal, placa gancho ou fixação coracoclavicular (suspensão).\n\n> Neer IIA: fratura da clavícula distal medial ao ligamento conoide, instável.",
-  "correta": "**A: medial ao ligamento conoide.** Na fratura do terço distal da clavícula tipo IIA, o traço fica medial ao ligamento conoide, e ambos os ligamentos coracoclaviculares permanecem presos ao fragmento distal. O fragmento medial perde a ancoragem e sobe, tornando a fratura instável, com alto risco de pseudoartrose.",
+  "conceito": "**No tipo IIA distal, o traço passa medialmente ao conoide; conoide e trapezoide continuam presos ao fragmento distal.** O dado decisivo não é simplesmente saber que há uma fratura perto da acromioclavicular, mas localizar o traço em relação aos dois ligamentos coracoclaviculares.\n\nO conoide é o mais medial; o trapezoide, o mais lateral. Se o traço passa medial a ambos, o fragmento medial perde a ancoragem coracoclavicular, enquanto o distal permanece ligado à escápula. As forças passam a agir em conjuntos distintos: o medial sobe e o lateral acompanha a queda da cintura escapular. Essa perda de sustentação explica a instabilidade do tipo II.\n\nNo IIB, a situação muda: o conoide se rompe e o trapezoide continua no distal, com traço entre os ligamentos. No tipo III, há extensão para a acromioclavicular; não se trata de chamar uma luxação de fratura articular.\n\n**Duas ressalvas evitam decorar uma classificação confusa.** “Grupo II” localiza o terço distal na divisão de Allman; IIA/IIB são os subtipos ligamentares discutidos em Neer/Rockwood. Além disso, a opção E é geograficamente ampla: um traço medial ao conoide também fica medial ao trapezoide. A responde de modo mais específico; E, tomada apenas como descrição espacial, não é necessariamente falsa.\n\n**Leia “Neer, modificada por Rockwood: o terço distal pelos ligamentos”, na Biblioteca.** Desenhe a sequência medial–conoide–trapezoide–lateral e confira a qual fragmento cada ligamento permaneceu preso.",
+  "correta": "**A: medial ao conoide.** É a relação que define com precisão o IIA: os dois coracoclaviculares ficam no fragmento distal, deixando o medial sem essa sustentação. A letra oficial é preservada, com a ressalva de que E é uma localização mais ampla e também pode incluir esse traço.",
   "incorretas": {
-   "B": "**Lateral ao ligamento conoide** (entre o conoide e o trapezoide) é a localização do tipo IIB, em que o conoide está rompido e o trapezoide segue preso ao fragmento distal.",
-   "C": "**Central ao ligamento trapezoide** não corresponde a uma categoria da classificação; o trapezoide é o mais lateral dos dois ligamentos coracoclaviculares.",
-   "D": "**Lateral ao ligamento trapezoide** é a localização do tipo I, em que os ligamentos coracoclaviculares estão íntegros e a fratura é estável.",
-   "E": "**Medial ao ligamento trapezoide** pode incluir o tipo IIB (entre os ligamentos), mas não especifica a relação com o conoide, que define o tipo IIA."
+   "B": "**Lateral ao conoide não localiza o traço medial a ambos os ligamentos exigido no IIA.** Se estiver entre conoide e trapezoide, o padrão descrito é o IIB, acompanhado de ruptura do conoide. A relação deve ser julgada com o estado ligamentar, não só com a proximidade da articulação.",
+   "C": "**“Central ao trapezoide” não é o critério anatômico apresentado para IIA.** A fonte mantém ambos os ligamentos no distal e coloca o traço medial ao conoide. Um traço referido ao centro do ligamento lateral não reproduz essa relação.",
+   "D": "**Um traço lateral ao trapezoide fica do outro lado das inserções coracoclaviculares.** Não é o padrão em que ambos ficam no fragmento distal e o medial perde essa ancoragem. O tipo I do resumo mantém os coracoclaviculares íntegros presos ao fragmento medial.",
+   "E": "**É menos específica, mas pode ser espacialmente verdadeira.** Como o conoide está medial ao trapezoide, um traço medial ao conoide também está medial ao trapezoide. A redação de E ainda permite um traço entre os ligamentos, razão pela qual A define melhor o IIA; isso não autoriza afirmar que toda posição “medial ao trapezoide” seja IIB."
   },
   "referencias": [
-   "Neer CS 2nd. Fractures of the distal third of the clavicle. Clin Orthop Relat Res. 1968;58:43-50.",
-   "Allman FL Jr. Fractures and ligamentous injuries of the clavicle and its articulation. J Bone Joint Surg Am. 1967;49(4):774-784."
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Gabarito oficial A preservado. E é uma descrição menos específica que também inclui um traço medial ao conoide, pois o trapezoide é mais lateral. Não se deve chamar essa relação espacial de falsa: A é a localização definidora mais precisa. Grupo II é a região de Allman; IIA/IIB são subtipos ligamentares de Neer/Rockwood.",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Classificações: Allman, Neer, Craig, Robinson e AO"
+     ],
+     "blocos": [
+      "classificacoes-allman-neer-craig-robinson-e-ao-d61c043a",
+      "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+      "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
+      "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+      "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7",
+      "classificacoes-allman-neer-craig-robinson-e-ao-5b9c0c66"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "3e992651749fa9ef9769882d0552df9d41be83f3adcb82b833c18967266bd450"
+    }
+   ],
+   "questaoSha256": "fbdb4efd687a2add345fdb79fe218a300e8388020b1b90bd3aad6b124d4fb682",
+   "comentarioSha256": "a2a1e7a172b4a112d145677a17e89429714555df55c6a502aad172fce6f69db0"
+  }
  },
  "ombro-cotovelo-0538": {
   "incorretas": {
@@ -6866,19 +6947,42 @@
   "alerta": "A classificação original utiliza A/B/C. O “tipo 3” do enunciado corresponde ao terceiro grupo, C; o critério atual é a localização distal à ponta da haste."
  },
  "ombro-cotovelo-0575": {
-  "conceito": "A esternoclavicular liga a cintura escapular ao esqueleto axial e depende fortemente de suas estruturas capsuloligamentares. O disco articular e os ligamentos costoclavicular e interclavicular também participam da função, mas a resistência não é igual para todos os movimentos.\n\nEm experimentos de secção ligamentar, a cápsula posterior foi a principal contenção tanto para translação anterior quanto posterior. A cápsula anterior também limita a anterior, porém não tem o mesmo papel bidirecional. O risco das luxações posteriores decorre da proximidade das estruturas mediastinais: reconhecer a função estabilizadora não equivale a autorizar manipulação sem avaliação adequada.",
-  "correta": "A cápsula posterior é a resposta sustentada pelo estudo biomecânico. Ela resiste a deslocamentos nos dois sentidos, o que explica seu papel central mesmo quando a luxação é anterior. A direção do deslocamento não identifica automaticamente o único ligamento lesado ou funcionalmente importante.",
+  "conceito": "**O reforço capsular posterior é o principal freio anteroposterior da esternoclavicular.** Nesta questão sem gabarito oficial registrado, a resposta provável sustentada pelo resumo é D. A expressão “capsular posterior” corresponde ao espessamento da cápsula posterior destacado pela fonte.\n\nA relação entre nome e função pode enganar: uma estrutura posterior pode restringir o deslocamento nos dois sentidos do eixo, porque a estabilidade depende da tensão e da continuidade do conjunto capsular, e não de uma simples barreira colocada à frente do osso.\n\nO capítulo descreve as partes moles mediais como espessas, sem ligamentos fáceis de individualizar. Por isso, o vocabulário capsular é relevante. O interclavicular, em comparação, funciona como tirante contra a descida; os costoclaviculares participam sobretudo da contenção medial. Trocar essas funções por um rótulo “intra-articular” não responde ao movimento perguntado.\n\n**Leia “A extremidade medial”, na Biblioteca.** Fixe o papel dominante da cápsula posterior e mantenha a diferença entre resposta apoiada na bibliografia e gabarito oficial, que não consta neste item.",
+  "correta": "**D é a resposta provável pela fonte, sem gabarito oficial disponível.** O ligamento capsular posterior corresponde ao reforço da cápsula posterior, principal restrição às translações anterior e posterior da clavícula medial.",
   "incorretas": {
-   "A": "A expressão intra-articular anterior não corresponde à estrutura que os estudos identificaram como contenção principal bidirecional. O disco divide a articulação e participa de estabilidade e transmissão de carga, mas não deve ser confundido com a cápsula posterior solicitada.",
-   "B": "A presença do termo posterior não basta para acertar. O marco anatômico é a cápsula posterior, estrutura periférica de contenção; o rótulo intra-articular descreve outra relação. A alternativa troca localização e identidade estrutural.",
-   "C": "A cápsula anterior contribui especialmente para limitar a translação anterior. Essa parte do conceito é verdadeira, mas a pergunta exige a estrutura principal para os dois sentidos. Sua secção não reproduz o mesmo aumento bidirecional observado após secção da cápsula posterior."
+   "A": "**“Intra-articular anterior” não é a estrutura nomeada pelo resumo para essa função.** A alternativa não pode ser escolhida apenas porque inclui a palavra anterior, uma das direções da translação. O estabilizador principal indicado é capsular e posterior.",
+   "B": "**Acerta a palavra posterior, mas troca a estrutura por uma designação intra-articular.** A fonte destaca o espessamento da cápsula, reproduzido em D. É a identidade anatômica completa que importa, e não o adjetivo isolado.",
+   "C": "**O componente capsular anterior não recebe a primazia descrita.** O resumo é explícito ao atribuir ao posterior a contenção mais importante dos dois sentidos. Não se deve repartir automaticamente “anterior contém anterior” e “posterior contém posterior”."
   },
   "referencias": [
-   "Ligamentous restraints to anterior and posterior translation of the sternoclavicular joint. https://pubmed.ncbi.nlm.nih.gov/11845148/"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
   ],
-  "geradoEm": "2026-10-07",
   "conferido": false,
-  "provavel": "D"
+  "provavel": "D",
+  "geradoEm": "2026-10-21",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+     ],
+     "blocos": [
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+     ],
+     "sha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+     "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+    }
+   ],
+   "questaoSha256": "26f4444b34104aae9654a9d9b38abb6e36bc4b5097268ef5edb1036629aeb5c0",
+   "comentarioSha256": "58edb6abc08a59970861927d3b6186f4673636d21aa25d46741568fddd59ff6f"
+  }
  },
  "ombro-cotovelo-0576": {
   "conceito": "**Três testes encadeados.** O Rockwood (capítulo 35, Physical Examination for Glenohumeral Instability e Figura 35-10) descreve os testes provocativos da instabilidade anterior, feitos em sequência com o paciente em decúbito dorsal:\n\n| Teste | Como se faz | Positivo |\n|---|---|---|\n| **apreensão anterior** | braço em 90 graus de abdução e rotação externa máxima (ABER) | dor, desconforto e sensação de instabilidade |\n| **recolocação** | na mesma posição, força posterior sobre o úmero proximal | **redução** da apreensão ou da dor |\n| **surpresa (anterior release)** | retirar subitamente a força posterior, com 90 graus de abdução, 90 graus de flexão do cotovelo e rotação externa máxima | dor ou apreensão (cuidado para não luxar) |\n\n**Por que a posição ABER.** A lesão essencial da instabilidade anterior é o dano ao complexo capsulolabral e ligamentar anterior. Em abdução e rotação externa, essas estruturas ficam tensas, e sua falha produz apreensão e dor.\n\n**Os números de LO.** Avaliando a validade dos três testes:\n- com apreensão nos **três**, os valores preditivos positivo e negativo médios foram de **93,6% e 71,9%**;\n- o **teste da surpresa** foi o **mais acurado isoladamente** (sensibilidade de 63,9% e especificidade de **98,9%**);\n- a **sensação de apreensão** foi mais acurada que a **dor** como critério de instabilidade.\n\nO capítulo também cita que apreensão e recolocação de JOBE, juntas, são as mais diagnósticas para instabilidade anterior, com valor preditivo positivo de 96%.\n\n**A lógica da apreensão contra a dor.** A dor em ABER é inespecífica: aparece em lesões do manguito, impacto interno, lesões SLAP. A apreensão, o medo de que o ombro saia, é a manifestação própria da instabilidade.\n\n**Outros testes do capítulo.** Gaveta anterior e posterior; load and shift (graus 1+ até a borda, 2+ além da borda e volta, 3+ travado além da borda); e o **teste de apreensão óssea** de BUSHNELL: apreensão com **45 graus ou menos de abdução e de rotação externa** sugere lesão óssea importante (sensibilidade de 100% e especificidade de 86%).\n\n**Ligação com a prova.** A banca já cobrou o teste de apreensão anterior positivo em 45 graus de abdução e rotação externa como indicativo de defeito ósseo glenoidal (TEOT 2022), e casos com apreensão e recolocação positivas (SES-DF 2022).\n\n> **Na prova:** apreensão em ABER, recolocação alivia, surpresa provoca; surpresa = mais acurado isolado (especificidade de 98,9%); apreensão é melhor critério que dor; apreensão a 45 graus ou menos = suspeitar de lesão óssea.",
