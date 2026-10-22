@@ -5,6 +5,22 @@ Diretriz de Tales Roberto, aprovada em 04/10/2026. Aplica-se a todo pedido de
 Esta é a referência editorial do projeto. Substitui limites antigos de caracteres,
 número de frases e proibições de tabelas ou listas dos prompts de enriquecimento.
 
+## Miniaula, 22/10/2026 (padrão do site para todas as questões)
+
+Depois do piloto da `mao-2164` (fratura de SEYMOUR), Tales definiu a **miniaula escrita** como padrão de
+todos os comentários do site. Referência: [exemplos/mao-2164.json](exemplos/mao-2164.json). Prompt pronto
+para Claude e Codex: [prompts/comentarios-miniaula.md](prompts/comentarios-miniaula.md).
+
+- Partir do problema da questão, ensinar peça por peça a partir dos fundamentos, juntar as peças e fazer
+  o aluno enxergar (forças, deslocamento, exame físico, imagem), relacionar à prática só no que importa
+  e fechar com o aprendizado decisivo.
+- Cada alternativa, inclusive a correta, com motivo próprio, sem repetir a aula.
+- **Tamanho flexível:** o mais importante recebe mais texto, o menos importante recebe menos.
+- **Citação moderada:** citar menos do que no piloto, mas ainda citar; a referência curta sustenta os
+  fatos importantes (em geral uma por parágrafo) e a citação literal fica para quando a letra do livro
+  decide. Nas questões da mão, sempre Green com capítulo e página, o que só se faz no computador com
+  os livros locais.
+
 ## Ajuste editorial de 08/10/2026, pedido do dono
 
 ### Profundidade solicitada em 10/10/2026
