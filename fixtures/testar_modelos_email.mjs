@@ -39,6 +39,9 @@ try {
     /desanim/i, /cobran[cç]a|\bculpa\b|\bsumiu\b/i, /gr[aá]tis|gratuit|oferta|desconto|aproveite|imperd[ií]vel|promo[cç]/i,
     /[uú]ltima chance|urgente|\bcorra\b|não perca|só hoje|antes que acabe|últimas vagas|vagas limitadas/i,
     /% de acerto parece|seria uma pena|que pena/i, /bem-vind[oa]/i, /R\$/, /\bpre[çc]o\b/i,
+    // Pedido do Tales (22/10/2026): fofo e gentil, nada de se achar nem de falar de si ou do site.
+    /fiz (o|este) (site|orto)|por que (eu )?fiz|caprichei|pessoalmente|sou eu que leio|eu leio (tudo|cada)|projeto independente/i,
+    /parei no seu nome|olhando quem|no seu lugar|se eu pudesse|cuid[oa] do site|mant[eé]m (o site|isto) de p[eé]/i,
     // Sem gênero presumido.
     /\bobrigad[ao] por (ter )?assinad[ao]/i, /(?<!cabeça )(?<!mente )\b(des)?cansad[ao]\b/i, /\bpreparad[ao]\b/i, /\bmesmo cansad/i,
   ]
