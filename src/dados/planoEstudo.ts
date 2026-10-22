@@ -777,7 +777,7 @@ function ordemDoTema(indice: Indice, livres: string[]): string[] {
  * As questões de hoje dentro de um tema: só as que ainda não foram feitas,
  * começando pelos assuntos que mais caem (sorteadas dentro de cada nível).
  * `nSim` fixa quantos OrtoQuestões Simulados entram (a sessão com várias áreas
- * reparte a cota do dia inteiro); sem ele, vale a proporção de simuladosNaSessao.
+ * reparte a cota do dia inteiro); sem ele, sorteia dentro de faixaSimulados.
  */
 export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number, simulados = true, sortear: () => number = Math.random, nSim?: number): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === slug)
@@ -789,7 +789,7 @@ export function idsDoDia(indice: Indice, slug: string, respondidas: Record<strin
   const oficiais = ordemDoTema(indice, livres.filter((q) => q.sim !== 1).map((q) => q.id))
   const doTema = embaralhar(livres.filter((q) => q.sim === 1).map((q) => q.id), sortear)
   const outros = embaralhar(indice.questoes.filter((q) => q.sim === 1 && q.t !== tema && entraNoPlano(q, true) && !respondidas[q.id]).map((q) => q.id), sortear)
-  const cota = Math.min(n, nSim ?? simuladosNaSessao(n))
+  const cota = Math.min(n, nSim ?? sortearSimulados(n, sortear))
   // A cota pode vir de outras áreas; se faltar oficial, só os simulados do próprio tema completam.
   const daCota = [...doTema, ...outros].slice(0, cota)
   const extras = doTema.filter((id) => !daCota.includes(id)).slice(0, Math.max(0, n - cota - oficiais.length))
@@ -799,11 +799,19 @@ export function idsDoDia(indice: Indice, slug: string, respondidas: Record<strin
 }
 
 /**
- * OrtoQuestões Simulados por sessão do cronograma (Tales, 22/10/2026: "2 a cada 10
- * questões normais"): um simulado para cada cinco oficiais, ou seja, um sexto da sessão.
+ * OrtoQuestões Simulados por sessão do cronograma (Tales, 22/10/2026): o padrão é um
+ * para cada cinco oficiais, mas flexível; a sessão pode ter menos (até a metade
+ * disso, ou nenhum numa sessão curta), nunca mais.
  */
-export function simuladosNaSessao(n: number): number {
-  return Math.round(Math.max(0, n) / 6)
+export function faixaSimulados(n: number): { minimo: number; maximo: number } {
+  const total = Math.max(0, n)
+  return { minimo: Math.floor(total / 12), maximo: Math.round(total / 6) }
+}
+
+/** Quantos simulados entram numa sessão de n questões: um número sorteado dentro da faixa. */
+export function sortearSimulados(n: number, sortear: () => number = Math.random): number {
+  const { minimo, maximo } = faixaSimulados(n)
+  return minimo + Math.floor(sortear() * (maximo - minimo + 1))
 }
 
 function embaralhar<T>(lista: T[], sortear: () => number): T[] {
@@ -840,7 +848,7 @@ export function idsDoDiaPlano(indice: Indice, itens: Array<{ slug: string; n: nu
   // A cota de simulados é do dia inteiro, repartida pelas áreas na proporção de cada uma
   // (antes cada área tinha o seu mínimo, e a soma passava da conta).
   const total = itens.reduce((s2, it) => s2 + Math.max(0, it.n), 0)
-  const cotas = repartir(simulados ? simuladosNaSessao(total) : 0, itens.map((it) => Math.max(0, it.n)))
+  const cotas = repartir(simulados ? sortearSimulados(total, sortear) : 0, itens.map((it) => Math.max(0, it.n)))
   const partes = itens.map((it, k) => {
     const ids = idsDoDia(indice, it.slug, { ...respondidas, ...Object.fromEntries([...usados].map((id) => [id, true])) }, it.n, simulados, sortear, cotas[k]).filter((id) => !usados.has(id))
     ids.forEach((id) => usados.add(id))
