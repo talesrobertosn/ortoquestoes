@@ -12,6 +12,9 @@ import { mkdtemp, rm } from 'node:fs/promises'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
+/** Tipos que o Tales quis com uma versão só (não sorteiam entre 5 a 7). */
+const VERSAO_UNICA = new Set(['boas_vindas_dia0'])
+
 const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-cartas-'))
 const arquivo = join(pasta, 'c.mjs')
 try {
@@ -152,9 +155,12 @@ try {
       }
     }
     const total = m.versoesDe(tipo, tipo === 'ativo' ? '70-80' : null).length
-    assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
+    // Pedido do Tales (22/10/2026): as boas-vindas têm uma versão só, fixa.
+    const unica = VERSAO_UNICA.has(tipo)
+    if (unica) assert.equal(total, 1, `${tipo}: deve ter uma versão só`)
+    else assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
     if (tipo !== 'ativo') assert.equal(versoes.size, total, `${tipo}: nem todas as versões saíram (${[...versoes].join(', ')})`)
-    assert.ok(textos.size >= 100, `${tipo}: pouca variedade (${textos.size})`)
+    if (!unica) assert.ok(textos.size >= 100, `${tipo}: pouca variedade (${textos.size})`)
   }
 
   // 3. Regra dos 10: quem fez menos de 10 questões nunca vê o número; `questoes` devolve "os primeiros passos".

@@ -1606,53 +1606,20 @@ const relatorio: Versao[] = [
 // Os seis automáticos novos (17/10/2026), disparados por um acontecimento
 // ---------------------------------------------------------------------------
 
-/** Boas-vindas no dia da confirmação (primeiro login): quem eu sou e os primeiros dez minutos. */
+/** Boas-vindas no dia da confirmação (primeiro login). Pedido do Tales (22/10/2026): uma versão só, sem
+ *  "por que eu fiz o site": dar as boas-vindas, apresentar as funções (questões, Cronograma, resumos) e pedir
+ *  que a pessoa conte aos colegas, porque o projeto cresce no boca a boca. */
 const boas_vindas_dia0: Versao[] = [
-  { id: 'v1', assuntos: (c) => [nm(c, 'que bom ter você no Orto Questões', 'Que bom ter você no Orto Questões'), nm(c, 'os primeiros dez minutos', 'Os primeiros dez minutos')],
+  { id: 'v1', assuntos: (c) => [nm(c, 'boas-vindas ao Orto Questões', 'Boas-vindas ao Orto Questões')],
     corpo: (c) => [
-      'Que bom ter você no Orto Questões. Eu sou o Tales, e fiz o site com uma ideia simples: as questões das provas de verdade, cada uma com a explicação de todas as alternativas, não só da certa.',
-      J(c.fato('prova'), c.fato('etapa')),
-      'Se eu pudesse te dar um único conselho para os primeiros dez minutos: faça cinco questões de um tema que você gosta e leia o comentário inteiro, inclusive das alternativas erradas. É ali que mora a pegadinha da banca, e é ali que o estudo começa a render.',
-      'O resto vem com calma. A Revisão aprende com o que você erra e traz de volta na hora certa; o Desempenho mostra onde você está crescendo. Você só precisa sentar e fazer.',
-      `Para começar: ${c.link('treinar')}`,
+      'Muito obrigado por criar a sua conta. É uma alegria ter você no Orto Questões, e quero te mostrar rapidinho o que o site tem para te ajudar.',
+      'As questões são das provas oficiais, e cada uma vem com o comentário de todas as alternativas, não só da certa. O que você errar fica guardado e volta na Revisão no momento certo, sem você precisar anotar nada.',
+      'No plano completo, o Cronograma monta o seu estudo até a prova: quando você abre o site, a lista do dia já está pronta, com o que mais cai primeiro e a reta final de revisão no fim. Se um plantão apertar a semana, ele redistribui sozinho.',
+      'Os resumos ficam na Biblioteca, organizados por tema, com as questões reais no meio do texto para resolver na hora. Ler e treinar viram uma coisa só.',
+      'Um pedido carinhoso: o Orto Questões cresce no boca a boca. Se o site te ajudar, conte para os colegas que também estão estudando; é assim que o projeto chega a mais gente e continua melhorando.',
+      `Para começar, cinco questões de um tema de que você goste já são um ótimo primeiro passo: ${c.link('treinar')}`,
     ],
-    ps: () => 'P.S.: este e-mail não é automático de verdade. Se responder, sou eu que leio.' },
-  { id: 'v2', assuntos: (c) => [nm(c, 'oi, sou o Tales', 'Oi, sou o Tales'), nm(c, 'um oi de quem fez o site', 'Um oi de quem fez o site')],
-    corpo: (c) => [
-      'Oi, sou o Tales. Fiz este site para que estudar coubesse nos intervalos que a rotina deixa.',
-      J(c.fato('etapa'), c.fato('prova')),
-      'O combinado é simples: você senta e estuda, o site decide o resto. Cada questão vem da prova real e explica todas as alternativas. A Revisão guarda o que te pegou e traz de volta na hora certa.',
-      'Para hoje, sugiro só uma coisa: um tema de que você goste, cinco questões, comentário lido até o fim. Dez minutos.',
-      `Fica aqui: ${c.link('treinar')}`,
-    ],
-    ps: () => 'P.S.: se travar em qualquer coisa, me responde. Eu leio tudo.' },
-  { id: 'v3', assuntos: (c) => [nm(c, 'sua conta está pronta', 'Sua conta está pronta'), nm(c, 'por onde começar hoje', 'Por onde começar hoje')],
-    corpo: (c) => [
-      'Sua conta está pronta, e eu quis te escrever antes de qualquer coisa automática. Sou o Tales, e cuido do site pessoalmente.',
-      J(momento(c)),
-      'Uma coisa que eu gostaria que você soubesse: aqui, errar é barato. Cada questão que te pega vira uma explicação completa e volta na Revisão no momento certo. É na prova que errar custa; aqui, é treino.',
-      'Para começar, não planeje nada. Abra um tema que você gosta e faça cinco. Depois me conta como foi, se quiser.',
-      `O caminho mais curto: ${c.link('treinar')}`,
-    ],
-    ps: () => 'P.S.: este e-mail não é automático de verdade. Se responder, sou eu que leio.' },
-  { id: 'v4', assuntos: (c) => [nm(c, 'três coisas sobre o site', 'Três coisas sobre o site')],
-    corpo: (c) => [
-      'Que bom ter você por aqui. Sou o Tales, e queria te contar três coisas sobre o site antes de você começar.',
-      'A primeira: as questões são das provas de verdade, com a explicação de todas as alternativas. A segunda: a Revisão aprende com o que te pega e traz de volta na hora certa, sem você anotar nada. A terceira: dez minutos no intervalo já contam, porque o site foi feito para caber na rotina real.',
-      J(c.fato('prova'), c.fato('etapa')),
-      `Para os primeiros dez minutos, cinco questões de um tema de que você goste: ${c.link('treinar')}`,
-      'E se qualquer coisa ficar confusa, me responde. Eu leio tudo.',
-    ],
-    ps: () => 'P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.' },
-  { id: 'v5', assuntos: (c) => [nm(c, 'por que eu fiz o site', 'Por que eu fiz o site')],
-    corpo: (c) => [
-      'Eu sou o Tales. Fiz o Orto Questões porque muita gente perde mais tempo decidindo o que estudar do que estudando. Queria um lugar em que a pessoa abrisse e já soubesse o que fazer.',
-      J(momento(c)),
-      'É isso que o site tenta ser para você: questões das provas reais, cada alternativa explicada, a Revisão trazendo de volta o que te pegou. Você senta e faz; o resto está decidido.',
-      'Para hoje, uma sugestão só: cinco questões de um tema que você gosta, com o comentário lido até o fim. Dez minutos bastam para sentir se o jeito do site combina com você.',
-      `Fica aqui: ${c.link('treinar')}`,
-    ],
-    ps: () => 'P.S.: se responder este e-mail, sou eu que leio. Pode escrever.' },
+    ps: () => 'P.S.: se tiver qualquer dúvida, é só responder este e-mail. Fico à disposição.' },
 ]
 
 /** Primeiras 10 questões: o hábito começou. */

@@ -1981,63 +1981,16 @@ var relatorio = [
 var boas_vindas_dia0 = [
   {
     id: "v1",
-    assuntos: (c) => [nm(c, "que bom ter voc\xEA no Orto Quest\xF5es", "Que bom ter voc\xEA no Orto Quest\xF5es"), nm(c, "os primeiros dez minutos", "Os primeiros dez minutos")],
+    assuntos: (c) => [nm(c, "boas-vindas ao Orto Quest\xF5es", "Boas-vindas ao Orto Quest\xF5es")],
     corpo: (c) => [
-      "Que bom ter voc\xEA no Orto Quest\xF5es. Eu sou o Tales, e fiz o site com uma ideia simples: as quest\xF5es das provas de verdade, cada uma com a explica\xE7\xE3o de todas as alternativas, n\xE3o s\xF3 da certa.",
-      J(c.fato("prova"), c.fato("etapa")),
-      "Se eu pudesse te dar um \xFAnico conselho para os primeiros dez minutos: fa\xE7a cinco quest\xF5es de um tema que voc\xEA gosta e leia o coment\xE1rio inteiro, inclusive das alternativas erradas. \xC9 ali que mora a pegadinha da banca, e \xE9 ali que o estudo come\xE7a a render.",
-      "O resto vem com calma. A Revis\xE3o aprende com o que voc\xEA erra e traz de volta na hora certa; o Desempenho mostra onde voc\xEA est\xE1 crescendo. Voc\xEA s\xF3 precisa sentar e fazer.",
-      `Para come\xE7ar: ${c.link("treinar")}`
+      "Muito obrigado por criar a sua conta. \xC9 uma alegria ter voc\xEA no Orto Quest\xF5es, e quero te mostrar rapidinho o que o site tem para te ajudar.",
+      "As quest\xF5es s\xE3o das provas oficiais, e cada uma vem com o coment\xE1rio de todas as alternativas, n\xE3o s\xF3 da certa. O que voc\xEA errar fica guardado e volta na Revis\xE3o no momento certo, sem voc\xEA precisar anotar nada.",
+      "No plano completo, o Cronograma monta o seu estudo at\xE9 a prova: quando voc\xEA abre o site, a lista do dia j\xE1 est\xE1 pronta, com o que mais cai primeiro e a reta final de revis\xE3o no fim. Se um plant\xE3o apertar a semana, ele redistribui sozinho.",
+      "Os resumos ficam na Biblioteca, organizados por tema, com as quest\xF5es reais no meio do texto para resolver na hora. Ler e treinar viram uma coisa s\xF3.",
+      "Um pedido carinhoso: o Orto Quest\xF5es cresce no boca a boca. Se o site te ajudar, conte para os colegas que tamb\xE9m est\xE3o estudando; \xE9 assim que o projeto chega a mais gente e continua melhorando.",
+      `Para come\xE7ar, cinco quest\xF5es de um tema de que voc\xEA goste j\xE1 s\xE3o um \xF3timo primeiro passo: ${c.link("treinar")}`
     ],
-    ps: () => "P.S.: este e-mail n\xE3o \xE9 autom\xE1tico de verdade. Se responder, sou eu que leio."
-  },
-  {
-    id: "v2",
-    assuntos: (c) => [nm(c, "oi, sou o Tales", "Oi, sou o Tales"), nm(c, "um oi de quem fez o site", "Um oi de quem fez o site")],
-    corpo: (c) => [
-      "Oi, sou o Tales. Fiz este site para que estudar coubesse nos intervalos que a rotina deixa.",
-      J(c.fato("etapa"), c.fato("prova")),
-      "O combinado \xE9 simples: voc\xEA senta e estuda, o site decide o resto. Cada quest\xE3o vem da prova real e explica todas as alternativas. A Revis\xE3o guarda o que te pegou e traz de volta na hora certa.",
-      "Para hoje, sugiro s\xF3 uma coisa: um tema de que voc\xEA goste, cinco quest\xF5es, coment\xE1rio lido at\xE9 o fim. Dez minutos.",
-      `Fica aqui: ${c.link("treinar")}`
-    ],
-    ps: () => "P.S.: se travar em qualquer coisa, me responde. Eu leio tudo."
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "sua conta est\xE1 pronta", "Sua conta est\xE1 pronta"), nm(c, "por onde come\xE7ar hoje", "Por onde come\xE7ar hoje")],
-    corpo: (c) => [
-      "Sua conta est\xE1 pronta, e eu quis te escrever antes de qualquer coisa autom\xE1tica. Sou o Tales, e cuido do site pessoalmente.",
-      J(momento(c)),
-      "Uma coisa que eu gostaria que voc\xEA soubesse: aqui, errar \xE9 barato. Cada quest\xE3o que te pega vira uma explica\xE7\xE3o completa e volta na Revis\xE3o no momento certo. \xC9 na prova que errar custa; aqui, \xE9 treino.",
-      "Para come\xE7ar, n\xE3o planeje nada. Abra um tema que voc\xEA gosta e fa\xE7a cinco. Depois me conta como foi, se quiser.",
-      `O caminho mais curto: ${c.link("treinar")}`
-    ],
-    ps: () => "P.S.: este e-mail n\xE3o \xE9 autom\xE1tico de verdade. Se responder, sou eu que leio."
-  },
-  {
-    id: "v4",
-    assuntos: (c) => [nm(c, "tr\xEAs coisas sobre o site", "Tr\xEAs coisas sobre o site")],
-    corpo: (c) => [
-      "Que bom ter voc\xEA por aqui. Sou o Tales, e queria te contar tr\xEAs coisas sobre o site antes de voc\xEA come\xE7ar.",
-      "A primeira: as quest\xF5es s\xE3o das provas de verdade, com a explica\xE7\xE3o de todas as alternativas. A segunda: a Revis\xE3o aprende com o que te pega e traz de volta na hora certa, sem voc\xEA anotar nada. A terceira: dez minutos no intervalo j\xE1 contam, porque o site foi feito para caber na rotina real.",
-      J(c.fato("prova"), c.fato("etapa")),
-      `Para os primeiros dez minutos, cinco quest\xF5es de um tema de que voc\xEA goste: ${c.link("treinar")}`,
-      "E se qualquer coisa ficar confusa, me responde. Eu leio tudo."
-    ],
-    ps: () => "P.S.: a parte do site em que eu mais caprichei foi o coment\xE1rio das alternativas erradas. Vale ler at\xE9 o fim."
-  },
-  {
-    id: "v5",
-    assuntos: (c) => [nm(c, "por que eu fiz o site", "Por que eu fiz o site")],
-    corpo: (c) => [
-      "Eu sou o Tales. Fiz o Orto Quest\xF5es porque muita gente perde mais tempo decidindo o que estudar do que estudando. Queria um lugar em que a pessoa abrisse e j\xE1 soubesse o que fazer.",
-      J(momento(c)),
-      "\xC9 isso que o site tenta ser para voc\xEA: quest\xF5es das provas reais, cada alternativa explicada, a Revis\xE3o trazendo de volta o que te pegou. Voc\xEA senta e faz; o resto est\xE1 decidido.",
-      "Para hoje, uma sugest\xE3o s\xF3: cinco quest\xF5es de um tema que voc\xEA gosta, com o coment\xE1rio lido at\xE9 o fim. Dez minutos bastam para sentir se o jeito do site combina com voc\xEA.",
-      `Fica aqui: ${c.link("treinar")}`
-    ],
-    ps: () => "P.S.: se responder este e-mail, sou eu que leio. Pode escrever."
+    ps: () => "P.S.: se tiver qualquer d\xFAvida, \xE9 s\xF3 responder este e-mail. Fico \xE0 disposi\xE7\xE3o."
   }
 ];
 var primeiras_10 = [

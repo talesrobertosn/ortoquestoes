@@ -79,7 +79,7 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   pix_3_dias: { grupo: 'automatico', rotulo: 'Pix: faltam 3 dias', descricao: 'Automático: o acesso pago no Pix está acabando. Nada se perde; sem urgência.' },
   pix_hoje: { grupo: 'automatico', rotulo: 'Pix: termina hoje', descricao: 'Automático: último dia do acesso pago no Pix. Transacional.' },
   relatorio: { grupo: 'automatico', rotulo: 'Resumo de estudo', descricao: 'Automático: a quinzena ou o mês contados como uma história.' },
-  boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: quem eu sou e o que fazer nos primeiros dez minutos.' },
+  boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: boas-vindas, as funções do site (questões, Cronograma, resumos) e o pedido para contar aos colegas.' },
   primeiras_10: { grupo: 'automatico', rotulo: 'Primeiras 10 questões', descricao: 'Ao passar de 10 questões: o hábito começou.' },
   voltou: { grupo: 'automatico', rotulo: 'Que bom te ver de volta', descricao: 'Primeiro login depois de 10 dias ou mais fora.' },
   cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'No dia em que a pessoa monta o plano até a prova.' },
