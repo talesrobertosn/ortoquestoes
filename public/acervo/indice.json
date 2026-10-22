@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-21T23:06:15-03:00",
-  "total": 7427,
+  "geradoEm": "2026-10-21T23:09:48-03:00",
+  "total": 7433,
   "temas": [
     {
       "slug": "mao",
@@ -13,7 +13,7 @@
       "slug": "ombro-cotovelo",
       "nome": "Ombro e cotovelo",
       "arquivo": "temas/ombro-cotovelo.json",
-      "total": 551
+      "total": 557
     },
     {
       "slug": "quadril",
@@ -43023,6 +43023,110 @@
       ],
       "p": 19,
       "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0670",
+      "t": 1,
+      "s": [
+        48,
+        55
+      ],
+      "p": 19,
+      "a": 2022,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0671",
+      "t": 1,
+      "s": [
+        66,
+        48
+      ],
+      "p": 19,
+      "a": 2022,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0672",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 19,
+      "a": 2022,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0673",
+      "t": 1,
+      "s": [
+        52
+      ],
+      "p": 19,
+      "a": 2022,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0674",
+      "t": 1,
+      "s": [
+        66
+      ],
+      "p": 19,
+      "a": 2022,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "ombro-cotovelo-0675",
+      "t": 1,
+      "s": [
+        41
+      ],
+      "p": 19,
+      "a": 2022,
       "d": null,
       "img": 0,
       "an": 0,

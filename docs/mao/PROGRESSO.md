@@ -13,7 +13,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 82 | 12 | mao-2106 a mao-2187 | A 21, B 21, C 20, D 20 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 88 | 12 | mao-2106 a mao-2187; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 22, C 22, D 22 |
 | SBCM 2023 | SBCM-2023-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
@@ -426,7 +426,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura |
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14, p. 574 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2127 | publicada |
 | 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: depende da foto |
-| 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22 | ombro-cotovelo / Instabilidade do cotovelo | 20 |  | a fazer |
+| 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 | ombro-cotovelo-0670 | publicada |
 | 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28, p. 1103 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2135 | publicada |
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33, p. 1268 (Tabela 33.3) | mao / Transferências tendinosas e paralisias | 10 | mao-2145 | publicada |
 | 25 | Polidactilia central: dedo mais duplicado | fato | cap. 36 p. 1387 | mao / Sindactilia e polidactilia | 12 | mao-2153 | publicada |
@@ -455,7 +455,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 48 | TSUGE, Volkmann moderada: melhor tratamento | conduta | cap. 51, p. 1978 a 1982 | mao / Outros temas da mão | 17 | mao-2176 | publicada |
 | 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34, p. 1341 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2148 | publicada |
 | 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34, p. 1311 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2149 | publicada |
-| 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
+| 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20, p. 947 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0671 | publicada |
 | 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55, p. 2051 (não diz qual é a mais comum) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
 | 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2156 | publicada |
 | 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
@@ -466,8 +466,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 59 | Instabilidade cárpica não dissociativa: causa | fato | cap. 13, p. 501 | mao / Instabilidade do carpo | 05 | mao-2125 | publicada |
 | 60 | Luxação isolada da ARUD reduzida: posição estável | fato | cap. 14, p. 576 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2128 | publicada |
 | 61 | SLADE e GEISSLER: cistos de 1 a 5 mm | classificação | cap. 16, p. 696 (Tabela 16.2) | mao / Fraturas do escafoide e do carpo | 07 | mao-2130 | publicada |
-| 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
-| 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24 (arquivo 23) | ombro-cotovelo / Rigidez do cotovelo | 20 |  | a fazer |
+| 62 | Fratura cominutiva do capítulo: tipo | classificação | cap. 18, p. 866 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0672 | publicada |
+| 63 | Over-the-top medial: intervalo para a cápsula | técnica | cap. 24, p. 1013 | ombro-cotovelo / Rigidez do cotovelo | 20 | ombro-cotovelo-0673 | publicada |
 | 64 | Síndrome do interósseo posterior: intervalo do acesso anterior | técnica | cap. 28, p. 1117 e 1118 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2137 | publicada |
 | 65 | Portal 6-U: uso principal | técnica | cap. 17, p. 762, 763 e 765 | mao / Artrose do punho e artroscopia | 08 | mao-2132 | publicada (Green: 6-U é portal de saída; o gabarito falava em entrada) |
 | 66 | Acesso ao plexo: relações anatômicas | anatomia | cap. 34, p. 1313 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2150 | publicada (distratores trocados por relações do Green) |
@@ -483,8 +483,8 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
 | 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
 | 78 | Osteocondromatose múltipla hereditária: herança | fato | cap. 38, p. 1523 e 1524 | mao / Tumores da mão | 19 | mao-2186 | publicada |
-| 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | a fazer |
-| 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25 (arquivo 24) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
+| 79 | Prótese da cabeça do rádio: tamanho pelo diâmetro | técnica | cap. 19, p. 918 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0674 | publicada |
+| 80 | Bíceps distal: incisão única versus dupla | fato | cap. 25, p. 1035 a 1037 | ombro-cotovelo / Lesões do bíceps | 20 | ombro-cotovelo-0675 | publicada |
 | 81 | Macrodactilia: forma mais comum | fato | cap. 36 p. 1438 | mao / Outras malformações congênitas | 12 | mao-2155 | publicada |
 | 82 | Retalho inguinal: artéria e onde emerge | anatomia | cap. 44 p. 1736 | mao / Retalhos e cobertura cutânea | 15 | mao-2169 | publicada (original com A e B iguais; refeita) |
 | 83 | Enxerto vascularizado do côndilo femoral medial: área da figura | figura | cap. 46 p. 1800 e 1801 | mao / Microcirurgia e retalhos livres | 16 | mao-2174 | publicada (sem a figura) |
