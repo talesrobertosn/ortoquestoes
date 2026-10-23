@@ -950,15 +950,42 @@
   "conferido": false
  },
  "trauma-0048": {
+  "conceito": "A dor e a deformidade de uma fratura do fêmur distal podem esconder uma lesão ligamentar, mas isso não significa que essa associação seja frequente. O resumo descreve a lesão ligamentar como **incomum**, sendo o **ligamento cruzado anterior (LCA)** o mais acometido. A resposta combina as duas informações na alternativa C.\n\nO exame inicial pode ser limitado pela dor e pela fratura. Às vezes uma avulsão aparece na radiografia; em outros casos, não há esse sinal ósseo. Por isso, “não foi diagnosticada antes da operação” não equivale a “não existe lesão”. O capítulo ressalta que o diagnóstico pré-operatório é raro (resumo do Rockwood, 10ª ed., cap. 58, “Lesões associadas”).\n\nA forma da lesão muda o tratamento. Quando o LCA permanece ligado a um **fragmento osteocondral**, isto é, com osso e cartilagem, o fragmento deve ser reparado durante a fixação da fratura sempre que possível. Já uma ruptura no meio do ligamento tem tratamento inicialmente não operatório. Túneis no intercôndilo podem enfraquecer a fratura ou interferir com o implante; a reconstrução primária ainda prolonga a cirurgia e pode aumentar infecção, aderências e perda de movimento.\n\nNão há contradição em reparar um fragmento na primeira operação e adiar uma reconstrução ligamentar em outro paciente. São lesões diferentes. Na ruptura intrassubstancial, movimento protegido, órtese e reabilitação fazem parte do tratamento inicial; se a instabilidade persistir, o capítulo prevê reconstrução após a consolidação.\n\nNo resumo da Biblioteca, compare esses dois cenários. A resposta da prova exige reconhecer a frequência e o ligamento; o cuidado clínico exige também identificar **onde e como ele se lesou**.",
+  "correta": "**C: incomum, sendo o LCA o mais acometido.** A frequência geral é baixa, mas entre as lesões ligamentares associadas o cruzado anterior predomina.\n\nIsso justifica procurá-lo sem presumir que toda fratura distal tenha ruptura. Depois, a conduta depende de avulsão osteocondral ou ruptura no meio do ligamento.",
   "incorretas": {
-   "A": "O cruzado anterior está certo, mas a associação é incomum.",
-   "B": "A associação é incomum, e o cruzado anterior predomina.",
-   "D": "A associação é incomum, mas o ligamento mais acometido é o cruzado anterior."
+   "A": "**Acerta o ligamento e aumenta indevidamente a frequência da associação.** LCA predominante não significa lesão ligamentar comum em todas as fraturas do fêmur distal.\n\nUma informação descreve o conjunto de pacientes; a outra descreve qual estrutura predomina quando a associação ocorre.",
+   "B": "**Troca as duas informações.** O resumo descreve a associação como incomum e aponta o LCA, não o cruzado posterior, como o mais acometido.\n\nA gravidade do trauma pode justificar uma avaliação cuidadosa, mas não permite substituir os dados de frequência por uma expectativa de lesão posterior.",
+   "D": "**Reconhece que a associação é incomum, mas escolhe o ligamento errado.** O LCP não é o predominante descrito nessa fratura.\n\nNão se deve transferir automaticamente uma associação de outro mecanismo de trauma do joelho para a fratura distal do fêmur."
   },
-  "conceito": "Na **fratura do fêmur distal**, a lesão ligamentar do joelho associada é **incomum**: cerca de 10 a 20% nas séries com RM, bem menos que na fratura do **planalto tibial**.\n\n**O ligamento mais acometido**: o **cruzado anterior**, sobretudo nas fraturas **intercondilares**, nas fraturas de **Hoffa** (traço coronal do côndilo) e nos traumas de alta energia.\n\n**Como avaliar**: o exame do joelho antes da fixação é impossível. Depois de fixar a fratura, fazer o **exame sob anestesia**; a lesão ligamentar é tratada em um **segundo tempo**.\n\n**A classificação AO 33**: A extra-articular, B articular parcial (um côndilo; B3 é a fratura de Hoffa), C articular completa.\n\n**O tratamento**: **placa bloqueada lateral** ou **haste retrógrada**; dupla placa na cominução medial ou no osso osteoporótico. A **fratura de Hoffa** se fixa com parafusos de anterior para posterior, porque a placa lateral não segura o traço coronal.\n\n**Na prova**: a associação com lesão ligamentar é **incomum**, e o **LCA** é o mais acometido.",
-  "correta": "A lesão ligamentar é incomum no fêmur distal, e o cruzado anterior é o ligamento mais atingido.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Lesões associadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Lesões associadas"
+     ],
+     "blocos": [
+      "lesoes-associadas-8119d037",
+      "lesoes-associadas-73aee957"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "02db2d5dd839e1daf34cc9924b9c859e25f71c399d9598370cec2e9f8e642981"
+    }
+   ],
+   "questaoSha256": "3176d385bc11c4cc82b20d14a1e7b4bbb9ece616cbd025f585fc250b76d022a4",
+   "comentarioSha256": "b83549d7abf54e353d84cc5fb97ab7c78cfc9085a63fb78a26973cd50c34cb3c"
+  }
  },
  "trauma-0049": {
   "conceito": "**Fratura da tíbia com fíbula íntegra no tratamento funcional de Sarmiento.** Sarmiento popularizou o tratamento **funcional** das fraturas diafisárias da tíbia: gesso inguinopodálico inicial e, após 2 a 4 semanas, **órtese funcional** (tipo PTB, de apoio no tendão patelar), com **carga precoce**. A compressão das partes moles pela órtese e o micromovimento sob carga estimulam o calo. Funciona bem em fraturas **estáveis**, de **baixa energia**, com **encurtamento inicial pequeno** (menor que cerca de 1 a 1,5 cm).\n\n**O problema da fíbula íntegra.** Quando a fíbula **não fraturou**, ela funciona como um **tutor lateral** rígido. Sob a carga, a tíbia fraturada não pode encurtar por igual: o lado medial (sem tutor) encurta e colapsa, enquanto o lateral é mantido pela fíbula. O resultado é a **angulação em varo** progressiva. Teitz, Carter e Frankel descreveram os problemas das fraturas da tíbia com fíbula íntegra, com maior tendência ao **varo** e ao **retardo de consolidação**.\n\n**Fatores que influenciam o resultado no método funcional (Sarmiento e colaboradores).**\n\n| Situação | Comportamento |\n|---|---|\n| Fíbula fraturada no mesmo nível | Encurtamento simétrico, menos angulação |\n| **Fíbula íntegra** | **Tendência ao varo** |\n| Traço transverso estável | Bom resultado |\n| Traço oblíquo ou cominuto | Encurtamento maior |\n\n**Conduta prática.** Na fratura da tíbia com fíbula íntegra tratada sem cirurgia, controlar radiografias semanais nas primeiras semanas; angulação além do aceitável (geralmente mais de 5 graus de varo ou valgo) indica correção ou fixação (haste intramedular, que hoje é o tratamento mais usado para fraturas desviadas da diáfise da tíbia em adultos).\n\n> Tíbia com fíbula íntegra no método funcional: a complicação mais comum é a deformidade angular, principalmente em varo.",
@@ -1330,18 +1357,43 @@
   }
  },
  "trauma-0067": {
+  "conceito": "A artéria poplítea pode ser gravemente lesada junto de uma fratura supracondiliana, mas a frequência é **menor que na luxação do joelho e na fratura desviada da tíbia proximal**. É a alternativa B. Menor risco relativo não significa que o exame vascular possa ser dispensado.\n\nO feixe tem pouca liberdade entre dois pontos: **proximalmente, o hiato do adutor magno; distalmente, o arco do sóleo**. O capítulo considera surpreendente que a lesão supracondiliana seja menos frequente, justamente por essa limitação de mobilidade. Não se deve inventar uma proteção por “maior folga” como explicação estabelecida para a diferença (resumo do Rockwood, 10ª ed., cap. 58, “Lesões associadas”).\n\nO dano pode vir de laceração ou contusão direta por um fragmento, ou de estiramento com lesão da íntima, a camada interna do vaso. Essas possibilidades explicam por que a avaliação inclui pulsos, motricidade e sensibilidade documentados. Diferença de pulsos, hematoma em expansão, sangramento arterial persistente e índice vascular diminuído são sinais que orientam investigação por imagem no capítulo.\n\nA presença de pulso não resolve sozinha toda a dúvida: uma fratura muito desviada perto dos vasos ainda exige julgamento e, se necessário, participação do cirurgião vascular. A frequência populacional não deve prevalecer sobre um sinal de isquemia no indivíduo.\n\nA pergunta compara a supracondiliana a duas lesões. A fonte sustenta que ela fica abaixo de **ambas**, sem exigir estabelecer aqui qual das outras duas tem a maior taxa. Leia no resumo da Biblioteca os pontos de fixação do feixe e os sinais de suspeita; eles ajudam a levar o dado epidemiológico para o exame real.",
+  "correta": "**B: menor que na luxação do joelho e na tíbia proximal.** Mantém as duas comparações do capítulo.\n\nA resposta não reduz a urgência quando há suspeita vascular. Um evento menos comum continua podendo ameaçar o membro e exigir investigação e reperfusão.",
   "incorretas": {
-   "A": "O risco na supracondiliana é o menor dos três.",
-   "C": "A luxação do joelho tem o maior risco de lesão da poplítea.",
-   "D": "O planalto tibial tem risco maior que a supracondiliana."
+   "A": "**Inverte as duas comparações.** A proximidade dos fragmentos com a poplítea torna a lesão possível, mas não faz da supracondiliana a de maior frequência entre os cenários apresentados.\n\nAnatomia de risco e frequência observada não são sinônimos; o próprio resumo chama a atenção para essa diferença.",
+   "C": "**Acerta a comparação com a tíbia proximal e erra a da luxação.** O risco supracondiliano também é menor que na luxação do joelho.\n\nNão há apoio para elevar a supracondiliana acima da luxação apenas porque há fragmentos ósseos capazes de lesar o vaso.",
+   "D": "**Acerta a comparação com a luxação e inverte a da tíbia proximal.** A fratura desviada da tíbia proximal é outro cenário em que a lesão poplítea é mais comum que na supracondiliana.\n\nO par precisa estar inteiro correto; acertar uma comparação não valida a outra."
   },
-  "conceito": "A **artéria poplítea** fica **presa** em dois pontos: em cima, no **hiato dos adutores**; embaixo, no **arco do sóleo**. Entre esses pontos, ela tem pouca mobilidade, e as lesões **perto do joelho** a esticam.\n\n**O risco de lesão, do maior para o menor**:\n\n**luxação do joelho**: o maior risco, de 20 a 40%;\n\n**fratura do planalto tibial**, sobretudo as mediais e as fraturas-luxações;\n\n**fratura supracondiliana do fêmur**: o menor dos três; acima do hiato, a artéria tem **mais folga**.\n\n**O desvio típico da supracondiliana**: o fragmento distal é puxado pelos **gastrocnêmios** em **flexão**, e a ponta pode ameaçar a artéria, mas a lesão é menos frequente.\n\n**A avaliação**: medir o **índice tornozelo-braquial**; abaixo de **0,9**, pedir **angiotomografia**. **Pulso presente não exclui** lesão da íntima.\n\n**Na prova**: na supracondiliana, o risco de lesão da poplítea é **menor** que na luxação do joelho e na fratura do planalto tibial.",
-  "correta": "Acima do hiato dos adutores, a artéria tem mais folga, e o risco é menor que na luxação e no planalto.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 57"
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Lesões associadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Lesões associadas"
+     ],
+     "blocos": [
+      "lesoes-associadas-32585c37",
+      "lesoes-associadas-59590dfc",
+      "lesoes-associadas-2d6d0ff1"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "8042f6e200cbbb466745d3ecdb56db6a659947e7c352e2ff1a5cb1a4359d566d"
+    }
+   ],
+   "questaoSha256": "7a066d245441a1ac98fc6bff7791f7209467578a86d01ff2d927fd8fbf16785c",
+   "comentarioSha256": "5968c58c769d4b7c2fbfaf907b7768b0eb4b50f4aa2d639c1e0f202684d07eb9"
+  }
  },
  "trauma-0068": {
   "conceito": "**Incidência tangencial dorsal (skyline) do punho.** Na fixação do rádio distal com **placa volar bloqueada**, os parafusos distais são direcionados para o osso subcondral e para a cortical dorsal. Parafusos **longos demais** atravessam a cortical dorsal e ficam em contato com os **tendões extensores**, especialmente o **extensor longo do polegar**, que pode romper por atrito.\n\n**O problema da radiografia convencional.** No perfil, a superfície dorsal do rádio distal tem forma irregular (tubérculo de Lister e sulcos dos compartimentos), e a ponta do parafuso pode parecer dentro do osso quando, na verdade, está saliente num sulco. Estudos mostram que o perfil subestima a protrusão dorsal.\n\n**A técnica.**\n- Antebraço apoiado, punho em **flexão máxima**.\n- Feixe de raios dirigido **ao longo do dorso do rádio**, com cerca de **15 graus** de inclinação em relação ao eixo do antebraço, tangente à superfície dorsal.\n- A imagem mostra o rádio \"de cima\", com o **tubérculo de Lister** e os sulcos dos compartimentos extensores em perfil, permitindo ver qualquer ponta de parafuso que ultrapasse a cortical.\n\nJoseph e Harvey descreveram a incidência do \"horizonte dorsal\", e Riddick e colaboradores confirmaram sua acurácia para detectar a penetração dorsal na radioscopia intraoperatória.\n\n**Na prática.** Fazer a incidência na radioscopia antes de terminar a cirurgia; usar parafusos 2 a 4 mm mais curtos que a medida ou pinos lisos distais; escolher bem a posição da placa (abaixo da linha divisora, para não irritar os flexores).\n\n> Skyline do punho: flexão máxima e raio inclinado cerca de 15 graus, tangente ao dorso do rádio, para ver parafusos salientes.",
@@ -4660,19 +4712,47 @@
   "conferido": false
  },
  "trauma-0241": {
+  "conceito": "Esta questão tem uma **divergência entre o gabarito oficial e a fonte atual**. A banca marcou **D, 33C1**, como contraindicação à haste. O resumo do Rockwood, 10ª edição, capítulo 58, porém, admite **haste retrógrada no tipo C depois da fixação articular** e reserva outra estratégia para o **côndilo isolado 33B2**. Pela fonte consultada, a alternativa C é a compatível com a limitação do implante.\n\nA classificação separa três problemas. No tipo A, a superfície articular não faz parte da fratura; no B, um côndilo fica separado, mas parte da articulação continua ligada à diáfise; no C, o conjunto articular perde continuidade com a diáfise. A2 é cunha metafisária, A3 é metáfise complexa, B2 é côndilo medial no plano sagital e C1 tem componentes articular e metafisário simples.\n\n**Por que uma haste pode servir no C1 e não resolver o B2?** No C1, a articulação pode ser primeiro reduzida e fixada, formando um bloco distal que depois é conectado à diáfise. O capítulo orienta posicionar os parafusos articulares fora do trajeto da haste. No B2, o côndilo medial separado exige redução anatômica, parafusos e suporte apropriado; a haste no canal não oferece por si a fixação desse côndilo (resumo do Rockwood, 10ª ed., cap. 58, “Classificação AO/OTA e Hoffa” e “Haste retrógrada”).\n\nIsso não torna toda fratura tipo C automaticamente adequada para haste. O controle do fragmento distal, a reconstrução articular e a compatibilidade dos implantes precisam ser possíveis. A questão é que o capítulo não considera o nome **C1** uma contraindicação universal.\n\nAo estudar pelo resumo da Biblioteca, conserve duas informações distintas: **D é a letra oficial desta prova; C é a alternativa sustentada pela tática do capítulo atual**. Não é necessário ensinar que uma superfície articular simples impede sempre uma haste para preservar o registro da banca.",
+  "correta": "**D: 33C1 é o gabarito oficial, preservado com ressalva.** A fonte atual não sustenta sua contraindicação categórica: admite haste após redução e fixação da articulação.\n\nPortanto, esta justificativa identifica a resposta da banca, sem apresentá-la como uma recomendação clínica válida para todo C1. A discrepância está registrada no alerta.",
   "incorretas": {
-   "A": "A fratura extra-articular 33A2 é boa indicação de haste retrógrada.",
-   "B": "A fratura extra-articular multifragmentária 33A3 também pode receber haste.",
-   "C": "A 33B2 é unicondilar medial, que a haste não fixa, mas a banca não aceitou."
+   "A": "**33A2 é extra-articular com cunha metafisária.** A tabela inclui haste retrógrada entre as opções do tipo A, desde que a montagem consiga reduzir e estabilizar os fragmentos.\n\nNão há na classificação dessa opção um côndilo isolado que precise ser capturado por suporte específico.",
+   "B": "**33A3 é extra-articular metafisária complexa.** A cominuição aumenta a exigência de controle, mas o capítulo mantém a haste entre as opções gerais do grupo A.\n\n“Complexa” não significa automaticamente impossibilidade de haste; é necessário analisar os fragmentos e a estabilidade alcançável.",
+   "C": "**33B2 é a opção sustentada pela fonte como a limitação da haste isolada.** O côndilo medial está separado e precisa de redução e fixação próprias, frequentemente com placa de suporte e parafusos.\n\nEla não foi a letra aceita no gabarito oficial. O comentário conserva essa diferença em vez de chamar de errada uma conduta coerente com o capítulo atual."
   },
-  "conceito": "A **classificação AO** do **fêmur distal** usa o número **33**:\n\n**33A, extra-articular**: A1 simples, A2 em cunha, A3 multifragmentária;\n\n**33B, articular parcial** (unicondilar): B1 côndilo lateral, B2 côndilo medial, B3 plano frontal (fratura de **Hoffa**);\n\n**33C, articular completa**: C1 articular simples e metafisária simples, C2 articular simples com metáfise multifragmentária, C3 articular multifragmentária.\n\n**A haste retrógrada no fêmur distal**: funciona bem nas fraturas **extra-articulares** (33A), inclusive nas cominutas, e pode ser usada nas **articulares simples** (33C1 e C2), desde que o bloco articular seja primeiro **reduzido e fixado** com parafusos de tração.\n\n**Onde a haste não serve**: nas fraturas **unicondilares** (33B), porque ela não fixa um côndilo isolado; elas pedem parafusos e placa de suporte. Na cominução articular grave (C3), a placa costuma ser preferida.\n\n**O gabarito**: a banca considerou a **33C1** como contraindicação à haste.\n\n**Na prova**: a banca indicou a **33C1** como o tipo em que a haste é contraindicada.",
-  "correta": "A banca considerou a haste intramedular contraindicada na fratura articular completa 33C1.",
-  "alerta": "Na prática, as fraturas unicondilares (33B) são as que não se tratam com haste, enquanto a 33C1 pode receber haste retrógrada após fixar o bloco articular com parafusos de tração. A banca indicou C1; a alternativa C seria defensável.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 57"
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Classificação AO/OTA e HOFFA; Haste retrógrada."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Gabarito oficial D (33C1), preservado. O resumo do Rockwood and Green, 10ª ed., cap. 58, inclui haste retrógrada no tipo C após fixar a articulação e não a lista para o côndilo isolado tipo B. A 33B2 (alternativa C) requer fixação própria do côndilo medial; é a resposta sustentada pela tática da fonte atual, em divergência com a banca.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Classificação AO/OTA e HOFFA",
+      "Haste retrógrada"
+     ],
+     "blocos": [
+      "classificacao-ao-ota-e-hoffa-349ae23d",
+      "classificacao-ao-ota-e-hoffa-072fbbe6",
+      "classificacao-ao-ota-e-hoffa-05befb98",
+      "classificacao-ao-ota-e-hoffa-d58e0ca2",
+      "haste-retrograda-63531bff"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "0b7722da8e621aa9fd09b59db40798369fe7b7df78f0fdd92c4217b55bccfa11"
+    }
+   ],
+   "questaoSha256": "3e927ef9c3aeff865e3647f28f7c02242bbe807c2156bdf580e3806355982f43",
+   "comentarioSha256": "1d8d6e0772a94ab47748c11c8ff15d0db6783566fc2548cbabdc0c4001c62a71"
+  }
  },
  "trauma-0242": {
   "conceito": "A incidência lateral da redução do colo deve ser avaliada pelo **índice de Garden**, cuja referência é próxima de **180 graus no perfil**. Entre as alternativas, a faixa **160 a 180** é a compatível com a avaliação de alinhamento descrita.\n\nO índice compara o sistema trabecular compressivo da cabeça com a cortical medial da diáfise. O texto relata bons resultados entre **155 e 180 graus** em cada incidência; o intervalo da alternativa D é uma faixa mais estreita dentro dele. Portanto, não é necessário inventar que o livro usa exatamente 160 como seu limite inferior para reconhecer a resposta (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nO AP tem referência de cerca de 160, enquanto o perfil fica próximo de 180. Confundir os dois planos ou trocar o índice pelo ângulo cervicodiafisário dificulta perceber uma redução ruim. O resumo da Biblioteca apresenta essas medidas junto do sinal de Lowell para comparação.",
@@ -4865,15 +4945,15 @@
   }
  },
  "trauma-0261": {
-  "conceito": "Nas fraturas expostas da diáfise do fêmur, a abertura é mais frequente na face **anterior ou lateral**. Isso orienta a inspeção, mas não autoriza deixar a região posterior ou medial coberta.\n\nO capítulo recomenda examinar o membro inteiro, retirando roupas e curativos: uma pequena ferida fora da região mais comum pode comunicar com a fratura. Ferida próxima do foco deve ser considerada exposição até esclarecimento. O risco é reconhecer apenas a ferida grande e visível e tratar uma exposição pequena como se a fratura fosse fechada (resumo do Rockwood, 10ª ed., cap. 57, “A pele”).\n\nA distribuição de frequência responde à prova; a inspeção de toda a circunferência atende o paciente. Leia essa orientação no resumo da Biblioteca junto das lesões associadas.",
-  "correta": "**A: anterior ou lateral.** É a distribuição predominante descrita. O reconhecimento desse padrão não exclui exposição por outras faces nem substitui exame completo.",
+  "conceito": "Numa fratura da diáfise do fêmur, a ferida de exposição aparece mais frequentemente na **face anterior ou lateral da coxa**, alternativa A. Essa distribuição ajuda a lembrar onde procurar, mas não autoriza examinar apenas essas faces.\n\nUma fratura exposta não precisa ter osso visível. O resumo alerta para feridas pequenas posteriores ou mediais e orienta examinar o membro inteiro, retirando roupas e curativos; uma ferida próxima ao foco deve ser tratada como exposição até prova em contrário. A fratura pode chamar a atenção pela deformidade e pela dor, enquanto uma abertura discreta permanece escondida na região apoiada na maca (resumo do Rockwood, 10ª ed., cap. 57, “Epidemiologia, mecanismo e lesões associadas”).\n\n**Frequência e exclusão diagnóstica são perguntas diferentes.** A é o par mais frequente; uma ferida medial continua podendo representar exposição. Escolher o par correto na prova não deve criar o hábito perigoso de descartar o diagnóstico pela localização menos comum.\n\nReconhecer a exposição muda o cuidado imediato: antibiótico precoce, profilaxia antitetânica e curativo estéril entram na conduta descrita, seguidos de desbridamento. A decisão sobre haste primária ou estabilização provisória depende da estabilidade do paciente e da condição de contaminação, não apenas de a abertura ser anterior ou lateral. No resumo da Biblioteca, leia também “Situações especiais” para relacionar o achado cutâneo ao tratamento.",
+  "correta": "**A: anterior ou lateral.** É a localização predominante descrita. Serve como informação epidemiológica para a questão e como lembrança de inspeção cuidadosa dessas faces.\n\nO exame só está completo depois de conferir toda a circunferência da coxa; predominância não significa exclusividade.",
   "incorretas": {
-   "B": "**Mantém a região anterior, mas troca lateral por medial.** A fonte destaca anterior/lateral como mais frequentes. A região medial precisa ser examinada justamente porque uma ferida ali pode ser menos evidente, não porque compõe o par predominante.",
-   "C": "**Reconhece lateral e substitui anterior por posterior.** A lesão posterior é possível e deve ser procurada. Possibilidade não é o mesmo que a localização mais frequente descrita.",
-   "D": "**Reúne as faces que podem passar despercebidas, não o padrão predominante.** O capítulo usa posterior/medial para reforçar inspeção completa. A resposta epidemiológica continua anterior/lateral."
+   "B": "**Anterior está de acordo com o padrão, mas medial troca uma das faces predominantes.** A face medial pode apresentar uma ferida real, inclusive pequena e despercebida; a opção não é falsa por isso ser impossível.\n\nEla erra ao colocá-la no par mais frequente, cuja outra face é lateral.",
+   "C": "**Lateral é uma das faces mais comuns; posterior não completa o par pedido.** Uma ferida posterior pode ficar oculta sob o paciente e precisa ser procurada mesmo sem ser a apresentação predominante.\n\nO fato de exigir atenção clínica não a transforma na localização mais frequente.",
+   "D": "**Posterior e medial reúnem justamente as localizações menos evidentes que não podem ser esquecidas.** O capítulo as menciona como alerta de inspeção, enquanto aponta anterior/lateral como o padrão predominante.\n\nConfundir um aviso para não perder diagnóstico com uma descrição de frequência leva à escolha desse par."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Epidemiologia, mecanismo e lesões associadas."
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Epidemiologia, mecanismo e lesões associadas; Situações especiais."
   ],
   "conferido": false,
   "geradoEm": "2026-10-23",
@@ -4888,29 +4968,78 @@
      "edicao": "10ª edição (2025)",
      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
      "secoes": [
-      "Epidemiologia, mecanismo e lesões associadas"
+      "Epidemiologia, mecanismo e lesões associadas",
+      "Situações especiais"
      ],
      "blocos": [
-      "epidemiologia-mecanismo-e-lesoes-associadas-8577dc1c"
+      "epidemiologia-mecanismo-e-lesoes-associadas-8577dc1c",
+      "situacoes-especiais-034a55d1"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "70344be71340b89b7fabb28f117b22b10d9da6fdf634576eebe53eab3b3ca9a0"
+     "trechosSha256": "4cb0fb48068a4fa4d70527f277190698ef4f6e76f08fa6291d13afc7e5f0bb8e"
     }
    ],
    "questaoSha256": "4f232a44418e82d82e4d6bd40d5c1e178989ed7606928282379ea3dc40a96c0e",
-   "comentarioSha256": "9ec5c592d3c05a61d1653774359e10b60b1ccc6206f082e9d24d9663aac4d6c4"
+   "comentarioSha256": "0ccd2b49292e5ad47fee4d0690674aacf5f125a6a9d919d64c987c0457ad50f4"
   }
  },
  "trauma-0262": {
+  "conceito": "A fratura distal pode encurtar e desviar em varo mesmo depois de uma redução inicial, porque as forças musculares continuam atuando. O capítulo relaciona esse conjunto à contração e ao espasmo de **posteriores da coxa, quadríceps e adutores**. É a alternativa C.\n\nQuando o osso perde a continuidade, os grupos musculares deixam de atuar sobre uma estrutura única e passam a deslocar os fragmentos. O resumo descreve o encurtamento e o varo em conjunto; em outra linha, separa a ação dos gastrocnêmios, que puxam o fragmento distal para trás e produzem ápice posterior. Isso mostra por que comprimento, eixo coronal e angulação no perfil precisam ser avaliados separadamente (Rockwood, 10ª ed., cap. 58, “Mecanismo e deformidade”).\n\nOs três grupos da resposta não são uma lista de todos os músculos do membro. São os que o capítulo associa à deformidade perguntada. O glúteo médio atua no contexto do fêmur proximal, enquanto o enunciado trata da perda de alinhamento junto ao joelho; não deve substituir um dos grupos da coxa destacados para essa fratura.\n\nA redução precisa vencer essas forças com relaxamento muscular, distração e apoios adequados. O implante deve conservar a redução obtida: corrigir o varo momentaneamente sem fornecer suporte suficiente permite que a deformidade retorne. O capítulo lembra o colapso em varo como falha clássica das placas antigas sem ângulo fixo.\n\nNa Biblioteca, compare a descrição das forças com os recursos de redução. O raciocínio é enxergar qual dimensão está errada e o que a mantém assim; tracionar em linha reta não resolve necessariamente todos os desvios.",
+  "correta": "**C: posteriores da coxa, quadríceps e adutores.** É o conjunto associado ao encurtamento e ao varo da fratura distal. A combinação precisa ser considerada no planejamento da redução e da estabilidade.\n\nNão confundir essa resposta com a força dos gastrocnêmios, destacada para a angulação posterior do fragmento distal.",
   "incorretas": {
-   "A": "Os adutores e os posteriores estão certos, mas o glúteo médio não participa.",
-   "B": "O glúteo médio não participa; falta o grupo dos adutores.",
-   "D": "O quadríceps e os adutores estão certos, mas o glúteo médio não é o terceiro grupo."
+   "A": "**Preserva adutores e posteriores, mas troca o quadríceps pelo glúteo médio.** O conjunto que o resumo destaca para encurtamento e varo inclui o quadríceps.\n\nEscolher um músculo importante para a estabilidade do quadril não reproduz sua participação específica na deformidade do foco distal.",
+   "B": "**Reconhece os dois grandes grupos anterior e posterior da coxa, mas omite os adutores.** A opção introduz o glúteo médio no lugar de um grupo que o texto inclui expressamente na produção do varo e do encurtamento.\n\nA análise precisa conservar o componente coronal, e não pensar apenas na tração longitudinal sobre o membro.",
+   "D": "**Mantém quadríceps e adutores, mas retira os posteriores da coxa.** Esse terceiro grupo também faz parte da associação descrita; o glúteo médio não o substitui.\n\nO varo não deve ser analisado isolado do encurtamento, pois o enunciado pede os grupos envolvidos no conjunto."
   },
-  "conceito": "Na **fratura do fêmur distal**, os músculos da coxa contraem em **espasmo** pela dor e pela instabilidade, e produzem as deformidades típicas:\n\n**encurtamento**: os **isquiotibiais** (posteriores da coxa) e o **quadríceps**, que cruzam o joelho, puxam a perna para cima, encavalando os fragmentos;\n\n**varo**: os **adutores**, inseridos ao longo da face medial do fêmur, puxam o eixo para **medial**;\n\n**flexão do fragmento distal**: o **gastrocnêmio**, que nasce nos côndilos femorais, puxa o pequeno fragmento distal para trás (ápice posterior), com risco para o feixe **poplíteo**.\n\n**A dica de redução**: **fletir o joelho** relaxa o gastrocnêmio e ajuda a corrigir o desvio posterior do fragmento distal.\n\n**A consequência**: essas forças desequilibradas tornam a fratura **difícil de manter reduzida** sem fixação rígida. Exame vascular **seriado** é obrigatório.\n\n**O glúteo médio** não participa: ele atua no fêmur proximal, abduzindo.\n\n**Na prova**: o encurtamento e o varo vêm dos **posteriores da coxa**, do **quadríceps** e dos **adutores**.",
-  "correta": "Os isquiotibiais e o quadríceps encurtam o membro, e os adutores puxam o eixo para o varo.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Mecanismo e deformidade; Anatomia aplicada à fixação.",
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures, seção Anatomia aplicada e forças deformantes, tabela de desvios musculares."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Mecanismo e deformidade",
+      "Anatomia aplicada à fixação"
+     ],
+     "blocos": [
+      "mecanismo-e-deformidade-05ea9e17",
+      "mecanismo-e-deformidade-5ca6b5cc",
+      "mecanismo-e-deformidade-5663e0fc",
+      "mecanismo-e-deformidade-d9cd796b",
+      "anatomia-aplicada-a-fixacao-69fd8444"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "f89e96d3a7522dafe4a4278425cd91bafd44b31fa69461c49eb7483931aaf0b1"
+    },
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Anatomia aplicada e forças deformantes"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-forcas-deformantes-96ba7854"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "da066b81a9ab08fa1f04969243fd8dd1315f7c1a61236a27b6591afefb0428c7"
+    }
+   ],
+   "questaoSha256": "8ce127abcefe0b01f98176e5bac8a56baa68053e5d3c7d78bc0ccbdce09d1fad",
+   "comentarioSha256": "d37e173dbc90bd00a06429e63980f24a45424ddaf2bee4cbe5b53cd8e1e13079"
+  }
  },
  "trauma-0263": {
   "conceito": "**Ângulo glenopolar abaixo de 20 graus favorece cirurgia, como indicação relativa.** A redação da alternativa D é a que corresponde ao critério cobrado; o número não deve ser transformado em ordem automática independente da fratura, do paciente e da qualidade da medida.\n\nO ângulo é formado por duas linhas: uma une os polos superior e inferior da glenoide; a outra sai do polo superior da glenoide até o ângulo inferior da escápula. O acrômio não participa dessa construção. A fonte descreve valor padrão de 41 graus na AP verdadeira, com faixa de 35 a 51 graus.\n\nO valor informa a relação glenoide–corpo. Uma deformidade importante pode alterar o ritmo escapuloumeral e o trajeto muscular. No algoritmo, valores menores que 20 ou maiores que 60 favorecem cirurgia em jovem ativo, ao lado de angulação e translação da borda lateral.\n\n**A ressalva do capítulo é importante:** as medidas e os pontos críticos não são universalmente padronizados. Além disso, no colo anatômico o ângulo pode aumentar, chegando a 70 graus, em vez de diminuir. Um valor alto não exclui deformidade grave, e um valor baixo precisa ser interpretado no padrão correto.\n\n**Leia “O ângulo glenopolar e os outros três critérios”, na Biblioteca.** Aprenda os marcos e o significado mecânico antes do ponto de corte; a reconstrução 3D pode esclarecer o padrão que a radiografia sugere.",
@@ -5553,15 +5682,46 @@
   "conferido": false
  },
  "trauma-0295": {
+  "conceito": "Na fratura supracondiliana, o fragmento que contém os côndilos permanece ligado à força dos **gastrocnêmios na face posterior**. O resumo associa essa tração à **extensão do fragmento distal, com ápice posterior**. A resposta é B.\n\nO raciocínio começa pelo nível em que o osso quebrou. As forças não produzem o mesmo desvio em todo o fêmur: no fragmento proximal, iliopsoas, rotadores e glúteos favorecem flexão, rotação externa e abdução; distalmente, os gastrocnêmios atuam sobre o fragmento condilar. Decorar apenas uma lista de músculos sem localizar o fragmento impede compreender por que o desvio muda (resumo do Rockwood, 10ª ed., cap. 57, “Anatomia aplicada e forças deformantes”).\n\nTambém é necessário separar **angulação** de **encurtamento**. Quadríceps e isquiotibiais contribuem para encurtar em diferentes níveis; os adutores medializam a diáfise no segmento distal; os gastrocnêmios são a força relacionada à extensão do fragmento distal na tabela. Essas ações podem coexistir numa fratura, mas não são respostas intercambiáveis para a deformidade específica perguntada.\n\nNa redução, o capítulo orienta usar apoios e ferramentas para contrariar as forças deformantes, em vez de somente tracionar em linha reta. Na técnica retrógrada, cita coxim sob o foco porque o fragmento distal cai para trás. A relação prática é procurar o desvio no plano adequado e apoiar o fragmento, sem supor que recuperar comprimento resolverá automaticamente sua angulação.\n\nO **ápice posterior** descreve a angulação no foco; não deve ser confundido com o simples deslocamento de toda a fratura para trás. A fonte relaciona esse padrão à extensão do fragmento distal. Na Biblioteca, a tabela de forças ajuda a comparar o que cada grupo muscular faz e onde atua.",
+  "correta": "**B: gastrocnêmio.** Suas relações com a face posterior dos côndilos explicam sua ação sobre o fragmento distal após a fratura supracondiliana. A tabela relaciona essa força à extensão distal e ao ápice posterior.\n\nÉ a localização da inserção em relação ao fragmento que torna a resposta específica; não basta escolher um músculo que apenas cruza a região do joelho.",
   "incorretas": {
-   "A": "O quadríceps contribui para o encurtamento, não para a báscula posterior.",
-   "C": "O bíceps femoral contribui para o encurtamento.",
-   "D": "O trato iliotibial não é a força que angula a supracondiliana."
+   "A": "**O quadríceps participa do encurtamento na tabela de forças deformantes.** Essa ação ajuda a entender a necessidade de recuperar comprimento, mas não identifica a força que produz a angulação distal perguntada.\n\nA extensão do fragmento distal descrita aqui não deve ser atribuída automaticamente ao aparelho extensor pelo nome do movimento: a fonte a relaciona aos gastrocnêmios posteriores.",
+   "C": "**O bíceps femoral pertence aos isquiotibiais, grupo associado ao encurtamento.** Ele não é a força que a tabela destaca para o ápice posterior do segmento condilar.\n\nEscolhê-lo apenas por ser posterior confunde posição na coxa com ação específica sobre o fragmento que contém os côndilos.",
+   "D": "**O trato iliotibial não é o elemento apontado para essa deformidade.** O capítulo o menciona em outro problema: pinos do fixador que prendem partes moles podem causar rigidez do joelho.\n\nEsse papel no movimento e no cuidado com a fixação não o transforma na força responsável pela extensão do fragmento distal na fratura supracondiliana."
   },
-  "conceito": "Na **fratura supracondiliana do fêmur**, o fragmento **distal** é pequeno e fica preso a um músculo potente: o **gastrocnêmio**.\n\n**Por quê**: as duas cabeças do gastrocnêmio **nascem nos côndilos femorais**, atrás. Quando o fêmur quebra logo acima deles, o músculo puxa o fragmento distal para **trás** e o **flete**. A fratura angula com **ápice posterior** (o fragmento distal bascula para trás).\n\n**O risco**: a ponta do fragmento distal fica perto do **feixe poplíteo** (artéria e veia poplíteas, nervo tibial). Exame vascular **seriado** é obrigatório.\n\n**A manobra de redução**: **fletir o joelho** relaxa o gastrocnêmio e ajuda a trazer o fragmento distal de volta. Um coxim sob o joelho na cirurgia faz o mesmo.\n\n**Os outros músculos**: o **quadríceps** e os **isquiotibiais** (como o bíceps femoral) **encurtam** o membro; os **adutores** levam ao **varo**; o trato iliotibial não é a força que angula para trás.\n\n**Na prova**: a angulação com ápice posterior da supracondiliana vem do **gastrocnêmio**.",
-  "correta": "O gastrocnêmio nasce nos côndilos e puxa o fragmento distal para trás, angulando a fratura.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Anatomia aplicada e forças deformantes; Haste retrógrada; Fixador externo, placa e controle de dano."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Anatomia aplicada e forças deformantes",
+      "Haste retrógrada",
+      "Fixador externo, placa e controle de dano"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-forcas-deformantes-96ba7854",
+      "anatomia-aplicada-e-forcas-deformantes-56ba58a9",
+      "haste-retrograda-8469a2aa",
+      "fixador-externo-placa-e-controle-de-dano-373ad787"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "21e9485cb6fe25bfdba6e7fe58455d2a1057289e32644d09c6c0f5fc9ac2f9da"
+    }
+   ],
+   "questaoSha256": "11f4ff744a02a267e4d7716591ef0da1b3b5ca7f26ea6a963ecba55804859f19",
+   "comentarioSha256": "fa0d2e7b173e4b8dcfce317225eba94f60af7f6af196fd55efaa3001bf5c6c0a"
+  }
  },
  "trauma-0296": {
   "incorretas": {
@@ -7978,15 +8138,46 @@
   }
  },
  "trauma-0554": {
+  "conceito": "Um fêmur distal consolidado pode continuar alterando a marcha se o joelho ficou desalinhado. O capítulo situa em **mais de 5 a 10 graus** o desvio capaz de modificar sua mecânica. A alternativa B corresponde a essa faixa.\n\nNo plano coronal, **varo sobrecarrega o compartimento medial e valgo, o lateral**. O problema não é apenas a aparência do membro: mudar o eixo altera a distribuição de carga na articulação. Flexão, extensão, rotação e encurtamento também interferem na marcha e no conforto, por dimensões diferentes da deformidade (resumo do Rockwood, 10ª ed., cap. 58, “Pós-operatório e complicações”).\n\nA referência não deve ser transformada num certificado de segurança para qualquer desvio menor. O capítulo apresenta uma faixa, e não um único limiar que garanta ausência de sintomas abaixo dele. A meta da redução é recuperar anatomia e função, usando o lado oposto quando íntegro como modelo, não aceitar deliberadamente um erro por estar pouco abaixo de dez graus.\n\nO eixo anatômico femoral já apresenta valgo fisiológico em relação ao joelho. Por isso, o primeiro fio distal da placa deve ficar paralelo à articulação no AP, e não se assumir que “reto” significa perpendicular à diáfise. A placa mal posicionada pode impor valgo, enquanto rotação externa e encurtamento também aparecem entre os erros da fixação.\n\nNo resumo da Biblioteca, relacione o tópico de desalinhamento à técnica da placa. Reduzir com pouca dissecção preserva biologia, mas não substitui conferir eixo, rotação e comprimento; uma vantagem biológica não compensa uma articulação mecanicamente mal orientada.",
+  "correta": "**B: 5 a 10 graus.** É a faixa citada para o desalinhamento capaz de alterar a mecânica do joelho e a marcha.\n\nEla orienta a importância de conferir a redução, sem estabelecer que toda diferença inferior seja sempre bem tolerada ou que dez graus sejam uma meta aceitável.",
   "incorretas": {
-   "A": "Até 5 graus costuma ser bem tolerado.",
-   "C": "O limite é menor: entre 5 e 10 graus a mecânica já muda.",
-   "D": "15 a 20 graus é bem acima do limite que altera a mecânica."
+   "A": "**0 a 5 graus não é a faixa indicada na fonte para essa afirmação.** Isso não autoriza garantir que qualquer desvio de até cinco graus seja inofensivo.\n\nO julgamento também depende do plano, da anatomia original e da função; o objetivo continua sendo restaurar o alinhamento.",
+   "C": "**Esperar 10 a 15 graus eleva demais a referência.** O capítulo já descreve alteração mecânica com desvios acima de 5 a 10 graus.\n\nUma deformidade não precisa chegar a esse intervalo maior para modificar a distribuição de carga ou a marcha.",
+   "D": "**15 a 20 graus também coloca o início do problema muito acima da faixa descrita.** Não deve ser usado como tolerância para aceitar uma redução distal.\n\nA mudança de carga pode ocorrer antes, particularmente no varo ou valgo, cada qual sobrecarregando um compartimento diferente."
   },
-  "conceito": "Na **fratura do fêmur distal**, a fixação precisa restaurar o **eixo mecânico** do membro. Pequenos erros de alinhamento no fêmur distal mudam muito a distribuição de carga no joelho, porque a fratura fica muito perto da articulação.\n\n**O limite**: desalinhamentos acima de cerca de **5 a 10 graus** (em varo, valgo, flexão ou extensão) já alteram a **mecânica do joelho**:\n\n**varo**: sobrecarga do compartimento **medial**;\n\n**valgo**: sobrecarga do compartimento **lateral** e da patelofemoral;\n\n**flexão ou extensão** do fragmento distal: altera a patelofemoral e o arco de movimento.\n\n**A consequência**: dor, **artrose** precoce e piora da função.\n\n**Os parâmetros a conferir na cirurgia**: o **ângulo femoral distal lateral** (cerca de 81°), o alinhamento no perfil, o **comprimento** e a **rotação**, comparando com o outro lado.\n\n**Os erros mais comuns**: o **valgo** com a placa lateral mal posicionada e a **rotação** errada nas fraturas cominutas.\n\n**Na prova**: um desalinhamento acima de **5 a 10 graus** pode alterar a mecânica do joelho.",
-  "correta": "A partir de 5 a 10 graus, o desalinhamento perto do joelho já muda a distribuição de carga e favorece a artrose.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Pós-operatório e complicações; Anatomia aplicada à fixação; Placa e parafusos."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Pós-operatório e complicações",
+      "Anatomia aplicada à fixação",
+      "Placa e parafusos"
+     ],
+     "blocos": [
+      "pos-operatorio-e-complicacoes-dd6dde3a",
+      "anatomia-aplicada-a-fixacao-6154b66b",
+      "placa-e-parafusos-b2ea7bc8",
+      "placa-e-parafusos-6b5cb8a1"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "08dfb40f7ca31efcd08b7a8fa37086a2ad2e0771be5d8a28cde272353be7504c"
+    }
+   ],
+   "questaoSha256": "39a2558c6b5de729b581b667f847cd4bb8938b0a6791d5f86abd38501e64356d",
+   "comentarioSha256": "3b1586d34c52a788fe88b473b2cd4460195f3b2badfe20eb64d814fb7d858355"
+  }
  },
  "trauma-0555": {
   "incorretas": {
@@ -9244,15 +9435,48 @@
   "conferido": false
  },
  "trauma-0700": {
+  "conceito": "O fragmento distal do fêmur tende a ficar em **varo e angulado para trás**, alternativa A. São dois planos de deformidade: no AP, o eixo coronal; no perfil, a báscula posterior do segmento que contém os côndilos.\n\nO capítulo descreve contração e espasmo de quadríceps, posteriores da coxa e adutores produzindo encurtamento e varo. Já as cabeças dos gastrocnêmios, originadas atrás dos côndilos, puxam o fragmento distal para trás, com angulação de ápice posterior. A deformidade final também depende do desvio criado no momento do trauma; as forças musculares ajudam a mantê-la e a torná-la previsível (resumo do Rockwood, 10ª ed., cap. 58, “Mecanismo e deformidade”).\n\nIsso orienta a redução. Recuperar comprimento é necessário, mas não basta se o fragmento continua caído no perfil. O capítulo descreve paralisia muscular, distrator e rolo de apoio para vencer as forças; a cortical posterior, quando oferece uma referência utilizável, ajuda a guiar a redução sagital na técnica com placa.\n\nHá uma distinção importante: **o desvio da fratura fresca não é necessariamente o mesmo erro criado pela fixação**. O resumo descreve valgo como um desvio frequente nas placas mal aplicadas e chama atenção também para rotação externa e encurtamento. Uma placa pode impor uma deformidade que não era a tendência muscular original.\n\nNo resumo da Biblioteca, compare a deformidade muscular com os erros da síntese. A lição é controlar AP, perfil, comprimento e rotação antes de aceitar a montagem; a presença de um implante não garante que essas dimensões tenham sido restauradas.",
+  "correta": "**A: varo e angulação posterior do fragmento distal.** Conserva a tendência coronal e a ação posterior dos gastrocnêmios sobre o segmento condilar.\n\nNa redução, cada uma exige controle próprio: um AP satisfatório não exclui uma báscula posterior visível no perfil.",
   "incorretas": {
-   "B": "O varo está certo, mas quem flete é o fragmento distal, não o proximal.",
-   "C": "A deformidade típica é o varo, com o fragmento distal angulado para trás.",
-   "D": "O encurtamento ocorre, mas o eixo vai para o varo, não para o valgo."
+   "B": "**Acerta o varo e localiza o outro desvio no fragmento errado.** O padrão descrito é a tração posterior do segmento distal pelos gastrocnêmios, e não flexão proximal como a segunda deformidade desse par.\n\nÉ necessário identificar qual fragmento conserva a ligação muscular relevante, em vez de transferir um padrão de outra região femoral.",
+   "C": "**Inverte o plano coronal e a direção sagital.** O capítulo aponta varo com tração posterior distal; a opção oferece valgo e angulação anterior.\n\nO valgo pode aparecer como erro imposto pela placa, mas isso não o transforma no padrão muscular perguntado.",
+   "D": "**Encurtamento realmente faz parte do quadro, mas o valgo não completa o par.** A contração dos grupos da coxa é relacionada ao varo.\n\nA presença de uma alteração verdadeira não valida a direção errada do eixo coronal."
   },
-  "conceito": "Na **fratura do fêmur distal**, os músculos produzem uma deformidade típica:\n\n**varo**: os **adutores**, inseridos na face medial do fêmur, puxam o eixo para dentro;\n\n**encurtamento**: o **quadríceps** e os **isquiotibiais**, que cruzam o joelho, puxam a perna para cima;\n\n**angulação posterior do fragmento distal**: o **gastrocnêmio**, que nasce nos côndilos femorais, puxa o fragmento distal para **trás** e o **flete** (ápice posterior).\n\n**O risco**: a ponta do fragmento distal basculado para trás fica perto da **artéria poplítea** e do nervo tibial. Exame vascular **seriado** é obrigatório.\n\n**As dicas de redução**: **fletir o joelho** (coxim sob o joelho) relaxa o gastrocnêmio e ajuda a corrigir a angulação posterior; a tração corrige o encurtamento; a placa lateral ou a haste corrigem o varo.\n\n**Os erros comuns na fixação**: deixar o fragmento distal em **flexão** ou em **valgo** com a placa lateral mal posicionada.\n\n**Na prova**: a deformidade comum é o **varo** com **angulação posterior do fragmento distal**.",
-  "correta": "Os adutores levam ao varo, e o gastrocnêmio puxa o fragmento distal para trás.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Mecanismo e deformidade; Placa e parafusos; Pós-operatório e complicações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Mecanismo e deformidade",
+      "Placa e parafusos",
+      "Pós-operatório e complicações"
+     ],
+     "blocos": [
+      "mecanismo-e-deformidade-05ea9e17",
+      "mecanismo-e-deformidade-5ca6b5cc",
+      "mecanismo-e-deformidade-5663e0fc",
+      "mecanismo-e-deformidade-d9cd796b",
+      "placa-e-parafusos-e66913ec",
+      "pos-operatorio-e-complicacoes-dd6dde3a"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "4b80105d12acdca81b9cc3a9fa4edbb31bebee9c310ffb49170129ab08a84020"
+    }
+   ],
+   "questaoSha256": "37513e3a67ead05e4950d300185a22fa3c9d7e305110a8b509b3604df4802579",
+   "comentarioSha256": "676d7d0fb4dc129993a87ce0ff9fc67f3b08e6cee19a42845429e50f603b0633"
+  }
  },
  "trauma-0701": {
   "incorretas": {
@@ -12198,12 +12422,12 @@
   "conferido": false
  },
  "trauma-0898": {
-  "conceito": "Para introduzir a haste retrógrada, o joelho é apoiado fletido em cerca de **35 a 50 graus**. A flexão posiciona o acesso distal, e um coxim sob o foco ajuda a contrapor a queda posterior do fragmento distal.\n\nA posição é parte da técnica, mas não define sozinha o ponto de entrada. No perfil, ele fica à frente da origem do ligamento cruzado posterior, no encontro da tróclea com a linha de Blumensaat; no AP, deve acompanhar o canal. Entrar fora desse trajeto pode lesar cartilagem ou LCP (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”, técnica).\n\nNão é necessário buscar flexão máxima. O intervalo oferecido deve corresponder ao da técnica descrita e ser conferido junto das imagens. O resumo da Biblioteca reúne posição e marcos radiográficos.",
-  "correta": "**C: 35 a 50 graus.** É a faixa recomendada no resumo para apoiar o joelho e permitir a entrada. O capítulo também cita estudo com 34 a 52 graus, próximo dessa referência técnica.",
+  "conceito": "Na haste retrógrada, o cirurgião precisa alcançar o canal do fêmur através do intercôndilo sem perder o alinhamento da fratura. O posicionamento descrito é **joelho fletido entre 35 e 50 graus, apoiado sobre um triângulo**. A alternativa C corresponde a esse intervalo.\n\nA flexão é uma condição de acesso, mas não define sozinha o ponto de entrada. No perfil, ele fica à frente da origem do ligamento cruzado posterior, no encontro entre a tróclea e a linha de Blumensaat; no AP, deve acompanhar o canal. Uma perna colocada no ângulo correto ainda pode receber um fio em posição errada se essas duas projeções não forem conferidas (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”).\n\nHá também um problema no foco: o fragmento distal tende a cair para trás. O capítulo orienta usar um coxim sob a fratura, além do apoio do joelho. Isso separa duas tarefas que parecem a mesma: o triângulo posiciona o membro para a entrada e o apoio do foco ajuda a conservar a redução. Introduzir uma haste através de um foco mal alinhado não corrige necessariamente esse desvio.\n\nA recomendação de 35 a 50 graus resume um estudo que encontrou 34 a 52 graus; não deve ser convertida em proibição absoluta de qualquer grau fora da faixa. O importante para a pergunta é reconhecer a **flexão moderada da técnica descrita**, sem substituir a medida por extensão quase completa ou flexão muito maior. O resumo da Biblioteca reúne o posicionamento, os marcos radiográficos e os cuidados com cartilagem e ligamento no mesmo trecho.",
+  "correta": "**C: 35 a 50 graus.** É a faixa recomendada, com o joelho apoiado. Ela deve vir acompanhada de confirmação do ponto no AP e no perfil e de manutenção da redução.\n\nAcertar o ângulo cria a condição para a técnica; não dispensa localizar o canal nem proteger as estruturas articulares.",
   "incorretas": {
-   "A": "**Dez a vinte graus deixa o joelho menos fletido que a faixa descrita.** A pergunta não pede uma posição quase estendida. O acesso deve ser planejado no intervalo de 35 a 50 graus e confirmado radiograficamente.",
-   "B": "**Vinte e cinco a trinta também fica abaixo da recomendação apresentada.** Proximidade numérica não equivale ao posicionamento específico da técnica. O controle do fragmento distal e do ponto de entrada continua necessário.",
-   "D": "**Sessenta a oitenta excede a faixa proposta.** Maior flexão não é automaticamente melhor acesso nem a recomendação do capítulo. A referência técnica é moderada, sem exigir essa amplitude."
+   "A": "**10 a 20 graus deixa o joelho muito mais próximo da extensão que o posicionamento descrito.** Não corresponde à flexão moderada recomendada para a entrada retrógrada.\n\nNão é correto presumir que a menor flexão seja a mais segura apenas por mover menos a articulação; a segurança depende também do acesso e do trajeto do instrumental.",
+   "B": "**25 a 30 graus se aproxima da faixa, mas ainda não é a recomendação apresentada.** A fonte situa a técnica em 35 a 50 graus, com valores experimentais de 34 a 52.\n\nA diferença é de posicionamento, não de indicação do implante. Não se deve transformar essa opção em uma contraindicação geral da haste.",
+   "D": "**60 a 80 graus ultrapassa a flexão usada nessa técnica.** Mais flexão não significa automaticamente melhor entrada ou melhor alinhamento com o canal.\n\nO alvo não é abrir o joelho ao máximo, mas obter o acesso descrito e confirmar radiograficamente a trajetória, mantendo o foco reduzido."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste retrógrada."
@@ -12224,16 +12448,17 @@
       "Haste retrógrada"
      ],
      "blocos": [
+      "haste-retrograda-c19a5fde",
       "haste-retrograda-8469a2aa",
       "haste-retrograda-d0c23ae9",
-      "haste-retrograda-cc1ee60b"
+      "haste-retrograda-c9d138a5"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "7bb5757746c1cf78b2e872db6435ed900f078344f769ec3fe47b05a0616c916a"
+     "trechosSha256": "32851338d49bb69b6580aa2c1dc9c6b2f27318b054c94f4400fca9c0e0975c81"
     }
    ],
    "questaoSha256": "d5c83be595116d24fc54157e6cfde5061452c6bc7b3552229478c399ff5f1fb0",
-   "comentarioSha256": "d586e490e17f0dffa131871f1c0ecbff329bb33b1007c7bb940a079482dc222a"
+   "comentarioSha256": "374cfdd2b9374ef994844717f3d38831b77d9c5fc9b0d5fe22f9a4a598b930bf"
   }
  },
  "trauma-0899": {
@@ -12516,15 +12741,46 @@
   "conferido": false
  },
  "trauma-0913": {
+  "conceito": "Na fratura supracondiliana, a lesão ligamentar concomitante mais comum é a do **ligamento cruzado anterior**, alternativa C. “Mais comum” compara os ligamentos lesados; não significa que a associação ligamentar seja comum em toda fratura distal.\n\nO resumo descreve a associação geral como incomum e pouco diagnosticada antes da cirurgia, porque a dor limita a avaliação. Nas fraturas com cominuição articular, o LCA pode permanecer preso a um fragmento osteocondral. Se esse fragmento estiver presente, deve ser reparado na fixação sempre que possível (Rockwood, 10ª ed., cap. 58, “Lesões associadas”).\n\nO tratamento muda quando não há um fragmento reparável e a ruptura está no meio do ligamento. O capítulo prefere começar com tratamento não operatório, movimento protegido e reabilitação. Fazer túneis para reconstrução enquanto há uma fratura no intercôndilo pode cominuir ou enfraquecer a região e conflitar com o implante. A reconstrução fica para depois da consolidação se persistir instabilidade.\n\nAssim, o aluno deve separar **estrutura mais atingida** de **procedimento obrigatório**. Reconhecer o LCA não determina automaticamente uma reconstrução na primeira cirurgia. A lesão óssea associada, a posição da ruptura e a estabilidade após a consolidação determinam caminhos diferentes.\n\nO resumo da Biblioteca permite conferir essa comparação no mesmo trecho. Ela evita tanto esquecer uma lesão ligamentar diante da fratura quanto acrescentar uma reconstrução primária que não corresponde ao cenário descrito.",
+  "correta": "**C: cruzado anterior.** É o ligamento mais acometido entre as lesões concomitantes relatadas. Quando avulsiona com fragmento osteocondral, o reparo pode acompanhar a fixação; uma ruptura intrassubstancial tem outra estratégia.\n\nA frequência identifica o que procurar, mas não decide sozinha a técnica ou o momento de reconstrução.",
   "incorretas": {
-   "A": "**Menos frequente.** O colateral lateral se lesa por varo e é menos associado.",
-   "B": "**Menos frequente.** O colateral medial é menos comumente lesado nessa fratura.",
-   "D": "**Menos frequente.** O LCP é mais associado a traumas de painel e a fraturas da patela."
+   "A": "**O colateral lateral não é o ligamento predominante descrito.** O capítulo o situa na anatomia do epicôndilo lateral, mas aponta o LCA na comparação de lesões associadas.\n\nA proximidade anatômica com o côndilo não basta para estabelecer maior frequência de lesão.",
+   "B": "**O colateral medial também não lidera essa associação.** Sua origem no lado medial ajuda a localizá-lo no exame, porém a resposta epidemiológica do capítulo é o cruzado anterior.\n\nNão há motivo para escolher o lado medial apenas porque o varo é uma deformidade habitual da fratura.",
+   "D": "**O cruzado posterior não é o mais acometido nessa comparação.** Sua inserção aparece como referência a preservar na entrada da haste retrógrada, situação técnica diferente da lesão concomitante produzida pelo trauma.\n\nConfundir estrutura próxima do portal com estrutura mais lesada na fratura troca dois contextos."
   },
-  "conceito": "**A fratura supracondiliana do fêmur.** É a fratura do **fêmur distal** (AO 33), com dois perfis: **idosos** osteoporóticos após quedas (inclusive **periprotéticas**, acima de próteses de joelho) e **jovens** com trauma de **alta energia**, frequentemente com extensão **intra-articular** (fratura de **Hoffa**, no plano coronal, que deve ser procurada na tomografia) e fraturas expostas.\n\n**As lesões ligamentares associadas.** São **incomuns** em comparação com as fraturas do planalto tibial, mas ocorrem, sobretudo nas de alta energia. A lesão ligamentar concomitante mais comum descrita é a do **ligamento cruzado anterior**: a energia axial e rotacional que fratura o fêmur distal se transmite ao pivô central, e o LCA pode se romper ou sofrer avulsão. Lesões dos meniscos e da cartilagem também acompanham as fraturas intra-articulares.\n\n**Por que isso importa.** A lesão ligamentar pode passar **despercebida**, pois o joelho não pode ser testado com a fratura aguda. Deve ser avaliada **após a fixação**, sob anestesia, e com **ressonância** quando necessário. O tratamento do ligamento geralmente é **tardio**, depois da consolidação, se houver instabilidade sintomática.\n\n**O tratamento da fratura.** **Redução anatômica** da superfície articular e fixação com **placa bloqueada lateral** (via lateral ou parapatelar lateral para as articulares), às vezes **dupla placa** (lateral e medial) nas cominuições mediais, ou **haste retrógrada** nas extra-articulares e em algumas intra-articulares simples. Em idosos, a combinação **haste e placa** (nail-plate) permite carga imediata. Complicações: consolidação viciosa (valgo, rotação), pseudartrose, rigidez e artrose.\n\n**Na prova:** lesão ligamentar concomitante mais comum na fratura supracondiliana do fêmur = **LCA** (associação incomum no geral); avaliar após a fixação.",
-  "correta": "**Cruzado anterior.** Quando há lesão ligamentar associada, o LCA é o mais frequentemente acometido, pela energia axial e rotacional transmitida ao pivô central.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Lesões associadas; Anatomia aplicada à fixação; Haste retrógrada."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Lesões associadas",
+      "Anatomia aplicada à fixação",
+      "Haste retrógrada"
+     ],
+     "blocos": [
+      "lesoes-associadas-8119d037",
+      "lesoes-associadas-73aee957",
+      "anatomia-aplicada-a-fixacao-d4331410",
+      "haste-retrograda-b85e44ce"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "ff21bbf8c340c94053781cfb42f2c8407abaea0b2b88394573491847707ddb0c"
+    }
+   ],
+   "questaoSha256": "095f4b029c931f005f3b99aa30843de606059a7a48378ef41a245fd14ceecfbe",
+   "comentarioSha256": "98436e629dc76783e58c1bb4c68d044fadd9091dfdabc9f58cd573ab6788fbb9"
+  }
  },
  "trauma-0914": {
   "incorretas": {
@@ -13749,18 +14005,44 @@
   "conferido": false
  },
  "trauma-0986": {
+  "conceito": "O membro está isquêmico e a circulação tem prioridade, mas reparar definitivamente um vaso com a fratura ainda desviada cria outro perigo: a redução posterior pode romper a anastomose. Entre as opções, a sequência é **fixação externa rápida e reparo vascular**, C.\n\nO fixador não entra para atrasar uma urgência vascular com uma cirurgia ortopédica longa. Ele restaura rapidamente o comprimento e oferece uma estrutura mais estável para o reparo. O enxerto ou a sutura deixam de ser planejados sobre um membro encurtado que depois será alongado durante a redução (resumo do Rockwood, 10ª ed., cap. 58, “Lesões associadas”).\n\n**Prioridade fisiológica não é sinônimo de reparo definitivo como primeiro ato técnico.** Quando o tempo ou a gravidade da isquemia exigem restabelecer fluxo imediatamente, o capítulo também admite shunt temporário, seguido da estabilização e do reparo definitivo. O shunt é uma ponte para perfusão, e não uma anastomose definitiva que deva suportar todas as manipulações posteriores.\n\nA escolha deve ser coordenada entre as equipes. O ponto decisivo da pergunta é evitar duas falhas: prolongar a falta de circulação para realizar uma fixação interna definitiva e reparar o vaso com a fratura desviada para só então restaurar o comprimento. Uma fixação externa rápida concilia a necessidade mecânica com a urgência vascular.\n\nApós reperfusão, o resumo indica fasciotomia quando a isquemia ultrapassa seis horas ou os compartimentos ficam tensos. Isso não deve virar uma ordem de fasciotomia para qualquer reparo, independentemente do cenário. Na Biblioteca, leia a sequência junto dos critérios de avaliação: a meta é um membro perfundido, estável e funcional.",
+  "correta": "**C: fixação externa e reparo vascular.** A estabilização rápida restaura comprimento antes da anastomose definitiva, reduzindo o risco de rompê-la com a redução posterior.\n\nA alternativa não exclui shunt temporário para abreviar isquemia; distingue a ponte de perfusão do reparo vascular definitivo.",
   "incorretas": {
-   "A": "Reparar antes de estabilizar arrisca romper a anastomose nas manobras de fixação.",
-   "B": "Reparar e depois fixar internamente arrisca a anastomose e atrasa a estabilidade.",
-   "D": "A fixação interna demora e atrasa a revascularização."
+   "A": "**Deixa a anastomose pronta antes de corrigir a fratura.** Ao recuperar comprimento e alinhamento depois, o reparo pode ser tensionado e romper.\n\nA circulação é prioritária, mas isso não obriga a fazer primeiro uma anastomose definitiva sobre um membro ainda desviado.",
+   "B": "**Mantém o reparo vulnerável e adia a estabilização para uma síntese interna.** A sequência não resolve o risco de manipular o fêmur depois de suturar o vaso.\n\nSe é necessário perfundir antes da estabilização, o capítulo oferece o shunt como solução temporária; não recomenda deixar o reparo definitivo exposto à redução seguinte.",
+   "D": "**Escolhe uma reconstrução ortopédica definitiva antes da revascularização num cenário urgente.** O objetivo descrito é uma estabilização externa rápida, capaz de dar comprimento sem impor o tempo da síntese interna completa.\n\nNão é uma proibição universal de fixação interna em toda lesão vascular; é a estratégia apropriada à isquemia grave ou prolongada do enunciado."
   },
-  "conceito": "Na **fratura supracondilar do fêmur** com **lesão arterial** (artéria femoral superficial no hiato ou artéria poplítea), o tempo de isquemia decide o membro: a **necrose muscular** começa a partir de 4 a 6 horas.\n\n**O dilema**: o reparo vascular exige um membro **estável e no comprimento certo**; se a fratura for fixada depois, as manobras podem **romper** a anastomose. Mas fixar antes atrasa a revascularização.\n\n**A sequência indicada nessa situação**: **fixação externa rápida** primeiro, depois o **reparo vascular**.\n\n**Por que fixador externo**: ele é colocado em **minutos**, restaura o **comprimento** e o alinhamento e deixa o campo livre para o cirurgião vascular. A fixação interna definitiva, mais demorada, fica para depois.\n\n**Quando o tempo de isquemia já é longo**: muitos centros colocam primeiro um **shunt vascular temporário** (desvio), restabelecendo o fluxo em minutos; depois fixam (externa ou internamente) e por fim fazem o reparo definitivo.\n\n**Depois da revascularização**: **fasciotomia** profilática, pela síndrome de reperfusão.\n\n**Na prova**: a sequência correta é **fixação externa e reparo vascular**.",
-  "correta": "O fixador externo rápido devolve comprimento e estabilidade, e o reparo vascular é feito sem risco de romper depois.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 58"
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Lesões associadas; Implantes combinados, fixador externo e prótese."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Lesões associadas",
+      "Implantes combinados, fixador externo e prótese"
+     ],
+     "blocos": [
+      "lesoes-associadas-410ccdbe",
+      "lesoes-associadas-a0f6f917",
+      "implantes-combinados-fixador-externo-e-protese-331130c5"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "23c0f6e35efd18fe12deade56cc927ebc28fd46dc6b059f902e38c7639b41b78"
+    }
+   ],
+   "questaoSha256": "9ce664bc104a8bcf5b1aef6081e0a3113b1f3fdf1ba27cf1a91e8c27cc2adc4c",
+   "comentarioSha256": "f3308001ffbaa7cb25b29ac04e44e1553279e385ea0897a0cebab5492cc1fb08"
+  }
  },
  "trauma-0987": {
   "incorretas": {
@@ -14053,16 +14335,47 @@
   "conferido": false
  },
  "trauma-1004": {
+  "conceito": "Após a queda de grande altura, a fratura supracondiliana multifragmentar exige procurar mais que a quebra principal. Se houver cominuição articular, o **ligamento cruzado anterior (LCA) pode estar ligado a um fragmento osteocondral**, e esse fragmento deve ser reparado durante a fixação sempre que possível. Essa é a afirmação correta, E.\n\nOsteocondral significa que o fragmento inclui osso e cartilagem. Não é o mesmo problema de uma ruptura no meio do ligamento: reparar o fragmento participa da reconstrução da região articular, enquanto reconstruir um ligamento com túneis durante a fase da fratura pode enfraquecer o intercôndilo e conflitar com o material de síntese. O capítulo recomenda tratamento inicial não operatório para a ruptura intrassubstancial e reconstrução posterior se a instabilidade persistir (resumo do Rockwood, 10ª ed., cap. 58, “Lesões associadas”).\n\nTambém é necessário conferir a circulação. A poplítea tem pouca folga entre o **hiato do adutor magno, proximal**, e o **arco do sóleo, distal**. Pode sofrer contusão, laceração por fragmento ou estiramento com lesão da íntima. Mesmo assim, a lesão vascular é menos comum na supracondiliana que na luxação do joelho e na tíbia proximal desviada; alto risco clínico de uma complicação não é sinônimo de alta frequência.\n\nQuando existe lesão vascular, a circulação tem prioridade, mas o reparo definitivo precisa ser protegido. Restaurar comprimento com fixação externa rápida, admitindo shunt temporário quando necessário, evita suturar o vaso sobre uma fratura desviada e depois romper a anastomose ao reduzi-la.\n\nA idade do paciente não permite presumir trauma de baixa energia: o caso descreve uma queda de altura. Também não permite presumir, só pela palavra “multifragmentar”, que toda a superfície articular esteja cominuída. A alternativa E é condicional: **nas fraturas com cominuição articular**, essa avulsão pode ocorrer. No resumo da Biblioteca, compare o fragmento reparável, a ruptura no ligamento e os cuidados vasculares.",
+  "correta": "**E: fragmento osteocondral ligado ao LCA, reparável na fixação sempre que possível.** A conduta corresponde à lesão por avulsão descrita no capítulo.\n\nNão significa reconstruir imediatamente todo LCA lesado nem afirmar que o paciente necessariamente apresenta esse fragmento. A alternativa descreve uma possibilidade e sua conduta apropriada.",
   "incorretas": {
-   "A": "**Incomuns.** As lesões vasculares nas fraturas supracondilianas são pouco frequentes, embora graves.",
-   "B": "**Ligamento errado.** O LCA, e não o LCP, é o mais comumente comprometido nessas fraturas.",
-   "C": "**Invertido.** A poplítea fica presa proximalmente no hiato dos adutores e distalmente no arco do sóleo.",
-   "D": "**Sequência arriscada.** Com lesão vascular, usa-se shunt temporário e estabilização da fratura antes do reparo definitivo, para proteger a anastomose."
+   "A": "**Transforma uma associação menos comum em comum.** O capítulo destaca que a lesão poplítea ocorre menos na supracondiliana que na luxação e na tíbia proximal desviada.\n\nA necessidade de examinar vasos permanece porque a consequência pode ser grave; ela não depende de chamar a associação de frequente.",
+   "B": "**Troca o ligamento mais atingido.** O resumo aponta o LCA, não o LCP, e descreve justamente sua associação com um fragmento osteocondral na cominuição articular.\n\nNão se deve escolher o cruzado posterior apenas pela localização posterior do feixe vascular ou por mecanismos de outro trauma do joelho.",
+   "C": "**Inverte os pontos de fixação do feixe.** O hiato do adutor magno está proximal e o arco do sóleo, distal.\n\nO aprisionamento em dois pontos é uma ideia correta; a orientação anatômica invertida torna a afirmação falsa e prejudica a compreensão do estiramento vascular.",
+   "D": "**Propõe o reparo sobre a fratura desviada, exatamente a situação a evitar.** A recuperação posterior do comprimento pode tensionar e romper a anastomose.\n\nPriorizar perfusão pode exigir shunt temporário; o reparo definitivo deve ser planejado com a estabilização e o comprimento já considerados."
   },
-  "conceito": "**A fratura supracondiliana de alta energia.** Numa queda de altura, a fratura do **fêmur distal** multifragmentar com **cominuição articular** (AO 33-C) vem com lesões associadas que precisam ser procuradas: fratura de **Hoffa** (coronal do côndilo), lesões **ligamentares**, lesões **vasculares** e fraturas em outros locais.\n\n**O LCA e o fragmento osteocondral.** Nas fraturas com **cominuição articular**, a inserção femoral do **LCA** (na face medial do côndilo lateral, na incisura) pode sair **junto com um fragmento** osteocondral. Esse fragmento deve ser **identificado** e, **sempre que possível**, **reparado** na mesma cirurgia da fixação, restaurando a estabilidade e a superfície articular. Na fratura do fêmur distal, o LCA é o ligamento mais frequentemente comprometido, e não o LCP.\n\n**As lesões vasculares.** São **incomuns** (poucos por cento), mas graves. A **artéria poplítea** está presa **proximalmente** no **hiato dos adutores** e **distalmente** no **arco do sóleo**, e por isso é vulnerável ao estiramento e à laceração pelos fragmentos. Na lesão vascular associada, a sequência habitual é: **shunt** vascular temporário se a isquemia for longa, **estabilização** rápida da fratura (fixador externo transarticular ou fixação definitiva rápida) para dar comprimento e proteger o reparo, e então o **reparo vascular definitivo**, com **fasciotomia**. Reparar o vaso com a fratura **desviada e instável** coloca o reparo em risco quando a fratura for manipulada.\n\n**O tratamento da fratura.** Redução **anatômica** da superfície articular (via parapatelar lateral ou artrotomia), fixação com **placa bloqueada** lateral ou **dupla placa**, restaurando o eixo, o comprimento e a rotação, e mobilização precoce.\n\n**Na prova:** fratura supracondiliana com cominuição articular: o **LCA** pode sair com um **fragmento osteocondral**, que deve ser **reparado** na fixação; a poplítea é fixa no hiato dos adutores (proximal) e no arco do sóleo (distal).",
-  "correta": "**O LCA pode estar destacado com um fragmento osteocondral, a ser reparado na fixação.** Nas fraturas com cominuição articular, a inserção do LCA pode sair com um fragmento, e repará-lo no mesmo tempo restaura a estabilidade e a superfície.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Lesões associadas; Mecanismo e deformidade."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Lesões associadas",
+      "Mecanismo e deformidade"
+     ],
+     "blocos": [
+      "lesoes-associadas-8119d037",
+      "lesoes-associadas-73aee957",
+      "lesoes-associadas-32585c37",
+      "lesoes-associadas-410ccdbe",
+      "mecanismo-e-deformidade-52db38fb"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "6c24910e28f4bfe726a04e956b1b2f6943fc7f604bc8d0fce8dde2419abc7d48"
+    }
+   ],
+   "questaoSha256": "782350396821142c831b3887679b40f4da34cc9e6bc03d0bb158947ca89f4862",
+   "comentarioSha256": "c4289b062fce98d02ef2868d29173689e8f2085067b023b1765181e5a7e8d93f"
+  }
  },
  "trauma-1005": {
   "incorretas": {
@@ -14777,12 +15090,12 @@
   "conferido": false
  },
  "trauma-1053": {
-  "conceito": "A fratura da diáfise do fêmur deve levar a uma procura ativa por outras lesões. Na revisão de 26.357 fraturas apresentada pelo capítulo, os ossos mais associados foram **tíbia e fíbula, 20,5%**, seguidos de **costelas e esterno, 19,1%**.\n\nO resultado não autoriza concentrar todo o exame na mesma perna. O tórax aparece quase tão frequentemente quanto os ossos da perna nessa comparação; o pulmão também lidera a categoria de órgãos internos, mas órgão e osso são classificações diferentes. O restante do fêmur foi a terceira categoria óssea, não a primeira (resumo do Rockwood, 10ª ed., cap. 57, “O que vem junto”).\n\nAs frequências pertencem à revisão citada e não substituem a avaliação completa do politraumatizado. Leia a tabela no resumo da Biblioteca para comparar as categorias sem misturar lesão de órgão com fratura associada.",
-  "correta": "**B: tíbia/fíbula, seguidas de esterno/costela.** É a ordem das categorias ósseas na revisão. O segundo lugar torácico explica por que a busca não pode terminar no membro inferior.",
+  "conceito": "A fratura diafisária do fêmur deve levar à procura de lesões em outras regiões, e não encerrar a avaliação do trauma. Na revisão citada, o primeiro grupo de fraturas associadas foi **tíbia/fíbula (20,5%)**, seguido de **costelas/esterno (19,1%)**. A sequência corresponde à alternativa B.\n\nO dado vem de uma revisão de **26.357 fraturas do fêmur**, apresentada no resumo do Rockwood, 10ª edição, capítulo 57, em “Epidemiologia, mecanismo e lesões associadas”. É uma frequência observada nessa população, não uma regra pela qual todo paciente com fêmur fraturado terá uma dessas lesões. Também não determina qual lesão deve ser atendida primeiro: prioridade clínica e frequência são conceitos diferentes.\n\nA tabela separa lesões ósseas de lesões de órgãos. **Pulmão** lidera entre os órgãos internos; **tíbia e fíbula**, entre os ossos. Costelas e esterno são o segundo grupo ósseo, mesmo pertencendo ao tórax. Trocar a segunda fratura por tornozelo porque ele fica na mesma extremidade perde a comparação que foi efetivamente observada.\n\nA associação de fêmur e tíbia do mesmo lado é importante no planejamento do membro, mas a investigação não termina na perna. O capítulo também descreve fraturas do colo, do fêmur distal, da pelve e do acetábulo, além de lesões ligamentares do joelho. Ser menos frequente nessa lista não torna uma lesão dispensável de procurar. O resumo da Biblioteca permite conferir o ranking e, em seguida, revisar o colo e o joelho, duas associações que podem escapar diante da deformidade diafisária.",
+  "correta": "**B: tíbia e fíbula, seguidas de esterno e costela.** Reproduz os dois primeiros grupos ósseos da revisão. O tórax permanece parte da avaliação, embora a lesão mais visível esteja na coxa.\n\nOs percentuais ajudam a ordenar as associações da pergunta; não substituem a avaliação individual nem estabelecem prioridade de atendimento.",
   "incorretas": {
-   "A": "**Reconhece a primeira associação e inventa o segundo lugar para o tornozelo.** O segundo grupo apresentado é costelas/esterno. Uma lesão possível no tornozelo não demonstra que seja a próxima mais frequente.",
-   "C": "**Troca os dois primeiros grupos.** Fêmur distal e tornozelo não reproduzem a ordem da revisão. Tíbia/fíbula e costelas/esterno são as categorias que lideram os dados apresentados.",
-   "D": "**Acerta o grupo torácico em segundo, mas não o primeiro.** A revisão coloca tíbia e fíbula à frente. Fêmur fora da diáfise é outra categoria, sem justificar escolher especificamente distal como a associação principal."
+   "A": "**Acerta o grupo líder e troca o segundo.** Tíbia/fíbula são os ossos mais associados, mas o tornozelo não ocupa a posição seguinte na tabela apresentada.\n\nÉ uma alternativa plausível pela continuidade anatômica do membro; o ranking, porém, inclui o tórax e coloca costelas/esterno em segundo lugar.",
+   "C": "**Fêmur distal pode estar associado e precisa ser investigado, mas não lidera a revisão.** O grupo de fraturas femorais fora da diáfise aparece depois dos dois primeiros, e não deve ser reduzido apenas ao segmento distal.\n\nAlém disso, tornozelo não é o segundo grupo da lista. A opção troca os dois componentes da sequência.",
+   "D": "**Mantém corretamente costelas/esterno em segundo, mas muda o primeiro para fêmur distal.** O exame do joelho e do segmento distal continua necessário; isso não faz deles o grupo ósseo mais frequente.\n\nA resposta exige conservar os dois elementos e sua ordem: tíbia/fíbula antes do grupo torácico."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Epidemiologia, mecanismo e lesões associadas."
@@ -14804,14 +15117,16 @@
      ],
      "blocos": [
       "epidemiologia-mecanismo-e-lesoes-associadas-c3bbb661",
-      "epidemiologia-mecanismo-e-lesoes-associadas-49576002"
+      "epidemiologia-mecanismo-e-lesoes-associadas-49576002",
+      "epidemiologia-mecanismo-e-lesoes-associadas-b22e4239",
+      "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "333b116fbb5b18f88855e1d613940321d8e5c3894d9f7fdb9b9d598bd1ba3d8d"
+     "trechosSha256": "5e65130a38ff26452eaa36a4c7a09b74819b891c68a3cdf002f875d4d8d1cb38"
     }
    ],
    "questaoSha256": "e80725bc1d2f0f8c4682cb584d6c4199266b58ef31a9e6d1951573c944f0dd10",
-   "comentarioSha256": "d712302c877754d431581441c6822d98ad0ab6ab914b894a943543d24a4c7c3f"
+   "comentarioSha256": "6d0d013d8434358419619631c9cc0a8fab17c002cc8f97d8be2111acc4eba55d"
   }
  },
  "trauma-1054": {
@@ -15341,18 +15656,46 @@
   "conferido": false
  },
  "trauma-1088": {
+  "conceito": "A sigla **33-B3** identifica uma fratura do fêmur distal parcialmente articular no **plano coronal**, a fratura de **Hoffa**. O fragmento posterior do côndilo precisa de redução anatômica e fixação própria; entre as opções, isso corresponde aos **parafusos de compressão**, C.\n\nNa classificação AO/OTA, 33 localiza o fêmur distal; B significa que parte da articulação está separada, enquanto outra parte conserva continuidade com a diáfise. O grupo B3 descreve o traço frontal ou coronal. A direção do traço é o que determina como alcançar e comprimir esse fragmento, e não apenas a presença de osso suficiente para colocar uma placa lateral (resumo do Rockwood, 10ª ed., cap. 58, “Classificação AO/OTA e Hoffa”).\n\nA radiografia pode deixar a Hoffa oculta; a tomografia mostra melhor o traço e é destacada na investigação pré-operatória. O capítulo relata associação de fraturas coronais a fraturas intercondilianas e lembra que deixar uma Hoffa despercebida é uma armadilha técnica tanto da placa quanto da haste. Não se deve esperar que o tratamento da fratura maior capture automaticamente o fragmento posterior.\n\nA técnica descrita utiliza **dois ou mais parafusos de tração de 2,7 ou 3,5 mm, ou parafusos de compressão sem cabeça, de anterior para posterior**, com a fixação embutida abaixo da cartilagem anterior. Uma espícula não articular posterior pode ajudar a conferir redução e apoiar uma pequena placa antideslizante.\n\nIsso esclarece o papel da placa: ela pode ser um complemento de suporte em situações apropriadas, mas não substitui por si a compressão específica do traço coronal. A haste, por sua vez, trata o componente longitudinal quando indicado e não fixa sozinha um côndilo isolado. No resumo da Biblioteca, compare B1/B2 com B3 e leia a tática da Hoffa; o plano da fratura deve orientar a fixação.",
+  "correta": "**C: parafusos de compressão.** São a fixação específica do fragmento coronal, após redução anatômica. O capítulo descreve passagem anterior para posterior e parafusos embutidos para respeitar a superfície articular.\n\nPode haver suporte complementar, mas a escolha precisa controlar o fragmento posterior e o cisalhamento, não apenas estabilizar a metáfise.",
   "incorretas": {
-   "A": "Os parafusos da placa lateral ficam paralelos ao traço coronal e não o comprimem.",
-   "B": "A placa lâmina e o DCS também não comprimem o traço coronal.",
-   "D": "A haste intramedular não fixa um côndilo isolado."
+   "A": "**Uma placa bloqueada lateral, isoladamente, não descreve a fixação específica da Hoffa.** A tabela separa esse traço coronal e recomenda parafusos embutidos, podendo associar pequena placa de suporte.\n\nIsso não significa que toda placa seja proibida. O erro é tomar uma montagem lateral genérica como solução suficiente para o fragmento posterior.",
+   "B": "**Placa lâmina e DCS pertencem às opções de fixação do segmento distal, mas não substituem a captura específica do fragmento coronal.** O capítulo não os indica como tratamento preconizado da 33B3.\n\nUm implante adequado para conectar o bloco distal à diáfise pode deixar a Hoffa sem compressão e controle próprios.",
+   "D": "**A haste não fixa um côndilo isolado.** Ela pode ter papel na diáfise ou em padrões distais apropriados, após reconstrução articular quando necessária, mas não resolve sozinha o fragmento B3.\n\nA posição central no canal não garante que uma porção posterior da superfície articular tenha sido reduzida ou estabilizada."
   },
-  "conceito": "A fratura **AO 33-B3** do fêmur distal é a fratura **articular parcial** no **plano frontal** (coronal): a **fratura de Hoffa**. Um fragmento **posterior** do côndilo (mais comum o lateral) se separa, com o traço paralelo à diáfise.\n\n**Por que é traiçoeira**: na radiografia em AP, o traço coronal **não aparece**; só o perfil ou a **TC** mostram. Ela também acompanha fraturas supracondilianas de alta energia (33-C), e pode passar despercebida.\n\n**O tratamento preconizado**: redução anatômica e fixação com **parafusos de compressão** (de tração), passados de **anterior para posterior** (ou de posterior para anterior), **perpendiculares** ao traço coronal, muitas vezes sem cabeça para ficarem embutidos na cartilagem. Em fragmentos pequenos ou cominutos, pode-se acrescentar uma placa de suporte posterior.\n\n**Por que não os outros implantes**:\n\n**placa bloqueada lateral**, **placa lâmina** ou **DCS**: os parafusos ficam **paralelos** ao traço coronal e não o comprimem;\n\n**haste intramedular**: não fixa um côndilo isolado.\n\n**Na prova**: na fratura 33-B3 (Hoffa), preconizam-se **parafusos de compressão**.",
-  "correta": "Os parafusos de compressão perpendiculares ao traço coronal comprimem o fragmento posterior do côndilo.",
   "referencias": [
-   "Rockwood and Green’s fractures in Adults, 7th Ed., p. 1734 (referência indicada na prova TARO 2013, questão 13)"
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 58 · Distal Femur Fractures. Seções: Classificação AO/OTA e HOFFA; Exame e imagem."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Classificação AO/OTA e HOFFA",
+      "Exame e imagem"
+     ],
+     "blocos": [
+      "classificacao-ao-ota-e-hoffa-349ae23d",
+      "classificacao-ao-ota-e-hoffa-072fbbe6",
+      "classificacao-ao-ota-e-hoffa-2e6f5b99",
+      "classificacao-ao-ota-e-hoffa-05befb98",
+      "exame-e-imagem-6dc85d38"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "02ae65ac1e36cc647634051ccede26d1f766939bfe9610d74d4adfd8a5380989"
+    }
+   ],
+   "questaoSha256": "8bd16ddb61cab293183bdb6cdc35d4957622df12814ce1ee80981c56b3715191",
+   "comentarioSha256": "11d6475c286b5dad556ce6bf80068d92cb3905738f0609904673a15cf53be0b8"
+  }
  },
  "trauma-1089": {
   "incorretas": {
@@ -15508,12 +15851,12 @@
   "conferido": false
  },
  "trauma-1096": {
-  "conceito": "A diáfise quebrada pode impedir um exame confiável do joelho, mas não o torna ileso. Na série de 40 pacientes com exame e artroscopia citada pelo resumo, a lesão ligamentar mais frequente foi a **parcial do ligamento cruzado anterior, o LCA**, em 48%.\n\nAs demais lesões cruzadas foram menos frequentes: LCA completo em 5%, LCP parcial em 5% e LCP completo em 2,5%. Esses percentuais descrevem uma série, não uma regra universal para todo mecanismo. O impacto do joelho no painel pode lembrar o LCP, mas essa associação mecânica não substitui a frequência observada na população perguntada (resumo do Rockwood, 10ª ed., cap. 57, “O joelho”).\n\nO exame deve ser feito na sala depois de estabilizar o fêmur, quando a instabilidade diafisária interfere menos. A procura por lesão ligamentar faz parte do atendimento, mesmo quando a radiografia mostra uma fratura muito evidente. Leia essa sequência no resumo da Biblioteca.",
-  "correta": "**B: lesão parcial do LCA.** Foi a alteração ligamentar mais frequente na série apresentada. “Parcial” é decisivo: não basta reconhecer que o ligamento é o anterior.",
+  "conceito": "Uma diáfise estabilizada não significa que o joelho esteja íntegro. Entre as opções, a lesão associada mais observada foi a **parcial do ligamento cruzado anterior (LCA)**, alternativa B. O capítulo cita uma série de 40 pacientes avaliados por exame e artroscopia, com LCA parcial em 48%.\n\nA comparação precisa conservar a diferença entre **qual ligamento** e **quanto ele foi lesado**. Na mesma série, LCA completo apareceu em 5%, ligamento cruzado posterior (LCP) parcial em 5% e LCP completo em 2,5%. Não se deve agrupar todas as lesões do LCA e depois escolher “completa”, nem supor que o trauma de alta energia obrigatoriamente rompa o ligamento por inteiro (resumo do Rockwood, 10ª ed., cap. 57, “Epidemiologia, mecanismo e lesões associadas”).\n\nEsses resultados não são uma taxa universal aplicável a todo mecanismo. O resumo também relata lesões meniscais, com frequências diferentes em outra série, e informa que elas não tinham relação com a lesão ligamentar naquele grupo. Encontrar ou excluir uma lesão de cruzado, portanto, não encerra a avaliação das outras estruturas.\n\n**Quando examinar?** A instabilidade do fêmur limita o exame antes da fixação. O capítulo orienta examinar o joelho na sala cirúrgica, depois de estabilizar a diáfise, como parte do checklist da haste. Esse é o desdobramento útil da frequência: procurar a lesão no momento em que o exame pode ser mais confiável, em vez de aceitar a deformidade da coxa como explicação de todo o quadro.\n\nO resumo da Biblioteca apresenta as proporções e o momento de avaliação. O aprendizado não é apenas guardar LCA parcial; é lembrar que uma fratura longa e chamativa pode coexistir com lesão articular que continuará relevante após sua consolidação.",
+  "correta": "**B: LCA parcial.** Foi a lesão de cruzado mais frequente na série citada, com 48%. O termo “parcial” é parte essencial da resposta.\n\nO achado sustenta procurar lesões do joelho, mas a proporção de uma série não permite diagnosticar o ligamento de um paciente sem examiná-lo.",
   "incorretas": {
-   "A": "**Escolhe o ligamento certo e o grau errado.** A lesão completa do LCA apareceu em 5%, muito abaixo dos 48% de parcial na série. Não se deve presumir que trauma de alta energia produza sempre ruptura completa.",
-   "C": "**O mecanismo do painel não prova predominância do LCP completo.** Esse foi o menos frequente dos quatro padrões apresentados, 2,5%. A pergunta é epidemiológica, não apenas sobre qual ligamento pode ser lesionado num impacto específico.",
-   "D": "**A lesão parcial do LCP existe, mas não liderou a série.** Foi relatada em 5%, enquanto a parcial do LCA chegou a 48%. Parcialidade comum às duas alternativas não torna os ligamentos equivalentes."
+   "A": "**O ligamento é o correto, mas a extensão da lesão foi trocada.** LCA completo ocorreu em 5%, bem abaixo dos 48% de lesões parciais nessa série.\n\nA energia do trauma femoral não permite presumir ruptura completa do cruzado; são dimensões diferentes da lesão.",
+   "C": "**LCP completo foi o menos frequente dos quatro grupos apresentados, com 2,5%.** O mecanismo de impacto do joelho pode chamar a atenção para o LCP, mas não substitui a frequência medida nessa população.\n\nA alternativa exige duas escolhas específicas, posterior e completa, e ambas a afastam do grupo predominante.",
+   "D": "**LCP parcial ocorreu, mas em 5%, e não liderou as lesões de cruzado.** A palavra “parcial” coincide com a resposta, mas o ligamento foi trocado.\n\nNão basta preferir uma ruptura parcial à completa; é necessário conservar também a estrutura que predominou no estudo."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Epidemiologia, mecanismo e lesões associadas."
@@ -15541,7 +15884,7 @@
     }
    ],
    "questaoSha256": "233c821509f6ee983f88b3344345c49ae36f533db17acc2482c94bad3585729b",
-   "comentarioSha256": "498c7133b336be685784837c46f8679c7d8d88e5915be9b2a3f99a2999d67d93"
+   "comentarioSha256": "36d454a6716bbdbbdd5ec6aa8607d9f898b70ccffd582f873a3a4150b1d76fcb"
   }
  },
  "trauma-1097": {
@@ -29101,12 +29444,12 @@
   "conferido": false
  },
  "trauma-1659": {
-  "conceito": "Uma haste reta exige uma entrada alinhada ao canal. Na entrada piriforme, deslocar o ponto **para anterior** cria tensões circunferenciais no fêmur proximal e pode causar **fratura iatrogênica do colo**; deslocá-lo **para lateral** favorece **varo** e fratura da cortical lateral.\n\nO problema é a incompatibilidade entre o trajeto imposto à haste e a geometria do osso. A fossa trocantérica, frequentemente chamada piriforme, fica alinhada ao canal nas duas incidências. Não basta acertar apenas o AP: um ponto anterior no perfil pode parecer aceitável na outra imagem e ainda criar concentração de tensão (resumo do Rockwood, 10ª ed., cap. 57, “Piriforme ou trocantérica” e “Erros do ponto de entrada”).\n\nNão transfira automaticamente o mesmo raciocínio a qualquer haste trocantérica, que tem curvatura própria. O resumo da Biblioteca compara os erros conforme o desenho da haste e a via de entrada.\n\n**Por que esta questão foi criada.** Relaciona dois erros de posição a consequências diferentes, ensinando por que o ponto deve ser conferido em AP e perfil antes de introduzir a haste.",
-  "correta": "**C: fratura do colo e varo.** A ordem corresponde a anterior demais e lateral demais na haste reta de entrada piriforme. O trajeto errado pode produzir nova fratura ou deformidade de redução.",
+  "conceito": "Uma haste reta precisa entrar em linha com o canal femoral. Se a entrada piriforme ficar **anterior demais**, pode haver fratura iatrogênica do colo; se ficar **lateral demais**, a consequência descrita é **varo**, com risco de fratura da cortical lateral. Essa sequência é a alternativa C.\n\nA chamada fossa piriforme corresponde mais precisamente à fossa trocantérica, na face interna e posterior do trocanter. Seu alinhamento com o canal explica o desenho reto da haste. O ponto não é um detalhe separado do implante: o osso precisa receber um instrumento rígido cujo trajeto depende da entrada escolhida (resumo do Rockwood, 10ª ed., cap. 57, “Haste anterógrada: o ponto de entrada”).\n\nNa posição anterior, o resumo relata que apenas 6 mm à frente do centro podem produzir tensões circunferenciais e abertura do fêmur proximal, com fratura do colo. O problema não é apenas deixar um pequeno desvio residual: a introdução pode criar uma lesão nova numa região que estava íntegra. O risco também depende da discordância de curvatura e da rigidez da haste.\n\nNa entrada lateral, o eixo imposto à haste reta não acompanha o eixo planejado pelo canal, favorecendo varo e lesão da cortical lateral. O erro é descrito especialmente quando a dificuldade de alcançar a fossa leva a começar no trocanter. Um ponto aparentemente mais fácil de atingir não se torna apropriado para o desenho escolhido.\n\n**Entrada trocantérica planejada não é uma entrada piriforme errada.** Ela utiliza haste com curva lateral própria. O resumo ainda descreve complicações específicas das curvas e dos pontos trocantéricos; não se pode transferir automaticamente uma associação de erro de um implante para outro. Na Biblioteca, compare os desenhos e a tabela de erros: ponto de entrada, curvatura e canal devem formar um conjunto coerente.\n\n**Por que esta questão foi criada.** O TEOT 2024 cobrou lesões ligadas à entrada anterógrada; este simulado amplia o raciocínio para a consequência mecânica de deslocar o ponto de uma haste reta.",
+  "correta": "**C: fratura do colo femoral; varo.** Mantém a ordem dos dois erros: anterior e lateral. A primeira associação se relaciona à abertura do fêmur proximal; a segunda, à direção inadequada da haste reta e à cortical lateral.\n\nSão riscos da técnica descrita, não consequências obrigatórias em todo pequeno desvio nem um mapa aplicável a qualquer desenho de haste.",
   "incorretas": {
-   "A": "**Inverte as consequências dos erros.** O ponto anterior é associado à fratura proximal/colo; o lateral favorece varo. Os dois defeitos não se distinguem apenas pela gravidade, mas pelo plano em que o trajeto saiu do canal.",
-   "B": "**Não reproduz a consequência anterior e troca a relação lateral.** A fonte aponta fratura do colo para anterior e varo para lateral. Não descreve esse par como valgo seguido de fratura do colo.",
-   "D": "**Acerta a fratura do colo para anterior e erra o desvio do ponto lateral.** Na haste reta, lateralizar a entrada favorece varo, não valgo. O desenho do implante e o ponto de entrada precisam ser considerados juntos."
+   "A": "**Inverte as consequências dos pontos de entrada.** O risco destacado para o ponto anterior é fratura do colo, enquanto o lateral favorece varo.\n\nHá risco de fratura também no erro lateral, mas o resumo especifica a cortical lateral; isso não autoriza trocar a fratura do colo de posição na sequência.",
+   "B": "**Atribui valgo ao ponto anterior e fratura do colo ao lateral.** Não corresponde à tabela da haste reta piriforme.\n\nValgo aparece no resumo em outro cenário: ponto anterior de haste trocantérica com curva de 10 graus. Misturar esse desenho com a haste reta muda a associação mecânica.",
+   "D": "**Acerta a complicação do ponto anterior e erra o sentido do desvio lateral.** O segundo erro favorece varo, e não valgo.\n\nUma metade correta não valida o par: é preciso relacionar separadamente cada deslocamento de entrada à consequência descrita para esse implante."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste anterógrada: o ponto de entrada."
@@ -29136,7 +29479,7 @@
     }
    ],
    "questaoSha256": "eeb64c210da46559786f589b275897380a0a8baef3c6f1eb30a75dd17ecf269f",
-   "comentarioSha256": "f0d5052ca08d30481e35cf7ae75fa6b2fb18a842bccca590ed678d802a080d32"
+   "comentarioSha256": "d48e05ca99b2423001e73297db47c8509296eb8fbeecb3b17207a516c6f11b8f"
   }
  },
  "trauma-1660": {
@@ -29154,12 +29497,12 @@
   "conferido": false
  },
  "trauma-1661": {
-  "conceito": "O pino de tração na **tíbia proximal** é passado de **lateral para medial**, com atenção ao **nervo fibular comum**. A direção é o oposto da passagem transfemoral distal, e essa diferença anatômica é o centro da pergunta.\n\nNo fêmur distal, o par é medial para lateral/artéria femoral no hiato dos adutores. Na tíbia proximal, o pino bicortical fica na altura da tuberosidade e a força de tração passa pelo joelho. Se houver suspeita de lesão do joelho, o capítulo favorece a tração direta pelo fêmur, que não o distrai (resumo do Rockwood, 10ª ed., cap. 57, “Pino de tração”).\n\nAssocie osso, lado de entrada e estrutura vulnerável. A tabela do resumo da Biblioteca permite revisar esses três elementos juntos.\n\n**Por que esta questão foi criada.** As direções opostas de dois pinos próximos são facilmente trocadas quando se memoriza só “proteger o nervo” sem localizar a inserção.",
-  "correta": "**D: lateral para medial e nervo fibular comum.** É o par do pino tibial proximal. A passagem e a proteção devem ser reconhecidas no local anatômico correto.",
+  "conceito": "Para tração pela **tíbia proximal**, o pino passa de **lateral para medial**, protegendo o **nervo fibular comum**. É a alternativa D. A combinação muda quando a tração é pelo fêmur distal: ali o sentido é medial para lateral e a estrutura destacada é a artéria femoral.\n\nA regra não é que todo pino de tração atravesse a perna no mesmo sentido. Cada nível tem estruturas vulneráveis próprias. A tabela do resumo distingue o pino tibial, bicortical e na altura da tuberosidade, do femoral, cuja relação com a artéria no hiato dos adutores explica a outra direção (Rockwood, 10ª ed., cap. 57, “Tratamento não operatório e tração”).\n\nHá uma diferença funcional além da segurança de passagem: o pino tibial transmite a tração através do joelho. O pino femoral traciona diretamente o fêmur, permite algum controle rotacional e não distrai a articulação; por isso é favorecido no capítulo se houver suspeita de lesão do joelho. A escolha do local depende também do exame articular e das lesões associadas, não só da facilidade de colocar um pino.\n\nNo adulto, a tração esquelética é sobretudo uma solução temporária quando a haste ainda não pode ser feita. Ela ajuda a manter o membro durante essa etapa, mas não substitui reavaliação clínica e controle do alinhamento. No resumo da Biblioteca, leia os dois níveis lado a lado: **tíbia/lateral/fibular; fêmur/medial/femoral arterial**. O local é o que dá sentido à comparação.\n\n**Por que esta questão foi criada.** O TARO 2022 cobrou a direção do pino femoral e a estrutura protegida; este simulado testa a distinção anatômica ao mudar o local para a tíbia.",
+  "correta": "**D: lateral para medial; nervo fibular comum.** É o par tibial da tabela. A direção deve ser associada ao nível de passagem, sem ser decorada como regra única para toda tração.\n\nA montagem atravessa o joelho na transmissão da força, o que também precisa entrar na escolha quando há lesão articular suspeita.",
   "incorretas": {
-   "A": "**É o par da tração femoral distal, não tibial proximal.** Medial para lateral e proteção da artéria femoral pertencem ao outro local. A pergunta muda o osso em que o pino entra.",
-   "B": "**Reconhece o nervo, mas inverte a direção.** A referência tibial é lateral para medial. Não basta escolher o nome neural correto mantendo a passagem femoral.",
-   "C": "**Acerta a direção e traz a estrutura protegida no fêmur.** A artéria femoral no hiato dos adutores explica o pino transfemoral. Na tíbia proximal, o risco nomeado é o nervo fibular comum."
+   "A": "**Descreve o par do fêmur distal, e não o da tíbia proximal.** Medial para lateral e proteção da artéria femoral fazem sentido no hiato dos adutores.\n\nA alternativa contém uma combinação verdadeira em outro local; o erro é transferi-la para o nível tibial do enunciado.",
+   "B": "**Reconhece o nervo pertinente à tíbia e inverte a direção de passagem.** O resumo recomenda lateral para medial para esse nível.\n\nSaber qual estrutura está em risco é necessário, mas não basta se o trajeto escolhido continua sendo o do outro pino.",
+   "C": "**Acerta o sentido tibial e atribui a proteção à estrutura do nível femoral.** A artéria femoral é a referência do pino no fêmur distal.\n\nA tibial protege o fibular; misturar metade de cada par perde a relação entre posição anatômica e direção."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Tratamento não operatório e tração."
@@ -29180,26 +29523,28 @@
       "Tratamento não operatório e tração"
      ],
      "blocos": [
-      "tratamento-nao-operatorio-e-tracao-0434b7b5"
+      "tratamento-nao-operatorio-e-tracao-0434b7b5",
+      "tratamento-nao-operatorio-e-tracao-afec236d",
+      "tratamento-nao-operatorio-e-tracao-0e1b2fc1"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "7c16ad22b8763c72796eb572e8086e2fdada3cfe1dff277d876d219128f577ad"
+     "trechosSha256": "39bf4a850e3d06e9ce989caf4178f995630f08de8595bac71deefbacd95672c7"
     }
    ],
    "questaoSha256": "f12d573e9fce532d716d5b8cbc459851621276d8f91db51209f656d6d1601121",
-   "comentarioSha256": "1dfb3dfe52790f3c1e1fa3109e492428a3bd48e289feff39d815d8966c80a971"
+   "comentarioSha256": "20c5f980e28702655ec80de7e6725b8b7e37da03195e42ddd996f6d7b8101376"
   }
  },
  "trauma-1662": {
-  "conceito": "A **gravidez** pode favorecer a haste retrógrada; a **patela baixa** pode dificultá-la. O capítulo as coloca, respectivamente, entre indicação relativa e contraindicação relativa.\n\nA retrógrada entra pelo intercôndilo. Na gestante, o resumo destaca menor radiação fetal, sobretudo no primeiro trimestre; já uma patela baixa ou um joelho com flexão limitada interfere no acesso distal. Outro limite é a fratura subtrocantérica, em que o controle do segmento proximal é pior. Assim, o contexto clínico pode favorecer a via enquanto a anatomia do joelho ou do foco pode restringi-la (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”).\n\nA palavra “relativa” exige avaliação do caso. Não transforma gestação em obrigação de usar retrógrada nem patela baixa numa regra isolada para toda fratura. Leia a comparação no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Obriga a diferenciar fatores que favorecem o acesso distal daqueles que impedem sua execução ou seu controle mecânico.",
-  "correta": "**A: gravidez e patela baixa.** É o par na ordem solicitada. A primeira pode trazer vantagem de exposição à radiação; a segunda representa dificuldade anatômica para a entrada pelo joelho.",
+  "conceito": "A haste retrógrada pode facilitar o tratamento da diáfise na **gestante**, mas exige um acesso adequado pelo joelho. Por isso o par correto é **gravidez como indicação relativa e patela baixa como contraindicação relativa**, alternativa A.\n\nA entrada distal afasta a operação da região proximal. Na gravidez, o capítulo destaca menor radiação ao feto, sobretudo no primeiro trimestre; no obeso, o benefício é alcançar mais facilmente o ponto de entrada, difícil por via anterógrada. São razões para favorecer uma técnica no planejamento, não promessas de ausência de radiação nem indicações absolutas independentes do restante do caso (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”).\n\nO limite pode estar no próprio acesso: **patela baixa e flexão limitada do joelho** são contraindicações relativas descritas. A técnica requer posicionar o joelho e alcançar o intercôndilo preservando as estruturas articulares. Uma indicação associada à condição geral não apaga uma dificuldade anatômica relevante na entrada.\n\nOutra comparação útil é a localização da fratura. A retrógrada favorece o controle de fraturas distais; já na subtrocantérica, o capítulo a coloca entre as contraindicações relativas e descreve dificuldade de controlar a região proximal. “Fratura proximal” e “entrada distal” precisam ser avaliadas como uma montagem inteira, não apenas pela facilidade da incisão.\n\nQuando há fratura ipsilateral do colo, a entrada retrógrada pode preservar a região usada para fixá-lo com outro implante, e aparece entre as indicações relativas. No resumo da Biblioteca, confira a tabela e os cenários: a técnica é escolhida pela combinação entre benefício de acesso, lesões associadas e capacidade de estabilizar os fragmentos.\n\n**Por que esta questão foi criada.** O TARO 2010 usou gravidez, bilateralidade e obesidade como distratores de contraindicação; este simulado exige distinguir benefício do acesso distal de obstáculo anatômico no joelho.",
+  "correta": "**A: gravidez; patela baixa.** A primeira pode favorecer a via retrógrada pela menor exposição fetal descrita; a segunda dificulta o acesso e consta como contraindicação relativa.\n\nO termo “relativa” importa: a escolha continua dependendo do conjunto de anatomia, fratura e condição clínica.",
   "incorretas": {
-   "B": "**Inverte as categorias.** Patela baixa é a restrição relativa, e gravidez pode favorecer a escolha. O par só faz sentido quando ligado à ordem indicação/contraindicação do enunciado.",
-   "C": "**Reconhece a gestação, mas trata colo ipsilateral como contraindicação.** A retrógrada pode ser útil para estabilizar a diáfise sem disputar a região do colo, que recebe implante separado. Essa associação aparece entre as indicações.",
-   "D": "**Inverte o sentido dos dois fatores.** Fratura subtrocantérica dificulta controle proximal pela retrógrada; obesidade mórbida favorece a via por evitar o ponto anterógrado difícil. O par está na ordem contrária à pergunta."
+   "B": "**Inverte as duas categorias.** Patela baixa não é um benefício oferecido pela entrada distal; é uma dificuldade anatômica. Gravidez, por sua vez, figura como razão relativa para favorecer a técnica.\n\nLembrar apenas que ambas aparecem na discussão da retrógrada não resolve a pergunta: é preciso saber em qual lado da decisão cada uma pesa.",
+   "C": "**Acerta a gravidez e trata uma associação favorável como impedimento.** A fratura do colo do mesmo lado está entre as indicações relativas, pois o acesso distal permite tratar a diáfise sem disputar a região da fixação proximal.\n\nIsso não dispensa reduzir e fixar o colo prioritariamente; torna os dois tratamentos mais compatíveis.",
+   "D": "**Também inverte os papéis.** A subtrocantérica é uma contraindicação relativa pelo controle proximal menos favorável. A obesidade mórbida é uma indicação relativa, pois dificulta a entrada anterógrada.\n\nA facilidade de alcançar o joelho no obeso não corrige a limitação mecânica de uma fratura proximal: são critérios distintos do planejamento."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste retrógrada."
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste retrógrada; A fratura do colo do mesmo lado."
   ],
   "conferido": false,
   "geradoEm": "2026-10-23",
@@ -29214,18 +29559,21 @@
      "edicao": "10ª edição (2025)",
      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
      "secoes": [
-      "Haste retrógrada"
+      "Haste retrógrada",
+      "A fratura do colo do mesmo lado"
      ],
      "blocos": [
       "haste-retrograda-a6c8b54a",
-      "haste-retrograda-fd5c0178"
+      "haste-retrograda-fd5c0178",
+      "haste-retrograda-8469a2aa",
+      "a-fratura-do-colo-do-mesmo-lado-2c1abd51"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "22cca7da6cf6f6832628f4d601167ae3b233dee646802d98d5de3ba40dc18598"
+     "trechosSha256": "3d777a11f946e5ab633d981584bb9082460b0406bf47e6265a1ec2548087dc7d"
     }
    ],
    "questaoSha256": "0f3ba321036ed5184b4e4b09ec7f1c93c03d906af6176b2ddd472789532758c8",
-   "comentarioSha256": "18182cdcea35f0aa3cd706bbe81e9fff51682f41a50faec8bc7e6a3d7814c529"
+   "comentarioSha256": "013cbe03cf0680848513eceb5f5bae6ffe2973a165379eae588a4c3b54e15c7d"
   }
  },
  "trauma-1663": {

@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1226,
+  "pendente": 1209,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 126,
+  "pendente-fonte": 132,
   "pendente-inspecao-imagem": 158,
-  "revisada": 762
+  "revisada": 773
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -187,20 +187,20 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 25,
+    "pendente": 24,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 1,
-    "revisada": 37
+    "revisada": 38
    }
   },
   "rockwood10-58-femur-distal": {
    "titulo": "Fratura do fêmur distal",
    "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
    "estados": {
-    "pendente": 34,
-    "pendente-fonte": 2,
+    "pendente": 17,
+    "pendente-fonte": 8,
     "pendente-inspecao-imagem": 1,
-    "revisada": 2
+    "revisada": 13
    }
   },
   "rockwood10-60-patela-mecanismo-extensor": {
@@ -5592,15 +5592,16 @@
       ],
       "blocos": [
        "fixador-externo-placa-e-controle-de-dano-0850c9dc",
+       "fixador-externo-placa-e-controle-de-dano-d96d3150",
        "fixador-externo-placa-e-controle-de-dano-373ad787",
        "complicacoes-6b66234c"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "f4b6075a3962bfc7a7dfb9a5d2bf8391772aff695f88640600fccd60a83a94a0"
+      "trechosSha256": "f618849944d3c00e7035ad21ad81a8517a3a0572dc2ecf8c6101c2443ed4391a"
      }
     ],
     "questaoSha256": "3338741ef546ff40d0de943d5b248b07363f34ebca4a708e7b5d2fddf23fa548",
-    "comentarioSha256": "4f2890c8d172ff32bc780459452b00cb4bb5d8d1af713dbbeaaffa0454958b64"
+    "comentarioSha256": "9bfd8b9c9c5e231e66fa91b3d200ad27253bb6a7128264aba6b7e43ded784398"
    }
   },
   "conceitos-basicos-0140": {
@@ -6052,16 +6053,17 @@
        "Complicações"
       ],
       "blocos": [
-       "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
        "tratamento-nao-operatorio-e-tracao-afec236d",
+       "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
+       "complicacoes-7635955c",
        "complicacoes-ea697358"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "87955e4a757e7f4a70527eac9d7dc797579cb785a05fbfa161cce14daa4af6e9"
+      "trechosSha256": "be44ccd0a3aac551f040a6c2f181b186c39f37e483590310fa5a6d849305f0d3"
      }
     ],
     "questaoSha256": "8884dc0327967711ed0ed96274c7568bebc198949549a710b5d7b1e37de314bc",
-    "comentarioSha256": "1c1aac8287570c4966d9d8aacc36535a786e3db8c224d01a89a47df260b184f4"
+    "comentarioSha256": "9ebce41488ed1d6c61f92a4fe8df6e150064a28b7b4e0603f3987fff8dde36f3"
    }
   },
   "conceitos-basicos-0373": {
@@ -6921,8 +6923,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 58 sustenta haste retrógrada como opção com componente fixo e portal compatível, mas não define Rorabeck II e III. Não basta justificar A: faltam as definições de estabilidade do componente femoral nos distratores B e D. Consultar fonte primária de fraturas periprotéticas e classificação de Rorabeck antes de classificar o comentário inteiro como baseado no resumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6936,7 +6938,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "5c2875ff3bef377c4bf61e32e27394f9995621fe9e4235cd1c23a5ecbe9064ef"
+   "questaoSha256": "5c2875ff3bef377c4bf61e32e27394f9995621fe9e4235cd1c23a5ecbe9064ef",
+   "pendencia": "O resumo 58 sustenta haste retrógrada como opção com componente fixo e portal compatível, mas não define Rorabeck II e III. Não basta justificar A: faltam as definições de estabilidade do componente femoral nos distratores B e D. Consultar fonte primária de fraturas periprotéticas e classificação de Rorabeck antes de classificar o comentário inteiro como baseado no resumo."
   },
   "joelho-0094": {
    "tema": "joelho",
@@ -42276,7 +42279,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42291,7 +42294,31 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "3176d385bc11c4cc82b20d14a1e7b4bbb9ece616cbd025f585fc250b76d022a4"
+   "questaoSha256": "3176d385bc11c4cc82b20d14a1e7b4bbb9ece616cbd025f585fc250b76d022a4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Lesões associadas"
+      ],
+      "blocos": [
+       "lesoes-associadas-8119d037",
+       "lesoes-associadas-73aee957"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "02db2d5dd839e1daf34cc9924b9c859e25f71c399d9598370cec2e9f8e642981"
+     }
+    ],
+    "questaoSha256": "3176d385bc11c4cc82b20d14a1e7b4bbb9ece616cbd025f585fc250b76d022a4",
+    "comentarioSha256": "b83549d7abf54e353d84cc5fb97ab7c78cfc9085a63fb78a26973cd50c34cb3c"
+   }
   },
   "trauma-0049": {
    "tema": "trauma",
@@ -42825,7 +42852,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42840,7 +42867,32 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "7a066d245441a1ac98fc6bff7791f7209467578a86d01ff2d927fd8fbf16785c"
+   "questaoSha256": "7a066d245441a1ac98fc6bff7791f7209467578a86d01ff2d927fd8fbf16785c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Lesões associadas"
+      ],
+      "blocos": [
+       "lesoes-associadas-32585c37",
+       "lesoes-associadas-59590dfc",
+       "lesoes-associadas-2d6d0ff1"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "8042f6e200cbbb466745d3ecdb56db6a659947e7c352e2ff1a5cb1a4359d566d"
+     }
+    ],
+    "questaoSha256": "7a066d245441a1ac98fc6bff7791f7209467578a86d01ff2d927fd8fbf16785c",
+    "comentarioSha256": "5968c58c769d4b7c2fbfaf907b7768b0eb4b50f4aa2d639c1e0f202684d07eb9"
+   }
   },
   "trauma-0069": {
    "tema": "trauma",
@@ -47475,7 +47527,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47490,7 +47542,35 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "3e927ef9c3aeff865e3647f28f7c02242bbe807c2156bdf580e3806355982f43"
+   "questaoSha256": "3e927ef9c3aeff865e3647f28f7c02242bbe807c2156bdf580e3806355982f43",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Classificação AO/OTA e HOFFA",
+       "Haste retrógrada"
+      ],
+      "blocos": [
+       "classificacao-ao-ota-e-hoffa-349ae23d",
+       "classificacao-ao-ota-e-hoffa-072fbbe6",
+       "classificacao-ao-ota-e-hoffa-05befb98",
+       "classificacao-ao-ota-e-hoffa-d58e0ca2",
+       "haste-retrograda-63531bff"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "0b7722da8e621aa9fd09b59db40798369fe7b7df78f0fdd92c4217b55bccfa11"
+     }
+    ],
+    "questaoSha256": "3e927ef9c3aeff865e3647f28f7c02242bbe807c2156bdf580e3806355982f43",
+    "comentarioSha256": "1d8d6e0772a94ab47748c11c8ff15d0db6783566fc2548cbabdc0c4001c62a71"
+   }
   },
   "trauma-0242": {
    "tema": "trauma",
@@ -47798,17 +47878,19 @@
       "edicao": "10ª edição (2025)",
       "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
       "secoes": [
-       "Epidemiologia, mecanismo e lesões associadas"
+       "Epidemiologia, mecanismo e lesões associadas",
+       "Situações especiais"
       ],
       "blocos": [
-       "epidemiologia-mecanismo-e-lesoes-associadas-8577dc1c"
+       "epidemiologia-mecanismo-e-lesoes-associadas-8577dc1c",
+       "situacoes-especiais-034a55d1"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "70344be71340b89b7fabb28f117b22b10d9da6fdf634576eebe53eab3b3ca9a0"
+      "trechosSha256": "4cb0fb48068a4fa4d70527f277190698ef4f6e76f08fa6291d13afc7e5f0bb8e"
      }
     ],
     "questaoSha256": "4f232a44418e82d82e4d6bd40d5c1e178989ed7606928282379ea3dc40a96c0e",
-    "comentarioSha256": "9ec5c592d3c05a61d1653774359e10b60b1ccc6206f082e9d24d9663aac4d6c4"
+    "comentarioSha256": "0ccd2b49292e5ad47fee4d0690674aacf5f125a6a9d919d64c987c0457ad50f4"
    }
   },
   "trauma-0262": {
@@ -47818,7 +47900,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47833,7 +47915,50 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "8ce127abcefe0b01f98176e5bac8a56baa68053e5d3c7d78bc0ccbdce09d1fad"
+   "questaoSha256": "8ce127abcefe0b01f98176e5bac8a56baa68053e5d3c7d78bc0ccbdce09d1fad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Mecanismo e deformidade",
+       "Anatomia aplicada à fixação"
+      ],
+      "blocos": [
+       "mecanismo-e-deformidade-05ea9e17",
+       "mecanismo-e-deformidade-5ca6b5cc",
+       "mecanismo-e-deformidade-5663e0fc",
+       "mecanismo-e-deformidade-d9cd796b",
+       "anatomia-aplicada-a-fixacao-69fd8444"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "f89e96d3a7522dafe4a4278425cd91bafd44b31fa69461c49eb7483931aaf0b1"
+     },
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Anatomia aplicada e forças deformantes"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-forcas-deformantes-96ba7854"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "da066b81a9ab08fa1f04969243fd8dd1315f7c1a61236a27b6591afefb0428c7"
+     }
+    ],
+    "questaoSha256": "8ce127abcefe0b01f98176e5bac8a56baa68053e5d3c7d78bc0ccbdce09d1fad",
+    "comentarioSha256": "d37e173dbc90bd00a06429e63980f24a45424ddaf2bee4cbe5b53cd8e1e13079"
+   }
   },
   "trauma-0263": {
    "tema": "trauma",
@@ -48727,7 +48852,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -48750,7 +48875,35 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "11f4ff744a02a267e4d7716591ef0da1b3b5ca7f26ea6a963ecba55804859f19"
+   "questaoSha256": "11f4ff744a02a267e4d7716591ef0da1b3b5ca7f26ea6a963ecba55804859f19",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Anatomia aplicada e forças deformantes",
+       "Haste retrógrada",
+       "Fixador externo, placa e controle de dano"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-forcas-deformantes-96ba7854",
+       "anatomia-aplicada-e-forcas-deformantes-56ba58a9",
+       "haste-retrograda-8469a2aa",
+       "fixador-externo-placa-e-controle-de-dano-373ad787"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "21e9485cb6fe25bfdba6e7fe58455d2a1057289e32644d09c6c0f5fc9ac2f9da"
+     }
+    ],
+    "questaoSha256": "11f4ff744a02a267e4d7716591ef0da1b3b5ca7f26ea6a963ecba55804859f19",
+    "comentarioSha256": "fa0d2e7b173e4b8dcfce317225eba94f60af7f6af196fd55efaa3001bf5c6c0a"
+   }
   },
   "trauma-0296": {
    "tema": "trauma",
@@ -49179,8 +49332,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte 58 enumera dor patelofemoral e outras desvantagens da haste, mas não demonstra que lesão meniscal seja a exceção entre as complicações oferecidas nem estabelece toda a comparação da pergunta EXCETO. O corpo do resumo 57 orienta proteger menisco durante fresagem, o que não permite ensinar que lesão meniscal seja impossível. Falta a fonte original que sustente a distinção da alternativa D frente a rigidez, dor e pioartrite.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49194,7 +49347,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "4a7a5e24a99d4cb14322de1086dc2c3bd5bad72db64aa54e6b9a9dcbc0df059d"
+   "questaoSha256": "4a7a5e24a99d4cb14322de1086dc2c3bd5bad72db64aa54e6b9a9dcbc0df059d",
+   "pendencia": "A fonte 58 enumera dor patelofemoral e outras desvantagens da haste, mas não demonstra que lesão meniscal seja a exceção entre as complicações oferecidas nem estabelece toda a comparação da pergunta EXCETO. O corpo do resumo 57 orienta proteger menisco durante fresagem, o que não permite ensinar que lesão meniscal seja impossível. Falta a fonte original que sustente a distinção da alternativa D frente a rigidez, dor e pioartrite."
   },
   "trauma-0316": {
    "tema": "trauma",
@@ -49697,8 +49851,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo 58 informa inclinação lateral de 15 graus no texto e 10 graus atribuídos à figura 58-4C, mas não estabelece a orientação de rotação interna de 10 graus da placa pedida na prova. A figura do capítulo está sem imagem disponível. Falta fonte primária ou técnica do implante que relacione explicitamente o sentido e o ângulo da placa; o bloco contextual da própria questão não é prova.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49712,7 +49866,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "666ef73f71ad052a7cef38ea4e9433c1d7e17a378fabf8082bf693fc115c7883"
+   "questaoSha256": "666ef73f71ad052a7cef38ea4e9433c1d7e17a378fabf8082bf693fc115c7883",
+   "pendencia": "O corpo independente do resumo 58 informa inclinação lateral de 15 graus no texto e 10 graus atribuídos à figura 58-4C, mas não estabelece a orientação de rotação interna de 10 graus da placa pedida na prova. A figura do capítulo está sem imagem disponível. Falta fonte primária ou técnica do implante que relacione explicitamente o sentido e o ângulo da placa; o bloco contextual da própria questão não é prova."
   },
   "trauma-0338": {
    "tema": "trauma",
@@ -52047,7 +52202,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52069,7 +52224,35 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "39a2558c6b5de729b581b667f847cd4bb8938b0a6791d5f86abd38501e64356d"
+   "questaoSha256": "39a2558c6b5de729b581b667f847cd4bb8938b0a6791d5f86abd38501e64356d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Pós-operatório e complicações",
+       "Anatomia aplicada à fixação",
+       "Placa e parafusos"
+      ],
+      "blocos": [
+       "pos-operatorio-e-complicacoes-dd6dde3a",
+       "anatomia-aplicada-a-fixacao-6154b66b",
+       "placa-e-parafusos-b2ea7bc8",
+       "placa-e-parafusos-6b5cb8a1"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "08dfb40f7ca31efcd08b7a8fa37086a2ad2e0771be5d8a28cde272353be7504c"
+     }
+    ],
+    "questaoSha256": "39a2558c6b5de729b581b667f847cd4bb8938b0a6791d5f86abd38501e64356d",
+    "comentarioSha256": "3b1586d34c52a788fe88b473b2cd4460195f3b2badfe20eb64d814fb7d858355"
+   }
   },
   "trauma-0555": {
    "tema": "trauma",
@@ -53825,7 +54008,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53840,7 +54023,37 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "37513e3a67ead05e4950d300185a22fa3c9d7e305110a8b509b3604df4802579"
+   "questaoSha256": "37513e3a67ead05e4950d300185a22fa3c9d7e305110a8b509b3604df4802579",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Mecanismo e deformidade",
+       "Placa e parafusos",
+       "Pós-operatório e complicações"
+      ],
+      "blocos": [
+       "mecanismo-e-deformidade-05ea9e17",
+       "mecanismo-e-deformidade-5ca6b5cc",
+       "mecanismo-e-deformidade-5663e0fc",
+       "mecanismo-e-deformidade-d9cd796b",
+       "placa-e-parafusos-e66913ec",
+       "pos-operatorio-e-complicacoes-dd6dde3a"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "4b80105d12acdca81b9cc3a9fa4edbb31bebee9c310ffb49170129ab08a84020"
+     }
+    ],
+    "questaoSha256": "37513e3a67ead05e4950d300185a22fa3c9d7e305110a8b509b3604df4802579",
+    "comentarioSha256": "676d7d0fb4dc129993a87ce0ff9fc67f3b08e6cee19a42845429e50f603b0633"
+   }
   },
   "trauma-0702": {
    "tema": "trauma",
@@ -54664,8 +54877,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 58 não descreve a combinação específica de rotação medial, flexão e varo após consolidação viciosa do côndilo medial. A anatomia e os erros gerais de alinhamento não distinguem sozinhos as quatro combinações oferecidas. Falta fonte primária sobre a deformidade tridimensional do côndilo medial; a resposta no bloco contextual não serve de evidência independente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -54679,7 +54892,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "d1f79ea977e4c9541c4d20ab0a6046dc8b35e8ba7768c91fb4a5163b411660f1"
+   "questaoSha256": "d1f79ea977e4c9541c4d20ab0a6046dc8b35e8ba7768c91fb4a5163b411660f1",
+   "pendencia": "O resumo 58 não descreve a combinação específica de rotação medial, flexão e varo após consolidação viciosa do côndilo medial. A anatomia e os erros gerais de alinhamento não distinguem sozinhos as quatro combinações oferecidas. Falta fonte primária sobre a deformidade tridimensional do côndilo medial; a resposta no bloco contextual não serve de evidência independente."
   },
   "trauma-0748": {
    "tema": "trauma",
@@ -56734,8 +56948,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 58 descreve distribuição bimodal por idade e energia, mas não demonstra predominância de homens jovens e mulheres idosas. Todas as opções variam sexo e idade. Falta epidemiologia estratificada por sexo; compatibilidade com o gabarito A não comprova cobertura.",
    "temComentario": true,
    "citacoes": [
     {
@@ -56749,7 +56963,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "ac6dbab0a24892a7cda8cd4cf00d4463aa1a045d267200fa72bcf5045e8e6ae5"
+   "questaoSha256": "ac6dbab0a24892a7cda8cd4cf00d4463aa1a045d267200fa72bcf5045e8e6ae5",
+   "pendencia": "O resumo 58 descreve distribuição bimodal por idade e energia, mas não demonstra predominância de homens jovens e mulheres idosas. Todas as opções variam sexo e idade. Falta epidemiologia estratificada por sexo; compatibilidade com o gabarito A não comprova cobertura."
   },
   "trauma-0852": {
    "tema": "trauma",
@@ -58116,16 +58331,17 @@
        "Haste retrógrada"
       ],
       "blocos": [
+       "haste-retrograda-c19a5fde",
        "haste-retrograda-8469a2aa",
        "haste-retrograda-d0c23ae9",
-       "haste-retrograda-cc1ee60b"
+       "haste-retrograda-c9d138a5"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "7bb5757746c1cf78b2e872db6435ed900f078344f769ec3fe47b05a0616c916a"
+      "trechosSha256": "32851338d49bb69b6580aa2c1dc9c6b2f27318b054c94f4400fca9c0e0975c81"
      }
     ],
     "questaoSha256": "d5c83be595116d24fc54157e6cfde5061452c6bc7b3552229478c399ff5f1fb0",
-    "comentarioSha256": "d586e490e17f0dffa131871f1c0ecbff329bb33b1007c7bb940a079482dc222a"
+    "comentarioSha256": "374cfdd2b9374ef994844717f3d38831b77d9c5fc9b0d5fe22f9a4a598b930bf"
    }
   },
   "trauma-0899": {
@@ -58555,7 +58771,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58570,7 +58786,35 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "095f4b029c931f005f3b99aa30843de606059a7a48378ef41a245fd14ceecfbe"
+   "questaoSha256": "095f4b029c931f005f3b99aa30843de606059a7a48378ef41a245fd14ceecfbe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Lesões associadas",
+       "Anatomia aplicada à fixação",
+       "Haste retrógrada"
+      ],
+      "blocos": [
+       "lesoes-associadas-8119d037",
+       "lesoes-associadas-73aee957",
+       "anatomia-aplicada-a-fixacao-d4331410",
+       "haste-retrograda-b85e44ce"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "ff21bbf8c340c94053781cfb42f2c8407abaea0b2b88394573491847707ddb0c"
+     }
+    ],
+    "questaoSha256": "095f4b029c931f005f3b99aa30843de606059a7a48378ef41a245fd14ceecfbe",
+    "comentarioSha256": "98436e629dc76783e58c1bb4c68d044fadd9091dfdabc9f58cd573ab6788fbb9"
+   }
   },
   "trauma-0914": {
    "tema": "trauma",
@@ -60246,7 +60490,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60261,7 +60505,33 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "9ce664bc104a8bcf5b1aef6081e0a3113b1f3fdf1ba27cf1a91e8c27cc2adc4c"
+   "questaoSha256": "9ce664bc104a8bcf5b1aef6081e0a3113b1f3fdf1ba27cf1a91e8c27cc2adc4c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Lesões associadas",
+       "Implantes combinados, fixador externo e prótese"
+      ],
+      "blocos": [
+       "lesoes-associadas-410ccdbe",
+       "lesoes-associadas-a0f6f917",
+       "implantes-combinados-fixador-externo-e-protese-331130c5"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "23c0f6e35efd18fe12deade56cc927ebc28fd46dc6b059f902e38c7639b41b78"
+     }
+    ],
+    "questaoSha256": "9ce664bc104a8bcf5b1aef6081e0a3113b1f3fdf1ba27cf1a91e8c27cc2adc4c",
+    "comentarioSha256": "f3308001ffbaa7cb25b29ac04e44e1553279e385ea0897a0cebab5492cc1fb08"
+   }
   },
   "trauma-0987": {
    "tema": "trauma",
@@ -60676,7 +60946,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60698,7 +60968,35 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "782350396821142c831b3887679b40f4da34cc9e6bc03d0bb158947ca89f4862"
+   "questaoSha256": "782350396821142c831b3887679b40f4da34cc9e6bc03d0bb158947ca89f4862",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Lesões associadas",
+       "Mecanismo e deformidade"
+      ],
+      "blocos": [
+       "lesoes-associadas-8119d037",
+       "lesoes-associadas-73aee957",
+       "lesoes-associadas-32585c37",
+       "lesoes-associadas-410ccdbe",
+       "mecanismo-e-deformidade-52db38fb"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "6c24910e28f4bfe726a04e956b1b2f6943fc7f604bc8d0fce8dde2419abc7d48"
+     }
+    ],
+    "questaoSha256": "782350396821142c831b3887679b40f4da34cc9e6bc03d0bb158947ca89f4862",
+    "comentarioSha256": "c4289b062fce98d02ef2868d29173689e8f2085067b023b1765181e5a7e8d93f"
+   }
   },
   "trauma-1005": {
    "tema": "trauma",
@@ -60931,8 +61229,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 58 trata estabilidade do componente e opções de fixação, mas não define os tipos I, II e III de Su nem sua relação com a borda proximal do componente femoral. Falta a classificação de Su em fonte primária para enquadrar o traço iniciado junto à borda e estendido proximalmente e analisar todas as opções.",
    "temComentario": true,
    "citacoes": [
     {
@@ -60946,7 +61244,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "fc7ac8cfe749a1dc8c7dadedb66701d8a5d5dd1044f080ba4fb2de655c1f945c"
+   "questaoSha256": "fc7ac8cfe749a1dc8c7dadedb66701d8a5d5dd1044f080ba4fb2de655c1f945c",
+   "pendencia": "O resumo 58 trata estabilidade do componente e opções de fixação, mas não define os tipos I, II e III de Su nem sua relação com a borda proximal do componente femoral. Falta a classificação de Su em fonte primária para enquadrar o traço iniciado junto à borda e estendido proximalmente e analisar todas as opções."
   },
   "trauma-1018": {
    "tema": "trauma",
@@ -61679,14 +61978,16 @@
       ],
       "blocos": [
        "epidemiologia-mecanismo-e-lesoes-associadas-c3bbb661",
-       "epidemiologia-mecanismo-e-lesoes-associadas-49576002"
+       "epidemiologia-mecanismo-e-lesoes-associadas-49576002",
+       "epidemiologia-mecanismo-e-lesoes-associadas-b22e4239",
+       "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "333b116fbb5b18f88855e1d613940321d8e5c3894d9f7fdb9b9d598bd1ba3d8d"
+      "trechosSha256": "5e65130a38ff26452eaa36a4c7a09b74819b891c68a3cdf002f875d4d8d1cb38"
      }
     ],
     "questaoSha256": "e80725bc1d2f0f8c4682cb584d6c4199266b58ef31a9e6d1951573c944f0dd10",
-    "comentarioSha256": "d712302c877754d431581441c6822d98ad0ab6ab914b894a943543d24a4c7c3f"
+    "comentarioSha256": "6d0d013d8434358419619631c9cc0a8fab17c002cc8f97d8be2111acc4eba55d"
    }
   },
   "trauma-1054": {
@@ -62431,7 +62732,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62446,7 +62747,35 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "8bd16ddb61cab293183bdb6cdc35d4957622df12814ce1ee80981c56b3715191"
+   "questaoSha256": "8bd16ddb61cab293183bdb6cdc35d4957622df12814ce1ee80981c56b3715191",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Classificação AO/OTA e HOFFA",
+       "Exame e imagem"
+      ],
+      "blocos": [
+       "classificacao-ao-ota-e-hoffa-349ae23d",
+       "classificacao-ao-ota-e-hoffa-072fbbe6",
+       "classificacao-ao-ota-e-hoffa-2e6f5b99",
+       "classificacao-ao-ota-e-hoffa-05befb98",
+       "exame-e-imagem-6dc85d38"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "02ae65ac1e36cc647634051ccede26d1f766939bfe9610d74d4adfd8a5380989"
+     }
+    ],
+    "questaoSha256": "8bd16ddb61cab293183bdb6cdc35d4957622df12814ce1ee80981c56b3715191",
+    "comentarioSha256": "11d6475c286b5dad556ce6bf80068d92cb3905738f0609904673a15cf53be0b8"
+   }
   },
   "trauma-1089": {
    "tema": "trauma",
@@ -62770,7 +63099,7 @@
      }
     ],
     "questaoSha256": "233c821509f6ee983f88b3344345c49ae36f533db17acc2482c94bad3585729b",
-    "comentarioSha256": "498c7133b336be685784837c46f8679c7d8d88e5915be9b2a3f99a2999d67d93"
+    "comentarioSha256": "36d454a6716bbdbbdd5ec6aa8607d9f898b70ccffd582f873a3a4150b1d76fcb"
    }
   },
   "trauma-1097": {
@@ -79413,7 +79742,7 @@
      }
     ],
     "questaoSha256": "eeb64c210da46559786f589b275897380a0a8baef3c6f1eb30a75dd17ecf269f",
-    "comentarioSha256": "f0d5052ca08d30481e35cf7ae75fa6b2fb18a842bccca590ed678d802a080d32"
+    "comentarioSha256": "d48e05ca99b2423001e73297db47c8509296eb8fbeecb3b17207a516c6f11b8f"
    }
   },
   "trauma-1660": {
@@ -79477,14 +79806,16 @@
        "Tratamento não operatório e tração"
       ],
       "blocos": [
-       "tratamento-nao-operatorio-e-tracao-0434b7b5"
+       "tratamento-nao-operatorio-e-tracao-0434b7b5",
+       "tratamento-nao-operatorio-e-tracao-afec236d",
+       "tratamento-nao-operatorio-e-tracao-0e1b2fc1"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "7c16ad22b8763c72796eb572e8086e2fdada3cfe1dff277d876d219128f577ad"
+      "trechosSha256": "39bf4a850e3d06e9ce989caf4178f995630f08de8595bac71deefbacd95672c7"
      }
     ],
     "questaoSha256": "f12d573e9fce532d716d5b8cbc459851621276d8f91db51209f656d6d1601121",
-    "comentarioSha256": "1dfb3dfe52790f3c1e1fa3109e492428a3bd48e289feff39d815d8966c80a971"
+    "comentarioSha256": "20c5f980e28702655ec80de7e6725b8b7e37da03195e42ddd996f6d7b8101376"
    }
   },
   "trauma-1662": {
@@ -79521,18 +79852,21 @@
       "edicao": "10ª edição (2025)",
       "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
       "secoes": [
-       "Haste retrógrada"
+       "Haste retrógrada",
+       "A fratura do colo do mesmo lado"
       ],
       "blocos": [
        "haste-retrograda-a6c8b54a",
-       "haste-retrograda-fd5c0178"
+       "haste-retrograda-fd5c0178",
+       "haste-retrograda-8469a2aa",
+       "a-fratura-do-colo-do-mesmo-lado-2c1abd51"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "22cca7da6cf6f6832628f4d601167ae3b233dee646802d98d5de3ba40dc18598"
+      "trechosSha256": "3d777a11f946e5ab633d981584bb9082460b0406bf47e6265a1ec2548087dc7d"
      }
     ],
     "questaoSha256": "0f3ba321036ed5184b4e4b09ec7f1c93c03d906af6176b2ddd472789532758c8",
-    "comentarioSha256": "18182cdcea35f0aa3cd706bbe81e9fff51682f41a50faec8bc7e6a3d7814c529"
+    "comentarioSha256": "013cbe03cf0680848513eceb5f5bae6ffe2973a165379eae588a4c3b54e15c7d"
    }
   },
   "trauma-1663": {
