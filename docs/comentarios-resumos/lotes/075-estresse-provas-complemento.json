@@ -1,0 +1,199 @@
+{
+  "trauma-0234": {
+    "questaoSha256": "2c83af03ee0ce3a0db0a6a82ddcbafa221998a48ac5f905a2eedfe5bea5a8478",
+    "comentarioAnteriorSha256": "7605956f120ef0e44fc5cfa94bfc84b4ca22a9b86003db80e71c63b979e84c98",
+    "comentario": {
+      "conceito": "A tríade liga **baixa disponibilidade de energia, irregularidade menstrual e baixa densidade mineral óssea**. Seu desfecho ortopédico característico é a **fratura por estresse**. O treino continua produzindo microdano enquanto a capacidade de adaptação e reparo fica comprometida.\n\nO mecanismo descrito começa pela energia insuficiente: a produção de estrogênio e progesterona pode cair, os ciclos se tornam infrequentes ou cessam, e o estrogênio baixo favorece atividade osteoclástica. Por isso a investigação de uma atleta com dor óssea repetitiva deve incluir alimentação e ciclo menstrual, além da carga de treino (resumo do Rockwood, 10ª ed., cap. 24, “A tríade da mulher atleta”).\n\nReconhecer a tríade não significa que toda dor seja uma fratura nem que ela cause exclusivamente esse desfecho. A pergunta procura a associação que decorre diretamente do desequilíbrio energético, hormonal e ósseo. Leia essa seção no resumo da Biblioteca.",
+      "correta": "**C: fratura por estresse.** A relação entre demanda repetida e reparo ósseo comprometido explica a associação. Tratar apenas a região dolorosa sem abordar a energia e a função hormonal deixa os fatores de risco presentes.",
+      "incorretas": {
+        "A": "**Pubalgia não é o desfecho ósseo característico da tríade pedido.** Dor na região púbica pode ter diferentes causas, inclusive uma lesão óssea na avaliação de um atleta. A associação definida pelo desequilíbrio energético e hormonal é com fratura por estresse, não com o rótulo genérico de pubalgia.",
+        "B": "**Espondilolistese não é equivalente a lesão óssea por estresse.** O capítulo discute a fratura da pars como espondilólise; a opção nomeia outra condição. A pergunta é resolvida pela relação direta da tríade com a saúde óssea e a fratura por estresse.",
+        "D": "**Cartilagem não é o alvo que define a associação da tríade.** A fonte liga baixa energia e alteração hormonal à baixa massa óssea e fratura. Não estabelece lesão condral do joelho como esse desfecho característico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Fatores de risco e a tríade da mulher atleta; Coluna: espondilólise; Pelve e sacro. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Fatores de risco e a tríade da mulher atleta",
+          "Coluna: espondilólise",
+          "Pelve e sacro"
+        ],
+        "blocos": [
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+          "coluna-espondilolise-b2245b5c",
+          "pelve-e-sacro-3adfa6f2"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "58d6618897863f8a1c6dc7ef068a0aaaf2de46293f659022e157231d641dcbdd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0564": {
+    "questaoSha256": "28a41354ed025fcc03608a5daed25853255105a8bfc0703617b8c833163daa4d",
+    "comentarioAnteriorSha256": "ab1bf10197f2344ccb7e9c51bc465dde6c233ebc26d767e068009807fefd4b21",
+    "comentario": {
+      "conceito": "O par de fatores descreve dois caminhos para o desequilíbrio entre carga e reparo. Nas mulheres, o enunciado reúne os componentes tradicionais da tríade: **distúrbio alimentar, baixa massa óssea e amenorreia**. Nos homens, destaca a **repetição intensa de esforço**, capaz de produzir fadiga óssea.\n\nEsses caminhos não são exclusivos de um sexo. O capítulo também descreve baixa disponibilidade de energia, baixa testosterona e baixa densidade óssea no homem de resistência. Da mesma forma, a carga de treino importa na mulher. A alternativa correta é a combinação compatível com a fonte, e não uma regra de que homens só fraturam por treino e mulheres só por alteração hormonal (resumo do Rockwood, 10ª ed., cap. 24, “A tríade da mulher atleta” e “O homem atleta de resistência”).\n\nNa prática, avaliam-se demanda, condicionamento e capacidade de reparo em ambos. O resumo da Biblioteca mostra como essas peças se somam.",
+      "correta": "**D: anorexia nervosa, osteoporose e amenorreia; esforço físico intenso de repetição.** É o par esperado, relacionado à tríade e à fadiga por carga. A terminologia atual é mais ampla que anorexia e osteoporose: baixa disponibilidade energética e baixa densidade mineral óssea.",
+      "incorretas": {
+        "A": "**Substitui o mecanismo energético por um perfil que a fonte não usa.** Sedentarismo com obesidade não representa a tríade, e etilismo com tabagismo não é o par que explica a carga repetitiva pedida no homem. A questão compara os mecanismos apresentados, sem dizer que outros fatores sejam clinicamente irrelevantes.",
+        "B": "**Acerta a repetição no homem e erra o conjunto feminino.** O componente nutricional da tríade é energia insuficiente, associado à disfunção menstrual e à baixa massa óssea. Sedentarismo e obesidade não reproduzem esse mecanismo.",
+        "C": "**Reconhece a tríade e troca a explicação masculina da pergunta.** O capítulo destaca a demanda repetida e também fatores energéticos e hormonais no homem de resistência. Não coloca etilismo e tabagismo como o par de resposta para esse mecanismo esportivo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Fatores de risco e a tríade da mulher atleta; Fisiopatologia: fadiga, reparo e insuficiência. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Fatores de risco e a tríade da mulher atleta",
+          "Fisiopatologia: fadiga, reparo e insuficiência"
+        ],
+        "blocos": [
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-fb9f6f2f",
+          "fisiopatologia-fadiga-reparo-e-insuficiencia-ec1d349d"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "ad926c89ef0b62f9b911308dbd22a556074d0b9bf615e6cdfce79b2025d54ca4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0951": {
+    "questaoSha256": "9c38e42b6ac715b53db5a20fcb4b795431c848953f9521f5d93374c0b8231e1f",
+    "comentarioAnteriorSha256": "21d57c614af3fe6bed8538737e2ea22b6df3c29e431752948afb09043fa73666",
+    "comentario": {
+      "conceito": "A tríade não é apenas uma lista de três achados que coincidem por acaso. A **energia disponível insuficiente** pode comprometer a produção hormonal e o ciclo menstrual; a redução estrogênica favorece perda de massa óssea. Nesse contexto, a carga repetida fica mais difícil de reparar e aumenta a vulnerabilidade à fratura por estresse.\n\nNa terminologia atual descrita no capítulo, o conjunto é **baixa disponibilidade de energia, irregularidade menstrual e baixa densidade mineral óssea**. A alternativa A usa a formulação tradicional com desordem alimentar e osteoporose. O conceito atual é mais amplo: não exige um transtorno alimentar formal nem deve reduzir toda baixa densidade a um diagnóstico de osteoporose (resumo do Rockwood, 10ª ed., cap. 24, “A tríade da mulher atleta”).\n\nA avaliação precisa perguntar sobre alimentação e ciclos, mesmo quando o peso parece adequado. Consulte a seção no resumo da Biblioteca para estudar o mecanismo junto da definição.",
+      "correta": "**A: desordem alimentar, irregularidade menstrual ou amenorreia e osteoporose.** É a formulação tradicional correspondente ao conjunto. A leitura atual amplia os componentes energético e ósseo, sem mudar a associação central.",
+      "incorretas": {
+        "B": "**Descreve equilíbrio, não a tríade de risco.** Alimentação adequada, ciclo normal e saúde óssea preservada não representam o conjunto de alterações definido. A condição é justamente a interação de energia, função menstrual e massa óssea comprometidas.",
+        "C": "**Isola a alimentação e mantém normais os outros componentes.** Energia insuficiente é relevante, mas a alternativa não reproduz o conjunto menstrual e ósseo da tríade. O risco deve ser avaliado como um contínuo, sem confundir um fator isolado com a definição completa.",
+        "D": "**Inclui amenorreia e baixa massa óssea, mas retira o componente energético.** A formulação da tríade tem a energia insuficiente como elo importante. Uma alimentação declarada adequada exige avaliação clínica, mas não substitui esse componente na definição pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Fatores de risco e a tríade da mulher atleta. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Fatores de risco e a tríade da mulher atleta"
+        ],
+        "blocos": [
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+          "fatores-de-risco-e-a-triade-da-mulher-atleta-52d73ac0"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "9684cfba2d7cf2391943a08639a2a6c64687da7a5c7917db7adb916117328ff4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "quadril-0332": {
+    "questaoSha256": "27e85609d73376f08816e3da36200d561f797872e11b792a674298a97eea529c",
+    "comentarioAnteriorSha256": "1e63cb8aff89fe2b255275a0fbfffa73233a6be387422278a133e812b645a62e",
+    "comentario": {
+      "conceito": "No colo femoral, um traço superior e outro inferior não têm o mesmo comportamento sob carga. O lado **superior** é tracionado, de modo que a fissura tende a abrir a cada passo. O lado **inferior** é comprimido, com tendência ao fechamento e maior estabilidade.\n\nEssa diferença explica a indicação precoce de **fixação para a fratura superior, do lado de tensão**. A progressão para fratura completa e desviada pode resultar em pseudartrose e osteonecrose. Para a compressão inferior, o capítulo descreve carga restrita por pelo menos seis semanas e radiografias semanais, não a mesma conduta automática (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nO ponto decisivo é proteger a estrutura antes de uma complicação grave, não esperar que a dor se torne incapacitante. O resumo da Biblioteca apresenta a mecânica e o quadro de tratamento.",
+      "correta": "**C: superior.** É o lado de tensão, com tendência a propagação e desvio. A fixação precoce busca impedir essa progressão e suas consequências.",
+      "incorretas": {
+        "A": "**Inferior é o lado de compressão.** O traço tende a fechar sob carga e o capítulo descreve proteção de carga com seguimento. Não é a localização que caracteriza a indicação precoce de fixação pedida.",
+        "B": "**Anterior não é o critério mecânico utilizado.** A referência separa o lado superior de tensão do inferior de compressão. Uma localização apenas anterior não identifica essa diferença de risco.",
+        "D": "**Posterior também não substitui a distinção tensão/compressão.** A indicação descrita depende do lado superior. Trocar os planos anatômicos perde a relação entre carga e abertura da fissura."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Colo do fêmur. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Colo do fêmur"
+        ],
+        "blocos": [
+          "colo-do-femur-9a8e2d5d",
+          "colo-do-femur-5cfd8f77",
+          "colo-do-femur-fbdc6b09",
+          "colo-do-femur-891e93d3"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0694": {
+    "questaoSha256": "d7565a4d3aa0adcb915e75e9c9eae49aff11e7bf59166d92d374a60524e2709f",
+    "comentarioAnteriorSha256": "24fbaa7a3a76b42e6bdb0c842f6e2458c911346e33c456165e903a964749e1bc",
+    "comentario": {
+      "conceito": "O gabarito oficial escolhe o **navicular**, um sítio de alto risco por combinar irrigação pobre e cisalhamento elevado na região central dorsal. A lesão pode consolidar lentamente, evoluir para pseudartrose e exigir proteção rigorosa.\n\nHá, porém, uma limitação importante da questão: **o capítulo também lista os sesamoides do hálux como alto risco**. Portanto, o sesamoide medial da alternativa D não deve ser ensinado como baixo risco para tornar o gabarito C exclusivo. Ambos podem atender ao critério amplo do enunciado segundo a tabela consultada (resumo do Rockwood, 10ª ed., cap. 24, “Alto risco e baixo risco”).\n\nCalcâneo e fraturas diafisárias do segundo metatarso têm comportamento em geral mais favorável. Há uma exceção relevante no segundo metatarso: a base da bailarina tem risco de pseudartrose e não deve ser confundida com a diáfise do corredor. O resumo da Biblioteca permite estudar esses detalhes junto do alerta de ambiguidade.",
+      "correta": "**C: navicular.** É o gabarito oficial e um sítio de alto risco na fonte. Sua vulnerabilidade central dorsal tem relação com irrigação pobre e cisalhamento. A exclusividade da resposta, porém, é limitada porque o sesamoide medial também pertence ao grupo de alto risco.",
+      "incorretas": {
+        "A": "**O calcâneo tem comportamento geralmente favorável no capítulo.** A abordagem costuma ser reduzir atividade e proteger conforme a dor, sem colocá-lo na tabela de alto risco. Isso o diferencia do navicular, cuja consolidação exige maior cautela.",
+        "B": "**A região do segundo metatarso precisa ser especificada.** A diáfise do corredor é de baixo risco, enquanto a base da bailarina pode evoluir para pseudartrose. O nome do osso isolado não elimina essa exceção nem resolve a ambiguidade com a alternativa D.",
+        "D": "**Não é falsa como afirmação de alto risco segundo a fonte.** Os sesamoides do hálux constam da tabela de alto risco, e o medial é o mais acometido. A alternativa deve ser entendida como outro sítio compatível, embora a banca tenha escolhido o navicular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Alto risco e baixo risco; O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial C (navicular) preservado. A tabela do resumo do Rockwood, 10ª edição, capítulo 24, também classifica os sesamoides do hálux como alto risco. Assim, D (sesamoide medial) é igualmente compatível com o critério amplo do enunciado; não ensinar que seja baixo risco para tornar C exclusiva. A localização no segundo metatarso também importa: diáfise do corredor e base da bailarina têm riscos diferentes."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Alto risco e baixo risco",
+          "O pé: navicular, quinto metatarso e a fratura de marcha"
+        ],
+        "blocos": [
+          "alto-risco-e-baixo-risco-70c9cf0c",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-b413a949",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-cf3f777a",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-596eef80",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-472f3cfb"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "ddf0e3ab58aa67be9a2e7164822c55173e0746fc69c5915945bbfcd69d1aecf0"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
