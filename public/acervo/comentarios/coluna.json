@@ -2241,18 +2241,43 @@
   "conferido": false
  },
  "coluna-0208": {
+  "conceito": "Ao fletir e estender a coluna lombar, as vértebras precisam se mover numa direção permitida pelas articulações posteriores. As **facetas orientadas no plano sagital** favorecem esse movimento. A comparação com a torácica torna o raciocínio mais claro: ali as facetas são coronais, os discos são finos e as costelas acrescentam rigidez.\n\nO resumo descreve a região lombossacra como móvel em flexão e extensão justamente pela orientação sagital das facetas. A forma das superfícies articulares ajuda a guiar o movimento; o conjunto da região, incluindo discos e musculatura, participa de sua mecânica, mas não substitui essa orientação anatômica como resposta (resumo do Rockwood, 10ª ed., cap. 49, “Regiões, anatomia e lesões associadas”).\n\nEssa mudança entre um segmento torácico rígido e outro lombar móvel ajuda a entender por que a transição toracolombar é vulnerável ao trauma. Leia essa seção no resumo da Biblioteca para relacionar a anatomia ao comportamento da coluna.",
+  "correta": "**D: orientação das facetas articulares.** O alinhamento sagital das facetas lombares favorece flexão e extensão. É a característica articular que responde diretamente à mobilidade no plano perguntado.",
   "incorretas": {
-   "A": "A altura do disco influencia quanto a coluna se move, mas não em que direção. Quem define a direção são as facetas.",
-   "B": "A ausência das costelas tira uma restrição importante da coluna torácica, mas não explica por que a lombar flete e estende bem e gira pouco.",
-   "C": "Os músculos abdominais movem e estabilizam o tronco, mas não determinam a direção em que as articulações deslizam."
+   "A": "**A altura discal é parte da comparação, mas não substitui a orientação articular.** O resumo relaciona discos finos à rigidez torácica e facetas sagitais à flexão e extensão lombar. A opção destaca um componente sem identificar o guia articular cobrado.",
+   "B": "**Retirar a contenção costal não explica sozinho o plano do movimento.** As costelas contribuem para a rigidez torácica. A maior liberdade lombar em flexão e extensão é associada especificamente às facetas sagitais na fonte.",
+   "C": "**Controle muscular não equivale à orientação das articulações.** A pergunta é de anatomia regional: não atribui a mobilidade maior a um grupo muscular. A fonte localiza a explicação na disposição das facetas."
   },
-  "conceito": "Entre duas vértebras existem três articulações: o disco na frente e duas facetas atrás, uma de cada lado. O disco é flexível em quase todas as direções. Quem decide para onde a coluna pode ir são as **facetas**, pequenas superfícies articulares que deslizam uma sobre a outra. Elas funcionam como trilhos: o movimento acontece no sentido em que os trilhos deixam.\n\nNa coluna lombar as facetas são orientadas quase no **plano sagital**, ou seja, de frente para trás, como duas paredes paralelas que olham uma para a outra. Esse desenho deixa deslizar bem na flexão e na extensão e trava a rotação: quando você tenta girar o tronco, a faceta de um lado bate na do outro. Na coluna torácica é o contrário. As facetas ficam no plano coronal, como telhas sobrepostas, e permitem rotação, enquanto as costelas e o esterno limitam a flexão e a extensão.\n\nAlgumas consequências clínicas vêm direto disso. A transição toracolombar, onde as facetas mudam de orientação, concentra tensão e é a região da coluna que mais fratura. Como a faceta lombar trava a rotação, forças de torção sobrecarregam o disco e favorecem fissuras no seu anel. E facetas excessivamente sagitais em L4-L5 deixam a vértebra escorregar para a frente mais facilmente, um dos fatores da espondilolistese degenerativa.",
-  "correta": "Orientação das facetas articulares. Na lombar elas ficam quase no plano sagital e guiam o movimento de flexão e extensão, ao mesmo tempo em que limitam a rotação.",
   "referencias": [
-   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Regiões, anatomia e lesões associadas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Regiões, anatomia e lesões associadas"
+     ],
+     "blocos": [
+      "regioes-anatomia-e-lesoes-associadas-f5dd2b97",
+      "regioes-anatomia-e-lesoes-associadas-2166ad9f",
+      "regioes-anatomia-e-lesoes-associadas-107ede6e"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "529a4d805a78ba3870bd0ba5bb1a97f18bd4f266792dacda9e0a0af17c59a59c"
+    }
+   ],
+   "questaoSha256": "40c830bb63219bd975d641c36fa82a0ff4b8d8de290edcc1eef68aa93fa9d76f",
+   "comentarioSha256": "8b65196154768204dd6e18fba8a33662b9fabc5dd6b592acb3bfc69387df4d15"
+  }
  },
  "coluna-0209": {
   "incorretas": {
@@ -2684,18 +2709,44 @@
   "conferido": false
  },
  "coluna-0254": {
+  "conceito": "Depois de uma lesão medular aguda, o exame pode encontrar reflexos abolidos abaixo do trauma. Esse silêncio transitório é o **choque medular**, que não deve ser confundido com o choque neurogênico, um problema hemodinâmico de hipotensão e bradicardia.\n\nO **reflexo bulbocavernoso** é um arco sacral cuja resposta é a contração do esfíncter anal. Seu retorno indica que a atividade reflexa local reapareceu e marca o **fim do choque medular**. Isso torna mais informativa a avaliação da função abaixo da lesão, mas não demonstra, por si só, que os comandos motores ou a sensibilidade atravessam a região traumatizada (resumo do Rockwood, 10ª ed., cap. 49, “O choque medular e o reflexo bulbocavernoso”).\n\nUma lesão completa também pode ter o reflexo presente. A preservação sensitiva sacral tem outro significado: sugere condução através da lesão e, portanto, incompletude. São perguntas distintas: “o arco reflexo voltou?” e “há função preservada através da área lesada?”.\n\nHá uma ressalva nas lesões do cone e da cauda equina: o próprio arco sacral pode ser atingido, dificultando interpretar sua ausência. Consulte essas duas seções no resumo da Biblioteca; não atribua um prazo fixo de recuperação ao reflexo a partir deste capítulo.",
+  "correta": "**A: fim do choque medular.** A resposta anal reflexa mostra o retorno da atividade do arco sacral. Ela permite reavaliar a lesão após o silêncio reflexo inicial, sem prometer recuperação neurológica.",
   "incorretas": {
-   "B": "O reflexo não prediz a recuperação motora. Um paciente pode ter o bulbocavernoso presente e uma lesão completa, com prognóstico motor ruim.",
-   "C": "Também não prediz a recuperação sensitiva. O que tem valor prognóstico é o exame feito depois do fim do choque, principalmente a preservação sacral.",
-   "D": "Somar as duas funções não muda o raciocínio: o bulbocavernoso apenas marca o fim do choque, sem informar o prognóstico."
+   "B": "**Um reflexo local não comprova retorno do comando motor.** A resposta pode existir numa lesão medular completa. Para prognóstico motor é necessário avaliar a função preservada, e não converter o bulbocavernoso positivo em sinal de boa recuperação.",
+   "C": "**Sensibilidade preservada não é demonstrada pela contração reflexa.** O exame sensitivo, incluindo a região perianal, pesquisa outra função. O reflexo marca a saída do choque; não estabelece um bom prognóstico sensitivo isoladamente.",
+   "D": "**Juntar os dois prognósticos não muda o significado do achado.** O retorno do bulbocavernoso pode acompanhar uma lesão completa ou incompleta. Força e sensibilidade precisam ser examinadas separadamente após reconhecer o retorno da atividade reflexa."
   },
-  "conceito": "Logo depois de uma lesão grave da medula, tudo abaixo do nível lesado pode ficar completamente \"desligado\": sem força, sem sensibilidade e sem nenhum reflexo, nem os que dependem apenas de circuitos locais. Esse estado temporário de arreflexia é o **choque medular**. Enquanto ele dura, não dá para saber se a lesão é completa ou incompleta, porque até a parte da medula que sobreviveu está silenciosa.\n\nO sinal mais usado para saber que o choque acabou é o **reflexo bulbocavernoso**. Ele é um arco reflexo simples, que passa pelos segmentos sacrais S2 a S4 através do nervo pudendo: aperta-se a glande ou o clitóris (ou se traciona levemente a sonda vesical) e o esfíncter anal contrai. Esse reflexo é um dos primeiros a voltar, em geral nas primeiras 24 a 48 horas. Quando ele reaparece, o choque medular terminou e o exame neurológico passa a valer.\n\nE aí sim vem a informação de prognóstico. Se, com o bulbocavernoso presente, o paciente não tem nenhuma função sacral (nenhuma sensibilidade perianal, nenhuma contração anal voluntária), a lesão é **completa**, ASIA A, e a chance de recuperar função abaixo do nível é muito pequena. Se há qualquer preservação sacral, a lesão é **incompleta** e o horizonte é bem melhor.\n\nOu seja, o reflexo em si não diz se o paciente vai melhorar. Ele diz que agora é possível examinar. Uma ressalva: em lesões do cone medular ou da cauda equina, o próprio arco sacral pode estar destruído, e o reflexo pode não voltar mesmo sem choque.",
-  "correta": "Fim do choque medular. O retorno do bulbocavernoso mostra que os reflexos sacrais voltaram e que o exame neurológico já pode classificar a lesão.",
   "referencias": [
-   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+      "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+      "exame-neurologico-choque-neurogenico-choque-medu-acb3781c",
+      "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "d42b8ead6d9e05df705f60a434bd8967d93226abb971e9d5536854fd9d437e86"
+    }
+   ],
+   "questaoSha256": "84926064717d7d859975f06fc0cb9710be73e493ce2dcf528920195c225057a5",
+   "comentarioSha256": "4479f1326032a510168dd8e0d899b1730739e12edb6dfe8be2d5e26a8f4b90a8"
+  }
  },
  "coluna-0255": {
   "incorretas": {
@@ -3160,19 +3211,49 @@
   "conferido": false
  },
  "coluna-0292": {
+  "conceito": "A paciente não move os segmentos abaixo da lesão, mas ainda sente a região sacral S4–S5. Essa pequena área é decisiva: a **preservação sensitiva sacral torna a lesão incompleta**, mesmo quando o déficit motor é extenso. A ausência de movimento, sozinha, não autoriza chamá-la de ASIA A.\n\nNa escala de deficiência da Associação Americana de Lesões Espinhais, a separação inicial é entre lesão completa e incompleta. Depois se distingue preservação apenas sensitiva da preservação motora. O quadro descrito reúne **sensibilidade, inclusive sacral, sem função motora abaixo do nível**, compatível com **ASIA B** (resumo do Rockwood, 10ª ed., cap. 49, “Preservação sacral e a escala da ASIA”).\n\nSe existisse função motora abaixo do nível, seria necessário examinar os músculos-chave para distinguir C de D: em C, mais da metade tem força menor que 3; em D, pelo menos metade tem força 3 ou mais. Grau 3 significa vencer a gravidade, sem resistência adicional. Essa comparação não é necessária para escolher B neste caso, pois o enunciado já nega função motora abaixo da lesão.\n\n> **Na prova:** procure a preservação sacral antes de concluir que uma lesão é completa. O quadro da ASIA no resumo da Biblioteca ajuda a comparar os cinco graus.",
+  "correta": "**B: grau B.** Há função sensitiva abaixo do nível, inclusive S4–S5, e nenhuma função motora abaixo dele. A combinação define a alternativa sensitiva incompleta apresentada.",
   "incorretas": {
-   "A": "O grau A exige ausência total de função sensitiva e motora em S4-S5. Aqui há sensibilidade sacral, e a lesão é incompleta.",
-   "C": "O grau C exige alguma função motora preservada abaixo do nível, com a maioria dos músculos-chave abaixo de força 3. A paciente não tem nenhuma função motora abaixo do nível.",
-   "D": "O grau D exige função motora preservada, com pelo menos metade dos músculos-chave com força 3 ou mais.",
-   "E": "O grau E corresponde a sensibilidade e força normais, o que não é o caso."
+   "A": "**A preservação sacral impede classificar o caso como completo.** Grau A exige ausência de função sensitiva e motora sacral. Não basta haver paralisia abaixo da lesão: a sensibilidade S4–S5 descrita é o detalhe que muda a categoria.",
+   "C": "**Falta o componente motor necessário.** Grau C envolve preservação motora e maioria dos músculos-chave abaixo de força 3. A paciente não apresenta motricidade abaixo do nível, de modo que não há base para colocá-la nesse grupo.",
+   "D": "**Não há músculos abaixo da lesão vencendo a gravidade.** Grau D exige preservação motora com pelo menos metade dos músculos-chave em força 3 ou mais. O quadro é sensitivo incompleto, não motor incompleto desse grau.",
+   "E": "**Função normal é incompatível com a perda motora descrita.** O grau E corresponde à função neurológica normal. Preservar sensibilidade sacral é relevante, mas não torna normal o exame de uma paciente sem função motora abaixo do nível."
   },
-  "conceito": "A escala da ASIA (associação americana de lesão medular) classifica a lesão medular em cinco graus, de A a E, e o ponto de partida de toda a classificação é uma região pequena: os segmentos sacrais mais baixos, **S4 e S5**, que correspondem à pele em volta do ânus e ao esfíncter anal.\n\nA lógica é que esses segmentos são os mais distantes da lesão. Se ainda existe qualquer sinal de comunicação entre o cérebro e S4-S5, alguma fibra atravessou a lesão inteira, e ela é **incompleta**. Essa preservação sacral pode ser sensitiva (sentir o toque leve ou a picada na região perianal, ou a pressão anal profunda no toque retal) ou motora (contrair o ânus voluntariamente).\n\nCom isso, os graus ficam assim. **A**: lesão completa, sem nenhuma função sensitiva ou motora em S4-S5. **B**: incompleta só sensitiva, com sensibilidade preservada abaixo do nível, incluindo S4-S5, mas **sem função motora** abaixo do nível (pela revisão atual, sem motor preservado mais de três níveis abaixo do nível motor de cada lado). **C**: há função motora abaixo do nível, mas mais da metade dos músculos-chave abaixo dele têm força menor que 3, ou seja, não vencem a gravidade. **D**: há função motora e pelo menos metade dos músculos-chave tem força 3 ou mais. **E**: sensibilidade e força normais num paciente que tinha déficit.\n\nA paciente do enunciado sente abaixo do nível, inclusive em S4-S5, e não tem força nenhuma abaixo dele: é ASIA **B**. Um detalhe de prognóstico: no grau B, quem preserva a sensibilidade à picada tem chance bem maior de voltar a andar do que quem preserva só o toque.",
-  "correta": "Grau B. A lesão é incompleta, porque há sensibilidade preservada em S4-S5, mas não há nenhuma função motora abaixo do nível neurológico.",
   "referencias": [
-   "Kirshblum SC, Burns SP, Biering-Sorensen F, et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "exame-neurologico-choque-neurogenico-choque-medu-acb3781c",
+      "exame-neurologico-choque-neurogenico-choque-medu-74b74e9f",
+      "exame-neurologico-choque-neurogenico-choque-medu-cc51fb25",
+      "exame-neurologico-choque-neurogenico-choque-medu-544e5be0",
+      "exame-neurologico-choque-neurogenico-choque-medu-2a5de0df",
+      "exame-neurologico-choque-neurogenico-choque-medu-e152ac2d",
+      "exame-neurologico-choque-neurogenico-choque-medu-ce67a41e",
+      "exame-neurologico-choque-neurogenico-choque-medu-09b66f73"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "bc6da3f95d7908711668a8b909ce60d34185c1c17c98043990e98f292c843c9b"
+    }
+   ],
+   "questaoSha256": "1240207ee40fb46f6e3a3f6b9bad087b8f0456d347efd22b49d399fabbb39e83",
+   "comentarioSha256": "da8331b19041f28483e9b56da679472df2e888d5b229d4a09d5d81b7cfd9d3fa"
+  }
  },
  "coluna-0293": {
   "incorretas": {
@@ -3247,18 +3328,48 @@
   "conferido": false
  },
  "coluna-0298": {
+  "conceito": "Na desaceleração com um cinto abdominal como apoio, o tronco pode dobrar em torno de um fulcro anterior à coluna. A parte posterior se abre em tração: é a lógica da **fratura de Chance**, uma lesão por flexão-distração associada a lesões abdominais.\n\nNa forma **B1**, o traço atravessa uma única vértebra pelo osso, de trás para a frente, sem atingir o disco. O eixo fica **à frente do corpo vertebral**, onde o cinto atua sobre o abdome. A posição do fulcro liga a lesão vertebral à visceral e vascular; por isso reconhecer a fratura deve levar à procura de lesão abdominal, e não apenas ao tratamento da coluna (resumo do Rockwood, 10ª ed., cap. 49, “Flexão-distração e fratura de Chance”).\n\nA B2 também envolve a banda de tensão posterior, mas no nível intervertebral, com componente ligamentar e possível compressão ou explosão associada. Convém manter essa distinção: a Chance B1 da classificação revisada é transóssea, não um nome indistinto para toda ruptura ligamentar posterior.\n\n> **Na prova:** Chance liga flexão-distração ao abdome pelo fulcro anterior. No resumo da Biblioteca, compare B1, B2 e os respectivos mecanismos.",
+  "correta": "**A: de Chance.** O eixo de flexão anterior ao corpo, relacionado ao cinto abdominal, explica a associação característica com lesões viscerais e vasculares. A identificação da fratura pede avaliação conjunta do abdome.",
   "incorretas": {
-   "B": "A fratura por explosão vem da compressão axial, como na queda de altura. Seu risco principal é neurológico, pela retropulsão de fragmentos para o canal, e ela se associa a fraturas do calcâneo e dos membros inferiores.",
-   "C": "A fratura-luxação é muito grave e tem alta taxa de lesão medular, mas não tem a associação específica com lesões de vísceras ocas.",
-   "D": "Fraturas por hiperextensão são raras na coluna toracolombar e aparecem principalmente em colunas rígidas, como na espondilite anquilosante e na hiperostose esquelética difusa."
+   "B": "**Explosão é falha por compressão do corpo e da parede posterior.** Também pode coexistir com lesões abdominais no trauma de alta energia. A associação específica procurada aqui, porém, é a da flexão-distração com o fulcro abdominal.",
+   "C": "**Fratura-luxação destaca translação e grande instabilidade.** Pode lesar vasos e estruturas neurais, mas não reproduz o mecanismo do cinto que vincula Chance às lesões intestinais. Gravidade geral não equivale à associação mais característica perguntada.",
+   "D": "**Hiperextensão abre a banda anterior, com outro mecanismo.** O tipo B3 é típico da coluna anquilosada e também pode acompanhar lesão vascular. Isso não o torna o padrão mais associado ao mecanismo abdominal da flexão-distração."
   },
-  "conceito": "A fratura de **Chance** foi descrita em 1948 pelo radiologista G. Q. Chance como um traço horizontal que corta a vértebra de trás para a frente: atravessa o processo espinhoso, as lâminas, os pedículos e o corpo vertebral, como se a vértebra tivesse sido partida ao meio por uma faca. Pode ser toda óssea, toda ligamentar ou uma mistura das duas.\n\nO mecanismo é a **flexão com distração**, e a cena clássica é o passageiro de carro usando apenas o **cinto abdominal** de dois pontos, ou o de três pontos mal posicionado, com a faixa sobre a barriga. Na desaceleração brusca, o tronco é jogado para a frente e dobra em volta da faixa, que funciona como um eixo. A coluna à frente desse eixo é pouco comprimida, mas tudo o que está atrás é **estirado** até se romper. Por isso a lesão costuma acontecer na transição toracolombar ou na lombar alta.\n\nE aí está a ligação com o abdome. A mesma faixa que serviu de eixo esmagou o que estava na frente da coluna: alças do **intestino delgado**, o **mesentério**, a parede abdominal. A associação com lesões de vísceras ocas é **alta**, com taxas que variam entre as séries mas sempre preocupantes. O **sinal do cinto**, uma equimose transversal na barriga, deve fazer procurar ao mesmo tempo uma fratura de Chance e uma lesão intestinal. E a perfuração pode demorar a se manifestar, o que exige reavaliação seriada.\n\nAs outras fraturas têm outras associações: a explosão vem da compressão axial (queda de altura, com fraturas do calcâneo junto) e ameaça principalmente o canal; a fratura-luxação é grave e com muita lesão medular, mas sem a associação específica com vísceras ocas.",
-  "correta": "De Chance. A flexão em torno do cinto abdominal que produz a fratura também comprime as vísceras ocas contra a coluna, e a associação com lesões intestinais e do mesentério é alta.",
   "referencias": [
-   "Chance GQ. Note on a type of flexion fracture of the spine. Br J Radiol. 1948;21(249):452."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Flexão-distração e fratura de Chance (tipo B1 e B2); Fratura em explosão (A3 e A4); Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Flexão-distração e fratura de Chance (tipo B1 e B2)",
+      "Fratura em explosão (A3 e A4)",
+      "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+     ],
+     "blocos": [
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667",
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-f76eaccc",
+      "fratura-em-explosao-a3-e-a4-0ee57d4b",
+      "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
+      "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "3f42ebb4bf49f4f463a1dd34b6914c9223ea20a56c592bf2a994f19fda8f6725"
+    }
+   ],
+   "questaoSha256": "5b10a59f4f91f98f785fcf3cd82c8e2a226f19df0547c2851fc3ca9743797606",
+   "comentarioSha256": "55c6ad28342ea170821a0f1b98d8f63ae413194df0ffb7247abbe7597d08eef2"
+  }
  },
  "coluna-0299": {
   "incorretas": {
@@ -3345,32 +3456,85 @@
   "conferido": false
  },
  "coluna-0305": {
+  "conceito": "A distração é o padrão em que a coluna **se abre em tração**, com falha da banda de tensão. No TLICS, esse padrão recebe **4 pontos**, o maior valor entre os itens oferecidos. Translação, lesão do complexo ligamentar posterior e lesão da cauda equina recebem 3 em seus respectivos domínios.\n\nO TLICS, de Vaccaro, soma **morfologia, integridade do complexo ligamentar posterior e estado neurológico**. Na morfologia, a progressão é compressão 1, explosão 2, translação/rotação 3 e distração 4. A pontuação exprime o peso de cada achado na decisão, não uma simples contagem de fragmentos (resumo do Rockwood, 10ª ed., cap. 49, “O TLICS: a classificação que vira conduta”).\n\nÉ preciso distinguir **maior item isolado** de **escore total**. Depois de escolher a morfologia, somam-se os outros domínios: até 3 orienta tratamento não cirúrgico, 4 é zona de decisão individual e 5 ou mais orienta cirurgia. Assim, saber que a distração vale 4 não encerra a avaliação de um paciente real.\n\nO quadro do TLICS no resumo da Biblioteca reúne a soma e ajuda a evitar trocar o valor do item pelo limiar de conduta.",
+  "correta": "**B: o mecanismo de fratura por distração.** Embora o enunciado use “mecanismo”, o domínio da escala é a morfologia. A abertura em tração recebe 4 pontos, enquanto os outros três itens listados valem 3.",
   "incorretas": {
-   "A": "A lesão da cauda equina vale 3 pontos no componente neurológico, igual à lesão medular incompleta.",
-   "C": "A translação ou rotação vale 3 pontos na morfologia, um a menos que a distração.",
-   "D": "A lesão confirmada do complexo ligamentar posterior vale 3 pontos."
+   "A": "**A cauda equina recebe 3 no domínio neurológico.** Seu comprometimento pesa na indicação porque há tecido neural que pode se beneficiar de descompressão. Ainda assim, não supera os 4 atribuídos à distração na morfologia.",
+   "C": "**Translação/rotação vale 3, não 4.** É uma morfologia grave de deslocamento, mas a escala atribui à distração o maior valor entre essas duas. A gravidade clínica deve ser completada pelos demais domínios.",
+   "D": "**Complexo posterior lesado vale 3; indeterminado vale 2.** A ruptura compromete a banda de tensão e aumenta a instabilidade. A pergunta compara o valor de um achado, no qual os 4 da distração são maiores."
   },
-  "conceito": "O TLICS, proposto por Vaccaro e colaboradores em 2005, transformou a decisão de operar ou não uma fratura toracolombar numa soma de pontos. Ele avalia três coisas que, juntas, dizem o quanto a coluna está instável e o quanto o sistema nervoso está ameaçado.\n\nA primeira é a **morfologia**, o tipo de lesão vista na imagem. Compressão vale 1 ponto, e a explosão soma mais 1 (total 2). Translação ou rotação vale 3. E a **distração** vale **4**, o valor mais alto da escala. A distração é a lesão em que uma parte da coluna foi separada da outra no sentido do comprimento, como na fratura de Chance: significa que os elementos que seguravam as vértebras juntas foram rompidos.\n\nA segunda é a **integridade do complexo ligamentar posterior**, o conjunto de ligamentos de trás da coluna (supraespinhoso, interespinhoso, ligamento amarelo e cápsulas facetárias). Íntegro vale 0, indeterminado 2, lesado 3. Esse complexo cicatriza mal, e sua ruptura é sinal de instabilidade.\n\nA terceira é o **estado neurológico**: íntegro 0, lesão de raiz 2, lesão medular completa 2, lesão medular incompleta ou da cauda equina 3. A lesão incompleta pontua mais que a completa porque é nela que a descompressão pode mudar o resultado.\n\nSomando: até 3 pontos, tratamento conservador; 4 pontos, zona de decisão individual; 5 ou mais, cirurgia. Uma distração sozinha já leva o paciente a 4 pontos.",
-  "correta": "O mecanismo de fratura por distração. Na morfologia do TLICS, a distração vale 4 pontos, o maior valor isolado da escala.",
   "referencias": [
-   "Vaccaro AR, Lehman RA Jr, Hurlbert RJ, et al. A new classification of thoracolumbar injuries: the importance of injury morphology, the integrity of the posterior ligamentous complex, and neurologic status. Spine. 2005;30(20):2325-2333."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
+    }
+   ],
+   "questaoSha256": "cad018e37077b5b5172887e80bd268fc6b0394c7f0accb89fbc7753af84064b5",
+   "comentarioSha256": "66aaed62cbee057275b3ed327a1c6f348d462d520115801e53999c2d91b71613"
+  }
  },
  "coluna-0306": {
+  "conceito": "Pense na vértebra que perde altura na frente e fica em **cunha**, mantendo a parede posterior do corpo preservada. Esse é o padrão osteoporótico típico por compressão e corresponde à falha da **coluna anterior de Denis**. A osteoporose, porém, não impede outros padrões: se a parede posterior também quebra, já não se trata de uma simples cunha.\n\nDenis divide a sustentação em três regiões. A **anterior** contém a metade anterior do corpo e do ânulo, com o ligamento longitudinal anterior. A **média** contém a metade posterior do corpo e do ânulo, com o longitudinal posterior. A **posterior** reúne arco neural, facetas e complexo ligamentar posterior (resumo do Rockwood, 10ª ed., cap. 49, “De Holdsworth a Denis”).\n\nA parede posterior separa a cunha da **explosão**: nesta, falham as colunas anterior e média e pode haver retropulsão para o canal. Portanto, a resposta não deve ensinar que toda fratura em osso osteoporótico compromete apenas a região anterior; ela identifica o padrão típico que o enunciado está cobrando.\n\nCompare no resumo da Biblioteca o modelo de Denis com os tipos A1 a A4 da AO Spine para visualizar essa diferença.",
+  "correta": "**A: anterior.** Na compressão osteoporótica típica, a frente do corpo cede e forma a cunha, com a parede posterior preservada. É essa morfologia que corresponde à falha anterior isolada.",
   "incorretas": {
-   "B": "A coluna posterior fica preservada na fratura osteoporótica típica.",
-   "C": "A falha das colunas anterior e média caracteriza a fratura por explosão, que não é o padrão osteoporótico habitual.",
-   "D": "A falha das colunas média e posterior sem a anterior não corresponde ao padrão osteoporótico."
+   "B": "**A coluna posterior não é a parte que forma a cunha do corpo.** Ela contém o arco neural, as facetas e a banda ligamentar. Sua falha pertence a outro problema mecânico, que deve ser investigado separadamente.",
+   "C": "**Anterior e média caracterizam a explosão.** Esse padrão inclui a parede posterior do corpo e admite retropulsão. Pode ocorrer em osso osteoporótico, mas não é a compressão anterior típica pressuposta pela questão.",
+   "D": "**Média e posterior não descrevem o afundamento anterior típico.** Essa combinação envolve o suporte junto ao canal e os elementos de trás. Não corresponde à cunha com parede posterior preservada."
   },
-  "conceito": "Para entender onde a vértebra osteoporótica quebra, vale usar o modelo das **três colunas de Denis**. A coluna **anterior** é formada pela metade da frente do corpo vertebral, a parte da frente do disco e o ligamento longitudinal anterior. A coluna **média** é a metade de trás do corpo vertebral, a parte de trás do disco e o ligamento longitudinal posterior, ou seja, o muro que fica bem na frente do canal. A coluna **posterior** é o arco com os ligamentos de trás.\n\nNa osteoporose, o osso esponjoso do corpo vertebral perde massa e as trabéculas horizontais, que funcionam como travessas de um andaime, vão sumindo. O corpo fica frágil para a compressão. Como, na postura normal, a parte da frente da vértebra torácica recebe mais carga, é ela que cede primeiro: um esforço pequeno (levantar uma sacola, uma tosse, às vezes nada que o paciente lembre) e a frente do corpo afunda, deixando a vértebra em **cunha**. É a falha da **coluna anterior**, uma fratura por compressão.\n\nComo o muro posterior fica intacto, não há fragmentos empurrados para o canal, e a fratura é considerada estável. A dor costuma melhorar em semanas, mas várias fraturas acumuladas levam à perda de altura e à cifose torácica progressiva.\n\nQuando a coluna média também falha, a fratura deixa de ser uma compressão simples e vira uma explosão osteoporótica, com risco de fragmentos dentro do canal e de déficit neurológico. Esses casos merecem avaliação mais cuidadosa, inclusive com tomografia.",
-  "correta": "Anterior. A fratura osteoporótica típica é a compressão em cunha, em que só a parte anterior do corpo vertebral cede, com o muro posterior preservado.",
   "referencias": [
-   "Denis F. The three column spine and its significance in the classification of acute thoracolumbar spinal injuries. Spine. 1983;8(8):817-831."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS; Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS",
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-4e3ada20",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-ec0d5adc",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-6c104b05",
+      "fratura-em-explosao-a3-e-a4-0ee57d4b",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "164ceb454cc03cbe5c800b7fd6c61de948fb8f2cc71e22a3f37fa2b0bcb73382"
+    }
+   ],
+   "questaoSha256": "108e0d6c48d0fdbb072707f961280fbb5dad2be14888f4670a8fb7208977b6d3",
+   "comentarioSha256": "841886556082343b764ec19b0c772bd700771cbfa81aa2b1f46b31765a3a2073"
+  }
  },
  "coluna-0307": {
   "incorretas": {
@@ -6738,18 +6902,43 @@
   "conferido": false
  },
  "coluna-0534": {
-  "conceito": "**O que é estabilidade.** WHITE e PANJABI definem estabilidade como a capacidade da coluna, sob cargas fisiológicas, de limitar o deslocamento a ponto de não lesar nem irritar a medula e as raízes e de não evoluir para deformidade ou dor incapacitantes. Decidir se uma fratura é estável é o passo mais importante para escolher o tratamento.\n\n**O que a radiografia ainda ensina.** A tomografia substituiu a radiografia como exame inicial no trauma de alta energia, mas o AP e o perfil continuam úteis, sobretudo **em pé**, para testar a coluna sob carga. Os pontos a examinar:\n\n- alinhamento sagital e coronal, rotação e translação;\n- integridade das três colunas de DENIS;\n- **perda de altura** do corpo, medida como porcentagem das alturas anterior e posterior em relação às vértebras vizinhas;\n- **cifose**, pelo ângulo de COBB entre o platô superior da vértebra acima e o inferior da vértebra abaixo da fratura;\n- **aumento da distância interpedicular** (explosão) e da **distância interespinhosa** (lesão da banda de tensão posterior);\n- alargamento assimétrico do disco, que sugere lesão discoligamentar.\n\n**Os números de instabilidade.** O capítulo 49 do Rockwood (10ª ed.) cita que a combinação de **perda de altura acima de 50%, cifose acima de 30 graus e translação de 2,5 mm** indica lesão instável. São os mesmos limites que aparecem como indicações relativas de cirurgia na explosão sem déficit (cifose de 30 graus ou mais, perda de altura acima de 50%) e como indicação de via anterior (cifose acima de 30 graus).\n\n**Não confundir com a coluna cervical.** Na coluna subaxial, WHITE e PANJABI usam outros limites: cifose segmentar acima de 11 graus e translação acima de 3,5 mm. A coluna toracolombar, com corpos maiores e outra biomecânica, tem números próprios.\n\n**Para o tratamento conservador.** Os autores tratam com órtese e controle próximo as explosões sem déficit com cifose abaixo de 25 graus, perda de altura abaixo de 50% e cominuição leve a moderada; e acompanham de perto as compressões (A1) com mais de 50% de perda de altura e 25 graus de cifose.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Plain Radiographs e Classification, figura 49-8.\n\n> **Na prova:** fratura toracolombar instável: perda de altura acima de 50%, cifose acima de 30 graus e translação de 2,5 mm.",
-  "correta": "**D: 50%; 30 graus; 2,5 mm.** Perda de mais da metade da altura do corpo, cifose acima de 30 graus e translação de 2,5 mm indicam, em conjunto, lesão instável. Esses números traduzem falha da coluna anterior e da banda de tensão posterior: o corpo não sustenta a carga e os elementos posteriores não seguram a flexão.",
+  "conceito": "A imagem da fratura toracolombar precisa ser lida em três dimensões: quanto o corpo perdeu de altura, quanto o segmento angulou em cifose e quanto houve deslocamento. A tríade descrita no capítulo é **perda de altura acima de 50%, cifose acima de 30 graus e translação de 2,5 mm**. É a combinação reproduzida pela alternativa D.\n\nEsses sinais não são a mesma medida com unidades diferentes. A altura é comparada em porcentagem, a deformidade angular em graus e o deslocamento em milímetros. Eles alertam para instabilidade, mas não dispensam o exame neurológico nem a avaliação da banda de tensão posterior (resumo do Rockwood, 10ª ed., cap. 49, “Quando operar a explosão”).\n\nOutro número não deve entrar no lugar deles: a porcentagem de invasão do canal, sozinha e sem déficit, não indica cirurgia. O capítulo distingue a imagem do fragmento no canal da perda de sustentação e de alinhamento. No resumo da Biblioteca, leia os critérios junto da discussão da explosão estável para entender essa diferença.\n\n**Por que esta questão foi criada.** Os critérios de altura e cifose aparecem nas questões de conduta toracolombar; o simulado acrescenta a translação para treinar a tríade radiográfica descrita no capítulo.",
+  "correta": "**D: 50%; 30 graus; 2,5 mm.** É a sequência de altura, angulação e translação apresentada na fonte. A interpretação clínica ainda integra neurologia e integridade posterior.",
   "incorretas": {
-   "A": "**Limites baixos demais.** Com 25% de perda de altura e 15 graus de cifose, a maioria das fraturas por compressão continua estável e é tratada sem cirurgia. Esses valores transformariam fraturas estáveis em instáveis. Uma translação de 1 mm está dentro do erro da medida.",
-   "B": "**Mistura números de outros contextos.** Os 50% de perda de altura estão certos. Mas 20 graus é o limite de falha do colete na flexão-distração da criança, e 3,5 mm é o limite de translação de WHITE e PANJABI para a coluna cervical subaxial. A combinação toracolombar é 30 graus e 2,5 mm.",
-   "C": "**Perda de altura baixa e translação alta.** Trinta graus de cifose estão certos, mas 30% de perda de altura é compatível com uma compressão estável, e 5 mm de translação já indicaria lesão grosseiramente instável, ultrapassando o limite descrito de 2,5 mm."
+   "A": "**Reduz os três limites em relação à tríade descrita.** Perda de 25%, cifose de 15 graus e translação de 1 mm não reproduzem os valores do capítulo. Não basta listar três alterações; os limites pedidos também precisam corresponder.",
+   "B": "**Mantém a altura, mas troca cifose e translação.** A tríade usa 30 graus e 2,5 mm, não 20 graus e 3,5 mm. A semelhança de um dos componentes não valida o conjunto.",
+   "C": "**Acerta a cifose e altera as outras duas medidas.** A perda de altura é acima de 50%, e o deslocamento informado é 2,5 mm. A opção exige 5 mm enquanto reduz o limite de altura para 30%."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "fratura-em-explosao-a3-e-a4-eb5b42b1",
+      "fratura-em-explosao-a3-e-a4-c49f544e",
+      "fratura-em-explosao-a3-e-a4-b87f9844"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "1676a22753aded736973a81df067a470f86091a8354e3f3bb87d49caf1ff5f47"
+    }
+   ],
+   "questaoSha256": "e215c1216e947cf98793d4c29f95f7716ef63dab82752cabbeada35ea6fdc1bd",
+   "comentarioSha256": "9e28eb30da9f3ba06582044fc3ef6a09b3b1a881bcb5d490c1fa01523c95bdee"
+  }
  },
  "coluna-0535": {
   "conceito": "**O que foi medido.** No AP, os pedículos aparecem como dois ovais de cada lado do corpo vertebral. A **distância interpedicular** é a distância entre as bordas internas desses ovais. Ela aumenta discretamente de cima para baixo, mas entre vértebras vizinhas a diferença é pequena. Na figura, ela mede 22 mm no nível de cima e 28 mm no nível fraturado.\n\n**Por que ela aumenta na explosão.** Na fratura em explosão, uma carga axial rompe o corpo vertebral de dentro para fora, incluindo a **parede posterior** (coluna média de DENIS). O corpo se abre como uma tampa que estoura: os fragmentos vão para os lados e para trás, para dentro do canal. Os pedículos, presos à parte posterior do corpo, são empurrados para fora, e a distância entre eles aumenta. É o sinal radiográfico clássico de que a fratura não é uma simples compressão anterior.\n\n**Como diferenciar no AP e no perfil:**\n\n| Achado | Sugere |\n|---|---|\n| Perda de altura só anterior, parede posterior íntegra | Compressão (A1, A2) |\n| Aumento da distância interpedicular, parede posterior fraturada | Explosão (A3, A4) |\n| Aumento da distância interespinhosa | Lesão da banda de tensão posterior (tipo B) |\n| Desvio lateral ou translação entre corpos | Fratura-luxação (tipo C) |\n\n**O caso da figura.** É uma adolescente que caiu de cerca de 9 metros, com explosão completa de T12 e também falha da banda de tensão posterior (T11-T12 B2; T12 A4), lesão do cone e 16 graus de angulação coronal pelo colapso assimétrico. Foi tratada por via posterior e, sem suporte anterior, os parafusos quebraram depois, exigindo osteotomia. O AP mostra só a explosão; a lesão posterior precisa ser procurada no perfil, na tomografia ou na ressonância.\n\n**A tomografia confirma.** O AP sugere, mas é a tomografia que mostra a fratura da parede posterior e o quanto de fragmento invadiu o canal. Ela tem sensibilidade de 99% para fraturas e deve incluir toda a coluna no politraumatizado, porque até 20% têm fraturas não contíguas.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Plain Radiographs, figura 49-3.\n\n> **Na prova:** distância interpedicular aumentada no AP é sinal de fratura em explosão.",
@@ -6780,46 +6969,123 @@
   "conferido": false
  },
  "coluna-0537": {
-  "conceito": "**Por que um escore.** As classificações antigas (DENIS, ALLEN e FERGUSON, a AO original) descreviam bem as fraturas, mas não incluíam o estado neurológico, não davam um algoritmo de tratamento e tinham reprodutibilidade fraca. A **Thoracolumbar Injury Classification and Severity Score (TLICS)**, de VACCARO e colaboradores, soma pontos em três categorias para orientar a conduta.\n\n**A tabela (tabela 49-1 do capítulo):**\n\n| Categoria | Achado | Pontos |\n|---|---|---|\n| Morfologia | Compressão | 1 |\n| | Explosão | 2 (compressão + 1) |\n| | Translação/rotação | 3 |\n| | Distração | 4 |\n| Complexo ligamentar posterior | Íntegro | 0 |\n| | Suspeito ou indeterminado | 2 |\n| | Lesado | 3 |\n| Neurologia | Intacto | 0 |\n| | Raiz | 2 |\n| | Medula ou cone, lesão completa | 2 |\n| | Medula ou cone, lesão incompleta | 3 |\n| | Cauda equina | 3 |\n\n**Como decidir.** Até 3 pontos, tratamento não cirúrgico; 4 pontos, decisão do cirurgião; 5 ou mais, cirurgia.\n\n**Por que a distração pontua mais que a translação.** Parece contraintuitivo, porque a fratura-luxação é a lesão mais instável. A lógica do escore é que, na distração, a coluna se separa no eixo longitudinal: a banda de tensão falhou por tração, e a lesão é inerentemente instável sob carga, com risco de abrir ainda mais. Na prática, uma lesão por translação quase sempre vem com complexo ligamentar lesado (mais 3) e déficit neurológico, e acaba bem acima de 5 de qualquer forma.\n\n**Limitações que o capítulo aponta.** Depende de um exame neurológico confiável, que falta em muitos politraumatizados; não descreve a \"personalidade\" da fratura nem diz qual cirurgia fazer; e reflete a prática norte-americana, menos aplicável onde a explosão sem déficit costuma ser operada.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Thoracolumbar Injury Classification and Severity Score, tabela 49-1.\n\n> **Na prova:** TLICS: compressão 1, explosão 2, translação/rotação 3, distração 4; até 3 conservador, 5 ou mais cirurgia.",
-  "correta": "**C: 3 e 4 pontos.** Na TLICS, a translação/rotação vale 3 pontos e a distração vale 4, a maior pontuação de morfologia. A compressão vale 1 e a explosão 2. Somada ao complexo ligamentar posterior e à neurologia, a pontuação total define o tratamento: até 3, conservador; 4, a critério do cirurgião; 5 ou mais, cirúrgico.",
+  "conceito": "Se o corpo vertebral falha em compressão, ele cede sob carga; se há distração, a coluna **se abre em tração**. O TLICS atribui pesos diferentes a esses padrões, e o par perguntado é **translação/rotação 3; distração 4**.\n\nO nome da escala significa classificação e escore de gravidade da lesão toracolombar. Seu domínio morfológico progride de compressão 1 e explosão 2 para translação/rotação 3 e distração 4. Nesta última, a falha da banda de tensão explica o peso elevado; não é uma contagem de vértebras nem uma medida percentual de deslocamento (resumo do Rockwood, 10ª ed., cap. 49, “O TLICS: a classificação que vira conduta”).\n\nA pontuação morfológica ainda se soma ao estado neurológico e à integridade do complexo posterior. O total, não apenas o par desta pergunta, orienta não operar até 3, individualizar em 4 e operar a partir de 5. O resumo da Biblioteca permite conferir os três domínios no mesmo quadro.\n\n**Por que esta questão foi criada.** A maior pontuação da distração foi cobrada no TARO 2013 e na morfologia do TLICS no TARO 2025; o par testa a inversão entre distração e translação.",
+  "correta": "**C: 3 e 4 pontos.** A ordem do enunciado é translação/rotação primeiro, distração depois. O valor maior pertence à abertura em tração.",
   "incorretas": {
-   "A": "**Desloca a escala para baixo.** Dois pontos é a explosão, e 3 é a translação/rotação. A distração vale 4, não 3. Quem marca esta alternativa costuma esquecer que a explosão já ocupa o degrau 2.",
-   "B": "**Inverte as duas.** É a confusão clássica: achar que a translação, por ser a lesão mais grave, tem a maior pontuação. Na TLICS, a distração recebe 4 e a translação/rotação 3.",
-   "D": "**Dá o mesmo peso às duas.** As duas são lesões graves, mas o escore as separa: translação/rotação 3 e distração 4. Saber essa diferença é o que a pergunta testa."
+   "A": "**Desloca ambos os valores um ponto para baixo.** Dois é o valor da explosão, não da translação/rotação. A distração recebe 4; por isso o par 2 e 3 não corresponde às morfologias descritas.",
+   "B": "**Inverte os dois valores corretos.** Quatro pertence à distração e 3 à translação/rotação. Reconhecer os números sem ligá-los ao padrão é insuficiente para acertar a ordem.",
+   "D": "**Iguala padrões que a tabela diferencia.** O 3 está correto para translação/rotação, mas a distração acrescenta um ponto no domínio morfológico. Ela recebe 4 pela falha em abertura da banda de tensão."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
+    }
+   ],
+   "questaoSha256": "4547a8f1d87bc724e5f02486ac45f1c3ca77554655e950bbf24d19c7bd1c911a",
+   "comentarioSha256": "d9c1030521b6f23ad9c60cb27d14ba16070631b2797180eac9431c056c73fc8d"
+  }
  },
  "coluna-0538": {
-  "conceito": "**A conta.** A TLICS soma três categorias:\n\n- **morfologia:** explosão = 2 (compressão 1 + 1 pela explosão);\n- **complexo ligamentar posterior:** indeterminado = 2;\n- **neurologia:** intacto = 0.\n\nTotal: **4 pontos**, a zona cinzenta em que a decisão fica a critério do cirurgião (até 3 é conservador; 5 ou mais, cirúrgico). No algoritmo (figura 49-15), 4 pontos permitem tratamento conservador com órtese na explosão sem lesão do complexo posterior, ou cirurgia se houver suspeita de lesão posterior.\n\n**Por que o complexo posterior é tão decisivo.** O complexo ligamentar posterior (cápsulas facetárias, ligamentos interespinhoso e supraespinhoso e ligamento amarelo) é a banda de tensão da coluna. Na explosão, as colunas anterior e média já falharam em compressão; se a banda de tensão posterior também falhou, nada segura a flexão, e a cifose progride. É a diferença entre uma explosão estável e uma lesão de três colunas.\n\n**O problema da ressonância.** A ressonância é mais sensível que a tomografia para o complexo posterior, mas tem **baixa especificidade**: mostra edema e sinal alterado que nem sempre correspondem a ruptura real vista na cirurgia, e tende a superestimar a instabilidade e a indicação cirúrgica. Por isso o capítulo 49 do Rockwood (10ª ed.) recomenda não concluir pela lesão do complexo posterior só pela ressonância, mas pela combinação de radiografias, tomografia e ressonância. Sinais que ajudam: aumento da distância interespinhosa, abertura ou subluxação das facetas, cifose progressiva na radiografia em pé.\n\n**Como os autores resolvem a dúvida.** Na explosão sem déficit, fazem radiografia **em pé**: lesões com complexo posterior rompido aumentam bastante a cifose com a carga. Sem mudança importante do alinhamento, seguem com tratamento conservador.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Magnetic Resonance Imaging e TLICS, tabela 49-1 e figura 49-15.\n\n> **Na prova:** explosão (2) + complexo posterior indeterminado (2) + neurologia intacta (0) = 4, decisão do cirurgião.",
-  "correta": "**A: 4; decisão a critério do cirurgião.** A explosão soma 2 pontos, o complexo ligamentar posterior indeterminado mais 2, e a neurologia intacta zero. Com 4 pontos, a TLICS deixa a decisão ao cirurgião: a radiografia em pé e a combinação dos exames de imagem ajudam a decidir entre órtese e fixação.",
+  "conceito": "O caso descreve explosão de L1, neurologia intacta e complexo posterior **indeterminado**. Cada palavra tem um valor: explosão **2**, complexo indeterminado **2**, neurologia intacta **0**. O total é **4**, a zona de decisão individual no TLICS.\n\n“Indeterminado” não quer dizer íntegro nem comprovadamente roto. Essa diferença importa porque trocar o domínio ligamentar para 0 ou 3 mudaria o total e a recomendação. A ressonância é sensível para o complexo posterior, mas pode superestimar sua lesão; o capítulo recomenda integrar radiografia, tomografia e ressonância em vez de operar por um sinal isolado (resumo do Rockwood, 10ª ed., cap. 49, “O TLICS” e “A ressonância: sensível demais”).\n\nAssim, a escala organiza a incerteza em vez de apagá-la. O julgamento considera o conjunto da lesão; o número 4 não obriga cirurgia nem equivale ao grupo não cirúrgico de até 3. O quadro do resumo da Biblioteca mostra lado a lado o valor ligamentar e os limites de conduta.\n\n**Por que esta questão foi criada.** É um treino da soma do TLICS e da diferença entre complexo suspeito e roto, combinação que muda a decisão e tem formato típico de caso de prova.",
+  "correta": "**A: 4; decisão a critério do cirurgião.** A conta é 2 + 2 + 0. O total cai exatamente na zona intermediária da classificação, preservando a necessidade de avaliação individual.",
   "incorretas": {
-   "B": "**Esquece um dos componentes.** Três pontos seriam, por exemplo, uma compressão (1) com complexo posterior indeterminado (2). Na explosão, a morfologia já vale 2; somada ao ligamento indeterminado (2), a conta chega a 4, acima da faixa conservadora.",
-   "C": "**Superestima o ligamento.** Cinco pontos exigiriam, por exemplo, explosão com complexo posterior claramente lesado (2 + 3). O complexo indeterminado vale 2, não 3, e o paciente está neurologicamente intacto, o que soma zero.",
-   "D": "**Pontuação de lesão mais grave.** Seis pontos corresponderiam a uma explosão com complexo posterior indeterminado e lesão de raiz ou medular completa (2 + 2 + 2). Sem déficit neurológico, a soma para em 4."
+   "B": "**Três não é a soma dos achados.** Explosão não vale 1 como compressão simples: recebe 2. Somada ao complexo indeterminado, chega a 4, não à faixa de até 3.",
+   "C": "**Cinco exigiria um ponto que o caso não fornece.** Complexo comprovadamente lesado valeria 3, mas foi descrito como indeterminado, de 2. Não converter a dúvida ligamentar em ruptura para impor a indicação cirúrgica.",
+   "D": "**Seis não corresponde a nenhum somatório autorizado aqui.** A neurologia está intacta, de 0, e os outros domínios valem 2 cada. Não há déficit nem valor ligamentar maior para justificar esse total."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS; Imagem: radiografia, tomografia e ressonância."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS",
+      "Imagem: radiografia, tomografia e ressonância"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
+      "imagem-radiografia-tomografia-e-ressonancia-00da61c5"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "8387f9dec68ba4696aee5f59894a0d38b36218d64062568647a1ad8091d380f3"
+    }
+   ],
+   "questaoSha256": "784b4799f17273f0d2f16230c964dd5f0a101910c047e4b3752f195420b1f9d8",
+   "comentarioSha256": "08cc9f5537a2ac636eb41cc09b8ab7e8dd2255cd47b916ba2fa5f116e3dc158f"
+  }
  },
  "coluna-0539": {
-  "conceito": "**Os pontos da neurologia na TLICS:**\n\n| Estado neurológico | Pontos |\n|---|---|\n| Intacto | 0 |\n| Lesão de raiz | 2 |\n| Lesão completa da medula ou do cone | 2 |\n| Lesão incompleta da medula ou do cone | 3 |\n| Síndrome da cauda equina | 3 |\n\n**Por que a lesão incompleta vale mais que a completa.** O escore não mede a gravidade do dano já feito; mede o quanto a cirurgia tem a oferecer. Na lesão **incompleta**, ainda há fibras funcionando através da lesão; descomprimir e estabilizar pode preservar e recuperar função, e esperar pode significar perder o que resta. Na lesão **completa**, a chance de recuperação abaixo do nível é pequena, e a cirurgia serve mais para estabilizar e facilitar reabilitação. Por isso a incompleta pesa 3 e a completa 2.\n\n**Por que a cauda equina vale 3.** A cauda equina é formada por raízes, que têm boa capacidade de recuperação quando descomprimidas, e sua lesão compromete bexiga, intestino e função sexual. Como na medula incompleta, há muito a ganhar com a descompressão.\n\n**Como isso aparece na AO Spine.** A AO Spine toracolombar usa outra escala neurológica: N0 intacto, N1 déficit transitório já resolvido, N2 sintomas radiculares, N3 cauda equina ou lesão medular incompleta, N4 lesão medular completa, NX exame impossível (sedação, trauma craniano), e o sinal + para compressão medular contínua. Repare que também ali a cauda equina e a lesão incompleta ficam juntas (N3).\n\n**Lembrete de exame.** A sensibilidade perianal pode ser o único sinal de preservação sacral e, portanto, de lesão incompleta, com melhor prognóstico. A escala ASIA, idealmente feita nas primeiras 72 horas, classifica a lesão de A (completa) a E (normal).\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções de avaliação do paciente e TLICS, tabelas 49-1 e 49-2.\n\n> **Na prova:** na TLICS, lesão medular incompleta e cauda equina valem 3; raiz e lesão completa valem 2.",
-  "correta": "**D: a lesão medular incompleta e a síndrome da cauda equina.** As duas valem 3 pontos porque são as situações em que a descompressão cirúrgica mais pode recuperar função: fibras medulares ainda conduzindo, na incompleta, e raízes com boa capacidade de recuperação, na cauda equina. Lesão de raiz e lesão medular completa valem 2.",
+  "conceito": "No TLICS, uma lesão medular **incompleta** pontua mais que uma completa: **3 contra 2**. O raciocínio não é diminuir a gravidade da completa, mas dar peso à possibilidade de preservar ou recuperar função com descompressão. A **cauda equina** também recebe **3** no domínio neurológico.\n\nO quadro completo fica: neurologia intacta 0; lesão de raiz 2; medula ou cone com lesão completa 2; medula ou cone com lesão incompleta 3; cauda equina 3. Portanto, a pergunta deve ser respondida pelo par de categorias de 3, não apenas pelo nome mais impressionante (resumo do Rockwood, 10ª ed., cap. 49, “O TLICS: a classificação que vira conduta”).\n\nEsse valor é somado à morfologia e ao complexo ligamentar posterior. Não é a classificação ASIA, embora o exame neurológico seja indispensável para ambos os sistemas: a ASIA caracteriza a função, enquanto o TLICS usa o estado neurológico como um dos domínios da decisão terapêutica.\n\nLeia o quadro no resumo da Biblioteca para revisar as categorias sem confundir pontuação neurológica com gravidade clínica absoluta.\n\n**Por que esta questão foi criada.** A inversão intuitiva entre lesão completa e incompleta é uma armadilha útil para estudar o TLICS; o capítulo dá peso explícito à função ainda recuperável.",
+  "correta": "**D: lesão medular incompleta e síndrome da cauda equina.** Ambas recebem 3 no domínio neurológico. É esse par, e não completa com raiz, que ocupa a faixa mais alta desse domínio.",
   "incorretas": {
-   "A": "**Ambas valem 2.** A lesão de raiz e a lesão medular completa recebem 2 pontos. A completa pesa menos que a incompleta porque a cirurgia tem pouco a recuperar abaixo do nível.",
-   "B": "**Só uma delas vale 3.** A lesão incompleta vale 3, mas a completa vale 2. Essa diferença é a pegadinha mais cobrada da TLICS.",
-   "C": "**Só uma delas vale 3.** A síndrome da cauda equina vale 3, mas a lesão de raiz isolada vale 2."
+   "A": "**Os dois itens listados valem 2.** Lesão de raiz e lesão medular completa não são equivalentes clinicamente, mas compartilham esse valor no TLICS. A pergunta pede especificamente as categorias de 3.",
+   "B": "**Mistura uma categoria de 2 com outra de 3.** A completa recebe 2; a incompleta, 3. A escala valoriza a possibilidade de benefício neurológico, não apenas a extensão do déficit já instalado.",
+   "C": "**Acerta a cauda equina e erra a raiz.** A síndrome da cauda equina recebe 3; a lesão de raiz recebe 2. Compartilhar anatomia periférica não torna essas categorias iguais na tabela."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
+    }
+   ],
+   "questaoSha256": "3ad707ca56c9c6e9725e35395bf500353d58c8380e851df9b70404f2b84eddfd",
+   "comentarioSha256": "4569cf28ee0d305aab6f5f3c6bb6479144be16a8901db35129aeb7fe66f97172"
+  }
  },
  "coluna-0540": {
   "conceito": "**A lógica da AO Spine toracolombar.** A versão revisada (VACCARO e colaboradores, 2013) classifica as lesões em três tipos, em ordem crescente de instabilidade, com um fluxograma simples (figura 49-18): primeiro pergunta se há deslocamento ou luxação (tipo C); depois, se a banda de tensão falhou (tipo B); se não, é uma lesão por compressão (tipo A).\n\n**Os subtipos A (compressão ou carga axial):**\n\n| Subtipo | Descrição | Parede posterior |\n|---|---|---|\n| A0 | Lesão menor, sem importância estrutural (processo espinhoso ou transverso) | Íntegra |\n| A1 | Compressão em cunha ou impacção de um platô | Íntegra |\n| A2 | Fratura que acomete os dois platôs (split ou \"pinça\") | Íntegra |\n| A3 | Explosão incompleta: um platô e a parede posterior | Fraturada |\n| A4 | Explosão completa: os dois platôs e a parede posterior | Fraturada |\n\n**O critério que separa os grupos.** A parede posterior (coluna média de DENIS) separa A1 e A2 das explosões (A3 e A4). Entre as explosões, o número de platôs separa a incompleta (A3, um platô) da completa (A4, dois). A banda de tensão posterior íntegra mantém a lesão no tipo A.\n\n**Por que importa.** A3 e A4 têm fragmentos que podem invadir o canal. O capítulo 49 do Rockwood (10ª ed.) discute se o acometimento dos dois platôs (A4) indica mais gravidade e maior chance de falha do tratamento conservador; parte dos autores trata A3 e A4 da mesma forma, outra parte opera A4 com mais facilidade e espera mais necessidade de reconstrução anterior pela cominuição maior.\n\n**Os outros tipos, para contraste.** B1: CHANCE, ruptura transóssea de uma vértebra; B2: ruptura da banda de tensão posterior envolvendo um segmento móvel; B3: hiperextensão, ruptura da banda anterior; C: deslocamento ou luxação.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Revised AOSpine Thoracolumbar Fracture Classification, figuras 49-17 e 49-18, tabela 49-2.\n\n> **Na prova:** AO Spine: A3 = um platô + parede posterior; A4 = dois platôs + parede posterior.",
@@ -6864,88 +7130,241 @@
   "conferido": false
  },
  "coluna-0543": {
-  "conceito": "**A morfologia.** Na hiperextensão, a coluna se abre na frente: falha a **banda de tensão anterior** (ligamento longitudinal anterior com o disco ou o corpo). Sem translação, é o tipo **B3**. É a lesão típica da coluna anquilosada (espondilite anquilosante, DISH, artrose avançada), que se comporta como um osso longo fraturado, com braços de alavanca enormes e poucos tecidos moles segurando.\n\n**A neurologia na AO Spine:**\n\n| Grau | Situação |\n|---|---|\n| N0 | Neurologicamente intacto |\n| N1 | Déficit transitório, já resolvido |\n| N2 | Sintomas radiculares |\n| N3 | Cauda equina ou lesão medular incompleta |\n| N4 | Lesão medular completa |\n| NX | Exame impossível (sedação, trauma craniano) |\n| + | Compressão medular contínua |\n\nASIA B é lesão **incompleta**: há sensibilidade preservada abaixo da lesão, inclusive sacral, sem função motora. Portanto, N3, e não N4.\n\n**Os modificadores:**\n\n- **M1:** integridade da banda de tensão posterior desconhecida;\n- **M2:** comorbidade do paciente que pode ditar o tratamento, como anquilose, osteoporose e doença reumatoide.\n\nA espondilite anquilosante é exatamente o exemplo de M2: muda o transporte, o posicionamento, a imagem e o tamanho da fixação.\n\n**O caso real do capítulo.** A figura 49-29 do Rockwood (10ª ed.) mostra uma paciente de 50 anos com espondilite que caiu sentada de uma cadeira, com fratura em extensão de T10-T11, ASIA B (classificada T10-T11 B3; N3; M2). Transportada em decúbito lateral para reduzir a extensão, melhorou para ASIA D no caminho. A tomografia de toda a coluna achou uma segunda lesão B3 em C5-C6.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), tabela 49-2, seção Type B3 e figura 49-29.\n\n> **Na prova:** extensão na coluna anquilosada = B3; ASIA B = N3 (incompleta); anquilose = modificador M2.",
-  "correta": "**D: T10-T11 B3; N3; M2.** A hiperextensão sem translação, com falha da banda de tensão anterior, é B3. ASIA B é lesão medular incompleta, que na AO Spine é N3. A espondilite anquilosante é a comorbidade que muda o tratamento, o modificador M2.",
+  "conceito": "O caso fornece três informações independentes: **hiperextensão sem translação**, **lesão medular incompleta** e **espondilite anquilosante**. A notação correta combina **B3; N3; M2**, sem deixar que um código substitua os outros.\n\nB3 descreve falha da **banda de tensão anterior** em hiperextensão. Na coluna anquilosada, os segmentos fundidos criam braços de alavanca grandes, e a fratura se comporta como um osso longo quebrado, com muita instabilidade. Não é a ruptura posterior B2 nem a translação tipo C (resumo do Rockwood, 10ª ed., cap. 49, “A AO Spine revisada” e “B3: a coluna anquilosada quebra como um osso longo”).\n\nN3 identifica cauda equina ou lesão medular incompleta na tabela; N4 corresponde à completa. M2 registra a comorbidade que muda o tratamento, como a anquilose. M1 é outra informação: dúvida sobre a banda de tensão posterior. A paciente ASIA B tem preservação sensitiva, portanto uma lesão incompleta; a letra B da ASIA não deve ser confundida com B3, que é morfologia.\n\nCompare no resumo da Biblioteca as três colunas da descrição: morfologia, neurologia e modificador.\n\n**Por que esta questão foi criada.** A notação AO Spine permite testar a integração de achados independentes. O mecanismo de hiperextensão na anquilose é relevante mesmo após queda de baixa energia.",
+  "correta": "**D: T10–T11 B3; N3; M2.** B3 registra a hiperextensão, N3 a incompletude neurológica e M2 a anquilose. O conjunto utiliza todos os dados do caso sem inventar translação.",
   "incorretas": {
-   "A": "**Morfologia, neurologia e modificador errados.** B2 é falha da banda posterior em flexão, não extensão. N4 é lesão completa, e ASIA B é incompleta. M1 indica banda posterior de integridade desconhecida; a anquilose é M2.",
-   "B": "**Sem translação, não é C.** O tipo C exige deslocamento ou luxação, e o enunciado diz que não há translação. Também falta o modificador da espondilite (M2).",
-   "C": "**Quase tudo certo, menos a neurologia.** B3 e M2 estão corretos. Mas ASIA B não é lesão completa: há sensibilidade preservada abaixo da lesão, inclusive sacral. Na AO Spine, isso é N3, não N4."
+   "A": "**Troca os três componentes relevantes.** B2 é falha posterior, N4 significa lesão completa e M1 é dúvida ligamentar posterior. O caso descreve hiperextensão, ASIA B incompleta e comorbidade anquilosante.",
+   "B": "**N3 está compatível, mas C exige translação ou luxação.** O enunciado nega translação e apresenta hiperextensão, que corresponde a B3. Acertar a neurologia não corrige a morfologia errada.",
+   "C": "**Morfologia e comorbidade estão corretas, mas N4 não.** ASIA B é uma lesão incompleta com sensibilidade preservada, compatível com N3. Não converter ausência de motricidade em completude quando há preservação sacral."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS; Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C); Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS",
+      "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)",
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+      "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2",
+      "exame-neurologico-choque-neurogenico-choque-medu-544e5be0"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "3f9ddbae7a45c656a81e553612ced37ef143c78f1b46f8488e2d2e7bde827441"
+    }
+   ],
+   "questaoSha256": "31903bd4d48f3d94814ecb4191af9ba9a577dd8cc61f07f8b0855d6c7258e539",
+   "comentarioSha256": "848350a03d6537b4069a1a1b9c0bda30377baad6d3d6e9e1c84bbeb5d9da08f7"
+  }
  },
  "coluna-0544": {
-  "conceito": "**Como uma órtese imobiliza.** Uma órtese só controla o segmento lesado se prender a coluna acima e abaixo dele. Para isso, precisa de apoio em estruturas que se movem junto com a coluna: o tórax e o esterno em cima, a pelve embaixo. O problema muda conforme o nível da fratura.\n\n**A regra por nível (capítulo 49 do Rockwood, 10ª ed.):**\n\n| Nível da lesão | Órtese |\n|---|---|\n| T6 ou acima | Cervicotoracolombossacra (CTLSO), que precisa incluir a coluna cervical e a parte alta do tórax |\n| T7 a L3 | Toracolombossacra (TLSO): JEWETT em hiperextensão para lesões no plano sagital; tipo concha (clamshell), pronta ou moldada, para deformidade coronal ou rotacional |\n| Abaixo de L3 | Toracolombossacra com extensão para uma coxa (HTLSO) |\n\n**Por que a coxa abaixo de L3.** A coluna lombar baixa se move junto com a pelve, e a pelve se move com o quadril. Uma órtese que termina na pelve não impede o movimento em L4 e L5, porque a pelve continua girando sobre os fêmures a cada passo e ao sentar. Prender uma coxa trava a pelve e, com ela, o segmento lombar baixo. O preço é alto: a HTLSO limita a marcha e o sentar, o que torna o tratamento conservador difícil nesse nível.\n\n**Como conduzir.** Radiografia em pé com a órtese, para confirmar que o alinhamento se mantém sob carga; uso sempre que fora do leito; em geral de 6 semanas a 3 meses, com restrição de levantar mais de 10 libras (cerca de 4,5 kg) e de flexionar ou rodar o tronco; retirada gradual com fisioterapia, e radiografias dinâmicas ao final para avaliar estabilidade.\n\n**Nem toda fratura precisa de órtese.** Lesões A0 (processos transverso e espinhoso) não precisam, e o ensaio de BAILEY mostrou que explosões A3 estáveis sem déficit evoluem igual com ou sem órtese.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Bracing.\n\n> **Na prova:** órtese abaixo de L3 precisa incluir uma coxa (HTLSO); acima de T6, cervicotoracolombossacra.",
-  "correta": "**C: órtese toracolombossacra com extensão para uma das coxas.** Abaixo de L3, a coluna lombar se move junto com a pelve sobre os quadris. Só prendendo uma coxa a órtese consegue travar a pelve e imobilizar L4. Essa necessidade torna a HTLSO incômoda e dificulta o tratamento conservador das fraturas lombares baixas.",
+  "conceito": "A fratura é de **L4**, abaixo da faixa habitual do colete toracolombossacro simples. Para imobilizar esse segmento no tratamento com órtese, o capítulo recomenda **incluir uma das coxas**. É a extensão da órtese para o quadril que diferencia a opção correta.\n\nO nível da lesão muda o desenho: entre **T7 e L3**, usa-se órtese toracolombossacra; em **T6 ou acima**, acrescenta-se a região cervical; **abaixo de L3**, inclui-se uma coxa. Portanto, não se escolhe o colete apenas pelo nome familiar. A região a controlar precisa estar dentro da cobertura apropriada (resumo do Rockwood, 10ª ed., cap. 49, “A órtese certa para o nível certo”).\n\nO **Jewett** é um modelo em hiperextensão para deformidade sagital na faixa toracolombar descrita. Ele não substitui a extensão para a coxa exigida na lombar baixa. Depois de escolher a órtese, a radiografia em pé com o dispositivo verifica se o alinhamento se mantém sob carga; a escolha inicial não dispensa esse controle.\n\nO resumo da Biblioteca apresenta as três faixas de nível e ajuda a relacionar extensão da órtese com o segmento fraturado.\n\n**Por que esta questão foi criada.** É um detalhe prático da seção de órteses: reconhecer que uma fratura estável de L4 pede cobertura diferente da transição T11–L2.",
+  "correta": "**C: órtese toracolombossacra com extensão para uma das coxas.** L4 fica abaixo de L3, faixa para a qual o capítulo pede inclusão da coxa. É a modificação relevante para a localização do caso.",
   "incorretas": {
-   "A": "**Serve até L3.** A TLSO comum controla bem as fraturas entre T7 e L3, porque prende o tórax e a pelve acima e abaixo. Em L4, a pelve continua girando sobre os quadris, e a órtese sem a coxa não imobiliza o segmento.",
-   "B": "**É para lesões altas.** A órtese cervicotoracolombossacra é indicada para fraturas em T6 ou acima, em que é preciso prender a coluna cervical e a parte alta do tórax. Não resolve o problema da pelve numa fratura de L4.",
-   "D": "**Atua de T7 a L3 e no plano sagital.** O JEWETT aplica três pontos de apoio (esterno, púbis e região lombar) para manter a extensão, útil em compressões toracolombares. Não inclui a coxa, por isso não controla L4."
+   "A": "**A órtese comum corresponde à faixa T7–L3.** O próprio enunciado coloca a fratura abaixo dela. Repetir o modelo sem a extensão para a coxa ignora a diferença de nível.",
+   "B": "**Acrescenta controle superior para uma lesão inferior.** A extensão cervical é indicada em T6 ou acima. Ela não é a adaptação descrita para L4, que exige incluir uma coxa.",
+   "D": "**Hiperextensão não resolve a diferença de cobertura anatômica.** O Jewett é uma opção para controle sagital na faixa toracolombar. A questão de L4 pede a extensão para o quadril/coxa, não apenas outro modelo de colete."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "fratura-em-explosao-a3-e-a4-9306e94b",
+      "fratura-em-explosao-a3-e-a4-dee37645",
+      "fratura-em-explosao-a3-e-a4-9340101a",
+      "fratura-em-explosao-a3-e-a4-ff3a6d02"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "c979e964f2a319b0e6e599a93d9523e96caa700441dfa3aee68bebeec6613711"
+    }
+   ],
+   "questaoSha256": "a383410d0b78605d083b17cad719278838f79b2aff6d70e09fcc0d52bb7713a4",
+   "comentarioSha256": "8e146448b35a8ca7987d70116c009e2d83350a416d8b9ad17c450996bfc1d431"
+  }
  },
  "coluna-0545": {
-  "conceito": "**A dúvida que o estudo enfrentou.** A explosão sem déficit é a fratura toracolombar mais discutida: operar ou não, e, se não operar, usar ou não órtese. A órtese é tradicional, mas tem custo, desconforto, baixa adesão, perda de condicionamento e úlceras de pressão.\n\n**O ensaio de BAILEY.** Multicêntrico, prospectivo e randomizado, com 96 pacientes:\n\n- neurologicamente intactos e com menos de 60 anos;\n- explosão AO A3 entre T11 e L3;\n- cifose menor que 35 graus.\n\nMetade usou órtese toracolombar; a outra metade não usou, apenas com restrição de levantar mais de 5 kg e de flexionar ou rodar o tronco. Aos 3 meses e aos 2 anos, a **dor e a incapacidade (medidas validadas) foram equivalentes**.\n\n**Como interpretar.** Os autores não concluíram que a órtese é inútil, e sim que **a explosão A3 é mais estável do que se imaginava**. O capítulo 49 do Rockwood (10ª ed.) usa o estudo para dizer que muitas explosões estáveis podem ser tratadas sem órtese, sobretudo quando custo, acesso ou conforto são barreiras.\n\n**Outras evidências do capítulo:**\n\n- revisões sistemáticas: na explosão sem déficit, o tratamento conservador deu função semelhante à da cirurgia, com bem menos complicações e custo;\n- WOOD: em seguimento de 16 a 22 anos de explosões estáveis, os tratados sem cirurgia relataram menos dor e melhor função (série pequena);\n- o comprometimento do canal sem déficit não piora o resultado, e o canal remodela com o tempo.\n\n**Como os autores decidem.** Radiografia em pé: se a cifose não aumenta muito, segue o tratamento conservador. Usam órtese e controle próximo para explosões com cifose abaixo de 25 graus, perda de altura abaixo de 50% e cominuição leve a moderada. Operam quando há lesão do complexo ligamentar posterior ou déficit; cifose de 30 graus ou mais, perda de altura acima de 50% e cominuição grave são indicações relativas.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Bracing, Outcomes e Type A3.\n\n> **Na prova:** BAILEY: explosão A3 sem déficit evolui igual com ou sem órtese; a A3 é mais estável do que se pensava.",
-  "correta": "**A: dor e incapacidade equivalentes aos 3 meses e aos 2 anos.** No ensaio de BAILEY, os pacientes sem órtese, apenas com restrição de carga e de movimentos, evoluíram igual aos que usaram órtese. A conclusão foi que a explosão A3 sem déficit e sem lesão do complexo posterior é inerentemente mais estável do que se pensava, e pode dispensar a órtese em pacientes selecionados.",
+  "conceito": "O ensaio de Bailey perguntou se pacientes selecionados com explosão A3 precisavam obrigatoriamente de órtese. Eram **96 pacientes sem déficit**, com **menos de 60 anos**, fratura entre **T11 e L3** e cifose **abaixo de 35 graus**. Dor e incapacidade foram **equivalentes aos 3 meses e aos 2 anos**, com ou sem órtese.\n\nA interpretação depende de manter esses critérios à vista. O estudo não incluiu toda lesão chamada de explosão nem autorizou abandonar o seguimento. Os participantes sem órtese evitavam carregar mais de 5 kg e girar ou fletir o tronco. A equivalência se refere à população e aos desfechos estudados, não à inexistência de cuidados (resumo do Rockwood, 10ª ed., cap. 49, “Sem cirurgia, com ou sem colete”).\n\nO capítulo interpreta o resultado como evidência de que a A3 pode ser mais estável do que se pensava. Seus autores ainda recomendam colete e seguimento próximo em situações selecionadas. Portanto, tanto “todos precisam” quanto “colete nunca serve” extrapolam a comparação.\n\nLeia no resumo da Biblioteca os critérios de Bailey junto das recomendações dos autores: esse contraste ajuda a aplicar um ensaio sem generalizá-lo.\n\n**Por que esta questão foi criada.** O estudo muda uma decisão prática frequente e permite testar leitura crítica: equivalência em pacientes selecionados não significa liberação irrestrita para qualquer fratura.",
+  "correta": "**A: dor e incapacidade equivalentes aos 3 meses e aos 2 anos.** Esses são os desfechos e momentos apresentados no resumo. O resultado vale para a A3 selecionada e neurologicamente intacta do ensaio.",
   "incorretas": {
-   "B": "**Não foi o que o estudo mostrou.** Os resultados clínicos foram equivalentes; o estudo não documentou mais deformidade clinicamente relevante nem mais cirurgias no grupo sem órtese. A cifose progressiva preocupa quando há lesão do complexo posterior, que era critério de exclusão.",
-   "C": "**Inventa uma complicação.** Os pacientes eram neurologicamente intactos, e o estudo não relatou déficit tardio no grupo sem órtese. Déficit tardio é o risco de lesões instáveis mal avaliadas, não de explosões A3 estáveis.",
-   "D": "**Conclusão oposta.** Se a órtese tivesse sido superior, o estudo reforçaria seu uso. A equivalência levou à conclusão contrária: a órtese pode ser dispensada em muitos casos."
+   "B": "**Troca o resultado relatado por uma conclusão de piora.** A fonte destaca equivalência de dor e incapacidade, não um aumento de cifose e conversão cirúrgica como conclusão. Não atribuir ao ensaio desfechos adicionais para inverter seu sentido.",
+   "C": "**Inventa um benefício e um dano que não são a conclusão descrita.** Não foi apresentada menor dor acompanhada de mais déficit tardio. A comparação fornecida é de equivalência dos desfechos de dor e incapacidade.",
+   "D": "**Transforma equivalência em inferioridade.** O ensaio não reforçou obrigatoriedade rotineira do colete por resultados piores sem ele. Isso também não elimina a possibilidade de usar órtese em pacientes selecionados."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "fratura-em-explosao-a3-e-a4-0266d7dc",
+      "fratura-em-explosao-a3-e-a4-cdbe316d",
+      "fratura-em-explosao-a3-e-a4-2ee7fe69"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "472784355d2ead7d006d9a326942aac3fff0babe1077968a28016cc0bf4496e0"
+    }
+   ],
+   "questaoSha256": "5ed4c7febdc592069e3ec2929cc2be30edc3a26428f0481e1c09a974ee4ff7d3",
+   "comentarioSha256": "852cdbaca558ba3e308746426c894deeb821ebdc7503fbc44c15322b2a331d46"
+  }
  },
  "coluna-0546": {
-  "conceito": "**O que é ligamentotaxia.** Na explosão, um fragmento da parede posterior do corpo é empurrado para dentro do canal. Esse fragmento costuma continuar preso ao **anel fibroso** do disco vizinho e ao **ligamento longitudinal posterior**. Quando o cirurgião distrai os parafusos acima e abaixo da fratura, esses tecidos moles ficam tensos e puxam o fragmento de volta para o corpo vertebral, como uma corda que alinha o que estava pendurado. Isso restaura a altura do corpo e descomprime o canal **sem tocar** no fragmento.\n\n**Quanto se consegue.** O capítulo 49 do Rockwood (10ª ed.) cita descompressão do canal de **até 50%** por ligamentotaxia.\n\n**Quando não funciona.** O mecanismo depende de o fragmento estar preso a tecidos moles íntegros. Falha quando:\n\n- as inserções do anel estão rompidas;\n- o fragmento girou **180 graus**, ficando com a cortical posterior voltada para a frente: o puxão do ligamento não o devolve à posição;\n- a fratura é subaguda, já com consolidação inicial;\n- há lesão do anel ou do ligamento longitudinal posterior.\n\nNesses casos, a descompressão precisa ser direta: pela via posterior (laminectomia com facetectomia e impactação do fragmento de volta para o corpo, ou abordagem transpedicular ou costotransversectomia) ou pela via anterior (corpectomia).\n\n**A técnica de redução.** Primeiro, as hastes moldadas em lordose são presas aos parafusos de cima e levadas aos de baixo, usando a faceta como fulcro para corrigir a cifose (efeito cantilever). Depois, a distração restaura a altura e faz a ligamentotaxia. O capítulo alerta para cautela com a distração no paciente intacto, em que os riscos podem superar o benefício.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Posterior Approach e Posterior Reconstruction, figuras 49-26 e 49-27.\n\n> **Na prova:** ligamentotaxia descomprime até 50% do canal, mas falha se o anel está roto ou o fragmento girou 180 graus.",
-  "correta": "**B: o fragmento retropulsado está rodado 180 graus, com a cortical posterior voltada para a frente.** A ligamentotaxia depende do anel fibroso e do ligamento longitudinal posterior presos ao fragmento, que o puxam de volta quando a distração os tensiona. Um fragmento virado 180 graus não volta com esse puxão. A descompressão precisa ser direta, por via posterior ou anterior.",
+  "conceito": "Na ligamentotaxia, a distração da montagem posterior traciona estruturas ainda ligadas ao fragmento. O **ânulo e o ligamento longitudinal posterior** ajudam a puxá-lo de volta do canal para o corpo vertebral. Para funcionar, precisa existir uma ligação capaz de transmitir essa força.\n\nUm fragmento **rodado 180 graus**, com a cortical posterior virada para a frente, representa a situação em que essas inserções foram perdidas. Esticar a montagem não consegue puxar adequadamente um fragmento que já não está conectado ao sistema tracionado. Essa é a limitação mecânica cobrada, não o estado neurológico isolado nem o número de horas desde a lesão (resumo do Rockwood, 10ª ed., cap. 49, “Como os autores operam a explosão”).\n\nO capítulo descreve ganho de até 50% do canal por descompressão indireta, mas um limite máximo de ganho não garante sucesso em cada caso. Também recomenda cautela ao distrair um paciente neurologicamente intacto. Uma técnica pode ser mecanicamente possível sem ser automaticamente indicada para todo paciente.\n\nA seção no resumo da Biblioteca permite ligar a manobra às inserções que precisam estar preservadas.\n\n**Por que esta questão foi criada.** É uma pergunta de mecanismo cirúrgico: reconhecer a desconexão do fragmento explica por que a ligamentotaxia pode falhar, sem depender de decorar apenas a imagem de 180 graus.",
+  "correta": "**B: fragmento rodado 180 graus, com cortical posterior voltada para a frente.** A perda das inserções do ânulo e do longitudinal posterior impede que a tração seja transmitida como necessário para a redução indireta.",
   "incorretas": {
-   "A": "**Não muda o mecanismo.** A ligamentotaxia funciona do mesmo jeito com ou sem déficit, porque depende dos tecidos moles presos ao fragmento. No paciente intacto, o capítulo pede cautela com a distração porque o benefício é menor, e não porque a técnica deixe de funcionar.",
-   "C": "**É o contrário.** A ligamentotaxia funciona melhor na fratura aguda, antes de os fragmentos começarem a consolidar. Na fratura subaguda é que ela perde eficácia e a descompressão direta pode ser necessária.",
-   "D": "**É a condição para funcionar.** O anel fibroso e o ligamento longitudinal posterior íntegros são justamente os tecidos que puxam o fragmento de volta. Com eles rompidos, aí sim a ligamentotaxia falha."
+   "A": "**Neurologia intacta pede cautela, não define falha mecânica.** A indicação da cirurgia e a segurança da manobra precisam ser avaliadas. O que impede a ligamentotaxia descrita é a falta de conexão ao fragmento, não a ausência de déficit.",
+   "C": "**O prazo de 48 horas não é a contraindicação mecânica apresentada.** A questão exige saber se a força consegue chegar ao fragmento. A fonte localiza a falha nas inserções perdidas, não nesse intervalo temporal.",
+   "D": "**Inserções preservadas favorecem a transmissão da tração.** Ânulo e ligamento longitudinal posterior são justamente as estruturas usadas pela manobra. Colocá-los íntegros como motivo de ineficácia inverte o mecanismo."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "fratura-em-explosao-a3-e-a4-7ed529c3"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "245f6a3b3edd4edb77ea7cb88bff6ee14f41c28f11df9b0f604587fe4f389c78"
+    }
+   ],
+   "questaoSha256": "a0626baba3a6a9d1bc746d910232866101bf2d239f5a0bf6c298666ee353a701",
+   "comentarioSha256": "fc73b0383ff9914e13e599eff0edd330694a402c35f4b515d718ebc56f6ee115"
+  }
  },
  "coluna-0547": {
-  "conceito": "**A ideia do compartilhamento de carga.** A coluna anterior (corpos e discos) carrega a maior parte do peso. Na explosão, o corpo cominuto deixa de sustentar carga, e a fixação posterior passa a carregar sozinha o peso até a fratura consolidar. Quanto maior o defeito ósseo, mais tempo o implante trabalha sozinho, e maior o risco de soltura, quebra e cifose. McCORMACK criou, em 1994, uma pontuação para prever quando o corpo não vai mais compartilhar carga (figura 49-16).\n\n**Os três itens, de 1 a 3 pontos cada:**\n\n| Item | 1 ponto | 2 pontos | 3 pontos |\n|---|---|---|---|\n| Cominuição do corpo | Pouca | Moderada | Extensa |\n| Aposição (afastamento dos fragmentos) | Mínima | Moderada | Grande |\n| Correção da cifose necessária | Pouca | Moderada | Grande |\n\nTotal de 3 a 9 pontos.\n\n**Como usar.**\n\n- **6 ou menos:** fixação posterior **curta** (um nível acima e um abaixo) é suficiente;\n- **acima de 6:** o corpo perdeu a capacidade de sustentar carga; é preciso **fixação posterior longa** (dois ou três níveis acima e abaixo) ou **reconstrução anterior** (corpectomia com cilindro ou enxerto estrutural), isolada ou combinada.\n\n**Limitações.** É simples e orienta a escolha do construto, mas não considera o estado neurológico nem o complexo ligamentar posterior.\n\n**A prática dos autores.** Explosão sem déficit com pontuação abaixo de 6: fixação curta, percutânea ou aberta. Pontuação acima de 6: fixação posterior longa ou abordagem combinada. Explosão com fragmento grande e déficit: corpectomia (anterior ou posterior) com fixação posterior segmentar. Fixação curta fica para jovens com bom osso e boa pega dos parafusos; em osteoporose, cominuição grande ou região torácica e toracolombar, estendem a fixação.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Load-Sharing Classification e Combined Approach, figura 49-16.\n\n> **Na prova:** load sharing acima de 6: suporte anterior ou fixação posterior longa; até 6, fixação curta basta.",
-  "correta": "**D: suporte da coluna anterior ou fixação posterior longa.** Pontuação acima de 6 significa que o corpo vertebral perdeu a capacidade de compartilhar carga. Uma fixação curta isolada ficaria sobrecarregada e tenderia a falhar com cifose. A solução é reconstruir a coluna anterior (corpectomia com cilindro ou enxerto) ou distribuir a carga numa fixação posterior longa.",
+  "conceito": "Uma montagem posterior curta pode ficar sobrecarregada se o corpo vertebral destruído não voltar a sustentar a carga. A escala **load sharing de McCormack** avalia esse apoio pela cominuição, aposição dos fragmentos e cifose a corrigir, pontuadas de 1 a 3 cada.\n\nCom **mais de 6**, a coluna anterior está muito comprometida. O resumo indica **fixação posterior longa ou reconstrução anterior e posterior combinada**. A escolha serve para enfrentar a insuficiência de suporte que deixaria os implantes curtos sujeitos a forças de alavanca por mais tempo (resumo do Rockwood, 10ª ed., cap. 49, “A classificação de compartilhamento de carga”).\n\nNão é um escore para prescrever tratamento conservador pela soma nem para decidir sozinho toda a operação: ele não inclui neurologia e complexo ligamentar posterior. Também não obriga via anterior isolada. O resumo da Biblioteca compara os limites da escala com sua utilidade no planejamento mecânico.\n\n**Por que esta questão foi criada.** O corte acima de 6 foi cobrado no TARO 2015; o simulado testa o significado do valor, incluindo a alternativa de montagem posterior longa descrita no capítulo.",
+  "correta": "**D: suporte da coluna anterior ou fixação posterior longa.** As estratégias procuram compensar a insuficiência anterior apontada pela soma. O valor alto torna preocupante a sobrecarga de uma montagem posterior curta isolada.",
   "incorretas": {
-   "A": "**Vale para 6 ou menos.** A fixação curta, um nível acima e um abaixo, é suficiente quando o corpo ainda sustenta parte da carga. Acima de 6, ela tende a falhar, com quebra de implantes e perda da correção.",
-   "B": "**A classificação orienta a cirurgia.** O load sharing foi criado para escolher o construto quando já se decidiu operar. Não define a indicação de tratamento conservador, que depende do complexo ligamentar posterior, do déficit e do alinhamento.",
-   "C": "**Não resolve uma explosão grave.** A cimentação (cifoplastia ou vertebroplastia) pode complementar uma fixação posterior em fraturas cominutas, mas, sozinha, não estabiliza uma explosão traumática com corpo muito destruído. Na fratura com parede posterior rota, ainda há risco de o cimento vazar para o canal."
+   "A": "**É a estratégia aceita no grupo de 6 ou menos.** Com pontuação acima desse limite, a falta de apoio anterior aumenta a preocupação com falha da montagem curta. A opção ignora a finalidade da escala.",
+   "B": "**A soma não é um escore de indicação de órtese.** Load sharing avalia o compartilhamento de carga para planejar suporte e extensão da fixação. Neurologia e banda posterior, que também influem na decisão terapêutica, não entram nela.",
+   "C": "**Cimentação isolada não é a resposta prevista para esse escore de explosão.** O problema descrito é o suporte mecânico de uma vértebra muito comprometida numa montagem. A fonte indica reforço anterior ou fixação longa, não substituição automática por vertebroplastia."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-446fab41",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-c9d105e2",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-9bbe9701",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-e679772b"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "19eb5efcd4905b171c04292bf3a3144db9b22b343e2c2a3b2942bc715397fea6"
+    }
+   ],
+   "questaoSha256": "19b2a7949373e34604c8eadac0cfd49a48aae76090127a717d20b8a134b68746",
+   "comentarioSha256": "cdd50a1fba93a6a31aee7ba038ca0956faaa10e1b646c66c2eec834871e28464"
+  }
  },
  "coluna-0548": {
-  "conceito": "**A escolha do lado.** O capítulo 49 do Rockwood (10ª ed.) resume:\n\n- **coluna torácica acima de T11:** acesso pela direita ou pela esquerda; a direita costuma ser preferida para fugir das estruturas cardíacas;\n- **transição toracolombar e coluna lombar alta:** pela **esquerda**, para **evitar o fígado** e **reduzir a manipulação da veia cava inferior**; a aorta, à esquerda, é mais resistente e fácil de afastar que a veia cava, de parede fina;\n- **L2 e L3:** retroperitoneal esquerdo, em decúbito lateral direito, sem precisar abrir o diafragma;\n- **L4:** retroperitoneal lateral ou paramediano em decúbito dorsal, pela esquerda para evitar a veia ilíaca comum direita;\n- **L5-S1:** em decúbito dorsal, entre os vasos ilíacos.\n\n**A irrigação da medula.** A **artéria de ADAMKIEWICZ** (artéria radicular magna) costuma nascer **à esquerda, entre T8 e T10**, mas pode surgir de T7 a L4. Ela alimenta a artéria espinal anterior na parte baixa da medula. Por isso, ao abordar T8 a T12 e a transição toracolombar, as artérias segmentares são **pinçadas temporariamente com monitorização** antes de ligadas, e a ligadura é feita **perto da aorta**, para preservar as colaterais junto ao forame.\n\n**Outros cuidados da via:**\n\n- o ureter, atrás do peritônio, é afastado para a frente junto com o conteúdo peritoneal;\n- o diafragma é aberto deixando uma borda de 1 cm para a sutura e longe do centro, para não lesar o nervo frênico;\n- é preciso evitar a cisterna do quilo e o ducto torácico;\n- em L4-L5, a veia iliolombar deve ser ligada antes de afastar os vasos, para não avulsionar;\n- em L5-S1, o bisturi elétrico é evitado sobre o plexo simpático, cuja lesão causa ejaculação retrógrada.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Anterior Thoracolumbar Approach.\n\n> **Na prova:** transição toracolombar pela esquerda (fígado e veia cava); ADAMKIEWICZ em geral à esquerda entre T8 e T10.",
-  "correta": "**A: esquerdo; evitar o fígado e reduzir a manipulação da veia cava inferior.** À direita, o fígado ocupa o espaço da transição toracolombar e a veia cava, de parede fina, ficaria no caminho. À esquerda, afasta-se a aorta, mais resistente. O cuidado à esquerda é com a artéria de ADAMKIEWICZ: as segmentares são pinçadas com monitorização e ligadas perto da aorta.",
+  "conceito": "Na corpectomia de L1 pela via toracoabdominal, escolher o lado faz parte da proteção visceral e vascular. O capítulo prefere o **lado esquerdo** na transição toracolombar para **evitar o fígado e reduzir a manipulação da veia cava inferior**.\n\nEsse princípio não vale indistintamente para toda a coluna. Acima de T11, o acesso torácico pode ser feito pelos dois lados, em geral pela direita para fugir do coração. Já na transição e em L2–L3 a preferência descrita é esquerda. Portanto, a localização da cirurgia precisa vir antes de uma regra decorada de lateralidade (resumo do Rockwood, 10ª ed., cap. 49, “Vias de acesso e a artéria de Adamkiewicz”).\n\nO lado esquerdo não elimina outros riscos. Ducto torácico e cisterna do quilo exigem atenção; a irrigação medular também. A artéria de Adamkiewicz costuma nascer à esquerda, com variação de nível, e os vasos segmentares são avaliados com monitorização antes de ligadura. “Preferido” significa um balanço anatômico, não um lado livre de estruturas importantes.\n\nLeia a seção de acessos no resumo da Biblioteca comparando os níveis e as estruturas a preservar.\n\n**Por que esta questão foi criada.** A lateralidade do acesso é um detalhe anatômico que muda com o nível. O caso de L1 testa a razão da preferência esquerda, não apenas o nome do lado.",
+  "correta": "**A: esquerdo; evitar o fígado e reduzir a manipulação da veia cava inferior.** É a combinação de lado e justificativa descrita para a transição toracolombar.",
   "incorretas": {
-   "B": "**A artéria não define o lado.** A ADAMKIEWICZ costuma estar à esquerda, mas a transição toracolombar continua sendo abordada pela esquerda. O risco é controlado pinçando as segmentares com monitorização antes de ligá-las, e ligando-as perto da aorta para preservar as colaterais.",
-   "C": "**A aorta é a estrutura mais fácil de lidar.** Afastar a aorta, de parede espessa, é mais seguro que manipular a veia cava inferior, de parede fina, que fica à direita junto com o fígado. Por isso a transição toracolombar é abordada pela esquerda.",
-   "D": "**Lado certo, motivo errado.** O ducto torácico e a cisterna do quilo devem ser protegidos durante o acesso, mas não são a razão para escolher a esquerda. O motivo é evitar o fígado e a veia cava inferior."
+   "B": "**A origem da Adamkiewicz não estabelece essa preferência direita.** Ela costuma ser esquerda, mas a fonte ainda prefere o acesso esquerdo nesse nível, com proteção da circulação segmentar e monitorização. Não trocar o balanço anatômico por evitar uma única artéria.",
+   "C": "**A preferência do capítulo para L1 é esquerda.** Manipulação vascular exige cuidado, mas “direita para evitar a aorta” não é a regra apresentada para a via toracoabdominal da transição.",
+   "D": "**Acerta o lado e dá a justificativa errada.** O ducto torácico continua sendo uma estrutura de risco a proteger no acesso. A escolha esquerda é explicada pelo fígado e pela menor manipulação da cava, não por ausência de risco linfático."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Vias de acesso e a artéria de Adamkiewicz."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Vias de acesso e a artéria de Adamkiewicz"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-a-arteria-de-adamkiewicz-7d646139",
+      "vias-de-acesso-e-a-arteria-de-adamkiewicz-097a3627",
+      "vias-de-acesso-e-a-arteria-de-adamkiewicz-ee713415",
+      "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "12292a553af8d2600c60b11bc64d23aa3ace0105de6a9c7c10d6ec0cf7e96927"
+    }
+   ],
+   "questaoSha256": "c9cebf7a1e3d6aee17a142cd53745bd27e3534246a398e54e0f8805080d60084",
+   "comentarioSha256": "cd014aaab262c3ee5c453da3572bdaa6458473c59a838f3d4b31f4fa6b5c49db"
+  }
  },
  "coluna-0549": {
   "conceito": "**A intuição que a evidência não confirmou.** Ver um fragmento ocupando boa parte do canal assusta, e por muito tempo a porcentagem de comprometimento do canal foi usada como critério cirúrgico. Mas o que lesa a medula é a energia do trauma no momento do impacto, quando o fragmento chega a ocupar muito mais espaço do que mostra a tomografia depois. Se o paciente chegou sem déficit, a medula já tolerou o pior momento.\n\n**O que diz o capítulo 49 do Rockwood (10ª ed.).** No paciente neurologicamente intacto, o comprometimento do canal **não se associou a pior resultado nem à necessidade de cirurgia**. Além disso, o fragmento **remodela** com o tempo e o canal volta a se abrir. O capítulo mostra uma explosão de L5 em adolescente com radiculopatia leve, tratada sem órtese, cujo canal se expandiu mais de 50% em 9 meses, com resolução da radiculopatia em 6 semanas (figura 49-24).\n\n**O que realmente indica cirurgia na explosão:**\n\n- aceitas: **déficit neurológico** e **lesão confirmada do complexo ligamentar posterior**;\n- no paciente intacto, razões principais: explosão de três colunas com subluxação facetária (equivalente a lesão posterior), politrauma, impossibilidade de usar órtese;\n- relativas: cifose de 30 graus ou mais, perda de mais de 50% da altura, cominuição e retropulsão graves.\n\n**Um alerta para o cone.** Na explosão da transição toracolombar, os autores lembram que a disfunção vesical isolada pode passar despercebida no paciente que parece intacto, porque ele chega sondado. Se houver compromisso importante do canal no nível do cone, vale procurar ativamente esse déficit.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Type A3: Nonoperative Treatment e Posterior Reconstruction, figura 49-24.\n\n> **Na prova:** explosão sem déficit: o comprometimento do canal, sozinho, não indica cirurgia; o fragmento remodela.",
@@ -6962,32 +7381,81 @@
   "conferido": false
  },
  "coluna-0550": {
-  "conceito": "**O mecanismo.** Na explosão, a carga axial abre o corpo vertebral e também empurra os pedículos para os lados (daí o aumento da distância interpedicular). O arco posterior se abre junto e, com frequência, a lâmina se parte num traço **vertical**, no plano sagital. Por um instante, a lâmina se afasta e o saco dural, comprimido pelo fragmento anterior, se projeta pela fenda. Quando a lâmina volta, ela pode **pinçar** a dura e as raízes, rasgando a dura no sentido longitudinal.\n\n**Os números.** O capítulo 49 do Rockwood (10ª ed.) diz que as fraturas verticais da lâmina, sobretudo quando desviadas, se associam a **rasgo traumático da dura em até 19%** dos casos. No conjunto das fraturas toracolombares, cerca de **12%** têm durotomia traumática, mais comum nas fraturas-luxações (tipo C), pelo cisalhamento, e nas explosões com fratura longitudinal da lâmina.\n\n**Implicações cirúrgicas:**\n\n- ao abrir o canal, as raízes lombossacras podem ser as primeiras estruturas vistas, porque as bordas da dura se retraíram para a frente;\n- o rasgo é dorsal e longitudinal, às vezes longo; a sutura é feita correndo a partir das duas extremidades e amarrando no meio;\n- a sutura deve ser estanque; rasgos complexos podem precisar de selantes ou enxertos, e o fechamento da fáscia ajuda a tamponar;\n- antes de reduzir, é preciso liberar as raízes presas para não as lesar;\n- as complicações pós-operatórias (pseudomeningocele, drenagem persistente) ocorrem em cerca de 2,1%.\n\n**Por que a laminectomia é ampla na explosão.** Como a lâmina fica mais baixa que o corpo correspondente, a laminectomia deve incluir a lâmina do nível fraturado e a metade inferior da lâmina de cima, onde costuma estar o fragmento, junto ao platô superior.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Posterior Reconstruction e Cerebrospinal Fluid Leakage, figura 49-21.\n\n> **Na prova:** fratura vertical da lâmina na explosão = suspeitar de rasgo da dura com raízes encarceradas (até 19%).",
-  "correta": "**D: vertical (longitudinal) da lâmina.** Na explosão, a lâmina se abre num traço vertical e, ao voltar, pode pinçar a dura e as raízes que se projetaram pela fenda. Isso causa rasgo dural longitudinal em até 19% desses casos. Na cirurgia, é preciso liberar as raízes e suturar a dura antes da redução.",
+  "conceito": "O fragmento da parede posterior pode entrar no canal numa explosão, mas o achado particularmente ligado ao **encarceramento de raízes e à lesão da dura** é posterior: a **lâmina partida longitudinalmente**. Ela pode abrir no impacto e aprisionar tecidos ao retornar.\n\nA relação é mecânica, não apenas estatística. A fenda longitudinal oferece um local de captura da dura e das raízes; por isso seu desvio aumenta a preocupação. O resumo descreve laceração dural dorsal, com bordas que se retraem anteriormente. Reconhecer o sinal ajuda a antecipar o que pode ser encontrado na exposição do canal (resumo do Rockwood, 10ª ed., cap. 49, “A lâmina vertical e a dura-máter”).\n\nJá o traço horizontal do processo espinhoso pode indicar uma banda posterior que falhou em tensão. São direções e perguntas diferentes. O resumo da Biblioteca coloca o sinal dural ao lado da descrição da explosão para facilitar essa distinção.\n\n**Por que esta questão foi criada.** A associação entre lâmina vertical e lesão dural foi cobrada no TARO 2020 e no TEOT 2021; o simulado explicita o encarceramento para ensinar a razão do sinal.",
+  "correta": "**D: vertical, ou longitudinal, da lâmina.** A abertura e o retorno do traço podem capturar dura e raízes. É um alerta específico para a complicação, sem implicar que toda fratura desse tipo tenha laceração confirmada.",
   "incorretas": {
-   "A": "**É lesão menor (A0).** A fratura do processo transverso não tem importância estrutural e não ameaça a dura. Merece atenção por outro motivo: as fraturas lombares baixas de processo transverso se associam a fraturas da pelve e lesões abdominais.",
-   "B": "**Não pinça a dura.** O pedículo pode fraturar ou se afastar na explosão, mas não forma a fenda dorsal que aprisiona a dura. O que a encarcera é a lâmina partida no sentido vertical.",
-   "C": "**Sugere outro problema.** O traço horizontal no processo espinhoso indica falha por tração e deve levantar suspeita de uma lesão B2 da banda de tensão posterior. Não é o achado associado ao encarceramento da dura."
+   "A": "**O processo transverso não é a fenda posterior descrita.** Sua fratura isolada entra como A0 e pode acompanhar outros traumas. Não tem o mesmo mecanismo específico de aprisionamento da lâmina longitudinal.",
+   "B": "**Pedículo fraturado não substitui a análise da lâmina.** O achado pedido é aquele cuja abertura e fechamento favorecem captura de tecido neural. Identificar uma lesão posterior qualquer é menos específico.",
+   "C": "**O traço horizontal do espinhoso sugere falha em tensão.** É uma pista para lesão da banda posterior, não o traço longitudinal da lâmina associado à captura dural. A direção da fratura muda a interpretação."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "fratura-em-explosao-a3-e-a4-83eadb46",
+      "fratura-em-explosao-a3-e-a4-94baf03f"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "ea15694aee2e8a7820d4320b2b8db1e2bb1bc119584257896d844c441d8e156f"
+    }
+   ],
+   "questaoSha256": "c31745baa76e9e9468bca70db5c29c8d5ea40e8f5c12e06924363634eba224cb",
+   "comentarioSha256": "e9b1cbb5c529f2d8649f78b89cba3705845e31ff86f75557a5f2964e98dc8187"
+  }
  },
  "coluna-0551": {
-  "conceito": "**O mecanismo.** Na fratura de CHANCE, o tronco flexiona sobre um fulcro à frente da coluna (classicamente o cinto de segurança abdominal). O **eixo de rotação fica anterior ao corpo vertebral**, e por isso a vértebra inteira falha **em tração**: o traço começa atrás (processo espinhoso ou lâmina) e atravessa pedículos e corpo de forma transversa, tudo pelo osso, numa única vértebra (AO B1). O eixo anterior também explica a forte associação com lesões **abdominais e vasculares**, que precisam ser procuradas.\n\n**Por que consolida.** Como a lesão é transóssea, transversa e pouco cominuta, o osso tem bom potencial de consolidação. Por isso a B1 é a única lesão do tipo B que pode ser tratada sem cirurgia, com **órtese em hiperextensão**, em pacientes de risco cirúrgico, que preferem evitar cirurgia ou em quem a fratura está bem alinhada.\n\n**A cirurgia que faz sentido.** No paciente ativo, ou que não vai respeitar as restrições da órtese, os autores preferem uma **fixação posterior curta em compressão**, monossegmentar ou mono-óssea:\n\n- a compressão posterior é a força exatamente **oposta** à distração que causou a lesão;\n- não há necessidade de reconstrução anterior, porque o componente anterior é uma fratura transversa que consolida sozinha;\n- não há segmento móvel lesado, então **não é preciso artrodese**: o implante pode até ser retirado depois da consolidação, devolvendo o movimento;\n- o ligamento amarelo dobrado é ressecado antes da redução, para não invadir o canal;\n- pela ausência de descompressão e de manobras complexas, é boa candidata a técnica minimamente invasiva.\n\nO capítulo mostra uma criança de 11 anos, com cinto abdominal, tratada com parafuso e gancho atravessando a fratura (figura 49-4).\n\n**Contraste com a B2.** Na B2, a lesão passa por ligamento ou disco, que não cicatrizam de forma confiável; ali a fixação vem com artrodese.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Type B1, figura 49-4 e algoritmo 49-2.\n\n> **Na prova:** CHANCE (B1): órtese em hiperextensão ou fixação posterior curta em compressão, sem artrodese.",
-  "correta": "**C: fixação posterior curta em compressão, sem artrodese.** A lesão foi causada por distração posterior. Comprimir posteriormente é a força oposta e dá o melhor ambiente mecânico para consolidar. Como a lesão é toda óssea e de uma única vértebra, não há segmento a fundir nem coluna anterior a reconstruir, e o implante pode ser retirado após a consolidação.",
+  "conceito": "A fratura foi produzida por **distração**. Para contrariar essa força, a montagem posterior é usada em **compressão**, fechando a abertura. No jovem ativo com Chance B1 puramente óssea, o capítulo descreve **fixação posterior curta sem artrodese**.\n\nA B1 atravessa uma única vértebra pelo osso e preserva o disco. Como o traço ósseo pode consolidar, a estabilização não exige necessariamente fundir o segmento; o material pode ser retirado depois, recuperando movimento. Essa lógica é diferente da B2, que envolve o nível intervertebral e tem componente ligamentar (resumo do Rockwood, 10ª ed., cap. 49, “Flexão-distração e fratura de Chance”).\n\nA pergunta já pede uma opção cirúrgica. Isso não significa que toda B1 precise ser operada: o capítulo aceita órtese em pacientes selecionados com alinhamento mantido e bom potencial de consolidação. Aqui, o essencial é escolher uma montagem coerente com o mecanismo e com o disco intacto.\n\nO resumo da Biblioteca mostra como mudar de B1 para B2 altera tanto a biologia da consolidação quanto o planejamento.\n\n**Por que esta questão foi criada.** É um treino de biomecânica aplicada: a força da montagem deve contrariar a distração, e a integridade discal explica a possibilidade de não fazer artrodese.",
+  "correta": "**C: fixação posterior curta em compressão, sem artrodese.** A compressão se opõe à abertura por distração. Sendo uma B1 óssea com disco intacto, a consolidação permite preservar a possibilidade de movimento após retirada do material.",
   "incorretas": {
-   "A": "**Ataca a coluna errada.** A corpectomia reconstrói uma coluna anterior cominuta. Na CHANCE, o componente anterior é uma fratura transversa por tração, que consolida sozinha. O problema é a banda de tensão posterior, e um construto só anterior não a controla.",
-   "B": "**Repete o mecanismo da lesão.** A distração é útil na explosão, para ligamentotaxia. Na CHANCE, que já é uma lesão por distração, distrair abriria ainda mais a fratura. O correto é comprimir posteriormente.",
-   "D": "**Excessiva para uma lesão óssea de uma vértebra.** Construtos longos são reservados a osteoporose, cominuição grave ou coluna anquilosada. Na B1 de um jovem, a fixação curta em compressão basta, e a artrodese longa sacrificaria segmentos móveis sem necessidade."
+   "A": "**Não é a estratégia descrita para a B1 óssea do caso.** Corpectomia com reconstrução anterior trata outro problema de suporte ou compressão. Aqui a resposta específica é aproximar a lesão posterior em compressão, sem exigir ressecção do corpo.",
+   "B": "**A distração da montagem acompanha a força que abriu a lesão.** Ligamentotaxia pode ter papel na explosão, mas a pergunta é de Chance B1. A manobra para contrariar seu mecanismo é compressão, não mais abertura.",
+   "D": "**Impõe fusão e extensão maiores que a opção descrita.** Montagens longas têm outras indicações de instabilidade. Na B1 puramente óssea selecionada, o capítulo usa fixação curta e preserva o movimento ao dispensar artrodese."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Flexão-distração e fratura de Chance (tipo B1 e B2)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Flexão-distração e fratura de Chance (tipo B1 e B2)"
+     ],
+     "blocos": [
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-a4dcbec6",
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "3742aeb7b1da840b08dc87b11e028825df578099b8e8565d858f6ba495dc7bad"
+    }
+   ],
+   "questaoSha256": "eab91e14ec5a337f46071e47a0f194b366ae1847daf98159cf41c433f65a2472",
+   "comentarioSha256": "8de5b60495e17e55df35ccbdfef9079a7d63e26a04ae2dee6f4615b28a6a0177"
+  }
  },
  "coluna-0552": {
   "conceito": "**A coluna anquilosada é um osso longo.** Na espondilite anquilosante e na DISH, a coluna está fundida e rígida, muitas vezes osteoporótica e com cifose fixa. Um trauma leve, como cair sentado de uma cadeira, quebra esse \"osso longo\" num traço transversal através das três colunas, em geral por **extensão** (AO B3): a frente se abre. Com braços de alavanca enormes acima e abaixo e poucos tecidos moles segurando, a lesão é **extremamente instável**.\n\n**Por que a posição importa tanto.** O paciente vivia com uma cifose fixa. Deitado plano em decúbito dorsal, o tronco é forçado para a extensão, o que **abre ainda mais a fratura** e pode criar ou piorar a compressão medular. Por isso, o capítulo 49 do Rockwood (10ª ed.) recomenda transportar:\n\n- em **decúbito lateral**, que reduz parcialmente a fratura e alarga o canal; ou\n- em **decúbito dorsal com travesseiros sob o pescoço e a parte alta do tórax**, mantendo uma cifose protetora.\n\nNa paciente da figura, transportada 5 horas em decúbito lateral, a lesão melhorou de ASIA B para ASIA D no caminho.\n\n**Os outros cuidados da coluna anquilosada:**\n\n- **tomografia de toda a coluna:** lesões não contíguas são comuns (a mesma paciente tinha uma lesão em C5-C6);\n- **ressonância** se houver déficit: hematoma epidural ocorre em cerca de 10%; se não for possível, mielotomografia ou laminectomia exploradora com campo amplo;\n- não estender o paciente para \"caber\" no aparelho de ressonância;\n- **cirurgia** para estabilizar: via posterior, com fixação longa de dois a três níveis acima e abaixo; fixação percutânea é uma opção nas lesões sem déficit e sem grande desvio;\n- **posicionamento em decúbito ventral** com monitorização neurológica antes e depois de virar, em mesa que não force a extensão; o objetivo é restaurar a cifose prévia, não corrigi-la.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Type B3, figuras 49-11 e 49-29.\n\n> **Na prova:** fratura em extensão na coluna anquilosada: transportar em decúbito lateral ou com cifose protetora, nunca plano.",
@@ -7004,32 +7472,84 @@
   "conferido": false
  },
  "coluna-0553": {
-  "conceito": "**O que é o tipo C.** São as fraturas-luxações: lesões de três colunas, com ruptura de todos os estabilizadores ósseos e ligamentares, causadas em parte por forças no plano transversal (cisalhamento e rotação). O resultado é **translação ou luxação** entre as vértebras. Luxações facetárias puras são raras na coluna toracolombar; o padrão mais comum tem fratura das facetas ou da pars com translação ou rotação.\n\n**A gravidade.** O capítulo 49 do Rockwood (10ª ed.) diz que o tipo C causa **lesão neurológica em 75% ou mais** dos pacientes. O comprometimento do canal vem sobretudo do **desalinhamento**, e não tanto do fragmento retropulsado. Por isso, realinhar a coluna já descomprime o canal indiretamente. Lesões vasculares e viscerais associadas são frequentes nessas lesões de alta energia.\n\n**Por que operar sempre.** São lesões tão instáveis que a cirurgia é recomendada **independentemente do estado neurológico**. Mesmo o paciente intacto corre risco de perder função com o desalinhamento.\n\n**Por que começar por trás.**\n\n- precisa de fixação de vários níveis, impossível por um acesso anterior típico;\n- o deslocamento em vários planos é muito mais fácil de corrigir pela via posterior, extensa e versátil;\n- o realinhamento posterior, em geral, já descomprime o canal.\n\nDepois, uma tomografia avalia a coluna anterior; se o corpo estiver muito cominuto, completa-se com reconstrução anterior (corpectomia e artrodese intersomática). A **fixação anterior isolada falha** no tipo C, pela lesão circunferencial dos tecidos moles.\n\n**Prognóstico.** Depende principalmente do estado neurológico na chegada. Fraturas-luxações abaixo do cone podem surpreender: o capítulo mostra uma luxação de L1-L2 com canal muito comprometido e função quase preservada, porque só havia raízes no nível.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Type C e Combined Approach, figura 49-9 e algoritmo 49-3.\n\n> **Na prova:** fratura-luxação (AO C): cirurgia sempre, começando pela redução e fixação posterior longa; anterior isolada falha.",
-  "correta": "**B: redução e fixação posterior multissegmentar, mesmo sem déficit neurológico.** A fratura-luxação é a lesão mais instável, e a cirurgia é indicada qualquer que seja o estado neurológico. A via posterior permite corrigir o deslocamento em vários planos e fixar vários níveis, e o realinhamento costuma descomprimir o canal. A reconstrução anterior entra depois, se a tomografia mostrar coluna anterior insuficiente.",
+  "conceito": "Na fratura-luxação AO C, o problema não é apenas um fragmento que ocupa o canal. Existe **translação ou rotação com falha das três colunas**, uma perda de alinhamento e sustentação que permanece grave mesmo se o exame neurológico inicial estiver intacto.\n\nOs autores começam **por trás**, com redução e artrodese posterior multissegmentar, **pelo menos dois níveis acima e abaixo**. A via extensível facilita a correção em vários planos; o realinhamento pode descomprimir indiretamente o canal. Depois, a tomografia verifica se falta reconstrução anterior (resumo do Rockwood, 10ª ed., cap. 49, “C: a fratura-luxação”).\n\nA lógica é tratar deslocamento e instabilidade juntos. Uma laminectomia isolada não restabelece a sustentação, e a via anterior isolada falha nessa lesão segundo o capítulo. Também não se deve esperar aparecer um déficit para reconhecer que a coluna já perdeu estabilidade.\n\nLeia a seção no resumo da Biblioteca para comparar a explosão isolada com o tipo C: a preservação neurológica não tem o mesmo significado de estabilidade em ambos.\n\n**Por que esta questão foi criada.** É um ponto de conduta destacado pelos autores: o tipo C requer estabilização posterior mesmo sem déficit, ao contrário de padrões estáveis que aceitam tratamento não cirúrgico.",
+  "correta": "**B: redução e fixação posterior multissegmentar, mesmo sem déficit.** A falha das três colunas com deslocamento exige estabilização. A neurologia intacta não elimina a instabilidade morfológica.",
   "incorretas": {
-   "A": "**Falha no tipo C.** A fixação anterior isolada não controla uma lesão com ruptura circunferencial de tecidos moles e não permite fixar os vários níveis necessários. Ela pode complementar a fixação posterior, mas não substituí-la.",
-   "C": "**Não se aplica ao tipo C.** O tratamento conservador é reservado principalmente às lesões do tipo A estáveis. Mesmo intacto, o paciente com fratura-luxação tem coluna grosseiramente instável e risco de perder função; a cirurgia é recomendada independentemente da neurologia.",
-   "D": "**Descomprime sem estabilizar.** A laminectomia isolada remove elementos posteriores de uma coluna já instável e pioraria o desalinhamento. No tipo C, a descompressão vem sobretudo do realinhamento, feito junto com a fixação."
+   "A": "**Via anterior isolada não resolve a falha das três colunas.** O capítulo inicia pela redução e estabilização posterior; a reconstrução anterior, se necessária, é decidida depois. Não trocar eventual complemento pela estratégia isolada inicial.",
+   "C": "**Ausência de déficit não equivale a estabilidade no tipo C.** A translação e a falha estrutural já justificam a conduta cirúrgica descrita. Esperar o exame piorar deixaria sem tratamento o problema mecânico existente.",
+   "D": "**Abrir o canal não realinha nem estabiliza sozinho o segmento.** A laminectomia isolada não substitui redução e montagem posterior. Aqui o deslocamento entre vértebras é o componente decisivo do planejamento."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+     ],
+     "blocos": [
+      "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
+      "hiperextensao-na-coluna-anquilosada-b3-e-fratura-55b5ca1f"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "0d21661c066907981d016ca72f69311ca1560da48380f2c611bf074d1c098b9b"
+    }
+   ],
+   "questaoSha256": "ea9958199b28df97b65e88bc8cdef06eb91274a19ebe3ee90c8f167dea73f627",
+   "comentarioSha256": "241e415f78d4f881dc93ffea5ed4d223ccf0909d8494430bc19d0ebac3ca91cb"
+  }
  },
  "coluna-0554": {
-  "conceito": "**As duas técnicas.** Na **vertebroplastia**, o cimento (polimetilmetacrilato) é injetado no corpo vertebral através do pedículo. Na **cifoplastia**, um balão é insuflado antes, para tentar restaurar a altura e corrigir a cunha, e o cimento preenche a cavidade criada.\n\n**O extravasamento é a regra, não a exceção.** O capítulo 49 do Rockwood (10ª ed.) diz que o vazamento de cimento ocorre em **até 9 de cada 10 pacientes**, mas raramente causa problema. Ele aumenta com cimento menos viscoso, volumes maiores e fraturas mais graves. Os destinos mais comuns:\n\n| Destino do cimento | Frequência |\n|---|---|\n| Espaço discal (pelos platôs rompidos) | 45% |\n| Região paravertebral | 35% |\n| Espaço epidural | 20% |\n| Região pré-vertebral | 18% |\n\nO disco é o destino mais comum porque a fratura osteoporótica rompe o platô, abrindo caminho direto para o disco vizinho.\n\n**A complicação neurológica é rara, mas grave.** Ocorre em cerca de **0,1%** dos pacientes, em geral por cimento no canal ou no forame, e pode exigir descompressão e reconstrução (a figura 49-32 mostra paraplegia aguda por cimento à frente do canal).\n\n**Outras complicações:**\n\n- **cimento no disco** predispõe a fratura do platô vizinho;\n- **embolia** de cimento (fragmentos já curados ou monômero que polimeriza à distância) ou de gordura da medula óssea; casos fatais são raros, e as taxas relatadas de embolia pulmonar sintomática variam muito com os critérios;\n- **novas fraturas:** cerca de 20% em 6 a 12 meses, com ou sem vertebroplastia; uma metanálise não mostrou aumento do risco de fratura adjacente pela cimentação. São fatores de risco o índice de massa corporal e a densidade óssea baixos e o vazamento para o disco.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seção Complications of Cement Augmentation, figura 49-32.\n\n> **Na prova:** cimentação: extravasamento em até 90%, mais para o disco; complicação neurológica em 0,1%.",
-  "correta": "**D: espaço discal; 0,1%.** O cimento vaza com muita frequência (até 9 em 10 pacientes), sobretudo para o disco (45%), pelos platôs rompidos da fratura osteoporótica. A complicação neurológica é rara, em torno de 0,1%, mas pode ser grave e exigir descompressão.",
+  "conceito": "A localização mais comum do vazamento e sua consequência mais temida não são a mesma informação. O resumo descreve **espaço discal como destino mais frequente, 45%**, e **complicação neurológica em 0,1%**. É o par da alternativa D.\n\nO cimento pode passar ao disco pelos platôs rompidos. Outras direções são paravertebral, epidural e pré-vertebral, mas são menos frequentes na descrição. O extravasamento como um todo chega a ser relatado em até nove de cada dez pacientes e, em geral, não tem consequência. Isso explica como um evento de imagem comum pode coexistir com lesão neurológica rara (resumo do Rockwood, 10ª ed., cap. 49, “As complicações do cimento”).\n\nRaro não significa inofensivo: a complicação neurológica pode ser grave e exigir descompressão. Já o cimento no disco pode predispor o platô vizinho a fraturar. A seção do resumo da Biblioteca permite estudar a frequência junto do significado de cada destino, sem confundir ocorrência e gravidade.\n\n**Por que esta questão foi criada.** Combina a taxa neurológica cobrada no TEOT 2025 com a direção do extravasamento perguntada no TARO 2025.",
+  "correta": "**D: espaço discal; 0,1%.** O disco é a rota mais frequente apresentada, através dos platôs rompidos. A taxa menor se refere à complicação neurológica, não à frequência total de extravasamento.",
   "incorretas": {
-   "A": "**Destino e frequência superestimados.** O vazamento epidural ocorre em cerca de 20% dos casos, atrás do disco e da região paravertebral. A complicação neurológica é bem mais rara que 10%: cerca de 0,1%.",
-   "B": "**Segundo destino mais comum, e taxa errada.** A região paravertebral recebe cimento em cerca de 35% dos casos, atrás do disco (45%). E a complicação neurológica fica em torno de 0,1%, não 1%.",
-   "C": "**Destino certo, taxa errada.** O disco é mesmo o destino mais comum. Mas a complicação neurológica é rara, cerca de 0,1%; 10% tornaria a técnica proibitiva."
+   "A": "**Escolhe a rota temida em vez da mais frequente e aumenta a taxa neurológica.** O epidural aparece em 20% das localizações descritas, atrás do disco. A complicação neurológica informada é 0,1%, não 10%.",
+   "B": "**Paravertebral é uma rota possível, mas vem depois do disco.** O resumo apresenta 35% contra 45% discal. Além disso, 1% não corresponde à taxa neurológica de 0,1% fornecida.",
+   "C": "**Acerta a direção e erra a consequência.** O espaço discal é o destino mais comum. A segunda parte confunde a frequência elevada de vazamento com a raridade de lesão neurológica, aumentando a taxa para 10%."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations; Kitto, Edwards e Tannoury)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura vertebral osteoporótica e cimentação."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura vertebral osteoporótica e cimentação"
+     ],
+     "blocos": [
+      "fratura-vertebral-osteoporotica-e-cimentacao-95070427",
+      "fratura-vertebral-osteoporotica-e-cimentacao-7f8287dd",
+      "fratura-vertebral-osteoporotica-e-cimentacao-131730fc",
+      "fratura-vertebral-osteoporotica-e-cimentacao-d544fd1e",
+      "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
+      "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
+    }
+   ],
+   "questaoSha256": "d4c0c96a7acacadadf621ea652a54e7e0e7f00fadccf00507ee22ba436859015",
+   "comentarioSha256": "7dbccd16aa0beefa287d7f155d4e76ffcb935d9b1acd5887b3a6405b29b6359f"
+  }
  },
  "coluna-0555": {
   "conceito": "**O problema.** A coluna é o local mais comum de fratura por osteoporose, cerca de metade de todas. A incidência sobe muito com a idade: acima de 85 anos é 10 a 15 vezes maior que entre 60 e 65. Até 30% dos tratados sem cirurgia evoluem com pseudartrose dolorosa, cifose progressiva ou déficit.\n\n**O que a diretriz da AAOS (2010) recomenda:**\n\n- **forte recomendação contra a vertebroplastia** no paciente neurologicamente intacto com fratura osteoporótica sintomática;\n- **cifoplastia como opção**, com força **limitada** (baseada principalmente em um estudo de alívio de dor a curto prazo);\n- **calcitonina por 4 semanas** para quem chega em até 5 dias da fratura (força moderada);\n- **bisfosfonato** como opção para prevenir novas fraturas sintomáticas (força limitada);\n- órtese, repouso, fisioterapia, exercícios e analgésicos: evidência **inconclusiva**, sem recomendação a favor ou contra.\n\n**A história da controvérsia.**\n\n- 2009: dois ensaios com procedimento simulado não mostraram vantagem da vertebroplastia em nenhum momento do seguimento;\n- um ensaio europeu, sem simulação, mostrou alívio da dor imediato e sustentado em relação ao tratamento conservador;\n- VERTOS IV (2018): vertebroplastia igual ao procedimento simulado;\n- Cochrane 2018: evidência de qualidade alta a moderada não apoia a vertebroplastia de rotina, inclusive com menos ou mais de 6 semanas de dor;\n- VAPOUR: benefício quando feita nas primeiras 3 semanas, em dor intensa;\n- uma análise do Medicare associou a vertebroplastia a menor mortalidade (39% contra 50%), mas é estudo observacional.\n\nVertebroplastia e cifoplastia parecem equivalentes no alívio da dor; a cifoplastia custa mais.\n\n**A prática dos autores.** Cimentação como indicação relativa, para poucos pacientes com dor intensa e limitante após pelo menos 6 semanas de tratamento conservador. Cirurgia aberta para déficit neurológico (sobretudo agudo, incompleto e progressivo), deformidade dolorosa progressiva e pseudartrose, sempre por via posterior com reforço (parafusos cimentados, suporte anterior, cimentação dos níveis vizinhos), evitando construtos só anteriores no osso osteoporótico. E tratar a osteoporose: cálcio, vitamina D, PTH e, quando indicado, medicação, que reduz novas fraturas.\n\nBase: Rockwood and Green, 10ª ed., capítulo 49 (Thoracolumbar Spine Fractures and Dislocations), seções Osteoporotic Vertebral Fractures e Cement Augmentation.\n\n> **Na prova:** AAOS: forte recomendação contra vertebroplastia no intacto; cifoplastia é opção de força limitada.",

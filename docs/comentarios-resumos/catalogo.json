@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1388,
+  "pendente": 1355,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 86,
+  "pendente-fonte": 89,
   "pendente-inspecao-imagem": 166,
-  "revisada": 632
+  "revisada": 662
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -27,9 +27,9 @@
    "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
    "estados": {
     "duplicada": 2,
-    "pendente": 4,
+    "pendente": 2,
     "pendente-fonte": 27,
-    "revisada": 35
+    "revisada": 37
    }
   },
   "rockwood10-33-fratura-escapula": {
@@ -125,9 +125,11 @@
    "titulo": "Fraturas e luxações da coluna cervical",
    "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
    "estados": {
-    "pendente": 113,
+    "pendente": 110,
     "pendente-anulada": 1,
-    "pendente-inspecao-imagem": 18
+    "pendente-fonte": 1,
+    "pendente-inspecao-imagem": 18,
+    "revisada": 2
    }
   },
   "rockwood10-49-fratura-toracolombar": {
@@ -135,8 +137,10 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente": 109,
-    "pendente-inspecao-imagem": 17
+    "pendente": 76,
+    "pendente-fonte": 3,
+    "pendente-inspecao-imagem": 17,
+    "revisada": 30
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -383,8 +387,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 49 descreve a lesão primária como compressão aguda, mas não compara a frequência de impacto com compressão transitória versus persistente, distração e transecção. Falta fonte primária que sustente o ranking solicitado. A reprodução do gabarito no comentário contextual do resumo não demonstra qual mecanismo é o mais frequente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -398,7 +402,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "515833e78cd29003b3954fe6112744afdade78b07ba6157ac1777f3ba10f4e72"
+   "questaoSha256": "515833e78cd29003b3954fe6112744afdade78b07ba6157ac1777f3ba10f4e72",
+   "pendencia": "O capítulo 49 descreve a lesão primária como compressão aguda, mas não compara a frequência de impacto com compressão transitória versus persistente, distração e transecção. Falta fonte primária que sustente o ranking solicitado. A reprodução do gabarito no comentário contextual do resumo não demonstra qual mecanismo é o mais frequente."
   },
   "coluna-0011": {
    "tema": "coluna",
@@ -681,8 +686,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 49 descreve o retorno do reflexo bulbocavernoso e suas limitações, mas afirma explicitamente não informar a duração do choque medular. Necessária fonte que compare as faixas de horas e justifique o intervalo oficial C, 24–48 horas; não usar a simples citação da prova como fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -696,7 +701,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "b1287a1892af4bd089d9ea43d2a46e8d4432aaff09291fc3c3fa9788b421fe87"
+   "questaoSha256": "b1287a1892af4bd089d9ea43d2a46e8d4432aaff09291fc3c3fa9788b421fe87",
+   "pendencia": "O capítulo 49 descreve o retorno do reflexo bulbocavernoso e suas limitações, mas afirma explicitamente não informar a duração do choque medular. Necessária fonte que compare as faixas de horas e justifique o intervalo oficial C, 24–48 horas; não usar a simples citação da prova como fonte."
   },
   "coluna-0050": {
    "tema": "coluna",
@@ -846,8 +852,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 49 sustenta que metilprednisolona é opção controversa, mas declara não desenvolver as síndromes medulares incompletas. Faltam os padrões motores da síndrome central e sensitivos da posterior necessários para conferir C e D, além da afirmação de hipertermia em B. Necessária fonte específica de síndromes medulares para revisar todas as alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -869,7 +875,8 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "9742c89d7016a5f6114f3d1ce91b636276180274e2a1556bccb945b7985e0699"
+   "questaoSha256": "9742c89d7016a5f6114f3d1ce91b636276180274e2a1556bccb945b7985e0699",
+   "pendencia": "O capítulo 49 sustenta que metilprednisolona é opção controversa, mas declara não desenvolver as síndromes medulares incompletas. Faltam os padrões motores da síndrome central e sensitivos da posterior necessários para conferir C e D, além da afirmação de hipertermia em B. Necessária fonte específica de síndromes medulares para revisar todas as alternativas."
   },
   "coluna-0078": {
    "tema": "coluna",
@@ -1293,7 +1300,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1308,7 +1315,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "40c830bb63219bd975d641c36fa82a0ff4b8d8de290edcc1eef68aa93fa9d76f"
+   "questaoSha256": "40c830bb63219bd975d641c36fa82a0ff4b8d8de290edcc1eef68aa93fa9d76f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Regiões, anatomia e lesões associadas"
+      ],
+      "blocos": [
+       "regioes-anatomia-e-lesoes-associadas-f5dd2b97",
+       "regioes-anatomia-e-lesoes-associadas-2166ad9f",
+       "regioes-anatomia-e-lesoes-associadas-107ede6e"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "529a4d805a78ba3870bd0ba5bb1a97f18bd4f266792dacda9e0a0af17c59a59c"
+     }
+    ],
+    "questaoSha256": "40c830bb63219bd975d641c36fa82a0ff4b8d8de290edcc1eef68aa93fa9d76f",
+    "comentarioSha256": "8b65196154768204dd6e18fba8a33662b9fabc5dd6b592acb3bfc69387df4d15"
+   }
   },
   "coluna-0216": {
    "tema": "coluna",
@@ -1415,7 +1447,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1438,7 +1470,33 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "84926064717d7d859975f06fc0cb9710be73e493ce2dcf528920195c225057a5"
+   "questaoSha256": "84926064717d7d859975f06fc0cb9710be73e493ce2dcf528920195c225057a5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+       "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+       "exame-neurologico-choque-neurogenico-choque-medu-acb3781c",
+       "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "d42b8ead6d9e05df705f60a434bd8967d93226abb971e9d5536854fd9d437e86"
+     }
+    ],
+    "questaoSha256": "84926064717d7d859975f06fc0cb9710be73e493ce2dcf528920195c225057a5",
+    "comentarioSha256": "4479f1326032a510168dd8e0d899b1730739e12edb6dfe8be2d5e26a8f4b90a8"
+   }
   },
   "coluna-0260": {
    "tema": "coluna",
@@ -1609,7 +1667,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1632,7 +1690,37 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "1240207ee40fb46f6e3a3f6b9bad087b8f0456d347efd22b49d399fabbb39e83"
+   "questaoSha256": "1240207ee40fb46f6e3a3f6b9bad087b8f0456d347efd22b49d399fabbb39e83",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-acb3781c",
+       "exame-neurologico-choque-neurogenico-choque-medu-74b74e9f",
+       "exame-neurologico-choque-neurogenico-choque-medu-cc51fb25",
+       "exame-neurologico-choque-neurogenico-choque-medu-544e5be0",
+       "exame-neurologico-choque-neurogenico-choque-medu-2a5de0df",
+       "exame-neurologico-choque-neurogenico-choque-medu-e152ac2d",
+       "exame-neurologico-choque-neurogenico-choque-medu-ce67a41e",
+       "exame-neurologico-choque-neurogenico-choque-medu-09b66f73"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "bc6da3f95d7908711668a8b909ce60d34185c1c17c98043990e98f292c843c9b"
+     }
+    ],
+    "questaoSha256": "1240207ee40fb46f6e3a3f6b9bad087b8f0456d347efd22b49d399fabbb39e83",
+    "comentarioSha256": "da8331b19041f28483e9b56da679472df2e888d5b229d4a09d5d81b7cfd9d3fa"
+   }
   },
   "coluna-0296": {
    "tema": "coluna",
@@ -1684,7 +1772,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1699,7 +1787,37 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "5b10a59f4f91f98f785fcf3cd82c8e2a226f19df0547c2851fc3ca9743797606"
+   "questaoSha256": "5b10a59f4f91f98f785fcf3cd82c8e2a226f19df0547c2851fc3ca9743797606",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Flexão-distração e fratura de Chance (tipo B1 e B2)",
+       "Fratura em explosão (A3 e A4)",
+       "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+      ],
+      "blocos": [
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-f76eaccc",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b",
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "3f42ebb4bf49f4f463a1dd34b6914c9223ea20a56c592bf2a994f19fda8f6725"
+     }
+    ],
+    "questaoSha256": "5b10a59f4f91f98f785fcf3cd82c8e2a226f19df0547c2851fc3ca9743797606",
+    "comentarioSha256": "55c6ad28342ea170821a0f1b98d8f63ae413194df0ffb7247abbe7597d08eef2"
+   }
   },
   "coluna-0299": {
    "tema": "coluna",
@@ -1802,7 +1920,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1817,7 +1935,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "cad018e37077b5b5172887e80bd268fc6b0394c7f0accb89fbc7753af84064b5"
+   "questaoSha256": "cad018e37077b5b5172887e80bd268fc6b0394c7f0accb89fbc7753af84064b5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
+     }
+    ],
+    "questaoSha256": "cad018e37077b5b5172887e80bd268fc6b0394c7f0accb89fbc7753af84064b5",
+    "comentarioSha256": "66aaed62cbee057275b3ed327a1c6f348d462d520115801e53999c2d91b71613"
+   }
   },
   "coluna-0306": {
    "tema": "coluna",
@@ -1826,7 +1969,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1841,7 +1984,35 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "108e0d6c48d0fdbb072707f961280fbb5dad2be14888f4670a8fb7208977b6d3"
+   "questaoSha256": "108e0d6c48d0fdbb072707f961280fbb5dad2be14888f4670a8fb7208977b6d3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS",
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-4e3ada20",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-ec0d5adc",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-6c104b05",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "164ceb454cc03cbe5c800b7fd6c61de948fb8f2cc71e22a3f37fa2b0bcb73382"
+     }
+    ],
+    "questaoSha256": "108e0d6c48d0fdbb072707f961280fbb5dad2be14888f4670a8fb7208977b6d3",
+    "comentarioSha256": "841886556082343b764ec19b0c772bd700771cbfa81aa2b1f46b31765a3a2073"
+   }
   },
   "coluna-0310": {
    "tema": "coluna",
@@ -3659,7 +3830,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3674,7 +3845,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "e215c1216e947cf98793d4c29f95f7716ef63dab82752cabbeada35ea6fdc1bd"
+   "questaoSha256": "e215c1216e947cf98793d4c29f95f7716ef63dab82752cabbeada35ea6fdc1bd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-eb5b42b1",
+       "fratura-em-explosao-a3-e-a4-c49f544e",
+       "fratura-em-explosao-a3-e-a4-b87f9844"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "1676a22753aded736973a81df067a470f86091a8354e3f3bb87d49caf1ff5f47"
+     }
+    ],
+    "questaoSha256": "e215c1216e947cf98793d4c29f95f7716ef63dab82752cabbeada35ea6fdc1bd",
+    "comentarioSha256": "9e28eb30da9f3ba06582044fc3ef6a09b3b1a881bcb5d490c1fa01523c95bdee"
+   }
   },
   "coluna-0535": {
    "tema": "coluna",
@@ -3733,7 +3929,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3748,7 +3944,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "4547a8f1d87bc724e5f02486ac45f1c3ca77554655e950bbf24d19c7bd1c911a"
+   "questaoSha256": "4547a8f1d87bc724e5f02486ac45f1c3ca77554655e950bbf24d19c7bd1c911a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
+     }
+    ],
+    "questaoSha256": "4547a8f1d87bc724e5f02486ac45f1c3ca77554655e950bbf24d19c7bd1c911a",
+    "comentarioSha256": "d9c1030521b6f23ad9c60cb27d14ba16070631b2797180eac9431c056c73fc8d"
+   }
   },
   "coluna-0538": {
    "tema": "coluna",
@@ -3757,7 +3978,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3772,7 +3993,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "784b4799f17273f0d2f16230c964dd5f0a101910c047e4b3752f195420b1f9d8"
+   "questaoSha256": "784b4799f17273f0d2f16230c964dd5f0a101910c047e4b3752f195420b1f9d8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS",
+       "Imagem: radiografia, tomografia e ressonância"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
+       "imagem-radiografia-tomografia-e-ressonancia-00da61c5"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "8387f9dec68ba4696aee5f59894a0d38b36218d64062568647a1ad8091d380f3"
+     }
+    ],
+    "questaoSha256": "784b4799f17273f0d2f16230c964dd5f0a101910c047e4b3752f195420b1f9d8",
+    "comentarioSha256": "08cc9f5537a2ac636eb41cc09b8ab7e8dd2255cd47b916ba2fa5f116e3dc158f"
+   }
   },
   "coluna-0539": {
    "tema": "coluna",
@@ -3782,7 +4030,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3797,7 +4045,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "3ad707ca56c9c6e9725e35395bf500353d58c8380e851df9b70404f2b84eddfd"
+   "questaoSha256": "3ad707ca56c9c6e9725e35395bf500353d58c8380e851df9b70404f2b84eddfd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
+     }
+    ],
+    "questaoSha256": "3ad707ca56c9c6e9725e35395bf500353d58c8380e851df9b70404f2b84eddfd",
+    "comentarioSha256": "4569cf28ee0d305aab6f5f3c6bb6479144be16a8901db35129aeb7fe66f97172"
+   }
   },
   "coluna-0540": {
    "tema": "coluna",
@@ -3879,7 +4152,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3894,7 +4167,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "31903bd4d48f3d94814ecb4191af9ba9a577dd8cc61f07f8b0855d6c7258e539"
+   "questaoSha256": "31903bd4d48f3d94814ecb4191af9ba9a577dd8cc61f07f8b0855d6c7258e539",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS",
+       "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)",
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2",
+       "exame-neurologico-choque-neurogenico-choque-medu-544e5be0"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "3f9ddbae7a45c656a81e553612ced37ef143c78f1b46f8488e2d2e7bde827441"
+     }
+    ],
+    "questaoSha256": "31903bd4d48f3d94814ecb4191af9ba9a577dd8cc61f07f8b0855d6c7258e539",
+    "comentarioSha256": "848350a03d6537b4069a1a1b9c0bda30377baad6d3d6e9e1c84bbeb5d9da08f7"
+   }
   },
   "coluna-0544": {
    "tema": "coluna",
@@ -3903,7 +4203,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3918,7 +4218,33 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "a383410d0b78605d083b17cad719278838f79b2aff6d70e09fcc0d52bb7713a4"
+   "questaoSha256": "a383410d0b78605d083b17cad719278838f79b2aff6d70e09fcc0d52bb7713a4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-9306e94b",
+       "fratura-em-explosao-a3-e-a4-dee37645",
+       "fratura-em-explosao-a3-e-a4-9340101a",
+       "fratura-em-explosao-a3-e-a4-ff3a6d02"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "c979e964f2a319b0e6e599a93d9523e96caa700441dfa3aee68bebeec6613711"
+     }
+    ],
+    "questaoSha256": "a383410d0b78605d083b17cad719278838f79b2aff6d70e09fcc0d52bb7713a4",
+    "comentarioSha256": "8e146448b35a8ca7987d70116c009e2d83350a416d8b9ad17c450996bfc1d431"
+   }
   },
   "coluna-0545": {
    "tema": "coluna",
@@ -3927,7 +4253,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3942,7 +4268,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "5ed4c7febdc592069e3ec2929cc2be30edc3a26428f0481e1c09a974ee4ff7d3"
+   "questaoSha256": "5ed4c7febdc592069e3ec2929cc2be30edc3a26428f0481e1c09a974ee4ff7d3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-0266d7dc",
+       "fratura-em-explosao-a3-e-a4-cdbe316d",
+       "fratura-em-explosao-a3-e-a4-2ee7fe69"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "472784355d2ead7d006d9a326942aac3fff0babe1077968a28016cc0bf4496e0"
+     }
+    ],
+    "questaoSha256": "5ed4c7febdc592069e3ec2929cc2be30edc3a26428f0481e1c09a974ee4ff7d3",
+    "comentarioSha256": "852cdbaca558ba3e308746426c894deeb821ebdc7503fbc44c15322b2a331d46"
+   }
   },
   "coluna-0546": {
    "tema": "coluna",
@@ -3951,7 +4302,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3966,7 +4317,30 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "a0626baba3a6a9d1bc746d910232866101bf2d239f5a0bf6c298666ee353a701"
+   "questaoSha256": "a0626baba3a6a9d1bc746d910232866101bf2d239f5a0bf6c298666ee353a701",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-7ed529c3"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "245f6a3b3edd4edb77ea7cb88bff6ee14f41c28f11df9b0f604587fe4f389c78"
+     }
+    ],
+    "questaoSha256": "a0626baba3a6a9d1bc746d910232866101bf2d239f5a0bf6c298666ee353a701",
+    "comentarioSha256": "fc73b0383ff9914e13e599eff0edd330694a402c35f4b515d718ebc56f6ee115"
+   }
   },
   "coluna-0547": {
    "tema": "coluna",
@@ -3975,7 +4349,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3990,7 +4364,33 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "19b2a7949373e34604c8eadac0cfd49a48aae76090127a717d20b8a134b68746"
+   "questaoSha256": "19b2a7949373e34604c8eadac0cfd49a48aae76090127a717d20b8a134b68746",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-446fab41",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-c9d105e2",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-9bbe9701",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-e679772b"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "19eb5efcd4905b171c04292bf3a3144db9b22b343e2c2a3b2942bc715397fea6"
+     }
+    ],
+    "questaoSha256": "19b2a7949373e34604c8eadac0cfd49a48aae76090127a717d20b8a134b68746",
+    "comentarioSha256": "cdd50a1fba93a6a31aee7ba038ca0956faaa10e1b646c66c2eec834871e28464"
+   }
   },
   "coluna-0548": {
    "tema": "coluna",
@@ -4000,7 +4400,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4015,7 +4415,33 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "c9cebf7a1e3d6aee17a142cd53745bd27e3534246a398e54e0f8805080d60084"
+   "questaoSha256": "c9cebf7a1e3d6aee17a142cd53745bd27e3534246a398e54e0f8805080d60084",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Vias de acesso e a artéria de Adamkiewicz"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-a-arteria-de-adamkiewicz-7d646139",
+       "vias-de-acesso-e-a-arteria-de-adamkiewicz-097a3627",
+       "vias-de-acesso-e-a-arteria-de-adamkiewicz-ee713415",
+       "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "12292a553af8d2600c60b11bc64d23aa3ace0105de6a9c7c10d6ec0cf7e96927"
+     }
+    ],
+    "questaoSha256": "c9cebf7a1e3d6aee17a142cd53745bd27e3534246a398e54e0f8805080d60084",
+    "comentarioSha256": "cd014aaab262c3ee5c453da3572bdaa6458473c59a838f3d4b31f4fa6b5c49db"
+   }
   },
   "coluna-0549": {
    "tema": "coluna",
@@ -4049,7 +4475,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4064,7 +4490,31 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "c31745baa76e9e9468bca70db5c29c8d5ea40e8f5c12e06924363634eba224cb"
+   "questaoSha256": "c31745baa76e9e9468bca70db5c29c8d5ea40e8f5c12e06924363634eba224cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-83eadb46",
+       "fratura-em-explosao-a3-e-a4-94baf03f"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "ea15694aee2e8a7820d4320b2b8db1e2bb1bc119584257896d844c441d8e156f"
+     }
+    ],
+    "questaoSha256": "c31745baa76e9e9468bca70db5c29c8d5ea40e8f5c12e06924363634eba224cb",
+    "comentarioSha256": "e9b1cbb5c529f2d8649f78b89cba3705845e31ff86f75557a5f2964e98dc8187"
+   }
   },
   "coluna-0551": {
    "tema": "coluna",
@@ -4073,7 +4523,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4088,7 +4538,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "eab91e14ec5a337f46071e47a0f194b366ae1847daf98159cf41c433f65a2472"
+   "questaoSha256": "eab91e14ec5a337f46071e47a0f194b366ae1847daf98159cf41c433f65a2472",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Flexão-distração e fratura de Chance (tipo B1 e B2)"
+      ],
+      "blocos": [
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-a4dcbec6",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "3742aeb7b1da840b08dc87b11e028825df578099b8e8565d858f6ba495dc7bad"
+     }
+    ],
+    "questaoSha256": "eab91e14ec5a337f46071e47a0f194b366ae1847daf98159cf41c433f65a2472",
+    "comentarioSha256": "8de5b60495e17e55df35ccbdfef9079a7d63e26a04ae2dee6f4615b28a6a0177"
+   }
   },
   "coluna-0552": {
    "tema": "coluna",
@@ -4123,7 +4598,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4138,7 +4613,31 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ea9958199b28df97b65e88bc8cdef06eb91274a19ebe3ee90c8f167dea73f627"
+   "questaoSha256": "ea9958199b28df97b65e88bc8cdef06eb91274a19ebe3ee90c8f167dea73f627",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+      ],
+      "blocos": [
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-55b5ca1f"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "0d21661c066907981d016ca72f69311ca1560da48380f2c611bf074d1c098b9b"
+     }
+    ],
+    "questaoSha256": "ea9958199b28df97b65e88bc8cdef06eb91274a19ebe3ee90c8f167dea73f627",
+    "comentarioSha256": "241e415f78d4f881dc93ffea5ed4d223ccf0909d8494430bc19d0ebac3ca91cb"
+   }
   },
   "coluna-0554": {
    "tema": "coluna",
@@ -4147,7 +4646,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4162,7 +4661,35 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "d4c0c96a7acacadadf621ea652a54e7e0e7f00fadccf00507ee22ba436859015"
+   "questaoSha256": "d4c0c96a7acacadadf621ea652a54e7e0e7f00fadccf00507ee22ba436859015",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura vertebral osteoporótica e cimentação"
+      ],
+      "blocos": [
+       "fratura-vertebral-osteoporotica-e-cimentacao-95070427",
+       "fratura-vertebral-osteoporotica-e-cimentacao-7f8287dd",
+       "fratura-vertebral-osteoporotica-e-cimentacao-131730fc",
+       "fratura-vertebral-osteoporotica-e-cimentacao-d544fd1e",
+       "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
+       "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
+     }
+    ],
+    "questaoSha256": "d4c0c96a7acacadadf621ea652a54e7e0e7f00fadccf00507ee22ba436859015",
+    "comentarioSha256": "7dbccd16aa0beefa287d7f155d4e76ffcb935d9b1acd5887b3a6405b29b6359f"
+   }
   },
   "coluna-0555": {
    "tema": "coluna",
@@ -40121,7 +40648,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40136,7 +40663,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "7f737e01cee7035b2de5939e1da786146619512ae04cc7b46fddb5985cb14b63"
+   "questaoSha256": "7f737e01cee7035b2de5939e1da786146619512ae04cc7b46fddb5985cb14b63",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)",
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-83eadb46",
+       "fratura-em-explosao-a3-e-a4-505ff956",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "40b7a7c13f5356045d90943bba6e8e033e8c8deda23daa92f5b7e6d233607c61"
+     }
+    ],
+    "questaoSha256": "7f737e01cee7035b2de5939e1da786146619512ae04cc7b46fddb5985cb14b63",
+    "comentarioSha256": "7f160cedc82e3dc6d9ab9f65a331726ae25dd61d40c0de8c6fae6cf9d36ddf9a"
+   }
   },
   "trauma-0020": {
    "tema": "trauma",
@@ -41749,7 +42303,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41764,7 +42318,36 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "324f613e4ba03d70cf64540789ce62f54ab5ffd732e732817debc4167e7c3b78"
+   "questaoSha256": "324f613e4ba03d70cf64540789ce62f54ab5ffd732e732817debc4167e7c3b78",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Imagem: radiografia, tomografia e ressonância",
+       "Fratura em explosão (A3 e A4)",
+       "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+      ],
+      "blocos": [
+       "imagem-radiografia-tomografia-e-ressonancia-00296df5",
+       "imagem-radiografia-tomografia-e-ressonancia-ec5d457e",
+       "imagem-radiografia-tomografia-e-ressonancia-eb9ef889",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b",
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "5768aab8af97808901ab93f44a4a41c7a0cc304aa5ac4c67197596bfed69f468"
+     }
+    ],
+    "questaoSha256": "324f613e4ba03d70cf64540789ce62f54ab5ffd732e732817debc4167e7c3b78",
+    "comentarioSha256": "e38f97628c8bdbe014e2afd833f5091ac80265e0686e9bba675e5256f4b39f94"
+   }
   },
   "trauma-0085": {
    "tema": "trauma",
@@ -43407,7 +43990,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43422,7 +44005,33 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "b4301a27909fc50dba361bee6f576113fc9c6f386763f81821dc8441831aa615"
+   "questaoSha256": "b4301a27909fc50dba361bee6f576113fc9c6f386763f81821dc8441831aa615",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-446fab41",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-c9d105e2",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-9bbe9701",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-e679772b"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "19eb5efcd4905b171c04292bf3a3144db9b22b343e2c2a3b2942bc715397fea6"
+     }
+    ],
+    "questaoSha256": "b4301a27909fc50dba361bee6f576113fc9c6f386763f81821dc8441831aa615",
+    "comentarioSha256": "a1f55fa59b9c0b975bbe4b305109f87045804d2c0e06daedae2da3ee74e3316d"
+   }
   },
   "trauma-0144": {
    "tema": "trauma",
@@ -45170,7 +45779,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45185,7 +45794,35 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "44efed89f3600cd2392b6c0376792b1d42aa6ea554cf862845a4a0c0f37cabdd"
+   "questaoSha256": "44efed89f3600cd2392b6c0376792b1d42aa6ea554cf862845a4a0c0f37cabdd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)",
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-83eadb46",
+       "fratura-em-explosao-a3-e-a4-505ff956",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+       "fratura-em-explosao-a3-e-a4-94baf03f"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "f53cec310dda369bb32af43ac3975653dd7891878d6edf1ac83a82a31c68789a"
+     }
+    ],
+    "questaoSha256": "44efed89f3600cd2392b6c0376792b1d42aa6ea554cf862845a4a0c0f37cabdd",
+    "comentarioSha256": "82e07d32b8033fcf8ae261a86c7e355d96dc0dac544f2d08201cb064b3409ea8"
+   }
   },
   "trauma-0220": {
    "tema": "trauma",
@@ -45673,7 +46310,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45688,7 +46325,33 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "b1a997e80e05634af8ff261c903d2a61f6cb6116d47d6bf2fd2023c0d7f5fe01"
+   "questaoSha256": "b1a997e80e05634af8ff261c903d2a61f6cb6116d47d6bf2fd2023c0d7f5fe01",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS",
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "b8afdeffba38d6488017cee7af636826d4e465b2ac7634faa5aa80378dd5c1b2"
+     }
+    ],
+    "questaoSha256": "b1a997e80e05634af8ff261c903d2a61f6cb6116d47d6bf2fd2023c0d7f5fe01",
+    "comentarioSha256": "200fd4012da0002562170c708dbeac3b4286f06394b80f6ae59080e0ecbb7150"
+   }
   },
   "trauma-0238": {
    "tema": "trauma",
@@ -52691,7 +53354,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52714,7 +53377,35 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "80c6911c1f184521756c4a579aaec466b8520b5da6e8ae771a53175dc4550564"
+   "questaoSha256": "80c6911c1f184521756c4a579aaec466b8520b5da6e8ae771a53175dc4550564",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura vertebral osteoporótica e cimentação"
+      ],
+      "blocos": [
+       "fratura-vertebral-osteoporotica-e-cimentacao-95070427",
+       "fratura-vertebral-osteoporotica-e-cimentacao-7f8287dd",
+       "fratura-vertebral-osteoporotica-e-cimentacao-131730fc",
+       "fratura-vertebral-osteoporotica-e-cimentacao-d544fd1e",
+       "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
+       "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
+     }
+    ],
+    "questaoSha256": "80c6911c1f184521756c4a579aaec466b8520b5da6e8ae771a53175dc4550564",
+    "comentarioSha256": "573342c2958f54ccc386303f4477a2999ff3bd900211d52dabd12be1cb05561a"
+   }
   },
   "trauma-0755": {
    "tema": "trauma",
@@ -53711,7 +54402,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53726,7 +54417,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "9fba054b1633bd722af45fd38f12f7723f227776b966e2f0948db70f59795398"
+   "questaoSha256": "9fba054b1633bd722af45fd38f12f7723f227776b966e2f0948db70f59795398",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS",
+       "Fratura em explosão (A3 e A4)"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
+       "fratura-em-explosao-a3-e-a4-0ee57d4b"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "eca6454184f5e3269f41888413d3aec84aa88498740b603372fe7032ac945573"
+     }
+    ],
+    "questaoSha256": "9fba054b1633bd722af45fd38f12f7723f227776b966e2f0948db70f59795398",
+    "comentarioSha256": "9643b0ec7c7683acb7ac4c7b54d789d7adf15a3e5313186017ba6bffeb220282"
+   }
   },
   "trauma-0798": {
    "tema": "trauma",
@@ -53921,7 +54639,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53944,7 +54662,35 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ce8f28fc52dcba0c7a9686be09c15ed591720cadf2906a4f8f5fe57893ff0d52"
+   "questaoSha256": "ce8f28fc52dcba0c7a9686be09c15ed591720cadf2906a4f8f5fe57893ff0d52",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura vertebral osteoporótica e cimentação"
+      ],
+      "blocos": [
+       "fratura-vertebral-osteoporotica-e-cimentacao-95070427",
+       "fratura-vertebral-osteoporotica-e-cimentacao-7f8287dd",
+       "fratura-vertebral-osteoporotica-e-cimentacao-131730fc",
+       "fratura-vertebral-osteoporotica-e-cimentacao-d544fd1e",
+       "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
+       "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
+     }
+    ],
+    "questaoSha256": "ce8f28fc52dcba0c7a9686be09c15ed591720cadf2906a4f8f5fe57893ff0d52",
+    "comentarioSha256": "175491c8e8e72600bd1d26aade180db14a650c7dc2cdeefdae01df8f075c9734"
+   }
   },
   "trauma-0808": {
    "tema": "trauma",
@@ -55385,7 +56131,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55400,7 +56146,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "1f30457e5e433bb01e1912f649f3458466472a2827a0ca83ada4d5c214fd945d"
+   "questaoSha256": "1f30457e5e433bb01e1912f649f3458466472a2827a0ca83ada4d5c214fd945d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)",
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-0ee57d4b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+       "fratura-em-explosao-a3-e-a4-7ed529c3",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "f869be0b177887abed938b850b2bc4a1954e197ff758622e06ce767835435e2a"
+     }
+    ],
+    "questaoSha256": "1f30457e5e433bb01e1912f649f3458466472a2827a0ca83ada4d5c214fd945d",
+    "comentarioSha256": "1ba4e360a84f200c604f9cf0ef03e59ea1a6d7a5b0cfed8b81931c6d6b29514d"
+   }
   },
   "trauma-0882": {
    "tema": "trauma",
@@ -55855,7 +56628,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55870,7 +56643,33 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "96dcf4105f3fbc04b47a7857e0ff5c86a27ce3f6cd186017cfb7d934f4d4b2db"
+   "questaoSha256": "96dcf4105f3fbc04b47a7857e0ff5c86a27ce3f6cd186017cfb7d934f4d4b2db",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-00a09fce",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-4ce4e3c1"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "007186dbe77d353dcc7a420eea5fb03c918e25f536328a92f314beb5634436fb"
+     }
+    ],
+    "questaoSha256": "96dcf4105f3fbc04b47a7857e0ff5c86a27ce3f6cd186017cfb7d934f4d4b2db",
+    "comentarioSha256": "9cf2cfc4377f47e80f693e17093e6763be9aa455591478c6fc68c546791fff4d"
+   }
   },
   "trauma-0901": {
    "tema": "trauma",
