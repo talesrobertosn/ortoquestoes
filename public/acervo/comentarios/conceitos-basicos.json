@@ -1398,12 +1398,12 @@
   "conferido": false
  },
  "conceitos-basicos-0137": {
-  "conceito": "O pino **anterior** do fixador externo atravessa o quadríceps. O capítulo o associa a maior **ossificação heterotópica**, isto é, formação de osso em partes moles, além de rigidez pela transfixação muscular.\n\nIsso não deve ser confundido com a lista geral de fatores de risco de ossificação após fratura do fêmur, na qual o trauma de crânio é o principal. A pergunta compara **a posição dos pinos**. Para o fixador, lateral e anterolateral são direções seguras em quase todo o fêmur; a passagem anterior merece a ressalva específica do quadríceps e, proximalmente, de ramos do nervo femoral (resumo do Rockwood, 10ª ed., cap. 57, “Fixador externo” e “Complicações”).\n\nO objetivo de estabilizar rápido não dispensa planejar o trajeto pelas partes moles. Leia o resumo da Biblioteca relacionando posição, musculatura atravessada e mobilidade do joelho.",
-  "correta": "**B: anterior.** É a posição ligada ao maior risco de ossificação heterotópica na comparação do capítulo. O pino atravessa o quadríceps e também pode contribuir para rigidez.",
+  "conceito": "Ao montar um fixador no fêmur, não basta encontrar um caminho até o osso. É preciso considerar o que o pino atravessa. A colocação **anterior**, alternativa B, cruza o quadríceps e é relacionada pelo capítulo a **mais ossificação heterotópica**, além de rigidez do joelho.\n\nOssificação heterotópica é formação de osso em partes moles. Aqui, a pergunta é sobre a direção do pino, e o trajeto muscular anterior é o dado decisivo. O resumo recomenda as direções **lateral ou anterolateral**, seguras em quase todo o fêmur, e destaca os problemas do trajeto anterior (Rockwood, 10ª ed., cap. 57, “Fixador externo, placa e controle de dano”).\n\nRigidez e ossificação não são sinônimos: um pino que prende o quadríceps ou a banda iliotibial pode limitar o movimento, e o capítulo também relaciona o trajeto anterior a maior ossificação. Portanto, observar o joelho rígido não basta para concluir que já houve formação óssea; são consequências diferentes a considerar no planejamento e no seguimento.\n\nA direção também tem implicações de segurança. No fêmur proximal, o trajeto anterior pode ameaçar ramos do nervo femoral; distalmente, é necessário respeitar a extensão da cápsula do joelho. Se o fixador for provisório, a posição dos pinos deve ainda preservar o caminho da futura haste e ficar fora da zona de lesão. A escolha deve proteger a função e a próxima etapa do tratamento, não apenas produzir uma montagem estável.\n\nNo resumo da Biblioteca, compare o trajeto anterior aos laterais e leia os cuidados de posição. O aumento de risco não significa que todo pino anterior produzirá ossificação, nem que outro trajeto seja livre de complicações.",
+  "correta": "**B: anterior.** É o trajeto associado a maior ossificação heterotópica na comparação apresentada. A passagem pelo quadríceps também é relevante para a rigidez.\n\nA prevenção começa na escolha do corredor e na relação do pino com as partes moles, antes de se atribuir qualquer limitação posterior apenas à fratura.",
   "incorretas": {
-   "A": "**Anteromedial não é a posição identificada pelo texto para esse aumento específico.** A fonte destaca o pino anterior através do quadríceps. Isso não constitui um selo de segurança para qualquer trajeto anteromedial; é a resposta à associação perguntada.",
-   "C": "**Anterolateral aparece entre as direções seguras descritas.** Não é a posição à qual o capítulo atribui o maior risco de ossificação nessa comparação. A relação com o quadríceps é enfatizada para a passagem anterior.",
-   "D": "**Lateral pode prender a banda iliotibial ou musculatura e causar rigidez, mas não é a resposta específica.** O texto distingue a consequência funcional geral do fixador da associação mais acentuada de ossificação com pino anterior."
+   "A": "**Anteromedial não é a direção identificada pelo capítulo como resposta a essa associação.** Também não integra o par lateral/anterolateral recomendado no trecho.\n\nNão há fundamento para elegê-la como a de maior risco apenas porque o nome contém “anterior”: a descrição específica é do pino anterior atravessando o quadríceps. Isso tampouco valida o corredor anteromedial como seguro.",
+   "C": "**Anterolateral está entre as direções consideradas seguras em quase todo o fêmur.** O texto a distingue do trajeto diretamente anterior que atravessa o quadríceps e apresenta mais ossificação.\n\n“Segura” é uma recomendação anatômica geral desse corredor, não autorização para ignorar lesões locais, cápsula, vasos ou a futura síntese.",
+   "D": "**Lateral também é uma direção favorecida para os pinos.** Não é a identificada com o aumento de ossificação da pergunta.\n\nA via lateral não elimina todos os problemas de partes moles: o resumo relaciona aprisionamento muscular ou da banda iliotibial à rigidez. Esse cuidado não deve ser confundido com escolher a via lateral como a de maior ossificação."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fixador externo, placa e controle de dano; Complicações."
@@ -1426,15 +1426,16 @@
      ],
      "blocos": [
       "fixador-externo-placa-e-controle-de-dano-0850c9dc",
+      "fixador-externo-placa-e-controle-de-dano-d96d3150",
       "fixador-externo-placa-e-controle-de-dano-373ad787",
       "complicacoes-6b66234c"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "f4b6075a3962bfc7a7dfb9a5d2bf8391772aff695f88640600fccd60a83a94a0"
+     "trechosSha256": "f618849944d3c00e7035ad21ad81a8517a3a0572dc2ecf8c6101c2443ed4391a"
     }
    ],
    "questaoSha256": "3338741ef546ff40d0de943d5b248b07363f34ebca4a708e7b5d2fddf23fa548",
-   "comentarioSha256": "4f2890c8d172ff32bc780459452b00cb4bb5d8d1af713dbbeaaffa0454958b64"
+   "comentarioSha256": "9bfd8b9c9c5e231e66fa91b3d200ad27253bb6a7128264aba6b7e43ded784398"
   }
  },
  "conceitos-basicos-0138": {
@@ -1549,15 +1550,15 @@
   "conferido": false
  },
  "conceitos-basicos-0142": {
-  "conceito": "O multiplicador **4,5** vem da comparação citada pelo resumo entre hastes femorais fresadas e não fresadas. No estudo canadense com 224 pacientes, houve pseudartrose em **1,7% com fresagem e 7,5% sem**, com risco relativo relatado de 4,5 para a não fresada.\n\nA fresagem rompe circulação medular inicialmente, mas estimula aumento do fluxo periosteal, leva material fresado ao foco e permite introduzir uma haste maior. O efeito biológico e mecânico conjunto ajuda a entender por que a lesão endosteal inicial não equivale a pior consolidação. As metanálises citadas pelo resumo confirmam menos pseudartrose, falha do implante e reoperação com fresagem, sem aumento demonstrado de SDRA, sangramento ou óbito (resumo do Rockwood, 10ª ed., cap. 57, “Fresar é a regra”).\n\nAinda assim, o número não é universal para qualquer paciente, fratura ou implante. Nesta questão de dado bibliográfico, a resposta é o resultado do estudo apresentado. Leia a seção no resumo da Biblioteca para relacionar o multiplicador à comparação que o produziu.",
-  "correta": "**D: 4,5 vezes.** É o risco relativo apresentado para pseudartrose com haste não fresada no estudo citado. Não é uma probabilidade absoluta de 4,5% nem um multiplicador aplicável sem considerar a população.",
+  "conceito": "A resposta **4,5 vezes** pertence a uma comparação específica, não a uma regra universal para toda haste. No estudo canadense citado pelo resumo, com 224 pacientes, houve pseudartrose em **7,5% sem fresagem e 1,7% com fresagem**, com risco relativo relatado de 4,5 para a não fresada.\n\nÉ útil separar percentual e razão. Os 7,5% são a frequência do desfecho num grupo; 4,5 expressa aproximadamente quantas vezes aquele risco foi maior que o do outro grupo. Não significa pseudartrose de 4,5% e não equivale a dizer que a maioria das hastes não fresadas falhará. A direção e a magnitude precisam permanecer ligadas à população e à comparação que as produziram (resumo do Rockwood, 10ª ed., cap. 57, “Fresar é a regra”).\n\nA dúvida biológica é compreensível: se a fresagem interrompe circulação medular, por que o resultado pode ser melhor? O resumo descreve aumento do fluxo periosteal após a agressão endosteal, material fresado depositado no foco com fatores osteoindutores e possibilidade de usar uma haste maior. Portanto, o efeito final depende da resposta biológica e da estabilidade, não apenas de uma fotografia do fluxo no instante da fresagem.\n\nAs metanálises apresentadas também favorecem a fresada em pseudartrose, falha do implante e reoperação, sem aumento demonstrado de síndrome do desconforto respiratório agudo, sangramento ou óbito. Isso sustenta a preferência do capítulo, mas não permite multiplicar automaticamente o risco individual de qualquer paciente por 4,5. Exposição, distração do foco e outras condições continuam importando.\n\nO resumo da Biblioteca reúne mecanismo e resultado clínico. Aprenda o número junto de sua origem: é uma comparação de não união entre fresada e não fresada na diáfise femoral, e não um coeficiente fixo de todo tratamento intramedular.",
+  "correta": "**D: 4,5 vezes.** É o risco relativo relatado no estudo citado para a haste não fresada em comparação à fresada. As frequências 7,5% e 1,7% dão sentido à ordem de grandeza.\n\nA resposta deve ser preservada como dado bibliográfico aproximado daquele estudo, sem transformá-la em percentual absoluto ou previsão individual.",
   "incorretas": {
-   "A": "**Uma vez e meia subestima a comparação relatada.** O estudo apresentou aproximadamente 7,5% contra 1,7%, com risco relativo descrito de 4,5. Confundir percentuais absolutos com a razão entre grupos altera o resultado.",
-   "B": "**Duas vezes e meia não corresponde ao risco relativo citado.** A fonte favorece fresagem nessa comparação, mas a pergunta exige a magnitude do estudo. Reconhecer apenas a direção do efeito é insuficiente.",
-   "C": "**Três vezes e meia também não reproduz o dado apresentado.** O resumo fornece 4,5. Esse acerto quantitativo precisa permanecer ligado àquele estudo, sem converter uma estimativa populacional em regra universal."
+   "A": "**Uma vez e meia reduziria bastante a diferença relatada.** A comparação apresentada é de 7,5% contra 1,7%, não de riscos próximos o suficiente para essa razão.\n\nO erro não está em reconhecer maior pseudartrose com não fresada, mas em trocar a magnitude do resultado que a pergunta exige.",
+   "B": "**Duas vezes e meia também não corresponde à comparação citada.** A direção do efeito está correta se se entende que não fresada tem mais pseudartrose, porém o estudo fornecido relata 4,5.\n\nNão é necessário escolher um número menor para parecer prudente. A prudência é manter o dado real ligado ao contexto, em vez de generalizá-lo.",
+   "C": "**Três vezes e meia continua abaixo do risco relativo apresentado.** O valor pedido não foi inferido apenas do fato de haver lesão da circulação endosteal; é resultado clínico da comparação entre grupos.\n\nTrocar o número não resolve os limites da evidência. Esses limites são explicados pela população e técnica estudadas, mantendo a estimativa publicada."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fresagem, diâmetro, bloqueio e carga."
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fresagem, diâmetro, bloqueio e carga; Pseudartrose, infecção, retirada e quebra da haste."
   ],
   "conferido": false,
   "alerta": "O valor de 4,5 é o risco relativo relatado no estudo canadense citado pelo resumo (pseudartrose 7,5% sem fresagem versus 1,7% com fresagem). Não é um multiplicador universal para toda população, fratura ou implante; o gabarito D foi preservado.",
@@ -1573,17 +1574,19 @@
      "edicao": "10ª edição (2025)",
      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
      "secoes": [
-      "Fresagem, diâmetro, bloqueio e carga"
+      "Fresagem, diâmetro, bloqueio e carga",
+      "Pseudartrose, infecção, retirada e quebra da haste"
      ],
      "blocos": [
-      "fresagem-diametro-bloqueio-e-carga-999f60a0"
+      "fresagem-diametro-bloqueio-e-carga-999f60a0",
+      "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "835320c68b8e641c0cf26451cafa65bd07466bb46216e6a0191292db7e258acc"
+     "trechosSha256": "57b676d327175d95647a27a82969222ee09f683fdcaae5c2c185898bf6b58679"
     }
    ],
    "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
-   "comentarioSha256": "1fe41be96a4e70ee26bae31093bd8892dc37a0ce4f0ee04f8769c9d386865ccf"
+   "comentarioSha256": "814171290ac861f001725617189d56cc16862dd1ffa4090bbb27fb8bfd2bacde"
   }
  },
  "conceitos-basicos-0143": {
@@ -4245,17 +4248,18 @@
   "conferido": false
  },
  "conceitos-basicos-0370": {
-  "conceito": "A tração pode manter o comprimento enquanto o paciente não pode receber a fixação, mas a imobilização prolongada cobra um preço funcional. O capítulo considera a **rigidez do joelho** o problema clínico mais comum da tração definitiva prolongada.\n\nNão significa que consolidação viciosa, pseudartrose ou encurtamento sejam irrelevantes. O resumo relata esses problemas em séries de tratamento por tração, com duração média de 52,8 dias numa revisão. A resposta exige reconhecer o desfecho funcional predominante destacado, e não escolher automaticamente a complicação que parece mais grave (resumo do Rockwood, 10ª ed., cap. 57, “Tratamento não operatório e tração”).\n\nHoje, no adulto, a tração esquelética costuma ser temporária no politraumatizado que ainda não pode receber haste. A situação é diferente de manter semanas de tratamento definitivo. Leia essa distinção no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Separa uma ferramenta temporária útil das consequências de prolongar a imobilização, com atenção ao joelho e à recuperação funcional.",
-  "correta": "**C: rigidez do joelho.** É o problema clínico mais comum enfatizado na tração prolongada. A questão usa “mais significativa”; o fundamento apresentado é sua relevância funcional e predominância clínica no capítulo.",
+  "conceito": "A tração pode permitir que o fêmur consolide, mas o resultado não se resume a unir o osso. Quando esse tratamento se prolonga, o capítulo destaca a **rigidez do joelho como o problema clínico mais comum**. É o fundamento que acompanha a resposta C do simulado.\n\nÉ preciso distinguir duas utilizações. No adulto atual, a tração esquelética costuma ser uma etapa temporária no paciente que ainda não pode receber haste. Historicamente, foi amplamente usada como tratamento definitivo, mantendo o membro por semanas; numa revisão citada, a duração média foi de 52,8 dias. O custo funcional da permanência prolongada não deve ser atribuído automaticamente a uma tração breve de espera (resumo do Rockwood, 10ª ed., cap. 57, “Tratamento não operatório e tração”).\n\nO joelho pode continuar limitado mesmo quando a radiografia mostra união. O capítulo relaciona a rigidez após a fratura à cicatriz do quadríceps, sobretudo do vasto intermédio. Esse dado ajuda a compreender por que uma avaliação centrada somente no calo e no comprimento perde uma parte importante da recuperação: o aparelho extensor e o movimento articular também precisam voltar a funcionar.\n\nConsolidação viciosa, pseudartrose e infecção são problemas reais nas séries de tração definitiva. Não se deve chamar essas complicações de leves para justificar a alternativa C. A pergunta usa **“mais significativa”**, enquanto o resumo disponível sustenta explicitamente **“mais comum”**; esse limite de formulação merece ser conservado. Não é uma demonstração de que rigidez seja sempre mais grave que pseudartrose num paciente individual.\n\nNo resumo da Biblioteca, compare o papel temporário da tração com os resultados de sua utilização definitiva. A lição é manter a função no centro da avaliação e não considerar tratamento bem-sucedido apenas porque o osso terminou unido.\n\n**Por que esta questão foi criada.** Compara a utilidade da tração como etapa provisória ao custo funcional do tratamento prolongado, particularmente no joelho.",
+  "correta": "**C: rigidez do joelho.** Corresponde ao problema clínico predominante na tração prolongada descrita pelo capítulo. A perda de mobilidade pode continuar limitando a função após a consolidação.\n\nA palavra “significativa” do enunciado não deve ser ampliada para uma hierarquia universal de gravidade; a fonte fundamenta sua frequência e importância funcional.",
   "incorretas": {
-   "A": "**Refratura não é o problema predominante destacado para a tração.** Ela é discutida sobretudo em relação à retirada de implantes ou fixador antes da consolidação. Não substitui a rigidez do joelho na comparação do tratamento prolongado.",
-   "B": "**Encurtamento pode deixar sequela, mas não é o evento apontado como principal aqui.** A tração procura manter o comprimento, embora o resultado possa ser inadequado. O resumo destaca a perda de mobilidade do joelho como problema clínico mais comum.",
-   "D": "**Consolidação viciosa e pseudartrose são complicações reais, sem liderar essa descrição clínica.** Escolher necessidade de cirurgia por parecer mais grave mistura gravidade com o problema mais comum enfatizado. O joelho rígido é a resposta que o capítulo salienta."
+   "A": "**Refratura é voltar a fraturar, e não a principal complicação destacada para a permanência em tração.** O capítulo a discute especialmente em relação a retirada de material e fixador antes da consolidação.\n\nO paciente pode terminar a tração com o osso unido e ainda ter importante limitação do joelho, sem sofrer uma nova fratura.",
+   "B": "**Encurtamento é uma alteração do comprimento; rigidez é perda de movimento.** A tração procura manter comprimento e alinhamento, mas resultados inadequados podem ocorrer.\n\nO resumo não apresenta encurtamento acima de 2 cm como o evento predominante dessa comparação. Esse valor da opção não deve ser transformado em um limite comprovado pela fonte consultada.",
+   "D": "**Consolidação viciosa e pseudartrose são complicações efetivamente descritas nas séries, e podem exigir tratamento adicional.** A opção não é recusada por esses problemas serem impossíveis ou pouco importantes.\n\nO fundamento da resposta do simulado é a rigidez como problema clínico mais comum. A necessidade de cirurgia, por si, não demonstra que esse grupo seja o mais frequente nem resolve a ambiguidade entre frequência e gravidade."
   },
   "referencias": [
    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Tratamento não operatório e tração; Complicações."
   ],
   "conferido": false,
+  "alerta": "O enunciado usa “mais significativa”. O resumo do capítulo 57 fundamenta a rigidez do joelho como o problema clínico mais comum da tração prolongada, mas não estabelece uma hierarquia universal de gravidade entre rigidez, encurtamento, pseudartrose e consolidação viciosa. Mantido o gabarito C; frequência não deve ser ensinada como sinônimo de gravidade.",
   "geradoEm": "2026-10-23",
   "baseResumo": {
    "tipo": "resumo",
@@ -4272,16 +4276,17 @@
       "Complicações"
      ],
      "blocos": [
-      "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
       "tratamento-nao-operatorio-e-tracao-afec236d",
+      "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
+      "complicacoes-7635955c",
       "complicacoes-ea697358"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "87955e4a757e7f4a70527eac9d7dc797579cb785a05fbfa161cce14daa4af6e9"
+     "trechosSha256": "be44ccd0a3aac551f040a6c2f181b186c39f37e483590310fa5a6d849305f0d3"
     }
    ],
    "questaoSha256": "8884dc0327967711ed0ed96274c7568bebc198949549a710b5d7b1e37de314bc",
-   "comentarioSha256": "1c1aac8287570c4966d9d8aacc36535a786e3db8c224d01a89a47df260b184f4"
+   "comentarioSha256": "9ebce41488ed1d6c61f92a4fe8df6e150064a28b7b4e0603f3987fff8dde36f3"
   }
  },
  "conceitos-basicos-0371": {

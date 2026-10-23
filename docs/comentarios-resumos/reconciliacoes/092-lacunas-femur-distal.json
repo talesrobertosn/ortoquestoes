@@ -1,0 +1,43 @@
+{
+  "basePublicada": "7bb4003976c1729e5c5144b835ca6176f031a364",
+  "resumoSha256": "6ca37b5dd53198bd2b5b79c3d37428e26d958b82dd1cba01ca02eb960c5dc648",
+  "criterio": "Leitura do corpo independente; não usar comentário antigo, bloco contextual nem inferência de subtema para provar cobertura. Nenhum comentário ou gabarito alterado nesses seis IDs. Não são revisões concluídas.",
+  "questoes": {
+    "trauma-0335": {
+      "questaoSha256": "666ef73f71ad052a7cef38ea4e9433c1d7e17a378fabf8082bf693fc115c7883",
+      "pendencia": "O corpo independente do resumo 58 informa inclinação lateral de 15 graus no texto e 10 graus atribuídos à figura 58-4C, mas não estabelece a orientação de rotação interna de 10 graus da placa pedida na prova. A figura do capítulo está sem imagem disponível. Falta fonte primária ou técnica do implante que relacione explicitamente o sentido e o ângulo da placa; o bloco contextual da própria questão não é prova.",
+      "estado": "pendente-fonte",
+      "resumoConsultado": "rockwood10-58-femur-distal"
+    },
+    "trauma-0850": {
+      "questaoSha256": "ac6dbab0a24892a7cda8cd4cf00d4463aa1a045d267200fa72bcf5045e8e6ae5",
+      "pendencia": "O resumo 58 descreve distribuição bimodal por idade e energia, mas não demonstra predominância de homens jovens e mulheres idosas. Todas as opções variam sexo e idade. Falta epidemiologia estratificada por sexo; compatibilidade com o gabarito A não comprova cobertura.",
+      "estado": "pendente-fonte",
+      "resumoConsultado": "rockwood10-58-femur-distal"
+    },
+    "trauma-1016": {
+      "questaoSha256": "fc7ac8cfe749a1dc8c7dadedb66701d8a5d5dd1044f080ba4fb2de655c1f945c",
+      "pendencia": "O resumo 58 trata estabilidade do componente e opções de fixação, mas não define os tipos I, II e III de Su nem sua relação com a borda proximal do componente femoral. Falta a classificação de Su em fonte primária para enquadrar o traço iniciado junto à borda e estendido proximalmente e analisar todas as opções.",
+      "estado": "pendente-fonte",
+      "resumoConsultado": "rockwood10-58-femur-distal"
+    },
+    "trauma-0747": {
+      "questaoSha256": "d1f79ea977e4c9541c4d20ab0a6046dc8b35e8ba7768c91fb4a5163b411660f1",
+      "pendencia": "O resumo 58 não descreve a combinação específica de rotação medial, flexão e varo após consolidação viciosa do côndilo medial. A anatomia e os erros gerais de alinhamento não distinguem sozinhos as quatro combinações oferecidas. Falta fonte primária sobre a deformidade tridimensional do côndilo medial; a resposta no bloco contextual não serve de evidência independente.",
+      "estado": "pendente-fonte",
+      "resumoConsultado": "rockwood10-58-femur-distal"
+    },
+    "trauma-0315": {
+      "questaoSha256": "4a7a5e24a99d4cb14322de1086dc2c3bd5bad72db64aa54e6b9a9dcbc0df059d",
+      "pendencia": "A fonte 58 enumera dor patelofemoral e outras desvantagens da haste, mas não demonstra que lesão meniscal seja a exceção entre as complicações oferecidas nem estabelece toda a comparação da pergunta EXCETO. O corpo do resumo 57 orienta proteger menisco durante fresagem, o que não permite ensinar que lesão meniscal seja impossível. Falta a fonte original que sustente a distinção da alternativa D frente a rigidez, dor e pioartrite.",
+      "estado": "pendente-fonte",
+      "resumoConsultado": "rockwood10-58-femur-distal"
+    },
+    "joelho-0090": {
+      "questaoSha256": "5c2875ff3bef377c4bf61e32e27394f9995621fe9e4235cd1c23a5ecbe9064ef",
+      "pendencia": "O resumo 58 sustenta haste retrógrada como opção com componente fixo e portal compatível, mas não define Rorabeck II e III. Não basta justificar A: faltam as definições de estabilidade do componente femoral nos distratores B e D. Consultar fonte primária de fraturas periprotéticas e classificação de Rorabeck antes de classificar o comentário inteiro como baseado no resumo.",
+      "estado": "pendente-fonte",
+      "resumoConsultado": "rockwood10-58-femur-distal"
+    }
+  }
+}
