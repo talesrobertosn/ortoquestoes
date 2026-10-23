@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1262,
+  "pendente": 1236,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 120,
+  "pendente-fonte": 126,
   "pendente-inspecao-imagem": 158,
-  "revisada": 732
+  "revisada": 752
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -166,10 +166,10 @@
    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
    "estados": {
     "duplicada": 2,
-    "pendente": 5,
+    "pendente": 3,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 5,
-    "revisada": 44
+    "revisada": 46
    }
   },
   "rockwood10-54-transtrocanterica": {
@@ -186,18 +186,20 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 61,
-    "pendente-fonte": 1,
+    "pendente": 35,
+    "pendente-fonte": 7,
     "pendente-inspecao-imagem": 1,
-    "revisada": 7
+    "revisada": 27
    }
   },
   "rockwood10-58-femur-distal": {
    "titulo": "Fratura do fêmur distal",
    "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
    "estados": {
-    "pendente": 38,
-    "pendente-inspecao-imagem": 1
+    "pendente": 35,
+    "pendente-fonte": 2,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 1
    }
   },
   "rockwood10-60-patela-mecanismo-extensor": {
@@ -234,11 +236,11 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 86,
+    "pendente": 83,
     "pendente-anulada": 2,
-    "pendente-fonte": 11,
+    "pendente-fonte": 13,
     "pendente-inspecao-imagem": 1,
-    "revisada": 50
+    "revisada": 51
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -5556,7 +5558,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5571,7 +5573,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "3338741ef546ff40d0de943d5b248b07363f34ebca4a708e7b5d2fddf23fa548"
+   "questaoSha256": "3338741ef546ff40d0de943d5b248b07363f34ebca4a708e7b5d2fddf23fa548",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Fixador externo, placa e controle de dano",
+       "Complicações"
+      ],
+      "blocos": [
+       "fixador-externo-placa-e-controle-de-dano-0850c9dc",
+       "fixador-externo-placa-e-controle-de-dano-373ad787",
+       "complicacoes-6b66234c"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "f4b6075a3962bfc7a7dfb9a5d2bf8391772aff695f88640600fccd60a83a94a0"
+     }
+    ],
+    "questaoSha256": "3338741ef546ff40d0de943d5b248b07363f34ebca4a708e7b5d2fddf23fa548",
+    "comentarioSha256": "4f2890c8d172ff32bc780459452b00cb4bb5d8d1af713dbbeaaffa0454958b64"
+   }
   },
   "conceitos-basicos-0140": {
    "tema": "conceitos-basicos",
@@ -5667,7 +5695,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5682,7 +5710,30 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497"
+   "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Fresagem, diâmetro, bloqueio e carga"
+      ],
+      "blocos": [
+       "fresagem-diametro-bloqueio-e-carga-999f60a0"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "835320c68b8e641c0cf26451cafa65bd07466bb46216e6a0191292db7e258acc"
+     }
+    ],
+    "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
+    "comentarioSha256": "1fe41be96a4e70ee26bae31093bd8892dc37a0ce4f0ee04f8769c9d386865ccf"
+   }
   },
   "conceitos-basicos-0195": {
    "tema": "conceitos-basicos",
@@ -5966,7 +6017,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5981,7 +6032,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "8884dc0327967711ed0ed96274c7568bebc198949549a710b5d7b1e37de314bc"
+   "questaoSha256": "8884dc0327967711ed0ed96274c7568bebc198949549a710b5d7b1e37de314bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Tratamento não operatório e tração",
+       "Complicações"
+      ],
+      "blocos": [
+       "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
+       "tratamento-nao-operatorio-e-tracao-afec236d",
+       "complicacoes-ea697358"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "87955e4a757e7f4a70527eac9d7dc797579cb785a05fbfa161cce14daa4af6e9"
+     }
+    ],
+    "questaoSha256": "8884dc0327967711ed0ed96274c7568bebc198949549a710b5d7b1e37de314bc",
+    "comentarioSha256": "1c1aac8287570c4966d9d8aacc36535a786e3db8c224d01a89a47df260b184f4"
+   }
   },
   "conceitos-basicos-0373": {
    "tema": "conceitos-basicos",
@@ -6022,8 +6099,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 57 recomenda bloqueio estático em todas as hastes e discute estabilidade, mas não fornece a observação específica de Brumback de perda de redução em 10% das dinâmicas nem a atribuição à cominuição não reconhecida. Falta fonte independente desse percentual e mecanismo para conferir o enunciado inteiro; não deduzir o dado da preferência geral por bloqueio estático.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6037,7 +6114,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "a9da10784daf6690faba509223b0f8f960c87a0b50745ffa11707275309f685d"
+   "questaoSha256": "a9da10784daf6690faba509223b0f8f960c87a0b50745ffa11707275309f685d",
+   "pendencia": "O resumo 57 recomenda bloqueio estático em todas as hastes e discute estabilidade, mas não fornece a observação específica de Brumback de perda de redução em 10% das dinâmicas nem a atribuição à cominuição não reconhecida. Falta fonte independente desse percentual e mecanismo para conferir o enunciado inteiro; não deduzir o dado da preferência geral por bloqueio estático."
   },
   "conceitos-basicos-0375": {
    "tema": "conceitos-basicos",
@@ -6047,8 +6125,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 57 dá critérios para dinamização, mas não descreve qual segmento deve perder os parafusos estáticos nem quando manter o parafuso dinâmico. Falta descrição técnica independente que discrimine segmento longo/curto e preservação/retirada do dinâmico. Não transformar indicação de dinamizar em comprovação de todos os passos.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6062,7 +6140,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "b49e1b74152d7e272a63c8801b2e6268510e190840913b7c834b0e566244cb26"
+   "questaoSha256": "b49e1b74152d7e272a63c8801b2e6268510e190840913b7c834b0e566244cb26",
+   "pendencia": "O resumo 57 dá critérios para dinamização, mas não descreve qual segmento deve perder os parafusos estáticos nem quando manter o parafuso dinâmico. Falta descrição técnica independente que discrimine segmento longo/curto e preservação/retirada do dinâmico. Não transformar indicação de dinamizar em comprovação de todos os passos."
   },
   "conceitos-basicos-0376": {
    "tema": "conceitos-basicos",
@@ -6072,8 +6151,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 57 orienta aumentar 1 a 3 mm na troca da haste e não compara eficácia da troca no fêmur versus tíbia. A pergunta oferece 1 a 2 mm e exige esse ranking entre ossos; o próprio bloco avisa que foi criada de outro capítulo. Falta leitura da fonte original da comparação, sem escolher A só por uma faixa parcialmente sobreposta.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6095,7 +6174,8 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "dfe0d50209c0be78406dbf99089c54732f2c9dbfb6b6c3f0d46f92d770c0757c"
+   "questaoSha256": "dfe0d50209c0be78406dbf99089c54732f2c9dbfb6b6c3f0d46f92d770c0757c",
+   "pendencia": "O resumo 57 orienta aumentar 1 a 3 mm na troca da haste e não compara eficácia da troca no fêmur versus tíbia. A pergunta oferece 1 a 2 mm e exige esse ranking entre ossos; o próprio bloco avisa que foi criada de outro capítulo. Falta leitura da fonte original da comparação, sem escolher A só por uma faixa parcialmente sobreposta."
   },
   "conceitos-basicos-0382": {
    "tema": "conceitos-basicos",
@@ -42861,7 +42941,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42876,7 +42956,32 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "71a330a04822091a8933f24b0fb1f13170ffff382b9770e064215c1dac2fa614"
+   "questaoSha256": "71a330a04822091a8933f24b0fb1f13170ffff382b9770e064215c1dac2fa614",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Comprimento e rotação"
+      ],
+      "blocos": [
+       "comprimento-e-rotacao-2bbb6c9f",
+       "comprimento-e-rotacao-c13089a5",
+       "comprimento-e-rotacao-cd6531f5"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "cffb637a3682fb83efb0a6f808899a1600e6eddab5e5aa5f28e562d936a6e4bc"
+     }
+    ],
+    "questaoSha256": "71a330a04822091a8933f24b0fb1f13170ffff382b9770e064215c1dac2fa614",
+    "comentarioSha256": "01090ace1a36f77ab6c709fded6e1489ac88fb2269849948c7a2f06edc32b7d8"
+   }
   },
   "trauma-0076": {
    "tema": "trauma",
@@ -43046,7 +43151,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43061,7 +43166,34 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "f886ff74b011527b0dc6285769206e70b4944bbb571a886816d4824adce3d63f"
+   "questaoSha256": "f886ff74b011527b0dc6285769206e70b4944bbb571a886816d4824adce3d63f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada",
+       "Situações especiais"
+      ],
+      "blocos": [
+       "haste-retrograda-c19a5fde",
+       "haste-retrograda-fd5c0178",
+       "haste-retrograda-a6c8b54a",
+       "situacoes-especiais-15ca6fd9"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "38e146d992ead43d1da068abed48081cc9eab90086c9b703d057e0412a2e5047"
+     }
+    ],
+    "questaoSha256": "f886ff74b011527b0dc6285769206e70b4944bbb571a886816d4824adce3d63f",
+    "comentarioSha256": "2169221032cc0310b16d384233d9a1570b27b0917e614f6152c8d14e9c329223"
+   }
   },
   "trauma-0084": {
    "tema": "trauma",
@@ -43623,7 +43755,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43638,7 +43770,38 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "c5cd877487cd49b031e2d30f494f0a19df73acaa24f6874680c03d700a2cbc8c"
+   "questaoSha256": "c5cd877487cd49b031e2d30f494f0a19df73acaa24f6874680c03d700a2cbc8c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Como ler este capítulo",
+       "Fresagem, diâmetro, bloqueio e carga",
+       "Comprimento e rotação",
+       "Fixador externo, placa e controle de dano"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-3879a1cb",
+       "fresagem-diametro-bloqueio-e-carga-999f60a0",
+       "comprimento-e-rotacao-2bbb6c9f",
+       "fixador-externo-placa-e-controle-de-dano-373ad787",
+       "fixador-externo-placa-e-controle-de-dano-5b33401f",
+       "fixador-externo-placa-e-controle-de-dano-05257777"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "dbe2a50d8176572f2cbe2dd6f12e3b439e550ef5bd890c987f8fe2730e4ec2c3"
+     }
+    ],
+    "questaoSha256": "c5cd877487cd49b031e2d30f494f0a19df73acaa24f6874680c03d700a2cbc8c",
+    "comentarioSha256": "268f9d1838690762cb62eedcf865b7636a85240284e576f55d593d8e503f9259"
+   }
   },
   "trauma-0099": {
    "tema": "trauma",
@@ -43966,8 +44129,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 57 descreve joelho flutuante e a ordem de fixação, mas não fornece a frequência de fratura exposta nessa associação. O próprio bloco contextual alerta que o valor vem de outra bibliografia. Falta a série/fonte que discrimine 20/40/60/80%; não usar o C oficial ou seu comentário como prova do percentual.",
    "temComentario": true,
    "citacoes": [
     {
@@ -43989,7 +44152,8 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "e19b721281096af037ab78a1c0b7bc5077ee5aa84976ef7ee7f603cd616cc904"
+   "questaoSha256": "e19b721281096af037ab78a1c0b7bc5077ee5aa84976ef7ee7f603cd616cc904",
+   "pendencia": "O corpo do resumo 57 descreve joelho flutuante e a ordem de fixação, mas não fornece a frequência de fratura exposta nessa associação. O próprio bloco contextual alerta que o valor vem de outra bibliografia. Falta a série/fonte que discrimine 20/40/60/80%; não usar o C oficial ou seu comentário como prova do percentual."
   },
   "trauma-0116": {
    "tema": "trauma",
@@ -47055,7 +47219,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47070,7 +47234,32 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "e8c6985355fcbd24aad689f1014e05db2e336bad01d034310c58fb2f0ecd273e"
+   "questaoSha256": "e8c6985355fcbd24aad689f1014e05db2e336bad01d034310c58fb2f0ecd273e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Tratamento não operatório e tração",
+       "Anatomia aplicada e forças deformantes"
+      ],
+      "blocos": [
+       "tratamento-nao-operatorio-e-tracao-0434b7b5",
+       "anatomia-aplicada-e-forcas-deformantes-904cdf37"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "b7deb28f2024ae7b99b02ea900b29ab99b765c006ec336907b20a18d45c32b6e"
+     }
+    ],
+    "questaoSha256": "e8c6985355fcbd24aad689f1014e05db2e336bad01d034310c58fb2f0ecd273e",
+    "comentarioSha256": "8c9339bd976fec7b610eceaff03fe925d4531ca1b9c2001a08dd4501d0e56262"
+   }
   },
   "trauma-0237": {
    "tema": "trauma",
@@ -47498,7 +47687,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47514,7 +47703,30 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "4f232a44418e82d82e4d6bd40d5c1e178989ed7606928282379ea3dc40a96c0e"
+   "questaoSha256": "4f232a44418e82d82e4d6bd40d5c1e178989ed7606928282379ea3dc40a96c0e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo e lesões associadas"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-e-lesoes-associadas-8577dc1c"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "70344be71340b89b7fabb28f117b22b10d9da6fdf634576eebe53eab3b3ca9a0"
+     }
+    ],
+    "questaoSha256": "4f232a44418e82d82e4d6bd40d5c1e178989ed7606928282379ea3dc40a96c0e",
+    "comentarioSha256": "9ec5c592d3c05a61d1653774359e10b60b1ccc6206f082e9d24d9663aac4d6c4"
+   }
   },
   "trauma-0262": {
    "tema": "trauma",
@@ -52026,7 +52238,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52041,7 +52253,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "3da715e1aec41a8c6cc5505ee1fbd114a5ce1d1d3b7281e28efde8c37fdb568c"
+   "questaoSha256": "3da715e1aec41a8c6cc5505ee1fbd114a5ce1d1d3b7281e28efde8c37fdb568c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Situações especiais",
+       "Fixador externo, placa e controle de dano"
+      ],
+      "blocos": [
+       "situacoes-especiais-e2be09da",
+       "fixador-externo-placa-e-controle-de-dano-373ad787",
+       "fixador-externo-placa-e-controle-de-dano-5b33401f"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "69ae473cd4c9b3fcdfa6aa4e18c7cd9726a7c0e77543aefdba149309326f0561"
+     }
+    ],
+    "questaoSha256": "3da715e1aec41a8c6cc5505ee1fbd114a5ce1d1d3b7281e28efde8c37fdb568c",
+    "comentarioSha256": "07911bc7baa9420e13752355f7a7ad6c9df90835db2ae61c8b8f496aa5b0527d"
+   }
   },
   "trauma-0569": {
    "tema": "trauma",
@@ -52253,7 +52491,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52268,7 +52506,31 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "9b3c1ca71d1ec0daa92979ed76a61beccb1dcbc674aa9dc38539f29070073048"
+   "questaoSha256": "9b3c1ca71d1ec0daa92979ed76a61beccb1dcbc674aa9dc38539f29070073048",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste anterógrada: o ponto de entrada"
+      ],
+      "blocos": [
+       "haste-anterograda-o-ponto-de-entrada-469e83ef",
+       "haste-anterograda-o-ponto-de-entrada-2e8e945f"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "f4fdfa4001fc556fada755e468541a94273ace0aa1d01a0a68ffde7adad55e86"
+     }
+    ],
+    "questaoSha256": "9b3c1ca71d1ec0daa92979ed76a61beccb1dcbc674aa9dc38539f29070073048",
+    "comentarioSha256": "8f678dc218dfe11d785837100f4500dc0da422b9ef17b134d193032f9cc1f10a"
+   }
   },
   "trauma-0580": {
    "tema": "trauma",
@@ -54340,8 +54602,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 57 não compara os fatores prognósticos do joelho flutuante para decidir entre exposição tibial/femoral, extensão articular e lesão de quadril/tornozelo. O bloco contextual avisa que a resposta provém de outra bibliografia. Falta fonte de prognóstico desse padrão, sem extrapolar a orientação genérica de fixar o fêmur primeiro.",
    "temComentario": true,
    "citacoes": [
     {
@@ -54371,7 +54633,8 @@
     "rockwood10-58-femur-distal",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "67f8b3b082957e32368efe45197a611b3715749124a135386ba68bdb610899b4"
+   "questaoSha256": "67f8b3b082957e32368efe45197a611b3715749124a135386ba68bdb610899b4",
+   "pendencia": "O resumo 57 não compara os fatores prognósticos do joelho flutuante para decidir entre exposição tibial/femoral, extensão articular e lesão de quadril/tornozelo. O bloco contextual avisa que a resposta provém de outra bibliografia. Falta fonte de prognóstico desse padrão, sem extrapolar a orientação genérica de fixar o fêmur primeiro."
   },
   "trauma-0749": {
    "tema": "trauma",
@@ -57385,7 +57648,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57400,7 +57663,32 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "40042561c1e76bda2bcc63ebb34a23904a280d9dd2d7e79ec92e73b3f84a00a3"
+   "questaoSha256": "40042561c1e76bda2bcc63ebb34a23904a280d9dd2d7e79ec92e73b3f84a00a3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada"
+      ],
+      "blocos": [
+       "haste-retrograda-c19a5fde",
+       "haste-retrograda-a6c8b54a",
+       "haste-retrograda-fd5c0178"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "2f23448af6ca72ed6eda47ee17b0bc78898f80a95c5cb786e5ba519aa240cc0a"
+     }
+    ],
+    "questaoSha256": "40042561c1e76bda2bcc63ebb34a23904a280d9dd2d7e79ec92e73b3f84a00a3",
+    "comentarioSha256": "8aebf0474a85ecf894962f2affb951feba4d476de5dece99377cd1da16010326"
+   }
   },
   "trauma-0886": {
    "tema": "trauma",
@@ -57695,7 +57983,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57718,7 +58006,32 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "d5c83be595116d24fc54157e6cfde5061452c6bc7b3552229478c399ff5f1fb0"
+   "questaoSha256": "d5c83be595116d24fc54157e6cfde5061452c6bc7b3552229478c399ff5f1fb0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada"
+      ],
+      "blocos": [
+       "haste-retrograda-8469a2aa",
+       "haste-retrograda-d0c23ae9",
+       "haste-retrograda-cc1ee60b"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "7bb5757746c1cf78b2e872db6435ed900f078344f769ec3fe47b05a0616c916a"
+     }
+    ],
+    "questaoSha256": "d5c83be595116d24fc54157e6cfde5061452c6bc7b3552229478c399ff5f1fb0",
+    "comentarioSha256": "d586e490e17f0dffa131871f1c0ecbff329bb33b1007c7bb940a079482dc222a"
+   }
   },
   "trauma-0899": {
    "tema": "trauma",
@@ -61213,7 +61526,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -61228,7 +61541,31 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "e80725bc1d2f0f8c4682cb584d6c4199266b58ef31a9e6d1951573c944f0dd10"
+   "questaoSha256": "e80725bc1d2f0f8c4682cb584d6c4199266b58ef31a9e6d1951573c944f0dd10",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo e lesões associadas"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-e-lesoes-associadas-c3bbb661",
+       "epidemiologia-mecanismo-e-lesoes-associadas-49576002"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "333b116fbb5b18f88855e1d613940321d8e5c3894d9f7fdb9b9d598bd1ba3d8d"
+     }
+    ],
+    "questaoSha256": "e80725bc1d2f0f8c4682cb584d6c4199266b58ef31a9e6d1951573c944f0dd10",
+    "comentarioSha256": "d712302c877754d431581441c6822d98ad0ab6ab914b894a943543d24a4c7c3f"
+   }
   },
   "trauma-1054": {
    "tema": "trauma",
@@ -62249,8 +62586,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O texto independente do resumo 57 não discute anti-inflamatórios não hormonais como fator de pseudartrose após haste. Lista exposição, não fresagem, distração e carga tardia, mas isso não resolve a comparação oferecida com sol/cálcio/obesidade. Falta fonte específica sobre anti-inflamatórios e os distratores; não usar o D oficial ou a contextualização como comprovação clínica.",
    "temComentario": true,
    "citacoes": [
     {
@@ -62264,7 +62601,8 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "f388e60376e2f3fbc3fd30e5f9dd4431e9e3ec6894420d016a64017b0656a484"
+   "questaoSha256": "f388e60376e2f3fbc3fd30e5f9dd4431e9e3ec6894420d016a64017b0656a484",
+   "pendencia": "O texto independente do resumo 57 não discute anti-inflamatórios não hormonais como fator de pseudartrose após haste. Lista exposição, não fresagem, distração e carga tardia, mas isso não resolve a comparação oferecida com sol/cálcio/obesidade. Falta fonte específica sobre anti-inflamatórios e os distratores; não usar o D oficial ou a contextualização como comprovação clínica."
   },
   "trauma-1096": {
    "tema": "trauma",
@@ -62273,7 +62611,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62288,7 +62626,30 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "233c821509f6ee983f88b3344345c49ae36f533db17acc2482c94bad3585729b"
+   "questaoSha256": "233c821509f6ee983f88b3344345c49ae36f533db17acc2482c94bad3585729b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo e lesões associadas"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "3ec77b940ee739af0e59fc9ed2f06abbf857be31ee4528554ca55cac3f9edad8"
+     }
+    ],
+    "questaoSha256": "233c821509f6ee983f88b3344345c49ae36f533db17acc2482c94bad3585729b",
+    "comentarioSha256": "498c7133b336be685784837c46f8679c7d8d88e5915be9b2a3f99a2999d67d93"
+   }
   },
   "trauma-1097": {
    "tema": "trauma",
@@ -78644,7 +79005,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78660,7 +79021,32 @@
     "rockwood10-53-colo-femur",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "532e9b90a3414e37600e984a5ef08f7879852a43b4c59d4507e2959882fbbc59"
+   "questaoSha256": "532e9b90a3414e37600e984a5ef08f7879852a43b4c59d4507e2959882fbbc59",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "A fratura do colo do mesmo lado"
+      ],
+      "blocos": [
+       "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+       "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
+       "a-fratura-do-colo-do-mesmo-lado-8484e205"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "db6822dfe5af5c0245f1aa61e074ff5ef59468f5bdcfa1dd5c3778099b0f51c2"
+     }
+    ],
+    "questaoSha256": "532e9b90a3414e37600e984a5ef08f7879852a43b4c59d4507e2959882fbbc59",
+    "comentarioSha256": "ba8dc24929d53929b1347feca1311da179a42748d3843472a5c4776706b01143"
+   }
   },
   "trauma-1657": {
    "tema": "trauma",
@@ -78670,7 +79056,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78686,7 +79072,35 @@
     "rockwood10-53-colo-femur",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "3836d7eaaf62275f5cd0abb36ae80695de2592361cea7b82b1dba948840c16aa"
+   "questaoSha256": "3836d7eaaf62275f5cd0abb36ae80695de2592361cea7b82b1dba948840c16aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "A fratura do colo do mesmo lado"
+      ],
+      "blocos": [
+       "a-fratura-do-colo-do-mesmo-lado-447c2a22",
+       "a-fratura-do-colo-do-mesmo-lado-8484e205",
+       "a-fratura-do-colo-do-mesmo-lado-7a77c9ba",
+       "a-fratura-do-colo-do-mesmo-lado-473f033a",
+       "a-fratura-do-colo-do-mesmo-lado-2856b2fa",
+       "a-fratura-do-colo-do-mesmo-lado-d6fedb3e"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "2f4c211a22f2504a42b4e9af1aacdee565cf18f3e46ad778233ba9d12f09262e"
+     }
+    ],
+    "questaoSha256": "3836d7eaaf62275f5cd0abb36ae80695de2592361cea7b82b1dba948840c16aa",
+    "comentarioSha256": "9779582a8f2e1ef5911e05dab4f6c2be76db51d3b27ffc81d65cab664c09e5f5"
+   }
   },
   "trauma-1658": {
    "tema": "trauma",
@@ -78719,7 +79133,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78734,7 +79148,32 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "eeb64c210da46559786f589b275897380a0a8baef3c6f1eb30a75dd17ecf269f"
+   "questaoSha256": "eeb64c210da46559786f589b275897380a0a8baef3c6f1eb30a75dd17ecf269f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste anterógrada: o ponto de entrada"
+      ],
+      "blocos": [
+       "haste-anterograda-o-ponto-de-entrada-57ac67fc",
+       "haste-anterograda-o-ponto-de-entrada-01dab420",
+       "haste-anterograda-o-ponto-de-entrada-d377b34e"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "1196e6e440b25adaacfa5fe1cb3f088491cf92a9705cac3abd10be7af6cf82bd"
+     }
+    ],
+    "questaoSha256": "eeb64c210da46559786f589b275897380a0a8baef3c6f1eb30a75dd17ecf269f",
+    "comentarioSha256": "f0d5052ca08d30481e35cf7ae75fa6b2fb18a842bccca590ed678d802a080d32"
+   }
   },
   "trauma-1660": {
    "tema": "trauma",
@@ -78767,7 +79206,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78782,7 +79221,30 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "f12d573e9fce532d716d5b8cbc459851621276d8f91db51209f656d6d1601121"
+   "questaoSha256": "f12d573e9fce532d716d5b8cbc459851621276d8f91db51209f656d6d1601121",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Tratamento não operatório e tração"
+      ],
+      "blocos": [
+       "tratamento-nao-operatorio-e-tracao-0434b7b5"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "7c16ad22b8763c72796eb572e8086e2fdada3cfe1dff277d876d219128f577ad"
+     }
+    ],
+    "questaoSha256": "f12d573e9fce532d716d5b8cbc459851621276d8f91db51209f656d6d1601121",
+    "comentarioSha256": "1dfb3dfe52790f3c1e1fa3109e492428a3bd48e289feff39d815d8966c80a971"
+   }
   },
   "trauma-1662": {
    "tema": "trauma",
@@ -78791,7 +79253,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78806,7 +79268,31 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "0f3ba321036ed5184b4e4b09ec7f1c93c03d906af6176b2ddd472789532758c8"
+   "questaoSha256": "0f3ba321036ed5184b4e4b09ec7f1c93c03d906af6176b2ddd472789532758c8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada"
+      ],
+      "blocos": [
+       "haste-retrograda-a6c8b54a",
+       "haste-retrograda-fd5c0178"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "22cca7da6cf6f6832628f4d601167ae3b233dee646802d98d5de3ba40dc18598"
+     }
+    ],
+    "questaoSha256": "0f3ba321036ed5184b4e4b09ec7f1c93c03d906af6176b2ddd472789532758c8",
+    "comentarioSha256": "18182cdcea35f0aa3cd706bbe81e9fff51682f41a50faec8bc7e6a3d7814c529"
+   }
   },
   "trauma-1663": {
    "tema": "trauma",
@@ -78869,7 +79355,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78884,7 +79370,32 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "ed4ac93913768c7f166b8e99226aa264655bfdb85fe719a469cf290acca57345"
+   "questaoSha256": "ed4ac93913768c7f166b8e99226aa264655bfdb85fe719a469cf290acca57345",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Comprimento e rotação"
+      ],
+      "blocos": [
+       "comprimento-e-rotacao-cd6531f5",
+       "comprimento-e-rotacao-caa0f7cf",
+       "comprimento-e-rotacao-4c2e7a3a"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "75a220560b3d290f41c18811c4171e8fbf63f07bdf6ac0e01f55674f7b0e7ff1"
+     }
+    ],
+    "questaoSha256": "ed4ac93913768c7f166b8e99226aa264655bfdb85fe719a469cf290acca57345",
+    "comentarioSha256": "29736f33a87f1926d9b11f086ae8bc95c55023e756eb212f12d4468a929198c0"
+   }
   },
   "trauma-1665": {
    "tema": "trauma",
