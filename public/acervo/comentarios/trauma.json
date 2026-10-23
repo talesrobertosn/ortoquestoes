@@ -420,15 +420,43 @@
   "conferido": false
  },
  "trauma-0025": {
+  "conceito": "A região que mais sofre fratura por estresse na diáfise tibial não é a mais famosa pelas complicações. O padrão predominante está na **cortical posteromedial, sob compressão**. A fratura anterior ou anterolateral, sob tensão, é menos frequente, mas tem maior risco.\n\nNa corrida e no salto, a tíbia se curva com o ápice para a frente: a cortical anterior é tracionada e a posteromedial comprimida. A compressão tende a fechar a fissura; a tensão tende a abri-la a cada carga, favorecendo progressão e pseudartrose. Essa é a razão mecânica para o risco diferente dos dois sítios (resumo do Rockwood, 10ª ed., cap. 24, “Três entidades diferentes”).\n\nA “linha negra temida” é o traço da cortical anterior e não deve substituir na memória o padrão mais frequente. O resumo da Biblioteca compara a fratura posteromedial, a anterior e a canelite.",
+  "correta": "**D: compressão na cortical posteromedial.** É a combinação de força e região do padrão predominante. Seu comportamento é de baixo risco em comparação com o lado anterior sob tensão.",
   "incorretas": {
-   "A": "A cortical anterolateral não é o local típico da fratura por estresse.",
-   "B": "O lado posteromedial está em compressão, não em tensão.",
-   "C": "O lado anterior fica em tensão, não em compressão."
+   "A": "**É uma combinação real, mas menos frequente e mais perigosa.** A cortical anterolateral está no lado de tensão e pode apresentar a linha negra. A pergunta pede o padrão mais comum, que é posteromedial por compressão.",
+   "B": "**Acerta a região e troca a força.** A cortical posteromedial recebe compressão na descrição mecânica do capítulo. A tensão corresponde ao lado anterior, onde a fissura tende a abrir.",
+   "C": "**Inverte a mecânica do lado anterior.** A cortical anterior ou anterolateral está sob tensão, não compressão. Além disso, não é o sítio predominante pedido."
   },
-  "conceito": "A **tíbia** se comporta como uma viga curvada: na marcha e na corrida, a cortical **posteromedial** fica em **compressão**, e a cortical **anterior** fica em **tensão**.\n\n**As duas fraturas por estresse da diáfise**:\n\n**posteromedial, por compressão**: a **mais frequente**; é de **baixo risco** e consolida com repouso relativo e retorno gradual;\n\n**anterior, por tensão**: menos comum, mas de **alto risco**; na radiografia aparece a \"**linha negra temida**\" na cortical anterior do terço médio; evolui para pseudartrose e fratura completa, e muitas vezes precisa de **haste intramedular**.\n\n**O diagnóstico**: a radiografia é **normal** em até dois terços no início. A **RM** é o exame mais sensível e gradua a lesão (Fredericson); a cintilografia é sensível, mas pouco específica.\n\n**Os fatores de risco**: aumento súbito de treino, **deficiência energética relativa** no esporte (antiga tríade da mulher atleta), baixa vitamina D, calçado inadequado e alterações do alinhamento.\n\n**Na prova**: a fratura por estresse mais comum da tíbia é a de **compressão na cortical posteromedial**.",
-  "correta": "A cortical posteromedial fica em compressão na carga, e esse é o padrão mais frequente, de baixo risco.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Tíbia: posteromedial e a linha negra temida. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "Tíbia: posteromedial e a linha negra temida"
+     ],
+     "blocos": [
+      "tibia-posteromedial-e-a-linha-negra-temida-089a8baa",
+      "tibia-posteromedial-e-a-linha-negra-temida-27dd557d",
+      "tibia-posteromedial-e-a-linha-negra-temida-b08b2d83"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "0c63fb5558031714dd2b84e27d15fe7df2561b7913b16d3d23054079ffc57944"
+    }
+   ],
+   "questaoSha256": "c798bacf9526a293df3fd6a4cfd51a3eeb681ea87ddb197f19b9ab6a6487306f",
+   "comentarioSha256": "150c88d63a15da42ca2b721e55c7c15091b62d7e5de6aaa2c5a99ebb6d163747"
+  }
  },
  "trauma-0026": {
   "incorretas": {
@@ -1112,19 +1140,43 @@
   "conferido": false
  },
  "trauma-0065": {
-  "conceito": "**A fratura por estresse.** É uma fratura que surge de **cargas repetidas** num osso normal (fratura por **fadiga**), quando o osso é danificado mais rápido do que consegue se reparar. É comum em **corredores**, militares em treinamento, bailarinos e atletas que aumentam o volume de treino rapidamente.\n\n**Alto risco x baixo risco.** A classificação mais útil para o tratamento separa as fraturas pelo **risco de complicações** (progressão para fratura completa, desvio, pseudoartrose). Isso depende sobretudo de duas coisas:\n- se a fratura está no lado de **tensão** do osso (onde a carga tende a abrir o traço) ou de **compressão**;\n- se a região tem **boa irrigação**.\n\n| Alto risco | Baixo risco |\n|---|---|\n| **Colo do fêmur** (lado de **tensão**, superior) | Colo do fêmur (lado de compressão, inferior) |\n| **Patela** | **Costelas** |\n| **Cortical anterior da tíbia** (a \"linha temida\", dreaded black line) | Diáfise posteromedial da tíbia |\n| Maléolo medial | Fíbula |\n| **Tálus** e **navicular** | **Diáfise da ulna** |\n| **Base do quinto metatarso** (diáfise proximal, zona III) | Diáfise do fêmur |\n| **Sesamoides** do hálux | Metatarsos 2 a 4 (diáfise) |\n\n**Por que a patela e não a costela.** A **patela** é um osso que recebe grande **tração** do aparelho extensor; uma fratura por estresse pode **desviar** e romper o mecanismo extensor. As **costelas** (como nos remadores e golfistas) consolidam bem com repouso relativo.\n\n**O tratamento.**\n- **Baixo risco**: **repouso relativo**, modificação da atividade e retorno gradual. Raramente exigem imobilização.\n- **Alto risco**: **sem carga** ou imobilização rigorosa e, muitas vezes, **fixação cirúrgica** (por exemplo, parafuso no colo do fêmur no lado de tensão, haste na tíbia anterior, parafuso no quinto metatarso do atleta).\n- Em todas: investigar os fatores de risco (erros de treino, calçado, alinhamento, **baixa disponibilidade de energia** na mulher atleta, vitamina D).",
-  "correta": "**Correta: A (a patela e a costela).** Entre as fraturas por estresse, a **patela** é um sítio de **alto risco** (sob tração do aparelho extensor, pode desviar), e a **costela** é um sítio de **baixo risco**, que consolida com repouso relativo.",
+  "conceito": "Um sítio de alto risco não é necessariamente o que mais fratura. É aquele com maior chance de retardo, pseudartrose, refratura ou consequência grave se a lesão completar. A maioria está no **lado de tensão**, em que a carga abre a fissura; os de baixo risco tendem ao lado de compressão, com evolução mais favorável.\n\nNa tabela do capítulo, a **patela**, pelo lado anterior de tensão, é de alto risco, enquanto a **costela** é de baixo risco. A **base do quinto metatarso** também está entre os de alto risco; a **diáfise da ulna** está no grupo de baixo risco. Portanto, a pergunta exige classificar as duas posições do par (resumo do Rockwood, 10ª ed., cap. 24, “Alto risco e baixo risco”).\n\nO risco anatômico orienta a proteção de carga e o seguimento, mas precisa ser combinado ao estágio da lesão. O resumo da Biblioteca apresenta a tabela de sítios e o algoritmo por grau.",
+  "correta": "**A: a patela e a costela.** É o único par que coloca um sítio de alto risco primeiro e um de baixo risco depois. O exemplo da patela se refere à região de tensão destacada no capítulo.",
   "incorretas": {
-   "B": "A patela é de alto risco, mas a **base do quinto metatarso** (diáfise proximal) também é de **alto risco**, e não de baixo risco.",
-   "C": "A **costela** é de **baixo** risco, e não de alto risco. A diáfise da ulna também é de baixo risco.",
-   "D": "A **diáfise da ulna** é de **baixo** risco, e a **base do quinto metatarso** é de **alto** risco: a ordem está invertida."
+   "B": "**Coloca dois sítios de alto risco.** A patela está correta na primeira posição, mas a base do quinto metatarso não pertence ao grupo de baixo risco. Sua consolidação lenta é justamente uma preocupação do tratamento.",
+   "C": "**Coloca dois sítios de baixo risco.** Costela e diáfise da ulna estão nesse grupo na tabela. A primeira posição precisaria de uma localização de alto risco.",
+   "D": "**Inverte os grupos.** A ulna diafisária é de baixo risco e a base do quinto metatarso de alto risco. O par apresenta a ordem contrária à solicitada."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 23",
-   "Boden BP, Osbahr DC, Jimenez C. Low-risk stress fractures. Am J Sports Med. 2001;29(1):100-111."
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Alto risco e baixo risco. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "Alto risco e baixo risco"
+     ],
+     "blocos": [
+      "alto-risco-e-baixo-risco-2c654600",
+      "alto-risco-e-baixo-risco-70c9cf0c",
+      "alto-risco-e-baixo-risco-db1d36dd"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "7b834722c5311dfb10d11e748460cb2da8bcc20109aa1a76d6f815793e284c60"
+    }
+   ],
+   "questaoSha256": "5600f3d3d51d952912cf971010eddde1e03ebe17be9ebcc3d6dd7970ece642f4",
+   "comentarioSha256": "b4584d6c134b024e3ae9985e7794ed2eb66c7c66814958c27c6207dc5e8ef5d1"
+  }
  },
  "trauma-0066": {
   "conceito": "**A incidência da tuberosidade bicipital procura inferir a rotação do fragmento proximal do rádio.** Na técnica descrita, o **cotovelo fica fletido a 90°**, os epicôndilos equidistantes do chassi e o tubo inclinado **20° para posterior**. O perfil da tuberosidade é comparado com uma referência para estimar pronação ou supinação.\n\nA finalidade explica por que não basta escolher uma radiografia comum do antebraço. O AP geral usa cotovelo estendido e antebraço supinado, enquanto esta incidência dedica a posição e a angulação do feixe a uma referência anatômica de rotação. As duas técnicas não são equivalentes só porque incluem o mesmo osso.\n\nO resumo ressalva que o método perdeu utilidade com o predomínio do tratamento cirúrgico. Isso não apaga a descrição técnica cobrada, mas impede apresentá-lo como exame indispensável em toda fratura atual. Na sala, outras referências anatômicas e imagens ajudam a conferir a rotação da redução.\n\n**Leia “Imagem e rotação”, na Biblioteca, comparando a incidência específica com o AP do antebraço.** A pergunta exige lembrar duas variáveis do mesmo método, sem combinar metade de cada técnica.",
@@ -1741,33 +1793,85 @@
   "conferido": false
  },
  "trauma-0095": {
-  "conceito": "**O que são as fraturas por estresse.** São falhas ósseas por **carga repetitiva** abaixo do limite de ruptura, quando o dano microscópico acumulado supera a capacidade de remodelação. Ocorrem em atletas, militares e corredores (fratura por **fadiga**, em osso normal) ou em ossos fragilizados, como na osteoporose (fratura por **insuficiência**).\n\n**A classificação de Kaeding e Miller (2013).** Une os achados **clínicos** e de **imagem** num sistema único, aplicável a qualquer osso.\n\n| Grau | Dor | Imagem |\n|---|---|---|\n| I | **Sem dor** | Alteração na imagem (edema ósseo na RM, captação na cintilografia) |\n| II | **Dor** | Alteração na imagem, **sem traço de fratura** |\n| III | Dor | **Traço de fratura sem desvio** |\n| **IV** | Dor | **Fratura desviada (mais de 2 mm)** |\n| V | Dor | **Pseudartrose** |\n\n**Somar o risco.** A classificação é complementada pela localização: fraturas de **alto risco** (colo femoral do lado da tensão, cortical anterior da tíbia, maléolo medial, navicular, base do 5º metatarso na zona proximal, sesamoides) têm maior tendência a progredir, a não consolidar ou a desviar, e pedem conduta mais agressiva. As de **baixo risco** (diáfise posteromedial da tíbia, metatarsos 2 a 4, fíbula) costumam responder a repouso relativo.\n\n**Como usar.**\n- Graus I e II de baixo risco: modificação da atividade.\n- Grau III de alto risco: imobilização e restrição de carga, às vezes fixação em atletas.\n- **Grau IV** (desviada): em geral **cirurgia**.\n- Grau V: tratamento da pseudartrose.\n\n**Investigar a causa.** Erros de treino, calçado, alterações biomecânicas e, especialmente em mulheres, a **tríade da atleta** (baixa disponibilidade energética, disfunção menstrual, baixa massa óssea).",
-  "correta": "**Correta: D (grau IV).** Na classificação de Kaeding e Miller, a fratura por estresse **desviada**, com desvio maior que 2 mm, corresponde ao grau IV.",
+  "conceito": "O traço já existe e os fragmentos se deslocaram **mais de 2 mm**. Na classificação de **Kaeding-Miller**, isso corresponde ao **grau IV**. A classificação combina sintomas e imagem para distinguir reação inicial, fratura estabelecida e falha de consolidação.\n\nOs graus I e II têm sinais de lesão por estresse sem traço; a dor diferencia o II do I. No grau III já há um traço, mas sem desvio. O IV acrescenta o deslocamento maior que 2 mm; o V corresponde a pseudartrose. Assim, o salto de III para IV é uma mudança estrutural, e não simplesmente uma dor mais intensa (resumo do Rockwood, 10ª ed., cap. 24, “A classificação”).\n\nO sítio informa o risco e o grau informa o dano acumulado. No algoritmo apresentado, fraturas grau IV seguem para fixação, independentemente de estarem no grupo anatômico de alto ou baixo risco. O resumo da Biblioteca apresenta classificação e algoritmo juntos.",
+  "correta": "**D: IV.** O desvio superior a 2 mm é a característica que define esse grau na tabela consultada. A fratura já ultrapassou o estágio de traço sem desvio do grau III.",
   "incorretas": {
-   "A": "O **grau I** é a alteração apenas na imagem, **sem dor**.",
-   "B": "O **grau II** tem dor e alteração na imagem, mas **sem traço de fratura** visível.",
-   "C": "O **grau III** é o traço de fratura **sem desvio**."
+   "A": "**Grau I não tem dor nem traço de fratura.** Há imagem de lesão por estresse, mas não a descontinuidade desviada descrita. É um estágio anterior à fratura estabelecida.",
+   "B": "**Grau II tem dor, porém ainda não tem traço.** Dor não basta para classificar uma lesão já fraturada e desviada como II. A imagem determina a mudança de estágio.",
+   "C": "**Grau III tem traço sem desvio.** A existência de fratura está compatível, mas os mais de 2 mm de deslocamento acrescentam a característica do grau IV."
   },
   "referencias": [
-   "Kaeding CC, Miller T. The comprehensive description of stress fractures: a new classification system. J Bone Joint Surg Am. 2013;95(13):1214-1220."
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: KAEDING-MILLER e o algoritmo de tratamento. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "KAEDING-MILLER e o algoritmo de tratamento"
+     ],
+     "blocos": [
+      "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7",
+      "kaeding-miller-e-o-algoritmo-de-tratamento-34caab1a",
+      "kaeding-miller-e-o-algoritmo-de-tratamento-e5f67639",
+      "kaeding-miller-e-o-algoritmo-de-tratamento-cdc1ad62"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "8f346d50e3cbf5ab9d0b08d11c0cbc3b65051d1563ceaa5c3733a3ead53d6cbb"
+    }
+   ],
+   "questaoSha256": "354bbefb0412760543b00a38bc26b113fb8d59eb129a0698ed4f33f04541c720",
+   "comentarioSha256": "f81e20bb8c27d9c741668096949fd0d58379f26d0c89ec94e0299332c07789e0"
+  }
  },
  "trauma-0096": {
-  "conceito": "**A base do quinto metatarso.** É o local de inserção do **fibular curto** (na tuberosidade) e da banda lateral da **fáscia plantar**. Recebe forças grandes na inversão do pé e no apoio do antepé lateral. A irrigação da região é **irregular**: há uma **zona de transição** entre os vasos metafisários e a artéria nutridora da diáfise, com pouco fluxo, onde a consolidação é difícil.\n\n**As três zonas (Lawrence e Botte).**\n\n| Zona | Local | Fratura típica |\n|---|---|---|\n| **I** | **Tuberosidade** | **Avulsão** (pela fáscia plantar e pelo fibular curto) na entorse em inversão; a mais comum; consolida bem |\n| **II** | **Junção metáfise-diáfise** (área da articulação entre o 4º e o 5º metatarsos) | **Fratura de Jones**: aguda, por adução do antepé com o tornozelo em flexão plantar; **irrigação pobre**; risco de pseudoartrose |\n| **III** | **Diáfise proximal**, distal aos ligamentos intermetatarsais | **Fratura por estresse**: em atletas; a de **maior risco** de retardo de consolidação e pseudoartrose |\n\n**A fratura por estresse da zona III.**\n- Surge em **atletas** (corredores, jogadores de basquete e futebol) e em pés **cavovaros** (que sobrecarregam a borda lateral).\n- Tem **sintomas prodrômicos**: dor lateral no pé que vai piorando por semanas, antes da fratura completa.\n- Na radiografia, pode haver **esclerose** do canal medular e alargamento do traço (sinais de cronicidade).\n- A classificação de **Torg** descreve a evolução: aguda (I), retardo de consolidação (II) e pseudoartrose com esclerose do canal (III).\n\n**O tratamento.**\n- Zona I: sintomático, com calçado rígido ou bota, carga conforme a dor.\n- Zonas II e III: **sem carga** em bota ou gesso por 6 a 8 semanas, com consolidação mais lenta. No **atleta**, e nas fraturas com sinais de cronicidade, prefere-se a **fixação com parafuso intramedular**, que reduz o tempo de retorno ao esporte e o risco de pseudoartrose.\n- Corrigir o **pé cavovaro**, se houver, para evitar a recidiva.\n\n**Na criança.** A **apófise** da base do quinto metatarso tem orientação **longitudinal** e não deve ser confundida com uma fratura (que é transversal). A **apofisite** por tração é a doença de **Iselin**.",
-  "correta": "**Correta: C (III).** A fratura por estresse da base do quinto metatarso ocorre na **zona III**, a diáfise proximal, distal aos ligamentos intermetatarsais. É típica de atletas, com sintomas prodrômicos e alto risco de retardo de consolidação e pseudoartrose.",
+  "conceito": "A fratura por estresse do quinto metatarso costuma produzir dor na **diáfise proximal, zona III**, distal à tuberosidade. O quadro pode ser progressivo com corrida ou salto, antecedendo uma fratura completa; a radiografia frequentemente mostra esclerose ao redor do traço.\n\nA localização deve ser separada de duas vizinhas: a tuberosidade é zona I e a junção metáfise-diáfise é zona II. O capítulo relaciona a região proximal ao risco de consolidação lenta, pseudartrose e refratura, razão para uma abordagem mais protetora que a de muitos outros metatarsos (resumo do Rockwood, 10ª ed., cap. 24, “Base do quinto metatarso”).\n\nNo atleta de alta demanda, o texto favorece fixação intramedular; em outros pacientes discute imobilização sem carga e seguimento. Para entender o tratamento, comece pela zona correta no resumo da Biblioteca.",
+  "correta": "**C: III.** É a diáfise proximal, onde o capítulo localiza geralmente a dor da fratura por estresse. O uso amplo da palavra “base” no enunciado não a transforma em fratura da tuberosidade.",
   "incorretas": {
-   "A": "A **zona I** (tuberosidade) é o local da **fratura-avulsão** na entorse em inversão, e não da fratura por estresse.",
-   "B": "A **zona II** (junção metáfise-diáfise) é o local da **fratura de Jones** aguda, por adução do antepé.",
-   "D": "A classificação tem apenas **três zonas**. Não há zona IV."
+   "A": "**Zona I é a tuberosidade.** Ela não corresponde à localização diafisária proximal típica da fratura por estresse pedida. É preciso distinguir o ponto ósseo palpável da região distal a ele.",
+   "B": "**Zona II é a junção metáfise-diáfise.** O capítulo destaca sua irrigação desfavorável e o risco de retardo. Apesar dessa preocupação clínica, a dor da lesão por estresse é localizada geralmente mais distal, na diáfise proximal da zona III.",
+   "D": "**Não há zona IV nesse esquema.** A divisão anatômica apresentada tem I, II e III. Não se deve confundir número de zona com grau de gravidade de outra classificação."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Lawrence SJ, Botte MJ. Jones' fractures and related fractures of the proximal fifth metatarsal. Foot Ankle. 1993;14(6):358-365."
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "O pé: navicular, quinto metatarso e a fratura de marcha"
+     ],
+     "blocos": [
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4319a87c",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-0a3a14ef",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-bb3eee18",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-8e9fa613",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4775bf11"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "0eb9377f01b01d10562402a099ec84d13aa6b9b0b3162cd460f72916f33c415a"
+    }
+   ],
+   "questaoSha256": "42e322c20998fddaf8cae0be7f91bf931dde2080e88272a2d3198853e7d40c1f",
+   "comentarioSha256": "496b3bf399a006f91a1b325e3572f4b9281699460ae8251962912e09481da080"
+  }
  },
  "trauma-0097": {
   "conceito": "**A fratura da cabeça do fêmur.** É uma lesão rara, que quase sempre acompanha a **luxação posterior do quadril** (em cerca de 5 a 15% delas). O mecanismo típico é o **trauma do painel**: o joelho bate no painel do carro com o quadril fletido, e a força empurra a cabeça femoral para trás.\n\n**Por que o fragmento é anteromedial.** Ao sair do acetábulo para trás, a cabeça **bate na borda posterior** do acetábulo. A borda funciona como uma lâmina e **cisalha** a porção da cabeça que está em contato com ela, a porção **anteromedial** (anteroinferior). Esse fragmento costuma **ficar dentro do acetábulo**, muitas vezes ainda preso ao **ligamento redondo**, enquanto o resto da cabeça sai para trás.\n\n**A classificação de Pipkin.**\n\n| Tipo | Fratura |\n|---|---|\n| **I** | Fragmento **abaixo** da fóvea (fora da área de carga) |\n| **II** | Fragmento **acima** da fóvea (inclui a área de carga) |\n| **III** | Tipo I ou II com **fratura do colo** do fêmur |\n| **IV** | Tipo I ou II com **fratura do acetábulo** |\n\n**O prognóstico.** O tipo **III** é o pior, com alto risco de **necrose avascular**. A luxação em si também ameaça a irrigação da cabeça (artéria circunflexa femoral medial).\n\n**O tratamento.**\n1. **Redução urgente** da luxação, idealmente em menos de **6 horas**, para reduzir o risco de necrose.\n2. **Tomografia** depois da redução, para ver o fragmento, a congruência e fragmentos intra-articulares.\n3. **Pipkin I** com redução congruente: pode ser tratado **sem cirurgia**, ou com excisão de fragmentos pequenos.\n4. **Pipkin II** (área de carga): **redução aberta e fixação**, geralmente por via **anterior** (Smith-Petersen) ou pela luxação cirúrgica (Ganz), já que o fragmento é anteromedial.\n5. **Pipkin III**: fixação do colo e da cabeça no jovem; artroplastia no idoso.\n6. **Pipkin IV**: tratar a fratura do acetábulo e a da cabeça.\n\n**As complicações.** Necrose avascular, artrose pós-traumática, ossificação heterotópica e lesão do nervo ciático (na luxação posterior).\n\n**O Pipkin I em detalhe.** O fragmento fica **abaixo da fóvea**, fora da principal área de carga. Por isso, o tratamento depende sobretudo da **congruência** da redução e do tamanho do fragmento:\n- Redução **concêntrica**, com o fragmento bem posicionado (desvio menor que cerca de 1 a 2 mm): **tratamento conservador**.\n- Quando a cirurgia é indicada (redução não concêntrica, fragmento desviado ou interposto):\n  - fragmento **grande** e com boa qualidade: **redução e fixação** com parafusos embutidos (abaixo da cartilagem) ou parafusos sem cabeça;\n  - fragmentos **pequenos** e cominutivos, sem possibilidade de fixação: **ressecção**.\nA **artroplastia** não é a indicação no Pipkin I, que preserva a área de carga.",
@@ -5580,15 +5684,44 @@
   "conferido": false
  },
  "trauma-0339": {
+  "conceito": "Na tíbia, **frequência e gravidade não apontam para a mesma cortical**. A fratura por estresse mais frequente é **posteromedial**, do lado de compressão. A anterior ou anterolateral é lembrada pela dificuldade de consolidação e pelo risco de completar, mas é menos comum.\n\nA diferença nasce da flexão da tíbia durante a corrida e o salto. A face anterior sofre tensão, que abre a fissura; a posteromedial sofre compressão, que tende a fechá-la. Isso ajuda a entender por que o padrão predominante costuma ter melhor comportamento biológico e mecânico (resumo do Rockwood, 10ª ed., cap. 24, “Três entidades diferentes”).\n\nNão confunda essa fratura focal com a canelite, descrita como periostite difusa da borda medial sem fratura. O resumo da Biblioteca reúne as três apresentações e seus exames.",
+  "correta": "**D: posteromedial.** É o sítio predominante e corresponde à cortical submetida à compressão. A resposta não é a anterior apenas por ela ser a mais lembrada pelas complicações.",
   "incorretas": {
-   "A": "A região anterolateral não é o local típico da fratura por estresse.",
-   "B": "A região anteromedial não é o local mais frequente.",
-   "C": "A região posterolateral não é o local típico."
+   "A": "**Anterolateral é o padrão de tensão.** O capítulo o descreve como menos comum e de alto risco. Ele se destaca pela linha negra e pelas complicações, não pela maior frequência.",
+   "B": "**Não basta escolher uma região com componente medial.** A localização predominante especificada é posteromedial, do lado de compressão. A alternativa desloca a lesão para a frente e perde essa relação mecânica.",
+   "C": "**A posição posterior está incompleta sem o lado medial.** A cortical predominante descrita é posteromedial, não posterolateral. É essa combinação anatômica que corresponde ao lado de compressão."
   },
-  "conceito": "A **tíbia** funciona como uma viga curvada sob carga: na corrida e na marcha, a cortical **posteromedial** fica em **compressão**, e a **anterior** fica em **tensão**.\n\n**A fratura por estresse mais frequente**: na região **posteromedial**, por **compressão**, geralmente na junção do terço médio com o distal. É de **baixo risco**: consolida com repouso relativo e retorno gradual ao esporte.\n\n**A fratura de alto risco**: na cortical **anterior**, do lado da **tensão**, no terço médio. Na radiografia aparece a \"**linha negra temida**\". Evolui mal, com pseudartrose e fratura completa, e muitas vezes exige **haste intramedular**.\n\n**O diagnóstico**: radiografia normal no início em até dois terços dos casos; a **RM** é o exame mais sensível e gradua a lesão.\n\n**Os fatores de risco**: aumento súbito de treino, deficiência energética (tríade da mulher atleta), baixa vitamina D, calçado e alinhamento do membro.\n\n**Na prova**: a fratura por estresse da diáfise da tíbia é mais frequente na região **posteromedial**.",
-  "correta": "A cortical posteromedial fica em compressão na carga e é o local mais frequente, de baixo risco.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Tíbia: posteromedial e a linha negra temida. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "Tíbia: posteromedial e a linha negra temida"
+     ],
+     "blocos": [
+      "tibia-posteromedial-e-a-linha-negra-temida-089a8baa",
+      "tibia-posteromedial-e-a-linha-negra-temida-27dd557d",
+      "tibia-posteromedial-e-a-linha-negra-temida-b08b2d83",
+      "tibia-posteromedial-e-a-linha-negra-temida-51147bf1"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "534f4667c37cf9423fe6c08cb517a32e1a03d93297661dad38b90245bae4f06f"
+    }
+   ],
+   "questaoSha256": "0952e365cd13ec6da264b02a3062701218e16054e803a5610e6f4d83403224a6",
+   "comentarioSha256": "467461825de9dc3aece80e58feeee2f4345209a29a9962004683cf03faacea55"
+  }
  },
  "trauma-0340": {
   "incorretas": {
@@ -5972,18 +6105,45 @@
   "conferido": false
  },
  "trauma-0428": {
+  "conceito": "A fratura por estresse do navicular costuma estar no **plano sagital, no terço central da cortical dorsal**. O traço encontra uma região em que dois problemas se somam: menor irrigação e maior cisalhamento durante flexão plantar com pronação.\n\nIsso explica por que o navicular é classificado como alto risco. Uma fissura nessa região pode persistir, completar ou evoluir para pseudartrose. A dor pode ser vaga no mediopé, com sensibilidade dorsal no “ponto N”, e a radiografia inicial frequentemente não mostra a lesão (resumo do Rockwood, 10ª ed., cap. 24, “Navicular”).\n\nA TC ajuda a definir extensão e consolidação; a decisão de retorno não depende apenas de melhorar a dor. Para ligar o local do traço ao risco e à avaliação por imagem, leia a seção do navicular no resumo da Biblioteca.",
+  "correta": "**A: sagital, no terço central.** A orientação e a posição coincidem com a região dorsal central de maior cisalhamento e irrigação pobre descrita. Os dois componentes precisam estar corretos.",
   "incorretas": {
-   "B": "O terço central está certo, mas o traço é sagital, não coronal.",
-   "C": "O traço é sagital, mas no terço central, não no proximal.",
-   "D": "O plano e o local estão errados."
+   "B": "**Acerta o terço central e troca o plano.** A maioria das lesões descritas é sagital. O fato de a região central ser vulnerável não torna coronal a orientação do traço.",
+   "C": "**Acerta o plano, mas desloca a região predominante.** O capítulo situa a lesão no terço central da cortical dorsal, não no proximal. É ali que destaca a combinação entre cisalhamento e irrigação desfavorável.",
+   "D": "**Troca as duas referências.** O padrão predominante é sagital e central. A alternativa perde tanto a orientação quanto a área de vulnerabilidade que explica o comportamento da fratura."
   },
-  "conceito": "A **fratura por estresse do navicular** é de **alto risco** e típica de atletas de corrida e salto. Muitas vezes passa meses sem diagnóstico, como \"dor no mediopé\".\n\n**Onde ocorre**: no **plano sagital** (traço de cima para baixo, no sentido do comprimento do pé), no **terço central** do osso.\n\n**Por que ali**: o terço central do navicular é uma área de **irrigação pobre**, entre os vasos que entram pelos lados medial e lateral. Além disso, ele fica comprimido entre a cabeça do tálus e os cuneiformes, recebendo a carga do segundo e do terceiro raios.\n\n**O quadro**: dor vaga no dorso do mediopé, com dor à palpação no ponto \"N\" (sobre o navicular).\n\n**O diagnóstico**: a radiografia costuma ser normal; a **TC** mostra o traço e a **RM** mostra o edema precoce.\n\n**O tratamento**: **gesso sem carga** por 6 a 8 semanas nas fraturas incompletas sem desvio; **fixação com parafusos** (com ou sem enxerto) nas completas, desviadas, com pseudartrose ou em atletas de elite.\n\n**Na prova**: a fratura por estresse do navicular é mais frequente no plano **sagital**, no **terço central**.",
-  "correta": "O traço é sagital e fica no terço central, área pouco irrigada e muito carregada.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 89"
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "O pé: navicular, quinto metatarso e a fratura de marcha"
+     ],
+     "blocos": [
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+      "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "3c5ef269ab2d89039285017cafc4b327ecf2859adff3f0a1dfcab6a089d68869"
+    }
+   ],
+   "questaoSha256": "74bd820c030cea2d0b01e3ca84fa12fb19fbd710768a7ff9249b8cdfc4faab6b",
+   "comentarioSha256": "1a9fb00d4a13628a49f73e698396a93eab6a710979cb1ac3322140f08745a5e0"
+  }
  },
  "trauma-0429": {
   "conceito": "A complicação característica da placa no úmero proximal é a **penetração intra-articular do parafuso**. O importante é enxergar a relação entre uma cabeça óssea que pode se deformar e uma montagem angularmente fixa.\n\nSe o parafuso já ultrapassa a cabeça na cirurgia, a perfuração é primária. Se a cabeça perde altura ou colapsa depois, o parafuso bloqueado não recua: sua ponta pode passar a projetar-se na articulação. Assim, um controle inicial adequado não dispensa cuidar da redução e do suporte medial que mantêm a cabeça apoiada (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nRigidez, necrose e consolidação viciosa são complicações relevantes, mas têm mecanismos próprios e podem coexistir com a penetração. A pergunta pede a mais frequente dessa fixação. O resumo da Biblioteca permite comparar a perfuração com esses outros problemas.",
@@ -7847,18 +8007,43 @@
   "conferido": false
  },
  "trauma-0677": {
+  "conceito": "A ligação entre alimentação, ciclo menstrual e osso começa pela **disponibilidade de energia**. Quando a ingestão não atende à demanda, a produção hormonal pode ser comprometida, o ciclo se torna irregular ou cessa e a saúde óssea é prejudicada. O capítulo relaciona o estrogênio baixo ao aumento da atividade osteoclástica.\n\nA tríade reúne **baixa disponibilidade energética, oligomenorreia ou amenorreia e baixa densidade mineral óssea**. Anorexia é uma forma possível de distúrbio alimentar, mas a definição atual é mais ampla: pode haver energia insuficiente mesmo sem um transtorno alimentar formal (resumo do Rockwood, 10ª ed., cap. 24, “A tríade da mulher atleta”).\n\nA fratura por estresse é uma consequência ortopédica desse desequilíbrio. Tratar apenas o local doloroso, mantendo a deficiência energética e a alteração hormonal, deixa fatores de risco sem abordagem. O resumo da Biblioteca conecta a tríade ao planejamento de retorno ao esporte.",
+  "correta": "**D: oligomenorreia ou amenorreia e baixa densidade óssea.** São os componentes menstrual e ósseo que se associam ao distúrbio alimentar ou à baixa disponibilidade energética. Não se trata de maior sangramento nem de maior massa óssea.",
   "incorretas": {
-   "A": "A tríade tem menstruação diminuída e densidade óssea baixa, não o contrário.",
-   "B": "A densidade óssea é baixa, mas a menstruação diminui, não aumenta.",
-   "C": "A menstruação diminui, mas a densidade óssea também fica baixa."
+   "A": "**Inverte os componentes menstrual e ósseo.** A tríade se associa a ciclos infrequentes ou ausentes e baixa densidade mineral, não a hipermenorreia com densidade alta.",
+   "B": "**A densidade está no sentido correto, mas o ciclo não.** Baixa densidade óssea faz parte da tríade. O componente menstrual é oligomenorreia ou amenorreia, e não hipermenorreia.",
+   "C": "**Acerta a irregularidade menstrual e inverte a consequência óssea.** O capítulo descreve baixa densidade, coerente com deficiência energética e alteração hormonal. Alta densidade não é o componente da tríade."
   },
-  "conceito": "A **tríade da mulher atleta** é a combinação de:\n\n**baixa disponibilidade de energia**, com ou sem **anorexia** ou outro transtorno alimentar;\n\n**disfunção menstrual**: **oligomenorreia** ou **amenorreia**, porque a falta de energia desliga o eixo hormonal e o **estrogênio** cai;\n\n**baixa densidade mineral óssea**: com menos estrogênio, o osso perde massa (osteopenia ou osteoporose).\n\n**A consequência ortopédica**: **fraturas por estresse**, inclusive nos locais de **alto risco** (colo do fêmur, navicular, sacro).\n\n**O conceito ampliado**: deficiência energética relativa no esporte (**RED-S**), que inclui os homens e efeitos em outros sistemas.\n\n**A conduta**: equipe multidisciplinar (nutrição, ginecologia ou endocrinologia, psicologia), **densitometria**, ajuste da alimentação e do treino; a recuperação da menstruação é um sinal de melhora.\n\n**Na prova**: a tríade é anorexia com **oligomenorreia ou amenorreia** e **baixa densidade óssea**.",
-  "correta": "A falta de energia leva à amenorreia, e o estrogênio baixo leva à baixa densidade óssea.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Fatores de risco e a tríade da mulher atleta. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "Fatores de risco e a tríade da mulher atleta"
+     ],
+     "blocos": [
+      "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+      "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+      "fatores-de-risco-e-a-triade-da-mulher-atleta-a7b1a69d"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "19c5d4d3ff97be2e3960833d9bd9c287b5d72025ddb702ed4b35f67929207df3"
+    }
+   ],
+   "questaoSha256": "893f67d6988203d6312b74a6cbc27709f85a47c3dcb2cdffa00baa711ad82a82",
+   "comentarioSha256": "1be779a5e8b8838533c68fa70d1f4f33a7f95b8d0fb35932913ad01d9b8a7153"
+  }
  },
  "trauma-0678": {
   "incorretas": {
@@ -9467,18 +9652,43 @@
   "conferido": false
  },
  "trauma-0795": {
+  "conceito": "O **grau III de Kaeding-Miller** é uma fratura por estresse com **traço visível e sem desvio**. Essa definição exige mais do que edema ou reação de estresse, mas não inclui deslocamento dos fragmentos.\n\nA imagem ajuda a ordenar a evolução: sinais de estresse sem traço pertencem aos graus I ou II, diferenciados pela dor; traço sem desvio é III; desvio maior que 2 mm é IV; pseudartrose é V. Portanto, “sem desvio” não significa “sem fratura” (resumo do Rockwood, 10ª ed., cap. 24, “A classificação”).\n\nA distinção importa porque a conduta depende também do sítio. No algoritmo, um grau III de alto risco é fixado; em baixo risco começa-se com repouso completo e reavaliação da consolidação. Leia o quadro no resumo da Biblioteca para não transformar um mesmo grau em conduta idêntica em qualquer osso.",
+  "correta": "**C: sem desvio.** O grau III já contém um traço de fratura, porém sem deslocamento. A alternativa resume essa parte decisiva da definição, sem reduzir o estágio a uma reação óssea.",
   "incorretas": {
-   "A": "**Graus I e II.** A reação de estresse sem traço de fratura corresponde aos graus iniciais.",
-   "B": "**Grau V.** A pseudartrose é o estágio final da classificação.",
-   "D": "**Grau IV.** A fratura desviada corresponde ao grau IV."
+   "A": "**Reação sem fratura pertence aos estágios iniciais.** Sem traço, a distinção entre I e II depende da dor. No III, o dano estrutural já produziu uma fratura reconhecível.",
+   "B": "**Pseudartrose é grau V.** Ela descreve falha de consolidação, não apenas a presença de uma fratura sem desvio. A classificação reserva outro grau para essa complicação.",
+   "D": "**Desvio é a característica acrescentada no grau IV.** A tabela usa deslocamento maior que 2 mm para esse estágio. O III preserva o alinhamento dos fragmentos."
   },
-  "conceito": "**As fraturas por estresse.** Resultam de **carga repetitiva** que supera a capacidade do osso de se remodelar. Formam um **espectro**: da reação de estresse (edema ósseo sem traço) até a fratura completa, desviada ou sem consolidação. A classificação de **Kaeding e Miller** junta **sintomas** e **imagem** para graduar esse espectro.\n\n**Os graus.** **Grau I**: achado de **imagem** (edema ou reação de estresse na ressonância ou cintilografia) **sem dor** e **sem traço** de fratura. **Grau II**: **dor**, com reação de estresse na imagem, ainda **sem traço** de fratura. **Grau III**: dor com **traço de fratura sem desvio**. **Grau IV**: fratura **desviada** (mais de 2 mm). **Grau V**: **pseudartrose**.\n\n**Alto e baixo risco.** Além do grau, importa o **local**. Fraturas de **baixo risco** (diáfise do segundo e terceiro metatarsos, face posteromedial da tíbia, fíbula, calcâneo) consolidam bem com repouso relativo. Fraturas de **alto risco** (lado de **tensão** do colo do fêmur, **cortical anterior** da tíbia, a \"linha temida\", **navicular**, base do **quinto metatarso** (Jones), **sesamoides**, maléolo medial, patela, tálus) têm tendência a progredir, a não consolidar e a desviar, e muitas vezes exigem **fixação**, sobretudo a partir do grau III.\n\n**O tratamento.** Graus I e II: modificação da atividade e retorno gradual. Grau III: depende do local; alto risco geralmente com fixação em atletas. Graus IV e V: tratamento como fratura desviada ou pseudartrose. Sempre investigar fatores: **erros de treinamento**, **baixa disponibilidade energética**, vitamina D, alterações hormonais e biomecânicas.\n\n**Na prova:** Kaeding e Miller: I imagem sem dor; II dor sem traço; **III traço sem desvio**; IV desviada; V pseudartrose.",
-  "correta": "**Sem desvio.** O grau III é a fratura por estresse com traço visível, dolorosa, ainda sem desvio, o que a separa do grau IV.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 15.3"
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: KAEDING-MILLER e o algoritmo de tratamento. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "KAEDING-MILLER e o algoritmo de tratamento"
+     ],
+     "blocos": [
+      "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7",
+      "kaeding-miller-e-o-algoritmo-de-tratamento-34caab1a",
+      "kaeding-miller-e-o-algoritmo-de-tratamento-cdc1ad62"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "3c46cdbf1c6a960e7353d69e58edecd36f260498062540fe2e3915d4d392818b"
+    }
+   ],
+   "questaoSha256": "8d8140a6cf0706d3231afbf688249433a8dfa72b432df3029bf17736e10d98a7",
+   "comentarioSha256": "ec5df653ebeb058c9154800204d357caeb0297e70c42a05f2e8222fdb8edf59a"
+  }
  },
  "trauma-0796": {
   "incorretas": {
@@ -13743,18 +13953,42 @@
   "conferido": false
  },
  "trauma-1084": {
+  "conceito": "A diferença na cintilografia não é apenas “captou ou não captou”. Na fratura por estresse da tíbia, o padrão descrito é **focal nas três fases**: angiográfica, pool sanguíneo e tardia. O ponto de lesão aparece como foco quente, de aspecto fusiforme na tíbia.\n\nA canelite, ou síndrome do estresse tibial medial, costuma ter captação **linear e difusa apenas na fase tardia**, sendo negativa nas duas primeiras. A distribuição ajuda a distinguir uma lesão óssea focal da periostite ao longo da borda medial (resumo do Rockwood, 10ª ed., cap. 24, “A imagem, exame por exame”).\n\nEsses são padrões típicos, não uma garantia de que toda fratura será positiva: o capítulo relata lesões negativas na cintilografia e positivas na RM. Além disso, a cintilografia pode demorar 12 a 18 meses para normalizar e não serve sozinha para liberar o retorno. O resumo da Biblioteca explica essas limitações.",
+  "correta": "**A: focal nas 3 fases do exame.** A combinação de distribuição focal e positividade trifásica é a descrita para a fratura por estresse. Ela deve ser interpretada junto da clínica e dos demais exames.",
   "incorretas": {
-   "B": "A captação só na fase tardia é típica da periostite, não da fratura.",
-   "C": "A captação difusa não é típica da fratura por estresse.",
-   "D": "A captação difusa só na fase tardia caracteriza a síndrome do estresse tibial medial."
+   "B": "**Mantém a distribuição focal, mas perde o padrão trifásico.** A fratura descrita capta também nas fases iniciais. Positividade somente tardia não é a combinação típica pedida.",
+   "C": "**Mantém as três fases e troca a distribuição.** A fratura produz foco localizado, em vez de captação difusa ao longo da borda. A extensão espacial da captação faz parte da distinção diagnóstica.",
+   "D": "**Descreve o padrão que lembra canelite.** A periostite medial costuma captar de forma linear e difusa na fase tardia, sem positividade inicial. Isso difere da fratura focal trifásica."
   },
-  "conceito": "A **cintilografia óssea com tecnécio** (difosfonato marcado) detecta a atividade de **formação óssea** e o fluxo sanguíneo. É feita em **três fases**:\n\n**primeira fase (fluxo)**: logo após a injeção, mostra o fluxo de sangue;\n\n**segunda fase (equilíbrio, ou pool sanguíneo)**: minutos depois, mostra a hiperemia;\n\n**terceira fase (tardia)**: horas depois, mostra a captação pelo osso em remodelação.\n\n**Na fratura por estresse da tíbia**: aumento de captação **focal** (fusiforme, bem delimitada, na cortical) nas **três fases**: há hiperemia e remodelação no ponto da fratura.\n\n**O diferencial com a periostite tibial** (síndrome do estresse tibial medial, a \"canelite\"): captação **linear e difusa** ao longo da face posteromedial da tíbia, **somente na fase tardia**, com fases de fluxo e equilíbrio normais.\n\n**As limitações**: a cintilografia é **sensível**, mas pouco **específica** (infecção e tumor também captam) e expõe à radiação. Hoje a **RM** é o exame preferido: tão sensível quanto, mais específica e gradua a lesão.\n\n**Na prova**: na fratura por estresse da tíbia, a cintilografia mostra aumento de captação **focal nas três fases**.",
-  "correta": "A fratura por estresse tem hiperemia e remodelação localizadas, com captação focal nas três fases.",
   "referencias": [
-   "Rockwood and Green’s Fractures in adults 8 Ed. 653 Pg (referência indicada na prova TARO 2018, questão 64)"
+   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Diagnóstico: clínica e imagem. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-24-fraturas-estresse",
+     "titulo": "Fraturas por estresse",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 24 · Stress Fractures",
+     "secoes": [
+      "Diagnóstico: clínica e imagem"
+     ],
+     "blocos": [
+      "diagnostico-clinica-e-imagem-b4e768c6",
+      "diagnostico-clinica-e-imagem-98ea23d0"
+     ],
+     "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+     "trechosSha256": "f73419d0b2d526817fb702ffb9ee0553e873a4ba80c98d08139f4535de556859"
+    }
+   ],
+   "questaoSha256": "fff1e970abb8d28ea87f13faa3fd8ac4051c8560da0fcb491570b7b1cb2898e8",
+   "comentarioSha256": "798d11492c565682a1018dbb550ba9cd52fef48cbc2d6f526be2cbea03b89b0c"
+  }
  },
  "trauma-1085": {
   "incorretas": {

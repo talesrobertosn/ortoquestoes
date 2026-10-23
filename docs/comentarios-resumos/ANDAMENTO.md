@@ -5,19 +5,19 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1446 |
+| pendente | 1436 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
 | pendente-fonte | 59 |
 | pendente-inspecao-imagem | 170 |
-| revisada | 597 |
+| revisada | 607 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
 | Resumo | Revisadas | A revalidar | Pendentes ou preservadas |
 | --- | ---: | ---: | ---: |
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 50 | 0 | 20 |
-| Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 0 | 0 | 68 |
+| Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 10 | 0 | 58 |
 | Fratura da escápula (`rockwood10-33-fratura-escapula`) | 87 | 0 | 49 |
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 48 | 0 | 25 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 41 | 0 | 53 |
@@ -30,7 +30,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 0 | 0 | 128 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 0 | 0 | 73 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 0 | 0 | 76 |
-| Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 0 | 0 | 63 |
+| Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 1 | 0 | 62 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 0 | 0 | 45 |
 | Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 4 | 0 | 69 |
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 0 | 0 | 39 |
