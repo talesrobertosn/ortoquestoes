@@ -1,0 +1,401 @@
+{
+  "trauma-0057": {
+    "questaoSha256": "6185ddc808dccd2a545891c1f2555af717f021bcb2e4e58fb9dc84f13410631c",
+    "comentarioAnteriorSha256": "92dbc24636f2b603f5ad658aae285baa65391003b85e8090b2bb3c3d4c283321",
+    "comentario": {
+      "conceito": "O fragmento não se desvia ao acaso: ele acompanha a estrutura que continua presa a ele. No **tubérculo menor**, essa estrutura é o **subescapular**, cuja tração o leva para **medial**. A ruptura ocorre através do osso, preservando a ligação do tendão com o fragmento.\n\nÉ útil comparar com o outro tubérculo: o maior isolado vai para trás e medial pela ação do manguito posterossuperior. Assim, lembrar apenas “medial” não resolve a questão; é preciso identificar qual inserção está ligada ao fragmento. No colo cirúrgico, ainda há outra força: o peitoral maior leva a diáfise para anterior e medial (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nEsse raciocínio também explica a sequela: o tubérculo menor consolidado desviado pode bloquear rotação interna e enfraquecer o subescapular. O resumo da Biblioteca reúne as direções de desvio e seus efeitos.",
+      "correta": "**C: medial, pela ação do músculo subescapular.** A inserção acompanha o tubérculo menor fraturado e mantém sua força deformante. A direção e o músculo precisam estar corretos no mesmo par.",
+      "incorretas": {
+        "A": "**Troca tanto a inserção quanto a direção.** O manguito posterossuperior se relaciona ao tubérculo maior e ao seu desvio para trás e medial. O menor é tracionado pelo subescapular para medial, não lateralmente pelo infraespinal.",
+        "B": "**Medial é a direção correta, mas o músculo está trocado.** O infraespinal integra o manguito posterossuperior ligado ao tubérculo maior. O fragmento menor continua sob a ação do subescapular.",
+        "D": "**Acerta o subescapular e inverte seu efeito sobre o fragmento.** O capítulo descreve desvio medial do tubérculo menor. A simples identificação do músculo não basta se a alternativa dirige o fragmento para o lado oposto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Fratura isolada dos tubérculos e fratura-luxação; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura",
+          "Fratura isolada dos tubérculos e fratura-luxação",
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-c88d1394",
+          "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+          "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+          "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "1c19ef3956529ae053bee16a9112f90d631b8e2f9de185bb0eff2dfb41e0c3ce"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0924": {
+    "questaoSha256": "4141ed262d17d8819afb10a90584b196a4dbff7436f8d2f124f55f4c5924acbe",
+    "comentarioAnteriorSha256": "1d1609bb5a022dea057f96bedb1761862a2f9088bf777447f5515e5a07b81225",
+    "comentario": {
+      "conceito": "Nessa fratura em três partes, o tubérculo maior está solto e o menor permanece ligado à cabeça. O **subescapular continua puxando o bloco cabeça-tubérculo menor**, levando a cabeça para **rotação medial**, também chamada de interna.\n\nO sentido se inverte no padrão oposto: com o menor solto e o maior unido à cabeça, o manguito posterossuperior favorece rotação externa e abdução. Por isso a leitura deve começar pela conexão que restou, não pelo fragmento que recebeu mais destaque no enunciado. O peitoral maior, por sua vez, atua sobre a diáfise, que pode ir para anterior e medial no colo cirúrgico (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nNa redução, essa distinção ajuda a entender por que orientar a diáfise não significa que a cabeça já esteja na rotação correta. Consulte a comparação dos padrões no resumo da Biblioteca.",
+      "correta": "**D: rotação medial pela ação do subescapular.** O tendão transmite força ao tubérculo menor ainda unido à cabeça. A separação do maior deixa essa ação predominante sobre o bloco articular.",
+      "incorretas": {
+        "A": "**A inserção posterossuperior não permanece ligada à cabeça nesse padrão.** O tubérculo maior está separado. A rotação lateral por ação do manguito posterossuperior corresponde ao padrão em que ele fica unido à cabeça e o menor está solto.",
+        "B": "**O infraespinal acompanha o tubérculo maior separado.** Sua tração pode deslocar esse fragmento, mas não produz a rotação da cabeça descrita na pergunta. A cabeça continua ligada ao subescapular pelo tubérculo menor.",
+        "C": "**A direção está certa e a força foi atribuída ao segmento errado.** O peitoral maior desloca a diáfise para anterior e medial. A rotação medial da cabeça, quando ligada ao menor, é determinada pelo subescapular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-e75305ee",
+          "neer-ao-e-os-padroes-de-fratura-79f24fb6",
+          "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+          "neer-ao-e-os-padroes-de-fratura-defcf4d3"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "c767d21d310e4f1526840173f88ddf243e266adb6d666e192c4ff4bb6144ed24"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0442": {
+    "questaoSha256": "60fa8bfacfd76580382d08873fda429c249cfed9ceea1b3e4f57f9be26cfc84e",
+    "comentarioAnteriorSha256": "a9e746255d11e7330ca8d3bebae97acf554e7a50ceb71b11f244af9333912e4e",
+    "comentario": {
+      "conceito": "A pergunta restringe a comparação às **fraturas em duas partes**. Nesse grupo, o padrão mais frequente é o **colo cirúrgico**. Na série de Court-Brown citada no capítulo, as duas partes eram 37% do total, e aproximadamente três quartos delas envolviam o colo cirúrgico, correspondendo a 28% de todas as fraturas.\n\nNão se deve confundir essa resposta com o padrão mais frequente de toda a classificação: as de uma parte, sem desvio pelos critérios de Neer, eram cerca de metade. Entre as duas partes, o tubérculo maior vem depois, perto de 10% do total; colo anatômico e tubérculo menor isolados eram muito raros (resumo do Rockwood, 10ª ed., cap. 36, “Quanto cai de cada tipo”).\n\nA utilidade dos números é ordenar o raciocínio, respeitando o denominador. A seção de padrões do resumo da Biblioteca também explica por que número de traços não equivale a número de partes.",
+      "correta": "**A: colo cirúrgico.** É o principal padrão entre as fraturas em duas partes. A série citada o situa em 28% do total, enquanto todo o grupo de duas partes corresponde a 37%.",
+      "incorretas": {
+        "B": "**Colo anatômico em duas partes é raro.** Na série, representa cerca de 0,3% do total. Sua proximidade com a cabeça e sua importância clínica não o tornam mais frequente que o colo cirúrgico.",
+        "C": "**O tubérculo maior é mais comum que os outros dois distratores, mas fica atrás do colo cirúrgico.** A forma em duas partes corresponde a quase 10% do total na série, contra 28% do colo cirúrgico.",
+        "D": "**O tubérculo menor isolado é excepcional.** A série cita cerca de 0,2% do total, associado à luxação posterior. Não se deve transferir a importância de reconhecer essa associação para uma suposta maior frequência."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-e50565f3",
+          "neer-ao-e-os-padroes-de-fratura-7fefc017",
+          "neer-ao-e-os-padroes-de-fratura-3d9e75c3"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "1e71f523ccf966d422a201f85be8d226dc0fbf87856db07962f0b35774591b37"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0071": {
+    "questaoSha256": "c165cadfb1aa5434c833e503c490897e25b351b5d01cf811746d39ca4b665262",
+    "comentarioAnteriorSha256": "81d52e2738e0161683f3a31750a4a395a45bbf8118973dcc45788ebccae6d4ef",
+    "comentario": {
+      "conceito": "A ponta do parafuso pode atravessar a superfície da cabeça e entrar na articulação. Essa **perfuração condral** é a complicação mais frequente destacada para a placa bloqueada no úmero proximal. Ela pode ocorrer já na montagem, por parafuso longo, ou depois, quando a cabeça colapsa sobre um parafuso que permanece travado na placa.\n\nO colapso em varo pode fazer parte dessa sequência, mas não é o mesmo desfecho. A cabeça pode perder sua posição e, com isso, transformar um parafuso antes intraósseo em uma ponta intra-articular. É a distinção entre a falha do apoio e o dano articular que ela pode produzir (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nParafusos curtos, conferência radioscópica em vários planos, boa redução e suporte medial procuram reduzir esses riscos. O resumo da Biblioteca explica os dois mecanismos de perfuração e a função do calcar.",
+      "correta": "**D: a perfuração condral dos parafusos.** A placa bloqueia a relação angular dos parafusos, mas não impede que uma cabeça colapsada se aproxime de suas pontas. A penetração também pode ser primária se eles já forem longos demais na cirurgia.",
+      "incorretas": {
+        "A": "**Colapso em varo pode ser o mecanismo que leva à perfuração.** A perda de apoio medial favorece perda da redução. Ainda assim, a complicação mais frequente indicada entre as opções é a ponta do parafuso atravessando a superfície articular.",
+        "B": "**Osteonecrose é perda de viabilidade da cabeça, não sinônimo de perfuração.** Pode evoluir com colapso e agravar a relação com os parafusos, mas nem toda penetração depende de necrose. Um parafuso pode já estar longo na operação.",
+        "C": "**Retardo de consolidação diz respeito ao tempo de união do foco.** É um problema diferente da relação entre a ponta do parafuso e a superfície articular. O capítulo destaca a penetração como a complicação mais frequente da placa bloqueada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Irrigação da cabeça, Hertel e osteonecrose"
+        ],
+        "blocos": [
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "21990ea913cd305792a6927069c0f26f648ae43f66589a923e1847b0a91cf266"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0429": {
+    "questaoSha256": "8ec27cf5fd5556be9ffcdcf8a5b80d5448322d0efb2417cf6c58f63f29e904f9",
+    "comentarioAnteriorSha256": "942db0c8c7a0173c231b4b93697c6bdfa15034b7b587f4a838b28f5959c2b06f",
+    "comentario": {
+      "conceito": "A complicação característica da placa no úmero proximal é a **penetração intra-articular do parafuso**. O importante é enxergar a relação entre uma cabeça óssea que pode se deformar e uma montagem angularmente fixa.\n\nSe o parafuso já ultrapassa a cabeça na cirurgia, a perfuração é primária. Se a cabeça perde altura ou colapsa depois, o parafuso bloqueado não recua: sua ponta pode passar a projetar-se na articulação. Assim, um controle inicial adequado não dispensa cuidar da redução e do suporte medial que mantêm a cabeça apoiada (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nRigidez, necrose e consolidação viciosa são complicações relevantes, mas têm mecanismos próprios e podem coexistir com a penetração. A pergunta pede a mais frequente dessa fixação. O resumo da Biblioteca permite comparar a perfuração com esses outros problemas.",
+      "correta": "**D: penetração intra-articular do parafuso.** Ela pode resultar de comprimento excessivo inicial ou do colapso posterior da cabeça sobre a montagem. Os dois caminhos produzem a mesma relação indesejada: metal ultrapassando a superfície articular.",
+      "incorretas": {
+        "A": "**Artrofibrose limita movimento por retração de partes moles.** O capítulo destaca a contratura capsular na rigidez refratária. Esse mecanismo não é o da perfuração e não ocupa a resposta pedida para a placa.",
+        "B": "**Osteonecrose é uma complicação da perfusão e da viabilidade óssea.** Pode acabar em colapso, mas a penetração não exige que haja necrose, pois também pode ocorrer primariamente com a cabeça ainda viável.",
+        "C": "**Consolidação viciosa significa união em posição inadequada.** A orientação dos segmentos pode comprometer movimento e produzir impacto. A complicação de implante destacada aqui é outra: o parafuso penetrando a articulação, com ou sem deformidade consolidada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica; Complicações: rigidez, viciosa, pseudartrose e tubérculos; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+          "Irrigação da cabeça, Hertel e osteonecrose"
+        ],
+        "blocos": [
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "bcabb3a5f6c62c47a6da44ddbe76d46a48d7bf545012607fc37418dca399fd13"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0781": {
+    "questaoSha256": "1fd7823970c2a75e28a9f26f395204a65238fc1d7a9c2a411c82039a62c3a84f",
+    "comentarioAnteriorSha256": "f16de680924a5f6de5169eccdaed320c774cbd7ad70f9e61c2b1796a5ca52d47",
+    "comentario": {
+      "conceito": "Uma placa bloqueada não precisa se soltar ou quebrar para causar uma complicação importante. Os parafusos podem continuar presos à placa e, ainda assim, **penetrar a cabeça até a articulação**. Essa é a complicação mais frequente entre as alternativas.\n\nA rigidez angular da montagem explica os dois cenários. Um parafuso longo já perfura no início; em outro paciente, a cabeça colapsa e a ponta emerge porque não acompanha o recuo do osso. A segunda sequência mostra por que “perda da redução” e “penetração” podem coexistir sem serem a mesma coisa (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nO apoio medial é decisivo para manter altura e redução. A conferência do comprimento e a radioscopia, por sua vez, procuram impedir a perfuração já na operação. Leia a seção de placa e calcar no resumo da Biblioteca para relacionar essas medidas ao tipo de falha.",
+      "correta": "**D: penetração dos parafusos.** A ponta pode entrar na articulação por excesso de comprimento ou por colapso da cabeça, mesmo que a conexão entre placa e parafuso permaneça íntegra.",
+      "incorretas": {
+        "A": "**Soltura não é necessária para haver penetração.** O bloqueio pode permanecer firme enquanto a cabeça perde altura ao redor dos parafusos. É por isso que uma radiografia não pode ser julgada apenas pela aderência da placa ao osso.",
+        "B": "**Perda da redução pode preceder a penetração secundária.** Falta de suporte medial e colapso alteram a posição da cabeça. A pergunta, porém, destaca como mais frequente a complicação em que os parafusos ultrapassam a superfície articular.",
+        "C": "**Fratura do implante é uma falha estrutural diferente.** O metal não precisa romper para que sua ponta alcance a articulação. Na penetração secundária, o problema pode ser precisamente uma montagem que permanece rígida enquanto o osso colapsa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Placa bloqueada: o parafuso, o calcar e a técnica"
+        ],
+        "blocos": [
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "c990f36196bcb397823e6d0b64cf7cce2a762932b875d44de0244edde291657d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0533": {
+    "questaoSha256": "62f70e8a88cb84e08c6b30c775a203b9f8f08e4db4d2c8ce87514b83ff45fd5e",
+    "comentarioAnteriorSha256": "27ad85dd7ca4fa436562d88aac1911f86e77d824df9d6b77891428fe1ecf9668",
+    "comentario": {
+      "conceito": "O manguito pode estar lesionado junto de uma fratura do úmero proximal, mas nem toda lesão encontrada foi produzida pelo trauma. O capítulo descreve associação em **até 50% dos casos**, chegando a 61% nos maiores de 60 anos, com parte das lesões já existente antes da fratura.\n\nEssa distinção evita transformar “lesão associada” em “ruptura aguda causada pela queda”. Atrofia na imagem favorece a presença de doença prévia. A pergunta procura o valor aproximado de **metade dos pacientes**, representado pela alternativa de 50% (resumo do Rockwood, 10ª ed., cap. 36, “Manguito rotador”).\n\nO dado também não cria indicação de exame do manguito para todos: no material consultado, sua integridade não previu o resultado do tratamento conservador, e a imagem não é pedida de rotina quando esse é o plano. Leia essa seção no resumo da Biblioteca para entender a frequência junto de sua implicação clínica.",
+      "correta": "**A: 50%.** É a aproximação oferecida para a associação descrita em até metade dos casos. A porcentagem varia com a população, e encontrar a lesão não demonstra que ela seja nova.",
+      "incorretas": {
+        "B": "**Trinta por cento fica abaixo do valor de referência cobrado.** O capítulo descreve até 50% no conjunto e proporção ainda maior acima de 60 anos. A resposta da questão se aproxima de metade dos casos.",
+        "C": "**Vinte por cento representa um quinto, e não a metade descrita.** Subestima o valor aproximado usado para essa associação. Isso não significa que toda fratura tenha ruptura do manguito nem que toda ruptura seja traumática.",
+        "D": "**Quarenta por cento não é a aproximação escolhida para o dado do capítulo.** A fonte chega a 50% no conjunto e a 61% acima de 60 anos. Existe variação entre populações, mas o valor de referência cobrado é aproximadamente metade dos casos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Lesões associadas: nervos, artéria, manguito e outras fraturas. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+        ],
+        "blocos": [
+          "lesoes-associadas-nervos-arteria-manguito-e-outr-8cc48365"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "3846983e30fd1fb181f0c60d8866bf0f42ca484907414299d4c3c5a1fabe5dce"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0889": {
+    "questaoSha256": "ca142c132ddc39fd244961685b7bd7bf2af3d6bd4cd904c4aafb7d65bb4ff7a4",
+    "comentarioAnteriorSha256": "da0b63858802b426f925bb57be47665a310f73b56836392d43cd71f1a2f73524",
+    "comentario": {
+      "conceito": "Na fratura do **colo cirúrgico**, a consolidação depende de manter uma ligação adequada entre cabeça e diáfise. Pouco contato cortical, cominuição metafisária e interposição de partes moles podem impedir essa união, favorecendo **pseudartrose** após tratamento não cirúrgico.\n\nA perda absoluta de contato caracteriza o colo desengatado, cujo principal risco na classificação Mayo/FJD é justamente pseudartrose. O capítulo também descreve ruptura da manga periosteal, interposição do bíceps e distração por gesso pendente como fatores desfavoráveis. A pergunta cobra o local associado a essa falha de consolidação, não o padrão de maior risco vascular da cabeça (resumo do Rockwood, 10ª ed., cap. 36, “Pseudartrose”).\n\nO quadro pode ter dor importante e foco ainda móvel; não deve ser confundido com uma fratura que consolidou, mas deixou o tubérculo em posição inadequada. O resumo da Biblioteca aproxima esses dois tipos de sequela.",
+      "correta": "**B: do colo cirúrgico.** É o local típico destacado para pseudartrose no contexto pedido. A conexão cabeça-diáfise pode falhar pela falta de contato, pela cominuição ou pela presença de tecido interposto no foco.",
+      "incorretas": {
+        "A": "**O envolvimento da cabeça chama atenção para outro conjunto de riscos.** Isolamento vascular e osteonecrose são problemas importantes nos padrões da cabeça, mas a pergunta é sobre falha de união após tratamento não cirúrgico. O local típico indicado é o colo cirúrgico.",
+        "C": "**No tubérculo maior, a posição da consolidação é uma preocupação central.** Se consolidar para trás e medial, pode bloquear rotação externa; alto, pode produzir impacto. Isso difere de não consolidar o foco cabeça-diáfise do colo cirúrgico.",
+        "D": "**O tubérculo menor tende a consolidar, por vezes desviado.** O capítulo contrasta sua avulsão óssea com ruptura tendinosa: a união pode ocorrer, mas deixar fraqueza do subescapular e bloqueio da rotação interna. Não é a resposta para o local típico de pseudartrose pedido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Complicações: rigidez, viciosa, pseudartrose e tubérculos; Neer, AO e os padrões de fratura; Fratura isolada dos tubérculos e fratura-luxação; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+          "Neer, AO e os padrões de fratura",
+          "Fratura isolada dos tubérculos e fratura-luxação",
+          "Irrigação da cabeça, Hertel e osteonecrose"
+        ],
+        "blocos": [
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-53159daa",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-a35bac38",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+          "neer-ao-e-os-padroes-de-fratura-4473222f",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
+          "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "a15094a1995849f860aa837d8ee2e242584d9c0d926547cb00595537914f91f5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0826": {
+    "questaoSha256": "07d7a9d102c0514ec06772193547517d1e2bdf9447504fc67a0637e8a55dbc25",
+    "comentarioAnteriorSha256": "d975b14071f8742aeb50597b2cb78e6e349e76adfedcb2e2b8bef2456210a6b6",
+    "comentario": {
+      "conceito": "A artroplastia parcial substitui a cabeça umeral, mas a função do manguito ainda depende de seus pontos de fixação óssea. Por isso, **reconstruir anatomicamente o tubérculo maior** é o fator mais determinante entre os apresentados.\n\nQuando os tubérculos consolidam em posição adequada, os tendões podem voltar a atuar sobre o úmero. Se ficam soltos, desviados ou reabsorvidos, a hemiartroplastia pode ter resultado funcional muito ruim, inclusive pseudoparalisia. Uma prótese tecnicamente estável não substitui essa reconstrução (resumo do Rockwood, 10ª ed., cap. 36, “Por que a reversa tomou o lugar”).\n\nCimentação, tamanho da cabeça e versão continuam importantes. A diferença é que esses ajustes precisam servir a uma reconstrução que permita aos tubérculos consolidar. O resumo da Biblioteca compara essa dependência da hemiartroplastia com a reversa.",
+      "correta": "**B: reconstrução anatômica do tubérculo maior.** Ela recupera a relação óssea das inserções do manguito, indispensável ao resultado funcional da hemiartroplastia por fratura. A estabilidade do componente, sozinha, não garante boa elevação.",
+      "incorretas": {
+        "A": "**A cimentação fixa a haste, mas não consolida os tubérculos.** O capítulo usa haste cimentada como padrão técnico. Ainda assim, uma haste estável pode coexistir com falha dos tubérculos e função ruim.",
+        "C": "**A dimensão do componente não substitui a reconstrução óssea.** A cabeça protética precisa se integrar à montagem, mas seu tamanho isolado não devolve a ligação dos tendões quando o tubérculo maior está mal reconstruído.",
+        "D": "**A retroversão ajuda a acomodar o tubérculo, sem ser o desfecho principal.** O capítulo observa que menos retroversão abre espaço atrás do componente para ele. A finalidade continua sendo uma reconstrução que permita consolidação e função do manguito."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Artroplastia: hemiartroplastia e reversa. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Artroplastia: hemiartroplastia e reversa"
+        ],
+        "blocos": [
+          "artroplastia-hemiartroplastia-e-reversa-260304ad",
+          "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+          "artroplastia-hemiartroplastia-e-reversa-7babb14a",
+          "artroplastia-hemiartroplastia-e-reversa-8c17804b",
+          "artroplastia-hemiartroplastia-e-reversa-26582a33"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "092dc8d40e2e983b75796b8c0b90652c01b8a4821f5478cc51977da9942c6899"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0750": {
+    "questaoSha256": "07caf7859b22b58142501a3a00876e2ebfefcff571c699dd0cd1c1796f75bbe8",
+    "comentarioAnteriorSha256": "894a2cc18925a0c04f49c8fa8351b3a0049889da49923125617c4ea658c122d2",
+    "comentario": {
+      "conceito": "O **nervo axilar** é o mais frequentemente acometido nas fraturas do úmero proximal. Ele está próximo ao colo e pode sofrer tração, contusão ou lesão pela diáfise deslocada medialmente. Na avaliação eletromiográfica citada no capítulo, o axilar apareceu em 58% e o supraescapular em 48%, com lesões combinadas frequentes.\n\nEsses percentuais não precisam somar 100%, porque um mesmo paciente pode ter mais de um nervo afetado. Também não significam que todos terão um déficit clínico evidente. No exame, procura-se alteração da sensibilidade na face lateral do braço e testa-se a contração isométrica do deltoide por palpação (resumo do Rockwood, 10ª ed., cap. 36, “Nervos”).\n\nA dor da fratura pode dificultar a avaliação motora, tornando útil examinar o deltoide sem exigir grande arco doloroso. O resumo da Biblioteca liga o exame clínico ao trajeto anatômico do axilar.",
+      "correta": "**A: Axilar.** É o primeiro na frequência descrita e está diretamente exposto às forças do trauma proximal. O exame combina sensibilidade lateral do braço e contração do deltoide, sem depender apenas da capacidade de elevar ativamente o ombro doloroso.",
+      "incorretas": {
+        "B": "**Não se deve transferir automaticamente o risco de outro segmento do úmero.** A pergunta é sobre o terço proximal, em que a série destaca o axilar. O radial não é apontado como o nervo mais frequentemente associado nesse contexto.",
+        "C": "**O supraescapular é frequente, mas vem depois do axilar.** A eletromiografia citada mostra 48% contra 58%. Além disso, pode haver associação entre lesões, portanto reconhecer o supraescapular não afasta o acometimento do axilar.",
+        "D": "**O musculocutâneo tem um risco cirúrgico diferente.** O capítulo destaca sua relação com o coracobraquial e o afastamento medial excessivo do tendão conjunto. Isso não o torna o nervo mais lesado no trauma proximal; o primeiro lugar é do axilar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Lesões associadas: nervos, artéria, manguito e outras fraturas; Anatomia aplicada e vias de acesso. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Lesões associadas: nervos, artéria, manguito e outras fraturas",
+          "Anatomia aplicada e vias de acesso"
+        ],
+        "blocos": [
+          "lesoes-associadas-nervos-arteria-manguito-e-outr-01451d2b",
+          "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5",
+          "anatomia-aplicada-e-vias-de-acesso-f121538c",
+          "anatomia-aplicada-e-vias-de-acesso-e632af2f"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "b80d289bbe62a8cfd2af0b9662638ec92b82daa922e5200981764a5cef08e996"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

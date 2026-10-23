@@ -1,0 +1,403 @@
+{
+  "ombro-cotovelo-0610": {
+    "questaoSha256": "e9e179920effdc1f3a976c3f502a18ab9ec8c2eb9133f4c15f646f36ef94f796",
+    "comentarioAnteriorSha256": "c685800959bfbf30e49ada902d0847d26b2ceafa114c6b6b127899a886b80778",
+    "comentario": {
+      "conceito": "A placa precisa ficar baixa o suficiente para não produzir impacto e alta o suficiente para permitir bom apoio da cabeça. Na técnica dos autores, sua borda superior fica **pelo menos 5 mm abaixo do topo do tubérculo maior**. A pergunta usa o tubérculo como referência, não o topo da cabeça umeral.\n\nColocar a placa alta favorece impacto. Baixá-la sem considerar o conjunto também não resolve: os parafusos inferiores precisam conseguir sustentar o calcar. O posicionamento é, portanto, parte de uma reconstrução que combina altura da placa, alinhamento com a cabeça e apoio inferomedial (resumo do Rockwood, 10ª ed., cap. 36, “A técnica dos autores”).\n\nO número de 5 mm é o **mínimo descrito**, e não uma regra de que todas as placas devam ficar exatamente na mesma posição. Vale ler essa seção no resumo da Biblioteca para ligar a medida ao motivo mecânico.\n\n**Por que esta questão foi criada.** Para cobrar a referência técnica de altura da placa sem confundi-la com a altura da cabeça ou com a distância do nervo axilar.",
+      "correta": "**A: 5 mm.** É a distância mínima indicada entre a borda superior da placa e o topo do tubérculo maior. O objetivo é evitar uma placa alta sem prejudicar a posição dos parafusos de suporte do calcar.",
+      "incorretas": {
+        "B": "**Oito milímetros pode ultrapassar o mínimo, mas não é o mínimo pedido.** A técnica descreve pelo menos 5 mm. Uma distância maior precisa continuar compatível com o apoio inferomedial e com o posicionamento da placa, não constitui uma exigência universal de 8 mm.",
+        "C": "**Dez milímetros acrescenta uma exigência que a fonte não estabelece.** A referência mínima é de 5 mm. A altura final deve ser conferida em conjunto com a redução e com o trajeto dos parafusos do calcar.",
+        "D": "**Quinze milímetros não é a referência mínima descrita.** Afastar mais a placa do tubérculo não garante, sozinho, uma montagem melhor; ela precisa permanecer alta o bastante para sustentar a cabeça inferomedialmente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Placa bloqueada: o parafuso, o calcar e a técnica"
+        ],
+        "blocos": [
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-f402d68e",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "fd6764f3bdfdf4814383fc2e6576174c86f843d3b832847fe984ae77873ccf45"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0611": {
+    "questaoSha256": "682366a253bc1fc59507f1cf44c0d076b3a972caa3f3f7b196221436e91568a2",
+    "comentarioAnteriorSha256": "098002e2b653bb7558ca06cd7eb693625c0550c9290f532369962e13323283d9",
+    "comentario": {
+      "conceito": "O parafuso bloqueado fica travado à placa. Essa estabilidade angular ajuda a fixação, mas explica por que ele pode penetrar a articulação em dois momentos diferentes.\n\nNa **penetração primária**, o parafuso já é longo demais no fim da cirurgia e ultrapassa a cabeça. Na **secundária**, a posição pode ter sido inicialmente adequada, mas a cabeça colapsa; como o parafuso não recua na placa, sua ponta atravessa a superfície articular. O primeiro problema é de comprimento inicial; o segundo resulta da mudança da relação entre osso e implante depois da fixação (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nA prevenção também é diferente: parafusos curtos e radioscopia em vários planos ajudam a evitar a perfuração inicial; redução e suporte medial importam para manter a cabeça apoiada. Uma placa alta, por outro lado, é um problema de impacto, não a definição da perfuração primária. O resumo da Biblioteca aproxima essas complicações da técnica.\n\n**Por que esta questão foi criada.** Para explicar o mecanismo da penetração articular repetidamente cobrada no TARO 2021 e 2023 e no TEOT 2022, distinguindo falha inicial e colapso tardio.",
+      "correta": "**D: parafuso longo; colapso.** A primeira causa já está presente na montagem; a segunda aparece quando a cabeça perde altura e o parafuso bloqueado permanece na posição. A sequência temporal explica os nomes primária e secundária.",
+      "incorretas": {
+        "A": "**Troca a perfuração inicial por um evento posterior e acrescenta impacto.** Colapso é o mecanismo da penetração secundária. Placa alta pode causar impacto subacromial, mas não é a causa que define a perfuração secundária do parafuso.",
+        "B": "**Acerta o colapso secundário, mas erra a causa primária.** A placa alta se relaciona a impacto. Na perfuração primária, o problema decisivo é o parafuso que já ficou longo demais, ultrapassando a superfície articular.",
+        "C": "**Inverte os dois mecanismos.** Parafuso longo demais na cirurgia é primário; colapso subsequente da cabeça sobre um parafuso bloqueado é secundário. Reconhecer a ordem evita atribuir toda perfuração a erro inicial de comprimento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Placa bloqueada: o parafuso, o calcar e a técnica"
+        ],
+        "blocos": [
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "15c5a0dfe4d01085f5c713b93e99814fa5bd882c637658e71e180a782b3555e3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0612": {
+    "questaoSha256": "126adffe3f42fec6d724a95445ecb7234ade9677f92b4ec4ffb7794ab9338a87",
+    "comentarioAnteriorSha256": "17d473054d479bbb4f0c117db79c8a9fb8e25a2e3e59f15b11d4935fe98f3fc7",
+    "comentario": {
+      "conceito": "Com cominuição medial, a cabeça perde parte do apoio que a mantém sobre a diáfise. A placa lateral pode estar presa e, ainda assim, a cabeça perder redução se a montagem não sustentar a região **inferomedial**. O parafuso dirigido ao **calcar** atua justamente nesse suporte.\n\nO capítulo associa a falta de apoio medial a perda da redução, diminuição de altura e maior perfuração articular. Isso explica por que o parafuso do calcar tem uma finalidade diferente de apenas aumentar o número de parafusos: sua **posição** permite apoiar a área que ficou sem continuidade óssea (resumo do Rockwood, 10ª ed., cap. 36, “O que faz a placa perder a redução”).\n\nOutras medidas podem ter objetivos úteis, como evitar placa alta ou amarrar o manguito à montagem. Nenhuma substitui automaticamente o apoio inferomedial quando ele está ausente. A seção de placa e calcar no resumo da Biblioteca permite rever esse mecanismo.\n\n**Por que esta questão foi criada.** Para aprofundar o papel do parafuso inferomedial cobrado no TEOT 2022, ligando sua posição ao suporte perdido pela cominuição.",
+      "correta": "**B: parafuso no calcar.** Ele sustenta a porção inferomedial da cabeça e reforça a montagem onde a cominuição interrompeu o apoio. É uma intervenção diretamente ligada ao defeito mecânico descrito.",
+      "incorretas": {
+        "A": "**Fixar o bíceps não cria apoio ósseo inferomedial.** A tenodese atua no tendão, não substitui a coluna medial cominuída. A questão exige uma medida que sustente a cabeça nessa região.",
+        "C": "**Uma sutura do deltoide não apoia o calcar.** O deltoide faz parte do envelope muscular, enquanto o defeito aqui é o suporte da cabeça sobre a diáfise. A medida proposta não ocupa nem reforça esse apoio inferomedial.",
+        "D": "**Baixar a placa trata outra preocupação.** Evitar uma borda superior alta reduz o risco de impacto, mas não recompõe por si só o apoio medial. Além disso, a placa precisa permitir que os parafusos inferiores sustentem o calcar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Placa bloqueada: o parafuso, o calcar e a técnica"
+        ],
+        "blocos": [
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-38a4d747",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "80ea544bde2dc6b5f59e6836b55f150103d70306d36aea87f670c4029d31a8ca"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0613": {
+    "questaoSha256": "9e91dbe246e097e086b8b7a45c31b6ca36ae004215c3c53a66c82a2428c0e4cb",
+    "comentarioAnteriorSha256": "df8eb117f36edf9bbb394a7c11bdda14ba97c9dcb4a2690474821c8cdb755be3",
+    "comentario": {
+      "conceito": "Os tendões do manguito continuam puxando os tubérculos depois da fratura. Se essas forças não forem controladas, os fragmentos podem se deslocar e perder o apoio que oferecem à cabeça. As suturas passam pelos tendões, unem o conjunto ósseo e podem ser amarradas à placa.\n\nNa descrição de Hertel, a cabeça funciona como uma casca subcondral apoiada pela borda sobre os tubérculos. A banda de tensão amarra tubérculos e diáfise pelos tendões, que oferecem melhor apoio para a sutura que o osso osteoporótico. Sua finalidade é **neutralizar a tração do manguito e transformá-la em compressão do conjunto** (resumo do Rockwood, 10ª ed., cap. 36, “Banda de tensão com suturas”).\n\nNão é uma técnica de proteção nervosa nem uma maneira de compensar uma placa posicionada alta. É controle das forças deformantes. O resumo da Biblioteca relaciona esse princípio às suturas complementares da placa.\n\n**Por que esta questão foi criada.** Para explicar a função das suturas complementares da osteossíntese e distingui-las do suporte do calcar, da altura da placa e da proteção nervosa.",
+      "correta": "**C: neutralizar a tração do manguito.** A sutura integra os tendões à reconstrução, controla sua tração sobre os tubérculos e ajuda a manter o apoio da cabeça. Esse é o mecanismo da banda de tensão descrita.",
+      "incorretas": {
+        "A": "**Proteção do axilar exige atenção ao seu trajeto.** A sutura em banda de tensão controla fragmentos e forças tendinosas. Não substitui identificar e proteger o nervo quando a exposição cirúrgica o coloca em risco.",
+        "B": "**A sutura não corrige a altura da placa.** Impacto por uma placa alta é prevenido pelo posicionamento adequado. Amarrar os tendões trata a tração do manguito, não afasta uma borda metálica do espaço subacromial.",
+        "D": "**Interposição do bíceps é um obstáculo diferente.** Ela pode dificultar redução e consolidação do foco. A finalidade da banda de tensão não é retirar esse obstáculo, mas controlar a força dos tendões sobre os tubérculos já reconstruídos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Fixação percutânea, fixador externo e banda de tensão; Placa bloqueada: o parafuso, o calcar e a técnica; Anatomia aplicada e vias de acesso; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Fixação percutânea, fixador externo e banda de tensão",
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Anatomia aplicada e vias de acesso",
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+        ],
+        "blocos": [
+          "fixacao-percutanea-fixador-externo-e-banda-de-te-a7310a4e",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-ca4aec4e",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1",
+          "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "3bd2391cffb5537664622d84e4a4d3c7114d83a1c9b119b0a1c884b58387018a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0614": {
+    "questaoSha256": "5d7a7da3a075f9faffccd6abfb8cc8b447a543802f267fe3931ff8e8cb046323",
+    "comentarioAnteriorSha256": "322844882a393eb9e9ed1658f3c6fa1b2e1a253a847d753f8896582f5f26e121",
+    "comentario": {
+      "conceito": "A haste é uma opção especialmente adequada quando o problema principal acompanha o eixo do osso: **colo cirúrgico desviado, sobretudo com extensão para a diáfise, sem envolvimento dos tubérculos**. Nesse padrão, a montagem intramedular conecta os segmentos ao longo do úmero sem depender de reconstruir uma superfície articular partida.\n\nOs tubérculos e a cabeça mudam essa lógica. O capítulo admite alguns padrões com tubérculo maior, mas descreve piora dos resultados com os dois tubérculos envolvidos; não indica a haste para cabeça partida nem para varo posteromedial com ambos os tubérculos fraturados. A escolha não deve ser reduzida a “quanto mais fragmentos, mais forte precisa ser a haste” (resumo do Rockwood, 10ª ed., cap. 36, “Haste intramedular”).\n\nA redução continua decisiva e deve preceder a preparação da entrada. O implante não corrige sozinho um padrão mal compreendido. Consulte essa seção no resumo da Biblioteca para relacionar indicação e limites da técnica.\n\n**Por que esta questão foi criada.** Para definir a principal indicação da haste pelo padrão anatômico e separar extensão diafisária de envolvimento articular complexo.",
+      "correta": "**C: colo cirúrgico com extensão diafisária, sem tubérculos envolvidos.** Esse é o padrão principal descrito para haste bloqueada. O defeito se estende pelo eixo do osso, sem a reconstrução complexa de cabeça e tubérculos que caracteriza as outras opções.",
+      "incorretas": {
+        "A": "**Head-split é fratura da própria superfície da cabeça.** O capítulo não a inclui na indicação da haste. Ela exige decidir como reconstruir ou substituir a superfície articular, com fixação em jovens selecionados ou prótese conforme o padrão.",
+        "B": "**Os dois tubérculos no varo constituem um limite importante.** A haste não é indicada pelo capítulo para esse padrão. A reconstrução não se resume a unir colo e diáfise, pois também envolve os pontos de inserção do manguito e a orientação da cabeça.",
+        "D": "**A separação articular e dos dois tubérculos é outro problema reconstrutivo.** Ela afasta a lesão do padrão simples de colo com extensão diafisária. Não representa a indicação principal da haste e exige avaliar reconstrução da cabeça, tubérculos e possível artroplastia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Haste intramedular; Fratura isolada dos tubérculos e fratura-luxação; Quando operar: padrão, desvio e o ProFHER. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Haste intramedular",
+          "Fratura isolada dos tubérculos e fratura-luxação",
+          "Quando operar: padrão, desvio e o ProFHER"
+        ],
+        "blocos": [
+          "haste-intramedular-f67c43c1",
+          "haste-intramedular-e41c88b1",
+          "fratura-isolada-dos-tuberculos-e-fratura-luxacao-980c36a8",
+          "quando-operar-padrao-desvio-e-o-profher-1c41a47b"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "fdafa168978748f77efd62da5134a4b8114e6d26c838bf42e01481b5526c4103"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0616": {
+    "questaoSha256": "fa4ff06f886d30d31bf260d7df064800b06f6416b7c5ac99fbb7f2c5d5604b33",
+    "comentarioAnteriorSha256": "000975a8d9cc4bcc3aaab3074bf12ff0be04ba33f1f34eff02c912ce1c34e0ed",
+    "comentario": {
+      "conceito": "Na hemiartroplastia por fratura, substituir a cabeça não reconstrói automaticamente o funcionamento do manguito. Os tubérculos precisam consolidar em boa posição para que os tendões ligados a eles possam atuar de maneira eficaz sobre o úmero.\n\nQuando os tubérculos ficam soltos, desviados ou reabsorvidos, o resultado funcional costuma ser ruim, frequentemente com **pseudoparalisia**, isto é, perda importante da capacidade de elevar ativamente o braço. A prótese pode estar implantada e o ombro continuar sem boa função. É essa dependência da reconstrução dos tubérculos que explica parte da mudança para a reversa, cujo desenho oferece um fulcro ao deltoide mesmo sem manguito funcionante (resumo do Rockwood, 10ª ed., cap. 36, “Por que a reversa tomou o lugar”).\n\nO princípio não torna os tubérculos irrelevantes na reversa; apenas muda quanto a elevação depende deles. O resumo da Biblioteca compara as duas próteses e o papel da consolidação.\n\n**Por que esta questão foi criada.** Para aprofundar o papel do tubérculo maior no resultado da hemiartroplastia, ponto cobrado no TARO 2012, e separar falha da prótese de complicações da placa.",
+      "correta": "**D: limitação funcional grave, frequentemente com pseudoparalisia.** Sem consolidação adequada dos tubérculos, a hemiartroplastia perde a reconstrução necessária ao funcionamento do manguito. Substituir a superfície articular, sozinho, não assegura elevação ativa.",
+      "incorretas": {
+        "A": "**Impacto da placa pertence à osteossíntese.** Uma placa alta pode gerar impacto, mas esse não é o mecanismo de falha dos tubérculos após hemiartroplastia. A pergunta trata da reconstrução funcional ao redor de uma prótese.",
+        "B": "**Lesão do axilar é uma complicação neurológica distinta.** Ela merece proteção na via transdeltoidea, mas o enunciado atribui a perda funcional à falha de consolidação dos tubérculos. Não se pode trocar uma falha do sistema manguito-tubérculos por uma lesão nervosa não descrita.",
+        "C": "**Penetração de parafusos bloqueados é uma complicação da placa.** Ela resulta de parafuso longo ou colapso sobre um parafuso travado. Aqui, o problema é a ausência de tubérculos consolidados em uma hemiartroplastia, não perfuração por parafusos de osteossíntese."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Artroplastia: hemiartroplastia e reversa; Placa bloqueada: o parafuso, o calcar e a técnica; Anatomia aplicada e vias de acesso. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Artroplastia: hemiartroplastia e reversa",
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Anatomia aplicada e vias de acesso"
+        ],
+        "blocos": [
+          "artroplastia-hemiartroplastia-e-reversa-260304ad",
+          "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1",
+          "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "504cab7600c0ff62554175e88f5beee8abe025dc0887f0898e62be5eaa05029e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0617": {
+    "questaoSha256": "5ae06ae58400efa2e6cacff3cde5066bc2d745d0f66e3065077bad3f6884171b",
+    "comentarioAnteriorSha256": "c0c57cba6d32ed46546bb3a1fb5dc72bfcb5f67659e4743d73af07e217dfcc9a",
+    "comentario": {
+      "conceito": "A reversa oferece ao deltoide um fulcro estável para elevar o braço, mesmo quando o manguito não funciona bem. Isso reduz a dependência da consolidação dos tubérculos para a elevação, mas não elimina a contribuição do manguito para outros movimentos.\n\nO **tubérculo maior consolidado anatomicamente melhora sobretudo a rotação externa ativa**. Ele preserva a relação óssea das inserções do manguito posterossuperior. Portanto, obter elevação com a reversa não significa que o paciente terá a mesma recuperação da rotação externa se o tubérculo maior falhar (resumo do Rockwood, 10ª ed., cap. 36, “Por que a reversa tomou o lugar”).\n\nA pergunta é sobre o benefício **especialmente associado ao tubérculo**, e não sobre tudo que pode melhorar após a artroplastia. A comparação com a hemiartroplastia está no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para diferenciar o papel dos tubérculos na hemiartroplastia e na reversa, especialmente a distinção entre elevação e rotação externa.",
+      "correta": "**B: rotação externa ativa.** É a função especialmente favorecida pela consolidação anatômica do tubérculo maior na reversa. O deltoide pode manter a elevação, enquanto a recuperação do componente posterossuperior do manguito melhora a rotação externa.",
+      "incorretas": {
+        "A": "**Abdução não é o benefício específico destacado.** A reversa permite ao deltoide contribuir para a elevação mesmo sem consolidação dos tubérculos. O efeito especialmente ligado ao tubérculo maior consolidado é a rotação externa ativa, sem negar que a função global possa melhorar.",
+        "C": "**Sensibilidade depende da integridade nervosa.** A sensibilidade lateral do braço é relacionada ao nervo axilar. Consolidar o tubérculo maior reconstrói uma relação óssea e tendinosa; não equivale a recuperar uma via sensitiva lesada.",
+        "D": "**O foco da reconstrução é o ombro.** O benefício discutido é a atuação do manguito e a rotação externa umeral. Mobilidade do cotovelo e da mão não é o efeito específico atribuído à consolidação do tubérculo maior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Artroplastia: hemiartroplastia e reversa; Neer, AO e os padrões de fratura; Lesões associadas: nervos, artéria, manguito e outras fraturas. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Artroplastia: hemiartroplastia e reversa",
+          "Neer, AO e os padrões de fratura",
+          "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+        ],
+        "blocos": [
+          "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+          "artroplastia-hemiartroplastia-e-reversa-7babb14a",
+          "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+          "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "fbdc5f1ea1d144e51dfceb5f37f9371c371ae50e8d5e0b2e06d2b1b85d183324"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0618": {
+    "questaoSha256": "99279ebd173149794705a2da47e8482860cb290f19d02ab1e8d808c223716848",
+    "comentarioAnteriorSha256": "f661560aeada7dd4f9651918297b5fed0f05798fd7924b11a209da88dbde125f",
+    "comentario": {
+      "conceito": "Após necrose dos tubérculos, a perda da inserção funcional do manguito pode comprometer movimentos diferentes. O salvamento deve responder à função perdida, em vez de tratar toda limitação do ombro como um único problema.\n\nO capítulo separa três cenários: para **perda da elevação ativa**, reversa; para **perda isolada de rotação externa**, transferência do trapézio inferior; para **perda das duas**, reversa com transferência do grande dorsal. A reversa oferece um fulcro ao deltoide para elevar, enquanto a transferência acrescenta uma solução para a função rotacional que ela pode não recuperar sozinha (resumo do Rockwood, 10ª ed., cap. 36, “Necrose dos tubérculos”).\n\nEssa associação não deve ser decorada sem testar os dois movimentos. O defeito combinado exige uma resposta diferente daquele com rotação externa preservada. O resumo da Biblioteca apresenta os três cenários lado a lado.\n\n**Por que esta questão foi criada.** Para aprofundar o salvamento cobrado no TEOT 2023, distinguindo déficit de elevação, de rotação externa e combinado.",
+      "correta": "**B: reversa; reversa com grande dorsal.** A primeira trata a perda isolada de elevação. Na perda combinada, a reversa é associada à transferência para atender também à rotação externa, conforme o esquema do capítulo.",
+      "incorretas": {
+        "A": "**A primeira indicação está certa, mas a segunda é incompleta para o déficit combinado.** O trapézio inferior isolado é descrito para perda de rotação externa. A perda concomitante de elevação requer a solução combinada indicada no capítulo.",
+        "C": "**Aplica a solução rotacional a duas apresentações diferentes.** O trapézio inferior isolado corresponde ao déficit de rotação externa. Não é a resposta descrita para perda isolada de elevação nem para a perda conjunta dos dois movimentos.",
+        "D": "**Acerta o salvamento combinado e erra o isolado.** Reversa com grande dorsal é o esquema para os dois déficits. Quando falta apenas elevação, o capítulo indica reversa, não transferência isolada do trapézio inferior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Complicações: rigidez, viciosa, pseudartrose e tubérculos; Artroplastia: hemiartroplastia e reversa. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+          "Artroplastia: hemiartroplastia e reversa"
+        ],
+        "blocos": [
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b0a02323",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b8ca3f39",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-2d0cf667",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-5e438d7e",
+          "artroplastia-hemiartroplastia-e-reversa-b0de9bbb"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "3178549badbde3af2b26de239d9cc8187aeabe17c63f7e5c62f7692b2cdc08b3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0620": {
+    "questaoSha256": "b9e5a5543e5721c0e496da0fff78144a7bc524dc005914362927866a50905a48",
+    "comentarioAnteriorSha256": "b2d83d6bb54d2abc6fda6d105ff72454e510f55650a5285781d4c45b0fce5ab7",
+    "comentario": {
+      "conceito": "Um ombro rígido após fratura pode ter várias causas, mas o capítulo destaca a **contratura capsular** como a principal na rigidez refratária. A cápsula retraída limita o movimento de forma global, com perda especialmente importante de abdução e rotação externa.\n\nIsso não dispensa procurar bloqueio ósseo, impacto do implante, lesão do manguito ou outras complicações. Uma sensação de bloqueio firme no fim do alongamento pode sugerir obstáculo mecânico; se a limitação decorre de consolidação viciosa, liberar apenas partes moles não resolve a deformidade. Após cirurgia, também é preciso considerar infecção de baixo grau (resumo do Rockwood, 10ª ed., cap. 36, “Rigidez”).\n\nO tratamento começa com reabilitação e alongamento, cuja melhora pode ser lenta ao longo do primeiro ano. Antes de escolher uma liberação, importa reconhecer **o que está impedindo o movimento**. A seção de complicações do resumo da Biblioteca organiza esse raciocínio.\n\n**Por que esta questão foi criada.** Para aprofundar a causa da rigidez cobrada nas provas de úmero proximal sem inventar um ranking geral de todas as complicações.",
+      "correta": "**D: contratura da cápsula glenoumeral.** É a causa principal descrita para a rigidez refratária. A cápsula retraída explica a perda global de movimento, embora outros problemas possam coexistir e precisem ser investigados.",
+      "incorretas": {
+        "A": "**Necrose pode causar dor e perda de função, mas é outro diagnóstico.** A apresentação descrita pode incluir piora após um período inicial bom e progressão para colapso. Não é a causa principal da rigidez refratária destacada na seção específica.",
+        "B": "**O manguito pode contribuir sem ser a explicação principal.** Uma lesão tendinosa altera a função e pode coexistir com rigidez. A limitação capsular global, porém, é o mecanismo predominante descrito no capítulo para esse quadro refratário.",
+        "C": "**Impacto do implante é uma causa mecânica a procurar.** Uma placa alta pode bloquear ou tornar doloroso o movimento. Quando esse obstáculo existe, ele muda o tratamento; ainda assim, não substitui a contratura capsular como causa principal apontada pelo capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Complicações: rigidez, viciosa, pseudartrose e tubérculos; Irrigação da cabeça, Hertel e osteonecrose; Placa bloqueada: o parafuso, o calcar e a técnica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+          "Irrigação da cabeça, Hertel e osteonecrose",
+          "Placa bloqueada: o parafuso, o calcar e a técnica"
+        ],
+        "blocos": [
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-7c681893",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "72a482072e4fb857de709ea3f50187fef8c111ecbc724f3b4b93a0f273a73edc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0621": {
+    "questaoSha256": "763c05236712b6f3871a6c7ddcf54c445ad4af2e4e5e1b8e058d0a18fb34eeea",
+    "comentarioAnteriorSha256": "fbd49905b4c9461a3fc7818dc25a1b55d726c4bcc77eab7646add9da87c800ba",
+    "comentario": {
+      "conceito": "Manipular um ombro rígido transmite força ao úmero. Se a fratura ainda não está seguramente consolidada ou o osso tem **osteoporose grave**, essa força pode produzir uma **fratura diafisária**, em vez de apenas ganhar movimento. São as contraindicações descritas na pergunta.\n\nAntes de manipular, é preciso distinguir contratura de partes moles de bloqueio por consolidação viciosa ou implante. A manobra não muda a posição de um osso já consolidado de forma inadequada nem reposiciona uma placa alta; nessas situações, insistir em força não corrige a causa. O capítulo inicia o manejo com reabilitação e alongamento e discute manipulação quando não há viciosa, respeitando a segurança óssea (resumo do Rockwood, 10ª ed., cap. 36, “Rigidez”).\n\nPortanto, a avaliação de consolidação e qualidade do osso precede uma intervenção para ganhar amplitude. A seção de rigidez do resumo da Biblioteca explica essa sequência.\n\n**Por que esta questão foi criada.** Para diferenciar risco ósseo da manipulação de outras causas de limitação, mantendo a conferência de consolidação antes de tentar ganhar amplitude.",
+      "correta": "**D: consolidação incerta ou osteoporose grave.** Ambas diminuem a segurança óssea diante da força aplicada e aumentam o risco de fratura durante a manipulação. O ganho de amplitude não pode ser buscado sem conferir essa condição.",
+      "incorretas": {
+        "A": "**Atrofia do manguito é um problema muscular, não a condição óssea pedida.** Ela pode comprometer a função e merece avaliação. A contraindicação mencionada pelo risco de fratura diafisária decorre de consolidação duvidosa ou osteoporose grave.",
+        "B": "**Rotura do subescapular descreve uma lesão tendinosa.** Pode alterar força, movimento e o planejamento terapêutico, mas não é o par de condições definido pelo capítulo para o risco de fratura da diáfise durante a manobra.",
+        "C": "**Impacto da placa exige resolver o bloqueio mecânico.** Não se deve esperar que a manipulação corrija uma placa alta. Contudo, a pergunta especifica a contraindicação pelo risco de fratura diafisária, que se liga diretamente à consolidação e à resistência óssea."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Complicações: rigidez, viciosa, pseudartrose e tubérculos; Placa bloqueada: o parafuso, o calcar e a técnica; Fratura isolada dos tubérculos e fratura-luxação. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Fratura isolada dos tubérculos e fratura-luxação"
+        ],
+        "blocos": [
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-7c681893",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1",
+          "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "1df69905690fe38edb6ce776f3635f349fb3c56e2cc94fa83775eb61db485cb2"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

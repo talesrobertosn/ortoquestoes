@@ -1,0 +1,410 @@
+{
+  "ombro-cotovelo-0599": {
+    "questaoSha256": "42758a0a5286fe1cfddef04fc360efc2fd1a89040e005563da8b747d9c3e9910",
+    "comentarioAnteriorSha256": "b1d9f9c95df89a4e839c3feb0ad6120ccdbeff398ec5408cfc4fe7c87c76d155",
+    "comentario": {
+      "conceito": "A pergunta descreve duas maneiras de aplicar força ao úmero proximal. Na **queda direta sobre o ombro**, a cabeça inclina em **varo** e tende a girar para trás pela retroversão natural. Na queda sobre a **mão espalmada**, com o ombro em flexão, abdução e rotação interna, o capítulo descreve inclinação em **valgo**, com a cabeça girando sobre o calcar inferomedial.\n\nVaro e valgo não são nomes intercambiáveis de fratura desviada: descrevem sentidos opostos de inclinação. O mecanismo orienta a leitura, mas o padrão final precisa ser conferido na imagem, porque a fratura também pode envolver tubérculos, colo e superfície articular. O capítulo relaciona a compressão da cabeça contra a glenoide, a flexão no colo e a tração do manguito a esses diferentes componentes (resumo do Rockwood, 10ª ed., cap. 36, “Mecanismo de trauma”).\n\nPara memorizar com uma imagem mental: no mecanismo descrito sobre a mão, a cabeça gira apoiada medialmente; no impacto direto no ombro, inclina em varo. A seção de mecanismos do resumo da Biblioteca permite rever essa distinção.\n\n**Por que esta questão foi criada.** Para reunir os dois mecanismos cobrados separadamente no TARO 2022 e no TARO 2025, relacionando posição do braço e direção do desvio.",
+      "correta": "**C: varo; valgo.** A ordem importa: impacto direto sobre o ombro primeiro, carga pela mão espalmada na posição descrita depois. Os dois mecanismos produzem sentidos diferentes de inclinação da cabeça no capítulo.",
+      "incorretas": {
+        "A": "**Acerta o impacto direto e repete seu resultado no outro mecanismo.** Varo corresponde à queda sobre o ombro. Já a carga pela mão, com flexão, abdução e rotação interna, produz o padrão em valgo descrito pelos autores.",
+        "B": "**Inverte os dois padrões.** A cabeça em varo corresponde ao impacto direto no ombro, enquanto o valgo está associado à queda sobre a mão na posição especificada. Não basta conhecer os dois termos sem ligá-los ao vetor de trauma.",
+        "D": "**Acerta apenas o segundo mecanismo.** A queda sobre a mão descrita leva a valgo, mas a queda direta no ombro leva a varo. A alternativa apaga a diferença entre a forma como a carga chega em cada situação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Mecanismo de trauma. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Mecanismo de trauma"
+        ],
+        "blocos": [
+          "mecanismo-de-trauma-b1e4723e",
+          "mecanismo-de-trauma-53c08b2e",
+          "mecanismo-de-trauma-9ac9b553"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "865abae720708c461fc661af9d9da2c8739ec2b215a6cf79bcf4a56ddfc6374a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0600": {
+    "questaoSha256": "a4ea4edfc6207b98da0222a187b9f3248a9ed027e84f6570624af09c1fe63376",
+    "comentarioAnteriorSha256": "5e5a244a5010bc7f0ecdcbdd87d3b4680b9282664d7c3d27629cb8639254e437",
+    "comentario": {
+      "conceito": "No tubérculo menor, o fragmento ósseo continua ligado ao **subescapular**. Quando se separa do restante do úmero, a tração desse músculo o desloca para **medial**. A fratura funciona como uma avulsão através do osso, em vez de uma ruptura isolada do tendão.\n\nA forma mais útil de organizar os desvios é perguntar **qual músculo permanece preso a qual fragmento**. O tubérculo maior isolado vai para trás e medial pelo manguito posterossuperior. Já o peitoral maior desloca a diáfise para anterior e medial na fratura do colo cirúrgico. São alvos ósseos diferentes, embora duas descrições usem a palavra “medial” (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nSe o tubérculo menor consolida desviado, pode haver bloqueio da rotação interna e fraqueza do subescapular. Assim, reconhecer a força deformante ajuda também a compreender a sequela. O resumo da Biblioteca aproxima esses mecanismos das complicações dos tubérculos.\n\n**Por que esta questão foi criada.** Para retomar o desvio do tubérculo menor cobrado no TARO 2018 e distingui-lo do desvio da diáfise pelo peitoral maior.",
+      "correta": "**A: medial; subescapular.** O músculo permanece ligado ao tubérculo menor e traciona o fragmento para medial. O dado decisivo é a inserção que acompanha o fragmento, não apenas o nome de um músculo capaz de agir no ombro.",
+      "incorretas": {
+        "B": "**A direção é compatível, mas o músculo foi atribuído ao fragmento errado.** O peitoral maior é a força que leva a diáfise para anterior e medial no colo cirúrgico. O tubérculo menor, por sua vez, acompanha o subescapular.",
+        "C": "**Transfere para o tubérculo menor o mecanismo do maior.** O desvio para trás e medial pertence ao tubérculo maior isolado, sob ação do manguito posterossuperior. O menor tem outra inserção e desvia medialmente pelo subescapular.",
+        "D": "**Descreve a tendência da diáfise no colo cirúrgico.** Anterior e medial pelo peitoral maior é um par válido para esse segmento. A pergunta, porém, é sobre o tubérculo menor isolado, cuja força deformante é o subescapular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Fratura isolada dos tubérculos e fratura-luxação; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura",
+          "Fratura isolada dos tubérculos e fratura-luxação",
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-c88d1394",
+          "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+          "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+          "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "1c19ef3956529ae053bee16a9112f90d631b8e2f9de185bb0eff2dfb41e0c3ce"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0601": {
+    "questaoSha256": "0fe2667bd69493aac5991b5fb2fbf06c66a8450347c7491777b88cb9c4d9c56a",
+    "comentarioAnteriorSha256": "a64da4de88d037f5227e60587b05f6d8317a4fe5c6915b7edf9486ad6bc32e79",
+    "comentario": {
+      "conceito": "O tubérculo maior está separado, mas o **tubérculo menor continua unido à cabeça**. Isso define qual músculo ainda consegue girar diretamente o bloco articular: o subescapular, preso ao tubérculo menor, produz **rotação interna da cabeça**.\n\nPense no conjunto cabeça-tubérculo como uma peça que conserva uma das inserções do manguito e perde a outra. Se, ao contrário, o tubérculo menor fosse o fragmento solto e o maior permanecesse ligado à cabeça, o manguito posterossuperior a levaria para rotação externa e abdução. A cabeça segue a inserção que continua ligada a ela (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nNão confunda essa rotação com o movimento da diáfise pelo peitoral maior nem com o desvio do próprio tubérculo maior separado. Ler qual estrutura continua conectada evita decorar uma direção sem compreender o padrão. Essa comparação está no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para explicar o padrão em três partes com tubérculo maior separado, cobrado no SBOT-SP e no TARO 2009, pela inserção que permanece ligada à cabeça.",
+      "correta": "**A: rotação interna da cabeça.** A cabeça permanece ligada ao tubérculo menor e, portanto, à ação do subescapular. O músculo gira esse bloco em rotação interna; o tubérculo maior separado já não transmite sua força à cabeça da mesma forma.",
+      "incorretas": {
+        "B": "**Seria a tendência do padrão com o tubérculo oposto unido à cabeça.** Quando o maior permanece ligado e o menor está solto, o manguito posterossuperior favorece rotação externa e abdução. Aqui, quem permanece preso é o menor.",
+        "C": "**Troca o segmento solicitado.** A diáfise pode ser levada para anterior e medial pelo peitoral maior na fratura do colo cirúrgico. A questão pergunta a ação do subescapular sobre a cabeça ainda ligada ao tubérculo menor.",
+        "D": "**O fragmento solto não é a cabeça.** O tubérculo maior isolado pode ir para trás e medial, mas isso descreve o seu próprio desvio. A ação perguntada ocorre sobre o bloco cabeça-tubérculo menor e resulta em rotação interna."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-e75305ee",
+          "neer-ao-e-os-padroes-de-fratura-79f24fb6",
+          "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+          "neer-ao-e-os-padroes-de-fratura-defcf4d3"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "c767d21d310e4f1526840173f88ddf243e266adb6d666e192c4ff4bb6144ed24"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0603": {
+    "questaoSha256": "7f6fe85e284cbfbeb9439970e872795c821e5c368349f4ed9dbb4f212c09aa70",
+    "comentarioAnteriorSha256": "1aa14c06d86e2a3a8e595b75d67e115899d744368d98c61840866b4c628ce52e",
+    "comentario": {
+      "conceito": "Contar traços de fratura não é o mesmo que contar partes na classificação de Neer. Os quatro segmentos de referência são cabeça, tubérculo maior, tubérculo menor e diáfise. Um segmento passa a contar como **parte desviada** quando apresenta **pelo menos 1 cm de translação ou pelo menos 45° de angulação**.\n\nO “ou” é essencial: não é preciso atingir os dois critérios juntos. Também é possível haver vários traços e ainda classificar como uma parte, se nenhum segmento alcançar os limites. A classificação organiza o desvio dos segmentos, não o número de linhas vistas na radiografia (resumo do Rockwood, 10ª ed., cap. 36, “Os quatro segmentos de Codman e Neer”).\n\nEsses valores foram escolhidos arbitrariamente na origem da classificação e **não foram definidos como indicação automática de cirurgia**. O tratamento precisa considerar padrão, estabilidade e paciente. Leia essa seção no resumo da Biblioteca para separar classificação e decisão terapêutica.\n\n**Por que esta questão foi criada.** Para diferenciar segmento, traço e parte desviada em Neer, evitando transformar os limites classificatórios em indicação obrigatória de cirurgia.",
+      "correta": "**C: 1 cm ou 45 graus.** Basta que o segmento alcance um desses limites para contar como parte desviada na definição apresentada. O número de traços, sozinho, não determina a contagem de partes nem a necessidade de operar.",
+      "incorretas": {
+        "A": "**Reduz o limite linear da classificação.** Quarenta e cinco graus corresponde ao critério angular, mas 8 mm não é o limite de translação de Neer. O segmento precisa alcançar 1 cm pelo critério linear.",
+        "B": "**Mantém a translação e antecipa indevidamente o critério angular.** Um centímetro está correto; 20° não faz o segmento contar como desviado por angulação nessa classificação. O valor angular é 45°.",
+        "D": "**Exige uma angulação maior que a definida.** Sessenta graus certamente ultrapassa 45°, mas não é o limite mínimo pedido. Usá-lo deixaria de contar segmentos que já preenchem a definição entre 45° e 60°."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-879552e1",
+          "neer-ao-e-os-padroes-de-fratura-23f72b4b",
+          "neer-ao-e-os-padroes-de-fratura-3d9e75c3"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "f2f5fedb9ae3877d4f791a49c26430aa6d85c91b449526f9d79344e4a8e873ba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0604": {
+    "questaoSha256": "5cdf7b557f3d083f59699a1c8b7236534a412b79f433fc6152e99fba4aa2fbff",
+    "comentarioAnteriorSha256": "b8eae836a14c7f02f947e01e70df49e2ab02b56c9ef0212b0085fa08631f922e",
+    "comentario": {
+      "conceito": "Na AO clássica, primeiro se identifica o segmento ósseo: **11** é o úmero proximal. Depois vem o padrão. **A** significa fratura extra-articular unifocal, **B** extra-articular bifocal e **C** fratura articular da cabeça ou do colo anatômico.\n\nA questão já informa dois focos: colo cirúrgico e um tubérculo desviado. Isso coloca a lesão no grupo B. Dentro dele, a diferença decisiva é a relação metafisária: **B1 tem impacção; B2 não tem impacção; B3 associa luxação**. Como o enunciado exclui impacção e luxação, resta 11B2 (resumo do Rockwood, 10ª ed., cap. 36, “AO/OTA: o número 11 e as três letras”).\n\nEssa leitura em sequência é mais segura que decorar códigos isolados. Também é preciso respeitar a versão solicitada: a revisão AO/OTA de 2018 reorganizou os grupos; não se devem misturar as definições entre versões. O resumo da Biblioteca apresenta a tabela clássica usada aqui.\n\n**Por que esta questão foi criada.** Para decompor o código 11B2 cobrado no TEOT 2022 e distinguir impacção, segundo foco e luxação na AO clássica.",
+      "correta": "**C: 11B2.** Há uma fratura extra-articular bifocal, do colo cirúrgico com um tubérculo desviado, sem impacção. A ausência de luxação também afasta B3. Cada informação do enunciado resolve uma etapa do código.",
+      "incorretas": {
+        "A": "**A3 é extra-articular unifocal.** Na tabela clássica, corresponde ao colo cirúrgico não impactado sem o segundo foco com tubérculo desviado descrito aqui. Reconhecer apenas “não impactado” não basta: é preciso contar os focos.",
+        "B": "**B1 exige impacção.** A categoria bifocal está correta, mas o enunciado especifica ausência de impacção. Essa é precisamente a diferença entre B1 e B2.",
+        "D": "**B3 acrescenta luxação.** A fratura do colo com tubérculo pertence à família B, porém não há luxação na pergunta. Usar B3 acrescentaria uma característica que o caso explicitamente exclui."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-10b3d28f",
+          "neer-ao-e-os-padroes-de-fratura-f472f79e",
+          "neer-ao-e-os-padroes-de-fratura-54eebd91"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "39455daeccc2e776f549e419d45badf2166c6bcd3caffd915f8eeca69dba40b2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0605": {
+    "questaoSha256": "094d01813b7fd553ccff3518546b379eb96382ae3a31f0cb58957ce9b8d12f5b",
+    "comentarioAnteriorSha256": "55a39544edd544477c8a79262fbf7435539142b182954ab8fde854252f696e41",
+    "comentario": {
+      "conceito": "“Colo desengatado” descreve a **perda absoluta de contato entre cabeça e diáfise**. O risco central é a dificuldade de consolidar essa conexão, isto é, **pseudartrose**. É uma pergunta sobre continuidade entre os segmentos, e não uma afirmação de que toda cabeça desconectada obrigatoriamente necrosará.\n\nA classificação Mayo/FJD separa padrão e desvio justamente para antecipar o problema que se teme sem cirurgia. No colo desengatado, teme-se pseudartrose; em padrões que isolam a cabeça de suas conexões vasculares, a isquemia e a osteonecrose também entram na avaliação. Esses problemas podem coexistir, mas não são sinônimos (resumo do Rockwood, 10ª ed., cap. 36, “Hertel (LEGO) e Mayo/FJD”).\n\nPouco contato cortical, cominuição metafisária e interposição de partes moles são fatores ligados à pseudartrose. Por isso o colo desengatado aparece entre os padrões que favorecem cirurgia no algoritmo do capítulo, respeitando as condições clínicas. O resumo da Biblioteca relaciona esse padrão à seção de pseudartrose.\n\n**Por que esta questão foi criada.** Para distinguir falha de consolidação do colo desengatado de perda de perfusão da cabeça, dois riscos diferentes que a leitura do padrão deve antecipar.",
+      "correta": "**B: pseudartrose.** A perda total de contato elimina a continuidade cabeça-diáfise necessária à consolidação do colo. Esse é o principal risco atribuído ao padrão desengatado pela Mayo/FJD.",
+      "incorretas": {
+        "A": "**Rigidez é uma consequência funcional diferente.** Pode acompanhar fraturas do úmero proximal, com causas como contratura capsular e bloqueio mecânico. Não é o risco que caracteriza a perda absoluta de contato entre cabeça e diáfise nesse padrão.",
+        "C": "**Impacto subacromial remete à posição do tubérculo ou do implante.** Por exemplo, um tubérculo maior consolidado alto ou uma placa alta pode comprometer o espaço. O enunciado destaca a separação completa cabeça-diáfise, cujo principal problema é consolidar o colo.",
+        "D": "**Osteonecrose não é sinônimo de desconexão do colo.** Ela depende do comprometimento da perfusão e é importante nos padrões que isolam a cabeça. Para a característica específica “perda absoluta de contato”, o risco destacado na Mayo/FJD é pseudartrose."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Complicações: rigidez, viciosa, pseudartrose e tubérculos; Placa bloqueada: o parafuso, o calcar e a técnica; Irrigação da cabeça, Hertel e osteonecrose; Quando operar: padrão, desvio e o ProFHER. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura",
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Irrigação da cabeça, Hertel e osteonecrose",
+          "Quando operar: padrão, desvio e o ProFHER"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-4473222f",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-53159daa",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+          "quando-operar-padrao-desvio-e-o-profher-fd48d5e5"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "e9ccebf8781595d8dc2998e1bd6867bd3db7ccf99556f61f85af34d8141864b7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0606": {
+    "questaoSha256": "00e65f8bc0486ce4be723d74e4e872a8a4a818386c74b997d211a5ecb5e63617",
+    "comentarioAnteriorSha256": "104d5bdcc94ce389bf178ae33fdb67e5c16cfd038e4c1c83837bba09640c1035",
+    "comentario": {
+      "conceito": "A cabeça umeral recebe ramos vasculares pela região posteromedial. Por isso, a quantidade de metáfise que permanece presa à cabeça e a continuidade da **dobradiça medial** ajudam a estimar se essas conexões foram preservadas.\n\nNos critérios de Hertel, uma extensão metafisária **de 8 mm ou menos**, uma dobradiça medial **rompida** e um traço pelo colo anatômico foram preditores independentes de isquemia na cirurgia. Uma extensão curta leva menos metáfise junto com a cabeça; a ruptura da dobradiça rompe outra continuidade importante nessa região (resumo do Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\nA distinção clínica é que **isquemia observada na cirurgia não equivale a osteonecrose inevitável**. O acompanhamento teve correlação ruim entre os dois eventos, possivelmente por revascularização. Os critérios orientam o raciocínio sobre perfusão, mas não determinam sozinhos o destino da cabeça ou a escolha obrigatória de prótese. O resumo da Biblioteca explica essa ressalva.\n\n**Por que esta questão foi criada.** Para retomar a combinação de parâmetros de Hertel cobrada em TARO 2020 e TEOT 2022, separando risco de isquemia e necrose tardia.",
+      "correta": "**B: ≤ 8 mm; rompida.** A combinação reúne os dois sinais desfavoráveis pedidos: pouca extensão metafisária ligada à cabeça e perda da continuidade medial. Ela prediz isquemia, sem transformar o resultado em certeza de necrose tardia.",
+      "incorretas": {
+        "A": "**Só a extensão está no sentido de maior risco.** O calcar curto é desfavorável, mas uma dobradiça íntegra preserva uma continuidade medial importante. A alternativa troca o segundo componente da combinação de risco.",
+        "C": "**Reúne os achados no sentido mais favorável.** Extensão maior que 8 mm e dobradiça íntegra sugerem melhor preservação do pedículo posteromedial. Não correspondem à combinação de maior risco de isquemia pedida.",
+        "D": "**A dobradiça está desfavorável, mas a extensão foi invertida.** Ruptura medial pesa contra a perfusão. O critério metafisário de Hertel, porém, é extensão curta, de 8 mm ou menos, e não maior que 8 mm."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Irrigação da cabeça, Hertel e osteonecrose"
+        ],
+        "blocos": [
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "59099e7fcb93b16f002f6e3f91bacf0ad0a23c15aa6d020c68c1786d565bcf37"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0607": {
+    "questaoSha256": "3aa483624e3d27d455bbce3d938a1d2bf609c90999bd6b8e6d32dcb07650e936",
+    "comentarioAnteriorSha256": "a4266ec2489be046604f621d33cc084e1ac3cb84692ae832721c2eaeefeaff0a",
+    "comentario": {
+      "conceito": "Uma cabeça que sangra pouco na cirurgia não está necessariamente condenada ao colapso. **Isquemia é uma condição de perfusão naquele momento; osteonecrose tardia é um desfecho posterior.** Entre os dois, a circulação da cabeça pode se restabelecer.\n\nO acompanhamento dos pacientes estudados por Hertel mostrou correlação ruim entre a isquemia observada durante a cirurgia e a necrose tardia. O capítulo atribui essa diferença à provável **revascularização da cabeça**. Isso não elimina a utilidade dos sinais de perfusão, mas impede que um achado intraoperatório seja tratado como previsão infalível (resumo do Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\nAssim, a decisão deve integrar viabilidade, padrão da fratura e possibilidade de reconstrução, sem confundir uma medida de fluxo com um diagnóstico futuro inevitável. A seção de irrigação e Hertel no resumo da Biblioteca ajuda a separar esses conceitos.\n\n**Por que esta questão foi criada.** Para impedir que os preditores de isquemia de Hertel sejam interpretados como certeza de osteonecrose e explicar a limitação apontada no acompanhamento.",
+      "correta": "**C: neovascularização da cabeça.** A formação ou recuperação de suprimento vascular explica por que uma cabeça inicialmente isquêmica pode não evoluir para necrose. É a hipótese apresentada para a correlação ruim entre o achado intraoperatório e o desfecho tardio.",
+      "incorretas": {
+        "A": "**Contratura capsular explica rigidez, não recuperação da perfusão.** A cápsula retraída limita o movimento do ombro e é central na rigidez refratária. Não é o mecanismo proposto para uma cabeça isquêmica escapar da necrose.",
+        "B": "**Migração do tubérculo maior muda a mecânica.** Seu desvio pode comprometer movimento, força e produzir impacto. Não explica o restabelecimento de sangue à cabeça nem a diferença entre isquemia inicial e necrose tardia.",
+        "D": "**Interposição do bíceps prejudica redução e consolidação.** O capítulo a cita entre fatores associados à pseudartrose. Esse obstáculo no foco não é um mecanismo de recuperação vascular da cabeça."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Irrigação da cabeça, Hertel e osteonecrose; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Irrigação da cabeça, Hertel e osteonecrose",
+          "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+        ],
+        "blocos": [
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
+          "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "dd429cced20ebf183577d5fd47e1c6c2038b090264c8856d9dae6648407213fc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0608": {
+    "questaoSha256": "7b9d543b2bb8538aacbecdbee531a63fefc719bed4135f3f158ae00f917a9415",
+    "comentarioAnteriorSha256": "71080bcf28bc13ca9f2cc014b6e5c43bbb77a23a84b183d263f32ff6d34862b2",
+    "comentario": {
+      "conceito": "A incidência axilar é importante para conferir a relação entre cabeça umeral e glenoide, mas a dor da fratura pode impedir a posição habitual. A solução descrita na pergunta mantém o braço na tipoia e muda a **inclinação do tronco**: o paciente se inclina **para trás**, enquanto o raio desce na vertical. Essa é a **axilar de Velpeau**.\n\nA modificação de **Codman** também é uma alternativa quando não se consegue abduzir, mas o paciente se inclina **para frente**, como no exercício pendular. Neer e Grashey nomeiam outras projeções da série: perfil em Y e AP da escápula, respectivamente. O detalhe que decide aqui é para onde o paciente inclina o corpo (resumo do Rockwood, 10ª ed., cap. 36, “Radiografias e tomografia”).\n\nNa prática, adaptar a incidência permite avaliar o alinhamento articular sem depender de uma abdução dolorosa. O resumo da Biblioteca descreve as quatro projeções da série e essas adaptações.\n\n**Por que esta questão foi criada.** Para distinguir as adaptações de Velpeau e Codman quando a dor impede a abdução necessária ao posicionamento habitual.",
+      "correta": "**D: Velpeau.** É a adaptação axilar com inclinação posterior do tronco, possível mesmo com o braço na tipoia. Esse posicionamento corresponde exatamente ao descrito, sem exigir a abdução que a dor impede.",
+      "incorretas": {
+        "A": "**Neer corresponde ao perfil escapular em Y.** Ele faz parte da série de trauma, mas não é a modificação axilar com inclinação posterior. A pergunta descreve como obter outra projeção quando a posição do braço está limitada.",
+        "B": "**Codman inclina para a frente.** A finalidade de adaptar o exame diante da dor é semelhante, mas a direção do tronco distingue as duas técnicas. Inclinação posterior é Velpeau; anterior é Codman.",
+        "C": "**Grashey é a AP da escápula.** Essa projeção é obtida pela rotação do tronco na série de trauma. Não corresponde à axilar realizada em tipoia por inclinação posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Radiografias e tomografia. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Radiografias e tomografia"
+        ],
+        "blocos": [
+          "radiografias-e-tomografia-cb865953",
+          "radiografias-e-tomografia-d315dddb",
+          "radiografias-e-tomografia-190db996",
+          "radiografias-e-tomografia-413850ca"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "41e4ec7e88e38b2901260e0ed38d10ce86de0c016cc0fc41e4657cbe65804efa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0609": {
+    "questaoSha256": "7fb900dcd658395cfeb869a58d7021cdf4e78e378ffa56f940fdcb82a20f8c47",
+    "comentarioAnteriorSha256": "3c98a377bc95a2146524da00a8a873d3415455a2d19458d0216cec3b876fbc98",
+    "comentario": {
+      "conceito": "A via transdeltoidea divide a rafe entre as porções anterior e média do deltoide. Ela oferece acesso à face lateral do úmero e ao tubérculo maior, mas a dissecção se aproxima do **nervo axilar**, que percorre a face profunda do músculo.\n\nO nervo inerva deltoide e redondo menor e passa do espaço quadrangular para a região sob o deltoide. Sua distância ao acrômio varia. Por isso, o capítulo orienta **identificá-lo e protegê-lo se a divisão ultrapassar 5 cm**, em vez de interpretar esse número como uma garantia absoluta de segurança sem avaliação anatômica. Na técnica com placa, ela passa por baixo do nervo, com janelas para parafusos acima e abaixo (resumo do Rockwood, 10ª ed., cap. 36, “Via transdeltoide”).\n\nUma sutura no fim da divisão ajuda a impedir que ela se prolongue durante o procedimento. O objetivo é manter a exposição necessária sem comprometer a inervação do músculo que a própria via atravessa. O resumo da Biblioteca relaciona o trajeto do axilar a esse risco cirúrgico.\n\n**Por que esta questão foi criada.** Para aprofundar a segurança da via anterolateral estendida cobrada no CET-PR, ligando o comprimento da divisão ao trajeto do nervo axilar.",
+      "correta": "**A: axilar.** O nervo fica na face profunda do deltoide e cruza a região em que a divisão pode se estender. É ele que deve ser identificado e protegido quando a exposição passa do limite descrito.",
+      "incorretas": {
+        "B": "**O supraescapular pertence a outro trajeto de risco.** Ele passa pela incisura da escápula e contorna a espinha até o infraespinal. Não é o nervo sob o deltoide que limita a extensão distal dessa via.",
+        "C": "**O musculocutâneo está relacionado ao tendão conjunto e ao coracobraquial.** O capítulo destaca o risco de afastamento medial excessivo do tendão conjunto. Esse é um perigo diferente daquele criado pela divisão distal do deltoide.",
+        "D": "**Não é o nervo que cruza a face profunda do deltoide nesse acesso.** A referência de identificação descrita para a extensão além de 5 cm é o axilar. A alternativa desloca a atenção da estrutura que está diretamente no campo da divisão muscular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Anatomia aplicada e vias de acesso. Sem atribuição de páginas impressas não consultadas.",
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures, seção Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Anatomia aplicada e vias de acesso"
+        ],
+        "blocos": [
+          "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+          "anatomia-aplicada-e-vias-de-acesso-f121538c",
+          "anatomia-aplicada-e-vias-de-acesso-e632af2f"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "101717254c6b04e4942026288f44f5650cd5c541c5636cb7481b1ec0198710c0"
+      },
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
