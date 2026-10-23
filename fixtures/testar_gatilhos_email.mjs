@@ -7,6 +7,7 @@
 // Também: a marca "já pedi" no aparelho por tipo (true, ou o dia no "voltou"), "tentar depois" quando o
 // servidor responde ainda_nao/adiado/falhou, nenhuma chamada sem conta, e erro de rede não sobe.
 import assert from 'node:assert/strict'
+import { mock } from 'node:test'
 import { build } from 'esbuild'
 import { mkdtemp, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
@@ -57,6 +58,9 @@ export const supabase = null
   const { falso } = m
   const DIA = 86_400_000
   const AGORA = Date.parse('2026-10-17T15:00:00-03:00')
+  // O plano e os intervalos abaixo pertencem à mesma data de referência.
+  // Fixar Date também cobre as funções que consultam o relógio sem receber AGORA.
+  mock.timers.enable({ apis: ['Date'], now: AGORA })
   const esperar = () => new Promise((r) => setTimeout(r, 20))
   const automaticos = () => falso.chamadas.filter((c) => c.nome === 'enviar-email' && c.corpo.acao === 'automatico')
   const tipos = () => automaticos().map((c) => c.corpo.tipo)
@@ -171,5 +175,6 @@ export const supabase = null
 
   console.log(`Gatilhos dos automáticos no site: ok (${falso.contagem.total} chamadas à função conferidas; boas_vindas_dia0, primeiras_10, voltou e cronograma_pronto uma vez só, nas condições certas).`)
 } finally {
+  mock.timers.reset()
   await rm(pasta, { recursive: true, force: true })
 }
