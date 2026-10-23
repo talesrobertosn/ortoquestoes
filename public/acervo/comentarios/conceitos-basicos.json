@@ -1549,15 +1549,15 @@
   "conferido": false
  },
  "conceitos-basicos-0142": {
-  "conceito": "O multiplicador **4,5** vem da comparação citada pelo resumo entre hastes femorais fresadas e não fresadas. No estudo canadense com 224 pacientes, houve pseudartrose em **1,7% com fresagem e 7,5% sem**, com risco relativo relatado de 4,5 para a não fresada.\n\nA fresagem rompe circulação medular inicialmente, mas estimula aumento do fluxo periosteal, leva material fresado ao foco e permite introduzir uma haste maior. O efeito biológico e mecânico conjunto ajuda a entender por que a lesão endosteal inicial não equivale a pior consolidação. As metanálises citadas pelo resumo confirmam menos pseudartrose, falha do implante e reoperação com fresagem, sem aumento demonstrado de SDRA, sangramento ou óbito (resumo do Rockwood, 10ª ed., cap. 57, “Fresar é a regra”).\n\nAinda assim, o número não é universal para qualquer paciente, fratura ou implante. Nesta questão de dado bibliográfico, a resposta é o resultado do estudo apresentado. Leia a seção no resumo da Biblioteca para relacionar o multiplicador à comparação que o produziu.",
-  "correta": "**D: 4,5 vezes.** É o risco relativo apresentado para pseudartrose com haste não fresada no estudo citado. Não é uma probabilidade absoluta de 4,5% nem um multiplicador aplicável sem considerar a população.",
+  "conceito": "A resposta **4,5 vezes** pertence a uma comparação específica, não a uma regra universal para toda haste. No estudo canadense citado pelo resumo, com 224 pacientes, houve pseudartrose em **7,5% sem fresagem e 1,7% com fresagem**, com risco relativo relatado de 4,5 para a não fresada.\n\nÉ útil separar percentual e razão. Os 7,5% são a frequência do desfecho num grupo; 4,5 expressa aproximadamente quantas vezes aquele risco foi maior que o do outro grupo. Não significa pseudartrose de 4,5% e não equivale a dizer que a maioria das hastes não fresadas falhará. A direção e a magnitude precisam permanecer ligadas à população e à comparação que as produziram (resumo do Rockwood, 10ª ed., cap. 57, “Fresar é a regra”).\n\nA dúvida biológica é compreensível: se a fresagem interrompe circulação medular, por que o resultado pode ser melhor? O resumo descreve aumento do fluxo periosteal após a agressão endosteal, material fresado depositado no foco com fatores osteoindutores e possibilidade de usar uma haste maior. Portanto, o efeito final depende da resposta biológica e da estabilidade, não apenas de uma fotografia do fluxo no instante da fresagem.\n\nAs metanálises apresentadas também favorecem a fresada em pseudartrose, falha do implante e reoperação, sem aumento demonstrado de síndrome do desconforto respiratório agudo, sangramento ou óbito. Isso sustenta a preferência do capítulo, mas não permite multiplicar automaticamente o risco individual de qualquer paciente por 4,5. Exposição, distração do foco e outras condições continuam importando.\n\nO resumo da Biblioteca reúne mecanismo e resultado clínico. Aprenda o número junto de sua origem: é uma comparação de não união entre fresada e não fresada na diáfise femoral, e não um coeficiente fixo de todo tratamento intramedular.",
+  "correta": "**D: 4,5 vezes.** É o risco relativo relatado no estudo citado para a haste não fresada em comparação à fresada. As frequências 7,5% e 1,7% dão sentido à ordem de grandeza.\n\nA resposta deve ser preservada como dado bibliográfico aproximado daquele estudo, sem transformá-la em percentual absoluto ou previsão individual.",
   "incorretas": {
-   "A": "**Uma vez e meia subestima a comparação relatada.** O estudo apresentou aproximadamente 7,5% contra 1,7%, com risco relativo descrito de 4,5. Confundir percentuais absolutos com a razão entre grupos altera o resultado.",
-   "B": "**Duas vezes e meia não corresponde ao risco relativo citado.** A fonte favorece fresagem nessa comparação, mas a pergunta exige a magnitude do estudo. Reconhecer apenas a direção do efeito é insuficiente.",
-   "C": "**Três vezes e meia também não reproduz o dado apresentado.** O resumo fornece 4,5. Esse acerto quantitativo precisa permanecer ligado àquele estudo, sem converter uma estimativa populacional em regra universal."
+   "A": "**Uma vez e meia reduziria bastante a diferença relatada.** A comparação apresentada é de 7,5% contra 1,7%, não de riscos próximos o suficiente para essa razão.\n\nO erro não está em reconhecer maior pseudartrose com não fresada, mas em trocar a magnitude do resultado que a pergunta exige.",
+   "B": "**Duas vezes e meia também não corresponde à comparação citada.** A direção do efeito está correta se se entende que não fresada tem mais pseudartrose, porém o estudo fornecido relata 4,5.\n\nNão é necessário escolher um número menor para parecer prudente. A prudência é manter o dado real ligado ao contexto, em vez de generalizá-lo.",
+   "C": "**Três vezes e meia continua abaixo do risco relativo apresentado.** O valor pedido não foi inferido apenas do fato de haver lesão da circulação endosteal; é resultado clínico da comparação entre grupos.\n\nTrocar o número não resolve os limites da evidência. Esses limites são explicados pela população e técnica estudadas, mantendo a estimativa publicada."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fresagem, diâmetro, bloqueio e carga."
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fresagem, diâmetro, bloqueio e carga; Pseudartrose, infecção, retirada e quebra da haste."
   ],
   "conferido": false,
   "alerta": "O valor de 4,5 é o risco relativo relatado no estudo canadense citado pelo resumo (pseudartrose 7,5% sem fresagem versus 1,7% com fresagem). Não é um multiplicador universal para toda população, fratura ou implante; o gabarito D foi preservado.",
@@ -1573,17 +1573,19 @@
      "edicao": "10ª edição (2025)",
      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
      "secoes": [
-      "Fresagem, diâmetro, bloqueio e carga"
+      "Fresagem, diâmetro, bloqueio e carga",
+      "Pseudartrose, infecção, retirada e quebra da haste"
      ],
      "blocos": [
-      "fresagem-diametro-bloqueio-e-carga-999f60a0"
+      "fresagem-diametro-bloqueio-e-carga-999f60a0",
+      "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
      ],
      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "835320c68b8e641c0cf26451cafa65bd07466bb46216e6a0191292db7e258acc"
+     "trechosSha256": "57b676d327175d95647a27a82969222ee09f683fdcaae5c2c185898bf6b58679"
     }
    ],
    "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
-   "comentarioSha256": "1fe41be96a4e70ee26bae31093bd8892dc37a0ce4f0ee04f8769c9d386865ccf"
+   "comentarioSha256": "814171290ac861f001725617189d56cc16862dd1ffa4090bbb27fb8bfd2bacde"
   }
  },
  "conceitos-basicos-0143": {

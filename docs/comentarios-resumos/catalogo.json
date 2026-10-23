@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1236,
+  "pendente": 1226,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 126,
   "pendente-inspecao-imagem": 158,
-  "revisada": 752
+  "revisada": 762
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -157,8 +157,9 @@
    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
-    "pendente": 65,
-    "pendente-inspecao-imagem": 6
+    "pendente": 64,
+    "pendente-inspecao-imagem": 6,
+    "revisada": 1
    }
   },
   "rockwood10-53-colo-femur": {
@@ -186,20 +187,20 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 35,
+    "pendente": 25,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 1,
-    "revisada": 27
+    "revisada": 37
    }
   },
   "rockwood10-58-femur-distal": {
    "titulo": "Fratura do fêmur distal",
    "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
    "estados": {
-    "pendente": 35,
+    "pendente": 34,
     "pendente-fonte": 2,
     "pendente-inspecao-imagem": 1,
-    "revisada": 1
+    "revisada": 2
    }
   },
   "rockwood10-60-patela-mecanismo-extensor": {
@@ -217,9 +218,10 @@
    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
-    "pendente": 97,
+    "pendente": 96,
     "pendente-anulada": 1,
-    "pendente-inspecao-imagem": 11
+    "pendente-inspecao-imagem": 11,
+    "revisada": 1
    }
   },
   "rockwood10-62-planalto-tibial": {
@@ -5722,17 +5724,19 @@
       "edicao": "10ª edição (2025)",
       "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
       "secoes": [
-       "Fresagem, diâmetro, bloqueio e carga"
+       "Fresagem, diâmetro, bloqueio e carga",
+       "Pseudartrose, infecção, retirada e quebra da haste"
       ],
       "blocos": [
-       "fresagem-diametro-bloqueio-e-carga-999f60a0"
+       "fresagem-diametro-bloqueio-e-carga-999f60a0",
+       "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "835320c68b8e641c0cf26451cafa65bd07466bb46216e6a0191292db7e258acc"
+      "trechosSha256": "57b676d327175d95647a27a82969222ee09f683fdcaae5c2c185898bf6b58679"
      }
     ],
     "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
-    "comentarioSha256": "1fe41be96a4e70ee26bae31093bd8892dc37a0ce4f0ee04f8769c9d386865ccf"
+    "comentarioSha256": "814171290ac861f001725617189d56cc16862dd1ffa4090bbb27fb8bfd2bacde"
    }
   },
   "conceitos-basicos-0195": {
@@ -41542,7 +41546,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41557,7 +41561,38 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "4beef64e4d94aef203890efd9071fba029c53f11146fb816511fe2b34d3b3200"
+   "questaoSha256": "4beef64e4d94aef203890efd9071fba029c53f11146fb816511fe2b34d3b3200",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "A fratura do colo do mesmo lado"
+      ],
+      "blocos": [
+       "a-fratura-do-colo-do-mesmo-lado-754eb6d6",
+       "a-fratura-do-colo-do-mesmo-lado-ab880107",
+       "a-fratura-do-colo-do-mesmo-lado-9c56d4da",
+       "a-fratura-do-colo-do-mesmo-lado-7a77c9ba",
+       "a-fratura-do-colo-do-mesmo-lado-473f033a",
+       "a-fratura-do-colo-do-mesmo-lado-2856b2fa",
+       "a-fratura-do-colo-do-mesmo-lado-d6fedb3e",
+       "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+       "a-fratura-do-colo-do-mesmo-lado-2c1abd51"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "77d0151bd3a2f0ba9e32748c59a29aa235c94a359da3c1053b704fed4b6b293d"
+     }
+    ],
+    "questaoSha256": "4beef64e4d94aef203890efd9071fba029c53f11146fb816511fe2b34d3b3200",
+    "comentarioSha256": "f53e41120dbedac21c5ec87c1503144c64c2cd63846fddad6aa47517d90a06ec"
+   }
   },
   "trauma-0023": {
    "tema": "trauma",
@@ -42987,7 +43022,7 @@
      }
     ],
     "questaoSha256": "71a330a04822091a8933f24b0fb1f13170ffff382b9770e064215c1dac2fa614",
-    "comentarioSha256": "01090ace1a36f77ab6c709fded6e1489ac88fb2269849948c7a2f06edc32b7d8"
+    "comentarioSha256": "6e254524ab500ba327affcbb9839caa0c873d417b55c80815dbe90b7e2d34fad"
    }
   },
   "trauma-0076": {
@@ -43192,14 +43227,15 @@
        "haste-retrograda-c19a5fde",
        "haste-retrograda-fd5c0178",
        "haste-retrograda-a6c8b54a",
-       "situacoes-especiais-15ca6fd9"
+       "situacoes-especiais-15ca6fd9",
+       "haste-retrograda-d0c23ae9"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "38e146d992ead43d1da068abed48081cc9eab90086c9b703d057e0412a2e5047"
+      "trechosSha256": "96e622e48b75539dc51f8be309cce652c966e50c078a4574227421ea24fd7eaf"
      }
     ],
     "questaoSha256": "f886ff74b011527b0dc6285769206e70b4944bbb571a886816d4824adce3d63f",
-    "comentarioSha256": "2169221032cc0310b16d384233d9a1570b27b0917e614f6152c8d14e9c329223"
+    "comentarioSha256": "efa048fc884a1f3aac8c7fa56f7d50a4394c457a7536ba6a8dba6f18831c01d7"
    }
   },
   "trauma-0084": {
@@ -43790,24 +43826,30 @@
       "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
       "secoes": [
        "Como ler este capítulo",
+       "Anatomia aplicada e forças deformantes",
        "Fresagem, diâmetro, bloqueio e carga",
        "Comprimento e rotação",
+       "Haste anterógrada: o ponto de entrada",
        "Fixador externo, placa e controle de dano"
       ],
       "blocos": [
        "como-ler-este-capitulo-3879a1cb",
+       "anatomia-aplicada-e-forcas-deformantes-9db652ad",
        "fresagem-diametro-bloqueio-e-carga-999f60a0",
+       "fresagem-diametro-bloqueio-e-carga-1700baf9",
        "comprimento-e-rotacao-2bbb6c9f",
-       "fixador-externo-placa-e-controle-de-dano-373ad787",
+       "haste-anterograda-o-ponto-de-entrada-c8f3d97b",
        "fixador-externo-placa-e-controle-de-dano-5b33401f",
-       "fixador-externo-placa-e-controle-de-dano-05257777"
+       "fixador-externo-placa-e-controle-de-dano-05257777",
+       "fixador-externo-placa-e-controle-de-dano-373ad787",
+       "fixador-externo-placa-e-controle-de-dano-d740b6e2"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "dbe2a50d8176572f2cbe2dd6f12e3b439e550ef5bd890c987f8fe2730e4ec2c3"
+      "trechosSha256": "6b18c8a410b71d8bf9f6bb1a24e1cf542280056203c56dfb10e7cacde8464808"
      }
     ],
     "questaoSha256": "c5cd877487cd49b031e2d30f494f0a19df73acaa24f6874680c03d700a2cbc8c",
-    "comentarioSha256": "268f9d1838690762cb62eedcf865b7636a85240284e576f55d593d8e503f9259"
+    "comentarioSha256": "a8b0e208e1adc6d96b270e3b8704ce01ff6fc913dbdd8c4f912b138afa482cc5"
    }
   },
   "trauma-0099": {
@@ -44624,7 +44666,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44639,7 +44681,41 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "bc8ff73602b7438d6601a446407723b2892c6c96538c12c4519678f9d32808b2"
+   "questaoSha256": "bc8ff73602b7438d6601a446407723b2892c6c96538c12c4519678f9d32808b2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Fixador externo, placa e controle de dano",
+       "A fratura do colo do mesmo lado",
+       "Haste retrógrada",
+       "Situações especiais"
+      ],
+      "blocos": [
+       "fixador-externo-placa-e-controle-de-dano-5b33401f",
+       "fixador-externo-placa-e-controle-de-dano-05257777",
+       "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
+       "a-fratura-do-colo-do-mesmo-lado-8484e205",
+       "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+       "haste-retrograda-a6c8b54a",
+       "haste-retrograda-fd5c0178",
+       "situacoes-especiais-21ad104d",
+       "fixador-externo-placa-e-controle-de-dano-59f7d886"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "f92e111e7181d14a4c8b0e135a4c8224d3272ed778507fad672fc343bf673f27"
+     }
+    ],
+    "questaoSha256": "bc8ff73602b7438d6601a446407723b2892c6c96538c12c4519678f9d32808b2",
+    "comentarioSha256": "8cb30afb260c81ddb6238e2db10d1ffcfe8e65bb8afe4ce09aef3e7915a92c7a"
+   }
   },
   "trauma-0132": {
    "tema": "trauma",
@@ -47265,7 +47341,7 @@
      }
     ],
     "questaoSha256": "e8c6985355fcbd24aad689f1014e05db2e336bad01d034310c58fb2f0ecd273e",
-    "comentarioSha256": "8c9339bd976fec7b610eceaff03fe925d4531ca1b9c2001a08dd4501d0e56262"
+    "comentarioSha256": "6f2bed210090e4f6817dc2b2057db32ac629a39ca3570a635ff1fb05b141fb60"
    }
   },
   "trauma-0237": {
@@ -52273,19 +52349,22 @@
       "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
       "secoes": [
        "Situações especiais",
-       "Fixador externo, placa e controle de dano"
+       "Fixador externo, placa e controle de dano",
+       "Haste anterógrada: o ponto de entrada"
       ],
       "blocos": [
        "situacoes-especiais-e2be09da",
+       "situacoes-especiais-034a55d1",
        "fixador-externo-placa-e-controle-de-dano-373ad787",
-       "fixador-externo-placa-e-controle-de-dano-5b33401f"
+       "fixador-externo-placa-e-controle-de-dano-5b33401f",
+       "haste-anterograda-o-ponto-de-entrada-c8f3d97b"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "69ae473cd4c9b3fcdfa6aa4e18c7cd9726a7c0e77543aefdba149309326f0561"
+      "trechosSha256": "ded4304195e57f9ea5a63e47170f69555a5257297dbb64536f2c3e545a58570b"
      }
     ],
     "questaoSha256": "3da715e1aec41a8c6cc5505ee1fbd114a5ce1d1d3b7281e28efde8c37fdb568c",
-    "comentarioSha256": "07911bc7baa9420e13752355f7a7ad6c9df90835db2ae61c8b8f496aa5b0527d"
+    "comentarioSha256": "fed988d789ab7e54b718d21ef748b1ba74bfd74efce361cd52a26ce5604e04ad"
    }
   },
   "trauma-0569": {
@@ -52529,14 +52608,15 @@
       ],
       "blocos": [
        "haste-anterograda-o-ponto-de-entrada-469e83ef",
+       "haste-anterograda-o-ponto-de-entrada-0550ca82",
        "haste-anterograda-o-ponto-de-entrada-2e8e945f"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "f4fdfa4001fc556fada755e468541a94273ace0aa1d01a0a68ffde7adad55e86"
+      "trechosSha256": "9978128cc3a3afa1bbf038dc2dd36f3fcf65de04ed02792daad3875168e21fed"
      }
     ],
     "questaoSha256": "9b3c1ca71d1ec0daa92979ed76a61beccb1dcbc674aa9dc38539f29070073048",
-    "comentarioSha256": "8f678dc218dfe11d785837100f4500dc0da422b9ef17b134d193032f9cc1f10a"
+    "comentarioSha256": "54cd7656e9bcc1c410fa030304059056c2f957de8905d841f380361148f58da6"
    }
   },
   "trauma-0580": {
@@ -57693,14 +57773,16 @@
       "blocos": [
        "haste-retrograda-c19a5fde",
        "haste-retrograda-a6c8b54a",
-       "haste-retrograda-fd5c0178"
+       "haste-retrograda-fd5c0178",
+       "haste-retrograda-8469a2aa",
+       "haste-retrograda-12ebdd31"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "2f23448af6ca72ed6eda47ee17b0bc78898f80a95c5cb786e5ba519aa240cc0a"
+      "trechosSha256": "08f1c1b73cf365f078fa97630bbbffefb32d3053e21b79f0da9f85275259385d"
      }
     ],
     "questaoSha256": "40042561c1e76bda2bcc63ebb34a23904a280d9dd2d7e79ec92e73b3f84a00a3",
-    "comentarioSha256": "8aebf0474a85ecf894962f2affb951feba4d476de5dece99377cd1da16010326"
+    "comentarioSha256": "a26d84a956a13e3b0903fb250cc3af7ee4e3cdc4076e189cb83ba2a0407739e3"
    }
   },
   "trauma-0886": {
@@ -58987,7 +59069,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -59002,7 +59084,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "90dccb422bb93f3d0c4b230f13bc860558b826c96ebc0c4f16af1a50c9cd0fc4"
+   "questaoSha256": "90dccb422bb93f3d0c4b230f13bc860558b826c96ebc0c4f16af1a50c9cd0fc4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo e lesões associadas"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-e-lesoes-associadas-c3bbb661",
+       "epidemiologia-mecanismo-e-lesoes-associadas-49576002",
+       "epidemiologia-mecanismo-e-lesoes-associadas-b22e4239",
+       "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "5e65130a38ff26452eaa36a4c7a09b74819b891c68a3cdf002f875d4d8d1cb38"
+     }
+    ],
+    "questaoSha256": "90dccb422bb93f3d0c4b230f13bc860558b826c96ebc0c4f16af1a50c9cd0fc4",
+    "comentarioSha256": "9117eede4f1da63f1f6978cea1fa98a95958680caa5c8973a9e7516109559662"
+   }
   },
   "trauma-0939": {
    "tema": "trauma",
@@ -74860,7 +74968,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74883,7 +74991,34 @@
     "rockwood10-51-acetabulo",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "972aa437978042297ff6d180f614b5849a12a7eca96e64012c52999a82ed3788"
+   "questaoSha256": "972aa437978042297ff6d180f614b5849a12a7eca96e64012c52999a82ed3788",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada",
+       "Fixador externo, placa e controle de dano"
+      ],
+      "blocos": [
+       "haste-retrograda-fd5c0178",
+       "haste-retrograda-a6c8b54a",
+       "haste-retrograda-c19a5fde",
+       "fixador-externo-placa-e-controle-de-dano-373ad787"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "ef972be755d590769b9aa6705872cd164926a0400217b4bfe95dc911612e19ca"
+     }
+    ],
+    "questaoSha256": "972aa437978042297ff6d180f614b5849a12a7eca96e64012c52999a82ed3788",
+    "comentarioSha256": "cb95741ff80730641c0d6de18c88c0c02b79603146d9bcc1131183dcfe1b9034"
+   }
   },
   "trauma-1531": {
    "tema": "trauma",
@@ -78611,7 +78746,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78634,7 +78769,34 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "72a9867b9fe07b5c1504e3e2bece6559982392d3623378b91a168ce7543c66e0"
+   "questaoSha256": "72a9867b9fe07b5c1504e3e2bece6559982392d3623378b91a168ce7543c66e0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste retrógrada"
+      ],
+      "blocos": [
+       "haste-retrograda-d0c23ae9",
+       "haste-retrograda-8469a2aa",
+       "haste-retrograda-c9d138a5",
+       "haste-retrograda-e34374de",
+       "haste-retrograda-cc1ee60b"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "9bdead148033cb2a17a6e857d99348ab7cae3c6edda979d18631faa9dc902fa1"
+     }
+    ],
+    "questaoSha256": "72a9867b9fe07b5c1504e3e2bece6559982392d3623378b91a168ce7543c66e0",
+    "comentarioSha256": "d3b3cc49ba2975ad0ab2c9ca2fc6368c23c8e290680c7aad547e959972bb3ab9"
+   }
   },
   "trauma-1640": {
    "tema": "trauma",
@@ -79005,7 +79167,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -79020,7 +79182,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "d5cda62c0eff8675e92a344dfa4b614bd5b88812f02a01f8dc4957691dac0d8b"
+   "questaoSha256": "d5cda62c0eff8675e92a344dfa4b614bd5b88812f02a01f8dc4957691dac0d8b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo e lesões associadas"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-e-lesoes-associadas-c3bbb661",
+       "epidemiologia-mecanismo-e-lesoes-associadas-49576002",
+       "epidemiologia-mecanismo-e-lesoes-associadas-b22e4239",
+       "epidemiologia-mecanismo-e-lesoes-associadas-2349852b"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "8ff8bba05befc382b686f840215a90ff442a978a949ad78324c08fd5f8dfd36d"
+     }
+    ],
+    "questaoSha256": "d5cda62c0eff8675e92a344dfa4b614bd5b88812f02a01f8dc4957691dac0d8b",
+    "comentarioSha256": "71acfc22f38b9f6a457d56d228d3e70737b28968d1fc2456e2682e8939a2498d"
+   }
   },
   "trauma-1656": {
    "tema": "trauma",
@@ -79063,14 +79251,18 @@
       "blocos": [
        "a-fratura-do-colo-do-mesmo-lado-ef55cada",
        "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
-       "a-fratura-do-colo-do-mesmo-lado-8484e205"
+       "a-fratura-do-colo-do-mesmo-lado-8484e205",
+       "a-fratura-do-colo-do-mesmo-lado-447c2a22",
+       "a-fratura-do-colo-do-mesmo-lado-754eb6d6",
+       "a-fratura-do-colo-do-mesmo-lado-ab880107",
+       "a-fratura-do-colo-do-mesmo-lado-38892e1f"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "db6822dfe5af5c0245f1aa61e074ff5ef59468f5bdcfa1dd5c3778099b0f51c2"
+      "trechosSha256": "b57907f405e9c1861cbfdc66a072dd74708371f8463c3ec952c5c4194c4ea30c"
      }
     ],
     "questaoSha256": "532e9b90a3414e37600e984a5ef08f7879852a43b4c59d4507e2959882fbbc59",
-    "comentarioSha256": "ba8dc24929d53929b1347feca1311da179a42748d3843472a5c4776706b01143"
+    "comentarioSha256": "5d7c56d4d8f05e9f15d9ef38079424b783b2beeca7d77b4c1fbcdca9af1277d0"
    }
   },
   "trauma-1657": {
@@ -79436,14 +79628,16 @@
       "blocos": [
        "comprimento-e-rotacao-cd6531f5",
        "comprimento-e-rotacao-caa0f7cf",
-       "comprimento-e-rotacao-4c2e7a3a"
+       "comprimento-e-rotacao-4c2e7a3a",
+       "comprimento-e-rotacao-2bbb6c9f",
+       "comprimento-e-rotacao-71fbeed5"
       ],
       "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-      "trechosSha256": "75a220560b3d290f41c18811c4171e8fbf63f07bdf6ac0e01f55674f7b0e7ff1"
+      "trechosSha256": "b4adc4013be4b17ddd2736d61d8b02d0fd5b6b2e1ee52ac6299b9ffa707a3517"
      }
     ],
     "questaoSha256": "ed4ac93913768c7f166b8e99226aa264655bfdb85fe719a469cf290acca57345",
-    "comentarioSha256": "29736f33a87f1926d9b11f086ae8bc95c55023e756eb212f12d4468a929198c0"
+    "comentarioSha256": "ac181b2adca7dace79d4048b9a94f208df7a05c33c69476a8238a7d5fe92f203"
    }
   },
   "trauma-1665": {
@@ -79453,7 +79647,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -79468,7 +79662,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "ff8f3db1b1088e03d8268ad16329fcdfcc12e4035e47ef5c9eb908f1526e481b"
+   "questaoSha256": "ff8f3db1b1088e03d8268ad16329fcdfcc12e4035e47ef5c9eb908f1526e481b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Fixador externo, placa e controle de dano"
+      ],
+      "blocos": [
+       "fixador-externo-placa-e-controle-de-dano-373ad787",
+       "fixador-externo-placa-e-controle-de-dano-d96d3150",
+       "fixador-externo-placa-e-controle-de-dano-20d4259a",
+       "fixador-externo-placa-e-controle-de-dano-d740b6e2"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "0bdfbade44acbc419b6173a2ef633c0112e7fcd79c932c9d2c66cad3d24ef064"
+     }
+    ],
+    "questaoSha256": "ff8f3db1b1088e03d8268ad16329fcdfcc12e4035e47ef5c9eb908f1526e481b",
+    "comentarioSha256": "36eb34bcec5e310b5d3b70b80e13227a4f7161aa5ebca4c293c9df9fd294ff53"
+   }
   },
   "trauma-1666": {
    "tema": "trauma",
@@ -79477,7 +79697,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -79492,7 +79712,31 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "e1a7b6d0838330cbf40d64c6a04b35a2239eeac4bcb6bfa5e6247e820fbf7bdb"
+   "questaoSha256": "e1a7b6d0838330cbf40d64c6a04b35a2239eeac4bcb6bfa5e6247e820fbf7bdb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Posicionamento e mesa de tração"
+      ],
+      "blocos": [
+       "posicionamento-e-mesa-de-tracao-a31ba87c",
+       "posicionamento-e-mesa-de-tracao-a573848a"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "32f62cc0c4f0064fc44862b73599ddb3a2de39cbc607b6b2ff63b888bb36ed78"
+     }
+    ],
+    "questaoSha256": "e1a7b6d0838330cbf40d64c6a04b35a2239eeac4bcb6bfa5e6247e820fbf7bdb",
+    "comentarioSha256": "3211187639a57f604779d3ef44701f6824a4734e306dcdd6dd61113c627c10f5"
+   }
   },
   "trauma-1667": {
    "tema": "trauma",
@@ -79501,7 +79745,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -79516,7 +79760,34 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "532dbec8e0499ee18acb006c844f84bdd8acc5f6db811e46fd8d527fafab2956"
+   "questaoSha256": "532dbec8e0499ee18acb006c844f84bdd8acc5f6db811e46fd8d527fafab2956",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Anatomia aplicada e forças deformantes",
+       "Pseudartrose, infecção, retirada e quebra da haste"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-forcas-deformantes-9db652ad",
+       "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979",
+       "pseudartrose-infeccao-retirada-e-quebra-da-haste-4fb4bece",
+       "pseudartrose-infeccao-retirada-e-quebra-da-haste-f057c4bb"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "6aa0cedaaedf1fb796f2de7b77880163182e94e9a1246663110790f5b107963c"
+     }
+    ],
+    "questaoSha256": "532dbec8e0499ee18acb006c844f84bdd8acc5f6db811e46fd8d527fafab2956",
+    "comentarioSha256": "d2ea86d4bfe43594cae440dbf30ce57e7124ad4e2a6b90ccea320aec947a7837"
+   }
   },
   "trauma-1668": {
    "tema": "trauma",
@@ -79526,7 +79797,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -79542,7 +79813,30 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "9aa604e3e204d6234251f40e7c499dda3aa91fedbbfecbe13df1dc8d4d4c36b3"
+   "questaoSha256": "9aa604e3e204d6234251f40e7c499dda3aa91fedbbfecbe13df1dc8d4d4c36b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo e lesões associadas"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "3ec77b940ee739af0e59fc9ed2f06abbf857be31ee4528554ca55cac3f9edad8"
+     }
+    ],
+    "questaoSha256": "9aa604e3e204d6234251f40e7c499dda3aa91fedbbfecbe13df1dc8d4d4c36b3",
+    "comentarioSha256": "bebc0795170e69b90ca42575f8e4e9cea5111bd696ee5e17897b2bd4f83477dc"
+   }
   },
   "trauma-1669": {
    "tema": "trauma",

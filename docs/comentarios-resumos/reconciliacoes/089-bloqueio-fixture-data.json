@@ -1,0 +1,15 @@
+{
+  "data": "2026-10-23",
+  "basePublicada": "7bb4003976c1729e5c5144b835ca6176f031a364",
+  "fixture": "fixtures/testar_gatilhos_email.mjs",
+  "linha": 149,
+  "falhaReal": "AssertionError: dias para a prova: 79; esperado >=80 e <=90",
+  "dataProvaFixa": "2027-01-10",
+  "referenciaAGORADeclaradaNoTeste": "2026-10-17T15:00:00-03:00",
+  "sha256FixtureBase": "98280363dc11fbbddf6eadd6ed5cc9316f0bcce77cb4ce588872870acbc17b68",
+  "sha256FixtureAtual": "98280363dc11fbbddf6eadd6ed5cc9316f0bcce77cb4ce588872870acbc17b68",
+  "baseIsoladaSemAlteracoes": "mesma falha reproduzida executando o teste extraído do commit publicado, com código da base e dependências locais",
+  "diagnosticoComDateNowFixo": "fixture passa com Date.now fixado em 2026-10-17T18:00:00Z somente no processo de diagnóstico; isso não substitui validação da suíte com relógio real nem checks do head",
+  "arquivosFuncionaisAlterados": [],
+  "conduta": "Preservar lotes 089–090 em branch/PR; aguardar checks do head e não incorporar com falha. Não mudar e-mails, Supabase, pagamentos ou workflows neste escopo."
+}
