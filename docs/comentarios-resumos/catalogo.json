@@ -40530,24 +40530,31 @@
        "Mecanismo, lesões associadas e quadro clínico",
        "Fratura desviada no idoso",
        "Anatomia aplicada",
+       "Como ler este capítulo",
        "Diagnóstico por imagem"
       ],
       "blocos": [
+       "classificacoes-12519f03",
        "classificacoes-113a1994",
+       "classificacoes-1854670c",
+       "classificacoes-6479ca47",
        "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
        "fratura-sem-desvio-garden-i-e-ii-2ce21a8e",
+       "fratura-sem-desvio-garden-i-e-ii-4daa1011",
        "mecanismo-lesoes-associadas-e-quadro-clinico-b64d530b",
        "fratura-desviada-no-idoso-46218195",
        "fratura-desviada-no-idoso-25acc61c",
        "anatomia-aplicada-fc34becd",
-       "diagnostico-por-imagem-63f9a6b1"
+       "como-ler-este-capitulo-4e10b9c9",
+       "diagnostico-por-imagem-63f9a6b1",
+       "fratura-desviada-no-idoso-9ceafc6a"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "499c412b1ea384953a581ff82003d1d6626ec76af32e87c619b0c4b45b6b8e42"
+      "trechosSha256": "ca1f772a62d0d59f348e47ff66c865acab3db59e7915ff6d49a8e7ce9cc67a68"
      }
     ],
     "questaoSha256": "6db02696d013be6fd4347e0b68043174779ffa1d36c91b77f86d96d88b3296b4",
-    "comentarioSha256": "ceb06b013b51b837aab8674a78cf39a3df4b19458b23cf654cc22b00ced305f9"
+    "comentarioSha256": "f27bdf09fde4d0ba12ad511fea2735897a930a8083fba4ecbd82862b46881107"
    }
   },
   "quadril-0510": {
@@ -57051,20 +57058,26 @@
       "capitulo": "Capítulo 53 · Femoral Neck Fractures",
       "secoes": [
        "Fratura desviada no jovem",
-       "Anatomia aplicada"
+       "Anatomia aplicada",
+       "Fratura desviada no idoso",
+       "Complicações"
       ],
       "blocos": [
        "fratura-desviada-no-jovem-0b5ab099",
        "fratura-desviada-no-jovem-48422559",
        "fratura-desviada-no-jovem-0d3d7820",
-       "anatomia-aplicada-a8c38522"
+       "anatomia-aplicada-a8c38522",
+       "anatomia-aplicada-666e0ba0",
+       "fratura-desviada-no-jovem-43725930",
+       "fratura-desviada-no-idoso-9ceafc6a",
+       "complicacoes-7f006830"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "90faea8b0ac781aa682a0ac05441b12a5fb28ab41aa2cce18c1b349a07383ab7"
+      "trechosSha256": "64152e8ea7cb44f68218f934daff748e6fe62e609c447d5c10173947c0b6fbf5"
      }
     ],
     "questaoSha256": "5f06d50304be73994c9ffdb20d535d77c22caf903a81239492eea536b8f053aa",
-    "comentarioSha256": "3b34eb790d2fa64d4daf420038ada0818edb78f856c5b2652fece9b62a890b65"
+    "comentarioSha256": "f78b27112c8c6bc8c56959fc9f775a781581115e2d763da9d14948b58227bb04"
    }
   },
   "trauma-0864": {
@@ -58082,14 +58095,15 @@
        "fratura-desviada-no-jovem-48422559",
        "fratura-desviada-no-jovem-0b5ab099",
        "fratura-desviada-no-jovem-0d3d7820",
+       "fratura-desviada-no-jovem-0dc33d7e",
        "fratura-desviada-no-jovem-38a46d78"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "e53e93e945be9e8bb8c8ca6d00436dab1e452e025a04de916d9be57f4a7ca8b9"
+      "trechosSha256": "486b9e1d75f341c03c0bb73442f7577ca6b9504ef8d7c7234ddb880cb2056a20"
      }
     ],
     "questaoSha256": "11d007cfb9dfb6807c4088ae65cce514ee3568a58ecd57da9be5de6a1158e9fe",
-    "comentarioSha256": "f1ec6b503bbd0cb485885c054a650a93b52c846c7d442b46745c54126103d0e0"
+    "comentarioSha256": "c2987821b4a6beb610a8c254a410c3b2065a2801c62b6e919283a78c27240daf"
    }
   },
   "trauma-0900": {
@@ -75252,15 +75266,17 @@
        "classificacoes-0fec7b18",
        "fratura-desviada-no-jovem-90ec4b8d",
        "fratura-desviada-no-jovem-43725930",
+       "fratura-desviada-no-jovem-be509df6",
+       "fratura-desviada-no-jovem-4a7eaa22",
        "fratura-desviada-no-idoso-1d56bc28",
        "complicacoes-5c3aaed4"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "8a84851b4cb8d2c3335a83fd5cd87db375fe8893a4ce77b6636190668cbf7022"
+      "trechosSha256": "b2f3835748c5324cbac4614ba737dbc995361c4581b2eae2042d459cd58bbfe3"
      }
     ],
     "questaoSha256": "fb251137fb3e555bd91179d046eb5ea0cac0b3ff6baebe807b387e907ec700d4",
-    "comentarioSha256": "158a2c30e270c77d046016f77a65f7a09bb17c10a744c28396c5eb3330839ab5"
+    "comentarioSha256": "ca7d6e908c5fd7b7223bb534e7ac2c8a661c6dccc8e0d1818706ce56038df850"
    }
   },
   "trauma-1545": {
@@ -75301,14 +75317,15 @@
       ],
       "blocos": [
        "fratura-desviada-no-jovem-48422559",
-       "fratura-desviada-no-jovem-0b5ab099"
+       "fratura-desviada-no-jovem-0b5ab099",
+       "fratura-desviada-no-jovem-43725930"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "ac2f8deb44e93b30c9bd8b2a1e112fc8f91b844d02798abcb849176bf3608a24"
+      "trechosSha256": "769721d60f26e5c9eab20945870493d71e20a0dc9121f5a44c68992bdaa5f008"
      }
     ],
     "questaoSha256": "d6f04c0bed53041797038258f07f61a67d5e075d2779343af3181eaf36aecb7b",
-    "comentarioSha256": "043f98d1a0b81620203ae949bff343378179e1a74944679e98f14721500e0015"
+    "comentarioSha256": "6724542618205f1d3c8415674a74bd8360d87c4f11783fd1feda8538d8052144"
    }
   },
   "trauma-1546": {
@@ -75396,19 +75413,23 @@
       "capitulo": "Capítulo 53 · Femoral Neck Fractures",
       "secoes": [
        "Fratura desviada no jovem",
+       "Mecanismo, lesões associadas e quadro clínico",
        "Fratura desviada no idoso"
       ],
       "blocos": [
        "fratura-desviada-no-jovem-0dc33d7e",
-       "fratura-desviada-no-idoso-dbdc1565",
-       "fratura-desviada-no-idoso-9ceafc6a"
+       "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+       "fratura-desviada-no-idoso-9ceafc6a",
+       "fratura-desviada-no-jovem-be509df6",
+       "fratura-desviada-no-jovem-43725930",
+       "fratura-desviada-no-idoso-dbdc1565"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "62b4f1a5e2a4a36aaaea4cd7df54d454fc6b4ec6195310cee20d0a058c50e7cd"
+      "trechosSha256": "222cfac2926a6fe7f256e5853f40d85a56e88a983723dccc6a098070dd64f062"
      }
     ],
     "questaoSha256": "2b41e74efcdfa10b8cbb283fd194df26c05f92bd9341b8e86038820111d4d035",
-    "comentarioSha256": "7373494db6a4c9b36d807797965cfb49e59f547f45a3dbed25661239cdcc784e"
+    "comentarioSha256": "d70be6d24c340e271d2752eba99635e2084ccffa25ddc36e4d07e32f1c6a8638"
    }
   },
   "trauma-1548": {
@@ -76005,19 +76026,21 @@
       "secoes": [
        "Fratura sem desvio (Garden I e II)",
        "Complicações",
+       "Fratura desviada no idoso",
        "Classificações"
       ],
       "blocos": [
        "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
        "complicacoes-7f006830",
+       "fratura-desviada-no-idoso-9ceafc6a",
        "classificacoes-3fbece93"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "2701a585789af7004bad6d7e59008b084d672bc5e0867bd010c3befe1734665e"
+      "trechosSha256": "1a13dd0698b7291d26c95f20f60446a1bb991bb21d02fd52c62cad449ee81493"
      }
     ],
     "questaoSha256": "277eb9cab45f6b5dc1013ca233939bf3a9dcb8e8b669df16f6e4ed98d24c4801",
-    "comentarioSha256": "a378aed13750030e84be4ec2a97eeac7a7d8a782ddaad7f49548210e126d60f1"
+    "comentarioSha256": "24cf54e12f03a6f751be1ae60bb8cce2dff3316246551169a54ce82aa96a644d"
    }
   },
   "trauma-1560": {
@@ -76125,7 +76148,7 @@
      }
     ],
     "questaoSha256": "5ec85af8affaa828c81ffa3e40c5fb339772f9f6aa66bdb71a15eb6b6de3d2c3",
-    "comentarioSha256": "7df2596aa79fb81d43f28e3107d5c41cd43a80c0479ee101581fd876d0f9c306"
+    "comentarioSha256": "7ca31ef0b0320f38ece1ae2bf9115218cae2c626be600fb93aec0f19a28c7693"
    }
   },
   "trauma-1562": {
@@ -76259,17 +76282,19 @@
       "edicao": "10ª edição (2025)",
       "capitulo": "Capítulo 53 · Femoral Neck Fractures",
       "secoes": [
-       "Fratura desviada no jovem"
+       "Fratura desviada no jovem",
+       "Complicações"
       ],
       "blocos": [
-       "fratura-desviada-no-jovem-d7b0a2eb"
+       "fratura-desviada-no-jovem-d7b0a2eb",
+       "complicacoes-7f006830"
       ],
       "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
-      "trechosSha256": "ec24d41a0eba16c50a57532c61c96970ece380389997bfc75b6c497d1c3deccd"
+      "trechosSha256": "b8c36c9cfb4b6951d35c9e4125810957ac6ce7975472c888ecbd3e2d3b012bfa"
      }
     ],
     "questaoSha256": "3bad323f18d742a86ce644b111a96e7d4a4aea69e8b4fc53643e669693825b6a",
-    "comentarioSha256": "618ae116ea42a34d0b07e616e160b84c724c89f79ff85d0d1a85a02ea9d08f86"
+    "comentarioSha256": "8ac9ac870659e98c60edcfee10aa934ba8dc5534fa74beaad41c350539b6c412"
    }
   },
   "trauma-1565": {
@@ -76318,7 +76343,7 @@
      }
     ],
     "questaoSha256": "98537b008698340f909df9543a6d94c793534f60cf397d88f4e06d30ff39bfbb",
-    "comentarioSha256": "c46c71864ab662cd6257d3599d48217700c2a9b3031e8eda13b987ffbd1f8c60"
+    "comentarioSha256": "3f504b7871d7897f3f7b37331babe2e859442ae67f52f61ea27d6762e5f02afd"
    }
   },
   "trauma-1566": {
