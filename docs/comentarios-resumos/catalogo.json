@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1436,
+  "pendente": 1388,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 59,
-  "pendente-inspecao-imagem": 170,
-  "revisada": 607
+  "pendente-fonte": 86,
+  "pendente-inspecao-imagem": 166,
+  "revisada": 632
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -27,9 +27,9 @@
    "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
    "estados": {
     "duplicada": 2,
-    "pendente": 52,
-    "pendente-inspecao-imagem": 4,
-    "revisada": 10
+    "pendente": 4,
+    "pendente-fonte": 27,
+    "revisada": 35
    }
   },
   "rockwood10-33-fratura-escapula": {
@@ -81,10 +81,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 80,
+    "pendente": 79,
     "pendente-fonte": 3,
     "pendente-inspecao-imagem": 15,
-    "revisada": 73
+    "revisada": 74
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -162,9 +162,9 @@
    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
    "estados": {
     "duplicada": 2,
-    "pendente": 53,
-    "pendente-inspecao-imagem": 7,
-    "revisada": 1
+    "pendente": 51,
+    "pendente-inspecao-imagem": 6,
+    "revisada": 4
    }
   },
   "rockwood10-54-transtrocanterica": {
@@ -181,9 +181,9 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 65,
+    "pendente": 64,
     "pendente-inspecao-imagem": 1,
-    "revisada": 4
+    "revisada": 5
    }
   },
   "rockwood10-58-femur-distal": {
@@ -199,8 +199,9 @@
    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
    "estados": {
     "duplicada": 14,
-    "pendente": 67,
-    "pendente-inspecao-imagem": 2
+    "pendente": 66,
+    "pendente-inspecao-imagem": 2,
+    "revisada": 1
    }
   },
   "rockwood10-61-luxacao-joelho": {
@@ -227,11 +228,11 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 88,
+    "pendente": 87,
     "pendente-anulada": 2,
     "pendente-fonte": 11,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 47
+    "pendente-inspecao-imagem": 1,
+    "revisada": 49
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -1267,8 +1268,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O cap. 24 descreve dor na espondilólise (fratura da pars), mas a questão pergunta a manifestação inicial mais frequente da espondilolistese na criança/adolescente. Falta fonte específica dessa condição e população que compare dor, deformidade, marcha e radiculopatia; não transferir o ranking de outra doença.",
    "temComentario": true,
    "citacoes": [
     {
@@ -1282,7 +1283,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "08a1bbb30674481bf41dd9e0d236b58352eee0d8d32eb7e7324d9b9a9975e8fe"
+   "questaoSha256": "08a1bbb30674481bf41dd9e0d236b58352eee0d8d32eb7e7324d9b9a9975e8fe",
+   "pendencia": "O cap. 24 descreve dor na espondilólise (fratura da pars), mas a questão pergunta a manifestação inicial mais frequente da espondilolistese na criança/adolescente. Falta fonte específica dessa condição e população que compare dor, deformidade, marcha e radiculopatia; não transferir o ranking de outra doença."
   },
   "coluna-0208": {
    "tema": "coluna",
@@ -1339,8 +1341,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo aborda a pars, não fornece o critério de progressão de escorregamento >50% nem os critérios pediátricos de estabilidade/cronicidade da espondilolistese. Conferir essas afirmações e cada distrator em fonte específica de espondilolistese antes de validar a alternativa C inteira.",
    "temComentario": true,
    "citacoes": [
     {
@@ -1354,7 +1356,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "31660d28ba76d176990c242259261efe49143b33c036f6aa41981532e7da6ae8"
+   "questaoSha256": "31660d28ba76d176990c242259261efe49143b33c036f6aa41981532e7da6ae8",
+   "pendencia": "O resumo aborda a pars, não fornece o critério de progressão de escorregamento >50% nem os critérios pediátricos de estabilidade/cronicidade da espondilolistese. Conferir essas afirmações e cada distrator em fonte específica de espondilolistese antes de validar a alternativa C inteira."
   },
   "coluna-0238": {
    "tema": "coluna",
@@ -4424,8 +4427,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo fornece o padrão trifásico da fratura, mas não a fisiologia de distribuição extracelular, fluxo, pool, atividade osteoblástica e depuração renal que decide as quatro alternativas. Necessária fonte de medicina nuclear para conferir a definição de cada fase; não usar apenas o padrão focal/tardio como prova de D.",
    "temComentario": true,
    "citacoes": [
     {
@@ -4439,7 +4442,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "9caa3cd44f5e8015df443774e52c61550b552e185c538ad3a7a171e59e57e0cf"
+   "questaoSha256": "9caa3cd44f5e8015df443774e52c61550b552e185c538ad3a7a171e59e57e0cf",
+   "pendencia": "O resumo fornece o padrão trifásico da fratura, mas não a fisiologia de distribuição extracelular, fluxo, pool, atividade osteoblástica e depuração renal que decide as quatro alternativas. Necessária fonte de medicina nuclear para conferir a definição de cada fase; não usar apenas o padrão focal/tardio como prova de D."
   },
   "conceitos-basicos-0095": {
    "tema": "conceitos-basicos",
@@ -24499,8 +24503,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O caso é Jones aguda sem desvio após entorse e informa apenas praticante de esportes. O cap. 24 discute principalmente estresse proximal e diferencia atleta de alta demanda de não atleta; não define qual demanda este paciente tem nem um algoritmo suficiente para Jones traumática aguda. Necessária fonte específica de Jones para comparar bota por seis semanas, restrição de carga e fixação sem presumir alto rendimento.",
    "temComentario": true,
    "citacoes": [
     {
@@ -24514,7 +24518,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "426f424b9ae1951e11f91fbecce9e271cf2374cef62201793fdc3f16266f63ed"
+   "questaoSha256": "426f424b9ae1951e11f91fbecce9e271cf2374cef62201793fdc3f16266f63ed",
+   "pendencia": "O caso é Jones aguda sem desvio após entorse e informa apenas praticante de esportes. O cap. 24 discute principalmente estresse proximal e diferencia atleta de alta demanda de não atleta; não define qual demanda este paciente tem nem um algoritmo suficiente para Jones traumática aguda. Necessária fonte específica de Jones para comparar bota por seis semanas, restrição de carga e fixação sem presumir alto rendimento."
   },
   "pe-tornozelo-0377": {
    "tema": "pe-tornozelo",
@@ -26160,8 +26165,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo é de adultos e descreve diáfise distal do corredor e base do segundo metatarso da bailarina. Falta a distribuição por sítio no pé da criança, especialmente colo do segundo versus terceiro e diáfises. Não converter dados adultos em ranking pediátrico.",
    "temComentario": true,
    "citacoes": [
     {
@@ -26175,7 +26180,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "310ca59f8e5cc9bd32fc9bd4de3900e9d05b78de71a712bf4d3a4e35a2d97f6c"
+   "questaoSha256": "310ca59f8e5cc9bd32fc9bd4de3900e9d05b78de71a712bf4d3a4e35a2d97f6c",
+   "pendencia": "O capítulo é de adultos e descreve diáfise distal do corredor e base do segundo metatarso da bailarina. Falta a distribuição por sítio no pé da criança, especialmente colo do segundo versus terceiro e diáfises. Não converter dados adultos em ranking pediátrico."
   },
   "pediatria-0598": {
    "tema": "pediatria",
@@ -38579,8 +38585,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Enunciado e figura foram lidos/abertos. A questão pede distinguir síndrome dolorosa do grande trocânter de osteoartrite, impacto e fratura por estresse, com testes resistidos e imagem peritrocantérica. O cap. 24 descreve estresse, mas não fornece os critérios clínico-radiológicos dessas outras condições. Necessária fonte específica de dor lateral do quadril e correlação com a RM para analisar todas as alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38594,7 +38600,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "eb08648ea7ecc144bb0793f27f379493ef1b0f1dbacd96e526ad39fc8222c10f"
+   "questaoSha256": "eb08648ea7ecc144bb0793f27f379493ef1b0f1dbacd96e526ad39fc8222c10f",
+   "pendencia": "Enunciado e figura foram lidos/abertos. A questão pede distinguir síndrome dolorosa do grande trocânter de osteoartrite, impacto e fratura por estresse, com testes resistidos e imagem peritrocantérica. O cap. 24 descreve estresse, mas não fornece os critérios clínico-radiológicos dessas outras condições. Necessária fonte específica de dor lateral do quadril e correlação com a RM para analisar todas as alternativas."
   },
   "quadril-0219": {
    "tema": "quadril",
@@ -38749,8 +38756,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Faltam no resumo os percentuais de 5% de todas as lesões e 75% de radiografias iniciais normais, além da distribuição comparativa tensão/compressão por idade. Ele sustenta radiografia inicial pouco sensível, mas não toda a alternativa A. Conferir números e populações na fonte original.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38764,7 +38771,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "5a7325a9de1152eacb7877d2c29986b6ccaf8b4e1e9aa0b5e67bb69303ada14d"
+   "questaoSha256": "5a7325a9de1152eacb7877d2c29986b6ccaf8b4e1e9aa0b5e67bb69303ada14d",
+   "pendencia": "Faltam no resumo os percentuais de 5% de todas as lesões e 75% de radiografias iniciais normais, além da distribuição comparativa tensão/compressão por idade. Ele sustenta radiografia inicial pouco sensível, mas não toda a alternativa A. Conferir números e populações na fonte original."
   },
   "quadril-0299": {
    "tema": "quadril",
@@ -38773,8 +38781,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O texto consultado não fornece o corte de 50% da largura do colo para operar compressão, e descreve proteção por seis semanas ou mais em vez da faixa de quatro a seis da alternativa. Conferir o algoritmo quantitativo do colo em fonte primária antes de validar toda A.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38788,7 +38796,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "13f11f6c0be80d453d17f807653a5e0536e782349d1fb0bdbbbbad5a4d26e823"
+   "questaoSha256": "13f11f6c0be80d453d17f807653a5e0536e782349d1fb0bdbbbbad5a4d26e823",
+   "pendencia": "O texto consultado não fornece o corte de 50% da largura do colo para operar compressão, e descreve proteção por seis semanas ou mais em vez da faixa de quatro a seis da alternativa. Conferir o algoritmo quantitativo do colo em fonte primária antes de validar toda A."
   },
   "quadril-0300": {
    "tema": "quadril",
@@ -38797,8 +38806,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo não nomeia classificação A/B/C do colo nem define o corte de 50% do traço para a categoria B. Necessária a definição formal dessa classificação e seu algoritmo; a mecânica tensão/compressão isolada não prova todos os componentes de A.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38812,7 +38821,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "5e64a9a7f9e13113ae8df9b3abddbf1284c8639e2f69e87639deb6d363e04da9"
+   "questaoSha256": "5e64a9a7f9e13113ae8df9b3abddbf1284c8639e2f69e87639deb6d363e04da9",
+   "pendencia": "O resumo não nomeia classificação A/B/C do colo nem define o corte de 50% do traço para a categoria B. Necessária a definição formal dessa classificação e seu algoritmo; a mecânica tensão/compressão isolada não prova todos os componentes de A."
   },
   "quadril-0301": {
    "tema": "quadril",
@@ -38821,8 +38831,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo descreve progressão da dor da atividade às tarefas diárias, mas não define fases aguda/subaguda com os critérios celulares e temporais da opção A, incluindo atividade osteoclástica. Falta fonte que vincule explicitamente esses estágios ao quadro clínico.",
    "temComentario": true,
    "citacoes": [
     {
@@ -38836,7 +38846,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "add57265a18715dda2095a8f5fdb59fd802467647aa51fa1be7b91ab991ea421"
+   "questaoSha256": "add57265a18715dda2095a8f5fdb59fd802467647aa51fa1be7b91ab991ea421",
+   "pendencia": "O resumo descreve progressão da dor da atividade às tarefas diárias, mas não define fases aguda/subaguda com os critérios celulares e temporais da opção A, incluindo atividade osteoclástica. Falta fonte que vincule explicitamente esses estágios ao quadro clínico."
   },
   "quadril-0328": {
    "tema": "quadril",
@@ -38893,7 +38904,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -38916,7 +38927,33 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "27e85609d73376f08816e3da36200d561f797872e11b792a674298a97eea529c"
+   "questaoSha256": "27e85609d73376f08816e3da36200d561f797872e11b792a674298a97eea529c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Colo do fêmur"
+      ],
+      "blocos": [
+       "colo-do-femur-9a8e2d5d",
+       "colo-do-femur-5cfd8f77",
+       "colo-do-femur-fbdc6b09",
+       "colo-do-femur-891e93d3"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+     }
+    ],
+    "questaoSha256": "27e85609d73376f08816e3da36200d561f797872e11b792a674298a97eea529c",
+    "comentarioSha256": "db74f095fbbbf3a83a875a8f67db7db40b1ff34c871a9b48d9c10804ab00b9ff"
+   }
   },
   "quadril-0333": {
    "tema": "quadril",
@@ -39452,8 +39489,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige afirmações atribuídas ao Callaghan, incluindo padrão ligado a bisfosfonatos e comparação de insuficiência/fadiga na cortical medial basicervical. O cap. 24 não fornece essas definições regionais nem esse ranking. Conferir o texto específico do Callaghan e cada componente, sem substituir pela definição geral de fadiga.",
    "temComentario": true,
    "citacoes": [
     {
@@ -39467,7 +39504,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "b64bb0fb6edbee3c2df6907561d4a04873ceba60df80ab39f4e1e2ccb99dc1da"
+   "questaoSha256": "b64bb0fb6edbee3c2df6907561d4a04873ceba60df80ab39f4e1e2ccb99dc1da",
+   "pendencia": "A questão exige afirmações atribuídas ao Callaghan, incluindo padrão ligado a bisfosfonatos e comparação de insuficiência/fadiga na cortical medial basicervical. O cap. 24 não fornece essas definições regionais nem esse ranking. Conferir o texto específico do Callaghan e cada componente, sem substituir pela definição geral de fadiga."
   },
   "quadril-0640": {
    "tema": "quadril",
@@ -44130,8 +44168,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A tabela dos blocos do resumo e a figura 24-11 descrevem regiões I/II/III, mas não nomeiam Jones. A única atribuição explícita de Jones à II no material resumido está no comentário contextual de questões. Confirmar a associação em fonte independente antes de usar esse comentário como prova do par Jones II/estresse III.",
    "temComentario": true,
    "citacoes": [
     {
@@ -44145,7 +44183,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "936fe029be76c9f75a333cbca5d50f02751eeabd08ab8572478d1b89ac97293b"
+   "questaoSha256": "936fe029be76c9f75a333cbca5d50f02751eeabd08ab8572478d1b89ac97293b",
+   "pendencia": "A tabela dos blocos do resumo e a figura 24-11 descrevem regiões I/II/III, mas não nomeiam Jones. A única atribuição explícita de Jones à II no material resumido está no comentário contextual de questões. Confirmar a associação em fonte independente antes de usar esse comentário como prova do par Jones II/estresse III."
   },
   "trauma-0174": {
    "tema": "trauma",
@@ -45534,7 +45573,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45549,7 +45588,35 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "2c83af03ee0ce3a0db0a6a82ddcbafa221998a48ac5f905a2eedfe5bea5a8478"
+   "questaoSha256": "2c83af03ee0ce3a0db0a6a82ddcbafa221998a48ac5f905a2eedfe5bea5a8478",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fatores de risco e a tríade da mulher atleta",
+       "Coluna: espondilólise",
+       "Pelve e sacro"
+      ],
+      "blocos": [
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+       "coluna-espondilolise-b2245b5c",
+       "pelve-e-sacro-3adfa6f2"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "58d6618897863f8a1c6dc7ef068a0aaaf2de46293f659022e157231d641dcbdd"
+     }
+    ],
+    "questaoSha256": "2c83af03ee0ce3a0db0a6a82ddcbafa221998a48ac5f905a2eedfe5bea5a8478",
+    "comentarioSha256": "e1572f01e7fef54d428e565051743b3267be64660fd3925aeb1e6af8fdc619c4"
+   }
   },
   "trauma-0235": {
    "tema": "trauma",
@@ -45841,8 +45908,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A alternativa oficial C contém a expressão malformada “dalta amenorreia”. A fonte sustenta distúrbio alimentar, treino intenso e amenorreia, mas não resolve se houve erro de transcrição ou se o original dizia ausência/falta de amenorreia. Conferir o caderno original; não corrigir nem reinterpretar silenciosamente o enunciado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45856,7 +45923,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "e8df9a88fa6aa566019e4dbba1b640ba04efaa320d2b30732b9956a90a4452e8"
+   "questaoSha256": "e8df9a88fa6aa566019e4dbba1b640ba04efaa320d2b30732b9956a90a4452e8",
+   "pendencia": "A alternativa oficial C contém a expressão malformada “dalta amenorreia”. A fonte sustenta distúrbio alimentar, treino intenso e amenorreia, mas não resolve se houve erro de transcrição ou se o original dizia ausência/falta de amenorreia. Conferir o caderno original; não corrigir nem reinterpretar silenciosamente o enunciado."
   },
   "trauma-0259": {
    "tema": "trauma",
@@ -46805,8 +46873,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta fixação da crônica, tendência ao desvio do traço transverso e RM/cintilografia no diferencial com bipartida, mas não informa qual faceta é predominante na fratura longitudinal. Falta a comparação anatômica da alternativa D para analisar todas as opções sem inventar frequência.",
    "temComentario": true,
    "citacoes": [
     {
@@ -46820,7 +46888,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "654bef72186d63fc293d7c1443c42cf346cc939bb3544c989aa1e268755afffd"
+   "questaoSha256": "654bef72186d63fc293d7c1443c42cf346cc939bb3544c989aa1e268755afffd",
+   "pendencia": "O resumo sustenta fixação da crônica, tendência ao desvio do traço transverso e RM/cintilografia no diferencial com bipartida, mas não informa qual faceta é predominante na fratura longitudinal. Falta a comparação anatômica da alternativa D para analisar todas as opções sem inventar frequência."
   },
   "trauma-0295": {
    "tema": "trauma",
@@ -47006,8 +47075,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo não apresenta mecanismo da Jones verdadeira (inversão versus abdução do antepé), além de não nomear Jones na tabela de blocos anatômicos. Necessária fonte específica que defina localização e mecanismo; não derivar o movimento traumático da fratura por estresse.",
    "temComentario": true,
    "citacoes": [
     {
@@ -47021,7 +47090,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "6a9017c44984818d9bf95bd0864d8e66e8c5f244611ac74947535fface3fe23d"
+   "questaoSha256": "6a9017c44984818d9bf95bd0864d8e66e8c5f244611ac74947535fface3fe23d",
+   "pendencia": "O resumo não apresenta mecanismo da Jones verdadeira (inversão versus abdução do antepé), além de não nomear Jones na tabela de blocos anatômicos. Necessária fonte específica que defina localização e mecanismo; não derivar o movimento traumático da fratura por estresse."
   },
   "trauma-0304": {
    "tema": "trauma",
@@ -47480,8 +47550,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta sobrecarga dos metatarsos no pé plano, mas não estabelece a associação do pé cavo ao calcâneo, necessária para conferir C inteira e excluir os pares com tálus. Falta a relação específica entre arco cavo e sítio de lesão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -47495,7 +47565,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "472f63e065968719a1bc1b694a4645d3b733cfc1ee02e451d764a9ab900cc9b4"
+   "questaoSha256": "472f63e065968719a1bc1b694a4645d3b733cfc1ee02e451d764a9ab900cc9b4",
+   "pendencia": "O resumo sustenta sobrecarga dos metatarsos no pé plano, mas não estabelece a associação do pé cavo ao calcâneo, necessária para conferir C inteira e excluir os pares com tálus. Falta a relação específica entre arco cavo e sítio de lesão."
   },
   "trauma-0324": {
    "tema": "trauma",
@@ -49362,8 +49433,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo ilustra uma remadora com sexta costela lesionada, mas não fornece a faixa de quinta a oitava costelas nos canoístas. Uma imagem de caso único não prova o intervalo de C nem exclui os outros níveis. Necessária série ou descrição anatômica específica da distribuição.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49377,7 +49448,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "1fcec56f3546e8598c0b2d68abbebfcfece066c9e683aaf48a31d6ff42cea4f4"
+   "questaoSha256": "1fcec56f3546e8598c0b2d68abbebfcfece066c9e683aaf48a31d6ff42cea4f4",
+   "pendencia": "O capítulo ilustra uma remadora com sexta costela lesionada, mas não fornece a faixa de quinta a oitava costelas nos canoístas. Uma imagem de caso único não prova o intervalo de C nem exclui os outros níveis. Necessária série ou descrição anatômica específica da distribuição."
   },
   "trauma-0482": {
    "tema": "trauma",
@@ -50291,7 +50363,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50306,7 +50378,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "28a41354ed025fcc03608a5daed25853255105a8bfc0703617b8c833163daa4d"
+   "questaoSha256": "28a41354ed025fcc03608a5daed25853255105a8bfc0703617b8c833163daa4d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fatores de risco e a tríade da mulher atleta",
+       "Fisiopatologia: fadiga, reparo e insuficiência"
+      ],
+      "blocos": [
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-fb9f6f2f",
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-ec1d349d"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "ad926c89ef0b62f9b911308dbd22a556074d0b9bf615e6cdfce79b2025d54ca4"
+     }
+    ],
+    "questaoSha256": "28a41354ed025fcc03608a5daed25853255105a8bfc0703617b8c833163daa4d",
+    "comentarioSha256": "44b4ea9232d87cbf100083db5d8cb0d95a6412fccbdd2f36f058e9b5db3c0838"
+   }
   },
   "trauma-0566": {
    "tema": "trauma",
@@ -51453,7 +51552,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51468,7 +51567,37 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "d7565a4d3aa0adcb915e75e9c9eae49aff11e7bf59166d92d374a60524e2709f"
+   "questaoSha256": "d7565a4d3aa0adcb915e75e9c9eae49aff11e7bf59166d92d374a60524e2709f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Alto risco e baixo risco",
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "alto-risco-e-baixo-risco-70c9cf0c",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-b413a949",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-cf3f777a",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-596eef80",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-472f3cfb"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "ddf0e3ab58aa67be9a2e7164822c55173e0746fc69c5915945bbfcd69d1aecf0"
+     }
+    ],
+    "questaoSha256": "d7565a4d3aa0adcb915e75e9c9eae49aff11e7bf59166d92d374a60524e2709f",
+    "comentarioSha256": "3a77ffeb98ca9298334d0f9c49f70f2ff284a691059938ae71b02e0a8e5750a4"
+   }
   },
   "trauma-0695": {
    "tema": "trauma",
@@ -51897,7 +52026,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51920,7 +52049,33 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "30f58cd3a9ee0d88866b9e84f2a4b81974bf3ac0bd57a79ff5c6a99f66dbc9c1"
+   "questaoSha256": "30f58cd3a9ee0d88866b9e84f2a4b81974bf3ac0bd57a79ff5c6a99f66dbc9c1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Colo do fêmur"
+      ],
+      "blocos": [
+       "colo-do-femur-9a8e2d5d",
+       "colo-do-femur-5cfd8f77",
+       "colo-do-femur-fbdc6b09",
+       "colo-do-femur-891e93d3"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+     }
+    ],
+    "questaoSha256": "30f58cd3a9ee0d88866b9e84f2a4b81974bf3ac0bd57a79ff5c6a99f66dbc9c1",
+    "comentarioSha256": "28f72ae9228b697afa75e858da1e97700b756781fb0fb7f46d943f7953bf90cb"
+   }
   },
   "trauma-0710": {
    "tema": "trauma",
@@ -52976,8 +53131,8 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta fonte da frequência dos sítios na criança. O capítulo informa tíbia em atletas/adultos, sem ranking pediátrico entre tíbia, patela, navicular e colo. Não extrapolar para TEPOP pediátrico.",
    "temComentario": true,
    "citacoes": [
     {
@@ -52991,7 +53146,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "522f9aff1cde860f3ee2740ee51ff9af9844ad84f390e4ed9025b25c5a7e24e6"
+   "questaoSha256": "522f9aff1cde860f3ee2740ee51ff9af9844ad84f390e4ed9025b25c5a7e24e6",
+   "pendencia": "Falta fonte da frequência dos sítios na criança. O capítulo informa tíbia em atletas/adultos, sem ranking pediátrico entre tíbia, patela, navicular e colo. Não extrapolar para TEPOP pediátrico."
   },
   "trauma-0772": {
    "tema": "trauma",
@@ -53968,8 +54124,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O cap. 24 não define a classificação de DeLee nem o significado do subtipo III-A. É necessária a classificação completa para comparar avulsão extra/intra-articular e lesões metadiafisárias; não substituir por zonas I/II/III de outra divisão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -53983,7 +54139,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "55ec2f1093e9026877668b129fc408ceea970a446e26ae72bb84696eff1159d5"
+   "questaoSha256": "55ec2f1093e9026877668b129fc408ceea970a446e26ae72bb84696eff1159d5",
+   "pendencia": "O cap. 24 não define a classificação de DeLee nem o significado do subtipo III-A. É necessária a classificação completa para comparar avulsão extra/intra-articular e lesões metadiafisárias; não substituir por zonas I/II/III de outra divisão."
   },
   "trauma-0818": {
    "tema": "trauma",
@@ -54313,7 +54470,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54328,7 +54485,33 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "25fcf3e2e36c9e3a236fbd7624cdae7830151e6fdb7a7a0728627193a9b5e8e8"
+   "questaoSha256": "25fcf3e2e36c9e3a236fbd7624cdae7830151e6fdb7a7a0728627193a9b5e8e8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Colo do fêmur"
+      ],
+      "blocos": [
+       "colo-do-femur-9a8e2d5d",
+       "colo-do-femur-5cfd8f77",
+       "colo-do-femur-fbdc6b09",
+       "colo-do-femur-891e93d3"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+     }
+    ],
+    "questaoSha256": "25fcf3e2e36c9e3a236fbd7624cdae7830151e6fdb7a7a0728627193a9b5e8e8",
+    "comentarioSha256": "60415baff2a36dd9f95a12f70360bd33869ea258511d9f06e2509e5c896b8f15"
+   }
   },
   "trauma-0828": {
    "tema": "trauma",
@@ -54859,8 +55042,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O gabarito A (dor aguda difusa sem edema) contrasta com a descrição resumida de dor localizada e edema. O material não discrimina a fase temporal do enunciado para escolher entre dor tardia/aguda nas alternativas C/D nem sustenta a exceção inicial de A. Conferir evolução por fase do colo do segundo metatarso; não inventar ausência de edema inicial para defender a banca.",
    "temComentario": true,
    "citacoes": [
     {
@@ -54874,7 +55057,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "7237c0594e3e845968dca33683df74ac6887e526a0f7ed0ad84e55b7ca3377cd"
+   "questaoSha256": "7237c0594e3e845968dca33683df74ac6887e526a0f7ed0ad84e55b7ca3377cd",
+   "pendencia": "O gabarito A (dor aguda difusa sem edema) contrasta com a descrição resumida de dor localizada e edema. O material não discrimina a fase temporal do enunciado para escolher entre dor tardia/aguda nas alternativas C/D nem sustenta a exceção inicial de A. Conferir evolução por fase do colo do segundo metatarso; não inventar ausência de edema inicial para defender a banca."
   },
   "trauma-0870": {
    "tema": "trauma",
@@ -56757,7 +56941,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56772,7 +56956,32 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "9c38e42b6ac715b53db5a20fcb4b795431c848953f9521f5d93374c0b8231e1f"
+   "questaoSha256": "9c38e42b6ac715b53db5a20fcb4b795431c848953f9521f5d93374c0b8231e1f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fatores de risco e a tríade da mulher atleta"
+      ],
+      "blocos": [
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-52d73ac0"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "9684cfba2d7cf2391943a08639a2a6c64687da7a5c7917db7adb916117328ff4"
+     }
+    ],
+    "questaoSha256": "9c38e42b6ac715b53db5a20fcb4b795431c848953f9521f5d93374c0b8231e1f",
+    "comentarioSha256": "086377a31341da9b9c272f5715b2c1201d2368a47352c67bb626d4c21f352d56"
+   }
   },
   "trauma-0952": {
    "tema": "trauma",
@@ -58239,8 +58448,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte sustenta a proteção da compressão e o alto risco da tensão, mas não descreve como julgar o colapso em valgo da alternativa D nem a epidemiologia de complicações no adolescente de 13 anos. Falta fonte específica pediátrica para conferir todas as alternativas, preservando a E oficial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -58254,7 +58463,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "959f0a94cce2091b69fe8ecb8426f72fddd6064ed1a4db94503c77d6934289c0"
+   "questaoSha256": "959f0a94cce2091b69fe8ecb8426f72fddd6064ed1a4db94503c77d6934289c0",
+   "pendencia": "A fonte sustenta a proteção da compressão e o alto risco da tensão, mas não descreve como julgar o colapso em valgo da alternativa D nem a epidemiologia de complicações no adolescente de 13 anos. Falta fonte específica pediátrica para conferir todas as alternativas, preservando a E oficial."
   },
   "trauma-1013": {
    "tema": "trauma",
@@ -58565,14 +58775,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado é sobre insuficiência crônica do LCP e compartimentos degenerativos, não sobre fratura por estresse. O cap. 24 não descreve essa progressão ligamentar. Necessária fonte de lesões do LCP para comparar compartimentos medial/lateral e patelofemoral, sem usar a coincidência do subtema como cobertura.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "a3e8d9ea88f386e01bdf8150a2d4bfbb3d2c2b5cb2ac3899908df7f9d80d738d"
+   "questaoSha256": "a3e8d9ea88f386e01bdf8150a2d4bfbb3d2c2b5cb2ac3899908df7f9d80d738d",
+   "pendencia": "O enunciado é sobre insuficiência crônica do LCP e compartimentos degenerativos, não sobre fratura por estresse. O cap. 24 não descreve essa progressão ligamentar. Necessária fonte de lesões do LCP para comparar compartimentos medial/lateral e patelofemoral, sem usar a coincidência do subtema como cobertura."
   },
   "trauma-1029": {
    "tema": "trauma",
@@ -60272,8 +60483,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta maior frequência global em mulheres e cita pelve/fêmur entre sítios de atletas, mas não traz comparação da distribuição por sexo entre pelve/fêmur e tíbia/fíbula. Falta esse segundo componente do gabarito C; mencionar que uma região pode fraturar não demonstra ser a mais acometida nas mulheres.",
    "temComentario": true,
    "citacoes": [
     {
@@ -60294,7 +60505,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "ee5d162cded40c0e10425bca9e0f2ab99c1c44944de48b99f55f7db987a3ff35"
+   "questaoSha256": "ee5d162cded40c0e10425bca9e0f2ab99c1c44944de48b99f55f7db987a3ff35",
+   "pendencia": "O resumo sustenta maior frequência global em mulheres e cita pelve/fêmur entre sítios de atletas, mas não traz comparação da distribuição por sexo entre pelve/fêmur e tíbia/fíbula. Falta esse segundo componente do gabarito C; mencionar que uma região pode fraturar não demonstra ser a mais acometida nas mulheres."
   },
   "trauma-1104": {
    "tema": "trauma",
@@ -61179,8 +61391,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial e sem resposta bibliográfica única: baixa densidade óssea no homem (A), testosterona baixa no homem (C) e distúrbio alimentar na mulher (D) são sustentados pelo resumo. Não atribuir provavel a uma só letra. Conferir o formato original (pode exigir múltiplas corretas ou exceção) ou manter ambiguidade explícita.",
    "temComentario": true,
    "citacoes": [
     {
@@ -61194,7 +61406,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "300b90e93daa3bc7df2eb64774145275e308627dc48bb280aff898fb49b358e2"
+   "questaoSha256": "300b90e93daa3bc7df2eb64774145275e308627dc48bb280aff898fb49b358e2",
+   "pendencia": "Sem gabarito oficial e sem resposta bibliográfica única: baixa densidade óssea no homem (A), testosterona baixa no homem (C) e distúrbio alimentar na mulher (D) são sustentados pelo resumo. Não atribuir provavel a uma só letra. Conferir o formato original (pode exigir múltiplas corretas ou exceção) ou manter ambiguidade explícita."
   },
   "trauma-1148": {
    "tema": "trauma",
@@ -61524,14 +61737,15 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O item trata da dinamização de haste em fratura metafisária e falha por fadiga do implante. O cap. 24 explica fadiga do osso, sem dados de dinamização, perda de redução ou quebra do material. Falta fonte de osteossíntese da metáfise tibial; a palavra fadiga não estabelece cobertura.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "54f2d812b2201130e8343d67750fd36c30b11d218dd13feecbc2273a895e8b6e"
+   "questaoSha256": "54f2d812b2201130e8343d67750fd36c30b11d218dd13feecbc2273a895e8b6e",
+   "pendencia": "O item trata da dinamização de haste em fratura metafisária e falha por fadiga do implante. O cap. 24 explica fadiga do osso, sem dados de dinamização, perda de redução ou quebra do material. Falta fonte de osteossíntese da metáfise tibial; a palavra fadiga não estabelece cobertura."
   },
   "trauma-1165": {
    "tema": "trauma",
@@ -63336,7 +63550,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63351,7 +63565,33 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "f23b71f579f9864f4e835bdfcaa172a44e2583a04591825e072273edc58b2ecd"
+   "questaoSha256": "f23b71f579f9864f4e835bdfcaa172a44e2583a04591825e072273edc58b2ecd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fisiopatologia: fadiga, reparo e insuficiência"
+      ],
+      "blocos": [
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-fe21d231",
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-b564b80b",
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-4d4d2a9a",
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-652244fd"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "2058d2e82dcff763428d96e68f35382ef86f7fc8dd1e4f74093b5de594dcccb2"
+     }
+    ],
+    "questaoSha256": "f23b71f579f9864f4e835bdfcaa172a44e2583a04591825e072273edc58b2ecd",
+    "comentarioSha256": "566f52c88bf6159daae0d30859dbeb629a22050e167cfab8ae44be4c3a8b4a4e"
+   }
   },
   "trauma-1238": {
    "tema": "trauma",
@@ -63360,7 +63600,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63375,7 +63615,31 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "92c36a620dfd075b333cec18b17b9b48bbeba0ac9d9ffaebd8c726450edbed20"
+   "questaoSha256": "92c36a620dfd075b333cec18b17b9b48bbeba0ac9d9ffaebd8c726450edbed20",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fisiopatologia: fadiga, reparo e insuficiência"
+      ],
+      "blocos": [
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-2bd63e90",
+       "fisiopatologia-fadiga-reparo-e-insuficiencia-8bd85a4d"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "bb80fbb66711e899e0ea4c5e839e07e43257a1bfd851cb2a9dddfe76ef0543c8"
+     }
+    ],
+    "questaoSha256": "92c36a620dfd075b333cec18b17b9b48bbeba0ac9d9ffaebd8c726450edbed20",
+    "comentarioSha256": "e9e64fe43e0cc4f2068b8a68e66cd4970fe1bdd079b701326a3757f90d08e1a6"
+   }
   },
   "trauma-1239": {
    "tema": "trauma",
@@ -63384,7 +63648,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63399,7 +63663,32 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "afe30f784f1defd8cb8d9d830db969fb268860d701ee40510e93b6c1e041ad59"
+   "questaoSha256": "afe30f784f1defd8cb8d9d830db969fb268860d701ee40510e93b6c1e041ad59",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fatores de risco e a tríade da mulher atleta"
+      ],
+      "blocos": [
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-f6f8037a",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "328354d35f7f8847bbe33350ded5a29bb9576dc59d1bdf1732b81610c0d2d994"
+     }
+    ],
+    "questaoSha256": "afe30f784f1defd8cb8d9d830db969fb268860d701ee40510e93b6c1e041ad59",
+    "comentarioSha256": "dfab10c6e39b55c7c2ae9c47761970ea3e0bce118f7eefc02467e869651df713"
+   }
   },
   "trauma-1240": {
    "tema": "trauma",
@@ -63408,7 +63697,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63423,7 +63712,30 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "d5725f03ca409ad2c2e3ea24da8f2d8607f154c3d804f633946fc2907f5b17c7"
+   "questaoSha256": "d5725f03ca409ad2c2e3ea24da8f2d8607f154c3d804f633946fc2907f5b17c7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fatores de risco e a tríade da mulher atleta"
+      ],
+      "blocos": [
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-a472c0f4"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "e8f79d1ceb111e1888bf486b078fb28dd248917d24d13f0591a6cab6a1374920"
+     }
+    ],
+    "questaoSha256": "d5725f03ca409ad2c2e3ea24da8f2d8607f154c3d804f633946fc2907f5b17c7",
+    "comentarioSha256": "72a25050bc5c29e990dd7e2284c53a3983bab5625e056d0ea9521aef45d1b939"
+   }
   },
   "trauma-1241": {
    "tema": "trauma",
@@ -63433,7 +63745,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63456,7 +63768,31 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "8edb526b719b263d15476f866b5498139f30acada3fdf973fd10ce28a469c1ce"
+   "questaoSha256": "8edb526b719b263d15476f866b5498139f30acada3fdf973fd10ce28a469c1ce",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Diagnóstico: clínica e imagem"
+      ],
+      "blocos": [
+       "diagnostico-clinica-e-imagem-b4e768c6",
+       "diagnostico-clinica-e-imagem-98ea23d0"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "f73419d0b2d526817fb702ffb9ee0553e873a4ba80c98d08139f4535de556859"
+     }
+    ],
+    "questaoSha256": "8edb526b719b263d15476f866b5498139f30acada3fdf973fd10ce28a469c1ce",
+    "comentarioSha256": "c0ee945762cea952c19513a0a24a00087f11c38d3730c54b8e1bf08db96b6979"
+   }
   },
   "trauma-1242": {
    "tema": "trauma",
@@ -63466,7 +63802,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63495,7 +63831,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "aafcfa6be65782db4c2c183bd259b66564c7a96d3c1cc94e90617bcc8d73ecb9"
+   "questaoSha256": "aafcfa6be65782db4c2c183bd259b66564c7a96d3c1cc94e90617bcc8d73ecb9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Coluna: espondilólise",
+       "O pé: navicular, quinto metatarso e a fratura de marcha",
+       "Diagnóstico: clínica e imagem"
+      ],
+      "blocos": [
+       "coluna-espondilolise-0c6adfa3",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+       "diagnostico-clinica-e-imagem-98ea23d0"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "d5caba135d43124aa22b1a9f7d6d2acd8478ca5661ca71a6bd3023ed8c735d52"
+     }
+    ],
+    "questaoSha256": "aafcfa6be65782db4c2c183bd259b66564c7a96d3c1cc94e90617bcc8d73ecb9",
+    "comentarioSha256": "2aaad94a25b09a882dbbed89af4faa9c984295f71fd761e5bc62bab63cca9fba"
+   }
   },
   "trauma-1243": {
    "tema": "trauma",
@@ -63504,7 +63867,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63519,7 +63882,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "88f1e4fed68713897cf4ab42a8b8673fb62d68662d47fca0821080ff16e865f5"
+   "questaoSha256": "88f1e4fed68713897cf4ab42a8b8673fb62d68662d47fca0821080ff16e865f5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Alto risco e baixo risco",
+       "Patela, diáfise do fêmur, maléolo medial e fíbula"
+      ],
+      "blocos": [
+       "alto-risco-e-baixo-risco-70c9cf0c",
+       "alto-risco-e-baixo-risco-2c654600",
+       "patela-diafise-do-femur-maleolo-medial-e-fibula-ae0b851a",
+       "patela-diafise-do-femur-maleolo-medial-e-fibula-2b858e00"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "2c5d778e8384abe3b27b526fb9bf246435a9a16537e1ad079ce8fd1546b4e875"
+     }
+    ],
+    "questaoSha256": "88f1e4fed68713897cf4ab42a8b8673fb62d68662d47fca0821080ff16e865f5",
+    "comentarioSha256": "dd9f67f286339678caa22922fa781d89737d83aeac71ea1251149dbdd7e10a3e"
+   }
   },
   "trauma-1244": {
    "tema": "trauma",
@@ -63528,7 +63918,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63543,7 +63933,32 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "74dd15ac42d25c1bce444f42aa826b20878f0b6e7c5d89c2360713b6aba7db3c"
+   "questaoSha256": "74dd15ac42d25c1bce444f42aa826b20878f0b6e7c5d89c2360713b6aba7db3c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "KAEDING-MILLER e o algoritmo de tratamento"
+      ],
+      "blocos": [
+       "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-34caab1a",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-e5f67639"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "581d4bc92dc5ba26db245257d5ac550a049072d7421b50be216c16172f6c8b17"
+     }
+    ],
+    "questaoSha256": "74dd15ac42d25c1bce444f42aa826b20878f0b6e7c5d89c2360713b6aba7db3c",
+    "comentarioSha256": "752392c9009d9ac60569738c6d7a06a37d8c32d9a03c53131ddf0d89a295a0af"
+   }
   },
   "trauma-1245": {
    "tema": "trauma",
@@ -63552,7 +63967,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63567,7 +63982,33 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "e028748fe677e338113b6232402230444c107a8f7976a0ca84de272111bbf630"
+   "questaoSha256": "e028748fe677e338113b6232402230444c107a8f7976a0ca84de272111bbf630",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "KAEDING-MILLER e o algoritmo de tratamento"
+      ],
+      "blocos": [
+       "kaeding-miller-e-o-algoritmo-de-tratamento-9c88e681",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-4975702f",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-0703b2f2",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-f2fd99da"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "3915d14ebf76c97de803d61326a2c770d274ae7dc13ef355270f08a6154c67f8"
+     }
+    ],
+    "questaoSha256": "e028748fe677e338113b6232402230444c107a8f7976a0ca84de272111bbf630",
+    "comentarioSha256": "782800c75d317a93f4727e99ea40cdac82b1efa24f7bc88d8af30ea3968ef619"
+   }
   },
   "trauma-1246": {
    "tema": "trauma",
@@ -63577,8 +64018,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -63600,7 +64041,34 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "01576699e1db4006585659a5ae0c8fb2073e19ccffbc92b244e654886b2c9ddb"
+   "questaoSha256": "01576699e1db4006585659a5ae0c8fb2073e19ccffbc92b244e654886b2c9ddb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Colo do fêmur"
+      ],
+      "blocos": [
+       "colo-do-femur-9a8e2d5d",
+       "colo-do-femur-5cfd8f77",
+       "colo-do-femur-fbdc6b09",
+       "colo-do-femur-891e93d3",
+       "colo-do-femur-3c8fdd1e"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "814b3a0e29ab5f9d286a5a178c525c0891c8f38cd5963a6fcc30cda5a786df0b"
+     }
+    ],
+    "questaoSha256": "01576699e1db4006585659a5ae0c8fb2073e19ccffbc92b244e654886b2c9ddb",
+    "comentarioSha256": "df041916675706105cb2192f2ca959457aa055b419036af28b8d7c6f5529f3f1"
+   }
   },
   "trauma-1247": {
    "tema": "trauma",
@@ -63610,7 +64078,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63626,7 +64094,32 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "e127ea4341415b783c825f8c14ae29ccc6c868117af5973e81306bd6b92df517"
+   "questaoSha256": "e127ea4341415b783c825f8c14ae29ccc6c868117af5973e81306bd6b92df517",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Patela, diáfise do fêmur, maléolo medial e fíbula",
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "patela-diafise-do-femur-maleolo-medial-e-fibula-2b858e00",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-cf3f777a"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "9520374674044da4265ddafe412fe52bf7eb8ef412fd39732da69272ab5ecdce"
+     }
+    ],
+    "questaoSha256": "e127ea4341415b783c825f8c14ae29ccc6c868117af5973e81306bd6b92df517",
+    "comentarioSha256": "04323847156ebe1eeee480f3af373e48bfa4fd2f35666d7934fa5ca90a3a9ea8"
+   }
   },
   "trauma-1248": {
    "tema": "trauma",
@@ -63636,8 +64129,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -63652,7 +64145,33 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "d4104df25ba060ab7cbb26a360fe1ea48ec923c528cb141c7906d6300c87ca04"
+   "questaoSha256": "d4104df25ba060ab7cbb26a360fe1ea48ec923c528cb141c7906d6300c87ca04",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Tíbia: posteromedial e a linha negra temida"
+      ],
+      "blocos": [
+       "tibia-posteromedial-e-a-linha-negra-temida-27dd557d",
+       "tibia-posteromedial-e-a-linha-negra-temida-089a8baa",
+       "tibia-posteromedial-e-a-linha-negra-temida-b08b2d83",
+       "tibia-posteromedial-e-a-linha-negra-temida-e29d4de9"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "a301dafb938da1e569b112b920290817418d39c015efc409ffa91d22b5a488f8"
+     }
+    ],
+    "questaoSha256": "d4104df25ba060ab7cbb26a360fe1ea48ec923c528cb141c7906d6300c87ca04",
+    "comentarioSha256": "59fb353323b1148638fdcb405c923e69b9ef02e632a88b5c9c20b7dc541d97fd"
+   }
   },
   "trauma-1249": {
    "tema": "trauma",
@@ -63662,7 +64181,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63677,7 +64196,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "79a64405f8e78e48e6f704741967e42fd24bf55f59936bbcbff65a2d3b9dbe17"
+   "questaoSha256": "79a64405f8e78e48e6f704741967e42fd24bf55f59936bbcbff65a2d3b9dbe17",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-36994b59",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "aea8fa6b0aef13d3aaffc622d9e477474aec4929bfdf99277a3d39d3b365a6ef"
+     }
+    ],
+    "questaoSha256": "79a64405f8e78e48e6f704741967e42fd24bf55f59936bbcbff65a2d3b9dbe17",
+    "comentarioSha256": "681b182c2e885319c5177e2aeb0cc726409d87aee993bfe4e2d3d8fdcad0b435"
+   }
   },
   "trauma-1250": {
    "tema": "trauma",
@@ -63687,8 +64233,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -63702,7 +64248,35 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "8565a1ff70cf406389c9d26ebaa9975f1b61a427cad1313c19706dbe80ec9d36"
+   "questaoSha256": "8565a1ff70cf406389c9d26ebaa9975f1b61a427cad1313c19706dbe80ec9d36",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha",
+       "KAEDING-MILLER e o algoritmo de tratamento"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4319a87c",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-0a3a14ef",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-bb3eee18",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4775bf11",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "f9f9cc03c506cf3d568f7040f4fadee69594bdca8cccee76ff9a38bcb856165f"
+     }
+    ],
+    "questaoSha256": "8565a1ff70cf406389c9d26ebaa9975f1b61a427cad1313c19706dbe80ec9d36",
+    "comentarioSha256": "1df64dc2a5440472c12145e54888b2a39a56a523c68ded5f11690512bcbb4595"
+   }
   },
   "trauma-1251": {
    "tema": "trauma",
@@ -63712,7 +64286,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63727,7 +64301,33 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "33cb3ffe24e8f070c6d8e0f69114fa77c6f464156dabcc9aafabe34b5681f23a"
+   "questaoSha256": "33cb3ffe24e8f070c6d8e0f69114fa77c6f464156dabcc9aafabe34b5681f23a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-78e73393",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-596eef80",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-472f3cfb",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-bab9135c"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "c5ff35e8c37ab5c9a8f610059f291675bb92bd174bc7e20b677d1dc8672dcc37"
+     }
+    ],
+    "questaoSha256": "33cb3ffe24e8f070c6d8e0f69114fa77c6f464156dabcc9aafabe34b5681f23a",
+    "comentarioSha256": "9cc7fdc016c5f542776f8dd9c4f1fedfefac89b0d5d49d716d7dc5041f182db7"
+   }
   },
   "trauma-1252": {
    "tema": "trauma",
@@ -63737,7 +64337,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63752,7 +64352,31 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "4326bade586ff4e9caf99234928716d5ced5e136fdb3e9fb9869f8872d8df915"
+   "questaoSha256": "4326bade586ff4e9caf99234928716d5ced5e136fdb3e9fb9869f8872d8df915",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-b413a949",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ba829683"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "a151aa637f99ec3fab00ba51257ae6a1a2fe8b91249d64db1ca94be0c1791bff"
+     }
+    ],
+    "questaoSha256": "4326bade586ff4e9caf99234928716d5ced5e136fdb3e9fb9869f8872d8df915",
+    "comentarioSha256": "a8aa25708fc33fb472041ab9b051f8e1b5e274afc5fdf4a2ec4dfed53e7057ad"
+   }
   },
   "trauma-1253": {
    "tema": "trauma",
@@ -63762,7 +64386,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63778,7 +64402,31 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "5e0347ad86d46e650075969b7b682d91e9483b2bc6f41b2ab96c383ca61b4f75"
+   "questaoSha256": "5e0347ad86d46e650075969b7b682d91e9483b2bc6f41b2ab96c383ca61b4f75",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Patela, diáfise do fêmur, maléolo medial e fíbula"
+      ],
+      "blocos": [
+       "patela-diafise-do-femur-maleolo-medial-e-fibula-c4ffdf0e",
+       "patela-diafise-do-femur-maleolo-medial-e-fibula-94e47dfd"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "40aedd7c2198a34867c0551364631dc1999b5172d36bfe023f5ff724ff69d19a"
+     }
+    ],
+    "questaoSha256": "5e0347ad86d46e650075969b7b682d91e9483b2bc6f41b2ab96c383ca61b4f75",
+    "comentarioSha256": "c4e8b8a8509125785ac73fda307462bf69413b76b286fde88f6fcc7b97dcb4ec"
+   }
   },
   "trauma-1254": {
    "tema": "trauma",
@@ -63788,7 +64436,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63804,7 +64452,32 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "57c5fbc7fcac3fa4ae8db1889c8d52503e5535d9ae3e8e6332c73394d65826cd"
+   "questaoSha256": "57c5fbc7fcac3fa4ae8db1889c8d52503e5535d9ae3e8e6332c73394d65826cd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Membro superior e costelas"
+      ],
+      "blocos": [
+       "membro-superior-e-costelas-c38c489d",
+       "membro-superior-e-costelas-de228dcc",
+       "membro-superior-e-costelas-7eeddcec"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "87c4e4a1f53c598d6183b071b8d72c0431dfd02cc3e2c0a186fba34ced3fbcda"
+     }
+    ],
+    "questaoSha256": "57c5fbc7fcac3fa4ae8db1889c8d52503e5535d9ae3e8e6332c73394d65826cd",
+    "comentarioSha256": "e86227fc7e32193f610064dca1d8bfbf773067ecc1a989a2c900cca0a2f47cea"
+   }
   },
   "trauma-1263": {
    "tema": "trauma",
@@ -77146,14 +77819,15 @@
    ],
    "prova": "ENARE Cirurgia da Mão",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Bloqueio de protocolo, não ausência de cobertura temática: questão do ENARE Cirurgia da Mão (area:cirurgia-mao) cadastra-se no tema trauma. O padrão editorial exige Green com capítulo e página impressa para esse escopo. O livro local não está disponível; conferir no Green os componentes da tríade no contexto adolescente e todas as alternativas antes de criar comentário. Resumo do cap. 24 não substitui a exigência de fonte primária da Mão.",
    "temComentario": false,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "6fc789990ffd962c0cde943a6b1688824cfc9866bdf75e3e0e7eedab2ada7021"
+   "questaoSha256": "6fc789990ffd962c0cde943a6b1688824cfc9866bdf75e3e0e7eedab2ada7021",
+   "pendencia": "Bloqueio de protocolo, não ausência de cobertura temática: questão do ENARE Cirurgia da Mão (area:cirurgia-mao) cadastra-se no tema trauma. O padrão editorial exige Green com capítulo e página impressa para esse escopo. O livro local não está disponível; conferir no Green os componentes da tríade no contexto adolescente e todas as alternativas antes de criar comentário. Resumo do cap. 24 não substitui a exigência de fonte primária da Mão."
   },
   "trauma-1726": {
    "tema": "trauma",
@@ -77373,8 +78047,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo de estresse não desenvolve o diferencial entre osteossarcoma, condroblastoma, condrossarcoma e granuloma eosinofílico na metáfise proximal tibial. Falta fonte de tumores com idade, topografia e sinais radiológicos para explicar por que A é a comparação correta.",
    "temComentario": true,
    "citacoes": [
     {
@@ -77388,7 +78062,8 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "d2090187b08183630483159ade154605a1f42a1e46a007436861b82f865f5ee2"
+   "questaoSha256": "d2090187b08183630483159ade154605a1f42a1e46a007436861b82f865f5ee2",
+   "pendencia": "O resumo de estresse não desenvolve o diferencial entre osteossarcoma, condroblastoma, condrossarcoma e granuloma eosinofílico na metáfise proximal tibial. Falta fonte de tumores com idade, topografia e sinais radiológicos para explicar por que A é a comparação correta."
   }
  }
 }

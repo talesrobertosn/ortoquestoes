@@ -1,0 +1,388 @@
+{
+  "trauma-1246": {
+    "questaoSha256": "01576699e1db4006585659a5ae0c8fb2073e19ccffbc92b244e654886b2c9ddb",
+    "comentarioAnteriorSha256": "93859047652a405626a64d984587cfedd60eb50f99c53211a3c74d6a60dcad1c",
+    "comentario": {
+      "conceito": "A dor inguinal de uma corredora exige atenção quando aparece com carga repetida. Nesta questão, o traço é descrito no **lado de tensão do colo femoral**, correspondente à **cortical superior**. A radiografia e a TC mostram uma linha nessa região, em vez de uma lesão restrita à cortical inferior de compressão.\n\nO colo funciona como uma viga: sob carga, o lado superior é tracionado e o inferior comprimido. A fissura superior tende a abrir a cada passo, podendo completar e desviar; as consequências incluem pseudartrose e osteonecrose. No lado inferior, a compressão tende a fechar o traço e oferece maior estabilidade (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nPara o padrão superior de tensão, o capítulo indica **fixação com parafusos paralelos ou parafuso deslizante do quadril**. Apenas melhorar a dor não prova que a lesão ficou segura. O regime de carga restrita por pelo menos seis semanas com controle radiográfico semanal é o descrito para a compressão inferior, não para transferir automaticamente a este caso.\n\nA imagem orienta a identificação do lado, mas não permite inventar o percentual de largura do colo acometido. Para rever a mecânica e as condutas lado a lado, leia a seção no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para relacionar o lado superior cobrado nas provas ao traço da figura e à prevenção de progressão, pseudartrose e osteonecrose.",
+      "correta": "**A: superior; fixação cirúrgica com parafusos paralelos ou parafuso deslizante do quadril.** A região superior recebe tensão e tende à propagação. A estabilização procura impedir que uma lesão ainda tratável se torne completa e desviada.",
+      "incorretas": {
+        "B": "**A conduta foi ligada ao lado errado.** O enunciado informa tensão, que corresponde ao superior. O inferior é comprimido e tem outra estabilidade; não se pode chamá-lo de tensão para justificar a operação.",
+        "C": "**Acerta a região, mas transfere o protocolo de compressão.** A carga restrita com radiografias semanais é descrita para a lesão inferior. O capítulo recomenda fixação para o traço superior de tensão pelo risco de abertura e desvio.",
+        "D": "**Descreve a região e a proteção de um padrão diferente.** Inferior com carga restrita corresponde à compressão. O caso e as imagens são apresentados como lesão superior de tensão, que exige outra estratégia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Colo do fêmur. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Colo do fêmur"
+        ],
+        "blocos": [
+          "colo-do-femur-9a8e2d5d",
+          "colo-do-femur-5cfd8f77",
+          "colo-do-femur-fbdc6b09",
+          "colo-do-femur-891e93d3",
+          "colo-do-femur-3c8fdd1e"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "814b3a0e29ab5f9d286a5a178c525c0891c8f38cd5963a6fcc30cda5a786df0b"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1246-1.jpeg"
+    ]
+  },
+  "trauma-1248": {
+    "questaoSha256": "d4104df25ba060ab7cbb26a360fe1ea48ec923c528cb141c7906d6300c87ca04",
+    "comentarioAnteriorSha256": "e390e83ddc858a6bc94401cbda0f37d6640736022325b3d1cd7c84fda6ec3008",
+    "comentario": {
+      "conceito": "O perfil mostra um **traço radiotransparente na cortical anterior espessada** da tíbia, no contexto de dor anterior persistente de um saltador. É a “linha negra temida” da fratura por estresse sob **tensão**. A imagem não corresponde à lesão posteromedial de compressão, que é mais frequente, porém de menor risco.\n\nDurante corrida e salto, a tíbia se curva com o ápice para a frente. A cortical anterior é tracionada e a fissura abre sob carga; por isso pode persistir, evoluir para pseudartrose ou completar. O espessamento cortical mostra reação óssea, mas não prova que o traço esteja consolidado (resumo do Rockwood, 10ª ed., cap. 24, “Tíbia: posteromedial e a linha negra temida”).\n\nPara o atleta que deseja voltar à **mesma intensidade ou maior**, a recomendação habitual descrita é **haste intramedular**. O capítulo também discute repouso prolongado, enxerto e outras estratégias; a pergunta especifica a demanda que favorece a haste. Isso é diferente de recomendar só duas a quatro semanas de repouso relativo e retorno por melhora da dor.\n\nLeia no resumo da Biblioteca a comparação entre cortical, força e demanda esportiva. O padrão menos frequente não pode ser tratado como inofensivo só porque o atleta ainda consegue treinar.\n\n**Por que esta questão foi criada.** Para ligar a linha negra da cortical anterior ao alto risco e à indicação condicionada pela demanda esportiva, contrastando com a tíbia posteromedial.",
+      "correta": "**D: fratura por estresse da cortical anterior (tensão); haste intramedular.** O local do traço e o perfil clínico indicam a lesão de alto risco. A demanda de retorno ao mesmo nível é a condição em que o capítulo favorece a haste.",
+      "incorretas": {
+        "A": "**Identifica a cortical oposta e subestima o risco do traço mostrado.** A posteromedial é o padrão de compressão, geralmente mais favorável. A linha negra anterior persistente não deve receber automaticamente esse plano de repouso relativo.",
+        "B": "**Mantém uma operação possível, mas erra a lesão que a justifica no caso.** O problema descrito é anterior e sob tensão, não posteromedial. O tratamento precisa acompanhar o padrão demonstrado, e não apenas a vontade de voltar rápido.",
+        "C": "**Reconhece o padrão, mas propõe proteção insuficiente para a situação.** O capítulo discute meses de repouso como alternativa, não liberação em poucas semanas para uma linha negra crônica. Para retorno ao mesmo nível, favorece a haste."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Tíbia: posteromedial e a linha negra temida. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Tíbia: posteromedial e a linha negra temida"
+        ],
+        "blocos": [
+          "tibia-posteromedial-e-a-linha-negra-temida-27dd557d",
+          "tibia-posteromedial-e-a-linha-negra-temida-089a8baa",
+          "tibia-posteromedial-e-a-linha-negra-temida-b08b2d83",
+          "tibia-posteromedial-e-a-linha-negra-temida-e29d4de9"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "a301dafb938da1e569b112b920290817418d39c015efc409ffa91d22b5a488f8"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1248-1.jpeg"
+    ]
+  },
+  "trauma-1249": {
+    "questaoSha256": "79a64405f8e78e48e6f704741967e42fd24bf55f59936bbcbff65a2d3b9dbe17",
+    "comentarioAnteriorSha256": "17146dd6e7a02623c61eba538283b7f059cf1b5fb4e9589f079dc41e5d97d2be",
+    "comentario": {
+      "conceito": "O navicular combina um ponto de cisalhamento elevado com uma região de irrigação pobre. O traço típico é sagital, no terço central dorsal, e a lesão é de **alto risco**. Entre os fatores associados descritos estão **primeiro metatarso curto, segundo longo e coalizão calcaneonavicular**.\n\nEssas associações não significam que todo pé com essa anatomia irá fraturar. Elas ajudam a investigar a distribuição de carga junto com treinamento e quadro clínico. Quando a fratura é **incompleta**, o capítulo recomenda **gesso sem carga por seis a oito semanas**, seguido de reabilitação gradual. Não é o cenário de liberar carga e treino apenas pela tolerância à dor (resumo do Rockwood, 10ª ed., cap. 24, “Navicular”).\n\nA TC permite delimitar a lesão e confirmar consolidação; o retorno exige avaliação clínica e estrutural. Fratura completa, esclerose nas bordas ou falha do conservador levam à discussão cirúrgica. O resumo da Biblioteca relaciona essas condições para evitar um protocolo único para todo navicular.\n\n**Por que esta questão foi criada.** Para aprofundar o navicular cobrado no TARO 2023, conectando anatomia associada, alto risco e proteção da fratura incompleta.",
+      "correta": "**C: primeiro metatarso curto, segundo longo ou coalizão calcaneonavicular; gesso sem carga por seis a oito semanas.** O par respeita os fatores associados e a proteção proposta para a fratura incompleta de alto risco.",
+      "incorretas": {
+        "A": "**Inverte os comprimentos e libera uma carga que a fonte restringe.** O padrão associado é primeiro curto e segundo longo. Na lesão incompleta, a conduta descrita é imobilização sem carga, não retorno condicionado apenas à dor.",
+        "B": "**Acerta a imobilização, mas troca a associação anatômica.** Gesso sem carga é o tratamento apresentado. Os comprimentos metatarsais da primeira metade estão invertidos em relação aos fatores descritos.",
+        "D": "**Acerta os fatores e transporta a lógica de uma lesão mais favorável.** A dor pode melhorar antes da consolidação de um sítio de alto risco. A fonte protege a carga por seis a oito semanas, com confirmação da união antes do retorno."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "O pé: navicular, quinto metatarso e a fratura de marcha"
+        ],
+        "blocos": [
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-36994b59",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "aea8fa6b0aef13d3aaffc622d9e477474aec4929bfdf99277a3d39d3b365a6ef"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1250": {
+    "questaoSha256": "8565a1ff70cf406389c9d26ebaa9975f1b61a427cad1313c19706dbe80ec9d36",
+    "comentarioAnteriorSha256": "ab649e369a861e835899b9161114d6790c03d9b0fad6a00329a9746d0d984cd0",
+    "comentario": {
+      "conceito": "A figura separa a base do quinto metatarso em três regiões: a **zona I na tuberosidade**, a **II na junção metáfise-diáfise** e a **III na diáfise proximal**. A fratura por estresse do atleta costuma produzir dor distal à tuberosidade, geralmente na **zona III**.\n\nA localização importa porque a região proximal tem irrigação desfavorável e risco de consolidação lenta, pseudartrose e refratura. O capítulo descreve dor progressiva com corrida ou salto, às vezes antes de uma fratura completa, e esclerose ao redor do traço (resumo do Rockwood, 10ª ed., cap. 24, “Base do quinto metatarso”).\n\nNo atleta de **alta demanda**, a preferência apresentada é fixação com **parafuso intramedular canulado de 4,0 ou 4,5 mm**, porque a imobilização falha com frequência nesse grupo. A figura define regiões; não mostra uma radiografia de paciente nem permite concluir um grau de gravidade. Zona anatômica e grau de Kaeding-Miller respondem a perguntas diferentes.\n\nNo resumo da Biblioteca, confira o tratamento por demanda antes de transformar uma bota em autorização para voltar em duas semanas.\n\n**Por que esta questão foi criada.** Para usar a figura como mapa anatômico, separando zona e grau, e relacionar a zona III à estratégia do atleta de alta demanda.",
+      "correta": "**A: III; parafuso intramedular canulado de 4,0 ou 4,5 mm.** A zona corresponde à diáfise proximal e a técnica é a preferência descrita para o atleta de alto rendimento. As duas informações precisam estar corretas.",
+      "incorretas": {
+        "B": "**A zona está certa, mas o retorno proposto é precoce e desprotegido.** A fonte trata esse sítio como alto risco. Bota com carga e volta em duas semanas não corresponde ao plano apresentado para o atleta de alta demanda.",
+        "C": "**Escolhe a técnica, mas aponta a tuberosidade.** Na figura, I é a região mais proximal da base. A localização habitual da lesão por estresse descrita é a diáfise proximal, III.",
+        "D": "**Troca o local e a estratégia de proteção.** Zona I não é a localização típica por estresse pedida, e a liberação em duas semanas não considera a consolidação lenta e o risco de refratura do contexto apresentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha; KAEDING-MILLER e o algoritmo de tratamento. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "O pé: navicular, quinto metatarso e a fratura de marcha",
+          "KAEDING-MILLER e o algoritmo de tratamento"
+        ],
+        "blocos": [
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4319a87c",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-0a3a14ef",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-bb3eee18",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4775bf11",
+          "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "f9f9cc03c506cf3d568f7040f4fadee69594bdca8cccee76ff9a38bcb856165f"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1250-1.jpeg"
+    ]
+  },
+  "trauma-1251": {
+    "questaoSha256": "33cb3ffe24e8f070c6d8e0f69114fa77c6f464156dabcc9aafabe34b5681f23a",
+    "comentarioAnteriorSha256": "a9cf45a55875bf552e507c14f237e69a2f49e1140ae35abbc26e88e394312f9f",
+    "comentario": {
+      "conceito": "No corredor, a fratura por estresse dos metatarsos mediais costuma estar na diáfise distal. Na bailarina em **ponta**, a carga pode produzir outra apresentação: **base do segundo metatarso, na porção proximal**. Essa localização merece cuidado pelo risco de pseudartrose.\n\nÉ uma exceção importante à regra geral de baixo risco do primeiro ao quarto metatarsos. O capítulo recomenda **gesso ou órtese até a consolidação radiográfica**, em geral por **seis a oito semanas**, para a lesão proximal da bailarina. A melhora da dor, sozinha, não deve ser tratada como autorização de retorno à dança (resumo do Rockwood, 10ª ed., cap. 24, “Primeiro ao quarto metatarsos: a fratura de marcha”).\n\nO mesmo osso pode, portanto, ter riscos diferentes conforme local e carga esportiva. O resumo da Biblioteca compara o padrão do corredor ao da bailarina.\n\n**Por que esta questão foi criada.** Para ensinar a exceção proximal do segundo metatarso na bailarina, evitando aplicar a ela o prognóstico da diáfise distal do corredor.",
+      "correta": "**B: base (porção proximal); gesso ou órtese até a consolidação radiográfica, geralmente seis a oito semanas.** A resposta combina a localização ligada ao trabalho em ponta e a proteção exigida pela possibilidade de pseudartrose.",
+      "incorretas": {
+        "A": "**Descreve um padrão distal e um retorno que não protege a exceção proximal.** A diáfise distal é o local mais típico do corredor. O caso da bailarina exige reconhecer a base do segundo metatarso e aguardar consolidação.",
+        "C": "**A duração e o objetivo da proteção estão adequados, mas o local está trocado.** A lesão característica da bailarina discutida é proximal, na base. A localização distal desloca o raciocínio para o padrão mais comum no corredor.",
+        "D": "**Reconhece a base e subestima sua história natural.** A fonte não recomenda voltar à dança apenas porque a dor permite. Imobilização e consolidação radiográfica são centrais nessa apresentação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "O pé: navicular, quinto metatarso e a fratura de marcha"
+        ],
+        "blocos": [
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-78e73393",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-596eef80",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-472f3cfb",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-bab9135c"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "c5ff35e8c37ab5c9a8f610059f291675bb92bd174bc7e20b677d1dc8672dcc37"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1252": {
+    "questaoSha256": "4326bade586ff4e9caf99234928716d5ced5e136fdb3e9fb9869f8872d8df915",
+    "comentarioAnteriorSha256": "75b56cbd09420b540f5f6a60aaa6052e4ef6394f3b1211094ec9627b581a7365",
+    "comentario": {
+      "conceito": "O **sesamoide medial do hálux** é o mais acometido. Na fase de impulso, a carga passa pela face medial do primeiro metatarso, e esse pequeno osso recebe tensão e compressão. A dor fica na face plantar da cabeça metatarsal e pode piorar com carga, flexão plantar resistida e alongamento em dorsiflexão.\n\nA retirada completa do sesamoide medial pode enfraquecer a inserção do **flexor curto do hálux** e permitir desvio em **valgo**. A consequência mostra por que remover um osso pequeno não é necessariamente uma operação sem efeito mecânico (resumo do Rockwood, 10ª ed., cap. 24, “Sesamoides do hálux”).\n\nO capítulo começa com imobilização sem carga e reserva a cirurgia para situações persistentes; discute a excisão parcial como alternativa à retirada completa. Consulte a seção no resumo da Biblioteca para ligar o controle da dor à preservação do equilíbrio do hálux.\n\n**Por que esta questão foi criada.** Para conectar o sesamoide mais acometido à função que pode ser perdida com sua retirada, em vez de tratar excisão como simples alívio de dor.",
+      "correta": "**D: o medial; hálux valgo.** O primeiro item é o sesamoide mais sobrecarregado na descrição, e o segundo é o risco do desequilíbrio após sua retirada completa.",
+      "incorretas": {
+        "A": "**Troca a frequência e a deformidade.** A fonte destaca o sesamoide medial e descreve valgo após excisão completa desse lado. Não corresponde a lateral seguido de varo.",
+        "B": "**Acerta o desvio discutido e troca o osso mais acometido.** O risco de valgo apresentado está ligado à retirada completa do medial. O lateral não é o primeiro em frequência no capítulo.",
+        "C": "**Reconhece o sesamoide e inverte a consequência.** Retirar completamente o medial pode enfraquecer sua inserção e deixar o hálux desviar em valgo, não em varo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "O pé: navicular, quinto metatarso e a fratura de marcha"
+        ],
+        "blocos": [
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-b413a949",
+          "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ba829683"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "a151aa637f99ec3fab00ba51257ae6a1a2fe8b91249d64db1ca94be0c1791bff"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1253": {
+    "questaoSha256": "5e0347ad86d46e650075969b7b682d91e9483b2bc6f41b2ab96c383ca61b4f75",
+    "comentarioAnteriorSha256": "ac27dd40f474fc5871236732c723475eea2e97428adf7f3982c09c40282501fc",
+    "comentario": {
+      "conceito": "A fratura por estresse da cortical anterior da patela é do **lado de tensão**. O capítulo aponta dois fatores associados: **contratura em flexão do joelho** e **retirada de enxerto do tendão patelar** para reconstrução do ligamento cruzado anterior.\n\nA patela integra o aparelho extensor. Na fratura transversa, a distração desse aparelho favorece desvio; por isso, uma lesão por estresse nesse sítio não deve ser equiparada a toda fratura de baixo risco. Dor anterior ao saltar, sensibilidade pontual e dor na extensão resistida fazem parte da apresentação descrita (resumo do Rockwood, 10ª ed., cap. 24, “Patela”).\n\nA pergunta cobra a associação específica da fonte, não uma afirmação de que todo paciente com contratura ou enxerto desenvolverá fratura. Leia essa seção no resumo da Biblioteca para relacionar fatores, quadro clínico e risco de desvio.\n\n**Por que esta questão foi criada.** Para aprofundar o lado de tensão da patela, ponto cobrado em prova sem ano, conectando fatores associados ao aparelho extensor.",
+      "correta": "**C: contratura em flexão e retirada de enxerto do tendão patelar.** É o par descrito para a fratura por estresse anterior. Ambos devem ser reconhecidos sem transformar associação em certeza individual.",
+      "incorretas": {
+        "A": "**A contratura está correta e o local do enxerto foi trocado.** A fonte destaca retirada do tendão patelar, e não dos isquiotibiais. A pergunta exige a associação específica com o aparelho extensor.",
+        "B": "**Acerta o enxerto, mas inverte a alteração de movimento.** O fator descrito é contratura em flexão, não recurvato. Manter metade correta não torna o par equivalente.",
+        "D": "**Troca os dois fatores citados.** A combinação apresentada no capítulo é flexão e enxerto patelar. Recurvato e isquiotibiais não reproduzem os fatores pedidos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Patela, diáfise do fêmur, maléolo medial e fíbula. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Patela, diáfise do fêmur, maléolo medial e fíbula"
+        ],
+        "blocos": [
+          "patela-diafise-do-femur-maleolo-medial-e-fibula-c4ffdf0e",
+          "patela-diafise-do-femur-maleolo-medial-e-fibula-94e47dfd"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "40aedd7c2198a34867c0551364631dc1999b5172d36bfe023f5ff724ff69d19a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1254": {
+    "questaoSha256": "57c5fbc7fcac3fa4ae8db1889c8d52503e5535d9ae3e8e6332c73394d65826cd",
+    "comentarioAnteriorSha256": "91bfed4868ce97db91b24e0dba31018692a738d346f9f49289d8da5d1587712d",
+    "comentario": {
+      "conceito": "O movimento que o atleta repete ajuda a prever onde a carga chega. Em ginastas e líderes de torcida que sustentam o corpo pelos braços, a carga axial favorece lesões **distais ao cotovelo**. Isso é diferente do torque e das forças do arremesso.\n\nA maioria das fraturas por estresse do membro superior é de baixo risco e responde à modificação da atividade. A exceção destacada é o **olécrano do arremessador competitivo com traço visível, grau III**, para o qual o capítulo aponta **fixação interna** como tratamento ideal (resumo do Rockwood, 10ª ed., cap. 24, “Membro superior e costelas”).\n\nNão significa que qualquer dor de arremessador exija cirurgia. O enunciado já fornece o local, a competição e o traço, que definem a situação. No resumo da Biblioteca, compare mecanismo e estágio antes de escolher a proteção ou a operação.\n\n**Por que esta questão foi criada.** Para separar o antebraço de apoio dos padrões do arremesso e reconhecer a exceção cirúrgica do olécrano com traço.",
+      "correta": "**A: distalmente ao cotovelo; fixação interna.** O primeiro item acompanha a carga axial de apoio. O segundo respeita a exceção do olécrano com traço no atleta competitivo.",
+      "incorretas": {
+        "B": "**Acerta a exceção cirúrgica e troca a distribuição da carga de apoio.** A série descrita para ginastas e líderes de torcida situou as lesões distais ao cotovelo, não proximais.",
+        "C": "**Acerta a localização e aplica o plano geral à exceção.** Modificação de atividade é frequente no membro superior, mas o olécrano competitivo com traço de grau III é o cenário em que a fonte favorece fixação.",
+        "D": "**Troca a região de apoio e subestima a lesão do arremessador.** O par correto é distal com fixação. Usar a regra geral de baixo risco ignora as características específicas informadas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Membro superior e costelas. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Membro superior e costelas"
+        ],
+        "blocos": [
+          "membro-superior-e-costelas-c38c489d",
+          "membro-superior-e-costelas-de228dcc",
+          "membro-superior-e-costelas-7eeddcec"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "87c4e4a1f53c598d6183b071b8d72c0431dfd02cc3e2c0a186fba34ced3fbcda"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0707": {
+    "questaoSha256": "30f58cd3a9ee0d88866b9e84f2a4b81974bf3ac0bd57a79ff5c6a99f66dbc9c1",
+    "comentarioAnteriorSha256": "27b2e8ed836f54d29346766dbccb3032a2a77029a3a78f1c3b394bdc5afc8900",
+    "comentario": {
+      "conceito": "No colo femoral, a pergunta decisiva é **qual lado do osso contém o traço**. Sob carga, a cortical superior recebe tensão e a inferior compressão. A fissura superior abre a cada passo; a inferior tende a fechar.\n\nA lesão de **tensão, superior**, tem maior risco de progressão para fratura completa e desviada, com pseudartrose e osteonecrose. Por isso o capítulo indica fixação com parafusos paralelos ou parafuso deslizante do quadril. Para a compressão inferior, descreve restrição de carga por pelo menos seis semanas e seguimento radiográfico semanal (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nO objetivo é impedir a catástrofe mecânica antes de ela ocorrer. Tratar os dois lados como iguais apaga o motivo da indicação precoce. A comparação está no resumo da Biblioteca.",
+      "correta": "**A: fixação quando ocorrem na área de tensão.** A estabilização protege o lado superior que abre sob carga e tende a progredir. O tratamento procura evitar desvio e suas consequências, não apenas aliviar a dor atual.",
+      "incorretas": {
+        "B": "**Proteção é necessária, mas não substitui a indicação de fixação descrita.** Se a lesão de tensão for tratada sem cirurgia, o capítulo exige carga zero completa. Ela não deve ser reduzida a um plano habitual de proteção de carga como o da compressão.",
+        "C": "**Ignora a diferença mecânica entre os lados.** A região superior sob tensão e a inferior comprimida têm riscos distintos. O capítulo não recomenda uma estratégia indistinta para toda fratura do colo por estresse.",
+        "D": "**Inverte o grupo de indicação precoce.** A compressão inferior é o lado mais estável e recebe carga restrita na abordagem descrita. A indicação destacada de fixação corresponde à tensão superior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Colo do fêmur. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Colo do fêmur"
+        ],
+        "blocos": [
+          "colo-do-femur-9a8e2d5d",
+          "colo-do-femur-5cfd8f77",
+          "colo-do-femur-fbdc6b09",
+          "colo-do-femur-891e93d3"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0827": {
+    "questaoSha256": "25fcf3e2e36c9e3a236fbd7624cdae7830151e6fdb7a7a0728627193a9b5e8e8",
+    "comentarioAnteriorSha256": "4b2fedcfc87b18bbea89484df9388a69ada0cefd81adcd5ffc7e9ebf3dbd6a3e",
+    "comentario": {
+      "conceito": "O gabarito oficial aponta o traço **inferior**, mas a orientação terapêutica do resumo é a oposta: **a indicação precoce de fixação é o lado superior, de tensão**. A letra da banca será mantida no acervo, sem transformar essa divergência em uma regra de tratamento errada.\n\nO colo femoral funciona como uma viga. A cada carga, a cortical superior é tracionada e a fissura pode abrir, completar e desviar. Isso aumenta o risco de pseudartrose e osteonecrose. A cortical inferior é comprimida, com tendência ao fechamento do traço e maior estabilidade. A fonte descreve fixação para a tensão superior e carga restrita por pelo menos seis semanas, com radiografias semanais, para a compressão inferior (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nPortanto, **A é a alternativa compatível com a bibliografia consultada**, enquanto B continua sendo o registro oficial desta prova. Não há necessidade de inventar outro mecanismo para justificar a inversão. Leia a seção no resumo da Biblioteca para estudar a mecânica correta junto do alerta.",
+      "correta": "**B: inferior.** É o gabarito oficial registrado, preservado por fidelidade à prova. **Diverge da fonte consultada:** a região inferior é de compressão e não é o lado destacado para fixação precoce; o capítulo indica o superior, de tensão.",
+      "incorretas": {
+        "A": "**É a resposta sustentada pelo resumo, apesar de não ser o gabarito oficial desta prova.** O traço superior é tensionado, abre sob carga e pode completar e desviar. É nesse lado que o capítulo recomenda fixação precoce para evitar as complicações.",
+        "C": "**Anterior não substitui o lado superior de tensão.** A distinção terapêutica descrita é superior versus inferior, conforme a carga abre ou fecha o traço. Não há na fonte uma regra de cirurgia precoce baseada apenas em localização anterior.",
+        "D": "**Posterior também não é o critério descrito.** A indicação apresentada depende do lado superior sob tensão. Trocar a oposição tensão/compressão por anterior/posterior não resolve o risco mecânico que orienta a fixação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Colo do fêmur. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial B (traço inferior) preservado. O resumo do Rockwood, 10ª edição, capítulo 24, indica fixação precoce no lado superior de tensão, correspondente à alternativa A. O inferior é o lado de compressão, para o qual descreve carga restrita e seguimento. A divergência não deve ser ensinada como indicação de operar preferencialmente o traço inferior."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-24-fraturas-estresse",
+        "titulo": "Fraturas por estresse",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 24 · Stress Fractures",
+        "secoes": [
+          "Colo do fêmur"
+        ],
+        "blocos": [
+          "colo-do-femur-9a8e2d5d",
+          "colo-do-femur-5cfd8f77",
+          "colo-do-femur-fbdc6b09",
+          "colo-do-femur-891e93d3"
+        ],
+        "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+        "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

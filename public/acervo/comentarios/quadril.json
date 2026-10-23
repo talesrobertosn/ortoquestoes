@@ -3507,18 +3507,44 @@
     "conferido": false
   },
   "quadril-0332": {
+    "conceito": "No colo femoral, um traço superior e outro inferior não têm o mesmo comportamento sob carga. O lado **superior** é tracionado, de modo que a fissura tende a abrir a cada passo. O lado **inferior** é comprimido, com tendência ao fechamento e maior estabilidade.\n\nEssa diferença explica a indicação precoce de **fixação para a fratura superior, do lado de tensão**. A progressão para fratura completa e desviada pode resultar em pseudartrose e osteonecrose. Para a compressão inferior, o capítulo descreve carga restrita por pelo menos seis semanas e radiografias semanais, não a mesma conduta automática (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nO ponto decisivo é proteger a estrutura antes de uma complicação grave, não esperar que a dor se torne incapacitante. O resumo da Biblioteca apresenta a mecânica e o quadro de tratamento.",
+    "correta": "**C: superior.** É o lado de tensão, com tendência a propagação e desvio. A fixação precoce busca impedir essa progressão e suas consequências.",
     "incorretas": {
-      "A": "O lado inferior é o de compressão, mais estável, e geralmente permite tratamento conservador com retirada de carga.",
-      "B": "A classificação dessas fraturas e a indicação cirúrgica se baseiam no lado de tensão ou compressão, superior ou inferior, e não na localização anterior.",
-      "D": "Assim como a anterior, a localização posterior não é o critério usado; o que define a cirurgia é o traço no lado de tensão, superior."
+      "A": "**Inferior é o lado de compressão.** O traço tende a fechar sob carga e o capítulo descreve proteção de carga com seguimento. Não é a localização que caracteriza a indicação precoce de fixação pedida.",
+      "B": "**Anterior não é o critério mecânico utilizado.** A referência separa o lado superior de tensão do inferior de compressão. Uma localização apenas anterior não identifica essa diferença de risco.",
+      "D": "**Posterior também não substitui a distinção tensão/compressão.** A indicação descrita depende do lado superior. Trocar os planos anatômicos perde a relação entre carga e abertura da fissura."
     },
-    "conceito": "A **fratura por estresse** acontece quando o osso recebe cargas repetidas maiores do que consegue reparar. No colo do fêmur, aparece em corredores, militares em treinamento e pessoas com osso frágil. O sintoma é dor na virilha que piora com a carga.\n\n**O lado do colo onde o traço aparece define o risco**, por causa da biomecânica:\n\n**lado inferior (medial)** é o **lado de compressão**. Ao apoiar o peso, essa região é comprimida, e a compressão tende a fechar a fratura. São fraturas mais estáveis, geralmente tratadas com retirada de carga e acompanhamento, desde que o traço seja pequeno;\n\n**lado superior (lateral)** é o **lado de tensão**. Ao apoiar o peso, essa região é tracionada, e a tração tende a **abrir a fratura**. Elas têm alto risco de **progredir e desviar**.\n\n**Por que desviar é tão grave**: uma fratura desviada do colo em paciente jovem pode romper a irrigação da cabeça femoral e levar a necrose avascular e pseudartrose. Por isso a fratura de estresse no lado de tensão deve ser **fixada precocemente**, geralmente com parafusos canulados, antes que desvie.\n\n**Na prova**: fratura de estresse no lado superior (tensão) do colo é indicação de cirurgia precoce.",
-    "correta": "O traço superior está no lado de tensão, que tende a abrir e desviar, e por isso deve ser fixado precocemente.",
     "referencias": [
-      "Rockwood and Green’s fractures in Adults. 6th Ed., p.673 (referência indicada na prova TARO 2013, questão 34)"
+      "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Colo do fêmur. Sem atribuição de páginas impressas não consultadas."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-24-fraturas-estresse",
+          "titulo": "Fraturas por estresse",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 24 · Stress Fractures",
+          "secoes": [
+            "Colo do fêmur"
+          ],
+          "blocos": [
+            "colo-do-femur-9a8e2d5d",
+            "colo-do-femur-5cfd8f77",
+            "colo-do-femur-fbdc6b09",
+            "colo-do-femur-891e93d3"
+          ],
+          "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+          "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+        }
+      ],
+      "questaoSha256": "27e85609d73376f08816e3da36200d561f797872e11b792a674298a97eea529c",
+      "comentarioSha256": "db74f095fbbbf3a83a875a8f67db7db40b1ff34c871a9b48d9c10804ab00b9ff"
+    }
   },
   "quadril-0333": {
     "incorretas": {
