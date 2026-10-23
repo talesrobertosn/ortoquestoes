@@ -1,0 +1,40 @@
+{
+  "data": "2026-10-23",
+  "metodo": "Abertura individual antes da redação/decisão; registro sem revisão médica.",
+  "questoes": {
+    "trauma-1291": {
+      "arquivos": [
+        {
+          "arquivo": "trauma/trauma-1291-teot2025.jpeg",
+          "sha256": "721ba55f1463b43bbf7d2cb3e2f0cd78723198e351846b39875cd392d85fcc4b"
+        }
+      ],
+      "observacao": "Imagem original aberta antes da redação: lesão posterior no segmento T12–L1 associada à cominuição do corpo L1. Classificação B2/A4 correlacionada aos componentes descritos na tabela AO; não inventar porcentagem de canal, déficit ou estabilidade só pela figura.",
+      "resultado": "revisada"
+    },
+    "coluna-0371": {
+      "arquivos": [
+        {
+          "arquivo": "coluna/coluna-0371-1.png",
+          "sha256": "9fb7667ecff7434f3fd278eaa3d55654cbf9e82264eeefdf9d86aaa61c5abbf1"
+        }
+      ],
+      "observacao": "TC em reconstruções sagital, axial e coronal aberta. Há trauma vertebral, mas não demonstra função sacral nem substitui o exame motor completo necessário à classificação ASIA; revisão não concluída.",
+      "resultado": "pendente-fonte"
+    },
+    "coluna-0386": {
+      "arquivos": [
+        {
+          "arquivo": "coluna/coluna-0386-1.png",
+          "sha256": "2d97e4a8b7dcee97ae685fb5f3b010f720ef0bb507ab8ae804789b19b7e1f83b"
+        },
+        {
+          "arquivo": "coluna/coluna-0386-2.png",
+          "sha256": "e090b2550d329ce9ab4a35454e0245db946a858823641f4d1b13e507661aca1d"
+        }
+      ],
+      "observacao": "RM e TC abertas em todos os arquivos. Resolução limitada; não concluir integridade posterior definitiva nem estabilidade apenas de ASIA E/deambulação. Necessário detalhamento da morfologia, alinhamento sob carga e integridade ligamentar; revisão não concluída.",
+      "resultado": "pendente-fonte"
+    }
+  }
+}

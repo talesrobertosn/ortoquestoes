@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1335 |
+| pendente | 1297 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 93 |
-| pendente-inspecao-imagem | 162 |
-| revisada | 682 |
+| pendente-fonte | 114 |
+| pendente-inspecao-imagem | 159 |
+| revisada | 702 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -26,13 +26,13 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |
-| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 6 | 0 | 126 |
-| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 50 | 0 | 78 |
+| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 11 | 0 | 121 |
+| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 60 | 0 | 68 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 0 | 0 | 73 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 0 | 0 | 76 |
-| Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 4 | 0 | 59 |
+| Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 14 | 0 | 49 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 0 | 0 | 45 |
-| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 5 | 0 | 68 |
+| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 6 | 0 | 67 |
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 0 | 0 | 39 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 1 | 0 | 82 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 0 | 0 | 123 |
