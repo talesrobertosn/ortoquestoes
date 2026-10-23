@@ -950,19 +950,47 @@
   "conferido": false
  },
  "trauma-0057": {
-  "conceito": "**A fratura do úmero proximal em partes (Neer).** O úmero proximal tem **quatro segmentos** principais, que correspondem aos antigos centros de ossificação: a **cabeça** (superfície articular), o **tubérculo maior**, o **tubérculo menor** e a **diáfise**. Neer considera um segmento como \"parte\" quando está desviado **mais de 1 cm** ou angulado **mais de 45°**.\n\n**Os músculos explicam os desvios.** Cada segmento é puxado pelos músculos que se inserem nele.\n\n| Segmento | Músculos | Desvio |\n|---|---|---|\n| **Tubérculo maior** | Supraespinal, infraespinal e redondo menor | **Superior e posterior** |\n| **Tubérculo menor** | **Subescapular** | **Medial** (e anterior) |\n| **Diáfise** | **Peitoral maior** (e deltoide) | **Medial** (e anterior), com subida pelo deltoide |\n| Cabeça | Sem inserção muscular | Desvia conforme os tubérculos que ficam presos a ela |\n\n**A fratura do tubérculo menor.** É rara isolada. Pode ocorrer na **luxação posterior** do ombro (por convulsão ou choque elétrico), em que o subescapular arranca o tubérculo. O fragmento é puxado para **medial** pelo subescapular e pode **bloquear a rotação interna**.\n\n**A fratura do tubérculo maior.** É mais comum e frequentemente acompanha a **luxação anterior**. Um desvio superior de apenas **5 mm** (3 a 5 mm em atletas) já pode causar **impacto subacromial** e indicar fixação.\n\n**Como a cabeça se comporta.**\n- Na fratura em **3 partes** com o tubérculo **menor** preso à cabeça, o subescapular roda a cabeça **internamente**.\n- Na fratura em **3 partes** com o tubérculo **maior** preso à cabeça, os rotadores externos rodam a cabeça **externamente** e em abdução.\n- Na fratura em **4 partes**, a cabeça fica **solta**, sem irrigação pelos tubérculos, com alto risco de **necrose avascular**. A cabeça impactada em **valgo** tem melhor prognóstico, porque o periósteo medial (com a artéria) pode estar preservado.\n\n**A irrigação da cabeça.** A **artéria circunflexa umeral posterior** é hoje considerada a principal (antes se atribuía o papel à artéria arqueada, ramo da circunflexa anterior). Os critérios de **Hertel** preveem a isquemia: extensão metafisária medial menor que 8 mm e ruptura da dobradiça medial.",
-  "correta": "**Correta: C (medial, pela ação do músculo subescapular).** Na fratura do úmero proximal, o tubérculo menor é desviado para **medial** pelo **subescapular**, que se insere nele. O tubérculo maior é desviado para cima e para trás pelo supraespinal, pelo infraespinal e pelo redondo menor.",
+  "conceito": "O fragmento não se desvia ao acaso: ele acompanha a estrutura que continua presa a ele. No **tubérculo menor**, essa estrutura é o **subescapular**, cuja tração o leva para **medial**. A ruptura ocorre através do osso, preservando a ligação do tendão com o fragmento.\n\nÉ útil comparar com o outro tubérculo: o maior isolado vai para trás e medial pela ação do manguito posterossuperior. Assim, lembrar apenas “medial” não resolve a questão; é preciso identificar qual inserção está ligada ao fragmento. No colo cirúrgico, ainda há outra força: o peitoral maior leva a diáfise para anterior e medial (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nEsse raciocínio também explica a sequela: o tubérculo menor consolidado desviado pode bloquear rotação interna e enfraquecer o subescapular. O resumo da Biblioteca reúne as direções de desvio e seus efeitos.",
+  "correta": "**C: medial, pela ação do músculo subescapular.** A inserção acompanha o tubérculo menor fraturado e mantém sua força deformante. A direção e o músculo precisam estar corretos no mesmo par.",
   "incorretas": {
-   "A": "O **infraespinal** insere-se no **tubérculo maior**, e não no menor, e o puxa para trás.",
-   "B": "O desvio medial está certo, mas o músculo que se insere no tubérculo menor é o **subescapular**, e não o infraespinal.",
-   "D": "O **subescapular** puxa o tubérculo menor para **medial**, e não para lateral."
+   "A": "**Troca tanto a inserção quanto a direção.** O manguito posterossuperior se relaciona ao tubérculo maior e ao seu desvio para trás e medial. O menor é tracionado pelo subescapular para medial, não lateralmente pelo infraespinal.",
+   "B": "**Medial é a direção correta, mas o músculo está trocado.** O infraespinal integra o manguito posterossuperior ligado ao tubérculo maior. O fragmento menor continua sob a ação do subescapular.",
+   "D": "**Acerta o subescapular e inverte seu efeito sobre o fragmento.** O capítulo descreve desvio medial do tubérculo menor. A simples identificação do músculo não basta se a alternativa dirige o fragmento para o lado oposto."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Fratura isolada dos tubérculos e fratura-luxação; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura",
+      "Fratura isolada dos tubérculos e fratura-luxação",
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-c88d1394",
+      "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+      "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+      "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "1c19ef3956529ae053bee16a9112f90d631b8e2f9de185bb0eff2dfb41e0c3ce"
+    }
+   ],
+   "questaoSha256": "6185ddc808dccd2a545891c1f2555af717f021bcb2e4e58fb9dc84f13410631c",
+   "comentarioSha256": "c378578020bbf960c227ebe35c47f166e8883d4d47056415c85ac814551e8912"
+  }
  },
  "trauma-0058": {
   "incorretas": {
@@ -1196,15 +1224,48 @@
   "conferido": false
  },
  "trauma-0071": {
+  "conceito": "A ponta do parafuso pode atravessar a superfície da cabeça e entrar na articulação. Essa **perfuração condral** é a complicação mais frequente destacada para a placa bloqueada no úmero proximal. Ela pode ocorrer já na montagem, por parafuso longo, ou depois, quando a cabeça colapsa sobre um parafuso que permanece travado na placa.\n\nO colapso em varo pode fazer parte dessa sequência, mas não é o mesmo desfecho. A cabeça pode perder sua posição e, com isso, transformar um parafuso antes intraósseo em uma ponta intra-articular. É a distinção entre a falha do apoio e o dano articular que ela pode produzir (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nParafusos curtos, conferência radioscópica em vários planos, boa redução e suporte medial procuram reduzir esses riscos. O resumo da Biblioteca explica os dois mecanismos de perfuração e a função do calcar.",
+  "correta": "**D: a perfuração condral dos parafusos.** A placa bloqueia a relação angular dos parafusos, mas não impede que uma cabeça colapsada se aproxime de suas pontas. A penetração também pode ser primária se eles já forem longos demais na cirurgia.",
   "incorretas": {
-   "A": "O colapso em varo é frequente, mas é ele que leva à perfuração pelos parafusos.",
-   "B": "A necrose avascular é menos comum que a perfuração.",
-   "C": "O retardo de consolidação é pouco frequente na metáfise bem irrigada."
+   "A": "**Colapso em varo pode ser o mecanismo que leva à perfuração.** A perda de apoio medial favorece perda da redução. Ainda assim, a complicação mais frequente indicada entre as opções é a ponta do parafuso atravessando a superfície articular.",
+   "B": "**Osteonecrose é perda de viabilidade da cabeça, não sinônimo de perfuração.** Pode evoluir com colapso e agravar a relação com os parafusos, mas nem toda penetração depende de necrose. Um parafuso pode já estar longo na operação.",
+   "C": "**Retardo de consolidação diz respeito ao tempo de união do foco.** É um problema diferente da relação entre a ponta do parafuso e a superfície articular. O capítulo destaca a penetração como a complicação mais frequente da placa bloqueada."
   },
-  "conceito": "A **placa bloqueada** mudou o tratamento da fratura do **úmero proximal** no osso osteoporótico: os parafusos travados na placa dão **estabilidade angular**. Mas ela tem uma complicação típica.\n\n**A mais frequente: perfuração da cartilagem pelos parafusos** (cut-out). Quando a cabeça **colapsa** ou afunda em **varo**, os parafusos rígidos não acompanham e acabam furando a superfície articular, lesando a glenoide.\n\n**As outras complicações**: **colapso em varo** (frequente, e é ele que leva à perfuração), **necrose avascular** (menos comum), **impacto subacromial** da placa alta e **retardo de consolidação** (raro, pela boa irrigação da metáfise).\n\n**Como prevenir**:\n\n**restaurar o suporte medial**: parafusos no calcar e, se preciso, enxerto de fíbula dentro do canal;\n\n**evitar o varo** na redução;\n\n**parar a ponta do parafuso** de 5 a 8 mm abaixo da cartilagem;\n\n**posicionar a placa** de 5 a 8 mm abaixo do topo do tubérculo maior.\n\n**Na prova**: a complicação mais frequente da placa bloqueada no úmero proximal é a **perfuração condral dos parafusos**.",
-  "correta": "Quando a cabeça colapsa, os parafusos rígidos não acompanham e perfuram a cartilagem.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Placa bloqueada: o parafuso, o calcar e a técnica",
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "21990ea913cd305792a6927069c0f26f648ae43f66589a923e1847b0a91cf266"
+    }
+   ],
+   "questaoSha256": "c165cadfb1aa5434c833e503c490897e25b351b5d01cf811746d39ca4b665262",
+   "comentarioSha256": "8d8dd1e1809cf399711752550275e1f30ff2068e4fe81a177cf189628a17d838"
+  }
  },
  "trauma-0072": {
   "incorretas": {
@@ -5835,18 +5896,49 @@
   "conferido": false
  },
  "trauma-0429": {
+  "conceito": "A complicação característica da placa no úmero proximal é a **penetração intra-articular do parafuso**. O importante é enxergar a relação entre uma cabeça óssea que pode se deformar e uma montagem angularmente fixa.\n\nSe o parafuso já ultrapassa a cabeça na cirurgia, a perfuração é primária. Se a cabeça perde altura ou colapsa depois, o parafuso bloqueado não recua: sua ponta pode passar a projetar-se na articulação. Assim, um controle inicial adequado não dispensa cuidar da redução e do suporte medial que mantêm a cabeça apoiada (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nRigidez, necrose e consolidação viciosa são complicações relevantes, mas têm mecanismos próprios e podem coexistir com a penetração. A pergunta pede a mais frequente dessa fixação. O resumo da Biblioteca permite comparar a perfuração com esses outros problemas.",
+  "correta": "**D: penetração intra-articular do parafuso.** Ela pode resultar de comprimento excessivo inicial ou do colapso posterior da cabeça sobre a montagem. Os dois caminhos produzem a mesma relação indesejada: metal ultrapassando a superfície articular.",
   "incorretas": {
-   "A": "**Menos frequente.** A rigidez ocorre, mas não é a complicação mais relatada com a placa.",
-   "B": "**Depende da fratura.** A necrose se relaciona à desvascularização da cabeça e é menos frequente que a penetração dos parafusos.",
-   "C": "**Menos frequente.** A consolidação viciosa, sobretudo em varo, ocorre, mas é menos comum que a penetração."
+   "A": "**Artrofibrose limita movimento por retração de partes moles.** O capítulo destaca a contratura capsular na rigidez refratária. Esse mecanismo não é o da perfuração e não ocupa a resposta pedida para a placa.",
+   "B": "**Osteonecrose é uma complicação da perfusão e da viabilidade óssea.** Pode acabar em colapso, mas a penetração não exige que haja necrose, pois também pode ocorrer primariamente com a cabeça ainda viável.",
+   "C": "**Consolidação viciosa significa união em posição inadequada.** A orientação dos segmentos pode comprometer movimento e produzir impacto. A complicação de implante destacada aqui é outra: o parafuso penetrando a articulação, com ou sem deformidade consolidada."
   },
-  "conceito": "**A placa bloqueada no úmero proximal.** É o implante mais usado nas fraturas desviadas do úmero proximal. Os parafusos **travam** na placa, formando um construto de **ângulo fixo** que não depende do atrito entre placa e osso, o que funciona bem no osso **osteoporótico**. Os parafusos cefálicos vão o mais perto possível do **osso subcondral**, onde a ancoragem é melhor.\n\n**A complicação típica.** Justamente por não colapsar, o construto cria um problema. Quando a fratura **perde altura** (reabsorção no foco, colapso em **varo** por falta de suporte medial, necrose parcial da cabeça), o osso da cabeça **desce** em direção à placa, mas os parafusos continuam no lugar. As pontas **atravessam a cartilagem** e entram na articulação: é a **penetração intra-articular** dos parafusos, a complicação mais frequente, primária (na cirurgia, por parafuso longo) ou secundária (pelo colapso). Ela destrói a glenoide e obriga a retirar o material.\n\n**Como evitar.** Restaurar o **suporte medial**: redução do calcar, **parafusos de calcar** (inferomediais) que sustentam a cabeça por baixo, e, em cominuição medial, **enxerto de fíbula intramedular**. Parafusos **5 a 8 mm** aquém do osso subcondral e verificação com radioscopia em várias rotações. Evitar redução em varo. Placa posicionada abaixo do topo do tubérculo maior (cerca de 8 mm) para não impactar no acrômio.\n\n**As outras complicações.** **Consolidação viciosa em varo**, **necrose avascular** (tanto maior quanto mais desvascularizada a cabeça, pelos critérios de Hertel), **impacto subacromial** da placa alta, **rigidez**, infecção e lesão do axilar. Nas séries, a taxa global de complicações da placa bloqueada é alta, e as reoperações são frequentes. Em idosos com fraturas complexas, a **artroplastia reversa** ganhou espaço.\n\n**Na prova:** complicação mais frequente da **placa bloqueada** no úmero proximal = **penetração intra-articular dos parafusos**; prevenir com **suporte medial** e parafusos de calcar.",
-  "correta": "**Penetração intra-articular do parafuso.** O construto de ângulo fixo não acompanha a perda de altura da fratura, e as pontas dos parafusos atravessam a cartilagem da cabeça.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 57"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica; Complicações: rigidez, viciosa, pseudartrose e tubérculos; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Placa bloqueada: o parafuso, o calcar e a técnica",
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "bcabb3a5f6c62c47a6da44ddbe76d46a48d7bf545012607fc37418dca399fd13"
+    }
+   ],
+   "questaoSha256": "8ec27cf5fd5556be9ffcdcf8a5b80d5448322d0efb2417cf6c58f63f29e904f9",
+   "comentarioSha256": "04e543915062a3e6669ab1519b14654a3c03664927adc1abfd043387a2b8aadc"
+  }
  },
  "trauma-0430": {
   "incorretas": {
@@ -6105,15 +6197,43 @@
   "conferido": false
  },
  "trauma-0442": {
+  "conceito": "A pergunta restringe a comparação às **fraturas em duas partes**. Nesse grupo, o padrão mais frequente é o **colo cirúrgico**. Na série de Court-Brown citada no capítulo, as duas partes eram 37% do total, e aproximadamente três quartos delas envolviam o colo cirúrgico, correspondendo a 28% de todas as fraturas.\n\nNão se deve confundir essa resposta com o padrão mais frequente de toda a classificação: as de uma parte, sem desvio pelos critérios de Neer, eram cerca de metade. Entre as duas partes, o tubérculo maior vem depois, perto de 10% do total; colo anatômico e tubérculo menor isolados eram muito raros (resumo do Rockwood, 10ª ed., cap. 36, “Quanto cai de cada tipo”).\n\nA utilidade dos números é ordenar o raciocínio, respeitando o denominador. A seção de padrões do resumo da Biblioteca também explica por que número de traços não equivale a número de partes.",
+  "correta": "**A: colo cirúrgico.** É o principal padrão entre as fraturas em duas partes. A série citada o situa em 28% do total, enquanto todo o grupo de duas partes corresponde a 37%.",
   "incorretas": {
-   "B": "A fratura do colo anatômico é rara.",
-   "C": "A fratura do tubérculo maior é a segunda mais comum.",
-   "D": "A fratura do tubérculo menor é rara."
+   "B": "**Colo anatômico em duas partes é raro.** Na série, representa cerca de 0,3% do total. Sua proximidade com a cabeça e sua importância clínica não o tornam mais frequente que o colo cirúrgico.",
+   "C": "**O tubérculo maior é mais comum que os outros dois distratores, mas fica atrás do colo cirúrgico.** A forma em duas partes corresponde a quase 10% do total na série, contra 28% do colo cirúrgico.",
+   "D": "**O tubérculo menor isolado é excepcional.** A série cita cerca de 0,2% do total, associado à luxação posterior. Não se deve transferir a importância de reconhecer essa associação para uma suposta maior frequência."
   },
-  "conceito": "**Neer** classifica as fraturas do **úmero proximal** pelas **partes desviadas**: cabeça (colo anatômico), tubérculo maior, tubérculo menor e diáfise (colo cirúrgico). Uma parte só conta se desviar mais de **1 cm** ou angular mais de **45°**.\n\n**A fratura em duas partes mais frequente**: a do **colo cirúrgico**. Ela separa a diáfise do conjunto cabeça e tubérculos, na região metafisária logo abaixo deles, onde o osso esponjoso é mais frágil no idoso.\n\n**O desvio**: o **peitoral maior** puxa a diáfise para medial e anterior; a cabeça fica com os tubérculos, em posição neutra.\n\n**As outras fraturas em duas partes**:\n\n**tubérculo maior**: a segunda mais comum, muitas vezes com **luxação anterior** do ombro;\n\n**tubérculo menor**: rara, pensar em **luxação posterior**;\n\n**colo anatômico**: rara e de pior prognóstico (necrose).\n\n**O tratamento**: a maioria das duas partes do colo cirúrgico é conservadora; cirurgia (placa bloqueada ou haste) nas desviadas instáveis.\n\n**Na prova**: a fratura em duas partes mais frequente é a do **colo cirúrgico**.",
-  "correta": "O colo cirúrgico, na metáfise frágil abaixo dos tubérculos, é a fratura em duas partes mais comum.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-e50565f3",
+      "neer-ao-e-os-padroes-de-fratura-7fefc017",
+      "neer-ao-e-os-padroes-de-fratura-3d9e75c3"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "1e71f523ccf966d422a201f85be8d226dc0fbf87856db07962f0b35774591b37"
+    }
+   ],
+   "questaoSha256": "60fa8bfacfd76580382d08873fda429c249cfed9ceea1b3e4f57f9be26cfc84e",
+   "comentarioSha256": "abab9a4fbb1cdf216900ed1b7d2d7ea8e8e4bd14db5d803559ff22607c3729b9"
+  }
  },
  "trauma-0443": {
   "incorretas": {
@@ -6577,15 +6697,41 @@
   "conferido": false
  },
  "trauma-0533": {
+  "conceito": "O manguito pode estar lesionado junto de uma fratura do úmero proximal, mas nem toda lesão encontrada foi produzida pelo trauma. O capítulo descreve associação em **até 50% dos casos**, chegando a 61% nos maiores de 60 anos, com parte das lesões já existente antes da fratura.\n\nEssa distinção evita transformar “lesão associada” em “ruptura aguda causada pela queda”. Atrofia na imagem favorece a presença de doença prévia. A pergunta procura o valor aproximado de **metade dos pacientes**, representado pela alternativa de 50% (resumo do Rockwood, 10ª ed., cap. 36, “Manguito rotador”).\n\nO dado também não cria indicação de exame do manguito para todos: no material consultado, sua integridade não previu o resultado do tratamento conservador, e a imagem não é pedida de rotina quando esse é o plano. Leia essa seção no resumo da Biblioteca para entender a frequência junto de sua implicação clínica.",
+  "correta": "**A: 50%.** É a aproximação oferecida para a associação descrita em até metade dos casos. A porcentagem varia com a população, e encontrar a lesão não demonstra que ela seja nova.",
   "incorretas": {
-   "B": "**Subestima.** Séries que investigaram ativamente encontraram frequência maior que 30%.",
-   "C": "**Subestima.** Vinte por cento está bem abaixo do que se encontra com imagem ou artroscopia.",
-   "D": "**Próximo, mas abaixo.** O valor citado para a associação é de cerca de metade dos pacientes."
+   "B": "**Trinta por cento fica abaixo do valor de referência cobrado.** O capítulo descreve até 50% no conjunto e proporção ainda maior acima de 60 anos. A resposta da questão se aproxima de metade dos casos.",
+   "C": "**Vinte por cento representa um quinto, e não a metade descrita.** Subestima o valor aproximado usado para essa associação. Isso não significa que toda fratura tenha ruptura do manguito nem que toda ruptura seja traumática.",
+   "D": "**Quarenta por cento não é a aproximação escolhida para o dado do capítulo.** A fonte chega a 50% no conjunto e a 61% acima de 60 anos. Existe variação entre populações, mas o valor de referência cobrado é aproximadamente metade dos casos."
   },
-  "conceito": "**Uma lesão escondida.** A **ruptura do manguito rotador** associada à fratura do **úmero proximal** é frequentemente esquecida, porque a dor e a fraqueza são atribuídas à própria fratura. Séries que procuraram ativamente, com **ultrassom**, **ressonância** ou **artroscopia**, encontraram lesões do manguito em cerca de **metade** dos pacientes.\n\n**Por que tanta lesão.** Duas razões se somam. A **população**: a fratura do úmero proximal é típica da **mulher idosa** com osteoporose, faixa etária em que a **degeneração** do manguito já é comum, e muitas lesões são **prévias**. E o **trauma**: a queda com o braço estendido ou em abdução pode romper um tendão já frágil, especialmente quando os **tubérculos** se deslocam, levando os tendões junto.\n\n**O manguito e os tubérculos.** Nas fraturas com **tubérculo maior** desviado, o supraespinal e o infraespinal puxam o fragmento para **cima e para trás**; o **subescapular** puxa o **tubérculo menor** para **medial**. A redução e fixação dos tubérculos é, na prática, uma reparação do manguito. Na **artroplastia** para fratura, a **consolidação dos tubérculos** na posição correta é o fator que mais determina a função, especialmente na hemiartroplastia.\n\n**O que isso muda.** No paciente que não recupera a elevação após a consolidação, deve-se pensar em **lesão do manguito**, e não só em rigidez ou lesão do axilar. No idoso com fratura complexa e manguito provavelmente comprometido, a **artroplastia reversa** tem a vantagem de não depender do manguito para elevar o braço, e por isso tem resultados mais previsíveis que a hemiartroplastia.\n\n**Na prova:** ruptura do manguito associada à fratura do úmero proximal em cerca de **50%**; favorece a **reversa** no idoso com fratura complexa.",
-  "correta": "**50%.** Cerca de metade dos pacientes tem ruptura do manguito associada, pela degeneração prévia comum nessa faixa etária e pela energia do trauma.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Lesões associadas: nervos, artéria, manguito e outras fraturas. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+     ],
+     "blocos": [
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-8cc48365"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "3846983e30fd1fb181f0c60d8866bf0f42ca484907414299d4c3c5a1fabe5dce"
+    }
+   ],
+   "questaoSha256": "62f70e8a88cb84e08c6b30c775a203b9f8f08e4db4d2c8ce87514b83ff45fd5e",
+   "comentarioSha256": "f7ba33b93468451b1e5e470bebb83645eb9369bb9a1314948657ff22c47cd816"
+  }
  },
  "trauma-0534": {
   "conceito": "**A placa precisa ficar fora da porção que gira contra a ulna.** A cabeça do rádio tem uma superfície côncava que articula com o capítulo e uma borda que articula com a incisura radial da ulna. Cerca de um terço da circunferência é não articular; esse setor oferece uma zona para o implante sem bloquear a rotação por conflito articular.\n\nO resumo localiza a placa com o **antebraço em rotação neutra**, cerca de **10 graus anterior à linha média lateral**. A posição do antebraço faz parte da referência: uma direção descrita com o rádio neutro não pode ser transportada sem ajuste para um rádio totalmente pronado ou supinado.\n\nÉ útil separar dois sentidos de segurança. Para **marcar a zona da placa**, a referência é neutro. Para **proteger o interósseo posterior durante o acesso lateral**, o capítulo recomenda pronação, além de evitar afastador anterior ao colo e dissecção distal sem visualizar o nervo. São tarefas diferentes da cirurgia, com razões anatômicas distintas.\n\nA localização da zona pode ser conferida também pelas referências de Smith e Hotchkiss e pelos marcos de Caputo, estiloide radial e tubérculo de Lister. O objetivo continua ser o mesmo: não colocar material saliente na parte articular que precisa deslizar durante a pronossupinação.\n\n**Leia “Anatomia: a zona segura” na Biblioteca e compare com “Detalhes da via e da fixação”.** Isso evita responder “pronação” a toda pergunta que mencione segurança na cirurgia da cabeça radial.",
@@ -7692,19 +7838,45 @@
   "conferido": false
  },
  "trauma-0687": {
-  "conceito": "**A fratura do corpo da escápula.** É uma fratura de **alta energia** (acidentes de moto e carro, quedas de altura), e por isso vem quase sempre acompanhada de **lesões graves**: do tórax (fraturas de costelas, pneumotórax, contusão pulmonar), da cabeça, da coluna e do plexo braquial. A escápula é protegida por músculos grossos, e fraturá-la exige muita energia.\n\n**O tratamento é quase sempre conservador.** A grande maioria das fraturas do corpo consolida bem com **tipoia** e mobilização precoce, porque a escápula é envolvida por músculos e tem boa irrigação. Mesmo desvios moderados costumam ser bem tolerados.\n\n**Quando operar.** A cirurgia é reservada para desvios **grandes**, que alteram a relação entre a glenoide e o tórax e enfraquecem o ombro. Os critérios mais usados (Cole, Jones e outros) são:\n\n| Critério | Limite para cirurgia |\n|---|---|\n| **Angulação** da borda lateral no **perfil escapular** (incidência em Y) | **45° ou mais** |\n| **Medialização** da borda lateral (deslocamento da glenoide para medial) | **Cerca de 15 a 20 mm ou mais** |\n| **Ângulo glenopolar** (no AP verdadeiro) | **Menor que cerca de 20 a 22°** (normal de 30 a 45°) |\n| Lesão dupla do **complexo suspensor superior do ombro** | Com desvio importante |\n| Degrau na **superfície articular** da glenoide | Maior que cerca de 4 mm |\n\n**O ângulo glenopolar.** É o ângulo entre a linha que une os polos superior e inferior da glenoide e a linha que une o polo superior da glenoide ao ângulo inferior da escápula. Quando diminui, a glenoide fica **rodada** e inclinada, o que altera a mecânica do ombro.\n\n**O complexo suspensor superior do ombro (Goss).** É um **anel** formado pela glenoide, o coracoide, o ligamento coracoclavicular, a clavícula distal, a articulação acromioclavicular e o acrômio. Uma lesão isolada do anel é estável. Duas lesões (por exemplo, fratura do colo da glenoide e da clavícula, o \"ombro flutuante\") podem deixar o segmento instável.\n\n**A cirurgia.** É feita pela via **posterior** (de **Judet**, ou suas variações minimamente invasivas), entre o infraespinal e o redondo menor, fixando as bordas lateral e medial da escápula, onde o osso é mais espesso, com placas.",
-  "correta": "**Correta: C (45°).** Na fratura do corpo da escápula, o tratamento cirúrgico é indicado quando o perfil escapular (incidência em Y) mostra uma angulação da borda lateral de **45° ou mais**. Outros critérios são a medialização da borda lateral de cerca de 15 a 20 mm e o ângulo glenopolar menor que cerca de 22°.",
+  "conceito": "O perfil escapular mostra a deformidade entre os fragmentos da **borda lateral**. Essa borda participa do pilar que transmite a carga da glenoide; uma angulação importante altera a relação entre a superfície articular, o corpo e o trajeto dos músculos do ombro. Não se trata do ângulo glenopolar, que é outra medida, feita na AP verdadeira.\n\nNo resumo do capítulo, **angulação maior que 40° no perfil** é um dos critérios relativos que favorecem cirurgia nas fraturas extra-articulares do colo e do corpo. A pergunta oferece 15°, 30°, 45° e 60°: **45° é o primeiro valor apresentado acima desse limite**. Por isso o gabarito é compatível, embora o corte do capítulo não seja escrito como “45°” (resumo do Rockwood, 10ª ed., cap. 33, “Os critérios relativos de cirurgia”).\n\nEssas medidas não substituem a avaliação do paciente. Idade, demanda, outras lesões e condição das partes moles entram na decisão; uma angulação isolada não torna a operação obrigatória em qualquer pessoa. Para rever o plano da medida e os critérios relativos, consulte essa seção no resumo da Biblioteca.",
+  "correta": "**C: 45°.** Entre os valores oferecidos, é o primeiro que ultrapassa o critério de mais de 40° citado no capítulo. A decisão clínica continua relativa ao desvio e às condições do paciente; a resposta identifica o patamar dentro das opções da questão.",
   "incorretas": {
-   "A": "Uma angulação de **15°** é pequena e bem tolerada. O tratamento é conservador.",
-   "B": "Uma angulação de **30°** ainda costuma ser tratada sem cirurgia, já que a escápula tolera desvios moderados.",
-   "D": "**60°** ultrapassa o limite, mas a indicação começa antes, a partir de **45°**."
+   "A": "**Quinze graus não atinge o critério angular descrito.** Esse valor isolado fica abaixo de mais de 40° no perfil. Não permite concluir que toda a fratura será conservadora, porque outros desvios ou lesões podem influenciar a conduta.",
+   "B": "**Trinta graus ainda está abaixo desse limite específico.** A medida deve ser comparada com a angulação da borda lateral no perfil, e não com o ângulo glenopolar na AP. Somente esse número não preenche o critério angular citado.",
+   "D": "**Sessenta graus também ultrapassa o limite, mas não é onde ele começa entre as opções.** A pergunta usa “a partir de”. Esperar 60° excluiria o intervalo já abrangido pelo critério de mais de 40°; 45° é a primeira opção que o satisfaz."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Cole PA, Gauger EM, Schroder LK. Management of scapular fractures. J Am Acad Orthop Surg. 2012;20(3):130-141."
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Medir o desvio e indicar a cirurgia"
+     ],
+     "blocos": [
+      "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+      "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+      "medir-o-desvio-e-indicar-a-cirurgia-af910b0f",
+      "medir-o-desvio-e-indicar-a-cirurgia-4920c185",
+      "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "7df09688cfe5fc98bbfb350bdb7de199b786796a3f78af3c015a17206ca09123"
+    }
+   ],
+   "questaoSha256": "18490dce46acf39288a218c61539d2889cb72f6d68d577ca456bf1ce0bca101b",
+   "comentarioSha256": "d2d69522b71e41300e05bf8faaa5a8dbfa135721d2816e294dae39f917672b73"
+  }
  },
  "trauma-0688": {
   "incorretas": {
@@ -8459,15 +8631,45 @@
   "conferido": false
  },
  "trauma-0750": {
+  "conceito": "O **nervo axilar** é o mais frequentemente acometido nas fraturas do úmero proximal. Ele está próximo ao colo e pode sofrer tração, contusão ou lesão pela diáfise deslocada medialmente. Na avaliação eletromiográfica citada no capítulo, o axilar apareceu em 58% e o supraescapular em 48%, com lesões combinadas frequentes.\n\nEsses percentuais não precisam somar 100%, porque um mesmo paciente pode ter mais de um nervo afetado. Também não significam que todos terão um déficit clínico evidente. No exame, procura-se alteração da sensibilidade na face lateral do braço e testa-se a contração isométrica do deltoide por palpação (resumo do Rockwood, 10ª ed., cap. 36, “Nervos”).\n\nA dor da fratura pode dificultar a avaliação motora, tornando útil examinar o deltoide sem exigir grande arco doloroso. O resumo da Biblioteca liga o exame clínico ao trajeto anatômico do axilar.",
+  "correta": "**A: Axilar.** É o primeiro na frequência descrita e está diretamente exposto às forças do trauma proximal. O exame combina sensibilidade lateral do braço e contração do deltoide, sem depender apenas da capacidade de elevar ativamente o ombro doloroso.",
   "incorretas": {
-   "B": "O radial é o nervo típico da fratura da diáfise do úmero.",
-   "C": "O supraescapular é lesado com menos frequência.",
-   "D": "O musculocutâneo é lesado com menos frequência, mais nas luxações."
+   "B": "**Não se deve transferir automaticamente o risco de outro segmento do úmero.** A pergunta é sobre o terço proximal, em que a série destaca o axilar. O radial não é apontado como o nervo mais frequentemente associado nesse contexto.",
+   "C": "**O supraescapular é frequente, mas vem depois do axilar.** A eletromiografia citada mostra 48% contra 58%. Além disso, pode haver associação entre lesões, portanto reconhecer o supraescapular não afasta o acometimento do axilar.",
+   "D": "**O musculocutâneo tem um risco cirúrgico diferente.** O capítulo destaca sua relação com o coracobraquial e o afastamento medial excessivo do tendão conjunto. Isso não o torna o nervo mais lesado no trauma proximal; o primeiro lugar é do axilar."
   },
-  "conceito": "Na **fratura do terço proximal do úmero** do adulto, a lesão neurológica mais frequente é a do **nervo axilar**.\n\n**Por quê**: o nervo axilar sai do plexo, passa pelo **espaço quadrangular** (junto com a artéria circunflexa umeral posterior) e **contorna o colo cirúrgico** do úmero por trás, a cerca de 5 a 7 cm do acrômio, antes de chegar ao deltoide. Fica encostado no osso exatamente onde a fratura acontece.\n\n**Quando a lesão é mais comum**: nas fraturas **desviadas**, nas **fraturas-luxações** e nos idosos. Muitas lesões são **subclínicas** e só aparecem na eletroneuromiografia.\n\n**O exame**: testar a **sensibilidade** na face lateral do ombro (área do \"distintivo de sargento\", o \"regimental badge\") e a contração do **deltoide**, mesmo com dor.\n\n**A evolução**: quase sempre **neuropraxia**, que recupera em meses.\n\n**Os outros nervos**: o **supraescapular** e o **musculocutâneo** podem ser lesados, sobretudo nas luxações; o **radial** é o típico da fratura da **diáfise**.\n\n**Na cirurgia**: na via lateral (transdeltoidea), o axilar cruza a face profunda do deltoide; cuidado ao estender a incisão.\n\n**Na prova**: na fratura do terço proximal do úmero, a lesão neurológica mais frequente é a do nervo **axilar**.",
-  "correta": "O axilar contorna o colo cirúrgico por trás, encostado no osso onde a fratura acontece.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Lesões associadas: nervos, artéria, manguito e outras fraturas; Anatomia aplicada e vias de acesso. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Lesões associadas: nervos, artéria, manguito e outras fraturas",
+      "Anatomia aplicada e vias de acesso"
+     ],
+     "blocos": [
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-01451d2b",
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5",
+      "anatomia-aplicada-e-vias-de-acesso-f121538c",
+      "anatomia-aplicada-e-vias-de-acesso-e632af2f"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "b80d289bbe62a8cfd2af0b9662638ec92b82daa922e5200981764a5cef08e996"
+    }
+   ],
+   "questaoSha256": "07caf7859b22b58142501a3a00876e2ebfefcff571c699dd0cd1c1796f75bbe8",
+   "comentarioSha256": "7ae4d6919b8f12fb7ebe565d5d53258074ec68c335d677cb9c2f6ea6cc7ee20b"
+  }
  },
  "trauma-0751": {
   "incorretas": {
@@ -8910,15 +9112,45 @@
   "conferido": false
  },
  "trauma-0781": {
+  "conceito": "Uma placa bloqueada não precisa se soltar ou quebrar para causar uma complicação importante. Os parafusos podem continuar presos à placa e, ainda assim, **penetrar a cabeça até a articulação**. Essa é a complicação mais frequente entre as alternativas.\n\nA rigidez angular da montagem explica os dois cenários. Um parafuso longo já perfura no início; em outro paciente, a cabeça colapsa e a ponta emerge porque não acompanha o recuo do osso. A segunda sequência mostra por que “perda da redução” e “penetração” podem coexistir sem serem a mesma coisa (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nO apoio medial é decisivo para manter altura e redução. A conferência do comprimento e a radioscopia, por sua vez, procuram impedir a perfuração já na operação. Leia a seção de placa e calcar no resumo da Biblioteca para relacionar essas medidas ao tipo de falha.",
+  "correta": "**D: penetração dos parafusos.** A ponta pode entrar na articulação por excesso de comprimento ou por colapso da cabeça, mesmo que a conexão entre placa e parafuso permaneça íntegra.",
   "incorretas": {
-   "A": "A soltura da placa é menos comum que a penetração dos parafusos.",
-   "B": "A perda da redução é frequente, mas a penetração dos parafusos é a mais comum.",
-   "C": "A fratura do implante é rara."
+   "A": "**Soltura não é necessária para haver penetração.** O bloqueio pode permanecer firme enquanto a cabeça perde altura ao redor dos parafusos. É por isso que uma radiografia não pode ser julgada apenas pela aderência da placa ao osso.",
+   "B": "**Perda da redução pode preceder a penetração secundária.** Falta de suporte medial e colapso alteram a posição da cabeça. A pergunta, porém, destaca como mais frequente a complicação em que os parafusos ultrapassam a superfície articular.",
+   "C": "**Fratura do implante é uma falha estrutural diferente.** O metal não precisa romper para que sua ponta alcance a articulação. Na penetração secundária, o problema pode ser precisamente uma montagem que permanece rígida enquanto o osso colapsa."
   },
-  "conceito": "A **placa bloqueada** no úmero proximal dá estabilidade angular no osso osteoporótico, mas tem uma complicação típica.\n\n**A mais comum: a penetração dos parafusos** na articulação (cut-out). Quando a cabeça **colapsa** ou afunda em **varo** durante a consolidação, os parafusos travados na placa não acompanham e acabam **furando a cartilagem**, lesando também a glenoide. A penetração pode ser **primária** (parafusos longos demais na cirurgia) ou **secundária** (pelo colapso).\n\n**As outras complicações**: **perda da redução** e colapso em varo (frequentes, e que levam à penetração secundária), **necrose avascular**, impacto da placa alta e, mais raramente, soltura ou **fratura do implante**.\n\n**Como prevenir**:\n\n**suporte medial**: parafusos no **calcar** e, se preciso, enxerto de fíbula no canal;\n\n**evitar o varo** na redução;\n\n**ponta dos parafusos** a 5 a 8 mm da cartilagem, conferida em várias rotações na radioscopia;\n\n**placa** 5 a 8 mm abaixo do topo do tubérculo maior.\n\n**Na prova**: a complicação mais comum da placa bloqueada no colo cirúrgico é a **penetração dos parafusos**.",
-  "correta": "Quando a cabeça colapsa, os parafusos travados não acompanham e perfuram a cartilagem.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Placa bloqueada: o parafuso, o calcar e a técnica"
+     ],
+     "blocos": [
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "c990f36196bcb397823e6d0b64cf7cce2a762932b875d44de0244edde291657d"
+    }
+   ],
+   "questaoSha256": "1fd7823970c2a75e28a9f26f395204a65238fc1d7a9c2a411c82039a62c3a84f",
+   "comentarioSha256": "96af395303778f37163ccbcb84e2392095be6a0ca6afb48826827813b2cd9e45"
+  }
  },
  "trauma-0782": {
   "incorretas": {
@@ -9602,15 +9834,45 @@
   "conferido": false
  },
  "trauma-0826": {
+  "conceito": "A artroplastia parcial substitui a cabeça umeral, mas a função do manguito ainda depende de seus pontos de fixação óssea. Por isso, **reconstruir anatomicamente o tubérculo maior** é o fator mais determinante entre os apresentados.\n\nQuando os tubérculos consolidam em posição adequada, os tendões podem voltar a atuar sobre o úmero. Se ficam soltos, desviados ou reabsorvidos, a hemiartroplastia pode ter resultado funcional muito ruim, inclusive pseudoparalisia. Uma prótese tecnicamente estável não substitui essa reconstrução (resumo do Rockwood, 10ª ed., cap. 36, “Por que a reversa tomou o lugar”).\n\nCimentação, tamanho da cabeça e versão continuam importantes. A diferença é que esses ajustes precisam servir a uma reconstrução que permita aos tubérculos consolidar. O resumo da Biblioteca compara essa dependência da hemiartroplastia com a reversa.",
+  "correta": "**B: reconstrução anatômica do tubérculo maior.** Ela recupera a relação óssea das inserções do manguito, indispensável ao resultado funcional da hemiartroplastia por fratura. A estabilidade do componente, sozinha, não garante boa elevação.",
   "incorretas": {
-   "A": "**Detalhe técnico secundário.** A cimentação importa para a estabilidade do implante, mas não é o que mais pesa na função.",
-   "C": "**Importante, mas não o principal.** O tamanho da cabeça afeta a tensão do manguito, mas a consolidação do tubérculo é mais determinante.",
-   "D": "**Importante, mas não o principal.** A retroversão correta ajuda a posicionar os tubérculos, mas não supera a consolidação deles como fator de resultado."
+   "A": "**A cimentação fixa a haste, mas não consolida os tubérculos.** O capítulo usa haste cimentada como padrão técnico. Ainda assim, uma haste estável pode coexistir com falha dos tubérculos e função ruim.",
+   "C": "**A dimensão do componente não substitui a reconstrução óssea.** A cabeça protética precisa se integrar à montagem, mas seu tamanho isolado não devolve a ligação dos tendões quando o tubérculo maior está mal reconstruído.",
+   "D": "**A retroversão ajuda a acomodar o tubérculo, sem ser o desfecho principal.** O capítulo observa que menos retroversão abre espaço atrás do componente para ele. A finalidade continua sendo uma reconstrução que permita consolidação e função do manguito."
   },
-  "conceito": "**A hemiartroplastia para fratura.** Nas fraturas em **quatro partes**, fraturas-luxações e fraturas com divisão da cabeça em idosos, a **hemiartroplastia** foi por décadas a opção cirúrgica: substitui a **cabeça** do úmero e mantém a glenoide. O problema é que a prótese devolve apenas a **superfície articular**; quem **move** o ombro é o **manguito rotador**, e o manguito está preso aos **tubérculos** fraturados.\n\n**O fator que decide o resultado.** A **consolidação anatômica dos tubérculos**, especialmente do **tubérculo maior**, é o fator mais determinante da função após a hemiartroplastia. Se o tubérculo consolida **alto** (impacto no acrômio), **baixo** ou **posterior** (manguito frouxo, sem alavanca), ou **não consolida** e é reabsorvido, o paciente fica sem elevação ativa e sem rotação externa, mesmo com a prótese perfeita. Falhas dos tubérculos ocorrem em uma parte significativa das séries.\n\n**Os detalhes técnicos.** Posicionar a prótese na **altura** correta (o topo da cabeça cerca de 5 a 8 mm acima do tubérculo maior, e a borda da prótese a cerca de 5,5 cm da inserção do peitoral maior) e na **retroversão** correta (cerca de 20 a 30 graus); fixar os tubérculos entre si, à diáfise e à prótese com **suturas** em cerclagem horizontais e verticais; usar **enxerto** da cabeça ressecada sob os tubérculos. Esses cuidados servem para que os tubérculos consolidem na posição certa.\n\n**A mudança de paradigma.** Por essa dependência dos tubérculos, a **artroplastia reversa** passou a ser preferida no **idoso** com fratura complexa: ela eleva o braço pelo **deltoide**, com resultados mais previsíveis, embora a consolidação do tubérculo maior também melhore a rotação e a função na reversa.\n\n**Na prova:** o fator mais determinante na **hemiartroplastia** para fratura do úmero proximal = **reconstrução e consolidação do tubérculo maior**.",
-  "correta": "**Reconstrução anatômica do tubérculo maior.** Sem os tendões do manguito ancorados em osso consolidado e na posição certa, a prótese não produz elevação nem rotação ativas.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Artroplastia: hemiartroplastia e reversa. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Artroplastia: hemiartroplastia e reversa"
+     ],
+     "blocos": [
+      "artroplastia-hemiartroplastia-e-reversa-260304ad",
+      "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+      "artroplastia-hemiartroplastia-e-reversa-7babb14a",
+      "artroplastia-hemiartroplastia-e-reversa-8c17804b",
+      "artroplastia-hemiartroplastia-e-reversa-26582a33"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "092dc8d40e2e983b75796b8c0b90652c01b8a4821f5478cc51977da9942c6899"
+    }
+   ],
+   "questaoSha256": "07d7a9d102c0514ec06772193547517d1e2bdf9447504fc67a0637e8a55dbc25",
+   "comentarioSha256": "59668e7454fbc9425c10f45b673bbdaf96d829846bbfdd62dfad9c8be1f5682d"
+  }
  },
  "trauma-0827": {
   "conceito": "**A fratura de estresse do colo do fêmur.** É uma fratura por **cargas repetidas**, típica de **corredores** de longa distância, **militares** em treinamento e atletas, e também de mulheres com a tríade da atleta (baixa disponibilidade de energia, alteração menstrual e baixa densidade óssea). Também ocorre como fratura de **insuficiência** no idoso com osteoporose.\n\n**O quadro clínico.** Dor na **virilha** ou na face anterior da coxa, que aparece com a atividade e melhora com o repouso. Dor na rotação interna do quadril e ao pular sobre a perna afetada (hop test). A radiografia inicial costuma ser **normal**; a **ressonância** é o exame de escolha para o diagnóstico precoce.\n\n**Os dois tipos (Devas; Fullerton e Snowdy).**\n\n| Tipo | Local | Comportamento |\n|---|---|---|\n| **De tensão** | Cortical **superior** (lateral) do colo | **Instável**: o traço tende a se propagar e a **desviar**; indicação de **fixação cirúrgica precoce** |\n| **De compressão** | Cortical **inferior** (medial) do colo | **Mais estável**; tratada com **descarga** de peso, se o traço ocupar menos de cerca de metade do colo |\n| Desviada | Traço completo com desvio | **Urgência**: redução e fixação; alto risco de necrose e pseudoartrose |\n\n**Por que o lado superior é perigoso.** Na carga, o colo do fêmur funciona como uma viga: a cortical **inferior** é **comprimida** e a **superior** é **tracionada**. Uma fissura no lado da **tensão** tende a **abrir** e a se propagar pelo colo, até a fratura completa e desviada. No lado da compressão, a carga fecha a fissura.\n\n**O tratamento pela literatura clássica.**\n- **Lado superior (tensão)**: **fixação** com parafusos canulados, mesmo sem desvio.\n- **Lado inferior (compressão)**: **descarga** de peso com muletas até a dor passar e a imagem melhorar. Se o traço for grande (mais de 50% do colo), se progredir ou se o tratamento falhar, **fixação**.\n- **Desviada**: redução anatômica urgente e fixação. As complicações são graves no jovem: necrose avascular, pseudoartrose e consolidação viciosa.\n\n**Sobre esta questão.** O gabarito registrado indica cirurgia precoce para o traço **inferior**. A literatura clássica indica o contrário: a cirurgia precoce é para o traço **superior** (tensão), e o inferior (compressão) é geralmente tratado de forma conservadora.",
@@ -10273,15 +10535,52 @@
   "conferido": false
  },
  "trauma-0889": {
+  "conceito": "Na fratura do **colo cirúrgico**, a consolidação depende de manter uma ligação adequada entre cabeça e diáfise. Pouco contato cortical, cominuição metafisária e interposição de partes moles podem impedir essa união, favorecendo **pseudartrose** após tratamento não cirúrgico.\n\nA perda absoluta de contato caracteriza o colo desengatado, cujo principal risco na classificação Mayo/FJD é justamente pseudartrose. O capítulo também descreve ruptura da manga periosteal, interposição do bíceps e distração por gesso pendente como fatores desfavoráveis. A pergunta cobra o local associado a essa falha de consolidação, não o padrão de maior risco vascular da cabeça (resumo do Rockwood, 10ª ed., cap. 36, “Pseudartrose”).\n\nO quadro pode ter dor importante e foco ainda móvel; não deve ser confundido com uma fratura que consolidou, mas deixou o tubérculo em posição inadequada. O resumo da Biblioteca aproxima esses dois tipos de sequela.",
+  "correta": "**B: do colo cirúrgico.** É o local típico destacado para pseudartrose no contexto pedido. A conexão cabeça-diáfise pode falhar pela falta de contato, pela cominuição ou pela presença de tecido interposto no foco.",
   "incorretas": {
-   "A": "Na epífise, o risco principal é a necrose, não a pseudartrose.",
-   "C": "O tubérculo maior consolida bem, embora possa consolidar em posição errada.",
-   "D": "O tubérculo menor também consolida bem."
+   "A": "**O envolvimento da cabeça chama atenção para outro conjunto de riscos.** Isolamento vascular e osteonecrose são problemas importantes nos padrões da cabeça, mas a pergunta é sobre falha de união após tratamento não cirúrgico. O local típico indicado é o colo cirúrgico.",
+   "C": "**No tubérculo maior, a posição da consolidação é uma preocupação central.** Se consolidar para trás e medial, pode bloquear rotação externa; alto, pode produzir impacto. Isso difere de não consolidar o foco cabeça-diáfise do colo cirúrgico.",
+   "D": "**O tubérculo menor tende a consolidar, por vezes desviado.** O capítulo contrasta sua avulsão óssea com ruptura tendinosa: a união pode ocorrer, mas deixar fraqueza do subescapular e bloqueio da rotação interna. Não é a resposta para o local típico de pseudartrose pedido."
   },
-  "conceito": "A maioria das fraturas do **úmero proximal** consolida com tratamento **conservador**. A região com mais **pseudartrose** é o **colo cirúrgico**.\n\n**Por quê**:\n\n**forças de deslocamento**: o **peitoral maior** puxa a diáfise para medial e anterior, separando-a da cabeça;\n\n**pouco contato**: nas fraturas desviadas ou cominutas, a diáfise e a cabeça têm pouca superfície em contato;\n\n**interposição** de partes moles (deltoide, cabeça longa do bíceps, periósteo) no foco;\n\n**movimento excessivo** no foco, quando a mobilização começa cedo demais numa fratura instável;\n\n**osso de má qualidade** no idoso e tabagismo.\n\n**As outras regiões**: a **epífise** (cabeça) tem irrigação ameaçada, e o risco é a **necrose**, não a pseudartrose; os **tubérculos** consolidam bem, mas podem consolidar em posição errada (impacto).\n\n**O tratamento da pseudartrose do colo cirúrgico**: fixação com placa bloqueada e enxerto ou, no idoso com cabeça pequena e osteoporótica, **artroplastia reversa**.\n\n**Na prova**: a fratura do úmero proximal que mais evolui para pseudartrose com tratamento conservador é a do **colo cirúrgico**.",
-  "correta": "O peitoral maior separa a diáfise da cabeça, e o pouco contato no colo cirúrgico favorece a pseudartrose.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Complicações: rigidez, viciosa, pseudartrose e tubérculos; Neer, AO e os padrões de fratura; Fratura isolada dos tubérculos e fratura-luxação; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+      "Neer, AO e os padrões de fratura",
+      "Fratura isolada dos tubérculos e fratura-luxação",
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-53159daa",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-a35bac38",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+      "neer-ao-e-os-padroes-de-fratura-4473222f",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
+      "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "a15094a1995849f860aa837d8ee2e242584d9c0d926547cb00595537914f91f5"
+    }
+   ],
+   "questaoSha256": "ca142c132ddc39fd244961685b7bd7bf2af3d6bd4cd904c4aafb7d65bb4ff7a4",
+   "comentarioSha256": "ff34015bf277160a65db0368cb2e108c5f5de61c17bdc302fb5f5130908d9784"
+  }
  },
  "trauma-0890": {
   "incorretas": {
@@ -10856,15 +11155,44 @@
   "conferido": false
  },
  "trauma-0924": {
+  "conceito": "Nessa fratura em três partes, o tubérculo maior está solto e o menor permanece ligado à cabeça. O **subescapular continua puxando o bloco cabeça-tubérculo menor**, levando a cabeça para **rotação medial**, também chamada de interna.\n\nO sentido se inverte no padrão oposto: com o menor solto e o maior unido à cabeça, o manguito posterossuperior favorece rotação externa e abdução. Por isso a leitura deve começar pela conexão que restou, não pelo fragmento que recebeu mais destaque no enunciado. O peitoral maior, por sua vez, atua sobre a diáfise, que pode ir para anterior e medial no colo cirúrgico (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nNa redução, essa distinção ajuda a entender por que orientar a diáfise não significa que a cabeça já esteja na rotação correta. Consulte a comparação dos padrões no resumo da Biblioteca.",
+  "correta": "**D: rotação medial pela ação do subescapular.** O tendão transmite força ao tubérculo menor ainda unido à cabeça. A separação do maior deixa essa ação predominante sobre o bloco articular.",
   "incorretas": {
-   "A": "O supraespinal foi junto com o tubérculo maior e não age mais sobre a cabeça.",
-   "B": "O infraespinal também foi com o tubérculo maior.",
-   "C": "O peitoral maior age na diáfise, não na cabeça."
+   "A": "**A inserção posterossuperior não permanece ligada à cabeça nesse padrão.** O tubérculo maior está separado. A rotação lateral por ação do manguito posterossuperior corresponde ao padrão em que ele fica unido à cabeça e o menor está solto.",
+   "B": "**O infraespinal acompanha o tubérculo maior separado.** Sua tração pode deslocar esse fragmento, mas não produz a rotação da cabeça descrita na pergunta. A cabeça continua ligada ao subescapular pelo tubérculo menor.",
+   "C": "**A direção está certa e a força foi atribuída ao segmento errado.** O peitoral maior desloca a diáfise para anterior e medial. A rotação medial da cabeça, quando ligada ao menor, é determinada pelo subescapular."
   },
-  "conceito": "Na fratura do **úmero proximal em três partes** (Neer) com fratura do **colo cirúrgico** e do **tubérculo maior**, a **cabeça** continua presa apenas ao **tubérculo menor**.\n\n**O que acontece com a cabeça**: o **subescapular**, inserido no tubérculo menor, passa a ser o único músculo puxando a cabeça. Sem a oposição do supraespinal e do infraespinal (que foram embora com o tubérculo maior), ele **roda a cabeça para medial** (rotação interna). A superfície articular passa a olhar para **trás**.\n\n**Os outros fragmentos**:\n\n**tubérculo maior**: puxado para **cima e para trás** pelo supraespinal, infraespinal e redondo menor;\n\n**diáfise**: puxada para **medial** e anterior pelo **peitoral maior**.\n\n**O padrão oposto**: nas três partes com fratura do colo cirúrgico e do **tubérculo menor**, a cabeça fica presa ao tubérculo maior e é rodada para **lateral** pelos rotadores externos.\n\n**O tratamento**: no jovem, redução e fixação (placa bloqueada); no idoso com osso frágil, muitas vezes **artroplastia reversa**.\n\n**Na prova**: nessa fratura em três partes, a cabeça fica em **rotação medial** pela ação do **subescapular**.",
-  "correta": "Presa só ao tubérculo menor, a cabeça é rodada para medial pelo subescapular, sem oposição dos rotadores externos.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-e75305ee",
+      "neer-ao-e-os-padroes-de-fratura-79f24fb6",
+      "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+      "neer-ao-e-os-padroes-de-fratura-defcf4d3"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "c767d21d310e4f1526840173f88ddf243e266adb6d666e192c4ff4bb6144ed24"
+    }
+   ],
+   "questaoSha256": "4141ed262d17d8819afb10a90584b196a4dbff7436f8d2f124f55f4c5924acbe",
+   "comentarioSha256": "7ff09c2665d80314c67b30da47aaad40634a8c4c63058bce5de51dde1325cdf9"
+  }
  },
  "trauma-0926": {
   "incorretas": {
@@ -11636,18 +11964,42 @@
   "conferido": false
  },
  "trauma-0982": {
+  "conceito": "A condição decisiva do enunciado não é apenas a dissociação escapulotorácica. É a combinação de **lesão completa do plexo braquial e função não restaurada**. O trauma pode separar a cintura escapular do esqueleto axial e lesar vasos e nervos mesmo com a pele preservada, daí a descrição de “amputação interna”.\n\nO plexo é o componente que leva a inervação ao membro. Estabilizar os ossos ou manter circulação não garante função quando essa ligação está completamente perdida. Na análise de Zelle citada no capítulo, a extensão da lesão neurológica é o principal determinante do resultado; lesões parciais tiveram evolução melhor que as completas.\n\nQuando a função **não pode ser restaurada**, a recomendação citada é **amputação acima do cotovelo**. A interpretação deve permanecer restrita a esse cenário, sem converter déficit parcial ou uma dissociação ainda em avaliação em indicação automática de amputação. O reparo neurológico é discutido como controverso, e explorar o plexo não equivale a demonstrar que haverá recuperação (resumo do Rockwood, 10ª ed., cap. 33, “O tratamento gira em torno do nervo”).\n\nLeia essa seção no resumo da Biblioteca para diferenciar a gravidade anatômica da lesão e a possibilidade de função futura.",
+  "correta": "**A: amputação acima do nível do cotovelo.** É a indicação citada para lesão completa do plexo com função irrecuperável. O objetivo da decisão não se resume à continuidade vascular ou óssea: considera a ausência de possibilidade de função do membro.",
   "incorretas": {
-   "B": "A artrodese escapulotorácica não devolve função a um membro sem plexo.",
-   "C": "A exploração do plexo serve às lesões incompletas, não à avulsão completa sem recuperação.",
-   "D": "A artrodese glenoumeral isolada não resolve o membro sem função."
+   "B": "**Estabilizar a escápula não reinerva o membro.** A artrodese escapulotorácica cria uma união estável entre escápula e tórax. Ainda assim, não corrige a lesão completa do plexo nem restaura a função perdida do restante do membro.",
+   "C": "**Exploração não é sinônimo de recuperação possível.** Avaliar ou explorar o plexo pode fazer parte da discussão de uma lesão neurológica. Aqui, porém, o enunciado já define lesão completa com função não restaurada; o capítulo cita amputação quando a função não é restaurável, sem afirmar que toda lesão completa deva ser tratada apenas com exploração.",
+   "D": "**A fusão glenoumeral também deixa o problema neurológico sem solução.** Ela estabiliza a articulação entre úmero e glenoide. Essa estabilização não devolve inervação ao membro com plexo completamente perdido, portanto não responde ao cenário de função irrecuperável."
   },
-  "conceito": "A **dissociação escapulotorácica** é uma \"**amputação interna**\": a escápula é arrancada lateralmente do tórax, com a pele intacta, e muitas vezes com **avulsão completa do plexo braquial** e lesão da artéria subclávia ou axilar.\n\n**O prognóstico do membro**: quando o plexo está **completamente** avulsionado (raízes arrancadas da medula) e a função **não volta**, o membro fica **sem movimento e sem sensibilidade**, pesado, doloroso e sujeito a lesões.\n\n**A principal indicação nesse cenário**: a **amputação acima do cotovelo** (transumeral), às vezes associada à **artrodese do ombro**. Ela retira o peso morto, alivia a dor e facilita o uso de **prótese** ou a adaptação do paciente.\n\n**Quando pensar cedo**: com lesão vascular e plexo completamente avulsionado, alguns autores indicam a **amputação precoce**, evitando cirurgias de revascularização sem benefício funcional.\n\n**As outras opções**:\n\n**exploração do plexo**: útil nas lesões **incompletas** ou com possibilidade de reparo;\n\n**artrodese glenoumeral** ou escapulotorácica isoladas: não resolvem o membro sem função.\n\n**Na prova**: na dissociação escapulotorácica com plexo completo e sem recuperação, a indicação é a **amputação acima do cotovelo**.",
-  "correta": "Sem função e sem sensibilidade, o membro vira peso morto; a amputação acima do cotovelo alivia e permite a prótese.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 33"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Dissociação escapulotorácica. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Dissociação escapulotorácica"
+     ],
+     "blocos": [
+      "dissociacao-escapulotoracica-fb39e45c",
+      "dissociacao-escapulotoracica-2b65a722"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "a98132df6133123a94e7c7a1b8b4588f5b9890e85cbaf1f5b5d8b4822a9c3641"
+    }
+   ],
+   "questaoSha256": "af1b35249771c5e48b6401254f91bcf2346481ce0db391c2404e4098906e4b99",
+   "comentarioSha256": "94c2b68ac9acb6f289fe9b2512e35c8e28b943c16d4b4faace2aec127d01b122"
+  }
  },
  "trauma-0983": {
   "conceito": "**O paciente inconsciente não fornece um exame doloroso confiável, e a fratura segmentar com esmagamento exige vigilância objetiva.** O anterior é o compartimento mais frequentemente acometido da perna e o local habitual do cateter. Por isso, o par é **anterior e anterior**.\n\nO resumo destaca que a pressão pode subir antes dos sinais clínicos. Em risco elevado e consciência rebaixada, monitorizar continuamente permite acompanhar a tendência e o delta P, documentando a pressão arterial. Pulso presente não garante perfusão muscular e não substitui essa vigilância.\n\nO anterior e o lateral podem variar juntos, e estudos citados mostram que elevação posterior pode aparecer na leitura anterior. Se houver suspeita de um profundo não explicado pela medida, ele também deve ser avaliado. A ponta é colocada a até 5 cm do foco para captar o pico, com atenção à técnica; não se deve medir um local distante e presumir que represente todo o segmento.\n\n**Leia “Onde colocar o cateter” e “Clínica ou monitorização?”, na Biblioteca.** O Glasgow 3 é decisivo para entender por que não se pode depender de dor relatada ou de esperar parestesia.",
@@ -17072,18 +17424,44 @@
   "provavel": "A"
  },
  "trauma-1299": {
-  "conceito": "**Uma fratura rara num osso bem protegido.** O Rockwood (capítulo 33, Introduction to Scapular Fractures) abre o capítulo com os números de frequência: as fraturas da escápula representam **0,4% a 0,9% de todas as fraturas** e cerca de **3% a 5% das fraturas da cintura escapular**. São números pequenos, e o autor explica o porquê com três argumentos anatômicos que vale a pena entender, porque eles voltam ao longo de todo o capítulo.\n\n**Por que a escápula quebra pouco.** Primeiro, ela é envolvida por um **envelope muscular robusto**, em várias camadas: 18 músculos se prendem a ela, três deles (subescapular, supraespinal e infraespinal) originando-se das fossas inteiras. Segundo, ela é **móvel**: separada da parede torácica por um tecido fibroadiposo fino de deslizamento, ela cede ao impacto em vez de resistir rigidamente. Terceiro, ela repousa sobre a **parede torácica elástica**, que amortece a energia. Para quebrar uma escápula, portanto, é preciso vencer essas três defesas, o que explica a associação frequente com traumas graves.\n\n**Quem tem.** As fraturas ocorrem **predominantemente em homens entre 20 e 50 anos**. São, em regra, **unilaterais**; as bilaterais e as expostas são raras. A Tabela 33-1 da série do autor (519 fraturas) confirma o perfil: idade média de 46 anos e 79% de homens. Na mesma tabela, as fraturas do corpo têm a maior proporção masculina (88%).\n\n**A relação com o politrauma.** O capítulo insiste que as fraturas da escápula são frequentemente encontradas em politraumatizados, muitas vezes de forma incidental, numa radiografia ou TC de tórax. Mas o autor faz uma ressalva importante na seção Intensity of Trauma Energy: não é verdade que toda fratura de escápula venha de alta energia. Ele separa três grupos:\n\n| Grupo | Mecanismo típico | Perfil |\n|---|---|---|\n| alta energia | acidente de trânsito, queda de altura, objeto pesado | politraumatizado, lesões em vários sistemas |\n| média energia | queda de bicicleta ou moto em baixa velocidade | lesão da cintura escapular dominante, às vezes concussão, clavícula, costelas |\n| baixa energia | queda da própria altura ou de escada, em idosos | lesão em geral isolada da cintura escapular |\n\nAssim, o idoso com fratura da escápula existe, mas é o terceiro grupo, minoritário; a regra continua sendo o homem jovem ou de meia-idade.\n\n**O que os distratores misturam.** O número 3% a 5% é verdadeiro, mas se refere às fraturas **da cintura escapular**, não a todas as fraturas. É uma troca de denominador que a prova adora. E o perfil de mulher idosa pertence às fraturas por fragilidade (úmero proximal, rádio distal, quadril), não à escápula.\n\n**Ligação com a prova.** A banca cobra a epidemiologia da escápula pelo lado das lesões associadas (a fratura mais associada é a de costela, em prova sem ano) e pelo lado da criança (na criança, a fratura da escápula é lesão de alta especificidade para maus-tratos, segundo KLEINMAN, TEOT 2022, assunto que não está neste capítulo de adultos).\n\n> **Na prova:** escápula = 0,4% a 0,9% de todas as fraturas e 3% a 5% da cintura escapular; homens de 20 a 50 anos; unilateral; muitas vezes no politrauma.",
-  "correta": "**A: 0,4% a 0,9%; homens de 20 a 50 anos.** São exatamente os dois dados do primeiro parágrafo do capítulo 33: 0,4% a 0,9% de todas as fraturas, segundo vários estudos estatísticos, e predomínio em homens entre 20 e 50 anos. A Tabela 33-1 da série do autor reforça o perfil, com 79% de homens e idade média de 46 anos. A explicação da raridade é anatômica: envelope muscular espesso, mobilidade sobre o tórax e apoio numa parede elástica.",
+  "conceito": "A questão troca dois elementos que precisam ser lidos juntos: **qual é o denominador da frequência e qual é o grupo predominante**. As fraturas da escápula representam 0,4% a 0,9% de todas as fraturas, mas 3% a 5% das fraturas da cintura escapular. O segundo percentual é maior porque compara a escápula com um conjunto menor de fraturas.\n\nA raridade faz sentido pela anatomia: a escápula tem um envelope muscular espesso, move-se sobre o tórax e repousa numa parede elástica. Essa proteção ajuda a explicar por que muitas fraturas aparecem em traumas de energia elevada e em pacientes com outras lesões. O perfil predominante descrito é o de **homens entre 20 e 50 anos** (resumo do Rockwood, 10ª ed., cap. 33, “Quem fratura e como”).\n\nIsso não exclui o idoso: o capítulo também descreve quedas de baixa energia nessa população, frequentemente com lesão isolada. Predominância epidemiológica não é critério de exclusão diagnóstica. Para rever os mecanismos e suas exceções, leia essa seção no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para distinguir a frequência entre todas as fraturas da frequência entre as da cintura escapular, mantendo o perfil epidemiológico descrito no capítulo.",
+  "correta": "**A: 0,4% a 0,9%; homens de 20 a 50 anos.** A frequência usa todas as fraturas como denominador e o perfil corresponde ao predomínio descrito no capítulo. São dois dados diferentes que precisam estar simultaneamente corretos.",
   "incorretas": {
-   "B": "**A frequência está certa, o perfil não.** As fraturas da escápula são de fato 0,4% a 0,9% de todas as fraturas, mas não predominam em mulheres idosas. O capítulo descreve um grupo de idosos com fratura por queda simples, no terceiro grupo de energia, mas ele é minoritário e geralmente tem lesão isolada da cintura escapular. O perfil de mulher acima de 65 anos é o das fraturas por fragilidade, como as do úmero proximal, e não o da escápula, em que 79% dos pacientes da série do autor eram homens.",
-   "C": "**O perfil está certo, a frequência não.** Homens de 20 a 50 anos é o grupo predominante, mas 3% a 5% é a proporção das fraturas da escápula entre as fraturas **da cintura escapular**, e não entre todas as fraturas do corpo. O distrator usa um número verdadeiro do mesmo parágrafo com o denominador trocado. Entre todas as fraturas, a escápula responde por menos de 1%, coerente com um osso protegido por músculos, móvel e apoiado numa parede elástica.",
-   "D": "**Erra os dois elementos.** Troca o denominador (3% a 5% é da cintura escapular, não de todas as fraturas) e o perfil (as fraturas da escápula predominam em homens jovens e de meia-idade, não em mulheres idosas). A combinação descreve, na verdade, algo próximo de uma fratura por fragilidade do ombro, que é outro capítulo. Para não errar, lembre que a escápula exige energia para quebrar, e energia é o mecanismo típico do homem ativo, no trânsito ou em queda de altura."
+   "B": "**Acerta a frequência, mas troca o grupo predominante.** Mulheres acima de 65 anos podem sofrer fratura da escápula, inclusive após trauma de baixa energia. A existência desse grupo não o torna o mais frequente; o capítulo destaca homens de 20 a 50 anos.",
+   "C": "**O percentual pertence à cintura escapular.** O perfil masculino de 20 a 50 anos está correto. Já 3% a 5% se refere apenas às fraturas da cintura escapular; entre todas as fraturas, a proporção é 0,4% a 0,9%.",
+   "D": "**Combina a troca de denominador com a troca do perfil.** O intervalo de 3% a 5% não descreve todas as fraturas, e mulheres idosas não constituem o grupo predominante da escápula. Não se deve transferir automaticamente o padrão de uma fratura por fragilidade para esse osso."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Epidemiologia, mecanismo, lesões associadas e imagem; Como ler este capítulo. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Epidemiologia, mecanismo, lesões associadas e imagem",
+      "Como ler este capítulo"
+     ],
+     "blocos": [
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-1df0778e",
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-6aeaaa87",
+      "como-ler-este-capitulo-c524f1d3"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "a29eec380b32670a80fdc48e00095ad13ad450e573b11e99837a95ee3ade80c2"
+    }
+   ],
+   "questaoSha256": "d7ef76080a23df483a5525b4906faa6fcbf825a2fc463354bcfbc2791e7ae29a",
+   "comentarioSha256": "cec276ff01ccacbb903ddf65223840e176a4a6631b016256f3f7e34c35fbf724"
+  }
  },
  "trauma-1300": {
   "conceito": "**O ângulo espinomedial é o ponto mais fraco da circunferência do corpo biomecânico.** A pergunta delimita a circunferência, e isso evita confundir a resposta com o centro da fossa infraespinal, que é a área de osso mais fino.\n\nA escápula não distribui massa e carga de modo uniforme. Glenoide, colo e borda lateral são espessos; os pilares lateral e espinal conduzem a carga a partir da glenoide. A borda medial, mais fina, une esses pilares. O ângulo superior e a fossa supraespinal vizinha são descritos como apêndice muscular, sem transmissão da compressão glenoidal.\n\nO ângulo espinomedial é uma passagem frequente dos traços do corpo. Isso conecta anatomia e imagem: não é uma linha desenhada ao acaso no centro de um osso triangular, mas uma ruptura relacionada aos pontos fracos de uma estrutura com dois caminhos principais de carga.\n\n**Leia “Osso grosso e osso fino”, na Biblioteca.** Separe área central mais fina de ponto fraco da circunferência. O qualificativo do enunciado muda a resposta.\n\n**Por que esta questão foi criada.** O capítulo usa a arquitetura biomecânica para explicar os traços e orientar a fixação. O simulado testa essa ligação, em vez de cobrar apenas os nomes dos três ângulos anatômicos.",
@@ -17124,18 +17502,50 @@
   }
  },
  "trauma-1301": {
-  "conceito": "**Dois corpos para a mesma escápula.** O Rockwood (capítulo 33, Scapular Architecture) faz uma distinção que organiza todo o raciocínio sobre fraturas do corpo: o **corpo anatômico** é o triângulo inteiro, com três bordas (superior, medial e lateral) e três ângulos (superior, inferior e lateral); o **corpo biomecânico** é só a parte que de fato transmite carga.\n\n**Como a carga caminha.** A cabeça do úmero comprime a glenoide. Essa compressão é levada ao corpo por dois pilares (Figura 33-1):\n- o **pilar lateral**, que inclui a borda lateral e liga a borda inferior da glenoide ao ângulo inferior;\n- o **pilar espinal**, que nasce na parte central da glenoide e corre para medial até a base da espinha.\n\nOs dois pilares, unidos pela borda medial, que é bem mais fina, formam o triângulo de carga. O **ângulo superior e a parte adjacente da fossa supraespinal** ficam fora desse triângulo: servem apenas como superfície de inserção ou origem muscular e **não transmitem forças compressivas da glenoide**. Por isso o autor os chama de apêndice e diz que é necessário distinguir os dois conceitos de corpo.\n\n**Consequências práticas.**\n\n| Ponto | Consequência no capítulo |\n|---|---|\n| fratura do corpo | definida pelo acometimento de um ou dos dois pilares (Figura 33-14) |\n| fraturas isoladas da borda superior ou do ângulo superior | **não** entram como fratura do corpo; vão para o grupo de ângulos e processos |\n| fratura do ângulo superior | rara, pouco desviada; todas as 6 da série tratadas sem cirurgia |\n| espinha medial | faz parte do pilar espinal, então sua fratura conta como fratura do corpo |\n| espinha lateral | não se liga diretamente ao corpo; conta como fratura de processo |\n\n**O fio condutor.** O que define a gravidade de uma fratura do corpo é a quebra de um pilar, porque é isso que altera a relação entre a glenoide e o corpo, o trajeto dos músculos do manguito e o ritmo escapuloumeral. Um fragmento do ângulo superior não muda nada disso. O mesmo raciocínio explica por que, na cirurgia, a borda lateral é a estrutura-chave e é fixada primeiro.\n\n**Onde estão os músculos.** A pergunta usa um distrator anatômico: o ângulo superior tem inserção muscular, sim. O levantador da escápula se prende ali, e o supraespinal se origina da fossa vizinha. Ao todo, 18 músculos se prendem à escápula, divididos pelo autor em sistema escapuloaxial (escápula com coluna e tórax, sobretudo o trapézio) e sistema escapulobraquial (escápula com úmero, rádio e ulna proximais).\n\n> **Na prova:** corpo biomecânico = triângulo dos pilares lateral e espinal unidos pela borda medial; o ângulo superior e a fossa supraespinal adjacente são apêndice muscular, sem transmissão de compressão.",
-  "correta": "**B: não transmitem forças de compressão da glenoide.** É a definição do capítulo: o ângulo superior e a parte adjacente da fossa supraespinal formam um apêndice que serve à inserção e origem de músculos, mas não conduz as forças compressivas da glenoide, papel exclusivo dos pilares lateral e espinal. Daí a distinção entre corpo anatômico e corpo biomecânico, e a regra de que fraturas isoladas do ângulo superior não são classificadas como fraturas do corpo. Essa distinção tem consequência no tratamento: como o ângulo superior não carrega a glenoide, suas fraturas isoladas foram todas tratadas sem cirurgia na série do autor (6 casos), enquanto as fraturas que rompem um pilar, sobretudo o lateral, são as que alteram o alinhamento da glenoide e podem precisar de fixação.",
+  "conceito": "O corpo anatômico é toda a lâmina triangular da escápula. O **corpo biomecânico** corresponde à arquitetura que conduz as forças de compressão da glenoide. A diferença depende do caminho da carga, não apenas da posição de uma região no desenho do osso.\n\nA carga chega pela glenoide e encontra dois pilares: o **lateral**, entre a borda inferior da glenoide e o ângulo inferior, e o **espinal**, que segue da região central da glenoide pela base da espinha em direção medial. A borda medial une esse conjunto. Já o ângulo superior e a fossa supraespinal adjacente funcionam como apêndice para músculos e não participam dessa transmissão compressiva (resumo do Rockwood, 10ª ed., cap. 33, “Osso grosso e osso fino”).\n\nÉ por isso que uma fratura pode atingir o corpo anatômico sem interromper da mesma forma os pilares que sustentam a glenoide. Na leitura de uma tomografia, vale perguntar quais desses pilares o traço cruza. O resumo da Biblioteca relaciona essa arquitetura aos padrões de fratura do corpo.\n\n**Por que esta questão foi criada.** Para ligar a anatomia dos pilares ao conceito de corpo biomecânico, em vez de tratar toda a lâmina escapular como equivalente na transmissão de carga.",
+  "correta": "**B: não transmitem forças de compressão da glenoide.** A exclusão é funcional: essas regiões superiores servem de apêndice muscular, enquanto os pilares lateral e espinal, unidos pela borda medial, formam o corpo biomecânico. Não significa que a região seja desprovida de função.",
   "incorretas": {
-   "A": "**É o contrário.** O osso do ângulo superior é relativamente fino, como o do ângulo inferior; o capítulo diz que a espessura cresce progressivamente em direção ao ângulo lateral, onde forma a glenoide. As áreas de osso espesso são a glenoide, o colo com a base do coracoide e a borda lateral. A exclusão do corpo biomecânico não tem a ver com espessura, e sim com a ausência de função de carga.",
-   "C": "**O ângulo superior recebe inserção muscular.** Justamente por isso o autor o define como um apêndice que serve à inserção ou à origem de músculos. O levantador da escápula se prende no ângulo superior, e o supraespinal se origina da fossa vizinha. O distrator inverte a função da região: ela tem papel muscular e não tem papel de carga, não o contrário.",
-   "D": "**O complexo suspensor superior é outra estrutura.** Definido por GOSS, ele é um anel osteoligamentar formado por glenoide, coracoide, ligamentos coracoclaviculares e coracoacromial, clavícula lateral, articulação acromioclavicular e acrômio, com dois pilares de sustentação (terço médio da clavícula e junção do corpo lateral com a espinha). O ângulo superior não faz parte dele. O distrator mistura dois conceitos anatômicos do mesmo capítulo."
+   "A": "**Espessura e transmissão de carga não são sinônimos.** O capítulo situa o osso mais espesso na glenoide, no colo e na borda lateral. O motivo de excluir a região superior é sua ausência do trajeto compressivo glenoidal, e não um suposto excesso de espessura ali.",
+   "C": "**A região tem função muscular.** O resumo a descreve justamente como apêndice para músculos. A distinção é entre servir à musculatura e integrar os pilares de transmissão compressiva, não entre ter ou não inserções.",
+   "D": "**O anel suspensor é outro conceito anatômico.** Ele reúne glenoide, coracoide, ligamentos, clavícula lateral, articulação acromioclavicular e acrômio. O ângulo superior e a fossa supraespinal não são retirados do corpo biomecânico por pertencerem a esse anel; a razão é o caminho da carga."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Anatomia aplicada: arquitetura, músculos e nervo supraescapular; Complexo suspensor superior, ombro flutuante e colo da escápula. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+      "Complexo suspensor superior, ombro flutuante e colo da escápula"
+     ],
+     "blocos": [
+      "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd",
+      "anatomia-aplicada-arquitetura-musculos-e-nervo-s-0fa34036",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "35bd01510f74c5a859aafa749684f7018c9382140c09abec72e05aad5f8ca181"
+    }
+   ],
+   "questaoSha256": "6a8a07779a6da17924e15954f15167a1e9905e6495064b7d4a3983410d415a14",
+   "comentarioSha256": "c2a31aff97cb0d356d05496b5fce0d2351bc977a0323ae3f0fce8dec7bdeb3d7"
+  }
  },
  "trauma-1302": {
   "conceito": "**O pilar superior é o terço médio da clavícula; o inferior é a junção do corpo lateral da escápula com a espinha.** Esses apoios sustentam o anel do complexo suspensor. Não são sinônimos de dois componentes quaisquer da sua circunferência.\n\nO anel contém glenoide, coracoide, coracoclaviculares e coracoacromial, clavícula lateral, acromioclavicular e acrômio no mapa do resumo. A diáfise clavicular entra como suporte superior, enquanto a junção escapular constitui o apoio inferior. A diferença entre clavícula lateral e terço médio é decisiva nas opções.\n\nUma lesão isolada do anel pode preservar estabilidade; duas interrupções, ou uma interrupção combinada à fratura de um pilar, podem torná-lo instável. O modelo ajuda a entender por que contar fraturas sem localizar os pontos de falha fornece uma informação incompleta.\n\n**Leia “O anel de Goss”, na Biblioteca.** Desenhe primeiro a circunferência e depois acrescente os dois apoios. Assim, uma estrutura importante do anel não será confundida com um pilar.\n\n**Por que esta questão foi criada.** O TECOC cobrou componentes do complexo e o TARO 2013, combinações que produzem instabilidade. O simulado acrescenta o papel dos apoios para tornar o modelo funcional, além da lista anatômica.",
@@ -17232,74 +17642,208 @@
   "conferido": false
  },
  "trauma-1305": {
-  "conceito": "**A escápula é um marcador de energia.** O Rockwood (capítulo 33, Injuries Associated With Scapular Fractures) mostra que a fratura da escápula raramente vem sozinha. As fraturas **isoladas**, sem outra lesão grave, são a minoria: **14% a 33%** de todas as fraturas da escápula na literatura, e THOMPSON registrou apenas **1,8%** de lesões isoladas num grupo de 56 pacientes.\n\n**O que vem junto.** O capítulo lista as lesões associadas com as faixas de frequência relatadas por diferentes autores:\n\n| Lesão associada | Frequência |\n|---|---|\n| **fraturas de costelas** (a mais frequente) | **27% a 65%** |\n| lesões torácicas e pulmonares (pneumotórax, hemotórax, enfisema, contusão) | 16% a 67% |\n| cintura escapular (clavícula, úmero proximal, AC) | 8% a 47% |\n| crânio e encéfalo (contusão, hemorragia, fratura) | 10% a 42% |\n| pelve | até 20% em alguns grupos |\n| grandes vasos do ombro (braquial, subclávia, axilar) | 10% na série de THOMPSON |\n\nSomam-se lesão do plexo braquial, dos rins, ruptura de aorta e outras fraturas (vértebras lombares, diáfise do fêmur).\n\n**Por que a costela lidera.** A explicação é topográfica, e o próprio texto a dá: a escápula repousa sobre a caixa torácica. A mesma força que fratura a escápula comprime as costelas logo abaixo. Por isso o autor diz que a associação com fraturas de costelas é esperada. Uma curiosidade do capítulo, no extremo oposto, é a fratura do corpo da escápula penetrando a parede torácica, rara.\n\n**Mortalidade.** Varia de **2% a 11%**, tipicamente por **lesões intratorácicas graves** ou **falência orgânica** do politraumatizado. Não é a escápula que mata; ela é a testemunha da energia que atingiu o tórax. Na dissociação escapulotorácica, a forma mais grave, a mortalidade relatada é de 11%, também por lesão intratorácica associada.\n\n**Implicações clínicas.** No politraumatizado, salvar a vida é prioridade, e a fratura da escápula, mesmo identificada no exame primário, pode ser tratada depois (a exceção é a fratura exposta). Em quem está estável, o capítulo recomenda examinar o paciente inteiro antes de focar no ombro, e, achando uma lesão da cintura escapular (por exemplo, a clavícula), excluir ativamente as outras. As costelas também aparecem nas complicações: a pseudartrose de costela é causa rara de dor crônica depois de fratura da escápula (quatro casos relatados, resolvidos com fixação). E, no tratamento conservador do corpo, a presença de fraturas de costelas e o ISS maior pioraram os resultados (DIMITROULIAS).\n\n**Ligação com a prova.** A banca já perguntou diretamente qual é a fratura mais frequentemente associada à da escápula, com a costela como resposta (prova sem ano), e, na prova antiga, em que parte da escápula as lesões associadas são mais frequentes (TARO 2009).\n\n> **Na prova:** lesão associada mais frequente = costelas (27% a 65%); isolada só em 14% a 33%; mortalidade 2% a 11%, por lesão torácica ou falência orgânica.",
-  "correta": "**B: fratura de costelas; 2% a 11%.** O capítulo afirma que as fraturas de costelas são as lesões mais frequentemente associadas às fraturas da escápula, esperadas pela posição da escápula sobre a caixa torácica, com frequência de 27% a 65% conforme a série. A mortalidade relatada varia de 2% a 11%, tipicamente por lesão intratorácica grave ou falência orgânica no politraumatizado.",
+  "conceito": "Uma fratura da escápula pode ser a pista visível de um trauma muito maior. O osso repousa sobre o gradil costal, de modo que o mesmo impacto pode lesar a escápula, as costelas e o conteúdo torácico. Nas séries reunidas no capítulo, a lesão associada mais frequente é a **fratura de costelas**, presente em 27% a 65% dos casos.\n\nA mortalidade relatada é de **2% a 11%**, principalmente por lesão intratorácica grave ou falência de órgãos. Esse número não representa mortalidade produzida pela fratura escapular isolada. O traumatismo craniano também é uma associação relevante, mas não ocupa o primeiro lugar pedido aqui (resumo do Rockwood, 10ª ed., cap. 33, “As lesões associadas”).\n\nNa prática, encontrar a escápula fraturada não encerra a avaliação: é preciso procurar as outras lesões e examinar o componente neurovascular da cintura escapular. A seção de lesões associadas do resumo da Biblioteca organiza essa busca.\n\n**Por que esta questão foi criada.** Para reunir dois dados que orientam a avaliação do politraumatizado: a associação com costelas e a mortalidade das séries, sem atribuí-la à fratura isolada.",
+  "correta": "**B: fratura de costelas; 2% a 11%.** O primeiro dado traduz a proximidade anatômica e a energia compartilhada no trauma; o segundo descreve a mortalidade das séries, ligada sobretudo às lesões sistêmicas associadas. Não se deve interpretar a porcentagem como risco de morte de toda fratura isolada.",
   "incorretas": {
-   "A": "**A lesão está certa, a mortalidade não.** As costelas lideram, mas a mortalidade de 20% a 30% superestima muito o risco. O capítulo dá 2% a 11%, e até a dissociação escapulotorácica, a lesão mais grave do grupo, tem 11% relatados. O valor alto do distrator evoca populações de politrauma grave em geral, mas não é o número citado para a fratura da escápula.",
-   "C": "**A mortalidade está certa, a lesão mais frequente não.** O traumatismo cranioencefálico (contusão, hemorragia, fratura do crânio) é associado relevante, presente em 10% a 42% dos casos, mas não é o mais frequente. A costela vence porque está diretamente abaixo da escápula, recebendo a mesma força. O distrator funciona porque a cabeça é a lesão que mais pesa no prognóstico do politraumatizado, o que não é a mesma coisa que ser a mais frequente.",
-   "D": "**Erra os dois elementos.** O TCE não é a lesão associada mais frequente (perde para as costelas, 27% a 65%) e a mortalidade não chega a 20% a 30% (é de 2% a 11%). A combinação descreve um cenário de politrauma muito mais letal do que o capítulo relata. Guarde a lógica topográfica: escápula sobre as costelas, e as costelas quebram juntas."
+   "A": "**A associação está certa, mas a mortalidade foi elevada indevidamente.** Costelas são o principal grupo associado. O intervalo de 20% a 30%, porém, não é o relatado pelo capítulo para mortalidade; a faixa citada é 2% a 11%.",
+   "C": "**Confunde uma lesão importante com a mais frequente.** O traumatismo craniano é descrito entre as associações e exige atenção clínica, mas o primeiro lugar é das fraturas de costelas. A mortalidade de 2% a 11% está correta, sem corrigir o erro do primeiro componente.",
+   "D": "**Nem o primeiro lugar nem a mortalidade correspondem à fonte.** O traumatismo craniano pode coexistir com a fratura escapular, mas não supera as costelas na associação descrita. Além disso, a mortalidade reunida no capítulo é 2% a 11%, e não 20% a 30%."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Epidemiologia, mecanismo, lesões associadas e imagem; Como ler este capítulo. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Epidemiologia, mecanismo, lesões associadas e imagem",
+      "Como ler este capítulo"
+     ],
+     "blocos": [
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-330e3cc8",
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-9deaa695",
+      "como-ler-este-capitulo-c524f1d3"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "a7ecf8e9ccf38927a692fb1b367bcf73c80eb146911c4f743498b452c7733c50"
+    }
+   ],
+   "questaoSha256": "b233fff6fc08613826dbf431d623ff7daf4178c2b65103ee6b58ed7e011bb1b0",
+   "comentarioSha256": "38edfb7a2a853c69bcc32abdc752e076ba802222275ffcbecf3e7fe88f0ee188"
+  }
  },
  "trauma-1306": {
-  "conceito": "**Os quatro mecanismos básicos.** O Rockwood (capítulo 33, Mechanisms of Injury for Scapular Fractures) descreve mecanismos exógenos e endógenos que podem se combinar:\n\n| Mecanismo | Como acontece | O que fratura |\n|---|---|---|\n| **golpe direto na escápula** | trânsito, queda de altura, objeto pesado no ombro | sobretudo corpo, acrômio e espinha |\n| **impacto da cabeça do úmero** | força no úmero (por exemplo, no cotovelo) concentrada na cabeça | glenoide, acrômio, espinha lateral, coracoide |\n| **luxação da cabeça do úmero** | anterior (comum) ou posterior (rara) | borda anteroinferior ou posterior da glenoide |\n| **contração muscular violenta** | choque elétrico, crise convulsiva, raramente movimento descoordenado | compressão do corpo, glenoide, avulsão de inserção |\n\nNo impacto da cabeça do úmero, o padrão depende do vetor de força e da posição do braço no momento do trauma. Raramente, há ferimentos penetrantes ou fratura em osso patológico (cisto, osteodistrofia, metástase), e há fraturas por estresse: do coracoide em atletas e do acrômio e da espinha na insuficiência do manguito com ascensão da cabeça.\n\n**A crítica às avulsões.** Aqui está o ponto pouco intuitivo do capítulo. O autor afirma que as lesões por avulsão, causadas pela tração de ligamentos, são **frequentemente superestimadas na literatura**, e que uma análise detalhada mostrou que **a maioria dessas chamadas avulsões, particularmente as fraturas do coracoide, não poderia ser causada por esse mecanismo**. Na seção de classificação, ele reforça: as fraturas dos processos e ângulos (20% de todas as fraturas da escápula) são muitas vezes mal interpretadas como avulsões, mas **a maioria resulta de impacto direto**.\n\n**Por que isso importa.** Se o coracoide quebrasse por tração isolada do tendão conjunto ou dos ligamentos, seria uma lesão de baixa energia e isolada. Entendendo que vem de impacto, entende-se também por que ele vem acompanhado: fraturas do acrômio, da espinha lateral e do coracoide se associam muitas vezes à **luxação acromioclavicular**, menos à fratura da clavícula lateral, e a maioria compromete o complexo suspensor superior do ombro. O desvio depende do grau de comprometimento desse anel.\n\n**A contração muscular verdadeira.** Ela existe, mas em contextos específicos: **choque elétrico e crise convulsiva**, e menos frequentemente um movimento descoordenado. O padrão típico é de fraturas por compressão do corpo, fraturas da glenoide ou avulsão de um fragmento ósseo que carrega uma inserção muscular.\n\n**Ligação com a prova.** A banca cobra o coracoide pela incidência (STRYKER, TARO 2011 e 2018) e pela associação com a luxação acromioclavicular tipo III com ligamentos CC íntegros (TARO 2015). A ideia de que o coracoide fratura por impacto, e não por tração, explica por que ele aparece tanto junto da AC luxada.\n\n> **Na prova:** avulsões são superestimadas; o coracoide quebra, na maioria, por impacto direto; contração muscular real = choque elétrico e convulsão.",
-  "correta": "**D: impacto direto, e não de tração ligamentar.** O capítulo afirma que as lesões por avulsão são frequentemente superestimadas e que a maioria das chamadas avulsões, particularmente as do coracoide, não poderia ser explicada por tração; na classificação, acrescenta que as fraturas dos processos são muitas vezes mal interpretadas como avulsões, mas que a maioria resulta de impacto direto. Isso explica sua associação frequente com luxação acromioclavicular e com lesões múltiplas do complexo suspensor superior.",
+  "conceito": "Uma estrutura recebe músculos e ligamentos, mas isso não prova que sua fratura tenha sido produzida por tração. Essa é a distinção central da questão. O nome tradicional “avulsão” sugere que uma estrutura presa ao coracoide arrancou um fragmento; o autor contesta esse mecanismo como explicação da maioria dos casos.\n\nNo capítulo, a maior parte dessas fraturas decorre de **impacto direto**, da cabeça umeral ou de um objeto. A contração muscular violenta, como em choque elétrico ou convulsão, é reconhecida como mecanismo de outras lesões escapulares, mas não deve ser usada para explicar automaticamente toda fratura de um processo (resumo do Rockwood, 10ª ed., cap. 33, “Por que quase nunca é avulsão”).\n\nA consequência prática é procurar o padrão do impacto e as outras lesões do complexo suspensor. O desvio dos processos depende também de quanto esse anel foi rompido. Vale ler essa seção no resumo antes de memorizar “coracoide igual a avulsão”.\n\n**Por que esta questão foi criada.** Para explorar a diferença entre o nome tradicional de avulsão e o mecanismo de impacto defendido pelo autor para as fraturas do coracoide.",
+  "correta": "**D: impacto direto, e não de tração ligamentar.** É a interpretação defendida pelo autor para a maioria das fraturas descritas tradicionalmente como avulsão. A presença de estruturas presas ao processo explica por que o rótulo parece plausível, mas não demonstra o mecanismo que produziu a fratura.",
   "incorretas": {
-   "A": "**É o mecanismo que o autor contesta.** O tendão conjunto (cabeça curta do bíceps e coracobraquial) se insere na ponta do coracoide, e a ideia de que sua contração arranque o processo é antiga. O capítulo diz justamente que essa explicação é superestimada. O tendão conjunto tem outro papel no capítulo: na fratura do ápice desviada, o fragmento é excisado e o tendão conjunto é reinserido.",
-   "B": "**O peitoral menor também tracionaria o coracoide, mas não é a causa habitual.** Ele se insere na borda medial do processo e, junto com os outros músculos do coracoide, explica desvios: na fratura da glenoide superior, a tração muscular leva o fragmento a um leve varo com anteversão, e no colo cirúrgico com ligamentos rotos o fragmento roda para distal e medial. Desviar um fragmento já fraturado é diferente de causar a fratura.",
-   "C": "**Os ligamentos coracoclaviculares não arrancam o coracoide por tração na maioria dos casos.** Na verdade, quando o coracoide fratura na base com a AC luxada, os ligamentos CC ficam íntegros e presos ao fragmento, e a distância coracoclavicular continua normal. O mecanismo é o impacto, e a integridade dos ligamentos é o que permite, segundo o autor, reduzir o coracoide indiretamente ao fixar a AC."
+   "A": "**O tendão conjunto é a explicação de avulsão que a pergunta pede para reavaliar.** Seu vínculo com o coracoide não permite concluir que ele tenha arrancado o fragmento. O dado decisivo é a interpretação dos padrões de fratura pelo autor, que favorece impacto direto na maioria dos casos.",
+   "B": "**Trocar o músculo não resolve o problema do mecanismo.** A hipótese de tração pelo peitoral menor continua tratando a fratura como arrancamento muscular. A fonte não a adota como explicação predominante; descreve o trauma por impacto.",
+   "C": "**A ligação ligamentar não prova avulsão.** Os coracoclaviculares participam do complexo suspensor e importam para a estabilidade das lesões combinadas. Isso é diferente de dizer que sua tração produz a maioria das fraturas do coracoide, hipótese contrariada pelo autor."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Processos: coracoide, acrômio e espinha lateral. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Processos: coracoide, acrômio e espinha lateral",
+      "Complexo suspensor superior, ombro flutuante e colo da escápula"
+     ],
+     "blocos": [
+      "processos-coracoide-acromio-e-espinha-lateral-3d5ec23a",
+      "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+      "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "61b1231ad194bb84db0d97329877b47377c69b766739ac290bcd7e4b16165b50"
+    }
+   ],
+   "questaoSha256": "20ff92a45d67e8580c6d722ce98df4bb1af6dd49c99e39d8613b80a0938f5211",
+   "comentarioSha256": "76d9afb65d9997a9e8474420fc6eb43587248cd274c7f3d68fc30545f6b3e7d1"
+  }
  },
  "trauma-1307": {
-  "conceito": "**As radiografias que importam.** O Rockwood (capítulo 33, Imaging and Other Diagnostic Studies e Figura 33-4) organiza o estudo por imagem em camadas. A base é a **radiografia anteroposterior de toda a cintura escapular**, que precisa incluir a escápula inteira, a clavícula inteira, as articulações AC e esternoclavicular e o úmero proximal. Ela dá a visão geral, mas em geral não basta para definir o padrão de fratura e o desvio. Por isso, na suspeita de fratura da escápula, ela deve ser combinada com **as duas incidências de NEER**.\n\n**O que cada incidência mede.**\n\n| Incidência | O que é | O que avalia |\n|---|---|---|\n| **Neer I** | anteroposterior **verdadeira** da escápula | espaço glenoumeral, desvio da glenoide em relação à borda lateral, **ângulo glenopolar** |\n| **Neer II** | **perfil verdadeiro** da escápula, a incidência em Y | fraturas do corpo: **translação, angulação** e sobreposição dos fragmentos, sobretudo da borda lateral |\n| tórax | radiografia geral | muitas vezes a primeira pista no politraumatizado; relação escápula-coluna (dissociação escapulotorácica) |\n| axilar e outras especiais | complementares | glenoide, acrômio e coracoide, segundo alguns autores; **não substituem a TC** |\n\n**A lógica geométrica.** A angulação e a translação dos fragmentos da borda lateral acontecem no plano anteroposterior do corpo da escápula, e só um perfil verdadeiro (o Y) coloca esse plano de lado (Figura 33-6B e C). Já o ângulo glenopolar e o desvio mediolateral precisam da escápula vista de frente, de modo que a glenoide apareça de perfil, o que só a AP verdadeira oferece (Figura 33-6A e 33-7).\n\n**Os quatro critérios de desvio.** O capítulo resume a decisão nas fraturas do colo e do corpo em quatro medidas: **angulação, translação, desvio mediolateral e ângulo glenopolar**. Todas podem ser feitas nas incidências de NEER ou nas reconstruções 3D da TC, que são mais precisas (ANAVIAN mostrou que a TC 3D é mais confiável que a radiografia simples nessa avaliação).\n\n| Medida | Radiografia | TC 3D |\n|---|---|---|\n| desvio mediolateral | Neer I | vista anterior |\n| angulação | Neer II | vista lateral |\n| translação | Neer II | vista lateral |\n| ângulo glenopolar | Neer I | |\n\n**O algoritmo da Figura 33-4.** No politraumatizado, faz-se a TC de corpo incluindo as duas escápulas. No paciente que colabora, AP da cintura escapular; na suspeita de fratura, as incidências de NEER I e II; diante de fratura desviada ou suspeita, TC da cintura escapular com reconstrução 3D padronizada e subtração dos ossos vizinhos. Se o paciente está em decúbito e as incidências de NEER são impossíveis, vai-se direto à TC.\n\n**Ligação com a prova.** A banca cobra os valores medidos nessas incidências: ângulo glenopolar abaixo de 20 graus como indicação cirúrgica (TARO 2018) e angulação no perfil escapular (provas de ombro e cotovelo).\n\n> **Na prova:** ângulo glenopolar e desvio mediolateral = Neer I (AP verdadeira); angulação e translação da borda lateral = Neer II (perfil em Y); a axilar não substitui a TC.",
-  "correta": "**B: anteroposterior verdadeira (Neer I) e perfil da escápula (Neer II).** O capítulo atribui à Neer I, a AP verdadeira da escápula, a avaliação do espaço glenoumeral, do desvio da glenoide em relação à borda lateral e a medida do ângulo glenopolar; e à Neer II, o perfil verdadeiro em Y, a avaliação da translação, da angulação e da sobreposição dos fragmentos, sobretudo da borda lateral (Figura 33-6). A divisão segue o plano em que cada desvio acontece.",
+  "conceito": "As duas medidas olham relações diferentes. O **ângulo glenopolar** compara a orientação da glenoide com o corpo da escápula. Para construí-lo, são necessárias a linha entre os polos da glenoide e a linha do polo superior ao ângulo inferior da escápula. A projeção de referência é a **AP verdadeira da escápula, ou Neer I**.\n\nA **angulação dos fragmentos da borda lateral** é avaliada no outro plano: o **perfil escapular, Neer II ou incidência em Y**. Esse perfil também permite apreciar translação e encavalamento dos fragmentos. Usar o plano errado confunde uma medida da relação glenoide-corpo com a deformidade entre os fragmentos da borda lateral (resumo do Rockwood, 10ª ed., cap. 33, “O ângulo glenopolar e os outros três critérios”).\n\nNa tomografia 3D, a mesma lógica orienta a escolha da vista apropriada, com maior precisão. Antes de aplicar qualquer valor de indicação cirúrgica, confira qual medida foi feita e em qual projeção. O resumo da Biblioteca apresenta essas medidas lado a lado.\n\n**Por que esta questão foi criada.** Para distinguir as projeções usadas nas duas medidas que orientam o tratamento das fraturas extra-articulares.",
+  "correta": "**B: anteroposterior verdadeira (Neer I) e perfil da escápula (Neer II).** A ordem acompanha os dois objetivos: glenoide em relação ao corpo na AP verdadeira; angulação da borda lateral no perfil. A reconstrução 3D pode complementar essas medidas, mas não altera a correspondência pedida.",
   "incorretas": {
-   "A": "**Inverte as duas incidências.** As medidas certas estão nas incidências erradas. O ângulo glenopolar depende de ver os polos superior e inferior da glenoide e o ângulo inferior da escápula de frente, o que só a AP verdadeira permite. A angulação da borda lateral é um desvio no plano anteroposterior do corpo, que só aparece de perfil, no Y. A troca é a armadilha clássica de quem decora os nomes NEER I e NEER II sem entender o que cada um mostra.",
-   "C": "**A axilar não é a incidência do ângulo glenopolar.** O capítulo trata a axilar como complementar, útil para glenoide, acrômio e coracoide segundo alguns autores, e afirma que ela não deve substituir a TC. O ângulo glenopolar é definido na Neer I (o valor padrão de 41 graus de TUČEK foi medido nessa incidência). A segunda metade da alternativa, angulação no perfil, está certa.",
-   "D": "**Acerta o ângulo glenopolar e erra a angulação.** A Neer I é de fato a incidência do ângulo glenopolar, mas a angulação dos fragmentos da borda lateral é medida no perfil em Y (Neer II) ou na vista lateral da TC 3D. A axilar olha o ombro de cima para baixo e não mostra o corpo da escápula em perfil. O distrator funciona porque a axilar é útil em outras lesões da cintura escapular, como a luxação acromioclavicular posterior."
+   "A": "**Inverte as projeções.** O perfil é usado para a angulação da borda lateral, enquanto o ângulo glenopolar tem como referência a AP verdadeira. Não basta lembrar as duas incidências: é preciso associar cada uma à sua medida.",
+   "C": "**Acerta o perfil para a borda lateral, mas erra a primeira medida.** A incidência de referência do ângulo glenopolar é a Neer I, pois utiliza os polos da glenoide e o ângulo inferior da escápula. A opção substitui essa projeção pela axilar.",
+   "D": "**Acerta o ângulo glenopolar e troca o plano da angulação.** A primeira medida realmente é feita na AP verdadeira. Para a angulação entre os fragmentos laterais, porém, o capítulo usa o perfil escapular em Y, não a axilar."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia; Epidemiologia, mecanismo, lesões associadas e imagem. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Medir o desvio e indicar a cirurgia",
+      "Epidemiologia, mecanismo, lesões associadas e imagem"
+     ],
+     "blocos": [
+      "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+      "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-cdd666cd",
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-b84994ab",
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c",
+      "medir-o-desvio-e-indicar-a-cirurgia-6963932a"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "e395533eedd7e9dd250f5315c07dee0935728cc460b8b1898c1fdfc015eb24f7"
+    }
+   ],
+   "questaoSha256": "60c8f5bb0ee2697b8f83ef4d211a91f16091e7899de1f1ba7f591e6cda08bdc7",
+   "comentarioSha256": "95c668d79882e590175aef4c5d27ee5ca319ba7233297c9fb9deca92d0828de6"
+  }
  },
  "trauma-1308": {
-  "conceito": "**A TC mudou a fratura da escápula.** O Rockwood (capítulo 33, Computed Tomography) afirma que a tomografia transformou o diagnóstico radiológico dessas fraturas e se tornou o **exame padrão**, sempre indicada quando a radiografia não define o padrão exato da fratura, o acometimento articular ou o desvio dos fragmentos.\n\n**Cada modalidade com sua função.**\n\n| Modalidade | Uso principal no capítulo |\n|---|---|\n| cortes axiais | estado da fossa glenoidal; fraturas sem desvio dos processos, sobretudo coracoide e acrômio |\n| reconstruções 2D, sobretudo coronais | superfície articular da glenoide, especialmente na fratura da base do coracoide que entra na fossa |\n| reconstruções 3D | padrão da fratura, sobretudo do corpo e do colo; não mostram traços finos de fragmentos pouco desviados |\n\n**As vistas padronizadas da 3D (Figura 33-5).** O autor recomenda reconstruir em várias vistas básicas, de preferência com **subtração das costelas, da clavícula e do úmero proximal**:\n- **vista posterior:** trajeto dos traços em relação à espinha; deve cobrir toda a fossa infraespinal e parte da supraespinal;\n- **vista anterior:** importante nas **fraturas do colo**, porque diferencia os trajetos do colo anatômico e do colo cirúrgico;\n- **vista lateral, sempre com subtração da cabeça do úmero:** exigida nas **fraturas da glenoide**, porque dá a informação exata sobre o número de fragmentos e o trajeto dos traços na fossa;\n- **vista ao longo da fossa supraespinal:** útil nas fraturas da parte supraespinal, sobretudo ângulo e borda superiores;\n- **subtração do acrômio e da espinha lateral:** pode ser necessária para ver bem o colo cirúrgico.\n\n**Por que subtrair a cabeça do úmero.** A cabeça umeral fica bem na frente da glenoide quando se olha de lado. Sem removê-la digitalmente, a fossa fica escondida. Com a subtração, a glenoide aparece de frente, como na Figura 33-11, que mostra os cinco padrões de fratura da glenoide do autor (superior, borda anterior, borda posterior, inferior e total), todos em vista lateral.\n\n**A classificação do autor nasceu daí.** A classificação anatômica pela TC 3D do capítulo vem de 519 fraturas, com TC em 383 e 153 operadas. O autor critica as classificações antigas (ADA e MILLER, IDEBERG, GOSS) por terem sido feitas em radiografias, com poucos casos operados para comparar com o achado cirúrgico. No resumo do capítulo, ele conclui que definir o padrão exato exige **reconstruções 3D padronizadas com subtração dos ossos vizinhos**.\n\n**Ligação com a prova.** A banca já trouxe figuras de glenoide para classificar pelo IDEBERG (tipo Ia, duas vezes) e perguntou qual incidência é a melhor para o coracoide (STRYKER, TARO 2011). Saber qual vista mostra cada fragmento é o mesmo raciocínio aplicado à TC.\n\n> **Na prova:** glenoide = vista lateral da TC 3D com subtração da cabeça do úmero; colo = vista anterior; corpo = vista posterior; subtração das costelas, da clavícula e do úmero proximal em geral.",
-  "correta": "**A: lateral; da cabeça do úmero.** O capítulo afirma que as fraturas da glenoide exigem a vista lateral, sempre com subtração da cabeça do úmero, porque ela fornece a informação exata sobre o número de fragmentos e o trajeto dos traços na fossa glenoidal. A cabeça umeral fica na frente da glenoide nessa direção de observação, e só removendo-a digitalmente a fossa aparece por inteiro (Figura 33-11).",
+  "conceito": "Uma reconstrução 3D só ajuda se a estrutura que se quer estudar estiver visível. A cabeça umeral fica diante da superfície glenoidal; por isso, ao avaliar uma fratura da glenoide, a vista indicada é a **lateral com subtração da cabeça do úmero**. A retirada é digital, na reconstrução, e permite examinar a fossa sem a sobreposição da cabeça.\n\nA escolha da vista depende do alvo: a posterior é útil para corpo e espinha, a anterior para o colo, inclusive para distinguir o anatômico do cirúrgico, e a lateral para a glenoide. O capítulo também recomenda subtrair estruturas vizinhas conforme a análise, como costelas e clavícula. Não existe uma única imagem tridimensional que substitua todas as vistas (resumo do Rockwood, 10ª ed., cap. 33, “A sequência de imagem”).\n\nEssa exposição da superfície ajuda a reconhecer quais fragmentos articulares estão separados e a extensão do traço. Para visualizar a relação entre alvo e projeção, leia a sequência de imagem no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para transformar a recomendação de tomografia 3D em uma escolha concreta de vista e estrutura a subtrair na avaliação da glenoide.",
+  "correta": "**A: lateral; da cabeça do úmero.** A vista lateral apresenta a glenoide, e a subtração da cabeça remove a estrutura que a recobre. Os dois elementos precisam estar combinados para examinar diretamente a superfície articular na reconstrução.",
   "incorretas": {
-   "B": "**A vista está certa, mas a estrutura a remover não.** A subtração das costelas é recomendada em geral nas reconstruções 3D, junto com a da clavícula e do úmero proximal, porque elas se sobrepõem ao corpo da escápula. Mas na vista lateral da glenoide quem esconde a fossa é a cabeça do úmero, e é ela que o texto manda subtrair sempre. Sem isso, as costelas removidas não ajudam a ver a superfície articular.",
-   "C": "**A estrutura está certa, mas a vista não.** A vista anterior é a das fraturas do colo, porque mostra a relação do traço com a base do coracoide e a incisura supraescapular, distinguindo colo anatômico, cirúrgico e transespinhal (Figura 33-12). Para ver a superfície articular da glenoide, de frente para a fossa, é preciso a vista lateral.",
-   "D": "**Erra os dois elementos.** Vista anterior com subtração das costelas é uma combinação útil para o corpo e o colo, não para contar fragmentos dentro da fossa glenoidal. A glenoide pede vista lateral e subtração da cabeça do úmero. Uma forma de memorizar: cada vista olha diretamente para a estrutura de interesse, e remove-se o que estiver na frente dela."
+   "B": "**Escolhe a vista, mas remove a estrutura errada para esse objetivo.** A subtração das costelas pode ajudar a estudar a escápula, porém não elimina a cabeça umeral que recobre a glenoide. Para essa superfície, é a cabeça que o capítulo pede para subtrair.",
+   "C": "**A subtração está certa, a vista de referência não.** Remover a cabeça favorece a observação articular, mas a vista anterior é destacada para o colo. A combinação específica pedida para a glenoide é lateral com subtração da cabeça.",
+   "D": "**A combinação se afasta do alvo articular.** A vista anterior atende sobretudo à avaliação do colo, e retirar costelas não resolve a sobreposição da cabeça umeral. A alternativa confunde recursos gerais de reconstrução com a combinação indicada para a glenoide."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Epidemiologia, mecanismo, lesões associadas e imagem. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Epidemiologia, mecanismo, lesões associadas e imagem"
+     ],
+     "blocos": [
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "1c0a7586a2ac3a9ef18a113279d01b21ffed7c44f0f77398d579db268c77bbf9"
+    }
+   ],
+   "questaoSha256": "5921816778f77ce7cdfed0d8677eaa69d908c8c06da95fc42cc4eb5b81c655aa",
+   "comentarioSha256": "ea08dbc70fe5d88e90d3b1da72699d7148a4c81f09b369f52e3ac26801f065d3"
+  }
  },
  "trauma-1309": {
-  "conceito": "**Uma medida de alinhamento entre glenoide e corpo.** O Rockwood (capítulo 33, Measurements of Angulation, Translation, Medialization, and Glenopolar Angle e Figura 33-7) define o **ângulo glenopolar** (GPA) como o **ângulo agudo** entre duas linhas:\n1. a linha que liga o **polo superior ao polo inferior da glenoide**;\n2. a linha que liga o **polo superior da glenoide ao ângulo inferior da escápula** (ao centro do ângulo inferior, na legenda da figura).\n\nO ângulo expressa a inclinação da glenoide em relação ao eixo do corpo. Quando a glenoide gira para varo em relação ao corpo, o ângulo diminui; quando gira para valgo, aumenta.\n\n**Valores.** Segundo TUČEK e colaboradores, o **valor padrão na Neer I é de 41 graus, com variação de 35 a 51 graus**. A medida é indicada principalmente nas **fraturas infraespinais do corpo** e nas **fraturas do colo** (todos os tipos).\n\n**A honestidade do capítulo.** O autor faz uma ressalva importante: a análise cuidadosa dos estudos mostra que a medida do ângulo glenopolar e seus valores normais e críticos **não foram padronizados**. O valor crítico que costuma apoiar a cirurgia, **20 graus ou menos**, não tem apoio universal na literatura. Além disso, nas fraturas do **colo anatômico**, o ângulo pode até **aumentar, chegando a 70 graus**, porque o fragmento glenoidal cai em valgo. Por isso o algoritmo do autor (Figura 33-19) inclui os dois extremos: ângulo **menor que 20 graus ou maior que 60 graus** como critério relativo de cirurgia.\n\n**O que dizem os estudos do tratamento conservador.**\n\n| Estudo | Achado |\n|---|---|\n| ROMERO (19 colos) | problemas funcionais com GPA final abaixo de 20 graus |\n| BOZKURT (18 colos) | correlação positiva entre CONSTANT-MURLEY e GPA |\n| VAN NORT (13 colos) | GPA acima de 20 graus em todos, resultados bons ou excelentes |\n\n**Uma conta que ajuda.** O número 20 graus aparece em toda parte, mas é o limite **crítico**, não o normal. O normal fica em torno de 41 graus; ou seja, o ângulo precisa perder cerca de metade do seu valor para entrar na zona de indicação. Confundir os dois é o erro mais comum.\n\n**Ligação com a prova.** A banca cobrou o ângulo glenopolar menor que 20 graus como indicação cirúrgica na fratura extra-articular (TARO 2018), e uma questão sem ano usou \"normal de 20 a 30 graus\" e \"tem como referência a glenoide e o acrômio\" como distratores, com a resposta \"abaixo de 20 graus é indicado tratamento cirúrgico\". O livro atual dá 41 graus como padrão e acrescenta o limite superior de 60 graus.\n\n> **Na prova:** GPA = linha dos polos da glenoide com a linha do polo superior ao ângulo inferior; padrão 41 graus (35 a 51) na Neer I; crítico menor que 20 graus (e, para o autor, maior que 60 graus).",
-  "correta": "**C: ângulo inferior da escápula; 41 graus.** É a definição da Figura 33-7: ângulo agudo entre a linha dos polos superior e inferior da glenoide e a linha que vai do polo superior da glenoide ao ângulo inferior da escápula. O capítulo cita TUČEK para o valor padrão na incidência Neer I: 41 graus, com variação de 35 a 51 graus. O ângulo inferior é o ponto mais distante do corpo, o que torna a medida sensível ao desvio entre glenoide e corpo. O capítulo indica a medida principalmente nas fraturas infraespinais do corpo e nas do colo, e lembra que ela não foi padronizada: o corte de 20 graus não tem apoio universal, e o colo anatômico pode elevar o ângulo até 70 graus, motivo do limite superior de 60 graus no algoritmo do autor.",
+  "conceito": "O nome “glenopolar” ajuda a lembrar uma das linhas, mas não todos os pontos. A primeira une os polos superior e inferior da glenoide. A segunda parte do **polo superior da glenoide e chega ao ângulo inferior da escápula**. O vértice está, portanto, no polo superior da glenoide; não no ângulo superior da escápula.\n\nNa incidência Neer I, o capítulo apresenta como padrão cerca de **41°**, com faixa de 35° a 51°. Esse é um valor de referência anatômica. Já valores muito reduzidos, em torno do limite de 20° utilizado na decisão terapêutica, descrevem outra questão: uma deformidade que pode favorecer cirurgia. O capítulo ressalva que a padronização e o limite crítico não têm aceitação universal (resumo do Rockwood, 10ª ed., cap. 33, “O ângulo glenopolar e os outros três critérios”).\n\nA medida traduz a relação entre glenoide e corpo, que influencia o trajeto muscular e a mecânica do ombro. Na fratura do colo anatômico, ela pode inclusive aumentar, em vez de diminuir. O resumo da Biblioteca reúne a construção do ângulo e essas limitações para evitar tratar 20° como valor normal.\n\n**Por que esta questão foi criada.** Para separar a construção do ângulo glenopolar de seu valor de referência e do limite relativo utilizado na decisão cirúrgica.",
+  "correta": "**C: ângulo inferior da escápula; 41 graus.** A segunda linha alcança o ângulo inferior, e o valor padrão descrito na Neer I é aproximadamente 41°. Identificar os pontos anatômicos vem antes de interpretar o número.",
   "incorretas": {
-   "A": "**Erra a referência e troca o normal pelo crítico.** O ângulo superior não entra na medida; ele nem faz parte do corpo biomecânico da escápula. E 20 graus é o limite crítico usado como indicação cirúrgica (20 graus ou menos), não o valor normal. Um ângulo de 20 graus significa que a glenoide perdeu cerca de metade da inclinação normal em relação ao corpo.",
-   "B": "**O valor está certo, a referência não.** O padrão de 41 graus de TUČEK está correto, mas ele só vale se a segunda linha for ao ângulo inferior. Usar o ângulo superior daria outra medida, sem relação com o eixo de carga do pilar lateral, que liga a borda inferior da glenoide ao ângulo inferior. A medida existe justamente para captar a relação da glenoide com esse eixo.",
-   "D": "**A referência está certa, o valor não.** A linha vai, sim, do polo superior da glenoide ao ângulo inferior. Mas 20 graus é o valor crítico de indicação cirúrgica, não o padrão. O próprio capítulo lembra que esse corte de 20 graus não tem apoio universal e que, no colo anatômico, o ângulo pode subir até 70 graus, o que levou o autor a usar também o limite de 60 graus."
+   "A": "**Troca a referência óssea e o significado do número.** A linha não termina no ângulo superior da escápula, e 20° não é a média normal apresentada. Esse valor aparece no debate sobre desvio importante e indicação relativa de cirurgia.",
+   "B": "**O número está certo, mas seria medido com a linha errada.** Cerca de 41° é o padrão citado. Para reproduzi-lo, porém, a linha deve ir ao ângulo inferior da escápula, não ao superior.",
+   "D": "**A construção está certa, mas o valor pertence à discussão terapêutica.** O ângulo inferior é o ponto correto. Vinte graus não representa o padrão anatômico da Neer I; o capítulo cita aproximadamente 41° e ressalva a controvérsia do limite crítico."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Medir o desvio e indicar a cirurgia"
+     ],
+     "blocos": [
+      "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+      "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+      "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "80cacadabfabe0e49b10ff80ffd2c08f7254cd42030bf48d2cd8f8fc9bb3654c"
+    }
+   ],
+   "questaoSha256": "9b335c75da6b95c145ef77ecc217cd24bafd19f1863994ec7ca6b4caa5139293",
+   "comentarioSha256": "522e427fdabe76b4830a19c069afaddbb31866e3297b63b01c3d9ab3a359e550"
+  }
  },
  "trauma-1310": {
   "conceito": "**A interpretação do autor é fratura do corpo em duas partes, com lateralização da porção infraespinal.** A aparente medialização da glenoide no AP pode decorrer de olhar apenas a posição relativa dos fragmentos e atribuir todo o movimento à peça glenoidal.\n\nNa figura, observa-se a interrupção da arquitetura escapular abaixo da glenoide e a relação preservada entre clavícula e coracoide descrita no enunciado. A imagem apresentada é uma radiografia; ela não mostra, por si, todas as relações tridimensionais ou a integridade de cada ligamento. A confirmação do padrão pelo autor decorre da análise tomográfica discutida no resumo, não de uma tomografia que estivesse exibida nesta questão.\n\nO mecanismo descrito é o deslocamento lateral da porção inferior do corpo por subescapular, infraespinal e redondo maior. O conjunto glenoidal pode permanecer em sua posição em relação ao tronco, sustentado pelas conexões preservadas. Assim, “um fragmento parece medial ao outro” não prova que a glenoide foi medializada.\n\n**Isso muda a leitura do ombro flutuante.** Uma fratura do corpo não se transforma em fratura verdadeira do colo apenas porque a radiografia sugere um colo infraglenoidal. No conceito do autor, é necessário verificar se a glenoide perdeu suas conexões, e a reconstrução 3D ajuda a esclarecer essa anatomia.\n\n**Leia “Por que tanta fratura do colo não é do colo”, na Biblioteca.** Identifique qual peça realmente se moveu antes de nomear a deformidade.\n\n**Por que esta questão foi criada.** O capítulo usa esse erro de interpretação para explicar a controvérsia do ombro flutuante. A imagem testa a diferença entre a aparência no AP e o padrão confirmado na análise tridimensional.",
@@ -18676,18 +19220,43 @@
   }
  },
  "trauma-1344": {
-  "conceito": "**Tratar o que define o futuro do membro.** O Rockwood (capítulo 33, Treatment of Scapulothoracic Dissociation) afirma que o tratamento da dissociação escapulotorácica deve **focar a lesão neurovascular**, com reparo cirúrgico quando necessário. Mas o capítulo relativiza os dois componentes de forma diferente.\n\n**O vaso.** Existe uma **rede colateral extensa** em volta do ombro, que pode substituir o grande vaso lesado. E o **reparo vascular no paciente com plexopatia completa é discutível**: restaurar o fluxo para um membro sem nenhuma função neurológica não devolve a função.\n\n**O nervo.** O **reparo neurológico também é controverso**. ZELLE mostrou que **a extensão da lesão do plexo braquial é o fator mais importante** para prever o resultado funcional:\n- pacientes com lesão **parcial** do plexo tiveram prognóstico melhor;\n- **todos** os pacientes com lesão **completa** evoluíram para **amputação ou função ruim** do membro superior.\n\n**A recomendação.** ZELLE recomendou **amputação imediata acima do cotovelo** se a função do membro superior não for restaurável. Essa solução pareceu levar a **melhores resultados funcionais e menos complicações** do que tentar salvar um membro insensível e paralisado.\n\n**O que o capítulo traz sobre a lesão.**\n\n| Aspecto | Dado do capítulo |\n|---|---|\n| definição | desconexão osteoligamentar da escápula do esqueleto axial + músculos escapuloaxiais + grandes vasos + plexo + partes moles, pele em geral íntegra |\n| apelido | amputação interna do quarto superior |\n| mecanismo | distração lateral ou rotacional violenta, membro preso a objeto fixo ou maquinário |\n| mortalidade | 11%, por lesão intratorácica |\n| classificação | ZELLE 1, 2A, 2B, 3, 4 |\n| série do autor | 2 casos em 519 (0,4%) + 1; um óbito e dois resultados muito ruins |\n\n**Raciocínio clínico.** O tipo 4 de ZELLE (avulsão completa do plexo) é a situação da amputação precoce. Nos tipos com lesão incompleta (2B e 3), o prognóstico é melhor e o esforço de reconstrução faz sentido. O vaso, por si só, raramente decide: com plexo íntegro, a colateral pode bastar; com plexo perdido, o reparo vascular é questionável.\n\n**Ligação com a prova.** É questão carimbada: \"na dissociação escapulotorácica com lesão completa do plexo braquial e função não restaurada, a principal indicação é amputação acima do nível do cotovelo\" (TARO 2026), com distratores artrodese escapulotorácica, exploração do plexo e artrodese glenoumeral. A artrodese escapulotorácica aparece em provas de ombro e cotovelo em outro contexto (posição ideal da escápula), não como tratamento da dissociação com plexo perdido.\n\n> **Na prova:** dissociação escapulotorácica: prognóstico = extensão da lesão do plexo (ZELLE); plexo completo sem função restaurável = amputação imediata acima do cotovelo; reparo vascular com plexopatia completa é discutível.",
-  "correta": "**B: a extensão da lesão do plexo braquial; amputação imediata acima do cotovelo.** O capítulo cita ZELLE: a extensão da lesão do plexo braquial é o fator mais importante para prever o resultado funcional, e todos os pacientes com lesão completa tiveram amputação ou função ruim. Por isso ZELLE recomendou amputação imediata acima do cotovelo quando a função do membro não for restaurável, com melhores resultados e menos complicações. Na série do autor, houve 2 dissociações em 519 fraturas (0,4%) e mais uma fora da série: um paciente morreu e os outros dois tiveram resultado muito ruim, o que ilustra a gravidade da lesão e o peso do plexo no prognóstico.",
+  "conceito": "Na dissociação escapulotorácica, manter um membro perfundido e restaurar sua função são objetivos relacionados, mas diferentes. A lesão rompe conexões da cintura escapular e pode comprometer vasos e plexo braquial. O que mais prediz o resultado funcional, segundo Zelle no capítulo, é **a extensão da lesão do plexo**.\n\nO plexo conduz a inervação do membro. Se a lesão é incompleta, o cenário funcional é diferente daquele de uma lesão completa sem possibilidade de restauração. Na classificação apresentada, déficit neurológico incompleto corresponde ao tipo 2B, sua associação com lesão vascular ao tipo 3 e avulsão completa do plexo ao tipo 4. A rede colateral do ombro pode contribuir para a circulação, mas circulação preservada não substitui inervação perdida.\n\nPara o cenário específico de **lesão completa e função irrecuperável**, a recomendação de Zelle citada no resumo é amputação imediata acima do cotovelo. Trata-se de uma recomendação para essa condição definida, e não para toda dissociação nem para qualquer déficit neurológico. O reparo vascular e o reparo neurológico são discutidos como decisões controversas nesse contexto (resumo do Rockwood, 10ª ed., cap. 33, “O tratamento gira em torno do nervo”).\n\nArtrodese significa estabilizar uma articulação por fusão. Ela não reconstrói a inervação ausente do restante do membro. Para relacionar prognóstico e conduta sem generalizar a amputação, leia essa seção do resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para aprofundar o cenário cobrado no TARO 2026: dissociação escapulotorácica com lesão completa do plexo e função irrecuperável, relacionando conduta e prognóstico.",
+  "correta": "**B: a extensão da lesão do plexo braquial; amputação imediata acima do cotovelo.** O fator prognóstico é neurológico, e a conduta citada se aplica quando a lesão é completa e não há função restaurável. Essa condição precisa estar presente; o simples diagnóstico de dissociação não basta para indicar amputação.",
   "incorretas": {
-   "A": "**A conduta está certa, o fator prognóstico não.** A amputação imediata acima do cotovelo é a recomendação para o plexo completo sem função restaurável. Mas o vaso não é o principal fator prognóstico: há uma rede colateral extensa em volta do ombro, e o reparo vascular com plexopatia completa é discutível. ZELLE mostrou que o que define o resultado é a extensão da lesão do plexo.",
-   "C": "**O fator prognóstico está certo, a conduta não.** A extensão da lesão do plexo é o que mais pesa. Mas, com lesão completa e função não restaurável, a recomendação é a amputação imediata acima do cotovelo, não a artrodese escapulotorácica. A artrodese não devolve função a um membro sem inervação. O TARO 2026 usou exatamente a artrodese escapulotorácica como distrator.",
-   "D": "**Erra os dois elementos.** Nem o vaso é o principal determinante do resultado, nem a artrodese escapulotorácica é a conduta no plexo completo. A combinação ignora o ponto central de ZELLE: membro sem plexo funciona mal mesmo bem perfundido e com a escápula estabilizada; a amputação precoce acima do cotovelo dá melhor resultado."
+   "A": "**A conduta corresponde ao cenário, mas o fator prognóstico foi trocado.** A lesão vascular importa para a avaliação do trauma. Para o resultado funcional discutido por Zelle, porém, pesa mais a extensão da lesão do plexo; um membro perfundido pode continuar sem função se a inervação for irrecuperável.",
+   "C": "**Identifica o fator prognóstico, mas propõe uma operação que não o corrige.** A artrodese escapulotorácica estabiliza a relação entre escápula e tórax. Não restaura a inervação de todo o membro quando o plexo está completamente perdido; não substitui a recomendação citada para função irrecuperável.",
+   "D": "**Confunde salvamento circulatório com reconstrução funcional.** Escolher a lesão vascular como principal fator não contempla o peso do plexo no prognóstico. Somar uma artrodese escapulotorácica também não resolve a perda neurológica completa que define o cenário da pergunta."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 33 (Scapular Fractures; Jan Bartoníček)"
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Dissociação escapulotorácica. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Dissociação escapulotorácica"
+     ],
+     "blocos": [
+      "dissociacao-escapulotoracica-fb39e45c",
+      "dissociacao-escapulotoracica-8b999d6b",
+      "dissociacao-escapulotoracica-2b65a722"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "2c5af8b694c231e7cf817934ef4bef831b01e9df19eeca5bf6946e1ba198e2fb"
+    }
+   ],
+   "questaoSha256": "27b8e5fb5696e0e51861ca059059cd885333ec011b27ccd063bc470088f0cfd1",
+   "comentarioSha256": "686635cc9c7ae7fc6ce2a857d78350430d75dbe7d7759b34210222172c45c45a"
+  }
  },
  "trauma-1345": {
   "conceito": "**Distração lateral violenta com o membro preso é o mecanismo típico, e a expressão é amputação interna do quarto superior.** O termo descreve a gravidade da desconexão interna; não significa necessariamente uma amputação aberta visível na chegada.\n\nSe o membro fica preso enquanto o corpo continua em movimento, a cintura pode falhar em tensão em vários níveis. O sistema osteoligamentar e os músculos escapuloaxiais se desconectam do tronco, com lesões dos grandes vasos, plexo e partes moles. A pele costuma permanecer intacta, ocultando parte da magnitude da lesão.\n\nA radiografia de tórax ajuda a reconhecer a posição anormal da escápula em relação à coluna, mas a prioridade é a avaliação neurovascular e sistêmica. A ausência de ferida aberta não permite tratar o caso como uma simples fratura escapular isolada.\n\nUm golpe posterior pode produzir fratura do corpo, porém não reproduz a distração descrita. Da mesma forma, chamar o quadro de luxação intratorácica muda o fenômeno anatômico: a questão trata de desconexão do quarto superior em relação ao esqueleto axial.\n\n**Leia “Dissociação escapulotorácica: o que é”, na Biblioteca.** Relacione tração, falha interna e lesão neurovascular, sem depender de uma ferida externa para reconhecer gravidade.\n\n**Por que esta questão foi criada.** O tema aparece em questões de imagem e classificação. Este simulado testa o mecanismo e o significado de uma expressão que resume a gravidade da lesão.",
