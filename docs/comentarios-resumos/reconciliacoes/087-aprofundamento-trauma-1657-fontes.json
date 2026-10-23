@@ -1,0 +1,67 @@
+{
+  "trauma-1657": {
+    "questaoSha256": "3836d7eaaf62275f5cd0abb36ae80695de2592361cea7b82b1dba948840c16aa",
+    "comentarioAnteriorSha256": "6f1621f2da179bea9199d834e7e83ccd687129b3a4d93f7dff3e4c11bed91591",
+    "comentario": {
+      "conceito": "O paciente tem 28 anos e já recebeu uma haste para a fratura da diáfise. Só na radiografia de controle apareceu uma segunda fratura, na base do colo, **ainda sem desvio**. O problema agora é proteger essa fratura proximal sem perder uma estabilização diafisária que já está feita. Neste cenário específico, o capítulo recomenda **parafusos canulados ao redor da haste**.\n\nPara entender a decisão, imagine as duas fraturas em níveis diferentes do mesmo osso. A haste ocupa o canal e estabiliza a diáfise; isso não significa que ela tenha fixado o colo. Se a montagem não atravessa e controla a fratura proximal, esta continua sendo um segundo problema. Por outro lado, descobrir esse problema não obriga a desmontar tudo: o colo mantém seu alinhamento, e o algoritmo permite acrescentar sua fixação com parafusos que passam ao redor da haste. O dado decisivo é a combinação **haste já instalada + colo sem desvio**, não apenas a palavra “basocervical” (resumo do Rockwood, 10ª ed., cap. 57, “A fratura do colo do mesmo lado”).\n\n**Por que não basta observar uma fratura que está alinhada?** Porque alinhamento é a posição dos fragmentos naquele momento; estabilidade é a capacidade de conservar essa posição sob as forças que atuarão depois. O capítulo descreve o colo associado como frequentemente basocervical e de traço vertical, sujeito a instabilidade axial. Não há contradição em encontrar uma fratura sem desvio e, ainda assim, precisar fixá-la. No jovem, perder a redução ou deixar de obter consolidação do colo tem consequências importantes, e as possibilidades de salvamento são limitadas. Carga protegida não substitui a estabilização recomendada nesse algoritmo.\n\nOs parafusos são uma fixação dirigida ao colo, enquanto a haste permanece encarregada da diáfise. “Ao redor da haste” é uma descrição da coexistência dos implantes; não significa atravessar metal com metal nem aceitar qualquer posição dos parafusos. A escolha depende de conseguir trajetos adequados para estabilizar o colo preservando o implante existente. Na técnica de fixação do colo descrita pelo resumo, os parafusos são guiados por fios e o alinhamento precisa ser conferido em AP e perfil. Uma única projeção não basta para chamar a fratura de bem posicionada (resumo do Rockwood, 10ª ed., cap. 53, “A fixação”).\n\n**Se o colo estivesse desviado, a dificuldade seria outra.** Antes de fixar, seria necessário recuperar sua anatomia. A haste que já ocupa o canal pode impedir uma redução satisfatória; nesse caso, preservar o implante deixaria de ser vantagem. O capítulo orienta tentar a redução com a haste presente e, se não for possível, retirá-la, fixar o colo e estabilizar novamente a diáfise com haste retrógrada ou placa. A alternativa D pertence a essa situação mais difícil. Ela não é a resposta automática a qualquer colo descoberto depois da cirurgia.\n\n| Situação encontrada | Conduta descrita no capítulo 57 |\n| --- | --- |\n| Colo e diáfise reconhecidos antes da fixação | Priorizar redução e fixação do colo; tratar a diáfise com implante separado, como retrógrada ou placa. |\n| Colo descoberto depois da haste anterógrada, sem desvio | Fixar com canulados ao redor da haste. |\n| Colo descoberto depois da haste, desviado | Tentar reduzir; se a haste impedir redução satisfatória, retirá-la, fixar o colo e refazer a síntese diafisária por outra montagem. |\n\nTambém seria tentador trocar a haste por uma cefalomedular de reconstrução: um implante parece poder resolver as duas fraturas. A dificuldade é controlar bem o colo durante essa montagem. O capítulo relata mais má redução, perda de redução e pseudartrose proximal com a haste única, além de dificuldade para acertar a anteversão. Resolver duas fraturas com menos peças não assegura controlar melhor as duas. Por isso o algoritmo favorece tratar o colo separadamente.\n\nHá uma nuance importante: **isso não transforma os canulados na escolha universal para toda fratura basocervical**. O capítulo 53 trata esse padrão com parafuso deslizante, e o 57 também manifesta preferência por deslizante com antirrotatório quando se planeja desde o início a fixação do colo associado. Aqui, porém, a pergunta apresenta outra situação: a haste já está instalada e a fratura foi reconhecida depois, sem desvio. É para esse cenário que o 57 recomenda os canulados ao redor da haste. O momento do diagnóstico e a montagem existente fazem parte da indicação.\n\nPor fim, como evitar chegar a essa situação? A lesão diafisária evidente pode desviar a atenção de um colo pouco desviado, e uma TC de rotina com cortes grossos pode não mostrar o traço. O protocolo de Tornetta descrito no resumo combina AP do quadril em rotação interna, TC com cortes finos de 2 mm, fluoroscopia do colo antes de fixar a diáfise e imagem ortogonal do quadril ainda na sala depois da haste. Isso ensina a procurar a lesão em mais de um momento, em vez de presumir que uma imagem inicial negativa encerrou a investigação.\n\nO raciocínio que deve ficar é: **o colo precisa de sua própria estabilização; a necessidade de retirar a haste depende de ela impedir o tratamento adequado, e não simplesmente de existir uma segunda fratura**. No resumo da Biblioteca, a seção “A fratura do colo do mesmo lado” permite acompanhar esse algoritmo completo.\n\n**Por que esta questão foi criada.** Diferencia o colo sem desvio descoberto após a haste daquele que exige redução e eventual mudança da montagem, duas situações com tratamentos diferentes.",
+      "correta": "**B: parafusos canulados ao redor da haste.** O colo permanece sem desvio e o capítulo permite acrescentar sua fixação preservando a síntese diafisária. Os parafusos passam a tratar a fratura proximal, que a haste anterógrada instalada não deve ser considerada capaz de estabilizar por si só.\n\nO objetivo não é conservar a haste a qualquer custo: é aproveitar a montagem existente quando ainda se consegue tratar adequadamente o colo. Se não houvesse trajeto viável ou se o colo estivesse desviado e não pudesse ser reduzido com ela presente, esse raciocínio teria de mudar. Para o caso escrito, porém, não foi apresentada essa dificuldade que obrigaria a desmontagem.",
+      "incorretas": {
+        "A": "**Estar sem desvio não torna o colo dispensável de fixação.** Observar com carga protegida preservaria a haste, mas deixaria a segunda fratura sem a estabilização indicada. A distinção é entre aparência de alinhamento numa radiografia e capacidade de manter esse alinhamento durante a consolidação. A associação basocervical/vertical descrita pelo capítulo pode ser axialmente instável mesmo antes de aparecer um deslocamento.\n\nO paciente é jovem e a perda de redução do colo criaria um problema de consolidação e de preservação da cabeça. O algoritmo específico recomenda fixá-lo, não esperar que o desvio apareça para então decidir. Restrições de carga podem integrar o cuidado, mas não substituem o tratamento mecânico proposto nesta situação.",
+        "C": "**Uma haste de reconstrução única não é automaticamente uma solução mais segura para duas fraturas.** Trocar o implante parece elegante porque os parafusos cefálicos passariam a alcançar a região proximal. Entretanto, controlar redução e anteversão do colo durante essa montagem é difícil; o capítulo associa a haste única a mais má redução, perda de redução e pseudartrose do colo.\n\nAlém disso, o caso não exige corrigir um desvio proximal já estabelecido. Há uma opção descrita que acrescenta a fixação do colo sem retirar a haste diafisária. Portanto, a simples descoberta da fratura não cria indicação automática de troca por reconstrução. Isso difere de considerar uma haste cefalomedular para proteger um colo íntegro em determinados idosos, outra população e outro problema.",
+        "D": "**É uma estratégia de resgate possível, mas não a primeira escolha para o colo sem desvio deste enunciado.** Retirar a haste, fixar o colo e mudar a diáfise para retrógrada permite recuperar o controle proximal quando o implante existente impede uma redução satisfatória. O capítulo descreve essa escalada para o colo desviado cuja redução não se consegue com a haste presente.\n\nAqui, os fragmentos do colo continuam alinhados, e o algoritmo admite fixá-los com canulados ao redor da haste. A alternativa D resolve uma dificuldade maior do que a demonstrada. O ponto não é que retirar a haste esteja sempre errado; é reconhecer a condição que justificaria fazê-lo, em vez de desmontar rotineiramente toda síntese diante de uma segunda fratura."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures, Adams Jr. e Jeray. Seção “A fratura do colo do mesmo lado”, incluindo diagnóstico e conduta após haste anterógrada.",
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures, Griffin, Lane, Moppett e Seymour. Seções “Basocervical” e “A fixação”."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "A fratura do colo do mesmo lado"
+        ],
+        "blocos": [
+          "a-fratura-do-colo-do-mesmo-lado-447c2a22",
+          "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
+          "a-fratura-do-colo-do-mesmo-lado-8484e205",
+          "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+          "a-fratura-do-colo-do-mesmo-lado-754eb6d6",
+          "a-fratura-do-colo-do-mesmo-lado-ab880107",
+          "a-fratura-do-colo-do-mesmo-lado-9c56d4da",
+          "a-fratura-do-colo-do-mesmo-lado-7a77c9ba",
+          "a-fratura-do-colo-do-mesmo-lado-473f033a",
+          "a-fratura-do-colo-do-mesmo-lado-2856b2fa",
+          "a-fratura-do-colo-do-mesmo-lado-d6fedb3e",
+          "a-fratura-do-colo-do-mesmo-lado-81cd5787",
+          "a-fratura-do-colo-do-mesmo-lado-99f043a3"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "b03954808ad35a7612692fae860db816c0a092f3d3447142f8b5680362903df4"
+      },
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura sem desvio (Garden I e II)",
+          "Classificações"
+        ],
+        "blocos": [
+          "fratura-sem-desvio-garden-i-e-ii-2ce21a8e",
+          "classificacoes-3fbece93"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "2b16696555d45a602fd759c42f54696e7d6a516761ae42eba399186a721250f7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
