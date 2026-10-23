@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1297,
+  "pendente": 1262,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 114,
-  "pendente-inspecao-imagem": 159,
-  "revisada": 702
+  "pendente-fonte": 120,
+  "pendente-inspecao-imagem": 158,
+  "revisada": 732
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -27,8 +27,8 @@
    "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
    "estados": {
     "duplicada": 2,
-    "pendente": 2,
-    "pendente-fonte": 27,
+    "pendente": 1,
+    "pendente-fonte": 28,
     "revisada": 37
    }
   },
@@ -166,10 +166,10 @@
    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
    "estados": {
     "duplicada": 2,
-    "pendente": 40,
-    "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 6,
-    "revisada": 14
+    "pendente": 5,
+    "pendente-fonte": 7,
+    "pendente-inspecao-imagem": 5,
+    "revisada": 44
    }
   },
   "rockwood10-54-transtrocanterica": {
@@ -186,9 +186,10 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 63,
+    "pendente": 61,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 1,
-    "revisada": 6
+    "revisada": 7
    }
   },
   "rockwood10-58-femur-distal": {
@@ -39667,7 +39668,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39682,7 +39683,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "e73ee8bfc107dc131d81379b701f13cb0a9758b5ba091076e775c6cb0edff082"
+   "questaoSha256": "e73ee8bfc107dc131d81379b701f13cb0a9758b5ba091076e775c6cb0edff082",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-1d56bc28",
+       "anatomia-aplicada-06e28c1c",
+       "fratura-desviada-no-idoso-46ff2a73"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "f5f616e202165a482dce5ad4e70c54fecfb1008d5e49bbd02097910ce22519b6"
+     }
+    ],
+    "questaoSha256": "e73ee8bfc107dc131d81379b701f13cb0a9758b5ba091076e775c6cb0edff082",
+    "comentarioSha256": "97fbf35741d7e0d0a5b5e01ee8c99b80e1065a3a4a2c25d0ead486b3fd246ad8"
+   }
   },
   "quadril-0156": {
    "tema": "quadril",
@@ -39987,8 +40014,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -40002,7 +40029,30 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3851f76ef9d167e735a008a4a39a00077ee252d5594e861659fb1824c8c8df5c"
+   "questaoSha256": "3851f76ef9d167e735a008a4a39a00077ee252d5594e861659fb1824c8c8df5c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-38a46d78"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "da08e6f1339113f6f6d7091a13f6fa546c1ba8ff3e0ef1665796101fee6e25aa"
+     }
+    ],
+    "questaoSha256": "3851f76ef9d167e735a008a4a39a00077ee252d5594e861659fb1824c8c8df5c",
+    "comentarioSha256": "58bac2be85a7cb30c8a65581677c6e3e4bd97cffd2701fb282942cbdffd83cbb"
+   }
   },
   "quadril-0331": {
    "tema": "quadril",
@@ -40289,8 +40339,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Os textos independentes dos resumos 24 e 53 sustentam tensão superior/lateral instável e compressão inferior/medial mais estável, mas não desenvolvem a atribuição dessa divisão a Fullerton e Snowdy. A atribuição está nos blocos contextuais da própria questão; o 24 avisa expressamente que a classificação não é descrita no capítulo. Falta fonte independente do epônimo/classificação para conferir a afirmação inteira. Não promover a resposta bibliográfica antiga a oficial nem usar o comentário da pergunta como prova.",
    "temComentario": true,
    "citacoes": [
     {
@@ -40312,7 +40362,8 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "0ac830fb3b0ea1e18a4286d79ca4da6d9624152126540af38c5cfdf5c6bda53f"
+   "questaoSha256": "0ac830fb3b0ea1e18a4286d79ca4da6d9624152126540af38c5cfdf5c6bda53f",
+   "pendencia": "Os textos independentes dos resumos 24 e 53 sustentam tensão superior/lateral instável e compressão inferior/medial mais estável, mas não desenvolvem a atribuição dessa divisão a Fullerton e Snowdy. A atribuição está nos blocos contextuais da própria questão; o 24 avisa expressamente que a classificação não é descrita no capítulo. Falta fonte independente do epônimo/classificação para conferir a afirmação inteira. Não promover a resposta bibliográfica antiga a oficial nem usar o comentário da pergunta como prova."
   },
   "quadril-0490": {
    "tema": "quadril",
@@ -40346,7 +40397,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40382,7 +40433,42 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "6db02696d013be6fd4347e0b68043174779ffa1d36c91b77f86d96d88b3296b4"
+   "questaoSha256": "6db02696d013be6fd4347e0b68043174779ffa1d36c91b77f86d96d88b3296b4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações",
+       "Fratura sem desvio (Garden I e II)",
+       "Mecanismo, lesões associadas e quadro clínico",
+       "Fratura desviada no idoso",
+       "Anatomia aplicada",
+       "Diagnóstico por imagem"
+      ],
+      "blocos": [
+       "classificacoes-113a1994",
+       "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+       "fratura-sem-desvio-garden-i-e-ii-2ce21a8e",
+       "mecanismo-lesoes-associadas-e-quadro-clinico-b64d530b",
+       "fratura-desviada-no-idoso-46218195",
+       "fratura-desviada-no-idoso-25acc61c",
+       "anatomia-aplicada-fc34becd",
+       "diagnostico-por-imagem-63f9a6b1"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "499c412b1ea384953a581ff82003d1d6626ec76af32e87c619b0c4b45b6b8e42"
+     }
+    ],
+    "questaoSha256": "6db02696d013be6fd4347e0b68043174779ffa1d36c91b77f86d96d88b3296b4",
+    "comentarioSha256": "ceb06b013b51b837aab8674a78cf39a3df4b19458b23cf654cc22b00ced305f9"
+   }
   },
   "quadril-0510": {
    "tema": "quadril",
@@ -49291,8 +49377,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo descreve Garden III em varo com retináculo posterior em dobradiça, mas não define flexão versus extensão no perfil. O bloco contextual da própria pergunta favorece flexão, em conflito com B oficial (varo/extensão). Falta fonte independente do componente sagital para julgar A e B; não usar o comentário contextual como prova nem reescrever a letra da banca.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49306,7 +49392,8 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "e1a8151b2ae8174aede4d2163acd303e062d4cde54969252683d58ed8852c483"
+   "questaoSha256": "e1a8151b2ae8174aede4d2163acd303e062d4cde54969252683d58ed8852c483",
+   "pendencia": "O corpo independente do resumo descreve Garden III em varo com retináculo posterior em dobradiça, mas não define flexão versus extensão no perfil. O bloco contextual da própria pergunta favorece flexão, em conflito com B oficial (varo/extensão). Falta fonte independente do componente sagital para julgar A e B; não usar o comentário contextual como prova nem reescrever a letra da banca."
   },
   "trauma-0335": {
    "tema": "trauma",
@@ -49406,7 +49493,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49428,7 +49515,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3679b59af3c69ea7b2cd42c640f9cf323ea90abb78fea12ed2dfacf759269729"
+   "questaoSha256": "3679b59af3c69ea7b2cd42c640f9cf323ea90abb78fea12ed2dfacf759269729",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso",
+       "Complicações"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-9ceafc6a",
+       "complicacoes-08edb04e",
+       "complicacoes-7f006830"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "b2f84c28d76bc5145a710b4a63658c343074e220dd839219801dfdf5ef7b3a0d"
+     }
+    ],
+    "questaoSha256": "3679b59af3c69ea7b2cd42c640f9cf323ea90abb78fea12ed2dfacf759269729",
+    "comentarioSha256": "3b52b3e312c97178f33cb0a7742880b622d54844e5eb8c03c3dc3455eea78853"
+   }
   },
   "trauma-0341": {
    "tema": "trauma",
@@ -53940,7 +54053,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53955,7 +54068,35 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "5cce51064bced40403880ef65ee3115ed40c9484815af6681dc5a2fe9f3c7f73"
+   "questaoSha256": "5cce51064bced40403880ef65ee3115ed40c9484815af6681dc5a2fe9f3c7f73",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações"
+      ],
+      "blocos": [
+       "classificacoes-21223eb4",
+       "classificacoes-12519f03",
+       "classificacoes-113a1994",
+       "classificacoes-1854670c",
+       "classificacoes-6479ca47",
+       "classificacoes-b5e602a1"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "941da02731d03af7736923ea3417211ddf1d9629d5296909fbe158199f137cf9"
+     }
+    ],
+    "questaoSha256": "5cce51064bced40403880ef65ee3115ed40c9484815af6681dc5a2fe9f3c7f73",
+    "comentarioSha256": "ecd0a4cb5a133b958ab538c56a2594cfbe585873e62e5ffe605ff51d81bd96c5"
+   }
   },
   "trauma-0730": {
    "tema": "trauma",
@@ -56612,7 +56753,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56634,7 +56775,34 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "5f06d50304be73994c9ffdb20d535d77c22caf903a81239492eea536b8f053aa"
+   "questaoSha256": "5f06d50304be73994c9ffdb20d535d77c22caf903a81239492eea536b8f053aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-0b5ab099",
+       "fratura-desviada-no-jovem-48422559",
+       "fratura-desviada-no-jovem-0d3d7820",
+       "anatomia-aplicada-a8c38522"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "90faea8b0ac781aa682a0ac05441b12a5fb28ab41aa2cce18c1b349a07383ab7"
+     }
+    ],
+    "questaoSha256": "5f06d50304be73994c9ffdb20d535d77c22caf903a81239492eea536b8f053aa",
+    "comentarioSha256": "3b34eb790d2fa64d4daf420038ada0818edb78f856c5b2652fece9b62a890b65"
+   }
   },
   "trauma-0864": {
    "tema": "trauma",
@@ -57559,7 +57727,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57581,7 +57749,35 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "11d007cfb9dfb6807c4088ae65cce514ee3568a58ecd57da9be5de6a1158e9fe"
+   "questaoSha256": "11d007cfb9dfb6807c4088ae65cce514ee3568a58ecd57da9be5de6a1158e9fe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-be509df6",
+       "fratura-desviada-no-jovem-43725930",
+       "fratura-desviada-no-jovem-48422559",
+       "fratura-desviada-no-jovem-0b5ab099",
+       "fratura-desviada-no-jovem-0d3d7820",
+       "fratura-desviada-no-jovem-38a46d78"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "e53e93e945be9e8bb8c8ca6d00436dab1e452e025a04de916d9be57f4a7ca8b9"
+     }
+    ],
+    "questaoSha256": "11d007cfb9dfb6807c4088ae65cce514ee3568a58ecd57da9be5de6a1158e9fe",
+    "comentarioSha256": "f1ec6b503bbd0cb485885c054a650a93b52c846c7d442b46745c54126103d0e0"
+   }
   },
   "trauma-0900": {
    "tema": "trauma",
@@ -57640,8 +57836,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo orienta preservar a cabeça no jovem, redução fechada e aberta se inadequada, mas não desenvolve o algoritmo da fratura por arma de fogo: contaminação, lesão articular, cominuição/perda óssea e critérios que indicam abertura ou artroplastia. Faltam esses critérios para conferir A oficial e discriminar B/C/D neste trauma balístico. Ausência de projétil retido não resolve sozinha a escolha; não atribuir fonte genérica de jovem à conduta específica.",
    "temComentario": true,
    "citacoes": [
     {
@@ -57655,7 +57851,8 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "ddd3428cc2b3040d912257d29a20c29e577da54121ad1348edb173a3c9ed5d27"
+   "questaoSha256": "ddd3428cc2b3040d912257d29a20c29e577da54121ad1348edb173a3c9ed5d27",
+   "pendencia": "O resumo orienta preservar a cabeça no jovem, redução fechada e aberta se inadequada, mas não desenvolve o algoritmo da fratura por arma de fogo: contaminação, lesão articular, cominuição/perda óssea e critérios que indicam abertura ou artroplastia. Faltam esses critérios para conferir A oficial e discriminar B/C/D neste trauma balístico. Ausência de projétil retido não resolve sozinha a escolha; não atribuir fonte genérica de jovem à conduta específica."
   },
   "trauma-0902": {
    "tema": "trauma",
@@ -62583,8 +62780,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo relaciona cominuição posterior a instabilidade, mas não explicita o benefício/indicação do parafuso cranial adicional ao DHS para suporte e estabilidade rotacional nesse padrão. A ligação específica aparece só no bloco contextual da própria pergunta. Falta descrição técnica independente desse parafuso e de sua relação com a fragmentação posterior; sem gabarito oficial, não marcar provavel apenas pelo texto antigo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -62598,7 +62795,8 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "0b8b09626ed36f1fd3f3561ed99b1a675704828fbd7fc3569839300ef15291fb"
+   "questaoSha256": "0b8b09626ed36f1fd3f3561ed99b1a675704828fbd7fc3569839300ef15291fb",
+   "pendencia": "O corpo independente do resumo relaciona cominuição posterior a instabilidade, mas não explicita o benefício/indicação do parafuso cranial adicional ao DHS para suporte e estabilidade rotacional nesse padrão. A ligação específica aparece só no bloco contextual da própria pergunta. Falta descrição técnica independente desse parafuso e de sua relação com a fragmentação posterior; sem gabarito oficial, não marcar provavel apenas pelo texto antigo."
   },
   "trauma-1117": {
    "tema": "trauma",
@@ -74537,7 +74735,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74552,7 +74750,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "6881f1838e40e225a2ffe3a69209b79c0f10fb685e9ff9027dc0de392d1fd1d7"
+   "questaoSha256": "6881f1838e40e225a2ffe3a69209b79c0f10fb685e9ff9027dc0de392d1fd1d7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-48422559",
+       "fratura-desviada-no-jovem-0d3d7820"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "62ceca3904d629e5589163f91e125d7a08f2b0c593bcc17a82fcfe196273a253"
+     }
+    ],
+    "questaoSha256": "6881f1838e40e225a2ffe3a69209b79c0f10fb685e9ff9027dc0de392d1fd1d7",
+    "comentarioSha256": "9c5c88a3fa9a9032951a6e851ef3e90f66f34d04afcd38b3a04cb7b2f327adc8"
+   }
   },
   "trauma-1541": {
    "tema": "trauma",
@@ -74633,7 +74855,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74648,7 +74870,37 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "fb251137fb3e555bd91179d046eb5ea0cac0b3ff6baebe807b387e907ec700d4"
+   "questaoSha256": "fb251137fb3e555bd91179d046eb5ea0cac0b3ff6baebe807b387e907ec700d4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações",
+       "Fratura desviada no jovem",
+       "Fratura desviada no idoso",
+       "Complicações"
+      ],
+      "blocos": [
+       "classificacoes-0fec7b18",
+       "fratura-desviada-no-jovem-90ec4b8d",
+       "fratura-desviada-no-jovem-43725930",
+       "fratura-desviada-no-idoso-1d56bc28",
+       "complicacoes-5c3aaed4"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "8a84851b4cb8d2c3335a83fd5cd87db375fe8893a4ce77b6636190668cbf7022"
+     }
+    ],
+    "questaoSha256": "fb251137fb3e555bd91179d046eb5ea0cac0b3ff6baebe807b387e907ec700d4",
+    "comentarioSha256": "158a2c30e270c77d046016f77a65f7a09bb17c10a744c28396c5eb3330839ab5"
+   }
   },
   "trauma-1545": {
    "tema": "trauma",
@@ -74657,7 +74909,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74672,7 +74924,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "d6f04c0bed53041797038258f07f61a67d5e075d2779343af3181eaf36aecb7b"
+   "questaoSha256": "d6f04c0bed53041797038258f07f61a67d5e075d2779343af3181eaf36aecb7b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-48422559",
+       "fratura-desviada-no-jovem-0b5ab099"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ac2f8deb44e93b30c9bd8b2a1e112fc8f91b844d02798abcb849176bf3608a24"
+     }
+    ],
+    "questaoSha256": "d6f04c0bed53041797038258f07f61a67d5e075d2779343af3181eaf36aecb7b",
+    "comentarioSha256": "043f98d1a0b81620203ae949bff343378179e1a74944679e98f14721500e0015"
+   }
   },
   "trauma-1546": {
    "tema": "trauma",
@@ -74681,7 +74957,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74696,7 +74972,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "054902c0cd05a97fd5f8d4722c8ed2ef11b13592c646320c0086d789a5f8abf8"
+   "questaoSha256": "054902c0cd05a97fd5f8d4722c8ed2ef11b13592c646320c0086d789a5f8abf8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Mecanismo, lesões associadas e quadro clínico",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+       "anatomia-aplicada-034e2c5a",
+       "anatomia-aplicada-666e0ba0"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "d7672a8fdfbd03e4ec964b4215ab43ddd2eb3fbe39ce5988c815e120c275ed6a"
+     }
+    ],
+    "questaoSha256": "054902c0cd05a97fd5f8d4722c8ed2ef11b13592c646320c0086d789a5f8abf8",
+    "comentarioSha256": "8f1264991b356ecb2f5e81c1d9ce8e204fc5f4345b7a084ae8204040c744d736"
+   }
   },
   "trauma-1547": {
    "tema": "trauma",
@@ -74705,7 +75007,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74720,7 +75022,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "2b41e74efcdfa10b8cbb283fd194df26c05f92bd9341b8e86038820111d4d035"
+   "questaoSha256": "2b41e74efcdfa10b8cbb283fd194df26c05f92bd9341b8e86038820111d4d035",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Fratura desviada no idoso"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-0dc33d7e",
+       "fratura-desviada-no-idoso-dbdc1565",
+       "fratura-desviada-no-idoso-9ceafc6a"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "62b4f1a5e2a4a36aaaea4cd7df54d454fc6b4ec6195310cee20d0a058c50e7cd"
+     }
+    ],
+    "questaoSha256": "2b41e74efcdfa10b8cbb283fd194df26c05f92bd9341b8e86038820111d4d035",
+    "comentarioSha256": "7373494db6a4c9b36d807797965cfb49e59f547f45a3dbed25661239cdcc784e"
+   }
   },
   "trauma-1548": {
    "tema": "trauma",
@@ -74729,7 +75057,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74744,7 +75072,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "01ffac5b4cf0f10a753726baf507b3623a8f5078f4dc28cec142c2f1f74544ed"
+   "questaoSha256": "01ffac5b4cf0f10a753726baf507b3623a8f5078f4dc28cec142c2f1f74544ed",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "anatomia-aplicada-a8c38522",
+       "anatomia-aplicada-666e0ba0"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "6c22430b8d126c82f9a20993ac75a58c1626e943487b757dfee266ee55f739c2"
+     }
+    ],
+    "questaoSha256": "01ffac5b4cf0f10a753726baf507b3623a8f5078f4dc28cec142c2f1f74544ed",
+    "comentarioSha256": "0408e6d3c0b6b1f31bc6bd30f35a5a76857c532493760b80fc93d4afaa0e7145"
+   }
   },
   "trauma-1549": {
    "tema": "trauma",
@@ -74753,7 +75105,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74775,7 +75127,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "94aacae1b5acfff99584d2f394ca38c8b1bae5224e2129132d52a7e05ad87390"
+   "questaoSha256": "94aacae1b5acfff99584d2f394ca38c8b1bae5224e2129132d52a7e05ad87390",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Diagnóstico por imagem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "diagnostico-por-imagem-63f9a6b1",
+       "anatomia-aplicada-a8c38522",
+       "anatomia-aplicada-666e0ba0"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "53f7f6562278c7e5eedde38a29e7ff38da3d45367075021b4808f7376d929c24"
+     }
+    ],
+    "questaoSha256": "94aacae1b5acfff99584d2f394ca38c8b1bae5224e2129132d52a7e05ad87390",
+    "comentarioSha256": "f96c13ec66904bb36a8fbf32679b1f70064aa60ff9297fc4882124dbc82a06a0"
+   }
   },
   "trauma-1550": {
    "tema": "trauma",
@@ -74784,7 +75162,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74799,7 +75177,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "15d223148c1f996af749b62a1a126b6e2ab9ca6b970ef18f0536fd7151d2a217"
+   "questaoSha256": "15d223148c1f996af749b62a1a126b6e2ab9ca6b970ef18f0536fd7151d2a217",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "anatomia-aplicada-034e2c5a",
+       "como-ler-este-capitulo-4e10b9c9"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "52a1dbb34f81d059996f937ca5016d15b79a6527fcbb4ce0e17b8418a6232fa4"
+     }
+    ],
+    "questaoSha256": "15d223148c1f996af749b62a1a126b6e2ab9ca6b970ef18f0536fd7151d2a217",
+    "comentarioSha256": "b34b0f305fbf7df5b342a36f6cf54cdd6dd4988012adce45197962023e639de8"
+   }
   },
   "trauma-1551": {
    "tema": "trauma",
@@ -74808,7 +75211,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74830,7 +75233,34 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3e097fec9f73a1c0a3076ccea0efae02adf3edac1897525eaf647f217f54824a"
+   "questaoSha256": "3e097fec9f73a1c0a3076ccea0efae02adf3edac1897525eaf647f217f54824a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada",
+       "Mecanismo, lesões associadas e quadro clínico",
+       "Quem sofre e por quê"
+      ],
+      "blocos": [
+       "anatomia-aplicada-be6f84e8",
+       "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+       "quem-sofre-e-por-que-9a823e3c"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "5e56b3010fcd975f9692073ac402d5a3719be0b44af00084179e374d33fd0855"
+     }
+    ],
+    "questaoSha256": "3e097fec9f73a1c0a3076ccea0efae02adf3edac1897525eaf647f217f54824a",
+    "comentarioSha256": "0565aecbb82ba8c66bd69e934feb5d41f0cc78f668de7a32d0f5f9407e333ae3"
+   }
   },
   "trauma-1552": {
    "tema": "trauma",
@@ -74839,7 +75269,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74861,7 +75291,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "4b728dc325d28acf4e9b810bce9d1b0fbcad8dcbb62e6146fc635e844efb9eac"
+   "questaoSha256": "4b728dc325d28acf4e9b810bce9d1b0fbcad8dcbb62e6146fc635e844efb9eac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Mecanismo, lesões associadas e quadro clínico",
+       "Quem sofre e por quê"
+      ],
+      "blocos": [
+       "mecanismo-lesoes-associadas-e-quadro-clinico-298fa5e4",
+       "quem-sofre-e-por-que-96692bd3"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "660e7ec43b330bdc4d58651c254da94bdd004cbecbc99769e4b80fef0159b642"
+     }
+    ],
+    "questaoSha256": "4b728dc325d28acf4e9b810bce9d1b0fbcad8dcbb62e6146fc635e844efb9eac",
+    "comentarioSha256": "ca65cf1dda41dc3efdca46c24d99932102f7ae0e99a5bf3e4b8f2ff6eab8c0eb"
+   }
   },
   "trauma-1553": {
    "tema": "trauma",
@@ -74870,7 +75325,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74885,7 +75340,35 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3f37558b03c8cf00fde0a547aeb19ebd5a7d9934c1e4a4977b1c106505dcbb55"
+   "questaoSha256": "3f37558b03c8cf00fde0a547aeb19ebd5a7d9934c1e4a4977b1c106505dcbb55",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações",
+       "Algoritmo dos autores",
+       "Fratura sem desvio (Garden I e II)"
+      ],
+      "blocos": [
+       "classificacoes-3fbece93",
+       "algoritmo-dos-autores-5ccd28b7",
+       "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+       "classificacoes-0fb2f52f"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "23803b8d418e6ade6b4f4a0c631da313c47b37779bf25f1cee43ead4206d20ef"
+     }
+    ],
+    "questaoSha256": "3f37558b03c8cf00fde0a547aeb19ebd5a7d9934c1e4a4977b1c106505dcbb55",
+    "comentarioSha256": "1fee4bce3f72b6a03371707c3101a219c3a4aa9ddd9da3cc1c5eca575655d2e4"
+   }
   },
   "trauma-1554": {
    "tema": "trauma",
@@ -74895,7 +75378,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74918,7 +75401,32 @@
     "rockwood10-53-colo-femur",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "a87dde2cb442a47bdd855fc469318e9015ae0d2952e5c4a1726e927aa6798809"
+   "questaoSha256": "a87dde2cb442a47bdd855fc469318e9015ae0d2952e5c4a1726e927aa6798809",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Situações especiais",
+       "Diagnóstico por imagem"
+      ],
+      "blocos": [
+       "situacoes-especiais-06f2d2fc",
+       "diagnostico-por-imagem-63f9a6b1"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "aa9336d611d9a349263f083e78f9c73a1dc2ca638c01542d1e7cdd9112777689"
+     }
+    ],
+    "questaoSha256": "a87dde2cb442a47bdd855fc469318e9015ae0d2952e5c4a1726e927aa6798809",
+    "comentarioSha256": "c1a1ac517556415232917387863ca19797142482c0109253f7d4ddd3c02425ed"
+   }
   },
   "trauma-1555": {
    "tema": "trauma",
@@ -74928,8 +75436,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo relata mais má redução do colo com haste cefalomedular única e reserva-a ao colo sem desvio ou perfeitamente reduzido, mas não compara formalmente a frequência de má redução com pseudartrose diafisária para demonstrar a expressão mais frequente do enunciado. Falta fonte do ranking de complicações entre os eventos oferecidos; uma diferença comparativa entre montagens não demonstra sozinha o ranking dentro da montagem.",
    "temComentario": true,
    "citacoes": [
     {
@@ -74951,7 +75459,8 @@
     "rockwood10-53-colo-femur",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "018b691967afec5448e63a05a19f04358dce8dce411167c70a1f2889be8cab01"
+   "questaoSha256": "018b691967afec5448e63a05a19f04358dce8dce411167c70a1f2889be8cab01",
+   "pendencia": "O resumo relata mais má redução do colo com haste cefalomedular única e reserva-a ao colo sem desvio ou perfeitamente reduzido, mas não compara formalmente a frequência de má redução com pseudartrose diafisária para demonstrar a expressão mais frequente do enunciado. Falta fonte do ranking de complicações entre os eventos oferecidos; uma diferença comparativa entre montagens não demonstra sozinha o ranking dentro da montagem."
   },
   "trauma-1556": {
    "tema": "trauma",
@@ -74960,7 +75469,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74975,7 +75484,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "88f3d142db45b06f0a76d1270484e118ec9177710a14d48e7f2ac1b7dfaadb46"
+   "questaoSha256": "88f3d142db45b06f0a76d1270484e118ec9177710a14d48e7f2ac1b7dfaadb46",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Diagnóstico por imagem"
+      ],
+      "blocos": [
+       "diagnostico-por-imagem-95ee383c",
+       "diagnostico-por-imagem-1ec618c7"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "6aae55c9ccfbbc582de07ef1a824cb8e13ba89384c68f1f4af2535fc3cb70f78"
+     }
+    ],
+    "questaoSha256": "88f3d142db45b06f0a76d1270484e118ec9177710a14d48e7f2ac1b7dfaadb46",
+    "comentarioSha256": "fd5fd6d035e9123ba185abccbb3b28cb15b8e7c25bdfc6c26130e77b1daed729"
+   }
   },
   "trauma-1557": {
    "tema": "trauma",
@@ -74984,7 +75517,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74999,7 +75532,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "a01cba0941d46139eae2f7955ab3657db4da27c7e9fea0fe7ec609239190c216"
+   "questaoSha256": "a01cba0941d46139eae2f7955ab3657db4da27c7e9fea0fe7ec609239190c216",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura sem desvio (Garden I e II)",
+       "Complicações"
+      ],
+      "blocos": [
+       "fratura-sem-desvio-garden-i-e-ii-501fb01f",
+       "complicacoes-7f006830"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "94fac82ff0ababb2fdc5e2a8328b23efa13645be071af96d37b853d8c16a3bb2"
+     }
+    ],
+    "questaoSha256": "a01cba0941d46139eae2f7955ab3657db4da27c7e9fea0fe7ec609239190c216",
+    "comentarioSha256": "333fc771d64a43c9fffb8929a74c2d87f344a003440edbb63a4a08fa3f7c8b13"
+   }
   },
   "trauma-1558": {
    "tema": "trauma",
@@ -75008,7 +75566,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75023,7 +75581,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "c04713ed85764d8827fe601811fe0c707c91e52efd4099a27251a037c1a61d83"
+   "questaoSha256": "c04713ed85764d8827fe601811fe0c707c91e52efd4099a27251a037c1a61d83",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso",
+       "Complicações"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-9ceafc6a",
+       "complicacoes-08edb04e"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "eeb69a18da58f0e5dbea5a9ab628d4cc1e10c878af7b5ae37a8620d2bd348083"
+     }
+    ],
+    "questaoSha256": "c04713ed85764d8827fe601811fe0c707c91e52efd4099a27251a037c1a61d83",
+    "comentarioSha256": "56162c371e068e16c5fa56fcd872ba8d1129d43ff0329af22b4a1f62e201164c"
+   }
   },
   "trauma-1559": {
    "tema": "trauma",
@@ -75032,7 +75615,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75047,7 +75630,34 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "277eb9cab45f6b5dc1013ca233939bf3a9dcb8e8b669df16f6e4ed98d24c4801"
+   "questaoSha256": "277eb9cab45f6b5dc1013ca233939bf3a9dcb8e8b669df16f6e4ed98d24c4801",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura sem desvio (Garden I e II)",
+       "Complicações",
+       "Classificações"
+      ],
+      "blocos": [
+       "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+       "complicacoes-7f006830",
+       "classificacoes-3fbece93"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "2701a585789af7004bad6d7e59008b084d672bc5e0867bd010c3befe1734665e"
+     }
+    ],
+    "questaoSha256": "277eb9cab45f6b5dc1013ca233939bf3a9dcb8e8b669df16f6e4ed98d24c4801",
+    "comentarioSha256": "a378aed13750030e84be4ec2a97eeac7a7d8a782ddaad7f49548210e126d60f1"
+   }
   },
   "trauma-1560": {
    "tema": "trauma",
@@ -75056,7 +75666,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75071,7 +75681,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "262b97c536ca37038e5a7adc9da29518bcf56056154999a910c9798505d718ec"
+   "questaoSha256": "262b97c536ca37038e5a7adc9da29518bcf56056154999a910c9798505d718ec",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura sem desvio (Garden I e II)"
+      ],
+      "blocos": [
+       "fratura-sem-desvio-garden-i-e-ii-4daa1011",
+       "fratura-sem-desvio-garden-i-e-ii-7e0657f6"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "a795c69e5010cd166c3dacaa69afaf5003a0dbbeaec3d8fae2836c1bf5cca9f5"
+     }
+    ],
+    "questaoSha256": "262b97c536ca37038e5a7adc9da29518bcf56056154999a910c9798505d718ec",
+    "comentarioSha256": "eabbd5b95aa291d42414572516454ca6ed7c932d1ab3a7f16c4ab7d24aa3e924"
+   }
   },
   "trauma-1561": {
    "tema": "trauma",
@@ -75080,7 +75714,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75102,7 +75736,36 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "5ec85af8affaa828c81ffa3e40c5fb339772f9f6aa66bdb71a15eb6b6de3d2c3"
+   "questaoSha256": "5ec85af8affaa828c81ffa3e40c5fb339772f9f6aa66bdb71a15eb6b6de3d2c3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso",
+       "Algoritmo dos autores"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-46218195",
+       "fratura-desviada-no-idoso-25acc61c",
+       "fratura-desviada-no-idoso-a489d930",
+       "fratura-desviada-no-idoso-9ceafc6a",
+       "algoritmo-dos-autores-3e970ed2",
+       "algoritmo-dos-autores-d8765f81"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "445599b60072176bc00514bd4d98bedda2cd5395dd16461a103b46e6be693e51"
+     }
+    ],
+    "questaoSha256": "5ec85af8affaa828c81ffa3e40c5fb339772f9f6aa66bdb71a15eb6b6de3d2c3",
+    "comentarioSha256": "7df2596aa79fb81d43f28e3107d5c41cd43a80c0479ee101581fd876d0f9c306"
+   }
   },
   "trauma-1562": {
    "tema": "trauma",
@@ -75111,7 +75774,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75126,7 +75789,30 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "ba117a055cdcfe586f23c3d59aeaf0eb7f36a34b78e9ee2f379e20ffb03737cc"
+   "questaoSha256": "ba117a055cdcfe586f23c3d59aeaf0eb7f36a34b78e9ee2f379e20ffb03737cc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-a489d930"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "1198e20434d1c7ae6eafb3226f4b33cd6c965e3bfa14d70ba4b2256e1e7be195"
+     }
+    ],
+    "questaoSha256": "ba117a055cdcfe586f23c3d59aeaf0eb7f36a34b78e9ee2f379e20ffb03737cc",
+    "comentarioSha256": "322a1bfdd85ece0b29e35d515a6861e4ac21eb5a06b99a9d8a793955057d59db"
+   }
   },
   "trauma-1563": {
    "tema": "trauma",
@@ -75135,7 +75821,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75150,7 +75836,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "97f9bc2d7a9a5022ec8080c167480bb4110de0b911dfee1d3b40118a3546152e"
+   "questaoSha256": "97f9bc2d7a9a5022ec8080c167480bb4110de0b911dfee1d3b40118a3546152e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-46ff2a73",
+       "fratura-desviada-no-idoso-1d56bc28",
+       "anatomia-aplicada-06e28c1c"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "956b0d1db37ec7ab98631ef4d05eb53195fec3a708bb529ab2db37ba9ac8666e"
+     }
+    ],
+    "questaoSha256": "97f9bc2d7a9a5022ec8080c167480bb4110de0b911dfee1d3b40118a3546152e",
+    "comentarioSha256": "ef7e90e3d4d6ac22df1f578a26a825993e5a8ccb97cbf40ec5106e5ef8ce926e"
+   }
   },
   "trauma-1564": {
    "tema": "trauma",
@@ -75159,7 +75871,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75174,7 +75886,30 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3bad323f18d742a86ce644b111a96e7d4a4aea69e8b4fc53643e669693825b6a"
+   "questaoSha256": "3bad323f18d742a86ce644b111a96e7d4a4aea69e8b4fc53643e669693825b6a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-d7b0a2eb"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ec24d41a0eba16c50a57532c61c96970ece380389997bfc75b6c497d1c3deccd"
+     }
+    ],
+    "questaoSha256": "3bad323f18d742a86ce644b111a96e7d4a4aea69e8b4fc53643e669693825b6a",
+    "comentarioSha256": "618ae116ea42a34d0b07e616e160b84c724c89f79ff85d0d1a85a02ea9d08f86"
+   }
   },
   "trauma-1565": {
    "tema": "trauma",
@@ -75183,7 +75918,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75198,7 +75933,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "98537b008698340f909df9543a6d94c793534f60cf397d88f4e06d30ff39bfbb"
+   "questaoSha256": "98537b008698340f909df9543a6d94c793534f60cf397d88f4e06d30ff39bfbb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Complicações"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-d7b0a2eb",
+       "complicacoes-7f006830"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "b8c36c9cfb4b6951d35c9e4125810957ac6ce7975472c888ecbd3e2d3b012bfa"
+     }
+    ],
+    "questaoSha256": "98537b008698340f909df9543a6d94c793534f60cf397d88f4e06d30ff39bfbb",
+    "comentarioSha256": "c46c71864ab662cd6257d3599d48217700c2a9b3031e8eda13b987ffbd1f8c60"
+   }
   },
   "trauma-1566": {
    "tema": "trauma",
@@ -75207,8 +75967,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta alvo cervicodiafisário próximo de 150 graus, porém admite tanto lâmina-placa de 130 graus quanto DHS com placa de ângulo duplo. Não define qual é mais usado. Falta fonte de frequência/preferência que discrimine C de D (ambas oferecem 150 graus com os implantes admitidos); não usar o bloco contextual da própria questão para justificar a exclusividade de C oficial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -75222,7 +75982,8 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "c269a039b8d74f04a49a1b579a6a9ec0926bfec238e65095299c286d72e09da1"
+   "questaoSha256": "c269a039b8d74f04a49a1b579a6a9ec0926bfec238e65095299c286d72e09da1",
+   "pendencia": "O resumo sustenta alvo cervicodiafisário próximo de 150 graus, porém admite tanto lâmina-placa de 130 graus quanto DHS com placa de ângulo duplo. Não define qual é mais usado. Falta fonte de frequência/preferência que discrimine C de D (ambas oferecem 150 graus com os implantes admitidos); não usar o bloco contextual da própria questão para justificar a exclusividade de C oficial."
   },
   "trauma-1567": {
    "tema": "trauma",
@@ -75231,7 +75992,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75246,7 +76007,36 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "f731e560d650b945bdc9d090038d6794041a78427342a7a580fadd0b632962a5"
+   "questaoSha256": "f731e560d650b945bdc9d090038d6794041a78427342a7a580fadd0b632962a5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Complicações",
+       "Anatomia aplicada",
+       "Fratura desviada no idoso"
+      ],
+      "blocos": [
+       "complicacoes-5c3aaed4",
+       "complicacoes-1714d31c",
+       "complicacoes-a83515f3",
+       "anatomia-aplicada-307a6627",
+       "fratura-desviada-no-idoso-1d56bc28"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "d0a09804f452f9b33a6441b8c40ff3dc16a0554bc22f3f58c71d3411dc744f08"
+     }
+    ],
+    "questaoSha256": "f731e560d650b945bdc9d090038d6794041a78427342a7a580fadd0b632962a5",
+    "comentarioSha256": "2b81107bfab8de47e95e49279a7fcac95d0278b0706cd214fab0ac570b062c2b"
+   }
   },
   "trauma-1568": {
    "tema": "trauma",
