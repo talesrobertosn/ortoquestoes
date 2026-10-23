@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1209 |
+| pendente | 1170 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 132 |
+| pendente-fonte | 141 |
 | pendente-inspecao-imagem | 158 |
-| revisada | 773 |
+| revisada | 803 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -31,9 +31,9 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 0 | 0 | 73 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 1 | 0 | 75 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 46 | 0 | 17 |
-| Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 0 | 0 | 45 |
-| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 38 | 0 | 35 |
-| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 13 | 0 | 26 |
+| Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 20 | 0 | 25 |
+| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 39 | 0 | 34 |
+| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 23 | 0 | 16 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 1 | 0 | 82 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 1 | 0 | 122 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 1 | 0 | 44 |
