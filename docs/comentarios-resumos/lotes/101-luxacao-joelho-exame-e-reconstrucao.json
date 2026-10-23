@@ -1,0 +1,400 @@
+{
+  "trauma-1030": {
+    "questaoSha256": "80632084d034f334a64efc6499c78186e7c5f01e1ce8dfafe80bbc2262ba582b",
+    "comentarioAnteriorSha256": "98287be0836e880771a4103aac0df1a0d8e5d3247c816429996a154f78efdabb",
+    "comentario": {
+      "conceito": "O teste de rotação externa tibial positivo a **30 e 90 graus** sugere lesão combinada do **LCP e do canto posterolateral**, alternativa D. Comparar os dois ângulos é o que permite ir além de identificar apenas uma frouxidão lateral.\n\nO canto posterolateral reúne colateral fibular, tendão do poplíteo e ligamento popliteofibular. Essas estruturas resistem ao varo, à rotação externa e, em associação ao LCP, à translação posterior. Por isso uma lesão combinada produz um padrão diferente da perda isolada de um restritor (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\nNo modelo descrito, cortar o canto mantendo o LCP íntegro aumenta a rotação externa mais a 30 graus que a 90. Ao lesar também o LCP, a rotação aumenta em todos os ângulos, com máximo a 90. O teste do dial compara os lados nessas posições e traduz essa relação biomecânica para o exame.\n\n**A posição de 90 graus muda a interpretação.** Um aumento predominante a 30 favorece o canto isolado; a persistência nos dois ângulos pede atenção ao LCP associado. Não é um teste específico do LCA, nem uma medida isolada de gaveta posterior. Ele examina a rotação externa sob condições definidas.\n\nReconhecer o canto junto ao LCP também importa para o tratamento: reconstruir só o cruzado posterior num joelho com insuficiência posterolateral pode deixar maior translação posterior residual. O exame não serve apenas para escolher uma letra, mas para evitar planejar uma reconstrução incompleta.",
+      "correta": "**D.** A combinação LCP com canto posterolateral explica o aumento da rotação nos dois ângulos, especialmente a persistência a 90 graus, conforme a biomecânica do resumo.",
+      "incorretas": {
+        "A": "**A.** O canto isolado tende a aumentar mais a rotação a 30 graus do que a 90 quando o LCP funciona. A positividade nos dois ângulos é a pista que exige considerar lesão combinada.",
+        "B": "**B.** O LCP isolado não explica o padrão rotatório completo descrito. Para o aumento em todos os ângulos, o modelo do capítulo inclui perda do canto posterolateral junto ao cruzado.",
+        "C": "**C.** A presença do canto é pertinente, mas trocar o LCP pelo LCA perde a explicação da rotação externa a 90 graus. Esse teste não está demonstrando, por si, insuficiência do cruzado anterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Canto posterolateral",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "canto-posterolateral-1d24e09d",
+          "canto-posterolateral-04216df0",
+          "canto-posterolateral-a148610d",
+          "cruzado-posterior-a-pedra-fundamental-ed726e98"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "dd6cb5b24b60c0a308b60d625d869eee218f0f2ff0a2d03303927c03ca541168"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1040": {
+    "questaoSha256": "03036e95952a5943a3a2762518d8d759b381a72fcf961298f2859b4d1697878a",
+    "comentarioAnteriorSha256": "e9af512d7178fb86d52c0993c901a8426ba254078615e7c60bdada9ef9c1981c",
+    "comentario": {
+      "conceito": "O tendão do poplíteo é importante para **restringir a rotação externa da tíbia**, alternativa D. A aparente contradição com sua ação muscular desaparece quando se distingue o movimento que ele produz da direção de instabilidade que ajuda a conter.\n\nO músculo poplíteo atua como rotador interno dinâmico. Seu tendão participa do canto posterolateral, junto ao colateral fibular e ao popliteofibular. O resumo identifica poplíteo e colateral fibular como restritores primários da rotação externa; acima de 60 graus, poplíteo e popliteofibular recebem maior solicitação (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\n**Produzir rotação interna e conter rotação externa são funções compatíveis.** Um sistema que puxa ou tensiona contra o deslocamento externo contribui para impedir que ele se torne excessivo. Responder “rotação interna” apenas porque esse é o sentido da ação muscular confunde função motora com direção restringida.\n\nPara o varo, o restritor estático primário é o colateral fibular, com participação secundária do restante do canto e do LCP. Para o valgo, o capítulo destaca a divisão proximal do colateral medial superficial. A pergunta não pede se o poplíteo participa de alguma estabilidade global, mas qual direção melhor caracteriza seu papel entre as opções.\n\nEssa distinção também ajuda a interpretar o teste do dial: aumento da rotação externa sugere falha dos restritores posterolaterais, e a comparação a 30 e 90 graus investiga se o LCP está associado.",
+      "correta": "**D.** A rotação tibial externa é a direção que o poplíteo ajuda a restringir como componente do canto posterolateral. Sua ação dinâmica de rotação interna não inverte essa função estabilizadora.",
+      "incorretas": {
+        "A": "**A.** O canto participa da resistência ao varo, mas o colateral fibular é o restritor estático primário destacado pelo capítulo. A função específica do poplíteo que discrimina esta questão é conter rotação externa.",
+        "B": "**B.** A principal restrição estática ao valgo pertence ao lado medial, especialmente à divisão proximal do colateral superficial. Não é a função que o resumo atribui como característica ao tendão poplíteo.",
+        "C": "**C.** Confunde movimento produzido com movimento restringido. O poplíteo roda dinamicamente a tíbia para dentro; no contexto de estabilidade perguntado, ajuda a impedir rotação excessiva para fora."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; O lado medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Canto posterolateral",
+          "O lado medial"
+        ],
+        "blocos": [
+          "canto-posterolateral-0b736828",
+          "canto-posterolateral-ed823b43",
+          "canto-posterolateral-6aabb99f",
+          "o-lado-medial-9548c808",
+          "canto-posterolateral-a148610d"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "b394b1456f59c38fc88e83314f7f2353ab72b5326b2df52966cef710015df896"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0208": {
+    "questaoSha256": "501a3f3ed39f3c11156c5cbff637c47b4946a681e932e0cde0b53d0f4d2febb6",
+    "comentarioAnteriorSha256": "d90125288e56dbebe196571d9b54333345aa0a7ab4e5e76a3ed82459c50739ab",
+    "comentario": {
+      "conceito": "O enunciado destaca três solicitações e uma palavra decisiva: estabilização **estática** contra translação posterior, varo e rotação lateral. O componente descrito é o **ligamento popliteofibular**, alternativa C.\n\nO popliteofibular continua o tendão do poplíteo até a fíbula, com configuração em Y e divisões anterior e posterior. O capítulo destaca a maior resistência da divisão posterior e sua importância na reconstrução. Sua função ligamentar oferece restrição estática às três direções citadas (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\nO canto trabalha como conjunto, não como uma lista de peças com funções totalmente exclusivas. O colateral fibular é primário para varo; poplíteo e colateral participam da restrição da rotação externa; o LCP é o principal contra translação posterior, com contribuição do canto. Essa cooperação não impede que a pergunta identifique uma estrutura pela combinação funcional.\n\n**Estático não significa imóvel em todo ângulo.** Significa que o componente ligamentar restringe passivamente a instabilidade, em contraste com a unidade musculotendínea do poplíteo, que tem ação dinâmica. A tensão de cada estrutura ainda varia com a posição do joelho.\n\nO trato iliotibial e o bíceps completam a região, mas o resumo não os identifica como o ligamento estático em Y que liga o sistema poplíteo à fíbula. O desenho anatômico e as três direções de restrição devem ser considerados juntos.",
+      "correta": "**C.** O popliteofibular é o estabilizador ligamentar estático descrito contra varo, rotação externa e translação posterior. O nome da opção corresponde à ligação do sistema poplíteo à fíbula.",
+      "incorretas": {
+        "A": "**A.** O poplíteo participa da estabilidade e da restrição da rotação externa, mas integra uma unidade musculotendínea dinâmica. A pergunta seleciona o componente ligamentar estático com a combinação funcional descrita.",
+        "B": "**B.** O trato iliotibial faz parte das estruturas laterais que completam o canto, mas não corresponde ao ligamento em Y descrito. Reconhecer que uma estrutura é lateral não basta para atribuir a ela o papel específico pedido.",
+        "D": "**D.** O colateral lateral, ou fibular, é um estabilizador estático muito importante, especialmente contra varo. O conjunto das três solicitações na formulação corresponde ao popliteofibular; não se deve transformar a primazia para varo em exclusividade de toda a função do canto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "canto-posterolateral-622a04b8",
+          "canto-posterolateral-a39e9622",
+          "canto-posterolateral-1d24e09d",
+          "canto-posterolateral-ed823b43",
+          "canto-posterolateral-6aabb99f",
+          "canto-posterolateral-04216df0"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "50a07ccfadc5377b0b8b5befdd44b1dc296a291fcbfafc1dfa3a100147aa3749"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0105": {
+    "questaoSha256": "16b96fe6659c70e96524a7431c98e2ebd1ccbad43fa0ee28a2c86dd921b6db75",
+    "comentarioAnteriorSha256": "3575377e8736da5c0557394b1149143d9ef27e2599b5f2b064335a3367c65049",
+    "comentario": {
+      "conceito": "Na luxação traumática irredutível típica, a interposição ocorre do lado **medial**: cápsula e ligamento colateral tibial, alternativa B. O colateral tibial é o colateral medial; o fibular corresponde ao lado lateral.\n\nO padrão descrito é de luxação posterolateral com valgo extremo. O côndilo femoral medial atravessa a cápsula em direção anteromedial, como um botão passando por uma casa. As partes moles mediais ficam presas na articulação e impedem que uma manobra fechada simplesmente desfaça o deslocamento (Rockwood, 10ª ed., cap. 61, “Exame e luxação irredutível”).\n\nA pista na pele é a **covinha medial**, que reflete o encarceramento. A cápsula medial é a estrutura interposta mais comum no resumo, e o colateral medial também pode se prender. Esse sinal exige redução aberta de emergência, em vez de insistência em novas manobras fechadas.\n\n**Não confunda com a lesão tipo Stener do joelho.** Nela, o colateral medial superficial se avulsiona da tíbia e a pata de ganso fica entre o ligamento e o osso, impedindo cicatrização adequada. É outra interposição, em outro plano, embora também tenha indicação de abordagem aguda.\n\nTrato iliotibial, bíceps femoral e colateral fibular pertencem à região lateral. Eles são relevantes no trauma multiligamentar, mas não formam o encarceramento medial característico da covinha. Localizar o côndilo que atravessou a cápsula esclarece quais estruturas estão impedindo a redução.",
+      "correta": "**B.** Cápsula e colateral tibial são as estruturas mediais do padrão descrito. O resumo identifica a cápsula medial como a interposição mais comum e admite encarceramento do colateral medial junto a ela.",
+      "incorretas": {
+        "A": "**A.** A pata de ganso pode se interpor na lesão tipo Stener distal do colateral medial, entre o ligamento e a tíbia. Isso impede cicatrização, mas não é o encarceramento capsular típico da luxação irredutível com covinha.",
+        "C": "**C.** O termo cápsula parece correto, mas o colateral fibular está no lado lateral. O côndilo medial atravessa as partes moles mediais; trocar tibial por fibular muda o local da interposição.",
+        "D": "**D.** Trato iliotibial e bíceps femoral pertencem ao complexo lateral. Não correspondem ao mecanismo de passagem do côndilo medial pela cápsula e retenção das partes moles mediais dentro da articulação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Exame e luxação irredutível; O lado medial; Canto posterolateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Exame e luxação irredutível",
+          "O lado medial",
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "exame-e-luxacao-irredutivel-a17fc1b9",
+          "o-lado-medial-2c6e9a4b",
+          "canto-posterolateral-a39e9622"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "ea6032e26a30175359dc2d9b4804975d78aca953cd4934fb5925ef3c768a743e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0557": {
+    "questaoSha256": "7c83132b4136ef112082fc4a2f7a5530c3c637c8538804bffdb90285962d13f6",
+    "comentarioAnteriorSha256": "9a3f7ea82a673f189fcb4c5477203a51672539b9c8a508339601fdb75cf15357",
+    "comentario": {
+      "conceito": "A associação que pode justificar adiar a reconstrução dos cruzados é o **colateral medial desinserido do fêmur**, alternativa C. Essa avulsão proximal tem boa possibilidade de cicatrizar durante a proteção inicial, permitindo reavaliar se será necessário operar também o lado medial.\n\nA recomendação geral do capítulo favorece reconstrução precoce quando as condições permitem, mas o momento depende das partes moles, da perfusão e das lesões associadas. Para os cruzados rotos com avulsão femoral do colateral medial, o resumo descreve espera de 6 a 8 semanas e posterior reconstrução dos cruzados, aproveitando a cicatrização do colateral (Rockwood, 10ª ed., cap. 61, “Quando operar”).\n\n**Lado e localização mudam a conduta.** O lado lateral não tem o mesmo comportamento de cicatrização. O canto posterolateral costuma receber reconstrução em 2 a 3 semanas, e reparos isolados de avulsões proximais do colateral fibular e poplíteo tiveram resultados ruins nas séries citadas.\n\nNa avulsão distal do colateral medial, a pata de ganso pode se interpor e impedir contato do ligamento com a tíbia: é a lesão tipo Stener. Por isso não se deve aplicar a ela, automaticamente, a espera destinada à avulsão femoral favorável à cicatrização.\n\nA indicação de tratamento tardio aqui é ligamentar e específica. Não significa adiar uma emergência vascular, síndrome compartimental, luxação irredutível ou exposição. Esses problemas têm prioridade própria e precisam ser resolvidos independentemente do plano definitivo dos cruzados.",
+      "correta": "**C.** A desinserção femoral do colateral medial é a exceção específica para esperar sua cicatrização, descrita em 6 a 8 semanas. Depois se reavalia o lado medial e se reconstrói o pivô central conforme necessário.",
+      "incorretas": {
+        "A": "**A.** A avulsão femoral do colateral lateral não compartilha a expectativa favorável da medial proximal. O resumo relata mau resultado do reparo lateral isolado e favorece reconstrução ou reforço em janela precoce.",
+        "B": "**B.** Troca a lesão por uma estrutura lateral e uma inserção que não descreve a avulsão femoral medial da exceção. O colateral lateral é fibular, com inserção na cabeça da fíbula; não há fundamento para usar esse enunciado como motivo de aguardar cicatrização medial.",
+        "D": "**D.** A lesão medial distal pode ter interposição da pata de ganso, impedindo cicatrização no lugar. É justamente um padrão que pode exigir reparo agudo, em vez de receber a espera indicada para a avulsão femoral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Tratamento; Canto posterolateral; O lado medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Tratamento",
+          "Canto posterolateral",
+          "O lado medial"
+        ],
+        "blocos": [
+          "tratamento-c73151d3",
+          "canto-posterolateral-e1623413",
+          "o-lado-medial-2c6e9a4b",
+          "tratamento-0fd132be",
+          "canto-posterolateral-474af362"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "5cf78e02d181b00205562177a16593f2fb9f63f8624e6abc62ab919d62b71ef2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1022": {
+    "questaoSha256": "b47fd9037f138399aef3927c8e14dcc788ad46a048cdad15715ef48ef0f341d0",
+    "comentarioAnteriorSha256": "65e96f792278fb3a63d89cbcd98ae338bff6d3095ad801787101eb809e89b902",
+    "comentario": {
+      "conceito": "No LCA, a banda **anteromedial fica mais tensa em flexão** e a **posterolateral em extensão**. A ordem do enunciado leva à alternativa A. O padrão se explica pela mudança de orientação do ligamento quando o joelho percorre o arco.\n\nO cruzado anterior é intra-articular e extrassinovial. Seus dois feixes recebem os nomes conforme a inserção tibial: anteromedial e posterolateral. Ao fletir o joelho, o ligamento horizontaliza, e o anteromedial assume maior tensão; acima de 45 graus, carrega mais força que o posterolateral no resumo. Em extensão, o posterolateral está tenso (Rockwood, 10ª ed., cap. 61, “Cruzado anterior”).\n\n**Os feixes não funcionam como interruptores.** Dizer que um está mais tenso numa posição não significa que o outro desapareça nem que toda estabilidade dependa de um único feixe. O LCA restringe a translação anterior da tíbia e participa do controle rotatório; o posterolateral recebe destaque no controle da rotação interna associado ao pivot shift.\n\nTambém não convém transportar os nomes do LCP. No cruzado posterior, os feixes são anterolateral e posteromedial, nomeados pela inserção femoral. Essa troca de ligamento produz combinações de palavras plausíveis, mas anatomicamente diferentes.\n\nPara resolver, mantenha a sequência pedida: primeiro anteromedial, portanto flexão; depois posterolateral, portanto extensão. Inverter a ordem ou tornar os dois simultaneamente máximos numa posição perde a alternância funcional que o capítulo descreve.",
+      "correta": "**A.** Conserva o par na ordem correta: anteromedial em flexão e posterolateral em extensão. Essa é a relação de tensão descrita para o LCA.",
+      "incorretas": {
+        "B": "**B.** Inverte o padrão dos dois feixes. A extensão tensiona o posterolateral; a flexão favorece o anteromedial. O erro está na associação de cada nome à posição, não na existência das duas bandas.",
+        "C": "**C.** A extensão é a referência do posterolateral, mas não é a posição que caracteriza maior tensão do anteromedial no resumo. A resposta elimina a diferença funcional entre eles.",
+        "D": "**D.** A flexão corresponde ao anteromedial, mas não permite dizer que ambos tenham esse mesmo padrão. O posterolateral é destacado em extensão, e essa alternância é o ponto cobrado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado anterior; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado anterior",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "cruzado-anterior-d3582e20",
+          "cruzado-anterior-f62f620b",
+          "cruzado-posterior-a-pedra-fundamental-ae278a04"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "4ec5d11a7518cddca1ddad527f1f3c28a5ee7a1a3d2d00461b28b05ad6046954"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0047": {
+    "questaoSha256": "0ab6108e9c8e4ee9c4ca96bad901beb093559697714418b34fb19463f28881a4",
+    "comentarioAnteriorSha256": "3b8b105a1274d7d85e7716be946072b591a68567f9798eea8b2f938ef7d12ff6",
+    "comentario": {
+      "conceito": "Na reconstrução do **LCP em duplo feixe**, o anterolateral é fixado ou tensionado em **flexão**, e o posteromedial em **extensão**. A resposta é A; no protocolo descrito no resumo, os ângulos são 90 graus e extensão completa, respectivamente.\n\nA figura foi conferida: mostra uma visão artroscópica com dois orifícios assinalados na área circundada. Ela acompanha a reconstrução em duplo feixe informada pelo enunciado, mas uma imagem estática desses orifícios não determina, sozinha, em que posição o joelho deve estar durante a tensão de cada enxerto. Essa informação vem da técnica descrita na fonte (Rockwood, 10ª ed., cap. 61, “Cruzado posterior: a pedra fundamental”).\n\nOs nomes dos feixes do LCP seguem a inserção femoral: anterolateral e posteromedial. O anterolateral é o maior; o posteromedial é menor e tem participação própria ao longo do movimento. Reconstruir os dois procura reproduzir componentes com orientações e solicitações diferentes, sem tratar o ligamento como uma corda única de tensão invariável.\n\n**Não transfira os nomes do LCA para o LCP.** Anteromedial e posterolateral são as bandas do cruzado anterior, nomeadas pela inserção tibial. Um par pode parecer familiar e ainda pertencer ao ligamento errado.\n\nO capítulo prefere a reconstrução em duplo feixe, mas distingue evidência de laboratório e evidência clínica ao comparar com feixe único. A pergunta não exige declarar uma técnica universalmente superior; exige conhecer os feixes e a sequência de tensão do procedimento escolhido.",
+      "correta": "**A.** Os feixes pertencem ao LCP e as posições estão corretas: anterolateral a 90 graus de flexão e posteromedial em extensão completa na técnica descrita. A imagem não substitui essa informação técnica.",
+      "incorretas": {
+        "B": "**B.** Os nomes são do LCP, mas as posições estão invertidas. Fixar o anterolateral em extensão e o posteromedial em flexão não reproduz a regra de tensão apresentada no resumo.",
+        "C": "**C.** Usa os nomes dos feixes do LCA. Mesmo que a relação flexão/extensão lembre a função desse outro ligamento, o caso pede reconstrução do cruzado posterior, cujo par é anterolateral e posteromedial.",
+        "D": "**D.** Também troca os feixes pelos do LCA e não corresponde à técnica de LCP descrita. A seleção do ligamento correto precisa preceder a associação entre posição e tensão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Cruzado anterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "Cruzado anterior"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-ae278a04",
+          "cruzado-posterior-a-pedra-fundamental-b7927840",
+          "cruzado-posterior-a-pedra-fundamental-33692257",
+          "cruzado-posterior-a-pedra-fundamental-075e0a72",
+          "cruzado-posterior-a-pedra-fundamental-34e1e8db",
+          "cruzado-anterior-d3582e20"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "99c3917455083781aea517f07c0a456cdde5031d6d8378cbf9836be9f4ad9913"
+      }
+    ],
+    "imagensConferidas": [
+      "joelho/joelho-0047-1.jpeg"
+    ]
+  },
+  "joelho-0172": {
+    "questaoSha256": "785da209819c7a99012e4b4f13442786407e67ec81f7aa093b95e75e33872d99",
+    "comentarioAnteriorSha256": "c8d2375a9103cf074a37ac1586f6477a217ade21cd155d1114f7bd7825d60bba",
+    "comentario": {
+      "conceito": "A abertura lateral **3 mm maior que o lado contralateral** no estresse em varo corresponde, no critério apresentado, a lesão **isolada do colateral lateral**, alternativa A. O resumo situa o corte em mais de 2,7 mm; acima de 4 mm, considera associação com o canto posterolateral.\n\nO varo tende a abrir o compartimento lateral. O colateral fibular é seu restritor estático primário, sobretudo de 0 a 30 graus. Se ele perde continuidade, o espaço lateral aumenta sob estresse. Quando outras estruturas posterolaterais também falham, a abertura tende a ser maior (Rockwood, 10ª ed., cap. 61, “Canto posterolateral” e “Radiografias com estresse”).\n\n**A medida é uma diferença entre lados.** O caso não diz que todo espaço lateral de 3 mm é anormal; informa 3 mm adicionais em comparação ao outro joelho. Essa padronização evita interpretar uma distância absoluta como se fosse frouxidão patológica. O resumo recomenda radioscopia perpendicular à superfície articular, com as bordas do planalto projetadas como uma linha.\n\nOs limiares orientam a interpretação do exame e não substituem avaliação completa e RM para identificar cada lesão. Nesta questão, contudo, a magnitude já foi fornecida para discriminar colateral isolado de lesão mais extensa do canto.\n\nNão se deve acrescentar ruptura do poplíteo ou do popliteofibular somente porque ambos também são estruturas laterais. O papel da medida é justamente indicar a extensão provável da insuficiência no modelo apresentado.",
+      "correta": "**A.** Três milímetros de diferença superam o limiar de 2,7 mm para o colateral fibular isolado e ficam abaixo do critério acima de 4 mm para associação com o canto. É a interpretação pedida pelo dado comparativo.",
+      "incorretas": {
+        "B": "**B.** Acrescenta lesão do tendão poplíteo sem que a magnitude fornecida sustente essa associação. A presença anatômica do tendão no canto não significa que ele esteja rompido em toda lesão do colateral.",
+        "C": "**C.** A lesão combinada do colateral com o canto corresponde a abertura maior, acima de 4 mm no resumo. O valor de 3 mm foi escolhido para indicar o padrão isolado, não perda de todas as estruturas.",
+        "D": "**D.** Inclui o popliteofibular, outro componente importante do canto, mas o dado não autoriza acrescentá-lo. A diferença descrita se enquadra no critério do colateral fibular isolado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; Canto posterolateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Imagem",
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "imagem-1f49da70",
+          "imagem-ef4a6509",
+          "canto-posterolateral-ed823b43"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "c537f55adbd9393b7529a8f162f27c5533a361139d029dc7f868518f1392ce56"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0556": {
+    "questaoSha256": "aa4ab338134e0c19706b1b64431db181b4670a2310e77dcc02da51067ab64642",
+    "comentarioAnteriorSha256": "0fb207f81d223887ad9ee72ba985f8c5fac33659d980972c7422985e516d2c81",
+    "comentario": {
+      "conceito": "O joelho deve estar em **extensão completa**, alternativa A. Uma abertura medial maior que 10 graus nessa posição sugere lesão que ultrapassa o colateral medial e envolve também os cruzados e o canto posteromedial, conforme a descrição do capítulo.\n\nO teste em valgo abre o lado medial. Em alguma flexão, ele permite avaliar com maior destaque o colateral medial; em extensão, outras estruturas capsuloligamentares também participam da contenção. Se a articulação abre de forma importante mesmo estendida, não é adequado atribuir o achado apenas a uma lesão isolada do colateral (Rockwood, 10ª ed., cap. 61, “Radiografias com estresse”).\n\nO resumo relaciona especificamente **mais de 10 graus em extensão** ao conjunto LCA, LCP, colateral medial e canto posteromedial. O canto medial contribui com a restrição ao valgo em extensão e afrouxa com a flexão. Assim, a posição do joelho integra o significado da medida, não é um detalhe intercambiável do exame.\n\n**Graus e milímetros não são a mesma informação.** A tabela de radiografias com estresse também traz diferenças lineares de abertura medial entre lados, mas a questão fornece abertura angular de 10 graus. Não se deve converter um corte no outro ou aplicar o número sem conservar a posição e a técnica em que foi descrito.\n\nO objetivo é reconhecer um padrão combinado. O exame completo e a RM ajudam a definir as estruturas e seus locais de ruptura; o achado apresentado não autoriza planejar tratamento de colateral isolado.",
+      "correta": "**A.** Em extensão completa, a grande abertura medial vence restritores além do colateral. É nessa posição que o resumo relaciona o achado ao conjunto de cruzados, colateral medial e canto posteromedial.",
+      "incorretas": {
+        "B": "**B.** Dez graus de flexão não são a posição descrita para esse critério. A pergunta exige preservar a condição de extensão completa em que a participação conjunta dos restritores dá significado ao achado.",
+        "C": "**C.** Vinte graus de flexão também mudam a condição do teste. Um valor obtido em determinado ângulo não pode ser usado como se tivesse a mesma interpretação em qualquer posição do arco.",
+        "D": "**D.** Trinta graus é a posição que ajuda a isolar o colateral medial. Abertura importante em extensão, ao contrário, indica perda de restritores adicionais e sustenta a combinação multiligamentar do enunciado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; O lado medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Imagem",
+          "O lado medial"
+        ],
+        "blocos": [
+          "imagem-bfe4fe1f",
+          "o-lado-medial-9548c808",
+          "imagem-1f49da70"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "ee383697d59892370c3c3e94ef97091e4e48ed59121883a3e0be94705e5eeab5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0222": {
+    "questaoSha256": "1484b75e185dc1ff35a37a526709f77ba0b56984ec4b78314b69f793a0dc6db7",
+    "comentarioAnteriorSha256": "e8a809fe01867abcf951b4fa4503f0e6292b1d99b57b16bdfb4ac1b23730d427",
+    "comentario": {
+      "conceito": "A rotação lateral aumentada com o joelho a **90 graus** favorece a associação do **LCP ao canto posterolateral**, alternativa B. O enunciado fornece uma assimetria de 10 graus; a explicação do padrão depende de entender como o canto e o cruzado posterior cooperam contra a rotação externa.\n\nO teste do dial compara os joelhos a 30 e 90 graus. No modelo biomecânico do resumo, o canto isolado, com LCP funcionando, aumenta mais a rotação a 30 graus que a 90. Com canto e LCP lesados, a rotação aumenta em todos os ângulos e atinge o máximo a 90 (Rockwood, 10ª ed., cap. 61, “O teste do dial”).\n\n**O exame completo compara as duas posições.** A pergunta simplifica o caso para destacar a positividade a 90 graus, mas isso não torna desnecessário testar a 30 ou examinar a translação posterior. A medida não deve ser tratada como prova absoluta e isolada de todas as rupturas anatômicas.\n\nO canto posterolateral resiste a varo, rotação externa e translação posterior. A perda conjunta com o LCP produz uma insuficiência mais ampla que a perda isolada de um componente. Essa associação precisa ser reconhecida, porque tratar apenas o cruzado posterior pode deixar maior frouxidão residual quando o canto continua insuficiente.\n\nO canto posteromedial é outra região e tem papel importante em valgo e rotação interna, mas não explica o padrão clássico de rotação externa do teste apresentado. Trocar LCP por LCA também muda o complexo que a posição de 90 graus procura investigar.",
+      "correta": "**B.** A associação de cruzado posterior e canto posterolateral é a combinação sustentada pelo padrão de rotação externa aumentada a 90 graus. A comparação a 30 graus completa o teste na prática clínica.",
+      "incorretas": {
+        "A": "**A.** Mantém o LCP, mas troca o canto por posteromedial. O padrão rotatório descrito no teste do dial se relaciona ao canto posterolateral; a função medial não é equivalente apenas por ambas as regiões serem posteriores.",
+        "C": "**C.** Troca tanto o cruzado quanto o canto. O LCA e o complexo posteromedial não são o conjunto usado pelo modelo do capítulo para explicar esse aumento de rotação externa a 90 graus.",
+        "D": "**D.** Inclui corretamente o canto posterolateral, mas substitui o LCP pelo LCA. A persistência da rotação externa em flexão maior é a pista para investigar o cruzado posterior associado, não prova de insuficiência anterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; Cruzado posterior: a pedra fundamental; O lado medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Canto posterolateral",
+          "Cruzado posterior: a pedra fundamental",
+          "O lado medial"
+        ],
+        "blocos": [
+          "canto-posterolateral-a148610d",
+          "canto-posterolateral-1d24e09d",
+          "canto-posterolateral-04216df0",
+          "cruzado-posterior-a-pedra-fundamental-ed726e98",
+          "o-lado-medial-9548c808",
+          "o-lado-medial-3dfbb38a"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "96c223556e539aec297d00e862cfd6509ce2689ece661aa06674cc0429431ef2"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
