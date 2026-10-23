@@ -1710,19 +1710,43 @@
     "formato": "corrido"
   },
   "tumores-0136": {
-    "conceito": "**Um sinal de alarme.** Avulsão **isolada do trocanter menor no adulto** é sinal clássico de **doença metastática oculta**. O trocanter menor recebe só a tração do **iliopsoas**, e depois do fechamento da fise essa força não basta para arrancá-lo de um osso normal; quando isso acontece, quase sempre há uma **lesão lítica** enfraquecendo o osso, seja metástase (mama, pulmão, rim, tireoide, próstata), mieloma ou linfoma. No adolescente atleta, com a fise aberta, a história é outra: avulsão apofisária banal, de tratamento conservador.\n\n**No adulto, investigar antes de fixar**: radiografia do fêmur inteiro, ressonância para a extensão da lesão, tomografia de tórax, abdome e pelve, cintilografia e biópsia se o primário não aparecer. O planejamento costuma envolver **haste intramedular longa**, protegendo o osso todo, e não a fixação daquele fragmento.\n\n**Na prova:** avulsão isolada do **trocanter menor no adulto** é metástase até prova em contrário.",
-    "correta": "**Trocanter menor.** No adulto, o iliopsoas sozinho não arranca um trocanter menor saudável; a avulsão isolada sugere lesão patológica.",
+    "conceito": "A avulsão que funciona como alerta para **doença metastática oculta é a do trocânter menor, especialmente quando isolada no adulto**, alternativa B. Ela é incomum e deve ser considerada patológica até prova em contrário.\n\nO trocânter menor mantém a ligação com o iliopsoas, que pode deslocá-lo para medial e cranial quando ele se solta. Mas explicar a força não resolve a causa da fratura. O achado isolado no adulto exige investigar por que aquele osso se rompeu, em vez de concluir que a contração muscular foi suficiente sobre uma estrutura normal (resumo do Rockwood, 10ª ed., cap. 54, “Anatomia e forças deformantes”).\n\nHá uma distinção importante em relação ao trocânter maior. Na fratura aparentemente isolada do maior, o capítulo recomenda TC ou RM para procurar extensão intertrocantérica; sem desvio, admite tratamento não cirúrgico. Para o menor isolado no adulto, o alerta específico é a possibilidade de lesão patológica, particularmente metástase. São problemas diagnósticos diferentes, apesar de os nomes serem parecidos.\n\nA pergunta não permite diagnosticar câncer nem afirmar que toda avulsão tenha origem tumoral. O sinal justifica investigação; sem tumor, o resumo admite tratamento não cirúrgico com cuidado na carga. No resumo da Biblioteca, leia as duas fraturas isoladas lado a lado: identificar o fragmento corretamente é o que dá sentido ao alerta.",
+    "correta": "**B: trocânter menor.** É o local cujo isolamento no adulto deve levantar suspeita de lesão patológica e doença metastática oculta.\n\nA resposta orienta investigação, sem transformar uma hipótese importante em diagnóstico automático.",
     "incorretas": {
-      "A": "**Trauma, sem essa associação.** A avulsão do trocanter maior ocorre por trauma direto ou tração dos glúteos.",
-      "C": "**Fratura traumática do ombro.** A fratura do tubérculo maior se liga à luxação anterior e ao manguito rotador.",
-      "D": "**Rara e traumática.** A avulsão do tubérculo menor vem de contração forçada do subescapular, sobretudo em adolescentes."
+      "A": "**O trocânter maior tem outro problema prioritário no trecho consultado.** É preciso confirmar se a fratura realmente está isolada ou se existe extensão entre os trocânteres.\n\nIsso não equivale ao alerta específico de metástase descrito para a avulsão isolada do menor no adulto.",
+      "C": "**Tubérculo maior não é o trocânter menor.** A opção troca a estrutura anatômica à qual o capítulo vincula esse sinal de alerta.\n\nNão se deve presumir benignidade de qualquer fratura atípica em outro local; apenas não é essa a associação específica pedida.",
+      "D": "**A palavra “menor” não basta para identificar a estrutura.** O alerta do resumo é para o trocânter menor femoral, com sua relação com o iliopsoas, não para o tubérculo menor.\n\nConservar o nome completo evita transferir uma associação clínica entre regiões anatômicas diferentes."
     },
     "referencias": [
-      "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 3.7"
+      "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Anatomia e forças deformantes."
     ],
-    "geradoEm": "2026-09-28",
     "conferido": false,
-    "formato": "corrido"
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-54-transtrocanterica",
+          "titulo": "Fratura transtrocantérica",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+          "secoes": [
+            "Anatomia e forças deformantes"
+          ],
+          "blocos": [
+            "anatomia-e-forcas-deformantes-2cbfa06e",
+            "anatomia-e-forcas-deformantes-a884c7c9",
+            "anatomia-e-forcas-deformantes-9923fb88"
+          ],
+          "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+          "trechosSha256": "aba141f0886eaafd9987036b6a9d08274d906f3282a46cca82f11b6b2952ae7c"
+        }
+      ],
+      "questaoSha256": "cb1a1f7714a3eb211d77b04a9077c8bb5069d8f2a230ea837e3c82307b2c0d6c",
+      "comentarioSha256": "0bcd8dce86846612694534745d5de255e29f620d15b9b30604a8cd63ef3128c6"
+    }
   },
   "tumores-0137": {
     "conceito": "**A classificação de Tomita** descreve a extensão do tumor vertebral em sete tipos, do centro do corpo para fora. Os **intracompartimentais**, dentro do osso, são o **tipo 1**, só no corpo vertebral, o **tipo 2**, com extensão ao pedículo, e o **tipo 3**, com extensão à lâmina. Os **extracompartimentais**, em que o tumor rompeu o osso, são o **tipo 4**, com **extensão epidural**, para dentro do canal, o **tipo 5**, com extensão **paravertebral**, para as partes moles, e o **tipo 6**, que acomete vértebras adjacentes. O **tipo 7** reúne lesões salteadas ou múltiplas.\n\n**Para que serve.** Orienta a **espondilectomia total em bloco**, a técnica de Tomita, que se aplica melhor aos tipos intermediários, com planejamento cuidadoso nos extracompartimentais; os tipos 6 e 7 tornam a intenção curativa difícil. Não confundir com o **SINS**, que avalia instabilidade, nem com o **WBB**, que mapeia a vértebra em setores e camadas.\n\n**Na prova:** Tomita extracompartimental começa no **tipo 4, epidural**; o 5 é paravertebral.",

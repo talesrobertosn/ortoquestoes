@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1170 |
+| pendente | 1130 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 141 |
+| pendente-fonte | 151 |
 | pendente-inspecao-imagem | 158 |
-| revisada | 803 |
+| revisada | 833 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -31,13 +31,13 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 0 | 0 | 73 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 1 | 0 | 75 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 46 | 0 | 17 |
-| Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 20 | 0 | 25 |
+| Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 27 | 0 | 18 |
 | Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 39 | 0 | 34 |
-| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 23 | 0 | 16 |
-| Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 1 | 0 | 82 |
-| Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 1 | 0 | 122 |
+| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 25 | 0 | 14 |
+| Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 22 | 0 | 61 |
+| Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 2 | 0 | 121 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 1 | 0 | 44 |
-| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 51 | 0 | 104 |
+| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 52 | 0 | 103 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 1 | 0 | 48 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 0 | 0 | 66 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 1 | 0 | 52 |
