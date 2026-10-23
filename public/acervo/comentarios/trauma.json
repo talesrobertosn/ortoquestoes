@@ -3533,19 +3533,45 @@
   "conferido": false
  },
  "trauma-0163": {
-  "conceito": "**A luxação do joelho.** É a perda completa do contato entre o fêmur e a tíbia, com ruptura de **pelo menos dois** dos quatro grandes ligamentos (geralmente os dois cruzados). Muitas luxações **reduzem espontaneamente** antes da chegada ao hospital, e o joelho pode parecer \"só uma entorse grave\". Por isso, todo joelho com lesão **multiligamentar** deve ser tratado como uma luxação que reduziu.\n\n**As causas.**\n\n| Energia | Exemplos | Frequência |\n|---|---|---|\n| **Alta energia** | **Acidentes automobilísticos** e de moto, atropelamentos, quedas de altura | A **principal causa** (cerca de metade ou mais) |\n| Baixa energia | **Esportes** | Menos comum |\n| Ultrabaixa energia | Tropeço em **obesos mórbidos** | Raro, mas com alto risco vascular |\n\nNos acidentes automobilísticos, o mecanismo clássico é o **trauma do painel**: o joelho fletido bate no painel, e a tíbia é empurrada para trás (luxação **posterior**). A hiperextensão causa a luxação **anterior**, a mais comum.\n\n**A urgência: a artéria poplítea.** A artéria poplítea está **presa** acima (hiato dos adutores) e abaixo (arco do sóleo). Na luxação, ela é estirada e pode romper ou sofrer lesão da íntima (com trombose tardia). A lesão ocorre em cerca de **20 a 30%** dos casos.\n- **Reduzir imediatamente**.\n- Examinar os **pulsos** e medir o **índice tornozelo-braço (ITB)**. Com ITB **menor que 0,9** ou pulsos alterados, faz-se angiotomografia ou exploração.\n- A isquemia de mais de **6 a 8 horas** leva a altas taxas de **amputação**.\n\n**O nervo fibular.** É lesado em cerca de 20 a 40% dos casos, sobretudo nas lesões **posterolaterais**. O prognóstico de recuperação é ruim.\n\n**A classificação de Schenck (anatômica).**\n- KD I: um cruzado lesado, com luxação.\n- KD II: os dois cruzados.\n- KD III: os dois cruzados e um colateral (IIIM medial; IIIL lateral).\n- KD IV: os quatro ligamentos.\n- KD V: luxação com fratura.\n\n**O tratamento.** Redução, avaliação vascular e, depois, **reconstrução ligamentar**, de preferência precoce (em um ou dois tempos). Fixador externo transarticular quando há lesão vascular reparada, instabilidade grave ou lesões de partes moles.",
-  "correta": "**Correta: D (acidente automotivo).** A principal causa da luxação do joelho é o **trauma de alta energia**, sobretudo os **acidentes automobilísticos** e de moto. As causas esportivas (baixa energia) e as entorses em obesos (ultrabaixa energia) são menos frequentes.",
+  "conceito": "O gabarito D, **acidente automotivo**, corresponde à causa mais comum no grande banco de trauma americano citado pelo capítulo. A ressalva é que “principal causa” depende da população estudada: numa clínica norueguesa mencionada na mesma fonte, o esqui predominou.\n\nA luxação exige perda importante da contenção ligamentar, mas não tem um único mecanismo. Acidentes de veículo, quedas de altura e esportes de alta velocidade compõem o grupo de alta energia. Muitos esportes e quedas da própria altura entram como baixa energia; no obeso, pode haver luxação até ao caminhar, chamada de energia ultrabaixa (Rockwood, 10ª ed., cap. 61, “Quem luxa o joelho e o que vem junto”).\n\nA hiperextensão participa de muitos episódios, com falha inicial dos cruzados e forças adicionais em varo, valgo ou rotação completando o padrão. Entretanto, a energia baixa não garante lesão leve. O capítulo destaca taxas muito altas de dano neurovascular nas luxações de energia ultrabaixa em obesos.\n\n**Frequência de causa e gravidade não são a mesma coisa.** Um mecanismo menos frequente no banco citado ainda pode ameaçar o membro. Todo joelho luxado, inclusive já reduzido, precisa de avaliação vascular e neurológica; não se deve excluir lesão porque a história foi de simples entorse.\n\nA resposta deve conservar o contexto epidemiológico: D é a preferência da banca e do banco de trauma mencionado, sem declarar que acidentes automotivos dominem necessariamente em toda clínica esportiva, país ou série.",
+  "correta": "**D: acidente automotivo.** É a causa mais comum no banco de trauma americano apresentado no resumo e corresponde ao gabarito. O dado tem contexto populacional, não é uma lei universal sobre toda amostra de luxação.",
   "incorretas": {
-   "A": "A **queda de altura** é uma causa de alta energia, mas menos frequente que os acidentes de trânsito.",
-   "B": "O **trauma esportivo** (baixa energia) causa luxações do joelho, mas com menor frequência que os acidentes automobilísticos.",
-   "C": "A luxação por **entorse em obesos** (ultrabaixa energia) é **rara**, embora tenha alto risco de lesão vascular."
+   "A": "**A.** Queda de altura é um mecanismo de alta energia reconhecido, mas não foi a causa mais frequente no banco citado. Ser capaz de produzir grande lesão não determina a posição no ranking epidemiológico.",
+   "B": "**B.** Trauma esportivo pode predominar numa população específica, como a série norueguesa de esqui. Essa possibilidade não muda a resposta do banco usado para a afirmação da questão; a diferença de casuística deve ser explícita.",
+   "C": "**C.** A luxação em obesos pode acontecer com energia ultrabaixa e ter lesão neurovascular grave. O resumo a destaca por risco e particularidades de tratamento, não como a causa mais frequente no grande banco de trauma."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Quem luxa o joelho e o que vem junto; A artéria poplítea."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Gabarito oficial D preservado. O resumo situa acidente automotivo como causa mais comum no banco de trauma americano citado, mas informa predominância de esqui numa clínica norueguesa. A frequência depende da população; não generalizar a todas as séries.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Quem luxa o joelho e o que vem junto",
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "quem-luxa-o-joelho-e-o-que-vem-junto-68758320",
+      "quem-luxa-o-joelho-e-o-que-vem-junto-95bec7df",
+      "a-arteria-poplitea-b9951f36"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "f7b2fb20411d3018651c9e95091958c7eb2ca79bb79f9e2c66d742bc84812c0e"
+    }
+   ],
+   "questaoSha256": "1a68450d1efadc6fe927fa6d0900ad3d63a41abf5421c639bf4897f2cc518af1",
+   "comentarioSha256": "1fc8114f3f9417d4080973cf901dd53a235cd5949cb1b248faa5531dbf574da3"
+  }
  },
  "trauma-0164": {
   "conceito": "**O perfil predisponente é masculino e jovem.** O capítulo descreve homens cerca de dez vezes mais frequentes que mulheres e juventude como o fator de risco mais importante. Muito músculo em um compartimento de tamanho limitado deixa menos espaço para inchaço, ajudando a explicar a vulnerabilidade.\n\nEntre as opções, “menor que 55 anos” representa o grupo mais jovem. O resumo fornece exemplos de risco particularmente alto abaixo de 35 anos na fratura diafisária da tíbia; ele não estabelece 55 como uma fronteira biológica rígida nem torna todas as pessoas abaixo dela equivalentes.\n\nOs mais velhos e as mulheres também podem ter síndrome. Casos sem fratura, por exemplo, se associam a maior idade, comorbidades e anticoagulação. Essa exceção não troca a resposta do perfil predominante, mas impede usar a alternativa escolhida para descartar pacientes fora dele.\n\n**Na Biblioteca, leia “Quem tem síndrome compartimental” e a exceção dos casos sem fratura.** A epidemiologia deve orientar vigilância, sem substituir avaliação da perfusão, exame e monitorização quando indicados.",
@@ -4593,18 +4619,44 @@
   "conferido": false
  },
  "trauma-0225": {
+  "conceito": "O **sinal arqueado** no AP indica uma **fratura-avulsão da cabeça da fíbula**, alternativa A. O fragmento pode ser pequeno, mas funciona como pista de lesão importante do canto posterolateral.\n\nA região fibular recebe estruturas laterais que ajudam a conter varo e rotação externa. O capítulo descreve o sinal como linha lucente na cabeça da fíbula, em geral por avulsão do complexo arqueado, podendo envolver também colateral fibular e bíceps. Assim, a radiografia pode mostrar o osso arrancado pela solicitação sobre as partes moles (Rockwood, 10ª ed., cap. 61, “Imagem”).\n\n**O achado não encerra a avaliação na fratura.** Ele pede busca do padrão ligamentar associado e exame neurovascular. O fibular comum passa junto ao colo da fíbula e é particularmente vulnerável nos traumas posterolaterais. Reconhecer o sinal evita tratar apenas um pequeno fragmento sem perceber a instabilidade.\n\nNão se deve confundi-lo com a fratura de Segond, que envolve avulsão anterolateral tibial ligada ao sistema anterolateral, nem com a avulsão da eminência intercondilar. O osso e a região do fragmento são informações decisivas.\n\nA pergunta não traz uma figura para interpretar; fornece o nome do sinal. A resposta é a cabeça da fíbula e sua implicação posterolateral, sem deduzir que toda luxação tenha essa fratura ou que o sinal defina sozinho todas as estruturas rotas.",
+  "correta": "**A: fratura da cabeça da fíbula.** É a avulsão que constitui o sinal arqueado no resumo. Sua importância está em marcar possível lesão extensa do canto, apesar do tamanho discreto do fragmento.",
   "incorretas": {
-   "B": "A sequela da lesão do colateral medial é a calcificação de Pellegrini-Stieda.",
-   "C": "A lesão do cruzado anterior se associa à fratura de Segond.",
-   "D": "A fratura da eminência é a avulsão tibial do cruzado anterior."
+   "B": "**B.** O colateral medial pertence ao lado oposto. O sinal descrito é fibular e lateral; sua localização não sustenta atribuí-lo a uma lesão medial isolada.",
+   "C": "**C.** O LCA pode estar associado em um trauma multiligamentar, mas não é a estrutura que define a avulsão fibular do sinal arqueado. Presença de outra lesão no mesmo joelho não muda o significado radiográfico específico.",
+   "D": "**D.** A eminência intercondilar é tibial, no compartimento central, diferente da cabeça da fíbula. A opção troca a localização óssea e a avulsão que o nome do sinal representa."
   },
-  "conceito": "Algumas **pequenas avulsões** na radiografia do joelho denunciam lesões ligamentares graves:\n\n**sinal arqueado**: avulsão da **cabeça da fíbula**, onde se inserem o complexo **arqueado**, o tendão do **bíceps** e o **colateral lateral**; indica lesão do **canto posterolateral** e tem forte associação com lesão do **cruzado posterior** e com a **luxação do joelho**;\n\n**fratura de Segond**: avulsão da borda **lateral** do planalto tibial, pelo ligamento anterolateral; indica lesão do **cruzado anterior**;\n\n**Pellegrini-Stieda**: calcificação junto ao côndilo femoral medial, sequela **crônica** da lesão do **colateral medial**;\n\n**avulsão da eminência intercondilar**: arrancamento da inserção tibial do **cruzado anterior**.\n\n**A conduta diante do sinal arqueado**: pensar em **luxação do joelho**, examinar os **vasos** (índice tornozelo-braquial) e o **nervo fibular**, que passa logo ali, e pedir **RM**.\n\n**Na prova**: o sinal arqueado indica **fratura da cabeça da fíbula**.",
-  "correta": "O sinal arqueado é a avulsão da cabeça da fíbula pelo complexo arqueado, marcador de lesão do canto posterolateral.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 60"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; O nervo fibular comum."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Imagem",
+      "O nervo fibular comum"
+     ],
+     "blocos": [
+      "imagem-0472b462",
+      "imagem-c89ac8ba",
+      "o-nervo-fibular-comum-8a85bf5b"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "7e7d7e9c488824292748441a0f883fd25bba60779fc5ad08cf5ecfda0798282b"
+    }
+   ],
+   "questaoSha256": "fc83827b76bf1ee84107e14ed1e8dcf2ab9fa3722ffe71836b171bfa0289319e",
+   "comentarioSha256": "ccadc9f48961fbf302a69eb8b3886fdf40416880973bd4ea458262c7e66fec00"
+  }
  },
  "trauma-0227": {
   "conceito": "**Rigidez descreve perda de movimento, mas não identifica sua causa.** Depois da fratura da cabeça do rádio, o resumo aponta a **contratura capsular** como causa mais frequente. A cápsula perde a capacidade de acompanhar o arco normal e passa a limitar o movimento, mesmo quando não existe uma grande barreira óssea visível.\n\nHá também causas mecânicas: fragmentos retidos, material saliente e ossificação heterotópica podem bloquear ou dificultar o movimento. Todas são possibilidades relevantes, mas sua existência não as torna mais frequentes que a contratura. A pergunta compara causas de uma sequela, não pede uma complicação que seja impossível.\n\nÉ útil distinguir esse problema da decisão inicial de uma Mason II. No trauma agudo, investiga-se se a rotação está limitada apenas por dor ou por fragmento interposto. Na recuperação, uma limitação persistente pode resultar de contratura, ainda que o impedimento inicial não fosse ósseo. O momento e o mecanismo da restrição mudam a investigação.\n\nO tratamento busca recuperar movimento sem piorar uma articulação instável. O resumo cita alongamento orientado e órteses estáticas progressivas para a rigidez estabelecida; se não forem suficientes, pode ser necessária liberação aberta ou artroscópica. Isso não equivale a recomendar alongamento forçado indiscriminado na fase aguda.\n\n**Leia “Complicações” da fratura da cabeça radial, na Biblioteca, e compare com “Exame: dor ou bloqueio?”.** As duas seções ajudam a separar dor, barreira física e contratura, evitando dar a mesma explicação a toda perda de arco.",
@@ -16136,18 +16188,41 @@
   "conferido": false
  },
  "trauma-1072": {
+  "conceito": "O sulco ou **covinha na pele medial** sugere encarceramento da **cápsula articular**, alternativa B, na luxação irredutível típica. A impressão de que o joelho “voltou” não basta se persistem esse sinal e incongruência.\n\nNa luxação posterolateral com valgo extremo, o côndilo femoral medial atravessa a cápsula em direção anteromedial, como um botão que passa pela casa e fica preso. As partes moles mediais são puxadas para a articulação. O capítulo identifica a cápsula medial como a interposição mais comum e admite aprisionamento do colateral medial (Rockwood, 10ª ed., cap. 61, “Exame e luxação irredutível”).\n\n**A covinha é um sinal mecânico.** Não é apenas uma marca na pele: indica um tecido preso que impede redução concêntrica por manobra fechada. O tratamento descrito é redução aberta de emergência, com confirmação de congruência e estabilidade por radioscopia depois da liberação.\n\nO enunciado fala em sulco “após a redução”, mas também informa irredutibilidade. A leitura coerente é persistência do bloqueio após tentativa ou redução incompleta, e não uma luxação já comprovadamente reduzida e estável. Essa precisão evita ignorar o sinal por tomar a palavra redução como garantia de alinhamento definitivo.\n\nMenisco ou fragmento osteocondral podem lembrar outras causas de bloqueio, mas não explicam o mecanismo típico da covinha descrito. O detalhe decisivo é a relação entre o côndilo medial que atravessa a cápsula e o tecido que se interpõe.",
+  "correta": "**B: cápsula articular.** A cápsula medial é a estrutura mais comumente encarcerada no padrão da covinha. O sinal deve levar a reconhecer redução incompleta/irredutível e necessidade de liberação aberta, não a insistir em manobras fechadas.",
   "incorretas": {
-   "A": "**O menisco medial pode estar lesionado.** Sua interposição pode dificultar uma redução, mas não explica tipicamente a depressão cutânea causada pelo aprisionamento capsular.",
-   "C": "**Um fragmento osteocondral pode causar bloqueio mecânico.** Isso não reproduz o dimple sign medial do côndilo atravessando a cápsula.",
-   "D": "**O semimembranáceo integra as estruturas mediais posteriores.** Ele pode sofrer lesão, porém a interposição clássica associada ao sulco é capsulorretinacular."
+   "A": "**A.** Um menisco pode participar de bloqueios articulares em outros contextos, mas não é a estrutura que o capítulo identifica como típica da covinha medial da luxação irredutível. O mecanismo descrito é capsular.",
+   "C": "**C.** Um fragmento osteocondral é uma possível peça solta, mas não produz por si a passagem do côndilo medial através da cápsula e o encarceramento característico. A pergunta seleciona esse padrão específico.",
+   "D": "**D.** O semimembranáceo se relaciona ao complexo posteromedial, mas não é a interposição mais comum descrita na luxação com covinha. Proximidade anatômica não substitui a cápsula no mecanismo informado."
   },
-  "conceito": "**O sulco conta o mecanismo.** Na luxação posterolateral do joelho, o côndilo femoral medial pode atravessar a cápsula e o retináculo medial como um botão passando por uma casa. Pele e tecidos mediais são puxados para dentro, criando a depressão visível chamada dimple sign. Se ela persiste após a tentativa de redução, deve-se suspeitar de encarceramento dessas estruturas e de redução incompleta.\n\n**Por que isso é urgente.** A luxação do joelho exige avaliação vascular e neurológica, mesmo quando parece reduzida. Forçar repetidas manobras fechadas diante de interposição pode lesar ainda mais os tecidos; muitas situações requerem exploração e redução aberta. Menisco ou fragmento osteocondral podem bloquear uma articulação, mas não são o mecanismo clássico da retração cutânea medial apresentada na questão.",
-  "correta": "**B: cápsula articular.** O côndilo medial atravessa e aprisiona a cápsula e o retináculo, produzindo o sulco medial característico da luxação posterolateral irredutível.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 60"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Exame e luxação irredutível."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Exame e luxação irredutível"
+     ],
+     "blocos": [
+      "exame-e-luxacao-irredutivel-a17fc1b9"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "a11cda963f42b6b13c0efe4fdbd02345ea1412fb7a1276f7fe3d0c9c0189a230"
+    }
+   ],
+   "questaoSha256": "00c6732dc2ca9efeca70ebee13ce7db8fe549fd4acb4988e2f73f315a420b42c",
+   "comentarioSha256": "b8059d55cead89723b6794c9347a9bf0d9b960012afb9273d3615db0f8548259"
+  }
  },
  "trauma-1073": {
   "incorretas": {
@@ -30145,18 +30220,46 @@
   "conferido": false
  },
  "trauma-1619": {
-  "conceito": "**Por que a artéria poplítea corre perigo.** A artéria poplítea passa atrás do joelho presa em dois pontos: em cima, no hiato dos adutores (a inserção tendínea do adutor magno), e embaixo, no arco do sóleo. Entre esses pontos ela quase não se move, e quando o fêmur e a tíbia se separam ela sofre tração (luxação anterior) ou compressão direta pela tíbia (luxação posterior). A lesão vai de um pequeno retalho da íntima até a secção completa. O capítulo cita frequências muito variáveis, de 5% a 50% conforme o exame e a série; historicamente 7% a 40%, e em estudos recentes 7% a 15%. No banco americano de 6.454 luxações, 15% tiveram lesão vascular e 10,8% receberam procedimento vascular. Como a luxação quase sempre chega reduzida, o joelho \"normal\" na radiografia não tranquiliza ninguém.\n\n**Sinais duros, sinais moles e o papel do ITB.** Com sinais duros de isquemia (membro frio e sem pulso) e a zona da lesão conhecida, o cirurgião vascular costuma explorar a artéria no joelho de imediato, sem exames. Com sinais moles (membro um pouco mais frio ou pálido, pulsos palpáveis mas diminuídos), é obrigatório investigar mais, porque pulso palpável não exclui lesão importante da poplítea. Por isso os autores recomendam, em todo joelho luxado documentado ou suspeito, o exame dos pulsos somado ao índice tornozelo-braquial (ITB).\n\n**Como se mede e como se lê.** O manguito vai na perna, logo acima dos maléolos, e o Doppler registra o fluxo na artéria dorsal do pé; anota-se a pressão sistólica em que o fluxo reaparece e repete-se no braço. O ITB é a pressão do tornozelo dividida pela do braço.\n\n| ITB | Interpretação | Conduta dos autores |\n|---|---|---|\n| 0,91 a 1,3 | normal | exames vasculares seriados: admissão, 4 a 6 horas, 24 e 48 horas |\n| maior que 0,9 | valor preditivo negativo de 100% para lesão arterial importante (MILLS) | mesmo seguimento seriado |\n| menor que 0,90 | anormal | angiotomografia |\n\nDuas ressalvas do capítulo: quem tem doença arterial periférica pode ter índice baixo sem lesão aguda (no idoso, comparar com o outro lado), e se o paciente já recebeu contraste em tomografias de abdome e pelve, costuma-se esperar 4 a 6 horas para a angiotomografia do membro.\n\n**Por que a angiotomografia venceu a arteriografia.** A angiotomografia injeta o contraste por uma veia do braço, expõe o paciente a um quarto da radiação da arteriografia convencional e tem sensibilidade e especificidade próximas de 100%. A arteriografia, antigo padrão-ouro, tem sensibilidade de 95%, especificidade de 93% e 5% a 7% de falso-positivos, além de ser invasiva, cara e sujeita a toxicidade renal, pseudoaneurisma e anafilaxia; hoje é usada sobretudo na sala, pelo cirurgião vascular.\n\n> **Na prova:** 0,9 é o número. Acima dele, exames seriados; abaixo, angiotomografia.\n\n**Por que esta questão foi criada.** A banca já cobrou o ITB duas vezes: na prova de Ortopedia sem ano, o valor preditivo negativo de 100% do ITB maior que 0,9, e no CET-PR, um ITB de 0,91 que era normal. Esta gêmea pergunta a outra variável do par, o corte que torna o índice anormal e o exame que vem em seguida.",
-  "correta": "**C: menor que 0,9; angiotomografia.** O capítulo define a faixa normal como 0,91 a 1,3 e afirma que um ITB menor que 0,90 exige investigação arterial adicional. A recomendação dos autores para essa situação é a angiotomografia, por ser menos invasiva que a arteriografia, ter um quarto da radiação e sensibilidade e especificidade próximas de 100%. O mesmo corte sustenta o lado tranquilizador: ITB maior que 0,9 tem valor preditivo negativo de 100% para lesão arterial importante no estudo de MILLS, e esses pacientes seguem com exames vasculares seriados até 48 horas. Lembre que esse fluxo vale para os sinais moles ou para o membro aparentemente normal; com sinais duros e zona da lesão conhecida, vai-se direto à exploração.",
+  "conceito": "Depois de reduzir um joelho luxado, pulso palpável não encerra a avaliação arterial. O capítulo recomenda medir o **ITB em todo caso**: se for **menor que 0,9**, a investigação adicional é por **angiotomografia**, alternativa C.\n\nO índice tornozelo-braquial é a pressão sistólica no tornozelo dividida pela braquial. O resumo descreve medida com manguito e Doppler. Um valor baixo sugere que a pressão distal não está sendo transmitida adequadamente, exigindo avaliar a árvore arterial lesada no trauma (Rockwood, 10ª ed., cap. 61, “A artéria poplítea”).\n\nA poplítea tem pouca liberdade para acompanhar a separação entre fêmur e tíbia porque está fixa no hiato dos adutores e no arco do sóleo. A lesão pode atingir a íntima sem interromper imediatamente todo o fluxo. Essa é uma razão para não usar apenas a presença de pulso como prova de integridade vascular.\n\n**Triagem não deve atrasar reperfusão.** Membro frio e sem pulso, com lesão localizada, tem indicação de exploração imediata no algoritmo. O par ITB baixo com angiotomografia vale para a investigação apropriada, não para obrigar uma emergência isquêmica a esperar exames.\n\nSe o ITB é maior que 0,9 e o exame é compatível, mantém-se observação vascular seriada. O resumo aponta admissão, 4 a 6 horas, 24 e 48 horas. Assim, um resultado tranquilizador muda o caminho da investigação, mas não dispensa reavaliações.\n\n**Por que esta questão foi criada.** O corte do ITB e a escolha de exame completam as questões do acervo sobre VPN e índice de 0,91. O par exercita a decisão de investigar, sem confundir triagem com emergência isquêmica.",
+  "correta": "**C: menor que 0,9; angiotomografia.** O par conserva tanto o corte quanto o exame de triagem recomendado. A interpretação integra o exame clínico e não substitui a abordagem imediata dos sinais duros de isquemia.",
   "incorretas": {
-   "A": "**O exame está certo; o corte não.** A angiotomografia é de fato o exame que os autores pedem, mas o limite de 0,8 deixaria sem investigação pacientes com índice entre 0,8 e 0,9, que o capítulo já considera anormais. Valores de 0,8 aparecem em outros contextos de doença arterial crônica, o que torna o número familiar e perigoso aqui. Na luxação do joelho, o estudo citado validou o 0,9: é acima dele que o valor preditivo negativo chega a 100%.",
-   "B": "**Os dois dados estão errados.** O corte é 0,9, e não 0,8, e o exame de triagem recomendado é a angiotomografia, não a arteriografia convencional. A arteriografia já foi o padrão-ouro e ainda tem papel intraoperatório nas mãos do cirurgião vascular, mas é invasiva, cara, tem 5% a 7% de falso-positivos e riscos como toxicidade renal, pseudoaneurisma e anafilaxia. A alternativa junta dois números e um exame verdadeiros em outro tempo ou contexto.",
-   "D": "**O corte está certo; o exame não.** ITB menor que 0,9 realmente pede investigação, mas o capítulo indica a angiotomografia, que se tornou a ferramenta de triagem desde os anos 1990. A arteriografia convencional seria a resposta de uma prova antiga, quando era o padrão-ouro. Hoje ela fica para a sala de cirurgia, como ferramenta diagnóstica do cirurgião vascular, ou quando a angiotomografia não está disponível. Note também a diferença em relação aos sinais duros: aí não se pede nem um nem outro exame, explora-se."
+   "A": "**A.** A angiotomografia está correta, mas esperar o ITB cair abaixo de 0,8 perderia o intervalo entre 0,8 e 0,9 que já exige investigação pelo capítulo. O erro está no limiar de ação.",
+   "B": "**B.** O corte de 0,8 é baixo demais para o algoritmo. Além disso, a arteriografia convencional, invasiva, não é o exame de triagem preferido apresentado para esse caminho.",
+   "D": "**D.** Acerta o valor abaixo de 0,9, mas troca a angiotomografia pela arteriografia convencional. Esta mantém papel sobretudo na sala vascular, sem ser o exame de triagem escolhido pelos autores."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: A artéria poplítea."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "a-arteria-poplitea-b9951f36",
+      "a-arteria-poplitea-a0a17d81",
+      "a-arteria-poplitea-6710572a",
+      "a-arteria-poplitea-bca7b985",
+      "a-arteria-poplitea-9f539f11",
+      "a-arteria-poplitea-0851428b"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "c3bbb10dfba7e914cadbec8f2dab6b6acbd0b4bf33c720313423cdd6ce02204f"
+    }
+   ],
+   "questaoSha256": "f6a130ba67aed237ac90346ed09c8ad0857ccde9c9be71d9bb9b8755f9959fe5",
+   "comentarioSha256": "0d7c7558f72a2e077a7e953d8da6d1a697766529d5adb41096ee876b11efe449"
+  }
  },
  "trauma-1620": {
   "conceito": "**O que é preso não foge.** Vasos e nervos que cruzam uma articulação costumam tolerar o movimento porque deslizam. O problema da luxação do joelho é que as duas estruturas posteriores mais importantes estão fixas acima e abaixo da articulação: quando a tíbia e o fêmur se separam por vários centímetros, o segmento preso não acompanha e se rompe por tração, ou é esmagado contra o osso.\n\n**A artéria poplítea.** O capítulo descreve a artéria como \"amarrada\" entre o hiato dos adutores, em cima, onde passa pela inserção tendínea do adutor magno, e o arco do sóleo, embaixo. Nesse segmento ela é quase imóvel. Na luxação anterior (o fêmur vai para trás da tíbia), a artéria é estirada: lesão por tração. Na posterior (a tíbia vai para trás), é comprimida diretamente pela tíbia: lesão contusa. A lesão vai de um retalho da íntima, que muitas vezes não reduz o fluxo, até a secção completa. Sem reperfusão em 6 a 8 horas, a amputação pode chegar a 86%.\n\n**O nervo fibular comum.** O nervo também está preso: em cima, no colo da fíbula, onde contorna a cabeça da fíbula 1,5 a 2 cm abaixo da ponta do estiloide, profundo e posterior ao tendão do bíceps; embaixo, no septo intermuscular. A lesão é quase sempre por tração ao longo de um segmento longo do nervo e se associa sobretudo à lesão do canto posterolateral, quando o joelho abre em varo. Paralisia fibular complica cerca de 25% das luxações em grandes séries; a lesão neurológica em geral chega a 40%.\n\n| Estrutura | Fixação proximal | Fixação distal | Mecanismo típico |\n|---|---|---|---|\n| Artéria poplítea | hiato dos adutores | arco do sóleo | tração (luxação anterior) ou compressão (posterior) |\n| Nervo fibular comum | colo da fíbula | septo intermuscular | tração em varo, com o canto posterolateral |\n\n> **Na prova:** artéria entre o hiato dos adutores e o sóleo; nervo entre o colo da fíbula e o septo intermuscular.\n\n**Por que esta questão foi criada.** No TARO 2025 caiu em que luxação a lesão da poplítea é mais comum (gabarito: anterior, pela tração da artéria fixa), e no TEOT 2021, que o nervo mais lesado com o canto posterolateral é o fibular comum. Esta gêmea leva os dois fatos para a raiz comum que o capítulo explica, os pontos de fixação, num par nervo com artéria.",
@@ -30173,102 +30276,294 @@
   "conferido": false
  },
  "trauma-1621": {
-  "conceito": "**Da direção para as estruturas.** A primeira classificação, de KENNEDY (1963), era pela direção da tíbia em relação ao fêmur: anterior, posterior, medial, lateral e um quinto grupo rotatório (anteromedial, anterolateral, posteromedial e posterolateral). O problema prático é que a maioria dos joelhos luxados já chega reduzida, e a direção nem é conhecida. SCHENCK propôs, então, classificar pelas estruturas anatômicas rompidas; WASCHER acrescentou a fratura periarticular, e a ressonância deixou a classificação mais precisa. Há críticas (pouco valor prognóstico, pouca validação de reprodutibilidade), mas é a classificação preferida dos autores.\n\n**Como montar o código.** O número romano conta ligamentos; as letras dizem o lado e o que veio junto.\n\n| Tipo | O que está lesado |\n|---|---|\n| KD I | luxação com o cruzado posterior funcionando; colaterais variáveis (em geral o lateral) |\n| KD II | os dois cruzados, com os dois colaterais íntegros (incomum) |\n| KD III | os dois cruzados e um colateral, medial (M) ou lateral (L) |\n| KD IV | os dois cruzados e os dois colaterais |\n| KD V | luxação com fratura periarticular |\n\nSufixos: **C** para lesão circulatória (arterial) e **N** para lesão neurológica. O exemplo do próprio capítulo é o KD III-MC: os dois cruzados, o colateral medial e a artéria poplítea.\n\n**Raciocínio passo a passo.** Primeiro, os cruzados: rompidos os dois, já se saiu do KD I. Depois, os colaterais: um rompido leva ao KD III, e a letra diz o lado (L para lateral). Por fim, os sufixos: nervo lesado acrescenta N; artéria lesada acrescentaria C. Uma lesão lateral com paralisia fibular é a combinação esperada, porque o nervo fibular comum é estirado justamente quando o canto posterolateral abre em varo.\n\n> **Na prova:** conte os ligamentos para o número, escreva o lado do colateral e termine com C para artéria e N para nervo.\n\n**Por que esta questão foi criada.** SCHENCK é o fato mais reciclado do capítulo: o TARO 2016 pediu o tipo dos dois cruzados com colaterais íntegros (KD II), o TEOT 2021 pediu a definição do KD II e o TEOT 2025 cobrou o KD IIC, com o sufixo arterial. Esta gêmea usa o tipo vizinho com a letra do lado e o outro sufixo, N, que a banca ainda não cobrou.",
-  "correta": "**C: KD III-LN.** Os dois cruzados rotos com um único colateral definem o KD III; como o colateral lesado é o lateral, acrescenta-se L; e a paralisia do nervo fibular comum acrescenta N. A combinação faz sentido clínico: o nervo fibular comum está preso no colo da fíbula e a lesão nervosa se associa sobretudo à do canto posterolateral. O raciocínio é o mesmo do exemplo do capítulo (KD III-MC), trocando o lado do colateral e o tipo de lesão associada.",
+  "conceito": "Dois cruzados rompidos, colateral lateral lesado e paralisia fibular formam **KD III-LN**, alternativa C. Cada parte da sigla acrescenta uma informação; não é preciso escolher a classe apenas pela impressão de gravidade do trauma.\n\nKD III significa lesão dos dois cruzados associada a **um** colateral. A letra L especifica o lado lateral; N indica lesão neurológica. A paralisia do fibular comum explica esse sufixo, sem autorizar acrescentar lesão arterial, que teria C (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\n**O padrão ligamentar e a complicação neurovascular são eixos distintos.** KD II teria colaterais íntegros; KD IV envolveria ambos os colaterais. A informação de que o lateral está roto não permite presumir também o medial. Da mesma forma, nervo comprometido não prova artéria lesada, embora a avaliação vascular continue obrigatória.\n\nO fibular comum passa junto ao colo da fíbula e é vulnerável à tração nas lesões posterolaterais. A função deve ser documentada antes da intervenção e acompanhada. Paralisia também exige cuidado precoce com órtese e mobilização para evitar equino, que prejudica marcha e opções reconstrutivas.\n\nA classificação serve para descrever o que foi encontrado e orientar o planejamento. Ela não substitui exame vascular, definição do local de cada ruptura ou avaliação das partes moles.\n\n**Por que esta questão foi criada.** A classificação de Schenck é cobrada pela combinação de ligamentos e sufixos. Este caso acrescenta lado lateral e lesão nervosa para distinguir III-LN de II, IV e sufixo arterial.",
+  "correta": "**C: KD III-LN.** III registra os dois cruzados com um colateral; L aponta o lateral; N, a paralisia nervosa. A sigla mantém todas as informações do caso sem inventar outras lesões.",
   "incorretas": {
-   "A": "**Sufixo certo, tipo errado.** KD II é a lesão dos dois cruzados com os dois colaterais íntegros, um padrão que o capítulo chama de incomum. No caso há um colateral rompido, o lateral, o que leva ao KD III. O N está correto, mas a alternativa perde a informação de lado e de número de ligamentos. É o tipo que caiu no TARO 2016 e no TEOT 2021, por isso atrai quem lembra só \"dois cruzados\".",
-   "B": "**Tipo e lado certos; sufixo errado.** KD III-L descreve bem os dois cruzados com o colateral lateral, mas o sufixo C significa lesão circulatória, isto é, da artéria poplítea. O enunciado descreve paralisia do nervo fibular comum, que é lesão neurológica e recebe N. A banca usou exatamente essa troca no TEOT 2025, ao misturar nas alternativas os tipos com e sem a artéria; aqui o giro é entre artéria e nervo.",
-   "D": "**Sufixo certo, ligamentos a mais.** KD IV exige os dois cruzados e os dois colaterais rompidos. O enunciado diz que só o colateral lateral se rompeu, então o medial está íntegro e o tipo é III. O KD IV é o joelho globalmente instável, em que as radiografias com estresse ajudam a medir a frouxidão de cada lado; não é o caso descrito."
+   "A": "**A.** O sufixo N corresponde ao nervo, mas KD II exige colaterais íntegros. O colateral lateral rompido faz o caso passar para III.",
+   "B": "**B.** III-L está correto para a combinação ligamentar, porém C significa lesão circulatória arterial. A complicação fornecida é neurológica, portanto precisa de N.",
+   "D": "**D.** N está correto, mas KD IV acrescentaria ruptura dos dois colaterais. O enunciado informa apenas o lateral e não permite presumir lesão medial."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck; O nervo fibular comum; A artéria poplítea."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Classificação de Schenck",
+      "O nervo fibular comum",
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "classificacao-de-schenck-6a3443c0",
+      "o-nervo-fibular-comum-8a85bf5b",
+      "o-nervo-fibular-comum-05d3e14c",
+      "a-arteria-poplitea-b9951f36"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "20aee214d0b1d6dd129b08261f749be9cc10535b8baa8c8f2d3030caac5b0ecd"
+    }
+   ],
+   "questaoSha256": "db56e5ef8f5fefc7543315ba303b08c706a565159e5286a12ee81d099dfa251d",
+   "comentarioSha256": "494a7664636b692523a96cd4e9afd1478e58a26b5465dd621d1cb0ff72f96ecb"
+  }
  },
  "trauma-1622": {
-  "conceito": "**Quem segura a rotação externa da tíbia.** O canto posterolateral resiste a três movimentos: varo, rotação externa da tíbia e translação posterior. As estruturas que mais importam são o ligamento colateral fibular, o tendão do poplíteo e o ligamento popliteofibular. Na rotação externa, o complexo do poplíteo e o colateral fibular são os restritores primários. O capítulo detalha que o colateral fibular trabalha mais no início da flexão (0 a 30 graus), enquanto o poplíteo e o popliteofibular ficam mais carregados acima de 60 graus. O cruzado posterior é restritor apenas secundário da rotação: cortado sozinho, aumenta pouco a rotação externa a 30 e a 90 graus.\n\n**A biomecânica que dá origem ao teste.** Os estudos de secção mostraram que cortar o canto posterolateral com o cruzado posterior íntegro aumenta a rotação externa mais a 30 graus do que a 90 graus. Cortar o canto e o cruzado posterior juntos aumenta a rotação externa em todos os ângulos, ao máximo a 90 graus. O motivo é que, em flexão maior, o cruzado posterior íntegro ainda controla parte da rotação; quando ele também falta, nada segura a tíbia a 90 graus.\n\n**Como se faz.** Com o paciente em decúbito, roda-se externamente as duas tíbias com o joelho a 30 e depois a 90 graus e compara-se a rotação dos pés com o eixo da coxa. O lado lesado roda mais.\n\n| Rotação externa aumentada | Interpretação |\n|---|---|\n| sobretudo a 30 graus, pouco a 90 graus | canto posterolateral isolado |\n| a 30 e a 90 graus, máxima a 90 graus | canto posterolateral e cruzado posterior |\n\n> **Na prova:** só 30 graus é o canto; 30 e 90 graus é o canto com o cruzado posterior.\n\n**Por que esta questão foi criada.** O dial já caiu duas vezes: no TARO 2011 (diferença de 10 graus a 90 graus, cruzado posterior com o canto posterolateral) e no TARO 2025 (positivo a 30 e a 90 graus, mesma resposta). Esta gêmea pergunta o outro lado do mesmo teste, com as mesmas quatro alternativas que a banca usou em 2025.",
-  "correta": "**A: isolada do canto posterolateral.** É a conclusão direta dos estudos citados no capítulo: com o cruzado posterior íntegro, a secção do canto aumenta a rotação externa mais a 30 graus do que a 90 graus. A explicação anatômica ajuda a lembrar: a 30 graus o colateral fibular e o canto são os principais restritores da rotação externa, e a 90 graus o cruzado posterior íntegro ainda dá alguma contenção secundária. Na clínica, isso aparece como diferença em relação ao lado sadio nos 30 graus que pouco aumenta nos 90. Esse achado muda a conduta: o canto posterolateral cicatriza mal, e o capítulo recomenda reconstruí-lo na maioria dos casos.",
+  "conceito": "A rotação externa aumenta principalmente a **30 graus**, com pouco aumento a 90. Esse é o padrão que favorece lesão **isolada do canto posterolateral**, alternativa A, com o LCP ainda funcionando no modelo descrito.\n\nO teste do dial compara os dois lados a 30 e 90 graus. Não basta dizer que há “rotação a mais”; é preciso observar onde ela aparece. Quando se lesiona o canto e se mantém o LCP, o aumento é maior a 30. Com canto e LCP lesados, a rotação cresce em todos os ângulos e atinge o máximo a 90 (Rockwood, 10ª ed., cap. 61, “O teste do dial”).\n\nO canto resiste a varo, rotação externa e translação posterior. O LCP contribui fortemente para a contenção posterior e modifica o comportamento do joelho em flexão. Essa cooperação explica por que acrescentar sua insuficiência altera o padrão do teste.\n\n**O resultado sugere um padrão; não substitui todo o exame.** Deve-se correlacionar com gaveta posterior, estresses, sintomas e RM. A positividade predominantemente a 30 não demonstra, por si, uma lesão do LCA.\n\nA utilidade clínica é não confundir duas lesões que podem exigir planos diferentes. Chamar todo dial positivo de lesão combinada do LCP acrescenta uma estrutura sem usar a informação de que o aumento a 90 é pequeno.\n\n**Por que esta questão foi criada.** Questões do acervo cobram o dial positivo a 90 graus ou nos dois ângulos. Este simulado examina o contraste: predomínio a 30 graus com LCP funcionando.",
+  "correta": "**A: canto posterolateral isolado.** É a interpretação do predomínio a 30 graus com pouco aumento a 90 no modelo da fonte. A preservação funcional do LCP ajuda a explicar essa distribuição.",
   "incorretas": {
-   "B": "**O cruzado posterior isolado não dá esse padrão.** Ele é o grande restritor da translação posterior, com 95% da contenção entre 30 e 90 graus, mas é apenas secundário na rotação. Seccioná-lo sozinho aumenta pouco a rotação externa a 30 e a 90 graus, sem predomínio a 30. O exame que denuncia o cruzado posterior é a gaveta posterior (ou o recuo posterior da tíbia), não o dial. A banca usou essa mesma alternativa como distrator no TARO 2025.",
-   "C": "**O dial não mede o cruzado anterior.** O cruzado anterior é o restritor primário da translação anterior e participa do controle da rotação interna (o pivot shift), não da rotação externa. A combinação do cruzado anterior com o canto posterolateral existe e é relevante (o canto vira restrição importante da translação anterior no joelho sem cruzado anterior, sobretudo em extensão), mas não é o que o teste da rotação externa a 30 e 90 graus separa. O TARO 2011 também usou o cruzado anterior como distrator.",
-   "D": "**Seria a resposta com o teste positivo também a 90 graus.** A lesão combinada do canto posterolateral com o cruzado posterior aumenta a rotação externa em todos os ângulos e ao máximo a 90 graus, que foi o gabarito do TARO 2011 e do TARO 2025. O enunciado descreve o oposto: aumento predominante a 30 graus e pouco a 90, sinal de que o cruzado posterior ainda está segurando a tíbia em flexão maior. A alternativa troca o padrão que a pergunta descreve pelo que a banca cobrou antes."
+   "B": "**B.** O LCP isolado não explica o padrão típico de insuficiência rotatória do canto apresentado. O teste pede reconhecer a região periférica responsável pelo aumento predominante a 30 graus.",
+   "C": "**C.** Inclui o canto, mas acrescenta o LCA sem que o resultado fornecido demonstre sua falha. O dial não deve ser convertido em diagnóstico específico de lesão anterior.",
+   "D": "**D.** A lesão combinada de LCP e canto aumenta a rotação nos dois ângulos, com destaque a 90. O pouco aumento nessa posição é justamente o dado contrário ao padrão combinado."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "canto-posterolateral-a148610d",
+      "canto-posterolateral-1d24e09d",
+      "canto-posterolateral-04216df0"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "93b2a2d34c57d8f1e14dc404f37bca2a57d435cd8253a96793752e6541d68055"
+    }
+   ],
+   "questaoSha256": "4f86136e0ab96d6b94619bf7c46d144e22b9d981f175707e0f521c88d60482d8",
+   "comentarioSha256": "3641096db7c60609abfa44fa8fa88b3474b36549a7782bbdf143815b9b1f7f22"
+  }
  },
  "trauma-1623": {
-  "conceito": "**O joelho que não volta.** Quase todo joelho luxado reduz com facilidade: tração no eixo e depois extensão, posição em que a articulação costuma ficar mais estável e pode ser imobilizada antes das imagens. A exceção é a luxação irredutível, descrita em detalhe nos anos 1960. Ela acontece na luxação posterolateral da tíbia com uma força em valgo extremo: o côndilo femoral medial é empurrado através da cápsula, em direção anteromedial, como um botão que atravessa a casa. As partes moles mediais ficam presas na articulação e a manobra tradicional não consegue reduzir o joelho de forma concêntrica.\n\n**O que se interpõe e como se vê.** O capítulo diz que a estrutura interposta mais comum é a cápsula medial e que o colateral medial também pode ficar encarcerado. O sinal clínico é uma depressão na pele medial, a covinha (\"dimple\"), produzida pelas partes moles puxadas para dentro da articulação. Ao incisar a pele, aparece de imediato a superfície do côndilo femoral medial atravessando o retináculo medial (figura 61-3).\n\n**Conduta.** A cirurgia é de emergência: artrotomia na linha média com retalhos amplos ou incisão medial reta, direto sobre o retináculo perfurado, às vezes as duas. Depois da redução, a radioscopia confirma que a articulação ficou reduzida e estável, porque a lesão de partes moles pode deixar o joelho grosseiramente instável e exigir fixador externo. Os autores liberam o arco de movimento cedo e planejam as reconstruções conforme o padrão de lesão. Com técnica moderna e movimento precoce os resultados podem ser bons: numa série de 21 casos crônicos, o arco médio foi de 127 graus em 6,9 anos.\n\n> **Na prova:** covinha medial é igual a luxação posterolateral irredutível, com o côndilo medial em casa de botão e a cápsula medial interposta, e cirurgia de emergência.\n\n**Por que esta questão foi criada.** A luxação irredutível caiu no TARO 2017 (cápsula e colateral tibial interpostos) e no TEOT 2023 (sulco medial por interposição da cápsula). Esta gêmea pergunta a outra variável do mesmo quadro, a direção da luxação, no formato de quatro direções que o TARO 2025 usou para a artéria poplítea.",
-  "correta": "**D: posterolateral.** O capítulo é explícito: o fenômeno ocorre com a luxação posterolateral da tíbia em presença de uma força em valgo extremo. A tíbia vai para trás e para fora, o fêmur fica relativamente anteromedial, e o côndilo femoral medial perfura a cápsula nessa direção. A cápsula medial (a estrutura interposta mais comum) e, às vezes, o colateral medial ficam encarcerados, e isso cria a covinha na pele medial. A direção explica todos os detalhes do quadro: é medial a covinha, medial o côndilo que perfura e medial o tecido interposto.",
+  "conceito": "A covinha medial da luxação irredutível ocorre tipicamente no deslocamento **posterolateral**, alternativa D. A direção é descrita pela tíbia em relação ao fêmur; a estrutura que se torna proeminente e atravessa as partes moles é o côndilo femoral medial.\n\nSob valgo extremo, o côndilo medial passa pela cápsula em direção anteromedial, como um botão através de uma casa. A cápsula e outras partes moles mediais ficam presas no espaço articular. O sinal cutâneo traduz esse encarceramento, não apenas uma deformidade superficial (Rockwood, 10ª ed., cap. 61, “Exame e luxação irredutível”).\n\nA cápsula medial é a interposição mais comum descrita; o colateral medial também pode ficar encarcerado. A barreira mecânica explica a falha da redução fechada e a indicação de redução aberta de emergência.\n\n**A tentativa de redução precisa terminar em congruência comprovada.** Não basta melhorar a aparência externa se a covinha e a incongruência persistem. O capítulo recomenda confirmação por radioscopia após liberar as estruturas e reduzir o joelho.\n\nO contraste com outros padrões também ajuda: na luxação anterior, a fonte descreve estiramento da poplítea; na posterior, compressão direta pela tíbia. Esses mecanismos vasculares não são o mesmo fenômeno da interposição medial típica da posterolateral. Todo padrão, porém, exige avaliação neurovascular.\n\n**Por que esta questão foi criada.** A covinha e a interposição medial já são temas de questões reais. O simulado liga o achado à direção da luxação e ao mecanismo de passagem do côndilo pela cápsula.",
+  "correta": "**D: posterolateral.** É a direção associada ao côndilo medial que atravessa a cápsula sob valgo extremo, produzindo a covinha e a irredutibilidade típica.",
   "incorretas": {
-   "A": "**A luxação anterior não produz a covinha medial.** Na luxação anterior o fêmur passa para trás da tíbia, em geral por hiperextensão; é o padrão em que a artéria poplítea sofre tração e que o TARO 2025 apontou como o de lesão poplítea mais comum. Não há o valgo extremo que empurra o côndilo medial através da cápsula. Uma luxação anterior pura costuma reduzir com tração e extensão.",
-   "B": "**A luxação posterior também reduz com manobra.** Na luxação posterior a tíbia vai para trás e pode comprimir a artéria poplítea diretamente (lesão contusa). Falta o componente lateral e em valgo que faz o côndilo medial atravessar a cápsula. É uma direção que confunde porque a irredutível também tem a tíbia posterior; o que define a irredutível é a combinação com o desvio lateral, isto é, posterolateral.",
-   "C": "**A direção é a do espelho.** Na luxação anteromedial a tíbia vai para frente e para dentro. O capítulo associa esse padrão a outra lesão: a cabeça curta do bíceps pode arrancar a cabeça da fíbula, achado comum nas luxações anteromediais e nas lesões graves em varo. A covinha medial exige o oposto, valgo extremo com a tíbia posterolateral. Confundir anteromedial com posterolateral é trocar o fêmur pela tíbia como referência da direção."
+   "A": "**A.** O capítulo associa a luxação anterior à tração da artéria fixa. Ela não é a direção típica do encarceramento capsular medial descrito no sinal da covinha.",
+   "B": "**B.** A luxação posterior pode comprimir diretamente a poplítea pela tíbia. A interposição da covinha pertence ao padrão posterolateral específico, não à simples categoria posterior.",
+   "C": "**C.** Troca a direção pela anteromedial. A covinha é medial porque o côndilo medial atravessa as partes moles, enquanto a direção da luxação típica da tíbia é posterolateral; os dois referenciais não devem ser confundidos."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Exame e luxação irredutível; Classificação de Schenck; A artéria poplítea."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Exame e luxação irredutível",
+      "Classificação de Schenck",
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "exame-e-luxacao-irredutivel-a17fc1b9",
+      "classificacao-de-schenck-05833290",
+      "a-arteria-poplitea-29c433db",
+      "a-arteria-poplitea-cd6b4a13"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "3fa6ff376d8e33d5ebb22b9d9b21e5adf92f96d30ab0994ced32dab25a4937ce"
+    }
+   ],
+   "questaoSha256": "b4cb7843cdd9b3a7981259d96c12bbbe13aa6ccbac4db758ec5e850039c98803",
+   "comentarioSha256": "7c34ac2eb3dd21ecea108140c7e0a9b7d4f5810174092fac833154f4a0917297"
+  }
  },
  "trauma-1624": {
-  "conceito": "**De onde vem o nome.** A lesão de STENER clássica é a do polegar: o ligamento colateral ulnar da metacarpofalângica se desinsere e a aponeurose do adutor se interpõe entre o ligamento e o osso, de modo que ele não tem como cicatrizar no lugar. O capítulo descreve o equivalente no joelho.\n\n**A anatomia que permite a lesão.** O colateral medial superficial nasce numa depressão um pouco proximal e posterior ao epicôndilo medial e tem inserção larga e longa na tíbia proximal medial, profunda à pata de ganso (sartório, grácil e semitendíneo). A pata de ganso se insere logo acima e à frente da inserção distal do colateral. Essa proximidade cria a possibilidade de interposição: quando um valgo intenso arranca o colateral superficial da tíbia, as fibras sobem e se viram por cima dos tendões do grácil e do semitendíneo, e a pata de ganso fica entre o ligamento e o osso.\n\n**Consequência e conduta.** Com os tendões no meio, há muito pouca chance de o colateral cicatrizar no osso. Por isso a maioria dos cirurgiões opera, reinserindo o ligamento na tíbia, por baixo da pata de ganso. O consenso internacional de 2021 sobre o canto posteromedial (35 especialistas, método Delphi com 75% de concordância) colocou as lesões tipo STENER, junto com as avulsões ósseas tibiais e femorais, entre as indicações de cirurgia aguda; a ruptura parcial isolada do colateral superficial, ao contrário, vai para órtese articulada destravada. Na técnica dos autores, a avulsão distal é abordada por incisão medial de 4 a 6 cm na borda posteromedial da tíbia, os tendões da pata são afastados e o colateral é fixado com âncoras em ponte de suturas, tensionado em rotação neutra e 30 graus de flexão. Os cruzados e o lado lateral ficam para um segundo tempo.\n\n**A \"lesão de STENER definitiva\".** Em luxações de alta energia, o colateral distal pode ficar preso embaixo de uma fratura da borda do planalto medial. Solta-se o ligamento do fragmento, repara-se na inserção e fixa-se a fratura.\n\n| Situação medial | Conduta (capítulo e consenso de 2021) |\n|---|---|\n| ruptura parcial isolada do colateral superficial | órtese articulada destravada |\n| lesão tipo STENER, avulsão óssea tibial ou femoral | cirurgia aguda |\n| colateral medial avulsionado do fêmur com os dois cruzados | pode-se esperar 6 a 8 semanas, porque cicatriza |\n\n> **Na prova:** STENER do joelho é o colateral medial arrancado da tíbia por cima da pata de ganso, e se opera cedo.\n\n**Por que esta questão foi criada.** A banca já cobrou a interposição medial na luxação irredutível (TARO 2017 e TEOT 2023) e a avulsão femoral do colateral medial como indicação de reconstrução tardia (SBOT-SP). A lesão tipo STENER fecha o trio do lado medial, tem epônimo em caixa alta e um par estrutura com conduta típico de prova, mas ainda não caiu.",
-  "correta": "**A: pata de ganso; reparo agudo.** O capítulo descreve a lesão tipo STENER do joelho como o colateral medial superficial arrancado da inserção distal que se vira por cima dos tendões do grácil e do semitendíneo, com a pata de ganso interposta entre o ligamento e a tíbia. Como o ligamento fica sobre os tendões, há muito pouca chance de cicatrizar no osso; a conduta é o reparo agudo do colateral distal, deixando o pivô central e o lado lateral para um segundo tempo. O consenso de 2021 confirma a cirurgia aguda para as lesões tipo STENER.",
+  "conceito": "A lesão tipo Stener do joelho ocorre quando a **pata de ganso se interpõe entre o colateral medial superficial e a tíbia**. A conduta é **reparo agudo**, alternativa A: o obstáculo impede que o ligamento volte a cicatrizar diretamente no osso.\n\nO colateral superficial tem inserção longa na tíbia medial, profunda aos tendões da pata de ganso. Na avulsão distal, ele pode ficar deslocado por cima desse plano tendíneo. Mesmo protegendo o joelho, ligamento e osso permanecem separados pela interposição (Rockwood, 10ª ed., cap. 61, “O lado medial”).\n\n**O problema não é apenas frouxidão.** Uma ruptura parcial isolada pode receber órtese articulada e cicatrizar em posição adequada. Na lesão tipo Stener, há um impedimento anatômico à cicatrização no lugar; por isso o consenso de 2021 citado no resumo inclui essas lesões entre as indicações de cirurgia aguda.\n\nNão confunda essa interposição com a da luxação irredutível. Na covinha medial, o côndilo atravessa a cápsula e as partes moles ficam presas na articulação. Na Stener do joelho, a pata de ganso separa o ligamento avulsionado de sua inserção tibial.\n\nDistinguir os dois mecanismos evita aplicar uma regra genérica de “lesão medial cicatriza sozinha”. O local da avulsão e a posição dos tecidos mudam a conduta.\n\n**Por que esta questão foi criada.** Interposição medial pode significar problemas diferentes. O simulado separa a lesão tipo Stener, com pata de ganso e reparo agudo, da covinha por encarceramento capsular.",
+  "correta": "**A: pata de ganso; reparo agudo.** O par identifica tanto o obstáculo anatômico quanto sua consequência terapêutica. É necessário liberar a interposição e restabelecer contato adequado da estrutura avulsionada com a tíbia.",
   "incorretas": {
-   "B": "**A interposição está certa; a conduta não.** A órtese articulada destravada é o tratamento que o consenso de 2021 indica para a ruptura parcial isolada do colateral medial superficial, uma lesão que cicatriza no lugar. Na lesão tipo STENER o ligamento está do lado errado da pata de ganso e não tem como encostar no osso; imobilizar ou proteger o movimento não resolve a interposição. É a mesma lógica do polegar, em que a lesão de STENER também é cirúrgica.",
-   "C": "**A conduta está certa; a estrutura não.** A cápsula medial é a estrutura interposta mais comum em outra lesão medial, a luxação irredutível, em que o côndilo femoral medial atravessa a cápsula como um botão e a covinha aparece na pele. Na lesão tipo STENER o tecido interposto é a pata de ganso, entre o colateral superficial e a tíbia. As duas lesões são cirúrgicas e de urgência, e é por isso que a troca é tentadora.",
-   "D": "**Os dois dados pertencem a outras lesões.** A cápsula medial é a estrutura interposta da luxação irredutível, e a órtese articulada é o tratamento da ruptura parcial isolada do colateral superficial. Nenhuma das duas descreve a lesão tipo STENER, em que a pata de ganso fica entre o ligamento e o osso e a cirurgia é aguda. A alternativa combina dois fatos verdadeiros do lado medial do joelho, mas fora do lugar."
+   "B": "**B.** Reconhece a pata de ganso, mas escolhe apenas órtese. A proteção não retira o tecido interposto nem resolve o impedimento anatômico que caracteriza essa lesão.",
+   "C": "**C.** O reparo agudo é pertinente, mas a cápsula medial corresponde à interposição da luxação irredutível, não à separação entre colateral superficial e tíbia pela pata de ganso.",
+   "D": "**D.** Erra a estrutura e a conduta. Troca a interposição tendínea por cápsula e oferece órtese para uma lesão cujo bloqueio de cicatrização justifica abordagem aguda no consenso citado."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O lado medial; Exame e luxação irredutível."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "O lado medial",
+      "Exame e luxação irredutível"
+     ],
+     "blocos": [
+      "o-lado-medial-2c6e9a4b",
+      "o-lado-medial-5c9f047e",
+      "o-lado-medial-0e9278bd",
+      "o-lado-medial-f9dd2cc7",
+      "exame-e-luxacao-irredutivel-a17fc1b9"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "22b9dfac52411439f9fd954ad967350f63a2d2e6016705e4c937fe89fad5874b"
+    }
+   ],
+   "questaoSha256": "b4cee125344062207a02a78f74e56538944e70dafca43296eb5f1a8eecb13806",
+   "comentarioSha256": "8735897a78bbcfa501bb5407e311d54c17a37bbd308d58977d90628caeef5666"
+  }
  },
  "trauma-1625": {
-  "conceito": "**Os tempos da cirurgia na luxação do joelho.** O capítulo divide a cirurgia em emergente (lesão vascular, síndrome compartimental, luxação irredutível, luxação exposta) e não emergente, esta subdividida em precoce (até 4 semanas) e tardia (mais de 4 semanas). Sem urgência, a recomendação é operar cedo: dá tempo de acompanhar o vaso, o edema baixar, fazer a ressonância, planejar e montar a equipe. A janela preferida do autor sênior é de 14 a 28 dias, quando a cápsula já cicatrizou o bastante para a artroscopia não extravasar líquido para os compartimentos da perna. A metanálise de 2022 (14 estudos, 1.172 pacientes) mostrou menos lesão de menisco e cartilagem na reconstrução precoce, sem diferença de artrofibrose.\n\n**Quando vale a pena esperar.** A cirurgia é adiada além de 4 semanas por pele ou edema ruins, reparo vascular ou lesões associadas que impedem a reconstrução precoce. E há uma indicação anatômica específica: ruptura dos dois cruzados com o colateral medial avulsionado do fêmur (figura 61-22). Essa lesão tem altíssima chance de cicatrizar em 6 a 8 semanas; depois disso, o cirurgião reconstrói só os cruzados e evita a cirurgia do colateral medial.\n\n**Por que o fêmur e não a tíbia.** O capítulo atribui à avulsão femoral do colateral medial uma chance muito alta de cicatrizar. A desinserção distal é diferente: o colateral superficial se insere profundo à pata de ganso, e quando é arrancado da tíbia pode se virar por cima dos tendões (lesão tipo STENER), sem contato com o osso. Por isso o capítulo diz que a lesão do colateral na tíbia também pode se beneficiar da cirurgia, e o consenso de 2021 indica cirurgia aguda para as lesões tipo STENER e para as avulsões ósseas.\n\n| Lesão medial com os dois cruzados | Conduta |\n|---|---|\n| colateral medial avulsionado do fêmur | esperar 6 a 8 semanas; depois reconstruir só os cruzados |\n| colateral medial arrancado da tíbia com pata de ganso interposta | reparo agudo |\n| lesão do canto posteromedial | em geral cirúrgica |\n\n> **Na prova:** colateral medial solto no fêmur cicatriza em 6 a 8 semanas e justifica adiar; solto na tíbia, desconfie de STENER.\n\n**Por que esta questão foi criada.** O SBOT-SP perguntou qual lesão associada aos dois cruzados indica a reconstrução tardia, trocando o lado (medial ou lateral) e o local da avulsão (fêmur ou tíbia); o gabarito foi o colateral medial desinserido no fêmur. Esta gêmea mantém o local e acrescenta o prazo que o capítulo dá para a cicatrização, num par 2 por 2.",
-  "correta": "**B: avulsão femoral; 6 a 8 semanas.** O capítulo cita como possível indicação de cirurgia tardia a combinação de ruptura do cruzado anterior, do cruzado posterior e do colateral medial avulsionado da sua inserção femoral. Essa lesão do colateral tem chance muito alta de cicatrizar em 6 a 8 semanas; nesse momento o cirurgião reconstrói os dois cruzados e evita totalmente a cirurgia do colateral medial. É uma exceção à regra geral da reconstrução precoce, justificada pela biologia favorável dessa lesão específica.",
+  "conceito": "A exceção descrita é a **avulsão femoral do colateral medial**, com cicatrização esperada em **6 a 8 semanas**, alternativa B. Espera-se a recuperação desse componente antes de definir a necessidade de reconstruí-lo junto aos cruzados.\n\nO local da lesão importa porque uma avulsão proximal favorável à cicatrização não se comporta como toda lesão medial. O capítulo recomenda reconstrução precoce na maioria dos casos elegíveis, mas destaca os cruzados rotos com colateral medial avulsionado do fêmur como indicação específica de tratamento tardio (Rockwood, 10ª ed., cap. 61, “Quando operar”).\n\nNa extremidade tibial, a pata de ganso pode ficar entre o ligamento e o osso, criando a lesão tipo Stener. Nesse cenário, esperar não remove o obstáculo à cicatrização; a fonte indica abordagem aguda. O contraste entre proximal e distal explica por que não basta marcar “colateral medial”.\n\n**O prazo depende da estratégia.** Duas a três semanas aparecem no consenso do canto posterolateral como janela de reconstrução. Não são o prazo informado para a cicatrização da avulsão femoral medial que permite adiar os cruzados. Números próximos em capítulos de reconstrução não devem migrar de uma indicação para outra.\n\nA decisão também considera pele, edema e lesões associadas. Aguardar o colateral não significa postergar emergência vascular ou compartimental; é uma escolha do tratamento ligamentar definitivo após resolver as prioridades do membro.\n\n**Por que esta questão foi criada.** A avulsão femoral medial aparece como exceção de tratamento tardio em questão do acervo. O simulado acrescenta seu prazo de cicatrização e contrasta com a avulsão tibial.",
+  "correta": "**B: avulsão femoral; 6 a 8 semanas.** Reúne o local de boa possibilidade de cicatrização e o prazo descrito. Depois se reavalia o lado medial e se planeja a reconstrução central necessária.",
   "incorretas": {
-   "A": "**O local está certo; o prazo não.** Duas a três semanas é o prazo que o consenso de 2019 dá para reconstruir o canto posterolateral agudo, e está dentro da janela precoce de 14 a 28 dias que o autor sênior prefere para a reconstrução em geral. A cicatrização do colateral medial avulsionado do fêmur leva mais tempo, 6 a 8 semanas, e é justamente essa espera que define a estratégia tardia. Operar com 2 a 3 semanas seria abrir mão da vantagem de deixar o colateral cicatrizar sozinho.",
-   "C": "**Os dois dados estão trocados.** A avulsão tibial do colateral medial não é a lesão que se deixa cicatrizar: pode haver interposição da pata de ganso (lesão tipo STENER), e o capítulo diz que as lesões do colateral na tíbia podem se beneficiar da cirurgia. O prazo de 2 a 3 semanas pertence a outra decisão, a reconstrução do canto posterolateral. A alternativa mistura a desinserção do lado errado com o tempo de outro ligamento.",
-   "D": "**O prazo está certo; o local não.** Seis a oito semanas é o tempo de cicatrização que o capítulo atribui ao colateral medial avulsionado do fêmur. Na tíbia, o colateral superficial passa profundo à pata de ganso e pode se interpor por cima dos tendões, situação em que não cicatriza no osso e o reparo agudo é indicado. Foi esse o distrator do SBOT-SP: o colateral medial desinserido na tíbia."
+   "A": "**A.** O local femoral está correto, mas o intervalo de 2 a 3 semanas não é o prazo de cicatrização descrito para justificar essa espera. É uma janela citada para outra estratégia, especialmente o canto posterolateral.",
+   "C": "**C.** A avulsão tibial pode apresentar interposição da pata de ganso e exigir reparo agudo. Além de trocar o local, a opção usa um prazo que não corresponde à exceção perguntada.",
+   "D": "**D.** Acerta o prazo de 6 a 8 semanas, mas o transfere para a inserção tibial. O detalhe anatômico é decisivo: a exceção favorável à espera é femoral, não toda avulsão do colateral medial."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Tratamento; O lado medial; Canto posterolateral."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Tratamento",
+      "O lado medial",
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "tratamento-c73151d3",
+      "o-lado-medial-2c6e9a4b",
+      "canto-posterolateral-e1623413",
+      "tratamento-0fd132be"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "f4048d9e9a908b44c21f5cc51b8bda4ff63623b868be70366650b7920e87ac35"
+    }
+   ],
+   "questaoSha256": "f48e7d26d09c1d7f17b2efacadffdac47d60c203605dad4a17d2d435ed8198fb",
+   "comentarioSha256": "8f5230fc9d9db98e0e2d3b21b0b0ec825160054081423232d53683618715479e"
+  }
  },
  "trauma-1626": {
-  "conceito": "**Por que o lado lateral é diferente.** O canto posterolateral raramente se lesa sozinho (menos de 2% das lesões agudas do joelho), mas aparece em 43% a 80% das lesões dos dois cruzados. As estruturas mais importantes, para entender e para reconstruir, são o colateral fibular (colateral lateral), o tendão do poplíteo e o ligamento popliteofibular; juntas, resistem ao varo, à rotação externa da tíbia e à translação posterior. A lesão pode ser proximal, distal ou no meio do ligamento: numa série de 48 lesões grau III, 40% eram avulsões femorais do poplíteo, do colateral fibular ou dos dois.\n\n**Reparar falha demais.** O capítulo é taxativo. Num estudo prospectivo de 57 pacientes, a falha foi de 37% no reparo contra 9% na reconstrução; em outro, de 28 pacientes, 40% contra 6%. Os dois resultados são parecidos, e a maioria dos autores concorda que o reparo isolado das estruturas laterais e do canto na fase aguda não é recomendado. Um estudo do grupo MOON de 2019 (34 pacientes, 6 anos) mostrou resultados relatados pelo paciente equivalentes, mas nenhum desses estudos é randomizado. A conclusão atual é reconstruir na maioria, deixando o reparo para avulsões ósseas que aceitem fixação. Nas rupturas no meio do ligamento, os autores reparam o tecido quando possível, mas sempre acrescentam uma reconstrução.\n\n**O consenso de 2019.** Vinte e sete especialistas, pelo método Delphi, concluíram que:\n\n- a lesão aguda do canto deve ser reconstruída em 2 a 3 semanas;\n- só as estruturas rotas são reconstruídas; se todas estiverem, faz-se a reconstrução anatômica completa;\n- o reparo de estruturas isoladas cabe quando há avulsão óssea reparável;\n- procedimentos híbridos (reconstruir as principais e reparar as secundárias, como bíceps, cápsula lateral e trato iliotibial) dão resultados satisfatórios.\n\nReconstruir cedo também foi melhor que tarde: 72% contra 44% de resultados bons ou excelentes, com \"tardio\" definido como mais de 3 semanas.\n\n> **Na prova:** canto posterolateral se reconstrói, e cedo, em 2 a 3 semanas; o reparo isolado fica para a avulsão óssea.\n\n**Por que esta questão foi criada.** O TARO 2009 pediu as estruturas mais importantes a reconstruir no canto posterolateral (o capítulo dá exatamente o trio colateral fibular, poplíteo e popliteofibular), e o SBOT-SP usou o colateral lateral desinserido como distrator da reconstrução tardia, porque o lado lateral não espera. Esta gêmea pergunta a decisão e o tempo, os dois números mais repetidos da seção.",
-  "correta": "**C: reconstrução; 2 a 3 semanas.** Nas rupturas no meio do ligamento, o reparo isolado do canto posterolateral falhou em 37% e 40% nos dois estudos citados, contra 9% e 6% da reconstrução. O consenso Delphi de 2019 recomenda reconstruir a lesão aguda em 2 a 3 semanas, refazendo apenas as estruturas rotas, e os resultados da reconstrução precoce foram melhores que os da tardia (72% contra 44% bons ou excelentes). Os autores, além disso, usam um enxerto separado para o poplíteo e decidem se ele precisa ser reconstruído pelo teste do dial e pela ressonância.",
+  "conceito": "Uma ruptura no meio das estruturas do canto posterolateral pede, em geral, **reconstrução em 2 a 3 semanas**, alternativa C, conforme o consenso de 2019 citado. O ponto é obter estabilidade sem depender apenas de um reparo isolado de tecido rompido.\n\nO canto controla varo, rotação externa e parte da translação posterior. Uma sutura que afrouxa deixa essas solicitações atuarem sobre o joelho e sobre os demais enxertos. O resumo apresenta maiores taxas de falha do reparo isolado em duas séries: 37% contra 9% e 40% contra 6%, comparando reparo e reconstrução (Rockwood, 10ª ed., cap. 61, “Reparar ou reconstruir”, no canto posterolateral).\n\n**Esses estudos não são ensaios definitivos.** O capítulo informa ausência de randomização e cita resultado relatado pelo paciente semelhante em outro estudo. Ainda assim, a síntese favorece reconstrução na maioria, reservando reparo isolado sobretudo a avulsões ósseas fixáveis.\n\nO consenso recomenda reconstruir apenas as estruturas rotas; se todas falharam, faz-se reconstrução anatômica completa. Técnicas híbridas podem combinar reconstrução das principais com reparo das secundárias. Portanto, “reconstrução” não significa proibir qualquer sutura, e sim não confiar no reparo isolado como estratégia principal para essa ruptura intrassubstancial.\n\nA janela de 6 a 8 semanas pertence a outra situação do capítulo: cicatrização de avulsão femoral do colateral medial. O lado lateral e o padrão no meio do ligamento não recebem automaticamente a mesma espera.\n\n**Por que esta questão foi criada.** A anatomia do canto é cobrada em provas, mas compreender o conjunto exige saber quando reconstruí-lo. O par conduta e tempo testa a recomendação do consenso para a lesão aguda intrassubstancial.",
+  "correta": "**C: reconstrução; 2 a 3 semanas.** É a combinação de estratégia e janela do consenso. Reparos complementares podem existir, mas não substituem a reconstrução como base para a ruptura intrassubstancial descrita.",
   "incorretas": {
-   "A": "**O prazo está certo; a conduta não.** Duas a três semanas é a janela do consenso, mas para reconstruir. O reparo primário isolado das estruturas laterais na fase aguda tem falha alta e não é recomendado; ele fica para as avulsões ósseas que aceitam fixação, como a avulsão da cabeça da fíbula fixada com parafuso longo de 4,5 mm e arruela. Mesmo nas avulsões proximais do colateral fibular e do poplíteo, os autores relatam resultados muito ruins com reparo isolado e acrescentam uma reconstrução.",
-   "B": "**Nem a conduta nem o prazo.** O reparo isolado falha demais no lado lateral, e esperar 6 a 8 semanas é a estratégia de outro ligamento: o colateral medial avulsionado do fêmur, que cicatriza sozinho nesse prazo. O lado lateral não tem essa biologia favorável, e a reconstrução depois de 3 semanas teve resultados piores. A alternativa transporta para o canto posterolateral a lógica do lado medial.",
-   "D": "**A conduta está certa; o prazo não.** A reconstrução é de fato a escolha, mas o consenso recomenda fazê-la em 2 a 3 semanas, e o estudo citado mostrou 72% de resultados bons ou excelentes na reconstrução precoce contra 44% na tardia (mais de 3 semanas). Seis a oito semanas é o prazo de cicatrização do colateral medial avulsionado do fêmur; no canto posterolateral, esperar só piora o resultado."
+   "A": "**A.** O prazo coincide com o consenso, mas reparo primário isolado não é a estratégia preferida para a ruptura no meio das estruturas. O resumo destaca sua maior falha e favorece reconstrução ou associação de técnicas.",
+   "B": "**B.** Associa reparo isolado à espera de 6 a 8 semanas, contrariando tanto a estratégia quanto a janela citada para o canto agudo. O prazo medial não deve ser transferido ao lado lateral.",
+   "D": "**D.** Reconstrução é a estratégia correta, mas 6 a 8 semanas não é a recomendação do consenso de 2019 para essa lesão aguda. A janela apresentada é de 2 a 3 semanas, conforme as condições clínicas."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; Tratamento."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Canto posterolateral",
+      "Tratamento"
+     ],
+     "blocos": [
+      "canto-posterolateral-5cf8f764",
+      "canto-posterolateral-e1623413",
+      "tratamento-c73151d3"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "712ed0d001aea3005f4156bfead49641a6e23acafe7c4def85914f5974e97863"
+    }
+   ],
+   "questaoSha256": "300a2c2df04838fa8b2a4c8b4a31289def23ffec45e288ca411a6cd86fb3a647",
+   "comentarioSha256": "8912424b48e4213da69d50501cf9e2a7528a8c6124d2bad0c14ecf3bdbc3d3bf"
+  }
  },
  "trauma-1627": {
-  "conceito": "**A pedra fundamental.** O cruzado posterior é o maior ligamento intra-articular do joelho: cerca de 38 mm de comprimento, 13 mm de diâmetro no meio e área de secção 120% a 150% maior que a do cruzado anterior. Dá a maior parte da restrição à translação posterior em todos os ângulos e 95% dela entre 30 e 90 graus, e é restritor secundário do varo, do valgo e das rotações. O capítulo o chama de \"pedra fundamental\" (cornerstone) do joelho e diz que ele deve ser o primeiro a ser reconstruído e tensionado na maioria das situações. Uma forma de entender a regra (inferência a partir da função descrita no capítulo): o cruzado posterior é o que recoloca a tíbia na posição anteroposterior, e os cantos são tensionados com a tíbia já no lugar.\n\n**A sequência dos autores.**\n\n1. Cruzado posterior (duplo feixe com aloenxerto de tendão calcâneo): feixe anterolateral tensionado a 90 graus de flexão, posteromedial em extensão completa.\n2. Os cantos, começando pelo mais instável quando os dois estão rotos (colateral medial superficial e canto posterolateral a 20 a 30 graus de flexão; oblíquo posterior em extensão completa).\n3. Retensionamento do cruzado posterior depois dos cantos.\n4. Cruzado anterior por último, tensionado em extensão completa, ou adiado cerca de 6 semanas como procedimento ambulatorial.\n\n**Por que deixar o cruzado anterior para depois.** Adiar o cruzado anterior concentra a reabilitação inicial no cruzado posterior e permite manipular, no segundo tempo, o joelho que está perdendo movimento. No protocolo dos autores para KD III e IV de alta energia, a primeira etapa (2 a 4 semanas após o trauma) trata meniscos e cartilagem e reconstrói todos os ligamentos menos o cruzado anterior; seis semanas depois, retira-se o fixador articulado, manipula-se se preciso e faz-se o cruzado anterior.\n\n**O papel da fixação suspensória.** Os autores migraram para fixação suspensória em quase tudo. Ela permite tensionar os enxertos na ordem acima e voltar a retensioná-los conforme os outros ligamentos são feitos, e depende só de uma cortical íntegra, não da qualidade do osso esponjoso, o que ajuda no paciente politraumatizado.\n\n> **Na prova:** cruzado posterior primeiro, cantos no meio (o mais instável antes), cruzado anterior por último ou cerca de 6 semanas depois.\n\n**Por que esta questão foi criada.** O TARO 2019 cobrou a reconstrução precoce dos cruzados como fator de bom prognóstico, e o TARO cobrou três vezes (2013, 2016 e 2023) a frouxidão posterior residual depois da reconstrução do cruzado posterior. A ordem da reconstrução liga os dois assuntos, é uma frase de destaque do capítulo e tem o formato de par primeiro e último típico da banca.",
-  "correta": "**B: cruzado posterior; cruzado anterior.** Os autores começam pelo cruzado posterior, a pedra fundamental do joelho, maior e mais forte ligamento, que deve ser o primeiro reconstruído e tensionado. Depois vêm os cantos, começando pelo mais instável, e termina-se com o cruzado anterior, ou ele é adiado para cerca de 6 semanas depois, como procedimento ambulatorial. O adiamento concentra a reabilitação inicial no cruzado posterior e permite manipular o joelho rígido no segundo tempo.",
+  "conceito": "Na sequência preferida pelos autores, o **LCP vem primeiro** e o **LCA por último**, alternativa B. Entre eles entram os cantos, começando pelo mais instável. Essa é uma estratégia para o joelho multiligamentar, não uma regra transplantada da lesão isolada do LCA.\n\nO capítulo chama o LCP de pedra fundamental do joelho. Ele fornece a maior parte da contenção posterior da tíbia; sua reconstrução e tensão iniciais ajudam a estabelecer a referência do pivô central antes de ajustar as estruturas periféricas (Rockwood, 10ª ed., cap. 61, “Cruzado posterior” e “A ordem da reconstrução”).\n\nDepois se abordam os cantos conforme a instabilidade. O LCA pode ser feito ao final ou adiado cerca de 6 semanas. A postergação concentra a reabilitação inicial no LCP e permite tratar perda de movimento no segundo tempo quando necessário.\n\n**Ordem ligamentar não substitui prioridades de trauma.** A fonte não manda começar uma reconstrução central antes de resolver vaso, compartimentos ou fraturas que exigem estabilização. A sequência perguntada pertence ao planejamento definitivo num membro em condições apropriadas.\n\nOs autores preferem fixação suspensória por permitir retensionar os enxertos ao longo do procedimento e depender de cortical íntegra. Esse ajuste progressivo ajuda a entender por que o primeiro enxerto não é colocado como se os demais ligamentos não fossem alterar a estabilidade.\n\n**Por que esta questão foi criada.** A ordem conecta a função estabilizadora do LCP à estratégia multiligamentar dos autores. O formato primeiro e último permite testar planejamento sem transformar a sequência em regra para emergências.",
+  "correta": "**B: cruzado posterior; cruzado anterior.** Preserva o primeiro e o último da sequência dos autores. Os cantos são reconstruídos entre eles, e o LCA pode ficar para um segundo tempo em casos selecionados.",
   "incorretas": {
-   "A": "**A ordem está invertida.** Começar pelo cruzado anterior fixaria a tíbia numa posição anteroposterior que ainda não foi corrigida, porque é o cruzado posterior que a recoloca. Na reconstrução isolada do cruzado anterior esse problema não existe, o que torna a ordem invertida intuitiva para quem pensa no joelho com uma só lesão. Na luxação, o capítulo deixa o cruzado anterior por último ou para cerca de 6 semanas depois.",
-   "C": "**Nem o primeiro nem o último.** O colateral medial é reconstruído no meio, junto com os cantos, depois do cruzado posterior, e é tensionado a 20 a 30 graus de flexão. O cruzado posterior não é o último: é o primeiro, e ainda é retensionado depois que os cantos ficam prontos, graças à fixação suspensória. A alternativa coloca no fim exatamente o ligamento que deve abrir a cirurgia.",
-   "D": "**O primeiro está certo; o último não.** O cruzado posterior abre a reconstrução, mas o canto posterolateral entra no meio da sequência, como um dos cantos (o mais instável primeiro). O último é o cruzado anterior, feito no fim da cirurgia ou adiado cerca de 6 semanas. Deixar o canto posterolateral para depois seria contrariar também o consenso de 2019, que pede sua reconstrução aguda em 2 a 3 semanas."
+   "A": "**A.** Inverte a ordem do pivô central. Colocar o LCA primeiro e deixar o LCP por último não corresponde à estratégia que usa o cruzado posterior como referência inicial do joelho multiligamentar.",
+   "C": "**C.** O colateral medial não é o primeiro da sequência geral perguntada, e o LCP tampouco é o último. Uma abordagem aguda específica do lado medial não deve ser confundida com essa ordem de reconstrução definitiva.",
+   "D": "**D.** Acerta o LCP primeiro, mas deixa o canto posterolateral por último. Os cantos entram antes do LCA, começando pelo mais instável, no esquema apresentado."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Tratamento; Cruzado posterior: a pedra fundamental; A artéria poplítea."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Tratamento",
+      "Cruzado posterior: a pedra fundamental",
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "tratamento-1a4fc511",
+      "tratamento-186e598b",
+      "cruzado-posterior-a-pedra-fundamental-5fe7035a",
+      "a-arteria-poplitea-a5075ff5",
+      "tratamento-0fd132be"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "706c4b9aed53937efe3282a2d56ae72b0fa137134e0cca885709aa59bd5a8067"
+    }
+   ],
+   "questaoSha256": "83aab5940762922eca9bd3f766fce3c293e4c1679235d83754cc04938da9d52c",
+   "comentarioSha256": "5d9ee6905812fbe667b05327cf934983dcd9ee5d6ca4ddfa70420912b85305fb"
+  }
  },
  "trauma-1628": {
   "conceito": "**O que os números mostram.** O capítulo cita a série de FANELLI e EDSON, com 2 a 10 anos de seguimento de 35 reconstruções combinadas dos dois cruzados, assistidas por artroscopia, com vários enxertos. O LACHMAN e o pivot shift ficaram normais em 33 de 35 joelhos (94%). A gaveta posterior (ou o degrau tibial posterior) ficou normal em só 16 de 35 (46%). Ou seja, a reconstrução do cruzado anterior restaura com regularidade a translação anterior; a do cruzado posterior, muito menos a posterior.\n\n**Por que o cruzado posterior \"estica\".** Dois motivos aparecem no capítulo. Primeiro, a geometria: no túnel transtibial, a curva aguda do enxerto ao sair na face posterior da tíbia (killer turn) alonga ou rompe o enxerto; os autores evitam isso com o túnel tibial saindo baixo, 1,5 a 2 cm abaixo da linha articular, o que põe o enxerto na mesma posição da técnica inlay. Segundo, o canto posterolateral: reconstruir só o cruzado posterior num joelho que também perdeu o canto deixa mais translação posterior residual, e uma insuficiência grau 3 do cruzado posterior só aparece quando o canto também está lesado. A preocupação com a tíbia que cai para trás aparece também nos cuidados: um dos protocolos citados evita exercício isolado de isquiotibiais por pelo menos 4 meses e, no tratamento sem cirurgia, põe-se um coxim atrás da tíbia quando o cruzado posterior está muito lesado.\n\n**Outros resultados úteis.** Reparar os dois cruzados, em vez de reconstruir, aumentou a queda posterior da tíbia e reduziu o retorno ao nível anterior; reconstruir os dois aumentou o retorno ao esporte. Rigidez e artrofibrose também são comuns depois da cirurgia multiligamentar (21,5% em 121 joelhos), e o capítulo registra a opinião de que um joelho um pouco mais frouxo e móvel funciona melhor que um estável e rígido.\n\n| Teste após a reconstrução dos dois cruzados | Normal |\n|---|---|\n| LACHMAN | 94% (33 de 35) |\n| pivot shift | 94% (33 de 35) |\n| gaveta posterior ou degrau tibial | 46% (16 de 35) |\n\n> **Na prova:** a queixa mais comum depois de reconstruir o cruzado posterior é a frouxidão posterior residual.\n\n**Por que esta questão foi criada.** O TARO cobrou três vezes a complicação mais comum da reconstrução do cruzado posterior: 2013 (instabilidade posterior), 2016 (instabilidade residual) e 2023 (frouxidão posterior residual). Esta gêmea leva o mesmo fato ao dado do capítulo que o sustenta, o teste que menos se normaliza na série de FANELLI.",
@@ -30285,32 +30580,86 @@
   "conferido": false
  },
  "trauma-1629": {
-  "conceito": "**O nervo mais lesado.** O nervo fibular comum está preso proximalmente no colo da fíbula e distalmente no septo intermuscular; fica profundo e posterior ao tendão do bíceps e contorna a cabeça da fíbula 1,5 a 2 cm abaixo da ponta do estiloide. Quando o joelho abre em varo, o nervo é estirado ao longo de um segmento longo, e por isso a lesão se associa sobretudo à do canto posterolateral. As frequências do capítulo: paralisia fibular em cerca de 25% das luxações em grandes séries; lesão neurológica em geral até 40%; lesão motora e sensitiva completa em 19% em algumas séries; numa amostra de 357 joelhos multiligamentares, 19% de paralisia, com pior arco final e menor retorno ao trabalho.\n\n**Quem tem mais risco.** O capítulo lista três fatores de risco: sexo masculino, índice de massa corporal alto e fratura associada da cabeça da fíbula. O obeso tem ainda a luxação de energia ultrabaixa, ao cair da própria altura ou até andando, com taxa muito alta de lesão neurovascular.\n\n**Quem recupera.** Cerca de metade das paralisias se recupera, a maioria das parciais. Na série da Mayo (27 pacientes), 38% das paralisias completas recuperaram dorsiflexão contra a gravidade, contra 83% das parciais. Na revisão sistemática de 214 paralisias, 38,4% das completas atingiram recuperação funcional (força de pelo menos 3) e 87,3% das parciais recuperaram força plena; a idade mais jovem foi o único fator preditivo de recuperação.\n\n| Pergunta | Resposta do capítulo |\n|---|---|\n| fatores de risco | sexo masculino, índice de massa corporal alto, fratura da cabeça da fíbula |\n| recuperação das completas | cerca de 38% (funcional) |\n| recuperação das parciais | 83% a 87% |\n| único preditor de recuperação | idade mais jovem |\n\n**O que fazer desde o primeiro dia.** Órtese e mobilização do pé e do tornozelo: se não forem feitas, a contratura em equino atrapalha a marcha e pode impedir futuras transferências tendíneas. As paralisias densas exigem órtese tornozelo-pé permanente ou cirurgia para devolver a dorsiflexão, como as transferências de nervo a partir do tibial. A fratura da cabeça da fíbula, muitas vezes associada à lesão do nervo, pede fixação precoce.\n\n> **Na prova:** o nervo é o fibular comum, o risco é do homem obeso com fratura da cabeça da fíbula, e quem recupera melhor é o mais jovem.\n\n**Por que esta questão foi criada.** No TEOT 2021 caiu qual nervo é mais lesado na lesão do cruzado posterior com o canto posterolateral (fibular comum, entre opções vizinhas). Esta gêmea cobra o mesmo nervo pelos números de risco e de prognóstico que o capítulo destaca, num par 2 por 2.",
-  "correta": "**B: índice de massa corporal alto; idade mais jovem.** O capítulo cita como fatores de risco para lesão do nervo fibular na luxação do joelho o sexo masculino, o índice de massa corporal alto e a fratura concomitante da cabeça da fíbula. Na revisão de 214 paralisias, a idade mais jovem foi o único fator preditivo de recuperação do nervo. O índice de massa corporal alto conversa com outro ponto do capítulo, as luxações de energia ultrabaixa do obeso, com taxa muito alta de lesão neurovascular.",
+  "conceito": "O par correto é **IMC alto como fator de risco** e **idade mais jovem como preditor de recuperação**, alternativa B. São perguntas distintas: quem tem maior chance de lesar o nervo e, entre os lesionados, quem tende a recuperar melhor.\n\nO fibular comum é vulnerável à tração nas lesões posterolaterais. O resumo lista sexo masculino, IMC elevado e fratura da cabeça da fíbula como fatores de risco. Separadamente, informa idade mais jovem como o único fator preditivo de recuperação na revisão citada (Rockwood, 10ª ed., cap. 61, “O nervo fibular comum”).\n\n**“Único” pertence ao estudo apresentado.** Não significa que a idade explique sozinha o resultado de todo paciente ou que a extensão da lesão seja irrelevante. A mesma seção mostra recuperação melhor nas paralisias parciais que nas completas. Associação prognóstica não deve virar promessa individual.\n\nA reconstrução do canto pode ser necessária para a estabilidade, mas o resumo não a identifica como o único preditor de recuperação nervosa. Corrigir o ligamento e recuperar o nervo são objetivos relacionados, porém diferentes; uma cirurgia estável não garante reversão da paralisia.\n\nDesde o início, órtese e mobilização do pé e tornozelo procuram evitar equino. Isso preserva possibilidades funcionais enquanto se acompanha a recuperação e se consideram transferências quando indicadas.\n\n**Por que esta questão foi criada.** Uma questão do TEOT 2021 identifica o fibular comum no trauma do LCP com canto. Este simulado aprofunda o tema separando fatores de risco de fatores de recuperação.",
+  "correta": "**B: IMC alto; idade mais jovem.** O primeiro termo está na lista de fatores de risco, e o segundo é o preditor de recuperação destacado na revisão citada. A leitura conserva a diferença entre incidência da lesão e prognóstico.",
   "incorretas": {
-   "A": "**O prognóstico está certo; o risco não.** A idade mais jovem é de fato o único preditor de recuperação na revisão citada, mas o fator de risco é o sexo masculino, não o feminino. Isso acompanha a epidemiologia da própria luxação, mais comum em homens de 20 a 39 anos. A alternativa inverte o sexo e mantém o preditor.",
-   "C": "**Os dois dados estão errados.** O fator de risco é o sexo masculino, e o capítulo não mostra a reconstrução precoce do canto como preditora da recuperação do nervo. A reconstrução precoce do canto posterolateral melhora a estabilidade e os resultados subjetivos (72% contra 44% bons ou excelentes), mas o nervo lesado por tração ao longo de um segmento longo tem prognóstico próprio, e o único preditor encontrado foi a idade. O que protege a função do pé desde o início é a órtese com mobilização para evitar o equino.",
-   "D": "**O risco está certo; o prognóstico não.** Índice de massa corporal alto é um dos fatores de risco citados, mas a reconstrução precoce do canto posterolateral não aparece como preditora de recuperação do nervo. Na revisão de 214 paralisias, a idade mais jovem foi o único fator preditivo. A gravidade inicial também pesa (as parciais recuperam muito mais que as completas), mas isso descreve a lesão, não um fator de tratamento."
+   "A": "**A.** A idade mais jovem corresponde ao prognóstico, mas sexo feminino não é o fator de risco listado; o resumo cita masculino. Não se pode corrigir uma metade do par e ignorar a outra.",
+   "C": "**C.** Troca o fator de risco para feminino e oferece reconstrução precoce como preditor exclusivo de recuperação. Nenhuma das duas afirmações reproduz os achados informados para o nervo.",
+   "D": "**D.** IMC alto está correto como risco, mas a reconstrução precoce do canto não é o preditor nervoso escolhido pela revisão. Ela participa do tratamento ligamentar, não substitui o dado prognóstico de idade."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O nervo fibular comum."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "O nervo fibular comum"
+     ],
+     "blocos": [
+      "o-nervo-fibular-comum-8a85bf5b",
+      "o-nervo-fibular-comum-92ca53f7",
+      "o-nervo-fibular-comum-6c2619c5",
+      "o-nervo-fibular-comum-05d3e14c"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "5dd68129cbac4c5f7dd645af119b9df2c9d3b0e36889b8dd8d847094f798ad66"
+    }
+   ],
+   "questaoSha256": "27a849ea297741ef05b75301381a009e1262e735d6e379273f2baa0e21d8f222",
+   "comentarioSha256": "6c71683620f0628a1047a78ebd6bec487093458e45b15e6060a13cec3bd50f84"
+  }
  },
  "trauma-1630": {
-  "conceito": "**Para que servem as radiografias com estresse.** Elas medem, de forma objetiva, a diferença de frouxidão entre o joelho lesado e o normal. O estresse em valgo avalia o lado medial, o em varo avalia o lado lateral e a gaveta posterior avalia o cruzado posterior. Os autores fazem sob radioscopia, com o intensificador perfeitamente perpendicular à superfície articular, de modo que as bordas do planalto apareçam como uma linha. São especialmente úteis no joelho globalmente instável, com os quatro ligamentos rotos, em que o exame clínico não consegue separar quanto de frouxidão vem de cada lado. A quantidade de diferença costuma definir a cirurgia.\n\n**Os números do capítulo.**\n\n| Estresse | Achado | Interpretação |\n|---|---|---|\n| varo | abertura lateral maior que 2,7 mm | colateral fibular isolado |\n| varo | mais de 4 mm | colateral fibular e canto posterolateral |\n| valgo | 3,8 mm | colateral medial isolado |\n| valgo | mais de 9,8 mm (média) | colateral medial e canto posteromedial |\n| gaveta posterior | mais de 8 mm (média de 9,8 mm em cadáver) | insuficiência completa do cruzado posterior |\n| gaveta posterior | mais de 12 mm (média de 19,4 mm em cadáver) | cruzado posterior e canto posterolateral |\n\n**A lógica por trás da gaveta.** O cruzado posterior é o restritor dominante da translação posterior, mas o canto posterolateral é um restritor secundário importante. A 90 graus, cortar só o cruzado posterior gera 5 a 11 mm de frouxidão; cortar o cruzado e o canto, 15 a 21 mm. Clinicamente, a gaveta posterior grau II é compatível com cruzado posterior isolado, e o grau III indica lesão combinada com o canto: a insuficiência grau 3 do cruzado posterior só aparece se o canto também estiver lesado. Por isso a gaveta muito grande é um aviso para examinar o canto, inclusive com o dial.\n\n**Outro dado da mesma figura.** No estresse em valgo, abertura medial de mais de 10 graus em extensão completa indica lesão do cruzado anterior, do posterior, do colateral medial e do canto posteromedial (figura 61-8), porque em extensão a cápsula posterior e os cruzados ajudam a segurar o valgo.\n\n> **Na prova:** varo 2,7 e 4 mm; valgo 3,8 e 9,8 mm; gaveta posterior 8 e 12 mm.\n\n**Por que esta questão foi criada.** O CET-PR cobrou a abertura de 3 mm em varo (colateral lateral isolado) e o SBOT-SP, a posição de extensão para o valgo de mais de 10 graus. A tabela de estresse do capítulo tem um terceiro par que ainda não caiu, o da gaveta posterior; esta gêmea usa os números vizinhos da mesma tabela como distratores.",
-  "correta": "**D: 12 mm.** No estudo citado no capítulo, translação posterior de mais de 8 mm indicou insuficiência completa do cruzado posterior, e mais de 12 mm sugeriu lesão adicional das estruturas do canto posterolateral. Em cadáver, os valores médios foram 9,8 mm no cruzado posterior isolado e 19,4 mm na lesão combinada. A explicação é que o canto posterolateral é restritor secundário da translação posterior; quando ele também cai, a tíbia vai muito mais para trás, o que clinicamente corresponde à gaveta grau III.",
+  "conceito": "Na gaveta posterior com estresse, translação posterior **maior que 12 mm** sugere lesão combinada do **LCP e do canto posterolateral**, alternativa D. O número deve ser mantido junto ao tipo de estresse: não é um corte de abertura lateral em varo.\n\nO LCP é o restritor principal da translação posterior, mas o canto auxilia. O resumo descreve frouxidão de 5 a 11 mm após corte isolado do LCP a 90 graus, contra 15 a 21 mm quando se corta também o canto. A perda de ambos explica uma translação maior do que a esperada para o ligamento central isolado (Rockwood, 10ª ed., cap. 61, “Canto posterolateral” e “Radiografias com estresse”).\n\nA tabela de estresse associa grau II, aproximadamente 9,8 mm ou acima de 8 mm, ao LCP isolado; grau III, aproximadamente 19,4 mm ou acima de 12 mm, ao padrão combinado. São referências do método descrito, que precisam ser interpretadas com técnica e comparação apropriadas.\n\n**Não misture direções nem unidades.** Os 2,7 e 4 mm aparecem no estresse em varo para diferenciar colateral fibular isolado de lesão mais ampla do canto. A gaveta posterior mede outro deslocamento e usa outros valores.\n\nReconhecer o canto associado importa porque reconstruir só o LCP nesse joelho pode deixar instabilidade posterior residual. O número é uma pista da extensão da insuficiência, a ser correlacionada ao exame completo e à RM.\n\n**Por que esta questão foi criada.** Questões reais do acervo usam medidas de estresse em varo e valgo. O simulado acrescenta a translação posterior e força a conservar a direção do teste ao escolher o limiar.",
+  "correta": "**D: maior que 12 mm.** É o corte apresentado para o padrão de grau III com LCP e canto posterolateral. A resposta conserva a solicitação posterior e não transfere os limiares de varo.",
   "incorretas": {
-   "A": "**É o número do varo.** Abertura lateral maior que 2,7 mm na radiografia com estresse em varo indica lesão isolada do colateral fibular, segundo LaPrade; foi a base do CET-PR, que arredondou para 3 mm. Não tem relação com a translação posterior medida na gaveta, que é muito maior mesmo na lesão isolada do cruzado posterior.",
-   "B": "**Também é do varo.** Mais de 4 mm de abertura lateral no estresse em varo indica lesão do colateral fibular e do canto posterolateral. O canto aparece de novo, o que torna o número tentador, mas o eixo é outro: abertura em varo, não translação posterior. Na gaveta posterior, 4 mm estaria até abaixo do valor da lesão isolada do cruzado posterior.",
-   "C": "**É o corte do cruzado posterior isolado.** Mais de 8 mm de translação posterior indica insuficiência completa do cruzado posterior, compatível com gaveta grau II, e não necessariamente lesão do canto. Para sugerir o canto posterolateral junto, a translação passa de 12 mm. Lembre a lógica: o canto é restritor secundário e só \"aparece\" na gaveta quando o principal, o cruzado posterior, já falhou."
+   "A": "**A.** 2,7 mm aparece como referência de abertura lateral em varo por lesão isolada do colateral fibular. Usá-lo para a gaveta posterior troca tanto a direção medida quanto o complexo avaliado.",
+   "B": "**B.** Mais de 4 mm é o critério de varo para colateral fibular com canto. Embora envolva a mesma região periférica, não é o limiar da translação posterior combinada perguntada.",
+   "C": "**C.** Mais de 8 mm corresponde à insuficiência completa isolada do LCP na tabela. O caso pede reconhecer a combinação com o canto e, portanto, a referência maior de 12 mm."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 61 (Knee Dislocations; Stannard e Richards)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; Canto posterolateral; Cruzado posterior: a pedra fundamental."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Imagem",
+      "Canto posterolateral",
+      "Cruzado posterior: a pedra fundamental"
+     ],
+     "blocos": [
+      "imagem-1f49da70",
+      "canto-posterolateral-04216df0",
+      "cruzado-posterior-a-pedra-fundamental-ed726e98",
+      "imagem-ef4a6509"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "dd6ce15ef115d182bafde296f491fdc79edf896c5aad1e3bcc05269d0c6996d9"
+    }
+   ],
+   "questaoSha256": "6894605a2f2166c4ed10603eb6a720a74167cb6b33ee5e10001599c58bffcc5f",
+   "comentarioSha256": "58dcaabeb9369d2186f04e993bc5573ca8cf8e4aa2fd92eda24ab1a0d711f911"
+  }
  },
  "trauma-1631": {
   "conceito": "Ao reduzir uma fratura supracondiliana, recuperar o comprimento não garante que os côndilos estejam orientados corretamente. Os **gastrocnêmios** puxam o fragmento distal para trás, produzindo **ápice posterior**; **quadríceps, posteriores da coxa e adutores** produzem **encurtamento e varo**. A alternativa D conserva as duas associações.\n\nA deformidade resulta do deslocamento inicial do trauma e das forças musculares que continuam agindo depois que o osso perde a continuidade. Os gastrocnêmios têm suas origens atrás dos côndilos: essa relação local explica o efeito sobre o segmento distal. Já os grupos da coxa mantêm uma ação longitudinal e coronal que aproxima os fragmentos e desvia o eixo. São componentes simultâneos, não explicações concorrentes da mesma imagem (resumo do Rockwood, 10ª ed., cap. 58, “Mecanismo e deformidade”).\n\nNo AP, o cirurgião avalia o eixo coronal; no perfil, a angulação posterior. Uma redução pode parecer boa numa projeção e continuar inadequada na outra. O capítulo descreve relaxamento muscular completo, distrator femoral e rolo de apoio como recursos para vencer essas forças. O implante deve manter o que foi corrigido, porque a contração não deixa de existir quando a imagem melhora.\n\n**A tendência muscular e o erro da síntese são coisas diferentes.** O varo foi uma falha clássica das placas antigas sem ângulo fixo, mas o resumo também descreve valgo criado por aplicação inadequada de placas. Encontrar valgo no pós-operatório não demonstra que os músculos da fratura fresca tenham produzido esse padrão.\n\nNa Biblioteca, compare a descrição das forças ao tópico de redução. A pergunta combina duas metades; na prática, é necessário corrigir comprimento, eixo e orientação do fragmento distal, sem aceitar uma dimensão como prova de que todas ficaram certas.\n\n**Por que esta questão foi criada.** Reúne as forças do encurtamento e do varo à ação posterior dos gastrocnêmios, permitindo testar o mecanismo em duas dimensões.",
