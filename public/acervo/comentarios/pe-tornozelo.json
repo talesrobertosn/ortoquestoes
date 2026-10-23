@@ -3658,18 +3658,44 @@
     "conferido": false
   },
   "pe-tornozelo-0357": {
-    "conceito": "**A fratura por estresse do navicular.** É uma das fraturas por estresse de **alto risco**: costuma ter diagnóstico tardio, consolida mal e tende a evoluir para pseudartrose. Acomete atletas de corrida e salto (basquete, atletismo).\n\n**Por que o navicular sofre.** O navicular é a pedra angular do arco longitudinal medial, comprimido entre a cabeça do tálus e os cuneiformes. As forças de impulsão se concentram no seu **terço central**, que recebe a carga do tálus e dos cuneiformes medial e intermédio.\n\n**A zona de baixa irrigação.** O navicular é irrigado por vasos que entram pelas extremidades medial e lateral. O **terço central** é uma zona **relativamente avascular**, exatamente onde a carga é maior. Isso explica a dificuldade de consolidação.\n\n**O traço.** A fratura começa na **cortical dorsal** do terço central e progride em direção plantar, com orientação **sagital**: o traço é vertical, de dorsal para plantar, dividindo o osso em fragmentos medial e lateral.\n\n**O diagnóstico.**\n- Dor vaga no **dorso do médio-pé**, que piora com a atividade; dor à palpação no **\"ponto N\"** (no dorso do navicular).\n- **Radiografias** frequentemente **normais**, porque o traço é fino e oblíquo em relação ao feixe.\n- A **tomografia** define o traço (completo ou incompleto) e o desvio; a **ressonância** detecta precocemente o edema.\n\n**O tratamento.**\n- Fratura **incompleta** sem desvio: **imobilização sem carga** por 6 a 8 semanas (a carga precoce aumenta muito a falha).\n- Fratura **completa**, desviada, pseudartrose ou atleta de alto nível: **fixação com parafusos**, com ou sem enxerto.",
-    "correta": "**Resposta provável: Certo.** A fratura por estresse do navicular começa na cortical dorsal do terço central e tem traço com orientação **sagital**, dividindo o osso em fragmentos medial e lateral, na zona de menor irrigação.",
+    "conceito": "A afirmativa está de acordo com a localização típica descrita: a fratura por estresse do navicular ocorre predominantemente no **plano sagital**, no **terço central da cortical dorsal**. O centro reúne irrigação pobre e maior cisalhamento durante flexão plantar com pronação, o que ajuda a explicar o risco de consolidação difícil.\n\nA dor pode ser vaga no mediopé e a radiografia inicial negativa. A TC define extensão e consolidação, e a melhora dos sintomas sozinha não basta para liberar retorno em uma lesão de alto risco (resumo do Rockwood, 10ª ed., cap. 24, “Navicular”).\n\nNão há gabarito oficial registrado no acervo; **A é a resposta provável pela bibliografia**. A palavra “usualmente” é adequada: descreve o padrão predominante, sem afirmar que todo traço precisa ter a mesma orientação. Consulte a seção do navicular no resumo da Biblioteca.",
+    "correta": "**A: Certo.** O plano sagital é a orientação predominante descrita no terço central dorsal do navicular. A afirmação coincide com o resumo; a resposta permanece bibliográfica provável porque não há gabarito oficial registrado.",
     "incorretas": {
-      "B": "**Errado** contrariaria a descrição clássica do traço. A orientação sagital, no terço central pouco vascularizado, é justamente o que torna essa fratura de alto risco e de difícil visualização na radiografia."
+      "B": "**Negaria a orientação predominante descrita.** O capítulo situa a maioria das lesões no plano sagital. A existência de outros padrões não invalida a expressão “usualmente”, que não exige universalidade."
     },
     "referencias": [
-      "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, p. 2099.",
-      "Coughlin MJ, Saltzman CL, Anderson RB. Mann's Surgery of the Foot and Ankle, 9ª edição"
+      "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
     ],
     "provavel": "A",
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-24-fraturas-estresse",
+          "titulo": "Fraturas por estresse",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 24 · Stress Fractures",
+          "secoes": [
+            "O pé: navicular, quinto metatarso e a fratura de marcha"
+          ],
+          "blocos": [
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+          ],
+          "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+          "trechosSha256": "3c5ef269ab2d89039285017cafc4b327ecf2859adff3f0a1dfcab6a089d68869"
+        }
+      ],
+      "questaoSha256": "ebdb7117d040363cb9457a0310538e1a666ea0d492207788566aa48db8ed917f",
+      "comentarioSha256": "f50616e31a4c0f91c77d23e15ac23e415b3e96b39ddb3324740ac49d6bdec100"
+    }
   },
   "pe-tornozelo-0358": {
     "incorretas": {

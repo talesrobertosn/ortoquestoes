@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1446,
+  "pendente": 1436,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 59,
   "pendente-inspecao-imagem": 170,
-  "revisada": 597
+  "revisada": 607
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -27,8 +27,9 @@
    "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
    "estados": {
     "duplicada": 2,
-    "pendente": 62,
-    "pendente-inspecao-imagem": 4
+    "pendente": 52,
+    "pendente-inspecao-imagem": 4,
+    "revisada": 10
    }
   },
   "rockwood10-33-fratura-escapula": {
@@ -161,8 +162,9 @@
    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
    "estados": {
     "duplicada": 2,
-    "pendente": 54,
-    "pendente-inspecao-imagem": 7
+    "pendente": 53,
+    "pendente-inspecao-imagem": 7,
+    "revisada": 1
    }
   },
   "rockwood10-54-transtrocanterica": {
@@ -24342,7 +24344,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24357,7 +24359,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "ebdb7117d040363cb9457a0310538e1a666ea0d492207788566aa48db8ed917f"
+   "questaoSha256": "ebdb7117d040363cb9457a0310538e1a666ea0d492207788566aa48db8ed917f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "3c5ef269ab2d89039285017cafc4b327ecf2859adff3f0a1dfcab6a089d68869"
+     }
+    ],
+    "questaoSha256": "ebdb7117d040363cb9457a0310538e1a666ea0d492207788566aa48db8ed917f",
+    "comentarioSha256": "f50616e31a4c0f91c77d23e15ac23e415b3e96b39ddb3324740ac49d6bdec100"
+   }
   },
   "pe-tornozelo-0361": {
    "tema": "pe-tornozelo",
@@ -40175,7 +40204,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -40190,7 +40219,32 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "c798bacf9526a293df3fd6a4cfd51a3eeb681ea87ddb197f19b9ab6a6487306f"
+   "questaoSha256": "c798bacf9526a293df3fd6a4cfd51a3eeb681ea87ddb197f19b9ab6a6487306f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Tíbia: posteromedial e a linha negra temida"
+      ],
+      "blocos": [
+       "tibia-posteromedial-e-a-linha-negra-temida-089a8baa",
+       "tibia-posteromedial-e-a-linha-negra-temida-27dd557d",
+       "tibia-posteromedial-e-a-linha-negra-temida-b08b2d83"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "0c63fb5558031714dd2b84e27d15fe7df2561b7913b16d3d23054079ffc57944"
+     }
+    ],
+    "questaoSha256": "c798bacf9526a293df3fd6a4cfd51a3eeb681ea87ddb197f19b9ab6a6487306f",
+    "comentarioSha256": "150c88d63a15da42ca2b721e55c7c15091b62d7e5de6aaa2c5a99ebb6d163747"
+   }
   },
   "trauma-0026": {
    "tema": "trauma",
@@ -41192,7 +41246,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41207,7 +41261,32 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "5600f3d3d51d952912cf971010eddde1e03ebe17be9ebcc3d6dd7970ece642f4"
+   "questaoSha256": "5600f3d3d51d952912cf971010eddde1e03ebe17be9ebcc3d6dd7970ece642f4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Alto risco e baixo risco"
+      ],
+      "blocos": [
+       "alto-risco-e-baixo-risco-2c654600",
+       "alto-risco-e-baixo-risco-70c9cf0c",
+       "alto-risco-e-baixo-risco-db1d36dd"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "7b834722c5311dfb10d11e748460cb2da8bcc20109aa1a76d6f815793e284c60"
+     }
+    ],
+    "questaoSha256": "5600f3d3d51d952912cf971010eddde1e03ebe17be9ebcc3d6dd7970ece642f4",
+    "comentarioSha256": "b4584d6c134b024e3ae9985e7794ed2eb66c7c66814958c27c6207dc5e8ef5d1"
+   }
   },
   "trauma-0066": {
    "tema": "trauma",
@@ -42055,7 +42134,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42070,7 +42149,33 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "354bbefb0412760543b00a38bc26b113fb8d59eb129a0698ed4f33f04541c720"
+   "questaoSha256": "354bbefb0412760543b00a38bc26b113fb8d59eb129a0698ed4f33f04541c720",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "KAEDING-MILLER e o algoritmo de tratamento"
+      ],
+      "blocos": [
+       "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-34caab1a",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-e5f67639",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-cdc1ad62"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "8f346d50e3cbf5ab9d0b08d11c0cbc3b65051d1563ceaa5c3733a3ead53d6cbb"
+     }
+    ],
+    "questaoSha256": "354bbefb0412760543b00a38bc26b113fb8d59eb129a0698ed4f33f04541c720",
+    "comentarioSha256": "f81e20bb8c27d9c741668096949fd0d58379f26d0c89ec94e0299332c07789e0"
+   }
   },
   "trauma-0096": {
    "tema": "trauma",
@@ -42079,7 +42184,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42094,7 +42199,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "42e322c20998fddaf8cae0be7f91bf931dde2080e88272a2d3198853e7d40c1f"
+   "questaoSha256": "42e322c20998fddaf8cae0be7f91bf931dde2080e88272a2d3198853e7d40c1f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4319a87c",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-0a3a14ef",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-bb3eee18",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-8e9fa613",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-4775bf11"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "0eb9377f01b01d10562402a099ec84d13aa6b9b0b3162cd460f72916f33c415a"
+     }
+    ],
+    "questaoSha256": "42e322c20998fddaf8cae0be7f91bf931dde2080e88272a2d3198853e7d40c1f",
+    "comentarioSha256": "496b3bf399a006f91a1b325e3572f4b9281699460ae8251962912e09481da080"
+   }
   },
   "trauma-0098": {
    "tema": "trauma",
@@ -47706,7 +47838,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47721,7 +47853,33 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "0952e365cd13ec6da264b02a3062701218e16054e803a5610e6f4d83403224a6"
+   "questaoSha256": "0952e365cd13ec6da264b02a3062701218e16054e803a5610e6f4d83403224a6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Tíbia: posteromedial e a linha negra temida"
+      ],
+      "blocos": [
+       "tibia-posteromedial-e-a-linha-negra-temida-089a8baa",
+       "tibia-posteromedial-e-a-linha-negra-temida-27dd557d",
+       "tibia-posteromedial-e-a-linha-negra-temida-b08b2d83",
+       "tibia-posteromedial-e-a-linha-negra-temida-51147bf1"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "534f4667c37cf9423fe6c08cb517a32e1a03d93297661dad38b90245bae4f06f"
+     }
+    ],
+    "questaoSha256": "0952e365cd13ec6da264b02a3062701218e16054e803a5610e6f4d83403224a6",
+    "comentarioSha256": "467461825de9dc3aece80e58feeee2f4345209a29a9962004683cf03faacea55"
+   }
   },
   "trauma-0340": {
    "tema": "trauma",
@@ -48255,7 +48413,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -48270,7 +48428,34 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "74bd820c030cea2d0b01e3ca84fa12fb19fbd710768a7ff9249b8cdfc4faab6b"
+   "questaoSha256": "74bd820c030cea2d0b01e3ca84fa12fb19fbd710768a7ff9249b8cdfc4faab6b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "O pé: navicular, quinto metatarso e a fratura de marcha"
+      ],
+      "blocos": [
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+       "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "3c5ef269ab2d89039285017cafc4b327ecf2859adff3f0a1dfcab6a089d68869"
+     }
+    ],
+    "questaoSha256": "74bd820c030cea2d0b01e3ca84fa12fb19fbd710768a7ff9249b8cdfc4faab6b",
+    "comentarioSha256": "1a9fb00d4a13628a49f73e698396a93eab6a710979cb1ac3322140f08745a5e0"
+   }
   },
   "trauma-0429": {
    "tema": "trauma",
@@ -50826,7 +51011,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50849,7 +51034,32 @@
     "rockwood10-24-fraturas-estresse",
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "893f67d6988203d6312b74a6cbc27709f85a47c3dcb2cdffa00baa711ad82a82"
+   "questaoSha256": "893f67d6988203d6312b74a6cbc27709f85a47c3dcb2cdffa00baa711ad82a82",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Fatores de risco e a tríade da mulher atleta"
+      ],
+      "blocos": [
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
+       "fatores-de-risco-e-a-triade-da-mulher-atleta-a7b1a69d"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "19c5d4d3ff97be2e3960833d9bd9c287b5d72025ddb702ed4b35f67929207df3"
+     }
+    ],
+    "questaoSha256": "893f67d6988203d6312b74a6cbc27709f85a47c3dcb2cdffa00baa711ad82a82",
+    "comentarioSha256": "1be779a5e8b8838533c68fa70d1f4f33a7f95b8d0fb35932913ad01d9b8a7153"
+   }
   },
   "trauma-0678": {
    "tema": "trauma",
@@ -53279,7 +53489,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53294,7 +53504,32 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "8d8140a6cf0706d3231afbf688249433a8dfa72b432df3029bf17736e10d98a7"
+   "questaoSha256": "8d8140a6cf0706d3231afbf688249433a8dfa72b432df3029bf17736e10d98a7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "KAEDING-MILLER e o algoritmo de tratamento"
+      ],
+      "blocos": [
+       "kaeding-miller-e-o-algoritmo-de-tratamento-de8ea4c7",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-34caab1a",
+       "kaeding-miller-e-o-algoritmo-de-tratamento-cdc1ad62"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "3c46cdbf1c6a960e7353d69e58edecd36f260498062540fe2e3915d4d392818b"
+     }
+    ],
+    "questaoSha256": "8d8140a6cf0706d3231afbf688249433a8dfa72b432df3029bf17736e10d98a7",
+    "comentarioSha256": "ec5df653ebeb058c9154800204d357caeb0297e70c42a05f2e8222fdb8edf59a"
+   }
   },
   "trauma-0796": {
    "tema": "trauma",
@@ -59455,7 +59690,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -59470,7 +59705,31 @@
    "resumosCandidatos": [
     "rockwood10-24-fraturas-estresse"
    ],
-   "questaoSha256": "fff1e970abb8d28ea87f13faa3fd8ac4051c8560da0fcb491570b7b1cb2898e8"
+   "questaoSha256": "fff1e970abb8d28ea87f13faa3fd8ac4051c8560da0fcb491570b7b1cb2898e8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-24-fraturas-estresse",
+      "titulo": "Fraturas por estresse",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 24 · Stress Fractures",
+      "secoes": [
+       "Diagnóstico: clínica e imagem"
+      ],
+      "blocos": [
+       "diagnostico-clinica-e-imagem-b4e768c6",
+       "diagnostico-clinica-e-imagem-98ea23d0"
+      ],
+      "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+      "trechosSha256": "f73419d0b2d526817fb702ffb9ee0553e873a4ba80c98d08139f4535de556859"
+     }
+    ],
+    "questaoSha256": "fff1e970abb8d28ea87f13faa3fd8ac4051c8560da0fcb491570b7b1cb2898e8",
+    "comentarioSha256": "798d11492c565682a1018dbb550ba9cd52fef48cbc2d6f526be2cbea03b89b0c"
+   }
   },
   "trauma-1085": {
    "tema": "trauma",
