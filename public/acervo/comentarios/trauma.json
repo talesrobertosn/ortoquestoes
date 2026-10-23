@@ -2370,19 +2370,45 @@
   "conferido": false
  },
  "trauma-0105": {
-  "conceito": "**A luxação do joelho irredutível.** A maioria das luxações do joelho reduz facilmente com tração e manipulação, muitas vezes espontaneamente. A exceção clássica é a luxação **posterolateral**, que pode ser **irredutível** por **interposição de partes moles**.\n\n**O mecanismo da irredutibilidade.** Na luxação **posterolateral**, o **côndilo femoral medial** atravessa as estruturas mediais e fica preso numa \"casa de botão\" (buttonhole). As estruturas que o aprisionam são:\n- a **cápsula articular medial**;\n- o **ligamento colateral medial (tibial)**;\n- às vezes, o **retináculo medial**, o músculo vasto medial e o menisco medial.\n\nQuanto mais se puxa, mais a \"casa de botão\" se aperta em torno do côndilo, e a tração não reduz.\n\n**O sinal da covinha (dimple sign).** A pele da face **medial** do joelho fica **repuxada para dentro**, formando uma **depressão** ou prega, porque a cápsula e os tecidos interpostos tracionam a pele junto com eles. É o sinal clássico da luxação posterolateral irredutível.\n\n**Por que é urgente.**\n- A redução fechada falha, e as tentativas repetidas podem causar **necrose da pele** medial pela tensão.\n- A artéria poplítea e o nervo fibular continuam em risco.\n- O tratamento é a **redução aberta** precoce, liberando o côndilo da casa de botão, geralmente por via medial.\n\n**Os outros tipos de luxação.** A luxação **anterior** (por hiperextensão) é a mais comum. A **posterior** (trauma do painel) tem alto risco vascular. A classificação de **Schenck** descreve os ligamentos lesados (KD I a V).\n\n**A avaliação vascular é obrigatória.** Pulsos, **índice tornozelo-braço** (menor que 0,9 indica investigação) e angiotomografia quando indicado, antes e depois de qualquer redução.",
-  "correta": "**Correta: B (a cápsula e o ligamento colateral tibial).** Na luxação posterolateral irredutível do joelho, o côndilo femoral medial fica preso numa \"casa de botão\" formada pela **cápsula medial** e pelo **ligamento colateral tibial** (medial). A pele medial se repuxa (sinal da covinha), e a redução exige cirurgia aberta.",
+  "conceito": "Na luxação traumática irredutível típica, a interposição ocorre do lado **medial**: cápsula e ligamento colateral tibial, alternativa B. O colateral tibial é o colateral medial; o fibular corresponde ao lado lateral.\n\nO padrão descrito é de luxação posterolateral com valgo extremo. O côndilo femoral medial atravessa a cápsula em direção anteromedial, como um botão passando por uma casa. As partes moles mediais ficam presas na articulação e impedem que uma manobra fechada simplesmente desfaça o deslocamento (Rockwood, 10ª ed., cap. 61, “Exame e luxação irredutível”).\n\nA pista na pele é a **covinha medial**, que reflete o encarceramento. A cápsula medial é a estrutura interposta mais comum no resumo, e o colateral medial também pode se prender. Esse sinal exige redução aberta de emergência, em vez de insistência em novas manobras fechadas.\n\n**Não confunda com a lesão tipo Stener do joelho.** Nela, o colateral medial superficial se avulsiona da tíbia e a pata de ganso fica entre o ligamento e o osso, impedindo cicatrização adequada. É outra interposição, em outro plano, embora também tenha indicação de abordagem aguda.\n\nTrato iliotibial, bíceps femoral e colateral fibular pertencem à região lateral. Eles são relevantes no trauma multiligamentar, mas não formam o encarceramento medial característico da covinha. Localizar o côndilo que atravessou a cápsula esclarece quais estruturas estão impedindo a redução.",
+  "correta": "**B.** Cápsula e colateral tibial são as estruturas mediais do padrão descrito. O resumo identifica a cápsula medial como a interposição mais comum e admite encarceramento do colateral medial junto a ela.",
   "incorretas": {
-   "A": "Os tendões da **pata de ganso** não são as estruturas clássicas interpostas na luxação irredutível.",
-   "C": "A estrutura interposta é o ligamento colateral **tibial** (medial) com a cápsula **medial**, e não o colateral fibular (lateral).",
-   "D": "O **trato iliotibial** e o **bíceps femoral** são estruturas laterais e não formam a casa de botão da luxação posterolateral irredutível."
+   "A": "**A.** A pata de ganso pode se interpor na lesão tipo Stener distal do colateral medial, entre o ligamento e a tíbia. Isso impede cicatrização, mas não é o encarceramento capsular típico da luxação irredutível com covinha.",
+   "C": "**C.** O termo cápsula parece correto, mas o colateral fibular está no lado lateral. O côndilo medial atravessa as partes moles mediais; trocar tibial por fibular muda o local da interposição.",
+   "D": "**D.** Trato iliotibial e bíceps femoral pertencem ao complexo lateral. Não correspondem ao mecanismo de passagem do côndilo medial pela cápsula e retenção das partes moles mediais dentro da articulação."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Exame e luxação irredutível; O lado medial; Canto posterolateral."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Exame e luxação irredutível",
+      "O lado medial",
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "exame-e-luxacao-irredutivel-a17fc1b9",
+      "o-lado-medial-2c6e9a4b",
+      "canto-posterolateral-a39e9622"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "ea6032e26a30175359dc2d9b4804975d78aca953cd4934fb5925ef3c768a743e"
+    }
+   ],
+   "questaoSha256": "16b96fe6659c70e96524a7431c98e2ebd1ccbad43fa0ee28a2c86dd921b6db75",
+   "comentarioSha256": "824cb77079a266adb2b6ce72ed07f27b0181446ba3d5bf4fb6574e6669387773"
+  }
  },
  "trauma-0106": {
   "incorretas": {
@@ -2722,19 +2748,44 @@
   "conferido": false
  },
  "trauma-0125": {
-  "conceito": "**Por que classificar pela anatomia.** A luxação do joelho pode reduzir espontaneamente antes do atendimento, e a direção do deslocamento (classificação de Kennedy: anterior, posterior, medial, lateral, rotatória) muitas vezes nem é conhecida. **Schenck** propôs classificar pelos **ligamentos rompidos**, o que reflete a energia do trauma e orienta diretamente o planejamento da reconstrução.\n\n**A classificação anatômica de Schenck (KD, knee dislocation).**\n\n| Tipo | Ligamentos lesados |\n|---|---|\n| KD-I | **Um** cruzado (LCA ou LCP), com o joelho luxado |\n| **KD-II** | **Os dois cruzados**, com **colaterais íntegros** |\n| KD-III M | Os dois cruzados e o **colateral medial** |\n| KD-III L | Os dois cruzados e o **colateral lateral e canto posterolateral** |\n| KD-IV | Os **quatro** ligamentos |\n| KD-V | Fratura-luxação |\n\nModificadores: **C** para lesão arterial e **N** para lesão nervosa (por exemplo, KD-III L C N).\n\n**O tipo KD-II.** É incomum: ruptura dos dois cruzados com preservação dos dois colaterais. O joelho é instável no plano sagital (gaveta anterior e posterior), mas estável em varo e valgo.\n\n**O que não pode faltar em qualquer luxação do joelho.**\n1. **Avaliação vascular**: a artéria poplítea fica fixa no hiato dos adutores e no arco do sóleo e é estirada na luxação. Índice tornozelo-braquial abaixo de 0,9 indica angiotomografia; ausência de pulso indica exploração imediata.\n2. **Avaliação do nervo fibular**, lesado sobretudo nos tipos KD-III L e KD-IV.\n3. Redução urgente e, se instável, fixador externo transarticular.",
-  "correta": "**Correta: B (KD-II).** Na classificação de Schenck, a ruptura dos **dois ligamentos cruzados** com **colaterais íntegros** define a luxação KD-II.",
+  "conceito": "O caso já informa a combinação que define **KD II**: os dois cruzados rompidos e os colaterais íntegros. A resposta é B. O detalhe decisivo não é saber para que lado a tíbia luxou, mas quais estruturas perderam continuidade.\n\nA classificação de Kennedy descrevia a direção da tíbia em relação ao fêmur. Essa informação pode desaparecer quando a luxação reduz antes da avaliação. Schenck organiza o quadro pelas lesões anatômicas, e a modificação inclui fratura periarticular e sufixos para complicações neurovasculares (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nNo esquema do resumo, KD I conserva função do cruzado posterior, com lesões colaterais variáveis. KD II perde os dois cruzados, mas preserva os colaterais. Se um colateral também se rompe, passa a KD III, medial ou lateral; se ambos, KD IV. KD V acrescenta a fratura periarticular. Não convém usar o número como simples contagem de qualquer ligamento: a combinação anatômica de cada classe precisa ser reconhecida.\n\nOs sufixos não substituem o tipo: C indica lesão circulatória arterial e N, neurológica. Mesmo sem esses sufixos no enunciado, todo joelho luxado exige avaliação vascular, com pulsos e índice tornozelo-braquial. Um padrão ligamentar aparentemente menos extenso não dispensa essa triagem.\n\nNesta pergunta, a integridade dos colaterais exclui os padrões III e IV. A ruptura de ambos os cruzados exclui o padrão I descrito no capítulo. Sobrou a combinação bicruzada de KD II.",
+  "correta": "**B.** KD II é a lesão dos cruzados anterior e posterior com os dois colaterais preservados. O enunciado fornece exatamente essa combinação, sem fratura periarticular ou sufixo neurovascular acrescentado.",
   "incorretas": {
-   "A": "**KD-I** é a luxação com lesão de apenas **um** ligamento cruzado.",
-   "C": "**KD-III** acrescenta à lesão dos dois cruzados a ruptura de **um colateral** (medial, KD-IIIM, ou lateral com canto posterolateral, KD-IIIL).",
-   "D": "**KD-IV** é a lesão dos **quatro** ligamentos principais."
+   "A": "**A.** No KD I do esquema consultado, o cruzado posterior permanece funcionando, com colaterais variáveis. A ruptura dos dois cruzados dada no caso não cabe nessa definição.",
+   "C": "**C.** KD III exige que, além dos dois cruzados, um colateral esteja lesado. O caso afirma a integridade dos colaterais, portanto não permite acrescentar M ou L.",
+   "D": "**D.** KD IV envolve os dois cruzados e os dois colaterais. É um padrão mais amplo que o descrito; a preservação de ambos os colaterais é justamente o dado que mantém o caso como II."
   },
   "referencias": [
-   "Schenck RC Jr. The dislocated knee. Instr Course Lect. 1994;43:127-136.",
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de luxação do joelho"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck; A artéria poplítea."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Classificação de Schenck",
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "classificacao-de-schenck-05833290",
+      "classificacao-de-schenck-6a3443c0",
+      "a-arteria-poplitea-b9951f36"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "6e7ce3bfbf8e86a3e55b71fbb92f1195fd933d68950ed7824b222d944bd2831f"
+    }
+   ],
+   "questaoSha256": "4538f65cbcd49b1dc3a168260d3151468949bc6f13a84ee10b1042e9722284cc",
+   "comentarioSha256": "9805fb049ad1c139c7a57bc7f43f3bd0949439ab365a639cbe2a0405b7cbe0df"
+  }
  },
  "trauma-0126": {
   "incorretas": {
@@ -4478,18 +4529,42 @@
   "conferido": false
  },
  "trauma-0222": {
-  "conceito": "**A classificação anatômica de Schenck.** Em vez de classificar a luxação do joelho pela direção do deslocamento (que muitas vezes reduz espontaneamente e não se conhece), Schenck classifica pelos **ligamentos rompidos**. Isso reflete a energia do trauma e orienta o planejamento da reconstrução.\n\n| Tipo | Ligamentos lesados |\n|---|---|\n| KD I | **Um** cruzado (LCA ou LCP), com o joelho luxado |\n| **KD II** | **Os dois cruzados**, com os **colaterais íntegros** |\n| KD III M | Os dois cruzados e o **colateral medial** |\n| KD III L | Os dois cruzados e o **colateral lateral com canto posterolateral** |\n| KD IV | Os **quatro** ligamentos |\n| KD V | Fratura-luxação |\n\nModificadores: **C** para lesão arterial e **N** para lesão nervosa.\n\n**O tipo KD II.** É incomum. O joelho fica instável no plano sagital (gaveta anterior e posterior positivas), mas estável em varo e valgo, porque os dois colaterais estão preservados.\n\n**O que nunca falta na luxação do joelho.**\n1. **Avaliação vascular**: a artéria poplítea fica fixa no hiato dos adutores e no arco do sóleo e é estirada na luxação. **Índice tornozelo-braquial abaixo de 0,9** indica angiotomografia; ausência de pulso, exploração imediata.\n2. **Nervo fibular**: mais lesado nas luxações com lesão lateral (KD III L e KD IV).\n3. Redução urgente e, se instável, fixador externo transarticular.\n4. Reconstrução ligamentar geralmente em tempo único ou estagiada, nas primeiras semanas.",
-  "correta": "**Correta: B (os dois ligamentos cruzados).** Na classificação de Schenck, o tipo **KD II** corresponde à ruptura dos **dois cruzados**, com os colaterais íntegros.",
+  "conceito": "No **KD II**, encontram-se lesionados os **dois ligamentos cruzados**, com colaterais íntegros. B é a alternativa correta. “II” não quer dizer duas estruturas escolhidas livremente entre todos os ligamentos do joelho.\n\nO cruzado anterior e o posterior formam o componente central do controle anteroposterior. Quando ambos se rompem, o padrão de luxação pode existir apesar de os colaterais não estarem rompidos. A classificação de Schenck identifica essa combinação anatômica, em vez de exigir que a direção original da luxação seja conhecida (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nIsso é útil porque muitos joelhos chegam já reduzidos. O alinhamento atual da radiografia não reconstrói, sozinho, tudo o que se rompeu; exame e RM ajudam a determinar o padrão. A classificação não deve transformar uma imagem reduzida em prova de que não houve luxação.\n\nPara comparar: KD I tem o cruzado posterior funcionando no esquema apresentado; KD III associa os dois cruzados a um colateral, e KD IV, aos dois colaterais. KD V inclui fratura periarticular. As letras M e L distinguem o lado no III; C e N registram, respectivamente, comprometimento circulatório e neurológico.\n\nOs distratores escolhem pares que parecem satisfazer a ideia de “duas lesões”, mas a regra não é aritmética. O critério é a associação específica dos cruzados com a preservação dos colaterais.",
+  "correta": "**B.** Os dois cruzados são a combinação lesada no KD II; os colaterais permanecem íntegros. A resposta deve ser completada mentalmente com essa preservação, que o separa do KD III e do IV.",
   "incorretas": {
-   "A": "A lesão isolada dos **dois colaterais**, sem os cruzados, não faz parte da classificação de luxação do joelho de Schenck.",
-   "C": "Um colateral com um cruzado não corresponde a nenhum tipo; o **KD III** exige os **dois** cruzados e um colateral.",
-   "D": "Um cruzado com o canto posterolateral também não é um tipo de Schenck; o canto posterolateral aparece no **KD III L**, junto com os dois cruzados."
+   "A": "**A.** A ruptura dos dois colaterais não define KD II. No padrão KD IV, eles estão lesados junto com ambos os cruzados; não basta selecionar dois ligamentos para obter o tipo II.",
+   "C": "**C.** Um colateral com um cruzado não é a definição de KD II. A classificação exige perda dos dois cruzados nesse tipo, e não qualquer par formado por uma estrutura central e outra periférica.",
+   "D": "**D.** A associação de um cruzado ao canto posterolateral não reproduz a lesão bicruzada com colaterais íntegros. O canto é um complexo periférico; sua presença não substitui o segundo cruzado na definição pedida."
   },
   "referencias": [
-   "Schenck RC Jr. The dislocated knee. Instr Course Lect. 1994;43:127-136."
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Classificação de Schenck"
+     ],
+     "blocos": [
+      "classificacao-de-schenck-05833290",
+      "classificacao-de-schenck-6a3443c0"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "0ced25476b21cebb0fab2dcb43b21105ddaf96b97a5e226d6d02609285a50445"
+    }
+   ],
+   "questaoSha256": "e985b0f2c838eb96ad27266c7f0aa3a009099cfd7230c08e4e39267851c87bca",
+   "comentarioSha256": "096fe62d89e55b9c45c1e5c9568fe02d0b886dd2cb9c322e539cc6884c297467"
+  }
  },
  "trauma-0223": {
   "incorretas": {
@@ -5970,15 +6045,47 @@
   "conferido": false
  },
  "trauma-0298": {
+  "conceito": "A resposta é **100%**, alternativa D, porque esse foi o **valor preditivo negativo observado no estudo de Mills** citado pelo capítulo para ITB acima de 0,9 e lesão arterial importante. O número precisa permanecer ligado ao estudo, ao corte e ao desfecho avaliados.\n\nValor preditivo negativo responde: entre os pacientes cujo teste ficou no grupo considerado negativo, quantos não tinham a lesão importante que se procurava? Não é sensibilidade, não é frequência de lesão arterial nas luxações e não diz que todo pulso palpável exclui lesão (Rockwood, 10ª ed., cap. 61, “O índice tornozelo-braquial”).\n\nO ITB compara pressão sistólica no tornozelo com a braquial. Um valor acima de 0,9 é tranquilizador no algoritmo descrito; abaixo de 0,90, investiga-se a árvore arterial com angiotomografia. A observação após resultado normal inclui reavaliações vasculares seriadas, porque o paciente sofreu um trauma capaz de lesar a poplítea.\n\n**Um resultado de estudo não é promessa universal.** “100%” nesta questão não deve ser convertido em autorização para ignorar membro frio, deterioração clínica ou ausência de pulso. O capítulo mantém a exploração imediata diante de sinais duros e ressalta que pulso palpável sozinho não afasta lesão.\n\nTambém é importante não trocar o desfecho “lesão arterial importante” por “qualquer alteração da íntima”. O resumo descreve lesões não oclusivas acompanhadas clinicamente. A questão cobra o desempenho de uma estratégia de triagem no estudo citado, e não a impossibilidade biológica de qualquer anormalidade vascular.",
+  "correta": "**D.** É o VPN de 100% informado para o estudo citado. A interpretação correta conserva o contexto: ITB acima de 0,9, lesão arterial importante e manutenção do exame clínico seriado.",
   "incorretas": {
-   "A": "**Muito baixo.** Com VPN de 40%, o ITB não serviria como triagem; o valor descrito é próximo de 100%.",
-   "B": "**Muito baixo.** O ITB normal é muito mais confiável do que isso para excluir lesão arterial importante.",
-   "C": "**Subestima.** O valor preditivo negativo relatado para ITB acima de 0,9 é próximo de 100%."
+   "A": "**A.** Um VPN de 40% significaria que apenas 40% dos pacientes com teste negativo estariam livres da lesão importante. Não é o resultado apresentado no capítulo e não deve ser confundido com estimativas de frequência de lesão vascular nas luxações.",
+   "B": "**B.** 60% também não é o VPN informado. A alternativa propõe um desempenho muito diferente do estudo citado; não há no resumo justificativa para substituir o dado por esse valor intermediário.",
+   "C": "**C.** 80% indicaria que ainda haveria lesão importante em 20% do grupo com resultado negativo. Esse não foi o achado descrito por Mills no resumo; o valor cobrado é 100%, com as limitações de interpretação do estudo."
   },
-  "conceito": "**Por que a luxação do joelho assusta.** A luxação verdadeira do joelho rompe pelo menos dois ou três dos grandes ligamentos e pode lesar a **artéria poplítea**, que está **presa** acima (hiato dos adutores) e abaixo (arco do sóleo) e não escapa do deslocamento. A lesão arterial ocorre em cerca de **10 a 40%** das séries, mais na luxação **anterior** (estiramento) e **posterior** (contusão direta). Até metade das luxações se **reduz espontaneamente** antes da chegada ao hospital, e o joelho pode parecer \"só\" instável.\n\n**O índice tornozelo-braquial.** O **ITB** é a pressão sistólica do tornozelo dividida pela do braço, medida com Doppler. Um **ITB acima de 0,9** tem **valor preditivo negativo próximo de 100%** para lesão arterial que precise de cirurgia (estudo de **Mills**): permite observar o paciente com exames seriados, sem angiografia de rotina. **ITB abaixo de 0,9** exige **angiotomografia** (ou arteriografia) e avaliação do cirurgião vascular.\n\n**Os pulsos não bastam.** Pulsos palpáveis **não excluem** lesão da íntima, que pode trombosar horas depois. Por outro lado, **isquemia evidente** (pulso ausente, membro frio e pálido) após a redução é indicação de **exploração imediata** no centro cirúrgico, sem perder tempo com exames. A janela para revascularizar é de cerca de **6 a 8 horas**; depois disso, a taxa de amputação sobe muito. Na revascularização, faz-se **fasciotomia** profilática.\n\n**O resto da avaliação.** Lesão do **nervo fibular** comum (até cerca de 25%, mais nas lesões posterolaterais), classificação de **Schenck** pelos ligamentos rompidos (KD I a V), estabilização com fixador externo quando instável ou após reparo vascular, e reconstrução ligamentar precoce ou em etapas.\n\n**Na prova:** ITB **acima de 0,9** na luxação do joelho = VPN **cerca de 100%**; abaixo de 0,9, **angiotomografia**; isquemia franca, **exploração imediata**.",
-  "correta": "**100%.** Um ITB acima de 0,9 praticamente exclui lesão arterial que exija intervenção, permitindo observação clínica seriada.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: A artéria poplítea."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "a-arteria-poplitea-b9951f36",
+      "a-arteria-poplitea-c275923c",
+      "a-arteria-poplitea-a0a17d81",
+      "a-arteria-poplitea-6710572a",
+      "a-arteria-poplitea-0851428b",
+      "a-arteria-poplitea-82164fda",
+      "a-arteria-poplitea-bca7b985"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "a7bb22f9971f7200cc46db54cf23ea129bf19de943b12010010f0ec997b65bff"
+    }
+   ],
+   "questaoSha256": "1093e8a3f1cb722827f18c96a5d1018fa675f2b38b2829afbd1967150029279e",
+   "comentarioSha256": "c21f8e9c1f889f0159758e3969fcec12a94547197e237a204441acfc16ddce24"
+  }
  },
  "trauma-0299": {
   "conceito": "### Fratura do pilão tibial: acessos\n**Princípio:** primeiro as **partes moles**. **Fixador externo em ponte** (com ou sem fixação da fíbula), depois fixação definitiva em ~**7 a 21 dias**, quando surgem as rugas na pele (\"**sinal da ruga**\").\n\n| Acesso | Exposição | Prós e contras |\n|---|---|---|\n| ==Anteromedial== | ==maior área== da superfície articular | pele **fina**, subcutânea; **deiscência** e exposição do implante |\n| Anterolateral | Chaput (anterolateral), superfície central | **melhor cobertura**; risco ao **fibular superficial** |\n| Posteromedial | fragmento posteromedial | janela restrita; feixe tibial posterior |\n| Posterolateral | fragmento de **Volkmann** e fíbula | janela restrita |\n\n### Fragmentos típicos\n- **Medial.**\n- **Anterolateral (Chaput).**\n- **Posterolateral (Volkmann).**\n\n### Classificações\n- **Rüedi-Allgöwer** (I a III).\n- **AO 43.**\n\n### Ponte cutânea\nA recomendação clássica é de **7 cm** entre incisões; hoje se aceita menos com bom planejamento.\n\n> **Na prova:** maior exposição da tíbia distal = ==anteromedial==.",
@@ -8443,26 +8550,87 @@
   "conferido": false
  },
  "trauma-0556": {
+  "conceito": "O joelho deve estar em **extensão completa**, alternativa A. Uma abertura medial maior que 10 graus nessa posição sugere lesão que ultrapassa o colateral medial e envolve também os cruzados e o canto posteromedial, conforme a descrição do capítulo.\n\nO teste em valgo abre o lado medial. Em alguma flexão, ele permite avaliar com maior destaque o colateral medial; em extensão, outras estruturas capsuloligamentares também participam da contenção. Se a articulação abre de forma importante mesmo estendida, não é adequado atribuir o achado apenas a uma lesão isolada do colateral (Rockwood, 10ª ed., cap. 61, “Radiografias com estresse”).\n\nO resumo relaciona especificamente **mais de 10 graus em extensão** ao conjunto LCA, LCP, colateral medial e canto posteromedial. O canto medial contribui com a restrição ao valgo em extensão e afrouxa com a flexão. Assim, a posição do joelho integra o significado da medida, não é um detalhe intercambiável do exame.\n\n**Graus e milímetros não são a mesma informação.** A tabela de radiografias com estresse também traz diferenças lineares de abertura medial entre lados, mas a questão fornece abertura angular de 10 graus. Não se deve converter um corte no outro ou aplicar o número sem conservar a posição e a técnica em que foi descrito.\n\nO objetivo é reconhecer um padrão combinado. O exame completo e a RM ajudam a definir as estruturas e seus locais de ruptura; o achado apresentado não autoriza planejar tratamento de colateral isolado.",
+  "correta": "**A.** Em extensão completa, a grande abertura medial vence restritores além do colateral. É nessa posição que o resumo relaciona o achado ao conjunto de cruzados, colateral medial e canto posteromedial.",
   "incorretas": {
-   "B": "Com 10° de flexão, a cápsula já começa a relaxar, e o teste não é o padrão para essa interpretação.",
-   "C": "Com 20° de flexão, o teste não é o padrão para avaliar a lesão combinada.",
-   "D": "Com 30° de flexão, o teste isola o colateral medial."
+   "B": "**B.** Dez graus de flexão não são a posição descrita para esse critério. A pergunta exige preservar a condição de extensão completa em que a participação conjunta dos restritores dá significado ao achado.",
+   "C": "**C.** Vinte graus de flexão também mudam a condição do teste. Um valor obtido em determinado ângulo não pode ser usado como se tivesse a mesma interpretação em qualquer posição do arco.",
+   "D": "**D.** Trinta graus é a posição que ajuda a isolar o colateral medial. Abertura importante em extensão, ao contrário, indica perda de restritores adicionais e sustenta a combinação multiligamentar do enunciado."
   },
-  "conceito": "O **teste de estresse em valgo** avalia o lado **medial** do joelho, e a **posição** do joelho muda o que é testado:\n\n**com o joelho a 30° de flexão**: a cápsula posterior e os cruzados ficam **relaxados**; o teste isola o **colateral medial**. Abertura nessa posição, com o joelho fechado em extensão, indica lesão **isolada** do colateral medial;\n\n**com o joelho em extensão completa**: a **cápsula posterior** e os **cruzados** ficam **tensos** e ajudam a segurar o valgo. Se o joelho **abrir em extensão**, a lesão vai **além** do colateral medial: envolve o **canto posteromedial** e os **cruzados** (LCA e LCP).\n\n**A interpretação na luxação do joelho**: uma abertura medial grande (mais de 10 mm ou graus, conforme a fonte) **em extensão** indica lesão combinada do LCA, do LCP, do colateral medial e do canto posteromedial: um padrão KD III medial.\n\n**A conduta**: lesões combinadas assim costumam exigir **reconstrução** dos cruzados e reparo ou reconstrução do canto posteromedial.\n\n**Na prova**: o teste que indica lesão do LCA, LCP, LCM e canto posteromedial é feito com o joelho em **extensão**.",
-  "correta": "Em extensão, a cápsula posterior e os cruzados seguram o valgo; se o joelho abrir, todos estão lesados.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; O lado medial."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Imagem",
+      "O lado medial"
+     ],
+     "blocos": [
+      "imagem-bfe4fe1f",
+      "o-lado-medial-9548c808",
+      "imagem-1f49da70"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "ee383697d59892370c3c3e94ef97091e4e48ed59121883a3e0be94705e5eeab5"
+    }
+   ],
+   "questaoSha256": "aa4ab338134e0c19706b1b64431db181b4670a2310e77dcc02da51067ab64642",
+   "comentarioSha256": "7513633e7974c88bff375a730d6de379d6091aa7ff2ff9b8f9df8318059b7e7b"
+  }
  },
  "trauma-0557": {
+  "conceito": "A associação que pode justificar adiar a reconstrução dos cruzados é o **colateral medial desinserido do fêmur**, alternativa C. Essa avulsão proximal tem boa possibilidade de cicatrizar durante a proteção inicial, permitindo reavaliar se será necessário operar também o lado medial.\n\nA recomendação geral do capítulo favorece reconstrução precoce quando as condições permitem, mas o momento depende das partes moles, da perfusão e das lesões associadas. Para os cruzados rotos com avulsão femoral do colateral medial, o resumo descreve espera de 6 a 8 semanas e posterior reconstrução dos cruzados, aproveitando a cicatrização do colateral (Rockwood, 10ª ed., cap. 61, “Quando operar”).\n\n**Lado e localização mudam a conduta.** O lado lateral não tem o mesmo comportamento de cicatrização. O canto posterolateral costuma receber reconstrução em 2 a 3 semanas, e reparos isolados de avulsões proximais do colateral fibular e poplíteo tiveram resultados ruins nas séries citadas.\n\nNa avulsão distal do colateral medial, a pata de ganso pode se interpor e impedir contato do ligamento com a tíbia: é a lesão tipo Stener. Por isso não se deve aplicar a ela, automaticamente, a espera destinada à avulsão femoral favorável à cicatrização.\n\nA indicação de tratamento tardio aqui é ligamentar e específica. Não significa adiar uma emergência vascular, síndrome compartimental, luxação irredutível ou exposição. Esses problemas têm prioridade própria e precisam ser resolvidos independentemente do plano definitivo dos cruzados.",
+  "correta": "**C.** A desinserção femoral do colateral medial é a exceção específica para esperar sua cicatrização, descrita em 6 a 8 semanas. Depois se reavalia o lado medial e se reconstrói o pivô central conforme necessário.",
   "incorretas": {
-   "A": "O colateral lateral cicatriza mal e pede reparo precoce.",
-   "B": "O colateral lateral, em qualquer inserção, pede reparo precoce.",
-   "D": "O colateral medial desinserido na tíbia pode ficar com a pata de ganso interposta e não cicatrizar."
+   "A": "**A.** A avulsão femoral do colateral lateral não compartilha a expectativa favorável da medial proximal. O resumo relata mau resultado do reparo lateral isolado e favorece reconstrução ou reforço em janela precoce.",
+   "B": "**B.** Troca a lesão por uma estrutura lateral e uma inserção que não descreve a avulsão femoral medial da exceção. O colateral lateral é fibular, com inserção na cabeça da fíbula; não há fundamento para usar esse enunciado como motivo de aguardar cicatrização medial.",
+   "D": "**D.** A lesão medial distal pode ter interposição da pata de ganso, impedindo cicatrização no lugar. É justamente um padrão que pode exigir reparo agudo, em vez de receber a espera indicada para a avulsão femoral."
   },
-  "conceito": "Na **luxação do joelho** com ruptura dos dois **cruzados** (LCA e LCP), o momento da reconstrução depende das lesões **colaterais** associadas.\n\n**O colateral medial**: tem **boa capacidade de cicatrização**, sobretudo quando a lesão é na **inserção femoral** (proximal), onde a irrigação é boa. Nesse caso, pode-se **imobilizar** em órtese, esperar a cicatrização do colateral medial e fazer a **reconstrução dos cruzados de forma tardia**, com o joelho já com movimento e menos inflamado.\n\n**As lesões que pedem cirurgia precoce**:\n\n**colateral lateral e canto posterolateral**: cicatrizam mal; o reparo é feito **cedo** (nas primeiras 2 a 3 semanas), junto com a reconstrução dos cruzados;\n\n**colateral medial avulsionado na tíbia** com a pata de ganso interposta (lesão tipo Stener do joelho): não cicatriza no lugar e precisa de reparo;\n\n**lesões irredutíveis**, **expostas** ou com **lesão vascular**.\n\n**Na prova**: uma das indicações para reconstrução tardia é a lesão do LCA e LCP com o **colateral medial desinserido no fêmur**.",
-  "correta": "O colateral medial desinserido no fêmur cicatriza bem com órtese, e os cruzados podem ser reconstruídos depois.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Tratamento; Canto posterolateral; O lado medial."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Tratamento",
+      "Canto posterolateral",
+      "O lado medial"
+     ],
+     "blocos": [
+      "tratamento-c73151d3",
+      "canto-posterolateral-e1623413",
+      "o-lado-medial-2c6e9a4b",
+      "tratamento-0fd132be",
+      "canto-posterolateral-474af362"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "5cf78e02d181b00205562177a16593f2fb9f63f8624e6abc62ab919d62b71ef2"
+    }
+   ],
+   "questaoSha256": "7c83132b4136ef112082fc4a2f7a5530c3c637c8538804bffdb90285962d13f6",
+   "comentarioSha256": "f55be7c6d621ac3d8b97191f95b5c127767c836cefba706e6057b329d8535bd5"
+  }
  },
  "trauma-0558": {
   "incorretas": {
@@ -9817,15 +9985,47 @@
   "conferido": false
  },
  "trauma-0704": {
+  "conceito": "Um ITB de **0,91 está na faixa normal** informada pelo capítulo, de 0,91 a 1,3. A resposta é A. O valor é próximo do limite, mas não deve ser arredondado para baixo e classificado como menor que 0,9.\n\nO índice tornozelo-braquial é a pressão sistólica do tornozelo dividida pela do braço. O resumo descreve a medida com manguito e Doppler e recomenda realizá-la em todo joelho luxado, mesmo quando o pulso é palpável. A artéria pode ter lesão importante sem completa ausência inicial de pulso (Rockwood, 10ª ed., cap. 61, “A artéria poplítea”).\n\nO algoritmo separa dois caminhos: ITB abaixo de 0,90 exige investigação arterial por angiotomografia; acima de 0,9, com avaliação clínica compatível, permite observação com **exames seriados**. O resumo especifica admissão, 4 a 6 horas, 24 e 48 horas. Normal não significa dispensar seguimento depois de uma luxação.\n\n**A perfusão clínica prevalece sobre uma leitura isolada.** Membro frio e sem pulso, com a zona de lesão conhecida, constitui situação de exploração imediata. Um sinal duro não deve ser ignorado porque alguém anotou um índice aparentemente tranquilizador. A questão, porém, não descreve essa emergência: pede a classificação de 0,91.\n\nDoença arterial periférica também interfere no índice, e o resumo recomenda comparação contralateral no idoso. Esses cuidados ajudam a entender por que o resultado é uma ferramenta de triagem dentro do exame vascular, e não um certificado definitivo de ausência de qualquer lesão.",
+  "correta": "**A.** 0,91 pertence ao intervalo normal da fonte. Na ausência de sinais clínicos de alarme, esse valor favorece vigilância seriada, sem indicar investigação invasiva apenas por estar próximo do corte.",
   "incorretas": {
-   "B": "**Não é anormal.** O valor está acima de 0,9; a arteriografia seria indicada se o ITB fosse menor que esse corte.",
-   "C": "**Não é anormal.** A angiotomografia fica para ITB abaixo de 0,9.",
-   "D": "**Não é anormal.** A exploração imediata é reservada aos sinais duros de lesão arterial."
+   "B": "**B.** O primeiro erro é chamar 0,91 de anormal. Além disso, o capítulo reserva papel mais seletivo à arteriografia convencional; ela não é exigida por um índice que está dentro da faixa normal.",
+   "C": "**C.** A angiotomografia é o caminho descrito para ITB abaixo de 0,90, não para 0,91 isoladamente. A opção mistura uma indicação correta de exame com uma classificação errada do número dado.",
+   "D": "**D.** A exploração imediata se relaciona a sinais duros de isquemia e lesão localizada, não a esse índice normal isolado. Não se pode acrescentar ao caso ausência de pulso ou membro frio que o enunciado não fornece."
   },
-  "conceito": "**O índice tornozelo-braquial.** É a razão entre a **pressão sistólica** no tornozelo (artéria dorsal do pé ou tibial posterior, com Doppler) e a do **braço**. No trauma, é a triagem vascular de escolha na **luxação do joelho** e nas lesões de alto risco para a artéria poplítea.\n\n**O corte de 0,9.** Um ITB de **0,9 ou mais** é **normal**, com **valor preditivo negativo próximo de 100%** para lesão arterial que precise de intervenção (estudo de Mills). O paciente pode ser **observado** com exame clínico e ITB seriados, sem angiografia de rotina. Um valor de **0,91** está acima do corte e é considerado **normal**. Um ITB **abaixo de 0,9** é anormal e indica **angiotomografia** (ou arteriografia) e avaliação do cirurgião vascular.\n\n**Quando não esperar exames.** Sinais **duros** de lesão arterial (ausência de pulso, isquemia evidente, hematoma pulsátil, sangramento ativo, frêmito ou sopro) indicam **exploração cirúrgica imediata**, com arteriografia no centro cirúrgico se necessário. Cada hora conta: após **6 a 8 horas** de isquemia, a amputação se torna muito mais provável.\n\n**As armadilhas.** O **pulso palpável não exclui** lesão da íntima. O ITB pode ser falsamente normal em pacientes com vasos **não compressíveis** (diabetes, doença renal, idosos com calcificação). Por isso, o exame deve ser **repetido** nas primeiras 24 a 48 horas, e qualquer piora leva a imagem.\n\n**Na prova:** ITB **0,9 ou mais** = **normal** (observar); abaixo de 0,9 = **angiotomografia**; sinais duros = **exploração** imediata.",
-  "correta": "**Normal.** Um ITB de 0,91 está acima do corte de 0,9, com alto valor preditivo negativo para lesão arterial, e permite observação clínica seriada.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: A artéria poplítea."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "a-arteria-poplitea-b9951f36",
+      "a-arteria-poplitea-4ce45864",
+      "a-arteria-poplitea-a0a17d81",
+      "a-arteria-poplitea-6710572a",
+      "a-arteria-poplitea-0851428b",
+      "a-arteria-poplitea-82164fda",
+      "a-arteria-poplitea-5543f024"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "376990f05077251777744a23c475d842bdbefd4de8a5829ec30e033231c7c10f"
+    }
+   ],
+   "questaoSha256": "01a30338458d6c1198983cd852c5f0b9fc5ee864aabaa06b9381be4b457dd7c6",
+   "comentarioSha256": "a2812f4b8cda86b9b207ef7ac8a0a9bf732b5c4d31cf5711a82999e9b69b3fca"
+  }
  },
  "trauma-0705": {
   "conceito": "**A fasciotomia trata uma emergência de perfusão e deve preceder a estabilização da fratura.** A ordem evita que o tempo gasto na osteossíntese prolongue a isquemia muscular. Depois da descompressão, estabilizar o osso protege as partes moles e facilita seu cuidado.\n\nO procedimento deve ser completo, com incisão cutânea ao longo do compartimento, abertura fascial e inspeção de toda a musculatura. Uma pequena abertura subcutânea não permite verificar extensão da necrose e pode deixar pele ou fáscia restringindo o volume. O músculo inviável precisa ser desbridado, pois deixá-lo aumenta o risco de infecção.\n\nAs incisões ficam abertas. Fechar imediatamente reconstitui um envoltório capaz de manter a pressão alta. O resumo orienta revisão em cerca de 48 horas, confirmando viabilidade antes de fechar sem tensão ou cobrir. A fasciotomia não termina quando a fáscia é cortada: inspeção, desbridamento e plano para a ferida fazem parte do tratamento.\n\n**Na Biblioteca, leia “Fasciotomia”, “A ferida: aberta, revisão em 48 horas” e “A fratura associada”.** A sequência explica por que uma operação aparentemente menor ou um fechamento precoce podem comprometer o objetivo da descompressão.",
@@ -10320,15 +10520,46 @@
   }
  },
  "trauma-0745": {
+  "conceito": "A sigla **KD IIC** precisa ser lida em duas partes: **KD II**, lesão dos cruzados anterior e posterior com colaterais íntegros; **C**, lesão circulatória arterial. A combinação da alternativa B inclui os dois cruzados e a artéria poplítea.\n\nA classificação de Schenck modificada descreve as estruturas comprometidas. Isso evita depender da direção da luxação original, muitas vezes desconhecida porque o joelho chega reduzido. O número romano informa o padrão ligamentar, e os sufixos acrescentam informações que não são intercambiáveis: C é circulatório, N é neurológico (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\n**Lesão arterial não transforma II em III.** Para chegar ao KD III, precisa existir lesão de um dos colaterais além dos dois cruzados. O comprometimento da poplítea é registrado por uma letra, sem inventar ruptura colateral.\n\nA poplítea está fixada proximalmente no hiato dos adutores e distalmente no arco do sóleo. Por isso tem pouca capacidade de acompanhar a separação traumática dos ossos. A lesão pode ir da íntima à secção, e a gravidade vascular participa da urgência, independentemente do número do tipo ligamentar.\n\nO sistema de classificação organiza a descrição; não substitui a avaliação de perfusão. O capítulo recomenda pulsos e ITB em todo joelho luxado e ação imediata diante de sinais duros de isquemia. Na questão, basta conservar a diferença entre padrão anatômico e sufixo vascular para não cair no KD III-C oferecido como distrator.",
+  "correta": "**B.** Os dois cruzados correspondem a II, e a artéria poplítea corresponde a C. A alternativa não acrescenta lesão colateral, mantendo a definição de KD IIC.",
   "incorretas": {
-   "A": "**Padrão inexistente.** A lesão do LCA com o colateral lateral não forma um tipo de Schenck, que exige os cruzados na base da classificação.",
-   "C": "**É o KD III.** Os dois cruzados com um colateral definem o KD III, sem o sufixo vascular.",
-   "D": "**É o KD IIIC.** Os dois cruzados, um colateral e a lesão arterial correspondem ao KD IIIC."
+   "A": "**A.** Não inclui o cruzado posterior nem a lesão arterial. Cruzado anterior com colateral lateral não é o padrão bicruzado de II e tampouco explica o sufixo C.",
+   "C": "**C.** Os dois cruzados com um colateral formam KD III. Além de trocar a categoria, a alternativa omite a lesão circulatória que a letra C exige.",
+   "D": "**D.** Inclui corretamente a artéria, mas acrescenta um colateral roto. Esse conjunto seria KD III-C, com especificação do lado quando conhecida, e não KD II-C."
   },
-  "conceito": "**A classificação de Schenck.** Classifica as **luxações do joelho** pelos **ligamentos rompidos**, o que é mais útil que a direção do deslocamento (muitas se reduzem sozinhas). **KD I**: lesão de **um cruzado** (LCA ou LCP) com luxação. **KD II**: lesão dos **dois cruzados**, com os **colaterais íntegros**. **KD III**: os dois cruzados e **um colateral**; **IIIM** (medial) ou **IIIL** (lateral, incluindo o canto posterolateral). **KD IV**: os dois cruzados e os **dois colaterais**. **KD V**: luxação com **fratura** periarticular (fratura-luxação).\n\n**A modificação de Wascher.** Acrescenta **sufixos** para lesões associadas: **C** para lesão **vascular** (circulation), geralmente da **artéria poplítea**, e **N** para lesão **neurológica** (nerve), geralmente do **fibular comum**. Assim, **KD IIC** é a lesão dos **dois cruzados** com **lesão da artéria poplítea**. Um KD IIIL-N é a lesão dos dois cruzados e do canto posterolateral com lesão do fibular.\n\n**As lesões associadas.** A **artéria poplítea** está presa acima (hiato dos adutores) e abaixo (arco do sóleo) e se lesa em cerca de 10 a 40% dos casos. O **fibular comum** se lesa em até cerca de 25%, sobretudo nas lesões do lado **lateral** (KD IIIL e IV). A avaliação vascular com **ITB** é obrigatória; abaixo de 0,9, angiotomografia; isquemia franca, exploração imediata.\n\n**O tratamento.** Reparo vascular urgente com **fasciotomia**, estabilização com **fixador externo** se necessário, e reconstrução ligamentar, geralmente **precoce** (nas primeiras semanas) em um ou dois tempos.\n\n**Na prova:** Schenck **KD II** = **dois cruzados**; sufixo **C** = lesão **arterial** (poplítea); **N** = lesão **nervosa**.",
-  "correta": "**Dos cruzados anterior e posterior e da artéria poplítea.** O KD II indica lesão dos dois cruzados com colaterais íntegros, e o sufixo C de Wascher acrescenta a lesão vascular poplítea.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck; A artéria poplítea."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Classificação de Schenck",
+      "A artéria poplítea"
+     ],
+     "blocos": [
+      "classificacao-de-schenck-6a3443c0",
+      "classificacao-de-schenck-6ad056db",
+      "a-arteria-poplitea-9f539f11",
+      "a-arteria-poplitea-b9951f36",
+      "a-arteria-poplitea-0851428b"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "050af0cf1a2caa02bbe7f985f788a2d617b294d53a30cbf6d1df1656202fad07"
+    }
+   ],
+   "questaoSha256": "05be1e972b386d7010ae3cb5a223e58937ffa97a3a64b1b0aca797061c719fa9",
+   "comentarioSha256": "2143c77eb0525f72795b594b75e90c663e6fc280758e186aa21ea4b11159bbef"
+  }
  },
  "trauma-0746": {
   "incorretas": {
@@ -13670,15 +13901,45 @@
   "conferido": false
  },
  "trauma-0950": {
+  "conceito": "O enunciado pede a **exceção** entre as indicações cirúrgicas. A separação de 2 mm entre fragmentos, isoladamente, não exige operar; a resposta é A. Para decidir, é preciso separar três informações: distância entre fragmentos, degrau na superfície articular e funcionamento do mecanismo extensor.\n\nA patela transmite a tração do quadríceps à tíbia e afasta o tendão do centro de rotação, aumentando sua vantagem mecânica. Por isso, o tratamento procura preservar osso, recuperar a superfície articular e manter extensão ativa. Uma fratura pouco desviada com retináculos íntegros pode cumprir esses objetivos sem fixação (Rockwood, 10ª ed., cap. 60, “Tratamento não cirúrgico e indicações cirúrgicas”).\n\n**Os dois cortes do resumo não são intercambiáveis.** Na classificação descritiva, fratura desviada significa separação acima de 3 mm ou degrau acima de 2 mm. Na indicação de tratamento apresentada pelo capítulo, a incongruência articular de **3 mm ou mais** é cirúrgica; abaixo de 3 mm, com extensor íntegro, pode-se tratar sem cirurgia. O número usado para descrever uma fratura não deve ser transplantado automaticamente para outra medida ou para uma indicação.\n\nO paciente precisa conseguir transmitir a contração até a tíbia. A elevação da perna estendida ajuda a testar essa competência, mas não elimina indicação por fratura exposta, fragmento livre ou incongruência significativa. Quando o tratamento é não cirúrgico, a proteção é em extensão, geralmente por 4 a 6 semanas, com progressão orientada pelo padrão, pela estabilidade e pelo controle radiográfico.\n\nA alternativa A, portanto, não equivale a dizer que “qualquer fratura com 2 mm fica sem cirurgia”. Ela diz apenas que esse desvio, sozinho, não é a indicação listada; os demais critérios continuam valendo.",
+  "correta": "**A.** Dois milímetros de separação dos fragmentos não constituem, isoladamente, indicação cirúrgica no algoritmo consultado. É necessário verificar a superfície articular e o extensor. Se houver perda da extensão ou corpo livre, o pequeno desvio não neutraliza essa indicação.",
   "incorretas": {
-   "B": "**Indicação.** Uma incongruência de 3 mm supera o limite de 2 mm de degrau articular.",
-   "C": "**Indicação.** A perda da extensão ativa exige reconstruir o aparelho extensor.",
-   "D": "**Indicação.** Um fragmento osteocondral livre na articulação deve ser fixado ou retirado."
+   "B": "**B.** A incongruência de 3 mm já alcança o corte cirúrgico do capítulo. Aqui se mede a perda de alinhamento da superfície articular, e não apenas a distância entre os fragmentos; por isso o número não pode ser comparado à alternativa A como se ambos descrevessem a mesma coisa.",
+   "C": "**C.** A perda da função extensora mostra que a transmissão de força está comprometida. Consolidar osso sem restaurar esse mecanismo deixaria o paciente com dificuldade de estender ativamente o joelho. É uma indicação própria, mesmo que outro parâmetro radiográfico pareça pequeno.",
+   "D": "**D.** O fragmento osteocondral livre é uma indicação citada no resumo. A avaliação deve decidir se ele pode ser recuperado ou precisa ser retirado; o ponto é que o tratamento não se limita a imobilizar a fratura ignorando o fragmento intra-articular."
   },
-  "conceito": "**Quando operar a patela.** A patela é o maior sesamoide do corpo e o **fulcro** do aparelho extensor: aumenta o braço de alavanca do quadríceps. A decisão cirúrgica responde a duas perguntas: o **aparelho extensor** funciona, e a **superfície articular** está congruente?\n\n**As indicações cirúrgicas clássicas.** **Perda da extensão ativa** (lesão do mecanismo extensor, com ruptura dos retináculos). **Degrau articular** (incongruência) acima de **2 mm**. **Diástase** entre os fragmentos acima de **3 mm**. **Fragmento osteocondral** livre dentro da articulação. Fraturas **expostas**. Fraturas com **cominuição** e desvio que comprometem a superfície. Uma incongruência de **3 mm** passa do limite e indica cirurgia; um desvio de **2 mm** entre os fragmentos fica **abaixo** do limite de diástase e, com o extensor íntegro, pode ser tratado sem cirurgia.\n\n**O tratamento conservador.** Fraturas com **extensor íntegro**, desvio de até 2 a 3 mm e degrau de até 2 mm: **imobilização em extensão** (órtese ou gesso cilíndrico) com carga permitida por 4 a 6 semanas, seguida de ganho progressivo de flexão. As fraturas **verticais** (longitudinais), que não comprometem o extensor, costumam ir bem sem cirurgia.\n\n**As técnicas cirúrgicas.** **Banda de tensão** com dois fios de Kirschner paralelos (ou parafusos canulados) e cerclagem em oito anterior, que converte a tração do quadríceps em compressão na superfície articular. **Placas** de baixo perfil nas cominutivas. **Excisão parcial** do polo inferior cominutivo com reinserção do tendão patelar perto da superfície articular. **Patelectomia total** apenas como último recurso, pela perda de força. Complicações: **material saliente** e dor (a mais comum, com retirada frequente), perda de redução, artrose patelofemoral e rigidez.\n\n**Na prova:** operar a patela se **extensor perdido**, **degrau acima de 2 mm**, **diástase acima de 3 mm** ou **fragmento livre**; desvio de 2 mm com extensor íntegro não é indicação.",
-  "correta": "**Desvio dos fragmentos de 2 mm.** Fica abaixo do limite de 3 mm de diástase e, com o extensor íntegro, permite tratamento conservador.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Tratamento não cirúrgico e indicações cirúrgicas; Classificação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Tratamento não cirúrgico e indicações cirúrgicas",
+      "Classificação"
+     ],
+     "blocos": [
+      "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-3f80f5d4",
+      "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89",
+      "classificacao-bab0c782",
+      "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "7f83c8cdf4239babcf99fdc54dd0e2ae16527699aa4f3296e7e097ce2cbbf0ce"
+    }
+   ],
+   "questaoSha256": "8a1d5eebefb3311cace4dd0118b61daf7b427b1c9f6f564c179ccffeee4a89f1",
+   "comentarioSha256": "9ed67bfbf4305385fcd7e2520a5bc61c6198a9853415425ccf203ae267cee733"
+  }
  },
  "trauma-0951": {
   "conceito": "A tríade não é apenas uma lista de três achados que coincidem por acaso. A **energia disponível insuficiente** pode comprometer a produção hormonal e o ciclo menstrual; a redução estrogênica favorece perda de massa óssea. Nesse contexto, a carga repetida fica mais difícil de reparar e aumenta a vulnerabilidade à fratura por estresse.\n\nNa terminologia atual descrita no capítulo, o conjunto é **baixa disponibilidade de energia, irregularidade menstrual e baixa densidade mineral óssea**. A alternativa A usa a formulação tradicional com desordem alimentar e osteoporose. O conceito atual é mais amplo: não exige um transtorno alimentar formal nem deve reduzir toda baixa densidade a um diagnóstico de osteoporose (resumo do Rockwood, 10ª ed., cap. 24, “A tríade da mulher atleta”).\n\nA avaliação precisa perguntar sobre alimentação e ciclos, mesmo quando o peso parece adequado. Consulte a seção no resumo da Biblioteca para estudar o mecanismo junto da definição.",
@@ -14986,18 +15247,45 @@
   }
  },
  "trauma-1020": {
+  "conceito": "Na luxação traumática mais comum, a patela sai **para lateral**, e a lesão osteocondral característica fica na borda **inferior e medial** da patela. Portanto, B é a resposta. O lado para o qual a patela se desloca não é o nome da borda patelar que se fratura.\n\nO episódio põe a borda medial da patela em relação traumática com o côndilo femoral lateral. A lesão pode desprender cartilagem acompanhada de osso subcondral, formando um fragmento osteocondral. O resumo também descreve fragmentos do côndilo lateral e contusões nesse côndilo e na faceta patelar medial na RM (Rockwood, 10ª ed., cap. 60, “Luxação aguda da patela”).\n\nA patela pode reduzir espontaneamente. Nesse caso, o exame de imagem não precisa mostrar a luxação para que suas consequências ainda sejam reconhecidas. Derrame, contusões, lesão do ligamento patelofemoral medial e corpos livres ajudam a reconstruir o episódio.\n\n**O fragmento muda a avaliação da lesão aguda.** Hemartrose grande aumenta a suspeita de lesão osteocondral e é motivo para RM no algoritmo descrito. A maioria dos autores fixa os fragmentos grandes e desviados. Isso é diferente de operar todo primeiro episódio somente para evitar recorrência, conduta que o capítulo considera controversa.\n\nO aprendizado decisivo é manter os referenciais: luxação lateral, contusão do côndilo lateral e lesão da borda inferomedial da patela. Uma radiografia com alinhamento já restabelecido não elimina a necessidade de procurar essas lesões.",
+  "correta": "**B.** A borda inferior e medial é a localização patelar altamente sugestiva da luxação lateral descrita no capítulo. A combinação dos dois termos importa: não basta marcar “medial” e trocar o polo.",
   "incorretas": {
-   "A": "**Lado errado.** A face lateral da patela não é a que impacta contra o côndilo na luxação lateral.",
-   "C": "**Local errado.** A lesão típica é inferior e medial, e não superior e lateral.",
-   "D": "**Nível errado.** O lado medial está certo, mas a lesão osteocondral clássica é na porção inferior da faceta."
+   "A": "**A.** Mantém o nível inferior, mas erra o lado. O fato de a patela luxar lateralmente não localiza a fratura na borda lateral; o padrão patelar é medial, em associação ao côndilo femoral lateral.",
+   "C": "**C.** Troca tanto o nível quanto o lado da lesão característica. A borda superolateral lembra a localização habitual da patela bipartida, variante de ossificação com bordas corticalizadas, e não a fratura osteocondral típica desse episódio.",
+   "D": "**D.** A orientação medial está correta, mas o polo superior não é a localização característica pedida. O resumo especifica a borda medial inferior; a resposta precisa conservar também essa referência longitudinal."
   },
-  "conceito": "**A luxação aguda da patela.** A mais frequente é a **luxação lateral**: a patela sai por cima do côndilo femoral **lateral**, geralmente com o joelho em leve flexão, **valgo** e rotação externa da tíbia (ou rotação interna do fêmur sobre o pé fixo), como numa mudança brusca de direção. Acomete adolescentes e adultos jovens, especialmente com fatores predisponentes (displasia troclear, patela alta, TT-TG aumentado).\n\n**Onde a cartilagem se lesa.** Ao **sair** e, sobretudo, ao **voltar** (redução espontânea com a extensão do joelho), a **face medial** da patela **bate** contra a borda do **côndilo femoral lateral**. As lesões **osteocondrais** ocorrem classicamente na **faceta medial** da patela, na sua porção **inferior** (inferomedial), e na face **anterolateral** do **côndilo femoral lateral**. Na ressonância, esse padrão de **contusão óssea** \"em espelho\" (patela medial e côndilo lateral) é característico de luxação recente, mesmo que a patela já tenha voltado ao lugar.\n\n**Os fragmentos livres.** Fragmentos **osteocondrais** podem soltar-se e ficar livres na articulação, causando **bloqueio** e derrame. Radiografias (incluindo a **axial**) e ressonância os mostram. Fragmentos **grandes** com osso devem ser **refixados** (parafusos sem cabeça ou absorvíveis); pequenos ou só condrais são **removidos**.\n\n**O ligamento patelofemoral medial.** Rompe-se em quase todas as primeiras luxações, geralmente na inserção **femoral** ou **patelar**. A primeira luxação sem fragmento é tratada, na maioria, de forma **conservadora**; as recidivas, com **reconstrução do LPFM** e correção dos fatores ósseos.\n\n**Na prova:** luxação lateral aguda da patela: lesão osteocondral na borda **inferior e medial** da patela e no côndilo **femoral lateral**.",
-  "correta": "**Inferior e medial da patela.** Na redução da luxação lateral, a faceta medial bate contra o côndilo lateral, lesando classicamente a porção inferomedial da patela.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 60"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Luxação aguda da patela; Patela bipartida e outros simuladores."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Luxação aguda da patela",
+      "Patela bipartida e outros simuladores"
+     ],
+     "blocos": [
+      "luxacao-aguda-da-patela-dae642d9",
+      "luxacao-aguda-da-patela-541ed1a4",
+      "luxacao-aguda-da-patela-727a6900",
+      "patela-bipartida-e-outros-simuladores-27cbef14"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "1e4aa71ff8d2361fcc784bc0f91d2da8c037cfd294cb66df7199af95bf537fb2"
+    }
+   ],
+   "questaoSha256": "2397f5c743c1e61b24b0f1b5fef1b89ffcd95b538f2477b649132f63b54d02d9",
+   "comentarioSha256": "56b31284ed79e0d3dcb2f97b28d48ba3d72a7cc63bb8dcd1fe37bcfb60ceb7f8"
+  }
  },
  "trauma-1021": {
   "incorretas": {
@@ -15015,18 +15303,44 @@
   "conferido": false
  },
  "trauma-1022": {
+  "conceito": "No LCA, a banda **anteromedial fica mais tensa em flexão** e a **posterolateral em extensão**. A ordem do enunciado leva à alternativa A. O padrão se explica pela mudança de orientação do ligamento quando o joelho percorre o arco.\n\nO cruzado anterior é intra-articular e extrassinovial. Seus dois feixes recebem os nomes conforme a inserção tibial: anteromedial e posterolateral. Ao fletir o joelho, o ligamento horizontaliza, e o anteromedial assume maior tensão; acima de 45 graus, carrega mais força que o posterolateral no resumo. Em extensão, o posterolateral está tenso (Rockwood, 10ª ed., cap. 61, “Cruzado anterior”).\n\n**Os feixes não funcionam como interruptores.** Dizer que um está mais tenso numa posição não significa que o outro desapareça nem que toda estabilidade dependa de um único feixe. O LCA restringe a translação anterior da tíbia e participa do controle rotatório; o posterolateral recebe destaque no controle da rotação interna associado ao pivot shift.\n\nTambém não convém transportar os nomes do LCP. No cruzado posterior, os feixes são anterolateral e posteromedial, nomeados pela inserção femoral. Essa troca de ligamento produz combinações de palavras plausíveis, mas anatomicamente diferentes.\n\nPara resolver, mantenha a sequência pedida: primeiro anteromedial, portanto flexão; depois posterolateral, portanto extensão. Inverter a ordem ou tornar os dois simultaneamente máximos numa posição perde a alternância funcional que o capítulo descreve.",
+  "correta": "**A.** Conserva o par na ordem correta: anteromedial em flexão e posterolateral em extensão. Essa é a relação de tensão descrita para o LCA.",
   "incorretas": {
-   "B": "**Invertido.** O anteromedial é tenso em flexão, e o posterolateral, em extensão.",
-   "C": "**Parcial.** Em extensão, o posterolateral está tenso, mas o anteromedial fica relativamente frouxo.",
-   "D": "**Parcial.** Em flexão, o anteromedial está tenso, mas o posterolateral se afrouxa."
+   "B": "**B.** Inverte o padrão dos dois feixes. A extensão tensiona o posterolateral; a flexão favorece o anteromedial. O erro está na associação de cada nome à posição, não na existência das duas bandas.",
+   "C": "**C.** A extensão é a referência do posterolateral, mas não é a posição que caracteriza maior tensão do anteromedial no resumo. A resposta elimina a diferença funcional entre eles.",
+   "D": "**D.** A flexão corresponde ao anteromedial, mas não permite dizer que ambos tenham esse mesmo padrão. O posterolateral é destacado em extensão, e essa alternância é o ponto cobrado."
   },
-  "conceito": "**Os dois feixes do LCA.** O **ligamento cruzado anterior** vai da face **medial do côndilo femoral lateral** (na incisura) à região **anterior** da eminência intercondilar da tíbia. Tem dois feixes nomeados pela inserção **tibial**: o **anteromedial** (AM) e o **posterolateral** (PL). Eles se enrolam um sobre o outro, e sua tensão muda com a flexão.\n\n**Quem trabalha em cada posição.** Em **extensão**, os feixes ficam **paralelos**, e o **posterolateral** está **tenso**; o anteromedial, relativamente frouxo. Com a **flexão**, a inserção femoral roda, os feixes se **cruzam**, o **anteromedial** se **tensiona** e o **posterolateral** afrouxa. Assim, o **AM** é o principal restritor da **translação anterior** com o joelho **fletido** (a gaveta anterior a 90 graus), e o **PL** controla a translação anterior perto da **extensão** e a **rotação** (pivot shift, Lachman).\n\n**Por que isso importa.** Explica por que o **Lachman** (a 20 a 30 graus) e o **pivot shift** avaliam bem a função do PL e da rotação, e a gaveta a 90 graus a do AM. Explica também as **lesões parciais** de um feixe só, e a proposta da reconstrução em **duplo feixe**, que tentou reproduzir as duas funções (os estudos não mostraram vantagem clínica consistente sobre o feixe único **anatômico**, que hoje é o padrão, com túnel femoral na área de inserção nativa, abaixo da **crista intercondilar lateral**).\n\n**As funções do LCA.** Principal restritor da **translação anterior** da tíbia, restritor secundário da **rotação interna** e do valgo. Sua lesão leva a instabilidade rotatória e, com o tempo, a lesões meniscais (sobretudo do corno posterior do medial) e condrais.\n\n**Na prova:** LCA: feixe **anteromedial** tenso na **flexão**; **posterolateral** tenso na **extensão**.",
-  "correta": "**Na flexão e na extensão, respectivamente.** O feixe anteromedial se tensiona com a flexão, e o posterolateral na extensão, de forma complementar ao longo do arco.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 61"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado anterior; Cruzado posterior: a pedra fundamental."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Cruzado anterior",
+      "Cruzado posterior: a pedra fundamental"
+     ],
+     "blocos": [
+      "cruzado-anterior-d3582e20",
+      "cruzado-anterior-f62f620b",
+      "cruzado-posterior-a-pedra-fundamental-ae278a04"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "4ec5d11a7518cddca1ddad527f1f3c28a5ee7a1a3d2d00461b28b05ad6046954"
+    }
+   ],
+   "questaoSha256": "b47fd9037f138399aef3927c8e14dcc788ad46a048cdad15715ef48ef0f341d0",
+   "comentarioSha256": "d1301bdf783ae56f9aabcad7382bd190f685d7b71324802b1db65548560cc624"
+  }
  },
  "trauma-1023": {
   "incorretas": {
@@ -15127,18 +15441,45 @@
   "conferido": false
  },
  "trauma-1030": {
+  "conceito": "O teste de rotação externa tibial positivo a **30 e 90 graus** sugere lesão combinada do **LCP e do canto posterolateral**, alternativa D. Comparar os dois ângulos é o que permite ir além de identificar apenas uma frouxidão lateral.\n\nO canto posterolateral reúne colateral fibular, tendão do poplíteo e ligamento popliteofibular. Essas estruturas resistem ao varo, à rotação externa e, em associação ao LCP, à translação posterior. Por isso uma lesão combinada produz um padrão diferente da perda isolada de um restritor (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\nNo modelo descrito, cortar o canto mantendo o LCP íntegro aumenta a rotação externa mais a 30 graus que a 90. Ao lesar também o LCP, a rotação aumenta em todos os ângulos, com máximo a 90. O teste do dial compara os lados nessas posições e traduz essa relação biomecânica para o exame.\n\n**A posição de 90 graus muda a interpretação.** Um aumento predominante a 30 favorece o canto isolado; a persistência nos dois ângulos pede atenção ao LCP associado. Não é um teste específico do LCA, nem uma medida isolada de gaveta posterior. Ele examina a rotação externa sob condições definidas.\n\nReconhecer o canto junto ao LCP também importa para o tratamento: reconstruir só o cruzado posterior num joelho com insuficiência posterolateral pode deixar maior translação posterior residual. O exame não serve apenas para escolher uma letra, mas para evitar planejar uma reconstrução incompleta.",
+  "correta": "**D.** A combinação LCP com canto posterolateral explica o aumento da rotação nos dois ângulos, especialmente a persistência a 90 graus, conforme a biomecânica do resumo.",
   "incorretas": {
-   "A": "**Só a 30 graus.** A lesão isolada do canto posterolateral dá o teste positivo apenas a 30 graus.",
-   "B": "**Não dá esse padrão.** O LCP isolado não aumenta a rotação externa a 30 graus de forma significativa.",
-   "C": "**Cruzado errado.** O dial test a 90 graus reflete o LCP, e não o LCA."
+   "A": "**A.** O canto isolado tende a aumentar mais a rotação a 30 graus do que a 90 quando o LCP funciona. A positividade nos dois ângulos é a pista que exige considerar lesão combinada.",
+   "B": "**B.** O LCP isolado não explica o padrão rotatório completo descrito. Para o aumento em todos os ângulos, o modelo do capítulo inclui perda do canto posterolateral junto ao cruzado.",
+   "C": "**C.** A presença do canto é pertinente, mas trocar o LCP pelo LCA perde a explicação da rotação externa a 90 graus. Esse teste não está demonstrando, por si, insuficiência do cruzado anterior."
   },
-  "conceito": "**O canto posterolateral.** É o conjunto de estruturas que estabilizam o joelho contra o **varo** e a **rotação externa** da tíbia: **ligamento colateral lateral**, **tendão do poplíteo** e **ligamento popliteofibular**, além da cápsula posterolateral, do ligamento arqueado e do bíceps femoral. Suas lesões frequentemente acompanham as dos cruzados e, se não tratadas, levam à **falha** das reconstruções.\n\n**O dial test.** Com o paciente em **decúbito ventral** (ou dorsal), o examinador roda externamente os dois pés e compara o **ângulo coxa-pé** dos dois lados, com o joelho a **30** e a **90 graus** de flexão. Uma diferença de mais de **10 graus** é positiva.\n\n**Como interpretar.** Positivo **só a 30 graus**: lesão **isolada do canto posterolateral** (a 90 graus, o LCP íntegro freia a rotação externa). Positivo a **30 e a 90 graus**: lesão **combinada do canto posterolateral e do LCP**. Positivo só a 90 graus (raro): lesão isolada do LCP com componente rotatório. Atenção: uma lesão do **canto posteromedial** também pode aumentar a rotação, e é preciso observar se a tíbia roda por deslocamento posterolateral ou anteromedial.\n\n**Os outros testes do canto posterolateral.** **Varo** a 30 graus (colateral lateral), **recurvato em rotação externa** (levantar o hálux e observar hiperextensão, varo e rotação externa), **gaveta posterolateral** e **pivot shift reverso**. Radiografias de **estresse em varo** e a ressonância confirmam.\n\n**O tratamento.** Lesões agudas graves: **reparo** ou **reconstrução** anatômica (técnicas de LaPrade, com reconstrução do colateral lateral, do poplíteo e do popliteofibular), frequentemente junto com a reconstrução do LCP ou do LCA. Corrigir o **varo** do alinhamento com osteotomia antes, nos casos crônicos com joelho varo, para não sobrecarregar os enxertos.\n\n**Na prova:** **dial test** positivo a **30 graus** = canto posterolateral isolado; a **30 e 90 graus** = **LCP + canto posterolateral**.",
-  "correta": "**Lesão combinada do LCP e do canto posterolateral.** A rotação externa aumentada também a 90 graus mostra que o LCP, que normalmente a freia nessa posição, está lesado junto com o canto posterolateral.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; Cruzado posterior: a pedra fundamental."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Canto posterolateral",
+      "Cruzado posterior: a pedra fundamental"
+     ],
+     "blocos": [
+      "canto-posterolateral-1d24e09d",
+      "canto-posterolateral-04216df0",
+      "canto-posterolateral-a148610d",
+      "cruzado-posterior-a-pedra-fundamental-ed726e98"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "dd6cb5b24b60c0a308b60d625d869eee218f0f2ff0a2d03303927c03ca541168"
+    }
+   ],
+   "questaoSha256": "80632084d034f334a64efc6499c78186e7c5f01e1ce8dfafe80bbc2262ba582b",
+   "comentarioSha256": "a1ed6cada54693c09ba16bbb2727aaf9dc3df5b7a8fb0c7324a64abe1ffe303a"
+  }
  },
  "trauma-1031": {
   "incorretas": {
@@ -15269,18 +15610,46 @@
   "conferido": false
  },
  "trauma-1040": {
+  "conceito": "O tendão do poplíteo é importante para **restringir a rotação externa da tíbia**, alternativa D. A aparente contradição com sua ação muscular desaparece quando se distingue o movimento que ele produz da direção de instabilidade que ajuda a conter.\n\nO músculo poplíteo atua como rotador interno dinâmico. Seu tendão participa do canto posterolateral, junto ao colateral fibular e ao popliteofibular. O resumo identifica poplíteo e colateral fibular como restritores primários da rotação externa; acima de 60 graus, poplíteo e popliteofibular recebem maior solicitação (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\n**Produzir rotação interna e conter rotação externa são funções compatíveis.** Um sistema que puxa ou tensiona contra o deslocamento externo contribui para impedir que ele se torne excessivo. Responder “rotação interna” apenas porque esse é o sentido da ação muscular confunde função motora com direção restringida.\n\nPara o varo, o restritor estático primário é o colateral fibular, com participação secundária do restante do canto e do LCP. Para o valgo, o capítulo destaca a divisão proximal do colateral medial superficial. A pergunta não pede se o poplíteo participa de alguma estabilidade global, mas qual direção melhor caracteriza seu papel entre as opções.\n\nEssa distinção também ajuda a interpretar o teste do dial: aumento da rotação externa sugere falha dos restritores posterolaterais, e a comparação a 30 e 90 graus investiga se o LCP está associado.",
+  "correta": "**D.** A rotação tibial externa é a direção que o poplíteo ajuda a restringir como componente do canto posterolateral. Sua ação dinâmica de rotação interna não inverte essa função estabilizadora.",
   "incorretas": {
-   "A": "**Função do LCL.** O varo é contido principalmente pelo ligamento colateral lateral.",
-   "B": "**Função medial.** O valgo é contido pelo colateral medial e pelo canto posteromedial.",
-   "C": "**Função oposta.** O músculo poplíteo roda a tíbia internamente; o tendão restringe a rotação externa."
+   "A": "**A.** O canto participa da resistência ao varo, mas o colateral fibular é o restritor estático primário destacado pelo capítulo. A função específica do poplíteo que discrimina esta questão é conter rotação externa.",
+   "B": "**B.** A principal restrição estática ao valgo pertence ao lado medial, especialmente à divisão proximal do colateral superficial. Não é a função que o resumo atribui como característica ao tendão poplíteo.",
+   "C": "**C.** Confunde movimento produzido com movimento restringido. O poplíteo roda dinamicamente a tíbia para dentro; no contexto de estabilidade perguntado, ajuda a impedir rotação excessiva para fora."
   },
-  "conceito": "**O canto posterolateral.** É o conjunto que estabiliza o joelho contra **varo**, **rotação externa** da tíbia e translação posterolateral. Tem três estruturas principais: o **ligamento colateral lateral** (LCL), o **tendão do poplíteo** e o **ligamento popliteofibular**, além da cápsula posterolateral, do ligamento arqueado, do fabelofibular e do bíceps femoral.\n\n**Quem segura o quê.** O **LCL** é o principal restritor do **varo**, sobretudo a 30 graus de flexão. O complexo **poplíteo** (tendão do poplíteo e ligamento popliteofibular) é o principal restritor da **rotação externa** da tíbia, especialmente a **30 graus**, e contribui para a restrição da translação posterior quando o LCP está roto. O **LCP** atua na rotação externa a **90 graus**. Por isso o **dial test** positivo a 30 graus sugere lesão do canto posterolateral, e a 30 e 90 graus, lesão combinada com o LCP.\n\n**O poplíteo como músculo.** Além do papel estático do tendão, o **músculo** poplíteo **roda internamente** a tíbia no início da flexão (destrava o mecanismo de parafuso) e retrai o menisco lateral. Funciona como um estabilizador **dinâmico** contra a rotação externa.\n\n**A lesão do canto posterolateral.** Raramente isolada; acompanha as lesões do LCA e do LCP. Não tratá-la é causa importante de **falha** das reconstruções dos cruzados. Testes: dial test, **varo** a 30 graus, **recurvato em rotação externa**, gaveta posterolateral. Tratamento: reparo ou **reconstrução anatômica** (LCL, poplíteo e popliteofibular), corrigindo o **varo** ósseo com osteotomia nos casos crônicos.\n\n**Na prova:** o tendão do **poplíteo** restringe principalmente a **rotação tibial externa**; o LCL restringe o **varo**.",
-  "correta": "**Da rotação tibial externa.** O tendão do poplíteo, com o ligamento popliteofibular, é o principal restritor da rotação externa da tíbia, sobretudo a 30 graus.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; O lado medial."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Canto posterolateral",
+      "O lado medial"
+     ],
+     "blocos": [
+      "canto-posterolateral-0b736828",
+      "canto-posterolateral-ed823b43",
+      "canto-posterolateral-6aabb99f",
+      "o-lado-medial-9548c808",
+      "canto-posterolateral-a148610d"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "b394b1456f59c38fc88e83314f7f2353ab72b5326b2df52966cef710015df896"
+    }
+   ],
+   "questaoSha256": "03036e95952a5943a3a2762518d8d759b381a72fcf961298f2859b4d1697878a",
+   "comentarioSha256": "127017445f2bcb9d5223fcfef60599cbd9dfd26487761e58fdae9dd7b2b070b5"
+  }
  },
  "trauma-1041": {
   "incorretas": {
@@ -15396,18 +15765,44 @@
   "conferido": false
  },
  "trauma-1049": {
+  "conceito": "O cenário é o quadríceps tentando controlar o peso do corpo com o **pé apoiado**, enquanto o joelho flete. A contração é **excêntrica**: há atividade muscular durante o alongamento imposto pela carga. A combinação correta é C.\n\nO apoio permite que a carga corporal seja transmitida ao membro. O quadríceps precisa impedir que o joelho ceda rapidamente em flexão, e sua tração percorre o tendão quadricipital, a patela e o tendão patelar até a tíbia. O resumo descreve justamente contração forte contra carga súbita do corpo com joelho fletido (Rockwood, 10ª ed., cap. 60, “Rupturas do tendão quadricipital e do tendão patelar”).\n\nNa ação concêntrica, o músculo encurta ao produzir movimento. Na excêntrica, ele freia uma força que o alonga. As duas ações são ativas; a diferença não é “contraiu” contra “não contraiu”, mas a relação entre a força muscular e o deslocamento que a carga impõe.\n\nA integridade do tecido também importa. O capítulo relaciona as rupturas indiretas a alterações degenerativas por microtraumas, embora elas não precisem estar documentadas em todo caso. O tendão patelar rompe mais abaixo dos 40 anos e costuma comprometer o retináculo, causando perda da extensão ativa. A idade ajuda a suspeitar do tendão lesado; não substitui a avaliação funcional.\n\nDepois de um estalo e da incapacidade de manter o joelho estendido contra a gravidade, é necessário procurar falha do aparelho extensor. O mecanismo com o pé apoiado é a pista da questão, e não uma regra de que nenhuma ruptura possa acontecer fora desse cenário.",
+  "correta": "**C.** Reúne os dois elementos do mecanismo típico: ação excêntrica do quadríceps e pé apoiado para receber a carga. O músculo tenta frear a flexão, e o tendão é solicitado durante esse controle.",
   "incorretas": {
-   "A": "**Sem apoio, a carga é menor.** Com o pé livre, o peso do corpo não se soma à força do quadríceps.",
-   "B": "**Concêntrica gera menos força.** A contração concêntrica, com o pé livre, não produz a carga necessária para romper o tendão.",
-   "D": "**Concêntrica gera menos força.** Mesmo com apoio, a contração concêntrica é menos intensa que a excêntrica."
+   "A": "**A.** Acerta a ação excêntrica, mas retira o apoio que caracteriza o mecanismo contra o peso do corpo. Não se deve trocar o cenário típico cobrado por uma afirmação sobre toda possível lesão tendínea.",
+   "B": "**B.** Muda os dois componentes: ação concêntrica e pé sem apoio. O músculo que encurta para mover livremente o membro não reproduz o controle excêntrico da flexão sob carga descrito no resumo.",
+   "D": "**D.** O pé apoiado está correto, mas a contração concêntrica significa encurtamento ativo. O episódio típico de ruptura descrito é de resistência excêntrica à carga súbita com o joelho fletido."
   },
-  "conceito": "**Como o tendão patelar rompe.** A **ruptura do tendão patelar** ocorre por uma **contração excêntrica** vigorosa do **quadríceps**: o músculo está contraindo enquanto é **alongado**, porque o joelho está sendo **fletido** por uma força externa. A situação típica é o **amortecimento de um salto** ou a tentativa de evitar uma queda, com o **pé apoiado** no chão (cadeia cinética **fechada**). O peso do corpo, transmitido pelo membro fixo, soma-se à força muscular e gera uma carga de tração que supera a resistência do tendão.\n\n**Por que excêntrica.** As contrações **excêntricas** geram as **maiores forças** musculares, muito acima das concêntricas. É o mesmo mecanismo das rupturas do tendão do quadríceps, do tendão calcâneo, do bíceps distal e do peitoral maior. O tendão costuma ter **degeneração** prévia (tendinopatia), o que reduz sua resistência.\n\n**Quem rompe.** Pacientes **abaixo dos 40 anos**, **atletas** de salto (basquete, vôlei), com **tendinopatia patelar** (joelho do saltador) ou uso de corticoide. Doenças sistêmicas (lúpus, artrite reumatoide, insuficiência renal) e **anabolizantes** aumentam o risco. A ruptura ocorre mais na inserção no **polo inferior da patela**.\n\n**O quadro e o tratamento.** Perda da **extensão ativa**, defeito palpável abaixo da patela, **patela alta** na radiografia de perfil. **Reparo precoce** com suturas transósseas pela patela ou âncoras, com reforço (cerclagem de proteção), e reabilitação progressiva. Procurar lesões associadas (LCA, meniscos).\n\n**Na prova:** ruptura do tendão patelar = contração **excêntrica** do quadríceps com o **pé apoiado** (amortecer salto, evitar queda).",
-  "correta": "**Excêntrica do quadríceps com o pé apoiado no chão.** A contração enquanto o joelho é forçado em flexão, com o peso do corpo sobre o membro fixo, gera a carga que rompe o tendão.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Rupturas do tendão quadricipital e do tendão patelar"
+     ],
+     "blocos": [
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "a82b83f5fac70d8af512ebbd31046fb727e95c4fd690339e649f43dca3b35911"
+    }
+   ],
+   "questaoSha256": "81d0efede0525e840d1b69e0e4ac4eee29e00250736f66c14de320717d09876d",
+   "comentarioSha256": "b8919860d401466ac2259f22d0ea2f85a111afa61abcb1f41520edd11fd03d38"
+  }
  },
  "trauma-1050": {
   "incorretas": {
@@ -15856,18 +16251,45 @@
   "conferido": false
  },
  "trauma-1080": {
+  "conceito": "Na técnica inlay do cruzado posterior, o intervalo de acesso à tíbia posterior fica entre o **semimembranáceo e a cabeça medial do gastrocnêmio**, alternativa D. É a via limitada de Burks e Schaffer descrita no resumo.\n\nO LCP se insere posteriormente na tíbia, abaixo dos planaltos. Para fixar um enxerto nessa região ou reparar uma avulsão, o cirurgião precisa alcançar a face posterior sem transformar a exposição num risco desnecessário ao feixe neurovascular. Na via descrita, o gastrocnêmio medial é afastado lateralmente e participa da proteção desse feixe (Rockwood, 10ª ed., cap. 61, “Como se rompe e a via inlay”).\n\n**Os tendões mediais não formam intervalos equivalentes.** Semitendíneo e grácil pertencem à pata de ganso, mais anterior e superficial em relação ao campo posterior buscado. Escolher dois nomes da face medial sem localizar sua relação com a tíbia não resolve a pergunta. O semimembranáceo é parte do intervalo, mas precisa estar associado ao gastrocnêmio medial.\n\nA artéria poplítea está muito próxima da região posterior do LCP, descrita a 7 a 10 mm de sua face posterior. Essa proximidade explica o cuidado durante túneis e exposição; não significa que a via inlay elimine todo risco vascular. O resumo também aponta a artéria genicular média e o ramo motor do tibial para o gastrocnêmio medial como estruturas em risco na abordagem.\n\nO capítulo compara inlay e transtibial, com resultados semelhantes quando o túnel transtibial é adequadamente baixo. A escolha da técnica não muda o intervalo anatômico cobrado aqui: reconhecer os dois músculos evita confundir o acesso à tíbia posterior com a região de retirada de tendões flexores.",
+  "correta": "**D.** Semimembranáceo com gastrocnêmio medial é o intervalo descrito para exposição limitada da inserção tibial do LCP. O afastamento lateral do gastrocnêmio medial ajuda a proteger o feixe neurovascular.",
   "incorretas": {
-   "A": "**Semitendíneo e grácil são tendões do pes anserinus.** O intervalo entre eles não oferece acesso direto à cápsula posterior usado no inlay.",
-   "B": "**Grácil é superficial ao plano cirúrgico procurado.** A referência profunda do acesso combina semimembranáceo com gastrocnêmio medial.",
-   "C": "**Semitendíneo e semimembranáceo ficam do lado medial.** Falta o limite lateral, formado pela cabeça medial do gastrocnêmio."
+   "A": "**A.** Semitendíneo e grácil remetem à pata de ganso, anterior e superficial ao campo desejado. Esse par não corresponde à janela posterior descrita para o inlay.",
+   "B": "**B.** Inclui o semimembranáceo, mas o associa ao grácil. O limite que permite a exposição e o afastamento protetor na técnica é o gastrocnêmio medial, não o grácil.",
+   "C": "**C.** Também conserva o semimembranáceo e troca o outro limite. O semitendíneo não substitui o gastrocnêmio medial no intervalo de Burks e Schaffer; sua relação com a pata de ganso é de outro plano anatômico."
   },
-  "conceito": "**Por que usar o inlay tibial.** Na reconstrução do LCP, a fixação direta do enxerto na face posterior da tíbia evita que ele faça a curva aguda de um túnel transtibial, chamada killer turn. Para alcançar a inserção posterior, o cirurgião precisa expor a cápsula por um acesso posteromedial sem avançar cegamente sobre o feixe poplíteo.\n\n**O intervalo correto.** O plano de dissecção fica entre o semimembranáceo e a cabeça medial do gastrocnêmio. O gastrocnêmio é afastado lateralmente, ajudando a proteger as estruturas neurovasculares posteriores; a cápsula é então aberta para acessar o leito tibial do LCP. Semitendíneo e grácil são tendões mais superficiais e anteriores, úteis como possíveis enxertos, mas não nomeiam esse intervalo profundo.",
-  "correta": "**D: semimembranáceo e gastrocnêmio medial.** Entre essas estruturas passa o acesso posteromedial para expor e fixar o enxerto na inserção tibial posterior do LCP.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; O lado medial."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Cruzado posterior: a pedra fundamental",
+      "O lado medial"
+     ],
+     "blocos": [
+      "cruzado-posterior-a-pedra-fundamental-199d4dab",
+      "cruzado-posterior-a-pedra-fundamental-ae278a04",
+      "o-lado-medial-5c9f047e",
+      "cruzado-posterior-a-pedra-fundamental-075e0a72"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "d65bfe5e52c0e04284823fa49e642f7a9f5388b9d2c366dc6faf9a431d9a66e5"
+    }
+   ],
+   "questaoSha256": "340a2104c6ec609f186627bc6c600f75886eb17e3b6b159421e067860c68cbe9",
+   "comentarioSha256": "62053b33ab63753a23ea4ab9420ba04f7c33edea215f71d5eab737444895862d"
+  }
  },
  "trauma-1081": {
   "incorretas": {
@@ -19089,18 +19511,48 @@
   "conferido": false
  },
  "trauma-1234": {
-  "conceito": "**A patela também envelheceu.** O Rockwood (capítulo 10, Patella Fractures) observa que, muitas vezes, não se percebe que a epidemiologia da fratura da patela mudou: hoje muito mais fraturas ocorrem em idosos. Isso aumenta o espaço para o tratamento conservador.\n\n**O teste que decide.** O capítulo afirma que o tratamento conservador pode ser usado na **grande maioria dos pacientes capazes de elevar a perna estendida** (straight leg raise). A lógica é a do aparelho extensor: se o paciente consegue elevar o membro com o joelho em extensão, o mecanismo extensor está funcionalmente preservado (os retináculos estão íntegros), e a fratura pode consolidar sem que o joelho perca a capacidade de estender.\n\n**O protocolo.**\n\n- **Gesso cilíndrico longo ou órtese**, usados por cerca de **6 semanas** no texto (Tabela 10-7: mobilizar em 4 a 6 semanas).\n- Depois, programa de fisioterapia.\n\n**Quando a cirurgia pesa mais.** A Tabela 10-6 mostra que a cirurgia aumenta com a complexidade: nenhuma das fraturas OTA tipo A da patela foi operada no ano estudado, contra 33,3% das tipo B e 44,1% das tipo C. Quando o paciente não consegue estender o joelho, o aparelho extensor está rompido, e a fixação passa a ser necessária para restaurar a extensão.\n\n**O joelho no tratamento conservador, para comparar.**\n\n| Fratura | Tratamento conservador sugerido |\n|---|---|\n| Fêmur distal sem desvio | órtese articulada de joelho por 6 a 8 semanas |\n| Patela sem desvio | gesso cilíndrico ou órtese; mobilizar em 4 a 6 semanas |\n| Tíbia proximal sem desvio | órtese articulada de joelho por 6 a 8 semanas |\n| Fíbula proximal isolada | órtese de joelho por 2 semanas, depois articulada por 4 a 6 semanas |\n\n**Ligação com a prova.** A banca cobra o mecanismo das lesões do aparelho extensor (contração excêntrica do quadríceps com o pé apoiado). O teste da elevação da perna estendida é o elo entre a anatomia do aparelho extensor e a decisão de operar.\n\n> **Na prova:** na fratura da patela, se o paciente eleva a perna estendida (aparelho extensor funcional), a maioria pode ser tratada com gesso cilíndrico ou órtese por cerca de 6 semanas e fisioterapia.",
-  "correta": "**B: elevar o membro inferior com o joelho estendido.** O Rockwood (capítulo 10, Patella Fractures) afirma que o tratamento conservador pode ser usado na grande maioria dos pacientes capazes de elevar a perna estendida. Essa capacidade mostra que o aparelho extensor está funcional, de modo que a fratura pode consolidar em gesso cilíndrico ou órtese, usados por cerca de 6 semanas, seguidos de fisioterapia.",
+  "conceito": "O teste descrito em B, **elevar o membro com o joelho estendido**, mostra que a contração do quadríceps consegue chegar à tíbia. Na fratura da patela, essa competência extensora abre a possibilidade de tratamento sem cirurgia.\n\nO mecanismo não depende apenas da continuidade do osso. Os retináculos recebem fibras dos vastos e se inserem na tíbia, funcionando como extensores secundários. Assim, é possível ter patela fraturada e ainda elevar a perna estendida. A fratura existe; o teste informa que a transmissão de força permanece funcional (Rockwood, 10ª ed., cap. 60, “Anatomia e biomecânica” e “Exame físico”).\n\nA dor pode atrapalhar a tentativa. O resumo descreve aspiração da hemartrose e anestésico local quando a coleção tensa impede avaliar a extensão. A incapacidade no primeiro teste doloroso precisa ser interpretada nesse contexto, e a capacidade de estender não dispensa radiografias.\n\n**Extensor íntegro é um critério, não uma autorização isolada.** O tratamento não cirúrgico também exige considerar a congruência articular, a exposição e os fragmentos livres. O capítulo admite incongruência menor que 3 mm com extensor competente; fratura exposta, corpo livre e incongruência de 3 mm ou mais podem indicar cirurgia apesar da elevação preservada.\n\nQuando indicado, protege-se o joelho em extensão com órtese ou tala por 4 a 6 semanas. Exercícios isométricos e elevação da perna podem começar cedo; o movimento e a carga seguem o protocolo e o controle da consolidação. Conseguir caminhar ou dobrar o joelho não substitui o teste específico que a questão pede.",
+  "correta": "**B.** A elevação ativa da perna mantendo o joelho estendido verifica continuidade funcional do aparelho extensor. É o achado entre as opções que favorece tratamento sem cirurgia, desde que os outros critérios da fratura também sejam aceitáveis.",
   "incorretas": {
-   "A": "**Flexão não testa o aparelho extensor.** Conseguir fletir o joelho além de 90 graus não diz nada sobre a capacidade de estendê-lo, que é a função comprometida quando a fratura da patela rompe o mecanismo extensor. Pelo contrário, forçar a flexão afasta os fragmentos. O critério do capítulo é a elevação da perna estendida.",
-   "C": "**Não é o critério do capítulo.** Apoiar o membro com carga total depende mais da dor e da confiança do paciente e não avalia a integridade do aparelho extensor. O teste que separa quem pode ser tratado sem cirurgia é a elevação ativa da perna com o joelho estendido.",
-   "D": "**Deambular não garante extensão ativa.** Um paciente pode andar com o joelho travado em extensão, ou com marcha compensatória, mesmo com o aparelho extensor rompido. O teste específico é elevar a perna estendida, que exige contração do quadríceps transmitida pela patela e pelos retináculos."
+   "A": "**A.** Flexão além de 90 graus mede mobilidade, não transmissão da força extensora. Um joelho pode dobrar e ainda não conseguir estender ativamente. Na fase aguda, não se deve forçar esse arco para tentar provar que a fratura pode ser tratada sem operação.",
+   "C": "**C.** A carga total não é o teste usado para decidir se o quadríceps consegue elevar a perna com o joelho estendido. O próprio protocolo conservador permite carga protegida em extensão, mostrando que apoio e extensão ativa são informações diferentes.",
+   "D": "**D.** Marcha sem auxílio é uma medida global, influenciada por dor e compensações. O resumo descreve marcha com joelho rígido ou circundução nas rupturas completas não tratadas: deslocar-se não prova que o extensor esteja íntegro. A elevação da perna é a informação específica."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 10 (Principles of Nonoperative Management of Fractures; Ollivere e Duckworth)"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Anatomia e biomecânica do mecanismo extensor; Exame físico e fratura exposta oculta; Tratamento não cirúrgico e indicações cirúrgicas; Tratamento das rupturas tendíneas."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Anatomia e biomecânica do mecanismo extensor",
+      "Exame físico e fratura exposta oculta",
+      "Tratamento não cirúrgico e indicações cirúrgicas",
+      "Tratamento das rupturas tendíneas"
+     ],
+     "blocos": [
+      "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+      "exame-fisico-e-fratura-exposta-oculta-845aa804",
+      "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89",
+      "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c",
+      "tratamento-das-rupturas-tendineas-c716bcf4"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "7a2217d424807ca3b88ec5032fc85281b50158af1bec3a7bbc3a2bfa8fc283c6"
+    }
+   ],
+   "questaoSha256": "1919a3b5bc6ec61ede444360c86bffdd55760f7d99230040f38d949b4b0c93fc",
+   "comentarioSha256": "425995014a4a15c0090a94125f54ce98081188896804a1487debc7c7d014cd87"
+  }
  },
  "trauma-1235": {
   "conceito": "**Fêmur proximal: quase sempre cirurgia.** O Rockwood (capítulo 10, Proximal Femoral Fractures) diz que as fraturas do fêmur proximal são tratadas cirurgicamente, a menos que a condição clínica contraindique a cirurgia. Nas fraturas intracapsulares sem desvio do colo, o tratamento conservador tem mais pseudartrose, necrose avascular e desvio, além de prender ao leito por 4 a 6 semanas um idoso com comorbidades, e uma revisão recente confirmou maior mortalidade com o tratamento conservador.\n\n**As exceções: os trocanteres.**\n\n- **Trocanter maior:** a principal fratura do fêmur proximal em que o tratamento conservador pode ser a escolha, quando há pouco ou nenhum desvio. Mas, no idoso, pode haver uma **extensão intertrocantérica** oculta, que muda a conduta.\n- **Trocanter menor:** fraturas muito raras, que podem ser tratadas sem cirurgia. Porém, **no idoso, devem ser consideradas fraturas metastáticas até prova em contrário**.\n\n**Por que pensar em metástase.** O trocanter menor é o ponto de inserção do iliopsoas. No jovem, o arrancamento por contração violenta desse músculo é um mecanismo conhecido; no idoso, porém, uma fratura isolada nesse local, sem trauma proporcional, sugere osso enfraquecido por uma lesão, e a metástase é a hipótese que não pode ser perdida. Reconhecê-la muda tudo: investigação do tumor primário, estadiamento e, frequentemente, fixação profilática do fêmur.\n\n**As fraturas patológicas no capítulo.** De modo geral, a maioria das fraturas patológicas é tratada cirurgicamente, a menos que a expectativa de vida seja muito curta, porque a estabilização reduz a dor e melhora a qualidade do tempo de vida restante. A banca cobra muito o escore de Mirels para decidir a fixação profilática de lesões metastáticas, e lembra que a causa mais comum de fratura patológica subtrocantérica no adulto é a lesão metastática.\n\n**Fraturas de estresse e de insuficiência, para não confundir.** O capítulo distingue as **fraturas por fadiga**, em osso normal, geralmente em jovens, e as **por insuficiência**, em osso anormal, sobretudo por osteopenia e osteoporose. Muitas são sem desvio e tratadas sem cirurgia, exceto algumas do fêmur proximal, da diáfise e do fêmur distal e da tíbia.\n\n> **Na prova:** fratura isolada do trocanter menor no idoso é metastática até prova em contrário; a do trocanter maior pode ser tratada sem cirurgia, mas procure extensão intertrocantérica.",
@@ -20387,21 +20839,50 @@
   }
  },
  "trauma-1292": {
-  "conceito": "A visibilidade de uma fratura depende da orientação do traço em relação ao feixe e da sobreposição óssea. Na fratura vertical ou sagital da patela, o perfil pode superpor os fragmentos, e a projeção anteroposterior pode não demonstrar um traço pouco desviado. A incidência axial permite observar as facetas e o plano sagital de separação.\n\nO estudo da patela costuma combinar anteroposterior, perfil e axial, quando a dor e a condição do paciente permitem posicionamento seguro. A questão privilegia a incidência axial para evitar perder uma fratura vertical. Isso não significa que a fratura seja invisível em todo AP nem que o perfil seja dispensável: ele também avalia deslocamento, altura da patela e aparelho extensor.",
-  "correta": "É a resposta assinalada e destaca a utilidade da axial quando o AP não revela claramente a fratura. Ela separa as facetas e evidencia o traço sagital, auxiliando também na avaliação da congruência. A interpretação deve manter o conjunto de incidências, sem estabelecer uma superioridade absoluta para todos os casos.",
+  "conceito": "A fratura vertical da patela pode passar despercebida na incidência **anteroposterior**. Por isso é importante acrescentar a **axial**, alternativa D. A resposta não significa que toda fratura vertical seja invisível no AP, mas que depender dessa projeção pode perder o traço.\n\nCada radiografia projeta uma estrutura tridimensional num plano. Mudar a direção do feixe separa superfícies e traços que ficaram sobrepostos na primeira incidência. O resumo recomenda AP, perfil e axial para avaliar a patela: o perfil define melhor o traço transverso e a separação; a axial evidencia os verticais, os marginais e defeitos osteocondrais (Rockwood, 10ª ed., cap. 60, “Imagem”).\n\nO traço vertical costuma decorrer de golpe direto com o joelho parcialmente fletido. Se retináculos e mecanismo extensor permanecem íntegros, pode ter pouco desvio. Esse exame relativamente preservado não deve encerrar a investigação radiográfica quando persistem dor localizada e suspeita de fratura.\n\nA axial descrita no capítulo usa joelho a 45 graus e raio a 30 graus abaixo da horizontal. O objetivo aqui é entender a complementaridade das incidências, não trocar a avaliação clínica por uma única imagem. Radiografia contralateral pode ajudar se a dúvida for patela bipartida, que em geral é bilateral e superolateral, com bordas corticalizadas.\n\nSe as radiografias não esclarecem um padrão complexo, a TC pode ajudar no planejamento; não é exame rotineiro para toda fratura isolada. A RM tem papel nas suspeitas tendíneas e condrais. Nesta questão, o passo que corrige a limitação do AP é a incidência axial.",
+  "correta": "**D.** Identifica a limitação do AP e acrescenta a axial, que demonstra melhor o traço vertical no resumo consultado. Sem gabarito oficial registrado, D permanece resposta provável sustentada pela fonte, não resposta oficial da banca.",
   "incorretas": {
-   "A": "A sobreposição no perfil pode realmente dificultar a percepção de uma fratura vertical. A incidência AP pode ajudar, portanto a primeira parte não é uma falsidade absoluta. O problema é apresentá-la como complemento suficiente, sem a axial que demonstra diretamente a separação sagital e a superfície patelofemoral.",
-   "B": "O AP pode falhar, mas o perfil não resolve necessariamente a dificuldade das fraturas verticais. Nessa projeção, os fragmentos medial e lateral tendem a sobrepor-se. O perfil é útil em outras perguntas, sobretudo fratura transversal, deslocamento e altura patelar, sem substituir a incidência axial.",
-   "C": "A axial é especialmente útil para o padrão sagital; por isso, não se deve afirmar genericamente que ela perde esse traço e que o AP é a solução principal. Técnica inadequada pode limitar qualquer projeção. O raciocínio correto exige relacionar o plano da fratura à imagem obtida."
+   "A": "**A.** O perfil não é a melhor projeção para o traço vertical, mas concluir que o AP seja a incidência fundamental para resolver essa dificuldade perde o ponto principal. O capítulo indica a axial para revelar os traços verticais que o AP pode não mostrar.",
+   "B": "**B.** Reconhece a limitação do AP, porém escolhe o perfil como solução. O perfil é especialmente útil para o traço transverso e para medir a separação; a projeção complementar decisiva para o vertical é a axial.",
+   "C": "**C.** Inverte a relação: é justamente a axial que evidencia os traços verticais e marginais. Substituí-la pelo AP, que pode deixar o traço passar despercebido, mantém a limitação diagnóstica descrita."
   },
   "referencias": [
-   "AO Surgery Reference. Patient examination: patella. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/further-reading/patient-examination",
-   "AO Surgery Reference. Intraoperative imaging of the patella. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/further-reading/intraoperative-imaging-of-the-knee-patella"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Imagem; Fratura da patela: mecanismo e lesões associadas; Patela bipartida e outros simuladores."
   ],
-  "geradoEm": "2026-10-07",
   "conferido": false,
+  "alerta": "Sem gabarito oficial registrado no acervo. D é a resposta provável pelo resumo do Rockwood, 10ª ed., cap. 60: a axial demonstra os traços verticais que podem escapar no AP. O perfil também pode não definir o traço vertical, mas isso não torna o AP a solução proposta em A. Não equivale a dizer que o traço nunca aparece no AP.",
   "provavel": "D",
-  "alerta": "Gabarito do material: D. A alternativa A contém uma observação também plausível sobre a limitação do perfil. O conceito decisivo é acrescentar a incidência axial, e não declarar que o traço vertical nunca aparece no AP."
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Imagem",
+      "Fratura da patela: mecanismo e lesões associadas",
+      "Patela bipartida e outros simuladores"
+     ],
+     "blocos": [
+      "imagem-94cf58b2",
+      "imagem-a2c920f0",
+      "imagem-d02f2407",
+      "fratura-da-patela-mecanismo-e-lesoes-associadas-9a3c4f42",
+      "imagem-5a3e9611",
+      "patela-bipartida-e-outros-simuladores-27cbef14"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "35729c7efd2aeb95d441362fed9041eb998331a9380b31f9fb5142eb33698e37"
+    }
+   ],
+   "questaoSha256": "53b11650e46b02e99dce0f68ee351235088b9497740dd5862417c84284771543",
+   "comentarioSha256": "b1f4db293f8fec312718dc33cc89dec3ac57e962022a3a5422ce6f52db197148"
+  }
  },
  "trauma-1293": {
   "conceito": "Ogawa utiliza a inserção dos ligamentos coracoclaviculares como marco funcional. Uma fratura posterior/proximal a essa inserção separa o coracoide e os ligamentos da escápula; uma fratura anterior/distal pode preservar a conexão coracoclavicular principal. Por isso, o mecanismo de instabilidade depende do local do traço, não apenas do tamanho do fragmento.\n\nO tipo I é posterior à inserção e foi o mais frequente na série original. O tipo II fica anterior. Fraturas associadas do anel suspensor superior do ombro devem ser procuradas, pois múltiplas interrupções podem produzir instabilidade maior. Nem toda fratura tipo I exige automaticamente cirurgia: desvio, lesões associadas e estabilidade orientam a decisão.",
@@ -30433,18 +30914,42 @@
   }
  },
  "trauma-1646": {
-  "conceito": "**De onde vem a patela bipartida.** Os centros de ossificação da patela aparecem por volta dos 2 a 3 anos. A patela bipartida (ou tripartida) é uma **variante anatômica normal**, resultado da fusão incompleta de dois ou mais centros. Não é fratura, e o capítulo a coloca entre os \"simuladores\" (masqueraders) que não podem ser confundidos com uma fratura desviada num paciente que acabou de cair.\n\n**Os números e as características.** A incidência é de cerca de **8%**, e o achado é **quase sempre bilateral**. O fragmento acessório típico fica na região **superolateral** da patela, com bordas lisas e corticalizadas na radiografia (figura 60-2), diferente das bordas irregulares e sem cortical de um traço agudo. Ao exame, não há dor, sensibilidade ou perda de função do mecanismo extensor.\n\n**Como diferenciar no pronto-socorro.**\n\n| Dado | Patela bipartida | Fratura aguda |\n|---|---|---|\n| local | superolateral | qualquer, transversa mais comum |\n| bordas | lisas, corticalizadas | irregulares, sem cortical |\n| lado oposto | quase sempre igual | normal |\n| exame | indolor, extensão normal | dor, hemartrose, defeito palpável |\n\nPor isso a radiografia do **joelho contralateral** costuma confirmar o diagnóstico. O capítulo acrescenta uma ressalva: a bipartida verdadeiramente **unilateral** é extremamente rara e pode ser, na verdade, uma fratura antiga por avulsão.\n\n**Onde o fragmento se fixa.** A posição superolateral coincide com a inserção do vasto lateral, cujas fibras mais mediais se fixam na borda superolateral da patela. Isso ajuda a lembrar o local, sem precisar decorar.\n\n> **Na prova:** bipartida é superolateral, bilateral (cerca de 8%), com bordas corticalizadas; peça o outro joelho.\n\n> **Por que esta questão foi criada.** A patela bipartida caiu duas vezes em 2024: no TARO, o diagnóstico diferencial pela radiografia contralateral, por ser bilateral e superolateral; no TEOT, como diagnóstico mais provável numa radiografia após trauma direto. Esta gêmea cobra pelo outro lado o mesmo fato, com o número que o capítulo dá (8%) cruzado com a bilateralidade.",
-  "correta": "**D: 8% e bilateral.** O capítulo dá incidência de aproximadamente 8% para a patela bipartida e afirma que ela é quase sempre bilateral, motivo pelo qual a radiografia do joelho contralateral confirma o diagnóstico. O fragmento fica tipicamente na região superolateral, bem corticalizado, e o exame não mostra dor nem perda da extensão. Guardar os dois atributos juntos resolve a questão de prova e a situação clínica: um fragmento superolateral liso, indolor, com o outro joelho igual, é variante e não fratura.",
+  "conceito": "O resumo apresenta a patela bipartida com incidência aproximada de **8%** e distribuição **quase sempre bilateral**. Entre os pares oferecidos, isso corresponde a D. O número é o informado nessa fonte, e a bilateralidade é uma característica predominante, não uma exigência absoluta.\n\nA bipartida é uma variante de desenvolvimento: parte dos centros de ossificação da patela não se fundiu. O fragmento habitual fica na região superolateral e tem bordas lisas e corticalizadas. Num quadro típico, não há sensibilidade local e o mecanismo extensor funciona normalmente (Rockwood, 10ª ed., cap. 60, “Patela bipartida e outros simuladores”).\n\nA importância prática é não transformar um achado anterior ao trauma em uma fratura aguda apenas porque apareceu na radiografia feita depois de uma queda. A imagem do outro joelho ajuda: encontrar o mesmo padrão contralateral favorece a variante. Uma verdadeira apresentação unilateral é rara e pode corresponder a avulsão antiga.\n\n**O exame continua necessário.** O padrão bilateral não dispensa investigar uma dor aguda, nem prova que nenhum trauma ocorreu. Deve-se relacionar localização da dor, sensibilidade, função extensora e contornos radiográficos. A fratura em manga do esqueleto imaturo e a lesão osteocondral, por exemplo, são problemas diferentes citados no capítulo.\n\nA questão pede somente frequência aproximada e lateralidade. Não é preciso decorar uma regra de que “qualquer fragmento superolateral é bipartido”; a utilidade do dado está em combinar desenvolvimento, corticalização e comparação com o lado oposto.\n\n**Por que esta questão foi criada.** A patela bipartida foi cobrada no TARO e no TEOT de 2024 pelo diagnóstico diferencial, pela comparação contralateral e pelo padrão superolateral. Este simulado cruza a frequência informada no capítulo com a bilateralidade para reforçar o reconhecimento da variante.",
+  "correta": "**D.** Reproduz a aproximação de 8% e a apresentação predominantemente bilateral do resumo. A palavra bilateral deve ser entendida como o padrão habitual descrito, preservando as exceções.",
   "incorretas": {
-   "A": "**Os dois atributos estão errados.** Dois por cento não é o número do capítulo, e a apresentação unilateral é justamente o que torna o diagnóstico suspeito. Segundo os autores, a bipartida verdadeiramente unilateral é extremamente rara e pode representar uma fratura antiga por avulsão. Quem escolhe esta alternativa imagina a variante como achado isolado e incomum, quando ela é relativamente frequente e simétrica.",
-   "B": "**A bilateralidade está certa; o número, não.** O achado é de fato quase sempre bilateral, e isso sustenta o uso da radiografia contralateral. A incidência dada no capítulo, porém, é de cerca de 8%, não de 2%. A alternativa testa se o aluno guardou só a metade qualitativa do fato. Em prova de par 2 por 2, errar um dos lados é errar a questão.",
-   "C": "**O número está certo; a apresentação, não.** Cerca de 8% é a incidência citada, mas a bipartida é quase sempre bilateral. Se fosse unilateral, a radiografia do outro joelho não serviria para o diagnóstico diferencial, e é exatamente isso que o TARO 2024 cobrou como conduta útil. Um fragmento unilateral deve levantar a hipótese de avulsão antiga, como o capítulo alerta."
+   "A": "**A.** Os dois elementos divergem da fonte consultada: ela informa cerca de 8%, não 2%, e descreve bilateralidade como apresentação usual. Unilateralidade verdadeira é excepcional e merece avaliação cuidadosa, inclusive da possibilidade de avulsão antiga.",
+   "B": "**B.** A bilateralidade está correta, mas a estimativa de 2% não é a fornecida pelo resumo. Um par só é a resposta quando tanto o número aproximado quanto a apresentação concordam com a fonte da questão.",
+   "C": "**C.** Acerta os 8%, mas troca a apresentação predominante por unilateral. É precisamente a frequência do padrão nos dois joelhos que torna útil a radiografia contralateral no diagnóstico diferencial."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 60 (Patellar Fractures and Dislocations and Extensor Mechanism Injuries; Lim, Chalmers e Scolaro)"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Patela bipartida e outros simuladores."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Patela bipartida e outros simuladores"
+     ],
+     "blocos": [
+      "patela-bipartida-e-outros-simuladores-27cbef14",
+      "patela-bipartida-e-outros-simuladores-f0b1afd4"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "e676227d5dd69a2ca45af37abc6d7c3f0c40e95c0cfb160461bcda6da678acfa"
+    }
+   ],
+   "questaoSha256": "7d43fd72cd431795254b5b88a9667a151a2ca76465da971e2994de1f8feb5091",
+   "comentarioSha256": "44f2532c0959633a5153ad069ed2bf7bf417e2fb7559a7950afb5351088e8e8d"
+  }
  },
  "trauma-1647": {
   "conceito": "A banda está na **face anterior**, mas a compressão que se procura criar é na **superfície articular posterior**. Com a flexão, essa compressão aumenta no mecanismo descrito. A resposta é A.\n\nO quadríceps traciona o aparelho extensor e tende a afastar os fragmentos transversos. A banda anterior ocupa o lado de tensão e transforma essa solicitação em compressão na articulação; a tensão passiva do extensor e a pressão dos côndilos durante a flexão participam desse efeito. Local do fio e local da compressão, portanto, são opostos no raciocínio (Rockwood, 10ª ed., cap. 60, “Fixação interna”).\n\nIsso explica a diferença entre a banda e uma amarra que apenas circunda a patela. O capítulo relata maior resistência da banda modificada em comparações de montagem, e destaca a importância do fio próximo do osso. Dar o nome “banda de tensão” a um material não garante que a geometria e a redução tenham sido obtidas.\n\nA estabilidade permite movimento precoce, mas não autoriza qualquer reabilitação. O capítulo protege a montagem com órtese e limita a flexão inicialmente conforme a fixação. A função mecânica precisa ser suficiente para a atividade planejada; estimular compressão na flexão não significa liberar flexão irrestrita desde o primeiro dia.\n\nNo resumo da Biblioteca, compare o princípio às montagens. A lição é separar **onde a banda é colocada**, **onde ela comprime** e **como o movimento modifica a força**.\n\n**Por que esta questão foi criada.** Testa o mecanismo da banda sem confundir a face anterior de implantação com a superfície articular que recebe compressão.",
