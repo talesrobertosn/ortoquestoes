@@ -323,15 +323,47 @@
   "conferido": false
  },
  "joelho-0028": {
+  "conceito": "O tendão patelar rompe mais frequentemente **abaixo dos 40 anos e na inserção no polo inferior da patela**. É a alternativa D. Idade e localização formam duas pistas independentes; reconhecer apenas uma delas deixa metade da pergunta sem resposta.\n\nO tendão liga o ápice da patela à tuberosidade da tíbia. A ruptura proximal é a mais comum na descrição, como avulsão, associada à menor rigidez das fibras na inserção e à maior deformação no polo inferior. A ruptura distal na tuberosidade é a menos comum (resumo do Rockwood, 10ª ed., cap. 60, “Rupturas tendíneas” e “Tendão patelar agudo”).\n\nA comparação com o quadricipital ajuda: ele rompe mais acima dos 40 anos, em degeneração ou doença sistêmica. São distribuições habituais, não barreiras que impeçam uma ruptura patelar num paciente mais velho. A frequência deve orientar a hipótese, enquanto o exame confirma onde o mecanismo perdeu continuidade.\n\nNa ruptura completa do patelar, os retináculos costumam também se romper e a extensão ativa se perde. O quadríceps pode puxar a patela para cima sem a oposição do tendão, produzindo patela alta na radiografia. Localização da dor, defeito, extensão e imagem precisam ser relacionados, em vez de usar idade como diagnóstico.\n\nNo resumo da Biblioteca, compare os dois tendões e depois a inserção patelar. A diferença anatômica explica tanto o local de falha quanto a direção da alteração da altura.",
+  "correta": "**D: abaixo de 40 anos; polo inferior da patela.** É a associação habitual de idade e inserção proximal descrita.\n\nEla deve ser confirmada pelo exame do aparelho extensor e pela imagem, sem excluir apresentações fora da faixa mais comum.",
   "incorretas": {
-   "A": "**Idade e local não representam o padrão pedido.** A ruptura quadricipital predomina em pessoas mais velhas; a avulsão patelar típica é proximal.",
-   "B": "**A idade é compatível, mas o local não é o clássico.** Na tuberosidade tibial, sobretudo no adolescente, deve-se pensar em avulsão óssea apofisária.",
-   "C": "**O polo inferior está certo, a faixa etária não é a predominante.** A ruptura patelar pode ocorrer acima dos 40 anos, porém é mais típica em adultos jovens."
+   "A": "**Troca a distribuição etária e o local predominante.** Mais de 40 anos remete ao padrão quadricipital; a tuberosidade é o local distal menos comum da ruptura patelar.\n\nA opção combina duas pistas que não caracterizam a apresentação habitual perguntada.",
+   "B": "**Acerta a idade e desloca a ruptura para a extremidade menos comum.** O tendão patelar pode romper junto da tíbia, mas predomina no polo inferior da patela.\n\nPossibilidade anatômica não equivale à frequência solicitada.",
+   "C": "**Reconhece a inserção proximal e usa a faixa etária mais ligada ao quadricipital.** O patelar é mais comum abaixo dos 40.\n\nO local correto não deve levar a aceitar automaticamente a outra metade do par."
   },
-  "conceito": "**O lado inferior do aparelho extensor.** O tendão patelar liga o polo inferior da patela à tuberosidade tibial. A ruptura por contração excêntrica do quadríceps durante queda ou aterrissagem é mais típica de adultos jovens ativos do que a ruptura quadricipital, que predomina em idades maiores. A avulsão proximal junto ao polo inferior patelar é a localização clássica da ruptura patelar, embora também existam lesões na substância tendínea ou na fixação distal.\n\n**Predisposição e exame.** Tendinopatia prévia, infiltração de corticoide, doença renal, diabetes e outras condições que enfraquecem o tendão reduzem a carga necessária para ruptura. A interrupção completa provoca dor infrapatelar, falha palpável e perda da extensão ativa; a patela pode ficar alta na radiografia de perfil. Se os retináculos permanecerem íntegros, alguma extensão ainda pode existir, por isso o exame isolado precisa de interpretação cuidadosa.\n\n**Não trocar por avulsão apofisária.** Um fragmento arrancado da tuberosidade tibial em adolescente é uma lesão óssea da apófise, diferente do padrão de avulsão tendínea proximal descrito na questão. Rupturas patelares completas normalmente exigem reparo precoce para restaurar a continuidade do aparelho extensor.",
-  "correta": "**Abaixo de 40 anos e no polo inferior da patela.** É a combinação didática de faixa etária e local proximal mais característica da ruptura patelar.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar; Tratamento das rupturas tendíneas; Anatomia e biomecânica do mecanismo extensor."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Rupturas do tendão quadricipital e do tendão patelar",
+      "Tratamento das rupturas tendíneas",
+      "Anatomia e biomecânica do mecanismo extensor"
+     ],
+     "blocos": [
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+      "tratamento-das-rupturas-tendineas-d3a3a37d",
+      "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "2918b1e97c3804d5bb0586c7a49cd60b6ebae9ed700efe159693e802463faf3e"
+    }
+   ],
+   "questaoSha256": "ff325682d4f4e801c15e82d665d2446c832f77be30864627582c1cabe63a5d44",
+   "comentarioSha256": "067ef42b4e1f5f5852ffcccc54c1f1c22e87d7450413e3519b7c2b924233bc26"
+  }
  },
  "joelho-0029": {
   "incorretas": {
@@ -482,15 +514,44 @@
   "conferido": false
  },
  "joelho-0042": {
+  "conceito": "O pé está apoiado e o joelho recebe o peso do corpo enquanto o quadríceps tenta resistir à flexão. Esse carregamento é **excêntrico**, e corresponde ao mecanismo mais comum descrito para a ruptura quadricipital: alternativa A.\n\nNa contração excêntrica, o músculo produz força enquanto é alongado pela carga. O resumo descreve contração forte contra a carga súbita do corpo, com joelho fletido. A tentativa de impedir a queda pode, portanto, sobrecarregar um tendão já degenerado mesmo num evento de baixa energia (Rockwood, 10ª ed., cap. 60, “Rupturas do tendão quadricipital e do tendão patelar”).\n\nO quadricipital rompe mais acima dos 40 anos, em degeneração ou doença sistêmica. A presença de pródromos e fragilidade ajuda a entender por que nem toda contração semelhante causa uma lesão: o mecanismo de carga e a condição do tecido participam do problema.\n\nO exame busca perda de extensão ativa ou incapacidade de manter o joelho estendido contra a gravidade. Alguma extensão pode persistir se parte dos retináculos ficou íntegra, o que impede excluir ruptura apenas por um pequeno movimento. A avaliação deve procurar defeito e relacioná-lo à radiografia e, quando necessário, a exames tendíneos.\n\nNa Biblioteca, leia o mecanismo junto dos sinais. “Excêntrica” não significa força fraca; significa resistir a uma carga que continua alongando o conjunto.",
+  "correta": "**A: excêntrica com apoio do pé.** A contração tenta conter a flexão sob a carga do corpo e sobrecarrega o mecanismo extensor.\n\nO apoio é parte do cenário mecânico descrito, não uma palavra intercambiável com uma contração em cadeia livre.",
   "incorretas": {
-   "B": "**A contração excêntrica está certa, mas falta o apoio característico.** Com o pé livre, não se reproduz a mesma carga de sustentação do corpo descrita na questão.",
-   "C": "**O apoio está certo, o tipo de contração não.** Na fase concêntrica o quadríceps encurta para estender o joelho, em vez de resistir ao seu alongamento forçado.",
-   "D": "**Faltam os dois elementos clássicos.** Contração concêntrica sem o pé apoiado não expressa o mecanismo típico de queda ou aterrissagem."
+   "B": "**Reconhece a contração excêntrica, mas retira o apoio que participa do mecanismo habitual.** O capítulo descreve resistência à carga súbita do corpo com o pé apoiado.\n\nNão se afirma que qualquer outro mecanismo seja impossível; ele não é o padrão mais comum perguntado.",
+   "C": "**Mantém o apoio e muda a contração para concêntrica.** Na concêntrica, o músculo encurta enquanto produz força; não é a situação de resistir à flexão sob carga descrita.\n\nO sentido da relação entre músculo e carga é o que decide a diferença.",
+   "D": "**Troca o tipo de contração e a condição de apoio.** A fonte caracteriza uma carga excêntrica com pé apoiado.\n\nA ruptura não deve ser explicada apenas por “contrair forte”: a direção da carga e a posição do membro também importam."
   },
-  "conceito": "**O quadríceps tenta frear a flexão.** Na contração excêntrica, o músculo gera força enquanto se alonga. Se uma pessoa tropeça ou aterrissa com o pé apoiado, o peso do corpo flexiona o joelho ao mesmo tempo em que o quadríceps tenta sustentá-lo. A carga resultante pode superar a resistência do tendão quadricipital e rompê-lo, sobretudo se já houver degeneração.\n\n**Reconhecer a ruptura.** Dor suprapatelar súbita, defeito palpável e incapacidade de elevar a perna estendida apontam para interrupção do mecanismo extensor. O tendão quadricipital rompe com maior frequência depois dos 40 anos e em pessoas com diabetes, doença renal ou uso de corticoides. Rupturas completas costumam exigir reparo precoce; um retináculo ainda íntegro pode mascarar parte da perda de extensão e retardar o diagnóstico.",
-  "correta": "**Excêntrica com o pé apoiado.** O quadríceps freia o joelho que é forçado à flexão sob o peso do corpo.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Rupturas do tendão quadricipital e do tendão patelar"
+     ],
+     "blocos": [
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "af957c79059e8f02d8def5ba29fb69c0bff23500f29b10f1bb9789a0ebeebd66"
+    }
+   ],
+   "questaoSha256": "6c76f816b7a1d38cb0f4f4464101f917a4b534c77419c59d50545758cb3f4359",
+   "comentarioSha256": "e2be54da7822b5ee04234ab4ccae8e7bb0c7ee5fe17997464abf7a1d3e2aeb30"
+  }
  },
  "joelho-0043": {
   "incorretas": {
@@ -2116,15 +2177,43 @@
   "conferido": false
  },
  "joelho-0173": {
+  "conceito": "Na proteção do reparo agudo do tendão patelar, a cerclagem é tensionada com o joelho em alguma flexão; a técnica de West citada usa **30 graus**, alternativa A. Depois, o reparo é **testado a 90 graus**. Esses dois momentos não devem ser confundidos.\n\nA proteção deve aliviar a solicitação da sutura sem encurtar excessivamente o mecanismo. O resumo orienta conferir a altura patelar com perfil, linha de Blumensaat e lado oposto antes de amarrar o reparo, e tensionar o reforço em flexão para evitar encurtar o tendão (Rockwood, 10ª ed., cap. 60, “Tendão patelar agudo”).\n\nA técnica descreve túnel transversal posterior à tuberosidade e passagem do fio ou fita sob o quadricipital junto do polo superior. A posição e a tensão precisam conservar uma relação que permita movimento; uma proteção apertada demais pode criar outro problema mecânico mesmo que a sutura esteja resistente.\n\nO capítulo também menciona 90 graus para a cerclagem de proteção da **patelectomia parcial**, outra reconstrução. Não se deve importar esse ângulo para todo procedimento que use cerclagem no joelho. O nome do material não determina sozinho como a montagem foi planejada.\n\nLeia no resumo da Biblioteca a técnica do tendão patelar e compare com a patelectomia. O objetivo é proteger a sutura mantendo altura e movimento adequados, não maximizar o aperto do reforço.",
+  "correta": "**A: 30 graus.** É o ângulo de tensionamento citado na técnica de West para o reforço do reparo patelar.\n\nO teste subsequente a 90 graus verifica a montagem; não é o mesmo ato de tensionar a cerclagem.",
   "incorretas": {
-   "B": "**Quarenta e cinco graus não são a referência desta técnica.** O reforço deve ser ajustado no ângulo especificado e conferido quanto à altura patelar e ao arco de movimento.",
-   "C": "**Sessenta graus representam flexão maior que a recomendada na questão.** Um ajuste inadequado pode modificar a tensão do reforço quando o joelho se aproxima da extensão.",
-   "D": "**Noventa graus são flexão demasiada para a referência cobrada.** A cerclagem precisa proteger o reparo sem perder controle da posição patelar perto da extensão."
+   "B": "**45 graus não é o valor de tensionamento descrito.** Pode aparecer em outros protocolos de movimento, mas o capítulo cita 30 para essa técnica.\n\nUm número de flexão usado em reabilitação não deve ser transferido para o ajuste intraoperatório do reforço.",
+   "C": "**60 graus também não corresponde ao tensionamento da técnica citada.** A resposta pede a posição na montagem, não um grau de flexão que o joelho poderia alcançar em outro momento.\n\nO reforço deve ser ajustado segundo a reconstrução, conservando altura e excursão.",
+   "D": "**90 graus é o teste do reparo e também aparece na cerclagem da patelectomia parcial.** É uma referência real do capítulo, mas de um ato ou reconstrução diferente.\n\nConfundir esses contextos altera a tensão que se pretendia aplicar ao tendão patelar reparado."
   },
-  "conceito": "**O reparo reconstitui a continuidade do mecanismo extensor.** Na ruptura aguda do tendão patelar, fios resistentes podem ser passados no tendão e fixados à patela por túneis ósseos ou âncoras. Também se reparam os retináculos rompidos. Uma cerclagem ou reforço entre patela e tíbia pode compartilhar carga com a sutura durante a cicatrização.\n\n**Tensionar exige controlar a altura da patela.** Na técnica cobrada, o reforço é ajustado com aproximadamente 30 graus de flexão. O objetivo é evitar que fique frouxo no arco funcional ou excessivamente curto, prendendo a flexão e produzindo patela baixa. Conferir a altura patelar em imagem lateral e comparar com o joelho oposto, quando possível, ajuda a evitar erro de comprimento.\n\n**O número pertence à técnica, não a toda reconstrução.** Métodos de reforço, pontos de passagem e protocolos de mobilização variam. A escolha do ângulo de tensionamento deve seguir a técnica utilizada e ser verificada ao mover o joelho suavemente ao final do reparo.",
-  "correta": "**Trinta graus de flexão.** É a posição de tensionamento da cerclagem protetora adotada pela técnica perguntada.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Tratamento das rupturas tendíneas; Patelectomia parcial e total."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Tratamento das rupturas tendíneas",
+      "Patelectomia parcial e total"
+     ],
+     "blocos": [
+      "tratamento-das-rupturas-tendineas-51da9e95",
+      "patelectomia-parcial-e-total-ce27b267"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "7b4c10330f534d4b3664ea8584ea6be49afddf6b8c7dcb31b68d540648a0aec4"
+    }
+   ],
+   "questaoSha256": "b6e9255530c49d14ad3dc43ce837d68d2de47ebaa74a634cb9886a0e7ede401d",
+   "comentarioSha256": "6d66ec45c8993835c48b35ab91d2c4ac39aaeaccbcaa3ee0af12acf92f165b80"
+  }
  },
  "joelho-0174": {
   "incorretas": {
@@ -2208,18 +2297,45 @@
   "conferido": false
  },
  "joelho-0181": {
+  "conceito": "O padrão mais frequente da ruptura do tendão patelar é **paciente com menos de 40 anos, ruptura que se estende aos retináculos e perda completa da extensão**. É a alternativa B.\n\nA continuidade do mecanismo não depende só do tendão central. Os retináculos são extensores secundários que podem manter alguma transmissão de força. Na ruptura patelar completa, porém, a lesão costuma atravessar também essa manga, explicando a perda de extensão ativa. No quadricipital, parte dela pode ser poupada e algum movimento persistir (resumo do Rockwood, 10ª ed., cap. 60, “Rupturas tendíneas”).\n\nA distribuição etária também difere: patelar abaixo dos 40, quadricipital acima dos 40 e mais associado à degeneração ou doença sistêmica. A idade é uma tendência, não um requisito que permita dispensar o exame de um paciente fora desse padrão.\n\nO quadríceps passa a puxar a patela sem a oposição do tendão rompido, podendo produzir patela alta. O exame procura defeito, incapacidade de elevar a perna estendida e de manter extensão contra a gravidade. Dor e hematoma podem dificultar a avaliação, de modo que clínica e imagem devem ser relacionadas.\n\nNa Biblioteca, compare idade, retináculos, função e altura patelar nos dois tendões. A resposta reúne elementos que se explicam mutuamente, em vez de três fatos soltos.",
+  "correta": "**B: menos de 40 anos, extensão aos retináculos e perda completa da extensão.** É a combinação predominante descrita para o tendão patelar.\n\nA perda funcional é coerente com a interrupção do tendão e da via extensora secundária.",
   "incorretas": {
-   "A": "Acima dos 40 anos, o mais comum é a ruptura do tendão quadricipital, e não do patelar.",
-   "C": "Erra a idade e o padrão: a ruptura do tendão patelar predomina abaixo dos 40 anos e, tipicamente, atinge os retináculos com perda completa da extensão.",
-   "D": "A idade está certa, mas a ruptura típica é completa e se estende aos retináculos, levando à perda da extensão ativa."
+   "A": "**Mantém a lesão retinacular e a perda funcional, mas troca a faixa etária habitual.** Mais de 40 é o padrão mais associado ao quadricipital na comparação.\n\nUma ruptura patelar nessa idade pode ocorrer; a alternativa não descreve o grupo de maior frequência perguntado.",
+   "C": "**Troca a idade e preserva justamente a manga que costuma romper no patelar.** Alguma extensão mantida por retináculo poupado é uma possibilidade destacada na ruptura quadricipital.\n\nNão é a combinação mais comum do tendão patelar completo.",
+   "D": "**Reconhece o grupo mais jovem, mas mantém retináculos e extensão.** A fonte descreve a ruptura patelar habitual atravessando a manga e interrompendo a extensão ativa.\n\nA idade correta não valida a anatomia e a consequência funcional trocadas."
   },
-  "conceito": "O aparelho extensor do joelho é uma corrente: quadríceps, tendão quadricipital, patela, tendão patelar e tuberosidade da tíbia. Ele pode romper em dois pontos principais acima e abaixo da patela, e cada um tem um perfil de paciente.\n\nA ruptura do **tendão quadricipital** é do paciente **mais velho**, geralmente acima dos 40 anos, com tendão já degenerado. A do **tendão patelar** é do **mais jovem**, abaixo dos 40, quase sempre num esporte. O mecanismo é uma contração forte do quadríceps com o joelho dobrado, como ao aterrissar de um salto ou tentar frear uma queda: o músculo puxa enquanto o joelho está sendo dobrado à força (contração excêntrica), e o tendão não aguenta. Tendinopatia prévia (o joelho do saltador), infiltrações de corticoide e doenças sistêmicas, como lúpus, artrite reumatoide e insuficiência renal, aumentam o risco e podem até provocar rupturas dos dois lados.\n\nA ruptura típica acontece perto do **polo inferior da patela** e, por ser completa, costuma se **estender para os retináculos**, as expansões laterais do quadríceps que também ajudam a estender o joelho. Com os retináculos rompidos, o paciente **perde totalmente a extensão ativa**: não consegue levantar a perna esticada. Ao exame há um vazio palpável abaixo da patela, e a radiografia em perfil mostra a **patela alta**, puxada para cima pelo quadríceps. Se os retináculos estiverem preservados, ele ainda pode esticar a perna parcialmente, o que confunde e atrasa o diagnóstico.\n\nO tratamento é o reparo cirúrgico precoce, de preferência nas primeiras duas semanas. Depois disso, o tendão retrai e a cirurgia vira uma reconstrução bem mais difícil.",
-  "correta": "Menos de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho. É o perfil típico: paciente jovem, ruptura completa que atinge os retináculos e impede a extensão ativa.",
   "referencias": [
-   "Azar FM, Beaty JH, Canale ST (eds). Campbell's Operative Orthopaedics. 13th ed. Philadelphia: Elsevier; 2017."
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar; Anatomia e biomecânica do mecanismo extensor."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Rupturas do tendão quadricipital e do tendão patelar",
+      "Anatomia e biomecânica do mecanismo extensor"
+     ],
+     "blocos": [
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+      "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "bea3a1ac6e515817bd0c0ca4e41f0acc7f29423fe6621e377e189003960e54cd"
+    }
+   ],
+   "questaoSha256": "9aaee91989bbff184445146d9cc6eacdbd06c0939953fb6d1d46e166455d18ba",
+   "comentarioSha256": "c6e1144b697f5050c09d9c39c63c3d813eb3d84ee727758e24415927ddc0ab69"
+  }
  },
  "joelho-0182": {
   "incorretas": {
@@ -2587,18 +2703,46 @@
   "conferido": false
  },
  "joelho-0210": {
+  "conceito": "A ruptura do tendão patelar ocorre mais frequentemente na **inserção no polo inferior da patela**, alternativa C. Esse é o extremo proximal do tendão, que segue da patela até a tuberosidade da tíbia.\n\nO resumo associa a predileção pela inserção à menor rigidez das fibras e à maior deformação no polo inferior. Ela é descrita como avulsão; isso não significa que sempre exista um fragmento ósseo visível. A localização da ruptura e a presença de osso arrancado são informações diferentes (Rockwood, 10ª ed., cap. 60, “Tendão patelar agudo”).\n\nNo meio do tendão, o reparo pode ser mais difícil por qualidade ruim do tecido e risco de encurtamento, com patela baixa. Na extremidade distal, junto da tuberosidade, a ruptura é a menos comum e recebe uma reconstrução adaptada ao local. O ponto de falha muda a forma de reinserir ou aproximar os tecidos.\n\nNa ruptura completa patelar, a patela tende a subir pela tração quadricipital sem oposição; retináculos também podem estar rompidos e a extensão ativa se perder. A radiografia ajuda a reconhecer altura e fragmentos, mas a ausência de uma avulsão óssea não elimina ruptura tendínea.\n\nNo resumo da Biblioteca, compare os três níveis antes de escolher uma técnica. Primeiro é preciso localizar onde a continuidade foi interrompida; depois se planejam sutura, reinserção e proteção.",
+  "correta": "**C: polo inferior da patela.** É a inserção proximal e o local predominante descrito.\n\nA avulsão pode ser tendínea; não se exige visualizar um fragmento ósseo para reconhecer a lesão.",
   "incorretas": {
-   "A": "A ruptura no meio do tendão é menos frequente, geralmente ligada a trauma direto ou a um tendão muito degenerado.",
-   "B": "A ruptura na inserção tibial acontece, mas é menos comum que a proximal, junto à patela.",
-   "D": "A avulsão óssea na tíbia é o padrão do adolescente, a fratura da tuberosidade anterior da tíbia, e não do adulto."
+   "A": "**A porção média pode romper, mas não é a mais frequente.** O capítulo a destaca pela dificuldade de reparo e pelo risco de encurtar o tendão.\n\nMaior dificuldade técnica não equivale a maior frequência.",
+   "B": "**A inserção tibial é distal e menos comum.** O resumo a diferencia do polo inferior patelar, onde predominam as rupturas.\n\nO tendão tem dois extremos ósseos, e a pergunta exige conservar qual deles é o habitual.",
+   "D": "**Acrescenta avulsão óssea à extremidade distal, que não é o local predominante.** Fragmentos podem ajudar no diagnóstico, mas sua presença não transforma a tíbia na origem mais frequente.\n\nLocal e tipo de tecido avulsionado precisam ser julgados separadamente."
   },
-  "conceito": "O tendão que liga a patela à tíbia é chamado de tendão patelar ou ligamento patelar (como liga dois ossos, a nomenclatura anatômica prefere ligamento). Quando ele rompe, a pergunta é onde, e a resposta é quase sempre a mesma: perto do **polo inferior da patela**, na junção entre o tendão e o osso.\n\nEssa região é o ponto fraco do tendão por alguns motivos. É ali que a carga se concentra quando o quadríceps puxa com força, e é ali também que nascem as tendinopatias do esportista que salta, o chamado joelho do saltador. Um tendão já doente nesse ponto, ou enfraquecido por infiltrações de corticoide ou por doenças como lúpus, artrite reumatoide e insuficiência renal, rompe com mais facilidade. As rupturas no meio do tendão e na inserção na tíbia acontecem, mas são menos comuns, geralmente por trauma direto ou tendão muito degenerado.\n\nA ruptura típica é do adulto com menos de 40 anos, durante uma contração forte com o joelho dobrado. Ao exame, há um vazio abaixo da patela e o paciente não consegue estender o joelho contra a gravidade. Na radiografia em perfil, a patela está **alta**, puxada pelo quadríceps (o índice de Insall-Salvati, que compara o comprimento do tendão com o da patela, passa de 1,2). O reparo é feito cedo, com suturas passadas por túneis na patela ou com âncoras, protegidas por uma cerclagem.\n\nNo adolescente, o padrão muda: o ponto fraco passa a ser a própria tuberosidade da tíbia, que pode ser arrancada como fratura. Na criança, o equivalente da ruptura proximal é a fratura em manga do polo inferior da patela, que leva um grande pedaço de cartilagem com pouco osso visível.",
-  "correta": "No polo inferior da patela. A junção entre o tendão e o osso é o ponto de maior concentração de carga e de degeneração, e é ali que a maioria das rupturas acontece.",
   "referencias": [
-   "Azar FM, Beaty JH, Canale ST (eds). Campbell's Operative Orthopaedics. 13th ed. Philadelphia: Elsevier; 2017."
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Tratamento das rupturas tendíneas; Anatomia e biomecânica do mecanismo extensor; Rupturas do tendão quadricipital e do tendão patelar."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Tratamento das rupturas tendíneas",
+      "Anatomia e biomecânica do mecanismo extensor",
+      "Rupturas do tendão quadricipital e do tendão patelar"
+     ],
+     "blocos": [
+      "tratamento-das-rupturas-tendineas-d3a3a37d",
+      "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "008513be947043edfb9593b0794f6b6c81c0d4055723fa10a4b2a46cd650743c"
+    }
+   ],
+   "questaoSha256": "bdd51074ba82469ab8211c26f447897f53dec56c211ba19f67ff27c05af6244d",
+   "comentarioSha256": "e20b56cf750eefa114ffd07c5b749c17a2627ee87103c5ff8922ac48d512588a"
+  }
  },
  "joelho-0211": {
   "incorretas": {

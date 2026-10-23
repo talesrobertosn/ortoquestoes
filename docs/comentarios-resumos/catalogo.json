@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1170,
+  "pendente": 1130,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 141,
+  "pendente-fonte": 151,
   "pendente-inspecao-imagem": 158,
-  "revisada": 803
+  "revisada": 833
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -178,10 +178,10 @@
    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
    "estados": {
     "duplicada": 1,
-    "pendente": 8,
+    "pendente": 1,
     "pendente-fonte": 9,
     "pendente-inspecao-imagem": 7,
-    "revisada": 20
+    "revisada": 27
    }
   },
   "rockwood10-57-diafise-femur": {
@@ -189,8 +189,8 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 23,
-    "pendente-fonte": 7,
+    "pendente": 22,
+    "pendente-fonte": 8,
     "pendente-inspecao-imagem": 1,
     "revisada": 39
    }
@@ -199,10 +199,9 @@
    "titulo": "Fratura do fêmur distal",
    "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
    "estados": {
-    "pendente": 7,
-    "pendente-fonte": 8,
+    "pendente-fonte": 13,
     "pendente-inspecao-imagem": 1,
-    "revisada": 23
+    "revisada": 25
    }
   },
   "rockwood10-60-patela-mecanismo-extensor": {
@@ -210,9 +209,10 @@
    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
    "estados": {
     "duplicada": 14,
-    "pendente": 66,
+    "pendente": 40,
+    "pendente-fonte": 5,
     "pendente-inspecao-imagem": 2,
-    "revisada": 1
+    "revisada": 22
    }
   },
   "rockwood10-61-luxacao-joelho": {
@@ -220,10 +220,10 @@
    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
-    "pendente": 96,
+    "pendente": 95,
     "pendente-anulada": 1,
     "pendente-inspecao-imagem": 11,
-    "revisada": 1
+    "revisada": 2
    }
   },
   "rockwood10-62-planalto-tibial": {
@@ -240,11 +240,11 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 83,
+    "pendente": 82,
     "pendente-anulada": 2,
     "pendente-fonte": 13,
     "pendente-inspecao-imagem": 1,
-    "revisada": 51
+    "revisada": 52
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -5848,8 +5848,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 58 favorece placa longa e parafusos espaçados, mas não compara resistência do construto entre número de parafusos, bloqueio nas extremidades, distribuição diafisária e omissão perto do foco. Falta o ensaio ou trecho primário de biomecânica para sustentar que o aumento principal é a distância entre parafusos, sem confundir resistência, rigidez e comprimento de trabalho.",
    "temComentario": true,
    "citacoes": [
     {
@@ -5863,7 +5863,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "83800509aa4c388eb8ffc7602116e4c6c18cd81742111c4dfe8d2cb685827961"
+   "questaoSha256": "83800509aa4c388eb8ffc7602116e4c6c18cd81742111c4dfe8d2cb685827961",
+   "pendencia": "O corpo do resumo 58 favorece placa longa e parafusos espaçados, mas não compara resistência do construto entre número de parafusos, bloqueio nas extremidades, distribuição diafisária e omissão perto do foco. Falta o ensaio ou trecho primário de biomecânica para sustentar que o aumento principal é a distância entre parafusos, sem confundir resistência, rigidez e comprimento de trabalho."
   },
   "conceitos-basicos-0338": {
    "tema": "conceitos-basicos",
@@ -6217,8 +6218,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 58 informa risco de pseudartrose e que o FCL torna o calo mais simétrico, mas não descreve explicitamente maior calo medial que lateral nas fraturas simples com placa bloqueada em ponte. Não é possível deduzir o lado só da palavra assimétrico. Falta o trecho primário que associa padrão da fratura, montagem e distribuição do calo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6232,7 +6233,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "8c27743091829a5af3ed4a025d6ed1927d689715bab5586837da96694e0ee4f6"
+   "questaoSha256": "8c27743091829a5af3ed4a025d6ed1927d689715bab5586837da96694e0ee4f6",
+   "pendencia": "O resumo 58 informa risco de pseudartrose e que o FCL torna o calo mais simétrico, mas não descreve explicitamente maior calo medial que lateral nas fraturas simples com placa bloqueada em ponte. Não é possível deduzir o lado só da palavra assimétrico. Falta o trecho primário que associa padrão da fratura, montagem e distribuição do calo."
   },
   "conceitos-basicos-0402": {
    "tema": "conceitos-basicos",
@@ -6337,8 +6339,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 60 relaciona degeneração e doença sistêmica a ruptura tendínea, mas não lista esteroides nem compara as quatro classes farmacológicas. A menção ao gabarito aparece só no bloco contextual. Falta fonte primária da associação com esteroides e fundamento dos distratores para classificar o comentário inteiro como baseado no resumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6352,7 +6354,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "e9b902c529399d9c02bca91e4169dfd331ad3a5cdc77f2ff2d23b472f31fb1bb"
+   "questaoSha256": "e9b902c529399d9c02bca91e4169dfd331ad3a5cdc77f2ff2d23b472f31fb1bb",
+   "pendencia": "O corpo do resumo 60 relaciona degeneração e doença sistêmica a ruptura tendínea, mas não lista esteroides nem compara as quatro classes farmacológicas. A menção ao gabarito aparece só no bloco contextual. Falta fonte primária da associação com esteroides e fundamento dos distratores para classificar o comentário inteiro como baseado no resumo."
   },
   "joelho-0008": {
    "tema": "joelho",
@@ -6361,8 +6364,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 60 descreve idade e rupturas no polo superior ou no meio do tendão, mas não compara junções osteotendínea e musculotendínea segundo idoso versus jovem. Meio do tendão não equivale a junção musculotendínea. Falta o trecho primário dessa distribuição para avaliar todos os pares.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6376,7 +6379,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "50e41772e02064bab6f0c0404c4c8b27dad0e4920c80c1417db256cc9715f780"
+   "questaoSha256": "50e41772e02064bab6f0c0404c4c8b27dad0e4920c80c1417db256cc9715f780",
+   "pendencia": "O resumo 60 descreve idade e rupturas no polo superior ou no meio do tendão, mas não compara junções osteotendínea e musculotendínea segundo idoso versus jovem. Meio do tendão não equivale a junção musculotendínea. Falta o trecho primário dessa distribuição para avaliar todos os pares."
   },
   "joelho-0009": {
    "tema": "joelho",
@@ -6402,8 +6406,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A região hipovascular a 1–2 cm do polo superior não é definida no corpo do resumo 60, que explicitamente informa a lacuna no contexto da questão. Falta fonte primária de vascularização tendínea e local de ruptura para distinguir 5 cm, inserção, 1–2 cm e retináculo medial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6417,7 +6421,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "5593719ea3c731cefde2684e682f5f892e1b75f07f16637ab57ae45a3a9e2f9c"
+   "questaoSha256": "5593719ea3c731cefde2684e682f5f892e1b75f07f16637ab57ae45a3a9e2f9c",
+   "pendencia": "A região hipovascular a 1–2 cm do polo superior não é definida no corpo do resumo 60, que explicitamente informa a lacuna no contexto da questão. Falta fonte primária de vascularização tendínea e local de ruptura para distinguir 5 cm, inserção, 1–2 cm e retináculo medial."
   },
   "joelho-0013": {
    "tema": "joelho",
@@ -6547,7 +6552,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -6562,7 +6567,36 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "ff325682d4f4e801c15e82d665d2446c832f77be30864627582c1cabe63a5d44"
+   "questaoSha256": "ff325682d4f4e801c15e82d665d2446c832f77be30864627582c1cabe63a5d44",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Rupturas do tendão quadricipital e do tendão patelar",
+       "Tratamento das rupturas tendíneas",
+       "Anatomia e biomecânica do mecanismo extensor"
+      ],
+      "blocos": [
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+       "tratamento-das-rupturas-tendineas-d3a3a37d",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "2918b1e97c3804d5bb0586c7a49cd60b6ebae9ed700efe159693e802463faf3e"
+     }
+    ],
+    "questaoSha256": "ff325682d4f4e801c15e82d665d2446c832f77be30864627582c1cabe63a5d44",
+    "comentarioSha256": "067ef42b4e1f5f5852ffcccc54c1f1c22e87d7450413e3519b7c2b924233bc26"
+   }
   },
   "joelho-0030": {
    "tema": "joelho",
@@ -6595,8 +6629,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 60 menciona doença sistêmica genericamente, sem enumerar uremia, diabetes, hiperparatireoidismo nem discutir hipocalciúria. Falta fonte primária para analisar individualmente os quatro agrupamentos. O rol aparece no comentário contextual da pergunta e não comprova cobertura independente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6610,7 +6644,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "b14b466ea334cd9c295963ff9dcde52ff4b75a1c3c43bead6e4cd25a2bcba354"
+   "questaoSha256": "b14b466ea334cd9c295963ff9dcde52ff4b75a1c3c43bead6e4cd25a2bcba354",
+   "pendencia": "O corpo do resumo 60 menciona doença sistêmica genericamente, sem enumerar uremia, diabetes, hiperparatireoidismo nem discutir hipocalciúria. Falta fonte primária para analisar individualmente os quatro agrupamentos. O rol aparece no comentário contextual da pergunta e não comprova cobertura independente."
   },
   "joelho-0033": {
    "tema": "joelho",
@@ -6643,7 +6678,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -6658,7 +6693,33 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "6c76f816b7a1d38cb0f4f4464101f917a4b534c77419c59d50545758cb3f4359"
+   "questaoSha256": "6c76f816b7a1d38cb0f4f4464101f917a4b534c77419c59d50545758cb3f4359",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Rupturas do tendão quadricipital e do tendão patelar"
+      ],
+      "blocos": [
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "af957c79059e8f02d8def5ba29fb69c0bff23500f29b10f1bb9789a0ebeebd66"
+     }
+    ],
+    "questaoSha256": "6c76f816b7a1d38cb0f4f4464101f917a4b534c77419c59d50545758cb3f4359",
+    "comentarioSha256": "e2be54da7822b5ee04234ab4ccae8e7bb0c7ee5fe17997464abf7a1d3e2aeb30"
+   }
   },
   "joelho-0043": {
    "tema": "joelho",
@@ -7186,7 +7247,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -7201,7 +7262,32 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "b6e9255530c49d14ad3dc43ce837d68d2de47ebaa74a634cb9886a0e7ede401d"
+   "questaoSha256": "b6e9255530c49d14ad3dc43ce837d68d2de47ebaa74a634cb9886a0e7ede401d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Tratamento das rupturas tendíneas",
+       "Patelectomia parcial e total"
+      ],
+      "blocos": [
+       "tratamento-das-rupturas-tendineas-51da9e95",
+       "patelectomia-parcial-e-total-ce27b267"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "7b4c10330f534d4b3664ea8584ea6be49afddf6b8c7dcb31b68d540648a0aec4"
+     }
+    ],
+    "questaoSha256": "b6e9255530c49d14ad3dc43ce837d68d2de47ebaa74a634cb9886a0e7ede401d",
+    "comentarioSha256": "6d66ec45c8993835c48b35ab91d2c4ac39aaeaccbcaa3ee0af12acf92f165b80"
+   }
   },
   "joelho-0174": {
    "tema": "joelho",
@@ -7252,7 +7338,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -7267,7 +7353,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "9aaee91989bbff184445146d9cc6eacdbd06c0939953fb6d1d46e166455d18ba"
+   "questaoSha256": "9aaee91989bbff184445146d9cc6eacdbd06c0939953fb6d1d46e166455d18ba",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Rupturas do tendão quadricipital e do tendão patelar",
+       "Anatomia e biomecânica do mecanismo extensor"
+      ],
+      "blocos": [
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "bea3a1ac6e515817bd0c0ca4e41f0acc7f29423fe6621e377e189003960e54cd"
+     }
+    ],
+    "questaoSha256": "9aaee91989bbff184445146d9cc6eacdbd06c0939953fb6d1d46e166455d18ba",
+    "comentarioSha256": "c6e1144b697f5050c09d9c39c63c3d813eb3d84ee727758e24415927ddc0ab69"
+   }
   },
   "joelho-0186": {
    "tema": "joelho",
@@ -7372,7 +7485,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -7387,7 +7500,35 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "bdd51074ba82469ab8211c26f447897f53dec56c211ba19f67ff27c05af6244d"
+   "questaoSha256": "bdd51074ba82469ab8211c26f447897f53dec56c211ba19f67ff27c05af6244d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Tratamento das rupturas tendíneas",
+       "Anatomia e biomecânica do mecanismo extensor",
+       "Rupturas do tendão quadricipital e do tendão patelar"
+      ],
+      "blocos": [
+       "tratamento-das-rupturas-tendineas-d3a3a37d",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "008513be947043edfb9593b0794f6b6c81c0d4055723fa10a4b2a46cd650743c"
+     }
+    ],
+    "questaoSha256": "bdd51074ba82469ab8211c26f447897f53dec56c211ba19f67ff27c05af6244d",
+    "comentarioSha256": "e20b56cf750eefa114ffd07c5b749c17a2627ee87103c5ff8922ac48d512588a"
+   }
   },
   "joelho-0212": {
    "tema": "joelho",
@@ -41830,7 +41971,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41845,7 +41986,35 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "ce87e7df2793b6bdb1adad090e6155003446ea95dd9751db437fa1f502e41847"
+   "questaoSha256": "ce87e7df2793b6bdb1adad090e6155003446ea95dd9751db437fa1f502e41847",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Fratura da patela: mecanismo e lesões associadas",
+       "Anatomia e biomecânica do mecanismo extensor",
+       "Imagem"
+      ],
+      "blocos": [
+       "fratura-da-patela-mecanismo-e-lesoes-associadas-9a3c4f42",
+       "fratura-da-patela-mecanismo-e-lesoes-associadas-d38df1c7",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+       "imagem-d02f2407"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "a45490c57d9bb1f0b07969b71332a29cc94fa53bf8d1171ebe69fb6718f9703c"
+     }
+    ],
+    "questaoSha256": "ce87e7df2793b6bdb1adad090e6155003446ea95dd9751db437fa1f502e41847",
+    "comentarioSha256": "e9990639b9392249cab981947b26a3b86d0d8232df56373bdad24f05a5537670"
+   }
   },
   "trauma-0033": {
    "tema": "trauma",
@@ -42927,7 +43096,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42942,7 +43111,36 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "08f28324ce47c4cb99e3df816c9f83cbc2ce5241ac8d492f28e84d8ce3df1096"
+   "questaoSha256": "08f28324ce47c4cb99e3df816c9f83cbc2ce5241ac8d492f28e84d8ce3df1096",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Exame físico e fratura exposta oculta",
+       "Anatomia e biomecânica do mecanismo extensor",
+       "Rupturas do tendão quadricipital e do tendão patelar"
+      ],
+      "blocos": [
+       "exame-fisico-e-fratura-exposta-oculta-8fff5e80",
+       "exame-fisico-e-fratura-exposta-oculta-845aa804",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "8f68265ebdfd4a8282506a0339e9c4bf943b23a4ee5ca785cfbbd62663ff0449"
+     }
+    ],
+    "questaoSha256": "08f28324ce47c4cb99e3df816c9f83cbc2ce5241ac8d492f28e84d8ce3df1096",
+    "comentarioSha256": "5c9ba033639f175ed001cabb33dcd122b1b5323ba06652ed7f706b4236342c11"
+   }
   },
   "trauma-0071": {
    "tema": "trauma",
@@ -44428,8 +44626,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo 58 chama rigidez de complicação comum, sem demonstrar ser a primeira frente a pseudartrose, encurtamento acima de 5 mm e angulação acima de 5 graus. A discussão de ranking e revisão Koso está somente no bloco contextual da questão. Falta fonte primária para a comparação; preservar B oficial sem atribuir cobertura integral.",
    "temComentario": true,
    "citacoes": [
     {
@@ -44443,7 +44641,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "6681ed2e0ac9511478ddb94dbd87ac592e109cc0e26e22e988cd5c525b92a238"
+   "questaoSha256": "6681ed2e0ac9511478ddb94dbd87ac592e109cc0e26e22e988cd5c525b92a238",
+   "pendencia": "O corpo independente do resumo 58 chama rigidez de complicação comum, sem demonstrar ser a primeira frente a pseudartrose, encurtamento acima de 5 mm e angulação acima de 5 graus. A discussão de ranking e revisão Koso está somente no bloco contextual da questão. Falta fonte primária para a comparação; preservar B oficial sem atribuir cobertura integral."
   },
   "trauma-0121": {
    "tema": "trauma",
@@ -45348,7 +45547,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45363,7 +45562,36 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "4743b1ef1e78a0dfb8a31400fe58392d4c4546a7f078a2af9b389b5a122955cd"
+   "questaoSha256": "4743b1ef1e78a0dfb8a31400fe58392d4c4546a7f078a2af9b389b5a122955cd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Imagem",
+       "Exame físico e fratura exposta oculta"
+      ],
+      "blocos": [
+       "imagem-ac8f442d",
+       "imagem-a2c920f0",
+       "imagem-94cf58b2",
+       "imagem-d02f2407",
+       "imagem-5a3e9611",
+       "exame-fisico-e-fratura-exposta-oculta-845aa804"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "b70f91d06d79ebc3945b4d8dd3c1f0a8fdb18d0fac7767d5af04cd5828d1b93e"
+     }
+    ],
+    "questaoSha256": "4743b1ef1e78a0dfb8a31400fe58392d4c4546a7f078a2af9b389b5a122955cd",
+    "comentarioSha256": "db3fa541e92d48092e84a13a6fdb08d1f6b162af69d3f266db6e3bee16b462c6"
+   }
   },
   "trauma-0155": {
    "tema": "trauma",
@@ -46510,8 +46738,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 58 não detalha o joelho flutuante. O 57 associa nervo fibular ao suporte de panturrilha e ciático à distração excessiva, mas não demonstra a maior incidência de paralisia fibular por tração excessiva no caso específico do enunciado, que não define o apoio. Falta fonte primária da lesão no joelho flutuante e comparação com lesão vascular, ligamentar e síndrome compartimental; não inferir o posicionamento ausente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -46533,7 +46761,8 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "a804865c972661d00ef4a9d6bfdfd41dcebd3783a9b34a538760b6cb7ba57e3b"
+   "questaoSha256": "a804865c972661d00ef4a9d6bfdfd41dcebd3783a9b34a538760b6cb7ba57e3b",
+   "pendencia": "O resumo 58 não detalha o joelho flutuante. O 57 associa nervo fibular ao suporte de panturrilha e ciático à distração excessiva, mas não demonstra a maior incidência de paralisia fibular por tração excessiva no caso específico do enunciado, que não define o apoio. Falta fonte primária da lesão no joelho flutuante e comparação com lesão vascular, ligamentar e síndrome compartimental; não inferir o posicionamento ausente."
   },
   "trauma-0200": {
    "tema": "trauma",
@@ -46754,7 +46983,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46769,7 +46998,36 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "d83856fdf67279cbb15db20378ea3cb4f072ac891187bc173f23283999d40653"
+   "questaoSha256": "d83856fdf67279cbb15db20378ea3cb4f072ac891187bc173f23283999d40653",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Imagem",
+       "Fratura da patela: mecanismo e lesões associadas",
+       "Tratamento não cirúrgico e indicações cirúrgicas"
+      ],
+      "blocos": [
+       "imagem-ac8f442d",
+       "imagem-d02f2407",
+       "imagem-a2c920f0",
+       "fratura-da-patela-mecanismo-e-lesoes-associadas-9a3c4f42",
+       "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "8ef92fde5e46223f51b3c7ff9329da08f64fffaebd9e8e33fc15f238af911d08"
+     }
+    ],
+    "questaoSha256": "d83856fdf67279cbb15db20378ea3cb4f072ac891187bc173f23283999d40653",
+    "comentarioSha256": "ae7c0c5339be3e3485a972d82f710f958e600630c8ad9e9df4320af22b547631"
+   }
   },
   "trauma-0215": {
    "tema": "trauma",
@@ -47581,7 +47839,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47597,7 +47855,33 @@
     "rockwood10-60-patela-mecanismo-extensor",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "3eab8116daa43af97a4aaa140277da060a8b92ff13ae8eca8f8289fd45979b8f"
+   "questaoSha256": "3eab8116daa43af97a4aaa140277da060a8b92ff13ae8eca8f8289fd45979b8f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Exame físico e fratura exposta oculta",
+       "Fraturas expostas e periprotéticas"
+      ],
+      "blocos": [
+       "exame-fisico-e-fratura-exposta-oculta-cd96a587",
+       "exame-fisico-e-fratura-exposta-oculta-8fff5e80",
+       "fraturas-expostas-e-periproteticas-59e92324"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "010ee8ef72576249659d9be8c20134d380459b6b112263ac41aa0b2c57bbd749"
+     }
+    ],
+    "questaoSha256": "3eab8116daa43af97a4aaa140277da060a8b92ff13ae8eca8f8289fd45979b8f",
+    "comentarioSha256": "5046a93b5c70a13010345977bd1a6d175dfb15be1921372e93ab9cc83bb94fe2"
+   }
   },
   "trauma-0241": {
    "tema": "trauma",
@@ -49016,8 +49300,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 60 sustenta que a maioria tem componente transverso e explica trauma indireto em flexão, mas também descreve mecanismos mistos e não estabelece que o mecanismo indireto seja o mais frequente de todas as fraturas patelares. A opção B reúne morfologia e ranking etiológico; falta prova independente da segunda afirmação. Não usar o bloco contextual da própria questão como evidência.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49031,7 +49315,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "a9360757e904215899d20c6a4f6245249b349d434a8922c61131e1ca9a61672c"
+   "questaoSha256": "a9360757e904215899d20c6a4f6245249b349d434a8922c61131e1ca9a61672c",
+   "pendencia": "O corpo do resumo 60 sustenta que a maioria tem componente transverso e explica trauma indireto em flexão, mas também descreve mecanismos mistos e não estabelece que o mecanismo indireto seja o mais frequente de todas as fraturas patelares. A opção B reúne morfologia e ranking etiológico; falta prova independente da segunda afirmação. Não usar o bloco contextual da própria questão como evidência."
   },
   "trauma-0298": {
    "tema": "trauma",
@@ -52966,7 +53251,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52981,7 +53266,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "bf8fd8384d15bbb31e3f6a46022b8af6fdb7225e4222dfd93dfd6284b2ab618c"
+   "questaoSha256": "bf8fd8384d15bbb31e3f6a46022b8af6fdb7225e4222dfd93dfd6284b2ab618c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Patela bipartida e outros simuladores",
+       "Fratura da patela: mecanismo e lesões associadas",
+       "Anatomia e biomecânica do mecanismo extensor"
+      ],
+      "blocos": [
+       "patela-bipartida-e-outros-simuladores-27cbef14",
+       "fratura-da-patela-mecanismo-e-lesoes-associadas-9a3c4f42",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "42727cb75f3339ab8995ec746c002669f49c5ac5cca5e5c76b9b0cf8665cdf78"
+     }
+    ],
+    "questaoSha256": "bf8fd8384d15bbb31e3f6a46022b8af6fdb7225e4222dfd93dfd6284b2ab618c",
+    "comentarioSha256": "3f16675a0cfadfcfce5a628ccbe8d753fa369365f051bcbb30a4566909d09080"
+   }
   },
   "trauma-0662": {
    "tema": "trauma",
@@ -61021,7 +61333,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -61043,7 +61355,53 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "135b9e793d169bc9508f2c0267fb634cca11ede9b61f5703fbe49094121a0a2f"
+   "questaoSha256": "135b9e793d169bc9508f2c0267fb634cca11ede9b61f5703fbe49094121a0a2f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Classificação: AO 31A e a parede lateral",
+       "Escolha do implante",
+       "Técnica: redução e parafuso cefálico"
+      ],
+      "blocos": [
+       "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+       "escolha-do-implante-ff846328",
+       "escolha-do-implante-3f9e3224",
+       "escolha-do-implante-99aab52e",
+       "escolha-do-implante-c9cf141d",
+       "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+       "tecnica-reducao-e-parafuso-cefalico-b17a07fa"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "a94ff94840e790203752334ce2a9d569badb1a28bf0adcabbe6ff5b4c5561507"
+     },
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura sem desvio (Garden I e II)"
+      ],
+      "blocos": [
+       "fratura-sem-desvio-garden-i-e-ii-7e0657f6"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "f4a3c35d885696da1d44916af01445b5ce033e163e2f58af4b46ca61feafd920"
+     }
+    ],
+    "questaoSha256": "135b9e793d169bc9508f2c0267fb634cca11ede9b61f5703fbe49094121a0a2f",
+    "comentarioSha256": "b4dc09f616e100f60ac6db08ed670fc8d562636b129adf1563eb3020223c2467"
+   }
   },
   "trauma-1002": {
    "tema": "trauma",
@@ -64181,8 +64539,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. O resumo 58 distingue tendência muscular ao varo de erros da fixação (valgo, rotação e encurtamento), sem estabelecer varo como consolidação viciosa mais frequente em toda supracondiliana. Falta a série e o contexto da referência antiga para resolver a comparação entre flexão, extensão, varo e valgo. Não transformar o gabarito bibliográfico D em oficial nem criar provável sem resposta única sustentada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64196,7 +64554,8 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "42ccda417f3a58d426b5ea647fa7e1f5700af8702a67e72d2a40531f3422afd1"
+   "questaoSha256": "42ccda417f3a58d426b5ea647fa7e1f5700af8702a67e72d2a40531f3422afd1",
+   "pendencia": "Sem gabarito oficial. O resumo 58 distingue tendência muscular ao varo de erros da fixação (valgo, rotação e encurtamento), sem estabelecer varo como consolidação viciosa mais frequente em toda supracondiliana. Falta a série e o contexto da referência antiga para resolver a comparação entre flexão, extensão, varo e valgo. Não transformar o gabarito bibliográfico D em oficial nem criar provável sem resposta única sustentada."
   },
   "trauma-1139": {
    "tema": "trauma",
@@ -64925,7 +65284,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64940,7 +65299,34 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "08358cc58760967cc902dccd89d95043c5654452ef562f00576f0338263ff478"
+   "questaoSha256": "08358cc58760967cc902dccd89d95043c5654452ef562f00576f0338263ff478",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Classificação: AO 31A e a parede lateral",
+       "Escolha do implante"
+      ],
+      "blocos": [
+       "classificacao-ao-31a-e-a-parede-lateral-785664da",
+       "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+       "escolha-do-implante-ff846328",
+       "escolha-do-implante-99aab52e"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "9c51ef6d16edda54fc9e3aa6bcfa37d1420719fda2b2e59085172508710d3965"
+     }
+    ],
+    "questaoSha256": "08358cc58760967cc902dccd89d95043c5654452ef562f00576f0338263ff478",
+    "comentarioSha256": "fd54fefbc5cfad7ac0458d734b68c7dd51c6544ff0e5dc925cd8131bfb2ea565"
+   }
   },
   "trauma-1175": {
    "tema": "trauma",
@@ -65045,7 +65431,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65060,7 +65446,32 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "d414e1748db5e090c889071ac786e06bd81e7fdc4dcaac2bcffbb48ba44287bd"
+   "questaoSha256": "d414e1748db5e090c889071ac786e06bd81e7fdc4dcaac2bcffbb48ba44287bd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Lesões associadas",
+       "Mecanismo e deformidade"
+      ],
+      "blocos": [
+       "lesoes-associadas-26b81b8d",
+       "mecanismo-e-deformidade-5663e0fc"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "f4b0b4774d9e76e42cd51b372508ffb66d2acd6b19b20ad263227ebff952b7e4"
+     }
+    ],
+    "questaoSha256": "d414e1748db5e090c889071ac786e06bd81e7fdc4dcaac2bcffbb48ba44287bd",
+    "comentarioSha256": "dcd5bc9df050aeb7834d2ca328059b68af401c2201866b467de87f3b7b8589db"
+   }
   },
   "trauma-1182": {
    "tema": "trauma",
@@ -77242,7 +77653,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -77257,7 +77668,31 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "c2ef3ea863b126336d2ba35f14d6dbac7f8f2395277642cb6f651ae638d966f7"
+   "questaoSha256": "c2ef3ea863b126336d2ba35f14d6dbac7f8f2395277642cb6f651ae638d966f7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Anatomia e forças deformantes"
+      ],
+      "blocos": [
+       "anatomia-e-forcas-deformantes-2cbfa06e",
+       "anatomia-e-forcas-deformantes-9923fb88"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "f45e4777e7a4ec2bc6e1b111e0d18b7e15f65504f93754293cc9e3d51c093b66"
+     }
+    ],
+    "questaoSha256": "c2ef3ea863b126336d2ba35f14d6dbac7f8f2395277642cb6f651ae638d966f7",
+    "comentarioSha256": "d88ffa6b1e6f00a60679d23eb728ff079ce08ecb329376fdec1dbfe0f5b4ca9e"
+   }
   },
   "trauma-1574": {
    "tema": "trauma",
@@ -77739,7 +78174,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -77754,7 +78189,34 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "b57cd333f49607212c1fa089b261bc0303ba46df2f35fd7ca643dc573cf64705"
+   "questaoSha256": "b57cd333f49607212c1fa089b261bc0303ba46df2f35fd7ca643dc573cf64705",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Técnica: redução e parafuso cefálico",
+       "Complicações"
+      ],
+      "blocos": [
+       "tecnica-reducao-e-parafuso-cefalico-b883438a",
+       "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+       "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+       "complicacoes-41fe2824"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "ff0896baec583c09a5ff223119dc88aed364ba57c387fc85ed7a354b61532bec"
+     }
+    ],
+    "questaoSha256": "b57cd333f49607212c1fa089b261bc0303ba46df2f35fd7ca643dc573cf64705",
+    "comentarioSha256": "d3455ffce4d1937071f65f678e337f3f254118f331247c536b9e7e7f29368a67"
+   }
   },
   "trauma-1585": {
    "tema": "trauma",
@@ -77989,7 +78451,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78004,7 +78466,37 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "bc3c2038622f7924a07056665de44503a72b2d93ab335b46acc3bb70eb6ce79d"
+   "questaoSha256": "bc3c2038622f7924a07056665de44503a72b2d93ab335b46acc3bb70eb6ce79d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Como ler este capítulo",
+       "Anatomia e forças deformantes",
+       "Complicações",
+       "Técnica: redução e parafuso cefálico"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-aab589aa",
+       "anatomia-e-forcas-deformantes-81f07f93",
+       "complicacoes-a003183f",
+       "complicacoes-41fe2824",
+       "tecnica-reducao-e-parafuso-cefalico-8125107d"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "b204d0460245392de610eae438aed0d0f43d826ed76479b45212b04258254ec8"
+     }
+    ],
+    "questaoSha256": "bc3c2038622f7924a07056665de44503a72b2d93ab335b46acc3bb70eb6ce79d",
+    "comentarioSha256": "bd46f281f45ac21834a2b9128588aa53c1c835a3fa72e204457bdd3942b7c0cb"
+   }
   },
   "trauma-1592": {
    "tema": "trauma",
@@ -78013,7 +78505,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -78028,7 +78520,33 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "a9ce50e0bc65490285fc86b84fe7d0e49c5e50eb5374eec348262c03dff10f4e"
+   "questaoSha256": "a9ce50e0bc65490285fc86b84fe7d0e49c5e50eb5374eec348262c03dff10f4e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Complicações",
+       "Escolha do implante"
+      ],
+      "blocos": [
+       "complicacoes-fa2cbfe8",
+       "complicacoes-a003183f",
+       "escolha-do-implante-18036228"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "172fa274f78b207557fc99ddbf0507d3748387792c2113667928acbf84e171cf"
+     }
+    ],
+    "questaoSha256": "a9ce50e0bc65490285fc86b84fe7d0e49c5e50eb5374eec348262c03dff10f4e",
+    "comentarioSha256": "eb15c67347d2002d2ca84b9efe8259be85f0d379146d25024f09a6a2fb12908b"
+   }
   },
   "trauma-1593": {
    "tema": "trauma",
@@ -79981,7 +80499,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -79996,7 +80514,31 @@
    "resumosCandidatos": [
     "rockwood10-58-femur-distal"
    ],
-   "questaoSha256": "7655a2178fe58a3101ccf874d434af2a4ca8d2e79082302830272fd0c6a996db"
+   "questaoSha256": "7655a2178fe58a3101ccf874d434af2a4ca8d2e79082302830272fd0c6a996db",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-58-femur-distal",
+      "titulo": "Fratura do fêmur distal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 58 · Distal Femur Fractures",
+      "secoes": [
+       "Pós-operatório e complicações"
+      ],
+      "blocos": [
+       "pos-operatorio-e-complicacoes-707d6750",
+       "pos-operatorio-e-complicacoes-f864af1b"
+      ],
+      "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "trechosSha256": "94031cfa78868c5ece7f236c81fd75c7a0df2d12f6140f6ac22c4352eb9ee717"
+     }
+    ],
+    "questaoSha256": "7655a2178fe58a3101ccf874d434af2a4ca8d2e79082302830272fd0c6a996db",
+    "comentarioSha256": "625b6b52259d0853ea9e8d6c19ea9cd740d52890216f857c225aa249330bd9f4"
+   }
   },
   "trauma-1643": {
    "tema": "trauma",
@@ -80005,7 +80547,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80020,7 +80562,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "834cef66538ce0bd18732866317b319016142cf08b639970c18ed188d01c575e"
+   "questaoSha256": "834cef66538ce0bd18732866317b319016142cf08b639970c18ed188d01c575e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Exame físico e fratura exposta oculta",
+       "Anatomia e biomecânica do mecanismo extensor",
+       "Imagem"
+      ],
+      "blocos": [
+       "exame-fisico-e-fratura-exposta-oculta-845aa804",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+       "imagem-5a3e9611"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "0f72fabfaa99c7fedce38acb2c3a1fffba064fdb4059855147c15857490e9ca8"
+     }
+    ],
+    "questaoSha256": "834cef66538ce0bd18732866317b319016142cf08b639970c18ed188d01c575e",
+    "comentarioSha256": "58d476ef2ca1f0c98e414e96653f6ad3fb0f5e45c8489806775fcdadaebcaace"
+   }
   },
   "trauma-1644": {
    "tema": "trauma",
@@ -80029,7 +80598,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80044,7 +80613,33 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "cd3b3fdccf94ee1da34caa2a69ca5888484b27ad3627e65e8b4eeaa53c7902f9"
+   "questaoSha256": "cd3b3fdccf94ee1da34caa2a69ca5888484b27ad3627e65e8b4eeaa53c7902f9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Imagem",
+       "Anatomia e biomecânica do mecanismo extensor"
+      ],
+      "blocos": [
+       "imagem-d02f2407",
+       "imagem-a2c920f0",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-95dc48b7"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "abf477ca28b3f81f78827e772ba9088cb3e48b2edcb0cc6e076ac32d911f93c1"
+     }
+    ],
+    "questaoSha256": "cd3b3fdccf94ee1da34caa2a69ca5888484b27ad3627e65e8b4eeaa53c7902f9",
+    "comentarioSha256": "83f714b93a45c3e5cd4697a962d4df9bbcadad3e77e229ba3b1d72ac1c8e761d"
+   }
   },
   "trauma-1645": {
    "tema": "trauma",
@@ -80053,7 +80648,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80068,7 +80663,30 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "842d05aeda6ecea428bae4ff39e7a89d38b8662d66645909b22a1908a18f4c9e"
+   "questaoSha256": "842d05aeda6ecea428bae4ff39e7a89d38b8662d66645909b22a1908a18f4c9e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Exame físico e fratura exposta oculta"
+      ],
+      "blocos": [
+       "exame-fisico-e-fratura-exposta-oculta-cd96a587"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "4a571cf766607018703093b3a1c4963d86c258f07b9d1d15e7adae0d02277ff0"
+     }
+    ],
+    "questaoSha256": "842d05aeda6ecea428bae4ff39e7a89d38b8662d66645909b22a1908a18f4c9e",
+    "comentarioSha256": "3c9af47401734cfba9a977a184d6254c0af0046b74bd7ee4baab0465a5470791"
+   }
   },
   "trauma-1646": {
    "tema": "trauma",
@@ -80101,7 +80719,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80116,7 +80734,33 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "b6803eb897681c8702ac62d839b1cdea7c0de11e717a29081217e2ebc1c1fdf3"
+   "questaoSha256": "b6803eb897681c8702ac62d839b1cdea7c0de11e717a29081217e2ebc1c1fdf3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Fixação interna"
+      ],
+      "blocos": [
+       "fixacao-interna-d2d06087",
+       "fixacao-interna-19754d8d",
+       "fixacao-interna-8ce3f90e",
+       "fixacao-interna-39781fe4"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "324ffbd5a2a73a228cd0d16fd74019c5dc61411b64fdce3413a43e05e55f044e"
+     }
+    ],
+    "questaoSha256": "b6803eb897681c8702ac62d839b1cdea7c0de11e717a29081217e2ebc1c1fdf3",
+    "comentarioSha256": "71ebdd9c637a7e835e3689d9cd1e62c4b5635c529d994ad26e8ea6316b34de2a"
+   }
   },
   "trauma-1648": {
    "tema": "trauma",
@@ -80126,7 +80770,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80142,7 +80786,35 @@
     "rockwood10-60-patela-mecanismo-extensor",
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "56be30217b60d44c8596a522ada5c53164d4adc73f1015254826504645c8c9be"
+   "questaoSha256": "56be30217b60d44c8596a522ada5c53164d4adc73f1015254826504645c8c9be",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Fratura da patela: mecanismo e lesões associadas",
+       "Rupturas do tendão quadricipital e do tendão patelar",
+       "Anatomia e biomecânica do mecanismo extensor"
+      ],
+      "blocos": [
+       "fratura-da-patela-mecanismo-e-lesoes-associadas-1a37550f",
+       "fratura-da-patela-mecanismo-e-lesoes-associadas-b6f06426",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-a059d78b"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "1be4971c7a7feb2a445bda119c7477982d873626e15e62995ceeefac4065f0fd"
+     }
+    ],
+    "questaoSha256": "56be30217b60d44c8596a522ada5c53164d4adc73f1015254826504645c8c9be",
+    "comentarioSha256": "a380258d1772514179efc3b66f79d01bcda013c5af128554da08df6e33dcb6df"
+   }
   },
   "trauma-1649": {
    "tema": "trauma",
@@ -80151,7 +80823,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80166,7 +80838,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "c0904a44e761f59a1cbb1749825254a24dabfd672c6171d45a61de4a813b3990"
+   "questaoSha256": "c0904a44e761f59a1cbb1749825254a24dabfd672c6171d45a61de4a813b3990",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Anatomia e biomecânica do mecanismo extensor",
+       "Patelectomia parcial e total"
+      ],
+      "blocos": [
+       "anatomia-e-biomecanica-do-mecanismo-extensor-f7828d73",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-ec85d0b0",
+       "patelectomia-parcial-e-total-ce27b267",
+       "patelectomia-parcial-e-total-eca8eafb"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "4fca298663f0b614e9630386acc93d3163aab25fe7627d446b394d9ce5a24775"
+     }
+    ],
+    "questaoSha256": "c0904a44e761f59a1cbb1749825254a24dabfd672c6171d45a61de4a813b3990",
+    "comentarioSha256": "1a3b954857d172ff19fb8ac70bb23d752f59fa0e95dc552cfaa574bcdc85d02d"
+   }
   },
   "trauma-1650": {
    "tema": "trauma",
@@ -80175,7 +80874,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80190,7 +80889,34 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "bae987fc6c4bd2779288e5fb4077d81e6d8455b517f55bca2edbb23285ee9aea"
+   "questaoSha256": "bae987fc6c4bd2779288e5fb4077d81e6d8455b517f55bca2edbb23285ee9aea",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Luxação aguda da patela",
+       "Patela bipartida e outros simuladores"
+      ],
+      "blocos": [
+       "luxacao-aguda-da-patela-dae642d9",
+       "luxacao-aguda-da-patela-541ed1a4",
+       "luxacao-aguda-da-patela-727a6900",
+       "patela-bipartida-e-outros-simuladores-27cbef14"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "1e4aa71ff8d2361fcc784bc0f91d2da8c037cfd294cb66df7199af95bf537fb2"
+     }
+    ],
+    "questaoSha256": "bae987fc6c4bd2779288e5fb4077d81e6d8455b517f55bca2edbb23285ee9aea",
+    "comentarioSha256": "64077ddd183b3f8f4ea5cc10127fbbd5f8bb9ec17c397912fb9f013afabfe429"
+   }
   },
   "trauma-1651": {
    "tema": "trauma",
@@ -80199,7 +80925,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80214,7 +80940,33 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "58c40c36b4d9efc3f052859b0f5c8a7c58c868421bd7da00638301b69a6da176"
+   "questaoSha256": "58c40c36b4d9efc3f052859b0f5c8a7c58c868421bd7da00638301b69a6da176",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Rupturas do tendão quadricipital e do tendão patelar"
+      ],
+      "blocos": [
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "c81a0d24d5dc73b9e872c8b9c5a39251ea8df992395cd63a7178940bfebb7fcf"
+     }
+    ],
+    "questaoSha256": "58c40c36b4d9efc3f052859b0f5c8a7c58c868421bd7da00638301b69a6da176",
+    "comentarioSha256": "c3664344aafcc9888339699c30d8240a72995d9dafb806e926de2e013b36391c"
+   }
   },
   "trauma-1652": {
    "tema": "trauma",
@@ -80223,7 +80975,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80238,7 +80990,33 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "d0331e151b3c045ca3b73d8384ffe0f18f4825ef2bb2ba6745ecd43163dbee74"
+   "questaoSha256": "d0331e151b3c045ca3b73d8384ffe0f18f4825ef2bb2ba6745ecd43163dbee74",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Rupturas do tendão quadricipital e do tendão patelar",
+       "Imagem"
+      ],
+      "blocos": [
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2",
+       "imagem-c8a6bbe6",
+       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "69e2f8efc569ef06449595ac8bbee80d71a794b87d81163c09a587fb7d47690c"
+     }
+    ],
+    "questaoSha256": "d0331e151b3c045ca3b73d8384ffe0f18f4825ef2bb2ba6745ecd43163dbee74",
+    "comentarioSha256": "3c287b9c31de8c7f12b828ad84b986839c42634a9113af2c581254992f3717cf"
+   }
   },
   "trauma-1653": {
    "tema": "trauma",
@@ -80247,7 +81025,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80262,7 +81040,33 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "eea5e6c6a2afc5f030f664fc074de8f637002c08937e8c2c19ae7c1b6a790d46"
+   "questaoSha256": "eea5e6c6a2afc5f030f664fc074de8f637002c08937e8c2c19ae7c1b6a790d46",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Tratamento das rupturas tendíneas",
+       "Patelectomia parcial e total"
+      ],
+      "blocos": [
+       "tratamento-das-rupturas-tendineas-51da9e95",
+       "tratamento-das-rupturas-tendineas-5c9abd6f",
+       "patelectomia-parcial-e-total-ce27b267"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "824af4e70a80c261d604e999bfbc52d5fce117f90a0d6bc72246e119812eed44"
+     }
+    ],
+    "questaoSha256": "eea5e6c6a2afc5f030f664fc074de8f637002c08937e8c2c19ae7c1b6a790d46",
+    "comentarioSha256": "89e1477b2a0adeadc615917172eb047cbe0909a38fa4856f50b81e1721f6d0ad"
+   }
   },
   "trauma-1654": {
    "tema": "trauma",
@@ -82646,7 +83450,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82661,7 +83465,32 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "cb1a1f7714a3eb211d77b04a9077c8bb5069d8f2a230ea837e3c82307b2c0d6c"
+   "questaoSha256": "cb1a1f7714a3eb211d77b04a9077c8bb5069d8f2a230ea837e3c82307b2c0d6c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Anatomia e forças deformantes"
+      ],
+      "blocos": [
+       "anatomia-e-forcas-deformantes-2cbfa06e",
+       "anatomia-e-forcas-deformantes-a884c7c9",
+       "anatomia-e-forcas-deformantes-9923fb88"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "aba141f0886eaafd9987036b6a9d08274d906f3282a46cca82f11b6b2952ae7c"
+     }
+    ],
+    "questaoSha256": "cb1a1f7714a3eb211d77b04a9077c8bb5069d8f2a230ea837e3c82307b2c0d6c",
+    "comentarioSha256": "0bcd8dce86846612694534745d5de255e29f620d15b9b30604a8cd63ef3128c6"
+   }
   },
   "tumores-0326": {
    "tema": "tumores",

@@ -1,0 +1,68 @@
+{
+  "basePublicada": "8092f06e2edd55b3305f7ff5e38d32540435533a",
+  "lotes": {
+    "096-femur-restantes-e-exame-patela.json": {
+      "sha256": "2a09d76ca4c9a9704fc1ad52d0578353711fab000502ceb422a498a622cffd47",
+      "ids": [
+        "trauma-1573",
+        "tumores-0136",
+        "trauma-1584",
+        "trauma-1591",
+        "trauma-1592",
+        "trauma-1174",
+        "trauma-1001",
+        "trauma-1181",
+        "trauma-1642",
+        "trauma-0069"
+      ]
+    },
+    "097-patela-imagem-e-tendao-patelar.json": {
+      "sha256": "96eb01bdb59db30f207d14d81e7da7ce3c0b02325e3be72dd36d5eeae29c3671",
+      "ids": [
+        "trauma-0032",
+        "trauma-0153",
+        "trauma-0212",
+        "trauma-0240",
+        "trauma-0661",
+        "joelho-0028",
+        "joelho-0042",
+        "joelho-0173",
+        "joelho-0181",
+        "joelho-0210"
+      ]
+    },
+    "098-patela-biomecanica-e-avaliacao-extensora.json": {
+      "sha256": "2aae048b0707d5962af6553e4bdfeabb629fcdd7e79543c90fada77d1e85a41c",
+      "ids": [
+        "trauma-1643",
+        "trauma-1644",
+        "trauma-1645",
+        "trauma-1647",
+        "trauma-1648",
+        "trauma-1649",
+        "trauma-1650",
+        "trauma-1651",
+        "trauma-1652",
+        "trauma-1653"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 493,
+    "merge": "8092f06e2edd55b3305f7ff5e38d32540435533a",
+    "ci": 39994837076,
+    "pages": 39995163313,
+    "avulsosIntegraisConferidos": 70
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 testes passaram",
+    "acervo": "sem erros",
+    "integridade": "cadeia 096–098 reproduzível; 30 IDs, fontes, hashes, alternativas e avulsos integrais",
+    "interface": "1181, 1001, 0069, joelho-0173, 1652 e 1647; celular/computador, alertas, tabela e destino das fontes; capturas abertas"
+  },
+  "lacunas": "098-lacunas-femur-patela.json: dez pendências reais; comentários preservados, não contam como revisão",
+  "publicado": false,
+  "proximoLote": "099",
+  "npmTest": "suíte completa passou",
+  "build": "passou; 30 avulsos iguais aos comentários integrais"
+}

@@ -1,0 +1,61 @@
+{
+  "base": "8092f06e2edd55b3305f7ff5e38d32540435533a",
+  "criterio": "Leitura individual de enunciado e todas as opções e confronto com corpo independente. Sem editar comentário ou gabarito desses dez IDs. Pendências não são revisão concluída.",
+  "resumosSha256": {
+    "rockwood10-57-diafise-femur": "0ce81bc9f6f9a20bab43e5b0d95f82d518106c62501b842c8721af9a5396bc6d",
+    "rockwood10-58-femur-distal": "6ca37b5dd53198bd2b5b79c3d37428e26d958b82dd1cba01ca02eb960c5dc648",
+    "rockwood10-60-patela-mecanismo-extensor": "1b84fb2ed3d35a393d69c86d195d2d10649bb774a4c5f3a44f96c38a92e4ae1b"
+  },
+  "questoes": {
+    "conceitos-basicos-0332": {
+      "questaoSha256": "83800509aa4c388eb8ffc7602116e4c6c18cd81742111c4dfe8d2cb685827961",
+      "pendencia": "O corpo do resumo 58 favorece placa longa e parafusos espaçados, mas não compara resistência do construto entre número de parafusos, bloqueio nas extremidades, distribuição diafisária e omissão perto do foco. Falta o ensaio ou trecho primário de biomecânica para sustentar que o aumento principal é a distância entre parafusos, sem confundir resistência, rigidez e comprimento de trabalho.",
+      "estado": "pendente-fonte"
+    },
+    "conceitos-basicos-0392": {
+      "questaoSha256": "8c27743091829a5af3ed4a025d6ed1927d689715bab5586837da96694e0ee4f6",
+      "pendencia": "O resumo 58 informa risco de pseudartrose e que o FCL torna o calo mais simétrico, mas não descreve explicitamente maior calo medial que lateral nas fraturas simples com placa bloqueada em ponte. Não é possível deduzir o lado só da palavra assimétrico. Falta o trecho primário que associa padrão da fratura, montagem e distribuição do calo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0120": {
+      "questaoSha256": "6681ed2e0ac9511478ddb94dbd87ac592e109cc0e26e22e988cd5c525b92a238",
+      "pendencia": "O corpo independente do resumo 58 chama rigidez de complicação comum, sem demonstrar ser a primeira frente a pseudartrose, encurtamento acima de 5 mm e angulação acima de 5 graus. A discussão de ranking e revisão Koso está somente no bloco contextual da questão. Falta fonte primária para a comparação; preservar B oficial sem atribuir cobertura integral.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0199": {
+      "questaoSha256": "a804865c972661d00ef4a9d6bfdfd41dcebd3783a9b34a538760b6cb7ba57e3b",
+      "pendencia": "O resumo 58 não detalha o joelho flutuante. O 57 associa nervo fibular ao suporte de panturrilha e ciático à distração excessiva, mas não demonstra a maior incidência de paralisia fibular por tração excessiva no caso específico do enunciado, que não define o apoio. Falta fonte primária da lesão no joelho flutuante e comparação com lesão vascular, ligamentar e síndrome compartimental; não inferir o posicionamento ausente.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1138": {
+      "questaoSha256": "42ccda417f3a58d426b5ea647fa7e1f5700af8702a67e72d2a40531f3422afd1",
+      "pendencia": "Sem gabarito oficial. O resumo 58 distingue tendência muscular ao varo de erros da fixação (valgo, rotação e encurtamento), sem estabelecer varo como consolidação viciosa mais frequente em toda supracondiliana. Falta a série e o contexto da referência antiga para resolver a comparação entre flexão, extensão, varo e valgo. Não transformar o gabarito bibliográfico D em oficial nem criar provável sem resposta única sustentada.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0297": {
+      "questaoSha256": "a9360757e904215899d20c6a4f6245249b349d434a8922c61131e1ca9a61672c",
+      "pendencia": "O corpo do resumo 60 sustenta que a maioria tem componente transverso e explica trauma indireto em flexão, mas também descreve mecanismos mistos e não estabelece que o mecanismo indireto seja o mais frequente de todas as fraturas patelares. A opção B reúne morfologia e ranking etiológico; falta prova independente da segunda afirmação. Não usar o bloco contextual da própria questão como evidência.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0004": {
+      "questaoSha256": "e9b902c529399d9c02bca91e4169dfd331ad3a5cdc77f2ff2d23b472f31fb1bb",
+      "pendencia": "O corpo do resumo 60 relaciona degeneração e doença sistêmica a ruptura tendínea, mas não lista esteroides nem compara as quatro classes farmacológicas. A menção ao gabarito aparece só no bloco contextual. Falta fonte primária da associação com esteroides e fundamento dos distratores para classificar o comentário inteiro como baseado no resumo.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0008": {
+      "questaoSha256": "50e41772e02064bab6f0c0404c4c8b27dad0e4920c80c1417db256cc9715f780",
+      "pendencia": "O resumo 60 descreve idade e rupturas no polo superior ou no meio do tendão, mas não compara junções osteotendínea e musculotendínea segundo idoso versus jovem. Meio do tendão não equivale a junção musculotendínea. Falta o trecho primário dessa distribuição para avaliar todos os pares.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0011": {
+      "questaoSha256": "5593719ea3c731cefde2684e682f5f892e1b75f07f16637ab57ae45a3a9e2f9c",
+      "pendencia": "A região hipovascular a 1–2 cm do polo superior não é definida no corpo do resumo 60, que explicitamente informa a lacuna no contexto da questão. Falta fonte primária de vascularização tendínea e local de ruptura para distinguir 5 cm, inserção, 1–2 cm e retináculo medial.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0031": {
+      "questaoSha256": "b14b466ea334cd9c295963ff9dcde52ff4b75a1c3c43bead6e4cd25a2bcba354",
+      "pendencia": "O corpo do resumo 60 menciona doença sistêmica genericamente, sem enumerar uremia, diabetes, hiperparatireoidismo nem discutir hipocalciúria. Falta fonte primária para analisar individualmente os quatro agrupamentos. O rol aparece no comentário contextual da pergunta e não comprova cobertura independente.",
+      "estado": "pendente-fonte"
+    }
+  }
+}
