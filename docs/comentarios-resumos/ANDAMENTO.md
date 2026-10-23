@@ -5,19 +5,19 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1388 |
+| pendente | 1355 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 86 |
+| pendente-fonte | 89 |
 | pendente-inspecao-imagem | 166 |
-| revisada | 632 |
+| revisada | 662 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
 | Resumo | Revisadas | A revalidar | Pendentes ou preservadas |
 | --- | ---: | ---: | ---: |
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 50 | 0 | 20 |
-| Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 35 | 0 | 33 |
+| Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 37 | 0 | 31 |
 | Fratura da escápula (`rockwood10-33-fratura-escapula`) | 87 | 0 | 49 |
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 48 | 0 | 25 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 41 | 0 | 53 |
@@ -26,8 +26,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |
-| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 0 | 0 | 132 |
-| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 0 | 0 | 128 |
+| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 2 | 0 | 130 |
+| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 30 | 0 | 98 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 0 | 0 | 73 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 0 | 0 | 76 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 4 | 0 | 59 |
