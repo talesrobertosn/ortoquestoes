@@ -346,19 +346,42 @@
   "conferido": false
  },
  "coluna-0025": {
+  "conceito": "O padrão clássico comparado pela questão é **bradicardia, extremidades quentes e diurese preservada**. A chave é a perda do comando simpático após a lesão medular: cai o tônus dos vasos e falta o estímulo que aceleraria o coração. A hipotensão, assim, pode vir acompanhada de frequência baixa.\n\nNa hemorragia, a resposta compensatória habitual é diferente: taquicardia e vasoconstrição periférica, com pele fria e redução da perfusão renal. O resumo usa essa comparação para explicar o conjunto de pele e diurese cobrado nas provas; explicita que o capítulo destaca diretamente a frequência cardíaca como marca da diferença (resumo do Rockwood, 10ª ed., cap. 49, “Choque neurogênico não é choque hipovolêmico”).\n\n**O padrão de prova não garante diurese normal em todo paciente real.** Hipotensão importante, sangramento associado e outros problemas podem prejudicar a perfusão. O capítulo alerta que a maioria dos politraumatizados tem algum componente hipovolêmico: não se deve deixar de procurar hemorragia porque há bradicardia ou suspeita de choque neurogênico.\n\nLeia a comparação no resumo da Biblioteca, mantendo a combinação clássica junto da ressalva sobre choques mistos.",
+  "correta": "**C: bradicardia, débito urinário normal e extremidades quentes.** É o conjunto clássico apresentado no resumo para esta comparação. A perda de tônus simpático explica a frequência baixa e a periferia quente; “diurese normal” não deve ser usada como garantia clínica universal.",
   "incorretas": {
-   "A": "**Mistura os dois choques.** A bradicardia é neurogênica, mas oligúria e extremidades frias indicam vasoconstrição e falta de volume, típicas da hemorragia.",
-   "B": "**É o choque hemorrágico.** Taquicardia, pele fria e pouca urina mostram o simpático no máximo tentando compensar a perda de sangue, o oposto do que acontece na lesão medular.",
-   "D": "**A taquicardia contradiz a perda do simpático.** Sem o simpático o coração fica sob ação do vago e desacelera. Taquicardia num traumatizado medular deve levantar a suspeita de sangramento associado."
+   "A": "**Mistura bradicardia com sinais de hipoperfusão da comparação hemorrágica.** Pele fria e diurese baixa não são o conjunto clássico neurogênico pedido. Num paciente real, porém, essa combinação exige avaliar causas associadas, sem excluir choque misto.",
+   "B": "**Reúne a resposta compensatória típica da perda de volume.** Taquicardia, periferia fria e pouca urina apontam para o padrão hipovolêmico usado na comparação. A lesão medular com perda simpática explica a bradicardia da resposta correta.",
+   "D": "**A periferia quente não resolve a frequência trocada.** A pergunta descreve o padrão com perda do estímulo simpático cardíaco, associado à bradicardia. Taquicardia requer avaliar o contexto e causas associadas, não define a combinação clássica procurada."
   },
-  "conceito": "**O que é choque.** Choque é a falta de oxigênio para os tecidos porque a circulação falhou. No traumatizado há duas causas principais a separar: o **choque hemorrágico**, por perda de sangue, e o **choque neurogênico**, por lesão da medula que desliga o sistema nervoso simpático.\n\n**O papel do simpático.** O sistema simpático mantém os vasos contraídos (tônus vascular) e acelera o coração. Suas fibras saem da medula entre T1 e L2, e as que aceleram o coração saem de T1 a T4. Uma lesão medular acima de cerca de T6 interrompe esse comando.\n\n**O quadro do choque neurogênico.** Sem o simpático, os vasos da periferia dilatam: a pressão cai, mas a pele fica **quente e corada**, porque o sangue vai para a pele. O nervo vago, que freia o coração, age sem oposição e causa **bradicardia**. No início, o rim continua recebendo sangue e o **débito urinário** costuma estar **preservado**. Resumo: hipotensão com bradicardia, extremidades quentes e diurese normal.\n\n**O quadro do choque hemorrágico.** A perda de volume ativa o simpático ao máximo: o coração acelera (**taquicardia**), os vasos da pele fecham (**extremidades frias**, pálidas e úmidas) e o rim reduz a produção de urina (**oligúria**) para poupar líquido.\n\n**A armadilha.** No politraumatizado os dois podem coexistir, e a bradicardia neurogênica pode mascarar a taquicardia da hemorragia. Sempre se procura sangramento (tórax, abdome com ultrassom, pelve, ossos longos) antes de atribuir a hipotensão à medula. O tratamento do neurogênico é volume com critério e vasopressor com ação alfa e beta, como a noradrenalina.\n\n**Não confundir com choque medular.** É a perda transitória dos reflexos abaixo da lesão, sem relação com a pressão, que termina com o retorno do reflexo bulbocavernoso.\n\n**Na prova:** choque neurogênico é bradicardia, pele quente e diurese normal; hemorrágico é taquicardia, pele fria e oligúria.",
-  "correta": "**Bradicardia, débito urinário normal e extremidades quentes.** É o retrato da perda do simpático: vagal sem oposição, vasos periféricos dilatados e rim ainda perfundido no início.",
   "referencias": [
-   "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. Chicago: American College of Surgeons; 2018.",
-   "Walters BC, Hadley MN, Hurlbert RJ et al. Guidelines for the management of acute cervical spine and spinal cord injuries: 2013 update. Neurosurgery. 2013;60(Suppl 1):82-91."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+      "exame-neurologico-choque-neurogenico-choque-medu-12aaa467"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "68228119f005a3fcd863b895f59cef8b84cad706d4103315d26c7e07433d31f2"
+    }
+   ],
+   "questaoSha256": "cfb7b781abef1010f40ec0a5abd008b2ede29d52bea6d0f85ac7639e6b3c0a37",
+   "comentarioSha256": "670387c97846e6c315655254e31bfce3b17779abf0b0f919ae41e554ad9f3a38"
+  }
  },
  "coluna-0026": {
   "incorretas": {
@@ -375,18 +398,42 @@
   "conferido": false
  },
  "coluna-0027": {
+  "conceito": "A lateralidade é o ponto de concordância: a artéria de **Adamkiewicz costuma nascer à esquerda**. Já a faixa de níveis exige uma ressalva. O gabarito oficial escolheu **T9–T11 à esquerda**, enquanto o resumo do Rockwood descreve origem habitual **entre T8 e T10**, com variação de **T7 a L4**.\n\nEssa divergência não deve ser apagada mudando a letra nem atribuindo ao livro o intervalo da prova. A anatomia é variável, e nenhuma das quatro alternativas reproduz exatamente a faixa habitual citada na fonte consultada. A alternativa D é apresentada como resposta oficial, não como transcrição exata do Rockwood (resumo do Rockwood, 10ª ed., cap. 49, “Vias de acesso e a artéria de Adamkiewicz”).\n\nNa cirurgia, a variação importa mais que uma regra rígida de nível: o capítulo descreve ligadura dos vasos segmentares perto da aorta para preservar colaterais, com pinçamento temporário e neuromonitorização antes de ligar vasos relevantes. A faixa memorizada não substitui o cuidado com a perfusão medular.\n\nLeia a seção no resumo da Biblioteca com o alerta em mente: lado habitual e intervalo da banca são informações que precisam ser distinguidas.",
+  "correta": "**D: T9–T11 à esquerda, segundo o gabarito oficial.** O lado coincide com o padrão habitual do resumo, mas os níveis não são exatamente os do texto consultado, que informa T8–T10. A letra foi preservada e a divergência está explicitada.",
   "incorretas": {
-   "A": "**Nível e lado errados.** A faixa mais frequente é mais baixa, de T9 a T11, e o lado predominante é o esquerdo, acompanhando a aorta.",
-   "B": "**O nível está certo, o lado não.** A artéria nasce à direita numa minoria das pessoas; o predomínio é esquerdo.",
-   "C": "**O lado está certo, o nível não.** T7 a T9 está dentro da faixa possível, mas a posição mais frequente é entre T9 e T11."
+   "A": "**O lado direito não é o habitual descrito.** Há variação anatômica, mas a fonte destaca a esquerda. Além disso, T7–T9 não reproduz sua faixa habitual T8–T10, de modo que a alternativa não resolve a divergência de níveis.",
+   "B": "**Repete os níveis da banca e troca o lado.** O resumo descreve origem mais frequentemente esquerda. A faixa T9–T11, por si, já precisa da ressalva bibliográfica; colocá-la à direita afasta também a lateralidade habitual.",
+   "C": "**Acerta o lado habitual, mas não o intervalo exato da fonte.** T7–T9 e T8–T10 se sobrepõem parcialmente; isso não torna a primeira uma reprodução do segundo. A escolha oficial foi D, e o resumo não permite fingir que uma das duas faixas esquerdas coincide integralmente com o livro."
   },
-  "conceito": "**Como a medula é irrigada.** A medula recebe sangue de três artérias longitudinais: uma **artéria espinhal anterior**, que corre pela frente e nutre os dois terços anteriores, e duas posteriores. Sozinhas, elas não dão conta de toda a extensão; recebem reforço de **artérias radiculares**, ramos que entram pelos forames junto com as raízes, vindos das artérias intercostais e lombares, que por sua vez saem da aorta.\n\n**A artéria de Adamkiewicz.** É a maior dessas artérias radiculares, também chamada artéria radicular magna. Ela reforça a espinhal anterior na medula torácica baixa e lombar, região de irrigação mais frágil, porque ali há poucos vasos de reforço. Na maioria das pessoas ela nasce **entre T9 e T11** (a faixa possível vai de T5 a L2) e do **lado esquerdo**, em cerca de três quartos dos casos, o que acompanha a posição da aorta, que desce à esquerda da coluna.\n\n**Por que isso importa.** Se a Adamkiewicz for lesada ou ligada, a parte anterior da medula fica sem sangue e surge a **síndrome medular anterior**: paraplegia e perda de dor e temperatura, com propriocepção preservada. Isso pode acontecer em cirurgias da aorta, embolizações e acessos anteriores à coluna toracolombar.\n\n**Consequências na cirurgia.** No acesso anterior à coluna torácica, muitos cirurgiões preferem entrar pela **direita** quando a doença permite, para ficar longe da artéria. Ao ligar os vasos segmentares que cruzam os corpos vertebrais, faz-se a ligadura no meio do corpo, longe do forame, onde fica a ligação com a circulação da medula.\n\n**Na prova:** Adamkiewicz fica mais frequentemente entre T9 e T11, à esquerda; sua lesão causa síndrome medular anterior.",
-  "correta": "**Entre T9 e T11, à esquerda.** É a posição mais frequente da artéria radicular magna, encontrada à esquerda em cerca de três quartos das pessoas.",
   "referencias": [
-   "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016. Capítulo da medula espinal e sua irrigação."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Vias de acesso e a artéria de Adamkiewicz."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Gabarito oficial D (T9–T11 à esquerda) preservado. O resumo do Rockwood, 10ª edição, capítulo 49, descreve origem habitual à esquerda entre T8 e T10, com variação de T7 a L4. Nenhuma alternativa reproduz exatamente essa faixa habitual; não atribuir ao livro o intervalo da banca nem tratar sobreposição parcial como concordância integral.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Vias de acesso e a artéria de Adamkiewicz"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "8e0a7a0f14d682eec95c9864b7ae491a7305666aa885411defbc2e2fb3be5e1a"
+    }
+   ],
+   "questaoSha256": "7f043b1fe649f179de4583634ccd7e35717d74be3101095d3dcd9ec093993d91",
+   "comentarioSha256": "e981d6447a04eeff93dafa706240cdd12c13b6416c243670c005d7ea7f85eecc"
+  }
  },
  "coluna-0028": {
   "incorretas": {
@@ -490,19 +537,42 @@
   "conferido": false
  },
  "coluna-0035": {
+  "conceito": "Entre as combinações da questão, **bradicardia com débito urinário normal** é o padrão clássico do choque neurogênico. A frequência baixa é o sinal mais diretamente explicado pela lesão medular: a interrupção simpática reduz o tônus vascular e impede a aceleração compensatória esperada na hipotensão.\n\nO resumo contrasta esse quadro com o hipovolêmico, em que a perda de volume costuma produzir taquicardia e sinais de hipoperfusão, incluindo diurese baixa. A diurese preservada é apresentada como parte da comparação de prova; não significa que o rim de qualquer paciente em choque neurogênico esteja necessariamente bem perfundido (resumo do Rockwood, 10ª ed., cap. 49, “Choque neurogênico não é choque hipovolêmico”).\n\nEssa limitação é importante no politrauma: choque neurogênico e hemorragia podem coexistir. A frequência baixa não dispensa a procura de sangramento, e oligúria continua sendo um sinal que precisa de avaliação. A resposta descreve uma combinação típica, não um teste isolado que exclua outras causas.\n\nO resumo da Biblioteca ensina essa diferença junto do alerta para o componente hipovolêmico.",
+  "correta": "**D: bradicardia e débito urinário normal.** Corresponde ao padrão comparativo da questão. A informação decisiva é a bradicardia na hipotensão por perda simpática, com a ressalva de que a diurese depende do estado circulatório real.",
   "incorretas": {
-   "A": "**É o choque hemorrágico.** Taquicardia e oligúria mostram o simpático ativo compensando a perda de sangue, o contrário da lesão medular.",
-   "B": "**A taquicardia contradiz a perda do simpático.** Sem o simpático o coração desacelera. Taquicardia no traumatizado medular sugere sangramento associado.",
-   "C": "**A oligúria aponta para hipovolemia.** A bradicardia está certa, mas pouca urina indica rim mal perfundido por falta de volume, sugerindo sangramento junto com a lesão medular."
+   "A": "**Taquicardia e oligúria se encaixam no padrão hipovolêmico comparado.** O coração acelera diante da perda de volume, enquanto a perfusão renal se reduz. É outra combinação que a usada para o neurogênico neste item.",
+   "B": "**Preservar a diurese não transforma taquicardia em bradicardia.** A perda do estímulo simpático cardíaco é a explicação central do padrão pedido. A frequência alta exige outra interpretação do contexto clínico.",
+   "C": "**A frequência está compatível, mas a diurese troca o padrão clássico.** Oligúria pode ocorrer em situações reais de hipoperfusão e em choque misto; não é motivo para negar o problema. Apenas não corresponde à associação didática que diferencia as opções da questão."
   },
-  "conceito": "**O que é choque neurogênico.** É a queda da pressão arterial causada por lesão da medula que desliga o sistema nervoso simpático. O simpático mantém os vasos contraídos e acelera o coração; suas fibras saem da medula entre T1 e L2, e as do coração entre T1 e T4. Lesões acima de cerca de T6 interrompem esse comando.\n\n**Por que bradicardia.** O coração recebe dois comandos: o simpático acelera e o nervo vago freia. Com o simpático desligado, o vago age sozinho e a frequência cai. Hipotensão com **bradicardia** é a assinatura do choque neurogênico, porque em quase todo outro choque o coração acelera para compensar.\n\n**Por que a diurese é normal.** Nos vasos sem tônus, o sangue se espalha pela periferia, mas o volume total não foi perdido. No início, o rim continua recebendo fluxo suficiente e produz urina normalmente. A pele fica quente e corada.\n\n**O contraste com o choque hemorrágico.** Na perda de sangue o simpático trabalha no máximo: taquicardia, pele fria e pálida e **oligúria**, porque o rim reduz a urina para poupar volume. Diurese baixa num traumatizado hipotenso fala a favor de hipovolemia.\n\n**Cuidado no politrauma.** Os dois choques podem coexistir, e a bradicardia pode esconder a taquicardia da hemorragia. Sempre se procura sangramento antes de atribuir tudo à medula. O tratamento do neurogênico é volume com moderação, vasopressor com ação alfa e beta (como a noradrenalina), atropina para bradicardia sintomática e alvo de pressão arterial média elevada nos primeiros dias para perfundir a medula.\n\n**Na prova:** choque neurogênico é bradicardia com diurese normal; choque hemorrágico é taquicardia com oligúria.",
-  "correta": "**Bradicardia e débito urinário normal.** A perda do simpático deixa o vago sem oposição e dilata os vasos sem tirar volume, de modo que o rim segue produzindo urina no início.",
   "referencias": [
-   "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual. 10th ed. Chicago: American College of Surgeons; 2018.",
-   "Kwon BK, Tetreault LA, Martin AR et al. A Clinical Practice Guideline for the Management of Patients With Acute Spinal Cord Injury: Recommendations on Hemodynamic Management. Global Spine J. 2024;14(3 Suppl):187S-211S."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+      "exame-neurologico-choque-neurogenico-choque-medu-12aaa467"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "68228119f005a3fcd863b895f59cef8b84cad706d4103315d26c7e07433d31f2"
+    }
+   ],
+   "questaoSha256": "6e8cbefe9cf6446d8c0e6f631286178a3575900dc92f084c7a327477599bec67",
+   "comentarioSha256": "3610e1aca7541b64ba87f49629641a822297cda125b3c3355cf58563f7cab6c8"
+  }
  },
  "coluna-0036": {
   "incorretas": {
@@ -4525,19 +4595,43 @@
   "conferido": false
  },
  "coluna-0372": {
-  "conceito": "**Choque medular e o reflexo bulbocavernoso.** Logo após uma lesão medular grave, ocorre um período de **arreflexia** e flacidez abaixo do nível da lesão: o choque medular. Ele costuma durar de 24 a 72 horas (às vezes mais).\n\n**Por que importa.** Durante o choque medular, não é possível definir se a lesão é completa ou incompleta, porque toda a atividade reflexa está suprimida. A classificação definitiva só deve ser feita após seu término.\n\n**O reflexo bulbocavernoso.** É um reflexo sacral (S2-S4), de arco curto, que não depende das vias longas da medula.\n- **Como se faz**: com o dedo no reto (toque retal), comprime-se a glande do pênis ou o clitóris, ou traciona-se a sonda vesical. A resposta é a contração do esfíncter anal.\n- **Interpretação**: é um dos **primeiros reflexos a retornar** após o choque medular. O retorno do bulbocavernoso marca o **fim do choque medular**.\n- Se, com o reflexo presente, não há nenhuma função motora ou sensitiva abaixo do nível (inclusive sacral), a lesão é **completa** (ASIA A), com prognóstico reservado de recuperação.\n\n**Atenção.** Lesões do cone medular e da cauda equina interrompem o próprio arco reflexo sacral; nelas, o reflexo pode não voltar, e sua ausência não significa choque medular persistente.\n\n**Outros reflexos.**\n- Cremastérico: L1-L2.\n- Cutâneo abdominal: T7 a T12.\n- Cutâneo plantar (Babinski): avaliação do trato corticoespinal; um sinal de Babinski pode surgir após o fim do choque.\n\n> Fim do choque medular: retorno do reflexo bulbocavernoso.",
-  "correta": "**C: Bulbocavernoso.** É o reflexo usado para avaliar o choque medular. Por ser um arco reflexo sacral curto (S2-S4), é um dos primeiros a retornar, e sua volta marca o término do choque medular. A partir daí, a ausência completa de função abaixo do nível, incluindo os segmentos sacrais, define a lesão como completa.",
+  "conceito": "No paciente com trauma raquimedular, pesquisar o **reflexo bulbocavernoso** ajuda a interpretar o silêncio reflexo da fase inicial. O reflexo é sacral e sua resposta é a **contração do esfíncter anal**. Seu retorno marca o fim do choque medular.\n\nIsso é diferente de avaliar a pressão arterial. O choque **neurogênico** envolve perda simpática, hipotensão e bradicardia; o **medular** é uma alteração transitória da atividade reflexa abaixo da lesão. Os dois problemas podem aparecer no mesmo traumatizado, mas o reflexo responde à pergunta neurológica, não substitui a avaliação circulatória (resumo do Rockwood, 10ª ed., cap. 49, “O choque medular e o reflexo bulbocavernoso”).\n\nUm bulbocavernoso presente não demonstra bom prognóstico nem lesão incompleta por si só. Ele pode voltar quando a lesão é completa. Também é preciso cautela com lesões do cone ou da cauda equina, em que o próprio arco sacral pode ter sido atingido.\n\nConsulte essa seção no resumo da Biblioteca para estudar o significado da resposta, além do nome do reflexo.",
+  "correta": "**C: bulbocavernoso.** É o reflexo sacral destacado pelo capítulo como marcador do choque medular e de seu término. A contração anal reflexa deve ser distinguida de função motora voluntária preservada.",
   "incorretas": {
-   "A": "**O reflexo cremastérico** (elevação do testículo ao estimular a face medial da coxa) depende de L1-L2. Pode estar alterado na lesão medular, mas não é o reflexo padronizado para definir o fim do choque medular.",
-   "B": "**O reflexo cutâneo abdominal** avalia os segmentos de T7 a T12 e é útil, por exemplo, na investigação de escolioses atípicas (assimetria sugere siringomielia). Não é usado para avaliar o choque medular.",
-   "D": "**O reflexo cutâneo plantar** avalia a integridade do trato corticoespinal; o sinal de Babinski indica lesão do neurônio motor superior. Ele pode aparecer após o fim do choque medular, mas não é o reflexo de referência para identificar esse término."
+   "A": "**O cremastérico não é o marcador escolhido para esse fim.** A pergunta não procura qualquer reflexo pesquisável no exame; procura o arco sacral usado pelo capítulo para acompanhar o choque medular. Outros achados não substituem essa informação.",
+   "B": "**O cutâneo abdominal não responde à mesma questão de interpretação.** A ausência ou presença de um reflexo no exame não autoriza chamá-lo de marcador do fim do choque. O capítulo destaca especificamente o bulbocavernoso.",
+   "D": "**O cutâneo plantar não substitui a resposta anal reflexa.** O exame neurológico reúne vários sinais, mas o marco pedido é sacral. Confundir um reflexo dos membros com esse marcador muda o significado do teste."
   },
   "referencias": [
-   "Ditunno JF, Little JW, Tessler A, Burns AS. Spinal shock revisited: a four-phase model. Spinal Cord. 2004;42(7):383-395.",
-   "Kirshblum SC, Burns SP, Biering-Sorensen F, et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+      "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+      "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "a944b4395797afd3f1bc8cc13b4cf53b26dcbc788bf368884e9ca04709cbf138"
+    }
+   ],
+   "questaoSha256": "4b96dbf5d4ce6721ad1a70fb74594f8b3c1d735d53e843effea3ba078fed05c1",
+   "comentarioSha256": "0f53991081299f753a1616c4c5742794bcc3529cf5119706a4314f849edfb9f6"
+  }
  },
  "coluna-0373": {
   "conceito": "**Choque medular.** É a depressão transitória de toda a atividade reflexa da medula abaixo do nível de uma lesão aguda, com flacidez e arreflexia, inclusive dos reflexos sacrais. Resulta da perda súbita das influências descendentes (excitatórias) sobre os neurônios medulares, que ficam hiperpolarizados.\n\n**Duração.** Na maioria dos casos, o choque medular dura de **24 a 48 horas** (até cerca de 72 horas). O fim é marcado pelo retorno do **reflexo bulbocavernoso**, um dos primeiros a voltar.\n\n**Modelo em quatro fases (Ditunno).**\n\n| Fase | Tempo | Achados |\n|---|---|---|\n| 1 | 0 a 1 dia | Arreflexia ou hiporreflexia |\n| 2 | 1 a 3 dias | Retorno dos reflexos cutâneos (bulbocavernoso, plantar tardio) |\n| 3 | 1 a 4 semanas | Hiper-reflexia inicial |\n| 4 | 1 a 12 meses | Hiper-reflexia e espasticidade estabelecidas |\n\n**Por que importa.** Durante o choque medular, não se pode classificar a lesão como completa, porque mesmo vias preservadas podem estar \"silenciosas\". Se, após o retorno do bulbocavernoso, não houver nenhuma função abaixo do nível (incluindo S4-S5), a lesão é completa, com prognóstico de recuperação muito reservado.\n\n**Não confundir.** Choque medular (fenômeno neurológico, reflexos) é diferente de choque neurogênico (fenômeno hemodinâmico, hipotensão e bradicardia).\n\n> Choque medular: geralmente 24 a 48 horas; termina com o retorno do bulbocavernoso.",
@@ -4555,19 +4649,44 @@
   "conferido": false
  },
  "coluna-0374": {
-  "conceito": "**Fim do choque medular: o reflexo bulbocavernoso.** Após a lesão medular aguda, todos os reflexos abaixo do nível desaparecem temporariamente. O primeiro a voltar, e o usado como marcador clínico, é o **reflexo bulbocavernoso**.\n\n**O reflexo.**\n- **Arco**: sacral (S2 a S4), curto, sem depender das vias longas da medula.\n- **Técnica**: com um dedo no reto, comprime-se a glande ou o clitóris, ou traciona-se suavemente a sonda vesical; a resposta é a contração do esfíncter anal externo.\n- **Interpretação**: sua presença indica que o choque medular terminou e que o arco sacral está íntegro.\n\n**Aplicação após o retorno.**\n- Sem nenhuma função motora ou sensitiva sacral (S4-S5): lesão **completa** (ASIA A).\n- Com preservação sacral: lesão **incompleta** (ASIA B, C ou D).\n\n**Exceção.** Nas lesões do cone medular e da cauda equina, o próprio arco reflexo sacral é lesado, e o bulbocavernoso pode não voltar.\n\n| Reflexo | Segmento | Utilidade no trauma raquimedular |\n|---|---|---|\n| Bulbocavernoso | S2 a S4 | Marca o fim do choque medular |\n| Patelar | L2 a L4 | Retorna mais tarde; hiper-reflexia na fase espástica |\n| Cremastérico | L1 a L2 | Não é marcador do choque |\n| Cutâneo plantar | Via corticoespinal | Babinski surge após o choque |\n\n> O retorno do reflexo bulbocavernoso indica o término do choque medular.",
-  "correta": "**C: Presença do reflexo bulbocavernoso.** É o marcador clínico do fim do choque medular. Por ser um arco sacral curto, está entre os primeiros reflexos a retornar. Após seu retorno, a ausência de qualquer função sacral define a lesão como completa.",
+  "conceito": "O **retorno do reflexo bulbocavernoso** indica que o choque medular terminou. A atividade de um arco sacral reapareceu, permitindo interpretar melhor a função que permanece ausente abaixo da lesão.\n\nNo início do trauma, a arreflexia pode fazer uma medula parcialmente preservada parecer silenciosa. O retorno reflexo muda essa avaliação, mas não garante que a condução através da lesão seja normal: uma lesão completa também pode ter bulbocavernoso presente. Por isso é necessário reexaminar sensibilidade e motricidade, especialmente a preservação sacral, sem confundi-las com a resposta reflexa (resumo do Rockwood, 10ª ed., cap. 49, “O choque medular e o reflexo bulbocavernoso”).\n\nO capítulo não define um prazo fixo de duração do choque. O tempo desde o acidente e a pressão arterial não substituem o marco neurológico perguntado. Em lesões do cone e da cauda, o comprometimento do próprio arco exige atenção adicional.\n\nLeia a seção no resumo da Biblioteca junto da escala ASIA para ligar o fim do choque ao exame que vem depois.",
+  "correta": "**C: presença do reflexo bulbocavernoso.** O retorno da contração anal reflexa é o marco apresentado. Ele indica fim do choque, não recuperação motora voluntária nem bom prognóstico automático.",
   "incorretas": {
-   "A": "**O reflexo patelar e o clônus retornam mais tarde**, quando a fase de hiper-reflexia se instala, geralmente após dias a semanas. Não servem para marcar o fim do choque medular.",
-   "B": "**O reflexo cremastérico (L1-L2)** não é usado como marcador do choque medular e pode estar ausente por outras causas.",
-   "D": "**O reflexo cutâneo plantar** avalia a via corticoespinal. O sinal de Babinski pode aparecer depois do fim do choque, mas não é o reflexo de referência para definir o seu término."
+   "A": "**Patelar ou clônus não é o marco descrito.** O capítulo lembra que a hiper-reflexia tendinosa pode não aparecer na fase aguda. Esperar esse achado como condição obrigatória troca o critério sacral usado para o fim do choque.",
+   "B": "**O cremastérico não substitui o bulbocavernoso nesse papel.** A questão exige um marcador específico, não simplesmente a presença de qualquer reflexo. A resposta anal reflexa é a informação destacada pela fonte.",
+   "D": "**O cutâneo plantar é outro achado do exame.** Sua presença isolada não é o critério apresentado para encerrar a interpretação de choque medular. Acompanhamento reflexo e avaliação da função voluntária precisam ser distinguidos."
   },
   "referencias": [
-   "Ditunno JF, Little JW, Tessler A, Burns AS. Spinal shock revisited: a four-phase model. Spinal Cord. 2004;42(7):383-395.",
-   "Kirshblum SC, Burns SP, Biering-Sorensen F, et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Exame neurológico: choque neurogênico, choque medular e ASIA"
+     ],
+     "blocos": [
+      "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+      "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+      "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+      "exame-neurologico-choque-neurogenico-choque-medu-acb3781c"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "27eda10d1df8ec1b87e370afb11e4d41b1ab63f26f0e418cd5e70ba5cc7a94c5"
+    }
+   ],
+   "questaoSha256": "44ee379b1894d7a347759b35c7ad0ff4a3eb57741ce63766c4fd327db8f00231",
+   "comentarioSha256": "93e78ac43dbfc19adf57b2e5cd9c0bca3ff47da424b8aa8bcd9c2c0cb020fdae"
+  }
  },
  "coluna-0375": {
   "conceito": "**Lesão medular completa ou incompleta.** A distinção é a informação prognóstica mais importante após o trauma raquimedular.\n\n**Lesão completa (ASIA A).** Ausência de função motora e sensitiva nos segmentos sacrais mais baixos (S4-S5), avaliada após o fim do choque medular. A chance de recuperação funcional significativa é pequena.\n\n**Lesão incompleta.** Há alguma preservação de função abaixo do nível, obrigatoriamente incluindo os segmentos sacrais (sensibilidade perianal, sensibilidade anal profunda ou contração anal voluntária). Divide-se em ASIA B (só sensitiva), C e D (motoras incompletas). O prognóstico é muito melhor, especialmente nas lesões motoras incompletas.\n\n**Síndromes medulares incompletas.**\n- **Centromedular**: membros superiores mais fracos que os inferiores; idosos com hiperextensão cervical.\n- **Anterior**: perda motora e de dor e temperatura, com propriocepção preservada; pior prognóstico.\n- **Brown-Séquard**: hemissecção; melhor prognóstico.\n- **Posterior**: perda da propriocepção; rara.\n\n**O paciente do caso.** Após melhora da consciência, ele movimentava o membro inferior esquerdo com força grau II em todos os grupos musculares. A presença de função motora abaixo do nível da lesão torácica caracteriza lesão **incompleta** (ASIA C).\n\n**Periférica versus medular.** Lesões de raízes e nervos periféricos (cauda equina, plexo) são diferentes de lesão medular, que acomete o sistema nervoso central.\n\n> Qualquer função preservada abaixo do nível, com preservação sacral, define lesão incompleta.",
@@ -6738,18 +6857,42 @@
   }
  },
  "coluna-0513": {
-  "conceito": "**Por que descomprimir cedo.** Uma medula comprimida continua sofrendo depois do trauma: a compressão reduz o fluxo sanguíneo e alimenta a lesão secundária (edema, isquemia, apoptose). Em modelos animais, a recuperação neurológica é quase inversamente proporcional ao tempo de compressão; num estudo em cães, a descompressão nas primeiras 6 horas deu o melhor resultado e foi mais eficaz que o corticoide isolado. A dúvida sempre foi se isso se reproduz no paciente real, em que é difícil operar tão cedo.\n\n**O STASCIS.** O Surgical Timing in Acute Spinal Cord Injury Study, multicêntrico e prospectivo, com 313 pacientes com lesão medular cervical, comparou a descompressão antes e depois de 24 horas. Na análise multivariada, a chance de melhorar **pelo menos dois graus na escala da ASIA aos 6 meses** foi **2,8 vezes maior** no grupo precoce. **Não houve diferença estatística de mortalidade nem de complicações.** Uma análise posterior mostrou que a descompressão precoce também foi mais custo-efetiva.\n\n**As ressalvas que o Rockwood faz:**\n\n- apesar do nome, o estudo comparou mais propriamente descompressão precoce e tardia, e a descompressão muitas vezes foi a **redução fechada** antes da fixação definitiva;\n- análises não ajustadas mostraram apenas tendência a benefício;\n- o grupo incluiu lesões heterogêneas, e as síndromes centrais, de melhor prognóstico, podem ter favorecido o resultado;\n- só 20% a 50% dos pacientes chegam a um serviço capaz de operar dentro de 24 horas.\n\n**Outros estudos.** O único ensaio randomizado antigo definiu precoce como até 72 horas e tardio como depois de 5 dias, e não mostrou diferença, o que ilustra o problema das definições. Uma revisão sistemática mais antiga encontrou mais complicações com cirurgia cervical precoce, enquanto o estudo OSCIS, em lesões incompletas com estenose prévia, mostrou melhor escore motor até 6 meses com cirurgia precoce e igualdade em 1 ano. O conjunto levou o grupo de FEHLINGS e os autores do capítulo a recomendar descompressão **dentro de 24 horas** sempre que o paciente e o serviço permitirem.\n\nBase: Rockwood and Green, 10ª ed., capítulo 47 (Principles of Spine Trauma Care), seção de mecânica da lesão medular, e capítulo 48, seção Timing.\n\n> **Na prova:** STASCIS: descompressão antes de 24 horas aumentou em 2,8 vezes a chance de melhorar dois graus na ASIA, sem mais complicações.",
-  "correta": "**C: maior chance de melhora de pelo menos dois graus na escala da ASIA aos 6 meses, sem aumento de complicações.** No STASCIS, a chance de melhora de dois ou mais graus foi 2,8 vezes maior com descompressão antes de 24 horas, sem diferença estatística de mortalidade ou complicações. Esse resultado sustenta a recomendação atual de descomprimir em até 24 horas quando possível, com as ressalvas de que muitas descompressões foram reduções fechadas e de que as síndromes centrais podem ter favorecido o grupo precoce.",
+  "conceito": "O STASCIS comparou descompressão antes e depois de **24 horas**. O resultado destacado no capítulo é a associação da cirurgia precoce com maior chance de melhora de **pelo menos dois graus da escala AIS aos seis meses**, com segurança, sem o aumento de complicações proposto pela alternativa D.\n\nA escala expressa o estado neurológico; dois graus de melhora descrevem mudança de categoria, não uma porcentagem de força recuperada. O achado favorece a descompressão precoce quando indicada, mas deve ser lido como resultado de um estudo, com os limites metodológicos que o resumo também comenta (resumo do Rockwood, 10ª ed., cap. 49, “Quando operar”).\n\nA pressão de tempo não dispensa ressuscitação. O capítulo alerta para o risco de operar cedo demais um paciente mal ressuscitado, instável ou com lesão craniana. Portanto, “antes de 24 horas foi seguro no estudo” não equivale a ignorar a condição sistêmica de qualquer politraumatizado.\n\nLeia no resumo da Biblioteca a evidência do momento da cirurgia junto das condições que tornam o procedimento seguro.\n\n**Por que esta questão foi criada.** O intervalo de 24 horas e o desfecho de dois graus aos seis meses são dados específicos do estudo destacados pelo capítulo e úteis para interpretar uma questão de evidência clínica.",
+  "correta": "**C: maior chance de melhora de pelo menos dois graus aos seis meses, sem aumento de complicações.** Corresponde ao resultado neurológico e à segurança relatados no resumo. Não promete a mesma recuperação a todo paciente.",
   "incorretas": {
-   "A": "**Inverte o achado.** O desfecho que diferenciou os grupos foi neurológico: a melhora de dois ou mais graus na ASIA. Mortalidade e complicações não foram diferentes. A alternativa descreve o oposto do que o estudo encontrou.",
-   "B": "**Restringe o benefício sem base.** O STASCIS incluiu lesões completas e incompletas e analisou a melhora de dois graus no conjunto, ajustada para fatores como a gravidade inicial. Se algo favoreceu o resultado, foram as lesões incompletas, como a síndrome central, e não as completas, que têm pouca recuperação esperada. Numa metanálise citada no capítulo 48, só os dados das lesões incompletas foram considerados confiáveis.",
-   "D": "**Não foi o que o STASCIS mostrou.** Uma revisão sistemática mais antiga associou a cirurgia cervical precoce a mais complicações (58% contra 47,5%) e a mortalidade levemente maior, e é daí que vem essa preocupação. No STASCIS, porém, a descompressão antes de 24 horas não aumentou mortalidade nem complicações, e o ganho neurológico se manteve."
+   "A": "**Troca o desfecho principal apresentado.** O capítulo destaca melhora neurológica, e não apenas mortalidade em 30 dias com ausência de diferença funcional. Não se pode apagar o resultado neurológico para escolher essa opção.",
+   "B": "**A fonte não restringe esse resultado às lesões completas.** A alternativa acrescenta uma limitação que não faz parte da conclusão relatada. O dado a reconhecer é a associação entre descompressão precoce e melhora de categoria neurológica.",
+   "D": "**Inverte a descrição de segurança.** O resumo apresenta a cirurgia precoce como segura no estudo, não como um ganho neurológico anulado por maior complicação. A necessidade de estabilizar o politraumatizado é outra questão, que permanece válida."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 47 (Principles of Spine Trauma Care; Lightsey, Harris e Tobert)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Corticoide e o momento da cirurgia."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Corticoide e o momento da cirurgia"
+     ],
+     "blocos": [
+      "corticoide-e-o-momento-da-cirurgia-ae16a777",
+      "corticoide-e-o-momento-da-cirurgia-66097675"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "6090220c491e182deaf09c4a93aec9bafe17ea07f4844848b6664a4000544bec"
+    }
+   ],
+   "questaoSha256": "c6e5704add149e0aba7da6cdf2c49bf118e46d5e8c5b522f2e46e4b77f7c116d",
+   "comentarioSha256": "dd75c7327306fab53d370b396bfe814e2bd8e10e6b1b7d18df3c2711c477c3fc"
+  }
  },
  "coluna-0514": {
   "conceito": "**A anatomia que explica o risco.** A artéria vertebral sobe pelos forames transversos de C6 a C1 (entra no de C7 em apenas 5% das pessoas). Fraturas que atingem esses forames, luxações e subluxações estiram ou cortam a parede do vaso. A lesão contusa das artérias cervicais (carótida interna e vertebral), chamada lesão cerebrovascular contusa ou BCVI, ocorre em cerca de 1% dos traumas contusos. Poucos pacientes ficam sintomáticos, mas quando ocorre isquemia cerebral as sequelas são graves e a mortalidade se aproxima de 40%.\n\n**Como a lesão vira AVC.** A lesão inicial costuma ser da íntima. Nos dias seguintes, ela pode propagar uma dissecção ou formar trombo que estreita ou fecha a luz, ou emboliza. Esse intervalo assintomático é a janela para tratar: estudos retrospectivos mostram queda dos AVCs quando os assintomáticos são tratados.\n\n**Quem rastrear.** As diretrizes da EAST, adotadas no capítulo 47 do Rockwood (10ª ed.), recomendam angiotomografia **definitivamente** nas lesões cervicais de alto risco:\n\n- fraturas da coluna cervical alta;\n- subluxações ou luxações cervicais;\n- fraturas desviadas que envolvem o forame transverso.\n\nEm qualquer outra lesão cervical, o rastreamento é recomendado de forma condicional. A arteriografia de quatro vasos continua sendo o padrão de diagnóstico, mas a angiotomografia com 16 canais ou mais tornou-se o exame de rastreamento.\n\n**Classificação de BIFFL (Denver).**\n\n| Grau | Lesão |\n|---|---|\n| I | Irregularidade ou dissecção com estreitamento menor que 25% |\n| II | Dissecção ou hematoma intramural com estreitamento de 25% ou mais, trombo intraluminal ou flap intimal elevado |\n| III | Pseudoaneurisma |\n| IV | Oclusão |\n| V | Transecção com extravasamento livre |\n\n**Como tratar.** A diretriz recomenda **terapia antitrombótica** (antiagregante ou anticoagulante; nenhum se mostrou superior e a duração ideal não é conhecida). **Stent não deve ser usado de rotina** nos graus II e III, porque não reduziu AVC em relação ao antitrombótico isolado. As lesões de grau I e II costumam resolver ou evoluir para pseudoaneurisma em cerca de 10 dias; por isso os autores recomendam **repetir a imagem em 7 a 10 dias**.\n\n**A implicação para o cirurgião de coluna.** Saber que uma vertebral está lesada muda a fixação: parafusos de massa lateral ou transarticulares C1-C2 do lado da artéria sadia podem comprometer a única vertebral patente.\n\nBase: Rockwood and Green, 10ª ed., capítulo 47 (Principles of Spine Trauma Care), seção Blunt Cerebrovascular Injury, tabela 47-2 e algoritmo 47-2.\n\n> **Na prova:** fratura cervical alta, luxação ou fratura no forame transverso: angiotomografia; BCVI se trata com antitrombótico, sem stent de rotina.",

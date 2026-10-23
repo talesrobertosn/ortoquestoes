@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1335,
+  "pendente": 1297,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 93,
-  "pendente-inspecao-imagem": 162,
-  "revisada": 682
+  "pendente-fonte": 114,
+  "pendente-inspecao-imagem": 159,
+  "revisada": 702
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -125,11 +125,11 @@
    "titulo": "Fraturas e luxações da coluna cervical",
    "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
    "estados": {
-    "pendente": 106,
+    "pendente": 100,
     "pendente-anulada": 1,
-    "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 18,
-    "revisada": 6
+    "pendente-fonte": 3,
+    "pendente-inspecao-imagem": 17,
+    "revisada": 11
    }
   },
   "rockwood10-49-fratura-toracolombar": {
@@ -137,10 +137,10 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente": 56,
-    "pendente-fonte": 7,
-    "pendente-inspecao-imagem": 13,
-    "revisada": 50
+    "pendente": 29,
+    "pendente-fonte": 27,
+    "pendente-inspecao-imagem": 10,
+    "revisada": 60
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -166,9 +166,10 @@
    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
    "estados": {
     "duplicada": 2,
-    "pendente": 51,
+    "pendente": 40,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 6,
-    "revisada": 4
+    "revisada": 14
    }
   },
   "rockwood10-54-transtrocanterica": {
@@ -185,9 +186,9 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 64,
+    "pendente": 63,
     "pendente-inspecao-imagem": 1,
-    "revisada": 5
+    "revisada": 6
    }
   },
   "rockwood10-58-femur-distal": {
@@ -412,14 +413,15 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo de trauma toracolombar não descreve a execução e interpretação do Schober modificado. Falta fonte de semiologia que vincule a medida à limitação de mobilidade e compare os distratores de obliquidade, escoliose e hiperlordose; o subtema comum não fundamenta o exame.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "cf25220ca27579399d5145905eec1743c6081cb5e6fb3480ca820b90242bc3de"
+   "questaoSha256": "cf25220ca27579399d5145905eec1743c6081cb5e6fb3480ca820b90242bc3de",
+   "pendencia": "O resumo de trauma toracolombar não descreve a execução e interpretação do Schober modificado. Falta fonte de semiologia que vincule a medida à limitação de mobilidade e compare os distratores de obliquidade, escoliose e hiperlordose; o subtema comum não fundamenta o exame."
   },
   "coluna-0015": {
    "tema": "coluna",
@@ -476,7 +478,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -499,7 +501,31 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "cfb7b781abef1010f40ec0a5abd008b2ede29d52bea6d0f85ac7639e6b3c0a37"
+   "questaoSha256": "cfb7b781abef1010f40ec0a5abd008b2ede29d52bea6d0f85ac7639e6b3c0a37",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+       "exame-neurologico-choque-neurogenico-choque-medu-12aaa467"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "68228119f005a3fcd863b895f59cef8b84cad706d4103315d26c7e07433d31f2"
+     }
+    ],
+    "questaoSha256": "cfb7b781abef1010f40ec0a5abd008b2ede29d52bea6d0f85ac7639e6b3c0a37",
+    "comentarioSha256": "670387c97846e6c315655254e31bfce3b17779abf0b0f919ae41e554ad9f3a38"
+   }
   },
   "coluna-0027": {
    "tema": "coluna",
@@ -508,7 +534,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -523,7 +549,30 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "7f043b1fe649f179de4583634ccd7e35717d74be3101095d3dcd9ec093993d91"
+   "questaoSha256": "7f043b1fe649f179de4583634ccd7e35717d74be3101095d3dcd9ec093993d91",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Vias de acesso e a artéria de Adamkiewicz"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "8e0a7a0f14d682eec95c9864b7ae491a7305666aa885411defbc2e2fb3be5e1a"
+     }
+    ],
+    "questaoSha256": "7f043b1fe649f179de4583634ccd7e35717d74be3101095d3dcd9ec093993d91",
+    "comentarioSha256": "e981d6447a04eeff93dafa706240cdd12c13b6416c243670c005d7ea7f85eecc"
+   }
   },
   "coluna-0032": {
    "tema": "coluna",
@@ -581,7 +630,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -604,7 +653,31 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "6e8cbefe9cf6446d8c0e6f631286178a3575900dc92f084c7a327477599bec67"
+   "questaoSha256": "6e8cbefe9cf6446d8c0e6f631286178a3575900dc92f084c7a327477599bec67",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+       "exame-neurologico-choque-neurogenico-choque-medu-12aaa467"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "68228119f005a3fcd863b895f59cef8b84cad706d4103315d26c7e07433d31f2"
+     }
+    ],
+    "questaoSha256": "6e8cbefe9cf6446d8c0e6f631286178a3575900dc92f084c7a327477599bec67",
+    "comentarioSha256": "3610e1aca7541b64ba87f49629641a822297cda125b3c3355cf58563f7cab6c8"
+   }
   },
   "coluna-0037": {
    "tema": "coluna",
@@ -910,14 +983,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo não define o teste de elevação bilateral dos membros inferiores nem a faixa de flexão dos quadris que localiza dor lombar. Necessária fonte de exame físico que sustente o corte >70 graus e diferencie as quatro faixas; não transferir o Lasègue unilateral para outro teste.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "9214de27669f181358cc96b43f58f07dc65328294dd26836cc762b9899a0aec0"
+   "questaoSha256": "9214de27669f181358cc96b43f58f07dc65328294dd26836cc762b9899a0aec0",
+   "pendencia": "O capítulo não define o teste de elevação bilateral dos membros inferiores nem a faixa de flexão dos quadris que localiza dor lombar. Necessária fonte de exame físico que sustente o corte >70 graus e diferencie as quatro faixas; não transferir o Lasègue unilateral para outro teste."
   },
   "coluna-0085": {
    "tema": "coluna",
@@ -1170,14 +1244,15 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo informa a lordose lombossacra total, mas não a contribuição percentual de L4–L5 e L5–S1. Falta fonte da distribuição segmentar que compare 32%, 43%, 55% e 67%; não deduzir a proporção do ângulo global.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "7153b134cb0007c272975dd8fac88013b3c7b6d49c026994f12453b1afd5305f"
+   "questaoSha256": "7153b134cb0007c272975dd8fac88013b3c7b6d49c026994f12453b1afd5305f",
+   "pendencia": "O resumo informa a lordose lombossacra total, mas não a contribuição percentual de L4–L5 e L5–S1. Falta fonte da distribuição segmentar que compare 32%, 43%, 55% e 67%; não deduzir a proporção do ângulo global."
   },
   "coluna-0164": {
    "tema": "coluna",
@@ -1731,14 +1806,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo adulto não desenvolve a fratura da apófise posterior no esqueleto imaturo nem sua distribuição etária. Necessária fonte pediátrica que confirme adolescência e explique a lesão antes de comparar as outras faixas de idade.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "00f1b4ae2baa580fc66a233317795aa00807c73196eb1a918cce9a9a97955c2b"
+   "questaoSha256": "00f1b4ae2baa580fc66a233317795aa00807c73196eb1a918cce9a9a97955c2b",
+   "pendencia": "O capítulo adulto não desenvolve a fratura da apófise posterior no esqueleto imaturo nem sua distribuição etária. Necessária fonte pediátrica que confirme adolescência e explique a lesão antes de comparar as outras faixas de idade."
   },
   "coluna-0297": {
    "tema": "coluna",
@@ -1879,14 +1955,15 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A pergunta é de estabilização na criança. Os limites adultos de cifose e perda de altura do resumo não comprovam automaticamente o par pediátrico de 30 graus/50%. Necessária recomendação específica pediátrica para julgar todos os pares sem extrapolar população.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "991638c99fabf46441f0251122ae0dec9562b032f0a6129af861b230cd98d715"
+   "questaoSha256": "991638c99fabf46441f0251122ae0dec9562b032f0a6129af861b230cd98d715",
+   "pendencia": "A pergunta é de estabilização na criança. Os limites adultos de cifose e perda de altura do resumo não comprovam automaticamente o par pediátrico de 30 graus/50%. Necessária recomendação específica pediátrica para julgar todos os pares sem extrapolar população."
   },
   "coluna-0304": {
    "tema": "coluna",
@@ -2197,14 +2274,15 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; o capítulo não descreve claudicação da estenose lombar nem a relação entre elevação do membro e variabilidade da distância de marcha. Falta fonte de estenose para sustentar resposta bibliográfica única; não escolher provavel com base no comentário antigo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "8de8e365510195e2b26802f15e24340bd8d9503b4483dbc4d3816b3e5c4030b5"
+   "questaoSha256": "8de8e365510195e2b26802f15e24340bd8d9503b4483dbc4d3816b3e5c4030b5",
+   "pendencia": "Sem gabarito oficial; o capítulo não descreve claudicação da estenose lombar nem a relação entre elevação do membro e variabilidade da distância de marcha. Falta fonte de estenose para sustentar resposta bibliográfica única; não escolher provavel com base no comentário antigo."
   },
   "coluna-0350": {
    "tema": "coluna",
@@ -2484,8 +2562,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta. O caso informa força II no membro inferior esquerdo, mas não fornece exame sacral ou contagem completa dos músculos-chave abaixo do nível neurológico; membro direito também tem trauma. Esses dados faltam para aplicar formalmente a distinção ASIA A/B/C/D. A TC não demonstra preservação sacral. Conferir o caso original completo antes de validar o B oficial como ASIA C com fonte suficiente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -2507,7 +2585,8 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "0d40af0ed57b8477b3dadee1f3e0879111b19edf02e939b1e11c220df279c108"
+   "questaoSha256": "0d40af0ed57b8477b3dadee1f3e0879111b19edf02e939b1e11c220df279c108",
+   "pendencia": "Figura aberta. O caso informa força II no membro inferior esquerdo, mas não fornece exame sacral ou contagem completa dos músculos-chave abaixo do nível neurológico; membro direito também tem trauma. Esses dados faltam para aplicar formalmente a distinção ASIA A/B/C/D. A TC não demonstra preservação sacral. Conferir o caso original completo antes de validar o B oficial como ASIA C com fonte suficiente."
   },
   "coluna-0372": {
    "tema": "coluna",
@@ -2517,7 +2596,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -2540,7 +2619,32 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "4b96dbf5d4ce6721ad1a70fb74594f8b3c1d735d53e843effea3ba078fed05c1"
+   "questaoSha256": "4b96dbf5d4ce6721ad1a70fb74594f8b3c1d735d53e843effea3ba078fed05c1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+       "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+       "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "a944b4395797afd3f1bc8cc13b4cf53b26dcbc788bf368884e9ca04709cbf138"
+     }
+    ],
+    "questaoSha256": "4b96dbf5d4ce6721ad1a70fb74594f8b3c1d735d53e843effea3ba078fed05c1",
+    "comentarioSha256": "0f53991081299f753a1616c4c5742794bcc3529cf5119706a4314f849edfb9f6"
+   }
   },
   "coluna-0373": {
    "tema": "coluna",
@@ -2574,7 +2678,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -2597,7 +2701,33 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "44ee379b1894d7a347759b35c7ad0ff4a3eb57741ce63766c4fd327db8f00231"
+   "questaoSha256": "44ee379b1894d7a347759b35c7ad0ff4a3eb57741ce63766c4fd327db8f00231",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+       "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+       "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+       "exame-neurologico-choque-neurogenico-choque-medu-acb3781c"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "27eda10d1df8ec1b87e370afb11e4d41b1ab63f26f0e418cd5e70ba5cc7a94c5"
+     }
+    ],
+    "questaoSha256": "44ee379b1894d7a347759b35c7ad0ff4a3eb57741ce63766c4fd327db8f00231",
+    "comentarioSha256": "93e78ac43dbfc19adf57b2e5cd9c0bca3ff47da424b8aa8bcd9c2c0cb020fdae"
+   }
   },
   "coluna-0375": {
    "tema": "coluna",
@@ -2606,8 +2736,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O trecho encadeado do caso informa sinais vitais, mas não descreve a avaliação neurológica que decide entre completa, central, periférica e incompleta. Necessário contexto completo com função sensitiva/motora e sacral; PA baixa e bradicardia não demonstram incompletude. Gabarito D mantido, sem revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -2629,7 +2759,8 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "946b4f78de51cc4cf584e4f33185e6f5d6831df373b58081cf1b43d430e0e769"
+   "questaoSha256": "946b4f78de51cc4cf584e4f33185e6f5d6831df373b58081cf1b43d430e0e769",
+   "pendencia": "O trecho encadeado do caso informa sinais vitais, mas não descreve a avaliação neurológica que decide entre completa, central, periférica e incompleta. Necessário contexto completo com função sensitiva/motora e sacral; PA baixa e bradicardia não demonstram incompletude. Gabarito D mantido, sem revisão concluída."
   },
   "coluna-0376": {
    "tema": "coluna",
@@ -2690,8 +2821,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Os dois arquivos de RM/TC foram abertos. ASIA E e capacidade de andar não comprovam estabilidade por si. A resolução e os planos fornecidos não permitem confirmar de modo suficiente todos os critérios de morfologia, banda posterior e alinhamento sob carga para aplicar White/Panjabi sem inferência; necessários descrição ou imagens diagnósticas mais nítidas e dados completos da avaliação mecânica.",
    "temComentario": true,
    "citacoes": [
     {
@@ -2705,7 +2836,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "a856b98fb113eeb7e8f33e9025668d53feeb56afbad918d4c099337e1270b28d"
+   "questaoSha256": "a856b98fb113eeb7e8f33e9025668d53feeb56afbad918d4c099337e1270b28d",
+   "pendencia": "Os dois arquivos de RM/TC foram abertos. ASIA E e capacidade de andar não comprovam estabilidade por si. A resolução e os planos fornecidos não permitem confirmar de modo suficiente todos os critérios de morfologia, banda posterior e alinhamento sob carga para aplicar White/Panjabi sem inferência; necessários descrição ou imagens diagnósticas mais nítidas e dados completos da avaliação mecânica."
   },
   "coluna-0388": {
    "tema": "coluna",
@@ -2714,8 +2846,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado remete ao tipo de fratura do caso 21 sem descrevê-lo. Os arquivos da questão 0386 foram abertos, mas faltam definição suficiente da estabilidade e dados mecânicos para escolher colete versus estabilização. ASIA E/deambulação não bastam. Necessário caso original completo, sem presumir explosão estável pelo gabarito.",
    "temComentario": true,
    "citacoes": [
     {
@@ -2729,7 +2861,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "28113a879258e61296099cf97b8013699d0dbdfeed3772cbec894dac6dbc2cff"
+   "questaoSha256": "28113a879258e61296099cf97b8013699d0dbdfeed3772cbec894dac6dbc2cff",
+   "pendencia": "O enunciado remete ao tipo de fratura do caso 21 sem descrevê-lo. Os arquivos da questão 0386 foram abertos, mas faltam definição suficiente da estabilidade e dados mecânicos para escolher colete versus estabilização. ASIA E/deambulação não bastam. Necessário caso original completo, sem presumir explosão estável pelo gabarito."
   },
   "coluna-0399": {
    "tema": "coluna",
@@ -2921,14 +3054,15 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige diagnóstico diferencial não traumático com sintomas constitucionais e cifose angular. O resumo não desenvolve tuberculose vertebral, mielopatia, doenças reumáticas e hérnia nesse contexto, e há caracteres corrompidos no enunciado. Necessário texto original e fonte de infecção vertebral; não transformar cifose traumática em prova de mal de Pott.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "9fc6a37bbdb30a2bbf0ef634d240737affe40a032d1759ff59f5c0cd57c88592"
+   "questaoSha256": "9fc6a37bbdb30a2bbf0ef634d240737affe40a032d1759ff59f5c0cd57c88592",
+   "pendencia": "A questão exige diagnóstico diferencial não traumático com sintomas constitucionais e cifose angular. O resumo não desenvolve tuberculose vertebral, mielopatia, doenças reumáticas e hérnia nesse contexto, e há caracteres corrompidos no enunciado. Necessário texto original e fonte de infecção vertebral; não transformar cifose traumática em prova de mal de Pott."
   },
   "coluna-0459": {
    "tema": "coluna",
@@ -2991,14 +3125,15 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Risser 1 e curva idiopática lombar de 50 graus requerem algoritmo de escoliose do adolescente. O capítulo de fraturas não define os limites de observação, colete e cirurgia dessa doença. Falta fonte específica que julgue idade óssea, progressão e cada alternativa.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "1ad7ba2e883be06a1bddbf6f5544f125c53326e6df3f74e4266a4394d5822049"
+   "questaoSha256": "1ad7ba2e883be06a1bddbf6f5544f125c53326e6df3f74e4266a4394d5822049",
+   "pendencia": "Risser 1 e curva idiopática lombar de 50 graus requerem algoritmo de escoliose do adolescente. O capítulo de fraturas não define os limites de observação, colete e cirurgia dessa doença. Falta fonte específica que julgue idade óssea, progressão e cada alternativa."
   },
   "coluna-0463": {
    "tema": "coluna",
@@ -3182,14 +3317,15 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. O resumo descreve mecanismo da Chance e um caso em L3, mas não compara frequência da localização clássica entre dorsal alta/baixa e lombar alta/baixa. Caso ilustrado não prova ranking. Necessária distribuição por nível antes de atribuir provavel único.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "3bb5f765d78ad4dba83b315d28fb24be2ca41fdf85f23c54608d100017d9fbfe"
+   "questaoSha256": "3bb5f765d78ad4dba83b315d28fb24be2ca41fdf85f23c54608d100017d9fbfe",
+   "pendencia": "Sem gabarito oficial. O resumo descreve mecanismo da Chance e um caso em L3, mas não compara frequência da localização clássica entre dorsal alta/baixa e lombar alta/baixa. Caso ilustrado não prova ranking. Necessária distribuição por nível antes de atribuir provavel único."
   },
   "coluna-0508": {
    "tema": "coluna",
@@ -3440,7 +3576,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3463,7 +3599,31 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "c6e5704add149e0aba7da6cdf2c49bf118e46d5e8c5b522f2e46e4b77f7c116d"
+   "questaoSha256": "c6e5704add149e0aba7da6cdf2c49bf118e46d5e8c5b522f2e46e4b77f7c116d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Corticoide e o momento da cirurgia"
+      ],
+      "blocos": [
+       "corticoide-e-o-momento-da-cirurgia-ae16a777",
+       "corticoide-e-o-momento-da-cirurgia-66097675"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "6090220c491e182deaf09c4a93aec9bafe17ea07f4844848b6664a4000544bec"
+     }
+    ],
+    "questaoSha256": "c6e5704add149e0aba7da6cdf2c49bf118e46d5e8c5b522f2e46e4b77f7c116d",
+    "comentarioSha256": "dd75c7327306fab53d370b396bfe814e2bd8e10e6b1b7d18df3c2711c477c3fc"
+   }
   },
   "coluna-0514": {
    "tema": "coluna",
@@ -39653,7 +39813,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39668,7 +39828,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "a82590fb6f04523ada7d8d36876b3880a53ffabb543b511a399582387fad614a"
+   "questaoSha256": "a82590fb6f04523ada7d8d36876b3880a53ffabb543b511a399582387fad614a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-38a46d78",
+       "anatomia-aplicada-be6f84e8"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+     }
+    ],
+    "questaoSha256": "a82590fb6f04523ada7d8d36876b3880a53ffabb543b511a399582387fad614a",
+    "comentarioSha256": "c065e270a30e890685563dbd6eaf46ba183ffb9b1314045449a4dedf96019a3c"
+   }
   },
   "quadril-0270": {
    "tema": "quadril",
@@ -39826,7 +40011,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -39841,7 +40026,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "c2bf6c34320564fb077ae0bbac5abb9ee3fcf1192cce0cc0ded0a49b2ed77a00"
+   "questaoSha256": "c2bf6c34320564fb077ae0bbac5abb9ee3fcf1192cce0cc0ded0a49b2ed77a00",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-38a46d78",
+       "anatomia-aplicada-be6f84e8"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+     }
+    ],
+    "questaoSha256": "c2bf6c34320564fb077ae0bbac5abb9ee3fcf1192cce0cc0ded0a49b2ed77a00",
+    "comentarioSha256": "3da02d2dddfacbac3ffe5a91a6c33323b84845429058ffe0a98f5520a68616e0"
+   }
   },
   "quadril-0332": {
    "tema": "quadril",
@@ -41509,7 +41719,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41524,7 +41734,34 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "a8bfe142a8441047ea2a760ddc1433fa5d61912220a5ea63217036f6a2209fbf"
+   "questaoSha256": "a8bfe142a8441047ea2a760ddc1433fa5d61912220a5ea63217036f6a2209fbf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Mecanismo, lesões associadas e quadro clínico",
+       "Fratura desviada no jovem",
+       "Classificações"
+      ],
+      "blocos": [
+       "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+       "fratura-desviada-no-jovem-0dc33d7e",
+       "classificacoes-12519f03"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "27d21cc564ffe44e8cd2f382a43ecd6b320d7fbd3b5a0e3a8a17488dd3d956ef"
+     }
+    ],
+    "questaoSha256": "a8bfe142a8441047ea2a760ddc1433fa5d61912220a5ea63217036f6a2209fbf",
+    "comentarioSha256": "11370951bf827ce1e1245fb5540547ce1cd3142423a34fa1211fefe9cc3d8961"
+   }
   },
   "trauma-0038": {
    "tema": "trauma",
@@ -42233,7 +42470,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42248,7 +42485,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "265c350722559c0bd735b34f49089c6d1b25e5700b6cb771df4594a28508f737"
+   "questaoSha256": "265c350722559c0bd735b34f49089c6d1b25e5700b6cb771df4594a28508f737",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-38a46d78",
+       "anatomia-aplicada-be6f84e8"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+     }
+    ],
+    "questaoSha256": "265c350722559c0bd735b34f49089c6d1b25e5700b6cb771df4594a28508f737",
+    "comentarioSha256": "48b7232ebdea8bfe6e29ffb5764acf1f63e1bfb760bf3d52045e78a51542ed24"
+   }
   },
   "trauma-0065": {
    "tema": "trauma",
@@ -43376,8 +43638,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O texto independente do resumo lista etnia e IMC <18,5 como fatores, mas o ranking explícito de mulheres brancas versus negras está apenas no bloco contextual da própria questão. Falta fonte independente dessa comparação populacional para conferir a alternativa inteira; não usar o comentário da pergunta como prova do gabarito. O risco individual não deve ser deduzido só da categoria étnica.",
    "temComentario": true,
    "citacoes": [
     {
@@ -43391,7 +43653,8 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "ac6a4c9ea8394b97ef65ac4c915a409a0e80ca06f8b39eaeccf61c122fdb4414"
+   "questaoSha256": "ac6a4c9ea8394b97ef65ac4c915a409a0e80ca06f8b39eaeccf61c122fdb4414",
+   "pendencia": "O texto independente do resumo lista etnia e IMC <18,5 como fatores, mas o ranking explícito de mulheres brancas versus negras está apenas no bloco contextual da própria questão. Falta fonte independente dessa comparação populacional para conferir a alternativa inteira; não usar o comentário da pergunta como prova do gabarito. O risco individual não deve ser deduzido só da categoria étnica."
   },
   "trauma-0102": {
    "tema": "trauma",
@@ -46878,7 +47141,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46893,7 +47156,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3dbe2041d71581a62f2cbefbfddcc84f48c4c9b643eceb2c466e13a1bf59ba5b"
+   "questaoSha256": "3dbe2041d71581a62f2cbefbfddcc84f48c4c9b643eceb2c466e13a1bf59ba5b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-38a46d78",
+       "anatomia-aplicada-be6f84e8"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+     }
+    ],
+    "questaoSha256": "3dbe2041d71581a62f2cbefbfddcc84f48c4c9b643eceb2c466e13a1bf59ba5b",
+    "comentarioSha256": "a974aea5d3aca6fa8d2b7170a4a435b3f2558b848240b15efbec51d25e078f71"
+   }
   },
   "trauma-0243": {
    "tema": "trauma",
@@ -47066,7 +47354,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47088,7 +47376,33 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "7c086e8a64dbe4344d7da414f7b46149de5d6e40bf025c919c4c64443e599f75"
+   "questaoSha256": "7c086e8a64dbe4344d7da414f7b46149de5d6e40bf025c919c4c64443e599f75",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Diagnóstico por imagem",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "diagnostico-por-imagem-63f9a6b1",
+       "anatomia-aplicada-a8c38522",
+       "anatomia-aplicada-06e28c1c"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "3df5fc3d6418b06869f38b704b7d4d656abb0ebf1651fdce1a0505c249ed3b40"
+     }
+    ],
+    "questaoSha256": "7c086e8a64dbe4344d7da414f7b46149de5d6e40bf025c919c4c64443e599f75",
+    "comentarioSha256": "99eb743822adbc4143fffe663b345f2fcc76b4c0876ae99d16a924d165ee6ba7"
+   }
   },
   "trauma-0261": {
    "tema": "trauma",
@@ -47675,7 +47989,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47690,7 +48004,30 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "f7176f71d22ab9e1a56d3442eff9d42a01c238afa2b1b263d679924e074d21a2"
+   "questaoSha256": "f7176f71d22ab9e1a56d3442eff9d42a01c238afa2b1b263d679924e074d21a2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações"
+      ],
+      "blocos": [
+       "classificacoes-0fec7b18"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "295fe647e11ba210f2d9cc7cc7ad365837a8dfcf443e78563e5e430746e76064"
+     }
+    ],
+    "questaoSha256": "f7176f71d22ab9e1a56d3442eff9d42a01c238afa2b1b263d679924e074d21a2",
+    "comentarioSha256": "1755ae853f590af7b0c9910cda0b1f29661799349c007d81150d7e4c58226499"
+   }
   },
   "trauma-0279": {
    "tema": "trauma",
@@ -47868,7 +48205,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47883,7 +48220,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ef6165bcccf14e938dd790d89837e1096755cf9a435290c356cddfe9094163a9"
+   "questaoSha256": "ef6165bcccf14e938dd790d89837e1096755cf9a435290c356cddfe9094163a9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura vertebral osteoporótica e cimentação"
+      ],
+      "blocos": [
+       "fratura-vertebral-osteoporotica-e-cimentacao-26668c15",
+       "fratura-vertebral-osteoporotica-e-cimentacao-7eb145b1",
+       "fratura-vertebral-osteoporotica-e-cimentacao-225ae9f2",
+       "fratura-vertebral-osteoporotica-e-cimentacao-2ddf7fb9",
+       "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "62c841bb9634e35caf9d707526259f38c6ab82229c4735b39937575e3b8a454f"
+     }
+    ],
+    "questaoSha256": "ef6165bcccf14e938dd790d89837e1096755cf9a435290c356cddfe9094163a9",
+    "comentarioSha256": "eb050140085b5187c413dd4eaa6023a11a24401a0588b01d83493f1f23aae367"
+   }
   },
   "trauma-0291": {
    "tema": "trauma",
@@ -49170,8 +49534,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo sustenta distribuição etária bimodal e altas taxas de lesões associadas, mas não afirma que a maioria dos déficits toracolombares em geral seja completa; isso é descrito para projéteis. Também falta a série de ângulos transversos de T1 a L5 para julgar D. Necessária fonte dessas duas afirmações, sem usar o gabarito contextual como prova de A.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49185,7 +49549,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "6cd2b6b2ae1ab8e9761a6e799c709ec97d528ef52311ecc31a5cfc8b4ba347d3"
+   "questaoSha256": "6cd2b6b2ae1ab8e9761a6e799c709ec97d528ef52311ecc31a5cfc8b4ba347d3",
+   "pendencia": "O resumo sustenta distribuição etária bimodal e altas taxas de lesões associadas, mas não afirma que a maioria dos déficits toracolombares em geral seja completa; isso é descrito para projéteis. Também falta a série de ângulos transversos de T1 a L5 para julgar D. Necessária fonte dessas duas afirmações, sem usar o gabarito contextual como prova de A."
   },
   "trauma-0344": {
    "tema": "trauma",
@@ -49462,7 +49827,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49477,7 +49842,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "9397489d3220f6b7eca832469e0d9f02195c306c5fba2858099976aa7c91c7ef"
+   "questaoSha256": "9397489d3220f6b7eca832469e0d9f02195c306c5fba2858099976aa7c91c7ef",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Mecanismo, lesões associadas e quadro clínico"
+      ],
+      "blocos": [
+       "mecanismo-lesoes-associadas-e-quadro-clinico-298fa5e4",
+       "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "88510b5082d44713a6062acd76b18e2cc2b158a9eda10fa34a6a52403bc2383d"
+     }
+    ],
+    "questaoSha256": "9397489d3220f6b7eca832469e0d9f02195c306c5fba2858099976aa7c91c7ef",
+    "comentarioSha256": "fb170f5e525171890b75012ae557e3019fdd51d009f70cd5c8c0f63d7257a775"
+   }
   },
   "trauma-0423": {
    "tema": "trauma",
@@ -49510,14 +49899,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo não desenvolve os critérios de RM que distinguem fratura benigna de metastática, incluindo sinal do líquido, convexidade posterior e sinal dos pedículos/arco em T1. Necessária fonte desse diagnóstico diferencial; menção a fratura osteoporótica não comprova cada alternativa.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "d4facaf863d3d1dc4125c9cf191d0f90a152e4b942c3ce0d8abe3d6a487f9aae"
+   "questaoSha256": "d4facaf863d3d1dc4125c9cf191d0f90a152e4b942c3ce0d8abe3d6a487f9aae",
+   "pendencia": "O resumo não desenvolve os critérios de RM que distinguem fratura benigna de metastática, incluindo sinal do líquido, convexidade posterior e sinal dos pedículos/arco em T1. Necessária fonte desse diagnóstico diferencial; menção a fratura osteoporótica não comprova cada alternativa."
   },
   "trauma-0426": {
    "tema": "trauma",
@@ -51060,8 +51450,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo associa 25 graus/50% de perda de altura ao seguimento próximo da A1, mas não estabelece isoladamente o corte de cifose de 25 graus como teste de suspeita de lesão ligamentar na compressão dorsal. Falta essa associação específica e comparação dos limites 15/20/25/30; não converter um limite de acompanhamento num teste diagnóstico.",
    "temComentario": true,
    "citacoes": [
     {
@@ -51075,7 +51465,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "1e75fa981364ddb5551893d9a93ee348830b1b9da6a6e8944d72375598fc001b"
+   "questaoSha256": "1e75fa981364ddb5551893d9a93ee348830b1b9da6a6e8944d72375598fc001b",
+   "pendencia": "O capítulo associa 25 graus/50% de perda de altura ao seguimento próximo da A1, mas não estabelece isoladamente o corte de cifose de 25 graus como teste de suspeita de lesão ligamentar na compressão dorsal. Falta essa associação específica e comparação dos limites 15/20/25/30; não converter um limite de acompanhamento num teste diagnóstico."
   },
   "trauma-0548": {
    "tema": "trauma",
@@ -51084,14 +51475,15 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo associa fratura longitudinal da lâmina à lesão dural, mas não compara o maior índice por níveis T10–T12, L2–L4, L4–S1 e C5–C7. Falta a distribuição regional que decide B; associação mecânica geral não prova frequência por faixa.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "cdc67e32abe234f2a459f106a2fa12a130232ef1838e9e25572f0144c7c4ec93"
+   "questaoSha256": "cdc67e32abe234f2a459f106a2fa12a130232ef1838e9e25572f0144c7c4ec93",
+   "pendencia": "O resumo associa fratura longitudinal da lâmina à lesão dural, mas não compara o maior índice por níveis T10–T12, L2–L4, L4–S1 e C5–C7. Falta a distribuição regional que decide B; associação mecânica geral não prova frequência por faixa."
   },
   "trauma-0549": {
    "tema": "trauma",
@@ -52071,7 +52463,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52086,7 +52478,31 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "3ba26cb1c30d45703fe239bd4bce0a30f83cd514a9185b4e24815a8d0be98703"
+   "questaoSha256": "3ba26cb1c30d45703fe239bd4bce0a30f83cd514a9185b4e24815a8d0be98703",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Quem sofre e por quê"
+      ],
+      "blocos": [
+       "quem-sofre-e-por-que-96692bd3",
+       "quem-sofre-e-por-que-9a823e3c"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "f9d554e0062b99de690b6a3011c54f9fa717d3714c6a0b132fa461698a0b69c3"
+     }
+    ],
+    "questaoSha256": "3ba26cb1c30d45703fe239bd4bce0a30f83cd514a9185b4e24815a8d0be98703",
+    "comentarioSha256": "34d5045fca663f52a6597198e09aae261cd9510533f89e577d71537a7d2536f7"
+   }
   },
   "trauma-0671": {
    "tema": "trauma",
@@ -52096,7 +52512,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52119,7 +52535,33 @@
     "rockwood10-53-colo-femur",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "330c2143dce3ad1d6caa671b9f814ffb4cbe28780501bb1c9d553435d3448585"
+   "questaoSha256": "330c2143dce3ad1d6caa671b9f814ffb4cbe28780501bb1c9d553435d3448585",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Situações especiais",
+       "Classificações"
+      ],
+      "blocos": [
+       "situacoes-especiais-06f2d2fc",
+       "situacoes-especiais-c85c70ac",
+       "classificacoes-ff6abad5"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "202989afd165dd31edda3b707e37339a9f66eca892b5f7b1ea93a3843b269b02"
+     }
+    ],
+    "questaoSha256": "330c2143dce3ad1d6caa671b9f814ffb4cbe28780501bb1c9d553435d3448585",
+    "comentarioSha256": "2426ac7843d3eb2bd6a66ccacfbf7663ad9e6f539fdf167713f357340c9c104a"
+   }
   },
   "trauma-0672": {
    "tema": "trauma",
@@ -53376,7 +53818,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53391,7 +53833,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "5c5455cccab5ece64876b98c296089efb4ca288d41acd5556d13c706e5814dbe"
+   "questaoSha256": "5c5455cccab5ece64876b98c296089efb4ca288d41acd5556d13c706e5814dbe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Imagem: radiografia, tomografia e ressonância"
+      ],
+      "blocos": [
+       "imagem-radiografia-tomografia-e-ressonancia-04b66fd1",
+       "imagem-radiografia-tomografia-e-ressonancia-00da61c5",
+       "imagem-radiografia-tomografia-e-ressonancia-00296df5"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "a0e11ad03ee3ae839e8d6672c365314a3e6fa79c8fb7f79cbafd93ff1a35a177"
+     }
+    ],
+    "questaoSha256": "5c5455cccab5ece64876b98c296089efb4ca288d41acd5556d13c706e5814dbe",
+    "comentarioSha256": "334ee2dec9e10c89a6653f3a2b896d45a95f89cb31723e65352262ab1f2ef5e9"
+   }
   },
   "trauma-0725": {
    "tema": "trauma",
@@ -53400,7 +53867,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53415,7 +53882,32 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "352f418730e824772453b0b7502f2ed85809fee3fa383cf034055b35e6349bfb"
+   "questaoSha256": "352f418730e824772453b0b7502f2ed85809fee3fa383cf034055b35e6349bfb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Regiões, anatomia e lesões associadas"
+      ],
+      "blocos": [
+       "regioes-anatomia-e-lesoes-associadas-f5dd2b97",
+       "regioes-anatomia-e-lesoes-associadas-107ede6e",
+       "regioes-anatomia-e-lesoes-associadas-2166ad9f"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "820efd3d2ed2b47de0fa97407adef7855c77d13b9c535d5c20b2754b3361d171"
+     }
+    ],
+    "questaoSha256": "352f418730e824772453b0b7502f2ed85809fee3fa383cf034055b35e6349bfb",
+    "comentarioSha256": "3200cb2506164beead5442c2625c29c3b737dcb3846130d56ab9d7d593ebcb1b"
+   }
   },
   "trauma-0726": {
    "tema": "trauma",
@@ -56018,8 +56510,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo define A3/A4 e informa que fragmentos costumam sair junto ao platô superior, mas não compara a frequência dos quatro padrões de platôs exigida pela pergunta. Necessária fonte epidemiológica de qual tipo de explosão é mais comum; posição de um fragmento não demonstra o ranking.",
    "temComentario": true,
    "citacoes": [
     {
@@ -56033,7 +56525,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "aca4e509fcbef8c2c67e31b79c37a14c17ac7f7b149d95233802e42bfb28b042"
+   "questaoSha256": "aca4e509fcbef8c2c67e31b79c37a14c17ac7f7b149d95233802e42bfb28b042",
+   "pendencia": "O capítulo define A3/A4 e informa que fragmentos costumam sair junto ao platô superior, mas não compara a frequência dos quatro padrões de platôs exigida pela pergunta. Necessária fonte epidemiológica de qual tipo de explosão é mais comum; posição de um fragmento não demonstra o ranking."
   },
   "trauma-0861": {
    "tema": "trauma",
@@ -59339,14 +59832,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo não define Takata na modificação de Epstein para fratura do limbo vertebral, nem os tipos necessários para julgar todas as alternativas. Necessária classificação primária específica da apófise posterior, sem usar apenas a palavra parede posterior para inferir tipo IV.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ecad55c9bf50ba5a9be4be9b4bcd6d75f0226c9c894034c10053dc46f2ed5816"
+   "questaoSha256": "ecad55c9bf50ba5a9be4be9b4bcd6d75f0226c9c894034c10053dc46f2ed5816",
+   "pendencia": "O resumo não define Takata na modificação de Epstein para fratura do limbo vertebral, nem os tipos necessários para julgar todas as alternativas. Necessária classificação primária específica da apófise posterior, sem usar apenas a palavra parede posterior para inferir tipo IV."
   },
   "trauma-0998": {
    "tema": "trauma",
@@ -62012,8 +62506,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial e com mecanismo não subtipado: o resumo coloca o fulcro da B1 à frente do corpo e o da B2 frequentemente dentro do corpo. O enunciado genérico de flexão-distração não permite uma localização única. Conferir padrão/contexto original antes de atribuir provavel à alternativa A.",
    "temComentario": true,
    "citacoes": [
     {
@@ -62027,7 +62521,8 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "1a12d299d52c4f94ce3b4f86521285feb2ffd65ae257c2396136f33430d0eda5"
+   "questaoSha256": "1a12d299d52c4f94ce3b4f86521285feb2ffd65ae257c2396136f33430d0eda5",
+   "pendencia": "Sem gabarito oficial e com mecanismo não subtipado: o resumo coloca o fulcro da B1 à frente do corpo e o da B2 frequentemente dentro do corpo. O enunciado genérico de flexão-distração não permite uma localização única. Conferir padrão/contexto original antes de atribuir provavel à alternativa A."
   },
   "trauma-1115": {
    "tema": "trauma",
@@ -65878,8 +66373,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -65893,7 +66388,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "ac45e083fad6ac2387605b3a509251487bb89f24b8f083bcdec06529da32c97e"
+   "questaoSha256": "ac45e083fad6ac2387605b3a509251487bb89f24b8f083bcdec06529da32c97e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Classificações: estabilidade, Denis, AO Spine e TLICS",
+       "Flexão-distração e fratura de Chance (tipo B1 e B2)"
+      ],
+      "blocos": [
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "d7f8fbea10b5401920c4da26c023d20e67897f28d83db4baa82c90ceb089faea"
+     }
+    ],
+    "questaoSha256": "ac45e083fad6ac2387605b3a509251487bb89f24b8f083bcdec06529da32c97e",
+    "comentarioSha256": "6c4a3b477951813d05e9d800e3dc677f2757d26e110596c3b03bee39154cc50e"
+   }
   },
   "trauma-1292": {
    "tema": "trauma",

@@ -646,19 +646,45 @@
   "conferido": false
  },
  "trauma-0037": {
-  "conceito": "**A fratura do colo do fêmur.** É uma fratura **intracapsular**, típica do idoso com osteoporose após queda da própria altura. No jovem, exige **alta energia**. O grande problema é a **irrigação** da cabeça femoral, que depende dos vasos retinaculares (ramos da circunflexa femoral medial) que sobem pelo colo e podem ser lesados.\n\n**Os mecanismos de trauma.**\n- **Queda direta** sobre o trocanter maior: o mais comum no idoso.\n- **Rotação externa** do membro com o corpo girando: a cabeça fica presa pelo ligamento iliofemoral e pela cápsula anterior, enquanto o colo gira para trás e bate na **borda posterior do acetábulo**, que funciona como um fulcro. O colo quebra e a cortical **posterior** se **cominui**.\n- Fratura **por estresse** (fadiga ou insuficiência).\n\n**Por que a cominuição posterior importa.**\n- A cominuição **posterior** do colo é muito frequente nas fraturas desviadas (em boa parte delas).\n- Ela tira o **apoio posterior** da redução. Após a fixação, o fragmento tende a **desabar para trás** (retroversão) e a perder a redução.\n- É um fator de risco para **pseudoartrose** e falha da fixação.\n- Os vasos retinaculares posterossuperiores, os mais importantes, ficam junto dessa região.\n\n**As classificações.**\n\n| Classificação | Critério |\n|---|---|\n| **Garden** | Desvio no AP: I incompleta/impactada em valgo; II completa sem desvio; III desvio parcial; IV desvio completo |\n| **Pauwels** | Inclinação do traço em relação à horizontal: I até 30°; II de 30 a 50°; III mais de 50° (vertical, instável, cisalhamento) |\n| AO | Subcapital, transcervical, basocervical |\n\n**O tratamento.**\n- **Jovem**: **redução anatômica** urgente e **fixação** (parafusos canulados ou implantes de ângulo fixo). Nas fraturas verticais (Pauwels III), prefere-se o implante de ângulo fixo. A redução anatômica é o fator mais importante.\n- **Idoso, sem desvio** (Garden I e II): fixação in situ com parafusos.\n- **Idoso, com desvio** (Garden III e IV): **artroplastia** (parcial ou total), pelo alto risco de necrose e pseudoartrose.",
-  "correta": "**Correta: D (cominuição posterior).** No mecanismo em rotação externa, o colo do fêmur gira para trás e bate na borda posterior do acetábulo, que funciona como fulcro. O colo quebra com **cominuição da cortical posterior**, o que dificulta manter a redução e aumenta o risco de pseudoartrose.",
+  "conceito": "Imagine a cabeça femoral contida no acetábulo enquanto o restante do membro roda para fora. A cápsula anterior e o ligamento iliofemoral ficam tensos; o colo roda contra a cabeça presa e pode quebrar com **cominuição posterior**. É essa consequência morfológica que a questão procura.\n\nA fragmentação posterior importa depois do trauma: ela dificulta obter uma redução estável. Assim, o mecanismo não é apenas uma informação sobre a queda; ajuda a prever a perda de suporte que será encontrada na redução e na fixação (resumo do Rockwood, 10ª ed., cap. 53, “Mecanismo, lesões associadas e quadro clínico”).\n\nImpacção em valgo é outra descrição, típica do Garden I; não é a resposta específica sobre a rotação externa. Da mesma forma, “varo” descreve um alinhamento, enquanto “cominuição” descreve a fragmentação de uma região do osso. Não são rótulos intercambiáveis.\n\nLeia no resumo da Biblioteca o mecanismo junto da seção de redução para ligar a força inicial à dificuldade de estabilizar a fratura.",
+  "correta": "**D: cominuição posterior.** O colo roda contra a cabeça contida no acetábulo, e a região posterior pode fragmentar. Essa perda de suporte dificulta a estabilidade da redução.",
   "incorretas": {
-   "A": "O **traço simples** não é o resultado típico do mecanismo em rotação externa, que esmaga a cortical posterior contra o acetábulo.",
-   "B": "A **impacção em varo** não é a consequência característica desse mecanismo.",
-   "C": "A **impacção em valgo** ocorre nas fraturas incompletas e estáveis (Garden I), geralmente por queda direta, e não pelo mecanismo em rotação externa."
+   "A": "**Traço simples não é a consequência característica descrita.** O mecanismo destacado pela fonte produz fragmentação posterior. A resposta não deve apagar essa perda de suporte transformando a lesão em um único traço sem cominuição.",
+   "B": "**Impacção em varo é uma posição dos fragmentos, não a fragmentação pedida.** A pergunta procura o efeito morfológico específico da rotação externa com cabeça presa. O resumo o liga à cominuição posterior.",
+   "C": "**Impacção em valgo remete ao Garden I.** É importante reconhecer esse padrão, mas ele não substitui a consequência posterior do mecanismo descrito. A posição em valgo e a cominuição respondem a perguntas diferentes."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Mecanismo, lesões associadas e quadro clínico; Fratura desviada no jovem; Classificações."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Mecanismo, lesões associadas e quadro clínico",
+      "Fratura desviada no jovem",
+      "Classificações"
+     ],
+     "blocos": [
+      "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+      "fratura-desviada-no-jovem-0dc33d7e",
+      "classificacoes-12519f03"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "27d21cc564ffe44e8cd2f382a43ecd6b320d7fbd3b5a0e3a8a17488dd3d956ef"
+    }
+   ],
+   "questaoSha256": "a8bfe142a8441047ea2a760ddc1433fa5d61912220a5ea63217036f6a2209fbf",
+   "comentarioSha256": "11370951bf827ce1e1245fb5540547ce1cd3142423a34fa1211fefe9cc3d8961"
+  }
  },
  "trauma-0038": {
   "incorretas": {
@@ -1156,18 +1182,43 @@
   "conferido": false
  },
  "trauma-0064": {
+  "conceito": "Há duas formas de olhar a redução do colo que não devem trocar de nome. O **índice de Garden** usa alinhamento das **trabéculas**; o **sinal de Lowell** usa os **contornos corticais**, que devem formar curvas suaves em S na junção cabeça-colo.\n\nO índice tem referência de cerca de **160 graus no AP e 180 no perfil**. O texto relata bons resultados de 155 a 180 em cada incidência; a faixa de **160 a 180 no AP** oferecida pela alternativa C está dentro desse intervalo favorável. Não se deve apresentar o limite de 160 como se fosse a transcrição exata do limite inferior de 155 citado no capítulo (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nOs 128 a 135 graus das outras opções remetem à geometria cervicodiafisária, não ao índice trabecular. Assim, cada alternativa precisa acertar duas coisas: o nome da medida e a ordem de grandeza de seu ângulo.\n\nCompare Garden e Lowell no resumo da Biblioteca para reconhecer as linhas medidas.",
+  "correta": "**C: Garden, com 160–180 graus no AP.** O nome corresponde ao alinhamento trabecular, e a faixa está contida na descrita como favorável pelo texto. A referência anatômica do AP é próxima de 160 graus.",
   "incorretas": {
-   "A": "Lowell avalia contornos, e 128 a 135° é o ângulo cervicodiafisário.",
-   "B": "Os valores de 160 a 180° são do índice de Garden, não de Lowell.",
-   "D": "Garden está certo, mas 128 a 135° é o ângulo cervicodiafisário."
+   "A": "**Erra tanto o método quanto o ângulo.** Lowell avalia curvas corticais em S; não é o índice das trabéculas. A faixa de 128–135 graus também pertence a outra leitura geométrica, não à referência de Garden.",
+   "B": "**O intervalo é compatível, mas o nome foi trocado.** A medida trabecular é de Garden. Lowell não se define por esse par de linhas nem por um intervalo angular no AP.",
+   "D": "**Identifica Garden e usa a geometria errada.** O índice não é o ângulo entre colo e diáfise. A ordem de grandeza esperada no AP é cerca de 160, não 128–135 graus."
   },
-  "conceito": "Depois de reduzir uma fratura do **colo do fêmur**, é preciso conferir se a redução está boa. Dois métodos:\n\n**índice de alinhamento de Garden**: mede o ângulo das **trabéculas de compressão** da cabeça em relação à cortical medial da diáfise;\n\nno **AP**, o normal é **160°**;\n\nno **perfil**, o normal é **180°**;\n\nsão aceitáveis valores entre **160 e 180°** em ambas as incidências; abaixo de 160° no AP indica **varo**; acima de 180°, **valgo** excessivo; fora de 180° no perfil, **antecurvato** ou **retroversão**.\n\n**sinal de Lowell**: avalia os **contornos** da cabeça e do colo, que devem formar uma curva suave em **S ou C invertido** em todas as incidências. Não mede ângulos.\n\n**A regra prática**: uma redução em **valgo leve** é aceitável; **varo** ou **retroversão** aumentam a falha da fixação, a **pseudartrose** e a **necrose**.\n\n**Não confundir**: 128 a 135° é o **ângulo cervicodiafisário** normal, outra medida.\n\n**Na prova**: o índice de **Garden** avalia a redução pelas trabéculas, com valores aceitáveis de **160 a 180°** no AP.",
-  "correta": "O índice de Garden mede o ângulo das trabéculas de compressão, aceitável entre 160 e 180°.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Fratura desviada no jovem",
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "fratura-desviada-no-jovem-38a46d78",
+      "anatomia-aplicada-be6f84e8"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+    }
+   ],
+   "questaoSha256": "265c350722559c0bd735b34f49089c6d1b25e5700b6cb771df4594a28508f737",
+   "comentarioSha256": "48b7232ebdea8bfe6e29ffb5764acf1f63e1bfb760bf3d52045e78a51542ed24"
+  }
  },
  "trauma-0065": {
   "conceito": "Um sítio de alto risco não é necessariamente o que mais fratura. É aquele com maior chance de retardo, pseudartrose, refratura ou consequência grave se a lesão completar. A maioria está no **lado de tensão**, em que a carga abre a fissura; os de baixo risco tendem ao lado de compressão, com evolução mais favorável.\n\nNa tabela do capítulo, a **patela**, pelo lado anterior de tensão, é de alto risco, enquanto a **costela** é de baixo risco. A **base do quinto metatarso** também está entre os de alto risco; a **diáfise da ulna** está no grupo de baixo risco. Portanto, a pergunta exige classificar as duas posições do par (resumo do Rockwood, 10ª ed., cap. 24, “Alto risco e baixo risco”).\n\nO risco anatômico orienta a proteção de carga e o seguimento, mas precisa ser combinado ao estágio da lesão. O resumo da Biblioteca apresenta a tabela de sítios e o algoritmo por grau.",
@@ -4440,19 +4491,43 @@
   "conferido": false
  },
  "trauma-0242": {
-  "conceito": "**A redução da fratura do colo do fêmur.** No jovem, o fator mais importante para o sucesso da fixação é uma **redução anatômica**. Uma redução imperfeita aumenta o risco de **pseudoartrose** e de **necrose avascular**. Por isso, a redução deve ser avaliada com cuidado no **AP** e no **perfil**, antes de fixar.\n\n**O índice de alinhamento de Garden.** Mede o ângulo entre as **trabéculas de compressão** da cabeça femoral (as trabéculas principais, que sobem do calcar para a cabeça) e o **eixo** da diáfise (no AP) ou do colo (no perfil).\n\n| Incidência | Normal | Aceitável |\n|---|---|---|\n| **AP** | Cerca de **160°** (as trabéculas formam 160° com a cortical medial da diáfise) | Entre **155 e 180°** (nem varo, nem valgo excessivo) |\n| **Perfil** | Cerca de **180°** (as trabéculas ficam alinhadas com o eixo do colo) | Entre **155 (ou 160) e 180°** |\n\n**Como interpretar.**\n- No **AP**, um ângulo **menor que 160°** indica **varo**: é a redução **inaceitável** mais perigosa, com alto risco de falha. Um valgo leve (até cerca de 180°) é aceitável, mas o valgo excessivo pode comprometer a irrigação da cabeça.\n- No **perfil**, um ângulo **menor que 180°** indica **angulação** (geralmente com a cabeça em retroversão, pela cominuição posterior). Fora da faixa aceitável, o risco de necrose avascular aumenta muito.\n\n**A regra prática.** O índice de Garden aceitável fica entre **160 e 180°** nas duas incidências (alguns aceitam a partir de 155°). Valores fora dessa faixa indicam que a redução deve ser **refeita**.\n\n**Outros sinais de boa redução.**\n- **Contorno em S** (ou S invertido) contínuo entre a cabeça e o colo, nas duas incidências (sinal de Lowell).\n- Cortical medial alinhada, sem degrau.\n\n**Depois da redução.** A fixação com **três parafusos canulados** em triângulo invertido, paralelos e perto das corticais (o inferior apoiado no calcar, o posterior apoiado na cortical posterior), ou com um implante de ângulo fixo nas fraturas mais verticais (Pauwels III).",
-  "correta": "**Correta: D (160 e 180 graus).** O índice de alinhamento de Garden aceitável para a redução da fratura do colo do fêmur fica entre cerca de **160 e 180°**. No perfil, o normal é cerca de 180°, com as trabéculas alinhadas ao eixo do colo; valores menores indicam angulação e maior risco de necrose e falha.",
+  "conceito": "A incidência lateral da redução do colo deve ser avaliada pelo **índice de Garden**, cuja referência é próxima de **180 graus no perfil**. Entre as alternativas, a faixa **160 a 180** é a compatível com a avaliação de alinhamento descrita.\n\nO índice compara o sistema trabecular compressivo da cabeça com a cortical medial da diáfise. O texto relata bons resultados entre **155 e 180 graus** em cada incidência; o intervalo da alternativa D é uma faixa mais estreita dentro dele. Portanto, não é necessário inventar que o livro usa exatamente 160 como seu limite inferior para reconhecer a resposta (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nO AP tem referência de cerca de 160, enquanto o perfil fica próximo de 180. Confundir os dois planos ou trocar o índice pelo ângulo cervicodiafisário dificulta perceber uma redução ruim. O resumo da Biblioteca apresenta essas medidas junto do sinal de Lowell para comparação.",
+  "correta": "**D: 160 a 180 graus.** É o intervalo oferecido que acompanha a referência lateral próxima de 180 e está contido na faixa favorável de 155–180 citada pelo texto. O perfil deve ser conferido junto do AP.",
   "incorretas": {
-   "A": "Ângulos de **30 a 60°** não correspondem ao índice de Garden, que mede ângulos próximos de 160 a 180°.",
-   "B": "Ângulos de **60 a 90°** também não correspondem ao índice de alinhamento de Garden.",
-   "C": "Ângulos de **120 a 160°** incluem valores **abaixo** de 155 a 160°, que indicam redução inaceitável (varo ou angulação)."
+   "A": "**Trinta a sessenta não corresponde a esse índice de alinhamento.** A medida pedida é obtida entre trabéculas da cabeça e cortical da diáfise e fica em outra ordem de grandeza. Não escolher um intervalo sem identificar as linhas.",
+   "B": "**Sessenta a noventa também está distante da referência lateral.** Não descreve a aproximação de 180 graus esperada na redução. A incidência em perfil não usa um ângulo reto como alvo do índice.",
+   "C": "**Inclui valores muito baixos para o alinhamento descrito.** O limite de 120 fica abaixo da faixa favorável citada. Compartilhar o extremo 160 com outra alternativa não torna adequado todo o intervalo de 120–160."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52",
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Fratura desviada no jovem",
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "fratura-desviada-no-jovem-38a46d78",
+      "anatomia-aplicada-be6f84e8"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+    }
+   ],
+   "questaoSha256": "3dbe2041d71581a62f2cbefbfddcc84f48c4c9b643eceb2c466e13a1bf59ba5b",
+   "comentarioSha256": "a974aea5d3aca6fa8d2b7170a4a435b3f2558b848240b15efbec51d25e078f71"
+  }
  },
  "trauma-0243": {
   "incorretas": {
@@ -4566,15 +4641,44 @@
   }
  },
  "trauma-0260": {
+  "conceito": "A tração antes da cirurgia parece intuitiva: manter a fratura “no lugar” e aliviar dor. O capítulo, porém, relata que a tração cutânea **não melhorou a dor nem a redução**, e que sua associação à **rotação interna reduz a perfusão da cabeça femoral** pela circunflexa femoral medial.\n\nA cabeça depende principalmente dos vasos retinaculares, ramos dessa artéria, que percorrem o colo. A tensão sobre o conjunto capsular e vascular ajuda a entender por que uma posição aparentemente redutora pode prejudicar o fluxo. O resumo também relata prejuízo da drenagem venosa; não é apenas uma questão de alinhar os fragmentos na radiografia (resumo do Rockwood, 10ª ed., cap. 53, “Tração pré-operatória” e “Irrigação da cabeça femoral”).\n\nIsso não deve ser confundido com uma manobra controlada de redução durante a cirurgia. A pergunta é sobre a tração prévia como rotina, cujo benefício não foi demonstrado e cujo efeito vascular exige atenção.\n\nLeia essas seções no resumo da Biblioteca para relacionar posição, cápsula e vasos.",
+  "correta": "**D: reduz a perfusão quando associada à rotação interna.** Esse é o efeito demonstrado descrito no capítulo. O prejuízo vascular, e não um benefício analgésico presumido, fundamenta a resposta.",
   "incorretas": {
-   "A": "A tração não alivia a dor melhor que a analgesia e o bloqueio regional.",
-   "B": "A tração não mantém a redução nem facilita a cirurgia.",
-   "C": "O problema da tração não é mecânico, e sim vascular."
+   "A": "**A intenção de aliviar dor não equivale a benefício demonstrado.** Os ensaios discutidos não mostraram melhora da dor com a tração cutânea. Não usar a aparência intuitiva do tratamento para afirmar eficácia.",
+   "B": "**Manter a redução também não foi benefício comprovado.** A fonte relata ausência de melhora da redução. O problema vascular continua relevante mesmo que a posição pareça alinhada.",
+   "C": "**A justificativa descrita é vascular, não agravamento obrigatório do desvio.** A combinação com rotação interna reduz perfusão e prejudica drenagem. Trocar esse mecanismo por piora do alinhamento não reproduz a evidência apresentada."
   },
-  "conceito": "A **tração pré-operatória** (cutânea ou esquelética) na fratura do **colo do fêmur** foi rotina por décadas, para aliviar a dor e manter a redução. Os estudos derrubaram os dois argumentos e mostraram um prejuízo.\n\n**O que não funciona**: a tração **não alivia a dor** melhor que a analgesia adequada (o **bloqueio** do nervo femoral ou da fáscia ilíaca é muito mais eficaz) e **não ajuda** na redução da cirurgia. Ainda acrescenta lesões de pele e neuropraxia do fibular.\n\n**O prejuízo vascular**: a cabeça do fêmur depende dos **vasos retinaculares** posterossuperiores, ramos da **circunflexa femoral medial**, que sobem colados ao colo. A **hemartrose** da fratura intracapsular já aumenta a pressão dentro da cápsula.\n\n**A tração com o membro em extensão e rotação interna**:\n\n**estira** a cápsula e os retináculos, esticando os vasos sobre o colo;\n\n**aumenta a pressão intracapsular**, comprimindo-os;\n\no resultado é **menos perfusão** da cabeça.\n\n**A posição que diminui a pressão**: leve **flexão**, **rotação externa** e discreta abdução.\n\n**A recomendação atual**: não tracionar; posicionar confortavelmente, fazer bloqueio regional e operar **cedo**, em 24 a 48 horas.\n\n**Na prova**: a tração é **prejudicial**, porque, com a **rotação interna**, reduz a perfusão da cabeça femoral.",
-  "correta": "Com rotação interna, a tração estira os retináculos e aumenta a pressão na cápsula, reduzindo a perfusão da cabeça.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Diagnóstico por imagem; Anatomia aplicada."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Diagnóstico por imagem",
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "diagnostico-por-imagem-63f9a6b1",
+      "anatomia-aplicada-a8c38522",
+      "anatomia-aplicada-06e28c1c"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "3df5fc3d6418b06869f38b704b7d4d656abb0ebf1651fdce1a0505c249ed3b40"
+    }
+   ],
+   "questaoSha256": "7c086e8a64dbe4344d7da414f7b46149de5d6e40bf025c919c4c64443e599f75",
+   "comentarioSha256": "99eb743822adbc4143fffe663b345f2fcc76b4c0876ae99d16a924d165ee6ba7"
+  }
  },
  "trauma-0261": {
   "incorretas": {
@@ -5002,15 +5106,41 @@
   }
  },
  "trauma-0278": {
+  "conceito": "O traço de Pauwels é medido **em relação à horizontal**. Quanto mais vertical, maior o componente de **cisalhamento** e a instabilidade. O **tipo III, acima de 50 graus**, é comum no jovem com trauma de alta energia, correspondendo à alternativa C.\n\nA divisão do capítulo é tipo I até 30 graus, II entre 30 e 50 e III acima de 50. O valor não é apenas descritivo: a verticalização ajuda a explicar falha da fixação e pseudartrose. Ainda assim, a reprodutibilidade é baixa, e os autores desaconselham usar a classificação rotineiramente no idoso, em quem esse padrão vertical é menos típico (resumo do Rockwood, 10ª ed., cap. 53, “Pauwels”).\n\nA pergunta combina geometria, confiabilidade e população. Nenhuma dessas dimensões deve ser substituída por uma regra como “todo traço oblíquo é o pior”. No resumo da Biblioteca, compare o ângulo com a direção da força para entender o cisalhamento.",
+  "correta": "**C: o tipo III é comum entre os mais jovens.** O capítulo o associa ao jovem com trauma de alta energia. Seu traço mais vertical aumenta o cisalhamento e piora o prognóstico mecânico.",
   "incorretas": {
-   "A": "**Concordância baixa.** A rotação do membro e a referência usada mudam o ângulo medido, e a reprodutibilidade é ruim.",
-   "B": "**O vertical é o mais instável.** Quanto mais vertical o traço, maior o cisalhamento; o traço mais horizontal é o mais estável.",
-   "D": "**Referência errada.** O ângulo é medido entre o traço e a horizontal, e não uma linha vertical."
+   "A": "**A concordância é baixa, não alta.** O resumo relata reprodutibilidade limitada e uma concordância de 0,31 num estudo. A utilidade didática do ângulo não elimina a dificuldade de medir e reproduzir a classificação.",
+   "B": "**A maior preocupação é com o traço mais vertical.** O tipo II oblíquo não é o mais instável na comparação. A verticalização do tipo III aumenta o cisalhamento em vez da compressão favorável ao foco.",
+   "D": "**A referência clássica é a horizontal.** Usar uma linha vertical muda o ângulo e pode inverter a categoria. Identificar a linha de referência deve vir antes de aplicar os limites de graus."
   },
-  "conceito": "**A classificação de Pauwels.** Classifica a fratura do colo do fêmur pela **inclinação do traço** em relação à **horizontal**. **Tipo 1**: menos de **30 graus**. **Tipo 2**: de **30 a 50 graus**. **Tipo 3**: mais de **50 graus**, quase vertical. É uma classificação **biomecânica**.\n\n**A lógica das forças.** A carga que desce pelo colo se decompõe em **compressão** e **cisalhamento**. Com traço mais **horizontal**, predomina a compressão, que aperta os fragmentos e favorece a consolidação. Com traço **vertical** (tipo 3), predomina o **cisalhamento**, que faz um fragmento deslizar sobre o outro, desestabiliza a fixação e aumenta a **pseudartrose** e a **necrose**.\n\n**Quem tem o tipo 3.** É típico do **adulto jovem** com trauma de **alta energia** (acidente de moto, queda de altura), em que a carga axial sobre o quadril abduzido produz um traço vertical. No idoso com queda da própria altura, o traço tende a ser mais horizontal e o problema principal é o osso osteoporótico e a classificação de Garden.\n\n**Os limites da classificação.** A **concordância** entre observadores é **baixa**, porque a rotação do membro na radiografia muda o ângulo aparente e porque o próprio Pauwels mediu em relação à horizontal da pelve, e não à perpendicular do eixo do fêmur como alguns fazem. Mesmo assim, é útil para lembrar que o traço vertical exige fixação mais estável.\n\n**O tratamento no jovem.** Urgência relativa, **redução anatômica** (fechada ou aberta) e fixação estável: parafusos canulados com configuração adequada, **DHS** com parafuso antirrotacional, ou **placa de suporte medial** associada nos tipos 3, para neutralizar o cisalhamento. Mesmo assim, necrose e pseudartrose são frequentes.\n\n**Na prova:** Pauwels mede o traço em relação à **horizontal**; tipo **3** (acima de 50 graus) é vertical, instável e típico do **jovem** com alta energia; concordância baixa.",
-  "correta": "**O tipo 3 é comum entre os mais jovens.** O traço vertical, acima de 50 graus, resulta de carga axial de alta energia, típica de adultos jovens.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Classificações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Classificações"
+     ],
+     "blocos": [
+      "classificacoes-0fec7b18"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "295fe647e11ba210f2d9cc7cc7ad365837a8dfcf443e78563e5e430746e76064"
+    }
+   ],
+   "questaoSha256": "f7176f71d22ab9e1a56d3442eff9d42a01c238afa2b1b263d679924e074d21a2",
+   "comentarioSha256": "1755ae853f590af7b0c9910cda0b1f29661799349c007d81150d7e4c58226499"
+  }
  },
  "trauma-0279": {
   "incorretas": {
@@ -5127,15 +5257,46 @@
   "conferido": false
  },
  "trauma-0290": {
+  "conceito": "A vertebroplastia injeta cimento no corpo vertebral. Na discussão do capítulo, seu objetivo é **aliviar dor em pacientes selecionados**; não é uma técnica de correção de deformidade ou de recuperação de altura. A cifoplastia, ao criar antes uma cavidade com balão, tem proposta de recuperar altura, com evidência limitada.\n\nO gabarito oficial acrescenta **“prevenir novo colapso do corpo”**, alternativa D. Esse objetivo não é afirmado como benefício demonstrado no resumo consultado; o texto inclusive discute a possibilidade de refratura. A resposta da banca foi preservada, mas não deve ser convertida numa garantia de que o cimento impede novo colapso (resumo do Rockwood, 10ª ed., cap. 49, “Vertebroplastia e cifoplastia”).\n\nA evidência é controversa: o resumo relata ensaios com procedimento simulado sem vantagem e posição contrária à vertebroplastia de rotina, além de estudos favoráveis em situações selecionadas. A prática dos autores considera a cimentação indicação relativa para dor intensa persistente após tratamento conservador.\n\nLeia essa seção no resumo da Biblioteca para distinguir o efeito analgésico discutido, o objetivo atribuído pela banca e os limites da evidência.",
+  "correta": "**D: prevenir novo colapso, segundo o gabarito oficial.** A letra foi mantida. O capítulo consultado pelo resumo não comprova essa prevenção como objetivo adicional; não deve ser ensinada como benefício garantido da vertebroplastia.",
   "incorretas": {
-   "A": "**Não corrige.** A vertebroplastia não reduz a fratura nem corrige cifose já instalada.",
-   "B": "**Não é o objetivo principal.** Ela evita o colapso daquela vértebra, mas não previne deformidades da coluna como um todo nem novas fraturas.",
-   "C": "**É da cifoplastia.** A tentativa de restaurar altura é o objetivo do balão na cifoplastia, e não da vertebroplastia."
+   "A": "**Corrigir deformidade não é o efeito atribuído à vertebroplastia.** Injetar cimento sem a etapa de balão não equivale a corrigir uma deformidade consolidada. O resumo distingue essa finalidade da discussão do alívio da dor.",
+   "B": "**Prevenir deformidade de toda a coluna é uma afirmação ampla sem esse respaldo.** A cimentação trata um corpo selecionado e a discussão é de analgesia, com evidência controversa. Não se pode inferir proteção geral contra deformidades futuras.",
+   "C": "**Recuperar altura é a proposta do balão da cifoplastia.** Mesmo para ela, o capítulo descreve evidência limitada. Não transferir essa etapa mecânica para a vertebroplastia."
   },
-  "conceito": "**A fratura vertebral osteoporótica.** É a fratura por fragilidade mais comum. Muitas são assintomáticas; as sintomáticas doem por semanas a meses e a maioria melhora com **tratamento conservador**: analgesia, mobilização precoce, órtese em casos selecionados e, sobretudo, **tratamento da osteoporose**, que previne a próxima fratura. Uma fratura vertebral aumenta muito o risco de novas fraturas, vertebrais e de quadril.\n\n**O que é a vertebroplastia.** É a injeção **percutânea de cimento** (polimetilmetacrilato) no corpo vertebral fraturado, sob radioscopia, **sem** criar cavidade e **sem** tentar reduzir. O cimento **estabiliza** o osso trabecular, reduz os micromovimentos que causam dor e **impede novo colapso** da vértebra. Os objetivos são **alívio da dor** e **prevenção do colapso** progressivo.\n\n**Cifoplastia é diferente.** Na **cifoplastia**, antes do cimento, infla-se um **balão** dentro do corpo, criando uma cavidade e tentando **restaurar parte da altura** e corrigir a cifose local; o cimento, mais viscoso, vai para a cavidade, com menos extravasamento. A restauração de altura é modesta e nem sempre se mantém.\n\n**Quando indicar.** Dor intensa persistente após algumas semanas de tratamento clínico, fratura ainda **ativa** (edema no **STIR** da ressonância ou captação na cintilografia), sem retropulsão significativa nem déficit neurológico. Ensaios com procedimento simulado mostraram benefício **menor do que se imaginava**, e a indicação deve ser criteriosa. Complicações: **extravasamento de cimento** (canal, forames, veias com embolia pulmonar) e, possivelmente, fraturas das vértebras adjacentes.\n\n**Na prova:** **vertebroplastia** = dor e **prevenir novo colapso**; **cifoplastia** tenta **restaurar altura**. Nenhuma corrige deformidade estabelecida.",
-  "correta": "**Prevenir novo colapso do corpo vertebral.** O cimento estabiliza o osso trabecular fraturado e impede o achatamento progressivo, além de aliviar a dor, sem manobra de redução.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura vertebral osteoporótica e cimentação."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito oficial D preservado. O resumo do Rockwood, 10ª edição, capítulo 49, discute alívio da dor com vertebroplastia e não sustenta prevenir novo colapso como benefício demonstrado. Também distingue a tentativa de recuperar altura na cifoplastia, de evidência limitada. Não ensinar prevenção garantida de colapso para justificar a letra da banca.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura vertebral osteoporótica e cimentação"
+     ],
+     "blocos": [
+      "fratura-vertebral-osteoporotica-e-cimentacao-26668c15",
+      "fratura-vertebral-osteoporotica-e-cimentacao-7eb145b1",
+      "fratura-vertebral-osteoporotica-e-cimentacao-225ae9f2",
+      "fratura-vertebral-osteoporotica-e-cimentacao-2ddf7fb9",
+      "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "62c841bb9634e35caf9d707526259f38c6ab82229c4735b39937575e3b8a454f"
+    }
+   ],
+   "questaoSha256": "ef6165bcccf14e938dd790d89837e1096755cf9a435290c356cddfe9094163a9",
+   "comentarioSha256": "eb050140085b5187c413dd4eaa6023a11a24401a0588b01d83493f1f23aae367"
+  }
  },
  "trauma-0291": {
   "conceito": "### O que segura o parafuso pedicular\n- **Fator primário:** a ==densidade mineral óssea==. A rosca só segura o osso que existe. Há correlação direta entre a DMO (e as unidades Hounsfield na TC) e a **força de arrancamento**.\n- **Fatores secundários:**\n  - **diâmetro** do parafuso: o mais importante dos fatores de implante, ocupando bem o **istmo** do pedículo;\n  - **comprimento** e **trajetória**: bicortical (sacro), trajetória cortical;\n  - desenho da **rosca**, parafusos **cônicos**;\n  - **triangulação** entre os parafusos.\n\n### No osso osteoporótico\n- **Aumento com cimento** (PMMA), parafusos **fenestrados**.\n- Parafusos de **maior diâmetro**, trajetória **cortical**.\n- **Ganchos** ou fios sublaminares associados.\n- **Mais níveis** instrumentados.\n- **Otimizar o osso antes:** teriparatida ou romosozumabe, vitamina D.\n- Avaliar as **UH na TC** pré-operatória: valores baixos indicam alto risco de soltura.\n\n> **Na prova:** fixação do parafuso depende primariamente da ==densidade óssea==.",
@@ -6196,18 +6357,42 @@
   "conferido": false
  },
  "trauma-0422": {
+  "conceito": "Embora a maioria das fraturas do colo seja isolada, quando existe fratura ou luxação associada o capítulo destaca o **membro superior**, especialmente **rádio distal e úmero proximal**. A associação com o **úmero proximal** é a que acompanha maior mortalidade na comparação apresentada.\n\nA consequência funcional ajuda a entender o achado: a pessoa perde o apoio da perna fraturada e também um braço importante para levantar e usar auxílio de marcha. A fratura de rádio associada é descrita em pacientes mais saudáveis. São associações clínicas, não a garantia de um desfecho para cada indivíduo (resumo do Rockwood, 10ª ed., cap. 53, “Lesões associadas”).\n\nÉ preciso acertar as duas partes da alternativa: localização habitual e associação prognóstica. Escolher o osso mais lembrado sem conferir qual associação pesa na mortalidade leva à troca entre A e B.\n\nNo resumo da Biblioteca, leia o mecanismo da queda junto das lesões associadas e da recuperação funcional.",
+  "correta": "**A: membro superior, rádio distal/úmero proximal, com maior mortalidade na associação ao úmero.** Reproduz os dois componentes do resumo. A perda simultânea de capacidade de apoio ajuda a explicar sua relevância funcional.",
   "incorretas": {
-   "B": "As fraturas associadas estão certas, mas a maior mortalidade ocorre com o úmero.",
-   "C": "As associações típicas são de membros superiores, não da tíbia.",
-   "D": "As fraturas de membros inferiores associadas vêm de alta energia, não da queda do idoso."
+   "B": "**Acerta as regiões e inverte a associação prognóstica.** O capítulo relaciona maior mortalidade ao úmero proximal, enquanto descreve os pacientes com rádio associado como mais saudáveis. Frequência e gravidade não são a mesma pergunta.",
+   "C": "**Troca a distribuição habitual para o membro inferior.** Lesões de alta energia podem ter múltiplas associações, mas o padrão descrito para a fratura do colo é de membros superiores. O par tíbia/diáfise femoral não reproduz essa distribuição nem a comparação prognóstica.",
+   "D": "**Também escolhe outro conjunto de lesões.** A presença possível de fratura da diáfise em um trauma não a torna a associação habitual do perfil discutido. A alternativa correta mantém rádio/úmero e a maior mortalidade ligada ao úmero."
   },
-  "conceito": "A **fratura do colo do fêmur** do idoso vem de uma **queda da própria altura**. Ao cair, o paciente apoia o **membro superior**, que também pode quebrar.\n\n**As associações mais comuns**: fraturas dos **membros superiores**:\n\n**terço distal do rádio**: a mais frequente;\n\n**terço proximal do úmero**.\n\n**A mortalidade**: as fraturas combinadas aumentam a mortalidade em relação à fratura isolada do colo. A associação com o **úmero proximal** tem a **maior mortalidade**: o paciente fica sem conseguir usar o andador ou a muleta com aquele braço, demora mais a andar, e a imobilidade aumenta as complicações clínicas. A fratura do úmero também marca um paciente mais frágil.\n\n**A implicação prática**: a fratura do membro superior pode ser fixada para permitir **apoio** no andador e acelerar a reabilitação.\n\n**As fraturas dos membros inferiores** associadas (diáfise do fêmur, tíbia) vêm de trauma de **alta energia**, não da queda simples do idoso.\n\n**Na prova**: o colo do fêmur se associa mais às fraturas dos membros **superiores** (rádio distal e úmero proximal), com maior mortalidade quando associado ao **úmero**.",
-  "correta": "A queda faz o idoso fraturar o rádio distal ou o úmero proximal, e a associação com o úmero tem a maior mortalidade.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Mecanismo, lesões associadas e quadro clínico."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Mecanismo, lesões associadas e quadro clínico"
+     ],
+     "blocos": [
+      "mecanismo-lesoes-associadas-e-quadro-clinico-298fa5e4",
+      "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "88510b5082d44713a6062acd76b18e2cc2b158a9eda10fa34a6a52403bc2383d"
+    }
+   ],
+   "questaoSha256": "9397489d3220f6b7eca832469e0d9f02195c306c5fba2858099976aa7c91c7ef",
+   "comentarioSha256": "fb170f5e525171890b75012ae557e3019fdd51d009f70cd5c8c0f63d7257a775"
+  }
  },
  "trauma-0423": {
   "incorretas": {
@@ -8135,32 +8320,82 @@
   }
  },
  "trauma-0670": {
+  "conceito": "Depois da primeira fratura de quadril, o risco não desaparece com a consolidação. O capítulo descreve nova fratura em dois anos em cerca de **5% dos homens e 10% das mulheres**; em **mais de 70%** das segundas fraturas, o tipo é o mesmo da primeira. O par pedido no homem é, portanto, 5% e mais de 70%.\n\nEsses números são estimativas do material consultado, não uma previsão individual. A primeira fratura funciona como sinal de alarme porque fragilidade óssea e fatores de queda continuam presentes. Daí a importância de abordar osteoporose e o risco de novas quedas durante a internação, em vez de tratar apenas o episódio atual (resumo do Rockwood, 10ª ed., cap. 53, “A segunda fratura” e “Quem sofre e por quê”).\n\nA alternativa precisa acertar tanto o risco por sexo quanto a repetição do padrão. O valor maior de 10% não deve ser transferido da mulher para o homem, e “mesmo tipo” não significa obrigatoriamente o mesmo lado.\n\nLeia essa seção no resumo da Biblioteca para relacionar o dado à prevenção secundária.",
+  "correta": "**C: 5% nos homens, com mais de 70% do mesmo tipo.** É a combinação descrita para os dois anos após a primeira fratura. O dado reforça prevenção secundária, sem definir o destino de cada paciente.",
   "incorretas": {
-   "A": "**Risco alto demais.** O tipo repetido em mais de 70% está certo, mas o risco nos homens é de cerca de 5%.",
-   "B": "**Os dois dados errados.** O risco é de cerca de 5%, e a maioria das segundas fraturas repete o tipo da primeira.",
-   "D": "**Proporção errada.** O risco de 5% está certo, mas mais de 70% das segundas fraturas são do mesmo tipo."
+   "A": "**Mantém a repetição do tipo, mas usa o risco das mulheres.** Cerca de 10% é o valor apresentado para elas, enquanto a pergunta pede o homem, de cerca de 5%.",
+   "B": "**Troca as duas informações.** Usa 10% para o homem e reduz para menos de 50% uma repetição descrita em mais de 70%. Não basta reconhecer que há risco aumentado; o par quantitativo também importa.",
+   "D": "**Acerta os 5% e erra a repetição do padrão.** A fonte descreve mais de 70% das segundas fraturas como do mesmo tipo, não menos de metade. Esse tipo repetido não deve ser confundido com lateralidade."
   },
-  "conceito": "**Uma fratura sentinela.** A fratura do **quadril** no idoso marca um organismo frágil: osteoporose, **sarcopenia**, déficit de equilíbrio e visão, **hipotensão postural**, medicamentos que causam quedas e, frequentemente, **demência**. Todos esses fatores continuam presentes depois da primeira fratura.\n\n**O risco da segunda fratura.** Nos **dois anos** seguintes, o risco de nova fratura do quadril gira em torno de **5% nos homens** (e um pouco mais nas mulheres, conforme as séries). E, na maioria dos casos (**mais de 70%**), a segunda fratura é do **mesmo tipo** da primeira (colo com colo, transtrocantérica com transtrocantérica), muitas vezes no **quadril contralateral**. Isso reflete a mesma geometria, o mesmo osso e o mesmo padrão de queda.\n\n**O que fazer para prevenir.** A prevenção secundária é parte do tratamento. **Investigar e tratar a osteoporose**: vitamina D, cálcio, e medicação (**bisfosfonato**, como o ácido zoledrônico após a cirurgia, **denosumabe** ou anabólicos como a teriparatida e o romosozumabe nos de muito alto risco). **Prevenir quedas**: fisioterapia de força e equilíbrio, revisão de medicamentos, correção visual, adaptação da casa. Programas de **Fracture Liaison Service** aumentam muito a taxa de tratamento, que ainda é baixa.\n\n**A gravidade do evento.** Mortalidade de **20 a 30%** em um ano, maior em homens. Cerca de um terço volta ao nível funcional prévio. Por isso a abordagem **ortogeriátrica** e a cirurgia em até 48 horas são padrão.\n\n**Na prova:** segunda fratura do quadril em 2 anos: cerca de **5% nos homens**; em **mais de 70%**, do **mesmo tipo** da primeira; tratar a osteoporose e prevenir quedas.",
-  "correta": "**5% nos homens, mais de 70% do mesmo tipo.** O risco de nova fratura em dois anos é de cerca de 5% nos homens, e na maioria das vezes ela repete o tipo da primeira, refletindo fatores de risco que persistem.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Quem sofre e por quê."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Quem sofre e por quê"
+     ],
+     "blocos": [
+      "quem-sofre-e-por-que-96692bd3",
+      "quem-sofre-e-por-que-9a823e3c"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "f9d554e0062b99de690b6a3011c54f9fa717d3714c6a0b132fa461698a0b69c3"
+    }
+   ],
+   "questaoSha256": "3ba26cb1c30d45703fe239bd4bce0a30f83cd514a9185b4e24815a8d0be98703",
+   "comentarioSha256": "34d5045fca663f52a6597198e09aae261cd9510533f89e577d71537a7d2536f7"
+  }
  },
  "trauma-0671": {
+  "conceito": "Na associação entre fratura da diáfise e do colo do mesmo fêmur, a lesão proximal típica é **basocervical, vertical e sem desvio**. A pouca expressão do colo pode fazer a atenção ficar concentrada na diáfise mais evidente e atrasar o diagnóstico.\n\nO capítulo descreve essa combinação no jovem após trauma de alta energia e estima lesão do colo em 2% a 9% das fraturas diafisárias. No passado, até 30% passavam despercebidas. Recomenda tomografia de cortes finos e AP do colo em rotação interna no protocolo diagnóstico, porque o colo tem prioridade pelo risco de necrose e pseudartrose (resumo do Rockwood, 10ª ed., cap. 53, “Colo e diáfise do mesmo lado”).\n\nA pergunta pede o padrão **mais comum**, não todos os padrões possíveis. Uma fratura desviada do colo muda o planejamento e não deve ser presumida apenas pela energia do trauma. O resumo da Biblioteca explica como a busca ativa pelo colo influencia a escolha da fixação.",
+  "correta": "**C: basocervical sem desvio.** É a localização e o alinhamento típicos descritos para a associação. A ausência de desvio ajuda a explicar por que a lesão pode ser perdida na avaliação inicial.",
   "incorretas": {
-   "A": "A fratura subcapital não é o padrão típico associado à diáfise.",
-   "B": "A fratura transcervical é menos comum nessa associação.",
-   "D": "A fratura basocervical costuma estar sem desvio, e por isso passa despercebida."
+   "A": "**Subcapital não é a localização típica dessa associação.** É uma localização comum nas fraturas isoladas do colo, mas o capítulo destaca o padrão basocervical na combinação com diáfise. A população e o mecanismo precisam acompanhar o nome da fratura.",
+   "B": "**Transcervical também não é o padrão mais comum apresentado.** A opção nomeia outro nível do colo. Na associação específica com diáfise, a descrição é basocervical, vertical e frequentemente sem desvio.",
+   "D": "**Acerta a localização e troca o alinhamento habitual.** O colo associado pode estar desviado, o que muda a estratégia, mas o padrão mais comum descrito é sem desvio. Alta energia não obriga que essa fratura proximal esteja deslocada."
   },
-  "conceito": "Na **fratura da diáfise do fêmur**, uma fratura **proximal** do mesmo lado aparece em 3 a 10% dos casos, por trauma de alta energia (joelho contra o painel).\n\n**O padrão mais comum**: a fratura **basocervical sem desvio**, com traço **vertical**. A energia se dissipa na diáfise, e o colo quebra pouco, na base, sem se deslocar.\n\n**O problema**: por estar **sem desvio**, ela **passa despercebida** em até 30% dos casos. A dor da diáfise mascara o quadril, e a radiografia comum não mostra o traço fino.\n\n**A rotina para não perder**:\n\n**TC com cortes finos do colo** em toda fratura diafisária de alta energia;\n\n**radiografia do quadril** no intraoperatório e antes da alta.\n\n**O tratamento**: prioridade para o **colo** (parafusos ou DHS) e haste **retrógrada** ou placa na diáfise; ou haste cefalomedular única quando o colo não tem desvio.\n\n**A necrose**: é menor que na fratura isolada do colo, porque o colo desvia pouco.\n\n**Na prova**: o padrão proximal mais comum associado à fratura da diáfise é a fratura **basocervical sem desvio**.",
-  "correta": "A energia se dissipa na diáfise, e o colo quebra na base, com traço vertical e sem desvio.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 2.40"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Situações especiais; Classificações."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Situações especiais",
+      "Classificações"
+     ],
+     "blocos": [
+      "situacoes-especiais-06f2d2fc",
+      "situacoes-especiais-c85c70ac",
+      "classificacoes-ff6abad5"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "202989afd165dd31edda3b707e37339a9f66eca892b5f7b1ea93a3843b269b02"
+    }
+   ],
+   "questaoSha256": "330c2143dce3ad1d6caa671b9f814ffb4cbe28780501bb1c9d553435d3448585",
+   "comentarioSha256": "2426ac7843d3eb2bd6a66ccacfbf7663ad9e6f539fdf167713f357340c9c104a"
+  }
  },
  "trauma-0672": {
   "incorretas": {
@@ -9042,26 +9277,82 @@
   "conferido": false
  },
  "trauma-0724": {
+  "conceito": "No trauma torácico e lombar, a **tomografia** é o exame inicial de escolha para caracterizar a fratura. Ela mostra corpo, pedículos, lâminas e facetas, além de cominuição e invasão do canal. O capítulo descreve a TC como exame que substituiu a radiografia na triagem do trauma de alta energia.\n\nA ressonância acrescenta informações sobre medula, ligamentos, discos e partes moles. É particularmente útil diante de déficit ou piora neurológica, mas **complementa a TC**, em vez de substituí-la rotineiramente. Para o complexo posterior, sua sensibilidade vem acompanhada de menor especificidade e risco de superestimar a lesão (resumo do Rockwood, 10ª ed., cap. 49, “Imagem: radiografia, tomografia e ressonância”).\n\nA radiografia continua útil, especialmente em pé no acompanhamento e na avaliação do alinhamento sob carga. Ter uma função importante não a torna o exame de escolha para a investigação inicial pedida. No politrauma, o rastreio de toda a coluna também importa porque podem existir fraturas não contíguas.\n\nO resumo da Biblioteca compara o que cada modalidade responde e suas limitações.",
+  "correta": "**B: tomografia.** É a modalidade de escolha descrita para triagem e definição óssea no trauma de alta energia. A pergunta não exclui acrescentar RM quando a avaliação neural ou ligamentar exigir.",
   "incorretas": {
-   "A": "**Complementar.** A ressonância avalia ligamentos, disco e medula, e é indicada em situações específicas.",
-   "C": "**Inicial, mas limitada.** A radiografia mostra o alinhamento, mas subestima as lesões ósseas e o muro posterior.",
-   "D": "**Combinação não padrão.** A ressonância com radiografia não substitui a tomografia na avaliação óssea."
+   "A": "**A ressonância é complementar na abordagem descrita.** Ela avalia melhor estruturas neurais e partes moles, mas não substitui a caracterização óssea inicial por TC. Sua indicação depende da pergunta clínica.",
+   "C": "**A radiografia mantém utilidade, mas deixou de ser a triagem preferida.** Pode avaliar alinhamento e resposta à carga em seguimento. Isso é diferente de mostrar com detalhe a morfologia e a invasão do canal no trauma inicial.",
+   "D": "**Somar radiografia e RM não elimina a necessidade de TC.** São exames com funções próprias, e a combinação não é a escolha inicial recomendada pela fonte para definir a fratura toracolombar."
   },
-  "conceito": "**Três exames, três perguntas.** Na fratura da coluna **torácica e lombar**, a **radiografia**, a **tomografia** e a **ressonância** respondem a coisas diferentes.\n\n**A tomografia é o exame de escolha.** Define com precisão o **traço** de fratura, a integridade do **muro posterior**, a **retropulsão** de fragmentos, a porcentagem de **ocupação do canal**, o **aumento da distância interpedicular** (explosão), a fratura da **lâmina**, as facetas e a **translação**. Permite **classificar** a lesão (AO Spine, TLICS) e **planejar** a fixação. No politraumatizado, a tomografia de corpo inteiro já inclui a coluna com reconstruções, substituindo as radiografias.\n\n**A radiografia.** Dá a visão panorâmica e é útil para medir a **cifose segmentar** e acompanhar o alinhamento, sobretudo com o paciente **em pé** (a radiografia com carga detecta instabilidade que a tomografia deitado não mostra). Mas subestima lesões, especialmente na transição toracolombar, e não avalia bem o muro posterior.\n\n**A ressonância.** Avalia as **partes moles**: o **complexo ligamentar posterior** (hipersinal no STIR), o **disco**, a **medula** (edema, hemorragia, compressão) e hematomas epidurais. É indicada quando há **déficit neurológico**, quando a integridade do complexo ligamentar posterior muda a conduta (explosão com dúvida sobre estabilidade), e para diferenciar fraturas osteoporóticas de metastáticas e agudas de antigas.\n\n**O raciocínio.** Tomografia para o **osso** e para classificar; ressonância para os **ligamentos** e a **medula**; radiografia para o **alinhamento** e o seguimento.\n\n**Na prova:** exame de escolha na fratura toracolombar = **tomografia**; ressonância para déficit neurológico e complexo ligamentar posterior.",
-  "correta": "**Tomografia.** Define o traço, o muro posterior, a retropulsão e a ocupação do canal, permitindo classificar a lesão e planejar a fixação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Imagem: radiografia, tomografia e ressonância."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Imagem: radiografia, tomografia e ressonância"
+     ],
+     "blocos": [
+      "imagem-radiografia-tomografia-e-ressonancia-04b66fd1",
+      "imagem-radiografia-tomografia-e-ressonancia-00da61c5",
+      "imagem-radiografia-tomografia-e-ressonancia-00296df5"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "a0e11ad03ee3ae839e8d6672c365314a3e6fa79c8fb7f79cbafd93ff1a35a177"
+    }
+   ],
+   "questaoSha256": "5c5455cccab5ece64876b98c296089efb4ca288d41acd5556d13c706e5814dbe",
+   "comentarioSha256": "334ee2dec9e10c89a6653f3a2b896d45a95f89cb31723e65352262ab1f2ef5e9"
+  }
  },
  "trauma-0725": {
+  "conceito": "A **transição T11–L2** fica entre a torácica rígida e a lombar móvel. Essa mudança de comportamento mecânico concentra vulnerabilidade ao trauma, numa região que também contém a transição da medula para o cone. É a área indicada pelo resumo como a mais vulnerável a fraturas e com mais déficit neurológico.\n\nA coluna torácica tem a proteção das costelas, facetas coronais e discos finos. Seu canal é estreito, e uma fratura torácica pode ter consequência neural grave mesmo com pouca invasão. Isso não torna essa região a resposta ao padrão regional de maior risco cobrado: o capítulo destaca a transição toracolombar (resumo do Rockwood, 10ª ed., cap. 49, “Regiões, anatomia e lesões associadas”).\n\nEm L3–S1, o canal é mais largo e contém cauda equina; tolera mais compressão que o segmento com medula em canal estreito. A comparação deve separar vulnerabilidade regional, frequência e gravidade de um caso específico: nenhuma região está livre de lesão grave.\n\nLeia as três regiões no resumo da Biblioteca para relacionar rigidez, mobilidade e conteúdo neural.",
+  "correta": "**C: T11–L2.** É o fulcro entre segmentos com propriedades diferentes, destacado pelo resumo como região mais vulnerável e com mais déficit. A anatomia do fim da medula e do cone aumenta a relevância clínica.",
   "incorretas": {
-   "A": "A coluna torácica alta é protegida pelas costelas e fratura menos.",
-   "B": "A coluna torácica média também é protegida e rígida.",
-   "D": "A lombar baixa tem canal largo, com raízes que toleram melhor a compressão."
+   "A": "**A torácica alta é rígida e protegida, embora uma lesão possa ser grave.** A gravidade possível de uma fratura nessa faixa não substitui a distribuição regional destacada pela fonte, que favorece a transição toracolombar.",
+   "B": "**A torácica média também tem proteção costal e canal estreito.** Pode sofrer lesão neural importante, mas não é a faixa apontada como mais vulnerável na comparação. É preciso manter frequência regional e consequência de uma fratura separadas.",
+   "D": "**A lombossacra tem canal mais largo e cauda equina.** A fonte descreve maior tolerância à compressão nessa região. Isso não elimina risco, mas a diferencia da transição T11–L2 pedida."
   },
-  "conceito": "Na coluna torácica e lombar, o risco de **lesão neurológica** muda conforme a região:\n\n**coluna torácica (T1 a T10)**: protegida pelas **costelas** e pelo esterno, que a tornam **rígida**; só quebra com muita energia. Quando lesa, o canal é **estreito** e a lesão costuma ser **completa**;\n\n**transição toracolombar (T11 a L2)**: a **região de maior risco**. É onde a coluna torácica rígida encontra a lombar **móvel**, concentrando as forças: é o local **mais frequente** das fraturas. Ali estão o **cone medular** (em torno de L1) e as raízes da **cauda equina**, com lesões mistas de medula e raízes;\n\n**coluna lombar baixa (L3 a S1)**: o canal é **largo** e só contém raízes da cauda equina, que toleram melhor a compressão; o risco de déficit é **menor**.\n\n**A consequência prática**: em toda fratura da transição toracolombar, fazer exame neurológico completo (incluindo **sensibilidade perineal**, reflexo bulbocavernoso e esfíncter anal) para avaliar o cone e a cauda.\n\n**Na prova**: a região de maior risco de lesão neurológica é a **toracolombar, entre T11 e L2**.",
-  "correta": "A transição toracolombar concentra as fraturas e abriga o cone medular e a cauda equina.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Regiões, anatomia e lesões associadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Regiões, anatomia e lesões associadas"
+     ],
+     "blocos": [
+      "regioes-anatomia-e-lesoes-associadas-f5dd2b97",
+      "regioes-anatomia-e-lesoes-associadas-107ede6e",
+      "regioes-anatomia-e-lesoes-associadas-2166ad9f"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "820efd3d2ed2b47de0fa97407adef7855c77d13b9c535d5c20b2754b3361d171"
+    }
+   ],
+   "questaoSha256": "352f418730e824772453b0b7502f2ed85809fee3fa383cf034055b35e6349bfb",
+   "comentarioSha256": "3200cb2506164beead5442c2625c29c3b737dcb3846130d56ab9d7d593ebcb1b"
+  }
  },
  "trauma-0726": {
   "incorretas": {
@@ -18770,21 +19061,45 @@
   "conferido": false
  },
  "trauma-1291": {
-  "conceito": "A classificação AO Spine exige avaliar separadamente a lesão do corpo vertebral e a falha das estruturas estabilizadoras. A letra A descreve padrões de compressão; B descreve falha de uma banda de tensão; C indica deslocamento ou translação. Uma lesão B pode coexistir com uma fratura A, e ambas devem ser especificadas.\n\nNo corte sagital apresentado, a perda de relação posterior em T12-L1 e o afastamento das estruturas posteriores sustentam lesão da banda de tensão posterior. O gabarito identifica B2, padrão osteoligamentar, em vez da falha puramente transóssea de B1, a fratura de Chance clássica. O corpo de L1 tem padrão de explosão completo, A4, que envolve parede posterior e ambos os platôs, diferentemente do A3, que envolve um platô.\n\nA combinação é, portanto, T12-L1 B2 com L1 A4. B2 nomeia o segmento móvel lesado, enquanto A4 nomeia a vértebra fraturada. As imagens fornecidas são recortes sagitais; o estudo completo em todos os planos e, quando indicado, a ressonância são necessários para avaliação clínica integral. Não se deve inferir status neurológico ou um tratamento específico de uma figura sem esses dados.",
-  "correta": "T12-L1 B2 e L1 A4 reúne a lesão segmentar da banda posterior e a explosão completa do corpo vertebral. Registrar ambas impede que a fratura seja reduzida a uma lesão de compressão com estabilidade presumida. A classificação morfológica deve depois ser complementada por exame neurológico e modificadores quando aplicáveis.",
+  "conceito": "A imagem mostra uma lesão que precisa de **duas descrições**: falha posterior no segmento **T12–L1**, associada à explosão extensa do corpo de **L1**. A notação oficial é **T12–L1 B2; L1 A4**. A avaliação deve separar o trajeto da lesão posterior da extensão da fratura do corpo.\n\nB1 seria um traço inteiramente ósseo atravessando uma única vértebra. Na figura, a abertura posterior é segmentar, no nível T12–L1, compatível com **B2**. O componente do corpo é classificado como **A4**, explosão completa com parede posterior e ambos os platôs comprometidos, e não A3, que envolve um platô (resumo do Rockwood, 10ª ed., cap. 49, “A AO Spine revisada”).\n\nEssa escrita evita chamar tudo apenas de “explosão” e ignorar a banda posterior. A descrição do corpo também permanece importante porque sua destruição pode exigir reconstrução anterior. A figura não autoriza inventar porcentagem de invasão do canal ou estado neurológico: esses dados precisam de avaliação própria.\n\nCompare B1/B2 e A3/A4 no resumo da Biblioteca; são dois eixos de leitura, e cada metade da alternativa precisa estar correta.",
+  "correta": "**D: T12–L1 B2; L1 A4.** Registra a lesão posterior intervertebral e o componente de explosão completa do corpo, como no gabarito oficial. Não é suficiente acertar só a letra B ou só o subtipo A.",
   "incorretas": {
-   "A": "B1 exige uma falha predominantemente transóssea contínua da banda posterior; A3 descreve explosão incompleta com apenas um platô envolvido. A alternativa erra os dois componentes adotados no gabarito. Ela seria adequada para um padrão de Chance ósseo associado a lesão incompleta do corpo, que não é a combinação apresentada.",
-   "B": "A4 corresponde ao componente de explosão completa, mas B1 troca o tipo de falha posterior. A distração não deve ser chamada de B1 apenas porque existe fratura: o trajeto de falha precisa ser puramente transósseo. Quando a lesão envolve elementos capsuloligamentares da banda posterior, a categoria B2 é a pertinente.",
-   "C": "B2 identifica corretamente a falha posterior osteoligamentar. O erro é A3, que restringe a explosão a um platô. A diferença entre A3 e A4 não é apenas a quantidade de fragmentos nem a presença de déficit neurológico; é o envolvimento de um ou ambos os platôs junto à parede posterior."
+   "A": "**Troca os dois componentes.** B1 exigiria trajeto transósseo numa única vértebra; A3 descreve explosão de um platô. O padrão é registrado como B2 segmentar com A4 do corpo.",
+   "B": "**Acerta o componente A4 e erra o trajeto posterior.** A falha não é descrita como uma Chance transóssea de uma única vértebra. A abertura no segmento T12–L1 é o detalhe que leva a B2.",
+   "C": "**B2 está correto, mas A3 reduz a extensão do componente do corpo.** A3 é explosão incompleta de um platô; o gabarito e a classificação do corpo neste caso correspondem à explosão completa A4. A notação precisa conservar os dois componentes."
   },
   "referencias": [
-   "AO Surgery Reference. B2 Posterior tension band disruption. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/b2/definition",
-   "AO Surgery Reference. A3 Incomplete burst fractures. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/a3/definition",
-   "AO Surgery Reference. A4 Complete burst fractures. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/a4",
-   "AO Spine. Thoracolumbar Injury Classification System poster. https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_systems_poster_thoracolumbar.pdf"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS; Flexão-distração e fratura de Chance (tipo B1 e B2)."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS",
+      "Flexão-distração e fratura de Chance (tipo B1 e B2)"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f",
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+      "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "d7f8fbea10b5401920c4da26c023d20e67897f28d83db4baa82c90ceb089faea"
+    }
+   ],
+   "questaoSha256": "ac45e083fad6ac2387605b3a509251487bb89f24b8f083bcdec06529da32c97e",
+   "comentarioSha256": "6c4a3b477951813d05e9d800e3dc677f2757d26e110596c3b03bee39154cc50e"
+  }
  },
  "trauma-1292": {
   "conceito": "A visibilidade de uma fratura depende da orientação do traço em relação ao feixe e da sobreposição óssea. Na fratura vertical ou sagital da patela, o perfil pode superpor os fragmentos, e a projeção anteroposterior pode não demonstrar um traço pouco desviado. A incidência axial permite observar as facetas e o plano sagital de separação.\n\nO estudo da patela costuma combinar anteroposterior, perfil e axial, quando a dor e a condição do paciente permitem posicionamento seguro. A questão privilegia a incidência axial para evitar perder uma fratura vertical. Isso não significa que a fratura seja invisível em todo AP nem que o perfil seja dispensável: ele também avalia deslocamento, altura da patela e aparelho extensor.",

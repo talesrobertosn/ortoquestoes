@@ -2145,16 +2145,44 @@
     "conferido": false
   },
   "quadril-0235": {
+    "conceito": "O índice de Garden da redução não é o ângulo entre o colo e a diáfise. Ele compara o **eixo das trabéculas compressivas da cabeça** com a **cortical medial da diáfise**. A referência é cerca de **160 graus no AP** e **180 graus no perfil**; portanto, a opção correta é 160 graus no AP.\n\nEssa diferença de linhas explica a armadilha dos valores em torno de 125 a 135 graus, próximos da geometria cervicodiafisária, mas não da medida trabecular perguntada. É preciso identificar as duas linhas antes de escolher o número (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nO alinhamento é avaliado em duas incidências porque um AP aceitável não exclui deformidade no perfil. O capítulo também descreve o sinal de Lowell: curvas corticais suaves em S na junção cabeça-colo, e não outro nome para o índice trabecular. A finalidade é reconhecer uma redução inadequada antes de fixá-la.\n\nLeia essa seção no resumo da Biblioteca comparando os desenhos das medidas.",
+    "correta": "**C: 160 graus na incidência em AP.** É o valor de referência do índice trabecular no AP. Deve ser interpretado junto do perfil, cuja referência é cerca de 180 graus.",
     "incorretas": {
-      "A": "135° corresponde ao ângulo entre o colo e o corpo do fêmur, e não ao índice de Garden.",
-      "B": "125° também é um valor do ângulo entre o colo e o corpo do fêmur, e não do índice de Garden.",
-      "D": "No perfil, o alinhamento normal é praticamente reto, cerca de 180°, e não 135°.",
-      "E": "No perfil, o normal é cerca de 180°; 150° indicaria uma angulação importante."
+      "A": "**Cento e trinta e cinco se aproxima de outra geometria.** O ângulo cervicodiafisário não usa as mesmas linhas do índice de Garden. Confundir o eixo do colo com as trabéculas da cabeça leva a um número inadequado para a medida pedida.",
+      "B": "**Cento e vinte e cinco não é a referência trabecular do AP.** A pergunta não mede a inclinação do colo em relação à diáfise. As linhas descritas são as do índice de redução, próximo de 160 graus.",
+      "D": "**No perfil a referência é próxima de 180, não 135 graus.** A opção erra o número e não corresponde à incidência que fornece a alternativa correta. A avaliação lateral não pode ser substituída pelo ângulo do AP.",
+      "E": "**Cento e cinquenta no perfil não reproduz a referência anatômica.** O perfil é avaliado perto de 180 graus; o texto relata bons resultados na faixa de 155 a 180. O valor oferecido fica abaixo dela."
     },
-    "conceito": "Depois de fixar uma **fratura desviada do colo do fêmur**, o cirurgião precisa saber se a redução ficou boa. **Garden** criou um índice para isso, usando as **trabéculas** da cabeça do fêmur, que são linhas de osso visíveis na radiografia.\n\n**O índice de alinhamento de Garden** é o ângulo entre:\n\no **eixo das trabéculas compressivas** da cabeça (as que recebem a carga, do lado de dentro);\n\ne a **cortical medial** do corpo do fêmur (a parede de dentro do osso).\n\n**Valores normais**:\n\nna radiografia de **frente** (AP): cerca de **160°**;\n\nna radiografia de **perfil**: cerca de **180°**, ou seja, praticamente uma linha reta.\n\n**Interpretação**:\n\nno AP, um ângulo **menor que cerca de 155° a 160°** indica que a cabeça ficou em **varo** (inclinada para baixo), o que aumenta o risco de a fixação falhar;\n\nno perfil, um desvio importante (cabeça inclinada para a frente ou para trás) aumenta o risco de necrose e de falta de consolidação.\n\n**Não confunda** com a **classificação de Garden** das fraturas do colo (tipos I a IV, conforme o desvio) e com o **ângulo cervicodiafisário** (o ângulo entre o colo e o corpo do fêmur), que normalmente fica entre 125° e 135°.\n\n**Na prova**: o índice de Garden normal é de cerca de 160° no AP e 180° no perfil.",
-    "correta": "160 graus na incidência em AP. É o valor normal do índice de Garden na radiografia de frente; ângulos menores indicam redução em varo.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no jovem",
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "fratura-desviada-no-jovem-38a46d78",
+            "anatomia-aplicada-be6f84e8"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+        }
+      ],
+      "questaoSha256": "a82590fb6f04523ada7d8d36876b3880a53ffabb543b511a399582387fad614a",
+      "comentarioSha256": "c065e270a30e890685563dbd6eaf46ba183ffb9b1314045449a4dedf96019a3c"
+    }
   },
   "quadril-0236": {
     "incorretas": {
@@ -3493,18 +3521,43 @@
     "conferido": false
   },
   "quadril-0331": {
+    "conceito": "O par é **160 graus no AP e 180 graus no perfil**. No índice de alinhamento de Garden, as trabéculas compressivas da cabeça são comparadas com a cortical medial da diáfise. A pergunta exige manter o valor ligado à incidência correta.\n\nO AP e o perfil mostram planos diferentes. Uma boa aparência em apenas um deles pode esconder inclinação no outro, por isso não basta repetir o mesmo número ou inverter a ordem. O capítulo relata bons resultados entre 155 e 180 graus em cada incidência, mas os valores de referência anatômica continuam sendo aproximadamente 160 e 180 (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nO índice também não se confunde com o ângulo cervicodiafisário ou com o sinal de Lowell, que observa curvas corticais suaves em S. A escolha correta depende de reconhecer o que está sendo medido, além de memorizar dois números.\n\nConsulte o resumo da Biblioteca para revisar o índice junto da avaliação da qualidade da redução.",
+    "correta": "**D: 160 e 180 graus.** A ordem corresponde a AP e perfil. É o par de referência descrito pelo resumo para o alinhamento trabecular.",
     "incorretas": {
-      "A": "Os valores estão invertidos: 180° é o alvo do perfil, e no AP o ângulo normal é 160°.",
-      "B": "Cento e quarenta graus no AP indicaria varo importante, e 150° no perfil indicaria angulação inaceitável; nenhum dos dois é o valor de referência.",
-      "C": "São valores fora do alinhamento desejado: o AP deveria estar em torno de 160° e o perfil em 180°."
+      "A": "**Inverte os valores entre as incidências.** Cento e oitenta é a referência lateral, não a do AP; 160 é a do AP. As medidas só fazem sentido ligadas ao plano em que foram obtidas.",
+      "B": "**Os dois valores estão abaixo das referências e da faixa favorável citada.** Cento e quarenta e 150 não reproduzem 160/180. Uma redução não deve ser considerada adequada apenas porque há algum ângulo entre as linhas.",
+      "C": "**Também reduz os valores e troca a lógica do perfil.** A referência lateral é a maior do par, próxima de 180. Apresentar 150 no AP e 140 no perfil não corresponde ao alinhamento descrito."
     },
-    "conceito": "Na **fratura do colo do fêmur** tratada com fixação, a qualidade da redução é decisiva. Uma redução ruim aumenta muito o risco de **pseudartrose** (a fratura não consolida) e de **necrose avascular da cabeça femoral**.\n\n**O índice de alinhamento de Garden** avalia essa redução usando as **trabéculas de compressão**, linhas de osso mais denso que sobem da parte medial do colo para a cabeça, e que são visíveis na radiografia.\n\n**No AP**: mede-se o ângulo entre as trabéculas de compressão e a **cortical medial da diáfise** femoral. O normal é cerca de **160°**.\n\n**No perfil**: mede-se o ângulo entre o eixo da cabeça e o eixo do colo, que deve formar praticamente uma linha reta, **180°**.\n\nUma redução é considerada aceitável quando os dois ângulos ficam próximos desses valores. Garden descreveu que valores muito distantes, como abaixo de 155° ou acima de 180°, se associam a mais complicações. Ângulo menor no AP indica **varo**, a deformidade de pior prognóstico.\n\n**Não confundir com a classificação de Garden** das fraturas do colo, que vai de I a IV conforme o desvio: I e II sem desvio, III e IV desviadas.\n\n**Na prova**: índice de alinhamento de Garden é 160° no AP e 180° no perfil.",
-    "correta": "O alinhamento normal é de 160° no AP, entre trabéculas e cortical medial, e de 180° no perfil, com cabeça e colo alinhados.",
     "referencias": [
-      "Rockwood and Wilkins’s fractures in Adults, 6th Ed., p. 1773 (referência indicada na prova TARO 2013, questão 6)"
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no jovem",
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "fratura-desviada-no-jovem-38a46d78",
+            "anatomia-aplicada-be6f84e8"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+        }
+      ],
+      "questaoSha256": "c2bf6c34320564fb077ae0bbac5abb9ee3fcf1192cce0cc0ded0a49b2ed77a00",
+      "comentarioSha256": "3da02d2dddfacbac3ffe5a91a6c33323b84845429058ffe0a98f5520a68616e0"
+    }
   },
   "quadril-0332": {
     "conceito": "No colo femoral, um traço superior e outro inferior não têm o mesmo comportamento sob carga. O lado **superior** é tracionado, de modo que a fissura tende a abrir a cada passo. O lado **inferior** é comprimido, com tendência ao fechamento e maior estabilidade.\n\nEssa diferença explica a indicação precoce de **fixação para a fratura superior, do lado de tensão**. A progressão para fratura completa e desviada pode resultar em pseudartrose e osteonecrose. Para a compressão inferior, o capítulo descreve carga restrita por pelo menos seis semanas e radiografias semanais, não a mesma conduta automática (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nO ponto decisivo é proteger a estrutura antes de uma complicação grave, não esperar que a dor se torne incapacitante. O resumo da Biblioteca apresenta a mecânica e o quadro de tratamento.",
