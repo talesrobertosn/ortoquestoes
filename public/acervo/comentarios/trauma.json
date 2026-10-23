@@ -4010,18 +4010,43 @@
   }
  },
  "trauma-0232": {
+  "conceito": "A queda sobre a mão transmite carga ao úmero, mas a posição do ombro muda o padrão que essa carga produz. Para a fratura em **valgo**, o capítulo descreve a mão espalmada com ombro em **flexão, abdução e rotação interna**. A cabeça gira sobre o calcar inferomedial.\n\nÉ uma combinação: acertar duas posições e trocar a terceira não reproduz o mecanismo. O contraste é a queda direta sobre o ombro, em que a cabeça vai para varo e gira para trás pela retroversão natural (resumo do Rockwood, 10ª ed., cap. 36, “Mecanismo de trauma”).\n\nO mecanismo ajuda a antecipar a deformidade, mas a imagem deve confirmar o padrão e os fragmentos envolvidos. O resumo da Biblioteca mostra essa relação entre modo de carga e direção do desvio.",
+  "correta": "**B: flexão, abdução e rotação interna.** É a combinação descrita para o valgo na queda sobre a mão. A cabeça gira apoiada no calcar inferomedial, em contraste com o varo do impacto direto no ombro.",
   "incorretas": {
-   "A": "A adução com rotação externa leva a cabeça para o varo.",
-   "C": "A extensão com adução é o mecanismo do varo.",
-   "D": "A abdução e a rotação interna estão certas, mas o ombro está em flexão."
+   "A": "**Mantém flexão e inverte as outras duas posições.** O mecanismo descrito usa abdução e rotação interna, não adução e rotação externa. A forma de transmitir a carga depende da combinação inteira.",
+   "C": "**Troca todos os componentes da posição.** Extensão, adução e rotação externa não correspondem ao mecanismo de valgo apresentado no capítulo. Não basta a queda ter ocorrido sobre a mão para assumir qualquer posição do ombro.",
+   "D": "**A abdução e a rotação interna estão corretas, mas falta a flexão.** A alternativa substitui flexão por extensão e, assim, não reproduz o vetor descrito para o padrão pedido."
   },
-  "conceito": "A **fratura do úmero proximal impactada em valgo** tem um mecanismo e um prognóstico próprios.\n\n**O mecanismo**: queda com a **mão espalmada** e o ombro em **flexão**, **abdução** e **rotação interna**. A carga sobe pelo braço, a **diáfise é empurrada para dentro da cabeça**, e a cabeça **inclina em valgo** (para cima), enquanto os tubérculos se afastam para os lados.\n\n**O contraste com o varo**: com o ombro em **adução**, a cabeça tomba em **varo**, para baixo e para dentro.\n\n**O detalhe que muda o prognóstico**: na fratura em valgo impactada, a **dobradiça medial** costuma ficar **preservada**. Os vasos posteromediais continuam presos, e a **necrose** é bem menor do que a imagem sugere.\n\n**O tratamento**: muitas são tratadas sem cirurgia; as desviadas podem ser **elevadas** (desimpactadas) e fixadas, com os tubérculos reposicionados.\n\n**A irrigação da cabeça**: principalmente pela **circunflexa umeral posterior**, com a anterior entrando pelo sulco bicipital (ramo de Laing).\n\n**Na prova**: a fratura em valgo vem de queda com o ombro em **flexão, abdução e rotação interna**.",
-  "correta": "Com o ombro fletido, abduzido e em rotação interna, a carga axial empurra a diáfise para dentro da cabeça, que inclina em valgo.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 35"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Mecanismo de trauma. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Mecanismo de trauma"
+     ],
+     "blocos": [
+      "mecanismo-de-trauma-b1e4723e",
+      "mecanismo-de-trauma-53c08b2e",
+      "mecanismo-de-trauma-9ac9b553"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "865abae720708c461fc661af9d9da2c8739ec2b215a6cf79bcf4a56ddfc6374a"
+    }
+   ],
+   "questaoSha256": "b88628788ce80195c578dd02758dc39d35206a1eb212a14822b428393d60ef2f",
+   "comentarioSha256": "d920ecc270d14f018b9c7575b2017d4b864316ad42baaa4e9766ee38a300edf0"
+  }
  },
  "trauma-0234": {
   "incorretas": {
@@ -4377,15 +4402,48 @@
   }
  },
  "trauma-0265": {
+  "conceito": "A ruptura da conexão medial entre cabeça e diáfise, ao nível do **calcar**, é um sinal desfavorável para a perfusão. Os ramos posteromediais entram por essa região; perder a dobradiça medial pode comprometer essa continuidade. É por esse raciocínio que o gabarito aponta a alternativa D.\n\nNos critérios de Hertel, também são preditores independentes a extensão metafisária ligada à cabeça de **8 mm ou menos** e o traço no colo anatômico. A questão, porém, usa a expressão ampla “maior risco de necrose”. Aqui há uma ressalva: **o padrão impactado em valgo também aparece associado a maior necrose em dados apresentados pelo capítulo**, sobretudo quando comparado a colo cirúrgico e varo posteromedial. Portanto, não é adequado ensinar que valgo jamais aumenta o risco só para excluir a alternativa A (resumo do Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel” e “Quando a necrose aparece”).\n\nA resposta oficial D é preservada e corresponde ao preditor medial clássico. Também se deve separar isquemia na cirurgia de necrose tardia, pois a correlação entre elas é imperfeita. O resumo da Biblioteca explica a diferença entre o critério de perfusão e o risco associado ao padrão.",
+  "correta": "**D: há ruptura medial entre cabeça e diáfise ao nível do calcar.** É o achado da dobradiça medial desfavorável de Hertel. Mantemos o gabarito oficial, com ressalva sobre o enunciado amplo e a associação do valgo a necrose em séries do capítulo.",
   "incorretas": {
-   "A": "**Risco baixo.** A fratura impactada em valgo preserva o periósteo medial e tem baixa taxa de necrose.",
-   "B": "**Não afeta a cabeça.** A fratura do tubérculo menor isolada não compromete a vascularização da cabeça.",
-   "C": "**É fator protetor.** Uma extensão metafisária maior que 8 mm mantém a irrigação; o risco é com menos de 8 mm."
+   "A": "**Não pode ser descartada como afirmação clínica universalmente falsa.** Os autores apresentam maior frequência de necrose em padrões em valgo frente a colo cirúrgico e varo posteromedial. Ela não é o preditor medial de Hertel escolhido pela banca, mas o enunciado amplo permite essa ressalva; a divergência está no alerta.",
+   "B": "**O tubérculo menor isolado não define a perfusão da cabeça.** A questão exige avaliar as conexões da cabeça com a metáfise e a dobradiça medial. A simples presença de fratura desse tubérculo não equivale ao preditor de isquemia descrito.",
+   "C": "**O sentido do comprimento foi invertido.** O critério desfavorável é extensão metafisária de 8 mm ou menos. Uma extensão maior, especialmente com dobradiça íntegra, sugere melhor preservação da conexão posteromedial, sem garantir o desfecho em todo paciente."
   },
-  "conceito": "**A irrigação da cabeça do úmero.** Vem das **artérias circunflexas**. Por muito tempo se ensinou que a principal era a **circunflexa anterior**, pelo seu ramo ascendente, a **artéria arqueada de Laing**, que sobe pelo sulco do bíceps e entra na cabeça. Estudos mais recentes mostraram que a **circunflexa posterior** responde por cerca de dois terços do fluxo, entrando pela região posteromedial, junto ao **calcar**. Por isso o que mais importa é a integridade da **dobradiça medial**.\n\n**Os critérios de Hertel.** Hertel estudou fraturas do úmero proximal e mostrou os preditores de **isquemia** da cabeça. Os mais fortes: **extensão metafisária posteromedial curta**, com **menos de 8 mm** de calcar preso ao fragmento da cabeça, e **ruptura da dobradiça medial**, com desvio acima de **2 mm** entre a cabeça e a diáfise no calcar. Com os dois, a chance de isquemia passa de 90%. Fraturas do **colo anatômico** também são de alto risco. Mas isquemia inicial nem sempre vira necrose: muitas cabeças revascularizam.\n\n**Os padrões de menor risco.** A fratura **impactada em valgo** mantém o periósteo medial íntegro, funcionando como ponte vascular, e tem necrose baixa, apesar de ser em quatro partes na classificação de Neer. Fraturas do **tubérculo menor** isoladas não comprometem a vascularização da cabeça.\n\n**Como isso muda o tratamento.** Na fratura com dobradiça medial rompida e calcar curto em paciente jovem, a **redução anatômica e fixação** rápidas ainda são tentadas, restaurando o suporte medial (parafuso de calcar, enxerto de fíbula intramedular). No idoso com alto risco de necrose e osso ruim, a **artroplastia reversa** é frequentemente preferida. A **classificação de Neer** (partes desviadas acima de 1 cm ou 45 graus) segue usada, mas os critérios de Hertel dão o risco biológico.\n\n**Na prova:** maior risco de necrose = **calcar menor que 8 mm** e **dobradiça medial rompida** (Hertel); valgo impactado tem risco baixo.",
-  "correta": "**Ruptura medial entre cabeça e diáfise no calcar.** A perda da dobradiça medial rompe o periósteo posteromedial, a última via de perfusão da cabeça, e é o preditor mais forte de isquemia junto com o calcar curto.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito oficial D preservado: a ruptura da dobradiça medial é preditor independente de isquemia segundo Hertel. O enunciado usa “maior risco de necrose” de modo amplo, e a alternativa A não é universalmente falsa: o capítulo apresenta maior necrose no padrão em valgo do que em colo cirúrgico e varo posteromedial. Além disso, isquemia intraoperatória não equivale a necrose tardia inevitável. A resposta da banca e a ressalva bibliográfica devem ser lidas juntas.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-947a14e4"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "fd458d0084cfeaa1a63233f5a7fb4223789cf7aee3a813c101af95b5c6bd7b2c"
+    }
+   ],
+   "questaoSha256": "63a59d99a1c80c0b27d604a6455fecb68322f1dae7b1ba9f86c108cae7dde827",
+   "comentarioSha256": "9b97b03ae8b6b47ebec767e8ff3309466a58626434ca121c687807237d434cec"
+  }
  },
  "trauma-0266": {
   "incorretas": {
@@ -5383,15 +5441,47 @@
   }
  },
  "trauma-0329": {
+  "conceito": "O caso tem **dois déficits ativos** após necrose do tubérculo maior: elevação e rotação externa. A perda da inserção funcional do manguito posterossuperior não pode ser tratada como se apenas a superfície da cabeça estivesse comprometida.\n\nA reversa fornece ao deltoide um fulcro para recuperar elevação. Contudo, a rotação externa pode continuar insuficiente. Para a perda combinada, o esquema do capítulo associa **artroplastia reversa e transferência do grande dorsal**. Para perda isolada de rotação externa, descreve transferência do trapézio inferior; para perda isolada de elevação, reversa (resumo do Rockwood, 10ª ed., cap. 36, “Necrose dos tubérculos”).\n\nO raciocínio é conferir qual movimento cada operação pretende recuperar, sem presumir que a melhora da elevação resolve toda a função do ombro. O resumo da Biblioteca organiza esses três cenários.",
+  "correta": "**D: artroplastia reversa associada à transferência do grande dorsal.** A associação responde aos dois déficits: o fulcro da reversa favorece elevação, e a transferência acrescenta a solução rotacional prevista para esse cenário.",
   "incorretas": {
-   "A": "A hemiartroplastia depende de manguito e tubérculos funcionantes.",
-   "B": "A reversa isolada recupera a elevação, mas não a rotação lateral.",
-   "C": "A transferência do trapézio inferior, sozinha, não recupera a elevação."
+   "A": "**A hemiartroplastia depende dos tubérculos e do manguito.** Justamente esse sistema foi comprometido pela necrose. Substituir apenas a cabeça não oferece a solução funcional combinada descrita para o caso.",
+   "B": "**A reversa isolada atende melhor ao componente de elevação.** O capítulo a separa da operação combinada porque a rotação externa pode continuar perdida. O enunciado exige tratar ambos os movimentos.",
+   "C": "**Trapézio inferior isolado é a opção do déficit rotacional isolado.** Não corresponde ao esquema apresentado para quem também perdeu elevação. A solução combinada indicada usa reversa e grande dorsal."
   },
-  "conceito": "Depois da fratura do **úmero proximal**, a **osteonecrose** ou a **reabsorção do tubérculo maior** destrói a inserção do **manguito posterossuperior** (supraespinal, infraespinal e redondo menor). O paciente perde a **elevação** e a **rotação lateral** ativas.\n\n**Por que a hemiartroplastia não resolve**: ela depende de um manguito funcionando e de tubérculos que consolidem; sem eles, o ombro continua sem elevar.\n\n**A artroplastia reversa**: inverte as superfícies e aproveita o **deltoide** para elevar o braço, mesmo sem manguito. Resolve a **elevação**.\n\n**O problema que sobra**: a **rotação lateral**. O deltoide não roda o braço para fora; sem o infraespinal e o redondo menor, o paciente não consegue levar a mão à boca ou à cabeça (sinal da corneta).\n\n**A solução**: associar à reversa a **transferência do grande dorsal** (às vezes com o redondo maior), que passa a fazer a **rotação lateral**.\n\n**A transferência do trapézio inferior**: devolve a rotação lateral em lesões irreparáveis do manguito, mas **sem** reversa não recupera a elevação nesse cenário.\n\n**Na prova**: o procedimento de salvação é a **artroplastia reversa associada à transferência do grande dorsal**.",
-  "correta": "A reversa recupera a elevação pelo deltoide, e a transferência do grande dorsal devolve a rotação lateral.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Complicações: rigidez, viciosa, pseudartrose e tubérculos; Artroplastia: hemiartroplastia e reversa. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+      "Artroplastia: hemiartroplastia e reversa"
+     ],
+     "blocos": [
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b0a02323",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b8ca3f39",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-2d0cf667",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-5e438d7e",
+      "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+      "artroplastia-hemiartroplastia-e-reversa-260304ad"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "fe3c16985334726fd28a2cf134d00a23e9d8fefdadf7e1b185eb823b58a20da9"
+    }
+   ],
+   "questaoSha256": "6cc4ea15b51b81d5e264a26a1b28a84b907ff8da339b2b07f3277ac284e1560b",
+   "comentarioSha256": "a4ee46d6e4ce18fb831b6708e754dce8d164d3e0aa0093922eba9d7fd33b36d1"
+  }
  },
  "trauma-0331": {
   "incorretas": {
@@ -6258,15 +6348,51 @@
   "conferido": false
  },
  "trauma-0445": {
+  "conceito": "A placa bloqueada pode manter seus parafusos firmemente presos e, ainda assim, a ponta deles alcançar a articulação. A **penetração intra-articular** é a complicação mais frequente destacada nessa fixação.\n\nHá dois caminhos: parafuso longo desde a cirurgia, produzindo perfuração primária, ou colapso posterior da cabeça sobre um parafuso que não recua na placa, produzindo perfuração secundária. A relação entre osso e implante pode, portanto, piorar mesmo sem soltura da conexão metálica (resumo do Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nIsso explica a importância de comprimento adequado, radioscopia em vários planos e suporte medial. A rigidez e as lesões neurológicas exigem avaliação, mas não devem ser confundidas com esse mecanismo. O resumo da Biblioteca liga a complicação à técnica e ao calcar.",
+  "correta": "**D: penetração dos parafusos no espaço intra-articular.** A ponta atravessa a superfície articular por comprimento inicial excessivo ou por colapso da cabeça. É o desfecho mais frequente descrito entre as opções para a placa bloqueada.",
   "incorretas": {
-   "A": "**Frequente, mas menos.** A rigidez ocorre, mas as séries apontam a penetração dos parafusos como a complicação mais comum.",
-   "B": "**Menos frequente.** O axilar pode ser lesado, sobretudo em vias que dividem o deltoide, mas é complicação menos comum.",
-   "C": "**Direção errada.** A consolidação viciosa típica após a placa é em varo, e não em valgo."
+   "A": "**Rigidez é uma limitação do movimento, com várias causas.** Contratura capsular é a principal na rigidez refratária. A pergunta restringe a comparação à complicação mais frequente da placa bloqueada, em que se destaca a penetração.",
+   "B": "**O axilar é uma preocupação anatômica e neurológica.** Pode ser lesionado pelo trauma ou colocado em risco na exposição. Não é, porém, a complicação que ocupa o primeiro lugar dessa fixação no capítulo.",
+   "C": "**Consolidação em valgo é uma deformidade de união.** Ela pode alterar mecânica e movimento. A perfuração é outro problema: a relação da ponta metálica com a superfície da cabeça, que pode falhar antes de qualquer consolidação viciosa."
   },
-  "conceito": "**Por que a placa bloqueada falha pelo parafuso.** A placa bloqueada do úmero proximal forma um construto de **ângulo fixo**: os parafusos travam na placa e mantêm a posição, mesmo em osso osteoporótico. O problema é que a **fratura colapsa** e o implante não. Com reabsorção no foco, perda do **suporte medial** ou necrose parcial, a cabeça desce sobre os parafusos fixos, e as pontas **atravessam a cartilagem**: é a **penetração intra-articular**, a complicação mais frequente desse método.\n\n**Primária e secundária.** A penetração **primária** acontece na cirurgia, por parafuso longo demais ou mal avaliado na radioscopia (a cabeça é esférica e um parafuso pode parecer dentro numa incidência e estar fora em outra). A **secundária** aparece semanas depois, com o colapso em **varo**. Ambas lesam a glenoide e exigem retirada ou troca dos parafusos.\n\n**Como prevenir.** Reduzir o **calcar** e evitar varo; usar **parafusos de calcar** inferomediais; considerar **enxerto de fíbula** intramedular na cominuição medial; parafusos **aquém do osso subcondral** (5 a 8 mm); radioscopia com rotação do braço em vários ângulos; cimento nas pontas dos parafusos em alguns sistemas.\n\n**As outras complicações.** **Rigidez** (frequente, mas muitas vezes aceitável), **lesão do nervo axilar** (sobretudo na via que divide o deltoide), **necrose avascular**, consolidação viciosa (geralmente em **varo**, e não em valgo), impacto subacromial da placa alta e infecção. No idoso com fratura de três ou quatro partes e osso ruim, a **artroplastia reversa** tem resultados mais previsíveis.\n\n**Na prova:** complicação mais frequente da **placa bloqueada** no úmero proximal = **parafuso intra-articular**, primário ou por colapso em varo.",
-  "correta": "**Penetração dos parafusos no espaço intra-articular.** O construto de ângulo fixo não acompanha o colapso da cabeça, e as pontas dos parafusos emergem pela cartilagem.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Placa bloqueada: o parafuso, o calcar e a técnica; Complicações: rigidez, viciosa, pseudartrose e tubérculos; Lesões associadas: nervos, artéria, manguito e outras fraturas. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Placa bloqueada: o parafuso, o calcar e a técnica",
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos",
+      "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+     ],
+     "blocos": [
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-548174c0",
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-01451d2b",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-ef9a3554"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "7550a47a39f8015f485c9fbd2b4e173d9c806d7d9066bbe26279e0a2e3e0c0c4"
+    }
+   ],
+   "questaoSha256": "b39d5447533a9a823daa237a04862d28adacd98a7acb5704e9cb90cc83cd6ca9",
+   "comentarioSha256": "c599ba0dabff453d97ba3966474840ee34cf9a5f1d5f40e960b7e8b87bd367f2"
+  }
  },
  "trauma-0446": {
   "conceito": "**A placa-gancho é a técnica de maior índice de complicações destacada para o terço lateral.** O gancho passa sob o acrômio e pode produzir irritação, impacto e osteólise subacromial. Retiradas são frequentes, inclusive planejadas para evitar problemas locais; retirada de rotina e complicação não devem ser contadas como se fossem sempre o mesmo evento.\n\nO fragmento distal é pequeno, esponjoso e pode estar cominuído. A dificuldade é obter pega suficiente contra as forças que fazem o segmento medial subir e o lateral descer com a escápula. A preferência dos autores é placa bloqueada distal, acrescentando botão com sutura no coracoide quando a fixação lateral for insuficiente, em vez de reforçar todos os casos automaticamente.\n\nNo gancho, o túnel deve ficar na região posterior do espaço subacromial, porque a anterior é mais estreita e expõe o manguito a impacto. O resumo informa retirada em 60% a 83% das séries, por irritação, impacto ou planejamento, e metanálise com menos complicações/reoperações para placa bloqueada que para gancho. Esses números justificam cautela, sem transformar o implante em técnica proibida em qualquer cenário.\n\n**Consolidar não é o único desfecho.** Várias técnicas atingem união elevada; função, irritação do implante, necessidade de nova operação e risco ao coracoide também entram na escolha. Botão pode fraturar o coracoide e, por isso, não é um reforço livre de risco.\n\n**Leia “Cirurgia: placa, gancho ou fixação coracoclavicular”, na Biblioteca.** Compare os resultados e as complicações próprias de cada método, além da taxa de consolidação.",
@@ -9289,18 +9415,42 @@
   "conferido": false
  },
  "trauma-0793": {
+  "conceito": "Na **queda direta sobre o ombro**, o capítulo descreve a cabeça umeral inclinando em **varo** e girando para trás por sua retroversão natural. O enunciado pede essa deformidade, não a posição do braço antes do impacto.\n\nO contraste ajuda a fixar: a queda sobre a mão espalmada, com ombro em flexão, abdução e rotação interna, produz o mecanismo de valgo, girando sobre o calcar inferomedial. A entrada da carga e a posição articular mudam a direção da cabeça (resumo do Rockwood, 10ª ed., cap. 36, “Mecanismo de trauma”).\n\nA imagem deve confirmar a orientação e os fragmentos associados, mas conhecer o mecanismo fornece uma hipótese anatômica coerente. A seção de mecanismos do resumo da Biblioteca compara as duas situações.",
+  "correta": "**A: varo.** É o sentido de inclinação da cabeça descrito para o impacto direto sobre o ombro. O componente de rotação posterior decorre da retroversão natural.",
   "incorretas": {
-   "B": "O valgo vem da carga axial com o braço abduzido, na queda sobre a mão.",
-   "C": "Adução não é o termo usado para o desvio da cabeça.",
-   "D": "Abdução não é o termo usado para o desvio da cabeça."
+   "B": "**Valgo pertence ao mecanismo contrastante.** O capítulo o relaciona à queda sobre a mão com flexão, abdução e rotação interna. Transportar esse resultado para um impacto direto sobre o ombro inverte a associação.",
+   "C": "**Adução não é o nome da deformidade pedida.** A posição do braço e a inclinação da cabeça em relação ao restante do úmero são descrições diferentes. O padrão após o impacto informado é varo.",
+   "D": "**Abdução aparece na posição do outro mecanismo, não como resposta aqui.** Ela integra a queda sobre a mão que pode produzir valgo. Na pergunta, a deformidade da cabeça após queda direta no ombro é varo."
   },
-  "conceito": "Na **fratura do úmero proximal**, o padrão do desvio depende de **como** o paciente cai:\n\n**queda direta sobre o ombro** (impacto lateral): a força empurra o úmero proximal de fora para dentro; a cabeça **inclina em varo**, para baixo e para dentro, em relação à diáfise;\n\n**queda sobre a mão espalmada** com o braço em **abdução**: a carga sobe pela diáfise e pode impactar a cabeça em **valgo**.\n\n**As forças musculares** completam o desvio: o **peitoral maior** puxa a diáfise para medial e anterior; o **supraespinal** e os rotadores puxam o tubérculo maior para cima e para trás; o **subescapular** puxa o tubérculo menor para medial.\n\n**Por que o varo importa**: a fratura em **varo** tem mais risco de **colapso** e de **falha da fixação**, sobretudo se o **calcar** medial não for restaurado. Na fixação com placa, usar parafusos no calcar e, se preciso, enxerto intramedular.\n\n**Na prova**: a queda ao solo sobre o ombro desvia a cabeça em **varo**.",
-  "correta": "O impacto direto no ombro empurra o úmero proximal de fora para dentro, e a cabeça tomba em varo.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 36"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Mecanismo de trauma. Sem atribuição de páginas impressas não consultadas."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Mecanismo de trauma"
+     ],
+     "blocos": [
+      "mecanismo-de-trauma-9ac9b553",
+      "mecanismo-de-trauma-53c08b2e"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "a85435affc4a0501815e644e7a0e213d415474d6559d65d143e8c78b9d32b414"
+    }
+   ],
+   "questaoSha256": "96d7d1dfa66e20b046bbcce0a0a8d2b3d300cb9bf3e840e3934bdd00cf8f4b66",
+   "comentarioSha256": "bc6a4fd9f266bb6920d6da3f6a3a8af0be7cdf24484817008d6456f6620eb0fc"
+  }
  },
  "trauma-0794": {
   "conceito": "### O que é a fratura em banana\nTambém chamada fratura em giz (chalk-stick): ==transversa, em osso patológico, por trauma de baixa energia==. A imagem clássica é a do osso **pagético**.\n\n### As três características, uma causa\n- **Transversa:** o osso doente não dissipa energia por planos oblíquos e parte de forma limpa, como giz.\n- **Na convexidade:** face lateral do fêmur arqueado, face anterior da tíbia em sabre, onde a tração se concentra.\n- **Precedida por fissuras de insuficiência:** traços incompletos e transversos na cortical convexa, meses antes. São o sinal de alarme.\n\n### Onde mais aparece\nOsteomalácia, osteopetrose e fraturas atípicas por bisfosfonato.\n\n### Condutas\n- Fissura na convexidade do fêmur pagético: considerar **fixação profilática**, de preferência com **haste intramedular**.\n- O osso pagético é **hipervascular** e sangra muito: preparo clínico e reserva de sangue.\n\n> **Na prova:** fratura em banana = ==transversa, baixa energia, osso patológico== (Paget).",
@@ -11803,15 +11953,48 @@
   "conferido": false
  },
  "trauma-0973": {
+  "conceito": "Hertel não estava apenas contando fragmentos: procurava sinais de que a cabeça mantinha irrigação. A região medial importa porque ramos vasculares chegam pela metáfise posteromedial. Uma **extensão metafisária curta ligada à cabeça, de 8 mm ou menos**, sugere perda de parte dessa conexão.\n\nOs preditores independentes descritos são essa extensão curta, ruptura da dobradiça medial e fratura pelo colo anatômico. Cabeça partida entra no sistema classificatório LEGO, mas não é automaticamente um dos preditores independentes. Essa diferença entre pertencer a uma classificação e prever um desfecho é o centro da questão (resumo do Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\nO desfecho medido era isquemia na cirurgia. O acompanhamento mostrou correlação ruim com necrose tardia, possivelmente por revascularização. Leia essa ressalva no resumo da Biblioteca antes de transformar um fator de risco em certeza de falha.",
+  "correta": "**D: extensão metafisária distal do fragmento da cabeça umeral ≤ 8 mm.** A cabeça leva pouca metáfise junto de si, o que se associa a maior risco de isquemia. É um dos preditores independentes descritos, sem significar necrose inevitável.",
   "incorretas": {
-   "A": "**Não foi preditor independente.** A fratura head-split é grave, mas não entrou entre os preditores de Hertel.",
-   "B": "**Não isquemia a cabeça.** A fratura do colo cirúrgico deixa a cabeça presa aos tubérculos e ao manguito.",
-   "C": "**Não isquemia a cabeça.** A avulsão do tubérculo maior não interrompe a irrigação da cabeça."
+   "A": "**Head-split é uma característica classificatória importante, mas não esse preditor independente.** A cabeça partida compõe os parâmetros do sistema LEGO. O enunciado, porém, pergunta pelos achados que predisseram isquemia no estudo.",
+   "B": "**O colo foi trocado.** A fratura pelo colo anatômico está entre os preditores independentes descritos. Fratura do colo cirúrgico não é equivalente a isolar a cabeça pelo mesmo plano anatômico.",
+   "C": "**A avulsão do tubérculo não define sozinha o suprimento da cabeça.** Ela descreve uma alteração de um dos segmentos e sua inserção tendinosa. Não integra o conjunto de preditores independentes pedido; é necessário avaliar metáfise, dobradiça e plano do colo."
   },
-  "conceito": "**Os critérios de Hertel.** **Hertel** estudou fraturas do **úmero proximal** e mediu, na cirurgia, se a cabeça sangrava (perfusão) ou não (isquemia). Descreveu um sistema **binário** (as fraturas em \"Lego\", com perguntas de sim ou não sobre cada traço) e identificou os **preditores independentes de isquemia** da cabeça.\n\n**Os preditores.** **Extensão metafisária** posteromedial do fragmento da cabeça **menor ou igual a 8 mm** (pouco calcar preso à cabeça). **Ruptura da dobradiça medial**, com desvio **maior que 2 mm** entre a cabeça e a diáfise no calcar. E o **padrão básico** da fratura, com o traço no **colo anatômico**. Com os três, o valor preditivo positivo para isquemia passa de 90%.\n\n**Por que a extensão metafisária importa.** A **artéria circunflexa posterior** entra na cabeça pela região **posteromedial**, junto ao calcar, com o **periósteo medial**. Quando um bom \"pedaço\" de metáfise (mais de 8 mm) continua preso à cabeça, esses vasos e o periósteo continuam ligados, e a cabeça permanece irrigada. Com menos de 8 mm, a cabeça fica praticamente solta de suas inserções vasculares.\n\n**Isquemia não é necrose.** Muitas cabeças inicialmente isquêmicas **revascularizam**, e nem toda isquemia vira necrose sintomática. Mesmo assim, os critérios ajudam a decidir: no idoso com alto risco, a **artroplastia reversa** é frequentemente preferida; no jovem, tenta-se a **fixação** com redução anatômica e suporte medial.\n\n**Os distratores.** A fratura **head-split** e a avulsão do **tubérculo maior** e a fratura do **colo cirúrgico** não foram os preditores independentes descritos por Hertel (o head-split é grave, mas não entrou como preditor nesse estudo).\n\n**Na prova:** Hertel: preditores de isquemia = **calcar menor ou igual a 8 mm**, **dobradiça medial rompida** (mais de 2 mm) e **colo anatômico**.",
-  "correta": "**Extensão metafisária da cabeça de 8 mm ou menos.** Sem calcar preso à cabeça, ela perde o periósteo medial e a circunflexa posterior que a perfundem.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Irrigação da cabeça, Hertel e osteonecrose. Sem atribuição de páginas impressas não consultadas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura",
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-a63a2d68",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "a9e82ea10c0f6f09bd45d880ace67cef47dfcd7bd7ac8758217c692d366fbaf7"
+    }
+   ],
+   "questaoSha256": "40703a0d7b13e4242ec49da4c1089163dcbedf4268acb9b4e6ed38869952dde7",
+   "comentarioSha256": "98f3563b9b96ddef6f3febe35009acd026df5f86e7652a9b2045cfc376e62182"
+  }
  },
  "trauma-0974": {
   "conceito": "**Subluxação persistente da cabeça umeral é indicação de fixação da fratura glenoidal na fonte consultada.** O objetivo é recuperar congruência e estabilidade. Uma articulação que permanece subluxada não se torna aceitável apenas porque uma medida de degrau está abaixo de um limite numérico.\n\nO resumo apresenta degrau ou diástase de quatro a cinco milímetros com 25% a 30% da superfície envolvidos, ou subluxação persistente. A condição da articulação deve ser integrada à idade, demanda e possibilidade de cirurgia. A tabela relativa também admite operar com degrau menor que quatro milímetros se a cabeça estiver subluxada.\n\nA área circular dos dois terços inferiores é a principal superfície de contato, com destaque para o quadrante anteroinferior. O polo superior, cerca de 20%, é menos crítico. Assim, localização, tamanho do fragmento e comportamento da cabeça importam tanto quanto uma medida isolada.\n\nNão se deve inverter a regra e dizer que todo fragmento pequeno é inofensivo ou que todo degrau de três milímetros exige operar. A questão oferece B como um sinal direto de instabilidade persistente; as outras medidas isoladas não atingem a indicação apresentada.\n\n**Leia “Quando operar a glenoide”, na Biblioteca.** Julgue estabilidade e congruência juntas, em vez de usar apenas a porcentagem da superfície ou apenas o degrau.",
@@ -14161,19 +14344,45 @@
   "conferido": false
  },
  "trauma-1118": {
+  "conceito": "Na fratura do colo cirúrgico em duas partes, o **peitoral maior puxa a diáfise para anterior e medial**. Esse movimento do segmento distal explica a angulação anterior mencionada. A pergunta trata da força sobre a diáfise, não da rotação de uma cabeça ainda ligada a um tubérculo.\n\nCompare com três partes: quando o tubérculo menor continua preso à cabeça, o subescapular a roda internamente. São movimentos diferentes, produzidos em fragmentos diferentes. Identificar qual inserção permaneceu em cada lado do traço é mais útil que associar qualquer músculo do ombro a todo desvio anterior (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde”).\n\nNão há gabarito oficial registrado para esta questão. A resposta pela bibliografia é **D**, e permanece indicada como provável, sem ser promovida a resposta oficial. O resumo da Biblioteca apresenta as forças por fragmento.",
+  "correta": "**D: peitoral maior.** É a força deformante descrita para o desvio anterior e medial da diáfise no colo cirúrgico. Esta é a resposta sustentada pelo resumo, sem gabarito oficial registrado.",
   "incorretas": {
-   "A": "**O deltoide pode elevar o segmento diafisário.** Esse vetor não explica tão diretamente o deslocamento anterior apontado na questão.",
-   "B": "**O grande dorsal é um rotador e adutor do úmero e pode contribuir para o desvio.** Não é o músculo principal associado à angulação anterior neste padrão.",
-   "C": "**O bíceps braquial cruza o ombro, mas não é o deformante principal da diáfise.** Seu tendão longo pode ter relevância em lesões do sulco bicipital e durante a abordagem cirúrgica."
+   "A": "**A ação do deltoide não é a força deformante identificada para esse movimento da diáfise.** O capítulo atribui o desvio anterior e medial ao peitoral maior. A proximidade de um músculo do ombro não basta para ligá-lo ao vetor específico pedido.",
+   "B": "**A questão exige o vetor característico desse fragmento.** O grande dorsal não é a força à qual o capítulo atribui o desvio anterior e medial da diáfise no colo cirúrgico. A resposta precisa acompanhar a inserção e o segmento descritos, que apontam para o peitoral maior.",
+   "C": "**O bíceps tem outra relação com a fratura.** A cabeça longa pode ficar interposta no foco e dificultar redução e consolidação. Isso difere de ser o músculo que traciona a diáfise para anterior e medial."
   },
-  "conceito": "**Uma fratura em duas partes separa cabeça e tuberosidades da diáfise.** No colo cirúrgico do úmero, o fragmento proximal recebe as forças do manguito rotador, enquanto músculos que se inserem na porção proximal da diáfise deslocam o fragmento distal. Por isso, o aspecto da fratura não depende apenas da direção do impacto: a tração muscular modifica a posição dos fragmentos depois da lesão.\n\n**O peitoral maior desloca a diáfise.** Sua inserção no lábio lateral do sulco intertubercular permite tracionar o segmento distal para anterior e medial quando o colo cirúrgico perde continuidade. Esse vetor explica a angulação anterior perguntada. O grande dorsal e o redondo maior também participam de forças sobre o úmero, mas o peitoral maior é o deformante clássico mais associado a esse desvio no padrão descrito.\n\n**O desvio orienta redução e vigilância.** Radiografias ortogonais e, em fraturas complexas, tomografia ajudam a definir contato entre cabeça e diáfise, varo, cominuição medial e posição das tuberosidades. É importante documentar a função do nervo axilar e avaliar perfusão. Fraturas com bom contato e alinhamento podem ser tratadas sem cirurgia; a instabilidade e a perda de contato tornam a decisão mais complexa.",
-  "correta": "**Peitoral maior.** A tração do músculo sobre a diáfise produz o deslocamento anterior e medial característico da fratura do colo cirúrgico descrita.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., vol. 1, p. 1181."
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
   ],
+  "conferido": false,
   "provavel": "D",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura",
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-992e5d4d",
+      "neer-ao-e-os-padroes-de-fratura-e75305ee",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "f5f10e0e918c42389cf0520f5597c2af7cb70b167cb152d63729700e64e1a9d6"
+    }
+   ],
+   "questaoSha256": "1a57cbd513529bdf54c786b18e61ecb26f3a46f7b8a2def09b1efbea5f95a649",
+   "comentarioSha256": "243c1c8a2e0441b135e2350fe916cf5039f3c6f23aa24c4b4dea8d5102b99fa4"
+  }
  },
  "trauma-1119": {
   "incorretas": {
@@ -14770,20 +14979,46 @@
   "conferido": false
  },
  "trauma-1152": {
+  "conceito": "No padrão em três partes com o tubérculo maior separado, a cabeça permanece ligada ao **tubérculo menor e ao subescapular**. A tração conservada nesse bloco produz **rotação medial da cabeça**. Se a fratura consolida mantendo essa deformidade, é essa a orientação típica que a questão procura.\n\nÉ diferente do desvio do próprio tubérculo maior, que pode ir para trás e medial pelo manguito posterossuperior e bloquear rotação externa quando consolida assim. A posição da cabeça e a posição do tubérculo solto não devem ser tratadas como uma única direção de movimento (resumo do Rockwood, 10ª ed., cap. 36, “Quem puxa para onde” e “Viciosa dos tubérculos”).\n\nO acervo não registra gabarito oficial para esta pergunta. A bibliografia sustenta **A como resposta provável** no padrão descrito, preservando essa distinção. Leia a seção dos desvios no resumo da Biblioteca para reconstruir as conexões entre tendões e fragmentos.",
+  "correta": "**A: rotação medial.** O tubérculo menor continua unido à cabeça e recebe a tração do subescapular. Esse é o desvio típico do bloco articular nesse padrão; a letra é bibliográfica provável, não gabarito oficial.",
   "incorretas": {
-   "B": "**Rotação lateral.** É a tendência oposta quando o tubérculo maior continua unido à cabeça e os músculos posteriores do manguito a tracionam, como na fratura de três partes com tubérculo menor separado.",
-   "C": "**Adução.** Descreve aproximação do braço ao tronco, não a rotação axial da cabeça gerada pelo subescapular nessa configuração. Desvios em adução podem ocorrer em outros padrões conforme forças musculares e posição da diáfise.",
-   "D": "**Abdução.** É afastamento do braço em relação ao tronco e pode aparecer em deformidades de outros traços proximais. Não nomeia o giro medial específico da cabeça que o enunciado explora."
+   "B": "**Rotação lateral corresponde à conexão oposta.** Quando o tubérculo maior permanece unido à cabeça e o menor está solto, o manguito posterossuperior favorece rotação externa e abdução. Aqui, o maior é o fragmento separado.",
+   "C": "**Adução não expressa a rotação descrita para o bloco cabeça-tubérculo menor.** O mecanismo destacado pelo capítulo é o subescapular girando a cabeça medialmente. É preciso distinguir orientação rotacional da cabeça de movimento global do braço.",
+   "D": "**Abdução aparece no padrão em que o maior continua ligado à cabeça.** Não é o desvio característico produzido pelo subescapular quando o tubérculo menor permanece unido. A alternativa troca a inserção que comanda o bloco articular."
   },
-  "conceito": "**A cabeça segue o tubérculo que permanece ligado a ela.** Neer descreve quatro partes anatômicas no úmero proximal: cabeça articular, tubérculo maior, tubérculo menor e diáfise. Em uma fratura de três partes com deslocamento do tubérculo maior e separação do colo cirúrgico, o tubérculo menor costuma continuar unido à cabeça. O subescapular insere-se nele e gira a cabeça para dentro, isto é, em rotação medial.\n\nO tubérculo maior recebe supraespinal, infraespinal e redondo menor. Quando se separa, a tração do manguito tende a levá-lo superior e posteriormente, enquanto a diáfise é influenciada, entre outros músculos, pelo peitoral maior. Essa combinação explica por que uma radiografia frontal isolada pode esconder a rotação da cabeça e a posição real do tubérculo; vistas ortogonais e, em padrões complexos, tomografia ajudam no planejamento.\n\n**Compare com a fratura espelhada.** Na fratura de três partes em que o tubérculo menor é o fragmento separado, o maior permanece ligado à cabeça e o manguito posterossuperior tende a rodá-la lateralmente. Se a deformidade consolida, a posição anormal da cabeça e do tubérculo pode causar limitação de rotação, impacto subacromial e perda de força. O tratamento depende do deslocamento, da qualidade óssea e da função do paciente, não apenas do nome “três partes”.",
-  "correta": "**Rotação medial.** O tubérculo menor permanece preso à cabeça; a tração do subescapular, nele inserido, explica o desvio rotacional esperado no padrão com tubérculo maior separado.",
   "referencias": [
-   "Management of Proximal Humerus Fractures in Adults: A Scoping Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC9604576/",
-   "AO Surgery Reference. MIO plate fixation for extraarticular 3-part, surgical neck and greater tuberosity fracture. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-greater-tuberosity-impaction/mio-plate-fixation"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 36 · Proximal Humeral Fractures (Foruria, Martinez-Catalan e Sanchez-Sotelo). Seções consultadas: Neer, AO e os padrões de fratura; Complicações: rigidez, viciosa, pseudartrose e tubérculos. Sem atribuição de páginas impressas não consultadas."
   ],
+  "conferido": false,
   "provavel": "A",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura",
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-e75305ee",
+      "neer-ao-e-os-padroes-de-fratura-79f24fb6",
+      "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "40bbfb479fe45571b36827abf5fec5f5b7953c8130944f8d3830c3c816f480ea"
+    }
+   ],
+   "questaoSha256": "77988ae410e3b9803af91e4f9bad29fbbe32e5524bb1d4a904b990570f6f5b2a",
+   "comentarioSha256": "e467f0d823db03df89aff5699c410e047595a06f0679a214a9b30f42c4fe153b"
+  }
  },
  "trauma-1153": {
   "incorretas": {
