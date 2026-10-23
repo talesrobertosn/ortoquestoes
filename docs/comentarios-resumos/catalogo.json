@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1091,
+  "pendente": 1061,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 161,
+  "pendente-fonte": 171,
   "pendente-inspecao-imagem": 157,
-  "revisada": 863
+  "revisada": 883
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -220,11 +220,11 @@
    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
-    "pendente": 76,
+    "pendente": 46,
     "pendente-anulada": 1,
-    "pendente-fonte": 1,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 10,
-    "revisada": 21
+    "revisada": 41
    }
   },
   "rockwood10-62-planalto-tibial": {
@@ -6391,14 +6391,15 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 pede panorâmica para alinhamento crônico, mas não define indicação de osteotomia valgizante frente aos quatro padrões oferecidos, incluindo duplo/triplo varo. Falta fonte de planejamento da osteotomia na frouxidão lateral/posterolateral e definição desses padrões; alinhamento importante não prova a indicação específica.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "071f401797fb699e677b6d6d5eb76de11691283a0a100e45bd85aff21f065cee"
+   "questaoSha256": "071f401797fb699e677b6d6d5eb76de11691283a0a100e45bd85aff21f065cee",
+   "pendencia": "O resumo 61 pede panorâmica para alinhamento crônico, mas não define indicação de osteotomia valgizante frente aos quatro padrões oferecidos, incluindo duplo/triplo varo. Falta fonte de planejamento da osteotomia na frouxidão lateral/posterolateral e definição desses padrões; alinhamento importante não prova a indicação específica."
   },
   "joelho-0011": {
    "tema": "joelho",
@@ -6872,14 +6873,15 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 descreve Humphrey anterior e Wrisberg posterior ao LCP, porém não explica o sinal de duplo LCP nem o distingue de alça de balde e ruptura parcial do cruzado. Falta fonte de imagem meniscal para analisar as quatro alternativas; posição de Humphrey não substitui descrição do sinal.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "5464f23eb52a2ddb350a8e8f7d3b2e177b63b2c12a589da5c7b1621d475e2fa2"
+   "questaoSha256": "5464f23eb52a2ddb350a8e8f7d3b2e177b63b2c12a589da5c7b1621d475e2fa2",
+   "pendencia": "O resumo 61 descreve Humphrey anterior e Wrisberg posterior ao LCP, porém não explica o sinal de duplo LCP nem o distingue de alça de balde e ruptura parcial do cruzado. Falta fonte de imagem meniscal para analisar as quatro alternativas; posição de Humphrey não substitui descrição do sinal."
   },
   "joelho-0060": {
    "tema": "joelho",
@@ -7100,7 +7102,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -7115,7 +7117,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "f59e7630315ef63f01af61d012f7db3b423f3bce3a703d849b40e5d94b434340"
+   "questaoSha256": "f59e7630315ef63f01af61d012f7db3b423f3bce3a703d849b40e5d94b434340",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "O lado medial",
+       "Cruzado posterior: a pedra fundamental"
+      ],
+      "blocos": [
+       "o-lado-medial-de3e1ab3",
+       "o-lado-medial-0800da36",
+       "o-lado-medial-b8a9097e",
+       "o-lado-medial-3dfbb38a",
+       "cruzado-posterior-a-pedra-fundamental-6c39d4e8"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "9e47150a5c2df25fe5caebd84eeb61121613898004ec545b2205264d6a63b037"
+     }
+    ],
+    "questaoSha256": "f59e7630315ef63f01af61d012f7db3b423f3bce3a703d849b40e5d94b434340",
+    "comentarioSha256": "d14d31ae9da653160866516939631e6a9c0de3e0f3d56cb2bd2f63d675361208"
+   }
   },
   "joelho-0099": {
    "tema": "joelho",
@@ -7466,14 +7496,15 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 não descreve a alteração de slope por cunha de abertura medial versus fechamento lateral nem a indicação prévia/simultânea na insuficiência crônica de LCP com varo. Falta fonte de planejamento coronal e sagital e efeito da osteotomia sobre estabilidade posterior. Não inferir a direção do slope só do nome da cunha.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "f6288bcbdaa838d1fe3084e73af34a2f85ec06342bc435de5e4185f751619f18"
+   "questaoSha256": "f6288bcbdaa838d1fe3084e73af34a2f85ec06342bc435de5e4185f751619f18",
+   "pendencia": "O resumo 61 não descreve a alteração de slope por cunha de abertura medial versus fechamento lateral nem a indicação prévia/simultânea na insuficiência crônica de LCP com varo. Falta fonte de planejamento coronal e sagital e efeito da osteotomia sobre estabilidade posterior. Não inferir a direção do slope só do nome da cunha."
   },
   "joelho-0181": {
    "tema": "joelho",
@@ -7533,8 +7564,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 apresenta o poplíteo oblíquo como principal restritor ligamentar da hiperextensão num estudo em cadáver, mas não ordena a ação do LCP antes, depois ou simultaneamente ao LCA nem demonstra o efeito específico de romper o LCA. Falta fonte da sequência exigida; preservar C oficial sem atribuir essa afirmação ao resumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -7548,7 +7579,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "71cb3ecd03b22b4b1665d6aaba1b7a494af80e44e1a295c67f26c3091aed99ac"
+   "questaoSha256": "71cb3ecd03b22b4b1665d6aaba1b7a494af80e44e1a295c67f26c3091aed99ac",
+   "pendencia": "O resumo 61 apresenta o poplíteo oblíquo como principal restritor ligamentar da hiperextensão num estudo em cadáver, mas não ordena a ação do LCP antes, depois ou simultaneamente ao LCA nem demonstra o efeito específico de romper o LCA. Falta fonte da sequência exigida; preservar C oficial sem atribuir essa afirmação ao resumo."
   },
   "joelho-0200": {
    "tema": "joelho",
@@ -8231,7 +8263,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8246,7 +8278,36 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "f614fe3d660b295f4a3a681b49d0d812f23ecc8d53be7ac6ada3074cf034e42e"
+   "questaoSha256": "f614fe3d660b295f4a3a681b49d0d812f23ecc8d53be7ac6ada3074cf034e42e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "O lado medial",
+       "Imagem"
+      ],
+      "blocos": [
+       "o-lado-medial-de3e1ab3",
+       "o-lado-medial-5c9f047e",
+       "o-lado-medial-180d416e",
+       "o-lado-medial-9548c808",
+       "o-lado-medial-3dfbb38a",
+       "imagem-bfe4fe1f"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "423b08b0333184568a09e13715fe94ffc0a92b6a39b6258446186e75996b7d3d"
+     }
+    ],
+    "questaoSha256": "f614fe3d660b295f4a3a681b49d0d812f23ecc8d53be7ac6ada3074cf034e42e",
+    "comentarioSha256": "9ead5ad2447626d220c8fe13e1ef923445569ac43324728a9ab7eb49f960a4ee"
+   }
   },
   "joelho-0273": {
    "tema": "joelho",
@@ -8370,14 +8431,15 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. O resumo 61 mostra importância das lesões associadas, mas não apresenta a análise de TORG comparando eixo, meniscos, ligamentos e tempo como preditores de resultado. Falta estudo/trecho primário que sustente o superlativo e sua atribuição. Não transformar plausibilidade clínica em resposta única demonstrada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "7f5a67efe55cfbf17affeeb5b356bebd1d67125ad7dfb9ad68fa8157010d221d"
+   "questaoSha256": "7f5a67efe55cfbf17affeeb5b356bebd1d67125ad7dfb9ad68fa8157010d221d",
+   "pendencia": "Sem gabarito oficial. O resumo 61 mostra importância das lesões associadas, mas não apresenta a análise de TORG comparando eixo, meniscos, ligamentos e tempo como preditores de resultado. Falta estudo/trecho primário que sustente o superlativo e sua atribuição. Não transformar plausibilidade clínica em resposta única demonstrada."
   },
   "joelho-0293": {
    "tema": "joelho",
@@ -8460,7 +8522,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8475,7 +8537,32 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "79cbb7edfb8fcc9e9e07494531d75b534cdbbed6fc28ceeb23d2c0ff2a17a0f1"
+   "questaoSha256": "79cbb7edfb8fcc9e9e07494531d75b534cdbbed6fc28ceeb23d2c0ff2a17a0f1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "canto-posterolateral-a148610d",
+       "canto-posterolateral-1d24e09d",
+       "canto-posterolateral-04216df0"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "93b2a2d34c57d8f1e14dc404f37bca2a57d435cd8253a96793752e6541d68055"
+     }
+    ],
+    "questaoSha256": "79cbb7edfb8fcc9e9e07494531d75b534cdbbed6fc28ceeb23d2c0ff2a17a0f1",
+    "comentarioSha256": "3c1ef319a91fdaf64374155917291bb9ba4e6f79497a3d06649b2de601bf385c"
+   }
   },
   "joelho-0309": {
    "tema": "joelho",
@@ -8484,7 +8571,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8499,7 +8586,33 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "9346dbd19facbe286e57e2cdf3ee3055e39cb2a1f0b49285acf5a9e0728d41b3"
+   "questaoSha256": "9346dbd19facbe286e57e2cdf3ee3055e39cb2a1f0b49285acf5a9e0728d41b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Classificação de Schenck",
+       "A artéria poplítea"
+      ],
+      "blocos": [
+       "classificacao-de-schenck-05833290",
+       "classificacao-de-schenck-6a3443c0",
+       "a-arteria-poplitea-b9951f36"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "6e7ce3bfbf8e86a3e55b71fbb92f1195fd933d68950ed7824b222d944bd2831f"
+     }
+    ],
+    "questaoSha256": "9346dbd19facbe286e57e2cdf3ee3055e39cb2a1f0b49285acf5a9e0728d41b3",
+    "comentarioSha256": "5a157eafd416c36c26f3b9496520ecf8be336fcc7d12bba6300dacb9bf0de2f9"
+   }
   },
   "joelho-0313": {
    "tema": "joelho",
@@ -8591,7 +8704,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8606,7 +8719,37 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "b5b78254230743f2274129a5b4997ac9362034857f28447806f74f516311b3e3"
+   "questaoSha256": "b5b78254230743f2274129a5b4997ac9362034857f28447806f74f516311b3e3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Canto posterolateral",
+       "Cruzado posterior: a pedra fundamental"
+      ],
+      "blocos": [
+       "canto-posterolateral-66452e25",
+       "canto-posterolateral-474af362",
+       "canto-posterolateral-0b736828",
+       "canto-posterolateral-622a04b8",
+       "canto-posterolateral-a39e9622",
+       "cruzado-posterior-a-pedra-fundamental-cc74f408",
+       "canto-posterolateral-04216df0"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "61748fb87c159aa7bd2a1a661af8dde1feb24f782a165b3b1100e4c39dea5e02"
+     }
+    ],
+    "questaoSha256": "b5b78254230743f2274129a5b4997ac9362034857f28447806f74f516311b3e3",
+    "comentarioSha256": "3fb217d1c091365e80ad504cb996dc19ca2e92a36907585f7d5a2a5feae092a2"
+   }
   },
   "joelho-0343": {
    "tema": "joelho",
@@ -8687,7 +8830,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8702,7 +8845,49 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "826daa4a979f4b883f09331c925e3d2cab67887810926819d1976bef53fdfe19"
+   "questaoSha256": "826daa4a979f4b883f09331c925e3d2cab67887810926819d1976bef53fdfe19",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Canto posterolateral",
+       "Cruzado anterior"
+      ],
+      "blocos": [
+       "canto-posterolateral-622a04b8",
+       "canto-posterolateral-0b736828",
+       "canto-posterolateral-474af362",
+       "cruzado-anterior-d3582e20"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "b29599f0361d0ea5c241b07bea1db22c4355e4a9342dd29c933e95bdf3e5a5c9"
+     },
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Anatomia e biomecânica do mecanismo extensor"
+      ],
+      "blocos": [
+       "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "233c4564d0dc2d2eb9dcd6857c29695e6fecea2e6c49d5252c083ad92a4b8919"
+     }
+    ],
+    "questaoSha256": "826daa4a979f4b883f09331c925e3d2cab67887810926819d1976bef53fdfe19",
+    "comentarioSha256": "b739c25d1dfe3612cfe3f419b8bc414fba671bba23feb11936675c5499fac44e"
+   }
   },
   "joelho-0358": {
    "tema": "joelho",
@@ -8711,7 +8896,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8726,7 +8911,36 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "71c408b7bb510685e84d7e740937ec477da32f5b438f5e0c3779b4877e847c21"
+   "questaoSha256": "71c408b7bb510685e84d7e740937ec477da32f5b438f5e0c3779b4877e847c21",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Cruzado posterior: a pedra fundamental",
+       "O lado medial",
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "cruzado-posterior-a-pedra-fundamental-cc74f408",
+       "o-lado-medial-b8a9097e",
+       "cruzado-posterior-a-pedra-fundamental-cd462063",
+       "o-lado-medial-5c9f047e",
+       "canto-posterolateral-a39e9622"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "15db59c7720aff70548c765a4ec6d55c8b28106f6a58aa8f3a79caaf01e051d4"
+     }
+    ],
+    "questaoSha256": "71c408b7bb510685e84d7e740937ec477da32f5b438f5e0c3779b4877e847c21",
+    "comentarioSha256": "dc5f932f380c0b052a794b3002bcbc572b29dfa4d4a1a92fe12516f0ea281d79"
+   }
   },
   "joelho-0373": {
    "tema": "joelho",
@@ -42409,8 +42623,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo 61 favorece reconstrução precoce, mas não identifica idade inferior a 40 como fator prognóstico da luxação. O corte aparece na escolha de enxerto do LCA, e idade mais jovem aparece para recuperação fibular, desfechos diferentes. Falta fonte do par prognóstico exigido e da comparação entre um ou dois cruzados; não usar contexto da própria pergunta como evidência.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42424,7 +42638,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "755bde2bb0f4b48d765789a069ea2a4362a0f0a925ff12b06a56dcf52e81a06f"
+   "questaoSha256": "755bde2bb0f4b48d765789a069ea2a4362a0f0a925ff12b06a56dcf52e81a06f",
+   "pendencia": "O corpo independente do resumo 61 favorece reconstrução precoce, mas não identifica idade inferior a 40 como fator prognóstico da luxação. O corte aparece na escolha de enxerto do LCA, e idade mais jovem aparece para recuperação fibular, desfechos diferentes. Falta fonte do par prognóstico exigido e da comparação entre um ou dois cruzados; não usar contexto da própria pergunta como evidência."
   },
   "trauma-0036": {
    "tema": "trauma",
@@ -46244,7 +46459,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46259,7 +46474,33 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "1a68450d1efadc6fe927fa6d0900ad3d63a41abf5421c639bf4897f2cc518af1"
+   "questaoSha256": "1a68450d1efadc6fe927fa6d0900ad3d63a41abf5421c639bf4897f2cc518af1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Quem luxa o joelho e o que vem junto",
+       "A artéria poplítea"
+      ],
+      "blocos": [
+       "quem-luxa-o-joelho-e-o-que-vem-junto-68758320",
+       "quem-luxa-o-joelho-e-o-que-vem-junto-95bec7df",
+       "a-arteria-poplitea-b9951f36"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "f7b2fb20411d3018651c9e95091958c7eb2ca79bb79f9e2c66d742bc84812c0e"
+     }
+    ],
+    "questaoSha256": "1a68450d1efadc6fe927fa6d0900ad3d63a41abf5421c639bf4897f2cc518af1",
+    "comentarioSha256": "1fc8114f3f9417d4080973cf901dd53a235cd5949cb1b248faa5531dbf574da3"
+   }
   },
   "trauma-0164": {
    "tema": "trauma",
@@ -47743,7 +47984,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47758,7 +47999,33 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "fc83827b76bf1ee84107e14ed1e8dcf2ab9fa3722ffe71836b171bfa0289319e"
+   "questaoSha256": "fc83827b76bf1ee84107e14ed1e8dcf2ab9fa3722ffe71836b171bfa0289319e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Imagem",
+       "O nervo fibular comum"
+      ],
+      "blocos": [
+       "imagem-0472b462",
+       "imagem-c89ac8ba",
+       "o-nervo-fibular-comum-8a85bf5b"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "7e7d7e9c488824292748441a0f883fd25bba60779fc5ad08cf5ecfda0798282b"
+     }
+    ],
+    "questaoSha256": "fc83827b76bf1ee84107e14ed1e8dcf2ab9fa3722ffe71836b171bfa0289319e",
+    "comentarioSha256": "ccadc9f48961fbf302a69eb8b3886fdf40416880973bd4ea458262c7e66fec00"
+   }
   },
   "trauma-0227": {
    "tema": "trauma",
@@ -57122,8 +57389,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 associa tração arterial à luxação anterior e compressão à posterior, mas não estabelece ranking de frequência de lesão vascular entre anterior, posterior, medial e lateral. Falta comparação epidemiológica para o mais comum; o mecanismo plausível não prova o superlativo. Gabarito C preservado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -57137,7 +57404,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "a2ae679a14517addad7687e60263b26c92c0212d2f429d2fdd2d01131bfc10bd"
+   "questaoSha256": "a2ae679a14517addad7687e60263b26c92c0212d2f429d2fdd2d01131bfc10bd",
+   "pendencia": "O resumo 61 associa tração arterial à luxação anterior e compressão à posterior, mas não estabelece ranking de frequência de lesão vascular entre anterior, posterior, medial e lateral. Falta comparação epidemiológica para o mais comum; o mecanismo plausível não prova o superlativo. Gabarito C preservado."
   },
   "trauma-0803": {
    "tema": "trauma",
@@ -58978,8 +59246,8 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 descreve gravidade da lesão extensora associada e avaliação por elevação/altura patelar, sem comparar sua frequência por direção da luxação. Falta a série que sustente maior associação com posterior frente a anterior, posteromedial e posterolateral. Manter B oficial sem selo de cobertura.",
    "temComentario": true,
    "citacoes": [
     {
@@ -58993,7 +59261,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "a383a4769f5ae8f0e6b14093fe6029b894e0fb71c5f74cfe914ca96d1e709a54"
+   "questaoSha256": "a383a4769f5ae8f0e6b14093fe6029b894e0fb71c5f74cfe914ca96d1e709a54",
+   "pendencia": "O resumo 61 descreve gravidade da lesão extensora associada e avaliação por elevação/altura patelar, sem comparar sua frequência por direção da luxação. Falta a série que sustente maior associação com posterior frente a anterior, posteromedial e posterolateral. Manter B oficial sem selo de cobertura."
   },
   "trauma-0887": {
    "tema": "trauma",
@@ -61887,8 +62156,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 sustenta Humphrey anterior ao LCP, mas não cobre todas as afirmações das outras opções: anatomia dos cornos com redação repetida em A, conexão transversa, redução exata de área de contato após meniscectomia total e papel do menisco lateral no LCA insuficiente. Falta fonte meniscal independente para auditar o comentário inteiro; acertar B não basta para analisar as cinco alternativas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -61902,7 +62171,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "81631d31095975e1198bb2571f91764bf4806cf00a358916041b9702b3c53f55"
+   "questaoSha256": "81631d31095975e1198bb2571f91764bf4806cf00a358916041b9702b3c53f55",
+   "pendencia": "O resumo 61 sustenta Humphrey anterior ao LCP, mas não cobre todas as afirmações das outras opções: anatomia dos cornos com redação repetida em A, conexão transversa, redução exata de área de contato após meniscectomia total e papel do menisco lateral no LCA insuficiente. Falta fonte meniscal independente para auditar o comentário inteiro; acertar B não basta para analisar as cinco alternativas."
   },
   "trauma-1001": {
    "tema": "trauma",
@@ -63010,8 +63280,8 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 61 identifica o sistema anterolateral como extracapsular, mas não estabelece ação predominante em 0–30 versus 30–90 graus. Falta fonte biomecânica da faixa angular para distinguir C de D. Uma metade correta da opção não comprova cobertura integral.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63025,7 +63295,8 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "c2e77bc5c0aed89ee89683433e42eb6c1bd0ca76ba69276bdcd4394ba412484e"
+   "questaoSha256": "c2e77bc5c0aed89ee89683433e42eb6c1bd0ca76ba69276bdcd4394ba412484e",
+   "pendencia": "O resumo 61 identifica o sistema anterolateral como extracapsular, mas não estabelece ação predominante em 0–30 versus 30–90 graus. Falta fonte biomecânica da faixa angular para distinguir C de D. Uma metade correta da opção não comprova cobertura integral."
   },
   "trauma-1048": {
    "tema": "trauma",
@@ -63563,7 +63834,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63578,7 +63849,30 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "00c6732dc2ca9efeca70ebee13ce7db8fe549fd4acb4988e2f73f315a420b42c"
+   "questaoSha256": "00c6732dc2ca9efeca70ebee13ce7db8fe549fd4acb4988e2f73f315a420b42c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Exame e luxação irredutível"
+      ],
+      "blocos": [
+       "exame-e-luxacao-irredutivel-a17fc1b9"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "a11cda963f42b6b13c0efe4fdbd02345ea1412fb7a1276f7fe3d0c9c0189a230"
+     }
+    ],
+    "questaoSha256": "00c6732dc2ca9efeca70ebee13ce7db8fe549fd4acb4988e2f73f315a420b42c",
+    "comentarioSha256": "b8059d55cead89723b6794c9347a9bf0d9b960012afb9273d3615db0f8548259"
+   }
   },
   "trauma-1073": {
    "tema": "trauma",
@@ -80440,7 +80734,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80455,7 +80749,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "f6a130ba67aed237ac90346ed09c8ad0857ccde9c9be71d9bb9b8755f9959fe5"
+   "questaoSha256": "f6a130ba67aed237ac90346ed09c8ad0857ccde9c9be71d9bb9b8755f9959fe5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "A artéria poplítea"
+      ],
+      "blocos": [
+       "a-arteria-poplitea-b9951f36",
+       "a-arteria-poplitea-a0a17d81",
+       "a-arteria-poplitea-6710572a",
+       "a-arteria-poplitea-bca7b985",
+       "a-arteria-poplitea-9f539f11",
+       "a-arteria-poplitea-0851428b"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "c3bbb10dfba7e914cadbec8f2dab6b6acbd0b4bf33c720313423cdd6ce02204f"
+     }
+    ],
+    "questaoSha256": "f6a130ba67aed237ac90346ed09c8ad0857ccde9c9be71d9bb9b8755f9959fe5",
+    "comentarioSha256": "0d7c7558f72a2e077a7e953d8da6d1a697766529d5adb41096ee876b11efe449"
+   }
   },
   "trauma-1620": {
    "tema": "trauma",
@@ -80488,7 +80810,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80503,7 +80825,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "db56e5ef8f5fefc7543315ba303b08c706a565159e5286a12ee81d099dfa251d"
+   "questaoSha256": "db56e5ef8f5fefc7543315ba303b08c706a565159e5286a12ee81d099dfa251d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Classificação de Schenck",
+       "O nervo fibular comum",
+       "A artéria poplítea"
+      ],
+      "blocos": [
+       "classificacao-de-schenck-6a3443c0",
+       "o-nervo-fibular-comum-8a85bf5b",
+       "o-nervo-fibular-comum-05d3e14c",
+       "a-arteria-poplitea-b9951f36"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "20aee214d0b1d6dd129b08261f749be9cc10535b8baa8c8f2d3030caac5b0ecd"
+     }
+    ],
+    "questaoSha256": "db56e5ef8f5fefc7543315ba303b08c706a565159e5286a12ee81d099dfa251d",
+    "comentarioSha256": "494a7664636b692523a96cd4e9afd1478e58a26b5465dd621d1cb0ff72f96ecb"
+   }
   },
   "trauma-1622": {
    "tema": "trauma",
@@ -80512,7 +80862,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80527,7 +80877,32 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "4f86136e0ab96d6b94619bf7c46d144e22b9d981f175707e0f521c88d60482d8"
+   "questaoSha256": "4f86136e0ab96d6b94619bf7c46d144e22b9d981f175707e0f521c88d60482d8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "canto-posterolateral-a148610d",
+       "canto-posterolateral-1d24e09d",
+       "canto-posterolateral-04216df0"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "93b2a2d34c57d8f1e14dc404f37bca2a57d435cd8253a96793752e6541d68055"
+     }
+    ],
+    "questaoSha256": "4f86136e0ab96d6b94619bf7c46d144e22b9d981f175707e0f521c88d60482d8",
+    "comentarioSha256": "3641096db7c60609abfa44fa8fa88b3474b36549a7782bbdf143815b9b1f7f22"
+   }
   },
   "trauma-1623": {
    "tema": "trauma",
@@ -80536,7 +80911,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80551,7 +80926,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "b4cb7843cdd9b3a7981259d96c12bbbe13aa6ccbac4db758ec5e850039c98803"
+   "questaoSha256": "b4cb7843cdd9b3a7981259d96c12bbbe13aa6ccbac4db758ec5e850039c98803",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Exame e luxação irredutível",
+       "Classificação de Schenck",
+       "A artéria poplítea"
+      ],
+      "blocos": [
+       "exame-e-luxacao-irredutivel-a17fc1b9",
+       "classificacao-de-schenck-05833290",
+       "a-arteria-poplitea-29c433db",
+       "a-arteria-poplitea-cd6b4a13"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "3fa6ff376d8e33d5ebb22b9d9b21e5adf92f96d30ab0994ced32dab25a4937ce"
+     }
+    ],
+    "questaoSha256": "b4cb7843cdd9b3a7981259d96c12bbbe13aa6ccbac4db758ec5e850039c98803",
+    "comentarioSha256": "7c34ac2eb3dd21ecea108140c7e0a9b7d4f5810174092fac833154f4a0917297"
+   }
   },
   "trauma-1624": {
    "tema": "trauma",
@@ -80560,7 +80963,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80575,7 +80978,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "b4cee125344062207a02a78f74e56538944e70dafca43296eb5f1a8eecb13806"
+   "questaoSha256": "b4cee125344062207a02a78f74e56538944e70dafca43296eb5f1a8eecb13806",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "O lado medial",
+       "Exame e luxação irredutível"
+      ],
+      "blocos": [
+       "o-lado-medial-2c6e9a4b",
+       "o-lado-medial-5c9f047e",
+       "o-lado-medial-0e9278bd",
+       "o-lado-medial-f9dd2cc7",
+       "exame-e-luxacao-irredutivel-a17fc1b9"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "22b9dfac52411439f9fd954ad967350f63a2d2e6016705e4c937fe89fad5874b"
+     }
+    ],
+    "questaoSha256": "b4cee125344062207a02a78f74e56538944e70dafca43296eb5f1a8eecb13806",
+    "comentarioSha256": "8735897a78bbcfa501bb5407e311d54c17a37bbd308d58977d90628caeef5666"
+   }
   },
   "trauma-1625": {
    "tema": "trauma",
@@ -80584,7 +81015,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80599,7 +81030,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "f48e7d26d09c1d7f17b2efacadffdac47d60c203605dad4a17d2d435ed8198fb"
+   "questaoSha256": "f48e7d26d09c1d7f17b2efacadffdac47d60c203605dad4a17d2d435ed8198fb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Tratamento",
+       "O lado medial",
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "tratamento-c73151d3",
+       "o-lado-medial-2c6e9a4b",
+       "canto-posterolateral-e1623413",
+       "tratamento-0fd132be"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "f4048d9e9a908b44c21f5cc51b8bda4ff63623b868be70366650b7920e87ac35"
+     }
+    ],
+    "questaoSha256": "f48e7d26d09c1d7f17b2efacadffdac47d60c203605dad4a17d2d435ed8198fb",
+    "comentarioSha256": "8f5230fc9d9db98e0e2d3b21b0b0ec825160054081423232d53683618715479e"
+   }
   },
   "trauma-1626": {
    "tema": "trauma",
@@ -80608,7 +81067,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80623,7 +81082,33 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "300a2c2df04838fa8b2a4c8b4a31289def23ffec45e288ca411a6cd86fb3a647"
+   "questaoSha256": "300a2c2df04838fa8b2a4c8b4a31289def23ffec45e288ca411a6cd86fb3a647",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Canto posterolateral",
+       "Tratamento"
+      ],
+      "blocos": [
+       "canto-posterolateral-5cf8f764",
+       "canto-posterolateral-e1623413",
+       "tratamento-c73151d3"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "712ed0d001aea3005f4156bfead49641a6e23acafe7c4def85914f5974e97863"
+     }
+    ],
+    "questaoSha256": "300a2c2df04838fa8b2a4c8b4a31289def23ffec45e288ca411a6cd86fb3a647",
+    "comentarioSha256": "8912424b48e4213da69d50501cf9e2a7528a8c6124d2bad0c14ecf3bdbc3d3bf"
+   }
   },
   "trauma-1627": {
    "tema": "trauma",
@@ -80632,7 +81117,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80647,7 +81132,36 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "83aab5940762922eca9bd3f766fce3c293e4c1679235d83754cc04938da9d52c"
+   "questaoSha256": "83aab5940762922eca9bd3f766fce3c293e4c1679235d83754cc04938da9d52c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Tratamento",
+       "Cruzado posterior: a pedra fundamental",
+       "A artéria poplítea"
+      ],
+      "blocos": [
+       "tratamento-1a4fc511",
+       "tratamento-186e598b",
+       "cruzado-posterior-a-pedra-fundamental-5fe7035a",
+       "a-arteria-poplitea-a5075ff5",
+       "tratamento-0fd132be"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "706c4b9aed53937efe3282a2d56ae72b0fa137134e0cca885709aa59bd5a8067"
+     }
+    ],
+    "questaoSha256": "83aab5940762922eca9bd3f766fce3c293e4c1679235d83754cc04938da9d52c",
+    "comentarioSha256": "5d9ee6905812fbe667b05327cf934983dcd9ee5d6ca4ddfa70420912b85305fb"
+   }
   },
   "trauma-1628": {
    "tema": "trauma",
@@ -80680,7 +81194,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80695,7 +81209,33 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "27a849ea297741ef05b75301381a009e1262e735d6e379273f2baa0e21d8f222"
+   "questaoSha256": "27a849ea297741ef05b75301381a009e1262e735d6e379273f2baa0e21d8f222",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "O nervo fibular comum"
+      ],
+      "blocos": [
+       "o-nervo-fibular-comum-8a85bf5b",
+       "o-nervo-fibular-comum-92ca53f7",
+       "o-nervo-fibular-comum-6c2619c5",
+       "o-nervo-fibular-comum-05d3e14c"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "5dd68129cbac4c5f7dd645af119b9df2c9d3b0e36889b8dd8d847094f798ad66"
+     }
+    ],
+    "questaoSha256": "27a849ea297741ef05b75301381a009e1262e735d6e379273f2baa0e21d8f222",
+    "comentarioSha256": "6c71683620f0628a1047a78ebd6bec487093458e45b15e6060a13cec3bd50f84"
+   }
   },
   "trauma-1630": {
    "tema": "trauma",
@@ -80704,7 +81244,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80719,7 +81259,35 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "6894605a2f2166c4ed10603eb6a720a74167cb6b33ee5e10001599c58bffcc5f"
+   "questaoSha256": "6894605a2f2166c4ed10603eb6a720a74167cb6b33ee5e10001599c58bffcc5f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Imagem",
+       "Canto posterolateral",
+       "Cruzado posterior: a pedra fundamental"
+      ],
+      "blocos": [
+       "imagem-1f49da70",
+       "canto-posterolateral-04216df0",
+       "cruzado-posterior-a-pedra-fundamental-ed726e98",
+       "imagem-ef4a6509"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "dd6ce15ef115d182bafde296f491fdc79edf896c5aad1e3bcc05269d0c6996d9"
+     }
+    ],
+    "questaoSha256": "6894605a2f2166c4ed10603eb6a720a74167cb6b33ee5e10001599c58bffcc5f",
+    "comentarioSha256": "58dcaabeb9369d2186f04e993bc5573ca8cf8e4aa2fd92eda24ab1a0d711f911"
+   }
   },
   "trauma-1631": {
    "tema": "trauma",
