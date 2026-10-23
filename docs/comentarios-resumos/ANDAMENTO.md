@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1262 |
+| pendente | 1236 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 120 |
+| pendente-fonte | 126 |
 | pendente-inspecao-imagem | 158 |
-| revisada | 732 |
+| revisada | 752 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -30,14 +30,14 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 60 | 0 | 68 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 0 | 0 | 73 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 0 | 0 | 76 |
-| Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 44 | 0 | 19 |
+| Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 46 | 0 | 17 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 0 | 0 | 45 |
-| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 7 | 0 | 66 |
-| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 0 | 0 | 39 |
+| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 27 | 0 | 46 |
+| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 1 | 0 | 38 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 1 | 0 | 82 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 0 | 0 | 123 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 1 | 0 | 44 |
-| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 50 | 0 | 105 |
+| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 51 | 0 | 104 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 1 | 0 | 48 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 0 | 0 | 66 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 1 | 0 | 52 |
