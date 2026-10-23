@@ -7993,18 +7993,42 @@
   "conferido": false
  },
  "trauma-0663": {
+  "conceito": "Um projétil retido não é retirado automaticamente só porque contém chumbo. O risco muda quando ele está **dentro de uma articulação**: o capítulo destaca a absorção de chumbo pelo **líquido sinovial**, fundamento para a retirada intra-articular.\n\nEsse mecanismo é diferente da indicação de descompressão por um projétil no canal vertebral. No primeiro caso, a preocupação é a exposição ao ambiente articular e a absorção; no segundo, a decisão neurológica depende de compressão e evolução do déficit. Misturar essas razões pode levar à falsa regra de retirar qualquer fragmento em qualquer localização (resumo do Rockwood, 10ª ed., cap. 49, “Ferimento da coluna por arma de fogo”).\n\nA fonte também relata intoxicação sistêmica a partir da coluna como raríssima, em casos com fragmento no disco. Isso reforça a importância do ambiente onde o chumbo está, sem permitir declarar risco zero em todas as demais posições. A pergunta procura a localização que caracteriza a indicação pelo risco de intoxicação.\n\nO resumo da Biblioteca discute toxicidade e descompressão separadamente nessa seção.",
+  "correta": "**A: intra-articular.** A exposição ao líquido sinovial favorece absorção de chumbo e fundamenta a retirada. A localização, e não apenas a presença do metal, explica a indicação perguntada.",
   "incorretas": {
-   "B": "**Encapsula.** No músculo, o projétil é envolvido por tecido fibroso e raramente precisa ser retirado.",
-   "C": "**Encapsula.** No osso diafisário o projétil fica isolado e não costuma ser absorvido.",
-   "D": "**Encapsula.** Na metáfise também não há dissolução significativa, desde que não haja comunicação articular."
+   "B": "**Intramuscular não oferece o ambiente sinovial descrito.** Não é a localização que caracteriza essa indicação por absorção de chumbo. Isso não significa ignorar sintomas ou outras complicações de um fragmento em partes moles.",
+   "C": "**Estar na diáfise não equivale a estar na articulação.** A opção identifica osso, sem o contato com líquido sinovial que fundamenta a resposta. Não há na fonte uma regra de retirada universal de projétil diafisário por toxicidade.",
+   "D": "**Metáfise também não é sinônimo de espaço articular.** A região pode ser próxima da articulação, mas a alternativa não diz que o projétil está dentro dela. A indicação específica se liga ao ambiente sinovial, não à simples proximidade anatômica."
   },
-  "conceito": "**O projétil retido costuma ser bem tolerado.** Fragmentos de chumbo em **músculo**, partes moles ou **osso** são envolvidos por tecido fibroso e ficam isolados, com absorção sistêmica mínima. Por isso, a regra é **não** caçar projéteis: a cirurgia para retirá-los costuma causar mais dano do que benefício.\n\n**A exceção intra-articular.** Dentro da **articulação**, o **líquido sinovial**, levemente ácido e rico em enzimas, **dissolve o chumbo** continuamente. O resultado é duplo: **sinovite** local, com destruição da cartilagem e **artrose** rápida (a artropatia por chumbo), e **absorção sistêmica**, com **intoxicação por chumbo** (saturnismo): anemia, dor abdominal, neuropatia, alterações cognitivas e renais, às vezes anos depois. Além disso, o fragmento solto age como **corpo livre** e lesa a cartilagem mecanicamente. Por isso, projéteis **intra-articulares** devem ser **retirados**, geralmente por **artroscopia** ou artrotomia.\n\n**Outras indicações de retirada.** Projétil em **bursa** ou bainha tendínea (mesmo mecanismo de dissolução), junto a **nervo** com sintomas, dentro de **vaso** ou com risco de migração embólica, **palpável** e doloroso sob a pele, no **canal medular** com déficit progressivo, ou associado a **infecção**. Também se dosam os níveis de chumbo quando há muitos fragmentos ou sintomas.\n\n**O resto do tratamento.** Ferimentos de **baixa energia**: limpeza das feridas, antibiótico por curto período e fixação conforme a fratura (muitas vezes haste, como numa fratura fechada). **Alta energia**: desbridamento amplo e controle de danos. Projéteis que atravessam o **intestino** antes do osso ou da articulação exigem antibiótico de amplo espectro e desbridamento.\n\n**Na prova:** retirar projétil **intra-articular** pelo risco de **intoxicação por chumbo** e artropatia; em músculo e osso, geralmente deixar.",
-  "correta": "**Intra-articular.** O líquido sinovial dissolve o chumbo, causando sinovite, destruição da cartilagem e absorção sistêmica com risco de intoxicação, o que indica a retirada.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.6"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Ferimento da coluna por arma de fogo."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Ferimento da coluna por arma de fogo"
+     ],
+     "blocos": [
+      "ferimento-da-coluna-por-arma-de-fogo-0722ff3c",
+      "ferimento-da-coluna-por-arma-de-fogo-0b91ee1f"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "8ff45c6300e992fe2315167ee572a28ea16cdea40ea633f4674a2a8e352a2e80"
+    }
+   ],
+   "questaoSha256": "35500292ebedb1b7563725fc0281395b947bb869458892e488eac399890d825e",
+   "comentarioSha256": "24cd01d11c5ad132e9674c944af144b3b882e23b71e8571210e665104e72a70f"
+  }
  },
  "trauma-0664": {
   "incorretas": {
@@ -8816,15 +8840,43 @@
   }
  },
  "trauma-0706": {
+  "conceito": "O cenário que mais exige atenção é a fratura osteoporótica com **lesão medular aguda**, pois pode haver compressão neural que precisa de **descompressão e estabilização**. Essa é a indicação cirúrgica mais consistente entre as alternativas; cimento isolado não resolve uma medula comprimida.\n\nO resumo diferencia a dor refratária sem déficit, em que pode ser discutida cimentação, dos padrões com déficit ou falha posterior, que pedem outra avaliação de estabilização. A principal indicação de cirurgia aberta é a compressão neural com déficit, especialmente **agudo, incompleto e progressivo** (resumo do Rockwood, 10ª ed., cap. 49, “Quando operar e o que fazer”).\n\nIsso também impede ensinar que déficit crônico nunca seja operado. Dor, deformidade e progressão podem justificar intervenção tardia; a palavra “crônico”, isolada, não define indicação nem possibilidade de recuperação. O enunciado oferece descrições amplas, e a melhor resposta é a lesão aguda, sem transformar as outras condições em proibições absolutas.\n\nLeia no resumo da Biblioteca como a decisão separa descompressão neural, estabilização mecânica e tratamento da dor.",
+  "correta": "**D: cirúrgico em pacientes com lesão medular aguda.** É o cenário mais diretamente ligado à indicação de cirurgia aberta na fonte, sobretudo diante de compressão com déficit incompleto e progressivo. O planejamento precisa tratar a ameaça neural e a estabilidade.",
   "incorretas": {
-   "A": "**Não é automática.** A vertebroplastia é reservada à dor refratária com fratura ativa, e não a toda fratura por compressão sem déficit.",
-   "B": "**Contraindicação.** Com lesão medular, a cifoplastia não descomprime e o cimento pode piorar a compressão.",
-   "C": "**Não é automática.** O déficit crônico e estável raramente melhora com cirurgia, e a indicação depende de outros fatores."
+   "A": "**Compressão sem déficit não torna a vertebroplastia obrigatória.** O capítulo discute indicação seletiva por dor refratária e evidência controversa. A ausência de déficit é parte da avaliação, não uma indicação universal de cimento.",
+   "B": "**Cifoplastia não substitui descompressão da medula.** Criar cavidade e injetar cimento não resolve por si só compressão neural com déficit. Esse cenário exige avaliar cirurgia de descompressão e estabilização.",
+   "C": "**Crônico é uma descrição temporal insuficiente.** Pode haver indicação tardia em casos selecionados, mas é preciso avaliar progressão, dor, deformidade e compressão. A alternativa não oferece esses critérios e é menos específica que a ameaça neural aguda destacada pela fonte."
   },
-  "conceito": "**A fratura vertebral osteoporótica.** É a fratura por fragilidade mais comum. A grande maioria é tratada **sem cirurgia**: analgesia, mobilização precoce, órtese para conforto e, principalmente, **tratamento da osteoporose** para evitar novas fraturas. A maior parte melhora em semanas a poucos meses.\n\n**Quando operar.** A cirurgia aberta fica para situações específicas. **Lesão medular ou radicular aguda** por retropulsão de fragmentos ou colapso com compressão do canal: **descompressão** e **estabilização** (geralmente posterior, com parafusos pediculares **cimentados** para melhorar a ancoragem no osso fraco). **Instabilidade** mecânica progressiva e **deformidade** cifótica grave com dor. **Pseudartrose** (fenda de Kümmell, com gás no corpo) com colapso progressivo ou déficit.\n\n**As técnicas percutâneas.** A **vertebroplastia** e a **cifoplastia** injetam cimento no corpo vertebral e são indicadas para **dor refratária** ao tratamento clínico, com fratura ainda ativa (edema no **STIR**), **sem** retropulsão significativa e **sem déficit neurológico**. Não são o tratamento automático de toda fratura por compressão sem déficit, e são **contraindicadas** quando há compressão neural, porque não descomprimem e o cimento pode extravasar para o canal. A cifoplastia tenta restaurar parte da altura com um balão.\n\n**O déficit crônico.** Um déficit neurológico **antigo e estável** raramente melhora com cirurgia; a indicação depende de progressão, dor e deformidade, e não é automática.\n\n**Na prova:** fratura osteoporótica da coluna com **lesão medular aguda** = **cirurgia** (descompressão e estabilização); vertebroplastia e cifoplastia são para **dor refratária sem déficit**.",
-  "correta": "**Cirúrgico em pacientes com lesão medular aguda.** Há compressão a aliviar e função a preservar, o que exige descompressão e estabilização; as técnicas de cimentação não descomprimem.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura vertebral osteoporótica e cimentação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura vertebral osteoporótica e cimentação"
+     ],
+     "blocos": [
+      "fratura-vertebral-osteoporotica-e-cimentacao-12da0d49",
+      "fratura-vertebral-osteoporotica-e-cimentacao-26668c15",
+      "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "b36a87c06cbc7f1fc08426aa63eceb85e52ee102be2785ccef446297401434a5"
+    }
+   ],
+   "questaoSha256": "0fbb1b017be3083310d7f7c8350bd372f71e592ab47605e7f3adea2409017e15",
+   "comentarioSha256": "78b21c031cab75346f1813d8bc0c97dd594aa282632b417f4be2575f5cd33f1a"
+  }
  },
  "trauma-0707": {
   "conceito": "No colo femoral, a pergunta decisiva é **qual lado do osso contém o traço**. Sob carga, a cortical superior recebe tensão e a inferior compressão. A fissura superior abre a cada passo; a inferior tende a fechar.\n\nA lesão de **tensão, superior**, tem maior risco de progressão para fratura completa e desviada, com pseudartrose e osteonecrose. Por isso o capítulo indica fixação com parafusos paralelos ou parafuso deslizante do quadril. Para a compressão inferior, descreve restrição de carga por pelo menos seis semanas e seguimento radiográfico semanal (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nO objetivo é impedir a catástrofe mecânica antes de ela ocorrer. Tratar os dois lados como iguais apaga o motivo da indicação precoce. A comparação está no resumo da Biblioteca.",
@@ -14689,31 +14741,88 @@
   "conferido": false
  },
  "trauma-1098": {
-  "conceito": "### Primeiro a morfologia, depois o complexo posterior\n\nA classificação AO Spine para a coluna toracolombar começa perguntando se há translação (tipo C) ou lesão da banda de tensão (tipo B). Se nenhuma das duas existe, a fratura é por compressão, tipo A, graduada pelo quanto o corpo vertebral foi destruído: A1 atinge um platô sem o muro posterior, A2 é o traço em pinça, A3 é a explosão incompleta, com um platô e o muro posterior, e A4 é a ==explosão completa==, com os dois platôs e o muro posterior.\n\nNas imagens, o corpo de L2 está fragmentado do platô superior ao inferior, com recuo do muro posterior para o canal na tomografia, e os elementos posteriores seguem alinhados, sem sinal de distração ou deslizamento. É uma fratura **A4**, que em paciente sem déficit pode ser tratada de forma conservadora ou cirúrgica conforme a cifose e a integridade do complexo ligamentar posterior.\n\n> **Na prova:** explosão com os dois platôs e o muro posterior, sem lesão posterior, é AO A4.",
-  "correta": "**Correta.** O corpo de L2 está explodido nos dois platôs, com o muro posterior comprometido e sem lesão da banda de tensão.",
+  "conceito": "A tomografia mostra **cominuição de L2 envolvendo os dois platôs e a parede posterior**, com fragmento recuado para o canal. Esse conjunto define **explosão completa, AO A4**. A ausência de déficit no caso é uma informação importante, mas não muda o nome da morfologia.\n\nA classificação faz duas perguntas sobre o corpo: o muro posterior está comprometido? Quantos platôs estão fraturados? Parede posterior mais um platô é A3; parede posterior mais os dois é A4. A1, em contraste, é cunha de um platô sem muro posterior (resumo do Rockwood, 10ª ed., cap. 49, “A AO Spine revisada”).\n\nNas imagens fornecidas, o componente que fundamenta a resposta é a destruição do corpo até ambos os platôs e do muro posterior. Não é preciso inventar um percentual de invasão ou concluir integridade ligamentar definitiva por essa única figura. B3 exigiria falha anterior em hiperextensão; C, translação/luxação entre segmentos, componentes que não definem o padrão mostrado.\n\nA classificação também não decide a cirurgia isoladamente. Exame neurológico, complexo posterior, alinhamento e suporte precisam completar a avaliação. Compare A1 a A4 no resumo da Biblioteca para revisar a leitura.",
+  "correta": "**B: A4.** A fratura compromete ambos os platôs e a parede posterior de L2, compatível com explosão completa. “Completa” descreve a morfologia, não uma lesão neurológica completa.",
   "incorretas": {
-   "A": "**Errada: só um platô, sem muro.** O A1 é a fratura em cunha, que não compromete o muro posterior.",
-   "C": "**Errada: exige lesão anterior por hiperextensão.** O B3 rompe a banda de tensão anterior, o que não aparece nas imagens.",
-   "D": "**Errada: não há translação.** O tipo C tem deslocamento entre as vértebras, ausente neste caso."
-  },
-  "referencias": [],
-  "geradoEm": "2026-09-26",
-  "conferido": false
- },
- "trauma-1099": {
-  "conceito": "**A imagem.** Radiografia **AP** da coluna lombar. No nível de **L2**, os **pedículos** estão mais **afastados** entre si que nas vértebras acima e abaixo: a **distância interpedicular** está aumentada. Esse é o sinal radiográfico que sugere a fratura em **explosão**.\n\n**A fratura em explosão (burst).** É causada por **compressão axial**. O disco é empurrado para dentro do corpo vertebral, que \"explode\" para **todos os lados**. A diferença essencial em relação à fratura em cunha simples é que a explosão acomete também a **parede posterior** do corpo, e fragmentos podem ser empurrados para **dentro do canal** vertebral (**retropulsão**), com risco neurológico.\n\n**Os sinais da explosão na radiografia.**\n- **AP**: **aumento da distância interpedicular** (o corpo se alarga e afasta os pedículos), às vezes com fratura vertical da lâmina.\n- **Perfil**: perda da altura **anterior e posterior** do corpo; **parede posterior** abaulada ou com fragmento para trás (perda da linha do muro posterior).\n- A **tomografia** confirma a retropulsão e mede a ocupação do canal.\n\n**Fratura em cunha x explosão.**\n\n| Característica | Cunha (compressão) | Explosão |\n|---|---|---|\n| Coluna anterior | Lesada (encunhamento) | Lesada |\n| **Parede posterior** | **Íntegra** | **Lesada** (retropulsão) |\n| Distância interpedicular | Normal | **Aumentada** |\n| Risco neurológico | Baixo | Maior |\n\n**As classificações.**\n- **Denis** (três colunas): a explosão lesa as colunas **anterior e média**.\n- **AO Spine toracolombar**: A3 (explosão incompleta, uma placa terminal) e **A4** (explosão completa, as duas placas terminais).\n- **TLICS**: soma a morfologia, o **complexo ligamentar posterior** e o estado neurológico.\n\n**O tratamento.** A explosão **sem déficit neurológico** e com o complexo ligamentar posterior **íntegro** pode ser tratada **sem cirurgia** (órtese ou mobilização). A cirurgia (descompressão e estabilização) é indicada com **déficit neurológico**, lesão do complexo ligamentar posterior ou deformidade importante.",
-  "correta": "**Correta: B (aumento da distância interpedicular).** Na radiografia AP, o **aumento da distância interpedicular** em L2 indica que o corpo vertebral se alargou para os lados, o que sugere uma fratura em **explosão**, com acometimento da parede posterior.",
-  "incorretas": {
-   "A": "O **desvio lateral** sugere um componente de translação ou rotação (lesão mais instável), e não o mecanismo de explosão.",
-   "C": "O **aumento da distância interespinhosa** sugere lesão do complexo ligamentar posterior por **distração** (flexão-distração), e não a explosão.",
-   "D": "O **encunhamento anterior** isolado é o sinal da fratura em **cunha** (compressão), com a parede posterior íntegra. Na explosão, a altura posterior também diminui."
+   "A": "**A1 preserva a parede posterior e envolve um platô.** A tomografia apresenta destruição mais extensa, com muro posterior e os dois platôs comprometidos. Uma cunha simples não explica esses achados.",
+   "C": "**B3 é falha anterior por hiperextensão.** O padrão a classificar aqui é o corpo explodido. Não substituir a leitura dos platôs e do muro por outro mecanismo sem os achados correspondentes.",
+   "D": "**C exige translação ou luxação.** Retropulsão de um fragmento para o canal não equivale a deslocamento de uma vértebra sobre outra. A resposta pedida é a explosão A4 mostrada."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS; Fratura em explosão (A3 e A4)."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Classificações: estabilidade, Denis, AO Spine e TLICS",
+      "Fratura em explosão (A3 e A4)"
+     ],
+     "blocos": [
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f",
+      "fratura-em-explosao-a3-e-a4-0ee57d4b",
+      "fratura-em-explosao-a3-e-a4-c49f544e"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "998ecc69a0adb4448f304ef8302985d5e3f2052a5d5e5a9406743d05c9eaf596"
+    }
+   ],
+   "questaoSha256": "19ac3ad57b82d279f754508bbebb097bd4934a380759baccef220ee3f6dfa886",
+   "comentarioSha256": "c17f60e233c4adfb8168475504f856a1017192bfecac576af1c56d1fe0d43c60"
+  }
+ },
+ "trauma-1099": {
+  "conceito": "No AP, observe a largura entre os pedículos de L2 e compare com os níveis vizinhos. A vértebra fraturada aparece mais aberta transversalmente: o **aumento da distância interpedicular** é o sinal que sugere **explosão**. A imagem não fornece escala para atribuir uma medida numérica nova.\n\nO corpo falha em compressão e se expande lateralmente, afastando os pedículos. Na explosão, a parede posterior também está envolvida; a tomografia avalia melhor o muro e eventual retropulsão. Assim, o AP oferece um sinal de suspeita que se conecta à anatomia da fratura, não um substituto para toda a avaliação (resumo do Rockwood, 10ª ed., cap. 49, “O que ler na radiografia”).\n\nA distância interespinhosa conta outra história: seu aumento sugere abertura da banda de tensão posterior. Já a translação lateral envolve deslocamento entre segmentos. Separar as medidas ajuda a não chamar toda alteração do AP de um mesmo mecanismo.\n\nVeja no resumo da Biblioteca as duas distâncias e sua relação com explosão e falha em tensão.",
+  "correta": "**B: aumento da distância interpedicular.** O afastamento dos pedículos no nível fraturado corresponde à expansão do corpo na explosão. É a alteração solicitada no AP.",
+  "incorretas": {
+   "A": "**Translação lateral descreve deslocamento entre vértebras.** É componente de fratura-luxação tipo C, diferente do alargamento interno da vértebra explodida. Não confundir mudança de alinhamento com maior distância entre seus pedículos.",
+   "C": "**A medida entre espinhosos avalia abertura posterior.** Seu aumento sugere falha da banda de tensão, tipo B. A pista da explosão oferecida nesta pergunta é interpedicular.",
+   "D": "**Cunha anterior não é específica de explosão.** Pode ocorrer numa compressão simples com muro posterior preservado. O afastamento dos pedículos é o sinal do AP que aponta para a expansão do corpo além dessa cunha."
+  },
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Imagem: radiografia, tomografia e ressonância; Fratura em explosão (A3 e A4); Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Imagem: radiografia, tomografia e ressonância",
+      "Fratura em explosão (A3 e A4)",
+      "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+     ],
+     "blocos": [
+      "imagem-radiografia-tomografia-e-ressonancia-ec5d457e",
+      "imagem-radiografia-tomografia-e-ressonancia-eb9ef889",
+      "imagem-radiografia-tomografia-e-ressonancia-9f3304c6",
+      "fratura-em-explosao-a3-e-a4-0ee57d4b",
+      "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "ca76862884bc77e87193c288f5b0ba37c1efa596a78c178b20c6e9e3f99de7db"
+    }
+   ],
+   "questaoSha256": "98c642a2b1bc92eca0c0e44c8d6239eb0b6a8a7baff863fdceb56d60f20f9655",
+   "comentarioSha256": "d33b64f298dc0eb6f3c1f1a10429d1db17e6975c1e2bea124c8f471c0253b8c5"
+  }
  },
  "trauma-1100": {
   "incorretas": {
