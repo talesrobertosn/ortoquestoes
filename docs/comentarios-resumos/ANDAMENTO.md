@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 769 |
+| pendente | 730 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 220 |
-| pendente-inspecao-imagem | 120 |
-| revisada | 1163 |
+| pendente-fonte | 225 |
+| pendente-inspecao-imagem | 114 |
+| revisada | 1203 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -29,7 +29,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 11 | 0 | 121 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 76 | 0 | 52 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 60 | 0 | 13 |
-| Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 12 | 0 | 64 |
+| Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 52 | 0 | 24 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 46 | 0 | 17 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 27 | 0 | 18 |
 | Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 40 | 0 | 33 |
