@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 769,
+  "pendente": 730,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 220,
-  "pendente-inspecao-imagem": 120,
-  "revisada": 1163
+  "pendente-fonte": 225,
+  "pendente-inspecao-imagem": 114,
+  "revisada": 1203
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -158,10 +158,9 @@
    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
-    "pendente": 51,
-    "pendente-fonte": 2,
-    "pendente-inspecao-imagem": 6,
-    "revisada": 12
+    "pendente": 12,
+    "pendente-fonte": 7,
+    "revisada": 52
    }
   },
   "rockwood10-53-colo-femur": {
@@ -41092,7 +41091,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41107,7 +41106,32 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "c920e12f2633062393c015fbebaf24ac9f5c403b3799fa2224935ee8fee8ca52"
+   "questaoSha256": "c920e12f2633062393c015fbebaf24ac9f5c403b3799fa2224935ee8fee8ca52",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--000b19b5",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "c2460dc55cd9adb111c8b16b91779dfdf7c184a66712356b47d3df2243ff1131"
+     }
+    ],
+    "questaoSha256": "c920e12f2633062393c015fbebaf24ac9f5c403b3799fa2224935ee8fee8ca52",
+    "comentarioSha256": "f51ab17925289f4b280e956ed2efe66c4f60fcd85c84af47303804dbb4769821"
+   }
   },
   "quadril-0040": {
    "tema": "quadril",
@@ -41141,7 +41165,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41156,7 +41180,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "c20f875c177d5f5e585f9e67f54209508a776d7c20b99d3fd38483327a832c74"
+   "questaoSha256": "c20f875c177d5f5e585f9e67f54209508a776d7c20b99d3fd38483327a832c74",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+       "Anatomia aplicada: colunas, paredes, teto e vasos",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+       "classificacao-de-letournel-6291b238",
+       "classificacao-de-letournel-278b7b5b"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "651b75b3d31f2e4c5a8ad4860456c765859ac7b9933eaed534bf41c2edff6952"
+     }
+    ],
+    "questaoSha256": "c20f875c177d5f5e585f9e67f54209508a776d7c20b99d3fd38483327a832c74",
+    "comentarioSha256": "32b08d2cdbad545a2dd5accdbb9fc955bccb17bc87594d1b7a4961c1169ba400"
+   }
   },
   "quadril-0084": {
    "tema": "quadril",
@@ -41214,7 +41267,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41229,7 +41282,32 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "6e998f9876913ebfe458f63e887e07277ad9de7e8a3da80f4b0261fb477c59fe"
+   "questaoSha256": "6e998f9876913ebfe458f63e887e07277ad9de7e8a3da80f4b0261fb477c59fe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "a701c6abb3bf147661fa44d092a916c769d65ae768290b570bb9178f47ef7135"
+     }
+    ],
+    "questaoSha256": "6e998f9876913ebfe458f63e887e07277ad9de7e8a3da80f4b0261fb477c59fe",
+    "comentarioSha256": "84c05508c15de2358cbe4e6e1f79acab3fad7c3438e269bff2394bdce35aef00"
+   }
   },
   "quadril-0127": {
    "tema": "quadril",
@@ -41363,8 +41441,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura quadril-0224-1.png aberta: três trajetos A/B/C até D/E. O corpo do resumo 51 descreve Gibson modificada com incisão reta e sua relação muscular, mas não nomeia Moed nem correlaciona independentemente CDE e BDE aos epônimos. O gabarito A exige distinguir exatamente Moed/Gibson. Falta descrição/legenda original com essa correlação, não substituível pelo contexto de questões ou comentário anterior. A oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41378,7 +41456,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "b341a15a13fb4fcddad49ba7dde8e1453dd79cf493c72a6f4e9e4735eb4f447f"
+   "questaoSha256": "b341a15a13fb4fcddad49ba7dde8e1453dd79cf493c72a6f4e9e4735eb4f447f",
+   "pendencia": "Figura quadril-0224-1.png aberta: três trajetos A/B/C até D/E. O corpo do resumo 51 descreve Gibson modificada com incisão reta e sua relação muscular, mas não nomeia Moed nem correlaciona independentemente CDE e BDE aos epônimos. O gabarito A exige distinguir exatamente Moed/Gibson. Falta descrição/legenda original com essa correlação, não substituível pelo contexto de questões ou comentário anterior. A oficial preservada."
   },
   "quadril-0229": {
    "tema": "quadril",
@@ -41486,7 +41565,7 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41501,7 +41580,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "8fdd23322ad51cbd1268bb81cf3ffa822ffb8a537d0d96a94db50b743d7326df"
+   "questaoSha256": "8fdd23322ad51cbd1268bb81cf3ffa822ffb8a537d0d96a94db50b743d7326df",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Quem pode ficar sem cirurgia",
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+      ],
+      "blocos": [
+       "quem-pode-ficar-sem-cirurgia-8a28effd",
+       "quem-pode-ficar-sem-cirurgia-f17537a8",
+       "quem-pode-ficar-sem-cirurgia-b45eec2a",
+       "quem-pode-ficar-sem-cirurgia-562ca981",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "a952f9c927a3009358ee110619cb5ba261712f958e4b831b3c23bef07747880f"
+     }
+    ],
+    "questaoSha256": "8fdd23322ad51cbd1268bb81cf3ffa822ffb8a537d0d96a94db50b743d7326df",
+    "comentarioSha256": "dc969144b3ec766a0fa3ac8841846f96163677c9ec80b2921843ba3ca7fff129"
+   }
   },
   "quadril-0298": {
    "tema": "quadril",
@@ -41764,7 +41871,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41779,7 +41886,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "46185b1d6e13b7840e85f49e868cc6262dfbce4ca980ad74d53f79eba80af9c7"
+   "questaoSha256": "46185b1d6e13b7840e85f49e868cc6262dfbce4ca980ad74d53f79eba80af9c7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Complicações",
+       "Resultados: a redução manda",
+       "Ossificação heterotópica"
+      ],
+      "blocos": [
+       "complicacoes-738e51f3",
+       "resultados-a-reducao-manda-3fa0178c",
+       "ossificacao-heterotopica-32f620e0",
+       "complicacoes-7a30635a"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "e901fdba958c936e2a20af83554614b9d5d8f0df640e5fb777639479bd30b028"
+     }
+    ],
+    "questaoSha256": "46185b1d6e13b7840e85f49e868cc6262dfbce4ca980ad74d53f79eba80af9c7",
+    "comentarioSha256": "4f03192193b409aa8cb1ee53fbc5a163626ef04eddc3f52870a48d637e870233"
+   }
   },
   "quadril-0335": {
    "tema": "quadril",
@@ -41788,7 +41923,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41803,7 +41938,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "25b784030a0dd18df5113ac8b3c513989d4da2af2bbff4ed08dbd2792bec4d99"
+   "questaoSha256": "25b784030a0dd18df5113ac8b3c513989d4da2af2bbff4ed08dbd2792bec4d99",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "classificacao-de-letournel-cb46defc",
+       "classificacao-de-letournel-18f9732d",
+       "classificacao-de-letournel-a25f459a",
+       "classificacao-de-letournel-3f7fc233"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "88855222e4cb83c9a8e9d151c79e8f9eaed8602a7194634d2fceee6b7db9b229"
+     }
+    ],
+    "questaoSha256": "25b784030a0dd18df5113ac8b3c513989d4da2af2bbff4ed08dbd2792bec4d99",
+    "comentarioSha256": "2da74169ef9c56f079a737e9a1d35276ac468d73e7fcc61a9df09331f486c343"
+   }
   },
   "quadril-0413": {
    "tema": "quadril",
@@ -41813,8 +41974,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 51 sustenta que a ilioinguinal não abre o quadril íntegro, mas não delimita o alcance até o forame obturatório nem confirma todos os limites da alternativa B (quadrilátera até a espinha). A explicação de D isolada não basta para conferir todas as opções. Falta descrição técnica completa do acesso com esses limites, citada no enunciado como Callaghan. Comentário anterior e D oficial preservados; a revisão local incompleta foi retirada antes da publicação.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41828,7 +41989,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "b4578711056f4443331792649d475c8dda7204d6c19eee2550e4253a4a8b2796"
+   "questaoSha256": "b4578711056f4443331792649d475c8dda7204d6c19eee2550e4253a4a8b2796",
+   "pendencia": "O corpo do resumo 51 sustenta que a ilioinguinal não abre o quadril íntegro, mas não delimita o alcance até o forame obturatório nem confirma todos os limites da alternativa B (quadrilátera até a espinha). A explicação de D isolada não basta para conferir todas as opções. Falta descrição técnica completa do acesso com esses limites, citada no enunciado como Callaghan. Comentário anterior e D oficial preservados; a revisão local incompleta foi retirada antes da publicação."
   },
   "quadril-0414": {
    "tema": "quadril",
@@ -41838,7 +42000,7 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41853,7 +42015,32 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "428c50dfb3e4434dfaa734ddef0aef1d6198c547853688610cf2a4844543480f"
+   "questaoSha256": "428c50dfb3e4434dfaa734ddef0aef1d6198c547853688610cf2a4844543480f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-8c8f0d5a",
+       "vias-de-acesso-b5f952c0",
+       "vias-de-acesso-46c79886"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "a6d6dee9b04696f1225e5093f70e9cf175560c2491286f6c498eab801e63d213"
+     }
+    ],
+    "questaoSha256": "428c50dfb3e4434dfaa734ddef0aef1d6198c547853688610cf2a4844543480f",
+    "comentarioSha256": "bf55d6d38d50198ac7282aa160207282bf9ca94e005148d758d5dfa05f46b21c"
+   }
   },
   "quadril-0416": {
    "tema": "quadril",
@@ -41862,7 +42049,7 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41877,7 +42064,32 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "a361536ec81635b3073d359afe37e688a9e3a1693bbfd6d3706ea19ad3e2a1f3"
+   "questaoSha256": "a361536ec81635b3073d359afe37e688a9e3a1693bbfd6d3706ea19ad3e2a1f3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-b5f952c0",
+       "vias-de-acesso-8c8f0d5a",
+       "vias-de-acesso-46c79886"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "108221e8994b2e8e068f5a018fe1dc305556793e28356e8b6453ef1b4b41970a"
+     }
+    ],
+    "questaoSha256": "a361536ec81635b3073d359afe37e688a9e3a1693bbfd6d3706ea19ad3e2a1f3",
+    "comentarioSha256": "6fd09e5eca0b5bbc6832e5bdc79f7b7a963d1575e33c2be139926faacc1a76ed"
+   }
   },
   "quadril-0417": {
    "tema": "quadril",
@@ -41968,7 +42180,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41983,7 +42195,32 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "cf3aeffec24ea0bf93c2b971379c680e2ac257fcab4884fa605bff08f8d92f04"
+   "questaoSha256": "cf3aeffec24ea0bf93c2b971379c680e2ac257fcab4884fa605bff08f8d92f04",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "anatomia-aplicada-d7878510",
+       "anatomia-aplicada-a8c38522",
+       "anatomia-aplicada-666e0ba0"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "062635cac6ca1d3839488b0a4a4c8e4203042e0cb168bbcae2071daf435d49fa"
+     }
+    ],
+    "questaoSha256": "cf3aeffec24ea0bf93c2b971379c680e2ac257fcab4884fa605bff08f8d92f04",
+    "comentarioSha256": "94070d843f5333785d41b190672251e88007fb167aa2cb03b7f1c4bddfc93026"
+   }
   },
   "quadril-0508": {
    "tema": "quadril",
@@ -42081,7 +42318,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42096,7 +42333,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "8915b39009a3df2e45d650ddf3165b7b504e37fe21ea36772ff0fa59e964ccdc"
+   "questaoSha256": "8915b39009a3df2e45d650ddf3165b7b504e37fe21ea36772ff0fa59e964ccdc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+       "Tomografia e exame sob anestesia",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+       "tomografia-e-exame-sob-anestesia-27888975",
+       "classificacao-de-letournel-18f9732d"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "68519cee7ef4d1fc40edc313c3011c56acfea85b23ead686de44c9ed58711a51"
+     }
+    ],
+    "questaoSha256": "8915b39009a3df2e45d650ddf3165b7b504e37fe21ea36772ff0fa59e964ccdc",
+    "comentarioSha256": "6cc3088168dc534d4ccc188253d5b09556916d80bca9a63ed06327c6257fb99b"
+   }
   },
   "quadril-0515": {
    "tema": "quadril",
@@ -42447,8 +42712,8 @@
    ],
    "prova": "Fellowship Quadril",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42462,7 +42727,34 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "588808af832ef6b23ce306f1163dcd18a0872cc9310aac4e8d46ef1162670387"
+   "questaoSha256": "588808af832ef6b23ce306f1163dcd18a0872cc9310aac4e8d46ef1162670387",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "cf10721ee9ccf4f7fa6af6aa3e41824665d3db2c0c9e6cff30a7762324875c29"
+     }
+    ],
+    "questaoSha256": "588808af832ef6b23ce306f1163dcd18a0872cc9310aac4e8d46ef1162670387",
+    "comentarioSha256": "3136c345c48a029b631493975b3a13d945561d98222a8a39be6fba468242540d"
+   }
   },
   "quadril-0608": {
    "tema": "quadril",
@@ -44135,7 +44427,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44150,7 +44442,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "7307b4135434db16bc9b6b727d1b10cbcbedfe302c620b9e1448a75b70d57e8b"
+   "questaoSha256": "7307b4135434db16bc9b6b727d1b10cbcbedfe302c620b9e1448a75b70d57e8b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Mecanismo de trauma"
+      ],
+      "blocos": [
+       "mecanismo-de-trauma-ba17d763",
+       "mecanismo-de-trauma-855d13d4",
+       "mecanismo-de-trauma-3de9cf62",
+       "mecanismo-de-trauma-41685e6a"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "542f459e75db947e226e065b335867fe4b934740f437704788bf5079731ea737"
+     }
+    ],
+    "questaoSha256": "7307b4135434db16bc9b6b727d1b10cbcbedfe302c620b9e1448a75b70d57e8b",
+    "comentarioSha256": "027d95df46812f67486f8fe54004f00f77b1dee03bc9cbaf2d946246e75d4cef"
+   }
   },
   "trauma-0046": {
    "tema": "trauma",
@@ -45233,8 +45551,8 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 51 sustenta que menor adução favorece impacto na borda, mas a tabela de força pela diáfise com quadril fletido admite qualquer rotação e não estabelece a combinação de rotação interna com cisalhamento da cabeça. As opções C e D diferem só na rotação; falta fonte independente que selecione D nesse mecanismo específico. D oficial preservada, sem baseResumo novo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45248,7 +45566,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "714b46aa3fb9cfa68858b2d29b81f17b9d051c32a121e2a8854089ef71e44718"
+   "questaoSha256": "714b46aa3fb9cfa68858b2d29b81f17b9d051c32a121e2a8854089ef71e44718",
+   "pendencia": "O corpo do resumo 51 sustenta que menor adução favorece impacto na borda, mas a tabela de força pela diáfise com quadril fletido admite qualquer rotação e não estabelece a combinação de rotação interna com cisalhamento da cabeça. As opções C e D diferem só na rotação; falta fonte independente que selecione D nesse mecanismo específico. D oficial preservada, sem baseResumo novo."
   },
   "trauma-0078": {
    "tema": "trauma",
@@ -45257,8 +45576,8 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 51 descreve artroplastia aguda no idoso com impacção grave, lesão da cabeça e parede posterior cominutiva, e urgência do colo ipsilateral no jovem; não estabelece especificamente artroplastia imediata no idoso com fratura do colo associada ao acetábulo, condição exigida por C. Não transportar inferência do bloco contextual para fonte independente; falta a indicação explícita da associação no idoso. C oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45272,7 +45591,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "ac22950de60be73e0e2ce6bebeefc3e26007b5a4fe7845638fef77d7bae49b4b"
+   "questaoSha256": "ac22950de60be73e0e2ce6bebeefc3e26007b5a4fe7845638fef77d7bae49b4b",
+   "pendencia": "O corpo do resumo 51 descreve artroplastia aguda no idoso com impacção grave, lesão da cabeça e parede posterior cominutiva, e urgência do colo ipsilateral no jovem; não estabelece especificamente artroplastia imediata no idoso com fratura do colo associada ao acetábulo, condição exigida por C. Não transportar inferência do bloco contextual para fonte independente; falta a indicação explícita da associação no idoso. C oficial preservada."
   },
   "trauma-0079": {
    "tema": "trauma",
@@ -49579,7 +49899,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49594,7 +49914,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "c564640d9b1fc97553b69ce0eb1a7d011ccf152a1c0a4b3e2ba77ebab48961ae"
+   "questaoSha256": "c564640d9b1fc97553b69ce0eb1a7d011ccf152a1c0a4b3e2ba77ebab48961ae",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Mecanismo de trauma",
+       "Avaliação inicial e lesões associadas"
+      ],
+      "blocos": [
+       "mecanismo-de-trauma-41685e6a",
+       "mecanismo-de-trauma-3de9cf62",
+       "avaliacao-inicial-e-lesoes-associadas-a83518b2"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "6251c8c698af8c3d72b9fb7004be6a5cf9417541445aa8cb47464df6cebacef2"
+     }
+    ],
+    "questaoSha256": "c564640d9b1fc97553b69ce0eb1a7d011ccf152a1c0a4b3e2ba77ebab48961ae",
+    "comentarioSha256": "3984941c1d93418500f357f711b9cbd7f467a03497cfa7b54412ea8bfd1e4a87"
+   }
   },
   "trauma-0216": {
    "tema": "trauma",
@@ -49664,7 +50010,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49679,7 +50025,37 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "3d72c80280c3b97a3b123d9914426403a25715cfc288c58cc67bd39d71228512"
+   "questaoSha256": "3d72c80280c3b97a3b123d9914426403a25715cfc288c58cc67bd39d71228512",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Quem pode ficar sem cirurgia",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "quem-pode-ficar-sem-cirurgia-b7f47596",
+       "quem-pode-ficar-sem-cirurgia-193f0b4c",
+       "classificacao-de-letournel-6291b238",
+       "classificacao-de-letournel-278b7b5b",
+       "quem-pode-ficar-sem-cirurgia-2a347117",
+       "quem-pode-ficar-sem-cirurgia-d12240e0",
+       "quem-pode-ficar-sem-cirurgia-8a28effd"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "7dd2fbde7cf8b550c305cd9ab4f24ffa126e4454106ebc13114be15697278978"
+     }
+    ],
+    "questaoSha256": "3d72c80280c3b97a3b123d9914426403a25715cfc288c58cc67bd39d71228512",
+    "comentarioSha256": "d99acf456d2a24909b2d8c0042ee9ea28ab96129ac53fea86bf4b2cf3f88f62b"
+   }
   },
   "trauma-0218": {
    "tema": "trauma",
@@ -50286,7 +50662,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50301,7 +50677,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "db24da0fb1d024a9ff78e7d3671475f943594a294a9c93075ac769a8a2b3be1a"
+   "questaoSha256": "db24da0fb1d024a9ff78e7d3671475f943594a294a9c93075ac769a8a2b3be1a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Quem pode ficar sem cirurgia",
+       "Tomografia e exame sob anestesia"
+      ],
+      "blocos": [
+       "quem-pode-ficar-sem-cirurgia-8a28effd",
+       "quem-pode-ficar-sem-cirurgia-f17537a8",
+       "quem-pode-ficar-sem-cirurgia-33b5d081",
+       "quem-pode-ficar-sem-cirurgia-b45eec2a",
+       "tomografia-e-exame-sob-anestesia-fdfcd0ed",
+       "tomografia-e-exame-sob-anestesia-e0508ee3"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "692d5a1fbf4685580663dba6f656b431f28f1377357d70a927f834968d1baf00"
+     }
+    ],
+    "questaoSha256": "db24da0fb1d024a9ff78e7d3671475f943594a294a9c93075ac769a8a2b3be1a",
+    "comentarioSha256": "8818767c1557124e8bbd5c347d9a1cf72e4908672504ba33d4f544994ff02621"
+   }
   },
   "trauma-0236": {
    "tema": "trauma",
@@ -53499,7 +53904,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53514,7 +53919,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "4e1a408d3ae36574a7388737461d5d5d95373e40feba20d86dfa0ff009222964"
+   "questaoSha256": "4e1a408d3ae36574a7388737461d5d5d95373e40feba20d86dfa0ff009222964",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "O paciente idoso",
+       "Classificação de LETOURNEL",
+       "Técnica por tipo de fratura",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "o-paciente-idoso-9f04e33f",
+       "classificacao-de-letournel-e0c8fa8d",
+       "tecnica-por-tipo-de-fratura-71bfe1dc",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "ef4161f79d4fd3715b349543fa96fb0bf8ff9301d1c24f6e4fd06062c97da294"
+     }
+    ],
+    "questaoSha256": "4e1a408d3ae36574a7388737461d5d5d95373e40feba20d86dfa0ff009222964",
+    "comentarioSha256": "c563c8c759d9cf19df2ac287d6f9b22b0ad989cfb46715180c60052bbbc390bb"
+   }
   },
   "trauma-0343": {
    "tema": "trauma",
@@ -53707,7 +54141,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53722,7 +54156,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "75289fd6eb29d4032873cace147cc228e580f81ace0ab799ae68c2bc99b4064e"
+   "questaoSha256": "75289fd6eb29d4032873cace147cc228e580f81ace0ab799ae68c2bc99b4064e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "vias-de-acesso-de09a49f",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-af43286f",
+       "vias-de-acesso-9086ffdf"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "40b1e58c688f150fafe9be23ab24b6ad7abd2b4f593aa6544eb1b7c6918d3629"
+     }
+    ],
+    "questaoSha256": "75289fd6eb29d4032873cace147cc228e580f81ace0ab799ae68c2bc99b4064e",
+    "comentarioSha256": "a37c885d23c1ba9b7ead51c8076b0ab1c88ae241215b22c46b55b21422c08d29"
+   }
   },
   "trauma-0419": {
    "tema": "trauma",
@@ -56205,8 +56665,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -56220,7 +56680,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "0448f58410d64ad57abe30aa961592946b89f731389ebafe49b76aa22ed2b4f1"
+   "questaoSha256": "0448f58410d64ad57abe30aa961592946b89f731389ebafe49b76aa22ed2b4f1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Tomografia e exame sob anestesia",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "tomografia-e-exame-sob-anestesia-3bc95009",
+       "tomografia-e-exame-sob-anestesia-482effec",
+       "tomografia-e-exame-sob-anestesia-fe95863a",
+       "tomografia-e-exame-sob-anestesia-0ed8ce25",
+       "tomografia-e-exame-sob-anestesia-27888975",
+       "classificacao-de-letournel-6291b238"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "026cb3a0daa94fbd2b2308afd811464ce142e6ec05a3915c9dfecf40a831ee76"
+     }
+    ],
+    "questaoSha256": "0448f58410d64ad57abe30aa961592946b89f731389ebafe49b76aa22ed2b4f1",
+    "comentarioSha256": "ba9af434e5aee3d1a9097e58ce89fb730f7859c72959b23b5d068f116e8783dc"
+   }
   },
   "trauma-0564": {
    "tema": "trauma",
@@ -57128,7 +57617,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57143,7 +57632,34 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "0c2cabfc62993f340e262eab774591fd2363fe54c4555d86c8f0c08096760932"
+   "questaoSha256": "0c2cabfc62993f340e262eab774591fd2363fe54c4555d86c8f0c08096760932",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "classificacao-de-letournel-cb46defc",
+       "classificacao-de-letournel-10e3f3ef",
+       "classificacao-de-letournel-6291b238",
+       "classificacao-de-letournel-a25f459a",
+       "classificacao-de-letournel-f2b067cd"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "96131ee7d0e34e94ef75814da7bc1c176fec2d7ebefe68589281c98a350ebd4c"
+     }
+    ],
+    "questaoSha256": "0c2cabfc62993f340e262eab774591fd2363fe54c4555d86c8f0c08096760932",
+    "comentarioSha256": "44c39a71ea3efd348d61c2bad5513ee05bd8b650ca61dc0cafae07feec096ac8"
+   }
   },
   "trauma-0674": {
    "tema": "trauma",
@@ -58526,7 +59042,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58541,7 +59057,38 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "e9bb566d5192be4789257e5cfb7522b98b4530312032c6bdbebbb0bd3be59472"
+   "questaoSha256": "e9bb566d5192be4789257e5cfb7522b98b4530312032c6bdbebbb0bd3be59472",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Técnica por tipo de fratura",
+       "Classificação de LETOURNEL",
+       "O paciente idoso"
+      ],
+      "blocos": [
+       "tecnica-por-tipo-de-fratura-71bfe1dc",
+       "tecnica-por-tipo-de-fratura-1657fb52",
+       "classificacao-de-letournel-6291b238",
+       "classificacao-de-letournel-18f9732d",
+       "classificacao-de-letournel-5c165487",
+       "classificacao-de-letournel-3f7fc233",
+       "o-paciente-idoso-9f04e33f"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "b9c60411a22a14b295b75c957454d473720bb71bbe1a89ea94ae0d81fe620a6a"
+     }
+    ],
+    "questaoSha256": "e9bb566d5192be4789257e5cfb7522b98b4530312032c6bdbebbb0bd3be59472",
+    "comentarioSha256": "995e8c45768ec9f87b16660e7de2d85c5bd0197acde80881dc9914eddf4bd9d8"
+   }
   },
   "trauma-0716": {
    "tema": "trauma",
@@ -58862,7 +59409,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58877,7 +59424,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "13c5b21e4779ac93839ed3cedbc6153b9e768eb61e5f3450d5b5062e3fe87b24"
+   "questaoSha256": "13c5b21e4779ac93839ed3cedbc6153b9e768eb61e5f3450d5b5062e3fe87b24",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "O paciente idoso",
+       "Resultados: a redução manda"
+      ],
+      "blocos": [
+       "o-paciente-idoso-9f04e33f",
+       "o-paciente-idoso-7a2bf394",
+       "resultados-a-reducao-manda-dae2ea0b"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "e277b9a1710910ef89f3360ffb1ea41c7bd13cf543c6f67446bbed9299c681d0"
+     }
+    ],
+    "questaoSha256": "13c5b21e4779ac93839ed3cedbc6153b9e768eb61e5f3450d5b5062e3fe87b24",
+    "comentarioSha256": "e83ee30bb93e227788697fcded2d55dc8eb492113777b569ac42c83ace7d7676"
+   }
   },
   "trauma-0727": {
    "tema": "trauma",
@@ -61658,7 +62231,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -61673,7 +62246,34 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "dc5c034a274bc6d466183e8f2aab0bee3e06502b569a3ed8e6413c93459b509a"
+   "questaoSha256": "dc5c034a274bc6d466183e8f2aab0bee3e06502b569a3ed8e6413c93459b509a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "O paciente idoso",
+       "Anatomia aplicada: colunas, paredes, teto e vasos",
+       "Técnica por tipo de fratura"
+      ],
+      "blocos": [
+       "o-paciente-idoso-9f04e33f",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+       "tecnica-por-tipo-de-fratura-71bfe1dc"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "49af9622d6f87ece2fd6869d1e9f25de74ce746ba88375432374604fc9541211"
+     }
+    ],
+    "questaoSha256": "dc5c034a274bc6d466183e8f2aab0bee3e06502b569a3ed8e6413c93459b509a",
+    "comentarioSha256": "826b8965fc54ea2b70a7f9a0a1f2dbb0587ddeeeeb054553723fc05d6a66573e"
+   }
   },
   "trauma-0855": {
    "tema": "trauma",
@@ -65731,7 +66331,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65746,7 +66346,32 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "f85b0a5f8e7f438b3835acd0e409fccf724d206e92667fbdc0cfc7762d069ebf"
+   "questaoSha256": "f85b0a5f8e7f438b3835acd0e409fccf724d206e92667fbdc0cfc7762d069ebf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "O paciente idoso"
+      ],
+      "blocos": [
+       "o-paciente-idoso-9f04e33f",
+       "o-paciente-idoso-ba1f32eb",
+       "o-paciente-idoso-7a2bf394"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "2014c15b193ea65698b0954e6b899f84ff6fd094a624d4923d01ebbc3c3a5211"
+     }
+    ],
+    "questaoSha256": "f85b0a5f8e7f438b3835acd0e409fccf724d206e92667fbdc0cfc7762d069ebf",
+    "comentarioSha256": "605764d9daa9db8e7cd10c51ba0989535fd6d60f875bd10c3cf32828a498ca6c"
+   }
   },
   "trauma-0986": {
    "tema": "trauma",
@@ -70819,8 +71444,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. A frase Certo/Errado diz genericamente que a fratura baixa da coluna anterior é não cirúrgica. O corpo do resumo 51 condiciona essa possibilidade à estabilidade, congruência e teto preservado; não resolve se a formulação da prova pressupõe tais condições ou é afirmação universal. Falta gabarito/fonte original ou contexto que permita uma única resposta. Não promover a provável antiga a resposta comprovada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70834,7 +71459,8 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "8d3f227a9fb25a7df83fde076672847e5423f8408ec93bda37ab101e5aee1252"
+   "questaoSha256": "8d3f227a9fb25a7df83fde076672847e5423f8408ec93bda37ab101e5aee1252",
+   "pendencia": "Sem gabarito oficial. A frase Certo/Errado diz genericamente que a fratura baixa da coluna anterior é não cirúrgica. O corpo do resumo 51 condiciona essa possibilidade à estabilidade, congruência e teto preservado; não resolve se a formulação da prova pressupõe tais condições ou é afirmação universal. Falta gabarito/fonte original ou contexto que permita uma única resposta. Não promover a provável antiga a resposta comprovada."
   },
   "trauma-1177": {
    "tema": "trauma",
@@ -72522,14 +73148,45 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "f12143016a1b50998850b929fe3f953d5c90f760cd8c6c50250a430685734c31"
+   "questaoSha256": "f12143016a1b50998850b929fe3f953d5c90f760cd8c6c50250a430685734c31",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Quem pode ficar sem cirurgia",
+       "Tomografia e exame sob anestesia",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "quem-pode-ficar-sem-cirurgia-523c93ad",
+       "tomografia-e-exame-sob-anestesia-e0508ee3",
+       "quem-pode-ficar-sem-cirurgia-b7f47596",
+       "quem-pode-ficar-sem-cirurgia-193f0b4c",
+       "classificacao-de-letournel-278b7b5b",
+       "quem-pode-ficar-sem-cirurgia-f17537a8",
+       "quem-pode-ficar-sem-cirurgia-33b5d081"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "cede72c5b0426c4e7356322aa7078e7bb05668bc0799fc944171ea7d998528b4"
+     }
+    ],
+    "questaoSha256": "f12143016a1b50998850b929fe3f953d5c90f760cd8c6c50250a430685734c31",
+    "comentarioSha256": "3a6bf7997937e7f08e4c069f35619dab35fb461518c0c7b6c7dddb89b1965f6c"
+   }
   },
   "trauma-1234": {
    "tema": "trauma",
@@ -73928,7 +74585,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -73943,7 +74600,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "cac010bb5680819d59d2f91b1bc07ac596cbafc85ae0cbe5d078797786a951a8"
+   "questaoSha256": "cac010bb5680819d59d2f91b1bc07ac596cbafc85ae0cbe5d078797786a951a8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Classificação de LETOURNEL",
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "classificacao-de-letournel-e0c8fa8d",
+       "classificacao-de-letournel-18f9732d",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "01957c127d2c4b5f2d616cd29dc838281e829cd49122257547b30138bda92654"
+     }
+    ],
+    "questaoSha256": "cac010bb5680819d59d2f91b1bc07ac596cbafc85ae0cbe5d078797786a951a8",
+    "comentarioSha256": "aeb0349f4ae509411d1faf4a8ac81d75279d7a43a263c7096b373ca0ee643db6"
+   }
   },
   "trauma-1298": {
    "tema": "trauma",
@@ -82532,8 +83217,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -82547,7 +83232,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "ebd51e3fa7df81467d2d2308ffab43971095a8fa1accb41d26fc96bedd6c69fe"
+   "questaoSha256": "ebd51e3fa7df81467d2d2308ffab43971095a8fa1accb41d26fc96bedd6c69fe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Tomografia e exame sob anestesia",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "tomografia-e-exame-sob-anestesia-3bc95009",
+       "tomografia-e-exame-sob-anestesia-482effec",
+       "tomografia-e-exame-sob-anestesia-fe95863a",
+       "tomografia-e-exame-sob-anestesia-0ed8ce25",
+       "tomografia-e-exame-sob-anestesia-27888975",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "2c683e4d333778db96b21ad15c535930d6cc87afd182ed85563449339943a573"
+     }
+    ],
+    "questaoSha256": "ebd51e3fa7df81467d2d2308ffab43971095a8fa1accb41d26fc96bedd6c69fe",
+    "comentarioSha256": "356297a9f623c1d2c7216fb003cebea2bf6e5b41255f3b254c706a3441721b63"
+   }
   },
   "trauma-1516": {
    "tema": "trauma",
@@ -82556,7 +83270,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82571,7 +83285,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "5e9c63d0035a59ca5185cbb4caaaa0d5ab077bba5acc7668cd54e9583e940686"
+   "questaoSha256": "5e9c63d0035a59ca5185cbb4caaaa0d5ab077bba5acc7668cd54e9583e940686",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--000b19b5",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "386b44236758ae85d9babbdc628912d3e24a375aa21bf7a8558b5008b1e751c9"
+     }
+    ],
+    "questaoSha256": "5e9c63d0035a59ca5185cbb4caaaa0d5ab077bba5acc7668cd54e9583e940686",
+    "comentarioSha256": "1b70d14ad1bbb95bf36afec7c394fd2b12c561b4f68606392f7898d06c650886"
+   }
   },
   "trauma-1517": {
    "tema": "trauma",
@@ -82581,7 +83321,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82596,7 +83336,51 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "8ad72ca563d2b0f63ad219e0829ce23ea355a8375d7df9aac45d414ab3857372"
+   "questaoSha256": "8ad72ca563d2b0f63ad219e0829ce23ea355a8375d7df9aac45d414ab3857372",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+       "Tomografia e exame sob anestesia"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--338e6461",
+       "tomografia-e-exame-sob-anestesia-27888975"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "059d20226a35ddb36b0d0affd8d7e9965c90fff37a76098dcb638e5a5363874d"
+     },
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Imagem"
+      ],
+      "blocos": [
+       "imagem-4f412193",
+       "imagem-0a1f5cef",
+       "imagem-abbe22b6"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "72a38922b0ed58ecd94253f29f454832c887a9093d597b4ac0cda0fd604d67dc"
+     }
+    ],
+    "questaoSha256": "8ad72ca563d2b0f63ad219e0829ce23ea355a8375d7df9aac45d414ab3857372",
+    "comentarioSha256": "ed203fa7f646987596b2cfd80f31bc48a3e826ba7f7370a828509aea5cc0fa4a"
+   }
   },
   "trauma-1518": {
    "tema": "trauma",
@@ -82605,7 +83389,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82620,7 +83404,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "d71c5f47867bab0c42cfceb329b81428e0fff878c054401bc18bc803f844b8f7"
+   "questaoSha256": "d71c5f47867bab0c42cfceb329b81428e0fff878c054401bc18bc803f844b8f7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Classificação de LETOURNEL",
+       "Tomografia e exame sob anestesia",
+       "Técnica por tipo de fratura"
+      ],
+      "blocos": [
+       "classificacao-de-letournel-6291b238",
+       "classificacao-de-letournel-a25f459a",
+       "tomografia-e-exame-sob-anestesia-27888975",
+       "tecnica-por-tipo-de-fratura-58272472"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "4cfa59f799059ed12be1bdc8c2e8a88ee29d1dc4b01c6340b0d237de695c064a"
+     }
+    ],
+    "questaoSha256": "d71c5f47867bab0c42cfceb329b81428e0fff878c054401bc18bc803f844b8f7",
+    "comentarioSha256": "5917f8bef536640222c3ea2bd788c7d0993cdd531bd638770e713ee63717766b"
+   }
   },
   "trauma-1519": {
    "tema": "trauma",
@@ -82629,8 +83441,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -82644,7 +83456,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "0eecb3ff0d503c728da06257d8fd93f51922426beec6c40242be76aa44bfaf54"
+   "questaoSha256": "0eecb3ff0d503c728da06257d8fd93f51922426beec6c40242be76aa44bfaf54",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Classificação de LETOURNEL",
+       "Quem pode ficar sem cirurgia"
+      ],
+      "blocos": [
+       "classificacao-de-letournel-e0c8fa8d",
+       "classificacao-de-letournel-18f9732d",
+       "classificacao-de-letournel-5c165487",
+       "quem-pode-ficar-sem-cirurgia-2a347117",
+       "classificacao-de-letournel-a25f459a"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "fb4f05b80642b5eb778a778e2a0320f82bcb05ea4bbcc43589f8ffcd3844454f"
+     }
+    ],
+    "questaoSha256": "0eecb3ff0d503c728da06257d8fd93f51922426beec6c40242be76aa44bfaf54",
+    "comentarioSha256": "14a94adcd7c5b8c8dcd811902ab6202fd87a7ea3be5aecd9d87f52d07d66669a"
+   }
   },
   "trauma-1520": {
    "tema": "trauma",
@@ -82653,8 +83493,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -82668,7 +83508,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "5f474bdd8835b421a5544a70b783a84ca44f198c89455e55528fdeabce53946f"
+   "questaoSha256": "5f474bdd8835b421a5544a70b783a84ca44f198c89455e55528fdeabce53946f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "O paciente idoso",
+       "Classificação de LETOURNEL"
+      ],
+      "blocos": [
+       "o-paciente-idoso-9f04e33f",
+       "classificacao-de-letournel-e0c8fa8d",
+       "o-paciente-idoso-7a2bf394"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "4b6f2998c78771fbe815f9bb8242897c86db770fec22bafd8c624239a3734356"
+     }
+    ],
+    "questaoSha256": "5f474bdd8835b421a5544a70b783a84ca44f198c89455e55528fdeabce53946f",
+    "comentarioSha256": "cc6a0448e3193cdcc9c7616a78adc6d931b52986265400a489c5544624c02b66"
+   }
   },
   "trauma-1521": {
    "tema": "trauma",
@@ -83093,7 +83959,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83108,7 +83974,39 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "c9564b27233dd5462e5595fd8f36fb7ae2b5863c3eafa77c73def2dd52664618"
+   "questaoSha256": "c9564b27233dd5462e5595fd8f36fb7ae2b5863c3eafa77c73def2dd52664618",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Indicações cirúrgicas, momento e urgências"
+      ],
+      "blocos": [
+       "indicacoes-cirurgicas-momento-e-urgencias-0dbd7172",
+       "indicacoes-cirurgicas-momento-e-urgencias-26841d30",
+       "indicacoes-cirurgicas-momento-e-urgencias-46542c43",
+       "indicacoes-cirurgicas-momento-e-urgencias-9073c7b4",
+       "indicacoes-cirurgicas-momento-e-urgencias-c7d5adb6",
+       "indicacoes-cirurgicas-momento-e-urgencias-08d33d16",
+       "indicacoes-cirurgicas-momento-e-urgencias-7c87e091",
+       "indicacoes-cirurgicas-momento-e-urgencias-2b08e7fc",
+       "indicacoes-cirurgicas-momento-e-urgencias-543c0021",
+       "indicacoes-cirurgicas-momento-e-urgencias-a419b5d6"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "1d9c8c9702553f595738ac9d38eb9aa1d03060c137b973ce7bfa9c267cb3ab31"
+     }
+    ],
+    "questaoSha256": "c9564b27233dd5462e5595fd8f36fb7ae2b5863c3eafa77c73def2dd52664618",
+    "comentarioSha256": "ca3e67c4b282b6512b78d2708f4d4901e33e4e6e8a8dee80db3d0d04560922f4"
+   }
   },
   "trauma-1530": {
    "tema": "trauma",
@@ -83178,7 +84076,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83193,7 +84091,42 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "132da6b84f09aac91a663b6d063cbeb80c2d8fe4e032fe5c56b5980155a5170f"
+   "questaoSha256": "132da6b84f09aac91a663b6d063cbeb80c2d8fe4e032fe5c56b5980155a5170f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Indicações cirúrgicas, momento e urgências",
+       "Anatomia aplicada: colunas, paredes, teto e vasos",
+       "Quem pode ficar sem cirurgia",
+       "Complicações"
+      ],
+      "blocos": [
+       "indicacoes-cirurgicas-momento-e-urgencias-08d33d16",
+       "indicacoes-cirurgicas-momento-e-urgencias-2b08e7fc",
+       "indicacoes-cirurgicas-momento-e-urgencias-7c87e091",
+       "indicacoes-cirurgicas-momento-e-urgencias-543c0021",
+       "indicacoes-cirurgicas-momento-e-urgencias-a419b5d6",
+       "indicacoes-cirurgicas-momento-e-urgencias-448ab2b8",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-596bb854",
+       "quem-pode-ficar-sem-cirurgia-2a347117",
+       "quem-pode-ficar-sem-cirurgia-d12240e0",
+       "complicacoes-91915355"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "2817b37973aa2313d3615d049a161a57281eca5675e4cf539dfeb3f7c763a4ef"
+     }
+    ],
+    "questaoSha256": "132da6b84f09aac91a663b6d063cbeb80c2d8fe4e032fe5c56b5980155a5170f",
+    "comentarioSha256": "10d36c55ae33564bd8e0f2345f71fae45ec8b382a9ceaa3b2f23a1ac9541dd89"
+   }
   },
   "trauma-1532": {
    "tema": "trauma",
@@ -83202,7 +84135,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83217,7 +84150,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "ac120f5b8007911c3a820627b6ee98292ce5c978006507ec62062bc7304bdcb1"
+   "questaoSha256": "ac120f5b8007911c3a820627b6ee98292ce5c978006507ec62062bc7304bdcb1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso",
+       "Técnica por tipo de fratura"
+      ],
+      "blocos": [
+       "vias-de-acesso-a24cd5ec",
+       "vias-de-acesso-59fb21f9",
+       "tecnica-por-tipo-de-fratura-0a978367",
+       "tecnica-por-tipo-de-fratura-6d62264a",
+       "vias-de-acesso-bea80bc8",
+       "vias-de-acesso-3aa87943"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "5a7e5873111242ee9d157f72e987d8a587311f69235a49f98e89aeadf1b8d240"
+     }
+    ],
+    "questaoSha256": "ac120f5b8007911c3a820627b6ee98292ce5c978006507ec62062bc7304bdcb1",
+    "comentarioSha256": "bcf6118e9a175943e7eeb1e4f9b16f363b7f4c5925cc27ef2ac1ad729bb3842f"
+   }
   },
   "trauma-1533": {
    "tema": "trauma",
@@ -83226,7 +84188,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83241,7 +84203,33 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "23c8b61c93106cd0432998363dce9c96c54b739864b0f26e0e3f59b1cb4ea2c1"
+   "questaoSha256": "23c8b61c93106cd0432998363dce9c96c54b739864b0f26e0e3f59b1cb4ea2c1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-6b8c4f0e",
+       "vias-de-acesso-f3d486a4",
+       "vias-de-acesso-c04724c6",
+       "vias-de-acesso-9086ffdf"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "1b1a253a7f7e553794e02a069a80e4f4295a16a6d967a1d86f87c02c54691756"
+     }
+    ],
+    "questaoSha256": "23c8b61c93106cd0432998363dce9c96c54b739864b0f26e0e3f59b1cb4ea2c1",
+    "comentarioSha256": "7a8f8eef004eb34fc6bdb39bd127659006e103d6fd250efc84052bc750461fb5"
+   }
   },
   "trauma-1534": {
    "tema": "trauma",
@@ -83250,7 +84238,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83265,7 +84253,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "d132a4a82e2c76e2826bab7edae58fc08a995a2c179c8a4d882b06e172240f0a"
+   "questaoSha256": "d132a4a82e2c76e2826bab7edae58fc08a995a2c179c8a4d882b06e172240f0a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-89b1765e",
+       "vias-de-acesso-09c0da47",
+       "vias-de-acesso-8dbb0d07",
+       "vias-de-acesso-b5f952c0",
+       "vias-de-acesso-46c79886",
+       "vias-de-acesso-c592e79e"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "ed64088cb3fe5f34a34424feeadfc9658197039d0ac650c04e2cfe9ed08a015b"
+     }
+    ],
+    "questaoSha256": "d132a4a82e2c76e2826bab7edae58fc08a995a2c179c8a4d882b06e172240f0a",
+    "comentarioSha256": "27eb94af5b0342743c24af51cf87f8cb971381c219ceb14d4e684405e79eaa17"
+   }
   },
   "trauma-1535": {
    "tema": "trauma",
@@ -83275,7 +84291,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83290,7 +84306,34 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "bc6d14772aa5275b0131fd17f08c39cba08a8cd1a2d14265b74d2f88b7a80719"
+   "questaoSha256": "bc6d14772aa5275b0131fd17f08c39cba08a8cd1a2d14265b74d2f88b7a80719",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Técnica por tipo de fratura"
+      ],
+      "blocos": [
+       "tecnica-por-tipo-de-fratura-71bfe1dc",
+       "tecnica-por-tipo-de-fratura-6b3414a6",
+       "tecnica-por-tipo-de-fratura-1657fb52",
+       "tecnica-por-tipo-de-fratura-7606422c",
+       "tecnica-por-tipo-de-fratura-252a8e3a"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "63c3d39f3399b0cdd7e7544b6cb5398e3444ae45cb46a4b6ee01d7609036e946"
+     }
+    ],
+    "questaoSha256": "bc6d14772aa5275b0131fd17f08c39cba08a8cd1a2d14265b74d2f88b7a80719",
+    "comentarioSha256": "b15a91f53275d2c21e2b8ec163735bc5bc339f41aa6cb131bd3d6d68f67a2a16"
+   }
   },
   "trauma-1536": {
    "tema": "trauma",
@@ -83299,7 +84342,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83314,7 +84357,36 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "624a1a2fcbddfb4fc0bdea446b19275dc6887d917b0784c397349e5640c2e7b5"
+   "questaoSha256": "624a1a2fcbddfb4fc0bdea446b19275dc6887d917b0784c397349e5640c2e7b5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Ossificação heterotópica",
+       "Vias de acesso",
+       "Controvérsias e o que falta saber"
+      ],
+      "blocos": [
+       "ossificacao-heterotopica-32f620e0",
+       "ossificacao-heterotopica-2ac5ff5b",
+       "vias-de-acesso-bea80bc8",
+       "vias-de-acesso-89b1765e",
+       "controversias-e-o-que-falta-saber-ef002dd9"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "16ce78da794e3c2ad2ed9292be11df90a0a626ab5683f73ce41f445c2934584d"
+     }
+    ],
+    "questaoSha256": "624a1a2fcbddfb4fc0bdea446b19275dc6887d917b0784c397349e5640c2e7b5",
+    "comentarioSha256": "4d23dfcb2b877d7cec2c0383b2c79fc746f6236bf9b75dac15b7aafc41cf9736"
+   }
   },
   "trauma-1537": {
    "tema": "trauma",
@@ -83323,7 +84395,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83338,7 +84410,35 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "4bb57a9c765fdf275e0233ed62dabd3f88f5840fe433986e288beab0126784bc"
+   "questaoSha256": "4bb57a9c765fdf275e0233ed62dabd3f88f5840fe433986e288beab0126784bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Complicações",
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "complicacoes-91915355",
+       "complicacoes-7a30635a",
+       "complicacoes-98ff31de",
+       "vias-de-acesso-46c79886",
+       "vias-de-acesso-8dbb0d07"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "7e8f7308ec131c541a00d5d6343016bd5f2d2b7a23a2693d37c49492304365e9"
+     }
+    ],
+    "questaoSha256": "4bb57a9c765fdf275e0233ed62dabd3f88f5840fe433986e288beab0126784bc",
+    "comentarioSha256": "8b69bef14bedd1ec92e01da432d40c8601f910e2ccf6f0ea4a49a405f58bdc0d"
+   }
   },
   "trauma-1538": {
    "tema": "trauma",
@@ -83347,7 +84447,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83362,7 +84462,38 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "a23d268399c3b3128f7bb7dca651ff9ddea02dc13b0c939d9dad31cff6f0057a"
+   "questaoSha256": "a23d268399c3b3128f7bb7dca651ff9ddea02dc13b0c939d9dad31cff6f0057a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Resultados: a redução manda",
+       "Complicações",
+       "Tomografia e exame sob anestesia",
+       "Ossificação heterotópica",
+       "Técnica por tipo de fratura"
+      ],
+      "blocos": [
+       "resultados-a-reducao-manda-e91e4856",
+       "complicacoes-738e51f3",
+       "tomografia-e-exame-sob-anestesia-e0508ee3",
+       "ossificacao-heterotopica-2ac5ff5b",
+       "tecnica-por-tipo-de-fratura-71bfe1dc"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "c6584aa16b87d3700eb7ad98a6ed166df39dda6d8ba75fd9757163cc02362f41"
+     }
+    ],
+    "questaoSha256": "a23d268399c3b3128f7bb7dca651ff9ddea02dc13b0c939d9dad31cff6f0057a",
+    "comentarioSha256": "60583a3eeed3160559d0d5f79d304ac8176ea69d4c6af7493685fd643d6ea515"
+   }
   },
   "trauma-1539": {
    "tema": "trauma",

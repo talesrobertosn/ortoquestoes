@@ -1,0 +1,409 @@
+{
+ "quadril-0035": {
+  "questaoSha256": "c920e12f2633062393c015fbebaf24ac9f5c403b3799fa2224935ee8fee8ca52",
+  "comentarioAnteriorSha256": "3332dd56e03796c6052ab7e0322b7b82863600f69eebf9df218ec5668c8759b1",
+  "comentario": {
+   "conceito": "A questão tem uma divergência: **C, fossa acetabular, é a letra oficial**, mas a tabela independente do resumo atribui a parte **medial** da lágrima ao **canal obturatório e à superfície quadrilátera anteroinferior**. Entre as opções, essa descrição favorece D.\n\nA lágrima é uma imagem de tangência do feixe, não um pequeno osso separado. Seu ramo **lateral** corresponde à parede anterior inferior e à fossa acetabular; o **medial**, ao canal obturatório e à quadrilátera. Inverter os ramos muda a resposta anatômica (Rockwood, 10ª ed., cap. 51, “O AP da bacia”).\n\n**A mesma superfície explica outra relação útil.** A linha ilioisquiática também nasce da tangência à parte posterior da quadrilátera. No quadril normal, ela e a lágrima se superpõem; separação entre as duas sugere rotação da hemipelve ou fratura dessa superfície.\n\nA letra da banca fica preservada, mas não deve ensinar que a fossa é o ramo medial segundo a fonte consultada. O aluno precisa separar o histórico do gabarito da anatomia radiográfica demonstrada pelo resumo.",
+   "correta": "**C: fossa acetabular, conforme a banca.** O corpo consultado a coloca no ramo lateral da lágrima, não no medial. A resposta é mantida como oficial, com divergência explícita; pela tabela, D é defensável.",
+   "incorretas": {
+    "A": "**Coluna anterior tem outro marco principal.** A linha iliopectínea a representa no AP. A pergunta pede um componente da lágrima, cuja parte medial vem da quadrilátera e do canal obturatório.",
+    "B": "**A associação com a linha ilioisquiática não faz do ramo medial toda a coluna posterior.** Essa linha indica a coluna por tangenciar a quadrilátera posterior. É preciso distinguir o indicador radiográfico da estrutura específica que forma a lágrima.",
+    "D": "**É a opção sustentada pela descrição anatômica.** A placa quadrilateral participa do ramo medial junto ao canal obturatório. Não deve ser refutada apenas porque a banca marcou C."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET."
+   ],
+   "conferido": false,
+   "alerta": "C oficial preservada. A tabela do resumo Rockwood 10ª, cap. 51, coloca fossa acetabular no ramo lateral da lágrima e superfície quadrilátera/canal obturatório no medial; entre as opções, a descrição sustenta D. A aula distingue a anatomia do gabarito divergente."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+    ],
+    "blocos": [
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--000b19b5",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "c2460dc55cd9adb111c8b16b91779dfdf7c184a66712356b47d3df2243ff1131"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0053": {
+  "questaoSha256": "c20f875c177d5f5e585f9e67f54209508a776d7c20b99d3fd38483327a832c74",
+  "comentarioAnteriorSha256": "d800b3d2dff48dfc6af45955247b965f7b3f49ef1590d600036edc8d8850b108",
+  "comentario": {
+   "conceito": "Separar a linha ilioisquiática da **lágrima de Köhler** sugere fratura da **superfície quadrilátera**, alternativa D. A razão é que os dois contornos se formam, em parte, por tangências à mesma superfície óssea.\n\nA linha ilioisquiática é usada como marco da coluna posterior, mas nasce da região posterior da quadrilátera. A parte medial da lágrima também inclui a quadrilátera anteroinferior, junto do canal obturatório. No quadril normal, os contornos se superpõem; quando a relação se desfaz, deve-se procurar alteração dessa superfície e considerar a rotação da hemipelve (Rockwood, 10ª ed., cap. 51, “Radiografias”).\n\n**Linha e coluna não são sinônimos perfeitos.** A pergunta usa a coluna posterior como referência radiográfica, mas pede o que explica a dissociação dos contornos. A TC completa a leitura da anatomia, evitando classificar só por uma linha interrompida.\n\nTransversas são definidas pelo traço que separa o segmento ilíaco do isquiopúbico; sua altura pode preservar ou atingir a cúpula. Essa distinção não substitui a relação específica entre lágrima e ilioisquiática.",
+   "correta": "**D: superfície quadrilátera.** A origem compartilhada dos dois contornos explica por que sua dissociação levanta essa suspeita, sem dispensar verificar posicionamento e a fratura completa.",
+   "incorretas": {
+    "A": "**A parede posterior produz o contorno da borda posterior.** Sua fratura isolada não é a explicação anatômica específica para separar dois marcos ligados à quadrilátera. Parede e superfície medial são regiões diferentes.",
+    "B": "**A transversa infratectal se define pela altura abaixo da cúpula.** Preservar o teto ajuda a discutir tratamento conservador, mas não explica por si a dissociação da lágrima em relação à ilioisquiática.",
+    "C": "**Transtectal informa que o traço atravessa a carga.** É um dado importante para congruência e indicação, porém não é a resposta específica ao sinal de separação dos contornos da quadrilátera."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Anatomia aplicada: colunas, paredes, teto e vasos; Classificação de LETOURNEL."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+     "Anatomia aplicada: colunas, paredes, teto e vasos",
+     "Classificação de LETOURNEL"
+    ],
+    "blocos": [
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+     "classificacao-de-letournel-6291b238",
+     "classificacao-de-letournel-278b7b5b"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "651b75b3d31f2e4c5a8ad4860456c765859ac7b9933eaed534bf41c2edff6952"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0122": {
+  "questaoSha256": "6e998f9876913ebfe458f63e887e07277ad9de7e8a3da80f4b0261fb477c59fe",
+  "comentarioAnteriorSha256": "9f57c2c28bf7507a51f371320fa2b4a8fa7813c77171b3ab62adca4e50818dd1",
+  "comentario": {
+   "conceito": "A **oblíqua ilíaca, ou alar**, mostra de perfil a **borda posterior do osso inominado**, correspondente à coluna posterior. É a alternativa D. Não se deve trocar essa borda óssea inteira pela borda posterior do acetábulo, que é a parede.\n\nAs duas oblíquas de Judet rodam o paciente aproximadamente 45 graus. Cada uma perfila uma coluna e a borda acetabular do lado oposto: **ilíaca = coluna posterior e borda anterior; obturatriz = coluna anterior e borda posterior** (Rockwood, 10ª ed., cap. 51, “Oblíqua ilíaca e obturatriz”).\n\nA ilíaca põe a asa do ilíaco de frente e permite ler as incisuras isquiáticas maior e menor. A obturatriz abre o forame obturatório e é particularmente útil para a parede posterior e para o esporão de ambas as colunas.\n\n**A pergunta é sobre a melhor individualização, não sobre ausência absoluta de outras imagens.** Teto e lágrima fazem parte da leitura do AP; reconhecer uma estrutura em alguma projeção não a torna o marco que caracteriza a alar.",
+   "correta": "**D: borda posterior do inominado.** A alar perfila as incisuras e a coluna posterior. Essa é a relação direta descrita pela tabela de Judet.",
+   "incorretas": {
+    "A": "**O teto é um dos seis marcos do AP.** Ele é essencial para avaliar a superfície de carga, mas não é a estrutura que distingue a oblíqua ilíaca entre as opções. O marco característico aqui é o contorno posterior do inominado.",
+    "B": "**É a parede posterior, melhor perfilada na obturatriz.** A palavra “posterior” aparece nos dois nomes, mas uma é borda articular e a outra, borda do osso inteiro. A distinção resolve o distrator.",
+    "C": "**A lágrima é uma tangência composta lida no AP.** Seus ramos vêm de quadrilátera, canal obturatório, fossa e parede anterior inferior. Não corresponde à coluna posterior perfilada na alar."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+    ],
+    "blocos": [
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "a701c6abb3bf147661fa44d092a916c769d65ae768290b570bb9178f47ef7135"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0270": {
+  "questaoSha256": "8fdd23322ad51cbd1268bb81cf3ffa822ffb8a537d0d96a94db50b743d7326df",
+  "comentarioAnteriorSha256": "d00af2453114aaa544a2f20fea6feb035fecfa0a39d571408f8becc86269b977",
+  "comentario": {
+   "conceito": "A combinação correta é **arco anterior na obturatriz acima de 25 graus e posterior na alar acima de 70 graus**, alternativa B. A redação fala em “parede”, mas deve ser entendida como avaliação do **setor de teto**, não como autorização para aplicar o método à fratura isolada da parede posterior.\n\nO arco do teto usa o centro da cabeça, uma vertical e a linha até a chegada do traço à superfície articular. Mede-se sem tração, com redução concêntrica, nas três incidências. Os limites biomecânicos de Vrahas são **45 graus no AP, 25 na obturatriz e 70 na ilíaca**; abaixo deles, o setor intacto pode ser insuficiente (Rockwood, 10ª ed., cap. 51, “O teto e o arco de Matta”).\n\n**Anterior e posterior não indicam a mesma oblíqua.** A obturatriz fornece o arco anterior; a ilíaca, o posterior. Não se deve trocar a função do ângulo pelo fato de a obturatriz perfilar a parede posterior.\n\nO método não se aplica a ambas as colunas, em que não resta acetábulo intacto, nem decide a estabilidade da parede posterior. Essa exige avaliação própria, preferencialmente dinâmica quando duvidosa.",
+   "correta": "**B: obturatório abaixo de 25 e alar abaixo de 70 indicam insuficiência dos respectivos setores.** É a relação angular sustentada, desde que “parede” seja lida como setor anterior/posterior do teto. O método não é critério de estabilidade de parede posterior isolada.",
+   "incorretas": {
+    "A": "**Acerta o limite medial e troca o significado da obturatriz.** O AP usa 45 graus, mas o arco obturatório é anterior, não posterior. A imagem que mostra a parede posterior não fornece, por isso, o arco posterior.",
+    "C": "**Aplica o método a duas exceções.** Em ambas as colunas não há teto intacto para medir; na parede posterior importa a estabilidade julgada à parte. Nenhum desses padrões admite aplicação indiferenciada do roof arc.",
+    "D": "**Cria um corte uniforme que a tabela não estabelece.** Os limites de Vrahas variam entre as três vistas. O capítulo menciona valores de carga ao levantar da cadeira, mas ressalta que ainda não têm implicação clínica definida; não recomenda 90 graus para todos."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Quem pode ficar sem cirurgia; Radiografias: as seis linhas do AP e as oblíquas de JUDET."
+   ],
+   "conferido": false,
+   "alerta": "B oficial preservada pela correspondência dos arcos de Vrahas. A palavra “parede” na alternativa não deve ser entendida como fratura isolada: o resumo exclui a parede posterior da aplicação do roof arc, cuja estabilidade é avaliada separadamente."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Quem pode ficar sem cirurgia",
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+    ],
+    "blocos": [
+     "quem-pode-ficar-sem-cirurgia-8a28effd",
+     "quem-pode-ficar-sem-cirurgia-f17537a8",
+     "quem-pode-ficar-sem-cirurgia-b45eec2a",
+     "quem-pode-ficar-sem-cirurgia-562ca981",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "a952f9c927a3009358ee110619cb5ba261712f958e4b831b3c23bef07747880f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0510": {
+  "questaoSha256": "8915b39009a3df2e45d650ddf3165b7b504e37fe21ea36772ff0fa59e964ccdc",
+  "comentarioAnteriorSha256": "7bd27efa31fed06a7c800b7b19e16506586cdef467bb6c67720ae9b3fb887054",
+  "comentario": {
+   "conceito": "A pista do caso é a **dissociação entre a linha ilioisquiática e a lágrima**, que sugere fratura da **superfície quadrilátera**, alternativa B. A dor sacra e púbica após a queda pede avaliação ampla, mas não muda o significado anatômico desses dois contornos.\n\nNo AP, a ilioisquiática se forma pela tangência à quadrilátera posterior, e o ramo medial da lágrima inclui a quadrilátera anteroinferior e o canal obturatório. A superposição normal decorre dessa origem relacionada. A fratura dessa superfície ou a rotação da hemipelve pode desfazer a relação (Rockwood, 10ª ed., cap. 51, “Radiografias”).\n\n**O sinal localiza uma suspeita; não entrega toda a classificação.** A TC deve mostrar extensão, rotação e continuidade das colunas. Ambas as colunas exige demonstrar que nenhuma superfície articular permanece ligada ao ílio intacto, algo que a dissociação isolada não prova.\n\nDa mesma forma, a separação de duas linhas no AP não deve ser convertida automaticamente em instabilidade vertical do anel ou fratura-luxação sacroilíaca. Essas hipóteses dependem da avaliação de suas estruturas e de seu deslocamento.",
+   "correta": "**B: superfície quadrilátera.** É a estrutura que explica a relação perdida entre os contornos. O contexto de trauma reforça a investigação, mas a resposta decorre da anatomia radiográfica.",
+   "incorretas": {
+    "A": "**O achado não mede deslocamento vertical.** Separar lágrima e ilioisquiática aponta alteração da quadrilátera ou rotação da hemipelve; não demonstra, sozinho, instabilidade vertical do anel.",
+    "C": "**Falta a característica definidora.** Ambas as colunas exige desconexão de toda a superfície articular do ílio intacto. A dissociação descrita não permite afirmar essa continuidade ou sua perda sem ler o restante da imagem.",
+    "D": "**Deslocamento central não substitui a localização do sinal.** Medialização da cabeça e alteração da superfície medial podem coexistir, mas o enunciado fornece a relação entre contornos da quadrilátera, e não uma prova isolada de afundamento central.",
+    "E": "**A sacroilíaca não é a superfície que forma os dois marcos.** Uma lesão do anel pode coexistir no trauma, mas a quebra da superposição entre ilioisquiática e lágrima não demonstra fratura-luxação sacroilíaca."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Tomografia e exame sob anestesia; Classificação de LETOURNEL."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+     "Tomografia e exame sob anestesia",
+     "Classificação de LETOURNEL"
+    ],
+    "blocos": [
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+     "tomografia-e-exame-sob-anestesia-27888975",
+     "classificacao-de-letournel-18f9732d"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "68519cee7ef4d1fc40edc313c3011c56acfea85b23ead686de44c9ed58711a51"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0605": {
+  "questaoSha256": "588808af832ef6b23ce306f1163dcd18a0872cc9310aac4e8d46ef1162670387",
+  "comentarioAnteriorSha256": "801e9bb6d12360bddaf17f7da8967cd2e7c80668a7ac1cd57963b47ec2d8b980",
+  "comentario": {
+   "conceito": "No esquema, **AO** está junto à combinação **coluna anterior e rebordo posterior**; **PO**, junto a **coluna posterior e rebordo anterior**. Isso corresponde ao par da alternativa A. A imagem foi conferida pelas relações desenhadas, sem depender só do nome “anterior” ou “posterior”.\n\nNo resumo consultado, os nomes usuais são **oblíqua obturatriz** para coluna anterior e parede posterior, e **oblíqua ilíaca ou alar** para coluna posterior e parede anterior. Ambas usam cerca de 45 graus e completam o AP; cada uma perfila uma coluna e a borda oposta (Rockwood, 10ª ed., cap. 51, “Oblíquas de Judet”).\n\n**Coluna é mais que rebordo.** A coluna posterior inclui as incisuras e o setor isquiático; a parede posterior é só sua porção articular. A figura separa AC/PC das bordas AR/PR justamente para mostrar as duas informações de cada vista.\n\nReconhecer qual estrutura está perfilada é mais seguro que transportar um nome de projeção entre convenções sem olhar o desenho. A relação entre coluna e borda oposta permite conferir a leitura da figura.",
+   "correta": "**A: anterior com coluna anterior/rebordo posterior; posterior com coluna posterior/rebordo anterior.** É a combinação indicada pelas abreviações da figura, compatível com a relação obturatriz/ilíaca da tabela do resumo.",
+   "incorretas": {
+    "B": "**Inverte os pares desenhados.** A imagem coloca AC e PR na relação de AO, não PC e AR. Trocar as colunas de uma oblíqua pela outra também troca a borda que aparece de perfil.",
+    "C": "**Erra angulação e suficiência.** As oblíquas descritas são de aproximadamente 45 graus e se complementam com o AP. Uma única vista não fornece a mesma leitura das duas colunas e das duas bordas.",
+    "D": "**Confunde acetábulo com anel pélvico.** Judet perfila colunas e bordas acetabulares; a figura e a tabela não têm como finalidade principal medir desalinhamento vertical do anel."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Anatomia aplicada: colunas, paredes, teto e vasos."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+     "Anatomia aplicada: colunas, paredes, teto e vasos"
+    ],
+    "blocos": [
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "cf10721ee9ccf4f7fa6af6aa3e41824665d3db2c0c9e6cff30a7762324875c29"
+   }
+  ],
+  "imagensConferidas": [
+   "quadril/quadril-0605-1.jpeg"
+  ]
+ },
+ "trauma-0563": {
+  "questaoSha256": "0448f58410d64ad57abe30aa961592946b89f731389ebafe49b76aa22ed2b4f1",
+  "comentarioAnteriorSha256": "c5e043df2558bc40123ea4e4ebe5d6dff9bda780b178d97bcad82fb4c0e4bff0",
+  "comentario": {
+   "conceito": "No desenho, **A segue o plano anteroposterior** e **B o mediolateral**. No corte axial, esses trajetos correspondem a **fratura transversa e de coluna**, respectivamente: alternativa A.\n\nO nome da fratura não descreve automaticamente a direção da linha na tela. A transversa separa um segmento superior de outro inferior no inominado, mas sua interseção com o corte axial corre de frente para trás. A fratura de coluna separa os setores anterior e posterior, por isso seu traço no axial cruza de lado a lado (Rockwood, 10ª ed., cap. 51, “Tomografia”).\n\n**As paredes formam outro padrão de linha.** Seu traço oblíquo destaca apenas a borda anterior ou posterior, em vez de reproduzir a separação mais ampla entre os setores mostrada por B.\n\nO esquema permite comparar orientações, mas uma TC real deve ser seguida corte a corte. Um traço isolado pode representar parte de uma fratura maior; a direção é uma pista de classificação, não um motivo para ignorar sua extensão.",
+   "correta": "**A: transversa em A; coluna em B.** A interseção anteroposterior corresponde à transversa, e a mediolateral à fratura de coluna. A leitura parte dos planos desenhados, não só da palavra “transversa”.",
+   "incorretas": {
+    "B": "**Acerta A e reduz B indevidamente a uma borda.** O plano B cruza o setor ósseo de lado a lado, como o traço de coluna. Paredes são destacadas por linhas oblíquas restritas à margem.",
+    "C": "**Inverte as orientações.** A transversa aparece anteroposterior no axial; a coluna separa frente e trás por um traço mediolateral. O nome da fratura pode induzir a troca se não se observar o corte.",
+    "D": "**Não reconhece nenhum dos dois planos.** A não é a linha oblíqua de uma parede, e B não é o trajeto anteroposterior da transversa. É preciso relacionar cada orientação ao que ela separa."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Tomografia e exame sob anestesia; Classificação de LETOURNEL."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Tomografia e exame sob anestesia",
+     "Classificação de LETOURNEL"
+    ],
+    "blocos": [
+     "tomografia-e-exame-sob-anestesia-3bc95009",
+     "tomografia-e-exame-sob-anestesia-482effec",
+     "tomografia-e-exame-sob-anestesia-fe95863a",
+     "tomografia-e-exame-sob-anestesia-0ed8ce25",
+     "tomografia-e-exame-sob-anestesia-27888975",
+     "classificacao-de-letournel-6291b238"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "026cb3a0daa94fbd2b2308afd811464ce142e6ec05a3915c9dfecf40a831ee76"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0563-1.jpeg"
+  ]
+ },
+ "trauma-1515": {
+  "questaoSha256": "ebd51e3fa7df81467d2d2308ffab43971095a8fa1accb41d26fc96bedd6c69fe",
+  "comentarioAnteriorSha256": "4fbf4e45fd73b0366a515c94b8df3218b780437dba5afd18d631c749553576f9",
+  "comentario": {
+   "conceito": "Em **C**, a linha desenhada destaca a **borda anterior**; em **D**, a **posterior**. O par é **parede anterior e parede posterior**, alternativa A. São bordas da taça, não os segmentos inteiros das colunas.\n\nNo axial, as paredes são destacadas por traços oblíquos restritos à margem correspondente. Já a fratura de coluna tem orientação aproximadamente mediolateral, separando frente e trás; a transversa segue direção anteroposterior. O tamanho do segmento separado e a orientação precisam ser lidos juntos (Rockwood, 10ª ed., cap. 51, “Tomografia”).\n\n**Os desenhos representam trajetos, não a gravidade completa.** Não permitem atribuir estabilidade, desvio ou dano da cartilagem a um paciente. Numa TC real, seguem-se os traços nos cortes adjacentes para saber se há extensão de coluna ou um padrão associado.\n\nO detalhe decisivo é a faixa articular destacada em cada lado. Reconhecer a parede evita trocar “anterior/posterior” da localização por “coluna anterior/posterior” da classificação.",
+   "correta": "**A: parede anterior em C e posterior em D.** A imagem mostra duas linhas oblíquas que recortam bordas opostas, conforme a orientação descrita no resumo.",
+   "incorretas": {
+    "B": "**Confunde a borda com a coluna inteira.** As linhas não reproduzem o traço mediolateral que separa os setores anterior e posterior do acetábulo. Cada uma destaca uma porção marginal, própria de parede.",
+    "C": "**Acerta D, mas troca C por outro plano.** O traço transverso seria anteroposterior no axial. C recorta obliquamente a borda anterior; não é a orientação da transversa.",
+    "D": "**Inverte a localização das margens.** No esquema aberto, C está na porção anterior e D na posterior. O formato de parede está correto, mas a ordem das duas é trocada."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Tomografia e exame sob anestesia; Anatomia aplicada: colunas, paredes, teto e vasos."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Tomografia e exame sob anestesia",
+     "Anatomia aplicada: colunas, paredes, teto e vasos"
+    ],
+    "blocos": [
+     "tomografia-e-exame-sob-anestesia-3bc95009",
+     "tomografia-e-exame-sob-anestesia-482effec",
+     "tomografia-e-exame-sob-anestesia-fe95863a",
+     "tomografia-e-exame-sob-anestesia-0ed8ce25",
+     "tomografia-e-exame-sob-anestesia-27888975",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "2c683e4d333778db96b21ad15c535930d6cc87afd182ed85563449339943a573"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1515-1.jpeg"
+  ]
+ },
+ "trauma-1519": {
+  "questaoSha256": "0eecb3ff0d503c728da06257d8fd93f51922426beec6c40242be76aa44bfaf54",
+  "comentarioAnteriorSha256": "f0fba30be397c1d1c813efc91ff676e347d196061b9f9317230efabb379fe820",
+  "comentario": {
+   "conceito": "A seta marca o **esporão de ílio intacto**, visível lateral ao conjunto articular medializado. Esse sinal é patognomônico de **fratura de ambas as colunas**, alternativa C, e aparece melhor na oblíqua obturatriz apresentada.\n\nO que permanece lateral é a cortical externa da parte caudal do ílio intacto; toda a superfície articular se desprendeu dele e acompanhou a cabeça para dentro. Essa relação explica o sinal e o diferencia de uma ponta qualquer de fragmento da asa (Rockwood, 10ª ed., cap. 51, “Ambas as colunas”).\n\n**Congruência não significa continuidade ao esqueleto axial.** O lábio preservado pode manter os fragmentos congruentes ao redor da cabeça deslocada, produzindo congruência secundária. O quadril pode parecer encaixado entre fragmentos e, ainda assim, estar completamente separado do ílio intacto.\n\nA indicação de tratamento não vem apenas da seta: exige avaliar os traços completos, movimento, encurtamento e congruência sem tração. Aqui, o sinal responde qual padrão deve ser reconhecido.",
+   "correta": "**C: ambas as colunas.** O esporão corresponde ao ílio intacto que ficou lateral enquanto a superfície articular medializou. É o padrão sem porção articular presa ao ílio intacto.",
+   "incorretas": {
+    "A": "**Ainda mantém parte do teto ligada ao ílio.** A transversa com parede posterior pode ter luxação central, mas isso não a transforma em ambas as colunas. O esporão exige a desconexão articular completa descrita.",
+    "B": "**Cruzar as duas colunas não basta.** Na anterior com hemitransversa posterior, alguma superfície permanece ligada ao ílio intacto. A metade posterior da transversa não produz, por definição, a separação completa do sinal.",
+    "D": "**O ramo vertical distingue T, não define esporão.** A T acrescenta à transversa um traço até o setor isquiopúbico, mantendo parte do teto conectada. O achado apontado é outro critério anatômico."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL; Quem pode ficar sem cirurgia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Classificação de LETOURNEL",
+     "Quem pode ficar sem cirurgia"
+    ],
+    "blocos": [
+     "classificacao-de-letournel-e0c8fa8d",
+     "classificacao-de-letournel-18f9732d",
+     "classificacao-de-letournel-5c165487",
+     "quem-pode-ficar-sem-cirurgia-2a347117",
+     "classificacao-de-letournel-a25f459a"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "fb4f05b80642b5eb778a778e2a0320f82bcb05ea4bbcc43589f8ffcd3844454f"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1519-1.jpeg"
+  ]
+ },
+ "trauma-1520": {
+  "questaoSha256": "5f474bdd8835b421a5544a70b783a84ca44f198c89455e55528fdeabce53946f",
+  "comentarioAnteriorSha256": "ca26aa3dc89c8b0ee78438753213c86ddcc2c2cc519d704c324c631a24b58564",
+  "comentario": {
+   "conceito": "A seta está no **teto acetabular impactado**, e não numa ponta de ílio intacto: é o sinal da **asa de gaivota**, de **mau prognóstico**, alternativa A. O desenho do teto no AP traduz o afundamento da região superomedial.\n\nNos padrões anteriores do idoso osteopênico, a cabeça pode medializar e comprimir esse setor de carga. A dificuldade não termina ao elevar o fragmento: é preciso mantê-lo reduzido e sustentado. Novo desvio favorece subluxação e incongruência (Rockwood, 10ª ed., cap. 51, “A asa de gaivota”).\n\n**Gaivota e esporão são sinais diferentes.** O esporão é cortical caudal de ílio intacto que fica lateral ao acetábulo medializado em ambas as colunas; a gaivota é a própria cúpula afundada. A morfologia e a estrutura apontada são mais úteis que a semelhança do nome com uma forma.\n\nO sinal deve motivar avaliação tomográfica e planejamento do suporte da superfície. No idoso com impacção grave ou dano da cabeça, pode favorecer a discussão de artroplastia combinada à fixação, mas não determina sozinho uma técnica para todo paciente.",
+   "correta": "**A: asa de gaivota, impacção superomedial e prognóstico desfavorável.** A seta e o contorno do teto correspondem ao achado descrito. A dificuldade de manter a redução explica seu significado clínico.",
+   "incorretas": {
+    "B": "**Descreve outro sinal e outra estrutura.** O esporão é ílio intacto, melhor visto na obturatriz, associado à separação de ambas as colunas. Aqui a seta indica impacção do teto no AP.",
+    "C": "**Acerta o nome e erra associação e prognóstico.** O resumo liga a gaivota aos padrões anteriores do idoso e à dificuldade de manter o teto reduzido; não a apresenta como sinal de parede posterior com bom prognóstico.",
+    "D": "**A própria descrição aponta outra superfície.** Colapso subcondral da cabeça femoral não é impacção do teto acetabular. O achado indicado e o conteúdo consultado sustentam gaivota; não é necessário inferir necrose cefálica pela radiografia."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: O paciente idoso; Classificação de LETOURNEL."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "O paciente idoso",
+     "Classificação de LETOURNEL"
+    ],
+    "blocos": [
+     "o-paciente-idoso-9f04e33f",
+     "classificacao-de-letournel-e0c8fa8d",
+     "o-paciente-idoso-7a2bf394"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "4b6f2998c78771fbe815f9bb8242897c86db770fec22bafd8c624239a3734356"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1520-1.jpeg"
+  ]
+ }
+}

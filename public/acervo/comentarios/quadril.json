@@ -388,16 +388,44 @@
     "conferido": false
   },
   "quadril-0035": {
+    "conceito": "A questão tem uma divergência: **C, fossa acetabular, é a letra oficial**, mas a tabela independente do resumo atribui a parte **medial** da lágrima ao **canal obturatório e à superfície quadrilátera anteroinferior**. Entre as opções, essa descrição favorece D.\n\nA lágrima é uma imagem de tangência do feixe, não um pequeno osso separado. Seu ramo **lateral** corresponde à parede anterior inferior e à fossa acetabular; o **medial**, ao canal obturatório e à quadrilátera. Inverter os ramos muda a resposta anatômica (Rockwood, 10ª ed., cap. 51, “O AP da bacia”).\n\n**A mesma superfície explica outra relação útil.** A linha ilioisquiática também nasce da tangência à parte posterior da quadrilátera. No quadril normal, ela e a lágrima se superpõem; separação entre as duas sugere rotação da hemipelve ou fratura dessa superfície.\n\nA letra da banca fica preservada, mas não deve ensinar que a fossa é o ramo medial segundo a fonte consultada. O aluno precisa separar o histórico do gabarito da anatomia radiográfica demonstrada pelo resumo.",
+    "correta": "**C: fossa acetabular, conforme a banca.** O corpo consultado a coloca no ramo lateral da lágrima, não no medial. A resposta é mantida como oficial, com divergência explícita; pela tabela, D é defensável.",
     "incorretas": {
-      "A": "A coluna anterior aparece na radiografia como a linha iliopectínea e não forma a gota de lágrima.",
-      "B": "A coluna posterior é representada pela linha ilioisquiática. Ela é comparada com a lágrima para avaliar protrusão, mas não a forma.",
-      "D": "Pela anatomia radiográfica clássica, o ramo medial da lágrima é a placa quadrilateral, mas a banca considerou esta alternativa errada (veja o alerta)."
+      "A": "**Coluna anterior tem outro marco principal.** A linha iliopectínea a representa no AP. A pergunta pede um componente da lágrima, cuja parte medial vem da quadrilátera e do canal obturatório.",
+      "B": "**A associação com a linha ilioisquiática não faz do ramo medial toda a coluna posterior.** Essa linha indica a coluna por tangenciar a quadrilátera posterior. É preciso distinguir o indicador radiográfico da estrutura específica que forma a lágrima.",
+      "D": "**É a opção sustentada pela descrição anatômica.** A placa quadrilateral participa do ramo medial junto ao canal obturatório. Não deve ser refutada apenas porque a banca marcou C."
     },
-    "conceito": "Na radiografia de frente da bacia (AP), aparece na parte de baixo e de dentro do acetábulo uma imagem em forma de **U**, chamada de **gota de lágrima** (ou U de Köhler). Ela se forma porque duas superfícies ósseas quase paralelas são atravessadas pelo raio no mesmo ponto e se sobrepõem na imagem:\n\n**ramo lateral** (de fora): a parede da **fossa acetabular**, a depressão no fundo do acetábulo;\n\n**ramo medial** (de dentro): a **superfície quadrilátera** (ou placa quadrilateral), a parede interna da pelve atrás do acetábulo.\n\nEssa é a descrição anatômica clássica. O gabarito desta questão, porém, aponta a fossa acetabular como a parte medial (veja o alerta).\n\n**Para que serve a gota de lágrima?**\n\nÉ uma referência **estável** da bacia, que muda pouco quando o paciente gira na hora da radiografia.\n\nAjuda a medir a **protrusão acetabular**: quando a linha ilioisquiática ultrapassa a lágrima, o acetábulo está afundado na pelve.\n\nNa **artroplastia**, orienta a altura e a posição da taça, e uma linha unindo as duas lágrimas ajuda a medir diferença de comprimento entre as pernas.\n\nNas **fraturas**, uma lágrima deslocada indica que a parede interna do acetábulo foi atingida.\n\nOutras linhas da radiografia de frente da bacia: a **iliopectínea** representa a coluna anterior do acetábulo; a **ilioisquiática**, a coluna posterior; e o **teto** é a área de carga.\n\n**Na prova**: o gabarito oficial considera a fossa acetabular como a parte medial da lágrima, mas a anatomia clássica atribui o ramo medial à placa quadrilateral.",
-    "correta": "Fossa acetabular, segundo o gabarito oficial. A fossa forma uma das paredes da lágrima, mas na descrição clássica ela corresponde ao ramo lateral, e o medial é a placa quadrilateral.",
-    "alerta": "A descrição clássica é o inverso desta. Na lágrima radiográfica, o ramo LATERAL corresponde à parede da fossa acetabular (fossa cotiloide) e o ramo MEDIAL corresponde à superfície quadrilátera, a placa quadrilateral, que é a alternativa D, marcada como errada. Se você respondeu placa quadrilateral, o erro não foi seu.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET."
+    ],
+    "conferido": false,
+    "alerta": "C oficial preservada. A tabela do resumo Rockwood 10ª, cap. 51, coloca fossa acetabular no ramo lateral da lágrima e superfície quadrilátera/canal obturatório no medial; entre as opções, a descrição sustenta D. A aula distingue a anatomia do gabarito divergente.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+          ],
+          "blocos": [
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--000b19b5",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "c2460dc55cd9adb111c8b16b91779dfdf7c184a66712356b47d3df2243ff1131"
+        }
+      ],
+      "questaoSha256": "c920e12f2633062393c015fbebaf24ac9f5c403b3799fa2224935ee8fee8ca52",
+      "comentarioSha256": "f51ab17925289f4b280e956ed2efe66c4f60fcd85c84af47303804dbb4769821"
+    }
   },
   "quadril-0036": {
     "incorretas": {
@@ -580,15 +608,47 @@
     "conferido": false
   },
   "quadril-0053": {
+    "conceito": "Separar a linha ilioisquiática da **lágrima de Köhler** sugere fratura da **superfície quadrilátera**, alternativa D. A razão é que os dois contornos se formam, em parte, por tangências à mesma superfície óssea.\n\nA linha ilioisquiática é usada como marco da coluna posterior, mas nasce da região posterior da quadrilátera. A parte medial da lágrima também inclui a quadrilátera anteroinferior, junto do canal obturatório. No quadril normal, os contornos se superpõem; quando a relação se desfaz, deve-se procurar alteração dessa superfície e considerar a rotação da hemipelve (Rockwood, 10ª ed., cap. 51, “Radiografias”).\n\n**Linha e coluna não são sinônimos perfeitos.** A pergunta usa a coluna posterior como referência radiográfica, mas pede o que explica a dissociação dos contornos. A TC completa a leitura da anatomia, evitando classificar só por uma linha interrompida.\n\nTransversas são definidas pelo traço que separa o segmento ilíaco do isquiopúbico; sua altura pode preservar ou atingir a cúpula. Essa distinção não substitui a relação específica entre lágrima e ilioisquiática.",
+    "correta": "**D: superfície quadrilátera.** A origem compartilhada dos dois contornos explica por que sua dissociação levanta essa suspeita, sem dispensar verificar posicionamento e a fratura completa.",
     "incorretas": {
-      "A": "A fratura da parede posterior aparece como um fragmento sobre a cabeça do fêmur e não altera a relação entre a lágrima e a coluna posterior.",
-      "B": "A fratura transversa infratectal interrompe as linhas das duas colunas abaixo do teto, mas não produz especificamente essa separação.",
-      "C": "A fratura transversa transtectal atravessa a área de carga e tem outra assinatura na radiografia."
+      "A": "**A parede posterior produz o contorno da borda posterior.** Sua fratura isolada não é a explicação anatômica específica para separar dois marcos ligados à quadrilátera. Parede e superfície medial são regiões diferentes.",
+      "B": "**A transversa infratectal se define pela altura abaixo da cúpula.** Preservar o teto ajuda a discutir tratamento conservador, mas não explica por si a dissociação da lágrima em relação à ilioisquiática.",
+      "C": "**Transtectal informa que o traço atravessa a carga.** É um dado importante para congruência e indicação, porém não é a resposta específica ao sinal de separação dos contornos da quadrilátera."
     },
-    "conceito": "Na radiografia de frente da bacia (AP), várias **linhas** representam as partes do acetábulo. Saber o que cada uma significa permite reconhecer o tipo de fratura:\n\n**linha iliopectínea**: representa a **coluna anterior** do acetábulo;\n\n**linha ilioisquiática**: representa a **coluna posterior**;\n\n**gota de lágrima de Köhler**: uma imagem em U na parte de baixo e de dentro do acetábulo. Seu ramo de fora corresponde à fossa acetabular, e seu ramo de dentro corresponde à **superfície quadrilátera** (a placa quadrilateral, a parede interna da pelve atrás do acetábulo);\n\n**teto**: a área de carga do acetábulo;\n\n**rebordos** anterior e posterior: as paredes.\n\n**A relação entre a lágrima e a linha ilioisquiática**: no quadril normal, essas duas imagens correm **lado a lado**, quase sobrepostas. Se elas se **separam** (dissociação), significa que uma delas se deslocou. Quando a **superfície quadrilátera** fratura e se desloca para dentro da pelve, ela leva junto o ramo medial da lágrima, que se afasta da linha ilioisquiática. Esse é o sinal da fratura da superfície quadrilátera.\n\nCada fratura tem a sua \"assinatura\" na radiografia:\n\n**parede posterior**: um fragmento sobreposto à cabeça do fêmur, melhor visto na incidência oblíqua obturatriz (uma das incidências de Judet);\n\n**transversa**: interrompe as linhas das duas colunas no mesmo nível. Ela é chamada de transtectal, justatectal ou infratectal conforme passe pelo teto, logo abaixo dele ou abaixo dele;\n\n**dupla coluna**: mostra o sinal do esporão na oblíqua obturatriz.\n\n**Na prova**: a separação entre a lágrima de Köhler e a coluna posterior sugere fratura da superfície quadrilátera.",
-    "correta": "Da superfície quadrilátera. Quando ela fratura e se desloca para dentro, leva o ramo medial da lágrima, que se separa da linha ilioisquiática.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Anatomia aplicada: colunas, paredes, teto e vasos; Classificação de LETOURNEL."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+            "Anatomia aplicada: colunas, paredes, teto e vasos",
+            "Classificação de LETOURNEL"
+          ],
+          "blocos": [
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+            "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+            "classificacao-de-letournel-6291b238",
+            "classificacao-de-letournel-278b7b5b"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "651b75b3d31f2e4c5a8ad4860456c765859ac7b9933eaed534bf41c2edff6952"
+        }
+      ],
+      "questaoSha256": "c20f875c177d5f5e585f9e67f54209508a776d7c20b99d3fd38483327a832c74",
+      "comentarioSha256": "32b08d2cdbad545a2dd5accdbb9fc955bccb17bc87594d1b7a4961c1169ba400"
+    }
   },
   "quadril-0054": {
     "incorretas": {
@@ -1196,15 +1256,43 @@
     "conferido": false
   },
   "quadril-0122": {
+    "conceito": "A **oblíqua ilíaca, ou alar**, mostra de perfil a **borda posterior do osso inominado**, correspondente à coluna posterior. É a alternativa D. Não se deve trocar essa borda óssea inteira pela borda posterior do acetábulo, que é a parede.\n\nAs duas oblíquas de Judet rodam o paciente aproximadamente 45 graus. Cada uma perfila uma coluna e a borda acetabular do lado oposto: **ilíaca = coluna posterior e borda anterior; obturatriz = coluna anterior e borda posterior** (Rockwood, 10ª ed., cap. 51, “Oblíqua ilíaca e obturatriz”).\n\nA ilíaca põe a asa do ilíaco de frente e permite ler as incisuras isquiáticas maior e menor. A obturatriz abre o forame obturatório e é particularmente útil para a parede posterior e para o esporão de ambas as colunas.\n\n**A pergunta é sobre a melhor individualização, não sobre ausência absoluta de outras imagens.** Teto e lágrima fazem parte da leitura do AP; reconhecer uma estrutura em alguma projeção não a torna o marco que caracteriza a alar.",
+    "correta": "**D: borda posterior do inominado.** A alar perfila as incisuras e a coluna posterior. Essa é a relação direta descrita pela tabela de Judet.",
     "incorretas": {
-      "A": "O teto do acetábulo é avaliado no AP e nas duas oblíquas, sem ser a estrutura característica da oblíqua ilíaca.",
-      "B": "A borda (parede) posterior do acetábulo é vista na incidência oposta, a oblíqua obturatriz.",
-      "C": "A gota de lágrima é uma referência avaliada na radiografia de frente da bacia (AP)."
+      "A": "**O teto é um dos seis marcos do AP.** Ele é essencial para avaliar a superfície de carga, mas não é a estrutura que distingue a oblíqua ilíaca entre as opções. O marco característico aqui é o contorno posterior do inominado.",
+      "B": "**É a parede posterior, melhor perfilada na obturatriz.** A palavra “posterior” aparece nos dois nomes, mas uma é borda articular e a outra, borda do osso inteiro. A distinção resolve o distrator.",
+      "C": "**A lágrima é uma tangência composta lida no AP.** Seus ramos vêm de quadrilátera, canal obturatório, fossa e parede anterior inferior. Não corresponde à coluna posterior perfilada na alar."
     },
-    "conceito": "O **acetábulo** é formado por duas **colunas** de osso, como um \"Y\" invertido que sustenta o encaixe da cabeça do fêmur: a **coluna anterior** (na frente) e a **coluna posterior** (atrás). Em cada coluna há uma **parede**, a borda do acetábulo de cada lado.\n\nA radiografia de frente da bacia mostra essas estruturas sobrepostas. Para separá-las, usam-se as **incidências oblíquas de Judet**, em que o paciente é girado 45° para um lado ou para o outro:\n\n**Oblíqua ilíaca** (ou alar): o lado da lesão fica **para baixo**, e a asa do ilíaco aparece \"aberta\", paralela ao filme. Ela mostra a **coluna posterior** (incluindo a **borda posterior do osso inominado** e a incisura isquiática maior) e a **parede anterior**.\n\n**Oblíqua obturatriz**: o lado da lesão fica **para cima**, e o forame obturador aparece aberto. Ela mostra a **coluna anterior** e a **parede posterior**.\n\n**Uma regra para não esquecer**: cada oblíqua mostra **uma coluna e a parede do lado oposto**. Ilíaca: coluna posterior e parede anterior. Obturatriz: coluna anterior e parede posterior.\n\nNa radiografia de frente (AP), avaliam-se seis linhas: a iliopectínea, a ilioisquiática, a gota de lágrima, o teto e as duas paredes. Hoje a tomografia com reconstrução 3D complementa o estudo, mas as oblíquas continuam essenciais no planejamento e durante a cirurgia.\n\n**Na prova**: na oblíqua ilíaca, vê-se a borda posterior do osso inominado (a coluna posterior) e a parede anterior.",
-    "correta": "Borda posterior do osso inominado. A oblíqua ilíaca abre a asa do ilíaco e mostra de perfil a coluna posterior, com a incisura isquiática maior.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+          ],
+          "blocos": [
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "a701c6abb3bf147661fa44d092a916c769d65ae768290b570bb9178f47ef7135"
+        }
+      ],
+      "questaoSha256": "6e998f9876913ebfe458f63e887e07277ad9de7e8a3da80f4b0261fb477c59fe",
+      "comentarioSha256": "84c05508c15de2358cbe4e6e1f79acab3fad7c3438e269bff2394bdce35aef00"
+    }
   },
   "quadril-0123": {
     "incorretas": {
@@ -2746,18 +2834,47 @@
     "conferido": false
   },
   "quadril-0270": {
+    "conceito": "A combinação correta é **arco anterior na obturatriz acima de 25 graus e posterior na alar acima de 70 graus**, alternativa B. A redação fala em “parede”, mas deve ser entendida como avaliação do **setor de teto**, não como autorização para aplicar o método à fratura isolada da parede posterior.\n\nO arco do teto usa o centro da cabeça, uma vertical e a linha até a chegada do traço à superfície articular. Mede-se sem tração, com redução concêntrica, nas três incidências. Os limites biomecânicos de Vrahas são **45 graus no AP, 25 na obturatriz e 70 na ilíaca**; abaixo deles, o setor intacto pode ser insuficiente (Rockwood, 10ª ed., cap. 51, “O teto e o arco de Matta”).\n\n**Anterior e posterior não indicam a mesma oblíqua.** A obturatriz fornece o arco anterior; a ilíaca, o posterior. Não se deve trocar a função do ângulo pelo fato de a obturatriz perfilar a parede posterior.\n\nO método não se aplica a ambas as colunas, em que não resta acetábulo intacto, nem decide a estabilidade da parede posterior. Essa exige avaliação própria, preferencialmente dinâmica quando duvidosa.",
+    "correta": "**B: obturatório abaixo de 25 e alar abaixo de 70 indicam insuficiência dos respectivos setores.** É a relação angular sustentada, desde que “parede” seja lida como setor anterior/posterior do teto. O método não é critério de estabilidade de parede posterior isolada.",
     "incorretas": {
-      "A": "O ângulo do arco obturatório avalia a parede anterior, e não a posterior.",
-      "C": "Esses critérios não se aplicam às fraturas de ambas as colunas nem às fraturas da parede posterior.",
-      "D": "Os limites são 45°, 25° e 70°, e não 90° para todos."
+      "A": "**Acerta o limite medial e troca o significado da obturatriz.** O AP usa 45 graus, mas o arco obturatório é anterior, não posterior. A imagem que mostra a parede posterior não fornece, por isso, o arco posterior.",
+      "C": "**Aplica o método a duas exceções.** Em ambas as colunas não há teto intacto para medir; na parede posterior importa a estabilidade julgada à parte. Nenhum desses padrões admite aplicação indiferenciada do roof arc.",
+      "D": "**Cria um corte uniforme que a tabela não estabelece.** Os limites de Vrahas variam entre as três vistas. O capítulo menciona valores de carga ao levantar da cadeira, mas ressalta que ainda não têm implicação clínica definida; não recomenda 90 graus para todos."
     },
-    "conceito": "Algumas **fraturas do acetábulo** podem ser tratadas **sem cirurgia**, desde que a parte do acetábulo que recebe o peso, o **teto**, esteja intacta. **Matta** descreveu uma forma de medir isso nas radiografias: os **ângulos do arco do teto** (roof arc angles).\n\n**Como se mede**: em cada incidência radiográfica, traça-se uma linha **vertical** pelo centro do acetábulo e outra até o ponto em que a fratura atinge o teto. O ângulo entre elas mostra quanto do teto está intacto. Quanto **maior** o ângulo, mais longe a fratura passa da área de carga.\n\n**Os três ângulos e seus limites**:\n\n**AP** (radiografia de frente): **arco medial**, que avalia o teto do lado de dentro. Deve ser de pelo menos **45°**;\n\n**oblíqua obturatriz**: **arco anterior**, que avalia a parede e a coluna **da frente**. Deve ser de pelo menos **25°**;\n\n**oblíqua ilíaca** (alar): **arco posterior**, que avalia a parede e a coluna **de trás**. Deve ser de pelo menos **70°**.\n\nSe todos os ângulos estão acima desses limites, há teto intacto suficiente para tratar sem cirurgia. Na tomografia, o equivalente é a fratura passar fora dos 10 mm de cima do teto.\n\n**Limitações importantes**: esses critérios **não se aplicam** às fraturas de **ambas as colunas** (em que o acetábulo fica separado do esqueleto) nem às fraturas da **parede posterior**, avaliadas pelo tamanho do fragmento e pela estabilidade.\n\n**Na prova**: arco obturatório menor que 25° indica cobertura anterior inadequada; arco alar menor que 70° indica cobertura posterior inadequada.",
-    "correta": "Um ângulo do arco obturatório menor que 25 graus indica cobertura inadequada da parede anterior, e um ângulo alar menor que 70 graus indica cobertura inadequada da parede posterior.",
     "referencias": [
-      "The Adult Hip, John J. Callaghan et al. (editores)"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Quem pode ficar sem cirurgia; Radiografias: as seis linhas do AP e as oblíquas de JUDET."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "alerta": "B oficial preservada pela correspondência dos arcos de Vrahas. A palavra “parede” na alternativa não deve ser entendida como fratura isolada: o resumo exclui a parede posterior da aplicação do roof arc, cuja estabilidade é avaliada separadamente.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Quem pode ficar sem cirurgia",
+            "Radiografias: as seis linhas do AP e as oblíquas de JUDET"
+          ],
+          "blocos": [
+            "quem-pode-ficar-sem-cirurgia-8a28effd",
+            "quem-pode-ficar-sem-cirurgia-f17537a8",
+            "quem-pode-ficar-sem-cirurgia-b45eec2a",
+            "quem-pode-ficar-sem-cirurgia-562ca981",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "a952f9c927a3009358ee110619cb5ba261712f958e4b831b3c23bef07747880f"
+        }
+      ],
+      "questaoSha256": "8fdd23322ad51cbd1268bb81cf3ffa822ffb8a537d0d96a94db50b743d7326df",
+      "comentarioSha256": "dc969144b3ec766a0fa3ac8841846f96163677c9ec80b2921843ba3ca7fff129"
+    }
   },
   "quadril-0271": {
     "incorretas": {
@@ -3704,18 +3821,46 @@
     }
   },
   "quadril-0333": {
+    "conceito": "Depois de uma fratura-luxação posterior, a complicação tardia mais frequente da lista é a **artrose pós-traumática**, alternativa A. A necrose da cabeça é importante e temida, mas não deve receber automaticamente a liderança de frequência.\n\nA articulação depende de uma superfície congruente. Uma fratura mal reduzida deixa a cabeça trabalhar contra uma superfície irregular; o resumo relaciona a artrose sobretudo à qualidade da redução e também à lesão da cabeça no impacto. Reduções mais precisas têm menos artrose e aparecimento mais tardio (Rockwood, 10ª ed., cap. 51, “Artrose pós-traumática e necrose”).\n\n**Necrose e artrose podem coexistir, mas não são sinônimos.** Necrose pode levar à degeneração, porém parte da artrose atribuída a ela decorre do desgaste contra uma superfície mal reconstruída. Reconhecer essa diferença evita reduzir todo mau resultado a um problema vascular.\n\nOssificação e lesão nervosa trazem outras perdas funcionais. Sua importância clínica não muda a comparação: neste contexto, a artrose é apontada como a principal complicação.",
+    "correta": "**A: artrose.** É a complicação principal descrita, com forte relação com a incongruência e a qualidade da redução. Não é necessário pressupor necrose para explicar sua ocorrência.",
     "incorretas": {
-      "B": "A necrose avascular é uma complicação importante e temida, mas ocorre com frequência menor que a artrose, sobretudo quando a redução é rápida.",
-      "C": "A ossificação heterotópica acontece principalmente após o acesso cirúrgico posterior e é menos frequente que a artrose.",
-      "D": "A paralisia do isquiático é uma complicação aguda, que surge no momento do trauma, e não uma complicação tardia."
+      "B": "**Pode causar artrose, mas não é o desfecho mais frequente.** A necrose acompanha fraturas com luxação e dano da cabeça; não explica toda degeneração tardia. O capítulo alerta para atribuir artrose à necrose por engano.",
+      "C": "**Tem mecanismo e repercussão diferentes.** A ossificação se relaciona ao trauma das partes moles e às vias extensas, podendo limitar movimento. Não substitui a artrose como principal complicação tardia da articulação lesada.",
+      "D": "**É lesão neurológica, não o desgaste articular dominante.** O ciático pode ser afetado no trauma ou na cirurgia e recuperar de modo variável. Sua gravidade não o torna a complicação tardia mais frequente nessa comparação."
     },
-    "conceito": "Na **luxação posterior do quadril**, a cabeça femoral sai do acetábulo para trás, geralmente em acidentes de carro quando o joelho bate no painel com o quadril fletido. Quando a força é grande, há também fratura da **parede posterior** do acetábulo ou da própria cabeça (fratura-luxação).\n\n**Complicações que precisam ser conhecidas**:\n\n**lesão do nervo isquiático**, principalmente da divisão fibular. É uma complicação **aguda**, presente já no momento do trauma ou logo após a redução;\n\n**necrose avascular da cabeça femoral**, porque a luxação estira e rompe os vasos que nutrem a cabeça. Seu risco diminui muito quando a redução é feita rapidamente, idealmente nas primeiras 6 horas;\n\n**ossificação heterotópica**, formação de osso nos músculos ao redor do quadril, mais comum após acesso cirúrgico posterior;\n\n**artrose pós-traumática**, a complicação **tardia mais frequente**. No momento do impacto, a cartilagem da cabeça e do acetábulo sofre lesão direta, e fragmentos da parede posterior deixam a superfície irregular. Com os anos, a articulação se desgasta. O risco é maior quando há fratura associada e quando a redução não fica perfeita.\n\n**Na prova**: na fratura-luxação posterior do quadril, a complicação tardia mais frequente é a artrose.",
-    "correta": "A artrose pós-traumática é a complicação tardia mais frequente, porque a cartilagem é lesionada no impacto e a fratura associada deixa a articulação incongruente.",
     "referencias": [
-      "Rockwood and Green’s fractures in Adults, 6th Ed., p. 1745 (referência indicada na prova TARO 2013, questão 42)"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Complicações; Resultados: a redução manda; Ossificação heterotópica."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Complicações",
+            "Resultados: a redução manda",
+            "Ossificação heterotópica"
+          ],
+          "blocos": [
+            "complicacoes-738e51f3",
+            "resultados-a-reducao-manda-3fa0178c",
+            "ossificacao-heterotopica-32f620e0",
+            "complicacoes-7a30635a"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "e901fdba958c936e2a20af83554614b9d5d8f0df640e5fb777639479bd30b028"
+        }
+      ],
+      "questaoSha256": "46185b1d6e13b7840e85f49e868cc6262dfbce4ca980ad74d53f79eba80af9c7",
+      "comentarioSha256": "4f03192193b409aa8cb1ee53fbc5a163626ef04eddc3f52870a48d637e870233"
+    }
   },
   "quadril-0334": {
     "incorretas": {
@@ -3732,18 +3877,44 @@
     "conferido": false
   },
   "quadril-0335": {
+    "conceito": "Entre as fraturas **associadas**, chamadas de complexas no enunciado, o padrão mais frequente da tabela é **ambas as colunas**, alternativa B, com cerca de **23%**. A parede posterior lidera o conjunto geral, mas é elementar e não participa das opções.\n\nEm ambas as colunas, nenhuma superfície articular permanece ligada ao ílio intacto. Isso a distingue da transversa, da T e da anterior com hemitransversa posterior, que também cruzam as duas colunas, mas deixam parte do teto presa ao osso intacto (Rockwood, 10ª ed., cap. 51, “Classificação de Letournel”).\n\nA transversa com parede posterior vem perto, com cerca de 20%. Em T e anterior com hemitransversa aparecem com aproximadamente 7% cada. A frequência ajuda na comparação pedida, mas não substitui reconhecer o traço em um paciente.\n\n**A palavra do grupo importa.** “Mais comum” no acetábulo e “associada mais comum” não são a mesma pergunta; a resposta depende de quais padrões estão sendo comparados.",
+    "correta": "**B: dupla coluna, ou ambas as colunas.** É a associada mais frequente da tabela. Sua característica anatômica é a desconexão completa da superfície articular em relação ao ílio intacto.",
     "incorretas": {
-      "A": "A fratura em T é uma fratura associada, mas é bem menos frequente que a de dupla coluna.",
-      "C": "A transversa com parede posterior é comum e fica entre as mais frequentes, mas não supera a dupla coluna.",
-      "D": "A coluna anterior com hemitransversa posterior aparece mais em idosos, mas não é a associada mais frequente."
+      "A": "**É uma associada menos frequente.** Em T corresponde a transversa acrescida de um ramo vertical até o setor isquiopúbico e aparece em cerca de 7%, abaixo das ambas as colunas.",
+      "C": "**É comum, mas vem em segundo nesta comparação.** Transversa com parede posterior representa cerca de 20%, versus 23% de ambas as colunas. A soma de dois componentes não a torna automaticamente a mais frequente.",
+      "D": "**Tem importância no idoso, sem liderar a tabela geral.** Coluna anterior com hemitransversa posterior aparece com cerca de 7%; o componente posterior se comporta como metade de uma transversa, com parte do teto ainda ligada ao ílio."
     },
-    "conceito": "O **acetábulo** é sustentado por duas **colunas** de osso, como um \"Y\" invertido: a **coluna anterior**, que vai da crista ilíaca até o púbis, e a **coluna posterior**, que desce até o ísquio. Entre elas ficam as **paredes**, anterior e posterior, que formam a borda da cavidade.\n\n**Letournel e Judet** classificaram as fraturas do acetábulo em dois grupos:\n\n**fraturas elementares**, com um único traço: parede posterior, coluna posterior, parede anterior, coluna anterior e transversa;\n\n**fraturas associadas**, que combinam dois ou mais padrões: em T, coluna posterior com parede posterior, transversa com parede posterior, coluna anterior com hemitransversa posterior e **dupla coluna**.\n\n**A dupla coluna** é a fratura associada **mais frequente**. Nela, as duas colunas se separam e **nenhum pedaço da superfície articular continua preso ao osso ilíaco**, que segue unido ao sacro. Por isso se diz que ela é uma \"articulação flutuante\".\n\nO achado radiográfico típico é o **sinal da espora**: na incidência obturatriz (oblíqua), aparece uma ponta de osso do ilíaco intacto projetando-se acima do acetábulo deslocado.\n\n**Para não confundir**: considerando todas as fraturas, elementares e associadas, a mais comum é a da parede posterior isolada.\n\n**Na prova**: entre as fraturas associadas de Letournel, a mais frequente é a de dupla coluna.",
-    "correta": "A dupla coluna é a fratura associada mais frequente na classificação de Letournel.",
     "referencias": [
-      "Rockwood and Green’s fractures in Adults, 7th Ed., p. 1485 (referência indicada na prova TARO 2013, questão 51)"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Classificação de LETOURNEL"
+          ],
+          "blocos": [
+            "classificacao-de-letournel-cb46defc",
+            "classificacao-de-letournel-18f9732d",
+            "classificacao-de-letournel-a25f459a",
+            "classificacao-de-letournel-3f7fc233"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "88855222e4cb83c9a8e9d151c79e8f9eaed8602a7194634d2fceee6b7db9b229"
+        }
+      ],
+      "questaoSha256": "25b784030a0dd18df5113ac8b3c513989d4da2af2bbff4ed08dbd2792bec4d99",
+      "comentarioSha256": "2da74169ef9c56f079a737e9a1d35276ac468d73e7fcc61a9df09331f486c343"
+    }
   },
   "quadril-0336": {
     "incorretas": {
@@ -4848,18 +5019,43 @@
     "conferido": false
   },
   "quadril-0414": {
+    "conceito": "A fáscia iliopectínea separa duas passagens: **iliopsoas e nervo femoral na lacuna muscular, lateral; vasos ilíacos externos na lacuna vascular, medial**. É a alternativa A. Sua abertura é um passo para alcançar a quadrilátera e a pelve verdadeira.\n\nNão se trata de separar duas tábuas ósseas. O marco organiza a dissecção em torno de músculos, nervos e vasos que precisam ser afastados com cuidado. Na janela média, o iliopsoas e o femoral vão para lateral, enquanto os vasos são afastados medialmente (Rockwood, 10ª ed., cap. 51, “Ilioinguinal”).\n\n**Conhecer os compartimentos explica o risco.** Tração prolongada pode lesar a íntima dos vasos, e o resumo recomenda conferir o pulso; o nervo femoral acompanha o músculo, não deve ser tratado como estrutura livre fora dessa janela.\n\nFunículo, conteúdo inguinal e cutâneo femoral lateral também importam no acesso, mas não são o par separado por essa fáscia. Um marco anatômico não deve ser identificado apenas porque outra estrutura passa nas proximidades.",
+    "correta": "**A: iliopsoas/femoral de um lado e vasos ilíacos externos do outro.** A relação lateral-medial identifica as lacunas e orienta a janela média.",
     "incorretas": {
-      "B": "**Errada no local.** A relação entre funículo espermático e vasos epigástricos inferiores pertence ao assoalho do canal inguinal, mais superficial. Ali, a referência é a artéria epigástrica inferior, que é ligada na borda medial do anel profundo.",
-      "C": "**Errada.** O nervo cutâneo femoral lateral é referência da porção lateral da incisão, perto da espinha ilíaca anterossuperior. Ele não define a fáscia iliopectínea nem a separação entre os compartimentos profundos.",
-      "D": "**Errada.** A ilioinguinal trabalha pela face interna da pelve. Separar a face externa do ílio da tábua interna descreve outro tipo de exposição, como a da iliofemoral estendida."
+      "B": "**Confunde a dissecção inguinal com a separação das lacunas.** O funículo é isolado com o nervo ilioinguinal durante o acesso, mas o par definidor da fáscia é muscular versus vascular, não funículo versus vasos epigástricos.",
+      "C": "**A posição do cutâneo femoral lateral não define esse marco.** Ele precisa ser protegido, mas a distância proposta à espinha não explica a separação entre iliopsoas/femoral e vasos. O resumo não confirma esse intervalo numérico como definição da fáscia.",
+      "D": "**Troca partes moles por superfícies ósseas.** A fáscia separa compartimentos muscular e vascular; não descola as tábuas do ílio nem oferece, por essa divisão, visão simultânea das duas colunas."
     },
-    "conceito": "### Uma parede entre músculo e vaso\n\nNo plano profundo da via ilioinguinal, logo abaixo do ligamento inguinal, ficam lado a lado o ==iliopsoas==, o ==nervo femoral== e os ==vasos ilíacos externos== (que viram femorais ao passar sob o ligamento).\n\nA ==fáscia iliopectínea== é a continuação da fáscia do iliopsoas e forma uma parede que divide a região em dois compartimentos:\n\n| Compartimento | Posição | Conteúdo |\n|---|---|---|\n| ==Muscular== | lateral | ==iliopsoas== e ==nervo femoral== |\n| ==Vascular== | medial | ==artéria e veia ilíacas externas== e linfáticos |\n\n### Por que é o marco decisivo\n\n1. Separa músculo e nervo dos vasos, permitindo afastar cada grupo com segurança.\n2. Ao ser ==incisada até a borda pélvica==, abre a passagem da pelve falsa para a ==pelve verdadeira==, dando acesso à superfície quadrilátera.\n\nDepois de aberta, o iliopsoas com o nervo femoral é envolvido por um dreno e afastado como unidade. ==Fletir e rodar externamente== o quadril relaxa o iliopsoas e amplia a exposição.\n\n> **Na prova:** fáscia iliopectínea separa o compartimento do iliopsoas e nervo femoral do compartimento dos vasos ilíacos externos; abri-la dá acesso à pelve verdadeira.",
-    "correta": "**Correta: separa o compartimento do iliopsoas e nervo femoral do compartimento dos vasos ilíacos externos.** Identificar e incisar essa fáscia com cuidado é o passo que permite separar as duas cortinas, muscular e vascular, sem lesar o nervo femoral ou os vasos. Sem essa abertura, não há acesso à pelve verdadeira.",
     "referencias": [
-      "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 9 (Vias Ilioinguinal, Iliofemoral Estendida e Combinadas)"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso."
     ],
-    "geradoEm": "2026-10-06",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Vias de acesso"
+          ],
+          "blocos": [
+            "vias-de-acesso-8c8f0d5a",
+            "vias-de-acesso-b5f952c0",
+            "vias-de-acesso-46c79886"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "a6d6dee9b04696f1225e5093f70e9cf175560c2491286f6c498eab801e63d213"
+        }
+      ],
+      "questaoSha256": "428c50dfb3e4434dfaa734ddef0aef1d6198c547853688610cf2a4844543480f",
+      "comentarioSha256": "bf55d6d38d50198ac7282aa160207282bf9ca94e005148d758d5dfa05f46b21c"
+    }
   },
   "quadril-0415": {
     "incorretas": {
@@ -4876,18 +5072,44 @@
     "conferido": false
   },
   "quadril-0416": {
+    "conceito": "Para expor o **ramo púbico superior** pela janela medial da ilioinguinal, os **vasos vão para lateral**, e o funículo pode ser deslocado para abrir o intervalo medial; a alternativa C descreve **vasos laterais e funículo medial**.\n\nA janela lateral da via nasce da elevação do ilíaco. A média separa iliopsoas/femoral, para lateral, dos vasos, para medial. Já a medial usa o deslocamento lateral dos vasos para chegar ao ramo e à sínfise. A direção dos vasos diferencia as duas últimas (Rockwood, 10ª ed., cap. 51, “As três janelas”).\n\n**O funículo pode ser afastado para um lado ou para o outro**, conforme o trecho técnico do resumo. Por isso, mover apenas o funículo, sem definir o que acontece com os vasos, não descreve de forma suficiente a janela perguntada.\n\nA exposição precisa manter a proteção vascular e reconhecer anastomoses sobre o ramo. O objetivo é criar um intervalo seguro até o osso, não simplesmente afastar toda estrutura na mesma direção.",
+    "correta": "**C: vasos laterais e funículo medial.** É uma configuração da janela medial, que alcança ramo superior e sínfise. O deslocamento lateral dos vasos é o componente decisivo do par.",
     "incorretas": {
-      "A": "**Errada.** Afastar o iliopsoas com o nervo femoral para medial abre a janela lateral, que expõe a fossa ilíaca até a sacroilíaca, e não o ramo púbico.",
-      "B": "**Errada.** Afastar o funículo para lateral abre a janela medial, que expõe a sínfise púbica.",
-      "D": "**Errada.** Vasos para medial e iliopsoas para lateral não corresponde a nenhuma janela descrita. Afastar os vasos medialmente os colocaria sobre o funículo, sem criar espaço útil."
+      "A": "**Não é a configuração da janela descrita.** Na janela média, iliopsoas e femoral são deslocados lateralmente, não medialmente. Além disso, essa manobra isolada não define o acesso medial ao ramo.",
+      "B": "**Pode ser um movimento permitido, mas está incompleto.** A tabela admite funículo para medial ou lateral; a janela para o ramo depende também de afastar os vasos lateralmente. A opção não define esse intervalo, enquanto C o faz.",
+      "D": "**Descreve a janela média.** Vasos mediais e iliopsoas lateral expõem borda pélvica, eminência iliopectínea e quadrilátera. Para a janela medial pedida, os vasos passam para lateral."
     },
-    "conceito": "### Três cortinas, três janelas\n\nDepois de aberta a fáscia iliopectínea, a via ilioinguinal permite ver a pelve entre ==três conjuntos de estruturas móveis==:\n\n| Cortina | Posição |\n|---|---|\n| ==Iliopsoas com nervo femoral== | lateral |\n| ==Bainha dos vasos ilíacos externos== | meio |\n| ==Funículo espermático== (ou ligamento redondo) | medial |\n\nAfastando-as em direções diferentes, abrem-se ==três janelas==:\n\n| Janela | Manobra | O que expõe |\n|---|---|---|\n| ==Lateral== | iliopsoas para ==medial== | fossa ilíaca até a sacroilíaca |\n| ==Média== | ==vasos para lateral== e ==funículo para medial== | ==ramo púbico superior== e a borda pélvica entre eles |\n| ==Medial== | funículo para ==lateral== | ==sínfise púbica== |\n\n### O cuidado na janela média\n\nSobre o ramo púbico superior costuma passar uma ==anastomose entre os vasos ilíacos externos e obturatórios==, a corona mortis, que sangra muito se cortada sem ser vista. Os vasos e o nervo obturatórios ficam logo abaixo da borda do ramo. A bainha vascular é elevada com dissecção romba, identificando esses vasos antes de avançar.\n\n> **Na prova:** ramo púbico superior pela janela média: vasos para lateral e funículo para medial; cuidado com a corona mortis.",
-    "correta": "**Correta: janela média, com vasos ilíacos para lateral e funículo para medial.** O ramo púbico superior fica exatamente entre a bainha vascular e o funículo. Afastando os vasos lateralmente e o funículo medialmente, abre-se a janela sobre ele. É também a janela em que a corona mortis precisa ser procurada.",
     "referencias": [
-      "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 9 (Vias Ilioinguinal, Iliofemoral Estendida e Combinadas)"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso."
     ],
-    "geradoEm": "2026-10-06",
-    "conferido": false
+    "conferido": false,
+    "alerta": "C oficial preservada como configuração da janela medial. A tabela do resumo admite funículo deslocado medial ou lateralmente; portanto B não deve ser chamada de anatomicamente impossível, e sim incompleta por não definir a relação com os vasos, cujo afastamento lateral caracteriza a janela.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Vias de acesso"
+          ],
+          "blocos": [
+            "vias-de-acesso-b5f952c0",
+            "vias-de-acesso-8c8f0d5a",
+            "vias-de-acesso-46c79886"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "108221e8994b2e8e068f5a018fe1dc305556793e28356e8b6453ef1b4b41970a"
+        }
+      ],
+      "questaoSha256": "a361536ec81635b3073d359afe37e688a9e3a1693bbfd6d3706ea19ad3e2a1f3",
+      "comentarioSha256": "6fd09e5eca0b5bbc6832e5bdc79f7b7a963d1575e33c2be139926faacc1a76ed"
+    }
   },
   "quadril-0417": {
     "incorretas": {
@@ -5944,20 +6166,45 @@
     "conferido": false
   },
   "quadril-0490": {
-    "conceito": "**Irrigação da cabeça femoral no adulto.** É fundamental para entender a osteonecrose após fraturas do colo, luxações e cirurgias do quadril.\n\n**Fontes.**\n1. **Artéria circunflexa femoral medial** (ramo da femoral profunda): a **principal**. Passa posteriormente, entre o pectíneo e o iliopsoas, depois ao longo do obturador externo; seu **ramo profundo** sobe por trás do colo e origina os **vasos retinaculares posterossuperiores** (artérias epifisárias laterais), que irrigam a maior parte da cabeça.\n2. **Artéria circunflexa femoral lateral**: contribui para a parte anterior e inferior do colo e da cabeça, com menor importância.\n3. **Artéria do ligamento redondo** (ramo da obturatória): irriga uma pequena área perto da fóvea; contribuição pequena no adulto.\n4. Vasos intraósseos da metáfise: contribuem pouco após o fechamento da fise.\n\n**O anel extracapsular e os vasos retinaculares.** As circunflexas formam um anel na base do colo; dele sobem os vasos retinaculares (cervicais ascendentes), sob a sinóvia, até o anel subsinovial na junção cabeça-colo, de onde partem os vasos epifisários.\n\n**Implicações clínicas.**\n- **Fraturas desviadas do colo**: rompem ou dobram os vasos retinaculares, com risco de necrose.\n- **Luxação do quadril**: estira os vasos; a redução urgente (menos de 6 horas) reduz a necrose.\n- **Cirurgias**: a via posterior deve preservar o **obturador externo** e o quadrado femoral; a luxação cirúrgica de Ganz preserva o ramo profundo.\n- **Epifisiólise instável**: lesão dos vasos posteriores.\n\n> Principal fonte da cabeça femoral: artéria circunflexa femoral medial (ramo profundo, vasos retinaculares posterossuperiores).",
-    "correta": "**D: circunflexa femoral medial (resposta pela bibliografia).** A artéria circunflexa femoral medial, por seu ramo profundo e pelos vasos retinaculares posterossuperiores, é a principal fonte de irrigação da cabeça femoral no adulto. Sua lesão explica a osteonecrose após fraturas desviadas do colo e luxações.",
+    "conceito": "A principal fonte de sangue da cabeça femoral no adulto é o **ramo profundo da artéria circunflexa femoral medial**, alternativa D. Como não há gabarito oficial no acervo, D é apresentada como **provável pela bibliografia**.\n\nO ramo profundo chega à região posterior e origina as artérias retinaculares superiores, que sobem pelo colo dentro de pregas da cápsula e entram na cabeça perto da junção entre cartilagem e osso. Esse trajeto explica por que o desvio de uma fratura do colo ou uma dissecção agressiva pode comprometer a perfusão (Rockwood, 10ª ed., cap. 53, “Irrigação da cabeça femoral”).\n\n**Principal não significa exclusiva.** A circunflexa lateral contribui, a glútea inferior pode oferecer compensação por anastomoses, e a artéria do ligamento redondo também ajuda. O resumo, porém, ressalta que esta última não basta para manter toda a cabeça viva.\n\nA implicação prática é preservar o trajeto retinacular e os ramos próximos aos rotadores. Uma contribuição acessória não deve ser usada para minimizar a perda do pedículo principal.",
+    "correta": "**D: circunflexa femoral medial, provável pela fonte.** Seu ramo profundo dá origem aos retinaculares superiores que irrigam a zona de carga. A liderança da medial é expressa no resumo, sem atribuir oficialidade à letra.",
     "incorretas": {
-      "A": "**A circunflexa femoral lateral** contribui para a região anterior e inferior do colo e da cabeça, mas é uma fonte menor.",
-      "B": "**A artéria do ligamento redondo** irriga apenas uma pequena área perto da fóvea e não compensa a perda dos vasos retinaculares.",
-      "C": "**A glútea inferior** participa das anastomoses ao redor do quadril, mas não é a fonte principal da cabeça femoral."
+      "A": "**Contribui, mas não lidera no adulto.** O estudo de perfusão citado encontrou predomínio da medial sobre a lateral. Reconhecer participação da lateral não autoriza trocar a fonte principal.",
+      "B": "**É uma ajuda insuficiente isoladamente.** O vaso do ligamento redondo pode vir da obturatória ou da própria circunflexa medial. O resumo diz que sua contribuição não mantém toda a cabeça viva se o suprimento principal falhar.",
+      "C": "**Pode compensar por anastomose, o que é diferente de ser a principal.** A glútea inferior pode comunicar-se na borda inferior do piriforme e ajudar após lesão da medial. Essa possibilidade não muda o predomínio habitual do ramo profundo da circunflexa medial."
     },
     "referencias": [
-      "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 4ª ed., pg. 409.",
-      "Gautier E, Ganz K, Krügel N, Gill T, Ganz R. Anatomy of the medial femoral circumflex artery and its surgical implications. J Bone Joint Surg Br. 2000;82(5):679-683."
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada."
     ],
+    "conferido": false,
     "provavel": "D",
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "alerta": "Sem gabarito oficial no acervo. Provável D, sustentada pelo corpo do resumo Rockwood 10ª, cap. 53: ramo profundo da circunflexa femoral medial como fonte principal da cabeça no adulto.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "anatomia-aplicada-d7878510",
+            "anatomia-aplicada-a8c38522",
+            "anatomia-aplicada-666e0ba0"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "062635cac6ca1d3839488b0a4a4c8e4203042e0cb168bbcae2071daf435d49fa"
+        }
+      ],
+      "questaoSha256": "cf3aeffec24ea0bf93c2b971379c680e2ac257fcab4884fa605bff08f8d92f04",
+      "comentarioSha256": "94070d843f5333785d41b190672251e88007fb167aa2cb03b7f1c4bddfc93026"
+    }
   },
   "quadril-0491": {
     "conceito": "**Ossificação heterotópica após artroplastia total do quadril.** É a formação de osso lamelar maduro nas partes moles ao redor da articulação. Ocorre em cerca de 15% a 50% das artroplastias, mas é clinicamente significativa (rigidez, dor) em uma minoria (cerca de 3% a 7%, graus III e IV de Brooker).\n\n**Fatores de risco.**\n- **Do paciente**: ossificação heterotópica prévia (o maior fator de risco), espondilite anquilosante, hiperostose esquelética idiopática difusa (DISH), artrose hipertrófica, sexo masculino, doença de Paget.\n- **Cirúrgicos**: **trauma muscular extenso**, especialmente dos **abdutores** (glúteos médio e mínimo), que ocorre nos acessos **anterolateral e lateral direto (Hardinge)**; restos ósseos e sangue nas partes moles; tempo cirúrgico prolongado; osteotomia trocantérica.\n\n**Classificação de Brooker.**\n\n| Grau | Descrição |\n|---|---|\n| I | Ilhas ósseas nas partes moles |\n| II | Esporões da pelve ou do fêmur com mais de 1 cm entre si |\n| III | Esporões com menos de 1 cm entre si |\n| IV | Anquilose aparente |\n\n**Prevenção (em pacientes de alto risco).**\n- **Anti-inflamatórios** (indometacina ou outros AINEs) por algumas semanas.\n- **Radioterapia** em dose única (7 a 8 Gy) no pré-operatório imediato (até 24 horas antes) ou no pós-operatório precoce (até 72 horas).\n- Técnica cirúrgica cuidadosa, lavagem dos restos ósseos.\n\n**Tratamento da ossificação estabelecida.** Ressecção cirúrgica apenas quando há limitação importante, após a maturação (geralmente 6 a 12 meses, com cintilografia estabilizada), associada a profilaxia.\n\n> Ossificação heterotópica na prótese de quadril: mais frequente nos acessos anterolateral e lateral, pelo trauma aos abdutores.",
@@ -6267,20 +6514,47 @@
     "conferido": false
   },
   "quadril-0510": {
-    "conceito": "**Linhas radiográficas do acetábulo (Letournel e Judet).** Na radiografia AP da bacia, seis linhas representam as estruturas do acetábulo e ajudam a identificar o tipo de fratura.\n\n| Linha | Estrutura |\n|---|---|\n| Iliopectínea | Coluna anterior |\n| **Ilioisquiática** | **Coluna posterior** (e a superfície quadrilátera) |\n| **Gota de lágrima (de Köhler)** | Parede medial do acetábulo (superfície quadrilátera) e fossa acetabular |\n| Teto | Superfície de carga superior |\n| Borda anterior | Parede anterior |\n| Borda posterior | Parede posterior |\n\n**Gota de lágrima e linha ilioisquiática.** Normalmente, a linha ilioisquiática passa junto ou cruzando a gota de lágrima, porque ambas representam regiões vizinhas da parede medial do acetábulo. Quando a **superfície quadrilátera** fratura e se desloca medialmente, a linha ilioisquiática se separa da gota de lágrima (**dissociação**). É um sinal de comprometimento da lâmina quadrilátera, comum nas fraturas da coluna anterior com hemitransversa posterior, nas transversas e nas de duas colunas.\n\n**Imagem complementar.** As incidências oblíquas de Judet (alar e obturatória) e a tomografia com reconstrução 3D detalham as colunas e as paredes.\n\n**Tratamento.** Fraturas com desvio da lâmina quadrilátera são frequentes em idosos (queda da própria altura) e em traumas de alta energia; o acesso intrapélvico (Stoppa modificado) permite placas de suporte à lâmina.\n\n> Dissociação entre a linha ilioisquiática e a gota de lágrima: fratura com desvio da superfície quadrilátera.",
-    "correta": "**B: fratura da superfície quadrilátera.** A separação entre a linha ilioisquiática e a gota de lágrima de Köhler indica que a parede medial do acetábulo (lâmina quadrilátera) fraturou e se deslocou medialmente. O achado orienta a investigação com incidências de Judet e tomografia.",
+    "conceito": "A pista do caso é a **dissociação entre a linha ilioisquiática e a lágrima**, que sugere fratura da **superfície quadrilátera**, alternativa B. A dor sacra e púbica após a queda pede avaliação ampla, mas não muda o significado anatômico desses dois contornos.\n\nNo AP, a ilioisquiática se forma pela tangência à quadrilátera posterior, e o ramo medial da lágrima inclui a quadrilátera anteroinferior e o canal obturatório. A superposição normal decorre dessa origem relacionada. A fratura dessa superfície ou a rotação da hemipelve pode desfazer a relação (Rockwood, 10ª ed., cap. 51, “Radiografias”).\n\n**O sinal localiza uma suspeita; não entrega toda a classificação.** A TC deve mostrar extensão, rotação e continuidade das colunas. Ambas as colunas exige demonstrar que nenhuma superfície articular permanece ligada ao ílio intacto, algo que a dissociação isolada não prova.\n\nDa mesma forma, a separação de duas linhas no AP não deve ser convertida automaticamente em instabilidade vertical do anel ou fratura-luxação sacroilíaca. Essas hipóteses dependem da avaliação de suas estruturas e de seu deslocamento.",
+    "correta": "**B: superfície quadrilátera.** É a estrutura que explica a relação perdida entre os contornos. O contexto de trauma reforça a investigação, mas a resposta decorre da anatomia radiográfica.",
     "incorretas": {
-      "A": "**A instabilidade vertical da pelve** é avaliada pelo deslocamento cranial da hemipelve, melhor visto na incidência outlet, e não pela relação entre a linha ilioisquiática e a gota de lágrima.",
-      "C": "**A fratura das duas colunas** pode incluir a lâmina quadrilátera, mas seu sinal característico é o \"sinal do esporão\" (spur sign) na incidência obturatória, com nenhum segmento articular preso ao esqueleto axial. A dissociação isolada não define esse padrão.",
-      "D": "**O afundamento acetabular central** refere-se à protrusão da cabeça femoral no acetábulo; a dissociação descrita é o sinal da lâmina quadrilátera, não do afundamento como diagnóstico específico.",
-      "E": "**A fratura-luxação sacroilíaca** é uma lesão do anel pélvico posterior, avaliada na articulação sacroilíaca, não pelas linhas acetabulares."
+      "A": "**O achado não mede deslocamento vertical.** Separar lágrima e ilioisquiática aponta alteração da quadrilátera ou rotação da hemipelve; não demonstra, sozinho, instabilidade vertical do anel.",
+      "C": "**Falta a característica definidora.** Ambas as colunas exige desconexão de toda a superfície articular do ílio intacto. A dissociação descrita não permite afirmar essa continuidade ou sua perda sem ler o restante da imagem.",
+      "D": "**Deslocamento central não substitui a localização do sinal.** Medialização da cabeça e alteração da superfície medial podem coexistir, mas o enunciado fornece a relação entre contornos da quadrilátera, e não uma prova isolada de afundamento central.",
+      "E": "**A sacroilíaca não é a superfície que forma os dois marcos.** Uma lesão do anel pode coexistir no trauma, mas a quebra da superposição entre ilioisquiática e lágrima não demonstra fratura-luxação sacroilíaca."
     },
     "referencias": [
-      "Letournel E. Acetabulum fractures: classification and management. Clin Orthop Relat Res. 1980;(151):81-106.",
-      "Tile M, Helfet DL, Kellam JF, Vrahas M, eds. Fractures of the Pelvis and Acetabulum. 4th ed. Thieme; 2015."
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Tomografia e exame sob anestesia; Classificação de LETOURNEL."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+            "Tomografia e exame sob anestesia",
+            "Classificação de LETOURNEL"
+          ],
+          "blocos": [
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--57c098b9",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f0828005",
+            "tomografia-e-exame-sob-anestesia-27888975",
+            "classificacao-de-letournel-18f9732d"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "68519cee7ef4d1fc40edc313c3011c56acfea85b23ead686de44c9ed58711a51"
+        }
+      ],
+      "questaoSha256": "8915b39009a3df2e45d650ddf3165b7b504e37fe21ea36772ff0fa59e964ccdc",
+      "comentarioSha256": "6cc3088168dc534d4ccc188253d5b09556916d80bca9a63ed06327c6257fb99b"
+    }
   },
   "quadril-0511": {
     "conceito": "**Biomecânica do quadril e o offset femoral.** No apoio unipodal, os abdutores (glúteos médio e mínimo) equilibram o peso do corpo. O equilíbrio é uma alavanca:\n- **Braço de alavanca do peso**: distância do centro de gravidade ao centro da cabeça femoral (cerca de duas a três vezes maior que o dos abdutores).\n- **Braço de alavanca dos abdutores**: distância do centro da cabeça à linha de ação dos abdutores, que depende do **offset femoral** (distância entre o centro da cabeça e o eixo da diáfise).\n\n**Offset e forças.**\n- **Offset maior** (colo mais horizontal, em varo, ou mais longo): braço de alavanca abdutor maior, menos força muscular necessária, **menor força de reação articular**, melhor tensão das partes moles e estabilidade. Em contrapartida, aumenta o momento fletor sobre a haste femoral.\n- **Offset menor** (colo em **valgo** ou **curto**): braço de alavanca abdutor menor, **mais força muscular necessária**, **maior força de contato** no quadril, maior desgaste, marcha de Trendelenburg e mais risco de luxação por frouxidão.\n\n| Alteração | Offset | Força abdutora necessária | Força de contato articular |\n|---|---|---|---|\n| Colo em valgo ou curto | Diminui | Aumenta | Aumenta |\n| Colo em varo ou longo | Aumenta | Diminui | Diminui |\n\n**Na artroplastia.** Restaurar o offset e o comprimento do membro é um dos objetivos principais: melhora a força abdutora, a estabilidade e reduz o desgaste do polietileno. A medialização do componente acetabular também reduz o braço do peso.\n\n> Colo em valgo ou curto: menos offset, mais força exigida dos abdutores e maior carga na articulação.",
@@ -7745,18 +8019,45 @@
     "conferido": false
   },
   "quadril-0605": {
-    "conceito": "### Judet\n\nAs incidências de Judet são radiografias oblíquas da pelve com o ==paciente rodado 45 graus== e o feixe anteroposterior. São usadas sobretudo para ==fraturas acetabulares== após trauma ou artroplastia e para avaliar o componente acetabular na suspeita de protrusão.\n\n| Incidência | Mostra melhor |\n|---|---|\n| ==Oblíqua anterior== | ==coluna anterior (iliopúbica)== e ==rebordo posterior== |\n| ==Oblíqua posterior== | ==coluna posterior (ilioisquiática)== e ==rebordo anterior== |\n\nCada oblíqua mostra regiões diferentes ==dos dois acetábulos== ao mesmo tempo; por isso ambas são obtidas para avaliar completamente os dois lados. Na figura, AC e PR aparecem de um lado, PC e AR do outro.\n\n### Inlet e outlet\n\n| Incidência | Feixe | Melhor para |\n|---|---|---|\n| Inlet | ==40 graus caudal==, paralelo ao córtex sacral anterior | anel pélvico, ramos púbicos, ==desalinhamento rotacional== |\n| Outlet | ==40 graus cranial==, perpendicular ao sacro | forames obturatórios, ==desalinhamento vertical== |\n\n> **Na prova:** Judet a 45 graus; cada oblíqua mostra uma coluna e o rebordo oposto; inlet rotacional, outlet vertical.",
-    "correta": "**Correta.** A coluna anterior e o rebordo acetabular posterior são mais bem avaliados na oblíqua anterior, enquanto a coluna posterior e o rebordo anterior aparecem melhor na oblíqua posterior. A regra prática é que cada oblíqua mostra uma coluna e o rebordo oposto.",
+    "conceito": "No esquema, **AO** está junto à combinação **coluna anterior e rebordo posterior**; **PO**, junto a **coluna posterior e rebordo anterior**. Isso corresponde ao par da alternativa A. A imagem foi conferida pelas relações desenhadas, sem depender só do nome “anterior” ou “posterior”.\n\nNo resumo consultado, os nomes usuais são **oblíqua obturatriz** para coluna anterior e parede posterior, e **oblíqua ilíaca ou alar** para coluna posterior e parede anterior. Ambas usam cerca de 45 graus e completam o AP; cada uma perfila uma coluna e a borda oposta (Rockwood, 10ª ed., cap. 51, “Oblíquas de Judet”).\n\n**Coluna é mais que rebordo.** A coluna posterior inclui as incisuras e o setor isquiático; a parede posterior é só sua porção articular. A figura separa AC/PC das bordas AR/PR justamente para mostrar as duas informações de cada vista.\n\nReconhecer qual estrutura está perfilada é mais seguro que transportar um nome de projeção entre convenções sem olhar o desenho. A relação entre coluna e borda oposta permite conferir a leitura da figura.",
+    "correta": "**A: anterior com coluna anterior/rebordo posterior; posterior com coluna posterior/rebordo anterior.** É a combinação indicada pelas abreviações da figura, compatível com a relação obturatriz/ilíaca da tabela do resumo.",
     "incorretas": {
-      "B": "**Errada, inverte as estruturas.** A oblíqua anterior mostra a coluna anterior e o rebordo posterior, e a oblíqua posterior mostra a coluna posterior e o rebordo anterior.",
-      "C": "**Errada em dois pontos.** O paciente é rodado 45 graus, e ambas as incidências de Judet são obtidas para a avaliação completa dos dois acetábulos, pois cada uma mostra regiões diferentes de cada lado.",
-      "D": "**Errada.** O desalinhamento vertical é mais bem demonstrado pela incidência outlet, com o feixe 40 graus cranial. As de Judet servem principalmente às fraturas acetabulares e à posição do componente acetabular."
+      "B": "**Inverte os pares desenhados.** A imagem coloca AC e PR na relação de AO, não PC e AR. Trocar as colunas de uma oblíqua pela outra também troca a borda que aparece de perfil.",
+      "C": "**Erra angulação e suficiência.** As oblíquas descritas são de aproximadamente 45 graus e se complementam com o AP. Uma única vista não fornece a mesma leitura das duas colunas e das duas bordas.",
+      "D": "**Confunde acetábulo com anel pélvico.** Judet perfila colunas e bordas acetabulares; a figura e a tabela não têm como finalidade principal medir desalinhamento vertical do anel."
     },
     "referencias": [
-      "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Anatomia aplicada: colunas, paredes, teto e vasos."
     ],
-    "geradoEm": "2026-10-06",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+            "Anatomia aplicada: colunas, paredes, teto e vasos"
+          ],
+          "blocos": [
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+            "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+            "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+            "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "cf10721ee9ccf4f7fa6af6aa3e41824665d3db2c0c9e6cff30a7762324875c29"
+        }
+      ],
+      "questaoSha256": "588808af832ef6b23ce306f1163dcd18a0872cc9310aac4e8d46ef1162670387",
+      "comentarioSha256": "3136c345c48a029b631493975b3a13d945561d98222a8a39be6fba468242540d"
+    }
   },
   "quadril-0606": {
     "conceito": "### Sinovite vilonodular pigmentada\n\nProliferação idiopática de sinóvia hemorrágica, ==benigna, porém localmente agressiva==. Mais comum em ==mulheres==, da segunda década em diante, com ==pico na quarta década==. A maioria dos casos é no joelho, mas o quadril não é incomum.\n\n| Exame | Achados |\n|---|---|\n| Radiografia e tomografia | derrame (às vezes ==hiperdenso== pela hemorragia), erosões e cistos subcondrais |\n| Negativos pertinentes | ==densidade mineral normal== e ==cartilagem preservada== até tarde |\n| Ressonância | proliferação nodular com ==baixo sinal== e ==suscetibilidade (florescimento) no eco de gradiente==, pela ==hemossiderina==; frequentemente patognomônica |\n\nDiferencial: hemangioma intra-articular e hemofilia.\n\n### Condromatose sinovial primária\n\nNeoplasia benigna da sinóvia; o quadril é a ==segunda articulação mais acometida, depois do joelho==. Terceira a quinta décadas, mais em ==homens==.\n\n1. Nódulos sinoviais metaplásicos se formam e se multiplicam.\n2. Presos à sinóvia, vascularizam e ossificam (corpos osteocondrais visíveis); soltos, nutrem-se do líquido sinovial.\n3. A impactação mecânica destrói a cartilagem e leva à artrose.\n\nCorpos livres são radiograficamente visíveis em ==cerca de 85%==. Há relatos de degeneração em condrossarcoma sinovial. Pela alta pressão intra-articular do quadril, a doença proliferativa avançada pode causar ==erosões rápidas do colo== e risco de fratura.\n\n> **Na prova:** SVNP, mulher, quarta década, hemossiderina e osso preservado; condromatose, homem, quadril em segundo lugar, 85% visíveis.",

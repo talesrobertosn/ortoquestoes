@@ -1,0 +1,414 @@
+{
+ "trauma-1529": {
+  "questaoSha256": "c9564b27233dd5462e5595fd8f36fb7ae2b5863c3eafa77c73def2dd52664618",
+  "comentarioAnteriorSha256": "e7df8a87a59464a5ff4c59e246b79ed9a1b8a5d1f29a62dcb7bf12f7b3442e06",
+  "comentario": {
+   "conceito": "Uma fratura do acetábulo que precisa de fixação deve ser operada assim que o paciente estiver avaliado e em condições clínicas. O limite recomendado no resumo é **15 dias para as elementares e 10 dias para as associadas**, alternativa B. Esses são prazos a não ultrapassar, não datas para esperar.\n\nA dificuldade cresce porque a consolidação começa a prender os fragmentos. Por volta de dez dias, já existe essa resistência; em duas semanas, padrões como T, transversa, anterior com hemitransversa e ambas as colunas perdem mobilidade. Com três semanas, o calo pode exigir exposição maior e tornar menos provável a redução anatômica (Rockwood, 10ª ed., cap. 51, “O prazo”).\n\n**Compensar o paciente e evitar atraso são objetivos simultâneos.** A fixação definitiva não é emergência em todos os casos, mas a demora também não é neutra. Lesão vascular, fratura exposta, luxação irredutível ou recidivante e déficit progressivo do ciático mudam a urgência.\n\nA distinção entre elementar e associada serve aqui para organizar a dificuldade e a janela de tratamento. Não significa que toda elementar possa aguardar quinze dias sem prejuízo, nem que uma associada estável clinicamente deva ser operada antes de uma ameaça à vida ser controlada.",
+   "correta": "**B: 15 dias e 10 dias.** É a ordem elementares-associadas indicada pelo resumo. Operar antes, quando possível, facilita mobilizar os fragmentos e restaurar a superfície articular.",
+   "incorretas": {
+    "A": "**Permite consolidar além da janela recomendada.** Três semanas nas elementares e duas nas associadas ultrapassam quinze e dez dias. O calo e a perda de mobilidade não são apenas marcos de calendário: dificultam a redução.",
+    "C": "**Encurta os limites e não responde ao prazo máximo pedido.** Dez e cinco dias podem estar dentro de uma programação precoce, mas não são os limites apresentados. Não se deve confundir preferência por operar cedo com a dupla de valores do capítulo.",
+    "D": "**Também aceita atraso excessivo.** Vinte e um dias e quinze dias ultrapassam as janelas dos dois grupos. Uma fratura associada já pode exigir via maior quando perde mobilidade em torno de duas semanas."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Indicações cirúrgicas, momento e urgências."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Indicações cirúrgicas, momento e urgências"
+    ],
+    "blocos": [
+     "indicacoes-cirurgicas-momento-e-urgencias-0dbd7172",
+     "indicacoes-cirurgicas-momento-e-urgencias-26841d30",
+     "indicacoes-cirurgicas-momento-e-urgencias-46542c43",
+     "indicacoes-cirurgicas-momento-e-urgencias-9073c7b4",
+     "indicacoes-cirurgicas-momento-e-urgencias-c7d5adb6",
+     "indicacoes-cirurgicas-momento-e-urgencias-08d33d16",
+     "indicacoes-cirurgicas-momento-e-urgencias-7c87e091",
+     "indicacoes-cirurgicas-momento-e-urgencias-2b08e7fc",
+     "indicacoes-cirurgicas-momento-e-urgencias-543c0021",
+     "indicacoes-cirurgicas-momento-e-urgencias-a419b5d6"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "1d9c8c9702553f595738ac9d38eb9aa1d03060c137b973ce7bfa9c267cb3ab31"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1531": {
+  "questaoSha256": "132da6b84f09aac91a663b6d063cbeb80c2d8fe4e032fe5c56b5980155a5170f",
+  "comentarioAnteriorSha256": "e6c0e567f41dd77ba85b80506f50429f4df248a9f85f6245fd526c9b024d2dde",
+  "comentario": {
+   "conceito": "Se o exame do **ciático piora** depois da fratura ou de sua redução, não se trata apenas de registrar uma sequela e programar a fixação. O **déficit progressivo** é indicação de cirurgia urgente no resumo, alternativa A.\n\nO nervo passa atrás do acetábulo, perto da cabeça e dos fragmentos posteriores. O quadro neurológico precisa ser documentado antes e depois das intervenções; a progressão altera a prioridade, mesmo que a recuperação final continue incerta. Déficit progressivo não é sinônimo de um déficit antigo e estável (Rockwood, 10ª ed., cap. 51, “Quando é emergência”).\n\n**A urgência não acompanha automaticamente o nome da fratura.** Parede posterior estável ao estresse pode receber tratamento conservador; ambas as colunas com congruência secundária exige avaliar movimento, encurtamento e condições do paciente, sem ser emergência por esse achado isolado.\n\nEntre as outras situações urgentes estão luxação irredutível ou recidivante apesar da tração, lesão vascular que precisa de reparo, fratura exposta e fratura ipsilateral do colo no jovem. Isso distingue a prioridade de proteger nervo, circulação e articulação do planejamento habitual da osteossíntese.",
+   "correta": "**A: déficit progressivo do ciático.** A piora depois do trauma ou da redução está expressamente entre as indicações urgentes; a incerteza da recuperação não autoriza aguardar progressão.",
+   "incorretas": {
+    "B": "**O exame demonstra contenção, não falha progressiva.** Uma parede posterior estável sob anestesia pode ficar sem cirurgia se o quadril é congruente e atende aos demais critérios. Instabilidade ou luxação recorrente configurariam outro cenário.",
+    "C": "**Congruência secundária pode permitir observação selecionada.** Ela não dispensa avaliar desvio, bloqueio de movimento e encurtamento, mas tampouco torna a cirurgia urgente. Não equivale à deterioração neurológica da alternativa A.",
+    "D": "**É outra estrutura e outro critério clínico.** O resumo destaca sua lesão após a via ilioinguinal, com anestesia/disestesia e melhora ao longo do tempo. Uma lesão isolada desse nervo não integra a lista de urgências apresentada; isso não autoriza dizer que ele nunca possa sofrer trauma."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Indicações cirúrgicas, momento e urgências; Anatomia aplicada: colunas, paredes, teto e vasos; Quem pode ficar sem cirurgia; Complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Indicações cirúrgicas, momento e urgências",
+     "Anatomia aplicada: colunas, paredes, teto e vasos",
+     "Quem pode ficar sem cirurgia",
+     "Complicações"
+    ],
+    "blocos": [
+     "indicacoes-cirurgicas-momento-e-urgencias-08d33d16",
+     "indicacoes-cirurgicas-momento-e-urgencias-2b08e7fc",
+     "indicacoes-cirurgicas-momento-e-urgencias-7c87e091",
+     "indicacoes-cirurgicas-momento-e-urgencias-543c0021",
+     "indicacoes-cirurgicas-momento-e-urgencias-a419b5d6",
+     "indicacoes-cirurgicas-momento-e-urgencias-448ab2b8",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-596bb854",
+     "quem-pode-ficar-sem-cirurgia-2a347117",
+     "quem-pode-ficar-sem-cirurgia-d12240e0",
+     "complicacoes-91915355"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "2817b37973aa2313d3615d049a161a57281eca5675e4cf539dfeb3f7c763a4ef"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1532": {
+  "questaoSha256": "ac120f5b8007911c3a820627b6ee98292ce5c978006507ec62062bc7304bdcb1",
+  "comentarioAnteriorSha256": "b57b72830aefd3c9012b9ac5cb3f7855df5f5c91b0e28d48503c39ba33373387",
+  "comentario": {
+   "conceito": "Nas fraturas **anterior com hemitransversa posterior** e de **ambas as colunas**, operadas em tempo adequado, a via preferida é **anterior: ilioinguinal ou Stoppa com janela lateral**, alternativa C. A presença de um componente posterior não obriga a começar por trás.\n\nA escolha depende de onde se pode controlar o fragmento principal. Pela frente, restaura-se o contorno interno do inominado e a coluna anterior; o componente posterior pode ser reduzido indiretamente, com controle por radioscopia. Em ambas as colunas, costuma-se prender primeiro a coluna anterior ao ílio intacto (Rockwood, 10ª ed., cap. 51, “Vias de acesso” e “Técnica por tipo”).\n\n**Uma via só é a intenção inicial, não uma obrigação.** Se o componente posterior não reduz, pode-se acrescentar Kocher-Langenbeck em sequência. Calo, grande separação, cominuição ou lesão sacroilíaca deslocada também mudam a estratégia.\n\nA iliofemoral estendida oferece acesso amplo, mas seu descolamento e suas complicações a reservam sobretudo às associadas tardias. A via combinada simultânea em decúbito lateral compromete as exposições e caiu em desuso; não é a solução de rotina para toda fratura de duas colunas.",
+   "correta": "**C: ilioinguinal ou Stoppa modificado com janela lateral.** O acesso anterior permite restaurar o componente principal e controlar o posterior indiretamente nos padrões descritos e operados no prazo.",
+   "incorretas": {
+    "A": "**É uma via útil para outros predomínios.** Kocher-Langenbeck dá acesso direto à coluna posterior e atende parede posterior, transversas e T com maior desvio posterior. Não é a preferência habitual para os dois padrões anteriores apresentados.",
+    "B": "**A exposição máxima tem custo.** A estendida é hoje pouco usada, sobretudo em associadas tardias com calo. Empregá-la em todos os casos ignora a possibilidade de resolver pela frente com menor descolamento.",
+    "D": "**Troca uma extensão eventual por rotina simultânea.** Quando necessário, a via posterior é acrescentada em sequência. As simultâneas em lateral caíram em desuso por comprometerem ambas as exposições."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso; Técnica por tipo de fratura."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso",
+     "Técnica por tipo de fratura"
+    ],
+    "blocos": [
+     "vias-de-acesso-a24cd5ec",
+     "vias-de-acesso-59fb21f9",
+     "tecnica-por-tipo-de-fratura-0a978367",
+     "tecnica-por-tipo-de-fratura-6d62264a",
+     "vias-de-acesso-bea80bc8",
+     "vias-de-acesso-3aa87943"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "5a7e5873111242ee9d157f72e987d8a587311f69235a49f98e89aeadf1b8d240"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1533": {
+  "questaoSha256": "23c8b61c93106cd0432998363dce9c96c54b739864b0f26e0e3f59b1cb4ea2c1",
+  "comentarioAnteriorSha256": "f4e16e71621d1bc4da9911407012f0e3da3640aa53afca3d565cc3475c7de491",
+  "comentario": {
+   "conceito": "Ao expor o ciático na via posterior, encontrar a **divisão fibular atravessando o piriforme e a tibial passando abaixo** representa a variação mais frequente descrita, alternativa B. O padrão habitual, com o nervo inteiro abaixo do músculo, não é a variação pedida.\n\nO resumo informa cerca de **84%** para o trajeto inteiro inferior e **12%** para a divisão fibular intramuscular com a tibial inferior. Quando parte do nervo atravessa o piriforme, o músculo pode aparecer dividido, com dois tendões. Isso muda o que se pode seccionar com segurança (Rockwood, 10ª ed., cap. 51, “Ciático e piriforme”).\n\n**O nervo é encontrado antes sobre o quadrado femoral.** Segui-lo até o piriforme evita presumir que tudo o que cruza o campo seja tendão. Na Kocher-Langenbeck, o ciático deve ser visto e protegido; manter o joelho em flexão e evitar tração excessiva também fazem parte da proteção.\n\nO aprendizado útil é distinguir normalidade de variante e divisão parcial de nervo inteiro. Não é preciso atribuir um percentual a uma relação que a tabela não quantificou para eliminar o distrator.",
+   "correta": "**B: fibular através; tibial abaixo.** É a variante de cerca de 12%, a mais frequente na tabela. Sua identificação impede tratar o músculo como se não houvesse tecido neural entre seus tendões.",
+   "incorretas": {
+    "A": "**Atravessar com o nervo inteiro é mais raro.** A tabela atribui aproximadamente 1% a esse trajeto. Não equivale a apenas uma divisão atravessando, que é a relação mais comum entre as variantes.",
+    "C": "**É uma variante real, mas menos frequente.** Fibular acima e tibial abaixo aparece com cerca de 3%, em comparação com os 12% da fibular intramuscular. Acima e através indicam caminhos diferentes.",
+    "D": "**Não é a variante que lidera a tabela.** O trajeto mais comum global é inteiro abaixo; entre as variantes descritas, lidera a passagem apenas da divisão fibular pelo músculo. O resumo não fornece taxa para o nervo inteiro acima."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "vias-de-acesso-6b8c4f0e",
+     "vias-de-acesso-f3d486a4",
+     "vias-de-acesso-c04724c6",
+     "vias-de-acesso-9086ffdf"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "1b1a253a7f7e553794e02a069a80e4f4295a16a6d967a1d86f87c02c54691756"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1534": {
+  "questaoSha256": "d132a4a82e2c76e2826bab7edae58fc08a995a2c179c8a4d882b06e172240f0a",
+  "comentarioAnteriorSha256": "8e1576f8a3e0d791e7e5c17ffba18df26edab78a61516e1857613df9a83cc77c",
+  "comentario": {
+   "conceito": "No Stoppa modificado, o **obturatório cruza o campo intrapélvico logo abaixo da borda pélvica**. É o nervo particularmente exposto da alternativa D; a fraqueza dos adutores é o achado funcional citado.\n\nA via trabalha pela face interna da pelve e favorece acesso à superfície quadrilátera. Evita a dissecção da janela média da ilioinguinal, mas não cria um campo sem estruturas nobres: é preciso localizar o obturatório e controlar as anastomoses da **corona mortis**. O tronco lombossacral também atravessa o campo (Rockwood, 10ª ed., cap. 51, “Stoppa modificado”).\n\n**O dado numérico do resumo tem uma inconsistência.** O texto registra “13 de 57” e “26%” para fraqueza dos adutores, valores que não correspondem entre si. Isso não muda a identificação anatômica, mas impede ensinar aquele percentual como taxa exata ou universal. A série relata recuperação da maioria em doze meses.\n\nOutros nervos continuam em risco por posição, tração ou extensão do acesso. A escolha do obturatório não significa que o ciático, o femoral ou o cutâneo femoral lateral sejam impossíveis de lesar; ela reconhece quem cruza diretamente o campo descrito.",
+   "correta": "**D: obturatório.** Sua posição abaixo da borda pélvica o expõe na dissecção intrapélvica, e a fraqueza dos adutores da série é compatível com essa estrutura. A identificação independe do percentual inconsistente.",
+   "incorretas": {
+    "A": "**É especialmente manipulado na ilioinguinal.** Na janela média, o femoral acompanha o iliopsoas afastado lateralmente. O Stoppa evita essa janela; o nervo destacado no trajeto intrapélvico da pergunta é o obturatório.",
+    "B": "**É uma complicação importante das vias anteriores, com outro campo.** O resumo o destaca na ilioinguinal e na iliofemoral. Essa frequência geral não o transforma no nervo que cruza abaixo da borda pélvica no Stoppa.",
+    "C": "**Também pode ser lesado, por outro mecanismo.** O resumo adverte sobre estiramento com quadril e joelho fletidos e afastadores na incisura. Isso exige proteção, mas não corresponde ao nervo da fraqueza de adutores descrita."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso."
+   ],
+   "conferido": false,
+   "alerta": "D oficial preservada pela anatomia. O resumo informa 13 de 57 pacientes e, no mesmo trecho, 26%, valores aritmeticamente incompatíveis. A identificação do obturatório está sustentada; a taxa exata precisa de conferência na fonte primária e não é apresentada como dado estabelecido."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "vias-de-acesso-89b1765e",
+     "vias-de-acesso-09c0da47",
+     "vias-de-acesso-8dbb0d07",
+     "vias-de-acesso-b5f952c0",
+     "vias-de-acesso-46c79886",
+     "vias-de-acesso-c592e79e"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "ed64088cb3fe5f34a34424feeadfc9658197039d0ac650c04e2cfe9ed08a015b"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1535": {
+  "questaoSha256": "bc6d14772aa5275b0131fd17f08c39cba08a8cd1a2d14265b74d2f88b7a80719",
+  "comentarioAnteriorSha256": "fdbc9eb251ab2c7abee3c7e530eae62683659453c958722d5fa10dc27c6a3a99",
+  "comentario": {
+   "conceito": "A cabeça luxada pode **afundar a borda articular** sem destacar por completo esse fragmento da coluna posterior. Reduzir a luxação ou recolocar a parede não traz automaticamente essa cartilagem de volta ao nível correto. É preciso **elevar a impacção, usar a cabeça como molde e preencher o defeito com enxerto**, alternativa A.\n\nCom a cabeça reduzida, fica um espaço entre ela e a cartilagem impactada. A TC permite reconhecer esse componente antes da operação; o resumo relata impacção marginal em até 46% das fraturas da parede posterior, sem restringi-la exclusivamente a esse padrão (Rockwood, 10ª ed., cap. 51, “A impacção marginal”).\n\nA elevação leva o osso esponjoso junto, e o vazio deixado abaixo precisa de apoio para não colapsar de novo. Só então a parede é reduzida e sustentada. A cabeça funciona como referência da superfície, não como alvo dos parafusos.\n\n**A placa da parede e o enxerto resolvem problemas diferentes.** A placa contém a borda reconstruída; o preenchimento apoia a região articular que estava afundada. Ignorar uma dessas partes pode deixar incongruência mesmo quando o contorno externo parece alinhado.",
+   "correta": "**A: elevar, moldar na cabeça e preencher antes de fixar a parede.** Restaura-se o nível articular e dá-se suporte ao vazio subcondral, em vez de confiar que a placa externa retire a impacção.",
+   "incorretas": {
+    "B": "**Retira superfície que a técnica procura recuperar.** O fragmento impactado é elevado com o esponjoso, e o defeito é preenchido. Retirá-lo apenas pelo receio de necrose não reconstrói a área de contato que ficou deprimida.",
+    "C": "**A redução indireta da parede não eleva a cartilagem afundada.** O fragmento impactado permanece preso à coluna; pode ficar deprimido depois de a cabeça e a parede parecerem reduzidas. Precisa ser tratado de modo próprio.",
+    "D": "**Confunde molde com local de fixação.** Os parafusos não devem ser dirigidos à cabeça. Com preenchimento estável, o resumo considera desnecessário fixar os fragmentos articulares; se um fragmento fixado perde redução, o implante pode ficar intra-articular."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Técnica por tipo de fratura."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Técnica por tipo de fratura"
+    ],
+    "blocos": [
+     "tecnica-por-tipo-de-fratura-71bfe1dc",
+     "tecnica-por-tipo-de-fratura-6b3414a6",
+     "tecnica-por-tipo-de-fratura-1657fb52",
+     "tecnica-por-tipo-de-fratura-7606422c",
+     "tecnica-por-tipo-de-fratura-252a8e3a"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "63c3d39f3399b0cdd7e7544b6cb5398e3444ae45cb46a4b6ee01d7609036e946"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1536": {
+  "questaoSha256": "624a1a2fcbddfb4fc0bdea446b19275dc6887d917b0784c397349e5640c2e7b5",
+  "comentarioAnteriorSha256": "1f26f4ab8c524843cdcb586afaae31103708abe18a1f427c94d55b6cd2772146",
+  "comentario": {
+   "conceito": "Na série de Matta **sem profilaxia**, a via com mais ossificação heterotópica clinicamente importante foi a **iliofemoral estendida: 20%**, alternativa C. As taxas comparadoras foram 8% na Kocher-Langenbeck e 2% na ilioinguinal.\n\nA ossificação se associa às vias que descolam músculo da face externa do ílio. A estendida eleva glúteos e tensor e oferece exposição ampla às duas colunas, ao custo de maior agressão local. Esse contexto ajuda a entender a associação observada; não significa que todo paciente desse acesso vá ossificar (Rockwood, 10ª ed., cap. 51, “Ossificação heterotópica”).\n\n**Osso na radiografia e perda de função não são a mesma medida.** O resumo distingue a frequência radiográfica, muito variável, da repercussão clínica e considera perda de mais de 20% do movimento total uma definição útil de gravidade. A tabela perguntada é de ossificação clinicamente importante, não de qualquer foco no AP.\n\nOs números pertencem à série e à condição sem profilaxia. Não fornecem uma taxa para todo acesso anterior intrapélvico, nem resolvem a escolha atual de profilaxia, assunto que o capítulo mantém controverso.",
+   "correta": "**C: iliofemoral estendida.** Os 20% da série superam os 8% da via posterior e os 2% da ilioinguinal. É uma comparação de grupos operados, não uma certeza individual.",
+   "incorretas": {
+    "A": "**Teve a menor taxa entre as três vias quantificadas.** A ilioinguinal trabalha pela face interna da pelve e apresentou 2%. Não deve receber a taxa da estendida só porque ambas alcançam o acetábulo.",
+    "B": "**É o grupo intermediário.** Kocher-Langenbeck teve 8%, valor relevante, porém inferior aos 20% da estendida. A presença de risco na via posterior não a torna a líder dessa série.",
+    "D": "**Não recebeu taxa nessa tabela.** Stoppa é um acesso intrapélvico anterior, e a comparação apresentada quantifica estendida, Kocher-Langenbeck e ilioinguinal. Não há base para inventar um quarto número ou colocá-lo acima da estendida."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Ossificação heterotópica; Vias de acesso; Controvérsias e o que falta saber."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Ossificação heterotópica",
+     "Vias de acesso",
+     "Controvérsias e o que falta saber"
+    ],
+    "blocos": [
+     "ossificacao-heterotopica-32f620e0",
+     "ossificacao-heterotopica-2ac5ff5b",
+     "vias-de-acesso-bea80bc8",
+     "vias-de-acesso-89b1765e",
+     "controversias-e-o-que-falta-saber-ef002dd9"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "16ce78da794e3c2ad2ed9292be11df90a0a626ab5683f73ce41f445c2934584d"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1537": {
+  "questaoSha256": "4bb57a9c765fdf275e0233ed62dabd3f88f5840fe433986e288beab0126784bc",
+  "comentarioAnteriorSha256": "ee8613f8a2e8df4fca7590999d21f0351f054f388bc884b04f633eb80cb03740",
+  "comentario": {
+   "conceito": "Ao perguntar pela lesão neurológica **mais comum depois do tratamento**, a questão aponta o **cutâneo femoral lateral após a via ilioinguinal**, alternativa B. Não se deve trocar frequência global pela gravidade de uma lesão do ciático.\n\nNa via anterior, o cutâneo femoral lateral está entre as estruturas que exigem identificação e proteção. Sua lesão produz uma área de anestesia que pode ficar disestésica e melhorar com o tempo; o resumo recomenda avisar antes da cirurgia. Já a lesão do ciático preocupa nas vias posterior e estendida, pela exposição, afastamento e tração (Rockwood, 10ª ed., cap. 51, “Lesão nervosa iatrogênica”).\n\n**O contexto temporal decide a comparação.** O capítulo destaca o ciático nas lesões do próprio trauma e como complicação relevante da cirurgia, mas afirma expressamente que o cutâneo femoral lateral é a lesão neurológica mais comum após o tratamento do acetábulo.\n\nPrevenir não se resume a decorar o nome: exige posição cuidadosa, proteção de nervos e uso controlado de afastadores. Uma via anterior também pode lesar o ciático por manobra indireta; o nome do acesso indica risco predominante, não exclusividade.",
+   "correta": "**B: cutâneo femoral lateral, na ilioinguinal.** É a estrutura que o trecho identifica como a mais frequentemente lesada após o tratamento. A disestesia e sua evolução devem ser explicadas ao paciente.",
+   "incorretas": {
+    "A": "**É um risco real da via posterior, mas não a liderança perguntada.** O ciático precisa ser visualizado e protegido, com joelho fletido e pouca tração. Confundir sua relevância funcional com maior frequência global leva a ignorar a afirmação específica sobre o cutâneo femoral lateral.",
+    "C": "**Pode ser lesionado, porém é muito raro.** O resumo dá 0,2% a 0,4% para lesão iatrogênica femoral. Na janela média, ele acompanha o iliopsoas; esse risco anatômico não o torna a complicação neurológica mais comum.",
+    "D": "**Associa o nervo ao campo errado para essa comparação.** O obturatório cruza o campo do Stoppa intrapélvico abaixo da borda pélvica. Isso não sustenta dizer que ele lidera as lesões após via posterior."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Complicações; Vias de acesso."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Complicações",
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "complicacoes-91915355",
+     "complicacoes-7a30635a",
+     "complicacoes-98ff31de",
+     "vias-de-acesso-46c79886",
+     "vias-de-acesso-8dbb0d07"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "7e8f7308ec131c541a00d5d6343016bd5f2d2b7a23a2693d37c49492304365e9"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1538": {
+  "questaoSha256": "a23d268399c3b3128f7bb7dca651ff9ddea02dc13b0c939d9dad31cff6f0057a",
+  "comentarioAnteriorSha256": "4a86864ce9160b85b85c36cbde67e2e881c1eb37d86f4d3cc3ffe9864c3042fe",
+  "comentario": {
+   "conceito": "Uma radiografia com aparência anatômica pode esconder **desnível residual na superfície articular**. Na comparação discutida pelo resumo, 97% das reduções da parede posterior pareciam perfeitas nas radiografias, mas a TC mostrou apenas **22%** perfeitas. É a explicação da alternativa D.\n\nO quadril precisa de contato congruente entre a cabeça e o acetábulo. A avaliação bidimensional pode superestimar a reconstrução de uma superfície curva e fragmentada; por isso “redução anatômica na radiografia” não é garantia de perfeição tomográfica ou de bom resultado funcional (Rockwood, 10ª ed., cap. 51, “Resultados” e “Complicações”).\n\nA impacção marginal e a lesão da cabeça também podem comprometer o resultado. O resumo relaciona artrose sobretudo à qualidade da redução, e não autoriza atribuir todo insucesso à necrose da cabeça ou à via empregada.\n\n**A meta continua sendo a redução mais precisa possível.** A lição da série é reconhecer o limite do método de avaliação, não aceitar má redução nem concluir que uma parede posterior instável deva ficar sem fixação.",
+   "correta": "**D: a radiografia superestima a redução.** Os 22% perfeitos na TC explicam por que o aspecto radiográfico favorável não assegurou o resultado esperado. “Cerca de um quinto” expressa essa comparação, não a taxa universal de toda operação.",
+   "incorretas": {
+    "A": "**Transforma risco em destino inevitável.** O resumo associa necrose às fraturas com luxação e reconhece dano vascular, mas não afirma que toda via posterior cause necrose. A explicação apresentada para a discrepância foi a redução superestimada na radiografia.",
+    "B": "**Generaliza uma estabilidade que precisa ser testada.** Há paredes posteriores instáveis que requerem fixação. As pequenas e intermediárias são avaliadas dinamicamente; maus resultados de uma série não anulam a indicação nos quadris instáveis.",
+    "C": "**Ossificação tem frequência variável e não é inevitável.** Na série sem profilaxia, a taxa clinicamente importante foi 8% na Kocher-Langenbeck. Isso não explica como regra todos os maus resultados com radiografia aparentemente anatômica."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Resultados: a redução manda; Complicações; Tomografia e exame sob anestesia; Ossificação heterotópica; Técnica por tipo de fratura."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Resultados: a redução manda",
+     "Complicações",
+     "Tomografia e exame sob anestesia",
+     "Ossificação heterotópica",
+     "Técnica por tipo de fratura"
+    ],
+    "blocos": [
+     "resultados-a-reducao-manda-e91e4856",
+     "complicacoes-738e51f3",
+     "tomografia-e-exame-sob-anestesia-e0508ee3",
+     "ossificacao-heterotopica-2ac5ff5b",
+     "tecnica-por-tipo-de-fratura-71bfe1dc"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "c6584aa16b87d3700eb7ad98a6ed166df39dda6d8ba75fd9757163cc02362f41"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0418": {
+  "questaoSha256": "75289fd6eb29d4032873cace147cc228e580f81ace0ab799ae68c2bc99b4064e",
+  "comentarioAnteriorSha256": "94b0553591f33e48151dc46e43a8acda9d86b2baf809d9d83d73867271729e8f",
+  "comentario": {
+   "conceito": "Na via posterior do acetábulo, os tendões do **piriforme e do obturador interno** devem ser seccionados a pelo menos **1,5 cm do trocanter maior**, protegendo ramos da **circunflexa femoral medial**. É a alternativa A.\n\nA margem não serve apenas para deixar tecido para sutura. O ramo vascular passa perto dos rotadores curtos, e a circunflexa medial é central para a irrigação da cabeça femoral. Cortar rente ao fêmur ou dissecar desnecessariamente essa região pode ameaçar a vascularização (Rockwood, 10ª ed., cap. 51, “Kocher-Langenbeck”).\n\nO resumo acrescenta dois cuidados: **não dissecar abaixo do gêmeo inferior no fêmur** e, se for necessário liberar o quadrado femoral para expor mais ísquio, fazê-lo **do lado isquiático**, não do femoral. A proteção depende do plano e do lado da liberação, além da distância da tenotomia.\n\nAntes de seccionar, identifica-se o ciático sobre o quadrado femoral e segue-se seu trajeto. Proteger o nervo e preservar o pedículo da cabeça são objetivos diferentes da mesma exposição; uma distância correta não elimina a necessidade desses cuidados.",
+   "correta": "**A: pelo menos 1,5 cm, para proteger a circunflexa medial.** A combinação reúne a margem e o vaso do trecho técnico; conservar a inserção femoral com essa distância ajuda a evitar a região vascular adjacente.",
+   "incorretas": {
+    "B": "**Erra margem e vaso.** Meio centímetro é menor que a distância indicada, e o ramo relevante descrito é da circunflexa medial, não da lateral. Não basta deixar qualquer pequeno coto tendíneo.",
+    "C": "**Acerta a distância, troca a artéria.** A margem de 1,5 cm está correta; o fundamento é a proteção de ramos da circunflexa medial junto aos rotadores e da irrigação da cabeça.",
+    "D": "**Acerta o vaso e reduz a margem.** Reconhecer a circunflexa medial não torna suficiente uma tenotomia a 0,5 cm. O trecho recomenda pelo menos 1,5 cm e mantém os cuidados com gêmeo inferior e quadrado femoral."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso; Anatomia aplicada: colunas, paredes, teto e vasos."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso",
+     "Anatomia aplicada: colunas, paredes, teto e vasos"
+    ],
+    "blocos": [
+     "vias-de-acesso-de09a49f",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-af43286f",
+     "vias-de-acesso-9086ffdf"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "40b1e58c688f150fafe9be23ab24b6ad7abd2b4f593aa6544eb1b7c6918d3629"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}
