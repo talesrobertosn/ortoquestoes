@@ -3281,15 +3281,44 @@
   "conferido": false
  },
  "trauma-0124": {
+  "conceito": "A energia que produz a fratura da **parede anterior** pode chegar pelo trocânter maior, seguir o **eixo do colo femoral** e atingir a frente do acetábulo com o quadril em **rotação lateral**. É o par da alternativa A.\n\nA cabeça transmite a força ao ponto da taça para o qual está orientada. Na tabela do resumo, com força pelo colo e abdução/adução neutras, cerca de **25 graus de rotação externa** se associam à **coluna anterior**; com cerca de **50 graus**, à **parede anterior**. Portanto, aumentar a rotação nesse exemplo muda de coluna para parede, e não o contrário (Rockwood, 10ª ed., cap. 51, “Mecanismo de trauma”).\n\n**O eixo da diáfise é outro cenário.** No trauma de painel, com o quadril fletido a 90 graus, a força sobe do joelho e pode causar fratura da parede posterior. A adução aumenta a possibilidade de luxação posterior. Com o quadril estendido, o impacto tende a alcançar regiões mais craniais.\n\nA posição do membro no momento da batida importa tanto quanto a direção da força. “Força pelo fêmur” ou “rotação externa” isoladamente não bastam para prever um padrão; é preciso combinar eixo, flexão e orientação.",
+  "correta": "**A: eixo do colo e rotação lateral.** A combinação dirige o impacto à região anterior; a tabela distingue coluna anterior com aproximadamente 25 graus de rotação externa e parede anterior com aproximadamente 50 graus.",
   "incorretas": {
-   "B": "Com rotação medial, a cabeça é dirigida para trás, para os padrões posteriores.",
-   "C": "A força pela diáfise, do painel, atinge a parede posterior.",
-   "D": "A diáfise com rotação medial leva à fratura ou luxação posterior."
+   "B": "**Mantém o eixo e troca a direção da rotação.** Com força pelo colo, a rotação interna favorece padrões posteriores; a tabela ainda mostra que a combinação exata pode produzir transversa, T ou ambas as colunas. Não é o par da parede anterior perguntado.",
+   "C": "**Troca o caminho da força.** A questão pede o mecanismo pelo colo. Na carga pela diáfise, a flexão e a adução são decisivas: o painel com quadril fletido favorece parede posterior, mesmo sem escolher uma rotação única.",
+   "D": "**Não reproduz o mecanismo anterior.** O eixo diafisário com quadril fletido é o cenário do impacto posterior; mencionar rotação medial não o transforma no impacto pelo trocânter e colo descrito para a parede anterior."
   },
-  "conceito": "**Letournel** mostrou que o padrão da fratura do acetábulo depende de **por onde chega a força** e da **posição do quadril** no impacto. A cabeça do fêmur funciona como um martelo.\n\n**Os dois eixos de transmissão**:\n\n**pelo colo do fêmur**: queda ou batida de lado, com força no **trocânter maior**; a energia segue pelo colo até a cabeça;\n\n**pela diáfise do fêmur**: joelho fletido batendo no **painel** do carro; a energia sobe pela diáfise e empurra a cabeça para trás.\n\n**A rotação decide o alvo**: com a força pelo **colo** e o quadril em **rotação lateral**, a cabeça é dirigida para a **frente** e quebra a **parede anterior** (ou a coluna anterior, com rotação maior). Em **rotação medial**, a cabeça vai para trás, com padrões **posteriores**.\n\n**O painel**: a força pela diáfise atinge a **parede posterior**, com ou sem luxação posterior.\n\n**A parede anterior**: rara (1 a 2%); melhor vista na **oblíqua obturatória** e na TC; abordada pela via ilioinguinal ou intrapélvica (Stoppa).\n\n**Na prova**: na fratura da parede anterior, a energia passa pelo eixo do **colo femoral**, com o quadril em **rotação lateral**.",
-  "correta": "A força no trocânter segue pelo colo, e a rotação lateral dirige a cabeça contra a parede anterior.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Mecanismo de trauma."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Mecanismo de trauma"
+     ],
+     "blocos": [
+      "mecanismo-de-trauma-ba17d763",
+      "mecanismo-de-trauma-855d13d4",
+      "mecanismo-de-trauma-41685e6a",
+      "mecanismo-de-trauma-3de9cf62"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "b5c55d96d94c124095ef574ebf5ca3fce0614da7cda6f476c1c1c2abc1fd95e3"
+    }
+   ],
+   "questaoSha256": "22c6d557779b0ac76b3745fc69164de480056081989d073545961c248d08b285",
+   "comentarioSha256": "50642f5efa5e40c605894a1cdde041ab771de5a43a421fec58e8e289156a6540"
+  }
  },
  "trauma-0125": {
   "conceito": "O caso já informa a combinação que define **KD II**: os dois cruzados rompidos e os colaterais íntegros. A resposta é B. O detalhe decisivo não é saber para que lado a tíbia luxou, mas quais estruturas perderam continuidade.\n\nA classificação de Kennedy descrevia a direção da tíbia em relação ao fêmur. Essa informação pode desaparecer quando a luxação reduz antes da avaliação. Schenck organiza o quadro pelas lesões anatômicas, e a modificação inclui fratura periarticular e sufixos para complicações neurovasculares (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nNo esquema do resumo, KD I conserva função do cruzado posterior, com lesões colaterais variáveis. KD II perde os dois cruzados, mas preserva os colaterais. Se um colateral também se rompe, passa a KD III, medial ou lateral; se ambos, KD IV. KD V acrescenta a fratura periarticular. Não convém usar o número como simples contagem de qualquer ligamento: a combinação anatômica de cada classe precisa ser reconhecida.\n\nOs sufixos não substituem o tipo: C indica lesão circulatória arterial e N, neurológica. Mesmo sem esses sufixos no enunciado, todo joelho luxado exige avaliação vascular, com pulsos e índice tornozelo-braquial. Um padrão ligamentar aparentemente menos extenso não dispensa essa triagem.\n\nNesta pergunta, a integridade dos colaterais exclui os padrões III e IV. A ruptura de ambos os cruzados exclui o padrão I descrito no capítulo. Sobrou a combinação bicruzada de KD II.",
@@ -6917,15 +6946,48 @@
   "conferido": false
  },
  "trauma-0282": {
+  "conceito": "A **parede posterior** é o padrão mais frequente de fratura do acetábulo na distribuição apresentada pelo capítulo: cerca de **25%**, alternativa B. Parede é a borda articular; não equivale à coluna posterior inteira.\n\nA cabeça pode atingir essa borda quando a força sobe pela diáfise com o quadril fletido, como no joelho contra o painel. A adução favorece a luxação posterior. Esse mecanismo ajuda a lembrar o padrão, mas a classificação exige as radiografias e a TC; a posição descrita não substitui a imagem (Rockwood, 10ª ed., cap. 51).\n\nEntre os **associados**, ambas as colunas aparece com 23%, e transversa com parede posterior com cerca de 20%. A resposta depende do que se está comparando: “mais comum de todas” é parede posterior; “associada mais comum” é ambas as colunas.\n\n**Frequência não define tratamento.** Em fragmentos pequenos e intermediários da parede posterior, uma TC congruente ou uma porcentagem pequena da parede não garantem estabilidade. O exame dinâmico sob anestesia é a avaliação mais confiável descrita para a decisão; não se deve reduzir a indicação a um limiar fixo de tamanho.",
+  "correta": "**B: parede posterior.** Lidera a tabela com cerca de um quarto das fraturas, acima das colunas isoladas e da parede anterior.",
   "incorretas": {
-   "A": "A fratura da parede anterior é rara, em torno de 1 a 2%.",
-   "C": "A fratura isolada da coluna anterior é menos comum.",
-   "D": "A fratura isolada da coluna posterior é menos comum que a da parede posterior."
+   "A": "**É a mais rara da tabela.** A parede anterior representa cerca de 1% a 2%; também é uma fratura da borda, porém anterior e muito menos frequente.",
+   "C": "**Coluna anterior isolada aparece em 3% a 5%.** Abrange um segmento iliopúbico, e não apenas a parede. Seu destaque entre fraturas de baixa energia no idoso não a torna a mais frequente da distribuição geral.",
+   "D": "**Coluna posterior isolada também aparece em 3% a 5%.** Ela começa na incisura e inclui o setor isquiático; confundir toda a coluna com sua parede leva a aplicar os 25% ao padrão errado."
   },
-  "conceito": "**Letournel** classificou as fraturas do **acetábulo** em dez padrões:\n\n**elementares**: parede posterior, coluna posterior, parede anterior, coluna anterior e transversa;\n\n**associadas**: coluna e parede posteriores, transversa com parede posterior, em T, coluna anterior com hemitransversa posterior e as duas colunas.\n\n**A mais comum**: a fratura da **parede posterior**, cerca de um quarto dos casos. Ela vem do **trauma de painel**: o joelho dobrado bate no painel, e a cabeça do fêmur é empurrada para trás contra a borda posterior do acetábulo, muitas vezes com **luxação posterior** do quadril.\n\n**Entre os padrões associados**, os mais frequentes são as **duas colunas** e a **transversa com parede posterior**.\n\n**As paredes e a coluna anterior**: fraturas mais raras; a **parede anterior** fica em 1 a 2%.\n\n**A avaliação**: AP da pelve, oblíquas de **Judet** (obturatória, que mostra a coluna anterior e a parede posterior; e ilíaca, que mostra a coluna posterior e a parede anterior) e **TC**.\n\n**O tratamento da parede posterior**: fixar se o fragmento for grande (mais de 40 a 50% da parede) ou se o quadril estiver **instável**, pela via de **Kocher-Langenbeck**.\n\n**Na prova**: as fraturas do acetábulo mais comuns ocorrem na **parede posterior**.",
-  "correta": "A fratura da parede posterior, do trauma de painel, é a fratura do acetábulo mais frequente.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL; Mecanismo de trauma; Anatomia aplicada: colunas, paredes, teto e vasos; Tomografia e exame sob anestesia."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Classificação de LETOURNEL",
+      "Mecanismo de trauma",
+      "Anatomia aplicada: colunas, paredes, teto e vasos",
+      "Tomografia e exame sob anestesia"
+     ],
+     "blocos": [
+      "classificacao-de-letournel-cb46defc",
+      "mecanismo-de-trauma-41685e6a",
+      "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+      "tomografia-e-exame-sob-anestesia-e0508ee3",
+      "tomografia-e-exame-sob-anestesia-fdfcd0ed"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "79272bc3f8d5b251192dc7c2e225ec3a080949fb88b8800a4b9ca42c41c57538"
+    }
+   ],
+   "questaoSha256": "d33c6d36e2c91d7caaf232f5dfd67cbd02b25033a44b7b8ca95cdbb4022afe33",
+   "comentarioSha256": "63dcb728bd82d9e8d7e1ae29b20acfb94e85461d11a3fb1aa5329c5ec9bf90b5"
+  }
  },
  "trauma-0283": {
   "incorretas": {
@@ -32462,116 +32524,338 @@
   "conferido": false
  },
  "trauma-1521": {
-  "conceito": "**A língua comum.** JUDET e LETOURNEL criaram a primeira classificação sistemática das fraturas do acetábulo a partir das referências radiográficas do osso inominado. A classificação AO/OTA tem códigos que correspondem a ela, mas sem vantagem clínica; por isso a de LETOURNEL continua sendo a linguagem internacional.\n\n**Dez tipos, em dois grupos.**\n\n- **Elementares:** separam toda ou parte de uma única coluna. As de coluna separam a coluna inteira; as de parede separam só parte da superfície articular da coluna. A transversa entra aqui pela natureza fundamental do traço, embora atravesse as duas colunas.\n- **Associadas:** combinam elementares, ou somam um componente a uma elementar.\n\n| Tipo | Frequência aproximada |\n|---|---|\n| **Parede posterior** | **25%** |\n| Coluna posterior | 3% a 5% |\n| Parede anterior | 1% a 2% |\n| Coluna anterior | 3% a 5% |\n| Transversa | 5% a 19% |\n| Coluna posterior com parede posterior | 3% a 4% |\n| Transversa com parede posterior | cerca de 20% |\n| Coluna (ou parede) anterior com hemitransversa posterior | cerca de 7% |\n| Em T | cerca de 7% |\n| **Ambas as colunas** | **23%** |\n\n**Os três mais operados.** Grandes séries mostram parede posterior, transversa com parede posterior e ambas as colunas como os padrões que mais vão à cirurgia. No idoso, o padrão mais frequente é ambas as colunas.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seção Classification of Acetabular Fractures, tabela 51-3 e figura 51-16.\n\n> **Na prova:** a elementar mais comum é a parede posterior (cerca de 25%); a associada mais comum é ambas as colunas (23%), seguida de perto pela transversa com parede posterior (cerca de 20%).",
-  "correta": "**B: parede posterior e ambas as colunas.** A parede posterior responde por cerca de 25% das fraturas do acetábulo e é a elementar mais comum. Entre as associadas, a mais frequente é a de ambas as colunas, com 23%, à frente da transversa com parede posterior.",
+  "conceito": "Na classificação de Letournel, a combinação pedida é **parede posterior entre as elementares e ambas as colunas entre as associadas**, alternativa B. As frequências do resumo são aproximadamente **25% e 23%**, respectivamente.\n\nO sistema reúne cinco padrões elementares e cinco associados. Parede posterior destaca uma borda; ambas as colunas desconecta toda a superfície articular do ílio intacto. A diferença entre os grupos não é simplesmente “atinge uma ou duas colunas”: a **transversa continua elementar**, embora atravesse as duas (Rockwood, 10ª ed., cap. 51, “Classificação de Letournel”).\n\n**Transversa com parede posterior é comum, mas vem depois de ambas as colunas** na tabela: cerca de 20%. Em T e anterior com hemitransversa posterior aparecem com cerca de 7% cada. Nomear corretamente o grupo evita escolher uma combinação frequente, porém não a líder.\n\nEsses números descrevem a distribuição do capítulo. Não dispensam reconhecer os traços de cada caso nem devem ser usados para atribuir um padrão só pela idade ou pelo mecanismo.",
+  "correta": "**B: parede posterior e ambas as colunas.** É a comparação dentro de cada grupo, nessa ordem, e não uma lista dos dois tipos elementares mais comuns.",
   "incorretas": {
-   "A": "**Nenhuma das duas lidera.** A transversa isolada varia de 5% a 19%, abaixo da parede posterior. A transversa com parede posterior é comum, cerca de 20%, mas fica um pouco atrás da fratura de ambas as colunas.",
-   "C": "**Ambas são pouco frequentes.** A coluna posterior isolada responde por 3% a 5% das fraturas, e a fratura em T por cerca de 7%. Nenhuma lidera seu grupo.",
-   "D": "**Pelo contrário, a parede anterior é a mais rara.** Ela responde por só 1% a 2% das fraturas. A anterior com hemitransversa posterior fica em cerca de 7%, embora seja frequente no idoso."
+   "A": "**Os dois pertencem aos grupos propostos, mas não lideram.** Transversa é elementar, com 5% a 19%; transversa com parede posterior é associada, com cerca de 20%. As líderes são parede posterior e ambas as colunas.",
+   "C": "**São tipos reais com frequência menor.** Coluna posterior isolada aparece em 3% a 5%, e em T em cerca de 7%. O ramo vertical da T não a torna a associada mais comum.",
+   "D": "**Começa pela elementar mais rara.** Parede anterior representa 1% a 2%; anterior com hemitransversa posterior tem cerca de 7%. O destaque deste último padrão no idoso não muda a comparação geral da tabela."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Classificação de LETOURNEL"
+     ],
+     "blocos": [
+      "classificacao-de-letournel-e01be35b",
+      "classificacao-de-letournel-cb46defc",
+      "classificacao-de-letournel-10e3f3ef",
+      "classificacao-de-letournel-18f9732d"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "9b443f551e72b5781a248fee620cb37ff9ee0c0e63349bc788cf04fc88e467b9"
+    }
+   ],
+   "questaoSha256": "28eb2dd26f08738418576d9b102044fce55b8cc3557a0ee7f4e6a4ee51f618d6",
+   "comentarioSha256": "6527aabd5b4834ac3b9e9185d7085eb8fec8a468b57287ea17689c68ab50f121"
+  }
  },
  "trauma-1522": {
-  "conceito": "**Atravessar as duas colunas não basta.** Quatro padrões cruzam as colunas anterior e posterior sem serem fratura de \"ambas as colunas\": a transversa, a transversa com parede posterior, a fratura em T e a coluna (ou parede) anterior com hemitransversa posterior. Em todos eles, **uma parte da superfície articular continua presa ao ílio**, que segue conectado ao esqueleto axial pela sacroilíaca.\n\n**A definição.** Na fratura de ambas as colunas, o acetábulo fica **completamente desconectado do esqueleto axial**: nenhuma parte da superfície articular permanece ligada ao inominado intacto, e há uma separação entre um componente da coluna anterior e um da coluna posterior. Na forma mais simples, é uma fratura da coluna anterior somada a uma da coluna posterior; na prática, quase sempre há traços secundários nas duas.\n\n**Consequências diretas da definição.**\n\n- **Sinal do esporão:** com todo o acetábulo medializado, a ponta mais baixa do ílio intacto aparece isolada; é patognomônico e mais bem visto na oblíqua obturatriz.\n- **Congruência secundária:** como o lábio costuma ficar íntegro mesmo nas cominutivas, os fragmentos giram em volta da cabeça femoral medializada e continuam congruentes.\n- **Arcos de teto não se aplicam:** não há parte intacta do acetábulo para medir.\n- **Parede posterior associada:** é comum um componente posterossuperior que costuma ficar estável depois de fixar as colunas, porque é uma avulsão com o lábio íntegro.\n\n**Tratamento e resultado.** Costuma ser operada por via anterior (ilioinguinal ou STOPPA modificado), reduzindo primeiro a coluna anterior ao ílio intacto. Mesmo com menos reduções anatômicas (57% na série de MATTA), teve 77% de bons resultados e a melhor sobrevida do quadril em 20 anos (87%).\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seção Classification (Associated Both-Column Fractures).\n\n> **Na prova:** ambas as colunas = nenhuma parte da articulação presa ao ílio. Transversa, T e hemitransversa atravessam as colunas, mas mantêm parte do teto no ílio.",
-  "correta": "**D: nenhuma parte da superfície articular permanecer ligada ao ílio intacto.** É a desconexão completa do acetábulo em relação ao esqueleto axial que define a fratura de ambas as colunas. Nas transversas, em T e na anterior com hemitransversa, um pedaço do teto continua preso ao ílio, mesmo com o traço cruzando as duas colunas.",
+  "conceito": "O traço atravessar as duas colunas não basta para chamar a lesão de **ambas as colunas**. O que a define é a **perda de toda ligação entre a superfície articular e o ílio intacto**, alternativa D.\n\nNa transversa, na T e na anterior com hemitransversa posterior, alguma parte do teto permanece ligada ao ílio. Em ambas as colunas, os componentes anterior e posterior se separam do suporte axial: nenhum pedaço da superfície articular continua preso à porção intacta (Rockwood, 10ª ed., cap. 51, “Os tipos associados”).\n\nA cabeça pode medializar levando os fragmentos articulares. O lábio preservado pode mantê-los congruentes ao redor dela, produzindo **congruência secundária**. O **esporão**, melhor visto na obturatriz, corresponde à parte caudal do ílio intacto que fica lateral a esse conjunto deslocado.\n\n**O diagnóstico depende de continuidade, não apenas de desvio.** Luxação central ou uma fratura de ramo não demonstra, sozinha, que toda a superfície articular perdeu contato com o ílio.",
+  "correta": "**D: nenhuma parte articular permanece ligada ao ílio intacto.** É a diferença anatômica decisiva em relação aos outros padrões que também cruzam as duas colunas.",
   "incorretas": {
-   "A": "**Não define o tipo.** O traço pode atravessar o teto em vários padrões: a transversa transtectal, a fratura em T transtectal e muitas fraturas de ambas as colunas. A relação com o teto subdivide as fraturas, mas não as distingue.",
-   "B": "**Também aparece em outros padrões.** A fratura do ramo isquiopúbico está na fratura em T, na coluna posterior e na coluna anterior. É o achado que separa a T da transversa, mas não define a fratura de ambas as colunas.",
-   "C": "**É desvio, não definição.** A medialização da cabeça femoral ocorre na transversa, na T, na anterior com hemitransversa e na de ambas as colunas. Por si só não indica se ainda há articulação presa ao ílio."
+   "A": "**Atravessar o teto não é exclusivo.** Uma transversa transtectal também passa pela cúpula e continua classificada como transversa. É preciso verificar se resta superfície articular presa ao ílio.",
+   "B": "**O ramo ajuda a reconhecer outro padrão, mas não define este.** Uma transversa com traço vertical até o ramo isquiopúbico sugere T. A existência dessa fratura não prova a desconexão completa do acetábulo.",
+   "C": "**A posição da cabeça não define a continuidade óssea.** Luxação central pode acompanhar transversa com parede posterior, por exemplo. Medialização e fratura de ambas as colunas não são sinônimos."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Classificação de LETOURNEL"
+     ],
+     "blocos": [
+      "classificacao-de-letournel-18f9732d",
+      "classificacao-de-letournel-a25f459a",
+      "classificacao-de-letournel-f2b067cd",
+      "classificacao-de-letournel-5c165487",
+      "classificacao-de-letournel-e0c8fa8d"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "8e088bccb7d60cce66757007c150252dcc5d4eb5b95f35632b452feedf46a4da"
+    }
+   ],
+   "questaoSha256": "26b8c039ce641c4d11ee9d8fcc6a681a8397ec468df4ef1329490967d03bb8f2",
+   "comentarioSha256": "7269ed31062db5246414ab70c6d89205eba6c86bcc7a5b40da1f5a32469f4fc4"
+  }
  },
  "trauma-1523": {
-  "conceito": "**Por que só nessa fratura.** Na fratura de ambas as colunas, todo o acetábulo se solta do ílio. Mesmo nos casos cominutivos, o **lábio acetabular** costuma continuar íntegro. Quando a cabeça femoral medializa pela tração muscular, os fragmentos articulares, presos ao lábio, giram em torno dela e **continuam congruentes**. A articulação fica deslocada como um todo, mas a cabeça segue \"assentada\" nos fragmentos. LETOURNEL chamou isso de **congruência secundária**.\n\n**A definição usada para indicar tratamento.** O capítulo 51 do Rockwood (10ª ed.) define a congruência secundária como a congruência entre a cabeça femoral e os fragmentos articulares desviados **sem tração esquelética**. O **paralelismo** entre a cabeça e a superfície articular deve ser mantido **nas três incidências** (AP e as duas oblíquas), sobretudo no paciente jovem.\n\n**Necessária, mas não suficiente.** Para tratar sem cirurgia, também é preciso que:\n\n- o desvio dos fragmentos e a medialização não limitem o movimento;\n- o encurtamento do membro seja aceitável.\n\nMesmo assim, a congruência secundária **não tem o prognóstico de uma redução anatômica**, e a perda de paralelismo em qualquer incidência indica cirurgia. É uma opção mais atraente em pacientes de menor demanda.\n\n**Arcos de teto não servem aqui.** Os arcos de MATTA medem quanto do teto está intacto; na fratura de ambas as colunas não há parte intacta, e eles não se aplicam (nem à parede posterior).\n\n**Também na cirurgia.** Uma redução cirúrgica imperfeita, com todos os fragmentos congruentes à cabeça, gera uma \"congruência secundária cirúrgica\". É mais bem tolerada que outras más reduções, mas continua indesejável.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seções Classification (Both-Column) e Nonoperative Treatment, figuras 51-31 e 51-37.\n\n> **Na prova:** congruência secundária = fragmentos congruentes à cabeça medializada, sem tração, nas três incidências, graças ao lábio íntegro; é exclusiva da fratura de ambas as colunas e não iguala a redução anatômica.",
-  "correta": "**A: congruência entre a cabeça femoral e os fragmentos articulares desviados, sem tração, nas três incidências.** O lábio íntegro mantém os fragmentos girando em torno da cabeça medializada. A congruência deve existir sem tração esquelética, com paralelismo no AP e nas duas oblíquas. É condição necessária, mas não suficiente, para tratar sem cirurgia.",
+  "conceito": "A **congruência secundária** é a preservação do encaixe entre a cabeça femoral e os **fragmentos articulares desviados**, demonstrada **sem tração nas três incidências**. É a alternativa A.\n\nEm ambas as colunas, o acetábulo perdeu a ligação com o ílio intacto. A cabeça medializa, mas o **lábio preservado** ajuda a manter os fragmentos agrupados ao seu redor. Eles podem estar deslocados em relação à pelve e, ainda assim, manter paralelismo com a cabeça: congruência não significa redução anatômica (Rockwood, 10ª ed., cap. 51).\n\n**É necessária, mas não suficiente para escolher tratamento conservador.** O desvio não pode bloquear o movimento, o encurtamento precisa ser aceitável e o paciente deve ser avaliado individualmente. O resumo ressalta prognóstico inferior ao da redução anatômica.\n\nA avaliação sem tração evita chamar de espontaneamente congruente um quadril que só fica alinhado por força externa. O arco do teto não resolve essa decisão: em ambas as colunas não existe acetábulo intacto ao qual aplicar esse método.",
+  "correta": "**A: cabeça e fragmentos congruentes sem tração nas três vistas.** O dado é o paralelismo articular preservado apesar do desvio do conjunto, associado à integridade do lábio.",
   "incorretas": {
-   "B": "**A tração invalida o critério.** A definição exige congruência sem tração esquelética. A tração prolongada fica reservada a quem tem indicação cirúrgica, mas contraindicação à cirurgia.",
-   "C": "**Isso é redução anatômica.** O desvio de até 2 mm no teto é o critério para aceitar fraturas que preservam o teto. Na congruência secundária, os fragmentos continuam desviados em relação ao osso, mas congruentes à cabeça.",
-   "D": "**Os arcos de teto não se aplicam.** Os arcos de MATTA medem quanto do teto está intacto, e na fratura de ambas as colunas não sobra parte intacta para medir. Eles servem para transversas, colunas isoladas e T baixas."
+   "B": "**Confunde sustentação externa com congruência secundária.** Tração pode mudar artificialmente a relação cabeça-acetábulo. O critério deve existir sem ela; seis semanas de tração não fazem parte da definição.",
+   "C": "**Descreve redução anatômica, um objetivo diferente.** Congruência secundária admite fragmentos desviados, desde que encaixados na cabeça. Um limiar de 2 mm não é o que define esse fenômeno.",
+   "D": "**Aplica o arco onde ele não deve ser usado.** Ambas as colunas não deixa teto articular intacto para a medida. O ângulo medial do AP não substitui o paralelismo nas três incidências."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Classificação de LETOURNEL; Quem pode ficar sem cirurgia."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Classificação de LETOURNEL",
+      "Quem pode ficar sem cirurgia"
+     ],
+     "blocos": [
+      "classificacao-de-letournel-5c165487",
+      "quem-pode-ficar-sem-cirurgia-2a347117",
+      "quem-pode-ficar-sem-cirurgia-b45eec2a"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "3ef54c72f0f5a0725e5feec15b6472e6152285493cb085d7e194b913cf544405"
+    }
+   ],
+   "questaoSha256": "88a3b90ca5525ee935cea569b4d998570c8703df7a31e4fad049494dd6cacdf7",
+   "comentarioSha256": "162e3de8de489aa3e076f2e66dbf56a7e9c0e0d1f1e5374046d47835e93e6e0d"
+  }
  },
  "trauma-1524": {
-  "conceito": "**A cabeça femoral é o martelo.** A fratura do acetábulo acontece quando a cabeça femoral é empurrada contra a superfície articular com força suficiente para separá-la. A força chega pelo trocanter maior (no eixo do colo) ou pelo eixo do fêmur, e o padrão depende da **posição do quadril** no impacto (tabela 51-1 do capítulo 51 do Rockwood, 10ª ed.):\n\n| Força | Posição | Padrão |\n|---|---|---|\n| eixo do colo (trocanter), rotação neutra | neutra | coluna (ou parede) anterior com hemitransversa |\n| eixo do colo, rotação externa | 25 ou 51 graus | coluna anterior ou parede anterior |\n| eixo do colo, rotação interna | 20 a 51 graus | posteriores, transversas, T ou ambas as colunas |\n| eixo do fêmur, **quadril fletido 90 graus** | neutra | **parede posterior, com ou sem luxação** |\n| eixo do fêmur, quadril fletido | adução | **luxação posterior, com ou sem parede posterior** |\n| eixo do fêmur, quadril estendido (queda de altura) | neutra | parede posterior posterossuperior |\n\n**A regra geral.** Quanto mais adução, maior a chance de luxação associada. No trauma do painel, a força pelo eixo do fêmur fletido empurra a cabeça contra a parte posterior do acetábulo.\n\n**O joelho é o primeiro a bater.** No trauma do painel, o joelho absorve o impacto antes do quadril: contusões, fraturas e lesões ligamentares, sobretudo do **ligamento cruzado posterior**.\n\n- Em 1.273 pacientes, 15% tiveram sintomas no joelho no primeiro ano.\n- 60% das lesões ligamentares tiveram **diagnóstico tardio**, de 4 a 37 semanas.\n- O exame costuma ser limitado pela dor; o capítulo recomenda **examinar o joelho sob anestesia** ao fim da cirurgia do quadril.\n\n**Outras pistas do mecanismo.** A luxação posterior lembra lesões de desaceleração (rotura de aorta, perfuração intestinal pelo cinto); o desvio central lembra lesões da parede torácica e das vísceras do mesmo lado.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seções Mechanisms of Injury e Injuries Associated With Acetabular Fractures, tabela 51-1.\n\n> **Na prova:** painel (quadril fletido 90 graus, força pelo fêmur) = parede posterior, com luxação se houver adução; examine o joelho (LCP), lesão que passa despercebida.",
-  "correta": "**C: parede posterior com luxação posterior; lesão do joelho, sobretudo do ligamento cruzado posterior.** Com o quadril fletido a 90 graus, a força pelo eixo do fêmur leva a cabeça contra a parede posterior, e a adução aumenta a chance de luxação posterior. O joelho bate primeiro no painel, e suas lesões ligamentares, sobretudo do cruzado posterior, costumam ser diagnosticadas tarde.",
+  "conceito": "O joelho contra o painel transmite força pelo **eixo da diáfise femoral**. Com o quadril a 90 graus, a cabeça atinge a região posterior; a **adução aumenta a chance de luxação posterior**. O par esperado é **parede posterior com luxação e investigação do joelho, sobretudo do LCP**, alternativa C.\n\nO joelho é a porta de entrada dessa força, por isso contusão, fratura e lesão ligamentar ou meniscal podem coexistir com a lesão do quadril. O resumo pede exame atento do **ligamento cruzado posterior** e, se a avaliação inicial não for possível, exame sob anestesia ao final da cirurgia do quadril (Rockwood, 10ª ed., cap. 51, “Mecanismo de trauma” e “Joelho”).\n\n**Não é uma relação exclusiva.** O politraumatizado também pode ter lesão de desaceleração da aorta ou vísceras; a resposta C combina o padrão e a pesquisa do membro diretamente atingido. Uma associação verdadeira em outro contexto não torna corretos os dois componentes de um distrator.\n\nO mecanismo orienta a busca e a urgência de reduzir uma luxação, mas radiografias, TC e avaliação neurovascular definem o que realmente ocorreu. Não se presume uma lesão de LCP em todo trauma de painel.",
+  "correta": "**C: parede posterior com luxação posterior; investigar o joelho e o LCP.** Flexão e adução explicam o padrão posterior, e o ponto de impacto explica por que o joelho não deve ser esquecido.",
   "incorretas": {
-   "A": "**Mecanismo de outra posição.** A coluna anterior resulta de força no trocanter, pelo eixo do colo, com o quadril em rotação externa. A lesão da aorta lembra desaceleração e pode acompanhar a luxação posterior, mas o padrão do painel com flexão de 90 graus é posterior.",
-   "B": "**Transtectal exige outra posição.** A transversa transtectal aparece com força no trocanter em adução e rotação interna, ou pelo fêmur com o quadril estendido e abduzido. O calcâneo lembra queda de altura sobre os pés, e não o trauma do painel.",
-   "D": "**Mecanismo diferente.** A fratura de ambas as colunas resulta de força no trocanter com rotação interna ou, no idoso, de queda sobre o trocanter. A lesão vesical se associa mais ao anel pélvico e ao desvio central; não é a lesão a caçar no trauma do painel."
+   "A": "**A aorta merece atenção, mas o padrão anterior não corresponde ao mecanismo descrito.** O capítulo liga a desaceleração a lesões sistêmicas, porém força pela diáfise com quadril fletido e aduzido favorece o setor posterior. O par completo está errado.",
+   "B": "**Troca a configuração do impacto.** Na tabela, com força pela diáfise e quadril a 90 graus, grande abdução pode gerar transversa; aqui foi descrita adução. O enunciado não fornece um impacto pelo pé que justifique priorizar o calcâneo em vez do joelho atingido.",
+   "D": "**Ambas as colunas não é o padrão determinado por essa posição.** Deve ser reconhecida pela desconexão completa da superfície articular. O texto não fornece lesão urológica, e a bexiga não substitui a pesquisa do joelho no trauma de painel."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Mecanismo de trauma; Avaliação inicial e lesões associadas; Classificação de LETOURNEL."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Mecanismo de trauma",
+      "Avaliação inicial e lesões associadas",
+      "Classificação de LETOURNEL"
+     ],
+     "blocos": [
+      "mecanismo-de-trauma-41685e6a",
+      "mecanismo-de-trauma-3de9cf62",
+      "avaliacao-inicial-e-lesoes-associadas-a83518b2",
+      "avaliacao-inicial-e-lesoes-associadas-01281b16",
+      "classificacao-de-letournel-18f9732d"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "006352d43b77e76c2576816aa883437eaea2f94e0330d39570c1a38a364f3771"
+    }
+   ],
+   "questaoSha256": "9308d6759d12afffda6582583b7d505b1de9714fd72364daf31fbbc9145dc1cd",
+   "comentarioSha256": "2bdabbdcac1130e13792f8dfbf08a0d7185a00db049515a0388625e7bb108b2f"
+  }
  },
  "trauma-1525": {
-  "conceito": "**A parede posterior decide pela estabilidade.** Fraturas das paredes só podem ser tratadas sem cirurgia se o quadril estiver **completamente estável**. O problema é que nenhuma imagem estática define isso com segurança.\n\n**O que não funciona, segundo o capítulo 51 do Rockwood (10ª ed.):**\n\n- **tamanho do fragmento na tomografia:** já se acreditou que fragmentos com menos de 20% da parede eram estáveis, mas uma parte deles é instável; o tamanho não garante estabilidade;\n- **história de luxação:** fratura sem luxação conhecida não garante estabilidade, e luxação prévia não prova instabilidade persistente;\n- **fatores de risco** como o traço chegar a menos de 5 mm do teto: nenhum é preditor independente;\n- **arcos de teto:** não se aplicam à parede posterior.\n\n**O exame dinâmico sob anestesia geral.** É o método mais confiável, descrito por MOED:\n\n1. paciente em decúbito dorsal, com o arco em C do mesmo lado, na **oblíqua obturatriz**;\n2. o quadril é fletido além de 90 graus, aduzido e rodado internamente, com força posterior pelo eixo do fêmur;\n3. se há fragmento posterior **cranial**, testa-se também em **extensão, adução e carga axial**;\n4. não é preciso nem desejável reluxar: **subluxação posterior ou cranial** (alargamento do espaço medial, perda do paralelismo) indica instabilidade.\n\n**A regra prática.** Na dúvida, considere a fratura **instável até prova em contrário**. Não há necessidade de testar um quadril obviamente instável. Os fragmentos craniais e periféricos, típicos de quedas de altura com o quadril estendido, são instáveis em extensão e adução, a posição da marcha, e têm muitas complicações mesmo pequenos (figura 51-15).\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seções Imaging (Dynamic Stress Views) e Nonoperative Treatment, figuras 51-14 e 51-15.\n\n> **Na prova:** estabilidade da parede posterior = exame dinâmico sob anestesia (flexão acima de 90, adução, rotação interna e força posterior). Tamanho na tomografia e história de luxação não bastam.",
-  "correta": "**B: o exame dinâmico sob anestesia, com radioscopia na oblíqua obturatriz.** Com o quadril em flexão acima de 90 graus, adução, rotação interna e força posterior pelo fêmur, procura-se subluxação (alargamento do espaço medial ou perda do paralelismo). É o método mais confiável para definir se a fratura da parede posterior precisa de cirurgia.",
+  "conceito": "Um quadril reduzido e congruente na TC pode ser **instável durante o movimento e a carga**. Para a fratura pequena da parede posterior, o método mais confiável do resumo é o **exame dinâmico sob anestesia com radioscopia em oblíqua obturatriz**, alternativa B.\n\nA TC mostra a forma da fratura; o estresse testa se a parede restante contém a cabeça. O teste descrito por Moed usa flexão além de 90 graus, adução, rotação interna e força posterior ao longo do fêmur. Fragmentos craniais também devem ser avaliados em extensão e adução sob carga axial (Rockwood, 10ª ed., cap. 51).\n\n**Não se busca reluxar o quadril.** Subluxação, alargamento do espaço medial ou perda do paralelismo já revelam instabilidade. Um fragmento pequeno e superior pode falhar em extensão, posição relevante para a marcha.\n\nO antigo corte de menos de 20% da parede na TC não garante estabilidade. Também não basta saber se houve luxação. É a resposta dinâmica, junto à anatomia e à congruência, que evita escolher tratamento conservador com base numa imagem estática tranquilizadora.",
+  "correta": "**B: exame dinâmico em oblíqua obturatriz.** Ele revela perda de contenção que pode não aparecer na TC do quadril já reduzido. Não exige provocar uma luxação completa.",
   "incorretas": {
-   "A": "**O tamanho não garante.** O limiar antigo de 20% caiu: parte das fraturas com menos de 20% da parede é instável no exame dinâmico. A tomografia mede o fragmento com precisão, mas não prevê com segurança o comportamento do quadril.",
-   "C": "**A história engana nos dois sentidos.** A ausência de luxação conhecida não garante estabilidade (a luxação pode ter sido reduzida no transporte), e a presença de luxação prévia não prova instabilidade persistente.",
-   "D": "**Os arcos não se aplicam à parede.** Os arcos de teto de MATTA não valem para a parede posterior nem para a de ambas as colunas. Para a parede posterior, o teste é dinâmico."
+   "A": "**O tamanho não assegura função.** Há instabilidade mesmo com menos de 20% da parede fraturada. A localização cranial e a posição em que se testa modificam o risco; medir o fragmento sozinho é insuficiente.",
+   "C": "**A história não substitui o teste.** Ausência de luxação inicial não garante estabilidade, e ter luxado não demonstra que o quadril permaneça instável após a redução. A decisão exige avaliar a contenção atual.",
+   "D": "**O arco do teto não foi feito para resolver a estabilidade da parede posterior.** O capítulo separa esse padrão dos candidatos ao roof arc. A oblíqua ilíaca no ângulo posterior não substitui o estresse em obturatriz."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Tomografia e exame sob anestesia; Quem pode ficar sem cirurgia."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Tomografia e exame sob anestesia",
+      "Quem pode ficar sem cirurgia"
+     ],
+     "blocos": [
+      "tomografia-e-exame-sob-anestesia-e0508ee3",
+      "tomografia-e-exame-sob-anestesia-fdfcd0ed",
+      "tomografia-e-exame-sob-anestesia-d3705dbb",
+      "tomografia-e-exame-sob-anestesia-7445dd70",
+      "tomografia-e-exame-sob-anestesia-b15ffe83",
+      "tomografia-e-exame-sob-anestesia-b504286e",
+      "tomografia-e-exame-sob-anestesia-4893dfe4",
+      "quem-pode-ficar-sem-cirurgia-b45eec2a"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "9324933c133462a1a3bd74adaf990663f4a17aee28514919e7a4ccffd7da1305"
+    }
+   ],
+   "questaoSha256": "ffcb290d374bee7e96765b308989d96598aeb65a9a8902b55010578bfb24ffd9",
+   "comentarioSha256": "2a7abca1c955bc647bf842dd7dc5e1ae7e87d89012623f195e1432b96cbbecf6"
+  }
  },
  "trauma-1526": {
-  "conceito": "**O que o arco de teto mede.** MATTA criou os arcos de teto para saber se o traço da fratura poupa a cúpula de carga e se o acetábulo intacto basta para manter a cabeça femoral estável e congruente. Para medir:\n\n- a radiografia é feita **sem tração**, com a cabeça femoral concêntrica à cúpula;\n- traça-se uma linha vertical pelo centro da cabeça femoral e outra do centro da cabeça até o ponto onde o traço atinge a superfície articular;\n- o ângulo entre elas é o arco.\n\nCada arco é medido em uma incidência:\n\n| Arco | Incidência |\n|---|---|\n| medial | AP |\n| anterior | oblíqua obturatriz |\n| posterior | oblíqua ilíaca |\n\n**Os números mudaram.**\n\n- **Antes:** arcos maiores que 45 graus nas três incidências indicavam cúpula preservada e permitiam o conservador.\n- **VRAHAS (biomecânico):** medial acima de **45**, anterior acima de **25** e posterior acima de **70** graus.\n- **Estudo mais recente (carga de sentar e levantar):** valores bem mais altos (cerca de 91, 67 e 101 graus), de implicação clínica ainda indefinida.\n\nA figura 51-36 do capítulo 51 do Rockwood (10ª ed.) mostra uma transversa com arcos de 50 graus nas três vistas, \"estável\" pelo critério antigo, que medializou três semanas depois, como previa o critério de VRAHAS.\n\n**Onde não usar.** Na fratura de **ambas as colunas** (não há acetábulo intacto) e na **parede posterior** (a estabilidade se define pelo exame dinâmico). As fraturas baixas da coluna anterior, transversas baixas e T baixas, estáveis e congruentes, são as candidatas típicas ao conservador.\n\n**Na tomografia.** OLSON e MATTA mostraram que os 10 mm superiores do acetábulo nos cortes axiais equivalem à cúpula de carga.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seção Nonoperative Treatment (Indications), figura 51-36.\n\n> **Na prova:** VRAHAS: medial acima de 45 graus (AP), anterior acima de 25 (obturatriz), posterior acima de 70 (ilíaca). Sem tração, e não vale para ambas as colunas nem para a parede posterior.",
-  "correta": "**D: 45, 25 e 70 graus.** Pelos critérios de VRAHAS, há acetábulo intacto suficiente para o conservador quando o arco medial (AP) passa de 45 graus, o anterior (oblíqua obturatriz) de 25 e o posterior (oblíqua ilíaca) de 70. Os arcos são medidos sem tração, com a cabeça concêntrica à cúpula.",
+  "conceito": "Os limites biomecânicos de **Vrahas**, na ordem **medial, anterior e posterior**, são **maior que 45, 25 e 70 graus**, alternativa D. Cada arco corresponde a uma incidência: **AP, obturatriz e ilíaca**, respectivamente.\n\nO ângulo é traçado entre uma vertical pelo centro da cabeça e uma linha do centro até o ponto onde a fratura chega à superfície articular. Quanto maior o arco, maior a região de teto que permaneceu íntegra. Mede-se nas três vistas, com a cabeça concêntrica e **sem tração**, para não criar alinhamento artificial (Rockwood, 10ª ed., cap. 51, “O teto e o arco de Matta”).\n\n**O critério antigo de 45 graus para todos os arcos é diferente.** O resumo relata uma transversa com 50 graus nas três vistas que subluxou depois; ela atendia ao corte antigo, mas não aos 70 graus posteriores de Vrahas. Isso explica por que decorar três valores iguais pode falhar.\n\nEsses ângulos avaliam suficiência do teto em padrões aos quais o método se aplica. Não servem para ambas as colunas nem para parede posterior, e não dispensam estabilidade, congruência e avaliação clínica.",
+  "correta": "**D: 45, 25 e 70 graus.** São os limites de Vrahas na ordem pedida, associados a AP, obturatriz e ilíaca. Valores maiores favorecem teto preservado, não indicação automática de cirurgia.",
   "incorretas": {
-   "A": "**É o critério antigo.** Arcos acima de 45 graus nas três incidências foram a recomendação inicial. O estudo biomecânico de VRAHAS mostrou que a coluna posterior exige mais (70 graus) e a anterior menos (25 graus). A figura do capítulo mostra uma transversa \"estável\" pelos 45 graus que subluxou depois.",
-   "B": "**Medial e anterior trocados.** O arco medial, medido no AP, continua em 45 graus; é o anterior, medido na oblíqua obturatriz, que caiu para 25.",
-   "C": "**Valores embaralhados.** Os 70 graus valem para o arco posterior (oblíqua ilíaca), e não para o medial. A sequência correta é medial 45, anterior 25 e posterior 70."
+   "A": "**É o critério antigo uniforme.** Os 45 graus nas três vistas não reproduzem os limites biomecânicos de Vrahas. Particularmente, 45 graus não basta como limite posterior nesse sistema.",
+   "B": "**Troca os dois primeiros arcos.** Vinte e cinco graus corresponde ao anterior na obturatriz; o medial no AP exige mais de 45. O posterior permanece corretamente em 70.",
+   "C": "**Desloca o limite posterior para o medial.** Setenta graus pertence à ilíaca, no arco posterior; o AP usa 45. A permuta modifica qual parte do teto se considera preservada."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Quem pode ficar sem cirurgia."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Quem pode ficar sem cirurgia"
+     ],
+     "blocos": [
+      "quem-pode-ficar-sem-cirurgia-45c0f4d1",
+      "quem-pode-ficar-sem-cirurgia-8a28effd",
+      "quem-pode-ficar-sem-cirurgia-f17537a8",
+      "quem-pode-ficar-sem-cirurgia-33b5d081",
+      "quem-pode-ficar-sem-cirurgia-b45eec2a"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "c6adecc8a9310d78a1152fd0bfcf24a6893f7ebaf719094ad13eab384de824ef"
+    }
+   ],
+   "questaoSha256": "55d90b550e59e0965692199e7418bc962df31abf47c2f0a951a8e52e995f1531",
+   "comentarioSha256": "167d18347dd7ecdc1332eda46efea3b9bbf7a06109e591e5c4dba5c8fe81b691"
+  }
  },
  "trauma-1527": {
-  "conceito": "**A cúpula é o que importa.** ROWE e LOWELL foram os primeiros a mostrar que o estado da **cúpula superior** do acetábulo, o terço superior da área de carga, é um forte indicador do resultado. Fraturas que poupam a cúpula, estáveis e congruentes, vão bem sem cirurgia; as que desviam a cúpula vão mal.\n\n**Na tomografia.** OLSON e MATTA mostraram que os cortes axiais dos **10 mm superiores** da superfície articular do acetábulo equivalem à cúpula de carga. Se o traço aparece nesses cortes, a cúpula foi atingida. O capítulo 51 do Rockwood (10ª ed.) descreve a cúpula como a região que vai de logo atrás da espinha ilíaca anteroinferior até a parte de cima da coluna posterior.\n\n**O limite de desvio.** Embora haja controvérsia sobre o desvio exato tolerável, a maioria dos autores recomenda cirurgia quando o desvio na cúpula passa de **2 mm**. O mesmo número reaparece em outros pontos do capítulo:\n\n- redução **anatômica** foi definida como desvio residual menor que 2 mm (LETOURNEL e MATTA), e o objetivo é chegar abaixo de 1 mm;\n- no tratamento conservador do idoso, degrau de 2 mm ou mais na **oblíqua obturatriz** foi o principal preditor de mau resultado e de perda do quadril;\n- pacientes com redução anatômica tiveram melhor qualidade de vida que os com desvio residual acima de 2 mm.\n\n**Em resumo, o conservador serve para** fraturas sem desvio ou minimamente desviadas, fraturas em que a parte intacta mantém estabilidade e congruência (pelos arcos de teto) e fraturas de ambas as colunas com congruência secundária. Também é opção para idosos de baixa demanda.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seção Nonoperative Treatment of Acetabular Fractures.\n\n> **Na prova:** cúpula de carga = 10 mm superiores do acetábulo na tomografia; desvio acima de 2 mm na cúpula indica cirurgia.",
-  "correta": "**C: os 10 mm superiores; 2 mm.** OLSON e MATTA mostraram que os cortes axiais dos 10 mm superiores do acetábulo correspondem à cúpula de carga. Quando o traço atinge essa região, a maioria dos autores indica cirurgia se o desvio passa de 2 mm.",
+  "conceito": "A cúpula de carga corresponde aos **10 mm superiores** da superfície articular nos cortes axiais da TC. Quando o desvio nessa região passa de **2 mm**, a maioria dos autores indica cirurgia. É a alternativa C.\n\nA questão combina uma **região** com um **grau de incongruência**. O teto é a superfície superior que recebe a cabeça; um desvio ali altera o contato articular. Os 10 mm localizam essa cúpula na TC, enquanto os 2 mm qualificam o desvio nela. São medidas diferentes, que não devem ser trocadas (Rockwood, 10ª ed., cap. 51).\n\n**Não é um limiar universal para qualquer fragmento.** A decisão também considera estabilidade, paralelismo e condições do paciente. O resumo admite tratamento conservador em fraturas estáveis e congruentes fora da cúpula; por outro lado, um quadril instável pode precisar de cirurgia mesmo sem um grande degrau visível.\n\nO valor da TC está em seguir a superfície corte a corte. Uma aparência aceitável em uma radiografia não exclui incongruência no setor de carga nem substitui a avaliação das três incidências.",
+  "correta": "**C: 10 mm superiores; desvio acima de 2 mm.** A primeira medida identifica a cúpula, e a segunda é o limite de incongruência citado para a indicação pela maioria dos autores.",
   "incorretas": {
-   "A": "**Faixa estreita e limite baixo demais.** Os 5 mm superiores subestimam a cúpula. E 1 mm é o objetivo da redução cirúrgica (inframilimétrica), não o limiar para indicar cirurgia.",
-   "B": "**Faixa larga e tolerância alta demais.** Vinte milímetros incluiriam regiões fora da área de carga, e 5 mm de desvio na cúpula estão muito além do aceitável.",
-   "D": "**A cúpula é superior.** A medida está certa, mas a região de carga é a parte de cima do acetábulo. Os cortes inferiores correspondem à fossa cotiloide e às fraturas baixas, que costumam permitir o conservador."
+   "A": "**Reduz as duas medidas sem apoio no trecho.** O resumo define 10 mm superiores, não 5, e cita desvio maior que 2 mm, não 1 mm, para esse critério da cúpula.",
+   "B": "**Amplia região e tolerância indevidamente.** Vinte milímetros não é a equivalência descrita para a cúpula, e esperar mais de 5 mm aceita desvio superior ao limite de 2 mm apresentado.",
+   "D": "**Mantém o limiar, mas desloca a região para baixo.** A cúpula é superior. Os 10 mm inferiores não representam o setor de carga definido por Olson e Matta."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Quem pode ficar sem cirurgia; Indicações cirúrgicas, momento e urgências."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Quem pode ficar sem cirurgia",
+      "Indicações cirúrgicas, momento e urgências"
+     ],
+     "blocos": [
+      "quem-pode-ficar-sem-cirurgia-45c0f4d1",
+      "quem-pode-ficar-sem-cirurgia-b7f47596",
+      "indicacoes-cirurgicas-momento-e-urgencias-a59aed06"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "359eb0fe2bae239003dbcf110f96e775a79868f92a395d9949089885c9508e87"
+    }
+   ],
+   "questaoSha256": "59385a114bf710daee41b6bd8b642a95d11e4961374cd9e5b804870befe6e37e",
+   "comentarioSha256": "c68b91b221b549c3c2f366842931a6662671f4c10b9628caab2ba991ea0b3c2c"
+  }
  },
  "trauma-1528": {
-  "conceito": "**O idoso é outro paciente.** As fraturas do acetábulo em maiores de 60 anos aumentam, resultam em geral de quedas de baixa energia e trazem osteoporose, cominuição, impacção do teto (sinal da gaivota) e fratura da superfície quadrilátera. Os objetivos mudam: primeiro **preservar a vida e permitir mobilização precoce**, sem depender demais de analgésicos, e só depois manter o quadril nativo. A idade que conta é a **fisiológica**, não a cronológica.\n\n**O que os números dizem sobre as fraturas sem desvio ou minimamente desviadas:**\n\n- só cerca de **7%** se mostram instáveis e desviam de forma significativa;\n- **94%** mantêm o quadril nativo em 10 anos;\n- degrau de **2 mm ou mais** na oblíqua obturatriz é o principal preditor de mau resultado.\n\n**A conclusão do capítulo 51 do Rockwood (10ª ed.).** Não parece haver indicação para **fixação operatória profilática**. Esses pacientes podem ser tratados com **mobilização precoce e carga parcial** nas primeiras 8 semanas, com radiografias AP e oblíquas semanais nas primeiras 4 semanas. Repouso no leito não é necessário e favorece descondicionamento, úlceras e complicações respiratórias. A conduta preferida dos autores é observação próxima, e qualquer desvio posterior indica cirurgia.\n\n**A exceção é a parede posterior.** Fratura da parede posterior, mesmo sem desvio, deve passar pelo exame sob anestesia; se instável, vai para fixação. No idoso, a parede posterior instável não pode ser tratada sem cirurgia, e a cominutiva vai mal com osteossíntese, o que favorece a artroplastia.\n\n**E o desvio?** Mesmo fraturas desviadas no idoso frágil podem ser tratadas sem cirurgia, com artroplastia tardia se surgir artrose sintomática. Numa série de 27 idosos com indicação cirúrgica pelos critérios do jovem, só 15% foram convertidos para prótese.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seção Nonoperative Treatment (Geriatric Patients, Techniques).\n\n> **Na prova:** fratura sem desvio no idoso: só 7% desviam, e 94% mantêm o quadril em 10 anos; mobilize cedo, sem fixação profilática. A parede posterior é exceção (teste de estabilidade).",
-  "correta": "**A: mobilização precoce com carga parcial e radiografias seriadas, sem fixação profilática.** Só cerca de 7% das fraturas sem desvio ou minimamente desviadas desviam, e 94% preservam o quadril nativo em 10 anos. Mobilizar cedo, com carga parcial nas primeiras 8 semanas e radiografias semanais no início, permite intervir rapidamente nos raros casos que desviarem.",
+  "conceito": "Na fratura do acetábulo **sem desvio**, fora do cenário especial da parede posterior, o resumo favorece **mobilização precoce e acompanhamento radiográfico**, sem fixação profilática. A alternativa A reúne essa conduta; “carga parcial” deve ser entendida como proteção individualizada, e não como necessidade de repouso no leito.\n\nO capítulo informa que **menos de 7%** das fraturas sem desvio ou minimamente desviadas se mostram instáveis e desviam sem tração. Um estudo prognóstico encontrou 94% de preservação do quadril em dez anos em um grupo selecionado por degrau pequeno, congruência secundária ou parede estável. Esses resultados sustentam observar, mas não prometem o mesmo prognóstico a qualquer idoso (Rockwood, 10ª ed., cap. 51).\n\n**Acompanhar é parte do tratamento.** O corpo do resumo orienta AP e oblíquas semanais nas primeiras quatro semanas e progressão da carga conforme evolução. Para o idoso, descreve carga como tolerada com andador; o termo mais restrito da alternativa não deve virar uma regra fixa de oito semanas, que esse trecho não estabelece.\n\nA parede posterior continua sendo uma exceção: mesmo sem desvio, pode precisar do exame sob anestesia para definir estabilidade. Já impacção grave, lesão da cabeça ou parede posterior cominutiva do idoso configuram outra discussão, na qual artroplastia pode ser útil.",
+  "correta": "**A: mobilizar cedo, proteger a marcha e controlar com radiografias.** Não há indicação de fixar profilaticamente só pela possibilidade de desvio. A carga se ajusta à estabilidade e tolerância, com andador no idoso e vigilância inicial próxima.",
   "incorretas": {
-   "B": "**Os números dizem o contrário.** A fixação percutânea profilática já foi defendida, mas apenas cerca de 7% dessas fraturas desviam. Com 94% de sobrevida do quadril em 10 anos, o capítulo conclui que a fixação profilática não parece indicada.",
-   "C": "**A tração tem outro papel.** A tração prolongada fica reservada para fraturas desviadas com indicação cirúrgica em pacientes que não podem ser operados. No idoso com fratura sem desvio, imobilizar no leito só traz descondicionamento, úlceras e complicações respiratórias.",
-   "D": "**Exagero para fratura sem desvio.** A artroplastia aguda tem papel no idoso com impacção articular grave, lesão da cabeça femoral ou parede posterior cominutiva e instável, em geral junto com a fixação das colunas. Não se indica para uma fratura sem desvio que provavelmente consolida bem."
+   "B": "**A justificativa contradiz os dados.** O resumo fala em menos de 7% de desvio nas fraturas sem desvio ou minimamente desviadas, não na maioria. Isso não sustenta uma operação profilática de rotina.",
+   "C": "**Impõe imobilização a quem pode mobilizar.** O repouso no leito piora condicionamento, pele e pulmão. Tração prolongada é reservada a quem tem indicação cirúrgica e contraindicação à cirurgia, não ao caso estável descrito.",
+   "D": "**Trata um cenário mais destrutivo que o apresentado.** A artroplastia aguda pode ser útil na impacção articular grave e lesão da cabeça, ou na parede posterior cominutiva do idoso. Nada disso foi descrito na fratura sem desvio do enunciado."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 51 (Acetabulum Fractures; Gary e Phelps)"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Quem pode ficar sem cirurgia; O paciente idoso."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "alerta": "A oficial preservada pela mobilização precoce, vigilância radiográfica e ausência de indicação profilática. O corpo do resumo orienta, para o idoso, carga como tolerada com andador; não estabelece carga parcial obrigatória por oito semanas. Os 94% de sobrevida provêm de grupo selecionado, não de todo paciente idoso.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Quem pode ficar sem cirurgia",
+      "O paciente idoso"
+     ],
+     "blocos": [
+      "quem-pode-ficar-sem-cirurgia-523c93ad",
+      "quem-pode-ficar-sem-cirurgia-00dd6ad4",
+      "quem-pode-ficar-sem-cirurgia-6fdd0120",
+      "quem-pode-ficar-sem-cirurgia-66914270",
+      "quem-pode-ficar-sem-cirurgia-9904c461",
+      "o-paciente-idoso-7a2bf394"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "ad82345c4f7dfb79502fac7f71a9465815b8264a5b1f2ba835486b13cd69e21a"
+    }
+   ],
+   "questaoSha256": "49ef236883cc5fd28b2e0958b6158cfa0cf75ef387e8c0bc5a71d9d9eb2e66f9",
+   "comentarioSha256": "27e7b5b14c8af437e82284a91df09b8bd3079d5039106f812281c883e3743c0e"
+  }
  },
  "trauma-1529": {
   "conceito": "**Não é emergência, mas tem prazo.** A fixação da fratura do acetábulo, em geral, não é uma emergência: o paciente deve ser avaliado e otimizado clinicamente. Antes se temia operar nas primeiras 24 horas por causa do sangramento, mas a fixação precoce da parede posterior (e depois de padrões complexos por via anterior, em até 48 horas) não aumentou a perda de sangue.\n\n**Por que o tempo pesa.** As técnicas de redução dependem de fragmentos móveis. Segundo o capítulo 51 do Rockwood (10ª ed.):\n\n| Tempo desde a lesão | O que acontece |\n|---|---|\n| 10 dias | a consolidação inicial começa a limitar a mobilização dos fragmentos |\n| 2 semanas | a mobilidade costuma se perder, e transversas, T, hemitransversas e ambas as colunas podem exigir acesso mais extenso |\n| 3 semanas | o calo é extenso, e a fratura deixa de ser aguda |\n\nNa série de LETOURNEL e JUDET, os operados depois de 3 semanas tiveram só 54% de bons resultados.\n\n**Os dados mais recentes.**\n\n- A chance de **redução anatômica caiu 12% a cada dia** entre a lesão e a cirurgia.\n- Reduções anatômicas foram operadas em mediana de 3 dias; as imperfeitas, em 4,5; as ruins, em 7.\n- Bom resultado clínico foi mais provável com cirurgia em até **15 dias nas elementares** e **10 dias nas associadas**.\n\n**A recomendação.** Operar o quanto antes possível e **não passar de 15 dias nas elementares e 10 dias nas associadas**. O prazo maior nas elementares se explica porque um traço só é mais fácil de mobilizar e ler que vários traços com componentes nas duas colunas.\n\nBase: Rockwood and Green, 10ª ed., capítulo 51 (Acetabulum Fractures), seções Operative Treatment (Timing of Surgery) e Outcomes.\n\n> **Na prova:** opere o quanto antes; não passe de 15 dias nas elementares e 10 nas associadas. A cada dia, a chance de redução anatômica cai cerca de 12%; depois de 3 semanas, a fratura não é mais aguda.",
