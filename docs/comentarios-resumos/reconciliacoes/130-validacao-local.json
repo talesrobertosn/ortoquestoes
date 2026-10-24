@@ -1,0 +1,108 @@
+{
+  "data": "2026-10-24",
+  "branch": "codex/resumos-128",
+  "base": "687b2a6e4e0070b2f27a8237eb37e178769dcd32",
+  "lotes": [
+    128,
+    129,
+    130
+  ],
+  "ids": [
+    "trauma-1490",
+    "trauma-1493",
+    "trauma-1494",
+    "trauma-1496",
+    "trauma-1497",
+    "trauma-1498",
+    "trauma-1500",
+    "trauma-1501",
+    "trauma-1502",
+    "trauma-1503",
+    "trauma-1504",
+    "trauma-1505",
+    "trauma-1506",
+    "trauma-1507",
+    "trauma-1508",
+    "trauma-1509",
+    "trauma-1510",
+    "trauma-1512",
+    "trauma-1513",
+    "trauma-1514",
+    "quadril-0084",
+    "quadril-0219",
+    "quadril-0668",
+    "trauma-0316",
+    "trauma-0956",
+    "trauma-1499",
+    "trauma-1511",
+    "trauma-0580",
+    "trauma-0814",
+    "trauma-0892"
+  ],
+  "fontes": "Resumo 50 (890 linhas) previamente lido integralmente e relido nos trechos pertinentes; resumo 51 (774 linhas) lido integralmente nesta passagem. Corpo e tabelas independentes; contexto de questões e comentários antigos não usados como autoridade. Referências indicam consulta ao resumo, sem páginas inventadas.",
+  "aplicacao": "aplicar.py sob flock /tmp/claude-0/acervo.lock",
+  "auditoria": "Reproduzidos os três lotes desde a base, fontes e hashes, todas as alternativas, trinta avulsos integrais, preservação de membros alheios e formatação externa. Questões, gabaritos, áreas e revisão médica preservados; conferido:false.",
+  "figurasAbertasAntesDaRedacaoSha256": {
+    "quadril/quadril-0084-1.jpeg": "4bca5c873cb2abb744628f1ad24fa3e14ea7768c3b628bd140cd3c7dc8714a24",
+    "quadril/quadril-0219-1.png": "d523723d05d1f3ddbdbcd46b85f56ecb04e3dc95b6c98871c0dcbe0cdabcb407",
+    "quadril/quadril-0668-1.jpeg": "490c3e773f795c8bfac34a3491f16077dcc1c6c5dafb5c4b82ccd71bcd7b8ffa",
+    "trauma/trauma-0316-1.jpeg": "68529f0d20f40547212f4966cc3bbc0abca75b2771f7cd019754b70e237ce34a",
+    "trauma/trauma-0956-1.png": "70e779ab25530f2a98971056088048d218008916090f0d51ecab49efc4f5526b",
+    "trauma/trauma-1499-1.jpeg": "982043a368c58f5e02273f2bb3647337291c03a38a36dfcefabefb21e64ee4ec",
+    "trauma/trauma-1511-1.jpeg": "629188019cbd4e44644c9074de14c419f817dbd6e78915a151da2a705a68cf79"
+  },
+  "figuraInspecionadaSemCobertura": "quadril/quadril-0702-1.jpeg; anatomia de todas as alternativas não sustentada pelo corpo dos resumos; lacuna em 130-lacunas-pelve.json.",
+  "revisaoMedicaAtribuida": false,
+  "validacaoVisual": {
+    "casos": [
+      "trauma-1496",
+      "trauma-1501",
+      "trauma-1503",
+      "trauma-1505",
+      "trauma-1506",
+      "trauma-1507",
+      "trauma-1513",
+      "trauma-1514",
+      "quadril-0084",
+      "quadril-0219",
+      "quadril-0668",
+      "trauma-0316",
+      "trauma-0956",
+      "trauma-1499",
+      "trauma-1511",
+      "trauma-0892"
+    ],
+    "tamanhos": [
+      "celular390",
+      "computador1440"
+    ],
+    "resultado": "16 casos passaram, sete figuras, correção/comentário, alertas e destinos de fonte. Sete capturas representativas abertas.",
+    "capturasAbertas": [
+      "trauma-1496 alerta celular",
+      "trauma-1507 aula PC",
+      "quadril-0084 figura PC",
+      "quadril-0219 figura celular",
+      "trauma-0316 figura PC",
+      "trauma-0956 alerta celular",
+      "trauma-1511 figura PC"
+    ]
+  },
+  "checks": "14 fixtures, validar_acervo, npm test, npm run build e diff-check passaram após o lote 130.",
+  "logsSha256": {
+    "check128-test.log": "56e882736123f90ac14189e2a40ef31ca6b728fa4780143513ddfad768271148",
+    "check128-build.log": "d03398b8ee4a5758b4bc9fad1832c3bf57f7391c132090e5f2df2b89046b0715",
+    "check128-fixtures.log": "73c95df1bcf74b05afd28564aafaa49bea9d3c5bacfad3f593300230cb218f6b",
+    "check128-acervo.log": "8712d5404946a98579221d7b4388e7e592314c75dcc9a9f2cc1c83d1cd15128f"
+  },
+  "prAnterior": {
+    "pr": 507,
+    "head": "c569ec3a58da08550ab3f64c0fac22b598540236",
+    "ci": 40089522191,
+    "merge": "687b2a6e4e0070b2f27a8237eb37e178769dcd32",
+    "pages": 40089660982,
+    "jobPublicar": 120860135372,
+    "avulsosIntegrais": 30
+  },
+  "proximoLote": 131,
+  "publicacaoAtual": "Aguardar CI do head, merge, guarda/deploy efetivos e comparação integral de produção; registrar resultado no PR."
+}

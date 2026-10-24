@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 807 |
+| pendente | 779 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 214 |
-| pendente-inspecao-imagem | 128 |
-| revisada | 1123 |
+| pendente-fonte | 220 |
+| pendente-inspecao-imagem | 120 |
+| revisada | 1153 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -27,9 +27,9 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 11 | 0 | 121 |
-| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 68 | 0 | 60 |
-| Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 30 | 0 | 43 |
-| Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 1 | 0 | 75 |
+| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 76 | 0 | 52 |
+| Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 60 | 0 | 13 |
+| Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 2 | 0 | 74 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 46 | 0 | 17 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 27 | 0 | 18 |
 | Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 40 | 0 | 33 |

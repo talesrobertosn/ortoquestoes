@@ -1,0 +1,423 @@
+{
+ "quadril-0084": {
+  "questaoSha256": "8a71ba5b10dd78ca5f13c7418356396cd3829568625ad78d03b3a5897ea844b2",
+  "comentarioAnteriorSha256": "d88265f408793751d8a673837fb7a42f5263b2a1ec88c2bf896f62ebe60d32e2",
+  "comentario": {
+   "conceito": "A seta aponta um ligamento curto entre a região sacrococcígea e a **espinha isquiática**: o **sacroespinal, ou sacroespinhoso**, alternativa D. O destino ósseo é a chave para reconhecê-lo na ilustração.\n\nO sacroespinhoso participa da separação entre os forames isquiáticos maior e menor. O **sacrotuberoso**, mais superficial e largo, segue até o **túber isquiático**. Na figura, a seta não termina sobre essa faixa longa que desce ao túber, mas sobre a estrutura mais curta junto à espinha (Rockwood, 10ª ed., cap. 50, “Quem segura o anel”).\n\n**A inserção distingue melhor que um nome parecido.** Os sacroilíacos unem sacro e ílio em torno da articulação; o sacroespinhoso da seta chega ao ísquio. A opção “sacroisquial” é imprecisa para individualizar qual estrutura se pretende nomear e não deve levar a inventar uma inserção diferente.\n\nEsses ligamentos são estabilizadores posteriores acessórios. O suporte principal vertical e posterior continua sendo dos sacroilíacos posteriores e interósseos; reconhecer o desenho não significa atribuir toda a estabilidade ao ligamento indicado.",
+   "correta": "**D: sacroespinal.** É o nome usado no resumo para o ligamento que termina na espinha isquiática, correspondente ao ponto indicado. Sacroespinhoso é a outra forma empregada para a mesma estrutura.",
+   "incorretas": {
+    "A": "**Sacroilíaco se refere à conexão entre sacro e ílio.** A seta marca a faixa que chega à espinha isquiática, não o complexo ao redor da articulação sacroilíaca.",
+    "B": "**O sacrotuberal termina no túber.** É mais largo e superficial, descendo além da espinha. Trocar o destino da faixa curta pelo da longa impede reconhecer a estrutura apontada.",
+    "C": "**A nomenclatura não individualiza o destino da seta.** “Sacroisquial” não é o nome específico usado na tabela consultada; o dado demonstrável é a inserção na espinha, que corresponde ao sacroespinal. Não é necessário inventar um terceiro ligamento para justificar a opção."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel."
+   ],
+   "conferido": false,
+   "alerta": "D oficial preservada pela inserção na espinha isquiática. A opção “sacroisquial” é terminologicamente imprecisa frente aos nomes específicos do resumo; a explicação se apoia no destino ósseo visível, sem inventar uma estrutura para esse distrator."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Anatomia e biomecânica do anel"
+    ],
+    "blocos": [
+     "anatomia-e-biomecanica-do-anel-9eb66b24",
+     "anatomia-e-biomecanica-do-anel-13360708"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+   }
+  ],
+  "imagensConferidas": [
+   "quadril/quadril-0084-1.jpeg"
+  ]
+ },
+ "quadril-0219": {
+  "questaoSha256": "94db4d2465fbcac8fa217a1fd2b65361feb4123210152ebed1997bb86d973be6",
+  "comentarioAnteriorSha256": "4db117f804063c97f9ecb04f20dc2420761a629afb5a4e8af8a96e3d1a50e474",
+  "comentario": {
+   "conceito": "A marca **A** está no ligamento que liga o processo transverso de **L5 à crista ilíaca**: o **iliolombar**. A marca **B** aponta a faixa curta que termina na **espinha isquiática**: o **sacroespinhoso**. O par é a alternativa A.\n\nAs duas estruturas ligam regiões diferentes. O iliolombar conecta a coluna à pelve; sua tração pode explicar uma avulsão do processo transverso de L5 no trauma do anel. O sacroespinhoso parte da região sacrococcígea e ajuda a separar os forames isquiáticos. Ao seguir cada faixa até o osso de chegada, o desenho deixa de ser uma coleção de nomes semelhantes (Rockwood, 10ª ed., cap. 50, “Anatomia e biomecânica”).\n\n**B não desce ao túber isquiático.** Essa seria a inserção do sacrotuberoso, a faixa mais larga e superficial. Já os sacroilíacos anteriores ficam na face anterior da articulação entre sacro e ílio, sem reproduzir a ligação superior entre L5 e crista marcada por A.\n\nA função também ajuda a orientar: iliolombar transmite forças entre coluna e pelve; sacroespinhoso oferece estabilidade posterior acessória; o complexo posterior e interósseo sacroilíaco é a sustentação principal do anel.",
+   "correta": "**A: iliolombar; sacroespinhoso.** A primeira faixa chega de L5 à crista, e a segunda termina na espinha isquiática. A ordem e a inserção precisam ser conferidas separadamente.",
+   "incorretas": {
+    "B": "**Acerta A e alonga indevidamente o destino de B.** O sacrotuberoso vai ao túber, enquanto a marca B está na estrutura curta da espinha isquiática.",
+    "C": "**Acerta B, mas troca a ligação superior.** A não aponta a face anterior da sacroilíaca; mostra a conexão do processo transverso de L5 com a crista, própria do iliolombar.",
+    "D": "**Troca os dois destinos.** A é a conexão lombar com a crista; B é o ligamento da espinha. Sacroilíaco anterior e sacrotuberoso ocupam outras relações no desenho."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel; Classificação de YOUNG e BURGESS."
+   ],
+   "conferido": false,
+   "alerta": "A distinção exata entre os ligamentos sacroespinhoso e sacrotuberoso na figura (ambos se estendem do sacro à região do ísquio, um mais superficial que o outro) pode gerar dúvida dependendo do ângulo exato da imagem, mantivemos aqui a leitura mais consistente com o gabarito oficial."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Anatomia e biomecânica do anel",
+     "Classificação de YOUNG e BURGESS"
+    ],
+    "blocos": [
+     "anatomia-e-biomecanica-do-anel-9eb66b24",
+     "classificacao-de-young-e-burgess-3830ff73",
+     "anatomia-e-biomecanica-do-anel-13360708"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "0eba5808b995d13a9fe7bd67cfef8fbb1898294d8684e769b893ff05ecc0e457"
+   }
+  ],
+  "imagensConferidas": [
+   "quadril/quadril-0219-1.png"
+  ]
+ },
+ "quadril-0668": {
+  "questaoSha256": "3b4db9c8fda425ed54b1928f78f90d20b66fc65f15286a01028d62bfbc3facb8",
+  "comentarioAnteriorSha256": "e11a3c0f29259f0aa2c8702aeb1c2ad2cd1a13175e2a1029f33b6e80d1e90961",
+  "comentario": {
+   "conceito": "A faixa curta assinalada chega à **espinha isquiática**, por baixo da grande faixa que segue ao túber. É o **sacroespinal ou sacroespinhoso**, alternativa B, visto pela face posterior.\n\nO contraste útil é com o **sacrotuberoso**: este é mais largo e superficial e termina no túber isquiático. O sacroespinhoso é curto e participa da separação dos forames isquiáticos maior e menor. Seguir a inserção permite reconhecer a estrutura mesmo quando parte dela fica encoberta (Rockwood, 10ª ed., cap. 50, “Quem segura o anel”).\n\nNo alto, o iliolombar conecta L5 à crista; perto da sacroilíaca, os ligamentos posteriores e interósseos unem os componentes do anel e contêm deslocamentos verticais e posteriores. Essas posições ajudam a eliminar opções que têm função estabilizadora real, mas não correspondem à seta.\n\n**O ligamento da seta é acessório, não toda a estabilidade posterior.** A importância mecânica do setor posterior não deve ser atribuída a uma única faixa porque ela é fácil de ver na imagem.",
+   "correta": "**B: sacroespinal.** A posição curta e profunda e a inserção na espinha isquiática correspondem à definição do resumo.",
+   "incorretas": {
+    "A": "**O iliolombar fica mais superior.** Liga o processo transverso de L5 à crista ilíaca; não termina na espinha isquiática assinalada.",
+    "C": "**O sacrotuberal é a faixa longa até o túber.** Sua posição superficial ajuda a entender por que o ligamento curto pode aparecer apenas em parte, mas não muda o destino de cada um.",
+    "D": "**O complexo sacroilíaco posterior fica junto à articulação.** Ele é central para sustentar o anel, mas não corresponde à faixa que parte do sacro/cóccix e chega à espinha."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Anatomia e biomecânica do anel"
+    ],
+    "blocos": [
+     "anatomia-e-biomecanica-do-anel-9eb66b24",
+     "anatomia-e-biomecanica-do-anel-13360708"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+   }
+  ],
+  "imagensConferidas": [
+   "quadril/quadril-0668-1.jpeg"
+  ]
+ },
+ "trauma-0316": {
+  "questaoSha256": "bcc367d038f5e46032a04303d1f70d686a883035f74d4a593dba339517466a31",
+  "comentarioAnteriorSha256": "5addd1df702fd80f687d22af3c0e020ad511e0516fc72d6f05eaaa7c5840433d",
+  "comentario": {
+   "conceito": "O corte axial mostra um traço que alcança o **forame sacral**, em vez de ficar restrito à asa lateral ou entrar no canal central. Pela classificação de **Denis**, isso corresponde à **zona II**, alternativa B.\n\nA referência são os forames: **I lateral**, **II transforaminal**, **III medial com envolvimento do canal**. O trajeto pode começar lateralmente; o ponto que o relaciona ao forame é o que exige atenção na leitura deste corte (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\nA zona II tem risco neurológico relevante, cerca de 30% no resumo. A TC deve procurar fragmentos no forame e definir se a fratura é completa, enquanto o exame documenta força, sensibilidade e função sacral. A imagem isolada não prova que o paciente tenha déficit.\n\n**Zona anatômica não escolhe sozinha o tratamento.** Desvio, continuidade anterior/posterior, lesão anterior do anel e compressão neural modificam o planejamento. A classificação localiza o traço e organiza o risco, sem substituir a avaliação completa.",
+   "correta": "**B: zona 2.** O traço cruza a região foraminal, o marco anatômico da zona II. Não permanece apenas na asa e não é definido como traço do canal.",
+   "incorretas": {
+    "A": "**Zona I fica lateral aos forames.** Uma fratura restrita à asa não teria a relação transforaminal mostrada. O começo lateral do traço não basta para classificá-lo como I.",
+    "C": "**Zona III alcança a região medial e o canal.** Não é sinônimo de qualquer fratura grave ou desviada; a classificação depende da relação anatômica, que aqui aponta o forame.",
+    "D": "**Denis tem três zonas.** A alternativa IV não integra o sistema descrito. Não se cria uma quarta zona para uma fratura com extensão ou cominuição."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Fixação do anel posterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fraturas do sacro",
+     "Fixação do anel posterior"
+    ],
+    "blocos": [
+     "fraturas-do-sacro-f07d590a",
+     "fraturas-do-sacro-96ec0312",
+     "fraturas-do-sacro-66c993cf",
+     "fixacao-do-anel-posterior-3552d5cd"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "b839452217b02cedd4336b45751cd7703131968cf5355c6b05840fe5b89bbb09"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0316-1.jpeg"
+  ]
+ },
+ "trauma-0956": {
+  "questaoSha256": "125cdad90b45b6f79494d8b5528780de91ec59860a1afe8e7a2387d5cbb8547f",
+  "comentarioAnteriorSha256": "0dc9c751528754554fe92fe0b8328d7b3c97944d6d366e04669046474dc4eb72",
+  "comentario": {
+   "conceito": "O traço visível no corte sacral passa pela **região do forame**, correspondendo à **zona II de Denis**, alternativa B. O enunciado está incompleto depois de “segundo”; a interpretação se apoia nas alternativas por zonas e na anatomia mostrada, sem alterar o texto original.\n\nNa classificação, zona I fica na asa lateral aos forames, II passa por eles e III alcança a região medial e o canal. É necessário seguir o traço, não escolher o tipo apenas pela aparência de desvio ou pela quantidade de osso quebrado (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\nA localização foraminal explica o risco de raízes sacrais, que chega a aproximadamente 30% no grupo descrito. O déficit precisa ser procurado no exame; não pode ser afirmado apenas porque o traço atravessa o forame.\n\nA TC completa também avalia continuidade das corticais, desvio e associação com o anel anterior. Essas informações influenciam estabilidade e tratamento, enquanto o número de Denis responde à localização relativa aos forames.",
+   "correta": "**B: zona 2.** A relação transforaminal da fratura é o marco correspondente. A escolha identifica a anatomia da imagem, sem completar artificialmente o enunciado.",
+   "incorretas": {
+    "A": "**Zona I é lateral ao forame.** A presença do componente transforaminal impede reduzir a classificação à asa, mesmo que parte do traço esteja nela.",
+    "C": "**Zona III é medial, com entrada no canal.** Gravidade ou desvio não bastam para escolhê-la; é necessário demonstrar essa localização, em vez da relação foraminal destacada aqui.",
+    "D": "**Não há zona IV no sistema de Denis.** As três zonas se organizam pela relação com forames e canal. Uma imagem mais complexa não acrescenta outra categoria."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro."
+   ],
+   "conferido": false,
+   "alerta": "B oficial preservada. O enunciado termina após “segundo”, sem nomear o sistema; as alternativas em zonas e a imagem permitem a discussão por Denis. O texto da questão foi mantido intacto."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fraturas do sacro"
+    ],
+    "blocos": [
+     "fraturas-do-sacro-f07d590a",
+     "fraturas-do-sacro-96ec0312",
+     "fraturas-do-sacro-66c993cf"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "57600b95ad990736639a4fcb3264f5cdffbd5da7ae48dbd1b7eba1d37085a598"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0956-1.png"
+  ]
+ },
+ "trauma-1499": {
+  "questaoSha256": "0b9974b76dd30eeef8afcda847fd48ebd661cb326779c6cfaa637d4bdbb2a970",
+  "comentarioAnteriorSha256": "450c9cbe8ff3c62ef032075f2767a4942080fce286463f58cc780ae3152c6fdc",
+  "comentario": {
+   "conceito": "A seta mostra um **fragmento no forame de S1** associado ao traço vertical do sacro. A combinação é **zona II de Denis e risco neurológico de cerca de 30%**, alternativa B.\n\nZona II significa passagem pelos forames. Na zona I, a lesão fica na asa lateral; na III, alcança a região medial e o canal. A comparação ajuda a não chamar todo fragmento neuralmente próximo de “zona III”: o próprio forame já define um risco importante sem que se trate de lesão central (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\n**Trinta por cento é uma frequência de grupo.** O fragmento mostrado exige correlacionar exame neurológico e compressão, mas a imagem não demonstra por si uma paralisia. Na fixação, o resumo orienta tratar fragmentos que ameacem a raiz antes da compressão e ter cuidado com parafusos que estreitem uma fratura foraminal cominuta.\n\nA indicação e a técnica dependem ainda de redução, estabilidade e padrão completo. A classificação e a taxa de risco não substituem essa análise.",
+   "correta": "**B: zona II; cerca de 30%.** O fragmento está no forame, e a taxa coincide com a descrição do grupo transforaminal no resumo.",
+   "incorretas": {
+    "A": "**A zona I fica fora dos forames.** O fragmento indicado não permite classificar a lesão como asa lateral isolada. Também não é necessário presumir uma taxa exata de zona I para distinguir o local.",
+    "C": "**A faixa de até 60% pertence à zona III medial/canal.** Aqui a seta identifica envolvimento do forame, correspondendo à zona II. O risco relevante não autoriza mudar a localização.",
+    "D": "**A zona está correta, a taxa foi exagerada.** O resumo informa aproximadamente 30% para II, não acima de 80%. Uma imagem preocupante não altera a frequência publicada do grupo."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Fixação do anel posterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fraturas do sacro",
+     "Fixação do anel posterior"
+    ],
+    "blocos": [
+     "fraturas-do-sacro-96ec0312",
+     "fraturas-do-sacro-f07d590a",
+     "fixacao-do-anel-posterior-3552d5cd",
+     "fixacao-do-anel-posterior-3d224c85"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "9de685509ffad37f3245ad6bc8182ffca6203e3cab04837d84a9ed5c831174c9"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1499-1.jpeg"
+  ]
+ },
+ "trauma-1511": {
+  "questaoSha256": "f5b81a56e4a88bf978f714cfd985ad6f79e3ffe50131e58aa8bd1e9e9c95b096",
+  "comentarioAnteriorSha256": "82cf1d29d5fd3984cb7d56af6dd7f4a90e7b16fc4377cd29cefe378d6d3cdbb4",
+  "comentario": {
+   "conceito": "A seta azul marca a **densidade cortical do ilíaco**, referência da asa sacral onde repousa **L5**, alternativa C. O instrumental deve ficar **posterior a esse marco** no perfil para respeitar o limite anterossuperior do corredor.\n\nO perfil do sacro reúne os limites que precisam ser compreendidos em conjunto. Atrás da densidade cortical fica a região de passagem planejada; mais posteriormente está o túnel de S1, que também deve ser evitado. Inlet confere cortical anterior e outlet mostra forames e placa terminal (Rockwood, 10ª ed., cap. 50, “O parafuso iliossacral”).\n\n**As setas não são intercambiáveis.** As pretas apontam a borda do túnel de S1; a vermelha, a incisura isquiática. São marcos importantes, mas o azul identifica o limite relacionado à asa e à raiz de L5.\n\nA imagem não torna seguro seguir uma linha fixa em todo paciente. Dismorfismo, redução imperfeita e corredores estreitos mudam o trajeto; o planejamento pela TC e a alternância de projeções precisam confirmar a passagem antes de avançar.",
+   "correta": "**C: densidade cortical do ilíaco, relacionada à asa e a L5.** É o marco azul. O instrumental permanece atrás dele e à frente do túnel de S1, respeitando um corredor, não apenas uma linha.",
+   "incorretas": {
+    "A": "**É o marco das setas pretas.** O túnel de S1 protege a raiz nesse nível e impõe outro limite à instrumentação. Não corresponde à estrutura azul situada mais anteriormente.",
+    "B": "**A incisura é indicada pela seta vermelha.** Vasos e nervos passam pela região isquiática, mas essa referência inferior não é a densidade cortical assinalada em azul.",
+    "D": "**O promontório e os grandes vasos definem outra relação anterior.** A seta azul é o marco da asa relacionado a L5. Confundi-los apagaria a diferença entre limite ósseo do corredor e estruturas à frente do sacro."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel posterior"
+    ],
+    "blocos": [
+     "fixacao-do-anel-posterior-cd893461",
+     "fixacao-do-anel-posterior-972aa15f",
+     "fixacao-do-anel-posterior-667be55c",
+     "fixacao-do-anel-posterior-9fa25c75",
+     "fixacao-do-anel-posterior-a1e506e3"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "490dfc660152cfd0eb2e37dc56fd946a34d5484a137be5468e2e975dc791aec1"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1511-1.jpeg"
+  ]
+ },
+ "trauma-0580": {
+  "questaoSha256": "603180b090b00681dad3de40987c041e0d85f119bac18bdf08547ea0311b56f8",
+  "comentarioAnteriorSha256": "9f6caa1271260e88339cfa530780a244a60f70616ab904e2811aa4c754854761",
+  "comentario": {
+   "conceito": "A raiz particularmente vulnerável na passagem do **parafuso iliossacral** é **L5**, alternativa B. Ela repousa na face anterior da asa e pode ser atingida se o instrumental escapar do corredor ósseo.\n\nO risco pode existir do lado da fixação e também do lado oposto em um trajeto longo que sai anteriormente. A segurança depende de redução e de imagens complementares: inlet controla a cortical anterior; outlet, forames e placa terminal; perfil relaciona a densidade cortical do ilíaco ao túnel de S1 (Rockwood, 10ª ed., cap. 50, “O parafuso iliossacral”).\n\n**Não basta saber que o parafuso está no nível S1.** O nome do segmento ósseo não determina qual raiz está mais exposta sobre a asa. Essa diferença entre nível de fixação e estrutura adjacente é o centro da pergunta.\n\nO exame neurológico deve ser documentado antes da cirurgia e comparado depois. Um déficit novo correspondente a parafuso ou fragmento comprimindo raiz exige investigação por imagem e pode mudar a conduta; não deve ser atribuído automaticamente ao trauma original.",
+   "correta": "**B: raiz de L5.** Sua posição anterior sobre a asa explica a vulnerabilidade ao escape do parafuso. Conferir o corredor em mais de uma projeção é essencial.",
+   "incorretas": {
+    "A": "**L4 não é a raiz descrita sobre a asa nesse trajeto.** A referência anatômica específica do resumo é L5; escolher qualquer raiz lombar por proximidade não resolve a pergunta.",
+    "C": "**O feixe femoral é relevante em outras construções anteriores.** O resumo alerta para compressão pela haste profunda do INFIX, por exemplo. Essa relação não substitui a raiz de L5 junto ao corredor sacral.",
+    "D": "**O ciático sai pela incisura isquiática maior.** É uma estrutura importante em trauma e abordagens posteriores, mas a raiz sobre a asa ameaçada pelo escape iliossacral é L5."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior; Anatomia e biomecânica do anel; Fixação do anel anterior; Pós-operatório, resultados e complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel posterior",
+     "Anatomia e biomecânica do anel",
+     "Fixação do anel anterior",
+     "Pós-operatório, resultados e complicações"
+    ],
+    "blocos": [
+     "fixacao-do-anel-posterior-9fa25c75",
+     "fixacao-do-anel-posterior-cd893461",
+     "fixacao-do-anel-posterior-972aa15f",
+     "fixacao-do-anel-posterior-667be55c",
+     "anatomia-e-biomecanica-do-anel-7aed120d",
+     "fixacao-do-anel-anterior-77e6d0e3",
+     "pos-operatorio-resultados-e-complicacoes-22b687d7"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "a53ad89a1453e1cca50bef5bc019b53cd9a52792dba46f79fbfa27b8f941e37d"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0814": {
+  "questaoSha256": "05cbdb0f302c00a2c2def394d82a0d2cd425405de8eb32f95425c8839aa7da79",
+  "comentarioAnteriorSha256": "995e18226fde71186cf1d01cbd464fc957f70e921904756fa0ec1e66bf3a6692",
+  "comentario": {
+   "conceito": "Quanto mais o traço se aproxima da região medial e do canal sacral, maior o risco neurológico. Por isso a zona de Denis mais associada à lesão neural é a **III**, alternativa C.\n\nA zona I fica lateral aos forames e é a mais frequente, com risco baixo. A II passa pelos forames e tem cerca de 30% de déficit no resumo. A III alcança o canal e chega a 60%, ameaçando raízes e cauda equina (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\n**Maior risco não significa maior número de fraturas.** A zona III é a menos comum, mas sua relação com o canal torna o déficit mais provável dentro desse grupo. Também é heterogênea, com traços verticais, oblíquos ou horizontais.\n\nO exame deve procurar não só movimento dos membros, mas também função perineal e esfincteriana quando pertinente. Cortes finos e reconstrução sagital ajudam a reconhecer lesões transversas que não ficam claras num axial isolado.",
+   "correta": "**C: III.** É a região medial/canal, com a maior frequência de lesão neurológica descrita. A escolha depende do risco do grupo, não da prevalência geral das fraturas.",
+   "incorretas": {
+    "A": "**É a mais comum, mas de menor risco neural.** A localização na asa lateral aos forames a distingue da zona central. Frequência de fratura e frequência de déficit são critérios diferentes.",
+    "B": "**Tem risco importante, sem ser o maior.** Cerca de 30% é o valor da zona transforaminal, abaixo dos até 60% da zona III.",
+    "D": "**A classificação descrita tem três zonas.** Não existe zona IV de Denis para ampliar a escala de gravidade. O risco deve ser interpretado dentro de I, II e III."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Exame físico, fratura exposta e lesão de partes moles."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fraturas do sacro",
+     "Exame físico, fratura exposta e lesão de partes moles"
+    ],
+    "blocos": [
+     "fraturas-do-sacro-f07d590a",
+     "fraturas-do-sacro-96ec0312",
+     "fraturas-do-sacro-7d626e05",
+     "exame-fisico-fratura-exposta-e-lesao-de-partes-m-e2a7ba15"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "98396bc3aa2cdcb1b236bfc3f50dfaabe86da98a728e74cc931c04164a466587"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0892": {
+  "questaoSha256": "452ae4f7bd903a7c99d7e4fe102628d34a66b5a399d0dd18bd597dccc75bdd40",
+  "comentarioAnteriorSha256": "614ee1bff0d81f828691498e710348f1c4935e900b67d5bdd2c168f62b372f85",
+  "comentario": {
+   "conceito": "A **coluna posterior** do acetábulo aparece melhor na **oblíqua ilíaca, ou alar**, alternativa A. A incidência abre a asa do ilíaco e perfila a borda posterior do inominado, com as incisuras isquiáticas.\n\nNas oblíquas de Judet, cada projeção mostra uma coluna e a parede do lado oposto. A **ilíaca** mostra coluna posterior e parede anterior; a **obturatriz**, coluna anterior e parede posterior. Confundir **parede posterior com coluna posterior** é o caminho mais fácil para trocar a resposta (Rockwood, 10ª ed., cap. 51, “Oblíqua ilíaca e oblíqua obturatriz”).\n\nAs colunas sustentam a superfície articular como um Y invertido; as paredes são porções marginais delas. Essa diferença explica por que uma vista excelente para a borda posterior não é a mesma que perfila a coluna com sua extensão até o ísquio.\n\nTC 2D e 3D complementam a leitura e ajudam a planejar. Quando é difícil rodar o politraumatizado, reconstruções que imitam as oblíquas podem ser úteis; isso não dispensa conhecer os marcos nas radiografias e na radioscopia.",
+   "correta": "**A: alar.** É a oblíqua ilíaca, que perfila a coluna posterior. A parede posterior é melhor estudada na oblíqua obturatriz, uma estrutura e uma projeção diferentes.",
+   "incorretas": {
+    "B": "**Outlet é dirigida ao anel pélvico e ao sacro.** Favorece forames e alturas relativas das hemipelves, sem ser a projeção que perfila a coluna posterior acetabular.",
+    "C": "**Mostra a parede posterior e a coluna anterior.** O termo “posterior” é verdadeiro para a borda, mas não para a coluna inteira pedida. A distinção anatômica entre parede e coluna resolve o distrator.",
+    "D": "**Inlet privilegia rotação e translação anteroposterior do anel.** Ela complementa a outlet no trauma pélvico, mas não substitui a oblíqua ilíaca para a coluna posterior do acetábulo."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Radiografias: as seis linhas do AP e as oblíquas de JUDET; Anatomia aplicada: colunas, paredes, teto e vasos.",
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Imagem."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+     "Anatomia aplicada: colunas, paredes, teto e vasos"
+    ],
+    "blocos": [
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-4d1283f9",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+     "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f7b6d4e4"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "8cbb224e4293d54a646bdee0073b82f5c10b2c673c92815ae450cb165b8c71b4"
+   },
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Imagem"
+    ],
+    "blocos": [
+     "imagem-0a1f5cef"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "8864d2b1355c7649bd546457d5bfec450d8d48dee79ff7a3b029b9ece6990508"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}
