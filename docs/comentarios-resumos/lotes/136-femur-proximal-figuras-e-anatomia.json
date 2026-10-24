@@ -1,0 +1,463 @@
+{
+ "quadril-0040": {
+  "questaoSha256": "ed6dbf70fa5898c08ae9e04f796aa272662abc89369f20e1eea718a592848133",
+  "comentarioAnteriorSha256": "37904ec927c8f334287df99850afd32b716cd2d4102468f36a55ace4630397a6",
+  "comentario": {
+   "conceito": "O ramo profundo da circunflexa femoral medial aparece posteriormente **entre o quadrado femoral e o gêmeo inferior**, alternativa A. A relação precisa ser seguida ao longo do trajeto, pois a artéria passa perto de outros rotadores em pontos diferentes.\n\nO resumo descreve sua passagem pela borda inferior do obturador externo, a emergência posterior entre quadrado e gêmeo inferior e, depois, seu caminho à frente do tendão conjunto até perfurar a cápsula. Dali partem os retinaculares superiores que sobem pelo colo e irrigam a zona de carga da cabeça (Rockwood, 10ª ed., cap. 53, “Irrigação da cabeça femoral”).\n\n**Passar perto não é emergir no mesmo intervalo.** Confundir a relação com o obturador externo ou com a cápsula acima dos gêmeos desloca o marco procurado. Essa anatomia explica por que liberar o quadrado do lado femoral ou dissecar abaixo do gêmeo inferior pode comprometer o pedículo.\n\nNa via posterior, preservar sangue e proteger o ciático são tarefas diferentes. Saber onde a artéria aparece ajuda a planejar a liberação dos rotadores sem tratar todo o espaço posterior como um plano livre.",
+   "correta": "**A: quadrado femoral e gêmeo inferior.** É o intervalo posterior explicitamente descrito pelo resumo, antes de a artéria seguir junto ao tendão conjunto e entrar na cápsula.",
+   "incorretas": {
+    "B": "**Troca o gêmeo que limita a emergência posterior.** O resumo situa o vaso junto ao gêmeo inferior nesse ponto, não ao superior. A passagem capsular mais proximal é outro trecho do trajeto.",
+    "C": "**Mistura uma relação verdadeira com outro intervalo.** A artéria passa pela borda inferior do obturador externo, mas a emergência posterior perguntada é entre quadrado femoral e gêmeo inferior. As duas etapas não devem ser fundidas.",
+    "D": "**Reúne marcos de trechos diferentes.** Obturador externo e região acima do gêmeo superior aparecem na descrição do caminho, mas não formam o par da emergência posterior. O ponto decisivo continua sendo o intervalo quadrado e gêmeo inferior."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada.",
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Anatomia aplicada"
+    ],
+    "blocos": [
+     "anatomia-aplicada-a8c38522"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "ffb43352ad2ef6dc7e6410299709a955f92195d9fdd2fea826f5afcae380c061"
+   },
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "vias-de-acesso-de09a49f"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "6d969067e8d6e0e043cdb68cec7419a4ab01bc2824428fb35bcabcb0c0cc3b7f"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "quadril-0640": {
+  "questaoSha256": "2367da9bd9149c8100075f84646012b1825f3ec5ba77592ce3c8306f2a3d6f09",
+  "comentarioAnteriorSha256": "15e018a3926d8ce296ece5e079cefa6db0cd2242263a8e89b2ea5475900fa368",
+  "comentario": {
+   "conceito": "A **corona mortis** deve ser procurada e controlada na via **Stoppa modificada**, alternativa B. O acesso intrapélvico segue a borda pélvica e o ramo superior, onde as comunicações vasculares podem cruzar a dissecção.\n\nO nome descreve comunicações entre o sistema **ilíaco externo, incluindo a epigástrica inferior, e o obturatório**, ou uma origem obturatória anômala externa. Na descrição do Stoppa, o resumo orienta identificar e ligar as anastomoses; isso exige reconhecer o trajeto antes de aprofundar ou afastar estruturas (Rockwood, 10ª ed., cap. 51, “Stoppa modificado”).\n\n**Os outros acessos trabalham em planos diferentes.** Hardinge é lateral direto, dividindo a porção anterior do glúteo médio; Gibson modificada usa o intervalo entre glúteo máximo e tensor; Kocher-Langenbeck expõe a coluna posterior. A escolha decorre do campo anatômico, não de qual via é mais conhecida.\n\nControlar a anastomose não significa ligar às cegas qualquer vaso do ramo. A aula descreve a corona mortis da fonte e não presume que um tronco arterial único possa ser sacrificado sem avaliar sua anatomia.",
+   "correta": "**B: Stoppa modificada.** A borda pélvica e o ramo superior ficam no campo intrapélvico; reconhecer as comunicações vasculares evita lesão durante essa dissecção.",
+   "incorretas": {
+    "A": "**Hardinge é lateral direto.** O resumo do colo descreve divisão do glúteo médio com continuidade pelo vasto lateral e atenção ao glúteo superior. Esse plano não é a dissecção intrapélvica sobre o ramo superior.",
+    "C": "**Gibson modificada usa um intervalo lateral/posterior.** Ela poupa a divisão proximal do glúteo máximo ao passar junto ao tensor da fáscia lata. Não corresponde ao corredor interno da pelve onde se procura a corona mortis.",
+    "D": "**Kocher-Langenbeck é a via posterior do acetábulo.** Dá acesso à face lateral da coluna posterior e exige proteção do ciático e da irrigação da cabeça. A corona mortis do ramo superior é a preocupação do campo anterior intrapélvico."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Anatomia aplicada: colunas, paredes, teto e vasos; Vias de acesso.",
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Fratura desviada no idoso."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Anatomia aplicada: colunas, paredes, teto e vasos",
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "anatomia-aplicada-colunas-paredes-teto-e-vasos-16dc66a6",
+     "vias-de-acesso-09c0da47",
+     "vias-de-acesso-1cf3c6fc",
+     "vias-de-acesso-9e3b54ba"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "d58f9d8c1cd29f2a5d87b9afba092df5cc1849b2dca9b1971a1c21eca40aefdd"
+   },
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Fratura desviada no idoso"
+    ],
+    "blocos": [
+     "fratura-desviada-no-idoso-1d56bc28"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "ca44fc30a6c23604b91408e86f8abc060fe7a8dcde02cb3656546bc30ceffb29"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1140": {
+  "questaoSha256": "84e4f0ee022e80fc826c268c7469e40fb50719ef6efd995de76b149adaf75ca7",
+  "comentarioAnteriorSha256": "48705a7f22ffb351564f740e4613b54fe2fd5f3ddb174b59a7e7df5305830a21",
+  "comentario": {
+   "conceito": "Para a fratura **anterior com hemitransversa posterior**, a via habitual é **anterior**, como a **ilioinguinal**, alternativa B. Como não há gabarito oficial no acervo, B é uma resposta provável pela bibliografia, não uma letra da banca confirmada.\n\nO componente anterior é reduzido pela face interna da pelve; a parte posterior, frequentemente menos desviada, pode ser controlada indiretamente. O resumo também admite Stoppa com janela lateral. Se a coluna posterior não reduz adequadamente pela frente, pode-se acrescentar Kocher-Langenbeck em sequência (Rockwood, 10ª ed., cap. 51, “Técnica por tipo”).\n\n**“Anterior” não torna todas as vias equivalentes.** Smith-Petersen e Hueter são citadas no resumo do colo como vias para redução aberta da fratura do colo, com capsulotomia. A ilioinguinal trabalha na face interna do inominado e não abre de rotina a articulação íntegra.\n\nO padrão de fratura e o local do maior desvio definem o corredor útil. Não se escolhe uma via posterior só porque o nome do padrão contém a palavra hemitransversa posterior.",
+   "correta": "**B: ilioinguinal, provável pela fonte.** É uma das vias anteriores recomendadas para esse padrão, permitindo restaurar a coluna anterior e reduzir o componente posterior indiretamente.",
+   "incorretas": {
+    "A": "**Pode complementar, mas não é a preferência habitual desse padrão.** Kocher-Langenbeck expõe diretamente a coluna posterior. Torna-se necessária se o componente posterior não puder ser reduzido pela frente, em vez de substituir automaticamente a abordagem anterior.",
+    "C": "**É anterior, mas tem outro alvo na comparação consultada.** O resumo do colo usa Smith-Petersen para redução aberta com capsulotomia. Isso não a torna a via ilioinguinal para reconstruir o contorno interno do acetábulo.",
+    "D": "**Também não é sinônimo de ilioinguinal.** Hueter aparece como opção anterior para abrir o colo quando a redução fechada falha. O padrão acetabular perguntado tem recomendação própria de ilioinguinal ou Stoppa com janela lateral."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Técnica por tipo de fratura; Vias de acesso.",
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Fratura desviada no jovem."
+   ],
+   "conferido": false,
+   "alerta": "Sem gabarito oficial no acervo. Provável B, sustentada pelo resumo 51 para anterior com hemitransversa posterior; as vias de redução aberta do colo foram comparadas com o corpo do resumo 53.",
+   "provavel": "B"
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-51-acetabulo",
+    "titulo": "Fraturas do acetábulo",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 51 · Acetabulum Fractures",
+    "secoes": [
+     "Técnica por tipo de fratura",
+     "Vias de acesso"
+    ],
+    "blocos": [
+     "tecnica-por-tipo-de-fratura-0a978367",
+     "vias-de-acesso-4092e3ed",
+     "vias-de-acesso-9e3b54ba"
+    ],
+    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+    "trechosSha256": "940221ae282543ec5bb4c608b6c1d04dc259d242a9de01fc7d5dc60690ba11b9"
+   },
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Fratura desviada no jovem"
+    ],
+    "blocos": [
+     "fratura-desviada-no-jovem-43725930"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "9320d184839f947f337ab0b64bd7c4e3fb7454deb95265a062280939caa69b5c"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0439": {
+  "questaoSha256": "293cb1514f0d5c1f8548d4e87aee56d0b36d4d96d429e9ce35e75d84ec5f7dd3",
+  "comentarioAnteriorSha256": "161bd9c86c257be784d060be23d4ff485dd2af9e2b17608b6e2c2665c1bf3be2",
+  "comentario": {
+   "conceito": "No esquema, **A aponta a área pobre em trabéculas do triângulo de Ward**, e **B o reforço posteromedial do calcar, descrito como arco de Adam**. O par é a alternativa A.\n\nAs trabéculas seguem linhas de carga, deixando uma região relativamente vazia entre os feixes. Esse espaço é o triângulo; o arco é uma estrutura de osso forte, não outra área vazia. Com a idade, a cortical afina e a trama trabecular diminui, enquanto a cominuição posteromedial pode retirar o apoio do calcar (Rockwood, 10ª ed., cap. 54, “Arquitetura do fêmur proximal”).\n\n**A forma e a posição decidem mais que os epônimos.** Na seta superior vê-se o intervalo entre feixes; na inferior, a região de suporte medial. Confundir os nomes também confunde rarefação relativa com sustentação óssea.\n\nA figura permite identificar as estruturas, mas não mede densidade óssea nem demonstra uma fratura. Não se deve atribuir osteoporose ou instabilidade a um paciente apenas por esse desenho.",
+   "correta": "**A: Ward e Adam.** A primeira seta está no espaço entre feixes, e a segunda no reforço posteromedial. São exatamente os dois nomes atribuídos pelo texto anatômico.",
+   "incorretas": {
+    "B": "**Acerta o arco e troca o triângulo.** A região pobre em trabéculas é chamada de Ward no resumo. Reconhecer Adam em B não valida o nome Kaplan para A.",
+    "C": "**Acerta Ward e perde o marco de suporte.** O reforço posteromedial é o calcar, descrito como arco de Adam, não arco de Kaplan. A alternativa mistura uma identificação correta com outra indevida.",
+    "D": "**Troca os dois nomes sem mudar a anatomia apontada.** A continua sendo a área entre feixes de Ward, e B o arco de Adam. Não é preciso inventar uma estrutura chamada Kaplan para explicar os distratores."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Anatomia e forças deformantes."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Anatomia e forças deformantes"
+    ],
+    "blocos": [
+     "anatomia-e-forcas-deformantes-81f07f93"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "41b14bda7574815fcb93895807ec2bbff21a3beee9224e3a1bd475af9737cc5b"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0439-1.jpeg"
+  ]
+ },
+ "trauma-1539": {
+  "questaoSha256": "63b1d32639d76c6bcc54cbd33ddd9e15d2e5da57397f90788e2b57e1c4f286fd",
+  "comentarioAnteriorSha256": "ff8d8a0f520c120ebdf3cc97a5404bd7bb8be2997605fb8b7ba1e3e067bd49ee",
+  "comentario": {
+   "conceito": "As linhas azuis acompanham as **curvas corticais em S da junção cabeça-colo**. Esse é o **sinal de Lowell**, alternativa B. O painel de boa redução mantém transições suaves; o de má redução apresenta mudança do contorno, com achatamento de um lado e angulação do outro.\n\nA finalidade é verificar se cabeça e colo foram realinhados nas incidências. Uma curva contínua ajuda a reconhecer a redução; a quebra do desenho alerta que o encaixe não foi restaurado, mesmo que uma única vista pareça aceitável (Rockwood, 10ª ed., cap. 53, “Como medir a redução”).\n\n**Garden, Pauwels e Baumgaertner medem outras coisas.** Garden compara trabéculas da cabeça e cortical diafisária para avaliar alinhamento; Pauwels mede a inclinação do traço com a horizontal; a distância ponta-ápice de Baumgaertner avalia a posição do parafuso no AP e perfil.\n\nO desenho não apresenta um parafuso cuja distância se possa medir. O reconhecimento deve partir do que as linhas seguem, e não apenas do nome de um critério usado no mesmo segmento do fêmur.",
+   "correta": "**B: Lowell.** É a leitura das curvas em S no encontro cabeça-colo. A suavidade em todas as vistas, em vez de um ângulo isolado, é a referência ilustrada.",
+   "incorretas": {
+    "A": "**Garden usa outra referência de alinhamento.** Seu índice compara trabéculas compressivas da cabeça com a cortical medial da diáfise, em torno de 160 graus no AP e 180 no perfil. Não é o nome das curvas corticais em S.",
+    "C": "**Pauwels classifica o traço, não a curva após reduzir.** O ângulo é medido entre a fratura e a horizontal; quanto mais vertical, maior o cisalhamento. A imagem pergunta pelo contorno da junção cabeça-colo.",
+    "D": "**Baumgaertner é a distância ponta-ápice.** Soma as distâncias da ponta do parafuso ao ápice da cabeça no AP e no perfil, com alvo até 25 mm no resumo trocantérico. Não há esse implante nem essa medida nas curvas mostradas."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Fratura desviada no jovem; Classificações.",
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Técnica: redução e parafuso cefálico."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Fratura desviada no jovem",
+     "Classificações"
+    ],
+    "blocos": [
+     "fratura-desviada-no-jovem-38a46d78",
+     "classificacoes-0fec7b18"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "f9f6b2a49d5a2b42763261200e3e8fbc5ee778f73440fd1da96fac23e9d883cc"
+   },
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Técnica: redução e parafuso cefálico"
+    ],
+    "blocos": [
+     "tecnica-reducao-e-parafuso-cefalico-b883438a"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "5c5156c16618f7ec31bfb9aad651d20b7397c096625915812b9bfbf90e8525d9"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1539-1.jpeg"
+  ]
+ },
+ "trauma-1541": {
+  "questaoSha256": "de3c997d3f77a89211eab879ea758e2fec8a225e469de574921b2f84ff7d9c12",
+  "comentarioAnteriorSha256": "e0cc4dc71a26a859b788dc9c21b11f9d445a02ce0031792999fd2384f6846f14",
+  "comentario": {
+   "conceito": "A imagem em perfil marca o **posterior tilt**, ou inclinação posterior da cabeça em relação ao colo. O limite associado a maior reoperação após fixação é **20 graus ou mais**, alternativa D.\n\nUma fratura Garden I ou II pode parecer pouco desviada no AP e ainda apresentar inclinação importante no perfil. O resumo descreve a medida entre o eixo do meio do colo e a linha que relaciona o centro da cabeça à fratura; essa informação adicional identifica um grupo de maior risco (Rockwood, 10ª ed., cap. 53, “Inclinação posterior”).\n\nNa revisão citada, a falha foi de 24,4% no grupo acima de 20 graus contra 10,9% abaixo. São resultados de grupos, não previsão individual. A figura ilustra a construção do ângulo; não é necessário presumir, sem medir, que o paciente desenhado tenha exatamente o valor de corte.\n\n**Sem desvio no AP não significa ausência de deformidade no perfil.** É por isso que a segunda incidência pode mudar a avaliação e precisa ser lida antes de escolher o tratamento.",
+   "correta": "**D: posterior; 20 graus.** A direção e o limite precisam estar corretos. O dado é um marcador de maior risco após fixação, e não a afirmação de que todo caso acima dele falhará.",
+   "incorretas": {
+    "A": "**Troca direção e valor.** O parâmetro apresentado é posterior tilt, e o limite de risco do resumo é 20 graus ou mais. Não se trata de um corte anterior de 10 graus.",
+    "B": "**Acerta o número e troca a deformidade.** A associação prognóstica apresentada é da inclinação posterior, não anterior. Ler apenas o valor perde a relação anatômica da medida.",
+    "C": "**Acerta posterior, mas antecipa o corte.** O resumo destaca 20 graus ou mais, não 10, como limite associado ao aumento de reoperação. A orientação correta não valida um limiar diferente."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Classificações; Diagnóstico por imagem."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Classificações",
+     "Diagnóstico por imagem"
+    ],
+    "blocos": [
+     "classificacoes-d27013fb",
+     "diagnostico-por-imagem-95ee383c"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "da04a85d3f5e43ad0e47bd8874cc283cd3bfa275b653ec1297fa3e4fe1a39987"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1541-1.jpeg"
+  ]
+ },
+ "trauma-1542": {
+  "questaoSha256": "21826cae3e70e4fdb5b4ddc2da6295ea1246a756aca3803a0869bc4e1b2a4366",
+  "comentarioAnteriorSha256": "baefbab97d7a0d3abcb1da237d55eed88920616167abda5f550a40592a986898",
+  "comentario": {
+   "conceito": "A fratura está **impactada e incompleta no esquema**, com angulação das trabéculas da cabeça, padrão de **Garden I**, alternativa A. O fragmento não aparece totalmente separado e livre como numa Garden IV.\n\nGarden usa o AP e a relação entre as trabéculas compressivas da cabeça e do acetábulo. O tipo I é incompleto ou, mais tipicamente, impactado em valgo; o II é completo sem desvio; o III, completo parcialmente desviado, com cabeça em varo; e o IV, totalmente desviado (Rockwood, 10ª ed., cap. 53, “Garden”).\n\n**Impactação não é sinônimo de toda fratura sem desvio.** No tipo II, o traço é completo e as trabéculas continuam alinhadas com colo e acetábulo. A angulação e a impacção vistas aqui ajudam a separar os dois tipos.\n\nA classificação em quatro grupos tem concordância limitada entre observadores; a distinção prática entre I/II e III/IV é mais reprodutível. Ainda assim, o perfil deve ser avaliado: chamar Garden I no AP não encerra a análise da estabilidade.",
+   "correta": "**A: Garden I.** A impacção e a angulação trabecular do esquema correspondem ao tipo incompleto/impactado, sem o deslocamento completo dos grupos mais altos.",
+   "incorretas": {
+    "B": "**Garden II é completo sem desvio.** As trabéculas permanecem alinhadas com colo e acetábulo; não é a definição da fratura impactada e angulada representada.",
+    "C": "**Garden III é completo e parcialmente desviado.** A cabeça retida pela dobradiça posterior tende a varo, com perda de alinhamento. Não corresponde ao padrão impactado em valgo do tipo I.",
+    "D": "**Garden IV perdeu completamente o contato.** A cabeça livre pode realinhar as trabéculas com o acetábulo, mas o traço está totalmente desviado. Não é o que o esquema de impacção mostra."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Classificações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Classificações"
+    ],
+    "blocos": [
+     "classificacoes-21223eb4",
+     "classificacoes-12519f03",
+     "classificacoes-113a1994",
+     "classificacoes-1854670c",
+     "classificacoes-6479ca47",
+     "classificacoes-b5e602a1",
+     "classificacoes-d27013fb"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "c4fa47594d8b5536283c47d0a2f9c67dab6880ceedfd2a57383f4028263e2c8b"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1542-1.jpeg"
+  ]
+ },
+ "trauma-1543": {
+  "questaoSha256": "b2826170b78e11b2d4445dfc2f00c19d93080fa12087c6ddabb5bc714cadadcd",
+  "comentarioAnteriorSha256": "b2f253d204a9c6e1052ee3eab04667f209184a4e2ee4222a731b226619de1514",
+  "comentario": {
+   "conceito": "O traço desenhado forma **70 graus com a horizontal**. Isso é **Pauwels III**, um padrão mais comum no **jovem com trauma de alta energia**, alternativa D.\n\nA classificação usa a inclinação do traço: I até 30 graus, II entre 30 e 50, III acima de 50. Quanto mais vertical, maior o componente de cisalhamento e a dificuldade de manter a redução, com mais falha de fixação e pseudartrose. O problema mecânico cresce mesmo sem trocar a carga aplicada (Rockwood, 10ª ed., cap. 53, “Pauwels”).\n\n**A referência é a horizontal, não a diáfise.** O desenho já fornece esse ângulo; comparar 70 com os limites resolve o tipo. O grupo etário vem da epidemiologia descrita, e não pode ser inferido pela silhueta do esquema.\n\nO resumo ressalta a baixa reprodutibilidade e desaconselha uso rotineiro no idoso, em quem o traço tão vertical é menos comum. A classificação tem utilidade especial para entender o desafio mecânico do colo no jovem.",
+   "correta": "**D: III; jovens.** Setenta supera 50 graus e entra no tipo III. A associação mais comum ao jovem de alta energia completa o par.",
+   "incorretas": {
+    "A": "**Tipo I é o traço mais horizontal.** Seu limite é até 30 graus, muito abaixo dos 70 desenhados. O grupo idoso também não é o destaque do tipo vertical no resumo.",
+    "B": "**Tipo II termina em 50 graus.** O ângulo dado já ultrapassou essa faixa. Não se deve chamar um traço muito vertical de intermediário apenas por ocorrer no colo.",
+    "C": "**Acerta o tipo e troca a população típica.** Pauwels III pode ocorrer em diferentes pacientes, mas o capítulo o destaca no jovem com alta energia, e não como o padrão mais comum do idoso."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Classificações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Classificações"
+    ],
+    "blocos": [
+     "classificacoes-0fec7b18"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "295fe647e11ba210f2d9cc7cc7ad365837a8dfcf443e78563e5e430746e76064"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1543-1.jpeg"
+  ]
+ },
+ "trauma-1568": {
+  "questaoSha256": "404cf0c5c5e18779991fe404043b61d307478d0578066f2ad8592bf1adb0926d",
+  "comentarioAnteriorSha256": "143bf90a7d66a15c3a3af23f13b4553d86679e182b47ad1dffb674e1b5d3ee13",
+  "comentario": {
+   "conceito": "O traço vai do **trocânter menor até a cortical lateral**, interrompendo a parede lateral: é **AO/OTA 31-A3**. Para esse padrão, o resumo recomenda **haste cefalomedular**, alternativa D.\n\nA parede lateral funciona como um batente quando o parafuso deslizante permite a impactação. Se ela não contém a fratura, os adutores podem medializar a diáfise, reduzindo contato e offset. A haste, mais próxima do eixo do fêmur e com braço de alavanca menor, limita melhor esse colapso e a medialização nas instáveis (Rockwood, 10ª ed., cap. 54, “Classificação” e “Escolha do implante”).\n\n**A2 não é sinônimo de qualquer fratura com mais de um fragmento.** Nesse grupo, a parede lateral está essencialmente íntegra, embora haja fragmentação trocantérica. Na A3, o traço reverso ou transverso alcança a cortical lateral, como no padrão mostrado.\n\nReconhecer a parede muda a escolha do implante, mas não dispensa reduzir sem varo e posicionar corretamente o parafuso cefálico. A haste não compensa uma redução inadequada.",
+   "correta": "**D: 31-A3; haste cefalomedular.** Une a morfologia com ruptura lateral à recomendação do capítulo para esse grupo instável.",
+   "incorretas": {
+    "A": "**Erra o padrão e escolhe um implante sem o batente lateral necessário.** A2 mantém a parede essencialmente íntegra; o traço mostrado a rompe. O DHS é a escolha típica da A1 estável, não a preferência da A3.",
+    "B": "**O implante pode ser apropriado às instáveis, mas a classificação está trocada.** A haste é recomendada também na A2; isso não transforma em A2 o traço reverso ou transverso com extensão lateral da A3.",
+    "C": "**Acerta A3 e perde a vantagem mecânica da haste.** O parafuso deslizante depende da parede lateral para conter impactação. Com ela rompida, a medialização e o colapso são maiores, e a preferência apresentada é a haste."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Classificação: AO 31A e a parede lateral; Escolha do implante; Técnica: redução e parafuso cefálico."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Classificação: AO 31A e a parede lateral",
+     "Escolha do implante",
+     "Técnica: redução e parafuso cefálico"
+    ],
+    "blocos": [
+     "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+     "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+     "classificacao-ao-31a-e-a-parede-lateral-785664da",
+     "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+     "escolha-do-implante-99aab52e",
+     "escolha-do-implante-ff846328",
+     "tecnica-reducao-e-parafuso-cefalico-f076d68d"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "10609cb8f92094799715b91088ae683be7f8051187a4ff163528afb0c54e366d"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1568-1.jpeg"
+  ]
+ },
+ "trauma-1578": {
+  "questaoSha256": "58affc3364b8081c0947fd942fa86b91e6671e1a5d6c6813c131ef7f6f4d9c65",
+  "comentarioAnteriorSha256": "6e7d38bb33912130b6873797a0bcc1b62a9b82492ee0a005cc83dea4f47f340d",
+  "comentario": {
+   "conceito": "A imagem mostra **medialização da diáfise** após fixação de uma transversa trocantérica com DHS. O parafuso permanece na cabeça; o problema principal apontado é a perda do batente lateral e do apoio entre os segmentos. Para esse padrão A3, a recomendação atual do resumo é **haste cefalomedular**, alternativa D.\n\nSem parede lateral capaz de conter a impactação, o deslizamento deixa de ser controlado e os adutores trazem a diáfise para medial. Perde-se offset e contato ósseo, com piora funcional e maior dificuldade de consolidação. O aspecto é diferente do parafuso cortando a cabeça para cima no cut-out (Rockwood, 10ª ed., cap. 54).\n\n**Uma placa rígida de 95 graus não é a solução preferida desse mecanismo.** O capítulo relata falha elevada dessas montagens nas A3 e sua substituição pela haste. A posição central da haste diminui o braço de alavanca e contém melhor a medialização.\n\nA imagem de falha serve para entender por que classificar o traço e avaliar a parede antes de escolher o implante. Não permite afirmar sozinho consolidação, pseudartrose ou sintomas do paciente.",
+   "correta": "**D: medialização do fêmur; haste cefalomedular.** A mudança de posição da diáfise é o achado da figura, e a haste é a preferência para a transversa/reversa com parede lateral insuficiente.",
+   "incorretas": {
+    "A": "**Nomeia outra falha e propõe uma montagem desfavorável à A3.** Cut-out é corte superior da cabeça durante colapso em varo. A placa de 95 graus não oferece a vantagem da haste e teve falha elevada nesse grupo.",
+    "B": "**Acerta a preferência do implante, mas erra o achado principal.** A figura destaca a diáfise medializada em relação ao segmento proximal. Não é necessário chamar toda falha com DHS de cut-out.",
+    "C": "**Acerta a deformidade e erra a solução preferida.** A medialização está demonstrada, mas o capítulo descreve alta falha das placas rígidas de 95 graus nas A3. A haste é a recomendação atual apresentada."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Classificação: AO 31A e a parede lateral; Escolha do implante; Complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Classificação: AO 31A e a parede lateral",
+     "Escolha do implante",
+     "Complicações"
+    ],
+    "blocos": [
+     "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+     "classificacao-ao-31a-e-a-parede-lateral-785664da",
+     "escolha-do-implante-5f08d4c8",
+     "escolha-do-implante-99aab52e",
+     "complicacoes-41fe2824"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "a2c208a644a80ca3c8eeab32b8b5e9b33f44d193bb196e438b8c723f75edbd22"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1578-1.jpeg"
+  ]
+ }
+}

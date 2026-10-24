@@ -225,15 +225,48 @@
   "conferido": false
  },
  "conceitos-basicos-0018": {
+  "conceito": "Na fratura multifragmentária, o foco não fornece um encaixe cortical confiável para manter comprimento e rotação. Os bloqueios proximal e distal prendem os segmentos à haste e controlam **rotação e encurtamento**, alternativa D.\n\nNo istmo, o ajuste da haste ao canal ajuda a conter o alinhamento. Fora dele e nas fraturas cominutivas, aumenta a dependência dos bloqueios e do planejamento. O resumo lembra que a cominuição ameaçava justamente comprimento e rotação antes de o bloqueio estático se tornar rotina (Rockwood, 10ª ed., cap. 57, “Classificação” e “Bloqueio”).\n\n**Os parafusos não recuperam uma redução que não foi feita.** Comprimento e rotação devem ser acertados antes de bloquear. Na cominuição, o lado contralateral é a referência para medir; seguir apenas as corticais do foco pode deixar o membro curto ou rodado.\n\nA quantidade de parafusos depende da montagem e do padrão; o segundo é útil em fraturas distais, cominuição, osso ruim e carga precoce. A questão pede o controle acrescentado pelo bloqueio, não todos os objetivos da haste como sistema.",
+  "correta": "**D: rotação e encurtamento.** O bloqueio vincula os fragmentos à haste, evitando giro e telescopagem quando o foco cominutivo não oferece contenção suficiente.",
   "incorretas": {
-   "A": "A angulação e a translação já são controladas pela própria haste dentro do canal.",
-   "B": "O encurtamento está certo, mas a angulação é controlada pela haste.",
-   "C": "A rotação está certa, mas a translação é controlada pela haste."
+   "A": "**Descreve alinhamento e deslocamento, mas omite os controles decisivos do bloqueio.** O ajuste da haste no canal e a redução ajudam a orientar o eixo; a instabilidade particular do foco multifragmentário inclui giro e perda de comprimento.",
+   "B": "**Acerta comprimento e troca o outro componente.** O encurtamento é uma ameaça real sem contato cortical. O par que caracteriza a função acrescentada pelos bloqueios é comprimento com rotação, não apenas ângulo.",
+   "C": "**Acerta rotação e deixa de fora a telescopagem.** A translação deve ser corrigida na redução, mas a ausência de apoio cortical permite que os segmentos encurtem ao longo da haste. Esse é o segundo controle pedido."
   },
-  "conceito": "A **haste intramedular** é uma barra metálica colocada dentro do canal do osso, como uma tala interna. Por ocupar o canal, ela sozinha já controla bem duas coisas: impede que o osso **dobre** (angulação) e impede que os fragmentos se desloquem para o lado (**translação**), porque os dois fragmentos estão \"enfiados\" na mesma haste.\n\nMas há duas coisas que a haste sozinha não controla, sobretudo numa fratura **multifragmentar** (com vários pedaços, sem contato firme entre as pontas principais):\n\n**Rotação**: o fragmento pode girar em torno da haste, como um anel girando num dedo.\n\n**Encurtamento**: os fragmentos podem escorregar ao longo da haste, um entrando sobre o outro, e o osso fica mais curto.\n\nOs **parafusos de bloqueio** resolvem isso. Eles atravessam o osso e a haste, nas pontas de cima e de baixo, travando o fragmento à haste. Com parafusos nas duas extremidades, a montagem é chamada de **estática**: nem gira nem encurta. É a escolha para fraturas instáveis, como as cominutivas e as segmentares.\n\nQuando a fratura é estável no eixo (por exemplo, um traço transverso com bom contato), pode-se bloquear só uma das pontas ou usar um orifício alongado: é a montagem **dinâmica**, que deixa a carga comprimir o foco. E, se a consolidação demora, retirar os parafusos de uma das pontas (**dinamização**) pode estimular o calo.",
-  "correta": "Rotacional e encurtamento. São os dois desvios que a haste sozinha não impede numa fratura multifragmentar, e que os parafusos de bloqueio travam.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Anatomia aplicada e forças deformantes; Classificação; Fresagem, diâmetro, bloqueio e carga; Comprimento e rotação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Anatomia aplicada e forças deformantes",
+      "Classificação",
+      "Fresagem, diâmetro, bloqueio e carga",
+      "Comprimento e rotação"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-forcas-deformantes-9db652ad",
+      "classificacao-edfe091a",
+      "fresagem-diametro-bloqueio-e-carga-1700baf9",
+      "comprimento-e-rotacao-c13089a5",
+      "comprimento-e-rotacao-2bbb6c9f"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "e59728f5b03682042c366f34286a603ef862e01265cd3d6ae98bae472810f4df"
+    }
+   ],
+   "questaoSha256": "cd187c56bd305a6aa08f262861dd7766ebdc9315633d65b693d6f510131cb318",
+   "comentarioSha256": "53222db8af018b53d3294a69787562464b80db14131031ef9459cf4ed350808c"
+  }
  },
  "conceitos-basicos-0019": {
   "conceito": "### Tennis leg (ruptura do gastrocnêmio)\n- **Local:** **cabeça medial** do gastrocnêmio, na **junção miotendínea**.\n- **Quem:** adulto de **meia-idade**, esportista de fim de semana.\n- **Mecanismo:** o gastrocnêmio é **biarticular** (joelho e tornozelo). A tensão é máxima com:\n  - ==joelho em extensão==;\n  - ==tornozelo em dorsiflexão==;\n  - ==contração excêntrica== (o músculo alonga enquanto contrai).\n  - É a arrancada com a perna de trás estendida.\n- **Clínica:** \"**pedrada**\" na panturrilha, dor e equimose, que pode **descer** ao tornozelo.\n- **Diferenciais:**\n  - **TVP** (o hematoma pode até comprimir; fazer **Doppler**);\n  - ruptura do **Aquiles** (Thompson **normal** na tennis leg);\n  - cisto de Baker roto.\n- **Tratamento:** **conservador** (RICE, compressão, salto, reabilitação). Vigiar **síndrome compartimental** (rara).\n\n### Silfverskiöld\n- Dorsiflexão que **melhora com o joelho fletido** indica encurtamento do **gastrocnêmio**.\n- Dorsiflexão que **não melhora** indica encurtamento do **tríceps**, com o **sóleo**, que é monoarticular.\n\n> **Na prova:** tennis leg = ==excêntrica, joelho estendido, tornozelo em dorsiflexão==.",
