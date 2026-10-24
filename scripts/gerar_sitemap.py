@@ -68,6 +68,12 @@ def principal() -> int:
         else:
             print(f"aviso: public/{pasta}/ não existe — rode gerar_paginas_destino.py antes", file=sys.stderr)
 
+    # Uma página por edição de prova (gerar_provas_anteriores.py): /provas-anteriores/<prova>-<ano>/.
+    provas_anteriores = DIR_PUBLICO / "provas-anteriores"
+    if provas_anteriores.is_dir():
+        for pasta in sorted(p for p in provas_anteriores.iterdir() if (p / "index.html").exists()):
+            urls.append(entrada(f"{SITE}provas-anteriores/{pasta.name}/", data, "monthly", "0.8"))
+
     if DIR_QUESTOES.is_dir():
         urls.append(entrada(f"{SITE}questoes/", data, "weekly", "0.9"))
         for assunto in sorted(DIR_QUESTOES.glob("*.html")):

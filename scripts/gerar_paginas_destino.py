@@ -30,7 +30,7 @@ Rode depois de gerar_paginas_seo.py (os exemplos de questão apontam para as
 páginas que ele cria) e antes de gerar_sitemap.py:
 
     python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_guias_seo.py \
-      && python3 scripts/gerar_paginas_destino.py && python3 scripts/gerar_sitemap.py
+      && python3 scripts/gerar_paginas_destino.py && python3 scripts/gerar_provas_anteriores.py && python3 scripts/gerar_sitemap.py
 """
 
 from __future__ import annotations
@@ -94,7 +94,8 @@ PAGINAS = [
     ("banco-de-questoes-ortopedia", "Banco de questões"),
     ("teot", "TEOT"),
     ("curso-preparatorio-teot", "Curso preparatório"),
-    ("questoes-teot-taro", "Provas anteriores"),
+    ("provas-anteriores", "Provas anteriores"),
+    ("questoes-teot-taro", "TEOT e TARO"),
     ("curso-ortopedia-r1", "R1"),
     ("simulado-teot", "Simulados"),
     ("flashcards-ortopedia", "Flashcards"),
@@ -126,6 +127,16 @@ NOMES_PROVA = {
 }
 # Categoria do treino no aplicativo (parâmetro areas= de #/treinar).
 AREA_DA_PROVA = {"ENARE R4 Ortopedia": "enare", "R4 Coluna SES-DF": "coluna", "R4 Coluna Joinville": "coluna"}
+
+
+def slug_edicao(prova: str, ano: int) -> str:
+    """Pasta da página de uma edição em /provas-anteriores/ (gerar_provas_anteriores.py)."""
+    base = re.sub(r"[^a-z0-9]+", "-", prova.lower().replace("ã", "a").replace("ç", "c")).strip("-")
+    return f"{base}-{ano}"
+
+
+def link_edicao(prova: str, ano: int) -> str:
+    return f"../provas-anteriores/{slug_edicao(prova, ano)}/"
 
 
 def esc(texto) -> str:
@@ -393,7 +404,8 @@ def relacionados(pasta: str, extras: list[tuple[str, str, str]] | None = None) -
     descricoes = {
         "banco-de-questoes-ortopedia": "Provas, assuntos e como o treino funciona.",
         "teot": "O que é o título, como se preparar e o que mais cai.",
-        "questoes-teot-taro": "Provas anteriores do TEOT e do TARO, ano a ano.",
+        "provas-anteriores": "Uma página por edição: TEOT, TARO e cirurgia da mão.",
+        "questoes-teot-taro": "Questões do TEOT e do TARO comentadas, por ano e assunto.",
         "curso-ortopedia-r1": "Roteiro para o primeiro ano de residência.",
         "simulado-teot": "Provas no tempo, simulados autorais e Simulado Nacional.",
         "flashcards-ortopedia": "Revisão rápida por assunto, entre plantões.",
@@ -761,11 +773,11 @@ def pagina_provas(d: dict) -> tuple[str, dict]:
         [("Treinar TEOT", link_treino("TEOT"), "principal"), ("Treinar TARO", link_treino("TARO"), "claro")],
         [f"TEOT: {len(anos_teot)} edições", f"TARO: {len(anos_taro)} edições", "Filtro por ano e assunto"],
     ))
-    lista_teot = "".join(f'<li><a href="{link_treino("TEOT", [a])}">{a}<small>{num(teot[a])} questões</small></a></li>' for a in anos_teot)
-    lista_taro = "".join(f'<li><a href="{link_treino("TARO", [a])}">{a}<small>{num(taro[a])} questões</small></a></li>' for a in anos_taro)
+    lista_teot = "".join(f'<li><a href="{link_edicao("TEOT", a)}">{a}<small>{num(teot[a])} questões</small></a></li>' for a in anos_teot)
+    lista_taro = "".join(f'<li><a href="{link_edicao("TARO", a)}">{a}<small>{num(taro[a])} questões</small></a></li>' for a in anos_taro)
     sem_ano = sum(d["por_prova"].get("Ortopedia", Counter()).values())
     corpo.append(f"""<section><h2>TEOT, prova teórica</h2>
-<p class="sub">Título de Especialista em Ortopedia e Traumatologia (SBOT). Toque no ano para treinar só aquela prova.</p>
+<p class="sub">Título de Especialista em Ortopedia e Traumatologia (SBOT). Toque no ano para ver as questões daquela prova e o que caiu.</p>
 <ul class="anos">{lista_teot}</ul></section>
 <section><h2>TARO</h2>
 <p class="sub">Avaliação anual da SBOT para os residentes. Os cadernos são divulgados pela
@@ -1366,12 +1378,12 @@ Não são as provas oficiais e não têm vínculo com a SBCM.</p>
         com_ano = sorted(a for a in anos if a)
         linhas.append(
             f'<tr><th scope="row"><a href="{link_treino(prova, area="mao")}">{esc(NOMES_MAO.get(prova, prova))}</a></th>'
-            f'<td>{esc(faixa(com_ano))}</td><td class="num">{len(com_ano) or "–"} {"edição" if len(com_ano) == 1 else "edições"}</td>'
+            f'<td>{", ".join(f"<a href=\"{link_edicao(prova, a)}\">{a}</a>" for a in com_ano) or "–"}</td><td class="num">{len(com_ano) or "–"} {"edição" if len(com_ano) == 1 else "edições"}</td>'
             f'<td class="num">{num(sum(anos.values()))}<span class="q"> questões</span></td></tr>'
         )
     corpo.append(f"""<section class="mao-provas"><div class="mao-provas__cabeca"><h2>Provas de residência em cirurgia da mão</h2>
 <p class="mao-sub">Provas reais, transcritas dos cadernos, com o nome da banca, o ano e o gabarito oficial. Toque numa prova para treinar
-só com ela; no site dá para filtrar também por ano e por assunto.</p></div>
+só com ela, ou num ano para ver as questões daquela edição e o que caiu.</p></div>
 <table class="mao-tabela"><caption class="so-leitor">Provas de seleção para a residência em cirurgia da mão no acervo</caption>
 <thead><tr><th scope="col">Prova</th><th scope="col">Anos</th><th scope="col">Edições</th><th scope="col">Questões</th></tr></thead>
 <tbody>{"".join(linhas)}</tbody></table></section>""")
