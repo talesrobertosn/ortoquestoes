@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><title>Carta para quem vai fazer a prova</title>
 <!-- Stories de propaganda (1080×1920), 24/10/2026: "Carta para quem vai fazer a prova", leve e sem preço.
-     1 envelope com selo "78 dias" e carimbo postal; 2 a carta aberta com três polaroids de telas reais;
-     3 o P.S. e o cartão de visita "Treine grátis". Sem figurinha; o site vai escrito.
-     Telas: marketing/instagram/telas.mjs (cronograma e questão, 24/10, "faltam 78 dias") e o leitor em sépia de
-     resumos-biblioteca/capturar.mjs, recortadas em polaroids/.
+     1 o envelope (selo "78 dias", carimbo postal, lacre com a marca); 2 a carta aberta com três polaroids desenhadas
+     (o dia do cronograma, o resumo, a questão); 3 o P.S. e o cartão "Treine grátis" preso com clipe.
+     Tudo desenhado aqui, sem print. Sem figurinha; o site vai escrito.
      PNGs: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-24-carta-prova/stories.html -->
 <style>
 @font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
@@ -12,160 +11,330 @@
 @font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
 @font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
 @font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
-:root { --papel: #F4ECDC; --tinta: #0F3D38; --ouro: #B8893A; --ouro-claro: #E6C47A; --lacre: #8E2B22; --mesa: #C9AE88; }
+:root { --tinta: #0F3D38; --tinta-2: #1B4D47; --ouro: #B8893A; --ouro-claro: #E9C77E; --lacre: #8E2B22; --verde: #14655E; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #333; font-family: Inter, sans-serif; }
-section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--tinta);
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--tinta); background: #B98F5E; }
+
+/* mesa de madeira clara, luz de janela e vinheta */
+.mesa { position: absolute; inset: 0; width: 100%; height: 100%; }
+.luz { position: absolute; inset: 0; pointer-events: none; z-index: 20;
   background:
-    radial-gradient(900px 700px at 20% 18%, rgba(255,248,232,.55), transparent 70%),
-    radial-gradient(1000px 800px at 90% 95%, rgba(90,58,26,.35), transparent 70%),
-    repeating-linear-gradient(92deg, rgba(120,84,44,.07) 0 3px, transparent 3px 22px),
-    repeating-linear-gradient(88deg, rgba(255,255,255,.05) 0 1px, transparent 1px 9px),
-    linear-gradient(180deg, #D8C19D, #C3A57C 60%, #B39466); }
-section::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .45; mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .18 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); }
-.topo { position: absolute; left: 80px; right: 80px; top: 250px; z-index: 5; text-align: center; }
-.topo small { display: block; font: 700 21px Jakarta; letter-spacing: .3em; text-transform: uppercase; color: rgba(15,61,56,.7); }
-.topo h1 { margin-top: 12px; font: italic 700 78px/1.02 Playfair; letter-spacing: -.01em; color: var(--tinta); text-shadow: 0 1px 0 rgba(255,255,255,.35); }
-.topo h1 em { color: #7A5418; }
-.rodape { position: absolute; left: 0; right: 0; top: 1585px; z-index: 5; text-align: center; font: 700 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: rgba(15,61,56,.62); }
-.rodape svg { width: 22px; height: 22px; vertical-align: -4px; margin-left: 8px; }
+    linear-gradient(118deg, transparent 8%, rgba(255,240,205,.16) 14%, rgba(255,240,205,.16) 24%, transparent 30%, transparent 36%, rgba(255,240,205,.12) 41%, rgba(255,240,205,.12) 49%, transparent 55%),
+    radial-gradient(140% 90% at 22% 8%, rgba(255,236,196,.28), transparent 55%),
+    radial-gradient(120% 80% at 80% 105%, rgba(40,22,6,.42), transparent 60%);
+  mix-blend-mode: soft-light; }
+.vinheta { position: absolute; inset: 0; pointer-events: none; z-index: 21; box-shadow: inset 0 0 220px rgba(40,22,6,.45); }
+
 /* papel */
 .papel { background:
-    repeating-linear-gradient(0deg, rgba(120,90,50,.06) 0 1px, transparent 1px 7px),
-    radial-gradient(120% 90% at 30% 20%, #FBF5E8, #F1E5CC 70%, #E8D8B8);
-  box-shadow: 0 30px 60px rgba(60,38,14,.35), 0 4px 10px rgba(60,38,14,.18), inset 0 0 60px rgba(150,110,60,.12); }
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .42 0 0 0 0 .25 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23p)'/%3E%3C/svg%3E"),
+    repeating-linear-gradient(90deg, rgba(140,105,60,.045) 0 1px, transparent 1px 6px),
+    radial-gradient(130% 100% at 25% 15%, #FCF7EC, #F3E8D0 60%, #EADBBD);
+  box-shadow: 0 2px 2px rgba(60,38,14,.12), 0 18px 30px -6px rgba(60,38,14,.38), 0 40px 70px -20px rgba(60,38,14,.35); }
+
+.chapeu { position: absolute; left: 0; right: 0; top: 250px; z-index: 10; text-align: center; }
+.chapeu small { display: inline-flex; align-items: center; gap: 18px; font: 700 21px Jakarta; letter-spacing: .3em; text-transform: uppercase; color: rgba(15,61,56,.78); }
+.chapeu small::before, .chapeu small::after { content: ''; width: 60px; height: 1.5px; background: rgba(15,61,56,.4); }
+.chapeu h1 { margin-top: 18px; font: italic 700 88px/1 Playfair; letter-spacing: -.015em; color: var(--tinta); }
+.chapeu h1 em { display: block; color: #6E4A12; }
+.rodape { position: absolute; left: 0; right: 0; top: 1560px; z-index: 10; text-align: center; }
+.rodape span { display: inline-flex; align-items: center; gap: 14px; padding: 18px 34px; border-radius: 999px; background: rgba(252,247,236,.86); box-shadow: 0 10px 24px rgba(60,38,14,.25); font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--tinta); }
+.rodape svg { width: 24px; height: 24px; }
 
 /* ===== 1: envelope ===== */
-.envelope { position: absolute; left: 80px; top: 600px; width: 920px; height: 640px; border-radius: 10px; transform: rotate(-4deg); z-index: 3; }
-.envelope::before { content: ''; position: absolute; inset: 0; border-radius: 10px; background: linear-gradient(160deg, rgba(255,255,255,.25), transparent 40%); }
-.envelope .borda { position: absolute; inset: 0; border-radius: 10px; background: repeating-linear-gradient(135deg, var(--lacre) 0 22px, transparent 22px 44px, var(--tinta) 44px 66px, transparent 66px 88px); -webkit-mask: linear-gradient(#000,#000) content-box exclude, linear-gradient(#000,#000); padding: 12px; opacity: .85; }
-.remetente { position: absolute; left: 56px; top: 54px; font: 700 20px/1.5 Jakarta; letter-spacing: .14em; text-transform: uppercase; color: rgba(15,61,56,.75); }
-.remetente b { display: block; font: italic 700 28px Playfair; letter-spacing: 0; text-transform: none; color: var(--tinta); }
-.destino { position: absolute; left: 130px; top: 330px; width: 640px; font: 700 58px/1.12 Caveat; color: var(--tinta); }
-.destino::after { content: ''; display: block; margin-top: 14px; width: 520px; height: 0; border-top: 2px solid rgba(15,61,56,.25); box-shadow: 0 46px 0 -0px rgba(15,61,56,.0); }
-.destino small { display: block; margin-top: 6px; font: 600 38px Caveat; color: rgba(15,61,56,.75); }
-.selo { position: absolute; right: 56px; top: 46px; width: 170px; height: 206px; padding: 12px; background: #fff;
-  -webkit-mask: radial-gradient(circle at 50% 50%, #000 7px, transparent 7.5px) -9px -9px / 18px 18px, linear-gradient(#000,#000) 9px 9px / calc(100% - 18px) calc(100% - 18px) no-repeat;
-  filter: drop-shadow(0 4px 6px rgba(60,38,14,.3)); }
-.selo .dentro { height: 100%; border-radius: 4px; background: radial-gradient(120% 100% at 30% 20%, #1D6E66, #0D4A44); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 14px 8px 10px; color: var(--ouro-claro); }
-.selo svg { width: 70px; height: 70px; }
-.selo b { font: 800 58px/1 Jakarta; letter-spacing: -.03em; color: #fff; }
-.selo span { font: 700 18px Jakarta; letter-spacing: .24em; text-transform: uppercase; }
-.carimbo { position: absolute; right: 170px; top: 150px; width: 300px; height: 230px; color: #7A5418; mix-blend-mode: multiply; opacity: .85; filter: url(#tinta); transform: rotate(-10deg); }
-.lacre { position: absolute; z-index: 4; width: 150px; height: 150px; border-radius: 50%; filter: url(#cera); background: radial-gradient(circle at 38% 32%, #B8473C, var(--lacre) 55%, #5B1812); box-shadow: 0 10px 18px rgba(60,20,10,.4); display: grid; place-items: center; }
-.lacre::before { content: ''; position: absolute; inset: 18px; border-radius: 50%; box-shadow: inset 0 0 0 3px rgba(0,0,0,.18), inset 0 2px 6px rgba(0,0,0,.35); }
-.lacre b { font: italic 800 52px Playfair; color: rgba(60,12,8,.55); text-shadow: 0 2px 0 rgba(255,190,170,.35); letter-spacing: -.04em; }
-.bilhete { position: absolute; left: 0; right: 0; top: 1370px; z-index: 5; text-align: center; font: 600 52px Caveat; color: rgba(15,61,56,.78); transform: rotate(-2deg); }
-.barbante { position: absolute; z-index: 3; left: 130px; top: 560px; width: 14px; height: 640px; background: repeating-linear-gradient(170deg, #CFA868 0 6px, #A9803F 6px 12px); transform: rotate(-4deg) translateX(560px); border-radius: 7px; box-shadow: 0 6px 10px rgba(60,38,14,.25); }
+.envelope { position: absolute; left: 70px; top: 640px; width: 940px; height: 620px; transform: rotate(-3.5deg); z-index: 3; border-radius: 6px; }
+.envelope .aereo { position: absolute; inset: 0; border-radius: 6px; padding: 14px; background: repeating-linear-gradient(-45deg, #A3342A 0 26px, #FCF7EC 26px 40px, #1D5C55 40px 66px, #FCF7EC 66px 80px);
+  -webkit-mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); opacity: .9; }
+.remetente { position: absolute; left: 60px; top: 58px; font: 700 17px/1.6 Jakarta; letter-spacing: .2em; text-transform: uppercase; color: rgba(15,61,56,.62); }
+.remetente b { display: block; margin-top: 2px; font: italic 700 32px/1.1 Playfair; letter-spacing: 0; text-transform: none; color: var(--tinta); }
+.selo { position: absolute; right: 62px; top: 52px; width: 176px; height: 214px; padding: 13px; background: #FDFBF5;
+  -webkit-mask: radial-gradient(circle, #000 6.5px, transparent 7px) -9px -9px / 18px 18px, linear-gradient(#000 0 0) 9px 9px / calc(100% - 18px) calc(100% - 18px) no-repeat;
+  filter: drop-shadow(0 3px 4px rgba(60,38,14,.3)); }
+.selo .dentro { position: relative; height: 100%; overflow: hidden; background: radial-gradient(120% 100% at 30% 15%, #1F7A71, #0C4741 75%); display: flex; flex-direction: column; align-items: center; padding-top: 18px; color: var(--ouro-claro); }
+.selo .dentro::before { content: ''; position: absolute; inset: 7px; border: 1.5px solid rgba(233,199,126,.55); }
+.selo .dentro svg { width: 58px; height: 58px; color: var(--ouro-claro); }
+.selo b { margin-top: 8px; font: 800 64px/0.9 Playfair; color: #FFF6DE; }
+.selo span { margin-top: 6px; font: 800 15px Jakarta; letter-spacing: .32em; text-transform: uppercase; }
+.carimbo { position: absolute; right: 168px; top: 128px; width: 330px; height: 200px; color: #5B3B10; opacity: .78; mix-blend-mode: multiply; filter: url(#tinta); transform: rotate(-12deg); }
+.endereco { position: absolute; left: 280px; top: 300px; width: 560px; }
+.endereco p { font: 700 64px/1 Caveat; color: var(--tinta); padding: 10px 0 8px; border-bottom: 2px solid rgba(15,61,56,.18); }
+.endereco p + p { margin-top: 6px; }
+.endereco small { display: block; margin-top: 16px; font: 600 38px Caveat; color: rgba(15,61,56,.72); }
+.borracha { position: absolute; left: 58px; top: 395px; padding: 10px 18px 12px; border: 4px double currentColor; border-radius: 8px; color: #A3342A; font: 800 20px/1.25 Jakarta; letter-spacing: .14em; text-transform: uppercase; text-align: center; transform: rotate(-9deg); opacity: .82; mix-blend-mode: multiply; filter: url(#tinta); }
+.borracha i { display: block; font: italic 700 26px Playfair; letter-spacing: 0; text-transform: none; }
+.lacre { position: absolute; z-index: 5; }
+.fitas { position: absolute; z-index: 4; }
+.bilhete { position: absolute; left: 0; right: 0; top: 1450px; z-index: 10; text-align: center; font: 600 54px Caveat; color: rgba(15,61,56,.86); transform: rotate(-2deg); }
+.xicara { position: absolute; z-index: 6; }
 
 /* ===== 2: carta ===== */
-.envelope-aberto { position: absolute; left: 40px; top: 1060px; width: 760px; height: 470px; border-radius: 10px; transform: rotate(-8deg); z-index: 1; }
-.envelope-aberto::after { content: ''; position: absolute; left: 0; right: 0; top: -230px; height: 240px; background: inherit; clip-path: polygon(0 100%, 50% 4%, 100% 100%); filter: brightness(.96); }
-.carta { position: absolute; left: 70px; right: 70px; top: 250px; height: 1060px; padding: 56px 66px 40px; border-radius: 6px; transform: rotate(1.4deg); z-index: 2; }
-.timbre { display: flex; align-items: center; justify-content: center; gap: 14px; padding-bottom: 18px; border-bottom: 2px solid rgba(184,137,58,.5); }
-.timbre svg { width: 46px; height: 46px; }
-.timbre span { font: 700 19px Jakarta; letter-spacing: .26em; text-transform: uppercase; color: rgba(15,61,56,.8); }
-.texto-carta { margin-top: 26px; font: 500 44px/1.24 Caveat; color: #123F3A; }
-.texto-carta p + p { margin-top: 14px; }
-.texto-carta b { font-weight: 700; color: #0A2E2A; background: linear-gradient(transparent 62%, rgba(230,196,122,.55) 62%); }
-.texto-carta .abre { font-size: 58px; font-weight: 700; }
-.mancha { position: absolute; right: 70px; bottom: 120px; width: 170px; height: 170px; border-radius: 50%; box-shadow: inset 0 0 0 7px rgba(120,72,30,.22), inset 0 0 0 16px rgba(120,72,30,.05); filter: url(#tinta); transform: rotate(20deg); }
-.caneta { position: absolute; z-index: 6; right: -60px; top: 1430px; width: 560px; height: 34px; border-radius: 18px; transform: rotate(-14deg); background: linear-gradient(180deg, #2A2A2A, #0C0C0C 60%, #333); box-shadow: 0 16px 22px rgba(30,18,6,.4); }
-.caneta::before { content: ''; position: absolute; left: 150px; top: 0; width: 26px; height: 100%; background: linear-gradient(180deg, #F1D58E, var(--ouro) 60%, #8E6A24); }
-.caneta::after { content: ''; position: absolute; left: -56px; top: 5px; width: 64px; height: 24px; background: linear-gradient(180deg, #F1D58E, var(--ouro)); clip-path: polygon(0 50%, 100% 0, 100% 100%); }
-.polaroids { position: absolute; left: 60px; right: 60px; top: 1030px; z-index: 5; display: flex; justify-content: center; gap: 24px; }
-.pol { width: 300px; padding: 14px 14px 18px; background: #FCFAF4; box-shadow: 0 18px 30px rgba(40,24,8,.35); position: relative; }
-.pol:nth-child(1) { transform: rotate(-6deg) translateY(10px); } .pol:nth-child(2) { transform: rotate(2deg); } .pol:nth-child(3) { transform: rotate(7deg) translateY(16px); }
-.pol .foto { height: 162px; overflow: hidden; background: #fff; }
-.pol .foto img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
-.pol p { margin-top: 10px; text-align: center; font: 700 38px/1 Caveat; color: var(--tinta); }
-.pol small { display: block; margin-top: 4px; text-align: center; font: 500 14px Inter; color: rgba(15,61,56,.55); }
-.clipe { position: absolute; left: 50%; top: -30px; width: 34px; height: 76px; margin-left: -17px; border: 5px solid #C9A04F; border-radius: 17px; border-bottom-color: transparent; box-shadow: 0 2px 3px rgba(0,0,0,.25); }
+.env-aberto { position: absolute; left: 30px; top: 1170px; width: 780px; height: 470px; transform: rotate(-7deg); z-index: 1; border-radius: 6px; }
+.env-aberto .aereo { position: absolute; inset: 0; border-radius: 6px; padding: 12px; background: repeating-linear-gradient(-45deg, #A3342A 0 22px, transparent 22px 34px, #1D5C55 34px 56px, transparent 56px 68px); -webkit-mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); opacity: .85; }
+.carta { position: absolute; left: 66px; right: 66px; top: 245px; height: 1010px; padding: 54px 64px 40px; border-radius: 4px; transform: rotate(1.2deg); z-index: 2; }
+.timbre { display: flex; align-items: center; justify-content: center; gap: 16px; padding-bottom: 20px; border-bottom: 1.5px solid rgba(184,137,58,.6); }
+.timbre svg { width: 40px; height: 40px; color: var(--verde); }
+.timbre span { font: 700 18px Jakarta; letter-spacing: .3em; text-transform: uppercase; color: rgba(15,61,56,.82); }
+.data { margin-top: 22px; text-align: right; font: 600 34px Caveat; color: rgba(15,61,56,.7); }
+.texto { font: 500 45px/1.22 Caveat; color: #123F3A; }
+.texto p + p { margin-top: 14px; }
+.texto b { font-weight: 700; color: #0A2E2A; background: linear-gradient(transparent 60%, rgba(233,199,126,.6) 60%, rgba(233,199,126,.6) 92%, transparent 92%); padding: 0 4px; }
+.texto .abre { font: 700 64px/1.1 Caveat; color: var(--tinta); }
+.polaroids { position: absolute; left: 40px; right: 40px; top: 1015px; z-index: 5; height: 470px; }
+.pol { position: absolute; width: 318px; padding: 16px 16px 20px; background: #FDFCF8; box-shadow: 0 2px 3px rgba(40,24,8,.18), 0 22px 34px -6px rgba(40,24,8,.42); }
+.pol svg.foto { display: block; width: 286px; height: 252px; }
+.pol p { margin-top: 12px; text-align: center; font: 700 44px/1 Caveat; color: var(--tinta); }
+.pol:nth-child(1) { left: 0; top: 30px; transform: rotate(-7deg); }
+.pol:nth-child(2) { left: 341px; top: 0; transform: rotate(1.5deg); z-index: 2; }
+.pol:nth-child(3) { right: 0; top: 40px; transform: rotate(7deg); }
+.fita { position: absolute; left: 50%; top: -22px; width: 120px; height: 40px; margin-left: -60px; background: rgba(233,215,170,.72); box-shadow: 0 1px 2px rgba(0,0,0,.08); transform: rotate(-4deg);
+  -webkit-mask: linear-gradient(90deg, transparent 0 2px, #000 2px calc(100% - 2px), transparent 0), repeating-linear-gradient(0deg, #000 0 5px, transparent 5px 7px); -webkit-mask-composite: source-over; }
+.pol:nth-child(2) .fita { transform: rotate(3deg); }
+.caneta { position: absolute; z-index: 8; }
 
 /* ===== 3: P.S. e cartão ===== */
-.carta.fim { top: 270px; height: 760px; transform: rotate(-1.2deg); }
-.assinatura { margin-top: 18px; font: 700 50px Caveat; color: var(--tinta); }
-.assinatura svg { width: 64px; height: 64px; vertical-align: -14px; margin-left: 12px; }
-.ps { margin-top: 26px; padding-top: 22px; border-top: 2px dashed rgba(184,137,58,.5); font: 700 52px/1.18 Caveat; color: #0A2E2A; }
-.ps small { display: block; margin-top: 12px; font: 500 40px/1.22 Caveat; color: #123F3A; }
-.cartao { position: absolute; left: 130px; top: 960px; width: 820px; height: 470px; z-index: 6; border-radius: 22px; padding: 46px 54px; transform: rotate(-5deg);
-  background: radial-gradient(130% 120% at 20% 10%, #1D6E66, #0E3F3A 60%, #082A26); color: var(--ouro-claro); box-shadow: 0 34px 60px rgba(30,18,6,.45), inset 0 0 0 2px rgba(230,196,122,.35); }
-.cartao::before { content: ''; position: absolute; inset: 16px; border-radius: 14px; border: 1.5px solid rgba(230,196,122,.35); }
-.cartao .marca { display: flex; align-items: center; gap: 14px; font: 26px Jakarta; color: #F4E6C2; }
-.cartao .marca svg { width: 52px; height: 52px; } .cartao .marca b { font-weight: 800; } .cartao .marca span { font-weight: 500; }
-.cartao h2 { margin-top: 30px; font: italic 800 92px/1 Playfair; color: #F1D58E; text-shadow: 0 2px 0 rgba(0,0,0,.35), 0 -1px 0 rgba(255,240,200,.35); }
-.cartao p { margin-top: 18px; font: 600 28px/1.35 Inter; color: #EADCBC; }
-.cartao .site { position: absolute; left: 54px; right: 54px; bottom: 40px; display: flex; justify-content: space-between; font: 700 21px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: rgba(230,196,122,.85); }
+.carta.fim { top: 245px; height: 860px; transform: rotate(-1deg); padding-top: 64px; }
+.assina { margin-top: 30px; display: flex; align-items: flex-end; gap: 18px; }
+.assina p { font: 600 42px/1.1 Caveat; color: #123F3A; }
+.assina p b { display: block; font: 700 72px/1 Caveat; color: var(--tinta); }
+.assina .selinho { width: 130px; height: 130px; margin-left: 10px; transform: rotate(-10deg); }
+.ps { margin-top: 34px; padding-top: 26px; border-top: 2px dashed rgba(184,137,58,.55); }
+.ps p { font: 700 52px/1.16 Caveat; color: #0A2E2A; }
+.ps p span { color: #8E2B22; }
+.ps small { display: block; margin-top: 14px; font: 500 40px/1.2 Caveat; color: #123F3A; }
+.cartao { position: absolute; left: 110px; top: 985px; width: 860px; height: 500px; z-index: 6; border-radius: 20px; padding: 50px 58px; transform: rotate(-4deg); overflow: hidden;
+  background: radial-gradient(130% 120% at 18% 8%, #1F7A71, #0F4A44 55%, #082C28); color: var(--ouro-claro);
+  box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 30px 50px -8px rgba(30,18,6,.55); }
+.cartao::before { content: ''; position: absolute; inset: 18px; border-radius: 12px; border: 1.5px solid rgba(233,199,126,.4); pointer-events: none; }
+.cartao::after { content: ''; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.08) 42%, transparent 54%); pointer-events: none; }
+.cartao .marca { display: flex; align-items: center; gap: 14px; font: 27px Jakarta; color: #F4E6C2; }
+.cartao .marca svg { width: 44px; height: 44px; color: var(--ouro-claro); }
+.cartao .marca b { font-weight: 800; } .cartao .marca span { font-weight: 500; opacity: .85; }
+.cartao h2 { margin-top: 26px; font: italic 800 108px/1 Playfair; letter-spacing: -.01em;
+  background: linear-gradient(176deg, #FFF0C2 8%, #E9C77E 38%, #B8893A 62%, #F1D58E 82%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,.35)); }
+.cartao .sub { margin-top: 18px; font: 600 29px/1.38 Inter; color: #EADCBC; max-width: 690px; }
+.cartao .site { position: absolute; left: 58px; right: 58px; bottom: 44px; display: flex; justify-content: space-between; align-items: center; padding-top: 18px; border-top: 1px solid rgba(233,199,126,.3); font: 800 20px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: rgba(233,199,126,.92); }
+.clipe { position: absolute; z-index: 7; }
 </style></head><body>
 <svg width="0" height="0" style="position:absolute"><defs>
-<filter id="tinta" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="3" result="d"/>
-  <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="3" seed="3" result="m"/><feColorMatrix in="m" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2 1.85" result="mm"/><feComposite in="d" in2="mm" operator="in"/></filter>
-<filter id="cera" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="16"/></filter>
+<filter id="madeira" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency=".055 .0028" numOctaves="4" seed="11" result="t"/>
+  <feColorMatrix in="t" values="0 0 0 0 .36  0 0 0 0 .22  0 0 0 0 .1  0 0 0 1.4 -.45"/>
+</filter>
+<filter id="poros" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency=".9 .02" numOctaves="2" seed="3"/>
+  <feColorMatrix values="0 0 0 0 .3  0 0 0 0 .18  0 0 0 0 .08  0 0 0 .5 -.12"/>
+</filter>
+<filter id="tinta" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="7" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="2.5" result="d"/>
+  <feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="3" seed="9" result="m"/>
+  <feColorMatrix in="m" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.9" result="mm"/><feComposite in="d" in2="mm" operator="in"/>
+</filter>
+<filter id="cera" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="5" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="22"/></filter>
+<filter id="relevo" x="-10%" y="-10%" width="120%" height="120%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="1.6" result="b"/>
+  <feSpecularLighting in="b" surfaceScale="3" specularConstant=".7" specularExponent="18" lighting-color="#FFD2C4" result="s"><feDistantLight azimuth="225" elevation="40"/></feSpecularLighting>
+  <feComposite in="s" in2="SourceAlpha" operator="in" result="sl"/>
+  <feComposite in="SourceGraphic" in2="sl" operator="arithmetic" k1="0" k2="1" k3=".8" k4="0"/>
+</filter>
+<clipPath id="metade-e"><path d="M0 0 H104 L92 40 L110 78 L94 118 L108 156 L98 200 H0Z"/></clipPath>
+<clipPath id="metade-d"><path d="M200 0 H104 L92 40 L110 78 L94 118 L108 156 L98 200 H200Z"/></clipPath>
+<filter id="sombra-suave" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+<path id="barra" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/>
+<symbol id="marca" viewBox="0 0 64 64"><g fill="currentColor"><use href="#barra" transform="translate(13 9.5)" opacity=".6"/><use href="#barra" transform="translate(11 21.2)" opacity=".6"/><use href="#barra" transform="translate(11 32.9)"/><use href="#barra" transform="translate(13 44.6)" opacity=".6"/></g></symbol>
 <symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<!-- lacre de cera com a marca em relevo -->
+<symbol id="sinete" viewBox="0 0 200 200">
+  <defs><radialGradient id="g-cera" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#C4554A"/><stop offset=".5" stop-color="#93291F"/><stop offset="1" stop-color="#5A140F"/></radialGradient></defs>
+  <ellipse cx="104" cy="112" rx="86" ry="80" fill="rgba(50,14,8,.45)" filter="url(#sombra-suave)"/>
+  <g filter="url(#cera)"><circle cx="100" cy="100" r="86" fill="url(#g-cera)"/></g>
+  <circle cx="100" cy="100" r="58" fill="#7E2219"/>
+  <circle cx="100" cy="100" r="58" fill="none" stroke="#5A140F" stroke-width="4"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="rgba(255,190,170,.35)" stroke-width="2"/>
+  <g filter="url(#relevo)"><use href="#marca" x="66" y="66" width="68" height="68" style="color:#A5382D"/></g>
+</symbol>
 </defs></svg>
-<template id="simbolo"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg></template>
 
-<!-- 1: o envelope -->
+<template id="fundo">
+  <svg class="mesa" viewBox="0 0 1080 1920" preserveAspectRatio="none">
+    <rect width="1080" height="1920" fill="#C49A68"/>
+    <rect width="1080" height="1920" filter="url(#madeira)"/>
+    <rect width="1080" height="1920" filter="url(#poros)" opacity=".5"/>
+    <g stroke="rgba(70,40,14,.38)" stroke-width="3"><path d="M268 0V1920M540 0V1920M812 0V1920"/></g>
+    <g stroke="rgba(255,236,200,.22)" stroke-width="1.5"><path d="M271 0V1920M543 0V1920M815 0V1920"/></g>
+  </svg>
+  <div class="luz"></div><div class="vinheta"></div>
+</template>
+
+<!-- ============ 1: o envelope ============ -->
 <section id="s1-envelope">
-  <div class="topo"><small>Correspondência · 24 de outubro</small><h1>Chegou uma carta <em>para você.</em></h1></div>
+  <i data-fundo></i>
+  <div class="chapeu"><small>Correspondência · 24 de outubro</small><h1>Chegou uma carta<em>para você.</em></h1></div>
+
   <div class="envelope papel">
-    <div class="borda"></div>
+    <div class="aereo"></div>
     <div class="remetente">Remetente<b>Orto Questões</b>ortoquestoes.com.br</div>
-    <div class="selo"><div class="dentro"><i data-simbolo></i><b>78</b><span>dias</span></div></div>
-    <svg class="carimbo" viewBox="0 0 300 230">
-      <defs><path id="arco" d="M70 115 a80 80 0 1 1 160 0 a80 80 0 1 1 -160 0"/></defs>
-      <circle cx="150" cy="115" r="96" fill="none" stroke="currentColor" stroke-width="5"/>
-      <circle cx="150" cy="115" r="62" fill="none" stroke="currentColor" stroke-width="3"/>
-      <text font-family="Jakarta" font-weight="800" font-size="17" letter-spacing="4" fill="currentColor"><textPath href="#arco">CORREIO DA PROVA · ORTO QUESTÕES · CORREIO DA PROVA ·</textPath></text>
-      <text x="150" y="104" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="24" fill="currentColor">24 OUT 2026</text>
-      <text x="150" y="134" text-anchor="middle" font-family="Jakarta" font-weight="700" font-size="15" letter-spacing="2" fill="currentColor">PROVA 10 JAN 2027</text>
-      <path d="M0 60 q25 -14 50 0 t50 0 M0 90 q25 -14 50 0 t50 0 M0 120 q25 -14 50 0 t50 0 M0 150 q25 -14 50 0 t50 0" fill="none" stroke="currentColor" stroke-width="4" transform="translate(-40 0)"/>
+    <div class="selo"><div class="dentro"><svg><use href="#marca"/></svg><b>78</b><span>dias</span></div></div>
+    <svg class="carimbo" viewBox="0 0 330 200">
+      <defs><path id="anel" d="M100 100 m-70 0 a70 70 0 1 1 140 0 a70 70 0 1 1 -140 0"/></defs>
+      <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="5"/>
+      <circle cx="100" cy="100" r="54" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <text font-family="Jakarta" font-weight="800" font-size="14.5" letter-spacing="2.6" fill="currentColor"><textPath href="#anel" startOffset="2">CORREIO DA PROVA · ORTO QUESTÕES · </textPath></text>
+      <text x="100" y="96" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="23" fill="currentColor">24 OUT</text>
+      <text x="100" y="124" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="20" letter-spacing="3" fill="currentColor">2026</text>
+      <g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round">
+        <path d="M196 62 q16 -10 32 0 t32 0 t32 0 t32 0"/><path d="M196 88 q16 -10 32 0 t32 0 t32 0 t32 0"/>
+        <path d="M196 114 q16 -10 32 0 t32 0 t32 0 t32 0"/><path d="M196 140 q16 -10 32 0 t32 0 t32 0 t32 0"/>
+      </g>
     </svg>
-    <div class="destino">Para você, que vai<br>fazer a prova<small>TEOT e TEPOT · 10 de janeiro de 2027</small></div>
+    <div class="borracha">Urgente,<i>mas com calma</i></div>
+    <div class="endereco"><p>Para você,</p><p>que vai fazer a prova</p><small>TEOT e TEPOT · 10 de janeiro de 2027</small></div>
   </div>
-  <div class="lacre" style="left:465px; top:1150px"><b>OQ</b></div>
+  <svg class="fitas" style="left:590px; top:1290px" width="140" height="133" viewBox="0 0 200 190">
+    <path d="M70 0 L40 170 L62 152 L80 182 L104 10Z" fill="#14655E"/><path d="M118 10 L150 176 L126 160 L110 188 L90 4Z" fill="#0F4A44"/>
+  </svg>
+  <svg class="lacre" style="left:540px; top:1205px" width="210" height="210"><use href="#sinete"/></svg>
   <p class="bilhete">(é curtinha, prometo.)</p>
-  <p class="rodape">Abra no próximo story<svg><use href="#seta"/></svg></p>
+  <p class="rodape"><span>Abra no próximo story<svg><use href="#seta"/></svg></span></p>
+  <svg class="xicara" style="left:760px; top:1660px" width="420" height="420" viewBox="0 0 420 420">
+    <ellipse cx="214" cy="222" rx="186" ry="186" fill="rgba(40,22,6,.35)" filter="url(#sombra-suave)"/>
+    <circle cx="210" cy="210" r="180" fill="#F6F1E6"/><circle cx="210" cy="210" r="168" fill="none" stroke="#E3D9C4" stroke-width="3"/>
+    <circle cx="210" cy="210" r="118" fill="#FBF8F1"/><circle cx="210" cy="210" r="104" fill="#5A3416"/>
+    <circle cx="210" cy="210" r="96" fill="#7A4A22"/><ellipse cx="190" cy="186" rx="44" ry="26" fill="rgba(230,190,140,.35)"/>
+    <path d="M44 196 h-34" stroke="#F6F1E6" stroke-width="30" stroke-linecap="round"/>
+  </svg>
 </section>
 
-<!-- 2: a carta aberta -->
+<!-- ============ 2: a carta aberta ============ -->
 <section id="s2-carta">
-  <div class="envelope-aberto papel"></div>
+  <i data-fundo></i>
+  <div class="env-aberto papel"><div class="aereo"></div></div>
+  <svg style="position:absolute; left:100px; top:1440px; z-index:1" width="240" height="190" viewBox="0 0 380 300">
+    <g transform="translate(10 50) rotate(-12 100 100)" clip-path="url(#metade-e)"><use href="#sinete" width="200" height="200"/></g>
+    <g transform="translate(150 30) rotate(14 100 100)" clip-path="url(#metade-d)"><use href="#sinete" width="200" height="200"/></g>
+  </svg>
   <div class="carta papel">
-    <div class="timbre"><i data-simbolo></i><span>Orto Questões · Ortopedia para a prova</span></div>
-    <div class="texto-carta">
+    <div class="timbre"><svg><use href="#marca"/></svg><span>Orto Questões · Ortopedia para a prova</span></div>
+    <p class="data">24 de outubro de 2026</p>
+    <div class="texto">
       <p class="abre">Faltam 78 dias. Respira.</p>
       <p>Você não precisa decidir sozinho o que estudar hoje: com o <b>cronograma</b>, você faz o maior número de questões possível sem se cansar tanto. Nós planejamos tudo para você.</p>
-      <p>Os <b>resumos</b> vêm na ordem em que a prova cobra, com as questões que já caíram no meio do texto.</p>
-      <p>E as <b>questões das provas oficiais</b> vêm todas comentadas.</p>
+      <p>Os <b>resumos</b> vêm na ordem em que a prova cobra, com as questões que já caíram no meio do texto. E as <b>questões das provas oficiais</b> vêm todas comentadas.</p>
     </div>
   </div>
   <div class="polaroids">
-    <div class="pol"><i class="clipe"></i><div class="foto"><img src="polaroids/cronograma.png" alt=""></div><p>seu dia</p><small>tela ilustrativa</small></div>
-    <div class="pol"><i class="clipe"></i><div class="foto"><img src="polaroids/resumo.png" alt=""></div><p>o resumo</p><small>tela ilustrativa</small></div>
-    <div class="pol"><i class="clipe"></i><div class="foto"><img src="polaroids/questao.png" alt=""></div><p>a questão</p><small>tela ilustrativa</small></div>
+    <div class="pol"><i class="fita"></i>
+      <svg class="foto" viewBox="0 0 286 252">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4ECDF"/><stop offset="1" stop-color="#C9D8C6"/></linearGradient></defs>
+        <rect width="286" height="252" fill="url(#g1)"/>
+        <!-- folhinha do dia -->
+        <g transform="translate(22 30) rotate(-3)">
+          <rect x="4" y="8" width="132" height="182" rx="10" fill="rgba(20,50,40,.22)"/>
+          <rect width="132" height="182" rx="10" fill="#FFFDF7"/>
+          <path d="M0 10 a10 10 0 0 1 10 -10 h112 a10 10 0 0 1 10 10 v36 h-132z" fill="#14655E"/>
+          <circle cx="36" cy="0" r="6" fill="#B8893A"/><circle cx="96" cy="0" r="6" fill="#B8893A"/>
+          <text x="66" y="32" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="17" letter-spacing="3" fill="#F4E6C2">OUTUBRO</text>
+          <text x="66" y="118" text-anchor="middle" font-family="Playfair" font-weight="800" font-size="74" fill="#0F3D38">24</text>
+          <text x="66" y="160" text-anchor="middle" font-family="Caveat" font-weight="700" font-size="23" fill="#8E2B22">faltam 78</text>
+        </g>
+        <!-- lista do dia -->
+        <g transform="translate(176 60) rotate(6)">
+          <rect x="3" y="6" width="96" height="146" rx="4" fill="rgba(20,50,40,.2)"/>
+          <rect width="96" height="146" rx="4" fill="#F4CF7C"/>
+          <text x="48" y="26" text-anchor="middle" font-family="Caveat" font-weight="700" font-size="22" fill="#0F3D38">hoje</text>
+          <g fill="none" stroke="#0F3D38" stroke-width="2.4" stroke-linecap="round">
+            <rect x="12" y="42" width="16" height="16" rx="3"/><path d="M15 50l4 4 8-9" stroke="#14655E" stroke-width="3"/><path d="M36 50h46" stroke-opacity=".55"/>
+            <rect x="12" y="74" width="16" height="16" rx="3"/><path d="M15 82l4 4 8-9" stroke="#14655E" stroke-width="3"/><path d="M36 82h38" stroke-opacity=".55"/>
+            <rect x="12" y="106" width="16" height="16" rx="3"/><path d="M36 114h44" stroke-opacity=".55"/>
+          </g>
+        </g>
+      </svg>
+      <p>seu dia</p></div>
+    <div class="pol"><i class="fita"></i>
+      <svg class="foto" viewBox="0 0 286 252">
+        <defs><radialGradient id="g2" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#1F5E57"/><stop offset="1" stop-color="#0B3330"/></radialGradient>
+          <linearGradient id="dobra" x1="0" x2="1"><stop offset="0" stop-color="rgba(90,60,20,0)"/><stop offset=".5" stop-color="rgba(90,60,20,.28)"/><stop offset="1" stop-color="rgba(90,60,20,0)"/></linearGradient></defs>
+        <rect width="286" height="252" fill="url(#g2)"/>
+        <!-- livro aberto, sépia -->
+        <path d="M24 60 Q80 44 143 62 L143 214 Q80 198 24 212Z" fill="#F3E4C3"/>
+        <path d="M262 60 Q206 44 143 62 L143 214 Q206 198 262 212Z" fill="#F7EBD0"/>
+        <path d="M24 212 Q80 198 143 214 Q206 198 262 212 L262 220 Q206 206 143 222 Q80 206 24 220Z" fill="#D9C39A"/>
+        <rect x="123" y="58" width="40" height="160" fill="url(#dobra)"/>
+        <g stroke="#B49E77" stroke-width="5" stroke-linecap="round">
+          <path d="M42 84h80M42 100h86M42 116h70M42 148h84M42 164h78M42 180h60"/>
+          <path d="M162 84h84M162 100h76"/><path d="M162 176h82M162 192h64"/>
+        </g>
+        <rect x="38" y="125" width="94" height="14" rx="3" fill="#F4CF7C" opacity=".85"/><path d="M42 132h80" stroke="#B49E77" stroke-width="5" stroke-linecap="round"/>
+        <!-- cartão "já caiu" no meio do texto -->
+        <rect x="158" y="114" width="92" height="48" rx="6" fill="#FFF8E6" stroke="#B8893A" stroke-width="2"/>
+        <rect x="158" y="114" width="6" height="48" fill="#B8893A"/>
+        <text x="172" y="134" font-family="Jakarta" font-weight="800" font-size="13" letter-spacing="1" fill="#8A5A12">JÁ CAIU</text>
+        <path d="M172 148h62" stroke="#B49E77" stroke-width="4" stroke-linecap="round"/>
+        <!-- fita marcadora -->
+        <path d="M206 50 v52 l-9 -9 l-9 9 v-52z" fill="#8E2B22"/>
+      </svg>
+      <p>o resumo</p></div>
+    <div class="pol"><i class="fita"></i>
+      <svg class="foto" viewBox="0 0 286 252">
+        <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2E2BF"/><stop offset="1" stop-color="#E2CB9C"/></linearGradient></defs>
+        <rect width="286" height="252" fill="url(#g3)"/>
+        <rect x="30" y="24" width="232" height="214" rx="16" fill="rgba(90,60,20,.2)"/>
+        <rect x="26" y="18" width="232" height="214" rx="16" fill="#FFFFFF"/>
+        <rect x="42" y="32" width="70" height="20" rx="10" fill="#F4CF7C"/><text x="77" y="46.5" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="11" letter-spacing=".5" fill="#6E4A12">TEOT 2024</text>
+        <g stroke="#C9CFCC" stroke-width="6" stroke-linecap="round"><path d="M44 68h196M44 82h150"/></g>
+        <g font-family="Jakarta" font-weight="800" font-size="14" text-anchor="middle">
+          <rect x="40" y="98" width="204" height="28" rx="8" fill="#F5F6F4"/><circle cx="58" cy="112" r="10" fill="none" stroke="#9AA5A1" stroke-width="2"/><text x="58" y="117" fill="#5F6B67">A</text><path d="M76 112h120" stroke="#D3D8D5" stroke-width="5" stroke-linecap="round"/>
+          <rect x="40" y="130" width="204" height="28" rx="8" fill="#F5F6F4"/><circle cx="58" cy="144" r="10" fill="none" stroke="#9AA5A1" stroke-width="2"/><text x="58" y="149" fill="#5F6B67">B</text><path d="M76 144h96" stroke="#D3D8D5" stroke-width="5" stroke-linecap="round"/>
+          <rect x="40" y="162" width="204" height="28" rx="8" fill="#DCF0E5" stroke="#2E8B62" stroke-width="2"/><circle cx="58" cy="176" r="10" fill="#2E8B62"/><path d="M53 176l3.5 3.5 6.5-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M76 176h110" stroke="#8CC5A6" stroke-width="5" stroke-linecap="round"/>
+          <rect x="40" y="194" width="204" height="28" rx="8" fill="#F5F6F4"/><circle cx="58" cy="208" r="10" fill="none" stroke="#9AA5A1" stroke-width="2"/><text x="58" y="213" fill="#5F6B67">D</text><path d="M76 208h130" stroke="#D3D8D5" stroke-width="5" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <p>a questão</p></div>
   </div>
-  <div class="caneta"></div>
+  <svg class="caneta" style="left:560px; top:1520px; transform:rotate(-16deg)" width="600" height="60" viewBox="0 0 600 60">
+    <defs><linearGradient id="corpo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A3A3A"/><stop offset=".35" stop-color="#151515"/><stop offset="1" stop-color="#050505"/></linearGradient>
+      <linearGradient id="ouro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF0C2"/><stop offset=".5" stop-color="#C9A04F"/><stop offset="1" stop-color="#7A5418"/></linearGradient></defs>
+    <ellipse cx="320" cy="48" rx="270" ry="8" fill="rgba(30,16,4,.35)" filter="url(#sombra-suave)"/>
+    <path d="M10 30 L70 20 L70 40Z" fill="url(#ouro)"/><path d="M14 30 L60 30" stroke="#5A3E10" stroke-width="1.2"/>
+    <rect x="68" y="16" width="70" height="28" rx="6" fill="url(#corpo)"/>
+    <rect x="136" y="14" width="18" height="32" fill="url(#ouro)"/>
+    <rect x="152" y="12" width="420" height="36" rx="16" fill="url(#corpo)"/>
+    <rect x="230" y="7" width="150" height="8" rx="4" fill="url(#ouro)"/>
+    <rect x="160" y="16" width="400" height="5" rx="2.5" fill="rgba(255,255,255,.18)"/>
+  </svg>
 </section>
 
-<!-- 3: o P.S. e o cartão de visita -->
+<!-- ============ 3: o P.S. e o cartão ============ -->
 <section id="s3-cartao">
+  <i data-fundo></i>
   <div class="carta papel fim">
-    <div class="texto-carta">
-      <p>Seja qual for o seu ritmo, a gente organiza o caminho até lá.</p>
-    </div>
-    <p class="assinatura">Com carinho, Orto Questões<i data-simbolo></i></p>
-    <p class="ps">P.S.: Fique pronto, prepare-se. Estamos com você até 10 de janeiro.<small>A prova teórica do TEOT e do TEPOT é em 10 de janeiro de 2027.</small></p>
+    <div class="texto"><p>Seja qual for o seu ritmo, a gente organiza o caminho até lá. Um dia de cada vez.</p></div>
+    <div class="assina"><p>Com carinho,<b>Orto Questões</b></p>
+      <svg class="selinho" viewBox="0 0 200 200"><use href="#sinete"/></svg></div>
+    <div class="ps"><p>P.S.: Fique pronto, prepare-se. <span>Estamos com você até 10 de janeiro.</span></p>
+      <small>A prova teórica do TEOT e do TEPOT é em 10 de janeiro de 2027.</small></div>
   </div>
   <div class="cartao">
-    <div class="marca"><i data-simbolo></i><b>Orto</b><span>Questões</span></div>
+    <div class="marca"><svg><use href="#marca"/></svg><b>Orto</b><span>Questões</span></div>
     <h2>Treine grátis</h2>
-    <p>Crie sua conta grátis agora mesmo e conheça outras questões.</p>
+    <p class="sub">Crie sua conta grátis agora mesmo e conheça outras questões.</p>
     <div class="site"><span>ortoquestoes.com.br</span><span>o caminho está no perfil</span></div>
   </div>
+  <svg class="clipe" style="left:720px; top:905px; transform:rotate(-4deg)" width="70" height="190" viewBox="0 0 70 190">
+    <defs><linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#8E6A24"/><stop offset=".45" stop-color="#F4DCA0"/><stop offset="1" stop-color="#A47A2C"/></linearGradient></defs>
+    <path d="M20 170 V30 a15 15 0 0 1 30 0 V150 a9 9 0 0 1 -18 0 V46" fill="none" stroke="rgba(30,16,4,.35)" stroke-width="7" stroke-linecap="round" transform="translate(4 6)"/>
+    <path d="M20 170 V30 a15 15 0 0 1 30 0 V150 a9 9 0 0 1 -18 0 V46" fill="none" stroke="url(#metal)" stroke-width="6" stroke-linecap="round"/>
+  </svg>
+  <svg class="xicara" style="left:-150px; top:1640px" width="420" height="420" viewBox="0 0 420 420">
+    <ellipse cx="214" cy="222" rx="186" ry="186" fill="rgba(40,22,6,.35)" filter="url(#sombra-suave)"/>
+    <circle cx="210" cy="210" r="180" fill="#F6F1E6"/><circle cx="210" cy="210" r="168" fill="none" stroke="#E3D9C4" stroke-width="3"/>
+    <circle cx="210" cy="210" r="118" fill="#FBF8F1"/><circle cx="210" cy="210" r="104" fill="#5A3416"/>
+    <circle cx="210" cy="210" r="96" fill="#7A4A22"/><ellipse cx="190" cy="186" rx="44" ry="26" fill="rgba(230,190,140,.35)"/>
+    <path d="M376 196 h34" stroke="#F6F1E6" stroke-width="30" stroke-linecap="round"/>
+  </svg>
 </section>
 <script>
-document.querySelectorAll('[data-simbolo]').forEach(e => e.replaceWith(document.getElementById('simbolo').content.cloneNode(true)))
+document.querySelectorAll('[data-fundo]').forEach(e => e.replaceWith(document.getElementById('fundo').content.cloneNode(true)))
 </script>
 </body></html>
