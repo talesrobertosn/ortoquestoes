@@ -1,0 +1,588 @@
+{
+  "pediatria-0931": {
+    "questaoSha256": "29d12cf221923893577e50b28549369ee966ff9d75bd76766bb1e125c02a560e",
+    "comentarioAnteriorSha256": "289e9efc33b602f8330af91bf62efb20997c85607fdb50fa647a47123c93e6e0",
+    "comentario": {
+      "conceito": "**A ruga anterior resulta do aprisionamento profundo da pele pelo fragmento proximal.** Na supracondiliana em extensão, o distal vai para trás e o proximal se projeta anteriormente. Quando essa ponta atravessa o braquial e a fáscia e prende a derme profunda, surge a depressão cutânea chamada **pucker**.\n\nA fotografia mostra a pele afundada indicada pelas setas; o esquema ao lado representa a ponta proximal alcançando as partes moles anteriores. É um sinal de lesão importante e possível dificuldade de redução, não apenas uma contusão superficial. O capítulo também orienta procurar um orifício puntiforme: sangramento por ele transforma a fratura em exposta. Não é possível afirmar exposição somente pela depressão da fotografia. Sem chave oficial, A é a identificação bibliográfica.",
+      "correta": "**A: pucker por fragmento proximal, braquial e derme profunda.** A combinação corresponde ao mecanismo e à imagem. O distal segue posterior no padrão em extensão; quem atravessa anteriormente as partes moles é a ponta proximal.",
+      "incorretas": {
+        "B": "**A descrição mecânica corresponde ao que o capítulo denomina pucker.** Trocar o nome por Kirmisson não reproduz a identificação da fonte. O resumo não fornece base para ensinar uma definição alternativa desse epônimo a partir desta figura.",
+        "C": "**O nome pucker está correto, mas o segmento e a profundidade foram trocados.** Não é o distal que perfura anteriormente o braquial nesse padrão. A ponta proximal alcança a derme profunda, causando o repuxamento mostrado.",
+        "D": "**Erra a identificação usada na fonte e também o mecanismo.** A figura corresponde ao pucker, pela ponta proximal e pelo aprisionamento profundo. Fragmento distal e derme superficial não explicam a relação anatômica representada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco; Exame clínico e imagem."
+      ],
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Mecanismo, direção do desvio e estruturas em risco",
+          "Exame clínico e imagem"
+        ],
+        "blocos": [
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d",
+          "exame-clinico-e-imagem-8d983767",
+          "exame-clinico-e-imagem-ec5c2a40",
+          "exame-clinico-e-imagem-cfaf64ed",
+          "exame-clinico-e-imagem-c6cc4496",
+          "exame-clinico-e-imagem-eb8b368f",
+          "exame-clinico-e-imagem-dd609bf2",
+          "exame-clinico-e-imagem-fb5ba67e",
+          "exame-clinico-e-imagem-f2129dc6",
+          "exame-clinico-e-imagem-874e203a",
+          "exame-clinico-e-imagem-efc89a96",
+          "exame-clinico-e-imagem-8cad811b",
+          "exame-clinico-e-imagem-95ca44a3",
+          "exame-clinico-e-imagem-47355d98",
+          "exame-clinico-e-imagem-3e2479ab"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "40422be1a9fcddbb3a361c324985f6b282cb562a705b2765e355900d1be57ee3"
+      }
+    ],
+    "imagensConferidas": [
+      "sbot-sp-235.png"
+    ]
+  },
+  "pediatria-1042": {
+    "questaoSha256": "0e106ec9365b7ec44e6f23de59964100f74deffcffa1dc0ff0dad3e819d046de",
+    "comentarioAnteriorSha256": "42da5422399ba2c6d0bbf0c33fd2f6b097a596583b8aaf76a2208c7a28b86c9e",
+    "comentario": {
+      "conceito": "**Gartland IV é definido pela instabilidade multidirecional.** A fratura perde a dobradiça periosteal e fica instável em **flexão e extensão**, frequentemente reconhecida sob anestesia. Em fluoroscopia, o capítulo pode alternar sua posição em relação à linha umeral anterior conforme o cotovelo muda de posição.\n\nO tipo I tem desvio mínimo; o II mantém cortical posterior em dobradiça; o III apresenta desvio importante e rotação. Cominuição medial é uma condição adicional que pode produzir varo mesmo com perfil aparentemente aceitável, mas não deve ser confundida com a definição de IV. A classificação ajuda a antecipar como manter a redução e evita aplicar a técnica de uma dobradiça preservada quando ela já não existe.\n\n**Por que esta questão foi criada.** O exame dinâmico e a ausência de dobradiça distinguem o tipo IV e mudam a forma de controlar a redução.",
+      "correta": "**A: instável em flexão e extensão.** Essa perda de apoio em ambas as posições é o atributo central de IV. O diagnóstico pode aparecer no exame dinâmico durante a redução, sem ser evidente numa única radiografia estática.",
+      "incorretas": {
+        "B": "**Cortical posterior em dobradiça descreve o tipo II.** Esse apoio é justamente o que permite estabilidade relativa numa direção. O IV não conserva a dobradiça capaz de controlar flexão e extensão.",
+        "C": "**Colapso medial é importante, mas não define IV.** Ele altera o alinhamento coronal e pode exigir redução e fixação. A instabilidade multidirecional é um conceito diferente de identificar uma coluna cominuída.",
+        "D": "**Pequeno ou nenhum desvio, às vezes só com coxim posterior, corresponde ao tipo I.** Esse padrão é estável e não equivale à perda completa de apoio periosteal do IV."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Classificação de GARTLAND e a cominuição medial."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Classificação de GARTLAND e a cominuição medial"
+        ],
+        "blocos": [
+          "classificacao-de-gartland-e-a-cominuicao-medial-ab748080",
+          "classificacao-de-gartland-e-a-cominuicao-medial-a60bfb95",
+          "classificacao-de-gartland-e-a-cominuicao-medial-0e93af30",
+          "classificacao-de-gartland-e-a-cominuicao-medial-63fa556b",
+          "classificacao-de-gartland-e-a-cominuicao-medial-978a080d",
+          "classificacao-de-gartland-e-a-cominuicao-medial-11fe6d49",
+          "classificacao-de-gartland-e-a-cominuicao-medial-5692660d",
+          "classificacao-de-gartland-e-a-cominuicao-medial-e7fb4c3b"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "d90b9c9c87ff92e486942ed4b2aef5736ac4b471e8191c193bca2a32e5a4edf4"
+      }
+    ]
+  },
+  "pediatria-1043": {
+    "questaoSha256": "a11dd5dfb907210c195e60f17adda712cf9280fdeed21844b4558761deccd119",
+    "comentarioAnteriorSha256": "8be8f660b8b2598a7799f680d4509b53c06260acb773254bd7d595d1672465f1",
+    "comentario": {
+      "conceito": "**A supracondiliana em flexão tem comportamento oposto ao padrão em extensão.** O golpe posterior leva o fragmento distal para **anterior**. O periósteo posterior rompe e o anterior pode permanecer; por isso, o padrão tende a ser estável em extensão e instável em flexão.\n\nNo tipo II que se reduz e permanece estável em extensão, o capítulo admite **gesso com o cotovelo totalmente estendido por 3 semanas**, com controles. Isso não vale para todo tipo II: se for instável, é necessário fixar. Os padrões II e III instáveis recebem fios e não são tratados tentando manter hiperflexão. O ulnar é o nervo característico em risco e deve ser examinado.\n\n**Por que esta questão foi criada.** A questão testa a inversão do desvio e da dobradiça em relação à supracondiliana em extensão, evitando repetir sua conduta automaticamente.",
+      "correta": "**A: anterior e extensão.** A posição usa o apoio periosteal anterior remanescente do tipo II estável. A condição de estabilidade após reduzir é indispensável para aplicar a imobilização descrita.",
+      "incorretas": {
+        "B": "**O desvio anterior está correto, mas hiperflexão não é a escolha para esse padrão estável em extensão.** A flexão tende a perder o apoio e a redução. Se não houver estabilidade, o caminho é fixar, não aumentar a flexão do gesso.",
+        "C": "**A extensão corresponde à posição do tipo II estável, mas o distal está anterior, não posterior.** O deslocamento posterior pertence ao padrão em extensão, que é mais frequente e não deve ser confundido com o mecanismo perguntado.",
+        "D": "**Inverte a direção do distal e escolhe uma posição inadequada.** Na flexão, o distal vai anteriormente e o padrão descrito se mantém em extensão. A hiperflexão não é a solução para sua instabilidade."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Fratura supracondiliana em flexão."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Fratura supracondiliana em flexão"
+        ],
+        "blocos": [
+          "fratura-supracondiliana-em-flexao-a21a51b5",
+          "fratura-supracondiliana-em-flexao-9a522012",
+          "fratura-supracondiliana-em-flexao-2ad80c88",
+          "fratura-supracondiliana-em-flexao-d6eeef9c",
+          "fratura-supracondiliana-em-flexao-034a15ed",
+          "fratura-supracondiliana-em-flexao-d4613b25"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "f7d1388787a15bee0bdb27993732fea7ad386e9ca56b8638df271b0b5127b15e"
+      }
+    ]
+  },
+  "pediatria-1044": {
+    "questaoSha256": "80a2f5beeab9854e1e6aa6193e5d478ff96ec2f540b48de331145043f9c6ba2a",
+    "comentarioAnteriorSha256": "17e78a230ee1a652220bab36308818ad1b4ea4ffb81b514726632120d151c679",
+    "comentario": {
+      "conceito": "**O acesso precisa expor o foco sem destruir apoios e irrigação preservados.** Na supracondiliana em extensão, os autores preferem a via anterior quando a redução aberta é necessária. Ela aproveita braquial e periósteo já lesados e permite visualizar mediano e braquial.\n\nA via posterior é desaconselhada por maior instabilidade, perda de movimento e, sobretudo, **osteonecrose da tróclea**, ao ameaçar a irrigação terminal posterior do núcleo. A via também pode abrir uma dobradiça periosteal que ainda ajudava na estabilidade. Miosite ossificante é rara; não é a razão principal apontada. Isso não elimina cuidados com nervos e vasos em qualquer acesso, mas localiza o risco que determina a resposta.\n\n**Por que esta questão foi criada.** A escolha do acesso liga o plano cirúrgico à preservação da irrigação que pode determinar uma sequela anos depois.",
+      "correta": "**C: osteonecrose da tróclea.** A dissecção posterior pode lesar sua entrada vascular terminal e produzir uma sequela tardia articular. É o motivo de maior peso explicitado para evitar esse acesso no padrão em extensão.",
+      "incorretas": {
+        "A": "**Miosite ossificante é rara e não aumentou de forma que justificasse essa preferência nas séries citadas.** O capítulo a distingue das sequelas da agressão vascular posterior. A resposta principal é osteonecrose.",
+        "B": "**O radial exige proteção conforme a exposição, mas não é a razão predominante dada para contraindicar a via posterior nesse contexto.** A questão cobra o risco vascular da tróclea, não apenas a presença de um nervo próximo.",
+        "D": "**A braquial pode estar comprometida pela própria fratura e é uma razão para obter boa exposição anterior.** O risco destacado da dissecção posterior é sobre a irrigação da tróclea. Não se deve trocar o vaso principal do braço pelos pequenos vasos terminais do núcleo."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Redução aberta e fratura exposta; Outras complicações."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Redução aberta e fratura exposta",
+          "Outras complicações"
+        ],
+        "blocos": [
+          "reducao-aberta-e-fratura-exposta-a6ae8efe",
+          "reducao-aberta-e-fratura-exposta-7e884a40",
+          "reducao-aberta-e-fratura-exposta-883e5520",
+          "reducao-aberta-e-fratura-exposta-8b17fe86",
+          "reducao-aberta-e-fratura-exposta-8fa65482",
+          "reducao-aberta-e-fratura-exposta-7c36049e",
+          "reducao-aberta-e-fratura-exposta-0f16fac2",
+          "reducao-aberta-e-fratura-exposta-d47c3ad5",
+          "reducao-aberta-e-fratura-exposta-37ac9152",
+          "outras-complicacoes-ef2464f3",
+          "outras-complicacoes-3ccc4178",
+          "outras-complicacoes-a16b364b",
+          "outras-complicacoes-7df18448",
+          "outras-complicacoes-b1017a46",
+          "outras-complicacoes-0f62bca9",
+          "outras-complicacoes-484f2e26"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "a27331d1eb5b63ff41850ad01553a2ccc888f66411c298f90389644db951d755"
+      }
+    ]
+  },
+  "pediatria-1045": {
+    "questaoSha256": "a0c64a9ff692600650da79bae2deb0edfab46c28a24bad997bbcf549ce85ae07",
+    "comentarioAnteriorSha256": "ce54d2d8024e9b03c2e979aaa22a0101645009a29b0c30e4bf4f00cdbed2695d",
+    "comentario": {
+      "conceito": "**Perfil aceitável não garante alinhamento coronal preservado.** A cominuição da coluna medial permite colapso em varo e pode passar despercebida se a avaliação olhar apenas o perfil. No AP, ocorre **perda de Baumann**, na construção adotada pelo capítulo, e a necessidade de corrigir a deformidade não desaparece por a imagem sagital parecer boa.\n\nOs autores orientam **redução e, em geral, fixação**. A redução pode exigir força em valgo com o cotovelo estendido; fios laterais bem distribuídos mantêm o apoio. O dado de uma série, com varo frequente nos não operados, reforça a preocupação, mas não deve virar uma porcentagem universal. A definição do ângulo deve ser consistente com a usada no livro e na comparação contralateral.\n\n**Por que esta questão foi criada.** A cominuição medial é a situação em que uma incidência favorável pode esconder a deformidade que determina o tratamento.",
+      "correta": "**D: perda de Baumann e redução/fixação.** O colapso medial altera o plano coronal e exige restaurar o suporte. O perfil aceitável não compensa essa falha.",
+      "incorretas": {
+        "A": "**Erra a medida e aceita um tratamento que não enfrenta a instabilidade coronal.** A coluna medial colapsada pode perder Baumann e evoluir para varo. Um bom perfil isolado não torna a fratura estável para gesso.",
+        "B": "**A conduta de reduzir e fixar está adequada, mas o ângulo não deve ser presumido normal.** A perda coronal é justamente a pista no AP. É necessário avaliar as duas incidências e não apagar o sinal que motivou a indicação.",
+        "C": "**Reconhece a perda do ângulo, mas não corrige o mecanismo do colapso.** O capítulo recomenda redução e estabilização para evitar varo, em vez de simplesmente engessar porque o perfil é aceitável."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Exame clínico e imagem; Classificação de GARTLAND e a cominuição medial."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Exame clínico e imagem",
+          "Classificação de GARTLAND e a cominuição medial"
+        ],
+        "blocos": [
+          "exame-clinico-e-imagem-8d983767",
+          "exame-clinico-e-imagem-ec5c2a40",
+          "exame-clinico-e-imagem-cfaf64ed",
+          "exame-clinico-e-imagem-c6cc4496",
+          "exame-clinico-e-imagem-eb8b368f",
+          "exame-clinico-e-imagem-dd609bf2",
+          "exame-clinico-e-imagem-fb5ba67e",
+          "exame-clinico-e-imagem-f2129dc6",
+          "exame-clinico-e-imagem-874e203a",
+          "exame-clinico-e-imagem-efc89a96",
+          "exame-clinico-e-imagem-8cad811b",
+          "exame-clinico-e-imagem-95ca44a3",
+          "exame-clinico-e-imagem-47355d98",
+          "exame-clinico-e-imagem-3e2479ab",
+          "classificacao-de-gartland-e-a-cominuicao-medial-ab748080",
+          "classificacao-de-gartland-e-a-cominuicao-medial-a60bfb95",
+          "classificacao-de-gartland-e-a-cominuicao-medial-0e93af30",
+          "classificacao-de-gartland-e-a-cominuicao-medial-63fa556b",
+          "classificacao-de-gartland-e-a-cominuicao-medial-978a080d",
+          "classificacao-de-gartland-e-a-cominuicao-medial-11fe6d49",
+          "classificacao-de-gartland-e-a-cominuicao-medial-5692660d",
+          "classificacao-de-gartland-e-a-cominuicao-medial-e7fb4c3b"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "b9b0c233ebbb0a52d7a8b0c0c46537d96391472aba6c0da4ab5c584492b7c7fb"
+      }
+    ]
+  },
+  "pediatria-1082": {
+    "questaoSha256": "5efccb42f7ecbd8c7851d09031c1a8f4555ed155175116d94d257fdb9ceab49e",
+    "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "comentario": {
+      "conceito": "**Irredutibilidade com pulso fraco ou ausente sugere que partes moles possam estar presas no foco.** Na supracondiliana, mediano e braquial podem ficar interpostos, produzindo uma sensação elástica em vez de contato ósseo. A avaliação deve documentar perfusão e função nervosa, sem insistir em manobras que aumentem a agressão.\n\nO capítulo prefere **abordagem anterior, extensível para anteromedial**, para liberar e visualizar o feixe, remover o tecido interposto, reduzir e fixar. Se houver lesão arterial, a exposição permite tratá-la. A ausência de pulso isolada não exige sempre abrir; neste enunciado, porém, ela se soma à fratura declarada irredutível, mudando a indicação. A explicação à família deve se basear nessa necessidade de liberar estruturas e restabelecer alinhamento e circulação.",
+      "correta": "**E: redução aberta por via anteromedial.** É a alternativa compatível com a abordagem anterior que permite acompanhar braquial e mediano e resolver uma possível interposição. A irredutibilidade é o detalhe que afasta simplesmente repetir a tentativa fechada.",
+      "incorretas": {
+        "A": "**A necessidade de abrir é coerente, mas a via posteromedial não é a preferida para o feixe anterior ameaçado nesse cenário.** O acesso anterior/anteromedial permite visualizá-lo e liberá-lo, aproveitando o plano já lesado.",
+        "B": "**Redução fechada e fios é a conduta habitual quando a redução pode ser obtida.** O caso já a descreve como irredutível e com alteração de pulso. Repetir a mesma estratégia sem liberar a interposição não enfrenta o problema.",
+        "C": "**Fixador externo não substitui a liberação de uma fratura irredutível.** O obstáculo pode ser tecido ou o próprio feixe no foco. A prioridade é expor a região anterior, liberar e reconstruir a relação anatômica.",
+        "D": "**A via posterolateral também não oferece a exposição anterior preferida para a braquial e o mediano.** Além disso, dissecção posterior extensa deve ser evitada pela irrigação troclear. O alvo da abordagem é o feixe anterior possivelmente interposto."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Redução fechada: técnica, periósteo e rotação; Redução aberta e fratura exposta; A mão sem pulso."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Redução fechada: técnica, periósteo e rotação",
+          "Redução aberta e fratura exposta",
+          "A mão sem pulso"
+        ],
+        "blocos": [
+          "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4",
+          "reducao-aberta-e-fratura-exposta-a6ae8efe",
+          "reducao-aberta-e-fratura-exposta-7e884a40",
+          "reducao-aberta-e-fratura-exposta-883e5520",
+          "reducao-aberta-e-fratura-exposta-8b17fe86",
+          "reducao-aberta-e-fratura-exposta-8fa65482",
+          "reducao-aberta-e-fratura-exposta-7c36049e",
+          "reducao-aberta-e-fratura-exposta-0f16fac2",
+          "reducao-aberta-e-fratura-exposta-d47c3ad5",
+          "reducao-aberta-e-fratura-exposta-37ac9152",
+          "a-mao-sem-pulso-046891d4",
+          "a-mao-sem-pulso-49b55356",
+          "a-mao-sem-pulso-5556fd04",
+          "a-mao-sem-pulso-c734e9ee",
+          "a-mao-sem-pulso-12045389",
+          "a-mao-sem-pulso-5801482c",
+          "a-mao-sem-pulso-561dffc7",
+          "a-mao-sem-pulso-f4f3b89d",
+          "a-mao-sem-pulso-b65d5756",
+          "a-mao-sem-pulso-6b94a0c6",
+          "a-mao-sem-pulso-24574aaa",
+          "a-mao-sem-pulso-9ba2822a",
+          "a-mao-sem-pulso-9c6d88bd",
+          "a-mao-sem-pulso-a6c4af84",
+          "a-mao-sem-pulso-be54c437",
+          "a-mao-sem-pulso-3cbb0905",
+          "a-mao-sem-pulso-47fe0b6b",
+          "a-mao-sem-pulso-4ec07ae0",
+          "a-mao-sem-pulso-e9a4fa79"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "e8a2b49ac26b9a6629464475a52a1386e50c0950438906a609921ddd535fcff4"
+      }
+    ]
+  },
+  "trauma-0012": {
+    "questaoSha256": "9c4d5e649dbf01c33820ee370989eee45d7d8f1671301face66e291cd7afb0bf",
+    "comentarioAnteriorSha256": "bc82408a7849e69afbb1b426c3e0b6781cb8b23f703cd48aa42d9894302a799d",
+    "comentario": {
+      "conceito": "**Na criança, a evolução do comportamento pode denunciar a síndrome compartimental antes dos sinais clássicos.** O capítulo destaca ansiedade, **agitação** e aumento da necessidade de analgésico, os três As. Dor progressiva e resistência ao movimento passivo dos dedos também importam, mas a criança pode ter dificuldade de localizar e expressar o sintoma.\n\nPulso pode permanecer presente, e parestesia ou paralisia não devem ser aguardadas para investigar. Lesão mediana pode ainda mascarar a dor do compartimento volar. A agitação não é diagnóstica isoladamente: sua relevância está no contexto e na piora em relação ao comportamento esperado, exigindo reavaliação do membro e das imobilizações.",
+      "correta": "**B: agitação.** Entre as alternativas, integra o conjunto precoce destacado para crianças. Deve ser relacionada à ansiedade, demanda analgésica crescente e avaliação clínica, sem atribuir todo desconforto à rotina pós-trauma.",
+      "incorretas": {
+        "A": "**Dor é importante, especialmente quando cresce ou surge ao movimento passivo.** A pergunta enfatiza o sinal pediátrico de maior destaque, em que comportamento e consumo analgésico podem ser mais informativos. Escolher B não significa ignorar dor.",
+        "C": "**Parestesia faz parte dos sinais clássicos, mas pode ser difícil de avaliar e aparecer tarde.** Esperar alteração sensitiva para suspeitar perde a oportunidade de reconhecer a evolução inicial por comportamento e dor.",
+        "D": "**Ausência de pulso não é requisito e não é o melhor sinal precoce.** A pressão compartimental pode prejudicar a musculatura com pulso radial preservado. Ela também pode coexistir com lesão arterial da fratura, problema relacionado, porém distinto."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Síndrome compartimental."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Síndrome compartimental"
+        ],
+        "blocos": [
+          "sindrome-compartimental-9b6de2bd",
+          "sindrome-compartimental-b1ba06cc",
+          "sindrome-compartimental-dae17124",
+          "sindrome-compartimental-4a487435",
+          "sindrome-compartimental-6878dc8a",
+          "sindrome-compartimental-9b2517ff",
+          "sindrome-compartimental-11861475",
+          "sindrome-compartimental-dd5b1e68",
+          "sindrome-compartimental-52880eb5",
+          "sindrome-compartimental-744d234f",
+          "sindrome-compartimental-156d424b",
+          "sindrome-compartimental-c2479823"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "ef4cb581ced80e15a4fe95146db8711e8831dd210e5806dbb7a7b33534d35799"
+      }
+    ]
+  },
+  "trauma-1221": {
+    "questaoSha256": "a0a03516576e77c2a5267b66dba501ad155bd106ddcb24133ec6d4e35bb37203",
+    "comentarioAnteriorSha256": "51a4f9e30f9782db9e47a353d1e2663cb7809650e9fc2700196abc9eceb71f51",
+    "comentario": {
+      "conceito": "**A maioria das lesões nervosas associadas à supracondiliana fechada é neuropraxia e pode ser observada.** O capítulo relata recuperação ao longo de meses e reserva investigação ou exploração para falta de evolução esperada, especialmente após 3 a 6 meses. Não há indicação de abrir um nervo rotineiramente só porque existe déficit desde o trauma.\n\nHá exceções: fratura irredutível com déficit pode ter nervo preso; ausência de pulso com lesão mediana sugere comprometimento do feixe e recomenda exploração precoce. Uma lesão nova após fio também exige avaliação própria. O item é aceito como regra geral da neuropraxia, sem virar uma proibição absoluta de explorar. No caso-base, não há déficit nervoso descrito; o pulso ausente continua exigindo tratamento vascular adequado independentemente da regra neurológica.",
+      "correta": "**A: certo como princípio geral.** Não se indica exploração imediata rotineira de toda lesão nervosa, pois a recuperação espontânea é frequente. A decisão deve mudar se houver sinais de aprisionamento, comprometimento vascular associado ou evolução inadequada.",
+      "incorretas": {
+        "B": "**Marcar errado implicaria exigir exploração imediata pela simples presença de déficit, o que o capítulo não recomenda.** As exceções não anulam a regra de observação das neuropraxias. O correto é reconhecer ambas, evitando tanto operar todo déficit quanto ignorar um nervo preso."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Lesões nervosas: frequência, exame e conduta; A mão sem pulso."
+      ],
+      "alerta": "Gabarito A preservado como regra geral, sem caráter absoluto. Fratura irredutível com déficit e ausência de pulso associada à lesão mediana são exceções que podem exigir exploração precoce. A conduta vascular do caso-base deve ser avaliada separadamente."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Lesões nervosas: frequência, exame e conduta",
+          "A mão sem pulso"
+        ],
+        "blocos": [
+          "lesoes-nervosas-frequencia-exame-e-conduta-0aa48273",
+          "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
+          "lesoes-nervosas-frequencia-exame-e-conduta-0728a0e6",
+          "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804",
+          "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+          "lesoes-nervosas-frequencia-exame-e-conduta-de5f0f94",
+          "lesoes-nervosas-frequencia-exame-e-conduta-84cd80ba",
+          "lesoes-nervosas-frequencia-exame-e-conduta-f30679b8",
+          "lesoes-nervosas-frequencia-exame-e-conduta-8e857a72",
+          "lesoes-nervosas-frequencia-exame-e-conduta-a911dd5c",
+          "lesoes-nervosas-frequencia-exame-e-conduta-26fca161",
+          "lesoes-nervosas-frequencia-exame-e-conduta-c053f0be",
+          "lesoes-nervosas-frequencia-exame-e-conduta-7fcb874d",
+          "a-mao-sem-pulso-046891d4",
+          "a-mao-sem-pulso-49b55356",
+          "a-mao-sem-pulso-5556fd04",
+          "a-mao-sem-pulso-c734e9ee",
+          "a-mao-sem-pulso-12045389",
+          "a-mao-sem-pulso-5801482c",
+          "a-mao-sem-pulso-561dffc7",
+          "a-mao-sem-pulso-f4f3b89d",
+          "a-mao-sem-pulso-b65d5756",
+          "a-mao-sem-pulso-6b94a0c6",
+          "a-mao-sem-pulso-24574aaa",
+          "a-mao-sem-pulso-9ba2822a",
+          "a-mao-sem-pulso-9c6d88bd",
+          "a-mao-sem-pulso-a6c4af84",
+          "a-mao-sem-pulso-be54c437",
+          "a-mao-sem-pulso-3cbb0905",
+          "a-mao-sem-pulso-47fe0b6b",
+          "a-mao-sem-pulso-4ec07ae0",
+          "a-mao-sem-pulso-e9a4fa79"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "b22e5313b807f3c2869dd04ae5d07aa13e542634e3efadcbb53f7d54c32fa768"
+      }
+    ]
+  },
+  "pediatria-0614": {
+    "questaoSha256": "dc0a09d3671e4950e4a32a304c97caec999eaa0203eb62bcdf34f506133fec9a",
+    "comentarioAnteriorSha256": "d93891be8dfd2d643e661b4dea3c2ed01f0106e4bc221dc3797a0a181d126e8c",
+    "comentario": {
+      "conceito": "**As duas extremidades não contribuem igualmente para o crescimento do úmero.** O resumo atribui cerca de **20% à fise distal**; a parcela complementar média é **80% proximal**. A predominância proximal ajuda a entender por que o cotovelo tem menor capacidade de corrigir deformidades por crescimento que se poderia supor numa criança.\n\nA contribuição percentual não é o único fator: o plano também importa. Varo e valgo ficam fora do plano principal de movimento e não remodelam previsivelmente; a hiperextensão pode ter alguma correção em crianças muito pequenas, de modo limitado. Esses percentuais médios não significam uma taxa constante para cada ano, nem dispensam avaliar quanto crescimento resta.",
+      "correta": "**C: 80% proximal e 20% distal.** A fonte destaca a pequena contribuição distal, que explica parte da limitada remodelação no cotovelo. O enunciado pede proximal primeiro; inverter a ordem muda a resposta.",
+      "incorretas": {
+        "A": "**40% distal superestima a participação apresentada.** A referência usada é 20% distal e, por complemento, 80% proximal. A contribuição menor é relevante para o prognóstico das deformidades do úmero distal.",
+        "B": "**30% distal ainda é maior que o valor médio adotado.** A alternativa mantém predomínio proximal, mas não reproduz os percentuais pedidos. A distinção é numérica, sem precisar inventar uma mudança de mecanismo entre 20 e 30%.",
+        "D": "**10% distal reduz a contribuição abaixo da média solicitada.** O capítulo menciona crescimento restante pequeno em idades maiores, o que não é a mesma coisa que a participação média da fise distal ao longo do crescimento. A combinação geral é 80/20."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Tratamento: tipo, momento e o fim do gesso em flexão; O que remodela."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Tratamento: tipo, momento e o fim do gesso em flexão",
+          "O que remodela"
+        ],
+        "blocos": [
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-6a799e3c",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-7b19d268",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-d567e5d4",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-980760b0",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1315b451",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-8b554565",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b2444522",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3a5582cc",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-b75bada0",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-a5476c83",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3088b91e",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-9f19cdaf",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-3fb8e9f2",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-32dc2f79",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-22f5033a",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-1320d411",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-e72363b7",
+          "tratamento-tipo-momento-e-o-fim-do-gesso-em-flex-abb4bfdb",
+          "o-que-remodela-acc7c25f",
+          "o-que-remodela-10858a70"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "bb55e67512c17decd60f4fd8c380420328161f217df5b8b01f5c9bfb5f6a77dd"
+      }
+    ]
+  },
+  "pediatria-0995": {
+    "questaoSha256": "95f0214a2dea34c68be7f181bed60fac8b3dff63a83f67c004454635b00347dc",
+    "comentarioAnteriorSha256": "fef9fa7a80ed627d00e178c124b1fde276673b3492e5364ebf4dde05a85298b8",
+    "comentario": {
+      "conceito": "**A incapacidade de estender totalmente o cotovelo é um teste de triagem para lesão após trauma.** O capítulo cita séries com sensibilidade de 91% a 97% para fratura. Na avaliação de Appelboam, houve fratura também em uma pequena parcela das crianças que estendiam completamente, mostrando que movimento preservado não é uma garantia absoluta.\n\nA eventual dispensa de radiografia depende de exame cuidadoso, segurança de que não há fratura do olécrano e possibilidade de retorno em 7 a 10 dias se persistirem sintomas. Outros estudos foram menos favoráveis ao uso isolado do movimento. Portanto, o teste orienta a investigação e não substitui a história, a palpação, o exame neurovascular e a avaliação de lesões específicas.\n\n**Por que esta questão foi criada.** Foi criada para cobrar um teste clínico de triagem destacado no capítulo, mantendo as ressalvas da fratura do olécrano e da reavaliação.",
+      "correta": "**A: incapacidade de estender totalmente.** É o achado cujo desempenho de triagem foi estudado e destacado no resumo. Sua presença aumenta a necessidade de investigar; a ausência não permite descartar toda lesão em qualquer criança.",
+      "incorretas": {
+        "B": "**Dor na ponta do olécrano é uma preocupação localizada, não o teste de alta sensibilidade apresentado.** O próprio capítulo alerta que se deve excluir uma fratura do olécrano antes de confiar em extensão completa para dispensar imagem. O achado exige atenção, mas não substitui a resposta A.",
+        "C": "**Equimose medial localiza um trauma de partes moles e pode acompanhar lesões específicas.** Não é o teste clínico com a sensibilidade descrita para triagem geral de fratura. A alternativa não deve ser usada como regra de excluir lesão quando não há equimose.",
+        "D": "**Parestesia ulnar exige exame e documentação de possível lesão nervosa.** Sua ausência não exclui fratura e sua presença não corresponde ao teste de movimento estudado. O enunciado pede um achado de triagem para fratura, não um déficit neurovascular específico."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 12 · Evaluation of the Injured Pediatric Elbow. Conteúdo consultado no resumo Avaliação do cotovelo da criança traumatizada, Biblioteca OrtoQuestões, seções O exame clínico e quem precisa de radiografia.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 17. Conteúdo consultado no resumo das fraturas raras do cotovelo, seção Fratura do côndilo medial (equimose medial e parestesia ulnar como achados de lesão localizada)."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-12-avaliacao-cotovelo",
+        "titulo": "Avaliação do cotovelo da criança traumatizada",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 12 · Evaluation of the Injured Pediatric Elbow",
+        "secoes": [
+          "O exame clínico e quem precisa de radiografia"
+        ],
+        "blocos": [
+          "o-exame-clinico-e-quem-precisa-de-radiografia-b758f768",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-7af730fc",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-fdd19e48",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-6642b71f",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-844bacf3",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-c6fd5d66",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-737b8141",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-671573c9",
+          "o-exame-clinico-e-quem-precisa-de-radiografia-31e02f8b"
+        ],
+        "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
+        "trechosSha256": "ca1818f4e21d9701af8f79bf145c526f0ea489c86fad74d5582e744c3b9d48b2"
+      },
+      {
+        "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+        "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+        "secoes": [
+          "Fratura do côndilo medial"
+        ],
+        "blocos": [
+          "fratura-do-condilo-medial-26aed577",
+          "fratura-do-condilo-medial-97e495f8",
+          "fratura-do-condilo-medial-f094448d",
+          "fratura-do-condilo-medial-bb9240e3",
+          "fratura-do-condilo-medial-aececaae",
+          "fratura-do-condilo-medial-b9127181",
+          "fratura-do-condilo-medial-71c05757",
+          "fratura-do-condilo-medial-138a2e7f",
+          "fratura-do-condilo-medial-12e22a02",
+          "fratura-do-condilo-medial-a3777695",
+          "fratura-do-condilo-medial-ea87e909",
+          "fratura-do-condilo-medial-ff36cff3",
+          "fratura-do-condilo-medial-2b767636",
+          "fratura-do-condilo-medial-8240b0b1",
+          "fratura-do-condilo-medial-352fb1d3",
+          "fratura-do-condilo-medial-5752e73a",
+          "fratura-do-condilo-medial-869ae839",
+          "fratura-do-condilo-medial-111c3714",
+          "fratura-do-condilo-medial-0a7ec8d9",
+          "fratura-do-condilo-medial-2cd19de2",
+          "fratura-do-condilo-medial-0bbe3295",
+          "fratura-do-condilo-medial-0ce13163",
+          "fratura-do-condilo-medial-d06c4075",
+          "fratura-do-condilo-medial-e0378cf6",
+          "fratura-do-condilo-medial-a43e8291",
+          "fratura-do-condilo-medial-9616d6d3",
+          "fratura-do-condilo-medial-3148b36a",
+          "fratura-do-condilo-medial-d323a5de",
+          "fratura-do-condilo-medial-b4d52bd3",
+          "fratura-do-condilo-medial-a70ee5da",
+          "fratura-do-condilo-medial-fca9f900",
+          "fratura-do-condilo-medial-7324f8a1",
+          "fratura-do-condilo-medial-e440006c",
+          "fratura-do-condilo-medial-284c8825",
+          "fratura-do-condilo-medial-d686e75f",
+          "fratura-do-condilo-medial-d1a39f42"
+        ],
+        "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+        "trechosSha256": "044cb4cca39dabf4abd0906dbc5b789207cd511e6233804e1688c1c0ed24358e"
+      }
+    ]
+  }
+}

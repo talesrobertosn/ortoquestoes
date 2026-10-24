@@ -164,7 +164,7 @@ conceito: Para Hertel, extensão metafisária da cabeça de 8 mm ou menos, ruptu
 como: Caiu quatro vezes (TARO 2020, TEOT 2022 e duas sem ano): pela definição do preditor (8 mm ou menos), pela combinação dos dois parâmetros e invertendo "maior" e "menor". No TARO 2020 as alternativas trazem desvio da dobradiça de 2 mm; o capítulo não dá esse número, só fala em dobradiça rompida. No TEOT 2022 o gabarito descreve o lado bom dos critérios (dobradiça mantida e extensão maior que 8 mm): a pergunta era quais parâmetros os critérios consideram.
 armadilha: Cabeça partida (head-split): entra na classificação LEGO, mas não foi um dos preditores independentes.
 armadilha: Extensão metafisária maior que 8 mm: é o fator protetor.
-alerta: No TEOT/TARO sem ano (trauma-0265), a alternativa "impactadas em valgo" foi considerada errada e o gabarito foi a ruptura da dobradiça medial. O capítulo concorda que a dobradiça é o preditor de Hertel, mas os dados dos próprios autores mostram necrose **mais frequente** no padrão em valgo do que no varo posteromedial ou no colo cirúrgico (veja abaixo). Na prova, responda Hertel.
+alerta: Na prova de Ortopedia sem ano (trauma-0265), a alternativa "impactadas em valgo" foi considerada errada e o gabarito foi a ruptura da dobradiça medial. O capítulo concorda que a dobradiça é o preditor de Hertel, mas os dados dos próprios autores mostram necrose **mais frequente** no padrão em valgo do que no varo posteromedial ou no colo cirúrgico (veja abaixo). Na prova, responda Hertel.
 !fim
 
 ## Quando a necrose aparece

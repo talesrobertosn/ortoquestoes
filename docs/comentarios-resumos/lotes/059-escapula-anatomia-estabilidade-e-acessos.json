@@ -1,0 +1,394 @@
+{
+  "ombro-cotovelo-0245": {
+    "questaoSha256": "0fb21bda9e2e42de4451e8bfc14beafdbe0e1e26604f1208e95d9139aa2235ec",
+    "comentarioAnteriorSha256": "be2abc1c95dce65ad100abf5d611f2b0d3eb9fe7d7ce6ed15d0c888c3ce69ece",
+    "comentario": {
+      "conceito": "**Zelle 2B combina a lesão musculoesquelética com déficit neurológico incompleto.** A letra B diferencia esse padrão do 2A, em que se acrescenta lesão vascular. Se o déficit neurológico incompleto vier junto de lesão vascular, passa a ser tipo 3.\n\nA dissociação escapulotorácica é uma desconexão grave da cintura escapular do esqueleto axial, com lesão de partes moles e possível comprometimento dos vasos e do plexo. Pode ocorrer com a pele intacta. Portanto, a ausência de uma ferida aberta não torna a lesão pequena nem permite dispensar o exame neurovascular.\n\n| Zelle | Elemento que se soma à lesão musculoesquelética |\n|---|---|\n| 1 | Nenhum dos componentes neurovasculares da classificação |\n| 2A | Vascular |\n| 2B | Neurológico incompleto |\n| 3 | Neurológico incompleto e vascular |\n| 4 | Avulsão completa do plexo |\n\nA extensão da lesão do plexo tem grande valor prognóstico. Classificar o déficit como incompleto não significa que seja leve; significa que ele não equivale à perda completa da função neural do tipo 4. O prognóstico e o planejamento dependem de estabelecer a extensão real da lesão, além da situação vascular e das ameaças gerais do trauma.\n\nO quadro reproduzido no resumo tem uma ressalva editorial: o tipo neurológico incompleto aparece como “2” depois do 2A; corresponde ao 2B cobrado pela prova. Isso não muda o conteúdo da categoria.\n\n**Leia “Zelle: a classificação que a prova cobra”, na Biblioteca.** Separe presença de lesão vascular, integridade neurológica e completude da lesão do plexo.",
+      "correta": "**C: musculoesquelético e neurológico incompleto.** É o tipo 2B. Acrescentar lesão vascular ao mesmo déficit mudaria a classificação para 3; avulsão completa do plexo caracteriza 4.",
+      "incorretas": {
+        "A": "**Descreve o tipo 1, sem o componente neurovascular que define as categorias seguintes.** A lesão musculoesquelética está na base de todos os tipos, mas no 2B há déficit neurológico incompleto adicional.",
+        "B": "**Descreve o 2A.** O elemento acrescentado é vascular, enquanto no 2B é neurológico incompleto. A troca de letra muda o tipo de lesão associada, não apenas sua intensidade.",
+        "D": "**Descreve o tipo 3.** O déficit neurológico incompleto está presente, mas vem acompanhado de lesão vascular. A alternativa adiciona um componente que o 2B isoladamente não exige."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Dissociação escapulotorácica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "dissociacao-escapulotoracica-fb39e45c",
+          "dissociacao-escapulotoracica-8b999d6b",
+          "dissociacao-escapulotoracica-2b65a722"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "2c5af8b694c231e7cf817934ef4bef831b01e9df19eeca5bf6946e1ba198e2fb"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0401": {
+    "questaoSha256": "84d43ca243c309446d42f78bfbbfd113efc9557347e96c37381ebd6d0e4d3d76",
+    "comentarioAnteriorSha256": "97aa18cec8bee39a1cc2c3fbcd286ec851728a5c7c8363dcbae254b1e27f4b42",
+    "comentario": {
+      "conceito": "**No mapa do complexo suspensor apresentado pelo resumo, coracoacromial e clavícula distal são componentes do anel.** A alternativa C reúne dois elementos pertencentes a esse conjunto. O ponto essencial é distinguir o anel de sustentação dos pilares que o apoiam.\n\nO anel reúne processo glenoidal, coracoide, coracoclaviculares e coracoacromial, clavícula lateral, acromioclavicular e acrômio. O pilar superior é o terço médio da clavícula; o inferior é a junção da parte lateral do corpo com a espinha. A espinha pode participar dessa sustentação sem se tornar, por isso, um elemento do anel na lista usada para esta pergunta.\n\nUma ruptura isolada tende a manter estabilidade. Duas rupturas, ou uma ruptura com fratura de um pilar, podem criar uma situação instável. “Potencialmente instável” não determina uma operação idêntica para todos: padrão, desvio, ligamentos remanescentes e condição clínica precisam ser definidos.\n\n**Não confunda coracoumeral e coracoacromial.** O primeiro se relaciona ao úmero e está fora da lista do anel consultada; o segundo integra a ligação entre processos da escápula no modelo apresentado. Ter “coraco” no nome não torna qualquer ligamento parte do mesmo complexo.\n\nO resumo também critica o uso amplo de “ombro flutuante” e distingue a definição clássica da glenoide totalmente desconectada. Reconhecer os componentes do anel é um passo anatômico; não substitui analisar a estabilidade efetiva de uma fratura específica.\n\n**Leia “O anel de Goss”, na Biblioteca.** Desenhe anel e pilares em camadas diferentes para entender por que B mistura um componente ligamentar com uma estrutura de apoio.",
+      "correta": "**C: coracoacromial e terço distal da clavícula.** Ambos constam da lista do anel no resumo do capítulo 33. A identificação segue essa fonte e concorda com o gabarito oficial, sem usar o comentário antigo como evidência anatômica.",
+      "incorretas": {
+        "A": "**O acrômio pertence ao anel; o coracoumeral não pertence à lista apresentada.** O ligamento que a fonte inclui nessa relação é o coracoacromial. A proximidade dos nomes não dispensa conferir qual estrutura é conectada.",
+        "B": "**O trapezoide integra os coracoclaviculares, mas a espinha aparece no apoio inferior, não na lista de componentes do anel.** A alternativa mistura níveis do modelo. Participar da sustentação global não é o mesmo que pertencer ao anel específico perguntado.",
+        "D": "**O coracoide está no anel, mas o transverso do úmero não está.** A presença de um elemento correto não torna o par correto. É necessário que ambos pertençam ao conjunto definido pela fonte."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "6875afa5b29740efec19f908f39af0fc5c153fa33d4aff46bd6c38a1130e29fa"
+      }
+    ],
+    "imagensConferidas": [],
+    "justificativaRemocaoAlerta": "O alerta anterior não tinha fonte e negava o coracoacromial no anel, escolhendo B por misturar o anel com o pilar inferior. Após leitura integral do resumo 33, a lista inclui expressamente coracoacromial e clavícula lateral; a espinha participa do apoio inferior. A aula distingue essas categorias e sustenta C. Removida a alegação antiga de que o gabarito contrariaria essa fonte, sem atribuir consulta direta ao livro."
+  },
+  "trauma-0415": {
+    "questaoSha256": "0d9718d28c4da4335127b912d20b367ea86a0a48c28602822c1919a47b9c509c",
+    "comentarioAnteriorSha256": "b934f608e810664cc5a9f8f968f7f862e50f75f8d5865ab41a0a4975294419f3",
+    "comentario": {
+      "conceito": "**A tração excessiva do infraespinal na via de Judet ameaça o nervo supraescapular na incisura espinoglenoidal.** O risco nasce do modo de mobilizar o músculo para expor a face posterior da escápula; enxergar bem o osso não justifica tensionar o pedículo que o acompanha.\n\nNa descrição do acesso, a porção espinal do deltoide é liberada e rebatida para laterodistal. O intervalo entre infraespinal e redondo menor permite identificar e ligar os vasos circunflexos da escápula. Depois, no acesso amplo, o infraespinal é solto das suas origens escapulares e rebatido proximalmente, com cuidado para não estirar o feixe supraescapular.\n\nO trajeto explica a vulnerabilidade: o nervo percorre a fossa supraespinal e contorna a base da espinha pela incisura espinoglenoidal antes de terminar no infraespinal. Essa relação fixa limita quanto o músculo pode ser deslocado com segurança.\n\nAs abordagens por janelas procuram reduzir a mobilização. Podem preservar parte das inserções e diminuir a agressão muscular, mas sua escolha depende do padrão e da exposição necessária. A advertência não é evitar toda liberação; é obter a visão necessária com o menor dano compatível com a redução.\n\n**Leia “A via de Judet” e o trajeto do supraescapular, na Biblioteca.** Associe a etapa de exposição à estrutura que está sendo tensionada.",
+      "correta": "**B: nervo supraescapular.** Ele fica vulnerável quando o infraespinal é rebatido demasiadamente para proximal, sobretudo na relação com a incisura espinoglenoidal. O mecanismo pedido é tração, não simplesmente qualquer risco do acesso.",
+      "incorretas": {
+        "A": "**O axilar não é o nervo que acompanha essa etapa de elevação do infraespinal.** O resumo o situa abaixo do redondo menor na comparação do acesso, enquanto destaca o supraescapular no pedículo da região espinoglenoidal. Confundir os dois elimina a relação entre manobra e estrutura.",
+        "C": "**A alternativa não corresponde ao pedículo tracionado com o infraespinal.** O vaso que o resumo manda identificar e ligar no intervalo lateral é a circunflexa da escápula, e a estrutura ameaçada pela tração proximal é o feixe supraescapular. “Circunflexa anterior” não é um substituto desses nomes.",
+        "D": "**A cabeça longa do tríceps pode estar relacionada à região glenoidal, mas não é a estrutura que a fonte identifica como lesionada pela tração excessiva do infraespinal.** A pergunta exige reconhecer o pedículo que limita a mobilização, isto é, o nervo supraescapular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação; Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação",
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+          "vias-de-acesso-e-tecnica-de-fixacao-b5f2e443",
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+          "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "2301ca0eb1e8b856ea52209107094e03d529cf0e9e07171f7f212b5962af901b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0977": {
+    "questaoSha256": "37716092f379f5dfc4457a59accb5e292ce1d8e7196eed006a42ebc159a03b2b",
+    "comentarioAnteriorSha256": "297903cdb6a25c6526aa4c096e042455d5b0e705af49bc965fdce84845dd76d6",
+    "comentario": {
+      "conceito": "**Liberar a origem escapular do infraespinal é uma etapa do acesso clássico amplo de Judet.** A questão pede a sequência desse acesso, não uma das suas janelas limitadas. O grau de liberação pode ser menor nas modificações, mas isso não apaga a etapa do procedimento clássico.\n\nA incisão acompanha a espinha e desce pela borda medial. A porção espinal do deltoide é solta da espinha e rebatida para laterodistal. O infraespinal é liberado das origens na escápula e elevado proximalmente, expondo a fossa infraespinal, bordas, colo e parte posterior/inferior da glenoide.\n\nAntes da liberação muscular, o intervalo infraespinal–redondo menor dá acesso aos vasos circunflexos da escápula. Depois, a elevação exige proteger o supraescapular na incisura espinoglenoidal. Portanto, exposição, controle vascular e preservação neural são etapas relacionadas, não uma sequência de desinserções indiscriminadas.\n\nAs janelas limitadas podem explorar o intervalo lateral sem soltar o deltoide ou combinar janelas lateral e medial. A vantagem é diminuir a agressão muscular; a limitação é a exposição que cada padrão exige. O exame cobra o clássico, mas o aprendizado deve reconhecer também por que o autor prefere dissecar menos quando possível.\n\n**Leia “A via de Judet”, na Biblioteca.** Separe trajeto da pele, porção do deltoide liberada e origem do infraespinal, para não trocar uma etapa por outra.",
+      "correta": "**C: liberação da origem do infraespinal a partir da escápula.** Isso permite rebatê-lo proximalmente no acesso amplo. Deve ser feito com proteção do feixe supraescapular, e não por tração excessiva para aumentar a visão.",
+      "incorretas": {
+        "A": "**O intervalo com o redondo menor é utilizado, mas desinseri-lo não é a etapa clássica pedida.** A fonte descreve abrir esse plano, controlar os vasos e liberar o infraespinal. Usar um intervalo não significa remover a origem de ambos os músculos.",
+        "B": "**A incisão de Judet acompanha espinha e borda medial.** Uma abordagem limitada da borda lateral corresponde à lógica da Dupont-Evrard descrita no resumo. Trocar a borda modifica o acesso, não apenas o tamanho da incisão.",
+        "D": "**A porção destacada é a espinal, posterior, do deltoide.** O resumo a solta da espinha até a borda posterior do acrômio. A expressão “porção lateral” não reproduz a origem que é liberada para essa exposição."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+          "vias-de-acesso-e-tecnica-de-fixacao-d5ce803f",
+          "vias-de-acesso-e-tecnica-de-fixacao-b5f2e443",
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+          "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b",
+          "vias-de-acesso-e-tecnica-de-fixacao-b44038d8"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "ff2eaa247293b9eb0d2caa791f4f661e837e8445d379db4219cabb394c96ca08"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0907": {
+    "questaoSha256": "4ba5104f05b0c9502338afbaa57c8519be9d0b00c393e0e4dbbb0010c663a6af",
+    "comentarioAnteriorSha256": "0cebfc84e7089f514b7b1480572320d5fd04f6065a0c36bb8d7786a1bc73cab1",
+    "comentario": {
+      "conceito": "**Costelas são as fraturas mais frequentemente associadas às da escápula nas séries do resumo.** A escápula está apoiada sobre o gradil costal e, em traumas de alta energia, o mesmo impacto pode comprometer osso, parede torácica e pulmão.\n\nA fonte informa fraturas de costelas em 27% a 65%, enquanto lesões da cintura escapular, incluindo clavícula, úmero proximal e acromioclavicular, aparecem em 8% a 47%. As faixas vêm de séries heterogêneas; não devem ser somadas nem usadas como frequência exata de um paciente individual.\n\nA descoberta da fratura escapular no politrauma frequentemente ocorre na imagem de tórax. Isso é um convite para procurar lesões associadas, não para encerrar a investigação após identificar a linha de fratura. O resumo destaca lesões pulmonares, de cabeça, grandes vasos e plexo, e atribui a mortalidade principalmente ao trauma intratorácico e à falência de órgãos.\n\n**A região anatômica não elimina o risco sistêmico.** Uma fratura aparentemente localizada na cintura pode ser um marcador de energia e justificar revisão cuidadosa do exame e das imagens já obtidas. Em idosos com queda simples, o perfil pode ser diferente; nem toda fratura escapular representa o mesmo mecanismo.\n\n**Leia “As lesões associadas”, na Biblioteca.** Relacione a proximidade do tórax com a necessidade de procurar mais do que outras fraturas do ombro.",
+      "correta": "**A: costela.** É a associação mais frequente destacada. O dado ajuda a direcionar a avaliação torácica, sem transformar uma taxa de séries em certeza de que todo paciente terá lesão costal.",
+      "incorretas": {
+        "B": "**O esterno não é apontado como a fratura associada mais frequente.** A possibilidade de trauma anterior do tórax não substitui o ranking apresentado. A fonte destaca as costelas, coerentes com o apoio da escápula sobre a parede torácica.",
+        "C": "**A clavícula pode fraturar junto e é relevante para a estabilidade da cintura.** Ainda assim, a frequência de associação não supera a de costelas no resumo. Importância para definir ombro flutuante e frequência de todas as lesões associadas são critérios diferentes.",
+        "D": "**O úmero proximal pertence ao grupo de lesões associadas da cintura escapular.** Não é a resposta predominante da comparação. Estar próximo da glenoide não basta para superar a relação epidemiológica e mecânica com o gradil costal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Epidemiologia, mecanismo, lesões associadas e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-330e3cc8",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-9deaa695",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-6aeaaa87"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "cbd4510d54f55c7b503281c287c050f9a065a44032546857d08a7398e737366a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0920": {
+    "questaoSha256": "82be1def80758fce3b24955e526e8b5f16f6b63ca3c2ba277586c6fc8c3d4516",
+    "comentarioAnteriorSha256": "2aedf99600a3e87a70ad49339591410fcdef77378c637233e0f99d07ba1fcf46",
+    "comentario": {
+      "conceito": "**A consolidação viciosa é a principal complicação do tratamento conservador das fraturas da escápula.** O osso pode unir rapidamente e ainda assim deixar um problema mecânico. Consolidar não é sinônimo de restaurar a relação entre glenoide, corpo e parede torácica.\n\nNas fraturas extra-articulares, o desalinhamento modifica o ritmo escapuloumeral e o trajeto do manguito. Uma proeminência pode doer, e a face anterior irregular pode atrapalhar o deslizamento sobre o tórax. Nas articulares, a incongruência residual acrescenta instabilidade e risco de artrose.\n\nA pseudartrose existe, sobretudo na espinha lateral, onde o fragmento angulado pode estreitar o espaço subacromial. No acrômio, deve ser diferenciada de os acromiale. Esses detalhes importam, mas não mudam o predomínio da viciosa no conjunto do tratamento conservador.\n\nO supraescapular também pode ficar preso no traço de uma fratura do colo, com atrofia do infraespinal. Uma queixa persistente exige distinguir deformidade, não união, lesão neural e dano articular; a resposta mais frequente não torna as outras possibilidades inexistentes.\n\n**Leia “Do tratamento conservador”, na Biblioteca.** Acompanhe alinhamento e função, além da presença de calo, para entender por que a união radiográfica pode não encerrar o problema.",
+      "correta": "**B: consolidação viciosa.** É a complicação mais comum destacada para o conservador. Ela pode comprometer função por desalinhamento extra-articular ou incongruência articular, mesmo com os fragmentos unidos.",
+      "incorretas": {
+        "A": "**A pseudartrose é importante em locais específicos, mas é menos comum que a viciosa no conjunto.** O resumo ressalta espinha lateral, acrômio e bico do coracoide. Não se deve transferir o risco desses padrões para todas as fraturas escapulares.",
+        "C": "**A lesão do supraescapular pode ocorrer por aprisionamento no traço do colo.** É um diagnóstico relevante diante de atrofia do infraespinal, mas não lidera a frequência de complicações conservadoras descrita. Frequência e necessidade de procurar uma lesão são coisas distintas.",
+        "D": "**A artrose pode resultar de uma glenoide que consolidou incongruente.** É uma consequência especialmente ligada ao dano articular; a viciosa abrange também os desalinhamentos do corpo e do colo. A alternativa é mais específica e não representa a principal complicação global."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complicações; Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complicações",
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "complicacoes-19395d4e",
+          "complicacoes-fafb04b3",
+          "complicacoes-3f02ac41",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "9005c14356aa910f23ac94ca8d4aa506f6db888f84b6cac8cccc5457c308c5e2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1082": {
+    "questaoSha256": "6be23b7084d71ac4066232b5b72d91fc7a840eb089b7a1e7a2ac7218093a020b",
+    "comentarioAnteriorSha256": "8187dd6f488b8b3071798719e53323d7649c0ab81568f3e3adc81bb5283610b3",
+    "comentario": {
+      "conceito": "**Glenoide superior acompanhada do coracoide corresponde ao tipo III de Ideberg-Goss.** O traço sai pela borda superior da escápula, deixando no fragmento a porção superior da fossa e o coracoide. Essa combinação anatômica diferencia o III do II, que separa a parte inferior.\n\nA classificação começa pelas bordas: tipo I é borda anterior ou posterior. Depois entram as fraturas centrais da fossa: II sai lateralmente; III, superiormente; IV atravessa o corpo até a borda medial. O tipo V combina trajetos, e o VI é cominuto.\n\n| Pista do traço | Tipo correspondente |\n|---|---|\n| Borda anterior/posterior | I |\n| Glenoide inferior, saída lateral | II |\n| Glenoide superior com coracoide | III |\n| Traço pelo corpo até a borda medial | IV |\n\nO enunciado fala em terço superior; a tabela do resumo usa metade superior, e a descrição da série do autor informa variação da parcela envolvida. O dado que resolve não é uma fração rígida, mas a porção superior da fossa com o coracoide e a saída superior do traço.\n\n**Classificar não basta para indicar tratamento.** Tamanho, desvio, congruência e estabilidade da cabeça também precisam ser avaliados. O autor critica classificações que descrevem o trajeto sem traduzir os aspectos que mudam a conduta.\n\n**Leia “Ideberg modificada por Goss”, na Biblioteca.** Acompanhe a saída do traço e o que o fragmento leva consigo.",
+      "correta": "**C: tipo III.** O fragmento superior inclui o coracoide, e o traço segue para a borda superior. A fração exata da superfície pode variar; essa relação anatômica é a pista discriminante.",
+      "incorretas": {
+        "A": "**Tipo I é uma fratura de borda, anterior ou posterior.** Não descreve o bloco superior com o coracoide da pergunta. A distinção inicial é borda periférica versus fratura central da fossa.",
+        "B": "**Tipo II separa a glenoide inferior e sai pela borda lateral.** Ele troca tanto a região do fragmento quanto a direção de saída. Ter um traço que atravessa a glenoide não torna II e III equivalentes.",
+        "D": "**Tipo IV cruza horizontalmente o corpo até a borda medial.** A pista do enunciado é superior com coracoide, que corresponde a III. A classificação deve ser lida pelo trajeto completo, não apenas pela existência de fratura articular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-0ef4b3c3",
+          "fraturas-da-glenoide-b25a3b02",
+          "fraturas-da-glenoide-65e0de7d",
+          "fraturas-da-glenoide-7240e61a"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "96aef16a4bb8478186f8b96df74f3485dc51fa96106e756f3222a57220879016"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0974": {
+    "questaoSha256": "001f147c13341b91ea7ef16416031417d4ac1757255d57cfd581c22d43effd01",
+    "comentarioAnteriorSha256": "c547404ac8b105a24e4c7271af916a68dcd765460be917cf6c1d1c7eb48ef2a2",
+    "comentario": {
+      "conceito": "**Subluxação persistente da cabeça umeral é indicação de fixação da fratura glenoidal na fonte consultada.** O objetivo é recuperar congruência e estabilidade. Uma articulação que permanece subluxada não se torna aceitável apenas porque uma medida de degrau está abaixo de um limite numérico.\n\nO resumo apresenta degrau ou diástase de quatro a cinco milímetros com 25% a 30% da superfície envolvidos, ou subluxação persistente. A condição da articulação deve ser integrada à idade, demanda e possibilidade de cirurgia. A tabela relativa também admite operar com degrau menor que quatro milímetros se a cabeça estiver subluxada.\n\nA área circular dos dois terços inferiores é a principal superfície de contato, com destaque para o quadrante anteroinferior. O polo superior, cerca de 20%, é menos crítico. Assim, localização, tamanho do fragmento e comportamento da cabeça importam tanto quanto uma medida isolada.\n\nNão se deve inverter a regra e dizer que todo fragmento pequeno é inofensivo ou que todo degrau de três milímetros exige operar. A questão oferece B como um sinal direto de instabilidade persistente; as outras medidas isoladas não atingem a indicação apresentada.\n\n**Leia “Quando operar a glenoide”, na Biblioteca.** Julgue estabilidade e congruência juntas, em vez de usar apenas a porcentagem da superfície ou apenas o degrau.",
+      "correta": "**B: subluxação persistente.** Ela demonstra que a relação articular não foi mantida e é um critério próprio de cirurgia no resumo. Pode justificar fixação mesmo sem o maior degrau da regra numérica.",
+      "incorretas": {
+        "A": "**Três milímetros isoladamente ficam abaixo do limiar de quatro a cinco descrito.** Esse número não exclui cirurgia se houver instabilidade, mas a alternativa não acrescenta esse achado. Não se deve presumir uma subluxação que não foi informada.",
+        "C": "**O polo superior é menos crítico para o contato e a estabilidade que a área circular inferior.** Seu acometimento por si só não é a indicação oferecida. Ainda se avaliam desvio, congruência e risco de impacto do coracoide nos padrões superiores.",
+        "D": "**Doze por cento isoladamente é inferior à participação de 25% a 30% citada na regra.** Isso não autoriza ignorar uma instabilidade real, mas a opção só informa tamanho. A indicação inequívoca entre as alternativas é a subluxação persistente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide; Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide",
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-d94ae394",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "fraturas-da-glenoide-e47df132"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "eddfbf97faa3a938148dfede4bffed50cb29a94adcae383ea043e0655bd51c1d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0263": {
+    "questaoSha256": "f0da078c8c7029c597b46c7a5d92cfb9e6801644f054b2db6ecea1a0f62f3bef",
+    "comentarioAnteriorSha256": "673930c480af01445334e72974da780849703e665a065928037e2cd19e509a17",
+    "comentario": {
+      "conceito": "**Ângulo glenopolar abaixo de 20 graus favorece cirurgia, como indicação relativa.** A redação da alternativa D é a que corresponde ao critério cobrado; o número não deve ser transformado em ordem automática independente da fratura, do paciente e da qualidade da medida.\n\nO ângulo é formado por duas linhas: uma une os polos superior e inferior da glenoide; a outra sai do polo superior da glenoide até o ângulo inferior da escápula. O acrômio não participa dessa construção. A fonte descreve valor padrão de 41 graus na AP verdadeira, com faixa de 35 a 51 graus.\n\nO valor informa a relação glenoide–corpo. Uma deformidade importante pode alterar o ritmo escapuloumeral e o trajeto muscular. No algoritmo, valores menores que 20 ou maiores que 60 favorecem cirurgia em jovem ativo, ao lado de angulação e translação da borda lateral.\n\n**A ressalva do capítulo é importante:** as medidas e os pontos críticos não são universalmente padronizados. Além disso, no colo anatômico o ângulo pode aumentar, chegando a 70 graus, em vez de diminuir. Um valor alto não exclui deformidade grave, e um valor baixo precisa ser interpretado no padrão correto.\n\n**Leia “O ângulo glenopolar e os outros três critérios”, na Biblioteca.** Aprenda os marcos e o significado mecânico antes do ponto de corte; a reconstrução 3D pode esclarecer o padrão que a radiografia sugere.",
+      "correta": "**D: abaixo de 20 graus.** É o critério relativo compatível com a pergunta. A indicação final considera padrão, desvio tridimensional, condição clínica e demanda, pois o próprio capítulo reconhece falta de consenso universal sobre a medida.",
+      "incorretas": {
+        "A": "**Vinte a trinta graus não é a faixa normal apresentada.** O resumo cita aproximadamente 41 graus, entre 35 e 51. A faixa de 20 a 60 do algoritmo ajuda a decisão de tratamento e não deve ser confundida com o intervalo anatômico normal.",
+        "B": "**O acrômio não é um dos marcos.** As referências são os dois polos da glenoide e o ângulo inferior da escápula. Trocar o marco modifica a construção e impede aplicar o ponto de corte destinado ao ângulo glenopolar.",
+        "C": "**Quarenta e cinco graus pode estar dentro da faixa normal e não é o limite de cirurgia.** A alternativa ampliaria indevidamente a indicação a muitos valores fisiológicos. O algoritmo destaca menos de 20 ou mais de 60, interpretados no contexto clínico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-6963932a",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "1d1201b788aa3a6dad677d028d4f0d8842ea952e37306e57215e69c754205e18"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0448": {
+    "questaoSha256": "ba7101ada1ffe4404424ae76dcb17ae42822fe199d02d001ffe3784f1a7768eb",
+    "comentarioAnteriorSha256": "306aa20ead93a8c0a24be190856085ed81a23806f5e1b04e59edc5f96837cbd9",
+    "comentario": {
+      "conceito": "**Na fratura do colo anatômico, a glenoide desvia para distal e em valgo.** Esse padrão não deve ser confundido com o colo cirúrgico totalmente instável por ruptura ligamentar, em que o fragmento vai para distal e medial.\n\nO colo anatômico separa uma peça que leva a fossa e uma pequena parte da borda lateral, com apenas as cabeças longas do bíceps e do tríceps presas. O coracoide fica fora desse fragmento. A diferença de vínculos musculares e ligamentares ajuda a entender por que não se aplica a mesma direção de desvio a todas as fraturas chamadas de “colo”.\n\nNo colo cirúrgico, o fragmento inclui o coracoide; se os coracoclaviculares e coracoacromial rompem, os músculos ligados ao coracoide puxam a glenoide para distal e medial. No transespinhal, o resumo descreve varo. Reconhecer qual bloco ficou solto vem antes de decorar uma direção.\n\n| Padrão | Desvio destacado |\n|---|---|\n| Colo anatômico | Distal e valgo |\n| Colo cirúrgico totalmente instável ligamentar | Distal e medial |\n| Transespinhal | Varo |\n\nNo anatômico, o ângulo glenopolar pode aumentar, até cerca de 70 graus. Portanto, usar apenas o ponto de corte inferior de 20 graus poderia deixar passar uma deformidade importante. A análise exige identificar o padrão e seu desvio em três dimensões.\n\n**Leia “As três fraturas do colo e para onde vai a glenoide”, na Biblioteca.** Observe se o fragmento inclui o coracoide antes de escolher a direção.",
+      "correta": "**B: distal e em valgo.** É a direção característica do colo anatômico apresentada. O aumento do ângulo glenopolar é coerente com esse padrão e o diferencia dos casos em que se procura apenas um ângulo muito reduzido.",
+      "incorretas": {
+        "A": "**Acerta a descida e troca valgo por varo.** O varo aparece no padrão transespinhal descrito, não como direção típica do colo anatômico. O nome preciso do traço define qual relação deve ser usada.",
+        "C": "**Inverte tanto a direção longitudinal quanto a angulação.** O fragmento anatômico vai para distal e em valgo. A opção não corresponde à combinação anatômica e de vínculos do fragmento da pergunta.",
+        "D": "**Acerta o valgo e troca a descida por deslocamento proximal.** A fonte descreve o segmento para distal, com alargamento subacromial. Um componente correto não torna a combinação completa compatível."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula; Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula",
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-8bbbb416",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+          "medir-o-desvio-e-indicar-a-cirurgia-386950ef"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "d29a570ec20a83b5935fe98219f5a1a67e320921db7b1b3b894f48d984332831"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

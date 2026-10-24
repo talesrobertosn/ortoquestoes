@@ -20,18 +20,20 @@ Ordem atual:
 | Feed | Stories |
 |---|---|
 | 1. Jornal | 1. Cartaz de cinema |
-| 2. Cofre de duas chaves | 2. Mecânica fina |
-| 3. Tabela de Snellen | 3. Raspadinha da prova |
-| 4. GPS do nervo | 4. Planta de engenharia |
-| 5. Caderneta de topografia | 5. Exame de DNA |
-| 6. Museu | 6. Bingo da prova |
-| 7. VAR da questão | 7. Radar premium |
-| 8. Laboratório de patologia | 8. Cupom fiscal (versão questão primeiro) |
-| 9. Jogo de cartas | |
-| 10. Embarque | |
-| 11. Ache os 3 erros | |
-| 12. Linhas do metrô | |
-| 13. Plantão das 3h14 | |
-| 14. Modelo padrão | |
+| 2. Cofre de duas chaves | 2. Busca (aprovado em 22/10/2026) |
+| 3. Busca (aprovado em 22/10/2026) | 3. Mecânica fina |
+| 4. Tabela de Snellen | 4. Raspadinha da prova |
+| 5. GPS do nervo | 5. Planta de engenharia |
+| 6. Caderneta de topografia | 6. Exame de DNA |
+| 7. Museu | 7. Bingo da prova |
+| 8. VAR da questão | 8. Leilão (usado em 21/10/2026; ainda sem modelo aprovado) |
+| 9. Laboratório de patologia | 9. Radar premium |
+| 10. Jogo de cartas | 10. Cupom fiscal (versão questão primeiro) |
+| 11. Embarque |  |
+| 12. Ache os 3 erros |  |
+| 13. Linhas do metrô |  |
+| 14. Plantão das 3h14 |  |
+| 15. Modelo padrão |  |
+| 16. Conversa do grupo R+ |  |
 
 Os stories de propaganda (Treine grátis, Créditos finais) ficam fora da fila: entram quando o Tales pedir, sempre **sem figurinha de link** (orientação de 19/10/2026).

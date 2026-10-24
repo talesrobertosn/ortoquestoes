@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, supabase } from '../conta/supabase'
 import { href } from '../util/rotas'
@@ -19,6 +19,7 @@ import { SeloAssinante } from '../componentes/Premium'
 import { conquistaAtual, emblemaPorId, VITRINE_MAXIMO } from '../estado/conquistas'
 import { usarConquistas } from '../estado/usarConquistas'
 import { Medalha } from '../componentes/Medalha'
+import { RelogioPixel } from '../componentes/RelogioPixel'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
@@ -138,7 +139,7 @@ function Podio({ linhas, periodo, eu }: { linhas: LinhaRanking[]; periodo: Perio
     lugares={linhas.slice(0, 3).map((linha) => ({
       posicao: linha.posicao, nome: linha.apelido, ehVoce: linha.eh_voce,
       total: linha.total.toLocaleString('pt-BR'), rotuloTotal: periodo === 'semana' ? 'na semana' : 'questões',
-      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} /><Movimento linha={linha} /></span>,
+      extra: <span className="sc__extra"><SeloServico servico={linha.servico} /><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={40} /><Fogueira dias={linha.sequencia ?? 0} tamanho={22} /><Movimento linha={linha} /></span>,
     }))} />
 }
 
@@ -193,11 +194,37 @@ const linhasDemo = (): LinhaRanking[] => Array.from({ length: 34 }, (_, i) => ({
   variacao: [2, 0, -1, 4, 0, 1, 3][i % 7], variacao_semana: [6, 1, 0, 2, 0, 5, 1][i % 7], novo: i === 11, referencia_em: '2026-10-13', emblemas: null, sequencia: [12, 3, 0, 40, 7, 1, 21][i % 7], servico: null,
 }))
 
+const DEZ_MIN = 600_000
+
+/**
+ * O ranking é recalculado no servidor de 10 em 10 minutos (pg_cron, parte 34, pedido do Tales em
+ * 21/10/2026), nos minutos redondos: :00, :10, :20... O relógio conta até a próxima rodada e, 30 s
+ * depois dela, pede a lista de novo.
+ */
+function RelogioRanking({ aoAtualizar }: { aoAtualizar: () => void }) {
+  const proxima = () => Math.ceil((Date.now() + 1) / DEZ_MIN) * DEZ_MIN
+  const [alvo, definirAlvo] = useState(proxima)
+  const [viradas, definirViradas] = useState(0)
+  useEffect(() => {
+    const virada = window.setTimeout(() => { definirAlvo(proxima()); definirViradas(n => n + 1) }, Math.max(0, alvo - Date.now()) + 1000)
+    return () => window.clearTimeout(virada)
+  }, [alvo])
+  // 30 s depois de cada virada, a lista nova já está pronta no servidor.
+  useEffect(() => {
+    if (!viradas) return
+    const recarga = window.setTimeout(aoAtualizar, 30_000)
+    return () => window.clearTimeout(recarga)
+  }, [viradas, aoAtualizar])
+  return <RelogioPixel liberaEm={new Date(alvo).toISOString()} rotulo="Próxima atualização" rodape="O ranking atualiza a cada 10 minutos" janelaMs={DEZ_MIN} minutos compacto legivel />
+}
+
 export function Ranking() {
   const { sessao: sessaoReal } = usarConta()
   const sessao = DEMO ? ({ user: { id: 'demo' } } as unknown as typeof sessaoReal) : sessaoReal
   const { contexto } = usarContextoLocal('')
   const [periodo, definirPeriodo] = useState<Periodo>('geral')
+  const [rodada, definirRodada] = useState(0)
+  const recarregarRanking = useCallback(() => definirRodada(n => n + 1), [])
   const [linhas, definirLinhas] = useState<LinhaRanking[] | null>(null)
   const [minhaPosicao, definirMinhaPosicao] = useState<MinhaPosicao>(null)
   const [erro, definirErro] = useState(false)
@@ -261,7 +288,7 @@ export function Ranking() {
       definirMinhaPosicao(minha.data?.[0] ?? null)
     }).catch(() => { if (vivo) definirErro(true) })
     return () => { vivo = false }
-  }, [sessao, periodo])
+  }, [sessao, periodo, rodada])
 
   if (!DEMO && (!contasDisponiveis || !supabase)) {
     return <article className="limite-leitura empilha">
@@ -292,6 +319,7 @@ export function Ranking() {
       <div className="rq-heroi__texto">
         <p className="tr-heroi__selo">Arena dos residentes · Top 50</p>
         <h1 id="rq-titulo">Ranking</h1>
+        <RelogioRanking aoAtualizar={recarregarRanking} />
         <p className="rq-heroi__lead">Cada questão diferente respondida vale um ponto. Estude todo dia para acender a fogueira e ver o seu nome subir.</p>
         {top && top.length > 0 && <dl className="rq-placar">
           <div><dt>Na arena</dt><dd className="numerico">{top.length >= 50 ? '50+' : top.length}</dd></div>
@@ -399,7 +427,7 @@ export function Ranking() {
               <span className="rq-linha__avatar" aria-hidden="true">{iniciais(linha.apelido)}</span>
               <span className="rq-linha__quem">
                 <span className="rq-linha__nome"><span className="rq-linha__apelido">{linha.apelido}</span>{linha.eh_voce && <span className="rq-voce">você</span>}<SeloServico servico={linha.servico} /></span>
-                <span className="rq-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={24} /><Fogueira dias={linha.sequencia ?? 0} tamanho={16} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
+                <span className="rq-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={30} /><Fogueira dias={linha.sequencia ?? 0} tamanho={18} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
               </span>
               <span className="rq-linha__placar">
                 <b className="numerico">{linha.total.toLocaleString('pt-BR')}</b>

@@ -1,0 +1,26 @@
+{
+  "data": "2026-10-23",
+  "metodo": "Abertura e inspeção individual dos quatro arquivos antes da redação; não é revisão médica.",
+  "questoes": {
+    "trauma-1098": {
+      "arquivo": "trauma/trauma-1098-1.jpeg",
+      "sha256": "bdef047bd9c409235c239b685ce3a547a31393c9e752a8e08479febd5428ae95",
+      "observacao": "AP, perfil e TC sagital/axial abertos. Cominuição do corpo de L2 envolvendo ambos os platôs e parede posterior, com retropulsão. Não atribuir medida percentual de canal nem afirmar integridade ligamentar definitiva pela figura."
+    },
+    "trauma-1099": {
+      "arquivo": "trauma/trauma-1099-1.jpeg",
+      "sha256": "78e3b9c9660c8b3dcf8e49c4252368c7e1d6207f9873e47b84126262b40952da",
+      "observacao": "AP aberto, com alargamento interpedicular no nível fraturado em comparação aos vizinhos. Sem escala numérica, sem inventar distância em milímetros; distinguir de afastamento interespinhoso e translação."
+    },
+    "coluna-0535": {
+      "arquivo": "coluna/coluna-0535-1.jpeg",
+      "sha256": "b01f2222d561407298f240d5a55194fbdd705cd6b102266e743ef3d314f11594",
+      "observacao": "AP aberto: setas interpediculares de 22 mm acima e 28 mm no nível fraturado. Não converter a anotação de 16 graus desta projeção em medida sagital ou limiar universal; o comentário usa apenas as distâncias pediculares do caso."
+    },
+    "coluna-0552": {
+      "arquivo": "coluna/coluna-0552-1.jpeg",
+      "sha256": "ba6eacf745e50b995e5d5c3bd2f795b51209217d8450e4c47827345a2d23bab7",
+      "observacao": "Radiografia lateral e TC abertas, com coluna anquilosada e abertura anterior em T10–T11. Correlacionado ao mecanismo de hiperextensão do enunciado; déficit é dado clínico, não inferência de grau pela imagem. Preservação da cifose prévia no transporte."
+    }
+  }
+}

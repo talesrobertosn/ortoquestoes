@@ -1,0 +1,82 @@
+{
+  "trauma-0687": {
+    "questaoSha256": "18490dce46acf39288a218c61539d2889cb72f6d68d577ca456bf1ce0bca101b",
+    "comentarioAnteriorSha256": "2ac25d39c43121d2bc57aa75eef95a01d4c8bea8331b471046ddc1a11d7d58c3",
+    "comentario": {
+      "conceito": "O perfil escapular mostra a deformidade entre os fragmentos da **borda lateral**. Essa borda participa do pilar que transmite a carga da glenoide; uma angulação importante altera a relação entre a superfície articular, o corpo e o trajeto dos músculos do ombro. Não se trata do ângulo glenopolar, que é outra medida, feita na AP verdadeira.\n\nNo resumo do capítulo, **angulação maior que 40° no perfil** é um dos critérios relativos que favorecem cirurgia nas fraturas extra-articulares do colo e do corpo. A pergunta oferece 15°, 30°, 45° e 60°: **45° é o primeiro valor apresentado acima desse limite**. Por isso o gabarito é compatível, embora o corte do capítulo não seja escrito como “45°” (resumo do Rockwood, 10ª ed., cap. 33, “Os critérios relativos de cirurgia”).\n\nEssas medidas não substituem a avaliação do paciente. Idade, demanda, outras lesões e condição das partes moles entram na decisão; uma angulação isolada não torna a operação obrigatória em qualquer pessoa. Para rever o plano da medida e os critérios relativos, consulte essa seção no resumo da Biblioteca.",
+      "correta": "**C: 45°.** Entre os valores oferecidos, é o primeiro que ultrapassa o critério de mais de 40° citado no capítulo. A decisão clínica continua relativa ao desvio e às condições do paciente; a resposta identifica o patamar dentro das opções da questão.",
+      "incorretas": {
+        "A": "**Quinze graus não atinge o critério angular descrito.** Esse valor isolado fica abaixo de mais de 40° no perfil. Não permite concluir que toda a fratura será conservadora, porque outros desvios ou lesões podem influenciar a conduta.",
+        "B": "**Trinta graus ainda está abaixo desse limite específico.** A medida deve ser comparada com a angulação da borda lateral no perfil, e não com o ângulo glenopolar na AP. Somente esse número não preenche o critério angular citado.",
+        "D": "**Sessenta graus também ultrapassa o limite, mas não é onde ele começa entre as opções.** A pergunta usa “a partir de”. Esperar 60° excluiria o intervalo já abrangido pelo critério de mais de 40°; 45° é a primeira opção que o satisfaz."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-af910b0f",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "7df09688cfe5fc98bbfb350bdb7de199b786796a3f78af3c015a17206ca09123"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1307": {
+    "questaoSha256": "60c8f5bb0ee2697b8f83ef4d211a91f16091e7899de1f1ba7f591e6cda08bdc7",
+    "comentarioAnteriorSha256": "cf34098b7054ebcfa9c0fbfa5aedafb6846d0369595dd34aba3db54c6f85cd69",
+    "comentario": {
+      "conceito": "As duas medidas olham relações diferentes. O **ângulo glenopolar** compara a orientação da glenoide com o corpo da escápula. Para construí-lo, são necessárias a linha entre os polos da glenoide e a linha do polo superior ao ângulo inferior da escápula. A projeção de referência é a **AP verdadeira da escápula, ou Neer I**.\n\nA **angulação dos fragmentos da borda lateral** é avaliada no outro plano: o **perfil escapular, Neer II ou incidência em Y**. Esse perfil também permite apreciar translação e encavalamento dos fragmentos. Usar o plano errado confunde uma medida da relação glenoide-corpo com a deformidade entre os fragmentos da borda lateral (resumo do Rockwood, 10ª ed., cap. 33, “O ângulo glenopolar e os outros três critérios”).\n\nNa tomografia 3D, a mesma lógica orienta a escolha da vista apropriada, com maior precisão. Antes de aplicar qualquer valor de indicação cirúrgica, confira qual medida foi feita e em qual projeção. O resumo da Biblioteca apresenta essas medidas lado a lado.\n\n**Por que esta questão foi criada.** Para distinguir as projeções usadas nas duas medidas que orientam o tratamento das fraturas extra-articulares.",
+      "correta": "**B: anteroposterior verdadeira (Neer I) e perfil da escápula (Neer II).** A ordem acompanha os dois objetivos: glenoide em relação ao corpo na AP verdadeira; angulação da borda lateral no perfil. A reconstrução 3D pode complementar essas medidas, mas não altera a correspondência pedida.",
+      "incorretas": {
+        "A": "**Inverte as projeções.** O perfil é usado para a angulação da borda lateral, enquanto o ângulo glenopolar tem como referência a AP verdadeira. Não basta lembrar as duas incidências: é preciso associar cada uma à sua medida.",
+        "C": "**Acerta o perfil para a borda lateral, mas erra a primeira medida.** A incidência de referência do ângulo glenopolar é a Neer I, pois utiliza os polos da glenoide e o ângulo inferior da escápula. A opção substitui essa projeção pela axilar.",
+        "D": "**Acerta o ângulo glenopolar e troca o plano da angulação.** A primeira medida realmente é feita na AP verdadeira. Para a angulação entre os fragmentos laterais, porém, o capítulo usa o perfil escapular em Y, não a axilar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia; Epidemiologia, mecanismo, lesões associadas e imagem. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-cdd666cd",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-b84994ab",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c",
+          "medir-o-desvio-e-indicar-a-cirurgia-6963932a"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "e395533eedd7e9dd250f5315c07dee0935728cc460b8b1898c1fdfc015eb24f7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

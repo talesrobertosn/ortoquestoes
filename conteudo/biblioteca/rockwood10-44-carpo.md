@@ -81,7 +81,7 @@ Cerca de **10%** das fraturas do escafoide têm lesão associada, e a mais comum
 
 !questoes central=trauma-0698,trauma-0908 relacionadas=trauma-0275
 conceito: A lesão associada mais comum da fratura do escafoide é a fratura do rádio proximal (cabeça ou colo).
-como: O CET-PR e o TEOT/TARO pediram a associação direta; outra questão do TEOT/TARO acrescentou "alta energia" ao enunciado e manteve o rádio proximal como gabarito.
+como: O CET-PR e a prova de Ortopedia pediram a associação direta; outra questão de Ortopedia acrescentou "alta energia" ao enunciado e manteve o rádio proximal como gabarito.
 alerta: Em trauma-0275, o enunciado fala em alta energia e o gabarito é o rádio proximal. O Rockwood dá o rádio proximal como a associação mais comum **no geral** e lista o rádio distal, a luxação perilunar e a transescafoperilunar justamente entre as associações **da alta energia**. A resposta coincide com a frase geral do livro, mas o adjetivo do enunciado puxa para o rádio distal.
 armadilha: Ligamento escafossemilunar: a força que quebra o escafoide costuma poupar o ligamento; as duas lesões juntas são possíveis, mas menos comuns.
 !fim
@@ -369,7 +369,7 @@ Pela **constância**: a lesão é **estática** quando o intervalo já está abe
 
 !questoes central=mao-0660,mao-1041,mao-0921,trauma-0276 relacionadas=mao-0615,mao-0589,mao-1001 treino=mao-1685
 conceito: Intervalo maior que 5 mm (com sinal do anel), ângulo escafossemilunar acima de 60° a 80° e ângulos capitossemilunar ou radiossemilunar acima de 20° indicam dissociação escafossemilunar; na fratura do rádio distal, a variância ulnar positiva maior que 2 mm prediz lesão grave.
-como: A FMRP-USP 2026 pediu o intervalo diagnóstico do sinal de Terry Thomas (5 mm); a UFG 2021 pôs o ângulo maior que 20° contra sinais normais (intervalo de 2 mm, semilunar quadrangular); a UFG 2019 cobrou o aumento do ângulo escafossemilunar na subluxação rotatória; o TEOT/TARO cobrou a variância ulnar positiva. O TARO 2008 perguntou o ângulo que confirma a instabilidade; essa prova não tem gabarito no acervo, e no livro o capitossemilunar acima de 20° é diagnóstico, enquanto o escafossemilunar acima de 60° marca o DISI (o diagnóstico vem acima de 80°).
+como: A FMRP-USP 2026 pediu o intervalo diagnóstico do sinal de Terry Thomas (5 mm); a UFG 2021 pôs o ângulo maior que 20° contra sinais normais (intervalo de 2 mm, semilunar quadrangular); a UFG 2019 cobrou o aumento do ângulo escafossemilunar na subluxação rotatória; a prova de Ortopedia cobrou a variância ulnar positiva. O TARO 2008 perguntou o ângulo que confirma a instabilidade; essa prova não tem gabarito no acervo, e no livro o capitossemilunar acima de 20° é diagnóstico, enquanto o escafossemilunar acima de 60° marca o DISI (o diagnóstico vem acima de 80°).
 alerta: O TARO 2013 (mao-0589) e a UFG 2020 (mao-1001) deram a lesão do escafossemilunar como a associação da fratura da estiloide do rádio. O Rockwood diz que, nas lesões de grande arco, a força que passa **pela estiloide ou pelo próprio escafoide costuma poupar o escafossemilunar**, e que a fratura-luxação da estiloide (do chofer) é uma instabilidade **não dissociativa**, com fragmento grande que leva o radioescafocapitato preso. O livro só associa o escafossemilunar ao rádio distal em geral (até 40%) e à variância ulnar positiva maior que 2 mm.
 armadilha: Semilunar quadrangular na PA: é o normal; o triangular indica semilunar rodado (perilunar).
 armadilha: Intervalo de 2 mm: está dentro do normal.
@@ -405,7 +405,7 @@ A tabela original de Andersson e Garcia-Elias (44-17) tem sete estágios e separ
 
 !questoes central=mao-0240,mao-0777 relacionadas=mao-1209 treino=mao-1687
 conceito: No Garcia-Elias, a dissociação irreparável com subluxação rotatória redutível do escafoide e cartilagem íntegra é o estágio IV e pede reconstrução com enxerto, como a tenodese de três ligamentos.
-como: O TEOT/TARO e o INTO 2023 usaram o mesmo enunciado: um pediu a técnica, o outro o estágio. A PUC-SP 2023 pediu a definição do estágio 3; essa prova não tem gabarito no acervo, e o capítulo define o estágio III como ligamento irreparável **sem** desalinhamento.
+como: A prova de Ortopedia e o INTO 2023 usaram o mesmo enunciado: um pediu a técnica, o outro o estágio. A PUC-SP 2023 pediu a definição do estágio 3; essa prova não tem gabarito no acervo, e o capítulo define o estágio III como ligamento irreparável **sem** desalinhamento.
 armadilha: Reparo ligamentar: só serve quando o ligamento ainda é reparável (estágio II).
 armadilha: Quatro cantos: é salvamento das fases irredutíveis ou com artrose.
 !fim
@@ -441,7 +441,7 @@ Para a deformidade fixa, a lesão sem tecido, a artrose local ou a alta demanda,
 
 !questoes central=mao-0994,mao-1550,mao-1520,mao-0526,mao-0594,mao-0968 relacionadas=mao-0132,mao-1436
 conceito: Ligamento irreparável e deformidade redutível pedem reconstrução com tendão (Brunelli usa o flexor radial do carpo); a artrodese triescafoide estabiliza o escafoide na subluxação rotatória e não serve quando já há artrose radioescafoide.
-como: A UFG 2020 contou dissociação com mais de 4 meses sem artrose (ligamentoplastia de Garcia-Elias); a USP-SP 2024 mostrou lesão aguda após queda de 4 m (reparo e fixação temporária); a USP-SP 2026, lesão estática com 9 meses (reconstrução dorsal e volar). O TARO 2010 pediu o tendão de Brunelli; o TARO 2013 e a UFG 2020, a indicação da triescafoide; o TEOT/TARO, a contraindicação (artrose radioescafoide com colapso). A USP-SP 2024 pediu a artrodese de indicação parecida com a escafocapitato (triescafo).
+como: A UFG 2020 contou dissociação com mais de 4 meses sem artrose (ligamentoplastia de Garcia-Elias); a USP-SP 2024 mostrou lesão aguda após queda de 4 m (reparo e fixação temporária); a USP-SP 2026, lesão estática com 9 meses (reconstrução dorsal e volar). O TARO 2010 pediu o tendão de Brunelli; o TARO 2013 e a UFG 2020, a indicação da triescafoide; a prova de Ortopedia, a contraindicação (artrose radioescafoide com colapso). A USP-SP 2024 pediu a artrodese de indicação parecida com a escafocapitato (triescafo).
 armadilha: Extensor radial curto ou longo do carpo: aparecem em reconstruções dorsais, mas o Brunelli clássico é com o flexor radial do carpo.
 armadilha: Triescafoide na instabilidade não dissociativa ou na lesão lunopiramidal: a ETT trata o escafoide instável.
 armadilha: Reparo com miniâncoras na lesão crônica: o ligamento já não é reparável.
@@ -507,7 +507,7 @@ Na radiografia: **quebra dos arcos de Gilula** na PA, **semilunar triangular** (
 
 !questoes central=mao-0239,mao-1074 relacionadas=mao-1169
 conceito: Cerca de um quarto das luxações perilunares não é diagnosticado no primeiro atendimento; a forma mais comum de instabilidade complexa é a fratura-luxação transescafoperilunar.
-como: O TEOT/TARO pediu a porcentagem de luxações perdidas (25%); a PUC-SP 2019, o tipo mais comum de dissociação complexa; a PUC-SP 2022, o percentual de associação com fratura do escafoide.
+como: A prova de Ortopedia pediu a porcentagem de luxações perdidas (25%); a PUC-SP 2019, o tipo mais comum de dissociação complexa; a PUC-SP 2022, o percentual de associação com fratura do escafoide.
 alerta: Na PUC-SP 2022 (mao-1169), o gabarito foi que a fratura do escafoide acompanha cerca de **60%** das luxações perilunares. O Rockwood não dá esse número: diz que as fraturas-luxações são duas vezes mais comuns que as luxações puras e que a maior parte é transescafoperilunar dorsal. A proporção fica perto do gabarito, mas o valor exato é da banca.
 armadilha: Luxação perilunar pura: é a de pequeno arco, a metade menos comum.
 !fim
@@ -572,7 +572,7 @@ Wolfe e Kakar propuseram o acrônimo **SCARCE** para decidir o tratamento: estab
 
 !questoes central=mao-0592,mao-1036,mao-0080 relacionadas=mao-0513,mao-0138 treino=mao-1684,mao-1686
 conceito: DISI vem da perda do elo escafoide-semilunar (dissociação escafossemilunar, fratura ou pseudartrose do escafoide); VISI estático vem da lesão lunopiramidal.
-como: O TARO 2013 pediu a correlação de Dobyns e Cooney (fratura do escafoide e DISI); a UFG 2021 pediu a lesão que não faz DISI (lunopiramidal); o TARO 2014 pediu o ligamento lesado no VISI estático. O TEOT/TARO cobrou os ângulos normais do perfil.
+como: O TARO 2013 pediu a correlação de Dobyns e Cooney (fratura do escafoide e DISI); a UFG 2021 pediu a lesão que não faz DISI (lunopiramidal); o TARO 2014 pediu o ligamento lesado no VISI estático. A prova de Ortopedia cobrou os ângulos normais do perfil.
 alerta: No TARO 2011 (mao-0513), o gabarito foi que a instabilidade perilunar é **dissociativa**. O Rockwood se contradiz: a tabela 44-4 põe a luxação perilunar entre os exemplos de dissociativa, mas o texto da classificação a chama de instabilidade **complexa** (falha entre as fileiras e dentro delas). O gabarito segue a tabela; a subluxação rotatória do escafoide, também nas alternativas, é o exemplo mais puro de dissociativa.
 armadilha: Na questão de ângulos (mao-0138), "escafossemilunar normal de 45° a 70°", "DISI abaixo de 45°" e "VISI acima de 70°" ficam erradas pelos números do livro (normal de 30° a 60°, DISI acima de 60°, VISI abaixo de 30°). O ângulo semilunopiramidal do gabarito não é dado no capítulo.
 armadilha: Dissociação lunopiramidal com DISI: a lunopiramidal faz VISI.
@@ -593,7 +593,7 @@ No SNAC, a diferença é que o **polo proximal continua articulado com o rádio*
 
 !questoes central=mao-0587,mao-0512 relacionadas=trauma-0344,mao-1442,mao-0993 treino=mao-1680,mao-1688
 conceito: SNAC e SLAC começam entre a estiloide do rádio e o escafoide, avançam pela fossa do escafoide e pela capitossemilunar e poupam a radiolunar; no estágio III a saída é a escafoidectomia com quatro cantos.
-como: O TARO 2012 pediu onde começa o estágio I (estiloide do rádio); o TARO 2011, o tratamento do estágio III (quatro cantos); o TEOT/TARO mostrou a radiografia e pediu o estágio. A UFG 2020 contou colapso avançado por lesão escafossemilunar crônica e pôs a carpectomia contra reconstruções ligamentares.
+como: O TARO 2012 pediu onde começa o estágio I (estiloide do rádio); o TARO 2011, o tratamento do estágio III (quatro cantos); a prova de Ortopedia mostrou a radiografia e pediu o estágio. A UFG 2020 contou colapso avançado por lesão escafossemilunar crônica e pôs a carpectomia contra reconstruções ligamentares.
 alerta: Na USP-SP 2024 (mao-1442), o gabarito foi o **polo proximal do capitato** como a superfície poupada no SNAC e comprometida no SLAC avançado. O Rockwood aponta outra superfície: no SNAC, o que fica poupado é a **articulação do polo proximal do escafoide com o rádio** (a fossa do escafoide), enquanto no SLAC o estágio II já pega **toda a fossa do escafoide**; a capitossemilunar entra no estágio III dos dois. Pelo livro, a alternativa mais defensável seria a fossa do escafoide.
 alerta: Na UFG 2020 (mao-0993), "colapso avançado" foi tratado com carpectomia. No Rockwood, a carpectomia proximal só serve até o estágio II; no III, com a capitossemilunar gasta, ela perde a indicação sem interposição. A resposta funciona entre as alternativas da prova (as outras eram reconstruções ligamentares), mas não vale para qualquer colapso avançado.
 armadilha: Fossa do escafoide no estágio I: é o II.

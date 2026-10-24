@@ -32,6 +32,32 @@ try {
   assert.equal(m.rotuloEtapa('residente', 'r2'), 'R2')
   assert.equal(m.rotuloEtapa('mao'), 'Residente de mão')
 
+  // Provas: as que o Tales listou (21/10/2026), com o TEPOT junto do TEOT.
+  for (const p of ['taro', 'teot', 'mao', 'titulo_mao', 'coluna', 'sbq', 'r4', 'atualizacao']) assert.ok(m.PROVAS.some(([v]) => v === p), p)
+  assert.equal(m.rotuloProva('teot'), 'TEOT')
+  assert.equal(m.rotuloBotaoProva('teot'), 'TEOT / TEPOT')
+  assert.equal(m.rotuloBotaoProva('sbq'), 'Título de quadril (SBQ)')
+  assert.deepEqual(m.lerProvas(['sbq', 'xyz', 'coluna']), ['sbq', 'coluna'])
+  assert.deepEqual(m.VALORES_PROVA, m.PROVAS.map(([v]) => v), 'passosPerfil.ts acompanha PROVAS')
+  assert.equal(m.proximoPasso({ situacao: 'r4', provas_interesse: ['xyz'] }), 'provas', 'prova desconhecida não conta')
+
+  // Crachá do perfil: uma pergunta por vez, na ordem; ortopedista não responde onde trabalha.
+  assert.equal(m.proximoPasso({}), 'etapa')
+  assert.equal(m.proximoPasso({ situacao: 'residente' }), 'etapa', 'residente sem ano')
+  assert.equal(m.proximoPasso({ situacao: 'residente', ano_residencia: 'r2' }), 'provas')
+  assert.equal(m.proximoPasso({ situacao: 'residente', ano_residencia: 'r2', provas_interesse: ['taro'] }), 'servico')
+  assert.equal(m.proximoPasso({ situacao: 'ortopedista', provas_interesse: ['sbq'] }), 'nome')
+  assert.ok(!m.passosPerfil({ situacao: 'ortopedista' }).some((p) => p.passo === 'servico'))
+  assert.equal(m.proximoPasso({ situacao: 'estudante', provas_interesse: ['taro'], servico: 'UFG', perfil_pulados: ['nome'] }), 'local', 'nome pulado não volta')
+  assert.equal(m.proximoPasso({ situacao: 'r4', provas_interesse: ['coluna'], servico: 'INTO', nome: 'Ana', uf: 'RJ' }), null)
+  assert.deepEqual(m.passosPerfil({}).filter((p) => p.opcional).map((p) => p.passo), ['nome'])
+  // Uma vez por entrada: login novo ou 20 horas depois.
+  const t0 = Date.parse('2026-10-21T12:00:00Z')
+  assert.ok(m.deveMostrarCracha(null, 'L1', t0))
+  assert.ok(!m.deveMostrarCracha({ login: 'L1', em: t0 }, 'L1', t0 + 3_600_000))
+  assert.ok(m.deveMostrarCracha({ login: 'L1', em: t0 }, 'L2', t0 + 60_000), 'login novo')
+  assert.ok(m.deveMostrarCracha({ login: 'L1', em: t0 }, 'L1', t0 + m.LEMBRAR_PERFIL_MS), '20 horas depois')
+
   // Locais de trabalho: limpa, tira vazios, repetidos (sem acento e maiúscula) e o principal; no máximo 8.
   assert.deepEqual(m.lerLocais(['  Santa Casa ', 'santa  casa', '', 'x', 'Clínica Ósso', 'clinica osso', 'HC'], 'Hospital das Clínicas'), ['Santa Casa', 'Clínica Ósso', 'HC'])
   assert.deepEqual(m.lerLocais(['Hospital das Clínicas', 'INTO'], 'hospital das clinicas'), ['INTO'])

@@ -179,7 +179,7 @@ Classificação de LETOURNEL: as cinco fraturas elementares e as cinco associada
 
 !questoes central=trauma-0282,quadril-0335,trauma-0672 treino=trauma-1521
 conceito: A fratura do acetábulo mais comum é a da parede posterior (cerca de 25%); entre as associadas, a de ambas as colunas (23%); a transversa responde por 5% a 19% e é elementar.
-como: Uma prova TEOT/TARO sem ano perguntou onde as fraturas do acetábulo mais ocorrem (parede posterior). O TARO 2013 pediu o tipo complexo mais frequente segundo LETOURNEL (dupla coluna, contra T, transversa com parede posterior e anterior com hemitransversa). O TARO 2024 juntou em par a frequência e o grupo da transversa.
+como: Uma prova de Ortopedia sem ano perguntou onde as fraturas do acetábulo mais ocorrem (parede posterior). O TARO 2013 pediu o tipo complexo mais frequente segundo LETOURNEL (dupla coluna, contra T, transversa com parede posterior e anterior com hemitransversa). O TARO 2024 juntou em par a frequência e o grupo da transversa.
 armadilha: Transversa com parede posterior como a associada mais comum: é frequente (cerca de 20%), mas ambas as colunas vem antes (23%).
 armadilha: Transversa como associada: atravessa as duas colunas, mas é um traço só, e por isso é elementar.
 !fim

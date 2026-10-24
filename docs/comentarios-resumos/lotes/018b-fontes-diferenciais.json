@@ -1,0 +1,69 @@
+{
+  "pediatria-0751": {
+    "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2",
+    "comentarioAnteriorSha256": "3c5f07091a9bc9f66759f11dc6f872a0428ee63604e746eac4121b560ffbf58a",
+    "comentario": {
+      "conceito": "**A fratura em flexão é a exceção ao padrão comum de extensão.** Em geral decorre de golpe posterior ou queda sobre o cotovelo e leva o fragmento distal anteriormente. O periósteo posterior se rompe e o anterior pode funcionar como apoio; por isso, o comportamento de estabilidade também difere da fratura em extensão.\n\nO **ulnar** é o nervo predominante nas neuropraxias desse padrão: na metanálise citada, respondeu por 91% das lesões nervosas das fraturas em flexão. Esse percentual não é de todas as fraturas, pois a neuropraxia ocorreu em uma fração dos casos. O nervo pode estar tensionado ou preso no foco, sobretudo quando a redução é difícil. Sem gabarito oficial registrado, C é a resposta bibliográfica.",
+      "correta": "**C: ulnar.** É a associação predominante do padrão em flexão. A tensão ou interposição do nervo também ajuda a explicar por que um déficit ulnar com irredutibilidade exige atenção especial.",
+      "incorretas": {
+        "A": "**O interósseo anterior predomina nas discussões do padrão em extensão, especialmente com desvio posterolateral.** Aplicar essa frequência à fratura em flexão ignora a mudança do deslocamento e da relação com o nervo ulnar.",
+        "B": "**O radial é o nervo característico em risco no desvio posteromedial em extensão.** A pergunta especifica flexão, na qual o capítulo descreve predomínio do ulnar. A direção e o mecanismo precisam ser mantidos juntos.",
+        "D": "**O mediano acompanha o feixe ameaçado na extensão com desvio posterolateral.** Não é o nervo mais comumente lesado no padrão em flexão descrito. O ulnar é a exceção que diferencia essa fratura da maioria das supracondilianas."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Fratura supracondiliana em flexão.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, seção Mecanismo, direção do desvio e estruturas em risco (comparação dos nervos nos padrões em extensão)."
+      ],
+      "provavel": "C",
+      "geradoEm": "2026-10-20"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Fratura supracondiliana em flexão"
+        ],
+        "blocos": [
+          "fratura-supracondiliana-em-flexao-a21a51b5",
+          "fratura-supracondiliana-em-flexao-9a522012",
+          "fratura-supracondiliana-em-flexao-2ad80c88",
+          "fratura-supracondiliana-em-flexao-d6eeef9c",
+          "fratura-supracondiliana-em-flexao-034a15ed",
+          "fratura-supracondiliana-em-flexao-d4613b25"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "f7d1388787a15bee0bdb27993732fea7ad386e9ca56b8638df271b0b5127b15e"
+      },
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Mecanismo, direção do desvio e estruturas em risco"
+        ],
+        "blocos": [
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+      }
+    ]
+  }
+}

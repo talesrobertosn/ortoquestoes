@@ -1,0 +1,55 @@
+{
+  "basePublicada": "663541fc99c197abb39885ca38ecb7244e6f05b5",
+  "lotes": {
+    "104-planalto-padroes-e-lesoes-associadas.json": {
+      "sha256": "b33eb27df9495eaa0a99757c931deaf681daec8e7ae70431d44d6fe6254e7578",
+      "ids": [
+        "trauma-0204",
+        "trauma-0296",
+        "trauma-0703",
+        "trauma-1014",
+        "trauma-1126",
+        "joelho-0212",
+        "trauma-0031",
+        "trauma-0076",
+        "trauma-0416",
+        "trauma-0313"
+      ]
+    },
+    "105-planalto-tecnica-e-seguranca.json": {
+      "sha256": "91a4447efc24508314f0be6e7ba353259c135f5df66d99838cdef00536dac4d3",
+      "ids": [
+        "trauma-1670",
+        "trauma-1672",
+        "trauma-1673",
+        "trauma-1674",
+        "trauma-1675",
+        "trauma-1676",
+        "trauma-1677",
+        "trauma-1678",
+        "trauma-1679",
+        "trauma-1681"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 496,
+    "head": "860aeb66794db0a206be3c8749eac896ffd68c8f",
+    "ci": 40017743233,
+    "pages": 40018069446,
+    "deployJob": 120636273041,
+    "avulsosIntegrais": 20
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 testes passaram; repetidos após catalogar lacunas",
+    "acervo": "sem erros",
+    "cadeia": "104–105, 20 IDs únicos; aplicação reproduzida desde a base, fontes/hashes e todas as alternativas conferidos; proteção dos membros alheios e vinte avulsos integrais",
+    "interface": "0204, 1014, 1126, 0703, 1678 e 1679, celular/computador; alerta e destinos de fonte; capturas abertas, sem erro de apresentação. Seletores do roteiro local corrigidos para rótulo acessível com prefixo da letra."
+  },
+  "figuras": "nenhum dos vinte enunciados contém figura; nenhum bloco figurativo foi usado como evidência",
+  "lacunas": "105-lacunas-planalto.json: seis pendências precisas, sem alteração dos comentários/gabaritos; não contam como revisão",
+  "publicado": false,
+  "proximoLote": "106",
+  "npmTest": "suíte completa passou",
+  "build": "passou; vinte avulsos integrais iguais"
+}

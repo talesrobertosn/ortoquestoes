@@ -1227,15 +1227,44 @@
     "conferido": false
   },
   "quadril-0127": {
+    "conceito": "No acesso lateral direto de Hardinge, a abertura do glúteo médio não pode subir indefinidamente acima do trocânter. O **nervo glúteo superior corre entre glúteos médio e mínimo**, e a extensão proximal da divisão muscular aproxima a dissecção desse nervo.\n\nA via divide o terço anterior do glúteo médio e continua pelo vasto lateral, deixando uma faixa de tendão no trocânter para sutura. O resumo destaca aumento de risco quando a divisão ultrapassa **cerca de 5 cm acima do trocânter**. A margem de 3 a 5 cm do enunciado deve ser entendida como cautela anatômica, não como garantia de que toda extensão até 5 cm seja segura em qualquer paciente (resumo do Rockwood, 10ª ed., cap. 53, “A via de Hardinge e o nervo glúteo superior”).\n\nA consequência da lesão é **fraqueza abdutora e marcha de Trendelenburg**. Assim, a via pode oferecer menor risco de luxação em comparação à posterior e, ainda assim, exigir proteção cuidadosa da função muscular. Leia a descrição no resumo da Biblioteca imaginando o nervo entre os dois glúteos, acima da região de inserção trocantérica.",
+    "correta": "**D: glúteo superior.** Sua posição entre glúteos médio e mínimo explica o limite proximal da divisão. A lesão compromete a abdução e pode produzir marcha de Trendelenburg.",
     "incorretas": {
-      "A": "O nervo ciático corre na parte de trás do quadril, fora do campo da via de Hardinge. Ele é o nervo em risco da via posterior.",
-      "B": "O nervo femoral fica na frente do quadril, mais profundo, e não é alcançado por essa via.",
-      "C": "O nervo glúteo inferior inerva o glúteo máximo e sai abaixo do piriforme. É mais relevante na via posterior."
+      "A": "**Ciático não é o nervo que determina esse limite proximal do Hardinge.** O resumo o relaciona à inervação posterior da articulação; aqui a região de risco é o plano entre glúteos médio e mínimo. A localização da dissecção, e não apenas a proximidade geral do quadril, identifica o nervo.",
+      "B": "**Femoral participa da inervação anterior da cápsula, mas não explica essa limitação proximal.** O risco descrito surge ao dividir o glúteo médio em direção ao nervo situado entre os abdutores. Confundir cápsula anterior com esse plano muscular troca a estrutura ameaçada.",
+      "C": "**O nome glúteo não basta para escolher o inferior.** O capítulo identifica especificamente o glúteo superior no intervalo entre médio e mínimo. O limite e a fraqueza abdutora resultante devem ser ligados a esse trajeto."
     },
-    "conceito": "A **via lateral direta de Hardinge** é muito usada nas artroplastias por fratura do colo do fêmur. O cirurgião **divide a parte da frente do músculo glúteo médio** e continua o corte pelo **vasto lateral**, mantendo os dois presos ao trocânter como uma faixa contínua. Depois, rebate essa faixa para a frente para expor a cápsula do quadril.\n\n**O limite de segurança**: o **nervo glúteo superior** corre entre o glúteo médio e o glúteo mínimo, cerca de **3 a 5 cm acima da ponta do trocânter maior**. Se o cirurgião abrir o glúteo médio além desse limite para cima, ele corta os ramos do nervo que vão para a parte da frente do glúteo médio e para o tensor da fáscia lata.\n\n**A consequência** da lesão é a **insuficiência dos abdutores**: o paciente não consegue manter a bacia nivelada ao apoiar numa perna só e anda com a marcha de **Trendelenburg** (a bacia cai para o lado oposto a cada passo), mancando. Não existe um bom tratamento para reconstruir essa lesão, por isso a **prevenção** é o mais importante.\n\n**O nervo em risco em cada via**:\n\nvia lateral direta (Hardinge): **glúteo superior**;\n\nvia posterior: **ciático**;\n\nvia anterior direta: **cutâneo femoral lateral**.\n\n**Na prova**: na via de Hardinge, a dissecção não deve subir mais de 3 a 5 cm acima do trocânter, para não lesar o nervo glúteo superior.",
-    "correta": "Glúteo superior. Ele cruza por baixo do glúteo médio a cerca de 3 a 5 cm acima do trocânter, e sua lesão causa insuficiência dos abdutores.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no idoso; Anatomia aplicada."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no idoso",
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "fratura-desviada-no-idoso-1d56bc28",
+            "anatomia-aplicada-06e28c1c",
+            "fratura-desviada-no-idoso-46ff2a73"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "f5f616e202165a482dce5ad4e70c54fecfb1008d5e49bbd02097910ce22519b6"
+        }
+      ],
+      "questaoSha256": "e73ee8bfc107dc131d81379b701f13cb0a9758b5ba091076e775c6cb0edff082",
+      "comentarioSha256": "97fbf35741d7e0d0a5b5e01ee8c99b80e1065a3a4a2c25d0ead486b3fd246ad8"
+    }
   },
   "quadril-0128": {
     "incorretas": {
@@ -2145,16 +2174,44 @@
     "conferido": false
   },
   "quadril-0235": {
+    "conceito": "O índice de Garden da redução não é o ângulo entre o colo e a diáfise. Ele compara o **eixo das trabéculas compressivas da cabeça** com a **cortical medial da diáfise**. A referência é cerca de **160 graus no AP** e **180 graus no perfil**; portanto, a opção correta é 160 graus no AP.\n\nEssa diferença de linhas explica a armadilha dos valores em torno de 125 a 135 graus, próximos da geometria cervicodiafisária, mas não da medida trabecular perguntada. É preciso identificar as duas linhas antes de escolher o número (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nO alinhamento é avaliado em duas incidências porque um AP aceitável não exclui deformidade no perfil. O capítulo também descreve o sinal de Lowell: curvas corticais suaves em S na junção cabeça-colo, e não outro nome para o índice trabecular. A finalidade é reconhecer uma redução inadequada antes de fixá-la.\n\nLeia essa seção no resumo da Biblioteca comparando os desenhos das medidas.",
+    "correta": "**C: 160 graus na incidência em AP.** É o valor de referência do índice trabecular no AP. Deve ser interpretado junto do perfil, cuja referência é cerca de 180 graus.",
     "incorretas": {
-      "A": "135° corresponde ao ângulo entre o colo e o corpo do fêmur, e não ao índice de Garden.",
-      "B": "125° também é um valor do ângulo entre o colo e o corpo do fêmur, e não do índice de Garden.",
-      "D": "No perfil, o alinhamento normal é praticamente reto, cerca de 180°, e não 135°.",
-      "E": "No perfil, o normal é cerca de 180°; 150° indicaria uma angulação importante."
+      "A": "**Cento e trinta e cinco se aproxima de outra geometria.** O ângulo cervicodiafisário não usa as mesmas linhas do índice de Garden. Confundir o eixo do colo com as trabéculas da cabeça leva a um número inadequado para a medida pedida.",
+      "B": "**Cento e vinte e cinco não é a referência trabecular do AP.** A pergunta não mede a inclinação do colo em relação à diáfise. As linhas descritas são as do índice de redução, próximo de 160 graus.",
+      "D": "**No perfil a referência é próxima de 180, não 135 graus.** A opção erra o número e não corresponde à incidência que fornece a alternativa correta. A avaliação lateral não pode ser substituída pelo ângulo do AP.",
+      "E": "**Cento e cinquenta no perfil não reproduz a referência anatômica.** O perfil é avaliado perto de 180 graus; o texto relata bons resultados na faixa de 155 a 180. O valor oferecido fica abaixo dela."
     },
-    "conceito": "Depois de fixar uma **fratura desviada do colo do fêmur**, o cirurgião precisa saber se a redução ficou boa. **Garden** criou um índice para isso, usando as **trabéculas** da cabeça do fêmur, que são linhas de osso visíveis na radiografia.\n\n**O índice de alinhamento de Garden** é o ângulo entre:\n\no **eixo das trabéculas compressivas** da cabeça (as que recebem a carga, do lado de dentro);\n\ne a **cortical medial** do corpo do fêmur (a parede de dentro do osso).\n\n**Valores normais**:\n\nna radiografia de **frente** (AP): cerca de **160°**;\n\nna radiografia de **perfil**: cerca de **180°**, ou seja, praticamente uma linha reta.\n\n**Interpretação**:\n\nno AP, um ângulo **menor que cerca de 155° a 160°** indica que a cabeça ficou em **varo** (inclinada para baixo), o que aumenta o risco de a fixação falhar;\n\nno perfil, um desvio importante (cabeça inclinada para a frente ou para trás) aumenta o risco de necrose e de falta de consolidação.\n\n**Não confunda** com a **classificação de Garden** das fraturas do colo (tipos I a IV, conforme o desvio) e com o **ângulo cervicodiafisário** (o ângulo entre o colo e o corpo do fêmur), que normalmente fica entre 125° e 135°.\n\n**Na prova**: o índice de Garden normal é de cerca de 160° no AP e 180° no perfil.",
-    "correta": "160 graus na incidência em AP. É o valor normal do índice de Garden na radiografia de frente; ângulos menores indicam redução em varo.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no jovem",
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "fratura-desviada-no-jovem-38a46d78",
+            "anatomia-aplicada-be6f84e8"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+        }
+      ],
+      "questaoSha256": "a82590fb6f04523ada7d8d36876b3880a53ffabb543b511a399582387fad614a",
+      "comentarioSha256": "c065e270a30e890685563dbd6eaf46ba183ffb9b1314045449a4dedf96019a3c"
+    }
   },
   "quadril-0236": {
     "incorretas": {
@@ -3450,19 +3507,41 @@
     "conferido": false
   },
   "quadril-0328": {
-    "conceito": "### Qualidade da redução no colo femoral\n| Parâmetro | Como se avalia | Normal |\n|---|---|---|\n| ==índice de Garden== | ângulo entre trabéculas compressivas e cortical medial da diáfise | ==cerca de 160° no AP e 180° no perfil== (aceitável 155 a 180°) |\n| ==sinal de Lowell== | contornos corticais da cabeça e do colo formando curvas contínuas em ==S== ou ==C== reverso | curvas lisas, sem degrau |\n\n### Leitura prática\n- **Garden** quantifica o ângulo: abaixo de 155 a 160° no AP indica varo; desvio acima de 20° no perfil aumenta necrose e falha.\n- **Lowell** é visual: qualquer quebra ou angulação nas curvas S ou C indica redução imperfeita.\n- Os dois são complementares, avaliados na radioscopia AP e perfil.\n\n### Winter\n- Não é parâmetro de redução do colo femoral.\n\n> **Na prova:** o gabarito identifica ==A = Lowell== e ==B = Garden== (veja o alerta sobre a ordem das imagens).",
-    "correta": "**Resposta oficial.**\n- A imagem A mostra as curvas corticais de Lowell.\n- A imagem B mostra o índice angular de Garden.",
+    "conceito": "Na imagem **A**, as faixas azuis acompanham os contornos da cabeça e do colo, desenhando curvas suaves em S nas duas projeções: é o **sinal de Lowell**. Na **B**, as linhas formam medidas angulares no AP e no perfil, com referências de 160 e 180 graus: é o **índice de alinhamento de Garden**.\n\nLowell permite perceber a continuidade das corticais. Uma curva suave sugere bom alinhamento; achatamento de um lado e ângulo agudo do outro sugerem deformidade residual. Garden compara as trabéculas compressivas da cabeça com a cortical medial da diáfise, e não simplesmente o eixo do colo com a diáfise. É por isso que os valores não correspondem ao ângulo cervicodiafisário habitual (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nA imagem B também desenha valores menores, 140 no AP e 150 no perfil, que contrastam com as referências. O resumo relata bons resultados entre 155 e 180 em cada incidência. Reconhecer a medida permite julgar o desvio, em vez de decorar apenas o nome. Compare as duas formas de leitura no resumo da Biblioteca.",
+    "correta": "**A: Lowell e Garden.** A identifica continuidade cortical em S; B mostra o alinhamento angular trabecular nas duas incidências. A ordem das imagens é decisiva.",
     "incorretas": {
-      "B": "**Ordem invertida.**\n- O gabarito atribui Lowell à imagem A e Garden à B.",
-      "C": "**Winter não se aplica.**\n- Não é parâmetro de redução do colo femoral.",
-      "D": "**Winter não se aplica.**\n- Independentemente da ordem, Winter não entra."
+      "B": "**Troca os métodos de lugar.** A não mostra a mensuração trabecular de Garden; destaca contornos corticais suaves. B é que apresenta linhas e ângulos, em vez de usar somente a continuidade do S de Lowell.",
+      "C": "**Reconhece Lowell em A, mas troca o nome da medida de B.** As referências de 160 no AP e 180 no perfil correspondem ao índice de Garden apresentado pelo resumo. Não há fundamento para renomear esse desenho como Winter.",
+      "D": "**Não identifica corretamente nenhum dos dois painéis.** A mostra o S cortical de Lowell, não Garden; B mostra Garden, não Winter. É a estrutura observada, cortical ou trabecular, que permite distinguir os nomes."
     },
-    "alerta": "A ordem entre as imagens A e B (qual mostra o índice de Lowell e qual mostra o de Garden) depende do rótulo de cada imagem no caderno da prova. O gabarito considera Lowell na imagem A e Garden na imagem B; confira a figura original antes de memorizar a ordem.",
     "referencias": [
-      "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 49"
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem."
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no jovem"
+          ],
+          "blocos": [
+            "fratura-desviada-no-jovem-38a46d78"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "da08e6f1339113f6f6d7091a13f6fa546c1ba8ff3e0ef1665796101fee6e25aa"
+        }
+      ],
+      "questaoSha256": "3851f76ef9d167e735a008a4a39a00077ee252d5594e861659fb1824c8c8df5c",
+      "comentarioSha256": "58bac2be85a7cb30c8a65581677c6e3e4bd97cffd2701fb282942cbdffd83cbb"
+    }
   },
   "quadril-0329": {
     "incorretas": {
@@ -3493,32 +3572,83 @@
     "conferido": false
   },
   "quadril-0331": {
+    "conceito": "O par é **160 graus no AP e 180 graus no perfil**. No índice de alinhamento de Garden, as trabéculas compressivas da cabeça são comparadas com a cortical medial da diáfise. A pergunta exige manter o valor ligado à incidência correta.\n\nO AP e o perfil mostram planos diferentes. Uma boa aparência em apenas um deles pode esconder inclinação no outro, por isso não basta repetir o mesmo número ou inverter a ordem. O capítulo relata bons resultados entre 155 e 180 graus em cada incidência, mas os valores de referência anatômica continuam sendo aproximadamente 160 e 180 (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nO índice também não se confunde com o ângulo cervicodiafisário ou com o sinal de Lowell, que observa curvas corticais suaves em S. A escolha correta depende de reconhecer o que está sendo medido, além de memorizar dois números.\n\nConsulte o resumo da Biblioteca para revisar o índice junto da avaliação da qualidade da redução.",
+    "correta": "**D: 160 e 180 graus.** A ordem corresponde a AP e perfil. É o par de referência descrito pelo resumo para o alinhamento trabecular.",
     "incorretas": {
-      "A": "Os valores estão invertidos: 180° é o alvo do perfil, e no AP o ângulo normal é 160°.",
-      "B": "Cento e quarenta graus no AP indicaria varo importante, e 150° no perfil indicaria angulação inaceitável; nenhum dos dois é o valor de referência.",
-      "C": "São valores fora do alinhamento desejado: o AP deveria estar em torno de 160° e o perfil em 180°."
+      "A": "**Inverte os valores entre as incidências.** Cento e oitenta é a referência lateral, não a do AP; 160 é a do AP. As medidas só fazem sentido ligadas ao plano em que foram obtidas.",
+      "B": "**Os dois valores estão abaixo das referências e da faixa favorável citada.** Cento e quarenta e 150 não reproduzem 160/180. Uma redução não deve ser considerada adequada apenas porque há algum ângulo entre as linhas.",
+      "C": "**Também reduz os valores e troca a lógica do perfil.** A referência lateral é a maior do par, próxima de 180. Apresentar 150 no AP e 140 no perfil não corresponde ao alinhamento descrito."
     },
-    "conceito": "Na **fratura do colo do fêmur** tratada com fixação, a qualidade da redução é decisiva. Uma redução ruim aumenta muito o risco de **pseudartrose** (a fratura não consolida) e de **necrose avascular da cabeça femoral**.\n\n**O índice de alinhamento de Garden** avalia essa redução usando as **trabéculas de compressão**, linhas de osso mais denso que sobem da parte medial do colo para a cabeça, e que são visíveis na radiografia.\n\n**No AP**: mede-se o ângulo entre as trabéculas de compressão e a **cortical medial da diáfise** femoral. O normal é cerca de **160°**.\n\n**No perfil**: mede-se o ângulo entre o eixo da cabeça e o eixo do colo, que deve formar praticamente uma linha reta, **180°**.\n\nUma redução é considerada aceitável quando os dois ângulos ficam próximos desses valores. Garden descreveu que valores muito distantes, como abaixo de 155° ou acima de 180°, se associam a mais complicações. Ângulo menor no AP indica **varo**, a deformidade de pior prognóstico.\n\n**Não confundir com a classificação de Garden** das fraturas do colo, que vai de I a IV conforme o desvio: I e II sem desvio, III e IV desviadas.\n\n**Na prova**: índice de alinhamento de Garden é 160° no AP e 180° no perfil.",
-    "correta": "O alinhamento normal é de 160° no AP, entre trabéculas e cortical medial, e de 180° no perfil, com cabeça e colo alinhados.",
     "referencias": [
-      "Rockwood and Wilkins’s fractures in Adults, 6th Ed., p. 1773 (referência indicada na prova TARO 2013, questão 6)"
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no jovem",
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "fratura-desviada-no-jovem-38a46d78",
+            "anatomia-aplicada-be6f84e8"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ea21d3d692b147e8f3800d8af7b111342ea5dc74fd9220603c094b6a4cc73bc6"
+        }
+      ],
+      "questaoSha256": "c2bf6c34320564fb077ae0bbac5abb9ee3fcf1192cce0cc0ded0a49b2ed77a00",
+      "comentarioSha256": "3da02d2dddfacbac3ffe5a91a6c33323b84845429058ffe0a98f5520a68616e0"
+    }
   },
   "quadril-0332": {
+    "conceito": "No colo femoral, um traço superior e outro inferior não têm o mesmo comportamento sob carga. O lado **superior** é tracionado, de modo que a fissura tende a abrir a cada passo. O lado **inferior** é comprimido, com tendência ao fechamento e maior estabilidade.\n\nEssa diferença explica a indicação precoce de **fixação para a fratura superior, do lado de tensão**. A progressão para fratura completa e desviada pode resultar em pseudartrose e osteonecrose. Para a compressão inferior, o capítulo descreve carga restrita por pelo menos seis semanas e radiografias semanais, não a mesma conduta automática (resumo do Rockwood, 10ª ed., cap. 24, “Colo do fêmur”).\n\nO ponto decisivo é proteger a estrutura antes de uma complicação grave, não esperar que a dor se torne incapacitante. O resumo da Biblioteca apresenta a mecânica e o quadro de tratamento.",
+    "correta": "**C: superior.** É o lado de tensão, com tendência a propagação e desvio. A fixação precoce busca impedir essa progressão e suas consequências.",
     "incorretas": {
-      "A": "O lado inferior é o de compressão, mais estável, e geralmente permite tratamento conservador com retirada de carga.",
-      "B": "A classificação dessas fraturas e a indicação cirúrgica se baseiam no lado de tensão ou compressão, superior ou inferior, e não na localização anterior.",
-      "D": "Assim como a anterior, a localização posterior não é o critério usado; o que define a cirurgia é o traço no lado de tensão, superior."
+      "A": "**Inferior é o lado de compressão.** O traço tende a fechar sob carga e o capítulo descreve proteção de carga com seguimento. Não é a localização que caracteriza a indicação precoce de fixação pedida.",
+      "B": "**Anterior não é o critério mecânico utilizado.** A referência separa o lado superior de tensão do inferior de compressão. Uma localização apenas anterior não identifica essa diferença de risco.",
+      "D": "**Posterior também não substitui a distinção tensão/compressão.** A indicação descrita depende do lado superior. Trocar os planos anatômicos perde a relação entre carga e abertura da fissura."
     },
-    "conceito": "A **fratura por estresse** acontece quando o osso recebe cargas repetidas maiores do que consegue reparar. No colo do fêmur, aparece em corredores, militares em treinamento e pessoas com osso frágil. O sintoma é dor na virilha que piora com a carga.\n\n**O lado do colo onde o traço aparece define o risco**, por causa da biomecânica:\n\n**lado inferior (medial)** é o **lado de compressão**. Ao apoiar o peso, essa região é comprimida, e a compressão tende a fechar a fratura. São fraturas mais estáveis, geralmente tratadas com retirada de carga e acompanhamento, desde que o traço seja pequeno;\n\n**lado superior (lateral)** é o **lado de tensão**. Ao apoiar o peso, essa região é tracionada, e a tração tende a **abrir a fratura**. Elas têm alto risco de **progredir e desviar**.\n\n**Por que desviar é tão grave**: uma fratura desviada do colo em paciente jovem pode romper a irrigação da cabeça femoral e levar a necrose avascular e pseudartrose. Por isso a fratura de estresse no lado de tensão deve ser **fixada precocemente**, geralmente com parafusos canulados, antes que desvie.\n\n**Na prova**: fratura de estresse no lado superior (tensão) do colo é indicação de cirurgia precoce.",
-    "correta": "O traço superior está no lado de tensão, que tende a abrir e desviar, e por isso deve ser fixado precocemente.",
     "referencias": [
-      "Rockwood and Green’s fractures in Adults. 6th Ed., p.673 (referência indicada na prova TARO 2013, questão 34)"
+      "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Colo do fêmur. Sem atribuição de páginas impressas não consultadas."
     ],
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-24-fraturas-estresse",
+          "titulo": "Fraturas por estresse",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 24 · Stress Fractures",
+          "secoes": [
+            "Colo do fêmur"
+          ],
+          "blocos": [
+            "colo-do-femur-9a8e2d5d",
+            "colo-do-femur-5cfd8f77",
+            "colo-do-femur-fbdc6b09",
+            "colo-do-femur-891e93d3"
+          ],
+          "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+          "trechosSha256": "f4f771c40cc4f97e4e8758acb378481af7d5409fe07d38ec96baee3b54463e63"
+        }
+      ],
+      "questaoSha256": "27e85609d73376f08816e3da36200d561f797872e11b792a674298a97eea529c",
+      "comentarioSha256": "db74f095fbbbf3a83a875a8f67db7db40b1ff34c871a9b48d9c10804ab00b9ff"
+    }
   },
   "quadril-0333": {
     "incorretas": {
@@ -6010,21 +6140,62 @@
     "conferido": false
   },
   "quadril-0508": {
-    "alerta": "A fratura Garden II (completa, sem desvio) é classicamente tratada com fixação interna por parafusos canulados (alternativa C), sobretudo em pacientes de 65 anos. Estudos recentes mostram que, em idosos mais velhos (geralmente acima de 70 a 75 anos), a artroplastia pode ter menos reoperações. Além disso, o exame descrito (rotação externa e encurtamento) é mais típico de fraturas desviadas. O gabarito oficial (D) foi mantido.",
-    "conceito": "**Fratura do colo do fêmur: classificação de Garden e tratamento.**\n\n| Garden | Descrição | Grupo |\n|---|---|---|\n| I | Incompleta ou impactada em valgo | Sem desvio |\n| II | Completa, sem desvio | Sem desvio |\n| III | Completa, desvio parcial | Com desvio |\n| IV | Completa, desvio total | Com desvio |\n\n**Tratamento das fraturas sem desvio (Garden I e II).**\n- Classicamente, **fixação interna in situ** com **três parafusos canulados** em triângulo invertido (ou com parafuso deslizante), com baixa taxa de necrose e pseudoartrose.\n- Em idosos frágeis e mais velhos, estudos (como o de Dolatowski e colaboradores) mostraram que a hemiartroplastia pode reduzir reoperações em relação à fixação, e alguns cirurgiões preferem artroplastia, sobretudo com osteoporose importante ou artrose prévia.\n\n**Tratamento das fraturas desviadas (Garden III e IV).**\n- Jovens: redução anatômica urgente e fixação.\n- Idosos: **artroplastia**; **total** em pacientes ativos e independentes; **parcial** em pacientes de baixa demanda.\n\n**Cirurgia precoce.** Em até 24 a 48 horas, com mobilização precoce.\n\n**O caso.** Paciente de 65 anos com osteoporose e fratura Garden II. A banca indicou artroplastia total, provavelmente considerando a osteoporose e o quadro clínico de encurtamento e rotação externa (mais compatível com desvio).\n\n> Garden I e II: classicamente fixação com parafusos; Garden III e IV no idoso: artroplastia.",
-    "correta": "**D: artroplastia total do quadril (gabarito oficial).** A banca considerou a artroplastia total como o tratamento definitivo para esta paciente de 65 anos com osteoporose, possivelmente pela qualidade óssea e pelo exame com encurtamento e rotação externa. Classicamente, porém, a fratura Garden II é tratada com parafusos canulados, conforme a ressalva acima.",
+    "conceito": "O enunciado traz duas pistas que apontam em direções diferentes: descreve **encurtamento e rotação externa**, característicos da fratura desviada, mas informa na radiografia **Garden II**, que é completa e **sem desvio**. A banca marcou D, artroplastia total. O resumo consultado recomenda fixação para a maioria das fraturas sem desvio, correspondente a C. Não é possível apagar essa divergência mudando mentalmente a classificação.\n\nGarden II não quer dizer fratura pequena ou incompleta: o traço é completo, mas os fragmentos mantêm o alinhamento. Garden I é o padrão incompleto/impactado em valgo; III e IV têm desvio. Essa divisão é decisiva porque modifica o risco e a estratégia. Na fratura intracapsular, a cabeça depende de vasos junto ao colo e a união ocorre sem a contribuição de uma camada cambial periosteal. Evitar deslocamento e manter o foco estável importa mesmo quando a primeira imagem parece bem alinhada (resumo do Rockwood, 10ª ed., cap. 53, “Garden” e “Anatomia aplicada”).\n\nPara a maioria das Garden I/II, os autores propõem **fixação interna**, em qualquer idade. Os parafusos canulados, guiados por fios e conferidos em AP e perfil, estabilizam o foco enquanto preservam a cabeça. O parafuso deslizante é outra opção descrita. Tratamento não cirúrgico fica para situações selecionadas, pois a fratura pode desviar secundariamente; o resumo cita 19% a 46% nos estudos de tratamento conservador. Assim, reconhecer que a fratura não desviou não conduz automaticamente nem à observação nem à prótese (mesmo resumo, “Fratura sem desvio”).\n\nA artroplastia ganha outro peso quando a fratura está **desviada no idoso**, porque a fixação tem maior risco de falha e pseudartrose. Ainda assim, escolher **total** em vez de hemiartroplastia exige avaliar função anterior, cognição, horizonte de independência e doença acetabular. A total é uma operação mais longa e tem mais luxação; nos estudos discutidos, seu benefício funcional médio foi pequeno. A idade de 65 anos não fornece sozinha esse conjunto de critérios.\n\nA osteoporose ajuda a explicar por que ocorreu a fratura, mas não reclassifica Garden II em III/IV. Da mesma forma, o exame clínico discrepante deve motivar conferência da imagem e do diagnóstico na prática, não permitir que um comentário troque o dado radiográfico para tornar a letra oficial convincente. Não foi informada artrose sintomática prévia nem uma avaliação funcional que resolva a indicação de total.\n\nPortanto, há duas informações a conservar: **D é o gabarito registrado; C é a conduta sustentada pelo resumo para a Garden II tal como escrita**. A ressalva é parte do ensino. Leia na Biblioteca os tratamentos sem desvio e com desvio lado a lado para reconhecer a diferença que deveria decidir esse caso.",
+    "correta": "**D: artroplastia total, gabarito oficial mantido com alerta.** Pode ser uma escolha adequada em um idoso ativo e independente com fratura desviada ou doença acetabular relevante, após avaliação clínica. O caso, porém, informa Garden II, e a fonte não estabelece total como tratamento preferido desse diagnóstico apenas por idade e osteoporose.\n\nNão há dados suficientes para afirmar por que a banca escolheu a prótese. É mais correto explicitar a inconsistência do que inventar atividade prévia, artrose ou desvio radiográfico que o enunciado não apresentou.",
     "incorretas": {
-      "A": "**Tração cutânea** não é tratamento definitivo; no máximo, um recurso temporário de conforto, hoje pouco usado.",
-      "B": "**Órtese de abdução** não estabiliza uma fratura do colo do fêmur e não é tratamento adequado.",
-      "C": "**A fixação interna com parafusos canulados** é o tratamento clássico das fraturas Garden I e II, especialmente em pacientes de 65 anos. É uma alternativa bem fundamentada, motivo da ressalva; a banca, porém, preferiu a artroplastia total.",
-      "E": "**A artroplastia parcial** é indicada em idosos de baixa demanda com fratura desviada. Em uma paciente de 65 anos, presumivelmente ativa, a total oferece melhor função a longo prazo."
+      "A": "**Tração cutânea não é estabilização definitiva do foco intracapsular.** O capítulo não demonstra melhora da dor ou da redução com seu uso pré-operatório rotineiro. Mesmo que se pretendesse manter temporariamente a posição, isso não substitui a fixação recomendada para a maioria das fraturas sem desvio.\n\nA alternativa confunde um recurso temporário de posicionamento com o tratamento que deve permitir a consolidação. A pergunta pede tratamento definitivo.",
+      "B": "**Órtese de abdução não corresponde à estabilização interna proposta para essa fratura.** Manter o membro numa posição não equivale a controlar diretamente os fragmentos durante a união. A ausência de desvio inicial não prova que uma órtese impedirá deslocamento secundário.\n\nO resumo reserva manejo não cirúrgico para situações clínicas selecionadas, como expectativa muito curta, recusa ou ausência de deambulação. Nenhuma delas está descrita como justificativa aqui.",
+      "C": "**É a opção sustentada pela fonte para Garden II.** A fratura é completa, mas permanece alinhada; os canulados estabilizam o colo preservando a cabeça. Esse é o raciocínio que liga a classificação ao tratamento, sem depender de transformar 65 anos em um limite obrigatório para prótese.\n\nEla aparece entre as oficialmente incorretas porque a banca marcou D, não porque o resumo demonstrou contraindicação à fixação. A aula deve deixar essa diferença visível.",
+      "E": "**Hemiartroplastia é relevante na fratura desviada do idoso, sobretudo de baixa demanda.** Substitui o lado femoral e evita depender de união e viabilidade daquela cabeça. Esse raciocínio não é automaticamente transferível a uma Garden II.\n\nTambém não é correto descartá-la apenas supondo que todo paciente de 65 anos seja ativo e deva receber total. O enunciado não fornece demanda funcional; a dificuldade inicial continua sendo a divergência entre a fratura sem desvio escrita e a indicação de substituição."
     },
     "referencias": [
-      "Dolatowski FC, Frihagen F, Bartels S, et al. Screw fixation versus hemiarthroplasty for nondisplaced femoral neck fractures in elderly patients: a multicenter randomized controlled trial. J Bone Joint Surg Am. 2019;101(2):136-144.",
-      "Garden RS. Low-angle fixation in fractures of the femoral neck. J Bone Joint Surg Br. 1961;43-B(4):647-663."
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Classificações; Fratura sem desvio (Garden I e II); Mecanismo, lesões associadas e quadro clínico; Fratura desviada no idoso; Anatomia aplicada; Como ler este capítulo; Diagnóstico por imagem."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "alerta": "Gabarito oficial D mantido. O enunciado informa Garden II, completa e sem desvio; o resumo recomenda fixação para a maioria dessas fraturas, compatível com C. Encurtamento e rotação externa sugerem desvio, mas não autorizam reclassificar a radiografia. A indicação de artroplastia total não pode ser presumida apenas pela idade de 65 anos e pela osteoporose.",
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Classificações",
+            "Fratura sem desvio (Garden I e II)",
+            "Mecanismo, lesões associadas e quadro clínico",
+            "Fratura desviada no idoso",
+            "Anatomia aplicada",
+            "Como ler este capítulo",
+            "Diagnóstico por imagem"
+          ],
+          "blocos": [
+            "classificacoes-12519f03",
+            "classificacoes-113a1994",
+            "classificacoes-1854670c",
+            "classificacoes-6479ca47",
+            "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+            "fratura-sem-desvio-garden-i-e-ii-2ce21a8e",
+            "fratura-sem-desvio-garden-i-e-ii-4daa1011",
+            "mecanismo-lesoes-associadas-e-quadro-clinico-b64d530b",
+            "fratura-desviada-no-idoso-46218195",
+            "fratura-desviada-no-idoso-25acc61c",
+            "anatomia-aplicada-fc34becd",
+            "como-ler-este-capitulo-4e10b9c9",
+            "diagnostico-por-imagem-63f9a6b1",
+            "fratura-desviada-no-idoso-9ceafc6a"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ca1f772a62d0d59f348e47ff66c865acab3db59e7915ff6d49a8e7ce9cc67a68"
+        }
+      ],
+      "questaoSha256": "6db02696d013be6fd4347e0b68043174779ffa1d36c91b77f86d96d88b3296b4",
+      "comentarioSha256": "f27bdf09fde4d0ba12ad511fea2735897a930a8083fba4ecbd82862b46881107"
+    }
   },
   "quadril-0509": {
     "conceito": "**Tratamento da osteonecrose da cabeça femoral conforme o estágio.** O estágio de Ficat e Arlet (ou Steinberg, ARCO) é o principal determinante.\n\n| Estágio | Achado | Tratamento habitual |\n|---|---|---|\n| I | Radiografia normal; ressonância alterada | Observação, descompressão central, controle de fatores de risco |\n| II | Esclerose e cistos, sem colapso | **Descompressão central** (com ou sem enxerto ou células), enxerto vascularizado de fíbula, osteotomias selecionadas |\n| **III** | **Colapso subcondral** (sinal do crescente), espaço articular preservado | Em jovens com lesões pequenas: procedimentos de preservação; na maioria, especialmente acima de 50 anos: **artroplastia total** |\n| IV | Artrose secundária | **Artroplastia total** |\n\n**Por que a artroplastia no caso.** O paciente tem 60 anos, é etilista (fator de risco persistente) e tem osteonecrose **com colapso** (Ficat III). Os procedimentos de preservação, como a descompressão, têm resultados ruins após o colapso, especialmente em lesões extensas e em pacientes mais velhos. A artroplastia total alivia a dor e restaura a função de forma previsível.\n\n**Particularidades da artroplastia na osteonecrose.** Resultados atuais semelhantes aos da artrose primária com implantes modernos; atenção ao maior risco de complicações em etilistas e em doenças sistêmicas associadas.\n\n**Medidas gerais.** Interromper o álcool, avaliar o quadril contralateral (bilateral em até 70% dos casos não traumáticos) por ressonância.\n\n> Osteonecrose com colapso (Ficat III) em paciente de 60 anos: artroplastia total do quadril.",

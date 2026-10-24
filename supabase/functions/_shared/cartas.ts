@@ -61,7 +61,7 @@ export type TipoCarta =
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
 export const TIPOS: Record<TipoCarta, InfoTipo> = {
-  nunca_comecou: { grupo: 'situacao', rotulo: 'Criou a conta e não começou', descricao: 'O que eu faria nos primeiros dez minutos; sem número.' },
+  nunca_comecou: { grupo: 'situacao', rotulo: 'Criou a conta e não começou', descricao: 'Uma sugestão para os primeiros dez minutos; sem número.' },
   boas_vindas: { grupo: 'situacao', rotulo: 'Boas-vindas', descricao: 'Chegou nos últimos 3 dias e já respondeu algumas questões.' },
   comecando: { grupo: 'situacao', rotulo: 'Começando', descricao: 'Ativo, com menos de 30 questões: pergunta como está sendo e dá uma ideia prática.' },
   comecou_parou: { grupo: 'situacao', rotulo: 'Começou e parou', descricao: 'Menos de 30 questões e alguns dias sem aparecer. Sem culpa; a Revisão como volta leve.' },
@@ -79,11 +79,11 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   pix_3_dias: { grupo: 'automatico', rotulo: 'Pix: faltam 3 dias', descricao: 'Automático: o acesso pago no Pix está acabando. Nada se perde; sem urgência.' },
   pix_hoje: { grupo: 'automatico', rotulo: 'Pix: termina hoje', descricao: 'Automático: último dia do acesso pago no Pix. Transacional.' },
   relatorio: { grupo: 'automatico', rotulo: 'Resumo de estudo', descricao: 'Automático: a quinzena ou o mês contados como uma história.' },
-  boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: quem eu sou e o que fazer nos primeiros dez minutos.' },
+  boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: boas-vindas, as funções do site (questões, Cronograma, resumos) e o pedido para contar aos colegas.' },
   primeiras_10: { grupo: 'automatico', rotulo: 'Primeiras 10 questões', descricao: 'Ao passar de 10 questões: o hábito começou.' },
   voltou: { grupo: 'automatico', rotulo: 'Que bom te ver de volta', descricao: 'Primeiro login depois de 10 dias ou mais fora.' },
   cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'No dia em que a pessoa monta o plano até a prova.' },
-  pagamento_aprovado: { grupo: 'automatico', rotulo: 'Pagamento aprovado', descricao: 'Recibo gentil: plano, período, o que libera, link do cronograma. Transacional.' },
+  pagamento_aprovado: { grupo: 'automatico', rotulo: 'Obrigado pela assinatura', descricao: 'Sai quando a assinatura ou a renovação é aprovada: agradecimento, plano, período, o que libera e o link do cronograma. Transacional.' },
   obrigado_tempo: { grupo: 'automatico', rotulo: 'Obrigado pelo tempo de assinatura', descricao: 'Cancelou ou pediu reembolso: porta aberta, sem cobrança.' },
   assinou_sem_cronograma: { grupo: 'automatico', rotulo: 'Assinou e não montou o cronograma', descricao: 'Três dias depois de assinar, sem plano: o cronograma como as horas que o plano devolve.' },
   assinante_parado_7: { grupo: 'automatico', rotulo: 'Assinante parado há 7 dias', descricao: 'Assina e está há uma semana sem responder: sem culpa, a Revisão e o cronograma que se ajusta.' },
@@ -629,9 +629,9 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
     case 'areaFraca': {
       const a = A(f.areaFraca!.slug)
       return [
-        `Se fosse escolher um tema para as próximas semanas, eu iria em ${a.em}: é onde cada sessão vai render mais para você agora. Dez questões por semana já mudam o quadro.`,
+        `Um tema bom para as próximas semanas é ${a.em}: é onde cada sessão vai render mais para você agora. Dez questões por semana já mudam o quadro.`,
         `Reparei que ${a.em} é o tema com mais espaço para crescer no seu caso, e isso é uma boa notícia: é ali que os pontos vêm mais rápido. Dez questões por semana bastam.`,
-        `Um palpite de quem olhou o seu estudo com carinho: dez questões de ${a.de} por semana podem fazer uma bela diferença nas próximas semanas.`,
+        `Uma ideia carinhosa: dez questões de ${a.de} por semana podem fazer uma bela diferença nas próximas semanas.`,
       ]
     }
     case 'horario':
@@ -644,7 +644,7 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
       }[f.horario!]
     case 'prova':
       return {
-        teot: ['Vi que o TEOT está no seu horizonte, e fico na torcida.', 'Sei que o seu foco é o TEOT, e penso nisso quando olho o seu estudo.'],
+        teot: ['Vi que o TEOT está no seu horizonte, e fico na torcida.', 'Sei que o seu foco é o TEOT, e estou na torcida.'],
         taro: ['Vi que você está se preparando para o TARO, e fico na torcida.', 'Sei que o TARO está no seu radar.'],
         mao: ['Vi que você está se preparando para a prova da cirurgia da mão.', 'Sei que a prova da mão está no seu radar, e fico na torcida.'],
         r4: ['Vi que você está mirando o R4.', 'Sei que a seleção do R4 está no seu radar, e fico na torcida.'],
@@ -684,7 +684,7 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
       const c = f.cronograma!, prova = c.prova ? `o ${c.prova}` : 'a sua prova'
       return [
         `Vi no seu cronograma que faltam ${dias(c.dias)} para ${prova}. Dá tempo de muita coisa, ainda mais com a lista de cada dia já pronta.`,
-        `Pelo seu cronograma, ${prova} está a ${dias(c.dias)}. Gosto de saber disso quando te escrevo: muda o que vale sugerir.`,
+        `Pelo seu cronograma, ${prova} está a ${dias(c.dias)}, e eu estou na torcida.`,
       ]
     }
     case 'servico':
@@ -707,9 +707,9 @@ const MAXIMO_OBS = 3
 /** Frases sobre tempo e praticidade: o tema de fundo de toda carta. */
 const TEMPO = [
   'Dez minutos no intervalo já contam. Não precisa ser uma sessão grande para valer.',
-  'Você senta e estuda; o site decide o resto. Esse foi o combinado desde o começo.',
+  'Você senta e estuda; o site organiza o resto.',
   'Trinta minutos num horário fixo valem mais que duas horas espalhadas pelo fim de semana.',
-  'Estudar fácil, para mim, é abrir e já saber o que fazer. O resto é desculpa que o cansaço inventa.',
+  'Estudar fácil é abrir e já saber o que fazer. Quando a lista vem pronta, o cansaço pesa menos.',
   'O tempo que a gente mais perde não é estudando, é decidindo o que estudar. Deixar essa decisão pronta devolve uns quinze minutos por dia.',
   'Cinco questões no ônibus, cinco no café, cinco antes de dormir. No fim da semana, isso vira um estudo de verdade.',
   'A lista do dia já pronta quando você sai da cirurgia: é isso que faz o estudo caber numa rotina de hospital.',
@@ -808,17 +808,17 @@ export function frasesSeguidasRepetem(texto: string): string | null {
 
 /** P.S. genéricos, humanos, para quando nenhum fato sobra. */
 const PS_HUMANOS = [
-  'P.S.: se responder este e-mail, sou eu que leio. Pode escrever.',
+  'P.S.: se quiser responder este e-mail, vou adorar ler.',
   'P.S.: cuida do sono. Ele conta como estudo, e ninguém avisa isso na residência.',
-  'P.S.: se encontrar algo estranho numa questão, tem um botão para relatar. Eu leio cada relato.',
+  'P.S.: se encontrar algo estranho numa questão, tem um botão para relatar. Cada relato é lido com carinho.',
   'P.S.: dez minutos no intervalo já contam. Não precisa esperar um dia livre para estudar.',
   'P.S.: se a semana apertar, tudo bem. O site fica do jeito que você deixou.',
   'P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.',
-  'P.S.: a parte do site em que eu mais caprichei foi o comentário das alternativas erradas. Vale ler até o fim.',
+  'P.S.: o comentário das alternativas erradas costuma ensinar muito. Vale ler até o fim.',
   'P.S.: toma um café por mim antes da próxima sessão.',
   'P.S.: errar aqui é barato. É na prova que custa. Aproveita que aqui é treino.',
   'P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve.',
-  'P.S.: dormir bem na véspera de um dia cheio também é estudar. Eu demorei a aprender isso.',
+  'P.S.: dormir bem na véspera de um dia cheio também é estudar.',
   'P.S.: não precisa responder, mas se responder eu fico feliz.',
 ]
 

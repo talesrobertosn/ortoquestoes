@@ -1,0 +1,373 @@
+{
+  "trauma-1656": {
+    "questaoSha256": "532e9b90a3414e37600e984a5ef08f7879852a43b4c59d4507e2959882fbbc59",
+    "comentarioAnteriorSha256": "90396df8f395da466592e936067a7337d622d253edc3a3c5510b5034fc6bb4eb",
+    "comentario": {
+      "conceito": "No adulto jovem com colo e diáfise fraturados do mesmo lado, a cabeça femoral é o componente que se procura salvar com **redução anatômica e fixação estável do colo primeiro**. Depois, a diáfise pode receber **haste retrógrada**, que entra pelo joelho e evita passar pela região proximal já lesionada.\n\nO capítulo favorece dois implantes: no colo, parafuso deslizante com antirrotatório ou canulados; na diáfise, retrógrada fresada ou placa. A haste de reconstrução única parece resolver tudo com um implante, mas dificulta controlar a redução e a anteversão do colo e é associada a mais pseudartrose, má redução e perda de redução proximal (resumo do Rockwood, 10ª ed., cap. 57, “Colo primeiro, por um caminho que não passe por ele”).\n\nA prioridade do colo decorre das consequências da demora e da perda de redução: necrose, pseudartrose e opções de salvamento limitadas no jovem. Não basta tratar a fratura mais evidente na radiografia. Leia essa associação no resumo da Biblioteca, incluindo a procura ativa pelo colo antes de introduzir a haste.\n\n**Por que esta questão foi criada.** Junta duas decisões que precisam ser coerentes: proteger primeiro o colo e escolher para a diáfise uma via que não dispute a região proximal.",
+      "correta": "**D: colo primeiro e haste retrógrada para a diáfise.** É a sequência e a combinação descritas. A redução do colo recebe prioridade, e a haste pelo joelho permite estabilizar a diáfise com implante separado.",
+      "incorretas": {
+        "A": "**Inverte a prioridade e escolhe a montagem problemática para o colo.** A haste cefalomedular única dificulta sua redução e não é a preferência descrita. Resolver primeiro a diáfise não compensa deixar a lesão proximal sem controle adequado.",
+        "B": "**Acerta a via da haste, mas não a ordem.** A retrógrada evita a entrada junto à fratura do colo. O algoritmo do capítulo, porém, prioriza reduzir e fixar o colo antes de completar a estabilização da diáfise.",
+        "C": "**Acerta a prioridade proximal e troca a estratégia diafisária.** O capítulo favorece implantes separados. A cefalomedular de reconstrução não reproduz essa escolha e acrescenta dificuldade de redução e estabilidade do colo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: A fratura do colo do mesmo lado."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "A fratura do colo do mesmo lado"
+        ],
+        "blocos": [
+          "a-fratura-do-colo-do-mesmo-lado-ef55cada",
+          "a-fratura-do-colo-do-mesmo-lado-2c1abd51",
+          "a-fratura-do-colo-do-mesmo-lado-8484e205"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "db6822dfe5af5c0245f1aa61e074ff5ef59468f5bdcfa1dd5c3778099b0f51c2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1657": {
+    "questaoSha256": "3836d7eaaf62275f5cd0abb36ae80695de2592361cea7b82b1dba948840c16aa",
+    "comentarioAnteriorSha256": "e6d24c1eeb4d85312a99ee0c03750ce821a863580ab72baff15fc337814820ec",
+    "comentario": {
+      "conceito": "O colo foi reconhecido depois da haste, mas continua **sem desvio**. Nesse cenário, o capítulo orienta estabilizá-lo com **parafusos canulados ao redor da haste**, preservando a fixação diafisária já feita.\n\nO dado “sem desvio” muda a solução. Se o colo estivesse desviado, seria necessário obter redução; se a presença da haste impedisse isso, os autores orientam retirá-la, fixar o colo e tratar a diáfise com retrógrada ou placa. Portanto, retirada e nova montagem não são obrigatórias para toda fratura proximal descoberta tardiamente (resumo do Rockwood, 10ª ed., cap. 57, “Colo descoberto depois da haste anterógrada”).\n\nAntes da primeira operação, o protocolo de Tornetta procura evitar essa surpresa com AP em rotação interna, TC de cortes finos e imagens do colo antes e depois da haste. O caso mostra por que a avaliação não deve terminar na diáfise. No resumo da Biblioteca, compare a prevenção do diagnóstico perdido com o tratamento após sua descoberta.\n\n**Por que esta questão foi criada.** A conduta de resgate depende do desvio; nem observação isolada nem troca automática da haste atendem a todos os casos.",
+      "correta": "**B: parafusos canulados ao redor da haste.** Estabilizam o colo sem desvio sem obrigar a desmontar a síntese diafisária. É a conduta específica descrita para essa situação.",
+      "incorretas": {
+        "A": "**Carga protegida não substitui a estabilização indicada.** A ausência de desvio não significa que o colo permaneça estável. O capítulo propõe fixação, para evitar tratar a lesão proximal apenas como um achado de controle.",
+        "C": "**Trocar por reconstrução não é a solução preferida.** A montagem única tem dificuldade de redução e mais problemas no colo. Aqui é possível acrescentar parafusos, preservando a haste e tratando a fratura proximal separadamente.",
+        "D": "**É uma escalada reservada a outra dificuldade.** Se o colo está desviado e não se consegue reduzi-lo com a haste presente, pode ser preciso retirá-la e mudar a montagem. O enunciado informa colo sem desvio, para o qual os parafusos ao redor da haste são a solução apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: A fratura do colo do mesmo lado."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "A fratura do colo do mesmo lado"
+        ],
+        "blocos": [
+          "a-fratura-do-colo-do-mesmo-lado-447c2a22",
+          "a-fratura-do-colo-do-mesmo-lado-8484e205",
+          "a-fratura-do-colo-do-mesmo-lado-7a77c9ba",
+          "a-fratura-do-colo-do-mesmo-lado-473f033a",
+          "a-fratura-do-colo-do-mesmo-lado-2856b2fa",
+          "a-fratura-do-colo-do-mesmo-lado-d6fedb3e"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "2f4c211a22f2504a42b4e9af1aacdee565cf18f3e46ad778233ba9d12f09262e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0236": {
+    "questaoSha256": "e8c6985355fcbd24aad689f1014e05db2e336bad01d034310c58fb2f0ecd273e",
+    "comentarioAnteriorSha256": "89147a366d593a4c7beb28e18b7dd90e4c13d95d81a8d6327547e573ec7e7d70",
+    "comentario": {
+      "conceito": "O pino de tração no **fêmur distal** passa de **medial para lateral**, com atenção à **artéria femoral na região do hiato dos adutores**. A escolha da direção coloca o controle da entrada do pino no lado da estrutura que se quer proteger.\n\nNão confunda esse pino com o da **tíbia proximal**, passado de lateral para medial para proteger o nervo fibular. São dois locais e dois riscos diferentes. A tração transfemoral atua diretamente no fêmur, permite algum controle rotacional e não distrai o joelho; exige evitar posição intra-articular e, se usada na cirurgia, não ocupar o futuro trajeto da haste (resumo do Rockwood, 10ª ed., cap. 57, “Pino de tração”).\n\nO resumo da Biblioteca apresenta os dois pinos lado a lado: associe direção, osso e estrutura protegida, em vez de decorar apenas uma seta.",
+      "correta": "**B: medial para lateral, protegendo a artéria femoral.** É a combinação do pino transfemoral distal. A estrutura vascular no hiato dos adutores fundamenta a direção e o cuidado anatômico.",
+      "incorretas": {
+        "A": "**Acerta a direção e troca a estrutura protegida.** A justificativa anatômica apresentada é a artéria femoral, não o nervo femoral. O nome do osso não permite escolher automaticamente qualquer estrutura chamada femoral.",
+        "C": "**Troca a direção e o alvo de proteção.** Lateral para medial é a orientação do pino tibial proximal, ligada ao nervo fibular. Não corresponde ao par transfemoral distal/arterial.",
+        "D": "**Reconhece a artéria, mas inverte a passagem.** No pino femoral a referência é medial para lateral. A mesma estrutura em risco não torna indiferente começar pelo lado oposto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Tratamento não operatório e tração; Anatomia aplicada e forças deformantes."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Tratamento não operatório e tração",
+          "Anatomia aplicada e forças deformantes"
+        ],
+        "blocos": [
+          "tratamento-nao-operatorio-e-tracao-0434b7b5",
+          "anatomia-aplicada-e-forcas-deformantes-904cdf37"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "b7deb28f2024ae7b99b02ea900b29ab99b765c006ec336907b20a18d45c32b6e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0074": {
+    "questaoSha256": "71a330a04822091a8933f24b0fb1f13170ffff382b9770e064215c1dac2fa614",
+    "comentarioAnteriorSha256": "39394793e1366465b2b15acfe361457a1518fd71600ca5512012c33fb51d34c7",
+    "comentario": {
+      "conceito": "Uma fratura multifragmentar perde os encaixes que poderiam mostrar o comprimento original. Aproximar fragmentos visíveis ou olhar apenas a cortical não permite saber se o fêmur terminou curto. A referência prática é **medir e comparar com o fêmur contralateral**.\n\nO capítulo orienta radiografar o lado sadio antes de começar e usar régua radiopaca do trocânter maior à cicatriz fisária. Na fratura bilateral, recomenda começar pelo lado mais simples e igualar o outro. Comprimento, alinhamento e rotação precisam ser restaurados, embora não seja necessária redução anatômica de todos os fragmentos do foco cominutivo (resumo do Rockwood, 10ª ed., cap. 57, “Comprimento e rotação”).\n\nEsse é um exemplo de como uma boa imagem do lado oposto pode ser mais útil do que insistir em reconstruir um foco sem referências. Leia no resumo da Biblioteca como combinar essa medida com o controle da rotação.",
+      "correta": "**C: mensurar o comprimento comparando com o lado contralateral.** A medida fornece uma referência independente do foco cominutivo. Deve ser planejada antes de fixar definitivamente o comprimento.",
+      "incorretas": {
+        "A": "**Uma ordem de bloqueio não informa o comprimento perdido.** Fixar distal primeiro pode fazer parte de uma técnica, mas não substitui uma referência para o tamanho original. O problema da questão é medir, não apenas escolher qual parafuso colocar antes.",
+        "B": "**Alinhamento anatômico não é sinônimo de comprimento correto.** Os eixos podem parecer alinhados e o membro continuar encurtado. Na cominuição, é preciso referência externa ao foco para recuperar essa dimensão.",
+        "D": "**O sinal cortical perde utilidade na cominuição.** Comparar espessura e congruência corticais ajuda em determinadas avaliações rotacionais de traços simples. Com vários fragmentos, não reconstitui de modo confiável o comprimento que falta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Comprimento e rotação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Comprimento e rotação"
+        ],
+        "blocos": [
+          "comprimento-e-rotacao-2bbb6c9f",
+          "comprimento-e-rotacao-c13089a5",
+          "comprimento-e-rotacao-cd6531f5"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "cffb637a3682fb83efb0a6f808899a1600e6eddab5e5aa5f28e562d936a6e4bc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0083": {
+    "questaoSha256": "f886ff74b011527b0dc6285769206e70b4944bbb571a886816d4824adce3d63f",
+    "comentarioAnteriorSha256": "f70dc72674bc17cb5d700d3f354f525edfd4b3ba83b242facd5b94869cf1f7be",
+    "comentario": {
+      "conceito": "No obeso, o ponto proximal de entrada da haste anterógrada é mais difícil de localizar e acessar. A **retrógrada entra pelo intercôndilo**, com o paciente em decúbito dorsal; por isso sua vantagem central nessa comparação é **encontrar o ponto de entrada correto com menor dificuldade**.\n\nO resumo relata redução do tempo e da radiação no obeso, mas a explicação anatômica da escolha é a facilidade do acesso distal. A haste continua precisando de posicionamento adequado, radioscopia, fresagem e bloqueio. Não se deve transformar a conveniência da via em promessa de fresagem mais fácil ou prevenção específica de trombose (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”).\n\nA indicação depende também do joelho e da localização da fratura: patela baixa, flexão limitada e fratura subtrocantérica são contraindicações relativas descritas. Compare esses cenários no resumo da Biblioteca.",
+      "correta": "**C: menor dificuldade de encontrar o ponto de entrada correto.** O acesso pelo joelho evita a dificuldade proximal acentuada no obeso. É o fundamento técnico destacado para essa escolha.",
+      "incorretas": {
+        "A": "**Menos radiação observada não é o mesmo que tornar toda fluoroscopia mais fácil.** A principal vantagem nomeada é o acesso ao ponto de entrada. A necessidade de conferir imagens e alinhamento continua presente.",
+        "B": "**A via muda a entrada, não elimina as dificuldades do canal.** A retrógrada também é fresada e requer guia bem posicionado. O resumo não atribui sua vantagem principal a uma fresagem intramedular mais simples.",
+        "D": "**Não há benefício antitrombótico específico demonstrado nessa comparação.** Obesidade permanece associada a risco de trombose e embolia no capítulo. A escolha da entrada não deve ser apresentada como substituto das medidas de prevenção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste retrógrada; Situações especiais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Haste retrógrada",
+          "Situações especiais"
+        ],
+        "blocos": [
+          "haste-retrograda-c19a5fde",
+          "haste-retrograda-fd5c0178",
+          "haste-retrograda-a6c8b54a",
+          "situacoes-especiais-15ca6fd9"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "38e146d992ead43d1da068abed48081cc9eab90086c9b703d057e0412a2e5047"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0885": {
+    "questaoSha256": "40042561c1e76bda2bcc63ebb34a23904a280d9dd2d7e79ec92e73b3f84a00a3",
+    "comentarioAnteriorSha256": "2a7eb98dc3e7dfb51ed886542b6dedce2aef5e670241a15e7f1784433f1bbd16",
+    "comentario": {
+      "conceito": "A haste retrógrada precisa alcançar o **intercôndilo pelo joelho**. A **patela baixa** dificulta esse caminho e é listada como contraindicação relativa, assim como flexão limitada do joelho. O obstáculo é anatômico, não simplesmente clínico.\n\nGravidez, bilateralidade e obesidade mórbida aparecem do outro lado da comparação: são situações em que a via retrógrada pode ser útil. Na gestante, o capítulo destaca menos radiação ao feto; no obeso, a entrada distal evita a dificuldade proximal. A escolha exige ajustar riscos e anatomia, não tratar uma condição sistêmica como contraindicação automática (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”).\n\nLeia a tabela do resumo da Biblioteca distinguindo quem se beneficia da via de quem não oferece um acesso adequado ao joelho.",
+      "correta": "**B: patela baixa.** É a contraindicação relativa dentre as opções, por comprometer a acessibilidade do ponto de entrada. A necessidade de entrar pelo joelho explica a resposta.",
+      "incorretas": {
+        "A": "**Gravidez é indicação relativa, não a contraindicação pedida.** A via pode reduzir a radiação fetal no contexto descrito. Isso não dispensa planejamento, mas muda a direção da resposta.",
+        "C": "**Bilateralidade pode favorecer a retrógrada.** O capítulo a lista entre as indicações. Ter os dois fêmures fraturados não impede, por si, o acesso intercondiliano.",
+        "D": "**Obesidade mórbida é justamente uma das indicações principais.** A entrada anterógrada pode ficar difícil, enquanto a distal é mais acessível. Não confundir maior complexidade clínica com impossibilidade anatômica da retrógrada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste retrógrada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Haste retrógrada"
+        ],
+        "blocos": [
+          "haste-retrograda-c19a5fde",
+          "haste-retrograda-a6c8b54a",
+          "haste-retrograda-fd5c0178"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "2f23448af6ca72ed6eda47ee17b0bc78898f80a95c5cb786e5ba519aa240cc0a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0898": {
+    "questaoSha256": "d5c83be595116d24fc54157e6cfde5061452c6bc7b3552229478c399ff5f1fb0",
+    "comentarioAnteriorSha256": "8cc8901a8429e6f251b0a722cd152a15bc2615f70c962dcd999c43431e41ae4a",
+    "comentario": {
+      "conceito": "Para introduzir a haste retrógrada, o joelho é apoiado fletido em cerca de **35 a 50 graus**. A flexão posiciona o acesso distal, e um coxim sob o foco ajuda a contrapor a queda posterior do fragmento distal.\n\nA posição é parte da técnica, mas não define sozinha o ponto de entrada. No perfil, ele fica à frente da origem do ligamento cruzado posterior, no encontro da tróclea com a linha de Blumensaat; no AP, deve acompanhar o canal. Entrar fora desse trajeto pode lesar cartilagem ou LCP (resumo do Rockwood, 10ª ed., cap. 57, “Haste retrógrada”, técnica).\n\nNão é necessário buscar flexão máxima. O intervalo oferecido deve corresponder ao da técnica descrita e ser conferido junto das imagens. O resumo da Biblioteca reúne posição e marcos radiográficos.",
+      "correta": "**C: 35 a 50 graus.** É a faixa recomendada no resumo para apoiar o joelho e permitir a entrada. O capítulo também cita estudo com 34 a 52 graus, próximo dessa referência técnica.",
+      "incorretas": {
+        "A": "**Dez a vinte graus deixa o joelho menos fletido que a faixa descrita.** A pergunta não pede uma posição quase estendida. O acesso deve ser planejado no intervalo de 35 a 50 graus e confirmado radiograficamente.",
+        "B": "**Vinte e cinco a trinta também fica abaixo da recomendação apresentada.** Proximidade numérica não equivale ao posicionamento específico da técnica. O controle do fragmento distal e do ponto de entrada continua necessário.",
+        "D": "**Sessenta a oitenta excede a faixa proposta.** Maior flexão não é automaticamente melhor acesso nem a recomendação do capítulo. A referência técnica é moderada, sem exigir essa amplitude."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste retrógrada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Haste retrógrada"
+        ],
+        "blocos": [
+          "haste-retrograda-8469a2aa",
+          "haste-retrograda-d0c23ae9",
+          "haste-retrograda-cc1ee60b"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "7bb5757746c1cf78b2e872db6435ed900f078344f769ec3fe47b05a0616c916a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0578": {
+    "questaoSha256": "9b3c1ca71d1ec0daa92979ed76a61beccb1dcbc674aa9dc38539f29070073048",
+    "comentarioAnteriorSha256": "6182d2ebcb0fa62944bc7369809a2c62fa15dc30bb29012cdb69cc3289fc82d4",
+    "comentario": {
+      "conceito": "O ponto de entrada anterógrado não atravessa apenas osso: ao redor dele estão tendões, cápsula, nervo e vasos da cabeça. A entrada **piriforme** expõe mais o **nervo glúteo superior** e pode lesar ramos da **circunflexa femoral medial**.\n\nO primeiro risco se relaciona à função abdutora e à marcha; o segundo, à circulação da cabeça. O estudo anatômico relatado também encontrou lesões dos obturadores, piriforme e cápsula. No adolescente com fise aberta, essa preocupação vascular faz evitar a entrada piriforme e preferir a ponta do trocânter ou posição mais lateral, caso se escolha haste rígida (resumo do Rockwood, 10ª ed., cap. 57, “O que cada entrada lesa” e “O adolescente com fise aberta”).\n\nNo adulto maduro, necrose após essa entrada é excepcional, embora as estruturas continuem merecendo proteção. O risco anatômico não deve ser convertido numa taxa inevitável de complicações. Leia o resumo da Biblioteca ligando cada estrutura à função que se quer preservar.",
+      "correta": "**A: glúteo superior e circunflexa femoral medial.** É o par exposto na entrada piriforme descrita. Um componente é neural e funcional; o outro integra a irrigação proximal.",
+      "incorretas": {
+        "B": "**Acerta o nervo e troca a artéria.** A lesão vascular apresentada envolve ramos da circunflexa medial, não a lateral. A vantagem de reconhecer o nervo não autoriza substituir o vaso do trajeto.",
+        "C": "**Acerta o vaso e troca o nervo.** O capítulo destaca exposição do glúteo superior, ligada à função abdutora. Não atribui esse risco proximal ao glúteo inferior.",
+        "D": "**Troca as duas estruturas.** O par relevante é superior/medial. Escolher inferior/lateral modifica tanto o componente neural quanto o vascular e não reproduz a anatomia consultada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Haste anterógrada: o ponto de entrada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Haste anterógrada: o ponto de entrada"
+        ],
+        "blocos": [
+          "haste-anterograda-o-ponto-de-entrada-469e83ef",
+          "haste-anterograda-o-ponto-de-entrada-2e8e945f"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "f4fdfa4001fc556fada755e468541a94273ace0aa1d01a0a68ffde7adad55e86"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1053": {
+    "questaoSha256": "e80725bc1d2f0f8c4682cb584d6c4199266b58ef31a9e6d1951573c944f0dd10",
+    "comentarioAnteriorSha256": "b6020e97a62cc70c918f422e99d44ff8a89e75eb2ffde9635c5f9e7c003089b3",
+    "comentario": {
+      "conceito": "A fratura da diáfise do fêmur deve levar a uma procura ativa por outras lesões. Na revisão de 26.357 fraturas apresentada pelo capítulo, os ossos mais associados foram **tíbia e fíbula, 20,5%**, seguidos de **costelas e esterno, 19,1%**.\n\nO resultado não autoriza concentrar todo o exame na mesma perna. O tórax aparece quase tão frequentemente quanto os ossos da perna nessa comparação; o pulmão também lidera a categoria de órgãos internos, mas órgão e osso são classificações diferentes. O restante do fêmur foi a terceira categoria óssea, não a primeira (resumo do Rockwood, 10ª ed., cap. 57, “O que vem junto”).\n\nAs frequências pertencem à revisão citada e não substituem a avaliação completa do politraumatizado. Leia a tabela no resumo da Biblioteca para comparar as categorias sem misturar lesão de órgão com fratura associada.",
+      "correta": "**B: tíbia/fíbula, seguidas de esterno/costela.** É a ordem das categorias ósseas na revisão. O segundo lugar torácico explica por que a busca não pode terminar no membro inferior.",
+      "incorretas": {
+        "A": "**Reconhece a primeira associação e inventa o segundo lugar para o tornozelo.** O segundo grupo apresentado é costelas/esterno. Uma lesão possível no tornozelo não demonstra que seja a próxima mais frequente.",
+        "C": "**Troca os dois primeiros grupos.** Fêmur distal e tornozelo não reproduzem a ordem da revisão. Tíbia/fíbula e costelas/esterno são as categorias que lideram os dados apresentados.",
+        "D": "**Acerta o grupo torácico em segundo, mas não o primeiro.** A revisão coloca tíbia e fíbula à frente. Fêmur fora da diáfise é outra categoria, sem justificar escolher especificamente distal como a associação principal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Epidemiologia, mecanismo e lesões associadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo e lesões associadas"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-e-lesoes-associadas-c3bbb661",
+          "epidemiologia-mecanismo-e-lesoes-associadas-49576002"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "333b116fbb5b18f88855e1d613940321d8e5c3894d9f7fdb9b9d598bd1ba3d8d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1096": {
+    "questaoSha256": "233c821509f6ee983f88b3344345c49ae36f533db17acc2482c94bad3585729b",
+    "comentarioAnteriorSha256": "14acb18a986788099b806b788c0ac9150b5413e5e8f6e6329bb67102d9076203",
+    "comentario": {
+      "conceito": "A diáfise quebrada pode impedir um exame confiável do joelho, mas não o torna ileso. Na série de 40 pacientes com exame e artroscopia citada pelo resumo, a lesão ligamentar mais frequente foi a **parcial do ligamento cruzado anterior, o LCA**, em 48%.\n\nAs demais lesões cruzadas foram menos frequentes: LCA completo em 5%, LCP parcial em 5% e LCP completo em 2,5%. Esses percentuais descrevem uma série, não uma regra universal para todo mecanismo. O impacto do joelho no painel pode lembrar o LCP, mas essa associação mecânica não substitui a frequência observada na população perguntada (resumo do Rockwood, 10ª ed., cap. 57, “O joelho”).\n\nO exame deve ser feito na sala depois de estabilizar o fêmur, quando a instabilidade diafisária interfere menos. A procura por lesão ligamentar faz parte do atendimento, mesmo quando a radiografia mostra uma fratura muito evidente. Leia essa sequência no resumo da Biblioteca.",
+      "correta": "**B: lesão parcial do LCA.** Foi a alteração ligamentar mais frequente na série apresentada. “Parcial” é decisivo: não basta reconhecer que o ligamento é o anterior.",
+      "incorretas": {
+        "A": "**Escolhe o ligamento certo e o grau errado.** A lesão completa do LCA apareceu em 5%, muito abaixo dos 48% de parcial na série. Não se deve presumir que trauma de alta energia produza sempre ruptura completa.",
+        "C": "**O mecanismo do painel não prova predominância do LCP completo.** Esse foi o menos frequente dos quatro padrões apresentados, 2,5%. A pergunta é epidemiológica, não apenas sobre qual ligamento pode ser lesionado num impacto específico.",
+        "D": "**A lesão parcial do LCP existe, mas não liderou a série.** Foi relatada em 5%, enquanto a parcial do LCA chegou a 48%. Parcialidade comum às duas alternativas não torna os ligamentos equivalentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Epidemiologia, mecanismo e lesões associadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo e lesões associadas"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "3ec77b940ee739af0e59fc9ed2f06abbf857be31ee4528554ca55cac3f9edad8"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -8,6 +8,10 @@ regras antigas de brevidade, limites de caracteres e proibição de tabelas/list
 
 Referência aprovada: [docs/exemplos/mao-0853.json](docs/exemplos/mao-0853.json).
 
+**Padrão do site desde 22/10/2026: comentário em formato de miniaula**, com tamanho flexível e citação moderada
+(na mão, Green com página, só no computador com os livros). Prompt: [docs/prompts/comentarios-miniaula.md](docs/prompts/comentarios-miniaula.md);
+referência: [docs/exemplos/mao-2164.json](docs/exemplos/mao-2164.json).
+
 **Capítulo enviado pelo Tales ("faça resumo disso", "questões e resumo", PDF sem comentário):** siga sozinho, sem pedir
 confirmação, o roteiro [docs/biblioteca/PILOTO-AUTOMATICO.md](docs/biblioteca/PILOTO-AUTOMATICO.md): o que cada pedido curto
 quer dizer, OrtoQuestões Simulados primeiro, resumo no mesmo jeito de escrever dos anteriores, conferir e publicar.
@@ -38,9 +42,24 @@ Em 18/10/2026, Tales aprovou para o arsenal o **Laboratório de patologia** (fee
 
 Em 19/10/2026, Tales aprovou a **Caderneta de topografia** (feed) e o **Bingo da prova** (stories). Veja [o guia](marketing/instagram/estilos/CADERNETA-E-BINGO.md). Também pediu que os estilos sigam uma **ordem fixa de rodízio**, sem sortear nem repetir: rode `node marketing/instagram/estilos/ordem.mjs` antes de cada post ([regras](marketing/instagram/estilos/ORDEM.md)). Stories nunca levam figurinha de link (tira o alcance da página).
 
+Em 22/10/2026, Tales aprovou a **Busca** (feed e stories: o sintoma digitado num buscador com a marca Orto Questões, a questão como resultado e a resposta no trecho em destaque). Veja [o guia](marketing/instagram/estilos/BUSCA.md).
+
 ## Telas do site
 Foco maior em imagens (Tales, 19/10/2026): prefira **objetos pixel animados** (como o livro da Biblioteca embaixo da questão, que flutua, entreabre e abre ao clicar) a caixas só de texto. Regras e referência em [docs/design/OBJETOS-ANIMADOS.md](docs/design/OBJETOS-ANIMADOS.md).
 
 Regra do Tales (19/10/2026): a tela começa **sempre limpa**, só com o essencial. O resto (mapa, Pomodoro, placar, atalhos, dicas) fica como **opção visível** para a pessoa adicionar, como o botão "Personalizar" da sessão; nunca ligado de entrada.
 
 Em 19/10/2026, Tales aprovou para o arsenal a **Conversa do grupo R+** (feed, 6 slides: print de conversa dos residentes no plantão, com enquete, zoom e prévia de link do Cronograma). Veja [o guia](marketing/instagram/estilos/CONVERSA-DO-GRUPO.md).
+
+## Tom dos e-mails
+Regra do Tales (21/10/2026), para os e-mails automáticos do site, as respostas de suporte e qualquer outra mensagem
+escrita em nome dele: **extremamente gentil, fofo e formal**, como em "Como fazer amigos e influenciar pessoas". O
+cliente tem razão 24 horas por dia, mesmo quando não tem: agradecer primeiro, reconhecer o incômodo, pedir desculpas
+pelo transtorno, explicar com calma o que foi feito e se colocar à disposição. Nunca culpar a pessoa nem soar seco.
+
+## Desenvolvimento e publicações
+
+Seguir a seção **Eficiência de desenvolvimento e GitHub Actions** do
+[AGENTS.md](AGENTS.md), fonte única das regras de agrupamento de alterações,
+commits, pushes, validação e respeito ao trabalho concorrente. Os detalhes dos
+workflows estão em [docs/OPERACAO-ACTIONS.md](docs/OPERACAO-ACTIONS.md).

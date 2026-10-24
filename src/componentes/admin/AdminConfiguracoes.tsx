@@ -13,7 +13,7 @@ const TOM: Record<Aviso['tom'], string> = { destaque: 'Verde (novidade)', info: 
 /**
  * Painel › Ajustes: recursos do plano pago, limite gratuito e pagamentos, aviso no
  * topo do site. Os simulados foram para Conteúdo › Simulados e os e-mails automáticos para
- * E-mails › Lembretes e automáticos (AdminEmails).
+ * E-mails › Enviar e-mails (AdminEmails).
  */
 export function AdminConfiguracoes() {
   const [comercial, definirComercial] = useState<ConfigComercial | null>(null)

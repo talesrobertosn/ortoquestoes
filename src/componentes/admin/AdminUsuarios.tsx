@@ -6,7 +6,7 @@ import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { servicoConhecido } from './servicosConhecidos'
 import { usarConta } from '../../conta/ContextoConta'
-import { usarRpc } from './usarRpc'
+import { CINCO_MIN, usarRpc } from './usarRpc'
 import { PLANOS_RECENTE_DIAS, ROTULOS_CATEGORIA, categoriaPessoa, indexarSinais, textoPlanos, viuPlanos, type CategoriaPessoa, type SinalUsuario } from './sinais'
 
 export interface LinhaUsuario {
@@ -53,7 +53,7 @@ export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 
 type Filtro = FiltroUsuarios
 type Ordem = 'respondidas' | 'hoje' | 'acerto' | 'semana' | 'atividade' | 'cadastro' | 'planos' | 'flashcards'
 
-const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Online agora'], ['hoje', 'Ativos hoje'], ['ativos', 'Ativos na semana'], ['novos', 'Recém-cadastrados'], ['novos_parados', 'Novos que pararam'], ['planos', 'Viu os planos'], ['assinantes', 'Assinantes'], ['parados', 'Sem respostas']]
+const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Últimos 5 min'], ['hoje', 'Ativos hoje'], ['ativos', 'Ativos na semana'], ['novos', 'Recém-cadastrados'], ['novos_parados', 'Novos que pararam'], ['planos', 'Viu os planos'], ['assinantes', 'Assinantes'], ['parados', 'Sem respostas']]
 const ORDENS: Array<[Ordem, string]> = [
   ['respondidas', 'Mais questões'], ['hoje', 'Mais questões hoje'], ['acerto', 'Maior acerto'], ['semana', 'Mais na semana'],
   ['atividade', 'Atividade mais recente'], ['cadastro', 'Cadastro mais recente'],
@@ -84,11 +84,11 @@ const hojeSP = () => {
   return hojeGuardado.dia
 }
 /**
- * Online agora, medido no painel (16/10/2026): o aparelho manda sinal a cada 40 s com a aba à vista;
- * sem sinal há mais de 100 s, a pessoa saiu (fechou, trocou de aba ou de app). O servidor usa 3 minutos;
- * aqui a conta é refeita a cada 10 s, então quem sai some do "ao vivo" sem esperar a próxima leitura.
+ * Online, medido no painel: o aparelho manda sinal a cada 40 s com a aba à vista. Desde 21/10/2026
+ * (pedido do Tales) a lista só é relida a cada 5 minutos ou no botão Atualizar, então "online" passou a
+ * ser quem deu sinal nos últimos 5 minutos (antes, 100 s). A conta é refeita a cada 10 s.
  */
-export const ONLINE_MS = 100_000
+export const ONLINE_MS = 300_000
 export const estaOnline = (u: Pick<LinhaUsuario, 'online' | 'visto_em'>, agora = Date.now()) =>
   u.visto_em ? agora - new Date(u.visto_em).getTime() < ONLINE_MS : !!u.online
 export const ativoHoje = (u: LinhaUsuario) => !!u.ultima_atividade && diaSP(u.ultima_atividade) === hojeSP()
@@ -157,12 +157,12 @@ function usarAdiado<T>(valor: T, ms: number): T {
 
 /**
  * A lista vem do painel, que é o único dono de `listar_usuarios_admin` (com cache e
- * "ao vivo" a cada 15 s enquanto esta parte ou Agora está aberta e visível).
+ * atualizada a cada 5 minutos enquanto esta parte ou Agora está aberta e visível, ou no Atualizar).
  */
 export function AdminUsuarios({ usuarios, filtro: filtroUrl = 'todos', aoMudarFiltro, aoVerAgora }: { usuarios: LinhaUsuario[]; filtro?: FiltroUsuarios; aoMudarFiltro?: (filtro: FiltroUsuarios) => void; aoVerAgora?: () => void }) {
   const { sessao } = usarConta()
   // Consulta leve à parte: quem abriu os planos, flashcards e locais. Sem a parte 25 colada, fica vazia.
-  const sinaisQ = usarRpc<SinalUsuario[]>(sessao?.user.id, 'sinais_usuarios_admin', {}, { atualizarCada: 60_000 })
+  const sinaisQ = usarRpc<SinalUsuario[]>(sessao?.user.id, 'sinais_usuarios_admin', {}, { atualizarCada: CINCO_MIN })
   const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : []), [sinaisQ.dados])
   const comSinais = Array.isArray(sinaisQ.dados)
   const [busca, definirBusca] = useState('')

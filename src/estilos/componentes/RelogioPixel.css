@@ -13,6 +13,11 @@
 .relogio-pixel--compacto .relogio-pixel__digitos { font-size: 1.8rem; }
 .relogio-pixel__digitos i { font-style: normal; animation: rp-pisca 1s steps(1) infinite; }
 .relogio-pixel__quando { font-size: .85rem; color: #cdbb94; }
+/* Variante legível (ranking): a ampulheta continua em pixel, os números e textos em fonte comum. */
+.relogio-pixel--legivel .relogio-pixel__texto { font-family: var(--fonte-marca); gap: .2rem; }
+.relogio-pixel--legivel .relogio-pixel__rotulo { font-size: .75rem; letter-spacing: .08em; }
+.relogio-pixel--legivel .relogio-pixel__digitos { font-size: 1.9rem; font-weight: 800; letter-spacing: .02em; text-shadow: 0 2px 0 #6b4a0c; }
+.relogio-pixel--legivel .relogio-pixel__quando { font-size: .82rem; font-weight: 600; }
 
 .rp-madeira { fill: #8a5a2b; }
 .rp-madeira-sombra { fill: #5e3b19; }

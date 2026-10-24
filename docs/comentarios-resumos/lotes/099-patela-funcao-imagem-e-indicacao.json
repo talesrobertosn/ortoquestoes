@@ -1,0 +1,390 @@
+{
+  "trauma-0950": {
+    "questaoSha256": "8a1d5eebefb3311cace4dd0118b61daf7b427b1c9f6f564c179ccffeee4a89f1",
+    "comentarioAnteriorSha256": "5c7c4a050ecbbb954179b1d6176955444ef5a6ce3ff0ee63e2ca58e009e69dae",
+    "comentario": {
+      "conceito": "O enunciado pede a **exceção** entre as indicações cirúrgicas. A separação de 2 mm entre fragmentos, isoladamente, não exige operar; a resposta é A. Para decidir, é preciso separar três informações: distância entre fragmentos, degrau na superfície articular e funcionamento do mecanismo extensor.\n\nA patela transmite a tração do quadríceps à tíbia e afasta o tendão do centro de rotação, aumentando sua vantagem mecânica. Por isso, o tratamento procura preservar osso, recuperar a superfície articular e manter extensão ativa. Uma fratura pouco desviada com retináculos íntegros pode cumprir esses objetivos sem fixação (Rockwood, 10ª ed., cap. 60, “Tratamento não cirúrgico e indicações cirúrgicas”).\n\n**Os dois cortes do resumo não são intercambiáveis.** Na classificação descritiva, fratura desviada significa separação acima de 3 mm ou degrau acima de 2 mm. Na indicação de tratamento apresentada pelo capítulo, a incongruência articular de **3 mm ou mais** é cirúrgica; abaixo de 3 mm, com extensor íntegro, pode-se tratar sem cirurgia. O número usado para descrever uma fratura não deve ser transplantado automaticamente para outra medida ou para uma indicação.\n\nO paciente precisa conseguir transmitir a contração até a tíbia. A elevação da perna estendida ajuda a testar essa competência, mas não elimina indicação por fratura exposta, fragmento livre ou incongruência significativa. Quando o tratamento é não cirúrgico, a proteção é em extensão, geralmente por 4 a 6 semanas, com progressão orientada pelo padrão, pela estabilidade e pelo controle radiográfico.\n\nA alternativa A, portanto, não equivale a dizer que “qualquer fratura com 2 mm fica sem cirurgia”. Ela diz apenas que esse desvio, sozinho, não é a indicação listada; os demais critérios continuam valendo.",
+      "correta": "**A.** Dois milímetros de separação dos fragmentos não constituem, isoladamente, indicação cirúrgica no algoritmo consultado. É necessário verificar a superfície articular e o extensor. Se houver perda da extensão ou corpo livre, o pequeno desvio não neutraliza essa indicação.",
+      "incorretas": {
+        "B": "**B.** A incongruência de 3 mm já alcança o corte cirúrgico do capítulo. Aqui se mede a perda de alinhamento da superfície articular, e não apenas a distância entre os fragmentos; por isso o número não pode ser comparado à alternativa A como se ambos descrevessem a mesma coisa.",
+        "C": "**C.** A perda da função extensora mostra que a transmissão de força está comprometida. Consolidar osso sem restaurar esse mecanismo deixaria o paciente com dificuldade de estender ativamente o joelho. É uma indicação própria, mesmo que outro parâmetro radiográfico pareça pequeno.",
+        "D": "**D.** O fragmento osteocondral livre é uma indicação citada no resumo. A avaliação deve decidir se ele pode ser recuperado ou precisa ser retirado; o ponto é que o tratamento não se limita a imobilizar a fratura ignorando o fragmento intra-articular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Tratamento não cirúrgico e indicações cirúrgicas; Classificação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Tratamento não cirúrgico e indicações cirúrgicas",
+          "Classificação"
+        ],
+        "blocos": [
+          "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-3f80f5d4",
+          "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89",
+          "classificacao-bab0c782",
+          "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "7f83c8cdf4239babcf99fdc54dd0e2ae16527699aa4f3296e7e097ce2cbbf0ce"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1234": {
+    "questaoSha256": "1919a3b5bc6ec61ede444360c86bffdd55760f7d99230040f38d949b4b0c93fc",
+    "comentarioAnteriorSha256": "941ead32858d18494e17c0d9cf24d4d34d36c8d53823cd118adf6db1c6997034",
+    "comentario": {
+      "conceito": "O teste descrito em B, **elevar o membro com o joelho estendido**, mostra que a contração do quadríceps consegue chegar à tíbia. Na fratura da patela, essa competência extensora abre a possibilidade de tratamento sem cirurgia.\n\nO mecanismo não depende apenas da continuidade do osso. Os retináculos recebem fibras dos vastos e se inserem na tíbia, funcionando como extensores secundários. Assim, é possível ter patela fraturada e ainda elevar a perna estendida. A fratura existe; o teste informa que a transmissão de força permanece funcional (Rockwood, 10ª ed., cap. 60, “Anatomia e biomecânica” e “Exame físico”).\n\nA dor pode atrapalhar a tentativa. O resumo descreve aspiração da hemartrose e anestésico local quando a coleção tensa impede avaliar a extensão. A incapacidade no primeiro teste doloroso precisa ser interpretada nesse contexto, e a capacidade de estender não dispensa radiografias.\n\n**Extensor íntegro é um critério, não uma autorização isolada.** O tratamento não cirúrgico também exige considerar a congruência articular, a exposição e os fragmentos livres. O capítulo admite incongruência menor que 3 mm com extensor competente; fratura exposta, corpo livre e incongruência de 3 mm ou mais podem indicar cirurgia apesar da elevação preservada.\n\nQuando indicado, protege-se o joelho em extensão com órtese ou tala por 4 a 6 semanas. Exercícios isométricos e elevação da perna podem começar cedo; o movimento e a carga seguem o protocolo e o controle da consolidação. Conseguir caminhar ou dobrar o joelho não substitui o teste específico que a questão pede.",
+      "correta": "**B.** A elevação ativa da perna mantendo o joelho estendido verifica continuidade funcional do aparelho extensor. É o achado entre as opções que favorece tratamento sem cirurgia, desde que os outros critérios da fratura também sejam aceitáveis.",
+      "incorretas": {
+        "A": "**A.** Flexão além de 90 graus mede mobilidade, não transmissão da força extensora. Um joelho pode dobrar e ainda não conseguir estender ativamente. Na fase aguda, não se deve forçar esse arco para tentar provar que a fratura pode ser tratada sem operação.",
+        "C": "**C.** A carga total não é o teste usado para decidir se o quadríceps consegue elevar a perna com o joelho estendido. O próprio protocolo conservador permite carga protegida em extensão, mostrando que apoio e extensão ativa são informações diferentes.",
+        "D": "**D.** Marcha sem auxílio é uma medida global, influenciada por dor e compensações. O resumo descreve marcha com joelho rígido ou circundução nas rupturas completas não tratadas: deslocar-se não prova que o extensor esteja íntegro. A elevação da perna é a informação específica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Anatomia e biomecânica do mecanismo extensor; Exame físico e fratura exposta oculta; Tratamento não cirúrgico e indicações cirúrgicas; Tratamento das rupturas tendíneas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Anatomia e biomecânica do mecanismo extensor",
+          "Exame físico e fratura exposta oculta",
+          "Tratamento não cirúrgico e indicações cirúrgicas",
+          "Tratamento das rupturas tendíneas"
+        ],
+        "blocos": [
+          "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
+          "exame-fisico-e-fratura-exposta-oculta-845aa804",
+          "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-1279cd89",
+          "tratamento-nao-cirurgico-e-indicacoes-cirurgicas-7a74af3c",
+          "tratamento-das-rupturas-tendineas-c716bcf4"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "7a2217d424807ca3b88ec5032fc85281b50158af1bec3a7bbc3a2bfa8fc283c6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0232": {
+    "questaoSha256": "08cf8728e615a814c8eca2f40fd9ead96ed8dd0545bd9ec441ffd82b383f7125",
+    "comentarioAnteriorSha256": "924443012b32d884338626bd30860f0ed5b38d90a562b27b2ef8e025cb232143",
+    "comentario": {
+      "conceito": "A ressonância mostra as marcas deixadas pelo deslocamento lateral da patela: **contusão do côndilo femoral lateral e da faceta patelar medial**, alternativa B. Os lados são opostos porque se descrevem duas superfícies diferentes que participam do episódio.\n\nA patela ocupa o sulco anterior do fêmur. Quando se desloca lateralmente, sua borda medial e o côndilo lateral ficam envolvidos no trajeto de saída e retorno. O edema ósseo nessas regiões é uma pista do impacto ocorrido, mesmo quando o paciente chega com a patela já reduzida. Não é necessário ver luxação persistente na imagem para reconhecer o padrão (Rockwood, 10ª ed., cap. 60, “Luxação aguda da patela”).\n\n**Contusão e fratura osteocondral não são sinônimos.** A primeira registra lesão óssea pelo impacto; a segunda envolve cartilagem e osso subcondral, podendo deixar um fragmento livre. O capítulo localiza a lesão osteocondral característica na borda inferomedial da patela e também descreve fragmentos do côndilo femoral lateral.\n\nA RM permite procurar essas lesões, corpos livres e lesão do ligamento patelofemoral medial e do retináculo. Hemartrose grande aumenta a preocupação com fratura osteocondral; o resumo recomenda RM nos pacientes de alto risco. O achado de contusão isolado não determina fixação de um fragmento que não existe: a indicação depende do tamanho, do desvio e das demais lesões.\n\nPara resolver a questão, associe o **côndilo lateral** à **faceta medial**, mantendo separados os lados do fêmur e da patela. Trocar apenas uma dessas referências produz exatamente os três distratores.",
+      "correta": "**B.** A combinação lateral no fêmur e medial na patela corresponde ao padrão de contusão descrito na RM após luxação lateral. Também pode revelar um episódio que reduziu espontaneamente, quando o alinhamento atual parece normal.",
+      "incorretas": {
+        "A": "**A.** Inverte as duas superfícies: o côndilo citado pelo capítulo é o lateral, e a faceta patelar é a medial. Uma lesão em outra distribuição deve ser interpretada pelo mecanismo real; não é o par característico pedido.",
+        "C": "**C.** Acerta o côndilo lateral, mas coloca a contusão na faceta lateral. O sentido lateral do deslocamento não faz com que todos os achados se situem no lado lateral de cada osso; a faceta patelar envolvida no padrão é a medial.",
+        "D": "**D.** Acerta a faceta medial e troca o côndilo por medial. A contusão femoral típica é no côndilo lateral. Identificar só uma metade do par não basta para reconhecer a assinatura da luxação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Luxação aguda da patela."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Luxação aguda da patela"
+        ],
+        "blocos": [
+          "luxacao-aguda-da-patela-dae642d9",
+          "luxacao-aguda-da-patela-541ed1a4"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "bb551cd35cb51983c86ca61360b3c0c75b2948eb44da5b6e61f4ec47ec81ab3c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1020": {
+    "questaoSha256": "2397f5c743c1e61b24b0f1b5fef1b89ffcd95b538f2477b649132f63b54d02d9",
+    "comentarioAnteriorSha256": "b99cd55d477a2d07967c80abe91780bb093f237530af4e2004e03683ce26e3cc",
+    "comentario": {
+      "conceito": "Na luxação traumática mais comum, a patela sai **para lateral**, e a lesão osteocondral característica fica na borda **inferior e medial** da patela. Portanto, B é a resposta. O lado para o qual a patela se desloca não é o nome da borda patelar que se fratura.\n\nO episódio põe a borda medial da patela em relação traumática com o côndilo femoral lateral. A lesão pode desprender cartilagem acompanhada de osso subcondral, formando um fragmento osteocondral. O resumo também descreve fragmentos do côndilo lateral e contusões nesse côndilo e na faceta patelar medial na RM (Rockwood, 10ª ed., cap. 60, “Luxação aguda da patela”).\n\nA patela pode reduzir espontaneamente. Nesse caso, o exame de imagem não precisa mostrar a luxação para que suas consequências ainda sejam reconhecidas. Derrame, contusões, lesão do ligamento patelofemoral medial e corpos livres ajudam a reconstruir o episódio.\n\n**O fragmento muda a avaliação da lesão aguda.** Hemartrose grande aumenta a suspeita de lesão osteocondral e é motivo para RM no algoritmo descrito. A maioria dos autores fixa os fragmentos grandes e desviados. Isso é diferente de operar todo primeiro episódio somente para evitar recorrência, conduta que o capítulo considera controversa.\n\nO aprendizado decisivo é manter os referenciais: luxação lateral, contusão do côndilo lateral e lesão da borda inferomedial da patela. Uma radiografia com alinhamento já restabelecido não elimina a necessidade de procurar essas lesões.",
+      "correta": "**B.** A borda inferior e medial é a localização patelar altamente sugestiva da luxação lateral descrita no capítulo. A combinação dos dois termos importa: não basta marcar “medial” e trocar o polo.",
+      "incorretas": {
+        "A": "**A.** Mantém o nível inferior, mas erra o lado. O fato de a patela luxar lateralmente não localiza a fratura na borda lateral; o padrão patelar é medial, em associação ao côndilo femoral lateral.",
+        "C": "**C.** Troca tanto o nível quanto o lado da lesão característica. A borda superolateral lembra a localização habitual da patela bipartida, variante de ossificação com bordas corticalizadas, e não a fratura osteocondral típica desse episódio.",
+        "D": "**D.** A orientação medial está correta, mas o polo superior não é a localização característica pedida. O resumo especifica a borda medial inferior; a resposta precisa conservar também essa referência longitudinal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Luxação aguda da patela; Patela bipartida e outros simuladores."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Luxação aguda da patela",
+          "Patela bipartida e outros simuladores"
+        ],
+        "blocos": [
+          "luxacao-aguda-da-patela-dae642d9",
+          "luxacao-aguda-da-patela-541ed1a4",
+          "luxacao-aguda-da-patela-727a6900",
+          "patela-bipartida-e-outros-simuladores-27cbef14"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "1e4aa71ff8d2361fcc784bc0f91d2da8c037cfd294cb66df7199af95bf537fb2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0230": {
+    "questaoSha256": "1f9263e4ccc2e2e407c9675243a762d67e826251c3ac6b23e5b3065d52cc3205",
+    "comentarioAnteriorSha256": "ffb5a99f1ac8bc7fbe22ec446e727ac513f08d612d30c28e3c96c7beb9ea55ec",
+    "comentario": {
+      "conceito": "A ruptura do tendão patelar ocorre tipicamente quando o quadríceps contrai **enquanto o joelho é forçado a fletir sob carga**. O músculo tenta controlar o movimento enquanto seu conjunto musculotendíneo é alongado: essa é a contração **excêntrica**, com joelho **fletido**, da alternativa B.\n\n“Contrair” não significa necessariamente encurtar. Na ação concêntrica, o músculo encurta para produzir movimento; na excêntrica, permanece ativo freando o alongamento imposto pela carga. Na isométrica, desenvolve tensão sem mudança relevante de comprimento. A questão combina o tipo de ação com a posição do joelho, e as duas informações precisam estar corretas.\n\nO resumo descreve carga súbita do peso corporal contra o quadríceps, frequentemente em mecanismo de baixa energia. A falha não depende apenas do tamanho do trauma: microtrauma e degeneração crônica podem reduzir a resistência do tendão. Dor anterior ou tendinopatia podem anteceder a ruptura, sem serem obrigatórias em todo paciente (Rockwood, 10ª ed., cap. 60, “Quem rompe e por quê”).\n\nNa ruptura do patelar, em geral também se perde a continuidade dos retináculos, com falta completa de extensão ativa. O defeito pode ser palpável inicialmente e ficar menos evidente com o hematoma organizado. O mecanismo orienta a suspeita, mas o diagnóstico exige testar a extensão e avaliar a imagem.\n\nNão confunda joelho fletido com músculo relaxado. É precisamente a tentativa ativa de resistir à flexão sob carga que tensiona intensamente o aparelho extensor.",
+      "correta": "**B.** Combina ação excêntrica do quadríceps e joelho fletido, como descrito no capítulo. O tendão recebe a tração enquanto o músculo tenta frear a carga que dobra o joelho.",
+      "incorretas": {
+        "A": "**A.** A palavra “excêntrica” corresponde ao mecanismo, mas a extensão troca a posição decisiva. O padrão descrito é de carga súbita com joelho fletido, e não simplesmente uma contração forte em qualquer posição.",
+        "C": "**C.** Erra a ação muscular e a posição. Uma contração isométrica gera tensão sem o alongamento ativo que define a situação cobrada; o joelho estendido também não corresponde ao mecanismo típico do resumo.",
+        "D": "**D.** Acerta a flexão, mas retira a característica excêntrica. O capítulo descreve controle ativo contra carga corporal súbita, não uma sustentação isométrica estática como mecanismo mais comum."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Rupturas do tendão quadricipital e do tendão patelar"
+        ],
+        "blocos": [
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "12fd85e036066a2e872ebfe202b215b4e7765a1d853e3a56300e690dc9ddaf1b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1049": {
+    "questaoSha256": "81d0efede0525e840d1b69e0e4ac4eee29e00250736f66c14de320717d09876d",
+    "comentarioAnteriorSha256": "4a163dc3657172db16eae83c63a70caea59c75be8163e81dcc394221212961f0",
+    "comentario": {
+      "conceito": "O cenário é o quadríceps tentando controlar o peso do corpo com o **pé apoiado**, enquanto o joelho flete. A contração é **excêntrica**: há atividade muscular durante o alongamento imposto pela carga. A combinação correta é C.\n\nO apoio permite que a carga corporal seja transmitida ao membro. O quadríceps precisa impedir que o joelho ceda rapidamente em flexão, e sua tração percorre o tendão quadricipital, a patela e o tendão patelar até a tíbia. O resumo descreve justamente contração forte contra carga súbita do corpo com joelho fletido (Rockwood, 10ª ed., cap. 60, “Rupturas do tendão quadricipital e do tendão patelar”).\n\nNa ação concêntrica, o músculo encurta ao produzir movimento. Na excêntrica, ele freia uma força que o alonga. As duas ações são ativas; a diferença não é “contraiu” contra “não contraiu”, mas a relação entre a força muscular e o deslocamento que a carga impõe.\n\nA integridade do tecido também importa. O capítulo relaciona as rupturas indiretas a alterações degenerativas por microtraumas, embora elas não precisem estar documentadas em todo caso. O tendão patelar rompe mais abaixo dos 40 anos e costuma comprometer o retináculo, causando perda da extensão ativa. A idade ajuda a suspeitar do tendão lesado; não substitui a avaliação funcional.\n\nDepois de um estalo e da incapacidade de manter o joelho estendido contra a gravidade, é necessário procurar falha do aparelho extensor. O mecanismo com o pé apoiado é a pista da questão, e não uma regra de que nenhuma ruptura possa acontecer fora desse cenário.",
+      "correta": "**C.** Reúne os dois elementos do mecanismo típico: ação excêntrica do quadríceps e pé apoiado para receber a carga. O músculo tenta frear a flexão, e o tendão é solicitado durante esse controle.",
+      "incorretas": {
+        "A": "**A.** Acerta a ação excêntrica, mas retira o apoio que caracteriza o mecanismo contra o peso do corpo. Não se deve trocar o cenário típico cobrado por uma afirmação sobre toda possível lesão tendínea.",
+        "B": "**B.** Muda os dois componentes: ação concêntrica e pé sem apoio. O músculo que encurta para mover livremente o membro não reproduz o controle excêntrico da flexão sob carga descrito no resumo.",
+        "D": "**D.** O pé apoiado está correto, mas a contração concêntrica significa encurtamento ativo. O episódio típico de ruptura descrito é de resistência excêntrica à carga súbita com o joelho fletido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Rupturas do tendão quadricipital e do tendão patelar"
+        ],
+        "blocos": [
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "a82b83f5fac70d8af512ebbd31046fb727e95c4fd690339e649f43dca3b35911"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0083": {
+    "questaoSha256": "da6e5dff097e2abad04ec698e562da6aebb10e8bb861caea9ebef963755278e6",
+    "comentarioAnteriorSha256": "e254602590118fdd10f22cd546abf81a767ff93fae3a10081a2ea6db45cc5588",
+    "comentario": {
+      "conceito": "A alternativa D é a correta: a ruptura do **tendão patelar é mais comum abaixo dos 40 anos**. O capítulo contrapõe esse perfil à ruptura do quadricipital, mais frequente acima dos 40 e associada a degeneração ou doença sistêmica.\n\nA distinção faz sentido anatômico: os dois tendões pertencem à mesma cadeia extensora, mas podem falhar em contextos diferentes. O quadríceps traciona a patela pelo tendão quadricipital, e a patela transmite a força à tíbia pelo tendão patelar. Interromper essa transmissão causa dificuldade de extensão ativa, mesmo que o paciente consiga manter o joelho rígido e se deslocar com compensações (Rockwood, 10ª ed., cap. 60, “Rupturas tendíneas” e “Tratamento das rupturas tendíneas”).\n\nA ruptura indireta costuma ocorrer com o quadríceps sob carga excêntrica no joelho fletido. Alterações degenerativas por repetição ajudam a explicar por que um tendão falha num trauma relativamente pequeno. “Jovem” não é sinônimo de tecido comprovadamente normal; o resumo descreve pródromos como dor e tendinopatia, sem exigir que estejam presentes em todos os casos.\n\nA ruptura patelar geralmente se estende ao retináculo e tira toda a extensão. A quadricipital pode poupar parte da manga retinacular e conservar alguma extensão, habitualmente deficitária. O exame precisa verificar elevação da perna e manutenção contra a gravidade, em vez de concluir pela gravidade apenas observando se o paciente ainda anda.\n\nA bilateralidade também não deve ser atribuída preferencialmente ao tendão patelar: o capítulo descreve bilateral simultânea no quadricipital em doença sistêmica ou obesidade e informa que a bilateral do patelar é menos frequente.",
+      "correta": "**D.** O perfil etário está de acordo com o resumo: patelar abaixo dos 40 anos, quadricipital acima dos 40. Trata-se de predominância, não de um limite que exclua diagnóstico fora dessa idade.",
+      "incorretas": {
+        "A": "**A.** A afirmação não corresponde ao contexto descrito. Degeneração e doença sistêmica são relevantes, especialmente no quadricipital, e alterações crônicas podem preceder a ruptura patelar. Aparência geral saudável não demonstra que o tendão estivesse estruturalmente normal.",
+        "B": "**B.** Uma ruptura completa sem tratamento pode produzir joelho rígido na marcha, circundução, falseio e dificuldade em escadas. Portanto, a marcha normal não é uma consequência esperada de perder a transmissão extensora; compensar a marcha não reconstitui o mecanismo.",
+        "C": "**C.** Inverte a comparação do capítulo. A ruptura bilateral patelar é menos frequente, enquanto a bilateral quadricipital é descrita em associação a doença sistêmica e obesidade. Não se deve transferir esse perfil entre os dois tendões."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar; Tratamento das rupturas tendíneas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Rupturas do tendão quadricipital e do tendão patelar",
+          "Tratamento das rupturas tendíneas"
+        ],
+        "blocos": [
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+          "tratamento-das-rupturas-tendineas-c716bcf4"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "b8ed679665520369d0a9c714b41e1cb29359fd929cb17cf1d90754ecd639f650"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1292": {
+    "questaoSha256": "53b11650e46b02e99dce0f68ee351235088b9497740dd5862417c84284771543",
+    "comentarioAnteriorSha256": "9e964322164d0210e18d3bd800f693b72075b7101238224fe9b2126a7d45b03e",
+    "comentario": {
+      "conceito": "A fratura vertical da patela pode passar despercebida na incidência **anteroposterior**. Por isso é importante acrescentar a **axial**, alternativa D. A resposta não significa que toda fratura vertical seja invisível no AP, mas que depender dessa projeção pode perder o traço.\n\nCada radiografia projeta uma estrutura tridimensional num plano. Mudar a direção do feixe separa superfícies e traços que ficaram sobrepostos na primeira incidência. O resumo recomenda AP, perfil e axial para avaliar a patela: o perfil define melhor o traço transverso e a separação; a axial evidencia os verticais, os marginais e defeitos osteocondrais (Rockwood, 10ª ed., cap. 60, “Imagem”).\n\nO traço vertical costuma decorrer de golpe direto com o joelho parcialmente fletido. Se retináculos e mecanismo extensor permanecem íntegros, pode ter pouco desvio. Esse exame relativamente preservado não deve encerrar a investigação radiográfica quando persistem dor localizada e suspeita de fratura.\n\nA axial descrita no capítulo usa joelho a 45 graus e raio a 30 graus abaixo da horizontal. O objetivo aqui é entender a complementaridade das incidências, não trocar a avaliação clínica por uma única imagem. Radiografia contralateral pode ajudar se a dúvida for patela bipartida, que em geral é bilateral e superolateral, com bordas corticalizadas.\n\nSe as radiografias não esclarecem um padrão complexo, a TC pode ajudar no planejamento; não é exame rotineiro para toda fratura isolada. A RM tem papel nas suspeitas tendíneas e condrais. Nesta questão, o passo que corrige a limitação do AP é a incidência axial.",
+      "correta": "**D.** Identifica a limitação do AP e acrescenta a axial, que demonstra melhor o traço vertical no resumo consultado. Sem gabarito oficial registrado, D permanece resposta provável sustentada pela fonte, não resposta oficial da banca.",
+      "incorretas": {
+        "A": "**A.** O perfil não é a melhor projeção para o traço vertical, mas concluir que o AP seja a incidência fundamental para resolver essa dificuldade perde o ponto principal. O capítulo indica a axial para revelar os traços verticais que o AP pode não mostrar.",
+        "B": "**B.** Reconhece a limitação do AP, porém escolhe o perfil como solução. O perfil é especialmente útil para o traço transverso e para medir a separação; a projeção complementar decisiva para o vertical é a axial.",
+        "C": "**C.** Inverte a relação: é justamente a axial que evidencia os traços verticais e marginais. Substituí-la pelo AP, que pode deixar o traço passar despercebido, mantém a limitação diagnóstica descrita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Imagem; Fratura da patela: mecanismo e lesões associadas; Patela bipartida e outros simuladores."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial registrado no acervo. D é a resposta provável pelo resumo do Rockwood, 10ª ed., cap. 60: a axial demonstra os traços verticais que podem escapar no AP. O perfil também pode não definir o traço vertical, mas isso não torna o AP a solução proposta em A. Não equivale a dizer que o traço nunca aparece no AP.",
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Imagem",
+          "Fratura da patela: mecanismo e lesões associadas",
+          "Patela bipartida e outros simuladores"
+        ],
+        "blocos": [
+          "imagem-94cf58b2",
+          "imagem-a2c920f0",
+          "imagem-d02f2407",
+          "fratura-da-patela-mecanismo-e-lesoes-associadas-9a3c4f42",
+          "imagem-5a3e9611",
+          "patela-bipartida-e-outros-simuladores-27cbef14"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "35729c7efd2aeb95d441362fed9041eb998331a9380b31f9fb5142eb33698e37"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1646": {
+    "questaoSha256": "7d43fd72cd431795254b5b88a9667a151a2ca76465da971e2994de1f8feb5091",
+    "comentarioAnteriorSha256": "903d47b2bca370e89cc094b97cf94110d0ef19a4dc8dc14cc8d9621b9aa5f5be",
+    "comentario": {
+      "conceito": "O resumo apresenta a patela bipartida com incidência aproximada de **8%** e distribuição **quase sempre bilateral**. Entre os pares oferecidos, isso corresponde a D. O número é o informado nessa fonte, e a bilateralidade é uma característica predominante, não uma exigência absoluta.\n\nA bipartida é uma variante de desenvolvimento: parte dos centros de ossificação da patela não se fundiu. O fragmento habitual fica na região superolateral e tem bordas lisas e corticalizadas. Num quadro típico, não há sensibilidade local e o mecanismo extensor funciona normalmente (Rockwood, 10ª ed., cap. 60, “Patela bipartida e outros simuladores”).\n\nA importância prática é não transformar um achado anterior ao trauma em uma fratura aguda apenas porque apareceu na radiografia feita depois de uma queda. A imagem do outro joelho ajuda: encontrar o mesmo padrão contralateral favorece a variante. Uma verdadeira apresentação unilateral é rara e pode corresponder a avulsão antiga.\n\n**O exame continua necessário.** O padrão bilateral não dispensa investigar uma dor aguda, nem prova que nenhum trauma ocorreu. Deve-se relacionar localização da dor, sensibilidade, função extensora e contornos radiográficos. A fratura em manga do esqueleto imaturo e a lesão osteocondral, por exemplo, são problemas diferentes citados no capítulo.\n\nA questão pede somente frequência aproximada e lateralidade. Não é preciso decorar uma regra de que “qualquer fragmento superolateral é bipartido”; a utilidade do dado está em combinar desenvolvimento, corticalização e comparação com o lado oposto.\n\n**Por que esta questão foi criada.** A patela bipartida foi cobrada no TARO e no TEOT de 2024 pelo diagnóstico diferencial, pela comparação contralateral e pelo padrão superolateral. Este simulado cruza a frequência informada no capítulo com a bilateralidade para reforçar o reconhecimento da variante.",
+      "correta": "**D.** Reproduz a aproximação de 8% e a apresentação predominantemente bilateral do resumo. A palavra bilateral deve ser entendida como o padrão habitual descrito, preservando as exceções.",
+      "incorretas": {
+        "A": "**A.** Os dois elementos divergem da fonte consultada: ela informa cerca de 8%, não 2%, e descreve bilateralidade como apresentação usual. Unilateralidade verdadeira é excepcional e merece avaliação cuidadosa, inclusive da possibilidade de avulsão antiga.",
+        "B": "**B.** A bilateralidade está correta, mas a estimativa de 2% não é a fornecida pelo resumo. Um par só é a resposta quando tanto o número aproximado quanto a apresentação concordam com a fonte da questão.",
+        "C": "**C.** Acerta os 8%, mas troca a apresentação predominante por unilateral. É precisamente a frequência do padrão nos dois joelhos que torna útil a radiografia contralateral no diagnóstico diferencial."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Patela bipartida e outros simuladores."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Patela bipartida e outros simuladores"
+        ],
+        "blocos": [
+          "patela-bipartida-e-outros-simuladores-27cbef14",
+          "patela-bipartida-e-outros-simuladores-f0b1afd4"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "e676227d5dd69a2ca45af37abc6d7c3f0c40e95c0cfb160461bcda6da678acfa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0314": {
+    "questaoSha256": "b86e93dc76b2c262194b8646e79282a29d1ba564256fd959af26b779c0bb8c0a",
+    "comentarioAnteriorSha256": "fa64909914d1fa95b5e8e1ea5d0a282183904e7d99f1adb696967baee154d219",
+    "comentario": {
+      "conceito": "A afirmação é **errada**, resposta provável B: no modelo da banda de tensão da patela, o lado de tensão é **anterior**, enquanto a compressão que se procura obter fica na superfície articular **posterior**. A frase troca esses dois referenciais.\n\nO quadríceps traciona a patela. A montagem anterior busca converter essa solicitação em compressão no foco articular, que aumenta com a flexão no modelo descrito pelo capítulo. Por isso a posição do material e a superfície que recebe compressão não devem ser chamadas pelo mesmo nome (Rockwood, 10ª ed., cap. 60, “Fixação interna”).\n\nA banda modificada usa dois fios de Kirschner paralelos, descritos a 5 mm abaixo da cortical anterior, associados ao fio em oito anterior, próximo ao osso. Os fios não precisam estar literalmente sobre a cortical para que a montagem trabalhe no lado de tensão; são componentes diferentes com funções complementares. A redução deve ser conferida pela visão ou palpação da superfície articular e o retináculo precisa ser reparado.\n\n**Uma montagem chamada banda não garante o efeito por si só.** Geometria, redução, contato do fio com o osso e qualidade da fixação importam. O resumo relata diferenças de resistência entre cerclagem simples, banda padrão e modificada. Portanto, a explicação biomecânica não autoriza ignorar a técnica nem prometer a mesma compressão em toda montagem.\n\nO ponto que invalida o enunciado é inequívoco: chamar a face posterior de lado de tensão. Ela corresponde ao lado articular em que se pretende obter compressão. Sem gabarito oficial no acervo, essa leitura bibliográfica permanece identificada como provável.",
+      "correta": "**B, Errado.** O capítulo coloca a banda na face anterior, lado de tensão, e descreve compressão articular posterior. Também situa os fios paralelos no interior da patela, próximos à cortical anterior; não os transfere para a cortical posterior.",
+      "incorretas": {
+        "A": "**A, Certo.** Aceitaria a inversão entre posição da montagem e superfície comprimida. O conceito de atuar no lado de tensão não está errado; o erro é localizar esse lado posteriormente na patela. A compressão posterior não é motivo para colocar ali a banda ou interpretar os fios como posteriores."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Fixação interna."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial registrado. B, “Errado”, permanece resposta provável pelo resumo do Rockwood, 10ª ed., cap. 60. O lado de tensão da montagem é anterior e a compressão procurada é articular posterior. A descrição dos fios a 5 mm da cortical anterior não significa que todo fio esteja literalmente sobre a cortical.",
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Fixação interna"
+        ],
+        "blocos": [
+          "fixacao-interna-d2d06087",
+          "fixacao-interna-19754d8d",
+          "fixacao-interna-8ce3f90e"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "4b273f6d358b61bfb10a1fe0bf33d32d0ec9169a73b2b24835284fc4b9e4253d"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

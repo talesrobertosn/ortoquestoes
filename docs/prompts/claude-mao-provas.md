@@ -1,10 +1,74 @@
 # Comando para o Claude Code local: provas de Cirurgia da Mão → OrtoQuestões Simulados
 
-Para o Tales colar no Claude Code do outro computador, aberto na pasta do repositório `ortoquestoes`.
+Para o Tales colar no Claude Code (outra conta ou outro computador), aberto na pasta do repositório `ortoquestoes`.
 Trocar só a linha **PROVA DESTA VEZ**. Se a sessão acabar no meio, abrir outra e colar o mesmo comando:
 ele continua de onde parou pelo [PROGRESSO.md](../mao/PROGRESSO.md).
 
+Para o **ChatGPT Codex** neste mesmo computador, use [codex-mao-provas.md](codex-mao-provas.md) (22/10/2026).
+
 ---
+
+## Segunda conta do Claude Code no mesmo PC (20/10/2026): use este
+
+**Antes de colar:** pare a sessão da outra conta (as duas não podem publicar ao mesmo tempo, porque os ids
+são sequenciais). No Claude Code (app desktop), saia da conta atual e entre com a outra, abra a pasta
+`C:\Users\tales_zh0ni7\ortoquestoes` e cole o texto abaixo. Git, gh, Node, Python, poppler e a biblioteca
+`~/OrtoQuestoes-Biblioteca` já estão instalados e são os mesmos para as duas contas; não precisa instalar nada.
+Se o `gh` pedir login, rode `gh auth login` uma vez.
+
+```text
+Continue o trabalho das provas de Cirurgia da Mão do OrtoQuestões exatamente de onde a outra conta parou,
+sozinho, sem me pedir confirmação. Eu autorizo aplicar os lotes no acervo, fazer commit e push no branch
+claude/relaxed-franklin-0snpiu e fazer o merge dos PRs para claude/pdfs-questoes-tp64dr.
+
+1. cd ~/ortoquestoes ; git checkout claude/relaxed-franklin-0snpiu ; git pull origin claude/relaxed-franklin-0snpiu
+   e depois git pull origin claude/pdfs-questoes-tp64dr (resolva conflito em indice.json ou busca.json
+   rodando de novo scripts/gerar_indice.py).
+2. Leia por inteiro, antes de qualquer coisa: CLAUDE.md, AGENTS.md, docs/mao/PROTOCOLO.md (principalmente
+   as seções 6, 7 e 7.1), docs/mao/PROGRESSO.md (comece pela seção "Retomada": ela diz o ponto exato e
+   como o trabalho vem sendo feito), docs/mao/ferramentas/README.md e o exemplo docs/exemplos/mao-0853.json.
+   Abra também dois lotes já publicados como modelo de tom e profundidade:
+   ~/OrtoQuestoes-Biblioteca/lotes/simao-2023/lote_16.py e lote_17.py.
+3. Confira que as ferramentas estão na biblioteca (~/OrtoQuestoes-Biblioteca/.oq/progresso.py, revisar.sh,
+   exportar.py e lotes/simao-2023/_revisar.py). Se faltar alguma, copie de docs/mao/ferramentas/.
+4. Siga a fila da "Retomada" na ordem: lotes 18, 19 e 20 do SIMÃO 2023 (o 20 vai no tema ombro-cotovelo),
+   pendentes 89 e 38, fechamento do SIMÃO 2023 (seção 9), refazer os comentários do SIMÃO 2026 e depois
+   SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021 e os comentários do ENARE.
+
+COMO ESCREVER (o que o Tales aprovou e pediu):
+- Questão bem parecida com a original: a mesma pergunta, os mesmos dados e as mesmas alternativas, com
+  outras palavras e outra ordem; o comando copia tem que passar (nenhuma sequência de 7 palavras igual).
+  Só mude o ângulo se a original tiver duas respostas pelo livro ou repetir uma questão da mesma prova,
+  e explique isso no comentário.
+- Leia de verdade o trecho do Green que decide (grep em ~/OrtoQuestoes-Biblioteca/.oq/texto/), com a
+  página impressa da marca "===== ... p. N" acima da linha. Nunca invente página; se só o resumo traz o
+  fato, diga que é do resumo. Releia a página antes de citar.
+- Comentário com tom de professor, explicando os porquês: conceito do zero, tabela quando compara,
+  correta e cada errada com parágrafo próprio e com a página quando o motivo vem do livro.
+- Citação literal do Green com flexibilidade: muita quando a resposta depende da letra do livro, nenhuma
+  quando não acrescenta. Sem parágrafo-padrão de citação.
+- "Por que esta questão foi criada." começa com "Inspirada na questão N do SIMÃO 2023, que ...".
+- Lote sempre com PROVA ("SIMÃO" ou "SBCM") e ANO; tema e até três subtemas da taxonomia.
+- Sem travessão, sem emoji, sem itálico, sem "assinale", sem EXCETO.
+- Gabarito equilibrado (veja o acumulado na linha da prova no Resumo do PROGRESSO).
+
+CICLO DE CADA LOTE DE 5 (Windows: use PYTHONUTF8=1):
+  copia -> aplicar_lote --conferir -> aplicar_lote -> gerar_indice -> validar_acervo ->
+  python -I ~/OrtoQuestoes-Biblioteca/.oq/progresso.py ... -> git add public/acervo docs/mao ->
+  commit local "SIMÃO 2023: questões ... (ids)" terminando com a linha Co-Authored-By (sem push).
+  A cada 2 a 4 lotes: npx tsc -b e PYTHONUTF8=1 npm test, timeout 180 git push -q origin HEAD,
+  PR para claude/pdfs-questoes-tp64dr e merge (pushes agrupados poupam o GitHub Actions; ver AGENTS.md).
+
+NUNCA: livro, resumo ou prova original no git; fato que você não leu; divulgar quantidades totais do
+acervo; refazer o que está "publicada" sem motivo.
+
+Ao terminar cada lote, diga em uma linha o que publicou e siga. Antes de parar (limite de uso ou fim do
+dia), atualize a seção "Retomada" do PROGRESSO com o ponto exato e faça commit e push.
+```
+
+---
+
+## Comando antigo (primeira versão, outro computador)
 
 ```text
 Você vai transformar uma prova de Cirurgia da Mão em OrtoQuestões Simulados no site OrtoQuestões, com
@@ -40,9 +104,9 @@ PASSO 3. PARA CADA LOTE DE 5 (PROTOCOLO, seções 4 a 8):
      citações "(Green, cap. N, p. X)" no texto, "Por que esta questão foi criada." e "Na prova:".
      Qualidade vem antes de economia: pode gastar no comentário.
   d) copia  ->  aplicar_lote --conferir  ->  aplicar_lote  ->  gerar_indice  ->  validar_acervo
-  e) Atualize o PROGRESSO (ids, situação "publicada", pendências) e faça commit e push:
+  e) Atualize o PROGRESSO (ids, situação "publicada", pendências) e faça commit local (push só no passo f):
      git add public/acervo docs/mao/PROGRESSO.md ; mensagem "SIMÃO 2024: questões X a Y (ids)".
-  f) A cada 2 a 4 lotes: npx tsc -b && npm test, e publique (PR para claude/pdfs-questoes-tp64dr e merge).
+  f) A cada 2 a 4 lotes: npx tsc -b && npm test, um push e publique (PR para claude/pdfs-questoes-tp64dr e merge).
   g) Diga em uma linha o que publicou e siga para o próximo lote sem esperar resposta.
 
 NUNCA:
@@ -99,7 +163,7 @@ REGRAS NOVAS (valem para todo lote daqui em diante):
 4. Siga nesta ordem: SBCM 2024, SBCM 2022, SIMÃO 2022, SBCM 2023, SIMÃO 2024, SIMÃO 2021. Depois os
    comentários do ENARE Cirurgia da Mão 2022, 2023 e 2025 (texto oficial, sem reescrever).
 5. Lotes de 5. A cada lote: copia, aplicar_lote --conferir, aplicar, gerar_indice, validar_acervo,
-   PROGRESSO atualizado, commit e push (git add só de public/acervo e docs/mao). A cada 2 a 4 lotes,
-   tsc e npm test, e publique pelo PR para claude/pdfs-questoes-tp64dr como vem fazendo.
+   PROGRESSO atualizado, commit local (git add só de public/acervo e docs/mao). A cada 2 a 4 lotes,
+   tsc e npm test, um push, e publique pelo PR para claude/pdfs-questoes-tp64dr como vem fazendo.
 6. Salve sempre antes de parar. Se o limite acabar, o próximo "continue" retoma pelo PROGRESSO.
 ```

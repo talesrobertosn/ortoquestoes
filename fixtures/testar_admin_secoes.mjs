@@ -25,14 +25,13 @@ try {
   const partes = m.SECOES.flatMap(s => s.abas.map(a => a.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas seções')
   // Nenhuma parte some na reorganização.
-  for (const parte of ['agora', 'usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'cartas', 'todas', 'ajustes'])
+  for (const parte of ['agora', 'usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
   assert.equal(m.secaoDe('crescimento'), 'pessoas')
   assert.equal(m.secaoDe('simulados'), 'conteudo')
   assert.equal(m.secaoDe('lembretes'), 'emails')
-  assert.equal(m.secaoDe('cartas'), 'emails')
   assert.equal(m.secaoDe('todas'), 'emails', 'Todas as cartas fica em E-mails')
-  assert.deepEqual(m.definicaoDe('emails').abas.map(a => a.rotulo), ['Lembretes e automáticos', 'Cartas pessoais', 'Todas as cartas'])
+  assert.deepEqual(m.definicaoDe('emails').abas.map(a => a.rotulo), ['Enviar e-mails', 'Todas as cartas'])
   assert.equal(m.secaoDe('pagamentos'), 'financeiro')
   // "Pagamentos" (aba cobrancas) é o dinheiro recebido; "Avisos de pagamento" mantém o endereço ?aba=pagamentos dos e-mails.
   assert.equal(m.secaoDe('cobrancas'), 'financeiro')
@@ -46,7 +45,7 @@ try {
     '': 'agora', 'aba=geral': 'agora', 'aba=hoje': 'agora', 'aba=usuarios': 'usuarios', 'aba=conteudo': 'conteudo', 'aba=questoes': 'questoes',
     'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=financeiro': 'financeiro', 'aba=assinaturas': 'assinaturas',
     'aba=pagamentos': 'pagamentos', 'aba=cobrancas': 'cobrancas', 'aba=avisos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
-    'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=emails': 'lembretes', 'aba=cartas': 'cartas',
+    'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=emails': 'lembretes', 'aba=cartas': 'lembretes',
     'aba=simulados': 'simulados', 'aba=lembretes': 'lembretes', 'aba=todas': 'todas', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'agora',
   }
   for (const [consulta, aba] of Object.entries(mapa)) assert.equal(ler(consulta).aba, aba, consulta)
@@ -63,8 +62,8 @@ try {
   assert.equal(ida('aba=geral'), '/admin')
   assert.equal(ida('aba=hoje'), '/admin')
   // Só endereço antigo é reescrito (sem criar histórico); o atual fica como está.
-  for (const antigo of ['aba=geral', 'aba=hoje', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=operacoes', 'aba=emails', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
-  for (const atual of ['', 'aba=agora', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=cartas', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=conteudo&vista=relatos']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
+  for (const antigo of ['aba=geral', 'aba=hoje', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=operacoes', 'aba=emails', 'aba=cartas', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
+  for (const atual of ['', 'aba=agora', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=conteudo&vista=relatos']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
   // A primeira parte de cada seção é a que abre por padrão.
   assert.deepEqual(m.SECOES.map(s => m.abaPadrao(s.id)), ['agora', 'usuarios', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
 
@@ -180,7 +179,10 @@ try {
     for (const x of modelos.filter(x => x.grupo === 'campanha')) assert.ok(/candidatos_|Agendador/.test(x.gatilho.quando) && /cadência/.test(x.gatilho.paraQuem), `${x.id}: gatilho da campanha`)
     for (const x of modelos) {
       assert.ok(x.rotulo && x.descricao && x.gatilho.quando.length >= 10 && x.gatilho.paraQuem.length >= 10 && x.pessoa, `${x.id}: faltou rótulo, descrição, gatilho ou pessoa`)
-      assert.ok(x.versoes >= 5 && x.versoes <= 7, `${x.id}: ${x.versoes} versões`)
+      // Pedido do Tales (22/10/2026): as boas-vindas têm uma versão só, fixa.
+      const unica = x.tipo === 'boas_vindas_dia0'
+      if (unica) assert.equal(x.versoes, 1, `${x.id}: deve ter uma versão só`)
+      else assert.ok(x.versoes >= 5 && x.versoes <= 7, `${x.id}: ${x.versoes} versões`)
       const carta = cat.amostraDe(x, cat.sementeInicial(x))
       assert.equal(carta.tipo, x.tipo, x.id)
       if (x.faixa) assert.equal(carta.faixa, x.faixa)
@@ -188,7 +190,7 @@ try {
       // Sortear: outra semente dá outra versão (há sempre 5 ou mais).
       let k = 0
       const outra = cat.amostraDe(x, cat.outraSemente(x, carta.versao, () => (k += 0.137) % 1))
-      assert.notEqual(outra.versao, carta.versao, `${x.id}: sortear não trocou a versão`)
+      if (!unica) assert.notEqual(outra.versao, carta.versao, `${x.id}: sortear não trocou a versão`)
       assert.ok(cat.combinaBusca(x, carta, x.rotulo.slice(0, 8)), 'busca pelo rótulo')
       assert.ok(cat.combinaBusca(x, carta, carta.assunto.split(' ').slice(-1)[0]), 'busca pelo assunto')
     }

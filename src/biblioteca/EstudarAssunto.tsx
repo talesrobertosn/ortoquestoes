@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import { recurso } from '../config'
+import type { BaseResumo } from '../dados/tipos'
 import { usarPremium } from '../conta/premium'
 import { Icone } from '../componentes/Icone'
 import { corDaArea } from '../dados/coresAreas'
@@ -27,7 +28,7 @@ const semMovimento = () => typeof matchMedia !== 'undefined' && matchMedia('(pre
  * subtema dela é ensinado por um resumo, convida para o resumo do tema. Sem relação, não aparece.
  * O livro e o botão são links de verdade: Ctrl/Cmd, botão do meio e "reduzir movimento" vão direto.
  */
-export function EstudarAssunto({ questao, subtemas = [] }: { questao: string; subtemas?: string[] }) {
+export function EstudarAssunto({ questao, subtemas = [], baseResumo }: { questao: string; subtemas?: string[]; baseResumo?: BaseResumo }) {
   const [destino, definir] = useState<Destino | null | undefined>(undefined)
   const [abrindo, definirAbrindo] = useState(false)
   const [longe, definirLonge] = useState(false)
@@ -53,11 +54,14 @@ export function EstudarAssunto({ questao, subtemas = [] }: { questao: string; su
   }, [no])
   useEffect(() => () => window.clearTimeout(relogio.current), [])
   if (!ativo || destino === undefined || !biblioteca) return null
-  const capitulo = destino ? biblioteca.capitulos.find((c) => c.id === destino.c) : resumosDosSubtemas(biblioteca, subtemas)[0]
+  // A fonte já conferida do comentário é mais específica que uma sugestão por subtema.
+  const fonte = baseResumo?.fontes.find((f) => biblioteca.capitulos.some((c) => c.id === f.resumo))
+  const trecho = fonte ? { c: fonte.resumo, b: fonte.blocos[0], s: fonte.secoes[0] ?? fonte.titulo } : destino
+  const capitulo = trecho ? biblioteca.capitulos.find((c) => c.id === trecho.c) : resumosDosSubtemas(biblioteca, subtemas)[0]
   if (!capitulo) return null
-  const citada = !!destino && destino.c === capitulo.id
+  const citada = !!trecho && trecho.c === capitulo.id
   const fechado = capitulo.acesso !== 'gratis' && !premium
-  const destinoHref = citada ? `/resumos/${capitulo.id}?bloco=${encodeURIComponent(destino!.b)}` : `/resumos/${capitulo.id}`
+  const destinoHref = citada ? `/resumos/${capitulo.id}?bloco=${encodeURIComponent(trecho!.b)}` : `/resumos/${capitulo.id}`
   const numero = capitulo.capitulo.match(/\d+/)?.[0]
   const livroCurto = nomeCurtoDoLivro(capitulo.livro)
   const tema = capitulo.titulo.toLowerCase()
@@ -115,7 +119,7 @@ export function EstudarAssunto({ questao, subtemas = [] }: { questao: string; su
         <span className="bib-convite__selo"><span className="bib-convite__selo-ponto" aria-hidden="true" />Biblioteca<span className="bib-convite__selo-marca"> OrtoQuestões</span> <b>Beta</b></span>
         <h3 className="bib-convite__titulo">{citada ? 'Esta questão está explicada num resumo' : 'Tem um resumo sobre este tema'}</h3>
         <p className="bib-convite__frase">{citada
-          ? <>O raciocínio dela está em <strong>“{destino!.s}”</strong>, no resumo de {tema}.</>
+          ? <>O raciocínio dela está em <strong>“{trecho!.s}”</strong>, no resumo de {tema}.</>
           : <>O resumo de <strong>{tema}</strong> segue a ordem em que as provas cobram o tema.</>}</p>
         <div className="bib-convite__acoes">
           <a className="botao bib-convite__botao" href={href(destinoHref)} onClick={abrir}>

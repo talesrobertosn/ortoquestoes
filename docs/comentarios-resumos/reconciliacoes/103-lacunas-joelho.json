@@ -1,0 +1,57 @@
+{
+  "base": "cb83e99f8b38706a33dc00c77c9ce32d68e1e7d7",
+  "criterio": "Confronto individual com corpo independente do resumo; comentários e gabaritos preservados. Pendências não contam como revisão.",
+  "resumoSha256": "99db856e986d29032e4080778c149b41ba8fd1a2f0b492b80ff99ddfa865c659",
+  "questoes": {
+    "joelho-0009": {
+      "questaoSha256": "071f401797fb699e677b6d6d5eb76de11691283a0a100e45bd85aff21f065cee",
+      "pendencia": "O resumo 61 pede panorâmica para alinhamento crônico, mas não define indicação de osteotomia valgizante frente aos quatro padrões oferecidos, incluindo duplo/triplo varo. Falta fonte de planejamento da osteotomia na frouxidão lateral/posterolateral e definição desses padrões; alinhamento importante não prova a indicação específica.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0179": {
+      "questaoSha256": "f6288bcbdaa838d1fe3084e73af34a2f85ec06342bc435de5e4185f751619f18",
+      "pendencia": "O resumo 61 não descreve a alteração de slope por cunha de abertura medial versus fechamento lateral nem a indicação prévia/simultânea na insuficiência crônica de LCP com varo. Falta fonte de planejamento coronal e sagital e efeito da osteotomia sobre estabilidade posterior. Não inferir a direção do slope só do nome da cunha.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0186": {
+      "questaoSha256": "71cb3ecd03b22b4b1665d6aaba1b7a494af80e44e1a295c67f26c3091aed99ac",
+      "pendencia": "O resumo 61 apresenta o poplíteo oblíquo como principal restritor ligamentar da hiperextensão num estudo em cadáver, mas não ordena a ação do LCP antes, depois ou simultaneamente ao LCA nem demonstra o efeito específico de romper o LCA. Falta fonte da sequência exigida; preservar C oficial sem atribuir essa afirmação ao resumo.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0288": {
+      "questaoSha256": "7f5a67efe55cfbf17affeeb5b356bebd1d67125ad7dfb9ad68fa8157010d221d",
+      "pendencia": "Sem gabarito oficial. O resumo 61 mostra importância das lesões associadas, mas não apresenta a análise de TORG comparando eixo, meniscos, ligamentos e tempo como preditores de resultado. Falta estudo/trecho primário que sustente o superlativo e sua atribuição. Não transformar plausibilidade clínica em resposta única demonstrada.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0059": {
+      "questaoSha256": "5464f23eb52a2ddb350a8e8f7d3b2e177b63b2c12a589da5c7b1621d475e2fa2",
+      "pendencia": "O resumo 61 descreve Humphrey anterior e Wrisberg posterior ao LCP, porém não explica o sinal de duplo LCP nem o distingue de alça de balde e ruptura parcial do cruzado. Falta fonte de imagem meniscal para analisar as quatro alternativas; posição de Humphrey não substitui descrição do sinal.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0034": {
+      "questaoSha256": "755bde2bb0f4b48d765789a069ea2a4362a0f0a925ff12b06a56dcf52e81a06f",
+      "pendencia": "O corpo independente do resumo 61 favorece reconstrução precoce, mas não identifica idade inferior a 40 como fator prognóstico da luxação. O corte aparece na escolha de enxerto do LCA, e idade mais jovem aparece para recuperação fibular, desfechos diferentes. Falta fonte do par prognóstico exigido e da comparação entre um ou dois cruzados; não usar contexto da própria pergunta como evidência.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0802": {
+      "questaoSha256": "a2ae679a14517addad7687e60263b26c92c0212d2f429d2fdd2d01131bfc10bd",
+      "pendencia": "O resumo 61 associa tração arterial à luxação anterior e compressão à posterior, mas não estabelece ranking de frequência de lesão vascular entre anterior, posterior, medial e lateral. Falta comparação epidemiológica para o mais comum; o mecanismo plausível não prova o superlativo. Gabarito C preservado.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0886": {
+      "questaoSha256": "a383a4769f5ae8f0e6b14093fe6029b894e0fb71c5f74cfe914ca96d1e709a54",
+      "pendencia": "O resumo 61 descreve gravidade da lesão extensora associada e avaliação por elevação/altura patelar, sem comparar sua frequência por direção da luxação. Falta a série que sustente maior associação com posterior frente a anterior, posteromedial e posterolateral. Manter B oficial sem selo de cobertura.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1047": {
+      "questaoSha256": "c2e77bc5c0aed89ee89683433e42eb6c1bd0ca76ba69276bdcd4394ba412484e",
+      "pendencia": "O resumo 61 identifica o sistema anterolateral como extracapsular, mas não estabelece ação predominante em 0–30 versus 30–90 graus. Falta fonte biomecânica da faixa angular para distinguir C de D. Uma metade correta da opção não comprova cobertura integral.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1000": {
+      "questaoSha256": "81631d31095975e1198bb2571f91764bf4806cf00a358916041b9702b3c53f55",
+      "pendencia": "O resumo 61 sustenta Humphrey anterior ao LCP, mas não cobre todas as afirmações das outras opções: anatomia dos cornos com redação repetida em A, conexão transversa, redução exata de área de contato após meniscectomia total e papel do menisco lateral no LCA insuficiente. Falta fonte meniscal independente para auditar o comentário inteiro; acertar B não basta para analisar as cinco alternativas.",
+      "estado": "pendente-fonte"
+    }
+  }
+}

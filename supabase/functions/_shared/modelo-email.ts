@@ -109,7 +109,7 @@ export function emailCarta(d: DadosMarco): EmailPronto {
   const padrao = d.respondidas >= 10
     ? `Passando para te dar parabéns: você já passou de ${questoes(d.respondidas)} no Orto Questões, e fiquei muito feliz de ver. Constância é o que mais faz diferença na prova, e você está construindo a sua nos intervalos que a rotina deixa.`
     : 'Passando para dar um oi e dizer que fico feliz de ter você por aqui. Sua conta está pronta, e quando quiser começar, cinco questões já bastam para pegar o jeito.'
-  const corpo = [nome ? `${nome}, tudo bem?` : 'Oi, tudo bem?', recado || padrao, 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'P.S.: se responder, sou eu que leio.'].join('\n\n')
+  const corpo = [nome ? `${nome}, tudo bem?` : 'Oi, tudo bem?', recado || padrao, 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'P.S.: se quiser responder, vou adorar ler.'].join('\n\n')
   const e = renderizarCarta({ assunto: nome ? `${nome}, um recado sobre o seu estudo` : 'Um recado sobre o seu estudo', corpo })
   return { ...e, modelo: null, versao: null }
 }
@@ -365,7 +365,7 @@ export function emailRelatoResolvido(d: DadosRelatoResolvido): { assunto: string
       : `Conferi com cuidado, e a questão já está corrigida no site.${nota ? ` O que mudou: ${nota}` : ' O comentário foi ajustado para deixar o ponto claro.'}`,
     'Gente atenta como você deixa o banco de questões melhor para todo mundo que está estudando com pouco tempo e precisa confiar no que lê. Fiquei muito grato.',
     `Se quiser ver como ficou: ${link.replace(/^https?:\/\//, '')}`,
-    'P.S.: se encontrar outra coisa estranha, o botão de relatar continua lá. Eu leio cada relato.',
+    'P.S.: se encontrar outra coisa estranha, o botão de relatar continua lá. Cada aviso ajuda muito.',
   ].join('\n\n')
   const assunto = nome ? `${nome}, obrigado pelo aviso sobre a questão` : `Obrigado pelo aviso sobre ${rotulo}`
   return renderizarCarta({ assunto: assunto.length <= 55 ? assunto : 'Obrigado pelo aviso sobre a questão', corpo })

@@ -186,15 +186,15 @@ Se o problema é começar uma rotina, use um roteiro de estudo e escolha blocos 
     },
     {
         "slug": "questoes-cirurgia-da-mao",
-        "title": "Questões de cirurgia da mão e título de especialista (SIMÃO) | Orto Questões",
-        "description": "Questões comentadas de cirurgia da mão para a seleção e para o título de especialista em cirurgia da mão, com OrtoQuestões Simulados no padrão do SIMÃO e revisão por assunto.",
+        "title": "Questões de cirurgia da mão: título da SBCM, SIMÃO e residência | Orto Questões",
+        "description": "Questões comentadas de cirurgia da mão para a seleção e para o título de especialista em cirurgia da mão, com OrtoQuestões Simulados no padrão da prova de título da SBCM e do SIMÃO e revisão por assunto.",
         "headline": "Questões comentadas para a prova e o título de especialista em cirurgia da mão",
         "atualizado_em": "2026-10-18",
         "content": """
 A prova de cirurgia da mão pertence a outra especialidade e tem uma categoria própria no Orto Questões. Ela não é uma prova de R4 de ortopedia. Essa distinção importa ao escolher questões: uma questão de mão cobrada no TEOT não tem necessariamente o mesmo contexto de uma prova específica de cirurgia da mão.
 
-### Questões para o título de especialista em cirurgia da mão (SIMÃO)
-Para quem se prepara para o título de especialista em cirurgia da mão, o Orto Questões tem OrtoQuestões Simulados escritos no padrão do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. São questões autorais do site, feitas por engenharia reversa do que esse simulado cobra (anatomia aplicada, nervos e transferências, congênitas, carpo, tendões, retalhos e microcirurgia) e comentadas a partir da bibliografia de referência, como o Green's Operative Hand Surgery. Não são questões oficiais nem foram elaboradas ou endossadas pelos organizadores do SIMÃO ou da prova de título. Novas questões entram com frequência.
+### Questões para o título de especialista em cirurgia da mão (SBCM) e para o SIMÃO
+O título de especialista em cirurgia da mão é a prova da SBCM, a Sociedade Brasileira de Cirurgia da Mão. Para quem se prepara para ela, o Orto Questões tem OrtoQuestões Simulados escritos no padrão da prova de título da SBCM e do SIMÃO, o Simulado do Exame para Obtenção do Título de Especialista em Cirurgia da Mão. São questões autorais do site, feitas por engenharia reversa do que essas provas cobram (anatomia aplicada, nervos e transferências, congênitas, carpo, tendões, retalhos e microcirurgia) e comentadas a partir da bibliografia de referência, como o Green's Operative Hand Surgery. Não são questões oficiais nem foram elaboradas ou endossadas pelos organizadores do SIMÃO ou da prova de título. Novas questões entram com frequência.
 
 ### Escolha a categoria e depois a prova
 No aplicativo, selecione Cirurgia da mão para montar o treino. Em seguida, confira os filtros de prova, ano e assunto disponíveis. A página pública de mão e punho reúne questões do tema de diferentes origens; para direcionar a sessão à especialidade, use a categoria correspondente no aplicativo e leia a identificação da prova em cada item.
@@ -213,6 +213,7 @@ Compare sessões com recortes semelhantes. Um resultado em questões gerais de o
 """,
         "links": [
             ("Montar treino de Cirurgia da mão", "../#/treinar?areas=mao"),
+            ("Cirurgia da mão: título da SBCM, SIMÃO e provas de residência", "../cirurgia-da-mao/"),
             ("Treinar só os simulados no padrão do SIMÃO", "../#/treinar?areas=mao&provas=SIM%C3%83O"),
             ("Explorar questões de mão e punho", "../questoes/mao.html"),
             ("Como aproveitar questões comentadas", "./questoes-de-ortopedia-comentadas.html"),
@@ -407,10 +408,10 @@ def extra_teot_por_ano(d: dict) -> str:
             partes.append('<ul class="lista-questoes">' + "".join(
                 f'<li><a href="../questoes/{q["tema_slug"]}/{_esc(q["id"])}.html"><strong>{_esc(q["tema_nome"])}</strong>: '
                 f'{_esc(_resumir(q["enunciado"], 120))}</a></li>' for q in exemplos) + "</ul>")
-    sem_ano = sum(d["por_prova"].get("TEOT/TARO", {}).values())
+    sem_ano = sum(d["por_prova"].get("Ortopedia", {}).values())
     if sem_ano:
-        partes.append(f'<p>Há ainda {_num(sem_ano)} questões de TEOT/TARO sem edição identificada no caderno de origem. '
-                      f'<a href="{_treino("TEOT/TARO")}">Treinar essas questões</a>.</p>')
+        partes.append(f'<p>Há ainda {_num(sem_ano)} questões de ortopedia sem edição identificada no caderno de origem. '
+                      f'<a href="{_treino("Ortopedia")}">Treinar essas questões</a>.</p>')
     return "\n".join(partes)
 
 

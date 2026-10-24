@@ -1,0 +1,376 @@
+{
+  "coluna-0025": {
+    "questaoSha256": "cfb7b781abef1010f40ec0a5abd008b2ede29d52bea6d0f85ac7639e6b3c0a37",
+    "comentarioAnteriorSha256": "d8f99245968e7845c96ac8ffbb2d5ea6ef3f9c2335c9dac003a83a0b594f696a",
+    "comentario": {
+      "conceito": "O padrão clássico comparado pela questão é **bradicardia, extremidades quentes e diurese preservada**. A chave é a perda do comando simpático após a lesão medular: cai o tônus dos vasos e falta o estímulo que aceleraria o coração. A hipotensão, assim, pode vir acompanhada de frequência baixa.\n\nNa hemorragia, a resposta compensatória habitual é diferente: taquicardia e vasoconstrição periférica, com pele fria e redução da perfusão renal. O resumo usa essa comparação para explicar o conjunto de pele e diurese cobrado nas provas; explicita que o capítulo destaca diretamente a frequência cardíaca como marca da diferença (resumo do Rockwood, 10ª ed., cap. 49, “Choque neurogênico não é choque hipovolêmico”).\n\n**O padrão de prova não garante diurese normal em todo paciente real.** Hipotensão importante, sangramento associado e outros problemas podem prejudicar a perfusão. O capítulo alerta que a maioria dos politraumatizados tem algum componente hipovolêmico: não se deve deixar de procurar hemorragia porque há bradicardia ou suspeita de choque neurogênico.\n\nLeia a comparação no resumo da Biblioteca, mantendo a combinação clássica junto da ressalva sobre choques mistos.",
+      "correta": "**C: bradicardia, débito urinário normal e extremidades quentes.** É o conjunto clássico apresentado no resumo para esta comparação. A perda de tônus simpático explica a frequência baixa e a periferia quente; “diurese normal” não deve ser usada como garantia clínica universal.",
+      "incorretas": {
+        "A": "**Mistura bradicardia com sinais de hipoperfusão da comparação hemorrágica.** Pele fria e diurese baixa não são o conjunto clássico neurogênico pedido. Num paciente real, porém, essa combinação exige avaliar causas associadas, sem excluir choque misto.",
+        "B": "**Reúne a resposta compensatória típica da perda de volume.** Taquicardia, periferia fria e pouca urina apontam para o padrão hipovolêmico usado na comparação. A lesão medular com perda simpática explica a bradicardia da resposta correta.",
+        "D": "**A periferia quente não resolve a frequência trocada.** A pergunta descreve o padrão com perda do estímulo simpático cardíaco, associado à bradicardia. Taquicardia requer avaliar o contexto e causas associadas, não define a combinação clássica procurada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+          "exame-neurologico-choque-neurogenico-choque-medu-12aaa467"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "68228119f005a3fcd863b895f59cef8b84cad706d4103315d26c7e07433d31f2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0035": {
+    "questaoSha256": "6e8cbefe9cf6446d8c0e6f631286178a3575900dc92f084c7a327477599bec67",
+    "comentarioAnteriorSha256": "c85685b1bcd8a381e610829d1b98705c231de5384e1eb89c1fbf6d4d2231e313",
+    "comentario": {
+      "conceito": "Entre as combinações da questão, **bradicardia com débito urinário normal** é o padrão clássico do choque neurogênico. A frequência baixa é o sinal mais diretamente explicado pela lesão medular: a interrupção simpática reduz o tônus vascular e impede a aceleração compensatória esperada na hipotensão.\n\nO resumo contrasta esse quadro com o hipovolêmico, em que a perda de volume costuma produzir taquicardia e sinais de hipoperfusão, incluindo diurese baixa. A diurese preservada é apresentada como parte da comparação de prova; não significa que o rim de qualquer paciente em choque neurogênico esteja necessariamente bem perfundido (resumo do Rockwood, 10ª ed., cap. 49, “Choque neurogênico não é choque hipovolêmico”).\n\nEssa limitação é importante no politrauma: choque neurogênico e hemorragia podem coexistir. A frequência baixa não dispensa a procura de sangramento, e oligúria continua sendo um sinal que precisa de avaliação. A resposta descreve uma combinação típica, não um teste isolado que exclua outras causas.\n\nO resumo da Biblioteca ensina essa diferença junto do alerta para o componente hipovolêmico.",
+      "correta": "**D: bradicardia e débito urinário normal.** Corresponde ao padrão comparativo da questão. A informação decisiva é a bradicardia na hipotensão por perda simpática, com a ressalva de que a diurese depende do estado circulatório real.",
+      "incorretas": {
+        "A": "**Taquicardia e oligúria se encaixam no padrão hipovolêmico comparado.** O coração acelera diante da perda de volume, enquanto a perfusão renal se reduz. É outra combinação que a usada para o neurogênico neste item.",
+        "B": "**Preservar a diurese não transforma taquicardia em bradicardia.** A perda do estímulo simpático cardíaco é a explicação central do padrão pedido. A frequência alta exige outra interpretação do contexto clínico.",
+        "C": "**A frequência está compatível, mas a diurese troca o padrão clássico.** Oligúria pode ocorrer em situações reais de hipoperfusão e em choque misto; não é motivo para negar o problema. Apenas não corresponde à associação didática que diferencia as opções da questão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+          "exame-neurologico-choque-neurogenico-choque-medu-12aaa467"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "68228119f005a3fcd863b895f59cef8b84cad706d4103315d26c7e07433d31f2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0027": {
+    "questaoSha256": "7f043b1fe649f179de4583634ccd7e35717d74be3101095d3dcd9ec093993d91",
+    "comentarioAnteriorSha256": "8bccb14f8d21878ee6116020f026de56a82c6c6278bd46463e40ad5b2886c95f",
+    "comentario": {
+      "conceito": "A lateralidade é o ponto de concordância: a artéria de **Adamkiewicz costuma nascer à esquerda**. Já a faixa de níveis exige uma ressalva. O gabarito oficial escolheu **T9–T11 à esquerda**, enquanto o resumo do Rockwood descreve origem habitual **entre T8 e T10**, com variação de **T7 a L4**.\n\nEssa divergência não deve ser apagada mudando a letra nem atribuindo ao livro o intervalo da prova. A anatomia é variável, e nenhuma das quatro alternativas reproduz exatamente a faixa habitual citada na fonte consultada. A alternativa D é apresentada como resposta oficial, não como transcrição exata do Rockwood (resumo do Rockwood, 10ª ed., cap. 49, “Vias de acesso e a artéria de Adamkiewicz”).\n\nNa cirurgia, a variação importa mais que uma regra rígida de nível: o capítulo descreve ligadura dos vasos segmentares perto da aorta para preservar colaterais, com pinçamento temporário e neuromonitorização antes de ligar vasos relevantes. A faixa memorizada não substitui o cuidado com a perfusão medular.\n\nLeia a seção no resumo da Biblioteca com o alerta em mente: lado habitual e intervalo da banca são informações que precisam ser distinguidas.",
+      "correta": "**D: T9–T11 à esquerda, segundo o gabarito oficial.** O lado coincide com o padrão habitual do resumo, mas os níveis não são exatamente os do texto consultado, que informa T8–T10. A letra foi preservada e a divergência está explicitada.",
+      "incorretas": {
+        "A": "**O lado direito não é o habitual descrito.** Há variação anatômica, mas a fonte destaca a esquerda. Além disso, T7–T9 não reproduz sua faixa habitual T8–T10, de modo que a alternativa não resolve a divergência de níveis.",
+        "B": "**Repete os níveis da banca e troca o lado.** O resumo descreve origem mais frequentemente esquerda. A faixa T9–T11, por si, já precisa da ressalva bibliográfica; colocá-la à direita afasta também a lateralidade habitual.",
+        "C": "**Acerta o lado habitual, mas não o intervalo exato da fonte.** T7–T9 e T8–T10 se sobrepõem parcialmente; isso não torna a primeira uma reprodução do segundo. A escolha oficial foi D, e o resumo não permite fingir que uma das duas faixas esquerdas coincide integralmente com o livro."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Vias de acesso e a artéria de Adamkiewicz."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D (T9–T11 à esquerda) preservado. O resumo do Rockwood, 10ª edição, capítulo 49, descreve origem habitual à esquerda entre T8 e T10, com variação de T7 a L4. Nenhuma alternativa reproduz exatamente essa faixa habitual; não atribuir ao livro o intervalo da banca nem tratar sobreposição parcial como concordância integral."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Vias de acesso e a artéria de Adamkiewicz"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "8e0a7a0f14d682eec95c9864b7ae491a7305666aa885411defbc2e2fb3be5e1a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0372": {
+    "questaoSha256": "4b96dbf5d4ce6721ad1a70fb74594f8b3c1d735d53e843effea3ba078fed05c1",
+    "comentarioAnteriorSha256": "0fa95d6ac92588d08a1e7b8d04331e35dd90b67e6833207d1c7ff7a110b77039",
+    "comentario": {
+      "conceito": "No paciente com trauma raquimedular, pesquisar o **reflexo bulbocavernoso** ajuda a interpretar o silêncio reflexo da fase inicial. O reflexo é sacral e sua resposta é a **contração do esfíncter anal**. Seu retorno marca o fim do choque medular.\n\nIsso é diferente de avaliar a pressão arterial. O choque **neurogênico** envolve perda simpática, hipotensão e bradicardia; o **medular** é uma alteração transitória da atividade reflexa abaixo da lesão. Os dois problemas podem aparecer no mesmo traumatizado, mas o reflexo responde à pergunta neurológica, não substitui a avaliação circulatória (resumo do Rockwood, 10ª ed., cap. 49, “O choque medular e o reflexo bulbocavernoso”).\n\nUm bulbocavernoso presente não demonstra bom prognóstico nem lesão incompleta por si só. Ele pode voltar quando a lesão é completa. Também é preciso cautela com lesões do cone ou da cauda equina, em que o próprio arco sacral pode ter sido atingido.\n\nConsulte essa seção no resumo da Biblioteca para estudar o significado da resposta, além do nome do reflexo.",
+      "correta": "**C: bulbocavernoso.** É o reflexo sacral destacado pelo capítulo como marcador do choque medular e de seu término. A contração anal reflexa deve ser distinguida de função motora voluntária preservada.",
+      "incorretas": {
+        "A": "**O cremastérico não é o marcador escolhido para esse fim.** A pergunta não procura qualquer reflexo pesquisável no exame; procura o arco sacral usado pelo capítulo para acompanhar o choque medular. Outros achados não substituem essa informação.",
+        "B": "**O cutâneo abdominal não responde à mesma questão de interpretação.** A ausência ou presença de um reflexo no exame não autoriza chamá-lo de marcador do fim do choque. O capítulo destaca especificamente o bulbocavernoso.",
+        "D": "**O cutâneo plantar não substitui a resposta anal reflexa.** O exame neurológico reúne vários sinais, mas o marco pedido é sacral. Confundir um reflexo dos membros com esse marcador muda o significado do teste."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+          "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+          "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "a944b4395797afd3f1bc8cc13b4cf53b26dcbc788bf368884e9ca04709cbf138"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0374": {
+    "questaoSha256": "44ee379b1894d7a347759b35c7ad0ff4a3eb57741ce63766c4fd327db8f00231",
+    "comentarioAnteriorSha256": "9b6cfadf08ba31f5d6cad2a6502338b0ff709c16676c1cceb9fb682f4fd191a1",
+    "comentario": {
+      "conceito": "O **retorno do reflexo bulbocavernoso** indica que o choque medular terminou. A atividade de um arco sacral reapareceu, permitindo interpretar melhor a função que permanece ausente abaixo da lesão.\n\nNo início do trauma, a arreflexia pode fazer uma medula parcialmente preservada parecer silenciosa. O retorno reflexo muda essa avaliação, mas não garante que a condução através da lesão seja normal: uma lesão completa também pode ter bulbocavernoso presente. Por isso é necessário reexaminar sensibilidade e motricidade, especialmente a preservação sacral, sem confundi-las com a resposta reflexa (resumo do Rockwood, 10ª ed., cap. 49, “O choque medular e o reflexo bulbocavernoso”).\n\nO capítulo não define um prazo fixo de duração do choque. O tempo desde o acidente e a pressão arterial não substituem o marco neurológico perguntado. Em lesões do cone e da cauda, o comprometimento do próprio arco exige atenção adicional.\n\nLeia a seção no resumo da Biblioteca junto da escala ASIA para ligar o fim do choque ao exame que vem depois.",
+      "correta": "**C: presença do reflexo bulbocavernoso.** O retorno da contração anal reflexa é o marco apresentado. Ele indica fim do choque, não recuperação motora voluntária nem bom prognóstico automático.",
+      "incorretas": {
+        "A": "**Patelar ou clônus não é o marco descrito.** O capítulo lembra que a hiper-reflexia tendinosa pode não aparecer na fase aguda. Esperar esse achado como condição obrigatória troca o critério sacral usado para o fim do choque.",
+        "B": "**O cremastérico não substitui o bulbocavernoso nesse papel.** A questão exige um marcador específico, não simplesmente a presença de qualquer reflexo. A resposta anal reflexa é a informação destacada pela fonte.",
+        "D": "**O cutâneo plantar é outro achado do exame.** Sua presença isolada não é o critério apresentado para encerrar a interpretação de choque medular. Acompanhamento reflexo e avaliação da função voluntária precisam ser distinguidos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-717b321e",
+          "exame-neurologico-choque-neurogenico-choque-medu-93b6723e",
+          "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+          "exame-neurologico-choque-neurogenico-choque-medu-acb3781c"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "27eda10d1df8ec1b87e370afb11e4d41b1ab63f26f0e418cd5e70ba5cc7a94c5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0513": {
+    "questaoSha256": "c6e5704add149e0aba7da6cdf2c49bf118e46d5e8c5b522f2e46e4b77f7c116d",
+    "comentarioAnteriorSha256": "061386c4312ed6d3a11b1d83d33c03cfb255bad37ea6eae6e7d02e90c2eeec25",
+    "comentario": {
+      "conceito": "O STASCIS comparou descompressão antes e depois de **24 horas**. O resultado destacado no capítulo é a associação da cirurgia precoce com maior chance de melhora de **pelo menos dois graus da escala AIS aos seis meses**, com segurança, sem o aumento de complicações proposto pela alternativa D.\n\nA escala expressa o estado neurológico; dois graus de melhora descrevem mudança de categoria, não uma porcentagem de força recuperada. O achado favorece a descompressão precoce quando indicada, mas deve ser lido como resultado de um estudo, com os limites metodológicos que o resumo também comenta (resumo do Rockwood, 10ª ed., cap. 49, “Quando operar”).\n\nA pressão de tempo não dispensa ressuscitação. O capítulo alerta para o risco de operar cedo demais um paciente mal ressuscitado, instável ou com lesão craniana. Portanto, “antes de 24 horas foi seguro no estudo” não equivale a ignorar a condição sistêmica de qualquer politraumatizado.\n\nLeia no resumo da Biblioteca a evidência do momento da cirurgia junto das condições que tornam o procedimento seguro.\n\n**Por que esta questão foi criada.** O intervalo de 24 horas e o desfecho de dois graus aos seis meses são dados específicos do estudo destacados pelo capítulo e úteis para interpretar uma questão de evidência clínica.",
+      "correta": "**C: maior chance de melhora de pelo menos dois graus aos seis meses, sem aumento de complicações.** Corresponde ao resultado neurológico e à segurança relatados no resumo. Não promete a mesma recuperação a todo paciente.",
+      "incorretas": {
+        "A": "**Troca o desfecho principal apresentado.** O capítulo destaca melhora neurológica, e não apenas mortalidade em 30 dias com ausência de diferença funcional. Não se pode apagar o resultado neurológico para escolher essa opção.",
+        "B": "**A fonte não restringe esse resultado às lesões completas.** A alternativa acrescenta uma limitação que não faz parte da conclusão relatada. O dado a reconhecer é a associação entre descompressão precoce e melhora de categoria neurológica.",
+        "D": "**Inverte a descrição de segurança.** O resumo apresenta a cirurgia precoce como segura no estudo, não como um ganho neurológico anulado por maior complicação. A necessidade de estabilizar o politraumatizado é outra questão, que permanece válida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Corticoide e o momento da cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Corticoide e o momento da cirurgia"
+        ],
+        "blocos": [
+          "corticoide-e-o-momento-da-cirurgia-ae16a777",
+          "corticoide-e-o-momento-da-cirurgia-66097675"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "6090220c491e182deaf09c4a93aec9bafe17ea07f4844848b6664a4000544bec"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0724": {
+    "questaoSha256": "5c5455cccab5ece64876b98c296089efb4ca288d41acd5556d13c706e5814dbe",
+    "comentarioAnteriorSha256": "34ca101307d542284406f279b8d52179798706bc18c2f117762319f11769b3e5",
+    "comentario": {
+      "conceito": "No trauma torácico e lombar, a **tomografia** é o exame inicial de escolha para caracterizar a fratura. Ela mostra corpo, pedículos, lâminas e facetas, além de cominuição e invasão do canal. O capítulo descreve a TC como exame que substituiu a radiografia na triagem do trauma de alta energia.\n\nA ressonância acrescenta informações sobre medula, ligamentos, discos e partes moles. É particularmente útil diante de déficit ou piora neurológica, mas **complementa a TC**, em vez de substituí-la rotineiramente. Para o complexo posterior, sua sensibilidade vem acompanhada de menor especificidade e risco de superestimar a lesão (resumo do Rockwood, 10ª ed., cap. 49, “Imagem: radiografia, tomografia e ressonância”).\n\nA radiografia continua útil, especialmente em pé no acompanhamento e na avaliação do alinhamento sob carga. Ter uma função importante não a torna o exame de escolha para a investigação inicial pedida. No politrauma, o rastreio de toda a coluna também importa porque podem existir fraturas não contíguas.\n\nO resumo da Biblioteca compara o que cada modalidade responde e suas limitações.",
+      "correta": "**B: tomografia.** É a modalidade de escolha descrita para triagem e definição óssea no trauma de alta energia. A pergunta não exclui acrescentar RM quando a avaliação neural ou ligamentar exigir.",
+      "incorretas": {
+        "A": "**A ressonância é complementar na abordagem descrita.** Ela avalia melhor estruturas neurais e partes moles, mas não substitui a caracterização óssea inicial por TC. Sua indicação depende da pergunta clínica.",
+        "C": "**A radiografia mantém utilidade, mas deixou de ser a triagem preferida.** Pode avaliar alinhamento e resposta à carga em seguimento. Isso é diferente de mostrar com detalhe a morfologia e a invasão do canal no trauma inicial.",
+        "D": "**Somar radiografia e RM não elimina a necessidade de TC.** São exames com funções próprias, e a combinação não é a escolha inicial recomendada pela fonte para definir a fratura toracolombar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Imagem: radiografia, tomografia e ressonância."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Imagem: radiografia, tomografia e ressonância"
+        ],
+        "blocos": [
+          "imagem-radiografia-tomografia-e-ressonancia-04b66fd1",
+          "imagem-radiografia-tomografia-e-ressonancia-00da61c5",
+          "imagem-radiografia-tomografia-e-ressonancia-00296df5"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "a0e11ad03ee3ae839e8d6672c365314a3e6fa79c8fb7f79cbafd93ff1a35a177"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0725": {
+    "questaoSha256": "352f418730e824772453b0b7502f2ed85809fee3fa383cf034055b35e6349bfb",
+    "comentarioAnteriorSha256": "1eb431cf02bc6a0170684bc7a1ad90a5409a531ebea90e4e55b7e6f3562978a8",
+    "comentario": {
+      "conceito": "A **transição T11–L2** fica entre a torácica rígida e a lombar móvel. Essa mudança de comportamento mecânico concentra vulnerabilidade ao trauma, numa região que também contém a transição da medula para o cone. É a área indicada pelo resumo como a mais vulnerável a fraturas e com mais déficit neurológico.\n\nA coluna torácica tem a proteção das costelas, facetas coronais e discos finos. Seu canal é estreito, e uma fratura torácica pode ter consequência neural grave mesmo com pouca invasão. Isso não torna essa região a resposta ao padrão regional de maior risco cobrado: o capítulo destaca a transição toracolombar (resumo do Rockwood, 10ª ed., cap. 49, “Regiões, anatomia e lesões associadas”).\n\nEm L3–S1, o canal é mais largo e contém cauda equina; tolera mais compressão que o segmento com medula em canal estreito. A comparação deve separar vulnerabilidade regional, frequência e gravidade de um caso específico: nenhuma região está livre de lesão grave.\n\nLeia as três regiões no resumo da Biblioteca para relacionar rigidez, mobilidade e conteúdo neural.",
+      "correta": "**C: T11–L2.** É o fulcro entre segmentos com propriedades diferentes, destacado pelo resumo como região mais vulnerável e com mais déficit. A anatomia do fim da medula e do cone aumenta a relevância clínica.",
+      "incorretas": {
+        "A": "**A torácica alta é rígida e protegida, embora uma lesão possa ser grave.** A gravidade possível de uma fratura nessa faixa não substitui a distribuição regional destacada pela fonte, que favorece a transição toracolombar.",
+        "B": "**A torácica média também tem proteção costal e canal estreito.** Pode sofrer lesão neural importante, mas não é a faixa apontada como mais vulnerável na comparação. É preciso manter frequência regional e consequência de uma fratura separadas.",
+        "D": "**A lombossacra tem canal mais largo e cauda equina.** A fonte descreve maior tolerância à compressão nessa região. Isso não elimina risco, mas a diferencia da transição T11–L2 pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Regiões, anatomia e lesões associadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Regiões, anatomia e lesões associadas"
+        ],
+        "blocos": [
+          "regioes-anatomia-e-lesoes-associadas-f5dd2b97",
+          "regioes-anatomia-e-lesoes-associadas-107ede6e",
+          "regioes-anatomia-e-lesoes-associadas-2166ad9f"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "820efd3d2ed2b47de0fa97407adef7855c77d13b9c535d5c20b2754b3361d171"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0290": {
+    "questaoSha256": "ef6165bcccf14e938dd790d89837e1096755cf9a435290c356cddfe9094163a9",
+    "comentarioAnteriorSha256": "00e6fff640a95d30eb2cb959d2cf8e54af35e4fcddb72c2a7685314033bcb765",
+    "comentario": {
+      "conceito": "A vertebroplastia injeta cimento no corpo vertebral. Na discussão do capítulo, seu objetivo é **aliviar dor em pacientes selecionados**; não é uma técnica de correção de deformidade ou de recuperação de altura. A cifoplastia, ao criar antes uma cavidade com balão, tem proposta de recuperar altura, com evidência limitada.\n\nO gabarito oficial acrescenta **“prevenir novo colapso do corpo”**, alternativa D. Esse objetivo não é afirmado como benefício demonstrado no resumo consultado; o texto inclusive discute a possibilidade de refratura. A resposta da banca foi preservada, mas não deve ser convertida numa garantia de que o cimento impede novo colapso (resumo do Rockwood, 10ª ed., cap. 49, “Vertebroplastia e cifoplastia”).\n\nA evidência é controversa: o resumo relata ensaios com procedimento simulado sem vantagem e posição contrária à vertebroplastia de rotina, além de estudos favoráveis em situações selecionadas. A prática dos autores considera a cimentação indicação relativa para dor intensa persistente após tratamento conservador.\n\nLeia essa seção no resumo da Biblioteca para distinguir o efeito analgésico discutido, o objetivo atribuído pela banca e os limites da evidência.",
+      "correta": "**D: prevenir novo colapso, segundo o gabarito oficial.** A letra foi mantida. O capítulo consultado pelo resumo não comprova essa prevenção como objetivo adicional; não deve ser ensinada como benefício garantido da vertebroplastia.",
+      "incorretas": {
+        "A": "**Corrigir deformidade não é o efeito atribuído à vertebroplastia.** Injetar cimento sem a etapa de balão não equivale a corrigir uma deformidade consolidada. O resumo distingue essa finalidade da discussão do alívio da dor.",
+        "B": "**Prevenir deformidade de toda a coluna é uma afirmação ampla sem esse respaldo.** A cimentação trata um corpo selecionado e a discussão é de analgesia, com evidência controversa. Não se pode inferir proteção geral contra deformidades futuras.",
+        "C": "**Recuperar altura é a proposta do balão da cifoplastia.** Mesmo para ela, o capítulo descreve evidência limitada. Não transferir essa etapa mecânica para a vertebroplastia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura vertebral osteoporótica e cimentação."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D preservado. O resumo do Rockwood, 10ª edição, capítulo 49, discute alívio da dor com vertebroplastia e não sustenta prevenir novo colapso como benefício demonstrado. Também distingue a tentativa de recuperar altura na cifoplastia, de evidência limitada. Não ensinar prevenção garantida de colapso para justificar a letra da banca."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura vertebral osteoporótica e cimentação"
+        ],
+        "blocos": [
+          "fratura-vertebral-osteoporotica-e-cimentacao-26668c15",
+          "fratura-vertebral-osteoporotica-e-cimentacao-7eb145b1",
+          "fratura-vertebral-osteoporotica-e-cimentacao-225ae9f2",
+          "fratura-vertebral-osteoporotica-e-cimentacao-2ddf7fb9",
+          "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "62c841bb9634e35caf9d707526259f38c6ab82229c4735b39937575e3b8a454f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1291": {
+    "questaoSha256": "ac45e083fad6ac2387605b3a509251487bb89f24b8f083bcdec06529da32c97e",
+    "comentarioAnteriorSha256": "8d583d9ac97e93ee264ad97ed963dbb9658299640f51e56f74c65be7d156467c",
+    "comentario": {
+      "conceito": "A imagem mostra uma lesão que precisa de **duas descrições**: falha posterior no segmento **T12–L1**, associada à explosão extensa do corpo de **L1**. A notação oficial é **T12–L1 B2; L1 A4**. A avaliação deve separar o trajeto da lesão posterior da extensão da fratura do corpo.\n\nB1 seria um traço inteiramente ósseo atravessando uma única vértebra. Na figura, a abertura posterior é segmentar, no nível T12–L1, compatível com **B2**. O componente do corpo é classificado como **A4**, explosão completa com parede posterior e ambos os platôs comprometidos, e não A3, que envolve um platô (resumo do Rockwood, 10ª ed., cap. 49, “A AO Spine revisada”).\n\nEssa escrita evita chamar tudo apenas de “explosão” e ignorar a banda posterior. A descrição do corpo também permanece importante porque sua destruição pode exigir reconstrução anterior. A figura não autoriza inventar porcentagem de invasão do canal ou estado neurológico: esses dados precisam de avaliação própria.\n\nCompare B1/B2 e A3/A4 no resumo da Biblioteca; são dois eixos de leitura, e cada metade da alternativa precisa estar correta.",
+      "correta": "**D: T12–L1 B2; L1 A4.** Registra a lesão posterior intervertebral e o componente de explosão completa do corpo, como no gabarito oficial. Não é suficiente acertar só a letra B ou só o subtipo A.",
+      "incorretas": {
+        "A": "**Troca os dois componentes.** B1 exigiria trajeto transósseo numa única vértebra; A3 descreve explosão de um platô. O padrão é registrado como B2 segmentar com A4 do corpo.",
+        "B": "**Acerta o componente A4 e erra o trajeto posterior.** A falha não é descrita como uma Chance transóssea de uma única vértebra. A abertura no segmento T12–L1 é o detalhe que leva a B2.",
+        "C": "**B2 está correto, mas A3 reduz a extensão do componente do corpo.** A3 é explosão incompleta de um platô; o gabarito e a classificação do corpo neste caso correspondem à explosão completa A4. A notação precisa conservar os dois componentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Classificações: estabilidade, Denis, AO Spine e TLICS; Flexão-distração e fratura de Chance (tipo B1 e B2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Classificações: estabilidade, Denis, AO Spine e TLICS",
+          "Flexão-distração e fratura de Chance (tipo B1 e B2)"
+        ],
+        "blocos": [
+          "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
+          "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f",
+          "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+          "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "d7f8fbea10b5401920c4da26c023d20e67897f28d83db4baa82c90ceb089faea"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1291-teot2025.jpeg"
+    ]
+  }
+}

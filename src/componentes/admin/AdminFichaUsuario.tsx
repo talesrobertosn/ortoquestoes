@@ -13,7 +13,7 @@ import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHo
 import { AdminAssinaturaUsuario } from './AdminAssinaturaUsuario'
 import { perfilDaFicha, type EnvioHistorico } from './modelosEmail'
 import { CartaPessoal } from './CartaPessoal'
-import { usarRpc, rpcInexistente } from './usarRpc'
+import { CINCO_MIN, usarRpc, rpcInexistente } from './usarRpc'
 import { PLANOS_RECENTE_DIAS, diasDesde } from './sinais'
 import '../../estilos/paginas/AdminFicha.css'
 
@@ -96,10 +96,10 @@ export function AdminFichaUsuario({ usuario, aoFechar, abaInicial = 'resumo' }: 
   const args = useMemo(() => ({ p_id: usuario.id_usuario }), [usuario.id_usuario])
   const detalheQ = usarRpc<Detalhe>(conta, 'detalhe_usuario_admin', args)
   // Ficha aberta: o "agora" se renova a cada 20 s.
-  const atividadeQ = usarRpc<Atividade>(conta, 'atividade_usuario_admin', args, { atualizarCada: 10_000 })
-  const extraQ = usarRpc<FichaExtra>(conta, 'ficha_extra_usuario_admin', args, { atualizarCada: 60_000 })
+  const atividadeQ = usarRpc<Atividade>(conta, 'atividade_usuario_admin', args, { atualizarCada: CINCO_MIN })
+  const extraQ = usarRpc<FichaExtra>(conta, 'ficha_extra_usuario_admin', args, { atualizarCada: CINCO_MIN })
   const detalhe = detalheQ.dados ?? null
-  // O "Agora" da ficha segue o último sinal (100 s), como a lista, e não os 3 minutos do servidor.
+  // O "Agora" da ficha segue o último sinal (5 minutos, ONLINE_MS), como a lista.
   const bruta = atividadeQ.dados ?? null
   const atividade = bruta?.agora ? { ...bruta, agora: { ...bruta.agora, online: estaOnline(bruta.agora) } } : bruta
   const extra = extraQ.dados ?? null

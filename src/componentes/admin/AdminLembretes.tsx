@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { Icone, type NomeIcone } from '../Icone'
-import { erroDoPainel } from './formatos'
+import { PRAZO_LOTE_MS, avisarEmailsEnviados, enviarEmLotes, erroDoPainel, ouvirEmailsEnviados, textoLote, type RespostaLote } from './formatos'
 import { confirmar } from '../Confirmar'
 
 const MIGRACAO = '202610040100_emails_lembretes.sql'
@@ -52,6 +52,7 @@ export function AdminLembretes() {
     definirListas(novas)
   }, [])
   useEffect(() => { void carregar() }, [carregar])
+  useEffect(() => ouvirEmailsEnviados(() => void carregar()), [carregar])
 
   async function verPrevia(campanha: Campanha, pessoa?: Pessoa) {
     const extra = pessoa ? { id_usuario: pessoa.id_usuario, dias_fora: pessoa.dias_fora ?? undefined, dias_restantes: pessoa.dias_restantes ?? undefined, fim_periodo: pessoa.fim_periodo ?? undefined, plano: pessoa.plano ?? undefined } : {}
@@ -65,25 +66,21 @@ export function AdminLembretes() {
     const nomes = Array.isArray(lista) ? lista.filter((p) => p.liberado).map((p) => p.nome ?? p.email) : []
     const quem = nomes.length ? `${nomes.slice(0, 15).join('\n')}${nomes.length > 15 ? `\n… e mais ${nomes.length - 15}` : ''}` : undefined
     if (!pessoas || !(await confirmar({ titulo: `Enviar "${c.titulo}" para ${pessoas} ${pessoas === 1 ? 'pessoa' : 'pessoas'}?`, texto: quem, sim: 'Enviar' }))) return
-    let total = 0, falhas = 0
+    let total = 0
     try {
-      // Lotes de até 40 (limite de tempo da Function); para quando um lote não envia nada.
-      for (let volta = 0; volta < 40; volta++) {
-        definirEnviando({ campanha: c.id, texto: `Enviando… ${total} de ${pessoas}` })
-        const r = await chamarFuncao<{ enviados: number; falhas: number; talvez_restem: boolean }>('enviar-email', { acao: 'lembretes', campanha: c.id, limite: 40 })
-        total += r.enviados; falhas += r.falhas
-        if (!r.talvez_restem || r.enviados === 0) break
-      }
-      definirMensagem(`${c.titulo}: ${total} ${total === 1 ? 'e-mail enviado' : 'e-mails enviados'}${falhas ? `, ${falhas} com falha (o motivo fica na ficha de cada pessoa)` : ''}.`)
-    } catch (f) { definirFalha(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
-    finally { definirEnviando(null); void carregar() }
+      const soma = await enviarEmLotes(
+        (limite) => chamarFuncao<RespostaLote>('enviar-email', { acao: 'lembretes', campanha: c.id, limite }, { prazoMs: PRAZO_LOTE_MS }),
+        (n) => { total = n; definirEnviando({ campanha: c.id, texto: `Enviando… ${n} de ${pessoas}` }) })
+      definirMensagem(`${c.titulo}: ${textoLote(soma)}.`)
+    } catch (f) { definirFalha(`A tela parou de esperar (${String(f).replace(/^Error: /, '')}). ${total} já tinham saído; o servidor pode ter mandado mais. A lista abaixo foi recarregada com o que ele registrou: confira antes de enviar de novo.`) }
+    finally { definirEnviando(null); avisarEmailsEnviados() }
   }
 
   if (erro) return <section className="adm-secao"><h2>Lembretes por e-mail</h2><p role="alert" className="adm-alerta">{erro}</p></section>
 
   return (
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-lembretes">
-      <div><h2 id="adm-titulo-lembretes">Lembretes por e-mail</h2><p>Um botão por campanha, com a lista de quem recebe pelo nome e o último lembrete de cada pessoa. Para não virar spam, ninguém recebe dois lembretes em menos de 2 dias (só o "Pix: termina hoje" passa, por ser o último aviso). Quem já recebeu nesta ausência ou desligou os lembretes fica de fora.</p></div>
+      <div><h2 id="adm-titulo-lembretes">Lembretes por e-mail</h2><p>Um botão por campanha, com a lista de quem recebe pelo nome e o último lembrete de cada pessoa. Para não virar spam, ninguém recebe dois lembretes em menos de 2 dias (só o "Pix: termina hoje" passa, por ser o último aviso), e o servidor ainda segura quem recebeu qualquer e-mail (carta, lembrete ou campanha) nas últimas 48 horas ou 3 em 14 dias. Quem já recebeu nesta ausência ou desligou os lembretes fica de fora.</p></div>
       {mensagem.texto && <p role={mensagem.erro ? 'alert' : 'status'} className={'adm-nota adm-mensagem' + (mensagem.erro ? ' adm-mensagem--erro' : '')}>{mensagem.texto}</p>}
       <div className="adm-lembretes">
         {CAMPANHAS.map((c) => {
@@ -195,17 +192,14 @@ function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
   }
   async function enviar(pendentes: number) {
     if (!(await confirmar({ titulo: `Enviar o resumo de ${nomeQuinzena(ref)} para ${pendentes} ${pendentes === 1 ? 'pessoa' : 'pessoas'}?`, sim: 'Enviar' }))) return
-    let total = 0, falhas = 0
+    let total = 0
     try {
-      for (let volta = 0; volta < 25; volta++) {
-        definirEnviando(`Enviando… ${total}`)
-        const r = await chamarFuncao<{ enviados: number; falhas: number; talvez_restem: boolean }>('enviar-email', { acao: 'relatorios_quinzenais', quinzena: ref, limite: 40 })
-        total += r.enviados; falhas += r.falhas
-        if (!r.talvez_restem || r.enviados === 0) break
-      }
-      definirMensagem(`Resumo de ${nomeQuinzena(ref)}: ${total} enviados${falhas ? `, ${falhas} com falha` : ''}.`)
-    } catch (f) { definirFalha(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
-    finally { definirEnviando('') }
+      const soma = await enviarEmLotes(
+        (limite) => chamarFuncao<RespostaLote>('enviar-email', { acao: 'relatorios_quinzenais', quinzena: ref, limite }, { prazoMs: PRAZO_LOTE_MS }),
+        (n) => { total = n; definirEnviando(`Enviando… ${n}`) })
+      definirMensagem(`Resumo de ${nomeQuinzena(ref)}: ${textoLote(soma)}.`)
+    } catch (f) { definirFalha(`A tela parou de esperar (${String(f).replace(/^Error: /, '')}). ${total} já tinham saído; o servidor pode ter mandado mais. Os números foram recarregados.`) }
+    finally { definirEnviando(''); avisarEmailsEnviados() }
   }
   const pendentes = resumo && typeof resumo === 'object' ? Number(resumo.pendentes) : 0
   return <article className="adm-lembrete">

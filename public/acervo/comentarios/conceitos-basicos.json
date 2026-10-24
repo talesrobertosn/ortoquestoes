@@ -657,15 +657,81 @@
   "conferido": false
  },
  "conceitos-basicos-0057": {
+  "conceito": "**O parafuso de tração precisa de comprimento de traço para comprimir dois fragmentos sem perder estabilidade.** No metacarpo, a fratura espiral oferece uma superfície longa de contato, que permite distribuir parafusos interfragmentários ao longo da fratura. A compressão aproxima as superfícies ósseas; a montagem também precisa controlar rotação e encurtamento.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, indica parafusos interfragmentários isolados para traços **oblíquos longos ou espirais**, com comprimento maior que duas vezes o diâmetro do osso. Os autores são mais exigentes em sua preferência para metacarpos e mencionam mais de três vezes o diâmetro. Esses números são critérios de comprimento do traço, não de comprimento do parafuso.\n\nUm traço curto oferece pouco espaço para posicionar implantes separados e manter redução e compressão. Uma fratura cominutiva acrescenta fragmentos que não formam simplesmente duas superfícies principais compressíveis; a escolha da estabilidade muda. Isso explica por que “espiral” é a melhor opção entre as quatro, sem concluir que todo traço espiral obrigatoriamente deve ser operado.\n\n**Leia a seção “Metacarpos: tolerância de desvio, colo do quinto e fixação”** no resumo da Biblioteca, especialmente “Quando operar e com quê”, para relacionar a geometria da fratura ao implante.",
+  "correta": "A fratura espiral oferece o traço longo necessário à fixação interfragmentária com parafusos de tração. O comprimento permite distribuir os parafusos e comprimir as superfícies, desde que os fragmentos sejam reconstruíveis. No metacarpo, os parafusos acompanham a espiral, sem necessidade de ficarem todos no mesmo sentido. A indicação depende também de instabilidade e condições locais; o formato do traço torna essa técnica possível, mas não obriga sua utilização em qualquer paciente.",
   "incorretas": {
-   "B": "No traço transverso não há onde comprimir com parafuso, e a fixação é feita com placa, fios ou haste.",
-   "C": "No traço cominutivo não há contato firme entre os fragmentos, e a fixação é em ponte.",
-   "D": "O traço oblíquo curto é curto demais para parafusos isolados e precisa de placa."
+   "B": "No traço transverso, a fratura cruza o osso em uma linha curta, sem a extensão longitudinal que permite distribuir parafusos de tração isolados. Isso reduz a capacidade de controlar os fragmentos com a montagem proposta. O resumo descreve outras possibilidades, como fios, parafuso intramedular em padrões selecionados e placa de compressão. A alternativa confunde compressão no foco com indicação de um parafuso interfragmentário isolado.",
+   "C": "Cominuição significa múltiplos fragmentos. Comprimir indiscriminadamente um foco sem duas superfícies principais reconstruídas pode comprometer comprimento e alinhamento. A estratégia precisa considerar a reconstrução possível e a estabilidade global, frequentemente com outro tipo de montagem. O resumo não apresenta a cominuição como o padrão ideal para parafusos de tração isolados.",
+   "D": "O traço oblíquo curto se aproxima de uma fratura com pouca extensão longitudinal disponível para acomodar a fixação interfragmentária. A expressão decisiva é “curto”: fraturas oblíquas longas podem ser indicadas, mas o mesmo não vale automaticamente para as curtas. O resumo descreve tração associada a neutralização por placa nesse padrão. Portanto, omitir a exigência de comprimento do traço muda a indicação."
   },
-  "conceito": "O **parafuso de tração** sozinho, sem placa, só consegue fixar uma fratura quando algumas condições estão presentes:\n\nO traço da fratura precisa ser **longo**, com comprimento de pelo menos **duas vezes o diâmetro** do osso.\n\nDeve haver espaço para **dois ou mais parafusos**, colocados perpendicularmente ao traço.\n\nOs fragmentos precisam ter uma **área de contato** ampla, para que a compressão seja eficiente.\n\nA fratura **espiral** (ou oblíqua longa) do metacarpo, um dos ossos da palma da mão, cumpre essas condições: o traço é longo e dá para colocar dois ou três parafusos pequenos (de 1,5 a 2,0 mm) comprimindo os fragmentos.\n\nOs outros traços não permitem essa técnica:\n\nNo traço **transverso**, não há como colocar um parafuso atravessando a fratura de forma eficiente. Usam-se placa, fios ou haste.\n\nNo traço **oblíquo curto**, o comprimento não é suficiente: um parafuso isolado faz os fragmentos escorregarem. Precisa de placa.\n\nNo traço **cominutivo** (com vários fragmentos), não há contato firme entre as pontas. A fixação é feita em ponte, atravessando a zona fragmentada.\n\nUm cuidado especial no metacarpo é a **rotação**: com os dedos dobrados, eles devem apontar todos para o mesmo lugar, sem cruzar um sobre o outro.",
-  "correta": "Espiral. O traço longo, com boa área de contato, permite colocar dois ou mais parafusos de tração.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
+    }
+   ],
+   "questaoSha256": "b2f56ed6624b37fa5933d8ef48f09026f28c471b6f1527dd2679ede5158db513",
+   "comentarioSha256": "a405e727d945a3ed7fe870c95131d4f8699c68d36afb8fcd447b1f85a036c243"
+  }
  },
  "conceitos-basicos-0058": {
   "incorretas": {
@@ -1332,15 +1398,45 @@
   "conferido": false
  },
  "conceitos-basicos-0137": {
+  "conceito": "Ao montar um fixador no fêmur, não basta encontrar um caminho até o osso. É preciso considerar o que o pino atravessa. A colocação **anterior**, alternativa B, cruza o quadríceps e é relacionada pelo capítulo a **mais ossificação heterotópica**, além de rigidez do joelho.\n\nOssificação heterotópica é formação de osso em partes moles. Aqui, a pergunta é sobre a direção do pino, e o trajeto muscular anterior é o dado decisivo. O resumo recomenda as direções **lateral ou anterolateral**, seguras em quase todo o fêmur, e destaca os problemas do trajeto anterior (Rockwood, 10ª ed., cap. 57, “Fixador externo, placa e controle de dano”).\n\nRigidez e ossificação não são sinônimos: um pino que prende o quadríceps ou a banda iliotibial pode limitar o movimento, e o capítulo também relaciona o trajeto anterior a maior ossificação. Portanto, observar o joelho rígido não basta para concluir que já houve formação óssea; são consequências diferentes a considerar no planejamento e no seguimento.\n\nA direção também tem implicações de segurança. No fêmur proximal, o trajeto anterior pode ameaçar ramos do nervo femoral; distalmente, é necessário respeitar a extensão da cápsula do joelho. Se o fixador for provisório, a posição dos pinos deve ainda preservar o caminho da futura haste e ficar fora da zona de lesão. A escolha deve proteger a função e a próxima etapa do tratamento, não apenas produzir uma montagem estável.\n\nNo resumo da Biblioteca, compare o trajeto anterior aos laterais e leia os cuidados de posição. O aumento de risco não significa que todo pino anterior produzirá ossificação, nem que outro trajeto seja livre de complicações.",
+  "correta": "**B: anterior.** É o trajeto associado a maior ossificação heterotópica na comparação apresentada. A passagem pelo quadríceps também é relevante para a rigidez.\n\nA prevenção começa na escolha do corredor e na relação do pino com as partes moles, antes de se atribuir qualquer limitação posterior apenas à fratura.",
   "incorretas": {
-   "A": "O pino anteromedial tem outro problema: fica perto dos vasos e nervos femorais.",
-   "C": "O trajeto anterolateral atravessa menos músculo que o anterior.",
-   "D": "O trajeto lateral é o preferido, justamente por atravessar menos massa muscular."
+   "A": "**Anteromedial não é a direção identificada pelo capítulo como resposta a essa associação.** Também não integra o par lateral/anterolateral recomendado no trecho.\n\nNão há fundamento para elegê-la como a de maior risco apenas porque o nome contém “anterior”: a descrição específica é do pino anterior atravessando o quadríceps. Isso tampouco valida o corredor anteromedial como seguro.",
+   "C": "**Anterolateral está entre as direções consideradas seguras em quase todo o fêmur.** O texto a distingue do trajeto diretamente anterior que atravessa o quadríceps e apresenta mais ossificação.\n\n“Segura” é uma recomendação anatômica geral desse corredor, não autorização para ignorar lesões locais, cápsula, vasos ou a futura síntese.",
+   "D": "**Lateral também é uma direção favorecida para os pinos.** Não é a identificada com o aumento de ossificação da pergunta.\n\nA via lateral não elimina todos os problemas de partes moles: o resumo relaciona aprisionamento muscular ou da banda iliotibial à rigidez. Esse cuidado não deve ser confundido com escolher a via lateral como a de maior ossificação."
   },
-  "conceito": "A **ossificação heterotópica** é a formação de osso maduro em lugar onde não deveria haver osso, geralmente dentro de músculos. Ela nasce do **músculo** traumatizado: células imaturas do músculo, expostas a sangue (hematoma) e a fragmentos de osso, passam a se transformar em células formadoras de osso. Por isso, quanto mais músculo um pino atravessa e lesa, maior o risco.\n\nNo **fêmur**, a posição do pino do fixador externo faz diferença:\n\nO **pino anterior** atravessa o ventre do **quadríceps** (o reto femoral e o vasto intermédio), o grande músculo da frente da coxa. É o trajeto que mais lesa músculo, e por isso o que mais favorece a ossificação heterotópica. Além disso, ele \"prende\" o quadríceps ao osso, e o paciente perde a capacidade de dobrar o joelho.\n\nO **pino lateral** passa pela banda iliotibial e pela borda do vasto lateral, atravessando menos massa muscular. É o **trajeto preferido**.\n\nO pino **anteromedial** fica perto dos vasos e nervos femorais, com outro tipo de risco.\n\nNa prática, os pinos no fêmur são colocados pelo lado de fora (lateral ou anterolateral), e o joelho é mobilizado cedo para evitar que o quadríceps grude e o joelho fique rígido.",
-  "correta": "Anterior. O pino que entra pela frente atravessa o ventre do quadríceps, o trajeto que mais lesa músculo e mais favorece a ossificação heterotópica.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fixador externo, placa e controle de dano; Complicações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Fixador externo, placa e controle de dano",
+      "Complicações"
+     ],
+     "blocos": [
+      "fixador-externo-placa-e-controle-de-dano-0850c9dc",
+      "fixador-externo-placa-e-controle-de-dano-d96d3150",
+      "fixador-externo-placa-e-controle-de-dano-373ad787",
+      "complicacoes-6b66234c"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "f618849944d3c00e7035ad21ad81a8517a3a0572dc2ecf8c6101c2443ed4391a"
+    }
+   ],
+   "questaoSha256": "3338741ef546ff40d0de943d5b248b07363f34ebca4a708e7b5d2fddf23fa548",
+   "comentarioSha256": "9bfd8b9c9c5e231e66fa91b3d200ad27253bb6a7128264aba6b7e43ded784398"
+  }
  },
  "conceitos-basicos-0138": {
   "incorretas": {
@@ -1365,15 +1461,82 @@
   "conferido": false
  },
  "conceitos-basicos-0140": {
+  "conceito": "**A posição do punho no gesso de Burkhalter é o dado específico pedido pela banca.** O gabarito oficial escolhe 40° de extensão. Esse número deve ser separado da descrição geral da posição intrínseca plus encontrada no resumo do Rockwood & Green, 10ª edição, capítulo 45: punho em cerca de 30° de extensão, metacarpofalângicas (MCF) em 70° a 90° de flexão e interfalângicas em extensão.\n\nA finalidade da posição de proteção é evitar que a imobilização provoque uma contratura difícil de recuperar. Na MCF, os ligamentos colaterais ficam tensionados em flexão. Imobilizá-la estendida por longo período favorece encurtamento desses ligamentos e limitação posterior da flexão. Nas interfalângicas, manter extensão ajuda a prevenir contratura da placa volar.\n\n**Não transformar os 40° do gabarito em uma citação direta do Rockwood.** O resumo registra expressamente que o capítulo não nomeia o gesso de Burkhalter e utiliza 30° para a posição geral de imobilização. Assim, ele permite explicar os princípios e sinalizar a diferença, mas não confirmar no livro o valor particular exigido pela questão.\n\nLeia o trecho **“Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”. Ele reúne a posição de proteção e a observação sobre a resposta desta banca.",
+  "correta": "A alternativa D corresponde aos **40° de extensão** do gabarito oficial do gesso de Burkhalter. É um valor atribuído pela banca à técnica nomeada, e não o número dado pelo capítulo consultado para a posição intrínseca plus em geral. O resumo do Rockwood descreve cerca de 30° de extensão do punho. Preservar a resposta oficial e registrar essa diferença evita ensinar que duas descrições diferentes têm obrigatoriamente a mesma angulação.",
   "incorretas": {
-   "A": "Com o punho neutro, os tendões flexores não ficam tensionados como o método exige.",
-   "B": "10 graus de extensão é insuficiente para a posição descrita no gesso de Burkhalter.",
-   "C": "20 graus de extensão fica aquém dos cerca de 40 graus descritos."
+   "A": "Punho neutro significa ausência de flexão ou extensão. Isso não coincide com a extensão de 40° escolhida para o gesso de Burkhalter no gabarito. Também não reproduz a posição geral de proteção descrita pelo resumo, que coloca o punho em cerca de 30° de extensão. O erro é retirar a extensão do punho da montagem solicitada.",
+   "B": "Dez graus representam pequena extensão, mas não o valor cobrado nesta questão. A posição do punho não deve ser confundida com a flexão das MCF, que tem outro objetivo e outro intervalo angular. O resumo não sustenta substituir os 40° do gabarito por 10°; descreve cerca de 30° na posição intrínseca plus geral. Portanto, a opção não resolve a técnica nomeada pela banca.",
+   "C": "Vinte graus ainda descrevem extensão, mas a pergunta exige o ângulo específico do gesso de Burkhalter, cujo gabarito é 40°. Também não é a referência geral de cerca de 30° apresentada no resumo consultado. O raciocínio não deve ser escolher qualquer extensão moderada por semelhança: técnica nomeada e posição genérica precisam ter suas fontes distinguidas."
   },
-  "conceito": "O **gesso de Burkhalter** é um tratamento **funcional** para fraturas dos metacarpos, os ossos da palma da mão. Ele imobiliza a mão numa posição específica, a posição \"intrínseca-plus\", e deixa os dedos livres para se mover desde o início.\n\nA posição é:\n\n**Punho em cerca de 40 graus de extensão** (dobrado para cima).\n\n**Articulações da base dos dedos** (metacarpofalângicas) dobradas entre 70 e 90 graus.\n\n**Articulações dos dedos** (interfalângicas) livres.\n\nCada ângulo tem um motivo:\n\nA **extensão do punho** coloca os tendões flexores sob tensão e ajuda a manter a fratura no lugar, contrapondo a tendência do metacarpo de angular com a ponta para cima.\n\nA **flexão das articulações da base dos dedos** mantém esticados os ligamentos colaterais dessas articulações. Se eles ficassem frouxos (com os dedos esticados), encurtariam e a mão ficaria rígida em extensão.\n\nOs **dedos livres** se movem ativamente, e os tendões extensores, deslizando sobre o metacarpo, funcionam como uma tala dinâmica que ajuda a alinhar a fratura.\n\nEle é indicado para fraturas do corpo e do colo dos metacarpos que podem ser reduzidas e ficam estáveis, sem desvio de rotação.",
-  "correta": "40 graus de extensão. É a posição do punho no gesso de Burkhalter, que tensiona os flexores e ajuda a manter a redução.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito oficial: D, 40° de extensão no gesso de Burkhalter. O resumo do Rockwood descreve o punho em cerca de 30° na posição intrínseca plus e informa que o capítulo não cita Burkhalter. O número específico de 40° permanece atribuído à banca, sem confirmação direta no capítulo.",
+  "geradoEm": "2026-10-20",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+     ],
+     "blocos": [
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
+    }
+   ],
+   "questaoSha256": "629db6371480f57a7e9cfbbf83833e46a1ecf990839746fb52ef9f567e55a035",
+   "comentarioSha256": "dc9f48d0f4385f5036b7d406c0700b247c3f763f317515c7686dbe29b5a6d5e9"
+  }
  },
  "conceitos-basicos-0141": {
   "incorretas": {
@@ -1387,20 +1550,44 @@
   "conferido": false
  },
  "conceitos-basicos-0142": {
+  "conceito": "A resposta **4,5 vezes** pertence a uma comparação específica, não a uma regra universal para toda haste. No estudo canadense citado pelo resumo, com 224 pacientes, houve pseudartrose em **7,5% sem fresagem e 1,7% com fresagem**, com risco relativo relatado de 4,5 para a não fresada.\n\nÉ útil separar percentual e razão. Os 7,5% são a frequência do desfecho num grupo; 4,5 expressa aproximadamente quantas vezes aquele risco foi maior que o do outro grupo. Não significa pseudartrose de 4,5% e não equivale a dizer que a maioria das hastes não fresadas falhará. A direção e a magnitude precisam permanecer ligadas à população e à comparação que as produziram (resumo do Rockwood, 10ª ed., cap. 57, “Fresar é a regra”).\n\nA dúvida biológica é compreensível: se a fresagem interrompe circulação medular, por que o resultado pode ser melhor? O resumo descreve aumento do fluxo periosteal após a agressão endosteal, material fresado depositado no foco com fatores osteoindutores e possibilidade de usar uma haste maior. Portanto, o efeito final depende da resposta biológica e da estabilidade, não apenas de uma fotografia do fluxo no instante da fresagem.\n\nAs metanálises apresentadas também favorecem a fresada em pseudartrose, falha do implante e reoperação, sem aumento demonstrado de síndrome do desconforto respiratório agudo, sangramento ou óbito. Isso sustenta a preferência do capítulo, mas não permite multiplicar automaticamente o risco individual de qualquer paciente por 4,5. Exposição, distração do foco e outras condições continuam importando.\n\nO resumo da Biblioteca reúne mecanismo e resultado clínico. Aprenda o número junto de sua origem: é uma comparação de não união entre fresada e não fresada na diáfise femoral, e não um coeficiente fixo de todo tratamento intramedular.",
+  "correta": "**D: 4,5 vezes.** É o risco relativo relatado no estudo citado para a haste não fresada em comparação à fresada. As frequências 7,5% e 1,7% dão sentido à ordem de grandeza.\n\nA resposta deve ser preservada como dado bibliográfico aproximado daquele estudo, sem transformá-la em percentual absoluto ou previsão individual.",
   "incorretas": {
-   "A": "1,5 vez subestima o aumento de risco cobrado pela banca.",
-   "B": "2,5 vezes também fica abaixo do valor cobrado.",
-   "C": "3,5 vezes se aproxima, mas não é o valor adotado pelo gabarito."
+   "A": "**Uma vez e meia reduziria bastante a diferença relatada.** A comparação apresentada é de 7,5% contra 1,7%, não de riscos próximos o suficiente para essa razão.\n\nO erro não está em reconhecer maior pseudartrose com não fresada, mas em trocar a magnitude do resultado que a pergunta exige.",
+   "B": "**Duas vezes e meia também não corresponde à comparação citada.** A direção do efeito está correta se se entende que não fresada tem mais pseudartrose, porém o estudo fornecido relata 4,5.\n\nNão é necessário escolher um número menor para parecer prudente. A prudência é manter o dado real ligado ao contexto, em vez de generalizá-lo.",
+   "C": "**Três vezes e meia continua abaixo do risco relativo apresentado.** O valor pedido não foi inferido apenas do fato de haver lesão da circulação endosteal; é resultado clínico da comparação entre grupos.\n\nTrocar o número não resolve os limites da evidência. Esses limites são explicados pela população e técnica estudadas, mantendo a estimativa publicada."
   },
-  "conceito": "A **haste intramedular** é o tratamento padrão das fraturas da diáfise do fêmur. Ela pode ser colocada depois de **fresar** o canal (alargá-lo com brocas) ou sem fresar.\n\nA haste **não fresada** consolida pior por alguns motivos:\n\nEla é **mais fina**, porque o canal não foi alargado, e preenche menos o canal.\n\nPor isso, dá **menos estabilidade** mecânica.\n\nE não há o **material da fresagem**: os fragmentos de osso produzidos pelas brocas se depositam no foco da fratura e funcionam como um enxerto natural. Sem eles, perde-se esse estímulo.\n\nO resultado é mais retardo de consolidação, mais **não união** (pseudartrose) e mais reoperações do que com a haste fresada. O número cobrado pela banca é de cerca de **4,5 vezes** mais risco de não união com a haste não fresada. Esse valor vem de estudos específicos e varia entre eles, por isso a questão tem um aviso.\n\nNa prática, a haste **fresada** é o padrão no fêmur. A não fresada foi pensada para pacientes politraumatizados com lesão do pulmão, imaginando que a fresagem lançaria mais gordura na circulação, mas esse benefício não se confirmou de forma consistente.",
-  "correta": "4,5 vezes. É o multiplicador de risco de não união com a haste não fresada adotado pelo gabarito.",
-  "alerta": "O valor exato varia entre estudos, técnicas e populações. Revisões mais recentes confirmam maior risco de não união com hastes não fresadas, mas não sustentam um único multiplicador universal para todo paciente.",
   "referencias": [
-   "Reamed versus unreamed intramedullary nailing for femoral fractures: meta-analysis of randomized trials. Medicine (Baltimore). 2017;96(12):e6307. https://pmc.ncbi.nlm.nih.gov/articles/PMC5265768/",
-   "el Moumni M et al. The incidence of non-union following unreamed intramedullary nailing of femoral shaft fractures. Injury. 2009;40(2):205-208. doi:10.1016/j.injury.2008.06.022"
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fresagem, diâmetro, bloqueio e carga; Pseudartrose, infecção, retirada e quebra da haste."
   ],
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O valor de 4,5 é o risco relativo relatado no estudo canadense citado pelo resumo (pseudartrose 7,5% sem fresagem versus 1,7% com fresagem). Não é um multiplicador universal para toda população, fratura ou implante; o gabarito D foi preservado.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Fresagem, diâmetro, bloqueio e carga",
+      "Pseudartrose, infecção, retirada e quebra da haste"
+     ],
+     "blocos": [
+      "fresagem-diametro-bloqueio-e-carga-999f60a0",
+      "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "57b676d327175d95647a27a82969222ee09f683fdcaae5c2c185898bf6b58679"
+    }
+   ],
+   "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
+   "comentarioSha256": "814171290ac861f001725617189d56cc16862dd1ffa4090bbb27fb8bfd2bacde"
+  }
  },
  "conceitos-basicos-0143": {
   "incorretas": {
@@ -4061,18 +4248,46 @@
   "conferido": false
  },
  "conceitos-basicos-0370": {
+  "conceito": "A tração pode permitir que o fêmur consolide, mas o resultado não se resume a unir o osso. Quando esse tratamento se prolonga, o capítulo destaca a **rigidez do joelho como o problema clínico mais comum**. É o fundamento que acompanha a resposta C do simulado.\n\nÉ preciso distinguir duas utilizações. No adulto atual, a tração esquelética costuma ser uma etapa temporária no paciente que ainda não pode receber haste. Historicamente, foi amplamente usada como tratamento definitivo, mantendo o membro por semanas; numa revisão citada, a duração média foi de 52,8 dias. O custo funcional da permanência prolongada não deve ser atribuído automaticamente a uma tração breve de espera (resumo do Rockwood, 10ª ed., cap. 57, “Tratamento não operatório e tração”).\n\nO joelho pode continuar limitado mesmo quando a radiografia mostra união. O capítulo relaciona a rigidez após a fratura à cicatriz do quadríceps, sobretudo do vasto intermédio. Esse dado ajuda a compreender por que uma avaliação centrada somente no calo e no comprimento perde uma parte importante da recuperação: o aparelho extensor e o movimento articular também precisam voltar a funcionar.\n\nConsolidação viciosa, pseudartrose e infecção são problemas reais nas séries de tração definitiva. Não se deve chamar essas complicações de leves para justificar a alternativa C. A pergunta usa **“mais significativa”**, enquanto o resumo disponível sustenta explicitamente **“mais comum”**; esse limite de formulação merece ser conservado. Não é uma demonstração de que rigidez seja sempre mais grave que pseudartrose num paciente individual.\n\nNo resumo da Biblioteca, compare o papel temporário da tração com os resultados de sua utilização definitiva. A lição é manter a função no centro da avaliação e não considerar tratamento bem-sucedido apenas porque o osso terminou unido.\n\n**Por que esta questão foi criada.** Compara a utilidade da tração como etapa provisória ao custo funcional do tratamento prolongado, particularmente no joelho.",
+  "correta": "**C: rigidez do joelho.** Corresponde ao problema clínico predominante na tração prolongada descrita pelo capítulo. A perda de mobilidade pode continuar limitando a função após a consolidação.\n\nA palavra “significativa” do enunciado não deve ser ampliada para uma hierarquia universal de gravidade; a fonte fundamenta sua frequência e importância funcional.",
   "incorretas": {
-   "A": "**Refratura é possível, mas não é a complicação destacada.** Ela significa nova fratura após a união ou retirada da proteção e depende de fatores como qualidade da consolidação e retorno de carga. A pergunta pede a principal consequência da imobilização prolongada por tração, que é a rigidez do joelho na série citada.",
-   "B": "**Encurtamento expressa falha em preservar comprimento.** A musculatura pode manter sobreposição dos fragmentos apesar da tração, gerando discrepância superior a 2 cm. É um problema real de alinhamento, mas o capítulo destaca como mais significativa a limitação articular persistente do joelho.",
-   "D": "**Consolidação viciosa e pseudartrose também importam.** A primeira é união em posição inadequada; a segunda, ausência de união, às vezes exigindo cirurgia. A existência desses desfechos não muda o destaque específico da referência para a rigidez do joelho, frequente e incapacitante após longo período em tração."
+   "A": "**Refratura é voltar a fraturar, e não a principal complicação destacada para a permanência em tração.** O capítulo a discute especialmente em relação a retirada de material e fixador antes da consolidação.\n\nO paciente pode terminar a tração com o osso unido e ainda ter importante limitação do joelho, sem sofrer uma nova fratura.",
+   "B": "**Encurtamento é uma alteração do comprimento; rigidez é perda de movimento.** A tração procura manter comprimento e alinhamento, mas resultados inadequados podem ocorrer.\n\nO resumo não apresenta encurtamento acima de 2 cm como o evento predominante dessa comparação. Esse valor da opção não deve ser transformado em um limite comprovado pela fonte consultada.",
+   "D": "**Consolidação viciosa e pseudartrose são complicações efetivamente descritas nas séries, e podem exigir tratamento adicional.** A opção não é recusada por esses problemas serem impossíveis ou pouco importantes.\n\nO fundamento da resposta do simulado é a rigidez como problema clínico mais comum. A necessidade de cirurgia, por si, não demonstra que esse grupo seja o mais frequente nem resolve a ambiguidade entre frequência e gravidade."
   },
-  "conceito": "**Tração definitiva cobra um preço funcional.** Na fratura da diáfise do fêmur, a tração longitudinal contraria o encurtamento causado pela musculatura e pode ser útil como medida temporária. Mantê-la por semanas como tratamento definitivo implica imobilização prolongada, dificuldade de mobilizar o joelho e perda de força. O movimento que se perde pode continuar limitado mesmo após a consolidação óssea.\n\n**O destaque da série clássica.** Na comparação histórica citada pelo capítulo da questão, a rigidez do joelho foi apontada como a complicação mais significativa da tração femoral. A mesma literatura descreve encurtamento, desalinhamento, pseudartrose e refratura. Esses desfechos não são intercambiáveis: o osso pode consolidar e ainda assim o paciente apresentar limitação importante para sentar, subir escadas ou caminhar normalmente.\n\n**Contexto atual.** A tração pode estabilizar temporariamente e aliviar dor enquanto se organiza o tratamento definitivo, ou ser usada em circunstâncias especiais. Seu uso prolongado depende de recursos, padrão da fratura e estado clínico; não é consequência automática de toda fratura femoral. Os percentuais das antigas séries de tração refletem pacientes e protocolos daquela época, não uma estimativa universal para a prática atual.",
-  "correta": "**Rigidez do joelho.** O capítulo a identifica como a complicação funcional mais significativa da tração mantida para fratura diafisária femoral. A perda prolongada de movimento pode comprometer o resultado mesmo quando há união óssea.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 10 (Principles of Nonoperative Management of Fractures; Ollivere e Duckworth)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Tratamento não operatório e tração; Complicações."
   ],
-  "geradoEm": "2026-10-15",
-  "conferido": false
+  "conferido": false,
+  "alerta": "O enunciado usa “mais significativa”. O resumo do capítulo 57 fundamenta a rigidez do joelho como o problema clínico mais comum da tração prolongada, mas não estabelece uma hierarquia universal de gravidade entre rigidez, encurtamento, pseudartrose e consolidação viciosa. Mantido o gabarito C; frequência não deve ser ensinada como sinônimo de gravidade.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Tratamento não operatório e tração",
+      "Complicações"
+     ],
+     "blocos": [
+      "tratamento-nao-operatorio-e-tracao-afec236d",
+      "tratamento-nao-operatorio-e-tracao-0e1b2fc1",
+      "complicacoes-7635955c",
+      "complicacoes-ea697358"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "be44ccd0a3aac551f040a6c2f181b186c39f37e483590310fa5a6d849305f0d3"
+    }
+   ],
+   "questaoSha256": "8884dc0327967711ed0ed96274c7568bebc198949549a710b5d7b1e37de314bc",
+   "comentarioSha256": "9ebce41488ed1d6c61f92a4fe8df6e150064a28b7b4e0603f3987fff8dde36f3"
+  }
  },
  "conceitos-basicos-0371": {
   "incorretas": {
@@ -4446,7 +4661,7 @@
   "conferido": false
  },
  "conceitos-basicos-0397": {
-  "conceito": "**As propriedades que importam.** O Rockwood (capítulo 12, Material Properties) lembra que os materiais de placas e parafusos precisam de resistência, rigidez e comportamento à fadiga suficientes para as cargas do dia a dia, além de biocompatibilidade, ausência de compostos alergênicos e baixa corrosão. Os usados hoje: aço inoxidável 316L, titânio, liga de titânio (Ti6Al4V) e, mais recentemente, polímero PEEK reforçado com fibra de carbono.\n\n**As definições.**\n\n| Propriedade | Definição no capítulo |\n|---|---|\n| Tensão | força dividida pela área |\n| Deformação | mudança de comprimento dividida pelo comprimento original |\n| Módulo de elasticidade | inclinação da região elástica da curva tensão-deformação; resistência à deformação recuperável |\n| Limite de escoamento | tensão em que começa a deformação plástica (permanente) |\n| Resistência máxima | carga máxima antes da falha, por área, numa única aplicação |\n| Resistência à fadiga | tensão cíclica que o material suporta antes de falhar |\n| **Ductilidade** | **capacidade de se deformar plasticamente antes de falhar**; importante para moldar o implante |\n\nA banca já cobrou a definição de ductilidade (TEOT/TARO).\n\n**Aço contra titânio.**\n\n| | Aço inoxidável | Titânio |\n|---|---|---|\n| Módulo de elasticidade | muito maior que o osso | cerca de metade do aço, mais próximo do osso |\n| Fadiga | menor | **maior** |\n| Corrosão | pode sofrer | resistência muito alta |\n| Abrasão | melhor | pior (ligas de titânio) |\n| **Ductilidade** | **maior**, mais fácil de moldar | **menor** |\n\nNa haste intramedular, o capítulo diz o mesmo: o titânio se aproxima mais do módulo do osso e tem maior resistência à fadiga e maior resistência máxima que o aço. Algumas séries sugerem melhor consolidação com placas bloqueadas de titânio em ponte, possivelmente pela menor rigidez.\n\n**PEEK com fibra de carbono.** Boa biocompatibilidade e durabilidade, módulo ajustável para se aproximar do osso, radiotransparente (precisa de marcadores radiopacos), mas não pode ser moldado nem dobrado.\n\n**Corrosão e atrito.** Corrosão é perda de material por reação química local; fretting é desgaste pelo movimento entre superfícies em contato. Ambos reduzem a resistência e podem levar à falha; quando ocorre, a corrosão costuma estar na interface placa-parafuso e seus produtos podem causar reação biológica adversa.\n\n> **Na prova:** titânio: metade da rigidez do aço, mais fadiga, mais resistência à corrosão, menos dúctil; aço: mais dúctil, mais fácil de moldar; ductilidade é deformar plasticamente antes de falhar.",
+  "conceito": "**As propriedades que importam.** O Rockwood (capítulo 12, Material Properties) lembra que os materiais de placas e parafusos precisam de resistência, rigidez e comportamento à fadiga suficientes para as cargas do dia a dia, além de biocompatibilidade, ausência de compostos alergênicos e baixa corrosão. Os usados hoje: aço inoxidável 316L, titânio, liga de titânio (Ti6Al4V) e, mais recentemente, polímero PEEK reforçado com fibra de carbono.\n\n**As definições.**\n\n| Propriedade | Definição no capítulo |\n|---|---|\n| Tensão | força dividida pela área |\n| Deformação | mudança de comprimento dividida pelo comprimento original |\n| Módulo de elasticidade | inclinação da região elástica da curva tensão-deformação; resistência à deformação recuperável |\n| Limite de escoamento | tensão em que começa a deformação plástica (permanente) |\n| Resistência máxima | carga máxima antes da falha, por área, numa única aplicação |\n| Resistência à fadiga | tensão cíclica que o material suporta antes de falhar |\n| **Ductilidade** | **capacidade de se deformar plasticamente antes de falhar**; importante para moldar o implante |\n\nA banca já cobrou a definição de ductilidade (Ortopedia).\n\n**Aço contra titânio.**\n\n| | Aço inoxidável | Titânio |\n|---|---|---|\n| Módulo de elasticidade | muito maior que o osso | cerca de metade do aço, mais próximo do osso |\n| Fadiga | menor | **maior** |\n| Corrosão | pode sofrer | resistência muito alta |\n| Abrasão | melhor | pior (ligas de titânio) |\n| **Ductilidade** | **maior**, mais fácil de moldar | **menor** |\n\nNa haste intramedular, o capítulo diz o mesmo: o titânio se aproxima mais do módulo do osso e tem maior resistência à fadiga e maior resistência máxima que o aço. Algumas séries sugerem melhor consolidação com placas bloqueadas de titânio em ponte, possivelmente pela menor rigidez.\n\n**PEEK com fibra de carbono.** Boa biocompatibilidade e durabilidade, módulo ajustável para se aproximar do osso, radiotransparente (precisa de marcadores radiopacos), mas não pode ser moldado nem dobrado.\n\n**Corrosão e atrito.** Corrosão é perda de material por reação química local; fretting é desgaste pelo movimento entre superfícies em contato. Ambos reduzem a resistência e podem levar à falha; quando ocorre, a corrosão costuma estar na interface placa-parafuso e seus produtos podem causar reação biológica adversa.\n\n> **Na prova:** titânio: metade da rigidez do aço, mais fadiga, mais resistência à corrosão, menos dúctil; aço: mais dúctil, mais fácil de moldar; ductilidade é deformar plasticamente antes de falhar.",
   "correta": "**D: maior e é menos dúctil.** O Rockwood (capítulo 12, Material Properties) afirma que o titânio demonstra propriedades de fadiga superiores às do aço inoxidável e que o aço é mais dúctil que o titânio, sendo mais fácil de moldar e dobrar. O titânio tem ainda módulo de elasticidade de cerca de metade do aço, mais próximo do osso, e resistência muito alta à corrosão.",
   "incorretas": {
    "A": "**Inverte as duas propriedades.** O titânio tem maior resistência à fadiga, e é o aço que é mais dúctil e mais fácil de moldar. A alternativa descreve o titânio com as características opostas às do capítulo.",
