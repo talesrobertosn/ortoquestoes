@@ -11,6 +11,26 @@ dono: **nenhum nome de outra marca, curso preparatório ou concorrente em lugar 
 metadados, JSON-LD, llms.txt, documentos, nem atrás de flag). A seção 0 registra essa segunda rodada; as
 seções 1 a 8 são a primeira, atualizadas onde mudou.
 
+## 00. Provas anteriores por edição (24/10/2026)
+
+Pedido do Tales: muita gente procura "TEOT anos anteriores", "provas anteriores do TARO" e "provas anteriores
+de cirurgia da mão". Antes, só a página `/questoes-teot-taro/` respondia, pelo conjunto; nenhuma edição tinha
+endereço próprio. Agora `scripts/gerar_provas_anteriores.py` (no deploy, depois de `gerar_paginas_destino.py`)
+gera:
+
+- `/provas-anteriores/`: índice do TEOT, do TARO e das provas de residência em cirurgia da mão, com um botão
+  por ano, um roteiro curto de estudo e perguntas frequentes (FAQPage). Entra no menu como "Provas
+  anteriores"; a página antiga fica como "TEOT e TARO".
+- `/provas-anteriores/<prova>-<ano>/` (ex.: `teot-2024`, `taro-2019`, `usp-sp-2025`): uma por edição, com o que
+  caiu por assunto (na mão, por subtema), todas as questões separadas por assunto com link para a página
+  da questão, os outros anos da mesma prova e o botão para fazer a prova no site. Comentário só é prometido
+  quando a edição tem comentário; a prova de anatomia do TEOT aparece marcada.
+- SBCM e SIMÃO não têm prova oficial no acervo: a página diz isso e leva aos OrtoQuestões Simulados.
+
+Os anos das páginas `/questoes-teot-taro/` e `/cirurgia-da-mao/` agora apontam para as páginas de edição, e
+o sitemap inclui todas. Para indexar mais rápido: Search Console → Inspeção de URL → `/provas-anteriores/`,
+`/provas-anteriores/teot-2025/` e `/provas-anteriores/taro-2026/` → Solicitar indexação.
+
 ## 0. Segunda rodada (15/10/2026)
 
 ### 0.1 Diagnóstico técnico (medido no `dist/` depois de rodar os geradores)

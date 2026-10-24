@@ -70,7 +70,7 @@ jobs:
         # flashcards, sobre), os resumos da Biblioteca (/resumos/, leitura aberta) e
         # o llms.txt, para o Google e os assistentes de IA. São geradas do acervo
         # a cada deploy e não ficam no repositório (docs/seo/PLANO-SEO-R1-2027.md).
-        run: python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_guias_seo.py && python3 scripts/gerar_paginas_destino.py && python3 scripts/gerar_resumos_seo.py && python3 scripts/gerar_sitemap.py
+        run: python3 scripts/gerar_paginas_seo.py && python3 scripts/gerar_guias_seo.py && python3 scripts/gerar_paginas_destino.py && python3 scripts/gerar_provas_anteriores.py && python3 scripts/gerar_resumos_seo.py && python3 scripts/gerar_sitemap.py
       - name: Construir
         # Sem BASE_ORTOQUESTOES: o vite.config.ts usa caminho relativo, e o
         # mesmo build serve tanto usuario.github.io/ortoquestoes/ quanto
