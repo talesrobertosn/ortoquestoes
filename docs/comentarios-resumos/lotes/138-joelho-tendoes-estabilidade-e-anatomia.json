@@ -1,0 +1,420 @@
+{
+  "joelho-0273": {
+    "questaoSha256": "208de4b0dc78f820f25f8ad91000055238e72a0d3754ecfba7368f08beffdea2",
+    "comentarioAnteriorSha256": "152cfbd540e2c5666bf448dcc6081b68b2a7ab501b51882be14c280c6bb51b61",
+    "comentario": {
+      "conceito": "Um atleta jovem sente um estalo durante uma contração forte do quadríceps e perde a extensão ativa do joelho. Nesse cenário, o tendão patelar é uma estrutura a examinar: sua ruptura predomina **abaixo dos 40 anos**, enquanto a quadricipital é mais característica depois dessa idade. Entre os perfis oferecidos, a alternativa A é a melhor.\n\nO tendão patelar transmite a força da patela à tuberosidade tibial. A sobrecarga típica é **excêntrica**, com o joelho fletido: o quadríceps contrai para resistir à carga do corpo, mas o conjunto é alongado. O resumo relaciona muitas rupturas a microtrauma e degeneração prévios, com pródromos de tendinopatia em parte dos atletas. Ser jovem ou forte não torna o tendão imune (Rockwood, 10ª ed., cap. 60, “Quem rompe e por quê”).\n\nNa ruptura, a perda da continuidade central costuma alcançar os retináculos, eliminando a extensão ativa. Sem a contenção distal, o quadríceps traciona a patela para cima: **patela alta** no perfil é uma pista. Exame funcional e imagem se complementam; idade isolada não fecha diagnóstico.\n\nA comparação útil é patelar no jovem atleta versus quadricipital no paciente mais velho com degeneração ou doença sistêmica. São padrões de maior frequência, não exclusões: um paciente com doença sistêmica também pode romper o patelar.",
+      "correta": "**A: jovens atletas.** O perfil combina com a maior frequência abaixo dos 40 anos e a sobrecarga excêntrica esportiva. A história de tendinopatia pode ajudar, mas sua ausência não exclui ruptura.",
+      "incorretas": {
+        "B": "**O sedentarismo não define o padrão predominante descrito.** O resumo destaca o contexto atlético e a idade mais jovem para o patelar. Em pacientes de meia idade, a investigação continua necessária se houver perda da extensão, mas esse perfil não supera o de A.",
+        "C": "**O esporte está certo, a faixa predominante é outra.** Um desportista de meia idade pode sofrer a lesão; a comparação do capítulo situa o patelar principalmente abaixo de 40 anos e o quadricipital acima desse corte.",
+        "D": "**Predisposição não equivale ao grupo mais frequente.** Doença sistêmica e degeneração são especialmente salientadas nas rupturas quadricipitais e bilaterais. A alternativa transforma um contexto de risco em perfil epidemiológico dominante do tendão patelar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Rupturas do tendão quadricipital e do tendão patelar"
+        ],
+        "blocos": [
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7e44c9e6",
+          "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "f42f3b65fa3d26ca8c6fa99e206fad2d888c87f66042dbcb548239980294b77c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0555": {
+    "questaoSha256": "4030e9b72b6e431c202994a3deac6b955c2675249f326dd9d9a359e43d587605",
+    "comentarioAnteriorSha256": "3864cd92ef0e794fbde3792aa7a203fa57bb293b1e4be749876d609fa33ba4c2",
+    "comentario": {
+      "conceito": "Uma fratura patelar com indicação cirúrgica não deve encerrar o exame no osso quebrado. Na série citada pelo resumo, **25% das fraturas operadas tinham lesão do LCP**, alternativa A. Esse número descreve o grupo estudado; não significa que toda fratura da patela tenha a mesma probabilidade.\n\nA patela é anterior e pouco protegida. Um golpe direto forte pode fraturá-la e atingir outras estruturas do membro, incluindo quadril, fêmur e ligamentos do joelho. Por isso o capítulo recomenda procurar lesões associadas nas fraturas de alta energia. **Fixar a patela não corrige uma instabilidade ligamentar que passou despercebida** (Rockwood, 10ª ed., cap. 60, “Mecanismo e lesões associadas”).\n\nO LCP limita principalmente a translação posterior da tíbia. A avaliação ligamentar e neurovascular deve fazer parte do exame, respeitando a dor e a estabilidade da fratura. A pergunta é sobre uma associação observada, não sobre uma regra de que o traço patelar indique sozinho qual ligamento rompeu.",
+      "correta": "**A: LCP.** É o ligamento identificado na série de fraturas operadas, com a frequência de 25%. O achado justifica procurá-lo; não permite diagnosticar sua ruptura apenas pela presença da fratura.",
+      "incorretas": {
+        "B": "**O LCA controla outra direção principal de translação.** Ele restringe a anteriorização da tíbia. Pode haver lesões complexas do joelho, mas o percentual perguntado foi atribuído ao LCP, não ao LCA.",
+        "C": "**O colateral medial se relaciona sobretudo ao valgo.** Seu exame é relevante no trauma do joelho, mas o resumo não lhe atribui os 25% das fraturas patelares operadas. Não se deve transferir a frequência entre ligamentos.",
+        "D": "**O colateral lateral participa da contenção do varo.** Ele integra o canto posterolateral e precisa ser avaliado quando o padrão sugere lesão lateral. Essa função não o torna o ligamento da associação numérica pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Fratura da patela: mecanismo e lesões associadas.",
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Cruzado anterior; O lado medial; Canto posterolateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Fratura da patela: mecanismo e lesões associadas"
+        ],
+        "blocos": [
+          "fratura-da-patela-mecanismo-e-lesoes-associadas-1a37550f",
+          "fratura-da-patela-mecanismo-e-lesoes-associadas-b6f06426"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "6e95ab11ae4e9eb82149a7f7d8507f10dfe2c7af03934800eab2bc0e028ae84d"
+      },
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "Cruzado anterior",
+          "O lado medial",
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-cd462063",
+          "cruzado-anterior-f62f620b",
+          "o-lado-medial-9548c808",
+          "canto-posterolateral-ed823b43"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "5d1b0feaa835b6934dda09a263a7b7d457c5416de9f02ba43c132579211e45ee"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1042": {
+    "questaoSha256": "009ac410cfea425287ca00092343c7a854656ecfdcfacc672bc2a14518c13e65",
+    "comentarioAnteriorSha256": "7a3e8a4975708f1aec23dacf5e11bed7a95b352cd39e549cd5261854e47ed959",
+    "comentario": {
+      "conceito": "Perto da extensão completa, a patela ainda não está plenamente guiada pela tróclea. A contenção por partes moles ganha importância nesse início do movimento; entre os intervalos apresentados, corresponde a **0 a 20 graus**, alternativa A.\n\nO resumo situa o engate da patela na tróclea em torno de **20 graus** e descreve o LPFM como principal restritor do deslocamento lateral, responsável por mais da metade da contenção medial. Ele se continua com a camada profunda do VMO. Essa relação ajuda a compreender por que o par VMO–LPFM importa antes de a geometria óssea oferecer maior guia (Rockwood, 10ª ed., cap. 60, “Anatomia e biomecânica”).\n\n**Estabilizar não é o mesmo que produzir o maior torque de extensão.** O VMO participa do mecanismo extensor; aqui, porém, o problema é a trajetória da patela e sua resistência ao deslocamento lateral. Tampouco o engate aos 20 graus representa um interruptor: não significa que os tecidos deixem de funcionar a partir desse ponto.\n\nÀ medida que aumenta a flexão, mudam a área e o local de contato patelofemoral. Usar a maior área de contato ou a flexão profunda como sinônimo de maior dependência do LPFM troca dois fenômenos diferentes.",
+      "correta": "**A: entre 0 e 20° de flexão.** É o intervalo anterior ao engate troclear descrito em torno de 20 graus. A resposta se compreende pela maior dependência da contenção medial por partes moles nesse início, sem supor que ela desapareça depois.",
+      "incorretas": {
+        "B": "**Já ultrapassa o início do engate troclear.** Entre 30 e 50 graus, a patela já entrou no guia ósseo descrito. VMO e LPFM continuam existindo e atuando, mas não é esse o intervalo inicial de maior dependência da contenção medial pedido.",
+        "C": "**Confunde contato articular com contenção inicial.** O contato cresce e alcança seu máximo perto de 90 graus no resumo. Isso não localiza nessa faixa o predomínio do par estabilizador antes do engate.",
+        "D": "**A flexão profunda muda o padrão de contato.** Além de 90 graus, o contato se distribui entre as facetas medial e lateral. Esse comportamento não corresponde à estabilização inicial que ocorre próximo da extensão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Anatomia e biomecânica do mecanismo extensor."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Anatomia e biomecânica do mecanismo extensor"
+        ],
+        "blocos": [
+          "anatomia-e-biomecanica-do-mecanismo-extensor-a059d78b",
+          "anatomia-e-biomecanica-do-mecanismo-extensor-a3858290",
+          "anatomia-e-biomecanica-do-mecanismo-extensor-95dc48b7"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "949ac01bc050efafc9a30dbd9294ee026a65aa080a719fa7d1a28b30bf77e0e4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0027": {
+    "questaoSha256": "c0bcb1752968acd2f16c8e087728cab1dabfc96de4572297e1347b26816b01b1",
+    "comentarioAnteriorSha256": "605a49cfe277e2141f8ce5ee8eb6b9ca4e2dfa295c609ba90cc729920401116f",
+    "comentario": {
+      "conceito": "Depois de reconstruir o LCP, o joelho pode melhorar e ainda conservar **frouxidão posterior**. Entre as complicações listadas, a instabilidade residual é a resposta D. Recuperação clínica e normalização de todos os testes não são a mesma coisa.\n\nO LCP é o principal restritor da posteriorização da tíbia. Reconstruí-lo exige restaurar sua posição e tensão, mas também reconhecer o que mais rompeu. Se o canto posterolateral permanece insuficiente, a reconstrução isolada do LCP deixa mais translação posterior residual. O enxerto não consegue substituir sozinho toda a contenção perdida (Rockwood, 10ª ed., cap. 61, “O que costuma sobrar depois”).\n\nNa série de 35 reconstruções combinadas dos cruzados citada pelo resumo, Lachman e pivot shift normalizaram em 94%, enquanto a gaveta posterior normalizou em apenas 46%. **São resultados dessa série combinada**, não uma taxa universal de falha de toda reconstrução isolada do LCP.\n\nRigidez também merece prevenção e tratamento. O capítulo pondera que um joelho um pouco frouxo, mas móvel, pode funcionar melhor que um firme com artrofibrose. Isso não é licença para aceitar instabilidade grosseira: é motivo para equilibrar estabilidade, movimento e reabilitação.",
+      "correta": "**D: instabilidade residual.** A translação posterior pode persistir apesar da reconstrução e se agrava se uma lesão associada do canto não for tratada. O exame posterior deve ser acompanhado separadamente da estabilidade anterior.",
+      "incorretas": {
+        "A": "**É um risco anatômico, não o problema residual destacado.** A perfuração tibial do LCP exige proteção do feixe neurovascular. Uma lesão nervosa pode ser grave, mas não explica o padrão frequente de gaveta posterior que não normaliza.",
+        "B": "**Rigidez é relevante e deve ser evitada.** Imobilização e artrofibrose podem reduzir a flexão, justificando movimento protegido conforme a montagem. Entre as opções desta pergunta, porém, a persistência de instabilidade é o achado que o resumo salienta após a reconstrução do LCP.",
+        "C": "**Dor e frouxidão precisam de avaliações distintas.** O joelho pode doer e perder movimento após lesão multiligamentar, mas dor patelofemoral não é apresentada como o principal problema residual dessa reconstrução. Não se deve usá-la como substituto de avaliação da translação posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "Complicações"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-cd462063",
+          "cruzado-posterior-a-pedra-fundamental-ed726e98",
+          "complicacoes-986062f8",
+          "complicacoes-8ad9dbaf"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "8dcf913fad62b7387390b6a3e5013a182da681e5cf93946cb98de453efa2f2a2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0269": {
+    "questaoSha256": "793cdc281c2b994a8ead56f4d1968c422e02de489fcefa75abd562b570447bfe",
+    "comentarioAnteriorSha256": "f1f0bafdf60eb5fc64cd41445b33a92e28a1e1899bacff0ef07c9db1155743b7",
+    "comentario": {
+      "conceito": "A estabilidade anterior pode ficar satisfatória depois da reconstrução dos cruzados e ainda haver **instabilidade posterior**, alternativa C. Cada teste pergunta por uma direção de frouxidão; normalizar um não garante normalizar o outro.\n\nO LCP responde pela maior parte da restrição à translação posterior. O canto posterolateral também contribui: na biomecânica descrita, a 90 graus a secção do LCP produz 5 a 11 mm de frouxidão; a associação com secção do canto chega a 15 a 21 mm. Assim, uma lesão combinada não reconhecida pode sobrecarregar a reconstrução e deixar posteriorização residual (Rockwood, 10ª ed., cap. 61, “O que cada estrutura segura”).\n\nO resumo apresenta uma série de reconstruções combinadas na qual só 46% normalizaram a gaveta posterior, apesar de 94% normalizarem Lachman e pivot shift. Esse contraste sustenta a atenção à frouxidão posterior, mas **não deve ser transformado em incidência geral de uma técnica isolada**.\n\nNa avaliação pós-operatória, movimento e estabilidade são eixos complementares. Falta de flexão ou extensão pode limitar muito a função, mas não é sinônimo de insuficiência do enxerto nem substitui a medida da gaveta.",
+      "correta": "**C: instabilidade posterior.** É a persistência de posteriorização da tíbia que o capítulo destaca. Procurar lesão associada do canto é importante quando a reconstrução isolada não explica a frouxidão restante.",
+      "incorretas": {
+        "A": "**Perda de flexão descreve rigidez.** É uma complicação real da cirurgia multiligamentar e pode exigir reabilitação ou liberação selecionada. A questão, com instabilidade posterior entre as opções, aponta para o déficit de contenção que frequentemente persiste após reconstruir o LCP.",
+        "B": "**Perder extensão é diferente de manter gaveta posterior.** Contratura e artrofibrose reduzem o arco; insuficiência posterior permite translação anormal. O primeiro problema não é apresentado como mais frequente que o segundo nesta comparação.",
+        "D": "**O canto pode explicar parte da falha, mas não muda a direção principal pedida.** Sua lesão produz componentes de varo e rotação externa e aumenta a posteriorização quando associada ao LCP. Instabilidade posterolateral não é um nome intercambiável com toda frouxidão posterior residual."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; Cruzado posterior: a pedra fundamental; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Canto posterolateral",
+          "Cruzado posterior: a pedra fundamental",
+          "Complicações"
+        ],
+        "blocos": [
+          "canto-posterolateral-04216df0",
+          "cruzado-posterior-a-pedra-fundamental-ed726e98",
+          "complicacoes-986062f8"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "beeb2b26de7cbdd55197822a13ecdf8620619a7651639a34894915a770b821a3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1048": {
+    "questaoSha256": "39f7684773a1c8226ddeeb672d3afff9939a5386b8b8ec734c3e82cdd05c9bfa",
+    "comentarioAnteriorSha256": "6100af3939e5b62fd5b3a3d6602444079c4602fb6bb0a0d2755474723fb23156",
+    "comentario": {
+      "conceito": "Reconstruir o LCP não garante eliminar toda a **frouxidão posterior residual**, alternativa C. O objetivo é recuperar contenção e função, mas o controle posterior costuma ser mais difícil de normalizar que os testes de estabilidade anterior.\n\nNa série de 35 reconstruções combinadas dos dois cruzados citada pelo resumo, a gaveta posterior ficou normal em 46%, contra 94% para Lachman e pivot shift. A comparação mostra uma direção de instabilidade que pode persistir; não demonstra que todo paciente com gaveta residual tenha rerruptura, nem fornece a taxa de uma reconstrução isolada (Rockwood, 10ª ed., cap. 61, “O que costuma sobrar depois”).\n\nÉ preciso avaliar o conjunto. O LCP restringe sobretudo a translação posterior, e o canto posterolateral acrescenta contenção. **Reconstruir o LCP e deixar um canto também rompido aumenta a translação residual.** Isso dá consequência prática ao exame multiligamentar e ao planejamento, em vez de atribuir automaticamente toda frouxidão a um enxerto mal escolhido.\n\nA dor e a limitação do arco também importam. O capítulo defende uma recuperação que preserve movimento, porque estabilidade obtida à custa de artrofibrose pode gerar função ruim. A pergunta compara o problema mais característico dessa reconstrução entre as opções oferecidas.",
+      "correta": "**C: frouxidão posterior residual.** A normalização incompleta da gaveta posterior é destacada na fonte, especialmente nas lesões combinadas. Deve ser interpretada com sintomas, função e avaliação das estruturas associadas.",
+      "incorretas": {
+        "A": "**Dor prolongada não mede estabilidade posterior.** Pode acompanhar recuperação ruim e requer investigação, mas o achado que a fonte enfatiza nesta reconstrução é a frouxidão remanescente. Um joelho pouco doloroso ainda pode ter gaveta posterior anormal.",
+        "B": "**O tibial pode ser lesado por uma complicação técnica.** A proximidade do feixe com o túnel tibial exige guia ou cureta, radioscopia e perfuração com o joelho a 90 graus. Esse risco grave não é a alteração residual frequente retratada pela série clínica.",
+        "D": "**O arco reduzido é importante, mas é outro desfecho.** Rigidez e artrofibrose são comuns na cirurgia multiligamentar e se relacionam à imobilização e à reabilitação. Com a frouxidão posterior entre as opções, é ela que melhor corresponde ao problema pós-reconstrução salientado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "Complicações"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-ed726e98",
+          "cruzado-posterior-a-pedra-fundamental-cd462063",
+          "cruzado-posterior-a-pedra-fundamental-ad28ed59",
+          "complicacoes-986062f8",
+          "complicacoes-8ad9dbaf"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "6038da4778fd6b05f07e1324626706d7c0bf79ab8e25898724f36a5ecde735b5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1628": {
+    "questaoSha256": "25f532953ccbdd31880803a1d017182a82067c52372e434e0931621517ae03a5",
+    "comentarioAnteriorSha256": "d6784fe3212071b50a50acafae99543f080cc632287105dcddd7489c5dd781f9",
+    "comentario": {
+      "conceito": "Depois de reconstruir os dois cruzados, a **gaveta posterior** é o teste que menos frequentemente volta ao normal na série apresentada pelo resumo. A alternativa D identifica o sentido de instabilidade que mais persiste nesse grupo.\n\nForam 35 reconstruções combinadas: **94%** normalizaram Lachman e pivot shift, mas apenas **46%** normalizaram a gaveta posterior. A comparação é entre testes e resultados desse grupo; não é uma previsão individual nem uma comparação randomizada de técnicas (Rockwood, 10ª ed., cap. 61, “O que costuma sobrar depois”).\n\nA diferença é compreensível pela função dos ligamentos. O LCA contém principalmente a translação anterior; o LCP, a posterior. O canto posterolateral soma contenção posterior e rotatória, e sua insuficiência associada aumenta a translação residual após reconstruir apenas o LCP.\n\n**Normalização do exame anterior não encerra o exame do joelho.** Medir a gaveta posterior, avaliar rotação e procurar lesões associadas permite reconhecer o que ainda limita a estabilidade. Ao mesmo tempo, um teste residual alterado deve ser relacionado à função, sem chamar toda diferença objetiva de falha clínica completa.",
+      "correta": "**D: gaveta posterior.** Foi o teste com menor proporção de normalização na série descrita: 46%, frente aos 94% de Lachman e pivot shift. Esses números pertencem à amostra de reconstruções combinadas.",
+      "incorretas": {
+        "A": "**O Lachman teve recuperação objetiva mais frequente.** A fonte informa normalização em 94%, relacionada à estabilidade anterior. Um Lachman normal não permite presumir que o componente posterior também tenha sido normalizado.",
+        "B": "**O pivot shift também normalizou em 94%.** O feixe posterolateral do LCA participa do controle rotatório expresso nesse teste. A frequência observada foi maior que a da gaveta posterior, por isso não é a resposta ao superlativo.",
+        "C": "**A gaveta anterior investiga a direção contrária.** Ela se relaciona à anteriorização da tíbia e não deve ser confundida com a queda posterior controlada pelo LCP. A série não fornece um percentual próprio para essa gaveta; o dado explícito de menor normalização é o da posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Cruzado anterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "Cruzado anterior"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-ed726e98",
+          "cruzado-posterior-a-pedra-fundamental-cd462063",
+          "cruzado-anterior-f62f620b"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "be6f98a29cc1eb37301bf0cf45ad48c8414b1075f79a33c90fbf4f6130d562d7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1060": {
+    "questaoSha256": "acbd81dccab26c9cc6379209bb19805df7bc30c85e6449b9306ee4319799619d",
+    "comentarioAnteriorSha256": "2509c11d17f301519b41d14d30f5f04280748a418aa3cffb1a8fdd62e67f3528",
+    "comentario": {
+      "conceito": "Os ligamentos meniscofemorais ligam o **corno posterior do menisco lateral** à região intercondilar femoral e auxiliam a conter a **translação posterior da tíbia**. As duas informações se encontram na alternativa C.\n\nEles acompanham o LCP por trajetos diferentes: **Humphrey passa à frente** e **Wrisberg, atrás**. A posição anterior de Humphrey em relação ao LCP não significa que sua função seja conter a translação anterior. Aqui há dois usos diferentes da palavra anterior: um descreve a posição anatômica; o outro, o movimento da tíbia (Rockwood, 10ª ed., cap. 61, “Os ligamentos meniscofemorais”).\n\nO capítulo os considera restritores **secundários** da posteriorização e estabilizadores do corno posterior lateral. O LCP continua sendo o principal restritor. Pelo menos um meniscofemoral estava presente em 93% dos joelhos na descrição do resumo; isso não exige que ambos estejam presentes em todo indivíduo.\n\nPara reconhecer o par, acompanhe três pontos: menisco lateral, corno posterior e trajeto junto ao LCP. Trocar o menisco por medial ou trocar a direção da translação perde uma parte essencial da anatomia.",
+      "correta": "**C: posterior da tíbia; corno posterior do menisco lateral.** O par une a função secundária à inserção meniscal correta. Não substitui a função principal do LCP nem transforma os meniscofemorais em ligamentos do menisco medial.",
+      "incorretas": {
+        "A": "**Acerta o menisco e erra a direção.** A inserção é no corno posterior lateral, mas a contenção secundária descrita é da translação posterior. O fato de Humphrey passar anteriormente ao LCP não inverte essa função.",
+        "B": "**Troca função e inserção.** Os ligamentos discutidos acompanham o LCP e se ligam ao menisco lateral. Não se trata de um par do menisco medial que contenha a translação anterior da tíbia.",
+        "D": "**Acerta a translação e muda o menisco.** A restrição posterior secundária está correta; a conexão meniscal é lateral. O menisco medial aparece em outras estruturas posteromediais, mas não é a origem meniscal de Humphrey e Wrisberg."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; O lado medial."
+      ],
+      "conferido": false,
+      "alerta": "O gabarito C corresponde ao ensino anatômico tradicional. Contudo, a contribuição dos ligamentos meniscofemorais para conter a translação posterior da tíbia é discutida: um estudo biomecânico mais recente não encontrou restrição significativa sob as condições testadas. A inserção no menisco lateral é inequívoca; a função deve ser apresentada como contribuição proposta, não como efeito universal comprovado."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "O lado medial"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-6c39d4e8",
+          "cruzado-posterior-a-pedra-fundamental-cd462063",
+          "o-lado-medial-de3e1ab3"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "ff74b73a0c01934ceb0cf6385db8b857e5176738983c89d90f3f146e5c0f4599"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0260": {
+    "questaoSha256": "3032aa233c1a8d8b8e49a1851a6ec75b9120259b000f332a7994cdadbb17c174",
+    "comentarioAnteriorSha256": "a6de00c16ab990588b01754952e0da034b8ec1f2c738c185f5687d6e91201e92",
+    "comentario": {
+      "conceito": "O ligamento oblíquo posterior pertence ao **complexo capsuloligamentar medial**, alternativa A. Ele reforça a cápsula posteromedial; não é um dos ligamentos meniscofemorais que acompanham o LCP.\n\nO resumo descreve uma estrutura própria, atrás do colateral superficial, com origem próxima ao tubérculo dos adutores e três braços. O central, maior, reforça a cápsula posteromedial. Sua função principal nessa descrição é conter a rotação interna, enquanto a porção proximal do colateral superficial predomina na contenção do valgo (Rockwood, 10ª ed., cap. 61, “O lado medial”).\n\n**A relação com o semimembranáceo exige cuidado.** Esse músculo envia uma expansão ao oblíquo posterior e outra que forma o ligamento poplíteo oblíquo. São relações reais, mas não fazem desses dois ligamentos a mesma estrutura. Por isso a opção B contém uma associação anatômica, porém não descreve com a mesma precisão a natureza capsuloligamentar cobrada.\n\nHumphrey e Wrisberg, por sua vez, saem do corno posterior do menisco lateral e passam à frente e atrás do LCP. Seguir origem e trajeto é mais seguro que escolher apenas por um nome que contenha posterior.",
+      "correta": "**A: é um espessamento do ligamento capsular medial.** Corresponde à natureza capsuloligamentar e ao reforço posteromedial descritos. O resumo moderno o individualiza com origem e braços próprios; a expressão da alternativa é uma descrição simplificada.",
+      "incorretas": {
+        "B": "**Existe conexão, mas ela não define sozinha o ligamento.** O semimembranáceo manda uma expansão ao oblíquo posterior, que continua sendo estrutura capsuloligamentar própria. Confundi-lo com o poplíteo oblíquo apaga uma distinção importante; a alternativa não é uma relação anatomicamente impossível.",
+        "C": "**Wrisberg acompanha o LCP por trás.** É um ligamento meniscofemoral ligado ao corno posterior do menisco lateral. Seu trajeto intercondilar difere do reforço capsular posteromedial descrito no enunciado.",
+        "D": "**Humphrey acompanha o LCP pela frente.** Também é meniscofemoral do menisco lateral. A posição anterior ao cruzado posterior não o transforma em componente do complexo colateral medial."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O lado medial; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false,
+      "alerta": "A oficial preservada. O resumo individualiza o oblíquo posterior como estrutura capsuloligamentar própria, com braço central que reforça a cápsula; o semimembranáceo envia-lhe uma expansão. Portanto B contém uma conexão real e não deve ser ensinada como anatomicamente impossível. Não confundir oblíquo posterior e poplíteo oblíquo."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "O lado medial",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "o-lado-medial-de3e1ab3",
+          "o-lado-medial-0800da36",
+          "o-lado-medial-b8a9097e",
+          "o-lado-medial-3dfbb38a",
+          "cruzado-posterior-a-pedra-fundamental-6c39d4e8",
+          "cruzado-posterior-a-pedra-fundamental-cc74f408"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "09e2c8dfa494d7c28ab15889e7130f6fd8dc85c90ebfbd910c99ad0a4ca0f714"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0354": {
+    "questaoSha256": "f4d11f4de320987214f6a575a0c30874600b0aae8db6c4364921ab80bfb0156c",
+    "comentarioAnteriorSha256": "f09fb2d21553e58567873dce1ee2ad2df0123cb42411518814bb84716cbd0848",
+    "comentario": {
+      "conceito": "Na vista medial, a seta aponta a faixa larga que desce do fêmur para a tíbia: o **ligamento colateral tibial superficial**, alternativa D. A posição medial e a continuidade longitudinal ajudam mais que a cor ou a espessura isolada do desenho.\n\nO resumo descreve sua origem perto e atrás do epicôndilo medial e uma inserção longa na tíbia medial, profunda à pata de ganso. A porção proximal é o principal estabilizador estático do valgo em todos os ângulos. A imagem mostra a estrutura anatômica; não permite diagnosticar, por si só, instabilidade ou grau de ruptura (Rockwood, 10ª ed., cap. 61, “O lado medial”).\n\n**Superficial não significa pouco importante.** Há um colateral profundo, um espessamento capsular com componentes meniscofemoral e meniscotibial, e há o oblíquo posterior. Eles se relacionam, mas não devem ser confundidos com a faixa longitudinal indicada.\n\nOs distratores deslocam a resposta para a face posterior, para o lado lateral ou para o interior da articulação. Conferir o osso de inserção é decisivo: a faixa marcada segue à tíbia medial, não à cabeça da fíbula.",
+      "correta": "**D: colateral tibial superficial.** A localização medial e a inserção longa tibial correspondem ao trajeto descrito. Sua função principal é resistir à abertura em valgo, sobretudo pela divisão proximal.",
+      "incorretas": {
+        "A": "**O poplíteo oblíquo reforça a cápsula posterior.** Nasce de uma confluência com expansão do semimembranáceo e se abre para lateral. Não é a faixa longitudinal superficial na face medial indicada pela seta.",
+        "B": "**O colateral fibular pertence ao lado lateral.** Origina-se próximo ao epicôndilo lateral e termina na cabeça da fíbula, compondo o canto posterolateral. A imagem assinala uma ligação medial femorotibial.",
+        "C": "**O meniscofemoral anterior é Humphrey.** Conecta o corno posterior do menisco lateral à região intercondilar e passa à frente do LCP. Esse trajeto interno não corresponde à faixa extracapsular medial mostrada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O lado medial; Cruzado posterior: a pedra fundamental; Canto posterolateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "O lado medial",
+          "Cruzado posterior: a pedra fundamental",
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "o-lado-medial-de3e1ab3",
+          "o-lado-medial-5c9f047e",
+          "o-lado-medial-180d416e",
+          "o-lado-medial-9548c808",
+          "cruzado-posterior-a-pedra-fundamental-cc74f408",
+          "canto-posterolateral-474af362",
+          "cruzado-posterior-a-pedra-fundamental-6c39d4e8"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "7150bbf18861a1b1ba1e6e50c013ded6a22af4b8296ac98b62cfbf13ebc7ec74"
+      }
+    ],
+    "imagensConferidas": [
+      "joelho/joelho-0354-1.jpeg"
+    ]
+  }
+}

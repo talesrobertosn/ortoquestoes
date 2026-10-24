@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 720 |
+| pendente | 705 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 228 |
-| pendente-inspecao-imagem | 103 |
-| revisada | 1221 |
+| pendente-fonte | 232 |
+| pendente-inspecao-imagem | 100 |
+| revisada | 1235 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -34,9 +34,9 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 34 | 0 | 11 |
 | Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 45 | 0 | 28 |
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 25 | 0 | 14 |
-| Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 34 | 0 | 49 |
-| Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 41 | 0 | 82 |
-| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 28 | 0 | 17 |
+| Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 37 | 0 | 46 |
+| Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 49 | 0 | 74 |
+| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 31 | 0 | 14 |
 | Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 84 | 0 | 71 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 30 | 0 | 19 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |

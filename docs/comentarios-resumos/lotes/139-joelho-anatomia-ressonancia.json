@@ -1,0 +1,179 @@
+{
+  "trauma-1046": {
+    "questaoSha256": "09f5f0316f5af9ff6296d39d7e4af62057781c3f65582cf49b2af00ffb95d194",
+    "comentarioAnteriorSha256": "2596d0a76a86711a443f6d935759123f4c9c0d69261baa648a69ec72bef32b8e",
+    "comentario": {
+      "conceito": "No corte sagital, a seta aponta o feixe oblíquo situado na região anterior do intercôndilo: o **ligamento cruzado anterior**, alternativa B. A imagem permite reconhecer a estrutura; o enunciado não pede concluir se existe ruptura, e não se deve inventar esse diagnóstico.\n\nO LCA é intra-articular e extrassinovial. O resumo descreve sua origem na borda posteromedial do côndilo femoral lateral e a inserção tibial entre as espinhas. Seu trajeto faz a ligação femorotibial responsável principalmente por limitar a translação anterior da tíbia (Rockwood, 10ª ed., cap. 61, “Cruzado anterior”).\n\nO **LCP** ocupa uma relação mais posterior e termina na tíbia posterior, abaixo dos planaltos. Na leitura sagital, seguir o trajeto e a inserção ajuda a separá-los, em vez de chamar qualquer faixa escura intercondilar de cruzado posterior.\n\nOs meniscofemorais são estruturas menores associadas ao corno posterior do menisco lateral e ao LCP: Humphrey passa à frente e Wrisberg atrás dele. A palavra anterior na posição de Humphrey não o torna o LCA. Essa distinção evita trocar uma relação de vizinhança pelo nome do ligamento principal.",
+      "correta": "**B: cruzado anterior.** O trajeto oblíquo anterior indicado corresponde à ligação do côndilo lateral à região interespinal tibial. A identificação anatômica não prova integridade funcional nem graduação de lesão.",
+      "incorretas": {
+        "A": "**Wrisberg é posterior ao LCP.** Trata-se de um meniscofemoral conectado ao corno posterior do menisco lateral, não do grande feixe femorotibial anterior assinalado. Seu nome não substitui o LCA neste corte.",
+        "C": "**Meniscofemoral designa outra ligação.** Humphrey e Wrisberg conectam o menisco lateral ao fêmur junto ao LCP. A estrutura marcada é o cruzado anterior, cuja inserção tibial e função restritora são distintas.",
+        "D": "**O LCP deve ser acompanhado até a tíbia posterior.** Sua inserção fica abaixo do nível dos planaltos e sua principal função é conter a posteriorização. O feixe apontado está no trajeto anterior correspondente ao LCA."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado anterior; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado anterior",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "cruzado-anterior-d3582e20",
+          "cruzado-anterior-f62f620b",
+          "cruzado-posterior-a-pedra-fundamental-ae278a04",
+          "cruzado-posterior-a-pedra-fundamental-6c39d4e8"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "fa35347b2511eb909356e1bc4c989f0d2651cb4706171041fdcd3a7292040fce"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1046-1.jpeg"
+    ]
+  },
+  "trauma-0856": {
+    "questaoSha256": "9a7543b09288bd8246da5ffc19df506ddfdd15ae42890f174393f9746fc05223",
+    "comentarioAnteriorSha256": "4e6def74ce0a3922857eeabd68e847a3fff0d82d903d6f72796a9856d270d2a5",
+    "comentario": {
+      "conceito": "Numa fratura bicondilar tratada com duas placas, a sequência descrita é **reconstruir primeiro o lado medial e apoiar o lateral contra ele**. Entre as opções, A é a mais compatível: medial pela via posteromedial, seguido do lateral. Sem gabarito oficial registrado, fica como **provável A**, com uma ressalva sobre o nome da segunda via.\n\nO fragmento medial reconstruído funciona como referência para o restante do planalto. Se ele fica inclinado, o alinhamento já começa errado. O resumo orienta colocar inicialmente poucos parafusos mediais, dirigidos para a frente para não bloquear a região lateral; só depois se reduz a superfície lateral, confere o eixo e completa a placa desse lado (Rockwood, 10ª ed., cap. 62, “Duas placas por duas incisões”).\n\n**As incisões também fazem parte da segurança.** As vias posteromedial e anterolateral ficam bem separadas e preservam melhor o envelope entre elas. A grande exposição anterior única com duas placas teve problemas graves de partes moles nas séries antigas. Isso não significa que toda 41C precise obrigatoriamente de duas placas: a morfologia medial na TC decide se uma placa lateral isolada é suficiente.\n\nA alternativa chama a segunda abordagem de **parapatelar lateral**. O corpo do resumo a denomina **anterolateral, com artrotomia submeniscal quando há afundamento**; não se deve ensinar que esses nomes e planos são automaticamente equivalentes. A sequência medial–lateral sustenta a preferência por A, mas a formulação da via é imprecisa.",
+      "correta": "**A: medial pela posteromedial e depois lateral, provável pela fonte.** A ordem e a abordagem medial coincidem com o protocolo. A denominação parapatelar lateral merece a ressalva: a técnica lateral descrita no resumo é anterolateral com artrotomia submeniscal.",
+      "incorretas": {
+        "B": "**Inverte a referência de reconstrução.** O protocolo apresentado fixa primeiro o medial e então reduz o lateral contra ele. Além disso, a anteromedial não é a via padrão para o fragmento posteromedial; o resumo a reserva ao raro padrão anterior medial isolado.",
+        "C": "**Acerta começar pelo medial, mas troca as abordagens habituais.** A posteromedial alcança o cisalhamento posterior e admite placa antideslizante; uma anteromedial pode não controlar esse fragmento. Do lado lateral, a via de trabalho usual é anterolateral, reservando a posterolateral aos fragmentos posteriores que exigem acesso específico.",
+        "D": "**Começa pelo lado oposto e transforma uma via específica em rotina.** O fragmento lateral não é o primeiro a ser fixado no protocolo de duas placas descrito. A posterolateral tem indicação conforme a morfologia posterior, não substitui em todo padrão a abordagem lateral convencional."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador; Lado medial e vias posteriores."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial registrado. Provável A pela sequência medial primeiro por via posteromedial, seguida do lateral. A opção diz parapatelar lateral; o corpo do resumo descreve anterolateral com artrotomia submeniscal, que não deve ser tratada como plano idêntico. A indicação de duas placas depende da morfologia e não se aplica automaticamente a toda 41C.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador",
+          "Lado medial e vias posteriores"
+        ],
+        "blocos": [
+          "bicondilares-e-dissociadas-duas-placas-placa-blo-aee3e6e3",
+          "bicondilares-e-dissociadas-duas-placas-placa-blo-463cdfd3",
+          "lado-medial-e-vias-posteriores-fa4d3da7",
+          "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354",
+          "bicondilares-e-dissociadas-duas-placas-placa-blo-c130de0d"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "78a587e7be95ba640e00b76b589b1cac730abf16198260aa6038641de7e860fa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0910": {
+    "questaoSha256": "cedefdc6c85c1162c05798b0c6f97e95fcd40e6201e5009719e8c25b0f150325",
+    "comentarioAnteriorSha256": "6d23c56eb914a15d18b8e5e963d03f737153c58ac1d9a490fec956a395cf6ab6",
+    "comentario": {
+      "conceito": "O enunciado especifica o **quadrante posterolateral**. Nesse contexto, a via transfibular citada com o trabalho de Lobenhoffer envolve osteotomia proximal da fíbula e rebatimento da cabeça: é a alternativa B.\n\nA cabeça da fíbula e as estruturas nela inseridas limitam o acesso ao planalto posterolateral. Na abordagem transfibular descrita, faz-se osteotomia do colo, rebatendo a cabeça com o colateral lateral, o trato iliotibial e o ligamento meniscotibial. O ganho de acesso tem custo: risco para o nervo fibular, para a articulação tibiofibular proximal e de pseudartrose da osteotomia (Rockwood, 10ª ed., cap. 62, “As vias posteriores e posterolaterais”).\n\n**O epônimo isolado é ambíguo.** O mesmo resumo também chama de abordagem de Lobenhoffer uma via posteromedial, medial à cabeça medial do gastrocnêmio, sem soltá-la. Essa outra descrição não utiliza a osteotomia transfibular. Aqui é a localização posterolateral do enunciado que define qual descrição está sendo cobrada.\n\nNão se deve transformar osteotomia da fíbula em passo obrigatório de qualquer abordagem posterior. O planejamento depende da TC, da orientação do fragmento e da possibilidade de controlá-lo por uma via mais limitada.",
+      "correta": "**B: osteotomia da cabeça da fíbula.** A expressão da alternativa se refere à abordagem transfibular proximal: no resumo, a osteotomia é no colo e permite rebater a cabeça para expor o planalto posterior lateral.",
+      "incorretas": {
+        "A": "**Muda o osso e o obstáculo retirado.** Osteotomia do epicôndilo lateral não é o procedimento transfibular citado neste trecho. A fonte sustenta o rebatimento da cabeça da fíbula; não se deve trocar esse passo por uma osteotomia femoral.",
+        "C": "**Soltar um ligamento não reproduz a exposição transfibular.** O procedimento descrito mobiliza a cabeça da fíbula com suas inserções após osteotomia. Uma soltura arqueada isolada não é o passo que define essa técnica no resumo.",
+        "D": "**O poplíteo é um plano anatômico a respeitar.** O texto descreve trabalho profundo a ele para proteger os vasos nas vias posteriores e osteotomia fibular na transfibular. Não define a abordagem perguntada por tenotomia do poplíteo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lado medial e vias posteriores."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada. O resumo cita Lobenhoffer em dois contextos: via posterolateral transfibular e uma via posteromedial sem soltar o gastrocnêmio medial. O enunciado especifica quadrante posterolateral; nessa leitura, a osteotomia proximal da fíbula corresponde à técnica cobrada. Não generalizar esse passo para toda via chamada Lobenhoffer."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lado medial e vias posteriores"
+        ],
+        "blocos": [
+          "lado-medial-e-vias-posteriores-e6f21b8f",
+          "lado-medial-e-vias-posteriores-a7f2d50c",
+          "lado-medial-e-vias-posteriores-bc5f6eec"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "556755391eadad5768a650bf3f60e78c12ba3949282abb9e4f5fd37f7c5b508b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0343": {
+    "questaoSha256": "a4f4cb100829e0d5ed3f9ca90e8b54451fbca388a7d47e534d1453e72ff956d9",
+    "comentarioAnteriorSha256": "5a57172f4805c86369468e5a53fe42b6b379fbed9969bdc2659accb46e9fab0e",
+    "comentario": {
+      "conceito": "A seta marca uma saliência **anterolateral da tíbia proximal**, ao lado da tuberosidade tibial e próxima da cabeça da fíbula: o **tubérculo de Gerdy**, alternativa C. O primeiro passo é identificar em qual osso a seta termina; ela não aponta para a fíbula.\n\nO resumo descreve Gerdy como o marco de inserção do trato iliotibial. A tuberosidade anterior, mais central, recebe o tendão patelar. Separar essas duas saliências associa forma e função: uma pertence à inserção lateral do trato, a outra ao mecanismo extensor (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\nEsse reconhecimento também orienta a cirurgia. A abordagem anterolateral do planalto se organiza sobre o tubérculo de Gerdy, com abertura do trato iliotibial em linha. A cabeça e o colo da fíbula são referências vizinhas importantes porque o nervo fibular passa nessa região; não se deve trocar proximidade na imagem por identidade anatômica.\n\nO tubérculo adutor fica em outro osso: no fêmur distal medial, para a inserção do adutor magno. Assim, lado, osso e tendão relacionado permitem conferir cada nome, mesmo sem decorar o desenho.",
+      "correta": "**C: tubérculo de Gerdy.** A saliência indicada está na tíbia proximal anterolateral e corresponde à inserção do trato iliotibial, também usada como marco da via anterolateral do planalto.",
+      "incorretas": {
+        "A": "**O colo pertence à fíbula.** É a região estreita abaixo da cabeça fibular, contornada pelo nervo fibular comum. A seta termina numa saliência da tíbia, medial à cabeça da fíbula na figura, não nesse estreitamento do osso vizinho.",
+        "B": "**O tubérculo adutor é femoral e medial.** Recebe o adutor magno acima do côndilo medial do fêmur. A figura assinala a tíbia proximal lateral, portanto não corresponde nem ao osso nem ao lado desse marco.",
+        "D": "**A tuberosidade tibial recebe o tendão patelar.** É a proeminência anterior mais central, distinta de Gerdy, que fica lateral. A diferença de inserção explica por que os dois nomes não podem ser trocados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral.",
+        "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 58 · Distal Femur Fractures. Seções: Anatomia aplicada à fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Anatomia aplicada",
+          "Tratamento do lado lateral"
+        ],
+        "blocos": [
+          "anatomia-aplicada-68e71b10",
+          "tratamento-do-lado-lateral-520ed298",
+          "anatomia-aplicada-5e5d989d"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "9c5c231d815c5990559230a2c358f737712759fd0efb138cb882913c73e90062"
+      },
+      {
+        "resumo": "rockwood10-58-femur-distal",
+        "titulo": "Fratura do fêmur distal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 58 · Distal Femur Fractures",
+        "secoes": [
+          "Anatomia aplicada à fixação"
+        ],
+        "blocos": [
+          "anatomia-aplicada-a-fixacao-d4331410"
+        ],
+        "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+        "trechosSha256": "853645e7e00da2d2af56d0f8c55bb6ded0fb71f05f09f1dfdc7a7f244a34672c"
+      }
+    ],
+    "imagensConferidas": [
+      "joelho/joelho-0343-1.jpeg"
+    ]
+  }
+}

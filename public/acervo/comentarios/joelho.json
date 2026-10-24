@@ -312,15 +312,45 @@
   "conferido": false
  },
  "joelho-0027": {
+  "conceito": "Depois de reconstruir o LCP, o joelho pode melhorar e ainda conservar **frouxidão posterior**. Entre as complicações listadas, a instabilidade residual é a resposta D. Recuperação clínica e normalização de todos os testes não são a mesma coisa.\n\nO LCP é o principal restritor da posteriorização da tíbia. Reconstruí-lo exige restaurar sua posição e tensão, mas também reconhecer o que mais rompeu. Se o canto posterolateral permanece insuficiente, a reconstrução isolada do LCP deixa mais translação posterior residual. O enxerto não consegue substituir sozinho toda a contenção perdida (Rockwood, 10ª ed., cap. 61, “O que costuma sobrar depois”).\n\nNa série de 35 reconstruções combinadas dos cruzados citada pelo resumo, Lachman e pivot shift normalizaram em 94%, enquanto a gaveta posterior normalizou em apenas 46%. **São resultados dessa série combinada**, não uma taxa universal de falha de toda reconstrução isolada do LCP.\n\nRigidez também merece prevenção e tratamento. O capítulo pondera que um joelho um pouco frouxo, mas móvel, pode funcionar melhor que um firme com artrofibrose. Isso não é licença para aceitar instabilidade grosseira: é motivo para equilibrar estabilidade, movimento e reabilitação.",
+  "correta": "**D: instabilidade residual.** A translação posterior pode persistir apesar da reconstrução e se agrava se uma lesão associada do canto não for tratada. O exame posterior deve ser acompanhado separadamente da estabilidade anterior.",
   "incorretas": {
-   "A": "**Lesão nervosa é possível, mas rara.** O risco neurovascular exige proteção durante os túneis, sem ser o desfecho predominante.",
-   "B": "**Perda de flexão também é importante.** É a principal alternativa concorrente; esta questão, diferentemente de outra do acervo, prioriza a frouxidão residual.",
-   "C": "**Dor femoropatelar não é a falha característica.** Pode aparecer após cirurgia do joelho, mas não resume o problema de estabilidade que a banca cobra."
+   "A": "**É um risco anatômico, não o problema residual destacado.** A perfuração tibial do LCP exige proteção do feixe neurovascular. Uma lesão nervosa pode ser grave, mas não explica o padrão frequente de gaveta posterior que não normaliza.",
+   "B": "**Rigidez é relevante e deve ser evitada.** Imobilização e artrofibrose podem reduzir a flexão, justificando movimento protegido conforme a montagem. Entre as opções desta pergunta, porém, a persistência de instabilidade é o achado que o resumo salienta após a reconstrução do LCP.",
+   "C": "**Dor e frouxidão precisam de avaliações distintas.** O joelho pode doer e perder movimento após lesão multiligamentar, mas dor patelofemoral não é apresentada como o principal problema residual dessa reconstrução. Não se deve usá-la como substituto de avaliação da translação posterior."
   },
-  "conceito": "**Uma reconstrução difícil de reproduzir.** O LCP restringe a translação posterior da tíbia e tem anatomia de dois feixes. Depois de reconstruí-lo, alguma frouxidão posterior pode persistir apesar de melhora de dor e função. A tensão e a fixação do enxerto, a posição dos túneis e lesões associadas, especialmente do canto posterolateral, influenciam o resultado. Na técnica transtibial, a curva acentuada do enxerto ao sair posteriormente do túnel é o chamado killer turn; a técnica inlay tibial procura evitar essa curva.\n\n**O que mais pode complicar.** A perda de flexão por rigidez e imobilização também é relativamente frequente. Já lesão nervosa é incomum, embora lesões neurovasculares sejam graves pela proximidade do feixe poplíteo. Dor femoropatelar pode ocorrer, mas depende de fatores como via de acesso e escolha do enxerto. A literatura varia ao classificar frouxidão mensurável e perda de movimento como complicações; aqui a banca apresenta a instabilidade residual como a mais comum entre as alternativas.",
-  "correta": "**Instabilidade posterior residual.** A reconstrução pode deixar frouxidão por alongamento do enxerto, técnica ou instabilidade associada não corrigida.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Complicações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Cruzado posterior: a pedra fundamental",
+      "Complicações"
+     ],
+     "blocos": [
+      "cruzado-posterior-a-pedra-fundamental-cd462063",
+      "cruzado-posterior-a-pedra-fundamental-ed726e98",
+      "complicacoes-986062f8",
+      "complicacoes-8ad9dbaf"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "8dcf913fad62b7387390b6a3e5013a182da681e5cf93946cb98de453efa2f2a2"
+    }
+   ],
+   "questaoSha256": "c0bcb1752968acd2f16c8e087728cab1dabfc96de4572297e1347b26816b01b1",
+   "comentarioSha256": "e5a3158f4fa2e04a2ac788a0045cde089261c7353bc20e1578d872ec2d2a6c79"
+  }
  },
  "joelho-0028": {
   "conceito": "O tendão patelar rompe mais frequentemente **abaixo dos 40 anos e na inserção no polo inferior da patela**. É a alternativa D. Idade e localização formam duas pistas independentes; reconhecer apenas uma delas deixa metade da pergunta sem resposta.\n\nO tendão liga o ápice da patela à tuberosidade da tíbia. A ruptura proximal é a mais comum na descrição, como avulsão, associada à menor rigidez das fibras na inserção e à maior deformação no polo inferior. A ruptura distal na tuberosidade é a menos comum (resumo do Rockwood, 10ª ed., cap. 60, “Rupturas tendíneas” e “Tendão patelar agudo”).\n\nA comparação com o quadricipital ajuda: ele rompe mais acima dos 40 anos, em degeneração ou doença sistêmica. São distribuições habituais, não barreiras que impeçam uma ruptura patelar num paciente mais velho. A frequência deve orientar a hipótese, enquanto o exame confirma onde o mecanismo perdeu continuidade.\n\nNa ruptura completa do patelar, os retináculos costumam também se romper e a extensão ativa se perde. O quadríceps pode puxar a patela para cima sem a oposição do tendão, produzindo patela alta na radiografia. Localização da dor, defeito, extensão e imagem precisam ser relacionados, em vez de usar idade como diagnóstico.\n\nNo resumo da Biblioteca, compare os dois tendões e depois a inserção patelar. A diferença anatômica explica tanto o local de falha quanto a direção da alteração da altura.",
@@ -3669,15 +3699,48 @@
   "conferido": false
  },
  "joelho-0260": {
+  "conceito": "O ligamento oblíquo posterior pertence ao **complexo capsuloligamentar medial**, alternativa A. Ele reforça a cápsula posteromedial; não é um dos ligamentos meniscofemorais que acompanham o LCP.\n\nO resumo descreve uma estrutura própria, atrás do colateral superficial, com origem próxima ao tubérculo dos adutores e três braços. O central, maior, reforça a cápsula posteromedial. Sua função principal nessa descrição é conter a rotação interna, enquanto a porção proximal do colateral superficial predomina na contenção do valgo (Rockwood, 10ª ed., cap. 61, “O lado medial”).\n\n**A relação com o semimembranáceo exige cuidado.** Esse músculo envia uma expansão ao oblíquo posterior e outra que forma o ligamento poplíteo oblíquo. São relações reais, mas não fazem desses dois ligamentos a mesma estrutura. Por isso a opção B contém uma associação anatômica, porém não descreve com a mesma precisão a natureza capsuloligamentar cobrada.\n\nHumphrey e Wrisberg, por sua vez, saem do corno posterior do menisco lateral e passam à frente e atrás do LCP. Seguir origem e trajeto é mais seguro que escolher apenas por um nome que contenha posterior.",
+  "correta": "**A: é um espessamento do ligamento capsular medial.** Corresponde à natureza capsuloligamentar e ao reforço posteromedial descritos. O resumo moderno o individualiza com origem e braços próprios; a expressão da alternativa é uma descrição simplificada.",
   "incorretas": {
-   "B": "O LOP recebe fibras do semimembranáceo, que o tensiona, mas é uma estrutura capsular. A expansão do semimembranáceo para a cápsula de trás é o ligamento poplíteo oblíquo, outra estrutura.",
-   "C": "Wrisberg é o ligamento meniscofemoral posterior, que liga o menisco lateral ao côndilo femoral medial passando atrás do LCP.",
-   "D": "Humphrey é o ligamento meniscofemoral anterior, que faz o mesmo trajeto do Wrisberg passando na frente do LCP."
+   "B": "**Existe conexão, mas ela não define sozinha o ligamento.** O semimembranáceo manda uma expansão ao oblíquo posterior, que continua sendo estrutura capsuloligamentar própria. Confundi-lo com o poplíteo oblíquo apaga uma distinção importante; a alternativa não é uma relação anatomicamente impossível.",
+   "C": "**Wrisberg acompanha o LCP por trás.** É um ligamento meniscofemoral ligado ao corno posterior do menisco lateral. Seu trajeto intercondilar difere do reforço capsular posteromedial descrito no enunciado.",
+   "D": "**Humphrey acompanha o LCP pela frente.** Também é meniscofemoral do menisco lateral. A posição anterior ao cruzado posterior não o transforma em componente do complexo colateral medial."
   },
-  "conceito": "O lado de dentro do joelho é estabilizado por camadas de tecido. A estrutura mais conhecida é o **ligamento colateral medial** (LCM), que tem uma parte superficial, longa, e uma parte profunda, que é um espessamento da cápsula preso ao menisco medial. Logo atrás do LCM superficial existe outra estrutura importante, descrita por Hughston: o **ligamento oblíquo posterior** (LOP).\n\nO LOP não é um ligamento separado da cápsula. Ele é um **espessamento da cápsula articular posteromedial**, com fibras que correm em diagonal do fêmur, perto do tubérculo dos adutores, até a tíbia posteromedial e o menisco medial. Recebe fibras do tendão do **semimembranáceo**, que o tensiona quando o músculo contrai, mas não é uma inserção desse tendão. Sua função é segurar o **valgo** e a **rotação interna** da tíbia quando o joelho está perto da extensão.\n\nEsse conjunto (LCM superficial, LCM profundo, LOP, semimembranáceo e corno posterior do menisco medial) forma o **canto posteromedial**. Quando ele lesa junto com o LCA, a tíbia gira e se desloca para a frente no lado medial, a chamada instabilidade anteromedial rotatória.\n\nDuas confusões são comuns. O **ligamento poplíteo oblíquo** é outra estrutura: uma expansão do semimembranáceo que cruza a cápsula de trás em direção lateral. E os ligamentos de **Wrisberg** e de **Humphrey** são os ligamentos **meniscofemorais**, que saem do corno posterior do menisco **lateral** e sobem até o côndilo femoral medial, passando atrás (Wrisberg) ou na frente (Humphrey) do LCP.",
-  "correta": "É um espessamento do ligamento capsular medial. O LOP é a cápsula posteromedial espessada, logo atrás do LCM superficial.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O lado medial; Cruzado posterior: a pedra fundamental."
+  ],
+  "conferido": false,
+  "alerta": "A oficial preservada. O resumo individualiza o oblíquo posterior como estrutura capsuloligamentar própria, com braço central que reforça a cápsula; o semimembranáceo envia-lhe uma expansão. Portanto B contém uma conexão real e não deve ser ensinada como anatomicamente impossível. Não confundir oblíquo posterior e poplíteo oblíquo.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "O lado medial",
+      "Cruzado posterior: a pedra fundamental"
+     ],
+     "blocos": [
+      "o-lado-medial-de3e1ab3",
+      "o-lado-medial-0800da36",
+      "o-lado-medial-b8a9097e",
+      "o-lado-medial-3dfbb38a",
+      "cruzado-posterior-a-pedra-fundamental-6c39d4e8",
+      "cruzado-posterior-a-pedra-fundamental-cc74f408"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "09e2c8dfa494d7c28ab15889e7130f6fd8dc85c90ebfbd910c99ad0a4ca0f714"
+    }
+   ],
+   "questaoSha256": "3032aa233c1a8d8b8e49a1851a6ec75b9120259b000f332a7994cdadbb17c174",
+   "comentarioSha256": "665d6c51993c09f0e06b5e8d327da54696f11d519802686d4f643a1a99f9722d"
+  }
  },
  "joelho-0261": {
   "conceito": "**A instabilidade patelar e seus fatores.** A luxação recidivante da patela resulta da soma de fatores **anatômicos**: **displasia da tróclea** (o mais importante), **patela alta**, **TT-TG aumentado** (tuberosidade lateralizada em relação ao sulco), **inclinação** patelar, **valgo** e **torções** do membro, além da insuficiência do **ligamento patelofemoral medial (LPFM)**, que se rompe na primeira luxação.\n\n**O que é o TT-TG.** É a distância, medida no plano axial da tomografia ou da ressonância, entre a **tuberosidade anterior da tíbia (TT)** e o **fundo do sulco troclear (TG)**. Ela quantifica o quanto o tendão patelar puxa a patela para **lateral**.\n- Normal: cerca de **10 a 15 mm**.\n- **20 mm ou mais**: claramente patológico (limiar clássico de **Dejour**).\n\n**Por que a tróclea muda o limiar.** O TT-TG depende de dois pontos: a posição da tuberosidade e a posição do fundo do sulco. Quando a tróclea é **displásica** (rasa, plana ou convexa), a patela não tem a contenção óssea do sulco, e um desalinhamento **menor** do vetor do tendão já basta para desestabilizá-la. Por isso, segundo o **Campbell (15ª edição, cap. 52)**, a indicação da osteotomia da tuberosidade é:\n\n| Tróclea | TT-TG que indica a osteotomia |\n|---|---|\n| **Normal** | **20 mm** ou mais |\n| **Displásica** | **Mais de 15 mm** |\n\nEm ambos os casos, a osteotomia é feita **junto com a reconstrução do LPFM** (e/ou do ligamento quadríceps-tibial medial, MQTFL).\n\n**Qual osteotomia.**\n- **Medialização** da tuberosidade (Elmslie-Trillat): corrige o vetor lateral.\n- **Anteromedialização** (Fulkerson): medializa e anterioriza, **descarregando** a cartilagem. Indicada quando há **lesão condral distal e lateral** da patela; é **contraindicada** nas lesões **proximais e mediais**, que seriam sobrecarregadas.\n- A **inclinação do corte** define a proporção entre anteriorização e medialização: uma osteotomia oblíqua de **30°** produz cerca de 1 mm de elevação anterior para cada 2 mm de medialização; a de **45°**, 1 mm anterior para 1 mm medial.\n- **Distalização**, quando há patela alta associada.\n- Raramente, em deformidades rotacionais graves, indica-se a **osteotomia derrotativa do fêmur distal**.\n\n**Na displasia troclear grave** (tipos B e D de Dejour, com esporão supratroclear), a **trocleoplastia** pode ser necessária.\n\n**A questão e o gabarito.** Pela fonte citada, a única alternativa compatível é a **C** (TT-TG maior que 15 mm na tróclea displásica). Na tróclea normal, o limiar é de 20 mm, e não de 15 mm, por isso a alternativa A, registrada como gabarito, não corresponde exatamente ao texto do Campbell. O gabarito foi mantido, com alerta.",
@@ -3797,18 +3860,45 @@
   "conferido": false
  },
  "joelho-0269": {
+  "conceito": "A estabilidade anterior pode ficar satisfatória depois da reconstrução dos cruzados e ainda haver **instabilidade posterior**, alternativa C. Cada teste pergunta por uma direção de frouxidão; normalizar um não garante normalizar o outro.\n\nO LCP responde pela maior parte da restrição à translação posterior. O canto posterolateral também contribui: na biomecânica descrita, a 90 graus a secção do LCP produz 5 a 11 mm de frouxidão; a associação com secção do canto chega a 15 a 21 mm. Assim, uma lesão combinada não reconhecida pode sobrecarregar a reconstrução e deixar posteriorização residual (Rockwood, 10ª ed., cap. 61, “O que cada estrutura segura”).\n\nO resumo apresenta uma série de reconstruções combinadas na qual só 46% normalizaram a gaveta posterior, apesar de 94% normalizarem Lachman e pivot shift. Esse contraste sustenta a atenção à frouxidão posterior, mas **não deve ser transformado em incidência geral de uma técnica isolada**.\n\nNa avaliação pós-operatória, movimento e estabilidade são eixos complementares. Falta de flexão ou extensão pode limitar muito a função, mas não é sinônimo de insuficiência do enxerto nem substitui a medida da gaveta.",
+  "correta": "**C: instabilidade posterior.** É a persistência de posteriorização da tíbia que o capítulo destaca. Procurar lesão associada do canto é importante quando a reconstrução isolada não explica a frouxidão restante.",
   "incorretas": {
-   "A": "A perda de flexão por rigidez acontece, mas é menos frequente que a frouxidão posterior residual.",
-   "B": "A perda de extensão é incomum depois da reconstrução do LCP.",
-   "D": "A instabilidade posterolateral reflete uma lesão do canto posterolateral associada e não tratada. É causa de falha da reconstrução, mas não a complicação mais frequente em si."
+   "A": "**Perda de flexão descreve rigidez.** É uma complicação real da cirurgia multiligamentar e pode exigir reabilitação ou liberação selecionada. A questão, com instabilidade posterior entre as opções, aponta para o déficit de contenção que frequentemente persiste após reconstruir o LCP.",
+   "B": "**Perder extensão é diferente de manter gaveta posterior.** Contratura e artrofibrose reduzem o arco; insuficiência posterior permite translação anormal. O primeiro problema não é apresentado como mais frequente que o segundo nesta comparação.",
+   "D": "**O canto pode explicar parte da falha, mas não muda a direção principal pedida.** Sua lesão produz componentes de varo e rotação externa e aumenta a posteriorização quando associada ao LCP. Instabilidade posterolateral não é um nome intercambiável com toda frouxidão posterior residual."
   },
-  "conceito": "O **ligamento cruzado posterior** (LCP) impede que a tíbia escorregue para trás em relação ao fêmur. É o ligamento mais grosso e forte do joelho, e suas lesões costumam vir de trauma direto na frente da tíbia com o joelho dobrado (o joelho batendo no painel do carro) ou de quedas sobre o joelho flexionado.\n\nMuitas lesões isoladas do LCP são tratadas sem cirurgia. Quando se reconstrói, o resultado mais comum a médio prazo, e a **complicação mais frequente**, é a **frouxidão posterior residual**: a tíbia volta a ceder um pouco para trás. Os motivos descritos são vários. Na técnica transtibial, o enxerto sai do túnel da tíbia e faz uma curva fechada para subir até o fêmur, a \"curva assassina\" (*killer turn*), que desgasta e alonga o enxerto. Além disso, o próprio peso da perna e a gravidade puxam a tíbia para trás o tempo todo, e lesões associadas do canto posterolateral não tratadas sobrecarregam o enxerto.\n\nOutras complicações existem, mas são menos frequentes. A **perda de flexão** por rigidez (artrofibrose) acontece. A **lesão da artéria poplítea**, que passa logo atrás da inserção tibial do LCP, é a mais **grave**, embora rara. A perda de extensão é pouco comum, porque o enxerto do LCP fica mais tenso na flexão.",
-  "correta": "Instabilidade posterior. A frouxidão posterior residual, pelo alongamento do enxerto, é a complicação mais comum depois da reconstrução do LCP.",
   "referencias": [
-   "Canale: Campbell´s Operative Orthopaedics, 11th Ed., p. 2546 (referência indicada na prova TARO 2013, questão 1)"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; Cruzado posterior: a pedra fundamental; Complicações."
   ],
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Canto posterolateral",
+      "Cruzado posterior: a pedra fundamental",
+      "Complicações"
+     ],
+     "blocos": [
+      "canto-posterolateral-04216df0",
+      "cruzado-posterior-a-pedra-fundamental-ed726e98",
+      "complicacoes-986062f8"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "beeb2b26de7cbdd55197822a13ecdf8620619a7651639a34894915a770b821a3"
+    }
+   ],
+   "questaoSha256": "793cdc281c2b994a8ead56f4d1968c422e02de489fcefa75abd562b570447bfe",
+   "comentarioSha256": "6b1ef34a46c8a60cc7762ca0ed19bb9ca8ca7f8ffda338b2d6193b27d0fb3747"
+  }
  },
  "joelho-0270": {
   "incorretas": {
@@ -3882,18 +3972,47 @@
   "conferido": false
  },
  "joelho-0273": {
+  "conceito": "Um atleta jovem sente um estalo durante uma contração forte do quadríceps e perde a extensão ativa do joelho. Nesse cenário, o tendão patelar é uma estrutura a examinar: sua ruptura predomina **abaixo dos 40 anos**, enquanto a quadricipital é mais característica depois dessa idade. Entre os perfis oferecidos, a alternativa A é a melhor.\n\nO tendão patelar transmite a força da patela à tuberosidade tibial. A sobrecarga típica é **excêntrica**, com o joelho fletido: o quadríceps contrai para resistir à carga do corpo, mas o conjunto é alongado. O resumo relaciona muitas rupturas a microtrauma e degeneração prévios, com pródromos de tendinopatia em parte dos atletas. Ser jovem ou forte não torna o tendão imune (Rockwood, 10ª ed., cap. 60, “Quem rompe e por quê”).\n\nNa ruptura, a perda da continuidade central costuma alcançar os retináculos, eliminando a extensão ativa. Sem a contenção distal, o quadríceps traciona a patela para cima: **patela alta** no perfil é uma pista. Exame funcional e imagem se complementam; idade isolada não fecha diagnóstico.\n\nA comparação útil é patelar no jovem atleta versus quadricipital no paciente mais velho com degeneração ou doença sistêmica. São padrões de maior frequência, não exclusões: um paciente com doença sistêmica também pode romper o patelar.",
+  "correta": "**A: jovens atletas.** O perfil combina com a maior frequência abaixo dos 40 anos e a sobrecarga excêntrica esportiva. A história de tendinopatia pode ajudar, mas sua ausência não exclui ruptura.",
   "incorretas": {
-   "B": "Sedentários de meia-idade rompem mais o tendão do quadríceps, geralmente com alguma doença sistêmica associada.",
-   "C": "Desportistas de meia-idade rompem mais o tendão do quadríceps e o tendão calcâneo.",
-   "D": "As doenças do colágeno predispõem à ruptura, mas são raras e não formam o grupo mais frequente."
+   "B": "**O sedentarismo não define o padrão predominante descrito.** O resumo destaca o contexto atlético e a idade mais jovem para o patelar. Em pacientes de meia idade, a investigação continua necessária se houver perda da extensão, mas esse perfil não supera o de A.",
+   "C": "**O esporte está certo, a faixa predominante é outra.** Um desportista de meia idade pode sofrer a lesão; a comparação do capítulo situa o patelar principalmente abaixo de 40 anos e o quadricipital acima desse corte.",
+   "D": "**Predisposição não equivale ao grupo mais frequente.** Doença sistêmica e degeneração são especialmente salientadas nas rupturas quadricipitais e bilaterais. A alternativa transforma um contexto de risco em perfil epidemiológico dominante do tendão patelar."
   },
-  "conceito": "O mecanismo extensor do joelho tem dois tendões que podem romper, e cada um tem um perfil típico de paciente.\n\nO **tendão patelar**, abaixo da patela, rompe principalmente em **jovens**, em geral **abaixo dos 40 anos**, durante esporte. O mecanismo é uma contração forte do quadríceps com o joelho dobrado, como ao aterrissar de um salto. Muitas vezes o tendão já estava enfraquecido por tendinopatia de repetição (o \"joelho do saltador\") ou por infiltrações de corticoide.\n\nO **tendão do quadríceps**, acima da patela, rompe em pessoas **mais velhas**, acima dos 40, e com frequência em quem tem doenças que enfraquecem os tendões, como insuficiência renal crônica, diabetes, gota, artrite reumatoide ou uso de corticoide.\n\nNos dois casos, o paciente não consegue estender o joelho ativamente. A diferença no exame está na posição da patela: na ruptura do patelar ela sobe (patela alta); na do quadríceps ela pode descer um pouco (patela baixa) e há um afundamento palpável logo acima dela.\n\nAs doenças do colágeno predispõem à ruptura de tendões, mas são raras. Em número de casos, quem mais rompe o tendão patelar é o jovem atleta.",
-  "correta": "Jovens atletas. A ruptura do tendão patelar é típica de quem tem menos de 40 anos, durante esporte com salto ou contração excêntrica forte.",
   "referencias": [
-   "Jupiter J:. Skeletal Trauma, 3rd Ed., p. 2039 (referência indicada na prova TARO 2013, questão 58)"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
   ],
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Rupturas do tendão quadricipital e do tendão patelar"
+     ],
+     "blocos": [
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7e44c9e6",
+      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "f42f3b65fa3d26ca8c6fa99e206fad2d888c87f66042dbcb548239980294b77c"
+    }
+   ],
+   "questaoSha256": "208de4b0dc78f820f25f8ad91000055238e72a0d3754ecfba7368f08beffdea2",
+   "comentarioSha256": "b7f2cdb147be6fda18807c9662e684ddf1f2de287d71491aa3f5b637ebc654c5"
+  }
  },
  "joelho-0274": {
   "incorretas": {
@@ -5053,18 +5172,60 @@
   }
  },
  "joelho-0343": {
-  "conceito": "**A tíbia proximal recebe estruturas diferentes em pontos próximos.** A tuberosidade tibial é anterior e recebe o ligamento patelar, continuidade distal do aparelho extensor. O tubérculo de GERDY é anterolateral e recebe o trato iliotibial. A cabeça da fíbula fica ainda mais lateral e recebe o bíceps femoral e o ligamento colateral fibular. Não basta reconhecer uma saliência abaixo do joelho: é necessário definir em qual osso e em qual face ela está.\n\nA pata de ganso fica na face medial da tíbia proximal e reúne sartório, grácil e semitendíneo. Sua fixação é medial à tuberosidade tibial e não corresponde ao trato iliotibial. Na região posterior, a linha do sóleo pertence à tíbia e serve de origem para parte desse músculo; ela não recebe o ligamento patelar.\n\n| Marco ósseo | Estrutura relacionada |\n|---|---|\n| Tuberosidade tibial anterior | Ligamento patelar |\n| Tubérculo de GERDY anterolateral | Trato iliotibial |\n| Cabeça da fíbula | Bíceps femoral e colateral fibular |\n| Face medial da tíbia proximal | Pata de ganso |\n\nNa vista anterior, localizar a fíbula permite orientar o lado lateral antes de identificar o alvo. Em seguida, compare a posição da saliência com o centro do aparelho extensor. A inserção de cada tecido ajuda a conferir a identificação óssea, sem depender do tamanho da figura.",
-  "correta": "**C: tubérculo de GERDY.** É a saliência anterolateral da tíbia que recebe o trato iliotibial. A cabeça da fíbula, ao lado, orienta o compartimento lateral; a tuberosidade tibial é mais anterior e central.",
+  "conceito": "A seta marca uma saliência **anterolateral da tíbia proximal**, ao lado da tuberosidade tibial e próxima da cabeça da fíbula: o **tubérculo de Gerdy**, alternativa C. O primeiro passo é identificar em qual osso a seta termina; ela não aponta para a fíbula.\n\nO resumo descreve Gerdy como o marco de inserção do trato iliotibial. A tuberosidade anterior, mais central, recebe o tendão patelar. Separar essas duas saliências associa forma e função: uma pertence à inserção lateral do trato, a outra ao mecanismo extensor (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\nEsse reconhecimento também orienta a cirurgia. A abordagem anterolateral do planalto se organiza sobre o tubérculo de Gerdy, com abertura do trato iliotibial em linha. A cabeça e o colo da fíbula são referências vizinhas importantes porque o nervo fibular passa nessa região; não se deve trocar proximidade na imagem por identidade anatômica.\n\nO tubérculo adutor fica em outro osso: no fêmur distal medial, para a inserção do adutor magno. Assim, lado, osso e tendão relacionado permitem conferir cada nome, mesmo sem decorar o desenho.",
+  "correta": "**C: tubérculo de Gerdy.** A saliência indicada está na tíbia proximal anterolateral e corresponde à inserção do trato iliotibial, também usada como marco da via anterolateral do planalto.",
   "incorretas": {
-   "A": "O colo fica abaixo da cabeça fibular, no osso lateral à tíbia. A ponta está na saliência tibial medial à cabeça da fíbula, onde chega o trato iliotibial.",
-   "B": "É uma referência do fêmur distal, proximal ao côndilo medial, relacionada ao adutor magno. O alvo está na tíbia anterolateral, e não no fêmur medial.",
-   "D": "Recebe o ligamento patelar na face anterior da tíbia. É a saliência mais central e inferior da imagem; o alvo é lateral a ela, junto ao compartimento lateral."
+   "A": "**O colo pertence à fíbula.** É a região estreita abaixo da cabeça fibular, contornada pelo nervo fibular comum. A seta termina numa saliência da tíbia, medial à cabeça da fíbula na figura, não nesse estreitamento do osso vizinho.",
+   "B": "**O tubérculo adutor é femoral e medial.** Recebe o adutor magno acima do côndilo medial do fêmur. A figura assinala a tíbia proximal lateral, portanto não corresponde nem ao osso nem ao lado desse marco.",
+   "D": "**A tuberosidade tibial recebe o tendão patelar.** É a proeminência anterior mais central, distinta de Gerdy, que fica lateral. A diferença de inserção explica por que os dois nomes não podem ser trocados."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo 9, Joelho/Perna: Osteologia, Articulações, Músculos, Nervos e Artérias."
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral.",
+   "Conteúdo consultado no resumo “Fratura do fêmur distal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 58 · Distal Femur Fractures. Seções: Anatomia aplicada à fixação."
   ],
-  "geradoEm": "2026-10-11",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Anatomia aplicada",
+      "Tratamento do lado lateral"
+     ],
+     "blocos": [
+      "anatomia-aplicada-68e71b10",
+      "tratamento-do-lado-lateral-520ed298",
+      "anatomia-aplicada-5e5d989d"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "9c5c231d815c5990559230a2c358f737712759fd0efb138cb882913c73e90062"
+    },
+    {
+     "resumo": "rockwood10-58-femur-distal",
+     "titulo": "Fratura do fêmur distal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 58 · Distal Femur Fractures",
+     "secoes": [
+      "Anatomia aplicada à fixação"
+     ],
+     "blocos": [
+      "anatomia-aplicada-a-fixacao-d4331410"
+     ],
+     "sha256": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+     "trechosSha256": "853645e7e00da2d2af56d0f8c55bb6ded0fb71f05f09f1dfdc7a7f244a34672c"
+    }
+   ],
+   "questaoSha256": "a4f4cb100829e0d5ed3f9ca90e8b54451fbca388a7d47e534d1453e72ff956d9",
+   "comentarioSha256": "a087f055f0d1e8ff0325fbbe8dc09c7fdcdd632ba86f1e9c1cffd634ae9bcff7"
+  }
  },
  "joelho-0344": {
   "conceito": "**A tíbia proximal recebe estruturas diferentes em pontos próximos.** A tuberosidade tibial é anterior e recebe o ligamento patelar, continuidade distal do aparelho extensor. O tubérculo de GERDY é anterolateral e recebe o trato iliotibial. A cabeça da fíbula fica ainda mais lateral e recebe o bíceps femoral e o ligamento colateral fibular. Não basta reconhecer uma saliência abaixo do joelho: é necessário definir em qual osso e em qual face ela está.\n\nA pata de ganso fica na face medial da tíbia proximal e reúne sartório, grácil e semitendíneo. Sua fixação é medial à tuberosidade tibial e não corresponde ao trato iliotibial. Na região posterior, a linha do sóleo pertence à tíbia e serve de origem para parte desse músculo; ela não recebe o ligamento patelar.\n\n| Marco ósseo | Estrutura relacionada |\n|---|---|\n| Tuberosidade tibial anterior | Ligamento patelar |\n| Tubérculo de GERDY anterolateral | Trato iliotibial |\n| Cabeça da fíbula | Bíceps femoral e colateral fibular |\n| Face medial da tíbia proximal | Pata de ganso |\n\nNa vista anterior, localizar a fíbula permite orientar o lado lateral antes de identificar o alvo. Em seguida, compare a posição da saliência com o centro do aparelho extensor. A inserção de cada tecido ajuda a conferir a identificação óssea, sem depender do tamanho da figura.",
@@ -5207,18 +5368,49 @@
   "conferido": false
  },
  "joelho-0354": {
-  "conceito": "**Os colaterais têm forma, inserção distal e relações meniscais diferentes.** O ligamento colateral fibular é um cordão que liga o epicôndilo femoral lateral à cabeça da fíbula. Ele está separado do menisco lateral; o tendão do poplíteo e os planos profundos ajudam a distinguir essas estruturas na face lateral.\n\nO colateral tibial superficial é uma faixa larga que parte da região do epicôndilo medial e chega à tíbia medial proximal, em plano profundo aos tendões da pata de ganso. Já a porção profunda possui componentes meniscofemoral e meniscotibial e mantém ligação íntima com o menisco medial. Uma faixa superficial longa não deve ser identificada como um pequeno ligamento meniscotibial só porque ambos estão do lado medial.\n\nNa região posterolateral, o ligamento popliteofibular conecta a região da junção musculotendínea do poplíteo à cabeça da fíbula. O ligamento poplíteo oblíquo pertence a outro trajeto: é uma expansão do semimembranáceo que reforça a cápsula posterior e segue obliquamente em direção lateral.\n\n| Estrutura | Relação que permite diferenciá-la |\n|---|---|\n| Colateral fibular | Cordão entre epicôndilo lateral e cabeça da fíbula |\n| Colateral tibial superficial | Faixa larga entre fêmur medial e tíbia medial |\n| Popliteofibular | Poplíteo e cabeça da fíbula |\n| Poplíteo oblíquo | Expansão do semimembranáceo na cápsula posterior |\n\nCompartilhar uma região do joelho não significa compartilhar o ponto de origem. Seguir cada faixa de uma fixação à outra evita confundir tendão, colateral e reforço capsular.",
-  "correta": "**D: colateral tibial superficial.** É a faixa larga de fibras predominantemente longitudinais entre o fêmur medial e a tíbia. Sua inserção tibial fica profunda aos tendões da pata de ganso.",
+  "conceito": "Na vista medial, a seta aponta a faixa larga que desce do fêmur para a tíbia: o **ligamento colateral tibial superficial**, alternativa D. A posição medial e a continuidade longitudinal ajudam mais que a cor ou a espessura isolada do desenho.\n\nO resumo descreve sua origem perto e atrás do epicôndilo medial e uma inserção longa na tíbia medial, profunda à pata de ganso. A porção proximal é o principal estabilizador estático do valgo em todos os ângulos. A imagem mostra a estrutura anatômica; não permite diagnosticar, por si só, instabilidade ou grau de ruptura (Rockwood, 10ª ed., cap. 61, “O lado medial”).\n\n**Superficial não significa pouco importante.** Há um colateral profundo, um espessamento capsular com componentes meniscofemoral e meniscotibial, e há o oblíquo posterior. Eles se relacionam, mas não devem ser confundidos com a faixa longitudinal indicada.\n\nOs distratores deslocam a resposta para a face posterior, para o lado lateral ou para o interior da articulação. Conferir o osso de inserção é decisivo: a faixa marcada segue à tíbia medial, não à cabeça da fíbula.",
+  "correta": "**D: colateral tibial superficial.** A localização medial e a inserção longa tibial correspondem ao trajeto descrito. Sua função principal é resistir à abertura em valgo, sobretudo pela divisão proximal.",
   "incorretas": {
-   "A": "É o reforço posterior derivado do semimembranáceo. As fibras oblíquas e posteriores devem ser diferenciadas da faixa longitudinal superficial apontada na face medial.",
-   "B": "É um cordão no lado lateral que termina na cabeça da fíbula. O alvo é uma faixa medial de inserção tibial; trocar os nomes também troca a referência óssea distal.",
-   "C": "HUMPHREY passa junto ao LCP na região intercondilar, ligando menisco lateral e fêmur. Não é uma faixa externa longa entre epicôndilo medial e tíbia."
+   "A": "**O poplíteo oblíquo reforça a cápsula posterior.** Nasce de uma confluência com expansão do semimembranáceo e se abre para lateral. Não é a faixa longitudinal superficial na face medial indicada pela seta.",
+   "B": "**O colateral fibular pertence ao lado lateral.** Origina-se próximo ao epicôndilo lateral e termina na cabeça da fíbula, compondo o canto posterolateral. A imagem assinala uma ligação medial femorotibial.",
+   "C": "**O meniscofemoral anterior é Humphrey.** Conecta o corno posterior do menisco lateral à região intercondilar e passa à frente do LCP. Esse trajeto interno não corresponde à faixa extracapsular medial mostrada."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo 9, Joelho/Perna: Osteologia, Articulações, Músculos, Nervos e Artérias."
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O lado medial; Cruzado posterior: a pedra fundamental; Canto posterolateral."
   ],
-  "geradoEm": "2026-10-11",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "O lado medial",
+      "Cruzado posterior: a pedra fundamental",
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "o-lado-medial-de3e1ab3",
+      "o-lado-medial-5c9f047e",
+      "o-lado-medial-180d416e",
+      "o-lado-medial-9548c808",
+      "cruzado-posterior-a-pedra-fundamental-cc74f408",
+      "canto-posterolateral-474af362",
+      "cruzado-posterior-a-pedra-fundamental-6c39d4e8"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "7150bbf18861a1b1ba1e6e50c013ded6a22af4b8296ac98b62cfbf13ebc7ec74"
+    }
+   ],
+   "questaoSha256": "f4d11f4de320987214f6a575a0c30874600b0aae8db6c4364921ab80bfb0156c",
+   "comentarioSha256": "1da0623c8c4616e8f5caec77014dffbedf953e5ae01a23636986a3fd5bd019e1"
+  }
  },
  "joelho-0355": {
   "conceito": "O nome já orienta a conexão, mas a anatomia deve confirmar: o ligamento **popliteofibular** liga o sistema poplíteo à **fíbula**, alternativa A. O capítulo o descreve como continuação do tendão poplíteo em direção à fíbula, com divisões anterior e posterior.\n\nEle integra o canto posterolateral junto ao colateral fibular e ao tendão poplíteo. Sua contribuição é estática contra varo, rotação externa e translação posterior. A divisão posterior é a mais resistente e recebe destaque na reconstrução (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\n**Não é outro nome para o tendão poplíteo.** O músculo poplíteo tem ação dinâmica de rotação interna, e seu tendão chega ao sulco do côndilo femoral lateral. O popliteofibular acrescenta uma ligação ligamentar com a fíbula; confundir essas conexões dificulta compreender como o conjunto restringe a instabilidade.\n\nAs opções restantes deslocam a inserção para a tíbia ou para a patela. Esses locais participam de outras relações anatômicas, mas não substituem a ancoragem fibular. O colateral lateral também chega à cabeça da fíbula; compartilhar esse osso não transforma os dois ligamentos na mesma estrutura.\n\n**Por que esta questão foi criada.** O reconhecimento das conexões do canto ajuda a resolver perguntas sobre seus componentes e sobre o estabilizador estático contra varo, rotação externa e forças posteriores. O simulado isola a conexão fibular para dar fundamento à interpretação funcional.",
