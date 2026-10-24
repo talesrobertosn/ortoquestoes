@@ -1,0 +1,37 @@
+{
+  "base": "663541fc99c197abb39885ca38ecb7244e6f05b5",
+  "criterio": "Confronto individual dos enunciados e alternativas com corpo independente. Comentários/gabaritos preservados; seis pendências não contam como revisão.",
+  "resumoSha256": "4408ba797033ef9facf5d132b861f979a619c9ed426d6c20fdfffa87e746e3e0",
+  "questoes": {
+    "trauma-0007": {
+      "questaoSha256": "901ccc2287b78e93b8628cb556df2d5d4fc3779fe623cb5a74ddf261a5bbdd38",
+      "pendencia": "O corpo do resumo 62 descreve flexão, varo e rotação interna femoral no cisalhamento posteromedial, mas não define o sentido da subluxação do restante da tíbia entre anterior/posterior/medial/lateral. O próprio contexto declara a ausência. Falta trecho primário do mecanismo de fratura-luxação para sustentar a direção sem deduzi-la apenas do movimento do fragmento. Preservar C oficial.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0018": {
+      "questaoSha256": "165c4ff4df28737bd28b7a678d81e15d55b085c528431705e51ca8b10ded6b8c",
+      "pendencia": "A atualização de Kfuri/Schatzker está declarada fora do capítulo 62. O contexto do resumo informa posterior/posterior, mas o acervo registra B (anterior da cabeça da fíbula/posterior do LCM). Falta o artigo/figura primária para conferir marcos e resolver essa divergência. Não usar o contexto como evidência independente, não mudar B nem rotular o comentário como revisado.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1036": {
+      "questaoSha256": "fc7d0971ea90a8e2dda1db856a03d4b2954bb89b148fb35e6bc3d59fca2cd861",
+      "pendencia": "O resumo 62 não contém a atualização de Kfuri/Schatzker no corpo independente. Há conflito entre seu contexto (posterior/posterior, D) e o gabarito B existente (anterior da fíbula/posterior do LCM). Falta fonte primária da divisão coronal e conferência dos marcos, com a prova original se necessário. Preservados texto e B oficial, sem baseResumo novo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0223": {
+      "questaoSha256": "1de7bf2f5b2423ed8e90bf95211e994c0892de1ea84f731dbc6ff35530872407",
+      "pendencia": "A via anterolateral estendida com osteotomia do epicôndilo lateral não é descrita no capítulo 62, conforme a própria ressalva do resumo. Faltam descrição/figura primárias para diferenciar essa osteotomia de Gerdy, desinserção subperiosteal e via transfibular, sem transportar técnicas de outros acessos. O contexto da pergunta não comprova cobertura.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1056": {
+      "questaoSha256": "72a4c24da6ffab6f564a0dc21ad4937528960ebdcba4a190d812b53ab3577cee",
+      "pendencia": "O resumo 62 informa explicitamente que o padrão de edema ósseo da lesão aguda do LCA está fora do capítulo. O resumo 61 tampouco detalha esse par de contusões do pivô; a lesão osteocondral da luxação patelar do resumo 60 é outro mecanismo. Falta fonte de RM do LCA para confirmar côndilo/planalto e avaliar cada par, sem usar o contexto como fonte.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1680": {
+      "questaoSha256": "59cc9800a39f30208e96c2a99ff154621d9f2cf924741af325da1efe988327cf",
+      "pendencia": "O corpo independente do resumo 62 discute alinhamento, estabilidade e degrau, mas a comparação com meniscectomia aparece apenas no bloco contextual de questões (linha de conceito), sem sustentação independente no texto. Falta fonte do papel da perda meniscal e sua comparação com 2 mm de degrau, 3 mm de alargamento e LCM. Não atribuir cobertura à opção A inteira por sustentar somente malalinhamento.",
+      "estado": "pendente-fonte"
+    }
+  }
+}

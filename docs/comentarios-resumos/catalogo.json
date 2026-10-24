@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1061,
+  "pendente": 1035,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 171,
+  "pendente-fonte": 177,
   "pendente-inspecao-imagem": 157,
-  "revisada": 883
+  "revisada": 903
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -231,9 +231,10 @@
    "titulo": "Fratura do planalto tibial",
    "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
    "estados": {
-    "pendente": 41,
+    "pendente": 15,
+    "pendente-fonte": 6,
     "pendente-inspecao-imagem": 3,
-    "revisada": 1
+    "revisada": 21
    }
   },
   "rockwood10-63-diafise-tibia": {
@@ -7741,7 +7742,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -7756,7 +7757,34 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "27ca0482ff6ce20809a210325055307d47f750163e36b7cd6f182d3358a7e3cf"
+   "questaoSha256": "27ca0482ff6ce20809a210325055307d47f750163e36b7cd6f182d3358a7e3cf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Anatomia aplicada",
+       "Tratamento do lado lateral"
+      ],
+      "blocos": [
+       "anatomia-aplicada-882c3a32",
+       "anatomia-aplicada-01a8a946",
+       "anatomia-aplicada-29b9f498",
+       "tratamento-do-lado-lateral-6b4477db"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "f160b70784360ea0a5d5df014b5c5c35ae39d133057782888974422debd3f2a9"
+     }
+    ],
+    "questaoSha256": "27ca0482ff6ce20809a210325055307d47f750163e36b7cd6f182d3358a7e3cf",
+    "comentarioSha256": "88d36240a39dd531d97f5e5271edc9f8ea92e6bdda52afd32cd4584ab837cf4a"
+   }
   },
   "joelho-0214": {
    "tema": "joelho",
@@ -41757,8 +41785,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 62 descreve flexão, varo e rotação interna femoral no cisalhamento posteromedial, mas não define o sentido da subluxação do restante da tíbia entre anterior/posterior/medial/lateral. O próprio contexto declara a ausência. Falta trecho primário do mecanismo de fratura-luxação para sustentar a direção sem deduzi-la apenas do movimento do fragmento. Preservar C oficial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41772,7 +41800,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "901ccc2287b78e93b8628cb556df2d5d4fc3779fe623cb5a74ddf261a5bbdd38"
+   "questaoSha256": "901ccc2287b78e93b8628cb556df2d5d4fc3779fe623cb5a74ddf261a5bbdd38",
+   "pendencia": "O corpo do resumo 62 descreve flexão, varo e rotação interna femoral no cisalhamento posteromedial, mas não define o sentido da subluxação do restante da tíbia entre anterior/posterior/medial/lateral. O próprio contexto declara a ausência. Falta trecho primário do mecanismo de fratura-luxação para sustentar a direção sem deduzi-la apenas do movimento do fragmento. Preservar C oficial."
   },
   "trauma-0008": {
    "tema": "trauma",
@@ -42146,8 +42175,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A atualização de Kfuri/Schatzker está declarada fora do capítulo 62. O contexto do resumo informa posterior/posterior, mas o acervo registra B (anterior da cabeça da fíbula/posterior do LCM). Falta o artigo/figura primária para conferir marcos e resolver essa divergência. Não usar o contexto como evidência independente, não mudar B nem rotular o comentário como revisado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42161,7 +42190,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "165c4ff4df28737bd28b7a678d81e15d55b085c528431705e51ca8b10ded6b8c"
+   "questaoSha256": "165c4ff4df28737bd28b7a678d81e15d55b085c528431705e51ca8b10ded6b8c",
+   "pendencia": "A atualização de Kfuri/Schatzker está declarada fora do capítulo 62. O contexto do resumo informa posterior/posterior, mas o acervo registra B (anterior da cabeça da fíbula/posterior do LCM). Falta o artigo/figura primária para conferir marcos e resolver essa divergência. Não usar o contexto como evidência independente, não mudar B nem rotular o comentário como revisado."
   },
   "trauma-0019": {
    "tema": "trauma",
@@ -42494,7 +42524,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42509,7 +42539,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "7085ded1e4a5cc05581870dbdb53aa4a8b2bfc465d02126a3d9c1f3a1ace490a"
+   "questaoSha256": "7085ded1e4a5cc05581870dbdb53aa4a8b2bfc465d02126a3d9c1f3a1ace490a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Mecanismo e padrões de fratura",
+       "Classificação de SCHATZKER",
+       "Lado medial e vias posteriores"
+      ],
+      "blocos": [
+       "mecanismo-e-padroes-de-fratura-65bf462b",
+       "classificacao-de-schatzker-d599fb64",
+       "lado-medial-e-vias-posteriores-96c684c4",
+       "lado-medial-e-vias-posteriores-39c8bf35"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "8b2026c5efd43790405bbf15db05c5d622306dcfe9a1aee4758835346687fcc0"
+     }
+    ],
+    "questaoSha256": "7085ded1e4a5cc05581870dbdb53aa4a8b2bfc465d02126a3d9c1f3a1ace490a",
+    "comentarioSha256": "2b4b14c0f1fd710eb5e42ee0aa0ef7dc9816668965d0460d8aa96ac2fdf7b143"
+   }
   },
   "trauma-0032": {
    "tema": "trauma",
@@ -43856,7 +43914,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43871,7 +43929,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "82c4cd9ec2775743ed355b59eecf61cb341f9a38c8c0db5158ec3283ce1f5edd"
+   "questaoSha256": "82c4cd9ec2775743ed355b59eecf61cb341f9a38c8c0db5158ec3283ce1f5edd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "89028e68ed5ae651f5b8d8ad07eac11ea96378dd7cc4d2d6d6079bb1f23fdca5"
+     }
+    ],
+    "questaoSha256": "82c4cd9ec2775743ed355b59eecf61cb341f9a38c8c0db5158ec3283ce1f5edd",
+    "comentarioSha256": "21e949a86aa24f6d1230b154a0f6d5d2c87ff4d1c6e8ec4de680ce6aef492fde"
+   }
   },
   "trauma-0077": {
    "tema": "trauma",
@@ -47447,7 +47533,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47462,7 +47548,40 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "6422819bfc6645fdf545d31740c25bf63c342441fd50d7f7739f8d7b4187cb31"
+   "questaoSha256": "6422819bfc6645fdf545d31740c25bf63c342441fd50d7f7739f8d7b4187cb31",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Mecanismo e padrões de fratura",
+       "Classificação de SCHATZKER",
+       "Tratamento do lado lateral",
+       "Quando operar e quanto se tolera"
+      ],
+      "blocos": [
+       "mecanismo-e-padroes-de-fratura-ef801f78",
+       "mecanismo-e-padroes-de-fratura-082ce611",
+       "mecanismo-e-padroes-de-fratura-3bcd1579",
+       "mecanismo-e-padroes-de-fratura-fff16546",
+       "mecanismo-e-padroes-de-fratura-65bf462b",
+       "classificacao-de-schatzker-b1760cec",
+       "tratamento-do-lado-lateral-2430c926",
+       "quando-operar-e-quanto-se-tolera-030300cc"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "074fc830a8e1542c92cb764003636106be405587d576ef713e05b567104be534"
+     }
+    ],
+    "questaoSha256": "6422819bfc6645fdf545d31740c25bf63c342441fd50d7f7739f8d7b4187cb31",
+    "comentarioSha256": "160080eca4a5f3b82b5ebed63bdf9cd8c8814da307db93cdf94df233e320cc2e"
+   }
   },
   "trauma-0205": {
    "tema": "trauma",
@@ -47936,8 +48055,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A via anterolateral estendida com osteotomia do epicôndilo lateral não é descrita no capítulo 62, conforme a própria ressalva do resumo. Faltam descrição/figura primárias para diferenciar essa osteotomia de Gerdy, desinserção subperiosteal e via transfibular, sem transportar técnicas de outros acessos. O contexto da pergunta não comprova cobertura.",
    "temComentario": true,
    "citacoes": [
     {
@@ -47951,7 +48070,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "1de7bf2f5b2423ed8e90bf95211e994c0892de1ea84f731dbc6ff35530872407"
+   "questaoSha256": "1de7bf2f5b2423ed8e90bf95211e994c0892de1ea84f731dbc6ff35530872407",
+   "pendencia": "A via anterolateral estendida com osteotomia do epicôndilo lateral não é descrita no capítulo 62, conforme a própria ressalva do resumo. Faltam descrição/figura primárias para diferenciar essa osteotomia de Gerdy, desinserção subperiosteal e via transfibular, sem transportar técnicas de outros acessos. O contexto da pergunta não comprova cobertura."
   },
   "trauma-0224": {
    "tema": "trauma",
@@ -49953,7 +50073,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49968,7 +50088,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "c337b1a1a17678981391acf9bf5639f689ca737080ea16b79871978bae44612b"
+   "questaoSha256": "c337b1a1a17678981391acf9bf5639f689ca737080ea16b79871978bae44612b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Classificação de SCHATZKER",
+       "Mecanismo e padrões de fratura",
+       "Tratamento do lado lateral"
+      ],
+      "blocos": [
+       "classificacao-de-schatzker-b1760cec",
+       "mecanismo-e-padroes-de-fratura-082ce611",
+       "classificacao-de-schatzker-e151ed03",
+       "tratamento-do-lado-lateral-2430c926"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "b2bd7bc3752087bcc3085431dad8d00859695650dc1dca5d5bd476afe037eba5"
+     }
+    ],
+    "questaoSha256": "c337b1a1a17678981391acf9bf5639f689ca737080ea16b79871978bae44612b",
+    "comentarioSha256": "8465c5eb2d9647bf7657f51da582cc1f8b4f21a70f21962214221b430363ffd6"
+   }
   },
   "trauma-0297": {
    "tema": "trauma",
@@ -50355,7 +50503,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50370,7 +50518,34 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "cbf75770a13b92d2efd2d48995ea709ebc237c0c888af5773ec0ad864abca0e0"
+   "questaoSha256": "cbf75770a13b92d2efd2d48995ea709ebc237c0c888af5773ec0ad864abca0e0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "32dd2e6c82e1fbf627c22ede8be9d621b2930d57fcc1ac611e6685aa827f9fe0"
+     }
+    ],
+    "questaoSha256": "cbf75770a13b92d2efd2d48995ea709ebc237c0c888af5773ec0ad864abca0e0",
+    "comentarioSha256": "8c704fc8fdcbaad5fe7ac5129130ee6349507356d77ee80011b6e2c222401b48"
+   }
   },
   "trauma-0314": {
    "tema": "trauma",
@@ -51286,7 +51461,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51301,7 +51476,33 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "660b47d0d4232af2857704c173c4a74f4f86fd4e50ad2ae317bfa85cadccdd96"
+   "questaoSha256": "660b47d0d4232af2857704c173c4a74f4f86fd4e50ad2ae317bfa85cadccdd96",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "7069a3ff0581c6c08a4ee7e880db34ab4d4350d77e9c9a085bb6b552dafe6363"
+     }
+    ],
+    "questaoSha256": "660b47d0d4232af2857704c173c4a74f4f86fd4e50ad2ae317bfa85cadccdd96",
+    "comentarioSha256": "983105a6ee7fe2225feab83c529c8796842d064ec80a0cb578bea54a67a28773"
+   }
   },
   "trauma-0417": {
    "tema": "trauma",
@@ -55297,7 +55498,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55312,7 +55513,34 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "b40030d37d818de7c5c66fecc6548f67ff57377f66a3c8f07401c6ee73fceb6d"
+   "questaoSha256": "b40030d37d818de7c5c66fecc6548f67ff57377f66a3c8f07401c6ee73fceb6d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lado medial e vias posteriores",
+       "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+      ],
+      "blocos": [
+       "lado-medial-e-vias-posteriores-96c684c4",
+       "lado-medial-e-vias-posteriores-39c8bf35",
+       "lado-medial-e-vias-posteriores-d3fc5be1",
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "2305868b55060780be8f2151a1f8c2aba68606a59d9a6daae66cb0caaee70411"
+     }
+    ],
+    "questaoSha256": "b40030d37d818de7c5c66fecc6548f67ff57377f66a3c8f07401c6ee73fceb6d",
+    "comentarioSha256": "c3013304970ffe36b1744b296293951720a8373174ac4592bc1230f1683cad46"
+   }
   },
   "trauma-0704": {
    "tema": "trauma",
@@ -62526,7 +62754,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62541,7 +62769,37 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "8393846c28baf39b4115ab3acdf4ab95a2b55a00d142ac9247d80fccd032b2c5"
+   "questaoSha256": "8393846c28baf39b4115ab3acdf4ab95a2b55a00d142ac9247d80fccd032b2c5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Classificação de SCHATZKER",
+       "Mecanismo e padrões de fratura",
+       "Tratamento do lado lateral",
+       "Avaliação: exame, partes moles e imagem"
+      ],
+      "blocos": [
+       "classificacao-de-schatzker-b1760cec",
+       "mecanismo-e-padroes-de-fratura-ef801f78",
+       "mecanismo-e-padroes-de-fratura-082ce611",
+       "tratamento-do-lado-lateral-96ac9ab9",
+       "avaliacao-exame-partes-moles-e-imagem-4d537b3e"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "d605b22cbca1727354cc037e83925e2aa0a0e13ff78acffe899052cafc08fb4b"
+     }
+    ],
+    "questaoSha256": "8393846c28baf39b4115ab3acdf4ab95a2b55a00d142ac9247d80fccd032b2c5",
+    "comentarioSha256": "f602ce7690066ad2b95f14e48a6879f1e237be27cdc1a8c97d6ce497419bb118"
+   }
   },
   "trauma-1015": {
    "tema": "trauma",
@@ -63048,8 +63306,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 62 não contém a atualização de Kfuri/Schatzker no corpo independente. Há conflito entre seu contexto (posterior/posterior, D) e o gabarito B existente (anterior da fíbula/posterior do LCM). Falta fonte primária da divisão coronal e conferência dos marcos, com a prova original se necessário. Preservados texto e B oficial, sem baseResumo novo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63063,7 +63321,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "fc7d0971ea90a8e2dda1db856a03d4b2954bb89b148fb35e6bc3d59fca2cd861"
+   "questaoSha256": "fc7d0971ea90a8e2dda1db856a03d4b2954bb89b148fb35e6bc3d59fca2cd861",
+   "pendencia": "O resumo 62 não contém a atualização de Kfuri/Schatzker no corpo independente. Há conflito entre seu contexto (posterior/posterior, D) e o gabarito B existente (anterior da fíbula/posterior do LCM). Falta fonte primária da divisão coronal e conferência dos marcos, com a prova original se necessário. Preservados texto e B oficial, sem baseResumo novo."
   },
   "trauma-1037": {
    "tema": "trauma",
@@ -63510,8 +63769,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 62 informa explicitamente que o padrão de edema ósseo da lesão aguda do LCA está fora do capítulo. O resumo 61 tampouco detalha esse par de contusões do pivô; a lesão osteocondral da luxação patelar do resumo 60 é outro mecanismo. Falta fonte de RM do LCA para confirmar côndilo/planalto e avaliar cada par, sem usar o contexto como fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63525,7 +63784,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "72a4c24da6ffab6f564a0dc21ad4937528960ebdcba4a190d812b53ab3577cee"
+   "questaoSha256": "72a4c24da6ffab6f564a0dc21ad4937528960ebdcba4a190d812b53ab3577cee",
+   "pendencia": "O resumo 62 informa explicitamente que o padrão de edema ósseo da lesão aguda do LCA está fora do capítulo. O resumo 61 tampouco detalha esse par de contusões do pivô; a lesão osteocondral da luxação patelar do resumo 60 é outro mecanismo. Falta fonte de RM do LCA para confirmar côndilo/planalto e avaliar cada par, sem usar o contexto como fonte."
   },
   "trauma-1057": {
    "tema": "trauma",
@@ -65397,7 +65657,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65419,7 +65679,36 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "caa3b1f0582830c2cfbf044c3304f2f5aafa1dcb56ecc99b6e34469055a1ee26"
+   "questaoSha256": "caa3b1f0582830c2cfbf044c3304f2f5aafa1dcb56ecc99b6e34469055a1ee26",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Anatomia aplicada",
+       "Tratamento do lado lateral",
+       "Avaliação: exame, partes moles e imagem"
+      ],
+      "blocos": [
+       "anatomia-aplicada-882c3a32",
+       "anatomia-aplicada-01a8a946",
+       "anatomia-aplicada-29b9f498",
+       "tratamento-do-lado-lateral-6b4477db",
+       "avaliacao-exame-partes-moles-e-imagem-4d537b3e"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "663f5e3dfc09cfb07955dc61fe57c8c9277325bf91b519009a3adc3fb43916ba"
+     }
+    ],
+    "questaoSha256": "caa3b1f0582830c2cfbf044c3304f2f5aafa1dcb56ecc99b6e34469055a1ee26",
+    "comentarioSha256": "e413859a35d94bb5bf1a89159ab88c6f2113bd20dfdc781a3216fb5714e884a2"
+   }
   },
   "trauma-1128": {
    "tema": "trauma",
@@ -83205,7 +83494,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83227,7 +83516,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "49a4266d4ef1b8ff8773ae404142d7ca25d75f8b19580d96b037ee599c68267b"
+   "questaoSha256": "49a4266d4ef1b8ff8773ae404142d7ca25d75f8b19580d96b037ee599c68267b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Classificação de SCHATZKER",
+       "Anatomia aplicada",
+       "Avaliação: exame, partes moles e imagem"
+      ],
+      "blocos": [
+       "classificacao-de-schatzker-a19af221",
+       "anatomia-aplicada-68e71b10",
+       "anatomia-aplicada-df446291",
+       "avaliacao-exame-partes-moles-e-imagem-caf89e44"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "0e0e367d167365490ec824720ed1668de14536e7671e60c469231617fe196894"
+     }
+    ],
+    "questaoSha256": "49a4266d4ef1b8ff8773ae404142d7ca25d75f8b19580d96b037ee599c68267b",
+    "comentarioSha256": "a438ec6456f0c9228071954c2157d8f8b0d25762003eaabeb6c165fe220dc39b"
+   }
   },
   "trauma-1671": {
    "tema": "trauma",
@@ -83260,7 +83577,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83289,7 +83606,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "cf2dce59b76d781e21765ea7f883f62ebeeb9509eeb4dbe458cfb0fdb4bcbf2b"
+   "questaoSha256": "cf2dce59b76d781e21765ea7f883f62ebeeb9509eeb4dbe458cfb0fdb4bcbf2b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas"
+      ],
+      "blocos": [
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-5cb9b6b2",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-b6846712",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-0ec22418",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-3d784738",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-7c355ea1",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-f6e60936"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "9a582456c172d6dd0c954dbb045f66e012a0533687f6edaac0dce7a324a7c19c"
+     }
+    ],
+    "questaoSha256": "cf2dce59b76d781e21765ea7f883f62ebeeb9509eeb4dbe458cfb0fdb4bcbf2b",
+    "comentarioSha256": "969d86ebccb07c289baa2fbc4e2a7f61b5e8bab1f5ddab50b8a7a8fd02ede84d"
+   }
   },
   "trauma-1673": {
    "tema": "trauma",
@@ -83298,7 +83643,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83313,7 +83658,36 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "49a202024f9b2e6db5b70a2aaa4589a53863e368efefb29f115f31c2e4ffb1db"
+   "questaoSha256": "49a202024f9b2e6db5b70a2aaa4589a53863e368efefb29f115f31c2e4ffb1db",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Anatomia aplicada",
+       "Lado medial e vias posteriores"
+      ],
+      "blocos": [
+       "anatomia-aplicada-f21247fd",
+       "lado-medial-e-vias-posteriores-8cc30cab",
+       "lado-medial-e-vias-posteriores-e89ac7ee",
+       "lado-medial-e-vias-posteriores-132c3f53",
+       "lado-medial-e-vias-posteriores-42b8d11f",
+       "lado-medial-e-vias-posteriores-bc5f6eec"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "42f1f539b7ed18e57368c507f1937dbac9cecc6501722bd8e3b5efbacf99e346"
+     }
+    ],
+    "questaoSha256": "49a202024f9b2e6db5b70a2aaa4589a53863e368efefb29f115f31c2e4ffb1db",
+    "comentarioSha256": "beb92f63d0eaa129e7ad5137fafab646eb6ffc353c6e6282900b5e43b99f5bc1"
+   }
   },
   "trauma-1674": {
    "tema": "trauma",
@@ -83322,7 +83696,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83337,7 +83711,32 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "a28bc4eaad6b235848ba6d9cd848d369a8c77c1e77576be0d2b85ec4f44ea822"
+   "questaoSha256": "a28bc4eaad6b235848ba6d9cd848d369a8c77c1e77576be0d2b85ec4f44ea822",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lado medial e vias posteriores",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "lado-medial-e-vias-posteriores-bc5f6eec",
+       "anatomia-aplicada-5e5d989d"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "bc3d27f179a3d1a2e8b59c03c979827c537780172074e09650ef0b1758c73d08"
+     }
+    ],
+    "questaoSha256": "a28bc4eaad6b235848ba6d9cd848d369a8c77c1e77576be0d2b85ec4f44ea822",
+    "comentarioSha256": "6d843521e2412a96f5dfd3f850de085e690d48744f1c7813e37db73e7dfb2180"
+   }
   },
   "trauma-1675": {
    "tema": "trauma",
@@ -83346,7 +83745,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83368,7 +83767,34 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "730210702b6ab47468f5f805fca61982e293572fd82b3f92b31de8ef7b2752fe"
+   "questaoSha256": "730210702b6ab47468f5f805fca61982e293572fd82b3f92b31de8ef7b2752fe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lado medial e vias posteriores",
+       "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+      ],
+      "blocos": [
+       "lado-medial-e-vias-posteriores-96c684c4",
+       "lado-medial-e-vias-posteriores-39c8bf35",
+       "lado-medial-e-vias-posteriores-d3fc5be1",
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "2305868b55060780be8f2151a1f8c2aba68606a59d9a6daae66cb0caaee70411"
+     }
+    ],
+    "questaoSha256": "730210702b6ab47468f5f805fca61982e293572fd82b3f92b31de8ef7b2752fe",
+    "comentarioSha256": "9261c37a4e69fee7120a1ad1dbe34c19f08144ee4477fd1c20fc3e5c21947810"
+   }
   },
   "trauma-1676": {
    "tema": "trauma",
@@ -83377,7 +83803,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83392,7 +83818,33 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "7dcb90bb70dddfb6fddd36e8e16ff429898014ce651c2a09bb5f6dbd21df75c4"
+   "questaoSha256": "7dcb90bb70dddfb6fddd36e8e16ff429898014ce651c2a09bb5f6dbd21df75c4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+      ],
+      "blocos": [
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354",
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-463cdfd3",
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-aee3e6e3",
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-1765beb7"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "e84c7e0b8af2bc75570d7daa4e58cdf5029eafc54bef6097e7d281a3d8db5c84"
+     }
+    ],
+    "questaoSha256": "7dcb90bb70dddfb6fddd36e8e16ff429898014ce651c2a09bb5f6dbd21df75c4",
+    "comentarioSha256": "8695e455eca05e5b33d1e227711d9b99d20ddca54af7a049bb7e420ad26365c8"
+   }
   },
   "trauma-1677": {
    "tema": "trauma",
@@ -83401,7 +83853,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83423,7 +83875,36 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "aca47346b58c04fce7aa7c50864f78125e3c3f3d9406aad59db07ef8cb1418ee"
+   "questaoSha256": "aca47346b58c04fce7aa7c50864f78125e3c3f3d9406aad59db07ef8cb1418ee",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Anatomia aplicada",
+       "Tratamento do lado lateral"
+      ],
+      "blocos": [
+       "anatomia-aplicada-882c3a32",
+       "anatomia-aplicada-01a8a946",
+       "anatomia-aplicada-29b9f498",
+       "tratamento-do-lado-lateral-6b4477db",
+       "tratamento-do-lado-lateral-fd50d208",
+       "tratamento-do-lado-lateral-96ac9ab9"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "a65544878729d813ff8c77b80add8ae2b5bf3beb53253cf17a2d9a733adf37ec"
+     }
+    ],
+    "questaoSha256": "aca47346b58c04fce7aa7c50864f78125e3c3f3d9406aad59db07ef8cb1418ee",
+    "comentarioSha256": "4805d418af1630874ef98d04a89098b31b8dcc70d20c6a889957e63870624153"
+   }
   },
   "trauma-1678": {
    "tema": "trauma",
@@ -83432,7 +83913,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83447,7 +83928,32 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "c9e7ead041b11d3d266ae6a908184751247804f128330f04b42cb548b75fd9f4"
+   "questaoSha256": "c9e7ead041b11d3d266ae6a908184751247804f128330f04b42cb548b75fd9f4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Tratamento do lado lateral"
+      ],
+      "blocos": [
+       "tratamento-do-lado-lateral-fd50d208",
+       "tratamento-do-lado-lateral-b01ea2e2",
+       "tratamento-do-lado-lateral-87fc4688"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "c677a72d88841eece0129c103b79fe59a7425ee17d8cc3bdaa9cdc6d497e9aaf"
+     }
+    ],
+    "questaoSha256": "c9e7ead041b11d3d266ae6a908184751247804f128330f04b42cb548b75fd9f4",
+    "comentarioSha256": "2c3dc241aac409087def230d3127f8dcd199d0cca7a626758adaf7a451fea2e3"
+   }
   },
   "trauma-1679": {
    "tema": "trauma",
@@ -83456,7 +83962,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83478,7 +83984,32 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "1820451430badde5ef3efae2d647c7ca4f21a9521c98c8ce29b7cb396e608bfa"
+   "questaoSha256": "1820451430badde5ef3efae2d647c7ca4f21a9521c98c8ce29b7cb396e608bfa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Complicações",
+       "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+      ],
+      "blocos": [
+       "complicacoes-479c7db2",
+       "bicondilares-e-dissociadas-duas-placas-placa-blo-c0fa4734"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "2005f1b61b572b4622097afe52d94c76a074113aa4e99bb36dec1b96242557b6"
+     }
+    ],
+    "questaoSha256": "1820451430badde5ef3efae2d647c7ca4f21a9521c98c8ce29b7cb396e608bfa",
+    "comentarioSha256": "4b5c615e292d85b564b4e4846af7373b79a19124b0bd76ead59658c64b6d2f39"
+   }
   },
   "trauma-1680": {
    "tema": "trauma",
@@ -83487,8 +84018,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo 62 discute alinhamento, estabilidade e degrau, mas a comparação com meniscectomia aparece apenas no bloco contextual de questões (linha de conceito), sem sustentação independente no texto. Falta fonte do papel da perda meniscal e sua comparação com 2 mm de degrau, 3 mm de alargamento e LCM. Não atribuir cobertura à opção A inteira por sustentar somente malalinhamento.",
    "temComentario": true,
    "citacoes": [
     {
@@ -83502,7 +84033,8 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "59cc9800a39f30208e96c2a99ff154621d9f2cf924741af325da1efe988327cf"
+   "questaoSha256": "59cc9800a39f30208e96c2a99ff154621d9f2cf924741af325da1efe988327cf",
+   "pendencia": "O corpo independente do resumo 62 discute alinhamento, estabilidade e degrau, mas a comparação com meniscectomia aparece apenas no bloco contextual de questões (linha de conceito), sem sustentação independente no texto. Falta fonte do papel da perda meniscal e sua comparação com 2 mm de degrau, 3 mm de alargamento e LCM. Não atribuir cobertura à opção A inteira por sustentar somente malalinhamento."
   },
   "trauma-1681": {
    "tema": "trauma",
@@ -83511,7 +84043,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83526,7 +84058,33 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "54f2c08a5f10727c8adf25fafe9eb695ff15c22685157bf285867e0b6ae6f922"
+   "questaoSha256": "54f2c08a5f10727c8adf25fafe9eb695ff15c22685157bf285867e0b6ae6f922",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "20a6bb29fa8616e294b6f693d3106185acc506b2a48e47ec7fed4aab31e76ec6"
+     }
+    ],
+    "questaoSha256": "54f2c08a5f10727c8adf25fafe9eb695ff15c22685157bf285867e0b6ae6f922",
+    "comentarioSha256": "cc5ad26e350029d2418b53640368f0d7e96bfa8e95de2c08468e98fb239978c1"
+   }
   },
   "trauma-1682": {
    "tema": "trauma",
