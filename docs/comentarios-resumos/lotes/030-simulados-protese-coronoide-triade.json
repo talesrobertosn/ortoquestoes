@@ -1,0 +1,397 @@
+{
+  "trauma-1417": {
+    "questaoSha256": "2d8b4bc5abbce988dc4ab93eecc1a2c0c1843032202cf5ddc08435751d617408",
+    "comentarioAnteriorSha256": "ec00377b8ce15a54509b55435afd716be542990c0374eeeb2d28fc65aacb6873",
+    "comentario": {
+      "conceito": "**Falha técnica e motivo mais frequente de revisão não são a mesma pergunta.** O resumo destaca o **excesso de altura da prótese**, chamado overstuffing, como a falha técnica mais comum. Uma prótese espessa demais alonga o rádio proximal, sobrecarrega o capítulo e pode produzir dor, rigidez e desgaste articular.\n\nO dimensionamento procura reproduzir a anatomia, não simplesmente preencher o espaço observado. Com o lateral lesionado, a distância entre capítulo e corte do colo pode parecer aumentada e levar a uma prótese alta. A fonte orienta usar as referências da radioulnar proximal e comparar com o lado oposto quando necessário.\n\nNa revisão sistemática de próteses que falharam citada no resumo, o afrouxamento asséptico foi o motivo mais comum de revisão. Esse dado não contradiz o excesso de altura como principal **erro técnico**: os denominadores e as perguntas são diferentes. Desgaste, dor e rigidez também podem ser consequências de diferentes mecanismos.\n\n**Na Biblioteca, leia “A prótese e o excesso de altura”, incluindo o parágrafo sobre as revisões.** A comparação evita responder a uma pergunta de técnica com a frequência de causas de revisão de uma série específica.\n\n**Por que esta questão foi criada.** Separa o erro técnico de dimensionamento dos motivos de revisão, duas formulações próximas que levam a respostas diferentes.",
+      "correta": "**B: excesso de altura.** É o erro técnico destacado. A cabeça protética alta demais altera a relação radiocapitelar e pode gerar sobrecarga, dor e perda de movimento.\n\nO objetivo não é usar uma prótese deliberadamente baixa, mas recuperar a altura anatômica. Uma radiografia sem sinal evidente também não exclui excesso pequeno, pois a fonte descreve baixa sensibilidade para alterações menores.",
+      "incorretas": {
+        "A": "**Desgaste tardio é um resultado possível, não o erro técnico nomeado.** Pode ocorrer por sobrecarga de uma prótese alta, mas também tem outras relações com o estado da cartilagem. A opção troca uma consequência evolutiva pelo problema de dimensionamento que a pergunta solicita.",
+        "C": "**Afrouxamento asséptico foi o motivo mais comum de revisão na série resumida.** Isso não o torna a resposta à falha técnica mais comum descrita. É necessário manter separados o erro de altura e a distribuição de diagnósticos entre implantes que precisaram ser revisados.",
+        "D": "**Desalinhamento da haste não é apontado como principal erro técnico nessa comparação.** O resumo concentra a prevenção no diâmetro e, sobretudo, na altura excessiva. A existência de outro problema possível do implante não muda a falha predominante perguntada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-3e116d65",
+          "fratura-da-cabeca-do-radio-c4d889b2",
+          "fratura-da-cabeca-do-radio-c6ab590d"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "901571b47ee561e031ba3a17c34eea58e077648deb92636669bb81a93fa53905"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1418": {
+    "questaoSha256": "bcd0f6adb5c461093b2e3d9766167ce479e2a616bd67b95e2f80409ecea82782",
+    "comentarioAnteriorSha256": "bb6fe1f918c609e3922d4393d41f10225897288e78c2a258294ff45d0e47c99e",
+    "comentario": {
+      "conceito": "**A cabeça radial nativa é elíptica, enquanto a prótese axissimétrica tem diâmetro único.** Para escolher esse diâmetro, o resumo orienta usar o **menor eixo da cabeça nativa**, evitando selecionar um componente grande demais a partir do maior eixo.\n\nOs fragmentos retirados podem ser reconstruídos na mesa para medir. Na dúvida entre dois tamanhos, a fonte favorece o menor em diâmetro e espessura. Isso não autoriza subdimensionar indiscriminadamente; é uma orientação para evitar excesso ao reproduzir uma anatomia que não é circular.\n\nDiâmetro e altura são medidas diferentes. A altura tem referência na articulação radioulnar proximal, com a prótese cerca de 2 mm abaixo da ponta do coronoide. A distância aparente entre capítulo e corte do colo não deve ser usada como régua, porque o lateral roto pode deixar o espaço aberto.\n\nUma escolha grande ou alta pode dificultar a relação articular e favorecer dor e rigidez. **Leia “A prótese e o excesso de altura”, na Biblioteca, observando separadamente as frases sobre diâmetro e altura.** Essa separação é o ponto central da pergunta.\n\n**Por que esta questão foi criada.** Treina a adaptação da anatomia elíptica a um implante de diâmetro único e evita confundir largura com altura da reconstrução.",
+      "correta": "**B: diâmetro menor da cabeça.** É a medida usada para adaptar uma cabeça elíptica a um componente de diâmetro único. Usar o maior eixo levaria a uma prótese maior que a referência descrita.\n\nA seleção ainda precisa conferir altura e relação articular. Acertar o diâmetro não evita, sozinho, o overstuffing por espessura excessiva.",
+      "incorretas": {
+        "A": "**A altura não determina o diâmetro.** Ela participa do comprimento da reconstrução e tem referências próprias. A pergunta pede qual eixo da cabeça nativa orienta a dimensão transversal de uma prótese axissimétrica.",
+        "C": "**O maior diâmetro superestima a referência indicada.** A forma elíptica significa que os eixos não são iguais; escolher pelo maior pode deixar o componente largo demais. A fonte recomenda o menor eixo, sem presumir que a cabeça original seja um círculo.",
+        "D": "**O intervalo entre capítulo e colo pode estar artificialmente aberto pela lesão lateral.** Usá-lo como referência pode produzir dimensionamento excessivo. Além disso, esse espaço não é o menor diâmetro da cabeça nativa solicitado no enunciado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-c4d889b2",
+          "fratura-da-cabeca-do-radio-3e116d65"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "29e91f7087e7009695c52008a2402522484e86e3e6d56ef1c663e9575d68eefa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1419": {
+    "questaoSha256": "415c7b7d1b9d1e55b8006501859ad290c71197450e12f935359b2b411946f1db",
+    "comentarioAnteriorSha256": "3a718a963eced427bc2532432474fe916b21c21778510e31c8ad8b44c8a1796e",
+    "comentario": {
+      "conceito": "**Essex-Lopresti compromete o antebraço longitudinalmente.** A combinação é fratura da cabeça radial, ruptura da membrana interóssea e lesão da **articulação radioulnar distal**. O rádio perde contenções que limitam sua migração proximal, e o problema do cotovelo passa a ter repercussão no punho.\n\nPor isso, dor no punho e na radioulnar distal deve ser procurada em toda fratura da cabeça radial. O paciente pode concentrar a queixa no cotovelo, deixando a instabilidade distal sem reconhecimento. A reconstrução tardia é mais difícil e muitas vezes insatisfatória.\n\nO tratamento agudo procura fixar ou substituir a cabeça e estabilizar a relação distal quando necessário. Ressecar a cabeça sem repor o apoio é especialmente inadequado quando as demais contenções longitudinais estão lesionadas.\n\n**Na Biblioteca, leia “Lesão de Essex-Lopresti”.** A seção explica por que a terceira estrutura está no punho e como uma queixa distal muda a avaliação de uma fratura proximal.\n\n**Por que esta questão foi criada.** Reforça a conexão entre fratura proximal e lesão distal, para que o punho não fique fora do exame de uma cabeça radial fraturada.",
+      "correta": "**D: articulação radioulnar distal.** Ela completa a definição com cabeça radial e membrana interóssea. A falha não é apenas local no cotovelo: envolve o sistema de estabilidade do antebraço.\n\nÉ essa extensão distal que justifica examinar o punho e não tratar automaticamente a cabeça radial como lesão isolada.",
+      "incorretas": {
+        "A": "**A cápsula anterior pode estar lesada em traumas do cotovelo, mas não é a terceira estrutura da definição.** Substituir a radioulnar distal pela cápsula retira justamente a extensão ao punho que caracteriza a instabilidade longitudinal.",
+        "B": "**A origem do lateral pertence à contenção do cotovelo.** Sua lesão tem importância na luxação e na tríade, mas não substitui a falha distal de Essex-Lopresti. A opção mistura um problema rotatório local com o sistema longitudinal perguntado.",
+        "C": "**A faceta anteromedial é uma região óssea do coronoide.** Sua fratura se associa ao padrão posteromedial em varo, não completa a definição de Essex-Lopresti. Localizar a estrutura evita confundir instabilidade rotatória do cotovelo com migração longitudinal do rádio."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio; Instabilidade rotatória posteromedial em varo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-8dbbe2b9",
+          "fratura-da-cabeca-do-radio-a6880686",
+          "fratura-da-cabeca-do-radio-510692ed",
+          "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "a97515291930d7ef2932bd617f399b92d92a26328e22f2e394ec1c8db0759d03"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1420": {
+    "questaoSha256": "db55559a2deb8b188435df8ab15269bcc3ba4a5cf0d2bc62b695ace7296e0587",
+    "comentarioAnteriorSha256": "5b79d1f1f942cdf843833ebdc1e29342fc38fe8178ee9e82f8b0dd537715f4a2",
+    "comentario": {
+      "conceito": "**O'Driscoll classifica o coronoide pelo local, que sugere o mecanismo.** O tipo I envolve a ponta; o tipo II, a faceta anteromedial; o tipo III, a base. A localização não deve ser confundida com a classificação de Regan-Morrey, centrada na altura do fragmento.\n\nNo tipo II, os subtipos avançam pela região anteromedial: **II.1** envolve a borda; **II.2**, borda e ponta; **II.3**, borda e tubérculo sublime, com ou sem ponta. A menção ao tubérculo sublime é, portanto, a informação decisiva.\n\nEssa extensão tem consequência funcional. O feixe anterior do colateral medial se insere no tubérculo sublime; comprometê-lo pode acrescentar instabilidade em valgo ao problema em varo da faceta anteromedial. Não basta olhar apenas quantos milímetros de osso se soltaram.\n\n**Leia “O'Driscoll: o lugar, e o lugar diz o mecanismo”, na Biblioteca, e compare com “O lado medial”.** A inserção ligamentar dá sentido clínico ao subtipo em vez de deixá-lo como uma lista numérica.\n\n**Por que esta questão foi criada.** Treina o subtipo definido pelo tubérculo sublime e relaciona a localização do fragmento à inserção do estabilizador medial.",
+      "correta": "**C: II.3.** É a fratura anteromedial que inclui o tubérculo sublime, com ou sem a ponta. A presença ou ausência da ponta não altera esse dado-chave quando o tubérculo está envolvido.\n\nA classificação ajuda a antecipar o comprometimento da inserção medial e a necessidade de restaurar o suporte da borda.",
+      "incorretas": {
+        "A": "**II.1 é apenas a borda anteromedial.** Não descreve a extensão ao tubérculo sublime exigida. A opção acerta o grupo anatômico II, mas fica aquém da região incluída no enunciado.",
+        "B": "**II.2 combina borda e ponta.** A presença da ponta não é o critério que define a opção pedida: o dado decisivo é incluir o tubérculo sublime. Confundir ponta com tubérculo troca estruturas diferentes do coronoide.",
+        "D": "**III.1 pertence à base, com corpo e base do coronoide.** O enunciado descreve uma fratura da faceta anteromedial com extensão específica, que continua sendo do grupo II. Tamanho ou complexidade não permitem mudar automaticamente para tipo III."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fraturas do coronoide; Quem segura o cotovelo; Instabilidade rotatória posteromedial em varo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fraturas do coronoide",
+          "Quem segura o cotovelo",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "fraturas-do-coronoide-261ac45a",
+          "fraturas-do-coronoide-7e8453cb",
+          "fraturas-do-coronoide-67ec539b",
+          "quem-segura-o-cotovelo-2b1e3945",
+          "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "392faaa4facdc7094834987b15873800bb9b2ac68f93212218567d284a458d27"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1421": {
+    "questaoSha256": "6e9ce8ab92352030823065c0ff17b075ed321b83f6a4282ef2547753a3bf946a",
+    "comentarioAnteriorSha256": "43547d4d83633028d6aec94303a12a80d6b84ba57264548ebc1ac87e5f88f331",
+    "comentario": {
+      "conceito": "**A tríade terrível reúne luxação, cabeça radial fraturada e coronoide fraturado.** O padrão rotatório posterolateral pode cisalhar a ponta do coronoide e lesar a cabeça radial, além de comprometer o lateral. Por isso, uma fratura da ponta do tipo I de O'Driscoll se associa tipicamente a esse conjunto.\n\nA classificação por local ajuda a separar histórias: ponta sugere tríade; faceta anteromedial sugere instabilidade posteromedial em varo; base pode acompanhar fratura-luxação de ulna proximal. Essas associações orientam a busca por lesões adicionais, sem que uma imagem isolada prove todo o mecanismo.\n\nNa tríade, a cabeça radial deve ser fixada ou substituída conforme o padrão. Retirá-la sem repor apoio pode agravar uma articulação que já perdeu outras contenções. O coronoide e os ligamentos também precisam de avaliação; tratar apenas a cabeça não resolve automaticamente o conjunto.\n\n**Na Biblioteca, compare a classificação de O'Driscoll com a definição de “Tríade terrível”.** A pergunta sobre associação óssea é resolvida pelo conjunto de lesões, e não por trocar ponta, faceta e base como se fossem equivalentes.\n\n**Por que esta questão foi criada.** Usa a localização da fratura do coronoide para antecipar a lesão associada e diferenciar tríade, padrão anteromedial e fratura-luxação da ulna proximal.",
+      "correta": "**B: cabeça radial.** Ela é o outro componente ósseo da tríade, que inclui também luxação e fratura do coronoide. A lesão da ponta está de acordo com o padrão posterolateral descrito.\n\nA associação pede procurar e tratar as várias contenções comprometidas, não considerar a ponta uma fratura isolada sem relevância para estabilidade.",
+      "incorretas": {
+        "A": "**O olécrano participa de outros padrões de fratura-luxação da ulna proximal.** Na classificação do resumo, a base do coronoide se aproxima dessas lesões. O componente ósseo que completa a tríade perguntada é a cabeça radial.",
+        "C": "**A diáfise radial não integra a definição da tríade terrível.** Ela pode participar de outras lesões do antebraço, mas não substitui a cabeça radial no conjunto de luxação e fratura do coronoide. O nível da fratura importa para distinguir os padrões.",
+        "D": "**A faceta anteromedial é outra região do próprio coronoide.** Sua fratura se liga ao mecanismo posteromedial em varo. A pergunta procura o outro osso fraturado na tríade, não um segundo nome para o local do fragmento coronoide."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível; Fraturas do coronoide."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Tríade terrível",
+          "Fraturas do coronoide"
+        ],
+        "blocos": [
+          "triade-terrivel-2c2c5123",
+          "triade-terrivel-1483748a",
+          "triade-terrivel-7f75b022",
+          "fraturas-do-coronoide-7e8453cb",
+          "fraturas-do-coronoide-261ac45a",
+          "fraturas-do-coronoide-67ec539b"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "c2413a6f784056c54aee3eb4cd596e6c7cb11f672675b0645a7683a209e3ca1c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1422": {
+    "questaoSha256": "eac0dfdeb7b8f3611afcb83e1216cb42b00743010a3d6d8f8008f2cff2ae27be",
+    "comentarioAnteriorSha256": "b960bba151a87af098aad4f684b132bfc0fbe32e147b9aca0307727987e69cd4",
+    "comentario": {
+      "conceito": "**A reconstrução da tríade segue uma sequência de contenções, de dentro para fora.** Quando o coronoide pode ser tratado pela via lateral, o roteiro começa por ele, segue para a cabeça radial e depois para o complexo lateral. Após testar, o medial é reparado se a instabilidade persistir.\n\nO coronoide oferece apoio ósseo; a cabeça radial deve ser fixada ou substituída para restaurar a radiocapitelar; o lateral, frequentemente avulsionado de sua origem, precisa ser reinserido anatomicamente. A ordem não serve apenas para enumerar lesões: organiza a exposição e a avaliação progressiva da estabilidade.\n\nNos fragmentos pequenos e cominutivos da ponta, o reparo pode envolver sutura da cápsula anterior. Fragmentos maiores admitem fixação apropriada, e pontas muito pequenas podem, em casos selecionados, ficar sem reparo se as demais contenções deixam o cotovelo firme. Isso não autoriza omitir qualquer coronoide, especialmente quando o fragmento é relevante para a estabilidade.\n\n**Leia “A ordem da cirurgia” na seção de tríade da Biblioteca.** A condição do enunciado, acesso lateral possível ao coronoide, é parte do roteiro e ajuda a entender por que a questão pede a sequência inicial.\n\n**Por que esta questão foi criada.** Treina a sequência inicial de reconstrução, preparando a distinção entre reparar o lateral e decidir condicionalmente pelo medial.",
+      "correta": "**A: coronoide, cabeça radial e lateral.** É a sequência inicial descrita. Depois dela, o cotovelo é testado em diferentes rotações e o medial é abordado se necessário.\n\nO objetivo é uma articulação congruente e estável. A sequência não dispensa adaptar a fixação ao padrão dos fragmentos nem verificar se a reconstrução realmente manteve a redução.",
+      "incorretas": {
+        "B": "**O lateral ficou na posição esperada, mas os componentes ósseos foram invertidos.** No roteiro delimitado, trata-se primeiro o coronoide pela via lateral e depois a cabeça. Incluir as mesmas estruturas não torna qualquer ordem equivalente à técnica perguntada.",
+        "C": "**Começar pelo lateral antecipa a contenção ligamentar às etapas ósseas do roteiro.** A fonte descreve coronoide e cabeça antes do reparo lateral. A opção muda tanto o início quanto a posição do coronoide na sequência de dentro para fora.",
+        "D": "**O coronoide está em primeiro, mas o lateral foi colocado antes da cabeça radial.** O apoio radiocapitelar é restaurado antes da etapa lateral na ordem descrita. A alternativa acerta o ponto de partida e altera a continuação solicitada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Tríade terrível"
+        ],
+        "blocos": [
+          "triade-terrivel-fc91076c",
+          "triade-terrivel-7f75b022",
+          "triade-terrivel-fe3d9fe4",
+          "triade-terrivel-ccad4df0",
+          "triade-terrivel-499f49dc"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "c57e0074d7540aa11a6b7c6f29bf9a7bee485986a73e603be6fe1b0bd6d1395c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1423": {
+    "questaoSha256": "4a3c3eac81a981f3af5c892a1f6af39ad9b85bba4c7da8a99309994e03a99f40",
+    "comentarioAnteriorSha256": "b355b58d238926b416652b0ec68298173de8127bff543bcae7e40656fb4fbf17",
+    "comentario": {
+      "conceito": "**Tratar uma tríade sem cirurgia é uma seleção de estabilidade, não apenas de tamanho da fratura.** O resumo exige quatro condições conjuntas: cabeça radial sem bloqueio, coronoide pequeno, redução **concêntrica** e arco estável até 30 graus de flexão. O enunciado pede uma dessas condições articulares.\n\nRedução concêntrica significa que as superfícies recuperaram relação adequada. Uma articulação que continua subluxada não oferece a mesma condição para movimento protegido. Da mesma forma, fragmento interposto, irredutibilidade e instabilidade residual mudam a conduta.\n\nA maioria das tríades é operada porque a combinação de perdas ósseas e ligamentares impede manter congruência com mobilização precoce. Quando os critérios conservadores são preenchidos, ainda são necessários proteção inicial, acompanhamento próximo e radiografias seriadas. Uma redução obtida num único instante não prova que permanecerá estável durante toda a recuperação.\n\n**Na Biblioteca, leia “Quando não operar” e confira os quatro itens em conjunto.** A palavra “pré-requisito” não deve levar a escolher apenas um critério favorável e ignorar os restantes.\n\n**Por que esta questão foi criada.** Treina a seleção excepcional de tratamento conservador e evita transformar um único achado favorável em autorização para ignorar o conjunto.",
+      "correta": "**A: redução concêntrica.** É um pré-requisito, mas não suficiente sozinho. Também é necessário excluir bloqueio pela cabeça, avaliar o tamanho do coronoide e confirmar um arco estável.\n\nA escolha conservadora depende de manter essas condições sob seguimento. Se a articulação perde congruência, a decisão precisa ser revista.",
+      "incorretas": {
+        "B": "**Luxação irredutível significa que não se obteve a relação articular necessária.** Ela não atende ao requisito de redução concêntrica e pode indicar bloqueio ou outra lesão que demande cirurgia. Não é um achado favorável à seleção conservadora.",
+        "C": "**Interposição intra-articular pode impedir redução ou movimento.** O resumo a coloca entre os problemas que favorecem cirurgia. A alternativa descreve um obstáculo mecânico, enquanto o tratamento conservador exige congruência e ausência de bloqueio relevante.",
+        "D": "**Instabilidade no arco protegido contraria a condição de manter a redução durante o movimento seguro.** Proteger não significa aceitar que a articulação continue escapando. O plano conservador pressupõe estabilidade demonstrada, não apenas a intenção de evitar movimentos de risco."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Tríade terrível"
+        ],
+        "blocos": [
+          "triade-terrivel-3aa3a498",
+          "triade-terrivel-81deb5b7",
+          "triade-terrivel-77a22b13",
+          "triade-terrivel-a91fc422",
+          "triade-terrivel-735f104a",
+          "triade-terrivel-a4db2fcf"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "4afb9709ea56f454ac5e18de20b6b2dff8d2252e36eb5dd94182fb5eec59f941"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1424": {
+    "questaoSha256": "bed577dda4a96ecd2e547462493eaf3f3ddc6914ad904ca1b3ca26b4ee65dc2c",
+    "comentarioAnteriorSha256": "6193ce6f6f10efe279adce2a74f5ff7b706f874ed570d1de26099fbf05828665",
+    "comentario": {
+      "conceito": "**O coronoide precisa de técnicas diferentes conforme o local e a função do fragmento.** Uma ponta pequena e cominutiva da tríade pode não aceitar uma fixação óssea robusta. Quando exige reparo, o resumo descreve **sutura da cápsula anterior por túneis ulnares** para recuperar a contenção relacionada a esse fragmento.\n\nA faceta anteromedial é outro problema. Ela forma um apoio que recebe compressão em varo; quando precisa de fixação, o capítulo descreve **placa de suporte**, porque a borda precisa resistir ao colapso. Uma sutura não oferece a mesma sustentação desse apoio ósseo.\n\nA escolha não é determinada apenas pela palavra “cominutiva”. Uma ponta e uma borda anteromedial podem ter tamanhos pequenos, mas carregam funções mecânicas diferentes. O enunciado já informa que ambas precisam de tratamento, evitando a discussão de pontas muito pequenas que podem ser deixadas sem reparo se o conjunto ficar estável.\n\n**Leia o item do coronoide em “A ordem da cirurgia” da tríade e depois “Tratamento” da lesão posteromedial, na Biblioteca.** A comparação explica por que a técnica muda entre ponta e faceta.\n\n**Por que esta questão foi criada.** Compara duas fraturas do mesmo processo ósseo que exigem soluções diferentes, evitando escolher o método só pelo tamanho aparente.",
+      "correta": "**C: sutura e placa.** A sutura capsular atende ao padrão de ponta pequena e cominutiva que precisa de reparo; a placa sustenta a faceta anteromedial que precisa de fixação.\n\nA resposta relaciona o implante à tarefa biomecânica. Não é uma regra de que todo coronoide pequeno recebe a mesma técnica.",
+      "incorretas": {
+        "A": "**A placa na faceta está correta, mas não é a solução descrita para a pequena ponta cominutiva.** Nessa situação, a cápsula anterior pode ser reparada por sutura através da ulna. A alternativa trata dois padrões distintos como se ambos tivessem um fragmento apto à mesma fixação.",
+        "B": "**Os métodos foram invertidos.** A borda anteromedial precisa de suporte contra colapso em varo, enquanto a ponta pequena pode ser tratada pelo reparo capsular. Trocar as técnicas perde a relação entre estrutura e função.",
+        "D": "**A sutura para a ponta está correta, mas não substitui a placa de suporte da faceta que exige fixação.** A contenção capsular não oferece o mesmo apoio à borda óssea comprimida em varo. Acertar a primeira lesão não resolve a segunda."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível; Instabilidade rotatória posteromedial em varo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Tríade terrível",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "triade-terrivel-fc91076c",
+          "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+          "instabilidade-rotatoria-posteromedial-em-varo-df0d6f45",
+          "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "c267ec247cdaa57a84ae3a071d010e5a06cebb826778ea415eeece6cee9af1b3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1425": {
+    "questaoSha256": "aa38586852b0ecdabafebb1afbc7cc25d6f26176e9606b3ef831b17e76bec12a",
+    "comentarioAnteriorSha256": "645160de99f4c980402b7ab76468bda6ca25f83b03ef4ed3bd23a8b40250660a",
+    "comentario": {
+      "conceito": "**O medial não é uma etapa obrigatória apenas porque a lesão se chama tríade terrível.** O roteiro reconstrói coronoide, cabeça radial e complexo lateral e então testa a estabilidade em pronação, neutro e supinação. A indicação de reparar o medial depende da **instabilidade residual**.\n\nCada etapa recupera uma parte das contenções. O coronoide fornece apoio, a cabeça mantém a função radiocapitelar e o lateral controla varo e rotação posterolateral. Depois de restaurá-los, o exame deve mostrar se o conjunto ainda precisa da abordagem medial.\n\nCominuição da cabeça, fragmento da ponta e avulsão lateral descrevem elementos importantes da lesão, mas não substituem esse teste final. A decisão usa o comportamento da articulação reconstruída, não apenas a lista de diagnósticos observada antes da cirurgia.\n\nSe a instabilidade continua mesmo após o reparo necessário das contenções, o capítulo considera suporte adicional. **Na Biblioteca, leia os itens finais de “A ordem da cirurgia”.** As expressões “testar de novo” e “só se continuar instável” evitam transformar uma sequência condicional numa operação idêntica para todos.\n\n**Por que esta questão foi criada.** Treina a etapa condicional da reconstrução, distinguindo a lesão inicial do teste de estabilidade após reparar as contenções.",
+      "correta": "**D: instabilidade residual do cotovelo.** É o resultado do teste após as etapas já descritas que justifica avançar para o medial. A articulação precisa manter congruência no arco avaliado.\n\nSe o conjunto já está estável, reparar o medial de rotina não decorre automaticamente do nome tríade. Se continua instável, a sequência deve prosseguir de modo dirigido.",
+      "incorretas": {
+        "A": "**Cominuição radial influencia fixação ou prótese, mas não decide sozinha pelo medial.** A pergunta já parte da cabeça reconstruída. É necessário testar o resultado global após essa etapa, em vez de usar o padrão inicial de fragmentação como substituto da estabilidade obtida.",
+        "B": "**O fragmento da ponta influencia o tratamento do coronoide.** Depois de o apoio ter sido abordado, sua presença histórica não prova que o medial ainda precise de reparo. O comportamento residual da articulação é o critério solicitado.",
+        "C": "**A avulsão lateral explica por que o lateral foi reparado.** Ela é frequente na tríade, mas não obriga automaticamente a abordar também o lado medial. A fonte intercala o teste de estabilidade justamente para decidir se essa ampliação é necessária."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Tríade terrível."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Tríade terrível"
+        ],
+        "blocos": [
+          "triade-terrivel-ccad4df0",
+          "triade-terrivel-499f49dc",
+          "triade-terrivel-886bacd0",
+          "triade-terrivel-fc91076c",
+          "triade-terrivel-7f75b022",
+          "triade-terrivel-fe3d9fe4"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "37b7b85a0d8112f90178a5185ca6cba4b3e4d92ca6c66262633406c9704906c0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1426": {
+    "questaoSha256": "51aff883baa894d60e8638c45118ee560efe64fda8428024890e303580e99ee7",
+    "comentarioAnteriorSha256": "cbfb28603977870d74714f1c8e6f3da3b3c8555d1ae324e2e768c904e85d9506",
+    "comentario": {
+      "conceito": "**A reconstrução 3D mostra o foco na região anteromedial da ulna proximal, junto ao apoio da tróclea.** A irregularidade e o fragmento nessa borda orientam a leitura para a **faceta anteromedial do coronoide**. O dado a localizar não é apenas a altura de osso perdido, mas qual parte do apoio articular está comprometida.\n\nNa classificação de O'Driscoll, faceta anteromedial corresponde ao **tipo II** e se associa à instabilidade rotatória **posteromedial em varo**. O mecanismo combina varo, pronação e carga axial, com compressão da tróclea sobre essa faceta. O padrão frequentemente inclui lesão do lateral, mas a imagem óssea isolada não mostra diretamente a integridade de cada ligamento.\n\nTipo I designa a ponta e se aproxima do padrão de tríade terrível; tipo III designa a base, associado a lesões da ulna proximal. Essas categorias não são intercambiáveis nem equivalem a aplicar um percentual da classificação de Regan-Morrey.\n\nA tomografia 3D ajuda a reconhecer o fragmento, avaliar congruência e planejar o tratamento. Se a borda precisa de fixação, a função de suporte contra varo favorece placa de suporte, não apenas sutura capsular.\n\n**Na Biblioteca, leia “O'Driscoll: o lugar, e o lugar diz o mecanismo” e depois a seção posteromedial.** Compare a localização da imagem com a classificação antes de escolher o nome da instabilidade.\n\n**Por que esta questão foi criada.** Exige localizar a fratura numa reconstrução real antes de associar o tipo de O’Driscoll ao padrão de instabilidade.",
+      "correta": "**C: tipo II e instabilidade posteromedial.** A faceta anteromedial identificada na reconstrução é a localização que define o grupo II. A associação mecânica é o padrão em varo, não a tríade posterolateral.\n\nNão é necessário inventar um subtipo ou afirmar ruptura ligamentar diretamente visível na tomografia para resolver a questão. O enunciado pede o grupo e sua associação típica.",
+      "incorretas": {
+        "A": "**Tipo I é ponta, não a faceta anteromedial destacada.** A opção também emparelha essa categoria com a associação posteromedial, enquanto o tipo I se aproxima da tríade. Ela troca a localização classificatória e não conserva a correspondência habitual da fonte.",
+        "B": "**O par tipo I e posterolateral é coerente para outra localização, a ponta na tríade.** Entretanto, o foco desta imagem é a borda anteromedial, que define tipo II. Um par teórico correto não responde à imagem se o fragmento foi localizado no lugar errado.",
+        "D": "**Tipo II está correto, mas a instabilidade foi trocada para posterolateral.** O padrão anteromedial se associa a varo e pronação, com instabilidade posteromedial. A tríade posterolateral envolve outra combinação, frequentemente com fratura da cabeça radial e da ponta do coronoide."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fraturas do coronoide; Instabilidade rotatória posteromedial em varo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fraturas do coronoide",
+          "Instabilidade rotatória posteromedial em varo"
+        ],
+        "blocos": [
+          "fraturas-do-coronoide-261ac45a",
+          "fraturas-do-coronoide-7e8453cb",
+          "fraturas-do-coronoide-67ec539b",
+          "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+          "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+          "instabilidade-rotatoria-posteromedial-em-varo-28c9d117"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "7afbee2e1c5bdfb8867320bcc0cfcee40fda72892d7bc6e392b61488bc24d8a4"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1426-1.jpeg"
+    ]
+  }
+}

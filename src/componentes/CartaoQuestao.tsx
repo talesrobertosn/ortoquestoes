@@ -23,6 +23,7 @@ import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
+import { FonteComentario } from './FonteComentario'
 import { semEco } from './ecoAlternativa'
 import { permutarQuestao } from '../dados/provaNacional'
 import '../estilos/paginas/CartaoQuestao.css'
@@ -418,10 +419,10 @@ function CartaoQuestaoExibida({
           </div>
         )}
 
-        {questao.simulado && questao.prova && DESCRICAO_PROVA[questao.prova] && (
-          <p className="meta qz-descricao-prova">{inspiracao
-            ? <>{ROTULO_SIMULADOS} <strong>{inspiracao.charAt(0).toLowerCase() + inspiracao.slice(1)}</strong> ({DESCRICAO_PROVA[questao.prova]}): mesma pergunta e mesmo ano, reescrita pelo site.</>
-            : <>{ROTULO_SIMULADOS} no padrão do <strong>{questao.prova}</strong>, o {DESCRICAO_PROVA[questao.prova]}.</>}</p>
+        {/* Questão inspirada numa prova específica: sem esta linha no topo (pedido do Tales, 22/10/2026);
+            a etiqueta já mostra a inspiração e a nota do pé explica o que é o OrtoQuestões Simulados. */}
+        {questao.simulado && questao.prova && DESCRICAO_PROVA[questao.prova] && !inspiracao && (
+          <p className="meta qz-descricao-prova">{ROTULO_SIMULADOS} no padrão do <strong>{questao.prova}</strong>, o {DESCRICAO_PROVA[questao.prova]}.</p>
         )}
 
         <div className="questao__enunciado"><TextoEmLinha texto={questao.enunciado} /></div>
@@ -570,8 +571,12 @@ function CartaoQuestaoExibida({
           <>
             <Resultado questao={questao} resposta={resposta!} agora={respondeuAgora} nome={nome} />
             {turma && <p className="alt-turma-resumo"><Icone nome="grupo" tamanho={15} /> {turma.porLetra
-              ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : resposta!.correta === true && turma.acertoPrimeira <= 40 ? '; você acertou uma que a maioria erra' : ''}.</>
+              ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : ''}.</>
               : <>A porcentagem da turma em cada alternativa aparece a partir de 3 pessoas{turma.respondentes ? ` (até agora, ${pessoas(turma.respondentes)})` : ''}.</>}</p>}
+            {/* Acerto raro ganha destaque e o nome da pessoa; o nome só aparece em mensagem positiva (Tales, 21/10/2026). */}
+            {turma?.porLetra && resposta!.correta === true && turma.acertoPrimeira <= 40 && (
+              <p className="alt-turma-elogio" role="status"><Icone nome="estrela" tamanho={18} /><span><strong>{nome ? `${nome}, parabéns` : 'Parabéns'}</strong>, você acertou uma que a maioria erra.</span></p>
+            )}
           </>
         )}
 
@@ -586,7 +591,7 @@ function CartaoQuestaoExibida({
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} />
-            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} />
+            <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} baseResumo={comentarioIA?.baseResumo} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
@@ -672,7 +677,7 @@ function CartaoQuestaoExibida({
         {/* Discreto, no pé da questão: a etiqueta no topo já identifica o simulado. */}
         {questao.simulado && (
           <p className="meta qz-nota-simulado">
-            <strong>{ROTULO_SIMULADOS}</strong>: questão autoral do site, feita por engenharia reversa do padrão
+            <strong>{ROTULO_SIMULADOS}</strong>: feita por engenharia reversa do padrão
             {questao.prova ? ` da prova ${questao.prova}${DESCRICAO_PROVA[questao.prova] ? ` (${DESCRICAO_PROVA[questao.prova]})` : ''}` : ' das provas anteriores'} a partir da bibliografia de referência,
             para o aprendizado. Não é questão oficial de prova nem foi elaborada, revisada ou endossada por instituição organizadora.
           </p>
@@ -862,6 +867,8 @@ function ComentarioDaIA({
 
       {comentario && (
         <>
+          <FonteComentario base={comentario.baseResumo} />
+
           {comentario.alerta && (
             <p className="aviso-ia aviso-ia--gabarito">
               <strong>Atenção ao gabarito desta questão.</strong> {comentario.alerta}

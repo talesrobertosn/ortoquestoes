@@ -44,15 +44,44 @@
     "conferido": false
   },
   "pe-tornozelo-0006": {
+    "conceito": "Ao abrir o intervalo entre o tibial anterior e o extensor longo do hálux, o objetivo é criar uma janela sem deixar o feixe neurovascular atravessado no campo. Pela descrição do resumo, **tibial anterior vai para medial; artéria tibial anterior e nervo fibular profundo vão para lateral, junto com o extensor longo do hálux**.\n\nÉ preciso separar essa anatomia do gabarito. A banca marcou **C**, que acerta o deslocamento lateral, mas cita o extensor longo dos **dedos**. O capítulo consultado descreve o extensor longo do **hálux** como o tendão levado lateralmente com o feixe. Não há opção que reproduza integralmente essa formulação, e a diferença não deve ser apagada para defender a letra oficial (Rockwood, 10ª ed., cap. 64, “Via anterior direta”).\n\n**O plano explica a direção.** No nível articular, o feixe fica logo medial ao extensor longo do hálux. Levá-los juntos para lateral e afastar o tibial anterior para medial abre a cápsula entre os grupos. Antes dessa dissecção profunda, o fibular superficial cruza o campo no subcutâneo e também precisa ser identificado.\n\nA via anterior direta permite ver as regiões medial, central e lateral do plafond. Isso é diferente da via anterolateral, na qual extensores e feixe são levados para medial. O nome da via e o intervalo do enunciado precisam vir antes da direção decorada.\n\n> **Na prova:** C é a letra oficial; para a anatomia do acesso descrito no resumo, memorize feixe lateral com o extensor longo do hálux.",
+    "correta": "**C: lateralmente com o tendão extensor longo dos dedos (gabarito oficial).** A direção lateral corresponde à fonte, mas o tendão nomeado diverge: o resumo leva o feixe junto com o extensor longo do hálux. Preserva-se a letra da banca sem ensinar os dois tendões como se fossem equivalentes.",
     "incorretas": {
-      "A": "O tibial anterior é o tendão mais medial, e o feixe não é afastado junto com ele.",
-      "B": "O feixe fica do lado de fora do plano de dissecção, e não do lado do tibial anterior.",
-      "D": "O extensor longo dos dedos fica do lado de fora e não é afastado para dentro."
+      "A": "**O sentido do feixe coincide, mas o tendão pertence ao outro lado da janela.** O tibial anterior é afastado medialmente. Não acompanha o feixe para lateral na descrição da via anterior direta.",
+      "B": "**Desloca corretamente o tibial anterior e leva o feixe para o lado errado.** O tendão vai para medial, porém artéria tibial anterior e fibular profundo seguem lateralmente com o extensor longo do hálux. Confundir os dois grupos fecharia o intervalo que se pretende abrir.",
+      "D": "**A direção não corresponde à via do enunciado.** O feixe vai para lateral na anterior direta. Levar extensores e feixe para medial é uma descrição encontrada na anterolateral, que é outra janela; também não resolve a troca entre extensor longo do hálux e dos dedos."
     },
-    "conceito": "Na frente do tornozelo, passam quatro tendões que estendem o pé e os dedos. Da parte de dentro (medial) para a de fora (lateral), eles são:\n\n**Tibial anterior**, o mais grosso e o mais medial.\n\n**Extensor longo do hálux**, que estende o dedão.\n\n**Extensor longo dos dedos**, que estende os outros dedos.\n\n**Fibular terceiro**, o mais lateral, nem sempre presente.\n\nJunto a eles passa o **feixe neurovascular** da frente do tornozelo: a **artéria tibial anterior** (que depois vira a artéria dorsal do pé, aquela cujo pulso se sente no peito do pé) e o **nervo fibular profundo**. No nível da articulação, o feixe corre por baixo, entre o extensor longo do hálux e o extensor longo dos dedos.\n\nO acesso anterior ao tornozelo, usado em próteses e em fraturas do pilão tibial, passa **entre o tibial anterior e o extensor longo do hálux**. Nesse caminho, o feixe neurovascular fica do lado de **fora** do plano de dissecção. Por isso, ele é afastado **lateralmente**, junto com os tendões extensores que ficam desse lado, incluindo o **extensor longo dos dedos**.\n\nDois cuidados nesse acesso: abrir o mínimo possível a bainha do tibial anterior, para não deixar o tendão exposto se a ferida abrir, e proteger um ramo do nervo fibular superficial que passa logo abaixo da pele.\n\nSe o acesso for feito entre o extensor longo do hálux e o extensor longo dos dedos, o feixe fica do outro lado e é afastado para dentro, com o extensor do hálux.",
-    "correta": "Lateralmente com o tendão extensor longo dos dedos. No acesso entre o tibial anterior e o extensor do hálux, o feixe fica do lado de fora e é afastado junto com os extensores laterais.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Vias de acesso."
+    ],
+    "conferido": false,
+    "alerta": "Gabarito oficial C preservado. Na via anterior direta entre tibial anterior e extensor longo do hálux, o resumo do Rockwood, 10ª ed., cap. 64 descreve o feixe afastado para lateral junto com o extensor longo do hálux; a alternativa C cita o extensor longo dos dedos. A direção é compatível, mas nenhuma opção reproduz integralmente o tendão descrito na fonte.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-64-pilao-tibial",
+          "titulo": "Fratura do pilão tibial",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+          "secoes": [
+            "Vias de acesso"
+          ],
+          "blocos": [
+            "vias-de-acesso-8622a325",
+            "vias-de-acesso-82856abe",
+            "vias-de-acesso-756b9cec"
+          ],
+          "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+          "trechosSha256": "a5f8f9a9d6b4a130c87b9c88b779bad8ca98a4a99c1bbb1412a1fe35387f98b1"
+        }
+      ],
+      "questaoSha256": "ce0f85c3b097bf551749103f5a07a889550e191634c4d9ed4632ef4e77f96cda",
+      "comentarioSha256": "8acc83aa7edc77b4463c72167a84826e6965a4a2586efb4e43de4034c6aae663"
+    }
   },
   "pe-tornozelo-0007": {
     "incorretas": {
@@ -660,15 +689,44 @@
     "conferido": false
   },
   "pe-tornozelo-0060": {
+    "conceito": "O enunciado pede o **plano profundo**, não o local da incisão na pele. Na via posterolateral do tornozelo, a janela profunda fica entre os **tendões fibulares e o flexor longo do hálux**, alternativa C.\n\nA incisão é feita entre a borda posterior da fíbula e a borda lateral do tendão calcâneo. Nessa etapa superficial, o nervo sural merece atenção. Depois se abre o septo intermuscular e se desenvolve outro plano: os fibulares são afastados para lateral e o flexor longo do hálux para medial, permitindo alcançar a face posterior da tíbia (Rockwood, 10ª ed., cap. 64, “Via posterolateral”).\n\n**A mesma operação tem referências diferentes em profundidades diferentes.** O tendão calcâneo ajuda a localizar o corte, mas não substitui o flexor longo do hálux na janela profunda. O flexor longo dos dedos pertence ao compartimento posterior profundo e à região do túnel do tarso, sem formar com os fibulares o intervalo descrito.\n\nEssa via é útil quando o maléolo posterior está separado da diáfise e pode permitir fixar a fíbula pela mesma incisão. Tem limites: depois de reduzido o fragmento, a superfície articular deixa de ficar visível, e a conferência depende das corticais e da radioscopia; fragmentos mediais também são difíceis de alcançar.\n\n> **Na prova:** pele entre fíbula e calcâneo; profundo entre fibulares e flexor longo do hálux.",
+    "correta": "**C: tendões fibulares e flexor longo do hálux.** Os fibulares vão para lateral e o flexor longo do hálux para medial, abrindo a janela posterior. Esse é o plano que o enunciado especifica.",
     "incorretas": {
-      "A": "Entre o tendão de Aquiles e os fibulares fica o plano superficial, onde o cuidado é com o nervo sural.",
-      "B": "O intervalo entre o tendão de Aquiles e o flexor longo do hálux não é o plano profundo desse acesso.",
-      "D": "O flexor longo dos dedos fica mais para dentro, junto ao feixe tibial posterior, e não forma o intervalo com os fibulares."
+      "A": "**Usa os marcos superficiais para responder sobre profundidade.** O calcâneo e a região posterior da fíbula orientam a incisão. Depois, a dissecção profunda exige separar os fibulares do flexor longo do hálux.",
+      "B": "**Conserva um dos tendões, mas não a janela descrita.** O flexor longo do hálux é parte do plano profundo, porém seu limite lateral nessa via são os fibulares. O tendão calcâneo continua sendo uma referência superficial posterior.",
+      "D": "**Troca o flexor que delimita a via.** O flexor longo dos dedos faz parte do compartimento posterior profundo, mas o intervalo com os fibulares é desenvolvido ao lado do flexor longo do hálux. Nomes próximos não significam trajetos cirúrgicos intercambiáveis."
     },
-    "conceito": "O **acesso posterolateral do tornozelo** é usado para fixar fraturas do **maléolo posterior** (a parte de trás da tíbia), para chegar à fíbula por trás e em algumas artrodeses. A pele é cortada entre a borda de fora do **tendão de Aquiles** e a borda de trás da **fíbula**.\n\nA dissecção tem dois planos:\n\n**Plano superficial**: entre o **tendão de Aquiles** e os **tendões fibulares**. Aqui os cuidados são com o **nervo sural** e a veia safena parva, que passam logo abaixo da pele.\n\n**Plano profundo**: entre os **tendões fibulares** (do lado de fora) e o **flexor longo do hálux** (do lado de dentro). O flexor longo do hálux é afastado para dentro e, com isso, **protege o feixe neurovascular tibial posterior** (artéria, veias e nervo tibial), que fica logo atrás dele.\n\nUma dica para reconhecer o flexor longo do hálux: ele é o músculo da parte de trás da perna cujo **ventre muscular desce mais**, aparecendo quase até a articulação do tornozelo.\n\nExiste também o acesso **posteromedial**, do lado de dentro, usado para fragmentos do maléolo posterior que ficam mais para dentro.",
-    "correta": "Os tendões fibulares e o tendão flexor longo do hálux. É o intervalo profundo do acesso, e o flexor longo do hálux, afastado para dentro, protege o feixe tibial posterior.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Vias de acesso; Anatomia aplicada: o plafond e seus fragmentos."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-64-pilao-tibial",
+          "titulo": "Fratura do pilão tibial",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+          "secoes": [
+            "Vias de acesso",
+            "Anatomia aplicada: o plafond e seus fragmentos"
+          ],
+          "blocos": [
+            "vias-de-acesso-c9c75f39",
+            "anatomia-aplicada-o-plafond-e-seus-fragmentos-8b0c9e60",
+            "anatomia-aplicada-o-plafond-e-seus-fragmentos-8eb1074d"
+          ],
+          "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+          "trechosSha256": "64a2ab1bbe461bbdf2b5875b05908e7d70df952ea5091dd3b0b5b0c55b8b3681"
+        }
+      ],
+      "questaoSha256": "2e3a689cd4ec70cc00daea75240e224fe2814dc4183ecaf82498bc8dc802fe87",
+      "comentarioSha256": "c4f33f0bc96c1ffc5822d8d320ce60e95b71205b94e385f0fc0db39f0e199fba"
+    }
   },
   "pe-tornozelo-0061": {
     "conceito": "### A lógica do pé cavo na Charcot-Marie-Tooth\n- Neuropatia hereditária sensitivo-motora, com fraqueza **distal** e progressiva.\n- A deformidade se explica pelos músculos que a doença **poupa**, e não pelos que ela atinge.\n\n| Enfraquecem primeiro | Continuam fortes |\n|---|---|\n| tibial anterior | ==tibial posterior== |\n| fibular curto | ==fibular longo== |\n| intrínsecos do pé | tríceps sural (por mais tempo) |\n\n### Cada deformidade tem seu músculo\n- **Fibular longo** forte contra **tibial anterior** fraco: plantiflexão do 1º raio, a ==depressão da cabeça do 1º metatarso==.\n- **Tibial posterior** forte contra **fibular curto** fraco: ==inversão do retropé== (varo).\n- **Intrínsecos** fracos: dedos em garra.\n- O 1º raio flexionado também empurra o retropé para varo (tripé): é o que o **teste de Coleman** avalia.\n\n### Como a cirurgia usa essa lógica\n- **Transferência do fibular longo para o fibular curto:** tira a força que baixa o 1º raio e devolve a eversão.\n- Liberação da fáscia plantar, osteotomia de dorsiflexão do 1º metatarso e osteotomia do calcâneo, conforme a rigidez.\n\n> **Na prova:** CMT = ==tibial posterior e fibular longo== fortes, tibial anterior e fibular curto fracos.",
@@ -3306,20 +3364,45 @@
     "conferido": false
   },
   "pe-tornozelo-0334": {
-    "conceito": "**Fratura do pilão tibial e artrose pós-traumática.** A fratura do pilão (ou do plafond tibial) é a fratura da superfície articular de carga da tíbia distal, produzida por **compressão axial**: o tálus é impactado contra a tíbia como um martelo. É diferente da fratura maleolar, que é rotacional.\n\n**Por que a artrose é tão frequente.** O dano não é só a incongruência articular, mas a **lesão condral no momento do impacto**: condrócitos morrem e a matriz se rompe, independentemente da qualidade da redução. Por isso, mesmo com redução anatômica, parte dos tornozelos evolui para artrose.\n\n**Quando a artrose aparece.** Estudos de seguimento, como o de Marsh e colaboradores, mostraram que a artrose radiográfica do pilão se instala **cedo, em geral nos dois primeiros anos**, e depois tende a se estabilizar. Muitos pacientes, mesmo com artrose radiográfica, mantêm função razoável e não necessitam de artrodese.\n\n**Fatores de pior prognóstico.**\n- Alta energia e cominuição articular (AO 43-C3, Rüedi-Allgöwer III).\n- Lesão grave de partes moles.\n- Redução articular imperfeita.\n- Infecção e complicações da ferida.\n\n**Estratégia de tratamento.** Para respeitar as partes moles, usa-se o protocolo **estagiado**: fixador externo transarticular e fixação da fíbula na urgência; fixação definitiva da tíbia após 10 a 21 dias, quando as partes moles permitem (sinal do enrugamento da pele). A artrodese do tornozelo é a solução para a artrose sintomática.\n\n| Classificação de Rüedi-Allgöwer | Descrição |\n|---|---|\n| I | Sem desvio articular |\n| II | Desvio articular sem cominuição |\n| III | Cominuição e impacção articular |\n\n> Artrose do pilão é precoce: costuma aparecer nos dois primeiros anos.",
-    "correta": "**A: nos dois primeiros anos (resposta pela bibliografia).** A artrose pós-traumática do pilão decorre principalmente do dano condral do impacto e da incongruência residual, e se manifesta radiograficamente cedo, em geral nos primeiros dois anos.",
+    "conceito": "A resposta provável é **nos dois primeiros anos**, alternativa A, com base na série de Rüedi descrita pelo resumo. Não há gabarito oficial registrado, e o intervalo não deve ser anunciado como uma regra cronológica para todo paciente.\n\nA cartilagem pode ter sido lesada pela carga axial e pela impacção no momento da fratura. Mesmo que o cirurgião recupere uma superfície anatômica, o dano celular inicial pode evoluir para artrose. É por isso que uma boa radiografia de redução não garante ausência de dor ou de degeneração futura (Rockwood, 10ª ed., cap. 64, “Resultados e artrose pós-traumática”).\n\nNa série apresentada, a artrose se manifesta em um a dois anos, com sintomas precoces nos pacientes acometidos. O capítulo reúne outros estudos com seguimento mais longo e trajetórias diferentes; esses dados não devem ser condensados numa única data universal.\n\n**Também não confunda início de sintomas com decisão por cirurgia.** A passagem que menciona tolerar dor por vários anos antes de procurar uma operação de salvamento fala de outro evento. O paciente pode ter artrose sintomática há tempo e só mais tarde precisar de artrodese ou discutir prótese. A intensidade da limitação e a radiografia também não são medidas equivalentes.\n\n> **Na prova:** para o intervalo apresentado por Rüedi, marque os dois primeiros anos; mantenha clara a ausência de resposta oficial.\n",
+    "correta": "**A: nos dois primeiros anos.** É a manifestação descrita na série que sustenta a resposta bibliográfica. Mantida como provável, sem atribuição de gabarito oficial à banca.",
     "incorretas": {
-      "B": "**Entre o terceiro e o quarto ano** é posterior ao período em que a maioria das alterações degenerativas já se instalou; a artrose tende a estar estabelecida antes disso.",
-      "C": "**Entre o quarto e o quinto ano** não corresponde ao padrão descrito; nessa fase a artrose, quando ocorre, já costuma estar presente e estável.",
-      "D": "**Após o quinto ano** descreveria artrose tardia, como a de fraturas maleolares com pequena incongruência. No pilão, o dano condral do impacto antecipa o processo."
+      "B": "**Desloca a manifestação para depois do intervalo citado.** O terceiro e quarto anos não são o início típico descrito por Rüedi no resumo. A existência de seguimento posterior não altera o momento relatado de aparecimento dos sintomas.",
+      "C": "**Usa uma faixa tardia como se fosse o início.** A doença pode continuar sintomática no quarto ou quinto ano, mas a referência aponta manifestação em um a dois. Persistência e aparecimento não são o mesmo desfecho.",
+      "D": "**Mistura a cronologia da artrose com a busca de cirurgia.** Esperar anos até pedir uma operação por dor não significa que a artrose só tenha surgido depois do quinto ano. A resposta da questão se apoia na manifestação mais precoce da série citada."
     },
     "referencias": [
-      "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., vol.2, p. 2234",
-      "Marsh JL, Weigel DP, Dirschl DR. Tibial plafond fractures. How do these ankles function over time? J Bone Joint Surg Am. 2003;85(2):287-295."
+      "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Resultados e artrose pós-traumática."
     ],
+    "conferido": false,
     "provavel": "A",
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável A, com base na manifestação em um a dois anos da série de Rüedi apresentada no resumo 64. O dado não é um prazo universal nem o tempo até cirurgia por artrose.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-64-pilao-tibial",
+          "titulo": "Fratura do pilão tibial",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+          "secoes": [
+            "Resultados e artrose pós-traumática"
+          ],
+          "blocos": [
+            "resultados-e-artrose-pos-traumatica-62c34c34",
+            "resultados-e-artrose-pos-traumatica-0dd7d9b0",
+            "resultados-e-artrose-pos-traumatica-119ba320"
+          ],
+          "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+          "trechosSha256": "aef23b76455c64aae4d42da71d78ba20461d83c99772febc777ac1aef533b5c5"
+        }
+      ],
+      "questaoSha256": "54746ca734372b590f43cc1cc040be7e795c58c08738572aeb752b2517e4462f",
+      "comentarioSha256": "52444be799f04ce9d29068f1b50d59f63b453b68e16383d7ca54296059299548"
+    }
   },
   "pe-tornozelo-0335": {
     "conceito": "**Classificação de Lauge-Hansen e o traço da fíbula.** Lauge-Hansen reproduziu fraturas do tornozelo em cadáveres e as nomeou por duas palavras: a **posição do pé** no momento do trauma (supinação ou pronação) e a **direção da força** aplicada ao tálus (rotação externa, adução, abdução). A posição do pé define qual lado está tenso e rompe primeiro; a força define o traço.\n\n**Os quatro tipos e o traço da fíbula.**\n\n| Tipo | Primeira lesão | Traço da fíbula |\n|---|---|---|\n| Supinação-rotação externa (o mais comum) | Ligamento tibiofibular anterior | Espiral, de anteroinferior a posterossuperior, na sindesmose |\n| Supinação-adução | Ligamentos laterais ou fratura transversa baixa da fíbula | Transverso, abaixo da sindesmose |\n| Pronação-rotação externa | Medial (deltoide ou maléolo) | Espiral alta, acima da sindesmose |\n| **Pronação-abdução** | Medial | **Transverso ou oblíquo curto com cominuição lateral**, logo acima da sindesmose |\n\n**Por que a pronação-abdução cominui a fíbula.** Com o pé pronado, o lado medial é o primeiro a romper. Em seguida, os ligamentos da sindesmose falham. Por fim, o tálus empurrado em abdução **dobra a fíbula** como uma viga: a face medial falha em tensão e a face lateral, comprimida, se fragmenta, criando **cominuição lateral** ou fragmento em borboleta, cerca de 5 a 7 cm acima da articulação ou na sindesmose.\n\n**Implicações no tratamento.** A cominuição exige fixação em ponte, com placa de neutralização bem moldada, restaurando comprimento e rotação da fíbula; avaliar sempre a sindesmose, frequentemente lesada nas fraturas por pronação.\n\n> Fíbula com cominuição lateral e traço transverso logo acima da sindesmose: pronação-abdução.",
@@ -3658,18 +3741,44 @@
     "conferido": false
   },
   "pe-tornozelo-0357": {
-    "conceito": "**A fratura por estresse do navicular.** É uma das fraturas por estresse de **alto risco**: costuma ter diagnóstico tardio, consolida mal e tende a evoluir para pseudartrose. Acomete atletas de corrida e salto (basquete, atletismo).\n\n**Por que o navicular sofre.** O navicular é a pedra angular do arco longitudinal medial, comprimido entre a cabeça do tálus e os cuneiformes. As forças de impulsão se concentram no seu **terço central**, que recebe a carga do tálus e dos cuneiformes medial e intermédio.\n\n**A zona de baixa irrigação.** O navicular é irrigado por vasos que entram pelas extremidades medial e lateral. O **terço central** é uma zona **relativamente avascular**, exatamente onde a carga é maior. Isso explica a dificuldade de consolidação.\n\n**O traço.** A fratura começa na **cortical dorsal** do terço central e progride em direção plantar, com orientação **sagital**: o traço é vertical, de dorsal para plantar, dividindo o osso em fragmentos medial e lateral.\n\n**O diagnóstico.**\n- Dor vaga no **dorso do médio-pé**, que piora com a atividade; dor à palpação no **\"ponto N\"** (no dorso do navicular).\n- **Radiografias** frequentemente **normais**, porque o traço é fino e oblíquo em relação ao feixe.\n- A **tomografia** define o traço (completo ou incompleto) e o desvio; a **ressonância** detecta precocemente o edema.\n\n**O tratamento.**\n- Fratura **incompleta** sem desvio: **imobilização sem carga** por 6 a 8 semanas (a carga precoce aumenta muito a falha).\n- Fratura **completa**, desviada, pseudartrose ou atleta de alto nível: **fixação com parafusos**, com ou sem enxerto.",
-    "correta": "**Resposta provável: Certo.** A fratura por estresse do navicular começa na cortical dorsal do terço central e tem traço com orientação **sagital**, dividindo o osso em fragmentos medial e lateral, na zona de menor irrigação.",
+    "conceito": "A afirmativa está de acordo com a localização típica descrita: a fratura por estresse do navicular ocorre predominantemente no **plano sagital**, no **terço central da cortical dorsal**. O centro reúne irrigação pobre e maior cisalhamento durante flexão plantar com pronação, o que ajuda a explicar o risco de consolidação difícil.\n\nA dor pode ser vaga no mediopé e a radiografia inicial negativa. A TC define extensão e consolidação, e a melhora dos sintomas sozinha não basta para liberar retorno em uma lesão de alto risco (resumo do Rockwood, 10ª ed., cap. 24, “Navicular”).\n\nNão há gabarito oficial registrado no acervo; **A é a resposta provável pela bibliografia**. A palavra “usualmente” é adequada: descreve o padrão predominante, sem afirmar que todo traço precisa ter a mesma orientação. Consulte a seção do navicular no resumo da Biblioteca.",
+    "correta": "**A: Certo.** O plano sagital é a orientação predominante descrita no terço central dorsal do navicular. A afirmação coincide com o resumo; a resposta permanece bibliográfica provável porque não há gabarito oficial registrado.",
     "incorretas": {
-      "B": "**Errado** contrariaria a descrição clássica do traço. A orientação sagital, no terço central pouco vascularizado, é justamente o que torna essa fratura de alto risco e de difícil visualização na radiografia."
+      "B": "**Negaria a orientação predominante descrita.** O capítulo situa a maioria das lesões no plano sagital. A existência de outros padrões não invalida a expressão “usualmente”, que não exige universalidade."
     },
     "referencias": [
-      "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, p. 2099.",
-      "Coughlin MJ, Saltzman CL, Anderson RB. Mann's Surgery of the Foot and Ankle, 9ª edição"
+      "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: O pé: navicular, quinto metatarso e a fratura de marcha. Sem atribuição de páginas impressas não consultadas."
     ],
     "provavel": "A",
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-24-fraturas-estresse",
+          "titulo": "Fraturas por estresse",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 24 · Stress Fractures",
+          "secoes": [
+            "O pé: navicular, quinto metatarso e a fratura de marcha"
+          ],
+          "blocos": [
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-d2970fc5",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5c9b98ed",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-5aa6fd95",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-2918d567",
+            "o-pe-navicular-quinto-metatarso-e-a-fratura-de-m-ea51c132"
+          ],
+          "sha256": "c4ff5c3d35388ea9063076739e6c2e3ed465301d7e8cf7b19651ddb6e9288d12",
+          "trechosSha256": "3c5ef269ab2d89039285017cafc4b327ecf2859adff3f0a1dfcab6a089d68869"
+        }
+      ],
+      "questaoSha256": "ebdb7117d040363cb9457a0310538e1a666ea0d492207788566aa48db8ed917f",
+      "comentarioSha256": "f50616e31a4c0f91c77d23e15ac23e415b3e96b39ddb3324740ac49d6bdec100"
+    }
   },
   "pe-tornozelo-0358": {
     "incorretas": {

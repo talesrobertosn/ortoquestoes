@@ -406,7 +406,7 @@ Embora os relatos antigos não citassem complicações neurovasculares, o capít
 
 !questoes central=trauma-0267 relacionadas=trauma-1064 treino=pediatria-1030
 conceito: Rigidez é esperada qualquer que seja o tratamento; o nervo ulnar é o mais acometido pela fratura (16% de lesão neurológica pré-operatória em adolescentes, sobretudo ulnar) e o mais em risco na cirurgia.
-como: Uma prova sem ano (TEOT/TARO) perguntou a complicação neurológica mais comum do tratamento cirúrgico da fratura do úmero distal: neuropatia ulnar, contra mediano, musculocutâneo e interósseo posterior. O TARO 2022 perguntou quando a transposição anterior do ulnar estaria indicada de rotina após fixação com placas.
+como: Uma prova sem ano (Ortopedia) perguntou a complicação neurológica mais comum do tratamento cirúrgico da fratura do úmero distal: neuropatia ulnar, contra mediano, musculocutâneo e interósseo posterior. O TARO 2022 perguntou quando a transposição anterior do ulnar estaria indicada de rotina após fixação com placas.
 armadilha: Parada do crescimento como complicação esperada: a fratura em T acontece no fim do crescimento, e o capítulo diz que ela não tem sido importante.
 armadilha: Nervo radial: corre risco na exposição proximal da coluna lateral, mas o predominante é o ulnar.
 alerta: A questão do TARO 2022 (trauma-1064) não tem gabarito oficial divulgado. O capítulo 14 não indica a transposição de rotina: manda considerá-la quando o nervo fica instável na flexo-extensão ou quando há risco de impacto do material, o que não corresponde exatamente a nenhuma das alternativas (neuropraxia prévia, placa medial, fratura da tróclea e do capítulo, placas paralelas).

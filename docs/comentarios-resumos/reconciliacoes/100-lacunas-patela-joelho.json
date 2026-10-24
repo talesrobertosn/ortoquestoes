@@ -1,0 +1,60 @@
+{
+  "base": "2154ccf3c6d5e81c52cbdbc48a1c5dea8d5d52e4",
+  "criterio": "Confronto individual com corpo independente dos resumos 60 e 61. Questões, comentários e gabaritos preservados; não contam como revisão.",
+  "resumosSha256": {
+    "rockwood10-60-patela-mecanismo-extensor": "1b84fb2ed3d35a393d69c86d195d2d10649bb774a4c5f3a44f96c38a92e4ae1b",
+    "rockwood10-61-luxacao-joelho": "99db856e986d29032e4080778c149b41ba8fd1a2f0b492b80ff99ddfa865c659"
+  },
+  "questoes": {
+    "joelho-0214": {
+      "questaoSha256": "c7d01db2d0202b8a16c0efa3d80b4b5a44431b6a0526a8b0c808915a9015a433",
+      "pendencia": "O resumo 60 dá compressão patelofemoral de 3 a 7 vezes o peso em agachar/subir escadas, mas não especifica 3,5 vezes na descida. Falta fonte que diferencie tarefa, força e momento, e permita escolher entre 2,5/3,5/4,5/5,5; não deduzir um número exato de uma faixa nem converter força em momento.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0279": {
+      "questaoSha256": "95f559be821dae3c8ab28a2e5791c9cd54cbd24fa317032e01ec756a3a0221db",
+      "pendencia": "Sem gabarito oficial. O resumo 60 explica maior exigência de torque nos últimos 15 graus e vantagem da patela de 45 graus à extensão. Isso não determina a faixa de torque máximo produzido pelo quadríceps entre 60–45, 45–30, 30–15 ou 15–0. Falta a curva de capacidade muscular sob condições definidas; demanda de torque não equivale a torque máximo disponível.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0218": {
+      "questaoSha256": "4a44f8bf7f815b6f067be8072dd7121682de931b347772ae151b073a2529aa5c",
+      "pendencia": "O corpo do resumo 60 associa ruptura quadricipital a idade acima de 40 e bilateralidade a doença sistêmica/obesidade. Não compara homens e mulheres nos casos bilaterais. Falta evidência independente da distribuição por sexo para decidir entre homens e mulheres acima/abaixo do corte.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0254": {
+      "questaoSha256": "c57cf828ec96a0b6ad3f42bf41fccc4415c86fa54636637d231491bfd5dc334c",
+      "pendencia": "O resumo 60 descreve reforço com retalho triangular de espessura parcial, mas não identifica esse procedimento como SCUDERI no corpo independente. O nome aparece apenas no bloco contextual. Falta fonte primária do epônimo para diferenciá-lo de semitendíneo, grácil e alongamento em Z sem circularidade.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0030": {
+      "questaoSha256": "2f9a995c4615077c2c40c168f8c84c04ada42a340b4fa5733d1c84853ad69052",
+      "pendencia": "O resumo 60 identifica CODIVILLA como V invertido de espessura total para alongamento, e ECKER como reconstrução patelar com semitendíneo/grácil, mas não descreve MANDELBAUM nem identifica SCUDERI no corpo. Falta fonte para análise própria e segura desses dois epônimos; não preencher alternativas a partir dos comentários antigos.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0239": {
+      "questaoSha256": "d8d704ae0420eea3c2be0fe83854b5b7c9eae77e79c686d35832c3e19e0d9fa9",
+      "pendencia": "Sem gabarito oficial. O resumo 60 orienta conduta pelo extensor e fixação do componente, mas não define qual classificação torna a fratura periprotética tipo III. Faltam definição do tipo, estabilidade do componente, função extensora e estoque ósseo para escolher troca versus retirada com osteossíntese ou imobilização. Não deduzir esses dados só do desvio.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0280": {
+      "questaoSha256": "ce524e585df0791bf73899b612a712eccc2a7978297f92851b53249d34f6f73b",
+      "pendencia": "Sem gabarito oficial. O resumo 60 descreve sutura transóssea proximal e reforço protetor, e admite semitendíneo como reforço, sem demonstrar que a melhor opção seja sem reforço biológico em comparação aos flexores. Falta indicação comparativa entre ausência de reforço e cada enxerto; preservar resposta bibliográfica existente sem promover uma escolha ambígua a revisão concluída.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0033": {
+      "questaoSha256": "c8160cbf9697ffc5894f822e2ec4f688e41302921dc6421a0ce75aef9ff0dec8",
+      "pendencia": "O resumo 60 identifica LPFM como principal restritor do deslocamento lateral, mas não elege fator mais importante de recidiva frente ao sulco troclear, forma patelar e trofismo do VMO. Falta comparação de risco de recorrência; principal restritor biomecânico não equivale a maior fator prognóstico.",
+      "estado": "pendente-fonte"
+    },
+    "joelho-0219": {
+      "questaoSha256": "c731a37f0f5949cb3d3a4d7a4b738b19cd0805fc611d595575ada87d3bffda98",
+      "pendencia": "O resumo 60 cita displasia troclear, patela alta e TT-TG aumentado como predisponentes e LPFM como principal restritor lateral, sem hierarquizar recidiva entre LPFM, tróclea e trofismo dos vastos. Falta fonte independente da comparação exigida pelo superlativo; preservar D oficial sem ensinar que a hierarquia foi provada pelo resumo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1123": {
+      "questaoSha256": "ccf63548d36c57fb328df03274f37cc0159fbc7f0427892884f584df00db0d09",
+      "pendencia": "Sem gabarito oficial. O enunciado informa ausência persistente de pulso após redução, mas não temperatura/perfusão ou demais sinais duros. O resumo 61 indica exploração para membro frio e sem pulso com zona conhecida e investigação para sinais moles. Falta caracterização da perfusão ou protocolo que sustente exploração como resposta única versus imagem vascular imediata no caso incompletamente descrito. Mantido comentário e provável anteriores, sem baseResumo novo.",
+      "estado": "pendente-fonte"
+    }
+  }
+}

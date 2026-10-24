@@ -223,7 +223,7 @@ interface PropsMontagem {
   aoSalvar: (e: EdicaoAdminSN, publicou: boolean) => void
 }
 
-const PROVAS: Array<[string, string]> = [['TEOT', 'TEOT'], ['TARO', 'TARO'], ['TEOT/TARO', 'TEOT/TARO (prova conjunta)']]
+const PROVAS: Array<[string, string]> = [['TEOT', 'TEOT'], ['TARO', 'TARO'], ['Ortopedia', 'Ortopedia (origem não confirmada)']]
 const ROTULO_NIVEL = ['Sem classificação', 'Nível 1', 'Nível 2', 'Nível 3', 'Nível 4']
 
 function Montagem({ edicoes, base, mesInicial, acervo, aoVoltar, aoSalvar }: PropsMontagem) {

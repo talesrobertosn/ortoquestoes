@@ -57,6 +57,12 @@ export interface Consulta<T> {
 }
 
 /**
+ * Atualização automática do painel (pedido do Tales, 21/10/2026): a cada 5 minutos, ou na hora pelo
+ * botão Atualizar. As leituras do painel são pesadas para o banco; de 10 em 10 s elas o sobrecarregavam.
+ */
+export const CINCO_MIN = 300_000
+
+/**
  * Consulta com cache. `chave` null deixa a consulta parada (seção que ainda não precisa
  * dos dados). O `buscador` recebe o sinal de cancelamento.
  */

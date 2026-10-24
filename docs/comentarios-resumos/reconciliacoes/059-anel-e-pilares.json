@@ -1,0 +1,34 @@
+{
+  "id": "ombro-cotovelo-0401",
+  "gabaritoOficialPreservado": "C",
+  "comentarioAnteriorSha256": "97aa18cec8bee39a1cc2c3fbcd286ec851728a5c7c8363dcbae254b1e27f4b42",
+  "alertaAnterior": "A descrição original de Goss para o complexo suspensor superior do ombro NÃO inclui o ligamento coracoacromial: o componente ligamentar do anel são os ligamentos CORACOCLAVICULARES (conoide e trapezoide). Pela descrição clássica, a alternativa B (ligamento trapezoide e espinha da escápula) nomeia dois elementos legítimos do complexo (o trapezoide no anel, a espinha no pilar inferior), enquanto a alternativa C acerta apenas o terço distal da clavícula. Leia o comentário sabendo que o gabarito oficial não corresponde à descrição consagrada.",
+  "justificativa": "O alerta anterior não tinha fonte e negava o coracoacromial no anel, escolhendo B por misturar o anel com o pilar inferior. Após leitura integral do resumo 33, a lista inclui expressamente coracoacromial e clavícula lateral; a espinha participa do apoio inferior. A aula distingue essas categorias e sustenta C. Removida a alegação antiga de que o gabarito contrariaria essa fonte, sem atribuir consulta direta ao livro.",
+  "fontes": [
+    {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+        "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+        "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+        "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "6875afa5b29740efec19f908f39af0fc5c153fa33d4aff46bd6c38a1130e29fa"
+    }
+  ],
+  "revisaoMedicaAtribuida": false
+}

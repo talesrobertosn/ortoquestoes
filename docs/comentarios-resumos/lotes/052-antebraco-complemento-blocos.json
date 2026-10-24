@@ -1,0 +1,80 @@
+{
+  "pediatria-0527": {
+    "questaoSha256": "908a5c241180302de1b3d332df54547f9c5d832bc3922ff7260614d46dc1dc88",
+    "comentarioAnteriorSha256": "50aadf77297748178ca84a02a07947a64cf541aea34af154aff9ea56d5b5992a",
+    "comentario": {
+      "conceito": "**A tuberosidade bicipital é o marco proximal para avaliar a rotação do rádio; a dúvida está na referência distal.** Depois de uma fratura, o fragmento proximal pode girar independentemente do distal. Uma boa correção angular não garante que os dois segmentos estejam orientados da mesma forma.\n\nEvans usou a tuberosidade para acompanhar o fragmento proximal. No AP em supinação completa ela aponta medialmente, quase oposta à estiloide; em pronação completa, aponta lateralmente e o rádio cruza a ulna. Rang descreveu outra relação: no antebraço normal, a tuberosidade se alinha com um ponto próximo da eminência tenar. O resumo diferencia essas duas construções.\n\n| Referência | O que o resumo efetivamente descreve |\n|---|---|\n| Tuberosidade bicipital | Orientação do fragmento proximal do rádio |\n| Estiloide radial | Relação óssea de rotação descrita com a tuberosidade |\n| Eminência tenar | Referência da mão na descrição de Rang |\n| Fise proximal | Não é o marco usado para essa avaliação rotacional |\n\n**A ressalva da questão é relevante.** A banca marcou tuberosidade e tabaqueira, combinação D. Entretanto, a referência da mão explicitamente nomeada no texto de Rang é a eminência tenar, combinação B. O resumo relaciona a leitura da banca ao marco radial distal de Evans; ele não torna tabaqueira e eminência tenar estruturas equivalentes.\n\nA avaliação rotacional por radiografia tem margem de erro importante. Para deformidade consolidada com limitação funcional, o capítulo descreve tomografia comparativa dos antebraços, ponderando radiação. Não se deve transformar um alinhamento aparente de marcos em medida perfeita de torção.\n\n**Leia “A rotação pela tuberosidade bicipital”, na Biblioteca.** Compare Evans e Rang e identifique qual relação foi pedida antes de escolher uma referência da mão.",
+      "correta": "**D é o gabarito oficial preservado.** A tuberosidade está correta como referência proximal; a escolha da tabaqueira foi a leitura da banca para a referência distal. A passagem que relaciona diretamente a tuberosidade à mão, porém, cita eminência tenar, sustentando B nessa interpretação.\n\nO aprendizado principal é separar a rotação proximal da distal e reconhecer a ambiguidade de referência, sem apresentar a fise como substituto da tuberosidade.",
+      "incorretas": {
+        "A": "**A eminência tenar tem apoio na descrição de Rang, mas a fise proximal não é o marco rotacional apresentado.** Uma placa de crescimento não fornece a mesma referência de orientação que a tuberosidade. A alternativa combina uma referência distal pertinente com uma proximal inadequada ao método.",
+        "B": "**É a combinação explicitamente descrita por Rang no resumo.** Tuberosidade bicipital e ponto próximo da eminência tenar podem ser relacionados no membro normal. Embora não seja a letra oficial, não é correto descartá-la como uma relação anatômica falsa; ela demonstra a ambiguidade da redação.",
+        "C": "**Mantém a referência distal escolhida pela banca, mas troca o marco proximal pela fise.** O método descrito acompanha a tuberosidade e sua mudança de medial para lateral entre supinação e pronação. Substituí-la pela fise não resolve a avaliação da torção do fragmento proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: O exame: rotação, nervos e lesões associadas."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D preservado. O resumo descreve a relação óssea tuberosidade/estiloide em Evans e a relação tuberosidade/eminência tenar em Rang. A alternativa B tem apoio explícito nessa segunda descrição; não se deve ensinar que ela é anatomicamente errada para defender a letra da banca."
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "O exame: rotação, nervos e lesões associadas"
+        ],
+        "blocos": [
+          "o-exame-rotacao-nervos-e-lesoes-associadas-f257c585",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-84d5b7b1",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-aca507f4",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-3388e1b8",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-48408c84",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-cf804c28"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "9a8c24c60d8b79c9d5db7d3ae1c32f657dd05da8e1859130b5dd7d7a1261befd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0584": {
+    "questaoSha256": "c62594a5eda4b82b00065bdb596f3095f58b56421fd607c2b3b1ccf1923951f5",
+    "comentarioAnteriorSha256": "4322933afccbdf88770602185feb566d6c2fdbc1e09982586747202ad2d6ce0e",
+    "comentario": {
+      "conceito": "**A manobra de Blount para a ulna isolada combina força em valgo no foco e pressão do polegar no fragmento distal, como descrito no resumo da cobrança.** A dificuldade vem do osso que não fraturou: ele mantém a relação de comprimento do conjunto e pode impedir que as pontas do outro se reencontrem com uma tração simples.\n\nNa técnica apresentada, o osso íntegro funciona como uma alavanca. Primeiro se busca restabelecer o comprimento; depois, forças transversais permitem realinhar as extremidades. A indicação é uma fratura completa de um osso só, e não toda deformidade em galho verde. Não se deve misturar o nome da manobra com a regra de pronação/supinação de cada ápice.\n\n**Antes de chamar a lesão de isolada, examine a cabeça do rádio.** Uma fratura ulnar por golpe direto pode realmente não ter lesão radioulnar, mas a associação com luxação da cabeça radial muda o diagnóstico para Monteggia. Uma boa correção da diáfise não substitui conferir essa relação articular.\n\n**Leia “Fratura de um osso só: cassetete, Blount e a Monteggia perdida”, na Biblioteca.** Compare o papel do osso íntegro na redução com o cuidado de excluir uma lesão articular associada.",
+      "correta": "**B: valgo e pressão sobre o fragmento distal.** É o par apresentado para a manobra de Blount na ulna. A força se integra à alavanca do osso íntegro para recuperar comprimento e alinhamento; não é uma instrução genérica de torcer toda fratura ulnar em valgo.",
+      "incorretas": {
+        "A": "**Mantém o fragmento distal e troca valgo por varo.** O lado de aplicação da força é parte da técnica descrita. Reconhecer o segmento pressionado não corrige uma direção transversal oposta à apresentada no resumo.",
+        "C": "**Troca tanto o sentido da força como o segmento indicado.** A descrição usa valgo e pressão no distal, após organizar a recuperação de comprimento. A alternativa não reproduz essa sequência de controle das extremidades.",
+        "D": "**Acerta valgo e desloca a pressão para o fragmento proximal.** O detalhe do fragmento é justamente o segundo elemento cobrado. A finalidade de realinhar as pontas não permite considerar intercambiáveis os locais de pressão da manobra descrita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida"
+        ],
+        "blocos": [
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-99c4cd6c",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-c0d1d07e",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-350e1be3"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "e69d5ea551d66ed5acb844b4c2f3d3ff8d7a9dff92a44ba0da10c72cb700bbb7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

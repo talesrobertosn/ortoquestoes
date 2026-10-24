@@ -14,6 +14,7 @@ import { AdminRelatorioMensal } from '../componentes/admin/AdminRelatorioMensal'
 import { AdminEmails } from '../componentes/admin/AdminEmails'
 import { AdminCartas } from '../componentes/admin/AdminCartas'
 import { AdminTodasCartas } from '../componentes/admin/AdminTodasCartas'
+import { GuiaEmails } from '../componentes/admin/GuiaEmails'
 import { AdminSimulados } from '../componentes/admin/AdminSimulados'
 import { SECOES, abaPadrao, definicaoDe, lerUrl, secaoDe, urlAntiga, urlDe, type Aba, type EstadoUrl, type Secao } from '../componentes/admin/secoes'
 import { AdminUsuarios, estaOnline, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
@@ -28,7 +29,7 @@ import { contaDeTeste } from '../componentes/admin/contasTeste'
 import { meioDe, precoDe } from '../componentes/admin/receita'
 import { real } from '../dados/planos'
 import { usarLidos } from '../componentes/admin/lidos'
-import { usarRpc } from '../componentes/admin/usarRpc'
+import { CINCO_MIN, usarRpc } from '../componentes/admin/usarRpc'
 import { usarContadoresAdmin } from '../componentes/admin/contadores'
 import {
   STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
@@ -94,15 +95,15 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
   const conta = sessao?.user.id
   const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
   const eventosQ = usarRpc<LinhaEvento[]>(conta, 'listar_eventos_pagamento_admin')
-  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin', {}, { atualizarCada: aba === 'agora' ? 20_000 : undefined })
+  const resumoQ = usarRpc<Resumo[]>(conta, 'resumo_admin', {}, { atualizarCada: aba === 'agora' ? CINCO_MIN : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
   // Sem a RPC leve (parte 22 ainda não colada), o número de contas sai da própria lista.
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    // Agora, Pessoas › Usuários, Crescimento e Cartas mostram a lista; Assinaturas, Pagamentos e Avisos usam para abrir a ficha.
-    ativo: ['agora', 'usuarios', 'crescimento', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
+    // Agora, Pessoas › Usuários, Crescimento e Enviar e-mails (cartas) mostram a lista; Assinaturas, Pagamentos e Avisos usam para abrir a ficha.
+    ativo: ['agora', 'usuarios', 'crescimento', 'lembretes', 'assinaturas', 'cobrancas', 'pagamentos'].includes(aba) || semContadores,
     // "Ao vivo" em Agora e em Pessoas › Usuários, com a aba do navegador visível.
-    atualizarCada: aba === 'usuarios' || aba === 'agora' ? 15_000 : undefined,
+    atualizarCada: aba === 'usuarios' || aba === 'agora' ? CINCO_MIN : undefined,
     prazoMs: 20_000,
   })
   // Cobranças gravadas no banco (parte 23): Financeiro e Cobranças leem da mesma consulta. Sem a RPC, tudo pelo preço dos planos.
@@ -268,8 +269,7 @@ export function AdminAssinaturas({ consulta }: { consulta: URLSearchParams }) {
           {aba === 'opinioes' && <AdminOpinioesFlashcards />}
           {aba === 'simulados' && <AdminSimulados />}
 
-          {aba === 'lembretes' && <><AdminLembretes /><AdminRelatorioMensal /><AdminEmails /></>}
-          {aba === 'cartas' && <AdminCartas usuarios={usuarios} />}
+          {aba === 'lembretes' && <><GuiaEmails /><AdminLembretes /><AdminCartas usuarios={usuarios} /><AdminRelatorioMensal /><AdminEmails /></>}
           {aba === 'todas' && <AdminTodasCartas />}
 
           {aba === 'ajustes' && <AdminConfiguracoes />}

@@ -1,0 +1,378 @@
+{
+  "trauma-1548": {
+    "questaoSha256": "01ffac5b4cf0f10a753726baf507b3623a8f5078f4dc28cec142c2f1f74544ed",
+    "comentarioAnteriorSha256": "67621cb30126840e25411922882b2bacf269fc9a40e8598268a0ac5d92873488",
+    "comentario": {
+      "conceito": "A cabeça femoral adulta depende principalmente do **ramo profundo da artéria circunflexa femoral medial**. O estudo de perfusão citado pelo capítulo atribui a ela cerca de **82%** do fluxo e à circunflexa lateral cerca de 18%. Esses percentuais pertencem ao estudo, não são uma proporção invariável em qualquer paciente.\n\nO segundo dado localiza uma região anatômica: o ramo profundo aparece posteriormente entre o quadrado femoral e o gêmeo inferior e emerge na **borda proximal do quadrado, cerca de 1,5 cm medial à crista intertrocantérica**. Depois passa à frente do tendão conjunto e penetra a cápsula; seus ramos retinaculares superiores sobem junto ao colo até a cabeça. A medida de 1,5 cm descreve essa relação, não uma distância universal de segurança para toda dissecção (resumo do Rockwood, 10ª ed., cap. 53, “Irrigação da cabeça femoral”).\n\nA importância clínica é enxergar o vaso junto às estruturas que podem ser deslocadas pelo trauma ou abordadas na cirurgia. Leia o trajeto completo no resumo da Biblioteca acompanhando o colo de posterior para proximal.\n\n**Por que esta questão foi criada.** Une a dominância vascular a um marco de trajeto cirúrgico; saber apenas o nome da artéria não esclarece onde ela está vulnerável.",
+      "correta": "**A: 82% e 1,5 cm.** O percentual é o do estudo citado; a distância é medial à crista intertrocantérica, na emergência proximal ao quadrado femoral. Preservar essa localização dá sentido ao número.",
+      "incorretas": {
+        "B": "**Acerta a contribuição de perfusão e dobra a distância.** O marco descrito é cerca de 1,5 cm medial à crista, não 3 cm. Não se deve confundir a dominância da artéria com conhecimento do seu trajeto.",
+        "C": "**Acerta a localização, mas substitui o resultado do estudo.** A fonte informa 82%, com 18% para a lateral. Dizer que a medial é dominante é correto; arredondar esse resultado para 90% não corresponde ao dado perguntado.",
+        "D": "**Modifica os dois dados.** Nem 90% reproduz o estudo de perfusão nem 3 cm reproduz o marco anatômico. O trajeto e a participação no fluxo são informações diferentes que precisam ser mantidas na mesma alternativa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Anatomia aplicada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Anatomia aplicada"
+        ],
+        "blocos": [
+          "anatomia-aplicada-a8c38522",
+          "anatomia-aplicada-666e0ba0"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "6c22430b8d126c82f9a20993ac75a58c1626e943487b757dfee266ee55f739c2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1549": {
+    "questaoSha256": "94aacae1b5acfff99584d2f394ca38c8b1bae5224e2129132d52a7e05ad87390",
+    "comentarioAnteriorSha256": "032c5cb09a1e42384d1acdbcb788f783b0be43b67928380d556bf81a3bdd3c37",
+    "comentario": {
+      "conceito": "Tração pré-operatória com rotação interna pode diminuir a perfusão da cabeça pela **circunflexa femoral medial** e prejudicar a drenagem venosa. O resumo também relata que a tração cutânea rotineira não mostrou benefício em dor ou redução; portanto, uma posição aparentemente redutora não deve ser presumida vascularmente favorável.\n\nA medial fornece os ramos retinaculares predominantes da cabeça. A circulação, porém, possui conexões: a **glútea inferior** pode compensar sua lesão por anastomose ao longo da borda inferior do piriforme. “Pode compensar” não significa garantir viabilidade depois de toda fratura desviada. A artéria do ligamento redondo também contribui, mas não sustenta sozinha a cabeça inteira (resumo do Rockwood, 10ª ed., cap. 53, “Tração pré-operatória” e “Irrigação da cabeça femoral”).\n\nDiferencie essa tração prévia mantida como rotina de uma manobra controlada de redução durante a cirurgia. O resumo da Biblioteca explica as duas situações em suas seções próprias.\n\n**Por que esta questão foi criada.** Relaciona uma intervenção pré-operatória ao fluxo ameaçado e à anastomose descrita, sem tratar circulação colateral como garantia de resgate.",
+      "correta": "**C: circunflexa medial e glútea inferior.** A primeira é o território cujo fluxo diminui na tração com rotação interna; a segunda participa da compensação anastomótica descrita junto ao piriforme.",
+      "incorretas": {
+        "A": "**Reconhece a anastomose e troca o vaso principal afetado.** A circunflexa lateral contribui para a cabeça, mas o estudo arteriográfico apresentado aponta redução de perfusão pela medial. A compensação glútea inferior não corrige essa troca.",
+        "B": "**Troca as duas artérias.** A redução de fluxo descrita envolve a circunflexa medial; a conexão compensadora nomeada é da glútea inferior. Proximidade de nomes não torna equivalentes lateral/medial ou superior/inferior.",
+        "D": "**Acerta o território ameaçado e erra a conexão específica.** O resumo localiza a anastomose da glútea inferior ao longo da borda inferior do piriforme. Não a atribui à glútea superior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Diagnóstico por imagem; Anatomia aplicada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Diagnóstico por imagem",
+          "Anatomia aplicada"
+        ],
+        "blocos": [
+          "diagnostico-por-imagem-63f9a6b1",
+          "anatomia-aplicada-a8c38522",
+          "anatomia-aplicada-666e0ba0"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "53f7f6562278c7e5eedde38a29e7ff38da3d45367075021b4808f7376d929c24"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1551": {
+    "questaoSha256": "3e097fec9f73a1c0a3076ccea0efae02adf3edac1897525eaf647f217f54824a",
+    "comentarioAnteriorSha256": "f05fe135534a1a50c98f5563042b5c62e723e18a3ce6806f6ca55917adba7abe",
+    "comentario": {
+      "conceito": "Na queda de lado, a força aplicada ao trocânter chega ao colo por um braço de alavanca. Um **eixo do quadril mais longo** aumenta esse braço; um **ângulo cervicodiafisário menor**, em direção à coxa vara, também aumenta o risco de fratura descrito pelo capítulo.\n\nO eixo do quadril é medido do trocânter, passando pelo colo, até a tábua interna da pelve. Já o ângulo cervicodiafisário compara colo e diáfise. Não são duas medidas do mesmo objeto: comprimento e inclinação modificam a geometria com que a carga atua. A resistência do osso continua importante; os parâmetros anatômicos não substituem avaliação de osteoporose e risco de quedas (resumo do Rockwood, 10ª ed., cap. 53, “Geometria do fêmur proximal” e “Quem sofre e por quê”).\n\nVisualize um colo mais horizontal sob a força da queda para compreender o par maior/menor. A anatomia aplicada do resumo da Biblioteca ajuda a ligar os números ao mecanismo.\n\n**Por que esta questão foi criada.** Cobra o sentido de duas associações geométricas, uma de comprimento e outra angular, que se confundem quando decoradas sem o braço de alavanca.",
+      "correta": "**B: eixo maior e ângulo menor.** O eixo longo amplia a alavanca, e a geometria em varo é a associação angular de maior risco descrita. São fatores de risco, não uma previsão individual de fratura.",
+      "incorretas": {
+        "A": "**Acerta o eixo longo e inverte a relação angular.** O capítulo associa maior risco ao ângulo cervicodiafisário menor. Aumentar as duas medidas não produz o par de risco apresentado.",
+        "C": "**Inverte os dois componentes.** Eixo curto não é o braço de alavanca aumentado descrito, e ângulo maior não corresponde à coxa vara. Os parâmetros não devem ser trocados apenas por ambos se referirem ao fêmur proximal.",
+        "D": "**Reconhece a associação com ângulo menor, mas encurta a alavanca.** O comprimento relacionado ao risco é maior. A parte correta sobre a inclinação não valida a direção errada do comprimento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Anatomia aplicada; Mecanismo, lesões associadas e quadro clínico; Quem sofre e por quê."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Anatomia aplicada",
+          "Mecanismo, lesões associadas e quadro clínico",
+          "Quem sofre e por quê"
+        ],
+        "blocos": [
+          "anatomia-aplicada-be6f84e8",
+          "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+          "quem-sofre-e-por-que-9a823e3c"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "5e56b3010fcd975f9692073ac402d5a3719be0b44af00084179e374d33fd0855"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1552": {
+    "questaoSha256": "4b728dc325d28acf4e9b810bce9d1b0fbcad8dcbb62e6146fc635e844efb9eac",
+    "comentarioAnteriorSha256": "7178b536fc476d8db1923bd27899b3448cb07a3e1438ae23f988a80c53814eb2",
+    "comentario": {
+      "conceito": "São duas perguntas epidemiológicas com denominadores diferentes. A primeira olha os pacientes com fratura do colo e pergunta quantos apresentam **outra fratura ou luxação associada**: pouco mais de **4%**. A segunda acompanha quem já sofreu uma fratura do quadril e estima uma **segunda fratura em dois anos**, chegando perto de **10% nas mulheres**.\n\nAs lesões associadas são sobretudo de membro superior, como rádio distal e úmero proximal. Já a segunda fratura evidencia que os fatores de fragilidade e queda continuam presentes depois do primeiro episódio. Nos homens, a estimativa apresentada é menor, cerca de 5%; não deve ser transferida para a população feminina da questão (resumo do Rockwood, 10ª ed., cap. 53, “Lesões associadas” e “A segunda fratura”).\n\nEsses valores aproximados não são risco individual nem justificam somar os dois percentuais: eles medem eventos distintos. Leia essas seções no resumo da Biblioteca relacionando o primeiro dado ao atendimento inicial e o segundo à prevenção secundária.\n\n**Por que esta questão foi criada.** Distingue lesão concomitante de nova fratura futura e exige manter sexo e intervalo de seguimento ligados à estimativa correta.",
+      "correta": "**D: cerca de 4% e 10%.** O primeiro valor se aproxima da frequência de lesões associadas; o segundo corresponde à segunda fratura em mulheres em dois anos. A ordem é parte essencial da resposta.",
+      "incorretas": {
+        "A": "**Subestima lesões associadas e usa o risco masculino na segunda parte.** O resumo informa pouco mais de 4%, não 2%, e perto de 10% para mulheres. Os 5% pertencem aos homens no mesmo seguimento.",
+        "B": "**Acerta a recorrência feminina e reduz a frequência de lesões associadas.** Os 10% estão no horizonte de dois anos; os 2% não reproduzem o pouco mais de 4% descrito para fratura ou luxação concomitante.",
+        "C": "**Acerta o evento concomitante e troca a população da recorrência.** Cerca de 5% é o risco apresentado para os homens. A pergunta especifica mulheres, para quem o valor é perto de 10%."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Mecanismo, lesões associadas e quadro clínico; Quem sofre e por quê."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Mecanismo, lesões associadas e quadro clínico",
+          "Quem sofre e por quê"
+        ],
+        "blocos": [
+          "mecanismo-lesoes-associadas-e-quadro-clinico-298fa5e4",
+          "quem-sofre-e-por-que-96692bd3"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "660e7ec43b330bdc4d58651c254da94bdd004cbecbc99769e4b80fef0159b642"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1553": {
+    "questaoSha256": "3f37558b03c8cf00fde0a547aeb19ebd5a7d9934c1e4a4977b1c106505dcbb55",
+    "comentarioAnteriorSha256": "da68f69782c9d5980e6d04a743ccbd65e2ac8c6909db97ab2682122cf16a62b9",
+    "comentario": {
+      "conceito": "A fratura **basocervical** fica na base do colo e representa apenas **2% a 3% das fraturas do quadril**. Embora sua classificação possa incluí-la entre variedades intracapsulares, seu comportamento após a fixação faz os autores tratá-la como **extracapsular**, com **parafuso deslizante, o DHS**.\n\nDHS significa um sistema de parafuso deslizante associado a placa. O ponto da questão é a escolha para esse padrão da base, não uma superioridade universal do implante sobre parafusos canulados em todas as fraturas do colo. Para a maioria das fraturas sem desvio, por exemplo, o capítulo aceita ambos; na basocervical, explicita a preferência pelo deslizante (resumo do Rockwood, 10ª ed., cap. 53, “Basocervical”, “Fratura sem desvio” e “Algoritmo dos autores”).\n\nSepare localização, comportamento e classificação. Um nome dentro do colo não obriga que a estratégia mecânica seja idêntica à de uma fratura subcapital. O resumo da Biblioteca apresenta essa exceção de forma direta.\n\n**Por que esta questão foi criada.** A basocervical é uma situação em que a localização exige ajustar a escolha do implante; o percentual também impede tratá-la como a maioria das fraturas do quadril.",
+      "correta": "**C: parafuso deslizante e 2% a 3%.** É a preferência explicitada pelos autores para a basocervical e a proporção aproximada apresentada. Não extrapolar a recomendação para todo traço intracapsular.",
+      "incorretas": {
+        "A": "**Acerta a proporção e troca a preferência do implante.** Canulados são uma opção descrita para fraturas sem desvio em geral. Para a basocervical, o resumo escolhe DHS por seu comportamento extracapsular.",
+        "B": "**Erra implante e frequência.** Usa canulados no lugar da preferência por DHS e aumenta a participação para 10%. A basocervical é uma minoria de cerca de 2% a 3%.",
+        "D": "**Identifica o DHS, mas exagera a proporção.** O implante está de acordo com o algoritmo, porém 10% não corresponde à estimativa dessa localização. Reconhecer a conduta não dispensa conferir a população descrita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Classificações; Algoritmo dos autores; Fratura sem desvio (Garden I e II)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Classificações",
+          "Algoritmo dos autores",
+          "Fratura sem desvio (Garden I e II)"
+        ],
+        "blocos": [
+          "classificacoes-3fbece93",
+          "algoritmo-dos-autores-5ccd28b7",
+          "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+          "classificacoes-0fb2f52f"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "23803b8d418e6ade6b4f4a0c631da313c47b37779bf25f1cee43ead4206d20ef"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1554": {
+    "questaoSha256": "a87dde2cb442a47bdd855fc469318e9015ae0d2952e5c4a1726e927aa6798809",
+    "comentarioAnteriorSha256": "6c94d8e5f80616d599fc2c86c1788d997cb946a6103e6718ac47c7bc5fd5a6c5",
+    "comentario": {
+      "conceito": "Uma fratura diafisária evidente pode desviar a atenção de uma fratura do colo **sem desvio**, na mesma perna. O padrão proximal típico dessa associação é basocervical e vertical. O protocolo de Tornetta descrito combina **tomografia de cortes finos** com **AP do colo em rotação interna**.\n\nA rotação pedida é a posição específica do exame radiográfico. Não confunda isso com a tração pré-operatória mantida: embora a manobra também possa envolver rotação interna, o contexto, o objetivo e a duração são diferentes. A questão é de busca diagnóstica por uma lesão que, historicamente, passou despercebida em até 30% dos casos associados (resumo do Rockwood, 10ª ed., cap. 53, “Colo e diáfise do mesmo lado”).\n\nDiagnosticar o colo muda o planejamento porque há risco de necrose e pseudartrose. No resumo da Biblioteca, acompanhe o protocolo diagnóstico antes de comparar as opções de estabilização.\n\n**Por que esta questão foi criada.** A grande lesão da diáfise pode ocultar a proximal; a posição radiográfica faz parte de uma procura ativa, e não de um detalhe decorativo do exame.",
+      "correta": "**D: rotação interna.** É a incidência AP do colo descrita por Tornetta junto da TC de cortes finos. Os exames procuram a lesão proximal pouco desviada que pode não chamar atenção na avaliação da diáfise.",
+      "incorretas": {
+        "A": "**Tração não substitui a posição radiográfica especificada.** Pode fazer parte de outras manobras ortopédicas, mas o protocolo apresentado pede AP do colo em rotação interna. A pergunta não trata de obter redução por tração.",
+        "B": "**Abdução é outro movimento e não corresponde à incidência recomendada.** A busca da fratura associada exige o AP do colo na posição descrita. Não basta modificar a posição da perna sem reproduzir o protocolo.",
+        "C": "**Rotação externa inverte a direção solicitada.** Pode aparecer no membro com fratura desviada, mas não é o posicionamento diagnóstico citado por Tornetta. Aqui o objetivo é procurar uma fratura do colo frequentemente sem desvio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Situações especiais; Diagnóstico por imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Situações especiais",
+          "Diagnóstico por imagem"
+        ],
+        "blocos": [
+          "situacoes-especiais-06f2d2fc",
+          "diagnostico-por-imagem-63f9a6b1"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "aa9336d611d9a349263f083e78f9c73a1dc2ca638c01542d1e7cdd9112777689"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1556": {
+    "questaoSha256": "88f3d142db45b06f0a76d1270484e118ec9177710a14d48e7f2ac1b7dfaadb46",
+    "comentarioAnteriorSha256": "a65ab1aaa4623f21ef600367153e8783a75ef0f804a983d7550bbd67e5c8fbcb",
+    "comentario": {
+      "conceito": "Radiografia normal não encerra a investigação quando dor e suspeita clínica de fratura do colo persistem. O exame preferido pelo capítulo é a **ressonância magnética**, mais precisa que tomografia e cintilografia nas primeiras horas e capaz de mostrar outras causas de dor.\n\nA **cintilografia pode ser falso-negativa nas primeiras 48 a 72 horas em osso osteopênico**. Portanto, um resultado negativo precoce não deve ser usado para excluir a fratura. A tomografia é uma alternativa quando a ressonância não está disponível, mas algumas séries tiveram fraturas não identificadas por ela (resumo do Rockwood, 10ª ed., cap. 53, “Diagnóstico por imagem”).\n\nA diferença entre exame preferido e alternativa disponível é o que decide entre B e D. Também não se deve reduzir a janela de falsos negativos para apenas 24 horas. Leia no resumo da Biblioteca como o resultado do exame se integra à suspeita que permanece.\n\n**Por que esta questão foi criada.** Ensina a não liberar uma suspeita de fratura oculta com base apenas em radiografia normal ou cintilografia precoce negativa.",
+      "correta": "**B: RM e 48 a 72 horas.** A ressonância é a escolha apresentada para suspeita persistente com radiografia normal. A janela é a de possível falso negativo cintilográfico precoce no osso osteopênico.",
+      "incorretas": {
+        "A": "**Acerta o exame preferido e encurta a janela de atenção.** O resumo não limita o falso negativo cintilográfico a 24 horas; descreve as primeiras 48 a 72 horas. Essa diferença importa ao interpretar um exame negativo precoce.",
+        "C": "**Troca a preferência por uma alternativa e ainda reduz a janela.** A TC tem papel quando falta RM, mas pode perder fraturas. As 24 horas também não reproduzem o período cintilográfico descrito.",
+        "D": "**Reconhece a janela da cintilografia, mas não o exame de escolha.** TC pode ser necessária por disponibilidade, sem se tornar equivalente à preferência pela RM nas primeiras horas. A resposta pede a recomendação principal do capítulo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Diagnóstico por imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Diagnóstico por imagem"
+        ],
+        "blocos": [
+          "diagnostico-por-imagem-95ee383c",
+          "diagnostico-por-imagem-1ec618c7"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "6aae55c9ccfbbc582de07ef1a824cb8e13ba89384c68f1f4af2535fc3cb70f78"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1557": {
+    "questaoSha256": "a01cba0941d46139eae2f7955ab3657db4da27c7e9fea0fe7ec609239190c216",
+    "comentarioAnteriorSha256": "604734a42d222f88f543c850340b10d6e948390051e4c04be5399aeb846a9304",
+    "comentario": {
+      "conceito": "A fratura sem desvio tem prognóstico mais favorável do que a desviada, mas a fixação não elimina complicações. O resumo apresenta **pseudartrose em cerca de 7%** e **necrose avascular tardia em cerca de 6%**, com consolidação em mais de 90%.\n\nPseudartrose é falha de união do foco; necrose é perda da viabilidade da cabeça por comprometimento vascular e pode aparecer depois da consolidação. Por isso, unir o osso e preservar a cabeça viva são resultados relacionados, mas diferentes. Os percentuais são estimativas dos grupos descritos, não eventos mutuamente exclusivos a somar para obter uma taxa universal de falha (resumo do Rockwood, 10ª ed., cap. 53, “O que esperar” e “Necrose avascular”).\n\nNo FAITH, a reoperação por qualquer causa nas fraturas sem desvio foi de 14%. Esse terceiro número não é a taxa de pseudartrose: reoperação reúne motivos diferentes. O resumo da Biblioteca permite comparar os desfechos sem misturar seus denominadores.\n\n**Por que esta questão foi criada.** Distingue ausência de consolidação, necrose e reoperação, três resultados que frequentemente são tratados como se fossem o mesmo.",
+      "correta": "**A: 7% e 6%.** São as estimativas de pseudartrose e necrose tardia apresentadas para fraturas sem desvio fixadas. A ordem importa, e ambas diferem da reoperação por qualquer causa.",
+      "incorretas": {
+        "B": "**Mantém a pseudartrose e superestima a necrose desse grupo.** O capítulo aproxima a necrose tardia de 6%, não 15%. Taxas de populações com fratura desviada não devem ser transferidas para as sem desvio.",
+        "C": "**Acerta a necrose e usa 14% como se fosse pseudartrose.** O valor de 14% aparece no FAITH para reoperação por qualquer causa. É um desfecho mais amplo do que falta de união do foco.",
+        "D": "**Mistura a reoperação ampla com uma taxa maior de necrose.** Nem 14% corresponde à pseudartrose apresentada, nem 15% à necrose das sem desvio. É preciso manter o tipo de fratura e o desfecho ligados ao número."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura sem desvio (Garden I e II); Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura sem desvio (Garden I e II)",
+          "Complicações"
+        ],
+        "blocos": [
+          "fratura-sem-desvio-garden-i-e-ii-501fb01f",
+          "complicacoes-7f006830"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "94fac82ff0ababb2fdc5e2a8328b23efa13645be071af96d37b853d8c16a3bb2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1558": {
+    "questaoSha256": "c04713ed85764d8827fe601811fe0c707c91e52efd4099a27251a037c1a61d83",
+    "comentarioAnteriorSha256": "c13ba675cd959b50a0c8542f68eec0d343aaa796a96df94aae805ae2d02cb464",
+    "comentario": {
+      "conceito": "No idoso com fratura desviada, obter uma redução boa é necessário, mas não elimina o risco de o osso osteoporótico perder sustentação. O foco pode colapsar ou não consolidar. **Falha da fixação ou pseudartrose** foram responsáveis por reoperação em **30% a 50%** nos ensaios com maiores de 60 anos apresentados pelo resumo.\n\nA necrose avascular também preocupa, mas costuma se manifestar mais tarde e nem sempre exige operação. O padrão de falha/pseudartrose aparece nos primeiros meses e explica boa parte da preferência por artroplastia na fratura desviada do idoso. Não se deve aplicar a faixa de 30% a 50% às fraturas sem desvio, que têm outro prognóstico (resumo do Rockwood, 10ª ed., cap. 53, “Por que não fixar”).\n\nA cifra é um resultado de grupos de estudos, não um cálculo individual após qualquer osteossíntese. Leia no resumo da Biblioteca a comparação com hemiartroplastia e prótese total para entender a decisão clínica.\n\n**Por que esta questão foi criada.** A escolha do tratamento depende de reconhecer qual complicação realmente leva à reoperação e em qual população a taxa foi observada.",
+      "correta": "**D: falha da fixação ou pseudartrose, 30% a 50%.** Reúne o mecanismo predominante e a faixa dos ensaios descritos para maiores de 60 anos com fratura desviada. A redução inicial anatômica não neutraliza todo esse risco.",
+      "incorretas": {
+        "A": "**A necrose não é a principal causa descrita, e a faixa não responde ao resultado perguntado.** O texto destaca falha/pseudartrose com 30% a 50%. Necrose é um problema tardio cuja presença não implica sempre nova cirurgia.",
+        "B": "**Reconhece a faixa e atribui-a ao desfecho errado.** Os 30% a 50% se referem a reoperação por falha ou pseudartrose, não à necrose isolada. O mesmo número muda de significado quando se troca o evento medido.",
+        "C": "**Identifica o mecanismo, mas subestima a taxa desse grupo.** Os ensaios descritos trazem 30% a 50%, não 10% a 15%. A fratura desviada do idoso não pode ser equiparada às séries de menor risco."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no idoso; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no idoso",
+          "Complicações"
+        ],
+        "blocos": [
+          "fratura-desviada-no-idoso-9ceafc6a",
+          "complicacoes-08edb04e"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "eeb69a18da58f0e5dbea5a9ab628d4cc1e10c878af7b5ae37a8620d2bd348083"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1559": {
+    "questaoSha256": "277eb9cab45f6b5dc1013ca233939bf3a9dcb8e8b669df16f6e4ed98d24c4801",
+    "comentarioAnteriorSha256": "300543636cb1146267bfd59b0c8e0ae1e7bd009d966d0008f284bbef09fdfbc3",
+    "comentario": {
+      "conceito": "O FAITH comparou **parafuso deslizante, o DHS**, com **parafusos canulados**, em 1.108 pacientes. Em 24 meses, não mostrou diferença na reoperação, mas a necrose avascular foi mais frequente com DHS: **9% contra 5%** no relato do resumo.\n\nReoperação por qualquer causa e necrose não são o mesmo desfecho. Uma complicação pode ser mais frequente em um grupo sem que a medida global de novas cirurgias mostre diferença; nem toda necrose exige intervenção, e uma nova cirurgia pode ter outro motivo. Por isso não há contradição em dizer “reoperação semelhante” e “necrose maior com DHS” (resumo do Rockwood, 10ª ed., cap. 53, “A fixação” e “Necrose avascular”).\n\nTambém é mais preciso dizer que o estudo **não mostrou diferença** do que concluir equivalência absoluta entre implantes ou superioridade universal de um deles. Na basocervical, por exemplo, os autores mantêm preferência pelo DHS. O resumo da Biblioteca situa cada resultado no padrão de fratura correspondente.\n\n**Por que esta questão foi criada.** Cobra leitura de dois desfechos de um ensaio sem transformar um resultado isolado em uma recomendação universal de implante.",
+      "correta": "**A: reoperação semelhante e necrose maior com o deslizante.** É a direção dos resultados apresentados. “Semelhante” deve ser lido como ausência de diferença demonstrada na reoperação em 24 meses, não identidade garantida em qualquer situação.",
+      "incorretas": {
+        "B": "**Mantém o resultado global e inverte a necrose.** O resumo informa 9% com DHS contra 5% com canulados. A maior frequência não foi atribuída aos canulados.",
+        "C": "**Cria uma vantagem de reoperação que não foi demonstrada e apaga a diferença de necrose.** O DHS não apresentou menor reoperação no resultado citado; a necrose também não foi descrita como semelhante entre grupos.",
+        "D": "**Também inventa redução de reoperação, agora a favor dos canulados.** Ter menos necrose no relato não equivale a ter menor taxa global de nova cirurgia demonstrada pelo ensaio. Os dois desfechos precisam continuar separados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura sem desvio (Garden I e II); Complicações; Classificações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura sem desvio (Garden I e II)",
+          "Complicações",
+          "Classificações"
+        ],
+        "blocos": [
+          "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+          "complicacoes-7f006830",
+          "classificacoes-3fbece93"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "2701a585789af7004bad6d7e59008b084d672bc5e0867bd010c3befe1734665e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

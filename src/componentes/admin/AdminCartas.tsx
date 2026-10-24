@@ -1,11 +1,11 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { usarConta } from '../../conta/ContextoConta'
 import { chamarFuncao } from '../../servicos/supabase'
 import { SITE } from '../../config'
 import { Icone } from '../Icone'
 import { confirmar } from '../Confirmar'
 import { contaDeTeste } from './contasTeste'
-import { haQuanto, motivoFalhaEmail } from './formatos'
+import { avisarEmailsEnviados, haQuanto, motivoFalhaEmail, ouvirEmailsEnviados } from './formatos'
 import { usarRpc, rpcInexistente } from './usarRpc'
 import { HistoricoMini } from './HistoricoEmails'
 import { AvisosTexto, PreviaCarta } from './CartaPessoal'
@@ -27,6 +27,7 @@ const BLOQUEIO: Record<string, string> = {
   administrador: 'administrador', email_nao_confirmado: 'e-mail não confirmado', nao_quer_cartas: 'não quer e-mails',
   assinante: 'já assina', sem_aceite_novidades: 'não aceitou novidades (Termos 17.5.3)', mesmo_tipo_30_dias: 'recebeu esta carta há menos de 30 dias',
   teste: 'conta de teste', recente: 'recebeu e-mail recente', sem_email: 'sem e-mail',
+  enviada_agora: 'carta enviada agora', tentada_agora: 'envio tentado agora (confira a ficha)',
 }
 interface LinhaBanco { id_usuario: string; dados: DadosCartaBanco; bloqueio: string | null }
 interface Linha { id: string; nome: string; email: string; dados: DadosCartaBanco; bloqueio: string | null; carta: Carta | null; erroCarta?: string }
@@ -38,7 +39,7 @@ const esperar = (ms: number) => new Promise(r => window.setTimeout(r, ms))
 const diaDeHoje = () => new Date().toISOString().slice(0, 10)
 
 /**
- * E-mails › Cartas pessoais: cartas pessoais em lote, por grupo. Cada pessoa recebe uma carta
+ * E-mails › Enviar e-mails › Cartas pessoais: cartas pessoais em lote, por grupo. Cada pessoa recebe uma carta
  * escrita para ela (o mesmo motor da ficha). Antes de enviar dá para ver o histórico
  * de cada uma, abrir a prévia, sortear outra versão, editar, desmarcar e tirar quem
  * recebeu e-mail recente. O servidor confere de novo cada trava.
@@ -57,7 +58,14 @@ export function AdminCartas({ usuarios }: { usuarios: LinhaUsuario[] | null }) {
   const [mostrarFora, definirMostrarFora] = useState(false)
   const [progresso, definirProgresso] = useState<{ feitos: number; total: number; atual: string } | null>(null)
   const [resultado, definirResultado] = useState<Resultado[] | null>(null)
+  // Quem acabou de receber (ou teve o envio tentado) nesta tela sai da lista na hora, antes de o
+  // grupo recarregar: o nome não pode continuar marcado, pronto para receber de novo.
+  const [tentadas, definirTentadas] = useState<Record<string, 'enviada_agora' | 'tentada_agora'>>({})
   const cancelar = useRef(false)
+
+  // Outra parte da página mandou e-mails (lembretes, relatório): a cadência mudou, recarrega o grupo.
+  const recarregarGrupo = q.recarregar
+  useEffect(() => ouvirEmailsEnviados(() => void recarregarGrupo()), [recarregarGrupo])
 
   const admins = useMemo(() => new Set((usuarios ?? []).filter(u => u.administrador).map(u => u.id_usuario)), [usuarios])
   const linhas: Linha[] = useMemo(() => (q.dados ?? []).map((l) => {
@@ -65,13 +73,13 @@ export function AdminCartas({ usuarios }: { usuarios: LinhaUsuario[] | null }) {
     const nome = d.nome ?? d.email?.split('@')[0] ?? 'Sem nome'
     const r = resumoHistorico(d.emails?.lista ?? [])
     const recente = r.ultimo && Date.now() - new Date(r.ultimo.em).getTime() < diasRecente * 86_400_000
-    const bloqueio = l.bloqueio ?? (!d.email ? 'sem_email' : admins.has(l.id_usuario) ? 'administrador' : contaDeTeste({ nome: d.nome, usuario: d.email }) ? 'teste' : recente ? 'recente' : null)
+    const bloqueio = tentadas[l.id_usuario] ?? l.bloqueio ?? (!d.email ? 'sem_email' : admins.has(l.id_usuario) ? 'administrador' : contaDeTeste({ nome: d.nome, usuario: d.email }) ? 'teste' : recente ? 'recente' : null)
     let carta: Carta | null = null, erroCarta: string | undefined
     try {
       carta = gerarCarta(perfilDoBanco(d), { tipo: segmento as TipoCarta, semente: sementes[l.id_usuario] ?? sementeDe(`${l.id_usuario}:${diaDeHoje()}`), anteriores: anterioresDosDados(d), site: SITE.url })
     } catch (f) { erroCarta = String(f) }
     return { id: l.id_usuario, nome, email: d.email ?? '', dados: d, bloqueio, carta, erroCarta }
-  }), [q.dados, segmento, sementes, diasRecente, admins])
+  }), [q.dados, segmento, sementes, diasRecente, admins, tentadas])
 
   const prontas = linhas.filter(l => !l.bloqueio && l.carta)
   const fora = linhas.filter(l => l.bloqueio || !l.carta)
@@ -106,15 +114,19 @@ export function AdminCartas({ usuarios }: { usuarios: LinhaUsuario[] | null }) {
       try {
         await chamarFuncao('enviar-email', { acao: 'carta', origem: 'lote', id_usuario: l.id, assunto: t.assunto, corpo: t.corpo, modelo: l.carta!.modelo, versao: l.carta!.versao })
         resultados.push({ nome: l.nome, ok: true })
+        definirTentadas(x => ({ ...x, [l.id]: 'enviada_agora' }))
       } catch (f) {
         resultados.push({ nome: l.nome, ok: false, motivo: motivoFalhaEmail(String(f)) })
+        // Na dúvida (a tela pode ter desistido com o servidor ainda mandando), também sai da lista.
+        definirTentadas(x => ({ ...x, [l.id]: 'tentada_agora' }))
         // Limite do Resend: espera mais antes da próxima.
         if (/envio_recusado_429/.test(String(f))) await esperar(5_000)
       }
       if (i < lista.length - 1) await esperar(PAUSA_MS)
     }
     definirProgresso(null); definirResultado(resultados); definirDesmarcados(new Set()); definirEdicoes({})
-    await q.recarregar()
+    // O aviso recarrega este grupo e as outras partes da página (lembretes, últimos envios).
+    avisarEmailsEnviados()
   }
 
   const aberta_ = linhas.find(l => l.id === aberta) ?? null

@@ -1,0 +1,611 @@
+{
+ "mao-1397": {
+  "questaoSha256": "283073a788b4529f7a2b0907c15aa34ef6ead496c536c270e057d48b1ca9c567",
+  "comentarioAnteriorSha256": "a1f220f3e0eaeb0c3cef5bf7a4779b7af18519878cd2517440a36f108a36a1ef",
+  "comentario": {
+   "conceito": "**A falange proximal fraturada se deforma pelo desequilíbrio entre os interósseos e o aparelho extensor.** Os interósseos fletem o fragmento proximal, enquanto o aparelho extensor tende a estender o distal. O resultado é uma angulação de **ápice volar**, com o componente distal dirigido dorsalmente. Saber de qual referência se está falando evita chamar duas descrições do mesmo padrão de contraditórias.\n\nO tendão flexor superficial insere-se na falange **média**, e não é a inserção que explica a flexão do fragmento proximal nesta fratura. O extensor participa do equilíbrio e da extensão do componente distal, mas não deve substituir os interósseos como principal causa da flexão proximal. O mecanismo muda quando se passa da falange proximal para a média.\n\nEssa deformidade também ajuda a compreender a pseudogarra. A perda de alinhamento pode alterar a relação entre extensão da MCF e movimento da IFP. Rotação e cruzamento dos dedos precisam ser examinados, porque um alinhamento aparentemente satisfatório em uma projeção não garante função normal. Na proteção inicial, flexionar a MCF faz o aparelho extensor atuar como uma banda de tensão no traço transverso.\n\n**Leia “Falange proximal: os interósseos”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção “Desvios das falanges e a falange proximal”.",
+   "correta": "Os **interósseos** fletem o fragmento proximal e, em conjunto com a ação extensora sobre o distal, produzem **ápice volar**. O fragmento distal se dirige dorsalmente; isso não significa que o vértice também seja dorsal. A resposta exige identificar o músculo e manter explícito o referencial da deformidade. O flexor superficial atua em outro osso e não explica essa inserção proximal.",
+   "incorretas": {
+    "A": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes.",
+    "B": "O aparelho extensor participa da extensão do fragmento distal, mas a flexão proximal que origina o padrão cobrado é atribuída aos interósseos. Não se deve eliminar o papel do extensor; deve-se separar a função de cada força no par deformante. Além disso, o vértice descrito no resumo é volar. A análise precisa distinguir direção do fragmento de direção do ápice.",
+    "C": "A placa volar da MCF é uma estrutura estabilizadora articular. Ela não é o músculo que flete o fragmento proximal e produz o padrão de angulação descrito. A pergunta trata das forças que passam a atuar em fragmentos ósseos diferentes depois da fratura. Os interósseos e o aparelho extensor, com inserções e vetores distintos, explicam melhor essa deformidade."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1534": {
+  "questaoSha256": "4a216246aa90a30bf594e0453ef0a65e6cd26daa200b14fb15bfe76d940abede",
+  "comentarioAnteriorSha256": "d5be03915f84bf37d0fd8906c5e5aa7565843b06e3ea3a8a280f48e19bfb3f39",
+  "comentario": {
+   "conceito": "**A falange proximal fraturada se deforma pelo desequilíbrio entre os interósseos e o aparelho extensor.** Os interósseos fletem o fragmento proximal, enquanto o aparelho extensor tende a estender o distal. O resultado é uma angulação de **ápice volar**, com o componente distal dirigido dorsalmente. Saber de qual referência se está falando evita chamar duas descrições do mesmo padrão de contraditórias.\n\nO tendão flexor superficial insere-se na falange **média**, e não é a inserção que explica a flexão do fragmento proximal nesta fratura. O extensor participa do equilíbrio e da extensão do componente distal, mas não deve substituir os interósseos como principal causa da flexão proximal. O mecanismo muda quando se passa da falange proximal para a média.\n\nEssa deformidade também ajuda a compreender a pseudogarra. A perda de alinhamento pode alterar a relação entre extensão da MCF e movimento da IFP. Rotação e cruzamento dos dedos precisam ser examinados, porque um alinhamento aparentemente satisfatório em uma projeção não garante função normal. Na proteção inicial, flexionar a MCF faz o aparelho extensor atuar como uma banda de tensão no traço transverso.\n\n**Leia “Falange proximal: os interósseos”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção “Desvios das falanges e a falange proximal”.",
+   "correta": "Os **interósseos** fletem o fragmento proximal e, em conjunto com a ação extensora sobre o distal, produzem **ápice volar**. O fragmento distal se dirige dorsalmente; isso não significa que o vértice também seja dorsal. A resposta exige identificar o músculo e manter explícito o referencial da deformidade. O flexor superficial atua em outro osso e não explica essa inserção proximal.",
+   "incorretas": {
+    "A": "O aparelho extensor participa da extensão do fragmento distal, mas a flexão proximal que origina o padrão cobrado é atribuída aos interósseos. Não se deve eliminar o papel do extensor; deve-se separar a função de cada força no par deformante. Além disso, o vértice descrito no resumo é volar. A análise precisa distinguir direção do fragmento de direção do ápice.",
+    "B": "O resumo atribui a flexão do fragmento proximal aos **interósseos**, com ápice volar. A opção troca o músculo predominante pelo lumbrical e chama a angulação de dorsal sem separar a direção do componente distal do vértice. Essa dupla troca não corresponde à descrição pedida. O fato de o lumbrical ser um intrínseco não torna os nomes intercambiáveis na resposta.",
+    "D": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1707": {
+  "questaoSha256": "32f7d9a249e4f79ad8bc4f2d7f53cbb22b2579d1f6aa52817b2520bcbe85ec96",
+  "comentarioAnteriorSha256": "d9263cac239caf6f0956c466b7cd9888778319956776f2ca430fbc292be76000",
+  "comentario": {
+   "conceito": "**A falange proximal fraturada se deforma pelo desequilíbrio entre os interósseos e o aparelho extensor.** Os interósseos fletem o fragmento proximal, enquanto o aparelho extensor tende a estender o distal. O resultado é uma angulação de **ápice volar**, com o componente distal dirigido dorsalmente. Saber de qual referência se está falando evita chamar duas descrições do mesmo padrão de contraditórias.\n\nO tendão flexor superficial insere-se na falange **média**, e não é a inserção que explica a flexão do fragmento proximal nesta fratura. O extensor participa do equilíbrio e da extensão do componente distal, mas não deve substituir os interósseos como principal causa da flexão proximal. O mecanismo muda quando se passa da falange proximal para a média.\n\nEssa deformidade também ajuda a compreender a pseudogarra. A perda de alinhamento pode alterar a relação entre extensão da MCF e movimento da IFP. Rotação e cruzamento dos dedos precisam ser examinados, porque um alinhamento aparentemente satisfatório em uma projeção não garante função normal. Na proteção inicial, flexionar a MCF faz o aparelho extensor atuar como uma banda de tensão no traço transverso.\n\n**Leia “Falange proximal: os interósseos”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção “Desvios das falanges e a falange proximal”.",
+   "correta": "Os **interósseos** fletem o fragmento proximal e, em conjunto com a ação extensora sobre o distal, produzem **ápice volar**. O fragmento distal se dirige dorsalmente; isso não significa que o vértice também seja dorsal. A resposta exige identificar o músculo e manter explícito o referencial da deformidade. O flexor superficial atua em outro osso e não explica essa inserção proximal.",
+   "incorretas": {
+    "A": "Os extensores do carpo atuam no punho e não são a inserção que o resumo identifica para fletir o fragmento proximal da falange proximal. A pergunta procura a musculatura intrínseca da mão que age diretamente nesse padrão deformante. Alterar o punho pode mudar a tensão global, mas não substitui a identificação dos interósseos.",
+    "B": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes.",
+    "D": "O extensor terminal se relaciona à falange distal e à extensão da IFD. Sua avulsão caracteriza o dedo em martelo, outro nível da cadeia digital. Aqui o traço está na falange proximal e o fragmento proximal é fletido pelos interósseos. A alternativa troca uma força distal pela inserção muscular que explica a deformidade proximal."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "trauma-0341": {
+  "questaoSha256": "b10bea29fa7670a9a1bdfcea99b60a2c70e16b06397b65078e06c3a78aaa6856",
+  "comentarioAnteriorSha256": "a77c3a7a47d45a432a1b050a62c9142af56407445fa90a4ef1c6ea1e9e4a40a1",
+  "comentario": {
+   "conceito": "**A falange proximal fraturada se deforma pelo desequilíbrio entre os interósseos e o aparelho extensor.** Os interósseos fletem o fragmento proximal, enquanto o aparelho extensor tende a estender o distal. O resultado é uma angulação de **ápice volar**, com o componente distal dirigido dorsalmente. Saber de qual referência se está falando evita chamar duas descrições do mesmo padrão de contraditórias.\n\nO tendão flexor superficial insere-se na falange **média**, e não é a inserção que explica a flexão do fragmento proximal nesta fratura. O extensor participa do equilíbrio e da extensão do componente distal, mas não deve substituir os interósseos como principal causa da flexão proximal. O mecanismo muda quando se passa da falange proximal para a média.\n\nEssa deformidade também ajuda a compreender a pseudogarra. A perda de alinhamento pode alterar a relação entre extensão da MCF e movimento da IFP. Rotação e cruzamento dos dedos precisam ser examinados, porque um alinhamento aparentemente satisfatório em uma projeção não garante função normal. Na proteção inicial, flexionar a MCF faz o aparelho extensor atuar como uma banda de tensão no traço transverso.\n\n**Leia “Falange proximal: os interósseos”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção “Desvios das falanges e a falange proximal”.",
+   "correta": "O gabarito C descreve o **desvio dorsal do componente distal**, relacionado à ação dos interósseos sobre o proximal e do extensor sobre o distal. Pela convenção do vértice, o mesmo padrão tem **ápice volar**. O resumo registra expressamente essas duas formas de descrever a deformidade. Assim, é possível preservar o gabarito sem ensinar que o ápice deva ser dorsal.",
+   "incorretas": {
+    "A": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes.",
+    "B": "O flexor superficial insere-se na falange **média**. Nela, a posição do traço em relação à inserção muda o sentido do ápice; isso é um mecanismo diferente da flexão do fragmento proximal da falange proximal pelos interósseos. A alternativa transfere a força deformante de um nível anatômico para outro. Reconhecer que ambos são flexores não torna suas inserções equivalentes. O adjetivo “volar” pode lembrar o vértice correto, mas não corrige a atribuição ao tendão errado.",
+    "D": "A opção reconhece os interósseos, mas inverte a direção do desvio quando se usa o componente distal como referência adotada pelo gabarito. O vértice é volar e o distal é dirigido dorsalmente. Sem especificar a referência, as palavras “volar” e “dorsal” geram confusão. Na leitura desta questão, C corresponde ao desvio distal e ao músculo correto."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "trauma-0042": {
+  "questaoSha256": "39f2d55b753ea51d29f2fae1f08d1159888105cef6445ce1ca8e556ef7b81c2d",
+  "comentarioAnteriorSha256": "dfdf3b24b73ccebaa41eadb5c1142f630bc8d6077ebaf595ad4341ceb3f58296",
+  "comentario": {
+   "conceito": "**O sentido do ápice na falange média depende da posição do traço em relação ao flexor superficial.** O flexor superficial insere-se nas bordas laterais do terço médio da falange média. A banda central do extensor se insere na base dorsal; o tendão terminal atua distalmente. Ao fraturar o osso, essas inserções passam a tracionar fragmentos diferentes.\n\nSe o traço é **distal à inserção do superficial**, esse tendão permanece ligado ao fragmento proximal e o flete, enquanto o aparelho extensor distal estende o outro fragmento. A angulação resultante tem **ápice volar**. Se o traço é proximal à inserção do superficial, o tendão fica ligado ao fragmento distal e o flete, enquanto a banda central estende o proximal: o ápice se torna **dorsal**.\n\n“Ápice” indica para onde aponta o vértice da deformidade, não simplesmente o lado para onde um fragmento se move. A comparação entre os dois padrões evita aplicar uma regra única para toda fratura da falange média. O flexor profundo não substitui o superficial nesse raciocínio, pois sua inserção óssea é na falange distal.\n\n**Leia “Falange média: tudo depende do flexor superficial”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
+   "correta": "Na base da falange média, proximalmente à inserção do superficial, o **flexor superficial flete o fragmento distal** e a **banda central estende o proximal**. Esse par produz a angulação de ápice dorsal descrita no resumo. O nome de cada estrutura precisa acompanhar sua inserção: o superficial vai à falange média e a banda central à base dorsal dela. A alternativa D reúne as forças apropriadas.",
+   "incorretas": {
+    "A": "O flexor profundo se insere na falange distal, e o interósseo dorsal não tem a inserção no corpo da falange média que explicaria esse par deformante. A opção troca tanto o flexor quanto o componente extensor proximal relevante. O mecanismo pedido depende do superficial no fragmento distal e da banda central no proximal.",
+    "B": "O superficial é o flexor correto, mas o interósseo dorsal não substitui a **banda central**, inserida na base dorsal da falange média. Uma parte verdadeira não torna o par correto. É a ação oposta dessas inserções, de cada lado do traço, que produz o ápice dorsal. A alternativa reconhece o flexor e erra a força extensora.",
+    "C": "A banda central está correta, mas o flexor profundo insere-se na falange distal. O músculo com inserção na falange média e que flete o fragmento distal deste traço é o **superficial**. A alternativa mistura um componente extensor adequado com o flexor do nível errado. A diferença é anatômica, e não apenas de nomenclatura."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "trauma-0119": {
+  "questaoSha256": "defd7ba6e93f085610734c6f223c874c6cf6d5d50d673ef86f59fcaae3c6ddd7",
+  "comentarioAnteriorSha256": "292ed9c0e5a1594cd4b57d896e86ba16b5071301934fca046a4215359cc0ddd5",
+  "comentario": {
+   "conceito": "**O sentido do ápice na falange média depende da posição do traço em relação ao flexor superficial.** O flexor superficial insere-se nas bordas laterais do terço médio da falange média. A banda central do extensor se insere na base dorsal; o tendão terminal atua distalmente. Ao fraturar o osso, essas inserções passam a tracionar fragmentos diferentes.\n\nSe o traço é **distal à inserção do superficial**, esse tendão permanece ligado ao fragmento proximal e o flete, enquanto o aparelho extensor distal estende o outro fragmento. A angulação resultante tem **ápice volar**. Se o traço é proximal à inserção do superficial, o tendão fica ligado ao fragmento distal e o flete, enquanto a banda central estende o proximal: o ápice se torna **dorsal**.\n\n“Ápice” indica para onde aponta o vértice da deformidade, não simplesmente o lado para onde um fragmento se move. A comparação entre os dois padrões evita aplicar uma regra única para toda fratura da falange média. O flexor profundo não substitui o superficial nesse raciocínio, pois sua inserção óssea é na falange distal.\n\n**Leia “Falange média: tudo depende do flexor superficial”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
+   "correta": "No traço do colo da falange média, distal à inserção do superficial, o **flexor superficial** flete o fragmento proximal. A ação extensora distal completa a deformidade de ápice volar. A localização do traço é decisiva: se ele fosse proximal à inserção, a mesma força flexora passaria a agir no fragmento distal e o ápice seria dorsal. A alternativa D corresponde ao mecanismo solicitado.",
+   "incorretas": {
+    "A": "O lumbrical é um intrínseco da mão, mas não é a inserção no corpo da falange média que determina a inversão de ápice conforme o nível do traço. O resumo usa a inserção do **flexor superficial** para explicar esse padrão. A opção troca o mecanismo específico da falange média por um nome de musculatura intrínseca.",
+    "B": "O interósseo dorsal participa de outras forças da mão, incluindo o padrão da falange proximal, mas não tem a inserção óssea na falange média que o resumo usa aqui. No colo, o superficial permanece com o fragmento proximal e o flete. Aplicar automaticamente a explicação da falange proximal à média ignora essa mudança de inserção.",
+    "C": "O interósseo palmar também não substitui o superficial como a inserção na falange média que organiza o sentido da deformidade. A pergunta fornece o nível distal do traço e o ápice volar, combinação explicada pela flexão do fragmento proximal pelo superficial. A opção usa outro intrínseco sem reproduzir esse arranjo mecânico."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1708": {
+  "questaoSha256": "601908186a3a8ad236377be48bd5648e8da0de0e551603abf76c7858d6fca30a",
+  "comentarioAnteriorSha256": "7d4628ee1d2fd0425e57545069a4999c0c0d280d1441d1ef76d8bc954097b3e4",
+  "comentario": {
+   "conceito": "**Weiss e Hastings classificam o traço das fraturas unicondilares da falange proximal.** O sistema descreve a orientação e a localização do fragmento articular: tipo I, oblíquo volar; tipo II, sagital longo; tipo III, coronal dorsal; tipo IV, coronal volar. A letra ou o número não expressam simplesmente um grau crescente de gravidade.\n\nO plano sagital divide os lados radial e ulnar; um traço sagital longo produz um fragmento condilar longitudinal. O plano coronal separa porções dorsal e volar, exigindo acrescentar qual delas está fraturada. Por isso os tipos III e IV usam o mesmo plano, mas diferem entre fragmento dorsal e volar.\n\nNas fraturas condilares, a superfície articular e a irrigação do fragmento importam para a conduta. O resumo orienta preservar a inserção do colateral no côndilo, porque ela leva irrigação, e obter estabilidade que permita movimento. Uma fratura sem desvio também exige acompanhamento, pois deslocamento secundário pode comprometer a congruência.\n\n**Leia “Classificação e anatomia da cabeça”**, na seção “Desvios das falanges e a falange proximal” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
+   "correta": "O tipo III corresponde à fratura **coronal dorsal**. O plano coronal e a localização dorsal precisam aparecer juntos para distingui-la do tipo IV, coronal volar. A opção D reúne exatamente esses dois elementos. O sistema é morfológico, de modo que trocar o plano ou o lado do fragmento muda o tipo.",
+   "incorretas": {
+    "A": "Coronal volar é o **tipo IV**. O plano coronal coincide com o tipo III, mas o fragmento fica do lado oposto: volar em vez de dorsal. A distinção dorsal/volar é exatamente o que separa os dois últimos tipos. A alternativa acerta o plano e troca a localização.",
+    "B": "O traço oblíquo volar é o **tipo I**, e não o III. “Volar” indica a porção palmar; “oblíquo” descreve uma orientação diferente do corte coronal. A classificação não permite trocar esses descritores por semelhança de localização. Para o tipo III, a combinação exigida é coronal e dorsal.",
+    "C": "O traço sagital longitudinal, ou sagital longo, corresponde ao **tipo II**. Ele não é o corte coronal dorsal do tipo III. A orientação do traço explica a morfologia do fragmento condilar, e não deve ser substituída por uma ideia genérica de fratura articular. O erro é trocar o plano sagital pelo coronal."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1709": {
+  "questaoSha256": "7f14de9167e5a81f8dcc0d3e988e692dec6f5aba000ca148aec37b888ad635d9",
+  "comentarioAnteriorSha256": "35ad9be3cddbe3de9ee12ab8e47e51b23f45fe5a937f02b7103b29b23c581296",
+  "comentario": {
+   "conceito": "**A posição intrínseca plus mantém as MCF em 70° a 90° de flexão.** As articulações metacarpofalângicas (MCF) unem os metacarpos às falanges proximais. Seus colaterais se originam dorsalmente na cabeça metacarpal, cuja forma faz com que fiquem mais tensionados em flexão. Essa relação anatômica explica a posição de proteção durante a imobilização.\n\nSe a MCF permanece estendida por longo período, o sistema colateral pode encurtar e dificultar a flexão depois da retirada da tala. Em 70° a 90°, o ligamento é mantido alongado. Nas interfalângicas a proteção usual é diferente: extensão para reduzir o risco de contratura da placa volar. Não se deve escolher um mesmo ângulo para todas as articulações do dedo.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, associa essa posição a punho em cerca de 30° de extensão e imobilização apenas das articulações necessárias. O objetivo não é manter a mão fechada indefinidamente: é proteger o tecido lesionado e permitir mobilização assim que a estabilidade da fratura autoriza.\n\n**Leia “Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”, para relacionar posição e prevenção de rigidez.",
+   "correta": "Os **ligamentos colaterais próprios** da MCF ficam tensionados na flexão. Mantê-los alongados em 70° a 90° durante a proteção reduz o risco de encurtamento e contratura em extensão. A posição intrínseca plus usa essa propriedade anatômica, enquanto as interfalângicas ficam estendidas. Não se trata de alongar qualquer tendão da mão, mas de preservar o comprimento dos estabilizadores da MCF.",
+   "incorretas": {
+    "A": "Os extensores do carpo se relacionam ao movimento do punho, mas não são a estrutura cuja tensão explica a proteção específica das MCF em flexão. O mecanismo cobrado depende da origem dos colaterais na cabeça metacarpal e da mudança de tensão com o arco articular. A alternativa troca o alvo anatômico da posição de imobilização.",
+    "C": "Os ligamentos oblíquos da CMC do polegar estabilizam a base do primeiro metacarpo junto ao trapézio. A posição pedida envolve as MCF dos dedos e seus próprios ligamentos colaterais. Proteger a base do polegar e prevenir contratura da MCF são objetivos em articulações diferentes. A alternativa desloca o raciocínio para outra região da mão.",
+    "D": "O flexor profundo se insere na falange distal e permite flexão da IFD. Ele não é o ligamento que encurta quando uma MCF fica imobilizada estendida por longo período. A intrínseca plus usa a tensão dos colaterais próprios na flexão da MCF. A opção confunde uma inserção tendínea distal com a estabilização ligamentar proximal."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Metacarpos: tolerância de desvio, colo do quinto e fixação"
+    ],
+    "blocos": [
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "66c618c7c97ded37d6371bf786d3c3359f7e2fa21dd31f62b452a51a04ebf6d5"
+   }
+  ]
+ },
+ "mao-1710": {
+  "questaoSha256": "1e4ed22f364e1696a1053c5cf6260bb335ed0e27a60363017bb52d1e8d7c321b",
+  "comentarioAnteriorSha256": "d6d9586f010ab5ed558c705ff0bd1af96c7d4f3e847f10c3e82b3afcde689046",
+  "comentario": {
+   "conceito": "**Parafusos interfragmentários isolados exigem um traço suficientemente longo.** Na falange proximal, fraturas oblíquas longas ou espirais podem oferecer duas superfícies adequadas à compressão e espaço para distribuir os implantes. A geometria deve permitir controlar rotação e encurtamento, além de aproximar os fragmentos.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, descreve na diáfise da falange proximal traços **maiores que duas vezes o diâmetro do osso**, com pelo menos dois parafusos e preferência dos autores por três. O número solicitado compara comprimento do traço com o diâmetro do osso, não comprimento do implante.\n\nTraço transverso ou curto não oferece o mesmo espaço longitudinal e pode precisar de outra montagem. A estabilidade deve permitir recuperar movimento sem perder redução, porque aderências e contratura são complicações importantes nas falanges. Escolher um implante rígido sem considerar as partes moles não garante melhor função.\n\n**Leia “Quando operar a falange proximal”**, no resumo da Biblioteca, para relacionar formato do traço, compressão e reabilitação.",
+   "correta": "O traço deve superar **duas vezes o diâmetro do osso** para a fixação interfragmentária isolada descrita. Esse comprimento permite distribuir parafusos e obter controle dos fragmentos. O critério não significa que toda fratura acima dele precise de cirurgia; é uma condição geométrica favorável quando essa técnica é indicada. A alternativa D fornece a comparação correta.",
+   "incorretas": {
+    "A": "Um quarto do diâmetro é muito menor que a extensão longitudinal exigida. Esse traço curto não oferece o espaço previsto para uma montagem apenas interfragmentária. A pergunta não se refere a uma fração da espessura de um parafuso, mas ao comprimento da fratura no osso. A alternativa reduz o requisito em vez de identificar um traço longo.",
+    "B": "Metade do diâmetro ainda descreve um traço curto diante do critério de mais de dois diâmetros. A compressão com parafusos isolados pressupõe superfícies e distribuição adequadas dos implantes. Um comprimento pequeno não satisfaz essa geometria. O fato de a fratura ser oblíqua não elimina a exigência de extensão longitudinal.",
+    "C": "Um diâmetro é maior que as frações anteriores, mas permanece abaixo do limiar descrito para esta montagem. Comprimento suficiente e formato oblíquo são requisitos que devem ser avaliados juntos. A opção não representa o mínimo de mais de dois diâmetros informado para a falange proximal no resumo."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Desvios das falanges e a falange proximal"
+    ],
+    "blocos": [
+     "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
+     "desvios-das-falanges-e-a-falange-proximal-09ae409e",
+     "desvios-das-falanges-e-a-falange-proximal-b6035935",
+     "desvios-das-falanges-e-a-falange-proximal-9109692a",
+     "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
+     "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
+     "desvios-das-falanges-e-a-falange-proximal-f10317d5",
+     "desvios-das-falanges-e-a-falange-proximal-107cc32b",
+     "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
+     "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
+     "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
+     "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
+     "desvios-das-falanges-e-a-falange-proximal-ca34308b",
+     "desvios-das-falanges-e-a-falange-proximal-1db07921",
+     "desvios-das-falanges-e-a-falange-proximal-b8f69131",
+     "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
+     "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
+     "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
+     "desvios-das-falanges-e-a-falange-proximal-617152de",
+     "desvios-das-falanges-e-a-falange-proximal-c26f0603",
+     "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
+     "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
+     "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
+     "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
+     "desvios-das-falanges-e-a-falange-proximal-5913fd66",
+     "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
+     "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "17a271fa8d90ef7816f03c95918f24f1122156dec86b5cfa32aba00a176e5995"
+   }
+  ]
+ },
+ "mao-1714": {
+  "questaoSha256": "a8595754d0baaf5695537a3b503402f0bdfbff22a685d7ecaea7aae3f9d6a297",
+  "comentarioAnteriorSha256": "503b07f06f0c6d896b57ee745a9af0c56bf16ea3fad207def482a255296caee5",
+  "comentario": {
+   "conceito": "**Stener é a interposição da aponeurose do adutor no trajeto de cicatrização do LCU rompido.** O ligamento colateral ulnar (LCU) da metacarpofalângica do polegar resiste ao desvio radial durante pinça e preensão. Na ruptura completa, mais comumente distal, o coto pode deslocar-se superficialmente à aponeurose do adutor, que normalmente cobre o ligamento.\n\nA aponeurose passa a separar o ligamento de sua inserção na base da falange proximal. Essa barreira impede a cicatrização por simples imobilização. Portanto, Stener não é sinônimo de dor no lado ulnar nem de qualquer entorse: é uma relação anatômica específica após ruptura completa.\n\nO exame em 30° a 40° de flexão da MCF testa o colateral próprio e avalia o ponto final, enquanto imagem pode ajudar a procurar a interposição. A ausência de ponto final firme sugere ruptura completa, mas não identifica sozinha a aponeurose interposta. Separar esses dois diagnósticos ajuda a entender o planejamento do tratamento.\n\n**Leia “O que é a lesão de Stener”**, na seção do LCU do polegar do resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
+   "correta": "A estrutura é a **aponeurose do adutor do polegar**. O coto ligamentar fica superficial a ela, e a aponeurose bloqueia o retorno à inserção distal. Esse obstáculo explica por que a lesão de Stener não se resolve apenas aproximando o polegar com uma tala. A opção identifica o tecido que diferencia essa lesão de uma ruptura completa sem interposição.",
+   "incorretas": {
+    "A": "A placa volar estabiliza a face palmar da MCF e participa da contenção articular, mas não é a barreira aponeurótica que define a Stener. Nessa lesão, o coto do LCU fica superficial à **aponeurose do adutor**, que o separa do osso. A opção cita outra estrutura do mesmo complexo sem identificar a interposição característica.",
+    "B": "A pergunta envolve o LCU da MCF do polegar e a aponeurose que o cobre, não uma polia do flexor superficial. A interposição impede contato entre o coto e a base da falange proximal. A opção transporta uma estrutura da bainha flexora para um bloqueio cuja definição é aponeurótica e ligamentar.",
+    "D": "A banda central se insere na base dorsal da falange média e participa da extensão da IFP. Sua ruptura está relacionada à botoeira e é examinada pelo teste de Elson. Stener envolve outro nível, a MCF do polegar, e a aponeurose do adutor. A alternativa troca a articulação e a estrutura que produz a barreira à cicatrização."
+   },
+   "referencias": [
+    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Polegar: ligamento colateral ulnar e lesão de Stener."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-45-fraturas-mao",
+    "titulo": "Fraturas e luxações da mão",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+    "secoes": [
+     "Polegar: ligamento colateral ulnar e lesão de Stener"
+    ],
+    "blocos": [
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
+     "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
+    ],
+    "sha256": "3fdf1294ac78702fb493554b713e82bb9242f6afd169cd7e339f11603a3b30ca",
+    "trechosSha256": "4205977976567c2a609f5e7a15697ad4a17b4271cf1b8988adb3bf2861687bc0"
+   }
+  ]
+ }
+}

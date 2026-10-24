@@ -60,7 +60,7 @@ Quem tem doença arterial periférica pode ter índice baixo sem lesão aguda; n
 
 !questoes central=trauma-0298,trauma-0704 treino=trauma-1619
 conceito: Na luxação do joelho, ITB acima de 0,9 tem valor preditivo negativo de 100% para lesão arterial importante; 0,91 está na faixa normal (0,91 a 1,3).
-como: O TEOT/TARO pediu o número do valor preditivo negativo; o CET-PR deu um ITB de 0,91, bem no limite, e ofereceu três condutas invasivas para quem achasse que o valor era anormal.
+como: A prova de Ortopedia pediu o número do valor preditivo negativo; o CET-PR deu um ITB de 0,91, bem no limite, e ofereceu três condutas invasivas para quem achasse que o valor era anormal.
 armadilha: "Anormal e indica-se arteriografia": o corte é 0,9; 0,91 já é normal.
 armadilha: Valores intermediários (40%, 60%, 80%): o estudo citado mostrou 100%.
 !fim
@@ -223,7 +223,7 @@ A cápsula posterior nasce na margem proximal dos côndilos femorais e se prende
 
 !questoes central=joelho-0256
 conceito: O cisto de Baker sai do defeito da cápsula posteromedial entre a cabeça medial do gastrocnêmio e o semimembranáceo.
-como: O TEOT/TARO (sem ano) ofereceu as cabeças medial e lateral do gastrocnêmio combinadas com o semimembranáceo ou com o sóleo.
+como: A prova de Ortopedia (sem ano) ofereceu as cabeças medial e lateral do gastrocnêmio combinadas com o semimembranáceo ou com o sóleo.
 armadilha: Cabeça lateral do gastrocnêmio: o defeito capsular que o capítulo descreve é posteromedial.
 armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que fica entre o gastrocnêmio medial e o semimembranáceo.
 !fim
@@ -411,7 +411,7 @@ O complexo colateral medial tem três componentes que se fundem: o **colateral m
 
 !questoes central=joelho-0271 relacionadas=joelho-0094,joelho-0260 treino=joelho-0354
 conceito: A divisão proximal do colateral medial superficial é o estabilizador estático primário do valgo em todos os ângulos; o profundo é secundário e o oblíquo posterior segura a rotação interna.
-como: O TARO 2013 pôs o oblíquo posterior e as duas porções do colateral profundo ao lado do superficial. Duas questões do TEOT/TARO pediram a natureza do oblíquo posterior, oferecendo os meniscofemorais (Wrisberg, Humphrey) e o semimembranáceo como distratores.
+como: O TARO 2013 pôs o oblíquo posterior e as duas porções do colateral profundo ao lado do superficial. Duas questões da prova de Ortopedia pediram a natureza do oblíquo posterior, oferecendo os meniscofemorais (Wrisberg, Humphrey) e o semimembranáceo como distratores.
 armadilha: Porções do colateral profundo: são estabilizadores secundários do valgo.
 armadilha: "Uma das inserções do semimembranoso": o semimembranáceo manda uma expansão ao oblíquo posterior, mas o ligamento é uma estrutura capsuloligamentar própria, cujo braço central reforça a cápsula posteromedial.
 !fim

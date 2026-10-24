@@ -1,0 +1,91 @@
+{
+  "pediatria-1032": {
+    "questaoSha256": "265f0c67d607687f2dda02d3bfec25831b7cb462fc72e27a91fc91a73c7a3887",
+    "comentarioAnteriorSha256": "76ee3618b1be5a0ed70d43aca7d519e9508f8e9a7926f9142c77a929e780f196",
+    "comentario": {
+      "conceito": "**A espícula proximal aponta para o lado oposto ao deslocamento distal.** No desvio posterolateral em extensão, o fragmento distal vai para trás e para lateral. O segmento proximal se projeta anteriormente e para medial, onde ficam o **nervo mediano e a artéria braquial**. O ramo interósseo anterior pode ser atingido sem toda a expressão da lesão do mediano.\n\nNo padrão posteromedial, a espícula proximal sai lateralmente e ameaça o radial. No tipo em flexão, o ulnar é o nervo característico. A direção do fragmento precisa sempre ser nomeada: dizer apenas que a fratura desviou lateralmente e procurar um nervo lateral ignora que a agressão vem da ponta do segmento oposto.\n\n**Por que esta questão foi criada.** A anatomia explica a associação entre direção do fragmento e risco neurovascular, recorrente nas provas do resumo.",
+      "correta": "**D: mediano e artéria braquial.** O feixe anterior e medial pode ficar estirado sobre o fragmento proximal. A presença de déficit nervoso junto de alteração de perfusão deve elevar a atenção à lesão de partes moles.",
+      "incorretas": {
+        "A": "**O radial corresponde à espícula lateral do desvio distal posteromedial.** A pergunta descreve o inverso, posterolateral, em que a projeção proximal é medial. A posição do nervo deve ser relacionada ao agressor, não apenas ao distal.",
+        "B": "**O ulnar é associado sobretudo à fratura em flexão e ao risco do fio medial.** Não é a estrutura que acompanha a artéria braquial no feixe ameaçado pelo padrão posterolateral em extensão.",
+        "C": "**A artéria está correta, mas o nervo está trocado.** O feixe ameaçado medialmente contém o mediano. Associar a artéria ao radial mistura estruturas características dos dois sentidos de desvio."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, seção Fixação: fios laterais, fio medial e cuidados depois (risco ulnar por fio medial)."
+      ],
+      "geradoEm": "2026-10-20"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Mecanismo, direção do desvio e estruturas em risco"
+        ],
+        "blocos": [
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+      },
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Fixação: fios laterais, fio medial e cuidados depois"
+        ],
+        "blocos": [
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-3f58f905",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d7364435",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2b396569",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e1abb458",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-c110efab",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-189677da",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-e458bdef",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1c1e8668",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-108cebf2",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d53ac436",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-4f41fbec",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dfb375b1",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f9658ef5",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b3924bab",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-0acff13a",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-929f6ff9",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-2151930a",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b07595e",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-dcf71592",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1f9bd497",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-b4c35f2d",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d88d6190",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-bd0d8d50",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-1b2e018a",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-5dd0a66a",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-11e6ef63",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-f5308cf9",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-d76690c2",
+          "fixacao-fios-laterais-fio-medial-e-cuidados-depo-7c581a19"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "c779980fcb3f047bb3a7497909be3b4fde92b287b14322a96fb004bfa16f89f2"
+      }
+    ]
+  }
+}

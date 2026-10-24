@@ -1,0 +1,390 @@
+{
+  "pediatria-0972": {
+    "questaoSha256": "04e0b59875c16f581ac679d926d60f510932c975709df07d5e7bc202568b9b50",
+    "comentarioAnteriorSha256": "1388ef3fdfc25d5e779b4a9536dee791e936cd2bb474fc20670c3868ce2c766d",
+    "comentario": {
+      "conceito": "**Toro é uma falha por compressão axial, intrinsecamente estável, tratada no resumo com tala removível por três semanas.** A cortical abaula na região metafisária, sem o padrão de instabilidade da fratura completa ou do galho verde.\n\nO periósteo permanece íntegro e a estabilidade permite uma proteção mais simples. Os ensaios sintetizados encontraram consolidação com gesso e tala, com vantagem funcional precoce da tala em parte das comparações. O método apresentado pelos autores é tala removível, e a consolidação costuma ocorrer em três a quatro semanas.\n\nNão se deve estender essa conduta a toda fratura distal infantil. Galho verde tem uma cortical rompida e a outra deformada, sendo mais instável; fratura completa pode perder comprimento e posição. Confirmar que o padrão é realmente toro vem antes de simplificar a imobilização.\n\n**Leia “Os padrões metafisários” e “Toro”, na Biblioteca.** Compare mecanismo e estabilidade antes de escolher a proteção.\n\n**Por que esta questão foi criada.** O tratamento simples do toro é apoiado por ensaios e contrasta com a imobilização maior de fraturas instáveis. O simulado testa essa distinção útil para evitar tratamento excessivo ou insuficiente.",
+      "correta": "**D: compressão axial; tala removível por três semanas.** A combinação reúne mecanismo e método dos autores. A estabilidade do padrão é o que permite reduzir a rigidez da proteção, sem tratar um galho verde como se fosse um toro.",
+      "incorretas": {
+        "A": "**Troca o mecanismo por tensão volar e usa imobilização longa por seis semanas.** Tensão volar participa do padrão com fragmento dorsal e cortical rompida, diferente do abaulamento estável por compressão. O resumo não exige esse gesso prolongado para o toro.",
+        "B": "**Acerta tala e tempo, mas erra a força.** A proteção simples não muda o diagnóstico mecânico: o toro é compressivo. Uma falha por tensão de uma cortical pode representar outro padrão cuja estabilidade precisa ser avaliada separadamente.",
+        "C": "**Acerta compressão axial e acrescenta gesso axilopalmar por seis semanas.** O resumo apresenta tala removível por três semanas para o toro. Mais imobilização não demonstrou ser necessária para esse padrão estável e pode dificultar a função inicial."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Toro, galho verde, completa e baioneta: o periósteo decide; Tratamento conservador: toro, galho verde, completa e gesso."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Toro, galho verde, completa e baioneta: o periósteo decide",
+          "Tratamento conservador: toro, galho verde, completa e gesso"
+        ],
+        "blocos": [
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-a798efa0",
+          "tratamento-conservador-toro-galho-verde-completa-c57e4835",
+          "tratamento-conservador-toro-galho-verde-completa-59f1d2a5"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "06fcd0e139f2a049f8cbc87538eec5c18bf547e7a0615c42c98b911fa76fd7a6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0973": {
+    "questaoSha256": "a314c58e395d7ea235a808e91de13db3383afde48636f58947a80b608a8ab278",
+    "comentarioAnteriorSha256": "e7150a4ab406d5ec4f2c6ab8091d23f1f2b087ccbefa1e989b48c46a41946771",
+    "comentario": {
+      "conceito": "**No desvio dorsal irredutível, a interposição habitual é periósteo volar ou pronador quadrado.** A fratura rompe o envelope periosteal de um lado e mantém uma manga no outro. O tecido do lado rompido pode entrar no foco e criar um obstáculo que não desaparece com mais força de tração.\n\nCom fragmento distal dorsal, o periósteo dorsal costuma permanecer íntegro e o volar romper. O resumo descreve o periósteo volar como o interposto mais frequente e o pronador quadrado como outro bloqueio. Tendões flexores e estruturas neurovasculares podem estar envolvidos raramente, o que exige atenção, mas não muda a resposta de maior frequência.\n\nNo deslocamento volar o mapa se inverte: periósteo dorsal ou extensores. Confundir o lado do fragmento com o lado rompido leva a escolher justamente o tecido oposto. Repetir tentativas fechadas pode aumentar edema e dificultar ainda mais a redução.\n\n**Leia a tabela “Fratura irredutível do rádio distal da criança”, na Biblioteca.** Construa o mapa antes de decidir qual estrutura precisa ser procurada.\n\n**Por que esta questão foi criada.** O TARO 2021 cobrou a interposição no deslocamento volar. Este simulado pede o padrão dorsal, para testar se o aluno entende a inversão e não apenas decorou o nome de um tendão.",
+      "correta": "**A: periósteo volar ou pronador quadrado.** São os obstáculos habituais no fragmento distal deslocado para dorsal. A redução aberta, quando indicada, deve reconhecer e retirar cuidadosamente a interposição, em vez de insistir em força sem resolver o bloqueio.",
+      "incorretas": {
+        "B": "**Braquiorradial aparece como força deformante em discussões de rotação, não como o interposto habitual desta tabela.** Produzir uma força sobre o rádio e estar preso entre os fragmentos são situações diferentes. O obstáculo mais frequente descrito é o periósteo volar.",
+        "C": "**Periósteo dorsal e extensores correspondem ao deslocamento volar.** As estruturas são reais e importantes, mas pertencem ao padrão reverso. A direção dorsal do fragmento aqui preserva a manga dorsal e rompe o lado volar.",
+        "D": "**Estruturas neurovasculares ou flexores podem estar interpostos raramente.** A opção não é a melhor resposta para “geralmente”, que exige a frequência relativa descrita. O reconhecimento de uma possibilidade rara não autoriza substituir o par habitual, e suspeita de aprisionamento nervoso deve ser valorizada individualmente."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Toro, galho verde, completa e baioneta: o periósteo decide; O mecanismo e a regra da rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Toro, galho verde, completa e baioneta: o periósteo decide",
+          "O mecanismo e a regra da rotação"
+        ],
+        "blocos": [
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-c8bb6a6f",
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-11988e3b",
+          "o-mecanismo-e-a-regra-da-rotacao-07a94c6a"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "585c4efd3192a44278ae512afd038bb85cc477af6cf5fc3419df7774ef765cd2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0974": {
+    "questaoSha256": "33318d49dda7ac372aa963e5882fc8e8acb64c04503b773d948c284cd566f837",
+    "comentarioAnteriorSha256": "b2ecc546cdf3681d0cf60a136870b0419b3e251770ad175312f21245e88a3070",
+    "comentario": {
+      "conceito": "**O primeiro tempo da redução da baioneta dorsal é hiperestender o fragmento distal para relaxar a manga periosteal dorsal.** Parece contraintuitivo aumentar a deformidade, mas o objetivo é liberar a tensão que impede recuperar comprimento e encaixar as extremidades.\n\nA sequência descrita é hiperextensão, tração longitudinal com contratração e, depois, flexão do fragmento distal para corrigir translação e angulação. A correção rotacional, a radioscopia e o gesso moldado completam o tratamento. O enunciado pergunta a primeira etapa, não a direção final do alinhamento.\n\nTração pura com pesos pode tensionar o periósteo dorsal íntegro e dificultar a redução. Também não se deve transportar esse procedimento de fratura completa metafisária para uma fise tardia, que exige particular cautela contra manipulação forçada.\n\n**Leia “Fratura completa desviada: a manobra”, na Biblioteca.** Entenda o papel do periósteo em cada etapa, em vez de resumir a redução a puxar o membro.\n\n**Por que esta questão foi criada.** A sequência da baioneta é um ponto técnico com chance de prova porque o primeiro movimento é diferente da correção final. O simulado separa relaxar a manga, recuperar comprimento e corrigir o desvio.",
+      "correta": "**C: hiperextensão do fragmento distal.** Ela relaxa a manga dorsal preservada. Depois vêm tração e flexão corretiva; conhecer o movimento inicial sem sua finalidade pode levar a confundi-lo com a posição de tratamento definitiva.",
+      "incorretas": {
+        "A": "**Tração longitudinal participa da sequência, mas não é o primeiro tempo apresentado.** Pesos podem aumentar a tensão da manga dorsal e impedir recuperar comprimento. A hiperextensão inicial procura justamente remover esse obstáculo mecânico.",
+        "B": "**Flexão é a correção posterior do desvio, não a etapa inicial.** Antes de levar o fragmento para volar, é preciso permitir que as extremidades recuperem comprimento. Tentar apenas flexionar uma baioneta ainda cavalgada ignora o bloqueio periosteal.",
+        "D": "**Supinação forçada não substitui a liberação da manga e a recuperação de comprimento.** Rotação deve ser corrigida conforme o padrão e a estabilidade, mas não é a primeira etapa da sequência descrita. A palavra “forçada” tampouco deve incentivar tentativas repetidas sem controle."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Tratamento conservador: toro, galho verde, completa e gesso; Toro, galho verde, completa e baioneta: o periósteo decide; Fise: a redução tardia e a parada do crescimento."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Tratamento conservador: toro, galho verde, completa e gesso",
+          "Toro, galho verde, completa e baioneta: o periósteo decide",
+          "Fise: a redução tardia e a parada do crescimento"
+        ],
+        "blocos": [
+          "tratamento-conservador-toro-galho-verde-completa-984d73aa",
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "472b45ca4aba33137fb284a2dce6552fd6f65f407d5aeb7c109a69ea28af8a79"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0975": {
+    "questaoSha256": "861f309abefabbf4e975f44f32f4f9fcaab2d09a74ce5e4589fc86610139d24a",
+    "comentarioAnteriorSha256": "e14c08d094006b3b70f67130373f0faa9760112bdfec3ccbd6c46fd7cdfab12e",
+    "comentario": {
+      "conceito": "**A perda de redução radiográfica após redução fechada e gesso ocorre em cerca de 20% a 30% das fraturas desviadas do rádio distal infantil no resumo.** Esse é o evento de o alinhamento piorar no seguimento, não a frequência de pseudartrose, parada fisária ou deformidade funcional definitiva.\n\nBaioneta, desvio inicial completo, translação residual e gesso inadequado aumentam o risco. A fratura completa perde mais posição que a incompleta. Mesmo um gesso bem moldado não elimina o risco em padrões muito instáveis; por isso uma boa radiografia inicial não encerra o acompanhamento.\n\nO controle semanal nas primeiras duas a três semanas permite reconhecer a mudança e decidir entre manter, corrigir o gesso, remanipular ou estabilizar, conforme padrão e idade. A ressalva fisária é importante: a janela e o risco de nova manipulação não são iguais aos de toda fratura metafisária.\n\n**Leia “Perda de redução e consolidação viciosa”, na Biblioteca.** Diferencie redesvio, consolidação viciosa e resultado final depois da remodelação.\n\n**Por que esta questão foi criada.** O TEOT já cobrou a complicação distal mais comum. Este simulado pede a frequência do evento que a precede, reforçando a importância prática dos retornos iniciais.",
+      "correta": "**C: 20% a 30%.** É a faixa apresentada para perda de redução após tratamento fechado. Não implica que todos esses pacientes terão deformidade permanente ou precisarão de cirurgia, mas mostra por que o seguimento não pode ser dispensado.",
+      "incorretas": {
+        "A": "**Menos de 2% subestima bastante o redesvio do conjunto descrito.** Esse número transmitiria falsa segurança após a primeira redução. O resumo o trata como evento comum, especialmente em padrões completos e muito deslocados.",
+        "B": "**Cerca de 4% não é a faixa de redesvio.** Um valor dessa ordem aparece no capítulo para parada de crescimento após fraturas fisárias do rádio, que é outro evento e tem outro denominador. Misturar complicações produz uma estimativa incorreta de seguimento.",
+        "D": "**70% a 80% superestima a perda de redução global apresentada.** Risco alto em subgrupos ou outro percentual anatômico não deve substituir a taxa de 20% a 30% do resumo. O seguimento é necessário sem declarar falha quase universal do gesso."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Perda de redução e consolidação viciosa; Fise: a redução tardia e a parada do crescimento."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Perda de redução e consolidação viciosa",
+          "Fise: a redução tardia e a parada do crescimento"
+        ],
+        "blocos": [
+          "perda-de-reducao-e-consolidacao-viciosa-17110572",
+          "perda-de-reducao-e-consolidacao-viciosa-90affede",
+          "perda-de-reducao-e-consolidacao-viciosa-e565f5f5",
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-65e3a894",
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "956bc14fc58b9f4967d096c69a86307965b9e2974cef840c8958c472d85f3f99"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0976": {
+    "questaoSha256": "39010e6704783053c00ad1e91af49c3ed0e80ee49532a7e5f7ef2a1ec30f1910",
+    "comentarioAnteriorSha256": "3b4a1616332e526875d3a64a87e958ae1831e0150f48d6fef61ed18a31cad058",
+    "comentario": {
+      "conceito": "**Índice do gesso igual ou menor que 0,7 indica moldagem adequada no rádio distal segundo o critério apresentado.** O índice é o diâmetro interno do gesso no perfil dividido pelo diâmetro no AP, medidos no nível da fratura. Trocar numerador e denominador muda o significado do valor.\n\nA ideia é um gesso com formato compatível com o antebraço e bom molde interósseo, em vez de um cilindro redondo. Quanto mais os dois diâmetros se aproximam, mais a razão se aproxima de um. O número descreve a forma do molde, não o alinhamento ósseo nem a condição da pele.\n\nTrês pontos e molde no foco são importantes para manter a redução. Os ensaios do resumo mostram que um gesso curto bem moldado pode equivaler ao longo. Portanto, comprimento do gesso não compensa formato ruim, e um índice bom também não elimina todo risco de redesvio em fratura instável.\n\n**Leia “Gesso longo ou curto, e o índice do gesso”, na Biblioteca.** Confira a direção da divisão e relacione o resultado ao formato da imobilização.\n\n**Por que esta questão foi criada.** O índice oferece um critério objetivo de uma decisão técnica importante para redesvio. O simulado testa fórmula e interpretação, sem tornar o número uma garantia isolada de sucesso.",
+      "correta": "**A: igual ou menor que 0,7.** É o limite de boa moldagem apresentado por Chess no resumo. Deve ser interpretado junto com três pontos, alinhamento e evolução, não como substituto de todo o exame do gesso.",
+      "incorretas": {
+        "B": "**0,8 a 0,9 fica acima do limite informado e aproxima os dois diâmetros.** O formato é mais circular do que o recomendado pelo critério. Essa razão não deve ser considerada adequada apenas por ainda ser menor que um.",
+        "C": "**Próximo de 1 significa diâmetros sagital e coronal semelhantes.** Isso representa um gesso redondo, justamente o formato que o princípio de Chess procura evitar. A estabilidade não depende apenas de envolver todo o antebraço com material.",
+        "D": "**Acima de 1,2 se afasta ainda mais do limite apresentado.** Com a fórmula correta, o diâmetro no perfil supera o do AP. Se a medição produziu esse resultado, é preciso conferir molde e técnica, inclusive se a razão foi invertida, sem aceitá-lo como boa moldagem."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Tratamento conservador: toro, galho verde, completa e gesso; Perda de redução e consolidação viciosa."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Tratamento conservador: toro, galho verde, completa e gesso",
+          "Perda de redução e consolidação viciosa"
+        ],
+        "blocos": [
+          "tratamento-conservador-toro-galho-verde-completa-47647c4c",
+          "tratamento-conservador-toro-galho-verde-completa-0b5fde65",
+          "perda-de-reducao-e-consolidacao-viciosa-90affede"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "17ed071aadd488f45655e1555000d1d3e411cea6c934524366d97364a0941521"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0977": {
+    "questaoSha256": "868cb605a5856b737322b18ec6dac34133386673e4fe8146bf45e15b1c321171",
+    "comentarioAnteriorSha256": "ff214dde3019b8a672171368efe0512f35c7a8fa536a14e7ea5e67186d79879c",
+    "comentario": {
+      "conceito": "**Angulação sagital próxima da fise distal tem o maior potencial de remodelação entre as opções.** O punho se move principalmente em flexão e extensão, e a correção é mais favorável quando a deformidade está no plano desse movimento e ainda existe crescimento suficiente.\n\nO resumo organiza a decisão por três fatores: crescimento restante, distância da fise e relação com o plano de movimento. Uma criança pequena com deformidade extra-articular junto da fise tem situação diferente de um adolescente próximo da maturidade ou de uma fratura articular com degrau.\n\nAngulação frontal remodela menos; malrotação não deve ser aceita com a expectativa de crescimento corretivo. Degrau articular também exige restaurar congruência, não esperar que o mecanismo usado para uma angulação extra-articular o resolva. Assim, “a criança remodela” é uma frase incompleta sem definir qual deformidade.\n\n**Leia “Remodelação e o que se aceita”, na Biblioteca.** Identifique plano, articulação e crescimento restante antes de aceitar um desvio residual.\n\n**Por que esta questão foi criada.** A banca já cobrou a relação entre nível e remodelação. Este simulado distingue os tipos de deformidade, que mudam a segurança de observar em vez de corrigir.",
+      "correta": "**D: angulação sagital com ápice volar.** É uma deformidade no plano de flexão/extensão, perto da fise mais ativa. A vantagem depende de crescimento restante e magnitude adequada; não significa aceitar qualquer ângulo em qualquer idade.",
+      "incorretas": {
+        "A": "**Malrotação não tem o mesmo potencial corretivo.** O resumo a identifica como deformidade que não remodela e não aceita na redução. O crescimento que ajuda uma angulação sagital não deve ser usado para justificar rotação residual.",
+        "B": "**Angulação frontal pode remodelar, mas menos que a sagital.** Desvio radial importante pode persistir e limitar rotação. Entre dois planos extra-articulares, o alinhado ao movimento do punho é o mais favorável.",
+        "C": "**Degrau intra-articular de 3 mm ultrapassa o limite de 2 mm discutido.** A questão da congruência articular é diferente de corrigir angulação de uma metáfise próxima da fise. Não se deve esperar remodelação para tornar esse degrau a deformidade mais tolerável."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Remodelação e o que se aceita; Tratamento cirúrgico: quando e como."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Remodelação e o que se aceita",
+          "Tratamento cirúrgico: quando e como"
+        ],
+        "blocos": [
+          "remodelacao-e-o-que-se-aceita-91d8ddd3",
+          "remodelacao-e-o-que-se-aceita-96930aef",
+          "remodelacao-e-o-que-se-aceita-d257722a",
+          "remodelacao-e-o-que-se-aceita-7f295cc7",
+          "remodelacao-e-o-que-se-aceita-707ea452",
+          "tratamento-cirurgico-quando-e-como-12c9f9ef"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "7529af5398e8d8af38ec07bf8dcf1fb6693ca5dcb3c75883201703d3c9e2feaf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0978": {
+    "questaoSha256": "014c7e255d275fe996d77a40b4d9bcc5bca2972446580b742c49ed9ab0c32e24",
+    "comentarioAnteriorSha256": "e38db921f5893fc65c129be185203e0c34c90bd400d5f925647dde21a1bd9f87",
+    "comentario": {
+      "conceito": "**No décimo dia de uma lesão fisária, não se deve forçar nova redução apenas para corrigir 15 graus de angulação dorsal em uma criança com crescimento restante.** A decisão considera o risco de lesar a fise durante a remanipulação tardia e a capacidade de remodelação dessa deformidade extra-articular.\n\nO resumo recomenda redução atraumática precoce e cautela depois de sete dias. Angulação em extensão menor que 20 graus com mais de dois anos de crescimento costuma remodelar. O menino de nove anos do enunciado está muito mais próximo desse cenário do que de um adolescente no fim do crescimento.\n\nManter imobilização não significa abandonar o seguimento. É preciso acompanhar alinhamento, consolidação, função e crescimento fisário. Uma deformidade persistente com repercussão futura pode mudar a discussão, mas não indica osteotomia imediata após consolidar uma angulação ainda com chance de correção.\n\n**Leia “Fise: a redução tardia e a parada do crescimento”, na Biblioteca.** Compare o benefício radiográfico de uma nova manobra com o dano que ela pode acrescentar.\n\n**Por que esta questão foi criada.** O TARO 2008 cobrou o prazo de sete dias. O simulado transforma esse número em uma decisão clínica, com idade, tipo de fratura e angulação definidos.",
+      "correta": "**C: manter a imobilização e acompanhar a remodelação.** O retorno tardio, a lesão fisária e a angulação dorsal de 15 graus favorecem evitar manipulação forçada. A proteção da cartilagem de crescimento pesa mais que aperfeiçoar imediatamente essa imagem.",
+      "incorretas": {
+        "A": "**Nova sedação não elimina o risco mecânico de remanipular a fise tardia.** O problema não é apenas dor durante a redução, mas agressão adicional à cartilagem. No cenário definido, há perspectiva de remodelação sem expor a placa a essa manobra.",
+        "B": "**Redução aberta e fios acrescentam intervenção sem a indicação descrita.** O enunciado não informa irredutibilidade articular, ameaça neurovascular ou crescimento esgotado. Angulação extra-articular com potencial corretivo não deve ser tratada como falha que exige abertura automática.",
+        "D": "**Osteotomia assim que consolidar antecipa uma correção que pode ser desnecessária.** O resumo recomenda observar remodelação antes de indicar osteotomia de deformidade residual apropriada para crescimento. A cirurgia fica para situações persistentes e relevantes, não para toda angulação inicial de 15 graus."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Fise: a redução tardia e a parada do crescimento; Perda de redução e consolidação viciosa; Remodelação e o que se aceita."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Fise: a redução tardia e a parada do crescimento",
+          "Perda de redução e consolidação viciosa",
+          "Remodelação e o que se aceita"
+        ],
+        "blocos": [
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-a891f812",
+          "perda-de-reducao-e-consolidacao-viciosa-406e8a1a",
+          "remodelacao-e-o-que-se-aceita-96930aef"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "b3dd419b622815e1a3ee1dcff93d63d6aceef8016d49a2474f6de2714b6fce7e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0979": {
+    "questaoSha256": "6865890de39aa0fec7a4921c0ef52d6b73c354d4c18d867b28464c1fd2f2b67e",
+    "comentarioAnteriorSha256": "b37f34c02e97cdbc7fb21db0a41ed1bd05c30db0bc00294923e7164c92f42fd5",
+    "comentario": {
+      "conceito": "**A parada do crescimento é muito mais frequente na fise distal da ulna que na do rádio nas séries do resumo.** Os valores aproximados são 4% no rádio e 10% a 55% na ulna. São faixas de séries específicas, não uma probabilidade idêntica para toda fratura de qualquer gravidade.\n\nAs consequências também dependem de qual osso deixa de crescer. Quando o rádio para e a ulna continua, pode surgir variância ulnar positiva, impacto e lesão da fibrocartilagem. Quando a ulna para, o rádio pode arquear em direção a uma ulna relativamente curta, com incongruência e limitação da rotação.\n\nPor isso o seguimento não termina necessariamente com a união óssea. O resumo descreve controle radiográfico posterior para reconhecer parada e desequilíbrio precocemente. Fratura do estiloide e fratura da fise ulnar não são a mesma lesão e não devem receber automaticamente a mesma estimativa de risco.\n\n**Leia “Parada do crescimento do rádio” e “Parada do crescimento da ulna”, na Biblioteca.** Relacione risco, osso afetado e consequência geométrica.\n\n**Por que esta questão foi criada.** O equivalente pediátrico de Galeazzi inclui a fise ulnar, cujo risco elevado pode passar despercebido depois de uma boa redução. O simulado testa uma assimetria relevante para acompanhamento.",
+      "correta": "**B: cerca de 4% no rádio e 10% a 55% na ulna.** O ponto central é a diferença entre as fises, além da amplitude das séries ulnares. Esses valores precisam ser usados no contexto, sem aplicar o maior percentual ulnar ao rádio.",
+      "incorretas": {
+        "A": "**Repete o valor radial para a ulna e apaga a assimetria.** A fonte descreve parada ulnar muito mais frequente. Uma radiografia de consolidação satisfatória não torna esse seguimento dispensável.",
+        "C": "**Eleva a frequência radial para 25% e reduz a ulna a uma faixa estreita.** Nenhum desses ajustes reproduz os dados apresentados. A comparação deve respeitar tanto o osso quanto a população a que o número se refere.",
+        "D": "**Inverte a distribuição principal.** Uma frequência próxima de 50% aparece em séries ulnares, não como regra radial. O resumo informa cerca de 4% para o rádio e risco substancialmente maior para a ulna."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Fise: a redução tardia e a parada do crescimento; Ulna distal, estiloide e fibrocartilagem triangular."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Fise: a redução tardia e a parada do crescimento",
+          "Ulna distal, estiloide e fibrocartilagem triangular"
+        ],
+        "blocos": [
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-65e3a894",
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-1504c178",
+          "fise-a-reducao-tardia-e-a-parada-do-crescimento-85174728",
+          "ulna-distal-estiloide-e-fibrocartilagem-triangul-605affb0"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "a29f52bf6e58906d75d7c6f2b42b6e8c3620b24c566dd1f1a573fea33781a1c0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0980": {
+    "questaoSha256": "5470c5d28e49df2e4881017c8f8349633207ff6ee97d34c666f036a64af655bc",
+    "comentarioAnteriorSha256": "f96195b905ed1ea10457521a6cf6d90ccd907a4e48b6761de8f55db386851885",
+    "comentario": {
+      "conceito": "**Ápice volar do rádio com cabeça ulnar para volar corresponde ao tipo de supinação do Galeazzi pediátrico; a posição corretiva é pronação, com gesso axilopalmar por seis semanas.** O enunciado fornece o padrão necessário para escolher a rotação, em vez de pedir uma posição universal.\n\nO Galeazzi da criança pode envolver luxação verdadeira da radioulnar distal ou, mais frequentemente, fratura da fise distal da ulna, seu equivalente. O perfil verdadeiro é importante para não errar o sentido do desvio. Depois da redução, a estabilidade deve ser conferida dinamicamente.\n\nAo contrário do adulto, o tratamento conservador é a primeira linha em muitos casos pediátricos. Adolescente com fratura completa e desviada, irredutibilidade ou falha de manutenção são cenários diferentes. A rotação do gesso deve corresponder à estabilidade obtida, e o padrão oposto, de ápice dorsal, se relaciona à supinação.\n\n**Leia “Os dois tipos do Galeazzi da criança”, na Biblioteca.** Ligue ápice do rádio, direção da ulna e rotação corretiva no mesmo esquema.\n\n**Por que esta questão foi criada.** O TEPOP 2024 cobrou uma rotação sem especificar o padrão. O simulado fornece a direção do desvio, permitindo escolher a posição de modo anatômico.",
+      "correta": "**B: pronação por seis semanas.** É o par descrito para a fratura incompleta de ápice volar e ulna volar. A resposta não significa que todo Galeazzi infantil deva ficar pronado, pois o padrão de pronação tem a lógica oposta.",
+      "incorretas": {
+        "A": "**Acerta a rotação do caso e encurta o período para três semanas.** O resumo apresenta gesso axilopalmar por seis semanas para esse tratamento. O tempo curto do toro não deve ser transferido para uma fratura com lesão radioulnar distal.",
+        "C": "**Troca rotação e duração.** Supinação corresponde ao outro tipo descrito, e três semanas não é o período indicado para o padrão deste enunciado. A combinação deve vir do perfil e da estabilidade, não apenas do hábito de supinar lesões distais.",
+        "D": "**Acerta seis semanas e inverte a posição.** Supinação é a redução/estabilização descrita para ápice dorsal e ulna dorsal. Aqui o rádio tem ápice volar e a cabeça ulnar está volar, o que direciona para pronação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: O Galeazzi da criança."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "O Galeazzi da criança"
+        ],
+        "blocos": [
+          "o-galeazzi-da-crianca-0f8de8b6",
+          "o-galeazzi-da-crianca-e451cffa",
+          "o-galeazzi-da-crianca-9385ee8d"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "26761e249c355e04292d73219d563f0082b1c10ad1cccef6d7390a2321001a31"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0981": {
+    "questaoSha256": "2e7ffe3de0c550b693a7553957a1efa231838f9bc2050ef1a522fc08c12de32d",
+    "comentarioAnteriorSha256": "d773fb8976c1d6b8ffe0d3f652d3b1393f2a4f03aee9af33fe33ea9cacf53dd9",
+    "comentario": {
+      "conceito": "**Fratura fisária desviada com neuropatia do mediano e grande edema volar favorece redução fechada e fixação percutânea com fio liso.** A estabilização permite manter curativo e imobilização menos constritivos, em vez de depender de flexão extrema ou molde volar apertado para segurar a redução.\n\nO periósteo volar rompido deixa o sangramento dissecar os tecidos volares e o túnel do carpo. Aumentar pressão com gesso ou posicionamento pode manter o sofrimento neural. Por isso o resumo apresenta esse cenário como uma das melhores indicações de fixação.\n\nContusão ou tração do nervo pode melhorar após redução; compressão persistente no túnel é outra situação e pode exigir descompressão. Escolher fios não encerra o exame neurológico nem autoriza esperar uma ameaça compressiva estabelecida melhorar sozinha. Nervo normal antes e alterado depois também exige pensar em aprisionamento.\n\n**Leia “Neuropatia, edema e cotovelo flutuante”, na Biblioteca.** Avalie redução, estabilidade e pressão como decisões conectadas, sem substituir o cuidado com o nervo por uma boa radiografia.\n\n**Por que esta questão foi criada.** O TARO 2015 cobrou a urgência do túnel do carpo agudo. Este simulado aborda a estabilização da fratura que permite proteger as partes moles nesse cenário.",
+      "correta": "**D: redução fechada e fio liso percutâneo.** É a conduta preferida para obter estabilidade sem exigir imobilização apertada ou flexão excessiva. A evolução do mediano precisa continuar sendo acompanhada e compressão persistente deve ser tratada.",
+      "incorretas": {
+        "A": "**Flexão do punho e gesso constritivo podem manter a neuropatia e elevar pressões.** Segurar a redução não justifica acrescentar compressão volar. A fixação proposta em D permite proteção mais frouxa dos tecidos já edemaciados.",
+        "B": "**Esperar o edema regredir deixa o fragmento desviado e o nervo sob possível pressão ou tração.** A redução é parte de remover a agressão. Uma tala pode integrar a proteção, mas não substitui tratar o desvio e avaliar o componente compressivo.",
+        "C": "**Placa volar bloqueada não é a primeira escolha descrita para a fise imatura nesse cenário.** O resumo reserva placas sobretudo para maior maturidade e padrões específicos. Fio liso oferece estabilização com menor exigência de exposição, sem dispensar os cuidados fisários e neurais."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, capítulo 8 (Fractures of the Distal Radius and Ulna). A Biblioteca identifica a 9ª edição (2020); o próprio resumo ressalva que essa edição é provável, sem confirmação impressa nas páginas disponíveis. Seções: Tratamento cirúrgico: quando e como."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Tratamento cirúrgico: quando e como"
+        ],
+        "blocos": [
+          "tratamento-cirurgico-quando-e-como-92091ec3",
+          "tratamento-cirurgico-quando-e-como-bf30a4c4",
+          "tratamento-cirurgico-quando-e-como-d9e0edcd",
+          "tratamento-cirurgico-quando-e-como-f282f618"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "3fb731ce4c93cb9bb88d89f5b108bd5eec2839b86747e5012a687f78677a1948"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

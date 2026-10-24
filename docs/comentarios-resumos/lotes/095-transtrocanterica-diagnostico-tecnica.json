@@ -1,0 +1,371 @@
+{
+  "trauma-1571": {
+    "questaoSha256": "d9bdd5a24991a509fd69e1de8c2ba99687e108e9c733baa175ce3b18bd97be19",
+    "comentarioAnteriorSha256": "786e7827e5d407269ca87a16476fcbf42fe0cc4149dcd51cf1d689d7566122bb",
+    "comentario": {
+      "conceito": "A fratura trocantérica não se desloca como uma peça única. A **diáfise vai medial e posteriormente por adutores e isquiotibiais**; se o **trocânter menor está solto, o iliopsoas o leva medial e cranialmente**. É a alternativa A.\n\nDepois que o osso perde continuidade, cada fragmento continua ligado a músculos que podem puxá-lo em direções diferentes. O resumo descreve ainda o trocânter maior em abdução e rotação externa por glúteo médio e rotadores externos curtos. Esse terceiro movimento ajuda a não atribuir à diáfise uma força que está agindo sobre o trocânter maior (Rockwood, 10ª ed., cap. 54, “Anatomia e forças deformantes”).\n\nA palavra “medial” aparece nos dois movimentos do enunciado, mas o fragmento e o outro componente da direção mudam: posterior na diáfise, cranial no trocânter menor. A resposta não se resolve escolhendo um músculo que genericamente puxe para dentro; exige localizar onde ele continua agindo após a separação óssea.\n\nA medialização diafisária se torna particularmente importante se falta o batente da parede lateral. O capítulo a relaciona à perda de contato e de offset. Por isso conhecer a força não serve apenas para explicar a radiografia: ajuda a compreender a instabilidade que a redução e o implante precisam controlar.\n\nLeia no resumo da Biblioteca os três fragmentos lado a lado. A redução deve reconstruir suas relações, em vez de supor que tração longitudinal isolada apague todos os desvios.\n\n**Por que esta questão foi criada.** Compara dois fragmentos que podem ir para medial por músculos diferentes, evitando confundir a diáfise com o trocânter menor.",
+      "correta": "**A: adutores e isquiotibiais; iliopsoas.** Conserva a ação sobre a diáfise e a ação específica sobre o trocânter menor solto.\n\nA associação é anatômica: o músculo precisa continuar ligado ao fragmento cujo desvio se quer explicar.",
+      "incorretas": {
+        "B": "**Acerta o par diafisário e troca a força do trocânter menor.** O resumo atribui a direção medial e cranial desse fragmento ao iliopsoas, não ao piriforme.\n\nReconhecer um músculo da região do quadril não basta para atribuir-lhe a tração sobre qualquer trocânter.",
+        "C": "**Acerta o iliopsoas e transfere para a diáfise os músculos do trocânter maior.** Glúteo médio e rotadores curtos são associados à abdução e rotação externa desse trocânter.\n\nO primeiro par da pergunta precisa explicar a diáfise medializada e posterior, não o fragmento maior.",
+        "D": "**Troca as duas relações.** O par inicial pertence ao movimento do trocânter maior, e o trocânter menor é puxado pelo iliopsoas.\n\nA melhor forma de evitar essa combinação é localizar primeiro o fragmento e depois a força que permaneceu ligada a ele."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Anatomia e forças deformantes; Classificação: AO 31A e a parede lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Anatomia e forças deformantes",
+          "Classificação: AO 31A e a parede lateral"
+        ],
+        "blocos": [
+          "anatomia-e-forcas-deformantes-9923fb88",
+          "classificacao-ao-31a-e-a-parede-lateral-ea601e05"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "2ecae1ad16f3a4f17563243f148d5a49bbcc3d4729e2a11b63d0224ab4af753a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1572": {
+    "questaoSha256": "9774d28060fc7ef0da3759aa0d2a82a677519de0414a7bc4f3ca050a26b907a0",
+    "comentarioAnteriorSha256": "ef31f6f9e93f5c7dd41498d4c83b5b0dba93a5a628d87c525144edbc5abd656b",
+    "comentario": {
+      "conceito": "A imagem já confirmou que a fratura é **isolada do trocânter maior**, sem prolongamento intertrocantérico. Nesse cenário, o capítulo indica banda de tensão se o desvio for **maior que 1 cm**, alternativa B.\n\nA confirmação por tomografia ou ressonância é parte decisiva do enunciado. Uma aparente fratura trocantérica isolada pode ser a porção visível de um traço que se estende entre os trocânteres; nesse caso, o problema não seria apenas o tamanho do desvio do fragmento maior. O resumo também considera o traço que cruza a linha média da região intertrocantérica uma situação para fixação (Rockwood, 10ª ed., cap. 54, “Anatomia e forças deformantes”).\n\nO trocânter maior é levado em abdução e rotação externa por glúteo médio e rotadores externos curtos. Se o fragmento consolida muito deslocado, a função abdutora pode ficar insuficiente; o capítulo relaciona essa preocupação ao sinal de Trendelenburg. Assim, a indicação não decorre apenas de obter uma radiografia mais bonita, mas de conservar a função das estruturas ligadas ao fragmento.\n\nSem desvio, o resumo recomenda tratamento não cirúrgico, analgesia e carga total. Essa orientação não deve ser estendida automaticamente a toda fratura que pareça pequena na primeira radiografia, porque é preciso excluir a extensão oculta e avaliar o deslocamento.\n\nNo resumo da Biblioteca, compare a fratura realmente isolada ao traço que invade a região intertrocantérica. O limite numérico só responde à pergunta depois que a anatomia do traço foi esclarecida.\n\n**Por que esta questão foi criada.** Associa o limiar de desvio à confirmação de isolamento, evitando aplicar tratamento conservador a uma fratura com extensão não reconhecida.",
+      "correta": "**B: mais de 1 cm.** É o limiar de desvio indicado pelo capítulo para banda de tensão na fratura isolada do trocânter maior.\n\nA imagem sem extensão intertrocantérica já estabeleceu a condição necessária para julgar o desvio isoladamente.",
+      "incorretas": {
+        "A": "**5 mm antecipa o limiar em relação à fonte.** O capítulo cita mais de 1 cm, e não 5 mm, para essa indicação por deslocamento.\n\nIsso não dispensa avaliar o traço e a função; significa apenas que a opção não reproduz o critério numérico perguntado.",
+        "C": "**2 cm exige um deslocamento maior que o limiar descrito.** A indicação já é apresentada acima de 1 cm.\n\nEsperar esse valor pode deixar sem correção uma separação que já ameaça a função dos abdutores no raciocínio do capítulo.",
+        "D": "**3 cm eleva ainda mais o limite sem apoio no texto.** A recomendação não exige esse grau de separação para considerar a banda de tensão.\n\nO objetivo é proteger a relação entre fragmento e aparelho abdutor antes de aceitar uma consolidação muito deslocada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Anatomia e forças deformantes."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Anatomia e forças deformantes"
+        ],
+        "blocos": [
+          "anatomia-e-forcas-deformantes-a884c7c9",
+          "anatomia-e-forcas-deformantes-9923fb88"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "b3b7b93c1323f5cd929faa93d56cae8352d141861b4a9962e8b8efdb15fca223"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1574": {
+    "questaoSha256": "66a63c15e58186558822ab47a6089005321e149c700160a73e4c9129d0d8aa5e",
+    "comentarioAnteriorSha256": "fbcc2d04909aac24275913e585bc2aad7d156571a9ed46a65efd3f9bd39027e4",
+    "comentario": {
+      "conceito": "Depois do rádio distal, a segunda fratura associada mais comum descrita na transtrocantérica é a do **úmero proximal ipsilateral**. A frequência total de fraturas associadas é de **cerca de 4%**. É a alternativa C.\n\nO resumo informa rádio distal do mesmo lado em 2% e úmero proximal do mesmo lado em 1%. Esses valores descrevem locais específicos; os 4% referem-se ao conjunto dos pacientes com outra fratura. Não se deve usar a frequência de um osso como se fosse a de todas as associações, nem somar os dois grupos para afirmar que esgotam todos os casos (Rockwood, 10ª ed., cap. 54, “Quem sofre e o que esperar”).\n\nA queda de lado com apoio da mão do mesmo lado ajuda a compreender por que o membro superior ipsilateral aparece tanto. O quadril doloroso não elimina a necessidade de avaliar o restante do membro e as outras regiões atingidas. O capítulo também lembra trauma craniano e, menos frequentemente, fraturas da pelve.\n\nA questão começa na **segunda** associação, não na primeira. O rádio distal continua sendo o mais comum, mas a resposta aqui pede reconhecer o úmero proximal, conservar o lado e aplicar a frequência ao denominador correto.\n\nNo resumo da Biblioteca, confira a sequência e o mecanismo. Os números ajudam a orientar a atenção clínica, sem permitir presumir uma segunda fratura em todo paciente.\n\n**Por que esta questão foi criada.** Testa a associação que vem depois do rádio distal e distingue a frequência total da frequência de um local específico.",
+      "correta": "**C: úmero proximal ipsilateral; 4%.** O primeiro dado identifica a segunda associação e o segundo descreve o total de fraturas associadas.\n\nO úmero proximal corresponde a cerca de 1% no resumo; não confundir essa proporção específica com os 4% gerais.",
+      "incorretas": {
+        "A": "**Acerta a frequência geral e troca o lado.** O úmero proximal descrito é ipsilateral à fratura trocantérica.\n\nA lateralidade faz parte da associação ligada ao mecanismo de queda e não pode ser descartada como detalhe.",
+        "B": "**Troca o lado e eleva a frequência total.** O capítulo apresenta úmero proximal ipsilateral e cerca de 4% de outra fratura.\n\nNem a associação principal nem seu denominador correspondem ao par proposto.",
+        "D": "**Reconhece o osso e o lado, mas usa 10% em vez de 4%.** A alternativa conserva a anatomia e perde o dado populacional solicitado.\n\nEsse percentual não deve ser escolhido por parecer compatível com a gravidade do trauma; a pergunta pede o valor relatado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Quem sofre e o que esperar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Quem sofre e o que esperar"
+        ],
+        "blocos": [
+          "quem-sofre-e-o-que-esperar-5feda61f"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "e0670e1fd5f1ce14f24aa53032415afcf0b32df3244820018451165cc2aa2cc7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1575": {
+    "questaoSha256": "e00e21f078f35ab4d4cb6a24ace3fc523c6637e4907a24c534cfc9d04139e0d6",
+    "comentarioAnteriorSha256": "8c41c8753e5be93bc3d9d0d767d70b26a5251c26570b67728a0600d818fc55fb",
+    "comentario": {
+      "conceito": "A suspeita persiste apesar de AP e perfil de boa qualidade. A incidência radiográfica adicional descrita é **AP centrado no quadril com 10 graus de rotação interna**, alternativa D.\n\nO exame inicial do resumo inclui AP da pelve com ambos os quadris e perfil do lado afetado. O AP permite comparar alinhamento e comprimento com o lado íntegro, enquanto o perfil pode mostrar uma angulação que não fica evidente na primeira projeção. Quando esse conjunto não esclarece a suspeita, o AP centrado e em rotação interna é a tentativa adicional apresentada (Rockwood, 10ª ed., cap. 54, “Diagnóstico”).\n\nUma radiografia ainda inconclusiva não encerra a investigação. Se a dúvida persistir, o capítulo aponta **ressonância como melhor exame para fratura oculta**; se não estiver disponível, tomografia sem contraste. Elas também ajudam a reconhecer traços incompletos dos trocânteres e lesões de partes moles.\n\nA radiografia com tração tem outra utilidade descrita: avaliar melhor o traço, a parede lateral e lesão patológica. Portanto, não é um exame “errado” em todos os contextos. Apenas não é a incidência adicional especificada nessa sequência de suspeita ainda não confirmada.\n\nLeia no resumo da Biblioteca a investigação completa. A pergunta pede o próximo detalhe radiográfico, mas o cuidado real exige continuar se a suspeita clínica permanece, em vez de usar uma imagem negativa como exclusão automática.\n\n**Por que esta questão foi criada.** Distingue a incidência adicional na dúvida diagnóstica da imagem em tração usada para estudar o padrão da fratura.",
+      "correta": "**D: 10 graus de rotação interna.** É a incidência centrada no quadril recomendada pelo resumo quando as boas radiografias iniciais ainda deixam dúvida.\n\nPersistindo a suspeita, a investigação segue com ressonância ou tomografia, conforme disponibilidade.",
+      "incorretas": {
+        "A": "**Tração tem papel na análise do traço e da parede lateral, mas não é a resposta dessa sequência.** O capítulo a menciona também para ajudar a avaliar lesão patológica.\n\nNão se deve rejeitar sua utilidade geral nem substituir por ela a incidência específica em rotação interna perguntada.",
+        "B": "**Abdução máxima não corresponde à incidência adicional descrita.** O resumo propõe AP centrado com rotação interna, sem recomendar essa manobra para esclarecer a suspeita.\n\nA procura de outra projeção deve seguir a técnica indicada, não apenas movimentar o quadril até uma posição extrema.",
+        "C": "**Conserva o número e inverte o sentido da rotação.** A recomendação é interna, não externa.\n\nUma pequena diferença de palavra muda a posição do osso na imagem e não deve ser tratada como equivalente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Diagnóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Diagnóstico"
+        ],
+        "blocos": [
+          "diagnostico-7698aafa",
+          "diagnostico-2a41eac2"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "688d414918d2384ac1968900a28fc0a0b5195bc6c8c61242f2a06729b580b287"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1576": {
+    "questaoSha256": "65a8e94c3622f5bb7745044c5adb2dfd2b1d0976025a08b0aa7477bb15ace2f6",
+    "comentarioAnteriorSha256": "31e06ad02d2d841d6d80f2dd35fc265871fddc8eb2754e61218aefe3ed1105f9",
+    "comentario": {
+      "conceito": "O idoso deve ser otimizado e operado cedo, preferencialmente **em até 24 horas**. O resumo cita aumento de **10% na mortalidade em 30 dias** após atraso além de 24 horas no banco inglês. A alternativa C reproduz esse par.\n\nA informação é uma associação relatada numa base de dados; não significa aumento de dez pontos percentuais nem demonstra que uma hora isolada de atraso cause o mesmo efeito em qualquer paciente. Condição clínica e doenças de base influenciam tanto a possibilidade de operar quanto o prognóstico (Rockwood, 10ª ed., cap. 54, “Avaliação e preparo do idoso”).\n\nOperar cedo exige corrigir problemas tratáveis, como hipovolemia, anemia, distúrbios de coagulação e eletrólitos, descompensação cardíaca ou doença respiratória aguda. A meta não é levar um paciente descompensado imediatamente à sala só para cumprir o relógio; é remover atrasos evitáveis e fazer a preparação clínica em paralelo ao planejamento da cirurgia.\n\nO estudo HIP ATTACK citado comparou medianas de seis e 24 horas e não mostrou vantagem em acelerar ainda mais. Isso impede transformar o dado do atraso em uma regra de que cada encurtamento de prazo, por si, necessariamente melhora o resultado. O capítulo favorece cirurgia em até 24 horas após otimização, sem impor 12 horas como o prazo da questão.\n\nNo resumo da Biblioteca, leia o tempo cirúrgico junto do preparo. O aprendizado é agir com urgência organizada: corrigir o que precisa ser corrigido e não manter o idoso esperando por inércia.\n\n**Por que esta questão foi criada.** Relaciona o prazo preferencial à evidência de atraso, distinguindo associação de mortalidade de uma ordem de operar antes da estabilização clínica.",
+      "correta": "**C: 24 horas; 10%.** É o prazo preferencial e a associação de mortalidade descritos no banco inglês pelo resumo.\n\nO percentual não é uma previsão individual nem autoriza interpretar dez por cento como dez pontos percentuais.",
+      "incorretas": {
+        "A": "**Mantém o percentual, mas antecipa o prazo para 12 horas.** A recomendação apresentada é preferencialmente até 24 horas após otimizar o paciente.\n\nA urgência não permite criar um limite de 12 horas que a fonte não usou nessa comparação.",
+        "B": "**Troca os dois elementos.** O texto usa 24 horas e aumento de 10%, não 12 horas e 30%.\n\nNúmeros de prognóstico não devem ser escolhidos por intensidade aparente: o dado precisa conservar população, prazo e desfecho.",
+        "D": "**Acerta as 24 horas e aumenta a estimativa para 30%.** O resumo informa 10% para essa associação com mortalidade em 30 dias.\n\nNão se deve confundir a duração do seguimento, 30 dias, com o tamanho do aumento de risco."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Avaliação e preparo do idoso."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Avaliação e preparo do idoso"
+        ],
+        "blocos": [
+          "avaliacao-e-preparo-do-idoso-29f706c5",
+          "avaliacao-e-preparo-do-idoso-eebf137c"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "ef6fd9a4a90546fc8fcdea2480efb9f5f82ee082515b0cce0f5f3c4603814a3a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1577": {
+    "questaoSha256": "f5146c764c6d42142dcf230315a0102056457cd3f0724d0eaf8810d531fc1cc9",
+    "comentarioAnteriorSha256": "34e03609f88d943d7c11ddcb8599ce1097e2f1429687eedc705509c38b657e5f",
+    "comentario": {
+      "conceito": "A perda da parede lateral permite medialização que se associa a pior função e dor. Os valores relatados pelo capítulo são **mais de 50% para menor recuperação funcional** e **mais de 5 mm para mais dor pós-operatória**. É a alternativa A.\n\nA parede funciona como batente durante a impactação da fratura. Sem ela, os adutores podem levar a diáfise para medial, diminuindo contato e offset, com consolidação mais lenta e mais complicações. O número faz sentido dentro desse mecanismo, e não como um achado radiográfico sem consequência (resumo do Rockwood, 10ª ed., cap. 54, “Classificação: AO 31A e a parede lateral”).\n\nOs dois resultados usam **unidades diferentes**. Uma associação é expressa em percentual e a outra em milímetros; o resumo não permite convertê-las numa única escala nem dizer que 50% corresponde necessariamente a 5 mm. Também não são metas de tolerância abaixo das quais o cirurgião deva aceitar perda de redução.\n\nO dado ajuda a compreender a escolha de uma montagem que controle a diáfise nas fraturas instáveis. A haste cefalomedular fica no eixo e medializa menos nas comparações citadas; a placa de estabilização trocantérica pode acrescentar ao DHS um suporte que reproduza a parede lateral. Nenhuma dessas soluções dispensa uma redução adequada.\n\nNo resumo da Biblioteca, compare a função de batente aos desfechos. A indicação prática é conservar suporte e relações anatômicas, sem esperar atingir um número de pior prognóstico para reconhecer uma falha mecânica.\n\n**Por que esta questão foi criada.** Testa duas medidas de desfechos diferentes e exige conservar tanto a ordem quanto as unidades.",
+      "correta": "**A: 50%; 5 mm.** Conserva a medida percentual associada à função e a medida absoluta associada à dor.\n\nOs valores são associações relatadas, não limites que garantam ausência de problema abaixo deles.",
+      "incorretas": {
+        "B": "**Acerta o valor funcional e eleva para 10 mm o relacionado à dor.** A fonte já descreve mais dor acima de 5 mm.\n\nOs 10% de medialização de outra série com parafuso deslizante não devem ser transferidos para uma medida em milímetros.",
+        "C": "**Acerta os 5 mm e troca 50% por 75%.** O resultado funcional apresentado se associa a medialização acima de 50%.\n\nElevar o corte apaga a associação descrita em perdas menores que as oferecidas pela alternativa.",
+        "D": "**Aumenta os dois valores em relação à fonte.** O par correto é 50% e 5 mm, cada qual para um desfecho.\n\nA unidade é parte essencial do dado; não há uma regra única de “medialização grande” que substitua as duas comparações."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Classificação: AO 31A e a parede lateral; Escolha do implante."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Classificação: AO 31A e a parede lateral",
+          "Escolha do implante"
+        ],
+        "blocos": [
+          "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+          "escolha-do-implante-99aab52e",
+          "escolha-do-implante-627dbbee"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "68c540cd2cd9f0bf8107f911f0ef3934386ce79e881105fbad740083e056b558"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1580": {
+    "questaoSha256": "28277e274fe202ff1df4c1bccda402402bdb0f35ebaa005907c65bfa4d4dce07",
+    "comentarioAnteriorSha256": "f485ece9b9ddfefca8d8d095a2357e0a3763f54f196b4566881bf9b1339b0ec2",
+    "comentario": {
+      "conceito": "Para o traço que não se prolonga mais de **3 cm abaixo da região trocantérica**, o capítulo descreve resultados semelhantes com haste curta e longa. A **curta deve sempre ser bloqueada distalmente**. A alternativa A reúne a extensão e o requisito técnico.\n\nUma haste de cerca de 200 mm reduz tempo operatório e sangramento nessa comparação, mas sua escolha depende de onde termina a fratura. A extensão subtrocantérica precisa ser reconhecida; uma haste curta demais para esse padrão é um dos fatores relacionados a fratura junto de sua ponta (resumo do Rockwood, 10ª ed., cap. 54, “Escolha do implante” e “Complicações”).\n\nO bloqueio não é um detalhe dispensado porque a fratura parece proximal. O resumo o exige em toda haste curta e nas instáveis. Também informa que não há evidência estabelecendo superioridade geral de bloqueio estático sobre dinâmico; o dinâmico pode ter papel na transversa. Portanto, “precisa bloquear” e “qual tipo de bloqueio usar” são perguntas diferentes.\n\nO limite de 3 cm deve ser entendido no contexto da técnica e do padrão descritos, e não como regra isolada capaz de resolver toda extensão diafisária. A avaliação do traço completo, do comprimento do implante e da estabilidade continua necessária. Na Biblioteca, relacione o comprimento da haste aos fatores de fratura na ponta, evitando escolher o implante apenas para encurtar a operação.\n\n**Por que esta questão foi criada.** Une a seleção de comprimento ao bloqueio obrigatório, impedindo que uma vantagem da haste curta seja interpretada como autorização para deixá-la sem controle distal.",
+      "correta": "**A: 3 cm; bloqueada distalmente.** Reproduz a condição de extensão descrita e o requisito aplicado pelo capítulo a toda haste curta.\n\nA possibilidade de reduzir tempo e sangue depende de manter a indicação e a estabilidade da montagem.",
+      "incorretas": {
+        "B": "**Reconhece a extensão e omite um requisito explícito.** Toda haste curta deve ser bloqueada no protocolo descrito.\n\nA localização proximal da fratura não basta para dispensar o controle distal.",
+        "C": "**Mantém o bloqueio e amplia o limite para 5 cm.** O resumo usa 3 cm para a comparação de resultados entre curta e longa.\n\nO fato de a montagem estar bloqueada não torna indiferente quanto a fratura se estende abaixo da região trocantérica.",
+        "D": "**Amplia a extensão e dispensa o bloqueio.** Nenhum dos dois componentes reproduz a indicação descrita.\n\nUm implante curto demais para extensão subtrocantérica também aparece entre os fatores de fratura na ponta; comprimento e estabilidade precisam ser planejados juntos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Escolha do implante; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Escolha do implante",
+          "Complicações"
+        ],
+        "blocos": [
+          "escolha-do-implante-18036228",
+          "escolha-do-implante-feb15a49",
+          "complicacoes-fa2cbfe8"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "6a5c79de4901f2b488c241115324b85aff124d451b1dd67a1ef74917991b0cf8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1581": {
+    "questaoSha256": "067e60498b3c24248ba966b1377f034dc623f0dff682733b3581f54c973144c3",
+    "comentarioAnteriorSha256": "5ec579f34d149ee5dd09099bae66d9e53d7f9fffc07712f225e5ca677a115276",
+    "comentario": {
+      "conceito": "Na redução da trocantérica desviada, o índice de Garden ótimo descrito é **170 graus no AP e 180 graus no perfil**. É a alternativa C. O número do AP não é simplesmente o valor normal de uma imagem sem fratura.\n\nO resumo informa 160 graus como normal no AP, mas, na redução dessa fratura, favorece 170 e considera 160 a 175 aceitáveis, sempre evitando varo. No perfil, busca 180, com cabeça, colo, região trocantérica e diáfise em linha. Confundir referência normal e alvo da redução produz a alternativa B (Rockwood, 10ª ed., cap. 54, “Técnica: redução e parafuso cefálico”).\n\nA preferência por valgo leve tem uma razão mecânica: reduz o risco de cut-out e encurta menos o membro. Uma pequena abertura medial pode fechar com a impactação; já o varo tende a progredir e dificulta posicionar o fio cefálico baixo. A redução precisa criar uma condição favorável para o implante, não apenas satisfazer uma medida.\n\nO perfil não deve ser deixado em segundo plano depois de um bom AP. Translação ou angulação posterior precisam ser corrigidas antes da fixação, com os recursos de apoio e redução descritos. Um valor adequado numa projeção não demonstra que o outro plano esteja alinhado.\n\nNo resumo da Biblioteca, leia o índice junto da explicação de redução sem varo. A faixa aceitável é uma referência do capítulo, não motivo para aceitar deliberadamente uma redução pior quando há como melhorá-la.\n\n**Por que esta questão foi criada.** Distingue o índice normal no AP do alvo ótimo de redução da trocantérica e exige conferir também o perfil.",
+      "correta": "**C: 170 e 180 graus.** O primeiro é o alvo ótimo no AP para a redução trocantérica descrita; o segundo corresponde ao alinhamento no perfil.\n\nA avaliação angular deve acompanhar a inspeção da redução e da posição do fio cefálico.",
+      "incorretas": {
+        "A": "**Usa 160 no AP e também deixa o perfil em 160.** O AP de 160 é a referência normal citada e está na faixa aceitável, mas não é o ótimo perguntado; o perfil deve chegar a 180.\n\nA alternativa mistura uma referência real com um alinhamento sagital que não corresponde ao alvo.",
+        "B": "**Acerta o perfil e escolhe o valor normal do AP em vez do ótimo para a redução.** O capítulo distingue 160 normal de 170 ideal nessa situação.\n\nEssa diferença não significa chamar todo AP de 160 de inaceitável; a pergunta é especificamente pelo índice ótimo.",
+        "D": "**Acerta 180 no perfil e o transfere indevidamente ao AP.** Os alvos dos dois planos não são iguais.\n\nO formato da região proximal e a preferência por valgo leve exigem conservar a referência própria de cada incidência."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Técnica: redução e parafuso cefálico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Técnica: redução e parafuso cefálico"
+        ],
+        "blocos": [
+          "tecnica-reducao-e-parafuso-cefalico-ce769725",
+          "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+          "tecnica-reducao-e-parafuso-cefalico-f6d620c0"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "269696512a8c098f991c2f4135b3b5fc35521dd3e634117b1bd13419196cdd5a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1585": {
+    "questaoSha256": "7244bc4897b9ad96661805acc302968ad0fc150876f116ffb8ea8edb87dd3f58",
+    "comentarioAnteriorSha256": "9d1b1baae22c93e676da941e67ec2023b208385acaf7be86d5210799e59226d0",
+    "comentario": {
+      "conceito": "O parafuso deve chegar perto da articulação sem atravessá-la, e o sistema precisa conservar espaço para deslizar. O resumo recomenda **cerca de 5 mm da linha articular** e considerar **tubo curto se o parafuso mede 80 mm ou menos**. É a alternativa C.\n\nO DHS funciona com o parafuso cefálico deslizando dentro do tubo da placa. A impactação controlada é parte do mecanismo, não uma folga acidental. Quando o parafuso é curto, considerar um tubo mais curto ajuda a preservar o curso disponível; usar o maior tubo possível não é necessariamente a escolha mais funcional (Rockwood, 10ª ed., cap. 54, “Técnica: redução e parafuso cefálico”).\n\nA medida de 5 mm desta pergunta é uma distância em uma posição próxima da articulação. Ela não é a mesma coisa que a distância ponta-ápice, que soma as medidas no AP e no perfil e tem ideal até 25 mm. Trocar esses conceitos produz uma falsa aparência de precisão.\n\nA fonte também descreve 5 a 7 mm em relação ao osso subcondral na sequência técnica. Essas referências próximas devem ser lidas com seus marcos, e não usadas para transformar 2 mm em uma margem ideal alternativa. Posição no AP e no perfil, profundidade e redução precisam estar adequadas em conjunto.\n\nLeia no resumo da Biblioteca o posicionamento e o passo a passo do DHS. O objetivo é uma fixação profunda e segura que continue capaz de realizar o deslizamento planejado.\n\n**Por que esta questão foi criada.** Combina a margem articular com o espaço de deslizamento, mostrando que profundidade do parafuso e comprimento do tubo são decisões relacionadas.",
+      "correta": "**C: 5 mm; curto.** É a distância aproximada apresentada e o tubo a considerar com parafuso de até 80 mm.\n\nO tubo curto preserva curso de deslizamento; não autoriza aceitar posição periférica ou profundidade inadequada.",
+      "incorretas": {
+        "A": "**Reconhece o tubo curto e reduz a margem articular para 2 mm.** Essa não é a distância ideal oferecida pelo capítulo para o enunciado.\n\nA busca de compra óssea profunda não deve ser confundida com levar a ponta cada vez mais perto da articulação sem respeitar a referência técnica.",
+        "B": "**Troca a distância e a escolha do tubo.** O par descrito é cerca de 5 mm e considerar tubo curto.\n\nAumentar o comprimento do tubo num parafuso curto pode consumir o espaço que deveria permanecer disponível para deslizamento.",
+        "D": "**Mantém os 5 mm e erra o tubo indicado nessa condição.** Para parafuso de até 80 mm, o resumo recomenda considerar o curto.\n\nUma boa margem da ponta não garante que o sistema tenha curso adequado dentro do tubo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Técnica: redução e parafuso cefálico; Escolha do implante."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Técnica: redução e parafuso cefálico",
+          "Escolha do implante"
+        ],
+        "blocos": [
+          "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+          "tecnica-reducao-e-parafuso-cefalico-b883438a",
+          "tecnica-reducao-e-parafuso-cefalico-8125107d",
+          "escolha-do-implante-ff846328"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "320f8d18de2c642d5f0c2b2a6311ced5ca0da08061acdf7a67b0428a6d62314a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1589": {
+    "questaoSha256": "890f9592d23bc9ca815c133e325c57992dcdfd10bf1d48242fad0bcde6259800",
+    "comentarioAnteriorSha256": "5e866051a24a523d272bd2c5ff245b2a58a440fc6d049206d6f6bc84c824f68f",
+    "comentario": {
+      "conceito": "Na falta de união da trocantérica com haste, o capítulo descreve tentativa de **dinamização entre três e seis meses**. Ela pode ser ineficaz se a **extremidade lateral do parafuso cefálico ficou dentro da cortical**, impedindo o deslizamento necessário. É a alternativa A.\n\nDinamizar pretende permitir que o foco se aproxime e receba compressão funcional. Esse movimento exige um trajeto livre no componente cefálico. O resumo afirma que a ponta lateral precisa estar fora da cortical; se estiver presa dentro dela, acrescentar possibilidade de movimento em outra parte da montagem não garante que o foco realmente consiga impactar (Rockwood, 10ª ed., cap. 54, “Complicações”).\n\nA presença de material não demonstra que a mecânica esteja adequada. Também é preciso avaliar redução e posição do implante, fatores relacionados à pseudartrose no capítulo. O intervalo de três a seis meses é o momento da tentativa descrita, e não prova automática de diagnóstico de pseudartrose em todo paciente que ainda não consolidou aos três meses.\n\nSe a dinamização não for possível ou não funcionar, o resumo admite revisão com haste mais grossa e fresagem ou fixação extramedular; enxerto raramente é necessário na descrição. Uma haste quebrada costuma refletir a solicitação persistente por falta de união, frequentemente na região por onde o parafuso cefálico a atravessa.\n\nNo resumo da Biblioteca, compare a condição de deslizamento com a falha do implante. A pergunta não é apenas “quando mexer na montagem”, mas **se o movimento que se deseja liberar está mecanicamente disponível**.\n\n**Por que esta questão foi criada.** Testa uma causa de dinamização ineficaz que pode ser perdida quando se pensa apenas no bloqueio distal e não no curso cefálico.",
+      "correta": "**A: três a seis meses; dentro da cortical.** O primeiro é o período da tentativa descrita; o segundo é a posição que pode impedir o deslizamento.\n\nA eficácia depende de haver liberdade para o movimento planejado, e não apenas de realizar uma mudança no implante.",
+      "incorretas": {
+        "B": "**Acerta o período e aponta como problema a condição favorável ao deslizamento.** A ponta lateral fora da cortical é justamente a exigência apresentada para a tentativa funcionar.\n\nA questão pergunta a posição que pode torná-la ineficaz, não a posição que a permite.",
+        "C": "**Reconhece o impedimento mecânico, mas adia o período para seis a 12 meses.** O resumo descreve a tentativa entre três e seis.\n\nO momento de intervir e a capacidade de deslizar são variáveis independentes; acertar uma não valida a outra.",
+        "D": "**Troca o período e inverte a condição mecânica.** Fora da cortical é a situação que permite o deslizamento; o intervalo descrito para tentar dinamizar é três a seis meses.\n\nNão se deve esperar um calendário mais tardio para corrigir um bloqueio que impede a finalidade da intervenção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-a003183f",
+          "complicacoes-fa2cbfe8",
+          "complicacoes-487370e4"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "489c01258f53a217bbdb808f334f44b08e4269c85d036665273a110982a8e1be"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

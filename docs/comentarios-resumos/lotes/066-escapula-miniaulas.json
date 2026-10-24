@@ -1,0 +1,388 @@
+{
+  "trauma-1299": {
+    "questaoSha256": "d7ef76080a23df483a5525b4906faa6fcbf825a2fc463354bcfbc2791e7ae29a",
+    "comentarioAnteriorSha256": "fdfcc9d6ef3d4e23e6d8bd446b9fbcb43670f1881b6d90e15138484dcc9a9ea7",
+    "comentario": {
+      "conceito": "A questão troca dois elementos que precisam ser lidos juntos: **qual é o denominador da frequência e qual é o grupo predominante**. As fraturas da escápula representam 0,4% a 0,9% de todas as fraturas, mas 3% a 5% das fraturas da cintura escapular. O segundo percentual é maior porque compara a escápula com um conjunto menor de fraturas.\n\nA raridade faz sentido pela anatomia: a escápula tem um envelope muscular espesso, move-se sobre o tórax e repousa numa parede elástica. Essa proteção ajuda a explicar por que muitas fraturas aparecem em traumas de energia elevada e em pacientes com outras lesões. O perfil predominante descrito é o de **homens entre 20 e 50 anos** (resumo do Rockwood, 10ª ed., cap. 33, “Quem fratura e como”).\n\nIsso não exclui o idoso: o capítulo também descreve quedas de baixa energia nessa população, frequentemente com lesão isolada. Predominância epidemiológica não é critério de exclusão diagnóstica. Para rever os mecanismos e suas exceções, leia essa seção no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para distinguir a frequência entre todas as fraturas da frequência entre as da cintura escapular, mantendo o perfil epidemiológico descrito no capítulo.",
+      "correta": "**A: 0,4% a 0,9%; homens de 20 a 50 anos.** A frequência usa todas as fraturas como denominador e o perfil corresponde ao predomínio descrito no capítulo. São dois dados diferentes que precisam estar simultaneamente corretos.",
+      "incorretas": {
+        "B": "**Acerta a frequência, mas troca o grupo predominante.** Mulheres acima de 65 anos podem sofrer fratura da escápula, inclusive após trauma de baixa energia. A existência desse grupo não o torna o mais frequente; o capítulo destaca homens de 20 a 50 anos.",
+        "C": "**O percentual pertence à cintura escapular.** O perfil masculino de 20 a 50 anos está correto. Já 3% a 5% se refere apenas às fraturas da cintura escapular; entre todas as fraturas, a proporção é 0,4% a 0,9%.",
+        "D": "**Combina a troca de denominador com a troca do perfil.** O intervalo de 3% a 5% não descreve todas as fraturas, e mulheres idosas não constituem o grupo predominante da escápula. Não se deve transferir automaticamente o padrão de uma fratura por fragilidade para esse osso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Epidemiologia, mecanismo, lesões associadas e imagem; Como ler este capítulo. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo, lesões associadas e imagem",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-1df0778e",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-6aeaaa87",
+          "como-ler-este-capitulo-c524f1d3"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "a29eec380b32670a80fdc48e00095ad13ad450e573b11e99837a95ee3ade80c2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1301": {
+    "questaoSha256": "6a8a07779a6da17924e15954f15167a1e9905e6495064b7d4a3983410d415a14",
+    "comentarioAnteriorSha256": "cdf5073410a33ba99797c0f0265b2cc913a0bef658ededbdd88ce48e7867098e",
+    "comentario": {
+      "conceito": "O corpo anatômico é toda a lâmina triangular da escápula. O **corpo biomecânico** corresponde à arquitetura que conduz as forças de compressão da glenoide. A diferença depende do caminho da carga, não apenas da posição de uma região no desenho do osso.\n\nA carga chega pela glenoide e encontra dois pilares: o **lateral**, entre a borda inferior da glenoide e o ângulo inferior, e o **espinal**, que segue da região central da glenoide pela base da espinha em direção medial. A borda medial une esse conjunto. Já o ângulo superior e a fossa supraespinal adjacente funcionam como apêndice para músculos e não participam dessa transmissão compressiva (resumo do Rockwood, 10ª ed., cap. 33, “Osso grosso e osso fino”).\n\nÉ por isso que uma fratura pode atingir o corpo anatômico sem interromper da mesma forma os pilares que sustentam a glenoide. Na leitura de uma tomografia, vale perguntar quais desses pilares o traço cruza. O resumo da Biblioteca relaciona essa arquitetura aos padrões de fratura do corpo.\n\n**Por que esta questão foi criada.** Para ligar a anatomia dos pilares ao conceito de corpo biomecânico, em vez de tratar toda a lâmina escapular como equivalente na transmissão de carga.",
+      "correta": "**B: não transmitem forças de compressão da glenoide.** A exclusão é funcional: essas regiões superiores servem de apêndice muscular, enquanto os pilares lateral e espinal, unidos pela borda medial, formam o corpo biomecânico. Não significa que a região seja desprovida de função.",
+      "incorretas": {
+        "A": "**Espessura e transmissão de carga não são sinônimos.** O capítulo situa o osso mais espesso na glenoide, no colo e na borda lateral. O motivo de excluir a região superior é sua ausência do trajeto compressivo glenoidal, e não um suposto excesso de espessura ali.",
+        "C": "**A região tem função muscular.** O resumo a descreve justamente como apêndice para músculos. A distinção é entre servir à musculatura e integrar os pilares de transmissão compressiva, não entre ter ou não inserções.",
+        "D": "**O anel suspensor é outro conceito anatômico.** Ele reúne glenoide, coracoide, ligamentos, clavícula lateral, articulação acromioclavicular e acrômio. O ângulo superior e a fossa supraespinal não são retirados do corpo biomecânico por pertencerem a esse anel; a razão é o caminho da carga."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Anatomia aplicada: arquitetura, músculos e nervo supraescapular; Complexo suspensor superior, ombro flutuante e colo da escápula. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-0fa34036",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "35bd01510f74c5a859aafa749684f7018c9382140c09abec72e05aad5f8ca181"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1305": {
+    "questaoSha256": "b233fff6fc08613826dbf431d623ff7daf4178c2b65103ee6b58ed7e011bb1b0",
+    "comentarioAnteriorSha256": "df884a016ef8d0f9a6dc7de40164d1ca353953d51a423b9ab0341350ca472197",
+    "comentario": {
+      "conceito": "Uma fratura da escápula pode ser a pista visível de um trauma muito maior. O osso repousa sobre o gradil costal, de modo que o mesmo impacto pode lesar a escápula, as costelas e o conteúdo torácico. Nas séries reunidas no capítulo, a lesão associada mais frequente é a **fratura de costelas**, presente em 27% a 65% dos casos.\n\nA mortalidade relatada é de **2% a 11%**, principalmente por lesão intratorácica grave ou falência de órgãos. Esse número não representa mortalidade produzida pela fratura escapular isolada. O traumatismo craniano também é uma associação relevante, mas não ocupa o primeiro lugar pedido aqui (resumo do Rockwood, 10ª ed., cap. 33, “As lesões associadas”).\n\nNa prática, encontrar a escápula fraturada não encerra a avaliação: é preciso procurar as outras lesões e examinar o componente neurovascular da cintura escapular. A seção de lesões associadas do resumo da Biblioteca organiza essa busca.\n\n**Por que esta questão foi criada.** Para reunir dois dados que orientam a avaliação do politraumatizado: a associação com costelas e a mortalidade das séries, sem atribuí-la à fratura isolada.",
+      "correta": "**B: fratura de costelas; 2% a 11%.** O primeiro dado traduz a proximidade anatômica e a energia compartilhada no trauma; o segundo descreve a mortalidade das séries, ligada sobretudo às lesões sistêmicas associadas. Não se deve interpretar a porcentagem como risco de morte de toda fratura isolada.",
+      "incorretas": {
+        "A": "**A associação está certa, mas a mortalidade foi elevada indevidamente.** Costelas são o principal grupo associado. O intervalo de 20% a 30%, porém, não é o relatado pelo capítulo para mortalidade; a faixa citada é 2% a 11%.",
+        "C": "**Confunde uma lesão importante com a mais frequente.** O traumatismo craniano é descrito entre as associações e exige atenção clínica, mas o primeiro lugar é das fraturas de costelas. A mortalidade de 2% a 11% está correta, sem corrigir o erro do primeiro componente.",
+        "D": "**Nem o primeiro lugar nem a mortalidade correspondem à fonte.** O traumatismo craniano pode coexistir com a fratura escapular, mas não supera as costelas na associação descrita. Além disso, a mortalidade reunida no capítulo é 2% a 11%, e não 20% a 30%."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Epidemiologia, mecanismo, lesões associadas e imagem; Como ler este capítulo. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo, lesões associadas e imagem",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-330e3cc8",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-9deaa695",
+          "como-ler-este-capitulo-c524f1d3"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "a7ecf8e9ccf38927a692fb1b367bcf73c80eb146911c4f743498b452c7733c50"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1306": {
+    "questaoSha256": "20ff92a45d67e8580c6d722ce98df4bb1af6dd49c99e39d8613b80a0938f5211",
+    "comentarioAnteriorSha256": "27fabd3bfacc9ca6c9df43000ebfa5cd11a1400e1bfbe9a7d0030f6d36534b58",
+    "comentario": {
+      "conceito": "Uma estrutura recebe músculos e ligamentos, mas isso não prova que sua fratura tenha sido produzida por tração. Essa é a distinção central da questão. O nome tradicional “avulsão” sugere que uma estrutura presa ao coracoide arrancou um fragmento; o autor contesta esse mecanismo como explicação da maioria dos casos.\n\nNo capítulo, a maior parte dessas fraturas decorre de **impacto direto**, da cabeça umeral ou de um objeto. A contração muscular violenta, como em choque elétrico ou convulsão, é reconhecida como mecanismo de outras lesões escapulares, mas não deve ser usada para explicar automaticamente toda fratura de um processo (resumo do Rockwood, 10ª ed., cap. 33, “Por que quase nunca é avulsão”).\n\nA consequência prática é procurar o padrão do impacto e as outras lesões do complexo suspensor. O desvio dos processos depende também de quanto esse anel foi rompido. Vale ler essa seção no resumo antes de memorizar “coracoide igual a avulsão”.\n\n**Por que esta questão foi criada.** Para explorar a diferença entre o nome tradicional de avulsão e o mecanismo de impacto defendido pelo autor para as fraturas do coracoide.",
+      "correta": "**D: impacto direto, e não de tração ligamentar.** É a interpretação defendida pelo autor para a maioria das fraturas descritas tradicionalmente como avulsão. A presença de estruturas presas ao processo explica por que o rótulo parece plausível, mas não demonstra o mecanismo que produziu a fratura.",
+      "incorretas": {
+        "A": "**O tendão conjunto é a explicação de avulsão que a pergunta pede para reavaliar.** Seu vínculo com o coracoide não permite concluir que ele tenha arrancado o fragmento. O dado decisivo é a interpretação dos padrões de fratura pelo autor, que favorece impacto direto na maioria dos casos.",
+        "B": "**Trocar o músculo não resolve o problema do mecanismo.** A hipótese de tração pelo peitoral menor continua tratando a fratura como arrancamento muscular. A fonte não a adota como explicação predominante; descreve o trauma por impacto.",
+        "C": "**A ligação ligamentar não prova avulsão.** Os coracoclaviculares participam do complexo suspensor e importam para a estabilidade das lesões combinadas. Isso é diferente de dizer que sua tração produz a maioria das fraturas do coracoide, hipótese contrariada pelo autor."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Processos: coracoide, acrômio e espinha lateral. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Processos: coracoide, acrômio e espinha lateral",
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "processos-coracoide-acromio-e-espinha-lateral-3d5ec23a",
+          "processos-coracoide-acromio-e-espinha-lateral-b04446e6",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "61b1231ad194bb84db0d97329877b47377c69b766739ac290bcd7e4b16165b50"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1307": {
+    "questaoSha256": "60c8f5bb0ee2697b8f83ef4d211a91f16091e7899de1f1ba7f591e6cda08bdc7",
+    "comentarioAnteriorSha256": "511bb8a7573408871db49af66be3e6c25c09b95d7be941432486d13c7f80c5c5",
+    "comentario": {
+      "conceito": "As duas medidas olham relações diferentes. O **ângulo glenopolar** compara a orientação da glenoide com o corpo da escápula. Para construí-lo, são necessárias a linha entre os polos da glenoide e a linha do polo superior ao ângulo inferior da escápula. A projeção de referência é a **AP verdadeira da escápula, ou Neer I**.\n\nA **angulação dos fragmentos da borda lateral** é avaliada no outro plano: o **perfil escapular, Neer II ou incidência em Y**. Esse perfil também permite apreciar translação e encavalamento dos fragmentos. Usar o plano errado confunde uma medida da relação glenoide-corpo com a deformidade entre os fragmentos da borda lateral (resumo do Rockwood, 10ª ed., cap. 33, “O ângulo glenopolar e os outros três critérios”).\n\nNa tomografia 3D, a mesma lógica orienta a escolha da vista apropriada, com maior precisão. Antes de aplicar qualquer valor de indicação cirúrgica, confira qual medida foi feita e em qual projeção. O resumo da Biblioteca apresenta essas medidas lado a lado.\n\n**Por que esta questão foi criada.** Para distinguir as projeções usadas nas duas medidas que orientam o tratamento das fraturas extra-articulares.",
+      "correta": "**B: anteroposterior verdadeira (Neer I) e perfil da escápula (Neer II).** A ordem acompanha os dois objetivos: glenoide em relação ao corpo na AP verdadeira; angulação da borda lateral no perfil. A reconstrução 3D pode complementar essas medidas, mas não altera a correspondência pedida.",
+      "incorretas": {
+        "A": "**Inverte as projeções.** O perfil é usado para a angulação da borda lateral, enquanto o ângulo glenopolar tem como referência a AP verdadeira. Não basta lembrar as duas incidências: é preciso associar cada uma à sua medida.",
+        "C": "**Acerta o perfil para a borda lateral, mas erra a primeira medida.** A incidência de referência do ângulo glenopolar é a Neer I, pois utiliza os polos da glenoide e o ângulo inferior da escápula. A opção substitui essa projeção pela axilar.",
+        "D": "**Acerta o ângulo glenopolar e troca o plano da angulação.** A primeira medida realmente é feita na AP verdadeira. Para a angulação entre os fragmentos laterais, porém, o capítulo usa o perfil escapular em Y, não a axilar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia; Epidemiologia, mecanismo, lesões associadas e imagem. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-cdd666cd",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-b84994ab",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "fb8d1add3ccb672887420b9b3c900bd9e4871dfccfc105c0208afe3de0e084ca"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1308": {
+    "questaoSha256": "5921816778f77ce7cdfed0d8677eaa69d908c8c06da95fc42cc4eb5b81c655aa",
+    "comentarioAnteriorSha256": "5513785c767fc1846e192d62137b9c16475aa93e747da34d74a626080352366e",
+    "comentario": {
+      "conceito": "Uma reconstrução 3D só ajuda se a estrutura que se quer estudar estiver visível. A cabeça umeral fica diante da superfície glenoidal; por isso, ao avaliar uma fratura da glenoide, a vista indicada é a **lateral com subtração da cabeça do úmero**. A retirada é digital, na reconstrução, e permite examinar a fossa sem a sobreposição da cabeça.\n\nA escolha da vista depende do alvo: a posterior é útil para corpo e espinha, a anterior para o colo, inclusive para distinguir o anatômico do cirúrgico, e a lateral para a glenoide. O capítulo também recomenda subtrair estruturas vizinhas conforme a análise, como costelas e clavícula. Não existe uma única imagem tridimensional que substitua todas as vistas (resumo do Rockwood, 10ª ed., cap. 33, “A sequência de imagem”).\n\nEssa exposição da superfície ajuda a reconhecer quais fragmentos articulares estão separados e a extensão do traço. Para visualizar a relação entre alvo e projeção, leia a sequência de imagem no resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para transformar a recomendação de tomografia 3D em uma escolha concreta de vista e estrutura a subtrair na avaliação da glenoide.",
+      "correta": "**A: lateral; da cabeça do úmero.** A vista lateral apresenta a glenoide, e a subtração da cabeça remove a estrutura que a recobre. Os dois elementos precisam estar combinados para examinar diretamente a superfície articular na reconstrução.",
+      "incorretas": {
+        "B": "**Escolhe a vista, mas remove a estrutura errada para esse objetivo.** A subtração das costelas pode ajudar a estudar a escápula, porém não elimina a cabeça umeral que recobre a glenoide. Para essa superfície, é a cabeça que o capítulo pede para subtrair.",
+        "C": "**A subtração está certa, a vista de referência não.** Remover a cabeça favorece a observação articular, mas a vista anterior é destacada para o colo. A combinação específica pedida para a glenoide é lateral com subtração da cabeça.",
+        "D": "**A combinação se afasta do alvo articular.** A vista anterior atende sobretudo à avaliação do colo, e retirar costelas não resolve a sobreposição da cabeça umeral. A alternativa confunde recursos gerais de reconstrução com a combinação indicada para a glenoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Epidemiologia, mecanismo, lesões associadas e imagem. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "1c0a7586a2ac3a9ef18a113279d01b21ffed7c44f0f77398d579db268c77bbf9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1309": {
+    "questaoSha256": "9b335c75da6b95c145ef77ecc217cd24bafd19f1863994ec7ca6b4caa5139293",
+    "comentarioAnteriorSha256": "4bd6314ce79caf8f93069dcba4a75b6cf105ad90ea9e65e64465136ad8d3b7ce",
+    "comentario": {
+      "conceito": "O nome “glenopolar” ajuda a lembrar uma das linhas, mas não todos os pontos. A primeira une os polos superior e inferior da glenoide. A segunda parte do **polo superior da glenoide e chega ao ângulo inferior da escápula**. O vértice está, portanto, no polo superior da glenoide; não no ângulo superior da escápula.\n\nNa incidência Neer I, o capítulo apresenta como padrão cerca de **41°**, com faixa de 35° a 51°. Esse é um valor de referência anatômica. Já valores muito reduzidos, em torno do limite de 20° utilizado na decisão terapêutica, descrevem outra questão: uma deformidade que pode favorecer cirurgia. O capítulo ressalva que a padronização e o limite crítico não têm aceitação universal (resumo do Rockwood, 10ª ed., cap. 33, “O ângulo glenopolar e os outros três critérios”).\n\nA medida traduz a relação entre glenoide e corpo, que influencia o trajeto muscular e a mecânica do ombro. Na fratura do colo anatômico, ela pode inclusive aumentar, em vez de diminuir. O resumo da Biblioteca reúne a construção do ângulo e essas limitações para evitar tratar 20° como valor normal.\n\n**Por que esta questão foi criada.** Para separar a construção do ângulo glenopolar de seu valor de referência e do limite relativo utilizado na decisão cirúrgica.",
+      "correta": "**C: ângulo inferior da escápula; 41 graus.** A segunda linha alcança o ângulo inferior, e o valor padrão descrito na Neer I é aproximadamente 41°. Identificar os pontos anatômicos vem antes de interpretar o número.",
+      "incorretas": {
+        "A": "**Troca a referência óssea e o significado do número.** A linha não termina no ângulo superior da escápula, e 20° não é a média normal apresentada. Esse valor aparece no debate sobre desvio importante e indicação relativa de cirurgia.",
+        "B": "**O número está certo, mas seria medido com a linha errada.** Cerca de 41° é o padrão citado. Para reproduzi-lo, porém, a linha deve ir ao ângulo inferior da escápula, não ao superior.",
+        "D": "**A construção está certa, mas o valor pertence à discussão terapêutica.** O ângulo inferior é o ponto correto. Vinte graus não representa o padrão anatômico da Neer I; o capítulo cita aproximadamente 41° e ressalva a controvérsia do limite crítico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-386950ef",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "80cacadabfabe0e49b10ff80ffd2c08f7254cd42030bf48d2cd8f8fc9bb3654c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1344": {
+    "questaoSha256": "27b8e5fb5696e0e51861ca059059cd885333ec011b27ccd063bc470088f0cfd1",
+    "comentarioAnteriorSha256": "f415977b17d5a16de8d4d23edf65d812487071a3b4f49f28f6e5f427b1930e87",
+    "comentario": {
+      "conceito": "Na dissociação escapulotorácica, manter um membro perfundido e restaurar sua função são objetivos relacionados, mas diferentes. A lesão rompe conexões da cintura escapular e pode comprometer vasos e plexo braquial. O que mais prediz o resultado funcional, segundo Zelle no capítulo, é **a extensão da lesão do plexo**.\n\nO plexo conduz a inervação do membro. Se a lesão é incompleta, o cenário funcional é diferente daquele de uma lesão completa sem possibilidade de restauração. Na classificação apresentada, déficit neurológico incompleto corresponde ao tipo 2B, sua associação com lesão vascular ao tipo 3 e avulsão completa do plexo ao tipo 4. A rede colateral do ombro pode contribuir para a circulação, mas circulação preservada não substitui inervação perdida.\n\nPara o cenário específico de **lesão completa e função irrecuperável**, a recomendação de Zelle citada no resumo é amputação imediata acima do cotovelo. Trata-se de uma recomendação para essa condição definida, e não para toda dissociação nem para qualquer déficit neurológico. O reparo vascular e o reparo neurológico são discutidos como decisões controversas nesse contexto (resumo do Rockwood, 10ª ed., cap. 33, “O tratamento gira em torno do nervo”).\n\nArtrodese significa estabilizar uma articulação por fusão. Ela não reconstrói a inervação ausente do restante do membro. Para relacionar prognóstico e conduta sem generalizar a amputação, leia essa seção do resumo da Biblioteca.\n\n**Por que esta questão foi criada.** Para aprofundar o cenário cobrado no TARO 2026: dissociação escapulotorácica com lesão completa do plexo e função irrecuperável, relacionando conduta e prognóstico.",
+      "correta": "**B: a extensão da lesão do plexo braquial; amputação imediata acima do cotovelo.** O fator prognóstico é neurológico, e a conduta citada se aplica quando a lesão é completa e não há função restaurável. Essa condição precisa estar presente; o simples diagnóstico de dissociação não basta para indicar amputação.",
+      "incorretas": {
+        "A": "**A conduta corresponde ao cenário, mas o fator prognóstico foi trocado.** A lesão vascular importa para a avaliação do trauma. Para o resultado funcional discutido por Zelle, porém, pesa mais a extensão da lesão do plexo; um membro perfundido pode continuar sem função se a inervação for irrecuperável.",
+        "C": "**Identifica o fator prognóstico, mas propõe uma operação que não o corrige.** A artrodese escapulotorácica estabiliza a relação entre escápula e tórax. Não restaura a inervação de todo o membro quando o plexo está completamente perdido; não substitui a recomendação citada para função irrecuperável.",
+        "D": "**Confunde salvamento circulatório com reconstrução funcional.** Escolher a lesão vascular como principal fator não contempla o peso do plexo no prognóstico. Somar uma artrodese escapulotorácica também não resolve a perda neurológica completa que define o cenário da pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Dissociação escapulotorácica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "dissociacao-escapulotoracica-fb39e45c",
+          "dissociacao-escapulotoracica-8b999d6b",
+          "dissociacao-escapulotoracica-2b65a722"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "2c5af8b694c231e7cf817934ef4bef831b01e9df19eeca5bf6946e1ba198e2fb"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0982": {
+    "questaoSha256": "af1b35249771c5e48b6401254f91bcf2346481ce0db391c2404e4098906e4b99",
+    "comentarioAnteriorSha256": "309b3e67a4c26f8d9df40d25a2531b6a0287d7f7f0b5924103e48cc3e38e803d",
+    "comentario": {
+      "conceito": "A condição decisiva do enunciado não é apenas a dissociação escapulotorácica. É a combinação de **lesão completa do plexo braquial e função não restaurada**. O trauma pode separar a cintura escapular do esqueleto axial e lesar vasos e nervos mesmo com a pele preservada, daí a descrição de “amputação interna”.\n\nO plexo é o componente que leva a inervação ao membro. Estabilizar os ossos ou manter circulação não garante função quando essa ligação está completamente perdida. Na análise de Zelle citada no capítulo, a extensão da lesão neurológica é o principal determinante do resultado; lesões parciais tiveram evolução melhor que as completas.\n\nQuando a função **não pode ser restaurada**, a recomendação citada é **amputação acima do cotovelo**. A interpretação deve permanecer restrita a esse cenário, sem converter déficit parcial ou uma dissociação ainda em avaliação em indicação automática de amputação. O reparo neurológico é discutido como controverso, e explorar o plexo não equivale a demonstrar que haverá recuperação (resumo do Rockwood, 10ª ed., cap. 33, “O tratamento gira em torno do nervo”).\n\nLeia essa seção no resumo da Biblioteca para diferenciar a gravidade anatômica da lesão e a possibilidade de função futura.",
+      "correta": "**A: amputação acima do nível do cotovelo.** É a indicação citada para lesão completa do plexo com função irrecuperável. O objetivo da decisão não se resume à continuidade vascular ou óssea: considera a ausência de possibilidade de função do membro.",
+      "incorretas": {
+        "B": "**Estabilizar a escápula não reinerva o membro.** A artrodese escapulotorácica cria uma união estável entre escápula e tórax. Ainda assim, não corrige a lesão completa do plexo nem restaura a função perdida do restante do membro.",
+        "C": "**Exploração não é sinônimo de recuperação possível.** Avaliar ou explorar o plexo pode fazer parte da discussão de uma lesão neurológica. Aqui, porém, o enunciado já define lesão completa com função não restaurada; o capítulo cita amputação quando a função não é restaurável, sem afirmar que toda lesão completa deva ser tratada apenas com exploração.",
+        "D": "**A fusão glenoumeral também deixa o problema neurológico sem solução.** Ela estabiliza a articulação entre úmero e glenoide. Essa estabilização não devolve inervação ao membro com plexo completamente perdido, portanto não responde ao cenário de função irrecuperável."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Dissociação escapulotorácica. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "dissociacao-escapulotoracica-fb39e45c",
+          "dissociacao-escapulotoracica-2b65a722"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "a98132df6133123a94e7c7a1b8b4588f5b9890e85cbaf1f5b5d8b4822a9c3641"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0687": {
+    "questaoSha256": "18490dce46acf39288a218c61539d2889cb72f6d68d577ca456bf1ce0bca101b",
+    "comentarioAnteriorSha256": "3f6a0c086d6f2643ede528e5f169d0dadf5520e281bd10a596018a177f13539e",
+    "comentario": {
+      "conceito": "O perfil escapular mostra a deformidade entre os fragmentos da **borda lateral**. Essa borda participa do pilar que transmite a carga da glenoide; uma angulação importante altera a relação entre a superfície articular, o corpo e o trajeto dos músculos do ombro. Não se trata do ângulo glenopolar, que é outra medida, feita na AP verdadeira.\n\nNo resumo do capítulo, **angulação maior que 40° no perfil** é um dos critérios relativos que favorecem cirurgia nas fraturas extra-articulares do colo e do corpo. A pergunta oferece 15°, 30°, 45° e 60°: **45° é o primeiro valor apresentado acima desse limite**. Por isso o gabarito é compatível, embora o corte do capítulo não seja escrito como “45°” (resumo do Rockwood, 10ª ed., cap. 33, “Os critérios relativos de cirurgia”).\n\nEssas medidas não substituem a avaliação do paciente. Idade, demanda, outras lesões e condição das partes moles entram na decisão; uma angulação isolada não torna a operação obrigatória em qualquer pessoa. Para rever o plano da medida e os critérios relativos, consulte essa seção no resumo da Biblioteca.",
+      "correta": "**C: 45°.** Entre os valores oferecidos, é o primeiro que ultrapassa o critério de mais de 40° citado no capítulo. A decisão clínica continua relativa ao desvio e às condições do paciente; a resposta identifica o patamar dentro das opções da questão.",
+      "incorretas": {
+        "A": "**Quinze graus não atinge o critério angular descrito.** Esse valor isolado fica abaixo de mais de 40° no perfil. Não permite concluir que toda a fratura será conservadora, porque outros desvios ou lesões podem influenciar a conduta.",
+        "B": "**Trinta graus ainda está abaixo desse limite específico.** A medida deve ser comparada com a angulação da borda lateral no perfil, e não com o ângulo glenopolar na AP. Somente esse número não preenche o critério angular citado.",
+        "D": "**Sessenta graus também ultrapassa o limite, mas não é onde ele começa entre as opções.** A pergunta usa “a partir de”. Esperar 60° excluiria o intervalo já abrangido pelo critério de mais de 40°; 45° é a primeira opção que o satisfaz."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 33 · Scapular Fractures (Jan Bartoníček). Seções consultadas: Medir o desvio e indicar a cirurgia. Sem atribuição de páginas impressas não consultadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-af910b0f",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "376ef23811b5d48605781df15311de7c46b8192ebb62cabcf08915dc6ab8c699"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

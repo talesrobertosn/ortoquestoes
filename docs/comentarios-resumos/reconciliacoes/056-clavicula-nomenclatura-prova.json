@@ -1,0 +1,24 @@
+{
+  "motivo": "Releitura das três alterações do resumo 34: apenas rótulo de prova sem identificação confirmada, TEOT/TARO para Ortopedia. Conteúdo médico e todos os IDs de bloco intactos; trechos efetivamente usados continuam sustentando cada comentário. Revalidação posterior à incorporação de 2fb8ec24, sem reescrever lotes históricos e sem aumentar contagem. Motivo do simulado trauma-1351 acompanha nomenclatura mais prudente.",
+  "fonteAntesSha256": "7fbe39c864fe28c93ff4b07f2db9be74879eee2f948f93968e0c2ce6aee65cea",
+  "fonteDepoisSha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+  "blocosAlterados": {
+    "classificacoes-allman-neer-craig-robinson-e-ao-44cc5381": {
+      "antes": "Uma prova TEOT/TARO sem ano pediu que se reconhecesse a numeração divergente entre Robinson e Craig para o terço médio; o TARO 2015 pediu a correspondência do 3A2 (Neer III); o SBOT-SP, a do Craig V (3B2); o TECOC mostrou a radiografia de uma fratura distal desviada extra-articular para classificar como 3B1.",
+      "depois": "Uma prova de Ortopedia sem ano pediu que se reconhecesse a numeração divergente entre Robinson e Craig para o terço médio; o TARO 2015 pediu a correspondência do 3A2 (Neer III); o SBOT-SP, a do Craig V (3B2); o TECOC mostrou a radiografia de uma fratura distal desviada extra-articular para classificar como 3B1."
+    },
+    "pseudartrose-fatores-de-risco-e-operar-ou-nao-6f648bb0": {
+      "antes": "Uma prova TEOT/TARO sem ano montou as quatro combinações de taxa global e taxa sintomática de pseudartrose; a certa era menor nas duas.",
+      "depois": "Uma prova de Ortopedia sem ano montou as quatro combinações de taxa global e taxa sintomática de pseudartrose; a certa era menor nas duas."
+    },
+    "lesoes-neurovasculares-e-dissociacao-escapulotor-cb73a647": {
+      "antes": "Uma prova TEOT/TARO sem ano pediu a fratura associada ao desvio lateral da escápula (clavícula); o CET-PR pediu o achado radiográfico (fratura desviada da clavícula), com radiografia normal e luxação acromioclavicular de baixo grau como distratores.",
+      "depois": "Uma prova de Ortopedia sem ano pediu a fratura associada ao desvio lateral da escápula (clavícula); o CET-PR pediu o achado radiográfico (fratura desviada da clavícula), com radiografia normal e luxação acromioclavicular de baixo grau como distratores."
+    }
+  },
+  "lotes": [
+    "056",
+    "057",
+    "058"
+  ]
+}

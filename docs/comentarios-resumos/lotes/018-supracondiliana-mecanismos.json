@@ -1,0 +1,494 @@
+{
+  "pediatria-0600": {
+    "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f",
+    "comentarioAnteriorSha256": "f5d88eb693f013acc42ba651df8af0e1e86a8071762b7c7070306dbfda2f4073",
+    "comentario": {
+      "conceito": "**Na supracondiliana em extensão, o fragmento distal vai para trás.** A criança cai com o braço estendido, o olécrano atua como fulcro e o osso cede anteriormente entre as fossas do úmero distal. O segmento proximal avança para anterior e pode ameaçar as partes moles, enquanto o distal permanece posterior.\n\nNo plano coronal, o deslocamento mais comum é **medial**, descrito em cerca de 75% das séries citadas. Assim, o padrão habitual é posteromedial. A direção também prevê o lado da espícula proximal, que sai no sentido oposto: lateral no desvio distal medial, ameaçando o radial; medial no desvio distal lateral, ameaçando mediano e artéria braquial. Uma resposta sobre o fragmento distal não deve ser invertida por lembrar a posição do proximal.",
+      "correta": "**D: posterior e medial.** Combina o padrão sagital da fratura em extensão com a direção coronal predominante. O proximal pode projetar-se anteriormente, mas o enunciado pergunta pelo distal.",
+      "incorretas": {
+        "A": "**O componente anterior contraria o padrão em extensão e o lateral não é o predomínio coronal.** O deslocamento anterior do fragmento distal é associado ao tipo em flexão. Aqui, a combinação mais comum é posterior e medial.",
+        "B": "**A direção medial corresponde ao predomínio, mas o fragmento distal fica posterior.** Quem avança para a frente no mecanismo descrito é o proximal. Trocar o segmento anatômico inverte a interpretação sagital.",
+        "C": "**O deslocamento posterolateral existe, mas é menos comum que o posteromedial.** Tem importância por ameaçar o mediano e a artéria braquial. A pergunta pede frequência, não apenas um desvio possível."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Mecanismo, direção do desvio e estruturas em risco"
+        ],
+        "blocos": [
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+      }
+    ]
+  },
+  "pediatria-0691": {
+    "questaoSha256": "6005b5d190c9248d1bfc2afb2bd5944248cd5504ad3552479c618000894f2578",
+    "comentarioAnteriorSha256": "d8f20865cf52a5c0a6ce2e7eebcd361e1266e2e2731f27f968046fa27bdb46d2",
+    "comentario": {
+      "conceito": "**O nervo ameaçado fica do lado da espícula proximal, oposto ao desvio distal.** Na supracondiliana com desvio posteromedial, o fragmento distal vai para medial e o proximal perfura lateralmente as partes moles. O **radial**, localizado lateralmente, é a estrutura característica em risco.\n\nNo desvio posterolateral, o proximal se projeta medialmente e ameaça o mediano, seu ramo interósseo anterior e a artéria braquial. Na fratura em flexão, a associação predominante é com o ulnar. Essas relações ajudam a orientar o exame, mas não substituem verificar todos os nervos e a perfusão antes e depois do tratamento.",
+      "correta": "**B: radial.** A espícula proximal sai lateralmente no padrão posteromedial. A geometria explica a associação sem precisar deduzir que o nervo fica do mesmo lado para onde foi o distal.",
+      "incorretas": {
+        "A": "**Ulnar é a associação característica da fratura em flexão e também pode ser lesado por fio medial.** Não é o nervo que a projeção lateral do proximal ameaça tipicamente no desvio posteromedial em extensão.",
+        "C": "**O mediano é ameaçado pelo padrão posterolateral.** Nesse caso, a espícula proximal fica medial junto ao feixe que inclui a artéria braquial. A opção troca a direção do distal por sua oposta.",
+        "D": "**O musculocutâneo não é o nervo relacionado à espícula lateral na descrição do capítulo.** A relação específica sustentada é posteromedial com radial. Não basta selecionar qualquer nervo do braço sem localizar a trajetória do fragmento."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Mecanismo, direção do desvio e estruturas em risco"
+        ],
+        "blocos": [
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+      }
+    ]
+  },
+  "pediatria-0639": {
+    "questaoSha256": "bf493962cadad639c508fbb4e67e5e882dbdf25c359e1908db619e1b1acaf50f",
+    "comentarioAnteriorSha256": "daf3cfe60812b01a395538b0e13c0f086c46a62a756c1c8fafc6b39984bd35bd",
+    "comentario": {
+      "conceito": "**O interósseo anterior acompanha a lógica do feixe mediano.** Na fratura em extensão com desvio distal posterolateral, o proximal se projeta medialmente e ameaça o mediano e a artéria braquial. Pode ocorrer lesão do interósseo anterior em vez de todo o mediano.\n\nA distinção clínica é importante: o ramo interósseo anterior compromete a flexão da interfalângica do polegar e da distal do indicador sem déficit sensitivo. A lesão completa do mediano pode acrescentar alterações sensitivas e motoras mais amplas. Já o padrão posteromedial ameaça o radial, e a fratura em flexão se associa principalmente ao ulnar. A pergunta pede mecanismo e direção, que devem concordar.",
+      "correta": "**C: extensão e desvio posterolateral.** É o padrão em que a espícula proximal se projeta para o lado medial do braço, ameaçando o feixe mediano. Essa relação explica a lesão de seu ramo interósseo anterior.",
+      "incorretas": {
+        "A": "**O desvio posterolateral faz parte do padrão em extensão, não da combinação em flexão proposta.** Na flexão, o distal tende a ir anteriormente e o ulnar é a associação característica. A opção mistura atributos de mecanismos distintos.",
+        "B": "**A flexão não é a associação pedida para o interósseo anterior, e o desvio posteromedial em extensão remete ao radial.** O par que ameaça o feixe mediano é extensão com distal posterolateral.",
+        "D": "**A extensão está correta, mas a direção coronal foi invertida.** No posteromedial, a espícula proximal fica lateral e ameaça o radial. Para o interósseo anterior, o deslocamento distal relevante é posterolateral."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Mecanismo, direção do desvio e estruturas em risco.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, seção Lesões nervosas: frequência, exame e conduta."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Mecanismo, direção do desvio e estruturas em risco"
+        ],
+        "blocos": [
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-e253b251",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-941171e4",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f9c02618",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f768c6bd",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-642ad499",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-1fede37c",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-60a5f10d",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-f8c5060a",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-a2f64953",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-9bbfd386",
+          "mecanismo-direcao-do-desvio-e-estruturas-em-risc-64a06c1d"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "0db5d5a6381ee98517b56781a7c960f0c793eca48479eeb7fc3d183045dc91ce"
+      },
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Lesões nervosas: frequência, exame e conduta"
+        ],
+        "blocos": [
+          "lesoes-nervosas-frequencia-exame-e-conduta-0aa48273",
+          "lesoes-nervosas-frequencia-exame-e-conduta-c85b81bf",
+          "lesoes-nervosas-frequencia-exame-e-conduta-0728a0e6",
+          "lesoes-nervosas-frequencia-exame-e-conduta-b0eb7804",
+          "lesoes-nervosas-frequencia-exame-e-conduta-a6de8f31",
+          "lesoes-nervosas-frequencia-exame-e-conduta-de5f0f94",
+          "lesoes-nervosas-frequencia-exame-e-conduta-84cd80ba",
+          "lesoes-nervosas-frequencia-exame-e-conduta-f30679b8",
+          "lesoes-nervosas-frequencia-exame-e-conduta-8e857a72",
+          "lesoes-nervosas-frequencia-exame-e-conduta-a911dd5c",
+          "lesoes-nervosas-frequencia-exame-e-conduta-26fca161",
+          "lesoes-nervosas-frequencia-exame-e-conduta-c053f0be",
+          "lesoes-nervosas-frequencia-exame-e-conduta-7fcb874d"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "a5799bfc95a6e2d9f14e9d2cd6bf2028186ab8d5afe0cf14ff2036401ac91768"
+      }
+    ]
+  },
+  "pediatria-0592": {
+    "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc",
+    "comentarioAnteriorSha256": "865d3208d39864982703c6d2c7764d8d4384b72e484dad60a0d2e3d0cd704f5a",
+    "comentario": {
+      "conceito": "**O periósteo remanescente funciona como dobradiça e guia a redução.** Na fratura em extensão, rompe anteriormente e pode permanecer posterior. No plano coronal, tende a ficar íntegro do lado para onde o distal foi e a romper do lado da espícula proximal. No **posteromedial, rompe lateralmente e o medial sobra**.\n\nA flexão corrige a extensão e tensiona a dobradiça posterior. A **pronação** tensiona o periósteo medial preservado e ajuda a corrigir o padrão posteromedial. No posterolateral, o medial está roto e a supinação aproveita o lateral íntegro. Portanto, pronação não é automática para todo desvio. A rotação é escolhida pela estrutura que ainda oferece apoio.",
+      "correta": "**A: lateral roto e pronação.** O rasgo fica do lado da espícula, lateral; a pronação utiliza a dobradiça medial que permaneceu. É uma combinação anatômica e mecânica, não dois dados independentes.",
+      "incorretas": {
+        "B": "**O lado lateral roto está correto, mas a rotação está trocada.** No posteromedial, o apoio preservado é medial e a pronação ajuda. A supinação é a escolha descrita para o padrão posterolateral.",
+        "C": "**A pronação está correta, porém o medial é o periósteo preservado nesse padrão.** Rompe o lateral, oposto ao desvio distal. Inverter o lado da ruptura elimina a explicação de como a manobra obtém estabilidade.",
+        "D": "**As duas relações correspondem ao padrão oposto.** No posterolateral, pode haver medial roto e supinação para tensionar o lateral. No posteromedial perguntado, são lateral roto e pronação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Redução fechada: técnica, periósteo e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Redução fechada: técnica, periósteo e rotação"
+        ],
+        "blocos": [
+          "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
+      }
+    ]
+  },
+  "pediatria-0914": {
+    "questaoSha256": "05d9fe0b6e50d93edfce90d40c84646d451f887cc3723ca4630508175bdbd1b6",
+    "comentarioAnteriorSha256": "86a4d9a5847850fab5ad93799798d0955bad2e68a13165eb733fb7cb5177b9a1",
+    "comentario": {
+      "conceito": "**A redução usa a dobradiça posterior e a medial remanescentes.** No desvio posteromedial da supracondiliana em extensão, o periósteo lateral rompe e o medial permanece. Depois de tracionar e corrigir translação e varo/valgo com o cotovelo próximo da extensão, o cirurgião **flete o cotovelo e prona o antebraço**.\n\nA flexão aproxima os fragmentos através da dobradiça posterior; a pronação tensiona a medial. Não se deve confundir a posição inicial de tração com o movimento final que reduz a deformidade. No posterolateral, a supinação é preferida por aproveitar a dobradiça lateral. A confirmação radiográfica e a fixação estável vêm depois, sem depender de manter hiperflexão apertada no gesso.",
+      "correta": "**A: flexão e pronação.** É a combinação que utiliza o periósteo medial e posterior preservados no padrão posteromedial. A manobra é feita após corrigir os componentes de translação e angulação coronal.",
+      "incorretas": {
+        "B": "**A flexão está correta, mas a supinação pertence à preferência para o posterolateral.** No posteromedial, deve-se tensionar a dobradiça medial com pronação. A rotação acompanha a direção do desvio.",
+        "C": "**A pronação está correta, mas extensão não é o movimento que corrige o componente sagital dessa fratura.** O cotovelo pode estar quase estendido durante a correção inicial de translação; depois, a redução da extensão exige flexão.",
+        "D": "**Combina a rotação do padrão oposto com a posição que não corrige a extensão.** O padrão posteromedial reduz com flexão e pronação. Não basta lembrar uma fase inicial de tração em pequena flexão e convertê-la na manobra final."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Redução fechada: técnica, periósteo e rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Redução fechada: técnica, periósteo e rotação"
+        ],
+        "blocos": [
+          "reducao-fechada-tecnica-periosteo-e-rotacao-a4c3a4fd",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-43f75607",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f4436304",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-79feecaf",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-4d860e8c",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-49f3da74",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-d4136367",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f0bbe362",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-77776755",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-a9673dd6",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-b1951499",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-b55d02ec",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-fca4eee7",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-6f036543",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-f81a2b24",
+          "reducao-fechada-tecnica-periosteo-e-rotacao-5a7ab8b4"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "7310d74b47cbdd9b3bd47348c34e3b9aa9cde7e05e6b484e697e188f1fd50553"
+      }
+    ]
+  },
+  "pediatria-0652": {
+    "questaoSha256": "17c1e2ac643401942a5ae3bc9e3dc3cd737033a7aad53edb2e14081abcbf4155",
+    "comentarioAnteriorSha256": "fad89a3f10386be4e565cd3a8d4f75ae28c535866d3f42e015463916d271f4af",
+    "comentario": {
+      "conceito": "**O cúbito varo pós-supracondiliana é principalmente uma consolidação viciosa.** A deformidade combina angulação em varo, hiperextensão e rotação do fragmento distal. A fise distal contribui com apenas cerca de 20% do crescimento do úmero, e esse crescimento limitado não explica como causa habitual um varo que aparece poucos meses depois da fratura.\n\nLesão fisária e osteonecrose troclear podem produzir deformidade progressiva, mas são causas diferentes e menos comuns. A prevenção começa por obter e manter o alinhamento da redução, incluindo o ângulo de Baumann e a relação do capítulo com a linha umeral anterior. Esperar que o crescimento corrija um varo consolidado não é uma estratégia confiável.",
+      "correta": "**D: consolidação viciosa.** O osso une na posição inadequada, combinando componentes angular e rotacional. Por isso, o cuidado com redução e estabilidade é mais importante para prevenir a deformidade habitual que atribuí-la automaticamente ao crescimento.",
+      "incorretas": {
+        "A": "**A lesão fisária pode gerar crescimento assimétrico, mas não é a causa mais frequente descrita.** O capítulo destaca a pouca contribuição da fise distal e a instalação relativamente precoce da deformidade para sustentar a consolidação viciosa.",
+        "B": "**Pseudartrose é falha da união, enquanto o quadro habitual é união numa posição inadequada.** A metáfise supracondiliana é bem vascularizada e a pseudartrose é rara. Não se deve transferir para essa lesão a importância da pseudartrose do côndilo lateral.",
+        "C": "**Necrose da tróclea pode causar varo progressivo, mas é rara.** Ela não substitui a consolidação viciosa como explicação principal do varo pós-supracondiliana. O mecanismo vascular deve ser reconhecido como exceção, não negado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Cúbito varo.",
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, seção Outras complicações."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Cúbito varo"
+        ],
+        "blocos": [
+          "cubito-varo-02a36370",
+          "cubito-varo-1a120757",
+          "cubito-varo-9bc337d3",
+          "cubito-varo-7d2226a9",
+          "cubito-varo-7ec96b6d",
+          "cubito-varo-fd2a5e7e",
+          "cubito-varo-5f1b1eb1",
+          "cubito-varo-5b7c0897",
+          "cubito-varo-01df2fd8",
+          "cubito-varo-c47dcdd8",
+          "cubito-varo-afa22f7d",
+          "cubito-varo-89dd8dce"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
+      },
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Outras complicações"
+        ],
+        "blocos": [
+          "outras-complicacoes-ef2464f3",
+          "outras-complicacoes-3ccc4178",
+          "outras-complicacoes-a16b364b",
+          "outras-complicacoes-7df18448",
+          "outras-complicacoes-b1017a46",
+          "outras-complicacoes-0f62bca9",
+          "outras-complicacoes-484f2e26"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "c39b8fba6f4bbbb6c381998db40db94c07f732577d62deaa019e5ab1dd9ff97c"
+      }
+    ]
+  },
+  "pediatria-0532": {
+    "questaoSha256": "7426581c09c4646b4b3f5e162ff257b24a12174d6ff4b005606787a69d0f8361",
+    "comentarioAnteriorSha256": "6daa60fab77ad3383095254cad0636a3919198816002565944faf61d49e13d21",
+    "comentario": {
+      "conceito": "**A causa habitual do cúbito varo é a consolidação viciosa, com deformidade tridimensional.** O fragmento distal pode unir com varo no plano frontal, hiperextensão e rotação. O varo é o componente angular mais importante; a rotação e a inclinação sagital também influenciam a aparência e a função.\n\nO gabarito oficial escolheu **D, desvio medial com rotação**. Essa descrição se relaciona ao mecanismo pelo qual a rotação e a posição do fragmento produzem a deformidade. Entretanto, C também usa consolidação viciosa e descreve o próprio desvio em varo, destacado como fundamental pelo capítulo. O comentário deve preservar D sem ensinar que C represente um mecanismo impossível. Crescimento assimétrico e necrose podem produzir deformidade progressiva, mas não explicam a maioria dos casos.",
+      "correta": "**D é a resposta oficial.** O desvio medial associado à rotação do fragmento distal é a sequência escolhida pela banca para a consolidação viciosa que produz varo. A deformidade não deve ser atribuída, como regra, a uma parada de crescimento tardia.",
+      "incorretas": {
+        "A": "**Crescimento assimétrico por lesão fisária não é a causa habitual da deformidade.** A contribuição distal ao crescimento é pequena, e o capítulo considera a consolidação viciosa a principal explicação. Lesões de crescimento existem, mas são um grupo diferente.",
+        "B": "**Osteonecrose pode levar a varo progressivo, porém é rara.** O fato de ser uma causa possível não a torna a principal. A questão pede o mecanismo mais frequente, que é a união em posição inadequada.",
+        "C": "**A afirmação tem apoio conceitual e não deve ser tratada como anatomicamente falsa.** O capítulo destaca o varo como o componente mais importante da consolidação viciosa. A banca preferiu D por explicitar desvio medial e rotação; a sobreposição entre as duas descrições exige a ressalva."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Cúbito varo."
+      ],
+      "alerta": "Gabarito D preservado. O capítulo concorda com consolidação viciosa e inclui rotação e hiperextensão, mas considera o varo o componente mais importante. C também descreve esse mecanismo de modo defensável; D expressa a sequência de desvio medial e rotação escolhida pela banca. Não ensinar C como impossível."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Cúbito varo"
+        ],
+        "blocos": [
+          "cubito-varo-02a36370",
+          "cubito-varo-1a120757",
+          "cubito-varo-9bc337d3",
+          "cubito-varo-7d2226a9",
+          "cubito-varo-7ec96b6d",
+          "cubito-varo-fd2a5e7e",
+          "cubito-varo-5f1b1eb1",
+          "cubito-varo-5b7c0897",
+          "cubito-varo-01df2fd8",
+          "cubito-varo-c47dcdd8",
+          "cubito-varo-afa22f7d",
+          "cubito-varo-89dd8dce"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
+      }
+    ]
+  },
+  "pediatria-0843": {
+    "questaoSha256": "a6242dca4cf326ab9ea673961fa803a601d0bf06b377e82fa3bb7d8181c54d9e",
+    "comentarioAnteriorSha256": "5ef9a2e37de1cfe63a449cb3ebb863daceba794478945eacaee1e3e85f249541",
+    "comentario": {
+      "conceito": "**O cúbito varo é mais que um desvio no plano frontal.** A deformidade clássica pós-supracondiliana combina **varo, hiperextensão e rotação interna** do fragmento distal, por consolidação viciosa. O varo altera o carregamento; a hiperextensão pode aumentar extensão e reduzir flexão; a rotação acrescenta o componente transversal.\n\nNa radiografia AP, a relação da fise lateral muda e o Baumann descrito pela construção do capítulo diminui; no perfil, o capítulo fica atrás da linha umeral anterior. Não é adequado resumir todos esses achados a crescimento assimétrico. A deformidade pode ter consequências funcionais tardias, como instabilidade e neuropatia, além da aparência, e o potencial de remodelação do varo é pequeno.",
+      "correta": "**C: varo, extensão e rotação interna.** É a combinação clássica descrita. A palavra extensão corresponde ao componente de hiperextensão da consolidação, não ao movimento da manobra de redução.",
+      "incorretas": {
+        "A": "**O varo está correto, mas flexão e rotação externa invertem os outros componentes.** A consolidação habitual é descrita com hiperextensão e rotação interna. Reconhecer apenas o nome cúbito varo não basta para escolher o trio.",
+        "B": "**Inverte a direção dos três componentes solicitados.** O padrão clássico é varo, não valgo, e se associa a extensão e rotação interna. A alternativa descreve o espelho da deformidade apresentada.",
+        "D": "**Extensão e rotação interna estão corretas, mas a deformidade coronal é varo.** Valgo progressivo deve lembrar outros contextos, como pseudartrose condilar lateral. A questão trata da consolidação viciosa supracondiliana clássica."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Cúbito varo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Cúbito varo"
+        ],
+        "blocos": [
+          "cubito-varo-02a36370",
+          "cubito-varo-1a120757",
+          "cubito-varo-9bc337d3",
+          "cubito-varo-7d2226a9",
+          "cubito-varo-7ec96b6d",
+          "cubito-varo-fd2a5e7e",
+          "cubito-varo-5f1b1eb1",
+          "cubito-varo-5b7c0897",
+          "cubito-varo-01df2fd8",
+          "cubito-varo-c47dcdd8",
+          "cubito-varo-afa22f7d",
+          "cubito-varo-89dd8dce"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "09f7688ed5384f171d3e81f6722ea2977cc11780f502887c8dc2fcfb86b37573"
+      }
+    ]
+  },
+  "pediatria-0720": {
+    "questaoSha256": "f2988ca47c19ad38e22722a0ed604a65e0464fb0bd29b71ea50085570c359bc0",
+    "comentarioAnteriorSha256": "b35b9d2d1750817e6d35ee877e28ce3009f4115bece4ecb9bf9d537709f579a8",
+    "comentario": {
+      "conceito": "**A remodelação depende da idade, do crescimento restante e do plano da deformidade.** A fise distal do úmero contribui pouco para o crescimento. Além disso, varo e valgo ficam fora do plano habitual de flexoextensão do cotovelo e não apresentam correção previsível. A rotação também não é corrigida simplesmente pelo crescimento; pequenas rotações podem ser toleradas pela compensação do ombro.\n\nA **hiperextensão**, por estar no plano de movimento, tem algum potencial de remodelação, sobretudo na criança muito pequena. Esse processo é lento, limitado e inconsistente, não uma garantia de recuperar toda angulação posterior. A resposta é uma possibilidade relativa, não uma autorização para aceitar qualquer redução inadequada. Sem gabarito oficial registrado, a indicação da alternativa é bibliográfica.",
+      "correta": "**D, pela bibliografia: hiperextensão.** É o componente com algum potencial de correção, principalmente no paciente muito jovem. Mesmo assim, o capítulo ressalta a limitação e a imprevisibilidade da remodelação.",
+      "incorretas": {
+        "A": "**Varo está fora do plano de movimento e não remodela de modo confiável.** Esperar crescimento não substitui prevenção pela redução adequada. É uma das razões para valorizar o alinhamento coronal desde o tratamento inicial.",
+        "B": "**Valgo também é uma deformidade coronal fora do plano principal de flexoextensão.** A pouca contribuição da fise distal limita a correção. Ele não é o componente escolhido como remodelável no capítulo.",
+        "C": "**Rotação não deve ser confundida com compensação.** O ombro pode acomodar pequenos desvios e reduzir sua manifestação funcional, mas isso não significa que o úmero distal tenha remodelado a rotação. A opção sustentada é hiperextensão."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções O que remodela."
+      ],
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "O que remodela"
+        ],
+        "blocos": [
+          "o-que-remodela-acc7c25f",
+          "o-que-remodela-10858a70"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "982d327235260ca0dfc85e3b3dd9f55a31b3467646224687a5906d8d8835d09b"
+      }
+    ]
+  },
+  "pediatria-0751": {
+    "questaoSha256": "ff3ee578a7346576a8a002bd6768220ee80b6663ae12efec3acb5db9bdf358b2",
+    "comentarioAnteriorSha256": "68f865f4b392a5f8c377aabeacedd8f1864c32faa900d7fc50a26d6987a4693d",
+    "comentario": {
+      "conceito": "**A fratura em flexão é a exceção ao padrão comum de extensão.** Em geral decorre de golpe posterior ou queda sobre o cotovelo e leva o fragmento distal anteriormente. O periósteo posterior se rompe e o anterior pode funcionar como apoio; por isso, o comportamento de estabilidade também difere da fratura em extensão.\n\nO **ulnar** é o nervo predominante nas neuropraxias desse padrão: na metanálise citada, respondeu por 91% das lesões nervosas das fraturas em flexão. Esse percentual não é de todas as fraturas, pois a neuropraxia ocorreu em uma fração dos casos. O nervo pode estar tensionado ou preso no foco, sobretudo quando a redução é difícil. Sem gabarito oficial registrado, C é a resposta bibliográfica.",
+      "correta": "**C: ulnar.** É a associação predominante do padrão em flexão. A tensão ou interposição do nervo também ajuda a explicar por que um déficit ulnar com irredutibilidade exige atenção especial.",
+      "incorretas": {
+        "A": "**O interósseo anterior predomina nas discussões do padrão em extensão, especialmente com desvio posterolateral.** Aplicar essa frequência à fratura em flexão ignora a mudança do deslocamento e da relação com o nervo ulnar.",
+        "B": "**O radial é o nervo característico em risco no desvio posteromedial em extensão.** A pergunta especifica flexão, na qual o capítulo descreve predomínio do ulnar. A direção e o mecanismo precisam ser mantidos juntos.",
+        "D": "**O mediano acompanha o feixe ameaçado na extensão com desvio posterolateral.** Não é o nervo mais comumente lesado no padrão em flexão descrito. O ulnar é a exceção que diferencia essa fratura da maioria das supracondilianas."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Wilkins' Fractures in Children. 9ª edição. Capítulo 13 · Supracondylar Fractures of the Distal Humerus. Conteúdo consultado no resumo Fratura supracondiliana do úmero na criança, Biblioteca OrtoQuestões, seções Fratura supracondiliana em flexão."
+      ],
+      "provavel": "C"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas9-13-supracondiliana",
+        "titulo": "Fratura supracondiliana do úmero na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição",
+        "capitulo": "Capítulo 13 · Supracondylar Fractures of the Distal Humerus",
+        "secoes": [
+          "Fratura supracondiliana em flexão"
+        ],
+        "blocos": [
+          "fratura-supracondiliana-em-flexao-a21a51b5",
+          "fratura-supracondiliana-em-flexao-9a522012",
+          "fratura-supracondiliana-em-flexao-2ad80c88",
+          "fratura-supracondiliana-em-flexao-d6eeef9c",
+          "fratura-supracondiliana-em-flexao-034a15ed",
+          "fratura-supracondiliana-em-flexao-d4613b25"
+        ],
+        "sha256": "771f6788a227dca09abcc9bbd00205e91468530388ff1f0f8a1a7b287690d254",
+        "trechosSha256": "f7d1388787a15bee0bdb27993732fea7ad386e9ca56b8638df271b0b5127b15e"
+      }
+    ]
+  }
+}

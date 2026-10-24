@@ -1,0 +1,395 @@
+{
+  "joelho-0293": {
+    "questaoSha256": "ae912103829038ae7f5835c330cf8fa530171a151d19da61f44a3d7f611982af",
+    "comentarioAnteriorSha256": "3afa4d0afd648865464a6a7927b260a4c875d245ed5f69ad0ac90d936c5c9b92",
+    "comentario": {
+      "conceito": "A banda de tensão anterior busca produzir compressão **dinâmica na superfície posterior articular** da patela. “Anterior” descreve onde a banda atua; “posterior” descreve onde se procura comprimir o foco. A alternativa D é a resposta provável sustentada pelo resumo.\n\nNa fratura transversa, a tração do quadríceps tende a separar os fragmentos. O material anterior ocupa o lado de tensão e converte essa solicitação em compressão articular. Durante a flexão, a tensão passiva do mecanismo extensor e a pressão dos côndilos aumentam essa compressão no modelo biomecânico descrito (Rockwood, 10ª ed., cap. 60, “Fixação interna”).\n\n**Dinâmica não significa automática em qualquer montagem.** O princípio depende da redução e da geometria do material. O capítulo descreve fios paralelos associados ao oito anterior, próximo ao osso, e mostra que cerclagem, banda padrão e modificada têm resistências diferentes. Apenas dar o nome de banda de tensão a um implante não comprova que ele realize o efeito pretendido.\n\nOito anterior, fios de Kirschner ou parafusos canulados participam da montagem; nenhum desses nomes muda a superfície que deve recuperar congruência e compressão. É preciso conferir a redução articular, reparar os retináculos e ajustar a proteção pós-operatória à estabilidade alcançada. O resumo limita a flexão a 30 graus por 4 semanas após fixação estável, em vez de liberar movimento irrestrito só porque se usou banda.\n\nA distinção que resolve a questão é, portanto, local do material contra local do efeito, e compressão ligada ao movimento contra compressão puramente estática. O acervo não registra gabarito oficial; não se apresenta a resposta bibliográfica como se tivesse sido divulgada pela banca.",
+      "correta": "**D.** “Dinâmica” corresponde à compressão que aumenta com a flexão no modelo descrito, e “posterior” corresponde à superfície articular. É o único par que conserva simultaneamente o mecanismo e o local do efeito.",
+      "incorretas": {
+        "A": "**A.** Coloca a compressão na face anterior, onde está o lado de tensão da montagem, e a descreve como estática. Essa formulação não representa a conversão de tração em compressão articular durante a flexão.",
+        "B": "**B.** A palavra dinâmica está de acordo com o modelo, mas a superfície está trocada. A banda é anterior; a compressão articular que ela procura produzir é posterior. Confundir o lugar do implante com o lugar do efeito leva a essa alternativa.",
+        "C": "**C.** A superfície posterior está correta, porém a designação estática perde o papel da flexão e da tensão do aparelho extensor no modelo clássico apresentado. A questão cobra a compressão dinâmica, sem garantir magnitude idêntica em todo arco ou montagem."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Fixação interna."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial registrado. D permanece resposta provável pelo resumo do Rockwood, 10ª ed., cap. 60, que descreve compressão articular posterior aumentada com a flexão no modelo de banda de tensão anterior. O efeito depende da redução e da montagem; não é garantia de compressão crescente em qualquer técnica. A revisão usa essa fonte e não reivindica conferência de posicionamentos externos da AO.",
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Fixação interna"
+        ],
+        "blocos": [
+          "fixacao-interna-d2d06087",
+          "fixacao-interna-19754d8d",
+          "fixacao-interna-8ce3f90e",
+          "fixacao-interna-39781fe4"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "324ffbd5a2a73a228cd0d16fd74019c5dc61411b64fdce3413a43e05e55f044e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0125": {
+    "questaoSha256": "4538f65cbcd49b1dc3a168260d3151468949bc6f13a84ee10b1042e9722284cc",
+    "comentarioAnteriorSha256": "ab6f47af2d4708094e97ce95e5b0622e3ae245ac3c378e986eb08149980cecdf",
+    "comentario": {
+      "conceito": "O caso já informa a combinação que define **KD II**: os dois cruzados rompidos e os colaterais íntegros. A resposta é B. O detalhe decisivo não é saber para que lado a tíbia luxou, mas quais estruturas perderam continuidade.\n\nA classificação de Kennedy descrevia a direção da tíbia em relação ao fêmur. Essa informação pode desaparecer quando a luxação reduz antes da avaliação. Schenck organiza o quadro pelas lesões anatômicas, e a modificação inclui fratura periarticular e sufixos para complicações neurovasculares (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nNo esquema do resumo, KD I conserva função do cruzado posterior, com lesões colaterais variáveis. KD II perde os dois cruzados, mas preserva os colaterais. Se um colateral também se rompe, passa a KD III, medial ou lateral; se ambos, KD IV. KD V acrescenta a fratura periarticular. Não convém usar o número como simples contagem de qualquer ligamento: a combinação anatômica de cada classe precisa ser reconhecida.\n\nOs sufixos não substituem o tipo: C indica lesão circulatória arterial e N, neurológica. Mesmo sem esses sufixos no enunciado, todo joelho luxado exige avaliação vascular, com pulsos e índice tornozelo-braquial. Um padrão ligamentar aparentemente menos extenso não dispensa essa triagem.\n\nNesta pergunta, a integridade dos colaterais exclui os padrões III e IV. A ruptura de ambos os cruzados exclui o padrão I descrito no capítulo. Sobrou a combinação bicruzada de KD II.",
+      "correta": "**B.** KD II é a lesão dos cruzados anterior e posterior com os dois colaterais preservados. O enunciado fornece exatamente essa combinação, sem fratura periarticular ou sufixo neurovascular acrescentado.",
+      "incorretas": {
+        "A": "**A.** No KD I do esquema consultado, o cruzado posterior permanece funcionando, com colaterais variáveis. A ruptura dos dois cruzados dada no caso não cabe nessa definição.",
+        "C": "**C.** KD III exige que, além dos dois cruzados, um colateral esteja lesado. O caso afirma a integridade dos colaterais, portanto não permite acrescentar M ou L.",
+        "D": "**D.** KD IV envolve os dois cruzados e os dois colaterais. É um padrão mais amplo que o descrito; a preservação de ambos os colaterais é justamente o dado que mantém o caso como II."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck; A artéria poplítea."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Classificação de Schenck",
+          "A artéria poplítea"
+        ],
+        "blocos": [
+          "classificacao-de-schenck-05833290",
+          "classificacao-de-schenck-6a3443c0",
+          "a-arteria-poplitea-b9951f36"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "6e7ce3bfbf8e86a3e55b71fbb92f1195fd933d68950ed7824b222d944bd2831f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0222": {
+    "questaoSha256": "e985b0f2c838eb96ad27266c7f0aa3a009099cfd7230c08e4e39267851c87bca",
+    "comentarioAnteriorSha256": "2d271def1e6879dc87501773f90e7ef0698383687b4f68c117a081f6da55036c",
+    "comentario": {
+      "conceito": "No **KD II**, encontram-se lesionados os **dois ligamentos cruzados**, com colaterais íntegros. B é a alternativa correta. “II” não quer dizer duas estruturas escolhidas livremente entre todos os ligamentos do joelho.\n\nO cruzado anterior e o posterior formam o componente central do controle anteroposterior. Quando ambos se rompem, o padrão de luxação pode existir apesar de os colaterais não estarem rompidos. A classificação de Schenck identifica essa combinação anatômica, em vez de exigir que a direção original da luxação seja conhecida (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nIsso é útil porque muitos joelhos chegam já reduzidos. O alinhamento atual da radiografia não reconstrói, sozinho, tudo o que se rompeu; exame e RM ajudam a determinar o padrão. A classificação não deve transformar uma imagem reduzida em prova de que não houve luxação.\n\nPara comparar: KD I tem o cruzado posterior funcionando no esquema apresentado; KD III associa os dois cruzados a um colateral, e KD IV, aos dois colaterais. KD V inclui fratura periarticular. As letras M e L distinguem o lado no III; C e N registram, respectivamente, comprometimento circulatório e neurológico.\n\nOs distratores escolhem pares que parecem satisfazer a ideia de “duas lesões”, mas a regra não é aritmética. O critério é a associação específica dos cruzados com a preservação dos colaterais.",
+      "correta": "**B.** Os dois cruzados são a combinação lesada no KD II; os colaterais permanecem íntegros. A resposta deve ser completada mentalmente com essa preservação, que o separa do KD III e do IV.",
+      "incorretas": {
+        "A": "**A.** A ruptura dos dois colaterais não define KD II. No padrão KD IV, eles estão lesados junto com ambos os cruzados; não basta selecionar dois ligamentos para obter o tipo II.",
+        "C": "**C.** Um colateral com um cruzado não é a definição de KD II. A classificação exige perda dos dois cruzados nesse tipo, e não qualquer par formado por uma estrutura central e outra periférica.",
+        "D": "**D.** A associação de um cruzado ao canto posterolateral não reproduz a lesão bicruzada com colaterais íntegros. O canto é um complexo periférico; sua presença não substitui o segundo cruzado na definição pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Classificação de Schenck"
+        ],
+        "blocos": [
+          "classificacao-de-schenck-05833290",
+          "classificacao-de-schenck-6a3443c0"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "0ced25476b21cebb0fab2dcb43b21105ddaf96b97a5e226d6d02609285a50445"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0745": {
+    "questaoSha256": "05be1e972b386d7010ae3cb5a223e58937ffa97a3a64b1b0aca797061c719fa9",
+    "comentarioAnteriorSha256": "07d8374fec6d8423cc22ecc2321f40cb0c74400ef0c456680c006b72a7434896",
+    "comentario": {
+      "conceito": "A sigla **KD IIC** precisa ser lida em duas partes: **KD II**, lesão dos cruzados anterior e posterior com colaterais íntegros; **C**, lesão circulatória arterial. A combinação da alternativa B inclui os dois cruzados e a artéria poplítea.\n\nA classificação de Schenck modificada descreve as estruturas comprometidas. Isso evita depender da direção da luxação original, muitas vezes desconhecida porque o joelho chega reduzido. O número romano informa o padrão ligamentar, e os sufixos acrescentam informações que não são intercambiáveis: C é circulatório, N é neurológico (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\n**Lesão arterial não transforma II em III.** Para chegar ao KD III, precisa existir lesão de um dos colaterais além dos dois cruzados. O comprometimento da poplítea é registrado por uma letra, sem inventar ruptura colateral.\n\nA poplítea está fixada proximalmente no hiato dos adutores e distalmente no arco do sóleo. Por isso tem pouca capacidade de acompanhar a separação traumática dos ossos. A lesão pode ir da íntima à secção, e a gravidade vascular participa da urgência, independentemente do número do tipo ligamentar.\n\nO sistema de classificação organiza a descrição; não substitui a avaliação de perfusão. O capítulo recomenda pulsos e ITB em todo joelho luxado e ação imediata diante de sinais duros de isquemia. Na questão, basta conservar a diferença entre padrão anatômico e sufixo vascular para não cair no KD III-C oferecido como distrator.",
+      "correta": "**B.** Os dois cruzados correspondem a II, e a artéria poplítea corresponde a C. A alternativa não acrescenta lesão colateral, mantendo a definição de KD IIC.",
+      "incorretas": {
+        "A": "**A.** Não inclui o cruzado posterior nem a lesão arterial. Cruzado anterior com colateral lateral não é o padrão bicruzado de II e tampouco explica o sufixo C.",
+        "C": "**C.** Os dois cruzados com um colateral formam KD III. Além de trocar a categoria, a alternativa omite a lesão circulatória que a letra C exige.",
+        "D": "**D.** Inclui corretamente a artéria, mas acrescenta um colateral roto. Esse conjunto seria KD III-C, com especificação do lado quando conhecida, e não KD II-C."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Classificação de Schenck; A artéria poplítea."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Classificação de Schenck",
+          "A artéria poplítea"
+        ],
+        "blocos": [
+          "classificacao-de-schenck-6a3443c0",
+          "classificacao-de-schenck-6ad056db",
+          "a-arteria-poplitea-9f539f11",
+          "a-arteria-poplitea-b9951f36",
+          "a-arteria-poplitea-0851428b"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "050af0cf1a2caa02bbe7f985f788a2d617b294d53a30cbf6d1df1656202fad07"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0704": {
+    "questaoSha256": "01a30338458d6c1198983cd852c5f0b9fc5ee864aabaa06b9381be4b457dd7c6",
+    "comentarioAnteriorSha256": "193cbb158ec941061ff0f528ff031c3ee5cf388efbd94fdbde477d0dd37c5f0e",
+    "comentario": {
+      "conceito": "Um ITB de **0,91 está na faixa normal** informada pelo capítulo, de 0,91 a 1,3. A resposta é A. O valor é próximo do limite, mas não deve ser arredondado para baixo e classificado como menor que 0,9.\n\nO índice tornozelo-braquial é a pressão sistólica do tornozelo dividida pela do braço. O resumo descreve a medida com manguito e Doppler e recomenda realizá-la em todo joelho luxado, mesmo quando o pulso é palpável. A artéria pode ter lesão importante sem completa ausência inicial de pulso (Rockwood, 10ª ed., cap. 61, “A artéria poplítea”).\n\nO algoritmo separa dois caminhos: ITB abaixo de 0,90 exige investigação arterial por angiotomografia; acima de 0,9, com avaliação clínica compatível, permite observação com **exames seriados**. O resumo especifica admissão, 4 a 6 horas, 24 e 48 horas. Normal não significa dispensar seguimento depois de uma luxação.\n\n**A perfusão clínica prevalece sobre uma leitura isolada.** Membro frio e sem pulso, com a zona de lesão conhecida, constitui situação de exploração imediata. Um sinal duro não deve ser ignorado porque alguém anotou um índice aparentemente tranquilizador. A questão, porém, não descreve essa emergência: pede a classificação de 0,91.\n\nDoença arterial periférica também interfere no índice, e o resumo recomenda comparação contralateral no idoso. Esses cuidados ajudam a entender por que o resultado é uma ferramenta de triagem dentro do exame vascular, e não um certificado definitivo de ausência de qualquer lesão.",
+      "correta": "**A.** 0,91 pertence ao intervalo normal da fonte. Na ausência de sinais clínicos de alarme, esse valor favorece vigilância seriada, sem indicar investigação invasiva apenas por estar próximo do corte.",
+      "incorretas": {
+        "B": "**B.** O primeiro erro é chamar 0,91 de anormal. Além disso, o capítulo reserva papel mais seletivo à arteriografia convencional; ela não é exigida por um índice que está dentro da faixa normal.",
+        "C": "**C.** A angiotomografia é o caminho descrito para ITB abaixo de 0,90, não para 0,91 isoladamente. A opção mistura uma indicação correta de exame com uma classificação errada do número dado.",
+        "D": "**D.** A exploração imediata se relaciona a sinais duros de isquemia e lesão localizada, não a esse índice normal isolado. Não se pode acrescentar ao caso ausência de pulso ou membro frio que o enunciado não fornece."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: A artéria poplítea."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "A artéria poplítea"
+        ],
+        "blocos": [
+          "a-arteria-poplitea-b9951f36",
+          "a-arteria-poplitea-4ce45864",
+          "a-arteria-poplitea-a0a17d81",
+          "a-arteria-poplitea-6710572a",
+          "a-arteria-poplitea-0851428b",
+          "a-arteria-poplitea-82164fda",
+          "a-arteria-poplitea-5543f024"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "376990f05077251777744a23c475d842bdbefd4de8a5829ec30e033231c7c10f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0298": {
+    "questaoSha256": "1093e8a3f1cb722827f18c96a5d1018fa675f2b38b2829afbd1967150029279e",
+    "comentarioAnteriorSha256": "08e738fae4fbdcd2dd19f0e71b35f7b96b7ac3b2658ac5d72fdf05d3030491ea",
+    "comentario": {
+      "conceito": "A resposta é **100%**, alternativa D, porque esse foi o **valor preditivo negativo observado no estudo de Mills** citado pelo capítulo para ITB acima de 0,9 e lesão arterial importante. O número precisa permanecer ligado ao estudo, ao corte e ao desfecho avaliados.\n\nValor preditivo negativo responde: entre os pacientes cujo teste ficou no grupo considerado negativo, quantos não tinham a lesão importante que se procurava? Não é sensibilidade, não é frequência de lesão arterial nas luxações e não diz que todo pulso palpável exclui lesão (Rockwood, 10ª ed., cap. 61, “O índice tornozelo-braquial”).\n\nO ITB compara pressão sistólica no tornozelo com a braquial. Um valor acima de 0,9 é tranquilizador no algoritmo descrito; abaixo de 0,90, investiga-se a árvore arterial com angiotomografia. A observação após resultado normal inclui reavaliações vasculares seriadas, porque o paciente sofreu um trauma capaz de lesar a poplítea.\n\n**Um resultado de estudo não é promessa universal.** “100%” nesta questão não deve ser convertido em autorização para ignorar membro frio, deterioração clínica ou ausência de pulso. O capítulo mantém a exploração imediata diante de sinais duros e ressalta que pulso palpável sozinho não afasta lesão.\n\nTambém é importante não trocar o desfecho “lesão arterial importante” por “qualquer alteração da íntima”. O resumo descreve lesões não oclusivas acompanhadas clinicamente. A questão cobra o desempenho de uma estratégia de triagem no estudo citado, e não a impossibilidade biológica de qualquer anormalidade vascular.",
+      "correta": "**D.** É o VPN de 100% informado para o estudo citado. A interpretação correta conserva o contexto: ITB acima de 0,9, lesão arterial importante e manutenção do exame clínico seriado.",
+      "incorretas": {
+        "A": "**A.** Um VPN de 40% significaria que apenas 40% dos pacientes com teste negativo estariam livres da lesão importante. Não é o resultado apresentado no capítulo e não deve ser confundido com estimativas de frequência de lesão vascular nas luxações.",
+        "B": "**B.** 60% também não é o VPN informado. A alternativa propõe um desempenho muito diferente do estudo citado; não há no resumo justificativa para substituir o dado por esse valor intermediário.",
+        "C": "**C.** 80% indicaria que ainda haveria lesão importante em 20% do grupo com resultado negativo. Esse não foi o achado descrito por Mills no resumo; o valor cobrado é 100%, com as limitações de interpretação do estudo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: A artéria poplítea."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "A artéria poplítea"
+        ],
+        "blocos": [
+          "a-arteria-poplitea-b9951f36",
+          "a-arteria-poplitea-c275923c",
+          "a-arteria-poplitea-a0a17d81",
+          "a-arteria-poplitea-6710572a",
+          "a-arteria-poplitea-0851428b",
+          "a-arteria-poplitea-82164fda",
+          "a-arteria-poplitea-bca7b985"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "a7bb22f9971f7200cc46db54cf23ea129bf19de943b12010010f0ec997b65bff"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0256": {
+    "questaoSha256": "4e0ec8bb7301a0cd8efcecedef526237840b76409a82aa20ac92aa6be6e7b0b3",
+    "comentarioAnteriorSha256": "f4d2b4822d76d511c9e65324b4fb4f86aa2c6ea0d5af8bc6b038d5ee23c0a9c4",
+    "comentario": {
+      "conceito": "O cisto de Baker se relaciona ao intervalo **posteromedial entre a cabeça medial do gastrocnêmio e o semimembranáceo**, alternativa B. Os dois componentes importam: trocar a cabeça do gastrocnêmio ou substituir o semimembranáceo pelo sóleo muda o intervalo anatômico.\n\nA cápsula posterior nasce na margem proximal dos côndilos femorais e se prende abaixo do planalto. Medialmente, continua com estruturas do complexo colateral. O resumo descreve um defeito capsular de tamanho variável justamente entre o gastrocnêmio medial e a inserção direta do semimembranáceo, apontado como provável origem do cisto (Rockwood, 10ª ed., cap. 61, “A cápsula posterior e o cisto de Baker”).\n\n**Não basta memorizar “atrás do joelho”.** A região posterior contém várias estruturas com funções e relações distintas. O componente medial e a vizinhança do semimembranáceo especificam o local pedido. O sóleo não é um dos limites desse defeito capsular descrito no capítulo.\n\nO mesmo par muscular aparece em outro contexto: a via limitada de Burks e Schaffer para alcançar a inserção tibial do cruzado posterior. Nessa abordagem, o gastrocnêmio medial é afastado lateralmente para proteger o feixe neurovascular. Isso ajuda a reconhecer a região, mas não significa que cisto e acesso cirúrgico sejam o mesmo fenômeno.\n\nA questão é de topografia. Não fornece massa para diagnosticar, sintomas para tratar nem indicação de intervenção. O ganho é localizar corretamente o intervalo e evitar transformar qualquer estrutura posterior do joelho em um limite do cisto.",
+      "correta": "**B.** Reúne a cabeça medial do gastrocnêmio e o semimembranáceo, limites do defeito capsular posteromedial associado ao cisto no resumo. “Semimembranoso”, na opção, corresponde ao semimembranáceo.",
+      "incorretas": {
+        "A": "**A.** O semimembranáceo está correto, mas a cabeça lateral do gastrocnêmio está no lado errado para o intervalo posteromedial descrito. Uma referência parcial correta não compensa a troca do outro limite.",
+        "C": "**C.** Troca os dois elementos da resposta: cabeça lateral no lugar da medial e sóleo no lugar do semimembranáceo. O resumo não situa a origem do cisto nesse par muscular.",
+        "D": "**D.** Mantém o gastrocnêmio medial, mas substitui o semimembranáceo pelo sóleo. O defeito capsular descrito fica junto à inserção direta do semimembranáceo; o sóleo não é o segundo limite pedido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-cc74f408",
+          "cruzado-posterior-a-pedra-fundamental-199d4dab"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "877382d4f4cb0559a3dd162cc6ea109347490a3b3a76fa7b473aadfa33408a6e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0174": {
+    "questaoSha256": "e7dab8cb00caee3ea8a26aa704a6d2308cd1ede935f26273f92d0e880cf42c1f",
+    "comentarioAnteriorSha256": "f07f95e46d72191e2ba5ddf73a9e35f1fdf71fc371f17ce2a96f2227985dde18",
+    "comentario": {
+      "conceito": "O feixe mais espesso do cruzado posterior é o **anterolateral**, alternativa A. O outro feixe é o **posteromedial**; os nomes anteromedial e posterolateral pertencem à divisão do cruzado anterior, uma troca frequente nesta pergunta.\n\nO LCP vai da face lateral do côndilo femoral medial à região posterior da tíbia, abaixo do nível dos planaltos. Seus feixes são nomeados pela inserção femoral. O capítulo atribui ao anterolateral cerca de 85% da área de secção e maior resistência no dado apresentado, enquanto o posteromedial é menor (Rockwood, 10ª ed., cap. 61, “Cruzado posterior: a pedra fundamental”).\n\nA diferença de tamanho não torna o feixe menor dispensável. O LCP restringe principalmente a translação posterior da tíbia, e as orientações e solicitações dos feixes mudam com o arco de movimento. Na reconstrução em duplo feixe preferida pelos autores, o anterolateral é tensionado a 90 graus de flexão e o posteromedial em extensão completa.\n\n**Nomenclatura e posição de tensão são informações diferentes.** O nome descreve onde o feixe se insere, não uma ordem arbitrária de palavras nem uma declaração de que ele funciona só naquela posição do joelho. No LCA, os feixes são anteromedial e posterolateral e são nomeados pela inserção tibial; no LCP, anterolateral e posteromedial pela femoral.\n\nPara resolver a questão sem decorar quatro nomes soltos, primeiro identifique o ligamento e seus dois feixes. Depois compare o tamanho: no par do LCP, o anterolateral é o maior.",
+      "correta": "**A.** O anterolateral é o maior dos dois feixes do LCP no resumo, respondendo pela maior parcela da área de secção. A localização e o tamanho estão corretamente associados.",
+      "incorretas": {
+        "B": "**B.** Anteromedial é um feixe do LCA, não o nome do feixe maior do LCP. A troca parece pequena na palavra, mas muda o ligamento e o referencial de inserção usados para nomeá-lo.",
+        "C": "**C.** Posterolateral também pertence ao LCA. No cruzado posterior, o par correto é anterolateral e posteromedial; portanto, esta alternativa nem identifica um dos dois feixes do ligamento perguntado.",
+        "D": "**D.** Posteromedial é de fato um feixe do LCP, mas é o menor no dado apresentado. Reconhecer que ele existe não basta: o enunciado pede o mais espesso, que é o anterolateral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Cruzado anterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "Cruzado anterior"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-ae278a04",
+          "cruzado-posterior-a-pedra-fundamental-b7927840",
+          "cruzado-posterior-a-pedra-fundamental-33692257",
+          "cruzado-posterior-a-pedra-fundamental-cd462063",
+          "cruzado-posterior-a-pedra-fundamental-075e0a72",
+          "cruzado-anterior-d3582e20"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "9ffaf2ec6037acc2fb509f93f6cfb7ceb4cb98746677af0151846bcec03cef6c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1080": {
+    "questaoSha256": "340a2104c6ec609f186627bc6c600f75886eb17e3b6b159421e067860c68cbe9",
+    "comentarioAnteriorSha256": "8aa86d27af683222daa605c7d44160545405f69fa3f060e79f0f03e81f42bbe8",
+    "comentario": {
+      "conceito": "Na técnica inlay do cruzado posterior, o intervalo de acesso à tíbia posterior fica entre o **semimembranáceo e a cabeça medial do gastrocnêmio**, alternativa D. É a via limitada de Burks e Schaffer descrita no resumo.\n\nO LCP se insere posteriormente na tíbia, abaixo dos planaltos. Para fixar um enxerto nessa região ou reparar uma avulsão, o cirurgião precisa alcançar a face posterior sem transformar a exposição num risco desnecessário ao feixe neurovascular. Na via descrita, o gastrocnêmio medial é afastado lateralmente e participa da proteção desse feixe (Rockwood, 10ª ed., cap. 61, “Como se rompe e a via inlay”).\n\n**Os tendões mediais não formam intervalos equivalentes.** Semitendíneo e grácil pertencem à pata de ganso, mais anterior e superficial em relação ao campo posterior buscado. Escolher dois nomes da face medial sem localizar sua relação com a tíbia não resolve a pergunta. O semimembranáceo é parte do intervalo, mas precisa estar associado ao gastrocnêmio medial.\n\nA artéria poplítea está muito próxima da região posterior do LCP, descrita a 7 a 10 mm de sua face posterior. Essa proximidade explica o cuidado durante túneis e exposição; não significa que a via inlay elimine todo risco vascular. O resumo também aponta a artéria genicular média e o ramo motor do tibial para o gastrocnêmio medial como estruturas em risco na abordagem.\n\nO capítulo compara inlay e transtibial, com resultados semelhantes quando o túnel transtibial é adequadamente baixo. A escolha da técnica não muda o intervalo anatômico cobrado aqui: reconhecer os dois músculos evita confundir o acesso à tíbia posterior com a região de retirada de tendões flexores.",
+      "correta": "**D.** Semimembranáceo com gastrocnêmio medial é o intervalo descrito para exposição limitada da inserção tibial do LCP. O afastamento lateral do gastrocnêmio medial ajuda a proteger o feixe neurovascular.",
+      "incorretas": {
+        "A": "**A.** Semitendíneo e grácil remetem à pata de ganso, anterior e superficial ao campo desejado. Esse par não corresponde à janela posterior descrita para o inlay.",
+        "B": "**B.** Inclui o semimembranáceo, mas o associa ao grácil. O limite que permite a exposição e o afastamento protetor na técnica é o gastrocnêmio medial, não o grácil.",
+        "C": "**C.** Também conserva o semimembranáceo e troca o outro limite. O semitendíneo não substitui o gastrocnêmio medial no intervalo de Burks e Schaffer; sua relação com a pata de ganso é de outro plano anatômico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; O lado medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Cruzado posterior: a pedra fundamental",
+          "O lado medial"
+        ],
+        "blocos": [
+          "cruzado-posterior-a-pedra-fundamental-199d4dab",
+          "cruzado-posterior-a-pedra-fundamental-ae278a04",
+          "o-lado-medial-5c9f047e",
+          "cruzado-posterior-a-pedra-fundamental-075e0a72"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "d65bfe5e52c0e04284823fa49e642f7a9f5388b9d2c366dc6faf9a431d9a66e5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0060": {
+    "questaoSha256": "46d0b2424224b46418f08659805002deb724a88da9dfad7b23ba6b94cc0f95f8",
+    "comentarioAnteriorSha256": "3f033c8b07e83015d0b7ada769a196d7ebafbe92f0d52df5ebd4c25f4badd8b2",
+    "comentario": {
+      "conceito": "Na lesão combinada do LCP e do canto posterolateral, o nervo mais vulnerável é o **fibular comum**, alternativa B. O ponto importante é reconhecer o tronco que passa junto à região lateral do joelho, em vez de escolher um de seus ramos mais distais.\n\nO fibular comum está profundo e posterior ao tendão do bíceps e contorna o colo da fíbula, cerca de 1,5 a 2 cm abaixo da ponta do estiloide. O capítulo descreve sua vulnerabilidade à tração por ter pouca liberdade para acompanhar o deslocamento traumático e associa a lesão principalmente ao canto posterolateral (Rockwood, 10ª ed., cap. 61, “O nervo fibular comum”).\n\n**Uma luxação pode já estar reduzida e ainda deixar lesão nervosa.** O exame deve registrar a função antes da cirurgia e ser repetido conforme a evolução. Na abordagem lateral, o nervo é a primeira estrutura a identificar e proteger pela janela posterior ao bíceps. A atenção anatômica serve tanto para reconhecer a lesão do trauma quanto para evitar acrescentar dano cirúrgico.\n\nAs lesões parciais têm prognóstico melhor que as paralisias completas nas séries citadas. Isso não permite prometer recuperação individual: a extensão do dano e o exame seriado importam. Desde o início, órtese e mobilização do pé e tornozelo procuram impedir o equino, que pode prejudicar a marcha e dificultar procedimentos reconstrutivos futuros.\n\nO nervo tibial também exige cuidado no joelho, especialmente na região do túnel tibial do LCP. Esse risco operatório não muda o nervo tipicamente associado ao trauma do canto posterolateral.",
+      "correta": "**B.** O fibular comum contorna o colo da fíbula e é particularmente exposto à tração na lesão lateral. É o tronco descrito pelo capítulo como associado à lesão do canto posterolateral, antes de se pensar em comprometimento isolado dos ramos.",
+      "incorretas": {
+        "A": "**A.** O tibial integra o feixe posterior e merece proteção, mas não é o nervo mais caracteristicamente associado ao trauma do canto posterolateral. Confundir risco na perfuração do túnel do LCP com frequência de lesão no trauma muda o contexto da pergunta.",
+        "C": "**C.** Fibular profundo é um ramo, e não o tronco comum vulnerável junto ao colo da fíbula. A lesão descrita no capítulo é do fibular comum; escolher apenas um ramo reduziria indevidamente o nível anatômico do comprometimento.",
+        "D": "**D.** Fibular superficial também é um ramo. O padrão de tração lateral próximo ao joelho envolve o tronco comum descrito no resumo, e não uma lesão isolada distal desse ramo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O nervo fibular comum; Canto posterolateral; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "O nervo fibular comum",
+          "Canto posterolateral",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "o-nervo-fibular-comum-8a85bf5b",
+          "o-nervo-fibular-comum-6c2619c5",
+          "o-nervo-fibular-comum-05d3e14c",
+          "canto-posterolateral-206b3f52",
+          "cruzado-posterior-a-pedra-fundamental-199d4dab"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "7a21e920d6edae68d4868f8c9dbddcf210227c64a02e4f4899f7b46e5773b291"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

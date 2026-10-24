@@ -1,0 +1,424 @@
+{
+  "trauma-0899": {
+    "questaoSha256": "11d007cfb9dfb6807c4088ae65cce514ee3568a58ecd57da9be5de6a1158e9fe",
+    "comentarioAnteriorSha256": "e28989431091a6bdb26838c585a9878d8528df3a7952f719a80e89f29f2a5fce",
+    "comentario": {
+      "conceito": "O cirurgião conseguiu aproximar os fragmentos, mas a radioscopia ainda mostra **10 graus de varo no AP e 25 graus de inclinação posterior no perfil**. Fixar nessa posição seria estabilizar uma redução inadequada. O próximo passo é melhorar a geometria nos dois planos; entre as alternativas, D é a única que faz isso.\n\nPense no colo como a ligação pela qual a carga da cabeça chega à diáfise. Em varo, a posição favorece **cisalhamento**, isto é, deslizamento entre os fragmentos, em vez de um contato mecanicamente favorável à consolidação. O implante teria de sustentar um foco já colocado em desvantagem. O resumo considera varo inaceitável e cita cerca de 55% de falha com 20 graus de varo. Esse dado reforça o efeito do desvio, mas não permite calcular o risco deste paciente por uma regra de três: 10 graus não significam “metade de 55%” (resumo do Rockwood, 10ª ed., cap. 53, “A redução é o que mais importa”).\n\nA outra imagem revela um defeito que o AP não resolve: **25 graus de inclinação posterior**. A referência de Arnold apresentada pelo capítulo é menos de 20 graus. Se o cirurgião corrigisse apenas o varo, o perfil continuaria inadequado; se corrigisse apenas o perfil, conservaria o cisalhamento associado ao varo. A redução é uma relação tridimensional entre os fragmentos, não a aprovação de uma única incidência.\n\nA ausência de cominuição posterior não muda esse julgamento. Cominuição é perda de suporte por fragmentação; angulação é uma posição relativa inadequada. Uma fratura pode não ter fragmentação posterior e ainda estar mal reduzida. O enunciado retirou uma dificuldade de estabilização, não os dois desvios que a radioscopia demonstra.\n\nO paciente tem 45 anos. Na ausência das comorbidades que mudariam a estratégia, procura-se preservar a cabeça com **redução adequada e fixação estável**. Isso exige corrigir a redução antes da síntese definitiva, e não passar diretamente à artroplastia porque a primeira manobra falhou. A manobra fechada descrita é suave, com tração e rotação interna progressivas, conferindo as imagens. Se o alinhamento continuar insatisfatório, o resumo admite redução aberta por via anterior. Força excessiva pode produzir valgo difícil de corrigir, portanto melhorar a redução não significa apenas tracionar com mais intensidade.\n\nD propõe valgo leve e inclinação posterior inferior a 20 graus. A leitura correta é **valgo leve preferível ao varo residual**, e não “quanto mais valgo, melhor”. A anatomia restaurada continua relacionada à menor necrose; uma vantagem mecânica em relação ao varo não torna o valgo superior em todos os desfechos. O índice de Garden e as curvas de Lowell, apresentados no resumo da Biblioteca, ajudam a conferir esse alinhamento antes de fixar.",
+      "correta": "**D: correção para valgo leve e inclinação posterior inferior a 20 graus antes da fixação.** Corrige os dois problemas demonstrados: elimina o varo e traz o perfil para a referência descrita. O resultado procurado é uma redução que possa ser sustentada pela fixação, sem exigir do implante que compense uma geometria inadequada.\n\nA opção não deve ser transformada numa recomendação de produzir valgo em toda fratura. A redução anatômica segue sendo objetivo; entre as posições oferecidas, D é a única que evita os dois defeitos concretos do caso.",
+      "incorretas": {
+        "A": "**Artroplastia troca a estratégia antes de esgotar a possibilidade de preservar a cabeça.** No paciente jovem ou de meia-idade sem fatores de alto risco descritos, o capítulo orienta redução e fixação. Ter uma primeira redução inadequada é motivo para corrigir a redução, inclusive aberta se necessário; não demonstra por si que a cabeça deva ser substituída.\n\nA prótese ganharia espaço em outro contexto, como idoso com fratura desviada ou paciente fisiologicamente comprometido com alto risco de falha. Essas condições não foram fornecidas para justificar abandonar a preservação neste homem de 45 anos.",
+        "B": "**Aceitar a redução conserva dois fatores de falha.** Dez graus de varo não são neutralizados pela ausência de cominuição; os 25 graus posteriores também ultrapassam a referência do perfil. Uma fixação tecnicamente bem posicionada ainda pode falhar se sustentar fragmentos mal alinhados.\n\nA frase “sem cominuição posterior” não descreve qualidade da redução. Ela informa que não existe aquela perda de suporte, mas a radioscopia já mostrou outra fonte de instabilidade: a geometria inadequada.",
+        "C": "**Corrigir só o perfil deixa o problema do AP ativo.** Reduzir a inclinação posterior abaixo de 20 graus atende a um critério. Manter o varo preserva o cisalhamento e a posição desfavorável à fixação.\n\nUma redução não se torna aceitável pela média entre uma imagem boa e outra ruim. É necessário controlar ambos os planos antes de concluir a síntese."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-be509df6",
+          "fratura-desviada-no-jovem-43725930",
+          "fratura-desviada-no-jovem-48422559",
+          "fratura-desviada-no-jovem-0b5ab099",
+          "fratura-desviada-no-jovem-0d3d7820",
+          "fratura-desviada-no-jovem-0dc33d7e",
+          "fratura-desviada-no-jovem-38a46d78"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "486b9e1d75f341c03c0bb73442f7577ca6b9504ef8d7c7234ddb880cb2056a20"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0863": {
+    "questaoSha256": "5f06d50304be73994c9ffdb20d535d77c22caf903a81239492eea536b8f053aa",
+    "comentarioAnteriorSha256": "e5f53522eae9eac9a520c7663bd4587bb83da262963f4754117e1fe6cd6d7aac",
+    "comentario": {
+      "conceito": "A questão pergunta qual redução está associada a **menor necrose avascular**, mas marca oficialmente C, impactada em valgo. A fonte consultada favorece **redução anatômica**, alternativa B. A explicação precisa conservar essa divergência; não é correto ensinar que uma vantagem de estabilidade prova proteção vascular.\n\nHá dois problemas diferentes numa fratura do colo. O primeiro é mecânico: a fratura precisa permanecer reduzida até consolidar. Varo aumenta cisalhamento e favorece falha; em comparação a ele, **valgo leve é mais estável**. O segundo é vascular: a cabeça precisa continuar viva. Restaurar o alinhamento ósseo e preservar sua circulação são objetivos relacionados, mas não são a mesma medida de resultado. Uma redução pode oferecer melhor apoio mecânico que outra sem ter o menor risco de necrose (resumo do Rockwood, 10ª ed., cap. 53, “A redução é o que mais importa”).\n\nA anatomia esclarece por que necrose não é apenas outro nome para falha da fixação. No adulto, o ramo profundo da circunflexa femoral medial origina os ramos retinaculares que sobem junto ao colo e entram na cabeça. A fratura desviada compromete essa região por onde chega a circulação. Uma cabeça pode perder viabilidade mesmo que a fratura venha a unir; inversamente, uma falha de consolidação não demonstra por si que toda a cabeça esteja necrótica. A artéria do ligamento redondo contribui, mas não sustenta sozinha a cabeça inteira (mesmo resumo, “Irrigação da cabeça femoral”).\n\nO texto consultado separa as conclusões explicitamente: **valgo leve preferível ao varo por estabilidade; necrose menor com redução anatômica; tanto varo quanto valgo aumentam esse risco em relação à anatomia restaurada**. Isso impede justificar C como se o capítulo concordasse integralmente com a banca. Também impede recomendar produzir valgo de propósito para “proteger os vasos”. A manobra excessivamente forçada pode criar valgo difícil de corrigir.\n\nO seguimento mostra a diferença na prática. A falha da fixação e a pseudartrose preocupam nos primeiros meses; a necrose pode aparecer depois de a fratura consolidar, sobretudo no segundo ano. Nem toda necrose detectada exige nova operação. Por isso, menos falha, menos necrose e menos reoperação são três afirmações que precisam de evidências próprias, e não traduções automáticas umas das outras.\n\nPara resolver esta prova histórica, reconheça a letra oficial C e sua ressalva. Para aprender o conceito sustentado pelo resumo, associe menor necrose à redução anatômica. A seção de redução na Biblioteca permite revisar essa diferença junto da anatomia vascular.",
+      "correta": "**C: impactada em valgo, gabarito oficial preservado com divergência.** O valgo leve oferece vantagem mecânica em relação ao varo residual, mas o resumo não o identifica como a posição de menor necrose. Para o desfecho exato do enunciado, a indicação bibliográfica é B, anatômica.\n\nA letra oficial não deve ser usada para afirmar que impacto em valgo garante melhor circulação, nem para apagar a diferença entre risco de falha da síntese e risco de perda da viabilidade da cabeça.",
+      "incorretas": {
+        "A": "**Varo acrescenta uma desvantagem mecânica e não é a posição de menor necrose.** Aumenta o cisalhamento e o risco de falha, razão para não ser aceito como redução definitiva. O capítulo também o coloca entre as posições com mais necrose que a redução anatômica.\n\nNão é necessário supor um mecanismo vascular não demonstrado para descartá-lo. A própria comparação do texto já o afasta como resposta e oferece um motivo mecânico adicional para corrigi-lo.",
+        "B": "**É a resposta sustentada pelo resumo para o desfecho perguntado.** Redução anatômica restaura a relação entre os fragmentos e é associada à menor necrose na comparação citada. Ela aparece entre as opções oficialmente incorretas apenas porque C foi o gabarito registrado.\n\nNão equivale a prometer ausência de necrose após toda redução perfeita. A lesão vascular produzida no trauma pode persistir; a comparação é de risco, não uma garantia individual.",
+        "D": "**Angulação posterior é deformidade residual, não uma proteção vascular.** Deve ser procurada no perfil porque uma imagem AP aparentemente boa pode escondê-la. O texto usa menos de 20 graus como referência aceitável de inclinação posterior.\n\nEsse limite descreve tolerância a um desvio, e não uma indicação de criar angulação para reduzir necrose. Aceitabilidade mecânica e menor risco vascular continuam sendo perguntas distintas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Anatomia aplicada; Fratura desviada no idoso; Complicações."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial C preservado. O resumo do Rockwood, 10ª edição, capítulo 53, diferencia estabilidade e necrose: valgo leve é preferível ao varo mecanicamente, mas a necrose é menor com redução anatômica (B); varo e valgo aumentam esse risco. Não atribuir ao valgo uma proteção vascular que o texto não sustenta."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem",
+          "Anatomia aplicada",
+          "Fratura desviada no idoso",
+          "Complicações"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-0b5ab099",
+          "fratura-desviada-no-jovem-48422559",
+          "fratura-desviada-no-jovem-0d3d7820",
+          "anatomia-aplicada-a8c38522",
+          "anatomia-aplicada-666e0ba0",
+          "fratura-desviada-no-jovem-43725930",
+          "fratura-desviada-no-idoso-9ceafc6a",
+          "complicacoes-7f006830"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "64152e8ea7cb44f68218f934daff748e6fe62e609c447d5c10173947c0b6fbf5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1545": {
+    "questaoSha256": "d6f04c0bed53041797038258f07f61a67d5e075d2779343af3181eaf36aecb7b",
+    "comentarioAnteriorSha256": "67031a52bcc40edcea2c3e92fccb145386f6503b80d612fdb2a958e1ddc6c082",
+    "comentario": {
+      "conceito": "O enunciado reúne dois desfechos e pede uma posição para cada um: **falha da fixação** e **necrose avascular**. O par da alternativa B é valgo/anatômica, mas ele precisa ser entendido como uma comparação mecânica com o varo, não como ordem de produzir valgo em todo colo fraturado.\n\nNa falha da fixação, a pergunta é se o conjunto osso-implante consegue manter a redução até a união. O varo aumenta cisalhamento no foco: sob carga, os fragmentos têm maior tendência a deslizar. O resumo o considera inaceitável e cita cerca de 55% de falha quando há 20 graus de varo. Nesse contexto, **valgo leve é preferível ao varo por oferecer maior estabilidade** (resumo do Rockwood, 10ª ed., cap. 53, “A redução é o que mais importa”).\n\nJá a necrose pergunta se a cabeça mantém sua viabilidade. O texto afirma menor necrose com **redução anatômica** e aumento do risco tanto em varo quanto em valgo. É possível, portanto, um alinhamento ser mecanicamente preferível a outro e ainda não ser o melhor na comparação vascular. A conclusão sobre uma variável não substitui o resultado da outra.\n\nEssa separação tem consequência operatória: não se deve aceitar varo para evitar manipular mais, mas também não se deve forçar uma redução em valgo supondo que assim a cabeça ficará mais vascularizada. O capítulo descreve manobras progressivas e suaves; valgo excessivo produzido por força pode ser difícil de corrigir. Se a redução fechada não é adequada no jovem, considera-se redução aberta em vez de fixar uma geometria ruim.\n\nA formulação mais precisa é: **buscar anatomia e fixação estável; quando a comparação é valgo leve versus varo residual, o valgo leve é mecanicamente preferível; para menor necrose, a referência continua anatômica**. O resumo da Biblioteca apresenta esses pontos no mesmo trecho para permitir compará-los.\n\n**Por que esta questão foi criada.** Avalia se o aluno distingue uma posição mecanicamente melhor que o varo da posição associada à menor necrose, evitando transformar um único rótulo de redução em resposta para todos os desfechos.",
+      "correta": "**B: valgo e anatômica.** O primeiro termo deve ser lido como valgo leve na comparação com varo, por estabilidade; o segundo identifica a posição relacionada à menor necrose. A opção não demonstra que valgo seja superior à anatomia em falha de fixação, nem que se deva procurá-lo rotineiramente.\n\nManter essa ressalva é essencial: o objetivo clínico é boa redução e estabilidade, não produzir uma deformidade para reproduzir literalmente um par de palavras.",
+      "incorretas": {
+        "A": "**A segunda parte está correta, mas o varo não é a posição mecanicamente favorecida.** O cisalhamento aumenta a solicitação da fixação e favorece perda da redução. Dizer “anatômica” para necrose não compensa esse primeiro erro.\n\nÉ útil julgar separadamente as duas metades: a alternativa contém uma afirmação vascular verdadeira e uma comparação mecânica inadequada.",
+        "C": "**Troca as duas relações.** Atribui menor falha ao varo e menor necrose ao valgo. O resumo, ao contrário, recomenda evitar varo e associa menor necrose à anatomia restaurada.\n\nO erro nasce de tratar uma posição como proteção geral. Cada desfecho exige sua própria comparação; estabilidade não pode ser inferida de uma suposição sobre vasos nem o contrário.",
+        "D": "**A primeira metade cabe à comparação com varo; a segunda extrapola essa vantagem.** Valgo leve pode ser mais estável que varo, mas isso não demonstra menor necrose que a redução anatômica.\n\nA repetição da palavra “valgo” parece oferecer uma regra única simples, porém apaga a distinção central entre manter o foco até consolidar e manter a cabeça viável."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-48422559",
+          "fratura-desviada-no-jovem-0b5ab099",
+          "fratura-desviada-no-jovem-43725930"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "769721d60f26e5c9eab20945870493d71e20a0dc9121f5a44c68992bdaa5f008"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1547": {
+    "questaoSha256": "2b41e74efcdfa10b8cbb283fd194df26c05f92bd9341b8e86038820111d4d035",
+    "comentarioAnteriorSha256": "645ec360e3db44f18ad1829191ede92780763b9ac40ebf3c69de808be42c521e",
+    "comentario": {
+      "conceito": "A redução pode parecer possível enquanto há tração, mas não se manter quando é preciso estabilizar o foco. A causa mais comum descrita para essa dificuldade é a **cominuição posterior**: a região perdeu suporte por fragmentação. No **idoso**, se não se obtém redução aceitável, o capítulo orienta converter para **artroplastia**.\n\nÉ importante diferenciar dificuldade de alinhar e dificuldade de obter uma redução que permaneça estável. A manobra pode aproximar os fragmentos, mas não recria a parede óssea posterior fragmentada. A cominuição não é apenas uma linha a mais na radiografia; ela explica por que o conjunto permanece mecanicamente desfavorável. A própria rotação externa do trauma, com a cabeça contida no acetábulo e tensão da cápsula anterior/iliofemoral, ajuda a entender a fragmentação posterior descrita pelo capítulo (resumo do Rockwood, 10ª ed., cap. 53, “Mecanismo” e “A redução é o que mais importa”).\n\nNo idoso, insistir numa fixação de alto risco tem um custo. O osso osteoporótico pode sustentar mal os implantes, perder a redução e não consolidar; nos ensaios de fraturas desviadas em maiores de 60 anos, falha ou pseudartrose levaram a novas cirurgias em 30% a 50%. Esses dados não significam que toda cominuição exija prótese, mas explicam por que **não obter redução aceitável** muda a estratégia. Trocar apenas o tipo de implante não garante que o problema do foco desapareça.\n\nNo jovem, a relação entre riscos é diferente: procura-se salvar uma cabeça que teria décadas de uso. Se a redução fechada não for satisfatória, considera-se aberta por via anterior. Portanto, a mesma imagem de dificuldade mecânica pode levar a outra decisão conforme a reserva óssea, o horizonte de uso da articulação e o risco de falha. A palavra “idoso” no enunciado é parte do tratamento, não uma informação acessória.\n\nTambém não é neutro decidir “vamos tentar fixar, e se falhar trocamos depois”. O resumo relata mais infecção, luxação e fratura periprotética na artroplastia total de salvamento do que na primária. A possibilidade de uma segunda operação não torna segura uma fixação previsivelmente inadequada. Compare os cenários no resumo da Biblioteca, mantendo claro o critério: no idoso desta pergunta, a redução **não ficou aceitável**.\n\n**Por que esta questão foi criada.** Liga uma perda concreta de suporte ósseo à mudança de estratégia, e exige reconhecer que preservar a cabeça no jovem e recuperar função no idoso podem justificar decisões diferentes.",
+      "correta": "**C: cominuição posterior e artroplastia.** O primeiro termo identifica o suporte que falta; o segundo é a estratégia indicada no idoso quando não se obtém redução aceitável. Não é uma regra de artroplastia para qualquer fragmento posterior visível.\n\nA decisão decorre da combinação de paciente e resultado da redução: insistir numa montagem que não oferece estabilidade adequada expõe esse idoso a falha e a uma cirurgia de salvamento mais complicada.",
+      "incorretas": {
+        "A": "**Reconhece a estratégia possível no idoso, mas localiza errado a causa mais comum.** A perda de suporte destacada é posterior, coerente com a cominuição frequente produzida pelo mecanismo em rotação externa.\n\nA alternativa contém uma conduta compatível com o cenário, mas não identifica o problema mecânico pedido. Acertar prótese não transforma a fragmentação anterior na causa predominante descrita.",
+        "B": "**Erra a região e aplica a resposta de preservação de outro paciente.** O capítulo aponta cominuição posterior. Redução aberta é considerada no jovem quando a fechada é inadequada, porque se quer preservar a cabeça.\n\nAbrir o foco permite melhorar o alinhamento, mas não faz desaparecer a perda de suporte nem os riscos da fixação no osso do idoso. O enunciado pede a mudança de estratégia diante de redução não aceitável nesse grupo.",
+        "D": "**Acerta a fragmentação posterior, mas não a conduta específica do idoso.** É a opção que seria mais próxima da orientação de preservar a cabeça no jovem com redução fechada insatisfatória.\n\nAqui a instabilidade permanece e o risco de falha da fixação pesa mais. A distinção não é “aberta sempre errada”; é que o capítulo, para o idoso sem redução aceitável, recomenda artroplastia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Mecanismo, lesões associadas e quadro clínico; Fratura desviada no idoso."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem",
+          "Mecanismo, lesões associadas e quadro clínico",
+          "Fratura desviada no idoso"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-0dc33d7e",
+          "mecanismo-lesoes-associadas-e-quadro-clinico-cfb92f1f",
+          "fratura-desviada-no-idoso-9ceafc6a",
+          "fratura-desviada-no-jovem-be509df6",
+          "fratura-desviada-no-jovem-43725930",
+          "fratura-desviada-no-idoso-dbdc1565"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "222cfac2926a6fe7f256e5853f40d85a56e88a983723dccc6a098070dd64f062"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1561": {
+    "questaoSha256": "5ec85af8affaa828c81ffa3e40c5fb339772f9f6aa66bdb71a15eb6b6de3d2c3",
+    "comentarioAnteriorSha256": "4ae50d79519b6d7af6795299db14bcc7f3ad2714bfff43ba90c16383b8c4cc9c",
+    "comentario": {
+      "conceito": "Os dois pacientes têm fratura desviada, mas não têm a mesma função anterior nem o mesmo potencial de recuperação. Para o **deambulador comunitário independente, sem déficit cognitivo**, o algoritmo considera **artroplastia total**. Para o **idoso com demência e baixa demanda**, favorece **hemiartroplastia cimentada**. A decisão não se resolve só pela idade.\n\nA primeira escolha é entre preservar a cabeça com fixação e substituí-la. Na fratura desviada do idoso, a fixação pode perder redução ou não consolidar, e a necrose é outro problema possível. Substituir o lado femoral evita depender da consolidação do colo e da viabilidade dessa cabeça. Por isso a hemiartroplastia cimentada moderna é a opção do capítulo para a maioria dos idosos com fratura desviada (resumo do Rockwood, 10ª ed., cap. 53, “Fratura desviada no idoso”).\n\nA segunda escolha é se vale acrescentar a substituição acetabular. A **hemiartroplastia** substitui o lado femoral; a **total** inclui o acetábulo. Para a pessoa ativa, com vida independente pela frente, o eventual ganho funcional pode justificar a total, especialmente quando já há doença acetabular. O resumo acrescenta a expectativa de mais de dois anos de vida independente. Assim, marcha comunitária e cognição preservada indicam um perfil favorável, mas não dispensam avaliar condições clínicas e horizonte funcional.\n\nEsse ganho tem limites. A total é uma cirurgia mais longa e tem mais luxação; nos ensaios citados, o benefício funcional e de qualidade de vida foi pequeno e provavelmente pouco relevante, sem diferença em mortalidade ou reoperação. Portanto, não cabe ensinar “total é sempre melhor porque troca tudo”. Ela pode ser a escolha do algoritmo para um perfil selecionado sem oferecer uma vantagem grande ou garantida para cada pessoa.\n\nNo paciente com demência e baixa demanda, acrescentar o acetábulo não reproduz o mesmo balanço esperado. A proposta é uma solução que recupere mobilidade e conforto considerando suas condições; o capítulo favorece hemiartroplastia **cimentada**, com menos fratura periprotética e resultados favoráveis nos estudos discutidos. Cimentada versus não cimentada é uma decisão diferente de parcial versus total: não devem ser misturadas como se fossem uma única escala de “cirurgia maior”.\n\nO aprendizado é escolher em camadas: **a fratura é desviada; a preservação por fixação tem risco alto nesse idoso; depois, função prévia, cognição, acetábulo e expectativa de independência orientam o tipo de prótese**. O resumo da Biblioteca compara os perfis e os limites da evidência.\n\n**Por que esta questão foi criada.** Exige reconhecer por que dois idosos com a mesma fratura podem precisar de próteses diferentes, sem prometer superioridade universal da total.",
+      "correta": "**A: artroplastia total e hemiartroplastia cimentada.** Corresponde aos perfis selecionados no algoritmo: ativo e independente versus demência/baixa demanda. No primeiro, pressupõe-se ainda uma avaliação clínica e expectativa funcional compatíveis com o benefício pretendido.\n\nO par não significa que toda pessoa sem demência deva receber total, nem que demência elimine a indicação de operar. A fratura desviada continua exigindo uma solução eficaz para dor e mobilização.",
+      "incorretas": {
+        "B": "**Acerta a total no primeiro perfil e troca a fixação da haste no segundo.** O capítulo prefere hemiartroplastia cimentada moderna, apoiado em resultados de qualidade de vida, mortalidade e menor fratura periprotética.\n\nBaixa demanda não é, por si, motivo para preferir uma haste não cimentada. A escolha parcial/total e a escolha de cimentação respondem a comparações diferentes; acertar a primeira não resolve a segunda.",
+        "C": "**Inverte o raciocínio de seleção.** A prótese total é considerada no paciente com maior horizonte funcional e/ou doença acetabular, enquanto a hemiartroplastia cimentada é a referência no perfil de baixa demanda descrito.\n\nTrocar o acetábulo no paciente com demência não traz automaticamente um benefício maior, e acrescenta os custos da cirurgia mais longa e do maior risco de luxação. O nome “total” não deve ser confundido com tratamento obrigatoriamente mais adequado.",
+        "D": "**Preservar a cabeça com fixação não é automaticamente melhor por o idoso ser ativo.** A fratura continua desviada e sujeita à alta falha da osteossíntese nessa população. Função prévia boa participa da seleção para total, não anula o risco biológico e mecânico da fratura.\n\nA segunda metade está coerente: hemiartroplastia cimentada para baixa demanda. A primeira, porém, introduz um método com outro perfil de falha e potencial necessidade de salvamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no idoso; Algoritmo dos autores."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no idoso",
+          "Algoritmo dos autores"
+        ],
+        "blocos": [
+          "fratura-desviada-no-idoso-46218195",
+          "fratura-desviada-no-idoso-25acc61c",
+          "fratura-desviada-no-idoso-a489d930",
+          "fratura-desviada-no-idoso-9ceafc6a",
+          "algoritmo-dos-autores-3e970ed2",
+          "algoritmo-dos-autores-d8765f81"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "445599b60072176bc00514bd4d98bedda2cd5395dd16461a103b46e6be693e51"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "quadril-0508": {
+    "questaoSha256": "6db02696d013be6fd4347e0b68043174779ffa1d36c91b77f86d96d88b3296b4",
+    "comentarioAnteriorSha256": "49b48035fa3bc9fdb59b01a7767f52c37767627155b96166ea038ac9fd60fa41",
+    "comentario": {
+      "conceito": "O enunciado traz duas pistas que apontam em direções diferentes: descreve **encurtamento e rotação externa**, característicos da fratura desviada, mas informa na radiografia **Garden II**, que é completa e **sem desvio**. A banca marcou D, artroplastia total. O resumo consultado recomenda fixação para a maioria das fraturas sem desvio, correspondente a C. Não é possível apagar essa divergência mudando mentalmente a classificação.\n\nGarden II não quer dizer fratura pequena ou incompleta: o traço é completo, mas os fragmentos mantêm o alinhamento. Garden I é o padrão incompleto/impactado em valgo; III e IV têm desvio. Essa divisão é decisiva porque modifica o risco e a estratégia. Na fratura intracapsular, a cabeça depende de vasos junto ao colo e a união ocorre sem a contribuição de uma camada cambial periosteal. Evitar deslocamento e manter o foco estável importa mesmo quando a primeira imagem parece bem alinhada (resumo do Rockwood, 10ª ed., cap. 53, “Garden” e “Anatomia aplicada”).\n\nPara a maioria das Garden I/II, os autores propõem **fixação interna**, em qualquer idade. Os parafusos canulados, guiados por fios e conferidos em AP e perfil, estabilizam o foco enquanto preservam a cabeça. O parafuso deslizante é outra opção descrita. Tratamento não cirúrgico fica para situações selecionadas, pois a fratura pode desviar secundariamente; o resumo cita 19% a 46% nos estudos de tratamento conservador. Assim, reconhecer que a fratura não desviou não conduz automaticamente nem à observação nem à prótese (mesmo resumo, “Fratura sem desvio”).\n\nA artroplastia ganha outro peso quando a fratura está **desviada no idoso**, porque a fixação tem maior risco de falha e pseudartrose. Ainda assim, escolher **total** em vez de hemiartroplastia exige avaliar função anterior, cognição, horizonte de independência e doença acetabular. A total é uma operação mais longa e tem mais luxação; nos estudos discutidos, seu benefício funcional médio foi pequeno. A idade de 65 anos não fornece sozinha esse conjunto de critérios.\n\nA osteoporose ajuda a explicar por que ocorreu a fratura, mas não reclassifica Garden II em III/IV. Da mesma forma, o exame clínico discrepante deve motivar conferência da imagem e do diagnóstico na prática, não permitir que um comentário troque o dado radiográfico para tornar a letra oficial convincente. Não foi informada artrose sintomática prévia nem uma avaliação funcional que resolva a indicação de total.\n\nPortanto, há duas informações a conservar: **D é o gabarito registrado; C é a conduta sustentada pelo resumo para a Garden II tal como escrita**. A ressalva é parte do ensino. Leia na Biblioteca os tratamentos sem desvio e com desvio lado a lado para reconhecer a diferença que deveria decidir esse caso.",
+      "correta": "**D: artroplastia total, gabarito oficial mantido com alerta.** Pode ser uma escolha adequada em um idoso ativo e independente com fratura desviada ou doença acetabular relevante, após avaliação clínica. O caso, porém, informa Garden II, e a fonte não estabelece total como tratamento preferido desse diagnóstico apenas por idade e osteoporose.\n\nNão há dados suficientes para afirmar por que a banca escolheu a prótese. É mais correto explicitar a inconsistência do que inventar atividade prévia, artrose ou desvio radiográfico que o enunciado não apresentou.",
+      "incorretas": {
+        "A": "**Tração cutânea não é estabilização definitiva do foco intracapsular.** O capítulo não demonstra melhora da dor ou da redução com seu uso pré-operatório rotineiro. Mesmo que se pretendesse manter temporariamente a posição, isso não substitui a fixação recomendada para a maioria das fraturas sem desvio.\n\nA alternativa confunde um recurso temporário de posicionamento com o tratamento que deve permitir a consolidação. A pergunta pede tratamento definitivo.",
+        "B": "**Órtese de abdução não corresponde à estabilização interna proposta para essa fratura.** Manter o membro numa posição não equivale a controlar diretamente os fragmentos durante a união. A ausência de desvio inicial não prova que uma órtese impedirá deslocamento secundário.\n\nO resumo reserva manejo não cirúrgico para situações clínicas selecionadas, como expectativa muito curta, recusa ou ausência de deambulação. Nenhuma delas está descrita como justificativa aqui.",
+        "C": "**É a opção sustentada pela fonte para Garden II.** A fratura é completa, mas permanece alinhada; os canulados estabilizam o colo preservando a cabeça. Esse é o raciocínio que liga a classificação ao tratamento, sem depender de transformar 65 anos em um limite obrigatório para prótese.\n\nEla aparece entre as oficialmente incorretas porque a banca marcou D, não porque o resumo demonstrou contraindicação à fixação. A aula deve deixar essa diferença visível.",
+        "E": "**Hemiartroplastia é relevante na fratura desviada do idoso, sobretudo de baixa demanda.** Substitui o lado femoral e evita depender de união e viabilidade daquela cabeça. Esse raciocínio não é automaticamente transferível a uma Garden II.\n\nTambém não é correto descartá-la apenas supondo que todo paciente de 65 anos seja ativo e deva receber total. O enunciado não fornece demanda funcional; a dificuldade inicial continua sendo a divergência entre a fratura sem desvio escrita e a indicação de substituição."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Classificações; Fratura sem desvio (Garden I e II); Mecanismo, lesões associadas e quadro clínico; Fratura desviada no idoso; Anatomia aplicada; Como ler este capítulo; Diagnóstico por imagem."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D mantido. O enunciado informa Garden II, completa e sem desvio; o resumo recomenda fixação para a maioria dessas fraturas, compatível com C. Encurtamento e rotação externa sugerem desvio, mas não autorizam reclassificar a radiografia. A indicação de artroplastia total não pode ser presumida apenas pela idade de 65 anos e pela osteoporose."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Classificações",
+          "Fratura sem desvio (Garden I e II)",
+          "Mecanismo, lesões associadas e quadro clínico",
+          "Fratura desviada no idoso",
+          "Anatomia aplicada",
+          "Como ler este capítulo",
+          "Diagnóstico por imagem"
+        ],
+        "blocos": [
+          "classificacoes-12519f03",
+          "classificacoes-113a1994",
+          "classificacoes-1854670c",
+          "classificacoes-6479ca47",
+          "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+          "fratura-sem-desvio-garden-i-e-ii-2ce21a8e",
+          "fratura-sem-desvio-garden-i-e-ii-4daa1011",
+          "mecanismo-lesoes-associadas-e-quadro-clinico-b64d530b",
+          "fratura-desviada-no-idoso-46218195",
+          "fratura-desviada-no-idoso-25acc61c",
+          "anatomia-aplicada-fc34becd",
+          "como-ler-este-capitulo-4e10b9c9",
+          "diagnostico-por-imagem-63f9a6b1",
+          "fratura-desviada-no-idoso-9ceafc6a"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "ca1f772a62d0d59f348e47ff66c865acab3db59e7915ff6d49a8e7ce9cc67a68"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1559": {
+    "questaoSha256": "277eb9cab45f6b5dc1013ca233939bf3a9dcb8e8b669df16f6e4ed98d24c4801",
+    "comentarioAnteriorSha256": "45a65f200c46e79a5f0e5e67a9e780e05ea72312a6bc5ac1338c62db8c429609",
+    "comentario": {
+      "conceito": "O FAITH fornece um resultado que parece contraditório apenas quando se misturam os desfechos: **não mostrou diferença de reoperação em 24 meses**, mas a **necrose avascular foi mais frequente com DHS**, 9% contra 5% com parafusos canulados, no relato do resumo. Essa é a combinação da alternativa A.\n\nReoperação mede uma decisão clínica final: houve ou não outra cirurgia por qualquer causa. Necrose mede uma complicação da cabeça. Uma necrose pode ser assintomática ou clinicamente tolerável e não exigir nova operação; uma reoperação pode decorrer de falha da fixação ou pseudartrose sem que a necrose seja o motivo. Portanto, um evento pode diferir entre grupos sem que a soma das novas cirurgias mostre uma diferença demonstrada. Não se trata de “o estudo se contradizer”, mas de reconhecer que as perguntas são diferentes (resumo do Rockwood, 10ª ed., cap. 53, “A fixação” e “Necrose avascular”).\n\nO ensaio reuniu 1.108 pacientes. DHS é o sistema de parafuso deslizante associado a placa; os canulados são outra forma de fixação interna aceita no tratamento do colo sem desvio. O dado não compara fixação com artroplastia, não diz que todo DHS falhará e não prova que os canulados reduzam a reoperação global. A opção correta precisa preservar exatamente o sentido de cada comparação.\n\nHá ainda uma diferença de linguagem científica: **não demonstrar diferença não é demonstrar identidade em todas as circunstâncias**. “Semelhante”, escrito na opção, deve ser entendido como o resultado da comparação apresentada para esse desfecho e intervalo. Não autoriza extrapolar para qualquer traço, idade, técnica ou tempo de seguimento. A basocervical, por exemplo, continua tendo preferência por DHS no algoritmo dos autores; não se deve cancelar uma indicação específica por uma leitura simplificada de um único resultado.\n\nO resumo da Biblioteca permite revisar o estudo junto das complicações. Ao ler ensaios, mantenha cada conclusão presa ao seu desfecho: aqui, reoperação sem diferença demonstrada e mais necrose com deslizante.\n\n**Por que esta questão foi criada.** Verifica se o aluno interpreta dois resultados do mesmo ensaio sem converter menor necrose em menor reoperação automaticamente, nem um resultado médio em regra universal de implante.",
+      "correta": "**A: reoperação semelhante e necrose maior com o parafuso deslizante.** Em 24 meses, o resultado citado não demonstrou diferença de reoperação; a necrose foi 9% com DHS e 5% com canulados. O primeiro é um desfecho global de nova cirurgia, e o segundo uma complicação específica.\n\nO acerto está em preservar ambos, sem tentar fazê-los apontar obrigatoriamente para a mesma direção.",
+      "incorretas": {
+        "B": "**Mantém a ausência de diferença global e inverte a complicação.** A maior frequência de necrose apresentada foi com DHS, não com canulados. É possível reconhecer o resultado de reoperação e ainda errar a leitura do evento vascular.\n\nNão há motivo para inverter o dado porque canulados parecem uma montagem menor ou porque o DHS parece mecanicamente robusto: a comparação pedida é o resultado observado, não uma previsão intuitiva.",
+        "C": "**Cria uma vantagem de reoperação que o relato não demonstrou.** O DHS não teve menor reoperação em 24 meses no resultado citado. A opção também transforma a necrose em semelhante, apagando a diferença 9%/5%.\n\nUm implante pode oferecer vantagens em um padrão específico sem vencer todos os desfechos de um ensaio. A indicação mecânica e o resultado populacional não são frases intercambiáveis.",
+        "D": "**Deduz menor reoperação dos canulados a partir da menor necrose, mas essa dedução não é válida.** A taxa global de nova cirurgia reúne outros motivos, e nem toda necrose leva à operação. O ensaio não demonstrou essa vantagem global apresentada na opção.\n\nAlém disso, as necroses não foram descritas como semelhantes. A alternativa erra o que foi diferente e o que não teve diferença demonstrada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura sem desvio (Garden I e II); Complicações; Fratura desviada no idoso; Classificações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura sem desvio (Garden I e II)",
+          "Complicações",
+          "Fratura desviada no idoso",
+          "Classificações"
+        ],
+        "blocos": [
+          "fratura-sem-desvio-garden-i-e-ii-7e0657f6",
+          "complicacoes-7f006830",
+          "fratura-desviada-no-idoso-9ceafc6a",
+          "classificacoes-3fbece93"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "1a13dd0698b7291d26c95f20f60446a1bb991bb21d02fd52c62cad449ee81493"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1544": {
+    "questaoSha256": "fb251137fb3e555bd91179d046eb5ea0cac0b3ff6baebe807b387e907ec700d4",
+    "comentarioAnteriorSha256": "08b68e6051acb468deacee9a81754d608ae33d7ff61757ee6d70786eb1a21b92",
+    "comentario": {
+      "conceito": "No Pauwels III do jovem, o traço é mais vertical e a carga favorece **cisalhamento**. Imagine os dois fragmentos tentando deslizar um em relação ao outro: aproximá-los não basta se a montagem não sustentar essa tendência. A placa medial de Mir e Collinge acrescenta um **anteparo no ápice medial da fratura**, aplicado pela **via de Smith-Petersen**.\n\nA classificação de Pauwels mede o traço em relação à horizontal: no tipo III, o ângulo é maior que 50 graus. A verticalidade explica o problema mecânico, mas a classificação tem reprodutibilidade limitada. Não se deve escolher uma técnica apenas pelo rótulo sem avaliar a redução e o foco. No jovem, o objetivo continua preservar a cabeça com redução anatômica e fixação estável (resumo do Rockwood, 10ª ed., cap. 53, “Pauwels” e “Fratura desviada no jovem”).\n\nO nome antideslizamento descreve o papel da placa: oferecer suporte justamente onde o fragmento tenderia a escapar. A técnica citada usa placa de 3,5 mm, com três ou quatro furos, sobre o ápice medial. Por isso o acesso tem de permitir alcançar esse ponto e trabalhar a redução. O resumo especifica a via anterior de Smith-Petersen; o mesmo capítulo a considera quando uma redução fechada não é satisfatória. A via é escolhida em função do trabalho necessário no foco, não apenas por ser um acesso conhecido ao quadril.\n\nA placa adicional tampouco substitui boa redução. O capítulo mostra que erros técnicos aumentam falha, incluindo redução inadequada e posicionamento desfavorável dos elementos de fixação. Acrescentar material a fragmentos mal posicionados não recria a geometria que deveria ter sido recuperada antes.\n\nNa série de 478 jovens citada pelo resumo, a falha caiu de 49% para 29% com a placa medial. É um resultado relevante de série, mas não uma garantia para um paciente nem prova de que toda fratura do colo precise dessa placa. O valor didático é relacionar **traço vertical, deslizamento, suporte medial e acesso anterior**. A seção de implantes no resumo da Biblioteca reúne esses elementos.\n\n**Por que esta questão foi criada.** O acesso só faz sentido quando se entende onde a placa atua e qual força ela procura conter; memorizar Smith-Petersen sem visualizar o anteparo medial perde o fundamento da técnica.",
+      "correta": "**C: Smith-Petersen.** É a via anterior especificada para colocar a placa no ápice medial da fratura. Permite a estratégia de redução aberta e suporte medial descrita.\n\nO ponto decisivo não é apenas chegar ao fêmur proximal: é acessar a região onde a placa funciona como anteparo. A técnica continua exigindo redução e fixação adequadas.",
+      "incorretas": {
+        "A": "**A via posterior descrita no capítulo pertence a outra operação de preservação.** O enxerto de Meyer leva um bloco ósseo ligado ao quadrado femoral a uma canaleta posterior do colo. É uma estratégia biológica de enxerto pediculado, não a colocação do anteparo medial de Mir e Collinge.\n\nAmbas podem aparecer no tratamento de problemas do colo em jovens, mas localização do trabalho, material e objetivo são diferentes. A palavra “posterior” não corresponde ao acesso da placa perguntada.",
+        "B": "**Hardinge é uma via lateral direta apresentada para artroplastia.** Divide o terço anterior do glúteo médio e continua pelo vasto lateral, com cuidado proximal pelo nervo glúteo superior. Esse trajeto conhecido no idoso não é a via nomeada para instalar a placa no ápice medial do colo jovem.\n\nEscolher um acesso porque ele é comum no quadril ignora o ponto em que o cirurgião precisa trabalhar nesta técnica específica.",
+        "D": "**Watson-Jones não é a via especificada para a técnica consultada.** O resumo vincula a placa medial de 3,5 mm à Smith-Petersen. Reconhecer essa descrição resolve a alternativa sem inventar que todas as outras vias seriam absolutamente impossíveis em qualquer variação cirúrgica.\n\nA pergunta exige o acesso da técnica de Mir e Collinge, não uma comparação genérica de todos os acessos que podem alcançar o quadril."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Classificações; Fratura desviada no jovem; Fratura desviada no idoso; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Classificações",
+          "Fratura desviada no jovem",
+          "Fratura desviada no idoso",
+          "Complicações"
+        ],
+        "blocos": [
+          "classificacoes-0fec7b18",
+          "fratura-desviada-no-jovem-90ec4b8d",
+          "fratura-desviada-no-jovem-43725930",
+          "fratura-desviada-no-jovem-be509df6",
+          "fratura-desviada-no-jovem-4a7eaa22",
+          "fratura-desviada-no-idoso-1d56bc28",
+          "complicacoes-5c3aaed4"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "b2f3835748c5324cbac4614ba737dbc995361c4581b2eae2042d459cd58bbfe3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1564": {
+    "questaoSha256": "3bad323f18d742a86ce644b111a96e7d4a4aea69e8b4fc53643e669693825b6a",
+    "comentarioAnteriorSha256": "90449c006fc556685ae783c286eb91eaa1cf2bf2b4fc74b932fa5acb3d454c40",
+    "comentario": {
+      "conceito": "A radiografia pode mostrar que a fratura consolidou e, ainda assim, o paciente não recuperar a função esperada. Uma explicação é o **encurtamento do colo**: o resumo associa piora funcional a partir de **5 mm** e resultados muito piores a partir de **10 mm**. O par é o da alternativa B.\n\nConsolidar responde à pergunta “o osso uniu?”. Não responde sozinho a “o fêmur proximal preservou a geometria com que funcionava?”. O colo integra a relação entre cabeça e diáfise; sua perda de comprimento é uma alteração permanente dessa geometria mesmo quando já não existe movimento no foco. Por isso, uma avaliação de resultado que olhe apenas a união pode ignorar uma sequela funcional importante (resumo do Rockwood, 10ª ed., cap. 53, “Seguimento”).\n\nO capítulo separa ainda outro resultado: a viabilidade da cabeça. Necrose pode aparecer depois de a fratura ter unido. Assim, no seguimento, há pelo menos três coisas distintas a acompanhar: **consolidação, forma/comprimento e sobrevivência da cabeça**. Uma delas satisfatória não garante as outras. É essa distinção que dá sentido clínico aos números, em vez de tratá-los como um detalhe radiográfico sem consequência.\n\nOs valores de 5 e 10 mm descrevem associações funcionais do material consultado. Não são uma licença para aceitar encurtamento até 5 mm nem uma indicação automática de reoperar todo paciente que ultrapasse 10. Sintomas e função precisam ser avaliados; a pergunta pede os patamares relatados, não um algoritmo cirúrgico baseado só na régua.\n\nLeia a seção de seguimento no resumo da Biblioteca comparando união e função. O aprendizado é reconhecer que **fratura consolidada pode continuar sendo um resultado funcional inadequado**.\n\n**Por que esta questão foi criada.** Lembra uma sequela que a confirmação de consolidação pode esconder e diferencia o início da associação com piora do patamar relacionado a resultados muito piores.",
+      "correta": "**B: 5 mm e 10 mm.** O primeiro valor marca a associação descrita com piora funcional; o segundo, a piora mais acentuada. O encurtamento não deixa de importar porque a fratura já uniu.\n\nEsses dados ajudam a avaliar o resultado e a importância de preservar a geometria, sem substituir uma avaliação individual por dois cortes numéricos.",
+      "incorretas": {
+        "A": "**Antecipa os dois patamares sem suporte na fonte consultada.** O resumo não apresenta 2 mm como início dessa associação nem 5 mm como o nível de resultados muito piores. Cinco é o primeiro valor do par; dez é o segundo.\n\nA preocupação com preservar comprimento é válida, mas não permite fabricar um limite menor para dar aparência de maior cuidado.",
+        "C": "**Acerta o início da associação e posterga a perda mais acentuada.** A fonte já descreve resultados muito piores a partir de 10 mm, não apenas 20. Esperar esse valor maior para reconhecer relevância funcional subestima a alteração relatada.\n\nA parte verdadeira de uma opção não valida sua segunda metade. Os dois patamares respondem a graus diferentes de piora.",
+        "D": "**Começa a contar tarde e coloca o segundo patamar ainda mais longe.** Ignora a associação presente a partir de 5 mm e troca os 10 por 20 no resultado muito pior. Não corresponde a nenhum dos dois níveis descritos.\n\nO erro reforça a necessidade de distinguir consolidação de recuperação funcional: uma diferença aparentemente pequena na medida não pode ser desconsiderada só porque o foco uniu."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem",
+          "Complicações"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-d7b0a2eb",
+          "complicacoes-7f006830"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "b8c36c9cfb4b6951d35c9e4125810957ac6ce7975472c888ecbd3e2d3b012bfa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1565": {
+    "questaoSha256": "98537b008698340f909df9543a6d94c793534f60cf397d88f4e06d30ff39bfbb",
+    "comentarioAnteriorSha256": "fdcabd81080e4d71b0df4a9958b293161ec10dc1bf65ff192f71b56ea88f1abb",
+    "comentario": {
+      "conceito": "O jovem volta com a fratura consolidada, e parece que o problema terminou. Mas a **necrose avascular pode se manifestar depois da união**, sobretudo no **segundo ano**. Por isso o capítulo orienta **dois anos de seguimento**, com avaliações semestrais na fase tardia. O par correto é D.\n\nUnião e viabilidade são resultados diferentes. Consolidar é formar continuidade entre os fragmentos; necrose é perder a viabilidade da cabeça. A radiografia de uma fratura unida não prova que a cabeça permanecerá saudável. Essa é a razão clínica para manter o acompanhamento depois de resolver a dúvida inicial sobre consolidação (resumo do Rockwood, 10ª ed., cap. 53, “Seguimento” e “Necrose avascular”).\n\nTambém é preciso entender a agenda: os autores avaliam em seis semanas, três meses e seis meses, seguindo semestralmente depois. “Radiografias semestrais” não significa esperar seis meses pela primeira revisão da fixação. A fase inicial acompanha redução, implante e união; a continuação permite detectar problemas tardios, inclusive necrose e encurtamento com repercussão funcional.\n\nO enunciado usa “pico”, mas o resumo diz que a necrose aparece **mais no segundo ano**. Não se deve transformar esse período numa janela exclusiva, como se antes fosse impossível ou depois estivesse proibido investigar. A ressonância pode detectar alterações antes da radiografia, porém tem limitações nas primeiras semanas e com o metal; solicitar um exame precoce não substitui o acompanhamento longitudinal.\n\nPor fim, detectar necrose não equivale automaticamente a indicar prótese. Há casos assintomáticos ou com limitação aceitável; colapso e sintomas mudam a conduta. A utilidade de seguir é avaliar a evolução real, não apenas colecionar uma imagem alterada. O resumo da Biblioteca relaciona manifestação, sintomas e tratamento.\n\n**Por que esta questão foi criada.** Obriga a manter a vigilância da cabeça após a fratura unir e a interpretar corretamente “seguimento semestral”, sem abandonar as avaliações precoces.",
+      "correta": "**D: segundo ano e dois anos de seguimento.** O período de maior manifestação descrito explica por que o acompanhamento não termina após a consolidação inicial. A rotina inclui consultas mais próximas no começo e intervalo semestral depois.\n\nÉ uma orientação de seguimento baseada no padrão temporal apresentado, não uma promessa de que toda necrose surgirá exatamente no segundo ano ou desaparecerá da investigação ao completar dois anos.",
+      "incorretas": {
+        "A": "**Antecipa a fase de maior manifestação e encurta a vigilância.** Um ano de acompanhamento terminaria antes do segundo ano, que o resumo destaca. A união precoce ou ausência de sintomas nesse primeiro período não exclui a complicação tardia.\n\nA opção só pareceria suficiente se necrose e falta de consolidação fossem o mesmo evento; não são.",
+        "B": "**Conserva a duração, mas explica o período de forma errada.** Dois anos permitem acompanhar a manifestação tardia descrita. A referência não é um pico obrigatório no primeiro ano.\n\nÉ preciso acertar tanto quando o problema tende a se revelar quanto por quanto tempo o protocolo mantém a vigilância, em vez de tratar o segundo número como suficiente para validar a opção.",
+        "C": "**Reconhece a fase tardia e encerra o seguimento antes dela.** O segundo ano não pode ser acompanhado com uma rotina limitada ao primeiro. O par é internamente incompatível com a justificativa apresentada pelo capítulo.\n\nO foco pode ter unido antes, mas ainda é necessário avaliar se a cabeça mantém viabilidade e função."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem",
+          "Complicações"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-d7b0a2eb",
+          "complicacoes-7f006830"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "b8c36c9cfb4b6951d35c9e4125810957ac6ce7975472c888ecbd3e2d3b012bfa"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

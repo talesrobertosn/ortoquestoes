@@ -1,0 +1,62 @@
+{
+  "basePublicada": "7bb4003976c1729e5c5144b835ca6176f031a364",
+  "pr": 493,
+  "lotes": {
+    "093-femur-distal-tatica-anatomia.json": {
+      "sha256": "4fba7ab55a6f2ad726f6c09385a45201c947f28399f2c21bb03bc2c9561284e7",
+      "ids": [
+        "trauma-1631",
+        "trauma-1632",
+        "trauma-1633",
+        "trauma-1634",
+        "trauma-1635",
+        "trauma-1636",
+        "trauma-1637",
+        "trauma-1638",
+        "trauma-1640",
+        "trauma-1641"
+      ]
+    },
+    "094-transtrocanterica-mecanica-fixacao.json": {
+      "sha256": "f909cdac2000a9a8423325724de5f6fdb4d62037d80a9589cc63fc772373257b",
+      "ids": [
+        "trauma-0011",
+        "trauma-0228",
+        "trauma-0216",
+        "trauma-0543",
+        "trauma-0961",
+        "trauma-1569",
+        "trauma-1579",
+        "trauma-1582",
+        "trauma-1583",
+        "trauma-1590"
+      ]
+    },
+    "095-transtrocanterica-diagnostico-tecnica.json": {
+      "sha256": "1a7506296f5b9de76dabce54d3fe9266f1bcb7727db2036b7051cbf126fca731",
+      "ids": [
+        "trauma-1571",
+        "trauma-1572",
+        "trauma-1574",
+        "trauma-1575",
+        "trauma-1576",
+        "trauma-1577",
+        "trauma-1580",
+        "trauma-1581",
+        "trauma-1585",
+        "trauma-1589"
+      ]
+    }
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 testes passaram",
+    "acervo": "sem erros",
+    "build": "passou",
+    "cadeia": "089–095, 70 IDs únicos; fontes, hashes, todas as alternativas, gabaritos e avulsos integrais conferidos",
+    "interface": "1632, 1641, 0216, 1576, 1589 em celular/computador; tabelas e destino dos blocos conferidos"
+  },
+  "correcaoFixture": "Mock de Date na data AGORA já existente; reset em finally. Asserts e código funcional intactos. Fixture isolada passou, restauração de Date.now confirmada. Consultar resultado da suíte e CI do head no PR.",
+  "publicado": false,
+  "proximoLote": "096",
+  "npmTest": "suíte completa passou com fixture Date determinística, sem relaxar assert"
+}

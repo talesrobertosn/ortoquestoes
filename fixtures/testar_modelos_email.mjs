@@ -12,6 +12,9 @@ import { mkdtemp, rm } from 'node:fs/promises'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
+/** Tipos que o Tales quis com uma versão só (não sorteiam entre 5 a 7). */
+const VERSAO_UNICA = new Set(['boas_vindas_dia0'])
+
 const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-cartas-'))
 const arquivo = join(pasta, 'c.mjs')
 try {
@@ -36,6 +39,9 @@ try {
     /desanim/i, /cobran[cç]a|\bculpa\b|\bsumiu\b/i, /gr[aá]tis|gratuit|oferta|desconto|aproveite|imperd[ií]vel|promo[cç]/i,
     /[uú]ltima chance|urgente|\bcorra\b|não perca|só hoje|antes que acabe|últimas vagas|vagas limitadas/i,
     /% de acerto parece|seria uma pena|que pena/i, /bem-vind[oa]/i, /R\$/, /\bpre[çc]o\b/i,
+    // Pedido do Tales (22/10/2026): fofo e gentil, nada de se achar nem de falar de si ou do site.
+    /fiz (o|este) (site|orto)|por que (eu )?fiz|caprichei|pessoalmente|sou eu que leio|eu leio (tudo|cada)|projeto independente/i,
+    /parei no seu nome|olhando quem|no seu lugar|se eu pudesse|cuid[oa] do site|mant[eé]m (o site|isto) de p[eé]/i,
     // Sem gênero presumido.
     /\bobrigad[ao] por (ter )?assinad[ao]/i, /(?<!cabeça )(?<!mente )\b(des)?cansad[ao]\b/i, /\bpreparad[ao]\b/i, /\bmesmo cansad/i,
   ]
@@ -152,9 +158,12 @@ try {
       }
     }
     const total = m.versoesDe(tipo, tipo === 'ativo' ? '70-80' : null).length
-    assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
+    // Pedido do Tales (22/10/2026): as boas-vindas têm uma versão só, fixa.
+    const unica = VERSAO_UNICA.has(tipo)
+    if (unica) assert.equal(total, 1, `${tipo}: deve ter uma versão só`)
+    else assert.ok(total >= 5 && total <= 7, `${tipo}: ${total} versões (o plano pede de 5 a 7)`)
     if (tipo !== 'ativo') assert.equal(versoes.size, total, `${tipo}: nem todas as versões saíram (${[...versoes].join(', ')})`)
-    assert.ok(textos.size >= 100, `${tipo}: pouca variedade (${textos.size})`)
+    if (!unica) assert.ok(textos.size >= 100, `${tipo}: pouca variedade (${textos.size})`)
   }
 
   // 3. Regra dos 10: quem fez menos de 10 questões nunca vê o número; `questoes` devolve "os primeiros passos".

@@ -146,7 +146,10 @@ export function configParaBanco(c: ConfigSorteio, variante: number): ConfigSorte
 /** O registro do banco de volta (o que faltar fica no padrão do contrato). */
 export function lerConfig(c: ConfigSorteioSN | null | undefined): { config: ConfigSorteio; variante: number } {
   const num = (v: unknown, padrao: number) => (typeof v === 'number' && Number.isFinite(v) ? v : padrao)
-  const provas = Array.isArray(c?.provas) && c.provas.length ? c.provas.filter((p): p is string => typeof p === 'string') : [...CONFIG_PADRAO.provas]
+  // Configurações gravadas antes de 21/10/2026 usam o nome antigo "TEOT/TARO", hoje "Ortopedia".
+  const provas = Array.isArray(c?.provas) && c.provas.length
+    ? [...new Set(c.provas.filter((p): p is string => typeof p === 'string').map(p => (p === 'TEOT/TARO' ? 'Ortopedia' : p)))]
+    : [...CONFIG_PADRAO.provas]
   const cotas = c?.cotas && typeof c.cotas === 'object' && Object.keys(c.cotas).length ? { ...c.cotas } : null
   return {
     config: {

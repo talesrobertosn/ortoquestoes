@@ -1,0 +1,376 @@
+{
+  "ombro-cotovelo-0031": {
+    "questaoSha256": "f4c9eab704c852fc3745cf79d3eb89b29b2afc783d7dd53d6681beb1a26a8c41",
+    "comentarioAnteriorSha256": "3f5373c3de0db3e30d12c6f5bce292064593179d1b1a5a94d381c974d681cb44",
+    "comentario": {
+      "conceito": "**A cápsula posterior é a principal restrição à translação posterior da clavícula medial e também à anterior.** A pergunta se resolve pelo papel mecânico da estrutura, não pela suposição de que o nome de um ligamento deve repetir a direção do deslocamento.\n\nO resumo descreve partes moles espessas na esternoclavicular e destaca o espessamento capsular posterior. A clavícula funciona como esteio entre tronco e membro superior; perder esse controle não é apenas alterar uma superfície articular, mas modificar a posição do conjunto escapular.\n\nO interclavicular tem outra tarefa predominante: une as clavículas pela borda superior do esterno e impede angulação ou translação para baixo. Os costoclaviculares saem da primeira costela e prendem-se à face inferior medial. Serem fortes e estabilizadores não lhes atribui automaticamente o papel principal em toda direção.\n\n**Há uma armadilha de nomenclatura em D.** Cápsula posterior e reforço esternoclavicular posterior não devem ser ensinados como estruturas necessariamente independentes. O resumo não fornece uma distinção anatômica que torne D inequivocamente falsa se o termo for usado para o espessamento da cápsula. A banca escolheu B, expressão exata da fonte, e essa ressalva precisa acompanhar a comparação.\n\n**Leia “A extremidade medial”, na Biblioteca.** Associe cada estabilizador ao movimento que ele restringe e reconheça quando duas expressões podem designar o mesmo complexo.",
+      "correta": "**B: cápsula posterior.** É a estrutura explicitamente destacada como mais importante contra translação anterior e posterior. A letra oficial é preservada; a proximidade de significado de D não deve ser escondida por uma separação anatômica inventada.",
+      "incorretas": {
+        "A": "**A cápsula anterior não recebe o papel dominante descrito.** Escolhê-la apenas porque a clavícula se desloca em uma direção no espaço ignora que a tensão capsular envolve o conjunto da articulação. O dado central da fonte é a predominância posterior nos dois sentidos anteroposteriores.",
+        "C": "**O interclavicular atua sobretudo como tirante contra a queda da clavícula medial.** Sua passagem por cima do esterno ajuda a compreender essa função. Não é o principal limitador da translação posterior pedido no enunciado.",
+        "D": "**A expressão pode sobrepor-se ao reforço da cápsula posterior.** O resumo usa “cápsula posterior” e seu espessamento, sem estabelecer uma oposição inequívoca com “ligamento esternoclavicular posterior”. A resposta oficial B é a terminologia reproduzida, mas D não deve ser descartada por uma diferença anatômica que esta fonte não demonstrou."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial B preservado. A fonte destaca a cápsula posterior e seu espessamento; não demonstra uma distinção inequívoca em relação ao nome “ligamento esternoclavicular posterior” de D. Há sobreposição terminológica possível, sem motivo para inventar estruturas independentes."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0420": {
+    "questaoSha256": "96ca6ca8bb40ef5c2ae8256ae604450f003eb56fc997f0dbc6bc93b16c50ebc2",
+    "comentarioAnteriorSha256": "a99bd231cd123c71313ba49f7cad6adb339e6580705dc4ee50c556a9d3961105",
+    "comentario": {
+      "conceito": "**Na esternoclavicular, o principal estabilizador anteroposterior é o espessamento da cápsula posterior.** O dado vale para a translação tanto para trás quanto para a frente. “Posterior” nomeia a estrutura dominante, não uma restrição obrigatoriamente limitada a um único sentido.\n\nPara organizar a anatomia funcional, associe estrutura e direção. O interclavicular cruza a fúrcula e impede a clavícula medial de cair ou angular inferiormente. O costoclavicular liga a primeira costela à face inferior da clavícula e participa da contenção da translação medial. O resumo reserva à cápsula posterior a primazia específica no plano anteroposterior.\n\n| Estrutura | Papel destacado no resumo |\n|---|---|\n| Cápsula posterior | Restrição principal anterior e posterior |\n| Interclavicular | Impedir angulação/translação para baixo |\n| Costoclavicular | Conter sobretudo a translação medial |\n\nNão é necessário tornar os demais componentes inúteis para reconhecer um estabilizador principal. O erro dos distratores é substituir a hierarquia mecânica solicitada por uma lembrança geral de que determinada estrutura pertence à articulação.\n\n**Leia “A extremidade medial”, na Biblioteca.** O mapa de direções é mais útil do que decorar uma lista de ligamentos sem relacioná-los ao movimento.",
+      "correta": "**B: cápsula posterior.** Seu espessamento constitui a restrição mais importante à translação anterior e posterior da clavícula medial. A resposta permanece a mesma nos dois sentidos do eixo perguntado.",
+      "incorretas": {
+        "A": "**O disco não é identificado como principal estabilizador anteroposterior.** Fazer parte do interior da articulação não basta para lhe atribuir o papel que o resumo dá à cápsula posterior. A fonte consultada não exige inventar um percentual de contribuição do disco para resolver a alternativa.",
+        "C": "**O interclavicular é sobretudo um tirante contra a descida.** Sua orientação entre as clavículas, passando pela borda superior do esterno, corresponde a essa função. Isso difere da restrição anteroposterior específica solicitada.",
+        "D": "**Os costoclaviculares são fortes, mas força não é sinônimo de predominância em todos os planos.** A fonte destaca sua resistência à translação medial e atribui à cápsula posterior a contenção principal anterior e posterior. A alternativa troca as funções relativas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0537": {
+    "questaoSha256": "fbdb4efd687a2add345fdb79fe218a300e8388020b1b90bd3aad6b124d4fb682",
+    "comentarioAnteriorSha256": "00bb134e8c58a4a1cc79fdd6ab8f2507262ad79db4a19dceef2637b90b825b13",
+    "comentario": {
+      "conceito": "**No tipo IIA distal, o traço passa medialmente ao conoide; conoide e trapezoide continuam presos ao fragmento distal.** O dado decisivo não é simplesmente saber que há uma fratura perto da acromioclavicular, mas localizar o traço em relação aos dois ligamentos coracoclaviculares.\n\nO conoide é o mais medial; o trapezoide, o mais lateral. Se o traço passa medial a ambos, o fragmento medial perde a ancoragem coracoclavicular, enquanto o distal permanece ligado à escápula. As forças passam a agir em conjuntos distintos: o medial sobe e o lateral acompanha a queda da cintura escapular. Essa perda de sustentação explica a instabilidade do tipo II.\n\nNo IIB, a situação muda: o conoide se rompe e o trapezoide continua no distal, com traço entre os ligamentos. No tipo III, há extensão para a acromioclavicular; não se trata de chamar uma luxação de fratura articular.\n\n**Duas ressalvas evitam decorar uma classificação confusa.** “Grupo II” localiza o terço distal na divisão de Allman; IIA/IIB são os subtipos ligamentares discutidos em Neer/Rockwood. Além disso, a opção E é geograficamente ampla: um traço medial ao conoide também fica medial ao trapezoide. A responde de modo mais específico; E, tomada apenas como descrição espacial, não é necessariamente falsa.\n\n**Leia “Neer, modificada por Rockwood: o terço distal pelos ligamentos”, na Biblioteca.** Desenhe a sequência medial–conoide–trapezoide–lateral e confira a qual fragmento cada ligamento permaneceu preso.",
+      "correta": "**A: medial ao conoide.** É a relação que define com precisão o IIA: os dois coracoclaviculares ficam no fragmento distal, deixando o medial sem essa sustentação. A letra oficial é preservada, com a ressalva de que E é uma localização mais ampla e também pode incluir esse traço.",
+      "incorretas": {
+        "B": "**Lateral ao conoide não localiza o traço medial a ambos os ligamentos exigido no IIA.** Se estiver entre conoide e trapezoide, o padrão descrito é o IIB, acompanhado de ruptura do conoide. A relação deve ser julgada com o estado ligamentar, não só com a proximidade da articulação.",
+        "C": "**“Central ao trapezoide” não é o critério anatômico apresentado para IIA.** A fonte mantém ambos os ligamentos no distal e coloca o traço medial ao conoide. Um traço referido ao centro do ligamento lateral não reproduz essa relação.",
+        "D": "**Um traço lateral ao trapezoide fica do outro lado das inserções coracoclaviculares.** Não é o padrão em que ambos ficam no fragmento distal e o medial perde essa ancoragem. O tipo I do resumo mantém os coracoclaviculares íntegros presos ao fragmento medial.",
+        "E": "**É menos específica, mas pode ser espacialmente verdadeira.** Como o conoide está medial ao trapezoide, um traço medial ao conoide também está medial ao trapezoide. A redação de E ainda permite um traço entre os ligamentos, razão pela qual A define melhor o IIA; isso não autoriza afirmar que toda posição “medial ao trapezoide” seja IIB."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial A preservado. E é uma descrição menos específica que também inclui um traço medial ao conoide, pois o trapezoide é mais lateral. Não se deve chamar essa relação espacial de falsa: A é a localização definidora mais precisa. Grupo II é a região de Allman; IIA/IIB são subtipos ligamentares de Neer/Rockwood."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Classificações: Allman, Neer, Craig, Robinson e AO"
+        ],
+        "blocos": [
+          "classificacoes-allman-neer-craig-robinson-e-ao-d61c043a",
+          "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+          "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
+          "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+          "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7",
+          "classificacoes-allman-neer-craig-robinson-e-ao-5b9c0c66"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "3e992651749fa9ef9769882d0552df9d41be83f3adcb82b833c18967266bd450"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0575": {
+    "questaoSha256": "26f4444b34104aae9654a9d9b38abb6e36bc4b5097268ef5edb1036629aeb5c0",
+    "comentarioAnteriorSha256": "75e03425ad9bd35602194aff67496592d06790a29f0d1db3b29df77dcb9ee981",
+    "comentario": {
+      "conceito": "**O reforço capsular posterior é o principal freio anteroposterior da esternoclavicular.** Nesta questão sem gabarito oficial registrado, a resposta provável sustentada pelo resumo é D. A expressão “capsular posterior” corresponde ao espessamento da cápsula posterior destacado pela fonte.\n\nA relação entre nome e função pode enganar: uma estrutura posterior pode restringir o deslocamento nos dois sentidos do eixo, porque a estabilidade depende da tensão e da continuidade do conjunto capsular, e não de uma simples barreira colocada à frente do osso.\n\nO capítulo descreve as partes moles mediais como espessas, sem ligamentos fáceis de individualizar. Por isso, o vocabulário capsular é relevante. O interclavicular, em comparação, funciona como tirante contra a descida; os costoclaviculares participam sobretudo da contenção medial. Trocar essas funções por um rótulo “intra-articular” não responde ao movimento perguntado.\n\n**Leia “A extremidade medial”, na Biblioteca.** Fixe o papel dominante da cápsula posterior e mantenha a diferença entre resposta apoiada na bibliografia e gabarito oficial, que não consta neste item.",
+      "correta": "**D é a resposta provável pela fonte, sem gabarito oficial disponível.** O ligamento capsular posterior corresponde ao reforço da cápsula posterior, principal restrição às translações anterior e posterior da clavícula medial.",
+      "incorretas": {
+        "A": "**“Intra-articular anterior” não é a estrutura nomeada pelo resumo para essa função.** A alternativa não pode ser escolhida apenas porque inclui a palavra anterior, uma das direções da translação. O estabilizador principal indicado é capsular e posterior.",
+        "B": "**Acerta a palavra posterior, mas troca a estrutura por uma designação intra-articular.** A fonte destaca o espessamento da cápsula, reproduzido em D. É a identidade anatômica completa que importa, e não o adjetivo isolado.",
+        "C": "**O componente capsular anterior não recebe a primazia descrita.** O resumo é explícito ao atribuir ao posterior a contenção mais importante dos dois sentidos. Não se deve repartir automaticamente “anterior contém anterior” e “posterior contém posterior”."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false,
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0702": {
+    "questaoSha256": "c65f207ffd926e919319018c24ea44a318ac6d2517c800043c7b6e588e013b9c",
+    "comentarioAnteriorSha256": "96654f265bca2ec32c8fcf61f85f8c9571133eb7212ef7ff733f7321d0dcd172",
+    "comentario": {
+      "conceito": "**Escápula muito lateralizada associada a fratura desviada da clavícula deve levantar suspeita de dissociação escapulotorácica.** O padrão costuma decorrer de tração de alta energia. A perda da ligação com o esqueleto axial permite que a escápula se afaste lateralmente.\n\nUma pista especialmente útil é a clavícula fraturada em distração. Na fratura diafisária habitual, os segmentos tendem a sobrepor-se e encurtar; encontrar separação por tração junto de escápula lateralizada sugere uma lesão do conjunto muito maior que uma clavícula isolada.\n\nA falha pode ocorrer na esternoclavicular, na clavícula ou na acromioclavicular. O exame precisa procurar lesão vascular e do plexo braquial, com prioridade para ameaças à vida e ao membro. Uma radiografia óssea não encerra a avaliação de um trauma capaz de tracionar esse feixe.\n\n**Não confunda dissociação com ombro flutuante clássico.** Este combina clavícula e colo da escápula; a dissociação descrita aqui destaca a lateralização marcada, a tração e a ameaça neurovascular. Os termos não são intercambiáveis só porque ambos envolvem a cintura escapular.\n\n**Leia “Lesões agudas”, na Biblioteca.** Compare a clavícula distraída com a sobreposição habitual dos fragmentos para reconhecer a pista do mecanismo.",
+      "correta": "**D: fratura de clavícula desviada.** No contexto do enunciado, a combinação com grande lateralização da escápula sugere falha por tração, podendo haver distração dos fragmentos. É uma pista para ampliar o exame neurovascular, não um diagnóstico que torna o restante do trauma dispensável.",
+      "incorretas": {
+        "A": "**Uma fratura complexa do úmero proximal pode acompanhar traumas graves, mas não é a associação radiográfica que define o raciocínio descrito.** O padrão do resumo envolve falha da ligação axial pela esternoclavicular, clavícula ou acromioclavicular e lateralização escapular.",
+        "B": "**“Baixo grau” não explica o quadro de grande afastamento da escápula apresentado.** A articulação acromioclavicular pode ser um local de falha na dissociação, mas isso não transforma qualquer lesão pequena dessa articulação no padrão de alta energia e tração discutido.",
+        "C": "**Um AP de tórax normal não é o achado esperado quando se descreve desvio lateral significativo.** O enunciado já oferece uma alteração de posição importante. A alternativa apagaria a pista central, em vez de integrá-la ao mecanismo e à busca de lesão neurovascular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Lesões neurovasculares e dissociação escapulotorácica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Lesões neurovasculares e dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "lesoes-neurovasculares-e-dissociacao-escapulotor-300bbd59"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "4760bc7353d18981bc8cbbba616ffcce44a41b38c277be1abe709a32349a36d1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0735": {
+    "questaoSha256": "85296cebcb7a3812ce072098b82de53d5537bcc281cb90b3ad9fcf9679e8507d",
+    "comentarioAnteriorSha256": "e4827d0cb79bc443e2828cc4f472deb5301c71f512eeeb9fe7933729353a3d88",
+    "comentario": {
+      "conceito": "**A correspondência usada pelo resumo é Craig V com Robinson 3B2.** Para resolver, decomponha o código de Robinson em localização, desvio e extensão articular; isso é mais seguro do que tentar transportar o número V diretamente para outra classificação.\n\nO 3 identifica o segmento distal. A letra B indica desvio; A mantém alinhamento cortical. Dentro do distal, o subtipo 2 expressa extensão articular na correspondência apresentada. Assim, 3B2 reúne distal, desviado e intra-articular, combinação que a tabela do capítulo associa a Craig V.\n\n| Robinson distal | Combinação descrita |\n|---|---|\n| 3A1 | Sem desvio, extra-articular; Neer I |\n| 3A2 | Sem desvio, intra-articular; Neer III |\n| 3B1 | Desviada, extra-articular; Neer II, Craig II e IV |\n| 3B2 | Desviada, intra-articular; Craig V |\n\nA tabela é uma correspondência específica desta fonte. Não se deve substituir “intra-articular” por “qualquer fratura cominuta” para justificar o número. Em Robinson, localização, desvio e articulação têm significado próprio; cominuição também importa, mas não permite ignorar os demais componentes do código.\n\n**Leia “Robinson (Edimburgo): a que o autor usa”, na Biblioteca.** Use os três eixos para conferir cada alternativa e evitar confundir Craig III com o segmento 3 de Robinson.",
+      "correta": "**D: B2, completando Robinson 3B2.** É a equivalência com Craig V registrada na tabela consultada: fratura distal desviada com extensão articular. A resposta depende da correspondência completa, não apenas do desvio.",
+      "incorretas": {
+        "A": "**3A1 mantém alinhamento e é extra-articular.** Corresponde ao Neer I na tabela, portanto diverge tanto no desvio quanto na relação articular do padrão associado a Craig V.",
+        "B": "**3A2 acerta o componente articular, mas mantém a fratura sem desvio.** É a correspondência do Neer III. O detalhe A/B muda o padrão e não pode ser omitido por ambos terminarem em 2.",
+        "C": "**3B1 acerta a letra do grupo desviado e troca a extensão articular.** É distal desviada extra-articular, associada a Neer II e Craig II/IV. A letra B sozinha não basta para chegar ao Craig V da tabela."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Classificações: Allman, Neer, Craig, Robinson e AO"
+        ],
+        "blocos": [
+          "classificacoes-allman-neer-craig-robinson-e-ao-1cf767f0",
+          "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+          "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "4a0a8d75a80daae741f04d3b00a2b1c2fbf71a35ebf67f1da5d55a2dc11f961a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0768": {
+    "questaoSha256": "d4a091d28e09768965d961e6bd95340d4ef9c5c466f975cc90ab5e63efd1dbb6",
+    "comentarioAnteriorSha256": "e220d7656d46ea6a0963282547d78224d3bcfdcb817c0fb236169994e34f225d",
+    "comentario": {
+      "conceito": "**O fragmento lateral roda anteriormente e translada inferiormente.** A questão combina dois tipos de movimento: girar um segmento e deslocar sua posição. Não basta reconhecer que o ombro ficou “caído” e presumir o sentido da rotação.\n\nO peso do membro e o deltoide contribuem para a descida do conjunto distal. A escápula fica protraída, com rotação anterior do fragmento lateral; o peitoral maior acrescenta tração medial e encurtamento. O fragmento medial, por sua vez, é elevado pelo esternocleidomastóideo.\n\nUma forma de conferir a resposta é seguir o ombro: ele cai, anterioriza e se aproxima do tórax. Esse conjunto tridimensional ajuda a entender por que uma consolidação viciosa pode ter sintomas que não se explicam apenas por uma medida de comprimento.\n\nO desvio radiográfico orienta a avaliação, mas não indica cirurgia isoladamente. Pele ameaçada, lesões associadas, estabilidade, demanda funcional e riscos precisam ser considerados. Não se deve converter toda anteriorização ou todo encurtamento em indicação automática de fixação.\n\n**Leia “Mecanismo e deformidade: para onde vai cada fragmento”, na Biblioteca.** Separe rotação anterior, translação inferior e medialização, atribuindo cada uma ao fragmento correto.",
+      "correta": "**A: rotação anterior e translação inferior.** O fragmento lateral acompanha a protração e a queda da cintura escapular. A elevação típica pertence ao medial, não ao distal.",
+      "incorretas": {
+        "B": "**Mantém a rotação anterior e inverte a translação.** O peso do braço e a ação descrita do deltoide fazem o distal descer. Quem sobe por tração do esternocleidomastóideo é o fragmento medial.",
+        "C": "**Mantém a descida e inverte o giro.** O resumo descreve anteriorização e rotação anterior do conjunto distal, coerentes com a protração escapular. Uma translação correta não torna a combinação inteira verdadeira.",
+        "D": "**Troca os dois movimentos do fragmento lateral.** Ele não sobe e não roda posteriormente no padrão típico. A alternativa mistura a elevação do medial com uma rotação contrária à descrita para o distal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Mecanismo e deformidade: para onde vai cada fragmento."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Mecanismo e deformidade: para onde vai cada fragmento"
+        ],
+        "blocos": [
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-e5c9da0e",
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-bcfb6dd9",
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-05e0589a"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "e61bb4855a4537406059258a11a6253feaff847ee2b504cec7054880f1a06bd2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0919": {
+    "questaoSha256": "821c014328599bf8e33be630ce45c9ef84cdcf59b3d43265b73d064b4e127856",
+    "comentarioAnteriorSha256": "32695e3687971833d3f50e24d26cf54bf03e2c751492db110a9f712fa3559c9f",
+    "comentario": {
+      "conceito": "**Translação inferior e rotação anterior descrevem o fragmento lateral da fratura diafisária típica.** A clavícula funciona como um esteio da escápula; quando esse esteio falha, o segmento lateral acompanha as forças sobre a cintura escapular e o peso do membro.\n\nO braço e o deltoide contribuem para levar o distal para baixo. O peitoral maior o traciona medialmente. A escápula assume protração e o fragmento lateral roda anteriormente. Enquanto isso, o esternocleidomastóideo eleva o medial. Ler “medial” no lugar de “lateral” altera a resposta, mesmo que todos os nomes de músculos estejam corretos.\n\n| Pergunta ao olhar a deformidade | Resposta típica |\n|---|---|\n| Qual fragmento sobe? | Medial |\n| Qual fragmento desce? | Lateral |\n| Para que lado roda o lateral? | Anterior |\n| O que contribui para encurtar? | Tração medial do conjunto distal |\n\nEsses desvios podem modificar o espaço costoclavicular e a posição escapular na consolidação viciosa. O resumo diferencia deformidade em imagem de deformidade sintomática: a análise clínica e funcional é indispensável antes de propor correção.\n\n**Leia “Mecanismo e deformidade: para onde vai cada fragmento”, na Biblioteca.** Antes de marcar, identifique o fragmento citado e confira separadamente translação e rotação.",
+      "correta": "**C: translação inferior e rotação anterior.** Os dois componentes correspondem ao distal, que desce com o membro e roda com a protração escapular. A translação superior característica é do segmento medial.",
+      "incorretas": {
+        "A": "**A translação inferior está correta; a rotação posterior não.** O conjunto distal fica anteriorizado e roda anteriormente. Trocar giro por posição geral do ombro é o erro central desta combinação.",
+        "B": "**Erra a translação e a rotação do fragmento perguntado.** Subir é o desvio típico do medial, e a rotação lateral descrita é anterior. A alternativa não corresponde ao padrão apenas por conter duas palavras anatômicas plausíveis.",
+        "D": "**A rotação anterior é verdadeira, mas o distal não recebe o desvio superior do medial.** É preciso acompanhar o mesmo fragmento nos dois movimentos. A combinação junta uma propriedade de cada segmento, formando uma descrição incorreta do lateral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Mecanismo e deformidade: para onde vai cada fragmento; Consolidação viciosa e escápula alada."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Mecanismo e deformidade: para onde vai cada fragmento",
+          "Consolidação viciosa e escápula alada"
+        ],
+        "blocos": [
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-e5c9da0e",
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-bcfb6dd9",
+          "mecanismo-e-deformidade-para-onde-vai-cada-fragm-aa49c127",
+          "consolidacao-viciosa-e-escapula-alada-b0993716"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "e4c59e08baf822f2ecf59a072b19a10147c21f556dd9271ff8310ca3596e6d8c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0939": {
+    "questaoSha256": "a331cd3754aecbe1c758e5f5750e564c83d27d5a62fd20f681aaea9c5ce68437",
+    "comentarioAnteriorSha256": "764ed719344f20d1928fc65b9f795e34522f34d721ef905f79a375764f76f987",
+    "comentario": {
+      "conceito": "**A banca marcou quinta semana; o resumo apresenta início entre cinco e seis semanas de gestação.** A clavícula é o primeiro osso a começar a ossificar e um dos últimos a completar esse processo. Começar cedo e terminar tarde não são afirmações contraditórias: referem-se a etapas distintas.\n\nA fonte situa o término geral por volta de 27 anos e informa que a epífise medial pode persistir até 25 a 30 anos. Isso tem repercussão clínica: em um adulto jovem, uma lesão medial pode ser fisária, e não apenas uma fratura do osso maduro ou uma lesão articular. A idade deve fazer parte da interpretação.\n\n**Não troque uma faixa por um instante exato.** A opção A inclui o limite inicial do intervalo e é a letra oficial. A opção B, sexta semana, também cai no intervalo descrito. Por isso, seria inadequado afirmar que a sexta semana é “tardia demais” como se essa fonte excluísse a alternativa.\n\nO resumo não detalha a via histológica da ossificação. Não é preciso acrescentar essa explicação sem fonte para resolver a pergunta sobre tempo. O que está confirmado aqui é a precocidade do início, a faixa de cinco a seis semanas e a maturação medial tardia.\n\n**Leia “O osso”, na Biblioteca.** Diferencie início embrionário e fechamento epifisário, guardando a ressalva do intervalo ao revisar o gabarito.",
+      "correta": "**A é o gabarito oficial: quinta semana de gestação.** Ela coincide com o limite inicial da faixa de cinco a seis semanas apresentada no resumo. A fonte não sustenta excluir B por estar fora do período; a divergência de precisão fica explicitada.",
+      "incorretas": {
+        "B": "**Sexta semana está dentro da faixa de cinco a seis semanas do resumo.** Embora não seja a letra oficial, não pode ser descartada como incompatível com essa fonte. A pergunta exige um único instante onde o texto consultado apresenta um intervalo.",
+        "C": "**Sétima semana é posterior ao intervalo de início descrito.** A clavícula já começa a ossificar antes, entre cinco e seis semanas. Isso não significa que toda a sua ossificação esteja concluída nesse momento.",
+        "D": "**Oitava semana também está além da faixa apresentada para o começo.** Confundir início e conclusão produziria um erro ainda maior: a maturação medial prossegue por muitos anos. O dado necessário é a precocidade do primeiro centro, não o fechamento de toda a clavícula."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial A preservado. O resumo situa o início em cinco a seis semanas, de modo que B também pertence à faixa descrita. Não se deve ensinar que a sexta semana é incompatível com a fonte para justificar a escolha isolada da quinta."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-680fb88a"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "201921ba9695c32f5f91e750ef4323a34067bd5bec47489a0e961018acf74103"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1121": {
+    "questaoSha256": "191750cadaef18c1a29e2b1bc8502557896b17770b5d6c6f824b90817c554169",
+    "comentarioAnteriorSha256": "ce4623119f468ebcf16a50c2939a6fe210d2110ab0cb039d3d2ef4e62506d7f1",
+    "comentario": {
+      "conceito": "**O tipo I mantém conoide e trapezoide íntegros no fragmento medial; a resposta bibliográfica é A.** Não há gabarito oficial no acervo. A fonte permite escolher uma resposta provável única porque os outros itens trocam os subtipos ou confundem fratura articular com luxação.\n\nA lógica de Neer/Rockwood parte da sustentação coracoclavicular. No tipo I, a ligação com o fragmento medial permanece e há pouco desvio. No tipo II, o medial perde essa ancoragem e sobe, enquanto o distal fica relacionado à escápula que desce com o peso do membro.\n\n| Padrão | Relação descrita |\n|---|---|\n| I | Conoide e trapezoide íntegros no medial |\n| IIA | Ambos presos ao distal; traço medial ao conoide |\n| IIB | Conoide roto; trapezoide permanece no distal |\n| III | Extensão da fratura para a acromioclavicular |\n\nAs opções B e C são boas armadilhas porque cada uma descreve um arranjo existente, atribuído ao subtipo errado. Em vez de decorar só a letra, confira o ligamento e o fragmento. A opção D muda a natureza da lesão: extensão articular do traço não é uma luxação da articulação.\n\n**Leia “Neer, modificada por Rockwood: o terço distal pelos ligamentos”, na Biblioteca.** Refaça o mapa dos ligamentos em cada padrão. A estabilidade decorre dessa relação, e não apenas do número do subtipo.",
+      "correta": "**A é a resposta provável, concordante com a resposta bibliográfica já registrada.** No tipo I, os dois coracoclaviculares permanecem íntegros e presos ao fragmento proximal/medial, explicando o padrão pouco desviado. Isso não é apresentado como gabarito oficial, que não está disponível.",
+      "incorretas": {
+        "B": "**A descrição é do IIB, não do IIA.** Conoide roto e trapezoide no distal correspondem ao subtipo B. No IIA, ambos os ligamentos ficam presos ao fragmento distal. A troca é de identidade do padrão, com repercussão na leitura da estabilidade.",
+        "C": "**A descrição é do IIA, não do IIB.** Manter conoide e trapezoide no distal indica traço medial ao conoide. Para IIB, o resumo exige ruptura do conoide, preservando a ligação do trapezoide ao distal.",
+        "D": "**Tipo III é fratura intra-articular com extensão à acromioclavicular.** A luxação é perda de relação entre superfícies articulares, e não sinônimo de um traço que entra na articulação. A alternativa muda o tipo de lesão, além da classificação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO."
+      ],
+      "conferido": false,
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Classificações: Allman, Neer, Craig, Robinson e AO"
+        ],
+        "blocos": [
+          "classificacoes-allman-neer-craig-robinson-e-ao-d61c043a",
+          "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+          "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+          "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
+          "classificacoes-allman-neer-craig-robinson-e-ao-5a26b5e7"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "dd650034e15e7b63e782de418b9bca58c75bb3551d7ed4502ff13d72817d7505"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

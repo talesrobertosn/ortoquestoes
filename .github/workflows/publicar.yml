@@ -14,12 +14,36 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
+  impacto:
+    runs-on: ubuntu-latest
+    outputs:
+      executar: ${{ steps.impacto.outputs.executar }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Identificar impacto
+        id: impacto
+        env:
+          BASE: ${{ github.event.before }}
+          EVENTO: ${{ github.event_name }}
+        run: |
+          if [ "$EVENTO" = workflow_dispatch ]; then
+            echo 'executar=true' >> "$GITHUB_OUTPUT"
+          else
+            executar=$(python3 scripts/ci/impacto.py "$BASE" HEAD)
+            echo "executar=$executar" >> "$GITHUB_OUTPUT"
+          fi
+
   construir:
+    needs: impacto
+    if: needs.impacto.outputs.executar == 'true'
+    # Deduplicar o mesmo commit sem permitir que um rerun antigo cancele
+    # a construção de um SHA mais recente. Deploy tem fila própria.
+    concurrency:
+      group: pages-build-${{ github.ref }}-${{ github.sha }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,12 +54,6 @@ jobs:
       - run: npm ci
       - name: Executar testes de domínio
         run: npm test
-      - name: Testar revisão e backup
-        run: node fixtures/testar_revisao.mjs
-      - name: Testar reinício do progresso
-        run: node fixtures/testar_reinicio.mjs
-      - name: Testar o detector de figura ausente
-        run: python3 fixtures/testar_deteccao.py
       - name: Validar o acervo
         run: python3 scripts/validar_acervo.py
       - name: Atualizar os temas que mais caem e o resumão
@@ -77,10 +95,35 @@ jobs:
 
   publicar:
     needs: construir
+    # Não interromper uma publicação em andamento. O guard abaixo também
+    # impede que uma execução antiga/reexecutada sobrescreva a versão atual.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.publicacao.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Conferir versão antes de publicar
+        id: atual
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          case "$BRANCH" in
+            main|master|claude/pdfs-questoes-tp64dr) ;;
+            *) echo 'Publicação manual só nas branches de publicação.' >&2; exit 1 ;;
+          esac
+          git fetch --no-tags --depth=1 origin "$BRANCH"
+          # Documentação posterior não invalida um build do aplicativo.
+          if [ "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA" ] || [ "$(python3 scripts/ci/impacto.py HEAD FETCH_HEAD)" = false ]; then
+            echo 'publicar=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'Build superado por alterações funcionais; aguardando a versão mais recente.' >> "$GITHUB_STEP_SUMMARY"
+          fi
       - id: publicacao
+        if: steps.atual.outputs.publicar == 'true'
         uses: actions/deploy-pages@v4

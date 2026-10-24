@@ -1,0 +1,57 @@
+{
+  "base": "7464995a82886a6aa8946302cde715a88ab8298e",
+  "criterio": "Enunciados e todas as alternativas lidos individualmente e confrontados com o corpo independente do resumo 63. Dez pendências não contam como revisão; comentários e gabaritos preservados.",
+  "resumoSha256": "21a0fdf9fa7c18013449249ba24af6c0d8c03e1c06bb7dbf378345100e22d14e",
+  "questoes": {
+    "conceitos-basicos-0095": {
+      "questaoSha256": "6c5c5ca9e7f3a31e8b4cebcdc6702625f4f674770fae40f9e74498ff4303b79e",
+      "pendencia": "O corpo do resumo 63 trata a osteotomia da consolidação viciosa, mas não define CORA nem compara os encontros de eixos mecânicos e anatômicos. O próprio contexto remete ao capítulo 31. Falta definição primária e construção dos eixos para diferenciar B de C/D e do ponto cortical de A; não usar a resposta do bloco contextual como fonte.",
+      "estado": "pendente-fonte"
+    },
+    "conceitos-basicos-0338": {
+      "questaoSha256": "6057ddb4ce60f1c4b4bb22f728b5fe3468ab9311363d2a10a93636259ce3f3e5",
+      "pendencia": "O resumo 63 discute fresagem, circulação e dimensões dos parafusos, mas não demonstra qual modo de rigidez é a principal limitação de uma haste não fresada fina. Faltam comparação biomecânica e distinção entre cisalhamento, flexão e compressão/axial. O contexto que cita baixa rigidez não sustenta individualmente a alternativa C nem os distratores; preservar C oficial.",
+      "estado": "pendente-fonte"
+    },
+    "conceitos-basicos-0362": {
+      "questaoSha256": "a721ba4ec8b0a4a976dbb25963dd56caa3e28b762e22a7cdd3ea80aef5255b29",
+      "pendencia": "O resumo 63 descreve corte no lado côncavo e abertura por cunha, com possível alívio no convexo, mas não especifica a dobradiça que deve permanecer íntegra no exemplo em valgo. Falta descrição ou figura primária da técnica aplicada ao valgo para conferir lado da dobradiça e força no segmento distal, sem confundir lado do corte com lado preservado. Não aberta figura de livro ausente do resumo digital; A oficial preservada.",
+      "estado": "pendente-fonte"
+    },
+    "conceitos-basicos-0365": {
+      "questaoSha256": "a43f5b60070159722a4f6b1b6767898466547379a968b21bf273e2b2592b078d",
+      "pendencia": "O corpo do resumo 63 menciona PTB sem definir a altura da borda proximal, e o contexto informa expressamente que o polo inferior vem de fora do capítulo. Falta fonte técnica do molde, da borda patelar e da proteção do fibular comum para conferir ambos os componentes das quatro opções. Não converter anatomia do nervo em prova do limite do gesso.",
+      "estado": "pendente-fonte"
+    },
+    "conceitos-basicos-0406": {
+      "questaoSha256": "b14d9eeddba5248f55ece53cd24ff226662d01d4e2794495b3c7282f19c65711",
+      "pendencia": "O corpo do resumo 63 lista placa provisória unicortical entre auxiliares de redução, mas não afirma que sua função principal seja prevenir procurvato em vez de outros desvios. Falta descrição/figura da posição da placa e do plano controlado para distinguir varo, rotação, procurvato e recurvato. Sustentar o uso genérico da placa não cobre a preferência específica da questão; C preservada.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0116": {
+      "questaoSha256": "b4880ac26ce970d1a2ed25ef7814e84e0b62c92b590a0acf7c0664658fda7368",
+      "pendencia": "O resumo 63 apresenta Tscherne C0–C3 para fechadas, sem incluir a síndrome compartimental no texto independente de C3. O enunciado pergunta grau numa fratura exposta, e o próprio contexto declara essa associação externa ao capítulo. Falta a classificação primária das lesões abertas e sua regra para síndrome compartimental; não transferir automaticamente o número da categoria fechada. C oficial preservada.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1131": {
+      "questaoSha256": "16c84a6a3b21f41ec0152d91dbd49c00fc15846ac797a54ffb4ebd4ac827d480",
+      "pendencia": "O corpo do resumo 63 não traz as categorias AO de partes moles IO/MT/NV; a OTA-OFC de cinco atributos é outro sistema. Faltam as definições de IO3/IO4, MT4/MT5 e NV1/NV2 para conferir perda de pele, esmagamento e ausência de lesão neurovascular. Não há gabarito oficial registrado; preservar a resposta bibliográfica existente sem acrescentar revisão ou certeza sem fonte.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1168": {
+      "questaoSha256": "67bf2e100486a66225c3356b26332e64a77d34088088a7d1d702ece8ba069bc5",
+      "pendencia": "O resumo 63 lista fatores de pseudartrose, mas não sustenta a neuropatia como causa da afirmação. A ausência de neuropatia na lista não demonstra que seja falsa. Falta fonte que avalie essa associação causal para julgar certo/errado; preservar a resposta bibliográfica anterior e não fabricar provável a partir de exclusão de lista.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1170": {
+      "questaoSha256": "32bc006b424437f44c7adead4017948d03554d323202fc7f410014d60a649044",
+      "pendencia": "O corpo do resumo 63 cita cortes de 50% e 30% de desvio inicial em espiral como indicação cirúrgica, mas não demonstra a regra geral de um terço nem a justificativa por retardo de consolidação. Falta fonte do critério exato, do padrão a que se aplica e do desfecho, para julgar a frase composta sem arredondar 30% para um terço. Resposta bibliográfica preservada; não conta como revisão.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1211": {
+      "questaoSha256": "c15ce7e73c605d8ab50ec501c44d5a658de6a3b96af177dfb1d3c9b22ac70afe",
+      "pendencia": "O resumo 63 descreve Tscherne apenas para fechadas C0–C3; não fornece a categoria Fr. O 3 das abertas, necessária para avaliar laceração extensa e lesão completa do fibular no caso. Gustilo IIIA/IIIC e Tscherne aberto não são intercambiáveis. Falta tabela primária de Tscherne aberto com o critério neurovascular; A oficial preservada.",
+      "estado": "pendente-fonte"
+    }
+  }
+}

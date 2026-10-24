@@ -9,7 +9,7 @@ import { diaSP, type DiaSerie } from './estudoHoje'
 import { acertoAposRevisao, acertoReal, corresponde, data, haQuanto, haQuantoTempo, hora, normalizar, registrarTitulosResumos, rotuloOrigem, tituloResumo } from './formatos'
 import { carregarIndiceBiblioteca } from '../../biblioteca/conteudo'
 import { indexarSinais, type SinalUsuario } from './sinais'
-import { usarRpc } from './usarRpc'
+import { CINCO_MIN, usarRpc } from './usarRpc'
 import type { Aba } from './secoes'
 import { BLOCOS_AGORA, quadroDoDia, type FunilServidor, type MovimentoDinheiro, type Numero, type QuadroDoDia } from './agora'
 import type { AssinaturaBase, CobrancaReal } from './receita'
@@ -41,7 +41,7 @@ const NAO_MEDIDO = 'ainda não medido'
  * 3. Pede atenção: pagamentos com problema, conteúdo para revisar, novos que pararam.
  * 4. Estudaram hoje (lista completa, com busca e ordenação), 5. Entraram hoje sem estudar,
  * 6. Recém-cadastrados, 7. Mais ativos na semana, 8. Dinheiro hoje (com nomes), 9. Biblioteca hoje.
- * Atualiza sozinho: pessoas a cada 15 s, números do servidor a cada 20 s, online a cada 10 s.
+ * Atualiza sozinho a cada 5 minutos (CINCO_MIN) ou na hora pelo botão Atualizar.
  */
 export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas, cobrancas, avisoCobrancas, errosPagamento, pendenciasConteudo, irPara, verUsuarios }: {
   conta: string | undefined; resumo: ResumoAdmin | null; usuarios: LinhaUsuario[] | null; atualizadoEm: number | null
@@ -49,8 +49,8 @@ export function AdminAgora({ conta, resumo, usuarios, atualizadoEm, assinaturas,
   errosPagamento: number; pendenciasConteudo: number | null; irPara: (aba: Aba) => void; verUsuarios: (filtro: FiltroUsuarios) => void
 }) {
   // Consultas leves que já existem: série diária (hoje x ontem), sinais (planos, flashcards) e funil (e-mails confirmados).
-  const serieQ = usarRpc<DiaSerie[]>(conta, 'serie_diaria_admin', { p_dias: 7 }, { atualizarCada: 120_000 })
-  const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { atualizarCada: 60_000 })
+  const serieQ = usarRpc<DiaSerie[]>(conta, 'serie_diaria_admin', { p_dias: 7 }, { atualizarCada: CINCO_MIN })
+  const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { atualizarCada: CINCO_MIN })
   const funilQ = usarRpc<FunilServidor[]>(conta, 'funil_admin', {}, { atualizarCada: 300_000 })
   const sinaisLista = Array.isArray(sinaisQ.dados) ? sinaisQ.dados : null
   const sinais = useMemo(() => indexarSinais(sinaisLista), [sinaisLista])

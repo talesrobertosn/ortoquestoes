@@ -5,6 +5,25 @@ Diretriz de Tales Roberto, aprovada em 04/10/2026. Aplica-se a todo pedido de
 Esta é a referência editorial do projeto. Substitui limites antigos de caracteres,
 número de frases e proibições de tabelas ou listas dos prompts de enriquecimento.
 
+## Miniaula, 22/10/2026 (padrão do site para todas as questões)
+
+Depois do piloto da `mao-2164` (fratura de SEYMOUR), Tales definiu a **miniaula escrita** como padrão de
+todos os comentários do site. Referência: [exemplos/mao-2164.json](exemplos/mao-2164.json). Prompt pronto
+para Claude e Codex: [prompts/comentarios-miniaula.md](prompts/comentarios-miniaula.md).
+
+- Abrir com o caso concreto, ensinar a partir dos fundamentos, fazer o aluno enxergar (forças,
+  deslocamento, exame físico, imagem), relacionar à prática só no que importa e fechar com o
+  aprendizado decisivo.
+- **Naturalidade:** prosa de professor humano, que flui. Nunca rótulos mecânicos ("Peça 1", "Passo 2",
+  "O problema da questão"); títulos, quando houver, são frases naturais em negrito, e nem todo
+  parágrafo precisa de um (Tales, 22/10/2026: "peça 1, peça 2 ficou simplesmente horrível").
+- Cada alternativa, inclusive a correta, com motivo próprio, sem repetir a aula.
+- **Tamanho flexível:** o mais importante recebe mais texto, o menos importante recebe menos.
+- **Citação moderada:** citar menos do que no piloto, mas ainda citar; a referência curta sustenta os
+  fatos importantes (em geral uma por parágrafo) e a citação literal fica para quando a letra do livro
+  decide. Nas questões da mão, sempre Green com capítulo e página, o que só se faz no computador com
+  os livros locais.
+
 ## Ajuste editorial de 08/10/2026, pedido do dono
 
 ### Profundidade solicitada em 10/10/2026
@@ -12,8 +31,11 @@ número de frases e proibições de tabelas ou listas dos prompts de enriquecime
 Os comentários do Einstein devem ser reescritos: justificativas curtas não
 atingiram a qualidade esperada. O exemplo adicional aprovado é `pediatria-0313`
 (osteogênese imperfeita e classificação de Sillence). Desenvolver uma aula do
-tema e explicar cada alternativa. Usar, como referência flexível, cerca de
-500 a 4.000 caracteres, sem transformar essa faixa em limite ou preenchimento.
+tema e explicar cada alternativa. Dimensionar a extensão pela complexidade de cada questão, sem faixa de caracteres
+como meta ou teto. Em 21/10/2026, Tales reforçou que questões que merecem mais
+atenção precisam de comentários maiores e detalhados; questões simples podem ser
+menores. Desenvolver decisões clínicas, mecanismos, cenários que mudam a conduta e
+alternativas plausíveis na medida necessária, sem repetir conteúdo para ganhar tamanho.
 Questões complexas precisam de mais fundamentos, mecanismos, classificações e
 relações clínicas; questões simples podem ser mais curtas. A concisão desejada
 elimina redundância, não o conteúdo que o aluno precisa aprender.

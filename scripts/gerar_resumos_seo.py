@@ -338,6 +338,16 @@ def pagina_resumo(capitulo: dict, data: str, nomes_area: dict[str, str], acervo:
         corpo.append(blocos_html(s["blocos"], capitulo, acervo, raiz))
         corpo.append("</section>")
     corpo.append("</article>")
+    # Texto sem cópia (pedido do Tales, 20/10/2026), como no leitor do aplicativo (src/biblioteca/semCopia.ts):
+    # seleciona, mas Ctrl+C, Ctrl+X, "Copiar" do menu e arrastar não levam o texto do resumo.
+    corpo.append(
+        "<script>(function(){var a=document.querySelector('.resumo-texto');if(!a)return;"
+        "function toca(){var s=document.getSelection();if(!s||s.isCollapsed)return false;"
+        "for(var i=0;i<s.rangeCount;i++)if(s.getRangeAt(i).intersectsNode(a))return true;return false}"
+        "function b(e){if(toca()){e.preventDefault();if(e.clipboardData)e.clipboardData.setData('text/plain','')}}"
+        "document.addEventListener('copy',b);document.addEventListener('cut',b);"
+        "a.addEventListener('dragstart',function(e){e.preventDefault()})})();</script>"
+    )
 
     corpo.append(
         '<div class="convite"><p><strong>Estude este capítulo com as questões.</strong> As questões citadas acima são de provas reais do '

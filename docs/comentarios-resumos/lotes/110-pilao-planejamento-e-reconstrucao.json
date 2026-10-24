@@ -1,0 +1,404 @@
+{
+  "trauma-1694": {
+    "questaoSha256": "c497e60cb3cb8455547f89d44799181c3b882f6e4f3d4f3ea11c561e6c1e24a9",
+    "comentarioAnteriorSha256": "ca8cd66732e9f3ea0d6c3d4566b23cc8b19a9e25ed3098a8e521a52ac92518c8",
+    "comentario": {
+      "conceito": "A mesma carga axial pode produzir lesões em regiões diferentes do pilão. Com o pé em **flexão dorsal**, o impacto se concentra **anteriormente**; em **flexão plantar**, **posteriormente**. A alternativa A corresponde a essa mudança de posição.\n\nO tálus é empurrado para cima contra o plafond. Ele não atinge o mesmo ponto do teto articular em qualquer posição: no pé plantígrado, o resumo descreve depressão central; ao inclinar o pé para cima ou para baixo, desloca-se a região que recebe o impacto principal (Rockwood, 10ª ed., cap. 64, “O tálus é o pilão”).\n\n**Localizar a força ajuda a ler a TC.** Uma fratura com impacção anterior exige que essa região seja vista e reconstruída; um grande fragmento posterior pode demandar uma janela posterior. A escolha da incisão depende do padrão real e das partes moles, e não apenas do nome genérico “pilão”. Por isso a TC é feita com o membro estabilizado e no comprimento, permitindo entender os fragmentos antes de planejar as vias.\n\nEssa relação não significa que toda fratura tenha um único traço previsível. A carga axial pode se combinar a rotação e cisalhamento, produzindo morfologias variadas. O par da pergunta descreve a concentração principal do impacto, não uma exclusão de qualquer lesão nas outras regiões.\n\n> **Na prova:** dorsal, anterior; plantar, posterior; plantígrado, central.\n\n**Por que esta questão foi criada.** Ela amplia a pergunta de mecanismo anterior cobrada no TARO 2016 para comparar as duas posições do pé, exigindo entender a distribuição da carga em vez de decorar uma letra.",
+      "correta": "**A: anterior e posterior.** A posição do pé muda a região do plafond que recebe o impacto principal do tálus sob carga axial. A ordem deve acompanhar a ordem dorsal/plantar do enunciado.",
+      "incorretas": {
+        "B": "**Inverte os dois efeitos.** Dorsiflexão concentra a lesão anterior e flexão plantar a posterior. Trocar a sequência perde a relação entre posição e ponto de impacto.",
+        "C": "**Usa o pé plantígrado para responder sobre dorsiflexão e desloca o segundo impacto.** Depressão central corresponde à posição neutra; em flexão plantar, a região principal é posterior, não anterior.",
+        "D": "**Acerta a flexão plantar e erra a dorsal.** O impacto central é o do pé plantígrado. Com dorsiflexão, o resumo localiza a lesão na margem anterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Mecanismo e lesões associadas; Vias de acesso; Imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Mecanismo e lesões associadas",
+          "Vias de acesso",
+          "Imagem"
+        ],
+        "blocos": [
+          "mecanismo-e-lesoes-associadas-a11d2dea",
+          "mecanismo-e-lesoes-associadas-5516e766",
+          "mecanismo-e-lesoes-associadas-30561b35",
+          "mecanismo-e-lesoes-associadas-9c1389f3",
+          "vias-de-acesso-669049b3",
+          "imagem-db85bf80"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "7aebe3413484b21f3655cc0d44a7e48f27b0ba1f7c9bf640206c51154a6d3efd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1695": {
+    "questaoSha256": "062cbb4c2e3a3c05c4628ff16ace63547fc77c59935ece6408988bbfb3000709",
+    "comentarioAnteriorSha256": "e9d7306a65898bbca99e997bd514573dfbfdce04e6370fee7948c28ceb000d8a",
+    "comentario": {
+      "conceito": "O líquido claro e o líquido sanguinolento não são apenas duas cores da mesma bolha. Na conduta apresentada pelo resumo, a **serosa é drenada com agulha** e a **hemorrágica permanece íntegra**, alternativa B.\n\nA flictena serosa conserva células epidérmicas sobre a derme e tende a cicatrizar mais rapidamente. Na hemorrágica, a lesão é mais profunda, envolve a vasculatura papilar e deixa a derme sem essas células, com maior risco de escara e perda de pele. Essa diferença explica por que a manipulação não é a mesma (Rockwood, 10ª ed., cap. 64, “Flictenas”).\n\n**Punção não é desbridamento do teto.** O capítulo descreve agulha de 18 G e curativo não aderente para a serosa. Para a hemorrágica, orienta não romper, permitir a evolução da escara e evitar uma incisão através dela; muitas esvaziam espontaneamente. O texto não fornece uma taxa comparativa de complicações para qualquer forma de desbridamento, portanto não é preciso inventar um número para sustentar a recomendação.\n\nO definitivo espera recuperação das partes moles: reepitelização das flictenas, cicatrização de feridas e retorno das rugas. Enquanto isso, a estabilização temporária controla a posição dos fragmentos e reduz a pressão sobre a pele. A bolha não deve ser tratada como um detalhe que pode ser ignorado porque a montagem óssea já foi planejada.\n\n> **Na prova:** serosa, punção; hemorrágica, teto preservado e incisão fora da área.\n\n**Por que esta questão foi criada.** Ela liga a diferença histológica à decisão técnica e separa drenagem de retirada do teto, duas condutas que uma resposta telegráfica pode confundir.",
+      "correta": "**B: drenar com agulha; manter íntegra.** É o par de condutas descrito para serosa e hemorrágica. A maior profundidade da lesão hemorrágica fundamenta a preservação e o planejamento da incisão ao redor.",
+      "incorretas": {
+        "A": "**Inverte a orientação dos dois tipos.** A fonte descreve punção da serosa e preservação da hemorrágica. A simples presença de sangue não é uma indicação para drená-la por rotina.",
+        "C": "**Troca punção por retirada do teto e ainda manipula a hemorrágica.** O procedimento indicado para a serosa é drenagem com agulha, não desbridamento do teto. Para a hemorrágica, a orientação apresentada é manter íntegra.",
+        "D": "**A primeira metade está correta; a segunda contraria a preservação.** A serosa pode ser drenada na técnica descrita, mas a hemorrágica não recebe retirada de teto de rotina. O risco de lesão profunda exige proteger a cobertura e evitar atravessá-la com a incisão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Partes moles: flictenas, espera e o tratamento em etapas; Primeiro tempo: o fixador transarticular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Partes moles: flictenas, espera e o tratamento em etapas",
+          "Primeiro tempo: o fixador transarticular"
+        ],
+        "blocos": [
+          "partes-moles-flictenas-espera-e-o-tratamento-em--d1573f96",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--78282836",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+          "primeiro-tempo-o-fixador-transarticular-428075f5"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "ea88a855a5f8038c8293ac246a21c1fe79849cb3f25b140b1ea124dbb39ddf81"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1696": {
+    "questaoSha256": "6c4e3369223f012742aeb22b0133945713d9b80b7496eab7b2c101dd9020cfb6",
+    "comentarioAnteriorSha256": "b68997832c4fd457190711189202d0594be1fb2bcee5668c5321d71a1971e408",
+    "comentario": {
+      "conceito": "Se uma parte da superfície articular ainda está ligada à diáfise, a fratura é **articular parcial, 43B**. Se nenhum segmento articular permanece ligado, é **articular completa, 43C**. A alternativa C mantém essa distinção.\n\nO fragmento preso à diáfise é chamado constante porque oferece uma referência estável para remontar os demais. O problema não é apenas contar fragmentos: é saber se existe uma porção da articulação que mantém continuidade com o eixo tibial. No 43C, essa referência articular está dissociada e precisa ser construída durante a reconstrução (Rockwood, 10ª ed., cap. 64, “AO/OTA 43”).\n\n**Articular parcial não significa lesão pequena.** Um 43B pode apresentar separação e afundamento, com cartilagem impactada e delaminada. Da mesma forma, 43C descreve a relação articular com a diáfise, mas o grau de cominuição e a condição das partes moles ainda variam. A classificação principal organiza a anatomia, e a TC orienta os detalhes do plano.\n\nO 43A fica fora dessa comparação porque é extra-articular. Quando uma fratura baixa aparentemente A tem extensão articular oculta, a TC muda a interpretação e pode exigir fixação do traço articular antes da haste. A presença de uma linha entrando na articulação não deve ser ignorada só porque ela ainda não desviou.\n\n> **Na prova:** B mantém um fragmento constante articular; C não mantém; A não entra na articulação.\n\n**Por que esta questão foi criada.** Ela cobra a relação entre articulação e diáfise, um critério mais útil para planejar a redução do que decorar apenas as letras A, B e C.",
+      "correta": "**C: 43B e 43C.** O primeiro padrão mantém segmento articular preso à diáfise; o segundo tem dissociação articular completa. O fragmento constante é uma referência de redução no B.",
+      "incorretas": {
+        "A": "**Começa com um tipo sem traço articular e termina com o tipo parcial.** 43A não descreve uma articulação parcialmente separada: é extra-articular. A ausência de qualquer segmento articular preso corresponde a C, não a B.",
+        "B": "**A segunda metade está correta; a primeira confunde parcial com extra-articular.** Um segmento articular estável no B não retira o traço da articulação. 43A é reservado à fratura que não a compromete.",
+        "D": "**Inverte a continuidade com a diáfise.** O C não tem fragmento constante; o B tem. A ordem contrária desmonta justamente o critério que a pergunta forneceu."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Classificações e prognóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Classificações e prognóstico"
+        ],
+        "blocos": [
+          "classificacoes-e-prognostico-b649a524",
+          "classificacoes-e-prognostico-13b0278f",
+          "classificacoes-e-prognostico-37449ead",
+          "classificacoes-e-prognostico-7dd902d4"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "ef161651843c1b2e187bd31669914f6810b04ad8d57c3998f06f583bfcafee0e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1697": {
+    "questaoSha256": "4e3f4aa79619563ac5a349540c4e15e941f9044459d4b62a51701e20b21285ac",
+    "comentarioAnteriorSha256": "3dcd2a582332eb6145266c682ab8dd7fec2c58c2193c82e456eeecb67e25b818",
+    "comentario": {
+      "conceito": "A superfície articular está **desviada, mas não cominuída**: essa é a definição de **Rüedi e Allgöwer II**, alternativa B. Desvio e cominuição são características distintas e não devem ser usados como sinônimos.\n\nA classificação começa no tipo I, de clivagem sem desvio significativo; passa ao II quando há desvio importante; e chega ao III quando existe impacção e cominuição articular. Assim, um fragmento grande deslocado pode ser tecnicamente complexo de reduzir sem se tornar, apenas pelo deslocamento, um tipo III (Rockwood, 10ª ed., cap. 64, “Rüedi e Allgöwer”).\n\n**A preservação de fragmentos maiores muda o problema de reconstrução.** O resumo aproxima o Rüedi II/43C1 de padrões de menor energia, com possibilidade de ótimo resultado, enquanto o III/43C3 concentra lesões mais difíceis. Essa aproximação ajuda a entender gravidade, mas não dispensa mapear os traços pela TC nem examinar as partes moles.\n\nA ausência de cominuição não garante que se possa operar imediatamente. Pele, edema e feridas ainda determinam o momento e as vias. A classificação descreve a superfície articular; não resume todas as condições que tornam uma incisão e uma montagem seguras.\n\n> **Na prova:** II é desvio sem cominuição; impacção com cominuição pertence ao III.\n\n**Por que esta questão foi criada.** Ela separa duas dimensões frequentemente confundidas, deslocamento e fragmentação, e completa a pergunta sobre qual tipo tem pior prognóstico.",
+      "correta": "**B: desvio articular sem cominuição.** É a combinação definidora do tipo II. A existência de desvio não basta para chamar a fratura de tipo III.",
+      "incorretas": {
+        "A": "**É o tipo I.** A clivagem sem desvio importante fica na primeira categoria. O tipo II acrescenta o deslocamento da superfície.",
+        "C": "**É a descrição do tipo III.** Impacção e cominuição tornam a reconstrução mais difícil e definem o padrão mais grave. Não são requisitos do II.",
+        "D": "**Retira a lesão da articulação.** Um traço metafisário extra-articular pertence ao grupo A da AO 43, não à definição de Rüedi II para a superfície do pilão. Mistura sistemas e regiões diferentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Classificações e prognóstico; Partes moles: flictenas, espera e o tratamento em etapas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Classificações e prognóstico",
+          "Partes moles: flictenas, espera e o tratamento em etapas"
+        ],
+        "blocos": [
+          "classificacoes-e-prognostico-6b6af016",
+          "classificacoes-e-prognostico-d598f0c9",
+          "classificacoes-e-prognostico-b649a524",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "033815e80f8140bced2b6e055abad3e7149d940bb6fa7ec1e0108d0128289a9a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1698": {
+    "questaoSha256": "98e53f94f54455b76a3d1b85da0c91254ff5fff84962df1d99cf307ae3ee97a2",
+    "comentarioAnteriorSha256": "2a0c316f1c403d2606b1a91173e270deb4aab42936454fdaa33d1246030a497d",
+    "comentario": {
+      "conceito": "Na TC, **Chaput fica anterolateral** e **Volkmann, posterolateral**, alternativa D. Os dois nomes identificam cantos da tíbia distal que precisam ser localizados antes de escolher a via e a sequência de reconstrução.\n\nO ligamento tibiofibular anterior liga a região de Chaput ao tubérculo de Wagstaffe da fíbula. Posteriormente, o tibiofibular posterior mantém ligação com o fragmento de Volkmann. No pilão, em geral o osso cede em torno das inserções enquanto os ligamentos permanecem íntegros (Rockwood, 10ª ed., cap. 64, “Três fragmentos e um molde”).\n\n**Essas conexões explicam por que a fíbula importa.** Uma fíbula bem reduzida pode ajudar a trazer o canto posterolateral ligado pelo ligamento posterior. Ela não recompõe, contudo, todas as colunas, e uma redução fibular ruim pode atrapalhar o posicionamento da articulação e do tálus.\n\nNo 43C, o fragmento posterior costuma ser o início da reconstrução, de trás para a frente. A TC mostra se ele é grande o suficiente para servir de referência, se está cominuído e que acesso oferece controle adequado. Identificar Chaput na frente e Volkmann atrás é, portanto, uma etapa prática do plano, não apenas uma lista de epônimos.\n\n> **Na prova:** Chaput na frente e lateral; Volkmann atrás e lateral.\n\n**Por que esta questão foi criada.** Ela transforma os nomes dos fragmentos em orientação espacial para ler a TC e compreender a reconstrução posterior-anterior.",
+      "correta": "**D: anterolateral e posterolateral.** É a posição de Chaput e Volkmann, respectivamente. Suas inserções sindesmóticas ajudam a compreender o comportamento dos fragmentos durante a redução.",
+      "incorretas": {
+        "A": "**Localiza Chaput corretamente e medializa Volkmann.** O fragmento de Volkmann descrito é posterolateral e fica ligado à fíbula pelo tibiofibular posterior. Não corresponde ao canto posteromedial.",
+        "B": "**Volkmann está correto, mas Chaput foi levado ao lado medial.** O tubérculo de Chaput pertence à face anterolateral. A palavra “anterior” sozinha não distingue os cantos que o planejamento precisa separar.",
+        "C": "**Troca frente e trás entre os epônimos.** Chaput é anterior; Volkmann, posterior. A inversão também troca o contexto das inserções tibiofibulares anterior e posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Anatomia aplicada: o plafond e seus fragmentos; A fíbula e as três colunas; Segundo tempo: plano, articulação e placas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Anatomia aplicada: o plafond e seus fragmentos",
+          "A fíbula e as três colunas",
+          "Segundo tempo: plano, articulação e placas"
+        ],
+        "blocos": [
+          "anatomia-aplicada-o-plafond-e-seus-fragmentos-2abcb383",
+          "anatomia-aplicada-o-plafond-e-seus-fragmentos-39c7b087",
+          "anatomia-aplicada-o-plafond-e-seus-fragmentos-2fd062d8",
+          "a-fibula-e-as-tres-colunas-e5cf59be",
+          "segundo-tempo-plano-articulacao-e-placas-6fc634df"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "3a0ec2422e772d5a1f3e23251342c63703e9a4a4295ec673c39c0a0c87378dd4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1699": {
+    "questaoSha256": "4f7f15a1e8d087facf33d123a9a7e6c4d5a18962484ee05317ef38f5bf7d8e34",
+    "comentarioAnteriorSha256": "8756a9bf4a3e3e4215f563c6f0ed10de4e8386e1a85614ddc259d4fac6317695",
+    "comentario": {
+      "conceito": "No pilão de alta energia tratado em etapas, a TC de planejamento vem **depois do fixador externo transarticular**, alternativa C. A imagem deve mostrar a fratura recuperada em comprimento e alinhamento, não apenas registrar sua deformidade inicial.\n\nAntes de estabilizar, fragmentos sobrepostos, encurtamento e luxação podem distorcer as relações que o cirurgião precisa reconstruir. O fixador usa a tração ligamentar para devolver posição global e aliviar a pele. Então a TC define melhor impacção, traços coronais e sagitais, Chaput, fíbula distal e possíveis lesões da cúpula do tálus (Rockwood, 10ª ed., cap. 64, “Imagem”).\n\n**O exame serve para escolher as vias.** Na série de Tornetta e Gorup citada pelo resumo, ele alterou o plano em 64% dos 22 pacientes. Esse número pertence àquela série; sua utilidade conceitual é mostrar que a informação muda a operação, em vez de apenas confirmar o que a radiografia já mostrou.\n\nA redução de emergência não deve esperar a TC se a pele está ameaçada pelos fragmentos. Primeiro se protege o membro e se estabiliza; depois se planeja a reconstrução definitiva. Radiografias continuam úteis para eixo e escolha de placas, e reconstrução 3D pode ajudar sem ser indispensável. Radioscopia durante a cirurgia não substitui esse planejamento prévio.\n\n> **Na prova:** span, scan and plan: estabilizar transpondo, fazer a TC, planejar.\n\n**Por que esta questão foi criada.** Ela cobra a ordem do planejamento e explica por que a mesma tomografia, feita com a anatomia ainda deformada, pode ser menos útil para escolher a cirurgia.",
+      "correta": "**C: após o fixador externo transarticular.** A estabilização recupera relações globais e permite usar a TC para mapear os fragmentos e as incisões da etapa definitiva.",
+      "incorretas": {
+        "A": "**Inverte a prioridade quando há deformidade e pele em risco.** A redução e a estabilização vêm antes do planejamento por TC. Registrar a posição inicial não corrige a distorção anatômica nem alivia a pressão dos fragmentos sobre a pele.",
+        "B": "**A redução inicial é importante, mas não reproduz o protocolo estagiado descrito.** O capítulo prefere TC após estabilização transarticular. Deixar o membro apenas em tala ou gesso por vários dias torna a redução definitiva mais difícil e retarda a recuperação da pele.",
+        "D": "**Deixa o planejamento para dentro da operação.** Radioscopia 3D pode conferir a redução, mas não substitui a TC que orienta previamente o acesso aos fragmentos. As incisões e a sequência devem estar planejadas antes de começar a reconstrução."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Imagem; Partes moles: flictenas, espera e o tratamento em etapas; Segundo tempo: plano, articulação e placas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Imagem",
+          "Partes moles: flictenas, espera e o tratamento em etapas",
+          "Segundo tempo: plano, articulação e placas"
+        ],
+        "blocos": [
+          "imagem-db85bf80",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--5a10a6d3",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--2cbb5882",
+          "segundo-tempo-plano-articulacao-e-placas-c64fa5e9"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "91c4845c4de3723571e7f36018998c30acd4c8f412c7b0f90ae6b89ef04f7517"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1700": {
+    "questaoSha256": "e1047962d5a5d4f4755fc5c2aa4431bfb12f386e7146eed8fca5987b68016d92",
+    "comentarioAnteriorSha256": "6408c76c89dcd94d8ca1eb57cdc448c0060e1afab13ba34837626949c5a1bb29",
+    "comentario": {
+      "conceito": "O tornozelo está edemaciado e com flictenas: o capítulo descreve espera habitual de **pelo menos dez dias**, até o **retorno das rugas da pele**, alternativa D. A decisão, porém, pertence ao exame das partes moles e não a um alarme no calendário.\n\nDepois da alta energia, a pele distal tem pouca margem para tolerar dissecção e fechamento sob tensão. O tratamento temporário restaura posição e permite que o envelope passe à fase reparadora. O retorno das rugas, a reepitelização das bolhas e a cicatrização das feridas indicam melhora da condição local (Rockwood, 10ª ed., cap. 64, “Quanto esperar e por que”).\n\n**Menos dor não equivale a pele pronta.** A analgesia e a estabilização podem aliviar o paciente antes de a cobertura recuperar sua tolerância. Da mesma forma, completar dez dias não autoriza atravessar uma flictena hemorrágica ou fechar uma incisão ainda sob tensão. É o cirurgião da etapa definitiva quem deve examinar o membro.\n\nO resumo também apresenta fixação aguda em situações selecionadas, com pouco ou nenhum edema e equipe experiente. Isso não contradiz a resposta: o caso proposto já tem edema e bolhas. Transferir resultados de um grupo selecionado para esse envelope lesado é perder o elemento que determina a espera.\n\n> **Na prova:** dez dias e rugas são o par descrito; na prática, pele recuperada vale mais que prazo cumprido.\n\n**Por que esta questão foi criada.** Ela distingue um prazo habitual de um critério clínico de liberação e evita usar melhora da dor como substituto da recuperação cutânea.",
+      "correta": "**D: 10 dias e retorno das rugas da pele.** É a combinação habitual do capítulo para o quadro edemaciado tratado em etapas. Feridas e flictenas também precisam recuperar-se antes da incisão definitiva.",
+      "incorretas": {
+        "A": "**Encurta o prazo e usa um marcador insuficiente.** Regressão da dor não demonstra recuperação da pele, e cinco dias não corresponde à espera habitual de pelo menos dez descrita para esse contexto.",
+        "B": "**Escolhe o sinal certo com o prazo errado.** As rugas são importantes, mas a referência habitual apresentada é pelo menos dez dias. Não se trata de marcar a operação automaticamente no quinto dia.",
+        "C": "**O tempo coincide; o critério de liberação não.** A pele pode continuar vulnerável apesar de menor dor. A decisão depende de rugas, reepitelização das flictenas e cicatrização, não apenas do sintoma."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Partes moles: flictenas, espera e o tratamento em etapas; Primeiro tempo: o fixador transarticular; Fixação aguda e haste do retropé."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Partes moles: flictenas, espera e o tratamento em etapas",
+          "Primeiro tempo: o fixador transarticular",
+          "Fixação aguda e haste do retropé"
+        ],
+        "blocos": [
+          "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+          "primeiro-tempo-o-fixador-transarticular-428075f5",
+          "partes-moles-flictenas-espera-e-o-tratamento-em--78282836",
+          "fixacao-aguda-e-haste-do-retrope-b437dc32"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "4f645ef8776e03c3004fbbb08cc9f2e85841c628c6420daa546cb9280259a634"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1701": {
+    "questaoSha256": "a631cd84e47264c9fa21e40dcf480873ff8fd440e11105e959e7a48b9133af64",
+    "comentarioAnteriorSha256": "dd61756428a150cbfd77039555da0473c86883d194ffe9bcd2e5ade14320af6b",
+    "comentario": {
+      "conceito": "O valgo comprime a coluna lateral. Nesse padrão, espera-se **fíbula cominuída** e uma **placa principal de suporte do lado lateral**, alternativa A. O lado da compressão, e não uma preferência fixa por placa medial, orienta o contraforte.\n\nO capítulo descreve dois padrões coronalmente opostos: em valgo, o lado lateral é comprimido e a fíbula pode fragmentar; em varo, há tração lateral e compressão medial. A placa principal deve sustentar a concavidade onde a carga tende a fazer a reconstrução ceder (Rockwood, 10ª ed., cap. 64, “A fíbula conta a deformidade”).\n\n**Placa principal não significa placa única.** Um 43C precisa de estabilidade nas três colunas, e nenhuma placa isolada neutraliza todos os planos. Quando a anterolateral é a principal, o resumo recomenda acrescentar uma medial menor para o controle coronal; em outras configurações, também pode ser necessário apoio anterior ou posterior.\n\nA fíbula faz parte da coluna lateral e precisa de redução adequada quando tratada. Encurtamento ou desalinhamento nela pode atrapalhar superfície articular, eixo tibial e posição do tálus. A tomografia e a avaliação das partes moles permitem escolher o momento, a via e os implantes sem supor que a aparência da deformidade inicial revele todos os fragmentos.\n\n> **Na prova:** valgo comprime lateralmente, fragmenta a fíbula e pede suporte principal lateral.\n\n**Por que esta questão foi criada.** Ela exige relacionar a deformidade ao padrão da fíbula e à posição do contraforte, superando a ideia de usar a mesma placa principal em todo pilão.",
+      "correta": "**A: cominutiva e lateral.** No valgo, a compressão lateral explica a fragmentação fibular e a necessidade de suporte desse lado. As demais colunas ainda precisam de estabilidade adequada.",
+      "incorretas": {
+        "B": "**Reconhece a fíbula e coloca o contraforte no lado oposto.** A placa principal vai no lado comprimido; no padrão em valgo descrito, esse lado é o lateral. Suporte medial pode ser complementar, mas não substitui a lógica da placa principal.",
+        "C": "**O suporte está do lado certo, mas a fíbula foi descrita pelo mecanismo oposto.** Falha por tração lateral corresponde ao varo. O valgo tende à compressão e à cominuição da fíbula.",
+        "D": "**Reúne o par típico do varo.** Tração lateral e compressão medial explicam fíbula por tração e placa principal medial. O enunciado, porém, especifica valgo e compressão lateral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: A fíbula e as três colunas; Segundo tempo: plano, articulação e placas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "A fíbula e as três colunas",
+          "Segundo tempo: plano, articulação e placas"
+        ],
+        "blocos": [
+          "a-fibula-e-as-tres-colunas-e5cf59be",
+          "a-fibula-e-as-tres-colunas-3ec81f10",
+          "segundo-tempo-plano-articulacao-e-placas-2b863d83",
+          "segundo-tempo-plano-articulacao-e-placas-88a90c4c",
+          "a-fibula-e-as-tres-colunas-a82a4540",
+          "a-fibula-e-as-tres-colunas-54d4ae66"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "29a8da9a6439e4c3845159b3e7121348f5b9b99dd83f6f377a6a2a7b790852b7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1703": {
+    "questaoSha256": "6ebc18fd46c58481a1c434608cf70ab8e043bec7e1e8da31c16546a19391ef04",
+    "comentarioAnteriorSha256": "2953d56d4261760109876682f0ee310ef4946667b5ac9793f4a73a3b062f7724",
+    "comentario": {
+      "conceito": "Com um grande fragmento posterolateral no 43C, a reconstrução começa **por trás e progride para a frente**. Ao fixar esse fragmento à tíbia, cria-se uma referência articular estável e o padrão passa a ser tratado como um **43B**, alternativa D.\n\nNo 43C inicial, nenhum segmento articular permanece preso à diáfise. O fragmento de Volkmann, quando adequado para servir de referência, permite recuperar essa conexão primeiro. Os demais fragmentos passam a ser remontados sobre um molde posterior, em vez de se tentar encaixar o centro sem uma parede de apoio (Rockwood, 10ª ed., cap. 64, “A redução de trás para a frente”).\n\n**A ordem protege a articulação de erros amplificados.** O capítulo recomenda reconstruir a superfície antes de fixar definitivamente a diáfise. Uma pequena translação ou angulação na conexão metafisária pode impedir o encaixe fino dos fragmentos articulares. Depois de formar o bloco articular, ele é ligado ao segmento proximal com comprimento, eixo e rotação adequados.\n\nO tamanho e a cominuição do fragmento posterior importam: fragmentos grandes podem aceitar placa; pequenos e frágeis podem exigir outra estratégia. Numa placa antideslizante posterior, o resumo alerta que apertar primeiro os parafusos proximais pode empurrar o fragmento para baixo e criar degrau; a fixação distal deve controlar sua posição antes.\n\n> **Na prova:** Volkmann primeiro, de posterior para anterior; fixá-lo cria o fragmento constante e o 43C passa a ter a lógica de um B.\n\n**Por que esta questão foi criada.** Ela usa a classificação para explicar a sequência operatória e a criação de uma referência de redução, em vez de cobrar letras sem consequência prática.",
+      "correta": "**D: de posterior para anterior; 43B.** A fixação do segmento posterior à diáfise cria o apoio articular estável que faltava no 43C. A transformação descrita é parte da estratégia de reconstrução.",
+      "incorretas": {
+        "A": "**Inverte a sequência e elimina indevidamente o componente articular.** Fixar Volkmann não transforma a lesão em extra-articular, 43A. A reconstrução descrita também não começa pela frente.",
+        "B": "**A mudança para B está correta, mas a ordem foi invertida.** O molde deve ser estabelecido posteriormente para guiar a montagem anterior. Começar pela frente perde a referência que a técnica procura criar.",
+        "C": "**A sequência está correta; a classificação resultante não.** Ainda há fratura articular a reconstruir, portanto não se trata de 43A. O segmento posterior fixado cria uma articulação parcialmente ligada à diáfise, lógica de 43B."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Segundo tempo: plano, articulação e placas; Classificações e prognóstico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Segundo tempo: plano, articulação e placas",
+          "Classificações e prognóstico"
+        ],
+        "blocos": [
+          "segundo-tempo-plano-articulacao-e-placas-6fc634df",
+          "segundo-tempo-plano-articulacao-e-placas-aebfa6d9",
+          "classificacoes-e-prognostico-37449ead",
+          "classificacoes-e-prognostico-7dd902d4",
+          "segundo-tempo-plano-articulacao-e-placas-345e2d38"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "0d3794bb58845fd95d522117a38ff578d4ea00a47f2a5a09ccfe5529573cefaf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1704": {
+    "questaoSha256": "17855f937b2ad48934d75adc31e99bd089d5edf8a696635d96be86d0b01ed71e",
+    "comentarioAnteriorSha256": "9f7859b673a4e40dd705224a229042b4a7223e12888d49eeb42f894146d40782",
+    "comentario": {
+      "conceito": "O primeiro tempo e a reconstrução definitiva usam distração com objetivos diferentes. No fixador transarticular temporário, o pino distal principal é **transcalcâneo**; no distrator femoral usado para abrir o tornozelo durante o definitivo, o pino vai no **colo do tálus**. A alternativa B mantém a sequência.\n\nNa urgência, o fixador recupera comprimento e alinhamento, alivia a pele e precisa deixar livres as futuras vias. Por isso o capítulo descreve pino no calcâneo, complementos no mediopé quando necessários e evita o colo do tálus nessa etapa, pois ele comprometeria o campo da reconstrução (Rockwood, 10ª ed., cap. 64, “Primeiro tempo: o fixador transarticular”).\n\n**Durante o definitivo, é a articulação tibiotalar que precisa abrir.** O distrator usa pino de 6 mm no colo do tálus e outro na tíbia. Um pino no calcâneo tende a distrair a subtalar, e não o espaço que se quer visualizar para reconstruir o plafond. O texto também alerta que pino mais fino pode entortar.\n\nEm ambas as etapas, mais distração não é necessariamente melhor. Tensão excessiva pode lesar a pele, causar disestesia e prender fragmentos pelas partes moles; se as inserções ligamentares se arrancaram, pode faltar um ponto final firme. A montagem deve ser guiada pelo objetivo de cada fase, sem repetir o mesmo pino por hábito.\n\n> **Na prova:** temporário, calcâneo; distrator do definitivo, colo do tálus.\n\n**Por que esta questão foi criada.** Ela compara dois dispositivos parecidos por fora, mas com finalidades diferentes, e explica por que uma posição de pino adequada numa fase não deve ser transportada automaticamente para a outra.",
+      "correta": "**B: calcâneo e colo do tálus.** O primeiro preserva o campo futuro no fixador temporário; o segundo permite distrair a tibiotalar durante a reconstrução, em vez da subtalar.",
+      "incorretas": {
+        "A": "**O primeiro pino está correto; o segundo abre o nível errado.** No distrator do definitivo, um pino calcâneo tende a distrair a subtalar. O capítulo prefere o colo do tálus para expor a tibiotalar.",
+        "C": "**Inverte os objetivos das duas fases.** Colo do tálus no temporário compromete o campo das vias definitivas; calcâneo no distrator tende a abrir a subtalar. As duas escolhas contrariam a razão técnica apresentada.",
+        "D": "**Acerta o distrator e ocupa cedo o campo futuro.** O colo do tálus é adequado no dispositivo usado durante o definitivo. No fixador inicial, porém, o capítulo o evita e usa o transcalcâneo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Primeiro tempo: o fixador transarticular; Segundo tempo: plano, articulação e placas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Primeiro tempo: o fixador transarticular",
+          "Segundo tempo: plano, articulação e placas"
+        ],
+        "blocos": [
+          "primeiro-tempo-o-fixador-transarticular-428075f5",
+          "primeiro-tempo-o-fixador-transarticular-bfd3dc28",
+          "primeiro-tempo-o-fixador-transarticular-f197070d",
+          "primeiro-tempo-o-fixador-transarticular-4ac56b38",
+          "primeiro-tempo-o-fixador-transarticular-f5e58e6d",
+          "segundo-tempo-plano-articulacao-e-placas-14a2a86c"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "d39ddef509b192d75220199c7fb983d619582b63402e626c1419836409511ff3"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
