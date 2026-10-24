@@ -1,0 +1,100 @@
+{
+ "data": "2026-10-24",
+ "branch": "codex/resumos-125",
+ "base": "7e13a537b9f2b57f2a520b8ee2fb54386e929545",
+ "lotes": [
+  125,
+  126,
+  127
+ ],
+ "ids": [
+  "quadril-0516",
+  "quadril-0535",
+  "quadril-0536",
+  "quadril-0537",
+  "quadril-0539",
+  "quadril-0669",
+  "trauma-0001",
+  "trauma-0040",
+  "trauma-0111",
+  "trauma-0114",
+  "trauma-0129",
+  "trauma-0192",
+  "trauma-0243",
+  "trauma-0284",
+  "trauma-0288",
+  "trauma-0333",
+  "trauma-0423",
+  "trauma-0699",
+  "trauma-0718",
+  "trauma-0756",
+  "trauma-0853",
+  "trauma-0894",
+  "trauma-0902",
+  "trauma-0934",
+  "trauma-1044",
+  "trauma-1120",
+  "trauma-0935",
+  "trauma-1491",
+  "trauma-1492",
+  "trauma-1495"
+ ],
+ "fonte": "Resumo 50, Rockwood 10ª, 890 linhas lidas integralmente; somente corpo e tabelas independentes, sem contexto de questões como autoridade.",
+ "aplicacao": "aplicar.py sob flock /tmp/claude-0/acervo.lock",
+ "auditoria": "Cadeia dos três lotes reproduzida desde a base; trinta avulsos integrais comparados; fontes, hashes, todas as alternativas e preservação de membros alheios/questões/gabaritos/áreas/imagens conferidos. Formatação externa aos membros próprios preservada.",
+ "revisaoMedicaAtribuida": false,
+ "figurasNosLotes": 0,
+ "validacaoVisual": {
+  "casos": [
+   "quadril-0516",
+   "quadril-0537",
+   "quadril-0539",
+   "trauma-0040",
+   "trauma-0111",
+   "trauma-0114",
+   "trauma-0333",
+   "trauma-0423",
+   "trauma-0756",
+   "trauma-0853",
+   "trauma-0934",
+   "trauma-1120",
+   "trauma-0935",
+   "trauma-1491",
+   "trauma-1492",
+   "trauma-1495"
+  ],
+  "tamanhos": [
+   "celular390",
+   "computador1440"
+  ],
+  "resultado": "16 casos passaram, com correção, comentário, alertas e destino do link de fonte conferidos. Sete capturas representativas abertas.",
+  "capturasAbertas": [
+   "quadril-0516 aula celular",
+   "quadril-0539 alerta PC",
+   "trauma-0111 alerta celular",
+   "trauma-0333 aula PC",
+   "trauma-1120 alerta celular",
+   "trauma-0935 alerta PC",
+   "trauma-1495 aula celular"
+  ]
+ },
+ "checks": "14 fixtures, validar_acervo, npm test, npm run build e diff-check passaram após o lote 127. Os primeiros vinte também passaram antes da terceira unidade.",
+ "logsSha256": {
+  "check127-fixtures.log": "799e67fdc48c9aa24256e0177574c74f6abf36e8462488d5f5be157acf06a429",
+  "check127-acervo.log": "14412637a5b28c5fe833a93194bd401c28f026ffe32009ab9a1991e4c567cfee",
+  "check127-test.log": "62c58cca51e06d6d4e68fb343c8c0b4f8e8546206fa036b777857d8153cc520e",
+  "check127-build.log": "53dd135443efc11ea9f385a64918376bcab22917e3b0c68fd683bfee714d96e6"
+ },
+ "prAnterior": {
+  "pr": 506,
+  "head": "ea71a418c49e102f56d9cb54bc946383faed33eb",
+  "ci": 40084779299,
+  "merge": "7e13a537b9f2b57f2a520b8ee2fb54386e929545",
+  "pages": 40084929168,
+  "jobPublicar": 120846178357,
+  "avulsosIntegrais": 30,
+  "figurasSha256": 15
+ },
+ "proximoLote": 128,
+ "publicacaoAtual": "Aguardar CI do head, merge, guarda/deploy efetivos e comparação integral em produção; registrar no PR."
+}

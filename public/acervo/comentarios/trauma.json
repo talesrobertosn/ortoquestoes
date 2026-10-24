@@ -1,17 +1,46 @@
 {
  "trauma-0001": {
+  "conceito": "A lesão **TILE B1** abre a pelve por rotação externa, como um livro. A redução inicial procura desfazer esse movimento com **rotação interna e adução dos membros inferiores**, alternativa C, desde que outras lesões dos membros não impeçam a manobra.\n\nO complexo posterior ainda oferece uma dobradiça, enquanto a frente se abre. Aproximar as hemipelves diminui o volume pélvico e o movimento do foco, ajudando o tamponamento e a formação do coágulo. A cinta ou o lençol deve ficar na altura dos **trocânteres maiores**, para atuar no nível adequado (Rockwood, 10ª ed., cap. 50, “Cinta e lençol”).\n\n**Reduzir não substitui ressuscitar.** O paciente pode precisar de sangue e de controle adicional da hemorragia. Sangramento arterial pode continuar apesar do fechamento; o quadro hemodinâmico e a busca de outras fontes orientam as etapas seguintes.\n\nA cinta também pode ocultar a abertura na imagem, e pressão prolongada ameaça a pele. Assim, a manobra é uma medida inicial com vigilância, não uma autorização para manter compressão sem reavaliação.",
+  "correta": "**C: rotação interna e adução.** A combinação fecha a abertura anterior, usando a continuidade posterior como dobradiça no padrão B1. Deve ser associada à estabilização circunferencial no nível dos trocânteres e ao atendimento do trauma.",
   "incorretas": {
-   "A": "A flexão do quadril não fecha o anel pélvico.",
-   "B": "A abdução abre ainda mais o livro.",
-   "D": "A rotação interna ajuda, mas a abdução trabalha contra a redução."
+   "A": "**A adução ajuda, mas a flexão não substitui a correção rotacional.** O mecanismo predominante é rotação externa; a resposta precisa incluir rotação interna para desfazê-lo.",
+   "B": "**Abdução afasta os membros e não fecha o livro.** Somar flexão não corrige a abertura por rotação externa. A redução descrita exige aproximar e rodar internamente, não ampliar a abertura.",
+   "D": "**Acerta a rotação e erra a aproximação.** Rotação interna participa do fechamento, mas abdução contraria a adução recomendada. O par completo deve atuar para aproximar as hemipelves."
   },
-  "conceito": "O **tipo B1 de Tile** é a lesão em **livro aberto**: um trauma em **rotação externa** (compressão anteroposterior) abre a **sínfise púbica** e rompe os ligamentos **sacroespinhoso** e **sacroilíacos anteriores**, como se a pelve fosse um livro sendo aberto.\n\n**A estabilidade**: a lesão é **instável na rotação**, mas **estável na vertical**, porque os ligamentos sacroilíacos **posteriores** continuam íntegros e funcionam como a lombada do livro.\n\n**O problema**: o anel aberto **aumenta o volume da pelve**, e o sangramento, sobretudo **venoso** do plexo pré-sacral, encontra espaço para crescer.\n\n**O manejo inicial**: fechar o livro.\n\n**Rotação interna e adução dos membros inferiores**: aproxima as hemipelves e reduz o volume;\n\n**Lençol ou cinta pélvica**: centrado sobre os **trocânteres maiores**, e não sobre as cristas ilíacas;\n\n**Fixador externo anterior**: se a instabilidade hemodinâmica persistir;\n\n**Angiografia ou tamponamento pré-peritoneal**: no sangramento arterial ou refratário.\n\n**O resto de Tile**: tipo A é estável; B2 e B3 são compressão lateral (rotação interna); tipo C é instável na rotação e na vertical.\n\n**Na prova**: a redução do livro aberto é feita com **rotação interna e adução** dos membros inferiores.",
-  "correta": "A rotação interna com adução fecha a sínfise, reduz o volume pélvico e ajuda a conter o sangramento.",
   "referencias": [
-   "https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/pelvic-ring/primary-survey/circulation"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de TILE e as outras; Controle da hemorragia."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Classificação de TILE e as outras",
+      "Controle da hemorragia"
+     ],
+     "blocos": [
+      "classificacao-de-tile-e-as-outras-e15a618f",
+      "controle-da-hemorragia-f1cb1105",
+      "controle-da-hemorragia-7bcd76b1",
+      "controle-da-hemorragia-c0a73e46",
+      "controle-da-hemorragia-2119cc59",
+      "controle-da-hemorragia-86cc36e2"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "0c932fa0979794d8700fb02d0155fab03c0a95804f84fb970099bc965ea5a8ea"
+    }
+   ],
+   "questaoSha256": "b2c28d8b76c3ebfbe9fcf059b879f0cf3ca13066eab7b88cf23c2c114ccc71d9",
+   "comentarioSha256": "3b98a871177f2dfc258f75ac89d12ffa69b6ff63cf845131aa46b4e514015f0e"
+  }
  },
  "trauma-0002": {
   "conceito": "**Zona de segurança é o setor não articular disponível para a placa.** A cabeça do rádio articula com o capítulo pelo prato côncavo e com a ulna por parte de sua circunferência. O implante deve ocupar o setor que não participa desse contato, para não criar conflito e bloquear a pronossupinação.\n\nNa referência do resumo, o setor é encontrado com o **antebraço em rotação neutra**, na face **lateral** da cabeça, cerca de dez graus anterior à linha média lateral. A posição neutra torna a referência reprodutível; se o antebraço gira, a posição da superfície radial em relação ao examinador também muda.\n\nO gabarito usa a expressão “punho em neutro”. É importante não interpretá-la como simples ausência de flexão ou extensão do punho: o parâmetro anatômico do resumo é a **rotação do antebraço**. É possível manter o punho sem flexão e ainda pronar ou supinar, mudando a referência da cabeça radial.\n\nOutra fonte de confusão é a pronação do acesso lateral, usada para proteção do interósseo posterior. Essa é uma medida de segurança nervosa; não muda a posição neutra descrita para marcar o setor não articular da placa.\n\n**Na Biblioteca, leia “Anatomia: a zona segura” e compare as referências de Smith e Hotchkiss com a recomendação de posição neutra.** A leitura ajuda a separar segurança do implante, posição do antebraço e proteção nervosa durante o acesso.",
@@ -960,15 +989,44 @@
   "conferido": false
  },
  "trauma-0040": {
+  "conceito": "Para a coluna continuar ligada à pelve, não basta que o sacro pareça um osso único numa incidência. É necessário preservar a conexão lombossacra. O traço **medial à faceta L5-S1**, alternativa C, ameaça essa relação e está associado à instabilidade espinopélvica.\n\nO resumo destaca a **faceta L5-S1** na classificação AO Spine: as fraturas verticais que a envolvem podem comprometer a estabilidade entre coluna e pelve, compondo o grupo C1. O raciocínio não se resume à distância do traço em relação aos forames de Denis; são classificações que respondem a perguntas diferentes (Rockwood, 10ª ed., cap. 50, “AO Spine: a faceta L5-S1”).\n\nNas fraturas em U ou H, traços verticais bilaterais se unem a um transversal e separam o sacro superior, ligado à coluna, da pelve. Pode haver cifose e compressão neural. A reconstrução **sagital da TC** é fundamental para reconhecer a deformidade, que pode passar despercebida na AP e em cortes axiais.\n\n**Déficit neurológico e instabilidade mecânica também são diferentes.** Uma fratura transversa baixa pode lesar raízes mesmo estando abaixo das sacroilíacas, sem produzir a mesma dissociação do anel superior. A pergunta busca a relação com a faceta e a junção lombopélvica.",
+  "correta": "**C: medial à faceta L5-S1.** É a alternativa que envolve a conexão lombossacra relevante para a estabilidade espinopélvica. O resumo enfatiza o envolvimento da faceta, sem usar a classificação de Isler pelo nome.",
   "incorretas": {
-   "A": "A fratura transalar fica na zona I de Denis, sem instabilidade espinopélvica.",
-   "B": "A fratura do promontório não é o critério de Isler.",
-   "D": "O traço transverso abaixo de S1 não desconecta a coluna da pelve."
+   "A": "**Um traço na asa não basta para demonstrar dissociação da coluna.** A fratura pode ser completa e instável para o anel, mas o critério espinopélvico solicitado exige avaliar a relação com a faceta L5-S1.",
+   "B": "**O nome de um marco anterior não define a conexão perdida.** “Do promontório” não informa envolvimento da faceta nem um padrão em U/H. A localização isolada não substitui a configuração que compromete coluna e pelve.",
+   "D": "**Um traço baixo não tem a mesma consequência mecânica.** O resumo descreve fraturas horizontais abaixo das sacroilíacas como estáveis para o anel, embora possam lesar raízes baixas. Isso difere do traço que compromete a junção L5-S1."
   },
-  "conceito": "As **fraturas do sacro** podem separar a **coluna lombar** da **pelve**: é a **instabilidade espinopélvica**.\n\n**Os padrões de dissociação**: fraturas em **H**, **U**, **lambda** ou **Y**. Elas combinam traços verticais dos dois lados com um traço transverso, e o sacro superior fica preso à coluna e solto da pelve.\n\n**A classificação de Isler**: olha onde o traço vertical passa em relação à **faceta articular L5-S1**:\n\n**lateral à faceta**: não compromete a articulação lombossacral;\n\n**através da faceta**: compromete parcialmente;\n\n**medial à faceta** (entra no canal): a articulação L5-S1 fica do lado instável, com **instabilidade lombossacral e espinopélvica**.\n\n**As zonas de Denis**: zona I (asa, lateral aos forames), zona II (através dos forames) e zona III (medial aos forames, canal). Quanto mais medial, mais lesão neurológica.\n\n**O tratamento**: **fixação lombopélvica** (montagem triangular, com parafusos na lombar e no ilíaco) ou parafusos iliossacrais em padrões selecionados.\n\n**Na prova**: a instabilidade espinopélvica se associa à fratura **medial à faceta L5-S1**.",
-  "correta": "O traço vertical medial à faceta L5-S1 deixa a articulação lombossacral do lado instável.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-91306294",
+      "fraturas-do-sacro-29ccf1ad",
+      "fraturas-do-sacro-7d626e05",
+      "fraturas-do-sacro-5becff58"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "d9643743ce4d04b88a53173e5f733145a91b6bbfe873fb01d0ac769bdf95d390"
+    }
+   ],
+   "questaoSha256": "3404750a19fdefa586ece973c36e4b1813d282e1f41779c52c73c9eb5be25599",
+   "comentarioSha256": "89251f39910dded27c81ae4e24e8089be02ac591d567e0f8512e6d2a68ee3835"
+  }
  },
  "trauma-0041": {
   "incorretas": {
@@ -2868,15 +2926,47 @@
   "conferido": false
  },
  "trauma-0111": {
+  "conceito": "Se a prioridade é controlar uma lesão **posterior** instável na emergência, o dispositivo escolhido pela prova é o **clampe pélvico em C**, alternativa C. Ele aproxima a hemipelve por **translação medial**, comprimindo diretamente a região posterior.\n\nO fixador anterior fecha o livro sobretudo por rotação interna, usando o setor posterior como dobradiça. Se os ligamentos posteriores estão completamente rotos, essa montagem anterior não resolve sozinha o problema posterior. O C-clamp tem outra ação mecânica e foi considerado superior nesse cenário (Rockwood, 10ª ed., cap. 50, “Fixador externo de emergência e clampe pélvico”).\n\n**O capítulo também registra uma mudança de prática.** Pinos supra-acetabulares dirigidos para trás melhoram o controle, e seu uso reduziu a necessidade do clampe. Cinta e lençol tornaram-se medidas iniciais rápidas, sem exigir imediatamente um dispositivo invasivo. Portanto, a resposta da prova não significa que toda lesão posterior deva receber C-clamp como primeira ação, independentemente de equipe, anatomia e condição clínica.\n\nO clampe exige técnica estéril, radioscopia e cuidado com estruturas intrapélvicas; não é tratamento definitivo. Ressuscitação e controle da hemorragia continuam associados à estabilização, e a fixação final deve abordar o padrão completo.",
+  "correta": "**C: clampe pélvico.** Sua compressão posterior por translação medial explica a preferência da questão. É um recurso temporário, cujo emprego depende de execução segura e do protocolo do serviço.",
   "incorretas": {
-   "A": "O fixador supra-acetabular controla sobretudo o anel anterior.",
-   "B": "O fixador na crista ilíaca também age no anel anterior.",
-   "D": "A placa na sínfise estabiliza o anterior e não é medida de urgência."
+   "A": "**É uma alternativa importante, com vantagem sobre pinos da crista.** Pinos supra-acetabulares dirigidos posteriormente melhoram o controle do anel e diminuíram o uso do clampe. A banca, contudo, selecionou o dispositivo de compressão posterior direta, não uma superioridade universal para todo cenário.",
+   "B": "**Atua sobretudo na frente e na rotação.** O fixador na crista pode fechar o livro, mas não é suficiente como tratamento definitivo de uma ruptura posterior completa. Seu mecanismo não equivale à compressão posterior do clampe.",
+   "D": "**É fixação anterior definitiva, não o dispositivo temporário solicitado.** A placa da sínfise pode ser parte da reconstrução do anel, mas não substitui a estabilização posterior na urgência."
   },
-  "conceito": "Na **lesão instável do anel pélvico** com choque, a prioridade é **reduzir o volume** e **estabilizar** a pelve para conter o sangramento. Cada dispositivo age numa parte do anel:\n\n**cinta ou lençol pélvico**: primeiro gesto, sobre os trocânteres;\n\n**fixador externo anterior** (pinos na crista ilíaca ou supra-acetabulares): controla bem o anel **anterior** e a rotação, mas segura pouco o **posterior**;\n\n**clampe pélvico (C-clamp)**: pinos na face **lateral do ilíaco**, na linha da **sacroilíaca**; comprime e estabiliza o anel **posterior**.\n\n**As contraindicações do C-clamp**: fratura do **ilíaco** (os pinos entram no traço) e fratura **sacral cominuta**, pelo risco de comprimir as raízes.\n\n**A placa na sínfise** estabiliza o anterior e é fixação **definitiva**, não de urgência.\n\n**Depois**: angiografia no sangramento arterial ou tamponamento pré-peritoneal no refratário.\n\n**Na prova**: na urgência, a instabilidade posterior é mais bem tratada com o **C-clamp**.",
-  "correta": "O C-clamp comprime o anel posterior pela linha da sacroilíaca e o estabiliza na urgência.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Controle da hemorragia; Fixação do anel anterior; Tratamento cirúrgico: indicações e princípios."
+  ],
+  "conferido": false,
+  "alerta": "C oficial preservada como compressão posterior direta na emergência. O resumo registra redução do uso do clampe com pinos supra-acetabulares e preferência inicial por cinta/lençol em muitos fluxos. Não transformar o gabarito numa indicação obrigatória de C-clamp para toda lesão posterior.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Controle da hemorragia",
+      "Fixação do anel anterior",
+      "Tratamento cirúrgico: indicações e princípios"
+     ],
+     "blocos": [
+      "controle-da-hemorragia-68da9269",
+      "controle-da-hemorragia-40e87a9a",
+      "fixacao-do-anel-anterior-bcde7119",
+      "tratamento-cirurgico-indicacoes-e-principios-62cfb826"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "10fcc5d4531a386909c40ea263811bae7ddf622f8d271d537c5c409035726d52"
+    }
+   ],
+   "questaoSha256": "863a7b456a0c218924619176050ac00a1a7ccb8a6826242935e373a8bbe16804",
+   "comentarioSha256": "b2aa2fc19a9110a30c045600bfc183e4b91c38bb834b69e9025ecf1b22f3bad1"
+  }
  },
  "trauma-0112": {
   "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o sinal radiográfico da \"asa de gaivota\" (gull sign) caracteriza a **impacção do teto acetabular**, o afundamento da porção superomedial da cúpula de sustentação de carga, visível como uma linha de densidade dupla que lembra, na sua forma, as asas de uma gaivota em voo.\n\nEsse achado representa dano direto à cartilagem articular numa região crítica para a função do quadril, e seu reconhecimento na radiografia simples é um sinal de alerta que orienta a investigação tomográfica mais detalhada e, frequentemente, uma abordagem cirúrgica específica para elevar e enxertar o fragmento impactado.\n\nSem essa correção específica, a superfície impactada permanece incongruente mesmo que o restante da fratura seja bem reduzido, favorecendo a evolução precoce para artrose pós-traumática.\n\nEsse mesmo princípio (identificar e tratar especificamente a impacção marginal, e não apenas reduzir o traço principal da fratura) se repete em outras fraturas articulares discutidas neste acervo, como a impacção do fragmento de parede posterior do acetábulo e a fratura \"die-punch\" do rádio distal, todas exigindo o mesmo cuidado adicional de elevação e enxerto ósseo do fragmento deprimido.",
@@ -2932,15 +3022,44 @@
   }
  },
  "trauma-0114": {
+  "conceito": "Uma fratura **medial aos forames**, entrando no canal sacral, coloca raízes e cauda equina em risco. Essa é a **zona III de Denis**, cuja probabilidade de lesão neurológica se aproxima de **50% a 60%**, alternativa C.\n\nA classificação vai da asa para o canal. Zona I é lateral aos forames e tem menor risco; zona II atravessa os forames e tem cerca de 30% de lesão neurológica no resumo; zona III é medial e chega a 60%. Assim, **o padrão mais raro é o de maior risco neural**, não o mais frequente (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\nZona III não é um grupo uniforme. Pode ter traço vertical, oblíquo ou horizontal; os horizontais exigem cortes finos e reconstrução sagital. Uma lesão baixa pode afetar raízes mesmo sem desestabilizar todo o anel. Nas dissociações em U/H, podem coexistir cifose e disfunção vesical ou intestinal, exigindo avaliação neurológica e mecânica completas.\n\nO número é uma frequência de grupo, não uma sentença individual nem um critério isolado para escolher cirurgia. Continuidade das raízes, compressão por fragmentos, desvio e padrão espinopélvico influenciam a avaliação.",
+  "correta": "**C: 50% a 60%.** É a faixa compatível com o risco de até 60% informado para a zona III. A entrada no canal explica o aumento do risco neurológico em relação às zonas laterais.",
   "incorretas": {
-   "A": "De 10 a 20% se aproxima da zona I, com cerca de 6%.",
-   "B": "De 30 a 40% se aproxima da zona II, com cerca de 28%.",
-   "D": "De 70 a 80% superestima o risco da zona III."
+   "A": "**Subestima o risco do grupo medial.** O resumo não fornece essa faixa para a zona III; a proximidade do canal torna seu risco muito maior que o da asa lateral. Não é necessário inventar uma taxa exata de zona I para rejeitar a opção.",
+   "B": "**Está mais perto do risco transforaminal.** Cerca de 30% é o valor descrito para a zona II. A zona III alcança o canal e tem risco maior, chegando à faixa escolhida na alternativa C.",
+   "D": "**Ultrapassa a frequência apresentada para o grupo.** Casos graves podem ter comprometimento extenso, mas a taxa citada para zona III chega a aproximadamente 60%, não a 70%–80% como regra."
   },
-  "conceito": "**Denis** dividiu o **sacro** em três zonas verticais, de lateral para medial, e mostrou que a **lesão neurológica** aumenta quanto mais o traço se aproxima do canal:\n\n**zona I**: a **asa**, lateral aos forames; déficit em cerca de **6%**, em geral da raiz de L5, comprimida contra a asa;\n\n**zona II**: através dos **forames**; déficit em cerca de **28%**, das raízes sacrais que saem por eles;\n\n**zona III**: **medial aos forames**, entrando no **canal sacral**; déficit em cerca de **57%**, com risco de **disfunção** da bexiga, do intestino e sexual.\n\n**A instabilidade espinopélvica**: fraturas em **H, U, lambda ou Y** separam o sacro superior e a coluna da pelve. O traço vertical **medial à faceta L5-S1** (Isler) deixa a articulação lombossacral do lado instável.\n\n**O tratamento**: **fixação lombopélvica** (montagem triangular) ou parafusos iliossacrais em padrões selecionados; descompressão quando há déficit com fragmento no canal.\n\n**Na prova**: na zona III de Denis, a lesão neurológica ocorre em **50 a 60%** dos casos.",
-  "correta": "O traço da zona III entra no canal sacral, e o déficit neurológico ocorre em cerca de 57%.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-f07d590a",
+      "fraturas-do-sacro-96ec0312",
+      "fraturas-do-sacro-7d626e05",
+      "fraturas-do-sacro-5becff58"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "c4dc928413916e0a723f02b3ead0c84e88cfd838136045c419e615f765b5ec26"
+    }
+   ],
+   "questaoSha256": "2a98817e9ff796f097a5e1326226e0c1f57b15da8c5d07a8cb0eb50b312487d1",
+   "comentarioSha256": "3ab30bc94d9b3f6d199b66c9e99766322cabf1eabd74f187b7d1f85732862cbf"
+  }
  },
  "trauma-0115": {
   "conceito": "**O que é o joelho flutuante.** É a combinação de fratura do **fêmur** e da **tíbia** do mesmo lado: o joelho fica \"solto\" entre dois ossos quebrados, sem continuidade óssea acima nem abaixo. É uma lesão de **alta energia**, típica de acidentes de **motocicleta** e **atropelamentos**.\n\n**As lesões associadas mais frequentes.**\n\n| Associação | Comentário |\n|---|---|\n| **Fratura exposta** | Em cerca de **60%** dos casos, geralmente da tíbia |\n| Lesão ligamentar do joelho | Frequente e muitas vezes despercebida; examinar o joelho após a fixação |\n| Lesão vascular | Artéria poplítea; sempre avaliar pulsos e índice tornozelo-braquial |\n| Politrauma | Traumatismo craniano, torácico, abdominal, fraturas da pelve e de outros membros |\n| Embolia gordurosa | Duas fraturas de ossos longos aumentam o risco |\n\n**A classificação de Fraser.**\n- **Tipo I**: as duas fraturas são **diafisárias** (extra-articulares).\n- **Tipo II**: uma ou ambas atingem o joelho: IIa (platô tibial), IIb (fêmur distal), IIc (ambos).\n\n**Tratamento.** No paciente politraumatizado instável, **controle de danos** com fixadores externos, seguido de fixação definitiva quando estável. No paciente estável, **fixação das duas fraturas** o mais cedo possível, o que permite mobilizar o paciente, reduz complicações pulmonares e facilita a reabilitação do joelho. Uma opção para fraturas diafisárias é a **haste retrógrada do fêmur e anterógrada da tíbia** pela mesma incisão no joelho.\n\n**Prognóstico.** Pior quando há fratura articular (Fraser II), fratura exposta e lesão vascular; rigidez do joelho e discrepância de comprimento são sequelas comuns.",
@@ -3276,15 +3395,44 @@
   }
  },
  "trauma-0129": {
+  "conceito": "O sangramento pélvico costuma vir de veias e superfícies fraturadas, mas a pergunta pede especificamente as **artérias** mais relacionadas à hemorragia. O par é **glútea superior e pudenda**, alternativa B, ramos do sistema ilíaco interno.\n\nOs vasos passam próximos aos ligamentos e ao osso do anel. A ruptura pode abrir vários pontos de sangramento, e o resumo destaca a glútea superior, que sai pela incisura isquiática maior, e a pudenda interna entre as fontes arteriais principais. Na angiografia também aparecem sacral lateral, glútea inferior e obturatória; até 40% podem ter mais de um foco (Rockwood, 10ª ed., cap. 50, “De onde vem o sangue”).\n\n**Fechar o anel não garante hemostasia arterial.** A cinta estabiliza e ajuda o tamponamento e a formação do coágulo, mas uma laceração arterial pode vencer esse efeito. Sangramento persistente exige reavaliar outras fontes, reposição e necessidade de angiografia e embolização; extravasamento na TC é um achado particularmente importante.\n\nO par pedido não significa que só essas artérias sangrem. Ele distingue os vasos mais destacados no capítulo sem transformar outros ramos possíveis em estruturas irrelevantes.",
+  "correta": "**B: superior e pudenda.** Glútea superior e pudenda interna são o par arterial destacado como principal no resumo. A distinção importa porque hemorragia arterial pode persistir apesar da estabilização externa.",
   "incorretas": {
-   "A": "A pudenda está certa, mas a glútea inferior é lesada com menos frequência que a superior.",
-   "C": "A glútea inferior e a sacral lateral são lesadas com menos frequência.",
-   "D": "A glútea superior está certa, mas a sacral lateral é menos frequente que a pudenda."
+   "A": "**A pudenda está correta, mas a glútea foi trocada.** A inferior pode aparecer nas angiografias; o par mais destacado na fonte combina a pudenda com a superior. Não se deve negar que a inferior também possa sangrar.",
+   "C": "**Reúne fontes possíveis, sem reproduzir o par pedido.** Glútea inferior e sacral lateral aparecem na lista angiográfica, mas a fonte destaca superior e pudenda como as artérias mais relacionadas.",
+   "D": "**Mantém a glútea superior e substitui a pudenda.** A sacral lateral é uma fonte reconhecida, mas não completa o par clássico enfatizado. A diferença é de frequência e destaque, não de impossibilidade anatômica."
   },
-  "conceito": "Na **lesão do anel pélvico**, o sangramento é sobretudo **venoso** (80 a 90%), do **plexo pré-sacral** e das superfícies ósseas fraturadas. O sangramento **arterial** responde por 10 a 20%, mas é o que não para com a cinta.\n\n**As artérias mais lesadas**, ramos da **ilíaca interna**:\n\n**glútea superior**: a mais frequente; sai da pelve pelo **forame isquiático maior**, logo acima do piriforme, e é lesada nas fraturas posteriores e da incisura isquiática;\n\n**pudenda interna**: lesada nas fraturas **anteriores** (ramos e sínfise);\n\n**obturatória**: nas fraturas dos ramos;\n\nas demais (glútea inferior, sacral lateral, iliolombar) são menos frequentes.\n\n**O algoritmo**: no paciente instável, **cinta pélvica**, reposição balanceada com sangue e FAST. Com **blush arterial** na TC ou instabilidade persistente: **angioembolização**. Onde não há hemodinâmica disponível, **tamponamento pré-peritoneal**.\n\n**Na prova**: as artérias mais relacionadas à hemorragia pélvica são a **glútea superior** e a **pudenda**.",
-  "correta": "A glútea superior, nas lesões posteriores, e a pudenda, nas anteriores, são os ramos da ilíaca interna mais lesados.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Controle da hemorragia."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Controle da hemorragia"
+     ],
+     "blocos": [
+      "controle-da-hemorragia-8f5e93e8",
+      "controle-da-hemorragia-14e4c829",
+      "controle-da-hemorragia-65f109e9",
+      "controle-da-hemorragia-f1cb1105"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "e6b51cc3d9fa9b96d8c003bd9d1879db0ed6d86d24fe3a034577b1d90b8f056a"
+    }
+   ],
+   "questaoSha256": "8c056b5d58e196c06a893a228bac8bb8b2284a8242ab771d56ef49be6d4084c9",
+   "comentarioSha256": "b9b9207e983183261fc4d1fd1bf165ed66c706f46f7b97bbae9161a072541335"
+  }
  },
  "trauma-0130": {
   "conceito": "A presença de **fratura ipsilateral do colo** muda a estratégia da diáfise porque a região proximal também precisa de redução e fixação cuidadosas. O capítulo lista essa associação entre as indicações de **placa diafisária**, correspondente a D.\n\nO método habitual para a diáfise do adulto é a haste, mas não deve ser escolhido como se a segunda fratura não existisse. A haste anterógrada exige entrada proximal e pode disputar a região do colo. Na associação, os autores favorecem controlar primeiro o colo e usar implante separado para a diáfise: **retrógrada ou placa**. A placa permite estabilizar a diáfise sem precisar de uma haste de reconstrução única que atravesse o planejamento proximal (resumo do Rockwood, 10ª ed., cap. 57, “A fratura do colo do mesmo lado” e “Placa”).\n\nA pergunta diz “mais bem indicada”, não “único tratamento possível”. Uma haste retrógrada também pode dar bons resultados nessa associação. O que a opção D oferece é uma razão específica, explicitada pelo capítulo, para considerar a placa aberta em vez de usar a técnica de rotina sem adaptação.\n\nIsso tampouco torna placa sinônimo de resultado melhor em todo aspecto. A via aberta pode elevar o vasto lateral e exigir ligadura de perfurantes; a carga não é compartilhada como na haste, e o capítulo orienta liberação conforme sinais de consolidação. Escolher placa significa aceitar essas exigências porque o conjunto do caso a torna apropriada, não porque ela seja invariavelmente menos agressiva.\n\nAs outras associações oferecidas podem justamente favorecer uma via intramedular distal: joelho flutuante, lesão da coluna e acetábulo estão entre as situações em que o resumo considera retrógrada. O ponto é reconhecer a indicação explícita da placa sem transformar cada uma dessas lesões numa contraindicação absoluta a ela. Compare as opções no resumo da Biblioteca.",
@@ -4746,15 +4894,45 @@
   }
  },
  "trauma-0192": {
+  "conceito": "As fraturas mais comuns do sacro não são as que mais frequentemente lesam nervos. Em Denis, a combinação é **zona I para frequência de fratura e zona III para risco neurológico**, alternativa B.\n\nA zona I fica na **asa, lateral aos forames**: reúne quase metade das fraturas no resumo e tem baixo risco neural. A zona II atravessa os forames, com cerca de 30% de déficit. A zona III alcança a região **medial e o canal**, é a menos comum, mas chega a 60% de lesão neurológica (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\n**Frequência e gravidade são dois eixos.** Um traço frequente na asa pode permanecer longe do canal; um padrão menos frequente, medial, ameaça mais estruturas neurais. A classificação não deve ser lida como se o número maior significasse mais casos.\n\nO exame neurológico precisa ser documentado na chegada, inclusive quando não é possível realizá-lo. A imagem complementa: cortes finos e reconstrução sagital ajudam a reconhecer traços horizontais e dissociação espinopélvica que podem passar despercebidos.",
+  "correta": "**B: I e III.** I é a zona mais frequente de fratura; III é a de maior risco neurológico. A ordem solicitada é epidemiológica primeiro e neurológica depois.",
   "incorretas": {
-   "A": "A zona I é a mais frequente, mas a de mais déficit é a III, não a II.",
-   "C": "A zona II não é a mais frequente.",
-   "D": "A ordem está invertida e a zona II não é a de mais déficit."
+   "A": "**Acerta a frequência e para cedo no risco.** A zona II atravessa os forames e pode lesar raízes, mas seu risco de aproximadamente 30% é menor que o da zona III.",
+   "C": "**Acerta o maior risco e troca a zona mais comum.** A zona II representa cerca de um terço, enquanto a I chega a quase metade na descrição do capítulo.",
+   "D": "**Inverte a lógica epidemiológica.** A zona III é a menos comum e a de maior risco; a II não supera a III na frequência de lesão neurológica. Nenhum dos dois termos completa a ordem pedida."
   },
-  "conceito": "**Denis** dividiu o **sacro** em três zonas verticais. A frequência e o risco neurológico andam em sentidos **opostos**:\n\n**zona I** (asa, lateral aos forames): a **mais frequente**; déficit em cerca de **6%**, em geral da raiz de L5;\n\n**zona II** (através dos forames): frequência intermediária; déficit em cerca de **28%**, das raízes sacrais;\n\n**zona III** (medial aos forames, no canal sacral): a **menos frequente**; déficit em cerca de **57%**, com risco de disfunção da **bexiga**, do **intestino** e sexual.\n\n**A lógica**: quanto mais **medial** o traço, mais perto das raízes e do canal, e maior o déficit.\n\n**A instabilidade espinopélvica**: as fraturas em **H, U, lambda ou Y** separam a coluna da pelve. O traço vertical **medial à faceta L5-S1** (Isler) compromete a articulação lombossacral.\n\n**O tratamento**: **fixação lombopélvica** ou parafusos iliossacrais em padrões selecionados; descompressão quando há déficit com fragmento no canal.\n\n**Na prova**: a zona mais frequente é a **I**, e a de mais lesão neurológica é a **III**.",
-  "correta": "A zona I, na asa, é a mais fraturada, e a zona III, no canal, é a que mais causa déficit neurológico.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Exame físico, fratura exposta e lesão de partes moles."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro",
+      "Exame físico, fratura exposta e lesão de partes moles"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-96ec0312",
+      "fraturas-do-sacro-f07d590a",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-e2a7ba15",
+      "fraturas-do-sacro-7d626e05"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "af8e93d716e946c5cbfddca1c70141941d339cd64752b6421d854672679a0cbc"
+    }
+   ],
+   "questaoSha256": "fc26fc3421076d4888191d3c6f23dabff46b367fb3309d2c096c2053056238e3",
+   "comentarioSha256": "aa3cbd23831741289707d617d8bf64a88fdfe17ba5e0fb11548ec340928df93d"
+  }
  },
  "trauma-0193": {
   "incorretas": {
@@ -5955,18 +6133,47 @@
   }
  },
  "trauma-0243": {
+  "conceito": "A avulsão do **processo transverso de L5**, alternativa D, é um sinal clássico de alerta para lesão do anel com possível **instabilidade vertical**. O ligamento iliolombar liga esse processo à crista ilíaca; a tração transmitida pela hemipelve pode arrancar o fragmento.\n\nNo cisalhamento vertical, o vetor predominante empurra a hemipelve para cima. A comparação das cristas e das alturas do anel mostra esse deslocamento, e a outlet ajuda a estudá-lo. A fratura de L5 é uma pista indireta da força transmitida ao complexo lombopélvico (Rockwood, 10ª ed., cap. 50, “Cisalhamento vertical e mecanismo combinado”).\n\n**Pista não é prova.** O capítulo relata uma série em que só 19% das lesões verticalmente instáveis tinham essa avulsão e registra que ela também pode acompanhar outros padrões. Portanto, sua ausência não afasta instabilidade e sua presença não a confirma sozinha. A TC deve definir a lesão posterior e a relação entre os componentes.\n\nAs outras opções descrevem partes da lesão anterior ou padrões rotacionais: ramos isolados não determinam a integridade posterior; impacção anterior da asa sacral aponta para compressão lateral; abertura da sínfise relaciona-se ao livro aberto.",
+  "correta": "**D: fratura do processo transverso de L5.** A tração do iliolombar explica sua associação clássica com lesão do anel e possível componente vertical. O termo “sugestivo” é adequado; “patognomônico” seria excessivo.",
   "incorretas": {
-   "A": "A fratura isolada dos ramos é uma lesão estável.",
-   "B": "A fratura do córtex sacral anterior é típica da compressão lateral.",
-   "C": "A diástase da sínfise de 2,5 cm indica instabilidade rotacional, de livro aberto."
+   "A": "**Mostra uma lesão anterior sem definir a estabilidade posterior.** Uma fratura dos ramos pode acompanhar padrões estáveis ou instáveis. Isoladamente não é o sinal clássico do vetor vertical solicitado.",
+   "B": "**É a marca da impacção por compressão lateral.** A hemipelve gira para dentro e esmaga a região anterior da asa sacral. Esse mecanismo difere da subida predominante no cisalhamento vertical.",
+   "C": "**O limite de 2,5 cm se relaciona à abertura rotacional.** Ajuda na classificação clássica da CAP, mas não demonstra por si ruptura posterior completa ou subida da hemipelve."
   },
-  "conceito": "O **cisalhamento vertical** (Tile C, Young-Burgess VS) é a lesão mais instável do anel pélvico: a hemipelve sobe em relação ao sacro, com ruptura **completa** posterior (sacroilíaca ou sacro) e anterior (sínfise ou ramos).\n\n**Os sinais radiográficos de instabilidade vertical**:\n\n**hemipelve mais alta** que a do outro lado;\n\n**fratura do processo transverso de L5**: avulsão pelo **ligamento iliolombar**, que liga o processo transverso à crista ilíaca; quando a hemipelve sobe, o ligamento arranca a ponta do processo;\n\n**avulsão da espinha isquiática** ou da borda do sacro, pelos ligamentos sacroespinhoso e sacrotuberoso;\n\n**alargamento** da sacroilíaca maior que 1 cm.\n\n**Os outros achados**: fratura **isolada dos ramos** é lesão estável; a **fratura do córtex anterior do sacro** (impacção) é típica da **compressão lateral**; a **diástase da sínfise** de 2,5 cm indica instabilidade **rotacional** (livro aberto).\n\n**A conduta**: **tração esquelética** longitudinal no membro para baixar a hemipelve; fixação **posterior** (parafusos iliossacrais) e anterior.\n\n**Na prova**: a fratura do **processo transverso de L5** sugere cisalhamento vertical.",
-  "correta": "A hemipelve que sobe faz o ligamento iliolombar arrancar a ponta do processo transverso de L5.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.34"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS; Anatomia e biomecânica do anel; Imagem."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "alerta": "D oficial preservada como sinal sugestivo. O resumo registra valor limitado da avulsão de L5: apenas 19% das lesões verticalmente instáveis a apresentavam numa série, e ela pode acompanhar outros padrões. Não confirma nem exclui instabilidade isoladamente.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Classificação de YOUNG e BURGESS",
+      "Anatomia e biomecânica do anel",
+      "Imagem"
+     ],
+     "blocos": [
+      "classificacao-de-young-e-burgess-3830ff73",
+      "anatomia-e-biomecanica-do-anel-9eb66b24",
+      "imagem-0a1f5cef",
+      "classificacao-de-young-e-burgess-ebd35d3b"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "3f0035e12f7149093f2bf85e03f38eedd2f78bf6c65bd860a28c6e5ea307b265"
+    }
+   ],
+   "questaoSha256": "1665203c5e4815bbe4263d0025a00312f475e7f3674dabd0d06d2c6df41489ce",
+   "comentarioSha256": "4be4f463863f4af20ba9628f418aacf098770b10ba4cb326ea1b31ff5342cfba"
+  }
  },
  "trauma-0257": {
   "conceito": "**Dor desproporcional, dor ao estiramento passivo e parestesia são sinais que devem levantar suspeita, mesmo com pulso presente.** A pressão capaz de comprometer a microcirculação é menor que a necessária para interromper o pulso arterial. Por isso, não se deve esperar perda de pulso para reconhecer o risco de isquemia muscular.\n\nO trio da alternativa correta não significa que todos os sinais sejam precoces ou sensíveis. A dor costuma aparecer primeiro no paciente alerta; parestesia e, sobretudo, paralisia chegam tarde e têm baixa sensibilidade. Ausência desses achados não exclui a síndrome, especialmente em um paciente inconsciente ou com exame pouco confiável.\n\nO resumo apresenta limitações da clínica isolada e recomenda monitorização contínua nos pacientes de risco. Já um quadro com sinais claros e múltiplos pede fasciotomia urgente, sem transformar a medição em requisito que atrase o tratamento. A interpretação depende do estágio e da confiabilidade do exame.\n\n**Na Biblioteca, leia “Diagnóstico clínico: por que os sinais chegam tarde”.** Use os sinais para suspeitar e acompanhar, mas não faça da ausência de pulso uma condição necessária para agir.",
@@ -6732,15 +6939,49 @@
   "conferido": false
  },
  "trauma-0284": {
+  "conceito": "Ao encontrar uma fratura do anel pélvico, não concentre toda a avaliação na bacia: a lesão associada mais comum na série resumida é **torácica**, alternativa A, presente em cerca de **63%**.\n\nO trauma que rompe o anel pode atingir simultaneamente tórax, cabeça, abdome e membros. O resumo informa lesões de ossos longos em 50%, cabeça e órgãos sólidos em 40% e coluna em 25%. Esses grupos podem se sobrepor; não são parcelas que devam somar 100% (Rockwood, 10ª ed., cap. 50, “O que vem junto”).\n\n**A pelve pode sangrar e ainda assim não ser a única ameaça.** A maioria das mortes discutidas no capítulo é atribuída a lesões cranianas, torácicas ou abdominais, e a hipotensão exige procura sistemática das fontes. Reconhecer uma fratura grave não deve encerrar o atendimento do politraumatizado.\n\nBexiga e uretra são associações características da lesão anterior pela proximidade da sínfise, mas seu destaque anatômico não as torna as mais frequentes. A pergunta exige comparar frequência, não escolher a estrutura mais vizinha.",
+  "correta": "**A: tórax.** É o local mais frequente entre as lesões associadas apresentadas, com 63%. A resposta reforça a necessidade de avaliação global do trauma.",
   "incorretas": {
-   "B": "A fratura do fêmur ocorre, mas é menos frequente que as lesões do tórax.",
-   "C": "A lesão da bexiga é menos frequente que as torácicas.",
-   "D": "A lesão da coluna lombar ocorre, sobretudo com o sacro, mas é menos frequente."
+   "B": "**Fratura de fêmur é uma associação possível, mas não supera o tórax.** O resumo informa 50% para ossos longos em conjunto, já abaixo dos 63% torácicos; não autoriza atribuir esse total apenas ao fêmur.",
+   "C": "**A bexiga fica perto da fratura anterior, mas a frequência é menor.** Lesões de bexiga e uretra aparecem em 6% a 15% conforme a gravidade, sem ultrapassar as torácicas.",
+   "D": "**Coluna também precisa ser investigada, mas não lidera a lista.** O resumo cita 25% para coluna como grupo. Não se deve transferir esse número especificamente à lombar nem promovê-la à associação mais comum."
   },
-  "conceito": "A **fratura do anel pélvico** de alta energia quase nunca vem sozinha. As lesões associadas são a principal causa de morte nesses pacientes.\n\n**A associação mais comum**: as lesões do **tórax** (fraturas de costelas, contusão pulmonar, hemotórax e pneumotórax). O mesmo impacto que quebra a pelve atinge o tronco.\n\n**As outras associações**:\n\n**cabeça**: traumatismo cranioencefálico;\n\n**abdome**: lesões de fígado e baço;\n\n**ossos longos**, como o fêmur;\n\n**coluna lombar**, sobretudo com as fraturas do sacro;\n\n**trato urinário**: **bexiga** e **uretra** (esta mais no homem, com sangue no meato e próstata alta); menos frequentes que as do tórax.\n\n**A abordagem**: atendimento pelo **ATLS**, com prioridade para via aérea, respiração e circulação. A pelve instável com choque recebe **cinta pélvica** de imediato, e a busca das lesões associadas é sistemática.\n\n**Na prova**: a lesão associada mais comum às fraturas do anel pélvico localiza-se no **tórax**.",
-  "correta": "O impacto de alta energia que quebra a pelve atinge também o tórax, a associação mais frequente.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Lesões associadas e mortalidade; Lesões urológicas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Lesões associadas e mortalidade",
+      "Lesões urológicas"
+     ],
+     "blocos": [
+      "lesoes-associadas-e-mortalidade-94094495",
+      "lesoes-associadas-e-mortalidade-99d29fae",
+      "lesoes-associadas-e-mortalidade-2b895df9",
+      "lesoes-associadas-e-mortalidade-523a7364",
+      "lesoes-associadas-e-mortalidade-2b606cd8",
+      "lesoes-associadas-e-mortalidade-743d66f6",
+      "lesoes-urologicas-cc173117",
+      "lesoes-associadas-e-mortalidade-81709eb2"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "d771a679d6c1fb3cfd0efe23db3e421adc56778fe25f9cc443a3825abb7893f4"
+    }
+   ],
+   "questaoSha256": "4e05591a5d3814f6ec3c8fa036df09856167a59630b59088ee879a12f786ddbe",
+   "comentarioSha256": "2bbe40cf54e2b3acd8fe7208493a262b05d31bef403e1d91cfad4d0e63f8f659"
+  }
  },
  "trauma-0285": {
   "incorretas": {
@@ -6776,15 +7017,43 @@
   "conferido": false
  },
  "trauma-0288": {
+  "conceito": "A **zona I de Denis** fica na **porção lateral do sacro, na asa**, e é a **mais comum**. A alternativa C combina corretamente localização e frequência.\n\nA referência anatômica são os **forames sacrais**. Um traço lateral a eles é zona I; quando passa pelos forames, é zona II; quando alcança a região medial e o canal, é zona III. A asa lateral reúne quase metade dos casos na descrição do resumo, enquanto a zona III é a menos frequente, com aproximadamente 16% (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\nO risco neurológico segue o sentido oposto à frequência. A zona I tem risco baixo, mas não inexistente; a zona III ameaça raízes e cauda equina e chega a 60% de lesão neurológica. Não se deve confundir “mais comum” com “mais grave”.\n\nTambém não basta chamar toda lesão de asa de estável. O traço completo, da cortical anterior à posterior, a associação anterior e o desvio influenciam a estabilidade do anel.",
+  "correta": "**C: porção lateral e são as mais comuns.** A zona I é lateral aos forames, na asa, e responde por quase metade das fraturas na descrição do capítulo.",
   "incorretas": {
-   "A": "**Frequência errada.** A zona I é lateral, mas é a mais comum, e não a mais rara.",
-   "B": "**Descreve a zona III.** A porção central é a zona III, que é a mais rara, mas não é a zona I.",
-   "D": "**Zona errada.** A porção central é a zona III, rara e de maior risco neurológico."
+   "A": "**A localização está correta; a frequência, invertida.** A zona lateral é a mais comum, não a mais rara. O grupo menos frequente é o medial, zona III.",
+   "B": "**Combina características de outra zona.** A região medial relacionada ao canal é zona III e é menos comum. Não corresponde à asa lateral da zona I.",
+   "D": "**Acerta a ideia de maior frequência e a coloca no lugar errado.** A zona I mais frequente é lateral aos forames; a localização medial não pertence a ela."
   },
-  "conceito": "**A classificação de Denis.** Divide as fraturas do **sacro** em três zonas verticais, pela relação do traço com os **forames sacrais**. Quanto mais **medial** o traço, **maior** o risco neurológico e **menor** a frequência.\n\n**As três zonas.** **Zona I (transalar)**: traço **lateral** aos forames, pela asa do sacro. É a **mais comum** (cerca de metade) e tem o menor risco neurológico, em torno de **6%**; quando há lesão, costuma ser da raiz de **L5**, que cruza a asa (a \"lesão do viajante\"). **Zona II (transforaminal)**: traço **pelos forames**; cerca de um terço dos casos, risco neurológico de cerca de **28%**, com radiculopatias de S1 e S2 e **ciatalgia**. **Zona III (central)**: traço **medial** aos forames, pelo canal sacral; a **mais rara**, com risco neurológico acima de **50%**, incluindo disfunção **vesical, intestinal e sexual**.\n\n**As fraturas em U e H.** As fraturas **transversas** da zona III, combinadas com traços verticais bilaterais, formam os padrões em **U** ou **H**, a **dissociação espinopélvica**: a coluna e o sacro superior se separam da pelve. Ocorrem em quedas de altura e suicídio por salto (\"fratura do saltador\"), são frequentemente perdidas e exigem fixação **lombopélvica** ou triangular.\n\n**A imagem e o tratamento.** A **tomografia** é essencial, pois o sacro é mal visto na radiografia. Fraturas estáveis da zona I, parte de lesões pélvicas de compressão lateral, vão bem sem cirurgia. Fraturas instáveis verticalmente pedem **parafusos iliossacrais** ou fixação lombopélvica, e lesões neurológicas com compressão, **descompressão**.\n\n**Na prova:** Denis **I** = **lateral** (transalar), **mais comum**, menos lesão neurológica; **II** foraminal; **III** central, mais rara e mais grave.",
-  "correta": "**Porção lateral e são as mais comuns.** A zona I é transalar, lateral aos forames, corresponde a cerca de metade das fraturas do sacro e tem o menor risco neurológico.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-96ec0312",
+      "fraturas-do-sacro-f07d590a",
+      "fraturas-do-sacro-66c993cf"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "4034ab3c789fd22c9d07b23c949072a4386836498f822bd55589680df03cd6f5"
+    }
+   ],
+   "questaoSha256": "4cfd43d718a4c14f9037973cb85b06f4ca5dbb01935461f6ccbce1de6e207f3d",
+   "comentarioSha256": "f70c786216ebba0789ca17de1c144d69bf4559485eccc45e55b345939958b9bd"
+  }
  },
  "trauma-0290": {
   "conceito": "A vertebroplastia injeta cimento no corpo vertebral. Na discussão do capítulo, seu objetivo é **aliviar dor em pacientes selecionados**; não é uma técnica de correção de deformidade ou de recuperação de altura. A cifoplastia, ao criar antes uma cavidade com balão, tem proposta de recuperar altura, com evidência limitada.\n\nO gabarito oficial acrescenta **“prevenir novo colapso do corpo”**, alternativa D. Esse objetivo não é afirmado como benefício demonstrado no resumo consultado; o texto inclusive discute a possibilidade de refratura. A resposta da banca foi preservada, mas não deve ser convertida numa garantia de que o cimento impede novo colapso (resumo do Rockwood, 10ª ed., cap. 49, “Vertebroplastia e cifoplastia”).\n\nA evidência é controversa: o resumo relata ensaios com procedimento simulado sem vantagem e posição contrária à vertebroplastia de rotina, além de estudos favoráveis em situações selecionadas. A prática dos autores considera a cimentação indicação relativa para dor intensa persistente após tratamento conservador.\n\nLeia essa seção no resumo da Biblioteca para distinguir o efeito analgésico discutido, o objetivo atribuído pela banca e os limites da evidência.",
@@ -7749,18 +8018,46 @@
   "conferido": false
  },
  "trauma-0333": {
+  "conceito": "O parafuso iliossacral pode lesar a **raiz de L5**, alternativa B, se sair pela face anterior ou anterossuperior da asa sacral. A raiz repousa sobre essa superfície, perto do corredor de fixação.\n\nO implante precisa atravessar um caminho ósseo entre limites neurais e vasculares. Na **outlet**, conferem-se forames e placa terminal; na **inlet**, a cortical anterior; no **perfil**, a densidade cortical do ilíaco e o túnel de S1 delimitam o corredor. A instrumentação deve permanecer atrás da densidade cortical associada à asa e à frente do túnel da raiz de S1 (Rockwood, 10ª ed., cap. 50, “O parafuso iliossacral”).\n\n**Zona II não transforma S1 automaticamente na resposta.** A fratura transforaminal pode ameaçar raízes sacrais, mas a pergunta trata do risco técnico do parafuso no corpo de S1 e da raiz situada sobre a asa. São mecanismos de lesão relacionados, mas diferentes.\n\nA redução deve preceder a passagem definitiva. Sacro mal reduzido altera o corredor; cominuição foraminal também exige cautela com compressão excessiva e fragmentos que ameacem as raízes. Uma única projeção aparentemente boa não garante segurança em três dimensões.",
+  "correta": "**B: L5.** A raiz repousa na face anterior da asa e pode ser atingida se o parafuso escapar desse limite, inclusive na asa contralateral em trajetos longos. O controle precisa combinar as projeções.",
   "incorretas": {
-   "A": "A raiz de L4 fica acima do corredor do parafuso.",
-   "C": "A raiz de S1 fica no forame abaixo do parafuso, menos citada como o risco principal.",
-   "D": "A raiz de S2 fica abaixo do corpo de S1, fora do trajeto."
+   "A": "**L4 não é a raiz que a fonte coloca sobre a asa.** A pergunta não pede qualquer raiz lombar, mas aquela diretamente exposta ao escape anterior do parafuso; a relação anatômica descrita é com L5.",
+   "C": "**S1 é um limite importante, mas de outro lado do corredor.** O túnel de S1 precisa ser respeitado; invadi-lo também é perigoso. A raiz clássica em risco sobre a asa, porém, é L5.",
+   "D": "**S2 não substitui a relação da asa com L5.** Seu nível pode oferecer um corredor alternativo para fixação, especialmente no dismorfismo. A mudança de nível exige planejamento, não altera a resposta para o risco anatômico perguntado."
   },
-  "conceito": "O **parafuso iliossacral** percutâneo fixa as fraturas e luxações posteriores do anel pélvico. Ele entra pela face lateral do ilíaco e atravessa a **asa do sacro** até o **corpo de S1**.\n\n**O corredor seguro é estreito**:\n\n**em cima**: a **asa do sacro** (e, sobre ela, a **raiz de L5**, que desce apoiada na asa a caminho da pelve);\n\n**embaixo**: o **forame de S1**, com a raiz de S1;\n\n**à frente**: os vasos ilíacos;\n\n**atrás**: o canal sacral.\n\n**O risco na zona 2 de Denis** (fratura através dos forames): a fratura pode desviar o sacro, e a **compressão** com o parafuso pode fechar os forames. O parafuso que sai **acima** e **à frente** da asa lesa a **raiz de L5**; o que entra no forame lesa a de S1.\n\n**Como evitar**: incidências de **entrada (inlet)**, **saída (outlet)** e **perfil** do sacro na fluoroscopia, atenção à **displasia sacral** (asa inclinada) e não comprimir demais as fraturas da zona 2 (preferir parafusos de posicionamento, sem compressão).\n\n**Na prova**: o parafuso iliossacral em S1 na zona 2 de Denis tem risco de lesar a raiz de **L5**.",
-  "correta": "A raiz de L5 corre sobre a asa do sacro, e o parafuso que escapa por cima e à frente da asa a lesa.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fixação do anel posterior"
+     ],
+     "blocos": [
+      "fixacao-do-anel-posterior-9fa25c75",
+      "fixacao-do-anel-posterior-667be55c",
+      "fixacao-do-anel-posterior-972aa15f",
+      "fixacao-do-anel-posterior-cd893461",
+      "fixacao-do-anel-posterior-3552d5cd",
+      "fixacao-do-anel-posterior-a1e506e3"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "2f6c9f158de5bd72bd380d3394f47366a6415f58dfdc8587dc05730ebf596710"
+    }
+   ],
+   "questaoSha256": "d13161f5f965e9d409b41303cdcb7e5a5bfb04fa12e542ffe3893d6d17a9ea6a",
+   "comentarioSha256": "47b86dd177f6c91d77d7984114db10c5700cfe455f3981ead5196b9963e88e2e"
+  }
  },
  "trauma-0334": {
   "incorretas": {
@@ -8248,18 +8545,42 @@
   }
  },
  "trauma-0423": {
+  "conceito": "O “sinal da lágrima” orienta a entrada do pino **supra-acetabular** entre as **tábuas interna e externa do ílio**, tendo o **topo da incisura isquiática maior** como referência inferior. A combinação é a da alternativa C.\n\nA imagem é obtida pela associação de **oblíqua obturadora com saída**, cada uma com aproximadamente 25 a 35 graus no resumo. A sobreposição das tábuas cria a lágrima; o pino deve seguir no corredor ósseo em direção ao pilar isquiático, acima da incisura maior (Rockwood, 10ª ed., cap. 50, “Fixador externo: crista ilíaca ou supra-acetabular”).\n\n**Uma vista localiza a entrada; outras confirmam o trajeto.** A oblíqua ilíaca verifica a relação com a incisura, e a obturadora com entrada ajuda a manter o pino entre as tábuas. A ponta deve parar no osso, sem atravessar a cortical distante e ameaçar estruturas que passam pela incisura maior.\n\nA posição supra-acetabular oferece boa pega e resistência à rotação, mas exige radioscopia e proteção de partes moles. Não se trata de perfurar até “sentir osso duro” nem de usar a lágrima como garantia para todo o comprimento do pino.",
+  "correta": "**C: tábuas interna e externa e topo da incisura ciática maior.** As duas tábuas formam a projeção do corredor, e a incisura maior é a referência inferior relevante para a trajetória.",
   "incorretas": {
-   "A": "**Falta a tábua externa.** A lágrima é formada pela sobreposição das duas tábuas, e não apenas da interna.",
-   "B": "**Incompleta e com incisura errada.** Falta a tábua externa, e o limite inferior é a incisura isquiática maior.",
-   "D": "**Incisura errada.** As duas tábuas estão certas, mas o fundo da gota é a incisura isquiática maior, e não a menor."
+   "A": "**A incisura está correta, mas falta uma parede do corredor.** A lágrima resulta da relação das duas tábuas, não da tábua interna isolada. O pino precisa permanecer entre ambas.",
+   "B": "**Reduz o corredor a uma tábua e troca a incisura.** A referência é formada por tábuas interna e externa acima da incisura maior; a menor não é o marco descrito para esse trajeto.",
+   "D": "**Reconhece as duas tábuas, mas muda o limite inferior.** O pino deve seguir acima da incisura isquiática maior. Trocar por menor desvia a referência anatômica da técnica."
   },
-  "conceito": "**O fixador supra-acetabular.** No controle de danos das lesões do **anel pélvico**, o fixador externo anterior pode usar pinos na **crista ilíaca** ou no **corredor supra-acetabular**. Os pinos supra-acetabulares entram logo acima da **espinha ilíaca anteroinferior** e seguem em direção à **articulação sacroilíaca**, por um corredor de osso denso entre as tábuas do ílio, acima do acetábulo e da **incisura isquiática maior**. Dão mais resistência que os pinos da crista e controlam melhor a rotação da hemipelve.\n\n**O sinal da lágrima.** Na radioscopia, com a incidência **oblíqua obturadora** combinada com a **de saída** (outlet), as **tábuas interna e externa** do ílio se sobrepõem formando uma **gota** (lágrima), cujo fundo é o **topo da incisura isquiática maior**. Colocar o pino **dentro da gota** garante que ele passe entre as duas corticais, sem sair para dentro da pelve, sem entrar na articulação do quadril e sem descer à incisura, onde correm os **vasos glúteos superiores** e o nervo glúteo superior. Uma incisão **ilíaca oblíqua** (alar) confirma que o pino está acima do acetábulo.\n\n**As estruturas em risco.** O **nervo cutâneo femoral lateral**, que passa perto da espinha ilíaca anterossuperior e pode ser lesado na incisão. A **articulação do quadril**, se o pino for baixo demais. Os vasos da incisura, se o pino sair pelo fundo da gota. A pele e a infecção do trajeto, nos pacientes obesos.\n\n**Quando usar.** Nas lesões **rotacionalmente instáveis** (livro aberto, compressão lateral) como fixação provisória ou definitiva anterior. Nas lesões **verticalmente instáveis** (cisalhamento vertical), o fixador anterior sozinho não controla a hemipelve; é preciso tração ou fixação posterior.\n\n**Na prova:** o **sinal da lágrima** = **tábuas interna e externa** do ílio sobrepostas, com o **topo da incisura isquiática maior** como limite inferior; o pino vai dentro da gota.",
-  "correta": "**Tábuas interna e externa do ílio e o topo da incisura isquiática maior inferiormente.** A gota formada pelas duas corticais sobrepostas, com o fundo no topo da incisura maior, marca o corredor seguro do pino.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.23"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel anterior."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fixação do anel anterior"
+     ],
+     "blocos": [
+      "fixacao-do-anel-anterior-bcde7119",
+      "fixacao-do-anel-anterior-061f31f9"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "e2f79378ca6b2efc3a42c32ca0cec7146cfcc2c9ec44960330a2e2ab4793aa9f"
+    }
+   ],
+   "questaoSha256": "2a2c7b536fd5f8eb4512c4ccd64f3ebd20180f299d7ed7c90d928f7b2be9bc1e",
+   "comentarioSha256": "bef6c03f65637ad1990b30277b4b3a0636373452f547eb8e3527a4ca2d25cc64"
+  }
  },
  "trauma-0424": {
   "incorretas": {
@@ -11515,15 +11836,46 @@
   "conferido": false
  },
  "trauma-0699": {
+  "conceito": "A associação mais frequente apresentada é a **lesão torácica**, alternativa A. O dado do resumo é **63%**, acima de fraturas de ossos longos, lesões intestinais e lesões vesicais.\n\nEssa frequência ajuda a não restringir o atendimento ao local que chama mais atenção na radiografia. O impacto que rompe o anel também atinge cabeça, tórax, abdome e membros; os grupos se sobrepõem e o quadro hemodinâmico exige investigar múltiplas fontes (Rockwood, 10ª ed., cap. 50, “Lesões associadas e mortalidade”).\n\nOs números comparados precisam manter seus denominadores: **ossos longos 50%**, **intestino até 14%** e lesões de **bexiga e uretra 6% a 15%** conforme gravidade. O último intervalo não é uma taxa isolada de bexiga, mas ainda deixa claro por que ela não lidera a comparação.\n\n**Ser menos frequente não significa ser menos urgente.** Uma lesão intestinal ou urinária muda contaminação, necessidade de reparo e escolha da fixação. O item pergunta qual aparece mais, e não qual pode exigir prioridade num paciente específico.",
+  "correta": "**A: lesão torácica.** É a associação mais comum nos dados apresentados, com 63%. A resposta reforça a avaliação sistemática do politraumatizado, sem hierarquizar a urgência apenas por frequência.",
   "incorretas": {
-   "B": "As fraturas de ossos longos ocorrem, mas menos que as lesões torácicas.",
-   "C": "A perfuração de alça intestinal é rara.",
-   "D": "A lesão vesical é menos frequente que as torácicas."
+   "B": "**É frequente, mas vem abaixo do tórax.** O resumo cita 50% para ossos longos, contra 63% para tórax. A presença de uma fratura importante de membro não deve encerrar a busca torácica.",
+   "C": "**Lesão intestinal é menos comum e pode ser grave.** O capítulo cita até 14% para intestino. A possibilidade de contaminação muda o manejo, mas não a coloca à frente das lesões torácicas em frequência.",
+   "D": "**A proximidade da sínfise explica a associação, não sua liderança.** Bexiga e uretra somam 6% a 15% nos dados descritos; lesão vesical isolada não supera a frequência torácica."
   },
-  "conceito": "A **fratura da pelve** de alta energia é um marcador de **trauma grave**. O mesmo impacto que quebra a pelve atinge outras regiões, e as lesões associadas determinam boa parte da mortalidade.\n\n**A lesão associada mais comum**: a **lesão torácica**: fraturas de costelas, contusão pulmonar, hemotórax e pneumotórax.\n\n**As outras associações**:\n\n**traumatismo cranioencefálico**;\n\n**fraturas de ossos longos**, sobretudo do fêmur;\n\n**lesões abdominais** (fígado, baço, intestino);\n\n**lesões do trato urinário**: **bexiga** e **uretra** (esta mais no homem, com sangue no meato);\n\n**lesões da coluna**, sobretudo lombar.\n\n**A abordagem**: pelo **ATLS**; na pelve instável com choque, **cinta pélvica** imediata, reposição balanceada, **FAST** e busca sistemática das lesões associadas. A hemorragia pélvica tem origem **venosa** na maioria; a arterial pede angioembolização.\n\n**Na prova**: a lesão associada mais comum à fratura de pelve é a **lesão torácica**.",
-  "correta": "O impacto de alta energia que quebra a pelve atinge também o tórax, a associação mais frequente.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Lesões associadas e mortalidade; Lesões urológicas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Lesões associadas e mortalidade",
+      "Lesões urológicas"
+     ],
+     "blocos": [
+      "lesoes-associadas-e-mortalidade-99d29fae",
+      "lesoes-associadas-e-mortalidade-2b895df9",
+      "lesoes-associadas-e-mortalidade-d3f4f11c",
+      "lesoes-urologicas-cc173117",
+      "lesoes-associadas-e-mortalidade-94094495"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "e062f7f3d2ef631da9d067f0601b515a8bf79438c24e97632ba29e8337ec63e5"
+    }
+   ],
+   "questaoSha256": "618c3e244990deefaa01e4eccb8083d834db9d1ff725c7f95dd15f0ea6e38cc8",
+   "comentarioSha256": "f652e43a049e6d8feb0d333000cc33f585d37a5e172b7285fe9639caf25f35f2"
+  }
  },
  "trauma-0700": {
   "conceito": "O fragmento distal do fêmur tende a ficar em **varo e angulado para trás**, alternativa A. São dois planos de deformidade: no AP, o eixo coronal; no perfil, a báscula posterior do segmento que contém os côndilos.\n\nO capítulo descreve contração e espasmo de quadríceps, posteriores da coxa e adutores produzindo encurtamento e varo. Já as cabeças dos gastrocnêmios, originadas atrás dos côndilos, puxam o fragmento distal para trás, com angulação de ápice posterior. A deformidade final também depende do desvio criado no momento do trauma; as forças musculares ajudam a mantê-la e a torná-la previsível (resumo do Rockwood, 10ª ed., cap. 58, “Mecanismo e deformidade”).\n\nIsso orienta a redução. Recuperar comprimento é necessário, mas não basta se o fragmento continua caído no perfil. O capítulo descreve paralisia muscular, distrator e rolo de apoio para vencer as forças; a cortical posterior, quando oferece uma referência utilizável, ajuda a guiar a redução sagital na técnica com placa.\n\nHá uma distinção importante: **o desvio da fratura fresca não é necessariamente o mesmo erro criado pela fixação**. O resumo descreve valgo como um desvio frequente nas placas mal aplicadas e chama atenção também para rotação externa e encurtamento. Uma placa pode impor uma deformidade que não era a tendência muscular original.\n\nNo resumo da Biblioteca, compare a deformidade muscular com os erros da síntese. A lição é controlar AP, perfil, comprimento e rotação antes de aceitar a montagem; a presença de um implante não garante que essas dimensões tenham sido restauradas.",
@@ -11910,15 +12262,45 @@
   "conferido": false
  },
  "trauma-0718": {
+  "conceito": "Na **compressão anteroposterior tipo II**, a frente abriu, mas os **ligamentos sacroilíacos posteriores continuam íntegros**, alternativa C. Essa continuidade explica a combinação de **instabilidade rotacional e estabilidade vertical**.\n\nA lesão começa pela sínfise e progride para a região anterior da sacroilíaca. No modelo clássico, sacroespinhoso, sacrotuberoso e sacroilíacos anteriores falham, enquanto o setor posterior mantém a dobradiça. Se ele também romper, a lesão progride para CAP III, instável nos dois planos (Rockwood, 10ª ed., cap. 50, “Compressão anteroposterior: o livro aberto”).\n\n**O corte de 2,5 cm é uma referência clássica, com variação.** O resumo relata experimentos em que a ruptura anterior ocorreu em amplitudes diferentes e em que os ligamentos acessórios não falharam em todos os casos. A anatomia posterior e a estabilidade real devem ser avaliadas; não se deduz o estado de cada ligamento apenas de uma régua na sínfise.\n\nA compressão lateral, por outro lado, fecha o lado do impacto e impacta a asa sacral. Separar esses movimentos ajuda a eliminar distratores que misturam um achado verdadeiro de outro mecanismo.",
+  "correta": "**C: ligamentos sacroilíacos posteriores intactos.** Eles contêm a translação vertical e funcionam como dobradiça, apesar da abertura anterior e da instabilidade rotacional.",
   "incorretas": {
-   "A": "A fratura sacral no lado do impacto é da compressão lateral.",
-   "B": "O desvio vertical da hemipelve é do cisalhamento vertical.",
-   "D": "A diástase de até 2,5 cm define a CAP I; na CAP II ela é maior."
+   "A": "**A impacção sacral no lado do impacto é típica da compressão lateral.** Na CAP, a rotação é externa e a lesão anterior abre. Não é essa impacção que define o tipo II.",
+   "B": "**Subida da hemipelve indica perda de contenção vertical.** O tipo II mantém os ligamentos posteriores. Desvio vertical exige investigar ruptura posterior completa, CAP III, cisalhamento vertical ou padrão combinado.",
+   "D": "**Até 2,5 cm corresponde ao limite clássico da CAP I.** A CAP II costuma ser associada à abertura maior e à lesão anterior sacroilíaca. O limite tem variação, mas não deve ser invertido na classificação clássica."
   },
-  "conceito": "**Young e Burgess** dividem as lesões por **compressão anteroposterior** (CAP, o \"livro aberto\") em três graus:\n\n**CAP I**: diástase da sínfise **até 2,5 cm**; ligamentos sacroilíacos anteriores **estirados**, mas íntegros; estável;\n\n**CAP II**: diástase **maior que 2,5 cm**; ruptura dos ligamentos **sacroilíacos anteriores**, sacroespinhoso e sacrotuberoso; os ligamentos sacroilíacos **posteriores** ficam **intactos** e funcionam como a dobradiça do livro: a lesão é **instável na rotação**, mas **estável na vertical**;\n\n**CAP III**: ruptura **completa**, inclusive dos ligamentos sacroilíacos **posteriores**; instável na rotação e na vertical; muito sangramento.\n\n**As outras categorias**:\n\n**compressão lateral**: fratura por impacção do sacro **no lado do impacto** e ramos com traço horizontal;\n\n**cisalhamento vertical**: **desvio vertical** da hemipelve.\n\n**A conduta na CAP II**: fechar o livro (cinta pélvica, rotação interna dos membros) e fixar a sínfise (placa) e, muitas vezes, a sacroilíaca anterior.\n\n**Na prova**: a CAP II é caracterizada pelos **ligamentos sacroilíacos posteriores intactos**.",
-  "correta": "Na CAP II, os sacroilíacos posteriores ficam íntegros e funcionam como dobradiça: instável só na rotação.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Classificação de YOUNG e BURGESS"
+     ],
+     "blocos": [
+      "classificacao-de-young-e-burgess-91c756d4",
+      "classificacao-de-young-e-burgess-e761b1de",
+      "classificacao-de-young-e-burgess-466f1bcb",
+      "classificacao-de-young-e-burgess-cf3bad25",
+      "classificacao-de-young-e-burgess-ebd35d3b"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "e88296cba279e56b10cf588eda7056345e1706568d42f175f253a06706df6ea2"
+    }
+   ],
+   "questaoSha256": "83da9f54eb30b88c5acd9156994508c5f00ff96225e432f3354f9f1f9314edc0",
+   "comentarioSha256": "aa689da7bf353ad5ed673e173e0a71cc940cfbf632fde3c9780a51012f6868be"
+  }
  },
  "trauma-0719": {
   "incorretas": {
@@ -12466,15 +12848,46 @@
   "conferido": false
  },
  "trauma-0756": {
+  "conceito": "A combinação escolhida é **homens e ruptura extraperitoneal**, alternativa B. Ela reúne duas informações relacionadas, mas distintas: a maior vulnerabilidade da uretra masculina e o tipo mais comum de ruptura da bexiga.\n\nO resumo descreve lesões de bexiga e uretra em **6% a 15%** das fraturas do anel, conforme a gravidade. No homem, a uretra posterior sofre sobretudo por **cisalhamento**; a uretra feminina é curta e protegida pela relação com a vagina. Nas rupturas vesicais, a **extraperitoneal representa cerca de 60%**, a intraperitoneal 30% e as combinadas 10% (Rockwood, 10ª ed., cap. 50, “Lesões urológicas”).\n\n**Extraperitoneal não descreve uma região da uretra.** É a ruptura vesical que comunica a urina com a área da fratura anterior. A intraperitoneal costuma envolver o teto da bexiga distendida e exige reparo urgente. Entender qual estrutura cada termo classifica evita decorar um par sem sentido anatômico.\n\nA investigação também é sequencial. Na suspeita de lesão uretral masculina, a uretrografia retrógrada avalia a uretra antes da sondagem vesical; com uretra íntegra, a cistografia estuda a bexiga. Se houver fixação interna anterior e ruptura extraperitoneal, o reparo conjunto ajuda a evitar urina no campo do implante.",
+  "correta": "**B: homens e extraperitoneal.** O primeiro termo corresponde à maior vulnerabilidade uretral masculina; o segundo, ao tipo mais comum de ruptura vesical. Não significa que toda lesão urinária no homem seja vesical ou extraperitoneal.",
   "incorretas": {
-   "A": "O predomínio masculino está certo, mas a ruptura vesical mais comum é extraperitoneal.",
-   "C": "A lesão é mais comum em homens, e a ruptura mais comum é extraperitoneal.",
-   "D": "A ruptura extraperitoneal está certa, mas a lesão é mais comum em homens."
+   "A": "**Acerta o sexo e troca a frequência vesical.** A ruptura intraperitoneal envolve sobretudo o teto da bexiga e representa cerca de 30%, abaixo dos 60% extraperitoneais. Sua urgência não a torna mais frequente.",
+   "C": "**Inverte os dois componentes.** O resumo destaca a maior vulnerabilidade uretral masculina e a predominância extraperitoneal nas rupturas da bexiga. Mulher e intraperitoneal não formam o par mais comum descrito.",
+   "D": "**Acerta o tipo vesical, mas não o sexo.** A ruptura extraperitoneal é a mais comum; a proteção anatômica da uretra feminina ajuda a explicar por que o componente sexual da resposta favorece homens."
   },
-  "conceito": "Na **fratura do anel pélvico**, as lesões **geniturinárias** acompanham as fraturas **anteriores** (ramos e sínfise), sobretudo as de alta energia e as com diástase da sínfise.\n\n**Mais comuns em homens**: a **uretra** masculina é **longa** e tem uma porção **fixa** (membranosa), presa ao diafragma urogenital, que **rompe** quando a pelve se desloca. A uretra feminina é curta e móvel.\n\n**A lesão mais comum da bexiga**: a ruptura **extraperitoneal**, causada por fragmentos ósseos dos ramos ou pela tração dos ligamentos pubovesicais. A ruptura **intraperitoneal** (do teto da bexiga) vem de um golpe direto no abdome com a bexiga **cheia** e é menos ligada à fratura.\n\n**Os sinais de alerta da lesão da uretra**: **sangue no meato**, hematoma no períneo ou no escroto, **próstata alta** ou não palpável no toque retal, dificuldade para urinar.\n\n**A conduta**: **não passar sonda vesical** às cegas com suspeita de lesão uretral; fazer **uretrografia retrógrada** primeiro. Se houver lesão, **cistostomia** suprapúbica. A cistografia (TC) avalia a bexiga.\n\n**Na prova**: a lesão geniturinária é mais comum em **homens**, e a mais comum é **extraperitoneal**.",
-  "correta": "A uretra masculina longa e fixa rompe com o desvio da pelve, e a ruptura da bexiga mais comum é extraperitoneal.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Lesões urológicas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Lesões urológicas"
+     ],
+     "blocos": [
+      "lesoes-urologicas-cc173117",
+      "lesoes-urologicas-65521dcd",
+      "lesoes-urologicas-f534c5ab",
+      "lesoes-urologicas-724ba368",
+      "lesoes-urologicas-b86cda60",
+      "lesoes-urologicas-656343a5"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "0c2a80a6ad5ed4ece714d15206388cd184d9e3d6e191997d51caa61d581a3bc6"
+    }
+   ],
+   "questaoSha256": "571eb4bfd3c97c87d65c404a01ee99c941d8e178c83ef2b9cc4fdcd32aff6ca5",
+   "comentarioSha256": "dc7e60d96386dcb7e9424cd168578e277f99610eb2b2287600ca0e99511e7e84"
+  }
  },
  "trauma-0757": {
   "incorretas": {
@@ -14080,15 +14493,46 @@
   "conferido": false
  },
  "trauma-0853": {
+  "conceito": "A fratura da **porção anterior da asa do sacro por impacção** aponta para **compressão lateral**, alternativa A. O lado atingido roda para dentro e esmaga o osso esponjoso da asa contra o restante do sacro.\n\nPense no anel fechando do lado do impacto: a força lateral empurra a hemipelve medialmente, os ramos anteriores fraturam e a asa sacral é comprimida. Esse é o padrão posterior típico da **CL I**. Na CL II, o traço chega à sacroilíaca pela asa do ilíaco e forma a lesão em crescente, uma fratura-luxação diferente (Rockwood, 10ª ed., cap. 50, “Compressão lateral”).\n\n**A localização não deve ser lida sem a morfologia.** O achado relevante é a impacção anterior da asa, não qualquer traço que passe pelo sacro. Uma fratura completa pode trazer instabilidade que não seria esperada de uma impacção incompleta; a TC e a associação com os ramos ajudam a definir isso.\n\nNa compressão anteroposterior, a hemipelve abre por rotação externa. No cisalhamento vertical, o componente predominante é a subida. A direção do desvio permite reconstruir o mecanismo sem confundir todos os traumas sacrais como equivalentes.",
+  "correta": "**A: compressão lateral.** A rotação interna da hemipelve impacta a região anterior da asa sacral. É a assinatura mecânica da CL I descrita no resumo.",
   "incorretas": {
-   "B": "A compressão anteroposterior abre a pelve e rompe os ligamentos sacroilíacos anteriores, sem impacção.",
-   "C": "O cisalhamento vertical produz fraturas verticais e deslocamento cranial da hemipelve.",
-   "D": "Compressão axial não é uma categoria de Young e Burgess."
+   "B": "**Abre o anel, em vez de impactar a asa por fechamento.** A CAP produz rotação externa e falha anterior, podendo progredir para ruptura posterior completa. Esse mecanismo não é o da impacção anterior típica solicitada.",
+   "C": "**O principal vetor é para cima.** O cisalhamento vertical desloca a hemipelve cranialmente e pode causar fratura completa do sacro. A impacção anterior da asa aponta para o componente de fechamento lateral.",
+   "D": "**Uma carga descrita apenas como axial não explica o padrão específico.** O resumo vincula a impacção anterior da asa à rotação interna por impacto lateral; o vetor vertical é discutido separadamente no cisalhamento. A resposta deve corresponder à morfologia, não à ideia genérica de carga."
   },
-  "conceito": "**Young e Burgess** classificam as lesões do anel pélvico pelo **vetor da força**, e cada vetor deixa uma marca no sacro e na sínfise:\n\n**compressão lateral** (CL): a força vem de lado e **fecha** a pelve; a marca posterior é a **fratura por impacção da asa do sacro**, no **córtex anterior** (CL I); os ramos fraturam com traço **horizontal**;\n\n**compressão anteroposterior** (CAP): a força **abre** a pelve como um livro; a sínfise se separa e os ligamentos sacroilíacos **anteriores** se rompem; não há impacção do sacro;\n\n**cisalhamento vertical** (CV): a hemipelve **sobe**; fraturas verticais do sacro ou ruptura completa da sacroilíaca, com avulsão do processo transverso de L5;\n\n**mecanismo combinado**: mistura dos anteriores.\n\n**Por que a compressão lateral impacta a asa**: a força lateral empurra a hemipelve contra o sacro, e o osso esponjoso da parte anterior da asa é **esmagado**.\n\n**A importância**: a CL I é geralmente **estável**; as CAP II e III e o CV são instáveis e sangram mais.\n\n**Na prova**: a fratura anterior da asa do sacro se relaciona à **compressão lateral**.",
-  "correta": "A força lateral empurra a hemipelve contra o sacro e esmaga a parte anterior da asa.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS; Fraturas do sacro."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Classificação de YOUNG e BURGESS",
+      "Fraturas do sacro"
+     ],
+     "blocos": [
+      "classificacao-de-young-e-burgess-ebd35d3b",
+      "classificacao-de-young-e-burgess-91c756d4",
+      "classificacao-de-young-e-burgess-e761b1de",
+      "classificacao-de-young-e-burgess-3830ff73",
+      "fraturas-do-sacro-66c993cf"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "5d19adcd42c6c1e10b7d5167a5358845bf466fe83bf3c4c35a3748f30854a158"
+    }
+   ],
+   "questaoSha256": "e97d3c81f5da2258eb884ae176bed957f2d69b8caf40927711f9e29c0d892227",
+   "comentarioSha256": "c26d26ba036c5c5c499c9fce3fc9cac9bd14cd622fea5bde453eb005f0439343"
+  }
  },
  "trauma-0854": {
   "conceito": "**O sinal da gaivota (gull sign).** Na radiografia do acetábulo, aparece como uma **depressão em forma de V** no **teto** do acetábulo, lembrando as **asas abertas de uma gaivota** em voo. Ele representa a **impacção** do osso subcondral do teto: a cabeça femoral, empurrada para dentro e para cima, **afunda** a superfície articular de carga.\n\n**Onde e em quem aparece.**\n- É típico do **idoso** com osso **osteoporótico**, após queda da própria altura.\n- Associa-se a padrões de fratura em que a cabeça é empurrada contra o teto, sobretudo com o componente **medial**: fraturas da **coluna anterior** com hemitransversa posterior, **transversas** e de **ambas as colunas** no idoso.\n- Também é descrito com fraturas que envolvem a **coluna posterior** e a parede posterior com impacção marginal.\n\n**Por que é um sinal de mau prognóstico.**\n- A superfície de carga está **esmagada**, e mesmo com a redução das colunas o teto pode continuar afundado.\n- A **fixação isolada** tem alto risco de **perda da redução**, artrose rápida e conversão para prótese.\n- Por isso, no idoso com sinal da gaivota, muitos autores indicam a **artroplastia total do quadril aguda** (com ou sem fixação das colunas), em vez da osteossíntese isolada.\n\n**As linhas de Letournel na radiografia.** Para ler o acetábulo, avaliam-se seis linhas no AP:\n1. Linha **iliopectínea**: coluna anterior.\n2. Linha **ilioisquiática**: coluna posterior.\n3. **Gota de lágrima** (teardrop).\n4. **Teto** do acetábulo (onde aparece o sinal da gaivota).\n5. Borda da **parede anterior**.\n6. Borda da **parede posterior**.\n\nComplementam-se com as incidências **alar** e **obturatriz** de Judet e com a **tomografia**.\n\n**Sobre esta questão.** A banca associou o sinal da gaivota à fratura da **coluna posterior**. A leitura mais aceita (Letournel e as demais questões deste acervo) é a de que o sinal representa a **impacção do teto acetabular**, um achado que pode acompanhar diferentes padrões, e não um tipo específico de coluna.",
@@ -15057,15 +15501,44 @@
   }
  },
  "trauma-0894": {
+  "conceito": "O nome histórico usado na pergunta corresponde à **separação entre o corpo e as asas do sacro**, alternativa B. O padrão relevante é a **dissociação espinopélvica**, frequentemente com traços em U ou H.\n\nDois traços verticais, em geral transforaminais, unem-se a um transversal. O segmento superior do sacro, ligado à coluna, perde continuidade com a parte que transmite carga à pelve. A hiperflexão lombossacra pode produzir cifose, impacção e compressão do canal (Rockwood, 10ª ed., cap. 50, “A dissociação espinopélvica”).\n\n**Uma luxação bilateral das sacroilíacas é outra configuração.** Na dissociação descrita, a ruptura atravessa o próprio sacro. Isso explica por que apenas dizer “lesão posterior” ou “sínfise aberta” não identifica a fratura: é preciso reconhecer a separação entre o segmento central superior e os componentes laterais.\n\nAs reconstruções sagitais da TC mostram a cifose que a AP e o corte axial podem esconder. Exame neurológico, função vesical e intestinal e sensibilidade perineal precisam ser avaliados, sem presumir que todo paciente terá o mesmo déficit.\n\nO resumo descreve esse padrão, mas não utiliza o epônimo histórico do enunciado. A referência sustenta a anatomia e a mecânica, não uma atribuição do termo ao livro.",
+  "correta": "**B: separação entre o corpo e as asas do sacro.** É a configuração de dissociação espinopélvica descrita como U ou H, com perda da continuidade entre coluna e pelve pelo sacro.",
   "incorretas": {
-   "A": "A dissociação das sacroilíacas é outra lesão, sem fratura do sacro em H.",
-   "C": "A lesão posterior com fratura lombar não define a fratura do suicida.",
-   "D": "A disjunção da sínfise com desvio vertical é o cisalhamento vertical."
+   "A": "**Troca uma ruptura no sacro por uma lesão das articulações.** Luxação das sacroilíacas pode ser gravemente instável, mas não é a mesma configuração de traços que separam corpo e asas.",
+   "C": "**É uma descrição ampla, sem o traço que define o padrão.** Lesão posterior pélvica pode coexistir com fratura lombar, mas essa associação não demonstra a dissociação através do sacro.",
+   "D": "**A sínfise e o desvio vertical não identificam a dissociação sacral.** Podem fazer parte de um anel instável, mas a pergunta exige reconhecer a separação do segmento sacral ligado à coluna."
   },
-  "conceito": "A **fratura do suicida** (suicidal jumper's fracture) é a fratura do **sacro** em quem salta ou cai de grande altura e aterrissa sentado ou de pé.\n\n**O padrão**: fraturas **verticais** bilaterais do sacro, pelas zonas das asas, unidas por uma fratura **transversa** do corpo, formando um **H**, um **U**, um lambda ou um Y.\n\n**O resultado**: a **separação entre o corpo do sacro** (preso à coluna lombar) **e as asas** (presas à pelve). É a **dissociação espinopélvica**: a coluna e a parte alta do sacro ficam soltas da pelve.\n\n**O mecanismo**: carga **axial** violenta com o quadril e a coluna em flexão; o corpo do sacro é empurrado para baixo e para a frente, entre as asas.\n\n**As consequências**: lesão das **raízes sacrais**, com disfunção da **bexiga**, do intestino e sexual; cifose do sacro.\n\n**O diagnóstico**: a fratura transversa passa despercebida no AP; o **perfil** do sacro e a **TC** com reconstrução sagital a mostram.\n\n**O tratamento**: **fixação lombopélvica** (parafusos lombares ligados ao ilíaco) ou parafusos iliossacrais em montagens selecionadas, com descompressão se houver déficit.\n\n**Na prova**: a fratura do suicida é a **separação entre o corpo e as asas do sacro**.",
-  "correta": "As fraturas verticais nas asas e a transversa no corpo do sacro separam o corpo, preso à coluna, das asas, presas à pelve.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Fixação do anel posterior."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro",
+      "Fixação do anel posterior"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-29ccf1ad",
+      "fraturas-do-sacro-5becff58",
+      "fixacao-do-anel-posterior-ad9b4cc7"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "07af8913af264453b24031705ca939543b83f5f120f9dd42c38fcaa87b956b17"
+    }
+   ],
+   "questaoSha256": "d2ba06cd5c8a2ec5092e8bac3111095f06580e392659f4693371e26a31960a57",
+   "comentarioSha256": "47ac7bf4db51af5d2d615804c9d810be13b50850f15cf9267f8eb54c830fe13d"
+  }
  },
  "trauma-0895": {
   "incorretas": {
@@ -15236,15 +15709,46 @@
   "conferido": false
  },
  "trauma-0902": {
+  "conceito": "A classificação **AO Spine C1** chama atenção para o envolvimento da **faceta articular L5-S1**, alternativa B. Essa articulação participa da ligação entre a coluna e o sacro; um traço que a compromete pode tornar a lesão espinopélvica instável.\n\nA classificação começa pela morfologia e acrescenta estado neurológico e modificadores. Entre as fraturas verticais, separar as que atingem a faceta das que a preservam ajuda a reconhecer perda de continuidade na junção lombopélvica (Rockwood, 10ª ed., cap. 50, “AO Spine: a faceta L5-S1”).\n\n**Não confunda faceta com processo transverso.** A avulsão do transverso de L5 pode ocorrer pela tração do iliolombar e serve como alerta para lesão do anel. Ela não é o critério que define C1. Da mesma forma, o pedículo pode importar como ponto de fixação numa montagem lombopélvica sem ser o elemento classificatório perguntado.\n\nAs escolhas de tratamento dependem também de desvio, cifose, corredores disponíveis e déficit. O código não substitui a leitura da TC, especialmente as reconstruções sagitais quando há suspeita de dissociação.",
+  "correta": "**B: faceta articular L5-S1.** É o envolvimento que o resumo destaca para C1 e para o possível comprometimento da estabilidade espinopélvica.",
   "incorretas": {
-   "A": "**Não define a instabilidade.** O pedículo de L5 pode fraturar, mas não é o elemento que caracteriza a lesão espinopélvica.",
-   "C": "**Lesão tipo A.** A transição sacrococcígea está abaixo da conexão espinopélvica e não a compromete.",
-   "D": "**Outro significado.** A avulsão do processo transverso de L5 sugere instabilidade vertical do anel pélvico, e não da conexão espinopélvica."
+   "A": "**Pedículo é relevante para a instrumentação, mas não define este tipo.** O capítulo descreve o pedículo de L5 como ponto habitual da fixação lombopélvica e L4 como alternativa se ele estiver fraturado. A classificação perguntada se refere à faceta L5-S1.",
+   "C": "**A transição sacrococcígea é mais baixa.** Fraturas baixas podem afetar raízes e função, mas não correspondem ao envolvimento da junção L5-S1 usado para reconhecer C1.",
+   "D": "**A avulsão do transverso é uma pista indireta.** Ela alerta para lesão do anel, com valor limitado para comprovar instabilidade vertical. Não substitui o critério anatômico da faceta."
   },
-  "conceito": "**A estabilidade espinopélvica.** A **coluna lombar** apoia-se no **sacro** pelo disco L5-S1 e pelas **facetas articulares L5-S1**, e o sacro se liga à pelve pelas **sacroilíacas**. As fraturas do sacro podem comprometer dois sistemas: o **anel pélvico** (estabilidade da pelve) e a **conexão espinopélvica** (ligação entre a coluna e a pelve).\n\n**A classificação AO das fraturas do sacro.** Organiza as lesões pelo que comprometem. **Tipo A**: lesões **baixas** (cóccix, sacrococcígea, traços transversos abaixo de S2) que não afetam nem o anel nem a conexão espinopélvica. **Tipo B**: fraturas **verticais** unilaterais (que correspondem às zonas de Denis), afetando o anel pélvico posterior. **Tipo C**: lesões que comprometem a **estabilidade espinopélvica**, como as fraturas em **U**, em **H** e as fraturas verticais que se estendem à região das **facetas L5-S1**. Um modificador descreve o envolvimento das facetas.\n\n**Por que a faceta L5-S1.** As facetas L5-S1 são a **ponte posterior** que transmite a carga da coluna ao sacro. Isler classificou as fraturas verticais do sacro pela relação com a faceta L5-S1: **lateral** a ela (não compromete a conexão), **através** dela, ou **medial** a ela (entrando no canal). Quando o traço atravessa ou fica medial à faceta, a coluna lombar pode **deslizar** sobre o sacro, e a lesão passa a ser **espinopélvica**, exigindo fixação **lombopélvica** (parafusos em L4-L5 ligados ao ilíaco) ou **triangular** (lombopélvica mais parafuso iliossacral).\n\n**Os distratores.** O **pedículo** e o **processo transverso** de L5 podem ser fraturados (a avulsão do transverso de L5 é sinal de lesão do ligamento iliolombar e de instabilidade pélvica vertical), mas não definem a instabilidade espinopélvica. A transição **sacrococcígea** é lesão do tipo A.\n\n**Na prova:** fraturas do sacro tipo **C** (AO) comprometem a estabilidade **espinopélvica**, sobretudo por envolver a **faceta L5-S1**; fixação lombopélvica.",
-  "correta": "**A faceta articular L5-S1.** O envolvimento dessa faceta, ponte de carga entre a coluna e o sacro, desconecta a coluna da pelve e gera instabilidade espinopélvica.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Classificação de YOUNG e BURGESS; Fixação do anel posterior."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro",
+      "Classificação de YOUNG e BURGESS",
+      "Fixação do anel posterior"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-91306294",
+      "classificacao-de-young-e-burgess-3830ff73",
+      "fixacao-do-anel-posterior-c72dbf06",
+      "fraturas-do-sacro-7d626e05"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "50b2c12280467cea80bc6881988227a3002c97230d10beade954d8b5ffa04eb8"
+    }
+   ],
+   "questaoSha256": "d1a911dc0a5889f84a5c943b4eb7371cec4bbc9ce32cb797cce37f1a0c326b4d",
+   "comentarioSha256": "127e1cde29e52956500e7c9dfec49d5d80c112eba160bf36a27d00f7dac5b933"
+  }
  },
  "trauma-0903": {
   "incorretas": {
@@ -15904,26 +16408,89 @@
   ]
  },
  "trauma-0934": {
+  "conceito": "Equimose nos **flancos** depois de trauma pélvico é o sinal de **Grey Turner**, associado a **hemorragia retroperitoneal**, alternativa B. O local da mancha ajuda a diferenciar esse sinal de outras alterações cutâneas e perineais do trauma.\n\nO sangue pode se distribuir pelo retroperitônio e aparecer como equimose lateral. Já o **sinal de Destot** é o hematoma palpável no períneo, acima do ligamento inguinal ou na raiz da coxa. São pistas de sangramento em regiões diferentes, e nenhum deles substitui a avaliação hemodinâmica e a investigação das fontes (Rockwood, 10ª ed., cap. 50, “O que o exame mostra”).\n\nA lesão de **Morel-Lavallée** tem outro mecanismo: pele e gordura descolam da fáscia, criando uma coleção de sangue e linfa. O exame pode mostrar flutuação, e a pele depende das conexões periféricas para permanecer viável. Não é simplesmente um nome alternativo para a equimose no flanco.\n\nNo trauma geniturinário, hematúria e sangramento uretral têm papel específico na investigação. A proximidade dessas lesões não permite usar Grey Turner para diagnosticar uma ruptura urinária ou um traço isolado dos ramos.",
+  "correta": "**B: hemorragia retroperitoneal.** A equimose nos flancos corresponde ao sinal de Grey Turner descrito no resumo. É uma pista de sangramento, sem localizar sozinha toda a lesão ou definir o tratamento.",
   "incorretas": {
-   "A": "**Inespecífico.** A fratura dos ramos pode sangrar, mas o sinal de Grey Turner indica o sangue retroperitoneal, e não a fratura em si.",
-   "C": "**Outra lesão.** A Morel-Lavallée é um desenluvamento fechado, com coleção flutuante sob a pele, e não equimose de flanco.",
-   "D": "**Outros sinais.** A lesão geniturinária aparece com sangue no meato, hematoma perineal e próstata alta."
+   "A": "**Uma fratura dos ramos pode coexistir, mas não é o significado específico do sinal.** A equimose de flanco aponta para sangue retroperitoneal; não identifica por si um traço anterior do anel.",
+   "C": "**Desenluvamento fechado cria coleção, não define Grey Turner.** Na Morel-Lavallée há separação entre pele/gordura e fáscia, com flutuação e risco cutâneo. O mecanismo e o achado são diferentes.",
+   "D": "**Lesão urinária exige sinais e exames próprios.** Hematúria e suspeita uretral orientam urologista, uretrografia ou cistografia. A equimose nos flancos não equivale a diagnóstico geniturinário."
   },
-  "conceito": "**O sangramento pélvico.** As lesões do **anel pélvico** de alta energia podem sangrar muito, e o sangue se acumula no **retroperitônio**, que comporta vários litros. A fonte mais comum é **venosa** (plexo **pré-sacral** e veias pélvicas) e **óssea** (superfícies fraturadas), responsável pela maior parte; cerca de 10 a 15% têm sangramento **arterial** (ramos da ilíaca interna, como a glútea superior e a pudenda interna).\n\n**Os sinais na pele.** O sangue retroperitoneal disseca os planos fasciais e aparece na pele depois de algumas horas a dias. **Sinal de Grey Turner**: equimose nos **flancos**, indicando **hemorragia retroperitoneal**. **Sinal de Cullen**: equimose **periumbilical**, também de sangue retroperitoneal ou intra-abdominal. **Sinal de Destot**: hematoma acima do ligamento inguinal ou no escroto e na coxa. **Sinal de Earle**: massa ou dor ao toque retal. **Sinal de Roux**: diminuição da distância entre o trocanter maior e a espinha púbica na fratura por compressão lateral.\n\n**Os distratores.** A **lesão de Morel-Lavallée** é um **desenluvamento** fechado: a pele e o subcutâneo se descolam da fáscia (geralmente sobre o trocanter maior), formando uma coleção de sangue e linfa; aparece como área flutuante, com hipoestesia, e aumenta o risco de infecção se a incisão atravessá-la. A lesão **geniturinária** se manifesta por **sangue no meato uretral**, hematoma perineal ou escrotal, próstata alta ao toque e hematúria; não se passa sonda vesical antes de uma **uretrografia** quando há suspeita.\n\n**O manejo do sangramento.** **Cinta pélvica** sobre os **trocânteres maiores**, reposição com hemoderivados (protocolo de transfusão maciça), **fixador externo** ou **clamp** pélvico, **tamponamento pré-peritoneal** (para o sangramento venoso) e **angioembolização** (para o arterial, especialmente com extravasamento de contraste na angiotomografia). O **REBOA** é uma ponte em alguns centros.\n\n**Na prova:** **Grey Turner** = equimose nos flancos = **hemorragia retroperitoneal**; Morel-Lavallée = desenluvamento; sangue no meato = lesão uretral.",
-  "correta": "**Hemorragia retroperitoneal.** O sangue acumulado no retroperitônio disseca os planos fasciais e aparece como equimose nos flancos.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Exame físico, fratura exposta e lesão de partes moles; Lesões urológicas."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Exame físico, fratura exposta e lesão de partes moles",
+      "Lesões urológicas"
+     ],
+     "blocos": [
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-72d397fe",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-be3b559d",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-81b52151",
+      "lesoes-urologicas-b86cda60",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-c26a1704"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "5a8c8fdca665b7c37d2c6ff5cbd74bf68b7031bb3da980d29238f12a210aaedb"
+    }
+   ],
+   "questaoSha256": "0d738d343ad12bad0e205a95f970b4aa939aa93f7c1fe2910d6b27fb23ff6b54",
+   "comentarioSha256": "18b7d763e7390cd90cec17608920cb45751cf4d68376bead8c32cfb34d052448"
+  }
  },
  "trauma-0935": {
+  "conceito": "No perfil do sacro, o parafuso deve permanecer **à frente da cortical posterior do corpo de S1**, alternativa C. Essa cortical forma a parede anterior do canal sacral; ultrapassá-la para trás ameaça o canal.\n\nO corredor seguro, porém, não tem apenas um limite. O resumo recomenda instrumentar **atrás da densidade cortical do ilíaco**, marco da asa relacionada à raiz de L5, **à frente do túnel de S1** e sem ultrapassar a cortical anterior do corpo, onde ficam estruturas vasculares à frente. Inlet, outlet e perfil são complementares (Rockwood, 10ª ed., cap. 50, “O parafuso iliossacral”).\n\n**A resposta da banca é um limite, não uma região inteira segura.** Estar anterior à parede posterior de S1 não impede que uma broca esteja anterior demais, alta demais ou dentro de um forame. A segurança depende de planejamento tomográfico, redução e conferência sequencial do trajeto.\n\nA alternativa que menciona a densidade cortical do ilíaco contém um marco real do resumo, mas precisa de uma relação direcional: o implante fica atrás dele. O disco residual S1-S2 pode sinalizar dismorfismo, exigindo estudar corredores, e não é uma superfície pela qual se deva passar indiscriminadamente.",
+  "correta": "**C: anterior à cortical posterior de S1.** Preserva o limite do canal situado atrás do corpo sacral. É o parâmetro escolhido oficialmente, que deve ser combinado aos demais limites para orientar a passagem.",
   "incorretas": {
-   "A": "A densidade cortical do ilíaco ajuda a ver a asa, mas não protege o canal.",
-   "B": "Posterior ao promontório ainda pode invadir o canal; a referência é a cortical posterior de S1.",
-   "D": "O disco residual entre S1 e S2 é uma referência de altura, não o limite de segurança."
+   "A": "**É um marco verdadeiro, mas a frase não define de qual lado ficar.** O resumo usa a densidade cortical do ilíaco como referência e orienta passar atrás dela para proteger a região da asa onde repousa L5. Não se deve ensinar que esse marco é irrelevante.",
+   "B": "**Evitar a região à frente do promontório é necessário, mas insuficiente.** Grandes vasos estão anteriormente; “posterior ao promontório” abrange uma área ampla e não controla sozinho canal, túnel de S1 e limites da asa.",
+   "D": "**Disco residual é um sinal de anatomia variante.** No dismorfismo, pode faltar corredor transsacral em S1 e haver alternativa em S2. O disco não é um corredor seguro por definição; exige planejamento pela TC."
   },
-  "conceito": "O **parafuso iliossacral** fixa a lesão **sacroilíaca** e as fraturas do sacro. Ele atravessa o ilíaco, a articulação e a asa do sacro até o **corpo de S1**, num corredor estreito.\n\n**O que cerca o corredor**:\n\n**atrás**: o **canal sacral**, com as raízes; o limite é a **cortical posterior de S1**;\n\n**à frente**: os **vasos ilíacos** e a raiz de L5 sobre a asa; o limite é a cortical anterior;\n\n**embaixo**: o **forame de S1**;\n\n**em cima**: a asa do sacro (e a raiz de L5).\n\n**A referência de segurança na radioscopia**: no **perfil** e na incidência de **entrada** (inlet), o parafuso deve ficar **anterior à cortical posterior de S1**, isto é, dentro do corpo vertebral, sem invadir o canal. Na incidência de **saída** (outlet), deve ficar **acima** do forame de S1.\n\n**As armadilhas**: a **displasia sacral** (asa inclinada, corredor menor) e a má visualização do perfil; a **densidade cortical do ilíaco** (linha da asa) ajuda a ver o limite superior, mas não é a referência que protege o canal.\n\n**Na prova**: o parâmetro de segurança é a região **anterior à cortical posterior de S1**.",
-  "correta": "O parafuso deve ficar dentro do corpo de S1, à frente da cortical posterior, longe do canal sacral.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior; Imagem."
+  ],
+  "conferido": false,
+  "alerta": "C oficial preservada como limite anterior ao canal. A densidade cortical do ilíaco também é um marco de segurança real no resumo: instrumentar atrás dela. Nenhuma referência isolada garante todo o corredor; a opção A é imprecisa, mas não deve ser negada como se o marco não existisse.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fixação do anel posterior",
+      "Imagem"
+     ],
+     "blocos": [
+      "fixacao-do-anel-posterior-cd893461",
+      "fixacao-do-anel-posterior-972aa15f",
+      "fixacao-do-anel-posterior-667be55c",
+      "fixacao-do-anel-posterior-a1e506e3",
+      "imagem-d8c77159"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "da03cedab1a13c9fcb0b7446549596883f242c6176ae93751f9e70fdc07e9775"
+    }
+   ],
+   "questaoSha256": "f9cc58fbf72c83f02dce913ef18a8259cd7a238f9d435fdb5c00d4e6ce6e0abd",
+   "comentarioSha256": "59627a0a10b3e4f21fbf5ee09f3a5bfe05544c593d67cc9587b8b0fd0c8d468f"
+  }
  },
  "trauma-0936": {
   "incorretas": {
@@ -18227,18 +18794,44 @@
   "conferido": false
  },
  "trauma-1044": {
+  "conceito": "A pergunta cruza dois dados: **onde mais se fratura** e **onde mais ocorre lesão neurológica**. Na classificação de Denis, a sequência é **I e III**, alternativa B.\n\nA zona I é a asa, lateral aos forames, e reúne quase metade das fraturas no resumo. A zona II passa pelos forames e representa cerca de um terço. A zona III alcança a região medial e o canal, é a menos frequente, mas tem maior risco neurológico, chegando a 60% (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\n**O trajeto explica a diferença.** Mais lateral, o traço fica afastado do canal; medialmente, pode comprometer raízes e cauda equina. Isso não significa que a zona I nunca tenha déficit ou que toda zona III tenha a mesma lesão. O risco se refere ao grupo e precisa ser relacionado ao exame e ao deslocamento.\n\nTraços horizontais e padrões em U/H podem escapar de uma leitura só axial. A reconstrução sagital é importante quando se procura cifose e dissociação espinopélvica, enquanto a classificação de Denis organiza a relação com os forames.",
+  "correta": "**B: I e III.** I é a de maior frequência de fratura, e III é a de maior frequência de lesão neurológica. A ordem dos dois critérios é parte da resposta.",
   "incorretas": {
-   "A": "**Segunda errada.** A zona II tem risco intermediário; a maior taxa neurológica é da zona III.",
-   "C": "**Primeira errada.** A zona II não é a mais frequente; a zona I é.",
-   "D": "**Não é a mais frequente nem a mais grave.** A zona II fica no meio nos dois aspectos."
+   "A": "**I está correta para frequência; II não lidera o risco neural.** A zona II atravessa os forames e tem risco relevante, próximo de 30%, mas a III chega a 60%.",
+   "C": "**A zona de maior risco está correta, a mais frequente foi trocada.** A II não supera a I em número de fraturas na distribuição apresentada pelo capítulo.",
+   "D": "**Transforma a zona intermediária em líder dos dois critérios.** Ela não é nem a mais frequente nem a de maior risco neurológico. A classificação exige separar epidemiologia de proximidade do canal."
   },
-  "conceito": "**Frequência e gravidade andam em sentidos opostos.** A classificação de **Denis** divide o **sacro** em três faixas pela relação do traço com os **forames sacrais**. **Zona I** (transalar, lateral aos forames): a **mais frequente**, cerca de metade das fraturas, com o **menor** risco neurológico (cerca de 6%, geralmente a raiz de L5). **Zona II** (transforaminal): cerca de um terço, com risco intermediário (cerca de 28%, radiculopatias sacrais). **Zona III** (central, pelo canal): a **menos frequente**, com o **maior** risco neurológico (mais de 50%), incluindo disfunção **vesical, intestinal e sexual**.\n\n**Por que o centro é mais perigoso.** Quanto mais **medial** o traço, mais ele se aproxima do **canal sacral** e das raízes da **cauda equina**, que passam por ali. Na zona III, a fratura atinge diretamente o canal, podendo comprimir ou lacerar várias raízes de uma vez, inclusive as raízes sacrais baixas (S2 a S4) que controlam a bexiga, o intestino e a função sexual.\n\n**Como examinar.** O exame neurológico deve incluir **sensibilidade perineal**, **tônus anal**, **contração voluntária do esfíncter** e **reflexo bulbocavernoso**. As lesões sacrais baixas passam despercebidas se só se examinam as pernas.\n\n**O tratamento.** Zona I estável: conservador. Zonas II e III instáveis: fixação (parafusos iliossacrais, fixação lombopélvica), com **descompressão** do canal ou dos forames quando há déficit e compressão. As fraturas transversas da zona III (em **U** ou **H**) são dissociações espinopélvicas.\n\n**Na prova:** Denis: fraturas mais frequentes na **zona I**; lesões neurológicas mais frequentes na **zona III**.",
-  "correta": "**I e III.** A zona I é a mais frequentemente fraturada, e a zona III, a que mais causa lesão neurológica.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 49"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fraturas do sacro"
+     ],
+     "blocos": [
+      "fraturas-do-sacro-96ec0312",
+      "fraturas-do-sacro-f07d590a",
+      "fraturas-do-sacro-7d626e05",
+      "fraturas-do-sacro-29ccf1ad"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "806ad9d536e2debdcb5c3cf33afa25b4c5eb910f335981b0e9bd79335d4ef823"
+    }
+   ],
+   "questaoSha256": "87533dac3ce5ddbed4d81c0f47cb78f1e5c9c6c8c89dd174bff1bbb2adc03e5f",
+   "comentarioSha256": "74bb9d338d9a64680cd175bbe26e9380f2d81d9b3ed0c1700aff5c1234aab7d1"
+  }
  },
  "trauma-1045": {
   "incorretas": {
@@ -19883,19 +20476,47 @@
   "conferido": false
  },
  "trauma-1120": {
+  "conceito": "Uma fratura em **crescente da asa do ilíaco** chega à sacroilíaca e se associa à luxação dessa articulação. Ela é a lesão posterior típica da **compressão lateral tipo II**, alternativa B, aqui identificada como resposta provável, sem gabarito oficial no acervo.\n\nO fragmento posterior em crescente permanece ligado ao sacro pelos ligamentos posteriores; o restante do ílio é que se desloca. Isso combina lesão óssea e articular, distinguindo o padrão da simples impacção sacral da CL I (Rockwood, 10ª ed., cap. 50, “Compressão lateral” e “Fratura em crescente e asa do ilíaco”).\n\n**CL II não é o mesmo que DAY II.** Young e Burgess identifica o mecanismo e o padrão posterior. Day subdivide a fratura em crescente conforme o tamanho do fragmento e a parte da sacroilíaca envolvida, ajudando a planejar abordagem e fixação. Um crescente pode ter tipos diferentes de Day sem deixar de ser CL II.\n\nA compressão anteroposterior segue outra lógica, com rotação externa e abertura anterior. Ela não deve ser escolhida apenas porque existe lesão da sacroilíaca: o traço em crescente do ilíaco é o detalhe que diferencia o mecanismo.",
+  "correta": "**B: compressão lateral, estágio II, como resposta provável.** O resumo define a fratura-luxação em crescente como lesão posterior da CL II. A correspondência é direta, sem promover a resposta a oficial.",
   "incorretas": {
-   "A": "**LC-I costuma apresentar impacção sacral posterior, não o crescente ilíaco.** Ambos decorrem de compressão lateral, mas a extensão da lesão posterior distingue os estágios.",
-   "C": "**APC-I representa abertura anterior limitada da pelve.** Não produz a fratura-luxação sacroilíaca com crescente típica de rotação interna.",
-   "D": "**APC-II lesiona a articulação sacroilíaca anterior durante abertura do anel.** O mecanismo e a morfologia são diferentes do crescente da compressão lateral."
+   "A": "**A CL I tem impacção da asa sacral.** A fratura em crescente entra na sacroilíaca pela asa do ilíaco e representa o padrão CL II. Ambos são laterais, mas a lesão posterior é diferente.",
+   "C": "**CAP I é uma abertura anterior de baixo grau.** No modelo clássico, envolve sobretudo a sínfise, sem o crescente que caracteriza a lesão do ilíaco na compressão lateral.",
+   "D": "**CAP II abre anteriormente a sacroilíaca e mantém o complexo posterior.** A relação ligamentar é importante, mas não transforma esse tipo numa fratura em crescente do ilíaco. O padrão ósseo da pergunta pertence à CL II."
   },
-  "conceito": "**Young-Burgess começa pelo vetor do trauma.** A compressão lateral roda a hemipelve para dentro e costuma produzir fraturas dos ramos púbicos anteriormente. No estágio LC-I, a lesão posterior típica é a impacção do sacro. No LC-II, a força alcança a articulação sacroilíaca e fratura a asa ilíaca posterior, formando o fragmento em crescente. No LC-III, soma-se lesão contralateral em abertura, o padrão chamado de pelve varrida pelo vento.\n\n**O crescente é parte da articulação posterior.** O fragmento posterior do ilíaco permanece preso aos ligamentos sacroilíacos posteriores, enquanto a porção anterior da asa se desloca. A imagem pode parecer apenas uma fratura ilíaca, mas o ponto importante é a fratura-luxação sacroilíaca e sua instabilidade rotacional. Tomografia ajuda a definir tamanho do fragmento, congruência articular e planejamento da fixação.\n\n**Compressão anteroposterior abre, em vez de fechar, o anel.** APC-I é abertura limitada da sínfise, sem ruptura posterior importante; APC-II inclui lesão dos ligamentos sacroilíacos anteriores, mantendo os posteriores; APC-III rompe também o complexo posterior e perde estabilidade vertical. Essa distinção explica por que um crescente posterior por rotação interna pertence à compressão lateral, não à abertura em livro.",
-  "correta": "**Compressão lateral, estágio II.** A fratura em crescente da asa ilíaca posterior é o marcador clássico da lesão sacroilíaca LC-II.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1611."
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS; Fixação do anel posterior."
   ],
+  "conferido": false,
+  "alerta": "Sem gabarito oficial disponível no acervo. B é a resposta provável sustentada pelo resumo; o estágio II de Young e Burgess não deve ser confundido com o tipo II da classificação de Day.",
   "provavel": "B",
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Classificação de YOUNG e BURGESS",
+      "Fixação do anel posterior"
+     ],
+     "blocos": [
+      "classificacao-de-young-e-burgess-91c756d4",
+      "classificacao-de-young-e-burgess-ebd35d3b",
+      "fixacao-do-anel-posterior-ab0d1523",
+      "fixacao-do-anel-posterior-eae68b4c"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "f37680228dc52a01524f3cf53a5f1d408867b3c6dd3c99f7b95930c6281dcf29"
+    }
+   ],
+   "questaoSha256": "8f8a587f30021b3a29c3ac2a71d5b34eab68bf2b83272e068ac64f107d454e9a",
+   "comentarioSha256": "cd57c691ff3a84b5d256a701b39b227d1dcdbb382258db08766fd0ad2baf3d67"
+  }
  },
  "trauma-1121": {
   "conceito": "**O tipo I mantém conoide e trapezoide íntegros no fragmento medial; a resposta bibliográfica é A.** Não há gabarito oficial no acervo. A fonte permite escolher uma resposta provável única porque os outros itens trocam os subtipos ou confundem fratura articular com luxação.\n\nA lógica de Neer/Rockwood parte da sustentação coracoclavicular. No tipo I, a ligação com o fragmento medial permanece e há pouco desvio. No tipo II, o medial perde essa ancoragem e sobe, enquanto o distal fica relacionado à escápula que desce com o peso do membro.\n\n| Padrão | Relação descrita |\n|---|---|\n| I | Conoide e trapezoide íntegros no medial |\n| IIA | Ambos presos ao distal; traço medial ao conoide |\n| IIB | Conoide roto; trapezoide permanece no distal |\n| III | Extensão da fratura para a acromioclavicular |\n\nAs opções B e C são boas armadilhas porque cada uma descreve um arranjo existente, atribuído ao subtipo errado. Em vez de decorar só a letra, confira o ligamento e o fragmento. A opção D muda a natureza da lesão: extensão articular do traço não é uma luxação da articulação.\n\n**Leia “Neer, modificada por Rockwood: o terço distal pelos ligamentos”, na Biblioteca.** Refaça o mapa dos ligamentos em cada padrão. A estabilidade decorre dessa relação, e não apenas do número do subtipo.",
@@ -30580,32 +31201,86 @@
   "conferido": false
  },
  "trauma-1491": {
-  "conceito": "**Quem se lesa e onde.** Lesões da bexiga e da uretra ocorrem em 6% a 15% das fraturas do anel pélvico. A **uretra masculina** é longa e se divide em porções anterior e posterior; a **posterior** é a mais lesada, mais por cisalhamento do que por laceração direta por fragmento. A uretra feminina é curta e protegida pela vagina, e por isso se lesa pouco. A vagina, por sua vez, se lesa raramente (0% a 5%).\n\n**A bexiga.** Fica logo atrás da sínfise. Cheia, rompe com facilidade. As rupturas vesicais aparecem em até 10% das fraturas do anel e se distribuem assim:\n\n- **extraperitoneal (cerca de 60%):** a mais comum; a urina se comunica com a zona da lesão anterior do anel; pode ser tratada com sonda vesical e antibiótico profilático, ou reparada no mesmo ato da fixação anterior;\n- **intraperitoneal (cerca de 30%):** ruptura da cúpula por compressão da bexiga distendida; exige laparotomia e sutura;\n- **ambas (cerca de 10%).**\n\n**A sequência dos exames.** O capítulo 50 do Rockwood (10ª ed.) descreve o caminho:\n\n1. hematúria macroscópica (ou mais de 30 a 50 hemácias por campo) leva à avaliação urológica e à cistografia;\n2. **no homem, a uretrografia retrógrada dinâmica é o melhor exame para a uretra:** sonda introduzida só na uretra peniana, balonete com 1 a 2 mL, 25 mL de contraste hidrossolúvel e imagem em AP ou oblíqua de 30 a 45 graus sob radioscopia;\n3. só com a uretra íntegra se passa a sonda até a bexiga e se faz a cistografia (radiografia ou tomografia) com 300 a 400 mL de contraste.\n\n**Por que a ordem importa.** Uma sonda empurrada às cegas pode transformar uma lesão parcial da uretra em completa.\n\nBase: Rockwood and Green, 10ª ed., capítulo 50 (Pelvic Ring Injuries), seção Genitourinary Tract Injuries.\n\n> **Na prova:** sangue no meato do homem com fratura pélvica pede uretrografia retrógrada antes da sonda; a ruptura vesical mais comum é extraperitoneal.",
-  "correta": "**D: a uretrografia retrógrada dinâmica.** É o melhor exame para avaliar a uretra masculina, e deve vir antes de qualquer tentativa de passar a sonda até a bexiga. Ausência de contraste na bexiga sugere ruptura uretral. Só depois de confirmada a uretra íntegra se passa a sonda e se faz a cistografia.",
+  "conceito": "Sangue no meato uretral de um homem com fratura do anel exige suspeitar de lesão uretral **antes de passar a sonda vesical**. O exame indicado é a **uretrografia retrógrada dinâmica**, alternativa D.\n\nA uretra posterior masculina é vulnerável ao cisalhamento do trauma. Na uretrografia, o contraste introduzido pela uretra peniana mostra a passagem e possíveis áreas de extravasamento; o resumo a descreve como o melhor exame para estudar a uretra masculina nesse contexto (Rockwood, 10ª ed., cap. 50, “Como diagnosticar”).\n\n**Uretra e bexiga exigem etapas diferentes.** Se a uretra estiver íntegra, passa-se a sonda e realiza-se cistografia, por radiografia ou TC, para avaliar a bexiga. Começar por um exame que depende da sondagem vesical inverteria a sequência do problema apresentado.\n\nO toque retal faz parte da avaliação de lesões associadas e função neurológica, mas uma “próstata alta” não é considerada sinal confiável para diagnosticar ou excluir ruptura uretral. A investigação deve ser articulada com a urologia, não substituída por um achado de exame isolado.",
+  "correta": "**D: uretrografia retrógrada dinâmica.** Estuda a uretra antes da passagem da sonda para a bexiga e pode demonstrar extravasamento ou interrupção. É a etapa adequada à suspeita criada pelo sangue no meato.",
   "incorretas": {
-   "A": "**É o passo seguinte, não o primeiro.** A cistografia (convencional ou por tomografia, que muitos centros preferem) investiga a ruptura vesical, mas exige a sonda já na bexiga. Com sangue no meato, sondar antes de estudar a uretra pode agravar uma lesão uretral.",
-   "B": "**Não estuda bem a uretra nem substitui a cistografia.** A fase excretora mostra o trato urinário alto e pode sugerir extravasamento, mas não distende a bexiga o suficiente para afastar ruptura e não avalia a uretra posterior. O exame da uretra é a uretrografia retrógrada.",
-   "C": "**Sinal abandonado.** A próstata alta ao toque retal já foi considerada sinal de lesão uretral ou vesical, mas o capítulo afirma que esse achado não é confiável nem útil. O toque retal continua importante para outras coisas: sangue (comunicação com o intestino), tônus esfincteriano e reflexo bulbocavernoso."
+   "A": "**A cistografia é voltada à bexiga e vem depois de verificar a uretra.** A alternativa já pressupõe sondagem vesical, justamente o gesto que deve aguardar a avaliação uretral no caso.",
+   "B": "**Contraste excretado não substitui o estudo retrógrado da uretra.** O exame específico descrito para essa suspeita introduz contraste pela uretra peniana; a fase excretora não cumpre a mesma etapa diagnóstica.",
+   "C": "**Próstata alta não é um teste confiável.** O resumo rejeita seu uso como sinal suficiente de lesão uretral. O toque não substitui a uretrografia solicitada pela suspeita clínica."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 50 (Pelvic Ring Injuries; Firoozabadi)"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Lesões urológicas; Exame físico, fratura exposta e lesão de partes moles."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Lesões urológicas",
+      "Exame físico, fratura exposta e lesão de partes moles"
+     ],
+     "blocos": [
+      "lesoes-urologicas-cc173117",
+      "lesoes-urologicas-b86cda60",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-fcb681fb"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "e2c907c0ec9d88f18990289ab4723c734f32207379ac75ab662f0ec5fb914e13"
+    }
+   ],
+   "questaoSha256": "898f1fcdd271472227d97273921e52a6bb686cae97a7df8e76298553e3040e08",
+   "comentarioSha256": "97cf5adb2be912283d809e3426a34aa6edb06b1e8550a7cf6560672775e48044"
+  }
  },
  "trauma-1492": {
-  "conceito": "**A exposta da pelve.** A fratura do anel pélvico é exposta em até 5% dos casos. Os fragmentos podem perfurar a pele ao longo da crista ou do períneo, e a própria tração da lesão em APC pode abrir a linha média. Feridas perineais pequenas passam despercebidas no politraumatizado; por isso o capítulo recomenda procurar **ar extraluminal na tomografia com janela de pulmão** e examinar períneo, reto e vagina (toque retal e exame vaginal na mulher).\n\n**A classificação de JONES.**\n\n| Classe | Anel | Ferida |\n|---|---|---|\n| 1 | estável | qualquer |\n| 2 | instável (rotacional ou vertical) | sem ferida retal ou perineal |\n| 3 | instável (rotacional ou vertical) | ferida retal ou perineal com potencial de contaminação fecal |\n\nNa classe 3, muitos pacientes evoluíram com sepse, e a mortalidade foi de 44%. Em outra série, as expostas com contaminação fecal chegaram a 50% de mortalidade.\n\n**O que muda na conduta.** Antibiótico de amplo espectro cedo. Lesão de esfíncter anal ou do intestino pede **colostomia de derivação**, idealmente nas primeiras 6 a 8 horas, com lavagem distal. O estoma deve ficar o mais alto possível e longe das futuras vias de acesso (Pfannenstiel e janela lateral). Sem risco fecal, faz-se irrigação e desbridamento como em qualquer exposta; a ferida que comunica com a vagina pode ser lavada, tamponada e fechada sobre dreno quando limpa.\n\nBase: Rockwood and Green, 10ª ed., capítulo 50 (Pelvic Ring Injuries), seção Open Pelvic Ring Injuries and Gastrointestinal Injuries.\n\n> **Na prova:** JONES 3 é anel instável com ferida retal ou perineal (contaminação fecal), mortalidade em torno de 44%; derivação intestinal em 6 a 8 horas.",
-  "correta": "**C: instável com ferida retal ou perineal e risco de contaminação fecal.** É a combinação mais grave: instabilidade (rotacional ou vertical) somada a uma ferida que pode ser contaminada por fezes. Na série original, a sepse foi frequente e a mortalidade chegou a 44%, o que justifica derivação intestinal precoce e antibiótico de amplo espectro.",
+  "conceito": "Na classe 3 de **Jones**, a pelve está **instável e há ferida retal ou perineal com risco de contaminação fecal**, alternativa C. A gravidade resulta da combinação de falha mecânica com possibilidade de infecção profunda.\n\nA classe 1 descreve anel estável; a classe 2, anel instável sem ferida retal ou perineal; a classe 3 acrescenta essa comunicação de maior risco. O resumo cita mortalidade de 44% no grupo 3, dado de série que não deve ser convertido numa previsão para cada paciente (Rockwood, 10ª ed., cap. 50, “Fratura exposta da pelve”).\n\n**A exposição pode estar escondida.** Pequenas feridas perineais e comunicações com reto ou vagina podem passar despercebidas no politraumatizado. Examinar períneo e mucosas e procurar ar extraluminal na TC ajuda a não tratar uma lesão contaminada como fechada.\n\nLesão de esfíncter ou intestino pode exigir derivação fecal, além de desbridamento, antibióticos e estabilização. A posição de qualquer derivação deve ser combinada com as futuras vias de acesso. O código de Jones organiza o risco, mas não substitui controle da hemorragia e atendimento multiprofissional.",
+  "correta": "**C: anel instável com ferida retal ou perineal e risco fecal.** A classe reúne instabilidade e contaminação potencial, que aumentam risco de sepse e complicam a estratégia de fixação.",
   "incorretas": {
-   "A": "**Anel estável é sempre classe 1.** A classe 1 de JONES reúne as expostas com anel estável. A estabilidade do anel é o primeiro critério; a localização da ferida só separa as classes 2 e 3, que são instáveis.",
-   "B": "**Essa é a classe 2.** Anel rotacional ou verticalmente instável, mas sem ferida retal ou perineal. O risco de contaminação fecal, que define a classe 3, está ausente.",
-   "D": "**Também é classe 1.** A ferida sobre a crista ilíaca é uma localização comum de exposição, mas com anel estável a lesão continua na classe 1. A classificação não se baseia no local da ferida isoladamente."
+   "A": "**Um anel estável não corresponde à classe 3.** A estabilidade o coloca na classe 1, embora uma ferida ainda exija avaliação e tratamento. O risco local não permite ignorar o critério mecânico da classificação.",
+   "B": "**É a descrição da classe 2.** Existe instabilidade, mas falta a ferida retal ou perineal que diferencia o grupo de maior risco de contaminação fecal.",
+   "D": "**Permanece no grupo mecanicamente estável.** Uma ferida na crista exige tratar a exposição, mas não reproduz o conjunto de anel instável e ferida retal/perineal definido para classe 3."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 50 (Pelvic Ring Injuries; Firoozabadi)"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Exame físico, fratura exposta e lesão de partes moles."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Exame físico, fratura exposta e lesão de partes moles"
+     ],
+     "blocos": [
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-c6bb4e72",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-cb094db6",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-f1a76c01",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-0e3ccbc7",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-cf14492f",
+      "exame-fisico-fratura-exposta-e-lesao-de-partes-m-c521b4b5"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "9371edda94cc2c81077b3591105cc26a08036cd7f881d8381709974a0a6b3094"
+    }
+   ],
+   "questaoSha256": "be99a6e5fd63917022c05b14f069350439f431a6c35a87fb815187f8f1062ee2",
+   "comentarioSha256": "e97fe3405cfc043c8d3ae7c1b14877813f306c60835fbca11d58981fbe7cd3f0"
+  }
  },
  "trauma-1493": {
   "conceito": "**O que o exame físico entrega.** No paciente consciente e colaborativo, o exame físico tem cerca de 90% de sensibilidade para fratura do anel pélvico. O capítulo 50 do Rockwood (10ª ed.) lista os achados que fazem pensar em lesão:\n\n- **deformidade do membro:** encurtamento e rotação externa no cisalhamento vertical; rotação interna no LC instável;\n- **edema escrotal** no homem, comum no APC;\n- **sinal de DESTOT:** hematoma palpável no períneo, acima do ligamento inguinal ou na coxa proximal;\n- **sinal de GREY TURNER:** equimose no flanco, indicando hemorragia retroperitoneal;\n- **lesão de MOREL-LAVALLÉE:** coleção flutuante por desenluvamento interno, que complica as vias de acesso;\n- sangue no reto, na uretra ou na vagina (fora da menstruação).\n\n**A compressão manual.** Faz-se uma única vez, comprimindo as asas ilíacas no sentido anteroposterior e de fora para dentro. Repetir dói e pode deslocar coágulos. Quando a imagem já mostra ruptura grosseira, o teste é desnecessário. A palpação posterior direta da pelve tem boa sensibilidade e especificidade para lesão do anel posterior no paciente alerta.\n\n**O que já não vale.** A próstata alta ao toque retal deixou de ser considerada sinal confiável de lesão uretral.\n\n**Neurológico.** Examine L5 e S1 com atenção: a raiz de L5 repousa na asa do sacro e as raízes sacrais se lesam nas fraturas transforaminais. Avalie o tônus retal, o reflexo bulbocavernoso e a sensibilidade perineal, e documente o exame (ou a impossibilidade de fazê-lo).\n\nBase: Rockwood and Green, 10ª ed., capítulo 50 (Pelvic Ring Injuries), seção Signs and Symptoms, Physical Examination.\n\n> **Na prova:** DESTOT é hematoma no períneo, acima do ligamento inguinal ou na coxa; GREY TURNER é equimose no flanco (retroperitônio).",
@@ -30636,18 +31311,49 @@
   "conferido": false
  },
  "trauma-1495": {
-  "conceito": "**O que é o sacro dismórfico.** O sacro se forma pela fusão de cinco vértebras e está sujeito a **anomalias de segmentação**: sacralização de L5 ou lombarização de S1, completas ou incompletas. No sacro dismórfico, o primeiro segmento sacral fica **mais anterior e cefálico** em relação à asa. O dismorfismo é comum: 41% em uma série de 104 pelves e até 44% em outras.\n\n**Os sinais na radiografia e na tomografia.** O capítulo 50 do Rockwood (10ª ed.) lista:\n\n- sacro alto, colinear com as cristas ilíacas;\n- processos mamilares na região da asa;\n- forames superiores grandes, irregulares e malformados;\n- disco residual entre o primeiro e o segundo segmento;\n- inclinação da asa mais aguda no perfil, sem colinearidade com a densidade cortical do ilíaco;\n- articulação sacroilíaca em \"língua e sulco\" na tomografia;\n- indentação da cortical anterior da asa.\n\n**Por que importa.** No sacro normal, S1 fica centrado entre as asas e há um corredor ósseo reto atravessando todo o segmento: cabe um parafuso transilíaco-transsacral. No dismórfico, **esse corredor não existe em S1**; só cabe parafuso de estilo iliossacral, dirigido obliquamente, e às vezes nem isso. Em compensação, **S2 costuma ter um corredor transsacral, em geral maior** que no sacro normal. Por isso a recomendação é planejar pela tomografia e usar S2 para o parafuso transsacral. Quanto maior o escore de dismorfismo na tomografia, menor a chance de um transsacral seguro.\n\n**O plano na tomografia.** Planejar o corredor pela tomografia reduz tempo cirúrgico e radiação. Cortes padronizados perpendiculares e paralelos ao sacro (inlet e outlet tomográficas) mostram melhor as zonas seguras.\n\nBase: Rockwood and Green, 10ª ed., capítulo 50 (Pelvic Ring Injuries), seções Plain Radiography e Posterior Pelvic Screw Fixation, figura 50-63.\n\n> **Na prova:** sacro dismórfico (até 41% a 44%): sem corredor transsacral em S1; use S2.",
-  "correta": "**C: o corredor transsacral de S1 costuma não existir, e S2 costuma ter corredor amplo.** Como o primeiro segmento sacral fica anterior e cefálico em relação à asa, um parafuso que atravesse as duas sacroilíacas em S1 sairia do osso. Em S1 só cabe um iliossacral oblíquo (quando cabe); o transsacral vai para S2, onde o corredor costuma ser até maior.",
+  "conceito": "Num sacro dismórfico, não se deve presumir que existe um corredor horizontal seguro em **S1**. O segmento superior pode estar à frente e acima da asa; o **corredor transsacral de S1 costuma faltar, enquanto S2 costuma oferecer alternativa mais ampla**, como diz a alternativa C.\n\nNo sacro normal, o corpo do primeiro segmento se alinha entre as asas e permite um trajeto transsacral. No dismórfico, a geometria pode admitir apenas um **iliossacral oblíquo em S1**, em vez de atravessar para o ilíaco contralateral. O resumo descreve corredor transsacral frequentemente utilizável em S2 (Rockwood, 10ª ed., cap. 50, “Sacro normal e dismórfico”).\n\n**A decisão é anatômica, feita na TC.** Disco residual S1-S2, processos mamilares, formato dos forames e inclinação da asa alertam para a variante. Esses sinais não dispensam medir o corredor individual nem garantem que qualquer parafuso caiba em S2.\n\nA relação com L5 e os forames continua exigindo controle por inlet, outlet e perfil. Dismorfismo não proíbe toda fixação percutânea; muda o trajeto e o nível disponíveis, e obriga a planejar antes de instrumentar.",
+  "correta": "**C: ausência habitual do corredor transsacral de S1 e alternativa ampla em S2.** É a consequência técnica descrita. O corredor efetivo precisa ser confirmado individualmente, sem tratar S2 como seguro por definição.",
   "incorretas": {
-   "A": "**É o oposto.** O sacro dismórfico é justamente aquele em que o corredor transsacral de S1 desaparece. Tentar esse parafuso em S1 arrisca romper a cortical anterior (vasos e raiz de L5) ou o canal.",
-   "B": "**Comum e visível na radiografia simples.** O dismorfismo aparece em cerca de 41% a 44% das pelves, e vários sinais são vistos no AP e na outlet (sacro colinear com as cristas, processos mamilares, forames irregulares, disco residual). A tomografia confirma e mede o corredor.",
-   "D": "**Exagero.** O dismorfismo muda o nível e a direção do parafuso, mas não proíbe a fixação percutânea. Em S1 o parafuso iliossacral oblíquo ainda pode ser possível, e S2 geralmente aceita parafuso iliossacral ou transsacral."
+   "A": "**Inverte a limitação.** O dismorfismo tende a dificultar ou impedir o trajeto transsacral em S1, em vez de alargá-lo. Forçar esse caminho pode violar os limites ósseos.",
+   "B": "**Não é raro nem depende só de RM.** O resumo cita dismorfismo em 41% num estudo por TC e até 44% em outras séries, com sinais na AP e na própria TC. A investigação do corredor é principalmente óssea.",
+   "D": "**A restrição é de corredor, não uma proibição de todos os níveis.** Pode haver iliossacral oblíquo em S1 e transsacral em S2. A solução é individualizar o planejamento, não abolir a técnica automaticamente."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 50 (Pelvic Ring Injuries; Firoozabadi)"
+   "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior; Imagem."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-50-anel-pelvico",
+     "titulo": "Lesões do anel pélvico",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+     "secoes": [
+      "Fixação do anel posterior",
+      "Imagem"
+     ],
+     "blocos": [
+      "fixacao-do-anel-posterior-a1e506e3",
+      "imagem-4ae461a7",
+      "imagem-95c5162f",
+      "imagem-d8c77159",
+      "imagem-051efba9",
+      "fixacao-do-anel-posterior-cd893461",
+      "fixacao-do-anel-posterior-972aa15f",
+      "fixacao-do-anel-posterior-667be55c"
+     ],
+     "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+     "trechosSha256": "ba643cba246e48a0f609d2b8aade9c3745eae07210d4249100fa6953f2db7600"
+    }
+   ],
+   "questaoSha256": "6361cb236f09dccd194608b8a1a8900551ea6b2bc9ee64dca518b406b4ad2e07",
+   "comentarioSha256": "0e59f89110f346e33a0a5f10268b0bc6aa99282c641a71652dec517873e357bb"
+  }
  },
  "trauma-1496": {
   "conceito": "**A mecânica do livro aberto.** Na compressão anteroposterior (APC), uma ou as duas hemipelves giram para fora, como as capas de um livro, articulando-se atrás nas sacroilíacas. Os ligamentos falham em sequência, como dominós, de frente para trás:\n\n1. **APC I:** só a sínfise abre, com mínima abertura anterior da sacroilíaca. Os ligamentos posteriores estão intactos e a sínfise tende a fechar com a carga; por isso o APC I é tratado sem cirurgia.\n2. **APC II:** a força continua e rompe o **sacrotuberal**, o **sacroespinal** e o **sacroilíaco anterior**. A sacroilíaca abre na frente, mas os **ligamentos sacroilíacos posteriores ficam íntegros** e funcionam como dobradiça. O anel é rotacionalmente instável e verticalmente estável (Tile B1).\n3. **APC III:** rompem também os ligamentos intra-articulares e sacroilíacos posteriores. A sacroilíaca fica completamente instável; nesse ponto, o assoalho pélvico e a musculatura perineal também estão rompidos.\n\n**O número de 2,5 cm.** Uma diástase da sínfise maior que 2,5 cm classicamente indica que a sequência passou do APC I para o APC II. Um estudo em cadáver questionou o valor (em alguns casos os sacroilíacos anteriores só romperam com 4,5 cm), mas a média em que eles falharam foi de cerca de 2,2 cm, o que sustenta o número clássico. No mesmo estudo, sacrotuberal e sacroespinal romperam só em 15% das vezes, enquanto os sacroilíacos anteriores sempre romperam; a sínfise e os sacroilíacos anteriores são os principais restritores da rotação externa.\n\n**Quanto pesa cada parte.** O anel posterior responde pela maior parte da estabilidade; os ligamentos da sínfise, por cerca de 15%.\n\nBase: Rockwood and Green, 10ª ed., capítulo 50 (Pelvic Ring Injuries), seção Young and Burgess Classification, figuras 50-16 a 50-18.\n\n> **Na prova:** APC II é sínfise mais sacrotuberal, sacroespinal e sacroilíaco anterior rompidos, com sacroilíaco posterior íntegro (dobradiça); diástase classicamente acima de 2,5 cm.",
