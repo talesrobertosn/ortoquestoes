@@ -6310,20 +6310,46 @@
     "conferido": false
   },
   "quadril-0516": {
-    "conceito": "**Incidências radiográficas do anel pélvico.** Em decúbito dorsal, a pelve fica inclinada, e a radiografia AP mostra o anel de forma oblíqua. Pennal descreveu duas incidências complementares, obtidas inclinando o tubo de raios X.\n\n| Incidência | Inclinação do tubo | O que mostra melhor |\n|---|---|---|\n| Inlet | Caudal (cerca de 40 a 45 graus) | Deslocamentos **anteroposteriores** e **rotacionais**; forma do anel visto de cima |\n| **Outlet** | **Cranial** (cerca de 40 a 45 graus) | Deslocamentos **verticais** (craniais) da hemipelve; sacro e forames sacrais |\n| AP | Perpendicular | Visão geral; triagem no trauma |\n\n**Por que a outlet mostra o desvio vertical.** Com o tubo inclinado em direção cranial, o anel pélvico fica de frente, e as hemipelves são projetadas sem o encurtamento causado pela inclinação. A subida de uma hemipelve em relação à outra (diferença na altura dos ísquios ou das cristas ilíacas) fica evidente.\n\n**Lesões com desvio vertical.** Cisalhamento vertical (Young e Burgess VS) e lesões Tile C, típicas de quedas de grande altura, com ruptura completa do complexo posterior. São as lesões mais instáveis, com alto risco de sangramento e lesão neurológica (plexo lombossacral).\n\n**Hoje.** A tomografia com reconstruções é o exame de referência no trauma pélvico, mas as incidências inlet e outlet são usadas no centro cirúrgico, com intensificador de imagem, e no seguimento.\n\n> Desvio vertical da hemipelve: melhor visto na incidência outlet.",
-    "correta": "**B: da bacia outlet.** A incidência outlet, com o tubo inclinado em direção cranial, mostra o anel pélvico de frente e evidencia a subida (desvio vertical) de uma hemipelve em relação à outra, padrão típico das lesões por cisalhamento vertical em quedas de grande altura.",
+    "conceito": "Depois de uma queda de altura, uma hemipelve aparece **mais alta** que a outra. A incidência que melhor evidencia essa relação é a **outlet**, alternativa B: o feixe é inclinado em direção cefálica, mostrando a altura relativa dos elementos do anel e os forames sacrais.\n\nInlet e outlet respondem a perguntas diferentes. A **inlet** usa inclinação caudal e mostra rotação e translação anteroposterior; a **outlet** usa inclinação cefálica e ajuda a comparar alturas e avaliar sacro e forames. A AP dá a visão geral, mas a avaliação do deslocamento exige integrar as incidências, porque o desvio real combina vetores (Rockwood, 10ª ed., cap. 50, “Radiografias”).\n\nO capítulo distingue os **45 graus clássicos** dos ângulos ideais encontrados num estudo tomográfico: aproximadamente **25 graus caudais para inlet e 60 graus cefálicos para outlet**. A ideia decisiva não é confundir uma preferência de angulação com a direção do feixe.\n\nSubida da hemipelve sugere perda importante do suporte posterior. A TC complementa a avaliação de qualquer fratura do anel e procura a lesão posterior que a AP pode subestimar. Na suspeita de dissociação espinopélvica, as reconstruções sagitais são especialmente importantes.\n\n> **Na prova:** altura relativa das hemipelves: outlet; rotação e translação anteroposterior: inlet.",
+    "correta": "**B: da bacia outlet.** O feixe cefálico favorece a avaliação da altura relativa dos púbis e ísquios e dos forames sacrais, permitindo reconhecer o componente vertical do desvio.",
     "incorretas": {
-      "A": "**A incidência inlet** mostra melhor os deslocamentos anteroposteriores e rotacionais, olhando o anel de cima; é menos sensível para o desvio vertical.",
-      "C": "**A radiografia AP** é a triagem inicial e pode sugerir o desvio, mas a inclinação da pelve distorce a avaliação da altura das hemipelves.",
-      "D": "**O perfil do sacro** avalia fraturas transversas do sacro e cifose sacral, não o desvio vertical da hemipelve.",
-      "E": "**A oblíqua do quadril** (incidências de Judet) avalia as colunas e paredes do acetábulo, não o deslocamento vertical do anel pélvico."
+      "A": "**A inlet responde melhor ao componente horizontal.** A inclinação caudal mostra rotação e deslocamento anterior ou posterior. Ela complementa a outlet, mas não a substitui para comparar a altura das hemipelves.",
+      "C": "**A AP é a visão geral, não a incidência mais específica pedida.** Pode sugerir assimetria e mostrar avulsão de L5, mas o estudo dirigido do deslocamento exige as incidências complementares e a TC.",
+      "D": "**O perfil privilegia o sacro no plano sagital.** É importante para corredores de parafusos e para avaliar cifose; não oferece a mesma comparação frontal das duas hemipelves dada pela outlet.",
+      "E": "**Uma oblíqua isolada do quadril não responde à comparação solicitada.** O problema do caso é a diferença de altura do anel, cuja incidência dirigida no resumo é a outlet. Não basta escolher uma vista regional porque a lesão está perto do quadril."
     },
     "referencias": [
-      "Young JW, Burgess AR, Brumback RJ, Poka A. Pelvic fractures: value of plain radiography in early assessment and management. Radiology. 1986;160(2):445-451.",
-      "Tile M. Pelvic ring fractures: should they be fixed? J Bone Joint Surg Br. 1988;70(1):1-12."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Imagem."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Imagem"
+          ],
+          "blocos": [
+            "imagem-4f412193",
+            "imagem-0a1f5cef",
+            "imagem-abbe22b6",
+            "imagem-90b8a963",
+            "imagem-06455337"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "b2d39170ea1a814b135a65fc93abff21b9bfa5c8f072446f41be9cdd697a5d8e"
+        }
+      ],
+      "questaoSha256": "40b3907849038a8d9c4bfc4f508132a539b7e7f05d8fb89919e4409d19b5e898",
+      "comentarioSha256": "10d6cf529c3676bf056fc22e2e10d9eb6f8541b7aaf9e065a71600c975691f53"
+    }
   },
   "quadril-0517": {
     "conceito": "**Lombociatalgia: sempre examinar o quadril.** Muitas doenças do quadril e da região glútea causam dor que se irradia para a coxa e a perna, imitando radiculopatia lombar. Antes de solicitar exames da coluna, o exame físico completo deve incluir o quadril.\n\n**Doenças que imitam a ciatalgia.**\n- **Síndrome dolorosa do grande trocânter** (bursite trocantérica, tendinopatia dos glúteos): dor lateral que irradia pela face lateral da coxa.\n- **Síndrome do piriforme** e outras síndromes do espaço glúteo profundo: compressão do nervo ciático na região glútea.\n- **Artrose do quadril**: dor na virilha, às vezes irradiada ao joelho.\n- **Doença da sacroilíaca**.\n- **Meralgia parestésica** (nervo cutâneo femoral lateral): parestesia na face lateral da coxa.\n\n**Exame do quadril.**\n- Palpação do trocânter maior e da região glútea (incluindo o piriforme).\n- Amplitude de movimento, principalmente a rotação interna.\n- Testes: FADIR (impacto), FABER (Patrick), teste do piriforme (FAIR), Trendelenburg.\n\n**O caso.** Paciente de 45 anos, com lombociatalgia direita há 5 meses, trabalho em pé e com carga, e Lasègue positivo à **esquerda** (dado discordante do lado sintomático). A discordância e o quadro arrastado reforçam a necessidade de um exame clínico completo, incluindo o quadril, antes de pedir exames de imagem.\n\n**Exames complementares.** Ressonância lombar se houver sinais radiculares claros, déficit neurológico ou falha do tratamento conservador; eletroneuromiografia em casos duvidosos.\n\n> Antes de pedir exames da coluna para a ciatalgia, examine e palpe o quadril.",
@@ -6585,43 +6611,123 @@
     "conferido": false
   },
   "quadril-0535": {
-    "conceito": "**Incidências radiográficas do anel pélvico.** A pelve fica inclinada em relação ao eixo do corpo, cerca de 45 a 60 graus na posição deitada. Por isso, a radiografia AP simples mostra o anel de forma oblíqua e encurtada. Pierce e Pennal descreveram duas incidências complementares, obtidas **inclinando o tubo de raios X**, sem mobilizar o paciente.\n\n**Inlet (entrada).** Tubo inclinado em direção caudal (cerca de 40 a 45 graus, ou o ângulo ajustado para que as hemipelves se sobreponham). Mostra o anel visto de cima, como se olhássemos para dentro da bacia.\n- Avalia **deslocamentos anteroposteriores** (sacroilíaca abrindo, fragmento posterior) e **rotação interna ou externa** das hemipelves.\n- Mostra fraturas do sacro com impactação e o alargamento da sínfise.\n\n**Outlet (saída).** Tubo inclinado em direção cranial (cerca de 40 a 45 graus). Mostra o sacro e o anel de frente.\n- Avalia **deslocamentos verticais** (cranial) da hemipelve.\n- Mostra os forames sacrais e fraturas do sacro.\n\n| Incidência | Inclinação do tubo | Deslocamento avaliado |\n|---|---|---|\n| Inlet | Caudal | Anteroposterior e rotacional |\n| Outlet | Cranial | Vertical |\n\n**Na prática atual.** A tomografia computadorizada substituiu em grande parte essas incidências no trauma, mas elas continuam úteis no centro cirúrgico (intensificador de imagem) para guiar parafusos e no seguimento ambulatorial.\n\n**O caso.** Disjunção da sínfise maior que 3 cm sugere lesão em livro aberto (compressão anteroposterior, Young e Burgess APC II ou III), com risco de sangramento importante.\n\n> Inlet e outlet: complementam o AP com inclinação do tubo, sem mover o paciente.",
-    "correta": "**A: Certo.** As duas incidências complementares clássicas à radiografia AP da pelve são a inlet e a outlet. Elas são obtidas inclinando o tubo de raios X em direção caudal ou cranial, com o paciente na mesma posição em decúbito dorsal, o que as torna fáceis de realizar no politraumatizado, sem mobilização. A inlet mostra deslocamentos anteroposteriores e rotacionais, e a outlet, os verticais.",
+    "conceito": "Para obter **inlet e outlet**, inclina-se o **feixe de raios X**, mantendo o paciente na mesma posição. Por isso a afirmação é **certa**, alternativa A: essas vistas complementam a AP sem exigir que se rode um politraumatizado doloroso.\n\nNa inlet, o feixe aponta caudalmente e mostra rotação das hemipelves, abertura sacroilíaca e translação anteroposterior. Na outlet, aponta cefalicamente e evidencia sacro, forames e alturas relativas dos púbis e ísquios. O capítulo cita 45 graus como técnica clássica e um estudo com ângulos ideais de aproximadamente 25 e 60 graus, respectivamente (Rockwood, 10ª ed., cap. 50, “Radiografias”).\n\n**Facilidade de posicionamento não torna o exame completo.** A AP pode falhar na lesão posterior; a TC é necessária quando há fratura do anel, e reconstruções ajudam a planejar o tratamento. Inlet e outlet também precisam ser lidas juntas: um desvio aparentemente vertical pode coexistir com translação anterior ou posterior.\n\nNo caso, a sínfise aberta mais de 3 cm exige avaliar a continuidade posterior e a estabilidade. As incidências complementares acrescentam informação sem que se precise manipular repetidamente a pelve, manobra que pode deslocar coágulos.",
+    "correta": "**A: certo.** A diferença entre inlet e outlet é obtida pela inclinação caudal ou cefálica do feixe. O paciente não precisa ser mobilizado para produzir essas duas projeções.",
     "incorretas": {
-      "B": "**Marcar errado seria confundir com as incidências de Judet (oblíquas alar e obturatória), usadas para o acetábulo.** As incidências de Judet exigem rodar o paciente cerca de 45 graus, o que é difícil no trauma. A inlet e a outlet não exigem essa mobilização."
+      "B": "**Confunde a projeção com uma mudança de posição do paciente.** O resumo é explícito: muda-se o feixe, não o paciente. Isso facilita o estudo no trauma, embora não dispense imagem adequada nem TC para avaliar a lesão posterior."
     },
     "referencias": [
-      "Young JW, Burgess AR, Brumback RJ, Poka A. Pelvic fractures: value of plain radiography in early assessment and management. Radiology. 1986;160(2):445-451.",
-      "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Imagem; Exame físico, fratura exposta e lesão de partes moles."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Imagem",
+            "Exame físico, fratura exposta e lesão de partes moles"
+          ],
+          "blocos": [
+            "imagem-4f412193",
+            "imagem-0a1f5cef",
+            "imagem-abbe22b6",
+            "imagem-06455337",
+            "exame-fisico-fratura-exposta-e-lesao-de-partes-m-4342ae7a"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "58457564dad159ae389fc298ad4d615e131d1ee2e9f80c1c9ebd6ce30eab20da"
+        }
+      ],
+      "questaoSha256": "6c0d3203fafef13f3e021d656b1c4d38c9b1f8cdc063531ba44921bc10fc275c",
+      "comentarioSha256": "1f8959fcf56a775beb904125b5651c9a7195b7e7742e6ac0361d4512ff67c19c"
+    }
   },
   "quadril-0536": {
-    "conceito": "**Classificação de Young e Burgess das lesões do anel pélvico.** Baseia-se no **vetor de força** do trauma e é muito útil na emergência, porque cada mecanismo tem padrões de lesão associada e de sangramento previsíveis.\n\n| Mecanismo | Padrão típico |\n|---|---|\n| Compressão lateral (LC) | Fraturas transversas dos ramos púbicos, impactação do sacro, rotação interna da hemipelve |\n| Compressão anteroposterior (APC) | **Abertura da sínfise** (\"livro aberto\"), abertura anterior da sacroilíaca |\n| Cisalhamento vertical (VS) | Deslocamento cranial da hemipelve |\n| Mecanismo combinado (CM) | Associação de padrões |\n\n**Graus da compressão anteroposterior.**\n- **APC I**: abertura da sínfise menor que 2,5 cm; ligamentos posteriores íntegros. Estável.\n- **APC II**: sínfise maior que 2,5 cm, ruptura dos ligamentos sacroilíacos anteriores, sacroespinais e sacrotuberais; ligamentos sacroilíacos posteriores íntegros. Instável rotacionalmente.\n- **APC III**: ruptura também dos ligamentos sacroilíacos posteriores; instabilidade rotacional e vertical.\n\n**Sangramento.** As lesões APC II e III aumentam o volume pélvico e lesam o plexo venoso pré-sacral, com alto risco de choque hemorrágico. A medida inicial é o **cinto pélvico** sobre os trocânteres maiores.\n\n**O caso.** Disjunção da sínfise maior que 3 cm em colisão de alta energia é o padrão de livro aberto, por compressão anteroposterior (APC II ou III). A mobilidade anormal ao exame reflete a instabilidade rotacional.\n\n> Sínfise aberta (livro aberto) = compressão anteroposterior; compressão lateral fecha o anel.",
-    "correta": "**B: Errado.** A disjunção da sínfise púbica maior que 3 cm é a lesão em livro aberto, produzida por **compressão anteroposterior**, que abre o anel e roda as hemipelves externamente. A compressão lateral produz o efeito oposto: roda a hemipelve internamente, com fraturas horizontais dos ramos e impactação do sacro, e tende a fechar o anel, não a abrir a sínfise.",
+    "conceito": "Uma sínfise púbica aberta mais de 3 cm sugere que a pelve **abriu**, em vez de se fechar por impacção lateral. Assim, atribuir o principal mecanismo a **compressão lateral** é **errado**, alternativa B.\n\nNa compressão anteroposterior, a hemipelve gira para fora como a capa de um livro. A sínfise falha primeiro; com progressão da lesão, abrem-se as estruturas anteriores da sacroilíaca. Os ligamentos posteriores podem permanecer como dobradiça na CAP II ou romper na CAP III (Rockwood, 10ª ed., cap. 50, “Compressão anteroposterior: o livro aberto”).\n\nNa compressão lateral, o movimento predominante é de **rotação interna**. O lado do impacto fecha, os ramos fraturam e a região anterior da asa do sacro pode ser impactada. Na CL II, a lesão posterior típica é o crescente do ilíaco; na CL III pode coexistir abertura do lado oposto. Portanto, mecanismos combinados existem, mas não justificam chamar a diástase anterior isoladamente descrita de padrão principal de fechamento lateral.\n\n**A medida anterior não determina sozinha a integridade posterior.** O limite clássico de 2,5 cm ajuda na distinção CAP I/II, mas tem variabilidade. É necessário avaliar sacroilíacas e sacro na TC e considerar a estabilidade real, sem classificar toda abertura maior como CAP III.",
+    "correta": "**B: errado.** O sinal predominante apresentado é abertura anterior, coerente com rotação externa e compressão anteroposterior. Compressão lateral típica produz fechamento e rotação interna, com impacção sacral.",
     "incorretas": {
-      "A": "**Marcar certo seria se deixar levar pelo exame descrito (mobilidade anormal à compressão lateral da bacia).** Esse dado é uma manobra de exame que testa a estabilidade, e não o mecanismo do trauma. O padrão radiográfico de abertura da sínfise identifica o vetor anteroposterior."
+      "A": "**Troca o sentido do mecanismo.** A CL pode ter padrões complexos e até abertura contralateral no tipo III, mas a descrição do caso não fornece essa combinação. O principal achado de sínfise muito aberta favorece o mecanismo em livro aberto."
     },
     "referencias": [
-      "Young JW, Burgess AR, Brumback RJ, Poka A. Pelvic fractures: value of plain radiography in early assessment and management. Radiology. 1986;160(2):445-451.",
-      "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Classificação de YOUNG e BURGESS"
+          ],
+          "blocos": [
+            "classificacao-de-young-e-burgess-ebd35d3b",
+            "classificacao-de-young-e-burgess-e761b1de",
+            "classificacao-de-young-e-burgess-466f1bcb",
+            "classificacao-de-young-e-burgess-cf3bad25",
+            "classificacao-de-young-e-burgess-91c756d4"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "b87a575241202c9b7e280a166b36f503440d09fd16bd331d7956b9e8184c071f"
+        }
+      ],
+      "questaoSha256": "ee3d3aef7e1d23631f2cc0167f73729742a36e909c3bbb330448330300d3e9dd",
+      "comentarioSha256": "032b696c281dae49a0470827ceae19c5ef2c41fd0be3216ac993deb131288a60"
+    }
   },
   "quadril-0537": {
-    "conceito": "**Estabilidade do anel pélvico (classificação de Tile).** A estabilidade depende principalmente do **complexo ligamentar posterior** (ligamentos sacroilíacos posteriores e interósseos), que funciona como uma ponte suspensa sustentando o sacro entre os ilíacos.\n\n| Tipo de Tile | Estabilidade | Exemplos |\n|---|---|---|\n| A | Estável (rotacional e vertical) | Avulsões, fraturas da asa ilíaca, fraturas transversas do sacro baixo |\n| B | **Rotacionalmente instável, verticalmente estável** | B1 livro aberto; B2 compressão lateral ipsilateral; B3 bilateral |\n| C | Instável rotacional e verticalmente | Ruptura completa posterior, cisalhamento vertical |\n\n**Por que o livro aberto é parcialmente instável.** Na lesão em livro aberto (Tile B1, ou APC II), rompem-se a sínfise, os ligamentos sacroilíacos anteriores, o sacroespinal e o sacrotuberal. A hemipelve roda externamente como a capa de um livro, mas os **ligamentos sacroilíacos posteriores permanecem íntegros**, funcionando como dobradiça. Por isso não há deslocamento vertical nem posterior.\n\n**Tratamento.** Fixação anterior (placa na sínfise ou fixador externo) costuma ser suficiente para fechar o livro e restaurar a estabilidade. Nas lesões tipo C, é preciso fixar também o anel posterior (parafusos iliossacrais, placas).\n\n> Livro aberto: instável na rotação, estável no plano vertical (Tile B).",
-    "correta": "**A: Certo.** As lesões em livro aberto (Tile B1, compressão anteroposterior tipo II) são parcialmente instáveis: a hemipelve roda externamente porque a sínfise e os ligamentos anteriores estão rotos, mas os ligamentos sacroilíacos posteriores íntegros mantêm a estabilidade no plano vertical. Se os ligamentos posteriores também se rompem, a lesão passa a ser totalmente instável (Tile C ou APC III).",
+    "conceito": "O livro aberto **pode manter estabilidade vertical apesar de perder estabilidade rotacional**. É nesse sentido que a banca considerou a afirmação **certa**, alternativa A: trata-se do padrão **TILE B1**, correspondente à lógica da CAP II.\n\nA hemipelve roda para fora, mas os **sacroilíacos posteriores permanecem íntegros** e funcionam como dobradiça. Abertura da sínfise e das estruturas anteriores permite a rotação; a continuidade posterior ainda contém a subida da hemipelve (Rockwood, 10ª ed., cap. 50, “Classificação de TILE” e “Compressão anteroposterior”).\n\n**A expressão “livro aberto” precisa de contexto.** Se a força progride e rompe também o complexo posterior, a lesão perde a estabilidade vertical, como na CAP III. Portanto, não é seguro concluir que qualquer pelve aberta é parcialmente instável. No caso, a descrição anterior permite reconhecer o padrão discutido pela questão, mas a integridade posterior precisa ser confirmada por imagem e avaliação da estabilidade.\n\nA consequência prática é que um anel que não sobe ainda pode rodar e precisar de estabilização. “Estável na vertical” não é sinônimo de anel intacto nem de tratamento conservador obrigatório.",
+    "correta": "**A: certo, no contexto de TILE B1/CAP II.** Há instabilidade de rotação com preservação do suporte posterior para o plano vertical. É essa combinação que define o grupo parcialmente instável.",
     "incorretas": {
-      "B": "**Marcar errado seria considerar toda abertura da sínfise como instabilidade completa.** A instabilidade vertical só ocorre quando o complexo posterior se rompe. A diferença entre parcial e completamente instável muda a fixação: anterior isolada no livro aberto, anterior e posterior na instabilidade completa."
+      "B": "**Ignora a estabilidade em planos diferentes.** A lesão pode abrir por rotação externa sem subir, porque os ligamentos posteriores ainda seguram o componente vertical. A opção seria defensável se a frase pretendesse abranger também CAP III, mas esse não é o padrão parcial escolhido pela banca."
     },
     "referencias": [
-      "Tile M. Pelvic ring fractures: should they be fixed? J Bone Joint Surg Br. 1988;70(1):1-12.",
-      "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de TILE e as outras; Classificação de YOUNG e BURGESS."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "alerta": "A oficial preservada no contexto de TILE B1/CAP II. A expressão “livro aberto” não garante, isoladamente, estabilidade vertical: CAP III rompe também o complexo posterior e é instável nos dois planos. Não inferir a integridade posterior apenas pela medida da sínfise.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Classificação de TILE e as outras",
+            "Classificação de YOUNG e BURGESS"
+          ],
+          "blocos": [
+            "classificacao-de-tile-e-as-outras-e15a618f",
+            "classificacao-de-young-e-burgess-91c756d4",
+            "classificacao-de-young-e-burgess-e761b1de",
+            "classificacao-de-young-e-burgess-466f1bcb"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "035f3288216db4041be3842193225c7e7b51557295c609587029797bacd993f0"
+        }
+      ],
+      "questaoSha256": "a2f33cec8ef64bc827d304dee5baf08d82a5172871e1ac6f991338fed5c6d7d6",
+      "comentarioSha256": "3f5eebbd25cf3606610677804b39b8a5ee89bbdbfeb06afe8b486d3807530652"
+    }
   },
   "quadril-0538": {
     "conceito": "**Ligamentos do anel pélvico e suas funções.** Cada grupo ligamentar resiste a um tipo de deslocamento, e conhecer essa relação explica os padrões de lesão.\n\n| Ligamento | Função principal |\n|---|---|\n| Sínfise púbica | Resiste à abertura anterior |\n| Sacroilíacos anteriores | Resistem à rotação externa |\n| **Sacroespinal** | Resiste à **rotação externa** da hemipelve |\n| **Sacrotuberal** | Resiste ao **cisalhamento vertical** e à rotação no plano sagital |\n| **Sacroilíacos posteriores e interósseos** | Os mais fortes; principal sustentação posterior, resistem ao **deslocamento vertical e posterior** |\n| Iliolombares | Ligam L5 ao ilíaco; reforçam a estabilidade posterior |\n\n**O conceito da ponte suspensa.** O sacro fica suspenso entre os ilíacos pelos ligamentos sacroilíacos posteriores, como uma ponte pelos cabos. Esses ligamentos são os mais importantes para a estabilidade vertical.\n\n**Aplicação aos padrões de lesão.**\n- Rotação externa (livro aberto): rompe sínfise, sacroilíacos anteriores e sacroespinal; com os posteriores íntegros, a lesão é verticalmente estável.\n- Cisalhamento vertical: rompe também os sacroilíacos posteriores e o sacrotuberal.\n\n> Sacroespinal: rotação externa. Sacrotuberal e sacroilíacos posteriores: estabilidade vertical.",
@@ -6637,17 +6743,44 @@
     "conferido": false
   },
   "quadril-0539": {
-    "conceito": "**Indicações de estabilização cirúrgica na lesão da sínfise púbica.** O limite clássico é a abertura de **2,5 cm**.\n\n**Por que 2,5 cm.** Estudos biomecânicos mostraram que a sínfise pode abrir até cerca de 2,5 cm apenas com a ruptura de seus ligamentos. Acima desse valor, é preciso que os ligamentos sacroespinais e sacroilíacos anteriores também estejam rotos, caracterizando instabilidade rotacional (APC II). Por isso:\n- **Menos de 2,5 cm (APC I)**: tratamento conservador, com carga protegida.\n- **Mais de 2,5 cm (APC II ou III)**: estabilização cirúrgica, geralmente com placa na sínfise (associada a fixação posterior se houver instabilidade vertical).\n\n**Lesão das vias urinárias.** A lesão de bexiga ou uretra é frequente nas lesões de alta energia com abertura da sínfise. Quando a bexiga precisa ser reparada por laparotomia, a sínfise costuma ser fixada no mesmo ato pela via de Pfannenstiel, o que reduz o risco de infecção do material em relação a uma fixação tardia e facilita o reparo urológico.\n\n**Outras indicações de fixação no anel pélvico.**\n- Instabilidade vertical (Tile C).\n- Deslocamento posterior maior que 1 cm.\n- Discrepância de membros.\n- Lesões expostas (após controle de danos).\n\n**Controle de danos.** No paciente instável hemodinamicamente, o cinto pélvico e o fixador externo antecedem a fixação definitiva.\n\n> Sínfise aberta mais de 2,5 cm ou lesão urinária associada: estabilizar cirurgicamente.",
-    "correta": "**A: Certo.** A abertura da sínfise púbica maior que 2,5 cm indica ruptura dos ligamentos anteriores do anel e instabilidade rotacional, sendo critério de estabilização cirúrgica. A associação com lesão das vias urinárias também favorece a fixação, muitas vezes realizada no mesmo tempo do reparo vesical pela via de Pfannenstiel.",
+    "conceito": "A sínfise aberta **mais de 2,5 cm** é uma indicação clássica de estabilização anterior no resumo. Já a associação com lesão urinária exige outra leitura: ela muda a **estratégia e o momento da fixação**, mas não aparece como indicação mecânica independente no capítulo. O gabarito oficial **A, certo**, é preservado com essa ressalva.\n\nA estabilidade vem principalmente do complexo posterior. Na frente, a diástase pode ser avaliada em imagem estática ou sob anestesia; a decisão também considera o padrão completo, o paciente e a lesão posterior (Rockwood, 10ª ed., cap. 50, “Indicações de estabilização”).\n\n**Bexiga e implante compartilham o mesmo campo.** Na ruptura extraperitoneal, urina pode alcançar a região da fratura anterior. Se houver fixação interna, o resumo orienta reparar bexiga e anel no mesmo tempo e pela mesma incisão. Se a bexiga não for reparada, ou houver derivação suprapúbica no campo, o fixador externo pode ser preferível para evitar contaminação do implante.\n\nPortanto, “a lesão urológica importa para a estabilização” é verdadeiro; “qualquer lesão urinária indica fixar uma pelve mecanicamente estável” não é uma conclusão sustentada. É essa separação entre **indicar a fixação** e **escolher como fixar** que evita transformar o gabarito numa regra inadequada.",
+    "correta": "**A: certo, pelo gabarito oficial.** A primeira parte, abertura superior a 2,5 cm, consta como indicação anterior. A segunda exige ressalva: lesão urinária influencia método e tempo, sem ser listada no resumo como motivo mecânico autônomo para operar.",
     "incorretas": {
-      "B": "**Marcar errado seria lembrar outro valor de corte, como 3 ou 4 cm, ou ignorar o papel da lesão urinária.** O valor de 2,5 cm é o mais citado na literatura de trauma pélvico, e a lesão vesical que exige laparotomia é uma indicação aceita para fixar a sínfise no mesmo procedimento."
+      "B": "**Não é a letra oficial, mas aponta uma limitação real da frase.** Seria correto questionar a generalização sobre vias urinárias: o resumo não as lista como indicação independente. Ao mesmo tempo, não se deve negar a indicação pela diástase maior que 2,5 cm, que está expressamente descrita."
     },
     "referencias": [
-      "Tile M. Pelvic ring fractures: should they be fixed? J Bone Joint Surg Br. 1988;70(1):1-12.",
-      "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Tratamento cirúrgico: indicações e princípios; Lesões urológicas."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "alerta": "A oficial preservada. O resumo sustenta a diástase >2,5 cm como indicação, mas não a lesão das vias urinárias isoladamente: esta modifica o método e o momento, com reparo da bexiga junto à fixação ou preferência pelo fixador em situações de contaminação. Não usar o “ou” para indicar cirurgia de toda pelve estável com lesão urinária.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Tratamento cirúrgico: indicações e princípios",
+            "Lesões urológicas"
+          ],
+          "blocos": [
+            "tratamento-cirurgico-indicacoes-e-principios-6d5c0ca0",
+            "lesoes-urologicas-656343a5",
+            "lesoes-urologicas-258a2e74",
+            "tratamento-cirurgico-indicacoes-e-principios-ac696ef2"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "0d53f87a743c3c3a4ba6c16e4ad7ef6b14f7cbd71d83478f0661b672e2f6b86c"
+        }
+      ],
+      "questaoSha256": "eedbcce750d40614525f0688b54ffdb575b46d51aa6858c0a38e8932e9a7ae8f",
+      "comentarioSha256": "903bf387f14b1912e162597fc99c093938c2edfa5500b7637d305d0745752d2d"
+    }
   },
   "quadril-0540": {
     "conceito": "**Lesões viscerais nas fraturas da pelve.** A pelve contém a bexiga, a uretra, o reto, a vagina, vasos ilíacos, o plexo venoso pré-sacral e o plexo lombossacral. Em traumas de alta energia, essas estruturas podem ser lesadas pelos fragmentos ou pelo deslocamento.\n\n**Frequência.**\n- **Trato urinário inferior (bexiga e uretra)**: o mais frequentemente lesado, em cerca de 5% a 20% das fraturas do anel pélvico. A lesão de uretra é mais comum em homens (uretra posterior, membranosa). Sinais: sangue no meato uretral, hematoma perineal ou escrotal, próstata elevada no toque retal, hematúria.\n- **Reto, ânus e vagina**: menos frequentes, mas transformam a fratura em **fratura exposta** da pelve, com mortalidade elevada pela infecção. Todo paciente com fratura pélvica precisa de toque retal e, em mulheres, de exame vaginal.\n\n**Fratura exposta da pelve.** Pode ser externa (pele do períneo, nádega) ou interna (através da vagina ou do reto). A mortalidade é alta, por sangramento e sepse. A conduta inclui controle de danos, desbridamento, antibioticoterapia e, quando há contaminação retal ou perineal extensa, **colostomia derivativa**.\n\n| Estrutura | Frequência | Ação |\n|---|---|---|\n| Bexiga e uretra | Mais frequentes | Uretrografia antes de sondar se houver sinais |\n| Reto e vagina | Menos frequentes, graves | Toque retal e exame vaginal; colostomia se contaminação |\n\n> Na fratura de pelve, o trato urinário é o mais lesado; reto e vagina são menos comuns, mas graves.",
@@ -8461,18 +8594,42 @@
     "conferido": false
   },
   "quadril-0669": {
-    "conceito": "**Espinha e túber isquiáticos são pontos de referência diferentes.** O sacroespinal liga o sacro à espinha isquiática e participa da estabilidade rotacional. O sacrotuberal vai ao túber isquiático e contribui para a estabilidade vertical. O túber também recebe origens dos isquiotibiais e de alguns rotadores curtos.\n\nO músculo piriforme é a referência para a saída das estruturas pelo forame isquiático maior. O nervo e os vasos glúteos superiores passam acima dele. O isquiático e a maior parte das outras estruturas da região emergem abaixo. Variações do isquiático existem, mas não mudam a relação habitual usada para reconhecer a região.\n\nO pudendo tem um trajeto distinto: sai da pelve pelo forame maior e retorna pelo menor. Esse percurso se relaciona com a espinha isquiática e os ligamentos da região. O isquiático segue para a coxa após a saída pelo maior; o obturatório usa o canal obturatório. Reconhecer cada passagem evita tratar todo nervo pélvico como parte do mesmo trajeto.",
-    "correta": "**C: espinha isquiática; túber isquiático.** O sacroespinal chega à espinha; o sacrotuberal, ao túber. A diferença acompanha suas orientações e contribuições à estabilidade pélvica: sacroespinal mais ligado à rotação e sacrotuberal às forças verticais.",
+    "conceito": "O **sacroespinal, ou sacroespinhoso**, chega à **espinha isquiática**. O **sacrotuberal, ou sacrotuberoso**, chega ao **túber isquiático**. A ordem pedida é, portanto, a da alternativa C.\n\nOs dois partem da região sacrococcígea e participam da estabilidade posterior acessória. O sacroespinhoso separa os forames isquiáticos maior e menor; o sacrotuberoso é mais superficial e largo. A diferença de destino ósseo ajuda a distinguir estruturas próximas sem trocar os nomes (Rockwood, 10ª ed., cap. 50, “Quem segura o anel”).\n\n**Acessório não significa principal sustentação do anel.** Os sacroilíacos posteriores e interósseos são os principais responsáveis pela estabilidade vertical e posterior. Conhecer as inserções dos dois ligamentos da pergunta é útil, mas não permite atribuir a eles sozinhos a função de todo o complexo posterior.\n\n> **Na prova:** espinhoso chega à espinha; tuberoso chega ao túber. Respeite essa ordem no par.",
+    "correta": "**C: espinha isquiática; túber isquiático.** Corresponde às inserções distais descritas para sacroespinhoso e sacrotuberoso, respectivamente.",
     "incorretas": {
-      "A": "**A segunda fixação está correta.** O túber é destino do sacrotuberal, mas o sacroespinal chega à espinha. A proximidade no desenho não significa uma inserção única para ambos.",
-      "B": "**Inverte as fixações dos ligamentos.** A faixa mais longa sacrotuberal termina no túber; a curta sacroespinal termina na espinha. Seguir cada faixa até o osso resolve a troca.",
-      "D": "**A primeira fixação está correta.** O sacrotuberal não compartilha esse destino: segue mais inferiormente até o túber. Espinha e túber são proeminências diferentes do ísquio."
+      "A": "**Repete a inserção do sacrotuberoso para os dois.** O túber é o destino do segundo ligamento; o primeiro se prende à espinha isquiática e participa da separação dos forames.",
+      "B": "**Troca os dois destinos.** O sacroespinhoso não termina no túber e o sacrotuberoso não termina na espinha. A alternativa contém os marcos corretos, mas em ordem inversa.",
+      "D": "**Repete a inserção do sacroespinhoso para os dois.** A espinha corresponde ao primeiro; para completar o par é necessário o túber isquiático, inserção do ligamento mais largo e superficial."
     },
     "referencias": [
-      "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulos Pelve e Coxa/Quadril: Músculos, Origens e Inserções, Nervos, Articulações e Acessos Cirúrgicos."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel."
     ],
-    "geradoEm": "2026-10-10",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Anatomia e biomecânica do anel"
+          ],
+          "blocos": [
+            "anatomia-e-biomecanica-do-anel-9eb66b24",
+            "anatomia-e-biomecanica-do-anel-13360708"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+        }
+      ],
+      "questaoSha256": "9855000e61d229c36d55b3c0ebc3021b26e4b03bd6dba3af8fb53bbcef5ef1bb",
+      "comentarioSha256": "03d0e28e9679fbc25a55c5928ceb2ecbd0c9118455ed5a7aaed8c95c17916c6e"
+    }
   },
   "quadril-0670": {
     "conceito": "**Espinha e túber isquiáticos são pontos de referência diferentes.** O sacroespinal liga o sacro à espinha isquiática e participa da estabilidade rotacional. O sacrotuberal vai ao túber isquiático e contribui para a estabilidade vertical. O túber também recebe origens dos isquiotibiais e de alguns rotadores curtos.\n\nO músculo piriforme é a referência para a saída das estruturas pelo forame isquiático maior. O nervo e os vasos glúteos superiores passam acima dele. O isquiático e a maior parte das outras estruturas da região emergem abaixo. Variações do isquiático existem, mas não mudam a relação habitual usada para reconhecer a região.\n\nO pudendo tem um trajeto distinto: sai da pelve pelo forame maior e retorna pelo menor. Esse percurso se relaciona com a espinha isquiática e os ligamentos da região. O isquiático segue para a coxa após a saída pelo maior; o obturatório usa o canal obturatório. Reconhecer cada passagem evita tratar todo nervo pélvico como parte do mesmo trajeto.",
