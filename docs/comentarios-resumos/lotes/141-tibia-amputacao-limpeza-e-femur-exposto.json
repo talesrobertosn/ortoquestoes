@@ -1,0 +1,195 @@
+{
+  "trauma-1712": {
+    "questaoSha256": "d28bec380fddc30d81bb6da83e00a5b6113e1f9de95a39457f1e6ce5706b4b20",
+    "comentarioAnteriorSha256": "d9c1c172075fae1ac675da144d6b98605a9332707173b224f15710a5d6b0f33a",
+    "comentario": {
+      "conceito": "Entre as situações oferecidas, a **isquemia quente por mais de 6 horas** é a indicação absoluta de amputação listada no resumo: alternativa D. O critério descreve um membro que permaneceu sem perfusão adequada, não simplesmente uma ferida aberta há esse tempo.\n\nO texto também cita membro ligado apenas por ponte de pele e reconstrução que coloca a vida em risco. A decisão precisa considerar sobrevivência e função provável; chamar toda exposta grave de amputação obrigatória ignora a possibilidade de revascularização, cobertura e reconstrução em pacientes selecionados (Rockwood, 10ª ed., cap. 63, “Amputação”).\n\n**O MESS não decide sozinho.** Ele combina energia, isquemia, choque e idade, mas escores altos tiveram desempenho muito variável para prever amputação. O capítulo ressalta que um escore baixo ajuda a prever salvamento, enquanto alto não comprova que amputar seja necessário.\n\nO tempo tampouco é uma autorização para esperar. A ameaça isquêmica exige avaliação imediata. O limiar da pergunta identifica uma situação extrema descrita na fonte; não transforma as primeiras seis horas em período seguro nem substitui a avaliação do tecido e do risco sistêmico.",
+      "correta": "**D: isquemia quente por mais de 6 horas.** É o critério expresso do resumo entre as opções, relacionado à ausência prolongada de perfusão, não apenas ao tempo desde a fratura.",
+      "incorretas": {
+        "A": "**IIIC significa necessidade de revascularização, não amputação automática.** A gravidade é grande, mas a própria classificação inclui situações tratadas com reparo para restaurar fluxo. É preciso avaliar o membro e o paciente, sem converter a categoria em sentença.",
+        "B": "**O corte histórico do MESS não tem poder decisório suficiente.** O resumo relata enorme variação de salvamento mesmo com escore alto. Usá-lo como indicação absoluta transformaria uma previsão imperfeita numa regra terapêutica.",
+        "C": "**Perda óssea é um problema reconstrutivo, não o limiar absoluto listado.** O capítulo descreve espaçador seguido de enxerto e transporte ósseo para defeitos. Isso não garante salvamento em todo caso, mas impede concluir amputação obrigatória apenas por mais de 4 cm de osso ausente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Exposta da diáfise da tíbia: haste, placa, fixador e amputação; Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção; Classificação: AO 42 e as partes moles."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Exposta da diáfise da tíbia: haste, placa, fixador e amputação",
+          "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção",
+          "Classificação: AO 42 e as partes moles"
+        ],
+        "blocos": [
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--8a8a61aa",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--d744ddb2",
+          "complicacoes-dor-no-joelho-material-consolidacao-f582fc8b",
+          "classificacao-ao-42-e-as-partes-moles-6a238635"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "75395ed57705de695632068a06fe128a8e4e01257420e64ea4db67912a871b88"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1093": {
+    "questaoSha256": "2dd480f283fc9c12c8e0bd11183c79029ec1fd57be6c110263e17318d2bdea23",
+    "comentarioAnteriorSha256": "914e0fdf1e2735650a57b47b06280c131717251a71975f5962b4f398c912db51",
+    "comentario": {
+      "conceito": "A alternativa B corresponde à indicação isquêmica pretendida pela banca, mas precisa ser lida com precisão: o resumo fala em **isquemia quente maior que 6 horas**, e não em qualquer lesão vascular que tenha seis horas de evolução.\n\nUma artéria lesada pode coexistir com perfusão distal preservada por outros vasos. O próprio resumo distingue essa situação da lesão que exige reparo para revascularizar a perna. Assim, **tempo desde o trauma e tempo sem perfusão não são equivalentes** (Rockwood, 10ª ed., cap. 63, “Gustilo” e “Amputação”).\n\nO MESS soma energia, isquemia, choque e idade, mas seu desempenho para decidir amputação é limitado. O capítulo não o usa como critério isolado: escores altos não previram amputação de maneira confiável nas séries comparadas.\n\nA associação de lesão nervosa e vascular também exige avaliar função provável e risco de reconstrução. A decisão não se reduz à sigla IIIC ou à idade. Diante de isquemia, a equipe deve agir imediatamente; não se deve esperar completar um limiar para buscar revascularização ou avaliar a viabilidade.",
+      "correta": "**B: lesão vascular com seis ou mais horas, conforme a resposta oficial.** O respaldo independente é mais específico: isquemia quente prolongada, descrita como maior que 6 horas. A redação não autoriza amputar toda lesão vascular apenas pelo relógio.",
+      "incorretas": {
+        "A": "**MESS alto não é indicação absoluta atual na fonte.** O limiar foi proposto historicamente, mas houve salvamento muito variável acima dele. A pontuação auxilia a descrição da gravidade e não substitui viabilidade e risco para a vida.",
+        "C": "**A paralisia fibular acrescenta dano funcional, mas não torna o par automaticamente absoluto.** IIIC identifica necessidade de revascularização. A fonte não lista a combinação com o nervo fibular como indicação obrigatória em todos os casos.",
+        "D": "**Comorbidade e neuropatia entram na decisão individual.** Elas podem piorar função, cicatrização e risco, mas o capítulo não torna idade, diabetes e grau II ou III uma indicação absoluta por si. A avaliação deve comparar reconstrução possível e risco sistêmico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Exposta da diáfise da tíbia: haste, placa, fixador e amputação; Classificação: AO 42 e as partes moles."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada. A opção fala em lesão vascular com seis ou mais horas de evolução; o corpo do resumo exige isquemia quente maior que 6 horas. Lesão vascular não equivale necessariamente a ausência de perfusão, e tempo desde o trauma não equivale a duração da isquemia. Não usar a redação ampla como ordem automática de amputação nem esperar seis horas para agir."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Exposta da diáfise da tíbia: haste, placa, fixador e amputação",
+          "Classificação: AO 42 e as partes moles"
+        ],
+        "blocos": [
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--8a8a61aa",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--d744ddb2",
+          "classificacao-ao-42-e-as-partes-moles-6a238635",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--982637f8"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "c85468b83daefc2fa3eac6abd2f9dc9e2d1be32462e636f8cb0682e84e8a127d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0824": {
+    "questaoSha256": "da146c7be14758904365003498badb537da1f5b4fdba801eedb29751e68fcac9",
+    "comentarioAnteriorSha256": "40455a1f1c77e3481159b5fafc915671388e75c10a5d015e3d5cc2bd00ef4c16",
+    "comentario": {
+      "conceito": "A banca marcou **A, MESS igual ou maior que sete**, mas esse corte não deve ser ensinado como ordem automática de amputação. O resumo atual enfatiza a validade limitada dos escores e lista **isquemia quente maior que 6 horas** como uma indicação absoluta.\n\nO MESS soma energia, isquemia, choque e idade, dobrando o componente isquêmico depois de seis horas. O limiar histórico citado no corpo é **maior que 7**, e o salvamento acima dele variou de 0% a 93%. Essa amplitude explica por que um escore alto não consegue decidir sozinho qual membro deve ser amputado (Rockwood, 10ª ed., cap. 63, “Amputação”).\n\n**A alternativa B também exige leitura clínica.** Uma lesão vascular com seis horas de evolução não prova seis horas de isquemia quente. Pode haver fluxo distal mantido. A indicação citada depende de ausência prolongada de perfusão, e a ameaça vascular deve ser tratada imediatamente, sem esperar um relógio completar o limite.\n\nLesão do fibular, neuropatia e a categoria de Gustilo participam do prognóstico, mas não são intercambiáveis com inviabilidade do membro. A escolha final compara função provável, complexidade da reconstrução e risco para a vida, preservando a resposta histórica sem reproduzir uma conduta simplista.",
+      "correta": "**A: MESS igual ou maior que sete pontos, pelo gabarito oficial.** O resumo atual não sustenta esse corte como indicação automática e cita o limiar histórico maior que 7. O alerta faz parte da interpretação clínica da questão.",
+      "incorretas": {
+        "B": "**É a opção que se aproxima do critério isquêmico, com uma condição essencial.** O corpo do resumo fala em isquemia quente maior que 6 horas, não em qualquer lesão vascular com essa idade. Se a perfusão estiver preservada, a equivalência não vale.",
+        "C": "**Lesão fibular nervosa no IIIC não basta para decidir.** O grau IIIC requer revascularização; a paralisia acrescenta preocupação funcional. A fonte não lista esse par como amputação obrigatória em todo paciente.",
+        "D": "**Neuropatia e fratura grave não substituem a avaliação de viabilidade.** Podem aumentar as dificuldades e pesar na decisão individual. Não estão apresentadas no resumo como critério absoluto isolado para retirar o membro."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Exposta da diáfise da tíbia: haste, placa, fixador e amputação; Classificação: AO 42 e as partes moles."
+      ],
+      "conferido": false,
+      "alerta": "A oficial preservada. O capítulo cita MESS maior que 7 como limiar histórico, mas mostra que escores altos não predizem amputação de modo confiável e não devem decidir sozinhos. O critério absoluto expresso é isquemia quente maior que 6 horas; a redação de B, lesão vascular com seis ou mais horas, é mais ampla e não prova duração da isquemia."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Exposta da diáfise da tíbia: haste, placa, fixador e amputação",
+          "Classificação: AO 42 e as partes moles"
+        ],
+        "blocos": [
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--d744ddb2",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--8a8a61aa",
+          "classificacao-ao-42-e-as-partes-moles-6a238635",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--982637f8"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "08c851662439ffc9d04a06c6dfda2710ced07330f98f0e2c75aa6f1b5d2cf2ff"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1216": {
+    "questaoSha256": "f64c2a54a536c746d0e01aa8a751e047a4da798d167fc679c1e23e003e015833",
+    "comentarioAnteriorSha256": "6ed1948b3eacc0aa79c2e83f0df5c088da38f40cd621ec7c4b4e0bbfffea2034",
+    "comentario": {
+      "conceito": "Numa fratura exposta de alta energia, a limpeza inicial da ferida faz parte essencial do tratamento. A afirmação é **certa**, alternativa A. No caso descrito, a cobertura óssea e a perfusão preservadas não eliminam a comunicação da ferida com o foco.\n\nO resumo orienta retirar contaminação grosseira, irrigar com soro, cobrir com curativo úmido estéril e documentar tamanho, localização e contaminação. A face anteromedial da tíbia tem pouca cobertura muscular, o que ajuda a explicar a vulnerabilidade do osso e das partes moles (Rockwood, 10ª ed., cap. 63, “A exposta mais comum do membro inferior”).\n\n**Limpar adequadamente não significa reabrir e manipular a ferida repetidas vezes.** O capítulo recomenda evitar inspeções repetidas e organiza desbridamento, estabilização e cobertura conforme a gravidade. Preservar o tecido viável e reconhecer o dano são partes do planejamento; a palavra exaustiva não autoriza agressão indiscriminada às partes moles.\n\nA pergunta julga a necessidade de limpeza inicial. Ela não determina um volume específico, uma pressão de irrigação nem a técnica de fechamento, que não devem ser acrescentados como se estivessem definidos no caso.",
+      "correta": "**A: Certo.** A retirada de contaminação e a irrigação com soro integram o atendimento inicial descrito. Isso deve ser feito com técnica adequada e sem inspeções repetidas desnecessárias.",
+      "incorretas": {
+        "B": "**Negaria uma medida inicial expressa.** A comunicação com o meio externo exige cuidado com a contaminação mesmo quando há boa perfusão e cobertura óssea. A ressalva sobre proteger tecidos e evitar manipulação repetida não equivale a dispensar limpeza."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Exposta da diáfise da tíbia: haste, placa, fixador e amputação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+        ],
+        "blocos": [
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--f7a00086",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--70bcf544"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "ce5e6143d7034a9bc209abb808ec16c09ad4264e9a65441933a2d92a503146b0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1158": {
+    "questaoSha256": "4d8645aef19dfdac772087209a5b80443e927616feafb4a6f9838dc358ca3707",
+    "comentarioAnteriorSha256": "0a31f29ed152881e967050b89d67569a8757c9831f203d5daa365fd078eddb78",
+    "comentario": {
+      "conceito": "Uma fratura exposta da diáfise femoral **pode receber haste intramedular fresada**. A exposição, por si só, não proíbe essa opção; pela fonte, a resposta é **provável A, Certo**, sem transformá-la em gabarito oficial.\n\nO resumo da diáfise femoral inclui as expostas entre as fraturas que podem receber haste e apresenta a fresagem como regra. Ela permite implante de maior diâmetro e, nas comparações citadas, reduziu pseudartrose e falha sem aumentar SDRA. Lesar temporariamente a circulação endosteal não significa abolir toda a circulação do osso: o fluxo periosteal aumenta (Rockwood, 10ª ed., cap. 57, “Haste intramedular” e “Fresagem”).\n\n**Indicação de haste não significa haste imediata em qualquer exposta.** Contaminação muito intensa, canal contaminado, esmagamento que exige revisões, lesão vascular e instabilidade fisiológica podem exigir fixador externo para controle de danos. O exame das partes moles e do estado geral decide a estratégia e o momento.\n\nA afirmação é aceitável como possibilidade de tratamento após avaliação e manejo da ferida. Seria excessiva se lida como obrigação universal de fresar e fixar definitivamente todo fêmur exposto no primeiro atendimento.",
+      "correta": "**A: Certo, provável pela bibliografia.** A haste fresada é uma opção indicada nas expostas da diáfise femoral, desde que paciente, canal e partes moles permitam. Não há gabarito oficial registrado.",
+      "incorretas": {
+        "B": "**Transformaria exposição numa contraindicação absoluta.** O resumo admite haste nas expostas e recomenda fresagem. As situações que pedem fixador temporário ou outra estratégia são selecionadas pela contaminação, fisiologia e lesões associadas, não apenas pela existência da ferida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada; Fresagem, diâmetro, bloqueio e carga; Fixador externo, placa e controle de dano."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial. Provável A pela fonte: haste fresada pode ser indicada na exposta diafisária femoral. Não interpretar a frase como indicação de fixação definitiva imediata em toda exposição; contaminação grave, canal contaminado, esmagamento, lesão vascular e instabilidade podem exigir fixador temporário.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-57-diafise-femur",
+        "titulo": "Fratura da diáfise do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+        "secoes": [
+          "Haste anterógrada: o ponto de entrada",
+          "Fresagem, diâmetro, bloqueio e carga",
+          "Fixador externo, placa e controle de dano"
+        ],
+        "blocos": [
+          "haste-anterograda-o-ponto-de-entrada-c8f3d97b",
+          "fresagem-diametro-bloqueio-e-carga-999f60a0",
+          "fixador-externo-placa-e-controle-de-dano-373ad787"
+        ],
+        "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "trechosSha256": "2ab78d97e0cc65382262e4de2479c2ab022d7cc2a57587daf6796a97167cb7f0"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

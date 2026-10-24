@@ -1,0 +1,125 @@
+{
+  "resolvidas": {
+    "trauma-0115": {
+      "pendenciaAnterior": "O corpo do resumo 57 descreve joelho flutuante e a ordem de fixação, mas não fornece a frequência de fratura exposta nessa associação. O próprio bloco contextual alerta que o valor vem de outra bibliografia. Falta a série/fonte que discrimine 20/40/60/80%; não usar o C oficial ou seu comentário como prova do percentual.",
+      "fontesNovas": [
+        {
+          "resumo": "rockwood10-63-diafise-tibia",
+          "titulo": "Fratura da diáfise da tíbia e da fíbula",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+          "secoes": [
+            "Lesões associadas: tornozelo, planalto, joelho e joelho flutuante"
+          ],
+          "blocos": [
+            "lesoes-associadas-tornozelo-planalto-joelho-e-jo-02bf461f"
+          ],
+          "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+          "trechosSha256": "20aae4d52cb48fa9f067bc845acb42ea23f984ff4c22d7c5be6f23e3e193dc40"
+        }
+      ],
+      "justificativa": "Corpo independente do resumo 63 lido integralmente nesta passagem: frequência e fatores prognósticos do joelho flutuante, localização proximal e preditores independentes da síndrome compartimental. Todas as opções avaliadas no lote 140."
+    },
+    "trauma-0748": {
+      "pendenciaAnterior": "O resumo 57 não compara os fatores prognósticos do joelho flutuante para decidir entre exposição tibial/femoral, extensão articular e lesão de quadril/tornozelo. O bloco contextual avisa que a resposta provém de outra bibliografia. Falta fonte de prognóstico desse padrão, sem extrapolar a orientação genérica de fixar o fêmur primeiro.",
+      "fontesNovas": [
+        {
+          "resumo": "rockwood10-63-diafise-tibia",
+          "titulo": "Fratura da diáfise da tíbia e da fíbula",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+          "secoes": [
+            "Lesões associadas: tornozelo, planalto, joelho e joelho flutuante",
+            "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+          ],
+          "blocos": [
+            "lesoes-associadas-tornozelo-planalto-joelho-e-jo-02bf461f",
+            "exposta-da-diafise-da-tibia-haste-placa-fixador--f7a00086"
+          ],
+          "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+          "trechosSha256": "8ef17d512346a02721a5e8ae901b4bc6f093a58a781a39997c47cfee77a7c653"
+        }
+      ],
+      "justificativa": "Corpo independente do resumo 63 lido integralmente nesta passagem: frequência e fatores prognósticos do joelho flutuante, localização proximal e preditores independentes da síndrome compartimental. Todas as opções avaliadas no lote 140."
+    },
+    "trauma-0746": {
+      "pendenciaAnterior": "O resumo 17 sustenta sexo masculino e destaca risco no planalto tibial, mas não compara terço proximal versus distal dentro de fraturas DIAFISÁRIAS da tíbia. Planalto não prova a afirmação diafisária decisiva de D. Falta fonte que compare a localização do traço na diáfise mantendo esse denominador; B e D não podem ser diferenciadas apenas pelo sexo.",
+      "fontesNovas": [
+        {
+          "resumo": "rockwood10-63-diafise-tibia",
+          "titulo": "Fratura da diáfise da tíbia e da fíbula",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+          "secoes": [
+            "Síndrome compartimental na fratura da tíbia"
+          ],
+          "blocos": [
+            "sindrome-compartimental-na-fratura-da-tibia-986bec53",
+            "sindrome-compartimental-na-fratura-da-tibia-62c872d7",
+            "sindrome-compartimental-na-fratura-da-tibia-039b79d6"
+          ],
+          "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+          "trechosSha256": "461cb374784f70bba8832a9288b97ccf00f0f6cc7f38ace664a58d795026d64b"
+        }
+      ],
+      "justificativa": "Corpo independente do resumo 63 lido integralmente nesta passagem: frequência e fatores prognósticos do joelho flutuante, localização proximal e preditores independentes da síndrome compartimental. Todas as opções avaliadas no lote 140."
+    },
+    "trauma-1714": {
+      "pendenciaAnterior": "O resumo 17 confirma juventude/sexo masculino e descreve baixa energia em parte dos casos, mas não demonstra traço longo + lesão esportiva de baixa energia como fatores INDEPENDENTES nem os compara a transverso curto/alta energia. Falta modelo ou estudo com esses preditores ajustados, indispensável para sustentar C versus D.",
+      "fontesNovas": [
+        {
+          "resumo": "rockwood10-63-diafise-tibia",
+          "titulo": "Fratura da diáfise da tíbia e da fíbula",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+          "secoes": [
+            "Síndrome compartimental na fratura da tíbia"
+          ],
+          "blocos": [
+            "sindrome-compartimental-na-fratura-da-tibia-986bec53",
+            "sindrome-compartimental-na-fratura-da-tibia-039b79d6"
+          ],
+          "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+          "trechosSha256": "18732bd81c0b56b93214ca6aa0270a2f02e637e591b6f3237d886156c077d57f"
+        }
+      ],
+      "justificativa": "Corpo independente do resumo 63 lido integralmente nesta passagem: frequência e fatores prognósticos do joelho flutuante, localização proximal e preditores independentes da síndrome compartimental. Todas as opções avaliadas no lote 140."
+    }
+  },
+  "pendentes": {
+    "trauma-0139": {
+      "pendencia": "A descrição tem ferida de 3 cm, lesão isolada da artéria tibial anterior e AO43-A3, mas não informa perfusão distal, necessidade de revascularização, contaminação, cobertura nem energia/lesão extensa das partes moles. O corpo do resumo 63 permite excluir IIIC somente no pé bem perfundido e exige mais que tamanho da ferida para separar II de IIIA/IIIB. Falta confirmar o exame vascular e o envelope no caso original; não inventar pé perfundido nem baixa energia para defender A. A oficial e comentário preservados.",
+      "questaoSha256": "939479ebe55c9eadf2b0c2665796fcf9fe637d90a733ee6e4117091bf43a84a0",
+      "comentarioAnteriorSha256": "acfbf0264b9bd04498a88074f931b98aab3e5e685c4d294beef79bc1b1356463",
+      "revisaoConcluida": false,
+      "fontesConsultadas": {
+        "rockwood10-57-diafise-femur": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "rockwood10-63-diafise-tibia": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    },
+    "conceitos-basicos-0373": {
+      "pendencia": "O corpo do resumo 57 sustenta o risco 4,5 vezes maior de pseudartrose femoral sem fresagem. No 63, o SPRINT não mostrou benefício da fresagem nas expostas e uma leitura de subgrupo sugeriu vantagem da não fresada; isso não equivale automaticamente a comprovar que fresagem não altera a taxa específica de reoperação. Falta a comparação primária de reoperações nas expostas, com definição de desfecho e teste, para conferir toda a segunda metade de C/D, sem confundir ausência de benefício com equivalência.",
+      "questaoSha256": "d937d9e418e0004c80fe86694be4e3aed79ab6995501b4a55a81424ab219df0c",
+      "comentarioAnteriorSha256": "d32b4c9cc026078b962dd2b9eb9dc1f951be7145fd6a56774873ed9cbd7bf46b",
+      "revisaoConcluida": false,
+      "fontesConsultadas": {
+        "rockwood10-57-diafise-femur": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "rockwood10-63-diafise-tibia": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    },
+    "conceitos-basicos-0067": {
+      "pendencia": "O corpo do resumo 63 admite troca de haste no retardo/pseudartrose sem infecção de uma tíbia já tratada com haste. A pergunta pede método preferencial de toda pseudartrose diafisária sem informar infecção, alinhamento, defeito ou implante inicial. Falta a fonte da preferência geral e da técnica fresada fechada versus aberta/enxerto/placa/osteotomia fibular para esse denominador. Não extrapolar uma indicação selecionada para toda pseudartrose tibial; B oficial e comentário preservados.",
+      "questaoSha256": "2b82a8bb6168399f8cd7c86c1f20421305b56f0b7ca262eceb8cf49136f0bc03",
+      "comentarioAnteriorSha256": "65ebf6bbd5d205523aeb4d09bb9f1b9fe501348f1586340b2b1165f4c6b4434e",
+      "revisaoConcluida": false,
+      "fontesConsultadas": {
+        "rockwood10-57-diafise-femur": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+        "rockwood10-63-diafise-tibia": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521"
+      }
+    }
+  }
+}
