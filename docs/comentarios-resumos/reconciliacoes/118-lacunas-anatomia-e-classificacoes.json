@@ -1,0 +1,30 @@
+{
+  "base": "a2f16e61b16312a2ccddf9a1440ba4f941c6dbcd",
+  "criterio": "Três questões e todas as opções confrontadas individualmente com os corpos independentes dos resumos 65/66. A imagem de 0695 foi aberta; inspeção não supre classificação ausente. Nenhuma pendência conta como revisão.",
+  "questoes": {
+    "trauma-0695": {
+      "questaoSha256": "93d359e5d8e420accbbcdd84ca6c85c6da747d7f9c923719a527bd278803f159",
+      "pendencia": "Figura trauma-0695-1.png aberta: esquema de fragmentação articular do calcâneo. A pergunta exige distinguir Sanders IIC, IIIAB, IIIBC e IV, mas o corpo independente do resumo 66 trata tálus e não apresenta a classificação tomográfica de Sanders, suas linhas A/B/C ou número de fragmentos. Falta fonte primária da classificação e plano de leitura para conferir todas as opções, sem inferir IIIBC da letra antiga. Imagem inspecionada, porém fonte insuficiente; C oficial e comentário preservados.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0823": {
+      "questaoSha256": "0e43d648bc84d9487a64d8845a06dee6613efcbc19117386cb77ebab57a6febc",
+      "pendencia": "O corpo do resumo 65 sustenta PAB III com fíbula cominuída por compressão/flexão no nível do plafond ou acima; não especifica o termo traço transverso da alternativa A. B é uma descrição infrassindesmal típica de SAD, e C/D tratam tamanho posterior sem definir PAB, mas a parte restante de A ainda precisa de fonte/figura independente que confirme a orientação do traço. Não usar o contexto da questão como prova desse adjetivo. A oficial e comentário preservados, sem selo novo.",
+      "estado": "pendente-fonte"
+    },
+    "pe-tornozelo-0395": {
+      "questaoSha256": "a30614774d5296699e532db81c90ac4cafe6566c4cf418af1687005eda1e9fc3",
+      "pendencia": "A questão exige a inserção precisa do talofibular posterior no tubérculo lateral do processo posterior (C oficial) versus colo lateral, tubérculo medial e tróclea. O corpo do resumo 66 descreve o ligamento atrás/abaixo do processo lateral e os dois tubérculos posteriores com FHL entre eles, mas não declara a inserção no tubérculo lateral posterior. O resumo 65 apenas nomeia o complexo lateral. Falta descrição/figura primária dessa inserção, sem confundir processo lateral do corpo com tubérculo lateral do processo posterior. C e comentário preservados, sem novo selo.",
+      "estado": "pendente-fonte"
+    }
+  },
+  "imagem0695": {
+    "arquivo": "trauma/trauma-0695-1.png",
+    "sha256": "a116402237f436aaecad081aef27c4a09e202af65880b3ee0746db8b289e2f12",
+    "inspecao": "Esquema do calcâneo e fragmentação articular aberto; sem classificação inferida do comentário antigo."
+  },
+  "resumosConferidosSha256": {
+    "rockwood10-65-tornozelo": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+    "rockwood10-66-talus": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc"
+  }
+}

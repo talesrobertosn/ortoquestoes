@@ -1,0 +1,77 @@
+{
+  "basePublicada": "a2f16e61b16312a2ccddf9a1440ba4f941c6dbcd",
+  "lotes": {
+    "117-talus-figuras-e-escapula.json": {
+      "sha256": "7a8062ed158bbc5c929d85bcde3917257f4e7add182e36d61e1f1086c4e0fd81",
+      "ids": [
+        "trauma-0764",
+        "trauma-1607",
+        "trauma-1610",
+        "trauma-0051",
+        "trauma-0538",
+        "trauma-0301",
+        "trauma-0779",
+        "trauma-0967",
+        "trauma-1346",
+        "trauma-1304"
+      ]
+    },
+    "118-escapula-fontes-cruzadas.json": {
+      "sha256": "8deff1916aaacbf9934421409c778ddd409f22614a3b11fc08b9be9ab53184a7",
+      "ids": [
+        "ombro-cotovelo-0134",
+        "trauma-0963",
+        "trauma-0050",
+        "trauma-0134",
+        "trauma-1129",
+        "trauma-1270",
+        "trauma-0822",
+        "trauma-0883",
+        "pe-tornozelo-0018",
+        "trauma-1091"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 503,
+    "head": "18039d8465d6728923695b728a906a0f6c605037",
+    "ci": 40065914329,
+    "merge": "a2f16e61b16312a2ccddf9a1440ba4f941c6dbcd",
+    "pages": 40066062214,
+    "deployJob": 120789815522,
+    "avulsosIntegrais": 20
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 passaram",
+    "acervo": "sem erros",
+    "npmTest": "suíte completa passou",
+    "build": "passou",
+    "cadeia": "20 IDs únicos; aplicações 117–118 reproduzidas desde a base; questões/gabaritos/membros alheios preservados, todas as alternativas, fontes, hashes e avulsos integrais conferidos",
+    "interface": "11 casos em celular/computador: 0764,1607,1610,0051,0538,0779,0967,ombro-0134,0963,0050,1129; cinco figuras, tabela, alertas e destinos de fonte conferidos; capturas representativas abertas"
+  },
+  "figuras": {
+    "trauma/trauma-0764-1.jpeg": {
+      "sha256": "546961b396a397f09e86f084a958fea511827376e7c3cf220dea0b559d1f843c",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-1607-1.jpeg": {
+      "sha256": "ba9e814731c799b3e2495d26df4012cf47047a37c5648183d408fa1e49b3bf9f",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-1610-1.jpeg": {
+      "sha256": "839b1d087db359f478f47abde04601be089710e13dbb5dde64346cb47a1b601d",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "ombro-cotovelo/ombro-cotovelo-0134-1.jpeg": {
+      "sha256": "42800154ac14175a75e8706506d1075ed4594f3cc6133e266eb1aa88e80600b3",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-0963-1.png": {
+      "sha256": "b556b72fdf8410a641115a2d7668dbb12c29eec2587d977d31737e3d43ee98dc",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    }
+  },
+  "lacunas": "118-lacunas-anatomia-e-classificacoes.json: três pendências específicas, sem revisão concluída; figura de 0695 também aberta e registrada ali.",
+  "publicado": false,
+  "proximoLote": "119"
+}

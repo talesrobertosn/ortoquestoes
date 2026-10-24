@@ -1,0 +1,426 @@
+{
+  "ombro-cotovelo-0134": {
+    "questaoSha256": "bcc1d53bfb02c5c27a21c55abc628375d48d42ba057a4be805ecd8556a81bd9b",
+    "comentarioAnteriorSha256": "52b6e708d01ce1142502c417ca2a9083843c517aab79337d4f7a6c1fef43924c",
+    "comentario": {
+      "conceito": "A seta está junto à **incisura espinoglenoidal**, na base da espinha, atrás da região glenoidal. Por esse trajeto passa o **nervo supraescapular**, alternativa A, que alcança o infraespinal depois de contornar a espinha.\n\nO nome das duas incisuras costuma confundir. O nervo primeiro passa pela **incisura da escápula**, percorre a fossa supraespinal sob o músculo e, depois, contorna a base da espinha pela **espinoglenoidal**. Seguir esse caminho na imagem é mais seguro que escolher um nervo apenas porque seu nome contém “escápula” (Rockwood, 10ª ed., cap. 33, “Anatomia aplicada”).\n\nEssa relação também explica o risco do acesso posterior. No Judet, mobilizar demais o infraespinal para proximal pode tracionar o feixe na incisura espinoglenoidal. O nervo pode ainda ficar preso no traço de uma fratura do colo, manifestando-se por atrofia do infraespinal. Trauma inicial e lesão durante a exposição são possibilidades diferentes.\n\nA resposta depende de identificar **a passagem do nervo ao redor da espinha**. Não é necessário presumir um sulco vascular da glenoide nem atribuir à figura uma lesão neurológica: ela mostra uma referência anatômica, não um teste de função.\n\n> **Na prova:** supraescapular contorna a espinha pela incisura espinoglenoidal e termina no infraespinal.",
+      "correta": "**A: o nervo supraescapular.** Seu trajeto pela incisura espinoglenoidal corresponde ao local apontado junto à base da espinha.",
+      "incorretas": {
+        "B": "**O nome não substitui o trajeto.** O nervo descrito contornando a espinha, passando da fossa supraespinal ao infraespinal, é o supraescapular. A denominação “dorsal da escápula” não identifica essa passagem.",
+        "C": "**Não é a passagem vascular que a questão assinala.** A referência é a incisura junto à espinha percorrida pelo feixe supraescapular; o simples fato de uma artéria ser posterior ao ombro não a coloca nesse trajeto.",
+        "D": "**Não corresponde à estrutura identificada na fonte para essa incisura.** O resumo descreve o nervo supraescapular contornando a base da espinha, e não uma “artéria arqueada da glenoide” como resposta anatômica à seta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular; Vias de acesso e técnica de fixação; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+          "Vias de acesso e técnica de fixação",
+          "Complicações"
+        ],
+        "blocos": [
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+          "complicacoes-3f02ac41"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "ec7999f72a8b432d2fdd08857d92cfd86e9253de4fc96ce32928182f76bffb2f"
+      }
+    ],
+    "imagensConferidas": [
+      "ombro-cotovelo/ombro-cotovelo-0134-1.jpeg"
+    ]
+  },
+  "trauma-0963": {
+    "questaoSha256": "484f0d4b96c72cbbb6ae307df5f0504557b97d80c0add4c8af5a857c7ce5709e",
+    "comentarioAnteriorSha256": "0d6fe034fea4243d35ebc3d0e0dc8d84ce6b2a823217d5debfd197f0e8c1b03c",
+    "comentario": {
+      "conceito": "A reconstrução mostra um fragmento da **borda anterior da glenoide**, com o restante principal da fossa preservado. Na classificação de **Ideberg modificada por Goss**, isso é **Ia**, alternativa A.\n\nA primeira distinção é borda versus centro. O tipo I reúne as fraturas da margem: **Ia anterior e Ib posterior**. Os tipos II e III separam segmentos da fossa e têm trajetos de saída próprios: II leva a glenoide inferior e sai pela borda lateral do corpo; III leva a porção superior com o coracoide e sai pela borda superior (Rockwood, 10ª ed., cap. 33, “Ideberg modificada por Goss”).\n\nNa imagem, o foco está na margem anterior, e não numa linha que separa a glenoide superior junto ao coracoide ou num segmento inferior propagado à borda lateral. Não é preciso estimar uma porcentagem de superfície a partir desta única reconstrução para nomear o tipo.\n\n**Classificar não determina automaticamente operar.** A conduta da borda depende de tamanho, desvio e estabilidade; a fossa precisa manter relação congruente com a cabeça do úmero. O resumo distingue pequenas fraturas periféricas das fendas verticais e dos fragmentos anteroinferiores desviados com instabilidade. A TC com subtração da cabeça ajuda a examinar essa superfície sem sobreposição.\n\n> **Na prova:** Ia é borda anterior; Ib, posterior. Depois de reconhecer o tipo, avalie a repercussão, sem inventar dimensões pela figura.",
+      "correta": "**A: Ia.** O fragmento corresponde à borda anterior, localização que define esse subtipo de fratura da margem glenoidal.",
+      "incorretas": {
+        "B": "**Troca o lado da borda.** Ib é a fratura da borda posterior; o fragmento mostrado está na margem anterior.",
+        "C": "**Transforma uma fratura de borda numa divisão da fossa inferior.** O II separa a glenoide inferior e se prolonga até a borda lateral do corpo, padrão diferente do fragmento marginal identificado.",
+        "D": "**Não há o segmento superior com coracoide que define III.** Esse tipo sai pela borda superior e leva a parte alta da glenoide; não é a classificação de uma fratura isolada anterior da margem."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas da glenoide; Epidemiologia, mecanismo, lesões associadas e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas da glenoide",
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "fraturas-da-glenoide-0ef4b3c3",
+          "fraturas-da-glenoide-b25a3b02",
+          "fraturas-da-glenoide-d94ae394",
+          "fraturas-da-glenoide-797e1a7b",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "ba502a0539eece56e47c7a71d91b0b9367e34ea2b9249bd6a04632905b830e8c"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0963-1.png"
+    ]
+  },
+  "trauma-0050": {
+    "questaoSha256": "6c9c8efc982b85927098e15d05c94208df240a0c2c761a7d1f87d5cce47347c8",
+    "comentarioAnteriorSha256": "089e0d8bd059c6ef2f481f6e620fa5987b099d289fec4477f23a8eba14e38c41",
+    "comentario": {
+      "conceito": "Um **ângulo glenopolar menor que 20 graus** é um critério relativo de cirurgia, sustentando A. Mas há um problema na forma das alternativas: uma **angulação maior que 60 graus**, em C, também ultrapassa o limite de 40 graus usado no resumo.\n\nO GPA descreve a relação da glenoide com o corpo: forma-se entre a linha dos polos superior e inferior da glenoide e a linha que vai do polo superior ao ângulo inferior da escápula. Já a angulação dos fragmentos da borda lateral é avaliada no perfil. São grandezas diferentes, apesar de ambas usarem graus (Rockwood, 10ª ed., cap. 33, “Medir o desvio e indicar a cirurgia”).\n\nO resumo emprega GPA menor que 20 ou maior que 60 graus, angulação maior que 40 graus e translação maior que 20 mm no fluxograma. No algoritmo, o deslocamento mediolateral aparece como 15–20 mm. **Não se pode refutar C dizendo que “o corte é 40, não 60”**: se o desvio já excedeu 60, ele também excedeu 40.\n\nAs medidas orientam a decisão junto com idade, atividade, estado geral e partes moles. O sentido é evitar uma consolidação que altere a relação glenoide-corpo e o trajeto dos músculos. Nenhum dos cortes transforma a cirurgia numa obrigação independente das condições do paciente.\n\n> **Na prova:** A é o gabarito oficial; C também satisfaz o critério de angulação da fonte. A ambiguidade deve ser ensinada, não escondida.",
+      "correta": "**A: ângulo glenopolar menor que 20 graus.** É um critério relativo do resumo. A resposta oficial é preservada, com ressalva porque C também ultrapassa o limite de angulação.",
+      "incorretas": {
+        "B": "**A unidade não é a do corte apresentado.** A fonte usa milímetros para translação, não porcentagem; sem a largura de referência, 20% não pode ser convertido automaticamente em mais de 20 mm.",
+        "C": "**Também favorece cirurgia pelo critério consultado.** Uma angulação maior que 60 graus está acima de 40; ela não é falsa apenas por não escrever o menor limite. Essa é a ambiguidade registrada no alerta.",
+        "D": "**Três milímetros não atingem o limiar extra-articular descrito.** O resumo fala em deslocamento mediolateral de 15–20 mm ou maior que 20 mm, conforme o quadro, não em 3 mm como corte para o corpo/colo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial A preservado. A é critério relativo, mas C (angulação >60°) também excede o corte >40° do resumo e favorece cirurgia. Não refutar C alegando que o limite correto seria menor: a afirmação continua satisfazendo o critério. Questão sem resposta única pela formulação e fonte consultadas."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-c5529532",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "f67d4c749612d036254256d62e79b302744636cefb5bc94754ebc2e9d34090ad"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0134": {
+    "questaoSha256": "0ea4a54044efa123bead7c010e6e0d5a41fa85f8ecf0fd022c7de51abcf6ca7a",
+    "comentarioAnteriorSha256": "4adcc759ea4a7f075ccffe2245d3fdcd0edfcefc4810a841499501e0a0c33732",
+    "comentario": {
+      "conceito": "A clavícula pode se separar do conjunto acromial sem que os ligamentos coracoclaviculares tenham rompido suas fibras: **a ruptura pode estar no osso do coracoide**. É essa falha óssea que a alternativa D procura.\n\nO coracoide recebe a ligação coracoclavicular. Quando a sua base se separa, o ligamento pode permanecer unido ao fragmento, mas esse fragmento já não está conectado ao restante da escápula. **Ligamento contínuo não significa complexo mecanicamente intacto.** O resumo descreve precisamente a variante óssea do colo cirúrgico em que a base do coracoide se separa com ligamentos íntegros (Rockwood, 10ª ed., cap. 33, “As três fraturas do colo”).\n\nA seção do coracoide também mostra que a lesão acromioclavicular associada frequentemente determina a estratégia. Na série do autor, fixar a acromioclavicular reduziu indiretamente o coracoide nos casos descritos. Isso ilustra por que é necessário avaliar o conjunto, sem concluir que toda fratura do processo exige uma fixação direta isolada.\n\nO enunciado usa o tipo III de Rockwood como cenário de separação acromioclavicular. A particularidade procurada é a **falha por fratura no local da ligação óssea**, em vez de atribuir integridade dos coracoclaviculares a qualquer fratura associada. O nível exato da fratura do coracoide precisa ser conferido na imagem.\n\n> **Na prova:** coracoide fraturado pode manter ligamentos contínuos no fragmento; continuidade de fibras não garante continuidade do anel.",
+      "correta": "**D: do processo coracoide.** A fratura da base pode interromper a conexão óssea mantendo os coracoclaviculares inseridos no fragmento, explicando o aparente paradoxo.",
+      "incorretas": {
+        "A": "**O acrômio é outro componente do anel.** Sua fratura não fornece, por si, a explicação da avulsão óssea na ligação coracoclavicular que o enunciado procura.",
+        "B": "**Não localiza a falha no coracoide.** A diáfise clavicular é um pilar do conjunto; sua fratura pode associar-se a outras lesões, mas não demonstra preservação dos coracoclaviculares pelo mecanismo ósseo descrito.",
+        "C": "**A cavidade articular não substitui a base coracoidea na explicação.** Uma fratura glenoidal pode coexistir, mas é preciso saber o que ocorreu com o coracoide e seus ligamentos para explicar a continuidade das fibras."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula; Processos: coracoide, acrômio e espinha lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula",
+          "Processos: coracoide, acrômio e espinha lateral"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1",
+          "processos-coracoide-acromio-e-espinha-lateral-b51c77ae",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-98825935"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "e203e8308b66f1d621c6592e8a7a44d13791ac098b45d9fdd06336e66458438a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1129": {
+    "questaoSha256": "da9cbbf2e371af53df45ef208930d4e1f86c235706da7fa3f961d73ec0de19ac",
+    "comentarioAnteriorSha256": "74c2e4882ebb60025df942d7338acee0799f7d5759c4955e18432fb2a1e8f125",
+    "comentario": {
+      "conceito": "Interpretando “desvio” como a **angulação dos fragmentos no perfil**, o resumo usa **mais de 40 graus** para favorecer fixação: D permanece a resposta bibliográfica/provável. Não há gabarito oficial registrado.\n\nO termo ombro flutuante não resolve sozinho a indicação. O conceito clássico associa colo da escápula e clavícula do mesmo lado; o autor do Rockwood, 10ª ed., cap. 33, insiste em avaliar se a glenoide perdeu de fato suas conexões osteoligamentares. Muitas fraturas vistas como “colo medializado” no AP são do corpo, com a porção inferior lateralizada.\n\nA medida, portanto, precisa ter um nome. **Angulação maior que 40 graus** não é **GPA maior que 40 graus**. O GPA normal citado fica em torno de 41, com faixa de 35–51; seu critério desfavorável é menor que 20 ou maior que 60 no algoritmo. Já a angulação da borda lateral é medida no perfil em Y ou na vista lateral da TC 3D.\n\nOs critérios são relativos, pesando junto com pele, idade, atividade e estado clínico. O autor também não considera que fixar apenas a clavícula reduza confiavelmente a escápula. Assim, a resposta de prova deve ensinar uma medida da deformidade, sem transformar o nome ombro flutuante em indicação absoluta para uma montagem específica.\n\n> **Na prova:** provável D se a pergunta se refere à angulação; confira qual ângulo está sendo medido.",
+      "correta": "**D: 40 graus, resposta bibliográfica/provável.** Acima desse limite de angulação no perfil, o resumo favorece cirurgia em contexto apropriado; não é um corte universal para qualquer ângulo do ombro.",
+      "incorretas": {
+        "A": "**Dez graus não são o limite de angulação usado aqui.** O capítulo emprega 40 graus para esse parâmetro; não se deve importar milímetros de desvio de processos como se fossem graus do colo.",
+        "B": "**Vinte graus lembram outro critério, com direção diferente.** GPA menor que 20 favorece cirurgia, mas não significa que angulação maior que 20 seja o corte perguntado.",
+        "C": "**Trinta graus ficam abaixo do limite de angulação consultado.** Isso não garante tratamento conservador se houver outros critérios; apenas não corresponde ao ponto de corte específico pedido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia; Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false,
+      "alerta": "Sem gabarito oficial registrado. Mantida D como resposta bibliográfica/provável ao interpretar o desvio como angulação dos fragmentos no perfil, com critério relativo >40°. O enunciado não nomeia o ângulo; não confundir com GPA nem tratar ombro flutuante como indicação absoluta e isolada. Estado clínico, pele e demais medidas continuam relevantes.",
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-cf2b403c"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "a0d09b0766ea6ebf346ff7c331d8986b8b238f793476147828e01aa3e2d8af57"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1270": {
+    "questaoSha256": "16111875d9dfba3d049fc61d000e85b259454510f526bc58598e9ea3133de6bf",
+    "comentarioAnteriorSha256": "6b6e9d0af6ea101474f580405a54579b6cb535876e46428aee6139e9fa6f206a",
+    "comentario": {
+      "conceito": "No politraumatizado, um afastamento **lateral** importante da cintura escapular deve levantar a suspeita de **dissociação escapulotorácica**. A radiografia AP do **tórax** permite comparar a escápula com a coluna: D.\n\nA lesão pode ser devastadora mesmo com a pele íntegra. O mecanismo é uma distração lateral violenta, por exemplo quando o membro fica preso e o corpo continua em movimento. Desfazem-se conexões osteoligamentares e musculares, com possível lesão de grandes vasos e do plexo braquial (Rockwood, 10ª ed., cap. 33, “Dissociação escapulotorácica”).\n\n**Deslocamento superior acromioclavicular e lateralização da cintura não são equivalentes.** Olhar apenas a clavícula em relação ao acrômio pode esconder a mudança da posição de toda a escápula em relação ao tronco. A imagem do tórax oferece essa visão mais ampla e também procura as lesões intratorácicas que influem na sobrevida.\n\nO exame neurológico e vascular é central, mas no paciente inconsciente sua interpretação pode ser limitada. A extensão da lesão do plexo é um fator decisivo do prognóstico; pele fechada e eventual circulação colateral não tornam o quadro benigno. O resumo não fornece um número de distância que, isoladamente, substitua essa avaliação.\n\n**Por que esta questão foi criada.** Ela muda o foco da articulação acromioclavicular para a relação da escápula inteira com o esqueleto axial, sinal de uma lesão neurovascular muito mais grave.",
+      "correta": "**D: lateral; radiografia anteroposterior do tórax.** O vetor de distração e a imagem que mostra a relação escápula-coluna correspondem ao quadro descrito.",
+      "incorretas": {
+        "A": "**Os dois componentes mantêm o foco local e não identificam o padrão pedido.** A suspeita específica é pela lateralização da cintura; a fonte destaca o tórax para ver a relação com a coluna.",
+        "B": "**O exame está correto, a direção está trocada.** O deslocamento superior local não é o vetor lateral de distração que caracteriza a suspeita descrita.",
+        "C": "**Reconhece a direção e escolhe uma avaliação que não substitui a visão do tronco.** O capítulo recomenda a radiografia de tórax para relacionar escápula e coluna, em vez de restringir a análise ao complexo acromioclavicular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Dissociação escapulotorácica; Epidemiologia, mecanismo, lesões associadas e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Dissociação escapulotorácica",
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "dissociacao-escapulotoracica-fb39e45c",
+          "dissociacao-escapulotoracica-317d48e0",
+          "dissociacao-escapulotoracica-2b65a722",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-c679b65b"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "3fd6c4154793778d0be1da48c820155974f84a3c81666838ad8c4e64667c33d2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0822": {
+    "questaoSha256": "b0c5605f0853b567c6e78350007f5927f12269f1eaa7f4fbb58fd9cb70cdcb58",
+    "comentarioAnteriorSha256": "6e01ab5a9a29c96feac9670952f1089e7f621e0fc4e6d2e735c4c577b7b860e4",
+    "comentario": {
+      "conceito": "A alternativa D reúne a **glenoide e a ligação coracoclavicular**, estruturas fundamentais para entender o ombro flutuante. O ponto central é saber se o segmento glenoidal continua conectado ao restante da escápula e ao esqueleto axial, não apenas encontrar duas estruturas machucadas no ombro.\n\nGoss descreveu o complexo suspensor superior como um anel osteoligamentar, com glenoide, coracoide, ligações coracoclaviculares e coracoacromial, clavícula lateral, articulação acromioclavicular e acrômio. Uma ruptura isolada costuma ser estável; duas rupturas independentes podem criar instabilidade (Rockwood, 10ª ed., cap. 33, “O anel de Goss”).\n\nA definição histórica de Herscovici é fratura ipsilateral da diáfise clavicular e do colo escapular. O autor do capítulo faz uma crítica mais estrita: **a glenoide precisa perder toda conexão osteoligamentar**, como no colo anatômico desviado ou no colo cirúrgico totalmente instável. A expressão “cavidade glenoidal e ligamentos coracoclaviculares” da resposta de prova é uma simplificação e não descreve, sozinha, todas as conexões que devem ser avaliadas.\n\nAssim, D é a opção que se aproxima da interrupção entre glenoide e suspensão axial. Não se deve ensinar que toda lesão articular glenoidal somada a uma lesão parcial do coracoclavicular basta para diagnosticar um ombro flutuante verdadeiro; traço, ligamentos e desvio precisam ser definidos.\n\n> **Na prova:** D aponta para glenoide e suspensão coracoclavicular; na prática, confirme quais conexões realmente foram perdidas.",
+      "correta": "**D: cavidade glenoidal e ligamentos coracoclaviculares.** É a associação da resposta oficial que envolve segmento glenoidal e sua suspensão. O enunciado simplifica a definição anatômica completa.",
+      "incorretas": {
+        "A": "**Lesar o acrômio não basta se a segunda estrutura não demonstra interrupção da suspensão glenoidal.** O intervalo dos rotadores não integra a lista do anel descrito por Goss; a associação não define o mecanismo de glenoide desconectada.",
+        "B": "**Mistura uma peça do anel a uma ligação com o úmero.** A clavícula lateral participa da suspensão, mas o coracoumeral não é um dos ligamentos nomeados no anel da fonte.",
+        "C": "**A presença do coracoide não valida qualquer associação ligamentar.** O ligamento glenoumeral superior não substitui as conexões coracoclavicular e coracoacromial que o capítulo usa ao discutir a suspensão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D preservado. A alternativa resume glenoide e suspensão coracoclavicular, mas não descreve uma condição suficiente para todo ombro flutuante verdadeiro. O autor exige perda de toda conexão osteoligamentar; lesão parcial ou fratura articular sem caracterizar colo e ligamentos não basta para aplicar automaticamente o diagnóstico."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-c3f3eaa7",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-c257bed2",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-3e879bce"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "cccfb9b6ebab2fd0c4a036967edcf0ce4297cd0fc8fcd3af0f2a90179d34c911"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0883": {
+    "questaoSha256": "a0d824078806eaf273e66f3b8938f33c640b549dac89fb8f3d25f28be95f7b51",
+    "comentarioAnteriorSha256": "fbe0bbfa2022884a8347c364328693bb44e70d2efc75d7b4ce296f5cdb2c1306",
+    "comentario": {
+      "conceito": "Com deltoide e sindesmose lesados, o encaixe perde a contenção medial e a ligação que mantém tíbia e fíbula unidas. A tendência procurada é o tálus deslocar **lateralmente sob estresse em eversão**, alternativa A.\n\nA camada profunda do deltoide vai da região do colículo posterior ao tálus e funciona como freio contra desvio lateral e rotação. A sindesmose completa a contenção do encaixe entre tíbia e fíbula. Quando esses dois componentes falham, a manobra pode revelar a abertura medial e a perda do centramento talar (Rockwood, 10ª ed., cap. 65, “Anatomia aplicada” e “Sindesmose”).\n\nÉ útil separar **a direção da translação** da **rotação aplicada**. Na pergunta, o movimento final relevante é para fora, com o espaço medial deixando de ser contido. Não se trata de uma gaveta anterior ou posterior, que procura uma translação no plano sagital.\n\nA interpretação dos testes tem limites. O resumo mostra que a rotação externa pode aumentar o espaço medial até na lesão isolada do deltoide e que os testes de sindesmose têm sensibilidade limitada e discordam entre si. Portanto, observar abertura medial não autoriza atribuir, por um teste só, cada estrutura rompida; aqui o enunciado já informa as duas lesões.\n\n> **Na prova:** deltoide mais sindesmose sem contenção permitem lateralização; o teste não deve ser interpretado fora do conjunto.",
+      "correta": "**A: lateralmente na manobra de estresse em eversão.** É a direção compatível com perda do freio medial e da contenção sindesmótica descritas no caso.",
+      "incorretas": {
+        "B": "**Inverte a direção em relação à contenção perdida.** O deltoide profundo freia a translação lateral; a lesão descrita não é uma explicação de deslocamento medial sob inversão.",
+        "C": "**Muda o plano do fenômeno pedido.** A gaveta anterior avalia translação anterior, enquanto a questão se concentra na perda de contenção do encaixe e na lateralização talar.",
+        "D": "**Também troca a direção por uma translação sagital.** Deslocamento posterior em gaveta não descreve o efeito de estresse lateral que decorre das duas falhas já informadas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide; Sindesmose: quando fixar, como testar e com o quê."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+          "Sindesmose: quando fixar, como testar e com o quê"
+        ],
+        "blocos": [
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "7d5e13a935c47b8ac114eae0522826170450f19cf84459bae477626598edc0ab"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pe-tornozelo-0018": {
+    "questaoSha256": "4abc10aaac5b2506a329db66371567c155cd3e021e8a09e5fb8c29e8117bd049",
+    "comentarioAnteriorSha256": "28e0666ae44ac5390f0a375d9875484298f03c0ce8c6a328cc6b0a7e1cde2407",
+    "comentario": {
+      "conceito": "A rotação lateral do tálus é usada para investigar a **sindesmose tibiofibular distal**, alternativa D. Ao girar para fora dentro da mortalha, o tálus solicita as ligações que mantêm tíbia e fíbula unidas. Isso ajuda a entender o alvo do teste sem decorar apenas seu nome.\n\nA sindesmose tem componentes anterior, posterior e interósseo; a perda de suas ligações pode permitir separação dos ossos. No padrão de supinação-rotação externa, a primeira estrutura do modelo é o tibiofibular anteroinferior, coerente com a solicitação anterior produzida pela rotação (Rockwood, 10ª ed., cap. 65, “Anatomia aplicada” e “Sindesmose”).\n\n**O teste não isola perfeitamente um ligamento.** O resumo mostra que o estresse em rotação externa pode aumentar o espaço medial mesmo quando apenas o deltoide foi seccionado. Assim, A não deve ser refutada com a ideia de que o deltoide não participa ou nunca é tensionado. O alvo sindesmótico da pergunta precisa ser distinguido da especificidade limitada da manobra.\n\nJá os ligamentos talocalcâneos pertencem à contenção subtalar, abaixo da articulação tibiotalar. O resumo 66 descreve ligamentos laterais resistindo à inversão e estruturas mediais resistindo à eversão nesse conjunto. Essa função não os torna a resposta específica ao teste sindesmótico pedido.\n\n> **Na prova:** D identifica o alvo; na prática, associe localização, exame e imagem, porque rotação externa não separa sozinha sindesmose de deltoide.",
+      "correta": "**D: ligamentos da sindesmose tibiofibular distal.** A rotação externa solicita a contenção entre tíbia e fíbula, mas o resultado deve ser interpretado com os demais achados.",
+      "incorretas": {
+        "A": "**Também pode responder à manobra, sem ser o alvo escolhido pela questão.** O deltoide profundo contém rotação e desvio lateral, e o resumo relata abertura medial sob rotação externa na lesão isolada dele. Não é correto afirmar que o teste o exclui.",
+        "B": "**Pertence ao conjunto subtalar.** Os talocalcâneos laterais participam da resistência à inversão entre tálus e calcâneo; não são a união tibiofibular distal que a rotação lateral procura investigar nesta questão.",
+        "C": "**Troca a região-alvo por uma contenção medial subtalar.** A estabilidade do retropé envolve estruturas mediais e laterais, mas isso não substitui a avaliação específica da sindesmose tibiofibular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide; Sindesmose: quando fixar, como testar e com o quê; A classificação de LAUGE-HANSEN e a de DANIS-WEBER.",
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seção: Luxação subtalar."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D preservado como alvo sindesmótico da pergunta. O resumo relata abertura medial no estresse em rotação externa mesmo com lesão isolada do deltoide; portanto, a manobra não é específica a ponto de refutar A dizendo que o deltoide não é solicitado."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+          "Sindesmose: quando fixar, como testar e com o quê",
+          "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+        ],
+        "blocos": [
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "7f23cf2eea23b9b9bd74eaf3e0fdb92b2f94cc7270708f9e9c6f396dc8eb043a"
+      },
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Luxação subtalar"
+        ],
+        "blocos": [
+          "luxacao-subtalar-5fa0c87f"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "dfd794b098b6d671d07cea31590547bae424cef30f66751c3b8470a742928b99"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1091": {
+    "questaoSha256": "d2e6e6c01ecc75c4fe94f35906dd02ab41f3772c9826d7489b41a7c555640907",
+    "comentarioAnteriorSha256": "3acb2eca38051500f11c1eb20be480455ef28142ac9c8c7a50136253c799233c",
+    "comentario": {
+      "conceito": "Entre os tipos I a IV oferecidos, o **Schatzker IV** é o padrão que exige maior atenção ao risco poplíteo: D. Ele não é apenas um fragmento medial quebrado; o capítulo o descreve como uma **variante da luxação do joelho**.\n\nO planalto medial é mais resistente e sua fratura costuma exigir energia alta. No padrão descrito, LCM e LCA permanecem presos ao fragmento medial, enquanto o planalto lateral e a diáfise se deslocam para longe dele e do fêmur. Essa perda importante das relações do joelho explica a preocupação neurovascular, inclusive quando a imagem inicial já não mostra uma luxação completa (Rockwood, 10ª ed., cap. 62, “O tipo IV é uma luxação disfarçada”).\n\nA avaliação vascular não termina ao encontrar um pulso. O resumo orienta documentar o **índice tornozelo-braço** na alta energia, com 0,9 como referência; abaixo disso, indica angiotomografia e avaliação vascular. Dissociação metáfise-diáfise e fraturas-luxações estão entre os padrões mais preocupantes. Esses cuidados acompanham exame, partes moles e avaliação de síndrome compartimental.\n\n**Maior risco não significa que os outros tipos não possam lesar vasos.** A questão compara os quatro tipos oferecidos, e não autoriza dispensar exame vascular numa fratura lateral. Energia, desvio e sinais do paciente continuam decisivos.\n\n> **Na prova:** IV é medial, de alta energia e pode esconder uma luxação; procure a lesão vascular mesmo depois de reduzir.",
+      "correta": "**D: IV.** O planalto medial com comportamento de fratura-luxação corresponde ao padrão de maior risco vascular destacado na comparação da fonte.",
+      "incorretas": {
+        "A": "**O tipo I é separação lateral.** Não apresenta, pela classificação isolada, o mesmo padrão medial de luxação descrito para IV; isso não elimina a necessidade de exame vascular individual.",
+        "B": "**O tipo II combina separação e depressão laterais.** A presença de afundamento não o transforma no padrão medial com alta propensão neurovascular que a questão procura.",
+        "C": "**O tipo III é depressão pura, frequentemente em osso osteoporótico.** É diferente da lesão medial de alta energia e instabilidade do IV; sua classificação também não substitui o exame do membro."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; Avaliação: exame, partes moles e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Como ler este capítulo",
+          "Classificação de SCHATZKER",
+          "Avaliação: exame, partes moles e imagem"
+        ],
+        "blocos": [
+          "como-ler-este-capitulo-ba9a6afd",
+          "classificacao-de-schatzker-a19af221",
+          "avaliacao-exame-partes-moles-e-imagem-caf89e44",
+          "classificacao-de-schatzker-9474d35a",
+          "classificacao-de-schatzker-b1760cec"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "6e05bced653e67242c67a7a73b5536117114f0292328a98c41ba80d1bab5f837"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

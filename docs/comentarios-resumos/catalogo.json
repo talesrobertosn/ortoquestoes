@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 909,
+  "pendente": 892,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 198,
-  "pendente-inspecao-imagem": 152,
-  "revisada": 1013
+  "pendente-fonte": 201,
+  "pendente-inspecao-imagem": 146,
+  "revisada": 1033
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -37,10 +37,10 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 31,
+    "pendente": 22,
     "pendente-fonte": 7,
-    "pendente-inspecao-imagem": 7,
-    "revisada": 87
+    "pendente-inspecao-imagem": 5,
+    "revisada": 98
    }
   },
   "rockwood10-34-fratura-clavicula": {
@@ -60,8 +60,8 @@
     "duplicada": 4,
     "pendente": 34,
     "pendente-fonte": 1,
-    "pendente-inspecao-imagem": 14,
-    "revisada": 41
+    "pendente-inspecao-imagem": 13,
+    "revisada": 42
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -232,10 +232,10 @@
    "titulo": "Fratura do planalto tibial",
    "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
    "estados": {
-    "pendente": 9,
+    "pendente": 8,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 2,
-    "revisada": 27
+    "revisada": 28
    }
   },
   "rockwood10-63-diafise-tibia": {
@@ -266,11 +266,11 @@
    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
-    "pendente": 15,
+    "pendente": 12,
     "pendente-anulada": 1,
-    "pendente-fonte": 4,
+    "pendente-fonte": 5,
     "pendente-inspecao-imagem": 4,
-    "revisada": 37
+    "revisada": 39
    }
   },
   "rockwood10-66-talus": {
@@ -278,10 +278,9 @@
    "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
    "estados": {
     "duplicada": 2,
-    "pendente": 24,
-    "pendente-fonte": 2,
-    "pendente-inspecao-imagem": 4,
-    "revisada": 21
+    "pendente": 20,
+    "pendente-fonte": 4,
+    "revisada": 27
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -21731,8 +21730,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21747,7 +21746,34 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "bcc1d53bfb02c5c27a21c55abc628375d48d42ba057a4be805ecd8556a81bd9b"
+   "questaoSha256": "bcc1d53bfb02c5c27a21c55abc628375d48d42ba057a4be805ecd8556a81bd9b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+       "Vias de acesso e técnica de fixação",
+       "Complicações"
+      ],
+      "blocos": [
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+       "complicacoes-3f02ac41"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "ec7999f72a8b432d2fdd08857d92cfd86e9253de4fc96ce32928182f76bffb2f"
+     }
+    ],
+    "questaoSha256": "bcc1d53bfb02c5c27a21c55abc628375d48d42ba057a4be805ecd8556a81bd9b",
+    "comentarioSha256": "10f0c14564c5e403661c2f4f0b4c8f157c4f2cd9421332029355d53830881eff"
+   }
   },
   "ombro-cotovelo-0170": {
    "tema": "ombro-cotovelo",
@@ -25740,7 +25766,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25755,7 +25781,50 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "4abc10aaac5b2506a329db66371567c155cd3e021e8a09e5fb8c29e8117bd049"
+   "questaoSha256": "4abc10aaac5b2506a329db66371567c155cd3e021e8a09e5fb8c29e8117bd049",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "Sindesmose: quando fixar, como testar e com o quê",
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "7f23cf2eea23b9b9bd74eaf3e0fdb92b2f94cc7270708f9e9c6f396dc8eb043a"
+     },
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Luxação subtalar"
+      ],
+      "blocos": [
+       "luxacao-subtalar-5fa0c87f"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "dfd794b098b6d671d07cea31590547bae424cef30f66751c3b8470a742928b99"
+     }
+    ],
+    "questaoSha256": "4abc10aaac5b2506a329db66371567c155cd3e021e8a09e5fb8c29e8117bd049",
+    "comentarioSha256": "1abc79e7a84b12523884cb2749edef7cee1de9bc045a7b855dbf3c041d425d1f"
+   }
   },
   "pe-tornozelo-0022": {
    "tema": "pe-tornozelo",
@@ -26712,8 +26781,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige a inserção precisa do talofibular posterior no tubérculo lateral do processo posterior (C oficial) versus colo lateral, tubérculo medial e tróclea. O corpo do resumo 66 descreve o ligamento atrás/abaixo do processo lateral e os dois tubérculos posteriores com FHL entre eles, mas não declara a inserção no tubérculo lateral posterior. O resumo 65 apenas nomeia o complexo lateral. Falta descrição/figura primária dessa inserção, sem confundir processo lateral do corpo com tubérculo lateral do processo posterior. C e comentário preservados, sem novo selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -26727,7 +26796,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "a30614774d5296699e532db81c90ac4cafe6566c4cf418af1687005eda1e9fc3"
+   "questaoSha256": "a30614774d5296699e532db81c90ac4cafe6566c4cf418af1687005eda1e9fc3",
+   "pendencia": "A questão exige a inserção precisa do talofibular posterior no tubérculo lateral do processo posterior (C oficial) versus colo lateral, tubérculo medial e tróclea. O corpo do resumo 66 descreve o ligamento atrás/abaixo do processo lateral e os dois tubérculos posteriores com FHL entre eles, mas não declara a inserção no tubérculo lateral posterior. O resumo 65 apenas nomeia o complexo lateral. Falta descrição/figura primária dessa inserção, sem confundir processo lateral do corpo com tubérculo lateral do processo posterior. C e comentário preservados, sem novo selo."
   },
   "pe-tornozelo-0396": {
    "tema": "pe-tornozelo",
@@ -43513,7 +43583,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43528,7 +43598,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "6c9c8efc982b85927098e15d05c94208df240a0c2c761a7d1f87d5cce47347c8"
+   "questaoSha256": "6c9c8efc982b85927098e15d05c94208df240a0c2c761a7d1f87d5cce47347c8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "medir-o-desvio-e-indicar-a-cirurgia-c5529532",
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "f67d4c749612d036254256d62e79b302744636cefb5bc94754ebc2e9d34090ad"
+     }
+    ],
+    "questaoSha256": "6c9c8efc982b85927098e15d05c94208df240a0c2c761a7d1f87d5cce47347c8",
+    "comentarioSha256": "92eed656208c92329cd24dcda29c072efc139cb838239c719109ea8e10a7899f"
+   }
   },
   "trauma-0051": {
    "tema": "trauma",
@@ -43537,7 +43633,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43552,7 +43648,35 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "e4cddbade1cff4e98034f85d3d648ccd63dad0364db08a2263643c11b9daec69"
+   "questaoSha256": "e4cddbade1cff4e98034f85d3d648ccd63dad0364db08a2263643c11b9daec69",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Exame e imagem",
+       "Anatomia e vascularização",
+       "Outras complicações e resultados"
+      ],
+      "blocos": [
+       "exame-e-imagem-a813d17f",
+       "exame-e-imagem-07b8d2b2",
+       "anatomia-e-vascularizacao-3df26679",
+       "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "b1ad3538136f9dcab07b45a37db3a787400e4769d1345eee0cc1a7a3265d5a3d"
+     }
+    ],
+    "questaoSha256": "e4cddbade1cff4e98034f85d3d648ccd63dad0364db08a2263643c11b9daec69",
+    "comentarioSha256": "81655672b5d04049d6aea7682e9915dc4acda18e07b0e3e6b12d5645471c27bd"
+   }
   },
   "trauma-0052": {
    "tema": "trauma",
@@ -46258,7 +46382,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46273,7 +46397,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "0ea4a54044efa123bead7c010e6e0d5a41fa85f8ecf0fd022c7de51abcf6ca7a"
+   "questaoSha256": "0ea4a54044efa123bead7c010e6e0d5a41fa85f8ecf0fd022c7de51abcf6ca7a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula",
+       "Processos: coracoide, acrômio e espinha lateral"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1",
+       "processos-coracoide-acromio-e-espinha-lateral-b51c77ae",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-98825935"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "e203e8308b66f1d621c6592e8a7a44d13791ac098b45d9fdd06336e66458438a"
+     }
+    ],
+    "questaoSha256": "0ea4a54044efa123bead7c010e6e0d5a41fa85f8ecf0fd022c7de51abcf6ca7a",
+    "comentarioSha256": "4328f39d77e4e040c83c34f6e931e7db05fd80fc03cc931453db35f76e29fb22"
+   }
   },
   "trauma-0135": {
    "tema": "trauma",
@@ -51002,14 +51152,43 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "798ab20a1f9942c347c710eb9c3735a29540d31735e88f2ca90c511c93901a64"
+   "questaoSha256": "798ab20a1f9942c347c710eb9c3735a29540d31735e88f2ca90c511c93901a64",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Mecanismo, epidemiologia e lesões associadas",
+       "Processos lateral e posterior",
+       "Exame e imagem",
+       "Tratamento da fratura do colo"
+      ],
+      "blocos": [
+       "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+       "processos-lateral-e-posterior-9475f77d",
+       "exame-e-imagem-01c205b8",
+       "tratamento-da-fratura-do-colo-ef0a1cf8"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "e2ef3105ec058f37640fb5d00c5d6c8ed6cf74dae053cdb45f444f2d5e1fb0cc"
+     }
+    ],
+    "questaoSha256": "798ab20a1f9942c347c710eb9c3735a29540d31735e88f2ca90c511c93901a64",
+    "comentarioSha256": "dab25989cd14eb8cf34b8aaab45e052768e8e2e97447ba2d307da8ae3c2dac61"
+   }
   },
   "trauma-0302": {
    "tema": "trauma",
@@ -54115,7 +54294,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54130,7 +54309,38 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "c0ce165fcd72f0830b2f59179409eee15211c8d20224a063c70c727832416661"
+   "questaoSha256": "c0ce165fcd72f0830b2f59179409eee15211c8d20224a063c70c727832416661",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Processos lateral e posterior",
+       "Anatomia e vascularização",
+       "Mecanismo, epidemiologia e lesões associadas",
+       "Exame e imagem"
+      ],
+      "blocos": [
+       "processos-lateral-e-posterior-17b015ec",
+       "anatomia-e-vascularizacao-34b1f1fd",
+       "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+       "mecanismo-epidemiologia-e-lesoes-associadas-a149b034",
+       "mecanismo-epidemiologia-e-lesoes-associadas-180e2a08",
+       "exame-e-imagem-94c5a174"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "8ab9c2d3982ed0074dedc97f0cdfd971972972157352e07e44ed391129442804"
+     }
+    ],
+    "questaoSha256": "c0ce165fcd72f0830b2f59179409eee15211c8d20224a063c70c727832416661",
+    "comentarioSha256": "42ea235187e143d3bc6017ada5bdd11ea0f85312518ff5c850f37a915050c727"
+   }
   },
   "trauma-0539": {
    "tema": "trauma",
@@ -56315,14 +56525,15 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura trauma-0695-1.png aberta: esquema de fragmentação articular do calcâneo. A pergunta exige distinguir Sanders IIC, IIIAB, IIIBC e IV, mas o corpo independente do resumo 66 trata tálus e não apresenta a classificação tomográfica de Sanders, suas linhas A/B/C ou número de fragmentos. Falta fonte primária da classificação e plano de leitura para conferir todas as opções, sem inferir IIIBC da letra antiga. Imagem inspecionada, porém fonte insuficiente; C oficial e comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "93d359e5d8e420accbbcdd84ca6c85c6da747d7f9c923719a527bd278803f159"
+   "questaoSha256": "93d359e5d8e420accbbcdd84ca6c85c6da747d7f9c923719a527bd278803f159",
+   "pendencia": "Figura trauma-0695-1.png aberta: esquema de fragmentação articular do calcâneo. A pergunta exige distinguir Sanders IIC, IIIAB, IIIBC e IV, mas o corpo independente do resumo 66 trata tálus e não apresenta a classificação tomográfica de Sanders, suas linhas A/B/C ou número de fragmentos. Falta fonte primária da classificação e plano de leitura para conferir todas as opções, sem inferir IIIBC da letra antiga. Imagem inspecionada, porém fonte insuficiente; C oficial e comentário preservados."
   },
   "trauma-0696": {
    "tema": "trauma",
@@ -57931,8 +58142,8 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -57946,7 +58157,36 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "d305bff82c36f40c452b19d493af00413d366df726b06dff456f3237e47eaef5"
+   "questaoSha256": "d305bff82c36f40c452b19d493af00413d366df726b06dff456f3237e47eaef5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Classificação",
+       "Exame e imagem",
+       "Tratamento da fratura do colo"
+      ],
+      "blocos": [
+       "classificacao-0661f9be",
+       "classificacao-8c0949d3",
+       "classificacao-61adeb6a",
+       "exame-e-imagem-176e1e03",
+       "tratamento-da-fratura-do-colo-27729aa9"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "25d9a8026a8195716d4f31ace55c7f7d6a4f4ac0ff8dd52f6808f0b6c376a8d4"
+     }
+    ],
+    "questaoSha256": "d305bff82c36f40c452b19d493af00413d366df726b06dff456f3237e47eaef5",
+    "comentarioSha256": "6aacffe5072e14b4afb4d7f95939f0f4db6369d86947a25b2cef7b245d01f295"
+   }
   },
   "trauma-0766": {
    "tema": "trauma",
@@ -58294,7 +58534,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58309,7 +58549,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "c4ce7864c730e35db7e4137d21d767403a19812d14c35759316d0a9396ee3bdd"
+   "questaoSha256": "c4ce7864c730e35db7e4137d21d767403a19812d14c35759316d0a9396ee3bdd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "medir-o-desvio-e-indicar-a-cirurgia-c5529532",
+       "medir-o-desvio-e-indicar-a-cirurgia-4920c185",
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "a19a0a2532f302cbf30f5f95715f78c61b15c4fb46ea0bca246b80c23c477bfa"
+     }
+    ],
+    "questaoSha256": "c4ce7864c730e35db7e4137d21d767403a19812d14c35759316d0a9396ee3bdd",
+    "comentarioSha256": "58e84524bb48caf7f6c3f72411200eac37a712defdc873068544c8af9cf620b4"
+   }
   },
   "trauma-0781": {
    "tema": "trauma",
@@ -59412,7 +59679,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -59427,7 +59694,41 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "b0c5605f0853b567c6e78350007f5927f12269f1eaa7f4fbb58fd9cb70cdcb58"
+   "questaoSha256": "b0c5605f0853b567c6e78350007f5927f12269f1eaa7f4fbb58fd9cb70cdcb58",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-1a1236f3",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-606b04a3",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-e73ac438",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-7aab42cf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-741f59b5",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-140e6e18",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c3f3eaa7",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-c257bed2",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-3e879bce"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "cccfb9b6ebab2fd0c4a036967edcf0ce4297cd0fc8fcd3af0f2a90179d34c911"
+     }
+    ],
+    "questaoSha256": "b0c5605f0853b567c6e78350007f5927f12269f1eaa7f4fbb58fd9cb70cdcb58",
+    "comentarioSha256": "ab3019c1d03ce9257d6712983d3015dd5d2e536007b103d66d52738a169c9498"
+   }
   },
   "trauma-0823": {
    "tema": "trauma",
@@ -59436,8 +59737,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 65 sustenta PAB III com fíbula cominuída por compressão/flexão no nível do plafond ou acima; não especifica o termo traço transverso da alternativa A. B é uma descrição infrassindesmal típica de SAD, e C/D tratam tamanho posterior sem definir PAB, mas a parte restante de A ainda precisa de fonte/figura independente que confirme a orientação do traço. Não usar o contexto da questão como prova desse adjetivo. A oficial e comentário preservados, sem selo novo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -59451,7 +59752,8 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0e43d648bc84d9487a64d8845a06dee6613efcbc19117386cb77ebab57a6febc"
+   "questaoSha256": "0e43d648bc84d9487a64d8845a06dee6613efcbc19117386cb77ebab57a6febc",
+   "pendencia": "O corpo do resumo 65 sustenta PAB III com fíbula cominuída por compressão/flexão no nível do plafond ou acima; não especifica o termo traço transverso da alternativa A. B é uma descrição infrassindesmal típica de SAD, e C/D tratam tamanho posterior sem definir PAB, mas a parte restante de A ainda precisa de fonte/figura independente que confirme a orientação do traço. Não usar o contexto da questão como prova desse adjetivo. A oficial e comentário preservados, sem selo novo."
   },
   "trauma-0824": {
    "tema": "trauma",
@@ -60627,7 +60929,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60642,7 +60944,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "a0d824078806eaf273e66f3b8938f33c640b549dac89fb8f3d25f28be95f7b51"
+   "questaoSha256": "a0d824078806eaf273e66f3b8938f33c640b549dac89fb8f3d25f28be95f7b51",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "Sindesmose: quando fixar, como testar e com o quê"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "7d5e13a935c47b8ac114eae0522826170450f19cf84459bae477626598edc0ab"
+     }
+    ],
+    "questaoSha256": "a0d824078806eaf273e66f3b8938f33c640b549dac89fb8f3d25f28be95f7b51",
+    "comentarioSha256": "4e5c1e58ceda3c2b627f088d1dbb11fbf7605d631e811db71ff516393b7b3346"
+   }
   },
   "trauma-0884": {
    "tema": "trauma",
@@ -62732,8 +63060,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -62747,7 +63075,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "484f0d4b96c72cbbb6ae307df5f0504557b97d80c0add4c8af5a857c7ce5709e"
+   "questaoSha256": "484f0d4b96c72cbbb6ae307df5f0504557b97d80c0add4c8af5a857c7ce5709e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Fraturas da glenoide",
+       "Epidemiologia, mecanismo, lesões associadas e imagem"
+      ],
+      "blocos": [
+       "fraturas-da-glenoide-0ef4b3c3",
+       "fraturas-da-glenoide-b25a3b02",
+       "fraturas-da-glenoide-d94ae394",
+       "fraturas-da-glenoide-797e1a7b",
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-ee9bed0c"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "ba502a0539eece56e47c7a71d91b0b9367e34ea2b9249bd6a04632905b830e8c"
+     }
+    ],
+    "questaoSha256": "484f0d4b96c72cbbb6ae307df5f0504557b97d80c0add4c8af5a857c7ce5709e",
+    "comentarioSha256": "a47d2c3e4b01340a8ae936168a606f8c34370bf5fd3cb2e2d348a064ddf1bcb2"
+   }
   },
   "trauma-0964": {
    "tema": "trauma",
@@ -62864,7 +63220,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62879,7 +63235,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "a5b80039c210c886fac450be79c1c7521589c7762ea179ac26b6d160c535c1b4"
+   "questaoSha256": "a5b80039c210c886fac450be79c1c7521589c7762ea179ac26b6d160c535c1b4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia",
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "medir-o-desvio-e-indicar-a-cirurgia-c5529532",
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "5de7be4301bd8a349d427b5c4f18bb1ea9f0b6399bad5849dfb5bc9422966352"
+     }
+    ],
+    "questaoSha256": "a5b80039c210c886fac450be79c1c7521589c7762ea179ac26b6d160c535c1b4",
+    "comentarioSha256": "10561e6bc901fd7af2a2dfca8165f286199a620a9868551e29c85459534a732d"
+   }
   },
   "trauma-0970": {
    "tema": "trauma",
@@ -66117,7 +66501,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66132,7 +66516,36 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "d2e6e6c01ecc75c4fe94f35906dd02ab41f3772c9826d7489b41a7c555640907"
+   "questaoSha256": "d2e6e6c01ecc75c4fe94f35906dd02ab41f3772c9826d7489b41a7c555640907",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Como ler este capítulo",
+       "Classificação de SCHATZKER",
+       "Avaliação: exame, partes moles e imagem"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-ba9a6afd",
+       "classificacao-de-schatzker-a19af221",
+       "avaliacao-exame-partes-moles-e-imagem-caf89e44",
+       "classificacao-de-schatzker-9474d35a",
+       "classificacao-de-schatzker-b1760cec"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "6e05bced653e67242c67a7a73b5536117114f0292328a98c41ba80d1bab5f837"
+     }
+    ],
+    "questaoSha256": "d2e6e6c01ecc75c4fe94f35906dd02ab41f3772c9826d7489b41a7c555640907",
+    "comentarioSha256": "cd24074fc85cf6f5f017d4b850ed5149254ff6c136ff306a40f2b6611516c669"
+   }
   },
   "trauma-1092": {
    "tema": "trauma",
@@ -67292,7 +67705,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67307,7 +67720,35 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "da9cbbf2e371af53df45ef208930d4e1f86c235706da7fa3f961d73ec0de19ac"
+   "questaoSha256": "da9cbbf2e371af53df45ef208930d4e1f86c235706da7fa3f961d73ec0de19ac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Medir o desvio e indicar a cirurgia",
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+       "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c",
+       "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-cf2b403c"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "a0d09b0766ea6ebf346ff7c331d8986b8b238f793476147828e01aa3e2d8af57"
+     }
+    ],
+    "questaoSha256": "da9cbbf2e371af53df45ef208930d4e1f86c235706da7fa3f961d73ec0de19ac",
+    "comentarioSha256": "407549831fe2f71589e87a4952d59c524e4558a69eb2a3bb4abe1b2e4a120c0f"
+   }
   },
   "trauma-1131": {
    "tema": "trauma",
@@ -71007,7 +71448,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71022,7 +71463,34 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "16111875d9dfba3d049fc61d000e85b259454510f526bc58598e9ea3133de6bf"
+   "questaoSha256": "16111875d9dfba3d049fc61d000e85b259454510f526bc58598e9ea3133de6bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Dissociação escapulotorácica",
+       "Epidemiologia, mecanismo, lesões associadas e imagem"
+      ],
+      "blocos": [
+       "dissociacao-escapulotoracica-fb39e45c",
+       "dissociacao-escapulotoracica-317d48e0",
+       "dissociacao-escapulotoracica-2b65a722",
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-c679b65b"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "3fd6c4154793778d0be1da48c820155974f84a3c81666838ad8c4e64667c33d2"
+     }
+    ],
+    "questaoSha256": "16111875d9dfba3d049fc61d000e85b259454510f526bc58598e9ea3133de6bf",
+    "comentarioSha256": "c2f09371223856c0a3b27febf6298d8692af7d7acb4deae6cba4a1505773897a"
+   }
   },
   "trauma-1291": {
    "tema": "trauma",
@@ -71549,7 +72017,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71564,7 +72032,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "11ed15a200a9fbf48643dfd904a083898fb9e37ee59a17723062113b5102b844"
+   "questaoSha256": "11ed15a200a9fbf48643dfd904a083898fb9e37ee59a17723062113b5102b844",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Vias de acesso e técnica de fixação",
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+       "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "3f647afa6a04702e21b67a7569c51dfc3a72fd53fccbd439e7e040129d5eb3cb"
+     }
+    ],
+    "questaoSha256": "11ed15a200a9fbf48643dfd904a083898fb9e37ee59a17723062113b5102b844",
+    "comentarioSha256": "58df5dafa0fb45729ad04073fde75cd5898b2bc330641d1f75844719720e1271"
+   }
   },
   "trauma-1305": {
    "tema": "trauma",
@@ -73676,7 +74170,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -73691,7 +74185,33 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "1456cde50dc8a4d7767e25e4312794e4c7fcadafaacd0ecb81897d0f2c45d223"
+   "questaoSha256": "1456cde50dc8a4d7767e25e4312794e4c7fcadafaacd0ecb81897d0f2c45d223",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complicações",
+       "Vias de acesso e técnica de fixação"
+      ],
+      "blocos": [
+       "complicacoes-19395d4e",
+       "complicacoes-fafb04b3",
+       "vias-de-acesso-e-tecnica-de-fixacao-086713d3"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "6fb0a3aff7a80bb83a0e81cfea8172585c89175c33172c035db853ac1d74a671"
+     }
+    ],
+    "questaoSha256": "1456cde50dc8a4d7767e25e4312794e4c7fcadafaacd0ecb81897d0f2c45d223",
+    "comentarioSha256": "9baa74139b49389b885636b899b1d90c122eead83000763b0ec34b31f49f23a7"
+   }
   },
   "trauma-1347": {
    "tema": "trauma",
@@ -82472,8 +82992,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -82487,7 +83007,35 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "04ba129e75247694387d3c74ea1ab096ced2f85f66f58a51de9ca31ad9a04049"
+   "questaoSha256": "04ba129e75247694387d3c74ea1ab096ced2f85f66f58a51de9ca31ad9a04049",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Exame e imagem",
+       "Classificação",
+       "Tratamento da fratura do colo"
+      ],
+      "blocos": [
+       "exame-e-imagem-01c205b8",
+       "classificacao-8c0949d3",
+       "classificacao-82bb4004",
+       "tratamento-da-fratura-do-colo-c69f189c"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "96ab0bead5d3a88f5196ffde8408f87b5caaffb98a519f47a702c0cc7c3a66b2"
+     }
+    ],
+    "questaoSha256": "04ba129e75247694387d3c74ea1ab096ced2f85f66f58a51de9ca31ad9a04049",
+    "comentarioSha256": "660e115e42a2f0c0f38020cf9c4dc191b467216798ce7079ea43104a4dea1e8b"
+   }
   },
   "trauma-1608": {
    "tema": "trauma",
@@ -82598,8 +83146,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -82613,7 +83161,37 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "7bbd9386c8f6a95cf31731bc075df925bd8b06b5836144a8a192ac0b894bebd0"
+   "questaoSha256": "7bbd9386c8f6a95cf31731bc075df925bd8b06b5836144a8a192ac0b894bebd0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Exame e imagem",
+       "Anatomia e vascularização",
+       "Tratamento da fratura do colo",
+       "Outras complicações e resultados"
+      ],
+      "blocos": [
+       "exame-e-imagem-a813d17f",
+       "exame-e-imagem-07b8d2b2",
+       "anatomia-e-vascularizacao-3df26679",
+       "tratamento-da-fratura-do-colo-d7c6aca2",
+       "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "c5f1c824e1029aff499c1602333d50baa37697deae9e941c76f6eb7f0f2725ae"
+     }
+    ],
+    "questaoSha256": "7bbd9386c8f6a95cf31731bc075df925bd8b06b5836144a8a192ac0b894bebd0",
+    "comentarioSha256": "bc9f04f993e62a45a5f61d2b0285862164435da851e57acf4638e11fe200ae96"
+   }
   },
   "trauma-1611": {
    "tema": "trauma",

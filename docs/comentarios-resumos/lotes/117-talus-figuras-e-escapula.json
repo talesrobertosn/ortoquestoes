@@ -1,0 +1,414 @@
+{
+  "trauma-0764": {
+    "questaoSha256": "d305bff82c36f40c452b19d493af00413d366df726b06dff456f3237e47eaef5",
+    "comentarioAnteriorSha256": "63131d36698d5134c50d86ad48df504edfb5014d93fa5761980f6f700f0cf7ee",
+    "comentario": {
+      "conceito": "Na radiografia em perfil, o traço separa o **colo do tálus**, e o corpo perdeu suas relações normais tanto com a subtalar quanto com a pinça tibiotalar. A resposta é **colo do tálus, Hawkins III**, alternativa B.\n\nHá duas perguntas para resolver. Primeiro, localizar o traço: no colo, ele sai à frente da faceta posterior; uma fratura do corpo prossegue para trás do processo lateral e alcança essa faceta. Depois, identificar quais articulações perderam a congruência. Hawkins é uma classificação da **fratura do colo**, não um nome aplicável a toda fratura talar (Rockwood, 10ª ed., cap. 66, “Classificação”).\n\nNo tipo II, a subtalar está subluxada ou luxada, mas o tornozelo permanece congruente. No III, soma-se a luxação tibiotalar; no IV, também a talonavicular. Nesta imagem, a posição do corpo em relação à tíbia afasta a interpretação de um II. Não é necessário inventar uma lesão talonavicular que a reprodução não demonstra para subir ao IV.\n\nO estágio traduz uma agressão importante às ligações vasculares e às partes moles. O corpo luxado, frequentemente posteromedial no tipo III, pode comprimir o feixe tibial posterior e ameaçar a pele; sua redução é urgente. A fixação definitiva depende das condições do paciente e dos tecidos, e a TC ajuda a detalhar o padrão depois de controlar a ameaça imediata.\n\n> **Na prova:** localize colo versus corpo e conte as articulações; subtalar mais tornozelo é Hawkins III.",
+      "correta": "**B: colo do tálus; Hawkins III.** O traço do colo e a perda das relações subtalar e tibiotalar são os elementos que sustentam a classificação.",
+      "incorretas": {
+        "A": "**A localização está correta, mas o tipo fica incompleto.** Hawkins II preserva a relação tibiotalar; a incongruência do corpo com a pinça mostrada exige reconhecer o componente do tipo III.",
+        "C": "**Erra a localização e aplica Hawkins ao segmento errado.** O capítulo diferencia o corpo pelo traço que alcança a faceta posterior; a imagem foi apresentada como lesão do colo, e a perda tibiotalar também não corresponde a II.",
+        "D": "**Reconhece a gravidade articular e troca o local do traço.** O tipo III descreve esta fratura do colo com luxações associadas, não uma classificação própria das fraturas do corpo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Classificação; Exame e imagem; Tratamento da fratura do colo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Classificação",
+          "Exame e imagem",
+          "Tratamento da fratura do colo"
+        ],
+        "blocos": [
+          "classificacao-0661f9be",
+          "classificacao-8c0949d3",
+          "classificacao-61adeb6a",
+          "exame-e-imagem-176e1e03",
+          "tratamento-da-fratura-do-colo-27729aa9"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "25d9a8026a8195716d4f31ace55c7f7d6a4f4ac0ff8dd52f6808f0b6c376a8d4"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0764-1.jpeg"
+    ]
+  },
+  "trauma-1607": {
+    "questaoSha256": "04ba129e75247694387d3c74ea1ab096ced2f85f66f58a51de9ca31ad9a04049",
+    "comentarioAnteriorSha256": "233c6e6de26e0a61365683d4cf4d8c5c4692bf9aa6406fb32d5c3056612b5ec6",
+    "comentario": {
+      "conceito": "O corpo do tálus permanece sob o pilão, mas a relação com o calcâneo está perdida no perfil. Na fratura do colo mostrada, essa combinação corresponde à **luxação subtalar de Hawkins II**, alternativa A.\n\nA leitura começa pelas superfícies articulares. O domo talar deve manter congruência com a tíbia, e a faceta posterior do calcâneo deve se relacionar com a face inferior do corpo talar. Na imagem, não é a mesma coisa dizer que o tálus se separou do pé e dizer que abandonou o tornozelo. Essa distinção separa II de III (Rockwood, 10ª ed., cap. 66, “Radiografias” e “Hawkins”).\n\n| Tipo | Relações perdidas na fratura do colo |\n|---|---|\n| II | Subtalar; tibiotalar e talonavicular preservadas |\n| III | Subtalar e tibiotalar |\n| IV | Acrescenta a talonavicular |\n\nA classificação não mede sozinha a perfusão de cada paciente. Vallier distingue o tipo II com subluxação do que tem luxação completa, porque o prognóstico vascular não é igual. O corpo luxado e as partes moles ameaçadas exigem redução urgente, mesmo que a fixação definitiva seja programada conforme as condições locais.\n\n**Por que esta questão foi criada.** A figura obriga a seguir a congruência de cada articulação e evita chamar toda luxação associada à fratura do colo de Hawkins III.",
+      "correta": "**A: subtalar; tipo II.** A imagem mostra a perda da relação talocalcânea com preservação da relação do corpo com a tíbia, padrão de Hawkins II.",
+      "incorretas": {
+        "B": "**Identifica a articulação, mas acrescenta um grau sem o componente necessário.** Para III seria preciso também perder a congruência tibiotalar; a subtalar luxada isoladamente não basta.",
+        "C": "**Troca a articulação e contradiz a definição do tipo.** Hawkins II preserva o tornozelo; a perda demonstrada é da subtalar.",
+        "D": "**Descreve outra combinação radiográfica.** A luxação tibiotalar integra o III, mas não é o achado que define o padrão mostrado sob a tíbia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Exame e imagem; Classificação; Tratamento da fratura do colo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Exame e imagem",
+          "Classificação",
+          "Tratamento da fratura do colo"
+        ],
+        "blocos": [
+          "exame-e-imagem-01c205b8",
+          "classificacao-8c0949d3",
+          "classificacao-82bb4004",
+          "tratamento-da-fratura-do-colo-c69f189c"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "96ab0bead5d3a88f5196ffde8408f87b5caaffb98a519f47a702c0cc7c3a66b2"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1607-1.jpeg"
+    ]
+  },
+  "trauma-1610": {
+    "questaoSha256": "7bbd9386c8f6a95cf31731bc075df925bd8b06b5836144a8a192ac0b894bebd0",
+    "comentarioAnteriorSha256": "c1162f0ea2af31255144df2474e73049cd60817f3fd474e86d619f441d25d28e",
+    "comentario": {
+      "conceito": "O desenho mostra o feixe a **75 graus** e a pronação do pé de **15 graus**: é **Canale**, usada para avaliar **varo e comprimento medial do colo talar**, alternativa C.\n\nO colo do tálus desvia para medial em relação ao corpo. A pronação ajuda a trazê-lo para uma projeção no seu eixo, tornando mais fácil verificar comprimento e alinhamento. Essa orientação evita aceitar como boa uma redução que deixou a coluna medial curta (Rockwood, 10ª ed., cap. 66, “Canale e Broden”).\n\nA imagem também permite entender a diferença entre os números: 75 graus descrevem a direção do feixe; 15 graus, a posição do pé. O joelho está fletido e a planta apoiada. Não se deve transferir para o desenho a expressão “flexão plantar máxima” de outra questão de prova.\n\nO objetivo tem consequência mecânica. Cominuição e compressão indevida da face medial podem encurtar o colo, produzir varo e deixar o pé em supinação fixa com sobrecarga lateral. Já **Broden** procura a faceta posterior da subtalar; é útil, mas responde a outra pergunta. A fluoroscopia final pode exigir ambas, além de AP e perfil.\n\n**Por que esta questão foi criada.** Ela reúne reconhecimento da montagem e finalidade da incidência, impedindo decorar o nome sem saber que deformidade a imagem deve revelar.",
+      "correta": "**C: Canale; avaliar o varo e o comprimento medial do colo.** Os ângulos do desenho e a finalidade de alinhar a coluna medial correspondem à descrição da fonte.",
+      "incorretas": {
+        "A": "**A finalidade está correta para Broden, mas o desenho não é dessa incidência.** Broden usa outras posições e angulações para mostrar a faceta posterior subtalar; a combinação 75/15 é a apresentada para Canale.",
+        "B": "**Reconhece a montagem e troca o alvo.** Canale orienta a leitura do colo, não substitui a projeção dedicada à faceta posterior subtalar.",
+        "D": "**Mantém o alvo do colo com o nome errado.** A avaliação de varo e comprimento medial é a de Canale; Broden tem a faceta posterior como alvo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Exame e imagem; Anatomia e vascularização; Tratamento da fratura do colo; Outras complicações e resultados."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Exame e imagem",
+          "Anatomia e vascularização",
+          "Tratamento da fratura do colo",
+          "Outras complicações e resultados"
+        ],
+        "blocos": [
+          "exame-e-imagem-a813d17f",
+          "exame-e-imagem-07b8d2b2",
+          "anatomia-e-vascularizacao-3df26679",
+          "tratamento-da-fratura-do-colo-d7c6aca2",
+          "outras-complicacoes-e-resultados-bee5e6a6"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "c5f1c824e1029aff499c1602333d50baa37697deae9e941c76f6eb7f0f2725ae"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-1610-1.jpeg"
+    ]
+  },
+  "trauma-0051": {
+    "questaoSha256": "e4cddbade1cff4e98034f85d3d648ccd63dad0364db08a2263643c11b9daec69",
+    "comentarioAnteriorSha256": "06d4ad3139913513d684580b9fe2216e56f1eca44623adfdf5c08ccba362fde0",
+    "comentario": {
+      "conceito": "A banca marcou **C**, combinando **pronação de 15 graus e raio a 75 graus**. Esses dois elementos correspondem à incidência de Canale, mas a expressão **“flexão plantar máxima” exige ressalva**: o corpo independente do resumo e o desenho usado no capítulo mostram o pé apoiado, não estabelecem essa posição extrema como requisito.\n\nA razão da incidência é anatômica. O colo se dirige medialmente em relação ao corpo talar; a pronação permite vê-lo no seu eixo e conferir comprimento medial e varo. O feixe inclinado completa a projeção. Portanto, não basta reconhecer o número 75 e ignorar se o pé está pronado ou supinado (Rockwood, 10ª ed., cap. 66, “Canale e Broden”).\n\n**Resposta oficial e técnica consultada precisam ficar distintas.** Entre as opções da questão histórica, C é a letra da banca. Para ensinar a montagem com fidelidade ao resumo, preservam-se pronação de 15 graus e raio a 75 graus, sem atribuir ao texto uma exigência de flexão plantar máxima que ele não traz. A figura 66-11, aberta na questão com esse desenho, mostra joelho fletido e planta apoiada.\n\nO alvo é o colo, sobretudo sua coluna medial. Na fixação de uma fratura cominuída, essa avaliação ajuda a evitar encurtamento e varo; Broden, em comparação, se dirige à faceta posterior subtalar.\n\n> **Na prova:** C é o gabarito oficial; 15 de pronação e 75 do raio são os pontos concordantes. A posição extrema do tornozelo não deve ser apresentada como comprovada pelo resumo.",
+      "correta": "**C: resposta oficial, com ressalva técnica.** Pronação de 15 graus e feixe a 75 graus concordam com o resumo; a flexão plantar máxima pertence à formulação da banca e não é confirmada como requisito pela fonte consultada.",
+      "incorretas": {
+        "A": "**Inverte a rotação do pé.** Supinação não corresponde à pronação descrita para alinhar o colo. A referência à flexão plantar máxima também não está estabelecida no corpo independente do resumo.",
+        "B": "**Acerta a pronação e o feixe, mas mantém uma posição extrema não descrita.** O resumo não ensina dorsiflexão máxima. Essa parte não deve ser usada para defender B nem para fingir que toda C foi literalmente confirmada.",
+        "D": "**Soma rotação invertida a uma flexão extrema sem apoio na fonte.** A técnica consultada usa pronação e não determina dorsiflexão máxima; o feixe de 75 graus isolado não valida a montagem."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Exame e imagem; Anatomia e vascularização; Outras complicações e resultados."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial C preservado. O resumo 66 sustenta pronação de 15° e raio a 75°, mas não confirma flexão plantar máxima como requisito; a figura 66-11 mostra planta apoiada e joelho fletido. Não apresentar esse componente da alternativa como leitura literal da fonte nem trocar a letra oficial."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Exame e imagem",
+          "Anatomia e vascularização",
+          "Outras complicações e resultados"
+        ],
+        "blocos": [
+          "exame-e-imagem-a813d17f",
+          "exame-e-imagem-07b8d2b2",
+          "anatomia-e-vascularizacao-3df26679",
+          "outras-complicacoes-e-resultados-bee5e6a6"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "b1ad3538136f9dcab07b45a37db3a787400e4769d1345eee0cc1a7a3265d5a3d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0538": {
+    "questaoSha256": "c0ce165fcd72f0830b2f59179409eee15211c8d20224a063c70c727832416661",
+    "comentarioAnteriorSha256": "4dc880b827eccb0a331472f3b63be07118c460618a6b646f8a6caf65ff1f4ec4",
+    "comentario": {
+      "conceito": "Eversão com dorsiflexão é a associação principal descrita para a fratura do **processo lateral do tálus**. A banca registrou **B, cabeça**, mas o resumo consultado aponta para a região indicada genericamente em **D, processo**. Essa divergência precisa permanecer visível.\n\nO processo lateral é uma cunha inferolateral do corpo talar com participação articular junto à fíbula e ao calcâneo. Sob carga axial, dorsiflexão e eversão podem fraturá-lo, alterando a congruência subtalar. Clinicamente, pode parecer uma entorse, com dor no seio do tarso; TC ou RM ajudam quando a radiografia não esclarece a suspeita (Rockwood, 10ª ed., cap. 66, “Processos lateral e posterior”).\n\nA cabeça participa da talonavicular. O resumo descreve sua fratura por compressão/carga axial através dessa articulação ou por cisalhamento numa subluxação talonavicular; não a identifica como o alvo específico do par eversão-dorsiflexão apresentado. O corpo, por sua vez, é uma região ampla da qual o processo lateral faz parte. Isso torna “corpo” anatomicamente abrangente, mas menos preciso do que nomear o processo.\n\n**Não se deve ensinar uma anatomia falsa para defender B.** Mantém-se a resposta oficial no sistema e explica-se que D é a correspondência específica com o mecanismo da fonte. O estudo alternativo com inversão e rotação externa também impede transformar um mecanismo experimental em exclusividade absoluta.\n\n> **Na prova:** o registro oficial é B; na fonte consultada, dorsiflexão/eversão dirige a suspeita ao processo lateral.",
+      "correta": "**B: cabeça, gabarito oficial preservado com divergência.** Não há sustentação no resumo para identificá-la como o alvo específico deste mecanismo; a correspondência descrita é o processo lateral.",
+      "incorretas": {
+        "A": "**O colo tem outro padrão principal de impacto.** A dorsiflexão com carga axial faz a tíbia distal atingir o colo, mas o par eversão-dorsiflexão é associado de forma específica ao processo lateral na seção consultada.",
+        "C": "**É uma localização ampla, que contém o processo lateral.** Não deve ser ensinada como anatomicamente impossível; porém, a descrição mais específica da lesão do mecanismo é a do processo lateral.",
+        "D": "**É a alternativa compatível com a fonte, embora não seja a letra oficial.** O texto genérico “processo” corresponde aqui ao lateral; isso deve ser explicado no alerta, sem alterar B no acervo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Processos lateral e posterior; Anatomia e vascularização; Mecanismo, epidemiologia e lesões associadas; Exame e imagem."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial B (cabeça) preservado. O corpo independente do resumo 66 associa dorsiflexão/eversão, sob carga axial, ao processo lateral, correspondente à opção D. C é anatomicamente mais ampla porque o processo integra o corpo; não afirmar que é uma região impossível. Não há fundamento para ensinar B como correspondência específica desse mecanismo."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Processos lateral e posterior",
+          "Anatomia e vascularização",
+          "Mecanismo, epidemiologia e lesões associadas",
+          "Exame e imagem"
+        ],
+        "blocos": [
+          "processos-lateral-e-posterior-17b015ec",
+          "anatomia-e-vascularizacao-34b1f1fd",
+          "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+          "mecanismo-epidemiologia-e-lesoes-associadas-a149b034",
+          "mecanismo-epidemiologia-e-lesoes-associadas-180e2a08",
+          "exame-e-imagem-94c5a174"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "8ab9c2d3982ed0074dedc97f0cdfd971972972157352e07e44ed391129442804"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0301": {
+    "questaoSha256": "798ab20a1f9942c347c710eb9c3735a29540d31735e88f2ca90c511c93901a64",
+    "comentarioAnteriorSha256": "5c43468d4e5be2ddae3a45837f14759c40e52c6268e61ffe1e35c73f0ba37986",
+    "comentario": {
+      "conceito": "A **dorsiflexão**, alternativa A, é o componente clássico lembrado na fratura do colo do tálus. Mas a mecânica completa inclui **carga axial**: a tíbia distal impacta o colo enquanto o pé está apoiado e fletido dorsalmente. O resumo relata que a hiperdorsiflexão isolada não reproduziu a fratura no experimento em cadáver.\n\nImagine a carga aplicada no pé à frente do tálus, como no pé apoiado no pedal do freio. O colo encontra a borda anterior da tíbia; aumentando a energia, cresce a cominuição. Essa explicação une posição e carga em vez de tratá-las como mecanismos mutuamente exclusivos (Rockwood, 10ª ed., cap. 66, “Como cada parte quebra”).\n\nIsso cria uma limitação nas alternativas. A é a resposta oficial, porém “compressão vertical” e “compressão longitudinal” podem ser interpretadas como descrições da componente axial que também participa. O resumo não fornece uma definição operacional dessas duas expressões para declará-las falsas em qualquer circunstância. Elas não especificam, sozinhas, a posição que caracteriza o mecanismo.\n\nA direção do desvio e a redução também importam: o colo pode ficar em dorsiflexão e varo, e a cominuição medial exige recuperar comprimento sem comprimir o defeito. Reconhecer o mecanismo orienta a busca da deformidade; não determina sozinho o grau de Hawkins.\n\n> **Na prova:** A é a letra oficial; a mecânica completa é dorsiflexão associada à carga axial, não dorsiflexão isolada.",
+      "correta": "**A: flexão dorsal.** É a posição característica cobrada, mas deve ser entendida em associação à carga axial descrita na fonte.",
+      "incorretas": {
+        "B": "**Muda a posição de impacto.** Flexão plantar extrema aparece no mecanismo de compressão do processo posterior, não no padrão principal do colo apresentado.",
+        "C": "**Pode descrever uma componente real, mas não completa o mecanismo.** Se “vertical” for usada como sinônimo de carga axial, ela participa da fratura; falta a posição em dorsiflexão. Não é correto dizer que compressão não atua no colo.",
+        "D": "**Também pode representar a carga axial, dependendo do referencial.** A expressão não especifica onde e como o pé recebe a força; a banca escolheu a posição de dorsiflexão. O resumo não permite excluir toda compressão longitudinal como mecanismo associado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Mecanismo, epidemiologia e lesões associadas; Processos lateral e posterior; Exame e imagem; Tratamento da fratura do colo."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial A preservado. O resumo descreve dorsiflexão com carga axial e informa que hiperdorsiflexão isolada não reproduziu a fratura no experimento. C/D podem representar a componente axial conforme o referencial; não ensiná-las como forças ausentes. A questão simplifica o mecanismo ao pedir uma única componente."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Mecanismo, epidemiologia e lesões associadas",
+          "Processos lateral e posterior",
+          "Exame e imagem",
+          "Tratamento da fratura do colo"
+        ],
+        "blocos": [
+          "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+          "processos-lateral-e-posterior-9475f77d",
+          "exame-e-imagem-01c205b8",
+          "tratamento-da-fratura-do-colo-ef0a1cf8"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "e2ef3105ec058f37640fb5d00c5d6c8ed6cf74dae053cdb45f444f2d5e1fb0cc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0779": {
+    "questaoSha256": "c4ce7864c730e35db7e4137d21d767403a19812d14c35759316d0a9396ee3bdd",
+    "comentarioAnteriorSha256": "87a0a92992f0cf66472365c62a59f4fd883715ae868449cce940e2d182200748",
+    "comentario": {
+      "conceito": "Uma **angulação de 45 graus no perfil escapular** ultrapassa o limite de **40 graus** usado no resumo e favorece a cirurgia: D. O alvo é o desalinhamento dos fragmentos da borda lateral, não uma medida isolada da clavícula.\n\nA borda lateral e o pilar espinal transmitem carga da glenoide. Se o corpo consolida muito angulado, muda a relação glenoide-corpo, o trajeto dos músculos e o deslizamento sobre o tórax. Restaurar essa geometria procura preservar o ritmo escapuloumeral (Rockwood, 10ª ed., cap. 33, “Medir o desvio e indicar a cirurgia”).\n\nO resumo separa as medidas: o **ângulo glenopolar** é medido no AP verdadeiro, entre a linha dos polos da glenoide e a linha até o ângulo inferior. Já **angulação e translação** da borda lateral são avaliadas no perfil em Y ou na reconstrução 3D. Não basta ver “graus” nas duas alternativas e tratar as medidas como equivalentes.\n\nOs critérios são **relativos**. Desvio importante em jovem ativo favorece fixação; condição clínica, pele, politrauma e demanda também pesam. Um GPA de 30 graus fica no intervalo de 20–60 graus que o algoritmo considera favorável ao conservador, embora não seja o valor médio normal de cerca de 41 graus. Translação em porcentagem não pode ser convertida em milímetros sem conhecer a dimensão usada.\n\n> **Na prova:** 45 graus no perfil é maior que o corte de 40; não confunda angulação da borda lateral com GPA.",
+      "correta": "**D: angulação de 45 graus entre os fragmentos no perfil escapular.** Supera o limite relativo de 40 graus da fonte, com potencial prejuízo da mecânica escapular.",
+      "incorretas": {
+        "A": "**É outra medida e não atinge o critério desfavorável indicado.** GPA de 30 graus está entre 20 e 60 no algoritmo; não é necessário chamá-lo de média normal para reconhecer que não corresponde a GPA menor que 20.",
+        "B": "**Usa uma unidade que o resumo não emprega para esse corte.** A referência dá translação em milímetros, não 50%; sem a largura de referência não se demonstra equivalência.",
+        "C": "**O deslocamento é pequeno diante dos critérios consultados.** Cinco milímetros não alcançam a faixa de 15–20 mm do algoritmo, e a aparente “medialização” também precisa ser interpretada como relação entre fragmentos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-c5529532",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "medir-o-desvio-e-indicar-a-cirurgia-f5961b2c"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "a19a0a2532f302cbf30f5f95715f78c61b15c4fb46ea0bca246b80c23c477bfa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0967": {
+    "questaoSha256": "a5b80039c210c886fac450be79c1c7521589c7762ea179ac26b6d160c535c1b4",
+    "comentarioAnteriorSha256": "95998848fd855cc4cad0b9fbf753c481126105c33353a1a90dfe203d3f96b9e7",
+    "comentario": {
+      "conceito": "A **angulação sagital de 45 graus**, alternativa B, supera o limite de 40 graus do resumo e é um critério relativo de fixação. Há, porém, uma ressalva importante: os **17 mm de C** entram na faixa de 15–20 mm apresentada por um dos algoritmos do capítulo.\n\nO Rockwood, 10ª ed., cap. 33, diferencia GPA, angulação e translação. O GPA usa os polos da glenoide e o ângulo inferior da escápula; a angulação do corpo é medida no perfil. A TC 3D ajuda a entender se a aparente medialização é, na verdade, lateralização da porção infraespinal do corpo. Essas medidas não são nomes diferentes do mesmo desvio.\n\n**O próprio resumo usa dois limites para o deslocamento mediolateral.** O algoritmo 33-1 cita 15–20 mm, enquanto a figura 33-19 trabalha com mais de 20 mm. Assim, B é sustentada de forma direta, mas não se deve transformar C em uma medida seguramente irrelevante. D também não pode ser julgada apenas pelo número baixo de angulação: seus 15 mm tocam a faixa do outro critério.\n\nA indicação final continua relativa a idade, atividade, pele e estado geral. O objetivo é recuperar a relação glenoide-corpo e a função muscular, não operar automaticamente todo paciente que ultrapasse um corte.\n\n> **Na prova:** B é a resposta oficial e ultrapassa 40 graus; a ambiguidade dos milímetros pertence à fonte e precisa ficar explícita.",
+      "correta": "**B: angulação no plano sagital de 45 graus.** É o critério inequívoco de angulação entre os oferecidos, mas a escolha não autoriza negar a faixa mediolateral de 15–20 mm do algoritmo.",
+      "incorretas": {
+        "A": "**GPA de 35 graus não é o GPA reduzido que favorece cirurgia.** Está na faixa normal descrita de 35–51 graus e não corresponde ao critério menor que 20 ou maior que 60.",
+        "C": "**É potencialmente defensável sob um dos limites do próprio capítulo.** Dezessete milímetros estão na faixa de 15–20 mm do algoritmo, embora abaixo do corte maior que 20 mm da outra figura; o alerta registra a ambiguidade.",
+        "D": "**A angulação de 10 graus, sozinha, não atinge 40.** Entretanto, os 15 mm tocam o limite inferior mediolateral do algoritmo. O resumo não fornece um corte combinado universal que permita resolver toda interpretação desta opção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia; Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial B preservado. A angulação de 45° ultrapassa 40°. Contudo, C (17 mm) está na faixa mediolateral de 15–20 mm do algoritmo 33-1, apesar de abaixo de >20 mm da figura 33-19; D toca essa faixa em 15 mm. Não ensinar C/D como inequivocamente excluídas nem inventar critério combinado que o resumo não traz."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "medir-o-desvio-e-indicar-a-cirurgia-c5529532",
+          "medir-o-desvio-e-indicar-a-cirurgia-2fe204bc",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "medir-o-desvio-e-indicar-a-cirurgia-4920c185"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "5de7be4301bd8a349d427b5c4f18bb1ea9f0b6399bad5849dfb5bc9422966352"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1346": {
+    "questaoSha256": "1456cde50dc8a4d7767e25e4312794e4c7fcadafaacd0ecb81897d0f2c45d223",
+    "comentarioAnteriorSha256": "7317334e48f9416c59a8c0f18aa41f2fc378196010eee468691d404b11e92745",
+    "comentario": {
+      "conceito": "A escápula pode consolidar, mas consolidar com uma forma que prejudica o ombro. A **consolidação viciosa** é a complicação mais comum do tratamento conservador; já uma aparente pseudartrose do acrômio precisa ser diferenciada de **os acromiale**. A combinação é C.\n\nO erro mecânico depende da região: na fratura extra-articular, a deformidade muda a relação glenoide-corpo e o trajeto do manguito; na face anterior do corpo, a irregularidade dificulta o deslizamento sobre o tórax. Na glenoide, a incongruência pode acrescentar instabilidade e artrose (Rockwood, 10ª ed., cap. 33, “Complicações”).\n\n**Pseudartrose e consolidação viciosa não são sinônimos.** Na primeira, falta união; na segunda, houve união em posição inadequada. A pseudartrose existe e merece atenção especial na espinha lateral e no acrômio, mas não ocupa o primeiro lugar geral do conservador descrito pelo capítulo.\n\nO segundo componente da pergunta é um diagnóstico diferencial. Encontrar uma separação no acrômio não autoriza chamá-la automaticamente de falha de consolidação pós-traumática: o resumo manda diferenciá-la de os acromiale. Ele não apresenta o tubérculo de Luschka como esse diferencial, e não é necessário inventar detalhes dessa estrutura para responder.\n\n**Por que esta questão foi criada.** Ela une a complicação mecânica mais comum ao cuidado de não diagnosticar uma pseudartrose acromial apenas pela aparência de separação óssea.",
+      "correta": "**C: consolidação viciosa; os acromiale.** O primeiro termo é a complicação predominante do conservador, e o segundo é o diferencial explicitamente indicado para a pseudartrose do acrômio.",
+      "incorretas": {
+        "A": "**Troca as duas relações pedidas.** Pseudartrose não é a complicação mais comum geral, e o diferencial do acrômio indicado pela fonte é os acromiale, não Luschka.",
+        "B": "**O diferencial está correto, a frequência da complicação não.** A pseudartrose pode ocorrer, sobretudo em regiões específicas, mas a fonte coloca a consolidação viciosa em primeiro lugar no conservador.",
+        "D": "**Acerta a complicação e troca o diagnóstico diferencial.** O capítulo pede comparar a suspeita de pseudartrose acromial com os acromiale; não fornece sustentação para substituir esse nome por Luschka."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complicações; Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complicações",
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "complicacoes-19395d4e",
+          "complicacoes-fafb04b3",
+          "vias-de-acesso-e-tecnica-de-fixacao-086713d3"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "6fb0a3aff7a80bb83a0e81cfea8172585c89175c33172c035db853ac1d74a671"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1304": {
+    "questaoSha256": "11ed15a200a9fbf48643dfd904a083898fb9e37ee59a17723062113b5102b844",
+    "comentarioAnteriorSha256": "06b56b38b0367c176899ea3519e93a0bf010e0d5fb18d367474af2589a9e9118",
+    "comentario": {
+      "conceito": "Ao abrir a janela entre **infraespinal e redondo menor**, os vasos que perfuram o redondo menor 3–4 cm abaixo da glenoide são os **circunflexos da escápula**, alternativa C. No acesso de Judet descrito, eles são ligados antes da mobilização do infraespinal.\n\nA localização evita confundir dois momentos da exposição. Primeiro, o vaso circunflexo contorna a borda lateral e cruza o campo que precisa ser liberado. Depois, ao rebater o infraespinal para proximal, aparece o **feixe supraescapular na incisura espinoglenoidal**, que deve ser protegido da tração excessiva, e não tratado como o vaso que se liga naquele intervalo (Rockwood, 10ª ed., cap. 33, “A via de Judet”).\n\nA dissecção tem custo. A modificação extensa solta o infraespinal da escápula, mas pode aumentar dor e tempo de reabilitação. O resumo descreve janelas limitadas conforme o padrão da fratura. Portanto, conhecer o vaso não significa indicar liberação muscular completa em toda fratura.\n\nO ponto decisivo é seguir **trajeto, plano e distância da glenoide**. Nomes de vasos da região do ombro, por si, não identificam qual deles cruza a borda lateral da escápula nesta janela.\n\n**Por que esta questão foi criada.** Ela complementa o reconhecimento da via de Judet com a diferença entre vasos ligados na janela lateral e feixe supraescapular preservado durante a elevação muscular.",
+      "correta": "**C: circunflexos da escápula.** A relação com a borda lateral, a perfuração do redondo menor e a distância de 3–4 cm correspondem à descrição da etapa.",
+      "incorretas": {
+        "A": "**Não são os vasos identificados por esse trajeto na fonte.** O marco fornecido é o vaso circunflexo contornando a borda lateral para o campo posterior; o resumo não atribui aos toracodorsais essa perfuração do redondo menor.",
+        "B": "**É o feixe que precisa ser protegido mais proximalmente.** Os supraescapulares acompanham o nervo até a incisura espinoglenoidal e não devem ser confundidos com os circunflexos ligados ao abrir a janela lateral.",
+        "D": "**Troca um vaso relacionado ao úmero pelo circunflexo da escápula.** O trajeto descrito segue a borda escapular e atravessa o redondo menor; o nome “circunflexo” isolado não torna os dois vasos intercambiáveis."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação; Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação",
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+          "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "3f647afa6a04702e21b67a7569c51dfc3a72fd53fccbd439e7e040129d5eb3cb"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
