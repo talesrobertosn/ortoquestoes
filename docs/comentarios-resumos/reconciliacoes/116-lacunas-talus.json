@@ -1,0 +1,17 @@
+{
+  "base": "29228502bc56d70f5d25f817ce80d8a75d062600",
+  "criterio": "Enunciados e todas as alternativas individualmente confrontados com o corpo independente do resumo 66. Comparação epidemiológica incompleta e critério radiográfico ambíguo exigem fonte primária. Não alterados comentários/gabaritos; não contam como revisão.",
+  "resumoSha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+  "questoes": {
+    "trauma-0314": {
+      "questaoSha256": "99249e507b15068aa9d0021b84bfd34454f6b8d0066cfef241f16346a0aa9f33",
+      "pendencia": "O enunciado pergunta especificamente a fratura mais associada ao colo do tálus e separa maléolo medial (A oficial) de lateral (B), calcâneo (C) e pilão (D). O corpo independente do resumo 66 fornece tornozelo 43% e calcâneo 28% para fraturas talares em geral; cita maléolos medial e lateral entre 19–43%, sem separar sua frequência nem a subpopulação do colo. Falta a série primária com ranking por maléolo em fraturas do colo para provar A e excluir B/C/D. O contexto da questão que acolhe a banca não é evidência independente. Oficial A e comentário antigo preservados, sem novo selo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0118": {
+      "questaoSha256": "c3c09af8b8bd3555df53d44048326b66cd047d451521259833d5f072c3e02cff",
+      "pendencia": "A questão pede diagnóstico radiográfico de osteonecrose, com B oficial (6–8 semanas), mas o corpo do resumo 66 diferencia a janela 6–8 semanas da atrofia subcondral/sinal de Hawkins, que indica viabilidade e cuja ausência não confirma necrose, da esclerose que Canale em geral não identifica antes de 12 semanas. RM detecta antes, mas não é o exame do enunciado. Falta a descrição primária do critério radiográfico e do tempo mínimo pretendido para separar B de C, sem ensinar faixa de viabilidade como necrose nem negar que a janela radiográfica possa variar. Gabarito B e comentário preservados; pendência não conta como revisão.",
+      "estado": "pendente-fonte"
+    }
+  }
+}

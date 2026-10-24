@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 931,
+  "pendente": 909,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 196,
+  "pendente-fonte": 198,
   "pendente-inspecao-imagem": 152,
-  "revisada": 993
+  "revisada": 1013
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -278,9 +278,10 @@
    "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
    "estados": {
     "duplicada": 2,
-    "pendente": 46,
+    "pendente": 24,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 4,
-    "revisada": 1
+    "revisada": 21
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -42170,7 +42171,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42185,7 +42186,33 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "2d4d155429110624157b30ad16bf4caaadddf2e9730abc7a1d2629a1d0b1785c"
+   "questaoSha256": "2d4d155429110624157b30ad16bf4caaadddf2e9730abc7a1d2629a1d0b1785c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Mecanismo, epidemiologia e lesões associadas",
+       "Anatomia e vascularização"
+      ],
+      "blocos": [
+       "mecanismo-epidemiologia-e-lesoes-associadas-8a0e536d",
+       "anatomia-e-vascularizacao-b3cf6f14",
+       "mecanismo-epidemiologia-e-lesoes-associadas-a61cbda2"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "7968bbc6013712c349c5b2bb3b57c41d0c418fc1d52098d1bc32b94d116d1030"
+     }
+    ],
+    "questaoSha256": "2d4d155429110624157b30ad16bf4caaadddf2e9730abc7a1d2629a1d0b1785c",
+    "comentarioSha256": "a99c82d8e6bce4f7d8429385ecca65f106ecea5391ca7a1c652fbe3711d05270"
+   }
   },
   "trauma-0011": {
    "tema": "trauma",
@@ -43018,7 +43045,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43033,7 +43060,37 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "d2b7bc5ef0d53678b2315ab7061b60536fbd4c4083286e53cacf34fc6a3fa5fb"
+   "questaoSha256": "d2b7bc5ef0d53678b2315ab7061b60536fbd4c4083286e53cacf34fc6a3fa5fb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Processos lateral e posterior",
+       "Exame e imagem",
+       "Mecanismo, epidemiologia e lesões associadas"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-34b1f1fd",
+       "processos-lateral-e-posterior-17b015ec",
+       "exame-e-imagem-94c5a174",
+       "processos-lateral-e-posterior-9475f77d",
+       "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "01fe881ec81a2ec47cc2b89ba7087106eb93eb09906eaa4cc4a25979c216cc3a"
+     }
+    ],
+    "questaoSha256": "d2b7bc5ef0d53678b2315ab7061b60536fbd4c4083286e53cacf34fc6a3fa5fb",
+    "comentarioSha256": "a76ea817682a2846a73ea551821e65c47871ff5629658a33d06c984e5793826a"
+   }
   },
   "trauma-0037": {
    "tema": "trauma",
@@ -44405,7 +44462,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44420,7 +44477,32 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "5117204f0c96a96eb6a90459e391652ef475f5aaba29850c7cc1376f2fdb9a2c"
+   "questaoSha256": "5117204f0c96a96eb6a90459e391652ef475f5aaba29850c7cc1376f2fdb9a2c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Pós-operatório e necrose avascular"
+      ],
+      "blocos": [
+       "pos-operatorio-e-necrose-avascular-a6f4febc",
+       "pos-operatorio-e-necrose-avascular-3935fa2b",
+       "pos-operatorio-e-necrose-avascular-54e6d12e"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "10742cf473e7c635db93a68f0b73d53d0741e9c6d26364964b985c571cd50667"
+     }
+    ],
+    "questaoSha256": "5117204f0c96a96eb6a90459e391652ef475f5aaba29850c7cc1376f2fdb9a2c",
+    "comentarioSha256": "868fce16445393b6c3c776c13151b77e47ef13d9a9c447cf0526acffaafc002f"
+   }
   },
   "trauma-0081": {
    "tema": "trauma",
@@ -45610,8 +45692,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão pede diagnóstico radiográfico de osteonecrose, com B oficial (6–8 semanas), mas o corpo do resumo 66 diferencia a janela 6–8 semanas da atrofia subcondral/sinal de Hawkins, que indica viabilidade e cuja ausência não confirma necrose, da esclerose que Canale em geral não identifica antes de 12 semanas. RM detecta antes, mas não é o exame do enunciado. Falta a descrição primária do critério radiográfico e do tempo mínimo pretendido para separar B de C, sem ensinar faixa de viabilidade como necrose nem negar que a janela radiográfica possa variar. Gabarito B e comentário preservados; pendência não conta como revisão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45625,7 +45707,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "c3c09af8b8bd3555df53d44048326b66cd047d451521259833d5f072c3e02cff"
+   "questaoSha256": "c3c09af8b8bd3555df53d44048326b66cd047d451521259833d5f072c3e02cff",
+   "pendencia": "A questão pede diagnóstico radiográfico de osteonecrose, com B oficial (6–8 semanas), mas o corpo do resumo 66 diferencia a janela 6–8 semanas da atrofia subcondral/sinal de Hawkins, que indica viabilidade e cuja ausência não confirma necrose, da esclerose que Canale em geral não identifica antes de 12 semanas. RM detecta antes, mas não é o exame do enunciado. Falta a descrição primária do critério radiográfico e do tempo mínimo pretendido para separar B de C, sem ensinar faixa de viabilidade como necrose nem negar que a janela radiográfica possa variar. Gabarito B e comentário preservados; pendência não conta como revisão."
   },
   "trauma-0119": {
    "tema": "trauma",
@@ -48081,7 +48164,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -48096,7 +48179,34 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "6fadfaa191f641cf06e62489e7619e0121218e94be1c247c8630574a17b657ca"
+   "questaoSha256": "6fadfaa191f641cf06e62489e7619e0121218e94be1c247c8630574a17b657ca",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Processos lateral e posterior",
+       "Exame e imagem"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-34b1f1fd",
+       "processos-lateral-e-posterior-17b015ec",
+       "exame-e-imagem-94c5a174"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "e787cbde2ce42f62e100e4db2a1e874449477950298c95ffc29a0ca31682b1a0"
+     }
+    ],
+    "questaoSha256": "6fadfaa191f641cf06e62489e7619e0121218e94be1c247c8630574a17b657ca",
+    "comentarioSha256": "a3375d833697ba1bc91e094f7bb55c68a43e9c0dfc2cf5a872d4ce76abd95968"
+   }
   },
   "trauma-0204": {
    "tema": "trauma",
@@ -49184,7 +49294,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49199,7 +49309,32 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "0a602e73d713bc39f86c1f71f600a413668b0e3126640003b6d4dfff8901b749"
+   "questaoSha256": "0a602e73d713bc39f86c1f71f600a413668b0e3126640003b6d4dfff8901b749",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Exame e imagem"
+      ],
+      "blocos": [
+       "exame-e-imagem-a813d17f",
+       "exame-e-imagem-07b8d2b2",
+       "exame-e-imagem-176e1e03"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "2de4c8019b56eeb9c39450a769952b848512504f0e07c97d3a26743b7889a0eb"
+     }
+    ],
+    "questaoSha256": "0a602e73d713bc39f86c1f71f600a413668b0e3126640003b6d4dfff8901b749",
+    "comentarioSha256": "2914038be744b392fa2819f7df8469c835bf8fa6702ad3f12827c7c9573c77eb"
+   }
   },
   "trauma-0239": {
    "tema": "trauma",
@@ -51203,8 +51338,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado pergunta especificamente a fratura mais associada ao colo do tálus e separa maléolo medial (A oficial) de lateral (B), calcâneo (C) e pilão (D). O corpo independente do resumo 66 fornece tornozelo 43% e calcâneo 28% para fraturas talares em geral; cita maléolos medial e lateral entre 19–43%, sem separar sua frequência nem a subpopulação do colo. Falta a série primária com ranking por maléolo em fraturas do colo para provar A e excluir B/C/D. O contexto da questão que acolhe a banca não é evidência independente. Oficial A e comentário antigo preservados, sem novo selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -51218,7 +51353,8 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "99249e507b15068aa9d0021b84bfd34454f6b8d0066cfef241f16346a0aa9f33"
+   "questaoSha256": "99249e507b15068aa9d0021b84bfd34454f6b8d0066cfef241f16346a0aa9f33",
+   "pendencia": "O enunciado pergunta especificamente a fratura mais associada ao colo do tálus e separa maléolo medial (A oficial) de lateral (B), calcâneo (C) e pilão (D). O corpo independente do resumo 66 fornece tornozelo 43% e calcâneo 28% para fraturas talares em geral; cita maléolos medial e lateral entre 19–43%, sem separar sua frequência nem a subpopulação do colo. Falta a série primária com ranking por maléolo em fraturas do colo para provar A e excluir B/C/D. O contexto da questão que acolhe a banca não é evidência independente. Oficial A e comentário antigo preservados, sem novo selo."
   },
   "trauma-0315": {
    "tema": "trauma",
@@ -51331,7 +51467,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51346,7 +51482,37 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "1a880c81860fba662fcf004bffa77f4285c74e61106a38e8d0a329b7fda73d0b"
+   "questaoSha256": "1a880c81860fba662fcf004bffa77f4285c74e61106a38e8d0a329b7fda73d0b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Exame e imagem",
+       "Tratamento da fratura do colo",
+       "Outras complicações e resultados"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-3df26679",
+       "exame-e-imagem-a813d17f",
+       "exame-e-imagem-07b8d2b2",
+       "tratamento-da-fratura-do-colo-d7c6aca2",
+       "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "76c5964050aa5ff6aa1022928588e6737f287fc85b120ce8d2ee50fab28b3cc8"
+     }
+    ],
+    "questaoSha256": "1a880c81860fba662fcf004bffa77f4285c74e61106a38e8d0a329b7fda73d0b",
+    "comentarioSha256": "6752395841c2649bed142d372752538c3e49546a02713c6141b418575d97c44c"
+   }
   },
   "trauma-0320": {
    "tema": "trauma",
@@ -54565,7 +54731,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54580,7 +54746,33 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "605d33827b10adf318eac1105ceaeb008a08d96ec6d945071ecdbce74c862e46"
+   "questaoSha256": "605d33827b10adf318eac1105ceaeb008a08d96ec6d945071ecdbce74c862e46",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Pós-operatório e necrose avascular"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-67b0e630",
+       "pos-operatorio-e-necrose-avascular-101e1fdb",
+       "pos-operatorio-e-necrose-avascular-54e6d12e"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "ae292149cbdc520fe595515f4dbce745c214c6712fefbb00e5b56bd7e4613c9c"
+     }
+    ],
+    "questaoSha256": "605d33827b10adf318eac1105ceaeb008a08d96ec6d945071ecdbce74c862e46",
+    "comentarioSha256": "b15b993807f1124fbb68e9e57bc251b5744a28aa3921dcd15d49ad469337fc9e"
+   }
   },
   "trauma-0563": {
    "tema": "trauma",
@@ -59702,7 +59894,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -59717,7 +59909,49 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "ea285d89d3f8bc7ceed457c6d934ce088cc2654e45c098bc6d08fbfe6894baa0"
+   "questaoSha256": "ea285d89d3f8bc7ceed457c6d934ce088cc2654e45c098bc6d08fbfe6894baa0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Tratamento da fratura do colo"
+      ],
+      "blocos": [
+       "tratamento-da-fratura-do-colo-4017e556",
+       "tratamento-da-fratura-do-colo-859eeec1",
+       "tratamento-da-fratura-do-colo-63b1dcfd",
+       "tratamento-da-fratura-do-colo-f5d75f5b",
+       "tratamento-da-fratura-do-colo-53c1a52a"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "f0848f56788e1d1317eb9bfb30a0109a265fd6fbda92de0dbeacb7e89f049839"
+     },
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "As vias de acesso e o nervo em risco"
+      ],
+      "blocos": [
+       "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "74f5b1eb8bb41aa6c237f9fe9eddb539d80f680a1dc8c0c88079f55cf6c0502e"
+     }
+    ],
+    "questaoSha256": "ea285d89d3f8bc7ceed457c6d934ce088cc2654e45c098bc6d08fbfe6894baa0",
+    "comentarioSha256": "8caa0134dcd21f4680091431f27aad38ac1cbb86e7552c11a15b06efad8bda54"
+   }
   },
   "trauma-0862": {
    "tema": "trauma",
@@ -60344,7 +60578,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60359,7 +60593,32 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "8dcba4d9f593f9dd1a2ff6c978e87438b6773e88b8cacd9937080d96f63fd364"
+   "questaoSha256": "8dcba4d9f593f9dd1a2ff6c978e87438b6773e88b8cacd9937080d96f63fd364",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Exame e imagem"
+      ],
+      "blocos": [
+       "exame-e-imagem-a813d17f",
+       "exame-e-imagem-07b8d2b2",
+       "exame-e-imagem-176e1e03"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "2de4c8019b56eeb9c39450a769952b848512504f0e07c97d3a26743b7889a0eb"
+     }
+    ],
+    "questaoSha256": "8dcba4d9f593f9dd1a2ff6c978e87438b6773e88b8cacd9937080d96f63fd364",
+    "comentarioSha256": "82f133b98f7751e74d84ecec0e1052a86df95e83b10855241201f01abf7c03a6"
+   }
   },
   "trauma-0883": {
    "tema": "trauma",
@@ -69319,7 +69578,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69334,7 +69593,39 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "6b1cfda76cfd7f8b9e4b152bd861ce049c087e182bf9cb54fd3fcc7458f7e733"
+   "questaoSha256": "6b1cfda76cfd7f8b9e4b152bd861ce049c087e182bf9cb54fd3fcc7458f7e733",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Exame e imagem",
+       "Mecanismo, epidemiologia e lesões associadas",
+       "Tratamento da fratura do colo",
+       "Outras complicações e resultados"
+      ],
+      "blocos": [
+       "exame-e-imagem-01c205b8",
+       "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+       "tratamento-da-fratura-do-colo-ef0a1cf8",
+       "tratamento-da-fratura-do-colo-7edccd32",
+       "tratamento-da-fratura-do-colo-d7c6aca2",
+       "outras-complicacoes-e-resultados-bee5e6a6",
+       "outras-complicacoes-e-resultados-6f637759"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "77bddfd09db177e38205ee4697441a0eb32bd5ef855ec29cc635ac73d9052970"
+     }
+    ],
+    "questaoSha256": "6b1cfda76cfd7f8b9e4b152bd861ce049c087e182bf9cb54fd3fcc7458f7e733",
+    "comentarioSha256": "6906afd7b855320ba4b04d8b1921b67f39a8e497e325c43f23ff1dd4ff1f668a"
+   }
   },
   "trauma-1224": {
    "tema": "trauma",
@@ -82205,7 +82496,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82220,7 +82511,32 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "90c90824f33ffaf7c2b4b89719b6937cc3a0b8c68232539d3830f0341b8af11d"
+   "questaoSha256": "90c90824f33ffaf7c2b4b89719b6937cc3a0b8c68232539d3830f0341b8af11d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Pós-operatório e necrose avascular"
+      ],
+      "blocos": [
+       "pos-operatorio-e-necrose-avascular-a6f4febc",
+       "pos-operatorio-e-necrose-avascular-3935fa2b",
+       "pos-operatorio-e-necrose-avascular-54e6d12e"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "10742cf473e7c635db93a68f0b73d53d0741e9c6d26364964b985c571cd50667"
+     }
+    ],
+    "questaoSha256": "90c90824f33ffaf7c2b4b89719b6937cc3a0b8c68232539d3830f0341b8af11d",
+    "comentarioSha256": "b4a2b3ef5b3664094f3cbef3835515786cfb97654402d7a425f64916e1319932"
+   }
   },
   "trauma-1609": {
    "tema": "trauma",
@@ -82229,7 +82545,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82244,7 +82560,36 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "aad07ba9aa1a15f94f50f2fae3962049d23a581bcfa15fe722b26619b2306c8a"
+   "questaoSha256": "aad07ba9aa1a15f94f50f2fae3962049d23a581bcfa15fe722b26619b2306c8a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Pós-operatório e necrose avascular",
+       "Exame e imagem"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-67b0e630",
+       "anatomia-e-vascularizacao-d570e842",
+       "pos-operatorio-e-necrose-avascular-3935fa2b",
+       "pos-operatorio-e-necrose-avascular-101e1fdb",
+       "exame-e-imagem-176e1e03"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "a5349009a769fb6d5671ec71aefca847188b06e2a855b5d6c535d8fcb27db75f"
+     }
+    ],
+    "questaoSha256": "aad07ba9aa1a15f94f50f2fae3962049d23a581bcfa15fe722b26619b2306c8a",
+    "comentarioSha256": "90d99631f95cfcca14c57ca25c28821c88bbb0eac10c2496f82efe8a3e693c6a"
+   }
   },
   "trauma-1610": {
    "tema": "trauma",
@@ -82277,7 +82622,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82292,7 +82637,31 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "db38c6a2b2d5e5e67afa107d891f518960f18da353ccdd27ed83b0e422b0b532"
+   "questaoSha256": "db38c6a2b2d5e5e67afa107d891f518960f18da353ccdd27ed83b0e422b0b532",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Mecanismo, epidemiologia e lesões associadas"
+      ],
+      "blocos": [
+       "mecanismo-epidemiologia-e-lesoes-associadas-a61cbda2",
+       "mecanismo-epidemiologia-e-lesoes-associadas-08873b34"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "5aa08b4b6e609e2596721f7ee3ae6a645972acaf6f5a01dccbcdfd9ffc3ede04"
+     }
+    ],
+    "questaoSha256": "db38c6a2b2d5e5e67afa107d891f518960f18da353ccdd27ed83b0e422b0b532",
+    "comentarioSha256": "0f256b8b8f54a54b65566f4e4ec2e078711b09c1110ca3904f2935350d0e470c"
+   }
   },
   "trauma-1612": {
    "tema": "trauma",
@@ -82301,7 +82670,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82316,7 +82685,34 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "7016a277a16dfd7d0d691ba4e67286894c56ad1bab0236eb547382a261abee6d"
+   "questaoSha256": "7016a277a16dfd7d0d691ba4e67286894c56ad1bab0236eb547382a261abee6d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Classificação",
+       "Tratamento da fratura do colo"
+      ],
+      "blocos": [
+       "classificacao-8c0949d3",
+       "classificacao-82bb4004",
+       "tratamento-da-fratura-do-colo-7307c8b1",
+       "tratamento-da-fratura-do-colo-c69f189c"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "162f623d32c8635cc021ecc44f4a8d793825efc153a5b9acef2a2aa5c17ae499"
+     }
+    ],
+    "questaoSha256": "7016a277a16dfd7d0d691ba4e67286894c56ad1bab0236eb547382a261abee6d",
+    "comentarioSha256": "c9e01e37f2382395f2d87c67bf9f6b076b5ab7101b83705f4e62e869c44839ae"
+   }
   },
   "trauma-1613": {
    "tema": "trauma",
@@ -82325,7 +82721,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82340,7 +82736,33 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "161d411f6e19112df281a34e89a80386f83d13e3ce11cb1d34dc2b06e5acf803"
+   "questaoSha256": "161d411f6e19112df281a34e89a80386f83d13e3ce11cb1d34dc2b06e5acf803",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Processos lateral e posterior"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-34b1f1fd",
+       "processos-lateral-e-posterior-319972b0",
+       "processos-lateral-e-posterior-ae875000"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "91a839135a6b390af98f2566fda3b832af94d070de2ada018d6bbf3b37debd1f"
+     }
+    ],
+    "questaoSha256": "161d411f6e19112df281a34e89a80386f83d13e3ce11cb1d34dc2b06e5acf803",
+    "comentarioSha256": "7b19d1ca89e416b40a845b9a66becb164a292a8e4b680975fc98ce3ae1b6f914"
+   }
   },
   "trauma-1614": {
    "tema": "trauma",
@@ -82349,7 +82771,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82364,7 +82786,33 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "2cd18c93d0994369facbea436ce87ad39fe03a800edac4cd1d9f2d69fcd28655"
+   "questaoSha256": "2cd18c93d0994369facbea436ce87ad39fe03a800edac4cd1d9f2d69fcd28655",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Processos lateral e posterior"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-32767012",
+       "processos-lateral-e-posterior-9475f77d",
+       "processos-lateral-e-posterior-17b015ec"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "e6b7ef134fbd7eade6069c56fe387e754b1c1e8098df1023fbdd7effb5d56d34"
+     }
+    ],
+    "questaoSha256": "2cd18c93d0994369facbea436ce87ad39fe03a800edac4cd1d9f2d69fcd28655",
+    "comentarioSha256": "b1b08efb9ae592eea2c76f709e0dfaf3521e0d31b9a6c42b378d0aac1fdee2e4"
+   }
   },
   "trauma-1615": {
    "tema": "trauma",
@@ -82373,7 +82821,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82395,7 +82843,36 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "3a1d99c98a959ad3e0b3a4ec948cb0eb961debc56d43228c0502dec0ec846f3f"
+   "questaoSha256": "3a1d99c98a959ad3e0b3a4ec948cb0eb961debc56d43228c0502dec0ec846f3f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização",
+       "Tratamento da fratura do colo"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-67b0e630",
+       "anatomia-e-vascularizacao-d9802b86",
+       "anatomia-e-vascularizacao-07f26b9a",
+       "anatomia-e-vascularizacao-b8a242e2",
+       "anatomia-e-vascularizacao-d570e842",
+       "tratamento-da-fratura-do-colo-53c1a52a"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "51cb86b62579230efe4b24ac9228f34a515efe59310286278c057883c7d7ec96"
+     }
+    ],
+    "questaoSha256": "3a1d99c98a959ad3e0b3a4ec948cb0eb961debc56d43228c0502dec0ec846f3f",
+    "comentarioSha256": "32242c257cc94095adfc0129444a2ae3e26609532cab8e814953b40f747e5e35"
+   }
   },
   "trauma-1616": {
    "tema": "trauma",
@@ -82404,7 +82881,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82419,7 +82896,36 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "e6ec1d9b49a6b12aba72720aa672ccf18a6e3228571f5f91bdfcf10e26eb22e2"
+   "questaoSha256": "e6ec1d9b49a6b12aba72720aa672ccf18a6e3228571f5f91bdfcf10e26eb22e2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Tratamento da fratura do colo",
+       "Outras complicações e resultados"
+      ],
+      "blocos": [
+       "tratamento-da-fratura-do-colo-354a94eb",
+       "tratamento-da-fratura-do-colo-ef0a1cf8",
+       "tratamento-da-fratura-do-colo-0766afcf",
+       "tratamento-da-fratura-do-colo-7edccd32",
+       "tratamento-da-fratura-do-colo-d7c6aca2",
+       "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "9b4cc36372bc954705206aea5772395c9ce129a7322215920a561b4bb6c05c0c"
+     }
+    ],
+    "questaoSha256": "e6ec1d9b49a6b12aba72720aa672ccf18a6e3228571f5f91bdfcf10e26eb22e2",
+    "comentarioSha256": "316f19c9d8b2c4dec41986fb649801793e1413454f87350a51c413ca114183ed"
+   }
   },
   "trauma-1617": {
    "tema": "trauma",
@@ -82428,7 +82934,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82443,7 +82949,33 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "613f15fd608bcfc2a79c809b8b701270a383ea15c9d1fa4402813b512bb8b452"
+   "questaoSha256": "613f15fd608bcfc2a79c809b8b701270a383ea15c9d1fa4402813b512bb8b452",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Luxação subtalar"
+      ],
+      "blocos": [
+       "luxacao-subtalar-caed047d",
+       "luxacao-subtalar-3e2919ef",
+       "luxacao-subtalar-42494929",
+       "luxacao-subtalar-71ed9e35"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "a469bf0ab84169bab44640345b1f41db8d62fdffef1bd3e23814f7199ee52b0f"
+     }
+    ],
+    "questaoSha256": "613f15fd608bcfc2a79c809b8b701270a383ea15c9d1fa4402813b512bb8b452",
+    "comentarioSha256": "dabc029099893d362f5bf8c662768e86f6b05841b9e22119677d1e11b9c12a2b"
+   }
   },
   "trauma-1618": {
    "tema": "trauma",
@@ -82452,7 +82984,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -82467,7 +82999,37 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "a5f85f171b2d378b9643d6497b6ba2cdb935b082974b2747bcbc5ff13bed5bba"
+   "questaoSha256": "a5f85f171b2d378b9643d6497b6ba2cdb935b082974b2747bcbc5ff13bed5bba",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Classificação",
+       "Tratamento da fratura do colo",
+       "Controvérsias e o que falta saber"
+      ],
+      "blocos": [
+       "classificacao-61adeb6a",
+       "tratamento-da-fratura-do-colo-27729aa9",
+       "tratamento-da-fratura-do-colo-7307c8b1",
+       "tratamento-da-fratura-do-colo-c69f189c",
+       "tratamento-da-fratura-do-colo-f5d75f5b",
+       "controversias-e-o-que-falta-saber-1dd8fb8f"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "53dc3e0756eb0d1715e84bc03f0e05e9fdfb6ba220f081f83fdce9bbdf39e717"
+     }
+    ],
+    "questaoSha256": "a5f85f171b2d378b9643d6497b6ba2cdb935b082974b2747bcbc5ff13bed5bba",
+    "comentarioSha256": "2632f5d56928069f91db03cd82ec2a4a2371d2cbc474fffb8fa6fadd36146cf9"
+   }
   },
   "trauma-1619": {
    "tema": "trauma",

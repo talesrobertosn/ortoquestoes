@@ -1,0 +1,412 @@
+{
+  "trauma-0010": {
+    "questaoSha256": "2d4d155429110624157b30ad16bf4caaadddf2e9730abc7a1d2629a1d0b1785c",
+    "comentarioAnteriorSha256": "0860ba0f4a17b91a94a76dc67834e913b171571832f4c79a88f232b7dce77df0",
+    "comentario": {
+      "conceito": "Entre os ossos do tarso, o **calcâneo é o mais frequentemente fraturado**; o tálus ocupa o segundo lugar. Portanto, C. O resumo do Rockwood, 10ª ed., cap. 66, “Mecanismo, epidemiologia e lesões associadas”, faz essa comparação explicitamente.\n\nFrequência e gravidade são perguntas diferentes. A fratura do tálus recebe muita atenção porque pode interromper sua vascularização e comprometer tornozelo, subtalar e talonavicular. Isso não a torna a mais numerosa. O tálus tem grande superfície cartilaginosa, nenhuma inserção muscular ou tendínea e poucas entradas vasculares; o desvio pode fechar essas portas.\n\nDepois de um trauma de alta energia, também não se deve procurar apenas um osso. O capítulo descreve muitas lesões associadas às fraturas talares, incluindo tornozelo e calcâneo. Reconhecer o mais frequente ajuda na suspeita inicial, mas não dispensa examinar o retropé inteiro.\n\n> **Na prova:** calcâneo primeiro, tálus segundo; risco de necrose não é uma medida de frequência.",
+      "correta": "**C: calcâneo.** É o primeiro na comparação entre os ossos do tarso apresentada pelo capítulo; o tálus vem em seguida.",
+      "incorretas": {
+        "A": "**Confunde relevância clínica com frequência.** O tálus é o segundo osso do tarso mais fraturado, apesar do grande peso de suas complicações vasculares e articulares.",
+        "B": "**Não é o primeiro na comparação da fonte.** O resumo coloca o calcâneo à frente do tálus; não há fundamento para promover o cuboide à primeira posição nem para inventar uma porcentagem para ele.",
+        "D": "**A participação na talonavicular não determina frequência de fratura.** O navicular articula com a cabeça do tálus, mas não ocupa o primeiro lugar que a questão pede."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Mecanismo, epidemiologia e lesões associadas; Anatomia e vascularização."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Mecanismo, epidemiologia e lesões associadas",
+          "Anatomia e vascularização"
+        ],
+        "blocos": [
+          "mecanismo-epidemiologia-e-lesoes-associadas-8a0e536d",
+          "anatomia-e-vascularizacao-b3cf6f14",
+          "mecanismo-epidemiologia-e-lesoes-associadas-a61cbda2"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "7968bbc6013712c349c5b2bb3b57c41d0c418fc1d52098d1bc32b94d116d1030"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0036": {
+    "questaoSha256": "d2b7bc5ef0d53678b2315ab7061b60536fbd4c4083286e53cacf34fc6a3fa5fb",
+    "comentarioAnteriorSha256": "9a0f406da18cf36d41d1fb40edb6940468ad4f02e235af183bb78334afe43bfb",
+    "comentario": {
+      "conceito": "Uma entorse aparente em um praticante de snowboard pode esconder uma fratura do **processo lateral do tálus**, alternativa B. Esse processo é uma cunha inferolateral do corpo talar, com superfícies que participam do tornozelo e da faceta posterior subtalar. Sua fratura pode, portanto, alterar uma articulação mesmo quando o fragmento parece pequeno (Rockwood, 10ª ed., cap. 66, “Processos lateral e posterior”).\n\nO mecanismo principal descrito combina carga axial, tornozelo em dorsiflexão e retropé em eversão. O capítulo também apresenta um experimento com inversão e rotação externa em dorsiflexão; não se deve transformar uma única posição em exclusividade absoluta do mecanismo. O nome snowboarder localiza a lesão, sem exigir que todo paciente pratique o esporte.\n\nDor ou equimose no seio do tarso, principalmente com sintomas persistentes após o diagnóstico de entorse, deve levantar a suspeita. A incidência do encaixe pode mostrar o fragmento; quando a radiografia é negativa e a suspeita permanece, TC ou RM ajudam. O tamanho, o desvio e a estabilidade da subtalar orientam o tratamento.\n\n> **Na prova:** snowboarder é processo lateral; dor no seio do tarso ajuda a não perdê-lo como entorse.",
+      "correta": "**B: no processo lateral.** É a localização da fratura do snowboarder, cuja participação na superfície subtalar explica a importância de reconhecer desvio e fragmentos articulares.",
+      "incorretas": {
+        "A": "**O colo tem outro mecanismo predominante.** A carga axial com dorsiflexão pode fazer a tíbia distal bater no colo em traumas como quedas e colisões, mas esse não é o segmento designado pelo nome snowboarder.",
+        "C": "**Troca o lado da estrutura.** O resumo distingue a fratura do processo lateral daquela do tubérculo medial posterior, que tem mecanismos próprios e pode aparecer apenas na TC.",
+        "D": "**A fratura posterior lembra flexão plantar extrema.** O processo pode ser esmagado entre o calcâneo e o pilão posterior; não é a cunha lateral relacionada ao snowboarder."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização; Processos lateral e posterior; Exame e imagem; Mecanismo, epidemiologia e lesões associadas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Anatomia e vascularização",
+          "Processos lateral e posterior",
+          "Exame e imagem",
+          "Mecanismo, epidemiologia e lesões associadas"
+        ],
+        "blocos": [
+          "anatomia-e-vascularizacao-34b1f1fd",
+          "processos-lateral-e-posterior-17b015ec",
+          "exame-e-imagem-94c5a174",
+          "processos-lateral-e-posterior-9475f77d",
+          "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "01fe881ec81a2ec47cc2b89ba7087106eb93eb09906eaa4cc4a25979c216cc3a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0080": {
+    "questaoSha256": "5117204f0c96a96eb6a90459e391652ef475f5aaba29850c7cc1376f2fdb9a2c",
+    "comentarioAnteriorSha256": "134679836c9e8b71d791a81ae2f6683832cff686dc42251680ca44e276bf83db",
+    "comentario": {
+      "conceito": "A faixa clara logo abaixo da cartilagem do domo talar aparece por volta da **sexta à oitava semana**, alternativa C. É o **sinal de Hawkins**, e sua presença é favorável: mostra que aquele osso participa da reabsorção associada à falta de carga (Rockwood, 10ª ed., cap. 66, “O sinal de Hawkins”).\n\nO raciocínio começa pela resposta do osso vivo. Durante o período sem carga, o pé e a tíbia distal ficam osteopênicos; sob o domo, essa perda de osso mineralizado produz a linha radiotransparente. O osso necrosado não participa da mesma resposta. Por isso, a faixa clara é sinal de **viabilidade**, enquanto a necrose pode produzir aumento da densidade do corpo.\n\n**Ausência do sinal não equivale a diagnóstico de necrose.** O resumo registra sinais parciais e acometimento variável do corpo. A presença é altamente específica de viabilidade, mas o raciocínio não pode ser simplesmente invertido. Também não se deve confundir essa janela radiográfica com a RM, que identifica alterações mais precocemente, nem com o período de 10–12 semanas sem carga usado no pós-operatório.\n\n> **Na prova:** Hawkins entre 6 e 8 semanas significa osso vivo; ausência exige acompanhamento, não uma sentença de necrose.",
+      "correta": "**C: 6ª a 8ª semana.** É a janela típica da reabsorção subcondral radiográfica indicativa de integridade vascular; não é o início da detecção pela RM.",
+      "incorretas": {
+        "A": "**É uma janela precoce demais para o sinal radiográfico pedido.** O capítulo descreve alterações de RM desde a segunda semana e detecção em três semanas em estudos, mas isso é outro exame e outro achado.",
+        "B": "**Antecipa a faixa subcondral clássica.** Quatro a cinco semanas não é o intervalo apresentado para o sinal de Hawkins; o acompanhamento ainda precisa prosseguir.",
+        "D": "**Atrasa o sinal e mistura marcos diferentes.** A janela de 10–12 semanas aparece relacionada à restrição inicial de carga; o sinal de viabilidade costuma ser procurado antes disso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Pós-operatório e necrose avascular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Pós-operatório e necrose avascular"
+        ],
+        "blocos": [
+          "pos-operatorio-e-necrose-avascular-a6f4febc",
+          "pos-operatorio-e-necrose-avascular-3935fa2b",
+          "pos-operatorio-e-necrose-avascular-54e6d12e"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "10742cf473e7c635db93a68f0b73d53d0741e9c6d26364964b985c571cd50667"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0202": {
+    "questaoSha256": "6fadfaa191f641cf06e62489e7619e0121218e94be1c247c8630574a17b657ca",
+    "comentarioAnteriorSha256": "71ff699894db12f0215ac51b662478cc0b7c8378fdc50bbf99fb6e52a54b3d30",
+    "comentario": {
+      "conceito": "Na fratura do processo lateral do tálus, a combinação principal do capítulo é **carga axial, dorsiflexão e eversão do retropé**. Como o enunciado já fornece dorsiflexão e rotação lateral, A completa o padrão esperado.\n\nO processo lateral é parte articular do corpo talar: relaciona-se com a fíbula e com a porção anterior da faceta posterior do calcâneo. A força atua, portanto, sobre um segmento que ajuda a manter a congruência entre tálus e calcâneo. O fragmento pode crescer e cominuir com maior energia, deixando a subtalar incongruente ou instável (Rockwood, 10ª ed., cap. 66, “Processo lateral”).\n\n**A inversão merece uma ressalva.** O resumo também cita reprodução em cadáver com carga axial, rotação externa e inversão, em dorsiflexão. Assim, B não é um mecanismo impossível. A banca escolhe A por corresponder à associação principal descrita; não há no resumo uma comparação populacional que permita atribuir uma porcentagem de frequência a cada montagem experimental.\n\nClinicamente, a dor no seio do tarso pode ser confundida com entorse. Se a radiografia não explica a dor e a suspeita persiste, TC ou RM podem revelar a fratura. O objetivo é reconhecer a participação articular, e não decorar uma posição ignorando a imagem.\n\n> **Na prova:** a associação principal é axial e eversão, com dorsiflexão; inversão também foi produzida em outro estudo experimental.",
+      "correta": "**A: axial e eversão.** Completa o mecanismo principal do resumo. A resposta oficial é mantida sem converter a outra experiência com inversão em impossibilidade biomecânica.",
+      "incorretas": {
+        "B": "**É uma alternativa experimental descrita, mas não a associação principal escolhida pela banca.** O capítulo também obteve fraturas com carga axial, rotação externa e inversão em dorsiflexão. A não deve ser defendida dizendo que B nunca acontece.",
+        "C": "**Troca a carga axial pela descrição torcional isolada.** A experiência com inversão citada também aplicava carga axial; a rotação já presente no enunciado não elimina esse componente compressivo.",
+        "D": "**Mantém a eversão, mas substitui a componente axial.** O padrão principal combina eversão e dorsiflexão sob carga axial; movimento rotacional, sozinho, não reproduz toda a associação descrita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização; Processos lateral e posterior; Exame e imagem."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial A preservado. O corpo do resumo dá carga axial com dorsiflexão e eversão como mecanismo principal, mas também cita estudo em cadáver com carga axial, rotação externa e inversão, correspondente à combinação de B. Não há comparação populacional de frequência no resumo; B não deve ser ensinada como impossível."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Anatomia e vascularização",
+          "Processos lateral e posterior",
+          "Exame e imagem"
+        ],
+        "blocos": [
+          "anatomia-e-vascularizacao-34b1f1fd",
+          "processos-lateral-e-posterior-17b015ec",
+          "exame-e-imagem-94c5a174"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "e787cbde2ce42f62e100e4db2a1e874449477950298c95ffc29a0ca31682b1a0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0238": {
+    "questaoSha256": "0a602e73d713bc39f86c1f71f600a413668b0e3126640003b6d4dfff8901b749",
+    "comentarioAnteriorSha256": "df412c1dc0c4e0fe717ba6c56dd7f254eef853419681274a412b20652b70e63f",
+    "comentario": {
+      "conceito": "A incidência de **Broden** procura a **faceta posterior da subtalar**, alternativa D. Na fratura do calcâneo, a pergunta é sobre a superfície em que ele articula com a face inferior do corpo do tálus, e não apenas sobre o formato externo do osso.\n\nO resumo do Rockwood, 10ª ed., cap. 66, “Canale e Broden”, descreve o paciente em decúbito dorsal, tornozelo em rotação interna de 30–45 graus e flexão neutra, com imagens em diferentes angulações do feixe. Essas projeções ajudam a expor a faceta posterior e fragmentos presos na articulação.\n\n**Superfície articular e dimensões do calcâneo são alvos distintos.** Uma imagem que melhora a leitura da faceta não substitui a avaliação da altura, da largura ou do alinhamento global. Da mesma forma, a incidência de Canale mostra o colo talar no eixo e ajuda a avaliar seu comprimento medial; não é sinônimo de Broden.\n\nA TC complementa a avaliação de fragmentos e incongruências, especialmente no planejamento. O resumo fundamenta aqui o alvo da incidência, sem fornecer uma classificação tomográfica de todas as fraturas do calcâneo.\n\n> **Na prova:** Broden é faceta posterior subtalar; Canale é colo do tálus.",
+      "correta": "**D: integridade da faceta articular posterior da subtalar.** As projeções de Broden são dirigidas à congruência dessa superfície e à presença de fragmentos articulares.",
+      "incorretas": {
+        "A": "**O sustentáculo não é o alvo específico pedido.** A questão procura a superfície posterior subtalar vista em Broden; localizar uma saliência óssea medial é uma pergunta diferente.",
+        "B": "**Troca a faceta.** O resumo identifica a faceta posterior, não a anterior, como alvo da incidência e de sua avaliação de fragmentos.",
+        "C": "**Confunde morfologia global com congruência articular.** Altura e largura descrevem o calcâneo como um todo; a finalidade específica de Broden é melhorar a leitura da faceta posterior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Exame e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Exame e imagem"
+        ],
+        "blocos": [
+          "exame-e-imagem-a813d17f",
+          "exame-e-imagem-07b8d2b2",
+          "exame-e-imagem-176e1e03"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "2de4c8019b56eeb9c39450a769952b848512504f0e07c97d3a26743b7889a0eb"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0319": {
+    "questaoSha256": "1a880c81860fba662fcf004bffa77f4285c74e61106a38e8d0a329b7fda73d0b",
+    "comentarioAnteriorSha256": "b01e772b677599cd527d176079857309786e08bbfca03b72e42d64446ae788ec",
+    "comentario": {
+      "conceito": "Para mostrar o colo talar no seu eixo, a incidência de **Canale** combina o raio a **75 graus** com o pé em **15 graus de rotação medial/pronação**, alternativa C.\n\nO colo não é uma continuação reta do corpo: projeta-se para baixo e desvia medialmente. A pronação orienta esse segmento para que seu comprimento e alinhamento sejam avaliados sem a mesma sobreposição das incidências usuais. O resumo do Rockwood, 10ª ed., cap. 66, “Canale e Broden”, relaciona diretamente a projeção à avaliação da **coluna medial do colo**.\n\nEssa medida importa porque encurtamento medial e cominuição podem deixar o colo em varo. Uma redução aparentemente aceitável numa única imagem pode manter a coluna medial curta e produzir supinação fixa e sobrecarga lateral depois de consolidar. A avaliação fluoroscópica final inclui perfil, AP, Canale e Broden; cada vista responde a parte do problema.\n\nNão confunda a rotação do pé com a inclinação do raio: **15 graus pertencem ao pé; 75 graus, ao feixe**. A questão não pede flexão plantar máxima, detalhe de outra formulação de prova.\n\n> **Na prova:** Canale: 75 no raio, 15 medial no pé, para conferir o colo e evitar aceitar varo.",
+      "correta": "**C: 75 graus e 15 graus de rotação medial.** É a combinação da incidência que alinha o colo e permite avaliar seu comprimento medial.",
+      "incorretas": {
+        "A": "**A direção do pé está correta, a inclinação do raio não.** Os 45 graus não substituem os 75 descritos para Canale; não se deve misturar angulações de outras projeções.",
+        "B": "**Erra a inclinação e o sentido do pé.** O resumo combina raio a 75 graus com pronação/rotação medial, não raio a 45 com rotação lateral.",
+        "D": "**Acerta o feixe e inverte a posição do pé.** A pronação de 15 graus é usada para orientar o colo medializado; a rotação lateral não reproduz a montagem descrita."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização; Exame e imagem; Tratamento da fratura do colo; Outras complicações e resultados."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Anatomia e vascularização",
+          "Exame e imagem",
+          "Tratamento da fratura do colo",
+          "Outras complicações e resultados"
+        ],
+        "blocos": [
+          "anatomia-e-vascularizacao-3df26679",
+          "exame-e-imagem-a813d17f",
+          "exame-e-imagem-07b8d2b2",
+          "tratamento-da-fratura-do-colo-d7c6aca2",
+          "outras-complicacoes-e-resultados-bee5e6a6"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "76c5964050aa5ff6aa1022928588e6737f287fc85b120ce8d2ee50fab28b3cc8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0562": {
+    "questaoSha256": "605d33827b10adf318eac1105ceaeb008a08d96ec6d945071ecdbce74c862e46",
+    "comentarioAnteriorSha256": "881a55319b638772a6c4388843604c0d83d0577509532fd1ae7f4807409b97c7",
+    "comentario": {
+      "conceito": "Mesmo depois de fixar e consolidar uma fratura desviada do colo do tálus, o acompanhamento vascular não termina no primeiro ano. O resumo descreve necrose surgindo **até 36 meses** após a fixação, intervalo que sustenta C.\n\nO desvio pode interromper as poucas portas vasculares do tálus. A restauração anatômica ajuda a recuperar relações e permite a reperfusão, mas não apaga automaticamente a lesão vascular inicial. Além disso, **consolidação e viabilidade não são o mesmo desfecho**: o colo pode consolidar apesar de necrose do corpo (Rockwood, 10ª ed., cap. 66, “RM, colapso e o tempo longo”).\n\nO problema tardio também envolve a revascularização. O corpo esclerótico pode suportar carga, mas a remodelação subsequente pode acompanhar colapso do domo, meses ou anos depois. Por isso, melhora clínica inicial ou união do foco não bastam para encerrar a vigilância.\n\nIsso não significa manter todo paciente três anos sem carga. O capítulo não demonstra benefício de prolongar indiscriminadamente a restrição; **tempo de seguimento é diferente de tempo de descarga**. Radiografias seriadas e avaliação clínica acompanham a evolução, com exames adicionais conforme a dúvida.\n\n> **Na prova:** vigiar até 36 meses; não confundir acompanhamento prolongado com proibição prolongada de apoio.",
+      "correta": "**C: 36 meses.** É o período até o qual a necrose pode surgir e também regredir/remodelar no resumo, justificando vigilância além dos dois primeiros anos.",
+      "incorretas": {
+        "A": "**Encerra cedo demais.** O primeiro ano pode mostrar consolidação sem excluir necrose ou evolução tardia do corpo talar.",
+        "B": "**Ainda fica aquém da janela descrita.** Vinte e quatro meses não cobrem os eventos relatados até 36 meses após a fixação.",
+        "D": "**Não é o mínimo solicitado pela referência desta questão.** Quarenta e oito meses pode fazer parte do cuidado de um paciente que continue sintomático, mas o marco do resumo para o risco de necrose é 36 meses."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização; Pós-operatório e necrose avascular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Anatomia e vascularização",
+          "Pós-operatório e necrose avascular"
+        ],
+        "blocos": [
+          "anatomia-e-vascularizacao-67b0e630",
+          "pos-operatorio-e-necrose-avascular-101e1fdb",
+          "pos-operatorio-e-necrose-avascular-54e6d12e"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "ae292149cbdc520fe595515f4dbce745c214c6712fefbb00e5b56bd7e4613c9c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0861": {
+    "questaoSha256": "ea285d89d3f8bc7ceed457c6d934ce088cc2654e45c098bc6d08fbfe6894baa0",
+    "comentarioAnteriorSha256": "a168afebc3adfab6f1b09885333a255af1b97d35d91f1f3b9695316afc5edbe7",
+    "comentario": {
+      "conceito": "O acesso **anteromedial** mostra o colo do tálus pelo lado interno e integra o tratamento da **fratura desviada do colo**, alternativa B. Ele vai da região do maléolo medial até a naviculocuneiforme, entre os tendões tibial anterior e tibial posterior.\n\nO objetivo é enxergar a redução. O colo pode estar curto, rodado e em varo; ver apenas um lado pode esconder a deformidade do outro. Por isso, o Rockwood, 10ª ed., cap. 66, “Dois acessos e a ordem da fixação”, recomenda combinar as vias anteromedial e anterolateral nas fraturas desviadas, respeitando a ponte de pele e as partes moles.\n\n**Não é sinônimo de incisão para qualquer tálus luxado.** Quando o corpo está preso posteromedialmente e uma tentativa fechada falhou, o capítulo descreve redução aberta urgente, em geral por incisão posteromedial separada. É uma necessidade de alcançar e destravar o corpo; a exposição anterior do colo não deve ser oferecida como solução universal.\n\nA osteotomia medial, quando necessária, pode preservar o deltoide e o seu ramo arterial, particularmente importante se ele for a última ligação vascular do corpo. A escolha da via depende do fragmento a alcançar, da posição e do que precisa ser preservado.\n\n> **Na prova:** anteromedial para o colo desviado; corpo preso atrás pode exigir outra janela.",
+      "correta": "**B: fratura desviada do colo.** A via expõe o lado medial do colo e é combinada à anterolateral para conferir comprimento, angulação e rotação da redução.",
+      "incorretas": {
+        "A": "**O corpo posterior preso cria outro problema de acesso.** O resumo descreve em geral uma incisão posteromedial separada quando ele não reduz fechado, sem tornar o anteromedial isolado a resposta dessa situação.",
+        "C": "**O alvo ósseo é lateral.** A fratura do maléolo lateral é abordada na região fibular; a janela medial para o colo talar não é sua indicação específica.",
+        "D": "**Uma luxação não define sozinha esta via.** É preciso reduzir e verificar congruência e lesões associadas; o texto associa a exposição anteromedial do colo à fratura desviada, não a toda luxação talonavicular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Tratamento da fratura do colo.",
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seção: As vias de acesso e o nervo em risco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Tratamento da fratura do colo"
+        ],
+        "blocos": [
+          "tratamento-da-fratura-do-colo-4017e556",
+          "tratamento-da-fratura-do-colo-859eeec1",
+          "tratamento-da-fratura-do-colo-63b1dcfd",
+          "tratamento-da-fratura-do-colo-f5d75f5b",
+          "tratamento-da-fratura-do-colo-53c1a52a"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "f0848f56788e1d1317eb9bfb30a0109a265fd6fbda92de0dbeacb7e89f049839"
+      },
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "As vias de acesso e o nervo em risco"
+        ],
+        "blocos": [
+          "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "74f5b1eb8bb41aa6c237f9fe9eddb539d80f680a1dc8c0c88079f55cf6c0502e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0882": {
+    "questaoSha256": "8dcba4d9f593f9dd1a2ff6c978e87438b6773e88b8cacd9937080d96f63fd364",
+    "comentarioAnteriorSha256": "a9106e033aa0c9a7885cc7279e5c22488665202da818d2a9b0e7fda2a010b7c8",
+    "comentario": {
+      "conceito": "A projeção de **Broden** avalia a **faceta subtalar posterior**, alternativa C. Ela ajuda a enxergar o encontro da face inferior do corpo do tálus com o calcâneo, região em que uma incongruência ou um fragmento retido pode prejudicar a cartilagem.\n\nO resumo do Rockwood, 10ª ed., cap. 66, “Canale e Broden”, descreve rotação interna de 30–45 graus, tornozelo em flexão neutra e imagens com angulações de 10, 20, 30 e 40 graus. A variação do feixe permite examinar a faceta posterior em diferentes projeções; uma incidência isolada não deve substituir a avaliação de toda a articulação.\n\nA comparação útil é com **Canale**, orientada ao colo do tálus e ao seu comprimento medial. Nem o fato de ambas serem incidências especiais nem a proximidade anatômica tornam seus alvos intercambiáveis.\n\nNa avaliação de uma fratura do calcâneo, Broden responde à pergunta sobre a faceta posterior. Não permite, por esse nome apenas, atribuir integridade ao sustentáculo, à faceta média ou à calcaneocuboidea.\n\n> **Na prova:** Broden lê a faceta posterior; procure a articulação que a projeção foi feita para expor.",
+      "correta": "**C: a faceta subtalar posterior.** É a superfície especificamente destacada pela técnica de Broden no resumo.",
+      "incorretas": {
+        "A": "**Troca a superfície articular por uma estrutura medial.** O sustentáculo não é o alvo identificado para esta incidência; sua proximidade com o tálus não basta para escolhê-lo.",
+        "B": "**Acerta a articulação em termos gerais e erra a faceta.** O capítulo especifica a posterior, e não a média.",
+        "D": "**É outra articulação.** A calcaneocuboidea não é a superfície entre tálus e calcâneo que Broden procura demonstrar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Exame e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Exame e imagem"
+        ],
+        "blocos": [
+          "exame-e-imagem-a813d17f",
+          "exame-e-imagem-07b8d2b2",
+          "exame-e-imagem-176e1e03"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "2de4c8019b56eeb9c39450a769952b848512504f0e07c97d3a26743b7889a0eb"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1223": {
+    "questaoSha256": "6b1cfda76cfd7f8b9e4b152bd861ce049c087e182bf9cb54fd3fcc7458f7e733",
+    "comentarioAnteriorSha256": "d1e0220d7b72fd2f6c5f1208c76ccabbcf98bfbd2620e6dd1e105c60f27bd631",
+    "comentario": {
+      "conceito": "O colo do tálus tende a desviar em **dorsiflexão e varo**, alternativa B. O resumo relaciona a leitura desse desvio ao perfil e insiste, ao final da fixação, em conferir que ele não permaneceu em nenhuma dessas duas posições (Rockwood, 10ª ed., cap. 66, “Exame e imagem” e “Fixação”).\n\nO mecanismo típico combina carga axial e dorsiflexão, fazendo a tíbia distal atingir o colo. Quando há cominuição medial, recuperar apenas a aparência externa do foco não devolve necessariamente seu comprimento. Se o lado medial encurta, a cabeça e o pé ficam orientados em varo; a coluna medial curta pode deixar supinação fixa e sobrecarga lateral.\n\nA prevenção explica a técnica. Na fratura cominuída, o capítulo prefere uma **placa lateral para estabilizar o comprimento**, seguida de parafuso medial de posição, totalmente rosqueado e **sem compressão**. Comprimir um defeito medial aproximaria os fragmentos à custa de encurtar ainda mais o colo. Nos defeitos apropriados, enxerto ou substituto oferece apoio.\n\nA dorsiflexão residual tem outra consequência: perda do ângulo de declinação e impacto anterior do tornozelo. Por isso, olhar o colo em mais de uma incidência, incluindo Canale, procura restaurar a forma tridimensional, e não apenas unir as corticais.\n\n> **Na prova:** dorsiflexão e varo; na fixação cominuída, preserve o comprimento em vez de comprimir o defeito.",
+      "correta": "**B: flexão dorsal e varo.** É o padrão de desvio descrito; a combinação deve ser reconhecida e evitada na redução para preservar mobilidade subtalar e alinhamento do retropé.",
+      "incorretas": {
+        "A": "**O varo está correto, o plano sagital foi invertido.** A descrição típica é dorsiflexão do colo; flexão plantar não substitui o componente que o perfil e a fluoroscopia final precisam avaliar.",
+        "C": "**Inverte os dois componentes.** O resumo aponta dorsiflexão e varo e explica a coluna medial curta, não um padrão típico em flexão plantar e valgo.",
+        "D": "**Acerta o componente dorsal e erra o alinhamento coronal.** A cominuição com encurtamento medial favorece varo e supinação fixa, não o valgo apresentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Exame e imagem; Mecanismo, epidemiologia e lesões associadas; Tratamento da fratura do colo; Outras complicações e resultados."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Exame e imagem",
+          "Mecanismo, epidemiologia e lesões associadas",
+          "Tratamento da fratura do colo",
+          "Outras complicações e resultados"
+        ],
+        "blocos": [
+          "exame-e-imagem-01c205b8",
+          "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+          "tratamento-da-fratura-do-colo-ef0a1cf8",
+          "tratamento-da-fratura-do-colo-7edccd32",
+          "tratamento-da-fratura-do-colo-d7c6aca2",
+          "outras-complicacoes-e-resultados-bee5e6a6",
+          "outras-complicacoes-e-resultados-6f637759"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "77bddfd09db177e38205ee4697441a0eb32bd5ef855ec29cc635ac73d9052970"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
