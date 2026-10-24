@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 807,
+  "pendente": 779,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 214,
-  "pendente-inspecao-imagem": 128,
-  "revisada": 1123
+  "pendente-fonte": 220,
+  "pendente-inspecao-imagem": 120,
+  "revisada": 1153
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -137,10 +137,10 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente": 21,
+    "pendente": 16,
     "pendente-fonte": 27,
-    "pendente-inspecao-imagem": 10,
-    "revisada": 68
+    "pendente-inspecao-imagem": 7,
+    "revisada": 76
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -148,10 +148,9 @@
    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
    "estados": {
     "duplicada": 2,
-    "pendente": 30,
-    "pendente-fonte": 3,
-    "pendente-inspecao-imagem": 8,
-    "revisada": 30
+    "pendente": 2,
+    "pendente-fonte": 9,
+    "revisada": 60
    }
   },
   "rockwood10-51-acetabulo": {
@@ -159,10 +158,10 @@
    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
-    "pendente": 63,
-    "pendente-fonte": 1,
+    "pendente": 61,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 6,
-    "revisada": 1
+    "revisada": 2
    }
   },
   "rockwood10-53-colo-femur": {
@@ -245,9 +244,9 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 40,
+    "pendente": 39,
     "pendente-anulada": 2,
-    "pendente-fonte": 23,
+    "pendente-fonte": 24,
     "pendente-inspecao-imagem": 1,
     "revisada": 84
    }
@@ -41166,8 +41165,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -41181,7 +41180,31 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "8a71ba5b10dd78ca5f13c7418356396cd3829568625ad78d03b3a5897ea844b2"
+   "questaoSha256": "8a71ba5b10dd78ca5f13c7418356396cd3829568625ad78d03b3a5897ea844b2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Anatomia e biomecânica do anel"
+      ],
+      "blocos": [
+       "anatomia-e-biomecanica-do-anel-9eb66b24",
+       "anatomia-e-biomecanica-do-anel-13360708"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+     }
+    ],
+    "questaoSha256": "8a71ba5b10dd78ca5f13c7418356396cd3829568625ad78d03b3a5897ea844b2",
+    "comentarioSha256": "4cde40bad695986f968dd8ee8b84fbb9e35d701f66850e22dc27698266574f38"
+   }
   },
   "quadril-0122": {
    "tema": "quadril",
@@ -41290,8 +41313,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -41305,7 +41328,33 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "94db4d2465fbcac8fa217a1fd2b65361feb4123210152ebed1997bb86d973be6"
+   "questaoSha256": "94db4d2465fbcac8fa217a1fd2b65361feb4123210152ebed1997bb86d973be6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Anatomia e biomecânica do anel",
+       "Classificação de YOUNG e BURGESS"
+      ],
+      "blocos": [
+       "anatomia-e-biomecanica-do-anel-9eb66b24",
+       "classificacao-de-young-e-burgess-3830ff73",
+       "anatomia-e-biomecanica-do-anel-13360708"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "0eba5808b995d13a9fe7bd67cfef8fbb1898294d8684e769b893ff05ecc0e457"
+     }
+    ],
+    "questaoSha256": "94db4d2465fbcac8fa217a1fd2b65361feb4123210152ebed1997bb86d973be6",
+    "comentarioSha256": "de1dad7f19988884f131cefa4153ff303825a444ca33411d843a2761a1935dbd"
+   }
   },
   "quadril-0224": {
    "tema": "quadril",
@@ -42481,8 +42530,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -42496,7 +42545,31 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "3b4db9c8fda425ed54b1928f78f90d20b66fc65f15286a01028d62bfbc3facb8"
+   "questaoSha256": "3b4db9c8fda425ed54b1928f78f90d20b66fc65f15286a01028d62bfbc3facb8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Anatomia e biomecânica do anel"
+      ],
+      "blocos": [
+       "anatomia-e-biomecanica-do-anel-9eb66b24",
+       "anatomia-e-biomecanica-do-anel-13360708"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+     }
+    ],
+    "questaoSha256": "3b4db9c8fda425ed54b1928f78f90d20b66fc65f15286a01028d62bfbc3facb8",
+    "comentarioSha256": "4440b80fdd1c6b315783c54d6544bf3d576f4f3656114f97f1e589b16897b855"
+   }
   },
   "quadril-0669": {
    "tema": "quadril",
@@ -42553,8 +42626,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: nervo superficial cruzando o ilíaco rumo à espinha anterossuperior; D oficial é cutâneo femoral lateral. O corpo dos resumos 50/51 descreve risco desse nervo nos acessos/INFIX, mas não detalha o trajeto completo e a distinção visual de todas as alternativas, especialmente o genitofemoral, necessários para uma aula anatômica independente conferida. Falta atlas/texto anatômico com esses percursos; reconhecimento visual ou comentário antigo não substitui essa fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -42568,7 +42641,8 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "10d2a89eee71a78900de1596e3bd951e9ec134797193599b3e3935825e6d1301"
+   "questaoSha256": "10d2a89eee71a78900de1596e3bd951e9ec134797193599b3e3935825e6d1301",
+   "pendencia": "Figura aberta: nervo superficial cruzando o ilíaco rumo à espinha anterossuperior; D oficial é cutâneo femoral lateral. O corpo dos resumos 50/51 descreve risco desse nervo nos acessos/INFIX, mas não detalha o trajeto completo e a distinção visual de todas as alternativas, especialmente o genitofemoral, necessários para uma aula anatômica independente conferida. Falta atlas/texto anatômico com esses percursos; reconhecimento visual ou comentário antigo não substitui essa fonte."
   },
   "trauma-0001": {
    "tema": "trauma",
@@ -52543,8 +52617,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -52559,7 +52633,34 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "bcc367d038f5e46032a04303d1f70d686a883035f74d4a593dba339517466a31"
+   "questaoSha256": "bcc367d038f5e46032a04303d1f70d686a883035f74d4a593dba339517466a31",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fraturas do sacro",
+       "Fixação do anel posterior"
+      ],
+      "blocos": [
+       "fraturas-do-sacro-f07d590a",
+       "fraturas-do-sacro-96ec0312",
+       "fraturas-do-sacro-66c993cf",
+       "fixacao-do-anel-posterior-3552d5cd"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "b839452217b02cedd4336b45751cd7703131968cf5355c6b05840fe5b89bbb09"
+     }
+    ],
+    "questaoSha256": "bcc367d038f5e46032a04303d1f70d686a883035f74d4a593dba339517466a31",
+    "comentarioSha256": "5142270d349ab2b0fc4306d97c9f91f26d95aa8be971b43c7f0c1b12ca51cf17"
+   }
   },
   "trauma-0318": {
    "tema": "trauma",
@@ -56480,7 +56581,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56496,7 +56597,39 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "603180b090b00681dad3de40987c041e0d85f119bac18bdf08547ea0311b56f8"
+   "questaoSha256": "603180b090b00681dad3de40987c041e0d85f119bac18bdf08547ea0311b56f8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel posterior",
+       "Anatomia e biomecânica do anel",
+       "Fixação do anel anterior",
+       "Pós-operatório, resultados e complicações"
+      ],
+      "blocos": [
+       "fixacao-do-anel-posterior-9fa25c75",
+       "fixacao-do-anel-posterior-cd893461",
+       "fixacao-do-anel-posterior-972aa15f",
+       "fixacao-do-anel-posterior-667be55c",
+       "anatomia-e-biomecanica-do-anel-7aed120d",
+       "fixacao-do-anel-anterior-77e6d0e3",
+       "pos-operatorio-resultados-e-complicacoes-22b687d7"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "a53ad89a1453e1cca50bef5bc019b53cd9a52792dba46f79fbfa27b8f941e37d"
+     }
+    ],
+    "questaoSha256": "603180b090b00681dad3de40987c041e0d85f119bac18bdf08547ea0311b56f8",
+    "comentarioSha256": "c570e23b6742f097e8d6efecd70e66b0df023097dc2ff3c5e2cd53b05926d70b"
+   }
   },
   "trauma-0641": {
    "tema": "trauma",
@@ -60819,7 +60952,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60835,7 +60968,34 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "05cbdb0f302c00a2c2def394d82a0d2cd425405de8eb32f95425c8839aa7da79"
+   "questaoSha256": "05cbdb0f302c00a2c2def394d82a0d2cd425405de8eb32f95425c8839aa7da79",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fraturas do sacro",
+       "Exame físico, fratura exposta e lesão de partes moles"
+      ],
+      "blocos": [
+       "fraturas-do-sacro-f07d590a",
+       "fraturas-do-sacro-96ec0312",
+       "fraturas-do-sacro-7d626e05",
+       "exame-fisico-fratura-exposta-e-lesao-de-partes-m-e2a7ba15"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "98396bc3aa2cdcb1b236bfc3f50dfaabe86da98a728e74cc931c04164a466587"
+     }
+    ],
+    "questaoSha256": "05cbdb0f302c00a2c2def394d82a0d2cd425405de8eb32f95425c8839aa7da79",
+    "comentarioSha256": "5685665b971d2a02cfd16a731b00e86c05bbb7f3a2d4394ec009efbc2a4b6fed"
+   }
   },
   "trauma-0815": {
    "tema": "trauma",
@@ -62720,7 +62880,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62736,7 +62896,51 @@
     "rockwood10-50-anel-pelvico",
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "452ae4f7bd903a7c99d7e4fe102628d34a66b5a399d0dd18bd597dccc75bdd40"
+   "questaoSha256": "452ae4f7bd903a7c99d7e4fe102628d34a66b5a399d0dd18bd597dccc75bdd40",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Radiografias: as seis linhas do AP e as oblíquas de JUDET",
+       "Anatomia aplicada: colunas, paredes, teto e vasos"
+      ],
+      "blocos": [
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--9913387f",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--638a221d",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-4d1283f9",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-5c00be27",
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-9b34c1f0",
+       "radiografias-as-seis-linhas-do-ap-e-as-obliquas--f7b6d4e4"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "8cbb224e4293d54a646bdee0073b82f5c10b2c673c92815ae450cb165b8c71b4"
+     },
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Imagem"
+      ],
+      "blocos": [
+       "imagem-0a1f5cef"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "8864d2b1355c7649bd546457d5bfec450d8d48dee79ff7a3b029b9ece6990508"
+     }
+    ],
+    "questaoSha256": "452ae4f7bd903a7c99d7e4fe102628d34a66b5a399d0dd18bd597dccc75bdd40",
+    "comentarioSha256": "3ae340a0ee36bfd3f36f82fcb446361dac9b9aa642227c6f8e965d5b62542f41"
+   }
   },
   "trauma-0893": {
    "tema": "trauma",
@@ -64488,8 +64692,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -64503,7 +64707,32 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "125cdad90b45b6f79494d8b5528780de91ec59860a1afe8e7a2387d5cbb8547f"
+   "questaoSha256": "125cdad90b45b6f79494d8b5528780de91ec59860a1afe8e7a2387d5cbb8547f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fraturas do sacro"
+      ],
+      "blocos": [
+       "fraturas-do-sacro-f07d590a",
+       "fraturas-do-sacro-96ec0312",
+       "fraturas-do-sacro-66c993cf"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "57600b95ad990736639a4fcb3264f5cdffbd5da7ae48dbd1b7eba1d37085a598"
+     }
+    ],
+    "questaoSha256": "125cdad90b45b6f79494d8b5528780de91ec59860a1afe8e7a2387d5cbb8547f",
+    "comentarioSha256": "f11434c0a95b78a10e279efafa2375fb3f72595437f7a40f53d7d6e8f02f69a4"
+   }
   },
   "trauma-0957": {
    "tema": "trauma",
@@ -65546,8 +65775,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado exige a região da coluna mais frequentemente associada à lesão de Morel-Lavallée, comparando torácica/lombar/sacral/coccígea. Os corpos dos resumos 50 e 51 descrevem desenluvamento em pelve/quadril e manejo de partes moles, mas não fornecem frequência comparativa por segmento vertebral. Topografia glútea não prova a liderança de fratura sacral. C oficial preservada; falta série ou fonte que estabeleça a associação pedida.",
    "temComentario": true,
    "citacoes": [
     {
@@ -65569,7 +65798,8 @@
     "rockwood10-50-anel-pelvico",
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "1e1d6ba519ca95508700307b397047a17432245c6b70347c21054b896e760be6"
+   "questaoSha256": "1e1d6ba519ca95508700307b397047a17432245c6b70347c21054b896e760be6",
+   "pendencia": "O enunciado exige a região da coluna mais frequentemente associada à lesão de Morel-Lavallée, comparando torácica/lombar/sacral/coccígea. Os corpos dos resumos 50 e 51 descrevem desenluvamento em pelve/quadril e manejo de partes moles, mas não fornecem frequência comparativa por segmento vertebral. Topografia glútea não prova a liderança de fratura sacral. C oficial preservada; falta série ou fonte que estabeleça a associação pedida."
   },
   "trauma-0989": {
    "tema": "trauma",
@@ -69882,8 +70112,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial. “Dispositivo ideal” em Tile C hemodinamicamente instável não especifica fase, recursos ou necessidade de compressão posterior direta. O resumo 50 descreve cinta/lençol como primeira medida atual, clampe superior na ruptura posterior e maior controle pelos pinos supra-acetabulares modernos. Isso não permite escolher unicamente B bibliográfica antiga contra A/D sem o contexto comparativo da fonte original. Não converter uma preferência histórica em provável única neste enunciado amplo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -69904,7 +70134,8 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "92938896166f11f8dbc0dc7f4709b4a45cd667245ec096eb0105c8b6f3e4ee50"
+   "questaoSha256": "92938896166f11f8dbc0dc7f4709b4a45cd667245ec096eb0105c8b6f3e4ee50",
+   "pendencia": "Sem gabarito oficial. “Dispositivo ideal” em Tile C hemodinamicamente instável não especifica fase, recursos ou necessidade de compressão posterior direta. O resumo 50 descreve cinta/lençol como primeira medida atual, clampe superior na ruptura posterior e maior controle pelos pinos supra-acetabulares modernos. Isso não permite escolher unicamente B bibliográfica antiga contra A/D sem o contexto comparativo da fonte original. Não converter uma preferência histórica em provável única neste enunciado amplo."
   },
   "trauma-1151": {
    "tema": "trauma",
@@ -70034,8 +70265,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte independente descreve sangramento vaginal/retal e ar extraluminal na TC como pistas de exposição oculta, mas não ordena qual sinal clínico é o mais sugestivo entre sangramento vaginal, Morel-Lavallée, hematúria e enfisema subcutâneo dos flancos. Ar na TC não equivale automaticamente ao sinal clínico de flanco da alternativa. Falta comparação explícita para sustentar unicamente a provável A antiga; sem gabarito oficial, comentário e resposta preservados sem novo endosso.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70050,7 +70281,8 @@
     "rockwood10-50-anel-pelvico",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "aec1deb3986f576ba28ea00f7e5876f5ff2c5bfa400e14db62de9e7db58c926f"
+   "questaoSha256": "aec1deb3986f576ba28ea00f7e5876f5ff2c5bfa400e14db62de9e7db58c926f",
+   "pendencia": "A fonte independente descreve sangramento vaginal/retal e ar extraluminal na TC como pistas de exposição oculta, mas não ordena qual sinal clínico é o mais sugestivo entre sangramento vaginal, Morel-Lavallée, hematúria e enfisema subcutâneo dos flancos. Ar na TC não equivale automaticamente ao sinal clínico de flanco da alternativa. Falta comparação explícita para sustentar unicamente a provável A antiga; sem gabarito oficial, comentário e resposta preservados sem novo endosso."
   },
   "trauma-1156": {
    "tema": "trauma",
@@ -70224,8 +70456,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A frase sem gabarito oficial afirma que a avulsão do transverso de L5 é indicativa de lesão instável, sem qualificar alerta versus comprovação. O corpo do resumo 50 registra o valor limitado do sinal e sua associação a fraturas de vários tipos, concluindo que deve alertar para potencial instabilidade vertical. Falta a fonte original ou qualificação do enunciado para decidir unicamente sobre a afirmação categórica e reconciliar a provável A antiga; não tratar o sinal como patognomônico.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70239,7 +70471,8 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "936163186ef61c266d1c197745c294a1a829624862de07be08292ea1e62c774e"
+   "questaoSha256": "936163186ef61c266d1c197745c294a1a829624862de07be08292ea1e62c774e",
+   "pendencia": "A frase sem gabarito oficial afirma que a avulsão do transverso de L5 é indicativa de lesão instável, sem qualificar alerta versus comprovação. O corpo do resumo 50 registra o valor limitado do sinal e sua associação a fraturas de vários tipos, concluindo que deve alertar para potencial instabilidade vertical. Falta a fonte original ou qualificação do enunciado para decidir unicamente sobre a afirmação categórica e reconciliar a provável A antiga; não tratar o sinal como patognomônico."
   },
   "trauma-1167": {
    "tema": "trauma",
@@ -70735,8 +70968,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "É necessário avaliar a segurança/indicação de osteossíntese no TCE grave com pressão intracraniana estável de 30–40 mmHg. Os resumos 50/51 não estabelecem esses limiares nem o efeito da fixação sobre PIC e perfusão cerebral. Falta fonte de politrauma/neurotrauma que sustente o julgamento Certo/Errado; provável B antiga não é fonte nem gabarito oficial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70750,7 +70983,8 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "ad87ee5d1c2372516acea3b760bf86cb6af6a263331827d4cbe14ed0f76c7ab7"
+   "questaoSha256": "ad87ee5d1c2372516acea3b760bf86cb6af6a263331827d4cbe14ed0f76c7ab7",
+   "pendencia": "É necessário avaliar a segurança/indicação de osteossíntese no TCE grave com pressão intracraniana estável de 30–40 mmHg. Os resumos 50/51 não estabelecem esses limiares nem o efeito da fixação sobre PIC e perfusão cerebral. Falta fonte de politrauma/neurotrauma que sustente o julgamento Certo/Errado; provável B antiga não é fonte nem gabarito oficial."
   },
   "trauma-1183": {
    "tema": "trauma",
@@ -80951,7 +81185,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -80966,7 +81200,35 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "c229dafcc05293c9f06e64be756d57622027de751176c3df57e7217c7a5f30af"
+   "questaoSha256": "c229dafcc05293c9f06e64be756d57622027de751176c3df57e7217c7a5f30af",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Lesões associadas e mortalidade"
+      ],
+      "blocos": [
+       "lesoes-associadas-e-mortalidade-94094495",
+       "lesoes-associadas-e-mortalidade-99d29fae",
+       "lesoes-associadas-e-mortalidade-2b895df9",
+       "lesoes-associadas-e-mortalidade-523a7364",
+       "lesoes-associadas-e-mortalidade-2b606cd8",
+       "lesoes-associadas-e-mortalidade-81709eb2"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "00cf9b0f45e219827e63879091a410a08b6ea711fde888414df36371fbdc2cc8"
+     }
+    ],
+    "questaoSha256": "c229dafcc05293c9f06e64be756d57622027de751176c3df57e7217c7a5f30af",
+    "comentarioSha256": "b07d864bc876767094e881144cb6ad60625bf2daf43075d5b1e8621ea585b43e"
+   }
   },
   "trauma-1491": {
    "tema": "trauma",
@@ -81081,7 +81343,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81096,7 +81358,33 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "fac5b6d8ac06ebf8724e4ce286c264537334e94c84a1b8bae4b580248d0c1a37"
+   "questaoSha256": "fac5b6d8ac06ebf8724e4ce286c264537334e94c84a1b8bae4b580248d0c1a37",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Exame físico, fratura exposta e lesão de partes moles"
+      ],
+      "blocos": [
+       "exame-fisico-fratura-exposta-e-lesao-de-partes-m-be3b559d",
+       "exame-fisico-fratura-exposta-e-lesao-de-partes-m-72d397fe",
+       "exame-fisico-fratura-exposta-e-lesao-de-partes-m-fcb681fb",
+       "exame-fisico-fratura-exposta-e-lesao-de-partes-m-81b52151"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "6a32bbd1d0fff8776d0777186c87cbfb8c8ae078bae7663b7942464b90ea7066"
+     }
+    ],
+    "questaoSha256": "fac5b6d8ac06ebf8724e4ce286c264537334e94c84a1b8bae4b580248d0c1a37",
+    "comentarioSha256": "a04d5105b2e6a63c94f0345158920bcb7eb3f2de4af108c097e12bbebc95f174"
+   }
   },
   "trauma-1494": {
    "tema": "trauma",
@@ -81105,7 +81393,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81120,7 +81408,32 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "4a2ea6dcea8d920ecfd8b2d52498b6a0e9eb400292d59863a2c3d36e2494071a"
+   "questaoSha256": "4a2ea6dcea8d920ecfd8b2d52498b6a0e9eb400292d59863a2c3d36e2494071a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Imagem"
+      ],
+      "blocos": [
+       "imagem-4f412193",
+       "imagem-0a1f5cef",
+       "imagem-abbe22b6"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "72a38922b0ed58ecd94253f29f454832c887a9093d597b4ac0cda0fd604d67dc"
+     }
+    ],
+    "questaoSha256": "4a2ea6dcea8d920ecfd8b2d52498b6a0e9eb400292d59863a2c3d36e2494071a",
+    "comentarioSha256": "bb6a89f54be3399def94331eebba211f46983d2e03d0a873fe60d9632fd90719"
+   }
   },
   "trauma-1495": {
    "tema": "trauma",
@@ -81184,7 +81497,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81199,7 +81512,33 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "19bd757413c1c66d6b89173271cd0c244e6e6e97909253e320091028e592587d"
+   "questaoSha256": "19bd757413c1c66d6b89173271cd0c244e6e6e97909253e320091028e592587d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Classificação de YOUNG e BURGESS"
+      ],
+      "blocos": [
+       "classificacao-de-young-e-burgess-e761b1de",
+       "classificacao-de-young-e-burgess-466f1bcb",
+       "classificacao-de-young-e-burgess-cf3bad25",
+       "classificacao-de-young-e-burgess-91c756d4"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "3ecf0334b6ed05b4316269757d6ac0a3fb011f9a8e07756482b6b77eea03214a"
+     }
+    ],
+    "questaoSha256": "19bd757413c1c66d6b89173271cd0c244e6e6e97909253e320091028e592587d",
+    "comentarioSha256": "9293006e18ed77bfb7b125ff3afb8a761e05158fb9a685087a11e14e760d18ef"
+   }
   },
   "trauma-1497": {
    "tema": "trauma",
@@ -81209,7 +81548,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81225,7 +81564,34 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "c64a4d9b0e0ee02d729cb258d4f0a939b58d5a9da38191d217248d21d0f27898"
+   "questaoSha256": "c64a4d9b0e0ee02d729cb258d4f0a939b58d5a9da38191d217248d21d0f27898",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Classificação de YOUNG e BURGESS",
+       "Anatomia e biomecânica do anel",
+       "Fixação do anel posterior"
+      ],
+      "blocos": [
+       "classificacao-de-young-e-burgess-3830ff73",
+       "anatomia-e-biomecanica-do-anel-9eb66b24",
+       "fixacao-do-anel-posterior-c72dbf06"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "95efbd05f094fdb1303dba46f5c9fc8463704084d74c12c10aa71040490dbf44"
+     }
+    ],
+    "questaoSha256": "c64a4d9b0e0ee02d729cb258d4f0a939b58d5a9da38191d217248d21d0f27898",
+    "comentarioSha256": "e0eeb608f6badd73aebac6511fcf2b9a4bd535367e7f23a25890d728dc2e4709"
+   }
   },
   "trauma-1498": {
    "tema": "trauma",
@@ -81234,7 +81600,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81249,7 +81615,37 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "07530cad41611f3f15992ca59cdbe6e88e08114a7f8689ac0d0d43258f8ec5a9"
+   "questaoSha256": "07530cad41611f3f15992ca59cdbe6e88e08114a7f8689ac0d0d43258f8ec5a9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Classificação de TILE e as outras",
+       "Imagem"
+      ],
+      "blocos": [
+       "classificacao-de-tile-e-as-outras-d0bfab9b",
+       "classificacao-de-tile-e-as-outras-e68641ba",
+       "classificacao-de-tile-e-as-outras-ebbd8485",
+       "classificacao-de-tile-e-as-outras-52229ed8",
+       "classificacao-de-tile-e-as-outras-007f2df5",
+       "classificacao-de-tile-e-as-outras-904b844c",
+       "imagem-e6dd45ba"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "673192c36449b4bc1f996929cc7ced61f1b5d30236834db5e9ab310c419eca0a"
+     }
+    ],
+    "questaoSha256": "07530cad41611f3f15992ca59cdbe6e88e08114a7f8689ac0d0d43258f8ec5a9",
+    "comentarioSha256": "2d565ab05a141cf472cd970a1fe3c6d30bda1be93629dad4bfe5b4d63deff2d0"
+   }
   },
   "trauma-1499": {
    "tema": "trauma",
@@ -81259,8 +81655,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -81275,7 +81671,34 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "0b9974b76dd30eeef8afcda847fd48ebd661cb326779c6cfaa637d4bdbb2a970"
+   "questaoSha256": "0b9974b76dd30eeef8afcda847fd48ebd661cb326779c6cfaa637d4bdbb2a970",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fraturas do sacro",
+       "Fixação do anel posterior"
+      ],
+      "blocos": [
+       "fraturas-do-sacro-96ec0312",
+       "fraturas-do-sacro-f07d590a",
+       "fixacao-do-anel-posterior-3552d5cd",
+       "fixacao-do-anel-posterior-3d224c85"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "9de685509ffad37f3245ad6bc8182ffca6203e3cab04837d84a9ed5c831174c9"
+     }
+    ],
+    "questaoSha256": "0b9974b76dd30eeef8afcda847fd48ebd661cb326779c6cfaa637d4bdbb2a970",
+    "comentarioSha256": "d73db77a357847525b104b542817c6ffa85fa44e65dd86bf8e3d2133e4ed8cd5"
+   }
   },
   "trauma-1500": {
    "tema": "trauma",
@@ -81285,7 +81708,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81301,7 +81724,32 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "a7da83105271ff16b392faa3a5a42827f1fdbe0630ee33978bb4c5c4c75d9739"
+   "questaoSha256": "a7da83105271ff16b392faa3a5a42827f1fdbe0630ee33978bb4c5c4c75d9739",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fraturas do sacro"
+      ],
+      "blocos": [
+       "fraturas-do-sacro-29ccf1ad",
+       "fraturas-do-sacro-d4228a63",
+       "fraturas-do-sacro-5becff58"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "553b8126284d3a8e6e32a1aeded420b870ba620bad7b32d3c7b4dd9645239cb7"
+     }
+    ],
+    "questaoSha256": "a7da83105271ff16b392faa3a5a42827f1fdbe0630ee33978bb4c5c4c75d9739",
+    "comentarioSha256": "38a43e3d3c84cbc550c88aa9e59429845f9c3bc55922633a440cf673c0665dda"
+   }
   },
   "trauma-1501": {
    "tema": "trauma",
@@ -81311,7 +81759,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81326,7 +81774,35 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "12bcb9f294525264614819a931e285491f5beb6e2960129d4b249060bd20ea4a"
+   "questaoSha256": "12bcb9f294525264614819a931e285491f5beb6e2960129d4b249060bd20ea4a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Controle da hemorragia",
+       "Exame físico, fratura exposta e lesão de partes moles"
+      ],
+      "blocos": [
+       "controle-da-hemorragia-65f109e9",
+       "controle-da-hemorragia-307d0207",
+       "controle-da-hemorragia-9a04e282",
+       "controle-da-hemorragia-14e4c829",
+       "exame-fisico-fratura-exposta-e-lesao-de-partes-m-c26a1704"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "da6d69c1faf91744f5423abd58e86fd38727f3b8efb191021c81b6986a3efd5e"
+     }
+    ],
+    "questaoSha256": "12bcb9f294525264614819a931e285491f5beb6e2960129d4b249060bd20ea4a",
+    "comentarioSha256": "3a6ce56d4c9f329a1d1f0a8f0e4aba77580a060bb7ad3a29857223d0485261ce"
+   }
   },
   "trauma-1502": {
    "tema": "trauma",
@@ -81336,7 +81812,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81351,7 +81827,34 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "afc4be31cb15a85679e9f166280725f1e0b0d20628e953e8dd5b35d55d58babf"
+   "questaoSha256": "afc4be31cb15a85679e9f166280725f1e0b0d20628e953e8dd5b35d55d58babf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Controle da hemorragia"
+      ],
+      "blocos": [
+       "controle-da-hemorragia-f1cb1105",
+       "controle-da-hemorragia-7bcd76b1",
+       "controle-da-hemorragia-c0a73e46",
+       "controle-da-hemorragia-2119cc59",
+       "controle-da-hemorragia-86cc36e2"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "13e156de9468dc83eaa1fb97e82dd42bb023047fe359ef18184e25b1bc137491"
+     }
+    ],
+    "questaoSha256": "afc4be31cb15a85679e9f166280725f1e0b0d20628e953e8dd5b35d55d58babf",
+    "comentarioSha256": "982fc249ad45d1442ca7aac27abbcc874c3f2c667015743ef8e8ab24e40c85fc"
+   }
   },
   "trauma-1503": {
    "tema": "trauma",
@@ -81361,7 +81864,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81376,7 +81879,34 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "088f8fbdfd0f7e7c0ac60f285ecda88e2565bea9f74978da96426e201f5639e6"
+   "questaoSha256": "088f8fbdfd0f7e7c0ac60f285ecda88e2565bea9f74978da96426e201f5639e6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Controle da hemorragia"
+      ],
+      "blocos": [
+       "controle-da-hemorragia-35923bb1",
+       "controle-da-hemorragia-e602d401",
+       "controle-da-hemorragia-10d504bd",
+       "controle-da-hemorragia-423419fc",
+       "controle-da-hemorragia-8f5e93e8"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "a196916ef67285c56c90c97797fcbfd295becbdcc3a677817d15b040fe83fdea"
+     }
+    ],
+    "questaoSha256": "088f8fbdfd0f7e7c0ac60f285ecda88e2565bea9f74978da96426e201f5639e6",
+    "comentarioSha256": "e7656a5ec0eb1d81c0ce4580557e0b94b03194b996e887bb52eb2061ad8c62b2"
+   }
   },
   "trauma-1504": {
    "tema": "trauma",
@@ -81386,7 +81916,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81401,7 +81931,33 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "d4f0a67dc849f6d52c76004b9348edd360f7b21cfc896f372d388ddb5ca27b69"
+   "questaoSha256": "d4f0a67dc849f6d52c76004b9348edd360f7b21cfc896f372d388ddb5ca27b69",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel anterior",
+       "Tratamento cirúrgico: indicações e princípios"
+      ],
+      "blocos": [
+       "fixacao-do-anel-anterior-bcde7119",
+       "fixacao-do-anel-anterior-061f31f9",
+       "tratamento-cirurgico-indicacoes-e-principios-62cfb826"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "385a01d138e4577814afc05f18092c26b26f2a0981d305f8890527d1b0f67c75"
+     }
+    ],
+    "questaoSha256": "d4f0a67dc849f6d52c76004b9348edd360f7b21cfc896f372d388ddb5ca27b69",
+    "comentarioSha256": "dda9d405c00e879ec4b5003fc9a60fb68b95a4892afddff760831666024dde31"
+   }
   },
   "trauma-1505": {
    "tema": "trauma",
@@ -81410,7 +81966,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81425,7 +81981,35 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "34787315363dc799f47b513c47eb14b4823e238fdea84230dc6c73843de74349"
+   "questaoSha256": "34787315363dc799f47b513c47eb14b4823e238fdea84230dc6c73843de74349",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Imagem",
+       "Tratamento não operatório"
+      ],
+      "blocos": [
+       "imagem-3c5210aa",
+       "tratamento-nao-operatorio-920b2c26",
+       "tratamento-nao-operatorio-d5ffa2dc",
+       "tratamento-nao-operatorio-b3350e1a",
+       "tratamento-nao-operatorio-73be37be"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "8df6fe9859d83715df68afe9dc254366a768074ee9af05f0b00822507bbb42e5"
+     }
+    ],
+    "questaoSha256": "34787315363dc799f47b513c47eb14b4823e238fdea84230dc6c73843de74349",
+    "comentarioSha256": "1eed4203c102cfa9f7ad8001424a5042923c24294632398122d84a06de49445a"
+   }
   },
   "trauma-1506": {
    "tema": "trauma",
@@ -81435,7 +82019,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81450,7 +82034,34 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "d8016b33c406d8254ba232c96395d1354368efbe3f110c5153c9b53e305680e1"
+   "questaoSha256": "d8016b33c406d8254ba232c96395d1354368efbe3f110c5153c9b53e305680e1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel anterior"
+      ],
+      "blocos": [
+       "fixacao-do-anel-anterior-2b6589e2",
+       "fixacao-do-anel-anterior-4c172993",
+       "fixacao-do-anel-anterior-77e6d0e3",
+       "fixacao-do-anel-anterior-d2e60aa1",
+       "fixacao-do-anel-anterior-923ef90f"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "3fb10daf1e315f1ae57fa5c8d69ff3e0f314c300f2eebaf51d2bed6b2d490921"
+     }
+    ],
+    "questaoSha256": "d8016b33c406d8254ba232c96395d1354368efbe3f110c5153c9b53e305680e1",
+    "comentarioSha256": "0498dce4113a126d2f992e24d9a2e7cddf46c24a0f55f8056c8950c24643ebd8"
+   }
   },
   "trauma-1507": {
    "tema": "trauma",
@@ -81459,7 +82070,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81474,7 +82085,31 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "fe6e152672459df96060dffa0702873c22b17d6ad4e65eff5324c74171eed1a5"
+   "questaoSha256": "fe6e152672459df96060dffa0702873c22b17d6ad4e65eff5324c74171eed1a5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel anterior"
+      ],
+      "blocos": [
+       "fixacao-do-anel-anterior-3fbf0cd8",
+       "fixacao-do-anel-anterior-45ac0f65"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "9cff72fa25c4094a29960ad6ba60e32368b4bb6ad6229e38f069035f09d3e7ec"
+     }
+    ],
+    "questaoSha256": "fe6e152672459df96060dffa0702873c22b17d6ad4e65eff5324c74171eed1a5",
+    "comentarioSha256": "2d2c4d49abbf4ed5c9e53328e4cef653d6ddcf7165c84c87ce0258a7cd90b804"
+   }
   },
   "trauma-1508": {
    "tema": "trauma",
@@ -81483,7 +82118,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81498,7 +82133,32 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "a37652219be51f3589b6153402f5a22b7d6d47800fee0f9363ca6a66c9b09556"
+   "questaoSha256": "a37652219be51f3589b6153402f5a22b7d6d47800fee0f9363ca6a66c9b09556",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel anterior",
+       "Controle da hemorragia"
+      ],
+      "blocos": [
+       "fixacao-do-anel-anterior-da344b4d",
+       "controle-da-hemorragia-14e4c829"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "e06afa63fc4dd0a65a321d49c6783ccdbdd3200cbf923286612defc6768dd77e"
+     }
+    ],
+    "questaoSha256": "a37652219be51f3589b6153402f5a22b7d6d47800fee0f9363ca6a66c9b09556",
+    "comentarioSha256": "20315d02c8b91906a7b26e1f33df4cef9da812aa9bf2cff4ce8514e9542c44e5"
+   }
   },
   "trauma-1509": {
    "tema": "trauma",
@@ -81507,7 +82167,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81522,7 +82182,33 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "96fe9fae3b881734158f7edc03f7c7d495ab9921cf9f63919b127e1c23206fa4"
+   "questaoSha256": "96fe9fae3b881734158f7edc03f7c7d495ab9921cf9f63919b127e1c23206fa4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel anterior"
+      ],
+      "blocos": [
+       "fixacao-do-anel-anterior-c693f643",
+       "fixacao-do-anel-anterior-9556bd19",
+       "fixacao-do-anel-anterior-8acdc8fc",
+       "fixacao-do-anel-anterior-f99e5cac"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "be00c72064c27a0bf1e430f1916871ca75303b265e609b67abee472d869526c1"
+     }
+    ],
+    "questaoSha256": "96fe9fae3b881734158f7edc03f7c7d495ab9921cf9f63919b127e1c23206fa4",
+    "comentarioSha256": "818e3da2db9413584684aed473e2ae53f6c2dc8aa8f761b54222d9305be4db01"
+   }
   },
   "trauma-1510": {
    "tema": "trauma",
@@ -81531,7 +82217,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81546,7 +82232,34 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "4fa5122d091492702de88b16a4ca2300b6da6af6a577d8d7e8f41ed93d71e34b"
+   "questaoSha256": "4fa5122d091492702de88b16a4ca2300b6da6af6a577d8d7e8f41ed93d71e34b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel posterior",
+       "Tratamento cirúrgico: indicações e princípios"
+      ],
+      "blocos": [
+       "fixacao-do-anel-posterior-ab0d1523",
+       "fixacao-do-anel-posterior-eae68b4c",
+       "fixacao-do-anel-posterior-f76ae5b8",
+       "tratamento-cirurgico-indicacoes-e-principios-62cfb826"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "f95c738a7db222831743fa3037da4561f4e11a29ebec4d1a239d491e6bd5a01a"
+     }
+    ],
+    "questaoSha256": "4fa5122d091492702de88b16a4ca2300b6da6af6a577d8d7e8f41ed93d71e34b",
+    "comentarioSha256": "d120f28b24ba8af9c4441f6261a78e532436dcbb74087c7fb7c8443aa99ce46f"
+   }
   },
   "trauma-1511": {
    "tema": "trauma",
@@ -81556,8 +82269,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -81572,7 +82285,34 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "f5b81a56e4a88bf978f714cfd985ad6f79e3ffe50131e58aa8bd1e9e9c95b096"
+   "questaoSha256": "f5b81a56e4a88bf978f714cfd985ad6f79e3ffe50131e58aa8bd1e9e9c95b096",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel posterior"
+      ],
+      "blocos": [
+       "fixacao-do-anel-posterior-cd893461",
+       "fixacao-do-anel-posterior-972aa15f",
+       "fixacao-do-anel-posterior-667be55c",
+       "fixacao-do-anel-posterior-9fa25c75",
+       "fixacao-do-anel-posterior-a1e506e3"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "490dfc660152cfd0eb2e37dc56fd946a34d5484a137be5468e2e975dc791aec1"
+     }
+    ],
+    "questaoSha256": "f5b81a56e4a88bf978f714cfd985ad6f79e3ffe50131e58aa8bd1e9e9c95b096",
+    "comentarioSha256": "736a5588c8ef14404d60896969cde42c934ce86c2e246dde1f7aaeb91f33ac29"
+   }
   },
   "trauma-1512": {
    "tema": "trauma",
@@ -81582,7 +82322,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81598,7 +82338,33 @@
     "rockwood10-49-fratura-toracolombar",
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "95b327da3edc167d5848a73336ce63f02503a6c49b7488ecdffa1f7d2926879d"
+   "questaoSha256": "95b327da3edc167d5848a73336ce63f02503a6c49b7488ecdffa1f7d2926879d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fraturas do sacro",
+       "Fixação do anel posterior"
+      ],
+      "blocos": [
+       "fraturas-do-sacro-29ccf1ad",
+       "fraturas-do-sacro-5becff58",
+       "fixacao-do-anel-posterior-ad9b4cc7"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "07af8913af264453b24031705ca939543b83f5f120f9dd42c38fcaa87b956b17"
+     }
+    ],
+    "questaoSha256": "95b327da3edc167d5848a73336ce63f02503a6c49b7488ecdffa1f7d2926879d",
+    "comentarioSha256": "bad6bea3ee9f7dde6158b5fe7f3bafae42d39145fb37924e3150fe51ae215749"
+   }
   },
   "trauma-1513": {
    "tema": "trauma",
@@ -81607,7 +82373,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81622,7 +82388,33 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "2f9e9a25bdb0d60f7d3a037b34bd894bf0d15dd72af7de91e405354e6a753ff2"
+   "questaoSha256": "2f9e9a25bdb0d60f7d3a037b34bd894bf0d15dd72af7de91e405354e6a753ff2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Fixação do anel posterior",
+       "Anatomia e biomecânica do anel"
+      ],
+      "blocos": [
+       "fixacao-do-anel-posterior-10845943",
+       "anatomia-e-biomecanica-do-anel-ea8be6ca",
+       "fixacao-do-anel-posterior-cd893461"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "8290fa9e29b5861e74d8f9fed480f6d0a7c3ccd5d9be3c17da047ce8f8073863"
+     }
+    ],
+    "questaoSha256": "2f9e9a25bdb0d60f7d3a037b34bd894bf0d15dd72af7de91e405354e6a753ff2",
+    "comentarioSha256": "9e9c0516fdc446360e8a1d426020a8b6e79ddb8608860c17063c974f0619b4ed"
+   }
   },
   "trauma-1514": {
    "tema": "trauma",
@@ -81632,7 +82424,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -81647,7 +82439,35 @@
    "resumosCandidatos": [
     "rockwood10-50-anel-pelvico"
    ],
-   "questaoSha256": "f5a764c6bf1fc8319681ca08e59a716759e48091a6cb7d3ff44f9239de1f428a"
+   "questaoSha256": "f5a764c6bf1fc8319681ca08e59a716759e48091a6cb7d3ff44f9239de1f428a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-50-anel-pelvico",
+      "titulo": "Lesões do anel pélvico",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+      "secoes": [
+       "Pós-operatório, resultados e complicações"
+      ],
+      "blocos": [
+       "pos-operatorio-resultados-e-complicacoes-686fcb95",
+       "pos-operatorio-resultados-e-complicacoes-ce962c0a",
+       "pos-operatorio-resultados-e-complicacoes-c3d6772b",
+       "pos-operatorio-resultados-e-complicacoes-a0e2b4f9",
+       "pos-operatorio-resultados-e-complicacoes-f92dd46f",
+       "pos-operatorio-resultados-e-complicacoes-3ab63c50"
+      ],
+      "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+      "trechosSha256": "95c535d07f54acfdfc21397aecc8c06403b47f8d8fc1003ab1b0ebf95d96e101"
+     }
+    ],
+    "questaoSha256": "f5a764c6bf1fc8319681ca08e59a716759e48091a6cb7d3ff44f9239de1f428a",
+    "comentarioSha256": "6da1e1a3b82f80032cba123e625a4b82cf1a7dcec8da9154cefc88979022425c"
+   }
   },
   "trauma-1515": {
    "tema": "trauma",

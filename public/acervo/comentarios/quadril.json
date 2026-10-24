@@ -950,19 +950,43 @@
     "conferido": false
   },
   "quadril-0084": {
-    "conceito": "### Ligamentos que fecham as incisuras isquiáticas\n| Ligamento | De onde a onde | O que forma |\n|---|---|---|\n| ==sacroespinal== | sacro e cóccix → **espinha isquiática** | separa o forame isquiático **maior** (acima) do **menor** (abaixo) |\n| sacrotuberal | sacro, cóccix e EIPI → **tuberosidade isquiática** | fecha o forame isquiático menor; mais superficial e largo |\n\n### O que passa pelos forames\n| Forame maior (acima do piriforme) | Forame maior (abaixo do piriforme) | Forame menor |\n|---|---|---|\n| vasos e nervo glúteos superiores | ciático, glúteos inferiores, pudendo, cutâneo femoral posterior, nervo do obturador interno | tendão do obturador interno, pudendo e vasos pudendos internos (voltando) |\n\n### Por que importa\n- O **nervo pudendo** contorna a espinha isquiática e o ligamento sacroespinal: referência para bloqueio pudendo.\n- Nas lesões do anel pélvico, a avulsão da espinha isquiática ou da ponta do sacro indica lesão do sacroespinal e **instabilidade rotacional**.\n\n> **Na prova:** ligamento fino até a espinha isquiática = ==sacroespinal==.",
-    "correta": "**Vai à espinha isquiática.**\n- O ligamento apontado sai do sacro e do cóccix e termina na espinha isquiática.\n- Com o sacrotuberal, transforma as incisuras isquiáticas em forames.",
+    "conceito": "A seta aponta um ligamento curto entre a região sacrococcígea e a **espinha isquiática**: o **sacroespinal, ou sacroespinhoso**, alternativa D. O destino ósseo é a chave para reconhecê-lo na ilustração.\n\nO sacroespinhoso participa da separação entre os forames isquiáticos maior e menor. O **sacrotuberoso**, mais superficial e largo, segue até o **túber isquiático**. Na figura, a seta não termina sobre essa faixa longa que desce ao túber, mas sobre a estrutura mais curta junto à espinha (Rockwood, 10ª ed., cap. 50, “Quem segura o anel”).\n\n**A inserção distingue melhor que um nome parecido.** Os sacroilíacos unem sacro e ílio em torno da articulação; o sacroespinhoso da seta chega ao ísquio. A opção “sacroisquial” é imprecisa para individualizar qual estrutura se pretende nomear e não deve levar a inventar uma inserção diferente.\n\nEsses ligamentos são estabilizadores posteriores acessórios. O suporte principal vertical e posterior continua sendo dos sacroilíacos posteriores e interósseos; reconhecer o desenho não significa atribuir toda a estabilidade ao ligamento indicado.",
+    "correta": "**D: sacroespinal.** É o nome usado no resumo para o ligamento que termina na espinha isquiática, correspondente ao ponto indicado. Sacroespinhoso é a outra forma empregada para a mesma estrutura.",
     "incorretas": {
-      "A": "**Mais superior.**\n- Os ligamentos sacroilíacos unem o sacro ao ílio na articulação sacroilíaca.",
-      "B": "**Vai à tuberosidade.**\n- O sacrotuberal termina na tuberosidade isquiática; é mais superficial e largo.",
-      "C": "**Nome inespecífico.**\n- \"Sacroisquial\" não designa o ligamento inserido na espinha isquiática."
+      "A": "**Sacroilíaco se refere à conexão entre sacro e ílio.** A seta marca a faixa que chega à espinha isquiática, não o complexo ao redor da articulação sacroilíaca.",
+      "B": "**O sacrotuberal termina no túber.** É mais largo e superficial, descendo além da espinha. Trocar o destino da faixa curta pelo da longa impede reconhecer a estrutura apontada.",
+      "C": "**A nomenclatura não individualiza o destino da seta.** “Sacroisquial” não é o nome específico usado na tabela consultada; o dado demonstrável é a inserção na espinha, que corresponde ao sacroespinal. Não é necessário inventar um terceiro ligamento para justificar a opção."
     },
     "referencias": [
-      "Gray's Anatomy. Ligaments of the pelvis.",
-      "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel."
     ],
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "conferido": false,
+    "alerta": "D oficial preservada pela inserção na espinha isquiática. A opção “sacroisquial” é terminologicamente imprecisa frente aos nomes específicos do resumo; a explicação se apoia no destino ósseo visível, sem inventar uma estrutura para esse distrator.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Anatomia e biomecânica do anel"
+          ],
+          "blocos": [
+            "anatomia-e-biomecanica-do-anel-9eb66b24",
+            "anatomia-e-biomecanica-do-anel-13360708"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+        }
+      ],
+      "questaoSha256": "8a71ba5b10dd78ca5f13c7418356396cd3829568625ad78d03b3a5897ea844b2",
+      "comentarioSha256": "4cde40bad695986f968dd8ee8b84fbb9e35d701f66850e22dc27698266574f38"
+    }
   },
   "quadril-0085": {
     "conceito": "### Reto femoral\n- Parte **biarticular** do quadríceps: flete o quadril e estende o joelho.\n- Origens:\n  - **cabeça direta:** ==espinha ilíaca anteroinferior (EIAI)==;\n  - **cabeça refletida:** sulco supra-acetabular.\n- Inervação: nervo femoral.\n\n### Clínica\n- **Avulsão da EIAI** no adolescente (chute): fragmento pequeno, tratamento geralmente conservador.\n- **Lesão muscular** do reto femoral em jogadores: a mais comum do quadríceps.\n- **Impacto subespinhal:** EIAI proeminente batendo no colo em flexão.\n- Teste de **Ely** avalia sua retração.\n\n### Origens da pelve anterior (resumo)\n| Estrutura | Músculo |\n|---|---|\n| EIAS | sartório, tensor da fáscia lata |\n| ==EIAI== | ==reto femoral== |\n| ramo inferior do púbis | adutores, grácil |\n\n> **Na prova:** origem proximal do reto femoral = ==EIAI==.",
@@ -1974,16 +1998,45 @@
     "conferido": false
   },
   "quadril-0219": {
-    "conceito": "### Ligamentos da pelve posterior\n| Ligamento | De onde a onde | Função |\n|---|---|---|\n| ==iliolombar== | ==processo transverso de L5== → crista ilíaca posterior | estabiliza L5 sobre a pelve |\n| sacroilíacos posteriores | sacro → ílio (EIPS) | os mais fortes do anel posterior |\n| sacroilíacos anteriores | face anterior da articulação | mais fracos; rompem cedo na rotação externa |\n| ==sacroespinhoso== | sacro e cóccix → ==espinha isquiática== | estabilidade rotacional; divide os forames isquiáticos |\n| sacrotuberoso | sacro, cóccix, EIPS → **tuberosidade isquiática** | estabilidade vertical e rotacional; mais superficial e largo |\n\n### No trauma pélvico\n- **Avulsão do processo transverso de L5:** sinal de lesão do iliolombar e instabilidade **vertical**.\n- **Avulsão da espinha isquiática ou da borda do sacro:** lesão do sacroespinhoso, instabilidade **rotacional**.\n\n> **Na prova:** A (L5 → crista) = ==iliolombar==; B, no gabarito = ==sacroespinhoso== (veja o alerta).",
-    "correta": "**Iliolombar e sacroespinhoso.**\n- A une o processo transverso de L5 à crista ilíaca.\n- B, pelo gabarito, vai do sacro à espinha isquiática.",
+    "conceito": "A marca **A** está no ligamento que liga o processo transverso de **L5 à crista ilíaca**: o **iliolombar**. A marca **B** aponta a faixa curta que termina na **espinha isquiática**: o **sacroespinhoso**. O par é a alternativa A.\n\nAs duas estruturas ligam regiões diferentes. O iliolombar conecta a coluna à pelve; sua tração pode explicar uma avulsão do processo transverso de L5 no trauma do anel. O sacroespinhoso parte da região sacrococcígea e ajuda a separar os forames isquiáticos. Ao seguir cada faixa até o osso de chegada, o desenho deixa de ser uma coleção de nomes semelhantes (Rockwood, 10ª ed., cap. 50, “Anatomia e biomecânica”).\n\n**B não desce ao túber isquiático.** Essa seria a inserção do sacrotuberoso, a faixa mais larga e superficial. Já os sacroilíacos anteriores ficam na face anterior da articulação entre sacro e ílio, sem reproduzir a ligação superior entre L5 e crista marcada por A.\n\nA função também ajuda a orientar: iliolombar transmite forças entre coluna e pelve; sacroespinhoso oferece estabilidade posterior acessória; o complexo posterior e interósseo sacroilíaco é a sustentação principal do anel.",
+    "correta": "**A: iliolombar; sacroespinhoso.** A primeira faixa chega de L5 à crista, e a segunda termina na espinha isquiática. A ordem e a inserção precisam ser conferidas separadamente.",
     "incorretas": {
-      "B": "**B lida como sacrotuberoso.**\n- O sacrotuberoso vai à tuberosidade; o gabarito identifica B como o sacroespinhoso (veja o alerta).",
-      "C": "**A errada.**\n- O sacroilíaco anterior fica na face anterior da articulação, sem relação com L5.",
-      "D": "**As duas erradas.**\n- A é o iliolombar, e B, pelo gabarito, o sacroespinhoso."
+      "B": "**Acerta A e alonga indevidamente o destino de B.** O sacrotuberoso vai ao túber, enquanto a marca B está na estrutura curta da espinha isquiática.",
+      "C": "**Acerta B, mas troca a ligação superior.** A não aponta a face anterior da sacroilíaca; mostra a conexão do processo transverso de L5 com a crista, própria do iliolombar.",
+      "D": "**Troca os dois destinos.** A é a conexão lombar com a crista; B é o ligamento da espinha. Sacroilíaco anterior e sacrotuberoso ocupam outras relações no desenho."
     },
+    "referencias": [
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel; Classificação de YOUNG e BURGESS."
+    ],
+    "conferido": false,
     "alerta": "A distinção exata entre os ligamentos sacroespinhoso e sacrotuberoso na figura (ambos se estendem do sacro à região do ísquio, um mais superficial que o outro) pode gerar dúvida dependendo do ângulo exato da imagem, mantivemos aqui a leitura mais consistente com o gabarito oficial.",
-    "geradoEm": "2026-09-24",
-    "conferido": false
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Anatomia e biomecânica do anel",
+            "Classificação de YOUNG e BURGESS"
+          ],
+          "blocos": [
+            "anatomia-e-biomecanica-do-anel-9eb66b24",
+            "classificacao-de-young-e-burgess-3830ff73",
+            "anatomia-e-biomecanica-do-anel-13360708"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "0eba5808b995d13a9fe7bd67cfef8fbb1898294d8684e769b893ff05ecc0e457"
+        }
+      ],
+      "questaoSha256": "94db4d2465fbcac8fa217a1fd2b65361feb4123210152ebed1997bb86d973be6",
+      "comentarioSha256": "de1dad7f19988884f131cefa4153ff303825a444ca33411d843a2761a1935dbd"
+    }
   },
   "quadril-0220": {
     "conceito": "**O que o ângulo alfa mede.** No impacto femoroacetabular tipo CAME, a junção cabeça-colo perde a concavidade normal (o \"offset\") e forma uma giba anterossuperior. Ao fletir e rodar internamente o quadril, essa giba entra no acetábulo como um came de motor, cisalha a cartilagem acetabular de fora para dentro e descola o lábio. O ângulo alfa, descrito por **Nötzli** em 2002 em cortes de RM, transforma essa giba em número.\n\n**Como traçar.**\n1. Desenha-se um círculo que se ajusta ao contorno da cabeça femoral.\n2. Traça-se uma linha do centro da cabeça pelo eixo do colo (passando pelo ponto médio do colo na sua parte mais estreita).\n3. Traça-se outra linha do centro até o ponto anterior em que o contorno ósseo **sai do círculo**.\n4. O ângulo entre as duas linhas é o alfa.\n\nQuanto mais cedo o osso escapa do círculo, mais perto do eixo do colo e maior o ângulo, ou seja, maior a giba.\n\n**Valores de referência.**\n\n| Ângulo alfa | Interpretação |\n|---|---|\n| Até cerca de 50° | Junção cabeça-colo esférica, normal |\n| **Acima de 55°** | Limiar mais usado para CAME (resposta) |\n| Acima de 60 a 65° | Deformidade mais acentuada, associada a lesão condral |\n\nNo trabalho original de Nötzli, os quadris assintomáticos tiveram média de cerca de 42° e os sintomáticos de cerca de 74°, e o corte proposto foi 50°. Na prática e nas provas brasileiras, o valor de **55°** consolidou-se como o limite acima do qual se considera a morfologia CAME, deixando a faixa de 50 a 55° como zona cinzenta.\n\n**Incidências.** A giba costuma ser anterossuperior e pode ser invisível no AP. Por isso usam-se o **Dunn modificado a 45°** (quadril fletido 45°, abduzido 20°), o perfil cross-table e, na RM, os cortes radiais. Um valor normal em uma única incidência não exclui CAME.\n\n**Lembrete clínico.** Ângulo alfa aumentado é achado frequente em assintomáticos, sobretudo atletas jovens. O diagnóstico de impacto exige a tríade de sintomas (dor inguinal à flexão), sinais (teste FADIR positivo) e imagem compatível.",
@@ -8580,18 +8633,42 @@
     "conferido": false
   },
   "quadril-0668": {
-    "conceito": "**Sacroespinal e sacrotuberal ligam o sacro ao ísquio por fixações diferentes.** O sacroespinal chega à espinha isquiática, uma projeção mais superior e pontiaguda. O sacrotuberal chega ao túber isquiático, a proeminência inferior ampla que também recebe origens musculares. Espinha e túber não são sinônimos.\n\nO sacroespinal divide a região dos forames isquiáticos maior e menor e participa da estabilidade rotacional. O sacrotuberal tem orientação mais longitudinal e contribui para a estabilidade vertical. Na vista posterior, o sacrotuberal é uma faixa superficial mais longa; o sacroespinal é mais curto e profundo. Olhar apenas a cor esbranquiçada pode confundir as duas estruturas.\n\nA relação com os nervos completa a anatomia: o pudendo sai pelo forame isquiático maior e retorna pelo menor, contornando a região da espinha isquiática. O isquiático sai pelo maior e segue para a coxa, sem repetir esse retorno. Portanto, ligamento, referência óssea e trajeto nervoso devem ser entendidos em conjunto.",
-    "correta": "**B: sacroespinal.** O alvo é o sacroespinal, faixa curta do sacro à espinha isquiática. Ele fica profundo ao sacrotuberal e divide a região dos forames maior e menor. A ponta aponta a faixa curta, e não o ligamento longo até o túber.",
+    "conceito": "A faixa curta assinalada chega à **espinha isquiática**, por baixo da grande faixa que segue ao túber. É o **sacroespinal ou sacroespinhoso**, alternativa B, visto pela face posterior.\n\nO contraste útil é com o **sacrotuberoso**: este é mais largo e superficial e termina no túber isquiático. O sacroespinhoso é curto e participa da separação dos forames isquiáticos maior e menor. Seguir a inserção permite reconhecer a estrutura mesmo quando parte dela fica encoberta (Rockwood, 10ª ed., cap. 50, “Quem segura o anel”).\n\nNo alto, o iliolombar conecta L5 à crista; perto da sacroilíaca, os ligamentos posteriores e interósseos unem os componentes do anel e contêm deslocamentos verticais e posteriores. Essas posições ajudam a eliminar opções que têm função estabilizadora real, mas não correspondem à seta.\n\n**O ligamento da seta é acessório, não toda a estabilidade posterior.** A importância mecânica do setor posterior não deve ser atribuída a uma única faixa porque ela é fácil de ver na imagem.",
+    "correta": "**B: sacroespinal.** A posição curta e profunda e a inserção na espinha isquiática correspondem à definição do resumo.",
     "incorretas": {
-      "A": "**Fica no limite superior da pelve.** Liga processos transversos lombares à crista ilíaca posterior. Não termina na espinha isquiática, que é a referência do ligamento assinalado.",
-      "C": "**É a faixa longa até o túber isquiático.** Fica mais superficial e tem fixação distal inferior. O alvo é o sacroespinal, mais curto, que chega à espinha isquiática.",
-      "D": "**Cruza a articulação sacroilíaca.** Liga sacro ao ílio e é essencial para a estabilidade pélvica. Não vai à espinha isquiática, onde termina o sacroespinal assinalado."
+      "A": "**O iliolombar fica mais superior.** Liga o processo transverso de L5 à crista ilíaca; não termina na espinha isquiática assinalada.",
+      "C": "**O sacrotuberal é a faixa longa até o túber.** Sua posição superficial ajuda a entender por que o ligamento curto pode aparecer apenas em parte, mas não muda o destino de cada um.",
+      "D": "**O complexo sacroilíaco posterior fica junto à articulação.** Ele é central para sustentar o anel, mas não corresponde à faixa que parte do sacro/cóccix e chega à espinha."
     },
     "referencias": [
-      "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulos Pelve e Coxa/Quadril: Músculos, Origens e Inserções, Nervos, Articulações e Acessos Cirúrgicos."
+      "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Anatomia e biomecânica do anel."
     ],
-    "geradoEm": "2026-10-10",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-50-anel-pelvico",
+          "titulo": "Lesões do anel pélvico",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+          "secoes": [
+            "Anatomia e biomecânica do anel"
+          ],
+          "blocos": [
+            "anatomia-e-biomecanica-do-anel-9eb66b24",
+            "anatomia-e-biomecanica-do-anel-13360708"
+          ],
+          "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+          "trechosSha256": "2f6b28e1cd98404ad6cfbf8a0e5c7bc72d4baaeb50ddc82d60a60955c6fb9d98"
+        }
+      ],
+      "questaoSha256": "3b4db9c8fda425ed54b1928f78f90d20b66fc65f15286a01028d62bfbc3facb8",
+      "comentarioSha256": "4440b80fdd1c6b315783c54d6544bf3d576f4f3656114f97f1e589b16897b855"
+    }
   },
   "quadril-0669": {
     "conceito": "O **sacroespinal, ou sacroespinhoso**, chega à **espinha isquiática**. O **sacrotuberal, ou sacrotuberoso**, chega ao **túber isquiático**. A ordem pedida é, portanto, a da alternativa C.\n\nOs dois partem da região sacrococcígea e participam da estabilidade posterior acessória. O sacroespinhoso separa os forames isquiáticos maior e menor; o sacrotuberoso é mais superficial e largo. A diferença de destino ósseo ajuda a distinguir estruturas próximas sem trocar os nomes (Rockwood, 10ª ed., cap. 50, “Quem segura o anel”).\n\n**Acessório não significa principal sustentação do anel.** Os sacroilíacos posteriores e interósseos são os principais responsáveis pela estabilidade vertical e posterior. Conhecer as inserções dos dois ligamentos da pergunta é útil, mas não permite atribuir a eles sozinhos a função de todo o complexo posterior.\n\n> **Na prova:** espinhoso chega à espinha; tuberoso chega ao túber. Respeite essa ordem no par.",

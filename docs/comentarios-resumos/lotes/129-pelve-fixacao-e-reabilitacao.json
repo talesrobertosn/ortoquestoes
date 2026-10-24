@@ -1,0 +1,385 @@
+{
+ "trauma-1504": {
+  "questaoSha256": "d4f0a67dc849f6d52c76004b9348edd360f7b21cfc896f372d388ddb5ca27b69",
+  "comentarioAnteriorSha256": "e072976274c715d9aa76bd91959992795192b7abe80ee6d05aa2307ff2d88e03",
+  "comentario": {
+   "conceito": "O pino **supra-acetabular** usa um corredor de osso mais favorável ao controle rotacional do anel. Em comparação com a crista, a combinação descrita é **um pino por lado, fora do campo abdominal e mais resistente à rotação**, alternativa D.\n\nA entrada fica na região da espinha ilíaca anteroinferior, com o trajeto seguindo entre as tábuas em direção ao pilar isquiático. O resumo recomenda manter o ponto **pelo menos 2 cm acima da articulação**, porque um pino intracapsular infectado pode causar artrite séptica (Rockwood, 10ª ed., cap. 50, “Fixador externo: crista ilíaca ou supra-acetabular”).\n\n**A vantagem exige radioscopia.** A oblíqua obturadora com saída produz a lágrima para orientar a entrada; a oblíqua ilíaca e a obturadora com entrada conferem a relação com a incisura e as tábuas. Boa pega não torna seguro avançar cegamente nem ultrapassar a cortical oposta.\n\nO fixador anterior pode fechar o livro e auxiliar o manejo, mas não substitui a fixação de uma ruptura posterior completa. Melhorar a ancoragem anterior não elimina a necessidade de tratar a instabilidade posterior do padrão.",
+   "correta": "**D: um pino por lado, fora do abdome e maior resistência rotacional.** São vantagens comparativas apresentadas no quadro do resumo. A técnica continua dependente de corredor e posicionamento corretos.",
+   "incorretas": {
+    "A": "**Proximidade da cápsula não é o objetivo.** O pino deve manter distância segura da articulação; infecção de um trajeto intracapsular pode atingir o quadril. Ganhar ancoragem não justifica entrada articular.",
+    "B": "**Não é a quantidade descrita.** O quadro usa um pino supra-acetabular por lado; na crista, duas unidades por lado ou uma por lado com duas barras. Exigir três não corresponde à comparação.",
+    "C": "**Inverte vantagem e exigência.** A montagem supra-acetabular é mais resistente à rotação e depende de radioscopia. Não oferece a suposta facilidade de dispensar imagem."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel anterior; Tratamento cirúrgico: indicações e princípios."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel anterior",
+     "Tratamento cirúrgico: indicações e princípios"
+    ],
+    "blocos": [
+     "fixacao-do-anel-anterior-bcde7119",
+     "fixacao-do-anel-anterior-061f31f9",
+     "tratamento-cirurgico-indicacoes-e-principios-62cfb826"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "385a01d138e4577814afc05f18092c26b26f2a0981d305f8890527d1b0f67c75"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1505": {
+  "questaoSha256": "34787315363dc799f47b513c47eb14b4823e238fdea84230dc6c73843de74349",
+  "comentarioAnteriorSha256": "0fbc6674942e08cd00744367a1b0170f1d8972d50608fc979a42df422c200119",
+  "comentario": {
+   "conceito": "Uma CL I pode parecer pouco desviada na TC e revelar instabilidade quando o anel é submetido a estresse. O achado que costuma motivar fixação é **sobreposição anterior maior que 1 cm ou cruzamento da linha média sob rotação interna**, alternativa A.\n\nImagem estática não reproduz a deformidade do impacto nem demonstra toda a mobilidade residual. O exame sob anestesia com radioscopia permite observar o comportamento do anel; o resumo relata instabilidade suficiente para fixar em 41% de 34 lesões inicialmente consideradas estáveis, reunindo CAP I e CL I (Rockwood, 10ª ed., cap. 50, “Exame sob estresse”).\n\n**Esses limites não são uma régua universal validada.** O capítulo informa que muitos cirurgiões usam o cruzamento da linha média ou mais de 1 cm de sobreposição, reconhecendo ausência de valor plenamente validado. O resultado deve ser integrado à morfologia posterior, à dor e à capacidade de mobilizar.\n\nNa CL I, fratura sacral incompleta com ramos do mesmo lado raramente desvia; fratura completa com ramos bilaterais tem comportamento diferente. A sigla da classificação, sozinha, não autoriza liberar toda lesão ou operar toda dor anterior.",
+   "correta": "**A: deslocamento significativo demonstrado dinamicamente.** É o padrão de sobreposição/cruzamento descrito como motivador de fixação. A decisão se apoia no comportamento sob estresse, sem tratar o corte como consenso absoluto.",
+   "incorretas": {
+    "B": "**Dor anterior isolada não é marcador confiável de instabilidade.** O resumo valoriza pistas posteriores e padrão da fratura, em vez de indicar fixação por qualquer sensibilidade anterior.",
+    "C": "**A ausência de fratura do ramo inferior não é um sinal de maior instabilidade.** Numa série citada, nenhuma lesão sem esse traço desviou. O achado não substitui a avaliação completa, mas tampouco é o critério operatório proposto.",
+    "D": "**Uma impacção incompleta pouco desviada tende a comportamento mais estável.** O resumo a distingue de fraturas completas e associações bilaterais. Não equivale ao deslocamento provocado que a questão pede."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Imagem; Tratamento não operatório."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Imagem",
+     "Tratamento não operatório"
+    ],
+    "blocos": [
+     "imagem-3c5210aa",
+     "tratamento-nao-operatorio-920b2c26",
+     "tratamento-nao-operatorio-d5ffa2dc",
+     "tratamento-nao-operatorio-b3350e1a",
+     "tratamento-nao-operatorio-73be37be"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "8df6fe9859d83715df68afe9dc254366a768074ee9af05f0b00822507bbb42e5"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1506": {
+  "questaoSha256": "d8016b33c406d8254ba232c96395d1354368efbe3f110c5153c9b53e305680e1",
+  "comentarioAnteriorSha256": "46bec42987746ba15ce579df0ced6c884c963a0676f0e899f4184e341e0f42b5",
+  "comentario": {
+   "conceito": "Depois de um **INFIX**, duas complicações se destacam: **irritação do cutâneo femoral lateral e ossificação heterotópica**, alternativa B. A montagem anterior interna evita pinos expostos, mas mantém uma haste e cabeças de parafusos próximas às partes moles.\n\nO dispositivo usa parafusos pediculares no corredor supra-acetabular ligados por haste subcutânea. Na revisão de 619 pacientes citada, irritação do cutâneo femoral lateral apareceu em **25,3%** e ossificação heterotópica em **24,7%**; infecção ocorreu em 3% e paralisia femoral em 1,6% (Rockwood, 10ª ed., cap. 50, “INFIX: o fixador interno”).\n\n**A altura da haste muda o risco.** Cabeças profundas demais podem levar à compressão do feixe femoral; a extremidade lateral longa da haste também deve ser evitada. O resumo orienta manter as cabeças acima da fáscia e deixar o conjunto afastado das estruturas profundas.\n\nO INFIX não trata sozinho toda instabilidade posterior e exige outra cirurgia para retirada. Sua seleção deve considerar o padrão do anel, o planejamento da fixação posterior e os riscos próprios, em vez de presumir que “interno” significa ausência de complicações.",
+   "correta": "**B: irritação do cutâneo femoral lateral e ossificação heterotópica.** São as complicações mais frequentes no levantamento apresentado, ambas próximas de 25%. A posição da haste e das cabeças é parte importante da prevenção.",
+   "incorretas": {
+    "A": "**Infecção existe, mas não lidera os eventos relatados.** O resumo cita 3%, abaixo das duas complicações da resposta. Não fornece a soltura como o par mais frequente; falha mecânica depende também do tipo de parafuso e padrão.",
+    "C": "**Lesões urinárias são relevantes no trauma pélvico, mas não são o par predominante do INFIX.** Elas influenciam a escolha e o momento da fixação anterior; a comparação da questão é com as complicações do dispositivo.",
+    "D": "**Compressão do feixe femoral é um risco de profundidade, não o par estatístico descrito.** A prevenção exige posicionar a haste acima das estruturas profundas. O resumo não coloca trombose femoral e lesão obturatória como as complicações mais relatadas."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel anterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel anterior"
+    ],
+    "blocos": [
+     "fixacao-do-anel-anterior-2b6589e2",
+     "fixacao-do-anel-anterior-4c172993",
+     "fixacao-do-anel-anterior-77e6d0e3",
+     "fixacao-do-anel-anterior-d2e60aa1",
+     "fixacao-do-anel-anterior-923ef90f"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "3fb10daf1e315f1ae57fa5c8d69ff3e0f314c300f2eebaf51d2bed6b2d490921"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1507": {
+  "questaoSha256": "fe6e152672459df96060dffa0702873c22b17d6ad4e65eff5324c74171eed1a5",
+  "comentarioAnteriorSha256": "c583a0a31581eb121fb40408db844281184621830d7ace487a0c7e95f46b1c6a",
+  "comentario": {
+   "conceito": "Uma placa da sínfise com parafusos soltos não exige revisão apenas pela imagem. Em paciente **pouco sintomático**, a opção mais adequada é **acompanhar**, alternativa C, porque falha do material pode não acompanhar piora funcional.\n\nO resumo relata uma série com 75% de soltura ou quebra de parafusos e outra com 30% de falha, sem correlação consistente com o resultado funcional. Esses números não são uma taxa universal, mas mostram que o aspecto radiográfico do implante não equivale automaticamente a fracasso clínico (Rockwood, 10ª ed., cap. 50, “A placa que solta”).\n\n**Isso não autoriza ignorar toda perda de redução.** Falha precoce pode refletir carga prematura ou lesão posterior subestimada. O momento, os sintomas e a estabilidade do anel precisam ser reavaliados; o caso fornecido, porém, descreve pouca sintomatologia e discreta reabertura, sem outro motivo para revisão imediata.\n\nA retirada também não é de rotina, inclusive em mulheres em idade fértil. Parto vaginal foi descrito com material mantido, e a via do parto deve ser definida obstetricamente. A placa de dois furos, por sua vez, tem controle rotacional inadequado e não é a solução automática para uma falha.",
+   "correta": "**C: acompanhar e correlacionar com clínica e estabilidade.** A falha radiográfica é frequente e raramente exige revisão por si só. Se houver dor importante, falha precoce ou instabilidade, a avaliação muda.",
+   "incorretas": {
+    "A": "**Não há indicação de retirada rotineira apenas para devolver movimento.** O resumo não correlaciona a presença da placa com necessidade universal de remoção. A imagem deve ser interpretada junto aos sintomas e ao anel posterior.",
+    "B": "**Revisa sem indicação clínica e escolhe uma construção problemática.** Placas de dois furos falham por controle rotacional insuficiente; bloqueio não demonstrou vantagem geral. Se revisão for necessária, ela exige planejamento do mecanismo de falha.",
+    "D": "**A fixação não torna cesariana obrigatória.** Há relatos de parto vaginal bem-sucedido com o implante. A decisão não deve ser inferida apenas da placa ou da discreta reabertura."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel anterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel anterior"
+    ],
+    "blocos": [
+     "fixacao-do-anel-anterior-3fbf0cd8",
+     "fixacao-do-anel-anterior-45ac0f65"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "9cff72fa25c4094a29960ad6ba60e32368b4bb6ad6229e38f069035f09d3e7ec"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1508": {
+  "questaoSha256": "a37652219be51f3589b6153402f5a22b7d6d47800fee0f9363ca6a66c9b09556",
+  "comentarioAnteriorSha256": "a79fb72d3ba9acf921eaaa2036371000f2c4350f41ea2704a2271984224e9843",
+  "comentario": {
+   "conceito": "A **corona mortis** liga o sistema **obturatório** ao **ilíaco externo ou epigástrico inferior**, alternativa A. Esse vaso ou conjunto de conexões cruza a face interna do ramo púbico superior, aproximadamente 6 cm da sínfise no resumo.\n\nA importância não está apenas no nome: na exposição anterior dos ramos, uma ruptura pode produzir sangramento difícil e rápido. Por isso, no acesso intrapélvico de Stoppa, o vaso deve ser identificado, isolado e ligado antes de continuar; na Pfannenstiel da sínfise, limita-se a dissecção lateral (Rockwood, 10ª ed., cap. 50, “Ramos púbicos e a corona mortis”).\n\n**Há dois sistemas na conexão.** Confundir corona mortis com qualquer par de ramos da ilíaca interna apaga justamente a comunicação com o sistema externo. A variação precisa ser procurada, não presumida ausente porque se reconheceu um único vaso obturatório.\n\nSe houver sangramento incontrolável, o resumo descreve tamponamento, fechamento e embolização como estratégia de controle. A anatomia deve orientar prevenção e manejo, sem transformar uma distância média numa área universalmente livre de vasos.",
+   "correta": "**A: vasos obturatórios e ilíacos externos ou epigástricos inferiores.** É a conexão sobre o ramo superior que corre risco nas vias anteriores. Reconhecê-la antes da dissecção ajuda a evitar hemorragia.",
+   "incorretas": {
+    "B": "**São vasos glúteos, não a comunicação descrita sobre o ramo púbico.** Aparecem entre as fontes arteriais do trauma, mas não formam a definição da corona mortis entre os sistemas obturatório e externo.",
+    "C": "**Mantém um componente obturatório e troca o outro sistema.** A conexão relevante é com ilíaco externo ou epigástrico inferior; pudenda interna não completa a definição pedida.",
+    "D": "**Reúne nomes de outros vasos pélvicos sem a ligação obturatória-externa.** Não basta haver anastomose ou proximidade na pelve para receber o nome corona mortis."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel anterior; Controle da hemorragia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel anterior",
+     "Controle da hemorragia"
+    ],
+    "blocos": [
+     "fixacao-do-anel-anterior-da344b4d",
+     "controle-da-hemorragia-14e4c829"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "e06afa63fc4dd0a65a321d49c6783ccdbdd3200cbf923286612defc6768dd77e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1509": {
+  "questaoSha256": "96fe9fae3b881734158f7edc03f7c7d495ab9921cf9f63919b127e1c23206fa4",
+  "comentarioAnteriorSha256": "f2c440267509deadc17eca8c62b6c7a512647832ebd0cda90785e7282d8a16cb",
+  "comentario": {
+   "conceito": "Na série citada, a perda de redução foi mais frequente com **parafusos retrógrados em fraturas mediais à borda lateral do forame obturatório**, alternativa D. O resumo também destaca maior risco em idosos e mulheres.\n\nA posição do traço muda a ancoragem. O algoritmo favorece o parafuso **anterógrado** nas fraturas laterais, próximas à raiz ou ao meio do ramo, e o **retrógrado** nas parassinfisárias. Escolher a direção adequada não elimina o risco: as fraturas mais mediais tiveram mais perda, e a perda anterior acompanhou perda posterior nos dados descritos (Rockwood, 10ª ed., cap. 50, “Ramos púbicos”).\n\n**Comprimento e qualidade da fixação importam.** O resumo recomenda calibre de pelo menos 4,5 mm e ancoragem distante; parafusos de 3,5 mm podem entortar, e curtos tiveram pior desempenho mecânico. A redução deve vir antes do fio-guia, para que o implante percorra um corredor já alinhado.\n\nA associação observada não significa proibir todo retrógrado, nem garantir todo anterógrado. Padrão, osso e estabilidade posterior precisam ser considerados juntos.",
+   "correta": "**D: retrógrados em fraturas mediais ao limite indicado.** É o grupo de maior perda relatada no resumo. O achado deve orientar seleção e seguimento, sem virar uma proibição absoluta da técnica.",
+   "incorretas": {
+    "A": "**É o trajeto favorecido para as fraturas laterais no algoritmo.** O resumo relata menor falha do anterógrado, não o identifica como o grupo predominante de perda descrito na pergunta.",
+    "B": "**Ancoragem longa e calibre adequado são recursos de resistência, não o fator de maior perda.** O capítulo contrasta parafusos longos com curtos e alerta para os menores. Isso não torna uma montagem automaticamente segura, mas afasta a lógica do distrator.",
+    "C": "**Inverte o perfil associado à falha na série.** O resumo destaca idosos e mulheres. Idade e sexo são associações do conjunto estudado, não determinantes isolados do resultado individual."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel anterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel anterior"
+    ],
+    "blocos": [
+     "fixacao-do-anel-anterior-c693f643",
+     "fixacao-do-anel-anterior-9556bd19",
+     "fixacao-do-anel-anterior-8acdc8fc",
+     "fixacao-do-anel-anterior-f99e5cac"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "be00c72064c27a0bf1e430f1916871ca75303b265e609b67abee472d869526c1"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1510": {
+  "questaoSha256": "4fa5122d091492702de88b16a4ca2300b6da6af6a577d8d7e8f41ed93d71e34b",
+  "comentarioAnteriorSha256": "cd78af25b7d63b5023345398844968869dff1301e873d45703bf2f0a25112210",
+  "comentario": {
+   "conceito": "No crescente **DAY III**, o fragmento posterior é **pequeno** e a lesão se comporta mais como uma **luxação sacroilíaca**. A estratégia é reduzir a asa ao fragmento e fixar com **parafuso iliossacral**, alternativa B.\n\nO fragmento em crescente permanece preso ao sacro pelos ligamentos posteriores; o restante do ílio é que desvia. Day subdivide o padrão conforme a porção da sacroilíaca e o tamanho do fragmento: I grande, II intermediário, III pequeno (Rockwood, 10ª ed., cap. 50, “Fratura em crescente e asa do ilíaco”).\n\n**Tamanho pequeno não é estabilidade.** No III, o traço fica atrás da entrada habitual do parafuso, permitindo tratar o conjunto como lesão sacroilíaca após a redução. No tipo I grande, a lógica muda: fixa-se a asa por via anterior, e um iliossacral pode não estabilizar o ílio.\n\nA técnica percutânea depende da morfologia e de uma cortical posterolateral adequada no segmento instável. Errar o tamanho do fragmento pode deixar parte da lesão sem controle ou colocar o parafuso no próprio traço. A classificação ajuda a planejar, mas não substitui a TC e a redução.",
+   "correta": "**B: tratar como luxação sacroilíaca com parafuso após redução.** É a orientação para o pequeno crescente do tipo III. O implante deve controlar o segmento que realmente está móvel.",
+   "incorretas": {
+    "A": "**É a lógica do DAY I grande.** Nesse padrão, o tratamento se aproxima do de uma fratura da asa, com abordagem anterior. Transportá-lo ao III ignora a relação diferente do traço com a articulação e a entrada do parafuso.",
+    "C": "**Fragmento pequeno não implica anel estável.** O ílio permanece deslocado em relação ao componente preso ao sacro. A estabilidade depende das conexões e do padrão completo, não apenas do tamanho do fragmento.",
+    "D": "**Uma placa anterior não resolve a lesão posterior específica.** A sínfise pode precisar de tratamento se estiver lesada, mas sua fixação isolada não substitui reduzir e estabilizar a fratura-luxação sacroilíaca."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior; Tratamento cirúrgico: indicações e princípios."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel posterior",
+     "Tratamento cirúrgico: indicações e princípios"
+    ],
+    "blocos": [
+     "fixacao-do-anel-posterior-ab0d1523",
+     "fixacao-do-anel-posterior-eae68b4c",
+     "fixacao-do-anel-posterior-f76ae5b8",
+     "tratamento-cirurgico-indicacoes-e-principios-62cfb826"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "f95c738a7db222831743fa3037da4561f4e11a29ebec4d1a239d491e6bd5a01a"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1512": {
+  "questaoSha256": "95b327da3edc167d5848a73336ce63f02503a6c49b7488ecdffa1f7d2926879d",
+  "comentarioAnteriorSha256": "9ff1b1c21ace97fb2f0ae79de025cb3354a4cf2b01f226201294f379dfbfe73f",
+  "comentario": {
+   "conceito": "Traços bilaterais no sacro podem esconder uma lesão que só se torna clara no plano sagital: **cifose com dissociação espinopélvica**. A reconstrução **sagital da TC** é fundamental para o diagnóstico descrito, alternativa A.\n\nNas fraturas em U ou H, componentes verticais se unem a um transversal e separam o sacro superior ligado à coluna do restante da pelve. A perda de continuidade pode produzir angulação, impacção e compressão do canal. A AP e cortes axiais podem deixar a deformidade passar despercebida (Rockwood, 10ª ed., cap. 50, “A dissociação espinopélvica”).\n\n**Mecânica e neurologia precisam ser avaliadas em paralelo.** A lesão pode comprometer raízes, sensibilidade em sela, tônus e função vesical/intestinal. A RM pode mostrar compressão neural, enquanto a TC define a configuração óssea e a cifose.\n\nO autor favorece cirurgia para permitir mobilização e não trata conservadoramente pacientes com cifose sagital. Ausência de déficit não transforma uma deformidade importante em padrão de carga livre. A escolha da montagem depende de redução, corredores disponíveis e necessidade de descompressão.",
+   "correta": "**A: reconstrução sagital da TC para demonstrar cifose.** Ela evidencia um componente que pode ser perdido nas projeções usuais e ajuda a reconhecer a dissociação do segmento ligado à coluna.",
+   "incorretas": {
+    "B": "**Subestima a dificuldade diagnóstica.** O resumo destaca que a AP e o axial podem não mostrar a lesão com clareza. A reconstrução sagital não é um detalhe dispensável.",
+    "C": "**O padrão não é definido por um traço sempre baixo em S4.** Ele atravessa o sacro no nível das sacroilíacas com componentes verticais e pode provocar importante comprometimento neural. A frequência de déficit não pode ser minimizada por essa localização inventada.",
+    "D": "**Contraria a estratégia para a cifose.** O capítulo favorece estabilização e considera a deformidade sagital um motivo para operar. Carga livre sem corrigir uma dissociação cifótica não é a conduta de escolha descrita."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro; Fixação do anel posterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fraturas do sacro",
+     "Fixação do anel posterior"
+    ],
+    "blocos": [
+     "fraturas-do-sacro-29ccf1ad",
+     "fraturas-do-sacro-5becff58",
+     "fixacao-do-anel-posterior-ad9b4cc7"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "07af8913af264453b24031705ca939543b83f5f120f9dd42c38fcaa87b956b17"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1513": {
+  "questaoSha256": "2f9e9a25bdb0d60f7d3a037b34bd894bf0d15dd72af7de91e405354e6a753ff2",
+  "comentarioAnteriorSha256": "8e274283745084cdd9ce03e8179a399852a7927c13aa8731bed7f170f526286b",
+  "comentario": {
+   "conceito": "Na placa anterior da sacroilíaca, avançar medialmente demais pode atingir a **raiz de L5**, que corre junto à asa. O planejamento protetor é **apenas um furo medial à articulação e placa mais posterior**, alternativa D.\n\nPela janela lateral, a dissecção precisa ser subperiosteal e o afastamento cuidadoso: a raiz fica aproximadamente **1 cm medial à sacroilíaca** no resumo. A placa de três furos tem um único ponto medial, evitando uma extensão longa sobre a asa (Rockwood, 10ª ed., cap. 50, “Redução aberta da sacroilíaca”).\n\n**O marco vascular também importa.** À frente do promontório estão grandes vasos, e a região da asa exige cautela com instrumentos pontiagudos. A exposição não deve ser ampliada à custa de enfiar um Hohmann no osso sem controle do que está à frente.\n\nA fixação precisa resultar de redução adequada. Se a placa fica mal posicionada para ganhar suposta pega, o custo pode ser neurovascular; acrescentar furos não compensa desconhecer o trajeto de L5.",
+   "correta": "**D: um furo medial e placa posterior.** Limita a extensão do implante na direção da raiz e corresponde à configuração descrita para proteger L5.",
+   "incorretas": {
+    "A": "**Mais furos mediais ampliam a zona de risco.** A raiz fica próxima à articulação, colada ao osso. A fonte recomenda apenas um furo medial, não perseguir ancoragem pela asa sem respeitar essa relação.",
+    "B": "**A posição anterior aproxima o implante das estruturas vulneráveis.** A orientação é manter a placa mais posterior; à frente do promontório há grandes vasos, além do trajeto próximo da raiz sobre a asa.",
+    "C": "**Um afastador pontiagudo pode ferir a raiz.** O resumo recomenda subperiosteal e afastador maleável, evitando Hohmann no meio ou atrás da asa. Exposição ampla não justifica instrumentação cega."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fixação do anel posterior; Anatomia e biomecânica do anel."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fixação do anel posterior",
+     "Anatomia e biomecânica do anel"
+    ],
+    "blocos": [
+     "fixacao-do-anel-posterior-10845943",
+     "anatomia-e-biomecanica-do-anel-ea8be6ca",
+     "fixacao-do-anel-posterior-cd893461"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "8290fa9e29b5861e74d8f9fed480f6d0a7c3ccd5d9be3c17da047ce8f8073863"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1514": {
+  "questaoSha256": "f5a764c6bf1fc8319681ca08e59a716759e48091a6cb7d3ff44f9239de1f428a",
+  "comentarioAnteriorSha256": "1fc215fe8e4d5d04567d0560ebce0bf8e86d2a0e5bbbb77df9061117985b429b",
+  "comentario": {
+   "conceito": "A fratura do anel pélvico aumenta o risco de tromboembolismo. O resumo recomenda iniciar **profilaxia química em 12 a 24 horas**, quando clinicamente possível, associando medidas mecânicas nos pacientes que podem usá-las. A alternativa B é a correspondente.\n\nTrauma, imobilização e dificuldade de carga coexistem nesse grupo. A recomendação do capítulo combina compressão pneumática intermitente e heparina de baixo peso ou não fracionada, com duração ajustada ao padrão, à operação e ao tempo sem apoio (Rockwood, 10ª ed., cap. 50, “Tromboembolismo”).\n\n**O relógio não substitui avaliar sangramento e contraindicações.** A janela de 12 a 24 horas é uma orientação do protocolo, não uma ordem para anticoagular um paciente ainda com hemorragia não controlada. A estratégia deve ser integrada ao atendimento do trauma.\n\nFiltro de cava não é primeira linha: pode reduzir embolia sem ter demonstrado melhora de sobrevida ou embolia fatal no conjunto discutido. Fica reservado a situações específicas, como impossibilidade de anticoagular ou trombose já identificada antes da cirurgia. Doppler de rotina sem suspeita clínica também não é recomendado.",
+   "correta": "**B: início nas primeiras 12 a 24 horas com heparina e medidas mecânicas conforme possibilidade.** É a orientação temporal do resumo, condicionada à avaliação clínica e às contraindicações. A prevenção deve continuar conforme mobilidade e risco.",
+   "incorretas": {
+    "A": "**Filtro não substitui a profilaxia habitual como primeira escolha.** A fonte não encontrou benefício de sobrevida ou embolia fatal que justifique uso universal, reservando-o a cenários selecionados.",
+    "C": "**Não há indicação de rastrear todos os assintomáticos.** O resumo desaconselha Doppler de rotina sem sinais clínicos. Suspeita de trombose é outra situação e exige investigação própria.",
+    "D": "**Nega um fator de risco reconhecido.** O capítulo identifica a fratura do anel como fator independente, razão para planejar prevenção desde o atendimento inicial e acompanhar o período de limitação da carga."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Pós-operatório, resultados e complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Pós-operatório, resultados e complicações"
+    ],
+    "blocos": [
+     "pos-operatorio-resultados-e-complicacoes-686fcb95",
+     "pos-operatorio-resultados-e-complicacoes-ce962c0a",
+     "pos-operatorio-resultados-e-complicacoes-c3d6772b",
+     "pos-operatorio-resultados-e-complicacoes-a0e2b4f9",
+     "pos-operatorio-resultados-e-complicacoes-f92dd46f",
+     "pos-operatorio-resultados-e-complicacoes-3ab63c50"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "95c535d07f54acfdfc21397aecc8c06403b47f8d8fc1003ab1b0ebf95d96e101"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

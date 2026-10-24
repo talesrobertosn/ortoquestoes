@@ -1,0 +1,392 @@
+{
+ "trauma-1490": {
+  "questaoSha256": "c229dafcc05293c9f06e64be756d57622027de751176c3df57e7217c7a5f30af",
+  "comentarioAnteriorSha256": "7e4346bd24dc0d9a7c264523a63b7441ce620865921220c3329f925eb60eb43b",
+  "comentario": {
+   "conceito": "A fratura do anel pélvico chama atenção pela deformidade e pelo potencial de sangramento, mas a associação mais frequente é **torácica**, alternativa A. O resumo informa **63%**, à frente de ossos longos, cabeça e órgãos sólidos.\n\nO mesmo impacto pode atingir várias regiões. Ossos longos aparecem em 50%, cabeça e órgãos sólidos em 40% cada. Esses grupos se sobrepõem: um paciente pode ter lesão torácica, abdominal e de membro ao mesmo tempo. Não são porcentagens de categorias mutuamente exclusivas (Rockwood, 10ª ed., cap. 50, “O que vem junto”).\n\n**Frequência não substitui prioridade clínica.** A ameaça imediata depende de via aérea, respiração, perfusão e das fontes de sangramento encontradas. O capítulo lembra que grande parte das mortes decorre de lesões cranianas, torácicas ou abdominais. Encontrar uma pelve fraturada não encerra essa procura.\n\nA utilidade do número é orientar a atenção para o tronco inteiro, sem deixar que uma imagem pélvica impressionante esconda outra lesão importante.",
+   "correta": "**A: torácica.** É a associação mais frequente na distribuição apresentada, com 63%. A resposta compara frequência de grupos, sem dizer que toda lesão torácica tenha maior gravidade que qualquer outra.",
+   "incorretas": {
+    "B": "**É frequente, mas vem depois do tórax.** Fraturas de ossos longos aparecem em 50%, abaixo dos 63% torácicos. A estabilização do membro integra o atendimento sem dispensar a avaliação do tronco.",
+    "C": "**Trauma cranioencefálico é uma ameaça relevante, não o grupo mais frequente da lista.** O resumo informa 40% para cabeça. Sua importância prognóstica pode ser grande mesmo sem liderar a comparação numérica.",
+    "D": "**Órgãos sólidos aparecem em cerca de 40%.** A lesão abdominal deve ser investigada, sobretudo na instabilidade hemodinâmica, mas essa frequência não supera a do tórax."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Lesões associadas e mortalidade."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Lesões associadas e mortalidade"
+    ],
+    "blocos": [
+     "lesoes-associadas-e-mortalidade-94094495",
+     "lesoes-associadas-e-mortalidade-99d29fae",
+     "lesoes-associadas-e-mortalidade-2b895df9",
+     "lesoes-associadas-e-mortalidade-523a7364",
+     "lesoes-associadas-e-mortalidade-2b606cd8",
+     "lesoes-associadas-e-mortalidade-81709eb2"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "00cf9b0f45e219827e63879091a410a08b6ea711fde888414df36371fbdc2cc8"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1493": {
+  "questaoSha256": "fac5b6d8ac06ebf8724e4ce286c264537334e94c84a1b8bae4b580248d0c1a37",
+  "comentarioAnteriorSha256": "3e63ea8b1b1fb351188614de1b2a9f4cde81c99b0a48d49066dfa0ba97e272f5",
+  "comentario": {
+   "conceito": "Um hematoma palpável no **períneo, acima do ligamento inguinal ou na raiz da coxa** corresponde ao sinal de **Destot**, alternativa B. A localização distingue esse achado da equimose nos flancos de Grey Turner.\n\nNa lesão do anel, o sangramento pode aparecer nas partes moles e indicar trauma importante. Destot é uma pista clínica de fratura com sangramento, mas não define sozinho se a fonte é arterial, qual estrutura urinária foi lesada ou qual padrão mecânico está presente (Rockwood, 10ª ed., cap. 50, “O que o exame mostra”).\n\n**Palpar hematoma não é o mesmo que encontrar desenluvamento.** Na Morel-Lavallée, pele e gordura se separam da fáscia e criam uma coleção de sangue e linfa, frequentemente flutuante. A viabilidade da pele e a posição da coleção passam a influenciar o acesso cirúrgico.\n\nO exame do trauma também procura sangue no meato, lesões perineais e comunicações com reto ou vagina. A “próstata alta” não é considerada um sinal confiável para excluir ou confirmar lesão uretral; não deve substituir a investigação específica.",
+   "correta": "**B: hematoma palpável nas regiões descritas.** É a definição de Destot no resumo. O sinal orienta a suspeita de lesão com sangramento, sem substituir imagem e avaliação hemodinâmica.",
+   "incorretas": {
+    "A": "**É Grey Turner.** A equimose nos flancos sugere hemorragia retroperitoneal. A localização lateral do tronco difere do hematoma perineal ou proximal da coxa de Destot.",
+    "C": "**Não define Destot e não é um teste confiável da uretra.** O resumo rejeita a próstata alta como sinal suficiente. Suspeita uretral exige avaliação própria, especialmente antes da sondagem.",
+    "D": "**É o mecanismo da Morel-Lavallée.** A coleção flutuante decorre de separação entre subcutâneo e fáscia. Pode acompanhar a fratura, mas não é a definição do hematoma de Destot."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Exame físico, fratura exposta e lesão de partes moles."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Exame físico, fratura exposta e lesão de partes moles"
+    ],
+    "blocos": [
+     "exame-fisico-fratura-exposta-e-lesao-de-partes-m-be3b559d",
+     "exame-fisico-fratura-exposta-e-lesao-de-partes-m-72d397fe",
+     "exame-fisico-fratura-exposta-e-lesao-de-partes-m-fcb681fb",
+     "exame-fisico-fratura-exposta-e-lesao-de-partes-m-81b52151"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "6a32bbd1d0fff8776d0777186c87cbfb8c8ae078bae7663b7942464b90ea7066"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1494": {
+  "questaoSha256": "4a2ea6dcea8d920ecfd8b2d52498b6a0e9eb400292d59863a2c3d36e2494071a",
+  "comentarioAnteriorSha256": "0ba1a3bd1cfec79f5e6c72fa4fdb956d3b020faefe28b1368b4df14673a5e3ab",
+  "comentario": {
+   "conceito": "As incidências inlet e outlet mudam a **direção do feixe**, sem exigir que se rode o paciente. No estudo tomográfico citado, os ângulos ideais foram **25 graus caudais para inlet e 60 graus cefálicos para outlet**, alternativa B.\n\nA inlet perfila o sacro anterior e favorece a leitura da rotação e da translação anteroposterior. A outlet mostra melhor os forames e a altura relativa dos componentes do anel. A angulação não é um número separado da finalidade: ela precisa produzir os marcos que se deseja enxergar (Rockwood, 10ª ed., cap. 50, “Radiografias”).\n\n**Os 45 graus são uma referência clássica real.** O resumo os menciona antes de apresentar os valores ideais do estudo. A pergunta pede explicitamente estes últimos; não é necessário declarar errada toda radiografia obtida com outra inclinação.\n\nNa prática, as duas vistas são complementares, e o deslocamento real combina componentes. Uma projeção inadequada pode esconder deformidade ou dar falsa impressão sobre um corredor de parafuso. A qualidade dos marcos, além da inclinação nominal, precisa ser conferida.",
+   "correta": "**B: 25 graus caudais e 60 graus cefálicos.** É o par do estudo descrito, na ordem inlet-outlet. A primeira favorece o sacro anterior; a segunda, os forames e as alturas.",
+   "incorretas": {
+    "A": "**É o par clássico, não o resultado específico pedido.** Quarenta e cinco graus para cada lado aparece no histórico da técnica. O estudo tomográfico citado chegou a aproximadamente 25 e 60 graus.",
+    "C": "**Mantém as direções e troca as amplitudes.** Inlet é caudal e outlet cefálica, mas o par do estudo é 25 para a primeira e 60 para a segunda, não o inverso.",
+    "D": "**Inverte o sentido do feixe.** Inlet usa inclinação caudal, e outlet usa cefálica. Mesmo os números certos ficam incorretos quando associados à direção oposta."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Imagem."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Imagem"
+    ],
+    "blocos": [
+     "imagem-4f412193",
+     "imagem-0a1f5cef",
+     "imagem-abbe22b6"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "72a38922b0ed58ecd94253f29f454832c887a9093d597b4ac0cda0fd604d67dc"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1496": {
+  "questaoSha256": "19bd757413c1c66d6b89173271cd0c244e6e6e97909253e320091028e592587d",
+  "comentarioAnteriorSha256": "c1beb22c489b2c4627d6c0d25ba12d8483dab462c448f4293de00304d0df267b",
+  "comentario": {
+   "conceito": "Na **APC II**, ou compressão anteroposterior tipo II, a frente do anel abriu, mas a parte posterior ainda funciona como dobradiça. A resposta clássica é **sínfise, sacrotuberoso, sacroespinhoso e sacroilíacos anteriores rompidos; sacroilíacos posteriores preservados**, alternativa A.\n\nA força roda a hemipelve para fora. A sequência descrita começa na sínfise, progride pelo complexo anterior e inferior e só depois alcança os ligamentos posteriores. Enquanto estes resistem, existe instabilidade rotacional com contenção vertical; quando rompem, a lesão progride para APC III (Rockwood, 10ª ed., cap. 50, “Compressão anteroposterior”).\n\n**O modelo clássico tem variação experimental.** Num estudo em cadáver citado no resumo, os sacroilíacos anteriores romperam sempre, mas sacroespinhoso e sacrotuberoso romperam apenas em 15%. O limite de 2,5 cm da sínfise também não identificou uniformemente cada ruptura. Portanto, a alternativa descreve a classificação clássica, não um inventário obrigatório de ligamentos rompidos em todo paciente.\n\nA implicação é avaliar a lesão posterior e a estabilidade real, sem transformar uma medida anterior numa prova da continuidade de cada estrutura.",
+   "correta": "**A: complexo anterior/inferior rompido e sacroilíacos posteriores íntegros.** É a sequência clássica de APC II, com dobradiça posterior e estabilidade vertical relativa. A variação dos ligamentos acessórios não deve ser apagada.",
+   "incorretas": {
+    "B": "**É o padrão clássico de APC I.** A abertura fica concentrada na sínfise, com o complexo sacroilíaco preservado. Não descreve a progressão anterior da sacroilíaca que caracteriza o tipo II.",
+    "C": "**Inverte a sequência do mecanismo.** O modelo progride de frente para trás; a ruptura dos posteriores corresponde a lesão mais avançada, não à preservação dos anteriores no tipo II.",
+    "D": "**Ruptura completa dos sacroilíacos descreve APC III.** Além disso, o resumo relata comprometimento do assoalho e da musculatura perineal nesse estágio avançado, e não sua preservação como contenção suficiente."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS."
+   ],
+   "conferido": false,
+   "alerta": "A oficial preservada como descrição clássica de APC II. O resumo registra que sacroespinhoso e sacrotuberoso romperam em apenas 15% num estudo em cadáver, enquanto os sacroilíacos anteriores romperam sempre. Não deduzir a ruptura de todos os ligamentos acessórios apenas pela diástase anterior."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Classificação de YOUNG e BURGESS"
+    ],
+    "blocos": [
+     "classificacao-de-young-e-burgess-e761b1de",
+     "classificacao-de-young-e-burgess-466f1bcb",
+     "classificacao-de-young-e-burgess-cf3bad25",
+     "classificacao-de-young-e-burgess-91c756d4"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "3ecf0334b6ed05b4316269757d6ac0a3fb011f9a8e07756482b6b77eea03214a"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1497": {
+  "questaoSha256": "c64a4d9b0e0ee02d729cb258d4f0a939b58d5a9da38191d217248d21d0f27898",
+  "comentarioAnteriorSha256": "4e6fb971055268903ea3eb9fe8ab7b92ef3fe5afac00604f20c9d3ae21f5547a",
+  "comentario": {
+   "conceito": "A fratura do processo transverso de **L5** deve acender um alerta para lesão do anel com possível componente vertical, mas **não confirma essa instabilidade sozinha**, alternativa D.\n\nO ligamento iliolombar prende o processo transverso à crista ilíaca. A tração transmitida pela hemipelve pode arrancar esse fragmento e, historicamente, a avulsão foi associada ao cisalhamento vertical. O achado direto desse mecanismo é a hemipelve subida, não apenas a fratura vertebral acessória (Rockwood, 10ª ed., cap. 50, “Cisalhamento vertical”).\n\n**O sinal tem limitações importantes.** Numa revisão citada, só 19% das pelves verticalmente instáveis apresentavam a avulsão, e os autores a associaram a fraturas pélvicas de vários tipos. Isso impede usá-la tanto para confirmar quanto para afastar instabilidade isoladamente.\n\nA conduta é completar a avaliação do anel posterior e da junção lombopélvica, incluindo TC e reconstruções quando indicadas. Uma pista de transmissão de força não é indicação automática de artrodese.",
+   "correta": "**D: alerta com potencial de instabilidade vertical.** Preserva o valor clínico do achado sem atribuir especificidade ou sensibilidade que a fonte não sustenta.",
+   "incorretas": {
+    "A": "**Transforma uma pista em prova e exagera sua frequência.** O dado de 19% contraria a ideia de presença na maioria dos cisalhamentos, e a associação com outros padrões afasta o caráter patognomônico.",
+    "B": "**Ignora a ligação anatômica pelo iliolombar.** A avulsão pode expressar força transmitida pela hemipelve e exige procurar lesão do anel, mesmo sem comprovar um padrão específico.",
+    "C": "**Indica um tratamento sem definir a lesão que o justificaria.** A necessidade de fixação lombopélvica depende de padrões como dissociação, cifose e comprometimento da faceta, não de toda avulsão isolada de L5."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de YOUNG e BURGESS; Anatomia e biomecânica do anel; Fixação do anel posterior."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Classificação de YOUNG e BURGESS",
+     "Anatomia e biomecânica do anel",
+     "Fixação do anel posterior"
+    ],
+    "blocos": [
+     "classificacao-de-young-e-burgess-3830ff73",
+     "anatomia-e-biomecanica-do-anel-9eb66b24",
+     "fixacao-do-anel-posterior-c72dbf06"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "95efbd05f094fdb1303dba46f5c9fc8463704084d74c12c10aa71040490dbf44"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1498": {
+  "questaoSha256": "07530cad41611f3f15992ca59cdbe6e88e08114a7f8689ac0d0d43258f8ec5a9",
+  "comentarioAnteriorSha256": "740ca65f13e55041869e25c5228f334969e338e5b3c32ed27768330ef3af9adc",
+  "comentario": {
+   "conceito": "Na classificação de fragilidade **FFP de Rommens e Hofmann**, uma lesão **posterior unilateral desviada** é **tipo III**, alternativa C. O que decide é a combinação de local, lateralidade e desvio.\n\nO tipo I fica restrito à frente. O tipo II já envolve o setor posterior, mas sem desvio. O tipo III tem desvio posterior de um lado, e o IV é bilateral. Essa organização reconhece que a fratura do idoso de baixa energia pode ter morfologia diferente da lesão de alta energia do jovem (Rockwood, 10ª ed., cap. 50, “Fraturas por fragilidade”).\n\n**Dor posterior não deve ser desconsiderada porque a AP mostrou só ramos.** No idoso, o resumo descreve baixa sensibilidade da radiografia para fraturas sacrais e recomenda RM quando persistem dor posterior e dificuldade de andar apesar de TC negativa. É necessário reconhecer a extensão real antes de chamar a fratura de anterior isolada.\n\nO capítulo favorece tratamento conservador para FFP I e técnicas menos invasivas para os grupos com comprometimento posterior, integrando geriatra, família e reabilitação. O tipo descreve o padrão; a estratégia concreta ainda depende de condição clínica e possibilidade de mobilização.",
+   "correta": "**C: lesão posterior unilateral desviada.** É a definição de FFP III. “Posterior” separa do tipo I, “desviada” do II e “unilateral” do IV.",
+   "incorretas": {
+    "A": "**É FFP I.** Uma lesão limitada ao anel anterior não satisfaz o comprometimento posterior que define o tipo III. A extensão deve ser investigada quando a clínica sugere lesão oculta.",
+    "B": "**É FFP II.** O setor posterior está envolvido, mas permanece sem desvio. A presença de desvio posterior muda a categoria.",
+    "D": "**É FFP IV.** O comprometimento posterior bilateral não corresponde à unilateralidade do tipo III, mesmo que ambos representem lesões mais extensas que a anterior isolada."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Classificação de TILE e as outras; Imagem."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Classificação de TILE e as outras",
+     "Imagem"
+    ],
+    "blocos": [
+     "classificacao-de-tile-e-as-outras-d0bfab9b",
+     "classificacao-de-tile-e-as-outras-e68641ba",
+     "classificacao-de-tile-e-as-outras-ebbd8485",
+     "classificacao-de-tile-e-as-outras-52229ed8",
+     "classificacao-de-tile-e-as-outras-007f2df5",
+     "classificacao-de-tile-e-as-outras-904b844c",
+     "imagem-e6dd45ba"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "673192c36449b4bc1f996929cc7ced61f1b5d30236834db5e9ab310c419eca0a"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1500": {
+  "questaoSha256": "a7da83105271ff16b392faa3a5a42827f1fdbe0630ee33978bb4c5c4c75d9739",
+  "comentarioAnteriorSha256": "7820697f9ad56de945b548d47d208fed5f896ff17fb364478fd791d04efaeef6",
+  "comentario": {
+   "conceito": "Uma fratura transversa do sacro com **cifose e translação posterior do fragmento cefálico** corresponde ao **tipo II de Roy-Camille modificado por Strange-Vognsen**, alternativa D.\n\nO padrão ocorre na dissociação espinopélvica: um traço horizontal se associa a componentes verticais, separando o sacro superior ligado à coluna da pelve. A deformidade tem dois componentes que precisam ser lidos separadamente: **angulação em cifose** e **translação** (Rockwood, 10ª ed., cap. 50, “A dissociação espinopélvica”).\n\nO tipo I tem cifose sem translação. O II acrescenta translação posterior do segmento superior. O III apresenta translação completa, geralmente com o cefálico à frente do caudal. O IV é cominuição completa sem desvio do segmento cefálico. Trocar os sentidos de translação muda o tipo.\n\n**A reconstrução sagital é decisiva.** A AP e um corte axial podem não mostrar a deformidade que compromete estabilidade e canal. O exame neurológico, inclusive função perineal e esfincteriana, deve acompanhar a avaliação mecânica, sem presumir o déficit apenas pelo número do tipo.",
+   "correta": "**D: cifose com translação posterior do fragmento cefálico.** A associação distingue o tipo II da cifose isolada do I e da translação completa do III.",
+   "incorretas": {
+    "A": "**É o tipo I.** Existe flexão anterior/cifose, mas não a translação posterior que caracteriza o II. Angulação e deslocamento não são a mesma medida.",
+    "B": "**É a descrição do tipo III.** A translação é completa e o cefálico costuma ficar anterior ao caudal, em vez de posterior como no II.",
+    "C": "**É o tipo IV da modificação.** A cominuição completa sem desvio cefálico não corresponde à combinação de cifose e translação posterior do tipo II."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Fraturas do sacro."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Fraturas do sacro"
+    ],
+    "blocos": [
+     "fraturas-do-sacro-29ccf1ad",
+     "fraturas-do-sacro-d4228a63",
+     "fraturas-do-sacro-5becff58"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "553b8126284d3a8e6e32a1aeded420b870ba620bad7b32d3c7b4dd9645239cb7"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1501": {
+  "questaoSha256": "12bcb9f294525264614819a931e285491f5beb6e2960129d4b249060bd20ea4a",
+  "comentarioAnteriorSha256": "4e51fd731fb67fc2dc9d505c6a0d41a575bb5df5337a3f877101c4bbe345fe6a",
+  "comentario": {
+   "conceito": "O extravasamento de contraste na TC mostra uma possível fonte **arterial ativa** e é a indicação mais clara de arteriografia com embolização descrita no capítulo, **mesmo com hemodinâmica preservada**, alternativa A.\n\nA pressão arterial é uma fotografia do momento. O sangramento pode continuar apesar de compensação inicial, e estabilizar o anel ajuda sobretudo o movimento, a formação do coágulo e o tamponamento. Uma laceração arterial pode vencer esse efeito (Rockwood, 10ª ed., cap. 50, “De onde vem o sangue” e “Angiografia e embolização”).\n\nO resumo cita recomendação nível 1 da EAST para extravasamento na TC independentemente da hemodinâmica. Também orienta angiografia rápida no sangramento persistente apesar da reposição, após afastar outras fontes. Isso exige fluxo institucional e avaliação do conjunto; não significa levar toda hipotensão primeiro à angiografia, ignorando uma fonte abdominal identificada.\n\n**Padrão da fratura ajuda, mas não decide sozinho.** CAP III e cisalhamento vertical têm maior necessidade de hemostasia em séries, porém hemorragia grave pode ocorrer em outros padrões. A conduta não deve ser escolhida apenas pela letra da classificação ou pela abertura da sínfise.",
+   "correta": "**A: extravasamento na TC, independentemente da hemodinâmica.** É o achado com recomendação mais clara para arteriografia/embolização no resumo. Pressão preservada não torna o extravasamento irrelevante.",
+   "incorretas": {
+    "B": "**CL I não é uma indicação automática de angiografia.** O grupo costuma exigir menos intervenções hemostáticas nas séries, mas o quadro clínico e sinais de sangramento continuam determinantes. O rótulo isolado não decide.",
+    "C": "**Uma fonte abdominal positiva não deve ser ignorada para investigar primeiro a pelve.** O resumo manda afastar outras fontes e adaptar o fluxo à apresentação e aos recursos. Hipotensão com lavado positivo exige abordagem da suspeita abdominal, sem uma regra de embolização prévia.",
+    "D": "**Diástase informa a lesão mecânica anterior, não comprova laceração arterial.** Pode indicar estabilização, mas não substitui extravasamento ou avaliação de sangramento persistente para escolher angiografia."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Controle da hemorragia; Exame físico, fratura exposta e lesão de partes moles."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Controle da hemorragia",
+     "Exame físico, fratura exposta e lesão de partes moles"
+    ],
+    "blocos": [
+     "controle-da-hemorragia-65f109e9",
+     "controle-da-hemorragia-307d0207",
+     "controle-da-hemorragia-9a04e282",
+     "controle-da-hemorragia-14e4c829",
+     "exame-fisico-fratura-exposta-e-lesao-de-partes-m-c26a1704"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "da6d69c1faf91744f5423abd58e86fd38727f3b8efb191021c81b6986a3efd5e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1502": {
+  "questaoSha256": "afc4be31cb15a85679e9f166280725f1e0b0d20628e953e8dd5b35d55d58babf",
+  "comentarioAnteriorSha256": "bf2bdf101b178ce4568ff6365b25436cf021ad76f34ec45f76f61174ad72f0f0",
+  "comentario": {
+   "conceito": "Para fechar o livro aberto, a cinta ou o lençol deve atuar na altura dos **trocânteres maiores**, com **rotação interna e adução dos membros**, alternativa C, se as outras lesões permitirem.\n\nA hemipelve abriu por rotação externa. Aproximar e rodar os membros para dentro ajuda a desfazer esse movimento; o dispositivo circunferencial estabiliza o anel, reduz seu volume e favorece a formação do coágulo. Posicioná-lo apenas na cintura ou nas cristas não reproduz a compressão no nível recomendado (Rockwood, 10ª ed., cap. 50, “Cinta e lençol”).\n\n**É uma medida inicial, com reavaliação.** A cinta pode mascarar o desvio na TC e o uso prolongado, sobretudo sobre prancha, pode causar lesão cutânea. O resumo recomenda retirá-la assim que houver estabilização e manter vigilância da pele quando seu uso precisar continuar.\n\nA redução também não encerra a investigação do choque. A hemorragia pode ter fonte arterial ou extrapélvica, exigindo ressuscitação e medidas adicionais conforme a resposta do paciente.",
+   "correta": "**C: trocânteres maiores, rotação interna e adução.** Combina o nível de aplicação com o movimento que fecha a abertura anterior. Não deve ser executada à custa de lesões associadas dos membros.",
+   "incorretas": {
+    "A": "**Fica alta e roda no sentido da abertura.** Cristas ilíacas não são o nível recomendado, e rotação externa reproduz o mecanismo de abrir o anel. São dois erros distintos.",
+    "B": "**Usa um marco abdominal, não o nível de compressão pélvica recomendado.** A flexão dos quadris também não substitui a rotação interna e a adução na redução do livro aberto.",
+    "D": "**Comprimir abaixo dos joelhos não estabiliza diretamente o anel.** A finalidade não é apenas deixar o abdome livre; a cinta precisa atuar nos trocânteres para aproximar as hemipelves."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Controle da hemorragia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Controle da hemorragia"
+    ],
+    "blocos": [
+     "controle-da-hemorragia-f1cb1105",
+     "controle-da-hemorragia-7bcd76b1",
+     "controle-da-hemorragia-c0a73e46",
+     "controle-da-hemorragia-2119cc59",
+     "controle-da-hemorragia-86cc36e2"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "13e156de9468dc83eaa1fb97e82dd42bb023047fe359ef18184e25b1bc137491"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1503": {
+  "questaoSha256": "088f8fbdfd0f7e7c0ac60f285ecda88e2565bea9f74978da96426e201f5639e6",
+  "comentarioAnteriorSha256": "9b38431fedd764c55a5a9c9d826d07b51a17a0f770d34c4df93edca25ba9d3a1",
+  "comentario": {
+   "conceito": "As compressas precisam de uma **parede firme** contra a qual exercer pressão. Por isso, a eficácia do tamponamento pré-peritoneal exige **pelve estabilizada por fixador externo ou clampe em C**, alternativa B.\n\nGrande parte do sangramento vem de veias e superfícies fraturadas. O tamponamento aborda essas fontes com compressas dos dois lados, **das sacroilíacas para a sínfise**, sem violar o peritônio. Se as hemipelves continuarem móveis, a aplicação da força perde a contenção mecânica pretendida (Rockwood, 10ª ed., cap. 50, “Tamponamento pélvico”).\n\n**Tamponamento e embolização não tratam exatamente o mesmo componente.** A angiografia permite abordar fontes arteriais; a sequência depende da apresentação, disponibilidade e protocolo. O resumo menciona tamponamento em pacientes que já vão à sala e recomendação da EAST como resgate em fluxo multiprofissional. Isso não torna a embolização bilateral um pré-requisito técnico.\n\nA via é pré-peritoneal mesmo quando outras intervenções abdominais ocorrem no mesmo atendimento. Não se deve confundir “paciente submetido a laparotomia” com “compressas colocadas dentro do peritônio”.",
+   "correta": "**B: estabilização prévia com fixador ou clampe.** Cria a contenção necessária à compressão do sangramento venoso e ósseo. É uma condição mecânica da técnica, associada à ressuscitação.",
+   "incorretas": {
+    "A": "**Embolização bilateral não cria a parede mecânica.** Pode haver necessidade de tratar hemorragia arterial, mas isso não substitui estabilizar o anel nem é um requisito para iniciar todo tamponamento.",
+    "C": "**Troca o espaço da técnica.** O procedimento descrito é pré-peritoneal, sem violar o peritônio. Colocar compressas no fundo de saco intraperitoneal não reproduz o tamponamento pélvico indicado.",
+    "D": "**A técnica é bilateral.** As compressas seguem dos dois lados, das sacroilíacas para a frente. Limitar o procedimento ao lado aparentemente lesado não corresponde à distribuição descrita."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Lesões do anel pélvico”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 50 · Pelvic Ring Injuries. Seções: Controle da hemorragia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-50-anel-pelvico",
+    "titulo": "Lesões do anel pélvico",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 50 · Pelvic Ring Injuries",
+    "secoes": [
+     "Controle da hemorragia"
+    ],
+    "blocos": [
+     "controle-da-hemorragia-35923bb1",
+     "controle-da-hemorragia-e602d401",
+     "controle-da-hemorragia-10d504bd",
+     "controle-da-hemorragia-423419fc",
+     "controle-da-hemorragia-8f5e93e8"
+    ],
+    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
+    "trechosSha256": "a196916ef67285c56c90c97797fcbfd295becbdcc3a677817d15b040fe83fdea"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}
