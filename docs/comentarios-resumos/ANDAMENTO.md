@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 909 |
+| pendente | 892 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 198 |
-| pendente-inspecao-imagem | 152 |
-| revisada | 1013 |
+| pendente-fonte | 201 |
+| pendente-inspecao-imagem | 146 |
+| revisada | 1033 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -18,9 +18,9 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | --- | ---: | ---: | ---: |
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 50 | 0 | 20 |
 | Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 37 | 0 | 31 |
-| Fratura da escápula (`rockwood10-33-fratura-escapula`) | 87 | 0 | 49 |
+| Fratura da escápula (`rockwood10-33-fratura-escapula`) | 98 | 0 | 38 |
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 48 | 0 | 25 |
-| Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 41 | 0 | 53 |
+| Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 42 | 0 | 52 |
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 8 | 0 | 44 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 74 | 0 | 105 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
@@ -36,11 +36,11 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 25 | 0 | 14 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 34 | 0 | 49 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 41 | 0 | 82 |
-| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 27 | 0 | 18 |
+| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 28 | 0 | 17 |
 | Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 83 | 0 | 72 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 30 | 0 | 19 |
-| Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 37 | 0 | 29 |
-| Fraturas e luxações do tálus (`rockwood10-66-talus`) | 21 | 0 | 32 |
+| Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
+| Fraturas e luxações do tálus (`rockwood10-66-talus`) | 27 | 0 | 26 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 13 | 0 | 6 |

@@ -1849,15 +1849,45 @@
   "conferido": false
  },
  "ombro-cotovelo-0134": {
+  "conceito": "A seta está junto à **incisura espinoglenoidal**, na base da espinha, atrás da região glenoidal. Por esse trajeto passa o **nervo supraescapular**, alternativa A, que alcança o infraespinal depois de contornar a espinha.\n\nO nome das duas incisuras costuma confundir. O nervo primeiro passa pela **incisura da escápula**, percorre a fossa supraespinal sob o músculo e, depois, contorna a base da espinha pela **espinoglenoidal**. Seguir esse caminho na imagem é mais seguro que escolher um nervo apenas porque seu nome contém “escápula” (Rockwood, 10ª ed., cap. 33, “Anatomia aplicada”).\n\nEssa relação também explica o risco do acesso posterior. No Judet, mobilizar demais o infraespinal para proximal pode tracionar o feixe na incisura espinoglenoidal. O nervo pode ainda ficar preso no traço de uma fratura do colo, manifestando-se por atrofia do infraespinal. Trauma inicial e lesão durante a exposição são possibilidades diferentes.\n\nA resposta depende de identificar **a passagem do nervo ao redor da espinha**. Não é necessário presumir um sulco vascular da glenoide nem atribuir à figura uma lesão neurológica: ela mostra uma referência anatômica, não um teste de função.\n\n> **Na prova:** supraescapular contorna a espinha pela incisura espinoglenoidal e termina no infraespinal.",
+  "correta": "**A: o nervo supraescapular.** Seu trajeto pela incisura espinoglenoidal corresponde ao local apontado junto à base da espinha.",
   "incorretas": {
-   "B": "**Borda medial.** O dorsal da escápula desce junto à borda medial da escápula, inervando romboides e levantador, longe da incisura.",
-   "C": "**Espaço quadrangular.** A circunflexa posterior do úmero acompanha o nervo axilar abaixo da articulação, e não na borda superior da escápula.",
-   "D": "**Não existe como estrutura padrão.** Não há artéria com esse nome passando pela incisura; a artéria da região é a supraescapular, que passa por cima do ligamento."
+   "B": "**O nome não substitui o trajeto.** O nervo descrito contornando a espinha, passando da fossa supraespinal ao infraespinal, é o supraescapular. A denominação “dorsal da escápula” não identifica essa passagem.",
+   "C": "**Não é a passagem vascular que a questão assinala.** A referência é a incisura junto à espinha percorrida pelo feixe supraescapular; o simples fato de uma artéria ser posterior ao ombro não a coloca nesse trajeto.",
+   "D": "**Não corresponde à estrutura identificada na fonte para essa incisura.** O resumo descreve o nervo supraescapular contornando a base da espinha, e não uma “artéria arqueada da glenoide” como resposta anatômica à seta."
   },
-  "conceito": "**A incisura supraescapular.** Na borda superior da escápula, medial à base do coracoide, fica a **incisura supraescapular**, fechada em forame pelo **ligamento transverso superior da escápula**. O **nervo supraescapular** passa **por baixo** do ligamento; a **artéria supraescapular** passa **por cima**. A regra é \"o exército (artéria) passa pela ponte, a marinha (nervo) passa por baixo\".\n\n**O trajeto do nervo.** Ramo do **tronco superior** do plexo (C5 e C6), cruza o trígono posterior do pescoço, entra pela incisura, inerva o **supraespinal**, contorna a base da espinha na **incisura espinoglenoidal** e termina no **infraespinal**. Também manda ramos sensitivos à articulação glenoumeral e acromioclavicular, o que explica seu uso em **bloqueios** anestésicos.\n\n**Onde ele sofre compressão.** Na **incisura supraescapular** (ligamento espessado ou calcificado, tração em arremessadores e jogadores de vôlei), a compressão fraqueja e atrofia o **supraespinal e o infraespinal**. Na **incisura espinoglenoidal**, geralmente por um **cisto paralabral** associado a lesão labral posterossuperior, só o **infraespinal** é afetado. Essa diferença localiza a lesão. O tratamento vai da reabilitação à liberação do ligamento ou descompressão do cisto, com reparo do lábio.\n\n**Os outros da lista.** O **dorsal da escápula**, de C5, atravessa o escaleno médio e inerva os romboides e o levantador da escápula, na borda medial. A **circunflexa posterior do úmero** passa no espaço quadrangular com o axilar. \"Artéria arqueada da glenoide\" não é estrutura padrão.\n\n**Na prova:** pela incisura supraescapular, sob o ligamento transverso, passa o **nervo supraescapular**; a artéria vai por cima.",
-  "correta": "**O nervo supraescapular.** Ele cruza a incisura supraescapular por baixo do ligamento transverso superior, a caminho do supraespinal e, depois da incisura espinoglenoidal, do infraespinal.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular; Vias de acesso e técnica de fixação; Complicações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+      "Vias de acesso e técnica de fixação",
+      "Complicações"
+     ],
+     "blocos": [
+      "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+      "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+      "complicacoes-3f02ac41"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "ec7999f72a8b432d2fdd08857d92cfd86e9253de4fc96ce32928182f76bffb2f"
+    }
+   ],
+   "questaoSha256": "bcc1d53bfb02c5c27a21c55abc628375d48d42ba057a4be805ecd8556a81bd9b",
+   "comentarioSha256": "10f0c14564c5e403661c2f4f0b4c8f157c4f2cd9421332029355d53830881eff"
+  }
  },
  "ombro-cotovelo-0135": {
   "incorretas": {

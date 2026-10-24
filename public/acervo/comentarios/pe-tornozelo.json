@@ -205,15 +205,63 @@
     "conferido": false
   },
   "pe-tornozelo-0018": {
+    "conceito": "A rotação lateral do tálus é usada para investigar a **sindesmose tibiofibular distal**, alternativa D. Ao girar para fora dentro da mortalha, o tálus solicita as ligações que mantêm tíbia e fíbula unidas. Isso ajuda a entender o alvo do teste sem decorar apenas seu nome.\n\nA sindesmose tem componentes anterior, posterior e interósseo; a perda de suas ligações pode permitir separação dos ossos. No padrão de supinação-rotação externa, a primeira estrutura do modelo é o tibiofibular anteroinferior, coerente com a solicitação anterior produzida pela rotação (Rockwood, 10ª ed., cap. 65, “Anatomia aplicada” e “Sindesmose”).\n\n**O teste não isola perfeitamente um ligamento.** O resumo mostra que o estresse em rotação externa pode aumentar o espaço medial mesmo quando apenas o deltoide foi seccionado. Assim, A não deve ser refutada com a ideia de que o deltoide não participa ou nunca é tensionado. O alvo sindesmótico da pergunta precisa ser distinguido da especificidade limitada da manobra.\n\nJá os ligamentos talocalcâneos pertencem à contenção subtalar, abaixo da articulação tibiotalar. O resumo 66 descreve ligamentos laterais resistindo à inversão e estruturas mediais resistindo à eversão nesse conjunto. Essa função não os torna a resposta específica ao teste sindesmótico pedido.\n\n> **Na prova:** D identifica o alvo; na prática, associe localização, exame e imagem, porque rotação externa não separa sozinha sindesmose de deltoide.",
+    "correta": "**D: ligamentos da sindesmose tibiofibular distal.** A rotação externa solicita a contenção entre tíbia e fíbula, mas o resultado deve ser interpretado com os demais achados.",
     "incorretas": {
-      "A": "O deltoide também pode ser tensionado e lesado junto, mas o teste específico dele é o estresse em eversão, com dor do lado de dentro.",
-      "B": "Os ligamentos talocalcâneos fazem parte da articulação subtalar, abaixo do tálus, e não são o alvo desse teste.",
-      "C": "O ligamento talocalcâneo medial também pertence à subtalar e não é avaliado por esse teste."
+      "A": "**Também pode responder à manobra, sem ser o alvo escolhido pela questão.** O deltoide profundo contém rotação e desvio lateral, e o resumo relata abertura medial sob rotação externa na lesão isolada dele. Não é correto afirmar que o teste o exclui.",
+      "B": "**Pertence ao conjunto subtalar.** Os talocalcâneos laterais participam da resistência à inversão entre tálus e calcâneo; não são a união tibiofibular distal que a rotação lateral procura investigar nesta questão.",
+      "C": "**Troca a região-alvo por uma contenção medial subtalar.** A estabilidade do retropé envolve estruturas mediais e laterais, mas isso não substitui a avaliação específica da sindesmose tibiofibular."
     },
-    "conceito": "A **sindesmose tibiofibular distal** é a união fibrosa entre a tíbia e a fíbula logo acima do tornozelo. Ela mantém os dois ossos juntos, formando a \"pinça\" onde o tálus se encaixa. É composta pelos ligamentos tibiofibular anteroinferior (o primeiro a se lesar), tibiofibular posteroinferior, interósseo e pela membrana interóssea, que segue ao longo da perna.\n\nA lesão dessa região é chamada de **entorse alta do tornozelo**, e costuma acontecer quando o pé gira para fora com força.\n\nO **teste de rotação lateral** (ou de rotação externa, também chamado teste de Frick) reproduz esse mecanismo. Com o joelho dobrado a 90 graus e o tornozelo em posição neutra, o examinador segura a perna e gira o pé para fora. Ao girar, o tálus empurra a fíbula para longe da tíbia, tensionando os ligamentos da sindesmose. Se aparece dor na frente e do lado de fora do tornozelo, acima da linha da articulação, o teste é positivo para lesão da **sindesmose**.\n\nOutros testes ajudam: o **squeeze test** (apertar a fíbula contra a tíbia no meio da perna provoca dor lá embaixo), o **teste de Cotton** e a palpação da sindesmose.\n\nNa imagem, a radiografia com carga, comparando com o outro lado, pode mostrar alargamento entre tíbia e fíbula. Nos casos duvidosos, usam-se tomografia com carga ou artroscopia.",
-    "correta": "Dos ligamentos da sindesmose tibiofibular distal. Girar o pé para fora faz o tálus afastar a fíbula da tíbia, tensionando esses ligamentos.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide; Sindesmose: quando fixar, como testar e com o quê; A classificação de LAUGE-HANSEN e a de DANIS-WEBER.",
+      "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seção: Luxação subtalar."
+    ],
+    "conferido": false,
+    "alerta": "Gabarito oficial D preservado como alvo sindesmótico da pergunta. O resumo relata abertura medial no estresse em rotação externa mesmo com lesão isolada do deltoide; portanto, a manobra não é específica a ponto de refutar A dizendo que o deltoide não é solicitado.",
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-65-tornozelo",
+          "titulo": "Fraturas do tornozelo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 65 · Ankle Fractures",
+          "secoes": [
+            "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+            "Sindesmose: quando fixar, como testar e com o quê",
+            "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+          ],
+          "blocos": [
+            "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+            "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+            "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012",
+            "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c"
+          ],
+          "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+          "trechosSha256": "7f23cf2eea23b9b9bd74eaf3e0fdb92b2f94cc7270708f9e9c6f396dc8eb043a"
+        },
+        {
+          "resumo": "rockwood10-66-talus",
+          "titulo": "Fraturas e luxações do tálus",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+          "secoes": [
+            "Luxação subtalar"
+          ],
+          "blocos": [
+            "luxacao-subtalar-5fa0c87f"
+          ],
+          "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+          "trechosSha256": "dfd794b098b6d671d07cea31590547bae424cef30f66751c3b8470a742928b99"
+        }
+      ],
+      "questaoSha256": "4abc10aaac5b2506a329db66371567c155cd3e021e8a09e5fb8c29e8117bd049",
+      "comentarioSha256": "1abc79e7a84b12523884cb2749edef7cee1de9bc045a7b855dbf3c041d425d1f"
+    }
   },
   "pe-tornozelo-0019": {
     "incorretas": {
