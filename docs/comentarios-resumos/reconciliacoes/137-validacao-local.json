@@ -1,0 +1,107 @@
+{
+  "data": "2026-10-24",
+  "branch": "codex/resumos-136",
+  "base": "2e308e16afc81dd0577d5c124bfdc89712117cd1",
+  "lotes": {
+    "136": 10,
+    "137": 8
+  },
+  "ids": [
+    "quadril-0040",
+    "quadril-0640",
+    "trauma-1140",
+    "trauma-0439",
+    "trauma-1539",
+    "trauma-1541",
+    "trauma-1542",
+    "trauma-1543",
+    "trauma-1568",
+    "trauma-1578",
+    "trauma-1586",
+    "trauma-1587",
+    "trauma-1588",
+    "conceitos-basicos-0018",
+    "trauma-1159",
+    "trauma-1658",
+    "trauma-1660",
+    "trauma-0870"
+  ],
+  "fontes": "Resumo 54 Rockwood 10ª lido integralmente (274 linhas, 1–128/129–274); resumo 57 lido integralmente (410 linhas, com trechos 193–226 e 316–358 separados para resolver truncamento de saída); resumos 51 e 53 já lidos integralmente e trechos anatômicos conferidos. Somente corpo e tabelas independentes, sem contexto de questões ou comentários antigos como autoridade.",
+  "aplicacao": "aplicar.py sob flock /tmp/claude-0/acervo.lock",
+  "auditoria": "Duas aplicações reproduzidas desde a base; fontes/hashes, todas as alternativas e dezoito avulsos integrais conferidos; questões, gabaritos, áreas, imagens, revisão médica e membros alheios preservados; conferido:false. Bytes externos aos próprios membros preservados.",
+  "figurasAbertasAntesDaRedacaoSha256": {
+    "trauma/trauma-0439-1.jpeg": "b05eb4120d612cd5fe50460166713378a5926b2fad7dcfa27da524765b0a2040",
+    "trauma/trauma-1539-1.jpeg": "1a0896d3e43240707bbc57b3d968d880e7d8a32cf959ad1d7b2f6bad1ea7e310",
+    "trauma/trauma-1541-1.jpeg": "2ad9c6ad364fba871adddf551a9a7cb1f8cfc4dc7db7198e1156e2e88ff88aa3",
+    "trauma/trauma-1542-1.jpeg": "7181dcf959bc515207df5ab1d7d1ec097722d7586eaf5e9c02568d4b97f5f272",
+    "trauma/trauma-1543-1.jpeg": "f64b126603b6091ca3ad9971506c793ba6f4260e6e40389cac4ad92f99b6264f",
+    "trauma/trauma-1568-1.jpeg": "94266f58c9c8e8328d9d11b9a21fa3727a44f6576b25b9009e9f79361679b843",
+    "trauma/trauma-1578-1.jpeg": "d2e90b690a32a443672ae711d85a2e3f6fafab9c6c538deca159295b8fab9d21",
+    "trauma/trauma-1586-1.jpeg": "077a97c5a2bac77cacb6822971e700261f04df532bfa6591e6b41d394722de91",
+    "trauma/trauma-1587-1.jpeg": "84062fd7e1c2ef853650123d197024d7b4a003b0536bdb6ebf5b0ce887707c11",
+    "trauma/trauma-1588-1.jpeg": "1d8f795f01cd137c460ad19e010049478dc91afd6240605fb5fdfd09f0c7ad1d"
+  },
+  "figuraInspecionadaSemCobertura": "trauma/trauma-0544-1.jpeg; faltam subtipos AO.",
+  "revisaoMedicaAtribuida": false,
+  "validacaoVisual": {
+    "casos": [
+      "quadril-0040",
+      "quadril-0640",
+      "trauma-1140",
+      "trauma-0439",
+      "trauma-1539",
+      "trauma-1541",
+      "trauma-1542",
+      "trauma-1543",
+      "trauma-1568",
+      "trauma-1578",
+      "trauma-1586",
+      "trauma-1587",
+      "trauma-1588",
+      "conceitos-basicos-0018",
+      "trauma-1159",
+      "trauma-1658",
+      "trauma-1660",
+      "trauma-0870"
+    ],
+    "tamanhos": [
+      "celular390",
+      "computador1440"
+    ],
+    "resultado": "18 casos passaram com dez figuras, correção, comentário, alertas e links para o bloco de fonte. Oito capturas representativas abertas.",
+    "capturasAbertas": [
+      "trauma-0439 figura PC",
+      "trauma-1539 figura celular",
+      "trauma-1541 figura PC",
+      "trauma-1568 figura PC",
+      "trauma-1587 figura celular",
+      "trauma-1588 figura PC",
+      "trauma-0870 alerta celular",
+      "trauma-1159 alerta PC"
+    ]
+  },
+  "checks": "14 fixtures, validar_acervo, suíte npm completa, build, auditoria e diff-check passaram.",
+  "logsSha256": {
+    "check137-fixtures.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check137-test.log": "260ef3fc78ebf061153b00cd7a0c15691f3b60b2677f2731f9c79d6d1a67a72c",
+    "check137-acervo.log": "c99e17fd84010cdd347be08b3c99d22026a762d38e872dd7fd2ac3dca0c55577",
+    "check137-build.log": "814ecf55051f75d712d1310661796671f3f2f918db93f633118cf2b281b51e1e"
+  },
+  "prAnterior": {
+    "pr": 510,
+    "head": "c07488fdabab3ee56fe1dc9ae88aa54c043d5e0b",
+    "ci": 40098505398,
+    "merge": "2e308e16afc81dd0577d5c124bfdc89712117cd1",
+    "pages": 40105873976,
+    "jobPublicar": 120907901738,
+    "avulsosIntegrais": 40,
+    "figurasSha256": 5
+  },
+  "prConcorrentePreservado": {
+    "pr": 511,
+    "head": "6831f6d452ec568605da3ab68309e46809bbb57e",
+    "escopo": "Relatos de erro, incluindo enunciado e flashcard; nenhum ID sobreposto aos lotes."
+  },
+  "proximoLote": 138,
+  "publicacaoAtual": "Aguardar CI do head, merge, guarda/deploy efetivos e comparação em produção; registrar no PR."
+}

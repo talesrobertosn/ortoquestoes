@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 730,
+  "pendente": 720,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 225,
-  "pendente-inspecao-imagem": 114,
-  "revisada": 1203
+  "pendente-fonte": 228,
+  "pendente-inspecao-imagem": 103,
+  "revisada": 1221
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -148,9 +148,9 @@
    "sha256": "108568e9cf79c544f86f94255b786629f90cf1003feeeacacb860dbdc7bf3e3b",
    "estados": {
     "duplicada": 2,
-    "pendente": 2,
+    "pendente": 1,
     "pendente-fonte": 9,
-    "revisada": 60
+    "revisada": 61
    }
   },
   "rockwood10-51-acetabulo": {
@@ -158,9 +158,9 @@
    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
-    "pendente": 12,
+    "pendente": 9,
     "pendente-fonte": 7,
-    "revisada": 52
+    "revisada": 55
    }
   },
   "rockwood10-53-colo-femur": {
@@ -168,10 +168,9 @@
    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
    "estados": {
     "duplicada": 2,
-    "pendente": 3,
-    "pendente-fonte": 7,
-    "pendente-inspecao-imagem": 5,
-    "revisada": 46
+    "pendente": 1,
+    "pendente-fonte": 9,
+    "revisada": 51
    }
   },
   "rockwood10-54-transtrocanterica": {
@@ -179,10 +178,8 @@
    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
    "estados": {
     "duplicada": 1,
-    "pendente": 1,
-    "pendente-fonte": 9,
-    "pendente-inspecao-imagem": 7,
-    "revisada": 27
+    "pendente-fonte": 10,
+    "revisada": 34
    }
   },
   "rockwood10-57-diafise-femur": {
@@ -190,10 +187,10 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 21,
+    "pendente": 16,
     "pendente-fonte": 8,
     "pendente-inspecao-imagem": 1,
-    "revisada": 40
+    "revisada": 45
    }
   },
   "rockwood10-58-femur-distal": {
@@ -5387,7 +5384,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5402,7 +5399,37 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "cd187c56bd305a6aa08f262861dd7766ebdc9315633d65b693d6f510131cb318"
+   "questaoSha256": "cd187c56bd305a6aa08f262861dd7766ebdc9315633d65b693d6f510131cb318",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Anatomia aplicada e forças deformantes",
+       "Classificação",
+       "Fresagem, diâmetro, bloqueio e carga",
+       "Comprimento e rotação"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-forcas-deformantes-9db652ad",
+       "classificacao-edfe091a",
+       "fresagem-diametro-bloqueio-e-carga-1700baf9",
+       "comprimento-e-rotacao-c13089a5",
+       "comprimento-e-rotacao-2bbb6c9f"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "e59728f5b03682042c366f34286a603ef862e01265cd3d6ae98bae472810f4df"
+     }
+    ],
+    "questaoSha256": "cd187c56bd305a6aa08f262861dd7766ebdc9315633d65b693d6f510131cb318",
+    "comentarioSha256": "53222db8af018b53d3294a69787562464b80db14131031ef9459cf4ed350808c"
+   }
   },
   "conceitos-basicos-0057": {
    "tema": "conceitos-basicos",
@@ -41140,7 +41167,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41155,7 +41182,45 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "ed6dbf70fa5898c08ae9e04f796aa272662abc89369f20e1eea718a592848133"
+   "questaoSha256": "ed6dbf70fa5898c08ae9e04f796aa272662abc89369f20e1eea718a592848133",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "anatomia-aplicada-a8c38522"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ffb43352ad2ef6dc7e6410299709a955f92195d9fdd2fea826f5afcae380c061"
+     },
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-de09a49f"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "6d969067e8d6e0e043cdb68cec7419a4ab01bc2824428fb35bcabcb0c0cc3b7f"
+     }
+    ],
+    "questaoSha256": "ed6dbf70fa5898c08ae9e04f796aa272662abc89369f20e1eea718a592848133",
+    "comentarioSha256": "32fb8345d0ccf3dc69525c5221656a045b0eef90416cf5d366d743b09074df23"
+   }
   },
   "quadril-0053": {
    "tema": "quadril",
@@ -42790,7 +42855,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42813,7 +42878,49 @@
     "rockwood10-50-anel-pelvico",
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "2367da9bd9149c8100075f84646012b1825f3ec5ba77592ce3c8306f2a3d6f09"
+   "questaoSha256": "2367da9bd9149c8100075f84646012b1825f3ec5ba77592ce3c8306f2a3d6f09",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Anatomia aplicada: colunas, paredes, teto e vasos",
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "anatomia-aplicada-colunas-paredes-teto-e-vasos-16dc66a6",
+       "vias-de-acesso-09c0da47",
+       "vias-de-acesso-1cf3c6fc",
+       "vias-de-acesso-9e3b54ba"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "d58f9d8c1cd29f2a5d87b9afba092df5cc1849b2dca9b1971a1c21eca40aefdd"
+     },
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no idoso"
+      ],
+      "blocos": [
+       "fratura-desviada-no-idoso-1d56bc28"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "ca44fc30a6c23604b91408e86f8abc060fe7a8dcde02cb3656546bc30ceffb29"
+     }
+    ],
+    "questaoSha256": "2367da9bd9149c8100075f84646012b1825f3ec5ba77592ce3c8306f2a3d6f09",
+    "comentarioSha256": "2ca7f1e9178c9bef43ef112b6223964efd6e4dcda4b14b0a4848c0c41b7a9841"
+   }
   },
   "quadril-0668": {
    "tema": "quadril",
@@ -46925,14 +47032,15 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado preservado diz literalmente fratura da doença femoral, sem identificar a lesão a que o fragmento livre pertence. Os resumos 53, 54 e 57 descrevem cominuição posterior do colo e fragmentos trocantéricos/diafisários, mas não permitem atribuir a esse referencial ausente uma localização anteromedial mais comum. Falta a fonte/enunciado original que identifique a fratura e o fragmento. B oficial e comentário anterior preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "fe0bc04649536ff06b82486b6dda47b5f5cefb56e65a5824d36c279cdb20e14b"
+   "questaoSha256": "fe0bc04649536ff06b82486b6dda47b5f5cefb56e65a5824d36c279cdb20e14b",
+   "pendencia": "O enunciado preservado diz literalmente fratura da doença femoral, sem identificar a lesão a que o fragmento livre pertence. Os resumos 53, 54 e 57 descrevem cominuição posterior do colo e fragmentos trocantéricos/diafisários, mas não permitem atribuir a esse referencial ausente uma localização anteromedial mais comum. Falta a fonte/enunciado original que identifique a fratura e o fragmento. B oficial e comentário anterior preservados."
   },
   "trauma-0118": {
    "tema": "trauma",
@@ -49501,8 +49609,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão exige combinações completas AO 32A3/33A2 com 31B1.2/31B2.2. O corpo do resumo 57 define 32 e seus grupos gerais; o 53 define 31B1/2/3 e indica haste única apenas para colo sem desvio ou perfeitamente reduzido. Eles não definem os quatro subtipos completos nem todas as alternativas. Falta a tabela AO da edição pertinente e a indicação correspondente; não substituir confirmação dos códigos por regra genérica de colo e diáfise. A oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -49516,7 +49624,8 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "71f7d161952b776b2d6652b3af0e738a5c7acd275252452ad8960eabfd5f8a46"
+   "questaoSha256": "71f7d161952b776b2d6652b3af0e738a5c7acd275252452ad8960eabfd5f8a46",
+   "pendencia": "A questão exige combinações completas AO 32A3/33A2 com 31B1.2/31B2.2. O corpo do resumo 57 define 32 e seus grupos gerais; o 53 define 31B1/2/3 e indica haste única apenas para colo sem desvio ou perfeitamente reduzido. Eles não definem os quatro subtipos completos nem todas as alternativas. Falta a tabela AO da edição pertinente e a indicação correspondente; não substituir confirmação dos códigos por regra genérica de colo e diáfise. A oficial preservada."
   },
   "trauma-0198": {
    "tema": "trauma",
@@ -54884,8 +54993,8 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -54907,7 +55016,30 @@
     "rockwood10-53-colo-femur",
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "293cb1514f0d5c1f8548d4e87aee56d0b36d4d96d429e9ce35e75d84ec5f7dd3"
+   "questaoSha256": "293cb1514f0d5c1f8548d4e87aee56d0b36d4d96d429e9ce35e75d84ec5f7dd3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Anatomia e forças deformantes"
+      ],
+      "blocos": [
+       "anatomia-e-forcas-deformantes-81f07f93"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "41b14bda7574815fcb93895807ec2bbff21a3beee9224e3a1bd475af9737cc5b"
+     }
+    ],
+    "questaoSha256": "293cb1514f0d5c1f8548d4e87aee56d0b36d4d96d429e9ce35e75d84ec5f7dd3",
+    "comentarioSha256": "dd2a2cdfe9909eb660cd0e8a3ef5fafd3d3cc050ca37d1edec207a5cf71ae3f8"
+   }
   },
   "trauma-0440": {
    "tema": "trauma",
@@ -56112,8 +56244,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "A figura trauma-0544-1.jpeg foi aberta e mostra um traço trocantérico transverso. O corpo do resumo 54 distingue 31A1/31A2/31A3, mas não define 31A3.1, 31A3.2, 31A3.3 nem 32A1.1, que são exatamente as opções. Falta classificação AO completa da edição usada para selecionar B e analisar os demais subtipos. Reconhecer A3 não prova A3.2; imagem e gabarito oficial preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -56127,7 +56259,8 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "47874c97541637de8cf12184068ea1e7368eff7ac2310bd6be6202c7cd5f3366"
+   "questaoSha256": "47874c97541637de8cf12184068ea1e7368eff7ac2310bd6be6202c7cd5f3366",
+   "pendencia": "A figura trauma-0544-1.jpeg foi aberta e mostra um traço trocantérico transverso. O corpo do resumo 54 distingue 31A1/31A2/31A3, mas não define 31A3.1, 31A3.2, 31A3.3 nem 32A1.1, que são exatamente as opções. Falta classificação AO completa da edição usada para selecionar B e analisar os demais subtipos. Reconhecer A3 não prova A3.2; imagem e gabarito oficial preservados."
   },
   "trauma-0545": {
    "tema": "trauma",
@@ -62793,7 +62926,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62809,7 +62942,34 @@
     "rockwood10-54-transtrocanterica",
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "9da4c4fe6af5678ac2678f5c62d4fae667cb2d82b4391434e86e625537c18f33"
+   "questaoSha256": "9da4c4fe6af5678ac2678f5c62d4fae667cb2d82b4391434e86e625537c18f33",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste anterógrada: o ponto de entrada"
+      ],
+      "blocos": [
+       "haste-anterograda-o-ponto-de-entrada-57ac67fc",
+       "haste-anterograda-o-ponto-de-entrada-01dab420",
+       "haste-anterograda-o-ponto-de-entrada-d377b34e",
+       "haste-anterograda-o-ponto-de-entrada-469e83ef",
+       "haste-anterograda-o-ponto-de-entrada-0550ca82"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "04acf29b52a9d57cb6cbc08dfb9f1e7656cd90eacf90879880ae387ad12aa544"
+     }
+    ],
+    "questaoSha256": "9da4c4fe6af5678ac2678f5c62d4fae667cb2d82b4391434e86e625537c18f33",
+    "comentarioSha256": "1eb2d71a744c75c3fed3e466ab0c6f0def731516793d7f2cb816c90e7aa310d8"
+   }
   },
   "trauma-0871": {
    "tema": "trauma",
@@ -70619,7 +70779,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70634,7 +70794,48 @@
    "resumosCandidatos": [
     "rockwood10-51-acetabulo"
    ],
-   "questaoSha256": "84e4f0ee022e80fc826c268c7469e40fb50719ef6efd995de76b149adaf75ca7"
+   "questaoSha256": "84e4f0ee022e80fc826c268c7469e40fb50719ef6efd995de76b149adaf75ca7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-51-acetabulo",
+      "titulo": "Fraturas do acetábulo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 51 · Acetabulum Fractures",
+      "secoes": [
+       "Técnica por tipo de fratura",
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "tecnica-por-tipo-de-fratura-0a978367",
+       "vias-de-acesso-4092e3ed",
+       "vias-de-acesso-9e3b54ba"
+      ],
+      "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+      "trechosSha256": "940221ae282543ec5bb4c608b6c1d04dc259d242a9de01fc7d5dc60690ba11b9"
+     },
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-43725930"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "9320d184839f947f337ab0b64bd7c4e3fb7454deb95265a062280939caa69b5c"
+     }
+    ],
+    "questaoSha256": "84e4f0ee022e80fc826c268c7469e40fb50719ef6efd995de76b149adaf75ca7",
+    "comentarioSha256": "d60e5f1fbd800554c7b36cd4f5fcbf974bbec6350cfd502ceab224020be3884b"
+   }
   },
   "trauma-1141": {
    "tema": "trauma",
@@ -71046,7 +71247,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -71061,7 +71262,33 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "7c6a1770c8e77b2a679c9340056226ec455a02330b960978bae7cf07ddf486fd"
+   "questaoSha256": "7c6a1770c8e77b2a679c9340056226ec455a02330b960978bae7cf07ddf486fd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Fresagem, diâmetro, bloqueio e carga",
+       "Pseudartrose, infecção, retirada e quebra da haste"
+      ],
+      "blocos": [
+       "fresagem-diametro-bloqueio-e-carga-1700baf9",
+       "pseudartrose-infeccao-retirada-e-quebra-da-haste-4fb4bece",
+       "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "ac8c5d5e70ef5b14929292ec6afb5ffcfe64f3aaa0aabbf0f68a8cd044abe294"
+     }
+    ],
+    "questaoSha256": "7c6a1770c8e77b2a679c9340056226ec455a02330b960978bae7cf07ddf486fd",
+    "comentarioSha256": "f307c56620b8af125a1cbd15a4fc24ddf9a8d2b1a4e4260c15519396516319af"
+   }
   },
   "trauma-1160": {
    "tema": "trauma",
@@ -84502,8 +84729,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -84517,7 +84744,47 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "63b1d32639d76c6bcc54cbd33ddd9e15d2e5da57397f90788e2b57e1c4f286fd"
+   "questaoSha256": "63b1d32639d76c6bcc54cbd33ddd9e15d2e5da57397f90788e2b57e1c4f286fd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Fratura desviada no jovem",
+       "Classificações"
+      ],
+      "blocos": [
+       "fratura-desviada-no-jovem-38a46d78",
+       "classificacoes-0fec7b18"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "f9f6b2a49d5a2b42763261200e3e8fbc5ee778f73440fd1da96fac23e9d883cc"
+     },
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Técnica: redução e parafuso cefálico"
+      ],
+      "blocos": [
+       "tecnica-reducao-e-parafuso-cefalico-b883438a"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "5c5156c16618f7ec31bfb9aad651d20b7397c096625915812b9bfbf90e8525d9"
+     }
+    ],
+    "questaoSha256": "63b1d32639d76c6bcc54cbd33ddd9e15d2e5da57397f90788e2b57e1c4f286fd",
+    "comentarioSha256": "02eaeb6fd43a78eb533458e6a2c5a14a8c19d4dbbb3e1a1916e18bfd85c9fb8a"
+   }
   },
   "trauma-1540": {
    "tema": "trauma",
@@ -84574,8 +84841,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -84589,7 +84856,32 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "de3c997d3f77a89211eab879ea758e2fec8a225e469de574921b2f84ff7d9c12"
+   "questaoSha256": "de3c997d3f77a89211eab879ea758e2fec8a225e469de574921b2f84ff7d9c12",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações",
+       "Diagnóstico por imagem"
+      ],
+      "blocos": [
+       "classificacoes-d27013fb",
+       "diagnostico-por-imagem-95ee383c"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "da04a85d3f5e43ad0e47bd8874cc283cd3bfa275b653ec1297fa3e4fe1a39987"
+     }
+    ],
+    "questaoSha256": "de3c997d3f77a89211eab879ea758e2fec8a225e469de574921b2f84ff7d9c12",
+    "comentarioSha256": "6454eea2918fb8085d4fc4e98b46b8c9ef116fd077a7f5581720d122df2b94b0"
+   }
   },
   "trauma-1542": {
    "tema": "trauma",
@@ -84598,8 +84890,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -84613,7 +84905,36 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "21826cae3e70e4fdb5b4ddc2da6295ea1246a756aca3803a0869bc4e1b2a4366"
+   "questaoSha256": "21826cae3e70e4fdb5b4ddc2da6295ea1246a756aca3803a0869bc4e1b2a4366",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações"
+      ],
+      "blocos": [
+       "classificacoes-21223eb4",
+       "classificacoes-12519f03",
+       "classificacoes-113a1994",
+       "classificacoes-1854670c",
+       "classificacoes-6479ca47",
+       "classificacoes-b5e602a1",
+       "classificacoes-d27013fb"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "c4fa47594d8b5536283c47d0a2f9c67dab6880ceedfd2a57383f4028263e2c8b"
+     }
+    ],
+    "questaoSha256": "21826cae3e70e4fdb5b4ddc2da6295ea1246a756aca3803a0869bc4e1b2a4366",
+    "comentarioSha256": "317aa12c5af68a8fa2d372c244fe64392ab3194a8ecfb99d81482fe0c284060c"
+   }
   },
   "trauma-1543": {
    "tema": "trauma",
@@ -84622,8 +84943,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -84637,7 +84958,30 @@
    "resumosCandidatos": [
     "rockwood10-53-colo-femur"
    ],
-   "questaoSha256": "b2826170b78e11b2d4445dfc2f00c19d93080fa12087c6ddabb5bc714cadadcd"
+   "questaoSha256": "b2826170b78e11b2d4445dfc2f00c19d93080fa12087c6ddabb5bc714cadadcd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Classificações"
+      ],
+      "blocos": [
+       "classificacoes-0fec7b18"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "295fe647e11ba210f2d9cc7cc7ad365837a8dfcf443e78563e5e430746e76064"
+     }
+    ],
+    "questaoSha256": "b2826170b78e11b2d4445dfc2f00c19d93080fa12087c6ddabb5bc714cadadcd",
+    "comentarioSha256": "542a8f80c059ccae739551bbd6e2499e5741a179f1ef34d9f57ca2911ee55be7"
+   }
   },
   "trauma-1544": {
    "tema": "trauma",
@@ -85847,8 +86191,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -85869,7 +86213,38 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "404cf0c5c5e18779991fe404043b61d307478d0578066f2ad8592bf1adb0926d"
+   "questaoSha256": "404cf0c5c5e18779991fe404043b61d307478d0578066f2ad8592bf1adb0926d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Classificação: AO 31A e a parede lateral",
+       "Escolha do implante",
+       "Técnica: redução e parafuso cefálico"
+      ],
+      "blocos": [
+       "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+       "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+       "classificacao-ao-31a-e-a-parede-lateral-785664da",
+       "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+       "escolha-do-implante-99aab52e",
+       "escolha-do-implante-ff846328",
+       "tecnica-reducao-e-parafuso-cefalico-f076d68d"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "10609cb8f92094799715b91088ae683be7f8051187a4ff163528afb0c54e366d"
+     }
+    ],
+    "questaoSha256": "404cf0c5c5e18779991fe404043b61d307478d0578066f2ad8592bf1adb0926d",
+    "comentarioSha256": "4bb238fb49ac78136f244780c7e7a14cd28564181adbf0fb12d8e96c956840bd"
+   }
   },
   "trauma-1569": {
    "tema": "trauma",
@@ -86294,8 +86669,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -86309,7 +86684,36 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "58affc3364b8081c0947fd942fa86b91e6671e1a5d6c6813c131ef7f6f4d9c65"
+   "questaoSha256": "58affc3364b8081c0947fd942fa86b91e6671e1a5d6c6813c131ef7f6f4d9c65",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Classificação: AO 31A e a parede lateral",
+       "Escolha do implante",
+       "Complicações"
+      ],
+      "blocos": [
+       "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+       "classificacao-ao-31a-e-a-parede-lateral-785664da",
+       "escolha-do-implante-5f08d4c8",
+       "escolha-do-implante-99aab52e",
+       "complicacoes-41fe2824"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "a2c208a644a80ca3c8eeab32b8b5e9b33f44d193bb196e438b8c723f75edbd22"
+     }
+    ],
+    "questaoSha256": "58affc3364b8081c0947fd942fa86b91e6671e1a5d6c6813c131ef7f6f4d9c65",
+    "comentarioSha256": "00e030b4662bc0b39fae43d654efbc30bad207879808d33bd86ada3cea1942c5"
+   }
   },
   "trauma-1579": {
    "tema": "trauma",
@@ -86676,8 +87080,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -86691,7 +87095,34 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "fd7a3cda79b6be88fcf965c18bc567aa162d41b2a91877a59241b41f10142d59"
+   "questaoSha256": "fd7a3cda79b6be88fcf965c18bc567aa162d41b2a91877a59241b41f10142d59",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Técnica: redução e parafuso cefálico",
+       "Complicações"
+      ],
+      "blocos": [
+       "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+       "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+       "complicacoes-41fe2824",
+       "complicacoes-c2ff2a41"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "c2a1c7f41760e077242a603de20b6605cdcdbb50321ac7360251ff18cc5a0e0e"
+     }
+    ],
+    "questaoSha256": "fd7a3cda79b6be88fcf965c18bc567aa162d41b2a91877a59241b41f10142d59",
+    "comentarioSha256": "4b67f480e2a44de57345db5abcec797e46f978d45a00dfe2181b63d71d8d0094"
+   }
   },
   "trauma-1587": {
    "tema": "trauma",
@@ -86700,8 +87131,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -86715,7 +87146,32 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "1e228bc61b0250ca6f9b9fb331520cd9b77776e029b12d5c9c40a8a6f723b3cd"
+   "questaoSha256": "1e228bc61b0250ca6f9b9fb331520cd9b77776e029b12d5c9c40a8a6f723b3cd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-c2ff2a41",
+       "complicacoes-41fe2824",
+       "complicacoes-487370e4"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "99e60c4fe1d2a2209f566c20da10c88fd1dd67bf48bd96f5437d696416340a46"
+     }
+    ],
+    "questaoSha256": "1e228bc61b0250ca6f9b9fb331520cd9b77776e029b12d5c9c40a8a6f723b3cd",
+    "comentarioSha256": "0c2dd69fca4aa32654e519d3dad0f30eed17b9e7e0825da37b4fe3d1d252d7ee"
+   }
   },
   "trauma-1588": {
    "tema": "trauma",
@@ -86724,8 +87180,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -86739,7 +87195,31 @@
    "resumosCandidatos": [
     "rockwood10-54-transtrocanterica"
    ],
-   "questaoSha256": "8e857ec10a397e641c361974ab5a2528bf0d80a575d88047d3fe06e41d13febb"
+   "questaoSha256": "8e857ec10a397e641c361974ab5a2528bf0d80a575d88047d3fe06e41d13febb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-54-transtrocanterica",
+      "titulo": "Fratura transtrocantérica",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+      "secoes": [
+       "Complicações"
+      ],
+      "blocos": [
+       "complicacoes-fa2cbfe8",
+       "complicacoes-a003183f"
+      ],
+      "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "trechosSha256": "cec022130b83693e0a07f5ae40b91d0f5ed21a68bd19df69589c8fad828ad051"
+     }
+    ],
+    "questaoSha256": "8e857ec10a397e641c361974ab5a2528bf0d80a575d88047d3fe06e41d13febb",
+    "comentarioSha256": "4a708e09962734d518f831d224adcbce26aab6bb8cf37606df5c1efe9dc51df8"
+   }
   },
   "trauma-1589": {
    "tema": "trauma",
@@ -90309,7 +90789,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -90324,7 +90804,46 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "26873ae862b202d43e7c02582c2015d3dc67273bdf693099ffc0b634f4c78392"
+   "questaoSha256": "26873ae862b202d43e7c02582c2015d3dc67273bdf693099ffc0b634f4c78392",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste anterógrada: o ponto de entrada"
+      ],
+      "blocos": [
+       "haste-anterograda-o-ponto-de-entrada-469e83ef",
+       "haste-anterograda-o-ponto-de-entrada-0550ca82"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "ebc9ea7d6a240daa3dbd718870b1d6f8f7ea56e188f70477deb8b660753f4f0b"
+     },
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "anatomia-aplicada-307a6627"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "3d152e7b39fc8d7f445e5cc1ff994ada9e8567228a4bab580a26e25b05b4bc90"
+     }
+    ],
+    "questaoSha256": "26873ae862b202d43e7c02582c2015d3dc67273bdf693099ffc0b634f4c78392",
+    "comentarioSha256": "8a4af2c9a8e690e0217903fcb340f1d1a0aa652fb0b3a65c6080de3bfd53b1a5"
+   }
   },
   "trauma-1659": {
    "tema": "trauma",
@@ -90382,7 +90901,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -90397,7 +90916,45 @@
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "3072a2a33bc76c85bdc9764fd46c61d300b8ca59231af7f45f03effdad4955eb"
+   "questaoSha256": "3072a2a33bc76c85bdc9764fd46c61d300b8ca59231af7f45f03effdad4955eb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-57-diafise-femur",
+      "titulo": "Fratura da diáfise do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+      "secoes": [
+       "Haste anterógrada: o ponto de entrada"
+      ],
+      "blocos": [
+       "haste-anterograda-o-ponto-de-entrada-2e8e945f"
+      ],
+      "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+      "trechosSha256": "5758e6ddd09a8cec6b9fda0ce9e0c2abf1e4f8ac89a4ad4edc7040ae152f4e06"
+     },
+     {
+      "resumo": "rockwood10-53-colo-femur",
+      "titulo": "Fratura do colo do fêmur",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+      "secoes": [
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "anatomia-aplicada-be6f84e8"
+      ],
+      "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+      "trechosSha256": "23697dc93e0cf18517ac67882ef9fc281cbc25b5bf22b6aa093192d1f1ac2c18"
+     }
+    ],
+    "questaoSha256": "3072a2a33bc76c85bdc9764fd46c61d300b8ca59231af7f45f03effdad4955eb",
+    "comentarioSha256": "77d2cac5b9d372f607f45f2f1b0f9ef47da1047c9bd67ccd7f5144a772bb9df6"
+   }
   },
   "trauma-1661": {
    "tema": "trauma",

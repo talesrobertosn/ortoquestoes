@@ -1,0 +1,343 @@
+{
+ "trauma-1586": {
+  "questaoSha256": "fd7a3cda79b6be88fcf965c18bc567aa162d41b2a91877a59241b41f10142d59",
+  "comentarioAnteriorSha256": "8ff933c5b9816fb59ee1811f93ff1d7ffb1961dc9550b9ab3f9efe101d8170e4",
+  "comentario": {
+   "conceito": "A montagem mostra o segmento cabeça-colo em **varo**, com o parafuso na porção superior da cabeça. O par esperado é **varo e cut-out**, alternativa D. A figura não deve ser lida como um exemplo de valgo protetor.\n\nNa redução em varo, a carga tende a continuar fechando a deformidade e o parafuso corta a cabeça superiormente. A posição alta piora essa combinação. O resumo recomenda redução anatômica ou em valgo leve e fio baixo-central no AP, central no perfil: a redução precisa permitir a posição correta do implante (Rockwood, 10ª ed., cap. 54, “Redução” e “Cut-out”).\n\n**Cut-out e cut-in não são apenas duas palavras para penetração.** No primeiro, há colapso em varo com corte superior; no segundo, migração craniomedial do parafuso que não desliza lateralmente. A imagem e o enunciado pedem o primeiro mecanismo.\n\nA radiografia mostra fatores mecânicos desfavoráveis. Não se deve inferir dela sintomas, tempo de pós-operatório ou consolidação; a complicação é a esperada para a combinação apresentada.",
+   "correta": "**D: varo; cut-out.** A deformidade e o parafuso alto criam o mecanismo de corte superior da cabeça. Identificar o risco não significa afirmar que a imagem isolada demonstre todos os desfechos posteriores.",
+   "incorretas": {
+    "A": "**Troca deformidade e mecanismo.** A montagem não mostra valgo leve; mostra varo. Cut-in corresponde à migração craniomedial sem deslizamento adequado, diferente do corte superior favorecido aqui.",
+    "B": "**Acerta o nome da falha e erra a redução.** Cut-out combina com o parafuso alto e o colapso em varo. O capítulo apresenta o valgo leve como redução mais favorável, não como a deformidade da figura.",
+    "C": "**Acerta varo, mas troca a falha esperada.** O varo com parafuso alto favorece cut-out. Cut-in descreve o avanço craniomedial do implante que deixou de deslizar lateralmente."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Técnica: redução e parafuso cefálico; Complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Técnica: redução e parafuso cefálico",
+     "Complicações"
+    ],
+    "blocos": [
+     "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+     "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+     "complicacoes-41fe2824",
+     "complicacoes-c2ff2a41"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "c2a1c7f41760e077242a603de20b6605cdcdbb50321ac7360251ff18cc5a0e0e"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1586-1.jpeg"
+  ]
+ },
+ "trauma-1587": {
+  "questaoSha256": "1e228bc61b0250ca6f9b9fb331520cd9b77776e029b12d5c9c40a8a6f723b3cd",
+  "comentarioAnteriorSha256": "183d4c5672f4f2b2932e635c90c43a75168cf697d010a4767c8d8367f596a934",
+  "comentario": {
+   "conceito": "O parafuso avançou **craniomedialmente através da cabeça**, sem acompanhar o colapso por deslizamento lateral: é **cut-in**, alternativa A. O resumo relata frequência de **cerca de 2%** para esse fenômeno nas hastes.\n\nA falha se relaciona à osteoporose e ao travamento do parafuso. Em vez de a montagem permitir impactação controlada, o implante progride em direção à articulação. A figura mostra a posição central penetrante, distinta da saída superior durante o colapso em varo do cut-out (Rockwood, 10ª ed., cap. 54, “Cut-out e cut-in”).\n\n**O percentual vem da fonte, não da radiografia.** Uma imagem permite reconhecer o padrão, mas não medir incidência. Os 2% são aproximados e não representam a chance de qualquer paciente operado com qualquer implante.\n\nA conduta depende da penetração articular e dos sintomas. O resumo admite trocar ou retirar o parafuso quando não houve penetração; na presença de penetração sintomática, é necessária revisão. Não se escolhe o tratamento apenas pelo nome da complicação.",
+   "correta": "**A: cerca de 2%; cut-in.** Une a frequência relatada ao mecanismo de migração craniomedial sem deslizamento lateral adequado.",
+   "incorretas": {
+    "B": "**Mantém o número, troca a falha.** Cut-out é o colapso em varo com corte superior da cabeça. O trajeto penetrante central descrito aqui corresponde a cut-in.",
+    "C": "**Acerta cut-in e troca a frequência.** O trecho informa cerca de 2%. Taxas de 3% a 5% aparecem para cut-out nos estudos atuais, mas não devem ser transferidas a este mecanismo.",
+    "D": "**Muda nome e taxa de referência.** Cinco por cento pode fazer parte da faixa de cut-out, cuja deformação é diferente. A figura e a descrição são de cut-in, com cerca de 2% no resumo."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Complicações"
+    ],
+    "blocos": [
+     "complicacoes-c2ff2a41",
+     "complicacoes-41fe2824",
+     "complicacoes-487370e4"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "99e60c4fe1d2a2209f566c20da10c88fd1dd67bf48bd96f5437d696416340a46"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1587-1.jpeg"
+  ]
+ },
+ "trauma-1588": {
+  "questaoSha256": "8e857ec10a397e641c361974ab5a2528bf0d80a575d88047d3fe06e41d13febb",
+  "comentarioAnteriorSha256": "2bdcc831e9560d3dd82ca0787df88cbc43a6ed80637410383faefb6139fb3ce9",
+  "comentario": {
+   "conceito": "A quebra está na região em que o **parafuso cefálico atravessa a haste**, e não no bloqueio distal. A associação habitual é com **pseudartrose**, alternativa D.\n\nSe o foco não consolida, a carga continua sendo suportada pelo implante por muitos ciclos. O orifício proximal é o ponto fraco descrito pelo resumo para a haste cefalomedular, e a quebra costuma aparecer depois de meses de solicitação. O metal falhar nesse local é um alerta para investigar por que o osso não passou a compartilhar a carga (Rockwood, 10ª ed., cap. 54, “Fratura ao redor do implante e quebra”).\n\n**Osteoporose não é sinônimo de pseudartrose.** Pode dificultar a fixação, mas não substitui a associação entre não união e fadiga da haste. A imagem localiza a falha; não estabelece sozinha todas as causas biológicas ou infecciosas de uma não união.\n\nTambém não se deve confundir essa quebra com uma fratura do osso na ponta da haste. São regiões de concentração de tensão e problemas diferentes, com planejamento de revisão próprio.",
+   "correta": "**D: orifício do parafuso cefálico; pseudartrose.** O local coincide com a figura e com o ponto fraco descrito. A falta de consolidação mantém a solicitação repetida até o implante falhar.",
+   "incorretas": {
+    "A": "**Troca o local e a associação principal.** O bloqueio distal não é a região rompida mostrada. Osteoporose pode comprometer ancoragem, mas a associação habitual citada para quebra da haste é pseudartrose.",
+    "B": "**Acerta a condição e erra onde a haste falhou.** A pseudartrose explica fadiga prolongada, mas o local usual da cefalomedular descrito aqui é o orifício cefálico, não o bloqueio distal.",
+    "C": "**Acerta o orifício e reduz a causa a qualidade óssea.** O resumo destaca a pseudartrose como associação quase constante dessa quebra. Não se pode substituir essa investigação pelo diagnóstico genérico de osteoporose."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Complicações."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-54-transtrocanterica",
+    "titulo": "Fratura transtrocantérica",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+    "secoes": [
+     "Complicações"
+    ],
+    "blocos": [
+     "complicacoes-fa2cbfe8",
+     "complicacoes-a003183f"
+    ],
+    "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+    "trechosSha256": "cec022130b83693e0a07f5ae40b91d0f5ed21a68bd19df69589c8fad828ad051"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1588-1.jpeg"
+  ]
+ },
+ "conceitos-basicos-0018": {
+  "questaoSha256": "cd187c56bd305a6aa08f262861dd7766ebdc9315633d65b693d6f510131cb318",
+  "comentarioAnteriorSha256": "b993b1f3387738971f34ee6fa8c8b7242cde3c635564c84a7e38c5f999b5b727",
+  "comentario": {
+   "conceito": "Na fratura multifragmentária, o foco não fornece um encaixe cortical confiável para manter comprimento e rotação. Os bloqueios proximal e distal prendem os segmentos à haste e controlam **rotação e encurtamento**, alternativa D.\n\nNo istmo, o ajuste da haste ao canal ajuda a conter o alinhamento. Fora dele e nas fraturas cominutivas, aumenta a dependência dos bloqueios e do planejamento. O resumo lembra que a cominuição ameaçava justamente comprimento e rotação antes de o bloqueio estático se tornar rotina (Rockwood, 10ª ed., cap. 57, “Classificação” e “Bloqueio”).\n\n**Os parafusos não recuperam uma redução que não foi feita.** Comprimento e rotação devem ser acertados antes de bloquear. Na cominuição, o lado contralateral é a referência para medir; seguir apenas as corticais do foco pode deixar o membro curto ou rodado.\n\nA quantidade de parafusos depende da montagem e do padrão; o segundo é útil em fraturas distais, cominuição, osso ruim e carga precoce. A questão pede o controle acrescentado pelo bloqueio, não todos os objetivos da haste como sistema.",
+   "correta": "**D: rotação e encurtamento.** O bloqueio vincula os fragmentos à haste, evitando giro e telescopagem quando o foco cominutivo não oferece contenção suficiente.",
+   "incorretas": {
+    "A": "**Descreve alinhamento e deslocamento, mas omite os controles decisivos do bloqueio.** O ajuste da haste no canal e a redução ajudam a orientar o eixo; a instabilidade particular do foco multifragmentário inclui giro e perda de comprimento.",
+    "B": "**Acerta comprimento e troca o outro componente.** O encurtamento é uma ameaça real sem contato cortical. O par que caracteriza a função acrescentada pelos bloqueios é comprimento com rotação, não apenas ângulo.",
+    "C": "**Acerta rotação e deixa de fora a telescopagem.** A translação deve ser corrigida na redução, mas a ausência de apoio cortical permite que os segmentos encurtem ao longo da haste. Esse é o segundo controle pedido."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Anatomia aplicada e forças deformantes; Classificação; Fresagem, diâmetro, bloqueio e carga; Comprimento e rotação."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Anatomia aplicada e forças deformantes",
+     "Classificação",
+     "Fresagem, diâmetro, bloqueio e carga",
+     "Comprimento e rotação"
+    ],
+    "blocos": [
+     "anatomia-aplicada-e-forcas-deformantes-9db652ad",
+     "classificacao-edfe091a",
+     "fresagem-diametro-bloqueio-e-carga-1700baf9",
+     "comprimento-e-rotacao-c13089a5",
+     "comprimento-e-rotacao-2bbb6c9f"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "e59728f5b03682042c366f34286a603ef862e01265cd3d6ae98bae472810f4df"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1159": {
+  "questaoSha256": "7c6a1770c8e77b2a679c9340056226ec455a02330b960978bae7cf07ddf486fd",
+  "comentarioAnteriorSha256": "3fe956c9c5643636983599fba49269bb2747cdbe83b38c25cac423152c527788",
+  "comentario": {
+   "conceito": "A afirmação de que a fratura da diáfise deve receber bloqueio dinâmico porque o estático atrasa a consolidação é **errada** segundo o resumo. Como não há gabarito oficial, **B é provável pela bibliografia**.\n\nO capítulo recomenda **bloqueio estático em todas as hastes femorais**, porque nem sempre se consegue julgar a estabilidade no intraoperatório. Na série de Brumback citada, houve 98% de consolidação sem necessidade de dinamização rotineira. Não é correto transformar estabilidade inicial em causa obrigatória de retardo (Rockwood, 10ª ed., cap. 57, “Fresagem, diâmetro, bloqueio e carga”).\n\n**Dinamizar é uma decisão posterior e selecionada.** Na pseudartrose ou no retardo, é preciso avaliar ajuste da haste, calo, estabilidade axial, distração e infecção. O próprio resumo mostra falhas de dinamização; ela não é uma solução superior para qualquer situação.\n\nProteger rotação e comprimento no início e ajustar uma montagem quando a evolução exige são momentos diferentes do tratamento. A possibilidade de retirar bloqueios depois não justifica abrir mão deles de rotina na cirurgia inicial.",
+   "correta": "**B: Errado, provável pela fonte.** A recomendação independente é de bloqueio estático, com boa consolidação, e não de dinâmico obrigatório por suposto atraso provocado pelo estático.",
+   "incorretas": {
+    "A": "**Generaliza uma causalidade que a fonte não sustenta.** O bloqueio estático mantém comprimento e rotação quando a estabilidade do foco é incerta. Dinamização pode caber em casos selecionados, mas isso não demonstra que o estático aumente o retardo como regra."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Fresagem, diâmetro, bloqueio e carga; Pseudartrose, infecção, retirada e quebra da haste."
+   ],
+   "conferido": false,
+   "alerta": "Sem gabarito oficial. Provável B: o resumo recomenda bloqueio estático nas hastes femorais e não sustenta o dinâmico obrigatório por maior retardo com o estático. Dinamização fica condicionada à evolução e à estabilidade.",
+   "provavel": "B"
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Fresagem, diâmetro, bloqueio e carga",
+     "Pseudartrose, infecção, retirada e quebra da haste"
+    ],
+    "blocos": [
+     "fresagem-diametro-bloqueio-e-carga-1700baf9",
+     "pseudartrose-infeccao-retirada-e-quebra-da-haste-4fb4bece",
+     "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "ac8c5d5e70ef5b14929292ec6afb5ffcfe64f3aaa0aabbf0f68a8cd044abe294"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1658": {
+  "questaoSha256": "26873ae862b202d43e7c02582c2015d3dc67273bdf693099ffc0b634f4c78392",
+  "comentarioAnteriorSha256": "48ef60185c4aa8b5a76f53fbe7c7bfb7b144859b0d838a30ecfe649dd574dbeb",
+  "comentario": {
+   "conceito": "Na entrada pela **fossa piriforme**, o nervo mais exposto no resumo é o **glúteo superior**, e a manifestação associada é o **sinal de Trendelenburg**, alternativa C.\n\nA haste anterógrada atravessa a região dos rotadores e dos abdutores. O texto relata maior exposição do glúteo superior nessa entrada e associação com lesão dos abdutores e pior marcha. O glúteo médio e o mínimo, inervados por esse nervo, sustentam a abdução do quadril; sua fraqueza explica o sinal clínico (Rockwood, 10ª ed., caps. 57, “O que cada entrada lesa”, e 53, “Músculos”).\n\n**O nome do nervo e a manifestação formam um par.** Trocar superior por inferior ou substituir Trendelenburg por um movimento posterior do tronco perde a relação que a questão explora. A fonte não autoriza atribuir qualquer alteração de marcha ao mesmo mecanismo.\n\nA lesão não é inevitável: ponto de entrada, trajetória e cuidado com partes moles influenciam o risco. Reconhecer a estrutura exposta serve para prevenção e para examinar a função depois da operação.",
+   "correta": "**C: glúteo superior; Trendelenburg.** O risco anatômico e a deficiência abdutora são relacionados expressamente pelo resumo, com complemento da inervação no capítulo do colo.",
+   "incorretas": {
+    "A": "**Mantém o sinal e troca o nervo.** O resumo liga a exposição na entrada piriforme ao glúteo superior, que inerva médio e mínimo. Trendelenburg não deve levar a escolher “inferior” só por também ser um nervo glúteo.",
+    "B": "**Não reúne o par descrito.** A entrada expõe mais o glúteo superior, e o sinal associado pela fonte é Trendelenburg. A alternativa não identifica nem a estrutura nem a manifestação que o trecho relaciona.",
+    "D": "**Acerta o nervo e muda a manifestação.** A fraqueza abdutora é expressa pelo sinal de Trendelenburg. Não se deve substituir esse achado específico pela descrição de tronco para trás."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada.",
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Haste anterógrada: o ponto de entrada"
+    ],
+    "blocos": [
+     "haste-anterograda-o-ponto-de-entrada-469e83ef",
+     "haste-anterograda-o-ponto-de-entrada-0550ca82"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "ebc9ea7d6a240daa3dbd718870b1d6f8f7ea56e188f70477deb8b660753f4f0b"
+   },
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Anatomia aplicada"
+    ],
+    "blocos": [
+     "anatomia-aplicada-307a6627"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "3d152e7b39fc8d7f445e5cc1ff994ada9e8567228a4bab580a26e25b05b4bc90"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1660": {
+  "questaoSha256": "3072a2a33bc76c85bdc9764fd46c61d300b8ca59231af7f45f03effdad4955eb",
+  "comentarioAnteriorSha256": "6be7d4d57dc733de799c7b0b068835218c712284476790fcac5bde4db764d5ce",
+  "comentario": {
+   "conceito": "No adolescente com **fise aberta**, se for escolhida uma haste rígida, a entrada recomendada é pela **ponta do trocânter ou mais lateral**, para evitar **necrose avascular da cabeça**. Entre os pares oferecidos, corresponde a D.\n\nO resumo proíbe a entrada piriforme nesse cenário porque ela pode lesar a circulação da cabeça. No adulto maduro, a necrose por esse acesso é excepcional; com a fise aberta, a decisão sobre o ponto de entrada muda. A idade esquelética, e não apenas o nome da haste, é o dado decisivo (Rockwood, 10ª ed., cap. 57, “O adolescente com fise aberta”).\n\n**Coxa valga é outra alteração.** Refere-se ao aumento do ângulo cervicodiafisário; não é sinônimo de falha da irrigação. O objetivo vascular citado no enunciado não deve ser trocado por uma deformidade angular (cap. 53, “Geometria do fêmur proximal”).\n\nA recomendação pressupõe que a haste rígida seja a opção escolhida e que o implante seja apropriado à entrada. Não significa que todo adolescente com fratura precise receber essa montagem.",
+   "correta": "**D: ponta do trocânter; evitar necrose da cabeça.** É uma das entradas trocantéricas admitidas no texto para a fise aberta. O objetivo é poupar a circulação ameaçada pelo acesso piriforme.",
+   "incorretas": {
+    "A": "**Escolhe o acesso que a fonte manda evitar e troca o problema.** A piriforme é contraindicada nesse contexto vascular. Coxa valga é deformidade de ângulo, não a complicação que justifica a recomendação.",
+    "B": "**Acerta o perigo, mas mantém seu acesso de risco.** Reconhecer necrose não valida a piriforme; a conduta para evitá-la é mudar a entrada para o trocânter ou mais lateral.",
+    "C": "**Acerta uma entrada aceita e troca a finalidade.** O texto a recomenda para proteger a circulação e reduzir o risco de necrose. O par da questão não é com coxa valga."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada.",
+    "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Haste anterógrada: o ponto de entrada"
+    ],
+    "blocos": [
+     "haste-anterograda-o-ponto-de-entrada-2e8e945f"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "5758e6ddd09a8cec6b9fda0ce9e0c2abf1e4f8ac89a4ad4edc7040ae152f4e06"
+   },
+   {
+    "resumo": "rockwood10-53-colo-femur",
+    "titulo": "Fratura do colo do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+    "secoes": [
+     "Anatomia aplicada"
+    ],
+    "blocos": [
+     "anatomia-aplicada-be6f84e8"
+    ],
+    "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+    "trechosSha256": "23697dc93e0cf18517ac67882ef9fc281cbc25b5bf22b6aa093192d1f1ac2c18"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0870": {
+  "questaoSha256": "9da4c4fe6af5678ac2678f5c62d4fae667cb2d82b4391434e86e625537c18f33",
+  "comentarioAnteriorSha256": "37a7314ed08226c25e67c25e603ea79aa761de3a832eddaa51ac5c6f67aed498",
+  "comentario": {
+   "conceito": "A banca marcou **B, evitar fratura iatrogênica proximal**, como vantagem da entrada trocantérica. A fonte exige uma ressalva: o acesso pode ser mais fácil e rápido, mas **não elimina fratura iatrogênica**. Ponto e curvatura da haste precisam combinar.\n\nA entrada piriforme é alinhada ao canal e recebe hastes retas. Um ponto anterior demais pode causar tensões circunferenciais e fratura do colo. A trocantérica usa haste curva; se o ponto for inadequado à curva, também pode produzir deformidade e fratura. Portanto, retirar um mecanismo de risco não torna a nova montagem livre de risco (Rockwood, 10ª ed., cap. 57, “Ponto de entrada”).\n\n**A vantagem clínica apresentada é a facilidade de acesso**, sobretudo no obeso, com menos tempo de cirurgia e fluoroscopia. Os resultados de consolidação e complicações foram semelhantes. O glúteo médio também pode ser lesado na entrada trocantérica, como mostram os estudos anatômicos citados.\n\nA letra oficial fica preservada no sentido comparativo histórico, mas a aula não deve prometer prevenção absoluta. Escolha de implante, posição de entrada e controle nas duas incidências continuam necessários.",
+   "correta": "**B: evitar fratura iatrogênica proximal, conforme a banca, com ressalva.** Evita-se o erro específico de uma piriforme anterior demais ao escolher outro acesso, mas a trocantérica também pode fraturar quando ponto e curva discordam. O resumo não sustenta risco zero.",
+   "incorretas": {
+    "A": "**Confunde facilidade de entrada com fresagem automaticamente mais fácil.** A vantagem demonstrada é localizar e acessar o ponto, com menos tempo e radioscopia. A preparação do canal ainda depende de trajetória, curvatura e técnica.",
+    "C": "**O alinhamento não vem garantido pela entrada.** Um ponto trocantérico lateral demais para a haste pode gerar varo. É preciso combinar a trajetória com o desenho do implante, não presumir alinhamento longitudinal só pelo local.",
+    "D": "**Não elimina lesão do glúteo médio.** O resumo relata lesões desse músculo também na trocantérica; o ponto preciso influencia o dano. Uma redução teórica de agressão não é ausência de lesão."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada."
+   ],
+   "conferido": false,
+   "alerta": "B oficial preservada como comparação histórica. O corpo do resumo 57 não garante prevenção de fratura pela entrada trocantérica: relata falha quando ponto e curvatura discordam, e destaca sobretudo menor tempo e facilidade do acesso. A aula evita ensinar que o risco foi eliminado."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-57-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+    "secoes": [
+     "Haste anterógrada: o ponto de entrada"
+    ],
+    "blocos": [
+     "haste-anterograda-o-ponto-de-entrada-57ac67fc",
+     "haste-anterograda-o-ponto-de-entrada-01dab420",
+     "haste-anterograda-o-ponto-de-entrada-d377b34e",
+     "haste-anterograda-o-ponto-de-entrada-469e83ef",
+     "haste-anterograda-o-ponto-de-entrada-0550ca82"
+    ],
+    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+    "trechosSha256": "04acf29b52a9d57cb6cbc08dfb9f1e7656cd90eacf90879880ae387ad12aa544"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}

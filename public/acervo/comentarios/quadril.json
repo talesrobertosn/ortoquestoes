@@ -472,15 +472,57 @@
     "conferido": false
   },
   "quadril-0040": {
+    "conceito": "O ramo profundo da circunflexa femoral medial aparece posteriormente **entre o quadrado femoral e o gêmeo inferior**, alternativa A. A relação precisa ser seguida ao longo do trajeto, pois a artéria passa perto de outros rotadores em pontos diferentes.\n\nO resumo descreve sua passagem pela borda inferior do obturador externo, a emergência posterior entre quadrado e gêmeo inferior e, depois, seu caminho à frente do tendão conjunto até perfurar a cápsula. Dali partem os retinaculares superiores que sobem pelo colo e irrigam a zona de carga da cabeça (Rockwood, 10ª ed., cap. 53, “Irrigação da cabeça femoral”).\n\n**Passar perto não é emergir no mesmo intervalo.** Confundir a relação com o obturador externo ou com a cápsula acima dos gêmeos desloca o marco procurado. Essa anatomia explica por que liberar o quadrado do lado femoral ou dissecar abaixo do gêmeo inferior pode comprometer o pedículo.\n\nNa via posterior, preservar sangue e proteger o ciático são tarefas diferentes. Saber onde a artéria aparece ajuda a planejar a liberação dos rotadores sem tratar todo o espaço posterior como um plano livre.",
+    "correta": "**A: quadrado femoral e gêmeo inferior.** É o intervalo posterior explicitamente descrito pelo resumo, antes de a artéria seguir junto ao tendão conjunto e entrar na cápsula.",
     "incorretas": {
-      "B": "O gêmeo superior fica acima do obturador interno, longe do ponto em que o vaso aparece.",
-      "C": "O vaso cruza por trás do obturador externo, mas não emerge entre ele e o gêmeo inferior.",
-      "D": "Nem o gêmeo superior nem o obturador externo formam o intervalo por onde o vaso aparece."
+      "B": "**Troca o gêmeo que limita a emergência posterior.** O resumo situa o vaso junto ao gêmeo inferior nesse ponto, não ao superior. A passagem capsular mais proximal é outro trecho do trajeto.",
+      "C": "**Mistura uma relação verdadeira com outro intervalo.** A artéria passa pela borda inferior do obturador externo, mas a emergência posterior perguntada é entre quadrado femoral e gêmeo inferior. As duas etapas não devem ser fundidas.",
+      "D": "**Reúne marcos de trechos diferentes.** Obturador externo e região acima do gêmeo superior aparecem na descrição do caminho, mas não formam o par da emergência posterior. O ponto decisivo continua sendo o intervalo quadrado e gêmeo inferior."
     },
-    "conceito": "O **ramo profundo da artéria circunflexa femoral medial** é a principal fonte de sangue da cabeça do fêmur no adulto. Conhecer o caminho dele é essencial para não lesá-lo nas cirurgias pela parte de trás do quadril.\n\n**O trajeto, passo a passo**:\n\na circunflexa medial nasce da artéria femoral profunda, na frente da coxa;\n\nela passa entre os músculos **pectíneo** e **iliopsoas** e contorna o colo do fêmur **por baixo**;\n\nchega à parte de trás do quadril, onde **aparece entre o quadrado femoral** (que fica abaixo) **e o gêmeo inferior** (que fica acima);\n\ncruza por trás do tendão do **obturador externo**;\n\nsobe à frente dos pequenos músculos rotadores (os gêmeos e o obturador interno), ao longo do trocânter;\n\nentra na cápsula na região de **cima e de trás** do colo e forma os **vasos retinaculares**, que levam sangue à cabeça.\n\nOs pequenos músculos rotadores da parte de trás do quadril, de cima para baixo, são: piriforme, gêmeo superior, obturador interno, gêmeo inferior e quadrado femoral. O obturador externo fica mais profundo.\n\n**Regras cirúrgicas que vêm daí**: não soltar o quadrado femoral no acesso posterior; cortar os rotadores curtos a mais de 1,5 cm de sua inserção; e preservar o obturador externo, que protege o vaso. A técnica de luxação cirúrgica de Ganz se baseia nessas regras.\n\n**Na prova**: o ramo profundo da circunflexa medial emerge entre o quadrado femoral e o gêmeo inferior.",
-    "correta": "Músculos quadrado femoral e gêmeo inferior. O ramo profundo contorna o fêmur por baixo e aparece atrás exatamente nesse intervalo.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
+    "referencias": [
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada.",
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Vias de acesso."
+    ],
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Anatomia aplicada"
+          ],
+          "blocos": [
+            "anatomia-aplicada-a8c38522"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ffb43352ad2ef6dc7e6410299709a955f92195d9fdd2fea826f5afcae380c061"
+        },
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Vias de acesso"
+          ],
+          "blocos": [
+            "vias-de-acesso-de09a49f"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "6d969067e8d6e0e043cdb68cec7419a4ab01bc2824428fb35bcabcb0c0cc3b7f"
+        }
+      ],
+      "questaoSha256": "ed6dbf70fa5898c08ae9e04f796aa272662abc89369f20e1eea718a592848133",
+      "comentarioSha256": "32fb8345d0ccf3dc69525c5221656a045b0eef90416cf5d366d743b09074df23"
+    }
   },
   "quadril-0041": {
     "incorretas": {
@@ -8536,19 +8578,61 @@
     "conferido": false
   },
   "quadril-0640": {
-    "conceito": "A corona mortis é uma comunicação vascular sobre o ramo superior do púbis, entre o território obturatório e o sistema ilíaco externo, frequentemente por meio dos vasos epigástricos inferiores. Pode ser arterial, venosa ou ambas. O nome lembra o risco de sangramento importante quando esses vasos são rompidos durante a dissecção da pelve anterior.\n\nA via de Stoppa modificada é anterior intrapélvica e extraperitoneal. Ela permite trabalhar pela face interna da pelve, expondo o ramo púbico superior, o estreito superior e a superfície quadrilátera do acetábulo. Por isso, o cirurgião encontra a comunicação vascular justamente no trajeto da exposição e deve identificá-la antes de avançar a dissecção. O feixe obturatório e o tronco lombossacro também precisam ser protegidos.\n\nA questão exige relacionar a estrutura em risco à superfície exposta. A corona mortis pertence ao corredor anterior intrapélvico; as vias laterais e posteriores do quadril têm outras relações anatômicas. Esse cuidado também pode ser necessário em outros acessos à pelve anterior, portanto não é uma exclusividade absoluta de Stoppa.",
-    "correta": "Stoppa modificada é a resposta porque a dissecção anterior intrapélvica passa junto ao ramo púbico superior e ao estreito superior. Os vasos podem ser identificados e protegidos ou ligados quando necessário para permitir a exposição. Reconhecê-los antes da mobilização reduz a possibilidade de retração do vaso rompido e de sangramento de difícil controle.",
+    "conceito": "A **corona mortis** deve ser procurada e controlada na via **Stoppa modificada**, alternativa B. O acesso intrapélvico segue a borda pélvica e o ramo superior, onde as comunicações vasculares podem cruzar a dissecção.\n\nO nome descreve comunicações entre o sistema **ilíaco externo, incluindo a epigástrica inferior, e o obturatório**, ou uma origem obturatória anômala externa. Na descrição do Stoppa, o resumo orienta identificar e ligar as anastomoses; isso exige reconhecer o trajeto antes de aprofundar ou afastar estruturas (Rockwood, 10ª ed., cap. 51, “Stoppa modificado”).\n\n**Os outros acessos trabalham em planos diferentes.** Hardinge é lateral direto, dividindo a porção anterior do glúteo médio; Gibson modificada usa o intervalo entre glúteo máximo e tensor; Kocher-Langenbeck expõe a coluna posterior. A escolha decorre do campo anatômico, não de qual via é mais conhecida.\n\nControlar a anastomose não significa ligar às cegas qualquer vaso do ramo. A aula descreve a corona mortis da fonte e não presume que um tronco arterial único possa ser sacrificado sem avaliar sua anatomia.",
+    "correta": "**B: Stoppa modificada.** A borda pélvica e o ramo superior ficam no campo intrapélvico; reconhecer as comunicações vasculares evita lesão durante essa dissecção.",
     "incorretas": {
-      "A": "Hardinge é uma via lateral direta do quadril, com abordagem do aparelho abdutor para exposição da articulação. O risco anatômico característico envolve o glúteo médio e o nervo glúteo superior. Ela não percorre a face interna do ramo púbico superior, onde a corona mortis deve ser identificada. Confundir proximidade regional com o corredor efetivamente dissecado leva ao erro.",
-      "C": "Gibson modificada é uma abordagem posterior ou posterolateral ao quadril, com exposição em torno do trocanter maior e da região posterior. O nervo ciático e as estruturas posteriores são relações relevantes. Embora também permita cirurgia do quadril, ela não coloca a corona mortis no centro da exposição anatômica cobrada.",
-      "D": "Kocher-Langenbeck é uma via posterior ao acetábulo, útil principalmente para parede e coluna posteriores. Ela exige atenção ao nervo ciático e à vascularização posterior do quadril. A superfície quadrilátera e o ramo púbico superior são alcançados diretamente por corredores anteriores intrapélvicos, razão pela qual esta alternativa não corresponde ao vaso apresentado."
+      "A": "**Hardinge é lateral direto.** O resumo do colo descreve divisão do glúteo médio com continuidade pelo vasto lateral e atenção ao glúteo superior. Esse plano não é a dissecção intrapélvica sobre o ramo superior.",
+      "C": "**Gibson modificada usa um intervalo lateral/posterior.** Ela poupa a divisão proximal do glúteo máximo ao passar junto ao tensor da fáscia lata. Não corresponde ao corredor interno da pelve onde se procura a corona mortis.",
+      "D": "**Kocher-Langenbeck é a via posterior do acetábulo.** Dá acesso à face lateral da coluna posterior e exige proteção do ciático e da irrigação da cabeça. A corona mortis do ramo superior é a preocupação do campo anterior intrapélvico."
     },
     "referencias": [
-      "AO Surgery Reference. Modified Stoppa approach to the acetabulum. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/approach/modified-stoppa-approach",
-      "AO Surgery Reference. Modified Stoppa to the anterior intrapelvic region. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/pelvic-ring/approach/modified-stoppa"
+      "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Anatomia aplicada: colunas, paredes, teto e vasos; Vias de acesso.",
+      "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Fratura desviada no idoso."
     ],
-    "geradoEm": "2026-10-07",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-24",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-51-acetabulo",
+          "titulo": "Fraturas do acetábulo",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 51 · Acetabulum Fractures",
+          "secoes": [
+            "Anatomia aplicada: colunas, paredes, teto e vasos",
+            "Vias de acesso"
+          ],
+          "blocos": [
+            "anatomia-aplicada-colunas-paredes-teto-e-vasos-16dc66a6",
+            "vias-de-acesso-09c0da47",
+            "vias-de-acesso-1cf3c6fc",
+            "vias-de-acesso-9e3b54ba"
+          ],
+          "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+          "trechosSha256": "d58f9d8c1cd29f2a5d87b9afba092df5cc1849b2dca9b1971a1c21eca40aefdd"
+        },
+        {
+          "resumo": "rockwood10-53-colo-femur",
+          "titulo": "Fratura do colo do fêmur",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+          "secoes": [
+            "Fratura desviada no idoso"
+          ],
+          "blocos": [
+            "fratura-desviada-no-idoso-1d56bc28"
+          ],
+          "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+          "trechosSha256": "ca44fc30a6c23604b91408e86f8abc060fe7a8dcde02cb3656546bc30ceffb29"
+        }
+      ],
+      "questaoSha256": "2367da9bd9149c8100075f84646012b1825f3ec5ba77592ce3c8306f2a3d6f09",
+      "comentarioSha256": "2ca7f1e9178c9bef43ef112b6223964efd6e4dcda4b14b0a4848c0c41b7a9841"
+    }
   },
   "quadril-0641": {
     "conceito": "Na imagem axial do quadril, uma seta acompanha a cápsula junto ao contorno articular e a outra indica o tendão do glúteo mínimo na região anterior do trocanter maior. A identificação depende de localização e continuidade anatômica, porque tanto cápsula quanto tendão aparecem como estruturas de baixo sinal.\n\nA cápsula envolve a articulação e se espessa para formar seus ligamentos. O glúteo mínimo está profundo ao médio, e seu tendão se insere na faceta anterior do trocanter maior. O glúteo médio tem inserções mais laterais e superiores; trocar os dois significa ignorar a posição relativa no corte axial.\n\nTambém existem conexões entre o tendão do glúteo mínimo e a cápsula anterossuperior, demonstradas em estudos anatômicos. Isso não torna as estruturas sinônimas: é necessário acompanhar o trajeto em cortes consecutivos. Já o reto femoral tem origem na espinha ilíaca anteroinferior e na região supra-acetabular, seguindo para o compartimento anterior da coxa. A imagem não marca uma dupla de tendões de reto femoral e abdutor.",

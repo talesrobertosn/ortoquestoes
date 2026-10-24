@@ -9258,15 +9258,41 @@
   }
  },
  "trauma-0439": {
+  "conceito": "No esquema, **A aponta a área pobre em trabéculas do triângulo de Ward**, e **B o reforço posteromedial do calcar, descrito como arco de Adam**. O par é a alternativa A.\n\nAs trabéculas seguem linhas de carga, deixando uma região relativamente vazia entre os feixes. Esse espaço é o triângulo; o arco é uma estrutura de osso forte, não outra área vazia. Com a idade, a cortical afina e a trama trabecular diminui, enquanto a cominuição posteromedial pode retirar o apoio do calcar (Rockwood, 10ª ed., cap. 54, “Arquitetura do fêmur proximal”).\n\n**A forma e a posição decidem mais que os epônimos.** Na seta superior vê-se o intervalo entre feixes; na inferior, a região de suporte medial. Confundir os nomes também confunde rarefação relativa com sustentação óssea.\n\nA figura permite identificar as estruturas, mas não mede densidade óssea nem demonstra uma fratura. Não se deve atribuir osteoporose ou instabilidade a um paciente apenas por esse desenho.",
+  "correta": "**A: Ward e Adam.** A primeira seta está no espaço entre feixes, e a segunda no reforço posteromedial. São exatamente os dois nomes atribuídos pelo texto anatômico.",
   "incorretas": {
-   "B": "**Nome inexistente.** Não há triângulo de Kaplan no fêmur proximal; a área rarefeita é o triângulo de Ward.",
-   "C": "**Nome inexistente.** O arco da cortical medial é o arco de Adams, e não de Kaplan.",
-   "D": "**Nomes inexistentes.** Nenhuma das duas estruturas do fêmur proximal leva o nome de Kaplan."
+   "B": "**Acerta o arco e troca o triângulo.** A região pobre em trabéculas é chamada de Ward no resumo. Reconhecer Adam em B não valida o nome Kaplan para A.",
+   "C": "**Acerta Ward e perde o marco de suporte.** O reforço posteromedial é o calcar, descrito como arco de Adam, não arco de Kaplan. A alternativa mistura uma identificação correta com outra indevida.",
+   "D": "**Troca os dois nomes sem mudar a anatomia apontada.** A continua sendo a área entre feixes de Ward, e B o arco de Adam. Não é preciso inventar uma estrutura chamada Kaplan para explicar os distratores."
   },
-  "conceito": "**A arquitetura trabecular do fêmur proximal.** As trabéculas se organizam segundo as linhas de força. O **grupo compressivo principal** sobe da cortical **medial** do colo até a parte superior da cabeça, suportando a carga. O **grupo tênsil principal** se arqueia da cortical lateral, abaixo do trocanter, até a parte inferior da cabeça. Há ainda os grupos compressivo e tênsil **secundários** e o grupo do **trocanter maior**.\n\n**O triângulo de Ward.** Entre os feixes compressivo principal, tênsil principal e compressivo secundário, forma-se uma área **triangular** com poucas trabéculas, mais radiotransparente: o **triângulo de Ward**. É uma região de fragilidade, usada como ponto de medida na densitometria antiga e referência no **índice de Singh**, que gradua a **osteoporose** pelo desaparecimento progressivo dos grupos trabeculares (grau 6 normal, grau 1 só com o compressivo principal restante).\n\n**O arco de Adams.** É o **calcar femoral** visto na radiografia: a cortical **medial espessa** do colo, que forma um arco da diáfise até a cabeça, recebendo a carga. É o pilar medial do fêmur proximal, e sua integridade é crucial nas fraturas **transtrocantéricas**: quando o fragmento posteromedial (calcar) está cominuído, a fratura é **instável**. Não confundir com o **calcar femorale** interno, a lâmina óssea densa que se projeta da cortical posteromedial para dentro, perto do trocanter menor.\n\n**Os distratores.** Não existe \"triângulo de Kaplan\" nem \"arco de Kaplan\" como estruturas do fêmur proximal; **Kaplan** é o nome de uma via lateral do cotovelo e de outras descrições.\n\n**Na prova:** área rarefeita entre os feixes trabeculares = **triângulo de Ward**; cortical medial espessa do colo = **arco de Adams** (calcar).",
-  "correta": "**Triângulo de Ward e arco de Adams.** A é a área pobre em trabéculas entre os feixes principais, e B é a cortical medial espessa do colo, o pilar de carga.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Anatomia e forças deformantes."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Anatomia e forças deformantes"
+     ],
+     "blocos": [
+      "anatomia-e-forcas-deformantes-81f07f93"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "41b14bda7574815fcb93895807ec2bbff21a3beee9224e3a1bd475af9737cc5b"
+    }
+   ],
+   "questaoSha256": "293cb1514f0d5c1f8548d4e87aee56d0b36d4d96d429e9ce35e75d84ec5f7dd3",
+   "comentarioSha256": "dd2a2cdfe9909eb660cd0e8a3ef5fafd3d3cc050ca37d1edec207a5cf71ae3f8"
+  }
  },
  "trauma-0440": {
   "conceito": "A resposta é a **artéria tibial anterior**, alternativa C. O dado fica mais útil quando se sabe de onde veio: o resumo cita uma série de angiotomografia de pilões de alta energia, e não uma taxa universal aplicável a qualquer fratura do tornozelo.\n\nLeBus e Collinge encontraram alterações arteriais em 14 dos 25 pacientes avaliados: nove na tibial anterior, três na tibial posterior e duas na fibular. Metade dessas alterações correspondia a oclusão completa. Os membros estavam assintomáticos e não tiveram sequela na série, tratada com técnicas minimamente invasivas orientadas pela avaliação vascular (Rockwood, 10ª ed., cap. 64, “Lesões associadas”).\n\n**Ausência de sintomas não prova que todas as artérias estejam normais.** A informação justifica examinar perfusão e documentar pulsos, sensibilidade e condições da pele, sem transformar aquele estudo numa indicação automática do mesmo exame para todos os casos. O resumo inclui palpação ou Doppler na avaliação inicial e mostra como a anatomia e as partes moles influenciam o planejamento.\n\nA artéria tibial posterior contribui muito para a irrigação medial e posterior da metáfise, mas essa importância anatômica não a torna a mais alterada no levantamento citado. Do mesmo modo, uma artéria aparecer na descrição de uma via cirúrgica não demonstra que seja a mais lesada pelo trauma.\n\n> **Na prova:** no levantamento citado para o pilão de alta energia, a tibial anterior liderou as alterações arteriais.",
@@ -15380,15 +15406,46 @@
   "conferido": false
  },
  "trauma-0870": {
+  "conceito": "A banca marcou **B, evitar fratura iatrogênica proximal**, como vantagem da entrada trocantérica. A fonte exige uma ressalva: o acesso pode ser mais fácil e rápido, mas **não elimina fratura iatrogênica**. Ponto e curvatura da haste precisam combinar.\n\nA entrada piriforme é alinhada ao canal e recebe hastes retas. Um ponto anterior demais pode causar tensões circunferenciais e fratura do colo. A trocantérica usa haste curva; se o ponto for inadequado à curva, também pode produzir deformidade e fratura. Portanto, retirar um mecanismo de risco não torna a nova montagem livre de risco (Rockwood, 10ª ed., cap. 57, “Ponto de entrada”).\n\n**A vantagem clínica apresentada é a facilidade de acesso**, sobretudo no obeso, com menos tempo de cirurgia e fluoroscopia. Os resultados de consolidação e complicações foram semelhantes. O glúteo médio também pode ser lesado na entrada trocantérica, como mostram os estudos anatômicos citados.\n\nA letra oficial fica preservada no sentido comparativo histórico, mas a aula não deve prometer prevenção absoluta. Escolha de implante, posição de entrada e controle nas duas incidências continuam necessários.",
+  "correta": "**B: evitar fratura iatrogênica proximal, conforme a banca, com ressalva.** Evita-se o erro específico de uma piriforme anterior demais ao escolher outro acesso, mas a trocantérica também pode fraturar quando ponto e curva discordam. O resumo não sustenta risco zero.",
   "incorretas": {
-   "A": "**Não é a vantagem principal.** A fresagem do canal não depende essencialmente do ponto de entrada.",
-   "C": "**Não é a vantagem.** Um ponto trocantérico mal posicionado pode até causar varo; o alinhamento depende da técnica.",
-   "D": "**Não evita.** O ponto trocantérico também atravessa o glúteo médio, embora cause menos lesão aos rotadores."
+   "A": "**Confunde facilidade de entrada com fresagem automaticamente mais fácil.** A vantagem demonstrada é localizar e acessar o ponto, com menos tempo e radioscopia. A preparação do canal ainda depende de trajetória, curvatura e técnica.",
+   "C": "**O alinhamento não vem garantido pela entrada.** Um ponto trocantérico lateral demais para a haste pode gerar varo. É preciso combinar a trajetória com o desenho do implante, não presumir alinhamento longitudinal só pelo local.",
+   "D": "**Não elimina lesão do glúteo médio.** O resumo relata lesões desse músculo também na trocantérica; o ponto preciso influencia o dano. Uma redução teórica de agressão não é ausência de lesão."
   },
-  "conceito": "**Os dois pontos de entrada da haste anterógrada.** A haste do fêmur pode entrar pela **fossa piriforme**, alinhada com o eixo do canal no plano coronal, ou pela **ponta do trocanter maior**, mais lateral. As hastes **retas** exigem a piriforme; as hastes **trocantéricas** têm uma curva proximal lateral (cerca de 4 a 6 graus) que acompanha a entrada lateral.\n\n**As vantagens da entrada trocantérica.** É mais **fácil** de achar, especialmente em **obesos** e em pacientes em decúbito dorsal, com menos dissecção e menos lesão dos **rotadores** e do **glúteo médio** que a piriforme. E, sobretudo, reduz o risco de **fratura iatrogênica** do **colo** e da região proximal: na piriforme, um ponto um pouco **medial** ou **anterior** demais concentra carga na cortical medial e pode fraturar o colo ou a cortical posterior ao introduzir a haste reta. Na entrada trocantérica, a haste curva se acomoda sem forçar o fêmur proximal. Também preserva melhor a **circunflexa femoral medial** (importante em adolescentes).\n\n**As desvantagens.** Um ponto **lateral demais** leva a **varo** do fragmento proximal e pode fraturar a parede lateral; o glúteo médio ainda é atravessado. A fresagem e a introdução exigem cuidado com o alinhamento.\n\n**Os outros cuidados.** Ponto de entrada correto no **perfil** (alinhado com o canal, nem anterior nem posterior), guia centrado, fresagem progressiva, e verificação do **comprimento** e da **rotação** (comparar com o lado oposto, perfil do trocanter menor).\n\n**Na prova:** vantagem da entrada **trocantérica** na haste anterógrada = menor risco de **fratura iatrogênica do fêmur proximal**, e maior facilidade técnica.",
-  "correta": "**Evitar fratura iatrogênica do fêmur proximal.** A haste curva trocantérica se acomoda sem forçar o colo e a cortical medial, ao contrário da entrada piriforme mal posicionada.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada."
+  ],
+  "conferido": false,
+  "alerta": "B oficial preservada como comparação histórica. O corpo do resumo 57 não garante prevenção de fratura pela entrada trocantérica: relata falha quando ponto e curvatura discordam, e destaca sobretudo menor tempo e facilidade do acesso. A aula evita ensinar que o risco foi eliminado.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Haste anterógrada: o ponto de entrada"
+     ],
+     "blocos": [
+      "haste-anterograda-o-ponto-de-entrada-57ac67fc",
+      "haste-anterograda-o-ponto-de-entrada-01dab420",
+      "haste-anterograda-o-ponto-de-entrada-d377b34e",
+      "haste-anterograda-o-ponto-de-entrada-469e83ef",
+      "haste-anterograda-o-ponto-de-entrada-0550ca82"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "04acf29b52a9d57cb6cbc08dfb9f1e7656cd90eacf90879880ae387ad12aa544"
+    }
+   ],
+   "questaoSha256": "9da4c4fe6af5678ac2678f5c62d4fae667cb2d82b4391434e86e625537c18f33",
+   "comentarioSha256": "1eb2d71a744c75c3fed3e466ab0c6f0def731516793d7f2cb816c90e7aa310d8"
+  }
  },
  "trauma-0871": {
   "incorretas": {
@@ -21516,20 +21573,62 @@
   "conferido": false
  },
  "trauma-1140": {
+  "conceito": "Para a fratura **anterior com hemitransversa posterior**, a via habitual é **anterior**, como a **ilioinguinal**, alternativa B. Como não há gabarito oficial no acervo, B é uma resposta provável pela bibliografia, não uma letra da banca confirmada.\n\nO componente anterior é reduzido pela face interna da pelve; a parte posterior, frequentemente menos desviada, pode ser controlada indiretamente. O resumo também admite Stoppa com janela lateral. Se a coluna posterior não reduz adequadamente pela frente, pode-se acrescentar Kocher-Langenbeck em sequência (Rockwood, 10ª ed., cap. 51, “Técnica por tipo”).\n\n**“Anterior” não torna todas as vias equivalentes.** Smith-Petersen e Hueter são citadas no resumo do colo como vias para redução aberta da fratura do colo, com capsulotomia. A ilioinguinal trabalha na face interna do inominado e não abre de rotina a articulação íntegra.\n\nO padrão de fratura e o local do maior desvio definem o corredor útil. Não se escolhe uma via posterior só porque o nome do padrão contém a palavra hemitransversa posterior.",
+  "correta": "**B: ilioinguinal, provável pela fonte.** É uma das vias anteriores recomendadas para esse padrão, permitindo restaurar a coluna anterior e reduzir o componente posterior indiretamente.",
   "incorretas": {
-   "A": "**Kocher-Langenbeck.** Essa via posterior dá acesso à parede e à coluna posteriores, sendo especialmente útil quando esses segmentos são o foco da fratura. Aqui a lesão dominante é da coluna anterior; uma via exclusivamente posterior não oferece o mesmo controle direto dela.",
-   "C": "**Smith-Petersen.** É uma via anterior para o quadril, empregada em problemas da cabeça e do colo femorais e em algumas abordagens acetabulares anteriores limitadas. Não substitui a exposição da coluna anterior e do rebordo pélvico exigida pela fratura descrita.",
-   "D": "**Hueter.** Também designa um acesso anterior ao quadril, frequentemente citado em artroplastia. O corredor não dá, por si, o acesso intrapélvico amplo necessário para reduzir a coluna anterior e fixar a hemitransversa posterior."
+   "A": "**Pode complementar, mas não é a preferência habitual desse padrão.** Kocher-Langenbeck expõe diretamente a coluna posterior. Torna-se necessária se o componente posterior não puder ser reduzido pela frente, em vez de substituir automaticamente a abordagem anterior.",
+   "C": "**É anterior, mas tem outro alvo na comparação consultada.** O resumo do colo usa Smith-Petersen para redução aberta com capsulotomia. Isso não a torna a via ilioinguinal para reconstruir o contorno interno do acetábulo.",
+   "D": "**Também não é sinônimo de ilioinguinal.** Hueter aparece como opção anterior para abrir o colo quando a redução fechada falha. O padrão acetabular perguntado tem recomendação própria de ilioinguinal ou Stoppa com janela lateral."
   },
-  "conceito": "**Leia o nome da fratura como um mapa.** Na classificação de Letournel, a fratura de coluna anterior com hemitransversa posterior é um padrão associado: a linha principal separa a coluna anterior, enquanto outra linha atravessa parcialmente a região posterior. Não equivale a uma fratura isolada da parede posterior, nem a uma fratura das duas colunas em que toda a superfície articular perde a ligação com o esqueleto axial.\n\nA via cirúrgica precisa alcançar o fragmento que comanda a redução. A ilioinguinal oferece acesso à coluna anterior pelo ilíaco e pelo rebordo pélvico; por esse corredor também é possível reduzir e fixar a extensão posterior com pinças e parafusos dirigidos à coluna posterior. A sequência habitual é reconstruir a porção anterior e depois ajustar a hemitransversa. Planejamento por tomografia e radioscopia são essenciais para evitar parafusos intra-articulares e lesão vascular.\n\n**Não transforme a via em regra absoluta.** A via intrapélvica anterior modificada, conhecida como Stoppa, também pode tratar esse padrão; a escolha depende da altura dos traços, da cominuição e da experiência da equipe. Entre as alternativas históricas oferecidas, porém, a ilioinguinal é a que expõe o componente principal.",
-  "correta": "**Ilioinguinal.** Ela aborda diretamente a coluna anterior e permite controlar o componente hemitransverso posterior a partir da frente da pelve.",
   "referencias": [
-   "AO Surgery Reference. ORIF through ilioinguinal approach for anterior column and posterior hemitransverse fractures. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/anterior-column-and-posterior-hemitransverse/orif-through-ilioinguinal-approach",
-   "AO Surgery Reference. Decision making: choice of exposure. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/further-reading/decision-making-choice-of-exposure"
+   "Conteúdo consultado no resumo “Fraturas do acetábulo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 51 · Acetabulum Fractures. Seções: Técnica por tipo de fratura; Vias de acesso.",
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Fratura desviada no jovem."
   ],
+  "conferido": false,
+  "alerta": "Sem gabarito oficial no acervo. Provável B, sustentada pelo resumo 51 para anterior com hemitransversa posterior; as vias de redução aberta do colo foram comparadas com o corpo do resumo 53.",
   "provavel": "B",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-51-acetabulo",
+     "titulo": "Fraturas do acetábulo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 51 · Acetabulum Fractures",
+     "secoes": [
+      "Técnica por tipo de fratura",
+      "Vias de acesso"
+     ],
+     "blocos": [
+      "tecnica-por-tipo-de-fratura-0a978367",
+      "vias-de-acesso-4092e3ed",
+      "vias-de-acesso-9e3b54ba"
+     ],
+     "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
+     "trechosSha256": "940221ae282543ec5bb4c608b6c1d04dc259d242a9de01fc7d5dc60690ba11b9"
+    },
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Fratura desviada no jovem"
+     ],
+     "blocos": [
+      "fratura-desviada-no-jovem-43725930"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "9320d184839f947f337ab0b64bd7c4e3fb7454deb95265a062280939caa69b5c"
+    }
+   ],
+   "questaoSha256": "84e4f0ee022e80fc826c268c7469e40fb50719ef6efd995de76b149adaf75ca7",
+   "comentarioSha256": "d60e5f1fbd800554c7b36cd4f5fcbf974bbec6350cfd502ceab224020be3884b"
+  }
  },
  "trauma-1141": {
   "incorretas": {
@@ -21900,17 +21999,44 @@
   "conferido": false
  },
  "trauma-1159": {
+  "conceito": "A afirmação de que a fratura da diáfise deve receber bloqueio dinâmico porque o estático atrasa a consolidação é **errada** segundo o resumo. Como não há gabarito oficial, **B é provável pela bibliografia**.\n\nO capítulo recomenda **bloqueio estático em todas as hastes femorais**, porque nem sempre se consegue julgar a estabilidade no intraoperatório. Na série de Brumback citada, houve 98% de consolidação sem necessidade de dinamização rotineira. Não é correto transformar estabilidade inicial em causa obrigatória de retardo (Rockwood, 10ª ed., cap. 57, “Fresagem, diâmetro, bloqueio e carga”).\n\n**Dinamizar é uma decisão posterior e selecionada.** Na pseudartrose ou no retardo, é preciso avaliar ajuste da haste, calo, estabilidade axial, distração e infecção. O próprio resumo mostra falhas de dinamização; ela não é uma solução superior para qualquer situação.\n\nProteger rotação e comprimento no início e ajustar uma montagem quando a evolução exige são momentos diferentes do tratamento. A possibilidade de retirar bloqueios depois não justifica abrir mão deles de rotina na cirurgia inicial.",
+  "correta": "**B: Errado, provável pela fonte.** A recomendação independente é de bloqueio estático, com boa consolidação, e não de dinâmico obrigatório por suposto atraso provocado pelo estático.",
   "incorretas": {
-   "A": "**Certo seria defender o bloqueio dinâmico em uma fratura estável selecionada.** O erro do enunciado é prescrevê-lo para todas as fraturas com base numa suposta desvantagem geral do estático."
+   "A": "**Generaliza uma causalidade que a fonte não sustenta.** O bloqueio estático mantém comprimento e rotação quando a estabilidade do foco é incerta. Dinamização pode caber em casos selecionados, mas isso não demonstra que o estático aumente o retardo como regra."
   },
-  "conceito": "**O que faz o bloqueio.** Na haste intramedular, parafusos proximais e distais controlam rotação e comprimento. O bloqueio estático restringe encurtamento e rotação em fraturas instáveis, cominutivas ou segmentares. O dinâmico permite certo deslizamento axial e pode promover contato entre fragmentos, desde que o padrão da fratura preserve comprimento e alinhamento.\n\n**Não existe obrigação de dinamizar.** A ideia antiga de que o bloqueio estático causaria inevitavelmente retardo de consolidação não se confirmou como regra. Hastes estaticamente bloqueadas têm altas taxas de união sem dinamização rotineira. Liberar deslizamento em uma fratura incapaz de sustentar a carga pode provocar encurtamento, desvio ou rotação.\n\n**Tratamento sob medida.** Padrão da fratura, estabilidade obtida, contato cortical e evolução do calo orientam a escolha inicial e eventuais revisões. A dinamização pode ser considerada em retardo de consolidação selecionado, depois de excluir infecção, falha mecânica e perda de redução; não é automaticamente superior ao bloqueio estático desde a cirurgia inicial.",
-  "correta": "**Errado: bloqueio estático não impõe maior risco de retardo de união como regra.** A estabilidade rotacional e de comprimento costuma ser prioritária em fraturas diafisárias femorais instáveis.",
   "referencias": [
-   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, p. 1967."
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Fresagem, diâmetro, bloqueio e carga; Pseudartrose, infecção, retirada e quebra da haste."
   ],
+  "conferido": false,
+  "alerta": "Sem gabarito oficial. Provável B: o resumo recomenda bloqueio estático nas hastes femorais e não sustenta o dinâmico obrigatório por maior retardo com o estático. Dinamização fica condicionada à evolução e à estabilidade.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Fresagem, diâmetro, bloqueio e carga",
+      "Pseudartrose, infecção, retirada e quebra da haste"
+     ],
+     "blocos": [
+      "fresagem-diametro-bloqueio-e-carga-1700baf9",
+      "pseudartrose-infeccao-retirada-e-quebra-da-haste-4fb4bece",
+      "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "ac8c5d5e70ef5b14929292ec6afb5ffcfe64f3aaa0aabbf0f68a8cd044abe294"
+    }
+   ],
+   "questaoSha256": "7c6a1770c8e77b2a679c9340056226ec455a02330b960978bae7cf07ddf486fd",
+   "comentarioSha256": "f307c56620b8af125a1cbd15a4fc24ddf9a8d2b1a4e4260c15519396516319af"
+  }
  },
  "trauma-1160": {
   "incorretas": {
@@ -33882,18 +34008,59 @@
   }
  },
  "trauma-1539": {
-  "conceito": "**Dois jeitos de julgar a redução.** Depois de reduzir uma fratura desviada do colo do fêmur, o cirurgião precisa decidir, ainda na radioscopia, se aquela posição pode ser fixada. O capítulo 53 do Rockwood (10ª ed.) descreve dois critérios complementares, um geométrico e outro numérico.\n\nO critério de **LOWELL** olha a forma da junção entre a cabeça e o colo. Quando a cabeça está anatomicamente alinhada, as corticais da cabeça e do colo desenham, nas duas incidências (AP e perfil), **curvas rasas em S ou em S invertido**, como na parte A da figura 53-12. O mau alinhamento se denuncia pelo contrário: uma das curvas se achata e, do lado oposto, surge um **ápice agudo** (parte B da figura). O livro observa que esse sinal costuma ser mais fácil de enxergar na radioscopia intraoperatória do que o alinhamento trabecular exigido pelo índice numérico.\n\nO **índice de alinhamento de GARDEN** mede ângulos nas radiografias pós-operatórias. No AP, o eixo central do sistema trabecular medial da cabeça deve formar com a cortical medial um ângulo normal de 160 graus; no perfil, o eixo trabecular da cabeça fica alinhado com o colo, em 180 graus. Garden relatou bons resultados entre 155 e 180 graus em qualquer incidência; fora dessa faixa, sobem a falha da fixação e a necrose avascular. A banca cobra esse índice com insistência: 160 e 180 no TARO 2013, trabéculas e 160 a 180 no TARO 2021, perfil no TARO 2022, e no TARO 2026 mostrou as imagens de LOWELL e de GARDEN lado a lado.\n\n**O que se aceita.** Na AP, a redução em valgo é preferível à em varo: o valgo é inerentemente mais estável, enquanto um varo de 20 graus se associa a 55% de falha. No perfil, Arnold recomendou menos de 20 graus de angulação posterior. O risco de necrose, porém, é menor com a redução anatômica, e tanto o varo quanto o valgo o aumentam. A causa mais comum de não se obter uma redução estável é a cominuição posterior do colo.\n\n> **Na prova:** curvas em S da cabeça e do colo = LOWELL; ângulo das trabéculas (160 no AP, 180 no perfil) = GARDEN.",
-  "correta": "**B: LOWELL.** A figura reproduz a descrição de Lowell: na redução anatômica, as corticais da cabeça e do colo projetam curvas rasas em S nas duas incidências (A); o mau alinhamento achata uma curva e cria um ápice agudo do lado oposto (B). É o critério de forma, avaliado na radioscopia, que o capítulo recomenda por ser mais fácil de aplicar no intraoperatório do que o alinhamento trabecular. O TARO 2026 cobrou exatamente a distinção entre as imagens de LOWELL e de GARDEN.",
+  "conceito": "As linhas azuis acompanham as **curvas corticais em S da junção cabeça-colo**. Esse é o **sinal de Lowell**, alternativa B. O painel de boa redução mantém transições suaves; o de má redução apresenta mudança do contorno, com achatamento de um lado e angulação do outro.\n\nA finalidade é verificar se cabeça e colo foram realinhados nas incidências. Uma curva contínua ajuda a reconhecer a redução; a quebra do desenho alerta que o encaixe não foi restaurado, mesmo que uma única vista pareça aceitável (Rockwood, 10ª ed., cap. 53, “Como medir a redução”).\n\n**Garden, Pauwels e Baumgaertner medem outras coisas.** Garden compara trabéculas da cabeça e cortical diafisária para avaliar alinhamento; Pauwels mede a inclinação do traço com a horizontal; a distância ponta-ápice de Baumgaertner avalia a posição do parafuso no AP e perfil.\n\nO desenho não apresenta um parafuso cuja distância se possa medir. O reconhecimento deve partir do que as linhas seguem, e não apenas do nome de um critério usado no mesmo segmento do fêmur.",
+  "correta": "**B: Lowell.** É a leitura das curvas em S no encontro cabeça-colo. A suavidade em todas as vistas, em vez de um ângulo isolado, é a referência ilustrada.",
   "incorretas": {
-   "A": "**GARDEN é o índice numérico, não o das curvas.** O índice de alinhamento de Garden mede o ângulo entre o eixo trabecular medial da cabeça e a cortical medial no AP (normal de 160 graus) e entre o eixo trabecular e o colo no perfil (180 graus), com bons resultados entre 155 e 180. Ele usa linhas sobre as trabéculas, não a forma da junção cabeça-colo. A figura não traz ângulo algum: traz contornos.",
-   "C": "**PAUWELS classifica a fratura, não a redução.** A classificação de Pauwels divide as fraturas do colo pelo ângulo que o traço forma com a horizontal (até 30 graus no tipo I, 30 a 50 no II, acima de 50 no III), prevendo mais cisalhamento e mais falha quanto mais vertical o traço. Ela se aplica à radiografia inicial, para planejar o implante, e não diz se a cabeça foi bem reposicionada.",
-   "D": "**BAUMGAERTNER é a distância ponta-ápice do parafuso.** O nome está ligado à TAD, a soma das distâncias entre a ponta do parafuso deslizante e o ápice da cabeça no AP e no perfil, que deve ficar em 25 mm ou menos. No capítulo 53 ela aparece como critério de erro técnico nas fixações de ângulo fixo do colo (TAD acima de 25 mm); é uma medida da posição do implante, feita depois da fixação, não um critério de redução."
+   "A": "**Garden usa outra referência de alinhamento.** Seu índice compara trabéculas compressivas da cabeça com a cortical medial da diáfise, em torno de 160 graus no AP e 180 no perfil. Não é o nome das curvas corticais em S.",
+   "C": "**Pauwels classifica o traço, não a curva após reduzir.** O ângulo é medido entre a fratura e a horizontal; quanto mais vertical, maior o cisalhamento. A imagem pergunta pelo contorno da junção cabeça-colo.",
+   "D": "**Baumgaertner é a distância ponta-ápice.** Soma as distâncias da ponta do parafuso ao ápice da cabeça no AP e no perfil, com alvo até 25 mm no resumo trocantérico. Não há esse implante nem essa medida nas curvas mostradas."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 53 (Femoral Neck Fractures; Griffin, Lane, Moppett e Seymour)"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Fratura desviada no jovem; Classificações.",
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Técnica: redução e parafuso cefálico."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Fratura desviada no jovem",
+      "Classificações"
+     ],
+     "blocos": [
+      "fratura-desviada-no-jovem-38a46d78",
+      "classificacoes-0fec7b18"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "f9f6b2a49d5a2b42763261200e3e8fbc5ee778f73440fd1da96fac23e9d883cc"
+    },
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Técnica: redução e parafuso cefálico"
+     ],
+     "blocos": [
+      "tecnica-reducao-e-parafuso-cefalico-b883438a"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "5c5156c16618f7ec31bfb9aad651d20b7397c096625915812b9bfbf90e8525d9"
+    }
+   ],
+   "questaoSha256": "63b1d32639d76c6bcc54cbd33ddd9e15d2e5da57397f90788e2b57e1c4f286fd",
+   "comentarioSha256": "02eaeb6fd43a78eb533458e6a2c5a14a8c19d4dbbb3e1a1916e18bfd85c9fb8a"
+  }
  },
  "trauma-1540": {
   "conceito": "Uma redução em varo coloca o colo numa situação em que a carga favorece cisalhamento e perda da fixação. O resumo associa **20 graus de varo a cerca de 55% de falha**. É uma estimativa do material citado, não uma probabilidade individual calculável apenas pelo ângulo.\n\nO segundo plano também importa: no perfil, a referência de Arnold é **inclinação posterior menor que 20 graus**. A alternativa C traz o limite de 20; clinicamente, a formulação do resumo pede ficar abaixo dele. Nenhuma radioscopia satisfatória no AP dispensa conferir o perfil (resumo do Rockwood, 10ª ed., cap. 53, “A redução é o que mais importa”).\n\nA combinação ensina por que escolher um implante não compensa uma redução ruim. Reveja esses critérios no resumo da Biblioteca antes de estudar os detalhes da fixação.\n\n**Por que esta questão foi criada.** Combina dois critérios objetivos de qualidade da redução, úteis para reconhecer uma fixação mecanicamente desfavorável em AP e perfil.",
@@ -33934,46 +34101,123 @@
   }
  },
  "trauma-1541": {
-  "conceito": "**Um índice novo para a fratura sem desvio.** As classificações clássicas do colo do fêmur (GARDEN, PAUWELS, AO) são lidas no AP e têm concordância ruim. O capítulo 53 do Rockwood (10ª ed.) destaca uma medida feita no **perfil**, descrita por Palm, que ganhou espaço porque é reprodutível e porque prevê quem vai falhar depois da fixação de uma fratura GARDEN I ou II.\n\n**Como medir.** Desenha-se um círculo sobre a cabeça femoral e marca-se seu centro (c). Traça-se a **linha mediocervical** (MCL), pelo meio do colo até o nível da fratura, e a **linha rádio-colo** (RCL), do centro da cabeça até o ponto em que o círculo cruza a linha mediocervical. O ângulo α entre as duas é a **inclinação posterior** da cabeça (ápice anterior na fratura). Em outra passagem, o capítulo descreve a mesma medida como o ângulo entre uma linha pelo meio do colo até a fratura e uma linha do centro da cabeça até a fratura.\n\n**O corte de 20 graus.** Os estudos se agrupam em torno de 20 graus como indicador de risco de reoperação. Na revisão sistemática de Wang, com 24 estudos prospectivos e mais de 10.000 participantes, a falha do tratamento ocorreu em **24,4%** (170 de 698) dos pacientes com inclinação posterior de 20 graus ou mais, contra **10,9%** (392 de 3.578) dos que tinham menos de 20 graus (risco relativo 2,73). Palm já havia mostrado que, acima de 20 graus na radiografia pré-operatória, a reoperação em 1 ano aumentava significativamente. É uma forma de selecionar, entre as fraturas sem desvio, as que têm mais risco de complicação se forem fixadas.\n\n**Relação com a redução.** O mesmo número de 20 graus aparece como limite de angulação posterior aceitável depois da redução de uma fratura desviada (recomendação de Arnold). A banca cobra a qualidade da redução pelo índice de GARDEN (TARO 2013, 2021, 2022 e 2026); a inclinação posterior é o passo seguinte dessa lógica, aplicado à fratura que ainda não desviou.",
-  "correta": "**D: posterior; 20 graus.** O ângulo α entre a linha mediocervical e a linha do centro da cabeça ao cruzamento do círculo é a medida de Palm para a inclinação posterior nas fraturas GARDEN I e II. Com 20 graus ou mais, a falha após fixação sobe de 10,9% para 24,4% (risco relativo 2,73), e a reoperação em 1 ano aumenta de forma significativa.",
+  "conceito": "A imagem em perfil marca o **posterior tilt**, ou inclinação posterior da cabeça em relação ao colo. O limite associado a maior reoperação após fixação é **20 graus ou mais**, alternativa D.\n\nUma fratura Garden I ou II pode parecer pouco desviada no AP e ainda apresentar inclinação importante no perfil. O resumo descreve a medida entre o eixo do meio do colo e a linha que relaciona o centro da cabeça à fratura; essa informação adicional identifica um grupo de maior risco (Rockwood, 10ª ed., cap. 53, “Inclinação posterior”).\n\nNa revisão citada, a falha foi de 24,4% no grupo acima de 20 graus contra 10,9% abaixo. São resultados de grupos, não previsão individual. A figura ilustra a construção do ângulo; não é necessário presumir, sem medir, que o paciente desenhado tenha exatamente o valor de corte.\n\n**Sem desvio no AP não significa ausência de deformidade no perfil.** É por isso que a segunda incidência pode mudar a avaliação e precisa ser lida antes de escolher o tratamento.",
+  "correta": "**D: posterior; 20 graus.** A direção e o limite precisam estar corretos. O dado é um marcador de maior risco após fixação, e não a afirmação de que todo caso acima dele falhará.",
   "incorretas": {
-   "A": "**Sentido e corte errados.** A cabeça impactada nas fraturas GARDEN I inclina-se para trás (ápice anterior na fratura), e é essa inclinação posterior que Palm mede. Além disso, 10 graus não é o corte: os estudos se agrupam em 20 graus. Uma inclinação de 10 graus fica no grupo de menor risco (10,9% de falha).",
-   "B": "**O corte está certo, o sentido não.** Os 20 graus são de fato o limiar que dobra o risco, mas a medida é de inclinação posterior, não anterior. O capítulo descreve a angulação da fratura no perfil como posterior, com ápice anterior, e é com esse ângulo que a RR de 2,73 foi calculada.",
-   "C": "**O sentido está certo, o corte não.** A inclinação é posterior, mas o limiar é 20 graus, não 10. Um valor de 10 graus não se associa a aumento significativo de reoperação; é só a partir de 20 graus que a falha salta para cerca de um quarto dos casos."
+   "A": "**Troca direção e valor.** O parâmetro apresentado é posterior tilt, e o limite de risco do resumo é 20 graus ou mais. Não se trata de um corte anterior de 10 graus.",
+   "B": "**Acerta o número e troca a deformidade.** A associação prognóstica apresentada é da inclinação posterior, não anterior. Ler apenas o valor perde a relação anatômica da medida.",
+   "C": "**Acerta posterior, mas antecipa o corte.** O resumo destaca 20 graus ou mais, não 10, como limite associado ao aumento de reoperação. A orientação correta não valida um limiar diferente."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 53 (Femoral Neck Fractures; Griffin, Lane, Moppett e Seymour)"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Classificações; Diagnóstico por imagem."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Classificações",
+      "Diagnóstico por imagem"
+     ],
+     "blocos": [
+      "classificacoes-d27013fb",
+      "diagnostico-por-imagem-95ee383c"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "da04a85d3f5e43ad0e47bd8874cc283cd3bfa275b653ec1297fa3e4fe1a39987"
+    }
+   ],
+   "questaoSha256": "de3c997d3f77a89211eab879ea758e2fec8a225e469de574921b2f84ff7d9c12",
+   "comentarioSha256": "6454eea2918fb8085d4fc4e98b46b8c9ef116fd077a7f5581720d122df2b94b0"
+  }
  },
  "trauma-1542": {
-  "conceito": "**A classificação mais usada do colo.** Descrita por Garden em 1961, a classificação divide as fraturas intracapsulares do colo em quatro tipos pelo **grau de desvio**, julgado só na radiografia AP pela relação entre as linhas trabeculares da cabeça e as do acetábulo. O capítulo 53 do Rockwood (10ª ed.) a descreve assim:\n\n- **Tipo I:** fratura subcapital **incompleta, impactada em valgo**, com o calcar medial íntegro. As trabéculas da cabeça formam um ângulo com as do acetábulo. A legenda da figura 53-4 acrescenta que o tipo I pode ser incompleto, mas muito mais tipicamente está impactado em valgo e **retroversão**.\n- **Tipo II:** fratura **completa, sem desvio**; as trabéculas da cabeça continuam colineares com as do acetábulo e com as do colo distal à fratura. É rara: numa série multicêntrica de 1.503 fraturas, só 19 (1,2%) foram tipo II.\n- **Tipo III:** fratura **incompletamente desviada**, com angulação marcada das linhas trabeculares e pouca ou nenhuma translação proximal da diáfise.\n- **Tipo IV:** fratura **completamente desviada**; a diáfise sobe, a cabeça fica livre para se realinhar no acetábulo e as trabéculas de compressão da cabeça e do acetábulo voltam a ficar paralelas.\n\n**Por que ela é criticada.** A concordância entre observadores nos quatro tipos foi de apenas 22% no estudo de Frandsen. Os cirurgiões concordam bastante em separar **sem desvio (I e II)** de **com desvio (III e IV)**, mas não em subdividir. Como o desfecho das fraturas sem desvio independe do tipo I ou II, e as desviadas vão em geral para artroplastia independentemente do tipo III ou IV, o capítulo conclui que a divisão útil é desviada contra não desviada.\n\n**O que a banca pergunta.** O TEOT 2023 descreveu a posição da cabeça no tipo III (varo e extensão); o capítulo descreve com mais detalhe o tipo I, impactado em valgo e retroversão, que é a imagem desta questão.",
-  "correta": "**A: I.** A fratura subcapital incompleta, impactada, com as trabéculas da cabeça anguladas em relação às do acetábulo e o calcar medial íntegro, é a descrição do tipo I de Garden. É a fratura impactada em valgo e retroversão da figura 53-4A, com a seta sobre a área de impacção; no esquema ao lado, as linhas trabeculares da cabeça inclinam-se em relação ao colo.",
+  "conceito": "A fratura está **impactada e incompleta no esquema**, com angulação das trabéculas da cabeça, padrão de **Garden I**, alternativa A. O fragmento não aparece totalmente separado e livre como numa Garden IV.\n\nGarden usa o AP e a relação entre as trabéculas compressivas da cabeça e do acetábulo. O tipo I é incompleto ou, mais tipicamente, impactado em valgo; o II é completo sem desvio; o III, completo parcialmente desviado, com cabeça em varo; e o IV, totalmente desviado (Rockwood, 10ª ed., cap. 53, “Garden”).\n\n**Impactação não é sinônimo de toda fratura sem desvio.** No tipo II, o traço é completo e as trabéculas continuam alinhadas com colo e acetábulo. A angulação e a impacção vistas aqui ajudam a separar os dois tipos.\n\nA classificação em quatro grupos tem concordância limitada entre observadores; a distinção prática entre I/II e III/IV é mais reprodutível. Ainda assim, o perfil deve ser avaliado: chamar Garden I no AP não encerra a análise da estabilidade.",
+  "correta": "**A: Garden I.** A impacção e a angulação trabecular do esquema correspondem ao tipo incompleto/impactado, sem o deslocamento completo dos grupos mais altos.",
   "incorretas": {
-   "B": "**O tipo II é completo e sem desvio.** No tipo II o traço atravessa todo o colo, mas as trabéculas da cabeça continuam colineares com as do acetábulo e com as do colo; não há impacção nem angulação. Além de rara (1,2% das fraturas), ela não produz a angulação trabecular que a imagem mostra.",
-   "C": "**O tipo III já é uma fratura desviada.** Nele as linhas trabeculares estão marcadamente anguladas porque a cabeça se desviou (incompletamente), não porque se impactou em valgo. A diáfise quase não translada. Esse é o tipo cuja posição da cabeça o TEOT 2023 cobrou; a imagem da questão é de uma fratura incompleta e impactada, o oposto de desviada.",
-   "D": "**O tipo IV é o desvio completo.** A diáfise translada proximalmente e a cabeça, solta, realinha suas trabéculas de compressão com as do acetábulo. Paradoxalmente, no tipo IV as trabéculas da cabeça voltam a ficar paralelas às do acetábulo; a angulação trabecular com traço incompleto da imagem é do tipo I."
+   "B": "**Garden II é completo sem desvio.** As trabéculas permanecem alinhadas com colo e acetábulo; não é a definição da fratura impactada e angulada representada.",
+   "C": "**Garden III é completo e parcialmente desviado.** A cabeça retida pela dobradiça posterior tende a varo, com perda de alinhamento. Não corresponde ao padrão impactado em valgo do tipo I.",
+   "D": "**Garden IV perdeu completamente o contato.** A cabeça livre pode realinhar as trabéculas com o acetábulo, mas o traço está totalmente desviado. Não é o que o esquema de impacção mostra."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 53 (Femoral Neck Fractures; Griffin, Lane, Moppett e Seymour)"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Classificações."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Classificações"
+     ],
+     "blocos": [
+      "classificacoes-21223eb4",
+      "classificacoes-12519f03",
+      "classificacoes-113a1994",
+      "classificacoes-1854670c",
+      "classificacoes-6479ca47",
+      "classificacoes-b5e602a1",
+      "classificacoes-d27013fb"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "c4fa47594d8b5536283c47d0a2f9c67dab6880ceedfd2a57383f4028263e2c8b"
+    }
+   ],
+   "questaoSha256": "21826cae3e70e4fdb5b4ddc2da6295ea1246a756aca3803a0869bc4e1b2a4366",
+   "comentarioSha256": "317aa12c5af68a8fa2d372c244fe64392ab3194a8ecfb99d81482fe0c284060c"
+  }
  },
  "trauma-1543": {
-  "conceito": "**Uma classificação pelo plano da fratura.** Pauwels propôs classificar as fraturas do colo do fêmur não pelo desvio, mas pela **inclinação do traço em relação à horizontal** (figura 53-5). Três tipos: **I**, com ângulo de até 30 graus; **II**, entre 30 e 50 graus; **III**, acima de 50 graus. A ideia é biomecânica: quanto mais vertical o traço, mais o peso corporal gera cisalhamento no foco, maior a instabilidade e mais prováveis a falha da fixação e a pseudartrose. O capítulo 53 do Rockwood (10ª ed.) lembra que uma prova sem ano da banca cobrou justamente que o ângulo é com a horizontal (a linha vertical foi o distrator) e que o tipo 3 é comum entre os mais jovens.\n\n**Por que ela vale mais no jovem.** No idoso os traços verticais são raros; a maioria das fraturas é próxima da transversa. No adulto jovem, a fratura costuma vir de trauma de alta energia, e os traços verticais são comuns. Duas séries de PAUWELS III tinham pacientes com menos de 50 anos, bem abaixo da média da população com fratura do quadril, e Wang mostrou que pseudartrose e necrose aumentam com o grau de Pauwels nos jovens.\n\n**Limitações.** A concordância entre observadores foi ruim (0,31 no estudo de van Embden, com dez cirurgiões e 100 radiografias), e os autores daquele estudo recomendaram não usar a classificação. Uma modificação da medida (linha vertical pela diáfise e perpendicular no nível da cabeça) melhorou a concordância para 0,68 e 0,63. Mir e Collinge refinaram a leitura chamando atenção para a localização do ápice da fratura no calcar medial, onde se apoia a placa antideslizamento.\n\n**Consequência prática.** No PAUWELS III do jovem, os resultados com fixação clássica são ruins. O capítulo cita menos pseudartrose com dispositivo de ângulo fixo (8%) do que com dispositivos deslizantes (19%) e menos falha com a placa antideslizamento medial (29% contra 49%).",
-  "correta": "**D: III; jovens.** Um traço a 70 graus da horizontal ultrapassa o corte de 50 graus e é PAUWELS III. O capítulo afirma que as fraturas de plano vertical são raras nos idosos e comuns nos jovens vítimas de alta energia; as séries de PAUWELS III reunem pacientes com menos de 50 anos. É o mesmo fato que a banca cobrou numa prova sem ano, agora pela imagem.",
+  "conceito": "O traço desenhado forma **70 graus com a horizontal**. Isso é **Pauwels III**, um padrão mais comum no **jovem com trauma de alta energia**, alternativa D.\n\nA classificação usa a inclinação do traço: I até 30 graus, II entre 30 e 50, III acima de 50. Quanto mais vertical, maior o componente de cisalhamento e a dificuldade de manter a redução, com mais falha de fixação e pseudartrose. O problema mecânico cresce mesmo sem trocar a carga aplicada (Rockwood, 10ª ed., cap. 53, “Pauwels”).\n\n**A referência é a horizontal, não a diáfise.** O desenho já fornece esse ângulo; comparar 70 com os limites resolve o tipo. O grupo etário vem da epidemiologia descrita, e não pode ser inferido pela silhueta do esquema.\n\nO resumo ressalta a baixa reprodutibilidade e desaconselha uso rotineiro no idoso, em quem o traço tão vertical é menos comum. A classificação tem utilidade especial para entender o desafio mecânico do colo no jovem.",
+  "correta": "**D: III; jovens.** Setenta supera 50 graus e entra no tipo III. A associação mais comum ao jovem de alta energia completa o par.",
   "incorretas": {
-   "A": "**O tipo I é o traço mais horizontal.** O tipo I vai até 30 graus com a horizontal: um traço quase transverso, com pouco cisalhamento, que é o padrão habitual do idoso. Um traço a 70 graus está muito longe desse limite.",
-   "B": "**O tipo II fica entre 30 e 50 graus.** É a faixa intermediária, e 70 graus a ultrapassa. A associação com idosos até faz sentido para traços menos verticais, mas o tipo da imagem não é o II.",
-   "C": "**O tipo está certo; o grupo etário, não.** Acima de 50 graus é PAUWELS III, mas esse padrão vertical é raro no idoso, cujas fraturas se aproximam da transversa. O traço vertical de alta energia é típico do jovem; é por isso que o capítulo diz que a classificação é mais relevante para o paciente jovem."
+   "A": "**Tipo I é o traço mais horizontal.** Seu limite é até 30 graus, muito abaixo dos 70 desenhados. O grupo idoso também não é o destaque do tipo vertical no resumo.",
+   "B": "**Tipo II termina em 50 graus.** O ângulo dado já ultrapassou essa faixa. Não se deve chamar um traço muito vertical de intermediário apenas por ocorrer no colo.",
+   "C": "**Acerta o tipo e troca a população típica.** Pauwels III pode ocorrer em diferentes pacientes, mas o capítulo o destaca no jovem com alta energia, e não como o padrão mais comum do idoso."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 53 (Femoral Neck Fractures; Griffin, Lane, Moppett e Seymour)"
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Classificações."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Classificações"
+     ],
+     "blocos": [
+      "classificacoes-0fec7b18"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "295fe647e11ba210f2d9cc7cc7ad365837a8dfcf443e78563e5e430746e76064"
+    }
+   ],
+   "questaoSha256": "b2826170b78e11b2d4445dfc2f00c19d93080fa12087c6ddabb5bc714cadadcd",
+   "comentarioSha256": "542a8f80c059ccae739551bbd6e2499e5741a179f1ef34d9f57ca2911ee55be7"
+  }
  },
  "trauma-1544": {
   "conceito": "No Pauwels III do jovem, o traço é mais vertical e a carga favorece **cisalhamento**. Imagine os dois fragmentos tentando deslizar um em relação ao outro: aproximá-los não basta se a montagem não sustentar essa tendência. A placa medial de Mir e Collinge acrescenta um **anteparo no ápice medial da fratura**, aplicado pela **via de Smith-Petersen**.\n\nA classificação de Pauwels mede o traço em relação à horizontal: no tipo III, o ângulo é maior que 50 graus. A verticalidade explica o problema mecânico, mas a classificação tem reprodutibilidade limitada. Não se deve escolher uma técnica apenas pelo rótulo sem avaliar a redução e o foco. No jovem, o objetivo continua preservar a cabeça com redução anatômica e fixação estável (resumo do Rockwood, 10ª ed., cap. 53, “Pauwels” e “Fratura desviada no jovem”).\n\nO nome antideslizamento descreve o papel da placa: oferecer suporte justamente onde o fragmento tenderia a escapar. A técnica citada usa placa de 3,5 mm, com três ou quatro furos, sobre o ápice medial. Por isso o acesso tem de permitir alcançar esse ponto e trabalhar a redução. O resumo especifica a via anterior de Smith-Petersen; o mesmo capítulo a considera quando uma redução fechada não é satisfatória. A via é escolhida em função do trabalho necessário no foco, não apenas por ser um acesso conhecido ao quadril.\n\nA placa adicional tampouco substitui boa redução. O capítulo mostra que erros técnicos aumentam falha, incluindo redução inadequada e posicionamento desfavorável dos elementos de fixação. Acrescentar material a fragmentos mal posicionados não recria a geometria que deveria ter sido recuperada antes.\n\nNa série de 478 jovens citada pelo resumo, a falha caiu de 49% para 29% com a placa medial. É um resultado relevante de série, mas não uma garantia para um paciente nem prova de que toda fratura do colo precise dessa placa. O valor didático é relacionar **traço vertical, deslizamento, suporte medial e acesso anterior**. A seção de implantes no resumo da Biblioteca reúne esses elementos.\n\n**Por que esta questão foi criada.** O acesso só faz sentido quando se entende onde a placa atua e qual força ela procura conter; memorizar Smith-Petersen sem visualizar o anteparo medial perde o fundamento da técnica.",
@@ -34889,18 +35133,49 @@
   }
  },
  "trauma-1568": {
-  "conceito": "**A classificação que ficou.** Depois de Boyd, Evans e tantas outras, as fraturas trocantéricas são hoje classificadas pela AO/OTA em três grupos amplos, **31-A1, A2 e A3**, os únicos com concordância aceitável entre observadores e com utilidade para decidir o tratamento; as subdivisões de cada grupo são pouco reprodutíveis e não mudam a conduta. O capítulo 54 do Rockwood (10ª ed.) descreve:\n\n- **A1:** dois fragmentos, traço pelos trocanteres, **parede lateral íntegra**, cortical medial interrompida num só ponto; o trocanter menor pode estar preso a um dos fragmentos. Relativamente estável.\n- **A2:** cominuta; o traço principal passa pelos trocanteres, a parede lateral está essencialmente íntegra, mas há um ou dois fragmentos coronais no nível do trocanter maior (posterior e/ou anterior) e o **trocanter menor está solto**. Três ou quatro partes. É o tipo mais frequente e é instável.\n- **A3:** **traço reverso ou transverso, do trocanter menor à cortical lateral**. Na forma simples é a fratura de obliquidade reversa; na forma cominuta tem o padrão do A2 mais a extensão oblíqua até a cortical lateral, o que deixa a **parede lateral instável**. Pode se estender à região subtrocantérica (figura 54-3A).\n\n**Por que o A3 é o problema.** Com a perda do apoio lateral, os adutores puxam o fêmur para medial (figura 54-11A). As consequências da medialização são menos contato ósseo, consolidação mais lenta, mais complicações e perda de função pelo offset perdido. Com o parafuso deslizante, o parafuso desliza até o fim do cano e a diáfise medializa (figura 54-12, com 75% de medialização); por isso o A3 fixado com DHS precisa de placa de estabilização trocantérica, e mesmo assim os resultados são piores.\n\n**O implante.** A haste cefalomedular resiste à medialização apoiando-se no colo superior (figura 54-11B), reduz o colapso e tem menos reoperação nas fraturas instáveis. A AAOS recomenda fortemente o dispositivo cefalomedular nas A2 e nas A3 reversas e transversas; o autor prefere a haste no A3 e no A2 e aceita o parafuso deslizante de dois furos no A1. A placa de 95 graus e a placa bloqueada proximal são fixações estáticas, com alta falha, e não se recomendam. O TARO 2010 cobrou a haste cefalomedular bloqueada para o TRONZO V, que corresponde à obliquidade reversa, e o TARO 2008 a contraindicação do parafuso deslizante nessa fratura.",
-  "correta": "**D: 31-A3; haste cefalomedular.** O traço que parte do trocanter menor e segue até a cortical lateral é a fratura de obliquidade reversa, 31-A3, que perde o apoio da parede lateral e medializa pela ação dos adutores. A legenda da figura 54-11 e a seção de implantes dizem que a haste cefalomedular resiste à medialização e é a recomendação atual para esse tipo; a AAOS a recomenda nas A3.",
+  "conceito": "O traço vai do **trocânter menor até a cortical lateral**, interrompendo a parede lateral: é **AO/OTA 31-A3**. Para esse padrão, o resumo recomenda **haste cefalomedular**, alternativa D.\n\nA parede lateral funciona como um batente quando o parafuso deslizante permite a impactação. Se ela não contém a fratura, os adutores podem medializar a diáfise, reduzindo contato e offset. A haste, mais próxima do eixo do fêmur e com braço de alavanca menor, limita melhor esse colapso e a medialização nas instáveis (Rockwood, 10ª ed., cap. 54, “Classificação” e “Escolha do implante”).\n\n**A2 não é sinônimo de qualquer fratura com mais de um fragmento.** Nesse grupo, a parede lateral está essencialmente íntegra, embora haja fragmentação trocantérica. Na A3, o traço reverso ou transverso alcança a cortical lateral, como no padrão mostrado.\n\nReconhecer a parede muda a escolha do implante, mas não dispensa reduzir sem varo e posicionar corretamente o parafuso cefálico. A haste não compensa uma redução inadequada.",
+  "correta": "**D: 31-A3; haste cefalomedular.** Une a morfologia com ruptura lateral à recomendação do capítulo para esse grupo instável.",
   "incorretas": {
-   "A": "**Nem o tipo nem o implante.** O A2 é a fratura cominuta com trocanter menor solto e parede lateral essencialmente íntegra, cujo traço principal passa pelos trocanteres; o traço do trocanter menor à cortical lateral define o A3. E o parafuso deslizante isolado é o implante que mais medializa no A3.",
-   "B": "**O implante está certo, o tipo não.** A haste cefalomedular é de fato a escolha nas fraturas instáveis, inclusive no A2 pela preferência do autor e da AAOS; mas a radiografia mostra o traço reverso até a cortical lateral, que é o A3, não a fratura cominuta com parede lateral íntegra.",
-   "C": "**O tipo está certo, o implante não.** No A3, o parafuso deslizante permite deslizamento excessivo e medialização (10% em média contra 2% com a haste; acima de 50% em 7% contra 1%) e só é aceitável com placa de estabilização trocantérica. A recomendação atual é a haste cefalomedular."
+   "A": "**Erra o padrão e escolhe um implante sem o batente lateral necessário.** A2 mantém a parede essencialmente íntegra; o traço mostrado a rompe. O DHS é a escolha típica da A1 estável, não a preferência da A3.",
+   "B": "**O implante pode ser apropriado às instáveis, mas a classificação está trocada.** A haste é recomendada também na A2; isso não transforma em A2 o traço reverso ou transverso com extensão lateral da A3.",
+   "C": "**Acerta A3 e perde a vantagem mecânica da haste.** O parafuso deslizante depende da parede lateral para conter impactação. Com ela rompida, a medialização e o colapso são maiores, e a preferência apresentada é a haste."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 54 (Trochanteric Hip Fractures; Heetveld e Flikweert)"
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Classificação: AO 31A e a parede lateral; Escolha do implante; Técnica: redução e parafuso cefálico."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Classificação: AO 31A e a parede lateral",
+      "Escolha do implante",
+      "Técnica: redução e parafuso cefálico"
+     ],
+     "blocos": [
+      "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+      "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+      "classificacao-ao-31a-e-a-parede-lateral-785664da",
+      "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+      "escolha-do-implante-99aab52e",
+      "escolha-do-implante-ff846328",
+      "tecnica-reducao-e-parafuso-cefalico-f076d68d"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "10609cb8f92094799715b91088ae683be7f8051187a4ff163528afb0c54e366d"
+    }
+   ],
+   "questaoSha256": "404cf0c5c5e18779991fe404043b61d307478d0578066f2ad8592bf1adb0926d",
+   "comentarioSha256": "4bb238fb49ac78136f244780c7e7a14cd28564181adbf0fb12d8e96c956840bd"
+  }
  },
  "trauma-1569": {
   "conceito": "Uma fratura em **duas partes com parede lateral íntegra** é a **31A1**. O tipo mais frequente é a **31A2**, multifragmentária. A alternativa A reúne essas duas informações sem confundir simplicidade com frequência.\n\nA classificação AO/OTA ajuda a prever o comportamento mecânico da região trocantérica. A1 tem traço pelos trocânteres, cortical medial interrompida num único ponto e parede lateral íntegra: é relativamente estável. Na A2, o trocânter menor se solta e pode haver fragmentos do maior, formando três ou quatro partes; o capítulo a considera instável e a descreve como a mais frequente (resumo do Rockwood, 10ª ed., cap. 54, “Classificação: AO 31A e a parede lateral”).\n\nA3 é o traço reverso ou transverso que rompe a cortical lateral. Essa perda muda a contenção da diáfise e pode fazê-la comportar-se como fratura subtrocantérica. Não é apenas contar um fragmento a mais: a integridade da parede e a orientação do traço alteram o controle que o implante precisa oferecer.\n\n| Grupo | Característica decisiva no resumo |\n| --- | --- |\n| A1 | duas partes, parede lateral íntegra, relativamente estável |\n| A2 | multifragmentária, trocânter menor separado, mais frequente |\n| A3 | reversa ou transversa com parede lateral rompida |\n\nNo algoritmo dos autores, DHS é escolhido para A1 e haste cefalomedular para A2/A3. A classificação orienta a decisão, mas ainda é necessário avaliar partes moles, osso e redução. Veja no resumo da Biblioteca a ligação entre o código e a função de batente da parede, para não tratar os grupos apenas como nomes.\n\n**Por que esta questão foi criada.** Compara o padrão simples com o mais frequente, duas informações próximas que não são equivalentes.",
@@ -35228,18 +35503,47 @@
   }
  },
  "trauma-1578": {
-  "conceito": "**O que a imagem mostra.** A figura 54-12 do capítulo 54 do Rockwood (10ª ed.) é uma fratura **transversa (A3)** tratada com parafuso deslizante: houve deslizamento excessivo do parafuso e o fêmur **medializou 75%**. O parafuso media 80 mm e foi usada uma placa de cano curto. A legenda conclui que a haste cefalomedular reduz a medialização e é agora a recomendação para esse tipo de fratura. Note que o parafuso continua dentro da cabeça: não houve cut-out, e sim o colapso lateral do fragmento proximal sobre a placa, com a diáfise escapando para medial.\n\n**Por que isso acontece.** No A3 não há parede lateral para apoiar o fragmento proximal; os adutores puxam a diáfise para medial e o fragmento proximal desliza pelo cano até o fim. Nas fraturas com perda de apoio lateral, o parafuso é inserido praticamente no próprio foco. Se o deslizamento se completa antes da consolidação, a fixação falha: o parafuso mal posicionado corta a cabeça (figura 54-33) e o perfeitamente posicionado falha no lado distal, com a placa se soltando do fêmur. A medialização reduz o contato ósseo, atrasa a consolidação e tira offset, com perda de função acima de 50% e mais dor acima de 5 mm. O TEOT 2021 cobrou essa cadeia (fragilidade da parede lateral, medialização, diminuição do offset).\n\n**As alternativas de implante.** O parafuso deslizante no A3 só é aceitável com **placa de estabilização trocantérica** (figura 54-16), que resiste à medialização; a placa de Medoff, com deslizamento em dois eixos, é outra modificação com literatura favorável mas uso limitado. A **placa-lâmina ou condilar de 95 graus** (figura 54-18) dá fixação rígida, sem colapso controlado, e tem risco de falha marcadamente maior do que a haste ou o parafuso deslizante: não se recomenda. A placa bloqueada proximal também é estática e falha muito. A **haste cefalomedular** resiste à medialização apoiando-se no colo superior (figura 54-11B), teve medialização média de 2% contra 10% do DHS nas A3 e é a recomendação da AAOS e do autor para A2 e A3. O TARO 2008 e o TARO 2006 já cobravam a inadequação do parafuso deslizante na obliquidade reversa.",
-  "correta": "**D: medialização do fêmur; haste cefalomedular.** A legenda da figura 54-12 descreve fratura transversa A3 com parafuso deslizante, deslizamento excessivo e 75% de medialização do fêmur, e afirma que a haste cefalomedular reduz a medialização e é agora recomendada nesse tipo. O parafuso permanece na cabeça; a falha é a medialização, não o cut-out.",
+  "conceito": "A imagem mostra **medialização da diáfise** após fixação de uma transversa trocantérica com DHS. O parafuso permanece na cabeça; o problema principal apontado é a perda do batente lateral e do apoio entre os segmentos. Para esse padrão A3, a recomendação atual do resumo é **haste cefalomedular**, alternativa D.\n\nSem parede lateral capaz de conter a impactação, o deslizamento deixa de ser controlado e os adutores trazem a diáfise para medial. Perde-se offset e contato ósseo, com piora funcional e maior dificuldade de consolidação. O aspecto é diferente do parafuso cortando a cabeça para cima no cut-out (Rockwood, 10ª ed., cap. 54).\n\n**Uma placa rígida de 95 graus não é a solução preferida desse mecanismo.** O capítulo relata falha elevada dessas montagens nas A3 e sua substituição pela haste. A posição central da haste diminui o braço de alavanca e contém melhor a medialização.\n\nA imagem de falha serve para entender por que classificar o traço e avaliar a parede antes de escolher o implante. Não permite afirmar sozinho consolidação, pseudartrose ou sintomas do paciente.",
+  "correta": "**D: medialização do fêmur; haste cefalomedular.** A mudança de posição da diáfise é o achado da figura, e a haste é a preferência para a transversa/reversa com parede lateral insuficiente.",
   "incorretas": {
-   "A": "**Não é cut-out, e a placa de 95 graus não se recomenda.** O parafuso segue dentro da cabeça; o que falhou foi o apoio lateral, com a diáfise medializada. E a placa de 95 graus é fixação estática, com falha marcadamente maior do que a haste e o DHS, substituída pelos implantes cefalomedulares.",
-   "B": "**O implante está certo, a complicação não.** A haste é de fato a recomendação atual para o A3, mas a radiografia mostra medialização por deslizamento excessivo, com o parafuso ainda na cabeça. O cut-out seria a saída do parafuso pela cabeça, em geral por colapso em varo com parafuso superior.",
-   "C": "**A complicação está certa, o implante não.** A medialização é a falha típica do DHS no A3, mas a resposta moderna é a haste cefalomedular; a placa-lâmina de 95 graus foi abandonada pela alta taxa de falha."
+   "A": "**Nomeia outra falha e propõe uma montagem desfavorável à A3.** Cut-out é corte superior da cabeça durante colapso em varo. A placa de 95 graus não oferece a vantagem da haste e teve falha elevada nesse grupo.",
+   "B": "**Acerta a preferência do implante, mas erra o achado principal.** A figura destaca a diáfise medializada em relação ao segmento proximal. Não é necessário chamar toda falha com DHS de cut-out.",
+   "C": "**Acerta a deformidade e erra a solução preferida.** A medialização está demonstrada, mas o capítulo descreve alta falha das placas rígidas de 95 graus nas A3. A haste é a recomendação atual apresentada."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 54 (Trochanteric Hip Fractures; Heetveld e Flikweert)"
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Classificação: AO 31A e a parede lateral; Escolha do implante; Complicações."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Classificação: AO 31A e a parede lateral",
+      "Escolha do implante",
+      "Complicações"
+     ],
+     "blocos": [
+      "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+      "classificacao-ao-31a-e-a-parede-lateral-785664da",
+      "escolha-do-implante-5f08d4c8",
+      "escolha-do-implante-99aab52e",
+      "complicacoes-41fe2824"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "a2c208a644a80ca3c8eeab32b8b5e9b33f44d193bb196e438b8c723f75edbd22"
+    }
+   ],
+   "questaoSha256": "58affc3364b8081c0947fd942fa86b91e6671e1a5d6c6813c131ef7f6f4d9c65",
+   "comentarioSha256": "00e030b4662bc0b39fae43d654efbc30bad207879808d33bd86ada3cea1942c5"
+  }
  },
  "trauma-1579": {
   "conceito": "O benefício da haste não foi igual em todos os padrões. No registro norueguês de **17.341 fraturas**, a reoperação com haste cefalomedular foi **igual nas A1 e menor nas A2/A3** em relação ao parafuso deslizante. É a alternativa B.\n\nA estratificação faz sentido mecânico: A1 é relativamente estável, enquanto A2/A3 exigem maior controle do colapso e da medialização. A haste fica no eixo femoral, com braço de alavanca menor que uma placa lateral, e o capítulo descreve menos colapso e medialização nas instáveis. Isso ajuda a entender por que um resultado global pode esconder diferenças entre subgrupos (resumo do Rockwood, 10ª ed., cap. 54, “Escolha do implante”).\n\nO dado continua sendo de um **registro**, não uma garantia de resultado para qualquer paciente. “Igual” reproduz a comparação relatada nas A1 e não demonstra que todo aspecto de função, complicação e custo seja idêntico. Da mesma forma, menos reoperação nas instáveis não significa ausência de falha ou que a haste compense uma redução ruim.\n\nO capítulo também diferencia recomendações: AAOS aceita DHS ou haste nas estáveis e favorece haste nas A2/A3; NICE dá maior espaço ao implante extramedular nas A1/A2 em sua análise de custo. O algoritmo dos autores resume DHS para A1 e haste para A2/A3. Estudo, diretriz e preferência dos autores devem ser reconhecidos como informações relacionadas, mas não idênticas.\n\nNo resumo da Biblioteca, confira a comparação por tipo antes de decorar um implante como vencedor universal. A escolha deve acompanhar estabilidade, desenho da fratura e qualidade da execução.\n\n**Por que esta questão foi criada.** Testa a leitura por subgrupos: ausência de vantagem relatada nas estáveis não exclui menor reoperação nas instáveis.",
@@ -35530,46 +35834,122 @@
   }
  },
  "trauma-1586": {
-  "conceito": "**A cadeia da falha.** A figura 54-24 do capítulo 54 do Rockwood (10ª ed.) ilustra uma redução inadequada: a fratura foi fixada **em varo**, o que forçou o parafuso cefálico para a **parte superior da cabeça**; a fratura inclina ainda mais para o varo e ocorre o **cut-out**, a saída do parafuso pela cabeça. O capítulo repete a regra: a fratura nunca deve ser fixada em varo, posição mecanicamente instável em que o foco continua a inclinar até o implante cortar o osso. A redução correta (anatômica ou em leve valgo no AP, 170 graus no índice de Garden; linha reta no perfil) é pré-requisito para a posição correta do parafuso.\n\n**Por que o parafuso sobe.** Com o colo em varo, o guia angular de 135 graus, apoiado na cortical lateral, aponta para a parte superior da cabeça; a única maneira de colocar o parafuso baixo seria reduzir primeiro. A posição superior no AP é a que mais corta, e a posição periférica nunca deve ser aceita. O índice que resume isso é a distância ponta-ápice, que deve ficar em 25 mm ou menos; o varo e o parafuso alto a aumentam.\n\n**Cut-out contra cut-in.** O **cut-out** é o colapso lento em varo do fragmento cabeça-colo com saída do implante, a complicação mais relatada da fixação (3% a 5% nos estudos atuais), ligada a redução inadequada e má posição do parafuso, como a banca cobrou numa prova sem ano. O **cut-in** é fenômeno mais recente, descrito com hastes: a migração craniomedial e a penetração da cabeça pelo parafuso que não deslizou, por travamento ou osteoporose, com incidência de 2% (figura 54-36). O TARO 2011 cobrou, no colo, que o varo é a redução de maior risco.\n\n**Tratamento do cut-out.** Depende dos sintomas. Com sintomas mínimos, redução aceitável e implante bem posicionado, a fratura pode ser deixada consolidar. Nos casos graves, com reinternação, revisão: nova fixação se a posição original era ruim e sobra osso na cabeça; caso contrário, artroplastia, hemiartroplastia se o acetábulo está pouco lesado. Quando o colapso em varo ou o encurtamento soltam a placa do fêmur, as opções são conversão a haste cefalomedular, placa mais longa ou artroplastia cimentada, se houver estoque ósseo.",
-  "correta": "**D: varo; cut-out.** A legenda da figura 54-24 descreve a redução inadequada em que o parafuso é forçado a ficar na parte superior da cabeça, a fratura inclina mais para o varo e ocorre o cut-out. O capítulo afirma que a fratura nunca deve ser fixada em varo, posição mecanicamente instável em que o implante corta a cabeça.",
+  "conceito": "A montagem mostra o segmento cabeça-colo em **varo**, com o parafuso na porção superior da cabeça. O par esperado é **varo e cut-out**, alternativa D. A figura não deve ser lida como um exemplo de valgo protetor.\n\nNa redução em varo, a carga tende a continuar fechando a deformidade e o parafuso corta a cabeça superiormente. A posição alta piora essa combinação. O resumo recomenda redução anatômica ou em valgo leve e fio baixo-central no AP, central no perfil: a redução precisa permitir a posição correta do implante (Rockwood, 10ª ed., cap. 54, “Redução” e “Cut-out”).\n\n**Cut-out e cut-in não são apenas duas palavras para penetração.** No primeiro, há colapso em varo com corte superior; no segundo, migração craniomedial do parafuso que não desliza lateralmente. A imagem e o enunciado pedem o primeiro mecanismo.\n\nA radiografia mostra fatores mecânicos desfavoráveis. Não se deve inferir dela sintomas, tempo de pós-operatório ou consolidação; a complicação é a esperada para a combinação apresentada.",
+  "correta": "**D: varo; cut-out.** A deformidade e o parafuso alto criam o mecanismo de corte superior da cabeça. Identificar o risco não significa afirmar que a imagem isolada demonstre todos os desfechos posteriores.",
   "incorretas": {
-   "A": "**Nem a deformidade nem a complicação.** O leve valgo é a redução desejada, com menor risco de cut-out; a imagem mostra o oposto. E o cut-in é a penetração central do parafuso que não deslizou, fenômeno das hastes, não a consequência do parafuso superior em varo.",
-   "B": "**A complicação está certa, a deformidade não.** O cut-out é o desfecho, mas a posição que o produz é o varo, que força o parafuso para cima. O valgo leve, ao contrário, se associa ao menor cut-out e a menos encurtamento.",
-   "C": "**A deformidade está certa, a complicação não.** O varo é a redução inaceitável da imagem, mas a sua consequência com parafuso superior é o cut-out (saída do parafuso pela cabeça). O cut-in é a migração craniomedial com penetração central por travamento do parafuso, descrita com hastes e com incidência de 2%."
+   "A": "**Troca deformidade e mecanismo.** A montagem não mostra valgo leve; mostra varo. Cut-in corresponde à migração craniomedial sem deslizamento adequado, diferente do corte superior favorecido aqui.",
+   "B": "**Acerta o nome da falha e erra a redução.** Cut-out combina com o parafuso alto e o colapso em varo. O capítulo apresenta o valgo leve como redução mais favorável, não como a deformidade da figura.",
+   "C": "**Acerta varo, mas troca a falha esperada.** O varo com parafuso alto favorece cut-out. Cut-in descreve o avanço craniomedial do implante que deixou de deslizar lateralmente."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 54 (Trochanteric Hip Fractures; Heetveld e Flikweert)"
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Técnica: redução e parafuso cefálico; Complicações."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Técnica: redução e parafuso cefálico",
+      "Complicações"
+     ],
+     "blocos": [
+      "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+      "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+      "complicacoes-41fe2824",
+      "complicacoes-c2ff2a41"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "c2a1c7f41760e077242a603de20b6605cdcdbb50321ac7360251ff18cc5a0e0e"
+    }
+   ],
+   "questaoSha256": "fd7a3cda79b6be88fcf965c18bc567aa162d41b2a91877a59241b41f10142d59",
+   "comentarioSha256": "4b67f480e2a44de57345db5abcec797e46f978d45a00dfe2181b63d71d8d0094"
+  }
  },
  "trauma-1587": {
-  "conceito": "**Um fenômeno mal compreendido.** O cut-out clássico é o colapso lento em varo do fragmento cabeça-colo com saída do parafuso pela parte superior da cabeça. O capítulo 54 do Rockwood (10ª ed.) descreve um mecanismo diferente, relatado em estudos mais recentes com hastes intramedulares: a **migração craniomedial e a penetração da cabeça femoral pelo parafuso cefálico**, chamada de **cut-in**, com **incidência de 2%**. A figura 54-36 mostra o aspecto típico: a fratura colapsou, mas o parafuso não deslizou lateralmente e avançou para o centro da cabeça, até a articulação. O capítulo relaciona o fenômeno à osteoporose e ao possível **travamento (jamming) do parafuso**, que deixa de deslizar e passa a empurrar a cabeça.\n\n**Tratamento.** Sem penetração da articulação, o cut-in pode ser tratado pela troca ou retirada do parafuso cefálico. Com penetração articular e sintomas incapacitantes, indica-se revisão cirúrgica.\n\n**Como evitar.** As medidas são as mesmas da prevenção do cut-out: redução correta (nunca em varo), parafuso inferior ou central no AP e central no perfil, ponta a cerca de 5 mm da linha articular e distância ponta-ápice de 25 mm ou menos. A escolha do ângulo também conta: placas ou hastes com ângulo menor que 130 graus aumentam o risco de o parafuso travar e virar implante estático. A compressão intraoperatória, feita depois de retirar a tração, dá contato osso com osso; e a montagem deve ter capacidade de deslizamento (parafuso de 80 mm ou menos pede cano curto na placa).\n\n**O quadro das complicações.** O capítulo tabela a incidência esperada: cut-out 1% a 5% (3% a 5% nos estudos atuais, a complicação mais relatada, por redução inadequada e má posição do parafuso); refratura ao redor do implante 1% a 2% (0,7% a 1,7% na ponta da haste); quebra do implante 1% a 2% (menos de 1% nas hastes recentes, 55% após 6 meses, por pseudartrose); pseudartrose 1% a 3%; consolidação viciosa 5% a 10%, incluindo a consolidação aceita em varo; necrose avascular 1% (1% a 2% no texto); sepse profunda 1% ou menos e superficial 1% a 5%. O cut-in de 2% entra como variante do cut-out nas hastes.",
-  "correta": "**A: 2%; cut-in.** O capítulo afirma que estudos recentes com hastes intramedulares relataram migração craniomedial e penetração da cabeça femoral pelo parafuso cefálico, chamada cut-in, com incidência de 2%, possivelmente relacionada à osteoporose ou ao travamento do parafuso, que penetra a cabeça em vez de deslizar; a figura 54-36 mostra a penetração central sem deslizamento lateral.",
+  "conceito": "O parafuso avançou **craniomedialmente através da cabeça**, sem acompanhar o colapso por deslizamento lateral: é **cut-in**, alternativa A. O resumo relata frequência de **cerca de 2%** para esse fenômeno nas hastes.\n\nA falha se relaciona à osteoporose e ao travamento do parafuso. Em vez de a montagem permitir impactação controlada, o implante progride em direção à articulação. A figura mostra a posição central penetrante, distinta da saída superior durante o colapso em varo do cut-out (Rockwood, 10ª ed., cap. 54, “Cut-out e cut-in”).\n\n**O percentual vem da fonte, não da radiografia.** Uma imagem permite reconhecer o padrão, mas não medir incidência. Os 2% são aproximados e não representam a chance de qualquer paciente operado com qualquer implante.\n\nA conduta depende da penetração articular e dos sintomas. O resumo admite trocar ou retirar o parafuso quando não houve penetração; na presença de penetração sintomática, é necessária revisão. Não se escolhe o tratamento apenas pelo nome da complicação.",
+  "correta": "**A: cerca de 2%; cut-in.** Une a frequência relatada ao mecanismo de migração craniomedial sem deslizamento lateral adequado.",
   "incorretas": {
-   "B": "**O número está certo, o nome não.** Dois por cento é a incidência do cut-in. O cut-out é o colapso em varo com saída do parafuso pela parte superior da cabeça, cujo parafuso em geral está alto e excêntrico; a imagem mostra penetração central de um parafuso que não deslizou.",
-   "C": "**O nome está certo, o número não.** O cut-in tem incidência de 2%; 3% a 5% é a taxa atual do cut-out, a complicação mais comum da fixação.",
-   "D": "**Descreve a outra complicação, com o número dela.** Cut-out em 3% a 5% é o colapso em varo com o parafuso saindo pela cabeça superior; a radiografia mostra o fenômeno oposto, a penetração central do parafuso travado, que é o cut-in de 2%."
+   "B": "**Mantém o número, troca a falha.** Cut-out é o colapso em varo com corte superior da cabeça. O trajeto penetrante central descrito aqui corresponde a cut-in.",
+   "C": "**Acerta cut-in e troca a frequência.** O trecho informa cerca de 2%. Taxas de 3% a 5% aparecem para cut-out nos estudos atuais, mas não devem ser transferidas a este mecanismo.",
+   "D": "**Muda nome e taxa de referência.** Cinco por cento pode fazer parte da faixa de cut-out, cuja deformação é diferente. A figura e a descrição são de cut-in, com cerca de 2% no resumo."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 54 (Trochanteric Hip Fractures; Heetveld e Flikweert)"
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Complicações."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Complicações"
+     ],
+     "blocos": [
+      "complicacoes-c2ff2a41",
+      "complicacoes-41fe2824",
+      "complicacoes-487370e4"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "99e60c4fe1d2a2209f566c20da10c88fd1dd67bf48bd96f5437d696416340a46"
+    }
+   ],
+   "questaoSha256": "1e228bc61b0250ca6f9b9fb331520cd9b77776e029b12d5c9c40a8a6f723b3cd",
+   "comentarioSha256": "0c2dd69fca4aa32654e519d3dad0f30eed17b9e7e0825da37b4fe3d1d252d7ee"
+  }
  },
  "trauma-1588": {
-  "conceito": "**Implante que quebra é fratura que não consolidou.** O capítulo 54 do Rockwood (10ª ed.) é direto: **a quebra de qualquer implante está invariavelmente associada a retardo de consolidação ou pseudartrose**. O implante é desenhado para dividir a carga com o osso até a consolidação; quando ela não vem, a carga cíclica repete-se sobre o metal e o fadiga. A quebra da haste foi complicação mais relatada com alguns desenhos antigos de haste intramedular; com os desenhos recentes, a incidência é inferior a 1%. É mais comum tardiamente: **55% das quebras ocorrem depois de 6 meses**, e uma autodinamização precoce (quebra do parafuso de bloqueio) pode ser sinal de alerta.\n\n**Onde quebra.** A legenda da figura 54-38 explica: **a haste normalmente quebra no ponto mais fraco, que é onde o parafuso cefálico atravessa a haste**. O orifício do parafuso cefálico, na junção entre a parte proximal alargada e a diáfise da haste, concentra as tensões de flexão de cada ciclo de carga.\n\n**O que fazer.** O tratamento é em geral a retirada do implante quebrado, o desbridamento da pseudartrose e a refixação; a artroplastia é outra opção. Para a pseudartrose com haste intacta (1% a 3% das trocantéricas), o tratamento inicial pode ser a dinamização, entre 3 e 6 meses, retirando o bloqueio distal; na trocantérica, isso pode não bastar se a extremidade lateral do parafuso cefálico está dentro da cortical, o que impede a compressão dinâmica do foco, erro evitável medindo o parafuso para que a ponta lateral fique fora da cortical. Se a dinamização não funciona, revisão com nova haste de maior diâmetro com fresagem ou com fixação extramedular; enxerto raramente é necessário.\n\n**Outras falhas do metal.** A fratura ao redor da ponta da haste (0,7% a 1,7%) é outro problema de concentração de tensões, às vezes precedida por dor no meio da coxa com haste curta, tratada com troca por haste longa; ao redor de haste longa, placa de bloqueio distal (figura 54-37). A soltura da placa do fêmur após colapso em varo do parafuso deslizante tem como opções conversão a haste, placa mais longa ou artroplastia cimentada.",
-  "correta": "**D: orifício do parafuso cefálico; pseudartrose.** A legenda da figura 54-38 afirma que a haste quebra normalmente no ponto mais fraco, onde o parafuso cefálico a atravessa, e o texto afirma que a quebra de qualquer implante está invariavelmente associada a retardo de consolidação ou pseudartrose, ocorrendo em 55% dos casos depois de 6 meses.",
+  "conceito": "A quebra está na região em que o **parafuso cefálico atravessa a haste**, e não no bloqueio distal. A associação habitual é com **pseudartrose**, alternativa D.\n\nSe o foco não consolida, a carga continua sendo suportada pelo implante por muitos ciclos. O orifício proximal é o ponto fraco descrito pelo resumo para a haste cefalomedular, e a quebra costuma aparecer depois de meses de solicitação. O metal falhar nesse local é um alerta para investigar por que o osso não passou a compartilhar a carga (Rockwood, 10ª ed., cap. 54, “Fratura ao redor do implante e quebra”).\n\n**Osteoporose não é sinônimo de pseudartrose.** Pode dificultar a fixação, mas não substitui a associação entre não união e fadiga da haste. A imagem localiza a falha; não estabelece sozinha todas as causas biológicas ou infecciosas de uma não união.\n\nTambém não se deve confundir essa quebra com uma fratura do osso na ponta da haste. São regiões de concentração de tensão e problemas diferentes, com planejamento de revisão próprio.",
+  "correta": "**D: orifício do parafuso cefálico; pseudartrose.** O local coincide com a figura e com o ponto fraco descrito. A falta de consolidação mantém a solicitação repetida até o implante falhar.",
   "incorretas": {
-   "A": "**Nem o local nem a causa.** O bloqueio distal pode quebrar como autodinamização precoce, sinal de alerta, mas a haste quebra no orifício do parafuso cefálico; e a condição associada é a pseudartrose, não a osteoporose, que o capítulo relaciona ao cut-in e ao cut-out, não à fadiga do metal.",
-   "B": "**A causa está certa, o local não.** A pseudartrose é a condição por trás de toda quebra de implante, mas o ponto mais fraco da haste é o orifício por onde passa o parafuso cefálico, não o bloqueio distal.",
-   "C": "**O local está certo, a causa não.** A haste quebra de fato no orifício do parafuso cefálico, mas por fadiga de carga repetida sobre uma fratura que não consolidou; a osteoporose compromete a fixação na cabeça (cut-out e cut-in), não a resistência do metal."
+   "A": "**Troca o local e a associação principal.** O bloqueio distal não é a região rompida mostrada. Osteoporose pode comprometer ancoragem, mas a associação habitual citada para quebra da haste é pseudartrose.",
+   "B": "**Acerta a condição e erra onde a haste falhou.** A pseudartrose explica fadiga prolongada, mas o local usual da cefalomedular descrito aqui é o orifício cefálico, não o bloqueio distal.",
+   "C": "**Acerta o orifício e reduz a causa a qualidade óssea.** O resumo destaca a pseudartrose como associação quase constante dessa quebra. Não se pode substituir essa investigação pelo diagnóstico genérico de osteoporose."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 54 (Trochanteric Hip Fractures; Heetveld e Flikweert)"
+   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 54 · Trochanteric Hip Fractures. Seções: Complicações."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-54-transtrocanterica",
+     "titulo": "Fratura transtrocantérica",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+     "secoes": [
+      "Complicações"
+     ],
+     "blocos": [
+      "complicacoes-fa2cbfe8",
+      "complicacoes-a003183f"
+     ],
+     "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+     "trechosSha256": "cec022130b83693e0a07f5ae40b91d0f5ed21a68bd19df69589c8fad828ad051"
+    }
+   ],
+   "questaoSha256": "8e857ec10a397e641c361974ab5a2528bf0d80a575d88047d3fe06e41d13febb",
+   "comentarioSha256": "4a708e09962734d518f831d224adcbce26aab6bb8cf37606df5c1efe9dc51df8"
+  }
  },
  "trauma-1589": {
   "conceito": "Na falta de união da trocantérica com haste, o capítulo descreve tentativa de **dinamização entre três e seis meses**. Ela pode ser ineficaz se a **extremidade lateral do parafuso cefálico ficou dentro da cortical**, impedindo o deslizamento necessário. É a alternativa A.\n\nDinamizar pretende permitir que o foco se aproxime e receba compressão funcional. Esse movimento exige um trajeto livre no componente cefálico. O resumo afirma que a ponta lateral precisa estar fora da cortical; se estiver presa dentro dela, acrescentar possibilidade de movimento em outra parte da montagem não garante que o foco realmente consiga impactar (Rockwood, 10ª ed., cap. 54, “Complicações”).\n\nA presença de material não demonstra que a mecânica esteja adequada. Também é preciso avaliar redução e posição do implante, fatores relacionados à pseudartrose no capítulo. O intervalo de três a seis meses é o momento da tentativa descrita, e não prova automática de diagnóstico de pseudartrose em todo paciente que ainda não consolidou aos três meses.\n\nSe a dinamização não for possível ou não funcionar, o resumo admite revisão com haste mais grossa e fresagem ou fixação extramedular; enxerto raramente é necessário na descrição. Uma haste quebrada costuma refletir a solicitação persistente por falta de união, frequentemente na região por onde o parafuso cefálico a atravessa.\n\nNo resumo da Biblioteca, compare a condição de deslizamento com a falha do implante. A pergunta não é apenas “quando mexer na montagem”, mas **se o movimento que se deseja liberar está mecanicamente disponível**.\n\n**Por que esta questão foi criada.** Testa uma causa de dinamização ineficaz que pode ser perdida quando se pensa apenas no bloqueio distal e não no curso cefálico.",
@@ -38335,18 +38715,58 @@
   }
  },
  "trauma-1658": {
-  "conceito": "**Duas portas para a haste anterógrada.** A haste que entra pelo quadril pode começar na chamada fossa piriforme, nome impreciso para a fossa trocantérica, a depressão na face interna e posterior do trocanter, alinhada com o canal; ou no trocanter maior, na ponta ou um pouco medial a ela, com hastes de curva proximal lateral de 4 a 6 graus. Qualquer das duas atravessa partes moles do quadril, e a dor no quadril após haste anterógrada é relatada em 10% a 40% dos pacientes.\n\n**O que cada entrada lesa (estudos em cadáver citados no capítulo).**\n\n| Entrada | Estruturas lesadas |\n|---|---|\n| Ponta do trocanter | tendão do piriforme (80%), obturador interno (25%), glúteo médio (25% a 27%) |\n| Fossa piriforme | piriforme (71%), obturador interno (86%), obturador externo (29%), ramos da artéria circunflexa femoral medial e cápsula |\n\nO orifício também conta: com entrada logo medial à ponta do trocanter e orifício de 14 mm em vez de 17 mm, o tendão do glúteo médio ficou livre de lesão. A posição ajuda: mais flexão e adução do quadril reduziram a lesão do glúteo médio e do nervo glúteo superior.\n\n**O nervo glúteo superior e o sinal de TRENDELENBURG.** O capítulo afirma que o nervo glúteo superior corre mais risco na entrada piriforme e que sua lesão pode produzir sinal de TRENDELENBURG. O nervo inerva o glúteo médio, o glúteo mínimo e o tensor da fáscia lata, os abdutores que mantêm a pelve nivelada no apoio unipodal; sem eles, a pelve cai para o lado oposto. Um estudo com marcha, força, RM e eletromiografia associou a entrada piriforme a lesão dos abdutores e do nervo glúteo superior, com pior função do quadril e alteração da marcha. Ainda assim, num ensaio randomizado de 110 pacientes, força e testes funcionais não diferiram entre as entradas aos 12 meses: a relevância clínica dessas lesões é difícil de provar.\n\n> **Na prova:** entrada piriforme, nervo glúteo superior e circunflexa femoral medial; lesão do glúteo superior, TRENDELENBURG.\n\n> **Por que esta questão foi criada.** O TEOT 2024 perguntou as complicações do ponto de entrada da haste anterógrada e a resposta foi lesão do nervo glúteo superior e da artéria circunflexa femoral medial. Esta gêmea leva o mesmo fato à porta seguinte: o nervo e a consequência clínica que o capítulo descreve para sua lesão.",
-  "correta": "**C: glúteo superior; sinal de TRENDELENBURG.** O capítulo diz textualmente que o nervo glúteo superior está em risco maior com a entrada piriforme e que sua lesão pode produzir o sinal de TRENDELENBURG. A ligação é anatômica: o nervo sai acima do piriforme e inerva os abdutores (glúteo médio e mínimo e tensor da fáscia lata); com eles fracos, a pelve não se sustenta no apoio sobre o membro operado e cai para o lado contrário. É também o mecanismo da fraqueza abdutora e da marcha alterada que alguns estudos encontraram depois da haste anterógrada, e o motivo pelo qual a fisioterapia deve trabalhar abdutores e rotadores externos.",
+  "conceito": "Na entrada pela **fossa piriforme**, o nervo mais exposto no resumo é o **glúteo superior**, e a manifestação associada é o **sinal de Trendelenburg**, alternativa C.\n\nA haste anterógrada atravessa a região dos rotadores e dos abdutores. O texto relata maior exposição do glúteo superior nessa entrada e associação com lesão dos abdutores e pior marcha. O glúteo médio e o mínimo, inervados por esse nervo, sustentam a abdução do quadril; sua fraqueza explica o sinal clínico (Rockwood, 10ª ed., caps. 57, “O que cada entrada lesa”, e 53, “Músculos”).\n\n**O nome do nervo e a manifestação formam um par.** Trocar superior por inferior ou substituir Trendelenburg por um movimento posterior do tronco perde a relação que a questão explora. A fonte não autoriza atribuir qualquer alteração de marcha ao mesmo mecanismo.\n\nA lesão não é inevitável: ponto de entrada, trajetória e cuidado com partes moles influenciam o risco. Reconhecer a estrutura exposta serve para prevenção e para examinar a função depois da operação.",
+  "correta": "**C: glúteo superior; Trendelenburg.** O risco anatômico e a deficiência abdutora são relacionados expressamente pelo resumo, com complemento da inervação no capítulo do colo.",
   "incorretas": {
-   "A": "**O sinal está certo; o nervo não.** O TRENDELENBURG é o sinal dos abdutores, e os abdutores são do glúteo superior. O nervo glúteo inferior sai abaixo do piriforme e inerva o glúteo máximo, um extensor do quadril; ele não aparece no capítulo como estrutura em risco no ponto de entrada. O distrator troca superior por inferior, a mesma troca que o TEOT 2024 usou nas alternativas.",
-   "B": "**Nervo e sinal de outro músculo.** A marcha com o tronco jogado para trás é a compensação da fraqueza do glúteo máximo, inervado pelo glúteo inferior: o paciente leva o tronco para trás para manter o quadril em extensão no apoio. É um par coerente entre si, mas que não corresponde ao risco descrito para a entrada piriforme, que é o do nervo glúteo superior e dos abdutores.",
-   "D": "**O nervo está certo; o sinal não.** A lesão do glúteo superior enfraquece a abdução, não a extensão do quadril, e o que aparece é a queda da pelve contralateral no apoio (TRENDELENBURG), não a marcha com o tronco para trás. A alternativa mistura o nervo do enunciado com o sinal do glúteo máximo."
+   "A": "**Mantém o sinal e troca o nervo.** O resumo liga a exposição na entrada piriforme ao glúteo superior, que inerva médio e mínimo. Trendelenburg não deve levar a escolher “inferior” só por também ser um nervo glúteo.",
+   "B": "**Não reúne o par descrito.** A entrada expõe mais o glúteo superior, e o sinal associado pela fonte é Trendelenburg. A alternativa não identifica nem a estrutura nem a manifestação que o trecho relaciona.",
+   "D": "**Acerta o nervo e muda a manifestação.** A fraqueza abdutora é expressa pelo sinal de Trendelenburg. Não se deve substituir esse achado específico pela descrição de tronco para trás."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 57 (Femoral Shaft Fractures; Adams e Jeray)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada.",
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Haste anterógrada: o ponto de entrada"
+     ],
+     "blocos": [
+      "haste-anterograda-o-ponto-de-entrada-469e83ef",
+      "haste-anterograda-o-ponto-de-entrada-0550ca82"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "ebc9ea7d6a240daa3dbd718870b1d6f8f7ea56e188f70477deb8b660753f4f0b"
+    },
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "anatomia-aplicada-307a6627"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "3d152e7b39fc8d7f445e5cc1ff994ada9e8567228a4bab580a26e25b05b4bc90"
+    }
+   ],
+   "questaoSha256": "26873ae862b202d43e7c02582c2015d3dc67273bdf693099ffc0b634f4c78392",
+   "comentarioSha256": "8a4af2c9a8e690e0217903fcb340f1d1a0aa652fb0b3a65c6080de3bfd53b1a5"
+  }
  },
  "trauma-1659": {
   "conceito": "Uma haste reta precisa entrar em linha com o canal femoral. Se a entrada piriforme ficar **anterior demais**, pode haver fratura iatrogênica do colo; se ficar **lateral demais**, a consequência descrita é **varo**, com risco de fratura da cortical lateral. Essa sequência é a alternativa C.\n\nA chamada fossa piriforme corresponde mais precisamente à fossa trocantérica, na face interna e posterior do trocanter. Seu alinhamento com o canal explica o desenho reto da haste. O ponto não é um detalhe separado do implante: o osso precisa receber um instrumento rígido cujo trajeto depende da entrada escolhida (resumo do Rockwood, 10ª ed., cap. 57, “Haste anterógrada: o ponto de entrada”).\n\nNa posição anterior, o resumo relata que apenas 6 mm à frente do centro podem produzir tensões circunferenciais e abertura do fêmur proximal, com fratura do colo. O problema não é apenas deixar um pequeno desvio residual: a introdução pode criar uma lesão nova numa região que estava íntegra. O risco também depende da discordância de curvatura e da rigidez da haste.\n\nNa entrada lateral, o eixo imposto à haste reta não acompanha o eixo planejado pelo canal, favorecendo varo e lesão da cortical lateral. O erro é descrito especialmente quando a dificuldade de alcançar a fossa leva a começar no trocanter. Um ponto aparentemente mais fácil de atingir não se torna apropriado para o desenho escolhido.\n\n**Entrada trocantérica planejada não é uma entrada piriforme errada.** Ela utiliza haste com curva lateral própria. O resumo ainda descreve complicações específicas das curvas e dos pontos trocantéricos; não se pode transferir automaticamente uma associação de erro de um implante para outro. Na Biblioteca, compare os desenhos e a tabela de erros: ponto de entrada, curvatura e canal devem formar um conjunto coerente.\n\n**Por que esta questão foi criada.** O TEOT 2024 cobrou lesões ligadas à entrada anterógrada; este simulado amplia o raciocínio para a consequência mecânica de deslocar o ponto de uma haste reta.",
@@ -38388,18 +38808,57 @@
   }
  },
  "trauma-1660": {
-  "conceito": "**A circulação da cabeça passa perto da fossa piriforme.** A artéria circunflexa femoral medial, ramo da femoral profunda, sobe por trás do colo e manda os ramos que nutrem a cabeça femoral. A fossa piriforme (trocantérica) fica exatamente nesse caminho: em cadáver, a entrada piriforme lesou ramos da circunflexa medial e a cápsula. No adulto, essa lesão quase não tem consequência; o capítulo diz que a necrose da cabeça femoral após entrada piriforme no esqueleto maduro se limita a relatos de casos isolados. Na criança e no adolescente, a cabeça depende muito mais desses ramos, e a necrose avascular é uma complicação real e devastadora.\n\n**Por isso a entrada muda a indicação.** Entre as indicações da haste anterógrada, o capítulo lista \"fise aberta (só ponto de entrada trocantérico)\", e entre as contraindicações relativas, \"fise aberta (ponto piriforme)\". Se a haste rígida for escolhida para o adolescente com fise aberta, o ponto recomendado é a ponta do trocanter maior ou até mais lateral, e a entrada piriforme deve ser evitada para minimizar o dano à circulação da cabeça. Há hastes de menor diâmetro feitas para entrar pelo trocanter, um pouco mais lateral, nesses pacientes.\n\n**A criança pequena é outra história.** O tratamento não operatório (gesso pelvipodálico) é usado sobretudo abaixo de 5 anos; na faixa intermediária, as provas cobram hastes flexíveis e placa submuscular, que estão no livro de fraturas na criança. Este capítulo trata do adulto e entra no assunto apenas pela escolha do ponto de entrada no adolescente.\n\n> **Na prova:** fise aberta e haste rígida, entra pelo trocanter; piriforme no adolescente é necrose da cabeça.\n\n> **Por que esta questão foi criada.** O fato caiu três vezes: o TEOT 2021 perguntou o que é contraindicado no adolescente com fise aberta (haste rígida com entrada na fossa piriforme), o TEOT 2023 perguntou a complicação mais grave dessa entrada (necrose avascular da cabeça femoral) e o TARO 2026 perguntou o ponto de entrada indicado (ápice do trocanter maior). Esta gêmea junta ponto e complicação no par 2 por 2.",
-  "correta": "**D: ponta do trocanter maior; necrose da cabeça femoral.** É a recomendação do capítulo, repetida na haste piriforme e na trocantérica: no adolescente com fise aberta, se a escolha for haste rígida, entrar pela ponta do trocanter ou mais lateral, para não lesar a circulação da cabeça e evitar a necrose avascular. A entrada trocantérica afasta o instrumental da fossa por onde correm os ramos da circunflexa femoral medial. O capítulo mostra o contraste com o adulto, em que a necrose pela entrada piriforme é excepcional; a diferença é a dependência da cabeça imatura desses vasos.",
+  "conceito": "No adolescente com **fise aberta**, se for escolhida uma haste rígida, a entrada recomendada é pela **ponta do trocânter ou mais lateral**, para evitar **necrose avascular da cabeça**. Entre os pares oferecidos, corresponde a D.\n\nO resumo proíbe a entrada piriforme nesse cenário porque ela pode lesar a circulação da cabeça. No adulto maduro, a necrose por esse acesso é excepcional; com a fise aberta, a decisão sobre o ponto de entrada muda. A idade esquelética, e não apenas o nome da haste, é o dado decisivo (Rockwood, 10ª ed., cap. 57, “O adolescente com fise aberta”).\n\n**Coxa valga é outra alteração.** Refere-se ao aumento do ângulo cervicodiafisário; não é sinônimo de falha da irrigação. O objetivo vascular citado no enunciado não deve ser trocado por uma deformidade angular (cap. 53, “Geometria do fêmur proximal”).\n\nA recomendação pressupõe que a haste rígida seja a opção escolhida e que o implante seja apropriado à entrada. Não significa que todo adolescente com fratura precise receber essa montagem.",
+  "correta": "**D: ponta do trocânter; evitar necrose da cabeça.** É uma das entradas trocantéricas admitidas no texto para a fise aberta. O objetivo é poupar a circulação ameaçada pelo acesso piriforme.",
   "incorretas": {
-   "A": "**Ponto e complicação errados.** A fossa piriforme é justamente a entrada a evitar no adolescente com fise aberta, e coxa valga não é o motivo. O distrator veio das alternativas do TEOT 2023, em que coxa valga, subluxação do quadril e fechamento precoce da fise aparecem ao lado da necrose. A complicação que o capítulo associa à entrada piriforme no esqueleto imaturo é a necrose avascular da cabeça, pela lesão dos ramos da circunflexa femoral medial.",
-   "B": "**A complicação está certa; o ponto é o que a causa.** Necrose da cabeça femoral é o que se quer evitar, mas a entrada piriforme é a que expõe a circulação da cabeça. Seria a associação certa se a pergunta fosse \"a entrada que se deve evitar e a complicação temida\". Recomendar a fossa piriforme no adolescente é o erro clássico que o TEOT 2021 transformou em \"CONTRAINDICADO\".",
-   "C": "**O ponto está certo; a complicação não.** A entrada pela ponta do trocanter é a recomendada, mas o que ela previne é a necrose da cabeça, não a coxa valga. O capítulo não liga a escolha do ponto de entrada no adolescente a alterações do ângulo cervicodiafisário; a justificativa é só vascular."
+   "A": "**Escolhe o acesso que a fonte manda evitar e troca o problema.** A piriforme é contraindicada nesse contexto vascular. Coxa valga é deformidade de ângulo, não a complicação que justifica a recomendação.",
+   "B": "**Acerta o perigo, mas mantém seu acesso de risco.** Reconhecer necrose não valida a piriforme; a conduta para evitá-la é mudar a entrada para o trocânter ou mais lateral.",
+   "C": "**Acerta uma entrada aceita e troca a finalidade.** O texto a recomenda para proteger a circulação e reduzir o risco de necrose. O par da questão não é com coxa valga."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 57 (Femoral Shaft Fractures; Adams e Jeray)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Haste anterógrada: o ponto de entrada.",
+   "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 53 · Femoral Neck Fractures. Seções: Anatomia aplicada."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-57-diafise-femur",
+     "titulo": "Fratura da diáfise do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
+     "secoes": [
+      "Haste anterógrada: o ponto de entrada"
+     ],
+     "blocos": [
+      "haste-anterograda-o-ponto-de-entrada-2e8e945f"
+     ],
+     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
+     "trechosSha256": "5758e6ddd09a8cec6b9fda0ce9e0c2abf1e4f8ac89a4ad4edc7040ae152f4e06"
+    },
+    {
+     "resumo": "rockwood10-53-colo-femur",
+     "titulo": "Fratura do colo do fêmur",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+     "secoes": [
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "anatomia-aplicada-be6f84e8"
+     ],
+     "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+     "trechosSha256": "23697dc93e0cf18517ac67882ef9fc281cbc25b5bf22b6aa093192d1f1ac2c18"
+    }
+   ],
+   "questaoSha256": "3072a2a33bc76c85bdc9764fd46c61d300b8ca59231af7f45f03effdad4955eb",
+   "comentarioSha256": "77d2cac5b9d372f607f45f2f1b0f9ef47da1047c9bd67ccd7f5144a772bb9df6"
+  }
  },
  "trauma-1661": {
   "conceito": "Para tração pela **tíbia proximal**, o pino passa de **lateral para medial**, protegendo o **nervo fibular comum**. É a alternativa D. A combinação muda quando a tração é pelo fêmur distal: ali o sentido é medial para lateral e a estrutura destacada é a artéria femoral.\n\nA regra não é que todo pino de tração atravesse a perna no mesmo sentido. Cada nível tem estruturas vulneráveis próprias. A tabela do resumo distingue o pino tibial, bicortical e na altura da tuberosidade, do femoral, cuja relação com a artéria no hiato dos adutores explica a outra direção (Rockwood, 10ª ed., cap. 57, “Tratamento não operatório e tração”).\n\nHá uma diferença funcional além da segurança de passagem: o pino tibial transmite a tração através do joelho. O pino femoral traciona diretamente o fêmur, permite algum controle rotacional e não distrai a articulação; por isso é favorecido no capítulo se houver suspeita de lesão do joelho. A escolha do local depende também do exame articular e das lesões associadas, não só da facilidade de colocar um pino.\n\nNo adulto, a tração esquelética é sobretudo uma solução temporária quando a haste ainda não pode ser feita. Ela ajuda a manter o membro durante essa etapa, mas não substitui reavaliação clínica e controle do alinhamento. No resumo da Biblioteca, leia os dois níveis lado a lado: **tíbia/lateral/fibular; fêmur/medial/femoral arterial**. O local é o que dá sentido à comparação.\n\n**Por que esta questão foi criada.** O TARO 2022 cobrou a direção do pino femoral e a estrutura protegida; este simulado testa a distinção anatômica ao mudar o local para a tíbia.",
