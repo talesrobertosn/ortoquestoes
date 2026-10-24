@@ -1,0 +1,17 @@
+{
+  "base": "b71e9d124a8040eb1846bcbe88748dd90e64e3bb",
+  "criterio": "Dois enunciados e todas as opções conferidos contra corpo e tabelas independentes; inconsistências da fonte exigem consulta primária, não contam como revisão. Comentários e questões preservados.",
+  "resumoSha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+  "questoes": {
+    "trauma-1688": {
+      "questaoSha256": "0b1210eee8245b9b631a37ef33f6b7de10c072d65ca9fb631eb245925b6dfed3",
+      "pendencia": "O resumo 65 associa o duplo contorno medial ao Bartoníček 3 e à via posteromedial na tabela 65-3 e no parágrafo de classificação, mas na seção técnica indica a posterolateral para fratura multifragmentária como o tipo 3. A e D não descrevem o tipo do duplo contorno; B e C se distinguem justamente pela via para a qual o corpo traz orientações conflitantes. Falta conferir a descrição primária, a morfologia/variante e o planejamento por TC para resolver a divergência entre B e C. Preservado B oficial, sem novo comentário baseado em resumo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1692": {
+      "questaoSha256": "7cafa98c9a0179eac60b9c2e749d541b9e0d18fc4650a73649dfb5d67f158d74",
+      "pendencia": "O corpo do resumo 65 sustenta neuroartropatia/neuropatia e doença vascular como riscos maiores, sem diferença por insulinodependência em Costigan. Entretanto, o parágrafo recomenda imobilização sem carga por até 8 semanas e a tabela 65-4 descreve 8–10 semanas de carga protegida. Isso não equivale a comprovar a formulação sem carga por 8–10 semanas de D. A/B erram ao priorizar insulina; a carga imediata de C não é sustentada para neuropatia. Falta protocolo primário para grau e duração de restrição de carga no neuropata, distinguindo proteção de proibição total. D oficial preservada; não ensinar as duas expressões como sinônimas.",
+      "estado": "pendente-fonte"
+    }
+  }
+}
