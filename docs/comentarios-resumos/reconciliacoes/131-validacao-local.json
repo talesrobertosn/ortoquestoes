@@ -1,0 +1,69 @@
+{
+  "data": "2026-10-24",
+  "branch": "codex/resumos-131",
+  "base": "47727f2173dbc25736cdd8c09920eeecb1a2f227",
+  "lotes": [
+    131
+  ],
+  "ids": [
+    "trauma-0124",
+    "trauma-0282",
+    "trauma-1521",
+    "trauma-1522",
+    "trauma-1523",
+    "trauma-1524",
+    "trauma-1525",
+    "trauma-1526",
+    "trauma-1527",
+    "trauma-1528"
+  ],
+  "fonte": "Resumo 51 Rockwood 10ª (774 linhas), integralmente lido durante a entrega anterior e relido individualmente nos blocos pertinentes a este lote. Usados corpo e tabelas independentes, sem contexto de questões como autoridade. Referências identificam a consulta ao resumo.",
+  "aplicacao": "aplicar.py sob flock /tmp/claude-0/acervo.lock",
+  "auditoria": "Aplicação reproduzida desde a base, fontes/hashes, todas as alternativas e dez avulsos integrais conferidos. Questões, IDs, opções, áreas, gabaritos e revisão médica preservados; conferido:false; bytes externos aos dez membros preservados.",
+  "revisaoMedicaAtribuida": false,
+  "figurasNosLotes": 0,
+  "validacaoVisual": {
+    "casos": [
+      "trauma-0124",
+      "trauma-0282",
+      "trauma-1521",
+      "trauma-1522",
+      "trauma-1523",
+      "trauma-1524",
+      "trauma-1525",
+      "trauma-1526",
+      "trauma-1527",
+      "trauma-1528"
+    ],
+    "tamanhos": [
+      "celular390",
+      "computador1440"
+    ],
+    "resultado": "10 casos passaram, com resposta, comentário e link para o bloco de fonte; alerta de 1528 conferido. Quatro capturas representativas abertas.",
+    "capturasAbertas": [
+      "trauma-0124 aula PC",
+      "trauma-1525 aula PC",
+      "trauma-1526 aula celular",
+      "trauma-1528 alerta celular"
+    ]
+  },
+  "checks": "14 fixtures, validar_acervo, suíte npm completa, build e diff-check passaram.",
+  "logsSha256": {
+    "check131-fixtures.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check131-acervo.log": "f4adc14495250eee196bd57cb599aacf21bcf0942346172386d975472bbf1aa4",
+    "check131-test.log": "850391057b44d76bf44c8ec1f7b8585e77a1c6f1be4253f1ae02be9e5b10b59a",
+    "check131-build.log": "4f18721f67ebb4e655c706921611d13b21d59f39b4c260d8aa07d88f8abdc075"
+  },
+  "prAnterior": {
+    "pr": 508,
+    "head": "bbd232ec4cee6b6c5a40e861bd72a5f070101c4e",
+    "ci": 40094024969,
+    "merge": "47727f2173dbc25736cdd8c09920eeecb1a2f227",
+    "pages": 40094152891,
+    "jobPublicar": 120873361057,
+    "avulsosIntegrais": 30,
+    "figurasSha256": 7
+  },
+  "proximoLote": 132,
+  "publicacaoAtual": "Aguardar CI do head, merge, guarda/deploy efetivos e comparação de produção; registrar no PR."
+}
