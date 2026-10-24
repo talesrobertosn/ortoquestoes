@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 1035,
+  "pendente": 995,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 177,
+  "pendente-fonte": 187,
   "pendente-inspecao-imagem": 157,
-  "revisada": 903
+  "revisada": 933
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -16,8 +16,8 @@
    "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
    "estados": {
     "duplicada": 3,
-    "pendente": 5,
-    "pendente-fonte": 11,
+    "pendente": 4,
+    "pendente-fonte": 12,
     "pendente-inspecao-imagem": 1,
     "revisada": 50
    }
@@ -69,11 +69,11 @@
    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
    "estados": {
     "duplicada": 2,
-    "pendente": 35,
+    "pendente": 34,
     "pendente-anulada": 1,
     "pendente-fonte": 1,
     "pendente-inspecao-imagem": 6,
-    "revisada": 7
+    "revisada": 8
    }
   },
   "rockwood10-40-cotovelo-cabeca-radio": {
@@ -189,10 +189,10 @@
    "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
    "estados": {
     "duplicada": 3,
-    "pendente": 22,
+    "pendente": 21,
     "pendente-fonte": 8,
     "pendente-inspecao-imagem": 1,
-    "revisada": 39
+    "revisada": 40
    }
   },
   "rockwood10-58-femur-distal": {
@@ -209,10 +209,10 @@
    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
    "estados": {
     "duplicada": 14,
-    "pendente": 20,
+    "pendente": 19,
     "pendente-fonte": 14,
     "pendente-inspecao-imagem": 2,
-    "revisada": 33
+    "revisada": 34
    }
   },
   "rockwood10-61-luxacao-joelho": {
@@ -242,11 +242,11 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 82,
+    "pendente": 42,
     "pendente-anulada": 2,
-    "pendente-fonte": 13,
+    "pendente-fonte": 23,
     "pendente-inspecao-imagem": 1,
-    "revisada": 52
+    "revisada": 82
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -254,9 +254,9 @@
    "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
    "estados": {
     "duplicada": 4,
-    "pendente": 43,
+    "pendente": 42,
     "pendente-inspecao-imagem": 1,
-    "revisada": 1
+    "revisada": 2
    }
   },
   "rockwood10-65-tornozelo": {
@@ -264,9 +264,10 @@
    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
-    "pendente": 52,
+    "pendente": 50,
     "pendente-anulada": 1,
-    "pendente-inspecao-imagem": 8
+    "pendente-inspecao-imagem": 8,
+    "revisada": 2
    }
   },
   "rockwood10-66-talus": {
@@ -5540,8 +5541,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 63 trata a osteotomia da consolidação viciosa, mas não define CORA nem compara os encontros de eixos mecânicos e anatômicos. O próprio contexto remete ao capítulo 31. Falta definição primária e construção dos eixos para diferenciar B de C/D e do ponto cortical de A; não usar a resposta do bloco contextual como fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -5555,7 +5556,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "6c5c5ca9e7f3a31e8b4cebcdc6702625f4f674770fae40f9e74498ff4303b79e"
+   "questaoSha256": "6c5c5ca9e7f3a31e8b4cebcdc6702625f4f674770fae40f9e74498ff4303b79e",
+   "pendencia": "O corpo do resumo 63 trata a osteotomia da consolidação viciosa, mas não define CORA nem compara os encontros de eixos mecânicos e anatômicos. O próprio contexto remete ao capítulo 31. Falta definição primária e construção dos eixos para diferenciar B de C/D e do ponto cortical de A; não usar a resposta do bloco contextual como fonte."
   },
   "conceitos-basicos-0137": {
    "tema": "conceitos-basicos",
@@ -5875,8 +5877,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 63 discute fresagem, circulação e dimensões dos parafusos, mas não demonstra qual modo de rigidez é a principal limitação de uma haste não fresada fina. Faltam comparação biomecânica e distinção entre cisalhamento, flexão e compressão/axial. O contexto que cita baixa rigidez não sustenta individualmente a alternativa C nem os distratores; preservar C oficial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -5890,7 +5892,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "6057ddb4ce60f1c4b4bb22f728b5fe3468ab9311363d2a10a93636259ce3f3e5"
+   "questaoSha256": "6057ddb4ce60f1c4b4bb22f728b5fe3468ab9311363d2a10a93636259ce3f3e5",
+   "pendencia": "O resumo 63 discute fresagem, circulação e dimensões dos parafusos, mas não demonstra qual modo de rigidez é a principal limitação de uma haste não fresada fina. Faltam comparação biomecânica e distinção entre cisalhamento, flexão e compressão/axial. O contexto que cita baixa rigidez não sustenta individualmente a alternativa C nem os distratores; preservar C oficial."
   },
   "conceitos-basicos-0353": {
    "tema": "conceitos-basicos",
@@ -5931,8 +5934,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 63 descreve corte no lado côncavo e abertura por cunha, com possível alívio no convexo, mas não especifica a dobradiça que deve permanecer íntegra no exemplo em valgo. Falta descrição ou figura primária da técnica aplicada ao valgo para conferir lado da dobradiça e força no segmento distal, sem confundir lado do corte com lado preservado. Não aberta figura de livro ausente do resumo digital; A oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -5946,7 +5949,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "a721ba4ec8b0a4a976dbb25963dd56caa3e28b762e22a7cdd3ea80aef5255b29"
+   "questaoSha256": "a721ba4ec8b0a4a976dbb25963dd56caa3e28b762e22a7cdd3ea80aef5255b29",
+   "pendencia": "O resumo 63 descreve corte no lado côncavo e abertura por cunha, com possível alívio no convexo, mas não especifica a dobradiça que deve permanecer íntegra no exemplo em valgo. Falta descrição ou figura primária da técnica aplicada ao valgo para conferir lado da dobradiça e força no segmento distal, sem confundir lado do corte com lado preservado. Não aberta figura de livro ausente do resumo digital; A oficial preservada."
   },
   "conceitos-basicos-0364": {
    "tema": "conceitos-basicos",
@@ -5979,8 +5983,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 63 menciona PTB sem definir a altura da borda proximal, e o contexto informa expressamente que o polo inferior vem de fora do capítulo. Falta fonte técnica do molde, da borda patelar e da proteção do fibular comum para conferir ambos os componentes das quatro opções. Não converter anatomia do nervo em prova do limite do gesso.",
    "temComentario": true,
    "citacoes": [
     {
@@ -5994,7 +5998,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "a43f5b60070159722a4f6b1b6767898466547379a968b21bf273e2b2592b078d"
+   "questaoSha256": "a43f5b60070159722a4f6b1b6767898466547379a968b21bf273e2b2592b078d",
+   "pendencia": "O corpo do resumo 63 menciona PTB sem definir a altura da borda proximal, e o contexto informa expressamente que o polo inferior vem de fora do capítulo. Falta fonte técnica do molde, da borda patelar e da proteção do fibular comum para conferir ambos os componentes das quatro opções. Não converter anatomia do nervo em prova do limite do gesso."
   },
   "conceitos-basicos-0369": {
    "tema": "conceitos-basicos",
@@ -6317,8 +6322,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 63 lista placa provisória unicortical entre auxiliares de redução, mas não afirma que sua função principal seja prevenir procurvato em vez de outros desvios. Falta descrição/figura da posição da placa e do plano controlado para distinguir varo, rotação, procurvato e recurvato. Sustentar o uso genérico da placa não cobre a preferência específica da questão; C preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -6332,7 +6337,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "b14d9eeddba5248f55ece53cd24ff226662d01d4e2794495b3c7282f19c65711"
+   "questaoSha256": "b14d9eeddba5248f55ece53cd24ff226662d01d4e2794495b3c7282f19c65711",
+   "pendencia": "O corpo do resumo 63 lista placa provisória unicortical entre auxiliares de redução, mas não afirma que sua função principal seja prevenir procurvato em vez de outros desvios. Falta descrição/figura da posição da placa e do plano controlado para distinguir varo, rotação, procurvato e recurvato. Sustentar o uso genérico da placa não cobre a preferência específica da questão; C preservada."
   },
   "joelho-0004": {
    "tema": "joelho",
@@ -44300,7 +44306,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44315,7 +44321,31 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "ba47a2fb4586427650d1f06127218c570c6ada845b80aeb21ae8138b728ddd7c"
+   "questaoSha256": "ba47a2fb4586427650d1f06127218c570c6ada845b80aeb21ae8138b728ddd7c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+      ],
+      "blocos": [
+       "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b",
+       "complicacoes-dor-no-joelho-material-consolidacao-d824b854"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "147b0d9c1fc3e157e8154acbcffc432aea63198436fe63d1b7886e85790cdf23"
+     }
+    ],
+    "questaoSha256": "ba47a2fb4586427650d1f06127218c570c6ada845b80aeb21ae8138b728ddd7c",
+    "comentarioSha256": "0da4dfe369ffb62d4720d6837d346ab5d23121790c19dacd06b67961f60ecbbc"
+   }
   },
   "trauma-0089": {
    "tema": "trauma",
@@ -45149,8 +45179,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 63 apresenta Tscherne C0–C3 para fechadas, sem incluir a síndrome compartimental no texto independente de C3. O enunciado pergunta grau numa fratura exposta, e o próprio contexto declara essa associação externa ao capítulo. Falta a classificação primária das lesões abertas e sua regra para síndrome compartimental; não transferir automaticamente o número da categoria fechada. C oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45165,7 +45195,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "b4880ac26ce970d1a2ed25ef7814e84e0b62c92b590a0acf7c0664658fda7368"
+   "questaoSha256": "b4880ac26ce970d1a2ed25ef7814e84e0b62c92b590a0acf7c0664658fda7368",
+   "pendencia": "O resumo 63 apresenta Tscherne C0–C3 para fechadas, sem incluir a síndrome compartimental no texto independente de C3. O enunciado pergunta grau numa fratura exposta, e o próprio contexto declara essa associação externa ao capítulo. Falta a classificação primária das lesões abertas e sua regra para síndrome compartimental; não transferir automaticamente o número da categoria fechada. C oficial preservada."
   },
   "trauma-0117": {
    "tema": "trauma",
@@ -48080,7 +48111,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -48095,7 +48126,32 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "10418aa9166f27e7d6b1fbbacad5d8e6c0850069ffd3c9faecb780f21351eaec"
+   "questaoSha256": "10418aa9166f27e7d6b1fbbacad5d8e6c0850069ffd3c9faecb780f21351eaec",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Classificação: AO 42 e as partes moles"
+      ],
+      "blocos": [
+       "classificacao-ao-42-e-as-partes-moles-e9fb55c0",
+       "classificacao-ao-42-e-as-partes-moles-724df26e",
+       "classificacao-ao-42-e-as-partes-moles-133e882e"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "fd5ff05f1b0c574605c4c18e9f3901bbc07c8bae0e4bf436da3e4c35a17810b3"
+     }
+    ],
+    "questaoSha256": "10418aa9166f27e7d6b1fbbacad5d8e6c0850069ffd3c9faecb780f21351eaec",
+    "comentarioSha256": "90f7cfd1efe8c1008948c2ff43c9ff47df8401e46e1fbacae561ee65852c7d23"
+   }
   },
   "trauma-0225": {
    "tema": "trauma",
@@ -50316,7 +50372,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50331,7 +50387,32 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "4ce48fff18e3dcd5ac38713a69296b7c49ec727fabdd30ef159a4f992c7895c6"
+   "questaoSha256": "4ce48fff18e3dcd5ac38713a69296b7c49ec727fabdd30ef159a4f992c7895c6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Classificação: AO 42 e as partes moles"
+      ],
+      "blocos": [
+       "classificacao-ao-42-e-as-partes-moles-e9fb55c0",
+       "classificacao-ao-42-e-as-partes-moles-724df26e",
+       "classificacao-ao-42-e-as-partes-moles-133e882e"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "fd5ff05f1b0c574605c4c18e9f3901bbc07c8bae0e4bf436da3e4c35a17810b3"
+     }
+    ],
+    "questaoSha256": "4ce48fff18e3dcd5ac38713a69296b7c49ec727fabdd30ef159a4f992c7895c6",
+    "comentarioSha256": "41f34e0dd8607ba8b5ed422fabd5417f3770e8a052a8c36b4c996443dd2a36d2"
+   }
   },
   "trauma-0306": {
    "tema": "trauma",
@@ -51768,7 +51849,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51783,7 +51864,34 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "f0b1935a492335403a0b78718fbd5756cf0d59a5b2b79877a22d61e250603a41"
+   "questaoSha256": "f0b1935a492335403a0b78718fbd5756cf0d59a5b2b79877a22d61e250603a41",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-f4c9a7c8",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-ae9daf25",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-28895b21",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-ae149922"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "ff181858adfd6081b4b9ef3b2888c8d08e42525f95078491ea75232dcc2f44c4"
+     }
+    ],
+    "questaoSha256": "f0b1935a492335403a0b78718fbd5756cf0d59a5b2b79877a22d61e250603a41",
+    "comentarioSha256": "a2e81ad00c29a138a9d3c173f6322bdbdaaff2bffe3821b8f8ec1f918b931855"
+   }
   },
   "trauma-0428": {
    "tema": "trauma",
@@ -52049,7 +52157,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52064,7 +52172,31 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "80a58e9baa858273d053f5b6badd261e2060139d2c56491a883fd6b20dd54610"
+   "questaoSha256": "80a58e9baa858273d053f5b6badd261e2060139d2c56491a883fd6b20dd54610",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+      ],
+      "blocos": [
+       "exposta-da-diafise-da-tibia-haste-placa-fixador--d744ddb2",
+       "exposta-da-diafise-da-tibia-haste-placa-fixador--8a8a61aa"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "bf04e6778b027459a858aee4f53b7206c350ab5296a88f86f3218723b307d692"
+     }
+    ],
+    "questaoSha256": "80a58e9baa858273d053f5b6badd261e2060139d2c56491a883fd6b20dd54610",
+    "comentarioSha256": "4c3c0a1ea275273e8e569a5447294c7b8b817b1a2560c54a6911bb2087b14215"
+   }
   },
   "trauma-0437": {
    "tema": "trauma",
@@ -52227,7 +52359,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52250,7 +52382,35 @@
     "rockwood10-60-patela-mecanismo-extensor",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "c8d61e62e411a70ffee5e3c87ce252f83e55bb82a5ab1c3a15e98671ee119e03"
+   "questaoSha256": "c8d61e62e411a70ffee5e3c87ce252f83e55bb82a5ab1c3a15e98671ee119e03",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "As vias: infrapatelar, suprapatelar e semiestendida",
+       "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+      ],
+      "blocos": [
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-127cdfd7",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-79af7f38",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-19fd4b8b",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-94894493",
+       "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "6e51ea7d80987674676601580e9440957d0499cbbe68a1e22e9192cfdb8080d3"
+     }
+    ],
+    "questaoSha256": "c8d61e62e411a70ffee5e3c87ce252f83e55bb82a5ab1c3a15e98671ee119e03",
+    "comentarioSha256": "80fc413aa7fca0b4fb172aa30d36b529998880e2e281ea881d893779aa1a4beb"
+   }
   },
   "trauma-0442": {
    "tema": "trauma",
@@ -54090,7 +54250,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54105,7 +54265,35 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "fc3e968fd646602b75df9ad481d32efabe6e42c92d02eaa86c660c331a9af98a"
+   "questaoSha256": "fc3e968fd646602b75df9ad481d32efabe6e42c92d02eaa86c660c331a9af98a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-c9f67573",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-d1573c60",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-604739ba"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "2a895e8aaf5abe22e15755c095eb5ee6f0dcd89add67823bdbe70b4b1d392df8"
+     }
+    ],
+    "questaoSha256": "fc3e968fd646602b75df9ad481d32efabe6e42c92d02eaa86c660c331a9af98a",
+    "comentarioSha256": "1384772964ad179c13de97ff5d3a9bfc3a331837a16ff7f550b50923fba1f170"
+   }
   },
   "trauma-0578": {
    "tema": "trauma",
@@ -54644,7 +54832,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54659,7 +54847,35 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "98725a7e7a75224fc972528aed1f0920c9b247a7f919e4b7d9312c10ef8a82ce"
+   "questaoSha256": "98725a7e7a75224fc972528aed1f0920c9b247a7f919e4b7d9312c10ef8a82ce",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7a82279e",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-604739ba",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7bc811ca"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "473aaba7d547941772ba4b57b1b484bc3b88c63ccbe591ba2151afa4397553d2"
+     }
+    ],
+    "questaoSha256": "98725a7e7a75224fc972528aed1f0920c9b247a7f919e4b7d9312c10ef8a82ce",
+    "comentarioSha256": "fad1e819b3bb68112d89826272fbae00e002513c53fc6ee247daa4b42d32a309"
+   }
   },
   "trauma-0676": {
    "tema": "trauma",
@@ -59582,7 +59798,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -59597,7 +59813,33 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "83ab4f255be9d7206182d289a7933595b17110df0178b04c41a85a94d027e0ca"
+   "questaoSha256": "83ab4f255be9d7206182d289a7933595b17110df0178b04c41a85a94d027e0ca",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Tratamento não cirúrgico: SARMIENTO e os limites"
+      ],
+      "blocos": [
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-eff67043",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-10b963eb"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "9d5f9c8a4b10c1bbf14726df5ac748973d017fa4fadd7cf57c39eed4885016bf"
+     }
+    ],
+    "questaoSha256": "83ab4f255be9d7206182d289a7933595b17110df0178b04c41a85a94d027e0ca",
+    "comentarioSha256": "adbe650be95a9be0c848bb20703daaeb222f93dc6fb6a7c31525d61ef188bf66"
+   }
   },
   "trauma-0891": {
    "tema": "trauma",
@@ -59980,7 +60222,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60003,7 +60245,30 @@
     "rockwood10-63-diafise-tibia",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "85eeefa6667b2739ce71a9416d9916fb8916aecf88f7daa5bc6c5e7f49a00e67"
+   "questaoSha256": "85eeefa6667b2739ce71a9416d9916fb8916aecf88f7daa5bc6c5e7f49a00e67",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Lesões associadas: tornozelo, planalto, joelho e joelho flutuante"
+      ],
+      "blocos": [
+       "lesoes-associadas-tornozelo-planalto-joelho-e-jo-9bb636fe"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "c11345913ec2a208d00ccdade8521d3718d9c3419c33c645156298cff9529234"
+     }
+    ],
+    "questaoSha256": "85eeefa6667b2739ce71a9416d9916fb8916aecf88f7daa5bc6c5e7f49a00e67",
+    "comentarioSha256": "962eec9a4d586267639ca48e8a4af39bfeee2627177728adb87de8a46587d1d6"
+   }
   },
   "trauma-0905": {
    "tema": "trauma",
@@ -62236,7 +62501,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62251,7 +62516,37 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "a13e0e1b97903916304189d1eb248bb60007dc41fe0d8dc93db1e6eccea697d2"
+   "questaoSha256": "a13e0e1b97903916304189d1eb248bb60007dc41fe0d8dc93db1e6eccea697d2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Placa e fixador externo",
+       "Anatomia aplicada",
+       "A técnica da haste: fresagem, bloqueio e a fratura distal"
+      ],
+      "blocos": [
+       "placa-e-fixador-externo-685f3c8c",
+       "placa-e-fixador-externo-15de0589",
+       "placa-e-fixador-externo-4f4399d4",
+       "anatomia-aplicada-1160e5f1",
+       "anatomia-aplicada-dfd513ad",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-059b8d05"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "4ce5f7883f3c7403ada484487e3dba21a5620b3e26c8c8e7fff161819b3b1d0d"
+     }
+    ],
+    "questaoSha256": "a13e0e1b97903916304189d1eb248bb60007dc41fe0d8dc93db1e6eccea697d2",
+    "comentarioSha256": "80bdb4b708f5ceca434fc35fc7b49ece8cc7f56db9c01a3708f011e86b2670d3"
+   }
   },
   "trauma-0997": {
    "tema": "trauma",
@@ -62486,14 +62781,40 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "4f23d6207172cd2d423de6b3685c974e6d058ee914c0374003e76800b26817c6"
+   "questaoSha256": "4f23d6207172cd2d423de6b3685c974e6d058ee914c0374003e76800b26817c6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Tratamento não cirúrgico: SARMIENTO e os limites"
+      ],
+      "blocos": [
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-80b71d50",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-61bfc78f",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-179d456a",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "2b05c2dc12ee44e11862e2252d8774ae44eb46ad51190113f6535c7c2be953c1"
+     }
+    ],
+    "questaoSha256": "4f23d6207172cd2d423de6b3685c974e6d058ee914c0374003e76800b26817c6",
+    "comentarioSha256": "b859ac2cdb0eba8371162a5c4707a82fccacef51fa0199a8a5cdf9408c5cf0d4"
+   }
   },
   "trauma-1003": {
    "tema": "trauma",
@@ -64458,7 +64779,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64473,7 +64794,36 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "4a4953d8e38d32febb6036c038a458e2cac5d11a6ba57ffa8e53b71fd64b9cd3"
+   "questaoSha256": "4a4953d8e38d32febb6036c038a458e2cac5d11a6ba57ffa8e53b71fd64b9cd3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade",
+       "As vias: infrapatelar, suprapatelar e semiestendida"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-79af7f38",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-19fd4b8b",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-94894493",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-74920353"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "a123c3add92ff429955b9fae71a050b58adfe61a86e71d86e832ae0ea5974c47"
+     }
+    ],
+    "questaoSha256": "4a4953d8e38d32febb6036c038a458e2cac5d11a6ba57ffa8e53b71fd64b9cd3",
+    "comentarioSha256": "44c8bc1370f54aee1702a6a11c47542a2a42503eaa46f5db3f315fd581ff85f3"
+   }
   },
   "trauma-1086": {
    "tema": "trauma",
@@ -64899,7 +65249,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64914,7 +65264,33 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e4ea0d066ecce040f892059ba7c62e559e2222765d01136bd1495ae82a7ce500"
+   "questaoSha256": "e4ea0d066ecce040f892059ba7c62e559e2222765d01136bd1495ae82a7ce500",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Tratamento não cirúrgico: SARMIENTO e os limites"
+      ],
+      "blocos": [
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-eff67043",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-e6835c13"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "776f25617a001ac2b342e12bf97737af522df75b13d46cb402428fa6d6ff836f"
+     }
+    ],
+    "questaoSha256": "e4ea0d066ecce040f892059ba7c62e559e2222765d01136bd1495ae82a7ce500",
+    "comentarioSha256": "217c8f73a6ca52afa1c27c13e43123dc8d7814147eab13f01abc0a76fc16797d"
+   }
   },
   "trauma-1098": {
    "tema": "trauma",
@@ -65717,7 +66093,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65732,7 +66108,32 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "33aa3505599781c7e00ecbb3f54f55deb2e67f93ea6291c9f334248496965404"
+   "questaoSha256": "33aa3505599781c7e00ecbb3f54f55deb2e67f93ea6291c9f334248496965404",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A técnica da haste: fresagem, bloqueio e a fratura distal",
+       "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+      ],
+      "blocos": [
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-b3c973dd",
+       "complicacoes-dor-no-joelho-material-consolidacao-9cf41dac"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "3d1946db096eab99fc86bc51194b29e9449f15393685347f202ba011b00a6514"
+     }
+    ],
+    "questaoSha256": "33aa3505599781c7e00ecbb3f54f55deb2e67f93ea6291c9f334248496965404",
+    "comentarioSha256": "dcb9d462935a966c384eb242c7d29664935be0cbe5ea7eacf1b2d044c2bb87f9"
+   }
   },
   "trauma-1129": {
    "tema": "trauma",
@@ -65765,8 +66166,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 63 não traz as categorias AO de partes moles IO/MT/NV; a OTA-OFC de cinco atributos é outro sistema. Faltam as definições de IO3/IO4, MT4/MT5 e NV1/NV2 para conferir perda de pele, esmagamento e ausência de lesão neurovascular. Não há gabarito oficial registrado; preservar a resposta bibliográfica existente sem acrescentar revisão ou certeza sem fonte.",
    "temComentario": true,
    "citacoes": [
     {
@@ -65780,7 +66181,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "16c84a6a3b21f41ec0152d91dbd49c00fc15846ac797a54ffb4ebd4ac827d480"
+   "questaoSha256": "16c84a6a3b21f41ec0152d91dbd49c00fc15846ac797a54ffb4ebd4ac827d480",
+   "pendencia": "O corpo do resumo 63 não traz as categorias AO de partes moles IO/MT/NV; a OTA-OFC de cinco atributos é outro sistema. Faltam as definições de IO3/IO4, MT4/MT5 e NV1/NV2 para conferir perda de pele, esmagamento e ausência de lesão neurovascular. Não há gabarito oficial registrado; preservar a resposta bibliográfica existente sem acrescentar revisão ou certeza sem fonte."
   },
   "trauma-1132": {
    "tema": "trauma",
@@ -66269,7 +66671,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66292,7 +66694,33 @@
     "rockwood10-37-diafise-umero",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "f0ee2693d51821b59e5d2869a08a69ce042f286e957b43543e6e29ac62209bd1"
+   "questaoSha256": "f0ee2693d51821b59e5d2869a08a69ce042f286e957b43543e6e29ac62209bd1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Tratamento não cirúrgico: SARMIENTO e os limites"
+      ],
+      "blocos": [
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-eff67043",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-e6835c13",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "2e9d79d27a5b2559e6dd613b5e0178d94f3d20e291b2021b48d437412f7fd50a"
+     }
+    ],
+    "questaoSha256": "f0ee2693d51821b59e5d2869a08a69ce042f286e957b43543e6e29ac62209bd1",
+    "comentarioSha256": "fba26cf4bdae1422a1f53d1f47086ef89a626fa0e489dbdc6b956428bbcead65"
+   }
   },
   "trauma-1158": {
    "tema": "trauma",
@@ -66454,8 +66882,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 63 lista fatores de pseudartrose, mas não sustenta a neuropatia como causa da afirmação. A ausência de neuropatia na lista não demonstra que seja falsa. Falta fonte que avalie essa associação causal para julgar certo/errado; preservar a resposta bibliográfica anterior e não fabricar provável a partir de exclusão de lista.",
    "temComentario": true,
    "citacoes": [
     {
@@ -66469,7 +66897,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "67bf2e100486a66225c3356b26332e64a77d34088088a7d1d702ece8ba069bc5"
+   "questaoSha256": "67bf2e100486a66225c3356b26332e64a77d34088088a7d1d702ece8ba069bc5",
+   "pendencia": "O resumo 63 lista fatores de pseudartrose, mas não sustenta a neuropatia como causa da afirmação. A ausência de neuropatia na lista não demonstra que seja falsa. Falta fonte que avalie essa associação causal para julgar certo/errado; preservar a resposta bibliográfica anterior e não fabricar provável a partir de exclusão de lista."
   },
   "trauma-1169": {
    "tema": "trauma",
@@ -66535,8 +66964,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 63 cita cortes de 50% e 30% de desvio inicial em espiral como indicação cirúrgica, mas não demonstra a regra geral de um terço nem a justificativa por retardo de consolidação. Falta fonte do critério exato, do padrão a que se aplica e do desfecho, para julgar a frase composta sem arredondar 30% para um terço. Resposta bibliográfica preservada; não conta como revisão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -66550,7 +66979,8 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "32bc006b424437f44c7adead4017948d03554d323202fc7f410014d60a649044"
+   "questaoSha256": "32bc006b424437f44c7adead4017948d03554d323202fc7f410014d60a649044",
+   "pendencia": "O corpo do resumo 63 cita cortes de 50% e 30% de desvio inicial em espiral como indicação cirúrgica, mas não demonstra a regra geral de um terço nem a justificativa por retardo de consolidação. Falta fonte do critério exato, do padrão a que se aplica e do desfecho, para julgar a frase composta sem arredondar 30% para um terço. Resposta bibliográfica preservada; não conta como revisão."
   },
   "trauma-1172": {
    "tema": "trauma",
@@ -66559,7 +66989,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66574,7 +67004,34 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "13805306292940f81bdb56733fe5cd36290d6f4e6166e2aa4a374a3bcc8b3329"
+   "questaoSha256": "13805306292940f81bdb56733fe5cd36290d6f4e6166e2aa4a374a3bcc8b3329",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7a82279e",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7bc811ca"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "8b4a5f1f162ac81aec187ac2bc8a0ffc4df31e78936ff141b40eb04302087e10"
+     }
+    ],
+    "questaoSha256": "13805306292940f81bdb56733fe5cd36290d6f4e6166e2aa4a374a3bcc8b3329",
+    "comentarioSha256": "81b497de1803c21d2a91ac8d3a37e7f932683cd6c33b811247a706ea42c38347"
+   }
   },
   "trauma-1173": {
    "tema": "trauma",
@@ -66583,7 +67040,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66598,7 +67055,31 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "f33d92fb240ac0925f7ebca5234a5a6b30f67dc20e1b137008aa49ae1b55e844"
+   "questaoSha256": "f33d92fb240ac0925f7ebca5234a5a6b30f67dc20e1b137008aa49ae1b55e844",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A técnica da haste: fresagem, bloqueio e a fratura distal"
+      ],
+      "blocos": [
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-5bbcceb0",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-94ca4e9b"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "3230a4d6e722c2ff98f7897c8559e2b6e554b860c0f04aa1f7f9702f54882510"
+     }
+    ],
+    "questaoSha256": "f33d92fb240ac0925f7ebca5234a5a6b30f67dc20e1b137008aa49ae1b55e844",
+    "comentarioSha256": "53a2d251f91e901ce18290c06fa5a7153d0eaf3a0abc74b6b568eb544bc99608"
+   }
   },
   "trauma-1174": {
    "tema": "trauma",
@@ -67241,14 +67722,15 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 63 descreve Tscherne apenas para fechadas C0–C3; não fornece a categoria Fr. O 3 das abertas, necessária para avaliar laceração extensa e lesão completa do fibular no caso. Gustilo IIIA/IIIC e Tscherne aberto não são intercambiáveis. Falta tabela primária de Tscherne aberto com o critério neurovascular; A oficial preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "c15ce7e73c605d8ab50ec501c44d5a658de6a3b96af177dfb1d3c9b22ac70afe"
+   "questaoSha256": "c15ce7e73c605d8ab50ec501c44d5a658de6a3b96af177dfb1d3c9b22ac70afe",
+   "pendencia": "O resumo 63 descreve Tscherne apenas para fechadas C0–C3; não fornece a categoria Fr. O 3 das abertas, necessária para avaliar laceração extensa e lesão completa do fibular no caso. Gustilo IIIA/IIIC e Tscherne aberto não são intercambiáveis. Falta tabela primária de Tscherne aberto com o critério neurovascular; A oficial preservada."
   },
   "trauma-1212": {
    "tema": "trauma",
@@ -68260,7 +68742,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68275,7 +68757,33 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "7e2fb2336e9296e39cfaa2bd785c81bf622786cd7ec4e947ed1266c73ba54304"
+   "questaoSha256": "7e2fb2336e9296e39cfaa2bd785c81bf622786cd7ec4e947ed1266c73ba54304",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Tratamento não cirúrgico: SARMIENTO e os limites",
+       "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+      ],
+      "blocos": [
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-10b963eb",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-41ba0726",
+       "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "d283b742b9c1efced32239e206007742d9cd64366eb429eac6cacd7ec4085566"
+     }
+    ],
+    "questaoSha256": "7e2fb2336e9296e39cfaa2bd785c81bf622786cd7ec4e947ed1266c73ba54304",
+    "comentarioSha256": "bab412030d873a37118eba0ced240e479e078620bb4d265bf08a8f250ba088bf"
+   }
   },
   "trauma-1237": {
    "tema": "trauma",
@@ -84796,7 +85304,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84811,7 +85319,35 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "1f5fe86ffbe4304b2cb89c2d2b02771d7a5b8a1c49beb71d8b25aac523fae330"
+   "questaoSha256": "1f5fe86ffbe4304b2cb89c2d2b02771d7a5b8a1c49beb71d8b25aac523fae330",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-c9f67573",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-beb95de4",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-dd4166f3",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-d1573c60",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "c7f5d73ef9664f19f0e3babfbe3e3fe7e7395774599430897148e9e79aab2fb8"
+     }
+    ],
+    "questaoSha256": "1f5fe86ffbe4304b2cb89c2d2b02771d7a5b8a1c49beb71d8b25aac523fae330",
+    "comentarioSha256": "0fabf14273b25be44023373614f3ff4c46a0590d4e1eb50cbf8802036e25603a"
+   }
   },
   "trauma-1707": {
    "tema": "trauma",
@@ -84820,7 +85356,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84835,7 +85371,36 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e9c25ffaaa2f9d42d4060e825c06e2bbb1c9711abe9e3dc818a0c9d9f08026ac"
+   "questaoSha256": "e9c25ffaaa2f9d42d4060e825c06e2bbb1c9711abe9e3dc818a0c9d9f08026ac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A haste na fratura proximal: ponto de entrada e deformidade"
+      ],
+      "blocos": [
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-604739ba",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7bc811ca",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-f4c9a7c8",
+       "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-28895b21"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "bbed8a4dc645da233c9144ea002189e1537a71964acea8bc852614569f52a7f6"
+     }
+    ],
+    "questaoSha256": "e9c25ffaaa2f9d42d4060e825c06e2bbb1c9711abe9e3dc818a0c9d9f08026ac",
+    "comentarioSha256": "dd62f61a715cc7842cc205019356c14dcea1ed7d227b46e4960389dabace254d"
+   }
   },
   "trauma-1708": {
    "tema": "trauma",
@@ -84844,7 +85409,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84859,7 +85424,36 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "2cfc6c19b456cbe470c46553b07a85d27299755a435cecc11170df099defa2f0"
+   "questaoSha256": "2cfc6c19b456cbe470c46553b07a85d27299755a435cecc11170df099defa2f0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "As vias: infrapatelar, suprapatelar e semiestendida"
+      ],
+      "blocos": [
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-79af7f38",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-19fd4b8b",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-74920353",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-0887966a",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-094243b8",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-456aa61f",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-b4012701"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "6f04b504ac565e8583c932e34c8ba4f023a5d0d05eca2c14f639b64ade89b729"
+     }
+    ],
+    "questaoSha256": "2cfc6c19b456cbe470c46553b07a85d27299755a435cecc11170df099defa2f0",
+    "comentarioSha256": "b7f2a67633051ae94ed3258766bf698cd9c1bade54a573479e942e2e3bb7678b"
+   }
   },
   "trauma-1709": {
    "tema": "trauma",
@@ -84868,7 +85462,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84883,7 +85477,34 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "0f8da2b22a7c046eda9a83413a5137f6217649df8597780f92c8b9d10f261e1d"
+   "questaoSha256": "0f8da2b22a7c046eda9a83413a5137f6217649df8597780f92c8b9d10f261e1d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A técnica da haste: fresagem, bloqueio e a fratura distal"
+      ],
+      "blocos": [
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-5bbcceb0",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-1c24d311",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-09ad70ff",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-dbada4f1",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-13677fd5"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "7a1a4359e8ae2e68c0b26afdc1167fe81b7b95dcfd4071cc1cf42c41bbbf6c17"
+     }
+    ],
+    "questaoSha256": "0f8da2b22a7c046eda9a83413a5137f6217649df8597780f92c8b9d10f261e1d",
+    "comentarioSha256": "7f1a28858092a83eefb7ed6077f07d57a50b0af290633d52af1ddb45a0f8fcc5"
+   }
   },
   "trauma-1710": {
    "tema": "trauma",
@@ -84892,7 +85513,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84923,7 +85544,30 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "347d938a6fea4f5d84931577e633851599517b67000c9b3e6ed0e28a905b8218"
+   "questaoSha256": "347d938a6fea4f5d84931577e633851599517b67000c9b3e6ed0e28a905b8218",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Lesões associadas: tornozelo, planalto, joelho e joelho flutuante"
+      ],
+      "blocos": [
+       "lesoes-associadas-tornozelo-planalto-joelho-e-jo-9bb636fe"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "c11345913ec2a208d00ccdade8521d3718d9c3419c33c645156298cff9529234"
+     }
+    ],
+    "questaoSha256": "347d938a6fea4f5d84931577e633851599517b67000c9b3e6ed0e28a905b8218",
+    "comentarioSha256": "f79c0435b9d99efdf3d4fc687f390572e332f94ec7d3c7e1a42208ec907a5d6d"
+   }
   },
   "trauma-1711": {
    "tema": "trauma",
@@ -84982,7 +85626,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84997,7 +85641,34 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "415bfb76bb299b0e0e7f4a904c04523bd9f7db94b9c09d6040dd89afcbfc63ab"
+   "questaoSha256": "415bfb76bb299b0e0e7f4a904c04523bd9f7db94b9c09d6040dd89afcbfc63ab",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Tratamento não cirúrgico: SARMIENTO e os limites"
+      ],
+      "blocos": [
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-80b71d50",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-61bfc78f",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-179d456a",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+       "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "8a2b5bf179e30bc2596e5cd1d28f5c46ee2f253032174000a90ddec7310ce7bf"
+     }
+    ],
+    "questaoSha256": "415bfb76bb299b0e0e7f4a904c04523bd9f7db94b9c09d6040dd89afcbfc63ab",
+    "comentarioSha256": "67db1be6aed4eda98537d43b77da0b21ca4bb6eb31c7c0f66f81861d6006a00e"
+   }
   },
   "trauma-1714": {
    "tema": "trauma",
@@ -85034,7 +85705,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85050,7 +85721,33 @@
     "rockwood10-57-diafise-femur",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "673c5cede345f51a9ea04a7345f204bb0931887db230c5ee0aab64d5f9026988"
+   "questaoSha256": "673c5cede345f51a9ea04a7345f204bb0931887db230c5ee0aab64d5f9026988",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Lesões associadas: tornozelo, planalto, joelho e joelho flutuante",
+       "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+      ],
+      "blocos": [
+       "lesoes-associadas-tornozelo-planalto-joelho-e-jo-02bf461f",
+       "lesoes-associadas-tornozelo-planalto-joelho-e-jo-23df5bcb",
+       "exposta-da-diafise-da-tibia-haste-placa-fixador--9315cf01"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "0d96a3f1666efe131c7808945aefd2d3c46046b62ab4282bd31793e81abbfec1"
+     }
+    ],
+    "questaoSha256": "673c5cede345f51a9ea04a7345f204bb0931887db230c5ee0aab64d5f9026988",
+    "comentarioSha256": "6e7f82fef2bf955cc7fa5bdd122c002e4c6d944d08ca2b6425e49398ec56e489"
+   }
   },
   "trauma-1716": {
    "tema": "trauma",
@@ -85059,7 +85756,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85074,7 +85771,35 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "d38b5b2794bf3f84e8289e624b605db1084b8a742f1564d48fc1a77826548fb5"
+   "questaoSha256": "d38b5b2794bf3f84e8289e624b605db1084b8a742f1564d48fc1a77826548fb5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Fratura isolada da diáfise da fíbula"
+      ],
+      "blocos": [
+       "fratura-isolada-da-diafise-da-fibula-24d0e56d",
+       "fratura-isolada-da-diafise-da-fibula-fab95d97",
+       "fratura-isolada-da-diafise-da-fibula-9b6acfb5",
+       "fratura-isolada-da-diafise-da-fibula-a26955fa",
+       "fratura-isolada-da-diafise-da-fibula-fb4e6d2d",
+       "fratura-isolada-da-diafise-da-fibula-9e3a308e"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "7051e7d8112a846f2b0a04a5f7e590d10544db74b987cee8b89b5995bb843186"
+     }
+    ],
+    "questaoSha256": "d38b5b2794bf3f84e8289e624b605db1084b8a742f1564d48fc1a77826548fb5",
+    "comentarioSha256": "a4c87b7b044c1e091cf266c0f9739f4ad8d27354f94bfa81e1bb8600dc8e81c3"
+   }
   },
   "trauma-1717": {
    "tema": "trauma",
@@ -85083,7 +85808,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85105,7 +85830,39 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "831226a8519868791ef2613f79b3e3611bb4001f599bb3d5f48d8da01f72a6f8"
+   "questaoSha256": "831226a8519868791ef2613f79b3e3611bb4001f599bb3d5f48d8da01f72a6f8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "A técnica da haste: fresagem, bloqueio e a fratura distal",
+       "Anatomia aplicada",
+       "Placa e fixador externo"
+      ],
+      "blocos": [
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-216f5a42",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-059b8d05",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-9e444f06",
+       "anatomia-aplicada-dfd513ad",
+       "anatomia-aplicada-32ce3047",
+       "anatomia-aplicada-1160e5f1",
+       "placa-e-fixador-externo-4f4399d4",
+       "placa-e-fixador-externo-9f984b61"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "16d7332d3a8a2029fb5baa6c7cf19542b6c91dbdf9ad48ed441421a10563f365"
+     }
+    ],
+    "questaoSha256": "831226a8519868791ef2613f79b3e3611bb4001f599bb3d5f48d8da01f72a6f8",
+    "comentarioSha256": "6ad4fcaac33ee1bd3da8f6e7bfb1ae289ea18956fb7e4c9990c35d903986209b"
+   }
   },
   "trauma-1718": {
    "tema": "trauma",
@@ -85114,7 +85871,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85129,7 +85886,36 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "53ebfec27abd0c3ac8da90c6e0ec734147a886e3d818a437d8a51a3aab788c37"
+   "questaoSha256": "53ebfec27abd0c3ac8da90c6e0ec734147a886e3d818a437d8a51a3aab788c37",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Placa e fixador externo",
+       "Anatomia aplicada",
+       "A técnica da haste: fresagem, bloqueio e a fratura distal"
+      ],
+      "blocos": [
+       "placa-e-fixador-externo-4f4399d4",
+       "anatomia-aplicada-1160e5f1",
+       "anatomia-aplicada-32ce3047",
+       "anatomia-aplicada-dfd513ad",
+       "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-059b8d05"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "da67b89686b8d3d20e4a7362799d0d3ffb823fc8db8307d8e343025fe72b9172"
+     }
+    ],
+    "questaoSha256": "53ebfec27abd0c3ac8da90c6e0ec734147a886e3d818a437d8a51a3aab788c37",
+    "comentarioSha256": "8c9cab89066bb51a771d825a567753c6f54bc072d0e73bd2979a154cf45fda56"
+   }
   },
   "trauma-1719": {
    "tema": "trauma",
@@ -85138,7 +85924,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85153,7 +85939,34 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "54b17dc31263660436d78e33a621e3ddf4f1142d54e1a44ff7d7242df97f56b5"
+   "questaoSha256": "54b17dc31263660436d78e33a621e3ddf4f1142d54e1a44ff7d7242df97f56b5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção",
+       "As vias: infrapatelar, suprapatelar e semiestendida"
+      ],
+      "blocos": [
+       "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b",
+       "complicacoes-dor-no-joelho-material-consolidacao-d824b854",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-94894493",
+       "as-vias-infrapatelar-suprapatelar-e-semiestendid-19fd4b8b"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "1dc024a2ad21bdab0c600a9b179cc3e1ae1d305773de7f2df489c8bb8283b829"
+     }
+    ],
+    "questaoSha256": "54b17dc31263660436d78e33a621e3ddf4f1142d54e1a44ff7d7242df97f56b5",
+    "comentarioSha256": "3b2d84b03dad26c3965f21c028ebbd056b96958007d0c19c3352fbeac50b116c"
+   }
   },
   "trauma-1720": {
    "tema": "trauma",

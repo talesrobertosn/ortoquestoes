@@ -1,0 +1,387 @@
+{
+  "trauma-0435": {
+    "questaoSha256": "80a58e9baa858273d053f5b6badd261e2060139d2c56491a883fd6b20dd54610",
+    "comentarioAnteriorSha256": "e6b5fafa41b8b94516fdc5a187be69d9d54fc58d5e063c72486c8640f9af35e6",
+    "comentario": {
+      "conceito": "Isquemia e idade entram no **MESS**, alternativa A, mas acertar os componentes do escore é diferente de usá-lo como ordem automática para amputar. O resumo enfatiza essa limitação porque um número alto pode parecer mais decisivo do que realmente é.\n\nO MESS reúne **energia da lesão, isquemia, choque e idade**. A pontuação da isquemia dobra quando ela ultrapassa seis horas. Assim, a escala tenta organizar a gravidade local e o estado do paciente; ela não se limita ao desenho da fratura nem ao tempo durante o qual a ferida sangrou (Rockwood, 10ª ed., cap. 63, “Amputação”).\n\n**Uma ferramenta prognóstica não substitui a avaliação do membro e da vida.** O limiar histórico acima de sete pontos teve resultados muito variáveis nas séries. No estudo de Bosse citado pelo capítulo, escores baixos previam melhor o salvamento do que escores altos previam a amputação. O resumo conclui que esses escores não são usados isoladamente na prática atual para decidir.\n\nA decisão real considera, entre outros pontos, isquemia quente prolongada, viabilidade e possibilidade de reconstrução sem colocar a vida em risco. Não é adequado transformar “idade entra no escore” em “idoso deve amputar”, nem confundir choque, que faz parte do cálculo, com uma decisão irreversível baseada num único dado.\n\n> **Na prova:** MESS soma energia, isquemia, choque e idade; na prática, pontuação alta não determina amputação sozinha.",
+      "correta": "**A: isquemia e idade.** Ambos são componentes explícitos do MESS. A resposta identifica variáveis do cálculo e não afirma que qualquer uma delas, isolada, indique amputação.",
+      "incorretas": {
+        "B": "**Tempo de sangramento não é o tempo de isquemia.** O escore inclui a falta de perfusão e sua duração, com duplicação da pontuação após seis horas, mas não lista o tempo de sangramento como componente independente. A semelhança entre dois tempos clínicos não os torna intercambiáveis.",
+        "C": "**A palavra “somente” exclui a maior parte da escala.** O MESS incorpora energia da lesão, isquemia, choque e idade. Descrever apenas o osso ignora perfusão e condição sistêmica, que são centrais nesse tipo de trauma.",
+        "D": "**Comorbidades importam na avaliação, mas não são o componente listado.** O resumo apresenta idade e choque entre as variáveis, sem incluir doenças sistêmicas prévias como item próprio do MESS. Relevância clínica e composição de um escore são perguntas diferentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Exposta da diáfise da tíbia: haste, placa, fixador e amputação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+        ],
+        "blocos": [
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--d744ddb2",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--8a8a61aa"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "bf04e6778b027459a858aee4f53b7206c350ab5296a88f86f3218723b307d692"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1085": {
+    "questaoSha256": "4a4953d8e38d32febb6036c038a458e2cac5d11a6ba57ffa8e53b71fd64b9cd3",
+    "comentarioAnteriorSha256": "36543253eb8334433f8a6a01fd3eac410eb50309eacaedbd9335429323379c11",
+    "comentario": {
+      "conceito": "A via suprapatelar ganhou espaço porque a **fratura proximal da tíbia** é difícil de alinhar com a haste, alternativa B. A indicação está ligada ao controle do fragmento, e não simplesmente à largura do canal ou à qualidade óssea.\n\nNa diáfise, as corticais próximas ajudam a guiar a haste. Na metáfise proximal larga, o implante tem folga, e o fragmento curto pode acompanhar um trajeto errado do fio e da fresa. Com o joelho hiperfletido na via infrapatelar, a força do aparelho extensor favorece ápice anterior; a patela também pode dificultar a posição do ponto de entrada (Rockwood, 10ª ed., cap. 63, “A haste na fratura proximal” e “Suprapatelar”).\n\n**Trabalhar em semiextensão muda essas condições.** A suprapatelar permite apoiar a perna, diminui a força deformante extensora e facilita o AP. Cânulas protegem a articulação patelofemoral durante a passagem do instrumental. A vantagem não dispensa reduzir antes de fresar nem conferir ponto e direção no perfil.\n\nHá uso da técnica em outros padrões, inclusive distais, mas isso não muda o problema que motivou sua indicação principal. A escolha ainda depende de mobilidade da patela, espaço patelofemoral, feridas, incisões e experiência do cirurgião. Tampouco se deve prometer menos dor: a comparação entre vias não mostrou diferença consistente nesse resultado.\n\n> **Na prova:** suprapatelar se associa à fratura proximal pelo controle da redução com o joelho semiestendido.",
+      "correta": "**B: fratura proximal da tíbia.** É o padrão que motivou a via, pela dificuldade de controlar valgo e ápice anterior e de obter um trajeto adequado na metáfise larga. A semiextensão facilita esse trabalho.",
+      "incorretas": {
+        "A": "**A via não alarga o canal medular.** Canal estreito é uma limitação de dimensionamento e instrumentação, não a razão principal apresentada para entrar acima da patela. O problema que a suprapatelar resolve é sobretudo de posição e controle proximal.",
+        "C": "**Cominução exige estabilização, mas não define sozinha o acesso.** O capítulo não apresenta o número de fragmentos como indicação principal da suprapatelar. A localização proximal e as forças deformantes explicam melhor a escolha solicitada.",
+        "D": "**Qualidade óssea não é sinônimo de via de entrada.** Osteoporose pode influenciar estabilidade e bloqueios, mas a vantagem descrita para a suprapatelar vem da posição semiestendida e do acesso ao ponto proximal. Não é uma indicação automática por idade ou densidade óssea."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A haste na fratura proximal: ponto de entrada e deformidade; As vias: infrapatelar, suprapatelar e semiestendida."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A haste na fratura proximal: ponto de entrada e deformidade",
+          "As vias: infrapatelar, suprapatelar e semiestendida"
+        ],
+        "blocos": [
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-79af7f38",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-19fd4b8b",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-94894493",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-74920353"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "a123c3add92ff429955b9fae71a050b58adfe61a86e71d86e832ae0ea5974c47"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1097": {
+    "questaoSha256": "e4ea0d066ecce040f892059ba7c62e559e2222765d01136bd1495ae82a7ce500",
+    "comentarioAnteriorSha256": "01828867142a637c040ae027e4a2e27e2ce678957e46989e738e8b82845fe398",
+    "comentario": {
+      "conceito": "A órtese funcional não transforma a fíbula numa placa interna. Ela utiliza o envelope de **partes moles** para ajudar a conter a tíbia fraturada; por isso a alternativa D expressa o fundamento do método de Sarmiento.\n\nOs tecidos da perna têm conteúdo líquido pouco compressível. Uma órtese justa e bem moldada exerce contenção e pressão hidráulica sobre esse conjunto, ajudando a manter o alinhamento enquanto a carga precoce estimula a consolidação. Se as partes moles não toleram o molde, ou se outras lesões impedem a carga, o mecanismo deixa de ser uma solução adequada (Rockwood, 10ª ed., cap. 63, “A técnica” do tratamento funcional).\n\n**O molde precisa encontrar uma redução aceitável.** A órtese não corrige automaticamente comprimento ou eixo inadequados. O capítulo propõe inicialmente tala ou gesso longo enquanto o edema baixa e o calo começa, com passagem posterior ao PTB ou à órtese. Esta última pode liberar também o tornozelo, mostrando que o princípio não depende de manter todas as articulações imóveis.\n\nFíbula íntegra, aliás, é um fator de atenção para deformidade angular tardia, sobretudo varo, não a base que garante o sucesso do método. O acompanhamento deve confirmar manutenção do eixo e tolerância dos tecidos, além de evolução da consolidação.\n\n> **Na prova:** Sarmiento depende da contenção das partes moles por um molde adequado, não da integridade da fíbula.",
+      "correta": "**D: integridade das partes moles.** O envelope precisa tolerar a órtese e transmitir a contenção hidráulica que ajuda a manter a redução. Isso se soma a alinhamento inicial aceitável e possibilidade de seguir o protocolo funcional.",
+      "incorretas": {
+        "A": "**A fíbula inteira pode até dificultar a manutenção do eixo.** O resumo a relaciona a varo e deformidade angular tardia na tíbia desviada. Ela não é o mecanismo de contenção no qual o tratamento funcional se apoia.",
+        "B": "**Imobilização inicial não é o fundamento do método funcional.** O protocolo pode começar com gesso longo, mas depois permite PTB ou órtese, esta liberando também o tornozelo. A função vem do molde e das partes moles, não da exigência de manter o joelho imóvel durante todo o tratamento.",
+        "C": "**Não descreve a contenção hidráulica apresentada.** A estabilidade da órtese bem moldada é transmitida pelo envelope de tecidos ao redor da perna. Resumi-la a dois pontos perde o mecanismo que o capítulo usa para explicar o método."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Tratamento não cirúrgico: SARMIENTO e os limites."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Tratamento não cirúrgico: SARMIENTO e os limites"
+        ],
+        "blocos": [
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-eff67043",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-e6835c13"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "776f25617a001ac2b342e12bf97737af522df75b13d46cb402428fa6d6ff836f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1128": {
+    "questaoSha256": "33aa3505599781c7e00ecbb3f54f55deb2e67f93ea6291c9f334248496965404",
+    "comentarioAnteriorSha256": "b0983f968fb9957fcfe8221f419c4e05ed1b71dc9010460aeedfa6738cb649d3",
+    "comentario": {
+      "conceito": "A haste entrou, mas deixou uma **diástase no foco**. No traço axialmente estável, a sequência descrita é **bloquear distalmente, reduzir a diástase por recuo da haste e só então bloquear proximalmente**. A é a resposta provável sustentada pelo resumo; não há gabarito oficial registrado.\n\nUma haste que mantém comprimento excessivo pode deixar os fragmentos separados. Essa falha é indesejável porque aumenta o risco de pseudartrose. O bloqueio distal prende a haste ao segmento distal; o recuo, ou back slapping, permite aproximar esse conjunto do fragmento proximal antes de fechar o bloqueio de cima (Rockwood, 10ª ed., cap. 63, “Bloqueio e compressão”).\n\n**A ordem cria o apoio necessário para a manobra.** Sem a ancoragem distal inicial, mover a haste não garante trazer o fragmento distal junto. Depois da aproximação, o bloqueio proximal mantém a relação obtida. A fonte também observa que empurrar para a frente uma haste já bloqueada em cima exige mais força, porque sua ponta encontra a metáfise distal não fresada.\n\nEssa explicação não autoriza comprimir qualquer fratura até encurtá-la. O próprio trecho restringe a manobra aos traços axialmente estáveis; na cominução, preservar comprimento, rotação e eixo continua essencial. A questão cobra a sequência para corrigir a separação, não uma autorização para perder redução em outro plano.\n\n> **Na prova:** primeiro ancore distalmente; depois aproxime; por último bloqueie em cima.",
+      "correta": "**A: bloqueio distal / redução da diástase / bloqueio proximal.** A fixação distal permite que o recuo da haste mobilize o fragmento distal e feche a separação antes do bloqueio proximal. Mantida como provável, sem atribuir um gabarito oficial inexistente.",
+      "incorretas": {
+        "B": "**Começa pelo lado que dificulta a manobra descrita.** Bloquear em cima e tentar empurrar a haste para a frente exige vencer a metáfise distal não fresada, segundo o resumo. Não é a sequência de bloqueio distal e recuo apresentada para compressão.",
+        "C": "**Tenta corrigir antes de criar a ancoragem distal.** Na técnica descrita, é o bloqueio de baixo que faz o fragmento acompanhar o recuo da haste. Além de antecipar a aproximação, a opção bloqueia proximalmente antes de distalmente.",
+        "D": "**Termina na ordem certa, mas antecipa a etapa decisiva.** Reduzir a diástase vem depois de fixar distalmente a haste. O fato de terminar com bloqueio proximal não corrige a falta inicial do apoio necessário ao back slapping."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A técnica da haste: fresagem, bloqueio e a fratura distal; Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável A, sustentada pelo resumo do Rockwood, 10ª ed., cap. 63: em traços axialmente estáveis, bloqueio distal, correção da diástase por recuo e bloqueio proximal."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A técnica da haste: fresagem, bloqueio e a fratura distal",
+          "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+        ],
+        "blocos": [
+          "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-b3c973dd",
+          "complicacoes-dor-no-joelho-material-consolidacao-9cf41dac"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "3d1946db096eab99fc86bc51194b29e9449f15393685347f202ba011b00a6514"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1156": {
+    "questaoSha256": "f0ee2693d51821b59e5d2869a08a69ce042f286e957b43543e6e29ac62209bd1",
+    "comentarioAnteriorSha256": "3f0e5e7403f24a81385b3888626fa292b3c4e283fc4c90d1f320b4942b8840aa",
+    "comentario": {
+      "conceito": "Uma órtese bem moldada consegue ajudar a manter a tíbia alinhada sem funcionar como uma placa rígida presa ao osso. Ela utiliza a **pressão exercida sobre as partes moles**, princípio que torna a afirmação verdadeira. A é a resposta provável; não há gabarito oficial registrado.\n\nO resumo chama esse mecanismo de pressão hidráulica: o molde justo contém os tecidos com líquido pouco compressível da perna. A carga precoce estimula a consolidação, enquanto a contenção ajuda a manter a posição. “Hidrostática”, no enunciado, expressa esse mesmo fundamento de pressão transmitida pelo envelope de tecidos, não uma pressão aplicada diretamente por parafusos (Rockwood, 10ª ed., cap. 63, “A técnica” do tratamento funcional).\n\n**O mecanismo depende de seleção e acompanhamento.** Primeiro é necessária uma redução aceitável; partes moles que não toleram gesso ou órtese e lesões que impedem a carga são limitações. O protocolo começa com tala ou gesso longo enquanto o edema diminui e depois pode seguir com órtese funcional, que permite também liberar o tornozelo.\n\nA contenção não elimina o risco de perder o eixo. O capítulo destaca varo com fíbula íntegra e observa que a órtese não corrige nem aumenta o encurtamento inicial. Assim, conhecer o princípio deve levar a verificar o molde, a pele e a redução nos retornos, em vez de concluir que a fratura se manterá sozinha.\n\n> **Na prova:** a pressão transmitida pelas partes moles contidas pela órtese explica o método funcional.",
+      "correta": "**A: Certo.** A afirmação corresponde ao mecanismo hidráulico descrito no resumo para a órtese funcional bem moldada. A resposta permanece provável, sem ser apresentada como oficial.",
+      "incorretas": {
+        "B": "**Negaria o mecanismo descrito pelo capítulo.** O texto associa o molde justo à pressão sobre os tecidos de líquido incompressível. Isso não significa que qualquer órtese funcione em qualquer fratura: redução, tolerância das partes moles e possibilidade de carga continuam necessárias."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Tratamento não cirúrgico: SARMIENTO e os limites."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável A: o corpo do resumo 63 descreve pressão hidráulica sobre as partes moles como fundamento da órtese funcional; o enunciado usa o termo hidrostática."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Tratamento não cirúrgico: SARMIENTO e os limites"
+        ],
+        "blocos": [
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-eff67043",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-e6835c13",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "2e9d79d27a5b2559e6dd613b5e0178d94f3d20e291b2021b48d437412f7fd50a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1172": {
+    "questaoSha256": "13805306292940f81bdb56733fe5cd36290d6f4e6166e2aa4a374a3bcc8b3329",
+    "comentarioAnteriorSha256": "31073502f58713f1209a346925e1b882a246c1b7768f02429237d5524dcafc05",
+    "comentario": {
+      "conceito": "A frase acerta o **valgo**, mas troca o desvio sagital: o padrão descrito é **ápice anterior, ou procurvato**, e não recurvato. Por isso B, Errado, é a resposta provável pelo resumo, sem gabarito oficial registrado.\n\nOs dois planos têm mecanismos diferentes. Na metáfise proximal larga, o ponto medial demais e a fresa que desliza de medial para lateral podem criar um caminho que favorece valgo. Já a tração do aparelho extensor, principalmente com o joelho fletido, e o fio dirigido para posterior favorecem o ápice anterior quando a haste ocupa o trajeto (Rockwood, 10ª ed., cap. 63, “Por que a fratura proximal vai para valgo e ápice anterior”).\n\n**Um termo certo não salva a frase composta.** Dizer “valgo e recurvato” exige que os dois componentes correspondam ao padrão; não basta reconhecer o primeiro. Também é importante não transformar “fio posterior” em “ápice posterior”: a direção do instrumental e o nome da angulação não são a mesma descrição.\n\nA prevenção vem antes de fresar: obter e manter a redução, conferir o ponto no AP e a direção no perfil e usar auxiliares quando necessário. A semiextensão reduz a força extensora, enquanto Poller, placa provisória, pinça ou distrator podem ajudar conforme a configuração da fratura.\n\n> **Na prova:** o par proximal clássico é valgo com procurvato; trocar por recurvato torna a afirmação errada.",
+      "correta": "**B: Errado.** O resumo descreve valgo com ápice anterior, não posterior. Preservada como resposta provável, pois não há gabarito oficial registrado no acervo.",
+      "incorretas": {
+        "A": "**Aceitaria um componente sagital invertido.** Valgo está de acordo com o padrão associado ao ponto medial, mas recurvato não corresponde ao ápice anterior produzido pela tração extensora e pelo fio posterior. A frase só seria correta com a descrição sagital adequada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A haste na fratura proximal: ponto de entrada e deformidade."
+      ],
+      "conferido": false,
+      "provavel": "B",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável B: o resumo do Rockwood, 10ª ed., cap. 63 descreve valgo e ápice anterior (procurvato/antecurvato), enquanto a frase afirma recurvato."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A haste na fratura proximal: ponto de entrada e deformidade"
+        ],
+        "blocos": [
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7a82279e",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7bc811ca"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "8b4a5f1f162ac81aec187ac2bc8a0ffc4df31e78936ff141b40eb04302087e10"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1173": {
+    "questaoSha256": "f33d92fb240ac0925f7ebca5234a5a6b30f67dc20e1b137008aa49ae1b55e844",
+    "comentarioAnteriorSha256": "005672957419bd274311369c3690a5061e1de418883a3e0a15677497527642f3",
+    "comentario": {
+      "conceito": "A afirmação aponta a **pseudartrose** como diferença entre haste e placa na metáfise tibial. O estudo comparativo descrito no resumo encontrou outra diferença: **mais malalinhamento com a haste**, com pseudartrose semelhante. B, Errado, permanece a resposta provável, sem gabarito oficial registrado.\n\nA explicação mecânica começa na largura da metáfise. A haste se ajusta melhor à diáfise estreita; distalmente, o espaço ao redor do implante permite um trajeto excêntrico e perda do eixo. No ensaio randomizado de Vallier citado pelo capítulo para fraturas metafisárias distais, o malalinhamento foi de 23% com haste e 8,3% com placa, sem diferença correspondente de pseudartrose, infecção ou retirada de material (Rockwood, 10ª ed., cap. 63, “A fratura distal”).\n\n**Consolidação e alinhamento medem resultados diferentes.** Uma fratura pode unir fora do eixo. Da mesma forma, uma redução alinhada não garante que a biologia permitirá a união. Confundir esses desfechos faz o aluno atribuir ao implante uma desvantagem que o estudo não demonstrou.\n\nOs números citados se referem à metáfise distal estudada; não devem virar uma estimativa universal para qualquer padrão proximal ou distal. Na prática, ponto do fio, manutenção da redução durante a fresagem, bloqueios e condições das partes moles continuam influenciando a escolha e a execução da técnica.\n\n> **Na prova:** na comparação descrita, a desvantagem da haste foi malalinhamento, não maior pseudartrose.",
+      "correta": "**B: Errado.** O ensaio de fraturas metafisárias distais apresentado pelo resumo mostrou pseudartrose semelhante e mais malalinhamento com haste. A alternativa permanece provável e não é atribuída à banca como gabarito oficial.",
+      "incorretas": {
+        "A": "**Troca o desfecho em que houve diferença.** O excesso observado foi de malalinhamento, enquanto a pseudartrose foi semelhante entre os grupos. Isso não prova ausência de risco de pseudartrose com nenhum implante; apenas impede atribuir ao estudo a superioridade da placa nesse desfecho."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A técnica da haste: fresagem, bloqueio e a fratura distal."
+      ],
+      "conferido": false,
+      "provavel": "B",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável B. A evidência comparativa do resumo 63 é de fraturas metafisárias distais: mais malalinhamento com haste, mas pseudartrose semelhante à placa; não generalizar os números a toda fratura metafisária."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A técnica da haste: fresagem, bloqueio e a fratura distal"
+        ],
+        "blocos": [
+          "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-5bbcceb0",
+          "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-94ca4e9b"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "3230a4d6e722c2ff98f7897c8559e2b6e554b860c0f04aa1f7f9702f54882510"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1236": {
+    "questaoSha256": "7e2fb2336e9296e39cfaa2bd785c81bf622786cd7ec4e947ed1266c73ba54304",
+    "comentarioAnteriorSha256": "fa586f2b68e0ef6e5e12083ae58a82f556e357c0c69957ceb08cb1074f47a73b",
+    "comentario": {
+      "conceito": "O ensaio foi interrompido porque os resultados favoreceram a **haste intramedular**, alternativa A. A questão pede o motivo daquela decisão no estudo, não uma lista geral de vantagens e complicações dos dois tratamentos.\n\nO resumo identifica a randomização de Hooper e relata que a continuidade do tratamento fechado foi julgada inadequada diante do desempenho inferior desse grupo. Houve 27% de retardo ou pseudartrose no grupo fechado e menor tempo de afastamento com a haste (Rockwood, 10ª ed., cap. 63, “Os resultados de Sarmiento e dos outros”).\n\n**Por que isso não elimina a órtese em todo paciente?** O próprio capítulo ainda admite tratamento não cirúrgico com alinhamento inicial excelente ou risco anestésico muito alto. O método funcional depende de boa seleção, partes moles que tolerem o molde e possibilidade de seguir o protocolo. Um resultado médio favorável à haste não apaga essas condições individuais.\n\nTambém é necessário separar estudos. O mesmo resumo cita outros resultados, como a série funcional de Sarmiento e a comparação de Bone, com números diferentes. Não se deve atribuir a Hooper toda taxa de retirada da haste, toda infecção ou toda dor no joelho mencionada no capítulo. Dor anterior é relevante para orientar o paciente, mas não é a razão apresentada para a interrupção deste ensaio.\n\n> **Na prova:** no ensaio citado, a superioridade do resultado com haste levou à interrupção precoce do grupo comparativo.",
+      "correta": "**A: os resultados foram melhores com a haste intramedular.** Essa é a explicação fornecida para o encerramento precoce, com mais retardo/pseudartrose no tratamento fechado e menor afastamento com a haste.",
+      "incorretas": {
+        "B": "**Inverte o sentido do resultado.** A decisão relatada ocorreu porque o tratamento fechado teve desempenho pior, não porque a órtese superou a haste. A boa série de Sarmiento citada em outro trecho não deve ser transferida para esse ensaio.",
+        "C": "**Importa uma complicação sem ser o motivo descrito.** Infecção é relevante em fraturas e cirurgias, especialmente expostas, mas o relato da interrupção destaca resultado superior com haste e retardo/pseudartrose no grupo fechado. Não foi apresentado como excesso de infecção no grupo operado.",
+        "D": "**Confunde uma queixa real com a decisão do ensaio.** Dor anterior do joelho pode persistir após haste e precisa ser discutida. O capítulo, porém, não a aponta como causa de interrupção dessa comparação; o resultado favoreceu a haste."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Tratamento não cirúrgico: SARMIENTO e os limites; Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Tratamento não cirúrgico: SARMIENTO e os limites",
+          "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+        ],
+        "blocos": [
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-10b963eb",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-41ba0726",
+          "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "d283b742b9c1efced32239e206007742d9cd64366eb429eac6cacd7ec4085566"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1002": {
+    "questaoSha256": "4f23d6207172cd2d423de6b3685c974e6d058ee914c0374003e76800b26817c6",
+    "comentarioAnteriorSha256": "f611d149e1f117d14373e9c9c41a171658d30eacac3cb382c305aabe8aae4066",
+    "comentario": {
+      "conceito": "Entre as margens oferecidas, **valgo menor que 5 graus** é a que corresponde ao consenso apresentado, alternativa B. A própria abertura da questão lembra que a evidência sobre tolerâncias é limitada: o número orienta a seleção, mas não substitui a avaliação do conjunto.\n\nNa tabela do resumo, tanto varo quanto valgo devem ficar abaixo de 5 graus. Para angulação em ápice anterior ou posterior, a faixa é menor que 5 a 10 graus; para rotação, menor que 0 a 10 graus. O encurtamento deve ficar abaixo de 10 a 12 mm, com preferência dos autores por uma margem menor (Rockwood, 10ª ed., cap. 63, “Os limites aceitáveis”).\n\n**Os planos não têm a mesma tolerância.** Joelho e tornozelo compensam parte da angulação sagital, mas não o desvio coronal da mesma forma. Por isso não se pode importar o limite superior sagital para aceitar 10 graus de varo, nem ampliar a rotação para 15 graus apenas porque o membro ainda parece utilizável.\n\nA tabela também não autoriza esperar que uma redução ruim melhore dentro do gesso. A tíbia deve começar com eixo, comprimento e rotação aceitáveis e ser acompanhada para detectar perda de posição. Fraturas muito proximais ou distais e fíbula íntegra dificultam a manutenção; partes moles, exposição e capacidade de seguir o tratamento ainda podem indicar outra estratégia.\n\n> **Na prova:** nessa tabela, o plano coronal fica abaixo de 5 graus; as opções com margens maiores não reproduzem o consenso.",
+      "correta": "**B: valgo menor que cinco graus.** É o limite coronal da tabela consultada e o único compatível entre as alternativas. A mesma margem se aplica ao varo nessa referência.",
+      "incorretas": {
+        "A": "**Amplia a margem de varo.** O limite apresentado é menor que 5 graus, assim como no valgo. A faixa de até 10 graus encontrada em outros planos não deve ser transferida para o coronal.",
+        "C": "**Permite rotação além da faixa da tabela.** O resumo apresenta limite menor que 0 a 10 graus, não 15. A rotação muda a relação entre os eixos do joelho e do tornozelo e precisa de controle próprio.",
+        "D": "**Vinte graus anteriores excedem a referência sagital.** A faixa apresentada para ápice anterior ou posterior é menor que 5 a 10 graus. A capacidade de compensação sagital não é uma autorização para dobrar esse limite.",
+        "E": "**Quinze graus posteriores também ultrapassam a faixa.** A tabela não dá uma tolerância especial maior para esse sentido. Ápice anterior e posterior compartilham a referência de 5 a 10 graus apresentada no resumo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Tratamento não cirúrgico: SARMIENTO e os limites."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Tratamento não cirúrgico: SARMIENTO e os limites"
+        ],
+        "blocos": [
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-80b71d50",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-61bfc78f",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-179d456a",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "2b05c2dc12ee44e11862e2252d8774ae44eb46ad51190113f6535c7c2be953c1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1718": {
+    "questaoSha256": "53ebfec27abd0c3ac8da90c6e0ec734147a886e3d818a437d8a51a3aab788c37",
+    "comentarioAnteriorSha256": "8e7a20d3510cd5303708d923163c4c12c9dc430c056f3b0345e8435e462f46d6",
+    "comentario": {
+      "conceito": "A placa medial fica perto do **safeno**; os parafusos distais percutâneos de uma placa anterolateral exigem atenção ao **fibular superficial**. A alternativa D organiza os riscos pela via efetivamente utilizada, sem trocar nervos pelo nome parecido.\n\nA via medial expõe diretamente a tíbia, com pouca cobertura profunda sobre a placa. O resumo destaca o safeno como estrutura nervosa em risco. A anterolateral permite deslizar a placa sob os músculos e oferece melhor cobertura, mas distalmente o fibular superficial atravessa a fáscia num trajeto variável, cerca de 10 a 12 cm acima da ponta da fíbula (Rockwood, 10ª ed., cap. 63, “As vias” e “Anatomia aplicada”).\n\n**O risco muda conforme o caminho do instrumento.** O fibular profundo acompanha o compartimento anterior e é lembrado junto à artéria tibial anterior no bloqueio distal anteroposterior da haste. Esse é outro procedimento e outra direção. O superficial, relacionado ao compartimento lateral e ao dorso do pé, é o nervo destacado para os parafusos laterais distais da placa.\n\nO exame sensitivo ajuda a documentar essas estruturas: safeno no maléolo medial, sural na face lateral do tornozelo e calcanhar, fibular profundo no primeiro espaço interdigital e superficial no dorso do pé. Localizar um déficit antes e depois da redução permite reconhecer uma alteração nova, mas não substitui dissecção cuidadosa e proteção durante a instrumentação.\n\n> **Na prova:** medial, safeno; anterolateral distal percutânea, fibular superficial.\n\n**Por que esta questão foi criada.** Ela compara duas janelas de placa e distingue seus riscos daqueles dos parafusos de uma haste, exigindo anatomia aplicada ao trajeto cirúrgico.",
+      "correta": "**D: safeno e fibular superficial.** São os nervos destacados nas vias medial e anterolateral distal percutânea, respectivamente. A escolha da cobertura não elimina a necessidade de proteger a estrutura no trajeto dos parafusos.",
+      "incorretas": {
+        "A": "**Troca os dois nervos pelos de outros territórios.** O sural se relaciona à face lateral do tornozelo e calcanhar, não é o risco medial descrito. O fibular profundo pertence ao compartimento anterior e não substitui o superficial no risco lateral percutâneo da placa.",
+        "B": "**O risco anterolateral está correto; o medial não.** O fibular superficial é a estrutura a proteger distalmente na placa lateral. Na via medial da tíbia, a tabela destaca o safeno, não o sural.",
+        "C": "**Acerta o safeno e confunde superficial com profundo.** O fibular profundo é lembrado no feixe anterior e no parafuso AP distal da haste. Nos parafusos laterais percutâneos da placa, o risco destacado é do superficial, que atravessa a fáscia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Placa e fixador externo; Anatomia aplicada; A técnica da haste: fresagem, bloqueio e a fratura distal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Placa e fixador externo",
+          "Anatomia aplicada",
+          "A técnica da haste: fresagem, bloqueio e a fratura distal"
+        ],
+        "blocos": [
+          "placa-e-fixador-externo-4f4399d4",
+          "anatomia-aplicada-1160e5f1",
+          "anatomia-aplicada-32ce3047",
+          "anatomia-aplicada-dfd513ad",
+          "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-059b8d05"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "da67b89686b8d3d20e4a7362799d0d3ffb823fc8db8307d8e343025fe72b9172"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
