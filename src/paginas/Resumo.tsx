@@ -1,3 +1,4 @@
+import { letraExibida } from '../dados/ordemAlternativas'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
@@ -38,6 +39,8 @@ interface Linha {
   questao?: Questao
   resposta?: Resposta
   situacao: Situacao
+  /** Treino com revisão em ordem nova: a ordem em que ela apareceu (as letras do resumo são as que a pessoa viu). */
+  ordem?: string
 }
 
 const ROTULO_CONFIANCA: Record<Confianca, string> = { seguro: 'Certeza', duvida: 'Dúvida', chute: 'Chute' }
@@ -97,9 +100,16 @@ function EntregaNacional({ sessao, aoEntregar }: { sessao: EstadoSessao; aoEntre
  * A letra marcada, ou null na dissertativa. Decide pelo tipo da questão, não só
  * pela letra gravada: sessões salvas antes da correção ainda têm 'A' nelas.
  */
-function letraMarcada(l: { questao?: Questao | null; resposta?: Resposta | null }): string | null {
+function letraMarcada(l: { questao?: Questao | null; resposta?: Resposta | null; ordem?: string }): string | null {
   if (l.questao?.tipo === 'dissertativa') return null
-  return l.resposta?.escolhida ?? null
+  const letra = l.resposta?.escolhida ?? null
+  return letra && letraExibida(l.ordem, letra)
+}
+
+/** O gabarito na letra em que a pessoa viu a questão. */
+function gabaritoVisto(l: { questao?: Questao | null; ordem?: string }): string | null {
+  const g = l.questao?.gabarito ?? null
+  return g && letraExibida(l.ordem, g)
 }
 
 export function Resumo() {
@@ -127,7 +137,7 @@ export function Resumo() {
     const linhas: Linha[] = sessao.ids.map((id, i) => {
       const resposta = sessao.respostas[id]
       const situacao: Situacao = !resposta ? 'pulada' : resposta.correta === null ? 'anulada' : resposta.correta ? 'certa' : 'errada'
-      return { numero: i + 1, id, questao: porId.get(id), resposta, situacao }
+      return { numero: i + 1, id, questao: porId.get(id), resposta, situacao, ordem: sessao.ordens?.[id] }
     })
     const respondidas = linhas.filter((l) => l.resposta)
     const validas = respondidas.filter((l) => l.situacao === 'certa' || l.situacao === 'errada')
@@ -278,7 +288,7 @@ export function Resumo() {
           l.questao?.ano ?? '',
           l.questao?.prova ?? '',
           letraMarcada(l) ?? '',
-          l.questao?.gabarito ?? '',
+          gabaritoVisto(l) ?? '',
           l.resposta?.confianca ?? '',
           l.resposta?.segundos ?? '',
           { certa: 'certa', errada: 'errada', anulada: 'nao-contabilizada', pulada: 'nao-respondida' }[l.situacao],
@@ -499,7 +509,7 @@ export function Resumo() {
             const descricao =
               l.situacao === 'pulada' ? 'sem resposta'
                 : l.situacao === 'anulada' ? 'anulada'
-                  : `${l.situacao}, ${letraMarcada(l) ? `marcou ${letraMarcada(l)}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${l.questao.gabarito}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
+                  : `${l.situacao}, ${letraMarcada(l) ? `marcou ${letraMarcada(l)}` : 'autoavaliada'}${l.situacao === 'errada' && l.questao?.gabarito ? `, gabarito ${gabaritoVisto(l)}` : ''}${incerta ? `, ${ROTULO_CONFIANCA[l.resposta!.confianca!].toLowerCase()}` : ''}`
             return (
               <li key={l.id}>
                 <a className={`rs-casa rs-casa--${l.situacao}${incerta ? ' rs-casa--incerta' : ''}`} href={href(`/questao/${l.id}`)} title={`Questão ${l.numero}: ${descricao}`} aria-label={`Questão ${l.numero}: ${descricao}`}>
@@ -555,7 +565,7 @@ export function Resumo() {
                             <span className={`rs-chip rs-chip--${l.situacao}`}>
                               <Icone nome={l.situacao === 'certa' ? 'certo' : 'errado'} tamanho={13} /> {letraMarcada(l) ? `Marcou ${letraMarcada(l)}` : l.situacao === 'certa' ? 'Acertou (autoavaliação)' : 'Errou (autoavaliação)'}
                             </span>
-                            {l.situacao === 'errada' && q?.gabarito && <span className="rs-chip rs-chip--gabarito">Gabarito {q.gabarito}</span>}
+                            {l.situacao === 'errada' && q?.gabarito && <span className="rs-chip rs-chip--gabarito">Gabarito {gabaritoVisto(l)}</span>}
                           </>
                         )}
                         {r?.confianca && r.confianca !== 'seguro' && (

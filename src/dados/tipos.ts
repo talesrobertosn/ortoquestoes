@@ -324,6 +324,12 @@ export interface EstadoSessao {
   nacional?: string
   /** Simulado Nacional: a ordem das alternativas de cada questão na edição ('CADB': a letra nova A mostra a original C). */
   permutacoes?: Record<string, string>
+  /**
+   * Treino: a ordem em que cada questão apareceu ao ser respondida (revisão embaralhada,
+   * dados/ordemAlternativas.ts). As respostas ficam na letra original; isto serve só para
+   * o resumo mostrar as letras que a pessoa viu.
+   */
+  ordens?: Record<string, string>
   /** Simulado Nacional: o prazo da prova no servidor (ms). O relógio conta até ele. */
   prazoEm?: number
   /** Simulado Nacional: questões marcadas aqui que ainda não subiram para o servidor. */

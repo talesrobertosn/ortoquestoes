@@ -37,6 +37,9 @@ import { confirmar } from '../componentes/Confirmar'
 import { usarSalvamentoNacional, type EstadoSalvamento } from '../estado/salvamentoNacional'
 import { alertaDeTempo, montarSessaoNacional, resumoParaEntregar } from '../dados/provaNacional'
 import { codigoErroSN, snIniciar } from '../dados/apiSimuladoNacional'
+import { ordemParaRevisao, letraExibida } from '../dados/ordemAlternativas'
+import { carregarLetrasAcervo, usarLetrasAcervo } from '../dados/letrasAcervo'
+import { lerUltimaExibida, registrarExibida } from '../estado/ordemExibida'
 
 /** O salvamento da prova do Simulado Nacional, numa linha curta. */
 function textoSalvamento(e: EstadoSalvamento): string {
@@ -344,6 +347,20 @@ export function Sessao() {
     const id = sessao.ids[posicao]
     return questoes.find((q) => q.id === id) ?? null
   }, [questoes, sessao, posicao])
+
+  // Revisão em ordem nova: só no treino (o simulado e o Simulado Nacional seguem a prova).
+  // A decisão usa o que havia antes da sessão começar, então não muda ao responder nem ao recarregar.
+  const letrasAcervo = usarLetrasAcervo()
+  const ordemRevisao = useMemo(() => {
+    if (!questaoAtual || !sessao || sessao.simulado || sessao.nacional || !preferencias.embaralhar) return null
+    return ordemParaRevisao(questaoAtual, {
+      letras: letrasAcervo ?? null,
+      registro: lerRespondidas()[questaoAtual.id],
+      desde: sessao.criadaEm,
+      semente: sessao.id,
+      ultimaExibida: lerUltimaExibida(questaoAtual.id),
+    })
+  }, [questaoAtual, sessao?.id, sessao?.criadaEm, sessao?.simulado, sessao?.nacional, preferencias.embaralhar, letrasAcervo])
 
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
   const painelAberto = mapaAberto || atalhosAbertos || ajustesAbertos || limiteAberto
@@ -794,7 +811,9 @@ export function Sessao() {
         </p>
       )}
       <div className="sessao-palco" ref={palco}>
-      {questaoAtual ? (
+      {questaoAtual && letrasAcervo === undefined && preferencias.embaralhar && !simulado && !nacional ? (
+        <Carregando linhas={6} />
+      ) : questaoAtual ? (
         <><AvisoLimite estado={estadoLimite} />{sessao.respostas[questaoAtual.id]?.outroAparelho && <p className="conteudo aviso-outro-aparelho" role="note">Você já respondeu esta questão em outro aparelho. Siga para a próxima.</p>}<CartaoQuestao
           questao={questaoAtual}
           numero={posicao + 1}
@@ -806,8 +825,9 @@ export function Sessao() {
           aoProxima={avancar}
           rotuloProxima={posicao + 1 < total ? 'Próxima questão' : nacional ? 'Entregar a prova' : 'Ver o resultado'}
           permutacao={nacional ? sessao.permutacoes?.[questaoAtual.id] ?? null : null}
+          ordemRevisao={ordemRevisao}
           modoProva={!!nacional}
-          aoResponder={async (letra, correta, segundos, confianca) => {
+          aoResponder={async (letra, correta, segundos, confianca, ordemExibida) => {
             if (!conta) { definirPortaoContaAberto(true); return }
             // Prova do Simulado Nacional: a letra (a nova, da edição) vai para o servidor; a correção é de lá.
             if (nacional) { responder(questaoAtual.id, letra, null, segundos, confianca); return }
@@ -825,7 +845,9 @@ export function Sessao() {
                 if (permissao.paywallAtivo && !permissao.falhaValidacao) { marcarConviteLimiteVisto(permissao.liberaEm); definirResumoAoFechar(respondidas > 0) }
                 definirLimiteAberto(true); return
               }
-              responder(questaoAtual.id, letra, correta, segundos, confianca)
+              responder(questaoAtual.id, letra, correta, segundos, confianca, ordemExibida)
+              // Onde a certa estava desta vez: a próxima revisão a põe em outra letra.
+              if (questaoAtual.gabarito) registrarExibida(questaoAtual.id, letraExibida(ordemExibida, questaoAtual.gabarito))
             } finally { autorizando.current = false }
           }}
           aoRiscar={(letra) => alternarRiscada(questaoAtual.id, letra)}
@@ -1007,6 +1029,9 @@ export function Sessao() {
   )
 }
 
+// Começa a baixar já: a primeira questão só aparece quando se sabe se ela vem em ordem nova.
+void carregarLetrasAcervo()
+
 const OPCOES_TELA: Array<[keyof PreferenciasSessao, string, string]> = [
   ['placar', 'Placar da sessão', 'Quantas você respondeu e os acertos seguidos, ao lado da questão.'],
   ['mapa', 'Mapa ao lado', 'A grade das questões fica à vista. Desligado, ele abre pelo botão Mapa ou pela tecla M.'],
@@ -1014,6 +1039,7 @@ const OPCOES_TELA: Array<[keyof PreferenciasSessao, string, string]> = [
   ['somPomodoro', 'Som no fim do foco e da pausa', 'Duas notas curtas quando a fase termina.'],
   ['atalhos', 'Atalhos de teclado ao lado', 'A lista fica fechada embaixo da coluna; a tecla ? mostra sempre.'],
   ['dicasTeclado', 'Dica de teclas embaixo das alternativas', 'A linha "Teclas 1–4 selecionam…" no computador.'],
+  ['embaralhar', 'Revisão em ordem nova', 'Na segunda vez em diante, as alternativas mudam de lugar e a certa sai da letra da última vez: você raciocina em vez de lembrar a letra. Na primeira vez, a ordem é a da prova.'],
 ]
 
 /** Personalizar a tela da sessão: cada peça liga e desliga, e a escolha fica salva neste aparelho. */

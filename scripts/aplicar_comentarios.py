@@ -170,6 +170,10 @@ def main() -> int:
 
     if args.seco:
         print("\nEnsaio: nada foi gravado.")
+        return 0
+    # Comentário novo pode citar alternativas pela letra: atualiza o que pode embaralhar na revisão.
+    import subprocess
+    subprocess.run([sys.executable, str(Path(__file__).with_name("letras_alternativas.py"))], check=False)
     return 0
 
 

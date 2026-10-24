@@ -12,9 +12,14 @@ export interface PreferenciasSessao {
   dicasTeclado: boolean
   pomodoro: boolean
   somPomodoro: boolean
+  /**
+   * Revisão em ordem nova (dados/ordemAlternativas.ts). Não é peça da tela, é jeito de
+   * treinar: por isso vem ligado, ao contrário do resto. Desligado, tudo fica na ordem da prova.
+   */
+  embaralhar: boolean
 }
 
-export const PREFERENCIAS_PADRAO: PreferenciasSessao = { placar: false, mapa: false, atalhos: false, dicasTeclado: false, pomodoro: false, somPomodoro: true }
+export const PREFERENCIAS_PADRAO: PreferenciasSessao = { placar: false, mapa: false, atalhos: false, dicasTeclado: false, pomodoro: false, somPomodoro: true, embaralhar: true }
 
 const CHAVE_PREFERENCIAS = 'oq:sessao:preferencias:v2'
 const CHAVE_POMODORO = 'oq:sessao:pomodoro:v1'
