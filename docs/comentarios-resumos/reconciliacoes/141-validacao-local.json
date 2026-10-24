@@ -1,0 +1,398 @@
+{
+  "base": "0f3de214e226b52a4cd300a70409656901690d27",
+  "lotes": [
+    140,
+    141
+  ],
+  "ids": [
+    "conceitos-basicos-0404",
+    "trauma-1075",
+    "trauma-1083",
+    "trauma-0732",
+    "trauma-0865",
+    "trauma-0748",
+    "trauma-0115",
+    "trauma-0746",
+    "trauma-1714",
+    "trauma-1212",
+    "trauma-1712",
+    "trauma-1093",
+    "trauma-0824",
+    "trauma-1216",
+    "trauma-1158"
+  ],
+  "leituraFonte": "Resumo 63 lido integralmente: 596 linhas em 1–150,151–300,301–450,451–596. Corpo e tabelas independentes, não contexto de questões nem comentários antigos. Resumo 57 já integralmente lido antes; relidos trechos de haste, fresagem e fixador temporário. Nenhuma página impressa inventada.",
+  "imagens": "Nenhuma questão desta unidade tem figura.",
+  "checks": {
+    "work/check141-fixtures.log": "8b6a5639c483075c224235ae9a7fbf706f4ffdcaf6ffe1d70dda80ca620b910e",
+    "work/check141-acervo.log": "0f054b2d0f5a7f4afe4cbd88629a02177b6f65188f64b1b80be59f9ef7eefc50",
+    "work/check141-test.log": "f10fb1cb575d179606184cc36c70b02a1860b0f52bef62c741521560dae8ef04",
+    "work/check141-build.log": "42f124fda41197a81388a8ecc6812a4769c5b5f593b4560322d276c315a823c2",
+    "work/ui140-total.log": "7e1d50591e4228a6846fd4c6d5a5266593e43b8ad5615201ea62ec1d2eb6a27f",
+    "work/ui140-trauma-0865-final.log": "97167d1d3c94145d611f4ff44a07a84354373ba130bf35c1e6dc9da5a2b5881b"
+  },
+  "validacao": "14 fixtures, validar_acervo, npm test completo, build e diff-check passaram; auditoria reproduz aplicação dos lotes desde a base, catorze valores de trauma e um de conceitos básicos, fontes/hashes/todas as alternativas e quinze avulsos integrais. Questões, gabaritos, revisão médica e membros alheios preservados.",
+  "interface": "Quinze casos no celular390 e computador1440 com correção e links exatos; seis capturas representativas finais abertas. Após retirar uma frase editorial de um alerta, fixtures/acervo/build/auditoria e o caso visual de 0865 novamente passaram.",
+  "concorrencia": {
+    "prs": [
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-24T17:58:48Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-24T17:58:48Z",
+            "messageBody": "Quinze enunciados diziam \"segundo o capítulo\", \"descrita no capítulo\" ou\n\"autores do capítulo\" sem dizer de que livro. Passam a nomear a fonte:\nRockwood (adulto), Rockwood and Wilkins (pediatria-1005, onde \"capítulo\"\nainda se confundia com o capítulo umeral) e Green (mao-2198). Mesmo texto nos\nflashcards; hashes de proveniência dos comentários revisados atualizados.\nFicam como estão as questões sobre o capítulo umeral e as que já citam o livro.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh",
+            "messageHeadline": "Simulados: enunciados citam o livro em vez de \"o capítulo\"",
+            "oid": "e1801dc86f0d7c0aebd8ca2c8c96f3c8b26d3576"
+          }
+        ],
+        "headRefOid": "e1801dc86f0d7c0aebd8ca2c8c96f3c8b26d3576",
+        "number": 514,
+        "title": "Simulados: 15 enunciados citam o livro em vez de \"o capítulo\""
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-18T15:56:21Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-18T15:56:21Z",
+            "messageBody": "Feed com tumores-0318 (TARO 2024) revelado numa câmara escura e stories com\nmao-0433 (TARO 2025) num player de música. Final com a data da prova, o\nCronograma real e Treine grátis; o link do story leva à própria questão\ndepois do cadastro.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh",
+            "messageHeadline": "Instagram: câmara escura (feed) e player da prova (stories)",
+            "oid": "40e7dcf07e16e513c62844ebf3438c9a90f7750c"
+          },
+          {
+            "authoredDate": "2026-10-18T16:01:15Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-18T16:01:15Z",
+            "messageBody": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh",
+            "messageHeadline": "Instagram 18/10: stories sem figurinha e textos dentro da área segura",
+            "oid": "714323bcee21a533ea33cf7048a307a24deffc44"
+          },
+          {
+            "authoredDate": "2026-10-18T16:09:07Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-18T16:09:07Z",
+            "messageBody": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh",
+            "messageHeadline": "Post 18/10: acabamento com bordas suaves no feed e nos stories",
+            "oid": "553b1041eafa4cf9b173ea616cc293537739eb08"
+          },
+          {
+            "authoredDate": "2026-10-18T16:17:05Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-18T16:17:05Z",
+            "messageBody": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01XpYKZzP2r77B4vYwQFccUh",
+            "messageHeadline": "Post 18/10: legenda do feed sem entregar a resposta",
+            "oid": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+          }
+        ],
+        "headRefOid": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+        "number": 371,
+        "title": "Instagram: câmara escura (feed) e player da prova (stories)"
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-15T22:42:46Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-15T22:42:46Z",
+            "messageBody": "…reembolsado\n\nQuando a renovação automática é aprovada, o webhook manda uma carta curta\ndizendo que o plano renovou, o valor e até quando dá para desistir com\nreembolso integral pelo botão de Detalhes da assinatura. Na própria página,\na garantia mostra a data limite e deixa claro que vale também para a\nrenovação.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz",
+            "messageHeadline": "Cartão: aviso de renovação com o prazo de 7 dias para desistir e ser …",
+            "oid": "980b2d734b62cd5a28098224e8dbf0c11194a185"
+          },
+          {
+            "authoredDate": "2026-10-15T22:43:19Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-15T22:43:19Z",
+            "messageBody": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz",
+            "messageHeadline": "Regera a função do webhook para colar no painel",
+            "oid": "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+          }
+        ],
+        "headRefOid": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+        "number": 308,
+        "title": "Cartão: aviso de renovação com prazo de 7 dias para desistir com reembolso"
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-14T19:47:45Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-14T19:47:45Z",
+            "messageBody": "Estilo novo de painel de aeroporto: cada dia de estudo é um voo feito,\nadiantado ou no horário. Carrossel de 5 e 3 stories, com telas reais do\nmodo demonstração e a legenda.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz",
+            "messageHeadline": "Instagram: painel de partidas do Adiantar no Cronograma (feed e stories)",
+            "oid": "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb"
+          },
+          {
+            "authoredDate": "2026-10-14T19:50:17Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-14T19:50:17Z",
+            "messageBody": "…TARO 2020)\n\nPergunta e resposta do pé torto congênito, com as alternativas como portões\nde embarque. Feed fica a propaganda do Adiantar; legenda e lista de\npublicadas atualizadas.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz",
+            "messageHeadline": "Instagram: stories de questão no painel de partidas (pediatria-0001, …",
+            "oid": "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb"
+          },
+          {
+            "authoredDate": "2026-10-14T20:43:52Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-14T20:43:52Z",
+            "messageBody": "…020)\n\nClaudicação neurogênica da estenose lombar em 5 slides: gancho, questão,\nneurogênica e vascular lado a lado, por que sentar alivia e a resposta.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz",
+            "messageHeadline": "Instagram: feed de questão no painel de partidas (coluna-0006, TARO 2…",
+            "oid": "c9bff08f7663c0a1f08a43bfd4858277abc22d63"
+          },
+          {
+            "authoredDate": "2026-10-15T16:29:35Z",
+            "authors": [
+              {
+                "email": "noreply@anthropic.com",
+                "id": "MDQ6VXNlcjgxODQ3",
+                "login": "claude",
+                "name": "Claude"
+              }
+            ],
+            "committedDate": "2026-10-15T16:29:35Z",
+            "messageBody": "…os stories)\n\nEstilo novo de pouco texto: radiografia da prova no varal sob a luz de\nsegurança, alternativas na tira de filme e a resposta marcada a lápis.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Wy17hPtRMz9sgRLvNPhYVz",
+            "messageHeadline": "Instagram: Câmara escura (Freiberg no feed, fibroma não ossificante n…",
+            "oid": "94859424a3fa5fb70347baea0a2a831a26ddd622"
+          }
+        ],
+        "headRefOid": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+        "number": 253,
+        "title": "Instagram: painel de partidas do Adiantar no Cronograma"
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-11T14:14:30Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-11T14:14:30Z",
+            "messageBody": "",
+            "messageHeadline": "Add reviewed Cofre and Relojoaria Instagram templates",
+            "oid": "86aeeb45a1284a4bab358ad66df593286e64876a"
+          }
+        ],
+        "headRefOid": "86aeeb45a1284a4bab358ad66df593286e64876a",
+        "number": 179,
+        "title": "Marketing: modelos Cofre de duas chaves e Relojoaria anatômica"
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-11T00:11:45Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-11T00:11:45Z",
+            "messageBody": "",
+            "messageHeadline": "Adiciona post Mirels: risco de fratura no fêmur",
+            "oid": "3c7daf1f481a22a119402544f44007696520ce1e"
+          },
+          {
+            "authoredDate": "2026-10-11T00:30:02Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-11T00:30:02Z",
+            "messageBody": "",
+            "messageHeadline": "Refaz post Mirels com o modelo oficial Jornal e incorpora base atual",
+            "oid": "c695d3d697b62de9cb1317922a61af543f4369a5"
+          }
+        ],
+        "headRefOid": "c695d3d697b62de9cb1317922a61af543f4369a5",
+        "number": 178,
+        "title": "Instagram: Mirels no modelo oficial Jornal"
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-07T11:41:01Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-07T11:41:01Z",
+            "messageBody": "…ável",
+            "messageHeadline": "Adiciona 21 questões comentadas de fixação externa e importação revis…",
+            "oid": "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+          }
+        ],
+        "headRefOid": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+        "number": 174,
+        "title": "Simulado Rockwood cap. 11: 21 questões comentadas de fixação externa"
+      },
+      {
+        "commits": [
+          {
+            "authoredDate": "2026-10-04T20:52:26Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-04T20:52:26Z",
+            "messageBody": "",
+            "messageHeadline": "Adiciona aula de enxerto de pele total: mao-0853",
+            "oid": "39eab5599b3088e7137556e9e9f6a68a8f4482b2"
+          },
+          {
+            "authoredDate": "2026-10-04T20:52:47Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-04T20:52:47Z",
+            "messageBody": "",
+            "messageHeadline": "Disponibiliza comentário avulso de mao-0853",
+            "oid": "97e77b073134af9277107123ff27e7cb369139b5"
+          },
+          {
+            "authoredDate": "2026-10-04T20:53:02Z",
+            "authors": [
+              {
+                "email": "talesroberto23@gmail.com",
+                "id": "U_kgDODE4bMg",
+                "login": "talesrobertosn",
+                "name": "talesrobertosn"
+              }
+            ],
+            "committedDate": "2026-10-04T20:53:02Z",
+            "messageBody": "",
+            "messageHeadline": "Marca mao-0853 como comentada para carregar a aula",
+            "oid": "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+          }
+        ],
+        "headRefOid": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+        "number": 93,
+        "title": "Aula de enxertos de pele: Cirurgia da Mão, UFG 2017"
+      }
+    ],
+    "nota": "8 PRs abertos, heads/commits completos preservados. 514 altera enunciados/flashcards e proveniência de outros IDs; preservado como trabalho separado, sem sobreposição de IDs. Base inclui merges de 511 e 502."
+  },
+  "publicacaoAnterior": {
+    "pr": 513,
+    "head": "c20b0fa163bae1d12594c152421aaa03c4594a77",
+    "merge": "27f9e41f90e92fe157ab9778c4a6a0314af6cb47",
+    "ci": 40115597135,
+    "pages": 40115770648,
+    "jobPublicar": 120937133712,
+    "evidencia": "Na passagem anterior, lista REST de etapas vazia: logs completos pelo conector GitHub comprovaram guarda executada, deploy-pages@v4 e Reported success para o merge; 14 avulsos e três figuras comparados integralmente. PR/merge/CI reconfirmados nesta passagem."
+  },
+  "contagens": {
+    "duplicada": 87,
+    "pendente": 691,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 231,
+    "pendente-inspecao-imagem": 100,
+    "revisada": 1250
+  },
+  "fontesResolvidas": [
+    "trauma-0115",
+    "trauma-0748",
+    "trauma-0746",
+    "trauma-1714"
+  ],
+  "lacunasNovas": [
+    "trauma-0139",
+    "conceitos-basicos-0373",
+    "conceitos-basicos-0067"
+  ],
+  "proximoLote": 142,
+  "publicacaoDestaUnidade": "Aguardar CI do head, merge, guarda/deploy e comparação de produção. Registrar prova no PR sem commit separado de relatório."
+}

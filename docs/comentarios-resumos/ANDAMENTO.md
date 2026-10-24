@@ -5,18 +5,18 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 705 |
+| pendente | 691 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 232 |
+| pendente-fonte | 231 |
 | pendente-inspecao-imagem | 100 |
-| revisada | 1235 |
+| revisada | 1250 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
 | Resumo | Revisadas | A revalidar | Pendentes ou preservadas |
 | --- | ---: | ---: | ---: |
-| Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 50 | 0 | 20 |
+| Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 52 | 0 | 18 |
 | Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 37 | 0 | 31 |
 | Fratura da escápula (`rockwood10-33-fratura-escapula`) | 103 | 0 | 33 |
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 61 | 0 | 12 |
@@ -32,12 +32,12 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 55 | 0 | 21 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 51 | 0 | 12 |
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 34 | 0 | 11 |
-| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 45 | 0 | 28 |
-| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 25 | 0 | 14 |
+| Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 47 | 0 | 26 |
+| Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 27 | 0 | 12 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 37 | 0 | 46 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 49 | 0 | 74 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 31 | 0 | 14 |
-| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 84 | 0 | 71 |
+| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 98 | 0 | 57 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 30 | 0 | 19 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 27 | 0 | 26 |

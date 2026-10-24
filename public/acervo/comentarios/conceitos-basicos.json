@@ -4853,18 +4853,45 @@
   "conferido": false
  },
  "conceitos-basicos-0404": {
+  "conceito": "Na tíbia proximal, a haste pode seguir um caminho errado dentro de um canal largo. Os parafusos Poller estreitam esse caminho: contra o **valgo**, ficam **laterais à haste, de anterior para posterior**; contra o **procurvato**, ficam **posteriores à haste, de medial para lateral**. A alternativa A combina os dois controles.\n\nPense no parafuso como uma barreira colocada **onde a haste não deve passar**. Na metáfise proximal, ela não encontra o encaixe cortical da diáfise e não corrige sozinha a redução. O ponto medial e o trajeto de medial para lateral favorecem valgo; o fio posterior, somado à tração do aparelho extensor, favorece ápice anterior (Rockwood, 10ª ed., cap. 63, “Parafusos de bloqueio”).\n\nO Poller anteroposterior lateral impede que a haste ocupe o lado lateral distal do fragmento proximal. Para o plano sagital, o parafuso mediolateral posterior impede um caminho posterior. **A direção de passagem do parafuso e o lado em que ele fica são informações diferentes**, ambas necessárias para entender a montagem.\n\nO planejamento é feito antes de fresar. Se a haste já consolidou um trajeto inadequado, a fonte orienta que frequentemente é mais simples retirá-la, colocar os Poller e preparar um novo caminho. Não confundir esses parafusos de orientação com apenas acrescentar bloqueios à haste mal reduzida.",
+  "correta": "**A: anteroposterior lateral; mediolateral posterior.** As barreiras controlam, respectivamente, o desvio coronal em valgo e o trajeto sagital que produz procurvato no fragmento proximal.",
   "incorretas": {
-   "B": "**Inverte os dois lados de bloqueio.** Um parafuso medial não limita o trajeto lateral relacionado ao valgo, e um anterior não executa a barreira posterior descrita para o procurvato.",
-   "C": "**A posição para o valgo está correta, mas a do plano sagital não.** O bloqueio médio-lateral deve ficar posterior à haste para a deformidade em procurvato deste exemplo.",
-   "D": "**A posição sagital está correta, mas a coronal não.** O parafuso ântero-posterior da montagem descrita fica lateral à haste, não medial."
+   "B": "**Coloca as duas barreiras do lado errado para o padrão descrito.** O parafuso medial não impede o trajeto lateral indesejado; o anterior não bloqueia a passagem posterior. A regra precisa ser aplicada ao caminho da haste, não apenas à palavra côncavo decorada.",
+   "C": "**Acerta o controle coronal e troca o sagital.** O Poller anteroposterior lateral combate o valgo. Para o procurvato proximal, a barreira mediolateral deve ficar atrás da haste, impedindo que ela siga para posterior.",
+   "D": "**Acerta o controle posterior e erra o lateral.** O mediolateral posterior corresponde ao controle do procurvato. Contra o valgo típico, porém, o anteroposterior fica lateral, próximo da porção distal do fragmento proximal."
   },
-  "conceito": "**A metáfise larga não guia bem a haste.** Na fratura proximal da tíbia, o canal é mais amplo que a haste, e o fragmento curto pode desviar em valgo e procurvato durante a passagem do implante. Um parafuso de bloqueio, ou Poller, funciona como uma parede artificial que estreita o corredor da haste no lado para onde ela tenderia a escapar.\n\n**Para o valgo, bloqueie o corredor lateral.** Um parafuso orientado de anterior para posterior é colocado lateralmente à futura haste no fragmento proximal. Ele impede que a haste tome um trajeto lateral e ajuda a manter o alinhamento coronal. O local deve ser planejado com a redução obtida e conferido nas incidências anteroposterior e lateral.\n\n**Para o procurvato, bloqueie posteriormente.** Um parafuso de medial para lateral, posterior à haste no fragmento proximal, limita o trajeto posterior do implante e ajuda no controle do plano sagital. Entrada correta, joelho em posição semiestendida quando apropriado e manutenção da redução continuam essenciais; o Poller não corrige sozinho uma fratura mal reduzida.",
-  "correta": "**Ântero-posterior lateral à haste para o valgo; médio-lateral posterior para o procurvato.** Cada parafuso cria uma barreira no plano em que a haste tenderia a desviar.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 13 (Templating and Technical Tricks in Internal Fixation; Heincelman e Archdeacon)"
+   "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A haste na fratura proximal: ponto de entrada e deformidade."
   ],
-  "geradoEm": "2026-10-16",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-63-diafise-tibia",
+     "titulo": "Fratura da diáfise da tíbia e da fíbula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+     "secoes": [
+      "A haste na fratura proximal: ponto de entrada e deformidade"
+     ],
+     "blocos": [
+      "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-f4c9a7c8",
+      "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-ae9daf25",
+      "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-28895b21",
+      "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-ae149922",
+      "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc"
+     ],
+     "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+     "trechosSha256": "e0daff01f9fe708fe21a6c59faeb5a2a9808fd8589240610f225367cfffe28fe"
+    }
+   ],
+   "questaoSha256": "4f79d561ddb6dd5e3d3be63cd7cc6e0ea5fe3fadab953385f98b46cd6307d3d3",
+   "comentarioSha256": "6852c17801a5264b3e96e1a2036b529a918d4d90221510c72cbe829bc1cad958"
+  }
  },
  "conceitos-basicos-0405": {
   "conceito": "**Fios e pinos como alavancas.** O Rockwood (capítulo 13, Direct Fracture Manipulation Techniques) descreve várias formas de manipular diretamente os fragmentos.\n\n**Joysticks.** Pinos de Schanz finos (3 ou 4 mm) ou fios de Kirschner de ponta rosqueada colocados diretamente nos fragmentos, para guiá-los à posição reduzida; muito úteis em fragmentos articulares pequenos que exigem redução precisa. **Dois fios dão controle em vários planos.**\n\n**A técnica de Kapandji.** Trabalhando diretamente pelo plano da fratura, um **fio de Kirschner é introduzido através do foco** e usado para **distrair e girar um fragmento em relação ao outro**, de modo semelhante à técnica do Hohmann (a ponta do afastador no foco, usada como pé de cabra para levar uma ponta da fratura sobre a outra). No rádio distal, esse uso de fios pelo foco é descrito como **técnica de Kapandji**.\n\n**Outras técnicas para o rádio distal citadas no capítulo.**\n\n| Técnica | Como funciona |\n|---|---|\n| Placa volar como ferramenta de redução (Eglseder) | fixar primeiro a placa ao fragmento distal, com fios guiando parafusos paralelos à articulação; depois reduzir a placa à diáfise, restaurando a inclinação volar pelo contorno da placa |\n| Mini-Hohmann sob a placa | manter a placa elevada da diáfise com o afastador enquanto se coloca o primeiro parafuso cortical; fixar o distal; retirar o afastador e apertar o parafuso da diáfise, inclinando o fragmento para volar |\n| Placa de suporte radial | fixada só na diáfise, para impedir a translação radial do estiloide |\n| Fixador externo | redução indireta por ligamentotaxia (Figura 13-3F) |\n\n**E a manobra de Agee?** Está no capítulo 10 (tratamento conservador): uma força de translação volar no fragmento distal, que permite ao semilunar inclinar o fragmento distal em direção volar, usada quando a redução fechada clássica falha.\n\n**Ligação com a prova.** A banca cobra o rádio distal por vários ângulos: o tendão flexor que mais rompe com placa volar (flexor longo do polegar), a complicação mais comum da placa em ponte dorsal (rigidez dos dedos, TEOT 2025) e a profilaxia da síndrome dolorosa com vitamina C.\n\n> **Na prova:** técnica de Kapandji: fios de Kirschner introduzidos pelo foco da fratura do rádio distal e usados como alavanca para reduzir o fragmento.",
