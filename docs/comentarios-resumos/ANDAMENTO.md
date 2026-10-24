@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 959 |
+| pendente | 931 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 194 |
-| pendente-inspecao-imagem | 156 |
-| revisada | 963 |
+| pendente-fonte | 196 |
+| pendente-inspecao-imagem | 152 |
+| revisada | 993 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -38,8 +38,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 41 | 0 | 82 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 27 | 0 | 18 |
 | Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 83 | 0 | 72 |
-| Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 25 | 0 | 24 |
-| Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 7 | 0 | 59 |
+| Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 30 | 0 | 19 |
+| Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 37 | 0 | 29 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 1 | 0 | 52 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |

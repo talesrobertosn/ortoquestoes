@@ -1,0 +1,388 @@
+{
+  "pe-tornozelo-0234": {
+    "questaoSha256": "d94f597b8bb117981e337004350bf35cc7b7fa5b044a7803eed05ef9a2499ab7",
+    "comentarioAnteriorSha256": "52db5fa01dddfcaa7a9815d8c9a9fdacec68878c5584365f36783ab2bd495895",
+    "comentario": {
+      "conceito": "Um tálus apenas **1 mm lateralizado** já mudou bastante a área pela qual a carga passa. No experimento clássico de **Ramsey e Hamilton**, a redução da área de contato tibiotalar foi de **42%**, alternativa D.\n\nA cúpula talar e o plafond funcionam como superfícies congruentes: o encaixe distribui a carga por uma área ampla. Quando o tálus sai lateralmente, não se perde apenas aquele milímetro na borda; muda a correspondência entre as superfícies. O número do estudo mostra como um desvio pequeno na radiografia pode representar uma alteração mecânica relevante (Rockwood, 10ª ed., cap. 65, “Ramsey e Hamilton”).\n\n**Área de contato não é um escore clínico.** O resumo registra críticas ao estudo e discussão sobre a relação exata entre desvio, área e pressão. Não se deve transformar 42% em uma taxa de artrose, perda de função ou incapacidade de apoiar. A lição sustentada é preservar congruência e estabilidade do tálus.\n\nTambém não basta contar quantos maléolos quebraram. O objetivo da redução é manter o tálus centrado sob o plafond até a consolidação. A cartilagem pode ter sido lesada no trauma mesmo com boa redução, e uma fratura lateral verdadeiramente isolada pode permanecer congruente sem cirurgia: o número não obriga a operar toda fratura da fíbula.\n\n> **Na prova:** no estudo clássico, 1 mm lateral corresponde a 42% menos área de contato.",
+      "correta": "**D: 42%.** É o resultado de Ramsey e Hamilton citado pelo resumo. O valor descreve área de contato no modelo, não uma porcentagem de artrose ou de perda funcional do paciente.",
+      "incorretas": {
+        "A": "**Dez por cento não é o achado solicitado.** A pergunta identifica um estudo e um deslocamento específicos. A mensagem mecânica é uma perda de contato muito maior que essa alternativa sugere, sem extrapolá-la para um prognóstico individual.",
+        "B": "**Vinte e dois por cento troca o resultado da referência.** O resumo cita 42% para 1 mm lateral. Não há necessidade de estimar uma curva ou interpolar outros deslocamentos para responder.",
+        "C": "**Trinta por cento pertence a outra comparação no capítulo.** O resumo apresenta perda próxima de 30% para um fragmento posterior de 50% do plafond, não para 1 mm de deslocamento lateral do tálus. Mistura tamanho de fragmento e incongruência do encaixe."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide; O maléolo posterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+          "O maléolo posterior"
+        ],
+        "blocos": [
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-e5be52fb",
+          "o-maleolo-posterior-9bc976b8",
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-ee4f29d7"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "6500988d8bf7336b80d64d1d665b5ed35791f92196ee22e1cf1a5b5ea34368df"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pe-tornozelo-0331": {
+    "questaoSha256": "c06026cab7fdfe4870606ae198ecafa44b9b960b1aa9a401f1350edd0f4e8598",
+    "comentarioAnteriorSha256": "8bbaf9f87138d0e4696ad66d41089222ae5421c2adcf61400df22ea3d826f3b7",
+    "comentario": {
+      "conceito": "Na supinação-rotação externa, a lesão começa **na sindesmose anterior**, alcança a **fíbula**, depois o **lado posterior** e termina **medialmente**. C é a resposta provável pelo resumo; não há gabarito oficial registrado.\n\nA primeira palavra descreve a posição do pé, e a segunda a força. Com o pé supinado, o tálus roda externamente e a lesão progride ao redor do encaixe. No estágio I rompe o tibiofibular anteroinferior; no II aparece a fratura oblíqua da fíbula no nível da sindesmose; no III falha o tibiofibular posteroinferior ou fratura o maléolo posterior; no IV rompe o deltoide ou fratura o maléolo medial (Rockwood, 10ª ed., cap. 65, “Supinação-rotação externa”).\n\n**A etapa medial muda a interpretação da estabilidade.** Uma SER II verdadeiramente isolada mantém o lado medial e o tálus congruente. Já o estágio IV acrescenta a falha medial, podendo configurar o equivalente de uma bimaleolar. A fratura da fíbula continua no nível da sindesmose, portanto a progressão para IV não a transforma automaticamente em Weber C.\n\nA sequência é um modelo de classificação, não a filmagem exata de toda lesão. O resumo ressalta reprodutibilidade e capacidade limitada de prever a sindesmose. Ela orienta a busca das estruturas associadas, mas não substitui exame, imagens e avaliação da congruência.\n\n> **Na prova:** anterior, fíbula, posterior, medial é a ordem da SER.",
+      "correta": "**C: sindesmose anterior, fíbula oblíqua, sindesmose posterior e deltoide.** A sequência reproduz os quatro estágios. Mantida como bibliográfica/provável, sem atribuir uma letra oficial inexistente à banca.",
+      "incorretas": {
+        "A": "**Começa pelo lado medial, como nos mecanismos de pronação.** Na SER, o medial é a etapa final, não a primeira. O restante da alternativa não corrige essa inversão do ponto de partida.",
+        "B": "**Antecipa o deltoide e repete a sindesmose posterior.** O modelo de SER começa anteriormente e percorre os lados lateral e posterior antes do medial. Repetir o mesmo elemento também deixa a progressão sem a etapa anterior correta.",
+        "D": "**Troca a ordem anterior-posterior.** O tibiofibular anterior falha no estágio I e o posterior no III, não o contrário. A lesão medial continua sendo a etapa final, mas acertar o fim não valida o início invertido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: A classificação de LAUGE-HANSEN e a de DANIS-WEBER."
+      ],
+      "conferido": false,
+      "provavel": "C",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável C, sustentada pela sequência SER do resumo do Rockwood, 10ª ed., cap. 65. A classificação orienta o raciocínio, mas não prevê toda lesão da sindesmose de forma confiável."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+        ],
+        "blocos": [
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-bb33c16b",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-4d5d767b",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-0315de83"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "a2109c2eb19e59b7da0a5afa1ac04ec5ecd2c67eb053eb33d6f521bf05a02b51"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pe-tornozelo-0335": {
+    "questaoSha256": "8a8c5b84b7e712ea679615c826a5671d6f99a1f217fd8d59372a000bd86bbb77",
+    "comentarioAnteriorSha256": "5ad5a24f29a8b20e4d37de8f77b587e1221756b0e072bb09cd9778d7975b9c89",
+    "comentario": {
+      "conceito": "A fíbula quebra por **compressão e flexão** na **pronação-abdução**, produzindo o padrão cominuído que a pergunta procura. D permanece a resposta provável pelo resumo; não há gabarito oficial registrado.\n\nA lesão começa medialmente por tração, com avulsão transversa do maléolo medial ou falha do deltoide. Depois alcança a sindesmose anterior. No estágio III, a fíbula sofre compressão e flexão e se fragmenta no nível do plafond ou acima dele (Rockwood, 10ª ed., cap. 65, “Pronação-abdução”).\n\n**A forma do traço muda a fixação.** Na cominuição, não existe uma linha simples para comprimir com um parafuso de tração e neutralizar. O resumo recomenda placa em ponte ou haste, preservando os fragmentos e recuperando comprimento, eixo e rotação. Isso diferencia o padrão da fíbula oblíqua limpa da SER, que pode aceitar tração interfragmentária.\n\nOs mecanismos rotacionais também podem quebrar a fíbula, mas em padrões distintos: SER no nível da sindesmose com espícula posterior, PER geralmente acima com espícula anterior. A supinação-adução começa por avulsão lateral ou traço transverso infrassindesmal. Nenhuma dessas descrições deve ser substituída apenas pela palavra “cominuta”.\n\n> **Na prova:** a combinação característica de fíbula cominuída e flexão é pronação-abdução.",
+      "correta": "**D: pronação/abdução.** A compressão e a flexão no estágio III explicam a fragmentação fibular descrita. Mantida como provável, com referência explícita à classificação do resumo.",
+      "incorretas": {
+        "A": "**A SER tem o traço oblíquo característico.** A fíbula costuma quebrar no nível da sindesmose, com espícula posterior, permitindo outra estratégia de fixação quando simples. Não é o padrão cominuído por flexão destacado aqui.",
+        "B": "**A SAD começa por tração lateral.** Pode haver ruptura ligamentar ou avulsão transversa abaixo da sindesmose, seguida de cisalhamento vertical medial no estágio II. Esse percurso não é o da compressão e flexão que fragmentam a fíbula na PAB.",
+        "C": "**Também é pronação, mas a força é rotacional.** Na PER, o traço fibular é geralmente oblíquo ou espiral suprassindesmal, com espícula anterior. A abdução é que fornece o padrão cominuído de compressão/flexão pedido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: A classificação de LAUGE-HANSEN e a de DANIS-WEBER."
+      ],
+      "conferido": false,
+      "provavel": "D",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável D: pronação-abdução, com fíbula cominuída por compressão e flexão no estágio III, conforme o corpo do resumo 65."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+        ],
+        "blocos": [
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-2dc763e9",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-73dfaeff",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "775f7b28d64ce0c29762615335f2f8c57e3d2f4fad254079b5f0f7cb64ef3c2e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pe-tornozelo-0368": {
+    "questaoSha256": "9f366c170ed9db92f0bbbbf8ac0920155e84433cfb5005b7459431ba24baf24d",
+    "comentarioAnteriorSha256": "69c81c7f13ce8e57648060f49c0343f4c677d5ff6569ca33b9c7ef34e359bfd7",
+    "comentario": {
+      "conceito": "A afirmação é verdadeira dentro do modelo de **supinação-rotação externa**: a primeira estrutura é o **tibiofibular anteroinferior**, isto é, a sindesmose anterior. A é a resposta provável; não há gabarito oficial registrado.\n\nCom o pé supinado, o tálus roda para fora e começa a afastar tíbia e fíbula anteriormente. A classificação organiza esse trajeto em quatro estágios: anterior, fíbula oblíqua, posterior e, por último, deltoide ou maléolo medial (Rockwood, 10ª ed., cap. 65, “Supinação-rotação externa”).\n\n**Primeiro ligamento não é primeiro osso.** A ruptura anterior constitui o estágio I; o traço da fíbula aparece no II. Essa diferença ajuda a não iniciar a sequência pela radiografia mais chamativa, ignorando a lesão ligamentar que o modelo pressupõe.\n\nO capítulo também ressalta que a progressão experimental não foi reproduzida de forma uniforme e não descreve com precisão todas as lesões de cada paciente. Saber o estágio I serve para orientar a interpretação da SER, sem substituir a avaliação da estabilidade e da congruência reais do tornozelo.\n\n> **Na prova:** a SER começa pela sindesmose anterior; a fíbula é a etapa seguinte.",
+      "correta": "**A: Certo.** O estágio I da SER corresponde à ruptura do tibiofibular anteroinferior. A resposta é bibliográfica/provável, sem gabarito oficial registrado.",
+      "incorretas": {
+        "B": "**Negaria a primeira etapa do modelo.** O resumo coloca a fíbula no estágio II e a sindesmose posterior no III. Nenhuma delas antecede o tibiofibular anteroinferior na sequência de SER apresentada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: A classificação de LAUGE-HANSEN e a de DANIS-WEBER."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável A: o tibiofibular anteroinferior é o estágio I da SER no resumo 65."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+        ],
+        "blocos": [
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-0315de83"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "ace259879cc5d58e503c5be05b338c47477929b83537af39e632e6bdef6d2376"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0009": {
+    "questaoSha256": "1085df1b7997161194ebdb62512726721d3f9b59a364b7b123521ed8dd54b6f2",
+    "comentarioAnteriorSha256": "5dbf19813b986b72724e09752397eacc7a90e4f23a568bb15749da7c42173ed8",
+    "comentario": {
+      "conceito": "A fíbula proximal quebrada pode ser a parte visível de uma lesão que atravessou o tornozelo. Na **Maisonneuve**, o mecanismo clássico é **pronação-rotação externa**, alternativa C.\n\nNa PER, o lado medial falha primeiro, depois a sindesmose anterior e então a fíbula sofre torção. O traço é geralmente suprassindesmal, oblíquo ou espiral, com espícula anterior. A variante de Maisonneuve alcança a fíbula proximal e associa lesão medial e sindesmótica, podendo deixar radiografias locais do tornozelo aparentemente pouco alteradas (Rockwood, 10ª ed., cap. 65, “Pronação-rotação externa e Maisonneuve”).\n\n**O exame precisa ir além do maléolo.** O resumo recomenda palpar a fíbula proximal e radiografar a perna inteira se houver dor. Olhar só o tornozelo pode perder a extensão da lesão, enquanto olhar só a fratura proximal pode levar a tratar como isolada uma lesão do encaixe instável.\n\nO foco terapêutico também muda: em geral não se expõe nem fixa a fíbula proximal, pois isso arrisca o fibular comum. Quando há diástase, a sindesmose precisa ser reduzida e estabilizada; o tratamento não é simplesmente colocar uma placa no osso mais distante do tornozelo.\n\n> **Na prova:** Maisonneuve é PER; procure a lesão medial e a sindesmose, não apenas a fíbula proximal.",
+      "correta": "**C: pronação-rotação externa.** A torção após a falha medial e anterior pode produzir a variante proximal de Maisonneuve. O padrão exige avaliar a estabilidade do tornozelo inteiro.",
+      "incorretas": {
+        "A": "**A SAD tem outro trajeto.** Começa por avulsão lateral ou traço transverso abaixo da sindesmose e pode chegar ao cisalhamento vertical medial. Não explica a variante proximal rotacional descrita.",
+        "B": "**A pronação coincide, mas a força muda o padrão.** A PAB produz fíbula cominuída por compressão e flexão no plafond ou acima. Maisonneuve é a variante clássica da torção externa, não dessa flexão por abdução.",
+        "D": "**Também envolve rotação externa, porém com outra posição do pé e outro traço típico.** A SER produz fratura fibular no nível da sindesmose, com espícula posterior. A PER é suprassindesmal e inclui a variante proximal de Maisonneuve."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: A classificação de LAUGE-HANSEN e a de DANIS-WEBER."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+        ],
+        "blocos": [
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-73dfaeff",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-309e1102",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-2dc763e9",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "fb47ec8a581d0508bd25634c1d1420c4e2281597663986fb7d76b07cc9aba34f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0072": {
+    "questaoSha256": "581fe0a136b7eb7849ca992f00177723c9aea72e30a8f233a4a04ffcc3314c1d",
+    "comentarioAnteriorSha256": "91064c75df3ec4d9744e3200cbb28b6c09189183b80814009f1c4cd11ada6103",
+    "comentario": {
+      "conceito": "O maléolo posterior pode estar fraturado e ainda carregar um ligamento forte ligado à fíbula. Na trimaleolar, o **tibiofibular posteroinferior** costuma permanecer inserido nesse fragmento, alternativa D.\n\nEle parte da região de Volkmann no maléolo posterior e alcança a fíbula. Sua porção profunda, o transverso inferior, forma um lábio posterior robusto. O osso pode falhar ao redor da inserção sem que o ligamento se rompa, preservando uma conexão útil para a redução (Rockwood, 10ª ed., cap. 65, “A sindesmose”).\n\n**Essa anatomia tem consequência operatória.** Reduzir a fíbula pode ajudar a trazer o maléolo posterior; fixar o fragmento posterior pode reconstituir a incisura e reancorar a sindesmose. Isso não significa fixar qualquer fragmento por tamanho isolado: morfologia, subluxação do tálus e estabilidade continuam importantes.\n\nChaput e Wagstaffe não são dois ligamentos adicionais concorrentes. São os marcos ósseos tibial e fibular da inserção do tibiofibular anterior. O cuidado com os nomes evita responder um tubérculo quando a pergunta exige a estrutura que permanece presa ao fragmento de trás.\n\n> **Na prova:** no maléolo posterior, pense no tibiofibular posteroinferior preservado e ligado à fíbula.",
+      "correta": "**D: tibiofibular posteroinferior.** Sua inserção no fragmento posterior pode permanecer íntegra, permitindo que a reconstrução óssea contribua para a estabilidade da sindesmose.",
+      "incorretas": {
+        "A": "**Chaput é um marco ósseo, não o ligamento posterior pedido.** O tubérculo tibial anterolateral recebe a sindesmose anterior. Não é uma estrutura ligamentar independente presa ao maléolo posterior.",
+        "B": "**Wagstaffe é o marco fibular da inserção anterior.** Assim como Chaput, o nome identifica um tubérculo, e não o tibiofibular posterior. A alternativa usa um epônimo de outra região da sindesmose.",
+        "C": "**É o ligamento da frente.** O tibiofibular anteroinferior liga Chaput a Wagstaffe e falha cedo na sequência SER. A conexão forte do fragmento posterior com a fíbula é a posteroinferior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide; O maléolo posterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+          "O maléolo posterior"
+        ],
+        "blocos": [
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-86ee564a",
+          "o-maleolo-posterior-2b4b2fb8"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "a49013031a0ebb6293039950f80a2b12896253d52ac6630317fa89b10e82e322"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0149": {
+    "questaoSha256": "222d8fb8376650e23b8a3da6ed3075f9b333ed513e33ccdbe2a1d7d521bf5828",
+    "comentarioAnteriorSha256": "291121cd5add84bc421c71e8e514978eb14c51e3e9d0f822908118a9431b5cf4",
+    "comentario": {
+      "conceito": "A banca marcou **D: espaço claro tibiofibular de 3 mm**. Esse valor é compatível com o parâmetro de redução descrito no resumo, mas a alternativa C, de **7 mm de sobreposição no AP**, também pode estar dentro do normal. O gabarito deve ser preservado sem fingir que as duas medidas são sinônimas ou que C é obrigatoriamente patológica.\n\nO espaço claro mede a separação entre tíbia e fíbula; a sobreposição mede quanto suas imagens se recobrem. Na tabela, espaço claro acima de 5 mm sugere lesão; sobreposição abaixo de 5 mm no AP, ou 1 mm na mortalha, também sugere lesão. Logo, 3 mm de espaço claro é compatível com redução, e 7 mm de sobreposição não está abaixo do corte (Rockwood, 10ª ed., cap. 65, “Parâmetros radiográficos”).\n\n**O espaço claro é considerado mais confiável, não exclusivo.** A sobreposição varia muito com a rotação e com a forma da incisura. O espaço claro é relativamente mais constante, mas os limites são empíricos e também precisam ser interpretados com a anatomia e a projeção. A comparação com o outro lado pode ajudar.\n\nO espaço claro medial e o ângulo talocrural respondem a outras perguntas: o primeiro participa da avaliação do encaixe do tálus e o segundo do comprimento fibular. Misturar os quatro números impede entender por que a radiografia parece boa ou ruim.\n\n> **Na prova:** D é oficial e usa o parâmetro mais confiável; C é defensável pelos limites da tabela, ressalva que precisa permanecer explícita.",
+      "correta": "**D: espaço entre a parede medial da fíbula e a incisura tibial de 3 mm.** É compatível com o espaço claro tibiofibular aceito e com o gabarito oficial. A escolha da banca não torna anormal a sobreposição de 7 mm da opção C.",
+      "incorretas": {
+        "A": "**O valor não corresponde ao ângulo talocrural apresentado.** O resumo usa cerca de 83 graus, com simetria, como referência relacionada ao comprimento fibular. Sessenta graus não é o parâmetro normal indicado nessa tabela.",
+        "B": "**Sete milímetros de espaço medial excedem o limite descrito.** A referência é menor que 5 mm, próxima ao espaço superior e interpretada com projeção e anatomia. Não é o sinal de um encaixe medial bem reduzido oferecido pela questão.",
+        "C": "**É uma alternativa defensável, apesar de não ser a oficial.** A tabela considera suspeita a sobreposição menor que 5 mm no AP; 7 mm pode ser normal. Sua limitação é ser muito dependente da rotação, enquanto o espaço claro escolhido em D é mais confiável. Não é correto chamá-la simplesmente de falsa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: As radiografias e os parâmetros do encaixe; Sindesmose: quando fixar, como testar e com o quê."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D preservado. Pelos limites da tabela 65-2 do resumo, a sobreposição tibiofibular de 7 mm no AP da alternativa C também pode estar normal: o corte suspeito é menor que 5 mm. O espaço claro de D é considerado mais confiável e menos variável com a rotação, mas isso não torna C inequivocamente falsa."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "As radiografias e os parâmetros do encaixe",
+          "Sindesmose: quando fixar, como testar e com o quê"
+        ],
+        "blocos": [
+          "as-radiografias-e-os-parametros-do-encaixe-c37aab6f",
+          "as-radiografias-e-os-parametros-do-encaixe-07c3c549",
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-361ff67d"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "8fd89c485e71259b8fdce01ff2a8a2e677185cb149febcc1c87fb2fe3395b14f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0171": {
+    "questaoSha256": "0b6d6f55f895734b7867a09d015ae4ff7471428278db91cc06eee6f61f9f0f8b",
+    "comentarioAnteriorSha256": "48910daf2e5ae2928e0534953c520ae9ee4de18ce51038532083791dede21028",
+    "comentario": {
+      "conceito": "O tálus pode afundar a porção medial do plafond quando cisalha verticalmente o maléolo medial na **supinação-adução, estágio II**, alternativa B. É a lesão em que olhar apenas a linha do maléolo pode deixar passar uma depressão articular.\n\nNo estágio I da SAD, o lado lateral falha por tração: lesão ligamentar ou avulsão transversa da fíbula abaixo da sindesmose. No II, o tálus empurra o lado medial e produz o traço vertical. O resumo cita impacção medial em 42% das fraturas verticais estudadas por McConnell e Tornetta, número ligado àquela série (Rockwood, 10ª ed., cap. 65, “Supinação-adução”).\n\n**A depressão deve ser tratada antes de fechar o traço.** A cirurgia começa medialmente, expondo a área impactada, retirando fragmentos osteocondrais soltos e elevando a superfície afundada. A falha é preenchida se necessário; só então o fragmento medial é reduzido e contido, tipicamente com placa de suporte. Fixar o maléolo sobre uma superfície ainda deprimida preservaria uma incongruência.\n\nA SER é outro mecanismo: começa anteriormente, segue pela fíbula e chega ao lado medial no estágio IV, por deltoide ou traço oblíquo. Não é a sequência vertical e impactada da SAD II.\n\n> **Na prova:** traço medial vertical e impacção do plafond medial apontam para SAD II.",
+      "correta": "**B: II da supinação-adução.** O cisalhamento medial vertical pode acompanhar afundamento do plafond. Reconhecê-lo muda a sequência da redução e evita fechar a fratura sobre uma impacção não corrigida.",
+      "incorretas": {
+        "A": "**É a etapa lateral antes do impacto medial.** A SAD I lesa o complexo lateral ou avulsiona a ponta da fíbula. O traço vertical medial e a possível depressão pertencem ao estágio II.",
+        "C": "**A SER I lesa a sindesmose anterior.** Ela não descreve o cisalhamento vertical do maléolo medial que permite ao tálus impactar o plafond nessa pergunta.",
+        "D": "**A SER II é a fratura fibular oblíqua no nível da sindesmose.** O medial permanece íntegro na lesão verdadeiramente isolada. A associação com traço vertical e depressão medial pertence à SAD II."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: A classificação de LAUGE-HANSEN e a de DANIS-WEBER."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+        ],
+        "blocos": [
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f261f8ea",
+          "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "59d1fa80ce2af248f6b7fb7633915adf1d249f90a98601dc4c82c3802e008026"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0188": {
+    "questaoSha256": "7467f938d1ffc105aed7f2c3e66a6e34595c4d8f5805bd31b08fc57fae0f9374",
+    "comentarioAnteriorSha256": "8b7548b54c3b3254580699b3819de50bd2b1bbc11b7073ab886b2901f357d723",
+    "comentario": {
+      "conceito": "Depois de fixar as fraturas, a sindesmose pode ser avaliada com **tração lateral da fíbula e estresse em rotação externa**, alternativa B. O objetivo é verificar se a relação tibiofibular permanece estável quando se aplica uma força que a desafia.\n\nO capítulo descreve tração com gancho ou pinça, força lateral no calcanhar e rotação externa. Esses testes não são equivalentes nem perfeitos: concordam mal entre si e têm sensibilidade limitada. Stoffel considerou o gancho especialmente útil porque a rotação externa pode alargar principalmente o espaço medial mesmo com lesão isolada do deltoide (Rockwood, 10ª ed., cap. 65, “Os testes intraoperatórios”).\n\n**O resultado precisa ser localizado.** Espaço medial aumentado não prova sozinho diástase tibiofibular. O gancho aplica a tração diretamente à fíbula; a radioscopia deve avaliar a relação entre os ossos e o encaixe. Ao mesmo tempo, altura do traço e classificação de Weber não decidem, isoladamente, se será necessário fixar a sindesmose.\n\nTestar após restaurar a anatomia óssea evita confundir mobilidade de fragmentos ainda não reduzidos com instabilidade residual. Se houver diástase relevante, a redução precisa ser anatômica; trocar o dispositivo não corrige uma fíbula mal posicionada na incisura.\n\n> **Na prova:** tração lateral e rotação externa são as manobras descritas; interprete qual espaço realmente se abriu.",
+      "correta": "**B: tração e rotação externa após fixação.** Corresponde às manobras descritas para desafiar a estabilidade residual. O capítulo dá destaque ao teste do gancho e ressalta limites dos testes.",
+      "incorretas": {
+        "A": "**A tração coincide; a rotação foi invertida.** A manobra descrita é externa, acompanhando o mecanismo que afasta tíbia e fíbula. Rotação interna não é a substituição indicada para esse teste intraoperatório.",
+        "C": "**Troca os dois componentes da avaliação apresentada.** O gancho traciona lateralmente a fíbula e o estresse rotacional é externo. Compressão com rotação interna não reproduz esse desafio descrito.",
+        "D": "**A rotação está correta, mas a força do gancho não é compressão.** A fonte descreve tração lateral direta. Misturar manobras com nomes parecidos impede saber o que foi efetivamente testado e qual estrutura foi solicitada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Sindesmose: quando fixar, como testar e com o quê."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "Sindesmose: quando fixar, como testar e com o quê"
+        ],
+        "blocos": [
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012",
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-4febbbb4",
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-e9703489",
+          "sindesmose-quando-fixar-como-testar-e-com-o-que-006976af"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "dca7bda11a115e41ec02025853aaa0e7f5e9e8e1831314e848a6b1cc4788c457"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0300": {
+    "questaoSha256": "d4318cde7ae7a26d9a93ee2ff202d530d382e2c7e1ee8d79a98597d5881390cd",
+    "comentarioAnteriorSha256": "cb49adb711f3a677c4f18150c239c656d3e912f6bb63f08561fa71db0c75b12f",
+    "comentario": {
+      "conceito": "A radiografia sob estresse em rotação externa deve manter o tornozelo em **neutro**, com **rotação externa do antepé**, alternativa B. A posição evita criar um alargamento medial apenas pela geometria do tálus.\n\nA cúpula talar é mais larga anteriormente e mais estreita atrás. Em flexão plantar, a parte estreita ocupa o encaixe e há maior folga; por isso o estresse nessa posição pode exagerar um espaço medial e simular instabilidade. No protocolo manual descrito, o membro fica em mortalha e o antepé recebe rotação externa progressiva, mantendo o tornozelo neutro (Rockwood, 10ª ed., cap. 65, “Os testes”).\n\n**Uma técnica correta ainda não torna o teste absoluto.** O resumo apresenta limites empíricos de espaço claro e muitos resultados positivos em tornozelos que evoluíram bem sem cirurgia. Os autores usam também avaliação funcional com carga e radiografia de controle, distinguindo incongruência persistente de um teste estático isolado.\n\nA primeira radiografia aparentemente normal não exclui falha medial oculta, mas edema e dor medial também não resolvem o diagnóstico sozinhos. É preciso combinar anatomia, posição do exame e comportamento do encaixe, em vez de transformar qualquer milímetro de abertura em indicação automática de fixação.\n\n> **Na prova:** neutro e rotação externa; flexão plantar cria uma folga que pode enganar.",
+      "correta": "**B: neutro e rotação externa do antepé.** É a posição de estresse descrita, reduzindo a distorção causada pela parte posterior mais estreita do tálus.",
+      "incorretas": {
+        "A": "**Mantém o tornozelo neutro, mas inverte o estresse.** O teste apresentado aplica rotação externa, não interna. A posição de partida correta não corrige a direção errada da força.",
+        "C": "**Erra a posição e a direção.** Flexão plantar aumenta a folga do encaixe, e rotação interna não reproduz a manobra descrita. As duas escolhas afastam o exame do protocolo da fonte.",
+        "D": "**A rotação está certa, porém a flexão plantar pode falsear a abertura.** O tálus é mais estreito atrás e o espaço medial pode parecer aumentado sem corresponder à instabilidade funcional procurada. O capítulo orienta neutro."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide; Estabilidade: a fratura isolada do maléolo lateral e o teste."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-65-tornozelo",
+        "titulo": "Fraturas do tornozelo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 65 · Ankle Fractures",
+        "secoes": [
+          "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+          "Estabilidade: a fratura isolada do maléolo lateral e o teste"
+        ],
+        "blocos": [
+          "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259",
+          "estabilidade-a-fratura-isolada-do-maleolo-latera-b0677a6c",
+          "estabilidade-a-fratura-isolada-do-maleolo-latera-f501d07b",
+          "estabilidade-a-fratura-isolada-do-maleolo-latera-a3ca0427"
+        ],
+        "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+        "trechosSha256": "b7c41f5d531ff7d984129221c554f7208286ad0fd2405abf554824580d293764"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

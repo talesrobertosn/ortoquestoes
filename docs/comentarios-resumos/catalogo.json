@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 959,
+  "pendente": 931,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 194,
-  "pendente-inspecao-imagem": 156,
-  "revisada": 963
+  "pendente-fonte": 196,
+  "pendente-inspecao-imagem": 152,
+  "revisada": 993
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -255,10 +255,10 @@
    "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
    "estados": {
     "duplicada": 4,
-    "pendente": 12,
+    "pendente": 7,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 1,
-    "revisada": 25
+    "revisada": 30
    }
   },
   "rockwood10-65-tornozelo": {
@@ -266,11 +266,11 @@
    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
-    "pendente": 43,
+    "pendente": 15,
     "pendente-anulada": 1,
-    "pendente-fonte": 2,
-    "pendente-inspecao-imagem": 8,
-    "revisada": 7
+    "pendente-fonte": 4,
+    "pendente-inspecao-imagem": 4,
+    "revisada": 37
    }
   },
   "rockwood10-66-talus": {
@@ -26055,7 +26055,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26070,7 +26070,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "d94f597b8bb117981e337004350bf35cc7b7fa5b044a7803eed05ef9a2499ab7"
+   "questaoSha256": "d94f597b8bb117981e337004350bf35cc7b7fa5b044a7803eed05ef9a2499ab7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "O maléolo posterior"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-e5be52fb",
+       "o-maleolo-posterior-9bc976b8",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-ee4f29d7"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "6500988d8bf7336b80d64d1d665b5ed35791f92196ee22e1cf1a5b5ea34368df"
+     }
+    ],
+    "questaoSha256": "d94f597b8bb117981e337004350bf35cc7b7fa5b044a7803eed05ef9a2499ab7",
+    "comentarioSha256": "7f2c049ec49c8cae751cd902a8f7a1d1f626742b9fee5e79d2595084c97cbd33"
+   }
   },
   "pe-tornozelo-0247": {
    "tema": "pe-tornozelo",
@@ -26153,7 +26179,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26169,7 +26195,34 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "c06026cab7fdfe4870606ae198ecafa44b9b960b1aa9a401f1350edd0f4e8598"
+   "questaoSha256": "c06026cab7fdfe4870606ae198ecafa44b9b960b1aa9a401f1350edd0f4e8598",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-bb33c16b",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-4d5d767b",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-0315de83"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "a2109c2eb19e59b7da0a5afa1ac04ec5ecd2c67eb053eb33d6f521bf05a02b51"
+     }
+    ],
+    "questaoSha256": "c06026cab7fdfe4870606ae198ecafa44b9b960b1aa9a401f1350edd0f4e8598",
+    "comentarioSha256": "1813253cdffb5d7f01a50d774105dbf9040d93ed104ae8a2a202b6d1378ace32"
+   }
   },
   "pe-tornozelo-0334": {
    "tema": "pe-tornozelo",
@@ -26230,7 +26283,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26246,7 +26299,33 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "8a8c5b84b7e712ea679615c826a5671d6f99a1f217fd8d59372a000bd86bbb77"
+   "questaoSha256": "8a8c5b84b7e712ea679615c826a5671d6f99a1f217fd8d59372a000bd86bbb77",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-2dc763e9",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-73dfaeff",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "775f7b28d64ce0c29762615335f2f8c57e3d2f4fad254079b5f0f7cb64ef3c2e"
+     }
+    ],
+    "questaoSha256": "8a8c5b84b7e712ea679615c826a5671d6f99a1f217fd8d59372a000bd86bbb77",
+    "comentarioSha256": "4ff3596b4d068c9089e76c094f4b5e3a24a65c62fd92d5ccc37f6ecf59df80ea"
+   }
   },
   "pe-tornozelo-0339": {
    "tema": "pe-tornozelo",
@@ -26323,7 +26402,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26338,7 +26417,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "2be767b60f7d0223eadfe5a9d205de958a1b939612e46bfe48ddc4180d885efb"
+   "questaoSha256": "2be767b60f7d0223eadfe5a9d205de958a1b939612e46bfe48ddc4180d885efb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-86ee564a",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "47e65f4350515a0b865f701a779f236d72b35260dc32a22b521a927388ae8623"
+     }
+    ],
+    "questaoSha256": "2be767b60f7d0223eadfe5a9d205de958a1b939612e46bfe48ddc4180d885efb",
+    "comentarioSha256": "9453eba0f0ecfcdfb5e811d739d195106f0e6694b6a150d1921db21f04d8fe6b"
+   }
   },
   "pe-tornozelo-0357": {
    "tema": "pe-tornozelo",
@@ -26417,7 +26522,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26433,7 +26538,32 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "9f366c170ed9db92f0bbbbf8ac0920155e84433cfb5005b7459431ba24baf24d"
+   "questaoSha256": "9f366c170ed9db92f0bbbbf8ac0920155e84433cfb5005b7459431ba24baf24d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-d5ae297c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-0315de83"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "ace259879cc5d58e503c5be05b338c47477929b83537af39e632e6bdef6d2376"
+     }
+    ],
+    "questaoSha256": "9f366c170ed9db92f0bbbbf8ac0920155e84433cfb5005b7459431ba24baf24d",
+    "comentarioSha256": "465f06349a9fdb1098875f46799ca625a9a48344199703e55e59e7f6b6f5cfc8"
+   }
   },
   "pe-tornozelo-0370": {
    "tema": "pe-tornozelo",
@@ -26477,7 +26607,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26493,7 +26623,34 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "036abf4e2f8b94645bc16adfc3e21dbdad2ade2cd8b4d4d29ec7ac766e5207bb"
+   "questaoSha256": "036abf4e2f8b94645bc16adfc3e21dbdad2ade2cd8b4d4d29ec7ac766e5207bb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+       "Tratamento: maléolo por maléolo",
+       "O tratamento preferido dos autores"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f8738c81",
+       "tratamento-maleolo-por-maleolo-2d8f04e2",
+       "o-tratamento-preferido-dos-autores-2c980e50"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "a2742f70c50340d9cdeba6f3b55ab8a2042b4ed147ad0cd9f8c50bb93d420e2f"
+     }
+    ],
+    "questaoSha256": "036abf4e2f8b94645bc16adfc3e21dbdad2ade2cd8b4d4d29ec7ac766e5207bb",
+    "comentarioSha256": "e5fefa5d77b16f6bddf2ea9ed00b20a0655cb716b2dd9aa6e5b0998dea8661c3"
+   }
   },
   "pe-tornozelo-0373": {
    "tema": "pe-tornozelo",
@@ -26602,8 +26759,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -26617,7 +26774,47 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "fe3600b567a9bf3c5ad4a7966aa9713f305815a296fa44d5d45a702250308a05"
+   "questaoSha256": "fe3600b567a9bf3c5ad4a7966aa9713f305815a296fa44d5d45a702250308a05",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "As vias de acesso e o nervo em risco"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-55db18ff",
+       "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "dba0293b545ba0236902806136ed6f8bfc869b36dcdea1845d7f1529412cc6cb"
+     },
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "anatomia-aplicada-32ce3047"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "85a486c680731efa8cc5add4691b1bd266d6b3666b97432dadd3e2b7054cf99f"
+     }
+    ],
+    "questaoSha256": "fe3600b567a9bf3c5ad4a7966aa9713f305815a296fa44d5d45a702250308a05",
+    "comentarioSha256": "47d79fb22004cfeb93f181ff16b0127e41a0e55ce7eead4038cc8b669fccbabf"
+   }
   },
   "pe-tornozelo-0422": {
    "tema": "pe-tornozelo",
@@ -41922,7 +42119,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -41937,7 +42134,34 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "1085df1b7997161194ebdb62512726721d3f9b59a364b7b123521ed8dd54b6f2"
+   "questaoSha256": "1085df1b7997161194ebdb62512726721d3f9b59a364b7b123521ed8dd54b6f2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-73dfaeff",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-309e1102",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-2dc763e9",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "fb47ec8a581d0508bd25634c1d1420c4e2281597663986fb7d76b07cc9aba34f"
+     }
+    ],
+    "questaoSha256": "1085df1b7997161194ebdb62512726721d3f9b59a364b7b123521ed8dd54b6f2",
+    "comentarioSha256": "49b649af632a6c27cbc3dba7a0b863c6b725bb7c1faa3cd877759e8996002e0b"
+   }
   },
   "trauma-0010": {
    "tema": "trauma",
@@ -43926,7 +44150,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43949,7 +44173,33 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "581fe0a136b7eb7849ca992f00177723c9aea72e30a8f233a4a04ffcc3314c1d"
+   "questaoSha256": "581fe0a136b7eb7849ca992f00177723c9aea72e30a8f233a4a04ffcc3314c1d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "O maléolo posterior"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-86ee564a",
+       "o-maleolo-posterior-2b4b2fb8"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "a49013031a0ebb6293039950f80a2b12896253d52ac6630317fa89b10e82e322"
+     }
+    ],
+    "questaoSha256": "581fe0a136b7eb7849ca992f00177723c9aea72e30a8f233a4a04ffcc3314c1d",
+    "comentarioSha256": "64890f5b4b7907fe06b5fe0a1c73f3ef76fe313ac881d96c25cead2013254162"
+   }
   },
   "trauma-0073": {
    "tema": "trauma",
@@ -46285,7 +46535,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46300,7 +46550,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "222d8fb8376650e23b8a3da6ed3075f9b333ed513e33ccdbe2a1d7d521bf5828"
+   "questaoSha256": "222d8fb8376650e23b8a3da6ed3075f9b333ed513e33ccdbe2a1d7d521bf5828",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "As radiografias e os parâmetros do encaixe",
+       "Sindesmose: quando fixar, como testar e com o quê"
+      ],
+      "blocos": [
+       "as-radiografias-e-os-parametros-do-encaixe-c37aab6f",
+       "as-radiografias-e-os-parametros-do-encaixe-07c3c549",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-361ff67d"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "8fd89c485e71259b8fdce01ff2a8a2e677185cb149febcc1c87fb2fe3395b14f"
+     }
+    ],
+    "questaoSha256": "222d8fb8376650e23b8a3da6ed3075f9b333ed513e33ccdbe2a1d7d521bf5828",
+    "comentarioSha256": "3416186420c51a44c49b053206994c348acf0568d62a4448aabc1d554e78b736"
+   }
   },
   "trauma-0150": {
    "tema": "trauma",
@@ -46984,7 +47260,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46999,7 +47275,32 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0b6d6f55f895734b7867a09d015ae4ff7471428278db91cc06eee6f61f9f0f8b"
+   "questaoSha256": "0b6d6f55f895734b7867a09d015ae4ff7471428278db91cc06eee6f61f9f0f8b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f261f8ea",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "59d1fa80ce2af248f6b7fb7633915adf1d249f90a98601dc4c82c3802e008026"
+     }
+    ],
+    "questaoSha256": "0b6d6f55f895734b7867a09d015ae4ff7471428278db91cc06eee6f61f9f0f8b",
+    "comentarioSha256": "cc99418adc895aa8beb968234b22194d8b3fa23545b78e7433cc67119db6637a"
+   }
   },
   "trauma-0172": {
    "tema": "trauma",
@@ -47290,8 +47591,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -47305,7 +47606,31 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "d20de38e923f51c0d1291ac331d7160c3c12cdb46b7f05b4873eb91c9a90fce0"
+   "questaoSha256": "d20de38e923f51c0d1291ac331d7160c3c12cdb46b7f05b4873eb91c9a90fce0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f8738c81"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "a3a780b4b99c05aee361d0787e9cf8f8b8f18f68539b27b922824407252e6d5f"
+     }
+    ],
+    "questaoSha256": "d20de38e923f51c0d1291ac331d7160c3c12cdb46b7f05b4873eb91c9a90fce0",
+    "comentarioSha256": "0d1946590aa927eb52b9a3c7ef068f85e9624b9e5e139e7209bfff0dc2b5e4ce"
+   }
   },
   "trauma-0187": {
    "tema": "trauma",
@@ -47314,8 +47639,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -47329,7 +47654,31 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0baaa32c142bb2d64203e15dcd788e94336911e5abe07b0dc7075c248bdc9fc7"
+   "questaoSha256": "0baaa32c142bb2d64203e15dcd788e94336911e5abe07b0dc7075c248bdc9fc7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "As radiografias e os parâmetros do encaixe"
+      ],
+      "blocos": [
+       "as-radiografias-e-os-parametros-do-encaixe-c37aab6f",
+       "as-radiografias-e-os-parametros-do-encaixe-7c23275f"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "0026488369d644cd7df69ef9cd5277e2de120f3bb5accde2af2ec858ee84c8cf"
+     }
+    ],
+    "questaoSha256": "0baaa32c142bb2d64203e15dcd788e94336911e5abe07b0dc7075c248bdc9fc7",
+    "comentarioSha256": "32f8ae46a1796ed692e60a461ba021622302754676e412465629154072c5ac06"
+   }
   },
   "trauma-0188": {
    "tema": "trauma",
@@ -47338,7 +47687,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47353,7 +47702,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "7467f938d1ffc105aed7f2c3e66a6e34595c4d8f5805bd31b08fc57fae0f9374"
+   "questaoSha256": "7467f938d1ffc105aed7f2c3e66a6e34595c4d8f5805bd31b08fc57fae0f9374",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Sindesmose: quando fixar, como testar e com o quê"
+      ],
+      "blocos": [
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-b64f5012",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-4febbbb4",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-e9703489",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-006976af"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "dca7bda11a115e41ec02025853aaa0e7f5e9e8e1831314e848a6b1cc4788c457"
+     }
+    ],
+    "questaoSha256": "7467f938d1ffc105aed7f2c3e66a6e34595c4d8f5805bd31b08fc57fae0f9374",
+    "comentarioSha256": "e3af05c7c3ea1d8be9dafea4fceeacb087d470e9fa544c552bacd15dcd18a60d"
+   }
   },
   "trauma-0190": {
    "tema": "trauma",
@@ -50441,7 +50816,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50456,7 +50831,34 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "d4318cde7ae7a26d9a93ee2ff202d530d382e2c7e1ee8d79a98597d5881390cd"
+   "questaoSha256": "d4318cde7ae7a26d9a93ee2ff202d530d382e2c7e1ee8d79a98597d5881390cd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "Estabilidade: a fratura isolada do maléolo lateral e o teste"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-b0677a6c",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-f501d07b",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-a3ca0427"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "b7c41f5d531ff7d984129221c554f7208286ad0fd2405abf554824580d293764"
+     }
+    ],
+    "questaoSha256": "d4318cde7ae7a26d9a93ee2ff202d530d382e2c7e1ee8d79a98597d5881390cd",
+    "comentarioSha256": "398673e6f265bb735af562c56dd62e23432c09ba79669b03388cad47883a9bb9"
+   }
   },
   "trauma-0301": {
    "tema": "trauma",
@@ -50977,7 +51379,7 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50992,7 +51394,31 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "5b2927a89ca15393a6b7847b350d59b74bef41671444a289cca4656523e74b98"
+   "questaoSha256": "5b2927a89ca15393a6b7847b350d59b74bef41671444a289cca4656523e74b98",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "As radiografias e os parâmetros do encaixe"
+      ],
+      "blocos": [
+       "as-radiografias-e-os-parametros-do-encaixe-7154e786",
+       "as-radiografias-e-os-parametros-do-encaixe-c37aab6f"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "dd5399c376b1c58052f668b967654247b39c650c40e7ef94adfb5d7730336753"
+     }
+    ],
+    "questaoSha256": "5b2927a89ca15393a6b7847b350d59b74bef41671444a289cca4656523e74b98",
+    "comentarioSha256": "6a59f03efcfd2b55c5728746b9f330e071d750ea362681ec5bbe4c1680a278f3"
+   }
   },
   "trauma-0322": {
    "tema": "trauma",
@@ -53473,7 +53899,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53488,7 +53914,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "990607d4dca0b0906acc6281f33682ef3e054c6f4f6edafe3f526f5571c662cb"
+   "questaoSha256": "990607d4dca0b0906acc6281f33682ef3e054c6f4f6edafe3f526f5571c662cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-382058f7",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-86ee564a"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "141a34722e67a53290dd46bd18b07f6605dc962b20987049711ce7c6ff29ad64"
+     }
+    ],
+    "questaoSha256": "990607d4dca0b0906acc6281f33682ef3e054c6f4f6edafe3f526f5571c662cb",
+    "comentarioSha256": "41614000bf998d13f4a067511de61ae98fd968afa0bf5b4f877949eed03f289e"
+   }
   },
   "trauma-0538": {
    "tema": "trauma",
@@ -55566,7 +56018,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55581,7 +56033,34 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "4e1f8ec059f2056bf621e932f816c197ed7172ac4c4f3926755895caad166dcf"
+   "questaoSha256": "4e1f8ec059f2056bf621e932f816c197ed7172ac4c4f3926755895caad166dcf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "As vias de acesso e o nervo em risco",
+       "Tratamento: maléolo por maléolo"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-55db18ff",
+       "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf",
+       "tratamento-maleolo-por-maleolo-96d50bfb"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "e7022b1870515bf72566f0fa60b478af65878b269db8c7635b3617fd6e138978"
+     }
+    ],
+    "questaoSha256": "4e1f8ec059f2056bf621e932f816c197ed7172ac4c4f3926755895caad166dcf",
+    "comentarioSha256": "811b48d2d37cb8441093f383bfa1c17c9b6e2677a4aa71e69cf567c5ac05eb03"
+   }
   },
   "trauma-0694": {
    "tema": "trauma",
@@ -56257,8 +56736,8 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -56272,7 +56751,35 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "de4a0014a9b9bf147c91015a411b5bf4e3235a325f2c4f50a34b7c6d035950ad"
+   "questaoSha256": "de4a0014a9b9bf147c91015a411b5bf4e3235a325f2c4f50a34b7c6d035950ad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+       "Estabilidade: a fratura isolada do maléolo lateral e o teste"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-b0677a6c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-2dc763e9",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-73dfaeff"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "470fd85247cecf69afc7d436e8ae77804611abed1ac645bc6c984ca73421adc9"
+     }
+    ],
+    "questaoSha256": "de4a0014a9b9bf147c91015a411b5bf4e3235a325f2c4f50a34b7c6d035950ad",
+    "comentarioSha256": "5c9a753c8bd3c157a008dc3ed9a2ab92a5f30b63c5c5189925e253015b7f4b7d"
+   }
   },
   "trauma-0718": {
    "tema": "trauma",
@@ -57256,7 +57763,7 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57271,7 +57778,30 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "7e142dbed2938ce4d153c213db9666f917e058a556b7a78a8c1fab8404ec030d"
+   "questaoSha256": "7e142dbed2938ce4d153c213db9666f917e058a556b7a78a8c1fab8404ec030d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "0ed319c0cc82ee74a1bde339f4492c229f2b297c684beae0b83bbe9392cc5010"
+     }
+    ],
+    "questaoSha256": "7e142dbed2938ce4d153c213db9666f917e058a556b7a78a8c1fab8404ec030d",
+    "comentarioSha256": "cc08012878ee0b29fb2d796037e3bbe3492e8882ad0e62d4b7d90a3327601130"
+   }
   },
   "trauma-0767": {
    "tema": "trauma",
@@ -85066,7 +85596,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85088,7 +85618,32 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "be44e8f9b613686e56ca35d5e35a94d0f7a1e49b015fd87770dacb1ea4bfa321"
+   "questaoSha256": "be44e8f9b613686e56ca35d5e35a94d0f7a1e49b015fd87770dacb1ea4bfa321",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "Resultados e complicações"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-e5be52fb",
+       "resultados-e-complicacoes-018d6d3d"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "8db33402524ff8e7e85e36a92a68adc19873862d136a56ddd945346e09d35340"
+     }
+    ],
+    "questaoSha256": "be44e8f9b613686e56ca35d5e35a94d0f7a1e49b015fd87770dacb1ea4bfa321",
+    "comentarioSha256": "c7ad6e12bedd2a361b4d198e13e9810a869cc3c08c8d7f0add8b7d1884e213cd"
+   }
   },
   "trauma-1683": {
    "tema": "trauma",
@@ -85097,7 +85652,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85119,7 +85674,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "288bcc77099e8c40b1d9791f4cf5b35ef6582a88800ea27e464c0a5da0b8a58d"
+   "questaoSha256": "288bcc77099e8c40b1d9791f4cf5b35ef6582a88800ea27e464c0a5da0b8a58d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-4d5d767b",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f8738c81",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-a110d2e5"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "e76d173dbb7ae58f606de686f4e29d4befe80c0196fb9128eaf8903ba5a9749a"
+     }
+    ],
+    "questaoSha256": "288bcc77099e8c40b1d9791f4cf5b35ef6582a88800ea27e464c0a5da0b8a58d",
+    "comentarioSha256": "143eb4b115fc3acac90ddd7dd9f667e1439fe06587864b5d520b439dc9703c28"
+   }
   },
   "trauma-1684": {
    "tema": "trauma",
@@ -85128,7 +85709,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85150,7 +85731,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "61a7157f6aa889994b47e59c180ce6989579fb00354313e56aed6c2135e550c3"
+   "questaoSha256": "61a7157f6aa889994b47e59c180ce6989579fb00354313e56aed6c2135e550c3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+       "Tratamento: maléolo por maléolo"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-96dbce0c",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-f261f8ea",
+       "tratamento-maleolo-por-maleolo-34a347f1"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "2417bdf8b91ad1be4ab041fbb6f59a12a84ee8de6f606e223444eea3a509314c"
+     }
+    ],
+    "questaoSha256": "61a7157f6aa889994b47e59c180ce6989579fb00354313e56aed6c2135e550c3",
+    "comentarioSha256": "e176e51a41738846465b60e56e44657383e8ab9c023e51510e744878eb6a1acf"
+   }
   },
   "trauma-1685": {
    "tema": "trauma",
@@ -85159,7 +85766,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85174,7 +85781,32 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "afb0166d886fd8329b1203d87ecc746d636f7f54cd8dbe4f0f298e20f3727cb1"
+   "questaoSha256": "afb0166d886fd8329b1203d87ecc746d636f7f54cd8dbe4f0f298e20f3727cb1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-2dc763e9",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-be50c933",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-309e1102"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "e67c256d2cb4d575b2138896ed1a5c1ccbe44d1ad3d4e2cc28b8da5e006fbf15"
+     }
+    ],
+    "questaoSha256": "afb0166d886fd8329b1203d87ecc746d636f7f54cd8dbe4f0f298e20f3727cb1",
+    "comentarioSha256": "ef4a38b69e33ebd7cbbbac3470ac8b0cac525e36d2e942a06b10c8f0c0e71255"
+   }
   },
   "trauma-1686": {
    "tema": "trauma",
@@ -85183,7 +85815,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85198,7 +85830,34 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "92e3cb3113784df1b9ed27ce5bb9e92ae72e82d1180b514f7e20529ebb6edbfa"
+   "questaoSha256": "92e3cb3113784df1b9ed27ce5bb9e92ae72e82d1180b514f7e20529ebb6edbfa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "A classificação de LAUGE-HANSEN e a de DANIS-WEBER",
+       "Sindesmose: quando fixar, como testar e com o quê"
+      ],
+      "blocos": [
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-73dfaeff",
+       "a-classificacao-de-lauge-hansen-e-a-de-danis-web-309e1102",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-a9f0f0a0",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-006976af"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "cad55fd353159b28effa5ab42f7d7a760bcafd55cad3d295123590ea0d5c7197"
+     }
+    ],
+    "questaoSha256": "92e3cb3113784df1b9ed27ce5bb9e92ae72e82d1180b514f7e20529ebb6edbfa",
+    "comentarioSha256": "46c94d6b332a3fd1c0bd5395743bb94ff116fe93a4f7e7844768797c1859f0ee"
+   }
   },
   "trauma-1687": {
    "tema": "trauma",
@@ -85207,7 +85866,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85222,7 +85881,35 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "ffc51bee950f9d3f3f2442817e65eb646cd9d5835a2e065e4c28fbb2d6339af1"
+   "questaoSha256": "ffc51bee950f9d3f3f2442817e65eb646cd9d5835a2e065e4c28fbb2d6339af1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "O maléolo posterior"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-352a342b",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-86ee564a",
+       "o-maleolo-posterior-2b4b2fb8",
+       "o-maleolo-posterior-a900d55b",
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "7e7570f13a7b27c4f6a519dead7f34a6ed4109b55c461bd18df3043d4bfe5407"
+     }
+    ],
+    "questaoSha256": "ffc51bee950f9d3f3f2442817e65eb646cd9d5835a2e065e4c28fbb2d6339af1",
+    "comentarioSha256": "feba06c12daabae89fd70f3f0a0bdec772c8b88fa42667123feb9cef66965fd3"
+   }
   },
   "trauma-1688": {
    "tema": "trauma",
@@ -85231,8 +85918,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 65 associa o duplo contorno medial ao Bartoníček 3 e à via posteromedial na tabela 65-3 e no parágrafo de classificação, mas na seção técnica indica a posterolateral para fratura multifragmentária como o tipo 3. A e D não descrevem o tipo do duplo contorno; B e C se distinguem justamente pela via para a qual o corpo traz orientações conflitantes. Falta conferir a descrição primária, a morfologia/variante e o planejamento por TC para resolver a divergência entre B e C. Preservado B oficial, sem novo comentário baseado em resumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -85246,7 +85933,8 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "0b1210eee8245b9b631a37ef33f6b7de10c072d65ca9fb631eb245925b6dfed3"
+   "questaoSha256": "0b1210eee8245b9b631a37ef33f6b7de10c072d65ca9fb631eb245925b6dfed3",
+   "pendencia": "O resumo 65 associa o duplo contorno medial ao Bartoníček 3 e à via posteromedial na tabela 65-3 e no parágrafo de classificação, mas na seção técnica indica a posterolateral para fratura multifragmentária como o tipo 3. A e D não descrevem o tipo do duplo contorno; B e C se distinguem justamente pela via para a qual o corpo traz orientações conflitantes. Falta conferir a descrição primária, a morfologia/variante e o planejamento por TC para resolver a divergência entre B e C. Preservado B oficial, sem novo comentário baseado em resumo."
   },
   "trauma-1689": {
    "tema": "trauma",
@@ -85255,7 +85943,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85277,7 +85965,33 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "74c28da20f97e734b397c092102b3bafbaacc15e6c5a24b48939076522495504"
+   "questaoSha256": "74c28da20f97e734b397c092102b3bafbaacc15e6c5a24b48939076522495504",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "As radiografias e os parâmetros do encaixe",
+       "Sindesmose: quando fixar, como testar e com o quê"
+      ],
+      "blocos": [
+       "as-radiografias-e-os-parametros-do-encaixe-c37aab6f",
+       "as-radiografias-e-os-parametros-do-encaixe-07c3c549",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-361ff67d"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "8fd89c485e71259b8fdce01ff2a8a2e677185cb149febcc1c87fb2fe3395b14f"
+     }
+    ],
+    "questaoSha256": "74c28da20f97e734b397c092102b3bafbaacc15e6c5a24b48939076522495504",
+    "comentarioSha256": "e2966997334caeb9bbd66bdb0f0e8078fc8de66a2e71a2de1eae67ea31651e1a"
+   }
   },
   "trauma-1690": {
    "tema": "trauma",
@@ -85286,7 +86000,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85315,7 +86029,34 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "176647d8b2c24072123873f75de2b2f22c5354b25504144434c8d5837dff02fe"
+   "questaoSha256": "176647d8b2c24072123873f75de2b2f22c5354b25504144434c8d5837dff02fe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Anatomia aplicada: o encaixe, a sindesmose e o deltoide",
+       "Estabilidade: a fratura isolada do maléolo lateral e o teste"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-5cf8f259",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-b0677a6c",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-f501d07b",
+       "estabilidade-a-fratura-isolada-do-maleolo-latera-a3ca0427"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "b7c41f5d531ff7d984129221c554f7208286ad0fd2405abf554824580d293764"
+     }
+    ],
+    "questaoSha256": "176647d8b2c24072123873f75de2b2f22c5354b25504144434c8d5837dff02fe",
+    "comentarioSha256": "5f38f1b309d4315f6eb310ed8895ed483b5cbd0c0e3748f89bfb9783136a0659"
+   }
   },
   "trauma-1691": {
    "tema": "trauma",
@@ -85324,7 +86065,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85346,7 +86087,32 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "bf2c2fb0edcb05401b20e1253f9ba5612e52182ea71bb939874b6989d3a9afb4"
+   "questaoSha256": "bf2c2fb0edcb05401b20e1253f9ba5612e52182ea71bb939874b6989d3a9afb4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Sindesmose: quando fixar, como testar e com o quê"
+      ],
+      "blocos": [
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-8f922e47",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-006976af",
+       "sindesmose-quando-fixar-como-testar-e-com-o-que-bb8d0880"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "00ac2e6d68dfc4e976b720b288b6a97cb8b19c93eca4cb4da9a3f48a0f48df89"
+     }
+    ],
+    "questaoSha256": "bf2c2fb0edcb05401b20e1253f9ba5612e52182ea71bb939874b6989d3a9afb4",
+    "comentarioSha256": "b59ce7245218ff135ea190f238cebb02dba9d0adfe8111efb414bcc803a5e0af"
+   }
   },
   "trauma-1692": {
    "tema": "trauma",
@@ -85355,8 +86121,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 65 sustenta neuroartropatia/neuropatia e doença vascular como riscos maiores, sem diferença por insulinodependência em Costigan. Entretanto, o parágrafo recomenda imobilização sem carga por até 8 semanas e a tabela 65-4 descreve 8–10 semanas de carga protegida. Isso não equivale a comprovar a formulação sem carga por 8–10 semanas de D. A/B erram ao priorizar insulina; a carga imediata de C não é sustentada para neuropatia. Falta protocolo primário para grau e duração de restrição de carga no neuropata, distinguindo proteção de proibição total. D oficial preservada; não ensinar as duas expressões como sinônimas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -85377,7 +86143,8 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "7cafa98c9a0179eac60b9c2e749d541b9e0d18fc4650a73649dfb5d67f158d74"
+   "questaoSha256": "7cafa98c9a0179eac60b9c2e749d541b9e0d18fc4650a73649dfb5d67f158d74",
+   "pendencia": "O corpo do resumo 65 sustenta neuroartropatia/neuropatia e doença vascular como riscos maiores, sem diferença por insulinodependência em Costigan. Entretanto, o parágrafo recomenda imobilização sem carga por até 8 semanas e a tabela 65-4 descreve 8–10 semanas de carga protegida. Isso não equivale a comprovar a formulação sem carga por 8–10 semanas de D. A/B erram ao priorizar insulina; a carga imediata de C não é sustentada para neuropatia. Falta protocolo primário para grau e duração de restrição de carga no neuropata, distinguindo proteção de proibição total. D oficial preservada; não ensinar as duas expressões como sinônimas."
   },
   "trauma-1693": {
    "tema": "trauma",
@@ -85386,7 +86153,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85408,7 +86175,31 @@
    "resumosCandidatos": [
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "310cd44869bbc1f7f730d5a5a9111b24716ec6c8da59ca0dfce6d19c5162a039"
+   "questaoSha256": "310cd44869bbc1f7f730d5a5a9111b24716ec6c8da59ca0dfce6d19c5162a039",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-65-tornozelo",
+      "titulo": "Fraturas do tornozelo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 65 · Ankle Fractures",
+      "secoes": [
+       "Tratamento: maléolo por maléolo"
+      ],
+      "blocos": [
+       "tratamento-maleolo-por-maleolo-b165b894",
+       "tratamento-maleolo-por-maleolo-34a347f1"
+      ],
+      "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+      "trechosSha256": "a869863fae91eb558c872e16e4f2c386cea85628f5fcd99969e39f458754092e"
+     }
+    ],
+    "questaoSha256": "310cd44869bbc1f7f730d5a5a9111b24716ec6c8da59ca0dfce6d19c5162a039",
+    "comentarioSha256": "ba73cb9fcfb3519a10c00988ac92a374d2c743e0d4f1d7ba533e72ab7ccb3885"
+   }
   },
   "trauma-1694": {
    "tema": "trauma",

@@ -1,0 +1,84 @@
+{
+  "basePublicada": "b71e9d124a8040eb1846bcbe88748dd90e64e3bb",
+  "baseConcorrenteIncorporada": "c29f1a718334c9db85fee66faeb761af064b5069",
+  "lotes": {
+    "112-tornozelo-mecanismos-e-estabilidade.json": {
+      "sha256": "fdc7e2304104502c4ddd8711a7aff187f9881621e4c35100fc21bfeb8182fffd",
+      "ids": [
+        "pe-tornozelo-0234",
+        "pe-tornozelo-0331",
+        "pe-tornozelo-0335",
+        "pe-tornozelo-0368",
+        "trauma-0009",
+        "trauma-0072",
+        "trauma-0149",
+        "trauma-0171",
+        "trauma-0188",
+        "trauma-0300"
+      ]
+    },
+    "113-tornozelo-fixacao-e-planejamento.json": {
+      "sha256": "c72be6c9a2a1d824f03f5d0e5bacc5d436a65aead70f9e3c93f2e288d01b9a5f",
+      "ids": [
+        "trauma-1682",
+        "trauma-1683",
+        "trauma-1684",
+        "trauma-1685",
+        "trauma-1686",
+        "trauma-1687",
+        "trauma-1689",
+        "trauma-1690",
+        "trauma-1691",
+        "trauma-1693"
+      ]
+    },
+    "114-tornozelo-radiografias-e-anatomia.json": {
+      "sha256": "1323aa29417395f129dbcfa340128dade7342842be9a425dd2b79eba45dec860",
+      "ids": [
+        "trauma-0321",
+        "trauma-0537",
+        "trauma-0693",
+        "trauma-0766",
+        "pe-tornozelo-0372",
+        "pe-tornozelo-0350",
+        "trauma-0186",
+        "trauma-0187",
+        "trauma-0716",
+        "pe-tornozelo-0417"
+      ]
+    }
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 passaram",
+    "acervo": "sem erros",
+    "npmTest": "suíte completa passou",
+    "build": "passou",
+    "cadeia": "30 IDs únicos, aplicações 112–114 reproduzidas desde a base; questões/gabaritos/membros alheios preservados; todas as alternativas, fontes, hashes e avulsos integrais conferidos",
+    "interface": "10 casos em celular/computador; figuras, alertas e destinos de fonte verificados; capturas representativas abertas"
+  },
+  "figuras": {
+    "trauma/trauma-0186-1.jpeg": {
+      "sha256": "2d249ea686c572289930a1dc0baea0935062f0b6d15b8f7622113ad550690e00",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-0187-1.jpeg": {
+      "sha256": "801bbb20c8bbeea3aad7475392cd13d5365fb48b8e0c27538555dcba9b1738f7",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-0716-1.jpeg": {
+      "sha256": "73ebb041b819dcd6841e74bce4055ed00385578447f5bce28453d97d1187ea45",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-0716-2.jpeg": {
+      "sha256": "8859fbe7d5f3bfdd8b0ad834daec57d6f483211d96037ee738a510a6de3b6cf3",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "pe-tornozelo/pe-tornozelo-0417-1.jpeg": {
+      "sha256": "acc7882aa464e38df2f35dcb684fe63a1b94f83c96946e99c4469b0164a25f19",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    }
+  },
+  "lacunas": "114-lacunas-tornozelo.json: duas pendências específicas, sem revisão concluída",
+  "publicado": false,
+  "proximoLote": "115"
+}
