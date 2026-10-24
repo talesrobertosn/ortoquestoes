@@ -1,0 +1,35 @@
+{
+  "base": "8f9902bb73f8c2852938382b3d4b4342e57e8d60",
+  "criterio": "Cinco enunciados e todas as opções confrontados individualmente com o corpo independente dos resumos 34/37. Faltam população, técnica, biomecânica ou classificação; não transferir cobertura de um componente para a opção inteira. Nenhum conta como revisão concluída.",
+  "resumosConferidosSha256": {
+    "rockwood10-34-fratura-clavicula": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+    "rockwood10-37-diafise-umero": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63"
+  },
+  "questoes": {
+    "pediatria-0685": {
+      "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101",
+      "pendencia": "A pergunta exige prevalência pediátrica de fratura do terço médio (76–85% na opção D). O resumo 34 fornece 80–85% para as fraturas de clavícula em geral e discute epidemiologia adulta, mas não traz coorte pediátrica para confirmar o intervalo infantil e excluir as outras três faixas. Coincidência numérica não prova a população. Falta fonte pediátrica da frequência; D e comentário preservados, sem selo novo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0796": {
+      "questaoSha256": "5b17f8adad0690443445588fb7dc94d027d5ef394d0abc5fa13127f68b5fe804",
+      "pendencia": "O corpo do resumo 34 localiza o conoide medial ao trapezoide e sua inserção no tubérculo, mas não descreve a técnica de Mazzocca nem a distância de 45 mm da superfície articular lateral até o túnel conoide. Falta fonte técnica primária para conferir as quatro distâncias (15/25/35/45 mm), sem transformar posição anatômica qualitativa em uma medida operatória. D e comentário preservados.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0451": {
+      "questaoSha256": "06e79780fbba32d4c92192dc743fde8e5ec64f1b1af672585f0ed851f6bdf322",
+      "pendencia": "O capítulo 37 não desenvolve a área de trabalho da haste no padrão AO 12C3 distal nem compara a distribuição de estresse nos bloqueios proximal/distal. Lembra apenas a dificuldade de fixar o fragmento curto. Falta fonte biomecânica de working length para conferir os dois segmentos e o local de maior esforço em cada par; não concluir D por metade do raciocínio. D e comentário preservados.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0926": {
+      "questaoSha256": "16d4ea12599402766b39d4c2563b9730f8e817abbbb896c519bb1d79056aba7d",
+      "pendencia": "O resumo 37 apresenta Wright-Cofield para o ombro e ODriscoll-Morrey para o cotovelo, mas não define as quatro regiões da classificação de Campbell. Falta tabela primária de Campbell para mapear diáfise proximal na região 3 e diferenciar as demais, sem usar a resposta do bloco contextual como autoridade. C e comentário preservados.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1167": {
+      "questaoSha256": "15560b6ad0de5d727f9bd8e10079a122a479b6070532bcf85561a9bf83091e21",
+      "pendencia": "A afirmação une medular menor que 9 mm e paralisia radial como motivos para evitar haste bloqueada. O corpo do resumo 37 não estabelece o corte de 9 mm nem proíbe haste por toda paralisia radial; a contraindicação explícita é à MIPO com déficit prévio. Falta fonte técnica primária da cautela e de seu contexto histórico para decidir o certo/errado integral sem transportar uma regra entre técnicas. Não há gabarito oficial; resposta bibliográfica/provável antiga A e comentário foram preservados, sem nova atribuição de provável ou selo.",
+      "estado": "pendente-fonte"
+    }
+  }
+}

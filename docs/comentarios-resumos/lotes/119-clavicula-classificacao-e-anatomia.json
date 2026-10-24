@@ -1,0 +1,416 @@
+{
+  "trauma-0023": {
+    "questaoSha256": "a69edc2738392ef480da17a3c8f624ea5bd57c81e5f5c58fc2fa0bec88d71bae",
+    "comentarioAnteriorSha256": "015f4351c3f5ed006c67e0bb9a76ff1ec0e73b0f296de5258884c1710a8f23c6",
+    "comentario": {
+      "conceito": "A associação clássica procurada é **fratura da clavícula e do colo da escápula**, alternativa B. O resumo do capítulo 34 a descreve como a lesão dupla mais comum do complexo suspensor superior; o capítulo 33, porém, questiona se muitas dessas fraturas chamadas de colo são realmente do corpo.\n\nO complexo funciona como um anel osteoligamentar que relaciona a glenoide e o membro ao tronco. Uma ruptura pode permanecer contida; duas rupturas independentes podem tornar o conjunto instável. A definição histórica de ombro flutuante associa diáfise clavicular e colo escapular do mesmo lado (Rockwood, 10ª ed., caps. 33 e 34, seções sobre ombro flutuante).\n\n**O nome clássico não substitui a análise anatômica.** No capítulo da escápula, a TC 3D mostra que parte da aparente medialização da glenoide é a lateralização do corpo infraespinal. O autor reserva a ideia de glenoide verdadeiramente flutuante à perda de todas as suas conexões osteoligamentares. Por isso não se deve atribuir uma frequência numérica única a toda lesão que recebeu o rótulo em séries antigas.\n\nA diferença também chega à cirurgia. O capítulo 34 propõe fixar a clavícula primeiro e reavaliar a glenoide; o 33 prefere estabilizar a escápula antes. São estratégias dos respectivos autores, não uma sequência universal comprovada para qualquer padrão.\n\n> **Na prova:** B é a associação clássica; na prática, confirme o traço, os ligamentos e o desvio em vez de concluir pela etiqueta.",
+      "correta": "**B: clavícula e colo da escápula.** É a associação clássica e a mais comum segundo o capítulo 34; a crítica do capítulo 33 exige cuidado com o diagnóstico de colo nas séries.",
+      "incorretas": {
+        "A": "**Pode romper duas partes do anel, mas não é a associação clássica mais frequente da referência.** A presença do acrômio não autoriza equiparar todas as combinações em frequência ou instabilidade.",
+        "C": "**É uma combinação possível do complexo, sem ser o par clássico pedido.** Lesão acromioclavicular e fratura do colo precisam de análise ligamentar e de desvio; não há porcentagem comparativa fornecida para ela.",
+        "D": "**Também pode desorganizar a suspensão, mas é outro padrão.** O coracoide com luxação acromioclavicular tem implicações próprias; a alternativa não reproduz a associação clavícula-colo destacada no capítulo 34."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Ombro flutuante, costelas e terço medial.",
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seção: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito B preservado e compatível com o conceito clássico do capítulo 34. O capítulo 33 critica a identificação radiográfica de colo versus corpo e encontra raríssima associação de colo verdadeiro com clavícula; não há uma frequência universal comum às definições. Os capítulos também divergem na sequência de fixação, que deve ser individualizada."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Ombro flutuante, costelas e terço medial"
+        ],
+        "blocos": [
+          "ombro-flutuante-costelas-e-terco-medial-b753c523",
+          "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "f5f26692f2a47a8dd51cd407d04ae7810e871e55bb54ea7d5750a53264ce26c3"
+      },
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-90e86a25",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-16bb4d46"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "8fb2df0e959b92ebef04395edbfd6f622bcb8b68ee38ef1f8f95c7d6e53ec6e3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1086": {
+    "questaoSha256": "fa4ec03c1053516842657f70a6b0395005cbfdc399f3986b1c1dbe7d95f93fba",
+    "comentarioAnteriorSha256": "8680f263c4dc607463a1397f84b8d0915623f2fb29d25c68b5078813cbfc665b",
+    "comentario": {
+      "conceito": "No tipo **IIA**, o traço fica **medial ao conoide**, deixando **conoide e trapezoide presos ao fragmento distal**. A é a referência mais específica para reconhecer esse padrão.\n\nO conoide é medial e o trapezoide lateral. Imagine percorrer a clavícula do esterno para o acrômio: ao encontrar a fratura antes do conoide, as duas inserções coracoclaviculares permanecem do lado distal. O fragmento medial perde essa contenção e sobe; o distal continua ligado à escápula, que desce com o braço (Rockwood, 10ª ed., cap. 34, “Neer, modificada por Rockwood”).\n\nNo **IIB**, o traço passa entre os dois ligamentos, com ruptura do conoide e trapezoide ainda preso distalmente. Essa é a diferença útil, e não apenas decorar a sequência das letras. Allman organiza a clavícula em terços; o detalhamento IIA/IIB vem das modificações do sistema distal descritas no resumo.\n\n**A alternativa C tem uma imprecisão importante.** Se uma fratura está medial ao conoide, ela também está medial ao trapezoide, que fica mais lateral. Dizer apenas “medial ao trapezoide” não localiza exclusivamente o intervalo entre os ligamentos. Logo, C é mais ampla e não deve ser ensinada como uma afirmação obrigatoriamente falsa.\n\n> **Na prova:** A localiza o traço antes do conoide; C, isolada, é pouco específica e também abrange essa posição.",
+      "correta": "**A: medial ao ligamento conoide.** Essa referência garante que ambos os coracoclaviculares ficam no fragmento distal, caracterizando IIA.",
+      "incorretas": {
+        "B": "**Não reproduz a referência medial ao conoide.** O intervalo lateral ao conoide e medial ao trapezoide é o descrito para IIB com ruptura do conoide; a palavra “lateral” sozinha também precisa de localização.",
+        "C": "**É ampla demais para distinguir os padrões.** Pode incluir tanto um traço entre os ligamentos quanto um traço ainda mais medial, antes do conoide. A é mais específica, mas C não é logicamente incompatível com IIA.",
+        "D": "**Coloca o traço depois das duas inserções.** Essa posição não deixa os dois ligamentos presos ao fragmento distal como no IIA; o padrão estável mantém as ligações no fragmento medial."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO; Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial A preservado como referência específica. Como o conoide é medial ao trapezoide, o traço medial ao conoide também é medial ao trapezoide; C é ampla e não pode ser refutada afirmando que sempre significa IIB. O enunciado ainda atribui o detalhamento IIA a Allman, enquanto o resumo o apresenta na modificação de Neer/Rockwood."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Classificações: Allman, Neer, Craig, Robinson e AO",
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "classificacoes-allman-neer-craig-robinson-e-ao-d61c043a",
+          "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+          "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
+          "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "1aa5ca8b58e5375d05036b2eeac1fd193073cb918cf3eac0ba5112c71197fc95"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1179": {
+    "questaoSha256": "c9aff8f8ad1d1a829a7c519b79313a8ba3de727425e9d43b865cd8fb297dd8dc",
+    "comentarioAnteriorSha256": "b483c99bd1241c10bc54818202e8727a0f216a4ba6b3fc6442de84fd2eaf398b",
+    "comentario": {
+      "conceito": "A afirmação é sustentada pelo resumo: no tratamento conservador do terço médio, o **desvio inicial**, especialmente a perda completa do contato, é o fator de pseudartrose apontado de forma mais consistente pelos estudos. **A, Certo**, permanece resposta bibliográfica/provável; não há gabarito oficial registrado.\n\nA distância e a relação entre os fragmentos influem na capacidade de formar uma ponte óssea. Isso não torna todo desvio uma falha inevitável: a clavícula frequentemente consolida sem cirurgia, e a decisão também considera demanda, partes moles e evolução. O Rockwood, 10ª ed., cap. 34, “Quem não consolida”, separa o fator mais consistente de outros possíveis fatores de risco.\n\nEntre eles estão cominuição, encurtamento, tabagismo, idade e sexo feminino. A evolução nas primeiras semanas também acrescenta informação: pouca melhora da dor e DASH alto em seis semanas aparecem nos estudos citados. São associações prognósticas, não uma regra que permite prever com certeza o destino de um paciente.\n\nA prática é acompanhar a fratura, explicar o risco e reavaliar sintomas e imagens. Dizer que o desvio pesa mais não significa que ele seja o único fator nem que toda clavícula desviada deva ser operada. O capítulo mantém uma relação risco-benefício estreita para a cirurgia e favorece decisão compartilhada.\n\n> **Na prova:** provável A; desvio inicial é o fator mais consistente, não um determinismo isolado.",
+      "correta": "**A: Certo, resposta bibliográfica/provável.** O desvio é o fator reconhecido pela maioria dos estudos reunidos, com destaque para o desvio completo.",
+      "incorretas": {
+        "B": "**Negaria a associação mais consistente da referência.** Outros fatores e a evolução clínica importam, mas isso não retira do desvio inicial o peso prognóstico que a afirmação compara."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Pseudartrose, fatores de risco e operar ou não; Como ler este capítulo."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. Mantida A como resposta bibliográfica/provável: o desvio inicial, sobretudo completo, é o fator mais consistente nas revisões do resumo 34. A afirmação não deve ser lida como exclusão de tabagismo, cominuição, encurtamento ou evolução clínica."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Pseudartrose, fatores de risco e operar ou não",
+          "Como ler este capítulo"
+        ],
+        "blocos": [
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-a8585fc0",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-8d54eedd",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-caba419b",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-b6820b99",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-beee1ef1",
+          "como-ler-este-capitulo-5368914c"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "52a43753859dac0f5cfa6d04cf81d70854792e0c0df334b1e665e7b4fe543306"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1366": {
+    "questaoSha256": "50d0b2235c35b6de12cbe49a18c48c7dafeac4969fd9690abed4cd88592f6bb0",
+    "comentarioAnteriorSha256": "b4a0887e588d97f910a932ec3f333b90c14f0e9fff9f94b359610b8b33988c28",
+    "comentario": {
+      "conceito": "Na comparação clínica, a placa **anteroinferior** teve **menos retirada de implante**, alternativa B. O resumo cita uma metanálise com 5% contra 11%, sem converter isso em superioridade de consolidação.\n\nA posição muda como o material é coberto e como o parafuso atravessa o osso. A placa superior é familiar e permite boa extensão; a anteroinferior tem menos saliência e usa a dimensão anteroposterior maior para parafusos mais longos. Isso ajuda a entender por que o paciente pode solicitar menos retirada por incômodo (Rockwood, 10ª ed., cap. 34, “Superior ou anteroinferior”).\n\n**Resultado de laboratório não é o mesmo que resultado do paciente.** A placa superior foi mais rígida em flexão nos modelos de fratura transversa, mas o resumo não encontrou uma vantagem clínica correspondente em consolidação, falha ou função. Portanto, não se deve transferir a maior rigidez da superior para a anteroinferior nem concluir que ambas consolidam de forma diferente.\n\nA orientação dos parafusos também não elimina o risco neurovascular. O texto considera a trajetória anteroinferior teoricamente mais fácil e segura, mas não demonstra uma diferença clínica que dispense dissecção cuidadosa e controle da broca.\n\n**Por que esta questão foi criada.** Ela separa a vantagem clínica de menor saliência/retirada das diferenças biomecânicas que não produziram superioridade funcional clara.",
+      "correta": "**B: menor taxa de retirada do implante.** É o achado da metanálise descrita, coerente com menor saliência, sem vantagem comprovada de consolidação.",
+      "incorretas": {
+        "A": "**Atribui à posição errada o achado de laboratório.** A superior foi mais rígida em flexão nas transversas; isso não é o benefício clínico apresentado para a anteroinferior.",
+        "C": "**Converte conforto em superioridade de união óssea.** Consolidação, falha e função foram semelhantes na comparação; menor retirada não equivale a maior consolidação.",
+        "D": "**Inverte o argumento da trajetória.** A anteroinferior é descrita como teoricamente mais segura; a fonte não demonstra maior risco de lesão pela broca nessa posição."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Placa e haste no terço médio; Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Placa e haste no terço médio",
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "placa-e-haste-no-terco-medio-b52b9b98",
+          "placa-e-haste-no-terco-medio-0b410f39",
+          "placa-e-haste-no-terco-medio-9484d401",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-1cdb1b7a"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "6ae2174495a56c9fe889da17e0e03bd5eaf837741da67938ee9793c8995dce5a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1368": {
+    "questaoSha256": "77cf5265cb7aa83ff23dad25f8ff5bddaed952d0be8a8b3e52165121b541c3b1",
+    "comentarioAnteriorSha256": "9d5f01815748c056555e59affb243c80d92055e74e880d7ae82ff354ea0bcbda",
+    "comentario": {
+      "conceito": "Na placa-gancho distal, o gancho passa **posteriormente no espaço subacromial**, e a grande desvantagem é a **alta taxa de retirada**, combinação D.\n\nO gancho oferece apoio sob o acrômio quando a fixação distal é difícil, mas ocupa um espaço usado pelo movimento do ombro. A parte anterior desse espaço é apertada e exporia o manguito a impacto; por isso o capítulo descreve o túnel posterior e recomenda cuidado com a hiper-redução (Rockwood, 10ª ed., cap. 34, “Cirurgia: placa, gancho ou fixação coracoclavicular”).\n\nEssa montagem pode consolidar bem e ainda assim incomodar. O resumo relata retirada em 60–83% nas séries, por irritação, impacto ou retirada planejada para evitar osteólise subacromial. **Retirada não é sinônimo de falha da fixação.** Ela pode ocorrer depois de a fratura ter unido, para recuperar os movimentos finais e remover o conflito do material.\n\nOs autores preferem placa distal bloqueada e não recomendam o gancho de rotina, sobretudo as primeiras gerações. A escolha depende da pega distal e das partes moles; a pergunta pede reconhecer a relação anatômica e o problema característico, não declarar o implante proibido em qualquer situação.\n\n**Por que esta questão foi criada.** A posição do túnel e a necessidade frequente de retirada explicam o custo clínico de um implante que consegue consolidar a fratura.",
+      "correta": "**D: posteriormente; alta taxa de retirada.** A localização protege o espaço anterior mais apertado, e a retirada frequente é a desvantagem destacada.",
+      "incorretas": {
+        "A": "**Troca a localização e a complicação predominante.** O gancho é descrito posteriormente; o problema característico é irritação/impacto e retirada, não falha distal como desfecho principal.",
+        "B": "**A desvantagem está correta, o túnel não.** A passagem anterior expõe o manguito ao espaço mais apertado; o resumo orienta a parte posterior.",
+        "C": "**Acerta a posição e confunde retirada com falha.** A placa pode consolidar e depois precisar sair por conflito subacromial; essa é a distinção que a alternativa perde."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Terço lateral (distal)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Terço lateral (distal)"
+        ],
+        "blocos": [
+          "terco-lateral-distal-5462932b",
+          "terco-lateral-distal-6bc29624",
+          "terco-lateral-distal-be04fd16"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "c65e36e37e85b89188f20c4ec2fb1d1c0dbac9b942d56b84059bd5b5e3705ce8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1369": {
+    "questaoSha256": "a465d543e4cbeccf594bb65eab91556f2fcf28c2968713b81d1c3e23160f8afd",
+    "comentarioAnteriorSha256": "f700006aead2ecbe50fc055f9b3733a3edfa8b657bb31ed88f268dc33aecdddc",
+    "comentario": {
+      "conceito": "Se a placa distal não consegue boa pega, os autores preferem reforçá-la com **botão e sutura no coracoide**. Um parafuso coracoclavicular rígido pode **afrouxar ou quebrar**, porque clavícula, escápula e coracoide se movem entre si. A resposta é B.\n\nO fragmento distal pode ser pequeno, esponjoso e cominuído, enquanto o proximal tende a subir e o conjunto da escápula desce com o braço. O reforço coracoclavicular compartilha a tarefa de conter essas forças quando a ancoragem na ponta lateral é insuficiente (Rockwood, 10ª ed., cap. 34, “Cirurgia do terço lateral”).\n\nO problema do parafuso longo não é faltar resistência estática num instante; é ligar rigidamente estruturas que se movem repetidamente. Esse movimento pode levar a afrouxamento ou quebra. O botão com sutura muda a forma da ligação, mas **também tem riscos**, inclusive fratura do coracoide, e não é usado de rotina só por existir uma fratura distal.\n\nA técnica requer controle de posição na base do coracoide e avaliação da qualidade óssea. Se o próprio coracoide estiver fraturado, não se deve transportar automaticamente a recomendação: a base de ancoragem precisa ser estudada antes.\n\n**Por que esta questão foi criada.** Ela conecta a falha do parafuso rígido ao movimento normal do complexo e mostra por que o reforço é seletivo, sem tratá-lo como livre de complicações.",
+      "correta": "**B: botão com sutura; o parafuso afrouxa ou quebra pelo movimento relativo.** É a preferência dos autores quando a placa tem pega distal insuficiente.",
+      "incorretas": {
+        "A": "**Mantém justamente o implante desaconselhado.** O objetivo não é consolidar uma suposta articulação coracoclavicular; a rigidez do parafuso num conjunto móvel favorece falha.",
+        "C": "**Acerta o mecanismo de falha do parafuso, mas troca o reforço.** A preferência descrita é botão com sutura na base do coracoide, não fio transacromial.",
+        "D": "**Escolhe o reforço e atribui ao parafuso o risco do outro dispositivo.** Fratura coracoidea é uma complicação possível do botão; o motivo apresentado para abandonar o parafuso rígido é afrouxamento ou quebra, sem a frequência afirmada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Terço lateral (distal)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Terço lateral (distal)"
+        ],
+        "blocos": [
+          "terco-lateral-distal-be04fd16",
+          "terco-lateral-distal-ffafad32",
+          "terco-lateral-distal-978927a9",
+          "terco-lateral-distal-807eaf40"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "a2cdbb09f873dbf74a686723de35e8730f660e175b532a35819a955dd7d64624"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0250": {
+    "questaoSha256": "04d544943fc36e9500a00c94af287fe1a9d6913cba104f550e621d382cf3542f",
+    "comentarioAnteriorSha256": "5a2f777b516b45363de51a5d2238ad5386f0b17ad58984c2cdefa362a708a42a",
+    "comentario": {
+      "conceito": "A seta aponta a faixa que cruza a **borda superior do esterno, entre as duas clavículas**: é o **ligamento interclavicular**, alternativa A. A sua posição sobre a fúrcula distingue-o da ligação inferior com a primeira costela.\n\nO resumo descreve o interclavicular como um **tirante contra a queda da clavícula medial**. Já a cápsula posterior é o principal freio da translação anteroposterior da esternoclavicular, e os costoclaviculares ligam a primeira costela à fossa romboide na face inferior da clavícula (Rockwood, 10ª ed., cap. 34, “Os ligamentos mediais”).\n\nEssas funções não são intercambiáveis. Identificar uma faixa acima da articulação não autoriza chamá-la de costoclavicular apenas porque ambas estabilizam a clavícula. Na imagem, é preciso seguir origem, destino e relação com o esterno: a estrutura assinalada atravessa a região superior entre os lados.\n\nA figura é uma ilustração anatômica, não uma demonstração de luxação ou de ligamento rompido. O exercício é reconhecer a estrutura antes de associar a cada uma o movimento que ela contém.\n\n> **Na prova:** entre as clavículas, sobre a fúrcula, é interclavicular; abaixo, em direção à primeira costela, é costoclavicular.",
+      "correta": "**A: interclavicular.** O trajeto sobre a borda superior do esterno ligando as clavículas corresponde à faixa assinalada.",
+      "incorretas": {
+        "B": "**A ligação costoclavicular fica inferiormente.** Ela une primeira costela e face inferior da clavícula, e não cruza por cima do esterno entre os dois lados como a seta mostra.",
+        "C": "**Aponta para outra relação articular.** A estrutura assinalada acompanha a margem superior do esterno e conecta as clavículas, não uma ligação esternocostal.",
+        "D": "**A cápsula anterior local não é a ponte entre os lados.** A seta marca a faixa superior interclavicular, em vez da cobertura anterior de uma esternoclavicular isolada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+      }
+    ],
+    "imagensConferidas": [
+      "ombro-cotovelo/ombro-cotovelo-0251-1.jpeg"
+    ]
+  },
+  "ombro-cotovelo-0255": {
+    "questaoSha256": "166081f7f55e146d382e59159dabf6a5f44668a09e5fec5ca332995b22ab53af",
+    "comentarioAnteriorSha256": "9a227062af709f91c6183178a037d87b2c79ec9fc4bef1b47f201b407ec5dff6",
+    "comentario": {
+      "conceito": "Na face inferior da clavícula, a seta marca o **tubérculo conoide**, local de inserção do **ligamento conoide**, alternativa A. O relevo fica no setor lateral do osso, mas o conoide é o componente **medial** do par coracoclavicular.\n\nO outro componente é o trapezoide, mais lateral, que se insere numa crista inferior vizinha. Os dois ligamentos nascem da base do coracoide e limitam a subida da clavícula lateral. Essa disposição é o fundamento das classificações das fraturas distais: o que muda é quais ligações permanecem com cada fragmento (Rockwood, 10ª ed., cap. 34, “Os ligamentos laterais”).\n\nNo IIA, o traço medial ao conoide deixa ambos os ligamentos no fragmento distal. No IIB, o conoide se rompe e o trapezoide continua preso ao distal. Reconhecer o tubérculo na peça anatômica ajuda a reconstruir essa relação numa radiografia, sem transformar uma área de inserção em diagnóstico automático de fratura.\n\n**Face inferior não significa uma única estrutura.** Há subclávio e, na extremidade medial, a inserção costoclavicular. O que decide esta figura é o relevo específico e sua localização, não apenas o lado inferior da clavícula.\n\n> **Na prova:** tubérculo conoide recebe o conoide; trapezoide fica numa crista mais lateral.",
+      "correta": "**A: ligamento conoide.** O nome do tubérculo e a disposição medial dentro do par coracoclavicular correspondem à área indicada.",
+      "incorretas": {
+        "B": "**O subclávio ocupa a face inferior, mas não é a inserção deste tubérculo.** O relevo assinalado identifica a ligação conoide no setor lateral, e não toda a superfície coberta pelo músculo.",
+        "C": "**É o vizinho lateral.** O trapezoide também é coracoclavicular, mas sua inserção é numa crista ao lado; não deve ser confundido com o tubérculo conoide.",
+        "D": "**A ligação costoclavicular está no lado medial.** Ela prende a primeira costela à fossa romboide inferomedial, longe do relevo lateral apontado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos; Classificações: Allman, Neer, Craig, Robinson e AO."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+          "Classificações: Allman, Neer, Craig, Robinson e AO"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1",
+          "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+          "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "bd64ed0d93d22a0fef2b883c6507685dd6d5ec14dd011c4f5313f36672374038"
+      }
+    ],
+    "imagensConferidas": [
+      "ombro-cotovelo/ombro-cotovelo-0256-1.jpeg"
+    ]
+  },
+  "trauma-0773": {
+    "questaoSha256": "733e15cc92e0166bfc6801d76cd31047b0d4f6565212b95ff47725a3220ccf44",
+    "comentarioAnteriorSha256": "4573dbf83ec3767e45a1dd13162bd4d0d6d2a1211964152a046c1f3003bcdb69",
+    "comentario": {
+      "conceito": "O desenho mostra uma fratura **distal, desviada e extra-articular**, sem traço demonstrado dentro da acromioclavicular. Em Robinson, a combinação é **3B1**, alternativa C.\n\nRobinson numera as regiões de medial para lateral: **1 medial, 2 médio, 3 distal**. Isso difere de Allman, em que grupo I é o terço médio. Depois da região, A identifica alinhamento cortical preservado e B, desvio. No distal, o último número separa extra-articular de intra-articular (Rockwood, 10ª ed., cap. 34, “Robinson”).\n\n| Tipo distal | Relação |\n|---|---|\n| 3A1 | Sem desvio, extra-articular |\n| 3A2 | Sem desvio, intra-articular |\n| 3B1 | Desviada, extra-articular |\n| 3B2 | Desviada, intra-articular |\n\nO desenho permite reconhecer a separação e o desvio dos fragmentos. Não permite medir em milímetros a distância nem demonstrar, sozinho, a integridade de cada ligamento. O tratamento também não deriva apenas de escrever 3B1: instabilidade, pega distal, demanda e condições do paciente entram na decisão.\n\n> **Na prova:** primeiro distal = 3; depois desviada = B; por fim extra-articular = 1.",
+      "correta": "**C: 3B1.** A região lateral, o desvio e a ausência de extensão articular demonstrada formam esse subtipo.",
+      "incorretas": {
+        "A": "**A região e a relação extra-articular estão corretas, mas falta reconhecer o desvio.** 3A1 pressupõe alinhamento cortical preservado, diferente dos fragmentos separados da ilustração.",
+        "B": "**Erra desvio e extensão articular.** 3A2 é distal sem desvio e intra-articular; não é o padrão mostrado.",
+        "D": "**Acerta o desvio e acrescenta uma extensão não demonstrada.** 3B2 é a fratura distal desviada que alcança a articulação; a imagem corresponde à extra-articular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Classificações: Allman, Neer, Craig, Robinson e AO; Terço lateral (distal)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Classificações: Allman, Neer, Craig, Robinson e AO",
+          "Terço lateral (distal)"
+        ],
+        "blocos": [
+          "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+          "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3",
+          "terco-lateral-distal-c071a8d5"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "34df27b5eff6382843165a3615d328e64c34fefd82cbb4546975608b5fee82f4"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0773-1.jpeg"
+    ]
+  },
+  "trauma-0788": {
+    "questaoSha256": "504455697f2e9c3f66e4d88a099470b4abdb9cac9e8bf84488e47516a25ab46c",
+    "comentarioAnteriorSha256": "6e6d83a13eabe239d6519844002e412955045174b900d652e24870a3c4952e2f",
+    "comentario": {
+      "conceito": "Na fixação do fragmento **medial** mostrado, a estrutura mais próxima e vulnerável é a **veia subclávia, posterior à clavícula**, alternativa B. A radiografia ajuda a localizar o segmento operado, mas não mostra diretamente a veia.\n\nO subclávio separa o osso do feixe profundo. A veia passa logo abaixo dele, acima da primeira costela, e fica em geral a menos de 1 cm da cortical posterior na metade medial. Mais atrás estão artéria subclávia e plexo, separados da veia pelo escaleno anterior na região medial (Rockwood, 10ª ed., cap. 34, “Nervos e vasos”).\n\n**O risco muda ao longo do osso.** O plexo se aproxima mais no terço médio; os vasos estão particularmente próximos da ponta medial. Por isso não basta escolher “plexo” em toda cirurgia da clavícula. A pergunta localiza a fixação no fragmento medial, onde a proximidade da veia é decisiva.\n\nA segurança depende de evitar que broca, macho e parafuso ultrapassem sem controle a cortical profunda. A placa antiga visível não permite inferir uma lesão vascular já presente nem medir sua distância neste paciente; os números anatômicos vêm do resumo, não da radiografia.\n\n> **Na prova:** medial pede atenção à veia posterior; no terço médio, o plexo também fica especialmente próximo.",
+      "correta": "**B: veia subclávia e posterior.** A relação íntima com a cortical posterior da metade medial explica a vulnerabilidade durante a fixação.",
+      "incorretas": {
+        "A": "**Não é a estrutura mais próxima no segmento medial da pergunta.** O plexo também corre risco, mas sua maior proximidade com a clavícula é descrita no terço médio; a veia é a escolha específica aqui.",
+        "C": "**A direção ampla não corrige a escolha da estrutura.** O plexo está mais atrás e tem outra relação de proximidade ao longo do osso; o fragmento medial destaca a veia subclávia.",
+        "D": "**Troca a estrutura e a posição.** A artéria fica atrás da veia, separada pelo escaleno anterior na região medial; não é a descrição posterossuperior oferecida que responde à relação mais vulnerável."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos; Lesões neurovasculares e dissociação escapulotorácica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+          "Lesões neurovasculares e dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-e75dacf6",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-018800b0",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-d10a2fd8",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-e8cc172f",
+          "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1",
+          "lesoes-neurovasculares-e-dissociacao-escapulotor-1176f57b"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "cb3863ae7ee023fb9b1200c8a8b418a88e2fc289649a7ddbaf220fcd7722856d"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0788-1.jpeg"
+    ]
+  }
+}

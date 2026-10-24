@@ -81,15 +81,45 @@
   "conferido": false
  },
  "conceitos-basicos-0008": {
+  "conceito": "A órtese de **Sarmiento**, alternativa B, permite que o braço se movimente dentro de um envoltório ajustado sem deixar a fratura completamente livre. Os músculos comprimidos contra as valvas e a gravidade ajudam a manter o alinhamento.\n\nA peça tem duas valvas de plástico presas por tiras ajustáveis. À medida que o edema cede, o paciente reaperta as tiras, mantendo contato com o ventre muscular. Quando a musculatura contrai contra esse envoltório, a pressão se distribui pelas partes moles; o braço pendurado acrescenta tração longitudinal. Essa é a lógica do efeito hidráulico citado no enunciado (Rockwood, 10ª ed., cap. 37, “A órtese funcional”).\n\n**Funcional não significa sem acompanhamento.** A técnica exige cooperação, controle radiográfico e cuidado da pele. O ombro faz pendulares, o cotovelo precisa se mover e o paciente não deve apoiar o cotovelo no começo, pois esse apoio favorece varo. A capacidade do ombro e do cotovelo de compensar algum desvio ajuda a explicar o bom resultado em fraturas fechadas e isoladas selecionadas.\n\nA tala em U é uma imobilização provisória útil, mas afrouxa e escorrega; o Velpeau prende o braço ao tórax. Eles podem fazer parte da fase inicial sem reproduzir todo o princípio definitivo da órtese funcional. Não é correto dizer que qualquer tipoia elimina a gravidade, e sim que não constrói o mesmo envoltório de compressão muscular.\n\n> **Na prova:** contração, contenção das partes moles e gravidade descrevem Sarmiento, com mobilidade orientada e ajustes da órtese.",
+  "correta": "**B: órtese de Sarmiento.** Suas valvas ajustadas comprimem a musculatura e permitem o mecanismo funcional descrito, associado ao braço pendurado.",
   "incorretas": {
-   "A": "A tipoia de Velpeau prende o braço ao tórax e imobiliza. Não usa contração ativa nem a gravidade.",
-   "C": "O gesso axilopalmar imobiliza ombro e cotovelo e não permite a contração ativa que o método exige.",
-   "D": "A pinça de confeiteiro é uma tala provisória dos primeiros dias, antes da órtese funcional."
+   "A": "**O Velpeau prende o braço ao tórax.** É útil por pouco tempo para conforto, mas não reproduz o envoltório ajustável e o movimento orientado da órtese definitiva.",
+   "C": "**O gesso axilopalmar restringe o cotovelo.** Não corresponde à estratégia funcional de compressão das partes moles com mobilização cotidiana das articulações.",
+   "D": "**A pinça de confeiteiro é a tala em U provisória.** Pode preceder a órtese, mas não deve ser confundida com a manutenção funcional ajustável que o enunciado descreve."
   },
-  "conceito": "A fratura do corpo (diáfise) do úmero muitas vezes pode ser tratada sem cirurgia, e o método clássico é a **órtese funcional de Sarmiento**. Ela é uma luva rígida, de plástico, presa ao braço com velcro, que envolve o braço sem prender o ombro nem o cotovelo.\n\nO método funciona por três princípios:\n\n**Contração muscular ativa.** Quando o paciente contrai os músculos do braço, eles empurram contra a luva rígida, que não cede.\n\n**Efeito hidráulico.** Os músculos e tecidos moles comprimidos dentro da luva se comportam como um líquido num recipiente fechado: a pressão se distribui por igual e empurra os fragmentos para o alinhamento.\n\n**Gravidade.** Com o braço pendurado ao lado do corpo, o peso do antebraço puxa o úmero para baixo, funcionando como uma tração que corrige o encurtamento.\n\nNa prática, a órtese é colocada depois de uma ou duas semanas numa tala inicial (a \"pinça de confeiteiro\", que contorna o braço em U), quando o inchaço diminui. Como o ombro e o cotovelo continuam se movendo, há menos rigidez. O método aceita algum desvio, porque o ombro e o cotovelo compensam bem: os limites clássicos são de cerca de 20 graus de angulação anterior, 30 graus de varo e 3 cm de encurtamento. A consolidação é alta, mas fraturas transversas e pacientes obesos tendem a ter mais dificuldade.",
-  "correta": "Órtese de Sarmiento. Contração muscular, efeito hidráulico das partes moles e gravidade são os três princípios dessa órtese funcional.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: O tratamento funcional: a órtese de SARMIENTO."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "O tratamento funcional: a órtese de SARMIENTO"
+     ],
+     "blocos": [
+      "o-tratamento-funcional-a-ortese-de-sarmiento-45f6f9c8",
+      "o-tratamento-funcional-a-ortese-de-sarmiento-252189f7",
+      "o-tratamento-funcional-a-ortese-de-sarmiento-36bd6f71",
+      "o-tratamento-funcional-a-ortese-de-sarmiento-0ca01799",
+      "o-tratamento-funcional-a-ortese-de-sarmiento-43310ebb"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "a7d86e9ee92ad882a897b1ebe4f35f03c9fee4b9549b166999608ce25e5b2d83"
+    }
+   ],
+   "questaoSha256": "2c8df66bc07b7597d05cf0e54e3c4c4c5c6ef98af3e914d31064ed8932de367b",
+   "comentarioSha256": "9432ace8ab7e978861f61b1b049736e9c09e2d97205d1ee31a8a917c6eb44d85"
+  }
  },
  "conceitos-basicos-0009": {
   "incorretas": {
@@ -2068,15 +2098,46 @@
   "conferido": false
  },
  "conceitos-basicos-0195": {
+  "conceito": "A pseudartrose diafisária do úmero descrita como predominante é a **atrófica**, e a reconstrução mais usada é **placa com estímulo biológico por enxerto**, alternativa A.\n\nO problema tem duas dimensões: o foco precisa de estabilidade e de condições para voltar a consolidar. Na apresentação atrófica, apenas trocar o metal sem tratar a biologia pode deixar parte do problema. O resumo orienta desbridar até osso que sangra e reconstruir com placa forte e enxerto autólogo quando indicado (Rockwood, 10ª ed., cap. 37, “Pseudartrose”).\n\nA placa de compressão deve ter ancoragem adequada. O texto descreve quatro parafusos de cada lado, ou três quando há um bom parafuso de tração, sem transformar isso numa montagem idêntica para qualquer qualidade óssea ou defeito. Fibrose e calo podem envolver o radial; a revisão exige protegê-lo e tem maior risco neurológico que a fratura aguda.\n\n**Mais usada não significa única possível.** Haste e fixadores foram empregados, e a pseudartrose depois de haste pode receber placa complementar mantendo o implante. Nessa situação, a placa acrescenta sobretudo controle rotacional. Isso não muda a resposta à pergunta sobre o tipo predominante e a reconstrução mais frequente.\n\n> **Na prova:** atrófica com placa; na reconstrução, trate estabilidade e biologia, não apenas o nome do implante.",
+  "correta": "**A: atrófica e com placa.** É o padrão predominante e o tratamento mais usado, geralmente associado a enxerto e preparo do foco.",
   "incorretas": {
-   "B": "O tipo está certo, mas a haste não comprime bem o foco nem dá acesso para o enxerto.",
-   "C": "A placa está certa, mas o tipo mais comum de pseudartrose do úmero é o atrófico.",
-   "D": "Erra os dois: o tipo mais comum é atrófico, e o tratamento mais frequente é com placa."
+   "B": "**Acerta o tipo, mas troca a estratégia mais frequente.** A haste foi usada com resultados variáveis; o resumo aponta a placa com enxerto como a reconstrução mais popular e favorecida pela revisão citada.",
+   "C": "**Escolhe a placa e muda o tipo predominante.** A fonte descreve a maioria como atrófica, não oligotrófica; a preocupação biológica acompanha essa apresentação.",
+   "D": "**Não reproduz nenhum dos dois elementos pedidos.** A combinação de referência é atrófica com placa, sem excluir que outras apresentações ou técnicas existam em situações específicas."
   },
-  "conceito": "A **pseudartrose** da diáfise do **úmero** costuma ser do tipo **atrófico**. Na radiografia, as pontas do osso ficam afinadas, arredondadas e escleróticas (mais densas), o canal medular se fecha, e não há calo. Ou seja, falta biologia: as pontas não têm vida suficiente para consolidar.\n\nO tratamento precisa resolver as duas coisas que faltam, biologia e estabilidade:\n\n**Reavivar o foco**: o cirurgião retira o osso esclerótico das pontas e abre o canal medular, até chegar a osso que sangra.\n\n**Enxertar**: coloca-se enxerto ósseo, de preferência do próprio paciente, para levar células e estímulo à consolidação.\n\n**Fixar com placa de compressão**.\n\nA **placa** é a escolha mais frequente porque comprime as pontas reavivadas uma contra a outra, permite corrigir deformidades vendo o osso diretamente e dá acesso para colocar o enxerto.\n\nA **haste** funciona pior nessa situação: não comprime bem o foco (pode até afastar as pontas), não corrige deformidades e tem mais falhas na pseudartrose do úmero.\n\nUm cuidado essencial na cirurgia do úmero é o **nervo radial**, que passa enrolado no osso e muitas vezes está preso na cicatriz da cirurgia ou do trauma anterior. Ele precisa ser identificado e protegido.",
-  "correta": "Atrófica e com placa. A pseudartrose do úmero costuma ser atrófica e é tratada com reavivamento, enxerto e placa de compressão.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Pseudartrose."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Pseudartrose"
+     ],
+     "blocos": [
+      "pseudartrose-6427266b",
+      "pseudartrose-9719258c",
+      "pseudartrose-c68d4d26",
+      "pseudartrose-fc31c240",
+      "pseudartrose-51afd2d6",
+      "pseudartrose-17c20cc3"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "698296d672c649f94feb72d3ab1a9be48be3cb141242fa0d097e9350fe570946"
+    }
+   ],
+   "questaoSha256": "21c3614e38eeebb6ffff22945a1a9041dd25b82838a9910dc06ebeea9d929ec6",
+   "comentarioSha256": "068972f8152d15fbc0f973f4009e8ba56a2c6d760f958f081768d64f9e24a155"
+  }
  },
  "conceitos-basicos-0196": {
   "incorretas": {
