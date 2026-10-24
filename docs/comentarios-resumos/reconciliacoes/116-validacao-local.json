@@ -1,0 +1,58 @@
+{
+  "basePublicada": "29228502bc56d70f5d25f817ce80d8a75d062600",
+  "lotes": {
+    "115-talus-imagem-e-mecanismos.json": {
+      "sha256": "a6688f0cb2190dfcc90a055d04b2bafe7ba5623ab3ef52278c17ea63191c2ff7",
+      "ids": [
+        "trauma-0010",
+        "trauma-0036",
+        "trauma-0080",
+        "trauma-0202",
+        "trauma-0238",
+        "trauma-0319",
+        "trauma-0562",
+        "trauma-0861",
+        "trauma-0882",
+        "trauma-1223"
+      ]
+    },
+    "116-talus-fixacao-e-prognostico.json": {
+      "sha256": "db7b244242db68f1c95af20598d3c02dfdb4d5679b23eaa5f01a8ba715c29372",
+      "ids": [
+        "trauma-1608",
+        "trauma-1609",
+        "trauma-1611",
+        "trauma-1612",
+        "trauma-1613",
+        "trauma-1614",
+        "trauma-1615",
+        "trauma-1616",
+        "trauma-1617",
+        "trauma-1618"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 501,
+    "head": "a7aecc04366406870c6a391c02cda5d8147d7f06",
+    "ci": 40058246329,
+    "merge": "9584b5219eee2e01d7ef773cd0b3d048232d28bc",
+    "deployHead": "29228502bc56d70f5d25f817ce80d8a75d062600",
+    "pages": 40058435765,
+    "deployJob": 120767047339,
+    "avulsosIntegrais": 30,
+    "imagensIntegrais": 5
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 passaram",
+    "acervo": "sem erros",
+    "npmTest": "suíte completa passou",
+    "build": "passou",
+    "cadeia": "20 IDs únicos; aplicações 115–116 reproduzidas desde a base; questões/gabaritos/membros alheios preservados, todas as alternativas, fontes, hashes e avulsos integrais conferidos",
+    "interface": "5 casos em celular/computador: 0080, 0202, 0319, 1616, 1618; alerta e destinos de fonte conferidos, capturas representativas abertas; opção existente de ordem da prova usada quando a revisão embaralha as alternativas"
+  },
+  "figuras": "Nenhuma nos vinte IDs; demais candidatos com figuras não revisados nesta entrega.",
+  "lacunas": "116-lacunas-talus.json: duas pendências específicas, sem revisão concluída",
+  "publicado": false,
+  "proximoLote": "117"
+}
