@@ -71,6 +71,21 @@ modelos; nunca imagem gerada por IA).
 Para os estilos aprovados, prefira o kit [marketing/kit/README.md](marketing/kit/README.md): fila pronta e um comando por post
 (roteiro curto para o Codex em [docs/prompts/codex-post-rapido.md](docs/prompts/codex-post-rapido.md)).
 
+## Alternativas em ordem nova na revisão (desde 19/10/2026)
+
+Pedido do Tales: na revisão, a pessoa lembrava a letra da certa em vez de raciocinar. Na primeira vez a
+questão aparece na ordem da prova; da segunda em diante, numa ordem nova, com a certa fora da letra da
+última vez (numéricas só invertem; Certo/Errado não muda). Liga e desliga em "Personalizar" na sessão.
+Tudo o que é guardado (respostas, turma, caderno, riscadas) continua na letra da prova; só a tela troca.
+Código em `src/dados/ordemAlternativas.ts`; testes em `fixtures/testar_ordem_alternativas.mjs` e
+`fixtures/e2e_ordem_alternativas.mjs`.
+
+**Quem escreve comentários:** o comentário pode citar alternativas pela letra ("Correta: C", "a alternativa B").
+`scripts/letras_alternativas.py` confere cada letra e grava `public/acervo/letras.json`; questão com letra
+duvidosa ("imagem A", "tipo C") fica sempre na ordem da prova. `aplicar_comentarios.py` e o deploy rodam o
+script sozinhos; se mudar comentário por outro caminho, rode `python3 scripts/letras_alternativas.py`.
+Para a questão poder embaralhar, prefira citar a alternativa como "alternativa C" ou "Correta: C (texto)".
+
 ## Flashcards (Torneio de Flashcards, desde 12/10/2026)
 
 Projeto de vários dias, feito com Claude e com ChatGPT. Antes de mexer em qualquer coisa de

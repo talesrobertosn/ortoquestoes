@@ -948,6 +948,14 @@
 /* Grifo */
 .menu-grifo { border-radius: 999px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
 
+/* Revisão em ordem nova (dados/ordemAlternativas.ts): uma linha discreta acima das alternativas. */
+.qz-ordem { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin: 0 0 0.6rem; font-size: var(--meta); line-height: 1.4; color: var(--texto-2); }
+.qz-ordem--nova { color: var(--verdete); }
+.qz-ordem > svg { flex: none; }
+.qz-ordem__botao { margin-left: auto; padding: 0.15rem 0.55rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie); color: var(--texto-2); font: inherit; cursor: pointer; transition: border-color var(--duracao-rapida) var(--curva), color var(--duracao-rapida) var(--curva); }
+.qz-ordem__botao:hover, .qz-ordem__botao:focus-visible { border-color: var(--verdete); color: var(--texto); }
+.qz-ordem-legenda { margin: 0.25rem 0 0.75rem; font-size: var(--meta); line-height: 1.45; color: var(--texto-2); }
+
 /* Largura cheia (19/10/2026, pedido do Tales): enunciado, alternativas, resposta e comentário
    ocupam toda a largura do cartão, sem a coluna estreita que deixava o lado direito vazio. */
 .questao-impressa.qz-cartao .questao__enunciado,
