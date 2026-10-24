@@ -1,0 +1,183 @@
+{
+  "base": "2c4534a172702790349c280dab0bff5595f829a8",
+  "dataBrasilia": "2026-10-24T18:31:32.477817-03:00",
+  "lotes": [
+    142,
+    143,
+    144
+  ],
+  "ids": [
+    "coluna-0032",
+    "coluna-0034",
+    "coluna-0037",
+    "coluna-0039",
+    "coluna-0043",
+    "coluna-0051",
+    "coluna-0064",
+    "coluna-0065",
+    "coluna-0073",
+    "coluna-0085",
+    "coluna-0113",
+    "coluna-0152",
+    "coluna-0153",
+    "coluna-0162",
+    "coluna-0238",
+    "coluna-0260",
+    "coluna-0266",
+    "coluna-0277",
+    "coluna-0304",
+    "trauma-0719",
+    "coluna-0297",
+    "coluna-0323",
+    "coluna-0352",
+    "coluna-0354",
+    "coluna-0356",
+    "coluna-0357",
+    "coluna-0401",
+    "coluna-0450",
+    "coluna-0528",
+    "trauma-0792"
+  ],
+  "fontes": "Resumos 48 (787 linhas), 64 (560), 65 (558) e 66 (313) lidos integralmente. Cobertura efetiva dos comentários: corpo e tabelas independentes dos capítulos 48, 64 e 65; nenhum bloco contextual de questão usado como autoridade. Resumo 66 não ofereceu cobertura completa dos candidatos examinados. Nenhuma página impressa ou leitura direta de livro atribuída.",
+  "imagens": "Nenhuma das trinta questões tem imagem ou figura pendente; não houve inferência de figura não aberta.",
+  "integridade": "Aplicação dos três lotes reproduzida desde a base por aplicar.preparar; fontes, hashes, todas as alternativas, trinta avulsos integrais e trinta transições reais para revisada conferidos. Questões, alternativas, áreas, IDs, gabaritos oficiais e bibliográficos e revisão médica preservados. conferido:false. Doze hashes do catálogo sincronizam alterações já publicadas a montante, sem nova revisão ou mudança dos comentários respectivos.",
+  "checks": {
+    "work/check144-fixtures-final.log": "690debb3c9089ac61fd5d4fe57f1ddf9a3a58b0b904e342800c0a36dd06dc230",
+    "work/check144-acervo-final.log": "1ae71f5457412a710473462d2141961f0b0d68a40d54821bfad4341d83bcadb9",
+    "work/check144-test.log": "c11c0bd82dceb696e3bf157ce9bd22f0f9efa018cd1559679eae0ead15401084",
+    "work/check144-build-final.log": "7ce2d8304c2877952bad0526c4d94edc5d1f7b67661055e6885014b0c21327ee",
+    "work/check144-alerta-ajuste.log": "bfd0b84a658377ba733365916fc806dde1f7ee24ca5db402c883c5b21bff3002",
+    "work/ui142-total.log": "a24b6d8716eb4e3d7df74563345e3e0d1731b8c68eb652bbc76bc1d5572269fb",
+    "work/ui144-0719-final.log": "d258e9592bf5262f341e5580715461b948b4cb1b7c45839d79611769d587d66d"
+  },
+  "testes": "14 fixtures, validar_acervo, npm test completo, build e diff-check passaram. Após remover linguagem de controle editorial do alerta de 0719, fixtures, validação, build, auditoria e caso visual repetidos. Índice de letras regenerado por script, incluindo defasagem dos lotes 140–141 já publicados; build e gerador conferem integralmente.",
+  "interface": "Trinta casos em 390 e 1440 pixels passaram com resposta, comentário, selo e link exato para bloco. Cinco capturas finais representativas abertas: Brown-Séquard celular, mobilidade C1–C2 computador, alerta 0719 celular, resposta bibliográfica 0356 computador e SLIC celular. Alerta final de 0719 também passou nas duas larguras após ajuste de linguagem.",
+  "divergencias": [
+    "trauma-0719: D oficial preservada, corpo 64 e tabela 65 sustentam C; explicação no alerta e em todas as alternativas pertinentes."
+  ],
+  "respostasSemOficial": {
+    "coluna-0323": "B",
+    "coluna-0352": "A",
+    "coluna-0354": "A",
+    "coluna-0356": "B",
+    "coluna-0357": "D"
+  },
+  "notaRespostas": "Respostas bibliográficas já existentes preservadas e sustentadas pela fonte; campo provavel mantém a mesma letra, sem fabricar gabarito oficial.",
+  "novasLacunas": [
+    "pe-tornozelo-0202",
+    "pe-tornozelo-0377",
+    "pe-tornozelo-0396"
+  ],
+  "concorrencia": [
+    {
+      "number": 517,
+      "title": "Prompt para o Codex: Rockwood crianças em simulados e resumos",
+      "headRefOid": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+      "headRefName": "claude/prompt-codex-rockwood-criancas",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "ba0f849dd5b2987732b4a735e917fcc903886a5c"
+      ]
+    },
+    {
+      "number": 371,
+      "title": "Instagram: câmara escura (feed) e player da prova (stories)",
+      "headRefOid": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+      "headRefName": "claude/post-18-10-b",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+        "714323bcee21a533ea33cf7048a307a24deffc44",
+        "553b1041eafa4cf9b173ea616cc293537739eb08",
+        "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+      ]
+    },
+    {
+      "number": 308,
+      "title": "Cartão: aviso de renovação com prazo de 7 dias para desistir com reembolso",
+      "headRefOid": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+      "headRefName": "claude/reembolso-7-dias",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "980b2d734b62cd5a28098224e8dbf0c11194a185",
+        "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+      ]
+    },
+    {
+      "number": 253,
+      "title": "Instagram: painel de partidas do Adiantar no Cronograma",
+      "headRefOid": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+      "headRefName": "claude/sharp-goodall-pl7kp7",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+        "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+        "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+        "94859424a3fa5fb70347baea0a2a831a26ddd622"
+      ]
+    },
+    {
+      "number": 179,
+      "title": "Marketing: modelos Cofre de duas chaves e Relojoaria anatômica",
+      "headRefOid": "86aeeb45a1284a4bab358ad66df593286e64876a",
+      "headRefName": "codex/instagram-cofre-relojoaria-20261011",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "86aeeb45a1284a4bab358ad66df593286e64876a"
+      ]
+    },
+    {
+      "number": 178,
+      "title": "Instagram: Mirels no modelo oficial Jornal",
+      "headRefOid": "c695d3d697b62de9cb1317922a61af543f4369a5",
+      "headRefName": "codex/instagram-mirels-20261010",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "3c7daf1f481a22a119402544f44007696520ce1e",
+        "c695d3d697b62de9cb1317922a61af543f4369a5"
+      ]
+    },
+    {
+      "number": 174,
+      "title": "Simulado Rockwood cap. 11: 21 questões comentadas de fixação externa",
+      "headRefOid": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+      "headRefName": "codex/simulado-fixacao-externa-cap11",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+      ]
+    },
+    {
+      "number": 93,
+      "title": "Aula de enxertos de pele: Cirurgia da Mão, UFG 2017",
+      "headRefOid": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+      "headRefName": "codex/aula-enxerto-mao-0853-20261004",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+        "97e77b073134af9277107123ff27e7cb369139b5",
+        "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+      ]
+    }
+  ],
+  "publicacaoAnterior": {
+    "pr": 515,
+    "head": "1ed19c9e932d55eb4c64c38edf34a92f64909675",
+    "merge": "d407f36fadb3093fac9ba6cd8aeea07e7ef16d1e",
+    "ci": 40119850546,
+    "pages": 40120024202,
+    "jobPublicar": 120949794307,
+    "nota": "Reconciliado; logs completos do conector provaram guarda/deploy, quinze avulsos comparados integralmente na passagem anterior. PR/merge reconfirmados nesta passagem. Não reaplicar 140–141."
+  },
+  "contagens": {
+    "duplicada": 87,
+    "pendente": 658,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 234,
+    "pendente-inspecao-imagem": 100,
+    "revisada": 1280
+  },
+  "proximoLote": 145,
+  "publicacao": "Aguardar checks do head, merge e guarda/deploy; conferir trinta avulsos, três capítulos-fonte e índice de letras em produção. Registrar a prova no PR, sem commit artificial posterior."
+}

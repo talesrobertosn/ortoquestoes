@@ -494,19 +494,44 @@
   "conferido": false
  },
  "coluna-0032": {
+  "conceito": "Imagine uma lesão que comprometa a metade direita da medula. A pergunta é por que a força e a percepção da posição do corpo se perdem à direita, enquanto a dor e a temperatura se alteram à esquerda. Esse desencontro é a assinatura da **síndrome de Brown-Séquard**, ou hemissecção medular.\n\nA explicação está no caminho das fibras. O comando motor cruza no bulbo antes de descer pela medula: uma lesão medular direita interrompe o comando destinado ao lado direito. A propriocepção, que informa a posição de uma articulação sem precisar olhar para ela, sobe pelas colunas posteriores do mesmo lado e só cruza no bulbo. Portanto, também se perde à direita, abaixo da lesão.\n\n**Dor e temperatura cruzam dentro da medula.** Quando suas fibras sobem pelo trato espinotalâmico direito, já vieram do lado esquerdo do corpo. Interromper esse trato à direita produz perda contralateral dessas duas modalidades. É essa diferença entre cruzamento no bulbo e cruzamento medular que resolve a questão (Rockwood, 10ª ed., cap. 48, “Os tratos e para que lado cada um cruza” e “Brown-Séquard: a hemissecção”).\n\nO desenho clássico ajuda a localizar uma lesão; um trauma real pode produzir um quadro misto. Não se deve exigir uma hemissecção anatômica perfeita para reconhecer o padrão clínico.\n\n> **Na prova:** força e propriocepção acompanham o lado da lesão; dor e temperatura se perdem do lado oposto.",
+  "correta": "**B: déficit motor e proprioceptivo ipsilateral; perda contralateral da dor e da temperatura.** O motor já cruzou no bulbo, a propriocepção ainda vai cruzar ali, e a via de dor e temperatura já recebeu fibras do lado oposto ao subir pela medula.",
   "incorretas": {
-   "A": "**Lados invertidos.** A propriocepção viaja nas colunas posteriores do mesmo lado e se perde junto com o motor, ipsilateral. Dor e temperatura, que cruzaram, se perdem do lado oposto.",
-   "C": "**Separa o que anda junto.** Dor e temperatura viajam no mesmo trato, o espinotalâmico, e se perdem juntas, do mesmo lado. E esse lado é o oposto ao da lesão, não o mesmo.",
-   "D": "**Mistura funções de tratos diferentes.** A temperatura anda com a dor no espinotalâmico e se perde do lado oposto. A propriocepção anda nas colunas posteriores e se perde do mesmo lado da lesão."
+   "A": "**Inverte os lados das duas vias sensitivas.** As colunas posteriores sobem ipsilateralmente; por isso a propriocepção acompanha a fraqueza do mesmo lado. Dor e temperatura pertencem à via que cruza na medula e se alteram contralateralmente.",
+   "C": "**Separa duas modalidades que seguem juntas.** A temperatura aparece como contralateral numa parte da opção e como ipsilateral na outra. Dor e temperatura percorrem o espinotalâmico e devem ser agrupadas do lado oposto à hemilesão.",
+   "D": "**Agrupa a temperatura com a função errada.** O déficit térmico não acompanha o motor ipsilateral. Quem acompanha a perda de força é a propriocepção; a temperatura se associa à dor contralateral."
   },
-  "conceito": "**O que é a síndrome de Brown-Séquard.** É a lesão de **metade da medula**, direita ou esquerda, chamada hemissecção. A causa clássica é o ferimento por arma branca nas costas, mas também ocorre por hérnia de disco lateral, tumor ou fragmento de fratura deslocado para um lado.\n\n**A chave: onde cada trato cruza.** Os tratos são feixes de fibras com uma função, e alguns trocam de lado ao longo do caminho. O **corticoespinhal**, que leva o comando motor, cruza no bulbo, lá em cima no tronco cerebral; na medula, ele já está do mesmo lado do músculo que comanda. As **colunas posteriores**, que levam propriocepção (a noção da posição do corpo), vibração e tato fino, também sobem do mesmo lado e só cruzam no bulbo. O **espinotalâmico**, que leva dor e temperatura, cruza logo que entra na medula, um ou dois segmentos acima, e sobe do lado oposto.\n\n**Aplicando à hemissecção.** Ao cortar metade da medula, perdem-se as fibras motoras e de propriocepção que ainda não cruzaram, então **força e propriocepção somem do mesmo lado da lesão** (ipsilateral). As fibras de dor e temperatura cortadas ali já vieram do outro lado do corpo, então **dor e temperatura somem do lado oposto** (contralateral), começando alguns segmentos abaixo da lesão.\n\n**Prognóstico.** É o melhor entre as síndromes medulares incompletas: a grande maioria dos pacientes volta a andar. Na prática, muitos casos são mistos, com componentes de outras síndromes.\n\n**Na prova:** Brown-Séquard é motor e propriocepção do mesmo lado e dor e temperatura do lado oposto.",
-  "correta": "**Déficit motor e proprioceptivo ipsilateral, com perda contralateral de dor e temperatura.** Motor e propriocepção correm do mesmo lado na medula e cruzam só no bulbo; dor e temperatura já cruzaram ao entrar na medula.",
   "referencias": [
-   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546.",
-   "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-a7183487",
+      "a-medula-cervical-e-as-sindromes-incompletas-5af3c74e",
+      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+      "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "82e565506027f8da77bd975ae5ed49c4ae9cb7bae7c6726bdbdc11a795dcdb45"
+    }
+   ],
+   "questaoSha256": "0b2e27a8c7123d5b52326ab2d0477dbc6dbab9c1bdaf6796b994e25a5199df6b",
+   "comentarioSha256": "4b80e04de45fd5dadd941bbac3a4de2e7cfe50d1a1b9ec3a70fa8dec3871aa67"
+  }
  },
  "coluna-0033": {
   "incorretas": {
@@ -523,18 +548,41 @@
   "conferido": false
  },
  "coluna-0034": {
+  "conceito": "Ao virar a cabeça para olhar por cima do ombro, você não distribui o movimento igualmente por todas as vértebras cervicais. Cerca de **metade da rotação axial ocorre entre C1 e C2**, na articulação atlantoaxial.\n\nC1 é um anel, sem corpo vertebral, que articula com C2 pelas duas facetas e pelo dente do áxis. Essa organização permite grande rotação em um único segmento: o resumo descreve aproximadamente 47 graus, correspondentes a **50% da rotação cervical**. A outra metade se distribui pelos níveis abaixo, cada um contribuindo com movimento menor (Rockwood, 10ª ed., cap. 48, “O movimento: metade da rotação está em C1–C2”).\n\nIsso também explica por que o movimento a que a pergunta se refere importa. C1–C2 permite pouca flexoextensão em comparação com sua rotação; na coluna subaxial, a flexoextensão é maior em C4–C5 e C5–C6. Uma articulação que domina um movimento não precisa dominar os demais.\n\n> **Na prova:** atlantoaxial é cerca de 50% da rotação, não 50% de todos os movimentos cervicais.",
+  "correta": "**C: 50%.** C1–C2 concentra aproximadamente metade da rotação axial; o restante se distribui pela coluna cervical subaxial.",
   "incorretas": {
-   "A": "**Subestima muito.** 10% não condiz com a anatomia de pivô de C1-C2, desenhada para girar.",
-   "B": "**Ainda subestima.** A participação de C1-C2 é cerca de metade da rotação, e não um quarto.",
-   "D": "**Superestima.** A coluna cervical de C3 a C7 contribui com a outra metade da rotação; C1-C2 não faz três quartos sozinha."
+   "A": "**Transforma o principal segmento em uma contribuição pequena.** Dez por cento subestima a rotação atlantoaxial. O número de aproximadamente 10 graus citado no resumo corresponde à flexoextensão desse segmento, outra grandeza e outro movimento.",
+   "B": "**Subestima a participação de C1–C2.** Um quarto da rotação não reproduz a proporção de aproximadamente metade descrita na fonte. A distribuição não acompanha simplesmente a quantidade de níveis cervicais.",
+   "D": "**Deixa pouco movimento para os segmentos inferiores.** Setenta e cinco por cento superestima C1–C2: a subaxial participa da outra metade, mesmo com pequena rotação por nível."
   },
-  "conceito": "**A coluna cervical divide o trabalho.** O pescoço faz três movimentos: flexão e extensão (o gesto de dizer sim), rotação (o gesto de dizer não) e inclinação lateral. Cada segmento contribui de forma diferente, conforme o formato das suas articulações.\n\n**Occipício com C1.** A articulação entre a base do crânio e o atlas (C1) tem superfícies em forma de taça, que permitem acenar com a cabeça. Ela responde por boa parte da flexoextensão da cabeça e quase não gira.\n\n**C1 com C2: o pivô da rotação.** A articulação atlantoaxial, entre o atlas e o áxis (C2), é feita para girar. O **dente do áxis**, uma projeção que sobe do corpo de C2, funciona como eixo, preso contra o arco anterior do atlas pelo ligamento transverso. As facetas entre C1 e C2 são quase horizontais e deslizam com facilidade. Resultado: C1-C2 responde por cerca de **50% da rotação** total da coluna cervical, em torno de 40 a 45 graus para cada lado.\n\n**C3 a C7.** A coluna cervical baixa responde pela outra metade da rotação e por grande parte da flexoextensão e da inclinação lateral. Nela, rotação e inclinação lateral vêm acopladas, pela inclinação das facetas.\n\n**Consequências clínicas.** Fundir C1 e C2 numa artrodese tira cerca de metade da rotação do pescoço, e o paciente precisa ser avisado. Na criança, a subluxação rotatória atlantoaxial causa torcicolo com a cabeça inclinada para um lado e girada para o outro, após infecção de garganta (síndrome de Grisel) ou trauma. Na artrite reumatoide, a instabilidade entre C1 e C2 é preocupação frequente.\n\n**Na prova:** C1-C2 faz cerca de metade da rotação cervical; occipício-C1 faz a flexoextensão da cabeça.",
-  "correta": "**50%.** A articulação atlantoaxial gira em torno do dente do áxis e responde por cerca de metade da rotação axial do pescoço.",
   "referencias": [
-   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-biomecanica-bb0e36ca"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "9a2704bb9cd41528f8c0106a2e1b67e19d5fc128be6294a027ab55f6492f1af0"
+    }
+   ],
+   "questaoSha256": "45b0a403396772de006ef0303c714e53b70d6da10a9fb849e92bb4a569342008",
+   "comentarioSha256": "e7039a5eb321dfa642779122cbd74fbefe447a4229a9a816677979161ac85dd9"
+  }
  },
  "coluna-0035": {
   "conceito": "Entre as combinações da questão, **bradicardia com débito urinário normal** é o padrão clássico do choque neurogênico. A frequência baixa é o sinal mais diretamente explicado pela lesão medular: a interrupção simpática reduz o tônus vascular e impede a aceleração compensatória esperada na hipotensão.\n\nO resumo contrasta esse quadro com o hipovolêmico, em que a perda de volume costuma produzir taquicardia e sinais de hipoperfusão, incluindo diurese baixa. A diurese preservada é apresentada como parte da comparação de prova; não significa que o rim de qualquer paciente em choque neurogênico esteja necessariamente bem perfundido (resumo do Rockwood, 10ª ed., cap. 49, “Choque neurogênico não é choque hipovolêmico”).\n\nEssa limitação é importante no politrauma: choque neurogênico e hemorragia podem coexistir. A frequência baixa não dispensa a procura de sangramento, e oligúria continua sendo um sinal que precisa de avaliação. A resposta descreve uma combinação típica, não um teste isolado que exclua outras causas.\n\nO resumo da Biblioteca ensina essa diferença junto do alerta para o componente hipovolêmico.",
@@ -590,18 +638,41 @@
   "conferido": false
  },
  "coluna-0037": {
+  "conceito": "Um idoso com canal cervical estreito cai e joga o pescoço para trás. Depois, consegue mover melhor as pernas do que os braços e as mãos. Essa combinação de **hiperextensão com fraqueza maior nos membros superiores** aponta para síndrome medular central.\n\nO canal já estreito deixa menos espaço disponível para a medula durante o trauma. O padrão descrito no resumo é de lesão incompleta: há comprometimento motor, podendo haver alterações sensitivas e esfincterianas, mas a fraqueza não se distribui igualmente pelos quatro membros. A dificuldade desproporcional de usar mãos e braços é o detalhe que deve chamar a atenção (Rockwood, 10ª ed., cap. 48, “Síndrome medular central”).\n\n**Tetraparesia não significa paralisia igual dos quatro membros.** “Paresia” é diminuição da força; “tetra” indica o envolvimento dos quatro membros. No quadro central clássico, as pernas podem estar relativamente preservadas. Esse padrão também pode ocorrer sem fratura, luxação ou ruptura ligamentar demonstrável, de modo que uma imagem óssea sem lesão não apaga o déficit neurológico.\n\nO mecanismo isolado não estabelece o diagnóstico: é preciso juntá-lo à distribuição da fraqueza e ao exame neurológico completo. Aqui, as duas informações convergem.\n\n> **Na prova:** idoso, hiperextensão e braços mais fracos que pernas formam o quadro central clássico.",
+  "correta": "**B: hiperextensão e tetraparesia maior nos membros superiores.** A opção reúne o mecanismo e a distribuição motora do quadro típico do idoso com estenose cervical.",
   "incorretas": {
-   "A": "**O mecanismo está errado.** A distribuição nos membros superiores está certa, mas a centromedular nasce da hiperextensão do idoso, que fecha o canal por trás. Hiperflexão lembra a síndrome medular anterior.",
-   "C": "**Mecanismo e distribuição errados.** A centromedular é por hiperextensão e poupa relativamente as pernas. Fraqueza predominante nos membros inferiores não é o seu padrão.",
-   "D": "**O mecanismo está certo, a distribuição não.** A hiperextensão é a causa, mas o déficit predomina nos braços. Pernas mais fracas que braços não combinam com lesão central."
+   "A": "**Acerta os membros mais afetados e troca o mecanismo.** A fraqueza predominante nos braços combina com a síndrome central. Entretanto, o cenário clássico descrito na fonte é a hiperextensão do pescoço do idoso, não a hiperflexão.",
+   "C": "**Troca as duas pistas do caso.** A opção traz hiperflexão e predomínio de fraqueza nas pernas. Nenhum desses componentes reproduz a combinação clássica perguntada; não basta reconhecer que há tetraparesia.",
+   "D": "**Mantém o mecanismo e inverte o padrão motor.** A hiperextensão é compatível, mas os braços e as mãos são mais comprometidos que as pernas. Fraqueza predominantemente inferior exige reconsiderar a localização da lesão."
   },
-  "conceito": "**O que é a síndrome centromedular.** É a lesão da parte central da medula cervical, a mais comum das lesões medulares incompletas (aquelas em que alguma função abaixo da lesão é preservada).\n\n**O paciente típico.** Idoso com **espondilose cervical**: discos desgastados, bicos de osso (osteófitos) na frente do canal e ligamento amarelo espessado atrás. O canal já é estreito. Ele cai da própria altura e bate o queixo ou a testa, jogando o pescoço para trás em **hiperextensão**. Muitas vezes não há fratura nenhuma na radiografia.\n\n**O mecanismo.** Na hiperextensão o ligamento amarelo se dobra para dentro do canal por trás, enquanto os osteófitos empurram pela frente. A medula é pinçada entre os dois. O dano se concentra no centro da medula, com edema e sangramento, e poupa a periferia.\n\n**Por que os braços sofrem mais.** O trato corticoespinhal leva o comando motor e, segundo a explicação clássica, tem as fibras dos braços mais perto do centro e as das pernas mais na periferia; a lesão central pega primeiro as dos braços. Estudos mais recentes acrescentam que esse trato é especialmente importante para os movimentos finos da mão. De todo modo, o resultado é uma **tetraparesia** (fraqueza nos quatro membros) **maior nos membros superiores**, sobretudo nas mãos, do que nos inferiores. Pode haver alteração da bexiga e da sensibilidade.\n\n**Prognóstico e tratamento.** A maioria volta a andar; as mãos recuperam por último e de forma incompleta, e a idade avançada piora o resultado. O tratamento inicial é imobilização e manutenção da pressão arterial; a descompressão cirúrgica é indicada quando há compressão persistente ou o déficit não melhora.\n\n**Na prova:** idoso com espondilose e hiperextensão faz centromedular, com fraqueza maior nos braços que nas pernas.",
-  "correta": "**Hiperextensão, com tetraparesia que afeta mais os membros superiores.** A medula é pinçada entre osteófitos e ligamento amarelo, e a lesão central atinge mais as fibras que controlam braços e mãos.",
   "referencias": [
-   "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "9c802eede2a4a59d731df1cb1da786a681d82e6777b060f179c2e29ea17f150a"
+    }
+   ],
+   "questaoSha256": "967f7121dfa9348ed197ec44fde1f6248e1dc761257097ddbaa7b9367e7ddea1",
+   "comentarioSha256": "986e1b1b00fbbeb766d76e91974b6ef16c5091ff03c40bd5db07caa12aa0468d"
+  }
  },
  "coluna-0038": {
   "incorretas": {
@@ -619,18 +690,41 @@
   "conferido": false
  },
  "coluna-0039": {
+  "conceito": "O paciente não consegue fletir o cotovelo e estender o punho com força normal, e o reflexo estilorradial está diminuído. Essas alterações convergem para **C6**. A chave é combinar movimentos e reflexo, em vez de escolher a raiz por um músculo isolado.\n\nNa tabela do exame cervical, C6 é representada pelo bíceps e pela extensão do punho. Seu reflexo é o braquiorradial, também chamado estilorradial. Se o exame sensitivo for acrescentado, a face lateral do antebraço, o polegar e o indicador ajudam a completar esse conjunto (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\nCompare com os níveis vizinhos: C5 é testada principalmente pelo deltoide e pelo reflexo bicipital; C7, pelo tríceps, flexão do punho e reflexo tricipital; C8, pelos flexores dos dedos e intrínsecos. Esses são marcadores clínicos da tabela, não a afirmação de que cada músculo receba fibras de uma única raiz.\n\n**Estender e fletir o punho localizam níveis diferentes no esquema da prova.** Trocar o sentido do movimento leva de C6 para C7 mesmo sem trocar a articulação examinada.\n\n> **Na prova:** extensão do punho com estilorradial diminuído faz o conjunto de C6.",
+  "correta": "**B: C6.** Bíceps e extensores do punho são seus marcadores motores na tabela, e o reflexo estilorradial fornece uma segunda informação concordante.",
   "incorretas": {
-   "A": "**C5 tem outro reflexo e outro músculo-chave.** Ela comanda o deltoide e também o bíceps, mas seu reflexo é o bicipital, não o estilorradial, e ela não é a raiz dos extensores do punho.",
-   "C": "**C7 é a raiz do tríceps.** Ela controla o tríceps e os flexores do punho e responde pelo reflexo tricipital e pela sensibilidade do dedo médio.",
-   "D": "**C8 controla os flexores dos dedos.** Dá sensibilidade no dedo mínimo e na borda ulnar da mão e não tem reflexo próprio."
+   "A": "**O reflexo bicipital não é o estilorradial.** C5 é representada pelo deltoide, pela sensibilidade lateral do ombro e braço e pelo bicipital. A associação da questão acrescenta extensão do punho e reflexo braquiorradial, favorecendo C6.",
+   "C": "**É o nível do tríceps e da flexão do punho.** Em C7, o reflexo de referência é o tricipital e a sensibilidade se relaciona ao dedo médio. Não corresponde ao movimento de extensão nem ao reflexo fornecidos.",
+   "D": "**Desloca a localização para a função dos dedos.** C8 é associada a flexores dos dedos e intrínsecos, com território sensitivo mais medial. A tabela não lhe atribui o estilorradial; o conjunto apresentado localiza C6."
   },
-  "conceito": "**Como se descobre a raiz lesada.** Cada raiz nervosa cervical controla três coisas: um grupo de músculos (miótomo), uma faixa de pele (dermátomo) e, em geral, um reflexo. Quando uma raiz é comprimida, por hérnia de disco ou osteófito, os três sinais mudam juntos. Combinar força, reflexo e sensibilidade aponta a raiz.\n\n**O conjunto da raiz C6.** **Força**: bíceps braquial, que flete o cotovelo, e **extensores radiais do carpo**, que estendem o punho para o lado do polegar. **Reflexo**: o **braquiorradial**, também chamado estilorradial, pesquisado batendo no rádio perto do punho; a resposta é a flexão do cotovelo. **Sensibilidade**: face lateral do antebraço, polegar e indicador. A questão descreve exatamente esse conjunto.\n\n**Qual disco comprime C6.** Na cervical cada raiz sai acima da vértebra de mesmo número; a C6 sai entre C5 e C6 e é comprimida pela hérnia posterolateral do disco C5-C6.\n\n**As raízes vizinhas, para comparar.** **C5**: deltoide (abdução do ombro), reflexo **bicipital**, face lateral do braço. O bíceps também recebe C5, mas o reflexo de C5 é o bicipital e o deltoide é o músculo característico. **C7**: tríceps, flexores do punho, reflexo **tricipital**, dedo médio. **C8**: flexores dos dedos, dedo mínimo, sem reflexo próprio. **T1**: músculos intrínsecos da mão, face medial do braço.\n\n**Na prova:** bíceps, extensores radiais do carpo e reflexo estilorradial formam o quadro de C6.",
-  "correta": "**C6.** Bíceps, extensores radiais do carpo e reflexo estilorradial são o miótomo e o reflexo característicos da raiz C6.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atendimento inicial e exame neurológico"
+     ],
+     "blocos": [
+      "atendimento-inicial-e-exame-neurologico-d66ef39d"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
+    }
+   ],
+   "questaoSha256": "39d67dda28139280b26f54fb864a4d1aa08bf8dc2e4ecf44d90dd920616cfbc9",
+   "comentarioSha256": "fa7dd2fc14902f4cff124dbc91288ad76218ec400642bfcebc280e8f87fa5932"
+  }
  },
  "coluna-0040": {
   "incorretas": {
@@ -677,19 +771,44 @@
   "conferido": false
  },
  "coluna-0043": {
+  "conceito": "Depois de uma hemilesão esquerda da medula, um paciente pode ter fraqueza e perda da noção da posição da perna esquerda, mas deixar de perceber dor e temperatura à direita. Não há contradição: **as vias trocam de lado em alturas diferentes**.\n\nO trato corticoespinhal leva o comando motor e cruza no bulbo, antes de chegar à medula. Já as colunas posteriores conduzem a propriocepção para cima pelo mesmo lado e cruzam somente ao alcançar o bulbo. Assim, lesar a metade esquerda da medula compromete força e propriocepção à esquerda, abaixo da lesão.\n\nA informação de dor e temperatura passa para o lado oposto dentro da medula antes de subir pelo espinotalâmico. O trato esquerdo, portanto, carrega essas informações provenientes do lado direito. Daí a perda contralateral dessas modalidades na **síndrome de Brown-Séquard** (Rockwood, 10ª ed., cap. 48, “Os tratos e para que lado cada um cruza” e “Brown-Séquard: a hemissecção”).\n\nO reconhecimento do padrão organiza o exame: comparar os dois lados e testar separadamente força, posição articular e sensibilidade dolorosa mostra mais do que registrar apenas “déficit sensitivo”. O desenho é clássico e pode estar incompleto no trauma real.\n\n> **Na prova:** propriocepção segue a força; temperatura segue a dor, do lado oposto.",
+  "correta": "**B: déficit motor e proprioceptivo ipsilateral, com perda contralateral de dor e temperatura.** A combinação resulta do cruzamento bulbar das vias motoras e proprioceptivas e do cruzamento medular da via espinotalâmica.",
   "incorretas": {
-   "A": "**Inverte os lados.** Força e propriocepção se perdem do mesmo lado da lesão, porque esses tratos só cruzam no bulbo. Dor e temperatura é que se perdem do lado oposto.",
-   "C": "**Separa dor e temperatura.** As duas viajam juntas no espinotalâmico e se perdem do mesmo lado. Além disso, o motor se perde do lado da lesão, não do lado oposto, e a propriocepção não acompanha a dor.",
-   "D": "**Coloca a propriocepção do lado errado e separa a temperatura da dor.** A propriocepção se perde junto com o motor, do lado da lesão. A temperatura acompanha a dor, do lado oposto."
+   "A": "**Espelha indevidamente toda a síndrome.** Para uma hemilesão esquerda, força e posição articular se alteram à esquerda, e dor e temperatura à direita. A opção coloca cada conjunto no lado contrário ao esperado.",
+   "C": "**Mistura propriocepção com dor e separa dor de temperatura.** As colunas posteriores e o espinotalâmico percorrem caminhos distintos. A propriocepção deve ficar com a fraqueza ipsilateral; dor e temperatura precisam permanecer juntas contralateralmente.",
+   "D": "**Atribui o lado motor à temperatura.** A metade medular lesada contém a via motora do mesmo lado, mas a informação térmica do lado oposto. Colocar temperatura ipsilateral e propriocepção contralateral troca justamente as duas vias sensitivas."
   },
-  "conceito": "**A lesão de metade da medula.** A síndrome de Brown-Séquard é a lesão de um lado da medula, direito ou esquerdo, chamada hemissecção. A causa clássica é a facada nas costas; também ocorre por hérnia de disco lateral, tumor ou fragmento de fratura desviado para um lado.\n\n**Três tratos, três trajetos.** Trato é o feixe de fibras que leva uma informação. O **corticoespinhal** leva o comando motor do cérebro aos músculos e cruza para o outro lado no bulbo, no alto do tronco cerebral: na medula ele já corre do mesmo lado do músculo. As **colunas posteriores** levam a propriocepção (a noção da posição do corpo), a vibração e o tato fino; sobem do mesmo lado em que entraram e só cruzam no bulbo. O **espinotalâmico** leva a dor e a temperatura e cruza logo ao entrar na medula, um ou dois segmentos acima, subindo pelo lado oposto.\n\n**O resultado da hemissecção.** As fibras motoras e de propriocepção cortadas são do mesmo lado do corpo: **força e propriocepção se perdem do lado da lesão** (ipsilateral). As fibras de dor e temperatura cortadas ali já vieram do outro lado: **dor e temperatura se perdem do lado oposto** (contralateral), começando alguns segmentos abaixo. Um detalhe que a banca explora: dor e temperatura andam sempre juntas, no mesmo trato, e nunca se separam entre os lados.\n\n**Prognóstico.** É a síndrome incompleta de melhor prognóstico: a grande maioria dos pacientes volta a andar e a controlar a bexiga. Para comparar: a centromedular afeta mais os braços e tem bom prognóstico; a medular anterior preserva só a propriocepção e tem o pior.\n\n**Na prova:** Brown-Séquard é motor e propriocepção do lado da lesão e dor e temperatura do lado oposto.",
-  "correta": "**Déficit motor e proprioceptivo ipsilateral, com perda contralateral de dor e temperatura.** Motor e propriocepção ainda não cruzaram no ponto da lesão; dor e temperatura já cruzaram ao entrar na medula.",
   "referencias": [
-   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546.",
-   "McKinley W, Santos K, Meade M, Brooke K. Incidence and outcomes of spinal cord injury clinical syndromes. J Spinal Cord Med. 2007;30(3):215-224."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-a7183487",
+      "a-medula-cervical-e-as-sindromes-incompletas-5af3c74e",
+      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+      "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "82e565506027f8da77bd975ae5ed49c4ae9cb7bae7c6726bdbdc11a795dcdb45"
+    }
+   ],
+   "questaoSha256": "fbee9559137fa364d2b92ea7ae96ce1f80f3cdd6150568d10f839c35d967c5f4",
+   "comentarioSha256": "da274e58807aac13141312eebaccb61a3a58ac10383f326f8c585ad560ab585c"
+  }
  },
  "coluna-0044": {
   "incorretas": {
@@ -795,18 +914,41 @@
   "conferido": false
  },
  "coluna-0051": {
+  "conceito": "Se uma artrodese elimina o movimento de C1–C2, ela retira o segmento que concentra cerca de **metade da rotação cervical**. A pergunta cobra essa distribuição do movimento, e não a porcentagem de flexoextensão.\n\nO atlas gira em relação ao áxis por uma articulação muito especializada: há duas articulações facetárias e a relação do arco anterior com o dente de C2. O resumo atribui a esse conjunto aproximadamente 47 graus de rotação e **50% do total cervical** (Rockwood, 10ª ed., cap. 48, “O movimento: metade da rotação está em C1–C2”).\n\nA coluna abaixo de C2 continua contribuindo, mas com cerca de 2 a 7 graus de rotação por segmento. Por isso não faz sentido dividir o movimento igualmente entre todos os espaços: a geometria e a função de cada região são diferentes. Também não se deve converter os 47 graus em 47% por semelhança numérica; ângulo e participação no total são medidas diferentes.\n\n> **Na prova:** C1–C2 responde por aproximadamente 50% da rotação axial da coluna cervical.",
+  "correta": "**C: 50%.** É a participação aproximada do segmento atlantoaxial na rotação cervical total, sustentada pela anatomia especializada de C1 e C2.",
   "incorretas": {
-   "A": "**Subestima muito.** 15% ignora o desenho de pivô da articulação atlantoaxial, que existe justamente para girar.",
-   "B": "**Ainda subestima.** A contribuição de C1-C2 é cerca de metade da rotação, não menos de um terço.",
-   "D": "**Superestima.** A coluna cervical de C3 a C7 faz a outra metade; C1-C2 não chega a dois terços."
+   "A": "**Dilui o movimento como se todos os segmentos fossem equivalentes.** Quinze por cento fica muito abaixo da participação atlantoaxial descrita. Os níveis subaxiais contribuem individualmente com rotação menor.",
+   "B": "**Ainda subestima o segmento dominante.** Trinta por cento não corresponde à metade citada no resumo. O restante do movimento não elimina a contribuição especialmente grande de C1–C2.",
+   "D": "**Superestima a concentração da rotação.** Sessenta e cinco por cento deixaria à subaxial uma parcela menor que a descrita. A aproximação ensinada é metade em C1–C2 e metade distribuída abaixo."
   },
-  "conceito": "**Os movimentos do pescoço.** A coluna cervical faz flexão e extensão (o gesto do sim), rotação (o gesto do não) e inclinação lateral. Cada segmento contribui de um jeito, conforme o desenho das suas articulações.\n\n**O atlas e o áxis.** C1, o atlas, é um anel sem corpo vertebral que sustenta o crânio. C2, o áxis, tem uma projeção vertical, o **dente**, que sobe por dentro do anel do atlas e fica preso contra o arco anterior pelo ligamento transverso. Entre C1 e C2 não há disco, e as facetas são quase horizontais.\n\n**Por que C1-C2 gira tanto.** Esse conjunto funciona como um pivô: o atlas, levando o crânio, gira em torno do dente do áxis, e as facetas horizontais deslizam livremente. Por isso a articulação atlantoaxial responde por **cerca de 50% de toda a rotação** do pescoço, em torno de 40 a 45 graus para cada lado. A articulação entre o occipício e C1, por outro lado, faz grande parte da flexoextensão da cabeça e quase não gira. De C3 a C7 fica a outra metade da rotação, junto com flexoextensão e inclinação lateral, que nessa região vêm acopladas.\n\n**Consequências práticas.** Uma artrodese entre C1 e C2, feita por instabilidade ou fratura, tira do paciente cerca de metade da rotação do pescoço, o que precisa ser explicado antes da cirurgia. Na criança, a subluxação rotatória atlantoaxial causa torcicolo com a cabeça inclinada para um lado e girada para o outro, depois de infecção de garganta (síndrome de Grisel) ou trauma.\n\n**Na prova:** C1-C2 faz cerca de metade da rotação cervical.",
-  "correta": "**50%.** O pivô entre o atlas e o dente do áxis, sem disco e com facetas horizontais, concentra cerca de metade da rotação do pescoço.",
   "referencias": [
-   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-biomecanica-bb0e36ca"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "9a2704bb9cd41528f8c0106a2e1b67e19d5fc128be6294a027ab55f6492f1af0"
+    }
+   ],
+   "questaoSha256": "4dd850f670680fe3a51814235684a9eec29178e63433ea6e0a424b5ee8dff1b4",
+   "comentarioSha256": "d32fc28d82e2216c47e80d870c698f500c5153c16b862575e2a4a284e9128143"
+  }
  },
  "coluna-0052": {
   "incorretas": {
@@ -973,34 +1115,87 @@
   "conferido": false
  },
  "coluna-0064": {
+  "conceito": "Depois de uma cirurgia cervical pela frente, o paciente pode ter dificuldade para engolir ou perceber a voz diferente. As queixas são próximas na região do pescoço, mas não representam a mesma função: **disfagia é dificuldade de deglutição; disfonia é alteração da voz**. A complicação mais comum perguntada é a disfagia.\n\nNa via de Smith-Robinson, o cirurgião chega à coluna passando entre a bainha carotídea, lateralmente, e a traqueia com o esôfago, medialmente. A posição dessas estruturas ajuda a entender por que deglutição e voz precisam ser avaliadas depois do acesso. O resumo lista disfagia em até 50%, quase sempre subclínica; esse número não significa que metade dos pacientes tenha disfagia grave ou persistente (Rockwood, 10ª ed., cap. 48, “A via anterior de Smith-Robinson” e “As complicações da via anterior”).\n\nAs alterações da voz entram na discussão da lesão do nervo laríngeo recorrente. Já a síndrome de Horner resulta de lesão da cadeia simpática sobre o músculo longo do pescoço. Portanto, “mais comum” deve ser respondido pela frequência descrita, sem escolher a complicação que parece mais impressionante.\n\n> **Na prova:** deglutição é disfagia, a mais comum; rouquidão e disfonia apontam para o problema vocal.",
+  "correta": "**A: disfagia.** É a complicação mais comum da via anterior na fonte consultada, frequentemente discreta. Não se confunde com uma perfuração esofágica nem com alteração da voz.",
   "incorretas": {
-   "B": "**Disfonia é menos frequente.** Vem do estiramento ou lesão do nervo laríngeo recorrente, que controla as cordas vocais. Ocorre, mas bem menos que a disfagia.",
-   "C": "**Rouquidão tem a mesma origem da disfonia.** É a manifestação da lesão do laríngeo recorrente e também é menos comum que a dificuldade para engolir.",
-   "D": "**A síndrome de Horner é rara.** Resulta da lesão da cadeia simpática sobre o músculo longo do pescoço, quando a dissecção se afasta da linha média."
+   "B": "**É uma alteração da fonação.** Disfonia aparece entre as complicações relacionadas ao laríngeo recorrente, mas a fonte coloca a disfagia como mais comum. A semelhança das palavras não significa equivalência de função ou frequência.",
+   "C": "**Descreve a qualidade da voz.** Rouquidão integra o espectro vocal que pode aparecer com lesão do recorrente. Escolhê-la repetiria o raciocínio da disfonia e deixaria de lado a dificuldade de engolir, que lidera a lista.",
+   "D": "**É lesão do simpático cervical.** Horner reúne ptose, miose e anidrose ipsilaterais e pode ocorrer por agressão à cadeia simpática sobre o longo do pescoço. Tem mecanismo próprio e não é a complicação mais frequente perguntada."
   },
-  "conceito": "**Como é o acesso anterior à coluna cervical.** É o caminho usado para retirar discos e colocar enxertos ou próteses no pescoço, descrito por Smith e Robinson. Faz-se uma incisão transversal na frente do pescoço, corta-se o platisma (músculo fino sob a pele) e avança-se entre dois grupos de estruturas: por fora, a **bainha carotídea**, com a carótida, a jugular e o nervo vago; por dentro, a **traqueia e o esôfago**. Esses são afastados para o lado, e chega-se à frente das vértebras.\n\n**A complicação mais comum: disfagia.** Disfagia é a dificuldade para engolir. Durante a cirurgia, o esôfago e a faringe ficam afastados e comprimidos pelo afastador, e no pós-operatório incham. Por isso a dificuldade para engolir é muito frequente nos primeiros dias, e uma minoria de pacientes mantém sintomas por meses. É, de longe, a queixa mais comum depois desse acesso.\n\n**As outras complicações.** A **disfonia** ou **rouquidão** (alteração da voz) vem da tração ou lesão do **nervo laríngeo recorrente**, que comanda as cordas vocais; é menos frequente que a disfagia e costuma ser transitória. A **síndrome de Horner** (pálpebra caída, pupila pequena e falta de suor de um lado do rosto) vem da lesão da cadeia simpática, que corre sobre o músculo longo do pescoço; é rara e evitada dissecando-se pela linha média. O **hematoma** no pescoço é raro, mas pode comprimir a traqueia e ameaçar a respiração. A perfuração do esôfago é rara e grave.\n\n**Prevenção da disfagia.** Afastamento intermitente, para aliviar a pressão sobre o esôfago, menor pressão no balonete do tubo de intubação e uso de placas de perfil baixo.\n\n**Na prova:** a complicação mais comum do acesso cervical anterior é a disfagia.",
-  "correta": "**Disfagia.** O afastamento do esôfago e da faringe durante a cirurgia causa edema, e a dificuldade para engolir é a complicação mais frequente desse acesso.",
   "referencias": [
-   "Bazaz R, Lee MJ, Yoo JU. Incidence of dysphagia after anterior cervical spine surgery: a prospective study. Spine. 2002;27(22):2453-2458.",
-   "Fountas KN, Kapsalaki EZ, Nikolakakos LG et al. Anterior cervical discectomy and fusion associated complications. Spine. 2007;32(21):2310-2317."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Vias de acesso, fixação e complicações; Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Vias de acesso, fixação e complicações",
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+      "vias-de-acesso-fixacao-e-complicacoes-b201fbe8",
+      "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a",
+      "vias-de-acesso-fixacao-e-complicacoes-508207a6",
+      "anatomia-aplicada-e-biomecanica-08887344"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "ea7c4a89f3a1cfac5e91e2f0811e6aeb3488db217236f8697f93bf67694da618"
+    }
+   ],
+   "questaoSha256": "f1ad04cc95297c446ac158dd2af6e503f35f4fb16f031996e6406f0fca0b4a40",
+   "comentarioSha256": "48c0f2c5a3ad15f81cba7f62e6fbe64428046ab28f4544f03223c1f437c0b6a5"
+  }
  },
  "coluna-0065": {
+  "conceito": "Na radiografia em perfil, observe o espaço entre a face posterior do arco anterior de C1 e a face anterior do dente de C2. É o intervalo atlanto-odontoide anterior, ou **ADI**. No adulto, a resposta de referência é **até 3 mm**.\n\nO dente fica dentro do anel do atlas. O ligamento transverso passa por trás dele, de uma massa lateral de C1 à outra, e ajuda a manter essa relação. Quando essa contenção falha, o intervalo anterior pode aumentar. Por isso a medida informa sobre estabilidade, não apenas sobre o formato de um espaço na radiografia (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade” e “O intervalo atlanto-odontoide”).\n\n**Três e cinco milímetros têm significados diferentes.** O resumo usa até 3 mm como referência normal do adulto. Uma lesão isolada do transverso pode permitir abertura de até 5 mm, contida pelos alares; acima de 5 mm, considera também falha desses estabilizadores. Logo, 5 mm não deve ser transformado em limite normal adulto.\n\nO intervalo posterior, PADI, é outra medida: fica entre o dente e o arco posterior e informa sobre espaço disponível para a medula. Também não se deve provocar flexoextensão numa suspeita de lesão aguda instável apenas para medir quanto o ADI abre.\n\n> **Na prova:** ADI adulto até 3 mm; valores maiores exigem avaliação de instabilidade.",
+  "correta": "**B: 3 mm.** É o limite de referência adulto usado na pergunta. A distância é medida entre o arco anterior de C1 e a frente do dente, não no espaço posterior à medula.",
   "incorretas": {
-   "A": "**Restritivo demais.** O intervalo normal do adulto pode chegar a 3 mm; adotar 1 mm como limite faria considerar anormais pessoas saudáveis.",
-   "C": "**É o limite da criança.** Até 5 mm é aceito na infância, pela maior frouxidão ligamentar. No adulto, 5 mm já indica lesão do transverso.",
-   "D": "**Indica insuficiência franca.** Intervalos dessa ordem significam que o ligamento transverso e os estabilizadores secundários falharam, e o canal da medula está ameaçado."
+   "A": "**Estabelece um limite excessivamente estreito.** Um ADI de 1 mm pode estar dentro da normalidade, mas isso não o torna o máximo normal. A pergunta solicita o teto de referência, que chega a 3 mm.",
+   "C": "**Confunde o normal com abertura por falha ligamentar.** No adulto, 5 mm pode ser alcançado com lesão do transverso ainda contida pelos alares. Esse valor pertence à discussão de instabilidade, não ao limite normal solicitado.",
+   "D": "**Ultrapassa também a contenção secundária descrita.** Sete milímetros excede 5 mm, faixa em que o resumo presume comprometimento do transverso e dos alares. Não é uma variante normal adulta a aceitar sem investigação."
   },
-  "conceito": "**A articulação entre o atlas e o dente.** O atlas (C1) é um anel que sustenta o crânio. O áxis (C2) tem uma projeção vertical, o **dente** (ou processo odontoide), que sobe por dentro do anel do atlas e se apoia atrás do seu arco anterior. O que mantém o dente encostado no arco é o **ligamento transverso**, uma faixa forte que passa por trás do dente de uma massa lateral do atlas à outra. Se o transverso falha, o atlas desliza para a frente sobre o dente e o canal da medula estreita.\n\n**O intervalo atlanto-dental anterior.** Na radiografia de perfil, mede-se a distância entre a face posterior do arco anterior do atlas e a face anterior do dente. É o intervalo atlanto-dental anterior, ou ADI (da sigla em inglês). No **adulto**, o normal é até **3 mm**. Na **criança**, por causa da frouxidão natural dos ligamentos, aceita-se até **5 mm**. Valores maiores indicam insuficiência do ligamento transverso.\n\n**Quando ele aumenta.** No trauma, por ruptura do ligamento transverso, inclusive em algumas fraturas do anel do atlas (Jefferson) com grande afastamento das massas laterais. Na **artrite reumatoide**, a inflamação destrói o ligamento. Na **síndrome de Down** e em algumas displasias, há frouxidão ligamentar.\n\n**O intervalo posterior.** Medido do dente até o arco posterior do atlas, é o espaço que sobra para a medula. Na artrite reumatoide ele prevê melhor o risco de lesão neurológica do que o anterior: abaixo de cerca de 14 mm, o risco de mielopatia é alto e a cirurgia é indicada. A regra dos terços de Steel resume a anatomia: no nível de C1, o canal tem um terço ocupado pelo dente, um terço pela medula e um terço de espaço livre.\n\n**Na prova:** intervalo atlanto-dental anterior normal é até 3 mm no adulto e até 5 mm na criança.",
-  "correta": "**3 mm.** É o limite superior normal do intervalo atlanto-dental anterior no adulto; acima disso, suspeita-se de insuficiência do ligamento transverso.",
   "referencias": [
-   "Fielding JW, Cochran GV, Lawsing JF 3rd, Hohl M. Tears of the transverse ligament of the atlas: a clinical and biomechanical study. J Bone Joint Surg Am. 1974;56(8):1683-1691.",
-   "Boden SD, Dodge LD, Bohlman HH, Rechtine GR. Rheumatoid arthritis of the cervical spine: a long-term analysis with predictors of paralysis and recovery. J Bone Joint Surg Am. 1993;75(9):1282-1297."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Imagem: rastreio, radiografia, tomografia e ressonância."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2",
+      "Imagem: rastreio, radiografia, tomografia e ressonância"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-7236e480",
+      "imagem-rastreio-radiografia-tomografia-e-ressona-85a31610"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "457cd63a625d3506e46d7a5e738e6f8e49969d919b59cd7d23261de19546ea0d"
+    }
+   ],
+   "questaoSha256": "b2fae1fb5a5048f5ba71bec6c97720f13939b01a0dfe3a411908538b70e2394f",
+   "comentarioSha256": "c0e4495084f90cc7ace3c97c97ed45d92a867232dcafa2457e39d6a3344a1e18"
+  }
  },
  "coluna-0066": {
   "incorretas": {
@@ -1106,18 +1301,41 @@
   "conferido": false
  },
  "coluna-0073": {
+  "conceito": "A alteração está na face lateral do antebraço e no reflexo braquiorradial. Duas partes diferentes do exame apontam para a mesma raiz: **C6**. Essa concordância é mais útil que tentar localizar a compressão por uma queixa sensitiva isolada.\n\nO dermátomo é a região de pele usada como referência sensitiva de uma raiz. Na tabela cervical, C6 se relaciona à face lateral do antebraço, polegar e indicador; seu reflexo é o braquiorradial, também chamado estilorradial. Na avaliação motora, bíceps e extensão do punho acrescentam informações concordantes (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\nO contraste com C5 e C7 organiza a localização: C5 é referenciada à face lateral do ombro e braço e ao reflexo bicipital; C7, ao dedo médio e ao tricipital. “Lateral do braço” e “lateral do antebraço” não são expressões intercambiáveis nesse esquema.\n\nA questão pede a raiz provável. Essa localização funcional não permite inventar, sem imagem e sem o restante da avaliação, qual lesão estrutural específica a está comprimindo.\n\n> **Na prova:** lateral do antebraço com braquiorradial alterado localiza C6.",
+  "correta": "**C: C6.** O território sensitivo e o reflexo fornecidos coincidem com os dois marcadores de C6 na tabela; bíceps e extensores do punho podem complementar o exame.",
   "incorretas": {
-   "A": "**C4 fica no pescoço e no ombro.** Dá sensibilidade na base do pescoço e no topo do ombro e não tem reflexo próprio. Não alcança o antebraço.",
-   "B": "**C5 é a face lateral do braço.** A C5 cobre o braço, acima do cotovelo, e seu reflexo é o bicipital. O antebraço e o braquiorradial pertencem à C6.",
-   "D": "**C7 é o dedo médio e o tríceps.** Seu reflexo é o tricipital, e sua sensibilidade fica no meio da mão, não na face lateral do antebraço."
+   "A": "**Não corresponde ao conjunto localizado.** O reflexo braquiorradial está atribuído a C6 na fonte, junto da sensibilidade lateral do antebraço. Não há dado do enunciado que justifique deslocar essa associação para C4.",
+   "B": "**Troca braço por antebraço e bicipital por braquiorradial.** C5 é o nível de referência do deltoide, da região lateral do ombro e braço e do reflexo bicipital. A opção próxima exige atenção às duas diferenças.",
+   "D": "**É o conjunto do dedo médio e do tricipital.** Em C7, a tabela usa tríceps e flexão do punho como marcadores motores. Nem a topografia sensitiva nem o reflexo apresentados são os de C7."
   },
-  "conceito": "**Como localizar uma radiculopatia cervical.** Radiculopatia é a compressão de uma raiz nervosa, geralmente por hérnia de disco ou osteófito. Cada raiz cervical tem um território de pele (dermátomo), um grupo de músculos e, em geral, um reflexo. Cruzando a sensibilidade alterada com o reflexo alterado, encontra-se a raiz.\n\n**O território de C6.** **Sensibilidade**: a **face lateral do antebraço** (do lado do polegar), descendo até o polegar e o indicador. **Reflexo**: o **braquiorradial**, também chamado estilorradial, pesquisado batendo no rádio perto do punho, com resposta de flexão do cotovelo. **Força**: bíceps e extensores radiais do punho. A combinação do enunciado, face lateral do antebraço com reflexo braquiorradial, é a de C6.\n\n**Qual disco comprime C6.** Na cervical cada raiz sai acima da vértebra de mesmo número. A C6 sai entre C5 e C6, e a hérnia do disco C5-C6 a comprime.\n\n**A armadilha: braço ou antebraço.** C5 e C6 são vizinhas na face lateral do membro. A **C5** cobre a face lateral do **braço** (do ombro ao cotovelo, sobre o deltoide) e tem o reflexo **bicipital**. A **C6** cobre a face lateral do **antebraço** e tem o braquiorradial. Ler com atenção qual segmento o enunciado cita resolve a questão.\n\n**As outras raízes.** **C4**: base do pescoço e topo do ombro, sem reflexo próprio. **C7**: dedo médio, tríceps e reflexo tricipital. **C8**: dedo mínimo e face ulnar do antebraço, sem reflexo próprio.\n\n**Na prova:** face lateral do antebraço com reflexo braquiorradial é C6; face lateral do braço com bicipital é C5.",
-  "correta": "**C6.** A face lateral do antebraço é o dermátomo de C6, e o reflexo braquiorradial depende dessa raiz.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atendimento inicial e exame neurológico"
+     ],
+     "blocos": [
+      "atendimento-inicial-e-exame-neurologico-d66ef39d"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
+    }
+   ],
+   "questaoSha256": "ab60bd13b71a37fd7dd50baf7884eb7d5e7b76918386d81361c01dd52ec6f412",
+   "comentarioSha256": "dd8dad2093a4cc47bb44c8d90e140a2078a855da892b58374101d728c8840135"
+  }
  },
  "coluna-0074": {
   "conceito": "### Ângulo pélvico de T1 (TPA)\n- **Traçado:** ângulo entre duas linhas que partem do **centro das cabeças femorais**: uma até o centro de **T1** e outra até o **centro do platô de S1**.\n- Na figura, a seta aponta o vértice em **T1** e as linhas que descem até a região das cabeças femorais.\n- **Vantagem:** combina, numa medida só, a **inclinação do tronco** (como o SVA) e a **retroversão pélvica** (compensação). **Não muda** com a postura compensatória nem com a calibração da radiografia.\n- **Correlação:** boa com **qualidade de vida** e incapacidade na deformidade do adulto. Valores maiores indicam deformidade sagital mais grave. O alvo cirúrgico costuma ser abaixo de ~14°, valor aproximado.\n\n### Outros parâmetros sagitais\n- **SVA:** linha de prumo de C7 até S1 (distância, em cm).\n- **Incidência pélvica, versão pélvica, inclinação sacral.**\n- **Discordância IP-LL:** incidência pélvica menos lordose lombar; meta abaixo de 10°.\n- Também citados: **ângulo de inclinação de T1** e **GAP score**.\n\n> **Na prova:** ângulo com vértice nas cabeças femorais, até T1 = ==ângulo pélvico de T1 (TPA)==.",
@@ -1280,19 +1498,43 @@
   "conferido": false
  },
  "coluna-0085": {
+  "conceito": "Ao palpar a região anterior do pescoço para se orientar numa via cervical, o tubérculo carotídeo indica **C6**. É o tubérculo anterior proeminente do processo transverso dessa vértebra, também chamado tubérculo de Chassaignac.\n\nO processo transverso cervical tem uma parte anterior derivada do processo costal e uma posterior que corresponde ao transverso verdadeiro. Juntas, delimitam o forame transverso. Em C6, a proeminência anterior se torna uma referência palpável para o nível cirúrgico (Rockwood, 10ª ed., cap. 48, “A vértebra subaxial”).\n\nA orientação fica mais fácil quando se comparam marcos: o hioide corresponde a C3; a cartilagem tireoide, a C4–C5; a cricoide e o tubérculo carotídeo, a C6. São referências anatômicas de superfície descritas para a via anterior, e não nomes diferentes para a mesma estrutura.\n\n> **Na prova:** tubérculo carotídeo ou de Chassaignac é C6; a cricoide é outro marco do mesmo nível.",
+  "correta": "**D: C6.** É a vértebra cujo tubérculo anterior do processo transverso forma a proeminência carotídea palpável descrita na fonte.",
   "incorretas": {
-   "A": "**C3 é o nível do osso hioide.** O hioide é o marco superficial dessa altura, e não há tubérculo palpável de referência em C3.",
-   "B": "**C4 corresponde à cartilagem tireóidea.** O pomo de adão marca a altura de C4-C5, acima do tubérculo carotídeo.",
-   "C": "**C5 fica logo acima.** O processo transverso de C5 tem tubérculo anterior, mas o mais saliente, que se palpa como referência, é o de C6."
+   "A": "**Usa a referência do hioide.** C3 aparece na orientação anterior pelo osso hioide. O tubérculo carotídeo é uma referência óssea vertebral diferente e mais caudal, situada em C6.",
+   "B": "**Confunde com a cartilagem tireoide.** O resumo situa a tireoide em C4–C5 para orientação do acesso. Isso não muda o nível do tubérculo anterior de Chassaignac, que é C6.",
+   "C": "**Ainda corresponde ao marco da tireoide.** C5 integra a faixa C4–C5 descrita para essa cartilagem. Para o tubérculo carotídeo, a associação precisa é com C6, também referenciada pela cricoide."
   },
-  "conceito": "**O que é o tubérculo carotídeo.** Cada vértebra cervical tem processos transversos com dois tubérculos, um anterior e um posterior. O **tubérculo anterior do processo transverso de C6** é o mais saliente da coluna cervical e recebe o nome de tubérculo carotídeo, ou de Chassaignac. Ele é chamado carotídeo porque a artéria carótida comum passa logo à frente dele e pode ser comprimida contra esse osso.\n\n**Onde se palpa.** Profundamente, na borda interna do músculo esternocleidomastóideo, na altura da **cartilagem cricoide**, o anel cartilaginoso logo abaixo do pomo de adão.\n\n**Para que serve.** É um marco para o nível **C6** no acesso cirúrgico anterior ao pescoço: uma incisão na altura da cricoide e do tubérculo chega a C5-C6 e C6. Também orienta a compressão da carótida e bloqueios anestésicos, como o do gânglio estrelado e o do plexo braquial. A **artéria vertebral** entra no forame transverso justamente em **C6** na maioria das pessoas, e sobe dentro desses orifícios até C1.\n\n**Outros marcos do pescoço.** Para escolher a altura da incisão, usam-se estruturas palpáveis: o **osso hioide** fica na altura de C3; a **cartilagem tireóidea** (o pomo de adão), em C4-C5; a **cartilagem cricoide** e o tubérculo carotídeo, em **C6**. O ângulo da mandíbula corresponde a C2-C3.\n\n**Na prova:** tubérculo carotídeo é o tubérculo anterior do processo transverso de C6, na altura da cricoide.",
-  "correta": "**C6.** O tubérculo carotídeo é o tubérculo anterior do processo transverso de C6, o mais proeminente da coluna cervical, na altura da cartilagem cricoide.",
   "referencias": [
-   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 4th ed. Philadelphia: Lippincott Williams & Wilkins; 2009.",
-   "Standring S (ed). Gray's Anatomy: The Anatomical Basis of Clinical Practice. 41st ed. London: Elsevier; 2016."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica; Vias de acesso, fixação e complicações."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Anatomia aplicada e biomecânica",
+      "Vias de acesso, fixação e complicações"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-biomecanica-43792d6a",
+      "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "52e46c8599e554595ef12197afd386a76a7ed80f5b454944913955c87ed96863"
+    }
+   ],
+   "questaoSha256": "23c81257c8bf5c0b3125088ebdcfabf403f01ae8426038908f9295dae52b2af1",
+   "comentarioSha256": "54fbfd489a1a84af313eea211df4092798e9ea17051c8c2d2ea80c50c028cae3"
+  }
  },
  "coluna-0086": {
   "incorretas": {
@@ -1614,18 +1856,42 @@
   "conferido": false
  },
  "coluna-0113": {
+  "conceito": "O paciente perdeu mais força nos braços do que nas pernas. Antes de pensar em uma fratura específica, esse desnível do exame sugere **síndrome medular central**. Quando a questão acrescenta o mecanismo e a faixa etária típicos, a combinação é hiperextensão em um idoso.\n\nO resumo descreve o cenário do canal cervical estreito, por espondilose ou estenose prévia, que sofre trauma com o pescoço levado para trás. O déficit motor e sensitivo é mais importante nos membros superiores, especialmente nas mãos; alterações das pernas e dos esfíncteres podem coexistir. A ausência de fratura ou desalinhamento não exclui esse comprometimento medular (Rockwood, 10ª ed., cap. 48, “Síndrome medular central”).\n\nA síndrome anterior tem outro padrão: comprometimento motor e de dor e temperatura, com propriocepção preservada. Nela, o detalhe decisivo é a dissociação entre modalidades sensitivas, não a fraqueza desproporcional das mãos. Reconhecer qual assimetria está sendo descrita evita trocar os dois quadros.\n\n**Idoso é o perfil clássico, não uma condição obrigatória.** A síndrome pode ser considerada em outras idades; o que se pede aqui é a associação mais característica entre os três componentes fornecidos.\n\n> **Na prova:** braços mais fracos que pernas, no idoso após hiperextensão, apontam para síndrome central.",
+  "correta": "**C: medular central por hiperextensão em idosos.** O padrão motor localiza a síndrome; mecanismo e faixa etária completam o cenário clássico de trauma em um canal já estreito.",
   "incorretas": {
-   "A": "**A síndrome anterior não poupa as pernas.** Ela causa paralisia sem predomínio nos membros superiores, preservando apenas a propriocepção, e ocorre por flexão ou isquemia.",
-   "B": "**Tipo, mecanismo e idade errados.** A fraqueza predominante nos braços não é da síndrome anterior, e o perfil típico do quadro descrito é o idoso com hiperextensão.",
-   "D": "**Tipo e mecanismo certos, idade não.** A centromedular por hiperextensão é típica do idoso com espondilose; em jovens ela é menos frequente."
+   "A": "**Troca a distribuição central por outra síndrome.** Na anterior, a perda motora acompanha perda de dor e temperatura com propriocepção preservada. A opção não explica a pista principal de maior fraqueza nos membros superiores.",
+   "B": "**A idade não corrige a localização errada.** Ser jovem não transforma o predomínio braquial em síndrome anterior. Primeiro se reconhece o padrão neurológico; depois se verifica se mecanismo e perfil do paciente combinam.",
+   "D": "**Acerta síndrome e mecanismo, mas muda o perfil típico.** Um jovem pode apresentar síndrome central. Contudo, a associação clássica descrita na fonte e solicitada como mais comum é o idoso com estreitamento cervical prévio."
   },
-  "conceito": "**Lendo o enunciado.** Tetraparesia é a fraqueza nos quatro membros; o enunciado diz que os **membros superiores** são mais afetados que os inferiores. Esse padrão, braços mais fracos que pernas, é a assinatura de uma síndrome medular incompleta específica: a **centromedular**.\n\n**O tipo: síndrome medular central.** É a lesão da parte central da medula cervical e a mais comum das lesões incompletas (aquelas em que alguma função abaixo da lesão é preservada). A fraqueza predomina nos braços, sobretudo nas mãos. A explicação clássica é que, no trato corticoespinhal (o feixe motor), as fibras dos braços ficam mais perto do centro e as das pernas mais na periferia; estudos mais recentes destacam que esse trato é especialmente importante para os movimentos finos da mão.\n\n**O mecanismo: hiperextensão.** O pescoço é jogado para trás, como numa queda com batida do queixo ou da testa. Num canal já estreito, os osteófitos (bicos de osso) da frente e o ligamento amarelo, que se dobra para dentro por trás, pinçam a medula. O dano se concentra no centro, com edema e sangramento, e muitas vezes não há fratura.\n\n**A faixa etária: idosos.** O paciente típico é o idoso com espondilose cervical, o desgaste da coluna que estreita o canal. Uma queda da própria altura basta. Em jovens, a mesma síndrome pode acontecer em traumas de alta energia, mas não é o perfil mais comum.\n\n**O contraste com a síndrome medular anterior.** A anterior ocorre por flexão ou por isquemia da artéria espinhal anterior. Causa paralisia com perda de dor e temperatura, mas preserva a propriocepção, e não tem predomínio nos braços. É a de pior prognóstico. A centromedular tem bom prognóstico para a marcha, mas as mãos recuperam por último e de forma incompleta.\n\n**Na prova:** braços mais fracos que pernas é síndrome centromedular, por hiperextensão, em idosos.",
-  "correta": "**Medular central por hiperextensão em idosos.** É o retrato clássico: idoso com canal estreito que hiperestende o pescoço e desenvolve fraqueza maior nos braços que nas pernas.",
   "referencias": [
-   "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "c3910fbc80a98b1ff34417f19674ea8463ee5d5672a8f961b97b3dacfcee319b"
+    }
+   ],
+   "questaoSha256": "ae2fe74244e36ec84766494c5cdee7d7412592c4deecd6e0fd7cc526940dd32d",
+   "comentarioSha256": "bdf6f66e40dd5e21d1fe5b723b748c0fb35ac59fc0e5e8a4c1965e417490d4e5"
+  }
  },
  "coluna-0134": {
   "conceito": "Discinesia escapular é alteração da posição ou do movimento da escápula durante a elevação do braço. No atleta arremessador, ela pode reduzir a rotação superior e a inclinação posterior, alterar a orientação da glenoide e aumentar a carga sobre manguito e lábio. O acrônimo **SICK** resume Scapular malposition, Inferior medial border prominence, Coracoid pain and malposition e dysKinesis. Na classificação visual de Kibler, o **tipo I** apresenta proeminência do ângulo inferior e rotação anormal no eixo transversal; o **tipo II** apresenta proeminência de toda a borda medial, por rotação anormal em torno de um eixo vertical; o **tipo III** mostra elevação excessiva da borda superior e translação superior; e o tipo IV é movimento simétrico normal. O tipo II se associa a déficit dos estabilizadores que controlam retração e rotação escapular, particularmente romboides e porções média, superior e inferior do trapézio. A avaliação deve observar repouso e elevação/descida repetida dos braços; testes de assistência e retração escapular verificam se corrigir manualmente a posição reduz os sintomas.",
@@ -1762,33 +2028,79 @@
   "conferido": false
  },
  "coluna-0152": {
+  "conceito": "Uma lesão cervical que passa despercebida pode continuar sendo movimentada como se a coluna estivesse íntegra. É por isso que o atendimento protege a coluna antes de conhecer toda a lesão. O resumo associa o diagnóstico não reconhecido a um risco de sequela neurológica **dez vezes maior**.\n\nO ponto prático do número é a prevenção de dano adicional. Alteração da consciência, intoxicação, dor cervical, déficit focal ou outra lesão que distraia impedem tratar um exame aparentemente tranquilizador como prova suficiente de coluna normal. A proteção cervical acompanha a avaliação das vias aéreas, da respiração e da circulação; durante a intubação, a estabilização manual em linha procura evitar deslocar uma lesão instável (Rockwood, 10ª ed., cap. 48, “Imobilizar antes de saber”).\n\n**Dez vezes é uma comparação de risco, não uma taxa de 10%.** A afirmação não permite calcular a probabilidade individual sem conhecer a frequência de referência, nem significa que toda lesão inicialmente perdida terminará com sequela. Ela dimensiona a importância de reconhecer e proteger o paciente sob suspeita.\n\n> **Na prova:** lesão cervical não identificada: risco de sequela neurológica aumentado em aproximadamente dez vezes.",
+  "correta": "**D: 10.** É o multiplicador citado para a lesão cervical não reconhecida. A consequência prática é manter proteção e investigação apropriadas enquanto a coluna não estiver esclarecida.",
   "incorretas": {
-   "A": "Quatro vezes subestima bastante o problema. O número que a literatura de trauma consagrou para lesões não reconhecidas é da ordem de dez.",
-   "B": "Também fica abaixo do valor citado. A mensagem dos estudos é justamente que o atraso multiplica o risco de forma muito expressiva.",
-   "C": "Chega perto, mas a referência usada em provas e manuais de trauma é de cerca de dez vezes."
+   "A": "**Subestima a associação descrita.** Quatro vezes não é a estimativa fornecida para sequela após lesão cervical despercebida. A resposta deve usar o desfecho específico, sem substituir o número por outra medida de gravidade do trauma.",
+   "B": "**Não corresponde ao multiplicador da fonte.** Seis vezes ainda fica abaixo dos dez relatados. Não há cálculo pela quantidade de vértebras ou pelo tempo desde o acidente; trata-se de uma associação apresentada no capítulo.",
+   "C": "**Aproxima-se, mas não reproduz o dado perguntado.** Oito vezes não é o valor citado. É preciso distinguir um multiplicador de risco de um percentual de pacientes ou de um limite de horas para investigar."
   },
-  "conceito": "Imagine um motociclista que chega desacordado, com fratura de fêmur e trauma de face. Ele não reclama do pescoço porque não consegue reclamar de nada. Se ninguém pensar na coluna cervical, e ela tiver uma lesão instável, basta uma virada na maca sem proteção para que uma fratura sem déficit se transforme em tetraplegia.\n\nÉ desse cenário que vem o número da questão. Estudos clássicos sobre fraturas de coluna que passaram despercebidas mostraram que o paciente cuja lesão não é reconhecida tem um risco de sequela neurológica cerca de **dez vezes maior** do que aquele diagnosticado logo. O dano não vem do acidente em si, mas do que acontece depois, quando a coluna instável é tratada como se fosse normal.\n\nQuem são os pacientes em que a lesão costuma escapar? O rebaixado ou intoxicado, que não colabora com o exame. O que tem uma lesão dolorosa em outro lugar e não presta atenção no pescoço (a chamada lesão distratora). O idoso que fratura C2 numa simples queda de altura. O portador de espondilite anquilosante ou DISH, cuja coluna rígida quebra como um osso longo, com traço sutil e enorme instabilidade. E qualquer um cuja radiografia não mostrou direito a transição entre C7 e T1.\n\nA prevenção é cultural: manter a restrição de movimento da coluna até ela ser formalmente liberada, usar critérios clínicos validados como o NEXUS e a regra canadense para decidir quem precisa de imagem, e preferir a tomografia nos adultos com trauma de risco. A ressonância entra quando há déficit sem fratura, suspeita de lesão ligamentar ou paciente que não pode ser examinado.",
-  "correta": "**Dez vezes.** É o aumento de risco classicamente citado para sequela neurológica quando a lesão cervical não é identificada no atendimento inicial.",
   "referencias": [
-   "Reid DC, Henderson R, Saboe L, Miller JD. Etiology and clinical course of missed spine fractures. J Trauma. 1987;27(9):980-986."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atendimento inicial e exame neurológico"
+     ],
+     "blocos": [
+      "atendimento-inicial-e-exame-neurologico-3729e45a",
+      "atendimento-inicial-e-exame-neurologico-f5824e02"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "40033edb44f17fe6b7d1052b3a3e2b11e95877e874aa5e797c8ce5f955071d70"
+    }
+   ],
+   "questaoSha256": "e49f4d1c65e7af770a1148516f7910a4e18d712e55281371aaddeadc8e4ee2f2",
+   "comentarioSha256": "92f1dbaeb93d4044701d2e6ad904c54b3f6cbd64f02783448f01c8e29f50db25"
+  }
  },
  "coluna-0153": {
+  "conceito": "Peça ao paciente para dobrar o punho para a frente contra resistência, mantendo o antebraço apoiado. Entre os movimentos oferecidos, essa **flexão do punho** é o marcador de C7 na tabela de exame cervical usada pela questão.\n\nA localização fica mais confiável quando o movimento é confrontado com outras funções da mesma raiz. C7 aparece com tríceps e flexão do punho, sensibilidade no dedo médio e reflexo tricipital. Encontrar esses achados juntos sustenta a localização melhor que uma fraqueza isolada, que pode ter outras explicações (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\nCompare os sentidos do movimento: **extensão do punho corresponde a C6 no esquema; flexão, a C7**. A articulação é a mesma, mas os músculos solicitados e a referência segmentar mudam. Abdução do ombro desloca o teste para C5, enquanto flexão dos dedos é usada para C8.\n\nOs níveis da tabela são referências clínicas. Não significam que cada músculo pertença exclusivamente a uma raiz, nem substituem a avaliação conjunta da força, sensibilidade e reflexos.\n\n> **Na prova:** para C7, associe flexão do punho, tríceps e reflexo tricipital.",
+  "correta": "**C: flexão do punho.** É o movimento oferecido que a tabela atribui a C7. Tríceps, dedo médio e reflexo tricipital são os achados complementares desse nível.",
   "incorretas": {
-   "A": "A abdução do ombro é feita pelo deltoide, músculo de C5. Ela testa uma raiz bem mais alta.",
-   "B": "É a armadilha da questão. Estender o punho é função de C6; a C7 é a raiz do movimento oposto.",
-   "D": "Fechar os dedos depende dos flexores profundos, comandados por C8. A C7 cuida de abrir os dedos, não de fechá-los."
+   "A": "**Avalia um nível mais alto.** A abdução do ombro pelo deltoide é o marcador motor de C5 na tabela. A referência sensitiva é lateral do ombro e braço, com reflexo bicipital, diferente do conjunto de C7.",
+   "B": "**Troca o sentido do movimento e a raiz de referência.** Estender o punho é o marcador de C6, junto do bíceps e do reflexo braquiorradial. Para responder C7 nesta questão, deve-se escolher a flexão.",
+   "D": "**Desce para o conjunto de C8.** Flexores dos dedos e intrínsecos aparecem associados a esse nível, com sensibilidade no anular, mínimo e face medial do antebraço. Não são o movimento de referência de C7 solicitado."
   },
-  "conceito": "O exame motor do membro superior tem uma pegadinha que a banca adora: o punho e os dedos aparecem duas vezes, com movimentos opostos, e cada movimento pertence a uma raiz diferente.\n\nNo punho, **estender** (levantar o dorso da mão) é C6, e **fletir** (dobrar a mão para baixo) é **C7**. Nos dedos, **estender** (abrir a mão) é C7, e **fletir** (fechar) é C8. Quem decora só \"punho é C6\" ou \"dedos é C8\" cai na armadilha.\n\nA raiz C7, portanto, tem três funções principais: o **tríceps**, que estende o cotovelo, os **flexores do punho** e os **extensores dos dedos**. O reflexo dela é o tricipital, e a sensibilidade fica no dedo médio. Ela é comprimida pela hérnia do disco C6-C7, uma das mais frequentes da coluna cervical.\n\nUm detalhe para não confundir: a padronização da ASIA, usada na lesão medular, escolhe um músculo-chave por raiz para facilitar o registro, e para C7 escolheu o tríceps (extensão do cotovelo). Isso não muda o fato de a flexão do punho também ser território de C7; a questão apenas não ofereceu o tríceps entre as opções.\n\nPara fechar o mapa: abdução do ombro é C5, flexão do cotovelo é C5 e C6, extensão do punho é C6, e os músculos pequenos da mão são C8 e T1.",
-  "correta": "**Flexão do punho.** É uma das funções motoras de C7, ao lado do tríceps e dos extensores dos dedos.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977.",
-   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atendimento inicial e exame neurológico"
+     ],
+     "blocos": [
+      "atendimento-inicial-e-exame-neurologico-d66ef39d"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
+    }
+   ],
+   "questaoSha256": "4ea630d49e10f61b431f5e27846b7b547f5cc63644cbe71a87152388ed01bd58",
+   "comentarioSha256": "4b4789c5376588c2517720543411eea22e5b2da1aa4b81d9d88b32a5e00437f1"
+  }
  },
  "coluna-0154": {
   "conceito": "### Linha de Swischuk (linha cervical posterior)\n- **Traçado:** no **perfil**, liga a **junção espinolaminar** (cortical anterior do arco posterior) de **C1** à de **C3**. É a linha azul da figura.\n- **Leitura:** a cortical anterior do arco posterior de **C2** deve ficar **a até ~2 mm** dessa linha. Um desvio maior sugere **lesão verdadeira**, como a fratura do enforcado na criança.\n\n### Por que existe\nNa **criança** (sobretudo até ~8 anos), é comum a ==pseudossubluxação fisiológica== de C2 sobre C3 (e de C3 sobre C4): um deslizamento anterior de alguns milímetros, por frouxidão ligamentar e facetas horizontais. A linha de Swischuk ajuda a diferenciar a pseudossubluxação da lesão real.\n\n### Outras linhas da junção craniocervical\n| Linha | Uso |\n|---|---|\n| **McGregor** | palato duro → occipital; o dente não deve passar muito acima (invaginação basilar) |\n| **McRae** | plano do **forame magno**; o dente deve ficar abaixo |\n| **Chamberlain** | palato duro → opístio |\n| **Wackenheim** | ao longo do **clivo**; deve tangenciar o dente por trás |\n| **Powers** | razão para a luxação atlanto-occipital |\n\n> **Na prova:** linha espinolaminar de C1 a C3 = ==Swischuk== (pseudossubluxação pediátrica).",
@@ -1876,19 +2188,42 @@
   "conferido": false
  },
  "coluna-0162": {
+  "conceito": "Numa fratura por explosão do atlas, as massas laterais de C1 podem se afastar para os lados. O ligamento transverso une essas massas passando por trás do dente; se o anel abre, essa faixa é tensionada. A regra de **Spence procura inferir lesão do transverso na fratura de C1**.\n\nNa incidência transoral, mede-se quanto a massa lateral de C1 ultrapassa C2 de cada lado e somam-se os dois deslocamentos. O valor clássico é maior que **6,9 mm**; o resumo também discute 8,1 mm após correção da ampliação radiográfica e o uso aproximado de 7 mm. Não é a medida do espaço anterior entre o arco de C1 e o dente, que é o ADI (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**A regra é um indício, não uma visualização do ligamento.** O próprio capítulo relata ruptura com deslocamentos menores e estudos sem correlação adequada entre deslocamento e integridade. Por isso uma soma pequena não exclui lesão; a ressonância complementa a avaliação mostrando diretamente o transverso.\n\nO alvo é importante porque a integridade do transverso muda a avaliação de estabilidade de C1. A presença de C2 como referência na medida não transforma o método numa regra para fratura do áxis.\n\n> **Na prova:** Spence relaciona afastamento das massas laterais de C1 à integridade do ligamento transverso.",
+  "correta": "**C: transverso na fratura de C1.** A explosão do anel afasta as massas laterais e tensiona o ligamento entre elas. A medida indireta deve ser integrada à avaliação ligamentar, e não usada isoladamente para excluir ruptura.",
   "incorretas": {
-   "A": "Os ligamentos alares, que vão do dente aos côndilos do occipital, seguram a rotação da cabeça. A regra de Spence não fala deles.",
-   "B": "Ligamento e osso errados. A regra mede o atlas, não o áxis, e avalia o transverso, não os alares.",
-   "D": "O ligamento está certo, mas a fratura analisada é a do atlas (C1). A medida depende justamente do afastamento das massas laterais de C1."
+   "A": "**Mantém C1 e troca o ligamento que a medida procura avaliar.** O transverso passa de uma massa lateral à outra atrás do dente e é tensionado pela abertura do anel. A regra não foi construída como teste direto dos alares.",
+   "B": "**Troca tanto a estrutura quanto a fratura-alvo.** A medida usa C2 como apoio de referência para o deslocamento de C1. Isso não significa que investigue o alar numa fratura de C2.",
+   "D": "**Acerta o ligamento e muda o osso lesionado.** A relação entre abertura das massas e transverso pertence à fratura do atlas, C1. A comparação com as massas de C2 é apenas o modo de medir a abertura."
   },
-  "conceito": "A fratura de Jefferson é o atlas, a primeira vértebra cervical, estourando como um anel. Acontece quando uma carga cai de cima sobre a cabeça, num mergulho em água rasa ou num capotamento: o crânio empurra as duas massas laterais do atlas para baixo e para fora, e o anel quebra em dois ou mais pontos.\n\nA pergunta que decide o tratamento é se o **ligamento transverso** aguentou. Ele é a faixa que passa por trás do dente do áxis e o prende contra o arco anterior do atlas. Se ele se rompeu, o atlas pode escorregar para a frente sobre o dente e apertar a medula. A fratura deixa de ser estável.\n\nEm 1970, Spence e colaboradores propuseram uma forma de estimar isso numa radiografia simples, a de boca aberta, que mostra o atlas sentado sobre o áxis. Mede-se quanto cada massa lateral do atlas \"transborda\" para fora do áxis e somam-se os dois lados. Se a soma passa de cerca de **6,9 mm** (a turma arredonda para 7), presume-se que o transverso rompeu. Essa é a **regra de Spence**.\n\nHoje ela é mais história do que prática. A tomografia mostra se houve arrancamento ósseo onde o ligamento se prende, e a ressonância vê o ligamento diretamente. Dickman dividiu as lesões em ruptura no meio do ligamento, que não cicatriza e vai para artrodese entre C1 e C2, e arrancamento ósseo, que pode consolidar com halo. Mas na prova a regra continua aparecendo, e a resposta é sempre a mesma: transverso, na fratura de C1.",
-  "correta": "Transverso, na fratura de C1. A regra de Spence soma o deslocamento lateral das massas do atlas na fratura de Jefferson para inferir se o ligamento transverso se rompeu.",
   "referencias": [
-   "Spence KF Jr, Decker S, Sell KW. Bursting atlantal fracture associated with rupture of the transverse ligament. J Bone Joint Surg Am. 1970;52(3):543-549.",
-   "Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery. 1996;38(1):44-50."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "97abb481cb5ef0e0be96d03213a6737928eccb470083fd0fb60cadd98d2b4efe"
+    }
+   ],
+   "questaoSha256": "c2aed8d00935ae68eef15bae53fc04b026d1ee9039ee2b9c0968e19f113f1041",
+   "comentarioSha256": "2918d675f620c33e83aa6f33ef929f3c582d36c36fdfdd9cfc1312e1313a03ea"
+  }
  },
  "coluna-0163": {
   "incorretas": {
@@ -2653,18 +2988,41 @@
   "conferido": false
  },
  "coluna-0238": {
+  "conceito": "Quando o pescoço inclina a cabeça para a frente e para trás, alguns segmentos contribuem mais que outros. Além da região occipitocervical citada no enunciado, a maior flexoextensão subaxial está em **C4–C5 e C5–C6**.\n\nO resumo descreve aproximadamente 20 graus de flexoextensão em cada um desses níveis. Em contraste, C1–C2 concentra cerca de metade da rotação axial, mas permite apenas cerca de 10 graus de flexoextensão. Assim, a resposta muda conforme o movimento que está sendo perguntado (Rockwood, 10ª ed., cap. 48, “O movimento: metade da rotação está em C1–C2”).\n\n**Dois níveis vizinhos não são equivalentes só por estarem próximos.** Cada opção desloca a dupla para cima ou para baixo; é preciso manter os dois segmentos com maior participação, e não reconhecer apenas C4–C5 ou apenas C5–C6 em uma alternativa parcialmente correta.\n\n> **Na prova:** maior flexoextensão subaxial em C4–C5 e C5–C6; grande rotação atlantoaxial é outro movimento.",
+  "correta": "**C: C4–C5 e C5–C6.** São os dois segmentos subaxiais apontados como de maior flexoextensão, cerca de 20 graus cada na descrição do resumo.",
   "incorretas": {
-   "A": "C2-C3 está entre os segmentos menos móveis da coluna cervical. O par de maior movimento fica mais abaixo.",
-   "B": "Inclui C4-C5, mas C3-C4 move menos que C5-C6. O par de maior amplitude está um nível abaixo.",
-   "D": "Inclui C5-C6, mas C6-C7 tem menor amplitude, por estar perto da transição com a coluna torácica, mais rígida."
+   "A": "**Desloca toda a dupla para cima.** C2–C3 e C3–C4 participam da mobilidade cervical, mas não são o par de maior flexoextensão descrito. A pergunta exige distribuição do movimento, não apenas segmentos móveis.",
+   "B": "**Acerta C4–C5 e substitui o outro nível.** A dupla de referência inclui C5–C6, não C3–C4. Uma opção com um componente correto ainda deixa de representar os dois níveis predominantes.",
+   "D": "**Mantém C5–C6 e desloca o outro para baixo.** Falta C4–C5 e entra C6–C7. A proximidade anatômica não autoriza transferir para esse último a mesma participação descrita para o par correto."
   },
-  "conceito": "Se você fizer \"sim\" com a cabeça bem devagar, prestando atenção, vai notar que o movimento começa lá em cima, logo abaixo do crânio. A articulação entre o occipital e o atlas tem superfícies em forma de taça e é a maior responsável pelo aceno da cabeça. Mas o pescoço também se dobra e se estende ao longo de todo o seu comprimento, e aí a pergunta é qual parte da coluna cervical baixa trabalha mais.\n\nA resposta são os segmentos **C4-C5** e **C5-C6**, com o pico em C5-C6. O C2-C3 é relativamente rígido, e o C6-C7, já perto da transição para a coluna torácica, que é presa às costelas, se move menos.\n\nEssa distribuição tem uma consequência que você vê todos os dias nas ressonâncias: os segmentos que mais se movem são os que mais se desgastam. C5-C6 é o campeão de espondilose, hérnia de disco e mielopatia, seguido de C6-C7 e C4-C5. Também é o nível mais operado. E quando um desses segmentos é fundido, o movimento que ele fazia passa para os vizinhos, que tendem a degenerar mais cedo; é a doença do nível adjacente, uma das razões para existir a prótese de disco cervical.\n\nSó para não misturar: a rotação, o \"não\", é outra história, concentrada no par C1-C2, que faz cerca de metade de toda a rotação do pescoço.",
-  "correta": "C4-C5 e C5-C6. São os segmentos subaxiais com maior amplitude de flexão e extensão, com o máximo em C5-C6.",
   "referencias": [
-   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Philadelphia: Lippincott; 1990."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-biomecanica-bb0e36ca"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "9a2704bb9cd41528f8c0106a2e1b67e19d5fc128be6294a027ab55f6492f1af0"
+    }
+   ],
+   "questaoSha256": "fceb8aeb2f2e2820802e42275ef1904960a4b617347b0929cb8a38cf6968e7e9",
+   "comentarioSha256": "f2b90883e0e1a090d51542f1669772083f0deed907b1fd24498fa0be3fb7d758"
+  }
  },
  "coluna-0239": {
   "incorretas": {
@@ -2890,18 +3248,44 @@
   "conferido": false
  },
  "coluna-0260": {
+  "conceito": "Depois do trauma, o paciente tem perda de força, dor e temperatura, mas ainda reconhece a posição de uma articulação com os olhos fechados. Esse contraste sugere **síndrome medular anterior**: as vias anteriores e laterais estão comprometidas, enquanto as colunas posteriores ficam relativamente preservadas.\n\nOs dois terços anteriores da medula correspondem ao território da artéria espinal anterior. Nessa região passam as vias motoras corticoespinhais e as espinotalâmicas de dor e temperatura. A propriocepção percorre as colunas dorsais, relacionadas à irrigação posterior, o que explica a preservação dessa modalidade no padrão clássico (Rockwood, 10ª ed., cap. 48, “As síndromes anterior e posterior”).\n\n**Preservar propriocepção não significa preservar toda a sensibilidade.** O paciente pode saber a posição do segmento e, ao mesmo tempo, ter perda dolorosa e térmica. É a separação entre modalidades que localiza a síndrome, e não uma simples soma de quantos membros estão fracos.\n\nNa hemissecção de Brown-Séquard, a propriocepção se perde do mesmo lado da fraqueza. Na síndrome posterior, o sentido se inverte: a propriocepção é a função comprometida, com força relativamente preservada. Essas comparações esclarecem os distratores.\n\n> **Na prova:** síndrome anterior compromete motor, dor e temperatura, preservando a propriocepção.",
+  "correta": "**C: comprometimento motor variável com propriocepção preservada.** É a combinação compatível com dano das vias anteriores e laterais e preservação das colunas posteriores.",
   "incorretas": {
-   "A": "Na síndrome anterior não há o gradiente entre membros superiores e inferiores. O padrão de diferença entre membros é o da síndrome central, e com os braços mais fracos.",
-   "B": "Perda motora e proprioceptiva de um lado só é a síndrome de Brown-Séquard, a hemissecção da medula.",
-   "D": "Perder o tato fino e manter a força seria a síndrome medular posterior, rara, que é o oposto da anterior."
+   "A": "**Usa predomínio entre membros como definidor.** O padrão anterior é reconhecido pela combinação de déficit motor com perda dolorosa e térmica, preservando posição articular. A fonte não o define por pernas necessariamente mais fracas que braços.",
+   "B": "**Descreve parte de uma hemissecção.** Perda unilateral de força e propriocepção acompanha a lesão do mesmo lado em Brown-Séquard. Na síndrome anterior clássica, a propriocepção é justamente a modalidade preservada.",
+   "D": "**Poupa a função que deveria estar comprometida.** A síndrome anterior envolve vias motoras, portanto preservação motora com perda tátil isolada não traduz o quadro. O distrator se aproxima da discussão de vias posteriores, não da anterior."
   },
-  "conceito": "Cada síndrome medular incompleta faz sentido quando se olha para um corte transversal da medula e se pergunta: que parte foi atingida e o que passa por ali?\n\nNa frente e dos lados ficam os tratos **corticoespinhais** (que levam o comando motor) e os **espinotalâmicos** (que levam dor e temperatura). Atrás ficam as **colunas posteriores**, que levam propriocepção (saber a posição das articulações sem olhar), vibração e tato fino. A irrigação acompanha essa divisão: uma única **artéria espinal anterior** nutre os dois terços anteriores da medula, e duas artérias espinais posteriores nutrem o terço posterior.\n\nA **síndrome medular anterior** é a lesão dos dois terços anteriores. Ela pode vir de uma compressão pela frente, como um fragmento ósseo ou um disco que entra no canal numa fratura em flexão, ou de isquemia da artéria espinal anterior (após cirurgia de aorta ou hipotensão grave). O resultado é perda **motora** abaixo do nível, que pode ir de fraqueza a paralisia completa, e perda da sensibilidade de **dor e temperatura**. O que sobra, e é a chave do diagnóstico, é a **propriocepção** e a vibração, porque as colunas posteriores foram poupadas.\n\nDas síndromes incompletas, é a de **pior prognóstico** motor. Para contrastar: a síndrome central dá fraqueza maior nos braços que nas pernas, e tem bom prognóstico; a Brown-Séquard divide o déficit por lado; e a rara síndrome posterior faz perder a propriocepção com a força preservada.",
-  "correta": "Comprometimento motor variável com preservação da propriocepção. A lesão atinge os tratos motores e espinotalâmicos da parte anterior da medula e poupa as colunas posteriores.",
   "referencias": [
-   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+      "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc",
+      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+      "a-medula-cervical-e-as-sindromes-incompletas-a7183487"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "437663062360615aa6f10cf4e077330d25c43d3efa2536766a27a3ad1a18e254"
+    }
+   ],
+   "questaoSha256": "a64481273f576889c38b6504038b7e5fd57c2abc9ac0608fade8b9dc7e8b1c15",
+   "comentarioSha256": "5c04923338009e2170b0292cc03506178777046689f34ab07a91d6f484e0dfd5"
+  }
  },
  "coluna-0261": {
   "incorretas": {
@@ -2962,18 +3346,43 @@
   "conferido": false
  },
  "coluna-0266": {
+  "conceito": "Após uma queda, o paciente tem fraqueza principalmente nos braços, sobretudo nas mãos. As alterações sensitivas e esfincterianas variam. Esse predomínio motor nos membros superiores é a pista mais característica de **síndrome medular central**.\n\nA lesão é cervical, mas os quatro membros não precisam perder força na mesma intensidade. O resumo descreve pior função dos braços e das mãos, com eventual alteração das pernas, da bexiga e do intestino. O cenário clássico é o idoso com canal estreito após hiperextensão; o enunciado aqui não informa idade nem exige que se invente uma (Rockwood, 10ª ed., cap. 48, “Síndrome medular central”).\n\nPara separar as outras síndromes, procure o eixo da dissociação. Na anterior, força, dor e temperatura se alteram com propriocepção preservada. Na posterior, a propriocepção sofre, mas a força é preservada. Na hemissecção, a diferença decisiva é entre lados: fraqueza e propriocepção ipsilaterais, dor e temperatura contralaterais.\n\n**A mão fraca não deve ser analisada sozinha.** O conjunto motor, sensitivo e esfincteriano pede avaliação medular; é diferente de atribuir cada dedo fraco a uma raiz sem comparar braços e pernas.\n\n> **Na prova:** fraqueza desproporcional de braços e mãos é a pista da síndrome central.",
+  "correta": "**A: medular central.** O predomínio da fraqueza nos membros superiores, especialmente nas mãos, reproduz o padrão motor descrito. Alterações sensitivas e esfincterianas variáveis são compatíveis.",
   "incorretas": {
-   "B": "A síndrome medular anterior tira a força e a sensibilidade de dor e temperatura abaixo da lesão, sem predomínio dos braços, e poupa a propriocepção.",
-   "C": "A síndrome medular posterior, rara, faz perder a propriocepção e preserva a força. O enunciado descreve o contrário.",
-   "D": "A hemissecção lateral (Brown-Séquard) divide o déficit por lado: motor e propriocepção do mesmo lado da lesão, dor e temperatura do lado oposto, sem predomínio dos membros superiores."
+   "B": "**Troca a dissociação entre membros por uma entre modalidades sensitivas.** A síndrome anterior combina perda motora, dolorosa e térmica com posição articular preservada. Essa não é a característica que organiza o caso apresentado.",
+   "C": "**Não explica a fraqueza predominante descrita.** Na posterior, a propriocepção é comprometida com força relativamente preservada. A dificuldade motora importante de mãos e braços conduz em outra direção.",
+   "D": "**Exigiria um padrão entre lados do corpo.** Na hemissecção, motor e propriocepção se perdem ipsilateralmente e dor e temperatura contralateralmente. O enunciado distingue membros superiores e inferiores, sem fornecer essa lateralização."
   },
-  "conceito": "O enunciado entrega a pista que importa: **mãos e braços muito mais fracos que as pernas**. Esse é o retrato da **síndrome medular central**, a mais comum das lesões medulares incompletas.\n\nO paciente clássico é um idoso com artrose cervical. Osteófitos na frente, ligamento amarelo espesso atrás, e um canal já apertado. Numa queda, o pescoço vai para trás com força, em hiperextensão, e a medula é espremida entre essas estruturas. Muitas vezes a radiografia não mostra fratura nenhuma. Na queda de altura do enunciado, o mecanismo pode ser outro, mas o padrão neurológico é o mesmo e é ele que define o diagnóstico.\n\nPor que os braços sofrem mais? A explicação clássica dizia que, no trato corticoespinhal lateral, as fibras para as mãos ficam mais perto do centro da medula, onde a lesão é maior. Hoje se dá mais peso a dois outros fatos: a lesão da substância cinzenta central atinge os neurônios motores do próprio segmento cervical, que comandam os membros superiores, e o trato corticoespinhal é especialmente importante para os movimentos finos da mão. Seja qual for a explicação, o resultado clínico é o descrito. A sensibilidade e a bexiga ficam alteradas em graus variáveis.\n\nO prognóstico é relativamente bom. A recuperação costuma seguir uma ordem: primeiro as pernas, depois a bexiga, depois os braços, e as mãos por último, muitas vezes de forma incompleta. A idade avançada piora o resultado.\n\nAs outras síndromes têm marcas diferentes: a anterior tira força e sensibilidade de dor e temperatura e poupa a propriocepção; a posterior faz o contrário; e a Brown-Séquard divide o déficit por lado do corpo.",
-  "correta": "Medular central. O déficit motor predominante nos membros superiores, principalmente nas mãos, com sensibilidade e esfíncteres comprometidos em grau variável, é o padrão dessa síndrome.",
   "referencias": [
-   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+      "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "8cfb4c0b8f3c0a5a64a718e4422fc4e3f50ff5c615cee5d2dc9f479ccc4c9949"
+    }
+   ],
+   "questaoSha256": "a66fc942ca92b7625cb9524657cb536d0bdee20a500c48a2ef0410c40caa7e7f",
+   "comentarioSha256": "fa908c736c7b575f4ad1192be5d4ac1834655948b56b776e6c2ac1d955407eb5"
+  }
  },
  "coluna-0268": {
   "incorretas": {
@@ -3061,18 +3470,41 @@
   "conferido": false
  },
  "coluna-0277": {
+  "conceito": "Um idoso chega depois de uma queda com o pescoço forçado para trás. As pernas ainda trabalham melhor do que os braços, e usar as mãos ficou especialmente difícil. Esse é o cenário clássico da **síndrome centromedular após hiperextensão**.\n\nO resumo relaciona essa apresentação ao canal estreito da coluna cervical espondilótica. A tetraparesia pode envolver os quatro membros, mas o déficit é maior nos superiores; sensibilidade e função esfincteriana também podem se alterar. Nem toda lesão medular exige uma fratura visível: a descrição admite o quadro sem fratura, luxação ou lesão ligamentar demonstrada (Rockwood, 10ª ed., cap. 48, “Síndrome medular central”).\n\nNa questão, mecanismo e distribuição precisam ser julgados separadamente. Uma alternativa pode acertar que os braços sofrem mais e errar a direção do trauma, ou acertar hiperextensão e inverter os membros. Associar as duas pistas evita responder apenas pela palavra “idoso”.\n\n> **Na prova:** hiperextensão no idoso com fraqueza maior nos membros superiores é o par clássico da síndrome central.",
+  "correta": "**C: hiperextensão e tetraparesia maior nos membros superiores.** Essa é a combinação descrita para o paciente idoso com estreitamento cervical prévio; o déficit das mãos pode ser particularmente evidente.",
   "incorretas": {
-   "A": "A distribuição do déficit está certa, mas o mecanismo não: a síndrome centromedular do idoso decorre de hiperextensão, e não de hiperflexão.",
-   "B": "Erra o mecanismo e a distribuição. A síndrome centromedular vem da hiperextensão e afeta mais os membros superiores.",
-   "D": "O mecanismo está certo, mas a síndrome centromedular afeta mais os membros superiores, e não os inferiores."
+   "A": "**Preserva a distribuição e altera o mecanismo clássico.** Braços mais fracos que pernas combinam com síndrome central, porém o trauma típico do idoso é em hiperextensão. Acertar uma metade não valida a opção inteira.",
+   "B": "**Inverte os dois componentes.** Hiperflexão e predomínio da fraqueza nas pernas não reproduzem o quadro central clássico apresentado no resumo. A alternativa exige rejeitar a combinação, não apenas uma palavra isolada.",
+   "D": "**Acerta a direção do trauma e troca a distribuição.** Na apresentação central típica, os membros superiores sofrem mais. As pernas podem ter déficit, mas o predomínio inferior não é o padrão solicitado."
   },
-  "conceito": "O cenário é tão típico que vale guardar a cena. Uma pessoa idosa tropeça e cai de frente, batendo a testa ou o rosto no chão. Na emergência, há uma escoriação na testa, e ela não consegue fechar as mãos direito, embora mexa as pernas.\n\nA escoriação na testa conta o mecanismo: o pescoço foi jogado para trás, em **hiperextensão**. Esse idoso tem espondilose cervical, com osteófitos e disco abaulado na frente do canal. Quando o pescoço se estende, o ligamento amarelo, que fica atrás da medula, pregueia e se projeta para dentro do canal. A medula fica pinçada entre a frente e o fundo, como num alicate. Muitas vezes a radiografia não mostra fratura nem luxação.\n\nO dano se concentra no centro da medula, e o resultado é a **síndrome centromedular**: tetraparesia que afeta **mais os membros superiores** que os inferiores, pior nas mãos, com sensibilidade e bexiga alteradas em graus variáveis. É a síndrome medular incompleta mais comum.\n\nO tratamento começa, na maioria das vezes, sem cirurgia: imobilização, manutenção de uma pressão arterial média mais alta nos primeiros dias para proteger a medula, e reabilitação. A descompressão cirúrgica é indicada quando há compressão persistente, instabilidade ou quando a recuperação para de evoluir, e há uma tendência atual de operar mais cedo. O prognóstico é relativamente bom para a marcha, mas as mãos costumam ficar com alguma sequela.\n\nA flexão não é o mecanismo dessa síndrome. Lesões em flexão com compressão da frente da medula tendem a produzir a síndrome medular anterior.",
-  "correta": "Hiperextensão, com tetraparesia que afeta mais os membros superiores. No idoso com canal estreito, a hiperextensão pinça a medula entre osteófitos e ligamento amarelo e lesa sua porção central.",
   "referencias": [
-   "Herkowitz HN, Garfin SR, Eismont FJ, Bell GR, Balderston RA (eds). Rothman-Simeone The Spine. 6th ed. Philadelphia: Saunders; 2011."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "A medula cervical e as síndromes incompletas"
+     ],
+     "blocos": [
+      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "9c802eede2a4a59d731df1cb1da786a681d82e6777b060f179c2e29ea17f150a"
+    }
+   ],
+   "questaoSha256": "157562cc7a9210eaaa42c1c7370f52038d3e38598cd41a457f49a82229accc58",
+   "comentarioSha256": "2f0b801b9b3ac2203301bb4e7aced3e73b1f87f4c419ab6a49cd3bf46a6edef5"
+  }
  },
  "coluna-0278": {
   "incorretas": {
@@ -3384,18 +3816,44 @@
   "conferido": false
  },
  "coluna-0297": {
+  "conceito": "Na imagem de uma lesão cervical baixa, o canto anteroinferior do corpo parece uma gota destacada e o restante da vértebra pode estar deslocado para trás. Esse padrão clássico de **teardrop em flexão** resulta de **flexão-compressão**.\n\nA carga comprime o corpo enquanto o segmento flete; o traço oblíquo forma o fragmento anterior, e a deformidade pode vir com retrolistese e ruptura do complexo posterior. Por isso o tamanho aparentemente pequeno da “gota” não traduz sozinho a gravidade da lesão. No resumo, a teardrop em flexão corresponde ao estágio 3 ou superior da sequência de compressão-flexão de Allen e Ferguson (Rockwood, 10ª ed., cap. 48, “Fratura em gota de lágrima em flexão”).\n\n**Há também uma teardrop em extensão, mas é outro padrão.** É uma pequena avulsão anteroinferior descrita no idoso, estável se não houver cifose. O uso da mesma palavra para o formato do fragmento não torna os mecanismos equivalentes. Nesta pergunta clássica da cervical baixa, a associação cobrada é a compressão-flexão.\n\nNa prática, alinhamento, disco, ligamentos e déficit precisam ser avaliados; não se decide estabilidade apenas por reconhecer uma silhueta em gota.\n\n> **Na prova:** teardrop em flexão é flexão-compressão; a avulsão em extensão deve ser distinguida.",
+  "correta": "**B: flexão-compressão.** É o mecanismo da teardrop clássica em flexão da coluna cervical baixa, com fragmento do corpo e possibilidade de retrolistese e dano posterior.",
   "incorretas": {
-   "A": "A flexão-distração produz as luxações facetárias uni e bilaterais da coluna cervical baixa, e não a fratura teardrop.",
-   "C": "A extensão-distração rompe o disco e o ligamento longitudinal anterior e pode arrancar pequenos fragmentos, como na teardrop de extensão de C2, que é outra lesão, geralmente estável.",
-   "D": "A extensão-compressão fratura os elementos posteriores, como a lâmina, a massa articular e o processo espinhoso."
+   "A": "**É a família das lesões facetárias por abertura posterior.** Em Allen e Ferguson, distração-flexão progride de subluxação para luxação unilateral e bilateral. A teardrop do corpo pertence à compressão-flexão.",
+   "C": "**Muda o padrão para abertura anterior em extensão.** Distração-extensão é descrita com alargamento anormal do disco e possível avulsão anterior. Não corresponde ao mecanismo da teardrop em flexão perguntada.",
+   "D": "**Desloca a carga para a sequência de extensão.** Compressão-extensão começa com fraturas do arco posterior e pode progredir para lesões bilaterais. Não é a sequência que produz a teardrop clássica do corpo em flexão."
   },
-  "conceito": "O nome **teardrop** (lágrima, em inglês) vem do fragmento triangular que se solta do canto anteroinferior do corpo vertebral e que, na radiografia em perfil, lembra uma gota. Mas existem duas lesões com esse nome, e elas são quase opostas em gravidade.\n\nA **teardrop de flexão** da coluna cervical baixa (C3 a C7) é a que a questão pergunta. O mecanismo é **flexão com compressão axial**: o exemplo clássico é o mergulho em água rasa, em que a cabeça bate no fundo com o pescoço dobrado. A vértebra é esmagada pela frente, solta o fragmento triangular anteroinferior, e o **restante do corpo vertebral é empurrado para trás**, para dentro do canal. O disco e os ligamentos de trás se rompem. É uma lesão das três colunas, **muito instável**, com alta taxa de lesão medular, classicamente a síndrome medular anterior. Na classificação de Allen e Ferguson, corresponde aos estágios mais graves da flexão-compressão. O tratamento é cirúrgico, em geral com retirada do corpo vertebral (corpectomia) por via anterior e artrodese, às vezes associada a fixação posterior.\n\nA **teardrop de extensão**, típica de C2, é outra lesão: na hiperextensão, o ligamento longitudinal anterior arranca um pequeno fragmento da borda anteroinferior, geralmente mais alto que largo. Costuma acontecer em idosos que caem e é, em geral, estável.\n\nAs outras combinações de mecanismo produzem lesões diferentes: a flexão-distração causa luxações facetárias; a extensão-compressão fratura os elementos posteriores, como lâmina e massa articular.",
-  "correta": "Flexão-compressão. A carga axial com o pescoço fletido esmaga a frente do corpo vertebral, solta o fragmento anteroinferior e empurra o restante do corpo para dentro do canal.",
   "referencias": [
-   "Allen BL Jr, Ferguson RL, Lehmann TR, O'Brien RP. A mechanistic classification of closed, indirect fractures and dislocations of the lower cervical spine. Spine. 1982;7(1):1-27."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Compressão, explosão e teardrop; Coluna subaxial: classificações e estabilidade."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Compressão, explosão e teardrop",
+      "Coluna subaxial: classificações e estabilidade"
+     ],
+     "blocos": [
+      "compressao-explosao-e-teardrop-13a89876",
+      "compressao-explosao-e-teardrop-a3e0c6bc",
+      "coluna-subaxial-classificacoes-e-estabilidade-8a83b113"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "df3152a68f4658de7f42989942558a2366f84c7518a99a99f7b3ba2ff3ddf45f"
+    }
+   ],
+   "questaoSha256": "ee2db923811cd832ad599157c3d03a00e4b47e62884e91ac61925df50e3e692e",
+   "comentarioSha256": "83c0d62b201fee1a8aa9280b8ba7f8305d0d62dce2ad3b79f16481260fe038fa"
+  }
  },
  "coluna-0298": {
   "conceito": "Na desaceleração com um cinto abdominal como apoio, o tronco pode dobrar em torno de um fulcro anterior à coluna. A parte posterior se abre em tração: é a lógica da **fratura de Chance**, uma lesão por flexão-distração associada a lesões abdominais.\n\nNa forma **B1**, o traço atravessa uma única vértebra pelo osso, de trás para a frente, sem atingir o disco. O eixo fica **à frente do corpo vertebral**, onde o cinto atua sobre o abdome. A posição do fulcro liga a lesão vertebral à visceral e vascular; por isso reconhecer a fratura deve levar à procura de lesão abdominal, e não apenas ao tratamento da coluna (resumo do Rockwood, 10ª ed., cap. 49, “Flexão-distração e fratura de Chance”).\n\nA B2 também envolve a banda de tensão posterior, mas no nível intervertebral, com componente ligamentar e possível compressão ou explosão associada. Convém manter essa distinção: a Chance B1 da classificação revisada é transóssea, não um nome indistinto para toda ruptura ligamentar posterior.\n\n> **Na prova:** Chance liga flexão-distração ao abdome pelo fulcro anterior. No resumo da Biblioteca, compare B1, B2 e os respectivos mecanismos.",
@@ -3512,18 +3970,42 @@
   "conferido": false
  },
  "coluna-0304": {
+  "conceito": "Na luxação unifacetária, uma articulação posterior perdeu sua relação enquanto a outra não sofreu a mesma luxação. Na classificação de **Allen e Ferguson**, esse padrão pertence à **distração-flexão, estágio 2**.\n\nPense no que se abre durante o mecanismo: a flexão com distração compromete a contenção posterior e progride de uma alteração facetária para luxações mais extensas. No estágio 1 há subluxação facetária e afastamento dos espinhosos; no estágio 2, luxação unilateral; no estágio 3, bilateral, com translação de aproximadamente 50%; no estágio 4, translação de 100% (Rockwood, 10ª ed., cap. 48, “Allen e Ferguson: o mecanismo”).\n\n**Compressão-flexão é outra sequência.** Seus primeiros estágios descrevem deformações do corpo vertebral: arredondamento da margem anterossuperior no primeiro e aspecto em bico no segundo. A fratura em gota de lágrima aparece a partir do terceiro. Portanto, reconhecer flexão sem decidir se há compressão ou distração não basta.\n\nA classificação dá uma linguagem para descrever o padrão; o próprio resumo lembra limitações de validação. No paciente real, a avaliação de disco, ligamentos, alinhamento e estado neurológico continua necessária para a conduta.\n\n> **Na prova:** luxação facetária unilateral é distração-flexão 2; bilateral é distração-flexão 3.",
+  "correta": "**B: flexão-distração estágio 2.** A presença de luxação de uma faceta situa o padrão acima da subluxação do estágio 1 e antes da luxação bilateral do estágio 3.",
   "incorretas": {
-   "A": "O estágio 1 da flexão-distração é a entorse facetária, uma subluxação em que as facetas se afastam sem saltar uma sobre a outra.",
-   "C": "A flexão-compressão acomete o corpo vertebral, e seu estágio 1 é um arredondamento da borda anterossuperior, sem luxação facetária.",
-   "D": "O estágio 2 da flexão-compressão também é uma lesão do corpo vertebral, com perda de altura anterior em bico, e não uma luxação."
+   "A": "**Para um estágio antes da luxação unilateral.** No estágio 1 de distração-flexão há subluxação e afastamento interespinhoso. A palavra “luxação” unifacetária leva ao estágio 2 da mesma sequência.",
+   "C": "**Troca mecanismo e estrutura predominante.** Compressão-flexão 1 descreve arredondamento da margem anterossuperior do corpo vertebral. Não é o estágio da perda unilateral de relação facetária.",
+   "D": "**Acerta o número, mas não a família.** O estágio 2 de compressão-flexão apresenta aspecto em bico do corpo, às vezes com traço sagital. O estágio 2 que contém a luxação unifacetária é o de distração-flexão."
   },
-  "conceito": "Em 1982, Allen e Ferguson analisaram centenas de lesões da coluna cervical baixa (C3 a C7) e as organizaram pelo **mecanismo** que as produziu: a posição do pescoço no momento do trauma (flexão ou extensão) e a força dominante (compressão ou distração). Dentro de cada mecanismo, as lesões vão em **estágios** crescentes de gravidade, como se a mesma força fosse aumentando e destruindo cada vez mais.\n\nNa **flexão-distração**, o pescoço é dobrado para a frente enquanto a parte de trás da coluna é estirada. As estruturas posteriores, que são as que estão sendo alongadas, falham primeiro, e a vértebra de cima vai deslizando para a frente sobre a de baixo. No **estágio 1**, as facetas se afastam sem perder o contato: é uma entorse facetária, uma subluxação. No **estágio 2**, uma das facetas de cima pula por cima da de baixo e fica travada na frente dela: é a **luxação unifacetária**, com deslizamento de cerca de 25% do corpo vertebral, geralmente com rotação associada. No **estágio 3**, as duas facetas saltam: luxação bifacetária, com deslizamento de cerca de 50%. No **estágio 4**, a vértebra de cima se desloca o corpo inteiro para a frente.\n\nA luxação unifacetária costuma lesar mais a raiz do lado da faceta travada do que a medula, enquanto a bifacetária tem alta taxa de lesão medular. A redução é feita com tração ou cirurgia, e a ressonância antes da redução ajuda a identificar disco herniado para dentro do canal, que pode comprimir a medula durante a manobra.\n\nA **flexão-compressão** é outro mecanismo: ela esmaga o corpo vertebral pela frente e, nos estágios avançados, produz a fratura em lágrima (teardrop).",
-  "correta": "Flexão-distração estágio 2. Na escala de Allen e Ferguson, a luxação de uma faceta, com deslizamento de cerca de 25% do corpo, é o segundo estágio do mecanismo de flexão-distração.",
   "referencias": [
-   "Allen BL Jr, Ferguson RL, Lehmann TR, O'Brien RP. A mechanistic classification of closed, indirect fractures and dislocations of the lower cervical spine. Spine. 1982;7(1):1-27."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
   ],
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-29b5888a",
+      "coluna-subaxial-classificacoes-e-estabilidade-8a83b113"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "746663b84dc7ff5104330a2f77fb53fd7936b02a4b6d285760194a4d71ac6844"
+    }
+   ],
+   "questaoSha256": "b2e2dbe2ef3ce198c84931444eb4043c1cb8564b686bbad95e7c825eb4461770",
+   "comentarioSha256": "15ec9813345d8f8d2c11fcfb5278eb7d46e8d561cd6486ce08b248c5753ac258"
+  }
  },
  "coluna-0305": {
   "conceito": "A distração é o padrão em que a coluna **se abre em tração**, com falha da banda de tensão. No TLICS, esse padrão recebe **4 pontos**, o maior valor entre os itens oferecidos. Translação, lesão do complexo ligamentar posterior e lesão da cauda equina recebem 3 em seus respectivos domínios.\n\nO TLICS, de Vaccaro, soma **morfologia, integridade do complexo ligamentar posterior e estado neurológico**. Na morfologia, a progressão é compressão 1, explosão 2, translação/rotação 3 e distração 4. A pontuação exprime o peso de cada achado na decisão, não uma simples contagem de fragmentos (resumo do Rockwood, 10ª ed., cap. 49, “O TLICS: a classificação que vira conduta”).\n\nÉ preciso distinguir **maior item isolado** de **escore total**. Depois de escolher a morfologia, somam-se os outros domínios: até 3 orienta tratamento não cirúrgico, 4 é zona de decisão individual e 5 ou mais orienta cirurgia. Assim, saber que a distração vale 4 não encerra a avaliação de um paciente real.\n\nO quadro do TLICS no resumo da Biblioteca reúne a soma e ajuda a evitar trocar o valor do item pelo limiar de conduta.",
@@ -3848,20 +4330,44 @@
   "conferido": false
  },
  "coluna-0323": {
-  "conceito": "**Instabilidade clínica da coluna cervical subaxial (White e Panjabi).** White e Panjabi definiram instabilidade clínica como a perda da capacidade da coluna de, sob cargas fisiológicas, manter as relações entre as vértebras de modo a não lesar a medula ou as raízes, não gerar deformidade incapacitante e não causar dor incapacitante.\n\n**Critérios radiográficos clássicos (coluna cervical de C2 a C7).**\n- **Translação sagital** de uma vértebra sobre a outra **maior que 3,5 mm** (ou acima de 20% do diâmetro anteroposterior do corpo vertebral).\n- **Angulação sagital** relativa entre segmentos vizinhos **maior que 11 graus** (em relação ao segmento adjacente).\n- Nas radiografias dinâmicas (flexão e extensão), deslocamentos acima de cerca de 3,5 mm também indicam instabilidade.\n\n**Por que esses valores.** Estudos biomecânicos em cadáver mostraram que esses limites correspondem à falha dos elementos anteriores ou posteriores; além deles, a coluna perde a capacidade de proteger a medula sob cargas fisiológicas.\n\n**Escala de pontuação (checklist) de White e Panjabi.** Soma pontos para elementos anteriores ou posteriores destruídos, translação acima de 3,5 mm, angulação acima de 11 graus, teste de estiramento positivo, lesão medular ou radicular, estreitamento discal anormal e cargas perigosas antecipadas. Cinco pontos ou mais indicam instabilidade.\n\n**Hoje.** Classificações como a SLIC (morfologia, complexo discoligamentar e estado neurológico) e a AO Spine subaxial orientam o tratamento, mas os critérios de White e Panjabi continuam sendo referência conceitual.\n\n> Coluna cervical subaxial instável: translação sagital acima de 3,5 mm ou angulação acima de 11 graus.",
-  "correta": "**B: 3,5 mm (resposta pela bibliografia).** Pelos critérios de White e Panjabi, a translação sagital de uma vértebra cervical sobre a vizinha maior que 3,5 mm (ou acima de 20% do diâmetro do corpo) indica instabilidade clínica. A angulação acima de 11 graus em relação ao segmento vizinho é o critério angular correspondente.",
+  "conceito": "Na imagem em perfil, dois corpos cervicais perderam o alinhamento e um ficou transladado em relação ao outro. Segundo o critério de White e Panjabi cobrado aqui, uma **translação sagital maior que 3,5 mm** sugere instabilidade.\n\nA medida compara as linhas que prolongam as paredes posteriores dos corpos. Ela descreve quanto um nível se deslocou em relação ao vizinho, e não quanto mede uma fratura ou o espaço entre C1 e o dente. O resumo a apresenta como medida reprodutível na radiografia e na tomografia (Rockwood, 10ª ed., cap. 48, “White e Panjabi: 3,5 mm e 11 graus”).\n\nO outro número importante da mesma seção é **cifose segmentar maior que 11 graus**, que sugere lesão do complexo ligamentar posterior. São dois tipos de deformidade: deslocamento linear em milímetros e angulação em graus. Acertar um número com a unidade errada muda completamente o critério.\n\nA medida é um sinal de gravidade e deve ser integrada ao estado neurológico e às lesões ósseas, discais e ligamentares. A questão não fornece dados para escolher uma cirurgia específica.\n\n> **Na prova:** translação sagital maior que 3,5 mm; angulação cifótica maior que 11 graus.",
+  "correta": "**B: 3,5 mm.** É a resposta sustentada pelo resumo e já registrada como bibliográfica no acervo; não há gabarito oficial registrado para este item. O limiar refere-se à translação relativa subaxial.",
   "incorretas": {
-   "A": "**2 mm** é um deslocamento pequeno, que pode ocorrer por frouxidão fisiológica, especialmente em crianças (pseudossubluxação de C2 sobre C3). Não define instabilidade.",
-   "C": "**5 mm** é um valor acima do limite clássico; usar esse corte deixaria de reconhecer lesões instáveis.",
-   "D": "**7 mm** lembra o critério da regra de Spence para a fratura de Jefferson (afastamento das massas laterais de C1, cerca de 6,9 mm), que é outra situação."
+   "A": "**Antecipa o limiar solicitado.** Dois milímetros não é o corte de translação apresentado por White e Panjabi nessa seção. Não se deve substituir o número por limites usados para outras distâncias cervicais.",
+   "C": "**Exige um deslocamento maior do que o necessário para preencher o critério.** A partir de mais de 3,5 mm já existe o sinal descrito. Esperar ultrapassar 5 mm perderia casos que já satisfazem o limiar perguntado.",
+   "D": "**Atrasa ainda mais o reconhecimento da instabilidade.** Sete milímetros é superior ao corte subaxial de 3,5 mm. Valores próximos de 7 mm aparecem na regra de Spence, que mede outro deslocamento e em outra região."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1606.",
-   "White AA 3rd, Johnson RM, Panjabi MM, Southwick WO. Biomechanical analysis of clinical stability in the cervical spine. Clin Orthop Relat Res. 1975;(109):85-96."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Atlas, ligamento transverso e instabilidade C1–C2."
   ],
+  "conferido": false,
   "provavel": "B",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade",
+      "Atlas, ligamento transverso e instabilidade C1–C2"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "d5ee803e01c84281ca14d5a55faf54ed41b30d8b3a5fd090ae0295908894274b"
+    }
+   ],
+   "questaoSha256": "d2bf6e75bb58d7398008dba6f68434ef922e5deb32bd19f0ef4368f66c32f28f",
+   "comentarioSha256": "bb913dec90d96cc60812770b44e8c11315e535a7559786a978ec5f318cfc1e7c"
+  }
  },
  "coluna-0324": {
   "conceito": "**Acesso transoral à coluna cervical alta.** É a via que dá acesso **direto à face anterior** da junção craniovertebral (clivo inferior, arco anterior de C1, odontoide e corpo de C2), indicada para descompressão ventral (impressão basilar, artrite reumatoide com pannus irredutível, tumores, pseudartrose do odontoide com compressão).\n\n**A técnica.** Com abridor de boca, retraem-se a língua e o palato mole (às vezes dividido); incisa-se a **parede posterior da orofaringe** na linha média, afastando os músculos longos do pescoço e da cabeça, e expõem-se C1 e C2. Ao final, a faringe é suturada em camadas.\n\n**Por que a infecção é a complicação mais grave.** A via atravessa a **orofaringe**, um campo **contaminado** pela flora oral (estreptococos, anaeróbios, gram-negativos). Consequências possíveis:\n- **Infecção da ferida e deiscência** da sutura faríngea.\n- **Abscesso retrofaríngeo**, com risco de obstrução de via aérea e mediastinite.\n- **Meningite**, sobretudo se houver **fístula liquórica** (abertura inadvertida da dura em campo contaminado), complicação potencialmente fatal.\n- Osteomielite e falha de enxertos e implantes.\n\n**Prevenção.** Higiene oral e culturas pré-operatórias, antissepsia, antibiótico de amplo espectro, sutura cuidadosa, sonda nasoenteral (alimentação sem contato com a ferida), traqueostomia ou intubação prolongada em casos selecionados. Crockard descreveu a técnica e os cuidados que reduziram essas complicações.\n\n**Outras complicações.**\n\n| Complicação | Comentário |\n|---|---|\n| Edema de língua e faringe | Comum, resolve; risco para via aérea |\n| Insuficiência velofaríngea | Voz nasalada após divisão do palato |\n| Lesão do hipoglosso | Rara pela via mediana |\n| Instabilidade | A ressecção do odontoide e do arco de C1 frequentemente exige artrodese posterior |\n\n> Acesso transoral: campo contaminado; infecção (com risco de meningite) é a complicação mais grave.",
@@ -4271,17 +4777,43 @@
   "conferido": false
  },
  "coluna-0352": {
+  "conceito": "Uma fratura tipo II do odontoide pode continuar sem união óssea mesmo depois de imobilizada. A afirmação é compatível com o resumo: **pseudartrose é uma preocupação importante no tratamento não cirúrgico do tipo II**.\n\nNa classificação de Anderson e D’Alonzo, o tipo II atravessa a cintura, na junção entre o dente e o corpo de C2. O tipo III entra no osso esponjoso do corpo, e os resultados de consolidação com imobilização são melhores. Essa diferença impede tratar todos os traços do odontoide como se tivessem o mesmo comportamento (Rockwood, 10ª ed., cap. 48, “Por que o tipo II não consolida, e o tratamento sem cirurgia”).\n\nAs séries citadas variam: uma encontrou 66% de consolidação do tipo II no halo, outra menos de 50%, e uma série de fraturas de C2 registrou pseudartrose do tipo II perto de 30%. Não são porcentagens intercambiáveis nem uma taxa universal aplicável a qualquer paciente.\n\n**Risco de pseudartrose não torna cirurgia obrigatória em todo tipo II.** O resumo admite tratamento externo em casos selecionados e observa que alguns idosos alcançam estabilidade fibrosa mesmo sem união óssea. Desvio, alinhamento, condição clínica e demanda mudam a decisão.\n\n> **Na prova:** o tipo II tem risco relevante de pseudartrose no tratamento conservador; isso não elimina a seleção individual da conduta.",
+  "correta": "**A: Certo.** A alta ocorrência de falta de união do tipo II está sustentada pelas séries do resumo. A resposta é bibliográfica, pois não há gabarito oficial registrado.",
   "incorretas": {
-   "B": "**Errado corresponderia melhor a uma fratura tipo III estável.** Ao estender-se pelo corpo de C2, ela costuma oferecer maior superfície esponjosa para consolidação do que o tipo II."
+   "B": "**Negaria um problema bem documentado do tipo II.** O fato de alguns pacientes consolidarem, ou de uma pseudartrose fibrosa ser estável, não apaga o risco. Também não se pode transferir para a cintura do dente as taxas mais favoráveis do tipo III no corpo esponjoso."
   },
-  "conceito": "**Classificação de Anderson e D'Alonzo.** Tipo I é avulsão da ponta do odontóide; tipo II atravessa sua base, na junção com o corpo de C2; tipo III prolonga-se pelo corpo vertebral. A localização do tipo II deixa pequena área de contato ósseo e é associada a maior risco de falha de consolidação.\n\n**Por que não une com facilidade.** Desvio, angulação, idade avançada, cominuição e dificuldade de manter redução também podem contribuir. Estudos de tratamento não operatório mostram que a morfologia tipo II aumenta a probabilidade de pseudartrose em relação a outros padrões. A taxa exata varia com seleção de pacientes e método de imobilização.\n\n**Tratamento individualizado.** Colar rígido ou halo pode ser usado em casos selecionados, com vigilância da redução e da consolidação. Fixação por parafuso anterior ou artrodese posterior C1-C2 são opções quando risco mecânico, sintomas ou contexto clínico justificam cirurgia. Na pessoa idosa, risco da operação, tolerância à imobilização e estabilidade de eventual união fibrosa entram na decisão.",
-  "correta": "**Certo: o tipo II tem maior propensão à pseudartrose.** A fratura na base do odontóide consolida pior sob tratamento não cirúrgico do que os padrões mais favoráveis.",
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, vol. 2, p. 1485."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
   ],
+  "conferido": false,
   "provavel": "A",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-odontoide-c2-623f1b6d",
+      "fratura-do-odontoide-c2-bc203da4",
+      "fratura-do-odontoide-c2-e392c5c7",
+      "fratura-do-odontoide-c2-b73258e7"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "11709a14e53090f7f2afc0daca485a03c85342e70429750202361a3e8df9885e"
+    }
+   ],
+   "questaoSha256": "aa799684b75f0915a6391d399127d6686669608cdd0f4637583b9ccf34a163ac",
+   "comentarioSha256": "eeb2246c455e872bd55b278295a98aa77f59865a4f47d493ddddf47df8c262b7"
+  }
  },
  "coluna-0353": {
   "incorretas": {
@@ -4297,17 +4829,42 @@
   "conferido": false
  },
  "coluna-0354": {
+  "conceito": "Na luxação bifacetária cervical baixa, as duas articulações posteriores perderam a relação e o corpo vertebral pode avançar cerca de metade de sua largura. Essa descrição corresponde à **distração-flexão, estágio 3 de Allen e Ferguson**.\n\nA sequência mostra como a contenção posterior falha: no primeiro estágio há subluxação e afastamento interespinhoso; no segundo, luxação de uma faceta; no terceiro, luxação das duas, com translação de aproximadamente 50%; no quarto, a translação chega a 100%. O número descreve deslocamento relativo do corpo, não porcentagem de lesão medular (Rockwood, 10ª ed., cap. 48, “Allen e Ferguson: o mecanismo”).\n\n**Bifacetária e unifacetária ocupam estágios diferentes.** Reconhecer a bilateralidade impede usar o estágio 2 por associação automática com a palavra luxação. A posição relativa das vértebras pode estreitar o canal mesmo que partes do arco ósseo estejam inteiras.\n\nO exame neurológico e a investigação de disco e ligamentos continuam fundamentais. A classificação descreve o padrão de lesão, não permite presumir o déficit de um paciente que não foi examinado.\n\n> **Na prova:** luxação bilateral subaxial, distração-flexão 3 e translação de aproximadamente 50% formam a associação clássica.",
+  "correta": "**A: Certo.** Mecanismo, bilateralidade e translação aproximada concordam com o estágio 3 descrito. Trata-se da resposta bibliográfica preservada, sem gabarito oficial registrado.",
   "incorretas": {
-   "B": "**Errado poderia valer para luxação unilateral.** Nela o componente rotatório é maior e a translação anterior costuma ser menor do que na luxação bifacetária clássica."
+   "B": "**Rejeitaria uma associação coerente na classificação.** Não confunda com a luxação unilateral do estágio 2 nem com a translação de 100% do estágio 4. O valor aproximado de 50% pertence justamente à luxação bilateral do estágio 3."
   },
-  "conceito": "**Flexão-distração subaxial.** Entre C3 e C7, força de flexão combinada com distração pode romper estruturas posteriores e permitir que as facetas do segmento superior avancem sobre as inferiores. A luxação unilateral tende a combinar rotação e deslocamento menor; a bilateral pode produzir grande translação anterior e grave instabilidade.\n\n**Padrão radiográfico.** Na classificação mecanicista de Allen e Ferguson, a luxação bifacetária representa estágio avançado da distração-flexão e pode mostrar cerca de 50% de deslizamento do corpo vertebral superior. Estágios ainda mais graves podem ultrapassar essa translação. O número é aproximado, não um requisito matemático para todos os pacientes.\n\n**Consequências.** O estreitamento do canal e a lesão discal aumentam o risco de dano medular. Avaliação neurológica, tomografia e, conforme o cenário, ressonância ajudam a planejar redução e estabilização. A lesão é instável e não se confunde com simples entorse cervical.",
-  "correta": "**Certo como descrição do padrão clássico.** A luxação bilateral das facetas subaxiais decorre de distração-flexão e costuma associar-se a grande deslizamento anterior, próximo de metade do corpo vertebral.",
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. II, p. 1629."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Luxação facetária: redução fechada e cirurgia."
   ],
+  "conferido": false,
   "provavel": "A",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade",
+      "Luxação facetária: redução fechada e cirurgia"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+      "luxacao-facetaria-reducao-fechada-e-cirurgia-8c151ee6"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "e615c1d561ca91834558df3dae9e230589d321c9eb7e8bb693ca54b2264edc5e"
+    }
+   ],
+   "questaoSha256": "cab778a727e83bc641fae347b06902431d1713cb67fa34b160a94888d271b804",
+   "comentarioSha256": "7d68f0b77bd2a8834a3b4328b435900c8e75b35b479a14f1f378b22165879ae2"
+  }
  },
  "coluna-0355": {
   "conceito": "A preservação sacral é uma pequena informação que muda a classificação de uma lesão extensa. Se existe sensibilidade perianal preservada, há sinal de condução até os segmentos sacrais; a lesão não é completa. Por isso a afirmação é **bibliograficamente verdadeira**, sem que isso represente um gabarito oficial disponível no acervo.\n\nO exame precisa pesquisar a região perianal, além dos outros dermátomos. No resumo, ela pode ser o único sinal de incompletude. A perda de movimento abaixo do nível não anula essa informação: uma lesão pode ser sensitiva incompleta, como no grau B da ASIA, mesmo sem motricidade abaixo da lesão (resumo do Rockwood, 10ª ed., cap. 49, “Preservação sacral e a escala da ASIA”).\n\nNão confunda preservação de função sacral com retorno de um reflexo sacral. O bulbocavernoso marca o fim do choque medular e pode reaparecer numa lesão completa. A presença de sensibilidade perianal responde a outra pergunta, sobre função preservada através da área lesada.\n\nLeia essas duas seções no resumo da Biblioteca para separar incompletude de retorno reflexo.",
@@ -4348,29 +4905,85 @@
   }
  },
  "coluna-0356": {
+  "conceito": "O enunciado junta uma conduta possível para o tipo II do enforcado, o halo-colete, com uma contraindicação que pertence a outro subtipo. **No tipo II, a tração pode fazer parte da redução; a contraindicação é do IIa.** Por isso a afirmação inteira é errada.\n\nO tipo II de Levine e Edwards apresenta angulação e translação, com lesão importante do disco C2–C3. O resumo descreve redução com tração e manutenção no halo. Já o IIa tem angulação acentuada e pouca translação, em mecanismo de flexão, e a tração pode piorar a deformidade. Sua redução é feita por extensão e compressão no halo (Rockwood, 10ª ed., cap. 48, “Levine e Edwards” e “O tratamento por tipo”).\n\n**O sufixo muda a manobra.** Saber que ambos podem usar halo não autoriza realizar a mesma redução. O dispositivo de manutenção e a força aplicada para reduzir são decisões diferentes, e é essa troca que torna o item falso.\n\nNo tipo III há luxação facetária C2–C3 e a descrição passa para redução aberta e artrodese. Não se deve estender o tratamento de um tipo para toda fratura da pars de C2.\n\n> **Na prova:** II: tração e halo; IIa: evitar tração e reduzir com extensão e compressão.",
+  "correta": "**B: Errado.** O halo é compatível com o tratamento descrito para o tipo II, mas proibir a tração troca II por IIa. A resposta é bibliográfica, sem gabarito oficial registrado.",
   "incorretas": {
-   "A": "**Certo seria mais próximo do subtipo IIA.** Nesse padrão de grande angulação e pouca translação, evita-se tração axial e pode-se considerar imobilização sem tração ou estabilização cirúrgica."
+   "A": "**Aceitaria uma frase apenas parcialmente verdadeira.** A escolha do halo não salva a contraindicação incorreta. No tipo II, a fonte admite tração para reduzir; é no IIa, com angulação importante e translação mínima, que ela pode acentuar a deformidade."
   },
-  "conceito": "**Fratura do enforcado.** A espondilolistese traumática de C2 envolve fratura do arco do áxis, geralmente na região interarticular, com possível deslocamento de C2 sobre C3. A classificação de Levine e Edwards considera translação, angulação, disco C2-C3 e facetas. Tipo I tem pequeno deslocamento e tende a ser estável; tipo II apresenta translação e angulação; tipo IIA tem pouca translação, mas angulação importante por mecanismo de flexão-distração; tipo III acrescenta luxação das facetas C2-C3.\n\n**Tração não é proibida em todo tipo II.** No tipo II clássico, uma redução cuidadosa com tração pode preceder imobilização externa em casos selecionados; instabilidade maior pode exigir cirurgia. O halo foi usado historicamente, mas não é obrigatório para todos, especialmente quando um colar rígido adequado ou outra estratégia oferece melhor relação entre benefício e complicações.\n\n**A exceção crucial.** No tipo IIA, a tração axial pode aumentar a angulação e piorar o afastamento, sendo evitada. A banca transfere essa contraindicação do subtipo IIA para todo o tipo II, além de transformar uma opção de imobilização em obrigação universal.",
-  "correta": "**Errado: confundiu tipo II com tipo IIA.** Tração cervical pode ser considerada no tipo II clássico; a contraindicação conhecida refere-se principalmente ao IIA, e o haloveste não é único tratamento possível.",
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. II, p. 1627."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2)."
   ],
+  "conferido": false,
   "provavel": "B",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do enforcado (espondilolistese traumática de C2)"
+     ],
+     "blocos": [
+      "fratura-do-enforcado-espondilolistese-traumatica-91ac3840",
+      "fratura-do-enforcado-espondilolistese-traumatica-ac421b17",
+      "fratura-do-enforcado-espondilolistese-traumatica-9bb667d7",
+      "fratura-do-enforcado-espondilolistese-traumatica-39545179",
+      "fratura-do-enforcado-espondilolistese-traumatica-e49447e8"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "f26dcd8564a3eddacf653e7a306f4fdd15258bb7aefbbc482239c9d21f7a3700"
+    }
+   ],
+   "questaoSha256": "38a76e0aa306ff82991fed7119b282d434404d0973d6f826dc8968bfbf461b89",
+   "comentarioSha256": "5e2568fa08b468349c26df84513e8e5832ab8a0f781ddb2151111f48f41dd7ea"
+  }
  },
  "coluna-0357": {
+  "conceito": "O fragmento em gota na frente do corpo cervical não é apenas um pequeno pedaço de osso arrancado: no padrão em flexão, pode acompanhar uma lesão instável de todo o segmento. Em Allen e Ferguson, a **teardrop clássica aparece na compressão-flexão, estágio 3**.\n\nOs estágios anteriores preparam a distinção. No primeiro há arredondamento da margem anterossuperior; no segundo, um aspecto em bico, às vezes com traço sagital. No terceiro surge o traço oblíquo que destaca a gota. Os estágios seguintes acrescentam retrolistese e maior comprometimento do alinhamento; portanto, uma lesão mais grave ainda pode conter a teardrop que apareceu no estágio 3 (Rockwood, 10ª ed., cap. 48, “Allen e Ferguson: o mecanismo” e “Fratura em gota de lágrima em flexão”).\n\n**Distração-flexão é outra família.** Seu estágio 3 é a luxação bilateral com cerca de 50% de translação; o estágio 4 chega a 100%. Misturar a progressão das facetas com a progressão da fratura do corpo leva aos distratores.\n\n> **Na prova:** teardrop em flexão começa no estágio 3 de compressão-flexão; não confundir com a pequena avulsão em extensão.",
+  "correta": "**D: compressão-flexão no estágio III.** É onde aparece o traço oblíquo do corpo que forma a gota. A resposta é bibliográfica preservada; o acervo não registra gabarito oficial.",
   "incorretas": {
-   "A": "**Flexão-distração III produz luxação bifacetária.** É mecanismo de abertura posterior e translação anterior, não o cunhamento compressivo que origina a gota de lágrima.",
-   "B": "**Flexão-distração IV é ainda mais translacional.** Associa deslocamento anterior maior e falha ligamentar extensa, em vez da fragmentação anterior característica da compressão-flexão III.",
-   "C": "**Compressão-flexão II precede a gota de lágrima separada.** Há deformação e início de alteração no canto anteroinferior, mas o fragmento triangular destacado caracteriza o estágio seguinte."
+   "A": "**Usa o estágio da luxação bifacetária.** Distração-flexão 3 corresponde à lesão bilateral das facetas com aproximadamente 50% de translação. O fragmento teardrop do corpo nasce em outra sequência, compressão-flexão.",
+   "B": "**Escolhe a translação máxima da família errada.** No estágio 4 de distração-flexão, o corpo se desloca cerca de 100%. Isso não define o estágio em que aparece a gota de lágrima.",
+   "C": "**Para antes do traço que destaca a gota.** Compressão-flexão 2 produz o aspecto em bico, podendo haver traço sagital. O traço oblíquo característico da teardrop aparece no estágio 3."
   },
-  "conceito": "**Mecanismo da gota de lágrima.** A fratura cervical baixa em gota de lágrima por flexão resulta de compressão axial combinada com flexão. Um fragmento triangular se separa da região anteroinferior do corpo vertebral. Ela não deve ser confundida com a pequena avulsão anterior produzida por extensão, cujo mecanismo e estabilidade podem ser diferentes.\n\n**Progressão de Allen e Ferguson.** Na categoria compressão-flexão, o estágio I mostra cunhamento anterior; o II acrescenta deformação do canto anteroinferior; o III apresenta fragmento ósseo triangular separado, a gota de lágrima. Nos estágios IV e V, o deslocamento posterior do corpo vertebral e a falha ligamentar são progressivamente maiores, aumentando a compressão medular.\n\n**Importância clínica.** Reconhecer o mecanismo permite procurar lesão posterior, retrolistese e déficit neurológico. A aparência do fragmento isolado não resume toda a instabilidade: tomografia e, quando indicada, ressonância avaliam elementos ósseos, disco e ligamentos antes da decisão de estabilização.",
-  "correta": "**Compressão-flexão, estágio III.** A separação do fragmento anteroinferior em gota de lágrima define esse estágio na sequência de Allen e Ferguson.",
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
+  ],
+  "conferido": false,
   "provavel": "D",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade",
+      "Compressão, explosão e teardrop"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+      "compressao-explosao-e-teardrop-13a89876",
+      "compressao-explosao-e-teardrop-a3e0c6bc"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "97a5dbaedc37695bd83b58fa2a92abec47de6f640a95d11e26564e46763e7e92"
+    }
+   ],
+   "questaoSha256": "e4b9058e36a952565dab317fdece4379d55082041b3b1ddb8d8352dd89c5e060",
+   "comentarioSha256": "445309b48f178d21c9d83c74afe15e9a6b381fb1ebb8bd9910da1eb96e1f569f"
+  }
  },
  "coluna-0358": {
   "conceito": "**Radiculopatia S1: o quadro típico.** A raiz S1 é comprimida principalmente por hérnias paramedianas no disco L5-S1 (raiz descendente) ou por estenose do recesso lateral nesse nível.\n\n**Exame da raiz S1.**\n\n| Componente | Achado |\n|---|---|\n| Motor | **Tríceps sural** (flexão plantar), fibulares (eversão), glúteo máximo |\n| Sensitivo | Face posterior da panturrilha, **planta**, borda lateral do pé, quinto dedo |\n| Reflexo | **Aquileu** diminuído ou abolido |\n| Testes | Lasègue positivo; dificuldade para andar na ponta dos pés |\n\n**Comparação com outras raízes.**\n- **L4**: quadríceps, tibial anterior, face medial da perna, reflexo patelar.\n- **L5**: extensor longo do hálux, dorsiflexão, dorso do pé e hálux, sem reflexo confiável.\n- **L2 e L3**: flexão do quadril, adução, face anterior da coxa.\n\n**Atenção ao diabetes.** A neuropatia diabética também pode reduzir o reflexo aquileu (geralmente bilateral e simétrico) e causar parestesia plantar \"em bota\". No caso, a fraqueza do tríceps sural com dor lombar intensa sugere compressão radicular, mas a neuropatia deve entrar no diferencial e pode ser esclarecida pela eletroneuromiografia.\n\n> Fraqueza do tríceps sural, parestesia plantar e aquileu diminuído: raiz S1.",
@@ -5082,19 +5695,43 @@
   "conferido": false
  },
  "coluna-0401": {
-  "conceito": "**Referências anatômicas palpáveis para a via anterior cervical.** Antes da incisão, o cirurgião localiza o nível pela palpação de estruturas do pescoço, confirmando depois com radioscopia.\n\n| Estrutura palpável | Nível vertebral aproximado |\n|---|---|\n| Ângulo da mandíbula | C2-C3 |\n| Osso hioide | C3 |\n| Cartilagem tireoide (borda superior) | C4-C5 |\n| **Anel (cartilagem) cricoide** | **C6** |\n| **Tubérculo carotídeo (de Chassaignac)** | **C6** (processo transverso) |\n| Fúrcula esternal | T2 |\n\n**O anel cricoide e o tubérculo carotídeo.** São as referências clássicas de **C6**. O tubérculo carotídeo é a parte anterior do processo transverso de C6, palpável profundamente à borda medial do esternocleidomastóideo; a artéria carótida pode ser comprimida contra ele.\n\n**Uso prático.** A incisão transversa é feita na altura da referência correspondente ao nível desejado. A radioscopia intraoperatória sempre confirma o nível, porque há variações individuais (pescoço curto, obeso, posição da cabeça).\n\n**Outras relações em C6.** Transição laringe-traqueia e faringe-esôfago; o omo-hióideo cruza o campo; a artéria vertebral entra no forame transverso de C6.\n\n> Anel cricoide e tubérculo carotídeo: referências de C6.",
-  "correta": "**D: Anel cricóide.** O anel (cartilagem) cricoide está na altura de C6, assim como o tubérculo carotídeo de Chassaignac. É a referência palpável clássica para a incisão da via anterior a C6, sempre confirmada por radioscopia.",
+  "conceito": "Para orientar o nível de uma abordagem anterior de C6, a referência de superfície pedida é o **anel cricoide**. Ele deve ser distinguido da cartilagem tireoide, do hioide e de outras estruturas próximas do pescoço.\n\nO resumo organiza os marcos assim: hioide em C3, cartilagem tireoide em C4–C5 e cricoide em C6. No mesmo nível de C6 há uma referência óssea vertebral, o tubérculo carotídeo de Chassaignac, formado pelo tubérculo anterior do processo transverso (Rockwood, 10ª ed., cap. 48, “A via anterior de Smith-Robinson” e “A vértebra subaxial”).\n\nEssas referências ajudam a planejar a exposição, mas o nome da estrutura importa. A questão solicita o marco anatômico associado ao nível: selecionar uma membrana da região em vez da cartilagem cricoide troca a referência descrita. Também não se deve responder pela estrutura mais fácil de palpar sem conferir qual nível ela representa.\n\n> **Na prova:** hioide, C3; tireoide, C4–C5; cricoide e tubérculo carotídeo, C6.",
+  "correta": "**D: anel cricoide.** É a referência de superfície descrita para C6 na via anterior, no mesmo nível vertebral indicado pelo tubérculo carotídeo.",
   "incorretas": {
-   "A": "**A cartilagem tireoide** corresponde ao nível de C4-C5. É usada como referência para esses níveis.",
-   "B": "**O osso hioide** fica na altura de C3. Serve como referência para os níveis altos da coluna cervical.",
-   "C": "**A membrana cricotireoidea**, entre a cartilagem tireoide e a cricoide, corresponde aproximadamente a C5-C6. É o local da cricotireoidostomia, mas a referência clássica para C6 é o anel cricoide."
+   "A": "**Corresponde a um nível mais alto.** A cartilagem tireoide é situada em C4–C5 pelo resumo. Ela é útil para orientação, mas não substitui a cricoide como referência de C6.",
+   "B": "**É a referência de C3.** O hioide está na lista de marcos cervicais, porém associa-se ao nível mais cranial entre os citados. Confundir a sequência desloca a localização do acesso.",
+   "C": "**Troca a estrutura de referência.** O marco explicitamente associado a C6 na fonte é o anel cricoide. A presença de “crico” no nome da membrana não a torna a cartilagem que a questão procura."
   },
   "referencias": [
-   "Hoppenfeld S, deBoer P, Buckley R. Vias de acesso em cirurgia ortopédica: abordagem anatômica. Coluna cervical, via anterior.",
-   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. Guanabara Koogan. Pescoço."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Vias de acesso, fixação e complicações; Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Vias de acesso, fixação e complicações",
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+      "anatomia-aplicada-e-biomecanica-43792d6a"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "3f3cc08ac5cc21b62e63f291cf6c2526281e496ac1b4014f6095083a3c3dab73"
+    }
+   ],
+   "questaoSha256": "ad2fae40dbd8fd14089a921acf19b52c8898fe48d831e37bd9f436a353af1f51",
+   "comentarioSha256": "6aa011db835165053a4727e2049ec81897085a5fc8dc88426dd431ec68a4b0eb"
+  }
  },
  "coluna-0402": {
   "conceito": "**Posicionamento para a via posterior da coluna cervical.** O paciente fica em decúbito ventral, com a cabeça fixada (geralmente com fixador de crânio de Mayfield) e o pescoço em posição neutra ou leve flexão, conforme o procedimento.\n\n**Trendelenburg reverso (cabeceira elevada).**\n- Eleva o campo operatório acima do nível do coração.\n- Reduz a **pressão venosa** no plexo venoso epidural e nas veias paravertebrais, diminuindo o **sangramento**.\n- Reduz a **pressão liquórica** no nível cervical, o que facilita a dissecção e diminui a perda de líquor em caso de lesão dural.\n\n**Joelhos fletidos.**\n- Impede que o paciente escorregue para baixo na mesa inclinada.\n- Relaxa as estruturas posteriores do membro inferior e alivia a tensão sobre o nervo ciático.\n\n**Cuidados adicionais.**\n- Abdome livre (coxins no tórax e na pelve), para não comprimir a veia cava e aumentar o sangramento epidural.\n- Proteção dos olhos (risco de cegueira pós-operatória por compressão ou isquemia) e das proeminências ósseas.\n- Ombros tracionados com fitas, para melhorar a visão radiológica da coluna cervical baixa, com cuidado para não lesar o plexo braquial.\n- Atenção ao risco de **embolia gasosa** com a cabeça muito elevada, porque as veias abertas ficam com pressão negativa.\n\n| Medida | Benefício |\n|---|---|\n| Trendelenburg reverso | Menos sangramento e menor pressão liquórica |\n| Joelhos fletidos | Evita deslizamento, protege o ciático |\n| Abdome livre | Menos pressão venosa epidural |\n\n> Via cervical posterior: cabeceira elevada (Trendelenburg reverso) com joelhos fletidos.",
@@ -5861,20 +6498,42 @@
   "conferido": false
  },
  "coluna-0450": {
-  "conceito": "**Como localizar a raiz cervical pelo exame.** Cada raiz cervical tem um padrão de força, reflexo e sensibilidade. Lembre que, na coluna cervical, a raiz sai **acima** da vértebra de mesmo número: a raiz C7 sai entre C6 e C7, e é comprimida por uma hérnia C6-C7.\n\n| Raiz | Disco | Força | Reflexo | Sensibilidade |\n|---|---|---|---|---|\n| C5 | C4-C5 | Deltoide, bíceps | Bicipital | Face lateral do braço |\n| C6 | C5-C6 | Bíceps, extensores do punho | Estilorradial (braquiorradial) | Polegar e face radial do antebraço |\n| C7 | C6-C7 | **Tríceps**, flexores do punho, extensores dos dedos | **Tricipital** | **Dedo médio** (e indicador) |\n| C8 | C7-T1 | Flexores dos dedos | Nenhum confiável | Dedo mínimo, face ulnar do antebraço |\n| T1 | T1-T2 | Intrínsecos da mão | Nenhum | Face medial do braço |\n\n**Aplicando ao caso.** Fraqueza do tríceps, reflexo tricipital alterado e alteração sensitiva no segundo e terceiro dedos (indicador e médio) apontam para a raiz **C7**, a raiz mais acometida nas radiculopatias cervicais, geralmente por hérnia ou osteófito em C6-C7.\n\n**Diferenciais.** Na síndrome do túnel do carpo, a dormência fica nos três primeiros dedos, mas não há fraqueza do tríceps nem alteração do reflexo. O teste de Spurling (extensão, rotação e compressão do pescoço reproduzindo a dor no braço) ajuda a confirmar a origem cervical.\n\n**Tratamento.** A maioria das radiculopatias melhora com tratamento conservador em semanas. A cirurgia é indicada para déficit motor progressivo, dor incapacitante refratária ou sinais de mielopatia.\n\n> Tríceps fraco, reflexo tricipital alterado e dedo médio dormente: raiz C7 (hérnia C6-C7).",
-  "correta": "**D: C7.** A raiz C7 inerva o tríceps, é responsável pelo reflexo tricipital e dá sensibilidade ao dedo médio e parte do indicador. O paciente tem exatamente essa combinação. É a raiz mais acometida nas radiculopatias cervicais, geralmente comprimida por hérnia ou osteófito no nível C6-C7. O tratamento inicial é conservador, com cirurgia se houver déficit progressivo ou dor refratária.",
+  "conceito": "Tríceps fraco com reflexo tricipital alterado aponta para **C7**. A sensibilidade nos dedos acrescenta uma pista, mas o dado mais concordante do caso é o par motor e reflexo da mesma raiz.\n\nNa tabela cervical, C7 é representada por tríceps e flexão do punho, dedo médio e reflexo tricipital. C6, por sua vez, se relaciona a bíceps, extensão do punho, face lateral do antebraço, polegar e indicador, com reflexo braquiorradial (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\n**O enunciado mistura o segundo e o terceiro dedos.** O indicador aparece na referência de C6, enquanto o médio aparece em C7. Isso não torna C6 a melhor resposta, porque tríceps e tricipital fornecem dois achados específicos do conjunto C7. No exame clínico, sinais de diferentes modalidades devem ser confrontados, sem tratar a fronteira de cada território como um desenho rígido capaz de anular os demais achados.\n\nA radiografia degenerativa dá contexto, mas não define sozinha a raiz sintomática. É o exame neurológico descrito que sustenta a localização provável.\n\n> **Na prova:** tríceps e tricipital localizam C7; não trocar para C6 só pela menção ao indicador.",
+  "correta": "**D: C7.** O déficit do tríceps, a alteração do reflexo tricipital e o envolvimento do dedo médio convergem para essa raiz, apesar da extensão sensitiva também ao indicador.",
   "incorretas": {
-   "A": "**A raiz T1 inerva os músculos intrínsecos da mão e dá sensibilidade à face medial do braço.** Não afeta o tríceps nem o reflexo tricipital. Lesões de T1 podem causar síndrome de Horner, se próximas da medula.",
-   "B": "**A raiz C5 afeta o deltoide e o bíceps, com o reflexo bicipital e sensibilidade na face lateral do braço.** Não compromete o tríceps nem os dedos.",
-   "C": "**A raiz C6 afeta o bíceps e os extensores do punho, com o reflexo estilorradial e sensibilidade no polegar.** É a segunda raiz mais acometida. A dormência no polegar e a fraqueza do bíceps a diferenciam da C7.",
-   "E": "**A raiz C8 afeta os flexores dos dedos e dá sensibilidade ao dedo mínimo e à face ulnar do antebraço.** Não tem reflexo confiável. O tríceps pode ter pequena contribuição de C8, mas a combinação do caso aponta para C7."
+   "A": "**Desloca o quadro para os intrínsecos.** T1 é representada por intrínsecos e abdução dos dedos, com sensibilidade medial do braço e axila. Não explica o conjunto tríceps e reflexo tricipital.",
+   "B": "**É o conjunto do deltoide e do bicipital.** C5 se associa à sensibilidade lateral do ombro e braço. Fraqueza de tríceps e alteração tricipital não reproduzem esse padrão.",
+   "C": "**Aproveita um dedo e ignora os achados mais concordantes.** C6 pode ser lembrada pelo indicador, mas seus marcadores são bíceps, extensão do punho e braquiorradial. O caso enfatiza tríceps e tricipital, favorecendo C7.",
+   "E": "**É o nível dos flexores dos dedos e intrínsecos.** A referência sensitiva de C8 inclui anular, mínimo e face medial do antebraço. Não é a distribuição principal nem o reflexo fornecido."
   },
   "referencias": [
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Radiculopatia cervical."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atendimento inicial e exame neurológico"
+     ],
+     "blocos": [
+      "atendimento-inicial-e-exame-neurologico-d66ef39d"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
+    }
+   ],
+   "questaoSha256": "429b6937fd41a6b86d378f2f7d583a5cf5a030803f5c6d089fba3db991a7df83",
+   "comentarioSha256": "5b09208c040c62affee506b728a20caa0ead7d149895c971382991d3ce7f6f7b"
+  }
  },
  "coluna-0451": {
   "conceito": "**Lesões líticas no corpo vertebral.** Em adultos, a causa mais comum de lesão lítica na coluna são as **metástases** (mama, pulmão, próstata, rim, tireoide) e o **mieloma múltiplo**. Excluídas essas, o diagnóstico mais frequente é o **hemangioma vertebral**.\n\n**O hemangioma vertebral.** É uma lesão vascular benigna, encontrada em cerca de 10% das pessoas em estudos de autópsia e imagem. Localiza-se no **corpo vertebral**, principalmente na coluna torácica e lombar, e quase sempre é assintomático e descoberto por acaso.\n\n| Exame | Aspecto típico |\n|---|---|\n| Radiografia | Trabéculas verticais grosseiras, em “paliçada” ou “veludo cotelê” |\n| Tomografia | Pontos densos no corte axial (sinal das bolinhas, polka dot) |\n| Ressonância | Hiperssinal em T1 e T2, pela gordura e pelo componente vascular |\n\nUma minoria é **agressiva**: expande o corpo, invade o canal ou as partes moles e pode causar compressão medular ou fratura. Esses casos são tratados com vertebroplastia, embolização, radioterapia ou cirurgia.\n\n**Onde ficam os outros tumores benignos da coluna.**\n\n| Tumor | Local preferencial |\n|---|---|\n| Osteoma osteoide e osteoblastoma | Elementos posteriores (pedículo, lâmina) |\n| Osteocondroma | Elementos posteriores, processo espinhoso e transverso |\n| Cisto ósseo aneurismático | Elementos posteriores, com extensão ao corpo |\n| Tumor de células gigantes | Corpo vertebral e sacro |\n| Hemangioma | Corpo vertebral |\n\nUma regra útil: lesões dos elementos posteriores tendem a ser benignas; lesões do corpo vertebral em adultos devem fazer pensar primeiro em metástase e mieloma.\n\n> Excluídas metástases e mieloma, a lesão mais comum do corpo vertebral é o hemangioma, com trabéculas em paliçada e polka dot.",
@@ -7091,18 +7750,47 @@
   "conferido": false
  },
  "coluna-0528": {
-  "conceito": "**Por que a fratura do enforcado clássica poupa a medula.** Na fratura bilateral da pars interarticularis de C2, o corpo de C2 vai para a frente com C1 e o crânio, e o arco posterior fica para trás com C3. A distância entre o corpo e o arco aumenta: o canal se **alarga** no nível da fratura. É por isso que o déficit neurológico é raro na espondilolistese traumática do áxis, mesmo quando o desvio é grande.\n\n**O que muda no tipo Ia.** STARR e EISMONT descreveram uma variante em que, de um lado, o traço não passa pela pars, e sim pela **parede posterior do corpo de C2**. Um pedaço do corpo vertebral fica preso ao fragmento do arco posterior. Quando esse conjunto se desloca para trás, o fragmento do corpo avança para dentro do canal. Em vez de abrir o canal, a fratura o **estreita**, e a frequência de déficit neurológico é maior.\n\n**Reconhecer na tomografia.** No corte axial, o traço de um lado passa pela pars e o do outro entra no corpo, atrás do forame transverso; o canal fica assimétrico. Como o traço pode atravessar o forame transverso, vale lembrar a investigação da artéria vertebral nas fraturas da coluna cervical alta.\n\n**Como tratar.** O tipo Ia tem alta taxa de consolidação e, como o tipo I, é tratado com órtese cervical, a menos que haja lesão medular. Os autores do capítulo 48 do Rockwood (10ª ed.) usam colar rígido para os tipos I e Ia sem comprometimento neurológico. Déficit neurológico, embora raro nas fraturas do enforcado, contraindica o tratamento conservador.\n\n**Para comparar com os outros tipos de LEVINE e EDWARDS:**\n\n- **tipo II:** angulação e translação, lesão do disco C2-C3; tração e halo;\n- **tipo IIa:** angulação sem translação, por flexão-distração; halo em extensão e compressão, nunca tração;\n- **tipo III:** luxação facetária C2-C3 associada; redução aberta e artrodese C1-C3.\n\nBase: Rockwood and Green, 10ª ed., capítulo 48 (Cervical Spine Fractures and Dislocations), seção Hangman's Fractures, figura 48-40.\n\n> **Na prova:** enforcado tipo Ia: traço pelo corpo de C2 de um lado estreita o canal, ao contrário do clássico, que o alarga.",
-  "correta": "**A: o traço passa pela parede posterior do corpo de C2 de um lado, e o fragmento estreita o canal.** Na fratura do enforcado clássica, o corpo e o arco se afastam e o canal se alarga. No tipo Ia, um fragmento do corpo vertebral continua preso ao arco posterior; quando o conjunto se desloca, esse fragmento invade o canal. A fratura passa a comprimir a medula, o que explica a maior frequência de déficit neurológico.",
+  "conceito": "Na variante Ia da fratura do enforcado, um fragmento pode avançar para dentro do canal em vez de simplesmente ampliar o espaço. É esse **estreitamento pelo traço que atravessa a parede posterior do corpo de C2** que explica a maior frequência de déficit neurológico.\n\nA fratura do enforcado clássica rompe bilateralmente a pars interarticularis de C2. No Ia de Starr e Eismont, um dos traços passa pelo corpo posterior e permanece em continuidade com um fragmento da pars. O complexo pode se deslocar para trás e ocupar o canal, ao contrário do alargamento habitual. A localização exata do traço, portanto, muda o risco neurológico (Rockwood, 10ª ed., cap. 48, “Levine e Edwards”).\n\n**Não confunda a variante Ia com o tipo IIa.** No IIa, o destaque é angulação acentuada com translação mínima, e a tração é evitada porque pode piorar a deformidade. Já o tipo III é identificado pela luxação facetária C2–C3. Letras e números próximos representam lesões distintas.\n\nOs autores descrevem colar rígido para I e Ia sem lesão medular; a presença de comprometimento neurológico muda essa seleção. Não se deve concluir que toda fratura denominada enforcado tenha canal amplo e seja neurologicamente inofensiva.\n\n> **Na prova:** Ia pode estreitar o canal porque um traço atravessa a parede posterior do corpo de C2.\n\n**Por que esta questão foi criada.** A variante mostra uma exceção anatômica que muda o risco medular: reconhecer o enforcado não basta, é preciso verificar o trajeto do traço e o canal.",
+  "correta": "**A: traço pela parede posterior do corpo de C2 e estreitamento do canal.** O fragmento ligado ao complexo posterior pode ocupar o canal, explicando o maior risco de déficit na variante Ia.",
   "incorretas": {
-   "B": "**Descreve o tipo III.** A luxação das facetas C2-C3 associada à fratura da pars define o tipo III de LEVINE e EDWARDS, que exige redução aberta e artrodese de C1 a C3. O tipo Ia não tem luxação facetária; seu problema é o traço pelo corpo.",
-   "C": "**Descreve o tipo IIa.** A flexão-distração com ruptura do disco C2-C3 produz o tipo IIa, com grande angulação e translação mínima, em que a tração é contraindicada. Essa lesão não explica o estreitamento do canal do tipo Ia.",
-   "D": "**É outra fratura.** O traço que separa o odontoide do corpo de C2 define as fraturas do odontoide (ANDERSON e D'ALONZO). A fratura do enforcado envolve o arco posterior de C2, na pars interarticularis, e não a base do odontoide."
+   "B": "**Define o tipo III.** Luxação das facetas C2–C3 é o achado que identifica esse tipo na classificação. Não é o mecanismo do maior risco medular específico do Ia.",
+   "C": "**Aproxima o raciocínio do IIa e do disco.** A variante Ia se define pelo traço que entra na parede posterior do corpo e pode estreitar o canal. O IIa tem angulação importante com translação mínima, e a contraindicação de tração é uma distinção própria dele.",
+   "D": "**Descreve outra região fraturada de C2.** Separar o odontoide do corpo remete à fratura da cintura do dente, tipo II de Anderson e D’Alonzo. A variante Ia do enforcado envolve a parede posterior do corpo em continuidade com a pars."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 48 (Cervical Spine Fractures and Dislocations; Le, Schoenfeld, Vander Voort e Bono)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2); Fratura do odontoide (C2)."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do enforcado (espondilolistese traumática de C2)",
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-enforcado-espondilolistese-traumatica-785c3e9a",
+      "fratura-do-enforcado-espondilolistese-traumatica-78597036",
+      "fratura-do-enforcado-espondilolistese-traumatica-ac421b17",
+      "fratura-do-enforcado-espondilolistese-traumatica-9bb667d7",
+      "fratura-do-enforcado-espondilolistese-traumatica-39545179",
+      "fratura-do-odontoide-c2-623f1b6d"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "b2356061b20c452c2e09d865ea79ddd92336f34e6f4734653168d56926644695"
+    }
+   ],
+   "questaoSha256": "33e3921d848461b7b1723b2de7dabf6422ae3b5ce36532b5769cd4df78859106",
+   "comentarioSha256": "af5d19a5790a8d7440da26ccc4e814c454a6422a34f0cbb7bc614cf0be51c7ef"
+  }
  },
  "coluna-0529": {
   "conceito": "**O que mostra a imagem.** O corpo de C4 tem um fragmento triangular na borda anteroinferior, a \"gota de lágrima\" (teardrop), e o restante do corpo está deslocado para trás em relação a C5 (retrolistese). Há também uma pequena fratura do processo espinhoso no mesmo nível.\n\n**A classificação mecanicista de ALLEN e FERGUSON.** Divide as lesões subaxiais em seis grupos pelo mecanismo: compressão-flexão, compressão vertical, distração-flexão, compressão-extensão, distração-extensão e flexão lateral. Dentro de cada grupo, os estágios são progressivos: um estágio maior inclui os achados dos anteriores.\n\n**Os estágios da compressão-flexão.**\n\n| Estágio | Achado |\n|---|---|\n| 1 | Arredondamento da borda anterossuperior do corpo |\n| 2 | Aspecto em \"bico\" da borda anterior, às vezes com traço sagital |\n| 3 | Traço oblíquo da face anterior do corpo até a placa terminal inferior: a gota de lágrima |\n| 4 | Estágio 3 com translação posterior do corpo menor que 3 mm |\n| 5 | Translação posterior de 3 mm ou mais, com abertura das facetas (lesão ligamentar anterior e posterior) |\n\n**O mecanismo.** A flexão com carga axial comprime a frente da vértebra e traciona os elementos posteriores. O fragmento anteroinferior se forma por cisalhamento, e o corpo restante é empurrado para trás, contra a medula. Por isso a fratura em gota de lágrima por flexão é típica de jovens em trauma de alta energia, como o mergulho, e tem alta incidência de lesão medular completa ou de síndrome medular anterior.\n\n**Não confundir com a gota de lágrima por extensão.** É uma pequena avulsão da borda anteroinferior arrancada pelo ligamento longitudinal anterior, mais comum no idoso, geralmente estável quando não há cifose. O fragmento é parecido; o que muda é a ausência de retrolistese e de lesão posterior.\n\n**Tratamento.** O capítulo 48 do Rockwood (10ª ed.) define a gota de lágrima verdadeira como estágio 3 ou maior, com lesão do complexo ligamentar posterior implícita, e a trata cirurgicamente na maioria dos casos. Tração com 20 a 40 libras reduz a cifose; depois, **corpectomia anterior** (retira o corpo deslocado para trás e descomprime o canal), cilindro de titânio com enxerto e **placa anterior**. Nos estágios 3 e 4, o construto anterior isolado costuma bastar; no estágio 5, acrescenta-se fixação posterior. Artrodese anterior de um nível só (discectomia) falha quando a placa terminal está fraturada. O halo dá resultados clínicos semelhantes, mas pior alinhamento (mais cifose).\n\nBase: Rockwood and Green, 10ª ed., capítulo 48 (Cervical Spine Fractures and Dislocations), seções Mechanistic Classification e Flexion-Type Teardrop Fractures, figuras 48-42 e 48-51.\n\n> **Na prova:** gota de lágrima por flexão é compressão-flexão (estágio 3 ou mais); trata-se com corpectomia anterior, enxerto e placa.",
