@@ -1,0 +1,46 @@
+{
+  "basePublicada": "7bb4003976c1729e5c5144b835ca6176f031a364",
+  "pr": 493,
+  "lotes": {
+    "091-aprofundamento-tecnica-associacoes-femur.json": {
+      "sha256": "528be69b8007a22d4313852eb5ce720400e27e1204d1b04f8cf2e10f5a586aaa",
+      "ids": [
+        "trauma-0898",
+        "trauma-0261",
+        "trauma-1053",
+        "conceitos-basicos-0137",
+        "trauma-1661",
+        "trauma-1096",
+        "trauma-1662",
+        "conceitos-basicos-0370",
+        "trauma-1659",
+        "trauma-0295"
+      ]
+    },
+    "092-femur-distal-lesoes-associadas-fixacao.json": {
+      "sha256": "d879833066e1fd4ab13786b49cb36c8361cf5bb23a35d83d23865949bd4992a2",
+      "ids": [
+        "trauma-0048",
+        "trauma-0067",
+        "trauma-0262",
+        "trauma-0700",
+        "trauma-0913",
+        "trauma-0986",
+        "trauma-1004",
+        "trauma-1088",
+        "trauma-0241",
+        "trauma-0554"
+      ]
+    }
+  },
+  "checks": {
+    "fixturesComentarios": "14 testes passaram",
+    "validarAcervo": "sem erros",
+    "build": "passou",
+    "cadeia089a092": "40 IDs; fontes, hashes, alternativas, questões, gabaritos e avulsos conferidos integralmente",
+    "interface": "0898, conceitos-0370, 0241 e 1004 em celular/computador; fonte, correção e alertas",
+    "npmTest": "falha preexistente: fixtures/testar_gatilhos_email.mjs:149, dias_para_prova=79; demais comandos executados separadamente e aprovados"
+  },
+  "publicado": false,
+  "restricao": "Nenhuma alteração de fixture, relógio, automação ou funcionalidade; não incorporar com CI vermelho."
+}

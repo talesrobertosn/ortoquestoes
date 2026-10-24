@@ -50,7 +50,29 @@ export interface ComentarioComunidade {
  * para decidir quanto peso dar. Enquanto `conferido` for falso, a interface diz
  * em letras claras que ninguém revisou aquilo.
  */
+/** Fonte de uma revisão editorial individual apoiada nos resumos da Biblioteca. */
+export interface BaseResumo {
+  tipo: 'resumo'
+  versao: 1
+  fontes: Array<{
+    resumo: string
+    titulo: string
+    livro: string
+    edicao: string
+    capitulo: string
+    secoes: string[]
+    blocos: string[]
+    sha256: string
+    trechosSha256: string
+  }>
+  questaoSha256: string
+  comentarioSha256: string
+}
+
 export interface ComentarioIA {
+  /** Ausente nos comentários antigos, candidatos ou ainda não revisados neste fluxo. */
+  baseResumo?: BaseResumo
+
   /**
    * Aviso sobre a própria questão, quando o gabarito oficial parece errado ou
    * o enunciado é incoerente. Aparece antes de tudo, em destaque: quem estuda

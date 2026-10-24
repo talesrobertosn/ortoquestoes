@@ -1,0 +1,40 @@
+{
+  "quadril-0328": {
+    "questaoSha256": "3851f76ef9d167e735a008a4a39a00077ee252d5594e861659fb1824c8c8df5c",
+    "comentarioAnteriorSha256": "b45cc22b3a5bb3efb5487eff055fda2ba1d49856173d357676396e594f29c8a8",
+    "comentario": {
+      "conceito": "Na imagem **A**, as faixas azuis acompanham os contornos da cabeça e do colo, desenhando curvas suaves em S nas duas projeções: é o **sinal de Lowell**. Na **B**, as linhas formam medidas angulares no AP e no perfil, com referências de 160 e 180 graus: é o **índice de alinhamento de Garden**.\n\nLowell permite perceber a continuidade das corticais. Uma curva suave sugere bom alinhamento; achatamento de um lado e ângulo agudo do outro sugerem deformidade residual. Garden compara as trabéculas compressivas da cabeça com a cortical medial da diáfise, e não simplesmente o eixo do colo com a diáfise. É por isso que os valores não correspondem ao ângulo cervicodiafisário habitual (resumo do Rockwood, 10ª ed., cap. 53, “Como medir a redução: Garden e Lowell”).\n\nA imagem B também desenha valores menores, 140 no AP e 150 no perfil, que contrastam com as referências. O resumo relata bons resultados entre 155 e 180 em cada incidência. Reconhecer a medida permite julgar o desvio, em vez de decorar apenas o nome. Compare as duas formas de leitura no resumo da Biblioteca.",
+      "correta": "**A: Lowell e Garden.** A identifica continuidade cortical em S; B mostra o alinhamento angular trabecular nas duas incidências. A ordem das imagens é decisiva.",
+      "incorretas": {
+        "B": "**Troca os métodos de lugar.** A não mostra a mensuração trabecular de Garden; destaca contornos corticais suaves. B é que apresenta linhas e ângulos, em vez de usar somente a continuidade do S de Lowell.",
+        "C": "**Reconhece Lowell em A, mas troca o nome da medida de B.** As referências de 160 no AP e 180 no perfil correspondem ao índice de Garden apresentado pelo resumo. Não há fundamento para renomear esse desenho como Winter.",
+        "D": "**Não identifica corretamente nenhum dos dois painéis.** A mostra o S cortical de Lowell, não Garden; B mostra Garden, não Winter. É a estrutura observada, cortical ou trabecular, que permite distinguir os nomes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do colo do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 53 · Femoral Neck Fractures (Griffin, Lane, Moppett e Seymour). Seções: Fratura desviada no jovem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-53-colo-femur",
+        "titulo": "Fratura do colo do fêmur",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 53 · Femoral Neck Fractures",
+        "secoes": [
+          "Fratura desviada no jovem"
+        ],
+        "blocos": [
+          "fratura-desviada-no-jovem-38a46d78"
+        ],
+        "sha256": "722ce000f17b65110991e78ef016e1b5a590a5d7807bdbb7de2f675eed6ae61a",
+        "trechosSha256": "da08e6f1339113f6f6d7091a13f6fa546c1ba8ff3e0ef1665796101fee6e25aa"
+      }
+    ],
+    "imagensConferidas": [
+      "quadril/quadril-0328-1.jpeg"
+    ],
+    "justificativaRemocaoAlerta": "Figura original aberta individualmente: A mostra as curvas corticais de Lowell; B, os ângulos de Garden. Os rótulos estão visíveis e correspondem ao gabarito A. O aviso anterior era condicional à ausência de inspeção da ordem, agora resolvida. Não existe divergência real a manter; aula descreve cada painel e preserva o gabarito."
+  }
+}

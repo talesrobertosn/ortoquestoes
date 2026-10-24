@@ -1,0 +1,399 @@
+{
+  "trauma-1300": {
+    "questaoSha256": "a471aa163e2051e9191f6d2c02fc574ebb3bc8fa98c82e9a23229cface65c2c5",
+    "comentarioAnteriorSha256": "e0322d2ccba553bc81ad5031ab8f770825b0802e72f36c3a64d2862e8de1531c",
+    "comentario": {
+      "conceito": "**O ângulo espinomedial é o ponto mais fraco da circunferência do corpo biomecânico.** A pergunta delimita a circunferência, e isso evita confundir a resposta com o centro da fossa infraespinal, que é a área de osso mais fino.\n\nA escápula não distribui massa e carga de modo uniforme. Glenoide, colo e borda lateral são espessos; os pilares lateral e espinal conduzem a carga a partir da glenoide. A borda medial, mais fina, une esses pilares. O ângulo superior e a fossa supraespinal vizinha são descritos como apêndice muscular, sem transmissão da compressão glenoidal.\n\nO ângulo espinomedial é uma passagem frequente dos traços do corpo. Isso conecta anatomia e imagem: não é uma linha desenhada ao acaso no centro de um osso triangular, mas uma ruptura relacionada aos pontos fracos de uma estrutura com dois caminhos principais de carga.\n\n**Leia “Osso grosso e osso fino”, na Biblioteca.** Separe área central mais fina de ponto fraco da circunferência. O qualificativo do enunciado muda a resposta.\n\n**Por que esta questão foi criada.** O capítulo usa a arquitetura biomecânica para explicar os traços e orientar a fixação. O simulado testa essa ligação, em vez de cobrar apenas os nomes dos três ângulos anatômicos.",
+      "correta": "**C: ângulo espinomedial.** É o ponto fraco periférico destacado e participa de um dos traços principais na maioria das fraturas do corpo. O centro da fossa infraespinal é outro dado, referente à espessura central.",
+      "incorretas": {
+        "A": "**O ângulo inferior é uma referência do corpo e do pilar lateral, mas não é o ponto periférico mais fraco nomeado.** Escolhê-lo por estar no ápice do triângulo confunde forma geométrica com arquitetura de carga.",
+        "B": "**O ângulo superior pertence ao apêndice muscular descrito, fora da transmissão principal de compressão glenoidal.** Isso não o torna o ponto de passagem predominante dos traços do corpo biomecânico perguntado.",
+        "D": "**O colo pertence à região mais espessa e conecta a glenoide ao corpo.** Não é o ponto fraco da circunferência que a fonte identifica como ângulo espinomedial. A alternativa troca uma região lateral resistente pela transição periférica pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-091af5cd",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-58542d07"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "f4d8da196f5cc75d9528cf4d469f4036a96a6e04275c5c03ffaefcc0efb0dade"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1302": {
+    "questaoSha256": "804bd16c23eabe248e315d22b07744602300383c662fbb244d919f7a3b427355",
+    "comentarioAnteriorSha256": "6a602c6697c1f1c830ceefe4a502081d57dd4aaec7c45187d31283d49741e648",
+    "comentario": {
+      "conceito": "**O pilar superior é o terço médio da clavícula; o inferior é a junção do corpo lateral da escápula com a espinha.** Esses apoios sustentam o anel do complexo suspensor. Não são sinônimos de dois componentes quaisquer da sua circunferência.\n\nO anel contém glenoide, coracoide, coracoclaviculares e coracoacromial, clavícula lateral, acromioclavicular e acrômio no mapa do resumo. A diáfise clavicular entra como suporte superior, enquanto a junção escapular constitui o apoio inferior. A diferença entre clavícula lateral e terço médio é decisiva nas opções.\n\nUma lesão isolada do anel pode preservar estabilidade; duas interrupções, ou uma interrupção combinada à fratura de um pilar, podem torná-lo instável. O modelo ajuda a entender por que contar fraturas sem localizar os pontos de falha fornece uma informação incompleta.\n\n**Leia “O anel de Goss”, na Biblioteca.** Desenhe primeiro a circunferência e depois acrescente os dois apoios. Assim, uma estrutura importante do anel não será confundida com um pilar.\n\n**Por que esta questão foi criada.** O TECOC cobrou componentes do complexo e o TARO 2013, combinações que produzem instabilidade. O simulado acrescenta o papel dos apoios para tornar o modelo funcional, além da lista anatômica.",
+      "correta": "**D: terço médio da clavícula e junção do corpo lateral com a espinha.** São os apoios superior e inferior respectivamente, distintos dos elementos do anel que eles sustentam.",
+      "incorretas": {
+        "A": "**Coracoide e colo não são o par de pilares nomeado.** Ambos se relacionam à região glenoidal, mas proximidade ou importância para estabilidade não lhes atribui os papéis superior e inferior definidos por Goss.",
+        "B": "**Clavícula lateral e acrômio são elementos do anel.** A alternativa troca componentes da circunferência pelos suportes. O superior é o terço médio, e o inferior é a junção corpo lateral–espinha.",
+        "C": "**O apoio superior está correto; o inferior foi substituído pelo coracoide.** O coracoide participa do anel e das ligações ligamentares, mas não substitui a junção escapular descrita como pilar inferior."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-b3773607",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-98825935",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-03f5cb82"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "c220380db61ea81c1050021d8448822dba074dc49d9a86474789baba7d4b15c0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1303": {
+    "questaoSha256": "58f1b3ab9cd3a7fd995d3f2896ca4ec082e884c4746af71d90fe26907931c641",
+    "comentarioAnteriorSha256": "8d2c0daa2a600421768d0f3b766b6fb13aa1df2be5ce4553c4ee1148aeb1e87d",
+    "comentario": {
+      "conceito": "**O supraescapular pode ficar encarcerado no traço do colo, manifestando-se por atrofia do infraespinal.** A questão combina estrutura lesada e sinal muscular. É necessário acertar os dois, em vez de escolher um nervo conhecido da região sem seguir seu trajeto.\n\nO nervo contorna a base da espinha pela incisura espinoglenoidal e termina no infraespinal. A proximidade do colo torna plausível o aprisionamento pelo traço. O autor encontrou essa situação em três fraturas do colo cirúrgico, mas esse número não representa a incidência universal de toda lesão neural escapular.\n\nUma perda muscular persistente não deve ser atribuída automaticamente apenas à dor e à imobilização. A atrofia focal pode orientar a avaliação neural. Também é preciso separar o aprisionamento traumático da lesão por tração do mesmo nervo durante a mobilização do infraespinal no acesso de Judet: o nervo pode ser o mesmo e o mecanismo ser diferente.\n\n**Leia as complicações conservadoras e o trajeto do supraescapular, na Biblioteca.** Relacione local do traço, percurso neural e músculo afetado.\n\n**Por que esta questão foi criada.** O TARO 2023 cobrou o supraescapular em risco na via de Judet. O simulado amplia a leitura para a lesão já produzida pela fratura, evitando atribuir todo déficit ao procedimento.",
+      "correta": "**A: supraescapular e infraespinal.** A combinação corresponde ao aprisionamento no colo descrito e ao músculo em que a atrofia se manifesta. Isso diferencia o sinal de um déficit neural genérico do ombro.",
+      "incorretas": {
+        "B": "**Acerta o nervo e troca o músculo.** O achado destacado no resumo é atrofia do infraespinal. A relação final do trajeto supraescapular com esse músculo fornece a pista para a segunda lacuna.",
+        "C": "**Acerta o músculo e substitui o nervo pelo axilar.** O mecanismo apresentado é o encarceramento do supraescapular na fratura do colo. A importância do axilar no exame geral do ombro não o torna responsável por esse par específico.",
+        "D": "**É outro par neural-muscular da região, mas não o evento descrito.** A pergunta exige o nervo preso no colo e a atrofia nomeada na fonte, supraescapular e infraespinal. Não basta reconhecer uma associação anatômica próxima."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complicações; Anatomia aplicada: arquitetura, músculos e nervo supraescapular; Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complicações",
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular",
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "complicacoes-3f02ac41",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef",
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "7c9da9377b1fcedffef878e502f2da0fb9955c469c95d9b9e45ba389dfaa66de"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1320": {
+    "questaoSha256": "b60db1de76e7a922c2fa71dce5ceb71c33c7d9756e5683b79a229af626e61b8e",
+    "comentarioAnteriorSha256": "a452d988439e00498881362b6fc55fe6496021689d601830cc0a54a23ac49734",
+    "comentario": {
+      "conceito": "**Com ruptura coracoclavicular e coracoacromial, o colo cirúrgico torna-se totalmente instável: a glenoide vai para distal e medial, e a distância coracoclavicular aumenta.** O fragmento inclui o coracoide, cujos músculos contribuem para a direção do deslocamento.\n\nA classificação do autor usa o estado das conexões. Com ambos os ligamentos íntegros, o colo cirúrgico pode manter pouco desvio. Se rompe apenas o coracoacromial, a instabilidade é rotacional e a distância coracoclavicular pode permanecer normal. Rompendo os dois, aumenta a separação, sobretudo coracoclavicular, e o bloco glenoidal perde a sustentação.\n\nHá ainda uma forma óssea totalmente instável: a base do coracoide se separa do colo com ligamentos íntegros. Nesse caso, as distâncias podem continuar normais e o fragmento glenoidal vai para distal e valgo, porque os músculos do coracoide não o puxam mais da mesma maneira. A normalidade de uma distância não prova estabilidade em todos os padrões.\n\n**Leia “As três fraturas do colo e para onde vai a glenoide”, na Biblioteca.** Primeiro descubra se a falha é ligamentar ou óssea; depois associe direção e distância.\n\n**Por que esta questão foi criada.** O TEOT 2023 cobrou a direção do desvio na lesão ligamentar do colo. O simulado explicita os dois ligamentos e acrescenta a medida coracoclavicular para testar a conexão mecânica.",
+      "correta": "**B: distal e medialmente; aumenta.** É o arranjo do colo cirúrgico totalmente instável por ruptura dos dois ligamentos. Os vínculos do fragmento com o coracoide ajudam a explicar a direção.",
+      "incorretas": {
+        "A": "**Combina o desvio de um padrão diferente com uma distância que não corresponde à ruptura dupla.** Distal e valgo, com distâncias normais, pode aparecer na forma óssea com a base do coracoide separada; não é o cenário ligamentar informado.",
+        "C": "**Acerta a direção e erra a distância.** A ruptura de ambos os ligamentos aumenta sobretudo a distância coracoclavicular. Sua preservação é mais coerente com outros padrões, como instabilidade rotacional isolada ou falha óssea específica.",
+        "D": "**Acerta o aumento da distância e troca medialização por valgo.** O bloco que inclui o coracoide é puxado para distal e medial no padrão ligamentar descrito. Valgo lembra colo anatômico ou perda óssea da conexão com a base do coracoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-69bcc1c9",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-d9e7456b",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-70361297",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-c55288f1"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "5da4c9a74f985a3531bf8d6b7a12dd8591725290729d392bcf9b83211a6cf3e3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1322": {
+    "questaoSha256": "3664c1f1eb40d1c6e14bcd8a470f605098bff7a32d682d4d385d17adf37afd9a",
+    "comentarioAnteriorSha256": "a58786b568c9669608dcbadab8eb4a282f287df099e5a05b44695fa0e95ec9e1",
+    "comentario": {
+      "conceito": "**A fratura transespinhal desvia em varo e, quando operada, quase sempre exige fixar os dois pilares.** O traço cruza a espinha e sai pela borda lateral, comprometendo mais de um caminho de sustentação do fragmento glenoidal.\n\nO fragmento leva fossa, colo, coracoide, acrômio e espinha lateral. O varo é especialmente marcado na borda lateral. A associação com fratura da diáfise clavicular é frequente nesse padrão do resumo, mas a necessidade de restaurar a arquitetura escapular não deve ser reduzida à decisão de fixar a clavícula.\n\nO capítulo recomenda começar pelo pilar lateral nas reconstruções dos dois pilares, o que pode melhorar a posição do espinal. Isso não significa que a melhora indireta dispense sempre a segunda fixação: no transespinhal, a fonte ressalta que ambos quase sempre precisam ser estabilizados.\n\n**Leia a tabela do colo e “Implantes e redução”, na Biblioteca.** A direção do desvio ajuda a reconhecer o padrão, enquanto os pilares atingidos orientam a construção.\n\n**Por que esta questão foi criada.** O autor distingue o transespinhal dos colos anatômico e cirúrgico. O simulado testa se essa diferença é entendida tanto na deformidade quanto no planejamento de fixação.",
+      "correta": "**D: varo e os dois pilares.** É a combinação típica apresentada. “Quase sempre” preserva o caráter da recomendação, sem transformar uma regra do capítulo em obrigação idêntica para qualquer variação anatômica.",
+      "incorretas": {
+        "A": "**Troca o desvio para valgo e restringe a fixação ao pilar lateral.** O padrão transespinhal é descrito em varo e costuma exigir os dois pilares. Valgo é uma pista de outros padrões de colo, não deste.",
+        "B": "**Acerta a extensão habitual da fixação e erra o sentido do desvio.** A necessidade de estabilizar dois pilares não muda a angulação descrita. Os dois componentes precisam pertencer ao mesmo padrão.",
+        "C": "**Acerta o varo e subestima a reconstrução habitual.** Fixar primeiro o lateral pode melhorar o espinal, mas o transespinhal quase sempre exige estabilizar ambos. Sequência de redução e suficiência da fixação são questões diferentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula; Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula",
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-0195e5db",
+          "vias-de-acesso-e-tecnica-de-fixacao-2baae6b4",
+          "vias-de-acesso-e-tecnica-de-fixacao-f0b5f7c2"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "52e473665bf09da0241bcb4a532bce3bbeec34524b0d7bd4b8bfe074e3322c03"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1323": {
+    "questaoSha256": "a0b0d68bcf39a89ee6148025036688dae565985676729984c6108553c5aa2cdf",
+    "comentarioAnteriorSha256": "e5124b5b3d43c243b09536e21347ef819a8c26cef1a577b433e75b5e869ef30a",
+    "comentario": {
+      "conceito": "**Na série do autor, a fratura do pilar lateral é a mais frequente, com traço habitual até o ângulo espinomedial.** O enunciado delimita a população: é a experiência de Bartoníček, não uma distribuição universal idêntica em todo serviço.\n\nO pilar lateral representou 78% das fraturas do corpo e 36% de todas as fraturas da escápula na série. Esses percentuais usam denominadores distintos. O padrão mais comum era em duas partes, com traço transverso da metade superior da borda lateral ao ângulo espinomedial.\n\nEssa fratura infraespinal pode parecer uma fratura do colo com medialização da glenoide no AP. A reconstrução 3D pode mostrar que a glenoide permaneceu na posição e a porção inferior do corpo se deslocou lateralmente. O erro de nome muda o entendimento da mecânica e pode confundir a discussão de ombro flutuante.\n\n**Leia “Os três padrões do corpo” e a crítica à aparente fratura do colo, na Biblioteca.** Frequência, trajeto e interpretação tridimensional precisam ser associados.\n\n**Por que esta questão foi criada.** O capítulo usa a tomografia para questionar diagnósticos clássicos de colo. Este padrão frequente é a peça anatômica que explica boa parte dessa controvérsia.",
+      "correta": "**B: pilar lateral e ângulo espinomedial.** É o padrão mais frequente da série e o destino habitual do traço em duas partes. O dado de frequência pertence à população do autor.",
+      "incorretas": {
+        "A": "**O pilar espinal é menos frequente e o trajeto indicado não é o padrão dominante.** Ele foi 6% das fraturas do corpo, enquanto o lateral foi 78%. O ângulo superior não substitui o espinomedial na fratura infraespinal habitual.",
+        "C": "**Acerta o pilar e muda a saída do traço.** O ponto descrito é o ângulo espinomedial. O ângulo superior pode entrar em outros padrões, inclusive dos dois pilares, mas não é a terminação habitual pedida.",
+        "D": "**Mantém o destino do traço habitual e troca o pilar predominante.** A resposta exige os dois elementos da fratura lateral em duas partes. Um ângulo correto não converte o pilar espinal no mais frequente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Fraturas do corpo e fraturas complexas; Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Fraturas do corpo e fraturas complexas",
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "fraturas-do-corpo-e-fraturas-complexas-d6f735bd",
+          "fraturas-do-corpo-e-fraturas-complexas-04f714ac",
+          "fraturas-do-corpo-e-fraturas-complexas-ffceedd8",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-d95813eb"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "dedf284b01a655d246fa76f6e1ebafe9058dca8fadec4609d7d28f2d3ffab8d2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1338": {
+    "questaoSha256": "01c8fbd344d8acfcc70268e4e5f6e34d11261c2a68557d925e0a227f059ea716",
+    "comentarioAnteriorSha256": "1513fbec2a222b9e119a94d5594bcb43edfdc13d4875df3ff1971529ecb711a6",
+    "comentario": {
+      "conceito": "**Bartoníček prefere reduzir e estabilizar a escápula antes de fixar a clavícula associada.** O enunciado pergunta a preferência do autor do capítulo 33. É essencial identificar esse contexto porque o capítulo 34, de clavícula, apresenta outra sequência.\n\nNo resumo de escápula, fixar só a clavícula não corrige de modo confiável o desvio tridimensional do corpo ou do colo. A escápula forma calo cedo, e adiar a redução pode dificultá-la. O autor descreve desvios persistentes após fixação isolada da clavícula e usa a via de Judet para a escápula desviada; depois aborda a clavícula por incisão separada.\n\nNo capítulo 34, os autores propõem, quando se decide operar o ombro flutuante clássico, fixar a clavícula primeiro e refazer a imagem, acrescentando a escápula se a glenoide continuar inadequada. Essa diferença não pode ser escondida em uma regra universal de “sempre começar pela mesma fratura”.\n\n| Fonte consultada | Sequência defendida no contexto descrito |\n|---|---|\n| Capítulo 33, escápula | Escápula primeiro; clavícula depois |\n| Capítulo 34, clavícula | Clavícula primeiro; reavaliar necessidade da escápula |\n\nAs séries são heterogêneas, e o capítulo 33 admite resultados muitas vezes semelhantes entre estratégias. A preferência do autor deve ser distinguida de superioridade universal demonstrada. Padrão verdadeiro, desvio, ligamentos e condição do paciente continuam centrais.\n\n**Leia “Tratar o ombro flutuante”, no resumo de escápula, e compare com “Ombro flutuante”, no de clavícula.** A comparação ensina por que localizar a fonte da recomendação é parte do raciocínio.\n\n**Por que esta questão foi criada.** Ela testa a preferência explícita do capítulo de escápula e evita transportar automaticamente a sequência do capítulo de clavícula para um enunciado que nomeia outro autor.",
+      "correta": "**D: clavícula depois de reduzir e estabilizar a escápula.** É a preferência de Bartoníček no capítulo 33. A alternativa C corresponde a outra estratégia, descrita no capítulo 34, e não deve ser ensinada como impossível ou sempre errada fora deste contexto.",
+      "incorretas": {
+        "A": "**A redução indireta apenas pela clavícula não é considerada confiável pelo autor.** Ele ressalta a deformidade tridimensional e relata persistência de desvio. Bons resultados de algumas séries não garantem que a estratégia corrija qualquer colo ou corpo.",
+        "B": "**Resultados semelhantes em séries não significam escolher conservador para toda associação.** O autor opera padrões desviados do colo e do corpo em pacientes apropriados. A decisão exige avaliar deformidade e condição clínica, não apenas a existência de comparação sem diferença média.",
+        "C": "**É uma estratégia reconhecida, mas não a preferência solicitada.** O capítulo 34 propõe clavícula primeiro e reavaliação; Bartoníček prefere estabilizar a escápula antes. A resposta depende do autor e da anatomia do caso, não de negar que outra sequência seja utilizada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula.",
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seção: Ombro flutuante. Usado para comparar a sequência com a preferência do autor do capítulo 33."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-cf2b403c",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-16bb4d46"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "309cd3d1111a4c6617106673b993fe936d27eea812e6cee63f2114c18b79b99e"
+      },
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Ombro flutuante, costelas e terço medial"
+        ],
+        "blocos": [
+          "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "fcf48d9d12e572c29bc1f618d90aab032c4f0e6e19965ae2adfb82a67c466150"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1340": {
+    "questaoSha256": "9cca3debb6427f39e343681be1a62ec341d475558d54019c941b58d5ae5062b3",
+    "comentarioAnteriorSha256": "8f14c6a5e0b6d24b8093ff370e4c5270edf94f8a24685c1a71511a11eb2a0715",
+    "comentario": {
+      "conceito": "**No conceito estrito de Bartoníček, ombro flutuante é a glenoide que perdeu toda conexão osteoligamentar com escápula e esqueleto axial.** Isso ocorre em fratura desviada do colo anatômico ou em fratura totalmente instável do colo cirúrgico. A resposta depende da expressão “no conceito do autor”.\n\nA definição clássica de Herscovici usa clavícula diafisária e colo escapular ipsilaterais. O modelo de Goss amplia a discussão para rupturas do anel suspensor. O autor argumenta que esses rótulos foram aplicados a muitas fraturas do corpo mal interpretadas como colo na radiografia.\n\nNa sua série, verdadeiras fraturas do colo com clavícula foram raríssimas; já corpo e clavícula eram mais comuns. A tomografia pode mostrar que a aparente medialização da glenoide é lateralização da porção infraespinal, com conexões glenoidais ainda preservadas. O número de fraturas, isoladamente, não demonstra a desconexão total exigida no conceito.\n\nO capítulo não apaga a importância de lesões duplas do complexo. Ele distingue a instabilidade de processos e ligamentos da glenoide efetivamente livre. É possível reconhecer o clássico cobrado por uma banca e, ao mesmo tempo, entender a crítica anatômica do autor.\n\n**Leia “O conceito do autor”, na Biblioteca.** Pergunte quais conexões da glenoide permaneceram, em vez de usar “duas lesões” como sinônimo automático de glenoide solta.\n\n**Por que esta questão foi criada.** O TARO 2019 cobrou o conceito clássico de associação de fraturas. O simulado explicita a definição autoral para testar a controvérsia sem trocar o gabarito de uma prova por uma opinião de outra fonte.",
+      "correta": "**C: colo anatômico desviado ou colo cirúrgico totalmente instável.** São os dois cenários em que o autor considera a glenoide totalmente desconectada. A definição é mais estrita que “qualquer lesão dupla”.",
+      "incorretas": {
+        "A": "**É ampla demais para o conceito autoral.** Duas rupturas podem tornar o anel potencialmente instável sem deixar toda a glenoide desconectada. O autor exige demonstrar a perda das conexões osteoligamentares relevantes.",
+        "B": "**É a definição clássica de Herscovici, não a resposta ao qualificativo do enunciado.** O capítulo critica sua aplicação automática sem olhar os ligamentos e o padrão real do traço. A alternativa não deve ser chamada de falsa em todos os contextos.",
+        "D": "**É a associação que pode gerar uma aparência enganosa de fratura do colo no AP.** A fratura infraespinal do corpo com clavícula não prova glenoide totalmente solta. A reconstrução 3D e a análise das conexões distinguem o padrão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-514a8f28",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-9326f72f",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-c257bed2",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-3e879bce",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-90e86a25"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "d07992e7b2b90821618ba62d5cdc215341419779713d619832dab6ef296a1593"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1341": {
+    "questaoSha256": "a089111b0e25ff897aa0c892dcc7e62dcdfd80048d0e3727b37fbf176e3984e3",
+    "comentarioAnteriorSha256": "0d27a8634178370ea202adad68098790f96f23b701b63d3b429a12122d8e5642",
+    "comentario": {
+      "conceito": "**Na demonstração atribuída a Williams, clavícula diafisária e colo cirúrgico, sozinhos, não bastam: é necessária ruptura coracoclavicular e coracoacromial.** A estabilidade depende das conexões preservadas, além das linhas de fratura.\n\nA clavícula rompida desfaz uma ligação óssea com o tronco, mas a posição da escápula ainda é controlada por músculos escapuloaxiais, sobretudo trapézio. O fragmento glenoidal do colo cirúrgico inclui o coracoide. Com os ligamentos preservados, parte importante da sustentação permanece; rompendo ambos, o bloco pode tornar-se totalmente instável.\n\nA crítica do autor é que a expressão “colo mais clavícula” omite esse componente. Isso não nega a definição histórica usada em várias provas; mostra por que a mesma combinação aparente de fraturas pode ter comportamentos diferentes conforme os ligamentos e o padrão anatômico.\n\n**Leia “O conceito do autor” e os subtipos do colo cirúrgico, na Biblioteca.** A pergunta “o que ainda conecta a glenoide?” é mais informativa que contar apenas ossos fraturados.\n\n**Por que esta questão foi criada.** A instabilidade é tema recorrente no anel de Goss. O simulado testa a contribuição ligamentar demonstrada por Williams e a diferença entre associação radiográfica e desconexão efetiva.",
+      "correta": "**B: ruptura dos coracoclaviculares e do coracoacromial.** É o requisito adicional descrito para a combinação de fraturas mencionada no enunciado. O mecanismo deve ser lido no contexto do colo cirúrgico.",
+      "incorretas": {
+        "A": "**Uma luxação esternoclavicular adicional não é o requisito estabelecido nessa demonstração.** A fonte discute especificamente as conexões ligamentares do coracoide ao fragmento e à cintura. Acrescentar outra lesão axial não substitui essa análise.",
+        "C": "**Um desvio clavicular acima de 2 cm não prova ruptura dessas conexões.** A medida pode pesar em decisões sobre a clavícula, mas não equivale ao critério de desconexão glenoidal de Williams.",
+        "D": "**Uma fratura do acrômio pode modificar o complexo, mas não é a condição adicional nomeada pelo estudo citado.** O par ligamentar do enunciado é o elemento necessário na demonstração. Não se deve trocar uma análise específica por qualquer segunda ou terceira fratura."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-69bcc1c9",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-70361297"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "7ef2e4db1ef70f1e5945c05bec10cabec30ca35039cf84226f1924b11af23a2c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1342": {
+    "questaoSha256": "7c63ac1d58fb38c1e7d5179079e0159ecd44c7cac53f1c1cb288dcf311320605",
+    "comentarioAnteriorSha256": "816b3ceec067572da2098823739410bf1d356e8ec48b37f8dd5b4ff8b6f289ad",
+    "comentario": {
+      "conceito": "**Herscovici introduziu o termo ombro flutuante para fraturas ipsilaterais da diáfise clavicular e do colo da escápula.** A pergunta é histórica: pede quem criou o termo e qual era a definição correspondente. Não pede a definição estrita defendida pelo autor atual.\n\nGanz e Noesberger haviam descrito uma combinação mais exigente, incluindo ruptura dos coracoclaviculares e coracoacromiais. Goss organizou o modelo do anel suspensor, no qual rupturas múltiplas podem produzir instabilidade. Bartoníček critica a simplificação posterior para “colo mais clavícula” sem avaliar ligamentos ou confirmar se a fratura era realmente do colo.\n\n| Nome | Papel destacado no resumo |\n|---|---|\n| Ganz e Noesberger | Descrição com fraturas e ruptura ligamentar |\n| Herscovici | Termo e definição clássica de clavícula mais colo ipsilateral |\n| Goss | Modelo do anel suspensor e instabilidade por rupturas |\n| Bartoníček | Definição estrita pela perda de todas as conexões da glenoide |\n\nEssas contribuições não devem ser fundidas numa única autoria. Saber o termo clássico ajuda a interpretar provas; compreender as definições seguintes ajuda a analisar a estabilidade real. Uma definição histórica correta não garante que toda fratura rotulada assim na radiografia corresponda ao mesmo padrão anatômico.\n\n**Leia “A história do ombro flutuante”, na Biblioteca.** Separe nome, definição e crítica atual antes de escolher o par.\n\n**Por que esta questão foi criada.** A associação clássica apareceu no TARO 2014. O simulado acrescenta a autoria para organizar as diferentes definições que coexistem no capítulo e nas provas.",
+      "correta": "**A: Herscovici e clavícula diafisária com colo escapular do mesmo lado.** O par reproduz a origem do termo no resumo. Não deve ser trocado pela definição ligamentar mais estrita de outra descrição.",
+      "incorretas": {
+        "B": "**Acerta a autoria do termo e atribui a ela a definição ligamentar de Ganz e Noesberger.** A pergunta exige que nome e conceito correspondam à mesma contribuição histórica. A existência de uma definição mais estrita não altera o par pedido.",
+        "C": "**Acerta a associação clássica e troca a autoria por Goss.** Goss está ligado ao modelo do anel e à instabilidade das rupturas, não à criação do termo na história apresentada.",
+        "D": "**Mistura a autoria do anel com a descrição que exige ruptura ligamentar.** O par não corresponde à introdução do termo ombro flutuante. História da nomenclatura e análise biomecânica precisam permanecer identificadas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Complexo suspensor superior, ombro flutuante e colo da escápula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Complexo suspensor superior, ombro flutuante e colo da escápula"
+        ],
+        "blocos": [
+          "complexo-suspensor-superior-ombro-flutuante-e-co-514a8f28",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-9326f72f",
+          "complexo-suspensor-superior-ombro-flutuante-e-co-6f2bda23"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "4f48a3de0d92fa51a638040547d3f6d31f1e30c4177703e174552404b4af3c6b"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

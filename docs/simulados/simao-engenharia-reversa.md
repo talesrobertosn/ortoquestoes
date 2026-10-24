@@ -282,3 +282,112 @@ Cada nota de frente tem a lista. Os principais:
    assunto (epônimo, classificação, número ou caso).
 3. Use os distratores da família certa (epônimos vizinhos, números vizinhos, inversões).
 4. Lote com `PROVA = "SIMÃO"` e `AREA = "cirurgia-mao"`; `--conferir`; aplicar; validar.
+
+## SIMÃO 2023, prova espelhada (fechada em 20/10/2026)
+
+97 das 100 questões viraram OrtoQuestões Simulados com o selo "Inspirada no SIMÃO 2023" (mao-1932 a mao-2022;
+cotovelo em ombro-cotovelo-0658 a 0663). Ficaram sem fonte a 37 (osteoblastoma no punho: a correção cita o livro
+da SBCM de lesões não traumáticas), a 38 (sinal de Egawa, só listado no resumo) e a 89 (graus aceitáveis na falange
+proximal). Gabarito final: A 25, B 24, C 24, D 24.
+
+### Padrões desta prova
+- **Frase do Green virando questão**: muitas alternativas corretas são quase transcrições (zona segura de 110 graus
+  centrada 10 graus anterior; queixas residuais "emanam da coluna ulnar"; sequência reversa de Mayfield "permitindo
+  luxação perilunar dorsal"). Ler a frase inteira resolve a questão e mostra os distratores.
+- **Tabelas como questão**: Cooney (clinodactilia complexa = sindactilia; 45 graus separa a "complicada"), Kellam
+  (Apert = braquidactilia com sindactilia), Hotchkiss, Jupiter (Monteggia posterior tipo B, metafisária), Tabela 35.2
+  da embriologia (ZPA = sonic hedgehog; "fator de transcrição, Lmx-1" é a linha da via Wnt), Tabela 38.5 e 38.6.
+- **Questão repetida na prova**: a ordem da polidactilia central caiu duas vezes (23 e 62); a segunda virou outro
+  dado do mesmo parágrafo (70% a 90% com sindactilia).
+- **Itens confirmados no Green** da lista "a conferir": Cooney com corte de 45 graus (cap. 36, Tabela 36.7,
+  p. 1433); polidactilia central mais comum no anular, depois médio e indicador (cap. 36, p. 1387).
+
+### Divergências com a correção (explicadas no comentário de cada questão)
+- 9 (colo do metacarpo): a correção deu como certa "encurtamento acima de 1 cm associa-se a pseudogarra"; o
+  Green só diz que até 1 cm, sem pseudogarra, costuma ser tolerado. A alternativa correta passou a ser a frase do livro.
+- 15 (cisto sinovial): a correção marcou "mucina"; o Green diz que a mucina tem altas concentrações de ácido
+  hialurônico. A mucina foi para o enunciado.
+- 16 (Hotchkiss II): a alternativa da correção dizia "cominutiva"; o tipo II é desviado e sem cominuição grave.
+- 71 (perilunar dorsal): a resposta da banca (radioescafolunar e escafolunar dorsal) é a do padrão reverso
+  (cap. 13, p. 500); o enunciado passou a nomear o padrão.
+- 81 (portal 3-4): a banca juntou "Testut ou escafolunar"; são estruturas distintas, e a alternativa ficou
+  "TESTUT (radioescafolunar)".
+- 84 (ARUD crônica): duas afirmativas eram defensáveis; ficou a do desvio coronal, literal no Green.
+- 40 e 73: a direção (anterior) da luxação congênita da cabeça do rádio e a sequência clássica do reimplante vêm
+  dos resumos; o Green não elege uma direção e descreve outra sequência no seu centro.
+
+### Lições para as próximas provas
+- O Tales quer a questão bem próxima da original; mudar o ângulo só quando o original tiver defeito ou repetir.
+- Citação literal do Green com flexibilidade: muita quando a resposta é a letra do livro, nenhuma quando não acrescenta.
+- Conferir cada página na marca "===== ... p. N" acima da linha; três erros de página foram pegos assim (Tinel
+  p. 1157; SDRC p. 2013 e 2027; escafoide p. 679).
+
+## Prova da SBCM: SBCM 2024 (fechada em 21/10/2026)
+
+89 das 100 questões viraram OrtoQuestões Simulados com o selo "Inspirada na questão N da SBCM 2024" (mao-2023 a
+mao-2105; cotovelo em ombro-cotovelo-0664 a 0669). Gabarito final: A 22, B 22, C 22, D 23.
+
+Pendentes (11): 2, 19, 23, 71, 72, 76 e 79 dependem de figura ou radiografia sem resposta única pelo texto; 25
+(prega palmar), 26 (linha cardinal de KAPLAN), 27 (ângulo escafossemilunar) e 28 (teste de BERGER) não estão no
+Green (a correção cita The Wrist ou livros da SBCM; os PDFs do Pardini são imagem, sem texto pesquisável).
+
+### Padrões desta prova
+- **Tabelas do Green como questão**: MAYO do olécrano (Tabela/Fig. 20.5), HASTINGS e GRAHAM (Tabela 21.1), ASIA
+  (Tabela 33.1), BAYNE modificada (Tabela 38.2), artrogripose distal (Tabela 39.1), indicadores de avulsão
+  (Tabela 40.1), APERT (Tabela 36.1), escada da PC (Tabela 32.6), tipos musculares (cap. 44), oponentoplastias
+  (Tabela 31.4), compartimentos (cap. 51). Ler a tabela inteira dá a resposta e os distratores.
+- **Figura do próprio Green**: a 56 era a Fig. 44.2 (pele palmar, letras A a D iguais às do livro) e a 77 a Fig. 48.6
+  (BRUNELLI na ponta do polegar). Viraram questões sem imagem, pela localização dos receptores e pela descrição do caso.
+- **Lacunas "____"**: reescritas com "respectivamente" (54, 57, 58, 86).
+- **Muitas transferências e retalhos**: cap. 31 (BURKHALTER = EIP, LITTLER = FSD do médio, PT para ERCC em todos os
+  conjuntos, nervo FSD para ERCC e FRC para interósseo posterior) e cap. 44, 45 e 48.
+
+### Divergências e ângulos trocados
+- 31 (LEECHAVENGVONGS): o gabarito dizia neurotizar todo o axilar; o Green faz, como rotina, só a divisão anterior
+  e cita o axilar inteiro como justificativa teórica. A questão foi reescrita com a técnica habitual.
+- 53 (BAYNE tipo 3): a tradução imprime "O corpo está ausente" na célula do rádio distal; a Fig. 38.1 resume como
+  "ausência parcial". A resposta foi escrita assim, e o comentário explica.
+- 9 (radial no cotovelo): a lista da banca põe o septo intermuscular lateral; o texto do Green põe a borda do ERCC
+  (o septo aparece na Fig. 28.31). Comentário explica.
+- 49 (polegar na paralisia do mediano com intrínsecos): "estendido e supinado" também aparece no Green, para lesão
+  combinada ulnar e mediano alto; a questão liga a postura à contratura do primeiro espaço para ficar única.
+- 63 (retalhos venosos): inervação e "fluxo invertido" não são tratados pelo Green desse jeito; trocadas por
+  afirmações que o capítulo permite julgar.
+- 92 (sinostose): a resposta é a recomendação clássica; o Green conta que muitos hoje deixam os dois em leve pronação.
+
+### Lições para as próximas provas
+- Conferir a página pela marca "===== ... p. N" sempre; nesta prova a página certa diferiu da sugerida várias vezes
+  (cap. 51: 10 compartimentos na p. 1975; MADELUNG na p. 1503; sinostose na p. 1516; cap. 38 começa na p. 1494).
+- Quando a coluna vem truncada, `pdftotext -enc UTF-8 -raw` do PDF do capítulo achou o trecho (indicação ideal da
+  transferência de dedo do pé, cap. 36, p. 1423).
+- Nunca afirmar fato de anatomia geral que o trecho não traz (ex.: inervação do FUC, ligamento de STRUTHERS): ou se
+  acha no Green, ou sai do comentário.
+
+## Prova da SBCM: SBCM 2022 (fechada em 22/10/2026)
+
+89 das 100 questões viraram OrtoQuestões Simulados com o selo da SBCM 2022 (mao-2106 a mao-2188; cotovelo em
+ombro-cotovelo-0670 a 0675), todas no padrão profundo (as 45 primeiras refeitas em revisao_01 a 09). Gabarito final:
+A 22, B 23, C 22, D 22. Pendentes: 19, 21, 34, 44, 45 e 54 dependem de figura (letras ou foto); 5, 52, 74, 89 e 95 ficaram
+sem fonte (tipos da luxação isolada do escafoide; o que mais simula ruptura extensora na AR; artrodese junto do
+encurtamento do capitato; mecanismo da toxina botulínica; deformidades da artrite psoriática).
+
+### Padrões desta prova
+- Muitas questões de figura (anatomia com letras, radiografias, fotos de técnica): quando a deformidade ou o achado
+  podiam ser descritos com o texto do Green, a questão foi reescrita descrevendo-os (27, 43, 12, 83); quando a resposta
+  dependia de letras numa figura, ficou pendente.
+- Enunciados truncados e alternativas repetidas no original (38, 70, 82, 90): completados pelo que o Green descreve.
+- Tabelas do Green como questão: NALEBUFF (Fig. 55.32), ENNEKING (Tabela 59.1), classificação do capítulo (Fig. 18.6),
+  Kurtzman e Stern já tinham caído em outras provas.
+
+### Divergências e ângulos trocados
+- 26: o gabarito oficial (HOLT-ORAM) diverge do Green, que não associa a deficiência ulnar a condições sistêmicas.
+- 51: "fratura do coronoide" também seria defensável (o Green cita a restauração inadequada do coronoide); o distrator
+  virou o ligamento anular.
+- 22: subdivisão do feixe anterior do colateral medial que o Green não traz; a questão compara os três feixes.
+- 30, 68, 75, 94, 97: ângulos ajustados ao que o livro descreve (notas no cabeçalho de cada lote).
+
+### Lições para as próximas provas
+- Frase cortada pela tradução em colunas não é "sem fonte" antes de olhar a página: `pdftotext -raw` e, se ainda faltar,
+  `pdftoppm` da folha e ler a imagem. Assim a 38 saiu da pendência (p. 398 e 399).
+- No padrão profundo, cada alternativa precisa do mecanismo e de quando seria verdadeira; a mediana ficou entre 3.200 e
+  4.400 caracteres por questão.

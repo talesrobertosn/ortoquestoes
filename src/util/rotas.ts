@@ -133,7 +133,8 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
     areas: lerAreas(consulta),
     temas: lista('temas'),
     subtemas: lista('subtemas', '|'),
-    provas: lista('provas'),
+    // Links antigos com a prova "TEOT/TARO" (hoje "Ortopedia") continuam funcionando.
+    provas: lista('provas').map(p => (p === 'TEOT/TARO' ? 'Ortopedia' : p)),
     anos: lista('anos')
       .map(Number)
       .filter((n) => Number.isFinite(n)),

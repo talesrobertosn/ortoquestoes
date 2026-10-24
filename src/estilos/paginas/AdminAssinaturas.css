@@ -790,3 +790,8 @@ button.adm-estudo__item:focus-visible { outline: 2px solid var(--foco); outline-
   .adm-numeros .adm-estudo__item strong { font-size: 1.45rem; }
   .adm-bloco__busca { max-width: none; }
 }
+
+/* E-mails › Enviar e-mails: o topo que junta lembretes, cartas e relatórios (21/10/2026). */
+.adm-guia-emails { border-left: 4px solid var(--verdete); }
+.adm-guia-emails__lista { display: grid; gap: .35rem; margin: 0; padding-left: 1.1rem; }
+.adm-guia-emails__lista a { color: var(--verdete); }

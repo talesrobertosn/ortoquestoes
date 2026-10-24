@@ -1,0 +1,56 @@
+{
+  "basePublicada": "cb83e99f8b38706a33dc00c77c9ce32d68e1e7d7",
+  "lotes": {
+    "102-joelho-anatomia-e-exame.json": {
+      "sha256": "2e7afab4e94c8c46491d330517dea353084387ad329a27646c0aa73e8115b655",
+      "ids": [
+        "joelho-0271",
+        "joelho-0342",
+        "joelho-0308",
+        "joelho-0309",
+        "joelho-0355",
+        "joelho-0358",
+        "trauma-0225",
+        "trauma-1072",
+        "joelho-0094",
+        "trauma-0163"
+      ]
+    },
+    "103-joelho-decisoes-e-estresse.json": {
+      "sha256": "a2d63c59667486642c245e7f18838df7ef78572c0d214cc1a737ea0e789088bc",
+      "ids": [
+        "trauma-1619",
+        "trauma-1621",
+        "trauma-1622",
+        "trauma-1623",
+        "trauma-1624",
+        "trauma-1625",
+        "trauma-1626",
+        "trauma-1627",
+        "trauma-1629",
+        "trauma-1630"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 495,
+    "head": "ddd763136336067893ddeb6071adaa8c145c9d1c",
+    "ci": 40010816425,
+    "pages": 40011100692,
+    "deployJob": 120612521135,
+    "avulsosIntegrais": 30
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 testes passaram",
+    "acervo": "sem erros",
+    "cadeia": "102–103, 20 IDs únicos; aplicação reproduzida desde a base, fontes/hashes e todas as alternativas conferidos; proteção dos membros alheios e vinte avulsos integrais",
+    "interface": "0271, 0342, 0094, 1624, 1626 e 1630, celular/computador; alertas e destinos de fonte; capturas abertas, sem cortes nem erros"
+  },
+  "figuras": "nenhum dos vinte enunciados contém figura; nenhum bloco figurativo foi usado como evidência",
+  "lacunas": "103-lacunas-joelho.json: dez pendências precisas, sem alteração dos comentários/gabaritos; não contam como revisão",
+  "publicado": false,
+  "proximoLote": "104",
+  "npmTest": "suíte completa passou",
+  "build": "passou; vinte avulsos integrais iguais",
+  "publicacao": "CLI perdeu autenticação (HTTP 401); conector GitHub continua acessível. Usar árvore integral e conferir SHA dos blobs/tree, sem substituir JSON por conteúdo truncado."
+}

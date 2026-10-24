@@ -1,0 +1,397 @@
+{
+  "trauma-0011": {
+    "questaoSha256": "c4ce64881b42b2f4bd6ff3c6e96faec9ab8ec999b03debd530fb2c671728bb93",
+    "comentarioAnteriorSha256": "f58dbd6c8e7a1146527f6b1fe21e836a833d57ccc162a0243ffd8c1165e664e5",
+    "comentario": {
+      "conceito": "Uma queda lateral pode quebrar o quadril e também o membro superior que tenta amortecê-la. Na fratura transtrocantérica, a associação óssea mais comum descrita é a do **rádio distal do mesmo lado**, alternativa A.\n\nO resumo informa outra fratura em cerca de 4% dos pacientes, quase sempre no membro superior ipsilateral: rádio distal em 2% e úmero proximal em 1%. O mecanismo ajuda a relacionar os achados: o paciente cai sobre um lado do quadril e apoia a mão desse lado. A deformidade dolorosa do membro inferior não deve encerrar a avaliação do restante do corpo (Rockwood, 10ª ed., cap. 54, “Quem sofre e o que esperar”).\n\nA pergunta exige duas identificações independentes: **o osso e o lado**. Reconhecer o rádio e marcar contralateral perde a associação mais frequente; escolher úmero distal também não corresponde ao segundo grupo descrito, que é o úmero **proximal**. Não se deve trocar a região anatômica porque o nome do osso parece familiar.\n\nEssas proporções não permitem dizer que todo paciente terá uma segunda fratura nem que lesões menos frequentes possam ser ignoradas. O capítulo ainda lembra trauma craniano e fraturas pélvicas, reforçando uma avaliação orientada pelo mecanismo e pelos achados. No resumo da Biblioteca, veja as lesões associadas: o benefício do dado é lembrar de procurar além do quadril, sem transformá-lo em diagnóstico presumido.",
+      "correta": "**A: rádio distal ipsilateral.** É a associação mais comum descrita e é compatível com apoiar a mão do lado da queda.\n\nA escolha preserva os dois detalhes do enunciado: extremidade distal do rádio e mesmo lado da fratura trocantérica.",
+      "incorretas": {
+        "B": "**Acerta o rádio distal e troca o lado.** O padrão mais frequente do capítulo é ipsilateral, ligado ao apoio da mão do lado que cai.\n\nUma lesão contralateral pode existir, mas não é a associação predominante perguntada.",
+        "C": "**Mantém o lado e erra o osso e sua região.** A associação predominante é rádio distal; o úmero citado em segundo lugar pelo resumo é o proximal.\n\nNão há fundamento para converter a segunda associação em fratura do úmero distal.",
+        "D": "**Muda o osso e a lateralidade da associação principal.** Úmero distal contralateral não corresponde ao padrão de rádio distal ipsilateral descrito.\n\nA anatomia e o mecanismo devem ser conservados juntos, e não escolhidos separadamente por proximidade com a queda."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Quem sofre e o que esperar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Quem sofre e o que esperar"
+        ],
+        "blocos": [
+          "quem-sofre-e-o-que-esperar-5feda61f"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "e0670e1fd5f1ce14f24aa53032415afcf0b32df3244820018451165cc2aa2cc7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0228": {
+    "questaoSha256": "9d5738d7bdc37fbe47777deb3f8ef9ea5e1a13e1168038bc789937a575f47b45",
+    "comentarioAnteriorSha256": "dd0ccc1b9baae3c6d51559aff76356f2aab93130426ad6ce535e5983f3ef03c9",
+    "comentario": {
+      "conceito": "A fratura do quadril pode dominar o atendimento, enquanto uma lesão da mão ou do punho fica em segundo plano. Na transtrocantérica, a outra fratura mais comum descrita é a do **rádio distal ipsilateral**, alternativa B.\n\nO capítulo relata cerca de 4% de fraturas associadas, com predomínio no membro superior do mesmo lado: rádio distal em 2% e úmero proximal em 1%. A queda lateral com apoio da mão do lado do impacto oferece uma explicação coerente para essa distribuição (resumo do Rockwood, 10ª ed., cap. 54, “Quem sofre e o que esperar”).\n\nA associação não deve ser deduzida apenas pela distância entre os ossos. O acetábulo está perto da região trocantérica, mas proximidade não demonstra maior frequência; o dado observado aponta para o membro superior. Da mesma forma, trocar por um osso do lado oposto muda o mecanismo predominante descrito.\n\nO percentual é um retrato de população, não uma obrigação de o caso individual apresentar outra fratura. A avaliação precisa continuar guiada pela história e pelo exame, inclusive para lesões fora desse padrão. O resumo da Biblioteca permite revisar o mecanismo e as associações no mesmo trecho; o aprendizado é manter a avaliação ampla mesmo quando já existe uma fratura muito dolorosa.",
+      "correta": "**B: rádio distal ipsilateral.** É a fratura associada predominante do resumo. O apoio da mão na queda ajuda a ligar punho e quadril do mesmo lado.\n\nIsso orienta a procura de lesões adicionais sem dispensar o exame das outras regiões.",
+      "incorretas": {
+        "A": "**Proximidade com o quadril não equivale a maior associação.** O resumo descreve fraturas da pelve como raras em conjunto e aponta o rádio distal como a mais comum.\n\nNão é necessário afirmar que acetábulo e trocânter nunca se fraturam juntos; basta distinguir possibilidade de predominância.",
+        "C": "**Não corresponde ao padrão observado de membro superior ipsilateral.** Tornozelo contralateral não é a fratura que lidera a associação descrita.\n\nA escolha troca simultaneamente a região e a lateralidade que o mecanismo de queda ajuda a reconhecer.",
+        "D": "**O úmero proximal aparece, mas do mesmo lado e como segunda associação.** O resumo informa 1% para úmero proximal ipsilateral, abaixo dos 2% do rádio distal ipsilateral.\n\nA alternativa muda o lado e eleva indevidamente esse grupo à posição principal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Quem sofre e o que esperar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Quem sofre e o que esperar"
+        ],
+        "blocos": [
+          "quem-sofre-e-o-que-esperar-5feda61f"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "e0670e1fd5f1ce14f24aa53032415afcf0b32df3244820018451165cc2aa2cc7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0216": {
+    "questaoSha256": "6d9e3472bbcf31acd4bc299e492dd33b2a08d19329978903c131946316da7ba8",
+    "comentarioAnteriorSha256": "a53d9fb748273810d034c8fc30471d0358a2c4c1d27478a24959bc332c330aa8",
+    "comentario": {
+      "conceito": "Se a parede lateral deixa de funcionar como batente, o fêmur pode deslocar-se para dentro e perder distância lateral em relação ao quadril: ocorre **medialização com diminuição do offset**, alternativa C.\n\nA parede lateral é a cortical abaixo do trocânter maior, por onde entra o parafuso cefálico. No sistema deslizante, a fratura deve impactar de modo controlado. A parede ajuda a conter o conjunto durante esse movimento; quando está rompida pelo traço ou se quebra na cirurgia, os adutores conseguem medializar a diáfise (resumo do Rockwood, 10ª ed., cap. 54, “Classificação: AO 31A e a parede lateral”).\n\nOffset é a projeção lateral da região proximal em relação ao eixo femoral. Na consequência descrita, sua perda acompanha a medialização e piora a função. Não é apenas uma alteração radiográfica de pouca importância: há menos contato entre os fragmentos, consolidação mais lenta e mais complicações. O capítulo relata associação de medialização acima de 50% com pior recuperação funcional e acima de 5 mm com mais dor; são medidas diferentes de estudos, e não dois limiares intercambiáveis.\n\nA estabilidade da parede entra na escolha do implante. Na 31A1 simples ela permanece íntegra; na A3 de traço reverso ou transverso, está rompida e o comportamento muda. O capítulo favorece haste cefalomedular nas instáveis A2/A3, com menor medialização, e descreve a placa de estabilização trocantérica como um recurso que pode complementar o DHS reproduzindo o papel da parede.\n\nNo resumo da Biblioteca, leia a função de batente junto da classificação. O deslizamento planejado deve aproximar os fragmentos com controle; não pode ser confundido com perda de suporte permitindo migração progressiva da diáfise.",
+      "correta": "**C: medialização do fêmur com diminuição do offset.** A ausência do batente lateral permite deslocamento medial da diáfise sob ação dos adutores, com perda da relação lateral proximal.\n\nO resultado pode comprometer contato e função, razão pela qual a parede precisa ser considerada antes de escolher uma montagem deslizante.",
+      "incorretas": {
+        "A": "**Reconhece a medialização e inverte a mudança do offset.** A fonte descreve perda de offset, não seu aumento.\n\nO fêmur deslocar-se medialmente não deve ser interpretado como ganho da distância lateral que se procura preservar.",
+        "B": "**Troca a direção da diáfise e também a consequência funcional descrita.** O problema da parede insuficiente é a medialização com perda de offset.\n\nO fato de a parede estar no lado lateral não significa que sua falha empurre o fêmur para fora.",
+        "D": "**Conserva a diminuição do offset e muda o deslocamento que a acompanha.** Os adutores medializam a diáfise; não produzem a lateralização proposta.\n\nÉ necessário relacionar a força muscular à perda do batente, em vez de guardar apenas a palavra “offset”."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Classificação: AO 31A e a parede lateral; Anatomia e forças deformantes; Escolha do implante."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Classificação: AO 31A e a parede lateral",
+          "Anatomia e forças deformantes",
+          "Escolha do implante"
+        ],
+        "blocos": [
+          "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+          "anatomia-e-forcas-deformantes-9923fb88",
+          "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+          "classificacao-ao-31a-e-a-parede-lateral-785664da",
+          "escolha-do-implante-627dbbee",
+          "escolha-do-implante-99aab52e"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "a23ad59083126c354fc0eb1a3f19953236ea50b7189747a63004e285ccb2f64e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0543": {
+    "questaoSha256": "5536d21755bd4573716aaea9d75e5e2090aafae020a509346e721d975100e7ef",
+    "comentarioAnteriorSha256": "84b3dd49ecafb176a7edca6b25dbfea715f1ba113cd5ad4fd208e2c18475c46a",
+    "comentario": {
+      "conceito": "A diáfise vai para medial pela ação dos **adutores**, alternativa B. Na fratura transtrocantérica, identificar qual fragmento se desloca é o que permite reconhecer a força relevante.\n\nO resumo distingue três movimentos: o trocânter maior é levado em abdução e rotação externa por glúteo médio e rotadores externos curtos; a diáfise vai para posterior e medial por adutores e isquiotibiais; o trocânter menor solto é levado medial e cranialmente pelo iliopsoas. São fragmentos diferentes, ainda ligados a suas estruturas musculares (Rockwood, 10ª ed., cap. 54, “Anatomia e forças deformantes”).\n\nO enunciado pede a **medialização do fêmur**, e não qualquer movimento para medial. Se o trocânter menor está separado, a tração do iliopsoas age sobre esse fragmento; isso não torna o grupo flexor a resposta para o deslocamento da diáfise. A localização da inserção em relação ao foco precisa ser conservada no raciocínio.\n\nA parede lateral interfere no quanto essa força consegue deslocar a diáfise. Quando ela falha como batente, os adutores medializam o fêmur, reduzem o contato entre fragmentos e contribuem para perda de offset e pior função. É por isso que a anatomia muscular tem consequência para a escolha do implante e para avaliar a estabilidade da fratura.\n\nNo resumo da Biblioteca, compare os três fragmentos e depois a parede lateral. Entender o movimento ajuda a planejar a redução, sem atribuir ao mesmo músculo todos os desvios da região proximal.",
+      "correta": "**B: adutores.** São o grupo relacionado à medialização da diáfise. A força ganha importância quando falta contenção pela parede lateral.\n\nA resposta se refere ao fragmento diafisário; um trocânter menor solto tem outra força predominante.",
+      "incorretas": {
+        "A": "**Confunde o deslocamento da diáfise com o do trocânter menor.** O resumo relaciona iliopsoas ao trocânter menor separado, que vai medial e cranialmente.\n\nIsso não substitui a ação dos adutores sobre a diáfise pedida no enunciado.",
+        "C": "**Traz a ação do trocânter maior para o fragmento errado.** O capítulo associa glúteo médio e rotadores curtos à abdução e rotação externa do trocânter maior.\n\nEssa tendência não é a medialização diafisária responsável pela resposta.",
+        "D": "**Não identifica o grupo destacado para a direção medial.** Os isquiotibiais participam do desvio posterior e medial descrito em conjunto, mas a medialização enfatizada no mecanismo da parede lateral é atribuída aos adutores.\n\nEscolher um grupo por sua participação em outro componente do movimento perde a direção específica perguntada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Anatomia e forças deformantes; Classificação: AO 31A e a parede lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Anatomia e forças deformantes",
+          "Classificação: AO 31A e a parede lateral"
+        ],
+        "blocos": [
+          "anatomia-e-forcas-deformantes-9923fb88",
+          "classificacao-ao-31a-e-a-parede-lateral-ea601e05"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "2ecae1ad16f3a4f17563243f148d5a49bbcc3d4729e2a11b63d0224ab4af753a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0961": {
+    "questaoSha256": "ed290f298de5f068ceea2c5ccb321bb6ece8b4785affd456715d51577ddf45d1",
+    "comentarioAnteriorSha256": "2daeeff4628e691906e1fbe5de1082bb3a8a7a5f3e9507ca226324ee963389c0",
+    "comentario": {
+      "conceito": "O parafuso pode falhar cortando a cabeça femoral para cima enquanto o fragmento cabeça-colo colapsa em varo. Esse é o **cut-out**. Entre os fatores oferecidos, a resposta é a **posição do parafuso**, C, que precisa ser planejada junto da qualidade da redução.\n\nO resumo identifica redução inadequada e parafuso mal posicionado como os determinantes principais dessa complicação. Se o foco fica em varo, ele tende a continuar tombando, e o fio é forçado a uma posição mais alta. Portanto, a dificuldade de colocar o parafuso corretamente pode ser sinal de uma redução que ainda precisa melhorar, não um problema a resolver aceitando qualquer trajeto (Rockwood, 10ª ed., cap. 54, “Técnica: redução e parafuso cefálico” e “Complicações”).\n\nO alvo descrito é **inferior a central no AP e central no perfil**, evitando a periferia. A distância ponta-ápice de Baumgaertner soma as distâncias da ponta do parafuso ao ápice da cabeça nas duas projeções, com ideal até 25 mm. Esse valor complementa a posição: um AP aparentemente bom não exclui um trajeto periférico no perfil.\n\nIdade, qualidade óssea e instabilidade importam para o contexto e o planejamento, mas não devem ser usadas para considerar inevitável uma falha técnica. No osso osteoporótico, o resumo admite aumento com cimento em situações selecionadas; isso tampouco substitui reduzir e posicionar bem. A pergunta destaca o fator técnico oferecido entre características do paciente e da fratura.\n\nNo resumo da Biblioteca, leia a posição do parafuso junto da redução sem varo e da definição de cut-out. O objetivo não é apenas alcançar a cabeça: é criar uma montagem que permita consolidação sem cortar o osso durante o colapso.",
+      "correta": "**C: posição do parafuso.** É o determinante técnico presente nas opções e integra, com a redução, os principais fatores de cut-out destacados pelo capítulo.\n\nA avaliação deve ocorrer no AP e no perfil, com posição adequada e distância ponta-ápice; corrigir um número isolado não compensa o foco em varo.",
+      "incorretas": {
+        "A": "**Qualidade óssea interfere na montagem, mas não é o principal determinante apontado nesta comparação.** Osso frágil exige planejamento e pode justificar recursos adicionais.\n\nNão deve servir como explicação automática para aceitar parafuso periférico ou redução inadequada, os fatores destacados na fonte.",
+        "B": "**Idade descreve o paciente, não o posicionamento do implante.** Ela se relaciona ao contexto de fragilidade e ao cuidado global, mas a questão pede o fator principal de cut-out entre as opções.\n\nO capítulo atribui papel decisivo à redução e ao trajeto do parafuso, que continuam exigindo controle no idoso.",
+        "D": "**Instabilidade orienta escolha do implante e controle do colapso.** Nas A2/A3, a haste é favorecida pelo capítulo; isso não elimina a necessidade de colocar bem o componente cefálico.\n\nA pergunta não é qual fratura precisa de haste, mas qual fator técnico predispõe ao cut-out no sistema deslizante."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Complicações; Técnica: redução e parafuso cefálico; Escolha do implante."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Complicações",
+          "Técnica: redução e parafuso cefálico",
+          "Escolha do implante"
+        ],
+        "blocos": [
+          "complicacoes-41fe2824",
+          "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+          "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+          "tecnica-reducao-e-parafuso-cefalico-b883438a",
+          "tecnica-reducao-e-parafuso-cefalico-68859e9a",
+          "escolha-do-implante-99aab52e"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "b2660217335cea72a639ad62f47ef6a9edb4844ba21dc7c880fe20810d595ef3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1569": {
+    "questaoSha256": "12ed30967a931fac8b6f3cf5a5ca8977d46ae1bd0c9eae5cca397af6177cbdb5",
+    "comentarioAnteriorSha256": "8fba00d2274d905659a163f396bbe93f57a3fffe1f5edcf4cdd1923e39c688e0",
+    "comentario": {
+      "conceito": "Uma fratura em **duas partes com parede lateral íntegra** é a **31A1**. O tipo mais frequente é a **31A2**, multifragmentária. A alternativa A reúne essas duas informações sem confundir simplicidade com frequência.\n\nA classificação AO/OTA ajuda a prever o comportamento mecânico da região trocantérica. A1 tem traço pelos trocânteres, cortical medial interrompida num único ponto e parede lateral íntegra: é relativamente estável. Na A2, o trocânter menor se solta e pode haver fragmentos do maior, formando três ou quatro partes; o capítulo a considera instável e a descreve como a mais frequente (resumo do Rockwood, 10ª ed., cap. 54, “Classificação: AO 31A e a parede lateral”).\n\nA3 é o traço reverso ou transverso que rompe a cortical lateral. Essa perda muda a contenção da diáfise e pode fazê-la comportar-se como fratura subtrocantérica. Não é apenas contar um fragmento a mais: a integridade da parede e a orientação do traço alteram o controle que o implante precisa oferecer.\n\n| Grupo | Característica decisiva no resumo |\n| --- | --- |\n| A1 | duas partes, parede lateral íntegra, relativamente estável |\n| A2 | multifragmentária, trocânter menor separado, mais frequente |\n| A3 | reversa ou transversa com parede lateral rompida |\n\nNo algoritmo dos autores, DHS é escolhido para A1 e haste cefalomedular para A2/A3. A classificação orienta a decisão, mas ainda é necessário avaliar partes moles, osso e redução. Veja no resumo da Biblioteca a ligação entre o código e a função de batente da parede, para não tratar os grupos apenas como nomes.\n\n**Por que esta questão foi criada.** Compara o padrão simples com o mais frequente, duas informações próximas que não são equivalentes.",
+      "correta": "**A: A1; A2.** A primeira satisfaz duas partes e parede lateral íntegra; a segunda é a mais frequente no capítulo.\n\nA resposta mantém a distinção entre características morfológicas de um grupo e sua frequência na população.",
+      "incorretas": {
+        "B": "**Identifica corretamente a A1 e troca a frequência para A3.** A3 é reversa ou transversa com perda da parede lateral; a mais frequente descrita é A2.\n\nSer mecanicamente importante não significa ser o grupo mais numeroso.",
+        "C": "**Coloca a multifragmentária no lugar da simples e ainda inverte a frequência.** A2 tem três ou quatro partes e é a mais comum, enquanto A1 é o padrão em duas partes.\n\nO texto sobre parede lateral não pode ser usado sozinho, ignorando o número e a organização dos fragmentos.",
+        "D": "**A2 não corresponde ao padrão simples em duas partes e A3 não é o mais frequente descrito.** A alternativa troca os dois elementos da comparação.\n\nDistinguir A2 de A3 exige observar também se a parede lateral foi rompida pelo traço reverso ou transverso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Classificação: AO 31A e a parede lateral; Algoritmo dos autores."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Classificação: AO 31A e a parede lateral",
+          "Algoritmo dos autores"
+        ],
+        "blocos": [
+          "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+          "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+          "classificacao-ao-31a-e-a-parede-lateral-785664da",
+          "algoritmo-dos-autores-8978dc02",
+          "algoritmo-dos-autores-fd9c2ce2",
+          "algoritmo-dos-autores-13d26ebf"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "dfc713b91ad2d1c90f4be2f9c248104cbeaf92228326072f581a47f2395fda2c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1579": {
+    "questaoSha256": "2ee7d300b29590f5a09b41439040459c55fc71bad41faccc42e5e2ad41a09362",
+    "comentarioAnteriorSha256": "0ecb051fcd2b8b6feea39a1356c86b6f5668e29faf0a19b1bc4f06866b589224",
+    "comentario": {
+      "conceito": "O benefício da haste não foi igual em todos os padrões. No registro norueguês de **17.341 fraturas**, a reoperação com haste cefalomedular foi **igual nas A1 e menor nas A2/A3** em relação ao parafuso deslizante. É a alternativa B.\n\nA estratificação faz sentido mecânico: A1 é relativamente estável, enquanto A2/A3 exigem maior controle do colapso e da medialização. A haste fica no eixo femoral, com braço de alavanca menor que uma placa lateral, e o capítulo descreve menos colapso e medialização nas instáveis. Isso ajuda a entender por que um resultado global pode esconder diferenças entre subgrupos (resumo do Rockwood, 10ª ed., cap. 54, “Escolha do implante”).\n\nO dado continua sendo de um **registro**, não uma garantia de resultado para qualquer paciente. “Igual” reproduz a comparação relatada nas A1 e não demonstra que todo aspecto de função, complicação e custo seja idêntico. Da mesma forma, menos reoperação nas instáveis não significa ausência de falha ou que a haste compense uma redução ruim.\n\nO capítulo também diferencia recomendações: AAOS aceita DHS ou haste nas estáveis e favorece haste nas A2/A3; NICE dá maior espaço ao implante extramedular nas A1/A2 em sua análise de custo. O algoritmo dos autores resume DHS para A1 e haste para A2/A3. Estudo, diretriz e preferência dos autores devem ser reconhecidos como informações relacionadas, mas não idênticas.\n\nNo resumo da Biblioteca, confira a comparação por tipo antes de decorar um implante como vencedor universal. A escolha deve acompanhar estabilidade, desenho da fratura e qualidade da execução.\n\n**Por que esta questão foi criada.** Testa a leitura por subgrupos: ausência de vantagem relatada nas estáveis não exclui menor reoperação nas instáveis.",
+      "correta": "**B: igual; menor.** Mantém o resultado nas A1 e a vantagem de reoperação relatada para a haste nas A2/A3.\n\nÉ uma comparação específica do registro, útil para planejamento, sem prometer o mesmo desfecho a todo paciente.",
+      "incorretas": {
+        "A": "**Conserva o resultado nas A1 e apaga a diferença nas instáveis.** O registro descrito encontrou menos reoperação com haste em A2/A3.\n\nReunir todos os padrões numa afirmação de igualdade perde a informação que muda a interpretação do estudo.",
+        "C": "**Inverte a distribuição da vantagem.** A menor reoperação foi relatada nas A2/A3, não nas A1.\n\nA característica que ajuda a entender a diferença é a necessidade de controlar instabilidade e medialização, maior nos grupos A2/A3.",
+        "D": "**Estende a vantagem a um grupo em que ela não foi relatada.** A comparação foi igual nas A1, embora menor nas A2/A3.\n\nNão é correto transformar o benefício de um subgrupo em superioridade geral de reoperação para toda fratura trocantérica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Escolha do implante; Classificação: AO 31A e a parede lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Escolha do implante",
+          "Classificação: AO 31A e a parede lateral"
+        ],
+        "blocos": [
+          "escolha-do-implante-99aab52e",
+          "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+          "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+          "classificacao-ao-31a-e-a-parede-lateral-785664da",
+          "escolha-do-implante-3f9e3224"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "165bfe28a026cd46180d5d1e56eadf35fde0667480251524dec464fe81134012"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1582": {
+    "questaoSha256": "2d5f94ee1262bd9284c4af1c289321270ccaed50f3a65e977aa155a9ba16772a",
+    "comentarioAnteriorSha256": "916421729b2ad81a285ebcf2c4e3e916341b88f2e9a8ec60316189326273dfe5",
+    "comentario": {
+      "conceito": "No sistema deslizante, escolher um ângulo menor não é uma maneira ilimitada de colocar o parafuso mais baixo. **Abaixo de 130 graus, pode haver travamento do deslizamento; acima de 135 graus, o parafuso tende a ficar superior**. A alternativa B conserva os dois efeitos.\n\nO DHS permite que o parafuso deslize dentro do tubo da placa, com impactação controlada da fratura. Essa função faz parte do tratamento: uma montagem que trava passa a comportar-se como implante estático, e o resumo a relaciona ao corte do osso. Portanto, a altura do componente cefálico e seu curso de deslizamento precisam ser planejados juntos (Rockwood, 10ª ed., cap. 54, “Escolha do implante” e “Técnica: redução e parafuso cefálico”).\n\nO capítulo descreve 130 a 135 graus como a faixa ideal. Abaixo dela, o parafuso fica mais baixo, mas há o custo mecânico do travamento. Acima, o trajeto sobe e aumenta o risco de cut-out. O alvo continua sendo inferior a central no AP e central no perfil; não se deve corrigir uma redução em varo escolhendo um ângulo que crie outro problema.\n\nA redução vem antes do fio: o varo favorece posição superior e mantém a tendência ao colapso. Além disso, o curso disponível no tubo precisa ser suficiente; no DHS com parafuso de até 80 mm, o capítulo recomenda considerar tubo curto. São decisões diferentes, porém ligadas à mesma necessidade de permitir o deslizamento planejado.\n\nNo resumo da Biblioteca, compare ângulo, redução e comprimento do tubo. O objetivo é controlar a impactação com uma posição cefálica adequada, não simplesmente tornar o implante cada vez mais rígido.\n\n**Por que esta questão foi criada.** Explora os dois extremos de uma escolha técnica: tentar baixar demais o parafuso pode travá-lo, enquanto aumentar o ângulo o leva para uma posição superior indesejável.",
+      "correta": "**B: travamento do parafuso; posição superior.** O primeiro efeito é associado ao ângulo abaixo de 130 graus; o segundo, ao acima de 135.\n\nO par mostra por que a geometria do implante precisa preservar tanto posição quanto movimento controlado.",
+      "incorretas": {
+        "A": "**Acerta o travamento no ângulo menor e inverte a altura no maior.** Acima de 135 graus, o resumo descreve o parafuso mais alto, não inferior.\n\nA posição baixa é associada ao ângulo menor, mas seu benefício não é ilimitado por causa do risco de travar.",
+        "C": "**Inverte os dois efeitos.** O problema do ângulo menor é travamento, não deslizamento excessivo; o maior favorece posição superior.\n\nÉ importante distinguir ausência de movimento e excesso de colapso, que não são a mesma falha.",
+        "D": "**Reconhece a posição superior no ângulo maior, mas troca o efeito do menor.** A fonte descreve perda do deslizamento, tornando o sistema estático.\n\nEscolher “excessivo” apenas porque o implante se chama deslizante abandona o mecanismo técnico da pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Técnica: redução e parafuso cefálico; Escolha do implante."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Técnica: redução e parafuso cefálico",
+          "Escolha do implante"
+        ],
+        "blocos": [
+          "tecnica-reducao-e-parafuso-cefalico-dbb2b6a0",
+          "escolha-do-implante-ff846328",
+          "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+          "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+          "tecnica-reducao-e-parafuso-cefalico-8125107d"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "1ac101413571327dce1d3e17abc6c44165376d14cb3f8bc72cf466afc42a98b6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1583": {
+    "questaoSha256": "c642ae32e8e2a09529d6e0d3f7e1f19a800007150e42677449b6f48ac3a6163f",
+    "comentarioAnteriorSha256": "d937a390ba5b0e51b815ad55c54798749d49241b30d10d150f3761d46100aaab",
+    "comentario": {
+      "conceito": "A posição desejada do parafuso cefálico é **inferior ou central no AP e central no perfil**, alternativa D. As duas projeções são necessárias: a posição satisfatória numa delas não exclui um trajeto periférico na outra.\n\nO componente deve alcançar osso adequado na cabeça sem ficar periférico nem penetrar a articulação. O resumo recomenda ponta a cerca de 5 mm da linha articular e posição baixa a central no AP. A posição não pode ser escolhida separadamente da redução: se o foco fica em varo, o fio tende a ser forçado para cima (Rockwood, 10ª ed., cap. 54, “Técnica: redução e parafuso cefálico”).\n\nA distância ponta-ápice de Baumgaertner acrescenta uma avaliação das duas incidências: soma as distâncias da ponta ao ápice da cabeça no AP e no perfil, com ideal até 25 mm. Esse número não substitui olhar a localização do parafuso; é possível raciocinar mal se se procura apenas reduzir a distância, ignorando uma posição superior ou periférica.\n\nO problema que se busca evitar é o cut-out, colapso em varo com corte superior da cabeça pelo parafuso. O capítulo associa essa falha a redução inadequada e má posição do implante. Corrigir o alinhamento antes de insistir no fio é parte da prevenção, e não uma etapa opcional depois que ele já está pronto.\n\nNo resumo da Biblioteca, leia a posição junto da redução e do cut-out. O aprendizado é avaliar **redução, AP, perfil e profundidade** como partes de uma montagem, sem aceitar um único dado favorável como prova de que ela está adequada.\n\n**Por que esta questão foi criada.** Testa a necessidade de conferir a posição nas duas incidências e reconhece a posição posterior no perfil como distrator de um AP aparentemente correto.",
+      "correta": "**D: inferior ou central; central.** É a combinação descrita para o AP e o perfil, respectivamente.\n\nA posição deve ser obtida com a fratura reduzida, conservando distância apropriada da articulação e verificando também a ponta-ápice.",
+      "incorretas": {
+        "A": "**Coloca o parafuso superior no AP e posterior no perfil.** Nenhuma das duas posições reproduz o alvo baixo/central e central.\n\nA posição superior é especialmente importante porque o capítulo a associa a maior cut-out, sobretudo quando o foco permanece em varo.",
+        "B": "**Acerta o centro no perfil e mantém a posição superior indesejada no AP.** Uma projeção boa não compensa a outra inadequada.\n\nO alinhamento da fratura e o trajeto do fio precisam ser revistos antes de aceitar o componente alto.",
+        "C": "**Acerta o AP e troca a posição central do perfil por posterior.** O parafuso pode parecer baixo e bem localizado no AP, mas continuar periférico na outra incidência.\n\nÉ por isso que a escolha final exige conferir os dois planos, sem usar a primeira imagem como atalho."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Técnica: redução e parafuso cefálico; Complicações; Anatomia e forças deformantes."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Técnica: redução e parafuso cefálico",
+          "Complicações",
+          "Anatomia e forças deformantes"
+        ],
+        "blocos": [
+          "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+          "tecnica-reducao-e-parafuso-cefalico-b883438a",
+          "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+          "complicacoes-41fe2824",
+          "anatomia-e-forcas-deformantes-81f07f93"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "c644d924c59dccb65ac425589b6b3ee8137d162b5fb7b300fbc0e229edbd3834"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1590": {
+    "questaoSha256": "ff1a6b7029223b925599eac37ad8ecd2974ffca36b3c10d68255004c3c780824",
+    "comentarioAnteriorSha256": "e0d2fc97f5d768227a409eaf9a70c8ebfde2fde8841218a6119adcaae20729a1",
+    "comentario": {
+      "conceito": "A cabeça e o colo colapsam progressivamente em varo enquanto o parafuso corta o osso e migra relativamente para cima: esse mecanismo é o **cut-out**. O resumo o chama de complicação mais relatada e o liga a **redução inadequada e parafuso mal posicionado**. É a alternativa B.\n\nUma fratura que já foi fixada em varo mantém uma direção desfavorável de colapso. Além disso, a redução em varo dificulta colocar o fio baixo na cabeça. Assim, redução e posição do parafuso estão ligadas: não basta trocar o desenho do implante se o osso continua mal alinhado e o componente cefálico permanece alto ou periférico (Rockwood, 10ª ed., cap. 54, “Técnica: redução e parafuso cefálico” e “Complicações”).\n\nO alvo descrito é inferior a central no AP, central no perfil e distância ponta-ápice ideal até 25 mm. A avaliação deve conservar as duas projeções e a profundidade segura em relação à articulação. Uma medida favorável isolada não elimina o risco de uma redução inadequada.\n\nÉ útil separar falhas que podem parecer semelhantes. No **cut-in**, o parafuso migra craniomedialmente através da cabeça sem deslizar para fora, descrito com hastes e associado a osteoporose e travamento. Na **pseudartrose**, falta união; ela pode levar a quebra por solicitação persistente do implante. Não são nomes diferentes para o mesmo evento nem têm exatamente a mesma prevenção.\n\nO tratamento do cut-out depende de sintomas, posição e osso disponível. O capítulo descreve observação até consolidar em situações selecionadas pouco sintomáticas e aceitáveis; nos sintomáticos, revisão da fixação se houver osso adequado ou artroplastia. Não se deve transformar a definição radiográfica em indicação automática de uma única cirurgia.\n\nNo resumo da Biblioteca, compare cut-out, cut-in e pseudartrose. Idade e osteoporose precisam de cuidado, mas a prevenção técnica começa nos fatores que podem ser corrigidos durante a operação.\n\n**Por que esta questão foi criada.** Distingue a falha mecânica mais relatada dos fatores gerais de fragilidade e relaciona sua prevenção à redução e à posição cefálica.",
+      "correta": "**B: cut-out por colapso em varo; redução inadequada e má posição do parafuso.** Identifica a falha e os determinantes principais enfatizados no capítulo.\n\nO princípio preventivo é obter uma redução apropriada e uma posição cefálica segura, sem atribuir toda falha à idade ou ao osso frágil.",
+      "incorretas": {
+        "A": "**Nomeia a complicação correta, mas substitui os determinantes técnicos pelos fatores do paciente.** Osteoporose e idade integram o contexto, porém o capítulo destaca redução e posição do parafuso para o cut-out.\n\nEssas condições não autorizam tratar uma falha de posicionamento como inevitável.",
+        "C": "**Troca tanto o evento quanto o foco causal da comparação.** Pseudartrose existe, mas o resumo destaca cut-out como a complicação mais relatada.\n\nFragilidade exige planejamento; não substitui a avaliação da redução e do trajeto do componente cefálico.",
+        "D": "**Reconhece fatores técnicos relevantes, mas os associa ao evento que não responde ao enunciado.** Redução e implante também influenciam consolidação, porém a combinação descrita como resposta é cut-out por colapso em varo.\n\nÉ preciso identificar o mecanismo da falha, e não apenas escolher uma lista plausível de fatores de risco."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Complicações; Técnica: redução e parafuso cefálico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-54-transtrocanterica",
+        "titulo": "Fratura transtrocantérica",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
+        "secoes": [
+          "Complicações",
+          "Técnica: redução e parafuso cefálico"
+        ],
+        "blocos": [
+          "complicacoes-41fe2824",
+          "complicacoes-c2ff2a41",
+          "complicacoes-a003183f",
+          "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+          "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+          "tecnica-reducao-e-parafuso-cefalico-b883438a",
+          "complicacoes-fa2cbfe8"
+        ],
+        "sha256": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+        "trechosSha256": "c26d29b510c6d23bc7e0ebb54bd250f66e00ac0b68e99fa48e12081e0e8f24f7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

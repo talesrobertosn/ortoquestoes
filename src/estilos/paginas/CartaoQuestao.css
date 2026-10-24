@@ -204,6 +204,14 @@
 @media (prefers-reduced-motion: reduce) { .alternativa--turma::after { animation: none; } }
 .alt-turma-resumo { display: flex; align-items: flex-start; gap: 0.45rem; max-width: 72ch; margin: 0.7rem 0 0; color: var(--texto-2); font-size: var(--meta); line-height: 1.5; }
 .alt-turma-resumo svg { flex: none; margin-top: 0.1rem; color: var(--verdete); }
+.alt-turma-elogio {
+  display: flex; align-items: center; gap: 0.6rem; margin: 0.7rem 0 0; padding: 0.7rem 1rem;
+  border: 1px solid color-mix(in srgb, #c99a3b 55%, var(--traco)); border-radius: var(--raio-controle, 10px);
+  background: linear-gradient(100deg, color-mix(in srgb, #c99a3b 16%, var(--superficie)), var(--superficie));
+  color: var(--texto); font-size: var(--corpo, 1rem); font-weight: 600; line-height: 1.4;
+}
+.alt-turma-elogio svg { flex: none; color: #b8862b; }
+.alt-turma-elogio strong { color: var(--verdete); }
 
 /* ---------- Responder: confiança em segmentos e o botão de ouro ---------- */
 .questao-impressa .acao-responder { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem 1rem; max-width: 72ch; }
@@ -961,3 +969,14 @@
 .questao-impressa.qz-cartao .comentario,
 .qz-cartao .qz-extras.qz-faixa,
 .qz-cartao .qz-proxima { max-width: none; }
+
+/* Fonte efetivamente consultada, após revisão individual com o resumo. */
+.cm-fonte {
+  margin: 1rem 0; padding: 0.8rem 1rem;
+  border-left: 3px solid var(--verdete); border-radius: var(--raio-controle);
+  background: color-mix(in srgb, var(--verdete) 5%, transparent);
+  font-size: 0.86rem; line-height: 1.6;
+}
+.cm-fonte > strong { color: var(--verdete); }
+.cm-fonte p { margin: 0.3rem 0 0; }
+.cm-fonte a { text-underline-offset: 0.15em; }

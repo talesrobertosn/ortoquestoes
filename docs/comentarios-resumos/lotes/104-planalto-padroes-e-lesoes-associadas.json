@@ -1,0 +1,408 @@
+{
+  "trauma-0204": {
+    "questaoSha256": "6422819bfc6645fdf545d31740c25bf63c342441fd50d7f7739f8d7b4187cb31",
+    "comentarioAnteriorSha256": "0c44c8389f83a033352b127315367b52aeca47761027141bf4c940647bc2db20",
+    "comentario": {
+      "conceito": "No osso osteoporótico, o côndilo femoral pode **afundar a superfície do planalto**, em vez de abrir uma grande cunha cortical. A **depressão central**, alternativa A, é o padrão típico pedido; na classificação de Schatzker, a depressão pura lateral corresponde ao tipo III.\n\nA fratura depende da carga e da resistência óssea. O resumo distingue valgo puro, que produz separação, de carga axial, que produz compressão localizada; a combinação pode causar separação com afundamento. No idoso osteopênico predomina mais a compressão, enquanto o jovem com osso resistente tende a formar uma cunha com menos afundamento (Rockwood, 10ª ed., cap. 62, “Mecanismo e padrões de fratura”).\n\n**A idade não classifica a fratura sozinha.** O paciente osteoporótico também pode sofrer uma bicondilar, e uma história de baixa energia não dispensa avaliar o padrão real. A pergunta pede a tendência associada à qualidade do osso, não uma exclusividade diagnóstica.\n\nNa depressão pura, a parede lateral permanece sem fragmento de separação. Se houver indicação de operar, pode-se elevar a superfície por janela cortical, preservar a parede e preencher o vazio metafisário que restou da compactação das trabéculas. A sustentação subcondral evita que a superfície simplesmente volte a afundar.\n\nO padrão deve ser caracterizado com imagem, e a decisão leva em conta estabilidade, alinhamento e área comprometida. O capítulo considera simplista escolher tratamento só pelo número de milímetros de depressão.",
+      "correta": "**A: depressão central.** A compressão localizada predomina no osso de menor resistência e pode deprimir a superfície sem abrir grande cunha lateral. É a relação mecânica que fundamenta a associação com osteoporose.",
+      "incorretas": {
+        "B": "**B.** A bicondilar envolve ambos os planaltos e se relaciona ao predomínio de carga axial e maior energia. Pode ocorrer no idoso, mas não é o padrão característico de compressão localizada que a pergunta procura.",
+        "C": "**C.** Dissociação metáfise-diáfise significa separar o bloco proximal da diáfise, padrão instável com lesão importante de partes moles. Não é sinônimo de uma superfície central afundada em osso osteoporótico.",
+        "D": "**D.** O lado medial é mais resistente e sua fratura costuma envolver varo e energia alta, podendo representar variante de luxação. A depressão típica citada para o osso osteopênico é lateral, não afundamento medial como regra."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Mecanismo e padrões de fratura; Classificação de SCHATZKER; Tratamento do lado lateral; Quando operar e quanto se tolera."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Mecanismo e padrões de fratura",
+          "Classificação de SCHATZKER",
+          "Tratamento do lado lateral",
+          "Quando operar e quanto se tolera"
+        ],
+        "blocos": [
+          "mecanismo-e-padroes-de-fratura-ef801f78",
+          "mecanismo-e-padroes-de-fratura-082ce611",
+          "mecanismo-e-padroes-de-fratura-3bcd1579",
+          "mecanismo-e-padroes-de-fratura-fff16546",
+          "mecanismo-e-padroes-de-fratura-65bf462b",
+          "classificacao-de-schatzker-b1760cec",
+          "tratamento-do-lado-lateral-2430c926",
+          "quando-operar-e-quanto-se-tolera-030300cc"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "074fc830a8e1542c92cb764003636106be405587d576ef713e05b567104be534"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0296": {
+    "questaoSha256": "c337b1a1a17678981391acf9bf5639f689ca737080ea16b79871978bae44612b",
+    "comentarioAnteriorSha256": "f5aa05eb479d3f01b596f9078cf4e6aa89411be334fae2a9dabdb7f33e20aeb6",
+    "comentario": {
+      "conceito": "A palavra **“pura”** resolve a classificação: há depressão do planalto lateral, mas não um fragmento de separação. Isso é **Schatzker III**, alternativa B. Se houvesse separação junto ao afundamento, seria tipo II.\n\nO côndilo femoral comprime a superfície e as trabéculas abaixo dela. Em osso osteopênico, essa falha pode afundar a região central mantendo a parede lateral sem uma cunha separada. O padrão morfológico, e não apenas o mecanismo ou a idade, define o tipo (Rockwood, 10ª ed., cap. 62, “Classificação de Schatzker”).\n\nA distinção tem consequência técnica. Na depressão pura, uma janela cortical permite alcançar o fragmento por baixo e elevá-lo sem abrir uma separação inexistente. A cavidade deixada pela compactação precisa de suporte, associado à fixação subcondral quando indicada.\n\n**A classificação em AP tem limites.** O capítulo alerta que alguns tipos III aparentes têm um traço lateral pouco desviado e acabam sendo tipos II. A TC caracteriza a cortical e os fragmentos posteriores que a radiografia pode esconder. Não se deve insistir no rótulo III se a investigação mostrar separação.\n\nNo caso descrito, porém, o enunciado já fornece depressão lateral pura. IV mudaria para o planalto medial e V para os dois côndilos; nenhum desses elementos foi dado.",
+      "correta": "**B: tipo III.** Corresponde à depressão pura lateral, sem cunha de separação. O termo “pura” é o detalhe que a distingue do tipo II.",
+      "incorretas": {
+        "A": "**A.** Tipo II combina separação e afundamento. Acrescentaria uma ruptura cortical com fragmento de separação que o enunciado exclui ao chamar a depressão de pura.",
+        "C": "**C.** Tipo IV envolve o planalto medial, com comportamento mecânico e risco próprios. A pergunta localiza explicitamente a depressão no lateral.",
+        "D": "**D.** Tipo V é bicondilar, com continuidade entre metáfise e diáfise. Não corresponde à depressão central isolada de um único planalto lateral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; Mecanismo e padrões de fratura; Tratamento do lado lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Classificação de SCHATZKER",
+          "Mecanismo e padrões de fratura",
+          "Tratamento do lado lateral"
+        ],
+        "blocos": [
+          "classificacao-de-schatzker-b1760cec",
+          "mecanismo-e-padroes-de-fratura-082ce611",
+          "classificacao-de-schatzker-e151ed03",
+          "tratamento-do-lado-lateral-2430c926"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "b2bd7bc3752087bcc3085431dad8d00859695650dc1dca5d5bd476afe037eba5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0703": {
+    "questaoSha256": "b40030d37d818de7c5c66fecc6548f67ff57377f66a3c8f07401c6ee73fceb6d",
+    "comentarioAnteriorSha256": "5646995f199cddb7ae9ded414e6d74c47fd3c86d174994d5a7a6df2d1ed3accd",
+    "comentario": {
+      "conceito": "No fragmento posteromedial, a placa deve impedir que a cunha **deslize pelo traço de cisalhamento**. Sua função é **anticisalhamento ou antideslizante**, alternativa A, e a posição sobre o ápice da fratura é decisiva.\n\nO fragmento tem um traço relativamente vertical e pode fazer parte de uma bicondilar. A força não atua apenas afastando duas superfícies: ela tende a deslocar um fragmento ao longo do plano da fratura. A placa colocada como barreira no ápice recebe esse deslizamento e conserva o apoio do planalto (Rockwood, 10ª ed., cap. 62, “Lado medial e vias posteriores”).\n\n**Posição importa mais que chamar qualquer placa de suporte.** O resumo salienta que a colocação sobre o ápice é mais importante que o número de parafusos; um parafuso próximo ajuda a manter a placa encostada. Uma placa lateral não garante captura de um fragmento posterior cujo traço coronal permite escapar do construto.\n\nIsso também explica a necessidade de TC para planejamento. Identificar o fragmento posterior antes da cirurgia permite escolher via e implante capazes de resistir à direção da falha. Sem estabilizá-lo, podem persistir instabilidade, dor e perda da redução.\n\nNão se deve concluir que a placa dispensa redução articular ou que nenhum parafuso possa ter outra função. A pergunta é sobre a função principal da placa posteromedial nesse padrão, que é barrar o cisalhamento.",
+      "correta": "**A: anticisalhamento.** A placa antideslizante se opõe à migração do fragmento ao longo do traço. Seu posicionamento no ápice permite atuar como barreira mecânica.",
+      "incorretas": {
+        "B": "**B.** Restaurar a superfície articular é necessário, mas “compressão articular” não define a função principal dessa placa. O problema específico é o fragmento que tende a deslizar, e não somente apertar o foco.",
+        "C": "**C.** Compressão metafisária não descreve a barreira ao cisalhamento posteromedial. A posição deve ser escolhida pela direção em que o fragmento pode escapar, não por um objetivo genérico de comprimir a metáfise.",
+        "D": "**D.** Chamar de compressão mista mantém a mesma confusão. O resumo distingue suporte lateral, antideslizamento posteromedial e placa em padrões bicondilares; no fragmento perguntado, o conceito decisivo é antideslizante."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lado medial e vias posteriores; Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lado medial e vias posteriores",
+          "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+        ],
+        "blocos": [
+          "lado-medial-e-vias-posteriores-96c684c4",
+          "lado-medial-e-vias-posteriores-39c8bf35",
+          "lado-medial-e-vias-posteriores-d3fc5be1",
+          "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "2305868b55060780be8f2151a1f8c2aba68606a59d9a6daae66cb0caaee70411"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1014": {
+    "questaoSha256": "8393846c28baf39b4115ab3acdf4ab95a2b55a00d142ac9247d80fccd032b2c5",
+    "comentarioAnteriorSha256": "886b28576dcdb43437cdadd809eb8476f8c1beca66b4c521ff1e021dcdf0557b",
+    "comentario": {
+      "conceito": "A paciente tem fratura **lateral com cisalhamento/separação e afundamento**. Essa combinação corresponde ao **tipo II de Schatzker**, alternativa B. A idade e o atropelamento contextualizam o trauma, mas é a morfologia descrita que classifica.\n\nHá dois componentes: uma cunha lateral se separa e uma porção da superfície articular é comprimida para baixo. O resumo explica que valgo associado à carga axial pode produzir essa combinação. Ela difere tanto da separação pura do tipo I quanto da depressão pura do tipo III (Rockwood, 10ª ed., cap. 62, “Mecanismo e padrões” e “Classificação de Schatzker”).\n\n**Reduzir a cunha não eleva automaticamente a superfície.** No tratamento descrito, a separação é aberta como um livro, o afundamento é elevado por baixo e o vazio metafisário é preenchido antes de concluir a sustentação lateral. Placa e parafusos subcondrais precisam apoiar o fragmento reduzido, além de recuperar a largura.\n\nO planejamento também procura traços posteriores e lesões associadas. A TC mostra orientação e cominução que o AP não representa bem; a avaliação meniscal e ligamentar permanece relevante. O rótulo II não é uma descrição completa de toda a lesão.\n\nPara a pergunta, basta não perder nenhum dos termos: **separação mais afundamento, lateral, tipo II**. Os outros tipos omitem um componente ou mudam o compartimento envolvido.",
+      "correta": "**B: tipo II.** Reúne exatamente separação e afundamento do planalto lateral. A classificação não depende de presumir um padrão só porque a paciente é jovem.",
+      "incorretas": {
+        "A": "**A.** Tipo I é separação lateral sem afundamento. Ignoraria a depressão articular que o caso informa e, com ela, a necessidade de avaliar o suporte subcondral.",
+        "C": "**C.** Tipo III é depressão pura lateral, sem fragmento de separação. O caso contém cisalhamento/separação junto ao afundamento, portanto não é puro.",
+        "D": "**D.** Tipo IV é medial e pode comportar-se como variante de luxação. A descrição fornecida é lateral, sem esse padrão medial.",
+        "E": "**E.** Tipo V exige comprometimento bicondilar. O texto não informa fratura dos dois planaltos e não permite acrescentar uma lesão medial para mudar a classificação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; Mecanismo e padrões de fratura; Tratamento do lado lateral; Avaliação: exame, partes moles e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Classificação de SCHATZKER",
+          "Mecanismo e padrões de fratura",
+          "Tratamento do lado lateral",
+          "Avaliação: exame, partes moles e imagem"
+        ],
+        "blocos": [
+          "classificacao-de-schatzker-b1760cec",
+          "mecanismo-e-padroes-de-fratura-ef801f78",
+          "mecanismo-e-padroes-de-fratura-082ce611",
+          "tratamento-do-lado-lateral-96ac9ab9",
+          "avaliacao-exame-partes-moles-e-imagem-4d537b3e"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "d605b22cbca1727354cc037e83925e2aa0a0e13ff78acffe899052cafc08fb4b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1126": {
+    "questaoSha256": "caa3b1f0582830c2cfbf044c3304f2f5aafa1dcb56ecc99b6e34469055a1ee26",
+    "comentarioAnteriorSha256": "57582494a316c6b586e869ba6cc7f27617a516b09af005d84e1d3d1289e0c6c5",
+    "comentario": {
+      "conceito": "No perfil, o planalto **lateral é plano ou levemente convexo**, enquanto o **medial é côncavo**. Entre as opções, isso corresponde a A, mantida como resposta provável porque não há gabarito oficial registrado.\n\nOs dois planaltos não são espelhos. A concavidade medial oferece maior congruência com o côndilo femoral, enquanto o contorno lateral pode ser mais plano ou abaulado. Na radioscopia em perfil, reconhecer as duas linhas ajuda a não confundir o contorno anatômico com uma deformidade da redução (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\nO lateral também é mais alto que o medial. Ambos apresentam inclinação posterior, com variação individual; o lado sadio serve de referência. Portanto, buscar duas superfícies idênticas em altura ou curvatura pode criar uma redução que parece simétrica, mas não restaura a anatomia.\n\n**Perfil é controle, não prova isolada de redução perfeita.** A TC caracteriza os fragmentos, e o controle deve integrar eixo, largura e superfície articular. O resumo mostra que defeitos posteriores podem persistir apesar de imagens aparentemente aceitáveis, reforçando a importância de exposição e avaliação adequadas quando indicadas.\n\nA palavra “convexa” da alternativa deve ser entendida como a descrição habitual simplificada do lateral. Não é necessário tornar uma convexidade acentuada obrigatória em todo joelho: a fonte admite superfície lateral plana ou levemente convexa.",
+      "correta": "**A: lateral convexa e medial côncava.** É o par que corresponde à anatomia apresentada, com a ressalva de que o lateral pode ser plano ou apenas levemente convexo. Sem resposta oficial, A permanece bibliográfica provável.",
+      "incorretas": {
+        "B": "**B.** Inverte as duas superfícies. Essa troca pode fazer o observador atribuir a linha medial ao lateral e interpretar incorretamente os contornos no controle em perfil.",
+        "C": "**C.** Preserva a convexidade lateral simplificada, mas aplica a mesma forma ao medial. O resumo descreve o medial como côncavo e mais congruente com o côndilo femoral.",
+        "D": "**D.** A concavidade medial está correta, mas o lateral não deve ser copiado como outra superfície côncava. A assimetria entre os dois é justamente a informação anatômica cobrada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral; Avaliação: exame, partes moles e imagem."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. A é a resposta provável pelo resumo do Rockwood, 10ª ed., cap. 62: lateral plano ou levemente convexo e medial côncavo. A opção simplifica o lateral como convexo; não significa convexidade obrigatória acentuada em todo paciente. Preservada a resposta bibliográfica anterior."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Anatomia aplicada",
+          "Tratamento do lado lateral",
+          "Avaliação: exame, partes moles e imagem"
+        ],
+        "blocos": [
+          "anatomia-aplicada-882c3a32",
+          "anatomia-aplicada-01a8a946",
+          "anatomia-aplicada-29b9f498",
+          "tratamento-do-lado-lateral-6b4477db",
+          "avaliacao-exame-partes-moles-e-imagem-4d537b3e"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "663f5e3dfc09cfb07955dc61fe57c8c9277325bf91b519009a3adc3fb43916ba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0212": {
+    "questaoSha256": "27ca0482ff6ce20809a210325055307d47f750163e36b7cd6f182d3358a7e3cf",
+    "comentarioAnteriorSha256": "09549d02f3de38fb6056dd54fb66f0671d5d2ff3d7861c75cb9395adc85da6fb",
+    "comentario": {
+      "conceito": "O planalto lateral é **mais alto e plano ou levemente convexo** em relação ao medial. A alternativa A resume a descrição como “alto e convexo”. O medial é mais côncavo e fica num nível um pouco inferior.\n\nEssa assimetria é anatômica, não um defeito de alinhamento. O lateral mais alto participa dos poucos graus de varo do planalto em relação à diáfise. Os dois têm inclinação posterior, mas os valores variam bastante entre pessoas; o lado contralateral é uma referência útil de redução (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\n**Não se deve nivelar os dois planaltos por obrigação.** Ao corrigir um afundamento lateral, deixar a superfície na mesma altura da medial pode conservar uma depressão relativa. O resumo orienta restaurar o lateral um pouco acima, considerando ainda a tendência ao recalque pós-operatório.\n\nA forma também ajuda a reconhecer as linhas no perfil: medial côncava, lateral mais plana ou convexa. Essa leitura evita trocar as superfícies durante a radioscopia. Ela se integra aos outros controles, sem substituir análise do eixo, largura e congruência.\n\nA questão exige duas características simultâneas. Acertar a altura e errar a forma, ou reconhecer a forma e inverter a altura, não reproduz o padrão. A palavra convexo é uma simplificação da faixa anatômica informada, não autorização para criar um abaulamento excessivo.",
+      "correta": "**A: alto e convexo.** É o único par compatível com a maior altura lateral e seu contorno plano a levemente convexo no resumo. A comparação é com o planalto medial, não com um valor absoluto de altura.",
+      "incorretas": {
+        "B": "**B.** A forma está próxima da descrição lateral, mas a altura está invertida. O lateral é mais alto, e não mais baixo, que o medial.",
+        "C": "**C.** A altura está correta, mas a concavidade pertence à descrição medial. Os planaltos não devem ser tratados como superfícies da mesma forma apenas em níveis diferentes.",
+        "D": "**D.** Inverte os dois atributos do lateral. Mais baixo e côncavo corresponde ao contraste medial dado pela fonte, não ao planalto perguntado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Anatomia aplicada",
+          "Tratamento do lado lateral"
+        ],
+        "blocos": [
+          "anatomia-aplicada-882c3a32",
+          "anatomia-aplicada-01a8a946",
+          "anatomia-aplicada-29b9f498",
+          "tratamento-do-lado-lateral-6b4477db"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "f160b70784360ea0a5d5df014b5c5c35ae39d133057782888974422debd3f2a9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0031": {
+    "questaoSha256": "7085ded1e4a5cc05581870dbdb53aa4a8b2bfc465d02126a3d9c1f3a1ace490a",
+    "comentarioAnteriorSha256": "408a4ee0abdd07606aa388bd92e19137493752c0b232f9fb94675787377d72a0",
+    "comentario": {
+      "conceito": "O cisalhamento posteromedial se associa a **varo, flexão do joelho e rotação interna do côndilo femoral medial**, alternativa A. A rotação é descrita pelo côndilo femoral, e não deve ser trocada inadvertidamente por uma rotação da tíbia em referencial diferente.\n\nO lado medial suporta carga e tem osso mais resistente que o lateral. Quando a solicitação produz um traço de cisalhamento posterior, surge um fragmento que pode perder seu apoio e deslizar ao longo do plano da fratura. Esse padrão pode ocorrer isoladamente ou integrar uma bicondilar (Rockwood, 10ª ed., cap. 62, “Mecanismo e padrões de fratura”).\n\n**Mecanismo orienta o planejamento, mas a TC mostra o fragmento real.** A classificação baseada apenas no AP não descreve adequadamente os traços coronais posteriores. Identificá-los antes da cirurgia permite escolher uma via e uma placa que realmente contenham o fragmento.\n\nPara esse cisalhamento, a placa posteromedial atua como antideslizante no ápice. Não basta uma placa anterior parecer bem posicionada se ela não impede o fragmento posterior de escapar. A persistência do cisalhamento favorece instabilidade, dor e perda da redução.\n\nNo enunciado, o varo já está informado. A escolha deve completar o mecanismo com os outros dois atributos, sem transformar toda fratura medial em consequência de extensão ou trocar rotação interna femoral por externa.",
+      "correta": "**A: flexão e rotação interna do côndilo medial.** Completa o varo do enunciado com os dois componentes descritos pelo capítulo. O referencial femoral deve permanecer explícito.",
+      "incorretas": {
+        "B": "**B.** A flexão está correta, mas a rotação femoral externa inverte o componente descrito. Trocar apenas o sentido de rotação já muda o mecanismo pedido.",
+        "C": "**C.** Inverte os dois complementos: coloca extensão e rotação externa em lugar de flexão e rotação interna do côndilo medial. Não reproduz o padrão posteromedial da fonte.",
+        "D": "**D.** Conserva a rotação interna femoral, porém muda flexão para extensão. A presença de um termo correto não compensa a posição errada do joelho no mecanismo apresentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Mecanismo e padrões de fratura; Classificação de SCHATZKER; Lado medial e vias posteriores."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Mecanismo e padrões de fratura",
+          "Classificação de SCHATZKER",
+          "Lado medial e vias posteriores"
+        ],
+        "blocos": [
+          "mecanismo-e-padroes-de-fratura-65bf462b",
+          "classificacao-de-schatzker-d599fb64",
+          "lado-medial-e-vias-posteriores-96c684c4",
+          "lado-medial-e-vias-posteriores-39c8bf35"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "8b2026c5efd43790405bbf15db05c5d622306dcfe9a1aee4758835346687fcc0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0076": {
+    "questaoSha256": "82c4cd9ec2775743ed355b59eecf61cb341f9a38c8c0db5158ec3283ce1f5edd",
+    "comentarioAnteriorSha256": "db9fe888d86b19e9c40572f6e4548c59ad4f6e029c0e9e42df997ffa86c0783b",
+    "comentario": {
+      "conceito": "A associação a procurar primeiro entre as opções é a lesão do **menisco lateral**, alternativa A. Na série de Gardner citada, de 103 fraturas operadas avaliadas por RM, ela apareceu em 91%; esse número pertence ao grupo estudado, não a toda fratura de planalto.\n\nA maioria das fraturas é lateral. Sob valgo e carga axial, o côndilo lateral comprime o planalto, e o menisco desse lado pode ficar preso entre os ossos ou no traço. O grau de afundamento e o alargamento se relacionam à lesão meniscal (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\n**Uma fratura pouco desviada também pode ter lesão de partes moles.** O resumo cita alta incidência meniscal mesmo em fraturas tratadas sem cirurgia. Portanto, não se deve reservar a suspeita apenas às bicondilares muito cominuídas.\n\nA RM é mais sensível para meniscos e ligamentos, mas os autores não a pedem rotineiramente: o menisco lateral pode ser visto e reparado pela artrotomia submeniscal durante a fixação. Além disso, o significado de todas as lesões detectadas apenas na RM e a indicação de tratá-las não estão completamente definidos.\n\nA resposta não nega lesão do menisco medial, do LCM ou dos cruzados. Ela organiza a frequência e a busca clínica, sem indicar reparo automático de todo achado de imagem.",
+      "correta": "**A: menisco lateral.** A mecânica do compartimento lateral e os dados da série citada sustentam sua prioridade entre as associações oferecidas. A porcentagem deve permanecer vinculada à casuística operada estudada por RM.",
+      "incorretas": {
+        "B": "**B.** O menisco medial também pode se lesar, mas na série de Gardner apareceu em 44%, abaixo do lateral. Não se deve transferir para a fratura uma expectativa baseada em outro contexto de lesão meniscal.",
+        "C": "**C.** O LCM pode falhar no valgo, porém instabilidade antes de reduzir a fratura pode vir da perda de suporte ósseo. O resumo recomenda reavaliar após fixação e descreve tratamento sem reparo rotineiro do LCM associado.",
+        "D": "**D.** O LCP pode ter avulsão associada, e a conduta é discutida conforme o padrão. Isso não o torna a primeira associação identificada pela fonte; não é necessário inventar um percentual de LCP para distinguir o menisco lateral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "89028e68ed5ae651f5b8d8ad07eac11ea96378dd7cc4d2d6d6079bb1f23fdca5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0416": {
+    "questaoSha256": "660b47d0d4232af2857704c173c4a74f4f86fd4e50ad2ae317bfa85cadccdd96",
+    "comentarioAnteriorSha256": "d428b16b01e021d7ba615c6cf67911eb5290234386fc924e4819745a78805240",
+    "comentario": {
+      "conceito": "O menisco lateral é a associação mais frequente entre as opções, resposta A. A pergunta é sobre **partes moles em geral**, portanto não deve ser reduzida a “qual ligamento rompe mais”.\n\nNa série de Gardner resumida no capítulo, 103 fraturas operadas tiveram RM: menisco lateral 91%, LCA 77%, canto posterolateral 68% e menisco medial 44%. Esses valores mostram que várias estruturas podem estar lesadas no mesmo joelho; não são categorias que se excluem e somam 100% (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\nO impacto lateral com valgo e carga axial ajuda a explicar o predomínio. O menisco lateral cobre parte maior do seu planalto e pode ser comprimido ou encarcerado no traço. Alargamento e afundamento são pistas para procurar a lesão.\n\n**Detectar uma lesão não define sozinho que ela deva ser operada.** A RM é sensível, mas o resumo ressalta incerteza sobre a história natural dos achados vistos apenas nesse exame. Na fixação, a artrotomia submeniscal permite avaliar o menisco lateral e reparar o que for indicado, sem tornar RM prévia obrigatória para toda fratura.\n\nLCA e canto posterolateral são associações importantes, sobretudo na alta energia. A resposta pede frequência relativa na fonte consultada; não minimiza a gravidade das lesões que ficaram atrás no ranking nem universaliza os percentuais de uma amostra operada.",
+      "correta": "**A: menisco lateral.** É o maior valor da série apresentada e corresponde à associação destacada pelo resumo. A questão inclui meniscos, portanto a resposta não deve ser limitada aos ligamentos.",
+      "incorretas": {
+        "B": "**B.** O menisco medial teve lesão em 44% nessa série. É um achado relevante, mas menos frequente que o lateral na casuística, e não deve ser ignorado apenas porque não é a resposta.",
+        "C": "**C.** O canto posterolateral teve alta frequência, 68%, mas abaixo dos 91% do menisco lateral e 77% do LCA. Ser um complexo importante para a estabilidade não o torna o achado mais comum nessa amostra.",
+        "D": "**D.** O LCA foi o ligamento com maior destaque na série, 77%, mas ainda abaixo do menisco lateral. A opção atrai quando se troca “partes moles” por “ligamentos”."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "7069a3ff0581c6c08a4ee7e880db34ab4d4350d77e9c9a085bb6b552dafe6363"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0313": {
+    "questaoSha256": "cbf75770a13b92d2efd2d48995ea709ebc237c0c888af5773ec0ad864abca0e0",
+    "comentarioAnteriorSha256": "badc93ffab1bf563c923b2de46bd696842946e9dee865386083b65085b8793eb",
+    "comentario": {
+      "conceito": "A resposta é **menisco lateral**, alternativa B. Nesta pergunta, o LCA é um distrator plausível porque também é muito lesado, mas a comparação inclui meniscos e ligamentos, e o lateral aparece primeiro na série de RM descrita.\n\nO planalto lateral recebe a compressão do côndilo femoral em muitos mecanismos de valgo com carga axial. O menisco pode ficar aprisionado ou acompanhar o afundamento e o alargamento. Essa relação explica por que o osso fraturado não deve concentrar toda a atenção da avaliação (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\nGardner encontrou menisco lateral em 91% e LCA em 77% das 103 fraturas operadas estudadas por RM; menisco medial apareceu em 44%. A amostra define o significado desses números. O resumo também mostra diferenças conforme o método: uma série antiga com estresse radiográfico e cirurgia teve muitos casos de LCM, portanto não convém ensinar uma hierarquia independente da população e da forma de investigar.\n\n**A instabilidade medial pode ser óssea.** Antes de fixar uma fratura lateral afundada, o joelho pode abrir em valgo porque perdeu suporte. Isso não prova ruptura do LCM; a estabilidade deve ser reavaliada depois de recuperar o osso.\n\nNa prática, procura-se lesão meniscal e ligamentar, define-se o padrão e decide-se o que tratar. O resumo não sustenta reconstruir todo ligamento com sinal alterado na RM nem considera o ranking uma substituição ao exame individual.",
+      "correta": "**B: menisco lateral.** É a associação destacada e o maior valor da série de Gardner. O mecanismo de compressão e encarceramento do menisco no lado lateral ajuda a compreender o achado.",
+      "incorretas": {
+        "A": "**A.** O menisco medial pode estar lesado, porém ficou abaixo do lateral na série citada. A escolha precisa acompanhar o contexto de fratura do planalto, não uma generalização sobre qualquer lesão de joelho.",
+        "C": "**C.** O LCA é muito frequente, com 77% na série de RM, mas o menisco lateral chegou a 91%. Se a pergunta fosse apenas sobre ligamentos, o recorte seria diferente; aqui não é.",
+        "D": "**D.** A lesão do LCM é possível e depende da população e do método de avaliação. Além disso, abertura em valgo pode refletir afundamento ósseo. Esses pontos não sustentam colocá-lo acima do menisco lateral na comparação da fonte usada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "32dd2e6c82e1fbf627c22ede8be9d621b2930d57fcc1ac611e6685aa827f9fe0"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

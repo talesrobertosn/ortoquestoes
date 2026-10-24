@@ -1,26 +1,34 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { PlanoSalvo } from '../dados/planoEstudo'
-import { ficarSoComOficiais, marcarAvisoSimulados, mostrarNovidadeSimulados } from '../conta/cronograma'
+import { avisoSimuladosVisto, ficarSoComOficiais, marcarAvisoSimulados, mostrarNovidadeSimulados } from '../conta/cronograma'
 import { Icone } from './Icone'
+import { usarConta } from '../conta/ContextoConta'
+import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
 
 /**
  * Aviso único para quem montou o cronograma antes da opção dos OrtoQuestões
  * Simulados: eles já entraram no plano; a pessoa mantém ou fica só com as
  * oficiais. Aparece na página do Cronograma e no cartão do Cronograma do Início.
+ * Uma vez só, em qualquer aparelho: o "já vi" vai também para a conta (avisosVistos.ts).
  */
 export function NovidadeSimulados({ plano, aoMudarPlano }: { plano: PlanoSalvo | null | undefined; aoMudarPlano: (p: PlanoSalvo) => void }) {
   const [fechado, definirFechado] = useState(false)
   const [salvando, definirSalvando] = useState(false)
   const [erro, definirErro] = useState('')
-  if (fechado || !mostrarNovidadeSimulados(plano)) return null
+  const meta = usarConta().sessao?.user.user_metadata
+  // Quem já tinha visto neste aparelho leva o "já vi" para a conta: não aparece nos outros.
+  const temConta = !!meta
+  useEffect(() => { if (temConta && avisoSimuladosVisto()) marcarAvisoNaConta(meta, 'cronograma-simulados') }, [temConta]) // eslint-disable-line react-hooks/exhaustive-deps
+  if (fechado || !mostrarNovidadeSimulados(plano, avisoVistoNaConta(meta, 'cronograma-simulados'))) return null
 
-  function manter() { marcarAvisoSimulados(); definirFechado(true) }
+  function manter() { marcarAvisoSimulados(); marcarAvisoNaConta(meta, 'cronograma-simulados'); definirFechado(true) }
   async function soOficiais() {
     if (!plano || salvando) return
     definirSalvando(true); definirErro('')
     try {
       const salvo = await ficarSoComOficiais(plano)
       if (salvo) aoMudarPlano(salvo)
+      marcarAvisoNaConta(meta, 'cronograma-simulados')
       definirFechado(true)
     } catch { definirErro('Não foi possível salvar agora. Tente de novo.') } finally { definirSalvando(false) }
   }

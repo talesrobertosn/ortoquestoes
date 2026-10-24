@@ -1,0 +1,77 @@
+{
+  "basePublicada": "2813dec1da531e71e1cf06a0a312931fc33ff05c",
+  "lotes": {
+    "109-pilao-vias-e-gravidade.json": {
+      "sha256": "9c9ec94f721c60d147e76ff4bfc6935532e83defa8673955058a9290809556b9",
+      "ids": [
+        "pe-tornozelo-0006",
+        "pe-tornozelo-0060",
+        "trauma-0113",
+        "trauma-0161",
+        "trauma-0440",
+        "trauma-0679",
+        "trauma-0911",
+        "trauma-0984",
+        "trauma-1193",
+        "trauma-1104"
+      ]
+    },
+    "110-pilao-planejamento-e-reconstrucao.json": {
+      "sha256": "63ab1556f2548b88ec9fc5b637086f8bb997751680b8ff0768348602349466a0",
+      "ids": [
+        "trauma-1694",
+        "trauma-1695",
+        "trauma-1696",
+        "trauma-1697",
+        "trauma-1698",
+        "trauma-1699",
+        "trauma-1700",
+        "trauma-1701",
+        "trauma-1703",
+        "trauma-1704"
+      ]
+    },
+    "111-planalto-e-referencias-cruzadas.json": {
+      "sha256": "a599fa0c33b61a1ac3783ec5a23c667581934c04b4653fa5da1fd80b88e35ffd",
+      "ids": [
+        "trauma-0052",
+        "trauma-0960",
+        "trauma-1192",
+        "trauma-1669",
+        "trauma-1671",
+        "trauma-0558",
+        "trauma-1702",
+        "trauma-1705",
+        "pe-tornozelo-0334",
+        "trauma-1711"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 498,
+    "head": "56320e51f220e62018a52a3afed17e87c51314b3",
+    "ci": 40049549789,
+    "pages": 40049720066,
+    "deployJob": 120740083739,
+    "avulsosIntegrais": 30
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 testes passaram",
+    "acervo": "sem erros",
+    "cadeia": "109–111, 30 IDs únicos; aplicação reproduzida desde a base, fontes/hashes e todas as alternativas conferidos; proteção dos membros alheios e trinta avulsos integrais",
+    "interface": "Nove casos em celular/computador: pe-0006, 0679, 0984, 1193, 1699, 1704, 0558, 1669 e pe-0334. Alertas, carregamento da figura e destinos de fonte conferidos; capturas abertas e inspecionadas."
+  },
+  "figuras": {
+    "trauma-0558": {
+      "arquivo": "trauma/trauma-0558-1.jpeg",
+      "sha256": "6650205f1fee90b4d841558f8cdf1893452186b26a853cf3953b86da9906b2cc",
+      "inspecao": "Imagem original aberta antes de escrever: avulsão marginal lateral do planalto, compatível com Hohl e Moore III; distinguida de separação de côndilo inteiro e compressão da borda. Fingerprint da questão inclui os bytes.",
+      "dimensoes": "1494 × 2513"
+    }
+  },
+  "lacunas": "110-lacunas-pilao.json: sete pendências específicas, sem alterar comentários/gabaritos; não contam como revisão",
+  "publicado": false,
+  "proximoLote": "112",
+  "npmTest": "suíte completa passou após o terceiro lote",
+  "build": "passou; trinta avulsos integrais iguais"
+}

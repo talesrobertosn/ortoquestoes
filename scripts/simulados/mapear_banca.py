@@ -65,8 +65,8 @@ def err(*x):
 
 
 # Engenharia reversa: só TEOT e TARO entram nas medidas (são as provas imitadas).
-tt = [q for q in oficiais if re.search(r"TEOT|TARO", q.get("prova") or "") and len(q["alternativas"]) == 4]
-err(f"{len(oficiais)} oficiais no recorte; {len(tt)} de TEOT/TARO com 4 alternativas entram nas medidas")
+tt = [q for q in oficiais if re.search(r"TEOT|TARO|^Ortopedia$", q.get("prova") or "") and len(q["alternativas"]) == 4]
+err(f"{len(oficiais)} oficiais no recorte; {len(tt)} de TEOT, TARO e Ortopedia com 4 alternativas entram nas medidas")
 if tt:
     caso = re.compile(r"^(Paciente|Homem|Mulher|Menino|Menina|Criança|Adolescente|Atleta)\b|\d+ anos", re.I)
     en = [len(q["enunciado"]) for q in tt if not caso.search(q["enunciado"])]

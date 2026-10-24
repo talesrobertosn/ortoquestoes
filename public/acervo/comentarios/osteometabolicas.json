@@ -167,19 +167,45 @@
     "conferido": false
   },
   "osteometabolicas-0013": {
-    "conceito": "**A fratura vertebral osteoporótica.** É a fratura por fragilidade **mais comum**. Muitas são **silenciosas** (achados de radiografia), e outras causam **dor aguda** após um esforço mínimo (levantar um peso, tossir). Com o tempo, as fraturas múltiplas levam à **cifose** torácica, perda de altura, dor crônica, redução da capacidade pulmonar e aumento da mortalidade. Uma fratura vertebral **multiplica** o risco de novas fraturas.\n\n**O tratamento inicial é conservador.**\n- **Analgesia** (analgésicos, anti-inflamatórios com cautela, opioides de curta duração), **calcitonina** (efeito analgésico nas fraturas agudas).\n- **Órtese** em alguns casos, por curto período, e mobilização precoce.\n- Fisioterapia e fortalecimento dos extensores do tronco.\n- **Tratamento da osteoporose** (bisfosfonatos, denosumabe ou teriparatida), que reduz novas fraturas.\n\nA maioria dos pacientes melhora em **4 a 6 semanas** a alguns meses.\n\n**As indicações de intervenção.**\n\n| Situação | Conduta |\n|---|---|\n| **Dor refratária** ao tratamento conservador (geralmente após 4 a 6 semanas), com fratura **não consolidada** (edema na ressonância) | **Vertebroplastia** ou **cifoplastia** |\n| **Déficit neurológico** (compressão por fragmento ou colapso) | **Descompressão e estabilização** cirúrgica |\n| **Instabilidade** ou deformidade progressiva grave | **Estabilização** (instrumentação com parafusos cimentados) |\n\n**A vertebroplastia e a cifoplastia.** São procedimentos percutâneos em que se injeta **cimento** (PMMA) no corpo vertebral fraturado, pelos pedículos, para estabilizar a fratura e aliviar a dor. Na cifoplastia, um balão é insuflado antes para criar uma cavidade e tentar restaurar parte da altura. A indicação principal é a **dor que não melhora** com o tratamento clínico, numa fratura recente (ainda com **edema** na ressonância). As complicações incluem o **vazamento de cimento** (para o canal ou para as veias, com embolia) e novas fraturas nas vértebras vizinhas.\n\n**Por que as outras alternativas não são indicações isoladas.**\n- A **cifose torácica** é uma consequência comum das fraturas osteoporóticas e não é, sozinha, indicação de cirurgia.\n- Um **fragmento ósseo no canal** sem déficit neurológico pode ser observado; a cirurgia é indicada pelo **déficit**.\n- A **intolerância à órtese** não é indicação cirúrgica: a órtese é opcional.",
-    "correta": "**Correta: D (dor refratária ao tratamento conservador).** Na fratura vertebral osteoporótica, a principal indicação de tratamento cirúrgico (geralmente vertebroplastia ou cifoplastia) é a **dor refratária** ao tratamento conservador, numa fratura ainda não consolidada. O déficit neurológico e a instabilidade indicam descompressão e estabilização.",
+    "conceito": "Uma fratura vertebral osteoporótica pode doer muito sem exigir cirurgia imediata. A opção que muda o cenário é a **dor que permanece refratária ao tratamento conservador**. Ainda assim, escolher uma intervenção exige relacionar a dor à fratura e avaliar neurologia, deformidade e estabilidade.\n\nO capítulo distingue procedimentos. A cimentação é discutida para dor persistente após falha do tratamento não cirúrgico; os autores a consideram indicação relativa em dor intensa e limitante após pelo menos seis semanas. Já compressão neural com déficit, sobretudo agudo, incompleto e progressivo, pode exigir descompressão e estabilização. Não são duas formas intercambiáveis de tratar toda fratura dolorosa (resumo do Rockwood, 10ª ed., cap. 49, “Quando operar e o que fazer” e “Vertebroplastia e cifoplastia”).\n\nCifose torácica sem qualificação não é igual a deformidade progressiva dolorosa. Fragmento no canal sem déficit também não é indicação isolada, e intolerância à órtese, sozinha, não demonstra a falha clínica decisiva. O resumo da Biblioteca ajuda a separar esses cenários, sem ensinar cimentação como rotina.\n\n> **Na prova:** dor refratária é uma indicação a considerar; o procedimento depende do problema que precisa ser resolvido.",
+    "correta": "**D: dor refratária ao tratamento conservador.** A persistência de dor limitante apesar do tratamento é um cenário de indicação intervencionista discutido pelo capítulo. Não significa que toda dor aguda deva receber cimento nem que a mesma operação sirva para déficit e dor isolada.",
     "incorretas": {
-      "A": "A **cifose torácica** é uma consequência comum das fraturas osteoporóticas e não indica cirurgia por si só.",
-      "B": "Um **fragmento ósseo no canal** sem déficit neurológico pode ser observado. A cirurgia é indicada pelo **déficit**, e não pela imagem isolada.",
-      "C": "A **incapacidade de usar a órtese** não é indicação cirúrgica. A órtese é apenas uma opção do tratamento conservador."
+      "A": "**A presença de cifose, sem progressão e sintomas, não basta.** A indicação descrita envolve deformidade dolorosa ou progressiva e o conjunto clínico. O rótulo anatômico isolado não fornece esse contexto.",
+      "B": "**Fragmento intracanal não é indicação automática na ausência de déficit.** A imagem precisa ser relacionada à neurologia e à estabilidade. O capítulo rejeita operar apenas pela ocupação do canal.",
+      "C": "**Intolerar a órtese não demonstra, por si só, necessidade de cirurgia nessa fratura.** A evidência para órteses é fraca e há estratégias não cirúrgicas selecionadas. É preciso avaliar dor refratária, déficit e instabilidade em vez de substituir um dispositivo intolerado por uma operação automática."
     },
     "referencias": [
-      "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-      "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
+      "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura vertebral osteoporótica e cimentação; Fratura em explosão (A3 e A4)."
     ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-23",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-49-fratura-toracolombar",
+          "titulo": "Fraturas e luxações da coluna toracolombar",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+          "secoes": [
+            "Fratura vertebral osteoporótica e cimentação",
+            "Fratura em explosão (A3 e A4)"
+          ],
+          "blocos": [
+            "fratura-vertebral-osteoporotica-e-cimentacao-12da0d49",
+            "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf",
+            "fratura-em-explosao-a3-e-a4-c49f544e",
+            "fratura-vertebral-osteoporotica-e-cimentacao-5f27ce5b"
+          ],
+          "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+          "trechosSha256": "6033e9d9ae3aedf8d5b7cc4744b13eb1117d7c21d66996c9c2282c01c7f4dc1b"
+        }
+      ],
+      "questaoSha256": "768b8a7c34d47a644f92d565b74499b70805d9c7f8f95c2e10022dc8d74f6126",
+      "comentarioSha256": "7beaf5c5b9e51864b9c1093a517c79f145333ed6a508012dadb1035d24c4bccd"
+    }
   },
   "osteometabolicas-0014": {
     "conceito": "**O que é.** A osteólise pós-traumática é a **reabsorção óssea progressiva** que se segue a um trauma, único ou repetitivo, e se concentra em dois sítios: **extremidade distal da clavícula e púbis**. Os dois são osso superficial, sob carga cíclica, em articulação de pouca mobilidade.\n\n**Na clavícula distal**, é o exemplo clássico dos **levantadores de peso** e de quem sofreu **entorse acromioclavicular**. Dá dor local; a radiografia mostra perda da definição cortical, **afilamento** da extremidade e alargamento aparente da articulação, e a **ressonância** mostra edema ósseo antes. O tratamento é modificar a atividade e, nos refratários, a **ressecção da clavícula distal** (Mumford). **No púbis**, ocorre após trauma, parto ou sobrecarga em atletas, e o cuidado é o **diagnóstico diferencial com infecção e tumor**, com biópsia quando a evolução não é a típica.\n\n**Na prova:** osteólise pós-traumática é **púbis e clavícula distal**; na clavícula, pense no levantador de peso.",

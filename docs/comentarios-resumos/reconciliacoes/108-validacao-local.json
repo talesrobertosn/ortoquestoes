@@ -1,0 +1,70 @@
+{
+  "basePublicada": "7464995a82886a6aa8946302cde715a88ab8298e",
+  "lotes": {
+    "106-tibia-tecnica-e-alinhamento.json": {
+      "sha256": "90ffc895d1df7e5ef013b5540887996337f6220831210a7ff4565212a5e759d6",
+      "ids": [
+        "trauma-0088",
+        "trauma-0224",
+        "trauma-0305",
+        "trauma-0427",
+        "trauma-0441",
+        "trauma-0575",
+        "trauma-0675",
+        "trauma-0890",
+        "trauma-0904",
+        "trauma-0996"
+      ]
+    },
+    "107-tibia-planejamento-e-seguranca.json": {
+      "sha256": "796e39c57cc0208e1789edfaf975a937eb361b4769761d45411eebacabb0ccfb",
+      "ids": [
+        "trauma-1706",
+        "trauma-1707",
+        "trauma-1708",
+        "trauma-1709",
+        "trauma-1710",
+        "trauma-1713",
+        "trauma-1715",
+        "trauma-1716",
+        "trauma-1717",
+        "trauma-1719"
+      ]
+    },
+    "108-tibia-resultados-e-conduta.json": {
+      "sha256": "4c698631c930ba18003ee93650ce1cb857d1bebcbff7a16486c824faacb19c4e",
+      "ids": [
+        "trauma-0435",
+        "trauma-1085",
+        "trauma-1097",
+        "trauma-1128",
+        "trauma-1156",
+        "trauma-1172",
+        "trauma-1173",
+        "trauma-1236",
+        "trauma-1002",
+        "trauma-1718"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 497,
+    "head": "46d3c25e1a5cd2ecadd5411dd85a3ea188453e53",
+    "ci": 40043510398,
+    "pages": 40043709874,
+    "deployJob": 120721147664,
+    "avulsosIntegrais": 20
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 testes passaram",
+    "acervo": "sem erros",
+    "cadeia": "106–108, 30 IDs únicos; aplicação reproduzida desde a base, fontes/hashes e todas as alternativas conferidos; proteção dos membros alheios e trinta avulsos integrais",
+    "interface": "0224, 0427, 0996, 1706, 1717, 1719, 1128, 1172 e 1002 em celular/computador; destinos de fonte e alertas. Capturas inspecionadas antes do commit."
+  },
+  "figuras": "nenhum dos trinta enunciados contém figura; nenhum bloco figurativo foi usado como evidência",
+  "lacunas": "107-lacunas-tibia.json: dez pendências específicas, sem alteração dos comentários/gabaritos; não contam como revisão",
+  "publicado": false,
+  "proximoLote": "109",
+  "npmTest": "suíte completa passou após o terceiro lote",
+  "build": "passou; trinta avulsos integrais iguais"
+}

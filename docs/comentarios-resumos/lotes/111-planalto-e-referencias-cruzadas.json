@@ -1,0 +1,383 @@
+{
+  "trauma-0052": {
+    "questaoSha256": "b297630a7c3c3aa096869c5ebe91c571569dbfb8779e8f11d318e04e8f1582f9",
+    "comentarioAnteriorSha256": "4ef0225b119e9de6039bc07bcda68e77e19d90844a45410a71af2456b015c0d9",
+    "comentario": {
+      "conceito": "A fratura não envolve só a superfície óssea: o menisco pode ser comprimido, romper ou ficar preso no traço. Entre as alternativas, a associação característica é a **lesão meniscal**, alternativa A, com destaque para o menisco lateral.\n\nA maioria das fraturas do planalto é lateral, por valgo associado à carga axial. O côndilo femoral lateral desce contra a tíbia e pode aprisionar o menisco, que cobre uma área proporcionalmente maior desse lado. No resumo, o grau de afundamento e o alargamento do côndilo acompanham a lesão meniscal (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\n**Os números dependem de quem foi estudado e de como se procurou a lesão.** Na série de Gardner, com 103 fraturas operadas avaliadas por RM, o menisco lateral apareceu em 91%, o LCA em 77% e o canto posterolateral em 68%. Em fraturas pouco desviadas tratadas sem cirurgia, Shepherd encontrou menisco em 80% e ligamentos em 40%. Não se deve transportar uma dessas taxas para todo paciente com fratura.\n\nA identificação também não significa operar toda alteração vista na RM. Os autores não a solicitam de rotina e descrevem inspeção e reparo do menisco lateral pela artrotomia submeniscal na fixação. A história natural de lesões vistas apenas na ressonância e a necessidade de tratá-las continuam incertas.\n\n> **Na prova:** menisco é a associação pedida; na avaliação, procure interposição e lesão meniscal sem esquecer os ligamentos.",
+      "correta": "**A: menisco.** É a associação meniscal destacada nas séries e no mecanismo de impacto, sobretudo lateral. A resposta não transforma uma frequência de RM de pacientes operados numa taxa universal.",
+      "incorretas": {
+        "B": "**O colateral medial pode lesar-se, mas o valgo não prova que ele seja a associação principal.** A instabilidade inicial também pode vir da perda de suporte ósseo. Na série de RM destacada, a lesão meniscal lidera; em séries antigas sob estresse, o perfil de lesões ligamentares é diferente.",
+        "C": "**O LCA é muito frequente, mas fica atrás do menisco lateral na série de referência.** Foram 77% contra 91% em Gardner. Confundir o ligamento mais destacado com a lesão de partes moles mais frequente troca o conjunto comparado.",
+        "D": "**O LCP pode estar envolvido, sem que isso o torne a resposta geral.** O capítulo discute avulsões dos cruzados e controvérsia de reparo, mas não apresenta o LCP acima da lesão meniscal. Não há motivo para inventar uma porcentagem dele para resolver a alternativa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "6c681a2d75c916f065bdce23bca719be7ddc1af58feb5e96c05922c2867ad76c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0960": {
+    "questaoSha256": "bb5539d51cfce34b2955e6564748ea630b0b00492efdf284b520fb5291c6ae5c",
+    "comentarioAnteriorSha256": "ae5fefcabd7083c6c9d84088e12db78a49e10c17b614e95f7dda999b5c63c7e3",
+    "comentario": {
+      "conceito": "A questão agora restringe a comparação aos **ligamentos**. A resposta oficial é o **LCA**, alternativa C, coerente com a série de fraturas operadas avaliadas por RM que o resumo destaca. Isso é diferente de perguntar a lesão de partes moles mais frequente, quando o menisco lateral aparece à frente.\n\nEm Gardner, com 103 fraturas operadas, a RM mostrou LCA em 77% e canto posterolateral em 68%; o menisco lateral apareceu em 91%. O LCA se prende na região anterior da espinha medial e pode ser afetado pelo componente rotacional e pelos traços que alcançam as espinhas (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\n**O método muda o que se encontra.** Delamarter avaliou 39 fraturas com radiografias sob estresse e achados cirúrgicos e encontrou predomínio de lesões do colateral medial. Portanto, o gabarito não deve virar a afirmação de que o LCA será sempre o ligamento mais lesado em qualquer população ou método diagnóstico.\n\nNa urgência, a frouxidão em valgo pode refletir o afundamento ósseo; o exame ligamentar deve ser repetido depois da fixação. A RM é sensível, mas os autores não a usam de rotina, e a indicação de tratar cada achado depende do quadro, não apenas de sua presença na imagem.\n\n> **Na prova:** LCA é a resposta ligamentar; não o confunda com o menisco lateral, que lidera as partes moles na série de RM.",
+      "correta": "**C: LCA.** É o ligamento destacado pela série de RM do resumo, à frente do canto posterolateral. A interpretação deve permanecer vinculada ao método e à população, sem um ranking universal.",
+      "incorretas": {
+        "A": "**É frequente, mas não o primeiro na série citada.** O canto posterolateral apareceu em 68%, atrás dos 77% do LCA. Sua importância para a instabilidade em varo não o coloca automaticamente acima do cruzado nessa comparação.",
+        "B": "**Possibilidade de lesão não demonstra predomínio.** O capítulo admite avulsão e discussão de reparo do LCP, mas não o identifica como a associação ligamentar mais frequente na série usada para a resposta. Não há taxa específica dele a acrescentar sem fonte.",
+        "D": "**É o distrator sustentado por outro método de avaliação.** O LCM predominou na série antiga de estresse/cirurgia de Delamarter. A pergunta é respondida pelo padrão de RM destacado, e a frouxidão em valgo antes da redução também pode ser óssea."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "555700d4f83c1fc3f17389d35780634b2ae2b72e24e57c84eff2860f734d3cb7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1192": {
+    "questaoSha256": "1ea2be4e97b44cd34de9b26181394092460d0e67d2e832e3a144b119ca94b942",
+    "comentarioAnteriorSha256": "76e8de466497b1352d76d182a7dca179480ce9f96e38f29011bd7f021c15a6cf",
+    "comentario": {
+      "conceito": "A alternativa dos **meniscos**, A, permanece a resposta provável pelo resumo; não existe gabarito oficial registrado. O raciocínio começa no impacto do côndilo femoral sobre a superfície tibial e no tecido que fica entre os dois ossos.\n\nNo padrão lateral com separação e afundamento, o menisco lateral pode ser comprimido ou interposto no traço. A cobertura meniscal proporcionalmente maior desse compartimento e a relação com afundamento e alargamento ajudam a explicar a associação (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\nA evidência deve ser nomeada sem generalização: Gardner encontrou menisco lateral em 91% das 103 fraturas operadas examinadas por RM, com LCA em 77%. Shepherd, em fraturas pouco desviadas tratadas sem cirurgia, relatou menisco em 80% e ligamentos em 40%. São populações diferentes, mas ambas reforçam que o dano meniscal não é um detalhe excepcional.\n\n**Reconhecer a lesão não é o mesmo que prescrever um reparo para todo achado.** O resumo descreve inspeção e reparo do menisco lateral na artrotomia submeniscal, mas ressalva a incerteza da história natural das lesões vistas só na RM. Também recomenda reinterpretar a instabilidade ligamentar após restaurar o suporte ósseo.\n\n> **Na prova:** a associação meniscal é a resposta sustentada; registre a ausência de gabarito oficial e não invente uma taxa geral para todas as fraturas.",
+      "correta": "**A: dos meniscos.** É a associação sustentada pelo mecanismo e pelas séries apresentadas, com destaque para o lateral. Mantida como resposta bibliográfica/provável, sem atribuição de letra oficial à banca.",
+      "incorretas": {
+        "B": "**O LCM é relevante, mas não substitui a associação meniscal destacada.** Ele pode lesar-se com o valgo e predomina em uma série antiga de avaliação sob estresse. Isso não supera os achados meniscais nas séries por RM citadas para essa comparação.",
+        "C": "**O colateral lateral também pode sofrer lesão, sem liderar o conjunto apresentado.** A tabela antiga de Delamarter inclui lesões do LCL, mas é outro método e não prova que ele seja mais comum que o menisco. A gravidade de uma lesão ligamentar não equivale à sua frequência.",
+        "D": "**O LCA é frequente, porém atrás do menisco lateral na série de Gardner.** Os 77% do LCA não devem ser confundidos com os 91% meniscais naquele grupo operado. A alternativa troca o principal ligamento destacado pela principal lesão de partes moles."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável A, sustentada pelas séries de lesão meniscal do resumo do Rockwood, 10ª ed., cap. 62. As frequências dependem do grupo e do método diagnóstico."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "4ad88b57fae7c412aac269b17516cced8ba1951c8a06dd21dd9c1ff7360350cf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1669": {
+    "questaoSha256": "5d78feae14e8d2a49716826e3ae982e9837c43120511ee686f9b77093ac81935",
+    "comentarioAnteriorSha256": "6250a7e13a7d3ea95181729e5d472b8c89801261f40e9b5a298256773b7f62c5",
+    "comentario": {
+      "conceito": "O enunciado especifica fraturas **operadas e estudadas por RM**, detalhe que define a referência correta. Nessa população descrita por Gardner, as duas lesões mais frequentes foram **menisco lateral e LCA**, alternativa B.\n\nEntre 103 fraturas operadas, apenas um paciente não tinha lesão de partes moles. O menisco lateral apareceu em 91%, o LCA em 77%, o canto posterolateral em 68% e o menisco medial em 44%. Os números devem ser lidos juntos com o desenho da série, sem virar incidência de toda fratura do planalto (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\n**A combinação tem uma explicação mecânica.** O côndilo femoral lateral afunda o planalto e pode prender o menisco; rotação e traços pelas espinhas podem envolver a inserção do LCA. O resumo relaciona o dano meniscal ao afundamento e ao alargamento do côndilo, ajudando a passar de uma lista de porcentagens para uma imagem do trauma.\n\nMétodos diferentes geram perfis diferentes: Delamarter, com estresse radiográfico e cirurgia, encontrou predomínio do LCM. Essa observação não invalida Gardner; impede comparar números de grupos distintos como se fossem o mesmo experimento. Na conduta, a presença na RM também não torna automático o reparo de cada estrutura.\n\n> **Na prova:** no grupo operado por RM de Gardner, lateral primeiro e LCA depois.\n\n**Por que esta questão foi criada.** Ela junta as perguntas de lesão meniscal e ligamentar, mas explicita o método de avaliação para impedir um ranking descontextualizado.",
+      "correta": "**B: menisco lateral e LCA.** São o primeiro e o segundo achados na série de RM de 103 fraturas operadas: 91% e 77%. A ordem está ligada a essa referência, não a um consenso numérico universal.",
+      "incorretas": {
+        "A": "**O cruzado está correto; o menisco foi trocado.** Na mesma série, o medial apareceu em 44%, abaixo do lateral e até do canto posterolateral. Não se deve transferir o perfil de outras lesões meniscais para a fratura do planalto.",
+        "C": "**O menisco está correto, mas o LCM pertence à armadilha metodológica.** O predomínio medial ligamentar vem da série antiga com estresse e cirurgia. A RM do grupo especificado coloca o LCA como o segundo achado.",
+        "D": "**Escolhe o segundo e o terceiro e omite o primeiro.** LCA e canto posterolateral são frequentes, com 77% e 68%, mas ambos ficam abaixo dos 91% do menisco lateral. O par não responde à ordem pedida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Lesões associadas: menisco, ligamentos e o colateral medial"
+        ],
+        "blocos": [
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+          "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "18a784fb53591f1ab0a58d844984bfb7ee6450a026471abb77ffa086c3edf4a8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1671": {
+    "questaoSha256": "a6a7c1e42044becc1b8d1548389d95e6001a96d4cdaf600d491d0b0faed5088d",
+    "comentarioAnteriorSha256": "edb8ea10b6ed5bb1bb5a6ab64499949afcba239f9486a90c688532e80a09f2ea",
+    "comentario": {
+      "conceito": "Na tabela de Hohl e Moore apresentada pelo resumo, o **tipo V, em quatro partes**, tem a taxa neurovascular destacada em cerca de **50%**. É o padrão da alternativa D, e não simplesmente o tipo mais frequente de fratura-luxação.\n\nO tipo V separa os dois côndilos e a eminência intercondilar, perdendo simultaneamente os sistemas estabilizadores ligados aos colaterais e aos cruzados. O capítulo o descreve como o mais instável. Essa desorganização ajuda a entender por que a atenção neurovascular precisa acompanhar a análise dos fragmentos (Rockwood, 10ª ed., cap. 62, “Hohl e Moore”).\n\n**A mesma porcentagem pode se referir a estruturas diferentes.** No tipo II, a tabela cita lesão do colateral oposto em cerca de 50%, mas lesão neurovascular em 12%. No III, avulsão da borda, o número neurovascular é 30%. Trocar o desfecho de uma coluna da tabela pelo de outra é a principal armadilha.\n\nOs tipos têm padrões anatômicos próprios: I é separação coronal, II é côndilo inteiro, III avulsão da borda, IV compressão da borda e V quatro partes. Não é necessário inventar taxa neurovascular para os tipos em que o resumo não a fornece. O planejamento exige reconhecer a fratura-luxação e documentar a avaliação, além de classificar o osso.\n\n> **Na prova:** V é quatro partes e cerca de 50% neurovascular na tabela; os 50% do tipo II são do colateral oposto.\n\n**Por que esta questão foi criada.** Ela obriga a distinguir frequência de um padrão, lesão ligamentar e lesão neurovascular, três informações que aparecem próximas na mesma classificação.",
+      "correta": "**D: V, fratura em quatro partes.** O padrão perde os dois sistemas estabilizadores e recebe a taxa neurovascular de cerca de 50% na referência. A porcentagem não deve ser atribuída indistintamente aos outros tipos.",
+      "incorretas": {
+        "A": "**Frequência de ocorrência não é risco neurovascular.** A separação coronal tipo I é cerca de 37% das fraturas-luxações na tabela, mas esse número não é uma taxa de lesão de vasos e nervos. O resumo não lhe atribui o risco destacado para o V.",
+        "B": "**Confunde colateral com feixe neurovascular.** O côndilo inteiro tipo II tem cerca de 50% de lesão do colateral oposto, enquanto o número neurovascular é 12%. A alternativa atrai se o aluno memoriza o número sem o desfecho.",
+        "C": "**É alto risco, mas a taxa apresentada é menor.** A avulsão da borda tipo III tem 30% de lesão neurovascular na tabela, abaixo dos cerca de 50% do V. A gravidade não deve ser negada só porque não é a resposta mais alta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: AO/OTA, LUO, HOHL e MOORE e o planalto em zonas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas"
+        ],
+        "blocos": [
+          "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-b6c1dafc",
+          "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-d8b24b7e"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "e0f12daac67611b71e432c2e5e4abbd7f047942bf91736f9557265d2ff9ec0a7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0558": {
+    "questaoSha256": "0f15b62fa98e868729ddf16f763c41d79710f8c58057ac26263d6a0d63df36fa",
+    "comentarioAnteriorSha256": "42f0c5ccf4e352d581da6b6862704fc9bb19b4c99db2e346c0390ffb9f62dc86",
+    "comentario": {
+      "conceito": "A figura mostra um **fragmento arrancado da borda lateral do planalto**, sem a separação de um côndilo inteiro nem o afundamento de uma larga margem. Esse padrão de **avulsão da borda** corresponde ao **tipo III de Hohl e Moore**, alternativa C.\n\nO detalhe a reconhecer é a relação do pequeno fragmento marginal com a região de inserção das partes moles. Na classificação do resumo, o tipo III é uma avulsão, geralmente lateral, na inserção capsular; o tipo IV é uma compressão da borda causada pelo côndilo femoral durante a subluxação. Um envolve arrancamento, o outro impacção (Rockwood, 10ª ed., cap. 62, “Hohl e Moore”).\n\n**O tamanho do fragmento não resume a gravidade do joelho.** A tabela associa a avulsão marginal a lesões do LCA, LCP ou ambos e relata 30% de lesão neurovascular nessa categoria. Esse número pertence à referência da classificação, não pode ser aplicado automaticamente a qualquer pequena avulsão isolada vista numa radiografia.\n\nNa leitura da gravura, não se deve confundir o fragmento da borda tibial com a cabeça da fíbula logo abaixo nem classificá-lo pelo osso vizinho. A pergunta é sobre a morfologia da fratura-luxação representada. A análise completa ainda exige avaliar estabilidade e estado neurovascular, não só reconhecer a letra.\n\n> **Na prova:** borda arrancada é Hohl e Moore III; borda impactada é IV.",
+      "correta": "**C: III.** A avulsão marginal lateral visível na gravura corresponde ao padrão de borda arrancada da classificação. A figura foi aberta e inspecionada antes desta revisão.",
+      "incorretas": {
+        "A": "**O tipo I separa um fragmento coronal maior.** O resumo o descreve geralmente medial, com traço oblíquo melhor visto no perfil. A gravura evidencia arrancamento marginal, não esse padrão de separação coronal.",
+        "B": "**O tipo II leva o côndilo inteiro.** Seu traço atravessa da espinha ao compartimento oposto. Não é o pequeno fragmento periférico representado na borda lateral da tíbia.",
+        "D": "**O IV comprime a borda em vez de arrancá-la.** Na figura, o achado destacado é o fragmento avulsionado para fora da margem. Confundir avulsão e impacção apaga a distinção morfológica entre III e IV."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: AO/OTA, LUO, HOHL e MOORE e o planalto em zonas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas"
+        ],
+        "blocos": [
+          "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-b6c1dafc",
+          "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-ce00049f"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "711f858dc56813afe221ed9a193b91ca1986cd5b6821dc9fafed2122b7703dee"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0558-1.jpeg"
+    ]
+  },
+  "trauma-1702": {
+    "questaoSha256": "9cd35e7113e160d2fb77d6d70e02a09d23f3b3d4adda4a66245f36c89fa8c4dc",
+    "comentarioAnteriorSha256": "6a36a935db593835ffd6554592aafb0df76a27737b37f516dba4daf8dbd59698",
+    "comentario": {
+      "conceito": "Na via anterior direta, o feixe da **artéria tibial anterior e do fibular profundo** acompanha o **extensor longo do hálux para lateral**, alternativa C. O tibial anterior vai para o lado medial da janela.\n\nA incisão expõe os dois tendões após abrir o retináculo dos extensores. No nível articular, o feixe fica logo medial ao extensor longo do hálux; afastá-los juntos permite abrir a cápsula e alcançar as porções medial, central e lateral do plafond. Antes de chegar a esse plano, o fibular superficial cruza o campo no subcutâneo e precisa de proteção (Rockwood, 10ª ed., cap. 64, “Via anterior direta”).\n\n**A direção muda quando a via muda.** Na anterolateral, o capítulo descreve extensores, fibular terceiro e feixe levados para medial. Isso não deve ser transportado para a janela entre tibial anterior e extensor longo do hálux do enunciado. Decorar só “feixe medial” ou “feixe lateral” sem localizar o intervalo cria uma regra perigosa.\n\nA escolha do acesso depende da TC e das regiões a reconstruir. A anterior direta oferece visão ampla e admite placas em diferentes faces, mas continua dependente de pele viável, planejamento das incisões complementares e dissecção cuidadosa. Exposição maior não significa ignorar o envelope de partes moles.\n\n> **Na prova:** anterior direta, tibial anterior medial; extensor longo do hálux e feixe lateral.\n\n**Por que esta questão foi criada.** Ela explicita o tendão e a direção corretos da fonte, permitindo aprender a anatomia sem depender da troca de tendões presente em uma alternativa antiga de prova.",
+      "correta": "**C: extensor longo do hálux, lateralmente.** O feixe fica junto desse tendão na região articular e acompanha seu afastamento, enquanto o tibial anterior é levado para medial.",
+      "incorretas": {
+        "A": "**O tibial anterior vai para medial, mas o feixe não o acompanha.** Ele permanece no grupo do extensor longo do hálux, levado lateralmente. A alternativa mistura o destino de um tendão com o de estruturas do outro lado da janela.",
+        "B": "**Mantém o sentido do feixe e troca o tendão.** O tibial anterior é afastado para medial na anterior direta. A associação lateral correta é com o extensor longo do hálux.",
+        "D": "**Identifica o tendão e inverte a direção.** O grupo do extensor longo do hálux e do feixe vai para lateral. Afastamento medial de extensores e feixe é descrito em outra via, a anterolateral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Vias de acesso."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Vias de acesso"
+        ],
+        "blocos": [
+          "vias-de-acesso-8622a325",
+          "vias-de-acesso-82856abe",
+          "vias-de-acesso-756b9cec"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "a5f8f9a9d6b4a130c87b9c88b779bad8ca98a4a99c1bbb1412a1fe35387f98b1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1705": {
+    "questaoSha256": "eb0ded02eaca85bb9b51894ad2eb7d10fb07472655d8b4a04d296f1463d0858c",
+    "comentarioAnteriorSha256": "03798b52b06b97993ba78e83a5d4e5757b5f08c879fa13fb28bc01da7164a40a",
+    "comentario": {
+      "conceito": "Segundo a série de Rüedi apresentada no resumo, a artrose sintomática após pilão operado e bem reduzido costuma manifestar-se **nos dois primeiros anos**, alternativa A. Esse intervalo descreve aquela evolução clínica; não significa que todo pilão terá artrose nem que nada possa mudar depois.\n\nA redução recompõe o encaixe, mas não apaga a lesão da cartilagem sofrida no impacto axial. O capítulo cita apoptose e impacção para explicar artrose apesar de uma reconstrução anatômica. Também ressalva que artrose na radiografia e limitação funcional não se correlacionam perfeitamente (Rockwood, 10ª ed., cap. 64, “Resultados e artrose pós-traumática”).\n\n**Quando começa a artrose e quando se decide operar são perguntas diferentes.** Na série de Rüedi, sintomas apareceram cedo, e a manifestação em um a dois anos ajuda a responder ao enunciado. A observação de que pacientes com artrose podem tolerar a dor por anos antes de pedir outra cirurgia não desloca o início da doença para depois do quinto ano.\n\nOutras séries mostram trajetórias distintas, com melhora funcional prolongada ou artrose progressiva em seguimento longo. O dado temporal deve permanecer ligado à referência que a questão nomeia, e não virar uma data obrigatória de falha nem uma indicação automática de artrodese.\n\n> **Na prova:** Rüedi aponta os dois primeiros anos para manifestação sintomática; tempo até cirurgia de salvamento é outro desfecho.\n\n**Por que esta questão foi criada.** Ela distingue aparecimento dos sintomas de duração do seguimento e tempo até nova operação, números que podem ser confundidos ao ler estudos de resultado.",
+      "correta": "**A: nos dois primeiros anos.** É o intervalo descrito para a manifestação da artrose sintomática na referência de Rüedi. A boa redução não elimina todo o dano inicial à cartilagem.",
+      "incorretas": {
+        "B": "**Adia o início além do intervalo apresentado.** Terceiro ao quarto ano pode ser um momento de seguimento, mas a série citada descreve manifestação em um a dois anos. Não se deve trocar a data da observação pelo início dos sintomas.",
+        "C": "**Confunde doença já instalada com evolução tardia.** O resumo não coloca o início típico de Rüedi no quarto ou quinto ano. Os sintomas podem persistir até lá, sem terem começado nesse período.",
+        "D": "**O quinto ano se relaciona a outra decisão clínica.** O texto discute por quanto tempo pacientes podem tolerar dor antes de procurar cirurgia. Isso não é a data de manifestação da artrose, que é mais precoce na série solicitada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Resultados e artrose pós-traumática."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Resultados e artrose pós-traumática"
+        ],
+        "blocos": [
+          "resultados-e-artrose-pos-traumatica-62c34c34",
+          "resultados-e-artrose-pos-traumatica-0dd7d9b0",
+          "resultados-e-artrose-pos-traumatica-119ba320"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "aef23b76455c64aae4d42da71d78ba20461d83c99772febc777ac1aef533b5c5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pe-tornozelo-0334": {
+    "questaoSha256": "54746ca734372b590f43cc1cc040be7e795c58c08738572aeb752b2517e4462f",
+    "comentarioAnteriorSha256": "4dfcc1924021e9b91b2db63adffe42ea6e279c81eac9cfdef75f792944799928",
+    "comentario": {
+      "conceito": "A resposta provável é **nos dois primeiros anos**, alternativa A, com base na série de Rüedi descrita pelo resumo. Não há gabarito oficial registrado, e o intervalo não deve ser anunciado como uma regra cronológica para todo paciente.\n\nA cartilagem pode ter sido lesada pela carga axial e pela impacção no momento da fratura. Mesmo que o cirurgião recupere uma superfície anatômica, o dano celular inicial pode evoluir para artrose. É por isso que uma boa radiografia de redução não garante ausência de dor ou de degeneração futura (Rockwood, 10ª ed., cap. 64, “Resultados e artrose pós-traumática”).\n\nNa série apresentada, a artrose se manifesta em um a dois anos, com sintomas precoces nos pacientes acometidos. O capítulo reúne outros estudos com seguimento mais longo e trajetórias diferentes; esses dados não devem ser condensados numa única data universal.\n\n**Também não confunda início de sintomas com decisão por cirurgia.** A passagem que menciona tolerar dor por vários anos antes de procurar uma operação de salvamento fala de outro evento. O paciente pode ter artrose sintomática há tempo e só mais tarde precisar de artrodese ou discutir prótese. A intensidade da limitação e a radiografia também não são medidas equivalentes.\n\n> **Na prova:** para o intervalo apresentado por Rüedi, marque os dois primeiros anos; mantenha clara a ausência de resposta oficial.\n",
+      "correta": "**A: nos dois primeiros anos.** É a manifestação descrita na série que sustenta a resposta bibliográfica. Mantida como provável, sem atribuição de gabarito oficial à banca.",
+      "incorretas": {
+        "B": "**Desloca a manifestação para depois do intervalo citado.** O terceiro e quarto anos não são o início típico descrito por Rüedi no resumo. A existência de seguimento posterior não altera o momento relatado de aparecimento dos sintomas.",
+        "C": "**Usa uma faixa tardia como se fosse o início.** A doença pode continuar sintomática no quarto ou quinto ano, mas a referência aponta manifestação em um a dois. Persistência e aparecimento não são o mesmo desfecho.",
+        "D": "**Mistura a cronologia da artrose com a busca de cirurgia.** Esperar anos até pedir uma operação por dor não significa que a artrose só tenha surgido depois do quinto ano. A resposta da questão se apoia na manifestação mais precoce da série citada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Resultados e artrose pós-traumática."
+      ],
+      "conferido": false,
+      "provavel": "A",
+      "alerta": "Sem gabarito oficial registrado. Mantida a resposta bibliográfica/provável A, com base na manifestação em um a dois anos da série de Rüedi apresentada no resumo 64. O dado não é um prazo universal nem o tempo até cirurgia por artrose."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-64-pilao-tibial",
+        "titulo": "Fratura do pilão tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+        "secoes": [
+          "Resultados e artrose pós-traumática"
+        ],
+        "blocos": [
+          "resultados-e-artrose-pos-traumatica-62c34c34",
+          "resultados-e-artrose-pos-traumatica-0dd7d9b0",
+          "resultados-e-artrose-pos-traumatica-119ba320"
+        ],
+        "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+        "trechosSha256": "aef23b76455c64aae4d42da71d78ba20461d83c99772febc777ac1aef533b5c5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1711": {
+    "questaoSha256": "e7aa2c9a59f929b25c4ec16f7337e99e18dd03ad79015fd3f86a447aa281999a",
+    "comentarioAnteriorSha256": "0a0282e3c76b5373cd336bae6529cf975cdc6acd0eed4effa50fe2f72dfcd523",
+    "comentario": {
+      "conceito": "O primeiro caso tem **alta energia e fratura segmentar**: a ferida de apenas 1 cm não impede a classificação **IIIA**. No segundo, a ferida de 4 cm e a lesão isolada da fibular com pé bem perfundido, sem outro critério grave descrito, correspondem a **II**. O par é A.\n\nGustilo não é uma régua aplicada só à pele. O resumo inclui padrão segmentar de alta energia no IIIA independentemente do tamanho da ferida. Já o II contempla ferida de 1 a 10 cm sem dano extenso das partes moles ou padrão de alta energia; portanto, o segundo enquadramento depende também do restante da descrição, não apenas dos 4 cm (Rockwood, 10ª ed., cap. 63, “Gustilo”).\n\n**Lesão arterial não é sinônimo automático de IIIC.** O critério apresentado é a necessidade de reparo vascular para revascularizar a perna. Se uma artéria isolada está lesada, mas o pé permanece bem perfundido pelas demais, o capítulo não classifica como IIIC, mesmo que aquela artéria seja reparada.\n\nEssa distinção evita dois erros: minimizar uma fratura segmentar porque o orifício é pequeno e superestimar o grau vascular apenas porque o nome de uma artéria aparece no caso. A avaliação continua exigindo perfusão, cobertura, contaminação e viabilidade, pois um dado isolado não descreve toda a exposta.\n\n> **Na prova:** alta energia segmentar pode ser IIIA com ferida pequena; IIIC exige reparo necessário para revascularizar.\n\n**Por que esta questão foi criada.** Ela contrapõe tamanho da ferida, energia e perfusão, obrigando a escolher o grau pelo conjunto da lesão em vez de por uma palavra isolada.",
+      "correta": "**A: IIIA; II.** O padrão segmentar de alta energia define o primeiro apesar da ferida pequena. No segundo, a perfusão preservada afasta o critério vascular de IIIC, e não há outro critério de tipo III informado.",
+      "incorretas": {
+        "B": "**O primeiro grau está correto; o segundo confunde artéria lesada com membro a revascularizar.** A fibular isolada com pé bem perfundido não basta para IIIC. O critério é o reparo necessário para recuperar a perfusão da perna.",
+        "C": "**Classifica a primeira pela ferida e ignora a energia.** O padrão segmentar de alta energia entra no IIIA qualquer que seja o tamanho do orifício. O segundo grau II é compatível com a descrição, mas não corrige o primeiro erro.",
+        "D": "**Comete as duas simplificações.** A ferida pequena não torna I uma segmentar de alta energia, e uma lesão arterial isolada com perfusão mantida não torna o segundo caso IIIC. Energia e necessidade de revascularização são os critérios decisivos aqui."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Classificação: AO 42 e as partes moles."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Classificação: AO 42 e as partes moles"
+        ],
+        "blocos": [
+          "classificacao-ao-42-e-as-partes-moles-6a238635"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "4fd84db813a2de292603f435081bf540cef4b5e4b565fe9c3980cc408091ed6e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

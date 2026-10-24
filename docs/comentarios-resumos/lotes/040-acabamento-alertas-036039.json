@@ -1,0 +1,204 @@
+{
+  "mao-1504": {
+    "questaoSha256": "0ed30fa9443fb83d3b6d7b8996a040bdf780a055425c618d12b633919b9282b3",
+    "comentarioAnteriorSha256": "c4698c01e44c8953b90ae7994d362b6e7a1c036ee0bcdec34ef023ec217f232e",
+    "comentario": {
+      "conceito": "**A ulna já foi revista, portanto o caso está na etapa de investigar por que a cabeça continua irredutível.** Na Monteggia, restaurar a ulna geralmente reduz o rádio. Persistindo a luxação, primeiro se confirma comprimento, alinhamento e angulação dorsal proximal; só depois ganha força a hipótese de obstáculo por partes moles.\n\nO próximo passo sustentado pelo resumo é **redução aberta por via radial independente**. A cabeça pode ter passado em casa de botão pelo **ligamento anular ou pelo ancôneo**. Fixar uma articulação incongruente sem eliminar a causa não equivale a uma redução efetiva.\n\nA alternativa C contém a conduta escolhida pela banca, mas atribui o bloqueio ao **interósseo posterior**. Esse nervo não integra a lista de interposições apresentada no resumo. Ele é uma estrutura em risco que precisa ser protegida na exposição proximal, o que é diferente de afirmar que foi o tecido aprisionado neste paciente.\n\n**Na Biblioteca, leia “Como a ulna reduz o rádio”, incluindo a ressalva sobre esta prova.** É possível preservar o gabarito e aprender a conduta correta sem promover uma atribuição anatômica não demonstrada a fato estabelecido.",
+      "correta": "**C é o gabarito oficial pela indicação de redução aberta.** Com a ulna adequadamente reconstruída e a articulação ainda irredutível, a exploração radial independente permite encontrar e remover o bloqueio.\n\nA justificativa de “provável interposição do interósseo posterior” deve ser lida com reserva: o resumo descreve anular ou ancôneo, sem confirmar a estrutura no caso e sem incluir o nervo nessa lista.",
+      "incorretas": {
+        "A": "**Fixar o cotovelo por seis semanas não remove o que mantém a cabeça fora do lugar.** A fonte orienta explorar a irredutibilidade depois de conferir a ulna, em vez de apenas sustentar uma relação incongruente. Proteção temporária pode ter outras indicações, mas não responde à causa descrita desta luxação persistente.",
+        "B": "**Artroplastia depende de uma lesão da cabeça radial que justifique substituí-la.** O enunciado informa persistência de luxação, sem descrever cabeça irreparável. Trocar uma cabeça sem essa indicação não é o passo proposto para procurar um bloqueio por partes moles após a revisão ulnar.",
+        "D": "**Redução fechada com fio radiocapitelar não resolve um bloqueio que continua depois da reconstrução anatômica.** A necessidade é identificar a causa e obter congruência, não apenas atravessar a articulação com material. O resumo indica via radial própria diante da cabeça irredutível."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio; Vias de acesso e o nervo interósseo posterior.",
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível. Seção: Fratura da cabeça do rádio, prótese."
+      ],
+      "alerta": "Gabarito C preservado pela conduta de redução aberta. O resumo do Rockwood descreve interposição em casa de botão pelo ligamento anular ou pelo ancôneo, sem incluir o interósseo posterior nessa lista. O enunciado não confirma qual estrutura está presa, e a fonte consultada não permite atribuir raridade ou frequência à interposição do nervo.",
+      "geradoEm": "2026-10-21"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio",
+          "Vias de acesso e o nervo interósseo posterior"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-bc96e99b",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-3db247b5",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c2a37150"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "524ac6da00b4b40d918056e9ec7fe27fb2873df02d204f7d8ae365a6521565c8"
+      },
+      {
+        "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+        "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+        "secoes": [
+          "Fratura da cabeça do rádio"
+        ],
+        "blocos": [
+          "fratura-da-cabeca-do-radio-fe207e21"
+        ],
+        "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+        "trechosSha256": "67e3f8d3fd7ab112b05bcad69e84dccc84fa18a38785c402cbe4784ee5b86c12"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0044": {
+    "questaoSha256": "46720f4d2bd0ad39da68bae800d77db02ef0ccee084ca5183e46ef28595534f2",
+    "comentarioAnteriorSha256": "d9a65e340b2c50010eca115d3ab5c0321fd696ff793f45fb05fd027095c15d52",
+    "comentario": {
+      "conceito": "**O gabarito desta prova é I, mas o resumo consultado aponta II como o mais frequente no adulto.** A diferença precisa ser explícita: aprender o registro da banca não exige ensinar como verdadeira uma distribuição etária que a fonte contradiz.\n\nBado I tem cabeça radial anterior e ápice ulnar anterior; é o tipo predominante na criança. Bado II tem cabeça posterior ou posterolateral, ulna com ápice posterior e predomina no adulto, chegando a até 80% no resumo. Pode associar fraturas da cabeça e do coronoide, tornando mais complexo o problema de estabilidade.\n\nO III é lateral ou anterolateral, metafisário e quase exclusivo da criança. O IV tem cabeça anterior e fratura dos dois ossos proximais no mesmo nível; é descrito como exclusivo do adulto, mas isso não o torna o mais frequente. Direção, frequência e exclusividade são informações diferentes.\n\n**Na Biblioteca, leia a tabela de Bado e o alerta sobre o TARO 2018.** Guarde que o registro oficial desta questão é A, enquanto a resposta à pergunta anatômica e epidemiológica segundo a fonte é o tipo II. Essa separação impede que uma divergência seja propagada para as próximas questões.",
+      "correta": "**A é o gabarito oficial registrado, porém não coincide com a fonte para adultos.** O tipo I é anterior e predomina na criança. O resumo de Rockwood descreve tipo II como o mais frequente no adulto.\n\nPortanto, preservar A no acervo não significa recomendá-lo como conceito correto para a população adulta; a divergência é o ponto central deste comentário.",
+      "incorretas": {
+        "B": "**Tipo II é a resposta sustentada pela bibliografia para “mais comum no adulto”.** A cabeça posterior ou posterolateral acompanha o ápice posterior ulnar. Embora B não seja o gabarito oficial desta prova, o conteúdo deve ser aprendido como a distribuição descrita no resumo.",
+        "C": "**Tipo III é lateral ou anterolateral e quase exclusivo da criança.** Não substitui nem o registro oficial I nem a predominância adulta II da fonte. A ocorrência de casos adultos isolados não o transforma no padrão mais comum nessa idade.",
+        "D": "**Tipo IV é descrito como exclusivo do adulto, com fratura radial e ulnar no mesmo nível.** Exclusividade não é frequência: um padrão raro pode ocorrer só em uma faixa e ainda assim não predominar nela. É essa diferença que impede usar IV para corrigir a divergência da prova."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Monteggia: Bado, Jupiter e a ulna que reduz o rádio."
+      ],
+      "alerta": "Gabarito oficial A preservado. O resumo do Rockwood 10ª edição descreve I como predominante na criança e II como o mais frequente no adulto, chegando a até 80% das Monteggia adultas. Assim, a pergunta sobre adulto teria resposta bibliográfica B, apesar do registro oficial A desta prova.",
+      "geradoEm": "2026-10-21"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Monteggia: Bado, Jupiter e a ulna que reduz o rádio"
+        ],
+        "blocos": [
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
+          "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e41dad57"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "b36fa696ffa0e97f37c60a0ad112384c6747917713ba9a44c9124fdface88602"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0873": {
+    "questaoSha256": "53ecf6fdd6cdc871d7eef4e0e1dfb4bb0e3c67fa9b760709f29860a8aa0adcd9",
+    "comentarioAnteriorSha256": "269eb0379478858b496205a1f1b8c50ba27ac5f1b89ead5f0383804296132d1d",
+    "comentario": {
+      "conceito": "**O gabarito oficial prefere fixador monolateral; o resumo consultado prefere placa imediata para a maioria das expostas do antebraço.** A divergência é clínica e precisa ser preservada. O caráter exposto exige desbridamento, avaliação de contaminação e viabilidade e antibiótico; não implica automaticamente postergar a fixação interna.\n\nO capítulo descreve lavagem, placa e possível fechamento no mesmo tempo nos tipos I, II e IIIA, desde que as condições permitam. No IIIB, a placa pode ser imediata, com desbridamentos e cobertura planejada. O fixador externo fica para cenários selecionados de perda maciça de partes moles e contaminação grosseira, com pinos fora do trajeto da futura placa.\n\nO enunciado não especifica esse cenário grave para justificar a preferência geral pelo fixador. Assim, a resposta registrada D é uma informação da prova, enquanto a escolha terapêutica segundo a fonte depende da situação do ferimento e favorece placa na maioria.\n\n**Leia “Fraturas expostas e por projétil”, na Biblioteca, incluindo o alerta sobre o TARO 2011.** Separe a indicação de controle de danos em partes moles ruins da regra geral de reconstrução anatômica dos dois ossos.",
+      "correta": "**D é o gabarito oficial: fixador externo monolateral.** Sua indicação pode existir em destruição importante de partes moles e contaminação grosseira, mas esses dados não foram oferecidos no enunciado.\n\nO resumo não o recomenda como preferência universal para toda exposição. Para a maioria, descreve desbridamento e placa imediata, razão pela qual o gabarito deve ser acompanhado da ressalva.",
+      "incorretas": {
+        "A": "**Placa e parafusos é a preferência do resumo para a maioria das expostas, embora não seja a letra oficial desta prova.** Permite reconstrução anatômica após desbridamento em condições apropriadas. Não deve ser ensinada como contraindicada apenas porque há comunicação com o meio externo.",
+        "B": "**Haste bloqueada pode ser considerada em indicações selecionadas, incluindo exposição e partes moles ruins.** Isso não a torna a preferência geral discutida, que continua sendo placa. Também é necessário distinguir a haste bloqueada contemporânea das hastes finas/elásticas com pior controle rotacional no adulto.",
+        "C": "**Fixação externa circular pertence à mesma necessidade de seleção clínica, sem preferência geral demonstrada na fonte.** O resumo reserva fixação externa a destruição e contaminação importantes e não fornece comparação entre modelos para justificar circular em toda exposta. A pergunta é genérica demais para transformar esse recurso em regra."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Fraturas expostas e por projétil; A haste intramedular."
+      ],
+      "alerta": "Gabarito oficial D preservado. O resumo do Rockwood 10ª edição recomenda desbridamento e placa imediata na maioria das expostas do antebraço, reservando fixação externa a situações selecionadas de perda maciça de partes moles e contaminação grosseira. O enunciado não oferece essas condições; o registro da prova difere da preferência geral da fonte consultada.",
+      "geradoEm": "2026-10-21"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Fraturas expostas e por projétil",
+          "A haste intramedular"
+        ],
+        "blocos": [
+          "fraturas-expostas-e-por-projetil-5aeafa05",
+          "fraturas-expostas-e-por-projetil-217de6d1",
+          "a-haste-intramedular-353c6bb3",
+          "a-haste-intramedular-418a2c99",
+          "fraturas-expostas-e-por-projetil-cffa5e06"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "144deb2e7c66f148bc9ced0ed2313c4af9c96fc0ee707a181487d9a80945f727"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0668": {
+    "questaoSha256": "fbd45148dd411500297bb87a0cda1db7b276266c524329f2b409b009542a9e8d",
+    "comentarioAnteriorSha256": "38d9f9902cd3bab64991dc2361e8a6316d014c5f06f461fd51807b4d51f9db8b",
+    "comentario": {
+      "conceito": "**A síndrome compartimental do antebraço ameaça a perfusão muscular e exige descompressão adequada de todos os espaços que permanecem sob pressão.** O resumo de fraturas do antebraço informa ocorrência em cerca de **3%** das fraturas, com predominância em homens jovens, e recomenda em geral liberar os quatro compartimentos: volar superficial, volar profundo, dorsal e coxim móvel.\n\nO capítulo específico de síndrome compartimental organiza o antebraço em três grupos, volar, dorsal e coxim móvel, e descreve que a liberação volar costuma bastar, abrindo o dorsal se sua pressão continuar elevada. A contagem difere porque o volar pode ser subdividido; a decisão técnica também depende da suficiência da descompressão. Não se deve esconder essa diferença como se os dois textos dessem uma única ordem sem ressalvas.\n\nNa via volar, o capítulo de fraturas descreve abertura do lacerto e do túnel do carpo de rotina. Por isso, a alternativa D também tem apoio na fonte e não deve ser ensinada como falsa para defender C. O gabarito seleciona a regra geral de descompressão completa; a anatomia e a pressão residual orientam como alcançá-la.\n\n**Leia as seções de síndrome compartimental nos resumos dos capítulos 17 e 42, na Biblioteca.** Compare divisão anatômica e extensão da liberação. O princípio comum é não deixar tecido ameaçado sem descompressão, e não apenas contar incisões ou decorar um número.",
+      "correta": "**C é o gabarito oficial e corresponde à recomendação geral do capítulo 42.** A descompressão deve ser suficiente para não manter um compartimento com pressão elevada. O capítulo 17, porém, descreve começar pelo volar e complementar se necessário.\n\nEssa resposta não torna D falsa nem dispensa verificar se os demais espaços foram adequadamente descomprimidos.",
+      "incorretas": {
+        "A": "**Dez por cento não é a incidência descrita para as fraturas do antebraço no resumo.** O valor apresentado é cerca de 3%. O denominador importa: frequência entre tipos de fratura e participação do antebraço em todas as síndromes são medidas diferentes e não podem ser trocadas.",
+        "B": "**O predomínio é masculino, particularmente em jovens, não feminino.** O capítulo geral relaciona juventude a maior volume muscular em um continente de tamanho limitado. Isso é uma associação de risco e não motivo para ignorar a síndrome em mulheres.",
+        "D": "**A afirmação tem apoio no capítulo de fraturas do antebraço, que descreve abertura do lacerto e descompressão rotineira do túnel do carpo.** Portanto, não é correto negá-la em bloco. A banca preferiu C como regra geral, mas D também representa parte da técnica descrita, tornando o item discutível quanto à exclusividade da resposta."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Quem tem síndrome compartimental.",
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi. Seção: Síndrome compartimental do antebraço."
+      ],
+      "alerta": "Gabarito C preservado. O capítulo 42 recomenda em geral liberar os quatro compartimentos e também descreve abertura do lacerto e túnel do carpo, dando apoio a D. O capítulo 17 descreve liberação volar inicialmente, com dorsal se a pressão continuar alta. D também tem apoio na bibliografia; a diferença entre os capítulos exige avaliar a suficiência da descompressão, sem deixar compartimento com pressão elevada fechado.",
+      "geradoEm": "2026-10-21"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia",
+          "Quem tem síndrome compartimental"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-6968671a",
+          "fasciotomia-90ee7ca5",
+          "quem-tem-sindrome-compartimental-4b3a771a",
+          "quem-tem-sindrome-compartimental-5ca80c99"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "3888386fcea4c667e69f4f5213e8779840b00efcd636172de54bb20194205edc"
+      },
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Síndrome compartimental do antebraço"
+        ],
+        "blocos": [
+          "sindrome-compartimental-do-antebraco-b4aee409",
+          "sindrome-compartimental-do-antebraco-408a137e",
+          "sindrome-compartimental-do-antebraco-d130faa9",
+          "sindrome-compartimental-do-antebraco-9723cec1"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "482a63b7745b0178153ff656890de32e2fbcaf61b460076af10aa6cfbd73a857"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

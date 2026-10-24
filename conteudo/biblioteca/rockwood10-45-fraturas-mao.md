@@ -157,7 +157,7 @@ Quando o metacarpo consolida com **ápice dorsal**, a cabeça afunda para volar,
 
 !questoes central=trauma-0273,mao-1312
 conceito: A pseudogarra é a hiperextensão compensatória da MCF com flexão da IFP causada por angulação de ápice dorsal do metacarpo (cabeça desviada para volar) e indica tratamento cirúrgico.
-como: O TEOT/TARO pediu a deformidade completa; a USP 2025 pôs a pseudogarra como indicação cirúrgica no colo do quinto, entre afirmações erradas sobre limite de angulação e direção do parafuso.
+como: A prova de Ortopedia pediu a deformidade completa; a USP 2025 pôs a pseudogarra como indicação cirúrgica no colo do quinto, entre afirmações erradas sobre limite de angulação e direção do parafuso.
 armadilha: "Angulação maior que 45° no colo do quinto sugere cirurgia": o capítulo tolera até 50° no colo do mínimo.
 armadilha: Parafuso intramedular anterógrado "para não violar a cartilagem": o capítulo descreve o parafuso retrógrado pela cabeça, que perfura só uma pequena área de cartilagem.
 !fim
@@ -192,7 +192,7 @@ armadilha: Raio de radial para ulnar: o sentido é de ulnar para radial.
 
 !questoes relacionadas=mao-0674,trauma-0472
 conceito: Na fratura articular da cabeça do metacarpo, a preocupação central é a rigidez da MCF: fixação estável, movimento precoce em arco curto e imobilização em mais de 70° de flexão.
-como: FMRP-USP 2026 e TEOT/TARO pediram a complicação mais comum (rigidez). O capítulo não ranqueia as complicações da cabeça, mas todo o protocolo dele existe para evitar a rigidez.
+como: FMRP-USP 2026 e Ortopedia pediram a complicação mais comum (rigidez). O capítulo não ranqueia as complicações da cabeça, mas todo o protocolo dele existe para evitar a rigidez.
 !fim
 
 ## Tratamento sem cirurgia
@@ -256,7 +256,7 @@ Duas consequências práticas: **ruptura parcial não forma Stener** (o ligament
 
 !questoes central=mao-0143,mao-0552,mao-0881,mao-0270,mao-0586 treino=mao-1714
 conceito: A lesão de Stener é a interposição da aponeurose do adutor do polegar entre o ligamento colateral ulnar rompido e sua inserção na base da falange proximal, o que impede a cicatrização.
-como: É a pergunta de definição mais repetida do tema: TEOT/TARO duas vezes, UFG 2017, ENARE R4 2023 e TARO 2025 (com ressonância). As alternativas trocam adutor por abdutor e a base da falange pela cabeça do metacarpo.
+como: É a pergunta de definição mais repetida do tema: Ortopedia duas vezes, UFG 2017, ENARE R4 2023 e TARO 2025 (com ressonância). As alternativas trocam adutor por abdutor e a base da falange pela cabeça do metacarpo.
 armadilha: Aponeurose do abdutor: fica no lado radial e não forma Stener.
 armadilha: "Entre o LCU e a cabeça do metacarpo": a ruptura típica é distal, na base da falange proximal.
 !fim
@@ -279,7 +279,7 @@ O estresse radial é feito com a MCF em **30° a 40° de flexão**, sempre **com
 
 !questoes central=mao-0136,mao-1029,mao-1138,mao-1543 relacionadas=mao-1080
 conceito: O colateral ulnar próprio é testado em 30° a 40° de flexão da MCF, comparando com o lado oposto; ausência de ponto final firme indica ruptura completa.
-como: A banca cobra a posição do teste (TEOT/TARO, UFG 2021) e o porquê (PUC-SP 2021: em extensão a placa volar dá estabilidade). A USP 2026 pôs "30° a mais que o outro lado" como distrator.
+como: A banca cobra a posição do teste (Ortopedia, UFG 2021) e o porquê (PUC-SP 2021: em extensão a placa volar dá estabilidade). A USP 2026 pôs "30° a mais que o outro lado" como distrator.
 armadilha: Exame só em extensão: a placa volar e o colateral acessório estabilizam a MCF e escondem a ruptura do próprio.
 armadilha: "Os exames de imagem são essenciais para o diagnóstico": o capítulo mantém o exame clínico como padrão e usa a imagem como complemento.
 alerta: A PUC-SP 2019 (mao-1080) deu como gabarito o critério de 30° em extensão e 15° em flexão, a mais que o lado normal. O capítulo dá só o critério em flexão (15° a mais é significativo; os autores operam acima de 20° sem ponto final) e não traz o número para extensão.
@@ -303,7 +303,7 @@ Na lesão **crônica**, quase sempre há tecido para reparo direto; se não, enx
 !questoes central=mao-0770 relacionadas=mao-0233,mao-1221
 conceito: Na via de acesso ao LCU do polegar, o ramo sensitivo dorsal do nervo radial cruza o campo e precisa ser identificado e afastado; a aponeurose do adutor é aberta e depois reparada.
 como: O INTO 2023 perguntou a complicação mais comum do reparo (neuropraxia do ramo sensitivo radial); a UERJ 2023, em questão dissertativa, pediu a definição de Stener, o local da avulsão e a estrutura em risco. O capítulo não ranqueia as complicações, mas destaca esse nervo em todos os passos.
-alerta: No TEOT/TARO (mao-0233), Stener com fragmento de 10% da superfície, o gabarito foi ressecar o fragmento e reinserir o ligamento com miniâncora. O capítulo defende operar as avulsões do LCU, mesmo as pouco desviadas, e repara com âncoras, mas não discute ressecar o fragmento; essa escolha vem de outra fonte.
+alerta: Na prova de Ortopedia (mao-0233), Stener com fragmento de 10% da superfície, o gabarito foi ressecar o fragmento e reinserir o ligamento com miniâncora. O capítulo defende operar as avulsões do LCU, mesmo as pouco desviadas, e repara com âncoras, mas não discute ressecar o fragmento; essa escolha vem de outra fonte.
 !fim
 
 # Falange distal: tufo, martelo ósseo, jersey e Seymour {radar=confirmado}
@@ -352,7 +352,7 @@ alerta: O ENARE R4 2024 (mao-0582) deu como gabarito operar o martelo ósseo com
 
 !questoes relacionadas=trauma-0471,mao-1066
 conceito: O dedo em martelo ósseo é a avulsão do tendão terminal com fragmento da base dorsal; no capítulo, ele se divide pela presença de subluxação (I sem, II com) e pela lesão epifisária (III).
-alerta: TEOT/TARO (trauma-0471) e PUC-SP 2019 (mao-1066) pediram a classificação de Doyle (o gabarito deu tipo IV B para fragmentos de 30% e 35% da superfície). O capítulo não usa Doyle; ele divide o martelo ósseo pela subluxação. Para essas questões, a referência é outra.
+alerta: Ortopedia (trauma-0471) e PUC-SP 2019 (mao-1066) pediram a classificação de Doyle (o gabarito deu tipo IV B para fragmentos de 30% e 35% da superfície). O capítulo não usa Doyle; ele divide o martelo ósseo pela subluxação. Para essas questões, a referência é outra.
 !fim
 
 ## Jersey finger: avulsão do flexor profundo
@@ -373,7 +373,7 @@ A fratura transversa da base da falange distal é típica da **criança** (fratu
 
 !questoes central=mao-0773,trauma-0905 relacionadas=mao-1213,pediatria-0823 treino=mao-1694
 conceito: Na fratura de Seymour, o leito ungueal (matriz) fica interposto no foco da fratura fisária da falange distal, que por isso é exposta e exige retirada do tecido, redução e reparo do leito.
-como: O INTO 2023 pediu a estrutura interposta; o TEOT/TARO mostrou imagem e pediu "exposta" e o nome; a PUC-SP 2023 pediu o tratamento (remover o tecido interposto e reparar o leito).
+como: O INTO 2023 pediu a estrutura interposta; a prova de Ortopedia mostrou imagem e pediu "exposta" e o nome; a PUC-SP 2023 pediu o tratamento (remover o tecido interposto e reparar o leito).
 armadilha: "Fratura fisária fechada": o leito lacerado faz dela uma fratura exposta.
 armadilha: Placa volar ou tendão interposto: o que entra no foco é o leito ungueal.
 !fim
@@ -490,9 +490,9 @@ Estabilidade da IFP: com fragmentos maiores da base volar, a estabilidade dorsal
 
 !questoes central=mao-1542 relacionadas=mao-0823,trauma-0473 treino=mao-1702,mao-1704
 conceito: A fratura em pilão da base da falange média vem da carga axial, vai mal sem cirurgia e é tratada de preferência com tração dinâmica, que reduz por ligamentotaxia e permite mexer a IFP.
-como: A USP 2026 mostrou a fratura e pediu o tratamento (tração esquelética dinâmica); INTO 2026 e TEOT/TARO perguntaram o mecanismo.
+como: A USP 2026 mostrou a fratura e pediu o tratamento (tração esquelética dinâmica); INTO 2026 e Ortopedia perguntaram o mecanismo.
 armadilha: Placa e parafusos ou vários fios nos fragmentos maiores: a cominuição e o risco de partes moles fazem o capítulo preferir a tração dinâmica.
-alerta: Os gabaritos do INTO 2026 (mao-0823) e do TEOT/TARO (trauma-0473) descrevem o mecanismo do pilão como compressão axial **com desvio lateral**. O capítulo atribui o pilão à **carga axial pura**, de alta energia; o desvio lateral não aparece. Guarde o gabarito para essas bancas.
+alerta: Os gabaritos do INTO 2026 (mao-0823) e da prova de Ortopedia (trauma-0473) descrevem o mecanismo do pilão como compressão axial **com desvio lateral**. O capítulo atribui o pilão à **carga axial pura**, de alta energia; o desvio lateral não aparece. Guarde o gabarito para essas bancas.
 !fim
 
 ## Base dorsal: a botoeira óssea
@@ -584,7 +584,7 @@ Na falange proximal, os **interósseos** (intrínsecos) fletem o **fragmento pro
 
 !questoes central=mao-1397,mao-1534,trauma-0341 treino=mao-1707
 conceito: Na fratura da diáfise da falange proximal, os interósseos fletem o fragmento proximal e o aparelho extensor estende o distal: angulação com ápice volar.
-como: USP 2025 e 2026 pediram a estrutura (interósseos); o TEOT/TARO descreveu a mesma deformidade como "desvio dorsal pela ação dos interósseos", olhando para o fragmento distal, que vai para dorsal enquanto o ápice aponta para volar.
+como: USP 2025 e 2026 pediram a estrutura (interósseos); a prova de Ortopedia descreveu a mesma deformidade como "desvio dorsal pela ação dos interósseos", olhando para o fragmento distal, que vai para dorsal enquanto o ápice aponta para volar.
 armadilha: Flexor superficial: insere-se na falange média e não desvia a proximal.
 armadilha: Confundir a direção do ápice com a do fragmento distal: ápice volar e fragmento distal dorsal são a mesma deformidade.
 !fim

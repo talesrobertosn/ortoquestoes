@@ -1,0 +1,379 @@
+{
+  "pediatria-0523": {
+    "questaoSha256": "6a54fd88f70c83284e213ff6fc7c2338ef6388499b1c3d014b8bce43cf782f5e",
+    "comentarioAnteriorSha256": "42c62b9801de035c6c99dcebc2aadafc0977c4b9319c8180327b185d11fa8f65",
+    "comentario": {
+      "conceito": "**O ápice volar no galho verde do antebraço se associa ao mecanismo de supinação.** No osso imaturo, a deformidade angular pode ser a expressão de uma força rotacional. Assim, olhar apenas a direção em que o osso dobrou perde parte importante do mecanismo.\n\nO galho verde mantém continuidade em parte das corticais, ao contrário da fratura completa. O capítulo explica que a força de rotação deforma o conjunto rádio-ulna e que reduzir pode exigir uma manobra derrotatória, além de corrigir o ângulo. Para ápice volar, o mecanismo é hipersupinação e a manobra habitual é pronação; para ápice dorsal, é o inverso.\n\n| Ápice | Mecanismo | Redução habitual |\n|---|---|---|\n| Volar | Supinação | Pronação |\n| Dorsal | Pronação | Supinação |\n\nMecanismo e tratamento não são a mesma resposta. Rodar a palma em direção ao ápice é o atalho atribuído a Noonan e Price para lembrar a redução. Ele não deve ser aplicado como se descrevesse a força que produziu a lesão.\n\n**Leia “A regra do ápice”, na Biblioteca.** Compare a pergunta sobre mecanismo com a pergunta sobre redução e identifique se o texto descreve o ápice ou o deslocamento do fragmento distal.",
+      "correta": "**D: supinação.** O par do resumo é ápice volar com hipersupinação. A redução costuma usar pronação para desfazer a deformidade rotacional.\n\nResponder com a manobra terapêutica inverteria a direção solicitada no enunciado.",
+      "incorretas": {
+        "A": "**Flexão descreve uma força que dobra, mas não identifica o componente rotacional pedido.** O capítulo relaciona especificamente o galho verde de ápice volar à supinação. A presença de angulação não significa que a melhor resposta seja apenas o nome de uma força de flexão.",
+        "B": "**Extensão também não é o par rotacional descrito para esse ápice.** A carga axial pode participar do trauma, mas o detalhe que separa as opções é a rotação associada. O resumo apresenta hipersupinação para ápice volar, e não uma regra baseada somente em flexão/extensão.",
+        "C": "**Pronação é a manobra que reduz o padrão volar, não seu mecanismo habitual.** Como mecanismo, hiperpronação se associa ao ápice dorsal. A alternativa troca a força que causou a lesão pela direção usada para desfazê-la."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Galho verde: a angulação é uma rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Galho verde: a angulação é uma rotação"
+        ],
+        "blocos": [
+          "galho-verde-a-angulacao-e-uma-rotacao-a74b12a2",
+          "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+          "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "8d6a7a1abee4f6626a6f5b6cde7a2524b659c355dc4c4042f45867d4c488d04b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0723": {
+    "questaoSha256": "ba8285d0ea913c485327129ad18c355b9343628503d6c90fae2c794d34ed9d8c",
+    "comentarioAnteriorSha256": "8951f95020cf15ff5c2948645c18fba11ad152baa6dd25328049f95c62ee6928",
+    "comentario": {
+      "conceito": "**Pronação como mecanismo produz o padrão de ápice dorsal descrito no resumo.** No galho verde da diáfise do antebraço, rotação e angulação estão ligadas: a força torcional deforma o osso parcialmente contínuo, em vez de produzir apenas uma separação completa.\n\nA regra clínica é hiperpronação com ápice dorsal e hipersupinação com ápice volar. A redução inverte a força: supinação para o dorsal, pronação para o volar. Por isso é importante separar a pergunta “como ocorreu?” da pergunta “como corrigir?”.\n\n“Ápice dorsal” também não deve ser automaticamente substituído por “fragmento distal deslocado para dorsal”. São descrições de partes diferentes da deformidade e podem levar a manobras opostas. Aqui o enunciado especifica o ápice, permitindo usar diretamente a tabela.\n\n**Leia “A regra do ápice”, na Biblioteca.** Refaça os dois pares e confirme qual elemento da deformidade foi nomeado. A resposta desta questão é bibliográfica, pois não há gabarito oficial disponível.",
+      "correta": "**A: dorsal, resposta bibliográfica.** É o ápice associado à pronação no resumo. A supinação é empregada para derrotar esse padrão na redução, não para descrevê-lo como mecanismo.\n\nA letra indicada mantém a distinção entre a força inicial e a manobra corretiva.",
+      "incorretas": {
+        "B": "**Volar corresponde ao mecanismo oposto, de hipersupinação.** A pronação aparece nesse padrão como manobra de redução. Trocar mecanismo por tratamento é o que faz essa alternativa parecer plausível.",
+        "C": "**Medial não é o ápice relacionado pela tabela ao mecanismo de pronação.** O capítulo organiza esse raciocínio pelos pares dorsal/pronação e volar/supinação. Isso não declara impossíveis outras deformidades, mas elas não são a associação solicitada.",
+        "D": "**Lateral também não pertence ao par apresentado para a pronação.** A alternativa muda o plano do ápice sem corresponder à relação descrita. A resposta vem da ligação entre rotação e deformidade, não de escolher um lado qualquer do antebraço."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Galho verde: a angulação é uma rotação."
+      ],
+      "alerta": "Não há gabarito oficial disponível. A resposta A é bibliográfica, sustentada pela associação entre hiperpronação e ápice dorsal no resumo consultado.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Galho verde: a angulação é uma rotação"
+        ],
+        "blocos": [
+          "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+          "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "205def72cf674a97ebefa554143e53aa5e8f184799ba92c9ebadf70a19184660"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0674": {
+    "questaoSha256": "b787c563058d8d89908888ee26536ad0690d7aa6a330562f2a3fa170e00ed91b",
+    "comentarioAnteriorSha256": "0c701eb63a31b4b8cf30c434e63e8cebe271a49181417bfe31ee317b273295ae",
+    "comentario": {
+      "conceito": "**A ulna é o osso mais frequentemente acometido pela deformidade plástica no padrão descrito.** O cenário típico é ulna encurvada associada a uma fratura mais convencional do rádio. Não se trata de uma cortical aparentemente normal que deva ser ignorada.\n\nA força aplicada relativamente devagar ultrapassa o limite elástico do osso imaturo e produz muitas microfraturas ao longo dele. O osso fica curvo, sem um traço de fratura evidente e sem perder continuidade cortical. Diferencia-se do galho verde, que apresenta ruptura de parte das corticais, e da fratura completa.\n\nEssa curvatura pode dificultar reduzir o rádio, pois a ulna deformada já não oferece a mesma referência de eixo e comprimento. Também pode esconder uma Monteggia, com luxação da cabeça radial. A radiografia precisa ser interpretada com atenção ao alinhamento, não apenas à procura de um traço.\n\nA remodelação é menor do que se poderia supor para uma lesão sem traço. Deformidade funcional ou estética inaceitável merece avaliação de redução, considerando idade e magnitude, em vez de ser tratada como simples variação anatômica.\n\n**Leia “Deformidade plástica: o osso que encurva”, na Biblioteca.** Compare o arco da ulna e a lesão do rádio e procure alterações articulares associadas.",
+      "correta": "**A: ulna.** É o local mais frequente no antebraço infantil e costuma acompanhar fratura do rádio. A ausência de um traço na ulna não exclui lesão estrutural nem dispensa avaliar sua curvatura.",
+      "incorretas": {
+        "B": "**O rádio também pode encurvar, mas não é a resposta de maior frequência do padrão apresentado.** O resumo descreve mais frequentemente a ulna plasticamente deformada com o rádio fraturado. Reconhecer que ambos podem ser afetados não permite inverter a frequência.",
+        "C": "**O úmero não é o osso destacado nessa apresentação típica.** A lesão descrita é quase exclusiva do antebraço da criança, e seu exemplo mais frequente envolve a ulna. A capacidade de um osso infantil deformar não torna todos os segmentos igualmente comuns.",
+        "D": "**Clavícula também não é a localização mais frequente informada.** A questão busca o padrão epidemiológico da deformidade plástica, não qualquer osso sujeito a trauma na infância. O par clínico útil é ulna encurvada e rádio fraturado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Deformidade plástica: o osso que encurva."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Deformidade plástica: o osso que encurva"
+        ],
+        "blocos": [
+          "deformidade-plastica-o-osso-que-encurva-605a3501",
+          "deformidade-plastica-o-osso-que-encurva-db19d238",
+          "deformidade-plastica-o-osso-que-encurva-9cb06823",
+          "deformidade-plastica-o-osso-que-encurva-ad9170a0",
+          "deformidade-plastica-o-osso-que-encurva-a934ae7c"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "4c6781b7061fa5bd977a89f42c61a3816534afb5ea6b13820dc8be199cec1067"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0606": {
+    "questaoSha256": "0aa487d57acb471a4cef75dff52eba094dc67d167ee1d45f0b25db843730a8d8",
+    "comentarioAnteriorSha256": "e395a1af63fb17cf15a07b0bdbda74ba01675f26e61f9fa3c4dffff53ee4ab20",
+    "comentario": {
+      "conceito": "**Deformidade plástica do antebraço com limitação funcional pode precisar de redução fechada e gesso.** A cortical pode parecer contínua, mas o osso foi deformado além da capacidade de retornar elasticamente. Imobilizar o arco sem corrigi-lo mantém a alteração que está limitando a rotação.\n\nA redução difere de uma manobra rápida sobre um traço de fratura. O resumo descreve anestesia geral ou sedação profunda, força gradual sustentada sobre um fulcro e, depois, gesso com molde de três pontos. Deve-se evitar pressão direta nas epífises vizinhas para não criar uma lesão fisária.\n\nNão se deve confiar automaticamente na remodelação: a deformidade plástica tem menor potencial corretivo e pode impedir a redução do outro osso. A indicação considera a deformidade clinicamente inaceitável; o capítulo reproduz ainda critérios por idade e ângulo, sem transformar a decisão em uma regra única para qualquer criança.\n\n**Leia “Quando e como corrigir”, na Biblioteca.** O contraste importante é corrigir a deformidade por uma manobra fechada adequada, e não escolher uma posição extrema de gesso como substituto da redução.",
+      "correta": "**C: redução incruenta com imobilização gessada.** Incruenta significa fechada. A manobra gradual corrige a curvatura e o gesso moldado mantém o resultado; anestesia ou sedação profunda permite realizar a força necessária com controle.\n\nCirurgia aberta não é o tratamento inicial habitual descrito para essa deformidade.",
+      "incorretas": {
+        "A": "**Associa redução aberta e implante intramedular como primeira escolha.** A deformidade plástica descrita pode ser corrigida fechada, sobre fulcro, sem abrir o foco ou inserir haste de rotina. Operar uma fratura instável é outra situação, que não deve ser importada automaticamente para este padrão.",
+        "B": "**O gesso é parte do tratamento, mas a redução não precisa ser cruenta de início.** Abrir acrescenta uma etapa que o resumo não recomenda como abordagem habitual. A técnica fechada deve ser adequada, incluindo força sustentada e controle dos segmentos vizinhos.",
+        "D": "**Imobilizar em supinação máxima não corrige necessariamente a curvatura plástica.** A posição de rotação não substitui a força gradual aplicada sobre o arco. O enunciado já informa limitação da pronossupinação, razão para avaliar e tratar a deformidade, em vez de apenas mantê-la no gesso."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Deformidade plástica: o osso que encurva."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Deformidade plástica: o osso que encurva"
+        ],
+        "blocos": [
+          "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+          "deformidade-plastica-o-osso-que-encurva-9cb06823",
+          "deformidade-plastica-o-osso-que-encurva-ad9170a0",
+          "deformidade-plastica-o-osso-que-encurva-eb524111"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "77a1c1625c06072edcd9d5bfd5dc6c620ba402ae305a656e18423c7fb34a2bad"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0692": {
+    "questaoSha256": "bac3a6b564a627104118e59f968c3b954b376c522ff35eff51bc5c0bccc400d7",
+    "comentarioAnteriorSha256": "34f1978b8ff0a5af844855df61afd3e1538ec5c71ff6eefbd17e8f64535c1b88",
+    "comentario": {
+      "conceito": "**A redução da deformidade plástica exige força de 20 a 30 kg, gradual, por dois a três minutos.** A magnitude relativamente alta e a aplicação sustentada respondem ao comportamento do osso imaturo que encurvou além do limite elástico, com microfraturas distribuídas, em vez de formar um único foco móvel.\n\nO capítulo descreve anestesia geral ou sedação profunda e um fulcro, como uma toalha enrolada ou um bloco, para controlar a correção. A força não deve ser aplicada diretamente nas epífises vizinhas. Depois, um gesso com molde de três pontos mantém o alinhamento obtido.\n\nO número não é uma ordem para produzir um impulso brusco nem aumentar indefinidamente a força até obter uma radiografia perfeita. A técnica é gradual, controlada e pode produzir melhora substancial ainda que incompleta. Tempo, apoio e proteção fisária fazem parte da mesma manobra.\n\n**Leia “Quando e como corrigir” e a tabela dos números da deformidade plástica, na Biblioteca.** Associe os valores à técnica; decorar apenas quilogramas e minutos perde os cuidados que os tornam aplicáveis.",
+      "correta": "**D: 20 a 30 kg por dois a três minutos.** É a combinação apresentada no resumo para a força corretiva gradual, sob anestesia ou sedação profunda e sobre um fulcro. O gesso moldado vem depois para manter a correção.",
+      "incorretas": {
+        "A": "**Acerta o intervalo de tempo, mas reduz a intensidade para 10 a 20 kg.** A força descrita para vencer a deformidade plástica é maior. A alternativa mistura um tempo correto com uma magnitude que não corresponde à técnica do capítulo.",
+        "B": "**Acerta 20 a 30 kg e prolonga o tempo para quatro a cinco minutos.** O protocolo descrito usa dois a três minutos de aplicação gradual. Não se deve compensar uma técnica mal controlada apenas mantendo a força por mais tempo.",
+        "C": "**Troca os dois parâmetros: menor força e maior duração.** A manobra do resumo combina 20 a 30 kg com dois a três minutos, além de fulcro e proteção das epífises. Alongar o tempo não faz dessa combinação o procedimento apresentado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Deformidade plástica: o osso que encurva."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Deformidade plástica: o osso que encurva"
+        ],
+        "blocos": [
+          "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+          "deformidade-plastica-o-osso-que-encurva-3bed8b5b",
+          "deformidade-plastica-o-osso-que-encurva-605a3501"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "d88a491b037b6bb29b7962c084491dae3d63a5d2ab4fa46d25c84e2cd25f669a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0632": {
+    "questaoSha256": "41ba8174186231201186cb4cb8b558b9e431189a0fe047d6eddc8f8f4acea7bc",
+    "comentarioAnteriorSha256": "413fb4d9c7c58dd86fc463eb17299922f58945455096404cbf25867d6e1f4fec",
+    "comentario": {
+      "conceito": "**O galho verde é o padrão inicial mais associado à refratura do antebraço infantil.** Ele pode parecer menos grave por manter parte da continuidade cortical, mas a cortical que só encurvou forma pouco calo e pode aparentar consolidação antes de recuperar resistência suficiente.\n\nA diáfise do antebraço é o local de maior risco de refratura na infância. O resumo informa taxas de 4% a 8%, intervalo médio de seis meses e ocorrência predominante pelo foco original. A consolidação cortical diafisária é mais lenta que a das regiões metafisária e fisária distais, o que ajuda a explicar o risco.\n\nA prevenção exige confirmar consolidação das quatro corticais e desaparecimento da lucência transversa, mantendo proteção conforme a atividade. Aparência clínica confortável ou melhora em uma única incidência não garantem resistência completa. O resumo descreve gesso por seis a oito semanas e proteção removível posterior, individualizada pela consolidação.\n\n**Leia “Refratura: o antebraço é o campeão”, na Biblioteca.** Procure entender por que continuidade parcial inicial não equivale a recuperação mecânica completa mais precoce.",
+      "correta": "**B: galho verde.** A continuidade parcial dá estabilidade inicial, mas a cortical encurvada pode produzir pouco calo e consolidar de forma enganosa. É o padrão inicial predominante nas refraturas apresentadas, embora não seja o único que pode refraturar.",
+      "incorretas": {
+        "A": "**Uma fratura completa parece mais extensa, mas não lidera a associação descrita.** Gravidade aparente e risco de refratura não são sinônimos. O mecanismo de consolidação insuficientemente reconhecida da cortical encurvada explica o destaque do galho verde.",
+        "C": "**Deformidade plástica é encurvamento sem traço e sem ruptura cortical visível.** Pode deixar limitação e remodelar menos do que se espera, mas isso é diferente de ser o padrão mais comum antes de uma refratura. O resumo aponta galho verde para esta pergunta.",
+        "D": "**Descolamento epifisário envolve a região fisária, não o padrão diafisário destacado.** A diáfise cortical consolida mais lentamente e refratura mais que metáfise e fise distais. Transportar o risco diafisário para toda lesão próxima da epífise perde essa distinção."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Refratura: o antebraço é o campeão."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Refratura: o antebraço é o campeão"
+        ],
+        "blocos": [
+          "refratura-o-antebraco-e-o-campeao-5cf304b8",
+          "refratura-o-antebraco-e-o-campeao-acb681d5",
+          "refratura-o-antebraco-e-o-campeao-915ee7ad",
+          "refratura-o-antebraco-e-o-campeao-140eec0f"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "24697bd2a7f040a416ffebd74dda0d3cd08e852fbc1f06e6889894ced031cd36"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0919": {
+    "questaoSha256": "81a4bfc3f58d29b4704ed7dec162c839530e025d5a6fceee2eada1da3b2332d2",
+    "comentarioAnteriorSha256": "c43c2f6960a3bf4476563a53930da419b7ddb0a83633c8d6f4021f935d47117f",
+    "comentario": {
+      "conceito": "**O par mais associado é sexo masculino e fratura inicial em galho verde.** O resumo apresenta predomínio masculino de três para um e destaca o galho verde entre os padrões que precedem a refratura. São associações de frequência, sem significar que meninas ou fraturas completas estejam livres do problema.\n\nA vulnerabilidade do galho verde vem da cortical que encurvou e produz pouco calo. A imagem pode sugerir cura antes de a resistência ser suficiente, especialmente na diáfise, que consolida mais devagar que metáfise e fise distais. O retorno à atividade deve depender da consolidação, não apenas da dor ter desaparecido.\n\nA refratura costuma atravessar o foco original e pode ocorrer meses após a lesão; a média citada é seis meses. A proteção removível depois do gesso e a confirmação das quatro corticais ajudam a reduzir o risco durante a recuperação mecânica.\n\n**Leia “Refratura” na Biblioteca e compare sexo, padrão e momento da consolidação.** O achado epidemiológico deve reforçar orientação e proteção, sem gerar falsa tranquilidade nos grupos menos frequentes.",
+      "correta": "**D: masculino, após galho verde.** Reúne as duas associações apresentadas. A frequência maior no menino não explica sozinha cada caso; o componente mecânico do galho verde também precisa ser reconhecido para orientar o seguimento.",
+      "incorretas": {
+        "A": "**Troca tanto o sexo predominante como o padrão inicial mais associado.** Meninas com fraturas completas podem refraturar, mas essa possibilidade individual não responde à frequência pedida. O par descrito é masculino/galho verde.",
+        "B": "**Acerta o predomínio masculino e troca galho verde por completa.** A maior extensão inicial da fratura completa não a torna a principal antecedente de refratura. A cortical apenas encurvada e o pouco calo do galho verde são a distinção útil.",
+        "C": "**Acerta o galho verde, mas troca o predomínio masculino.** O mecanismo de consolidação enganosa continua válido na menina, porém os dados do resumo mostram mais casos no sexo masculino. Possibilidade clínica e predominância populacional são perguntas diferentes."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Refratura: o antebraço é o campeão."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Refratura: o antebraço é o campeão"
+        ],
+        "blocos": [
+          "refratura-o-antebraco-e-o-campeao-acb681d5",
+          "refratura-o-antebraco-e-o-campeao-915ee7ad",
+          "refratura-o-antebraco-e-o-campeao-140eec0f"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "aff6d9f9cb9b90a9e4735de7ba666e7e698e1859f68a6f39b7e65e00c6c4a150"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0598": {
+    "questaoSha256": "ac0055d55a3c7b35e6e8321ddf42e7716ccaf3438b8e3e568af355b39e93aaca",
+    "comentarioAnteriorSha256": "bd605c7a65411f8166f8bbca1be046e4c6400a212833314ecd496c8f3dd8db65",
+    "comentario": {
+      "conceito": "**No mecanismo indireto, a transição médio-distal do rádio e boa parte da diáfise da ulna são os segmentos mais vulneráveis descritos.** A queda com a mão estendida transmite força ao longo dos ossos, muitas vezes com componente rotacional importante.\n\nA rotação ajuda a entender por que os dois traços podem estar em níveis diferentes. Quando estão no mesmo nível, há sugestão de menor torção; cominuição aponta para maior energia. Isso é diferente do golpe direto que quebra principalmente um osso, frequentemente a ulna, no padrão do cassetete.\n\nO antebraço funciona como um conjunto: rádio gira em torno da ulna e sua forma, distância interóssea e alinhamento influenciam a pronossupinação. O nível do traço também modifica remodelação e dificuldade de tratamento, por isso não deve ser reduzido a uma localização sem consequência funcional.\n\n**Leia “Mecanismo e epidemiologia”, na Biblioteca.** Relacione força indireta, rotação e nível dos dois ossos, e depois compare com a fratura isolada por golpe direto.",
+      "correta": "**A: transição médio-distal do rádio e diáfise da ulna.** É a combinação apontada pelos estudos biomecânicos sintetizados no resumo para o mecanismo indireto. Os níveis não precisam coincidir, pois a transmissão pode incluir rotação.",
+      "incorretas": {
+        "B": "**Mantém a diáfise da ulna e desloca a referência radial para médio-proximal.** O trecho descreve a junção médio-distal do rádio como mais vulnerável, não a médio-proximal. A dificuldade maior de tratar certas fraturas proximais é outro dado e não muda essa localização biomecânica.",
+        "C": "**Acerta a transição radial e troca a diáfise ulnar pela metáfise distal.** O resumo distingue a vulnerabilidade de uma porção extensa da diáfise da ulna. Uma fratura distal pode ocorrer na criança, mas não é o segmento ulnar pedido nesta combinação.",
+        "D": "**Troca os dois segmentos.** A combinação proposta fica médio-proximal no rádio e metafisária distal na ulna, enquanto a fonte indica médio-distal e diáfise. Não se deve escolher pelo segmento com maior potencial de remodelação ou pela frequência de fraturas do punho em geral."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: O exame: rotação, nervos e lesões associadas; Galho verde: a angulação é uma rotação; Anatomia aplicada."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "O exame: rotação, nervos e lesões associadas",
+          "Galho verde: a angulação é uma rotação",
+          "Anatomia aplicada"
+        ],
+        "blocos": [
+          "o-exame-rotacao-nervos-e-lesoes-associadas-c6eb105f",
+          "galho-verde-a-angulacao-e-uma-rotacao-66f45baa",
+          "anatomia-aplicada-a8f39d08"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "079fdd005eb36e9d15aec3bbd2485d0814ae16af7f064c7f2469c256734cb5e3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0830": {
+    "questaoSha256": "226c19261fef0ee15d7ceb3b8c18292724baeb95de78f1701bd41bf0a29c046c",
+    "comentarioAnteriorSha256": "38f19f07333054cb977db9ba7758ad80edf4f5b224cbaaa8379c9d050a2b647a",
+    "comentario": {
+      "conceito": "**A afirmação é verdadeira: na diáfise do antebraço infantil, quanto mais proximal a lesão, menor o potencial de remodelação.** A correção pelo crescimento depende da proximidade das fises e do crescimento restante. O rádio distal cresce muito mais que a região proximal, favorecendo correção perto do punho.\n\nO resumo descreve reorientação da epífise distal, crescimento em comprimento e aposição/reabsorção óssea. Esses mecanismos corrigem bem deformidades subfisárias e menos as diafisárias médias ou proximais. Criança pequena tem maior capacidade corretiva, mas idade baixa não anula o efeito da localização.\n\nOs limites dos autores tornam a relação prática: para meninas abaixo de oito e meninos abaixo de dez anos, cerca de 20 graus no distal, 15 no médio e 10 no proximal. Esses valores têm população e contexto definidos; não devem ser estendidos a adolescentes próximos da maturidade nem a toda malrotação.\n\n**Leia “Como a criança remodela” e “Os limites dos autores”, na Biblioteca.** Compare local e idade antes de aceitar um desvio residual. A resposta desta questão é bibliográfica.",
+      "correta": "**A: certo, resposta bibliográfica.** A fonte sustenta menor remodelação e maior dificuldade quanto mais proximal o traço. Isso explica a tolerância angular menor na região proximal.\n\nNão há gabarito oficial disponível; a classificação da afirmação vem do resumo.",
+      "incorretas": {
+        "B": "**Considerar a frase errada inverteria a relação descrita.** A região distal, próxima da fise que mais cresce, é a mais favorável à correção; a proximal exige critérios mais restritos. A grande remodelação da infância não permite tratar todas as alturas da diáfise como equivalentes."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Limites de angulação e remodelação."
+      ],
+      "alerta": "Não há gabarito oficial disponível. A resposta A é bibliográfica, sustentada pela relação entre nível da lesão, crescimento fisário e remodelação no resumo consultado.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Limites de angulação e remodelação"
+        ],
+        "blocos": [
+          "limites-de-angulacao-e-remodelacao-cd21842f",
+          "limites-de-angulacao-e-remodelacao-3e24e593",
+          "limites-de-angulacao-e-remodelacao-e2498a75"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "d726820cb539a54f7b0d0a29bc384abd1434fa895ed20de12112fe237f96083a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0967": {
+    "questaoSha256": "2c59611768a3ffb3dbb0cbccecf6a2c0dd74425a1eb1ae768a4b3ff8396167de",
+    "comentarioAnteriorSha256": "c08ff7adcd47ffaa2ce894b8bbf3b67948ab3e6d42e13e00bb239061d3ae0986",
+    "comentario": {
+      "conceito": "**Os limites apresentados pelos autores são 20, 15 e 10 graus, do terço distal ao proximal.** A ordem reflete o maior potencial de correção perto da fise distal e a menor capacidade de remodelação proximal. Não é apenas uma sequência numérica para memorizar.\n\nO enunciado delimita a população: meninas com menos de oito anos e meninos com menos de dez. Próximo da maturidade, o crescimento restante diminui e os critérios ficam mais restritos; com menos de dois anos de crescimento, os autores recomendam critérios de adulto.\n\nAngulação é apenas uma das deformidades. Translação, encurtamento e rotação devem ser avaliados separadamente. O resumo descreve translação total aceitável com menos de 1 cm de encurtamento nesse contexto e ressalta a dificuldade de medir malrotação, que não deve ser tratada como se tivesse a mesma correção de um ângulo próximo da fise.\n\n**Leia “Limites de angulação e remodelação”, na Biblioteca.** Associe cada limite à altura do traço e ao crescimento restante antes de escolher tratamento fechado.\n\n**Por que esta questão foi criada.** A banca já cobrou a menor remodelação proximal. O simulado transforma esse princípio nos limites por nível e idade descritos pelos autores, mantendo claro a quem eles se aplicam.",
+      "correta": "**C: 20, 15 e 10 graus.** É a sequência distal, médio e proximal para a faixa etária definida. A tolerância diminui à medida que o foco se afasta da região distal com maior contribuição de crescimento.",
+      "incorretas": {
+        "A": "**Inverte os extremos: oferece menor tolerância distal e maior proximal.** Isso contraria a relação de remodelação apresentada. O proximal é o local em que se aceita menos angulação, não o que recebe os 20 graus.",
+        "B": "**Mantém uma sequência decrescente, mas troca todos os limites.** Os autores usam aproximadamente 20/15/10 nessa população, não 15/10/5. Uma sequência plausível não substitui conferir qual critério e qual faixa etária foram pedidos.",
+        "D": "**Mantém 10 graus no proximal, mas aumenta os limites distal e médio.** O resumo não apresenta 30/20 para esses níveis como regra dos autores nesta faixa. Maior remodelação distal não significa que qualquer angulação seja aceitável."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Limites de angulação e remodelação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Limites de angulação e remodelação"
+        ],
+        "blocos": [
+          "limites-de-angulacao-e-remodelacao-e2498a75",
+          "limites-de-angulacao-e-remodelacao-cd21842f",
+          "limites-de-angulacao-e-remodelacao-efbf901a"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "d809f98d7e66e338acaba0a1aa56304761896e23a320225cc73b129b9a964843"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

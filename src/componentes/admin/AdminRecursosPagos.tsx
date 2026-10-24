@@ -9,7 +9,7 @@ const MIGRACAO = '202609300100_recursos_pagos.sql'
 /**
  * Painel › Ajustes: quem tem acesso aos recursos do plano pago.
  * O Simulado Nacional e o de véspera foram para Conteúdo › Simulados (AdminSimulados) e o
- * relatório mensal para E-mails › Lembretes e automáticos (AdminRelatorioMensal).
+ * relatório mensal para E-mails › Enviar e-mails (AdminRelatorioMensal).
  */
 export function AdminRecursosPagos() {
   const [exclusivos, definirExclusivos] = useState<boolean | null>(null)

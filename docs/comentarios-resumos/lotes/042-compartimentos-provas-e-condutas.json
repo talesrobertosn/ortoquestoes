@@ -1,0 +1,393 @@
+{
+  "trauma-1142": {
+    "questaoSha256": "78ca65c65fe5262e0cc6adb0e69a7b57d7839bb513bdd0ed8c29440b3ebe88d7",
+    "comentarioAnteriorSha256": "b6cea465176cead212b197c6528c507ac663c8228d425dd449bfa44014eed31a",
+    "comentario": {
+      "conceito": "**A região dorsolateral do pé aponta, na tabela do resumo, para o nervo sural e o compartimento posterior superficial.** A localização sensitiva depende do território nervoso, e não apenas da palavra “lateral” que aparece no nome do compartimento.\n\nO posterior superficial reúne gastrocnêmio, sóleo e plantar. Seu sofrimento se relaciona à dor ao alongamento em dorsiflexão do tornozelo, à fraqueza da flexão plantar e à dormência dorsolateral descrita. Já o lateral contém fibulares longo e curto e nervo fibular superficial, com alteração da eversão e do dorso do pé. O resumo distingue expressamente esses territórios, detalhe decisivo nesta redação.\n\n| Compartimento | Nervo e pista sensitiva da tabela |\n|---|---|\n| Anterior | Fibular profundo; primeiro espaço interdigital |\n| Lateral | Fibular superficial; dorso do pé |\n| Posterior superficial | Sural; face dorsolateral do pé |\n| Posterior profundo | Tibial; planta do pé |\n\nO exame sensitivo orienta o mapa anatômico, mas não deve ser usado isoladamente para excluir síndrome. Parestesia tem baixa sensibilidade e pode aparecer tardiamente. Dor, estiramento, função e pressão, quando indicada, precisam ser interpretados em conjunto.\n\n**Leia a tabela “Compartimentos da perna e sinais”, na seção “Perna” da Biblioteca.** Compare o território dorsolateral com o dorso do pé e com o primeiro espaço interdigital antes de escolher o compartimento.",
+      "correta": "**C: posterior superficial, resposta bibliográfica.** É a associação entre face dorsolateral, nervo sural e grupo gastrocnêmio-sóleo-plantar na tabela 17-7 do resumo. Dor à dorsiflexão e perda de força na flexão plantar seriam achados concordantes, sem serem dados acrescentados ao caso original.\n\nO gabarito oficial não está disponível; a letra deriva da fonte consultada.",
+      "incorretas": {
+        "A": "**O anterior se relaciona ao primeiro espaço interdigital.** Nele estão o nervo fibular profundo e os extensores do tornozelo e dos dedos. A perda nesse pequeno território entre os primeiros dedos apoiaria essa localização, enquanto a região dorsolateral tem outra associação na tabela.",
+        "B": "**Lateral não significa toda região lateral do pé.** Esse compartimento contém fibulares e nervo fibular superficial, com dormência no dorso e fraqueza de eversão. A redação especifica dorsolateral, território atribuído ao sural/posterior superficial pelo resumo; esse detalhe muda a resposta em relação a uma pergunta sobre o dorso de modo geral.",
+        "D": "**O posterior profundo aponta para a planta do pé.** Seu nervo é o tibial e seu conteúdo inclui tibial posterior e flexores longos. Dormência plantar com alteração de flexão dos dedos ou inversão apoiaria esse espaço, não a face dorsolateral descrita."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Os compartimentos de cada região; Diagnóstico clínico: por que os sinais chegam tarde."
+      ],
+      "alerta": "Não há gabarito oficial disponível. A resposta bibliográfica foi atualizada de B para C conforme a tabela 17-7 do resumo consultado: dorso do pé corresponde ao lateral/fibular superficial; face dorsolateral, ao posterior superficial/sural. A localização sensitiva deve ser interpretada com o restante do exame, sem aguardar déficit neurológico para reconhecer uma síndrome em evolução.",
+      "provavel": "C"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Diagnóstico clínico: por que os sinais chegam tarde"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-222f4f26",
+          "os-compartimentos-de-cada-regiao-e0295081",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "aa458baf78f148e5e10f778c322bd063d04c4276c9659f51e369f59e72fdf1e5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0872": {
+    "questaoSha256": "9d8a096ca3245ba317b649a7aab8c2c8e9eb3967717fe0e68fd9a3c050479004",
+    "comentarioAnteriorSha256": "9bb4cdd7c6d652b7684685bc5328cc9e4002593cf2cab287a9ab22966355130a",
+    "comentario": {
+      "conceito": "**Anterior e lateral formam o par destacado nesta pergunta sobre a perna.** A perna possui quatro compartimentos: anterior, lateral, posterior superficial e posterior profundo. Saber qual grupo é mais frequentemente envolvido ajuda a orientar a vigilância, mas não determina quais espaços podem ser deixados sem avaliação.\n\nO resumo destaca o anterior como o mais acometido e acessível à medida de pressão. Ele contém extensores e nervo fibular profundo, com pista sensitiva no primeiro espaço interdigital. As pressões anterior e lateral tendem a variar juntas; o lateral contém fibulares e nervo fibular superficial, relacionados à eversão e ao dorso do pé.\n\nOs posteriores têm mapas diferentes: o superficial contém gastrocnêmio e sóleo, associado à flexão plantar e à sensibilidade dorsolateral; o profundo contém tibial posterior e flexores longos, com nervo tibial e sensibilidade plantar. A existência de um par mais frequente não torna esses grupos protegidos da isquemia. Na fasciotomia da perna descrita, liberam-se os quatro compartimentos.\n\n**Leia “Perna” e “Onde colocar o cateter”, na Biblioteca.** Relacione frequência, território nervoso e local de monitorização, sem confundir o cateter habitual com uma autorização para ignorar sintomas posteriores.",
+      "correta": "**A: anterior e lateral.** O anterior é a principal referência de acometimento e monitorização, e o lateral acompanha sua variação de pressão. Esse é o par apresentado pelo resumo para a cobrança do TARO 2011.\n\nA liberação indicada continua sendo completa, contemplando os quatro espaços.",
+      "incorretas": {
+        "B": "**O anterior pertence ao par correto, mas foi associado ao posterior profundo.** O profundo exige atenção própria quando a clínica não é explicada pela medida anterior, especialmente com sinais plantares e de flexores. Essa importância clínica não o transforma no substituto do lateral nesta comparação de frequência.",
+        "C": "**Inclui o lateral, mas exclui o anterior, que é o mais acometido.** O posterior superficial tem gastrocnêmio, sóleo e nervo sural, com sinais próprios. Não há motivo para trocar o compartimento principal por ele apenas por ambos produzirem sintomas no pé.",
+        "D": "**Reúne somente os posteriores e deixa de fora o principal compartimento acometido.** Superficial e profundo são espaços distintos e ambos podem precisar de liberação, mas a indicação de avaliá-los não equivale a dizer que formam o par mais frequente."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Medida da pressão e o delta P; Os compartimentos de cada região; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "Os compartimentos de cada região",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-13e06142",
+          "os-compartimentos-de-cada-regiao-222f4f26",
+          "fasciotomia-f108fecb",
+          "os-compartimentos-de-cada-regiao-991d4b36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "f46edddde74d79f2ed2fd04381440a82d89a4c752be64422b696288d0d337f03"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0916": {
+    "questaoSha256": "e641478446710544f9ccb0ea65480133715374d07c9cd09688bb472b68eeb02a",
+    "comentarioAnteriorSha256": "269ff3cef8c56e0796f859bf864a545d8896dd3d38fc0ab25804b36a0fb24b8b",
+    "comentario": {
+      "conceito": "**O compartimento anterior é o mais acometido na síndrome compartimental da coxa.** Ele contém quadríceps, sartório e nervo femoral. Sua função extensora explica por que a fraqueza de extensão do joelho e a dor ao estiramento em flexão são achados anatomicamente coerentes.\n\nA coxa é dividida em anterior, posterior e medial, também chamado adutor. Posterior contém isquiotibiais e nervo isquiático; medial contém adutores e nervo obturatório. Assim, os nomes correspondem a grupos musculares e nervosos, e não ao lado pelo qual o cirurgião faz a incisão.\n\nIsso é importante porque uma única incisão lateral pode liberar anterior e posterior. Não existe um quarto compartimento chamado lateral nessa divisão. O adutor pode exigir incisão medial se acometido. O cateter de rotina na coxa também é indicado no anterior, unindo frequência de acometimento e estratégia de monitorização.\n\n**Na Biblioteca, leia “Coxa” e a tabela de posicionamento do cateter.** Use músculos, função e dor ao estiramento para localizar o espaço, sem decorar “anterior” isoladamente.",
+      "correta": "**A: anterior.** É o compartimento mais acometido e a referência habitual para o cateter. Quadríceps e nervo femoral explicam as alterações de extensão do joelho e a dor à flexão passiva descritas no resumo.\n\nMaior frequência não exclui síndrome nos outros dois grupos.",
+      "incorretas": {
+        "B": "**Medial corresponde ao compartimento adutor.** Existe como espaço anatômico e se associa ao nervo obturatório, mas seu acometimento é raro na descrição consultada. Quando necessita descompressão, a via medial é acrescentada; não é o grupo de maior frequência.",
+        "C": "**Posterior contém isquiotibiais e nervo isquiático.** Pode apresentar dor à extensão passiva do joelho e fraqueza de flexão. Há casos posteriores documentados, porém o resumo identifica o anterior como mais acometido.",
+        "D": "**Lateral é uma via cirúrgica, não um compartimento separado.** A incisão desse lado pode abrir anterior e posterior. Confundir acesso com divisão anatômica cria uma região que não pertence ao mapa de três compartimentos da coxa."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Os compartimentos de cada região; Medida da pressão e o delta P; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Medida da pressão e o delta P",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-eb26943e",
+          "medida-da-pressao-e-o-delta-p-6e9747e1",
+          "fasciotomia-f734935c"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "452d42b099bf4bb3d3eda20f4fc600d3c4a7d759bb59a835d641c573920818d8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0999": {
+    "questaoSha256": "e7b26e310b21e8ed41c0139c7809f228525b2e6425d58301dbbaa0040d8a2b61",
+    "comentarioAnteriorSha256": "4460bd3999ac487855f120111c978b7369255ae743ad2568fb5f156442806b26",
+    "comentario": {
+      "conceito": "**A combinação cobrada é duas incisões dorsais, sobre o segundo e o quarto metatarsos, e nove compartimentos.** Manoli e Weber descrevem medial, lateral, central superficial, central profundo ou calcâneo, adutor do hálux e quatro interósseos. São cinco grupos nomeados mais quatro interósseos, totalizando nove.\n\nAs incisões dorsais permitem alcançar interósseos e região central; os espaços medial e lateral são alcançados contornando as faces profundas do primeiro e do quinto metatarsos. A distribuição de duas vias acompanha a anatomia do antepé, em vez de concentrar o acesso sobre o terceiro metatarso.\n\n**O retropé exige uma ressalva.** O compartimento calcâneo contém o quadrado plantar e se comunica com o posterior profundo da perna. Nas lesões do retropé, especialmente fratura do calcâneo, pode ser necessária uma incisão medial separada. Portanto, escolher D não significa que duas incisões dorsais garantam, em qualquer lesão, descompressão suficiente de todos os espaços.\n\nO enunciado é pediátrico, enquanto a fonte consultada é o resumo do capítulo de adultos. A anatomia e as vias descritas sustentam a combinação das alternativas; o resumo não fornece limiares de pressão específicos para crianças.\n\n**Leia “Pé” e “Coxa, pé e braço” na Biblioteca.** Distinguir antepé de retropé é o passo que evita transformar uma resposta de prova em técnica universal.",
+      "correta": "**D: duas incisões dorsais sobre o segundo e o quarto metatarsos; nove compartimentos.** É a combinação anatômica e de vias descrita no resumo. A soma dos compartimentos inclui os quatro interósseos, não apenas os grupos plantares maiores.\n\nEm lesão calcânea, a necessidade de uma via medial adicional deve ser avaliada: a opção resume o padrão de acesso, não dispensa liberação dirigida do retropé.",
+      "incorretas": {
+        "A": "**Erra o número e o acesso.** A divisão de Manoli e Weber usada aqui soma nove, não sete. Uma via única sobre o terceiro metatarso também não corresponde às duas incisões dorsais descritas para alcançar os diferentes espaços do antepé.",
+        "B": "**Acerta nove compartimentos, mas mantém uma via dorsal única sobre o terceiro metatarso.** Reconhecer a contagem não resolve o planejamento de acesso. O resumo distribui as incisões sobre segundo e quarto metatarsos e ainda ressalva o retropé.",
+        "C": "**Acerta as duas incisões e erra a soma dos espaços.** Os quatro interósseos precisam ser contados junto com medial, lateral, central superficial, calcâneo e adutor. A técnica correta não torna a classificação de sete adequada para esta questão."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Fasciotomia; Os compartimentos de cada região."
+      ],
+      "alerta": "A alternativa D é a resposta oficial, mas não implica que as duas vias dorsais descomprimam adequadamente todo retropé. O resumo ressalva incisão medial separada para o compartimento calcâneo quando necessária. A fonte utilizada é o resumo de adultos; não foi conferido neste fluxo um capítulo pediátrico com limiares de pressão próprios."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia",
+          "Os compartimentos de cada região"
+        ],
+        "blocos": [
+          "fasciotomia-029870c3",
+          "os-compartimentos-de-cada-regiao-110fac19"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "97ab96c39f455f31014466c6142b291c50227b82bb65ccea712f416cb867fe95"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1010": {
+    "questaoSha256": "b24e8afcc3da089add6acd03a72f93507801fbfa2a9a91841a2538abf90dde6d",
+    "comentarioAnteriorSha256": "aa4e8edc9573351340f665543ef9b4d29caa6a67bbfb6b4d19eb86bf650694fd",
+    "comentario": {
+      "conceito": "**No pé, o local recomendado para o cateter é o compartimento interósseo.** A recomendação muda conforme a região, acompanhando o espaço de maior interesse para detecção e acompanhamento da pressão. Ela não significa que os demais compartimentos sejam incapazes de desenvolver síndrome.\n\n| Região | Local recomendado no resumo |\n|---|---|\n| Mão | Interósseo |\n| Perna | Anterior; posterior profundo se a clínica indicar |\n| Coxa | Anterior |\n| Pé | Interósseos; considerar calcâneo no retropé |\n| Antebraço | Flexor ou volar |\n\nO cateter de fenda de Rorabeck tem grande superfície de leitura e permite monitorização contínua. Bolhas ou coágulos podem gerar valores falsamente baixos, e o transdutor deve ficar à altura do cateter. Compressão do compartimento deve produzir elevação imediata da leitura, ajudando a verificar patência.\n\nA decisão também depende da pressão arterial: delta P é diastólica menos pressão compartimental. O posicionamento correto e a leitura da tendência evitam que uma medida aparentemente tranquilizadora seja interpretada fora do contexto. Em quadro clínico claro, a cirurgia urgente não deve ser retardada para cumprir monitorização.\n\n**Leia “Onde colocar o cateter” e o trecho sobre cateteres de pavio e fenda na Biblioteca.** Memorize o mapa por região e revise as causas de leitura falsamente baixa.",
+      "correta": "**D: pé, compartimentos interósseos.** É o par da tabela de locais recomendados. Se houver lesão do retropé, o calcâneo merece consideração adicional, pois uma recomendação de rotina não substitui investigação dirigida.\n\nO método de leitura exige patência e posicionamento adequados para que o número tenha valor.",
+      "incorretas": {
+        "A": "**A mão é monitorada preferencialmente no interósseo, não no tenar.** O tenar é um compartimento verdadeiro e pode precisar de avaliação dirigida. A alternativa troca a recomendação habitual por um espaço cuja existência anatômica, isoladamente, não o torna o local padrão.",
+        "B": "**Na perna, recomenda-se o anterior.** Ele é mais acometido e acessível, e suas pressões tendem a acompanhar as do lateral. O lateral pode desenvolver síndrome, mas isso não o coloca como o local de rotina da tabela.",
+        "C": "**Na coxa, a referência é anterior, não posterior.** O anterior contém quadríceps e é o mais acometido. Sintomas posteriores merecem atenção própria, sem mudar a combinação solicitada como recomendação padrão.",
+        "E": "**No antebraço, recomenda-se o grupo flexor ou volar.** O dorsal extensor pode exigir medida na rara síndrome dorsal isolada, descrita como exceção. A alternativa apresenta essa região como rotina e omite o espaço volar recomendado."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-6e9747e1",
+          "medida-da-pressao-e-o-delta-p-b4d85376",
+          "medida-da-pressao-e-o-delta-p-13e06142",
+          "medida-da-pressao-e-o-delta-p-d654f7b7",
+          "o-tratamento-preferido-dos-autores-930f2a36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "943067e6aa377888d440a8a924aef78d94c1e302a9ff9e4bd3e121ac5936ff08"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1169": {
+    "questaoSha256": "83acfee19e5a22fe15fe8ae52dae5bf4c0e8d85de4fe60a5367bb14d715de9e6",
+    "comentarioAnteriorSha256": "b85856caedcb1fe677f9fb23c3c5d61e4bcb51dccc6b73dad418d771401f3be6",
+    "comentario": {
+      "conceito": "**A afirmação é verdadeira: o primeiro espaço interdigital corresponde ao nervo fibular profundo, no compartimento anterior.** Esse espaço fica entre o hálux e o segundo dedo e não representa toda a sensibilidade do dorso do pé.\n\nO anterior contém tibial anterior, extensores longos dos dedos e do hálux e fibular terceiro. O mesmo mapa associa sofrimento desse grupo à dor ao estiramento em flexão plantar e à fraqueza extensora. Relacionar nervo, território e músculos ajuda a separar uma pista localizada de uma perda sensitiva inespecífica.\n\nOs outros espaços têm referências distintas: lateral, nervo fibular superficial e dorso do pé; posterior superficial, sural e face dorsolateral; posterior profundo, tibial e planta. Essa comparação é mais útil que associar toda dormência dorsal ao mesmo compartimento.\n\n**A hipoestesia não é obrigatória para o diagnóstico.** Parestesia tem baixa sensibilidade e pode surgir tardiamente; um primeiro espaço normal não exclui síndrome anterior. A questão descreve uma alteração possível do território, não um requisito a ser aguardado antes de tratar.\n\n**Leia “Perna” e a tabela de sinais de cada compartimento na Biblioteca.** Compare primeiro espaço, dorso, região dorsolateral e planta no mesmo mapa.",
+      "correta": "**A: certo, resposta bibliográfica.** O nervo fibular profundo transita no compartimento anterior e seu território sensitivo característico é o primeiro espaço interdigital. O sofrimento desse compartimento pode reduzir essa sensibilidade.\n\nNão há gabarito oficial disponível; a classificação da afirmação é sustentada pela tabela do resumo.",
+      "incorretas": {
+        "B": "**Considerar a frase errada desfaz uma associação anatômica sustentada pela fonte.** O primeiro espaço é a pista do fibular profundo/anterior, enquanto o dorso mais amplo se associa ao fibular superficial/lateral. A limitação real é diagnóstica: a ausência de dormência não exclui síndrome, mas isso não torna a associação anatômica falsa."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Os compartimentos de cada região; Diagnóstico clínico: por que os sinais chegam tarde."
+      ],
+      "alerta": "Não há gabarito oficial disponível. A resposta A é bibliográfica, conforme o território do nervo fibular profundo na tabela 17-7 do resumo. A sensibilidade preservada não exclui síndrome compartimental.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Diagnóstico clínico: por que os sinais chegam tarde"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-222f4f26",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "a8fd24efa5e348219760602a51e549b5cb9cb6648b258b8c0912ba34f61620f5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1196": {
+    "questaoSha256": "d84b9274de32f4a610db73b6a4c5950bb6fd62054b95043e71cf1da2df9a559e",
+    "comentarioAnteriorSha256": "0386cab28e6b046bbc0ab0dac8e085a43a415590143fd4e6bf29e447ceb8223f",
+    "comentario": {
+      "conceito": "**Delta P é pressão arterial diastólica menos pressão intracompartimental.** Ele representa a margem de pressão disponível para perfundir o tecido: quando a pressão do compartimento sobe, ou quando a diastólica cai, essa margem diminui. Por isso a pressão absoluta do compartimento, isoladamente, não descreve toda a ameaça à perfusão.\n\nComo exemplo didático, diastólica de 60 mmHg e compartimento de 40 mmHg produzem delta P de 20 mmHg. Subtrair ao contrário gera −20, que já não representa o coeficiente da definição. Usar a sistólica também troca a referência do cálculo.\n\nNo protocolo descrito, delta P abaixo de 30 mmHg mantido por mais de duas horas sustenta fasciotomia no paciente monitorado sem sinais claros. A tendência importa, e um quadro clínico estabelecido exige cirurgia urgente. As seis horas mencionadas no caso são o intervalo do retorno, não um tempo a aguardar para descomprimir.\n\n**Há uma inversão na redação das alternativas.** O gabarito oficial é B, mas “subtração da pressão diastólica da intracompartimental”, lido literalmente, inverte os termos. A alternativa D expressa literalmente a fórmula do resumo. O gabarito da banca foi preservado, com a divergência explicitada.\n\n**Leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”, na Biblioteca.** Refaça um exemplo numérico e guarde a equação, em vez de memorizar a ordem de uma frase ambígua.",
+      "correta": "**B é a alternativa indicada no gabarito oficial, com ressalva de redação.** Ela contém as duas pressões pertinentes, diastólica e intracompartimental, mas a construção “subtração da pressão ... da pressão ...” significa retirar a primeira da segunda. Assim, tomada literalmente, B inverte a definição.\n\nA equação a aprender é **diastólica − intracompartimental**. A resposta oficial não justifica ensinar a subtração contrária.",
+      "incorretas": {
+        "A": "**Usa pressão sistólica e, na leitura literal, também a subtrai da compartimental.** O delta P descrito usa a diastólica. Mesmo corrigindo a ordem da frase, a escolha da sistólica continuaria diferente do coeficiente empregado no resumo.",
+        "C": "**Subtrai a intracompartimental da sistólica.** A direção da subtração produz uma diferença arterial menos tecidual, mas a referência arterial é a errada para esta definição. Sistólica e diastólica não são intercambiáveis no limiar de delta P apresentado.",
+        "D": "**Esta opção expressa literalmente a fórmula da fonte: retirar a intracompartimental da diastólica.** Portanto, é cientificamente defensável e diverge da letra oficial B por um problema de redação. É preciso reconhecer essa consistência, sem classificá-la como fórmula fisiológica errada para defender a banca.",
+        "E": "**Compara dois compartimentos, e não pressão arterial com pressão do tecido.** Uma diferença entre lado afetado e contralateral não informa a margem de perfusão definida por Whitesides. Mesmo pressões iguais nos dois lados podem ter significados distintos conforme a pressão arterial e o contexto."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ],
+      "alerta": "Gabarito oficial B preservado. Na leitura literal de “subtração da pressão X da pressão Y”, calcula-se Y − X. Assim, D exprime a fórmula correta do resumo, diastólica − intracompartimental, enquanto B a inverte. Trata-se de divergência de redação/gabarito; a equação não deve ser invertida na prática."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-d654f7b7",
+          "medida-da-pressao-e-o-delta-p-1312eae8",
+          "medida-da-pressao-e-o-delta-p-f94386d5",
+          "o-tratamento-preferido-dos-autores-930f2a36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1603": {
+    "questaoSha256": "75bda1d3d943dbb0162f4be060efaa2a2f3cff1324fc89f4d208981a3b3ac215",
+    "comentarioAnteriorSha256": "5919ae96b85aed86c0837ae76ab0d151b6b1aa819f72d7f0d371a9cc7ac6099a",
+    "comentario": {
+      "conceito": "**Parestesia e paresia têm baixa sensibilidade e alta especificidade.** Sensibilidade é a capacidade de um achado aparecer nos pacientes que têm a doença; especificidade é sua capacidade de permanecer ausente nos que não a têm. Um sinal pode falhar em muitos casos verdadeiros e, ainda assim, ser relativamente incomum nos pacientes sem síndrome.\n\nA tabela do resumo informa sensibilidade de cerca de 13% para alteração sensitiva ou motora, com especificidade de 98% para parestesia e 97% para paresia. A ausência desses achados, portanto, é pouco tranquilizadora. A presença aumenta a preocupação, mas precisa de contexto, inclusive porque pode existir lesão nervosa associada.\n\nEsses déficits também aparecem tarde. Esperar fraqueza ou alteração sensitiva para reconhecer o quadro pode significar deixar a isquemia evoluir. Dor desproporcional pode surgir antes no paciente acordado, mas também tem limitações; nos pacientes de risco, a monitorização contínua e a tendência do delta P ajudam a antecipar a decisão.\n\n**Leia a tabela de desempenho dos sinais e os itens “Parestesia” e “Paralisia” na Biblioteca.** Pergunte separadamente o que a presença e a ausência de cada sinal permitem concluir.\n\n**Por que esta questão foi criada.** A baixa sensibilidade dos sinais clássicos muda a segurança da investigação. É um ponto com chance de cobrança porque impede usar exame neurológico normal como exclusão de uma emergência.",
+      "correta": "**D: baixa sensibilidade e alta especificidade.** Os sinais faltam em muitos casos de síndrome, mas têm especificidade elevada na tabela. Isso explica por que esperar seu aparecimento é uma estratégia tardia.\n\nOs números não substituem a avaliação do mecanismo, da evolução e de outras causas de déficit neurológico.",
+      "incorretas": {
+        "A": "**A especificidade alta está correta, a sensibilidade alta não.** Se fossem muito sensíveis, sua ausência reduziria de forma importante a suspeita. A tabela mostra o oposto: cerca de 13% de sensibilidade, insuficiente para excluir a síndrome quando o exame sensitivo ou motor está normal.",
+        "B": "**Inverte as duas propriedades.** Não são sinais de rastreamento capazes de aparecer na maioria dos casos; tampouco são descritos como pouco específicos. Essa inversão levaria a confiar demais na ausência e desvalorizar sua presença, justamente os erros que os dados procuram evitar.",
+        "C": "**Acerta que a sensibilidade é baixa, mas reduz indevidamente a especificidade.** Os valores de 97% e 98% mostram que paresia e parestesia são relativamente específicos no conjunto citado. A limitação maior é aparecerem tarde e faltarem em muitos casos, não serem universalmente inespecíficos."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Diagnóstico clínico: por que os sinais chegam tarde; Medida da pressão e o delta P."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Diagnóstico clínico: por que os sinais chegam tarde",
+          "Medida da pressão e o delta P"
+        ],
+        "blocos": [
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-9a9336aa",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-bd9cdd1d",
+          "medida-da-pressao-e-o-delta-p-491de05b"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "e9ba264075c6f911bf6832e26cfa9ced1768713d688f60669de6ffad9d9ba5b2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1604": {
+    "questaoSha256": "edeb6020e28584c97d3d29204bcc346a3091c6dffb84c084eaf1231ba0316268",
+    "comentarioAnteriorSha256": "d0902c99375d959a8395de60e938c27432c8943f39d797b01d1e4bca23819dad",
+    "comentario": {
+      "conceito": "**A ferida fica aberta após a fasciotomia, com revisão em cerca de 48 horas.** Descompressão não encerra o tratamento: é necessário reavaliar a viabilidade muscular e desbridar tecido inviável. Fechar imediatamente pode recriar a restrição que acabou de ser liberada.\n\nNa revisão, o fechamento depende de toda a musculatura estar viável e de a pele aproximar sem tensão. O resumo descreve fechamento primário retardado como mais frequentemente possível na ferida medial da perna, em comparação à lateral. A letra da prova combina um momento de reavaliação com uma possibilidade de fechamento, sem torná-lo obrigatório.\n\nOs autores preferem fechar nessa revisão, diretamente ou com enxerto, quando as condições permitem. Necrose residual justifica adiar. Dermatotração é outra estratégia, mas pode prolongar o processo e comprometer bordas; não corresponde a esperar sete dias para a primeira inspeção programada.\n\n**Leia “A ferida: aberta, revisão em 48 horas”, na Biblioteca.** Separe três decisões: deixar aberto no primeiro ato, rever a viabilidade e só então escolher a cobertura adequada.\n\n**Por que esta questão foi criada.** O fechamento imediato e a dispensa de desbridamento aparecem como erros em questões de fasciotomia. O par 48 horas/medial testa o passo seguinte à descompressão, com implicação direta para segurança da ferida.",
+      "correta": "**B: cerca de 48 horas; ferida medial.** A revisão busca músculo viável e ausência de necrose residual. A medial é a que costuma permitir aproximação sem tensão com mais frequência na perna.\n\nFechamento primário retardado significa fechamento em um ato posterior, não ao fim da fasciotomia inicial.",
+      "incorretas": {
+        "A": "**Acerta a revisão em 48 horas e troca a ferida.** A lateral frequentemente não permite fechamento direto, enquanto a medial é mais favorável na descrição do resumo. O estado dos tecidos deve ser avaliado individualmente; a frequência não é garantia de fechamento.",
+        "C": "**Troca tanto o momento como a ferida mais favorável.** Sete dias não é a primeira revisão programada descrita pelos autores, e lateral não é a via que mais costuma permitir fechamento direto. A reavaliação precoce evita deixar necrose residual sem tratamento.",
+        "D": "**Reconhece a ferida medial, mas posterga a revisão para sete dias.** A inspeção é planejada em cerca de 48 horas. Se a cobertura precisar ser adiada por necrose residual, isso decorre da avaliação dos tecidos, não de uma regra de aguardar uma semana para revê-los."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "fasciotomia-7a3f42f7",
+          "fasciotomia-52846e90",
+          "fasciotomia-f1a3c7bb",
+          "fasciotomia-0f8a1c3f"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "c13d58c1cac3517a720e9ba078da69a3c4f8cb10f93bc1bc62d13f1256e07ef3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1605": {
+    "questaoSha256": "293258678f7db0f3f8a44bbcd8e8cb28a6c51c058df356c7d183aa85171ed751",
+    "comentarioAnteriorSha256": "dfe313c85b315a2c96b77db0df044375e3ff7d9b2153e39478e00f299cea0337",
+    "comentario": {
+      "conceito": "**A fasciotomia vem antes da estabilização, e a haste intramedular fresada não aumenta a ocorrência de síndrome.** A prioridade é remover a pressão que mantém o músculo isquêmico. Estabilizar a fratura é importante, mas não pode acrescentar atraso desnecessário à descompressão.\n\nDepois da liberação e do desbridamento, a fixação protege partes moles e facilita o acesso a elas. Na diáfise tibial, a haste fresada é considerada pelos autores provavelmente o tratamento de escolha. O resumo ressalva que gesso na tíbia com síndrome é contraindicado, embora o tratamento da fratura não precise mudar radicalmente em outros aspectos.\n\nPressão perioperatória elevada não equivale automaticamente a uma síndrome persistente. Estudos com hastes fresadas e não fresadas mostraram elevação transitória que se dissipava, sem aumento da síndrome. Uma curva que volta a subir merece atenção. Tração excessiva e posicionamento inadequado são problemas reais, mas não demonstram que a fresagem em si seja a causa.\n\n**Leia “A fratura associada”, na Biblioteca.** Relacione a ordem dos tempos à proteção muscular e diferencie pico transitório de pressão de uma tendência progressivamente ameaçadora.\n\n**Por que esta questão foi criada.** A ordem fasciotomia/fixação já foi cobrada no CET-PR; o efeito da haste acrescenta uma distinção útil entre um receio histórico e os resultados apresentados no resumo.",
+      "correta": "**D: antes da estabilização; não aumenta o risco.** A fasciotomia é prioritária para evitar atraso na descompressão, seguida da estabilização apropriada. A fresagem como causa de aumento da síndrome foi refutada nos estudos sintetizados.\n\nIsso não dispensa vigilância: tendência da pressão e perfusão continuam relevantes durante o tratamento.",
+      "incorretas": {
+        "A": "**Inverte a prioridade e atribui à haste um efeito que o resumo refuta.** Fixar primeiro pode consumir o tempo necessário para salvar músculo. A elevação transitória da pressão observada durante a haste também não prova aumento da incidência de síndrome.",
+        "B": "**Acerta o efeito da haste, mas coloca a descompressão depois.** A fratura precisa de estabilidade, porém essa necessidade não justifica manter o compartimento isquêmico fechado enquanto se completa a fixação. O tratamento deve ser organizado para liberar primeiro.",
+        "C": "**Acerta a ordem, mas mantém o receio de que fresar aumente a síndrome.** O resumo compara dados de hastes fresadas e não fresadas sem sustentar esse aumento. O risco clínico deve ser acompanhado pela perfusão e evolução, sem trocar uma técnica adequada por um mito."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: A fratura associada."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "A fratura associada"
+        ],
+        "blocos": [
+          "a-fratura-associada-6507c0fa",
+          "a-fratura-associada-e6fce012",
+          "a-fratura-associada-33d78d60"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "dc80638e82be29dfafb0f6d0d3046ca9ee1934a320ee29644b525966e479a10e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

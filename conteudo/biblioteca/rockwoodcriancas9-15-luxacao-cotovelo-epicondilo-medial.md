@@ -314,7 +314,7 @@ Redução pelas técnicas de empurrar: no método de LAVINE, a criança fica no 
 
 !questoes central=trauma-0959 treino=pediatria-1056
 conceito: A tração de PARVIN é feita com o cotovelo fletido perto de 90 graus, tração no eixo do úmero e do antebraço e contraforça; o capítulo a prefere a partir dos 10 anos e reserva a técnica de empurrar o olécrano, com a criança no colo dos pais, para os de 9 anos ou menos.
-como: A prova TEOT/TARO sem ano cruzou decúbito dorsal ou ventral com cotovelo em flexão ou extensão para a manobra de PARVIN (gabarito: ventral e flexão).
+como: A prova Ortopedia sem ano cruzou decúbito dorsal ou ventral com cotovelo em flexão ou extensão para a manobra de PARVIN (gabarito: ventral e flexão).
 armadilha: Cotovelo em extensão: a hiperextensão é proibida; multiplica a força sobre o braquial e expõe o mediano.
 alerta: O gabarito (trauma-0959) põe a manobra de PARVIN em decúbito ventral. O capítulo diz que a técnica de tração pode ser feita em supino ou em prono e desenha a de PARVIN em supino, com contraforça por lençol na axila (figura 15-20). A flexão do cotovelo é ponto comum; a posição do paciente não é exclusiva no livro.
 !fim

@@ -1,0 +1,388 @@
+{
+  "trauma-1333": {
+    "questaoSha256": "6edf7dac87c94df457c245a986c52b659948fc445ad9b61bfd511faa8de78b5c",
+    "comentarioAnteriorSha256": "1250624270d0a340acb5f1668d98ceef026b5638a372f83c17db3ad877c51a53",
+    "comentario": {
+      "conceito": "**Uma glenoumeral subluxada pode indicar fixação mesmo com degrau ou diástase menor que 4 mm.** O algoritmo não usa o número como substituto da estabilidade. Uma superfície com pequena incongruência mensurável ainda pode ser incapaz de manter a cabeça centrada.\n\nO objetivo do tratamento da glenoide é recuperar congruência e estabilidade. A regra de quatro a cinco milímetros envolvendo 25% a 30% da superfície descreve um cenário; subluxação persistente é outra razão, própria, para discutir fixação. A tabela do capítulo explicita essa exceção abaixo de quatro milímetros.\n\nA localização também importa. Os dois terços inferiores formam a área circular principal de contato, especialmente o quadrante anteroinferior. O polo superior é menos crítico, e pequenos fragmentos de borda com ombro estável podem ser tratados sem cirurgia. Logo, tamanho, posição e estabilidade devem ser integrados.\n\n**Leia “Quando operar a glenoide”, na Biblioteca.** Antes de considerar um degrau aceitável, confira se a cabeça mantém a relação com a fossa. O limite numérico só tem sentido junto da função da superfície reconstruída.\n\n**Por que esta questão foi criada.** Uma questão do acervo cobrou subluxação persistente como indicação. O simulado explicita o degrau pequeno para testar a exceção que uma leitura rígida de quatro milímetros perderia.",
+      "correta": "**A: subluxação glenoumeral.** Ela demonstra perda de estabilidade na situação do algoritmo. Um degrau pequeno não neutraliza essa indicação nem torna obrigatório manter o conservador.",
+      "incorretas": {
+        "B": "**O acometimento superior isolado não é a condição que completa a indicação.** Esse polo é relativamente menos crítico para o contato. Ainda se avaliam desvio e risco de impacto do coracoide, mas a alternativa não informa esses achados.",
+        "C": "**Um fragmento com menos de 25% não demonstra instabilidade por si.** Pode haver necessidade de fixar um fragmento menor se a articulação estiver subluxada; a pergunta, porém, pede justamente esse sinal adicional, que a alternativa não oferece.",
+        "D": "**Fratura costal associada modifica a avaliação do trauma e das condições clínicas, mas não prova instabilidade da glenoide.** A indicação específica abaixo do limite de degrau depende da subluxação, não apenas de uma lesão torácica coexistente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia; Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-28949d44",
+          "fraturas-da-glenoide-d94ae394"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "540574f72d286f6fa0ce58084e67d7489844bdbbcb6f696a90733fb7bb7bbe96"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1334": {
+    "questaoSha256": "efca211905d411a1a5217cb39a1215936e2726fc23cbe480a8435e1e20626c68",
+    "comentarioAnteriorSha256": "6542ad85948a48da01ef9645069503fc117b0d3d38f198809b7119fed595c617",
+    "comentario": {
+      "conceito": "**O protocolo conservador usa tipoia por duas semanas, prolongada para cinco a seis nas fraturas-luxações da glenoide, espinha e coracoide.** A distinção impede aplicar uma única duração a padrões com riscos e necessidades diferentes.\n\nNo esquema habitual, a imobilização é seguida de mobilização passiva, buscando amplitude passiva completa por volta de um mês. A amplitude ativa é recuperada progressivamente no segundo mês, e o fortalecimento do manguito e dos músculos periescapulares começa no terceiro. O capítulo descreve ausência de restrições no quarto mês, conforme a evolução.\n\nAs exceções com imobilização mais longa têm maior preocupação com estabilidade ou não união. Espinha lateral e coracoide não devem ser tratados como se compartilhassem automaticamente a rápida consolidação de toda fratura do corpo. A duração do aparelho precisa acompanhar o padrão e o controle clínico.\n\nEsse é o protocolo descrito, não uma autorização de liberar carga ou manipular um foco doloroso apenas porque o calendário chegou a uma semana específica. Dor, estabilidade, imagem e lesões associadas orientam a progressão individual.\n\n**Leia “Quando não operar e como conduzir”, na Biblioteca.** Diferencie tempo de conforto, proteção da lesão e etapas de recuperação do movimento.\n\n**Por que esta questão foi criada.** A maioria das fraturas pouco desviadas é conservadora. O simulado cobra as exceções de proteção mais longa, evitando uma regra única para todos os processos e padrões articulares.",
+      "correta": "**D: duas semanas; cinco a seis semanas.** A primeira duração corresponde ao protocolo habitual e a segunda aos padrões de exceção nomeados. Não são dois tempos intercambiáveis para qualquer fratura.",
+      "incorretas": {
+        "A": "**Prolonga muito os dois períodos em relação ao protocolo apresentado.** Seis semanas não é a regra inicial do conservador, e dez a doze não é a exceção descrita. A proteção deve ser específica, sem manter todos os pacientes imobilizados pelo tempo máximo imaginável.",
+        "B": "**Também aumenta os dois prazos sem reproduzir a fonte.** Quatro e oito semanas não são o par do capítulo. O ganho de proteção não deve ser presumido como benefício líquido sem considerar a recuperação do movimento.",
+        "C": "**Acerta o tempo habitual e reduz a proteção das exceções.** Três semanas não corresponde às cinco a seis descritas para fraturas-luxações, espinha e coracoide. A segunda lacuna existe justamente para diferenciar esses padrões."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-fab1b95f",
+          "medir-o-desvio-e-indicar-a-cirurgia-7bccb47b",
+          "medir-o-desvio-e-indicar-a-cirurgia-e96fe60c",
+          "medir-o-desvio-e-indicar-a-cirurgia-e5451bef",
+          "medir-o-desvio-e-indicar-a-cirurgia-5f8de20f",
+          "medir-o-desvio-e-indicar-a-cirurgia-c0c96953"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "08a457e38a927f49689678ef80edaadb45ca713be1931168c6719b6cc9408f9e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1335": {
+    "questaoSha256": "ef05e31dbb1aa944d9c10309fc123889f995de7404c2d837ab615c81ffb83287",
+    "comentarioAnteriorSha256": "d426cad266a6d32668ec83e0618bbbe09a576f661789aa86079ca8065506684e",
+    "comentario": {
+      "conceito": "**No politraumatizado ou com partes moles ruins, o algoritmo orienta melhorar as condições e reavaliar; as reconstruções complexas costumam ocorrer na segunda ou terceira semana.** O desvio da escápula não torna sua fixação automaticamente prioritária sobre as ameaças gerais do trauma.\n\nUma cirurgia complexa pode durar três a quatro horas em posição ventral ou semiventral. Isso exige condição clínica e pele adequadas. A espera deve ser uma decisão acompanhada, com reavaliação, e não abandono da fratura até que o desvio consolide.\n\nA fonte também ressalta que a escápula forma calo rapidamente e que a redução fica difícil depois de dias. Há, portanto, uma tensão real entre aguardar a segurança sistêmica e não perder desnecessariamente a oportunidade técnica. O segundo ou terceiro intervalo semanal descreve a prática do capítulo, não um prazo que autoriza adiar sem motivo todo paciente já apto.\n\nA fratura exposta é uma exceção à ideia de que a escápula pode esperar na avaliação inicial. O cuidado da ferida e das ameaças associadas deve ser priorizado. A resposta da pergunta refere-se ao paciente com condição geral/pele inadequadas para a reconstrução definitiva descrita.\n\n**Leia o algoritmo conservador e “Pós-operatório e resultados”, na Biblioteca.** Separe urgências do trauma, momento da reconstrução e necessidade de reavaliação.\n\n**Por que esta questão foi criada.** O capítulo combina politrauma e cirurgia longa em posição exigente. O simulado testa a diferença entre reconhecer indicação anatômica e escolher um momento seguro para executá-la.",
+      "correta": "**A: aguardar melhora e reavaliar; segunda ou terceira semana.** É a combinação descrita para esse contexto. Não é indicação de fixação imediata de toda fratura desviada nem de atraso rígido sem avaliação.",
+      "incorretas": {
+        "B": "**Acerta a reavaliação e troca o momento habitual das reconstruções complexas.** A primeira semana não é o intervalo apontado nessa descrição. Isso não proíbe operar mais cedo um caso apropriado; apenas não reproduz a prática perguntada.",
+        "C": "**Transforma indicação de reconstrução em urgência universal de 24 horas.** O algoritmo leva em conta politrauma e partes moles, e descreve reavaliar após melhora. A primeira semana também não é o intervalo habitual citado para as complexas.",
+        "D": "**Mantém o intervalo semanal, mas associa uma conduta inicial incompatível com ele e com as condições clínicas.** Não se indica fixação definitiva imediata em todo paciente inadequado apenas porque a fratura é desviada. A prioridade é estabilizar e reavaliar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia; Vias de acesso e técnica de fixação; Epidemiologia, mecanismo, lesões associadas e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Vias de acesso e técnica de fixação",
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-db7733a7",
+          "vias-de-acesso-e-tecnica-de-fixacao-086713d3",
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-9deaa695",
+          "vias-de-acesso-e-tecnica-de-fixacao-ac93bd03"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "bee0b08ec899b0ad12d3e8a159035a520fca25acc2c17bb7e9f44da0e01a82bd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1336": {
+    "questaoSha256": "65f8d754a4ebb682df538e1775315bfd73532a5d580c342efae26e89cbf62c7f",
+    "comentarioAnteriorSha256": "3790335997cc3b35d169183cb158cb8ed74983f1c4128f10335d85c576d5a642",
+    "comentario": {
+      "conceito": "**Na Judet ampla, o infraespinal é elevado proximalmente, e tração excessiva ameaça o feixe supraescapular na incisura espinoglenoidal.** Direção e estrutura devem ser relacionadas à etapa do acesso, não apenas memorizadas como dois nomes da região.\n\nAntes da mobilização, abre-se o intervalo com o redondo menor e controlam-se os vasos circunflexos da escápula. Depois o infraespinal é liberado de suas origens escapulares e rebatido para expor a fossa, as bordas e o colo. Seu pedículo neural acompanha a região da base da espinha e limita a mobilização segura.\n\nO deltoide espinal, em contraste, é rebatido para laterodistal. Trocar a direção dos dois músculos é uma armadilha plausível: eles participam do mesmo acesso, mas não são mobilizados da mesma forma. O fechamento também precisa restaurar suas inserções.\n\nAs janelas limitadas podem diminuir a agressão muscular quando dão exposição suficiente. O objetivo é visualizar e reduzir o padrão sem usar tração excessiva como substituto de uma exposição adequada.\n\n**Leia “A via de Judet”, na Biblioteca.** Acompanhe deltoide e infraespinal como etapas diferentes e identifique o pedículo a cada uma.\n\n**Por que esta questão foi criada.** O TARO 2023 cobrou o nervo lesado pela tração do infraespinal. O simulado acrescenta a direção de rebatimento e o local de vulnerabilidade.",
+      "correta": "**B: proximal; feixe supraescapular na incisura espinoglenoidal.** O trajeto ao redor da base da espinha explica a tensão durante a elevação do infraespinal. A resposta não se refere ao axilar do espaço quadrangular.",
+      "incorretas": {
+        "A": "**Troca a direção de mobilização e a estrutura ameaçada.** O infraespinal é levado proximalmente, não para distal, e o risco específico é o supraescapular. A proximidade do axilar no ombro não o torna o pedículo dessa manobra.",
+        "C": "**Acerta a direção e troca o nervo.** O axilar está relacionado ao espaço quadrangular abaixo do redondo menor, enquanto a tração do infraespinal atua sobre o feixe da região espinoglenoidal.",
+        "D": "**Acerta o feixe e inverte o movimento.** Elevar proximalmente o infraespinal é a etapa descrita. A direção distal pode ser lembrada da mobilização do deltoide posterior, outra fase do acesso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação; Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação",
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-b5f2e443",
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e",
+          "vias-de-acesso-e-tecnica-de-fixacao-e992297c",
+          "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b",
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "8fb80adcb62ab620471e27730dabc3c67cb26d97d6e5a5c288edf5c97911b71b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1337": {
+    "questaoSha256": "8c9fde75431f8cb6b9835771741e621becdfa870dda135fab93a8e2b34826c59",
+    "comentarioAnteriorSha256": "7f28f442a49f1da869b545754e8112bf62ed253724c916e2197a5c73bd482e91",
+    "comentario": {
+      "conceito": "**Dupont-Evrard expõe a borda lateral pelo intervalo infraespinal–redondo menor e não pode ser ampliado como um acesso extensível.** A escolha deve prever, antes da incisão, a exposição necessária para reconhecer e reduzir o padrão.\n\nO intervalo lateral evita a liberação ampla do infraespinal da Judet clássica. Pode ser atraente quando o foco está acessível por essa janela, mas sua limitação é não oferecer uma expansão equivalente caso a reconstrução exija borda medial, espinha ou uma visão mais extensa da fossa.\n\nJudet acompanha espinha e borda medial e permite exposição ampla, com maior mobilização muscular. O resumo também descreve Gauder, combinando duas incisões limitadas para padrões selecionados e cirurgiões experientes. Não são nomes diferentes para a mesma janela nem escolhas independentes do traço.\n\n**Leia “As outras vias”, na Biblioteca.** Relacione o que a janela expõe com o que o cirurgião precisa reconstruir; uma abordagem menor é útil quando oferece controle suficiente.\n\n**Por que esta questão foi criada.** O TECOC cobrou etapas e reconhecimento da Judet. O simulado compara uma alternativa limitada, exigindo saber sua estrutura exposta, intervalo e limitação de ampliação.",
+      "correta": "**C: borda lateral; infraespinal e redondo menor.** É a janela posterolateral descrita. A impossibilidade de ampliá-la deve entrar no planejamento do padrão, e não ser descoberta depois de uma exposição insuficiente.",
+      "incorretas": {
+        "A": "**Troca a região e o intervalo por estruturas mediais.** A borda medial não é o alvo que define Dupont-Evrard. A fonte o situa na borda lateral pelo plano entre infraespinal e redondo menor.",
+        "B": "**Espinha e acrômio remetem a outra necessidade de exposição.** A via posterossuperior é descrita para lesões desses elementos; não corresponde ao acesso lateral pelo intervalo perguntado.",
+        "D": "**Acerta a borda e troca o plano muscular.** O intervalo é infraespinal–redondo menor. Redondo menor–redondo maior não reproduz a janela do acesso, e a semelhança dos nomes não mantém a anatomia exposta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-b44038d8",
+          "vias-de-acesso-e-tecnica-de-fixacao-374d6312",
+          "vias-de-acesso-e-tecnica-de-fixacao-47b228f0",
+          "vias-de-acesso-e-tecnica-de-fixacao-154f03db",
+          "vias-de-acesso-e-tecnica-de-fixacao-05b1cd0b"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "9bf3fd9e9037554842e913c703e40e6428c77b0d2bbf8d969299c3b8f9d08831"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1339": {
+    "questaoSha256": "6f339503def8fabbe1d71180c13546a5fa558320bc713527713600e33db957c7",
+    "comentarioAnteriorSha256": "6470f404720be62631d505fc8c6bb9e6c1e278f94ace1e02cf467d4c15aa9388",
+    "comentario": {
+      "conceito": "**O capítulo descreve união em seis a oito semanas e, com movimento insatisfatório na sexta semana, exame e manipulação sob anestesia.** A recomendação não significa manipular cegamente qualquer ombro rígido pelo calendário. A avaliação precisa considerar estabilidade, consolidação e causa da limitação.\n\nO protocolo pós-operatório começa mobilização passiva precoce, mantém proteção e progride para ativos por volta de quatro a cinco semanas. Resistidos entram aproximadamente na oitava, com liberação mais ampla aos três meses conforme o quadro. Imagem e exame acompanham essa progressão.\n\nRigidez isolada não demonstra que a fixação falhou. Uma revisão de implantes tem indicação própria, como falha da construção ou redução inadequada; não é a resposta automática a uma amplitude menor que a desejada. O exame sob anestesia citado pelo autor faz parte da avaliação e do manejo dessa rigidez no contexto descrito.\n\nA escápula consolida rapidamente, mas padrões complexos e situações individuais não devem ser reduzidos a um prazo garantido. Se a evolução não corresponde ao esperado, é necessário esclarecer o problema, e não apenas antecipar força ou repetir cirurgia sem diagnóstico.\n\n**Leia “Pós-operatório e resultados”, na Biblioteca.** Diferencie tempo esperado de união, marcos de reabilitação e sinais que justificam investigação de uma complicação.\n\n**Por que esta questão foi criada.** O capítulo apresenta um protocolo de recuperação e atenção precoce à rigidez. O simulado distingue essa conduta da conclusão incorreta de que limitação de movimento exige nova fixação.",
+      "correta": "**A: seis a oito semanas; exame e manipulação sob anestesia.** É o par descrito pelo autor, sujeito à avaliação da estabilidade e da evolução. Movimento insatisfatório não equivale, por si, a falha do implante.",
+      "incorretas": {
+        "B": "**Acerta o tempo de consolidação e substitui a conduta por nova fixação.** A limitação de amplitude não prova perda de estabilidade. A fonte propõe avaliação e manejo da rigidez, não revisar automaticamente a osteossíntese.",
+        "C": "**Acerta a conduta citada e prolonga o tempo habitual para doze a dezesseis semanas.** A escápula costuma unir em seis a oito na descrição. Prazos de outro osso ou complicação não devem ser transferidos sem contexto.",
+        "D": "**Aumenta o tempo esperado e presume indicação de revisão da fixação.** Nenhum dos componentes corresponde ao protocolo. É necessário separar união, rigidez e falha mecânica, que podem ter causas e tratamentos diferentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Vias de acesso e técnica de fixação; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Vias de acesso e técnica de fixação",
+          "Complicações"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-tecnica-de-fixacao-086713d3",
+          "complicacoes-ab0f12b1"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "1bef36268dead0928282657a4e5c31b704e75a2d33e68304ea885bb47885559f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1343": {
+    "questaoSha256": "f976fa209c1458add5bf1210fa4fd820192d8fa58d986efcebf680ce6eea2a60",
+    "comentarioAnteriorSha256": "c29ba0650251f837b6d1145accc431a9df44c091f32a72d9f46d4f2af5f1406f",
+    "comentario": {
+      "conceito": "**Lesão vascular somada a déficit neurológico incompleto caracteriza Zelle 3.** A classificação parte da lesão musculoesquelética e acrescenta quais componentes neurovasculares estão comprometidos. O grau de completude neural também muda a categoria.\n\nNo 2A há lesão vascular; no 2B, déficit neurológico incompleto. O 3 reúne os dois. O 4 é definido por avulsão completa do plexo, e não apenas por ser “mais grave” de modo inespecífico. Assim, a presença de uma lesão vascular não permite pular automaticamente para o tipo 4.\n\nA dissociação pode ocorrer com pele íntegra e lesões internas extensas. A classificação organiza o quadro, mas não substitui a avaliação das ameaças imediatas ao paciente e ao membro. A extensão do plexo tem grande valor prognóstico e precisa ser estabelecida, sem presumir completude a partir da intensidade do trauma.\n\n**Leia “Zelle: a classificação que a prova cobra”, na Biblioteca.** Marque separadamente vascular, neurológico e completo/incompleto antes de escolher o tipo.\n\n**Por que esta questão foi criada.** O TEOT 2024 cobrou o 2B. O simulado acrescenta lesão vascular ao mesmo déficit para testar se o aluno reconhece a mudança para 3.",
+      "correta": "**C: tipo 3.** É a combinação de lesão musculoesquelética, lesão vascular e déficit neurológico incompleto. A completude neural exigida para o 4 não foi informada.",
+      "incorretas": {
+        "A": "**2A contém o componente vascular e omite o déficit neurológico incompleto adicional.** Uma categoria não é escolhida apenas porque um dos seus elementos aparece; o conjunto informado exige o tipo 3.",
+        "B": "**2B contém o déficit incompleto, mas não o componente vascular somado.** A questão é deliberadamente diferente do 2B isolado. Ao acrescentar a lesão vascular, o código muda para 3.",
+        "D": "**4 exige avulsão completa do plexo.** O enunciado diz incompleto. A gravidade global da dissociação não autoriza trocar essa informação por uma perda completa não demonstrada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Dissociação escapulotorácica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "dissociacao-escapulotoracica-8b999d6b",
+          "dissociacao-escapulotoracica-fb39e45c",
+          "dissociacao-escapulotoracica-2b65a722"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "c967c83a7101f4478c7104550765db6b7cca40bb97564b197df6d4e96f759235"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1345": {
+    "questaoSha256": "8c93d4164cbb0e15571dfd60abaa1f860047ff8a1dadaa43af7b1739fed4766f",
+    "comentarioAnteriorSha256": "e1fedc6f6b854d14e678184a74f26938d5600ec58022055c093a8864f4062c40",
+    "comentario": {
+      "conceito": "**Distração lateral violenta com o membro preso é o mecanismo típico, e a expressão é amputação interna do quarto superior.** O termo descreve a gravidade da desconexão interna; não significa necessariamente uma amputação aberta visível na chegada.\n\nSe o membro fica preso enquanto o corpo continua em movimento, a cintura pode falhar em tensão em vários níveis. O sistema osteoligamentar e os músculos escapuloaxiais se desconectam do tronco, com lesões dos grandes vasos, plexo e partes moles. A pele costuma permanecer intacta, ocultando parte da magnitude da lesão.\n\nA radiografia de tórax ajuda a reconhecer a posição anormal da escápula em relação à coluna, mas a prioridade é a avaliação neurovascular e sistêmica. A ausência de ferida aberta não permite tratar o caso como uma simples fratura escapular isolada.\n\nUm golpe posterior pode produzir fratura do corpo, porém não reproduz a distração descrita. Da mesma forma, chamar o quadro de luxação intratorácica muda o fenômeno anatômico: a questão trata de desconexão do quarto superior em relação ao esqueleto axial.\n\n**Leia “Dissociação escapulotorácica: o que é”, na Biblioteca.** Relacione tração, falha interna e lesão neurovascular, sem depender de uma ferida externa para reconhecer gravidade.\n\n**Por que esta questão foi criada.** O tema aparece em questões de imagem e classificação. Este simulado testa o mecanismo e o significado de uma expressão que resume a gravidade da lesão.",
+      "correta": "**D: distração lateral violenta e amputação interna do quarto superior.** O par descreve o mecanismo e a denominação do quadro. Pele preservada não significa conexões internas preservadas.",
+      "incorretas": {
+        "A": "**Troca o mecanismo de tensão por impacto direto e a denominação por uma luxação intratorácica.** A dissociação envolve desconexão osteoligamentar, muscular e neurovascular do conjunto, não apenas um deslocamento da escápula para dentro do tórax.",
+        "B": "**Acerta a expressão e erra o mecanismo típico.** O capítulo admite componente rotacional, mas destaca distração lateral intensa, frequentemente com membro preso. Um golpe posterior isolado não explica essa sequência específica.",
+        "C": "**Acerta a distração e muda a lesão descrita pelo nome.** Amputação interna ressalta que estruturas de ligação podem estar destruídas apesar da pele íntegra. Não é sinônimo de luxação escapulotorácica intratorácica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Dissociação escapulotorácica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Dissociação escapulotorácica"
+        ],
+        "blocos": [
+          "dissociacao-escapulotoracica-fb39e45c",
+          "dissociacao-escapulotoracica-317d48e0",
+          "dissociacao-escapulotoracica-2b65a722"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "680b7bf054776c984caa119abcdc4b376aad01a570003bcba7e400cc8e0c7565"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1347": {
+    "questaoSha256": "3c26b2ec51dc8eb18e8ef8996290292c68d089b8c57618ce22e10bd3af82a77f",
+    "comentarioAnteriorSha256": "53016c058e3876d8c37122e7e7129992af31e80fecd6b33ed8d3304d5e2b7079",
+    "comentario": {
+      "conceito": "**Lantry encontrou 4,2% de infecção e 2,4% de lesão do supraescapular na revisão cirúrgica citada.** A ordem é parte da pergunta. São taxas de uma revisão de séries operadas, não riscos individuais imutáveis para qualquer padrão e qualquer equipe.\n\nA revisão reuniu 243 fraturas em dezessete séries, com heterogeneidade de padrões e indicações. A infecção exige avaliar profundidade, hematoma, estabilidade e necessidade de desbridamento. A lesão do supraescapular pode estar relacionada ao trauma inicial, ao aprisionamento no colo ou ao acesso e à tração; o próprio resumo ressalta a dificuldade de separar origem traumática e cirúrgica.\n\nO número de 7,1% pertence à retirada de material na revisão, não à infecção. Já 1,9% aparece no capítulo como artrose pós-traumática, outro desfecho e outra comparação. Misturar os números produziria uma tabela aparentemente precisa, mas sem preservar o que cada porcentagem realmente mede.\n\n**Leia as revisões do tratamento e “Da cirurgia”, na Biblioteca.** Relacione cada taxa ao evento, à população e à limitação de atribuição causal.\n\n**Por que esta questão foi criada.** A segurança do acesso de Judet e o supraescapular aparecem em provas. O simulado acrescenta a frequência publicada e testa se o aluno distingue eventos, sem somar taxas ou transferi-las entre desfechos.",
+      "correta": "**D: 4,2% e 2,4%.** A primeira taxa é infecção; a segunda, lesão do supraescapular. A revisão informa ocorrência nas séries, com dificuldade de atribuir toda lesão neural exclusivamente à cirurgia.",
+      "incorretas": {
+        "A": "**Inverte as duas taxas.** O valor neural é 2,4%, enquanto infecção é 4,2%. A troca muda o evento medido, mesmo mantendo números que de fato aparecem na fonte.",
+        "B": "**Acerta a taxa neural e usa retirada de implante como se fosse infecção.** Sete vírgula um por cento é outro desfecho da revisão. Retirada pode ter motivos distintos e não deve ser contada automaticamente como infecção.",
+        "C": "**Usa a porcentagem de artrose e ainda desloca o valor de infecção para lesão neural.** A pergunta pede os eventos de Lantry em ordem definida. Uma taxa verdadeira de outra complicação não preenche essa lacuna."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia; Complicações; Vias de acesso e técnica de fixação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Complicações",
+          "Vias de acesso e técnica de fixação"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-84a31ef5",
+          "complicacoes-ab0f12b1",
+          "complicacoes-3f02ac41",
+          "vias-de-acesso-e-tecnica-de-fixacao-62715e0e"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "e7645b48aee8ea880f185628c376976850679cb07181a65d8365f42c20aa8229"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1348": {
+    "questaoSha256": "39306ab0c12b6453907c5a390480b4e500e6599d17dc6f3dae0180dfd8ec8ea0",
+    "comentarioAnteriorSha256": "dad03c602c41dd1db4f9509994320ee96b266f17a19783df2b85774f9321a400",
+    "comentario": {
+      "conceito": "**Na revisão de Zlowodski, glenoide foi predominantemente operada e corpo isolado, tratado conservadoramente.** O dado descreve o que as séries fizeram; não demonstra, por si, que todo paciente de um grupo precise da mesma estratégia.\n\nA revisão reuniu 520 fraturas em 22 séries. Cerca de 80% das glenoidais foram operadas, com 82% de bons/excelentes resultados. Nas fraturas isoladas do corpo, aproximadamente 80% seguiram sem cirurgia, com 86% de bons/excelentes. Esses percentuais usam grupos diferentes e não devem ser comparados como se fossem um ensaio randomizado entre operações equivalentes.\n\nO padrão ajuda a compreender a prática: a superfície glenoidal exige preservar congruência e estabilidade, enquanto muitas fraturas do corpo mantêm desvio aceitável e consolidam sem reconstrução. O corpo muito desviado, no paciente apropriado, ainda pode ter indicação cirúrgica; a glenoide pequena, estável e pouco desviada pode ser conservadora.\n\n**Leia as revisões em “Quando não operar e como conduzir”, na Biblioteca.** Diferencie predomínio de tratamento numa amostra de indicação universal e de prova de superioridade.\n\n**Por que esta questão foi criada.** O capítulo contrapõe a tradição de operar fraturas articulares à seleção mais recente de extra-articulares desviadas. O simulado testa o padrão observado sem apagar as exceções clínicas.",
+      "correta": "**B: cirúrgica para glenoide e conservadora para corpo isolado.** São os predomínios nas séries revisadas. Não equivalem a uma regra sem exceções nem autorizam inferir superioridade causal pela simples comparação das porcentagens.",
+      "incorretas": {
+        "A": "**Inverte os dois predomínios.** A revisão informa operação na maior parte das glenoidais e conservador na maior parte dos corpos isolados. A estratégia depende do padrão e não deve ser transferida de um grupo para outro.",
+        "C": "**Mantém o predomínio glenoidal e atribui cirurgia à maioria dos corpos isolados.** Nesse segundo grupo, o conservador foi predominante. As indicações modernas para corpo desviado não significam que todo corpo ou a maioria dessa amostra tenha sido operada.",
+        "D": "**Mantém o predomínio conservador do corpo e apaga o cirúrgico da glenoide.** A fonte registra cerca de 80% de glenoidais operadas. Casos articulares pouco desviados podem ser conservadores, mas não foram a maioria do grupo revisto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Medir o desvio e indicar a cirurgia; Fraturas da glenoide."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Medir o desvio e indicar a cirurgia",
+          "Fraturas da glenoide"
+        ],
+        "blocos": [
+          "medir-o-desvio-e-indicar-a-cirurgia-04f17de0",
+          "medir-o-desvio-e-indicar-a-cirurgia-f995e48c",
+          "medir-o-desvio-e-indicar-a-cirurgia-db7733a7",
+          "fraturas-da-glenoide-d94ae394"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "8e509ca44c6cfef384df003df3356e9069fbe5530b332ed833335fe677181cba"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

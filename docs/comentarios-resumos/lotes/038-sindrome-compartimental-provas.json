@@ -1,0 +1,427 @@
+{
+  "trauma-0150": {
+    "questaoSha256": "5546ac041986f9d062777217570ed6e635ae79f9285e13455b5f5201c3afdf6f",
+    "comentarioAnteriorSha256": "0e2f01110dd589255060568aa5470812cc08d7221cb758df38e9f3dab5bfb5bc",
+    "comentario": {
+      "conceito": "**Delta P estima a margem entre a pressão que perfunde o tecido e a pressão dentro do compartimento.** A fórmula usada pelo capítulo é **pressão arterial diastólica menos pressão intracompartimental**. Quando a pressão do compartimento sobe ou a diastólica cai, a diferença diminui e a perfusão fica ameaçada.\n\nUm exemplo apenas didático: diastólica de 70 mmHg e pressão de compartimento de 45 mmHg dão delta P de 25 mmHg. Não se trata de uma pressão absoluta de 25 no compartimento. A mesma pressão tecidual pode ter consequências distintas em um paciente hipertenso e em outro hipotenso, razão pela qual a pressão arterial precisa ser documentada.\n\nO protocolo de Edimburgo descrito indica fasciotomia com delta P abaixo de 30 mmHg por mais de duas horas, acompanhando a tendência. Esse critério de monitorização não obriga esperar duas horas diante de sinais clínicos claros e múltiplos, para os quais o algoritmo orienta descompressão urgente. Também não equivale a operar qualquer leitura isolada de pressão absoluta acima de 30.\n\n**Na Biblioteca, leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”.** Separe fórmula, tendência e cenário clínico. A ordem da subtração explica por que piorar a perfusão diminui, em vez de aumentar, o delta.",
+      "correta": "**D: subtrair a pressão intracompartimental da diastólica.** A redação equivale a diastólica − compartimento. O resultado acompanha a margem de perfusão: quanto menor, maior a preocupação no contexto adequado.\n\nA medida precisa ser interpretada ao longo do tempo e junto da situação clínica, sem confundir delta com pressão absoluta.",
+      "incorretas": {
+        "A": "**Usa sistólica e inverte a subtração.** O coeficiente descrito não é compartimento menos sistólica. Essa troca perde tanto a referência arterial escolhida quanto o sentido em que a margem diminui quando a pressão tecidual sobe.",
+        "B": "**Mantém o sentido arterial menos compartimento, mas troca diastólica por sistólica.** A sistólica produz outra diferença e não pode receber automaticamente o mesmo limiar de 30 mmHg do delta apresentado. Fórmula e valor de corte precisam pertencer ao mesmo método.",
+        "C": "**Usa a diastólica correta, porém subtraída da pressão do compartimento.** É a ordem inversa da fórmula. No exemplo didático, 45 − 70 daria −25, enquanto o delta de perfusão é 70 − 45 = 25 mmHg; o sinal não é um detalhe dispensável."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "medida-da-pressao-e-o-delta-p-d654f7b7",
+          "medida-da-pressao-e-o-delta-p-1312eae8",
+          "medida-da-pressao-e-o-delta-p-f94386d5",
+          "o-tratamento-preferido-dos-autores-930f2a36",
+          "o-tratamento-preferido-dos-autores-cb26ab73"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "be4cebcef1d15e8ca01dbbfbf2f9dad42120d320bb2c332bc1a78862d1c82047"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0195": {
+    "questaoSha256": "d8689728678662a3e77765dff1f26b98cf2e85acefcbdb8b60a958932433a087",
+    "comentarioAnteriorSha256": "490541bec9f1d16fd8a6f10624769dbd37a3a07996407578d8fbc34735f0b6e2",
+    "comentario": {
+      "conceito": "**As fibras tipo I dependem do metabolismo oxidativo e são as mais vulneráveis à falta de oxigênio na comparação apresentada.** São vermelhas e de contração lenta. O resumo as contrapõe às fibras tipo II, brancas e rápidas, cujo metabolismo é predominantemente anaeróbio e que toleram melhor a privação de oxigênio nesse contexto.\n\nA pressão elevada reduz o fluxo microvascular e estabelece um ciclo de isquemia, aumento de permeabilidade e edema. Se o volume cresce dentro de um continente fascial limitado, a pressão piora ainda mais. A vulnerabilidade das fibras depende da intensidade e duração desse processo, não apenas de um episódio de dor.\n\nO compartimento anterior da perna é descrito como rico em tipo I, enquanto o gastrocnêmio tem maior participação de tipo II; essa diferença pode ajudar a explicar a vulnerabilidade particular do anterior. O resumo também alerta que a necrose é maior no centro muscular e que a avaliação apenas externa pode falhar.\n\n**Leia “O músculo é o tecido mais vulnerável”, na Biblioteca.** Relacione necessidade de oxigênio à queda do fluxo, em vez de decorar o numeral. A comparação feita pela fonte é I versus II; ela não fornece uma graduação de resistência entre IIa e IIb.",
+      "correta": "**A: tipo I.** É o grupo de fibras oxidativas lentas que o capítulo relaciona à maior suscetibilidade isquêmica. A dependência de oxigênio explica a vulnerabilidade quando o fluxo capilar é comprometido.\n\nEssa relação ajuda a entender um padrão de risco, sem tornar todo músculo uma população uniforme de fibras.",
+      "incorretas": {
+        "B": "**IIa não é o grupo tipo I solicitado.** O resumo faz a comparação global entre I, oxidativo e mais vulnerável, e II, predominantemente anaeróbio. Não fornece uma hierarquia detalhada entre subtipos II, portanto não se deve inventá-la para justificar a escolha.",
+        "C": "**IIb também pertence ao grupo II, que a fonte contrapõe ao tipo I.** A resposta não depende de escolher qual subtipo rápido é mais ou menos resistente, mas de reconhecer o grupo oxidativo lento descrito no enunciado. A maior dependência de oxigênio foi atribuída ao I nessa comparação.",
+        "D": "**III não é o grupo que o capítulo identifica como fibras musculares oxidativas lentas.** A descrição correspondente é tipo I, em contraste com II. Acrescentar outro numeral sem a relação metabólica não reproduz a classificação e o mecanismo efetivamente consultados."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Por que a pressão mata o músculo."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Por que a pressão mata o músculo"
+        ],
+        "blocos": [
+          "por-que-a-pressao-mata-o-musculo-1a07d757",
+          "por-que-a-pressao-mata-o-musculo-7d5655e4",
+          "por-que-a-pressao-mata-o-musculo-23e1059b"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "cc873c7a8589b451397ea4ccd58b28e227d7a374adba289556a9c5dead84a8a1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0257": {
+    "questaoSha256": "12a68609a0eb0fa0ce9dbfc81dec24426f7f22e08bf5b2d1e805315cff2994a8",
+    "comentarioAnteriorSha256": "bd5536b4fb76896797081789b4d4e297193154ef3d4ca6c74c1383d3da3b2760",
+    "comentario": {
+      "conceito": "**Dor desproporcional, dor ao estiramento passivo e parestesia são sinais que devem levantar suspeita, mesmo com pulso presente.** A pressão capaz de comprometer a microcirculação é menor que a necessária para interromper o pulso arterial. Por isso, não se deve esperar perda de pulso para reconhecer o risco de isquemia muscular.\n\nO trio da alternativa correta não significa que todos os sinais sejam precoces ou sensíveis. A dor costuma aparecer primeiro no paciente alerta; parestesia e, sobretudo, paralisia chegam tarde e têm baixa sensibilidade. Ausência desses achados não exclui a síndrome, especialmente em um paciente inconsciente ou com exame pouco confiável.\n\nO resumo apresenta limitações da clínica isolada e recomenda monitorização contínua nos pacientes de risco. Já um quadro com sinais claros e múltiplos pede fasciotomia urgente, sem transformar a medição em requisito que atrase o tratamento. A interpretação depende do estágio e da confiabilidade do exame.\n\n**Na Biblioteca, leia “Diagnóstico clínico: por que os sinais chegam tarde”.** Use os sinais para suspeitar e acompanhar, mas não faça da ausência de pulso uma condição necessária para agir.",
+      "correta": "**B: dor ao estiramento, dor desproporcional e parestesia.** O conjunto reúne manifestações descritas sem exigir interrupção arterial. A parestesia merece atenção, embora possa ser tardia e também ocorrer em lesão nervosa associada.\n\nA escolha de B não significa que um paciente sem o trio esteja protegido; os sinais têm limitações importantes.",
+      "incorretas": {
+        "A": "**As duas manifestações dolorosas são pertinentes, mas a ausência de pulso foi acrescentada como parte necessária do conjunto.** Pulso pode persistir em síndrome confirmada. Esperar sua perda confunde comprometimento microvascular com oclusão de grande vaso e pode atrasar o diagnóstico.",
+        "C": "**Dor desproporcional e parestesia são relevantes, mas a ausência de pulso não deve ser exigida.** A alternativa ainda deixa de incluir a dor ao estiramento, um achado descrito na suspeita. Se o pulso estiver ausente, também é necessário considerar lesão vascular, sem usar isso para definir a apresentação habitual.",
+        "D": "**Parestesia e dor ao estiramento pertencem à avaliação, mas a ausência de pulso torna o conjunto inadequado como referência de reconhecimento.** A dor desproporcional pode ocorrer com perfusão arterial palpável. O erro é esperar um sinal vascular tardio ou de outra lesão para admitir sofrimento compartimental."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Diagnóstico clínico: por que os sinais chegam tarde; Por que a pressão mata o músculo; Medida da pressão e o delta P; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Diagnóstico clínico: por que os sinais chegam tarde",
+          "Por que a pressão mata o músculo",
+          "Medida da pressão e o delta P",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+          "por-que-a-pressao-mata-o-musculo-2f99dc5f",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-a352bc84",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-e09ed6e2",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
+          "medida-da-pressao-e-o-delta-p-491de05b",
+          "o-tratamento-preferido-dos-autores-930f2a36"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "80dc98ccecaca2502df4fa8f253791baa34c66c8a208cd3db7bd0a5a9f9d030e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0668": {
+    "questaoSha256": "fbd45148dd411500297bb87a0cda1db7b276266c524329f2b409b009542a9e8d",
+    "comentarioAnteriorSha256": "910d7d308e219b8b5384ae19769a3ea4219e5ca8e09d9634f8f04b53cd5af6c4",
+    "comentario": {
+      "conceito": "**A síndrome compartimental do antebraço ameaça a perfusão muscular e exige descompressão adequada de todos os espaços que permanecem sob pressão.** O resumo de fraturas do antebraço informa ocorrência em cerca de **3%** das fraturas, com predominância em homens jovens, e recomenda em geral liberar os quatro compartimentos: volar superficial, volar profundo, dorsal e coxim móvel.\n\nO capítulo específico de síndrome compartimental organiza o antebraço em três grupos, volar, dorsal e coxim móvel, e descreve que a liberação volar costuma bastar, abrindo o dorsal se sua pressão continuar elevada. A contagem difere porque o volar pode ser subdividido; a decisão técnica também depende da suficiência da descompressão. Não se deve esconder essa diferença como se os dois textos dessem uma única ordem sem ressalvas.\n\nNa via volar, o capítulo de fraturas descreve abertura do lacerto e do túnel do carpo de rotina. Por isso, a alternativa D também tem apoio na fonte e não deve ser ensinada como falsa para defender C. O gabarito seleciona a regra geral de descompressão completa; a anatomia e a pressão residual orientam como alcançá-la.\n\n**Leia as seções de síndrome compartimental nos resumos dos capítulos 17 e 42, na Biblioteca.** Compare divisão anatômica e extensão da liberação. O princípio comum é não deixar tecido ameaçado sem descompressão, e não apenas contar incisões ou decorar um número.",
+      "correta": "**C é o gabarito oficial e corresponde à recomendação geral do capítulo 42.** A descompressão deve ser suficiente para não manter um compartimento com pressão elevada. O capítulo 17, porém, descreve começar pelo volar e complementar se necessário.\n\nEssa resposta não torna D falsa nem dispensa verificar se os demais espaços foram adequadamente descomprimidos.",
+      "incorretas": {
+        "A": "**Dez por cento não é a incidência descrita para as fraturas do antebraço no resumo.** O valor apresentado é cerca de 3%. O denominador importa: frequência entre tipos de fratura e participação do antebraço em todas as síndromes são medidas diferentes e não podem ser trocadas.",
+        "B": "**O predomínio é masculino, particularmente em jovens, não feminino.** O capítulo geral relaciona juventude a maior volume muscular em um continente de tamanho limitado. Isso é uma associação de risco e não motivo para ignorar a síndrome em mulheres.",
+        "D": "**A afirmação tem apoio no capítulo de fraturas do antebraço, que descreve abertura do lacerto e descompressão rotineira do túnel do carpo.** Portanto, não é correto negá-la em bloco. A banca preferiu C como regra geral, mas D também representa parte da técnica descrita, tornando o item discutível quanto à exclusividade da resposta."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Quem tem síndrome compartimental.",
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi. Seção: Síndrome compartimental do antebraço."
+      ],
+      "alerta": "Gabarito C preservado. O capítulo 42 recomenda em geral liberar os quatro compartimentos e também descreve abertura do lacerto e túnel do carpo, dando apoio a D. O capítulo 17 descreve liberação volar inicialmente, com dorsal se a pressão continuar alta. Não ensinar D como falsa nem reduzir essa diferença a uma contagem: nenhum compartimento com pressão elevada pode permanecer sem descompressão."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia",
+          "Quem tem síndrome compartimental"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-6968671a",
+          "fasciotomia-90ee7ca5",
+          "quem-tem-sindrome-compartimental-4b3a771a",
+          "quem-tem-sindrome-compartimental-5ca80c99"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "3888386fcea4c667e69f4f5213e8779840b00efcd636172de54bb20194205edc"
+      },
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Síndrome compartimental do antebraço"
+        ],
+        "blocos": [
+          "sindrome-compartimental-do-antebraco-b4aee409",
+          "sindrome-compartimental-do-antebraco-408a137e",
+          "sindrome-compartimental-do-antebraco-d130faa9",
+          "sindrome-compartimental-do-antebraco-9723cec1"
+        ],
+        "sha256": "fbd6942a3596a196d7c2fb4bfce5c3d77cccf6838802b0bf71fef2770fd1dc1a",
+        "trechosSha256": "482a63b7745b0178153ff656890de32e2fbcaf61b460076af10aa6cfbd73a857"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0705": {
+    "questaoSha256": "ad4ff6e3b2f341d70c5b91c510943f6c029c55e80a24a17da35c0fc98a74dc9b",
+    "comentarioAnteriorSha256": "bfdae0b2a21947f7ff2f9278160d488e753c2ff6a580a134631bd5945c3ca1fc",
+    "comentario": {
+      "conceito": "**A fasciotomia trata uma emergência de perfusão e deve preceder a estabilização da fratura.** A ordem evita que o tempo gasto na osteossíntese prolongue a isquemia muscular. Depois da descompressão, estabilizar o osso protege as partes moles e facilita seu cuidado.\n\nO procedimento deve ser completo, com incisão cutânea ao longo do compartimento, abertura fascial e inspeção de toda a musculatura. Uma pequena abertura subcutânea não permite verificar extensão da necrose e pode deixar pele ou fáscia restringindo o volume. O músculo inviável precisa ser desbridado, pois deixá-lo aumenta o risco de infecção.\n\nAs incisões ficam abertas. Fechar imediatamente reconstitui um envoltório capaz de manter a pressão alta. O resumo orienta revisão em cerca de 48 horas, confirmando viabilidade antes de fechar sem tensão ou cobrir. A fasciotomia não termina quando a fáscia é cortada: inspeção, desbridamento e plano para a ferida fazem parte do tratamento.\n\n**Na Biblioteca, leia “Fasciotomia”, “A ferida: aberta, revisão em 48 horas” e “A fratura associada”.** A sequência explica por que uma operação aparentemente menor ou um fechamento precoce podem comprometer o objetivo da descompressão.",
+      "correta": "**D: fasciotomia antes da estabilização.** A prioridade é interromper a isquemia e não atrasar a descompressão com a fixação. A fratura continua precisando ser estabilizada depois, de modo compatível com as condições locais.\n\nA ordem não dispensa nenhum dos dois tratamentos; define a prioridade temporal.",
+      "incorretas": {
+        "A": "**A via subcutânea limitada não permite a liberação e a inspeção completas exigidas.** A própria pele pode restringir o compartimento. O resumo rejeita fasciotomia limitada ou subcutânea e orienta exposição suficiente para avaliar e tratar os músculos.",
+        "B": "**Necrose muscular exige desbridamento.** Apenas abrir a fáscia não torna viável um tecido já morto, e mantê-lo favorece infecção. A extensão da viabilidade também precisa ser reavaliada, motivo para a revisão programada.",
+        "C": "**Fechamento primário pode recriar pressão e comprometer a descompressão.** O edema não desaparece automaticamente ao fim da operação. A fonte mantém a ferida aberta e programa revisão, fechando ou cobrindo somente quando a musculatura é viável e as condições permitem."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: A fratura associada; Fasciotomia; O tratamento preferido dos autores."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "A fratura associada",
+          "Fasciotomia",
+          "O tratamento preferido dos autores"
+        ],
+        "blocos": [
+          "a-fratura-associada-6507c0fa",
+          "fasciotomia-4de1412f",
+          "fasciotomia-7a3f42f7",
+          "fasciotomia-0f8a1c3f",
+          "o-tratamento-preferido-dos-autores-5d2471ca"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "511c20da4ca9a0e96b8ac1d58985d72cc7c1fbc3a1a03a129670b7c1cc28f89c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1092": {
+    "questaoSha256": "6a76c1950ac166086a4849ec5ecbc89e202025ce78fabb2d719b474ce81ecee2",
+    "comentarioAnteriorSha256": "5b78e890303471a2d9ea4f71e8eae9f4ed4cd94b30fa46aaf170fbd6359b476f",
+    "comentario": {
+      "conceito": "**Na distribuição geral dos casos, a fratura da diáfise da tíbia é a associação mais frequente entre as alternativas.** A tabela do resumo atribui a ela cerca de 36% dos casos de síndrome compartimental; fraturas como um todo participam de aproximadamente 69%. Esses percentuais descrevem a origem dos casos, não a probabilidade de cada fratura individual evoluir com a síndrome.\n\nEssa distinção evita uma confusão importante: o capítulo também apresenta séries com taxa proporcional alta no planalto tibial. Uma fratura pode ter risco individual elevado e ser menos frequente no conjunto, enquanto uma lesão comum responde por mais casos. O enunciado desta prova corresponde à associação geral destacada na tabela.\n\nHomens jovens são o grupo de maior risco. O volume muscular relativamente grande dentro de um espaço fixo deixa menos margem para edema. Entretanto, a síndrome pode surgir em outras idades, regiões e sem fratura; pulso palpável também não afasta o diagnóstico.\n\n**Leia “Quem tem síndrome compartimental”, na Biblioteca, comparando a tabela de lesões com a seção de planalto tibial.** Sempre identifique o denominador antes de transformar um percentual em regra de risco.",
+      "correta": "**B: fratura diafisária da tíbia.** É a lesão que domina a distribuição geral descrita e a resposta esperada entre as opções. O reconhecimento deve levar à vigilância apropriada, sobretudo no jovem de risco.\n\nIsso não significa que todas as síndromes ocorram na tíbia ou que os outros sítios possam ser ignorados.",
+      "incorretas": {
+        "A": "**Úmero distal não é a associação que predomina na distribuição apresentada.** O membro superior também pode desenvolver síndrome, mas a fonte destaca a diáfise tibial como principal origem dos casos. Não se deve atribuir ao úmero distal um percentual de outra localização umeral só para comparar as opções.",
+        "C": "**O antebraço diafisário é uma associação reconhecida, porém não supera a tíbia na distribuição geral.** A tabela agrupa fraturas da diáfise do antebraço, sem separar ali rádio isolado como se tivesse uma taxa própria. O fato de a região exigir atenção não a torna a resposta de maior frequência.",
+        "D": "**Fratura diafisária do fêmur pode cursar com síndrome da coxa, mas participa menos dos casos que a diáfise tibial.** A fonte atribui cerca de 3% dos casos a essa fratura na tabela. Esse percentual não deve ser confundido com incidência de síndrome entre todas as fraturas femorais."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental; Diagnóstico clínico: por que os sinais chegam tarde."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Quem tem síndrome compartimental",
+          "Diagnóstico clínico: por que os sinais chegam tarde"
+        ],
+        "blocos": [
+          "quem-tem-sindrome-compartimental-4b3a771a",
+          "quem-tem-sindrome-compartimental-5ca80c99",
+          "quem-tem-sindrome-compartimental-c9a33825",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+          "quem-tem-sindrome-compartimental-b7787f07"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "6c37eb68b868c56a1b2ccaa2d8b478ac479c9e4499b152a941ff57c220461711"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0901": {
+    "questaoSha256": "adcc9b69fe1d7a80881dc4e6d4fbde7716079c0f567e152ab6afb4f1da7e1bcd",
+    "comentarioAnteriorSha256": "eca98cd577e9fa2a9cc996ffc04de079e52329160100e0128c3e13aaf8d4b6ce",
+    "comentario": {
+      "conceito": "**Na fratura do rádio distal, o compartimento volar do antebraço é o padrão destacado.** Ele contém flexores do punho e dos dedos e pronadores, além de estruturas nervosas importantes. A pressão elevada nesses tecidos pode produzir dor à extensão passiva do punho e dos dedos, movimento que estira a musculatura ameaçada.\n\nO capítulo conta volar, dorsal e coxim móvel como três grupos do antebraço. A divisão do volar em planos não deve fazer perder a necessidade de avaliar os flexores profundos. Na liberação, a incisão volar costuma alcançar a palma para abrir o túnel do carpo; se a pressão dorsal persistir alta, a descompressão é complementada.\n\nTenar e hipotenar são compartimentos da **mão**, não sinônimos de volar do antebraço. Uma mão também pode ter síndrome e precisar de avaliação própria, mas isso não substitui o padrão associado à fratura radial distal da pergunta.\n\n**Na Biblioteca, leia “Braço, antebraço e mão” e “Antebraço e mão” da fasciotomia.** Relacione o grupo muscular ao estiramento doloroso e à via de descompressão, em vez de localizar a síndrome apenas pela proximidade da fratura com o punho.",
+      "correta": "**A: volar do antebraço.** É o compartimento associado ao padrão citado e o principal ponto inicial de avaliação e liberação no resumo. A dor ao estiramento dos flexores é uma pista coerente com sua anatomia.\n\nAvaliar o volar não significa dispensar os demais compartimentos se os achados sugerirem pressão persistente neles.",
+      "incorretas": {
+        "B": "**O dorsal pode ter síndrome, mas não é o padrão comum solicitado.** Contém os extensores e se relaciona à dor à flexão passiva. O resumo descreve síndrome dorsal isolada como rara e orienta complementar a liberação se a pressão continuar elevada, em vez de deslocar para ele a associação inicial da fratura distal.",
+        "C": "**Tenar pertence à mão e contém músculos intrínsecos do polegar.** Não corresponde ao grupo de flexores e pronadores do antebraço. Sua avaliação pode ser necessária em uma síndrome da mão, mas a alternativa troca a região anatômica da associação perguntada.",
+        "D": "**Hipotenar é outro compartimento da mão, relacionado ao dedo mínimo.** Não é a forma de nomear o volar do antebraço nem o padrão destacado após fratura radial distal. A proximidade regional não permite tratar compartimentos da mão e do antebraço como um único espaço."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Medida da pressão e o delta P."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia",
+          "Medida da pressão e o delta P"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-6968671a",
+          "os-compartimentos-de-cada-regiao-231bd2af",
+          "fasciotomia-90ee7ca5",
+          "medida-da-pressao-e-o-delta-p-13e06142",
+          "os-compartimentos-de-cada-regiao-49b1c86f"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "a5bf943e14187166f601049a412d9f6d509745638673b4f851ac64dd97f27b2c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0962": {
+    "questaoSha256": "571baca9131e560f8d819f9e1f73a29987019ac9b81752bba51ff97deb6356a7",
+    "comentarioAnteriorSha256": "a1cbd345f0dbf669b1d343e55c48d424d33b26d77336ba4387a826d72cd835fe",
+    "comentario": {
+      "conceito": "**Forte suspeita clínica de síndrome compartimental aguda exige descompressão dos compartimentos acometidos, sem uma espera programada que prolongue a isquemia.** A pressão dentro de um espaço fascial limitado reduz a perfusão; com atraso, o músculo pode necrosar e deixar déficit permanente. O tratamento eficaz é a fasciotomia completa.\n\nIsso não torna a medição de pressão inútil. O resumo a recomenda continuamente nos pacientes de risco, especialmente quando o exame é pouco confiável ou os sinais são escassos. O algoritmo, porém, separa esse cenário do paciente com sinais clínicos claros e múltiplos, no qual a cirurgia é urgente. Um exame complementar não deve virar barreira para uma indicação clínica estabelecida.\n\nMedidas iniciais incluem abrir e afastar gesso e algodão, soltar curativos e corrigir hipotensão. Elevar o membro pode diminuir o gradiente de perfusão quando a pressão tecidual está alta; acompanhar pulso não garante que o músculo esteja recebendo fluxo adequado. Analgesia também não trata a causa da pressão.\n\n**Na Biblioteca, leia “Fasciotomia” e o algoritmo do tratamento preferido.** A questão não contrapõe clínica e pressão como métodos rivais; ela pergunta o que fazer quando o quadro já gera forte suspeita de uma emergência isquêmica.",
+      "correta": "**A: fasciotomia dos compartimentos acometidos.** É a conduta destinada a restaurar perfusão e evitar progressão da lesão. A liberação deve ser completa, com inspeção e tratamento do tecido inviável.\n\nMonitorização ajuda na incerteza; não justifica adiar uma descompressão clinicamente indicada.",
+      "incorretas": {
+        "B": "**Medir pressão tem papel importante quando faltam sinais claros ou o exame é inconfiável.** Não é, porém, uma etapa obrigatória que deva atrasar a cirurgia na forte suspeita clínica descrita. A alternativa troca o cenário de vigilância diagnóstica pelo de decisão urgente.",
+        "C": "**Elevação pode reduzir a margem de perfusão, e pulso presente não exclui síndrome.** Assim, o par proposto não garante proteção do músculo e pode retardar a intervenção. O tratamento precisa reduzir a pressão do compartimento, não apenas observar a circulação de grande vaso.",
+        "D": "**Analgesia não descomprime o espaço e esperar doze horas permite progressão da isquemia.** O resumo relaciona o atraso ao fracasso e às sequelas, sem apoiar esse período de observação diante de forte suspeita. Alívio da dor não deve ser confundido com resolução da ameaça tecidual."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia; O tratamento preferido dos autores; Por que a pressão mata o músculo; Diagnóstico clínico: por que os sinais chegam tarde."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Fasciotomia",
+          "O tratamento preferido dos autores",
+          "Por que a pressão mata o músculo",
+          "Diagnóstico clínico: por que os sinais chegam tarde"
+        ],
+        "blocos": [
+          "fasciotomia-5f4d677f",
+          "fasciotomia-4de1412f",
+          "o-tratamento-preferido-dos-autores-930f2a36",
+          "o-tratamento-preferido-dos-autores-355d35ed",
+          "por-que-a-pressao-mata-o-musculo-7d5655e4",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "78091af69f55e886fb38685c2ab831d0ba7e3985f4e328fdcb005ada2b5650fa"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1346": {
+    "questaoSha256": "3309a1d6f9d6b7f5bf26227c80e3ed7c3f4b90a591fac1ec665909f61abfc308",
+    "comentarioAnteriorSha256": "c29a0698428298eed5d012af73129fb732603b978f2d59b69f736ca97c72ae7e",
+    "comentario": {
+      "conceito": "**A mão tem dez compartimentos na descrição anatômica usada pelo resumo.** São um tenar, um hipotenar, um adutor do polegar, quatro interósseos dorsais e três interósseos palmares. A soma é 1 + 1 + 1 + 4 + 3 = **10**.\n\n| Grupo | Quantidade |\n|---|---|\n| Tenar | 1 |\n| Hipotenar | 1 |\n| Adutor do polegar | 1 |\n| Interósseos dorsais | 4 |\n| Interósseos palmares | 3 |\n\nA pergunta é quantos devem ser **avaliados para possível liberação**, não uma ordem de abrir automaticamente todos por dez incisões. O resumo descreve duas incisões dorsais para alcançar os interósseos e liberação de tenar e hipotenar quando há suspeita ou pressão elevada. Uma via pode alcançar mais de um espaço.\n\nO adutor tem compartimento próprio e não deve ser incluído no tenar apenas por agir no polegar. Da mesma forma, “interósseo” não é um único compartimento: há grupos palmares e dorsais. **Leia “Braço, antebraço e mão”, na Biblioteca, e compare a contagem anatômica com as vias de fasciotomia.** Isso separa número de espaços, número de incisões e indicação de descompressão.",
+      "correta": "**D: dez.** A contagem inclui os sete interósseos e os três compartimentos tenar, hipotenar e adutor. Avaliar todos evita esquecer espaços que podem permanecer sob pressão.\n\nO número não determina dez incisões nem dispensa a avaliação clínica e pressórica de cada região.",
+      "incorretas": {
+        "A": "**Quatro não contempla a mão inteira; é apenas a quantidade de interósseos dorsais.** Faltariam os três palmares e os compartimentos tenar, hipotenar e adutor. A alternativa confunde um subgrupo anatômico com o conjunto a avaliar.",
+        "B": "**Cinco não corresponde à soma dos grupos descritos.** Para chegar à contagem completa, é preciso manter separados os sete interósseos e os três espaços restantes, sem fundir músculos de funções próximas. O capítulo não oferece uma classificação de cinco compartimentos para esta pergunta.",
+        "C": "**Sete corresponde ao total de interósseos, mas deixa três espaços de fora.** Tenar, hipotenar e adutor do polegar precisam entrar na avaliação. O adutor não desaparece da contagem por se relacionar ao mesmo dedo dos músculos tenares."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Os compartimentos de cada região",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "os-compartimentos-de-cada-regiao-231bd2af",
+          "fasciotomia-90ee7ca5"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "5e785797d6a0ca227fdc9c53138a85106b6736d1dd6e29333a757b9840c8e6a2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1469": {
+    "questaoSha256": "fed928c327c145eb79fb615c7d26dc25588512867a42cdbece67c998b0232e55",
+    "comentarioAnteriorSha256": "d135e9b8429b7a53890ef34d4b5cbbfecbad6ab5eeaa2b32549353f7d8d12923",
+    "comentario": {
+      "conceito": "**Dor desproporcional é um sintoma típico e sugestivo no paciente alerta, mas não é um teste isolado capaz de excluir síndrome compartimental.** A pressão elevada compromete a perfusão muscular e pode gerar dor de repouso e ao estiramento passivo. O resumo ressalva a baixa sensibilidade dos achados clínicos, especialmente quando o paciente não consegue relatar sintomas de forma confiável.\n\nParestesia e paralisia devem preocupar, mas são tardias; esperar déficit motor para agir pode significar aguardar lesão estabelecida. O pulso também costuma estar presente, porque a ameaça começa na microcirculação antes de exigir oclusão de grande vaso.\n\nHá dois cenários distintos no algoritmo: paciente de risco com poucos sinais, que precisa de monitorização contínua e avaliação do delta P, e paciente com sinais claros e múltiplos, que precisa de fasciotomia urgente. Não se exige exame complementar em todos os casos como pré-condição para cirurgia.\n\nA operação deve deixar as incisões abertas, com revisão em cerca de 48 horas e fechamento posterior em condições apropriadas. **Leia “Diagnóstico clínico” e “A ferida: aberta, revisão em 48 horas”, na Biblioteca.** A aula une reconhecimento, decisão e proteção da descompressão, sem transformar melhora aparente da ferida em autorização para fechá-la sob tensão.",
+      "correta": "**A: dor desproporcional é típica e sugestiva.** É frequentemente o primeiro sintoma no paciente acordado. O valor do achado está em levantar suspeita e guiar avaliação, sem ser usado sozinho para excluir a síndrome quando ausente.\n\nO contexto e a confiabilidade do exame determinam a necessidade de monitorização ou intervenção urgente.",
+      "incorretas": {
+        "B": "**Fechar as incisões no mesmo tempo pode manter ou recriar pressão.** O edema não desaparece automaticamente após abrir a fáscia. A fonte mantém a ferida aberta e programa revisão, fechando depois somente com músculo viável e condições adequadas.",
+        "C": "**Paralisia é sinal tardio de síndrome estabelecida e mau prognóstico, não uma referência de reconhecimento inicial.** Esperá-la pode deixar a isquemia avançar até lesão irreversível. Sua presença exige atenção, mas sua ausência não garante segurança.",
+        "D": "**Exames complementares não são condição obrigatória para toda indicação de fasciotomia.** A monitorização é valiosa na dúvida e no paciente de risco sem exame confiável; sinais claros e múltiplos exigem descompressão urgente. A alternativa generaliza uma etapa diagnóstica que não deve atrasar uma cirurgia já indicada clinicamente."
+      },
+      "conferido": false,
+      "referencias": [
+        "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Diagnóstico clínico: por que os sinais chegam tarde; O tratamento preferido dos autores; Fasciotomia."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-17-sindrome-compartimental",
+        "titulo": "Síndrome compartimental aguda",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
+        "secoes": [
+          "Diagnóstico clínico: por que os sinais chegam tarde",
+          "O tratamento preferido dos autores",
+          "Fasciotomia"
+        ],
+        "blocos": [
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-a352bc84",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-a181af0b",
+          "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
+          "o-tratamento-preferido-dos-autores-930f2a36",
+          "o-tratamento-preferido-dos-autores-355d35ed",
+          "fasciotomia-7a3f42f7"
+        ],
+        "sha256": "7ed47b1d4238be8b0a535032b49804023173b25cebbd4ff6ceb3f00dd9bafb8a",
+        "trechosSha256": "4e3f93f8da0782917766ff2b40779a9ace7ff2864a47f2a685c9e363e3b5eba1"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

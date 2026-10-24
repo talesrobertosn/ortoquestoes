@@ -1,6 +1,6 @@
 import { useEffect, useId, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
-import { Medalha } from './Medalha'
+import { Medalha, classeArte } from './Medalha'
 import { Icone } from './Icone'
 import { JanelaCentral } from './JanelaCentral'
 import { EMBLEMAS_COM_IMAGEM } from '../dados/imagensEmblemas'
@@ -59,7 +59,7 @@ export function Fogueira({ dias, tamanho = 20, comTexto = false }: { dias: numbe
   const rotulo = `${dias} dias seguidos`
   const desenho = <span className="fogueira" title={comTexto ? rotulo : undefined}>
     {EMBLEMAS_COM_IMAGEM.has('fogueira')
-      ? <img src={recurso('emblemas/fogueira.png')} width={tamanho} height={tamanho} alt="" className="medalha--arte" draggable={false} />
+      ? <img src={recurso('emblemas/fogueira.png')} width={tamanho} height={tamanho} alt="" className={'medalha--arte' + classeArte(tamanho)} draggable={false} />
       : <Icone nome="fogo" tamanho={tamanho} />}
     {comTexto ? <span>{rotulo}</span> : <span className="fogueira__numero">{dias}</span>}
   </span>

@@ -12,12 +12,21 @@ const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-te-'))
 const arquivo = join(pasta, 't.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/componentes/TextoEditorial'; export { semEco } from './src/componentes/ecoAlternativa'; export { createElement } from 'react'; export { renderToStaticMarkup } from 'react-dom/server'`, resolveDir: process.cwd(), loader: 'ts' },
+    stdin: { contents: `export * from './src/componentes/TextoEditorial'; export { FonteComentario } from './src/componentes/FonteComentario'; export { semEco } from './src/componentes/ecoAlternativa'; export { createElement } from 'react'; export { renderToStaticMarkup } from 'react-dom/server'`, resolveDir: process.cwd(), loader: 'ts' },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', jsx: 'automatic', loader: { '.css': 'empty' }, external: ['react', 'react-dom', 'react/*', 'react-dom/*'],
     define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
   })
   const m = await import(pathToFileURL(arquivo))
   const html = (texto) => m.renderToStaticMarkup(m.createElement(m.TextoEditorial, { texto }))
+
+  // A recomendação de resumo não classifica comentários antigos como revisados.
+  assert.equal(m.renderToStaticMarkup(m.createElement(m.FonteComentario, {})), '')
+  const origemResumo = m.renderToStaticMarkup(m.createElement(m.FonteComentario, { base: {
+    tipo: 'resumo', fontes: [{ resumo: 'capitulo', titulo: 'Título', livro: 'Livro', edicao: '10ª', capitulo: '45', secoes: ['Seção'], blocos: ['b 1'] }]
+  }}))
+  assert.match(origemResumo, /Comentário baseado em resumo/)
+  assert.match(origemResumo, /Leia o resumo: Título/)
+  assert.match(origemResumo, /resumos\/capitulo\?bloco=b%201/)
 
   // Itálico, com negrito por perto, sem pegar multiplicação nem asterisco solto.
   assert.match(html('Causada pelo *Mycobacterium tuberculosis*.'), /<em>Mycobacterium tuberculosis<\/em>/)

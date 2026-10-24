@@ -43,7 +43,7 @@ Padrão típico da fratura do fêmur distal e forças musculares deformantes.
 
 !questoes central=trauma-0262,trauma-0295,trauma-0700 relacionadas=trauma-1138,trauma-0850 treino=trauma-1631
 conceito: Quadríceps, posteriores da coxa e adutores encurtam e levam ao varo; o gastrocnêmio leva o fragmento distal para trás, com ápice posterior.
-como: Duas provas TEOT/TARO sem ano cobraram cada metade (os três grupos que encurtam e dão varo; o gastrocnêmio e o ápice posterior), e o CET-PR juntou varo e angulação posterior do fragmento distal. O TARO 2011 perguntou quem mais sofre a fratura (jovens homens e idosas).
+como: Duas provas de Ortopedia sem ano cobraram cada metade (os três grupos que encurtam e dão varo; o gastrocnêmio e o ápice posterior), e o CET-PR juntou varo e angulação posterior do fragmento distal. O TARO 2011 perguntou quem mais sofre a fratura (jovens homens e idosas).
 armadilha: Glúteo médio entre os músculos que dão varo: ele não cruza o foco do fêmur distal.
 armadilha: Valgo como desvio da fratura fresca: o valgo é o erro mais comum da placa lateral mal aplicada, não o desvio muscular.
 alerta: O TARO 2011 (trauma-0850) deu como gabarito jovens do sexo masculino e idosos do sexo feminino. O capítulo 58 descreve a distribuição bimodal por energia (jovem em alta energia, idoso osteoporótico em queda), sem números por sexo; a resposta da banca é compatível, mas o sexo não vem do livro.

@@ -346,3 +346,7 @@ Feed **Caderneta de topografia** (figura com ângulos ou parâmetros de nomes pa
 
 ## Conversa do grupo R+: aprovada em 19/10/2026
 - **Conversa do grupo R+ (feed, 6 slides):** print de conversa dos residentes no plantão: a imagem do caso, o enunciado oficial encaminhado, a enquete com as alternativas, o zoom com as pistas, o veredito e a chamada com a prévia de link do Cronograma. [Modelo](conversa-de-grupo/modelo.html) e [guia](CONVERSA-DO-GRUPO.md).
+
+## Busca: aprovada em 22/10/2026
+
+Feed (4 slides) e stories (2 telas) em forma de buscador com a marca Orto Questões: o sintoma digitado, a questão como resultado, as alternativas em "As pessoas também perguntam" e a resposta no "Trecho em destaque". [Guia e modelo executável](BUSCA.md).

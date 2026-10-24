@@ -1,0 +1,383 @@
+{
+  "pediatria-0960": {
+    "questaoSha256": "a37a43fe6087b806de6ad27983a40fd6a24eb06ef9254360710aa1f5e1c45bc8",
+    "comentarioAnteriorSha256": "21292a2abb1a89210bdf362bb59831e95ef8ea9104c18a9a8cbb3e298e22251e",
+    "comentario": {
+      "conceito": "**Ápice dorsal corresponde ao mecanismo de pronação, e a redução habitual é em supinação.** O galho verde mantém continuidade parcial do osso; sua angulação pode resultar de torção, como um tubo que se dobra ao ser rodado. Corrigir só o ângulo visível pode deixar o componente rotacional sem tratamento.\n\nO raciocínio tem duas etapas: identificar a força que produziu o padrão e desfazê-la. Para o ápice volar, os dois sentidos se invertem: mecanismo de supinação e redução em pronação. O atalho do resumo é rodar a palma em direção ao ápice para lembrar a manobra de redução.\n\nA cortical preservada contribui para estabilidade. Os autores não completam de rotina o galho verde, embora existam escolas que defendam completar e a literatura tenha limitações. O objetivo é uma redução satisfatória e estável, não transformar obrigatoriamente uma fratura incompleta em completa.\n\n**Leia “A regra do ápice” e “Completar ou não completar”, na Biblioteca.** Separe mecanismo, redução e manutenção da cortical ao construir o tratamento.\n\n**Por que esta questão foi criada.** O TARO já cobrou tanto a força causadora quanto a posição de redução do galho verde. O simulado reúne as duas para testar se o aluno distingue causar a deformidade de corrigi-la.",
+      "correta": "**B: pronação e supinação.** A primeira é o mecanismo relacionado ao ápice dorsal; a segunda desfaz a deformidade rotacional. A resposta muda se o enunciado trocar dorsal por volar ou falar do fragmento em vez do ápice.",
+      "incorretas": {
+        "A": "**Acerta o mecanismo, mas repete sua direção como tratamento.** Pronar produz o padrão dorsal descrito; reduzir costuma exigir o movimento oposto. A repetição do nome da força não corresponde à manobra derrotatória.",
+        "C": "**Descreve o par do ápice volar.** Supinação como mecanismo e pronação como redução são coerentes entre si, porém para a outra direção de ápice. A alternativa só seria a combinação esperada se o enunciado pedisse volar.",
+        "D": "**Acerta a redução do dorsal e erra seu mecanismo.** Supinação é a direção corretiva deste padrão, enquanto a força inicial associada é pronação. A opção não diferencia as duas etapas."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Galho verde: a angulação é uma rotação."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Galho verde: a angulação é uma rotação"
+        ],
+        "blocos": [
+          "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+          "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc",
+          "galho-verde-a-angulacao-e-uma-rotacao-46f20ad0"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "2519c79230967a0da5fa7dea6bd1e5b507e4781db40f5dc7621f7c46ab405e24"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0961": {
+    "questaoSha256": "6fc67cdf6d09fce0964b572f94fac5462f21ad5675e0ae1fa292d46081e7f3e7",
+    "comentarioAnteriorSha256": "6d0b98f71fce2d686151ccb84eab4a11f7095ae0cea112e7183989bb70cff211",
+    "comentario": {
+      "conceito": "**A tuberosidade bicipital aponta para medial em supinação completa e para lateral em pronação completa no AP.** Ela é uma referência de rotação do fragmento proximal do rádio, que pode girar de forma diferente do segmento distal após uma fratura.\n\nEm supinação, rádio e ulna ficam quase paralelos; em pronação, o rádio cruza a ulna. A tuberosidade acompanha essa mudança de orientação. Por isso uma radiografia não deve ser interpretada como se a aparência de cada cortical fosse independente da posição do antebraço.\n\nO resumo atribui a Evans o uso da tuberosidade e a Rang a relação com a eminência tenar. Essas referências ajudam a avaliar rotação, mas a medida radiográfica tem grande margem de erro. Quando uma consolidação viciosa rotacional exige quantificação, o capítulo descreve tomografia comparativa dos dois antebraços, considerando a exposição à radiação.\n\n**Leia “A rotação pela tuberosidade bicipital”, na Biblioteca.** Compare AP em pronação e supinação antes de interpretar a referência óssea isolada.\n\n**Por que esta questão foi criada.** O TARO 2025 cobrou marcos de rotação do rádio. Este simulado concentra-se na mudança medial/lateral da referência proximal, fundamento necessário para compreender aquelas relações.",
+      "correta": "**C: medial e lateral.** Na ordem pedida, supinação completa deixa a tuberosidade medial; pronação completa a orienta lateralmente. O par acompanha a rotação do rádio em relação à ulna.",
+      "incorretas": {
+        "A": "**Reconhece a orientação na pronação e a repete na supinação.** A tuberosidade não permanece lateral nas duas posições extremas. Sua mudança de lado é justamente o que permite usá-la como referência rotacional.",
+        "B": "**Inverte as duas orientações.** Lateral corresponde à pronação e medial à supinação na descrição do resumo. A ordem das posições no enunciado precisa ser mantida para não transformar uma associação conhecida em resposta invertida.",
+        "D": "**Acerta a supinação e deixa de acompanhar a rotação para pronação.** Em pronação completa, o rádio cruza a ulna e a tuberosidade aponta lateralmente. Fixá-la sempre medial elimina a informação que o marco anatômico fornece."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: O exame: rotação, nervos e lesões associadas."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "O exame: rotação, nervos e lesões associadas"
+        ],
+        "blocos": [
+          "o-exame-rotacao-nervos-e-lesoes-associadas-f257c585",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-84d5b7b1",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-aca507f4",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-3388e1b8",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-48408c84"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "7de0f1864fc962ee8c189c9e5c39dcd1893ebf15ea9024104049fc54e99827c5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0962": {
+    "questaoSha256": "6823f366889bd253dc47a0fef8660d77805faafbb982737b5663191652c0c039",
+    "comentarioAnteriorSha256": "fe7f6bff5216a15c5a237ae90abafbbeaaeb4731ecb2a65e63887b53bdffeeb8",
+    "comentario": {
+      "conceito": "**O padrão clínico mais comum é ulna plasticamente deformada com fratura típica do rádio.** A deformidade plástica mantém a continuidade cortical visível, mas a força ultrapassou o limite elástico e deixou microfraturas distribuídas. O osso não retorna espontaneamente ao eixo apenas porque não há uma linha de fratura.\n\nA ulna curvada pode impedir que o rádio volte ao comprimento e alinhamento. Isso transforma o exame dos dois ossos em uma necessidade, mesmo quando só um apresenta um traço evidente. Também se deve conferir a cabeça do rádio, pois uma ulna encurvada pode acompanhar Monteggia não reconhecida.\n\nO resumo mostra que os dois ossos podem encurvar e que outras combinações existem. A pergunta, entretanto, solicita o padrão mais comum, e não qualquer apresentação possível. Essa distinção evita eleger uma lesão associada grave como resposta só porque ela merece ser procurada.\n\n**Leia “Deformidade plástica” e os avisos sobre a Monteggia perdida, na Biblioteca.** Avalie curvatura, outro osso e articulações no mesmo exame.\n\n**Por que esta questão foi criada.** O TARO 2013 perguntou o osso mais frequente. O simulado amplia o mesmo ponto para o padrão combinado, útil para não tratar uma fratura radial e ignorar a ulna encurvada.",
+      "correta": "**D: ulna encurvada com fratura típica do rádio.** É o cenário mais frequente descrito. A curvatura ulnar é parte da lesão e pode precisar de correção para permitir reduzir adequadamente o conjunto.",
+      "incorretas": {
+        "A": "**Encurvamento dos dois ossos sem traço é uma apresentação possível, mas não o padrão mais comum solicitado.** O resumo ilustra essa possibilidade e, separadamente, identifica ulna plástica com rádio fraturado como cenário típico. Ilustração de um caso não define predominância.",
+        "B": "**Troca os papéis mais frequentes dos dois ossos.** O rádio pode sofrer deformidade plástica, porém o padrão destacado é ulna encurvada e rádio com fratura típica. A questão é de frequência, sem declarar o inverso impossível.",
+        "C": "**Ulna encurvada com cabeça radial luxada exige procurar Monteggia.** É uma associação importante que pode passar despercebida, mas não substitui o padrão mais comum de ulna plástica com rádio fraturado. Gravidade de uma lesão associada e frequência da apresentação são conceitos diferentes."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Deformidade plástica: o osso que encurva."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Deformidade plástica: o osso que encurva"
+        ],
+        "blocos": [
+          "deformidade-plastica-o-osso-que-encurva-605a3501",
+          "deformidade-plastica-o-osso-que-encurva-db19d238",
+          "deformidade-plastica-o-osso-que-encurva-ad9170a0",
+          "deformidade-plastica-o-osso-que-encurva-a934ae7c"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "7e60b516b809f6814f44bd7ac2b04ec3e795cec638e754b9c707dec92f00bfe7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0963": {
+    "questaoSha256": "1f962c3520f8e0583bc53806d08f00459ff3c44dc68fe678bfc90283477e0553",
+    "comentarioAnteriorSha256": "3210d73704a11d74d776a8a3e1a9b907633024146459959dd3e57e76f034daa6",
+    "comentario": {
+      "conceito": "**Vorlat e De Boeck recomendam maior esforço de redução acima de 10 graus em crianças com mais de seis anos.** O enunciado especifica esses autores porque existem critérios históricos distintos. O resumo relata remodelação incompleta em três de onze crianças acompanhadas, que tinham sete a dez anos na lesão.\n\nA deformidade plástica remodela menos do que outras fraturas e pode deixar limitação funcional ou dificultar reduzir o outro osso. Por isso ausência de traço não significa que basta aguardar crescimento. Idade, magnitude e repercussão clínica precisam ser consideradas juntas.\n\nO critério não é uma obrigação de operar. A técnica descrita é redução fechada sob anestesia ou sedação profunda, com força gradual sobre fulcro e gesso moldado. O objetivo é melhorar uma deformidade clinicamente significativa, sem confundir indicar redução com indicar implante.\n\n**Leia “Quando e como corrigir”, na Biblioteca.** Confira qual autor foi perguntado antes de memorizar um número retirado de outra edição ou prova.\n\n**Por que esta questão foi criada.** O TARO 2012 usou outro par de idade e ângulo. Este simulado explicita os autores e fixa o critério que o resumo da nona edição efetivamente apresenta.",
+      "correta": "**C: mais de 10 graus e mais de seis anos.** É o par atribuído a Vorlat e De Boeck no resumo. A expressão “clinicamente significativa” faz parte da avaliação, em vez de reduzir toda conduta a um ângulo isolado.",
+      "incorretas": {
+        "A": "**Acerta 10 graus e antecipa a idade para quatro anos.** Não é o recorte dos autores citados. Crianças menores também podem exigir tratamento por repercussão funcional, mas essa possibilidade não altera o critério específico pedido.",
+        "B": "**Repete o par 20 graus/quatro anos associado a outra cobrança, não a recomendação aqui nomeada.** A indicação no resumo é mais de 10 acima de seis. Identificar a fonte do critério é necessário para não misturar números entre provas.",
+        "D": "**Acerta a idade e aumenta o ângulo para 20 graus.** Os autores recomendam maior esforço de redução a partir de deformidade clinicamente significativa acima de 10 graus. Esperar 20 não reproduz essa orientação."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Deformidade plástica: o osso que encurva."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Deformidade plástica: o osso que encurva"
+        ],
+        "blocos": [
+          "deformidade-plastica-o-osso-que-encurva-eb524111",
+          "deformidade-plastica-o-osso-que-encurva-9cede9b5",
+          "deformidade-plastica-o-osso-que-encurva-9cb06823"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "647f80ffa86781682a34c09c862b53aedfafd6630df3b8fd0a9d6d096db41944"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0964": {
+    "questaoSha256": "5be3f5dbecc6967c493f83faab632615ef263bc10d06257b87a43a0c7d973103",
+    "comentarioAnteriorSha256": "a6ade9e234c50e9614f5adca2c759f816d5ade1d0026e8b154581d6a79746dc5",
+    "comentario": {
+      "conceito": "**Fratura isolada da ulna exige conferir a cabeça do rádio para excluir Monteggia.** Um golpe direto pode causar a fratura do cassetete sem lesão articular associada, mas essa possibilidade não permite declarar o padrão isolado antes de olhar o cotovelo.\n\nO resumo alerta para lesões de um osso só porque a articulação radioulnar proximal ou distal pode estar comprometida. Ulna fraturada com cabeça radial luxada corresponde à preocupação de Monteggia; rádio isolado exige atenção à radioulnar distal, na pesquisa de Galeazzi. O osso que tem o traço e a articulação associada precisam ser relacionados corretamente.\n\nRadiografias do antebraço devem incluir punho e cotovelo, com incidências dedicadas quando há suspeita. Não basta a diáfise da ulna estar bem mostrada se a cabeça radial ficou fora da imagem ou não foi avaliada. Na criança, até uma ulna apenas encurvada pode esconder a lesão proximal.\n\n**Leia “Fratura de um osso só: cassetete, Blount e a Monteggia perdida”, na Biblioteca.** Antes de chamar uma fratura de isolada, procure a lesão associada que mudaria sua interpretação.\n\n**Por que esta questão foi criada.** O risco de Monteggia perdida transforma uma verificação simples em ponto de segurança. A questão testa o par lesão/articulação a pesquisar, em vez de apenas repetir a definição da fratura do cassetete.",
+      "correta": "**A: Monteggia; cabeça do rádio.** É a associação que precisa ser excluída quando a ulna está fraturada. Conferir a cabeça radial evita perder uma fratura-luxação sob o rótulo de lesão diafisária isolada.",
+      "incorretas": {
+        "B": "**Nomeia Monteggia, mas desloca a verificação para a radioulnar distal.** O punho deve ser incluído no exame, porém a associação proximal definidora envolve a cabeça do rádio. Uma articulação distal normal não exclui a luxação proximal.",
+        "C": "**Escolhe a cabeça radial, mas a associa a Galeazzi.** No resumo, a preocupação com Galeazzi acompanha rádio isolado e radioulnar distal. Ulna e cabeça radial constituem o par de Monteggia que este caso manda investigar.",
+        "D": "**Descreve a pesquisa típica de outro padrão: rádio isolado com possível lesão distal.** Esse cuidado é válido, mas não responde à ulna isolada do enunciado. Aplicar a associação errada pode deixar o cotovelo sem a avaliação necessária."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida; O exame: rotação, nervos e lesões associadas; Deformidade plástica: o osso que encurva."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida",
+          "O exame: rotação, nervos e lesões associadas",
+          "Deformidade plástica: o osso que encurva"
+        ],
+        "blocos": [
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-c0d1d07e",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-eb4381de",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-6f7d54a3",
+          "deformidade-plastica-o-osso-que-encurva-a934ae7c"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "da8d3d2bb8716339d2a381bd86226b9b034659d02806cdc2b3044debf452356d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0966": {
+    "questaoSha256": "07609681ca18b3c9182c61c13e381207ce1380c20b132d9ff4efbba0fd1a4b0a",
+    "comentarioAnteriorSha256": "8940d33bf242926fb85e772cc9c454e7078dfef99bc7b602f255969ac4280cc5",
+    "comentario": {
+      "conceito": "**A refratura ocorre em média seis meses depois e passa mais frequentemente pelo foco original.** O intervalo médio não significa que só esse mês seja perigoso: o resumo orienta avisar que o risco pode persistir por seis a doze meses.\n\nA diáfise do antebraço consolida mais lentamente que metáfise e fise distais. No galho verde, a cortical encurvada pode produzir pouco calo e dar uma impressão de cura antes de recuperar resistência. Isso explica por que o problema não fica restrito ao período inicial no gesso.\n\nO trajeto depende do estágio de consolidação e pode envolver foco e osso íntegro. Ainda assim, a maioria das refraturas apresentadas atravessa o próprio foco, em vez de a junção entre calo e osso normal. Acompanhamento e proteção devem considerar a consolidação das quatro corticais e a lucência residual.\n\n**Leia “Refratura”, na Biblioteca.** Relacione tempo médio, distribuição real e recuperação mecânica para orientar retorno às atividades.\n\n**Por que esta questão foi criada.** O TARO 2007 cruzou intervalo e localização de refratura. O simulado usa os dados da nona edição e impede transportar automaticamente uma média de três meses de uma referência anterior.",
+      "correta": "**D: seis meses; foco da fratura original.** São os dois dados pedidos. Média temporal e localização predominante descrevem o conjunto citado, sem limitar todas as refraturas a uma data ou trajeto únicos.",
+      "incorretas": {
+        "A": "**Troca a média para três meses e o local para a junção calo/osso.** O resumo informa seis meses e maior frequência no foco original. Um trajeto possível em certa fase de consolidação não substitui o local predominante.",
+        "B": "**Acerta o foco original e antecipa a média para três meses.** A persistência de risco depois da aparente cura é parte central da orientação. Uma refratura precoce pode ocorrer, mas não muda a média de seis meses apresentada.",
+        "C": "**Acerta seis meses e troca o trajeto predominante.** Embora o estágio de consolidação altere o caminho da fratura, a maioria passa pelo foco original. A alternativa usa o tempo correto junto de uma localização que não é a principal descrita."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Refratura: o antebraço é o campeão."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Refratura: o antebraço é o campeão"
+        ],
+        "blocos": [
+          "refratura-o-antebraco-e-o-campeao-5cf304b8",
+          "refratura-o-antebraco-e-o-campeao-acb681d5",
+          "refratura-o-antebraco-e-o-campeao-915ee7ad",
+          "refratura-o-antebraco-e-o-campeao-140eec0f"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "24697bd2a7f040a416ffebd74dda0d3cd08e852fbc1f06e6889894ced031cd36"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0968": {
+    "questaoSha256": "79e3366f58627c82f906cfa35b7d77d8d40a1b92d5c1244dfa0876cc1b97f978",
+    "comentarioAnteriorSha256": "02a8a5d83c9c40fa051cdb62c10e5ea545b6ec1765dffcde9407eb297cdb4a2e",
+    "comentario": {
+      "conceito": "**A técnica de Metaizeau usa hastes elásticas pré-moldadas de 1,5 a 2,5 mm; seus criadores passaram a retirá-las em torno de um ano após refraturas com retirada mais precoce.** O enunciado pergunta a evolução histórica dessa técnica, não uma data obrigatória para qualquer implante em toda criança.\n\nA haste se apoia nas metáfises e no ponto da curva, compondo fixação em três pontos. O ápice da curva deve ficar no foco; no rádio, preservar o arco radial é parte do objetivo mecânico. Ao contrário de uma haste que busca preencher o canal, a elasticidade e a moldagem são fundamentais aqui.\n\nUma haste excessivamente grossa pode encarcerar, distrair o foco e reduzir a formação de calo. Portanto, não se deve interpretar maior diâmetro como estabilidade automaticamente melhor. A retirada também depende de consolidação confirmada e do risco de refratura, não apenas do desconforto com o material.\n\n**Leia “A haste elástica de Metaizeau”, na Biblioteca.** Compare diâmetro, curva, apoio e tempo de consolidação como partes de uma mesma estratégia.\n\n**Por que esta questão foi criada.** A banca já cobrou números da haste flexível no fêmur. Este simulado usa os valores e a história específicos do antebraço, evitando extrapolar diâmetros entre ossos.",
+      "correta": "**B: 1,5 a 2,5 mm; um ano.** O resumo descreve a faixa de diâmetro da técnica e a mudança do quarto mês para cerca de um ano depois de refraturas. Não é uma recomendação de retirar sem conferir consolidação.",
+      "incorretas": {
+        "A": "**Acerta o diâmetro e mantém o tempo inicial de quatro meses.** O enunciado pede o momento adotado depois das refraturas. A mudança histórica para aproximadamente um ano é justamente a distinção que a alternativa omite.",
+        "C": "**Aumenta a faixa para 3 a 4 mm e mantém a retirada precoce.** Isso erra os dois dados solicitados. O resumo também alerta que uma haste grande demais pode atrapalhar consolidação por encarceramento e distração, em vez de simplesmente aumentar segurança.",
+        "D": "**Acerta cerca de um ano, mas troca o diâmetro.** A técnica descrita usa 1,5 a 2,5 mm e não busca preencher o canal. Uma data correta de retirada não torna adequada uma faixa de implante diferente da apresentada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Tratamento cirúrgico: indicações e escolha do implante."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Tratamento cirúrgico: indicações e escolha do implante"
+        ],
+        "blocos": [
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-564a0b9d",
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-0ed72011",
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-b1766383",
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-20bbe6da",
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-e7e85f41"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "8dfa8666415fdf91bd961904928ad6abae1755d2863f288e51e445cdd5c1f89f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0969": {
+    "questaoSha256": "ec020abaec2129fa7668967c4a37fb48d79887854951de6f8eeb083f72cfec5f",
+    "comentarioAnteriorSha256": "528aa46cac32db5b821f49916c172dcf3997b286a3a144ed162fcb6139360981",
+    "comentario": {
+      "conceito": "**Após cerca de 20 a 30 minutos sem conseguir atravessar o foco com a haste, os autores recomendam redução aberta limitada.** O objetivo é evitar que repetidas tentativas fechadas acrescentem agressão, edema e risco de síndrome compartimental.\n\nA falha de progressão pode decorrer de uma ponta que abriu um sulco ou de dificuldade de alinhar as extremidades. O resumo descreve recuar, rodar e tentar novamente, ou usar um fio como calçadeira. Essas manobras têm lugar, mas não autorizam insistência indefinida quando a haste não cruza.\n\nO número é um marco técnico de conversão, não o tempo de tolerância à isquemia. Se surgirem sinais preocupantes, a avaliação compartimental não espera o relógio. Na criança, aumento de analgesia, ansiedade e agitação merecem atenção; uma redução aparentemente aceitável não exclui uma complicação em evolução.\n\n**Leia “Entradas e técnica dos autores” e “Síndrome compartimental”, na Biblioteca.** Distinguir tentativa útil de repetição traumática é parte da segurança da fixação.\n\n**Por que esta questão foi criada.** O resumo apresenta um limite concreto para interromper tentativas fechadas. É um ponto com chance de cobrança porque liga uma decisão operatória a uma complicação grave e prevenível.",
+      "correta": "**B: 20 a 30 minutos.** É a referência do quadro de armadilhas para converter quando a haste não passa após várias tentativas. A redução aberta limitada busca resolver o obstáculo, em vez de perpetuar manipulação agressiva.",
+      "incorretas": {
+        "A": "**Cinco a dez minutos não é o marco de conversão descrito.** Esse intervalo aparece no capítulo para tração de certas fraturas completas durante redução, o que é outro procedimento. Não se deve transferi-lo automaticamente para o limite de tentativas de passagem da haste.",
+        "C": "**Quarenta e cinco a sessenta minutos prolongam a insistência além da referência apresentada.** O risco não é apenas consumir tempo: sucessivas passagens podem aumentar trauma local e edema. A técnica limitada aberta existe para resolver essa situação antes de maior agressão.",
+        "D": "**Noventa a cento e vinte minutos não correspondem à orientação e mantêm tentativas por tempo excessivo.** A persistência fechada não é um objetivo em si. Dificuldade de passagem deve levar à mudança de estratégia, sem aguardar uma síndrome instalada."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Tratamento cirúrgico: indicações e escolha do implante; Complicações."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Tratamento cirúrgico: indicações e escolha do implante",
+          "Complicações"
+        ],
+        "blocos": [
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-ab0ddab0",
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-5b3152bc",
+          "complicacoes-719f1387"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "fed7f927fa2ff6e926cd543d40585a17f97506f07fae31127a5009bfffe100e4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0970": {
+    "questaoSha256": "1e6f11e1b3cf9a5f751cd5bfb164214f0f2ffa856afe233233de9b1d2ddd04ef",
+    "comentarioAnteriorSha256": "3b76e9bc6c01f34108412b75ab6c784afbe7639c8febfea56899b6b82bb67623",
+    "comentario": {
+      "conceito": "**A perda da redução lidera as complicações de curto prazo; rigidez é o principal problema de longo prazo na diáfise do antebraço.** Separar esses tempos evita escolher uma complicação por sua gravidade ou por ser característica do segmento.\n\nNo início, o resumo apresenta perda de redução em 10% a 25%, concentrada sobretudo nas duas primeiras semanas. Gesso sem molde adequado, redução inicial insuficiente e fratura proximal aumentam a preocupação. Radiografias e reação a um pequeno desvio permitem corrigir a trajetória antes de consolidar em posição ruim.\n\nTardiamente, a perda de pronação é quase duas vezes mais frequente que a de supinação. A rigidez pode exceder o que o desvio ósseo explica, inclusive com radiografia aparentemente normal, por alterações de partes moles. Portanto, alinhamento e função não são medidas idênticas de resultado.\n\n**Leia “Perda da redução e rigidez”, na Biblioteca.** Relacione seguimento inicial ao alinhamento e avaliação tardia ao arco funcional, sem usar frequência de uma fase para responder sobre outra.\n\n**Por que esta questão foi criada.** A banca já perguntou complicação mais frequente do antebraço. O simulado delimita diáfise e momento do seguimento, evitando misturar o desfecho tardio com o evento inicial.",
+      "correta": "**A: perda da redução e rigidez.** São os problemas mais comuns nos dois horizontes apresentados. O primeiro exige vigilância do alinhamento; o segundo, avaliação do movimento, que pode estar comprometido além do que a radiografia sugere.",
+      "incorretas": {
+        "B": "**Acerta a perda inicial, mas troca a principal complicação tardia por refratura.** O antebraço é o local de maior risco de refratura infantil, porém sua taxa de 4% a 8% não a torna o problema tardio mais comum nesta descrição. Ser característico não é ser o mais frequente.",
+        "C": "**Troca a complicação inicial por refratura e a tardia por consolidação viciosa.** O resumo aponta perda de redução no curto prazo e rigidez no longo. Consolidação fora dos critérios pode influenciar função, mas também pode remodelar e não equivale automaticamente a rigidez importante.",
+        "D": "**Reconhece rigidez tardia, mas escolhe síndrome compartimental como o evento inicial mais comum.** A síndrome é devastadora e precisa de atenção, porém é rara na fratura fechada das séries citadas. Gravidade não a coloca à frente da perda de redução em frequência."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Complicações."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-09a0c468",
+          "complicacoes-12025b94",
+          "complicacoes-5233b60e",
+          "complicacoes-a922449d"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "5f20356f8edc39ac159d586a377d5175438823c5c6a403ee82911ae1e45c722f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0971": {
+    "questaoSha256": "2cb7d50ce3c2267da0d308ed2aae03c4e9f6df442a3d236ef2696d76b23355de",
+    "comentarioAnteriorSha256": "439d26780099aca20b51133369bb2be5bf6b513b348ab1f8beaabb44ba6dd202",
+    "comentario": {
+      "conceito": "**Na criança, a sinostose pós-traumática é mais frequentemente diafisária e, no pós-operatório, associa-se sobretudo à placa.** A ponte entre rádio e ulna impede a rotação que depende do movimento relativo dos dois ossos. O resumo a classifica predominantemente como tipo II de Vince e Miller.\n\nFatores associados incluem alta energia, fraturas do colo radial, cirurgia e uso de uma incisão para os dois ossos. A sinostose pós-operatória aparece quase exclusivamente com placa nas séries sintetizadas, mas isso não significa que toda placa cause a complicação nem que uma haste elimine todo risco.\n\nSeparar as incisões evita comunicação dos hematomas e faz parte da prevenção. Se a ponte já se formou, o tratamento considera maturação, posição em que o antebraço ficou preso e função. O resumo discute ressecção após seis a doze meses e não estabelece papel definido de anti-inflamatório ou radioterapia na criança.\n\n**Leia “Sinostose radioulnar”, na Biblioteca.** Compare localização, fatores de risco e prevenção, mantendo separados os dados pediátricos e os de adulto.\n\n**Por que esta questão foi criada.** O TARO 2012 cobrou a associação com trauma de alta energia. Este simulado acrescenta a localização e o implante predominantes nas séries pediátricas do capítulo, sem extrapolar a frequência adulta.",
+      "correta": "**D: diafisária e placa.** É a combinação informada para o padrão pediátrico. A classificação tipo II corresponde à ponte na diáfise; a associação com placa é especialmente importante na sinostose pós-operatória.",
+      "incorretas": {
+        "A": "**Troca localização e implante.** A maioria pediátrica é diafisária, e a associação pós-operatória destacada é com placa. Lesões proximais e hastes fazem parte de outros contextos de risco, mas não formam o par predominante pedido.",
+        "B": "**Acerta a placa e desloca a localização para proximal.** O resumo distingue a sinostose pediátrica predominantemente diafisária de outros padrões. Conhecer o implante associado não autoriza trazer automaticamente a localização de uma pergunta sobre adulto ou cotovelo.",
+        "C": "**Acerta a diáfise e troca placa por haste elástica.** A fixação intramedular tem complicações próprias, mas a sinostose pós-operatória descrita se associa quase exclusivamente à placa. Nenhuma técnica dispensa preservar o espaço interósseo e reduzir a agressão desnecessária."
+      },
+      "conferido": false,
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, a partir de Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Complicações; Tratamento cirúrgico: indicações e escolha do implante."
+      ]
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Complicações",
+          "Tratamento cirúrgico: indicações e escolha do implante"
+        ],
+        "blocos": [
+          "complicacoes-20f74861",
+          "tratamento-cirurgico-indicacoes-e-escolha-do-imp-523f2667"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "ef9535c050728b348948828258f60a6eb501c4058f9321a17da4eb2272b905dd"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

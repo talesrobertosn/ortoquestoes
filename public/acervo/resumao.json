@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-10-15",
-  "total": 604,
+  "geradoEm": "2026-10-21",
+  "total": 603,
   "areas": [
     {
       "nome": "Trauma adulto",
@@ -128,29 +128,29 @@
               "origem": "TARO 2026"
             },
             {
-              "texto": "Maior deformidade rotacional do rádio = fratura **entre o supinador e o pronador redondo** (proximal supinado ao máximo, distal pronado).",
-              "id": "trauma-1019",
-              "origem": "TARO 2026"
-            },
-            {
-              "texto": "Monteggia **Bado II** com traço na **junção metáfise-diáfise** da ulna = **IIB** de Jupiter (o mais comum do tipo II).",
-              "id": "trauma-0761",
-              "origem": "TEOT 2025"
-            },
-            {
-              "texto": "Fratura diafisária do antebraço no adulto = **homem jovem**, **abaixo dos 40 anos**, **alta energia**; tratamento com **placa** nos dois ossos.",
-              "id": "trauma-0573",
-              "origem": "TEOT 2024"
-            },
-            {
-              "texto": "Síndrome compartimental do antebraço: incidência **baixa**, mais em homens jovens; a fasciotomia deve descomprimir **todos os compartimentos**.",
-              "id": "trauma-0668",
-              "origem": "TARO 2024"
-            },
-            {
               "texto": "A técnica de Bell-Tawse reconstrói o ligamento **anular** com o tendão do **tríceps braquial**.",
               "id": "trauma-0332",
               "origem": "TEOT 2023"
+            },
+            {
+              "texto": "Galeazzi = rádio distal com **RUD** lesada, \"fratura da necessidade\" (placa no rádio e teste da RUD). Para a banca, ápice volar = **supinação** com punho estendido.",
+              "id": "trauma-0437",
+              "origem": "TARO 2023"
+            },
+            {
+              "texto": "O Bado I é imobilizado com o antebraço **supinado** e o cotovelo fletido a **110°**.",
+              "id": "trauma-0005",
+              "origem": "TARO 2020"
+            },
+            {
+              "texto": "A complicação nervosa mais frequente da Monteggia é a lesão do **interósseo posterior**.",
+              "id": "trauma-0144",
+              "origem": "TARO 2015"
+            },
+            {
+              "texto": "A sinostose é maior na Monteggia do tipo **IV**.",
+              "id": "trauma-1090",
+              "origem": "TARO 2013"
             }
           ]
         },
@@ -197,34 +197,34 @@
           "n": 35,
           "frases": [
             {
-              "texto": "Na perna, o compartimento mais envolvido é o **anterior**, e o cateter vai no **anterior**, a até 5 cm da fratura; delta P menor que 30 mmHg indica fasciotomia.",
-              "id": "trauma-0983",
-              "origem": "TARO 2026"
-            },
-            {
-              "texto": "O pé tem **nove** compartimentos (Manoli); fasciotomia por **duas incisões dorsais** (sobre o **2º e o 4º** metatarsos), com incisão **medial** para o retropé.",
-              "id": "trauma-0999",
-              "origem": "TARO 2026"
-            },
-            {
               "texto": "São fatores de risco a fratura do terço **proximal** e o sexo **masculino**.",
               "id": "trauma-0746",
               "origem": "TEOT 2025"
             },
             {
-              "texto": "Síndrome compartimental da coxa é **rara** e acomete mais o compartimento **anterior** (quadríceps); fasciotomia por incisão **lateral**.",
-              "id": "trauma-0767",
-              "origem": "TEOT 2025"
-            },
-            {
-              "texto": "Síndrome compartimental do antebraço: incidência **baixa**, mais em homens jovens; a fasciotomia deve descomprimir **todos os compartimentos**.",
-              "id": "trauma-0668",
-              "origem": "TARO 2024"
-            },
-            {
               "texto": "Complicação mais frequente da fasciotomia na síndrome compartimental **crônica de esforço** = **recidiva**; o nervo em risco é o **fibular superficial**.",
               "id": "trauma-1008",
               "origem": "ENARE R4 Ortopedia 2024"
+            },
+            {
+              "texto": "Os compartimentos mais acometidos na síndrome crônica da perna são o **anterior** e o **lateral**.",
+              "id": "trauma-0432",
+              "origem": "TARO 2023"
+            },
+            {
+              "texto": "A causa mais frequente de síndrome compartimental aguda da coxa é o **trauma fechado**.",
+              "id": "trauma-0433",
+              "origem": "TARO 2023"
+            },
+            {
+              "texto": "A banca considerou a **baixa idade** o preditor mais forte.",
+              "id": "trauma-0081",
+              "origem": "TARO 2021"
+            },
+            {
+              "texto": "A síndrome compartimental crônica da perna se associa à **hérnia fascial**.",
+              "id": "trauma-0151",
+              "origem": "TARO 2015"
             }
           ]
         },
@@ -276,19 +276,9 @@
               "origem": "TARO 2025"
             },
             {
-              "texto": "A complicação neurovascular mais comum após a fratura da clavícula é a **compressão crônica do plexo braquial**.",
-              "id": "trauma-0569",
-              "origem": "TEOT 2024"
-            },
-            {
               "texto": "Fatores de pseudartrose da clavícula no conservador: **alta energia**, **desvio completo** sem contato, **cominuição**, **encurtamento acima de 2 cm**, idade avançada, sexo feminino, tabagismo.",
               "id": "trauma-0666",
               "origem": "TARO 2024"
-            },
-            {
-              "texto": "O fragmento distal sofre translação **anterior, inferior e medial**, com **rotação anterior**.",
-              "id": "trauma-0062",
-              "origem": "TARO 2021"
             },
             {
               "texto": "Fratura diafisária da clavícula: fragmento **medial** sobe (esternocleidomastóideo); **lateral** desce (peso do braço), medializa (peitoral) e **roda anteriormente**.",
@@ -299,6 +289,16 @@
               "texto": "No tipo IIB de Craig, rompem-se o periósteo e o ligamento **conoide**.",
               "id": "trauma-0127",
               "origem": "TARO 2016"
+            },
+            {
+              "texto": "A fratura da clavícula na criança em idade escolar resulta frequentemente de **compressão lateral no ombro**.",
+              "id": "trauma-0949",
+              "origem": "TARO 2016"
+            },
+            {
+              "texto": "A indicação mais frequente de redução cruenta na fratura da clavícula é a **não consolidação**.",
+              "id": "trauma-0641",
+              "origem": "TARO 2013"
             }
           ]
         },
@@ -350,21 +350,6 @@
               "origem": "TARO 2024"
             },
             {
-              "texto": "Na imobilização de Burkhalter, o punho fica em **40°** de dorsiflexão e as metacarpofalângicas em **70 a 90°** de flexão.",
-              "id": "trauma-0328",
-              "origem": "TEOT 2023"
-            },
-            {
-              "texto": "A técnica com perda óssea usa fragmento osteoarticular do **hamato**.",
-              "id": "trauma-0438",
-              "origem": "TARO 2023"
-            },
-            {
-              "texto": "O fragmento menor da fratura de Bennett é mantido pelo ligamento **oblíquo anterior**.",
-              "id": "trauma-0178",
-              "origem": "TEOT 2022"
-            },
-            {
               "texto": "A redução do Bennett usa tração com **compressão lateral** e **pronação** do fragmento distal.",
               "id": "trauma-1100",
               "origem": "TEOT 2022"
@@ -373,6 +358,21 @@
               "texto": "Na luxação metacarpofalângica do polegar, a lesão associada mais comum é a **fratura articular da base da falange**.",
               "id": "trauma-1102",
               "origem": "TEOT 2022"
+            },
+            {
+              "texto": "Artrodese da **IFP**: **indicador cerca de 40 graus**, aumentando para os dedos ulnares (até cerca de 55 no mínimo).",
+              "id": "trauma-0864",
+              "origem": "TARO 2011"
+            },
+            {
+              "texto": "Luxação dorsal irredutível da MF do polegar: para a banca, o **flexor longo do polegar** impede a redução; a placa volar e os sesamoides também se interpõem. Não tracionar.",
+              "id": "trauma-0871",
+              "origem": "TARO 2011"
+            },
+            {
+              "texto": "Doyle **IV-B** = fragmento de **20 a 50%**, por hiperflexão, geralmente com órtese; **IV-C** = acima de 50%, com subluxação volar, cirurgia.",
+              "id": "trauma-0471",
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -724,6 +724,11 @@
               "texto": "Salter-Harris III e IV desviadas pedem redução aberta anatômica e fixação; o fragmento de Thurston-Holland é metafisário (tipo II); o tipo IV tem alto risco de distúrbio de crescimento.",
               "id": "pediatria-0909",
               "origem": "CET-PR"
+            },
+            {
+              "texto": "A lesão fisária por estresse é do **rádio distal da ginasta**; a parada do rádio gera **variância ulnar positiva**, **impacto ulnocarpal** e lesão da **fibrocartilagem triangular**.",
+              "id": "pediatria-0982",
+              "origem": "OrtoQuestões Simulados"
             }
           ]
         },
@@ -735,19 +740,24 @@
             {
               "texto": "Hennigan e Kuo = maioria na **zona 2**.",
               "id": "pediatria-0149",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
         {
-          "nome": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+          "nome": "Fraturas do antebraço e punho na criança",
           "nivel": 4,
-          "n": 53,
+          "n": 45,
           "frases": [
             {
-              "texto": "A fratura mais associada à luxação do cotovelo na criança é a avulsão do epicôndilo medial, que pode ficar encarcerada na articulação.",
-              "id": "pediatria-0906",
-              "origem": "CET-PR"
+              "texto": "Refratura do antebraço = diáfise, galho verde, menino perto dos 12 anos, em média 6 meses depois, quase sempre pelo foco original; previne com tala até consolidar as quatro corticais.",
+              "id": "pediatria-0729",
+              "origem": "TARO 2007"
+            },
+            {
+              "texto": "A lesão fisária por estresse é do **rádio distal da ginasta**; a parada do rádio gera **variância ulnar positiva**, **impacto ulnocarpal** e lesão da **fibrocartilagem triangular**.",
+              "id": "pediatria-0982",
+              "origem": "OrtoQuestões Simulados"
             }
           ]
         },
@@ -834,7 +844,7 @@
             {
               "texto": "Abdutores cerca de **2,5 vezes o peso**; cabeça femoral cerca de **3 vezes**; elevação da perna estendida com carga **semelhante à do apoio**.",
               "id": "pediatria-0285",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -851,7 +861,7 @@
             {
               "texto": "Linha na borda do colo = **Klein**; não cortar a epífise = **Trethowan**.",
               "id": "pediatria-0449",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -1254,21 +1264,6 @@
               "origem": "TARO 2025"
             },
             {
-              "texto": "Na luxação rotatória da IFP, o que impede a redução é a **banda lateral**.",
-              "id": "mao-0304",
-              "origem": "TEOT 2024"
-            },
-            {
-              "texto": "A lesão de Stener é a ruptura do ligamento colateral ulnar da metacarpofalângica do polegar, com a aponeurose do adutor interposta.",
-              "id": "mao-0270",
-              "origem": "ENARE R4 Ortopedia 2023"
-            },
-            {
-              "texto": "O estabilizador primário da IFP no plano coronal é o ligamento colateral.",
-              "id": "mao-0111",
-              "origem": "TARO 2022"
-            },
-            {
               "texto": "Arco menor agudo e redutível = **pinagem percutânea** (segundo o gabarito).",
               "id": "mao-0499",
               "origem": "TARO 2012"
@@ -1277,6 +1272,21 @@
               "texto": "Brunelli = **flexor radial do carpo**.",
               "id": "mao-0526",
               "origem": "TARO 2010"
+            },
+            {
+              "texto": "Na lesão de Stener com fragmento de 10% da superfície, a conduta é ressecar o fragmento e reinserir o ligamento com miniâncora.",
+              "id": "mao-0233",
+              "origem": "Ortopedia"
+            },
+            {
+              "texto": "O ligamento oblíquo anterior fica tenso em pronação, abdução e extensão do primeiro raio.",
+              "id": "mao-0234",
+              "origem": "Ortopedia"
+            },
+            {
+              "texto": "Luxação dorsal da MF = indicador, depois mínimo. Complexa = placa volar presa dorsal à cabeça (sesamoide na articulação); não tracionar nem hiperestender.",
+              "id": "mao-1800",
+              "origem": "OrtoQuestões Simulados"
             }
           ]
         },
@@ -1445,8 +1455,18 @@
               "origem": "TARO 2025"
             },
             {
+              "texto": "Músculo do coracoide ao úmero medial, atravessado pelo musculocutâneo = **coracobraquial**.",
+              "id": "ombro-cotovelo-0318",
+              "origem": "TARO 2025"
+            },
+            {
               "texto": "O músculo em diagonal do lado medial da fossa cubital até a face lateral do rádio é o **pronador redondo**.",
               "id": "ombro-cotovelo-0320",
+              "origem": "TARO 2025"
+            },
+            {
+              "texto": "Expansão medial do tendão distal do bíceps, sobre o mediano e a artéria braquial na fossa cubital = **lacertus fibrosus**.",
+              "id": "ombro-cotovelo-0323",
               "origem": "TARO 2025"
             },
             {
@@ -1457,16 +1477,6 @@
             {
               "texto": "O cordão que cruza a fossa cubital até a tuberosidade do rádio é o **tendão do bíceps**; lateral a medial: tendão, artéria braquial, nervo mediano.",
               "id": "ombro-cotovelo-0248",
-              "origem": "TEOT 2024"
-            },
-            {
-              "texto": "A banda que cruza a **incisura jugular** unindo as duas clavículas é o **interclavicular**; o mais forte é o **costoclavicular**; o mais importante contra a translação é o **esternoclavicular posterior**.",
-              "id": "ombro-cotovelo-0250",
-              "origem": "TEOT 2024"
-            },
-            {
-              "texto": "O músculo grosso que vai do ângulo inferior da escápula ao lábio medial do sulco e forma a borda inferior do espaço quadrangular é o **redondo maior**.",
-              "id": "ombro-cotovelo-0253",
               "origem": "TEOT 2024"
             }
           ]
@@ -1571,14 +1581,14 @@
               "origem": "TEOT 2022"
             },
             {
-              "texto": "Colateral lateral insuficiente é compensado dinamicamente pela **pronação**; a supinação provoca a instabilidade e é a posição do pivot shift.",
-              "id": "ombro-cotovelo-0022",
-              "origem": "TARO 2021"
+              "texto": "O'Driscoll vai de **lateral para medial**; luxação **empoleirada** é o estágio **II** (LUCL mais cápsula); o medial só entra no III.",
+              "id": "ombro-cotovelo-0197",
+              "origem": "TECOC/SBCOC Ombro e Cotovelo"
             },
             {
-              "texto": "Após reparar o **colateral lateral**, cotovelo a **90 graus** e antebraço **pronado**; lesão medial, supinação; os dois lados, neutro.",
-              "id": "ombro-cotovelo-0071",
-              "origem": "TEOT 2021"
+              "texto": "O ligamento mais importante do cotovelo é o **feixe anterior do colateral medial**, do epicôndilo medial ao tubérculo sublime.",
+              "id": "ombro-cotovelo-0257",
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -1672,11 +1682,6 @@
               "origem": "TEOT 2024"
             },
             {
-              "texto": "No acesso de **Thompson**, a estrutura a proteger dentro do supinador é o **nervo interósseo posterior**.",
-              "id": "ombro-cotovelo-0120",
-              "origem": "TEOT 2023"
-            },
-            {
               "texto": "Kocher é o intervalo **extensor ulnar do carpo e ancôneo**; Kaplan, extensor radial curto e extensor comum dos dedos.",
               "id": "ombro-cotovelo-0122",
               "origem": "TEOT 2023"
@@ -1689,6 +1694,11 @@
             {
               "texto": "Na via **anterolateral** do úmero distal, entre braquial e braquiorradial, o nervo em risco é o **radial**.",
               "id": "ombro-cotovelo-0125",
+              "origem": "TEOT 2023"
+            },
+            {
+              "texto": "A estrutura tubular que cruza a articulação saindo do lábio superior, na artroscopia, é a **cabeça longa do bíceps**; a cabeça curta é extra-articular.",
+              "id": "ombro-cotovelo-0126",
               "origem": "TEOT 2023"
             }
           ]
@@ -1763,7 +1773,7 @@
             {
               "texto": "A **tomografia** informa o **grau de osteopenia** e a perda óssea; a série trauma tem **três** incidências; o Grashey é **perpendicular** ao plano da escápula; o axilar exige **abdução**.",
               "id": "ombro-cotovelo-0093",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -1822,22 +1832,22 @@
             {
               "texto": "Interósseo anterior: **flexor longo do polegar, flexor profundo do indicador e do médio e pronador quadrado**; sinal do OK alterado, sem perda sensitiva.",
               "id": "ombro-cotovelo-0116",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Cisto paralabral na incisura **espinoglenoidal** comprime o nervo **supraescapular**, com atrofia isolada do **infraespinal**.",
               "id": "ombro-cotovelo-0117",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Pela incisura supraescapular, sob o ligamento transverso, passa o **nervo supraescapular**; a artéria vai por cima.",
               "id": "ombro-cotovelo-0134",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "**dorsal da escápula** sai da **raiz de C5**; torácico longo, das raízes **C5 a C7**; supraescapular, do **tronco superior**.",
               "id": "ombro-cotovelo-0359",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -1854,7 +1864,7 @@
             {
               "texto": "Pela incisura supraescapular, sob o ligamento transverso, passa o **nervo supraescapular**; a artéria vai por cima.",
               "id": "ombro-cotovelo-0134",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Kibler **tipo I** é o ângulo inferior (serrátil e trapézio inferior); **tipo II** é a borda medial inteira (romboides e trapézio); **tipo III**, a borda superior.",
@@ -1869,7 +1879,7 @@
             {
               "texto": "**assistência escapular** = o examinador ajuda a escápula a rodar para cima durante a elevação; alívio da dor = positivo. **Retração escapular** = fixa a escápula e testa força.",
               "id": "ombro-cotovelo-0433",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Fratura do úmero proximal pede a série de trauma: AP verdadeira (Grashey), perfil escapular e axilar. Stryker notch, West Point e Rockwood são incidências de instabilidade e impacto.",
@@ -1906,7 +1916,7 @@
             {
               "texto": "Após a liberação do cotovelo rígido, **libere pronação e supinação** e mobilize cedo; restringir rotação é para proteger reparo ligamentar.",
               "id": "ombro-cotovelo-0097",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Hastings e Graham: **I** sem limitação; **IIA** flexoextensão; **IIB** pronossupinação; **IIC** ambos; **III** anquilose.",
@@ -2267,12 +2277,12 @@
             {
               "texto": "Não há ligamento intermetatarsal entre o 1º e o 2º metatarso; o ligamento de Lisfranc vai do cuneiforme medial ao 2º metatarso.",
               "id": "pe-tornozelo-0088",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "A artéria do canal do tarso vem da tibial posterior e é a principal do corpo do tálus.",
               "id": "pe-tornozelo-0096",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -2284,12 +2294,12 @@
             {
               "texto": "Maior área visível da tíbia distal é o acesso anteromedial.",
               "id": "pe-tornozelo-0086",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Fixar fíbula, maléolo posterior e medial = **D (posterolateral) + F (medial)**.",
               "id": "pe-tornozelo-0247",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -2306,12 +2316,12 @@
             {
               "texto": "Gatellier e Chastang é acesso transfibular ao tálus.",
               "id": "pe-tornozelo-0085",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Berndt e Harty estágio I se trata de forma conservadora.",
               "id": "pe-tornozelo-0240",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -2348,7 +2358,7 @@
             {
               "texto": "A perda da elevação monopodal do calcanhar aparece no estágio II.",
               "id": "pe-tornozelo-0094",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -2598,12 +2608,12 @@
             {
               "texto": "Na elevação bilateral das pernas, dor acima de 70 graus indica coluna lombar; abaixo disso, sacroilíaca.",
               "id": "coluna-0082",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Músculo lombar profundo e medial, referência do acesso paraespinhal = **multífido**.",
               "id": "coluna-0265",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Fratura de T11 a L1 com anestesia em sela, bexiga neurogênica e sinais mistos de primeiro e segundo neurônio é síndrome do cone medular.",
@@ -2650,7 +2660,7 @@
             {
               "texto": "Cremastérico = **T12-L1** pelo gabarito.",
               "id": "coluna-0063",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -2677,12 +2687,12 @@
             {
               "texto": "Porção mais medial do funículo posterior = fibras **sacrais**.",
               "id": "coluna-0050",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Tubérculo carotídeo é o tubérculo anterior do processo transverso de C6, na altura da cricoide.",
               "id": "coluna-0085",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "A complicação mais comum da fusão cervical anterior é a disfagia.",
@@ -2709,12 +2719,12 @@
             {
               "texto": "Porção mais medial do funículo posterior = fibras **sacrais**.",
               "id": "coluna-0050",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Intervalo atlanto-dental anterior normal é até 3 mm no adulto e até 5 mm na criança.",
               "id": "coluna-0065",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Hipotensão com bradicardia e pele quente após lesão cervical é choque neurogênico; tratar com vasopressor e pressão arterial média acima de 85 mmHg.",
@@ -2761,7 +2771,7 @@
             {
               "texto": "Zona de entrada de Lee é o recesso lateral, entre o processo articular superior e o pedículo.",
               "id": "coluna-0068",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         }
@@ -3058,12 +3068,12 @@
             {
               "texto": "Radiossensível é **célula redonda**, como Ewing, linfoma e mieloma; o condrossarcoma é o exemplo de radiorresistência.",
               "id": "tumores-0075",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             },
             {
               "texto": "Ewing é **diáfise de osso longo**, na criança ou no adolescente, permeativo, com casca de cebola e massa de partes moles.",
               "id": "tumores-0100",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -3256,7 +3266,7 @@
             {
               "texto": "Músculo junto à membrana interóssea, posterior profundo = tibial posterior = **flexão plantar + inversão**.",
               "id": "joelho-0238",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -3290,7 +3300,7 @@
             {
               "texto": "Na fixação in situ da epifisiólise, a entrada é na **face anterior do colo**, e o alvo é o **centro** da epífise, perpendicular à fise.",
               "id": "joelho-0073",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -3350,13 +3360,13 @@
               "origem": "OrtoQuestões Simulados"
             },
             {
-              "texto": "Haste não fresada no fêmur: pseudartrose 4,5 vezes maior; tíbia fechada: melhor com fresagem; tíbia exposta: fresar não muda a reoperação; a haste fresada é a técnica de escolha na maioria dos casos.",
-              "id": "conceitos-basicos-0373",
+              "texto": "Dinamizar é retirar os parafusos estáticos de um segmento para comprimir o foco; preferir o segmento mais longo, manter um parafuso dinâmico para controlar a rotação e não dinamizar o segmento junto à articulação.",
+              "id": "conceitos-basicos-0375",
               "origem": "OrtoQuestões Simulados"
             },
             {
-              "texto": "Bloqueio dinâmico no fêmur agudo: Brumback, 10% de perda de redução, principalmente encurtamento por cominuição não reconhecida; bloqueio estático é o padrão e não prejudica a consolidação.",
-              "id": "conceitos-basicos-0374",
+              "texto": "Tração pela técnica: orifício de deslizamento do diâmetro externo na cortical próxima, orifício do diâmetro interno na distante, colineares e perpendiculares ao traço.",
+              "id": "conceitos-basicos-0381",
               "origem": "OrtoQuestões Simulados"
             }
           ]
@@ -3387,13 +3397,8 @@
               "origem": "OrtoQuestões Simulados"
             },
             {
-              "texto": "Troca de haste: retirar, fresar e colocar haste 1 a 2 mm mais grossa (de preferência com novos pontos de bloqueio); muito eficaz na tíbia, resultado mais variável no fêmur.",
-              "id": "conceitos-basicos-0376",
-              "origem": "OrtoQuestões Simulados"
-            },
-            {
-              "texto": "Placa bloqueada lateral em ponte em fratura simples do fêmur distal: rigidez excessiva, pseudartrose frequente e calo assimétrico, maior no lado medial (mais movimento); o bloqueio dinâmico busca movimento simétrico.",
-              "id": "conceitos-basicos-0392",
+              "texto": "Falha da fixação antes do tempo de consolidação: pense em causa mecânica; falha tardia, com montagem adequada: pense em biologia (tabagismo, diabetes, corticoide, partes moles).",
+              "id": "conceitos-basicos-0401",
               "origem": "OrtoQuestões Simulados"
             }
           ]
@@ -3409,11 +3414,6 @@
               "origem": "OrtoQuestões Simulados"
             },
             {
-              "texto": "O periósteo é fonte precoce de células osteogênicas e responde por cerca de um terço da irrigação cortical; lesá-lo, no trauma ou na cirurgia, associa-se à pseudartrose.",
-              "id": "conceitos-basicos-0340",
-              "origem": "OrtoQuestões Simulados"
-            },
-            {
               "texto": "Ossificação heterotópica após trauma mínimo é fibrodisplasia ossificante progressiva, mutação ativadora do ACVR1, receptor tipo I de BMP.",
               "id": "conceitos-basicos-0343",
               "origem": "OrtoQuestões Simulados"
@@ -3426,11 +3426,6 @@
             {
               "texto": "Sox9 faz cartilagem; Runx2 faz o condrócito hipertrofiar (e abre caminho para o osso).",
               "id": "conceitos-basicos-0345",
-              "origem": "OrtoQuestões Simulados"
-            },
-            {
-              "texto": "Fenda estreita (fratura simples) tem deformação alta com o mesmo movimento; deformação alta forma granulação e tecido fibroso, intermediária forma cartilagem e baixa forma osso.",
-              "id": "conceitos-basicos-0391",
               "origem": "OrtoQuestões Simulados"
             }
           ]
@@ -3696,7 +3691,7 @@
             {
               "texto": "No AP da bacia para impacto, a ponta do cóccix deve ficar a 1 a 2 cm da sínfise púbica.",
               "id": "quadril-0064",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },
@@ -3770,7 +3765,7 @@
             {
               "texto": "O portal anterior na artroscopia do quadril põe em risco o nervo cutâneo femoral lateral.",
               "id": "quadril-0058",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         }
@@ -3845,7 +3840,7 @@
             {
               "texto": "Homem acima dos 40 é **gota**, com história familiar em cerca de 40%.",
               "id": "osteometabolicas-0068",
-              "origem": "TEOT/TARO"
+              "origem": "Ortopedia"
             }
           ]
         },

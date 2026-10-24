@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { nomeEdicao } from '../../estado/sessao'
 import { confirmar } from '../Confirmar'
+import { PRAZO_LOTE_MS, avisarEmailsEnviados, enviarEmLotes, textoLote, type RespostaLote } from './formatos'
 
 interface ResumoRelatorio { pendentes: number; enviados: number; falharam: number }
 
@@ -10,7 +11,7 @@ function mesAnterior() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
 }
 
-/** Painel › E-mails › Lembretes e automáticos: relatório mensal dos assinantes (antes ficava em Ajustes). */
+/** Painel › E-mails › Enviar e-mails: relatório mensal dos assinantes (antes ficava em Ajustes). */
 export function AdminRelatorioMensal() {
   const [mes, definirMes] = useState(mesAnterior)
   const [resumo, definirResumo] = useState<ResumoRelatorio | null>(null)
@@ -35,18 +36,14 @@ export function AdminRelatorioMensal() {
 
   async function enviarRelatorios() {
     if (!resumo?.pendentes || !(await confirmar({ titulo: `Enviar o relatório de ${nomeEdicao(mes)} para ${resumo.pendentes} assinante(s)?`, sim: 'Enviar' }))) return
-    let total = 0, falhas = 0
+    let total = 0
     try {
-      // Lotes de até 40 (limite de tempo da Function); para quando um lote não envia nada.
-      for (let volta = 0; volta < 25; volta++) {
-        definirEnviando(`Enviando… ${total} enviados até agora`)
-        const r = await chamarFuncao<{ enviados: number; falhas: number; talvez_restem: boolean }>('enviar-email', { acao: 'relatorios_mensais', mes, limite: 40 })
-        total += r.enviados; falhas += r.falhas
-        if (!r.talvez_restem || r.enviados === 0) break
-      }
-      definirRecado({ texto: `Relatório de ${nomeEdicao(mes)}: ${total} enviados${falhas ? `, ${falhas} com falha (motivo em Últimos envios, mais abaixo)` : ''}.`, erro: false })
-    } catch (f) { definirRecado({ texto: `Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`, erro: true }) }
-    finally { definirEnviando(''); definirVersao(v => v + 1) }
+      const soma = await enviarEmLotes(
+        (limite) => chamarFuncao<RespostaLote>('enviar-email', { acao: 'relatorios_mensais', mes, limite }, { prazoMs: PRAZO_LOTE_MS }),
+        (n) => { total = n; definirEnviando(`Enviando… ${n} enviados até agora`) })
+      definirRecado({ texto: `Relatório de ${nomeEdicao(mes)}: ${textoLote(soma)}.`, erro: false })
+    } catch (f) { definirRecado({ texto: `A tela parou de esperar (${String(f).replace(/^Error: /, '')}). ${total} já tinham saído; o servidor pode ter mandado mais. Os números foram recarregados.`, erro: true }) }
+    finally { definirEnviando(''); definirVersao(v => v + 1); avisarEmailsEnviados() }
   }
 
   return <section className="empilha adm-secao" aria-labelledby="adm-titulo-relatorio">

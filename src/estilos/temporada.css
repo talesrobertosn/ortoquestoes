@@ -159,8 +159,6 @@
 .campo-servico__rotulo { font-weight: 600; }
 .campo-servico__varios { font-size: 0.9rem; }
 .campo-uf { max-width: 14rem; }
-.pergunta-etapa { border: 2px solid #c99a3b !important; border-radius: 6px !important; box-shadow: 5px 5px 0 rgba(201, 154, 59, 0.3) !important; }
-.pergunta-etapa__selo { font-family: var(--fonte-pixel); letter-spacing: 0.05em; }
 
 /* ---------- Ranking: a arena ------------------------------------------- */
 .rk .rk-heroi { padding-bottom: calc(clamp(1.75rem, 4.5vw, 3rem) + 1.4rem); border: 2px solid var(--px-tinta); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra); }

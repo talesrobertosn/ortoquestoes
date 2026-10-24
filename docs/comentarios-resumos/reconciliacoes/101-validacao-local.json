@@ -1,0 +1,76 @@
+{
+  "basePublicada": "2154ccf3c6d5e81c52cbdbc48a1c5dea8d5d52e4",
+  "lotes": {
+    "099-patela-funcao-imagem-e-indicacao.json": {
+      "sha256": "092d100d659385e0d9f029ffb77d9832a95a56608bdfe9d6f3fbc2ebe36e270b",
+      "ids": [
+        "trauma-0950",
+        "trauma-1234",
+        "joelho-0232",
+        "trauma-1020",
+        "joelho-0230",
+        "trauma-1049",
+        "joelho-0083",
+        "trauma-1292",
+        "trauma-1646",
+        "joelho-0314"
+      ]
+    },
+    "100-banda-patela-e-luxacao-joelho.json": {
+      "sha256": "218a9066dc28ce127626d65b0dd4e6e6b12383d0b7475c1a45eb18569e52ab00",
+      "ids": [
+        "joelho-0293",
+        "trauma-0125",
+        "trauma-0222",
+        "trauma-0745",
+        "trauma-0704",
+        "trauma-0298",
+        "joelho-0256",
+        "joelho-0174",
+        "trauma-1080",
+        "joelho-0060"
+      ]
+    },
+    "101-luxacao-joelho-exame-e-reconstrucao.json": {
+      "sha256": "f84ca39ce049912864d23e154b1edb9ebc4a0d10468ebce765594a5bd53cee80",
+      "ids": [
+        "trauma-1030",
+        "trauma-1040",
+        "joelho-0208",
+        "trauma-0105",
+        "trauma-0557",
+        "trauma-1022",
+        "joelho-0047",
+        "joelho-0172",
+        "trauma-0556",
+        "joelho-0222"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 494,
+    "head": "bced5dfa4466f10743b70ed9ec50fdba4ea2298a",
+    "ci": 40003955457,
+    "pages": 40004278914,
+    "deployJob": 120589125129,
+    "comparacaoIntegralAvulsos": 30
+  },
+  "validacaoEditorial": {
+    "fixtures": "14 testes passaram",
+    "acervo": "sem erros",
+    "cadeia": "099–101; 30 IDs únicos; aplicação reproduzida desde a base, fontes e hashes atuais, todas as alternativas, proteção de questões/gabaritos/membros alheios e 30 avulsos integrais",
+    "interface": "0950, 1292, joelho-0314, 0745, 0704, 1080, joelho-0047 e joelho-0172: celular/computador; figuras, alertas e destinos de fonte; capturas abertas"
+  },
+  "figuras": [
+    {
+      "arquivo": "joelho/joelho-0047-1.jpeg",
+      "sha256": "6cdfdf6d5bfdd14b0f5b55ba99f3af808c21da2f866316c6e790de2bcf66d6da",
+      "observacao": "Visão artroscópica com dois orifícios assinalados em área circundada. Enunciado informa LCP e técnica duplo feixe; imagem isolada não determina posições de tensão. Figura aberta e funcionamento na interface conferido."
+    }
+  ],
+  "lacunas": "100-lacunas-patela-joelho.json: dez pendências, sem editar comentários e sem contar como revisadas",
+  "publicado": false,
+  "proximoLote": "102",
+  "npmTest": "suíte completa passou",
+  "build": "passou; 30 avulsos integrais iguais"
+}

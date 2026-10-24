@@ -1,11 +1,10 @@
 {
   "comentario": "Rodízio fixo dos estilos aprovados (pedido do Tales em 19/10/2026: seguir uma ordem, sem repetir aleatoriamente). O próximo de cada fila é o que vem depois do último usado em historico.json, pulando os usados nos últimos 2 dias. 'combinados' passa na frente da fila (sai daqui depois de usado). Guia: ORDEM.md.",
-  "combinados": [
-    { "data": "2026-10-20", "fila": "stories", "estilo": "leilao", "nota": "Leilão: os números como lances, o certo arremata o lote. Estilo novo, combinado com o Tales em 19/10." }
-  ],
+  "combinados": [],
   "feed": [
     "jornal",
     "cofre-duas-chaves",
+    "busca",
     "snellen",
     "gps",
     "caderneta-topografia",
@@ -22,11 +21,13 @@
   ],
   "stories": [
     "cinema",
+    "busca",
     "mecanica-fina",
     "raspadinha",
     "planta",
     "exame-dna",
     "bingo-da-prova",
+    "leilao",
     "radar-premium",
     "cupom-fiscal"
   ]

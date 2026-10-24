@@ -157,7 +157,7 @@ Historicamente, BANDI foi o primeiro a definir as indicações (posição inacei
 
 !questoes central=trauma-0266 treino=trauma-1373
 conceito: O cotovelo flutuante é indicação de cirurgia; encurtamento de 1 cm, angulação de 10 graus e rotação de 20 graus estão dentro do que o úmero tolera.
-como: Uma prova TEOT/TARO sem ano deu uma indicação verdadeira entre três desvios pequenos, todos abaixo dos limites (2 a 3 cm, 15 a 20 graus e 30 graus).
+como: Uma prova de Ortopedia sem ano deu uma indicação verdadeira entre três desvios pequenos, todos abaixo dos limites (2 a 3 cm, 15 a 20 graus e 30 graus).
 armadilha: Deformidade rotacional de 20 graus: o capítulo só deixa de aceitar acima de 30 graus.
 armadilha: Encurtamento de 1 cm: até 2 a 3 cm o braço acomoda sem prejuízo funcional.
 !fim
@@ -559,7 +559,7 @@ armadilha: Oligotrófica: não é o tipo predominante descrito no capítulo.
 
 !questoes relacionadas=trauma-0306
 conceito: A síndrome compartimental é uma complicação rara da fratura da diáfise do úmero, vista sobretudo com distúrbio da coagulação; fasciotomia anterior com drenagem do hematoma costuma aliviar os dois compartimentos.
-como: Uma prova TEOT/TARO sem ano perguntou, entre rádio distal, pé, diáfise do fêmur e diáfise do úmero, a fratura menos associada à síndrome compartimental (diáfise do úmero).
+como: Uma prova de Ortopedia sem ano perguntou, entre rádio distal, pé, diáfise do fêmur e diáfise do úmero, a fratura menos associada à síndrome compartimental (diáfise do úmero).
 armadilha: Diáfise do fêmur: também é rara, mas descrita com alta energia e esmagamento; o braço tem compartimentos amplos e complacentes.
 !fim
 
