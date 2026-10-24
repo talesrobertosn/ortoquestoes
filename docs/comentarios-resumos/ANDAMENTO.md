@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 995 |
+| pendente | 959 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 187 |
-| pendente-inspecao-imagem | 157 |
-| revisada | 933 |
+| pendente-fonte | 194 |
+| pendente-inspecao-imagem | 156 |
+| revisada | 963 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -36,10 +36,10 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 25 | 0 | 14 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 34 | 0 | 49 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 41 | 0 | 82 |
-| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 21 | 0 | 24 |
-| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 82 | 0 | 73 |
-| Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 2 | 0 | 47 |
-| Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 2 | 0 | 64 |
+| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 27 | 0 | 18 |
+| Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 83 | 0 | 72 |
+| Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 25 | 0 | 24 |
+| Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 7 | 0 | 59 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 1 | 0 | 52 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |

@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 995,
+  "pendente": 959,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 187,
-  "pendente-inspecao-imagem": 157,
-  "revisada": 933
+  "pendente-fonte": 194,
+  "pendente-inspecao-imagem": 156,
+  "revisada": 963
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -157,7 +157,8 @@
    "sha256": "708f2136a07ec3a4a82faa66924a0813349ce6cf38b5079cf2c83e39c5b35c9f",
    "estados": {
     "duplicada": 5,
-    "pendente": 64,
+    "pendente": 63,
+    "pendente-fonte": 1,
     "pendente-inspecao-imagem": 6,
     "revisada": 1
    }
@@ -231,10 +232,10 @@
    "titulo": "Fratura do planalto tibial",
    "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 3,
-    "revisada": 21
+    "pendente": 9,
+    "pendente-fonte": 7,
+    "pendente-inspecao-imagem": 2,
+    "revisada": 27
    }
   },
   "rockwood10-63-diafise-tibia": {
@@ -242,11 +243,11 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 42,
+    "pendente": 41,
     "pendente-anulada": 2,
     "pendente-fonte": 23,
     "pendente-inspecao-imagem": 1,
-    "revisada": 82
+    "revisada": 83
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -254,9 +255,10 @@
    "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
    "estados": {
     "duplicada": 4,
-    "pendente": 42,
+    "pendente": 12,
+    "pendente-fonte": 7,
     "pendente-inspecao-imagem": 1,
-    "revisada": 2
+    "revisada": 25
    }
   },
   "rockwood10-65-tornozelo": {
@@ -264,10 +266,11 @@
    "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
    "estados": {
     "duplicada": 5,
-    "pendente": 50,
+    "pendente": 43,
     "pendente-anulada": 1,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 8,
-    "revisada": 2
+    "revisada": 7
    }
   },
   "rockwood10-66-talus": {
@@ -25685,7 +25688,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25701,7 +25704,32 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "ce0f85c3b097bf551749103f5a07a889550e191634c4d9ed4632ef4e77f96cda"
+   "questaoSha256": "ce0f85c3b097bf551749103f5a07a889550e191634c4d9ed4632ef4e77f96cda",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-8622a325",
+       "vias-de-acesso-82856abe",
+       "vias-de-acesso-756b9cec"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "a5f8f9a9d6b4a130c87b9c88b779bad8ca98a4a99c1bbb1412a1fe35387f98b1"
+     }
+    ],
+    "questaoSha256": "ce0f85c3b097bf551749103f5a07a889550e191634c4d9ed4632ef4e77f96cda",
+    "comentarioSha256": "8acc83aa7edc77b4463c72167a84826e6965a4a2586efb4e43de4034c6aae663"
+   }
   },
   "pe-tornozelo-0018": {
    "tema": "pe-tornozelo",
@@ -25760,7 +25788,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25783,7 +25811,33 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "2e3a689cd4ec70cc00daea75240e224fe2814dc4183ecaf82498bc8dc802fe87"
+   "questaoSha256": "2e3a689cd4ec70cc00daea75240e224fe2814dc4183ecaf82498bc8dc802fe87",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Vias de acesso",
+       "Anatomia aplicada: o plafond e seus fragmentos"
+      ],
+      "blocos": [
+       "vias-de-acesso-c9c75f39",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-8b0c9e60",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-8eb1074d"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "64a2ab1bbe461bbdf2b5875b05908e7d70df952ea5091dd3b0b5b0c55b8b3681"
+     }
+    ],
+    "questaoSha256": "2e3a689cd4ec70cc00daea75240e224fe2814dc4183ecaf82498bc8dc802fe87",
+    "comentarioSha256": "c4f33f0bc96c1ffc5822d8d320ce60e95b71205b94e385f0fc0db39f0e199fba"
+   }
   },
   "pe-tornozelo-0063": {
    "tema": "pe-tornozelo",
@@ -25816,8 +25870,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 64 atribui a visão de todo o plafond à anterior direta, ausente das alternativas. Descreve áreas vistas pela anteromedial e anterolateral, mas não demonstra comparativamente qual das quatro opções expõe a maior área nem separa a versão clássica da modificada na pergunta. Falta estudo/descrição primária de extensão de exposição que sustente a comparação, sem transformar o contexto que escolhe B em prova independente. Gabarito B preservado.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25832,7 +25886,8 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "9f57999ca3d6dda034ce40f0584583ab86b648f197103ff272e47ba30557ae23"
+   "questaoSha256": "9f57999ca3d6dda034ce40f0584583ab86b648f197103ff272e47ba30557ae23",
+   "pendencia": "O corpo do resumo 64 atribui a visão de todo o plafond à anterior direta, ausente das alternativas. Descreve áreas vistas pela anteromedial e anterolateral, mas não demonstra comparativamente qual das quatro opções expõe a maior área nem separa a versão clássica da modificada na pergunta. Falta estudo/descrição primária de extensão de exposição que sustente a comparação, sem transformar o contexto que escolhe B em prova independente. Gabarito B preservado."
   },
   "pe-tornozelo-0087": {
    "tema": "pe-tornozelo",
@@ -25901,8 +25956,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 64 orienta a incisão anterolateral para as bases do terceiro e quarto metatarsais conjuntamente. A questão oferece terceiro e quarto como respostas separadas e a banca marca C (quarto). Falta definição primária do eixo/raio exato da variante técnica para justificar uma resposta única; não excluir o terceiro apenas pela letra oficial nem usar a justificativa contextual como fonte. C preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25916,7 +25971,8 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "ae1931f0f44f0b91f3a395c87f324bcb265ece17cdedc09fae9db666a9d46d3b"
+   "questaoSha256": "ae1931f0f44f0b91f3a395c87f324bcb265ece17cdedc09fae9db666a9d46d3b",
+   "pendencia": "O corpo do resumo 64 orienta a incisão anterolateral para as bases do terceiro e quarto metatarsais conjuntamente. A questão oferece terceiro e quarto como respostas separadas e a banca marca C (quarto). Falta definição primária do eixo/raio exato da variante técnica para justificar uma resposta única; não excluir o terceiro apenas pela letra oficial nem usar a justificativa contextual como fonte. C preservada."
   },
   "pe-tornozelo-0176": {
    "tema": "pe-tornozelo",
@@ -26123,7 +26179,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26139,7 +26195,32 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "54746ca734372b590f43cc1cc040be7e795c58c08738572aeb752b2517e4462f"
+   "questaoSha256": "54746ca734372b590f43cc1cc040be7e795c58c08738572aeb752b2517e4462f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Resultados e artrose pós-traumática"
+      ],
+      "blocos": [
+       "resultados-e-artrose-pos-traumatica-62c34c34",
+       "resultados-e-artrose-pos-traumatica-0dd7d9b0",
+       "resultados-e-artrose-pos-traumatica-119ba320"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "aef23b76455c64aae4d42da71d78ba20461d83c99772febc777ac1aef533b5c5"
+     }
+    ],
+    "questaoSha256": "54746ca734372b590f43cc1cc040be7e795c58c08738572aeb752b2517e4462f",
+    "comentarioSha256": "52444be799f04ce9d29068f1b50d59f63b453b68e16383d7ca54296059299548"
+   }
   },
   "pe-tornozelo-0335": {
    "tema": "pe-tornozelo",
@@ -26362,8 +26443,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 64 diferencia punção da serosa e preservação da hemorrágica, mas não quantifica nem compara o efeito do desbridamento sobre complicações. A afirmação geral de certo/errado não especifica tipo de bolha, técnica ou população. Falta estudo/fonte primária desse efeito e seus limites; não transformar uma recomendação de manejo em prova de aumento de taxa. Resposta bibliográfica B preservada sem novo provável ou selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -26385,7 +26466,8 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "5feb9a6aa3974d580684c037fdf77593d127593c47afc5768ac2563908cd4a4b"
+   "questaoSha256": "5feb9a6aa3974d580684c037fdf77593d127593c47afc5768ac2563908cd4a4b",
+   "pendencia": "O resumo 64 diferencia punção da serosa e preservação da hemorrágica, mas não quantifica nem compara o efeito do desbridamento sobre complicações. A afirmação geral de certo/errado não especifica tipo de bolha, técnica ou população. Falta estudo/fonte primária desse efeito e seus limites; não transformar uma recomendação de manejo em prova de aumento de taxa. Resposta bibliográfica B preservada sem novo provável ou selo."
   },
   "pe-tornozelo-0372": {
    "tema": "pe-tornozelo",
@@ -43061,8 +43143,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 64 define 43A/B/C e afirma que os grupos B seguem separação e afundamento, mas não detalha B1/B2/B3. Falta tabela primária AO/OTA da versão aplicável para conferir B3 como depressão multifragmentária e diferenciar cisalhamento, metafisária complexa e articular/metafisária simples. O próprio contexto informa que esse detalhe vem de fora do capítulo. C oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -43076,7 +43158,8 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "e83d72b6ce47caa55469a47bff8e96ca084467b81854510680c044532b36a6c5"
+   "questaoSha256": "e83d72b6ce47caa55469a47bff8e96ca084467b81854510680c044532b36a6c5",
+   "pendencia": "O resumo 64 define 43A/B/C e afirma que os grupos B seguem separação e afundamento, mas não detalha B1/B2/B3. Falta tabela primária AO/OTA da versão aplicável para conferir B3 como depressão multifragmentária e diferenciar cisalhamento, metafisária complexa e articular/metafisária simples. O próprio contexto informa que esse detalhe vem de fora do capítulo. C oficial preservada."
   },
   "trauma-0048": {
    "tema": "trauma",
@@ -43197,7 +43280,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -43212,7 +43295,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "b297630a7c3c3aa096869c5ebe91c571569dbfb8779e8f11d318e04e8f1582f9"
+   "questaoSha256": "b297630a7c3c3aa096869c5ebe91c571569dbfb8779e8f11d318e04e8f1582f9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "6c681a2d75c916f065bdce23bca719be7ddc1af58feb5e96c05922c2867ad76c"
+     }
+    ],
+    "questaoSha256": "b297630a7c3c3aa096869c5ebe91c571569dbfb8779e8f11d318e04e8f1582f9",
+    "comentarioSha256": "0d77d919d503ff04fb986be13e3f17d40c9717ec98de2c364f9c889366bb9f38"
+   }
   },
   "trauma-0053": {
    "tema": "trauma",
@@ -45096,7 +45207,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45111,7 +45222,35 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "fd7a7b74d93eff9a5d2a4dc98671ac805bd91d2173dbf6f27c657c7b0828ef5d"
+   "questaoSha256": "fd7a7b74d93eff9a5d2a4dc98671ac805bd91d2173dbf6f27c657c7b0828ef5d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Mecanismo e lesões associadas",
+       "Imagem"
+      ],
+      "blocos": [
+       "mecanismo-e-lesoes-associadas-a11d2dea",
+       "mecanismo-e-lesoes-associadas-5516e766",
+       "mecanismo-e-lesoes-associadas-30561b35",
+       "mecanismo-e-lesoes-associadas-9c1389f3",
+       "imagem-db85bf80"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "a4e4e138279e38dc64c2d03433e7ca91f4d8eb6e2186fe42d2d53f7f04b19a41"
+     }
+    ],
+    "questaoSha256": "fd7a7b74d93eff9a5d2a4dc98671ac805bd91d2173dbf6f27c657c7b0828ef5d",
+    "comentarioSha256": "7715bea772067e0ad0ec43b68a2df09d72f8fde21867bb49742ccb1731ebd059"
+   }
   },
   "trauma-0114": {
    "tema": "trauma",
@@ -46520,7 +46659,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46543,7 +46682,34 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "97c9aa751be90f6dd24b3b9c672bf03402d2c5cce5d6d1c18fa07c1998cd5ef2"
+   "questaoSha256": "97c9aa751be90f6dd24b3b9c672bf03402d2c5cce5d6d1c18fa07c1998cd5ef2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Vias de acesso",
+       "Anatomia aplicada: o plafond e seus fragmentos"
+      ],
+      "blocos": [
+       "vias-de-acesso-c9c75f39",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-8b0c9e60",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-36974bba",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-8eb1074d"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "5faffc1e6816af73cac05c73337fcee807b6ca81c0e973c1f415d583a6d48404"
+     }
+    ],
+    "questaoSha256": "97c9aa751be90f6dd24b3b9c672bf03402d2c5cce5d6d1c18fa07c1998cd5ef2",
+    "comentarioSha256": "1f21fa06acafcf2b5c1e48725c4775c51cf8c6bb54357befee0152896cb7a99c"
+   }
   },
   "trauma-0162": {
    "tema": "trauma",
@@ -52334,7 +52500,7 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -52349,7 +52515,35 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "176c67d864f4bad9865b19fc32b92672fffc13af4560a7c0902060cf4ef2dc3a"
+   "questaoSha256": "176c67d864f4bad9865b19fc32b92672fffc13af4560a7c0902060cf4ef2dc3a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Mecanismo e lesões associadas",
+       "Partes moles: flictenas, espera e o tratamento em etapas",
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "mecanismo-e-lesoes-associadas-762bd217",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--18463146",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--5a10a6d3",
+       "vias-de-acesso-756b9cec"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "ee8cd39f088fa96fd5de58ecba2706c5fc1f571ee1d962ceaafc2cdffef54b81"
+     }
+    ],
+    "questaoSha256": "176c67d864f4bad9865b19fc32b92672fffc13af4560a7c0902060cf4ef2dc3a",
+    "comentarioSha256": "654767485d01a84df1b6b5860753494559128c2d75bb4bcb9d04c3728893b282"
+   }
   },
   "trauma-0441": {
    "tema": "trauma",
@@ -53839,8 +54033,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -53854,7 +54048,31 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "0f15b62fa98e868729ddf16f763c41d79710f8c58057ac26263d6a0d63df36fa"
+   "questaoSha256": "0f15b62fa98e868729ddf16f763c41d79710f8c58057ac26263d6a0d63df36fa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas"
+      ],
+      "blocos": [
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-b6c1dafc",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-ce00049f"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "711f858dc56813afe221ed9a193b91ca1986cd5b6821dc9fafed2122b7703dee"
+     }
+    ],
+    "questaoSha256": "0f15b62fa98e868729ddf16f763c41d79710f8c58057ac26263d6a0d63df36fa",
+    "comentarioSha256": "94c374f5d85fe60947d47801424ff4fdf3d6c59fa15fb87d020889fcd5d0a03c"
+   }
   },
   "trauma-0560": {
    "tema": "trauma",
@@ -54982,7 +55200,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55004,7 +55222,36 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "74a1834b34ad8cc156e4e3b3df23422d760da9f01279d5e32973b405e574d6f0"
+   "questaoSha256": "74a1834b34ad8cc156e4e3b3df23422d760da9f01279d5e32973b405e574d6f0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Partes moles: flictenas, espera e o tratamento em etapas",
+       "Primeiro tempo: o fixador transarticular",
+       "Fixação aguda e haste do retropé"
+      ],
+      "blocos": [
+       "partes-moles-flictenas-espera-e-o-tratamento-em--5a10a6d3",
+       "primeiro-tempo-o-fixador-transarticular-428075f5",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--2cbb5882",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+       "fixacao-aguda-e-haste-do-retrope-b437dc32"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "7fa67730512f0ece2f4d3961a911eaf718c437ba15a291e5708b66e96a6988c5"
+     }
+    ],
+    "questaoSha256": "74a1834b34ad8cc156e4e3b3df23422d760da9f01279d5e32973b405e574d6f0",
+    "comentarioSha256": "40fc0328c9cb12b512f2d809e7af23cd295d42a604b64d041b3c68e8f4632d5d"
+   }
   },
   "trauma-0680": {
    "tema": "trauma",
@@ -58418,8 +58665,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 64 sustenta risco do tibial por fragmento no túnel do tarso, mas não demonstra risco do sural especificamente no desvio posteromedial. O sural aparece na incisão posterolateral, outro contexto. Falta fonte do mecanismo traumático e dos dois nervos do par para conferir todas as alternativas; não atribuir cobertura integral a A por provar só tibial. A oficial preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -58433,7 +58680,8 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "8d5b47ef3b15fd3e14900c2d076220f1790d673a1960fa4001bd384e81da0e39"
+   "questaoSha256": "8d5b47ef3b15fd3e14900c2d076220f1790d673a1960fa4001bd384e81da0e39",
+   "pendencia": "O corpo do resumo 64 sustenta risco do tibial por fragmento no túnel do tarso, mas não demonstra risco do sural especificamente no desvio posteromedial. O sural aparece na incisão posterolateral, outro contexto. Falta fonte do mecanismo traumático e dos dois nervos do par para conferir todas as alternativas; não atribuir cobertura integral a A por provar só tibial. A oficial preservada."
   },
   "trauma-0822": {
    "tema": "trauma",
@@ -60465,7 +60713,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60480,7 +60728,37 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "b27dd35738d590b1f047b87429d447d371f176a0ddc9880e387d696a9d400507"
+   "questaoSha256": "b27dd35738d590b1f047b87429d447d371f176a0ddc9880e387d696a9d400507",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "A fíbula e as três colunas",
+       "Segundo tempo: plano, articulação e placas"
+      ],
+      "blocos": [
+       "a-fibula-e-as-tres-colunas-54d4ae66",
+       "a-fibula-e-as-tres-colunas-d7b98395",
+       "a-fibula-e-as-tres-colunas-a82a4540",
+       "a-fibula-e-as-tres-colunas-e5cf59be",
+       "a-fibula-e-as-tres-colunas-3ec81f10",
+       "segundo-tempo-plano-articulacao-e-placas-2b863d83",
+       "segundo-tempo-plano-articulacao-e-placas-f7bc3ba6"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "bf59852e0df50360a006d546e009430c80a693d24dfb230717f23d5d5f7707c6"
+     }
+    ],
+    "questaoSha256": "b27dd35738d590b1f047b87429d447d371f176a0ddc9880e387d696a9d400507",
+    "comentarioSha256": "ed66f327a929403f9ca01f18395386bb9d5638c3c885e79af44dbccbfbfa5389"
+   }
   },
   "trauma-0912": {
    "tema": "trauma",
@@ -61420,8 +61698,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A via anteromedial no corpo do resumo 64 começa lateral à crista e desce medial ao tibial anterior, mas não declara destino na base do navicular. O término na talonavicular é da anterior direta, outra via. Falta descrição/figura primária do trajeto anteromedial para conferir o segundo componente da opção C sem transferir marcos entre acessos. C oficial preservada; apenas início correto não conclui a revisão.",
    "temComentario": true,
    "citacoes": [
     {
@@ -61435,7 +61713,8 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "241ec705cab79d2b4eb9955aed97d5298e31f29ea7dfe7d0a1225f68e65aa161"
+   "questaoSha256": "241ec705cab79d2b4eb9955aed97d5298e31f29ea7dfe7d0a1225f68e65aa161",
+   "pendencia": "A via anteromedial no corpo do resumo 64 começa lateral à crista e desce medial ao tibial anterior, mas não declara destino na base do navicular. O término na talonavicular é da anterior direta, outra via. Falta descrição/figura primária do trajeto anteromedial para conferir o segundo componente da opção C sem transferir marcos entre acessos. C oficial preservada; apenas início correto não conclui a revisão."
   },
   "trauma-0955": {
    "tema": "trauma",
@@ -61542,7 +61821,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -61557,7 +61836,35 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "bb5539d51cfce34b2955e6564748ea630b0b00492efdf284b520fb5291c6ae5c"
+   "questaoSha256": "bb5539d51cfce34b2955e6564748ea630b0b00492efdf284b520fb5291c6ae5c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "555700d4f83c1fc3f17389d35780634b2ae2b72e24e57c84eff2860f734d3cb7"
+     }
+    ],
+    "questaoSha256": "bb5539d51cfce34b2955e6564748ea630b0b00492efdf284b520fb5291c6ae5c",
+    "comentarioSha256": "994b32eb38f36d4d7c91f8f67e05519a328f4d0c436673b804bb55475efdde33"
+   }
   },
   "trauma-0961": {
    "tema": "trauma",
@@ -62232,7 +62539,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62247,7 +62554,32 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "ea04ba3686db9b9e954ba7f096435d4edf7f618661d49a5ee0a7fb4f2b887c8e"
+   "questaoSha256": "ea04ba3686db9b9e954ba7f096435d4edf7f618661d49a5ee0a7fb4f2b887c8e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Partes moles: flictenas, espera e o tratamento em etapas"
+      ],
+      "blocos": [
+       "partes-moles-flictenas-espera-e-o-tratamento-em--d1573f96",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--78282836",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "13b92116d4a4f4da2434c4e7e529b0c34e3501920f3d3ef2430a14ec5f4ccb12"
+     }
+    ],
+    "questaoSha256": "ea04ba3686db9b9e954ba7f096435d4edf7f618661d49a5ee0a7fb4f2b887c8e",
+    "comentarioSha256": "ac186403f386c6b805b33ac6fdbd0e418096d5274885394bdf83c93dc47fdc08"
+   }
   },
   "trauma-0985": {
    "tema": "trauma",
@@ -64924,8 +65256,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente do resumo 64 mostra artrose frequente no pilão, mas não compara diretamente incidência sintomática com calcâneo, acetábulo e planalto. O resumo 62 fornece uma comparação pilão/planalto, sem completar o ranking dos quatro sítios. Falta fonte comparativa que distinga artrose radiográfica de dor/limitação funcional nas quatro alternativas; o bloco contextual que marca planalto não é evidência independente. D preservada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64962,7 +65294,8 @@
     "rockwood10-62-planalto-tibial",
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "bea662bc2940377e71f1a53099e2deba8e1ce40b397852ea28f88fe67e611e45"
+   "questaoSha256": "bea662bc2940377e71f1a53099e2deba8e1ce40b397852ea28f88fe67e611e45",
+   "pendencia": "O corpo independente do resumo 64 mostra artrose frequente no pilão, mas não compara diretamente incidência sintomática com calcâneo, acetábulo e planalto. O resumo 62 fornece uma comparação pilão/planalto, sem completar o ranking dos quatro sítios. Falta fonte comparativa que distinga artrose radiográfica de dor/limitação funcional nas quatro alternativas; o bloco contextual que marca planalto não é evidência independente. D preservada."
   },
   "trauma-1090": {
    "tema": "trauma",
@@ -65508,7 +65841,7 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -65523,7 +65856,35 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "a4b3095b0a7d8629f629bc7d8d24afb533a462e9b7a5eed8f57e25141ac79779"
+   "questaoSha256": "a4b3095b0a7d8629f629bc7d8d24afb533a462e9b7a5eed8f57e25141ac79779",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Classificações e prognóstico",
+       "Resultados e artrose pós-traumática",
+       "Segundo tempo: plano, articulação e placas"
+      ],
+      "blocos": [
+       "classificacoes-e-prognostico-d0f22b0e",
+       "classificacoes-e-prognostico-49d4f4bc",
+       "resultados-e-artrose-pos-traumatica-62c34c34",
+       "segundo-tempo-plano-articulacao-e-placas-aebfa6d9"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "2b17866d558d3e97f5f710d8ac9e8f584887a225916a47ef1a99d6538b155721"
+     }
+    ],
+    "questaoSha256": "a4b3095b0a7d8629f629bc7d8d24afb533a462e9b7a5eed8f57e25141ac79779",
+    "comentarioSha256": "45e15aa1f0eb0e3a685425b0a0f5c05c7ecd994d30d56ff3e2a34cd653fb6838"
+   }
   },
   "trauma-1107": {
    "tema": "trauma",
@@ -67397,7 +67758,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67412,7 +67773,34 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "1ea2be4e97b44cd34de9b26181394092460d0e67d2e832e3a144b119ca94b942"
+   "questaoSha256": "1ea2be4e97b44cd34de9b26181394092460d0e67d2e832e3a144b119ca94b942",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "4ad88b57fae7c412aac269b17516cced8ba1951c8a06dd21dd9c1ff7360350cf"
+     }
+    ],
+    "questaoSha256": "1ea2be4e97b44cd34de9b26181394092460d0e67d2e832e3a144b119ca94b942",
+    "comentarioSha256": "27c674925ec917b7783f0c127c4b837e926f945660cd55012c985e299dc67065"
+   }
   },
   "trauma-1193": {
    "tema": "trauma",
@@ -67421,7 +67809,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -67436,7 +67824,34 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "4fc012b2bca20f1213c5be0c073edb3b7b620153e60b2468a7b9c5f6686a8c1d"
+   "questaoSha256": "4fc012b2bca20f1213c5be0c073edb3b7b620153e60b2468a7b9c5f6686a8c1d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Classificações e prognóstico",
+       "Resultados e artrose pós-traumática"
+      ],
+      "blocos": [
+       "classificacoes-e-prognostico-6b6af016",
+       "classificacoes-e-prognostico-d598f0c9",
+       "resultados-e-artrose-pos-traumatica-62c34c34",
+       "classificacoes-e-prognostico-d0f22b0e"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "cc4711947c1ccf2df0d1b02f0a9168b2da8cf7522b721cb11048f6d7279c4f8e"
+     }
+    ],
+    "questaoSha256": "4fc012b2bca20f1213c5be0c073edb3b7b620153e60b2468a7b9c5f6686a8c1d",
+    "comentarioSha256": "b0ac5396bc86f5995915d8633a77f491d1aa410339a9bb6c4cdde8add2dd7da9"
+   }
   },
   "trauma-1194": {
    "tema": "trauma",
@@ -83971,7 +84386,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -83993,7 +84408,33 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "5d78feae14e8d2a49716826e3ae982e9837c43120511ee686f9b77093ac81935"
+   "questaoSha256": "5d78feae14e8d2a49716826e3ae982e9837c43120511ee686f9b77093ac81935",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "Lesões associadas: menisco, ligamentos e o colateral medial"
+      ],
+      "blocos": [
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-fb5f095d",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+       "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "18a784fb53591f1ab0a58d844984bfb7ee6450a026471abb77ffa086c3edf4a8"
+     }
+    ],
+    "questaoSha256": "5d78feae14e8d2a49716826e3ae982e9837c43120511ee686f9b77093ac81935",
+    "comentarioSha256": "8e32f7247f0ae36add2eb66a8d1bfe79c5270e37ae11fb680d6c6bc1e5d5357a"
+   }
   },
   "trauma-1670": {
    "tema": "trauma",
@@ -84061,7 +84502,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84076,7 +84517,31 @@
    "resumosCandidatos": [
     "rockwood10-62-planalto-tibial"
    ],
-   "questaoSha256": "a6a7c1e42044becc1b8d1548389d95e6001a96d4cdaf600d491d0b0faed5088d"
+   "questaoSha256": "a6a7c1e42044becc1b8d1548389d95e6001a96d4cdaf600d491d0b0faed5088d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-62-planalto-tibial",
+      "titulo": "Fratura do planalto tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+      "secoes": [
+       "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas"
+      ],
+      "blocos": [
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-b6c1dafc",
+       "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-d8b24b7e"
+      ],
+      "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+      "trechosSha256": "e0f12daac67611b71e432c2e5e4abbd7f047942bf91736f9557265d2ff9ec0a7"
+     }
+    ],
+    "questaoSha256": "a6a7c1e42044becc1b8d1548389d95e6001a96d4cdaf600d491d0b0faed5088d",
+    "comentarioSha256": "f802bf31ada5f8ed88643864a7e9b22c31c85d3d9d6d961272e2028b09feb089"
+   }
   },
   "trauma-1672": {
    "tema": "trauma",
@@ -84952,7 +85417,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84967,7 +85432,37 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "c497e60cb3cb8455547f89d44799181c3b882f6e4f3d4f3ea11c561e6c1e24a9"
+   "questaoSha256": "c497e60cb3cb8455547f89d44799181c3b882f6e4f3d4f3ea11c561e6c1e24a9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Mecanismo e lesões associadas",
+       "Vias de acesso",
+       "Imagem"
+      ],
+      "blocos": [
+       "mecanismo-e-lesoes-associadas-a11d2dea",
+       "mecanismo-e-lesoes-associadas-5516e766",
+       "mecanismo-e-lesoes-associadas-30561b35",
+       "mecanismo-e-lesoes-associadas-9c1389f3",
+       "vias-de-acesso-669049b3",
+       "imagem-db85bf80"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "7aebe3413484b21f3655cc0d44a7e48f27b0ba1f7c9bf640206c51154a6d3efd"
+     }
+    ],
+    "questaoSha256": "c497e60cb3cb8455547f89d44799181c3b882f6e4f3d4f3ea11c561e6c1e24a9",
+    "comentarioSha256": "593d41334cefeec54c7215a5762eb16bb7195189b7377814bd451e07a10e52d5"
+   }
   },
   "trauma-1695": {
    "tema": "trauma",
@@ -84976,7 +85471,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -84999,7 +85494,34 @@
     "rockwood10-64-pilao-tibial",
     "rockwood10-65-tornozelo"
    ],
-   "questaoSha256": "062cbb4c2e3a3c05c4628ff16ace63547fc77c59935ece6408988bbfb3000709"
+   "questaoSha256": "062cbb4c2e3a3c05c4628ff16ace63547fc77c59935ece6408988bbfb3000709",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Partes moles: flictenas, espera e o tratamento em etapas",
+       "Primeiro tempo: o fixador transarticular"
+      ],
+      "blocos": [
+       "partes-moles-flictenas-espera-e-o-tratamento-em--d1573f96",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--78282836",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+       "primeiro-tempo-o-fixador-transarticular-428075f5"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "ea88a855a5f8038c8293ac246a21c1fe79849cb3f25b140b1ea124dbb39ddf81"
+     }
+    ],
+    "questaoSha256": "062cbb4c2e3a3c05c4628ff16ace63547fc77c59935ece6408988bbfb3000709",
+    "comentarioSha256": "1d74e45b7eca25a2ff5bc617fe3b571b69e7925a1ac2efdc906f0b67f3335ce2"
+   }
   },
   "trauma-1696": {
    "tema": "trauma",
@@ -85008,7 +85530,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85030,7 +85552,33 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "6c4e3369223f012742aeb22b0133945713d9b80b7496eab7b2c101dd9020cfb6"
+   "questaoSha256": "6c4e3369223f012742aeb22b0133945713d9b80b7496eab7b2c101dd9020cfb6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Classificações e prognóstico"
+      ],
+      "blocos": [
+       "classificacoes-e-prognostico-b649a524",
+       "classificacoes-e-prognostico-13b0278f",
+       "classificacoes-e-prognostico-37449ead",
+       "classificacoes-e-prognostico-7dd902d4"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "ef161651843c1b2e187bd31669914f6810b04ad8d57c3998f06f583bfcafee0e"
+     }
+    ],
+    "questaoSha256": "6c4e3369223f012742aeb22b0133945713d9b80b7496eab7b2c101dd9020cfb6",
+    "comentarioSha256": "25bac194ce98f5e186596f8e1aca780cd5995c7f2860fd8587d429e25df64384"
+   }
   },
   "trauma-1697": {
    "tema": "trauma",
@@ -85039,7 +85587,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85061,7 +85609,34 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "4e3f4aa79619563ac5a349540c4e15e941f9044459d4b62a51701e20b21285ac"
+   "questaoSha256": "4e3f4aa79619563ac5a349540c4e15e941f9044459d4b62a51701e20b21285ac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Classificações e prognóstico",
+       "Partes moles: flictenas, espera e o tratamento em etapas"
+      ],
+      "blocos": [
+       "classificacoes-e-prognostico-6b6af016",
+       "classificacoes-e-prognostico-d598f0c9",
+       "classificacoes-e-prognostico-b649a524",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "033815e80f8140bced2b6e055abad3e7149d940bb6fa7ec1e0108d0128289a9a"
+     }
+    ],
+    "questaoSha256": "4e3f4aa79619563ac5a349540c4e15e941f9044459d4b62a51701e20b21285ac",
+    "comentarioSha256": "8a24acbcf0d60c4fa0f346e617486ac7a8b41bdc9aefb1190f15761795562452"
+   }
   },
   "trauma-1698": {
    "tema": "trauma",
@@ -85070,7 +85645,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85085,7 +85660,36 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "98e53f94f54455b76a3d1b85da0c91254ff5fff84962df1d99cf307ae3ee97a2"
+   "questaoSha256": "98e53f94f54455b76a3d1b85da0c91254ff5fff84962df1d99cf307ae3ee97a2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Anatomia aplicada: o plafond e seus fragmentos",
+       "A fíbula e as três colunas",
+       "Segundo tempo: plano, articulação e placas"
+      ],
+      "blocos": [
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-2abcb383",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-39c7b087",
+       "anatomia-aplicada-o-plafond-e-seus-fragmentos-2fd062d8",
+       "a-fibula-e-as-tres-colunas-e5cf59be",
+       "segundo-tempo-plano-articulacao-e-placas-6fc634df"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "3a0ec2422e772d5a1f3e23251342c63703e9a4a4295ec673c39c0a0c87378dd4"
+     }
+    ],
+    "questaoSha256": "98e53f94f54455b76a3d1b85da0c91254ff5fff84962df1d99cf307ae3ee97a2",
+    "comentarioSha256": "10f162146cef00fbfbf832ec092d388aa79b6ac844bf8330f76a95512ce180bb"
+   }
   },
   "trauma-1699": {
    "tema": "trauma",
@@ -85094,7 +85698,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85116,7 +85720,36 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "4f7f15a1e8d087facf33d123a9a7e6c4d5a18962484ee05317ef38f5bf7d8e34"
+   "questaoSha256": "4f7f15a1e8d087facf33d123a9a7e6c4d5a18962484ee05317ef38f5bf7d8e34",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Imagem",
+       "Partes moles: flictenas, espera e o tratamento em etapas",
+       "Segundo tempo: plano, articulação e placas"
+      ],
+      "blocos": [
+       "imagem-db85bf80",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--5a10a6d3",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--2cbb5882",
+       "segundo-tempo-plano-articulacao-e-placas-c64fa5e9"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "91c4845c4de3723571e7f36018998c30acd4c8f412c7b0f90ae6b89ef04f7517"
+     }
+    ],
+    "questaoSha256": "4f7f15a1e8d087facf33d123a9a7e6c4d5a18962484ee05317ef38f5bf7d8e34",
+    "comentarioSha256": "7668642507120071c1552923e937fc966763524d74f7ef872b4e549f8ae24186"
+   }
   },
   "trauma-1700": {
    "tema": "trauma",
@@ -85125,7 +85758,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85140,7 +85773,35 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "e1047962d5a5d4f4755fc5c2aa4431bfb12f386e7146eed8fca5987b68016d92"
+   "questaoSha256": "e1047962d5a5d4f4755fc5c2aa4431bfb12f386e7146eed8fca5987b68016d92",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Partes moles: flictenas, espera e o tratamento em etapas",
+       "Primeiro tempo: o fixador transarticular",
+       "Fixação aguda e haste do retropé"
+      ],
+      "blocos": [
+       "partes-moles-flictenas-espera-e-o-tratamento-em--1a64f711",
+       "primeiro-tempo-o-fixador-transarticular-428075f5",
+       "partes-moles-flictenas-espera-e-o-tratamento-em--78282836",
+       "fixacao-aguda-e-haste-do-retrope-b437dc32"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "4f645ef8776e03c3004fbbb08cc9f2e85841c628c6420daa546cb9280259a634"
+     }
+    ],
+    "questaoSha256": "e1047962d5a5d4f4755fc5c2aa4431bfb12f386e7146eed8fca5987b68016d92",
+    "comentarioSha256": "8899898d40d9652f37ce944a52a8b32b090ba8565a858db23e4662e58d609ceb"
+   }
   },
   "trauma-1701": {
    "tema": "trauma",
@@ -85149,7 +85810,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85178,7 +85839,36 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "a631cd84e47264c9fa21e40dcf480873ff8fd440e11105e959e7a48b9133af64"
+   "questaoSha256": "a631cd84e47264c9fa21e40dcf480873ff8fd440e11105e959e7a48b9133af64",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "A fíbula e as três colunas",
+       "Segundo tempo: plano, articulação e placas"
+      ],
+      "blocos": [
+       "a-fibula-e-as-tres-colunas-e5cf59be",
+       "a-fibula-e-as-tres-colunas-3ec81f10",
+       "segundo-tempo-plano-articulacao-e-placas-2b863d83",
+       "segundo-tempo-plano-articulacao-e-placas-88a90c4c",
+       "a-fibula-e-as-tres-colunas-a82a4540",
+       "a-fibula-e-as-tres-colunas-54d4ae66"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "29a8da9a6439e4c3845159b3e7121348f5b9b99dd83f6f377a6a2a7b790852b7"
+     }
+    ],
+    "questaoSha256": "a631cd84e47264c9fa21e40dcf480873ff8fd440e11105e959e7a48b9133af64",
+    "comentarioSha256": "bfdf7b27eac6fb516c063842ce59785bd9a85cb460b1ad079520d881cb5486d6"
+   }
   },
   "trauma-1702": {
    "tema": "trauma",
@@ -85187,7 +85877,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85216,7 +85906,32 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "9cd35e7113e160d2fb77d6d70e02a09d23f3b3d4adda4a66245f36c89fa8c4dc"
+   "questaoSha256": "9cd35e7113e160d2fb77d6d70e02a09d23f3b3d4adda4a66245f36c89fa8c4dc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Vias de acesso"
+      ],
+      "blocos": [
+       "vias-de-acesso-8622a325",
+       "vias-de-acesso-82856abe",
+       "vias-de-acesso-756b9cec"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "a5f8f9a9d6b4a130c87b9c88b779bad8ca98a4a99c1bbb1412a1fe35387f98b1"
+     }
+    ],
+    "questaoSha256": "9cd35e7113e160d2fb77d6d70e02a09d23f3b3d4adda4a66245f36c89fa8c4dc",
+    "comentarioSha256": "fbd85dd71cde93fc2bf8f66200bab8fa34041a84d7c5e78d02c9d19e05e4aadd"
+   }
   },
   "trauma-1703": {
    "tema": "trauma",
@@ -85225,7 +85940,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85247,7 +85962,35 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "6ebc18fd46c58481a1c434608cf70ab8e043bec7e1e8da31c16546a19391ef04"
+   "questaoSha256": "6ebc18fd46c58481a1c434608cf70ab8e043bec7e1e8da31c16546a19391ef04",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Segundo tempo: plano, articulação e placas",
+       "Classificações e prognóstico"
+      ],
+      "blocos": [
+       "segundo-tempo-plano-articulacao-e-placas-6fc634df",
+       "segundo-tempo-plano-articulacao-e-placas-aebfa6d9",
+       "classificacoes-e-prognostico-37449ead",
+       "classificacoes-e-prognostico-7dd902d4",
+       "segundo-tempo-plano-articulacao-e-placas-345e2d38"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "0d3794bb58845fd95d522117a38ff578d4ea00a47f2a5a09ccfe5529573cefaf"
+     }
+    ],
+    "questaoSha256": "6ebc18fd46c58481a1c434608cf70ab8e043bec7e1e8da31c16546a19391ef04",
+    "comentarioSha256": "efdfedf1c12de6d58b84cfa12378215b954d1796d94e5ba1b70bf8cc4adce74a"
+   }
   },
   "trauma-1704": {
    "tema": "trauma",
@@ -85256,7 +85999,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85271,7 +86014,36 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "17855f937b2ad48934d75adc31e99bd089d5edf8a696635d96be86d0b01ed71e"
+   "questaoSha256": "17855f937b2ad48934d75adc31e99bd089d5edf8a696635d96be86d0b01ed71e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Primeiro tempo: o fixador transarticular",
+       "Segundo tempo: plano, articulação e placas"
+      ],
+      "blocos": [
+       "primeiro-tempo-o-fixador-transarticular-428075f5",
+       "primeiro-tempo-o-fixador-transarticular-bfd3dc28",
+       "primeiro-tempo-o-fixador-transarticular-f197070d",
+       "primeiro-tempo-o-fixador-transarticular-4ac56b38",
+       "primeiro-tempo-o-fixador-transarticular-f5e58e6d",
+       "segundo-tempo-plano-articulacao-e-placas-14a2a86c"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "d39ddef509b192d75220199c7fb983d619582b63402e626c1419836409511ff3"
+     }
+    ],
+    "questaoSha256": "17855f937b2ad48934d75adc31e99bd089d5edf8a696635d96be86d0b01ed71e",
+    "comentarioSha256": "217e4aa3cc34476b027aa76d83d6bdb44ae9d1b64c2fcbf13ca5c64a7660d1d2"
+   }
   },
   "trauma-1705": {
    "tema": "trauma",
@@ -85280,7 +86052,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85295,7 +86067,32 @@
    "resumosCandidatos": [
     "rockwood10-64-pilao-tibial"
    ],
-   "questaoSha256": "eb0ded02eaca85bb9b51894ad2eb7d10fb07472655d8b4a04d296f1463d0858c"
+   "questaoSha256": "eb0ded02eaca85bb9b51894ad2eb7d10fb07472655d8b4a04d296f1463d0858c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-64-pilao-tibial",
+      "titulo": "Fratura do pilão tibial",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
+      "secoes": [
+       "Resultados e artrose pós-traumática"
+      ],
+      "blocos": [
+       "resultados-e-artrose-pos-traumatica-62c34c34",
+       "resultados-e-artrose-pos-traumatica-0dd7d9b0",
+       "resultados-e-artrose-pos-traumatica-119ba320"
+      ],
+      "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
+      "trechosSha256": "aef23b76455c64aae4d42da71d78ba20461d83c99772febc777ac1aef533b5c5"
+     }
+    ],
+    "questaoSha256": "eb0ded02eaca85bb9b51894ad2eb7d10fb07472655d8b4a04d296f1463d0858c",
+    "comentarioSha256": "e7368249056d24d27856696afd502490d07ba359f57f8116fc156fe5585607d7"
+   }
   },
   "trauma-1706": {
    "tema": "trauma",
@@ -85577,7 +86374,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85592,7 +86389,30 @@
    "resumosCandidatos": [
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "e7aa2c9a59f929b25c4ec16f7337e99e18dd03ad79015fd3f86a447aa281999a"
+   "questaoSha256": "e7aa2c9a59f929b25c4ec16f7337e99e18dd03ad79015fd3f86a447aa281999a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-63-diafise-tibia",
+      "titulo": "Fratura da diáfise da tíbia e da fíbula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+      "secoes": [
+       "Classificação: AO 42 e as partes moles"
+      ],
+      "blocos": [
+       "classificacao-ao-42-e-as-partes-moles-6a238635"
+      ],
+      "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+      "trechosSha256": "4fd84db813a2de292603f435081bf540cef4b5e4b565fe9c3980cc408091ed6e"
+     }
+    ],
+    "questaoSha256": "e7aa2c9a59f929b25c4ec16f7337e99e18dd03ad79015fd3f86a447aa281999a",
+    "comentarioSha256": "926172af2a0c81442c64e4bcef9f7c5354d469a2d49bc8ebe26e1017a72be324"
+   }
   },
   "trauma-1712": {
    "tema": "trauma",

@@ -1,0 +1,42 @@
+{
+  "base": "2813dec1da531e71e1cf06a0a312931fc33ff05c",
+  "criterio": "Sete enunciados e todas as alternativas confrontados individualmente com o corpo e tabelas independentes. Comentários e gabaritos preservados; pendências não contam como revisão.",
+  "resumoSha256": "587c6918b1f800a0dd3a4ae9e1f35f7868059ef1af9376875e61c904dfade01e",
+  "questoes": {
+    "pe-tornozelo-0086": {
+      "questaoSha256": "9f57999ca3d6dda034ce40f0584583ab86b648f197103ff272e47ba30557ae23",
+      "pendencia": "O corpo do resumo 64 atribui a visão de todo o plafond à anterior direta, ausente das alternativas. Descreve áreas vistas pela anteromedial e anterolateral, mas não demonstra comparativamente qual das quatro opções expõe a maior área nem separa a versão clássica da modificada na pergunta. Falta estudo/descrição primária de extensão de exposição que sustente a comparação, sem transformar o contexto que escolhe B em prova independente. Gabarito B preservado.",
+      "estado": "pendente-fonte"
+    },
+    "pe-tornozelo-0113": {
+      "questaoSha256": "ae1931f0f44f0b91f3a395c87f324bcb265ece17cdedc09fae9db666a9d46d3b",
+      "pendencia": "O corpo do resumo 64 orienta a incisão anterolateral para as bases do terceiro e quarto metatarsais conjuntamente. A questão oferece terceiro e quarto como respostas separadas e a banca marca C (quarto). Falta definição primária do eixo/raio exato da variante técnica para justificar uma resposta única; não excluir o terceiro apenas pela letra oficial nem usar a justificativa contextual como fonte. C preservada.",
+      "estado": "pendente-fonte"
+    },
+    "pe-tornozelo-0370": {
+      "questaoSha256": "5feb9a6aa3974d580684c037fdf77593d127593c47afc5768ac2563908cd4a4b",
+      "pendencia": "O resumo 64 diferencia punção da serosa e preservação da hemorrágica, mas não quantifica nem compara o efeito do desbridamento sobre complicações. A afirmação geral de certo/errado não especifica tipo de bolha, técnica ou população. Falta estudo/fonte primária desse efeito e seus limites; não transformar uma recomendação de manejo em prova de aumento de taxa. Resposta bibliográfica B preservada sem novo provável ou selo.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0047": {
+      "questaoSha256": "e83d72b6ce47caa55469a47bff8e96ca084467b81854510680c044532b36a6c5",
+      "pendencia": "O resumo 64 define 43A/B/C e afirma que os grupos B seguem separação e afundamento, mas não detalha B1/B2/B3. Falta tabela primária AO/OTA da versão aplicável para conferir B3 como depressão multifragmentária e diferenciar cisalhamento, metafisária complexa e articular/metafisária simples. O próprio contexto informa que esse detalhe vem de fora do capítulo. C oficial preservada.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0821": {
+      "questaoSha256": "8d5b47ef3b15fd3e14900c2d076220f1790d673a1960fa4001bd384e81da0e39",
+      "pendencia": "O corpo do resumo 64 sustenta risco do tibial por fragmento no túnel do tarso, mas não demonstra risco do sural especificamente no desvio posteromedial. O sural aparece na incisão posterolateral, outro contexto. Falta fonte do mecanismo traumático e dos dois nervos do par para conferir todas as alternativas; não atribuir cobertura integral a A por provar só tibial. A oficial preservada.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-0954": {
+      "questaoSha256": "241ec705cab79d2b4eb9955aed97d5298e31f29ea7dfe7d0a1225f68e65aa161",
+      "pendencia": "A via anteromedial no corpo do resumo 64 começa lateral à crista e desce medial ao tibial anterior, mas não declara destino na base do navicular. O término na talonavicular é da anterior direta, outra via. Falta descrição/figura primária do trajeto anteromedial para conferir o segundo componente da opção C sem transferir marcos entre acessos. C oficial preservada; apenas início correto não conclui a revisão.",
+      "estado": "pendente-fonte"
+    },
+    "trauma-1089": {
+      "questaoSha256": "bea662bc2940377e71f1a53099e2deba8e1ce40b397852ea28f88fe67e611e45",
+      "pendencia": "O corpo independente do resumo 64 mostra artrose frequente no pilão, mas não compara diretamente incidência sintomática com calcâneo, acetábulo e planalto. O resumo 62 fornece uma comparação pilão/planalto, sem completar o ranking dos quatro sítios. Falta fonte comparativa que distinga artrose radiográfica de dor/limitação funcional nas quatro alternativas; o bloco contextual que marca planalto não é evidência independente. D preservada.",
+      "estado": "pendente-fonte"
+    }
+  }
+}
