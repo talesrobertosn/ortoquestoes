@@ -1,0 +1,97 @@
+{
+  "basePublicada": "8f9902bb73f8c2852938382b3d4b4342e57e8d60",
+  "lotes": {
+    "119-clavicula-classificacao-e-anatomia.json": {
+      "sha256": "500681b7dbbf090569e8f06819487061301c11eb76bc5cfbef467a7550ff3770",
+      "ids": [
+        "trauma-0023",
+        "trauma-1086",
+        "trauma-1179",
+        "trauma-1366",
+        "trauma-1368",
+        "trauma-1369",
+        "ombro-cotovelo-0250",
+        "ombro-cotovelo-0255",
+        "trauma-0773",
+        "trauma-0788"
+      ]
+    },
+    "120-clavicula-e-fundamentos-umero.json": {
+      "sha256": "ea168539982c7d072ccd00954495a73989a747d13887329d04db5930c5233775",
+      "ids": [
+        "trauma-0666",
+        "trauma-0689",
+        "trauma-1370",
+        "conceitos-basicos-0008",
+        "conceitos-basicos-0195",
+        "trauma-0087",
+        "trauma-0266",
+        "trauma-0532",
+        "trauma-1377",
+        "trauma-1385"
+      ]
+    },
+    "121-umero-tecnica-e-nervo-radial.json": {
+      "sha256": "bc9b6cb6eb7b45b26120501d6ed8d3d0a38199b7d7bace7ab646dab3f82bf959",
+      "ids": [
+        "trauma-0674",
+        "trauma-0784",
+        "trauma-0876",
+        "trauma-0970",
+        "trauma-0981",
+        "trauma-1226",
+        "trauma-1372",
+        "trauma-1373",
+        "trauma-1374",
+        "trauma-1384"
+      ]
+    }
+  },
+  "reconciliacaoAnterior": {
+    "pr": 504,
+    "head": "ea12fa933b707195d4743c662d8a63050d955e9e",
+    "ci": 40070296368,
+    "merge": "8f9902bb73f8c2852938382b3d4b4342e57e8d60",
+    "pages": 40070398047,
+    "deployJob": 120802945679,
+    "avulsosIntegrais": 20,
+    "imagensIntegrais": 5
+  },
+  "validacaoEditorial": {
+    "fixturesComentarios": "14 passaram",
+    "acervo": "sem erros",
+    "npmTest": "suíte completa passou",
+    "build": "passou",
+    "cadeia": "30 IDs únicos; aplicações 119–121 reproduzidas desde a base; questões/gabaritos/áreas/membros alheios preservados, todas as alternativas, fontes, hashes e avulsos integrais conferidos",
+    "interface": "12 casos em celular/computador: 0023,1086,1179,ombro-0250,ombro-0255,0773,0788,0666,0689,conceitos-0008,conceitos-0195,1372; quatro figuras, tabela, alertas e destinos de fonte conferidos; capturas representativas abertas"
+  },
+  "figuras": {
+    "ombro-cotovelo/ombro-cotovelo-0251-1.jpeg": {
+      "sha256": "9cd347b706fa0baf1e01e774d27b74c800b008d28a4a036ff6a22f7d0b7e63c9",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "ombro-cotovelo/ombro-cotovelo-0256-1.jpeg": {
+      "sha256": "f5cbd953556bf9ba86748846cff27732255076bf6e3d675b974d24a174904a77",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-0773-1.jpeg": {
+      "sha256": "32534c19331de7a86ad0725d3ff456dbfe6ac03798dd68d617fa6a9f2cb8d3c4",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    },
+    "trauma/trauma-0788-1.jpeg": {
+      "sha256": "0e77137ce2588249cf5348fea62de841d9c4bf3de331adc8a3b82da60addd943",
+      "inspecao": "Original aberto antes da redação; interface conferida; fingerprint inclui bytes."
+    }
+  },
+  "lacunas": "121-lacunas-clavicula-e-umero.json: cinco pendências específicas, sem revisão concluída.",
+  "preservados": [
+    "trauma-0702",
+    "ombro-cotovelo-0372"
+  ],
+  "foraDestaPassagem": {
+    "id": "trauma-1729",
+    "motivo": "Área cirurgia-mao e ENARE Cirurgia da Mão; Green local não disponível nos dois caminhos verificados, sem alteração da área para contornar o fluxo."
+  },
+  "publicado": false,
+  "proximoLote": "122"
+}

@@ -2796,15 +2796,41 @@
   "conferido": false
  },
  "ombro-cotovelo-0250": {
+  "conceito": "A seta aponta a faixa que cruza a **borda superior do esterno, entre as duas clavículas**: é o **ligamento interclavicular**, alternativa A. A sua posição sobre a fúrcula distingue-o da ligação inferior com a primeira costela.\n\nO resumo descreve o interclavicular como um **tirante contra a queda da clavícula medial**. Já a cápsula posterior é o principal freio da translação anteroposterior da esternoclavicular, e os costoclaviculares ligam a primeira costela à fossa romboide na face inferior da clavícula (Rockwood, 10ª ed., cap. 34, “Os ligamentos mediais”).\n\nEssas funções não são intercambiáveis. Identificar uma faixa acima da articulação não autoriza chamá-la de costoclavicular apenas porque ambas estabilizam a clavícula. Na imagem, é preciso seguir origem, destino e relação com o esterno: a estrutura assinalada atravessa a região superior entre os lados.\n\nA figura é uma ilustração anatômica, não uma demonstração de luxação ou de ligamento rompido. O exercício é reconhecer a estrutura antes de associar a cada uma o movimento que ela contém.\n\n> **Na prova:** entre as clavículas, sobre a fúrcula, é interclavicular; abaixo, em direção à primeira costela, é costoclavicular.",
+  "correta": "**A: interclavicular.** O trajeto sobre a borda superior do esterno ligando as clavículas corresponde à faixa assinalada.",
   "incorretas": {
-   "B": "**Fica embaixo.** O costoclavicular liga a face inferior da clavícula medial à primeira costela, e não cruza a linha média.",
-   "C": "**Liga costelas ao esterno.** O esternocostal radiado vai das cartilagens costais ao esterno, sem relação com a clavícula.",
-   "D": "**Um lado só.** O esternoclavicular anterior reforça a cápsula anterior de uma articulação, sem cruzar a incisura jugular."
+   "B": "**A ligação costoclavicular fica inferiormente.** Ela une primeira costela e face inferior da clavícula, e não cruza por cima do esterno entre os dois lados como a seta mostra.",
+   "C": "**Aponta para outra relação articular.** A estrutura assinalada acompanha a margem superior do esterno e conecta as clavículas, não uma ligação esternocostal.",
+   "D": "**A cápsula anterior local não é a ponte entre os lados.** A seta marca a faixa superior interclavicular, em vez da cobertura anterior de uma esternoclavicular isolada."
   },
-  "conceito": "**A articulação esternoclavicular.** É a **única articulação verdadeira** entre o membro superior e o esqueleto axial. As superfícies são incongruentes (menos da metade da extremidade medial da clavícula toca o manúbrio), e a estabilidade vem quase toda dos **ligamentos** e de um **disco intra-articular**, que divide a articulação em dois compartimentos e se prende em cima na clavícula e embaixo na primeira cartilagem costal.\n\n**Os ligamentos, de fora para dentro.** O **ligamento interclavicular** cruza horizontalmente a **incisura jugular**, sobre o manúbrio, unindo as extremidades mediais das duas clavículas e reforçando a parte superior das cápsulas. Os **esternoclaviculares anterior e posterior** são espessamentos da cápsula; o **posterior** é o mais importante contra a translação, tanto anterior quanto posterior. O **costoclavicular** (ligamento romboide), o mais forte, vai da face inferior da clavícula medial à primeira costela, com feixes anterior e posterior, e funciona como eixo de rotação. O **esternocostal radiado** liga as cartilagens costais ao esterno e não pertence à articulação da clavícula.\n\n**Uma fise que fecha tarde.** A **epífise medial da clavícula** é o último centro de ossificação a aparecer (18 a 20 anos) e a fechar (23 a 25 anos). Por isso muitas \"luxações\" esternoclaviculares em jovens até cerca de 25 anos são, na verdade, **descolamentos epifisários** (fise), com bom potencial de remodelação.\n\n**A luxação posterior é a perigosa.** A anterior é mais comum e benigna. A **posterior** pode comprimir **traqueia, esôfago e grandes vasos**, causando dispneia, disfagia ou congestão venosa. O diagnóstico é por **tomografia** (ou incidência de **Serendipity**, 40 graus cefálicos). A redução é feita em centro cirúrgico com **cirurgião vascular** ou torácico disponível.\n\n**Na prova:** a banda que cruza a **incisura jugular** unindo as duas clavículas é o **interclavicular**; o mais forte é o **costoclavicular**; o mais importante contra a translação é o **esternoclavicular posterior**.",
-  "correta": "**Interclavicular.** É a banda horizontal que cruza a incisura jugular sobre o manúbrio, unindo as duas clavículas e reforçando as cápsulas por cima.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+     ],
+     "blocos": [
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+     ],
+     "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+     "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+    }
+   ],
+   "questaoSha256": "04d544943fc36e9500a00c94af287fe1a9d6913cba104f550e621d382cf3542f",
+   "comentarioSha256": "a26f240c1e04f1724bd092124cb82effc3e1cbcfc57c870903c2a89a05fd8d3e"
+  }
  },
  "ombro-cotovelo-0251": {
   "incorretas": {
@@ -2851,15 +2877,46 @@
   "conferido": false
  },
  "ombro-cotovelo-0255": {
+  "conceito": "Na face inferior da clavícula, a seta marca o **tubérculo conoide**, local de inserção do **ligamento conoide**, alternativa A. O relevo fica no setor lateral do osso, mas o conoide é o componente **medial** do par coracoclavicular.\n\nO outro componente é o trapezoide, mais lateral, que se insere numa crista inferior vizinha. Os dois ligamentos nascem da base do coracoide e limitam a subida da clavícula lateral. Essa disposição é o fundamento das classificações das fraturas distais: o que muda é quais ligações permanecem com cada fragmento (Rockwood, 10ª ed., cap. 34, “Os ligamentos laterais”).\n\nNo IIA, o traço medial ao conoide deixa ambos os ligamentos no fragmento distal. No IIB, o conoide se rompe e o trapezoide continua preso ao distal. Reconhecer o tubérculo na peça anatômica ajuda a reconstruir essa relação numa radiografia, sem transformar uma área de inserção em diagnóstico automático de fratura.\n\n**Face inferior não significa uma única estrutura.** Há subclávio e, na extremidade medial, a inserção costoclavicular. O que decide esta figura é o relevo específico e sua localização, não apenas o lado inferior da clavícula.\n\n> **Na prova:** tubérculo conoide recebe o conoide; trapezoide fica numa crista mais lateral.",
+  "correta": "**A: ligamento conoide.** O nome do tubérculo e a disposição medial dentro do par coracoclavicular correspondem à área indicada.",
   "incorretas": {
-   "B": "**Terço médio.** O subclávio se insere no sulco do terço médio da face inferior.",
-   "C": "**Mais lateral e anterior.** O trapezoide se prende na linha trapezoide, lateral ao tubérculo conoide.",
-   "D": "**Extremidade medial.** O costoclavicular se prende na impressão rugosa perto da articulação esternoclavicular."
+   "B": "**O subclávio ocupa a face inferior, mas não é a inserção deste tubérculo.** O relevo assinalado identifica a ligação conoide no setor lateral, e não toda a superfície coberta pelo músculo.",
+   "C": "**É o vizinho lateral.** O trapezoide também é coracoclavicular, mas sua inserção é numa crista ao lado; não deve ser confundido com o tubérculo conoide.",
+   "D": "**A ligação costoclavicular está no lado medial.** Ela prende a primeira costela à fossa romboide inferomedial, longe do relevo lateral apontado."
   },
-  "conceito": "**A face inferior da clavícula.** Ela tem, de medial para lateral, três marcas que as provas cobram. Na extremidade **medial**, a **impressão do ligamento costoclavicular**, rugosa, onde se prende o ligamento que vai à primeira costela. No terço **médio**, o **sulco do músculo subclávio**, onde se insere esse pequeno músculo que vem da primeira costela e protege os vasos subclávios nas fraturas. No terço **lateral**, o **tubérculo conoide**, perto da borda **posterior**, e, lateral e anterior a ele, a **linha trapezoide**.\n\n**Os ligamentos coracoclaviculares.** Nascem na base do **coracoide** e sobem até a clavícula. O **conoide**, medial e posterior, em forma de cone, se prende no tubérculo conoide, a cerca de **4,5 cm** da extremidade lateral. O **trapezoide**, lateral e anterior, achatado, se prende na linha trapezoide, a cerca de **3 cm**. Juntos, estabilizam a acromioclavicular no plano **vertical**; o conoide é o mais importante contra o deslocamento superior.\n\n**Por que isso importa na reconstrução.** Nas luxações acromioclaviculares de alto grau e nas reconstruções anatômicas, os túneis na clavícula são feitos nos pontos do conoide e do trapezoide, reproduzindo a anatomia. Túneis mal posicionados ou grandes demais favorecem **fratura da clavícula**. Nas fraturas da **clavícula distal** (Neer), o que decide a instabilidade é justamente se o **conoide** ficou preso ao fragmento medial ou não: no tipo II, o fragmento medial perde o conoide e sobe.\n\n**Os distratores.** O **trapezoide** se prende mais lateral e anterior; o **subclávio**, no terço médio; o **costoclavicular**, na extremidade medial.\n\n**Na prova:** o **tubérculo conoide**, posterior no terço lateral da face inferior da clavícula, recebe o **ligamento conoide**; lateral a ele, a linha trapezoide.",
-  "correta": "**Ligamento conoide.** A área é o tubérculo conoide, na borda posterior do terço lateral da face inferior da clavícula, onde se prende o feixe medial e vertical dos coracoclaviculares.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos; Classificações: Allman, Neer, Craig, Robinson e AO."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+      "Classificações: Allman, Neer, Craig, Robinson e AO"
+     ],
+     "blocos": [
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d",
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb",
+      "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1",
+      "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+      "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a"
+     ],
+     "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+     "trechosSha256": "bd64ed0d93d22a0fef2b883c6507685dd6d5ec14dd011c4f5313f36672374038"
+    }
+   ],
+   "questaoSha256": "166081f7f55e146d382e59159dabf6a5f44668a09e5fec5ca332995b22ab53af",
+   "comentarioSha256": "f7d9606dd60d84eff58301d7f3d66d458087bf522c08ccd6282fb6e31bb71666"
+  }
  },
  "ombro-cotovelo-0256": {
   "incorretas": {

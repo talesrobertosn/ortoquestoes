@@ -1,0 +1,393 @@
+{
+  "trauma-0666": {
+    "questaoSha256": "200a3e9a0b1317c56c9f630d936424b75b016cc132653a7b21c8bae9ec8810c9",
+    "comentarioAnteriorSha256": "b9f99bed3b7d792623e7ed9850a23e3a25df1b0b40853a6cf1c8f6a6c5d008ba",
+    "comentario": {
+      "conceito": "O gabarito oficial é **B, trauma de alta energia**, mas a tabela de fatores de pseudartrose do resumo não lista a energia como fator independente. Entre as opções, a fonte sustenta o **encurtamento**, com limites variáveis de 1,5–2 cm no texto e mais de 2 cm na tabela. A divergência não deve ser escondida.\n\nO fator mais consistente nas revisões é o **desvio completo**. Ele se relaciona ao afastamento e à perda da relação entre fragmentos, enquanto cominuição e encurtamento acrescentam dificuldades. Tabagismo, idade, sexo feminino e evolução ruim da dor/DASH também aparecem como fatores possíveis (Rockwood, 10ª ed., cap. 34, “Quem não consolida”).\n\n**Energia do trauma e prognóstico não são a mesma variável.** Uma lesão de alta energia pode produzir desvio e cominuição, mas isso não prova que a energia tenha efeito independente na análise de risco. Da mesma forma, contato menor que 50% não é idêntico ao desvio completo que a fonte destaca: não se pode inventar esse corte percentual como se estivesse na tabela.\n\nA alternativa C também pede precisão. O resumo não fixa 1,5 cm como fronteira universal; descreve controvérsia e faixas. O dado de um paciente precisa ser interpretado com padrão, sintomas, demanda e evolução, e não isoladamente para indicar cirurgia.\n\n> **Na prova:** B é o registro oficial; no resumo, desvio e encurtamento têm sustentação explícita, sem comprovação independente para a energia.",
+      "correta": "**B: trauma de alta energia, gabarito oficial.** Preservado no sistema, mas não apresentado como fator independente comprovado pela tabela consultada.",
+      "incorretas": {
+        "A": "**A direção do fator demográfico foi invertida.** A referência lista sexo feminino, não masculino, entre os possíveis fatores de pseudartrose; isso continua sendo associação, não destino individual.",
+        "C": "**É a opção mais próxima do fator explicitamente sustentado, com ressalva do limite.** O texto cita pior prognóstico acima de 1,5–2 cm e a tabela usa mais de 2 cm. Não transformar 1,5 cm numa regra universal nem negar que encurtamento seja relevante.",
+        "D": "**O percentual não corresponde ao fator mais consistente da fonte.** O resumo destaca desvio completo, sem estabelecer contato abaixo de 50% como corte independente. Ele pode representar uma fratura desviada, mas não é a mesma definição."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Pseudartrose, fatores de risco e operar ou não."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial B preservado. A tabela do resumo 34 não lista energia do trauma como fator independente; desvio completo é o fator mais consistente e encurtamento é sustentado, com 1,5–2 cm no texto e >2 cm na tabela. C é bibliograficamente defensável com essa ressalva. Não inventar o corte de 50% de D nem atribuir causalidade independente à energia."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Pseudartrose, fatores de risco e operar ou não"
+        ],
+        "blocos": [
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-8d54eedd",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-caba419b",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-f33ee50a",
+          "pseudartrose-fatores-de-risco-e-operar-ou-nao-5bac1f31"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "50a36ca3b60564d7cd22bd56a5ccd97abe8fd475af59de57e1789fe9012f7447"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0689": {
+    "questaoSha256": "13f8c8f3c5c2d3fc8b0749a5094f31ccd9e0838bcba4690cedfd310e205c4d04",
+    "comentarioAnteriorSha256": "f7e6e3f8f95a2d1bd2fcf5ef12d230d563927a8407d9d208f03a503c1cbaf97c",
+    "comentario": {
+      "conceito": "A banca escolheu **40%**, alternativa C, para retardo/pseudartrose da fratura distal desviada tratada sem cirurgia. O resumo, porém, mostra **variação entre as séries**, não uma taxa única: 20%, 33% e 36% aparecem em populações e desenhos diferentes.\n\nNa fratura instável, o segmento medial perde contenção enquanto o distal permanece ligado à escápula. Movimento e separação dos fragmentos ajudam a explicar a taxa de não união. Mas **não consolidar radiograficamente não equivale a falhar funcionalmente**: muitas pseudartroses distais têm poucos sintomas, sobretudo em pacientes de menor demanda (Rockwood, 10ª ed., cap. 34, “Conservador: pseudartrose frequente, função boa”).\n\nRaval encontrou cerca de um terço sem consolidação nas Neer II tratadas conservadoramente; Hall relatou 36%, enquanto Van der Linde apresentou 20% nas desviadas. O valor 40 da prova se aproxima das séries de um terço, mas **B, 20%, também existe na literatura resumida**. Além disso, a pergunta reúne retardo e pseudartrose, enquanto os estudos podem usar desfechos e tempos diferentes.\n\nA indicação de operar não deriva só de escolher a maior porcentagem. A fonte admite tratamento conservador em muitos casos e reserva cirurgia para instabilidade completa em paciente de alta demanda ou falha sintomática. Não se deve transformar uma taxa radiográfica em necessidade de revisão para todos.\n\n> **Na prova:** C é o gabarito aproximado; para interpretar o paciente, identifique população, definição de falha e sintomas.",
+      "correta": "**C: aproximadamente 40%, resposta oficial.** É próxima dos 33–36% de algumas séries, sem excluir o resultado de 20% de outra coorte.",
+      "incorretas": {
+        "A": "**Fica muito abaixo das séries de fratura distal desviada citadas.** O resumo não oferece 5% como estimativa do grupo perguntado; não há necessidade de atribuí-la a outra população sem fonte.",
+        "B": "**É um resultado real de outra série e não pode ser tratado como sempre falso.** Van der Linde encontrou 20% nas desviadas tratadas sem cirurgia. A banca preferiu uma aproximação das séries com cerca de um terço.",
+        "D": "**Fica acima das estimativas apresentadas para o grupo.** O resumo não sustenta 60% como taxa geral de retardo/pseudartrose distal desviada; taxas de retirada de implante pertencem a outro desfecho."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Terço lateral (distal)."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial C (40%) preservado como aproximação dos 33–36% de Raval/Hall. O resumo também cita 20% em Van der Linde, correspondente a B; não declarar B impossível nem tratar estudos/desfechos diferentes como uma taxa universal. Muitas pseudartroses distais são pouco sintomáticas."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Terço lateral (distal)"
+        ],
+        "blocos": [
+          "terco-lateral-distal-e3f5357d",
+          "terco-lateral-distal-1053aba0",
+          "terco-lateral-distal-25d53230",
+          "terco-lateral-distal-38294fea",
+          "terco-lateral-distal-c071a8d5"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "6bb2e53ce6d56be04cced1bba12811a6cf0f8f05b8c930758ec09f799eb8c13a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1370": {
+    "questaoSha256": "f8b58ac62a5e2d2db10f0d45ba0d8bc4ad635f3b7f48c346b67102bcc12953d6",
+    "comentarioAnteriorSha256": "b7c1d3c150c9c2a4b8a638978ca375fe6852d1987a9eabfaba906c44510b417a",
+    "comentario": {
+      "conceito": "No protocolo descrito para **infecção profunda com implante estável**, colhem-se **pelo menos quatro culturas profundas** e o antibiótico é **suspenso antes da coleta**, sendo iniciado/reajustado depois conforme o resultado. A combinação pedida é C.\n\nO objetivo da cirurgia não é simplesmente remover todo metal. Uma fratura ainda precisa de estabilidade para consolidar. Se o implante permanece estável, o resumo propõe **DAIR: desbridamento, antibiótico e retenção do implante**. As culturas profundas procuram identificar o agente para orientar a antibioticoterapia (Rockwood, 10ª ed., cap. 34, “Infecção”).\n\n**O estado da montagem muda a estratégia.** Implante solto, sem progresso de união, não é o mesmo cenário: o capítulo descreve retirada, desbridamento e reconstrução, imediata ou em etapas conforme agente, paciente e tecidos. Assim, acertar “reter” não significa manter uma placa instável que perpetua o problema mecânico.\n\nA questão também não especifica um número de dias de suspensão; o resumo não fornece esse intervalo. Não se deve inventá-lo nem extrapolar a estratégia de coleta para qualquer apresentação sistêmica. O ponto aqui é a recomendação da fonte para obter amostras profundas antes do esquema dirigido e preservar estabilidade quando ela ainda existe.\n\n**Por que esta questão foi criada.** Ela relaciona a investigação microbiológica ao princípio de conservar uma fixação estável, distinguindo infecção superficial, profunda estável e falha mecânica infectada.",
+      "correta": "**C: quatro; suspendendo.** É o mínimo de amostras e a sequência de coleta/antibiótico descritos na estratégia da fonte para o cenário apresentado.",
+      "incorretas": {
+        "A": "**Erra o mínimo e inverte a sequência de investigação.** O capítulo pede pelo menos quatro amostras profundas e coleta antes de reiniciar o antibiótico orientado pelo resultado.",
+        "B": "**Acerta a sequência, mas reduz o número de amostras.** Duas não correspondem ao mínimo de quatro culturas profundas descrito.",
+        "D": "**O número está correto, a ordem foi trocada.** A fonte orienta suspender antes da coleta e iniciar depois; não é a opção “iniciando” que reproduz o protocolo perguntado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Outras complicações: infecção, pseudartrose operada, implante e refratura."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-34-fratura-clavicula",
+        "titulo": "Fratura da clavícula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 34 · Clavicle Fractures",
+        "secoes": [
+          "Outras complicações: infecção, pseudartrose operada, implante e refratura"
+        ],
+        "blocos": [
+          "outras-complicacoes-infeccao-pseudartrose-operad-be93fad9"
+        ],
+        "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+        "trechosSha256": "c86d1c5c05f866cb89bc70e999b282a72d88ac0e2b1cfbe0c09805b020414908"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "conceitos-basicos-0008": {
+    "questaoSha256": "2c8df66bc07b7597d05cf0e54e3c4c4c5c6ef98af3e914d31064ed8932de367b",
+    "comentarioAnteriorSha256": "809d8327ae4d963d644c86bd5c83fea8e8e127ccd97e6d50813e1710f0f7944a",
+    "comentario": {
+      "conceito": "A órtese de **Sarmiento**, alternativa B, permite que o braço se movimente dentro de um envoltório ajustado sem deixar a fratura completamente livre. Os músculos comprimidos contra as valvas e a gravidade ajudam a manter o alinhamento.\n\nA peça tem duas valvas de plástico presas por tiras ajustáveis. À medida que o edema cede, o paciente reaperta as tiras, mantendo contato com o ventre muscular. Quando a musculatura contrai contra esse envoltório, a pressão se distribui pelas partes moles; o braço pendurado acrescenta tração longitudinal. Essa é a lógica do efeito hidráulico citado no enunciado (Rockwood, 10ª ed., cap. 37, “A órtese funcional”).\n\n**Funcional não significa sem acompanhamento.** A técnica exige cooperação, controle radiográfico e cuidado da pele. O ombro faz pendulares, o cotovelo precisa se mover e o paciente não deve apoiar o cotovelo no começo, pois esse apoio favorece varo. A capacidade do ombro e do cotovelo de compensar algum desvio ajuda a explicar o bom resultado em fraturas fechadas e isoladas selecionadas.\n\nA tala em U é uma imobilização provisória útil, mas afrouxa e escorrega; o Velpeau prende o braço ao tórax. Eles podem fazer parte da fase inicial sem reproduzir todo o princípio definitivo da órtese funcional. Não é correto dizer que qualquer tipoia elimina a gravidade, e sim que não constrói o mesmo envoltório de compressão muscular.\n\n> **Na prova:** contração, contenção das partes moles e gravidade descrevem Sarmiento, com mobilidade orientada e ajustes da órtese.",
+      "correta": "**B: órtese de Sarmiento.** Suas valvas ajustadas comprimem a musculatura e permitem o mecanismo funcional descrito, associado ao braço pendurado.",
+      "incorretas": {
+        "A": "**O Velpeau prende o braço ao tórax.** É útil por pouco tempo para conforto, mas não reproduz o envoltório ajustável e o movimento orientado da órtese definitiva.",
+        "C": "**O gesso axilopalmar restringe o cotovelo.** Não corresponde à estratégia funcional de compressão das partes moles com mobilização cotidiana das articulações.",
+        "D": "**A pinça de confeiteiro é a tala em U provisória.** Pode preceder a órtese, mas não deve ser confundida com a manutenção funcional ajustável que o enunciado descreve."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: O tratamento funcional: a órtese de SARMIENTO."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "O tratamento funcional: a órtese de SARMIENTO"
+        ],
+        "blocos": [
+          "o-tratamento-funcional-a-ortese-de-sarmiento-45f6f9c8",
+          "o-tratamento-funcional-a-ortese-de-sarmiento-252189f7",
+          "o-tratamento-funcional-a-ortese-de-sarmiento-36bd6f71",
+          "o-tratamento-funcional-a-ortese-de-sarmiento-0ca01799",
+          "o-tratamento-funcional-a-ortese-de-sarmiento-43310ebb"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "a7d86e9ee92ad882a897b1ebe4f35f03c9fee4b9549b166999608ce25e5b2d83"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "conceitos-basicos-0195": {
+    "questaoSha256": "21c3614e38eeebb6ffff22945a1a9041dd25b82838a9910dc06ebeea9d929ec6",
+    "comentarioAnteriorSha256": "b6df9db0cdd4c7a4b143f62489ae31e6e1c0daf692fe49914842d5ad8f8d6a45",
+    "comentario": {
+      "conceito": "A pseudartrose diafisária do úmero descrita como predominante é a **atrófica**, e a reconstrução mais usada é **placa com estímulo biológico por enxerto**, alternativa A.\n\nO problema tem duas dimensões: o foco precisa de estabilidade e de condições para voltar a consolidar. Na apresentação atrófica, apenas trocar o metal sem tratar a biologia pode deixar parte do problema. O resumo orienta desbridar até osso que sangra e reconstruir com placa forte e enxerto autólogo quando indicado (Rockwood, 10ª ed., cap. 37, “Pseudartrose”).\n\nA placa de compressão deve ter ancoragem adequada. O texto descreve quatro parafusos de cada lado, ou três quando há um bom parafuso de tração, sem transformar isso numa montagem idêntica para qualquer qualidade óssea ou defeito. Fibrose e calo podem envolver o radial; a revisão exige protegê-lo e tem maior risco neurológico que a fratura aguda.\n\n**Mais usada não significa única possível.** Haste e fixadores foram empregados, e a pseudartrose depois de haste pode receber placa complementar mantendo o implante. Nessa situação, a placa acrescenta sobretudo controle rotacional. Isso não muda a resposta à pergunta sobre o tipo predominante e a reconstrução mais frequente.\n\n> **Na prova:** atrófica com placa; na reconstrução, trate estabilidade e biologia, não apenas o nome do implante.",
+      "correta": "**A: atrófica e com placa.** É o padrão predominante e o tratamento mais usado, geralmente associado a enxerto e preparo do foco.",
+      "incorretas": {
+        "B": "**Acerta o tipo, mas troca a estratégia mais frequente.** A haste foi usada com resultados variáveis; o resumo aponta a placa com enxerto como a reconstrução mais popular e favorecida pela revisão citada.",
+        "C": "**Escolhe a placa e muda o tipo predominante.** A fonte descreve a maioria como atrófica, não oligotrófica; a preocupação biológica acompanha essa apresentação.",
+        "D": "**Não reproduz nenhum dos dois elementos pedidos.** A combinação de referência é atrófica com placa, sem excluir que outras apresentações ou técnicas existam em situações específicas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Pseudartrose"
+        ],
+        "blocos": [
+          "pseudartrose-6427266b",
+          "pseudartrose-9719258c",
+          "pseudartrose-c68d4d26",
+          "pseudartrose-fc31c240",
+          "pseudartrose-51afd2d6",
+          "pseudartrose-17c20cc3"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "698296d672c649f94feb72d3ab1a9be48be3cb141242fa0d097e9350fe570946"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0087": {
+    "questaoSha256": "0fbe5444a653bbf0406b1c9cee04d13bf6e99e7fad95556d1dfa9bff4ea77b89",
+    "comentarioAnteriorSha256": "7d7d3eb810368c6e64929a063cf76c7db34510fd61585394a10a9f248b43a77a",
+    "comentario": {
+      "conceito": "O nervo radial atravessa justamente a região em que a diáfise é exposta e fixada. Por isso, a **paralisia radial**, alternativa D, é a complicação característica mais frequente cobrada na redução aberta com placa pela via anterolateral.\n\nEle corre atrás do úmero no sulco espiral e passa para a frente pelo septo lateral. Na via anterolateral, a metade lateral do braquial ajuda a protegê-lo; perto do cotovelo, ele se relaciona com o intervalo entre braquial e braquiorradial. Tração excessiva, afastadores, broca e parafuso além da cortical oposta podem lesá-lo (Rockwood, 10ª ed., cap. 37, “Vias de acesso” e “Cuidados depois e resultados”).\n\nO resumo relata paralisia pós-operatória de **2–5%** nas séries citadas, quase sempre neuropraxia. Isso não garante recuperação de todo déficit: é essencial documentar a função **antes** da operação, distinguir lesão primária de secundária e avaliar se há erro técnico evidente. Sem isso, um déficit já presente pode ser atribuído à cirurgia ou um aprisionamento real pode ser ignorado.\n\nInfecção, pseudartrose e refratura também importam, mas são desfechos diferentes. As taxas dependem da seleção, da gravidade e da técnica; não se devem comparar números de uma exposta complexa aos de uma fechada simples como se fossem a mesma população.\n\n> **Na prova:** placa anterolateral lembra radial; antes e depois da operação, registre a função do nervo.",
+      "correta": "**D: paralisia do nervo radial.** O trajeto junto ao úmero e ao campo operatório explica a vulnerabilidade; a lesão descrita nas séries é geralmente transitória.",
+      "incorretas": {
+        "A": "**É uma complicação possível, mas não a associação mais característica da pergunta.** O resumo cita infecção de 1–2% nas fechadas e 2–5% nas expostas, com populações distintas; o foco do acesso anterolateral é a proteção do radial.",
+        "B": "**A refratura não é o desfecho neurológico ligado ao campo da via.** Deve ser considerada em outros contextos mecânicos e de retirada de material, mas não supera a vulnerabilidade radial descrita aqui.",
+        "C": "**A placa costuma consolidar em mais de 95% nas séries resumidas, sem eliminar falhas.** Fixação insuficiente ou distração podem levar à pseudartrose; isso não substitui a paralisia radial como resposta da questão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: O nervo radial; Vias de acesso e os nervos em risco; Placa: técnica, números e resultados."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Como ler este capítulo",
+          "O nervo radial",
+          "Vias de acesso e os nervos em risco",
+          "Placa: técnica, números e resultados"
+        ],
+        "blocos": [
+          "como-ler-este-capitulo-92ca4d5c",
+          "o-nervo-radial-69792673",
+          "vias-de-acesso-e-os-nervos-em-risco-e5eff37e",
+          "vias-de-acesso-e-os-nervos-em-risco-9caef227",
+          "o-nervo-radial-597d2b4d",
+          "placa-tecnica-numeros-e-resultados-c263afc4"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "064e3eedb87e57e413ab81003cde0ae03492a033076e5dcd49d5f173d6dc6488"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0266": {
+    "questaoSha256": "1b2707460bfac7d97e336bdf6c249d006a3f6856216557f495a242db26d9567f",
+    "comentarioAnteriorSha256": "255c5fe717d83de1d94bd18a1c154da54540c8de7d90a691867e52139493c1e6",
+    "comentario": {
+      "conceito": "O **cotovelo flutuante**, alternativa A, combina fratura do úmero com fraturas do antebraço do mesmo lado, deixando a articulação entre segmentos instáveis. Esse conjunto é uma indicação de estabilização cirúrgica, diferentemente dos três desvios pequenos oferecidos nas outras opções.\n\nO resumo descreve a lesão como de alta energia e com risco de rigidez, pseudartrose, lesão neurovascular e outras complicações. Fixar as fraturas procura permitir mobilização orientada e devolver um membro utilizável, em vez de imobilizar prolongadamente todo o conjunto (Rockwood, 10ª ed., cap. 37, “Indicações de cirurgia” e “O cotovelo flutuante”).\n\nPara uma fratura isolada, fechada e tratável na órtese, o capítulo tolera aproximadamente **15–20 graus de angulação, até 30 graus de rotação e 2–3 cm de encurtamento**. São referências de opinião de especialistas, não garantias de função para todo paciente. Ainda assim, 1 cm, 10 graus e 20 graus de rotação ficam abaixo dos limites usuais apresentados.\n\nA decisão real também depende de demanda, dominância, pele, cooperação e capacidade de acompanhar o tratamento. A questão não afirma que qualquer desvio do úmero exige cirurgia; ela contrasta uma lesão combinada grave com medidas isoladas que podem ser aceitáveis.\n\n> **Na prova:** cotovelo flutuante é o contexto cirúrgico; não confunda pequenos desvios toleráveis com instabilidade de todo o membro.",
+      "correta": "**A: cotovelo flutuante.** A lesão combinada impede controlar adequadamente os dois segmentos com a mesma lógica de uma fratura isolada e favorece estabilizar para mobilizar cedo.",
+      "incorretas": {
+        "B": "**Um centímetro está dentro da referência de encurtamento tolerável.** O resumo trabalha com cerca de 2–3 cm, individualizando o paciente; a medida oferecida não é indicação isolada.",
+        "C": "**Dez graus não ultrapassam o limite angular usual.** A fonte menciona 15–20 graus conforme o trecho e a direção, sem transformar um valor pequeno em obrigação de operar.",
+        "D": "**A rotação de 20 graus está abaixo dos 30 graus de referência.** Isso não dispensa julgamento funcional, mas não é a indicação isolada que a questão procura."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Quanto se tolera e quando operar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Quanto se tolera e quando operar"
+        ],
+        "blocos": [
+          "quanto-se-tolera-e-quando-operar-2d183bd1",
+          "quanto-se-tolera-e-quando-operar-0735ebe6",
+          "quanto-se-tolera-e-quando-operar-9b9398e1",
+          "quanto-se-tolera-e-quando-operar-af0d5a24",
+          "quanto-se-tolera-e-quando-operar-2d42feef"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "2d2e2c5746ca7165fb74c8997bbfc691583e49c8542278626716572ce3637017"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0532": {
+    "questaoSha256": "c8b95d4c291296dfb0e91b5085af90e7833d0242c3f7545b9f124beab96ba0bc",
+    "comentarioAnteriorSha256": "2329e8c000002c4c195ff174d6c736354a9b7829c1170cf759d044b3ad960b2b",
+    "comentario": {
+      "conceito": "Na janela distal da MIPO anterior do úmero, a **supinação completa do antebraço** é recomendada para ajudar a proteger o **musculocutâneo**, alternativa B. Isso não elimina o risco do radial, mas identifica o nervo relacionado à manobra perguntada.\n\nA incisão distal acompanha a borda lateral do bíceps, perto do cotovelo. Ao entrar entre bíceps e braquial, identifica-se o musculocutâneo; o braquial é dividido na linha média, deixando sua metade medial com esse nervo e a lateral como proteção do radial. O estudo em cadáver citado no resumo recomenda supinação e abertura suficiente para enxergar o nervo, em vez de trabalhar por uma janela mínima às cegas (Rockwood, 10ª ed., cap. 37, “A técnica anterior e o musculocutâneo”).\n\n**Pequena incisão não torna segura a passagem do material.** O radial pode estar muito perto da placa, especialmente nas fraturas distais, e parafusos anteroposteriores podem ameaçar os dois nervos. A posição do antebraço é um cuidado adicional, não substituto de identificação e proteção.\n\nOs autores são cautelosos com MIPO no úmero e a reservam ao cirurgião experiente. Se há paralisia radial pré-operatória, o resumo não recomenda essa técnica; não se deve usar o acerto da pergunta para indicar MIPO em toda fratura.\n\n> **Na prova:** supinação na janela distal anterior lembra musculocutâneo; o radial continua próximo e precisa de proteção.",
+      "correta": "**B: musculocutâneo.** É o nervo identificado no intervalo bíceps-braquial da janela distal e relacionado à recomendação de supinação completa.",
+      "incorretas": {
+        "A": "**Também corre risco, mas não é o alvo específico da manobra descrita.** Na técnica anterior, a metade lateral do braquial ajuda a proteger o radial, que ainda pode ser ameaçado por placa e parafusos.",
+        "C": "**Não é o nervo do intervalo anterior pequeno perguntado.** O ulnar tem relação medial e posterior distal; sua proteção não substitui a identificação do musculocutâneo nessa janela.",
+        "D": "**Troca o tronco solicitado por outro segmento nervoso.** A recomendação anatômica citada é dirigida ao musculocutâneo na janela distal; não descreve o interósseo posterior como estrutura a identificar ali."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa minimamente invasiva (MIPO); Vias de acesso e os nervos em risco."
+      ],
+      "conferido": false,
+      "alerta": "Parte da literatura sobre a MIPO anterior do úmero (estudos de Apivatthakakul) relaciona a supinação completa do antebraço a maior distância do nervo radial em relação à placa na região distal. O gabarito da banca aponta o musculocutâneo; o comentário mantém o gabarito, mas o ponto merece conferência."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Placa minimamente invasiva (MIPO)",
+          "Vias de acesso e os nervos em risco"
+        ],
+        "blocos": [
+          "placa-minimamente-invasiva-mipo-18908699",
+          "placa-minimamente-invasiva-mipo-91e6df51",
+          "placa-minimamente-invasiva-mipo-7bf9314d",
+          "placa-minimamente-invasiva-mipo-91fd0efa",
+          "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "8f1863f58c8e9f61d8c080c4857a6895a9bca062efa213be6a2805e4d0d4f016"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1377": {
+    "questaoSha256": "8c0b5d8bd0bbbafe1f39769b42dca4824b8af6ab20be130f566fab06930bc4a9",
+    "comentarioAnteriorSha256": "cf18c72b9b466a641e67a5b4d7bb10f2a15a7a8e09209716626eb738ff551f36",
+    "comentario": {
+      "conceito": "Ao separar as cabeças longa e lateral do tríceps na via posterior, encontram-se juntos o **nervo radial e a artéria braquial profunda**, alternativa C. Eles percorrem o sulco espiral junto ao úmero.\n\nA exposição começa no plano entre as duas cabeças superficiais. Por baixo está a cabeça medial, cuja divisão longitudinal dá acesso ao periósteo posterior. O trajeto do radial precisa ser reconhecido antes de aprofundar e mobilizar os tecidos, evitando que a ampliação da via se transforme em tração do feixe (Rockwood, 10ª ed., cap. 37, “Via posterior”).\n\n**Braquial profunda e braquial não são nomes intercambiáveis.** A primeira acompanha o radial atrás do osso; a artéria braquial principal está com o mediano na face medial do compartimento anterior. A associação anatômica é que decide a alternativa, não apenas o fato de ambos serem vasos do braço.\n\nO resumo também descreve a variante paratricipital, que trabalha pelos lados do tríceps e pode exigir mobilização do radial ao subir. Ver o nervo diretamente facilita protegê-lo, mas não demonstra que toda via posterior tenha menor paralisia que qualquer outra; isso seria uma comparação clínica diferente.\n\n**Por que esta questão foi criada.** Ela faz o aluno seguir o plano profundo do tríceps e distinguir o feixe posterior do feixe mediano-braquial anterior.",
+      "correta": "**C: radial; braquial profunda.** É o par que aparece no sulco espiral ao afastar as cabeças longa e lateral.",
+      "incorretas": {
+        "A": "**O nervo está correto, o vaso foi trocado.** Quem acompanha o radial no sulco é a braquial profunda, não a braquial principal.",
+        "B": "**Descreve o feixe do compartimento anterior medial.** Mediano e braquial estão juntos, mas não são o par exposto nesse intervalo posterior do tríceps.",
+        "D": "**Acerta o vaso e muda o nervo.** A braquial profunda acompanha o radial; o mediano não passa a ser uma estrutura posterior do sulco espiral."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Vias de acesso e os nervos em risco"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-os-nervos-em-risco-d524b37b",
+          "vias-de-acesso-e-os-nervos-em-risco-b35db364",
+          "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+          "vias-de-acesso-e-os-nervos-em-risco-187b9899"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "1a4139c174e88097f14566e1d16b36c9b49b9155838ea3a744aabd37fff8df19"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1385": {
+    "questaoSha256": "ce62b155413cc830257049bb96a1289e271f2a10ea40cea05883f3b973c03c67",
+    "comentarioAnteriorSha256": "48cb9dd4006e6ad36e25bd2978781d11f333ea9deba8a0eea6cb968cc0465bbd",
+    "comentario": {
+      "conceito": "Na fratura diafisária por metástase, a vantagem destacada da haste é **proteger todo o úmero**, alternativa C. O objetivo deixa de ser apenas comprimir um traço para consolidar e passa a incluir estabilidade duradoura num osso doente.\n\nO resumo descreve a haste bloqueada como uma montagem rápida e pouco traumática, que protege o osso inteiro e pode facilitar a radioterapia. Como a consolidação não é esperada em muitas dessas situações, falhas ósseas podem receber cimento e o implante precisa servir ao paciente durante sua sobrevida (Rockwood, 10ª ed., cap. 37, “Fratura patológica”).\n\n**Isso não torna a haste obrigatória em todo tumor.** A fonte considera localização, extensão, origem, comorbidades e prognóstico. A placa tem espaço em lesões metafisárias, metástase única e melhor prognóstico segundo o autor citado. A decisão também é diferente numa lesão ainda sem fratura.\n\nAs outras expressões são princípios de fixação válidos em outros cenários, mas não explicam o motivo específico escolhido aqui. Compressão depende de uma lógica de união do foco; ângulo fixo refere-se ao bloqueio parafuso-placa; ponte descreve como se atravessa uma zona fragmentada. Nenhuma delas substitui a proteção longitudinal do osso comprometido.\n\n**Por que esta questão foi criada.** Ela destaca a mudança de objetivo na fratura metastática: construir estabilidade e proteção do osso para o restante da vida, sem pressupor a biologia de uma fratura traumática simples.",
+      "correta": "**C: proteção de todo o úmero.** A haste bloqueada atravessa e protege o osso, vantagem explicitamente destacada para o contexto patológico.",
+      "incorretas": {
+        "A": "**Não é o objetivo predominante descrito.** A consolidação pode não ser esperada; o implante precisa estabilizar o osso doente, e não depender apenas de compressão para união.",
+        "B": "**É uma função mecânica mais geral.** Atravessar uma cominuição não explica, por si, por que a haste é destacada para proteger todo o úmero na doença metastática.",
+        "D": "**É o conceito de placa bloqueada, não a vantagem longitudinal pedida.** A fixação de ângulo estável pode ser útil, mas a preferência citada para a haste se baseia na proteção do osso inteiro."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa, haste ou MIPO: o que as comparações mostram; Situações especiais."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Placa, haste ou MIPO: o que as comparações mostram",
+          "Situações especiais"
+        ],
+        "blocos": [
+          "placa-haste-ou-mipo-o-que-as-comparacoes-mostram-b5c6c157",
+          "situacoes-especiais-b32789f6"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "5703ca635f0bc29cf663cb9331a8201d448c546105e80a0445404479232e2904"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

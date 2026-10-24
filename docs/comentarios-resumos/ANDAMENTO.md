@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 892 |
+| pendente | 861 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 201 |
-| pendente-inspecao-imagem | 146 |
-| revisada | 1033 |
+| pendente-fonte | 206 |
+| pendente-inspecao-imagem | 142 |
+| revisada | 1063 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -18,11 +18,11 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | --- | ---: | ---: | ---: |
 | Síndrome compartimental aguda (`rockwood10-17-sindrome-compartimental`) | 50 | 0 | 20 |
 | Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 37 | 0 | 31 |
-| Fratura da escápula (`rockwood10-33-fratura-escapula`) | 98 | 0 | 38 |
-| Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 48 | 0 | 25 |
+| Fratura da escápula (`rockwood10-33-fratura-escapula`) | 99 | 0 | 37 |
+| Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 61 | 0 | 12 |
 | Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 42 | 0 | 52 |
-| Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 8 | 0 | 44 |
-| Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 74 | 0 | 105 |
+| Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 25 | 0 | 27 |
+| Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 75 | 0 | 104 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |

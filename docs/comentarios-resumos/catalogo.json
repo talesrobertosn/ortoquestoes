@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 892,
+  "pendente": 861,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 201,
-  "pendente-inspecao-imagem": 146,
-  "revisada": 1033
+  "pendente-fonte": 206,
+  "pendente-inspecao-imagem": 142,
+  "revisada": 1063
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -37,20 +37,20 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 22,
+    "pendente": 21,
     "pendente-fonte": 7,
     "pendente-inspecao-imagem": 5,
-    "revisada": 98
+    "revisada": 99
    }
   },
   "rockwood10-34-fratura-clavicula": {
    "titulo": "Fratura da clavícula",
    "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
    "estados": {
-    "pendente": 15,
-    "pendente-fonte": 5,
-    "pendente-inspecao-imagem": 5,
-    "revisada": 48
+    "pendente": 4,
+    "pendente-fonte": 7,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 61
    }
   },
   "rockwood10-36-umero-proximal": {
@@ -58,8 +58,8 @@
    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
-    "pendente": 34,
-    "pendente-fonte": 1,
+    "pendente": 33,
+    "pendente-fonte": 2,
     "pendente-inspecao-imagem": 13,
     "revisada": 42
    }
@@ -69,11 +69,11 @@
    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
    "estados": {
     "duplicada": 2,
-    "pendente": 34,
+    "pendente": 14,
     "pendente-anulada": 1,
-    "pendente-fonte": 1,
+    "pendente-fonte": 4,
     "pendente-inspecao-imagem": 6,
-    "revisada": 8
+    "revisada": 25
    }
   },
   "rockwood10-40-cotovelo-cabeca-radio": {
@@ -81,10 +81,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 79,
+    "pendente": 78,
     "pendente-fonte": 3,
     "pendente-inspecao-imagem": 15,
-    "revisada": 74
+    "revisada": 75
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -5336,7 +5336,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5351,7 +5351,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "2c8df66bc07b7597d05cf0e54e3c4c4c5c6ef98af3e914d31064ed8932de367b"
+   "questaoSha256": "2c8df66bc07b7597d05cf0e54e3c4c4c5c6ef98af3e914d31064ed8932de367b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O tratamento funcional: a órtese de SARMIENTO"
+      ],
+      "blocos": [
+       "o-tratamento-funcional-a-ortese-de-sarmiento-45f6f9c8",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-252189f7",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-36bd6f71",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-0ca01799",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-43310ebb"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "a7d86e9ee92ad882a897b1ebe4f35f03c9fee4b9549b166999608ce25e5b2d83"
+     }
+    ],
+    "questaoSha256": "2c8df66bc07b7597d05cf0e54e3c4c4c5c6ef98af3e914d31064ed8932de367b",
+    "comentarioSha256": "9432ace8ab7e978861f61b1b049736e9c09e2d97205d1ee31a8a917c6eb44d85"
+   }
   },
   "conceitos-basicos-0018": {
    "tema": "conceitos-basicos",
@@ -5756,7 +5783,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5771,7 +5798,35 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "21c3614e38eeebb6ffff22945a1a9041dd25b82838a9910dc06ebeea9d929ec6"
+   "questaoSha256": "21c3614e38eeebb6ffff22945a1a9041dd25b82838a9910dc06ebeea9d929ec6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Pseudartrose"
+      ],
+      "blocos": [
+       "pseudartrose-6427266b",
+       "pseudartrose-9719258c",
+       "pseudartrose-c68d4d26",
+       "pseudartrose-fc31c240",
+       "pseudartrose-51afd2d6",
+       "pseudartrose-17c20cc3"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "698296d672c649f94feb72d3ab1a9be48be3cb141242fa0d097e9350fe570946"
+     }
+    ],
+    "questaoSha256": "21c3614e38eeebb6ffff22945a1a9041dd25b82838a9910dc06ebeea9d929ec6",
+    "comentarioSha256": "068972f8152d15fbc0f973f4009e8ba56a2c6d760f958f081768d64f9e24a155"
+   }
   },
   "conceitos-basicos-0196": {
    "tema": "conceitos-basicos",
@@ -22044,8 +22099,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -22059,7 +22114,30 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "04d544943fc36e9500a00c94af287fe1a9d6913cba104f550e621d382cf3542f"
+   "questaoSha256": "04d544943fc36e9500a00c94af287fe1a9d6913cba104f550e621d382cf3542f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+      ],
+      "blocos": [
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "73d4ff45874e9d54287d9d778a8efa43e38ce103d84ea8f8246ffc7d97dcac64"
+     }
+    ],
+    "questaoSha256": "04d544943fc36e9500a00c94af287fe1a9d6913cba104f550e621d382cf3542f",
+    "comentarioSha256": "a26f240c1e04f1724bd092124cb82effc3e1cbcfc57c870903c2a89a05fd8d3e"
+   }
   },
   "ombro-cotovelo-0255": {
    "tema": "ombro-cotovelo",
@@ -22068,8 +22146,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -22083,7 +22161,35 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "166081f7f55e146d382e59159dabf6a5f44668a09e5fec5ca332995b22ab53af"
+   "questaoSha256": "166081f7f55e146d382e59159dabf6a5f44668a09e5fec5ca332995b22ab53af",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+       "Classificações: Allman, Neer, Craig, Robinson e AO"
+      ],
+      "blocos": [
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-ac7e06bb",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1",
+       "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+       "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "bd64ed0d93d22a0fef2b883c6507685dd6d5ec14dd011c4f5313f36672374038"
+     }
+    ],
+    "questaoSha256": "166081f7f55e146d382e59159dabf6a5f44668a09e5fec5ca332995b22ab53af",
+    "comentarioSha256": "f7d9606dd60d84eff58301d7f3d66d458087bf522c08ccd6282fb6e31bb71666"
+   }
   },
   "ombro-cotovelo-0257": {
    "tema": "ombro-cotovelo",
@@ -30195,8 +30301,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A pergunta exige prevalência pediátrica de fratura do terço médio (76–85% na opção D). O resumo 34 fornece 80–85% para as fraturas de clavícula em geral e discute epidemiologia adulta, mas não traz coorte pediátrica para confirmar o intervalo infantil e excluir as outras três faixas. Coincidência numérica não prova a população. Falta fonte pediátrica da frequência; D e comentário preservados, sem selo novo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -30210,7 +30316,8 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101"
+   "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101",
+   "pendencia": "A pergunta exige prevalência pediátrica de fratura do terço médio (76–85% na opção D). O resumo 34 fornece 80–85% para as fraturas de clavícula em geral e discute epidemiologia adulta, mas não traz coorte pediátrica para confirmar o intervalo infantil e excluir as outras três faixas. Coincidência numérica não prova a população. Falta fonte pediátrica da frequência; D e comentário preservados, sem selo novo."
   },
   "pediatria-0689": {
    "tema": "pediatria",
@@ -42756,7 +42863,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -42779,7 +42886,49 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "a69edc2738392ef480da17a3c8f624ea5bd57c81e5f5c58fc2fa0bec88d71bae"
+   "questaoSha256": "a69edc2738392ef480da17a3c8f624ea5bd57c81e5f5c58fc2fa0bec88d71bae",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Ombro flutuante, costelas e terço medial"
+      ],
+      "blocos": [
+       "ombro-flutuante-costelas-e-terco-medial-b753c523",
+       "ombro-flutuante-costelas-e-terco-medial-68b9dd2b"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "f5f26692f2a47a8dd51cd407d04ae7810e871e55bb54ea7d5750a53264ce26c3"
+     },
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Complexo suspensor superior, ombro flutuante e colo da escápula"
+      ],
+      "blocos": [
+       "complexo-suspensor-superior-ombro-flutuante-e-co-38e59d45",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-165be1bf",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-90e86a25",
+       "complexo-suspensor-superior-ombro-flutuante-e-co-16bb4d46"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "8fb2df0e959b92ebef04395edbfd6f622bcb8b68ee38ef1f8f95c7d6e53ec6e3"
+     }
+    ],
+    "questaoSha256": "a69edc2738392ef480da17a3c8f624ea5bd57c81e5f5c58fc2fa0bec88d71bae",
+    "comentarioSha256": "c33369bb0c894180b869e0fc8c4c5a46c8486d2c6ebd0d676cf21e78ccdc1683"
+   }
   },
   "trauma-0025": {
    "tema": "trauma",
@@ -44849,7 +44998,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44864,7 +45013,38 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "0fbe5444a653bbf0406b1c9cee04d13bf6e99e7fad95556d1dfa9bff4ea77b89"
+   "questaoSha256": "0fbe5444a653bbf0406b1c9cee04d13bf6e99e7fad95556d1dfa9bff4ea77b89",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Como ler este capítulo",
+       "O nervo radial",
+       "Vias de acesso e os nervos em risco",
+       "Placa: técnica, números e resultados"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-92ca4d5c",
+       "o-nervo-radial-69792673",
+       "vias-de-acesso-e-os-nervos-em-risco-e5eff37e",
+       "vias-de-acesso-e-os-nervos-em-risco-9caef227",
+       "o-nervo-radial-597d2b4d",
+       "placa-tecnica-numeros-e-resultados-c263afc4"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "064e3eedb87e57e413ab81003cde0ae03492a033076e5dcd49d5f173d6dc6488"
+     }
+    ],
+    "questaoSha256": "0fbe5444a653bbf0406b1c9cee04d13bf6e99e7fad95556d1dfa9bff4ea77b89",
+    "comentarioSha256": "e05d9e7dd2b6ce67e1105c432fe1245dd2ae6b01d9fc3bf762737aeda6228825"
+   }
   },
   "trauma-0088": {
    "tema": "trauma",
@@ -50162,7 +50342,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -50177,7 +50357,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "1b2707460bfac7d97e336bdf6c249d006a3f6856216557f495a242db26d9567f"
+   "questaoSha256": "1b2707460bfac7d97e336bdf6c249d006a3f6856216557f495a242db26d9567f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Quanto se tolera e quando operar"
+      ],
+      "blocos": [
+       "quanto-se-tolera-e-quando-operar-2d183bd1",
+       "quanto-se-tolera-e-quando-operar-0735ebe6",
+       "quanto-se-tolera-e-quando-operar-9b9398e1",
+       "quanto-se-tolera-e-quando-operar-af0d5a24",
+       "quanto-se-tolera-e-quando-operar-2d42feef"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "2d2e2c5746ca7165fb74c8997bbfc691583e49c8542278626716572ce3637017"
+     }
+    ],
+    "questaoSha256": "1b2707460bfac7d97e336bdf6c249d006a3f6856216557f495a242db26d9567f",
+    "comentarioSha256": "fc3aaf236f2a37555a521c5f872a2f9e1fd7258492295c63f098f8ddc15b227c"
+   }
   },
   "trauma-0267": {
    "tema": "trauma",
@@ -53657,8 +53864,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O capítulo 37 não desenvolve a área de trabalho da haste no padrão AO 12C3 distal nem compara a distribuição de estresse nos bloqueios proximal/distal. Lembra apenas a dificuldade de fixar o fragmento curto. Falta fonte biomecânica de working length para conferir os dois segmentos e o local de maior esforço em cada par; não concluir D por metade do raciocínio. D e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -53672,7 +53879,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "06e79780fbba32d4c92192dc743fde8e5ec64f1b1af672585f0ed851f6bdf322"
+   "questaoSha256": "06e79780fbba32d4c92192dc743fde8e5ec64f1b1af672585f0ed851f6bdf322",
+   "pendencia": "O capítulo 37 não desenvolve a área de trabalho da haste no padrão AO 12C3 distal nem compara a distribuição de estresse nos bloqueios proximal/distal. Lembra apenas a dificuldade de fixar o fragmento curto. Falta fonte biomecânica de working length para conferir os dois segmentos e o local de maior esforço em cada par; não concluir D por metade do raciocínio. D e comentário preservados."
   },
   "trauma-0452": {
    "tema": "trauma",
@@ -54061,7 +54269,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54076,7 +54284,35 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "c8b95d4c291296dfb0e91b5085af90e7833d0242c3f7545b9f124beab96ba0bc"
+   "questaoSha256": "c8b95d4c291296dfb0e91b5085af90e7833d0242c3f7545b9f124beab96ba0bc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa minimamente invasiva (MIPO)",
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "placa-minimamente-invasiva-mipo-18908699",
+       "placa-minimamente-invasiva-mipo-91e6df51",
+       "placa-minimamente-invasiva-mipo-7bf9314d",
+       "placa-minimamente-invasiva-mipo-91fd0efa",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "8f1863f58c8e9f61d8c080c4857a6895a9bca062efa213be6a2805e4d0d4f016"
+     }
+    ],
+    "questaoSha256": "c8b95d4c291296dfb0e91b5085af90e7833d0242c3f7545b9f124beab96ba0bc",
+    "comentarioSha256": "092126aeef2f3623fb03520954116234e07f3d6791520c7f3f77074528045928"
+   }
   },
   "trauma-0533": {
    "tema": "trauma",
@@ -55645,7 +55881,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55660,7 +55896,33 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "200a3e9a0b1317c56c9f630d936424b75b016cc132653a7b21c8bae9ec8810c9"
+   "questaoSha256": "200a3e9a0b1317c56c9f630d936424b75b016cc132653a7b21c8bae9ec8810c9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Pseudartrose, fatores de risco e operar ou não"
+      ],
+      "blocos": [
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-8d54eedd",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-caba419b",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-f33ee50a",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-5bac1f31"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "50a36ca3b60564d7cd22bd56a5ccd97abe8fd475af59de57e1789fe9012f7447"
+     }
+    ],
+    "questaoSha256": "200a3e9a0b1317c56c9f630d936424b75b016cc132653a7b21c8bae9ec8810c9",
+    "comentarioSha256": "1182ef419ac473751e26d773e85e90b5fe3745692af9d34fde6be1c87107b790"
+   }
   },
   "trauma-0668": {
    "tema": "trauma",
@@ -55880,7 +56142,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -55895,7 +56157,32 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "b448f9be2bc24fed10abd49fb0fb81518c28ef3fbb971efdff5b8bd5f74cca4e"
+   "questaoSha256": "b448f9be2bc24fed10abd49fb0fb81518c28ef3fbb971efdff5b8bd5f74cca4e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa: técnica, números e resultados"
+      ],
+      "blocos": [
+       "placa-tecnica-numeros-e-resultados-036c39bb",
+       "placa-tecnica-numeros-e-resultados-7281e01c",
+       "placa-tecnica-numeros-e-resultados-40bc40ff"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "37fcdc370ed80cb99e82f547bfa19acba780a5ccccb96630ca0f70c23b54b860"
+     }
+    ],
+    "questaoSha256": "b448f9be2bc24fed10abd49fb0fb81518c28ef3fbb971efdff5b8bd5f74cca4e",
+    "comentarioSha256": "c2d16d054329b18d3f0e39dc77773234fb7efeb300b3d8621ec22866617c8820"
+   }
   },
   "trauma-0675": {
    "tema": "trauma",
@@ -56295,7 +56582,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56310,7 +56597,34 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "13f8c8f3c5c2d3fc8b0749a5094f31ccd9e0838bcba4690cedfd310e205c4d04"
+   "questaoSha256": "13f8c8f3c5c2d3fc8b0749a5094f31ccd9e0838bcba4690cedfd310e205c4d04",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Terço lateral (distal)"
+      ],
+      "blocos": [
+       "terco-lateral-distal-e3f5357d",
+       "terco-lateral-distal-1053aba0",
+       "terco-lateral-distal-25d53230",
+       "terco-lateral-distal-38294fea",
+       "terco-lateral-distal-c071a8d5"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "6bb2e53ce6d56be04cced1bba12811a6cf0f8f05b8c930758ec09f799eb8c13a"
+     }
+    ],
+    "questaoSha256": "13f8c8f3c5c2d3fc8b0749a5094f31ccd9e0838bcba4690cedfd310e205c4d04",
+    "comentarioSha256": "d26b7c494913afadf6b382d8c6073622eb2ced6c174be6b2deb4aa8fc74bf0be"
+   }
   },
   "trauma-0690": {
    "tema": "trauma",
@@ -58421,8 +58735,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -58436,7 +58750,33 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "733e15cc92e0166bfc6801d76cd31047b0d4f6565212b95ff47725a3220ccf44"
+   "questaoSha256": "733e15cc92e0166bfc6801d76cd31047b0d4f6565212b95ff47725a3220ccf44",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Classificações: Allman, Neer, Craig, Robinson e AO",
+       "Terço lateral (distal)"
+      ],
+      "blocos": [
+       "classificacoes-allman-neer-craig-robinson-e-ao-ea985042",
+       "classificacoes-allman-neer-craig-robinson-e-ao-2d341ad3",
+       "terco-lateral-distal-c071a8d5"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "34df27b5eff6382843165a3615d328e64c34fefd82cbb4546975608b5fee82f4"
+     }
+    ],
+    "questaoSha256": "733e15cc92e0166bfc6801d76cd31047b0d4f6565212b95ff47725a3220ccf44",
+    "comentarioSha256": "74c20a5e1c3a1b665085d65722b375a25a3b3d1e2517daa89dad5d33749db28e"
+   }
   },
   "trauma-0774": {
    "tema": "trauma",
@@ -58661,7 +59001,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58677,7 +59017,31 @@
     "rockwood10-37-diafise-umero",
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "cee7b62b0c8f2e3264cb0e972b7cc220503c2a149df775db97548a036c7d3f72"
+   "questaoSha256": "cee7b62b0c8f2e3264cb0e972b7cc220503c2a149df775db97548a036c7d3f72",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Quanto se tolera e quando operar"
+      ],
+      "blocos": [
+       "quanto-se-tolera-e-quando-operar-9b9398e1",
+       "quanto-se-tolera-e-quando-operar-af0d5a24"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "96284ac2f34619e1a73e8b0919d50f380afaf559a6db086f50a8df66a89e1127"
+     }
+    ],
+    "questaoSha256": "cee7b62b0c8f2e3264cb0e972b7cc220503c2a149df775db97548a036c7d3f72",
+    "comentarioSha256": "bb884d7567457061302de1aaa24bf70122a1d4f9fdc95dbf2ea255ea8439d3c7"
+   }
   },
   "trauma-0785": {
    "tema": "trauma",
@@ -58758,8 +59122,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -58773,7 +59137,36 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "504455697f2e9c3f66e4d88a099470b4abdb9cac9e8bf84488e47516a25ab46c"
+   "questaoSha256": "504455697f2e9c3f66e4d88a099470b4abdb9cac9e8bf84488e47516a25ab46c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos",
+       "Lesões neurovasculares e dissociação escapulotorácica"
+      ],
+      "blocos": [
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-e75dacf6",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-018800b0",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-d10a2fd8",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-e8cc172f",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-0d2a04c1",
+       "lesoes-neurovasculares-e-dissociacao-escapulotor-1176f57b"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "cb3863ae7ee023fb9b1200c8a8b418a88e2fc289649a7ddbaf220fcd7722856d"
+     }
+    ],
+    "questaoSha256": "504455697f2e9c3f66e4d88a099470b4abdb9cac9e8bf84488e47516a25ab46c",
+    "comentarioSha256": "9dea2b111ce115a8e4aa9721a40b4de50add4f8ce0d97a5c9ba18be4ea67b929"
+   }
   },
   "trauma-0789": {
    "tema": "trauma",
@@ -58970,14 +59363,15 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 34 localiza o conoide medial ao trapezoide e sua inserção no tubérculo, mas não descreve a técnica de Mazzocca nem a distância de 45 mm da superfície articular lateral até o túnel conoide. Falta fonte técnica primária para conferir as quatro distâncias (15/25/35/45 mm), sem transformar posição anatômica qualitativa em uma medida operatória. D e comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "5b17f8adad0690443445588fb7dc94d027d5ef394d0abc5fa13127f68b5fe804"
+   "questaoSha256": "5b17f8adad0690443445588fb7dc94d027d5ef394d0abc5fa13127f68b5fe804",
+   "pendencia": "O corpo do resumo 34 localiza o conoide medial ao trapezoide e sua inserção no tubérculo, mas não descreve a técnica de Mazzocca nem a distância de 45 mm da superfície articular lateral até o túnel conoide. Falta fonte técnica primária para conferir as quatro distâncias (15/25/35/45 mm), sem transformar posição anatômica qualitativa em uma medida operatória. D e comentário preservados."
   },
   "trauma-0797": {
    "tema": "trauma",
@@ -60714,7 +61108,7 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60729,7 +61123,32 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "17955487db3f2d64a1318c7d2cf7cf83ccc5604732948225a5f7a0dc4b699487"
+   "questaoSha256": "17955487db3f2d64a1318c7d2cf7cf83ccc5604732948225a5f7a0dc4b699487",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa: técnica, números e resultados"
+      ],
+      "blocos": [
+       "placa-tecnica-numeros-e-resultados-541bf5d2",
+       "placa-tecnica-numeros-e-resultados-ba6923d9",
+       "placa-tecnica-numeros-e-resultados-7281e01c"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "195895d7f304a7a103c4a8c8168945d9a224dd39aeba68902814df9dba8ad0cd"
+     }
+    ],
+    "questaoSha256": "17955487db3f2d64a1318c7d2cf7cf83ccc5604732948225a5f7a0dc4b699487",
+    "comentarioSha256": "2327dfad7890f8d698d656e8409a538d4c13c4a39170af7d2f9781aa18e9295d"
+   }
   },
   "trauma-0877": {
    "tema": "trauma",
@@ -62251,8 +62670,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 37 apresenta Wright-Cofield para o ombro e ODriscoll-Morrey para o cotovelo, mas não define as quatro regiões da classificação de Campbell. Falta tabela primária de Campbell para mapear diáfise proximal na região 3 e diferenciar as demais, sem usar a resposta do bloco contextual como autoridade. C e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -62267,7 +62686,8 @@
     "rockwood10-36-umero-proximal",
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "16d4ea12599402766b39d4c2563b9730f8e817abbbb896c519bb1d79056aba7d"
+   "questaoSha256": "16d4ea12599402766b39d4c2563b9730f8e817abbbb896c519bb1d79056aba7d",
+   "pendencia": "O resumo 37 apresenta Wright-Cofield para o ombro e ODriscoll-Morrey para o cotovelo, mas não define as quatro regiões da classificação de Campbell. Falta tabela primária de Campbell para mapear diáfise proximal na região 3 e diferenciar as demais, sem usar a resposta do bloco contextual como autoridade. C e comentário preservados."
   },
   "trauma-0928": {
    "tema": "trauma",
@@ -63272,7 +63692,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63287,7 +63707,36 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "f7ee7adcc2d1235071cee865018abd85cd348008ee1298a80dd11da358c90cfd"
+   "questaoSha256": "f7ee7adcc2d1235071cee865018abd85cd348008ee1298a80dd11da358c90cfd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa minimamente invasiva (MIPO)",
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "placa-minimamente-invasiva-mipo-18908699",
+       "placa-minimamente-invasiva-mipo-c66f8cf8",
+       "placa-minimamente-invasiva-mipo-91e6df51",
+       "placa-minimamente-invasiva-mipo-7bf9314d",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+       "placa-minimamente-invasiva-mipo-91fd0efa"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "664785d2d0d828db3866a97eb515d7c66e2121c14ce354af482c083cea956cfd"
+     }
+    ],
+    "questaoSha256": "f7ee7adcc2d1235071cee865018abd85cd348008ee1298a80dd11da358c90cfd",
+    "comentarioSha256": "2270affadbdc892b7f4155c248107eff3b698ab2e3c070f56482625d71c09287"
+   }
   },
   "trauma-0971": {
    "tema": "trauma",
@@ -63580,7 +64029,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63595,7 +64044,31 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "6424ea84043fb3cb3168e3e59fbb2a91f22aeefaf2bbf7cb4fccc14ddf60d603"
+   "questaoSha256": "6424ea84043fb3cb3168e3e59fbb2a91f22aeefaf2bbf7cb4fccc14ddf60d603",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Haste intramedular"
+      ],
+      "blocos": [
+       "haste-intramedular-97e7d24b",
+       "haste-intramedular-1a22f0c0"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "f9ed5b54dc25c2ae0dbb37a0999cde93002e5a747c544ddc3a4db2b4b754d3b2"
+     }
+    ],
+    "questaoSha256": "6424ea84043fb3cb3168e3e59fbb2a91f22aeefaf2bbf7cb4fccc14ddf60d603",
+    "comentarioSha256": "953f8dc325ed8100fce11c0888697d1b82285a4997405316a2160439df86ad29"
+   }
   },
   "trauma-0982": {
    "tema": "trauma",
@@ -66337,7 +66810,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66352,7 +66825,35 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "fa4ec03c1053516842657f70a6b0395005cbfdc399f3986b1c1dbe7d95f93fba"
+   "questaoSha256": "fa4ec03c1053516842657f70a6b0395005cbfdc399f3986b1c1dbe7d95f93fba",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Classificações: Allman, Neer, Craig, Robinson e AO",
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+      ],
+      "blocos": [
+       "classificacoes-allman-neer-craig-robinson-e-ao-d61c043a",
+       "classificacoes-allman-neer-craig-robinson-e-ao-9c9ca5b7",
+       "classificacoes-allman-neer-craig-robinson-e-ao-d1357c3a",
+       "classificacoes-allman-neer-craig-robinson-e-ao-efd6c6e8",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-20e2e44d"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "1aa5ca8b58e5375d05036b2eeac1fd193073cb918cf3eac0ba5112c71197fc95"
+     }
+    ],
+    "questaoSha256": "fa4ec03c1053516842657f70a6b0395005cbfdc399f3986b1c1dbe7d95f93fba",
+    "comentarioSha256": "e181ef42880831b69af73b963f3f3deb7a8773c63ee3f981cd01159eee5ca8ad"
+   }
   },
   "trauma-1087": {
    "tema": "trauma",
@@ -68449,8 +68950,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A afirmação une medular menor que 9 mm e paralisia radial como motivos para evitar haste bloqueada. O corpo do resumo 37 não estabelece o corte de 9 mm nem proíbe haste por toda paralisia radial; a contraindicação explícita é à MIPO com déficit prévio. Falta fonte técnica primária da cautela e de seu contexto histórico para decidir o certo/errado integral sem transportar uma regra entre técnicas. Não há gabarito oficial; resposta bibliográfica/provável antiga A e comentário foram preservados, sem nova atribuição de provável ou selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68464,7 +68965,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "15560b6ad0de5d727f9bd8e10079a122a479b6070532bcf85561a9bf83091e21"
+   "questaoSha256": "15560b6ad0de5d727f9bd8e10079a122a479b6070532bcf85561a9bf83091e21",
+   "pendencia": "A afirmação une medular menor que 9 mm e paralisia radial como motivos para evitar haste bloqueada. O corpo do resumo 37 não estabelece o corte de 9 mm nem proíbe haste por toda paralisia radial; a contraindicação explícita é à MIPO com déficit prévio. Falta fonte técnica primária da cautela e de seu contexto histórico para decidir o certo/errado integral sem transportar uma regra entre técnicas. Não há gabarito oficial; resposta bibliográfica/provável antiga A e comentário foram preservados, sem nova atribuição de provável ou selo."
   },
   "trauma-1168": {
    "tema": "trauma",
@@ -68802,7 +69304,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68817,7 +69319,36 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "c9aff8f8ad1d1a829a7c519b79313a8ba3de727425e9d43b865cd8fb297dd8dc"
+   "questaoSha256": "c9aff8f8ad1d1a829a7c519b79313a8ba3de727425e9d43b865cd8fb297dd8dc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Pseudartrose, fatores de risco e operar ou não",
+       "Como ler este capítulo"
+      ],
+      "blocos": [
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-a8585fc0",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-8d54eedd",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-caba419b",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-b6820b99",
+       "pseudartrose-fatores-de-risco-e-operar-ou-nao-beee1ef1",
+       "como-ler-este-capitulo-5368914c"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "52a43753859dac0f5cfa6d04cf81d70854792e0c0df334b1e665e7b4fe543306"
+     }
+    ],
+    "questaoSha256": "c9aff8f8ad1d1a829a7c519b79313a8ba3de727425e9d43b865cd8fb297dd8dc",
+    "comentarioSha256": "8e765feb2af03d4199c6277dd2914a46541e8e6732c35e3b5afdba4af5f287b9"
+   }
   },
   "trauma-1181": {
    "tema": "trauma",
@@ -70175,7 +70706,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -70190,7 +70721,37 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "1343b4de86917a2f7152ed56a39e977715c4b5de5012b5d18dc8626c4312a5d9"
+   "questaoSha256": "1343b4de86917a2f7152ed56a39e977715c4b5de5012b5d18dc8626c4312a5d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O tratamento funcional: a órtese de SARMIENTO"
+      ],
+      "blocos": [
+       "o-tratamento-funcional-a-ortese-de-sarmiento-8daf6244",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-b3d51593",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-25043867",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-5cd61095",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-5eef00b9",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-82e7d2b2",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-aafd3f88",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-30b9a069"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "d061dd23e47ade54b7b1e3fe291bd4e295f1f9e48f0931d7277a06b24f7ef7a6"
+     }
+    ],
+    "questaoSha256": "1343b4de86917a2f7152ed56a39e977715c4b5de5012b5d18dc8626c4312a5d9",
+    "comentarioSha256": "9a474e231099a37ae2a9fd317bb7128165ebc1d635fe6d60574a666eb7b6bb9a"
+   }
   },
   "trauma-1227": {
    "tema": "trauma",
@@ -75168,7 +75729,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75183,7 +75744,34 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "50d0b2235c35b6de12cbe49a18c48c7dafeac4969fd9690abed4cd88592f6bb0"
+   "questaoSha256": "50d0b2235c35b6de12cbe49a18c48c7dafeac4969fd9690abed4cd88592f6bb0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Placa e haste no terço médio",
+       "Anatomia aplicada: osso, ligamentos, músculos, nervos e vasos"
+      ],
+      "blocos": [
+       "placa-e-haste-no-terco-medio-b52b9b98",
+       "placa-e-haste-no-terco-medio-0b410f39",
+       "placa-e-haste-no-terco-medio-9484d401",
+       "anatomia-aplicada-osso-ligamentos-musculos-nervo-1cdb1b7a"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "6ae2174495a56c9fe889da17e0e03bd5eaf837741da67938ee9793c8995dce5a"
+     }
+    ],
+    "questaoSha256": "50d0b2235c35b6de12cbe49a18c48c7dafeac4969fd9690abed4cd88592f6bb0",
+    "comentarioSha256": "90e4cb21ad9331388c8822bc3b3b973f0932e9ec37252e6038121fc3947169bd"
+   }
   },
   "trauma-1367": {
    "tema": "trauma",
@@ -75243,7 +75831,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75258,7 +75846,32 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "77cf5265cb7aa83ff23dad25f8ff5bddaed952d0be8a8b3e52165121b541c3b1"
+   "questaoSha256": "77cf5265cb7aa83ff23dad25f8ff5bddaed952d0be8a8b3e52165121b541c3b1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Terço lateral (distal)"
+      ],
+      "blocos": [
+       "terco-lateral-distal-5462932b",
+       "terco-lateral-distal-6bc29624",
+       "terco-lateral-distal-be04fd16"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "c65e36e37e85b89188f20c4ec2fb1d1c0dbac9b942d56b84059bd5b5e3705ce8"
+     }
+    ],
+    "questaoSha256": "77cf5265cb7aa83ff23dad25f8ff5bddaed952d0be8a8b3e52165121b541c3b1",
+    "comentarioSha256": "503ee8903edf4a7e69111fa8bb480105f7606ae18606a773bdd9bc5124903019"
+   }
   },
   "trauma-1369": {
    "tema": "trauma",
@@ -75268,7 +75881,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75283,7 +75896,33 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "a465d543e4cbeccf594bb65eab91556f2fcf28c2968713b81d1c3e23160f8afd"
+   "questaoSha256": "a465d543e4cbeccf594bb65eab91556f2fcf28c2968713b81d1c3e23160f8afd",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Terço lateral (distal)"
+      ],
+      "blocos": [
+       "terco-lateral-distal-be04fd16",
+       "terco-lateral-distal-ffafad32",
+       "terco-lateral-distal-978927a9",
+       "terco-lateral-distal-807eaf40"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "a2cdbb09f873dbf74a686723de35e8730f660e175b532a35819a955dd7d64624"
+     }
+    ],
+    "questaoSha256": "a465d543e4cbeccf594bb65eab91556f2fcf28c2968713b81d1c3e23160f8afd",
+    "comentarioSha256": "d3e8d442e916fe7b263693cd41e35b2295c99011a7e983683e72284f71e05cfc"
+   }
   },
   "trauma-1370": {
    "tema": "trauma",
@@ -75292,7 +75931,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75307,7 +75946,30 @@
    "resumosCandidatos": [
     "rockwood10-34-fratura-clavicula"
    ],
-   "questaoSha256": "f8b58ac62a5e2d2db10f0d45ba0d8bc4ad635f3b7f48c346b67102bcc12953d6"
+   "questaoSha256": "f8b58ac62a5e2d2db10f0d45ba0d8bc4ad635f3b7f48c346b67102bcc12953d6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-34-fratura-clavicula",
+      "titulo": "Fratura da clavícula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 34 · Clavicle Fractures",
+      "secoes": [
+       "Outras complicações: infecção, pseudartrose operada, implante e refratura"
+      ],
+      "blocos": [
+       "outras-complicacoes-infeccao-pseudartrose-operad-be93fad9"
+      ],
+      "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+      "trechosSha256": "c86d1c5c05f866cb89bc70e999b282a72d88ac0e2b1cfbe0c09805b020414908"
+     }
+    ],
+    "questaoSha256": "f8b58ac62a5e2d2db10f0d45ba0d8bc4ad635f3b7f48c346b67102bcc12953d6",
+    "comentarioSha256": "4c8709c1847b8010e9c3e46a05d27fb4ec8a69ecb76e28e526cae387c052cf1a"
+   }
   },
   "trauma-1371": {
    "tema": "trauma",
@@ -75340,7 +76002,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75355,7 +76017,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "cd8a0a30e5061882ef52010e8eb66d1edc37527fbad166041c1d2313770d95df"
+   "questaoSha256": "cd8a0a30e5061882ef52010e8eb66d1edc37527fbad166041c1d2313770d95df",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O nervo radial"
+      ],
+      "blocos": [
+       "o-nervo-radial-69792673",
+       "o-nervo-radial-cb7cd6f2",
+       "o-nervo-radial-522bc100",
+       "o-nervo-radial-c7126417",
+       "o-nervo-radial-0aafbb97"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "92038073a49d57addb41325aa1f0fa0da5eaf7bd2a3dbd3dddaab98f1096ea0c"
+     }
+    ],
+    "questaoSha256": "cd8a0a30e5061882ef52010e8eb66d1edc37527fbad166041c1d2313770d95df",
+    "comentarioSha256": "ea1a0189ff148c1d7f94ae61fcc70c1d38723e4b084d4d5897e8307a6a3b5b12"
+   }
   },
   "trauma-1373": {
    "tema": "trauma",
@@ -75364,7 +76053,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75393,7 +76082,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "ca283fa67b53689305c26619a28b551a69fd2a10295bee72f1479ccbc91c81c0"
+   "questaoSha256": "ca283fa67b53689305c26619a28b551a69fd2a10295bee72f1479ccbc91c81c0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O nervo radial",
+       "Quanto se tolera e quando operar"
+      ],
+      "blocos": [
+       "o-nervo-radial-c7126417",
+       "o-nervo-radial-01d076e8",
+       "quanto-se-tolera-e-quando-operar-3ca5b3fb",
+       "quanto-se-tolera-e-quando-operar-1d9b0ab3"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "793d8ea6ebb301d36b4d6635ed8314a83e4be732835b65ccda8e6ebbd0ab92ab"
+     }
+    ],
+    "questaoSha256": "ca283fa67b53689305c26619a28b551a69fd2a10295bee72f1479ccbc91c81c0",
+    "comentarioSha256": "352e2e8f6e49e8a307f0af907748612a29000a444abfe49285dcb6590c0f8c7f"
+   }
   },
   "trauma-1374": {
    "tema": "trauma",
@@ -75402,7 +76118,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75417,7 +76133,32 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "0a61262a7e5112276c11ebb8e2b99521743316b8e7c8c8eca24b9d93344186ad"
+   "questaoSha256": "0a61262a7e5112276c11ebb8e2b99521743316b8e7c8c8eca24b9d93344186ad",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O tratamento funcional: a órtese de SARMIENTO"
+      ],
+      "blocos": [
+       "o-tratamento-funcional-a-ortese-de-sarmiento-252189f7",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-36bd6f71",
+       "o-tratamento-funcional-a-ortese-de-sarmiento-2b8e6d6c"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "bdde158764054f1f1dc60c74b47470413150ee5b3cf427792b7e2becfea6c33b"
+     }
+    ],
+    "questaoSha256": "0a61262a7e5112276c11ebb8e2b99521743316b8e7c8c8eca24b9d93344186ad",
+    "comentarioSha256": "f03dfc1f6cb4e41b96db3ce7258ad62feca686956364b0773806ec65985527e0"
+   }
   },
   "trauma-1375": {
    "tema": "trauma",
@@ -75474,7 +76215,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75489,7 +76230,33 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "8c0b5d8bd0bbbafe1f39769b42dca4824b8af6ab20be130f566fab06930bc4a9"
+   "questaoSha256": "8c0b5d8bd0bbbafe1f39769b42dca4824b8af6ab20be130f566fab06930bc4a9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-d524b37b",
+       "vias-de-acesso-e-os-nervos-em-risco-b35db364",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+       "vias-de-acesso-e-os-nervos-em-risco-187b9899"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "1a4139c174e88097f14566e1d16b36c9b49b9155838ea3a744aabd37fff8df19"
+     }
+    ],
+    "questaoSha256": "8c0b5d8bd0bbbafe1f39769b42dca4824b8af6ab20be130f566fab06930bc4a9",
+    "comentarioSha256": "e50551aff6c0620c079c1a71a464b139dcdefe62c86ebf6a163f668cbcea7508"
+   }
   },
   "trauma-1378": {
    "tema": "trauma",
@@ -75663,7 +76430,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75678,7 +76445,32 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "6feb5f48ff22a837099c1d0add708d62df23c3c2d2bac15fe2d920dcdfd6eeea"
+   "questaoSha256": "6feb5f48ff22a837099c1d0add708d62df23c3c2d2bac15fe2d920dcdfd6eeea",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Pseudartrose"
+      ],
+      "blocos": [
+       "pseudartrose-17c20cc3",
+       "pseudartrose-6427266b",
+       "pseudartrose-3694548d"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "743125fa4acb2dae44a723227c13662a4c1ad90af61e2fca8719013fe6220271"
+     }
+    ],
+    "questaoSha256": "6feb5f48ff22a837099c1d0add708d62df23c3c2d2bac15fe2d920dcdfd6eeea",
+    "comentarioSha256": "b693db454cfb5ff8ccf9c0ea738bb9cb9c55b7876dd3a77e644f6c347808a06d"
+   }
   },
   "trauma-1385": {
    "tema": "trauma",
@@ -75687,7 +76479,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -75702,7 +76494,32 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "ce62b155413cc830257049bb96a1289e271f2a10ea40cea05883f3b973c03c67"
+   "questaoSha256": "ce62b155413cc830257049bb96a1289e271f2a10ea40cea05883f3b973c03c67",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa, haste ou MIPO: o que as comparações mostram",
+       "Situações especiais"
+      ],
+      "blocos": [
+       "placa-haste-ou-mipo-o-que-as-comparacoes-mostram-b5c6c157",
+       "situacoes-especiais-b32789f6"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "5703ca635f0bc29cf663cb9331a8201d448c546105e80a0445404479232e2904"
+     }
+    ],
+    "questaoSha256": "ce62b155413cc830257049bb96a1289e271f2a10ea40cea05883f3b973c03c67",
+    "comentarioSha256": "41052b125cee82a4afa2e1594b13657859a9a4625bce6b0b0af639c3b2b9e0f3"
+   }
   },
   "trauma-1386": {
    "tema": "trauma",
