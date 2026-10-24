@@ -1,0 +1,386 @@
+{
+  "trauma-0088": {
+    "questaoSha256": "ba47a2fb4586427650d1f06127218c570c6ada845b80aeb21ae8138b728ddd7c",
+    "comentarioAnteriorSha256": "6a31ffa5e26adbb5884f284ede025ee3d402667e72284f5a49a7710a97b13738",
+    "comentario": {
+      "conceito": "A tíbia já consolidou, mas o paciente continua com dor na frente do joelho, perto da **entrada da haste**. Essa é a queixa típica pedida, alternativa A. Consolidação óssea e desaparecimento da dor são resultados diferentes.\n\nA entrada do implante atravessa uma região de tendão, gordura, pequenos nervos e estruturas articulares próximas. O resumo relaciona a dor a espessamento do tendão patelar, cicatriz da gordura de Hoffa, lesão do ramo infrapatelar do safeno, ponto intra-articular e, possivelmente, haste saliente. Os parafusos proximais também podem causar dor. Portanto, reconhecer o local mais frequente não identifica uma causa única em todo paciente (Rockwood, 10ª ed., cap. 63, “Dor anterior do joelho”).\n\n**A avaliação precisa localizar a dor.** Dor anterior difusa no joelho não é o mesmo que dor pontual sobre um parafuso longo. O capítulo recomenda ponto correto, haste enterrada e parafusos de comprimento adequado, medidas que reduzem problemas evitáveis, mas não eliminam todas as queixas.\n\nTambém não se deve prometer cura retirando o implante. A melhora é inconsistente, e os estudos não mostram diferença reproduzível de dor entre as vias suprapatelar e infrapatelar. O local da queixa orienta a investigação; por si só, não determina uma nova operação.\n\n> **Na prova:** depois da haste tibial, lembre da dor anterior do joelho no local de entrada, mesmo com a fratura consolidada.",
+      "correta": "**A: inserção da haste.** É a região associada à queixa de dor anterior do joelho, destacada pelo capítulo. O sintoma pode persistir após a união e ter várias causas locais.",
+      "incorretas": {
+        "B": "**A ponta distal não corresponde à queixa anterior do joelho.** Uma dor distal merece investigação própria, mas não é o local característico apresentado como resposta. A extensão da haste até a metáfise distal não transforma sua ponta na origem habitual dessa dor.",
+        "C": "**Dor sobre um bloqueio distal é outra localização.** Os parafusos podem ser sintomáticos, sobretudo quando seu comprimento é inadequado; isso não substitui a dor no joelho como queixa típica da questão. É preciso distinguir a região de entrada do implante dos pontos de bloqueio.",
+        "D": "**É uma causa plausível, mas mais localizada.** O resumo inclui os parafusos proximais entre as fontes de dor. A pergunta, porém, pede a queixa mais comum no conjunto, que é anterior no joelho, perto da inserção da haste, e não obrigatoriamente centrada num parafuso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+        ],
+        "blocos": [
+          "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b",
+          "complicacoes-dor-no-joelho-material-consolidacao-d824b854"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "147b0d9c1fc3e157e8154acbcffc432aea63198436fe63d1b7886e85790cdf23"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0224": {
+    "questaoSha256": "10418aa9166f27e7d6b1fbbacad5d8e6c0850069ffd3c9faecb780f21351eaec",
+    "comentarioAnteriorSha256": "7e5720033ca4b5305cad7ce8b602740e161893b85f9c257da4ecd44945683d40",
+    "comentario": {
+      "conceito": "O enunciado já fornece as duas peças do código: **traço oblíquo maior que 30 graus** e **fíbula intacta**. Na classificação AO apresentada pelo resumo, isso forma **42A2.1**, alternativa A.\n\nLeia o código em camadas. O segmento 42 corresponde à diáfise da tíbia. A letra A indica fratura simples; dentro desse grupo, A1 é espiral, A2 é oblíqua com 30 graus ou mais e A3 é transversa, abaixo desse limite. O sufixo acrescenta uma informação diferente: nos grupos A e B, .1 indica fíbula íntegra, .2 fratura dos dois ossos em níveis diferentes e .3 no mesmo nível (Rockwood, 10ª ed., cap. 63, “AO/OTA 42”).\n\n**Padrão tibial e estado da fíbula não são a mesma coisa.** Uma fratura oblíqua não passa a ser espiral porque a fíbula está preservada. Da mesma forma, trocar .1 por .2 não muda a obliquidade: muda a descrição do segundo osso. Separar essas duas leituras evita decorar o código inteiro como uma sequência sem significado.\n\nA fíbula no mesmo nível da tíbia reduz a estabilidade intrínseca, mas a classificação óssea não resume o caso. O capítulo ressalta que partes moles e gravidade da exposição pesam muito no tratamento e no resultado; o código não escolhe sozinho o implante.\n\n> **Na prova:** A2 identifica o traço oblíquo; .1 informa que a fíbula está inteira.",
+      "correta": "**A: 42A2.1.** Combina diáfise tibial, fratura simples oblíqua e fíbula intacta. Cada componente do código corresponde a um dado explícito do enunciado.",
+      "incorretas": {
+        "B": "**Muda o traço e o segundo osso.** A1 descreve espiral, não a oblíqua solicitada. Além disso, .2 indica fratura da fíbula em nível diferente, enquanto o enunciado a mantém íntegra.",
+        "C": "**Acerta a oblíqua, mas cria uma fratura da fíbula.** A2 está de acordo com o traço maior que 30 graus; .2 é que está errado. O sufixo correto para a fíbula intacta é .1.",
+        "D": "**Preserva a fíbula e troca o padrão tibial.** O .1 está correto, porém A1 significa espiral. A questão descreve obliquidade, que pertence a A2 na tabela consultada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Classificação: AO 42 e as partes moles."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Classificação: AO 42 e as partes moles"
+        ],
+        "blocos": [
+          "classificacao-ao-42-e-as-partes-moles-e9fb55c0",
+          "classificacao-ao-42-e-as-partes-moles-724df26e",
+          "classificacao-ao-42-e-as-partes-moles-133e882e"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "fd5ff05f1b0c574605c4c18e9f3901bbc07c8bae0e4bf436da3e4c35a17810b3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0305": {
+    "questaoSha256": "4ce48fff18e3dcd5ac38713a69296b7c49ec727fabdd30ef159a4f992c7895c6",
+    "comentarioAnteriorSha256": "67f917a63b78ce73ab6e1e348f8a75f20410c47ff58e1fb30cc8570d0789a7d7",
+    "comentario": {
+      "conceito": "A leitura de **42B2.1** leva a uma fratura **em cunha da tíbia com fíbula intacta**, alternativa A. O ponto decisivo é não tratar o sufixo .1 como se ele descrevesse o formato da cunha.\n\nNo sistema apresentado, 42 localiza a diáfise tibial e B indica uma cunha. B1 é cunha espiral intacta, B2 é cunha de flexão intacta e B3 é cunha fragmentada. Depois vem o sufixo relacionado à fíbula: .1 íntegra, .2 fraturada em outro nível e .3 no mesmo nível (Rockwood, 10ª ed., cap. 63, “AO/OTA 42”).\n\n**São duas perguntas dentro de um código.** Primeiro, como a tíbia quebrou? Aqui existe cunha, não uma simples linha espiral. Depois, o que aconteceu com a fíbula? Ela permaneceu inteira. Misturar essas etapas faz parecer que qualquer combinação de “cunha” e “fíbula” serve, quando cada termo ocupa uma posição definida.\n\nEssa organização também ajuda a entender a estabilidade: o resumo destaca menor estabilidade intrínseca quando tíbia e fíbula fraturam no mesmo nível. Ainda assim, a classificação das partes moles precisa acompanhar a óssea; saber B2.1 não permite ignorar exposição, cobertura ou perfusão.\n\n> **Na prova:** em B2.1, a letra B dá a cunha e o .1 mantém a fíbula íntegra.",
+      "correta": "**A: cunha da tíbia com fíbula intacta.** É a combinação compatível com B2 e .1. A alternativa resume o padrão sem trocar a morfologia pela situação da fíbula.",
+      "incorretas": {
+        "B": "**Espiral simples pertence a outra família.** Uma fratura simples espiral é A1, enquanto B2 contém cunha de flexão. A fíbula intacta, embora correta, não corrige essa troca de padrão.",
+        "C": "**O segundo osso estaria fraturado.** Cunha com tíbia e fíbula quebradas em níveis diferentes usa o sufixo .2. A alternativa muda exatamente a informação que o .1 preserva.",
+        "D": "**Troca tanto a cunha quanto o nível da fíbula.** Cunha fragmentada corresponde a B3; fíbula no mesmo nível corresponde a .3. B2.1 não reúne nenhum desses dois atributos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Classificação: AO 42 e as partes moles."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Classificação: AO 42 e as partes moles"
+        ],
+        "blocos": [
+          "classificacao-ao-42-e-as-partes-moles-e9fb55c0",
+          "classificacao-ao-42-e-as-partes-moles-724df26e",
+          "classificacao-ao-42-e-as-partes-moles-133e882e"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "fd5ff05f1b0c574605c4c18e9f3901bbc07c8bae0e4bf436da3e4c35a17810b3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0427": {
+    "questaoSha256": "f0b1935a492335403a0b78718fbd5756cf0d59a5b2b79877a22d61e250603a41",
+    "comentarioAnteriorSha256": "92733743217dc83c0fe41b6de4bc1aa771934508404147ee3258cb45c204cd98",
+    "comentario": {
+      "conceito": "O parafuso de Krettek, ou **Poller**, ocupa o lugar por onde a haste **não deve passar**. Na situação proximal típica de controle do valgo, ele fica próximo ao foco, no lado côncavo, e segue de **anterior para posterior**, combinação da alternativa C.\n\nA metáfise é mais larga que a haste. Sem contato suficiente com as corticais, a fresa pode abrir um caminho oblíquo, que será seguido pelo implante e perpetuará o desvio. O Poller funciona como uma barreira interna: estreita o corredor disponível e dirige a fresa e a haste para o trajeto planejado (Rockwood, 10ª ed., cap. 63, “Parafusos de bloqueio”).\n\n**A direção depende do plano que se quer corrigir.** Contra o valgo, o resumo coloca o parafuso na porção distal e lateral do fragmento proximal, de anterior para posterior. Contra o ápice anterior, a barreira é posterior à haste e segue de medial para lateral. Não é correto converter a resposta desta questão numa regra de que todo Poller deve ser anteroposterior.\n\nTambém há uma ressalva para a concavidade: ela é a posição usual perto do foco; longe dele, o parafuso pode ficar na convexidade. Se a haste já ocupou o trajeto errado, simplesmente acrescentar uma barreira não desfaz a deformidade. Pode ser necessário retirar a haste, posicionar o Poller e preparar outro caminho.\n\n> **Na prova:** pense na barreira ao trajeto indesejado; para o valgo proximal, Poller lateral e anteroposterior.",
+      "correta": "**C: côncava, de anterior para posterior.** É a disposição usual perto do foco para controlar o desvio em valgo do padrão proximal. O princípio é guiar a haste, e não apenas acrescentar um parafuso ao osso.",
+      "incorretas": {
+        "A": "**A concavidade está correta, mas o plano é outro.** O parafuso de medial para lateral, colocado posteriormente, é descrito para controlar o ápice anterior. É uma montagem válida em outro plano, não a disposição anteroposterior cobrada aqui.",
+        "B": "**Reúne uma exceção e outra direção de controle.** Convexidade pode ter aplicação longe do foco, mas não é a regra proximal próxima ao traço. A orientação medial-lateral também corresponde ao controle sagital quando a barreira é posterior.",
+        "D": "**Conserva a direção e muda o lado da regra usual.** O trajeto anteroposterior é compatível com o controle coronal, porém o capítulo indica concavidade perto do foco. Convexidade não é um substituto universal para essa posição."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A haste na fratura proximal: ponto de entrada e deformidade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A haste na fratura proximal: ponto de entrada e deformidade"
+        ],
+        "blocos": [
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-f4c9a7c8",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-ae9daf25",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-28895b21",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-ae149922"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "ff181858adfd6081b4b9ef3b2888c8d08e42525f95078491ea75232dcc2f44c4"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0441": {
+    "questaoSha256": "c8d61e62e411a70ffee5e3c87ce252f83e55bb82a5ab1c3a15e98671ee119e03",
+    "comentarioAnteriorSha256": "ddf81162c6032f2dd86f10c396a7fe74a9af19f577c9e6b3e6d8942c4a96863f",
+    "comentario": {
+      "conceito": "Com o joelho apoiado e pouco fletido, o acesso suprapatelar facilita a **determinação do ponto de entrada no AP**, alternativa D. A vantagem cobrada é de posicionamento e imagem; não exige prometer menos dor depois da operação.\n\nNa via infrapatelar, o joelho costuma ficar hiperfletido. Na fratura proximal, a patela e o tendão podem dificultar a lateralização do fio, enquanto o aparelho extensor favorece o ápice anterior. A via suprapatelar nasceu para contornar essas dificuldades: entra acima da patela, usa cânulas para proteger a articulação e trabalha com o joelho semiestendido (Rockwood, 10ª ed., cap. 63, “Suprapatelar”).\n\n**A posição facilita manter o que foi reduzido.** Apoiar a perna e obter o AP sem tanta manipulação ajuda no controle do ponto e do eixo. O perfil, contudo, pode continuar difícil conforme a anatomia patelofemoral. Uma via mais conveniente não dispensa conferir as duas incidências nem reduzir a fratura antes de fresar.\n\nQuanto à dor e à função, a tabela do resumo não mostra diferença consistente em relação à infrapatelar. Isso é importante na conversa com o paciente: há uma justificativa técnica para escolher a via, mas não garantia de eliminar a dor anterior do joelho.\n\n> **Na prova:** suprapatelar significa semiextensão e AP mais fácil, não hiperflexão nem redução garantida da dor.",
+      "correta": "**D: maior facilidade em determinar o ponto de entrada na radioscopia anteroposterior.** A posição semiestendida permite apoiar a perna e facilita esse controle. A avaliação no perfil permanece necessária.",
+      "incorretas": {
+        "A": "**A vantagem inicial de dor não se confirmou de forma consistente.** O capítulo não sustenta menor taxa reproduzível de dor no joelho com a suprapatelar. Dor anterior é multifatorial e pode ocorrer nas duas vias.",
+        "B": "**A dificuldade que motivou a via está sobretudo na proximal.** O trecho médio tem canal estreito, que guia melhor a haste. O resumo destaca controle de redução e imagem nas metáfises, especialmente na proximal; não apresenta melhor redução do terço médio como a diferença pedida.",
+        "C": "**Inverte as posições do joelho.** É a infrapatelar que usa hiperflexão para alinhar a entrada. A suprapatelar trabalha em semiextensão, diminuindo a força deformante do aparelho extensor."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: As vias: infrapatelar, suprapatelar e semiestendida; Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "As vias: infrapatelar, suprapatelar e semiestendida",
+          "Complicações: dor no joelho, material, consolidação viciosa, pseudartrose e infecção"
+        ],
+        "blocos": [
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-127cdfd7",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-79af7f38",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-19fd4b8b",
+          "as-vias-infrapatelar-suprapatelar-e-semiestendid-94894493",
+          "complicacoes-dor-no-joelho-material-consolidacao-cfd53a1b"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "6e51ea7d80987674676601580e9440957d0499cbbe68a1e22e9192cfdb8080d3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0575": {
+    "questaoSha256": "fc3e968fd646602b75df9ad481d32efabe6e42c92d02eaa86c660c331a9af98a",
+    "comentarioAnteriorSha256": "fa31db0c6ddecb687320e89d2823743028d12cdc67c02a7edd0348f5b2a63efe",
+    "comentario": {
+      "conceito": "Na tíbia proximal, entrar **medial demais** pode deixar a haste num caminho oblíquo e produzir **valgo**, alternativa B. O erro não é compensado automaticamente quando o implante avança pelo osso.\n\nA diferença para o trecho médio é o espaço disponível. Na diáfise estreita, a haste encontra as corticais e ajuda a alinhar; na metáfise proximal larga, ela fica sem esse guia. O fragmento curto acompanha o trajeto aberto pelo fio e pela fresa. Se esse trajeto começa muito medial, ou a fresa escorrega de medial para lateral, a montagem favorece o desvio em valgo (Rockwood, 10ª ed., cap. 63, “Por que a fratura proximal vai para valgo e ápice anterior”).\n\n**A imagem também pode enganar.** O ponto ideal é logo medial à espinha tibial lateral num AP verdadeiro. A rotação externa do membro faz um ponto parecer mais lateral do que realmente é; por isso não basta escolher a posição olhando uma imagem rodada. O resumo usa a borda lateral do planalto bissectando a fíbula como referência do AP.\n\nO componente sagital tem outra explicação: fio dirigido para posterior e tração do aparelho extensor favorecem ápice anterior. Separar os planos permite corrigir o erro certo. Ponto adequado, redução mantida e, quando necessários, Poller ou outros auxiliares vêm antes da fresagem.\n\n> **Na prova:** ponto proximal excessivamente medial leva a valgo; erro sagital não é a resposta a essa pergunta coronal.",
+      "correta": "**B: em valgo.** O trajeto medial para lateral numa metáfise larga permite que a haste mantenha o desvio coronal. O ponto inicial deve ser conferido antes de preparar o canal.",
+      "incorretas": {
+        "A": "**É o efeito descrito para o erro oposto.** Um ponto excessivamente lateral, possível na suprapatelar, pode produzir varo. Não corresponde ao ponto medial do enunciado.",
+        "C": "**Mistura o erro coronal com o sagital.** O ápice anterior se relaciona ao aparelho extensor e ao fio orientado para posterior. A medialização do ponto, isoladamente, é o mecanismo associado ao valgo.",
+        "D": "**Não é o desvio explicado pela medialização.** O capítulo separa valgo no plano coronal e ápice anterior no sagital. Um desvio posterior não é a consequência apresentada para o ponto de entrada medial demais."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A haste na fratura proximal: ponto de entrada e deformidade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A haste na fratura proximal: ponto de entrada e deformidade"
+        ],
+        "blocos": [
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-c9f67573",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-d1573c60",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-604739ba"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "2a895e8aaf5abe22e15755c095eb5ee6f0dcd89add67823bdbe70b4b1d392df8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0675": {
+    "questaoSha256": "98725a7e7a75224fc972528aed1f0920c9b247a7f919e4b7d9312c10ef8a82ce",
+    "comentarioAnteriorSha256": "af407519d84ee582c79b7825780c42d555ce0bfc0423216f82fe4a2aac5744ce",
+    "comentario": {
+      "conceito": "O padrão proximal clássico combina **valgo e ápice anterior**, correspondente à alternativa C. São dois erros em planos diferentes, e cada um precisa de uma explicação para que a prevenção faça sentido.\n\nNo plano coronal, um ponto medial demais ou a fresa deslizando de medial para lateral cria um corredor oblíquo. Na metáfise larga, a haste não encontra o ajuste cortical da diáfise e pode manter o valgo. No plano sagital, a tração do aparelho extensor sobre o fragmento proximal curto, acentuada com o joelho fletido, soma-se ao fio angulado para posterior e favorece o ápice anterior, chamado procurvato ou antecurvato no resumo (Rockwood, 10ª ed., cap. 63, “Por que a fratura proximal vai para valgo e ápice anterior”).\n\n**A haste ocupa um caminho; não corrige qualquer caminho.** Fresar com a fratura deformada tende a preparar a posição errada para o implante. A redução deve estar obtida e mantida por posicionamento, pinça, placa provisória, distrator ou Poller conforme o padrão.\n\nA posição semiestendida reduz a tração do aparelho extensor e facilita os controles. Ela também tem seus próprios erros: na suprapatelar, um ponto lateral demais pode dar varo. Portanto, mudar a via não dispensa conferir o ponto e a direção do fio nas duas incidências.\n\n> **Na prova:** associe o valgo ao trajeto medial e o ápice anterior ao aparelho extensor e ao fio posterior.",
+      "correta": "**C: valgo e anterior.** O par corresponde ao padrão descrito como valgo com ápice anterior na fratura proximal. A prevenção exige controle coronal e sagital antes da fresagem.",
+      "incorretas": {
+        "A": "**O componente sagital coincide, mas o coronal está invertido.** Ápice anterior faz parte do padrão clássico; varo não é o desvio esperado do ponto medial da via infrapatelar. O varo é explicado pelo ponto excessivamente lateral.",
+        "B": "**Inverte os dois componentes.** O conjunto clássico é valgo e ápice anterior. Varo remete ao erro lateral de entrada, e posterior não corresponde ao ápice sagital descrito pela tração extensora e pelo fio posterior.",
+        "D": "**Acerta o valgo e troca o plano sagital.** A direção posterior do fio não significa ápice posterior da fratura: ao receber a haste, o mecanismo descrito produz ápice anterior. Essa distinção é a armadilha do par."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: A haste na fratura proximal: ponto de entrada e deformidade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "A haste na fratura proximal: ponto de entrada e deformidade"
+        ],
+        "blocos": [
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-20bff8cc",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7a82279e",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-cd4140b9",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7b34d5dd",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-604739ba",
+          "a-haste-na-fratura-proximal-ponto-de-entrada-e-d-7bc811ca"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "473aaba7d547941772ba4b57b1b484bc3b88c63ccbe591ba2151afa4397553d2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0890": {
+    "questaoSha256": "83ab4f255be9d7206182d289a7933595b17110df0178b04c41a85a94d027e0ca",
+    "comentarioAnteriorSha256": "5226f3806bd11ebdd6cc388dc7e41f23cf0625150a644a89def747008e487f60",
+    "comentario": {
+      "conceito": "A fíbula está inteira, mas isso não garante que a tíbia permaneça alinhada na órtese. No método funcional de Sarmiento, essa combinação chama atenção para **deformidade angular tardia**, frequentemente em varo, alternativa C.\n\nO apoio funcional vem da contenção das partes moles por uma órtese bem moldada. A pressão sobre os tecidos ajuda a manter a posição enquanto a carga estimula a consolidação. A fíbula íntegra não substitui esse mecanismo e, na fratura tibial desviada, o capítulo a relaciona à tendência ao varo (Rockwood, 10ª ed., cap. 63, “Tratamento não cirúrgico: Sarmiento e os limites”).\n\n**Consolidar e consolidar no eixo são objetivos diferentes.** Na série de mil fraturas fechadas, Sarmiento teve baixa taxa de pseudartrose, mas o resumo destaca fíbula íntegra entre os fatores de pior resultado pelo risco angular. Assim, a possibilidade de boa união não autoriza aceitar uma redução inicial inadequada ou deixar de acompanhar o eixo.\n\nO encurtamento final acompanha o inicial: a órtese não aumenta nem corrige essa diferença de comprimento. Já a angulação pode se perder durante o tratamento, exigindo remoldagem, correção apropriada ou mudança da estratégia. A tíbia, ao contrário do úmero citado no resumo, não deve ser deixada desalinhada esperando melhora espontânea.\n\n> **Na prova:** no tratamento funcional da tíbia com fíbula íntegra, a associação característica é angulação, sobretudo varo.",
+      "correta": "**C: deformidade angular.** O resumo relaciona fíbula preservada ao risco de desvio angular tardio. O seguimento precisa observar o eixo, além dos sinais de consolidação.",
+      "incorretas": {
+        "A": "**União lenta é um problema possível, mas não o vínculo específico.** A série de Sarmiento apresentou pseudartrose de 1,1% nas fechadas. A associação enfatizada para a fíbula íntegra é a deformidade angular, não uma falha obrigatória de consolidação.",
+        "B": "**Limitação articular existe em outras séries, mas não explica a fíbula íntegra.** O capítulo relata rigidez de tornozelo e subtalar em resultados não reproduzidos por todos. A característica do enunciado direciona para perda do eixo tibial.",
+        "D": "**O comprimento depende sobretudo da posição inicial.** Na série descrita, o encurtamento final acompanhou o inicial e a órtese não o corrigiu nem o ampliou. O fator “fíbula íntegra” é destacado por sua relação com a angulação tardia."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Tratamento não cirúrgico: SARMIENTO e os limites."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Tratamento não cirúrgico: SARMIENTO e os limites"
+        ],
+        "blocos": [
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-8fc21f6b",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-eff67043",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-db3e0d94",
+          "tratamento-nao-cirurgico-sarmiento-e-os-limites-10b963eb"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "9d5f9c8a4b10c1bbf14726df5ac748973d017fa4fadd7cf57c39eed4885016bf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0904": {
+    "questaoSha256": "85eeefa6667b2739ce71a9416d9916fb8916aecf88f7daa5bc6c5e7f49a00e67",
+    "comentarioAnteriorSha256": "3996eda1cc929fb1f2bacf642faf28534ae2bb305ae07f17b1ad74b7cce7b841",
+    "comentario": {
+      "conceito": "Uma fratura aparentemente diafisária no quarto distal pode esconder um traço dentro do tornozelo. Na TC, a associação típica é o **cisalhamento coronal do maléolo posterior**, alternativa D, especialmente nos padrões espirais distais.\n\nO resumo descreve esse fragmento como geralmente oblíquo simples, Haraguchi I. Isso o distingue tanto da fratura do maléolo medial quanto de um fragmento posterior muito cominuído. A radiografia pode mostrar bem a diáfise e deixar passar a extensão articular; na série citada, parte desse acometimento não apareceu no exame simples (Rockwood, 10ª ed., cap. 63, “O traço que desce até o tornozelo”).\n\n**Descobrir antes da haste muda a sequência.** Um fragmento posterior sem desvio pode se deslocar durante a instrumentação. Por isso o capítulo orienta tomografia do tornozelo no padrão de risco e pinçamento ou fixação do fragmento antes de passar a haste. Não se trata de procurar uma fratura apenas para completar a classificação: a informação protege a redução articular.\n\nLesões ligamentares e fraturas de outros maléolos também podem acompanhar a diáfise. A resposta não diz que elas são impossíveis; identifica o padrão mais frequente apresentado. A avaliação deve incluir o tornozelo mesmo quando a deformidade principal e a dor inicial chamam atenção para a perna.\n\n> **Na prova:** espiral distal da tíbia pede atenção ao maléolo posterior, TC e proteção do fragmento antes da haste.",
+      "correta": "**D: cisalhamento coronal do maléolo posterior.** É a extensão articular mais comum descrita no resumo para esse contexto. Sua identificação pode levar à fixação antes da haste, evitando deslocamento durante a instrumentação.",
+      "incorretas": {
+        "A": "**Troca o compartimento articular.** O maléolo medial pode estar fraturado, mas a associação dominante descrita é posterior. Um traço transverso medial não representa o padrão coronal posterior mostrado pelo capítulo.",
+        "B": "**Acerta o maléolo, mas erra a morfologia típica.** O resumo destaca fragmento posterior geralmente oblíquo simples, Haraguchi I, e não o padrão fragmentado. A localização correta não basta quando a alternativa acrescenta a forma errada.",
+        "C": "**Um traço medial vertical é outra lesão.** O achado procurado nas espirais distais é o cisalhamento coronal do maléolo posterior. Não se deve trocar a superfície posterior por uma fratura do maléolo medial só porque ambas entram na articulação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Lesões associadas: tornozelo, planalto, joelho e joelho flutuante."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Lesões associadas: tornozelo, planalto, joelho e joelho flutuante"
+        ],
+        "blocos": [
+          "lesoes-associadas-tornozelo-planalto-joelho-e-jo-9bb636fe"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "c11345913ec2a208d00ccdade8521d3718d9c3419c33c645156298cff9529234"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0996": {
+    "questaoSha256": "a13e0e1b97903916304189d1eb248bb60007dc41fe0d8dc93db1e6eccea697d2",
+    "comentarioAnteriorSha256": "10eeda8e45e205720555d52d52fb9aa7f76ee0d2ff524c24cde0dc74d809f616",
+    "comentario": {
+      "conceito": "A tíbia é cominuída, as partes moles estão em boas condições e a proposta é **placa em ponte sem abrir cada fragmento**. Nesse cenário, a via anterolateral oferece cobertura muscular, mas exige proteger o **nervo fibular superficial** nos parafusos distais percutâneos: alternativa D.\n\nNa consolidação secundária, a montagem preserva comprimento, eixo e rotação e permite formação de calo. A placa longa faz a ponte sobre a cominução; não é necessário dissecar e reduzir anatomicamente cada fragmento intermediário. O objetivo é obter uma montagem coerente com a estabilidade relativa e conservar a biologia local (Rockwood, 10ª ed., cap. 63, “A estratégia: primária ou secundária”).\n\n**A mesma via muda o problema de cobertura e o risco anatômico.** A medial chega diretamente à tíbia, mas deixa a placa com pouca cobertura profunda: uma deiscência pode expô-la. A anterolateral passa sob os músculos e oferece melhor proteção. Distalmente, porém, o fibular superficial atravessa a fáscia e tem trajeto variável, ficando vulnerável à passagem percutânea dos parafusos.\n\nA artéria tibial anterior e o fibular profundo pertencem ao compartimento anterior; a artéria fibular fica no posterior profundo. Conhecer esses planos evita escolher uma estrutura apenas por ter “fibular” ou “anterior” no nome. A janela cutânea e a direção real da instrumentação determinam quem corre risco.\n\n> **Na prova:** placa anterolateral distal combina cobertura melhor com atenção ao fibular superficial nos parafusos percutâneos.",
+      "correta": "**D: anterolateral e nervo fibular superficial.** É o par descrito pelo capítulo para a placa percutânea nesse contexto. A proteção do nervo acompanha a estratégia biológica da placa em ponte.",
+      "incorretas": {
+        "A": "**A via e o nervo não formam o par descrito.** Na medial, a estrutura nervosa destacada é o safeno. A tabela anatômica situa o fibular profundo com o feixe anterior; não apresenta “nervo tibial anterior” como o risco medial que resolveria a questão.",
+        "B": "**A artéria anterior não é o risco característico da janela medial.** O resumo destaca o safeno nessa via e o fibular superficial na instrumentação anterolateral distal. A artéria tibial anterior exige atenção em outros trajetos, como o bloqueio distal anteroposterior da haste.",
+        "C": "**A via está correta, mas a artéria é de outro plano.** A fibular pertence ao compartimento posterior profundo. O nervo fibular superficial, que cruza a fáscia distalmente, é o risco destacado para os parafusos laterais percutâneos."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Placa e fixador externo; Anatomia aplicada; A técnica da haste: fresagem, bloqueio e a fratura distal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Placa e fixador externo",
+          "Anatomia aplicada",
+          "A técnica da haste: fresagem, bloqueio e a fratura distal"
+        ],
+        "blocos": [
+          "placa-e-fixador-externo-685f3c8c",
+          "placa-e-fixador-externo-15de0589",
+          "placa-e-fixador-externo-4f4399d4",
+          "anatomia-aplicada-1160e5f1",
+          "anatomia-aplicada-dfd513ad",
+          "a-tecnica-da-haste-fresagem-bloqueio-e-a-fratura-059b8d05"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "4ce5f7883f3c7403ada484487e3dba21a5620b3e26c8c8e7fff161819b3b1d0d"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
