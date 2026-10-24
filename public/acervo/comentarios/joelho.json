@@ -2974,15 +2974,45 @@
   "conferido": false
  },
  "joelho-0212": {
+  "conceito": "O planalto lateral é **mais alto e plano ou levemente convexo** em relação ao medial. A alternativa A resume a descrição como “alto e convexo”. O medial é mais côncavo e fica num nível um pouco inferior.\n\nEssa assimetria é anatômica, não um defeito de alinhamento. O lateral mais alto participa dos poucos graus de varo do planalto em relação à diáfise. Os dois têm inclinação posterior, mas os valores variam bastante entre pessoas; o lado contralateral é uma referência útil de redução (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\n**Não se deve nivelar os dois planaltos por obrigação.** Ao corrigir um afundamento lateral, deixar a superfície na mesma altura da medial pode conservar uma depressão relativa. O resumo orienta restaurar o lateral um pouco acima, considerando ainda a tendência ao recalque pós-operatório.\n\nA forma também ajuda a reconhecer as linhas no perfil: medial côncava, lateral mais plana ou convexa. Essa leitura evita trocar as superfícies durante a radioscopia. Ela se integra aos outros controles, sem substituir análise do eixo, largura e congruência.\n\nA questão exige duas características simultâneas. Acertar a altura e errar a forma, ou reconhecer a forma e inverter a altura, não reproduz o padrão. A palavra convexo é uma simplificação da faixa anatômica informada, não autorização para criar um abaulamento excessivo.",
+  "correta": "**A: alto e convexo.** É o único par compatível com a maior altura lateral e seu contorno plano a levemente convexo no resumo. A comparação é com o planalto medial, não com um valor absoluto de altura.",
   "incorretas": {
-   "B": "Convexo está certo, mas o platô lateral é mais alto, e não mais baixo, que o medial.",
-   "C": "Alto está certo, mas o platô côncavo é o medial.",
-   "D": "Baixo e côncavo descreve o platô medial, e não o lateral."
+   "B": "**B.** A forma está próxima da descrição lateral, mas a altura está invertida. O lateral é mais alto, e não mais baixo, que o medial.",
+   "C": "**C.** A altura está correta, mas a concavidade pertence à descrição medial. Os planaltos não devem ser tratados como superfícies da mesma forma apenas em níveis diferentes.",
+   "D": "**D.** Inverte os dois atributos do lateral. Mais baixo e côncavo corresponde ao contraste medial dado pela fonte, não ao planalto perguntado."
   },
-  "conceito": "Os dois lados do joelho não são espelhos um do outro, e essa assimetria explica boa parte do jeito como ele se move.\n\nO **platô tibial medial** é **maior**, **mais baixo** e **côncavo**, como uma tigela rasa. O côndilo femoral medial se encaixa nessa tigela e fica relativamente estável, sem deslizar muito para a frente ou para trás.\n\nO **platô tibial lateral** é **menor**, **mais alto** e **convexo** no perfil, como o topo de uma bola. O côndilo femoral lateral apoia sobre essa superfície curva e tem muito mais liberdade para rolar para a frente e para trás.\n\nO resultado é que o joelho não dobra como uma dobradiça simples. Durante a flexão, o lado medial funciona quase como um pivô, e o côndilo lateral desliza bem mais para trás sobre seu platô convexo. Na extensão final, acontece o inverso, e a tíbia roda para fora sobre o fêmur, travando o joelho estendido: é o mecanismo de aparafusamento (screw-home). Algumas próteses de joelho, chamadas de pivô medial, tentam reproduzir essa cinemática com um componente medial mais encaixado.\n\nSaber essa diferença também ajuda a ler a radiografia em perfil. Os dois platôs se sobrepõem, e é preciso reconhecer qual é qual para medir a inclinação posterior da tíbia (que se mede no platô medial, o côncavo) e para entender as fraturas do planalto tibial.",
-  "correta": "Alto e convexo. Comparado ao medial, o platô lateral é mais alto e tem a superfície convexa no perfil, o que dá ao côndilo lateral maior mobilidade no sentido anteroposterior.",
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Anatomia aplicada",
+      "Tratamento do lado lateral"
+     ],
+     "blocos": [
+      "anatomia-aplicada-882c3a32",
+      "anatomia-aplicada-01a8a946",
+      "anatomia-aplicada-29b9f498",
+      "tratamento-do-lado-lateral-6b4477db"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "f160b70784360ea0a5d5df014b5c5c35ae39d133057782888974422debd3f2a9"
+    }
+   ],
+   "questaoSha256": "27ca0482ff6ce20809a210325055307d47f750163e36b7cd6f182d3358a7e3cf",
+   "comentarioSha256": "88d36240a39dd531d97f5e5271edc9f8ea92e6bdda52afd32cd4584ab837cf4a"
+  }
  },
  "joelho-0213": {
   "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Discoide e osteocondrite dissecante\n- Menisco discoide ==lateral== altera a carga no compartimento lateral.\n- Associa-se à ==OCD do côndilo femoral lateral== (local atípico: a OCD clássica é no côndilo medial, face lateral).\n- OCD também pode surgir após saucerização/meniscectomia.\n\n> **Na prova:** Wrisberg associa-se à OCD do ==côndilo femoral lateral==",

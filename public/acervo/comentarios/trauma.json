@@ -598,15 +598,46 @@
   "conferido": false
  },
  "trauma-0031": {
+  "conceito": "O cisalhamento posteromedial se associa a **varo, flexão do joelho e rotação interna do côndilo femoral medial**, alternativa A. A rotação é descrita pelo côndilo femoral, e não deve ser trocada inadvertidamente por uma rotação da tíbia em referencial diferente.\n\nO lado medial suporta carga e tem osso mais resistente que o lateral. Quando a solicitação produz um traço de cisalhamento posterior, surge um fragmento que pode perder seu apoio e deslizar ao longo do plano da fratura. Esse padrão pode ocorrer isoladamente ou integrar uma bicondilar (Rockwood, 10ª ed., cap. 62, “Mecanismo e padrões de fratura”).\n\n**Mecanismo orienta o planejamento, mas a TC mostra o fragmento real.** A classificação baseada apenas no AP não descreve adequadamente os traços coronais posteriores. Identificá-los antes da cirurgia permite escolher uma via e uma placa que realmente contenham o fragmento.\n\nPara esse cisalhamento, a placa posteromedial atua como antideslizante no ápice. Não basta uma placa anterior parecer bem posicionada se ela não impede o fragmento posterior de escapar. A persistência do cisalhamento favorece instabilidade, dor e perda da redução.\n\nNo enunciado, o varo já está informado. A escolha deve completar o mecanismo com os outros dois atributos, sem transformar toda fratura medial em consequência de extensão ou trocar rotação interna femoral por externa.",
+  "correta": "**A: flexão e rotação interna do côndilo medial.** Completa o varo do enunciado com os dois componentes descritos pelo capítulo. O referencial femoral deve permanecer explícito.",
   "incorretas": {
-   "B": "A flexão está certa, mas o côndilo medial roda internamente.",
-   "C": "O joelho está fletido, e a rotação do côndilo é interna.",
-   "D": "A rotação interna está certa, mas o joelho está fletido no trauma."
+   "B": "**B.** A flexão está correta, mas a rotação femoral externa inverte o componente descrito. Trocar apenas o sentido de rotação já muda o mecanismo pedido.",
+   "C": "**C.** Inverte os dois complementos: coloca extensão e rotação externa em lugar de flexão e rotação interna do côndilo medial. Não reproduz o padrão posteromedial da fonte.",
+   "D": "**D.** Conserva a rotação interna femoral, porém muda flexão para extensão. A presença de um termo correto não compensa a posição errada do joelho no mecanismo apresentado."
   },
-  "conceito": "A **fratura posteromedial do planalto tibial por cisalhamento** tem um mecanismo próprio: **varo** com o **joelho fletido** e o **côndilo femoral medial em rotação interna**. O côndilo, apoiado na parte de trás do planalto, **cisalha** o fragmento posteromedial.\n\n**O que acontece**: o fragmento posteromedial desliza para baixo e para trás, e o restante da tíbia **subluxa para a frente**. São frequentes as lesões **ligamentares laterais** e do **cruzado posterior**.\n\n**O tratamento**: **placa de suporte posteromedial** (antideslizante), por via **posteromedial** (entre o gastrocnêmio medial e a pata de ganso) ou pela via de **Lobenhoffer**, com o paciente em decúbito ventral.\n\n**Por que não só parafusos**: parafusos de anterior para posterior, sozinhos, **falham** contra a força de cisalhamento; a placa segura o fragmento como um apoio.\n\n**Na prova**: o cisalhamento posteromedial vem de varo com o joelho em **flexão** e o côndilo medial em **rotação interna**.",
-  "correta": "Com o joelho fletido e o côndilo medial em rotação interna, o varo faz o côndilo cisalhar o planalto posteromedial.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Mecanismo e padrões de fratura; Classificação de SCHATZKER; Lado medial e vias posteriores."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Mecanismo e padrões de fratura",
+      "Classificação de SCHATZKER",
+      "Lado medial e vias posteriores"
+     ],
+     "blocos": [
+      "mecanismo-e-padroes-de-fratura-65bf462b",
+      "classificacao-de-schatzker-d599fb64",
+      "lado-medial-e-vias-posteriores-96c684c4",
+      "lado-medial-e-vias-posteriores-39c8bf35"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "8b2026c5efd43790405bbf15db05c5d622306dcfe9a1aee4758835346687fcc0"
+    }
+   ],
+   "questaoSha256": "7085ded1e4a5cc05581870dbdb53aa4a8b2bfc465d02126a3d9c1f3a1ace490a",
+   "comentarioSha256": "2b4b14c0f1fd710eb5e42ee0aa0ef7dc9816668965d0460d8aa96ac2fdf7b143"
+  }
  },
  "trauma-0032": {
   "conceito": "O golpe direto num joelho **parcialmente fletido** pode produzir uma fratura vertical da patela e conservar os retináculos e a extensão ativa. Esse é o padrão descrito pela alternativa A.\n\nO desenho do traço não informa sozinho se todo o mecanismo extensor se rompeu. Os retináculos funcionam como extensores secundários e podem transmitir força até a tíbia mesmo com a patela quebrada. Por isso uma fratura vertical pouco desviada pode coexistir com o paciente ainda capaz de elevar a perna estendida (resumo do Rockwood, 10ª ed., cap. 60, “Anatomia” e “Fratura da patela: mecanismo e lesões associadas”).\n\nO trauma indireto oferece um contraste útil: a contração forte do quadríceps com o joelho fletido tende a produzir componente transverso e a propagar-se aos retináculos, com maior risco de perder a extensão. Na prática há mecanismos mistos; a pergunta descreve o padrão habitual da vertical, não uma regra que permita adivinhar a integridade de todos os tecidos sem exame.\n\nA imagem precisa acompanhar esse raciocínio. O traço vertical pode escapar no AP e é bem demonstrado na axial. Um exame funcional preservado não autoriza dispensar a investigação da dor e do trauma, assim como uma imagem de fratura não prova por si incompetência extensora.\n\nNo resumo da Biblioteca, compare os padrões e o papel dos retináculos. A decisão de tratamento exige avaliar extensão e congruência articular, não apenas ler “vertical” no laudo.",
@@ -1649,19 +1680,46 @@
   "conferido": false
  },
  "trauma-0076": {
-  "conceito": "**A fratura do planalto tibial.** É uma fratura **articular** da tíbia proximal, causada por uma força em **varo ou valgo** com carga axial. Os mecanismos clássicos são o atropelamento (o para-choque bate no lado lateral do joelho, com valgo) e as quedas de altura. O **platô lateral** é o mais acometido.\n\n**A classificação de Schatzker.**\n\n| Tipo | Fratura |\n|---|---|\n| I | **Cisalhamento** do platô lateral (jovem, osso bom) |\n| II | Cisalhamento com **depressão** lateral (o mais comum) |\n| III | **Depressão** pura do platô lateral (idoso, osteoporose) |\n| IV | Platô **medial** (alta energia; risco de luxação e lesão vascular) |\n| V | **Bicondilar** |\n| VI | Dissociação **metáfise-diáfise** |\n\n**As lesões de partes moles associadas.** São **muito frequentes**: em estudos com ressonância, a maioria dos pacientes tem alguma lesão de partes moles.\n\n| Estrutura | Frequência |\n|---|---|\n| **Menisco** | A **mais comum** (cerca de 50% ou mais); sobretudo o **lateral**, nas fraturas do platô lateral |\n| Ligamento colateral medial | Frequente nas fraturas do platô lateral por valgo |\n| Ligamento cruzado anterior | Frequente (às vezes como avulsão da eminência intercondilar) |\n| Ligamento cruzado posterior, canto posterolateral | Nas fraturas de alta energia, sobretudo do platô medial |\n\n**Por que o menisco.** Nas fraturas com **depressão** do platô lateral (Schatzker II e III), o côndilo femoral afunda o osso, e o menisco lateral se **rompe** ou fica **preso** dentro da depressão ou do traço. Na cirurgia, o menisco deve ser examinado e **reparado** (não removido), porque a meniscectomia acelera a artrose.\n\n**Os princípios do tratamento.**\n- **Redução anatômica** da superfície articular (elevação do fragmento deprimido, com enxerto ou substituto ósseo por baixo).\n- **Restauração do eixo** do membro (o mau alinhamento é mais prejudicial que um pequeno degrau articular).\n- **Fixação estável** (placas de suporte, parafusos em \"jangada\" abaixo da superfície articular) e **mobilização precoce**.\n- **Respeitar as partes moles**: nas fraturas de alta energia, fixador externo temporário e cirurgia definitiva quando a pele permitir.\n\n**As complicações a vigiar.** **Síndrome compartimental** (sobretudo no Schatzker IV a VI), lesão da artéria poplítea e do nervo fibular, infecção e artrose pós-traumática.",
-  "correta": "**Correta: A (menisco lateral).** Na fratura do planalto tibial, a lesão de partes moles associada mais comum é a do **menisco lateral**, sobretudo nas fraturas com depressão do platô lateral (Schatzker II e III), em que o menisco se rompe ou fica preso no traço.",
+  "conceito": "A associação a procurar primeiro entre as opções é a lesão do **menisco lateral**, alternativa A. Na série de Gardner citada, de 103 fraturas operadas avaliadas por RM, ela apareceu em 91%; esse número pertence ao grupo estudado, não a toda fratura de planalto.\n\nA maioria das fraturas é lateral. Sob valgo e carga axial, o côndilo lateral comprime o planalto, e o menisco desse lado pode ficar preso entre os ossos ou no traço. O grau de afundamento e o alargamento se relacionam à lesão meniscal (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\n**Uma fratura pouco desviada também pode ter lesão de partes moles.** O resumo cita alta incidência meniscal mesmo em fraturas tratadas sem cirurgia. Portanto, não se deve reservar a suspeita apenas às bicondilares muito cominuídas.\n\nA RM é mais sensível para meniscos e ligamentos, mas os autores não a pedem rotineiramente: o menisco lateral pode ser visto e reparado pela artrotomia submeniscal durante a fixação. Além disso, o significado de todas as lesões detectadas apenas na RM e a indicação de tratá-las não estão completamente definidos.\n\nA resposta não nega lesão do menisco medial, do LCM ou dos cruzados. Ela organiza a frequência e a busca clínica, sem indicar reparo automático de todo achado de imagem.",
+  "correta": "**A: menisco lateral.** A mecânica do compartimento lateral e os dados da série citada sustentam sua prioridade entre as associações oferecidas. A porcentagem deve permanecer vinculada à casuística operada estudada por RM.",
   "incorretas": {
-   "B": "O **menisco medial** é lesado com menos frequência, porque a maioria das fraturas acomete o platô **lateral**.",
-   "C": "O **canto posterolateral** é lesado em fraturas de alta energia, sobretudo do platô medial, mas é menos frequente que o menisco lateral.",
-   "D": "O **ligamento cruzado anterior** é lesado com frequência, mas menos que o menisco lateral."
+   "B": "**B.** O menisco medial também pode se lesar, mas na série de Gardner apareceu em 44%, abaixo do lateral. Não se deve transferir para a fratura uma expectativa baseada em outro contexto de lesão meniscal.",
+   "C": "**C.** O LCM pode falhar no valgo, porém instabilidade antes de reduzir a fratura pode vir da perda de suporte ósseo. O resumo recomenda reavaliar após fixação e descreve tratamento sem reparo rotineiro do LCM associado.",
+   "D": "**D.** O LCP pode ter avulsão associada, e a conduta é discutida conforme o padrão. Isso não o torna a primeira associação identificada pela fonte; não é necessário inventar um percentual de LCP para distinguir o menisco lateral."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54",
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lesões associadas: menisco, ligamentos e o colateral medial"
+     ],
+     "blocos": [
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "89028e68ed5ae651f5b8d8ad07eac11ea96378dd7cc4d2d6d6079bb1f23fdca5"
+    }
+   ],
+   "questaoSha256": "82c4cd9ec2775743ed355b59eecf61cb341f9a38c8c0db5158ec3283ce1f5edd",
+   "comentarioSha256": "21e949a86aa24f6d1230b154a0f6d5d2c87ff4d1c6e8ec4de680ce6aef492fde"
+  }
  },
  "trauma-0077": {
   "incorretas": {
@@ -4208,15 +4266,51 @@
   "conferido": false
  },
  "trauma-0204": {
+  "conceito": "No osso osteoporótico, o côndilo femoral pode **afundar a superfície do planalto**, em vez de abrir uma grande cunha cortical. A **depressão central**, alternativa A, é o padrão típico pedido; na classificação de Schatzker, a depressão pura lateral corresponde ao tipo III.\n\nA fratura depende da carga e da resistência óssea. O resumo distingue valgo puro, que produz separação, de carga axial, que produz compressão localizada; a combinação pode causar separação com afundamento. No idoso osteopênico predomina mais a compressão, enquanto o jovem com osso resistente tende a formar uma cunha com menos afundamento (Rockwood, 10ª ed., cap. 62, “Mecanismo e padrões de fratura”).\n\n**A idade não classifica a fratura sozinha.** O paciente osteoporótico também pode sofrer uma bicondilar, e uma história de baixa energia não dispensa avaliar o padrão real. A pergunta pede a tendência associada à qualidade do osso, não uma exclusividade diagnóstica.\n\nNa depressão pura, a parede lateral permanece sem fragmento de separação. Se houver indicação de operar, pode-se elevar a superfície por janela cortical, preservar a parede e preencher o vazio metafisário que restou da compactação das trabéculas. A sustentação subcondral evita que a superfície simplesmente volte a afundar.\n\nO padrão deve ser caracterizado com imagem, e a decisão leva em conta estabilidade, alinhamento e área comprometida. O capítulo considera simplista escolher tratamento só pelo número de milímetros de depressão.",
+  "correta": "**A: depressão central.** A compressão localizada predomina no osso de menor resistência e pode deprimir a superfície sem abrir grande cunha lateral. É a relação mecânica que fundamenta a associação com osteoporose.",
   "incorretas": {
-   "B": "O comprometimento bicondilar vem de trauma de alta energia.",
-   "C": "A dissociação metáfise-diáfise (Schatzker VI) é lesão de alta energia.",
-   "D": "O afundamento do côndilo medial (Schatzker IV) é de alta energia."
+   "B": "**B.** A bicondilar envolve ambos os planaltos e se relaciona ao predomínio de carga axial e maior energia. Pode ocorrer no idoso, mas não é o padrão característico de compressão localizada que a pergunta procura.",
+   "C": "**C.** Dissociação metáfise-diáfise significa separar o bloco proximal da diáfise, padrão instável com lesão importante de partes moles. Não é sinônimo de uma superfície central afundada em osso osteoporótico.",
+   "D": "**D.** O lado medial é mais resistente e sua fratura costuma envolver varo e energia alta, podendo representar variante de luxação. A depressão típica citada para o osso osteopênico é lateral, não afundamento medial como regra."
   },
-  "conceito": "O padrão da fratura do **planalto tibial** depende da **qualidade do osso**:\n\n**osso jovem e denso**: o côndilo femoral bate no planalto, e a cortical resistente se **parte**: fratura em **cisalhamento** (split) do planalto lateral, **Schatzker I**, ou cisalhamento com depressão, **Schatzker II**;\n\n**osso osteoporótico**: a cortical aguenta, mas o osso esponjoso por baixo é fraco e **afunda**: **depressão central pura**, **Schatzker III**, sem traço na cortical.\n\n**As fraturas de alta energia**: o côndilo **medial** (Schatzker IV, muitas vezes fratura-luxação), as **bicondilares** (V) e a **dissociação metáfise-diáfise** (VI) aparecem em traumas violentos, em qualquer idade.\n\n**O tratamento da depressão central**: elevar o fragmento afundado por uma janela na metáfise, preencher o defeito com **enxerto** ou substituto ósseo e sustentar a superfície com **parafusos em jangada** (rafting) logo abaixo da cartilagem.\n\n**Na prova**: no osso osteoporótico, o padrão típico é a **depressão central**.",
-  "correta": "No osso osteoporótico, a cortical resiste e o esponjoso fraco afunda: depressão central pura, Schatzker III.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Mecanismo e padrões de fratura; Classificação de SCHATZKER; Tratamento do lado lateral; Quando operar e quanto se tolera."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Mecanismo e padrões de fratura",
+      "Classificação de SCHATZKER",
+      "Tratamento do lado lateral",
+      "Quando operar e quanto se tolera"
+     ],
+     "blocos": [
+      "mecanismo-e-padroes-de-fratura-ef801f78",
+      "mecanismo-e-padroes-de-fratura-082ce611",
+      "mecanismo-e-padroes-de-fratura-3bcd1579",
+      "mecanismo-e-padroes-de-fratura-fff16546",
+      "mecanismo-e-padroes-de-fratura-65bf462b",
+      "classificacao-de-schatzker-b1760cec",
+      "tratamento-do-lado-lateral-2430c926",
+      "quando-operar-e-quanto-se-tolera-030300cc"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "074fc830a8e1542c92cb764003636106be405587d576ef713e05b567104be534"
+    }
+   ],
+   "questaoSha256": "6422819bfc6645fdf545d31740c25bf63c342441fd50d7f7739f8d7b4187cb31",
+   "comentarioSha256": "160080eca4a5f3b82b5ebed63bdf9cd8c8814da307db93cdf94df233e320cc2e"
+  }
  },
  "trauma-0205": {
   "conceito": "**A tríade terrível soma luxação, fratura da cabeça radial e fratura do coronoide.** A lesão combina perdas ósseas e ligamentares; recuperar apenas uma delas pode não devolver a estabilidade. Na classificação citada, Mason III indica cominuição de toda a cabeça, e Regan-Morrey II compromete menos de metade da altura do coronoide.\n\nO roteiro do resumo vai de dentro para fora: **coronoide, cabeça do rádio, colateral lateral e, se necessário, colateral medial**. O coronoide pode ser fixado com parafusos nos fragmentos maiores ou reparado pela cápsula anterior nos pequenos e cominutivos, conforme o padrão. A cabeça é fixada ou substituída para repor o apoio radiocapitelar.\n\nDepois, o lateral é reparado e a estabilidade é testada em pronação, neutro e supinação. O medial entra se a articulação ainda não se mantém estável. Portanto, o último elemento da alternativa não significa que todo paciente precise obrigatoriamente de reparo medial; trata-se de uma etapa condicional.\n\nA importância do coronoide não pode ser reduzida a “é pequeno”. Nos modelos de tríade descritos, o tipo I pequeno pode recuperar estabilidade com as outras contenções, mas os tipos II e III podem continuar instáveis mesmo após cabeça e ligamentos. Isso explica por que o enunciado fornece a classificação do fragmento.\n\n**Leia “A ordem da cirurgia” e “Por que o coronoide pesa”, no resumo da Biblioteca.** A primeira seção oferece a sequência; a segunda explica por que tratar a cabeça antes de pensar no coronoide não corresponde ao roteiro solicitado.",
@@ -6075,15 +6169,46 @@
   }
  },
  "trauma-0296": {
+  "conceito": "A palavra **“pura”** resolve a classificação: há depressão do planalto lateral, mas não um fragmento de separação. Isso é **Schatzker III**, alternativa B. Se houvesse separação junto ao afundamento, seria tipo II.\n\nO côndilo femoral comprime a superfície e as trabéculas abaixo dela. Em osso osteopênico, essa falha pode afundar a região central mantendo a parede lateral sem uma cunha separada. O padrão morfológico, e não apenas o mecanismo ou a idade, define o tipo (Rockwood, 10ª ed., cap. 62, “Classificação de Schatzker”).\n\nA distinção tem consequência técnica. Na depressão pura, uma janela cortical permite alcançar o fragmento por baixo e elevá-lo sem abrir uma separação inexistente. A cavidade deixada pela compactação precisa de suporte, associado à fixação subcondral quando indicada.\n\n**A classificação em AP tem limites.** O capítulo alerta que alguns tipos III aparentes têm um traço lateral pouco desviado e acabam sendo tipos II. A TC caracteriza a cortical e os fragmentos posteriores que a radiografia pode esconder. Não se deve insistir no rótulo III se a investigação mostrar separação.\n\nNo caso descrito, porém, o enunciado já fornece depressão lateral pura. IV mudaria para o planalto medial e V para os dois côndilos; nenhum desses elementos foi dado.",
+  "correta": "**B: tipo III.** Corresponde à depressão pura lateral, sem cunha de separação. O termo “pura” é o detalhe que a distingue do tipo II.",
   "incorretas": {
-   "A": "**Tem cisalhamento.** O tipo II combina o split lateral com a depressão articular.",
-   "C": "**Planalto medial.** O tipo IV é a fratura do planalto medial, com alto risco de lesão vascular.",
-   "D": "**Bicondilar.** O tipo V acomete os dois planaltos com a metáfise em continuidade."
+   "A": "**A.** Tipo II combina separação e afundamento. Acrescentaria uma ruptura cortical com fragmento de separação que o enunciado exclui ao chamar a depressão de pura.",
+   "C": "**C.** Tipo IV envolve o planalto medial, com comportamento mecânico e risco próprios. A pergunta localiza explicitamente a depressão no lateral.",
+   "D": "**D.** Tipo V é bicondilar, com continuidade entre metáfise e diáfise. Não corresponde à depressão central isolada de um único planalto lateral."
   },
-  "conceito": "**A classificação de Schatzker.** Divide as fraturas do **planalto tibial** em seis tipos. Os três primeiros são do **planalto lateral**, por força em **valgo**; o IV é do **medial**; o V e o VI são **bicondilares**, de alta energia.\n\n**Os tipos.** **I**: **cisalhamento** (split) puro do planalto lateral, sem depressão, típico do **osso jovem** e denso. **II**: **split-depressão** lateral, o mais comum, com um fragmento em cunha e a superfície articular afundada ao lado. **III**: **depressão central pura** do planalto lateral, sem traço de cisalhamento na cortical, típica do **osso osteoporótico**, que afunda sob carga (IIIA lateral, IIIB central, em algumas versões). **IV**: fratura do planalto **medial**, com alto risco de **lesão vascular e do fibular** e muitas vezes uma fratura-luxação. **V**: **bicondilar**, com a metáfise e a diáfise em continuidade. **VI**: bicondilar com **dissociação metadiafisária**.\n\n**O tratamento do tipo III.** O objetivo é **elevar** o fragmento afundado através de uma **janela cortical** metafisária (ou com impactores guiados por radioscopia ou artroscopia), **preencher** o defeito com enxerto ou substituto ósseo e **sustentar** com parafusos subcondrais em \"jangada\" (rafting). Como a cortical lateral está íntegra, muitas vezes não é necessária placa de suporte.\n\n**Os limites da classificação.** Schatzker é baseada na radiografia AP e ignora o **plano coronal**, como as fraturas **posteromediais**. A **classificação das três colunas** (Luo), pela tomografia, orienta a via de acesso nas fraturas complexas.\n\n**Na prova:** Schatzker **III** = **depressão central pura lateral** (osteoporose); **I** split; **II** split-depressão; **IV** medial.",
-  "correta": "**Tipo 3.** A depressão pura do planalto lateral, sem cisalhamento da cortical, é o tipo III de Schatzker, típico do osso osteoporótico.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; Mecanismo e padrões de fratura; Tratamento do lado lateral."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Classificação de SCHATZKER",
+      "Mecanismo e padrões de fratura",
+      "Tratamento do lado lateral"
+     ],
+     "blocos": [
+      "classificacao-de-schatzker-b1760cec",
+      "mecanismo-e-padroes-de-fratura-082ce611",
+      "classificacao-de-schatzker-e151ed03",
+      "tratamento-do-lado-lateral-2430c926"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "b2bd7bc3752087bcc3085431dad8d00859695650dc1dca5d5bd476afe037eba5"
+    }
+   ],
+   "questaoSha256": "c337b1a1a17678981391acf9bf5639f689ca737080ea16b79871978bae44612b",
+   "comentarioSha256": "8465c5eb2d9647bf7657f51da582cc1f8b4f21a70f21962214221b430363ffd6"
+  }
  },
  "trauma-0297": {
   "incorretas": {
@@ -6331,15 +6456,45 @@
   "conferido": false
  },
  "trauma-0313": {
+  "conceito": "A resposta é **menisco lateral**, alternativa B. Nesta pergunta, o LCA é um distrator plausível porque também é muito lesado, mas a comparação inclui meniscos e ligamentos, e o lateral aparece primeiro na série de RM descrita.\n\nO planalto lateral recebe a compressão do côndilo femoral em muitos mecanismos de valgo com carga axial. O menisco pode ficar aprisionado ou acompanhar o afundamento e o alargamento. Essa relação explica por que o osso fraturado não deve concentrar toda a atenção da avaliação (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\nGardner encontrou menisco lateral em 91% e LCA em 77% das 103 fraturas operadas estudadas por RM; menisco medial apareceu em 44%. A amostra define o significado desses números. O resumo também mostra diferenças conforme o método: uma série antiga com estresse radiográfico e cirurgia teve muitos casos de LCM, portanto não convém ensinar uma hierarquia independente da população e da forma de investigar.\n\n**A instabilidade medial pode ser óssea.** Antes de fixar uma fratura lateral afundada, o joelho pode abrir em valgo porque perdeu suporte. Isso não prova ruptura do LCM; a estabilidade deve ser reavaliada depois de recuperar o osso.\n\nNa prática, procura-se lesão meniscal e ligamentar, define-se o padrão e decide-se o que tratar. O resumo não sustenta reconstruir todo ligamento com sinal alterado na RM nem considera o ranking uma substituição ao exame individual.",
+  "correta": "**B: menisco lateral.** É a associação destacada e o maior valor da série de Gardner. O mecanismo de compressão e encarceramento do menisco no lado lateral ajuda a compreender o achado.",
   "incorretas": {
-   "A": "**Menos frequente.** O menisco medial se lesa menos, pois a maioria das fraturas é lateral.",
-   "C": "**Frequente, mas menos.** O LCA pode lesar-se, mas o menisco lateral é a lesão associada mais comum.",
-   "D": "**Frequente, mas menos.** O LCM sofre no valgo, mas perde para o menisco lateral em frequência."
+   "A": "**A.** O menisco medial pode estar lesado, porém ficou abaixo do lateral na série citada. A escolha precisa acompanhar o contexto de fratura do planalto, não uma generalização sobre qualquer lesão de joelho.",
+   "C": "**C.** O LCA é muito frequente, com 77% na série de RM, mas o menisco lateral chegou a 91%. Se a pergunta fosse apenas sobre ligamentos, o recorte seria diferente; aqui não é.",
+   "D": "**D.** A lesão do LCM é possível e depende da população e do método de avaliação. Além disso, abertura em valgo pode refletir afundamento ósseo. Esses pontos não sustentam colocá-lo acima do menisco lateral na comparação da fonte usada."
   },
-  "conceito": "**As lesões associadas à fratura do planalto.** Com a ressonância e a artroscopia de rotina, descobriu-se que a maioria das fraturas do **planalto tibial** tem lesão de partes moles associada. A mais comum é a do **menisco lateral**, presente em boa parte dos casos (até metade ou mais em algumas séries), seguida das lesões do **LCA**, do **LCM** e do menisco medial.\n\n**Por que o menisco lateral.** A maioria das fraturas do planalto é do lado **lateral** (Schatzker I a III), por **valgo com carga axial**. O côndilo femoral lateral bate no planalto, e o menisco lateral fica **comprimido e encarcerado** entre os dois. Nas fraturas **split-depressão** (Schatzker II), o menisco pode **entrar no traço** de fratura ou ficar preso sob o fragmento afundado, impedindo a redução. Um alargamento do planalto acima de cerca de **6 mm** na radiografia sugere lesão meniscal.\n\n**O que fazer com o menisco.** Na via **anterolateral** para fixar a fratura, faz-se uma **artrotomia submeniscal**, levantando o menisco para ver a superfície articular, e ao final ele é **reparado** na cápsula ou no ligamento meniscotibial. Preservar o menisco é importante porque a meniscectomia aumenta muito a carga no planalto e acelera a **artrose**.\n\n**As lesões ligamentares.** O **LCM** lesa-se no mecanismo em valgo, sobretudo nas fraturas por depressão; o **LCA** por avulsão da eminência ou ruptura intraligamentar. Nas fraturas **mediais** (Schatzker IV), lesões do lado lateral (canto posterolateral, fibular) são frequentes, pois o mecanismo é varo.\n\n**Na prova:** lesão associada mais comum na fratura do planalto tibial = **menisco lateral**; verificar e reparar pela artrotomia submeniscal.",
-  "correta": "**Menisco lateral.** Predominam as fraturas do planalto lateral por valgo e carga axial, e o menisco lateral fica esmagado ou preso no traço entre o côndilo e o planalto.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lesões associadas: menisco, ligamentos e o colateral medial"
+     ],
+     "blocos": [
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "32dd2e6c82e1fbf627c22ede8be9d621b2930d57fcc1ac611e6685aa827f9fe0"
+    }
+   ],
+   "questaoSha256": "cbf75770a13b92d2efd2d48995ea709ebc237c0c888af5773ec0ad864abca0e0",
+   "comentarioSha256": "8c704fc8fdcbaad5fe7ac5129130ee6349507356d77ee80011b6e2c222401b48"
+  }
  },
  "trauma-0314": {
   "incorretas": {
@@ -7000,19 +7155,44 @@
   }
  },
  "trauma-0416": {
-  "conceito": "**A fratura do planalto tibial.** É uma fratura **articular** da tíbia proximal, causada por uma força em **varo ou valgo** com carga axial. Os mecanismos clássicos são o atropelamento (o para-choque bate no lado lateral do joelho, com valgo) e as quedas de altura. O **platô lateral** é o mais acometido.\n\n**A classificação de Schatzker.**\n\n| Tipo | Fratura |\n|---|---|\n| I | **Cisalhamento** do platô lateral (jovem, osso bom) |\n| II | Cisalhamento com **depressão** lateral (o mais comum) |\n| III | **Depressão** pura do platô lateral (idoso, osteoporose) |\n| IV | Platô **medial** (alta energia; risco de luxação e lesão vascular) |\n| V | **Bicondilar** |\n| VI | Dissociação **metáfise-diáfise** |\n\n**As lesões de partes moles associadas.** São **muito frequentes**: em estudos com ressonância, a maioria dos pacientes tem alguma lesão de partes moles.\n\n| Estrutura | Frequência |\n|---|---|\n| **Menisco** | A **mais comum** (cerca de 50% ou mais); sobretudo o **lateral**, nas fraturas do platô lateral |\n| Ligamento colateral medial | Frequente nas fraturas do platô lateral por valgo |\n| Ligamento cruzado anterior | Frequente (às vezes como avulsão da eminência intercondilar) |\n| Ligamento cruzado posterior, canto posterolateral | Nas fraturas de alta energia, sobretudo do platô medial |\n\n**Por que o menisco.** Nas fraturas com **depressão** do platô lateral (Schatzker II e III), o côndilo femoral afunda o osso, e o menisco lateral se **rompe** ou fica **preso** dentro da depressão ou do traço. Na cirurgia, o menisco deve ser examinado e **reparado** (não removido), porque a meniscectomia acelera a artrose.\n\n**Os princípios do tratamento.**\n- **Redução anatômica** da superfície articular (elevação do fragmento deprimido, com enxerto ou substituto ósseo por baixo).\n- **Restauração do eixo** do membro (o mau alinhamento é mais prejudicial que um pequeno degrau articular).\n- **Fixação estável** (placas de suporte, parafusos em \"jangada\" abaixo da superfície articular) e **mobilização precoce**.\n- **Respeitar as partes moles**: nas fraturas de alta energia, fixador externo temporário e cirurgia definitiva quando a pele permitir.\n\n**As complicações a vigiar.** **Síndrome compartimental** (sobretudo no Schatzker IV a VI), lesão da artéria poplítea e do nervo fibular, infecção e artrose pós-traumática.",
-  "correta": "**Correta: A (menisco lateral).** Na fratura do planalto tibial, a lesão de partes moles associada mais comum é a do **menisco lateral**, sobretudo nas fraturas com depressão do platô lateral (Schatzker II e III), em que o menisco se rompe ou fica preso no traço.",
+  "conceito": "O menisco lateral é a associação mais frequente entre as opções, resposta A. A pergunta é sobre **partes moles em geral**, portanto não deve ser reduzida a “qual ligamento rompe mais”.\n\nNa série de Gardner resumida no capítulo, 103 fraturas operadas tiveram RM: menisco lateral 91%, LCA 77%, canto posterolateral 68% e menisco medial 44%. Esses valores mostram que várias estruturas podem estar lesadas no mesmo joelho; não são categorias que se excluem e somam 100% (Rockwood, 10ª ed., cap. 62, “Lesões associadas”).\n\nO impacto lateral com valgo e carga axial ajuda a explicar o predomínio. O menisco lateral cobre parte maior do seu planalto e pode ser comprimido ou encarcerado no traço. Alargamento e afundamento são pistas para procurar a lesão.\n\n**Detectar uma lesão não define sozinho que ela deva ser operada.** A RM é sensível, mas o resumo ressalta incerteza sobre a história natural dos achados vistos apenas nesse exame. Na fixação, a artrotomia submeniscal permite avaliar o menisco lateral e reparar o que for indicado, sem tornar RM prévia obrigatória para toda fratura.\n\nLCA e canto posterolateral são associações importantes, sobretudo na alta energia. A resposta pede frequência relativa na fonte consultada; não minimiza a gravidade das lesões que ficaram atrás no ranking nem universaliza os percentuais de uma amostra operada.",
+  "correta": "**A: menisco lateral.** É o maior valor da série apresentada e corresponde à associação destacada pelo resumo. A questão inclui meniscos, portanto a resposta não deve ser limitada aos ligamentos.",
   "incorretas": {
-   "B": "O **menisco medial** é lesado com menos frequência, porque a maioria das fraturas acomete o platô **lateral**.",
-   "C": "O **canto posterolateral** é lesado em fraturas de alta energia, sobretudo do platô medial, mas é menos frequente que o menisco lateral.",
-   "D": "O **ligamento cruzado anterior** é lesado com frequência, mas menos que o menisco lateral."
+   "B": "**B.** O menisco medial teve lesão em 44% nessa série. É um achado relevante, mas menos frequente que o lateral na casuística, e não deve ser ignorado apenas porque não é a resposta.",
+   "C": "**C.** O canto posterolateral teve alta frequência, 68%, mas abaixo dos 91% do menisco lateral e 77% do LCA. Ser um complexo importante para a estabilidade não o torna o achado mais comum nessa amostra.",
+   "D": "**D.** O LCA foi o ligamento com maior destaque na série, 77%, mas ainda abaixo do menisco lateral. A opção atrai quando se troca “partes moles” por “ligamentos”."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 61",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lesões associadas: menisco, ligamentos e o colateral medial"
+     ],
+     "blocos": [
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-5534094e",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-6c78600b",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "7069a3ff0581c6c08a4ee7e880db34ab4d4350d77e9c9a085bb6b552dafe6363"
+    }
+   ],
+   "questaoSha256": "660b47d0d4232af2857704c173c4a74f4f86fd4e50ad2ae317bfa85cadccdd96",
+   "comentarioSha256": "983105a6ee7fe2225feab83c529c8796842d064ec80a0cb578bea54a67a28773"
+  }
  },
  "trauma-0417": {
   "conceito": "### Um sinal de alarme\nAvulsão **isolada do trocanter menor no adulto** é sinal clássico de ==doença metastática oculta==.\n\n### Por que\n- O trocanter menor recebe só a tração do **iliopsoas**.\n- Depois do fechamento da fise, essa força não basta para arrancá-lo de um osso normal.\n- Quando isso acontece, quase sempre há uma **lesão lítica** enfraquecendo o osso: metástase (mama, pulmão, rim, tireoide, próstata), mieloma ou linfoma.\n\n### Na criança é outra história\nNo adolescente atleta, com a fise aberta, é **avulsão apofisária** banal, de tratamento conservador.\n\n### Conduta no adulto: investigar antes de fixar\n- Radiografia do **fêmur inteiro**.\n- **Ressonância** para ver a extensão da lesão.\n- Tomografia de tórax, abdome e pelve; cintilografia.\n- **Biópsia** se o primário não aparecer.\n\nO planejamento costuma envolver **haste intramedular longa**, protegendo o osso todo, e não fixar aquele fragmento.\n\n> **Na prova:** avulsão isolada do ==trocanter menor em adulto== é metástase até prova em contrário.",
@@ -10026,15 +10206,45 @@
   }
  },
  "trauma-0703": {
+  "conceito": "No fragmento posteromedial, a placa deve impedir que a cunha **deslize pelo traço de cisalhamento**. Sua função é **anticisalhamento ou antideslizante**, alternativa A, e a posição sobre o ápice da fratura é decisiva.\n\nO fragmento tem um traço relativamente vertical e pode fazer parte de uma bicondilar. A força não atua apenas afastando duas superfícies: ela tende a deslocar um fragmento ao longo do plano da fratura. A placa colocada como barreira no ápice recebe esse deslizamento e conserva o apoio do planalto (Rockwood, 10ª ed., cap. 62, “Lado medial e vias posteriores”).\n\n**Posição importa mais que chamar qualquer placa de suporte.** O resumo salienta que a colocação sobre o ápice é mais importante que o número de parafusos; um parafuso próximo ajuda a manter a placa encostada. Uma placa lateral não garante captura de um fragmento posterior cujo traço coronal permite escapar do construto.\n\nIsso também explica a necessidade de TC para planejamento. Identificar o fragmento posterior antes da cirurgia permite escolher via e implante capazes de resistir à direção da falha. Sem estabilizá-lo, podem persistir instabilidade, dor e perda da redução.\n\nNão se deve concluir que a placa dispensa redução articular ou que nenhum parafuso possa ter outra função. A pergunta é sobre a função principal da placa posteromedial nesse padrão, que é barrar o cisalhamento.",
+  "correta": "**A: anticisalhamento.** A placa antideslizante se opõe à migração do fragmento ao longo do traço. Seu posicionamento no ápice permite atuar como barreira mecânica.",
   "incorretas": {
-   "B": "A compressão articular não é a função principal nessa fratura de cisalhamento.",
-   "C": "A compressão metafisária não é o objetivo da placa posteromedial.",
-   "D": "Compressão mista não descreve a função de suporte da placa."
+   "B": "**B.** Restaurar a superfície articular é necessário, mas “compressão articular” não define a função principal dessa placa. O problema específico é o fragmento que tende a deslizar, e não somente apertar o foco.",
+   "C": "**C.** Compressão metafisária não descreve a barreira ao cisalhamento posteromedial. A posição deve ser escolhida pela direção em que o fragmento pode escapar, não por um objetivo genérico de comprimir a metáfise.",
+   "D": "**D.** Chamar de compressão mista mantém a mesma confusão. O resumo distingue suporte lateral, antideslizamento posteromedial e placa em padrões bicondilares; no fragmento perguntado, o conceito decisivo é antideslizante."
   },
-  "conceito": "A fratura do **planalto posteromedial** é uma fratura de **cisalhamento**: o fragmento posteromedial é cortado no plano **coronal** e desliza **para baixo e para trás**, empurrado pelo côndilo femoral medial. É típica do mecanismo em varo com o joelho fletido.\n\n**A função da placa**: **anticisalhamento** (antideslizante, ou de suporte). A placa é colocada **posteromedial**, no **ápice** do fragmento, encostada na sua ponta inferior. Quando o fragmento tenta descer, ele **encontra a placa** e não escorrega.\n\n**Por que não só parafusos**: parafusos de anterior para posterior, sozinhos, ficam **paralelos** à força de cisalhamento e **falham**. A placa de suporte converte o cisalhamento em compressão contra ela.\n\n**A via**: **posteromedial** (entre o gastrocnêmio medial e a pata de ganso) ou de **Lobenhoffer**, com o paciente em decúbito ventral.\n\n**As outras funções de placa**: compressão (fraturas transversas diafisárias), neutralização (protege parafusos de tração), ponte (fraturas cominutas) e banda de tensão.\n\n**Na prova**: no platô posteromedial, a placa tem o objetivo de **anticisalhamento**.",
-  "correta": "A placa no ápice do fragmento posteromedial impede que ele deslize para baixo e para trás.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lado medial e vias posteriores; Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lado medial e vias posteriores",
+      "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+     ],
+     "blocos": [
+      "lado-medial-e-vias-posteriores-96c684c4",
+      "lado-medial-e-vias-posteriores-39c8bf35",
+      "lado-medial-e-vias-posteriores-d3fc5be1",
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "2305868b55060780be8f2151a1f8c2aba68606a59d9a6daae66cb0caaee70411"
+    }
+   ],
+   "questaoSha256": "b40030d37d818de7c5c66fecc6548f67ff57377f66a3c8f07401c6ee73fceb6d",
+   "comentarioSha256": "c3013304970ffe36b1744b296293951720a8373174ac4592bc1230f1683cad46"
+  }
  },
  "trauma-0704": {
   "conceito": "Um ITB de **0,91 está na faixa normal** informada pelo capítulo, de 0,91 a 1,3. A resposta é A. O valor é próximo do limite, mas não deve ser arredondado para baixo e classificado como menor que 0,9.\n\nO índice tornozelo-braquial é a pressão sistólica do tornozelo dividida pela do braço. O resumo descreve a medida com manguito e Doppler e recomenda realizá-la em todo joelho luxado, mesmo quando o pulso é palpável. A artéria pode ter lesão importante sem completa ausência inicial de pulso (Rockwood, 10ª ed., cap. 61, “A artéria poplítea”).\n\nO algoritmo separa dois caminhos: ITB abaixo de 0,90 exige investigação arterial por angiotomografia; acima de 0,9, com avaliação clínica compatível, permite observação com **exames seriados**. O resumo especifica admissão, 4 a 6 horas, 24 e 48 horas. Normal não significa dispensar seguimento depois de uma luxação.\n\n**A perfusão clínica prevalece sobre uma leitura isolada.** Membro frio e sem pulso, com a zona de lesão conhecida, constitui situação de exploração imediata. Um sinal duro não deve ser ignorado porque alguém anotou um índice aparentemente tranquilizador. A questão, porém, não descreve essa emergência: pede a classificação de 0,91.\n\nDoença arterial periférica também interfere no índice, e o resumo recomenda comparação contralateral no idoso. Esses cuidados ajudam a entender por que o resultado é uma ferramenta de triagem dentro do exame vascular, e não um certificado definitivo de ausência de qualquer lesão.",
@@ -15195,16 +15405,49 @@
   "conferido": false
  },
  "trauma-1014": {
+  "conceito": "A paciente tem fratura **lateral com cisalhamento/separação e afundamento**. Essa combinação corresponde ao **tipo II de Schatzker**, alternativa B. A idade e o atropelamento contextualizam o trauma, mas é a morfologia descrita que classifica.\n\nHá dois componentes: uma cunha lateral se separa e uma porção da superfície articular é comprimida para baixo. O resumo explica que valgo associado à carga axial pode produzir essa combinação. Ela difere tanto da separação pura do tipo I quanto da depressão pura do tipo III (Rockwood, 10ª ed., cap. 62, “Mecanismo e padrões” e “Classificação de Schatzker”).\n\n**Reduzir a cunha não eleva automaticamente a superfície.** No tratamento descrito, a separação é aberta como um livro, o afundamento é elevado por baixo e o vazio metafisário é preenchido antes de concluir a sustentação lateral. Placa e parafusos subcondrais precisam apoiar o fragmento reduzido, além de recuperar a largura.\n\nO planejamento também procura traços posteriores e lesões associadas. A TC mostra orientação e cominução que o AP não representa bem; a avaliação meniscal e ligamentar permanece relevante. O rótulo II não é uma descrição completa de toda a lesão.\n\nPara a pergunta, basta não perder nenhum dos termos: **separação mais afundamento, lateral, tipo II**. Os outros tipos omitem um componente ou mudam o compartimento envolvido.",
+  "correta": "**B: tipo II.** Reúne exatamente separação e afundamento do planalto lateral. A classificação não depende de presumir um padrão só porque a paciente é jovem.",
   "incorretas": {
-   "A": "**Sem afundamento.** O tipo I é o split puro do planalto lateral.",
-   "C": "**Sem cisalhamento.** O tipo III é o afundamento puro, sem split.",
-   "D": "**Planalto medial.** O tipo IV acomete o planalto medial.",
-   "E": "**Bicondilar.** O tipo V acomete os dois planaltos."
+   "A": "**A.** Tipo I é separação lateral sem afundamento. Ignoraria a depressão articular que o caso informa e, com ela, a necessidade de avaliar o suporte subcondral.",
+   "C": "**C.** Tipo III é depressão pura lateral, sem fragmento de separação. O caso contém cisalhamento/separação junto ao afundamento, portanto não é puro.",
+   "D": "**D.** Tipo IV é medial e pode comportar-se como variante de luxação. A descrição fornecida é lateral, sem esse padrão medial.",
+   "E": "**E.** Tipo V exige comprometimento bicondilar. O texto não informa fratura dos dois planaltos e não permite acrescentar uma lesão medial para mudar a classificação."
   },
-  "conceito": "**A classificação de Schatzker.** Divide as fraturas do **planalto tibial** em seis tipos. Os três primeiros são do **planalto lateral**, por força em **valgo** com carga axial: **I** **cisalhamento** (split) puro, sem afundamento, típico do osso jovem e denso; **II** **cisalhamento com afundamento** (split-depressão), o mais comum; **III** **afundamento puro**, sem split, típico do osso osteoporótico. **IV**: planalto **medial**, com risco de lesão vascular e do fibular (muitas vezes uma fratura-luxação). **V**: **bicondilar**, com metáfise contínua com a diáfise. **VI**: bicondilar com **dissociação metadiafisária**.\n\n**O tipo II.** A cunha lateral **cisalhada** abre como uma porta, e ao lado dela a superfície articular fica **afundada**. É o padrão mais frequente, em adultos de meia-idade. O **menisco lateral** pode estar preso no traço ou sob o fragmento afundado.\n\n**O tratamento do tipo II.** Via **anterolateral**, artrotomia **submeniscal** (elevando o menisco para ver a superfície), **abrir a cunha** como uma porta de livro, **elevar** o fragmento afundado, **preencher** o defeito com enxerto ou substituto ósseo, fechar a cunha e fixar com **placa de suporte** lateral (buttress) e parafusos subcondrais em jangada. Reparar o menisco. Degrau articular aceitável de até cerca de 2 mm, e alinhamento restaurado.\n\n**As lesões associadas.** Menisco lateral (a mais comum), LCM, LCA e, nas de alta energia, síndrome compartimental.\n\n**Na prova:** planalto **lateral** com **cisalhamento e afundamento** = Schatzker **II**; split puro = I; afundamento puro = III.",
-  "correta": "**II.** A fratura do planalto lateral com cisalhamento (split) e afundamento corresponde ao tipo II de Schatzker.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; Mecanismo e padrões de fratura; Tratamento do lado lateral; Avaliação: exame, partes moles e imagem."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Classificação de SCHATZKER",
+      "Mecanismo e padrões de fratura",
+      "Tratamento do lado lateral",
+      "Avaliação: exame, partes moles e imagem"
+     ],
+     "blocos": [
+      "classificacao-de-schatzker-b1760cec",
+      "mecanismo-e-padroes-de-fratura-ef801f78",
+      "mecanismo-e-padroes-de-fratura-082ce611",
+      "tratamento-do-lado-lateral-96ac9ab9",
+      "avaliacao-exame-partes-moles-e-imagem-4d537b3e"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "d605b22cbca1727354cc037e83925e2aa0a0e13ff78acffe899052cafc08fb4b"
+    }
+   ],
+   "questaoSha256": "8393846c28baf39b4115ab3acdf4ab95a2b55a00d142ac9247d80fccd032b2c5",
+   "comentarioSha256": "f602ce7690066ad2b95f14e48a6879f1e237be27cdc1a8c97d6ce497419bb118"
+  }
  },
  "trauma-1015": {
   "incorretas": {
@@ -17346,20 +17589,49 @@
   "conferido": false
  },
  "trauma-1126": {
+  "conceito": "No perfil, o planalto **lateral é plano ou levemente convexo**, enquanto o **medial é côncavo**. Entre as opções, isso corresponde a A, mantida como resposta provável porque não há gabarito oficial registrado.\n\nOs dois planaltos não são espelhos. A concavidade medial oferece maior congruência com o côndilo femoral, enquanto o contorno lateral pode ser mais plano ou abaulado. Na radioscopia em perfil, reconhecer as duas linhas ajuda a não confundir o contorno anatômico com uma deformidade da redução (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada”).\n\nO lateral também é mais alto que o medial. Ambos apresentam inclinação posterior, com variação individual; o lado sadio serve de referência. Portanto, buscar duas superfícies idênticas em altura ou curvatura pode criar uma redução que parece simétrica, mas não restaura a anatomia.\n\n**Perfil é controle, não prova isolada de redução perfeita.** A TC caracteriza os fragmentos, e o controle deve integrar eixo, largura e superfície articular. O resumo mostra que defeitos posteriores podem persistir apesar de imagens aparentemente aceitáveis, reforçando a importância de exposição e avaliação adequadas quando indicadas.\n\nA palavra “convexa” da alternativa deve ser entendida como a descrição habitual simplificada do lateral. Não é necessário tornar uma convexidade acentuada obrigatória em todo joelho: a fonte admite superfície lateral plana ou levemente convexa.",
+  "correta": "**A: lateral convexa e medial côncava.** É o par que corresponde à anatomia apresentada, com a ressalva de que o lateral pode ser plano ou apenas levemente convexo. Sem resposta oficial, A permanece bibliográfica provável.",
   "incorretas": {
-   "B": "**A opção troca a geometria típica entre os lados.** A concavidade mais evidente é medial; o lateral apresenta convexidade global, ainda que sua área central possa ser quase plana.",
-   "C": "**O planalto medial não é globalmente convexo.** Uma imagem com duas linhas aparentemente arqueadas para cima pode refletir obliquidade da incidência ou redução inadequada e precisa ser conferida.",
-   "D": "**O planalto lateral não é globalmente côncavo.** A alternativa ignora a assimetria que ajuda a distinguir as duas superfícies no perfil."
+   "B": "**B.** Inverte as duas superfícies. Essa troca pode fazer o observador atribuir a linha medial ao lateral e interpretar incorretamente os contornos no controle em perfil.",
+   "C": "**C.** Preserva a convexidade lateral simplificada, mas aplica a mesma forma ao medial. O resumo descreve o medial como côncavo e mais congruente com o côndilo femoral.",
+   "D": "**D.** A concavidade medial está correta, mas o lateral não deve ser copiado como outra superfície côncava. A assimetria entre os dois é justamente a informação anatômica cobrada."
   },
-  "conceito": "**Os dois planaltos não são espelhos.** O planalto tibial medial oferece uma superfície óssea predominantemente côncava no perfil sagital. O lateral tem contorno global mais convexo, embora a pequena área de contato central possa parecer relativamente plana. Essa diferença faz parte da geometria normal do joelho e ajuda a interpretar as duas linhas subcondrais sobrepostas numa radiografia de perfil.\n\n**O controle durante a cirurgia procura restaurar a superfície original.** Depois de elevar um fragmento deprimido e fixar a fratura, a fluoroscopia em perfil permite procurar degraus, afundamento residual e perda da inclinação posterior. As incidências frontal e oblíquas, e às vezes tomografia, complementam o exame: uma projeção isolada pode esconder uma depressão posterior ou atribuir a linha de um côndilo ao outro.\n\n**Forma e inclinação são perguntas diferentes.** Concavidade ou convexidade descreve o arco da superfície; inclinação tibial posterior, ou slope, descreve sua orientação em relação à diáfise. Não se deve confundir o planalto lateral convexo com uma inclinação anterior obrigatória. Em ambas as faces, há variação individual, de modo que a imagem deve ser interpretada com o padrão de fratura e com o lado contralateral quando necessário.",
-  "correta": "**Lateral convexa e medial côncava.** Essa é a descrição geral dos contornos ósseos dos dois planaltos no perfil, útil como referência para julgar a redução.",
   "referencias": [
-   "Hashemi J et al. The geometry of the tibial plateau and its influence on biomechanics: https://pubmed.ncbi.nlm.nih.gov/19047719/",
-   "Nam JH et al. Morphology of the convex lateral tibial plateau: https://pubmed.ncbi.nlm.nih.gov/34485524/"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral; Avaliação: exame, partes moles e imagem."
   ],
+  "conferido": false,
   "provavel": "A",
-  "geradoEm": "2026-10-02",
-  "conferido": false
+  "alerta": "Sem gabarito oficial registrado. A é a resposta provável pelo resumo do Rockwood, 10ª ed., cap. 62: lateral plano ou levemente convexo e medial côncavo. A opção simplifica o lateral como convexo; não significa convexidade obrigatória acentuada em todo paciente. Preservada a resposta bibliográfica anterior.",
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Anatomia aplicada",
+      "Tratamento do lado lateral",
+      "Avaliação: exame, partes moles e imagem"
+     ],
+     "blocos": [
+      "anatomia-aplicada-882c3a32",
+      "anatomia-aplicada-01a8a946",
+      "anatomia-aplicada-29b9f498",
+      "tratamento-do-lado-lateral-6b4477db",
+      "avaliacao-exame-partes-moles-e-imagem-4d537b3e"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "663f5e3dfc09cfb07955dc61fe57c8c9277325bf91b519009a3adc3fb43916ba"
+    }
+   ],
+   "questaoSha256": "caa3b1f0582830c2cfbf044c3304f2f5aafa1dcb56ecc99b6e34469055a1ee26",
+   "comentarioSha256": "e413859a35d94bb5bf1a89159ab88c6f2113bd20dfdc781a3216fb5714e884a2"
+  }
  },
  "trauma-1127": {
   "incorretas": {
@@ -32148,18 +32420,46 @@
   "conferido": false
  },
  "trauma-1670": {
-  "conceito": "**A classificação de SCHATZKER.** Publicada em 1979 a partir de 94 fraturas, é a mais usada e a mais fácil de lembrar (figura 62-10). Os tipos I a III são do planalto lateral (I separação pura, II separação com afundamento, III afundamento puro); o **IV é do planalto medial**; o V é bicondilar com metáfise e diáfise em continuidade; o VI tem um traço horizontal ou oblíquo que separa o bloco articular da diáfise.\n\n**Por que o tipo IV é diferente.** O planalto medial é mais resistente que o lateral e quebra por **varo**, com energia maior. O traço raramente é medial puro: em geral passa pelas **espinhas tibiais** e às vezes entra no planalto lateral. O capítulo descreve o tipo IV como **variante da luxação do joelho**: o **LCM** e o **LCA** continuam presos ao côndilo medial fraturado, enquanto o planalto lateral e a diáfise se deslocam lateralmente, para longe do fragmento e do fêmur. A anatomia explica: o LCM se insere na face medial da tíbia, e o LCA se prende na eminência intercondilar, à frente da espinha medial; quando o traço sobe pelas espinhas, o LCA vai junto com o fragmento medial.\n\n**Consequências.**\n\n- Alta propensão a **lesão neurovascular** (a poplítea e a trifurcação ficam na zona de deslocamento; o nervo fibular sofre com o varo).\n- **Síndrome compartimental:** STARK encontrou 53% nas fraturas-luxações mediais (SCHATZKER IV), contra 18% no tipo VI; WAHLQUIST, 67% quando o traço entra na articulação lateral às espinhas.\n- Ressonância: eventos de luxação do joelho em 46% dos tipos IV.\n- Sem o contraforte medial, tende ao **varo** se tratada sem cirurgia; o tratamento é a placa antideslizante pela via posteromedial.\n\n> **Na prova:** SCHATZKER IV = planalto medial, mecanismo em varo, variante de luxação, **LCM e LCA presos ao fragmento**, maior risco vascular e compartimental.\n\n> **Por que esta questão foi criada.** O TEOT 2024 cobrou o mecanismo do tipo IV (varo, com lesão do complexo lateral) e o TARO 2013 perguntou qual tipo de SCHATZKER tem maior risco de lesão dos vasos poplíteos (IV). Esta gêmea pergunta o mesmo tipo pela outra variável que o capítulo destaca: a anatomia da luxação.",
-  "correta": "**C: o LCM e o LCA.** O capítulo 62 diz que o tipo IV deve ser entendido como variante da luxação do joelho, em que **o LCM e o LCA ficam presos ao côndilo medial** fraturado e o restante da tíbia (planalto lateral e diáfise) se desloca lateralmente. O raciocínio anatômico ajuda a fixar: o LCM vem do epicôndilo medial do fêmur e se insere na face medial da tíbia proximal, no fragmento; o LCA se insere na eminência intercondilar, à frente da espinha medial, e o traço do tipo IV costuma passar pelas espinhas. O que se desloca, então, é a parte da tíbia que perdeu essas amarras, e é esse deslocamento que estira a poplítea, a trifurcação e o nervo fibular. Por isso o tipo IV pede exame vascular cuidadoso, índice tornozelo-braço e vigilância compartimental.",
+  "conceito": "Na fratura medial tipo IV descrita, **LCM e LCA permanecem presos ao fragmento medial**, alternativa C. O planalto lateral e a diáfise podem se deslocar para longe desse fragmento e do fêmur, por isso o capítulo trata o padrão como variante de luxação.\n\nO planalto medial é mais resistente que o lateral, e sua falha costuma exigir maior energia. O traço frequentemente passa pelas espinhas e pode alcançar o lado lateral, de modo que a aparência de uma simples fratura “de um lado” não representa toda a gravidade (Rockwood, 10ª ed., cap. 62, “O tipo IV é uma luxação disfarçada”).\n\n**Preso ao fragmento não significa joelho estável.** O ligamento pode conservar sua ligação ao osso separado enquanto esse fragmento perde relação normal com o restante da tíbia. A continuidade de uma inserção, portanto, não equivale a continuidade da cadeia estabilizadora até a diáfise.\n\nEsse comportamento explica a preocupação neurovascular e compartimental. O exame precisa ser documentado e repetido, e a avaliação vascular na alta energia inclui ITB, com investigação adicional quando abaixo de 0,9. Sem o contraforte medial, a fratura também pode ceder em varo.\n\nA pergunta pede quais estruturas acompanham o fragmento no padrão descrito, não uma lista de todos os ligamentos que podem se lesar num tipo IV. A resposta mantém o par específico sem afirmar que todo tipo IV apresente exatamente o mesmo conjunto de lesões.\n\n**Por que esta questão foi criada.** O tipo IV aparece nas provas por seu mecanismo e risco vascular. Este simulado explica o comportamento de fratura-luxação ao perguntar quais ligamentos permanecem ligados ao fragmento medial.",
+  "correta": "**C: LCM e LCA.** É o par que permanece ligado ao fragmento medial no mecanismo apresentado. A instabilidade persiste porque o osso ao qual os ligamentos se prendem deixou de funcionar como contraforte contínuo.",
   "incorretas": {
-   "A": "**Os dois ligamentos do lado errado.** O LCL (colateral lateral, ou fibular) vai do epicôndilo lateral à **cabeça da fíbula**, longe do fragmento medial; o LCP se insere na face posterior da tíbia proximal, atrás da eminência, e não é o ligamento que sobe com a espinha medial. No tipo IV, o complexo lateral é justamente o que sofre tensão: o TEOT 2024 associou o varo do tipo IV à lesão do complexo ligamentar lateral. Um ligamento lesado por tensão não está \"preso ao fragmento\".",
-   "B": "**O LCM está certo; o LCP, não.** O LCM fica com o côndilo medial, de fato. O LCP desce até a face posterior da tíbia proximal, na porção intercondilar posterior, e o capítulo cita como parte da variante da luxação o **LCA**, que se insere à frente da espinha medial. O erro é natural porque o LCP é o ligamento lembrado nas luxações do joelho; mas a pergunta é sobre o que acompanha o fragmento medial no tipo IV, e o capítulo é explícito: LCM e LCA.",
-   "D": "**O LCA está certo; o LCL, não.** O LCA acompanha o fragmento quando o traço sobe pelas espinhas. O LCL, porém, se insere na cabeça da fíbula, que fica do lado lateral e se desloca junto com a diáfise. Na tíbia proximal, a cabeça da fíbula serve de contraforte para o planalto **lateral**: é por isso que a fratura da cabeça da fíbula agrava a instabilidade em valgo das fraturas laterais, e não tem relação com o fragmento medial do tipo IV."
+   "A": "**A.** Troca os dois componentes pelo LCL e pelo LCP. O capítulo não apresenta esse par como o que acompanha o fragmento medial; o colateral lateral se relaciona ao lado fibular, e o LCP tem inserção posterior.",
+   "B": "**B.** Mantém o LCM, mas substitui o LCA pelo LCP. O dado específico da fonte é a continuidade do LCA com o fragmento que envolve a região das espinhas.",
+   "D": "**D.** Mantém o LCA, mas troca o colateral medial pelo lateral. Compartilhar uma lesão grave não torna o LCL o ligamento ligado ao fragmento medial descrito."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; Anatomia aplicada; Avaliação: exame, partes moles e imagem."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Classificação de SCHATZKER",
+      "Anatomia aplicada",
+      "Avaliação: exame, partes moles e imagem"
+     ],
+     "blocos": [
+      "classificacao-de-schatzker-a19af221",
+      "anatomia-aplicada-68e71b10",
+      "anatomia-aplicada-df446291",
+      "avaliacao-exame-partes-moles-e-imagem-caf89e44"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "0e0e367d167365490ec824720ed1668de14536e7671e60c469231617fe196894"
+    }
+   ],
+   "questaoSha256": "49a4266d4ef1b8ff8773ae404142d7ca25d75f8b19580d96b037ee599c68267b",
+   "comentarioSha256": "a438ec6456f0c9228071954c2157d8f8b0d25762003eaabeb6c165fe220dc39b"
+  }
  },
  "trauma-1671": {
   "conceito": "**Por que uma classificação só para fraturas-luxações.** SCHATZKER e AO/OTA se baseiam na radiografia anteroposterior e não classificam as fraturas-luxações. Essas lesões têm alta incidência de lesão ligamentar e meniscal, risco vascular e risco de síndrome compartimental, e por isso o capítulo usa a classificação de HOHL e MOORE (figura 62-20).\n\n| Tipo | Padrão | Frequência entre as fraturas-luxações | O que vem junto |\n| --- | --- | --- | --- |\n| I | **separação coronal**, em geral do planalto medial, traço oblíquo a cerca de 45 graus, melhor visto no perfil | cerca de 37% | avulsão da fíbula ou do tubérculo de GERDY, lesão capsular |\n| II | **côndilo inteiro**, com o traço passando da espinha para o compartimento oposto | | lesão do colateral oposto em cerca de 50%; neurovascular em **12%** |\n| III | **avulsão da borda**, em geral lateral, no ponto de inserção capsular | cerca de 16% | LCA, LCP ou ambos; neurovascular em **30%** |\n| IV | **compressão da borda** pelo côndilo femoral na subluxação | 12% | colateral oposto e cruzados em mais de três quartos |\n| V | **quatro partes**: os dois côndilos e a eminência | 10% | neurovascular em **cerca de 50%** |\n\n**A lógica do tipo V.** Ele perde os dois sistemas de estabilização ao mesmo tempo: os colaterais perdem o ponto fixo porque os côndilos quebraram, e os cruzados perdem o seu porque a eminência intercondilar foi junto. É a lesão mais instável, quase sempre cirúrgica e com o maior risco para a poplítea e os nervos. A eminência fraturada, mais comum no tipo V, também prevê pior amplitude de movimento aos 6 e 12 meses (KONDA).\n\n**Diferença com SCHATZKER IV.** No tipo II de MOORE o traço atravessa a espinha e entra no compartimento oposto, e o côndilo fraturado continua alinhado com o fêmur; no SCHATZKER IV o traço fica no lado medial ou nas espinhas.\n\n> **Na prova:** MOORE I coronal, II côndilo inteiro, III avulsão da borda (30% neurovascular), IV compressão da borda, **V quatro partes (cerca de 50%)**.\n\n> **Por que esta questão foi criada.** O SBOT-SP pediu o tipo de HOHL e MOORE numa gravura (avulsão da borda, tipo III), e o TARO 2013 perguntou qual tipo de SCHATZKER tem o maior risco de lesão dos vasos poplíteos. Esta gêmea leva a mesma pergunta de risco vascular para a classificação das fraturas-luxações, com os números do capítulo.",
@@ -32176,116 +32476,330 @@
   "conferido": false
  },
  "trauma-1672": {
-  "conceito": "**O que faltava em SCHATZKER e AO.** As duas classificações clássicas usam a radiografia anteroposterior e não enxergam os traços no plano coronal nem os fragmentos posteriores de cisalhamento. O capítulo insiste que o acometimento da **parte posterior** do planalto pesa mais no resultado do que se pensava, e que muitas falhas de fixação acontecem porque a placa medial ou lateral não segura o fragmento posterior.\n\n**Como LUO divide o planalto (figura 62-19).** Na **tomografia axial**, três linhas partem do centro (o ponto médio entre as duas espinhas tibiais):\n\n- a **anterior** vai até a tuberosidade da tíbia;\n- a **medial** vai até a crista posteromedial da tíbia proximal;\n- a **lateral** vai até a borda lateral do planalto, logo à frente da cabeça da fíbula.\n\nFicam três colunas: lateral, medial e posterior. A regra que decide a questão: **uma coluna só conta como fraturada quando a depressão articular vem acompanhada de um traço na cortical daquela coluna**.\n\n| Padrão | LUO |\n| --- | --- |\n| depressão pura, sem traço cortical (SCHATZKER III) | **zero coluna** |\n| SCHATZKER I e II só na coluna lateral | uma coluna |\n| separação posterolateral isolada (que SCHATZKER não descreve) | uma coluna |\n| SCHATZKER I ou II com separação posterolateral | duas colunas |\n| SCHATZKER IV | duas colunas |\n| bicondilar (IV e V) com fragmento posteromedial, o clássico | três colunas |\n\nA confiabilidade de AO/OTA, SCHATZKER e LUO é boa a excelente (kappa acima de 0,6). Uma ressalva do capítulo: o SCHATZKER III puro pode ser raríssimo; muitas \"depressões puras\" são, na verdade, tipos II com traço sem desvio na cortical lateral, o que a tomografia mostra.\n\n> **Na prova:** em LUO, depressão sem traço cortical é **zero coluna**; o clássico de três colunas é o bicondilar com fragmento posteromedial.\n\n> **Por que esta questão foi criada.** Uma prova de Ortopedia sem ano pediu o tipo de SCHATZKER da depressão central pura lateral (III), e o TEOT 2022 associou o osso osteoporótico à depressão central. As provas recentes também passaram a cobrar a divisão do planalto em zonas na visão axial (KFURI e SCHATZKER no TARO 2020 e 2024). Esta questão leva o mesmo padrão de fratura para a classificação de LUO, cuja regra do traço cortical tem cara de prova.",
-  "correta": "**A: zero coluna.** Pela definição de LUO, a coluna só é considerada fraturada se houver **traço na cortical** daquela coluna além da depressão articular. Na depressão pura, o côndilo femoral afunda a superfície do planalto lateral através de um osso subcondral mole, sem abrir a parede lateral; não há traço cortical em nenhuma coluna, e a fratura é de **zero coluna**, o equivalente do SCHATZKER III. O padrão é típico do idoso com osteopenia. A classificação não fala de gravidade do afundamento: uma depressão grande continua sendo zero coluna, e o tratamento é elevar o fragmento por uma janela cortical, preencher a falha e sustentar com parafusos subcondrais, deixando a parede lateral intacta.",
+  "conceito": "Em Luo, a depressão pura lateral **sem traço na cortical** é de **zero coluna**, alternativa A. Isso não quer dizer que não haja fratura: significa que nenhuma coluna é contada como rompida pelo critério cortical dessa classificação.\n\nLuo usa a TC axial e divide o planalto a partir do centro entre as espinhas, com linhas para a tuberosidade tibial, a crista posteromedial e a borda lateral à frente da fíbula. A regra é contar uma coluna quando existe traço na cortical, e não apenas superfície afundada (Rockwood, 10ª ed., cap. 62, “As três colunas de Luo”).\n\n**Superfície articular e coluna são descrições diferentes.** Uma região pode estar deprimida com a parede cortical preservada. Por isso não se deve marcar uma coluna só porque o afundamento fica no lado lateral. A correspondência com Schatzker III ajuda a visualizar o padrão, mas a regra de Luo continua sendo cortical.\n\nO conceito das colunas amplia a atenção aos fragmentos posteriores. Placas laterais ou mediais podem não conter uma coluna posterior instável, e a TC permite reconhecê-la antes da operação. A classificação organiza o planejamento; não é uma decisão automática sobre qual implante usar em todo paciente.\n\nNeste enunciado, a ausência de traço cortical foi dada explicitamente. Acrescentar uma ruptura de parede para subir a contagem mudaria o caso.\n\n**Por que esta questão foi criada.** A depressão pura é cobrada por Schatzker. A pergunta reapresenta a mesma morfologia por Luo, obrigando a distinguir afundamento articular de ruptura cortical de uma coluna.",
+  "correta": "**A: zero coluna.** A depressão existe, mas não há interrupção cortical para contar uma coluna segundo Luo. O rótulo não nega a lesão articular nem dispensa sua avaliação.",
   "incorretas": {
-   "B": "**Seria uma coluna se a parede lateral tivesse se aberto.** Os SCHATZKER I (separação) e II (separação com afundamento) restritos à coluna lateral são fraturas de uma coluna, porque há traço cortical lateral. A separação posterolateral isolada também é de uma coluna. O distrator é tentador porque a depressão está no planalto lateral, mas LUO não conta a superfície afundada: conta a cortical rompida.",
-   "C": "**Duas colunas pedem dois traços corticais.** Exemplos do capítulo: o SCHATZKER IV, que envolve o planalto medial (e, pela anatomia, a parte posterior medial), e a fratura lateral com separação posterolateral associada. Na depressão pura não há traço em coluna nenhuma, e a contagem não chega a duas.",
-   "D": "**É o oposto do enunciado.** A fratura clássica de três colunas é a bicondilar (SCHATZKER IV e V) com **fragmento posteromedial**, o padrão mais instável e o que mais justifica uma via posterior ou posteromedial. Uma depressão pura, sem traço cortical, é o extremo contrário da escala de LUO."
+   "B": "**B.** Uma coluna lateral exige traço cortical, como na separação lateral. Aqui a informação “sem traço na cortical” exclui esse passo da contagem.",
+   "C": "**C.** Duas colunas requerem envolvimento cortical de duas regiões; uma depressão pura não fornece nenhum dos dois traços necessários. Não se contam superfície lateral e afundamento como colunas distintas.",
+   "D": "**D.** Três colunas aparecem no padrão clássico bicondilar com fragmento posteromedial, com falhas corticais correspondentes. É um quadro muito diferente da depressão isolada sem ruptura de parede."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: AO/OTA, LUO, HOHL e MOORE e o planalto em zonas."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas"
+     ],
+     "blocos": [
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-5cb9b6b2",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-b6846712",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-0ec22418",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-3d784738",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-7c355ea1",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-f6e60936"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "9a582456c172d6dd0c954dbb045f66e012a0533687f6edaac0dce7a324a7c19c"
+    }
+   ],
+   "questaoSha256": "cf2dce59b76d781e21765ea7f883f62ebeeb9509eeb4dbe458cfb0fdb4bcbf2b",
+   "comentarioSha256": "969d86ebccb07c289baa2fbc4e2a7f61b5e8bab1f5ddab50b8a7a8fd02ede84d"
+  }
  },
  "trauma-1673": {
-  "conceito": "**As duas vias de trabalho.** O capítulo 62 descreve duas vias frequentes: a **anterolateral**, para o lado lateral, e a **posteromedial**, para o medial, usadas sozinhas ou juntas nas bicondilares. A posteromedial é o padrão para quase todas as lesões do lado medial e para boa parte das posteriores, porque o fragmento posteromedial de cisalhamento é o que precisa de contraforte direto.\n\n**Anatomia que a via usa.** Na face anteromedial da tíbia proximal, abaixo do tendão patelar, se inserem os tendões da **pata de ganso** (sartório, grácil e semitendíneo), que antes de se inserir mandam expansões para a fáscia da perna. A **cabeça medial do gastrocnêmio** nasce na face posterior do fêmur, logo acima do côndilo medial. Entre os dois fica a janela para a face posteromedial da tíbia.\n\n**Passo a passo.**\n\n1. Paciente em decúbito dorsal com o membro em rotação externa (permite uma via anterolateral no mesmo tempo, mas a flexão e a rotação externa fazem força em varo e deformam a fratura) ou em decúbito ventral (sem essa força, com redução pela extensão do joelho).\n2. Incisão sobre a borda posteromedial da tíbia, **posterior o bastante** para que o retalho não atrapalhe os parafusos de trás para a frente; incisão anterior demais é um dos maiores obstáculos.\n3. No subcutâneo, preservar o **nervo e a veia safenos**.\n4. Intervalo profundo entre a **borda posterior da pata de ganso** e a **cabeça medial do gastrocnêmio**; a parte posterior das expansões da pata é incisada para afastar os tendões para a frente.\n5. Afastador sob a cabeça medial do gastrocnêmio, direto no osso, para proteger as estruturas da fossa poplítea; a origem do gastrocnêmio pode ser seccionada para ampliar, mas raramente é preciso.\n6. Elevar a origem do **poplíteo** e afastá-la lateralmente para ver o **ápice** da fratura, onde vai a placa antideslizante.\n\nAs incisões anterolateral e posteromedial ficam a quase 180 graus uma da outra, e a ponte de pele não é problema.\n\n> **Na prova:** via posteromedial = **entre a pata de ganso e a cabeça medial do gastrocnêmio**, protegendo nervo e veia safenos; a via posterolateral em L invertido usa o plano entre a cabeça **lateral** do gastrocnêmio e o sóleo.\n\n> **Por que esta questão foi criada.** O TARO 2015 e o ENARE R4 2025 cobraram o intervalo da via posterolateral (gastrocnêmio lateral e bíceps femoral). A via posteromedial, que o capítulo chama de padrão para o lado medial, ainda não caiu; esta é a questão espelho, com o intervalo do outro lado do joelho.",
-  "correta": "**D: a borda posterior da pata de ganso e a cabeça medial do gastrocnêmio.** É o intervalo descrito no capítulo 62. Os tendões da pata de ganso (sartório, grácil e semitendíneo) são afastados para a frente depois de incisar a parte posterior das suas expansões, e a cabeça medial do gastrocnêmio é afastada para trás e para o lado, com um afastador apoiado no osso que protege a artéria e a veia poplíteas e o nervo tibial. Elevando a origem do poplíteo, aparece o ápice da fratura posteromedial. A vantagem da via é a boa cobertura de partes moles e a distância da via anterolateral, o que permite usar as duas juntas na fratura bicondilar.",
+  "conceito": "Na via posteromedial, o intervalo descrito fica entre a **borda posterior da pata de ganso e a cabeça medial do gastrocnêmio**, alternativa D. É uma janela para alcançar o ápice posteromedial sem confundi-la com os planos da via posterolateral.\n\nA pata de ganso se insere na face anteromedial da tíbia proximal. A exposição passa por sua borda posterior e afasta o gastrocnêmio medial; um afastador colocado diretamente no osso, sob esse músculo, ajuda a proteger a fossa poplítea. O poplíteo é elevado para visualizar o ápice (Rockwood, 10ª ed., cap. 62, “A via posteromedial”).\n\n**A incisão precisa permitir a direção dos implantes.** O resumo alerta que uma incisão anterior demais pode fazer o retalho bloquear os parafusos. Nervo e veia safenos devem ser preservados. Escolher a janela não é apenas decorar dois nomes: ela deve permitir reduzir e posicionar a placa onde o fragmento tende a deslizar.\n\nEm decúbito dorsal, flexão e rotação externa podem impor varo e deformar a fratura. O capítulo descreve redução com o joelho estendido e controle de eixo e superfície, pois alinhar o traço extra-articular não garante redução articular.\n\nO acesso posterolateral utiliza outro lado e outros planos. Transportar o par gastrocnêmio-sóleo para o lado medial não reproduz o intervalo de entrada posteromedial apresentado.\n\n**Por que esta questão foi criada.** A via posterolateral já é tema de questões reais. O simulado contrasta a janela posteromedial com os planos laterais e reforça a anatomia necessária ao tratamento do cisalhamento.",
+  "correta": "**D: borda posterior da pata de ganso e gastrocnêmio medial.** É a janela descrita, com afastamento muscular e proteção profunda junto ao osso para alcançar o fragmento posteromedial.",
   "incorretas": {
-   "A": "**Dois tendões da mesma pata de ganso.** Sartório e grácil, junto com o semitendíneo, formam a pata de ganso, que se insere na face anteromedial da tíbia abaixo da tuberosidade. Abrir entre eles não leva à face posteromedial da tíbia: a via passa **atrás** do conjunto inteiro, que é afastado para a frente em bloco. A pata de ganso também aparece no capítulo por outro motivo: parafusos longos demais das placas laterais ficam salientes na borda medial e irritam esses tendões.",
-   "B": "**Músculos posteromediais da coxa, mas não o intervalo da via.** O semitendíneo faz parte da pata de ganso, e o semimembranoso se insere na face posteromedial da tíbia proximal (a fratura por avulsão da sua inserção é citada no capítulo como sinal de lesão do cruzado). Separá-los não é o plano descrito: o cirurgião trabalha entre a borda posterior da pata de ganso e a cabeça medial do gastrocnêmio, que é a parede que protege a fossa poplítea.",
-   "C": "**É o plano da via posterolateral, levado para o lado medial.** Na via posterolateral em L invertido, o capítulo cria um plano entre a cabeça **lateral** do gastrocnêmio e o sóleo, que fica profundo a ela, e afasta o gastrocnêmio com o feixe poplíteo para medial. Na via posteromedial, a cabeça medial do gastrocnêmio é a estrutura afastada, não um limite com o sóleo. A alternativa é a troca de lado que a banca gosta de usar entre vias."
+   "A": "**A.** Sartório e grácil são componentes da pata de ganso, mas o intervalo pedido não é entre dois de seus tendões. A exposição segue sua borda posterior até o gastrocnêmio medial.",
+   "B": "**B.** Semitendíneo e semimembranáceo são estruturas mediais, porém não formam o par de limites apresentado para essa via do planalto. Proximidade anatômica não substitui a janela correta.",
+   "C": "**C.** O plano entre gastrocnêmio e sóleo pertence à descrição profunda posterolateral, com a cabeça lateral. Trocá-la pela medial não cria automaticamente a via posteromedial da fonte."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Lado medial e vias posteriores."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Anatomia aplicada",
+      "Lado medial e vias posteriores"
+     ],
+     "blocos": [
+      "anatomia-aplicada-f21247fd",
+      "lado-medial-e-vias-posteriores-8cc30cab",
+      "lado-medial-e-vias-posteriores-e89ac7ee",
+      "lado-medial-e-vias-posteriores-132c3f53",
+      "lado-medial-e-vias-posteriores-42b8d11f",
+      "lado-medial-e-vias-posteriores-bc5f6eec"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "42f1f539b7ed18e57368c507f1937dbac9cecc6501722bd8e3b5efbacf99e346"
+    }
+   ],
+   "questaoSha256": "49a202024f9b2e6db5b70a2aaa4589a53863e368efefb29f115f31c2e4ffb1db",
+   "comentarioSha256": "beb92f63d0eaa129e7ad5137fafab646eb6ffc353c6e6282900b5e43b99f5bc1"
+  }
  },
  "trauma-1674": {
-  "conceito": "**Por que existem vias posteriores.** Os fragmentos posterolaterais e posteromediais de cisalhamento ficam atrás da tíbia, longe da via anterolateral, e as placas laterais e mediais não os seguram. As vias posteriores ganharam espaço justamente para fixá-los, e o capítulo atribui a elas parte da queda na perda de redução.\n\n**A via posterolateral em L invertido (figura 62-40).** Paciente em decúbito ventral.\n\n- Incisão com braço horizontal na **prega poplítea** e braço vertical ao longo da **borda lateral da cabeça lateral do gastrocnêmio**, paralelo à fíbula; levanta-se um retalho inferomedial.\n- Sobre a fáscia poplítea corre a **veia safena parva**, que pode ser ligada.\n- No quadrante superolateral da fossa: o **nervo fibular comum**, sob a borda medial do **bíceps femoral**, e o nervo cutâneo sural lateral, que corre superficial para a linha média e deve ser protegido. O feixe poplíteo fica medial e profundo à cabeça lateral do gastrocnêmio.\n- Plano entre a **cabeça lateral do gastrocnêmio** e o **sóleo**, profundo a ela; gastrocnêmio, feixe poplíteo e nervo sural lateral são afastados para medial; fibras do sóleo são soltas da fíbula.\n- Abaixo do sóleo e distal ao colo da fíbula fica a **abertura da membrana interóssea**, que marca a **trifurcação da poplítea** e a passagem da **artéria tibial anterior**: cuidado máximo ali.\n\n**Distâncias de um estudo anatômico (SUN):** o nervo fibular contorna o colo da fíbula a cerca de 42 mm da interlinha; a abertura da membrana interóssea fica a cerca de 49 mm; a artéria fibular se separa da tibial posterior a cerca de 76 mm. A **artéria genicular inferior lateral**, ramo da poplítea que passa superficial ao poplíteo, está em risco e pode ser ligada.\n\n**A artéria tibial anterior no resto do capítulo.** Ela é presa na membrana interóssea e fica em risco nos padrões com dissociação da diáfise; sua lesão oculta explicaria parte das síndromes compartimentais desses padrões. Na via anterolateral, a lesão da tibial anterior é a primeira armadilha da tabela de complicações, prevenida pela dissecção cuidadosa na borda posterolateral.\n\n**Outras vias.** A via de FROSCH é parecida, em decúbito lateral e com incisão reta sobre a cabeça da fíbula (mais risco de contratura em flexão). Há vias **transfibulares**, com osteotomia do colo da fíbula 2 mm acima do nervo fibular, que lesam a cabeça da fíbula e têm risco de paralisia fibular e pseudartrose.\n\n> **Na prova:** na via posterolateral, a abertura da membrana interóssea marca a **artéria tibial anterior** (trifurcação); o nervo fibular está sob o bíceps.\n\n> **Por que esta questão foi criada.** O TARO 2015 e o ENARE R4 2025 cobraram os músculos do intervalo posterolateral (gastrocnêmio lateral e bíceps), e uma prova de Ortopedia sem ano perguntou o que a via de LOBENHOFFER envolve (osteotomia da cabeça da fíbula). Esta gêmea entra na mesma via pela estrutura em risco, que o capítulo descreve em detalhe.",
-  "correta": "**A: da artéria tibial anterior.** O capítulo descreve que, abaixo do sóleo e distal ao colo da fíbula, aparece uma abertura na membrana interóssea; ela confirma a posição da **trifurcação da poplítea**, onde a artéria tibial anterior atravessa para o compartimento anterior, a cerca de 49 mm da interlinha no estudo anatômico citado. É o ponto de maior risco vascular da via, e a dissecção ali deve ser cuidadosa. A mesma artéria, presa à membrana interóssea, explica por que os padrões com dissociação da diáfise têm risco de lesão vascular oculta e de síndrome compartimental, e por que a dissecção na borda posterolateral da via anterolateral também é cuidadosa.",
+  "conceito": "A abertura da membrana interóssea abaixo do sóleo e distal ao colo da fíbula marca a passagem da **artéria tibial anterior**, alternativa A. Esse marco interessa porque a dissecção pode alcançar um vaso importante mesmo sem estar diretamente na fossa poplítea.\n\nNa via posterolateral em L invertido, o plano profundo é desenvolvido entre gastrocnêmio lateral e sóleo. Gastrocnêmio e feixe poplíteo são levados medialmente; fibras do sóleo são liberadas da fíbula. A abertura interóssea indica a região da trifurcação e a passagem da tibial anterior (Rockwood, 10ª ed., cap. 62, “As vias posteriores e posterolaterais”).\n\n**Cada estrutura em risco tem um plano próprio.** O fibular comum fica sob a borda medial do bíceps e contorna o colo. A safena parva é mais superficial, sobre a fáscia poplítea. A genicular inferior lateral passa superficial ao poplíteo e pode precisar ser ligada. Nenhuma delas deve ser procurada como se ocupasse a passagem interóssea da tibial anterior.\n\nO resumo orienta trabalhar profundo ao poplíteo para proteger vasos maiores. Isso não autoriza uma dissecção cega: identificar os marcos é parte da proteção neurovascular, sobretudo numa região deformada pela fratura.\n\nA pergunta é topográfica, não solicita uma distância universal de segurança. Os números anatômicos de séries específicas não substituem a identificação direta das estruturas no campo.\n\n**Por que esta questão foi criada.** A pergunta sobre intervalo de acesso precisa ser acompanhada de compreensão dos vasos em risco. O simulado usa a abertura interóssea como marco da artéria tibial anterior.",
+  "correta": "**A: artéria tibial anterior.** É o vaso associado à abertura da membrana interóssea descrita. O marco alerta para a transição vascular profunda no trajeto da abordagem.",
   "incorretas": {
-   "B": "**O nervo está perto, mas em outro lugar.** O nervo fibular comum é identificado no quadrante superolateral da fossa, **sob a borda medial do bíceps femoral**, e contorna o colo da fíbula a cerca de 42 mm da interlinha. Ele não passa pela abertura da membrana interóssea; atravessa a musculatura fibular por fora do osso. A lembrança do nervo é útil porque é ele que fica em risco nas vias transfibulares e na via de FROSCH, mas a abertura descrita abaixo do sóleo é da artéria.",
-   "C": "**É superficial, sobre a fáscia poplítea.** A veia safena parva corre por cima da fáscia poplítea e pode ser ligada logo no início da dissecção. Ela não tem relação com a membrana interóssea, que fica no plano mais profundo da via, entre a tíbia e a fíbula, abaixo do sóleo. A alternativa troca um marco superficial por um profundo.",
-   "D": "**Também em risco, mas acima e superficial ao poplíteo.** A artéria genicular inferior lateral nasce da poplítea e corre lateralmente, superficial ao músculo poplíteo, perto da interlinha; o capítulo diz que ela pode precisar ser ligada. Não é ela que passa pela membrana interóssea, mais distal: identificar o poplíteo e trabalhar profundo a ele é o que protege os vasos maiores."
+   "B": "**B.** O fibular comum está relacionado ao bíceps e ao colo da fíbula. É fundamental identificá-lo, mas ele não é a estrutura cuja passagem é marcada pela abertura interóssea descrita.",
+   "C": "**C.** A safena parva está sobre a fáscia poplítea, num plano superficial. Confundi-la com a passagem arterial profunda mistura etapas e riscos diferentes da exposição.",
+   "D": "**D.** A genicular inferior lateral é encontrada superficial ao poplíteo e pode ser ligada na via. Esse trajeto não corresponde ao da tibial anterior através da abertura interóssea."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lado medial e vias posteriores; Anatomia aplicada."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lado medial e vias posteriores",
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "lado-medial-e-vias-posteriores-bc5f6eec",
+      "anatomia-aplicada-5e5d989d"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "bc3d27f179a3d1a2e8b59c03c979827c537780172074e09650ef0b1758c73d08"
+    }
+   ],
+   "questaoSha256": "a28bc4eaad6b235848ba6d9cd848d369a8c77c1e77576be0d2b85ec4f44ea822",
+   "comentarioSha256": "6d843521e2412a96f5dfd3f850de085e690d48744f1c7813e37db73e7dfb2180"
+  }
  },
  "trauma-1675": {
-  "conceito": "**O fragmento posteromedial.** É um padrão comum do lado medial: pode ser uma separação isolada ou parte da fratura bicondilar, em até um terço delas (BAREI); em outras séries chegou a 59% (HIGGINS) e o traço coronal medial apareceu em 39% (WEAVER). O mecanismo descrito é **flexão do joelho, varo e rotação interna do côndilo femoral medial**. Em média o fragmento ocupa cerca de 25% da superfície articular, com ângulo sagital de 73 a 80 graus e cerca de 45 mm de altura. Um traço quase vertical significa **cisalhamento**: com a carga, o fragmento tende a escorregar para baixo e para trás.\n\n**Função de cada placa no planalto (figuras 62-25 e 62-26).**\n\n| Placa | Função | Por quê |\n| --- | --- | --- |\n| anterolateral na fratura lateral | **suporte (buttress)**, substitui a cortical lateral rompida | segura a parede lateral e sustenta os parafusos de jangada |\n| **posteromedial** | **antideslizante (antiglide)** | resiste ao cisalhamento do fragmento posterior |\n| lateral bloqueada na bicondilar e no VI | resiste a carga axial, rotação e flexão | impede o colapso em varo, mas não segura uma coluna medial instável |\n\nNa posteromedial, **a posição da placa em relação ao ápice da fratura importa mais que a posição exata dos parafusos**; um parafuso perto do ápice garante o contato da placa com o osso nesse ponto crítico. Implantes de 3,5 mm bastam; os autores usam com frequência uma ou duas placas um terço de tubo, que se moldam a qualquer posição. O valor dos parafusos bloqueados nas fraturas unicondilares, em que a placa é de suporte ou antideslizante, é incerto.\n\n**Por que fixar.** Num estudo biomecânico, fragmentos de 10 e 20 mm desviaram já em flexões pequenas, mesmo sem carga. Com fragmento coronal posteromedial e placa lateral bloqueada isolada, a perda de redução foi alta; com duas placas, zero (WEAVER).\n\n> **Na prova:** fragmento posteromedial = cisalhamento = **placa antideslizante no ápice**, pela via posteromedial.\n\n> **Por que esta questão foi criada.** O CET-PR perguntou o objetivo da placa no platô posteromedial (anticisalhamento), e o TARO 2019 cobrou o mecanismo do cisalhamento posteromedial (flexão, varo e rotação interna do côndilo femoral medial). Esta gêmea pede a função e acrescenta o detalhe técnico que o capítulo destaca: a posição no ápice.",
-  "correta": "**C: antideslizante; sobre o ápice da fratura.** O capítulo diz que as placas posteromediais têm função mecânica diferente das anterolaterais: precisam funcionar como dispositivo **antideslizante** para resistir às forças de cisalhamento (figura 62-26), e que nessa região **a posição da placa em relação ao ápice da fratura é mais importante que a colocação exata dos parafusos**. Na técnica da via posteromedial, a placa vai diretamente sobre a área de maior desvio, no ápice; um parafuso perto do ápice encosta a placa no osso. A placa funciona como um anteparo: quando a carga tenta fazer o fragmento escorregar, ele encontra a placa.",
+  "conceito": "O fragmento posteromedial precisa de uma placa **antideslizante sobre o ápice da fratura**, alternativa C. A função e o lugar estão ligados: a placa deve interceptar a direção em que a cunha pode escapar pelo traço.\n\nO cisalhamento cria uma superfície relativamente vertical e instável. Uma placa colocada apenas na face medial, longe do ápice relevante, pode não conter o componente posterior. O resumo destaca que a posição importa mais que os parafusos e que um parafuso próximo ao ápice mantém a placa encostada (Rockwood, 10ª ed., cap. 62, “O fragmento posteromedial e a placa antideslizante”).\n\n**Uma placa lateral não resolve toda bicondilar.** A TC deve identificar o traço coronal que separa o fragmento posteromedial. Se ele estiver desviado e instável, pode precisar de abordagem e fixação próprias; ignorá-lo favorece perda da redução.\n\nOs autores usam com frequência uma ou duas placas de um terço de tubo, moldáveis à região, ou implantes menores quando há múltiplos fragmentos. O princípio é adequar a montagem à direção da falha, não escolher material apenas pela denominação “bloqueado”.\n\nA redução deve recuperar superfície e eixo antes de se confiar na placa. Antideslizamento não é uma licença para apoiar uma cunha ainda mal posicionada; é a forma de preservar a redução contra o cisalhamento.\n\n**Por que esta questão foi criada.** O objetivo antideslizante é cobrado no CET-PR. O simulado associa a função à posição no ápice, para que o nome da placa tenha significado mecânico.",
+  "correta": "**C: antideslizante; sobre o ápice.** O par combina a função de barrar o deslocamento com a posição que permite realizá-la. A placa precisa capturar o fragmento que tende a deslizar.",
   "incorretas": {
-   "A": "**Neutralização é a função errada para um traço de cisalhamento.** A placa de neutralização protege uma fixação interfragmentária (por exemplo, parafuso de compressão) contra torção e flexão, sem participar ativamente da estabilidade. No fragmento posteromedial, a força dominante é o deslizamento ao longo de um traço vertical, e a placa precisa bloqueá-lo diretamente. Centrar a placa na face medial também a afasta do ápice posterior, que é onde o fragmento escapa.",
-   "B": "**Compressão e posição anteromedial não seguram o fragmento posterior.** A compressão interfragmentária pode ser feita por parafusos (e o capítulo cita os parafusos de 6,5 mm nas separações simples), mas a placa do fragmento posteromedial é antideslizante. E a face anteromedial é a da via anteromedial, que o capítulo diz ser incomum isoladamente e que não alcança o fragmento posterior; usá-la para um fragmento posteromedial deixa o ápice sem apoio.",
-   "D": "**Ponte é o conceito da zona metafisária, não do fragmento articular.** Nas fraturas com dissociação da diáfise, a placa lateral bloqueada longa faz ponte sobre a cominução metafisária, que fica sem tocar (técnica de não tocar), para acelerar a consolidação. O fragmento posteromedial de cisalhamento precisa de apoio direto e preciso no ápice; uma placa afastada do foco não impediria o deslizamento."
+   "A": "**A.** Neutralização genérica no centro da face medial não garante bloquear o ápice posteromedial. O traço e a direção de fuga, e não apenas o lado do osso, devem orientar a colocação.",
+   "B": "**B.** Compressão sobre a cortical anteromedial muda o objetivo e pode deixar o componente posterior sem contenção. O resumo descreve antideslizamento no ápice, não uma compressão anterior como princípio central.",
+   "D": "**D.** Uma ponte afastada do foco pode ter função em padrões metafisários, mas não substitui a barreira localizada ao fragmento posteromedial. A opção deixa de captar o mecanismo específico de cisalhamento."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lado medial e vias posteriores; Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lado medial e vias posteriores",
+      "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+     ],
+     "blocos": [
+      "lado-medial-e-vias-posteriores-96c684c4",
+      "lado-medial-e-vias-posteriores-39c8bf35",
+      "lado-medial-e-vias-posteriores-d3fc5be1",
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "2305868b55060780be8f2151a1f8c2aba68606a59d9a6daae66cb0caaee70411"
+    }
+   ],
+   "questaoSha256": "730210702b6ab47468f5f805fca61982e293572fd82b3f92b31de8ef7b2752fe",
+   "comentarioSha256": "9261c37a4e69fee7120a1ad1dbe34c19f08144ee4477fd1c20fc3e5c21947810"
+  }
  },
  "trauma-1676": {
-  "conceito": "**De onde vem a regra das duas incisões.** Nos anos 1980 e início dos 1990, as duas placas eram colocadas por uma única incisão mediana, com dissecção para os dois lados. A pele e o osso ficavam desvascularizados entre as placas (o \"sanduíche de osso morto\"), e a infecção chegou a 73% a 87%. Dois avanços mudaram o quadro: o **protocolo em etapas**, com fixador externo transarticular até a recuperação das partes moles, e as **duas incisões**, uma **anterolateral** e uma **posteromedial**, que ficam a quase **180 graus** uma da outra (figura 62-38). Com essa separação, a ponte de pele não é problema e o osso entre elas não é desvitalizado.\n\n**Quando usar duas placas.** A placa lateral bloqueada isolada resiste ao varo em muitos padrões, mas a escolha depende do lado medial: placa medial quando o côndilo medial é cominuído, muito desviado ou um fragmento grande, e placa posteromedial própria quando há **traço coronal** criando um fragmento posteromedial. Os autores preferem abordar os dois lados na maioria dos fragmentos posteromediais desviados.\n\n**A sequência.**\n\n1. Decúbito dorsal; o membro vai para a posição em quatro (rotação externa) para a via posteromedial.\n2. **O lado medial é reduzido e fixado primeiro**, com placa de suporte ou antideslizante. Ele reconstrói essa parte do planalto, e o lateral será reduzido e apoiado contra ele. A redução medial precisa ser exata: um erro aqui compromete o resultado final.\n3. Poucos parafusos mediais no início, direcionados para a frente para não atravessar a zona da fratura lateral; os parafusos laterais depois travam o lado medial.\n4. Via anterolateral: artrotomia submeniscal se houver afundamento, distrator femoral, redução do componente articular e da separação lateral, pinça entre os côndilos para restaurar a largura, conferência do alinhamento, placa lateral e preenchimento da falha.\n\nCom duas placas, implantes de 3,5 mm costumam bastar e parafusos bloqueados raramente são necessários. Depois, mobilização precoce com órtese e carga proibida por pelo menos 8 semanas. Mesmo com duas incisões, a complicação é alta: RUFFOLO encontrou 27,9% de complicações maiores (23,6% de infecção, 10% de pseudartrose); BAREI, 4,8% de infecção nas 41C3.\n\n> **Na prova:** duas placas = **medial primeiro**, pela via posteromedial; incisões anterolateral e posteromedial a cerca de **180 graus**.\n\n> **Por que esta questão foi criada.** O TARO 2011 perguntou, na fratura AO tipo C, qual côndilo se fixa primeiro e por qual via (a questão está sem gabarito no acervo; o capítulo sustenta o medial pela via posteromedial). Esta gêmea cobra a mesma sequência e acrescenta o número da separação das incisões, que explica a queda da infecção.",
-  "correta": "**B: medial; 180 graus.** O capítulo 62 diz que, nas fraturas tratadas com duas placas, **o lado medial é abordado primeiro**: reduzir e fixar o medial restaura essa parte do planalto, e o lateral é então reduzido e apoiado contra ele. As incisões anterolateral e posteromedial ficam **a quase 180 graus** uma da outra, de modo que a ponte de pele não é problema e cada côndilo é alcançado diretamente com pouca dissecção. A lógica é a de montar o quebra-cabeça a partir da peça mais fácil de pôr no lugar: o fragmento posteromedial tem traço extra-articular pouco cominuído, enquanto a cominução das bicondilares se concentra na espinha e no côndilo lateral (MELLEMA).",
+  "conceito": "Na técnica com duas placas e duas incisões, fixa-se primeiro o **lado medial**, e as incisões anterolateral e posteromedial ficam aproximadamente a **180 graus**, alternativa B. O primeiro componente reduzido serve de referência para o outro.\n\nO côndilo medial define parte importante do apoio e do eixo. Na sequência dos autores, ele é reconstruído e o lateral é então reduzido e sustentado contra essa referência. Poucos parafusos mediais iniciais, dirigidos anteriormente, evitam ocupar a região que será trabalhada pelo lado lateral (Rockwood, 10ª ed., cap. 62, “Duas placas por duas incisões”).\n\n**Duas placas não significam uma grande incisão mediana.** O resumo relata complicações históricas graves com essa exposição única. O protocolo em etapas e as incisões separadas preservam melhor as partes moles e o osso entre as vias. O ângulo aproximado descreve a posição das abordagens, não uma medida rígida a impor em todo paciente.\n\nA presença de fragmento posteromedial com traço coronal reforça a necessidade de fixação própria. O planejamento por TC deve mostrar se uma placa lateral isolada deixaria uma coluna medial instável.\n\nA sequência pressupõe que o envelope permita a operação definitiva. Edema tenso, flictenas ou ferida grave podem exigir fixador temporário e espera; acertar a ordem das placas não justifica operar através de partes moles inadequadas.\n\n**Por que esta questão foi criada.** A sequência medial antes do lateral aparece no TARO 2011. Este caso acrescenta a disposição das duas incisões e a preservação das partes moles no planejamento.",
+  "correta": "**B: medial; 180 graus.** É a sequência e a disposição aproximada das vias apresentadas. O medial restaurado fornece apoio para a redução do lateral, com preservação de uma ponte de partes moles entre as incisões.",
   "incorretas": {
-   "A": "**A ordem está certa; o ângulo, não.** Começar pelo medial é o que o capítulo recomenda. Mas as incisões não ficam a 90 graus: a anterolateral fica sobre o tubérculo de GERDY e lateral à crista da tíbia, e a posteromedial, sobre a borda posteromedial, nos lados opostos do joelho. Incisões a 90 graus deixariam uma ponte de pele estreita sobre a face anterior, que é justamente a pele mais frágil nas fraturas de alta energia.",
-   "C": "**Duas trocas.** Fixar primeiro o lateral obrigaria a reduzir o medial contra uma placa lateral já colocada, e o capítulo diz que a redução anatômica do medial é essencial para o alinhamento axial final e muitas vezes não se consegue por uma via lateral isolada. E o ângulo de 90 graus encurta a ponte de pele. A alternativa descreve o oposto da técnica que reduziu as complicações.",
-   "D": "**O ângulo está certo; a ordem, não.** As duas incisões ficam mesmo a cerca de 180 graus. Mas, no método de duas placas, o lado lateral é o segundo: o medial bem reduzido serve de referência, e os parafusos laterais depois travam o medial. Começar pelo lateral só faz sentido quando a placa lateral bloqueada será o único implante, com o lado medial sem desvio ou reduzido indiretamente."
+   "A": "**A.** O medial primeiro está correto, mas 90 graus não corresponde à disposição aproximada descrita para anterolateral e posteromedial. O par deve conservar os dois dados.",
+   "C": "**C.** Inverte a referência ao iniciar pelo lateral e ainda troca o ângulo das incisões. Não reproduz o plano em que o medial define o apoio e o eixo antes de receber a redução lateral.",
+   "D": "**D.** A disposição de 180 graus está correta, mas o lateral não é o primeiro da sequência apresentada. A opção mistura um dado verdadeiro com a ordem invertida."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+     ],
+     "blocos": [
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-958bc354",
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-463cdfd3",
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-aee3e6e3",
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-1765beb7"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "e84c7e0b8af2bc75570d7daa4e58cdf5029eafc54bef6097e7d281a3d8db5c84"
+    }
+   ],
+   "questaoSha256": "7dcb90bb70dddfb6fddd36e8e16ff429898014ce651c2a09bb5f6dbd21df75c4",
+   "comentarioSha256": "8695e455eca05e5b33d1e227711d9b99d20ddca54af7a049bb7e420ad26365c8"
+  }
  },
  "trauma-1677": {
-  "conceito": "**Os dois planaltos não são iguais (figura 62-21).** A superfície do **planalto lateral é plana ou levemente convexa**; a do **medial é côncava** e mais congruente com o côndilo femoral medial. Essa diferença permite separar os dois planaltos na radiografia e na radioscopia em perfil. O **planalto lateral também é mais alto** que o medial, o que explica os poucos graus de varo do planalto em relação à diáfise. Os dois descem de anterior para posterior: a inclinação posterior média foi de 5,2 graus no medial e 7,5 graus no lateral, com grande variação entre pessoas, mas sem diferença entre os lados direito e esquerdo do mesmo indivíduo. Por isso o lado sadio é a melhor referência.\n\n**A tendência ao recalque.** Mesmo com as técnicas atuais, a fratura lateral operada perde parte da redução com frequência: 31% dos joelhos no estudo de ALI, 79% acima dos 60 anos. Quanto mais grave o afundamento e mais osteopênico o osso, maior o recalque, que leva ao valgo. As defesas do capítulo são três: reduzir completa e corretamente, colocar o implante para sustentar os fragmentos (parafusos de jangada perto da superfície) e preencher a falha com o melhor material.\n\n**Na mesa.** Radioscopia anteroposterior com inclinação caudal de 10 a 15 graus (no plano do planalto) e perfil; a combinação das duas incidências detecta melhor a má redução. A superfície lateral deve voltar à posição normal, **um pouco mais alta que a medial**, e **a hiper-redução é melhor que a hipo-redução**, pela tendência ao recalque. Imagens do lado oposto ajudam a conferir a altura. Procure ainda as **impacções marginais**, mais centrais, perto da espinha: se ficarem afundadas, o fragmento central é elevado só até elas e a redução fica incompleta.\n\n> **Na prova:** o planalto lateral é **mais alto e convexo**; na redução, deixe-o **um pouco acima do medial**, porque a **hiper-redução é preferível** ao recalque.\n\n> **Por que esta questão foi criada.** O TARO 2012 cobrou que o planalto lateral é mais alto e convexo que o medial, e o TARO 2007 perguntou como os dois planaltos aparecem no perfil da radioscopia (lateral convexo e medial côncavo; sem gabarito no acervo). Esta gêmea leva a mesma anatomia para a decisão da sala de cirurgia.",
-  "correta": "**D: um pouco mais alta que a medial, preferindo a hiper-redução.** O capítulo diz, na técnica da placa de suporte com preenchimento da falha, que na radioscopia **o lado lateral deve voltar à sua posição normal, levemente mais alta que a medial**, e que **a hiper-redução é melhor que a hipo-redução**, dada a tendência ao recalque pós-operatório. A anatomia normal é a de um planalto lateral mais alto e convexo; uma redução \"na mesma altura\" já seria uma hipo-redução. E como o fragmento elevado tende a ceder alguns milímetros com a carga, sobretudo no osso osteoporótico, começar ligeiramente acima protege contra o valgo tardio.",
+  "conceito": "Na redução lateral, a superfície deve voltar **um pouco acima da medial**, e o capítulo prefere discreta **hiper-redução à hipo-redução**, pela tendência ao recalque. A resposta é D; isso não significa criar incongruência excessiva deliberadamente.\n\nO lateral normal é mais alto e plano ou levemente convexo, enquanto o medial é côncavo. Assim, colocar ambos no mesmo nível pode deixar o lateral relativamente afundado, mesmo que a imagem pareça simétrica (Rockwood, 10ª ed., cap. 62, “Anatomia aplicada” e “Tratamento do lado lateral”).\n\nO fragmento elevado perdeu parte do suporte trabecular original. O vazio precisa ser preenchido e a superfície apoiada por parafusos subcondrais; reduzir sem sustentar favorece nova depressão. A recomendação sobre hiper-redução se insere nessa preocupação com recalque pós-operatório.\n\n**O lado sadio é a referência individual.** Altura, curvatura e inclinação não são idênticas em todos os pacientes. O controle integra AP, perfil, eixo e avaliação da superfície; uma orientação qualitativa não deve se transformar em um número de sobrecorreção inventado.\n\nO objetivo permanece restaurar congruência e alinhamento. A escolha D corrige a ideia equivocada de nivelar os planaltos e reconhece a tendência ao recalque, sem substituir fixação estável por uma elevação excessiva.\n\n**Por que esta questão foi criada.** A anatomia assimétrica dos planaltos é tema de questões de perfil radiográfico. O simulado transforma essa anatomia numa decisão de redução e a relaciona à tendência ao recalque.",
+  "correta": "**D: mais alta; preferindo a hiper-redução.** Corresponde à anatomia lateral e à orientação do capítulo diante do recalque. A preferência é em relação à hipo-redução e precisa respeitar a referência anatômica individual.",
   "incorretas": {
-   "A": "**Duas ideias razoáveis em outro contexto, erradas aqui.** Em muitas fraturas articulares, a meta é a superfície no nível exato e a hiper-redução é um erro (um degrau para cima também é degrau). No planalto lateral, porém, \"na mesma altura da medial\" já fica abaixo do normal, porque o lateral é mais alto; e o capítulo prefere errar para cima por causa do recalque frequente (31% de perda de posição, 79% acima dos 60 anos).",
-   "B": "**A preferência está certa; a referência de altura, não.** Preferir a hiper-redução é o que o capítulo recomenda. Mas a altura alvo não é a mesma do planalto medial: o lateral normal fica levemente acima. Quem usa o medial como nível de referência hipo-reduz o lateral, mesmo achando que corrigiu. A comparação com a radioscopia do lado sadio resolve a dúvida.",
-   "C": "**É o resultado que a cirurgia tenta evitar.** Deixar o lateral mais baixo que o medial é exatamente o valgo do planalto que a fratura lateral produz e que o recalque agrava. O objetivo de operar a maioria das fraturas laterais, diz o capítulo, é prevenir a deformidade em valgo. A alternativa combina a altura errada com a preferência errada."
+   "A": "**A.** A mesma altura da medial pode deixar o lateral abaixo do seu nível normal. A opção também rejeita a preferência apresentada em relação à hipo-redução, ignorando a tendência de nova depressão.",
+   "B": "**B.** Reconhece a orientação sobre hiper-redução, mas mantém as duas superfícies no mesmo nível. O primeiro dado continua errado porque o lateral normal é mais alto.",
+   "C": "**C.** Deixar o lateral ainda mais baixo cria depressão relativa desde o início. Isso contraria tanto a assimetria anatômica quanto o objetivo de compensar a tendência ao recalque."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Anatomia aplicada; Tratamento do lado lateral."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Anatomia aplicada",
+      "Tratamento do lado lateral"
+     ],
+     "blocos": [
+      "anatomia-aplicada-882c3a32",
+      "anatomia-aplicada-01a8a946",
+      "anatomia-aplicada-29b9f498",
+      "tratamento-do-lado-lateral-6b4477db",
+      "tratamento-do-lado-lateral-fd50d208",
+      "tratamento-do-lado-lateral-96ac9ab9"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "a65544878729d813ff8c77b80add8ae2b5bf3beb53253cf17a2d9a733adf37ec"
+    }
+   ],
+   "questaoSha256": "aca47346b58c04fce7aa7c50864f78125e3c3f3d9406aad59db07ef8cb1418ee",
+   "comentarioSha256": "4805d418af1630874ef98d04a89098b31b8dcc70d20c6a889957e63870624153"
+  }
  },
  "trauma-1678": {
-  "conceito": "**Por que há uma falha.** Ao elevar um fragmento articular afundado, sobra um espaço vazio embaixo dele (figura 62-31): as trabéculas esponjosas foram compactadas pelo trauma e não voltam. Esse vazio deixa o fragmento sem apoio e aumenta o risco de novo afundamento mesmo com fixação interna. Por isso é princípio da cirurgia da fratura lateral **preencher a falha metafisária**, para dar estabilidade e evitar o recalque. A falha é preenchida para **sustentar a superfície articular**, não para garantir a consolidação, que no planalto acontece de forma confiável.\n\n**As opções do capítulo.**\n\n| Material | Vantagens | Problemas |\n| --- | --- | --- |\n| enxerto autólogo | padrão histórico | oferta limitada, morbidade da área doadora (de seroma a hérnia abdominal, lesão vascular e fratura da asa ilíaca), propriedades mecânicas não ideais |\n| enxerto homólogo (aloenxerto) | manuseio parecido, sem área doadora | risco teórico de transmissão de infecção, exige banco de ossos |\n| **cimento de fosfato de cálcio** | **mais rígido à compressão que o osso esponjoso** no modelo cadavérico; os autores o preferem em massa (melhor manuseio, menos extravasamento articular) | **quebradiço depois de endurecer** |\n| beta-fosfato tricálcico | biocompatível, estável, osteocondutor; em 52 pacientes, sem perda de redução | incorporação completa só com grânulos menores que 100 micrômetros |\n| sulfato de cálcio injetável | dois terços incorporados em 8 semanas, total em 12 | |\n\n**A regra técnica.** Se for usar cimento de fosfato de cálcio, **os parafusos são colocados antes do cimento**, porque o material endurecido é frágil e se quebraria com a broca e o parafuso. A tabela de armadilhas repete: contra o recalque, parafusos de jangada perto da superfície e, se possível, **antes** do preenchimento. Já o enxerto homólogo ou autólogo deve ser bem impactado sob o fragmento com um impactador.\n\nOs parafusos de jangada são parafusos de 3,5 mm paralelos e próximos à superfície articular, passados pelos furos da cabeça da placa: vários parafusos menores sustentam melhor os fragmentos do que poucos maiores.\n\n> **Na prova:** fosfato de cálcio = mais rígido que o esponjoso, mas **quebradiço**; **parafusos antes do cimento**.\n\n> **Por que esta questão foi criada.** A banca carimba a propriedade de cada enxerto e substituto (osteogênese, osteoindução e osteocondução do homólogo, da biocerâmica e do fosfato de cálcio nas questões de conceitos básicos). O capítulo do planalto traz o detalhe técnico que liga a propriedade mecânica do cimento à ordem da cirurgia, um ponto com cara de prova que ainda não caiu.",
-  "correta": "**B: antes do cimento, que fica quebradiço depois de endurecer.** O capítulo é explícito: quando se usa cimento de fosfato de cálcio, **os parafusos devem ser colocados antes**, para evitar fraturar o material, que é **frágil depois de endurecido**. É a outra face da sua vantagem: o cimento endurece como uma cerâmica, rígido à compressão (mais rígido que o osso esponjoso no modelo de fratura com afundamento), mas pouco tolerante à perfuração e à tração. A sequência prática é elevar o fragmento, fixá-lo provisoriamente com fios, colocar os parafusos de jangada logo abaixo da superfície e só então injetar o cimento, que envolve os parafusos e preenche o vazio.",
+  "conceito": "Os parafusos de jangada devem ser colocados **antes do cimento**, porque o fosfato de cálcio fica **quebradiço depois de endurecer**. B é o par correto. A sequência protege o material que vai sustentar a superfície elevada.\n\nElevar o afundamento não recompõe as trabéculas que foram compactadas. Resta uma falha metafisária, e o preenchimento tem função de apoio mecânico sob a superfície, não de transformar uma região de consolidação confiável em outra biologicamente ativa por obrigação (Rockwood, 10ª ed., cap. 62, “Preencher a falha”).\n\nO cimento de fosfato de cálcio é mais rígido à compressão que o osso esponjoso na comparação apresentada. Essa resistência não significa flexibilidade: depois de endurecido, ele pode quebrar se os parafusos forem passados através dele. Por isso a técnica prepara a fixação antes de introduzir o material.\n\n**Preenchimento e fixação cooperam.** A jangada próxima à superfície sustenta o fragmento, e o material preenche o espaço abaixo. Um não corrige automaticamente a posição inadequada do outro. Enxerto autólogo ou homólogo, quando escolhido, deve ser bem impactado no vazio.\n\nA propriedade cobrada é mecânica e orienta uma decisão de ordem técnica. Não há fundamento para escolher o momento de passar parafusos por uma suposta capacidade do cimento de induzir osso ou incorporá-los depois.\n\n**Por que esta questão foi criada.** O apoio da superfície elevada depende tanto da jangada quanto do preenchimento. A pergunta liga uma propriedade mecânica do cimento à ordem segura de passagem dos parafusos.",
+  "correta": "**B: antes; quebradiço após endurecer.** A sequência evita fraturar o material rígido durante a passagem dos parafusos. O objetivo é conservar o suporte da superfície reduzida.",
   "incorretas": {
-   "A": "**O cimento é mais rígido, não mais flexível.** O estudo citado no capítulo mostrou o fosfato de cálcio **significativamente mais rígido** à compressão que o osso esponjoso, e é por isso que os autores o preferem como suporte. Colocar os parafusos depois arriscaria quebrar o material já endurecido. A alternativa erra a propriedade e, por consequência, a ordem.",
-   "C": "**Osteoindução não é a propriedade do cimento.** Osteoindutor é o que recruta e diferencia células em osteoblastos (como as proteínas morfogenéticas ósseas e o enxerto autólogo); os substitutos de fosfato de cálcio são **osteocondutores**, servem de arcabouço, como o capítulo diz do beta-fosfato tricálcico. E a incorporação não ocorre \"em volta do parafuso\" de forma que permita perfurar depois: o cimento endurecido é quebradiço. Ordem e justificativa estão erradas.",
-   "D": "**A ordem está certa; a justificativa, invertida.** Os parafusos vêm mesmo antes do cimento. Mas não porque o cimento seja menos rígido que o enxerto esponjoso: é o contrário, ele é mais rígido. O motivo da ordem é a **fragilidade** do material depois de endurecer. Separar rigidez à compressão (alta) de tolerância à perfuração (baixa) é o que a alternativa testa."
+   "A": "**A.** Coloca os parafusos depois e chama o material de mais flexível que o osso esponjoso. O resumo descreve maior rigidez à compressão e fragilidade após endurecer, justamente a razão para inverter essa ordem.",
+   "C": "**C.** A indicação de passar depois não é sustentada, e a alegação de osteoindução/incorporação do parafuso não é a propriedade que fundamenta a técnica na fonte. A função descrita é suporte mecânico.",
+   "D": "**D.** Acerta passar antes, mas erra a comparação de rigidez. O material é mais rígido à compressão que o osso esponjoso no resumo, embora quebradiço depois de endurecer."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Tratamento do lado lateral."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Tratamento do lado lateral"
+     ],
+     "blocos": [
+      "tratamento-do-lado-lateral-fd50d208",
+      "tratamento-do-lado-lateral-b01ea2e2",
+      "tratamento-do-lado-lateral-87fc4688"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "c677a72d88841eece0129c103b79fe59a7425ee17d8cc3bdaa9cdc6d497e9aaf"
+    }
+   ],
+   "questaoSha256": "c9e7ead041b11d3d266ae6a908184751247804f128330f04b42cb548b75fd9f4",
+   "comentarioSha256": "2c3dc241aac409087def230d3127f8dcd199d0cca7a626758adaf7a451fea2e3"
+  }
  },
  "trauma-1679": {
-  "conceito": "**Dois usos do fixador.** O fixador **transarticular temporário** restaura comprimento e alinhamento enquanto as partes moles se recuperam, antes da fixação interna; é o padrão nas bicondilares complexas e, em geral, desnecessário nas laterais SCHATZKER I a III, estáveis em comprimento porque a coluna medial está íntegra. O fixador **definitivo** (circular de fios finos, monolateral ou híbrido) continua tendo lugar quando as partes moles não permitem a fixação interna; tem estabilidade parecida com a da fixação interna com menos complicações e permite carga precoce.\n\n**O desafio é a fixação proximal.** O bloco proximal é curto, cheio de traços e próximo das reflexões capsulares do joelho. As recomendações do capítulo:\n\n- planejamento com tomografia; o bloco proximal precisa aceitar pinos ou fios a **pelo menos 15 mm** da superfície articular;\n- **dois, de preferência três, pinos proximais**; pinos revestidos de hidroxiapatita seguram mais tempo; evitar o tendão patelar;\n- no circular: **três fios tensionados**, com um fio pela cabeça da fíbula e outro de posteromedial para anterolateral para abrir o ângulo, às vezes com um meio pino; fios com oliva comprimem os traços.\n\n**A artrite séptica.** É a complicação própria do fixador nesse lugar: pinos e fios inoculam a articulação pelo trajeto quando atravessam a cápsula. A taxa chegou a **10%** numa série (MARSH). Num estudo das reflexões capsulares, para ter certeza de não violá-las, os pinos e fios devem ficar **no mínimo 14 mm abaixo da articulação** (REID). Por isso a regra é mantê-los o mais longe possível da interlinha; nas fraturas com muitos fragmentos pequenos junto à articulação, uma ponte transarticular por algumas semanas neutraliza as forças e reduz o risco (numa série, o joelho foi transfixado em 63% sem prejuízo). Com a popularidade das placas laterais bloqueadas, o fixador muito proximal ficou menos usado e a complicação é hoje rara.\n\n> **Na prova:** pinos e fios a **14 mm ou mais** da articulação; a complicação temida é a **artrite séptica** (até 10%).\n\n> **Por que esta questão foi criada.** O fixador externo é um dos assuntos carimbados da banca nos conceitos básicos (o que aumenta a estabilidade do monolateral e do circular). No planalto, o capítulo traz um número com consequência prática direta e a complicação específica do método, um par com cara de prova que ainda não caiu.",
-  "correta": "**C: 14 mm; artrite séptica.** O capítulo cita o estudo das reflexões capsulares segundo o qual, para ter certeza de não violar a cápsula, **pinos e fios devem ficar no mínimo 14 mm abaixo da articulação**; no planejamento do fixador definitivo, ele pede um bloco proximal capaz de aceitar fixação a pelo menos 15 mm da superfície. A complicação prevenida é a **artrite séptica** do joelho a partir do trajeto do pino ou do fio, descrita com taxas de até 10%. O raciocínio é anatômico: a cápsula e o recesso articular descem abaixo da interlinha, e um pino dentro dessa bolsa leva as bactérias da pele direto para dentro da articulação.",
+  "conceito": "Manter pinos e fios **pelo menos 14 mm abaixo da articulação** procura evitar **artrite séptica**, alternativa C. O risco é atravessar a reflexão capsular e criar um caminho para bactérias chegarem ao joelho.\n\nO problema não se limita à distância da cartilagem visível. A cápsula tem reflexões que podem ser penetradas por um implante aparentemente extra-articular. O resumo descreve artrite séptica como complicação própria do fixador definitivo e orienta ficar o mais longe possível da articulação (Rockwood, 10ª ed., cap. 62, “Artrite séptica pelo fixador”).\n\n**O mínimo não é um alvo obrigatório.** Na montagem definitiva, a seção técnica pede um bloco proximal que aceite fios ou pinos a pelo menos 15 mm da superfície. A regra de prevenção traz 14 mm como limite mínimo; ambas expressam evitar uma montagem excessivamente proximal, com avaliação anatômica do caso.\n\nQuando os fragmentos articulares são pequenos demais para receber uma montagem segura, o capítulo admite ponte transarticular por algumas semanas. Isso permite proteger a fratura sem forçar pinos para dentro da região capsular.\n\nA prevenção de lesão fibular é outra questão: depende de conhecer o trajeto do nervo e da posição de cada fio, especialmente junto à cabeça da fíbula. Não é a complicação específica evitada pelo afastamento da articulação perguntado.\n\n**Por que esta questão foi criada.** A fixação externa exige conhecer a cápsula além da posição da cartilagem. O par distância e complicação testa a prevenção de infecção articular na montagem proximal.",
+  "correta": "**C: 14 mm; artrite séptica.** O par corresponde à orientação de não violar as reflexões capsulares. A distância deve ser tratada como mínimo da fonte, mantendo os implantes mais distais quando o padrão permitir.",
   "incorretas": {
-   "A": "**Número e complicação errados.** 5 mm da articulação colocaria o pino dentro das reflexões capsulares, exatamente o que se quer evitar. E a regra da distância não é sobre o nervo fibular: ele contorna o colo da fíbula a cerca de 42 mm da interlinha e corre risco nas vias posterolaterais e no varo das fraturas mediais, situações que nada têm a ver com a altura dos pinos em relação à cápsula. O que a distância mínima previne é a contaminação articular.",
-   "B": "**A complicação está certa; o número, não.** Artrite séptica é mesmo o risco a evitar. Mas 5 mm está perto demais: o estudo citado no capítulo pede no mínimo 14 mm, porque a cápsula se reflete abaixo da interlinha. O distrator usa um número pequeno e plausível para quem pensa só na cartilagem e não no recesso capsular.",
-   "D": "**O número está certo; a complicação, não.** 14 mm é a distância do estudo das reflexões capsulares. A justificativa, porém, é infecciosa, não neurológica: a regra existe porque a artrite séptica por trajeto de pino é a complicação característica da fixação externa do planalto. O nervo fibular entra no capítulo em outros pontos: no varo das fraturas mediais e nas vias posterolaterais."
+   "A": "**A.** Cinco milímetros deixam o implante próximo demais para a regra de proteção capsular, e lesão fibular não é o desfecho prevenido por esse corte. A opção troca os dois componentes.",
+   "B": "**B.** Identifica corretamente a infecção articular, mas usa distância insuficiente segundo o resumo. Reconhecer a complicação não compensa violar o limite mínimo descrito.",
+   "D": "**D.** A distância coincide com o mínimo, mas o objetivo citado é evitar artrite séptica, não definir zona segura universal para o nervo fibular. O risco nervoso depende do trajeto específico do implante."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Complicações; Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Complicações",
+      "Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador"
+     ],
+     "blocos": [
+      "complicacoes-479c7db2",
+      "bicondilares-e-dissociadas-duas-placas-placa-blo-c0fa4734"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "2005f1b61b572b4622097afe52d94c76a074113aa4e99bb36dec1b96242557b6"
+    }
+   ],
+   "questaoSha256": "1820451430badde5ef3efae2d647c7ca4f21a9521c98c8ce29b7cb396e608bfa",
+   "comentarioSha256": "4b5c615e292d85b564b4e4846af7373b79a19124b0bd76ead59658c64b6d2f39"
+  }
  },
  "trauma-1680": {
   "conceito": "**O joelho tolera melhor que o tornozelo e o quadril.** O capítulo compara as fraturas articulares do membro inferior: a superfície da tíbia proximal parece mais **tolerante** que o tornozelo e o quadril. Em séries da mesma instituição, com 5 a 11 anos de seguimento, o tornozelo após fratura do pilão tibial tinha artrose em mais de 90%, a maioria moderada ou grave; o joelho após planalto de alta energia, em **36%**, mais da metade leve ou moderada. As explicações sugeridas: articulação menos congruente, características da cartilagem e a divisão de carga pelos meniscos. A sobrevivência sem artrose terminal em 10 anos foi de 96% numa série de 311 fraturas; ainda assim, 7,3% fizeram artroplastia em 10 anos, 5,3 vezes o esperado (WASSERSTEIN), mais nos idosos e nas fraturas graves.\n\n**O que prevê a artrose.**\n\n- **Alinhamento:** RADEMAKERS, com 5 a 27 anos de seguimento, encontrou artrose em **27% dos joelhos malalinhados** e só **9% dos alinhados**.\n- **Menisco:** HONKONEN viu mais artrose com **meniscectomia** e com malalinhamento, e **correlação fraca com o degrau articular**.\n- **Idade:** KEATING achou artrose em 68% acima dos 60 anos.\n- **Varo pior que valgo:** fraturas mediais e bicondilares com inclinação medial evoluem pior.\n\n**E o degrau?** O tema é controverso. O consenso é que **mais de 10 mm** não é aceitável e deve ser reduzido; entre 10, 8, 5 e 2 mm, há debate. SINGLETON mostrou melhor resultado com depressão residual menor que 2,5 mm; BLOKKER e BAREI, com menos de 5 mm; WADDELL aceitou até 10 mm de degrau e de alargamento; HONKONEN tolerou 5 mm de alargamento e 3 mm de degrau, mas nenhum desvio ou inclinação medial. Os estudos que dão mais peso ao alinhamento usaram radiografias, que medem mal; e, em muitos padrões, degrau grande e malalinhamento andam juntos. A medida em milímetros na radiografia é pouco confiável (observadores divergiram em 12 mm ou mais em 10% das medidas).\n\n> **Na prova:** o planalto é a fratura articular do membro inferior com **menos artrose**; o que mais a prevê é o **malalinhamento** (e a meniscectomia), mais que o degrau.\n\n> **Por que esta questão foi criada.** O TARO 2013 perguntou em qual fratura a artrose pós-traumática com dor e limitação é mais rara (planalto tibial, contra calcâneo, acetábulo e pilão). Esta gêmea parte do mesmo fato e pergunta o que, no planalto, mais se associa à artrose, com os números do capítulo.",
@@ -32302,18 +32816,44 @@
   "conferido": false
  },
  "trauma-1681": {
-  "conceito": "**O mecanismo da fratura lateral.** O joelho tem 5 a 7 graus de valgo e costuma ser atingido pelo lado de fora, por isso a tíbia proximal recebe sobretudo força em **valgo**: o côndilo femoral lateral bate no planalto lateral e o leva à falha. Valgo puro dá separação; carga axial, depressão; os dois juntos, separação com afundamento (o padrão mais comum). Num estudo mecânico em cadáver, o **LCM íntegro** foi requisito para produzir a fratura lateral: ele funciona como **dobradiça** para o côndilo femoral lateral. O osso quebra porque o ligamento resistiu.\n\n**Valgo ao exame: osso ou ligamento?** O LCM pode se lesar na fratura lateral por valgo, mas o capítulo avisa que, muitas vezes, a instabilidade em valgo do exame se deve à **perda do suporte ósseo** pelo afundamento da superfície lateral. O côndilo femoral simplesmente cai no buraco do planalto. Por isso:\n\n- a instabilidade causada pelo desvio da fratura **não se resolve sem reduzir a fratura**, e o exame do joelho **depois** da redução e da fixação é o que importa;\n- a cabeça da fíbula serve de contraforte ao planalto lateral; sua fratura associada aumenta a instabilidade em valgo e indica fratura lateral mais grave;\n- a lesão do LCM é tratada **sem cirurgia**: depois de fixar a fratura lateral, uma órtese ou imobilizador pós-operatório de rotina basta. MOORE examinou 208 joelhos com fratura unicondilar, em média 3 anos depois, com radiografias sob estresse, e não achou frouxidão crônica, sem nenhum reparo ligamentar.\n\n**Indicações cirúrgicas no padrão lateral** (fortes, segundo o capítulo): fragmento de separação, depressão de mais da metade da superfície articular lateral, fratura da cabeça da fíbula, valgo na radiografia ou no exame e instabilidade em varo ou valgo. A dor, porém, limita o exame na urgência.\n\n> **Na prova:** na fratura lateral, o **LCM íntegro é a dobradiça**; a instabilidade em valgo costuma ser **óssea** e some com a redução; o LCM lesado é tratado sem cirurgia.\n\n> **Por que esta questão foi criada.** O TARO 2009 e o TARO 2018 usaram o ligamento colateral medial como distrator na pergunta da lesão associada mais frequente (a resposta era o menisco). Esta gêmea explica, pelo capítulo, por que o LCM atrai a escolha e por que a instabilidade em valgo da fratura lateral costuma ser do osso.",
-  "correta": "**D: à perda do suporte ósseo pelo afundamento articular.** O capítulo 62 diz que, embora o LCM possa se lesar junto com as fraturas laterais por valgo, a instabilidade em valgo no exame muitas vezes resulta da **perda do suporte ósseo** pela depressão da superfície articular do planalto lateral. Se a instabilidade existe, provavelmente é causada pelo desvio da fratura e não se resolve sem reduzi-la; por isso o exame após a redução e a fixação é fundamental. O próprio mecanismo reforça: o LCM íntegro funciona como dobradiça para o côndilo femoral lateral, e é justamente por ele resistir que o planalto lateral cede.",
+  "conceito": "Antes de fixar uma fratura lateral afundada, o joelho pode abrir em valgo por **perda do suporte ósseo**, alternativa D. Essa abertura não prova, isoladamente, ruptura do ligamento colateral medial nem indicação de repará-lo.\n\nO côndilo femoral lateral gira sobre a dobradiça medial e afunda a superfície lateral. Num estudo em cadáver citado, o LCM íntegro foi requisito para produzir esse padrão. O resultado é uma articulação que perde apoio no osso, embora parte de sua contenção ligamentar continue presente (Rockwood, 10ª ed., cap. 62, “O colateral medial é a dobradiça da fratura lateral”).\n\n**O exame decisivo deve ser repetido depois de restaurar o osso.** Reduzir o afundamento e reconstruir a largura pode recuperar estabilidade em valgo. Persistência de instabilidade após fixação é informação diferente da abertura dolorosa e deformada encontrada antes dela.\n\nO LCM também pode se lesar. O capítulo descreve tratamento sem reparo rotineiro, com órtese, e cita uma série de fraturas unicondilares sem frouxidão crônica apesar de não reparar o ligamento. Isso não é uma regra para qualquer trauma multiligamentar: a afirmação pertence ao contexto da fratura lateral associada.\n\nMenisco lateral e cruzados precisam de avaliação própria. Sua presença como lesões possíveis não permite atribuir toda instabilidade pré-fixação a eles nem indicar sutura ou reconstrução automática.\n\n**Por que esta questão foi criada.** O LCM aparece como alternativa nas questões de lesão associada. O simulado explica por que a abertura em valgo antes da fixação pode ter origem óssea e não indicar reparo ligamentar automático.",
+  "correta": "**D: perda do suporte ósseo.** O afundamento remove o apoio lateral e pode causar valgo mesmo sem provar falha do LCM. A resposta direciona a reduzir e estabilizar a fratura antes de interpretar a estabilidade residual.",
   "incorretas": {
-   "A": "**O LCM pode estar lesado, mas não é a causa habitual nem se repara.** A associação existe (numa série antiga com radiografias sob estresse, o LCM foi o ligamento mais encontrado), e por isso o distrator é forte. Mas o capítulo diz que a frouxidão residual costuma vir da depressão óssea, que a maioria dos cirurgiões não investiga nem trata o LCM associado, e que órtese pós-operatória basta. O estudo de MOORE, com 208 joelhos, não encontrou frouxidão crônica sem reparo.",
-   "B": "**O LCA é frequente, mas não dá instabilidade em valgo.** O LCA aparece em 77% das fraturas operadas na ressonância, e a sua avulsão com fragmento ósseo pode ser fixada. Mas o LCA controla a translação anterior e a rotação da tíbia; a abertura em valgo depende do LCM e, na fratura lateral, sobretudo do apoio ósseo do planalto. Reconstruir o LCA não corrigiria um côndilo que afundou.",
-   "C": "**O menisco lateral é a lesão mais frequente, não a causa do valgo.** Ele se lesa em até 91% das fraturas operadas e é reparado pela artrotomia submeniscal quando identificado. Mas o menisco não é estabilizador primário contra o valgo: a frouxidão vem da descida do côndilo femoral sobre o planalto afundado. A sutura meniscal melhora a distribuição de carga a longo prazo, mas não resolve a instabilidade do exame inicial."
+   "A": "**A.** O LCM pode estar lesado, mas a abertura inicial não demonstra que ele seja a causa principal. O resumo não recomenda reparo automático: descreve reavaliação após fixação e tratamento associado habitualmente sem cirurgia ligamentar.",
+   "B": "**B.** Lesão do LCA é possível, mas não explica por si a perda de apoio lateral. A opção acrescenta uma reconstrução como se a abertura em valgo antes da fixação fosse seu teste diagnóstico.",
+   "C": "**C.** O menisco lateral é frequentemente lesado e pode precisar de tratamento, porém não substitui a função de suporte do planalto afundado. A decisão de suturá-lo depende da avaliação da lesão, não apenas do valgo inicial."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 62 (Tibial Plateau Fractures; Maniar e Horwitz)"
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Lesões associadas: menisco, ligamentos e o colateral medial."
   ],
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-23",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Lesões associadas: menisco, ligamentos e o colateral medial"
+     ],
+     "blocos": [
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-9fbe9688",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-e9e69cc1",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
+      "lesoes-associadas-menisco-ligamentos-e-o-colater-ecd49fef"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "20a6bb29fa8616e294b6f693d3106185acc506b2a48e47ec7fed4aab31e76ec6"
+    }
+   ],
+   "questaoSha256": "54f2c08a5f10727c8adf25fafe9eb695ff15c22685157bf285867e0b6ae6f922",
+   "comentarioSha256": "cc5ad26e350029d2418b53640368f0d7e96bfa8e95de2c08468e98fb239978c1"
+  }
  },
  "trauma-1682": {
   "conceito": "**O encaixe e o tálus.** O tornozelo funciona como uma **mortalha** (encaixe): o corpo do tálus se articula com o teto da tíbia (o plafond), com o maléolo medial e, do lado de fora, com a fíbula distal. Cada uma dessas superfícies participa da transmissão de carga; a fíbula, por exemplo, recebe cerca de **um sexto** da carga. O maléolo medial é mais curto e mais anterior que o lateral, de modo que o eixo da articulação fica em cerca de **15 graus de rotação externa**.\n\nO corpo do tálus tem a forma de um **tronco de cone** deitado no encaixe, mais largo na frente e mais estreito atrás. Por isso ele fica comprimido e mais estável na **dorsiflexão** (o momento do toque do calcanhar, em que a fíbula roda para fora) e mais solto na flexão plantar. Com carga axial, a congruência das superfícies dá muita estabilidade, mesmo depois de cortar todos os ligamentos em laboratório.\n\n**O estudo clássico.** A cúpula do tálus copia de perto a forma do plafond, e a área de contato entre as duas cai muito quando o tálus sai do lugar. RAMSEY e HAMILTON (1976) mostraram uma queda de **42% da área de contato com apenas 1 mm de desvio lateral do tálus**, achado confirmado por outros autores. O estudo foi criticado pela técnica, e a relação exata entre desvio, área e pressão de contato ainda é discutida, mas a mensagem central é aceita: **a perda de congruência do encaixe altera a carga e é a principal responsável pelos maus resultados** dos pacientes que ficam com o tálus desviado depois da fratura. É a base de toda a conduta do capítulo: um bom resultado é esperado quando o tálus está **congruente** (bem colocado sob o plafond) e **estável** (fica ali até a consolidação).\n\n**Comparação útil.** O maléolo posterior, ao contrário, mexe pouco com a área de contato: um fragmento de 25% da superfície no perfil não reduz a área de forma significativa, um de 33% a reduz em cerca de 15% e um de 50% em cerca de 30%. O que destrói a articulação é o tálus fora do lugar, e não o tamanho do fragmento em si.\n\n> **Na prova:** 1 mm de desvio lateral do tálus, 42% a menos de área de contato (RAMSEY e HAMILTON).\n\n> **Por que esta questão foi criada.** O TEOT 2025 perguntou a porcentagem (42%) a partir do desvio de 1 mm. Esta gêmea inverte a variável do par: dá a porcentagem e pede o desvio, com distratores que são números verdadeiros de outros pontos do capítulo.",

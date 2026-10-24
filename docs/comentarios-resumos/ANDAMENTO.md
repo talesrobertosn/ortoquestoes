@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 1061 |
+| pendente | 1035 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 171 |
+| pendente-fonte | 177 |
 | pendente-inspecao-imagem | 157 |
-| revisada | 883 |
+| revisada | 903 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -36,7 +36,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 25 | 0 | 14 |
 | Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 33 | 0 | 50 |
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 41 | 0 | 82 |
-| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 1 | 0 | 44 |
+| Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 21 | 0 | 24 |
 | Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 52 | 0 | 103 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 1 | 0 | 48 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 0 | 0 | 66 |
