@@ -1,0 +1,469 @@
+{
+ "ombro-cotovelo-0113": {
+  "questaoSha256": "d582691aced878e1e2ca93c02669c336783f9cb850f6ed51e83cfb15d695640e",
+  "comentarioAnteriorSha256": "9a8d0e92dec6f82635d2e5f82015e85113303bbf640949f1102703159d1d73fb",
+  "comentario": {
+   "conceito": "A seta indica a passagem do **espaço quadrangular**, por onde seguem **nervo axilar e artéria circunflexa umeral posterior**, alternativa A. Na vista posterior, o feixe aparece junto à região proximal do úmero; o ponto é identificar o par que acompanha esse trajeto.\n\nO nervo axilar contorna o úmero proximal, segue sob o deltoide e participa da inervação desse músculo e do redondo menor. A circunflexa posterior acompanha o nervo pelo espaço quadrangular e fornece ramos para a região posteromedial da metáfise. Assim, reconhecer o feixe ajuda tanto a orientar a dissecção quanto a entender a irrigação da cabeça (Rockwood, 10ª ed., cap. 36, “De onde vem o sangue” e “O nervo axilar”).\n\n**Circunflexa da escápula não é circunflexa do úmero.** O resumo da escápula descreve a primeira contornando sua borda lateral, abaixo da glenoide, e comunicando-se com o sistema supraescapular. Já a artéria pedida acompanha o axilar em torno do úmero proximal. A proximidade das estruturas na ilustração não permite trocar seus destinos.\n\nOutro par conhecido é **radial e braquial profunda**, no sulco espiral do úmero, descrito no capítulo da diáfise. É uma relação verdadeira, mas pertence a outro percurso, não ao espaço assinalado.",
+   "correta": "**A: nervo axilar e artéria circunflexa posterior do úmero.** São as estruturas que a fonte descreve atravessando juntas o espaço quadrangular. O par conecta risco neural do deltoide e irrigação posteromedial do úmero proximal.",
+   "incorretas": {
+    "B": "**Acerta o nervo e muda a artéria.** A circunflexa da escápula percorre a borda lateral escapular e participa de anastomoses com a supraescapular. A artéria que acompanha o axilar no espaço assinalado é a circunflexa posterior do úmero.",
+    "C": "**Mistura integrantes de dois feixes.** O axilar é o nervo correto, mas a braquial profunda acompanha o radial no sulco espiral da diáfise. Não é a artéria que o resumo coloca ao lado do axilar no espaço quadrangular.",
+    "D": "**É um par real de outra região do braço.** Radial e braquial profunda correm juntos no sulco espiral posterior. A pergunta aponta o espaço quadrangular proximal, cujo par é axilar e circunflexa posterior."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Anatomia aplicada e vias de acesso.",
+    "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular.",
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Irrigação da cabeça, Hertel e osteonecrose",
+     "Anatomia aplicada e vias de acesso"
+    ],
+    "blocos": [
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b",
+     "anatomia-aplicada-e-vias-de-acesso-f121538c"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "62492b977b643a492e716f8aca45731b9016c160c392822dc7a714d4341811ee"
+   },
+   {
+    "resumo": "rockwood10-33-fratura-escapula",
+    "titulo": "Fratura da escápula",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 33 · Scapular Fractures",
+    "secoes": [
+     "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+    ],
+    "blocos": [
+     "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+    ],
+    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+    "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
+   },
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Vias de acesso e os nervos em risco"
+    ],
+    "blocos": [
+     "vias-de-acesso-e-os-nervos-em-risco-187b9899"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "c81922c2374078b73ea58169bbb32314dea58fa5c5ed2f9b1fd5ccb188ac5c5a"
+   }
+  ],
+  "imagensConferidas": [
+   "ombro-cotovelo/ombro-cotovelo-0113-1.jpeg"
+  ]
+ },
+ "ombro-cotovelo-0128": {
+  "questaoSha256": "ad4f0b766d79188cf47ac010853d2b52eb6da279ce833c62539b409359ff2076",
+  "comentarioAnteriorSha256": "5a740dd4a7878766fee106d21049d548b440d8d005504acbc1f498b44abbdaf1",
+  "comentario": {
+   "conceito": "A seta aponta um ramo que contorna a região proximal do úmero: a **artéria circunflexa posterior do úmero**, alternativa D. A ilustração mostra a árvore arterial e sua relação com o osso; não é uma medida de quanto cada vaso contribui para a perfusão.\n\nA circunflexa posterior nasce da axilar e acompanha o nervo axilar pelo **espaço quadrangular**, dando ramos que entram pela face posteromedial da metáfise. O resumo destaca que ela é maior que a anterior e permaneceu preservada com frequência nas arteriografias de fraturas complexas, ajudando a explicar por que a cabeça pode manter irrigação apesar de lesão anterior (Rockwood, 10ª ed., cap. 36, “De onde vem o sangue”).\n\nA circunflexa **anterior** tem outro percurso: corre na frente do colo cirúrgico e dá o ramo ascendente no sulco bicipital, que chega ao osso como artéria arqueada. Por isso, “vaso perto do colo” é uma descrição insuficiente: é preciso diferenciar os ramos e o sentido em que contornam o úmero.\n\nA preservação dessas conexões é relevante na cirurgia. O resumo recomenda evitar dissecção ao redor e por trás da cabeça longa do bíceps, onde passa o ramo ascendente anterior; do lado posteromedial, calcar e dobradiça ajudam a estimar a preservação das conexões vasculares.",
+   "correta": "**D: circunflexa posterior do úmero.** O ramo indicado corresponde ao vaso que contorna a região proximal e acompanha o axilar no espaço quadrangular. Sua contribuição posteromedial é importante para compreender a viabilidade da cabeça.",
+   "incorretas": {
+    "A": "**A identificação exige seguir o ramo apontado.** O critério não é escolher qualquer nome de artéria da região axilar: a seta marca a circunflexa que contorna o úmero proximal. Esse é o trajeto atribuído à circunflexa posterior na fonte, não à opção subescapular.",
+    "B": "**“Do colo” não identifica qual ramo está assinalado.** O resumo distingue a circunflexa anterior, com seu ramo ascendente e artéria arqueada, da posterior, que acompanha o axilar. O nome específico correspondente à seta é o da alternativa D.",
+    "C": "**A profunda do braço pertence ao feixe do radial na diáfise.** O capítulo 37 descreve braquial profunda e radial juntos no sulco espiral. Essa relação é diferente do ramo circunflexo proximal indicado na figura."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose.",
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Irrigação da cabeça, Hertel e osteonecrose"
+    ],
+    "blocos": [
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-65afa84d",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-dd49d1b3",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-40a7cd70",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "1afda1d2655941a9a34ef925675ba38eac56ab32255c53f4288f1a14c858f9eb"
+   },
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Vias de acesso e os nervos em risco"
+    ],
+    "blocos": [
+     "vias-de-acesso-e-os-nervos-em-risco-187b9899"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "c81922c2374078b73ea58169bbb32314dea58fa5c5ed2f9b1fd5ccb188ac5c5a"
+   }
+  ],
+  "imagensConferidas": [
+   "ombro-cotovelo/ombro-cotovelo-0128-1.jpeg"
+  ]
+ },
+ "ombro-cotovelo-0615": {
+  "questaoSha256": "a86259a520a37beaa79223b1af0bfafc56a3c29f37284091ff37166f0020b437",
+  "comentarioAnteriorSha256": "a2a1415a4e6ceb531e46eeb76cfb1a9ed9e75103e5e48b6c2e5778ca406bc42d",
+  "comentario": {
+   "conceito": "A radiografia mostra um traço que **divide o próprio segmento articular da cabeça umeral**. Isso caracteriza uma fratura **head-split**, alternativa D: o problema não se limita a separar a cabeça da diáfise pelo colo.\n\nEssa distinção muda o que precisa ser reconstruído. Num colo cirúrgico, o segmento cefálico pode permanecer inteiro; no head-split, a superfície articular foi partida. O resumo trata as fraturas da superfície articular como categoria específica e dá prioridade ao envolvimento da cabeça no planejamento Mayo/FJD (Rockwood, 10ª ed., cap. 36, “Neer, AO e os padrões de fratura”).\n\n**Não basta contar fragmentos.** É preciso saber se a cabeça é reconstruível, como estão os tubérculos e qual a qualidade óssea. O capítulo coloca cabeça partida entre as indicações clássicas de prótese, mas admite fixação com parafusos e placa no jovem com um único traço. A imagem define o padrão; não informa sozinha idade, viabilidade ou tratamento obrigatório.\n\nNa avaliação complementar, a tomografia ajuda a compreender impacção e cominuição. O objetivo é distinguir uma cabeça partida de uma cabeça apenas inclinada ou afundada, porque são problemas articulares diferentes.",
+   "correta": "**D: fratura com divisão articular (head-split).** O traço separa partes da cabeça articular. É esse envolvimento direto que distingue o padrão de uma fratura apenas do colo ou do tubérculo.",
+   "incorretas": {
+    "A": "**Um tubérculo isolado não divide a superfície articular da cabeça.** O tubérculo maior é o local de inserção do manguito posterossuperior; sua avulsão ou separação precisa ser distinguida do traço cefálico mostrado.",
+    "B": "**Inclinação em valgo e divisão articular são achados diferentes.** No padrão em valgo a cabeça se orienta para cima ou para fora, com impacção e alteração da relação metafisária. Aqui o elemento decisivo é a cabeça cortada pelo traço, e não apenas sua orientação.",
+    "C": "**No colo cirúrgico, o traço separa metáfise e diáfise do segmento cefálico.** Isso não explica uma linha que divide a própria cabeça. “Sem impacção” não elimina essa diferença de localização."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura; Fratura isolada dos tubérculos e fratura-luxação; Radiografias e tomografia."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Neer, AO e os padrões de fratura",
+     "Fratura isolada dos tubérculos e fratura-luxação",
+     "Radiografias e tomografia"
+    ],
+    "blocos": [
+     "neer-ao-e-os-padroes-de-fratura-90d26600",
+     "neer-ao-e-os-padroes-de-fratura-4473222f",
+     "fratura-isolada-dos-tuberculos-e-fratura-luxacao-980c36a8",
+     "radiografias-e-tomografia-c855536c"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "d6c2f842e8f1e0d07b7b5d7c2a6caa9dbbc7437ec39a7dfc54749b24cd3880fe"
+   }
+  ],
+  "imagensConferidas": [
+   "ombro-cotovelo/ombro-cotovelo-0615-1.jpeg"
+  ]
+ },
+ "ombro-cotovelo-0619": {
+  "questaoSha256": "d8f5afb6d392b8af4a3447e1f726bad1cd9e98b43dda4f586a21358cd89b150b",
+  "comentarioAnteriorSha256": "2a84a290eeca4f3aaeb08014b19a11ad7ebe77d9bee4107e9d52b02e557f1236",
+  "comentario": {
+   "conceito": "A dor reaparece depois de uma fase inicial de melhora, e as radiografias mostram **desestruturação e colapso da cabeça umeral**. O conjunto favorece **osteonecrose**, alternativa B, em vez de uma simples fratura que nunca chegou a consolidar.\n\nNa osteonecrose, a perda de viabilidade do segmento cefálico pode levar a esclerose e, depois, colapso da superfície articular. O resumo descreve justamente a sequência de **dor, rigidez e perda de função após um período bom**, com imagens que variam de esclerose em placas a colapso total (Rockwood, 10ª ed., cap. 36, “Quando a necrose aparece”).\n\nA cronologia ajuda, mas não resolve tudo. Infecção pode produzir dor e destruição e deve ser investigada quando houver suspeita, inclusive com punção. Artrose pós-traumática também causa perda funcional, embora o resumo a diferencie pelo colapso menor. Na pseudartrose, o problema central é a persistência de mobilidade e dor no foco, com reabsorção entre fragmentos.\n\n**O tratamento depende das sequelas associadas.** Necrose isolada com tubérculos preservados não é igual a necrose com reabsorção tubercular, viciosa ou pseudartrose. O resumo diferencia hemiartroplastia, total anatômica e reversa conforme cabeça, glenoide e tubérculos, sem escolher uma prótese apenas pela aparência desta figura.",
+   "correta": "**B: osteonecrose.** A combinação de intervalo de melhora, dor tardia e colapso cefálico é a apresentação descrita na fonte. A imagem sustenta essa hipótese, sem excluir a investigação de outros problemas quando o quadro clínico exigir.",
+   "incorretas": {
+    "A": "**Infecção continua sendo um diferencial, não o diagnóstico mais característico do conjunto.** Dor tardia isolada não basta para excluí-la. O resumo orienta punção se houver suspeita; aqui, a sequência clínica e o colapso cefálico favorecem osteonecrose.",
+    "C": "**Pseudartrose é falha de união do foco.** O capítulo destaca persistência de mobilidade, dor e reabsorção na região fraturada. A pergunta enfatiza colapso da cabeça depois de melhora, apontando para perda de viabilidade cefálica.",
+    "D": "**Artrose pós-traumática afeta a articulação, mas não é sinônimo de colapso osteonecrótico.** O resumo cita colapso menor no diferencial de artrose. A desestruturação cefálica com a cronologia apresentada favorece osteonecrose."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Complicações: rigidez, viciosa, pseudartrose e tubérculos."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Irrigação da cabeça, Hertel e osteonecrose",
+     "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+    ],
+    "blocos": [
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+     "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+     "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-e887c316",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-3b5021d6",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-74214e8d"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "5b674708358cf7da9cf50302daa33f6356ed61492cc4f6971e459e7fb0185063"
+   }
+  ],
+  "imagensConferidas": [
+   "ombro-cotovelo/ombro-cotovelo-0619-1.jpeg"
+  ]
+ },
+ "trauma-0181": {
+  "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598",
+  "comentarioAnteriorSha256": "7cc775a03382c5211c51acd4f2dd71f87a7bce7e06a3ee6bda1c06080e0f3e54",
+  "comentario": {
+   "conceito": "As radiografias mostram uma fratura do colo cirúrgico **sem impacção**, associada a fragmento do **tubérculo maior**. Na **AO/OTA clássica**, essa combinação é **11B2**, alternativa B.\n\nO prefixo **11** identifica úmero proximal. A letra separa um padrão extra-articular unifocal (A), extra-articular bifocal (B) e articular (C). Dentro de B, o ponto que decide entre **B1 e B2** é a impacção do colo: B1 é impactado; B2, não impactado, com um tubérculo desviado (Rockwood, 10ª ed., cap. 36, “AO/OTA: o número 11 e as três letras”).\n\n“Articular” aqui não significa apenas fratura perto da articulação. Os grupos C apresentados no resumo envolvem cabeça ou colo anatômico. Não se deve trocar B2 por C apenas porque a fratura é proximal e está desviada.\n\n| Grupo clássico | Padrão do resumo |\n|---|---|\n| 11B1 | Colo cirúrgico impactado e um tubérculo desviado |\n| 11B2 | Colo cirúrgico não impactado e um tubérculo desviado |\n| 11C1 | Colo anatômico pouco desviado |\n| 11C2 | Colo anatômico muito desviado |\n\nA versão de 2018 foi simplificada; esta questão usa os subgrupos clássicos. A classificação organiza o padrão, mas o tratamento ainda exige avaliar osso, paciente e reconstrução.",
+   "correta": "**B: 11B2.** O colo cirúrgico não impactado com um tubérculo desviado é a descrição do grupo. As imagens devem ser lidas pelo nível do traço e pela ausência de impacção, sem medir um desvio não fornecido.",
+   "incorretas": {
+    "A": "**B1 exige impacção.** O tubérculo associado mantém a fratura no grupo bifocal, mas o colo não impactado leva a B2. A diferença não é simplesmente ter mais ou menos fragmentos.",
+    "C": "**C1 muda a localização para o colo anatômico.** No esquema clássico, corresponde a padrão articular pouco desviado. O padrão mostrado é do colo cirúrgico com tubérculo, não essa separação articular.",
+    "D": "**C2 também é articular, com colo anatômico muito desviado.** O grau de desvio não converte por si uma fratura extra-articular do colo cirúrgico em C2. Primeiro é preciso acertar onde passa o traço."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Neer, AO e os padrões de fratura"
+    ],
+    "blocos": [
+     "neer-ao-e-os-padroes-de-fratura-10b3d28f",
+     "neer-ao-e-os-padroes-de-fratura-f472f79e",
+     "neer-ao-e-os-padroes-de-fratura-54eebd91"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "39455daeccc2e776f549e419d45badf2166c6bcd3caffd915f8eeca69dba40b2"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0181-1.jpeg"
+  ]
+ },
+ "trauma-0183": {
+  "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf",
+  "comentarioAnteriorSha256": "b3e567c40623864b2aa12843304303d4727bda0cf9281cc7c1897a123ab87fe6",
+  "comentario": {
+   "conceito": "Na radiografia, um parafuso inferior é dirigido à região **inferomedial da cabeça**, onde se busca suporte do **calcar**. Quando a cortical medial está cominuída, esse apoio é o fator técnico destacado pela questão: **parafuso no calcar**, alternativa D.\n\nA cabeça precisa manter altura e orientação depois de reduzida. Se perde o apoio medial, tende a ceder; a placa lateral e seus parafusos bloqueados não impedem automaticamente esse colapso. O resumo relaciona ausência de suporte medial a perda de redução, perfuração e perda de altura, explicando a importância dos parafusos inferomediais (Rockwood, 10ª ed., cap. 36, “O que faz a placa perder a redução”).\n\n**Mais parafusos não substituem um parafuso bem dirigido.** A montagem precisa combinar redução, placa alinhada, apoio inferior e ancoragem articular. Parafuso comprido demais pode penetrar a articulação; o resumo orienta comprimentos menores que a medida subcondral e radioscopia em vários planos.\n\nQualidade óssea também pesa, sobretudo no idoso. Entretanto, a pergunta procura o elemento da fixação que recompõe o apoio perdido com a cominuição medial. A figura ilustra a montagem, sem permitir deduzir densidade óssea ou medir a distância subcondral do paciente.",
+   "correta": "**D: colocação de parafuso no calcar.** Ele sustenta a região inferomedial da cabeça quando o apoio cortical medial foi perdido. É um recurso dirigido ao mecanismo de colapso, integrado à redução e ao restante da montagem.",
+   "incorretas": {
+    "A": "**Osso ruim aumenta o risco, mas não é o recurso técnico que recompõe o apoio.** O capítulo lista osteoporose entre os fatores de falha. Reconhecê-la orienta reforço e escolha da construção, sem substituir o suporte inferomedial solicitado.",
+    "B": "**Contagem total não informa distribuição do suporte.** Vários parafusos superiores podem deixar a região inferomedial sem apoio. A técnica usa múltiplos parafusos, mas a questão destaca a posição no calcar na presença de cominuição medial.",
+    "C": "**Aumentar comprimento não é uma solução isolada.** Um parafuso longo pode furar a cabeça ou tornar-se intra-articular após colapso. A posição inferomedial e o comprimento seguro precisam coexistir; “mais longo” não equivale a melhor suporte."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Placa bloqueada: o parafuso, o calcar e a técnica."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Placa bloqueada: o parafuso, o calcar e a técnica"
+    ],
+    "blocos": [
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-38a4d747",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-f402d68e"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "854b03d90e1d918e5543d118835b91e15df4b3c582ef0e13e491b423cb824fdc"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0183-1.jpeg"
+  ]
+ },
+ "trauma-0184": {
+  "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa",
+  "comentarioAnteriorSha256": "ce151a094bb9bd47365592b6fecae5f6cd93baaafe05bcea331d333bec054aa2",
+  "comentario": {
+   "conceito": "Nas duas incidências, a cabeça perdeu sua relação de apoio e **colapsou em varo**, enquanto pontas de parafusos ultrapassam o contorno articular. A combinação é **colapso em varo com perfuração condral dos parafusos**, alternativa B.\n\nA placa bloqueada fixa o ângulo entre parafuso e implante. Isso ajuda a montagem, mas cria uma armadilha: se a cabeça afunda ou perde altura, o parafuso **não recua junto com ela**. Sua ponta pode atravessar osso subcondral e cartilagem. O resumo chama essa perfuração de **secundária**; a primária ocorre quando o parafuso já foi colocado comprido demais (Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nA imagem mostra a complicação, mas não é uma sequência temporal da operação. Portanto, não se pode afirmar só por ela que todo parafuso estava adequado inicialmente. O mecanismo de colapso explica como pode surgir penetração tardia; a verificação em vários planos e o suporte medial ajudam a prevenir os diferentes modos de falha.\n\n**Osteonecrose é uma possível causa de colapso, não um sinônimo radiográfico obrigatório.** Chamar esta imagem de necrose sem outros dados troca uma hipótese etiológica pelo achado que está demonstrado: varo e parafusos penetrando a articulação. A penetração merece atenção porque pode lesar a glenoide.",
+   "correta": "**B: colapso em varo e perfuração condral dos parafusos.** São os achados representados. A montagem bloqueada explica por que a perda de altura da cabeça pode deixar pontas intra-articulares.",
+   "incorretas": {
+    "A": "**Acerta o varo, mas substitui o achado dos parafusos por uma causa não comprovada.** Osteonecrose pode produzir colapso; a figura, porém, demonstra penetração e não estabelece sozinha a viabilidade prévia da cabeça.",
+    "C": "**Erra a direção e presume osteonecrose.** A perda de redução está em varo, não em valgo. Além disso, a complicação articular visível envolve as pontas dos parafusos, sem diagnóstico etiológico obrigatório de necrose.",
+    "D": "**Reconhece a perfuração e troca o alinhamento.** As pontas penetrantes estão presentes, mas o colapso mostrado é em varo. Na leitura da falha, direção da deformidade e relação parafuso-articulação devem ser avaliadas separadamente."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Placa bloqueada: o parafuso, o calcar e a técnica; Irrigação da cabeça, Hertel e osteonecrose."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Placa bloqueada: o parafuso, o calcar e a técnica",
+     "Irrigação da cabeça, Hertel e osteonecrose"
+    ],
+    "blocos": [
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+     "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-89a2167f"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "8d0d032b86f0bf17e908a4405d81f52bae05793b2b9af48a9e21fe400a5ab61e"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0184-1.jpeg"
+  ]
+ },
+ "trauma-0678": {
+  "questaoSha256": "34d95d982aace3ebef7b7bc646c17c9d92b0d9f0c18e5fcfd441b5534cad4c04",
+  "comentarioAnteriorSha256": "5399801a117e9649fd57d685cda57648b4b7b51181a531c4392e7843fd65bb94",
+  "comentario": {
+   "conceito": "A paciente passou por uma fase de melhora, mas depois desenvolveu dor intensa; o exame mostra uma alteração **subcondral da cabeça umeral** na região indicada. Essa cronologia, associada ao achado cefálico, favorece **osteonecrose**, alternativa C.\n\nApós a fratura, o segmento articular pode perder parte de suas conexões vasculares. Se a viabilidade não se restabelece, a evolução pode ir de alterações de densidade a **colapso da superfície**, com dor, rigidez e perda de função depois de um período inicialmente bom. É a apresentação descrita no resumo do Rockwood, 10ª ed., cap. 36, “Quando a necrose aparece”.\n\n**O intervalo de melhora tem valor, sem ser prova isolada.** Na pseudartrose, a dor e a mobilidade do foco persistem porque não houve união. Na consolidação viciosa, o osso consolidou em posição alterada e pode limitar o movimento por impacto. A perda tardia da função com alteração subcondral da cabeça favorece um processo de osteonecrose sobre essas duas explicações.\n\nInfecção continua no diagnóstico diferencial de dor pós-fratura. O resumo orienta investigação e punção se houver suspeita; nem a história nem uma única imagem autorizam declarar que infecção é impossível. A questão pede o diagnóstico mais provável, não a exclusão definitiva de todas as outras causas.\n\nO tratamento posterior depende de sintomas, colapso, glenoide e tubérculos. Não se indica uma prótese específica apenas porque a alternativa correta é osteonecrose.",
+   "correta": "**C: osteonecrose.** O padrão de dor tardia depois de melhora e a alteração cefálica indicada são coerentes com a apresentação descrita na fonte. A resposta não depende de inventar um estágio ou uma medida que a imagem não fornece.",
+   "incorretas": {
+    "A": "**Osteomielite é uma hipótese infecciosa e exige investigação própria.** A dor pode aparecer em infecção, mas o resumo destaca para osteonecrose a evolução após um período bom e a alteração da cabeça. Se surgirem elementos de suspeita infecciosa, a avaliação deve prosseguir, sem usar o gabarito para excluí-la.",
+    "B": "**Pseudartrose é falta de união, com foco ainda doloroso e móvel.** O capítulo descreve reabsorção no foco e possível subluxação inferior. O caso aponta para alteração subcondral tardia após boa evolução, favorecendo perda de viabilidade da cabeça.",
+    "D": "**Viciosa significa união em posição alterada.** Pode gerar impacto e limitação, sobretudo quando envolve tubérculos, mas não explica tão bem o novo quadro doloroso com alteração subcondral cefálica após melhora inicial."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Complicações: rigidez, viciosa, pseudartrose e tubérculos."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Irrigação da cabeça, Hertel e osteonecrose",
+     "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+    ],
+    "blocos": [
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+     "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+     "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+     "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "7fa04d9bb6134ea2f3c53402a9379c49219162178a8a5c238f02d38977219c99"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0678-1.jpeg"
+  ]
+ },
+ "trauma-0786": {
+  "questaoSha256": "a61dc72a8e72034ff8f3f4dbdee49a260005e257fc1f00bf1faf2612f4c98b79",
+  "comentarioAnteriorSha256": "cf2bdf163611d7742769966b1e79202df6825b395bd9a7fce3dc973b8e4e70cf",
+  "comentario": {
+   "conceito": "A radiografia e o corte tomográfico mostram **colo cirúrgico fraturado e tubérculo maior separado**, enquanto cabeça e tubérculo menor permanecem como um conjunto. Pela classificação de **Neer**, a resposta é **três partes**, alternativa C.\n\nNeer não conta cada pequeno fragmento da imagem. Ele parte de quatro segmentos: cabeça, tubérculo maior, tubérculo menor e diáfise. Um segmento conta como parte desviada ao atingir **1 cm de translação ou 45 graus de angulação**. Na configuração de três partes com tubérculo maior, há o traço do colo cirúrgico e o desprendimento desse tubérculo (Rockwood, 10ª ed., cap. 36, “Os quatro segmentos de Codman e Neer”).\n\nA cabeça permanece ligada ao tubérculo menor, por onde o subescapular pode girá-la em rotação interna. Isso ajuda a compreender o padrão: o tubérculo que continua preso à cabeça influencia sua orientação, enquanto o maior é um segmento separado.\n\n**Uma medida exata não pode ser fabricada nesta reprodução.** As imagens sustentam a configuração usada pela questão, mas não fornecem escala para quantificar cada translação. A regra de Neer organiza a classificação e não é, sozinha, uma indicação automática de cirurgia.",
+   "correta": "**C: tipo 3, ou três partes.** O colo cirúrgico e o tubérculo maior desviado separam diáfise, tubérculo maior e o conjunto cabeça-tubérculo menor. A resposta conta segmentos, não todos os traços visíveis.",
+   "incorretas": {
+    "A": "**Uma parte permite traços, mas sem segmentos desviados pelos critérios.** A configuração mostrada tem separação do colo e do tubérculo maior, não o padrão pouco desviado agrupado como uma parte.",
+    "B": "**Duas partes não incluem os dois níveis de separação destacados.** Pode haver fratura isolada do colo cirúrgico ou de um tubérculo como duas partes. Aqui, o tubérculo maior é separado além do traço que desconecta a diáfise.",
+    "D": "**Quatro partes exigiria separar também o outro tubérculo da cabeça.** A configuração apresentada mantém cabeça e tubérculo menor como conjunto. Não se deve promover a quatro partes apenas porque a imagem parece complexa."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Neer, AO e os padrões de fratura"
+    ],
+    "blocos": [
+     "neer-ao-e-os-padroes-de-fratura-879552e1",
+     "neer-ao-e-os-padroes-de-fratura-23f72b4b",
+     "neer-ao-e-os-padroes-de-fratura-3d9e75c3",
+     "neer-ao-e-os-padroes-de-fratura-e828e985",
+     "neer-ao-e-os-padroes-de-fratura-c46dc7b7",
+     "neer-ao-e-os-padroes-de-fratura-d055caa9",
+     "neer-ao-e-os-padroes-de-fratura-e75305ee"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "cb0b26a82203869839e189bb8cc28d36b544c5762c10b35c5ca00fd98c62be62"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-0786-1.jpeg"
+  ]
+ },
+ "trauma-1101": {
+  "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541",
+  "comentarioAnteriorSha256": "cafce8d4f71ee32707e00382e9634cde6f57b6608f47eafe6cf8df81fa80dd3c",
+  "comentario": {
+   "conceito": "Os critérios de Hertel avaliam a **extensão metafisária presa à cabeça** e a **dobradiça medial**. A alternativa D reúne esses dois parâmetros no sentido **mais favorável**: contato medial mantido e extensão maior que 8 mm. Ela é a resposta oficial, mas não descreve a combinação de maior risco.\n\nOs preditores independentes de isquemia estudados foram **extensão metafisária de 8 mm ou menos**, **dobradiça medial rompida** e **traço no colo anatômico**. A explicação está nos ramos vasculares posteromediais: uma cabeça que mantém calcar e continuidade medial tem mais chance de preservar essas conexões (Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\n**O enunciado pergunta quais parâmetros os critérios consideram.** Não diz que a resposta deve trazer todos no sentido desfavorável. Essa leitura permite reconhecer D sem ensinar que contato preservado e calcar longo aumentam a isquemia. A radiografia mostra a fratura, mas não fornece aqui uma medida calibrada da extensão metafisária.\n\nCabeça partida faz parte da classificação LEGO, mas não foi um dos três preditores independentes destacados. Além disso, **isquemia intraoperatória não equivale a necrose tardia inevitável**: o acompanhamento teve correlação ruim entre os eventos, possivelmente por revascularização.\n\n> **Na prova:** os parâmetros são calcar e dobradiça; curto e rompida são desfavoráveis. A opção oficial D os apresenta no sentido protetor.",
+   "correta": "**D: manutenção do contato da dobradiça e extensão metafisária maior que 8 mm.** Identifica os dois parâmetros considerados. O sentido é de preservação vascular, não de risco aumentado; os achados desfavoráveis são ruptura e extensão curta.",
+   "incorretas": {
+    "A": "**Mistura um critério de risco verdadeiro com um item da classificação.** Extensão menor que 8 mm é desfavorável, mas head-split não integrou os preditores independentes de isquemia destacados. Falta a dobradiça medial no par.",
+    "B": "**Usa head-split e inverte o sentido da extensão.** Cabeça partida é importante para classificar e planejar tratamento, mas não substitui a dobradiça nos preditores citados; extensão maior que 8 mm é o lado mais favorável.",
+    "C": "**Também nomeia os dois parâmetros, com sentidos mistos.** Contato mantido é favorável e extensão menor que 8 mm é desfavorável. Por isso, se a pergunta for lida apenas como “quais parâmetros”, C também os contém. A preferência por D deve ser entendida como a combinação favorável completa escolhida pela banca, não como se C tratasse de critérios inexistentes."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Neer, AO e os padrões de fratura."
+   ],
+   "conferido": false,
+   "alerta": "D oficial preservada. Ela apresenta os parâmetros no sentido protetor; os preditores de isquemia são extensão de 8 mm ou menos e dobradiça rompida, além do colo anatômico. Como C também nomeia dobradiça e extensão, a redação “consideram” permite ambiguidade. Não ensinar que a manutenção do contato ou extensão maior que 8 mm aumente o risco."
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-36-umero-proximal",
+    "titulo": "Fratura do úmero proximal",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+    "secoes": [
+     "Irrigação da cabeça, Hertel e osteonecrose",
+     "Neer, AO e os padrões de fratura"
+    ],
+    "blocos": [
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+     "neer-ao-e-os-padroes-de-fratura-a63a2d68"
+    ],
+    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+    "trechosSha256": "baf51aa3bab20ca5bd7bae5770c242be9a56f68ff6fbaa84a3b0336eef8de3f2"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1101-1.jpeg"
+  ]
+ }
+}

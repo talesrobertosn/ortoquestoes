@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 861,
+  "pendente": 840,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 206,
-  "pendente-inspecao-imagem": 142,
-  "revisada": 1063
+  "pendente-fonte": 211,
+  "pendente-inspecao-imagem": 128,
+  "revisada": 1093
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -37,10 +37,10 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 21,
+    "pendente": 20,
     "pendente-fonte": 7,
-    "pendente-inspecao-imagem": 5,
-    "revisada": 99
+    "pendente-inspecao-imagem": 2,
+    "revisada": 103
    }
   },
   "rockwood10-34-fratura-clavicula": {
@@ -58,10 +58,10 @@
    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
-    "pendente": 33,
-    "pendente-fonte": 2,
-    "pendente-inspecao-imagem": 13,
-    "revisada": 42
+    "pendente": 25,
+    "pendente-fonte": 3,
+    "pendente-inspecao-imagem": 2,
+    "revisada": 60
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -69,11 +69,11 @@
    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
    "estados": {
     "duplicada": 2,
-    "pendente": 14,
+    "pendente": 1,
     "pendente-anulada": 1,
-    "pendente-fonte": 4,
-    "pendente-inspecao-imagem": 6,
-    "revisada": 25
+    "pendente-fonte": 8,
+    "pendente-inspecao-imagem": 2,
+    "revisada": 38
    }
   },
   "rockwood10-40-cotovelo-cabeca-radio": {
@@ -21619,8 +21619,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21634,7 +21634,62 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d582691aced878e1e2ca93c02669c336783f9cb850f6ed51e83cfb15d695640e"
+   "questaoSha256": "d582691aced878e1e2ca93c02669c336783f9cb850f6ed51e83cfb15d695640e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Anatomia aplicada e vias de acesso"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b",
+       "anatomia-aplicada-e-vias-de-acesso-f121538c"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "62492b977b643a492e716f8aca45731b9016c160c392822dc7a714d4341811ee"
+     },
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
+     },
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-187b9899"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "c81922c2374078b73ea58169bbb32314dea58fa5c5ed2f9b1fd5ccb188ac5c5a"
+     }
+    ],
+    "questaoSha256": "d582691aced878e1e2ca93c02669c336783f9cb850f6ed51e83cfb15d695640e",
+    "comentarioSha256": "c36d21b769cc2c583caef7d05b9821056f970dda0b3e5ec4eed93378ffc3784c"
+   }
   },
   "ombro-cotovelo-0118": {
    "tema": "ombro-cotovelo",
@@ -21736,8 +21791,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21751,7 +21806,37 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "9bb61ff2b3d1f0180f651e483c15be5f23086e642cc955da93c63d21a216a22c"
+   "questaoSha256": "9bb61ff2b3d1f0180f651e483c15be5f23086e642cc955da93c63d21a216a22c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O nervo radial",
+       "Vias de acesso e os nervos em risco",
+       "Placa: técnica, números e resultados"
+      ],
+      "blocos": [
+       "o-nervo-radial-69792673",
+       "vias-de-acesso-e-os-nervos-em-risco-e5eff37e",
+       "vias-de-acesso-e-os-nervos-em-risco-9caef227",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+       "placa-tecnica-numeros-e-resultados-40bc40ff",
+       "placa-tecnica-numeros-e-resultados-7281e01c"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "ee657bd1d417c37984de7d3eb3d0ee18ad8d048639cf4d618d0c32917dd3f237"
+     }
+    ],
+    "questaoSha256": "9bb61ff2b3d1f0180f651e483c15be5f23086e642cc955da93c63d21a216a22c",
+    "comentarioSha256": "0b77d7a687ee747960869ab99cac4be700466efa6bc8c3e963d6da606551767b"
+   }
   },
   "ombro-cotovelo-0128": {
    "tema": "ombro-cotovelo",
@@ -21760,8 +21845,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -21775,7 +21860,49 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "ad4f0b766d79188cf47ac010853d2b52eb6da279ce833c62539b409359ff2076"
+   "questaoSha256": "ad4f0b766d79188cf47ac010853d2b52eb6da279ce833c62539b409359ff2076",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-65afa84d",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-dd49d1b3",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-40a7cd70",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "1afda1d2655941a9a34ef925675ba38eac56ab32255c53f4288f1a14c858f9eb"
+     },
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-187b9899"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "c81922c2374078b73ea58169bbb32314dea58fa5c5ed2f9b1fd5ccb188ac5c5a"
+     }
+    ],
+    "questaoSha256": "ad4f0b766d79188cf47ac010853d2b52eb6da279ce833c62539b409359ff2076",
+    "comentarioSha256": "d97655f6cca0eb12a8dd3887cda42674a9cb8c116fa91f66129a8d122d291cda"
+   }
   },
   "ombro-cotovelo-0134": {
    "tema": "ombro-cotovelo",
@@ -22339,8 +22466,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -22356,7 +22483,33 @@
     "rockwood10-36-umero-proximal",
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "452f681d3d4ecdd323abef62747b6dd83d2a514b226cfcbb8af4759ae787041a"
+   "questaoSha256": "452f681d3d4ecdd323abef62747b6dd83d2a514b226cfcbb8af4759ae787041a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Haste intramedular",
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "haste-intramedular-97e7d24b",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+       "haste-intramedular-9f3a7a30"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "1426d78736268011e2a94e4410ce140d2da0cbbf95ea5465095785f95e882a01"
+     }
+    ],
+    "questaoSha256": "452f681d3d4ecdd323abef62747b6dd83d2a514b226cfcbb8af4759ae787041a",
+    "comentarioSha256": "6115a050098fd01781145e65b528cad0887bcab097753f0328dfdbdc4fd2701b"
+   }
   },
   "ombro-cotovelo-0321": {
    "tema": "ombro-cotovelo",
@@ -23468,7 +23621,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23483,7 +23636,49 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "c8c9cb5b841fdf40e1c447e95039e2c11a109d87713b7f52495f35cdaca82968"
+   "questaoSha256": "c8c9cb5b841fdf40e1c447e95039e2c11a109d87713b7f52495f35cdaca82968",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Anatomia aplicada e vias de acesso"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-dd49d1b3",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b",
+       "anatomia-aplicada-e-vias-de-acesso-f121538c",
+       "anatomia-aplicada-e-vias-de-acesso-e632af2f"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "9dd395d6a7930acc74084dd22dc986972b4f20135acd6879ab2560a355936052"
+     },
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "f9399e89d4315846bfb2f4418327830fc2b4b9695a65823e574cd58c3d4cdcec"
+     }
+    ],
+    "questaoSha256": "c8c9cb5b841fdf40e1c447e95039e2c11a109d87713b7f52495f35cdaca82968",
+    "comentarioSha256": "17dd1678704b09a2f7236f2ac603cf4f9ce2a90f38bc897fa29f6712522863aa"
+   }
   },
   "ombro-cotovelo-0490": {
    "tema": "ombro-cotovelo",
@@ -24121,7 +24316,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -24137,7 +24332,31 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "eca5c60b0fcc9003e987e6bacc342beffa4409cf3c5aef490beb2cf8ec9fdb08"
+   "questaoSha256": "eca5c60b0fcc9003e987e6bacc342beffa4409cf3c5aef490beb2cf8ec9fdb08",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Anatomia aplicada e vias de acesso"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+       "anatomia-aplicada-e-vias-de-acesso-c136f3ee"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "87e3210371d102468439b85f82355d34d3c17c191a5e500f21b2b064511c0145"
+     }
+    ],
+    "questaoSha256": "eca5c60b0fcc9003e987e6bacc342beffa4409cf3c5aef490beb2cf8ec9fdb08",
+    "comentarioSha256": "e78b92fe731d9275fa24b70ac4196307c8178eed3b6dfd77c625c050deab61b5"
+   }
   },
   "ombro-cotovelo-0567": {
    "tema": "ombro-cotovelo",
@@ -25069,8 +25288,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -25085,7 +25304,35 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "a86259a520a37beaa79223b1af0bfafc56a3c29f37284091ff37166f0020b437"
+   "questaoSha256": "a86259a520a37beaa79223b1af0bfafc56a3c29f37284091ff37166f0020b437",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Neer, AO e os padrões de fratura",
+       "Fratura isolada dos tubérculos e fratura-luxação",
+       "Radiografias e tomografia"
+      ],
+      "blocos": [
+       "neer-ao-e-os-padroes-de-fratura-90d26600",
+       "neer-ao-e-os-padroes-de-fratura-4473222f",
+       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-980c36a8",
+       "radiografias-e-tomografia-c855536c"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "d6c2f842e8f1e0d07b7b5d7c2a6caa9dbbc7437ec39a7dfc54749b24cd3880fe"
+     }
+    ],
+    "questaoSha256": "a86259a520a37beaa79223b1af0bfafc56a3c29f37284091ff37166f0020b437",
+    "comentarioSha256": "2202624c65b31bb03d8be74a3813293c94f61df9566ab81b7903740a4c9d460f"
+   }
   },
   "ombro-cotovelo-0616": {
    "tema": "ombro-cotovelo",
@@ -25255,8 +25502,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -25271,7 +25518,37 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d8f5afb6d392b8af4a3447e1f726bad1cd9e98b43dda4f586a21358cd89b150b"
+   "questaoSha256": "d8f5afb6d392b8af4a3447e1f726bad1cd9e98b43dda4f586a21358cd89b150b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-e887c316",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-3b5021d6",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-74214e8d"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "5b674708358cf7da9cf50302daa33f6356ed61492cc4f6971e459e7fb0185063"
+     }
+    ],
+    "questaoSha256": "d8f5afb6d392b8af4a3447e1f726bad1cd9e98b43dda4f586a21358cd89b150b",
+    "comentarioSha256": "9749330452e4481bc24aba70bcf022fe4591b4e00227a3ca1c5263c830831b4a"
+   }
   },
   "ombro-cotovelo-0620": {
    "tema": "ombro-cotovelo",
@@ -45763,8 +46040,8 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado pergunta o nervo mais acometido na fratura do terço distal do úmero no adulto, com A (ulnar) oficial. O corpo independente do resumo 37 trata da diáfise e descreve predominância radial; não fundamenta a frequência de ulnar nas fraturas distais articulares/supracondilianas nem a comparação com interósseos anterior e posterior. Falta fonte própria de úmero distal. Não transportar a associação radial da diáfise nem usar o bloco contextual como prova do gabarito.",
    "temComentario": true,
    "citacoes": [
     {
@@ -45778,7 +46055,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "ee7a3881a1795bdd31e72dbbd644f977412f870bbcbe1a06e62bcd9f641579c1"
+   "questaoSha256": "ee7a3881a1795bdd31e72dbbd644f977412f870bbcbe1a06e62bcd9f641579c1",
+   "pendencia": "O enunciado pergunta o nervo mais acometido na fratura do terço distal do úmero no adulto, com A (ulnar) oficial. O corpo independente do resumo 37 trata da diáfise e descreve predominância radial; não fundamenta a frequência de ulnar nas fraturas distais articulares/supracondilianas nem a comparação com interósseos anterior e posterior. Falta fonte própria de úmero distal. Não transportar a associação radial da diáfise nem usar o bloco contextual como prova do gabarito."
   },
   "trauma-0110": {
    "tema": "trauma",
@@ -47908,8 +48186,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -47923,7 +48201,32 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598"
+   "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Neer, AO e os padrões de fratura"
+      ],
+      "blocos": [
+       "neer-ao-e-os-padroes-de-fratura-10b3d28f",
+       "neer-ao-e-os-padroes-de-fratura-f472f79e",
+       "neer-ao-e-os-padroes-de-fratura-54eebd91"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "39455daeccc2e776f549e419d45badf2166c6bcd3caffd915f8eeca69dba40b2"
+     }
+    ],
+    "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598",
+    "comentarioSha256": "4326af9d699408c1183a44451d469a5025971ccb6da4a39654f66dadbec83531"
+   }
   },
   "trauma-0183": {
    "tema": "trauma",
@@ -47932,8 +48235,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -47947,7 +48250,34 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf"
+   "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Placa bloqueada: o parafuso, o calcar e a técnica"
+      ],
+      "blocos": [
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-38a4d747",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-f402d68e"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "854b03d90e1d918e5543d118835b91e15df4b3c582ef0e13e491b423cb824fdc"
+     }
+    ],
+    "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf",
+    "comentarioSha256": "8512c7912157ab9da271674252db7fc3ccde96ce8c63d7167d407843d4e8e2d6"
+   }
   },
   "trauma-0184": {
    "tema": "trauma",
@@ -47956,8 +48286,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -47971,7 +48301,36 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa"
+   "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Placa bloqueada: o parafuso, o calcar e a técnica",
+       "Irrigação da cabeça, Hertel e osteonecrose"
+      ],
+      "blocos": [
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-89a2167f"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "8d0d032b86f0bf17e908a4405d81f52bae05793b2b9af48a9e21fe400a5ab61e"
+     }
+    ],
+    "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa",
+    "comentarioSha256": "e76d33a4fa71f23e2f3903336c63930899c46a8a72ef836429bd74a3e3b2257f"
+   }
   },
   "trauma-0185": {
    "tema": "trauma",
@@ -56317,8 +56676,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -56332,7 +56691,35 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "34d95d982aace3ebef7b7bc646c17c9d92b0d9f0c18e5fcfd441b5534cad4c04"
+   "questaoSha256": "34d95d982aace3ebef7b7bc646c17c9d92b0d9f0c18e5fcfd441b5534cad4c04",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "7fa04d9bb6134ea2f3c53402a9379c49219162178a8a5c238f02d38977219c99"
+     }
+    ],
+    "questaoSha256": "34d95d982aace3ebef7b7bc646c17c9d92b0d9f0c18e5fcfd441b5534cad4c04",
+    "comentarioSha256": "36bcb398977d569725cb67a199657959bb066e03679bef10430e80a3ecbb1f1d"
+   }
   },
   "trauma-0679": {
    "tema": "trauma",
@@ -56482,7 +56869,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -56497,7 +56884,38 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "04db8c52a01651c64b8fbe3f4d798b010dd999facb5a4934b79c30735b912266"
+   "questaoSha256": "04db8c52a01651c64b8fbe3f4d798b010dd999facb5a4934b79c30735b912266",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Fratura isolada dos tubérculos e fratura-luxação",
+       "Neer, AO e os padrões de fratura",
+       "Anatomia aplicada e vias de acesso"
+      ],
+      "blocos": [
+       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-d4a73da9",
+       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-4139e856",
+       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-ac7d0cf6",
+       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-ec60b9bf",
+       "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+       "anatomia-aplicada-e-vias-de-acesso-c136f3ee",
+       "anatomia-aplicada-e-vias-de-acesso-f23bbbb5"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "6b36cc5b211fada2d29f8efaa9ef27cb661c60c2ef2df8f70d5e6d979f86cf85"
+     }
+    ],
+    "questaoSha256": "04db8c52a01651c64b8fbe3f4d798b010dd999facb5a4934b79c30735b912266",
+    "comentarioSha256": "424c5ed3f05caa392f0101e27f0434cc4a5192919a19a9b514fdd3ad9c8f6027"
+   }
   },
   "trauma-0687": {
    "tema": "trauma",
@@ -57553,7 +57971,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57568,7 +57986,30 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "7deae54905de47d0f0f802042e39a707040101dbc62e49c886650bfb6a5e6328"
+   "questaoSha256": "7deae54905de47d0f0f802042e39a707040101dbc62e49c886650bfb6a5e6328",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+      ],
+      "blocos": [
+       "lesoes-associadas-nervos-arteria-manguito-e-outr-2b032e13"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "49a20b9b6bfe862a6d116949c6c56d49c5a854177c0c9f81bd7dbea5f2337a1f"
+     }
+    ],
+    "questaoSha256": "7deae54905de47d0f0f802042e39a707040101dbc62e49c886650bfb6a5e6328",
+    "comentarioSha256": "ea25d8064e73325afdfb10273689f76e9670c8b3ddd73ad8f5e2a760c90dd422"
+   }
   },
   "trauma-0722": {
    "tema": "trauma",
@@ -59074,8 +59515,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -59089,7 +59530,36 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "a61dc72a8e72034ff8f3f4dbdee49a260005e257fc1f00bf1faf2612f4c98b79"
+   "questaoSha256": "a61dc72a8e72034ff8f3f4dbdee49a260005e257fc1f00bf1faf2612f4c98b79",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Neer, AO e os padrões de fratura"
+      ],
+      "blocos": [
+       "neer-ao-e-os-padroes-de-fratura-879552e1",
+       "neer-ao-e-os-padroes-de-fratura-23f72b4b",
+       "neer-ao-e-os-padroes-de-fratura-3d9e75c3",
+       "neer-ao-e-os-padroes-de-fratura-e828e985",
+       "neer-ao-e-os-padroes-de-fratura-c46dc7b7",
+       "neer-ao-e-os-padroes-de-fratura-d055caa9",
+       "neer-ao-e-os-padroes-de-fratura-e75305ee"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "cb0b26a82203869839e189bb8cc28d36b544c5762c10b35c5ca00fd98c62be62"
+     }
+    ],
+    "questaoSha256": "a61dc72a8e72034ff8f3f4dbdee49a260005e257fc1f00bf1faf2612f4c98b79",
+    "comentarioSha256": "917f56e45b9f32605073c3b71947afdc9ecf2b8d6f1ffefde2734a6da51c7d87"
+   }
   },
   "trauma-0787": {
    "tema": "trauma",
@@ -59098,8 +59568,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -59113,7 +59583,35 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "50ab053ff55d1cd82b2d8f7e290129b185a4aae42ee693191f9c44fac1ecbd18"
+   "questaoSha256": "50ab053ff55d1cd82b2d8f7e290129b185a4aae42ee693191f9c44fac1ecbd18",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco",
+       "Haste intramedular"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-187b9899",
+       "haste-intramedular-1a22f0c0",
+       "haste-intramedular-028a8d68",
+       "haste-intramedular-f1d487fa",
+       "haste-intramedular-97e7d24b"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "dd3e0b5e01eb005337d482f9febb2a88d1e46de39cfe0e9e82b2864e98a86c2a"
+     }
+    ],
+    "questaoSha256": "50ab053ff55d1cd82b2d8f7e290129b185a4aae42ee693191f9c44fac1ecbd18",
+    "comentarioSha256": "efc1c62ca144f13ecb3eaa57a23000587ceb19bbd56fdca8c6182b67a1e20d45"
+   }
   },
   "trauma-0788": {
    "tema": "trauma",
@@ -63007,7 +63505,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -63022,7 +63520,37 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "1287e6e5d7dd4d5386d2aece65f6f80e3af3fabae8360c5eecb0da93a534c76e"
+   "questaoSha256": "1287e6e5d7dd4d5386d2aece65f6f80e3af3fabae8360c5eecb0da93a534c76e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Fixação percutânea, fixador externo e banda de tensão"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-947a14e4",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+       "fixacao-percutanea-fixador-externo-e-banda-de-te-abb4b062"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "df3de0fe9d393320401cb0ae071c5119f56c45bc737664e8b3581d4c56aa99b9"
+     }
+    ],
+    "questaoSha256": "1287e6e5d7dd4d5386d2aece65f6f80e3af3fabae8360c5eecb0da93a534c76e",
+    "comentarioSha256": "79911f560195c97810f921ea03e9381a80c742ebc3b85ad1f6afd08adee7fee0"
+   }
   },
   "trauma-0944": {
    "tema": "trauma",
@@ -67464,8 +67992,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -67479,7 +68007,37 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541"
+   "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Neer, AO e os padrões de fratura"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+       "neer-ao-e-os-padroes-de-fratura-a63a2d68"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "baf51aa3bab20ca5bd7bae5770c242be9a56f68ff6fbaa84a3b0336eef8de3f2"
+     }
+    ],
+    "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541",
+    "comentarioSha256": "d7a311d8524ece2337f906e5c8ba39bf0a1d647a93e41a70eeadfee70643512c"
+   }
   },
   "trauma-1102": {
    "tema": "trauma",
@@ -68619,14 +69177,15 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "É necessário demonstrar qual manobra produz pré-tensionamento radial dos pinos do fixador externo e comparar pré-furo menor, pinos autoperfurantes, diâmetro >30% da largura óssea e convergência. O corpo do resumo 37 ensina colocação aberta e proteção neural, mas não define esse pré-tensionamento. B bibliográfica/antiga não equivale a gabarito oficial ou prova de cobertura; falta fonte de biomecânica dos pinos.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "0f15b6e4faa8db6cdb2e0a567e818b7e349091c9f86cc6bba8a549cb1abc45a5"
+   "questaoSha256": "0f15b6e4faa8db6cdb2e0a567e818b7e349091c9f86cc6bba8a549cb1abc45a5",
+   "pendencia": "É necessário demonstrar qual manobra produz pré-tensionamento radial dos pinos do fixador externo e comparar pré-furo menor, pinos autoperfurantes, diâmetro >30% da largura óssea e convergência. O corpo do resumo 37 ensina colocação aberta e proteção neural, mas não define esse pré-tensionamento. B bibliográfica/antiga não equivale a gabarito oficial ou prova de cobertura; falta fonte de biomecânica dos pinos."
   },
   "trauma-1152": {
    "tema": "trauma",
@@ -68861,8 +69420,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A afirmação de Certo/Errado combina exposição mais direta do radial pela via posterior com menor risco de paralisia intraoperatória. O resumo 37 descreve a exposição no sulco espiral, mas não estabelece a redução comparativa de paralisia posterior versus a outra via; a comparação lateral/posterior menciona complicações gerais. Falta o resultado específico sobre paralisia e o comparador. A provável A antiga permanece sem novo endosso e sem revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68876,7 +69435,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "132482f4af014385bb6770e28aeeb178c64aa1d539c26ad3f845917d0e297d06"
+   "questaoSha256": "132482f4af014385bb6770e28aeeb178c64aa1d539c26ad3f845917d0e297d06",
+   "pendencia": "A afirmação de Certo/Errado combina exposição mais direta do radial pela via posterior com menor risco de paralisia intraoperatória. O resumo 37 descreve a exposição no sulco espiral, mas não estabelece a redução comparativa de paralisia posterior versus a outra via; a comparação lateral/posterior menciona complicações gerais. Falta o resultado específico sobre paralisia e o comparador. A provável A antiga permanece sem novo endosso e sem revisão concluída."
   },
   "trauma-1161": {
    "tema": "trauma",
@@ -68885,8 +69445,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "É necessário conferir a afirmação conjunta: tolerância de 30 graus de desvio angular, 2–3 cm de encurtamento e 15 graus de rotação, com mínimo comprometimento funcional. O resumo 37 aceita 15–20 graus em qualquer direção e cita 15 graus de varo em Sarmiento; não sustenta os 30 graus genéricos e explicita que o limite clássico não aparece no capítulo. Falta a fonte original e a direção angular para reconciliar a provável A antiga sem fabricar resposta oficial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68900,7 +69460,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "42f63f45fcf2d625998a19162deb9f71d4c40dc8c62bf0e1cd5374f74932b00a"
+   "questaoSha256": "42f63f45fcf2d625998a19162deb9f71d4c40dc8c62bf0e1cd5374f74932b00a",
+   "pendencia": "É necessário conferir a afirmação conjunta: tolerância de 30 graus de desvio angular, 2–3 cm de encurtamento e 15 graus de rotação, com mínimo comprometimento funcional. O resumo 37 aceita 15–20 graus em qualquer direção e cita 15 graus de varo em Sarmiento; não sustenta os 30 graus genéricos e explicita que o limite clássico não aparece no capítulo. Falta a fonte original e a direção angular para reconciliar a provável A antiga sem fabricar resposta oficial."
   },
   "trauma-1162": {
    "tema": "trauma",
@@ -69256,7 +69817,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69271,7 +69832,37 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "ae8edf71819716a6b463bb20e2fba5c9f5b4d771ec94f7c89ecd77e6e6339a50"
+   "questaoSha256": "ae8edf71819716a6b463bb20e2fba5c9f5b4d771ec94f7c89ecd77e6e6339a50",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Neer, AO e os padrões de fratura",
+       "Placa bloqueada: o parafuso, o calcar e a técnica",
+       "Quando operar: padrão, desvio e o ProFHER",
+       "Artroplastia: hemiartroplastia e reversa"
+      ],
+      "blocos": [
+       "neer-ao-e-os-padroes-de-fratura-23f72b4b",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-b0611b94",
+       "quando-operar-padrao-desvio-e-o-profher-e2ac6522",
+       "quando-operar-padrao-desvio-e-o-profher-1c41a47b",
+       "artroplastia-hemiartroplastia-e-reversa-d059acac"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "5c0448f3696f97f0cad9ce85227c103dda4eee9b667a7bc177ed151b023c33ef"
+     }
+    ],
+    "questaoSha256": "ae8edf71819716a6b463bb20e2fba5c9f5b4d771ec94f7c89ecd77e6e6339a50",
+    "comentarioSha256": "7dfbdbf7c6298d63f926efddbbe0b31ba20d301c044f19d6765bd769fe1cbc9e"
+   }
   },
   "trauma-1178": {
    "tema": "trauma",
@@ -70760,8 +71351,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado compara o ProFHER por escore de Oxford aos 2 e 5 anos e por custo cirúrgico maior ou menor. O corpo do resumo 36 sustenta ausência de diferença relevante e limita a população, mas não informa o resultado econômico necessário para distinguir C de D. O comentário antigo e a origem no capítulo 10 não são fonte consultada; falta a análise econômica do estudo ou o capítulo correspondente. C oficial preservada, sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70775,7 +71366,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "46d71ea3b3b22ae673371d6349c8c3fcc2689ea8117ac12b1fafbc5e39d8edfb"
+   "questaoSha256": "46d71ea3b3b22ae673371d6349c8c3fcc2689ea8117ac12b1fafbc5e39d8edfb",
+   "pendencia": "O enunciado compara o ProFHER por escore de Oxford aos 2 e 5 anos e por custo cirúrgico maior ou menor. O corpo do resumo 36 sustenta ausência de diferença relevante e limita a população, mas não informa o resultado econômico necessário para distinguir C de D. O comentário antigo e a origem no capítulo 10 não são fonte consultada; falta a análise econômica do estudo ou o capítulo correspondente. C oficial preservada, sem novo baseResumo."
   },
   "trauma-1228": {
    "tema": "trauma",
@@ -72183,7 +72775,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72198,7 +72790,33 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "f9ba8d24aab825d517dd773756302e02a345b0283872eacf4354cb7d4ac62d78"
+   "questaoSha256": "f9ba8d24aab825d517dd773756302e02a345b0283872eacf4354cb7d4ac62d78",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Lesões associadas: nervos, artéria, manguito e outras fraturas",
+       "Anatomia aplicada e vias de acesso"
+      ],
+      "blocos": [
+       "lesoes-associadas-nervos-arteria-manguito-e-outr-01451d2b",
+       "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5",
+       "anatomia-aplicada-e-vias-de-acesso-f121538c"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "1c7ab9b610329b727004629434f8aa4d20d88c1bda7517629ac45020be88ef6b"
+     }
+    ],
+    "questaoSha256": "f9ba8d24aab825d517dd773756302e02a345b0283872eacf4354cb7d4ac62d78",
+    "comentarioSha256": "e89cb424c7770d32dc075c1fb8d73d892c9d9b66a4890aff3ac912ee61ad5035"
+   }
   },
   "trauma-1295": {
    "tema": "trauma",
@@ -75978,8 +76596,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -75993,7 +76611,33 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "c9bffc302417bf7b554c675b8eb639b833eaffd171066ce00e26c8b0d6dfe506"
+   "questaoSha256": "c9bffc302417bf7b554c675b8eb639b833eaffd171066ce00e26c8b0d6dfe506",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "O nervo radial"
+      ],
+      "blocos": [
+       "o-nervo-radial-01d076e8",
+       "o-nervo-radial-69792673",
+       "o-nervo-radial-c7126417",
+       "o-nervo-radial-860854a5"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "8c80e561eee0e855cc1eb3483e570e3766be5e5eb49218e0273cae6cd4901ec2"
+     }
+    ],
+    "questaoSha256": "c9bffc302417bf7b554c675b8eb639b833eaffd171066ce00e26c8b0d6dfe506",
+    "comentarioSha256": "8397b914f928534c1b4c3ded3ae2976933041fda02115ddb9716b7fc637fca51"
+   }
   },
   "trauma-1372": {
    "tema": "trauma",
@@ -76167,7 +76811,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76182,7 +76826,36 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "6e6d5bd4eabb71c7092a48020723401c7a4f8f8904dbb667735c22bf89ea920e"
+   "questaoSha256": "6e6d5bd4eabb71c7092a48020723401c7a4f8f8904dbb667735c22bf89ea920e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa minimamente invasiva (MIPO)",
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "placa-minimamente-invasiva-mipo-260bfaa0",
+       "placa-minimamente-invasiva-mipo-18908699",
+       "placa-minimamente-invasiva-mipo-c66f8cf8",
+       "placa-minimamente-invasiva-mipo-91e6df51",
+       "placa-minimamente-invasiva-mipo-7bf9314d",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "ab4c35630c4fd1c8142218099abf2b06ee757b552e80300f0b731e25c9ffec84"
+     }
+    ],
+    "questaoSha256": "6e6d5bd4eabb71c7092a48020723401c7a4f8f8904dbb667735c22bf89ea920e",
+    "comentarioSha256": "7bbf6f2dbb784083efaf78dede488e686821893cd54fd13eb76ce6707a973575"
+   }
   },
   "trauma-1376": {
    "tema": "trauma",
@@ -76191,7 +76864,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76206,7 +76879,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "0a837ce3d68b88ab9434c67d4cdeb68c4c2fbba5f8e512a8c8f7dc80e3e2bb76"
+   "questaoSha256": "0a837ce3d68b88ab9434c67d4cdeb68c4c2fbba5f8e512a8c8f7dc80e3e2bb76",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco",
+       "Placa minimamente invasiva (MIPO)"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-e5eff37e",
+       "vias-de-acesso-e-os-nervos-em-risco-9caef227",
+       "placa-minimamente-invasiva-mipo-18908699",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "9e75b9ffa62e239e0b5fe73d9bbf69bb9f938752d2a2c1dcf14f26048304ab0e"
+     }
+    ],
+    "questaoSha256": "0a837ce3d68b88ab9434c67d4cdeb68c4c2fbba5f8e512a8c8f7dc80e3e2bb76",
+    "comentarioSha256": "062c8a6e1e3b88af231c9995925f4af0d0986bf087f602476b8a518e0ecd9f41"
+   }
   },
   "trauma-1377": {
    "tema": "trauma",
@@ -76265,7 +76965,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76287,7 +76987,33 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "6451b72f9d2d0af249c5bc27aea3177a1d29de606bc4e98886ecc6fdd61ef481"
+   "questaoSha256": "6451b72f9d2d0af249c5bc27aea3177a1d29de606bc4e98886ecc6fdd61ef481",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa: técnica, números e resultados"
+      ],
+      "blocos": [
+       "placa-tecnica-numeros-e-resultados-e1956d15",
+       "placa-tecnica-numeros-e-resultados-541bf5d2",
+       "placa-tecnica-numeros-e-resultados-7281e01c",
+       "placa-tecnica-numeros-e-resultados-40bc40ff"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "4026cc8a4d9275f47a843f84f1eb21511ca3ace067f891481e6c405de0e14750"
+     }
+    ],
+    "questaoSha256": "6451b72f9d2d0af249c5bc27aea3177a1d29de606bc4e98886ecc6fdd61ef481",
+    "comentarioSha256": "84b45a3040daf1e6d0c91936a0164e959b9885188f4a807e9b65f5f97f5cc15f"
+   }
   },
   "trauma-1379": {
    "tema": "trauma",
@@ -76296,7 +77022,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76311,7 +77037,33 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "5aaa7b309e961e266622cf62a177d77d18ecae5dad7c855b9808eb7559d04773"
+   "questaoSha256": "5aaa7b309e961e266622cf62a177d77d18ecae5dad7c855b9808eb7559d04773",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Placa: técnica, números e resultados"
+      ],
+      "blocos": [
+       "placa-tecnica-numeros-e-resultados-ba6923d9",
+       "placa-tecnica-numeros-e-resultados-94596767",
+       "placa-tecnica-numeros-e-resultados-7281e01c",
+       "placa-tecnica-numeros-e-resultados-40bc40ff"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "a85c223c57ea834957743b6fd8c31999f54c23686a47e8d9ab16e0a50fbbee81"
+     }
+    ],
+    "questaoSha256": "5aaa7b309e961e266622cf62a177d77d18ecae5dad7c855b9808eb7559d04773",
+    "comentarioSha256": "b01f34c2b4c0ff6152b0fb829ddb294e2f76f5dd55c53fb34701b2ca646f7730"
+   }
   },
   "trauma-1380": {
    "tema": "trauma",
@@ -76320,7 +77072,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76342,7 +77094,32 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "64aa9a299e20396d280cd2c2b2da1a0b020a1c956af2efba39af8f2fcfc4561c"
+   "questaoSha256": "64aa9a299e20396d280cd2c2b2da1a0b020a1c956af2efba39af8f2fcfc4561c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Haste intramedular"
+      ],
+      "blocos": [
+       "haste-intramedular-97e7d24b",
+       "haste-intramedular-9f3a7a30",
+       "haste-intramedular-1a22f0c0"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "05211fdb2f7f653608c6619799115c07422ed53626be1b91de7f9de0c6ec9e39"
+     }
+    ],
+    "questaoSha256": "64aa9a299e20396d280cd2c2b2da1a0b020a1c956af2efba39af8f2fcfc4561c",
+    "comentarioSha256": "9b67b7cd4d224245caa27e6f9264a79dba3274d9b5c7e7358d6ccba5240fc27d"
+   }
   },
   "trauma-1381": {
    "tema": "trauma",
@@ -76351,7 +77128,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76373,7 +77150,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "36cc2e1b1375fe9b4fded868acb529ce9ae239b792350c0c87c4d3bcc71e91fc"
+   "questaoSha256": "36cc2e1b1375fe9b4fded868acb529ce9ae239b792350c0c87c4d3bcc71e91fc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco",
+       "Haste intramedular"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+       "vias-de-acesso-e-os-nervos-em-risco-b2a5306b",
+       "haste-intramedular-97e7d24b",
+       "haste-intramedular-a17be01e"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "20de56e36c5c593ec85adbc2231b5410b6eaf4019540bdfd99f5ba9f935dc776"
+     }
+    ],
+    "questaoSha256": "36cc2e1b1375fe9b4fded868acb529ce9ae239b792350c0c87c4d3bcc71e91fc",
+    "comentarioSha256": "aabaca364df1ec896f8c01d8f5adf1e48b8a6c4d90bac810a402692bd887666c"
+   }
   },
   "trauma-1382": {
    "tema": "trauma",
@@ -76382,7 +77186,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76397,7 +77201,34 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "8c63c5f0a0cbf11047e0a70248909217e809afad16a33055d5b7f931a48e94f6"
+   "questaoSha256": "8c63c5f0a0cbf11047e0a70248909217e809afad16a33055d5b7f931a48e94f6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco",
+       "Haste intramedular"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-187b9899",
+       "haste-intramedular-b253fd02",
+       "haste-intramedular-da0f4f6b",
+       "haste-intramedular-c21af717"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "361c3c1d488db0a77e2c3674d5e0b7f51b472e84c866acbe38132bced1d6129a"
+     }
+    ],
+    "questaoSha256": "8c63c5f0a0cbf11047e0a70248909217e809afad16a33055d5b7f931a48e94f6",
+    "comentarioSha256": "b200f8946260ddabb0416335510a5ebdc1b3ac15740283364474194fb1022de6"
+   }
   },
   "trauma-1383": {
    "tema": "trauma",
@@ -76406,7 +77237,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76421,7 +77252,38 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "b33a4bd06c8fc92313d857bda2e81c27bce895a30cf7096bd317df53922e4673"
+   "questaoSha256": "b33a4bd06c8fc92313d857bda2e81c27bce895a30cf7096bd317df53922e4673",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Pseudartrose",
+       "Situações especiais"
+      ],
+      "blocos": [
+       "pseudartrose-a02ba06f",
+       "pseudartrose-6427266b",
+       "pseudartrose-9719258c",
+       "pseudartrose-c68d4d26",
+       "pseudartrose-fc31c240",
+       "pseudartrose-b3011935",
+       "pseudartrose-6be5e28b",
+       "situacoes-especiais-ed4bfc68"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "5208ce39a9ae1cc2fd82b55fb664db7296e3fd1db20a41d911b42a91212da051"
+     }
+    ],
+    "questaoSha256": "b33a4bd06c8fc92313d857bda2e81c27bce895a30cf7096bd317df53922e4673",
+    "comentarioSha256": "e1ae362ca35340d6ce2be2367da2018eba1122dda4d09c9b26738728529c937f"
+   }
   },
   "trauma-1384": {
    "tema": "trauma",
@@ -76528,7 +77390,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76543,7 +77405,31 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "d62efe4d08df064957f5bd6d9e75c4701cdbdab4cb6f99adf717bfdfb882302d"
+   "questaoSha256": "d62efe4d08df064957f5bd6d9e75c4701cdbdab4cb6f99adf717bfdfb882302d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Situações especiais"
+      ],
+      "blocos": [
+       "situacoes-especiais-bbdbf206",
+       "situacoes-especiais-d2a2a16f"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "ebb679335e894bd9503774120fc25eff9d8bb47629d3c0ec4dfdf48fa8710755"
+     }
+    ],
+    "questaoSha256": "d62efe4d08df064957f5bd6d9e75c4701cdbdab4cb6f99adf717bfdfb882302d",
+    "comentarioSha256": "ce75abee17c733aa42583409065686f5880a9a588850b230abf1106e3ff992e7"
+   }
   },
   "trauma-1407": {
    "tema": "trauma",

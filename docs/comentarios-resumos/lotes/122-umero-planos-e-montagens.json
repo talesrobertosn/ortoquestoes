@@ -1,0 +1,392 @@
+{
+ "trauma-1375": {
+  "questaoSha256": "6e6d5bd4eabb71c7092a48020723401c7a4f8f8904dbb667735c22bf89ea920e",
+  "comentarioAnteriorSha256": "0aae3c048bb6c1403ff80f0ff75f2971bcf44652281de98f3bc2aa12893fcd6a",
+  "comentario": {
+   "conceito": "Na janela distal da placa minimamente invasiva anterior, o nervo que precisa ser identificado é o **musculocutâneo**, alternativa D. A incisão pequena não elimina o risco: ela pode justamente esconder uma estrutura que atravessa o campo.\n\nA janela é aberta junto à borda lateral do bíceps, perto do cotovelo. Ao encontrar o intervalo entre bíceps e braquial, identifica-se o musculocutâneo; a divisão longitudinal central do braquial permite afastá-lo **com a metade medial**. A metade lateral é mantida como proteção do radial. Essa anatomia explica por que o resumo recomenda **supinação completa do antebraço e exposição suficiente para ver o nervo**, em vez de insistir numa janela mínima a qualquer custo (Rockwood, 10ª ed., cap. 37, “A técnica anterior e o musculocutâneo”).\n\n**O radial continua em risco.** A placa passa por um túnel extraperiosteal e os parafusos podem ultrapassar a cortical oposta; logo, reconhecer o musculocutâneo na janela não torna segura toda a operação. O resumo relata proximidade importante do radial ao implante e recomenda evitar afastadores pontiagudos e trajetos perigosos de broca e parafusos.\n\n> **Na prova:** janela distal anterior: identificar o musculocutâneo, levá-lo com a metade medial do braquial e preservar a proteção lateral do radial.",
+   "correta": "**D: musculocutâneo.** Ele é identificado entre bíceps e braquial na janela distal. A supinação e uma abertura suficiente ajudam a protegê-lo durante a divisão muscular e a passagem do implante.",
+   "incorretas": {
+    "A": "**O ulnar tem outro trajeto.** Ele passa ao compartimento posterior pela arcada de Struthers e segue para o túnel cubital. Exige atenção em acessos mediais e a pinos que atravessam demais, mas não é o nervo nomeado para a janela anterior entre bíceps e braquial.",
+    "B": "**É um risco real da montagem, mas não a identificação solicitada.** A metade lateral do braquial protege o radial; placa e parafusos continuam próximos dele. Não se deve trocar o nervo encontrado na janela pelo nervo frequentemente lesado na diáfise.",
+    "C": "**Está mais medial, junto à artéria braquial.** O musculocutâneo cruza longitudinalmente a região distal, lateral a esse conjunto. Proteger o mediano também é necessário em trajetos mediais, mas ele não substitui o musculocutâneo neste plano."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa minimamente invasiva (MIPO); Vias de acesso e os nervos em risco."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Placa minimamente invasiva (MIPO)",
+     "Vias de acesso e os nervos em risco"
+    ],
+    "blocos": [
+     "placa-minimamente-invasiva-mipo-260bfaa0",
+     "placa-minimamente-invasiva-mipo-18908699",
+     "placa-minimamente-invasiva-mipo-c66f8cf8",
+     "placa-minimamente-invasiva-mipo-91e6df51",
+     "placa-minimamente-invasiva-mipo-7bf9314d",
+     "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "ab4c35630c4fd1c8142218099abf2b06ee757b552e80300f0b731e25c9ffec84"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1376": {
+  "questaoSha256": "0a837ce3d68b88ab9434c67d4cdeb68c4c2fbba5f8e512a8c8f7dc80e3e2bb76",
+  "comentarioAnteriorSha256": "092cb1d7ce9f259cd64140a6712e594242ade4e7c146f3280e1f786277478c6b",
+  "comentario": {
+   "conceito": "Ao dividir o braquial no acesso anterolateral, o cirurgião procura preservar dois territórios: **radial na metade lateral e musculocutâneo na medial**, alternativa C. A ordem dos nervos segue a ordem das metades pedida no enunciado.\n\nDepois de afastar o bíceps medialmente, aparece o braquial cobrindo o osso. Ele é dividido longitudinalmente na linha média; a metade lateral permanece como proteção sobre o radial, e ramos nervosos encontrados durante a dissecção devem ser preservados. Não é uma licença para cortar o músculo em qualquer ponto: o plano central tem uma razão anatômica (Rockwood, 10ª ed., cap. 37, “Via anterolateral”).\n\nMais distalmente, o acesso passa entre **braquial medial e braquiorradial lateral**, onde radial e musculocutâneo exigem proteção. Na MIPO anterior, a mesma organização reaparece: o musculocutâneo acompanha a metade medial do braquial, e a lateral protege o radial. Saber quem inerva cada metade ajuda a entender o afastamento, em vez de apenas decorar dois nomes.\n\nO mediano, apesar de estar no compartimento anterior, segue medialmente com a artéria braquial. **Localização no compartimento e inervação de uma metade muscular são informações diferentes.**",
+   "correta": "**C: radial; musculocutâneo.** O radial corresponde à metade lateral e o musculocutâneo à medial, na descrição do acesso. Preservar esse plano e eventuais ramos evita transformar a exposição do osso numa lesão neural.",
+   "incorretas": {
+    "A": "**Acerta a metade lateral, troca a medial.** O radial é o primeiro nervo solicitado; para a metade medial, o resumo indica musculocutâneo. A posição medial do mediano ao lado da artéria braquial não lhe atribui essa inervação.",
+    "B": "**Nenhuma das posições corresponde ao par descrito.** O mediano não é o nervo da metade lateral neste acesso, e o radial pertence à lateral, não à medial. O musculocutâneo necessário para completar a resposta ficou ausente.",
+    "D": "**Inverte os dois territórios.** Os nomes estão corretos, mas musculocutâneo corresponde à medial e radial à lateral. Esse par responderia à ordem medial-lateral, enquanto a pergunta exige lateral-medial."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Placa minimamente invasiva (MIPO)."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Vias de acesso e os nervos em risco",
+     "Placa minimamente invasiva (MIPO)"
+    ],
+    "blocos": [
+     "vias-de-acesso-e-os-nervos-em-risco-e5eff37e",
+     "vias-de-acesso-e-os-nervos-em-risco-9caef227",
+     "placa-minimamente-invasiva-mipo-18908699",
+     "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "9e75b9ffa62e239e0b5fe73d9bbf69bb9f938752d2a2c1dcf14f26048304ab0e"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1378": {
+  "questaoSha256": "6451b72f9d2d0af249c5bc27aea3177a1d29de606bc4e98886ecc6fdd61ef481",
+  "comentarioAnteriorSha256": "e45b1033ddc481ea0cf05428214e6460c2425380820e77633cd17fd2db3bea1e",
+  "comentario": {
+   "conceito": "Num traço simples, dois fragmentos principais podem ser aproximados para obter **compressão**. Numa zona cominutiva, a placa precisa atravessar a área fragmentada como **ponte**. Essa é a sequência da alternativa C.\n\nPense em duas situações distintas: no traço simples há superfícies que podem encostar; na cominuição, tentar comprimir todos os pequenos fragmentos pode encurtar o úmero e exigir uma dissecção que sacrifica vascularização. O resumo orienta compressão pelos furos dinâmicos ou por parafuso de tração nas simples, e placa mais longa transpondo a cominuição, sem parafusos na zona fragmentada (Rockwood, 10ª ed., cap. 37, “Os números da placa”).\n\n**A função da placa depende da montagem.** O nome do implante, sozinho, não diz se ele comprime ou faz ponte. Redução, comprimento, distribuição dos parafusos e preservação das inserções dos fragmentos precisam combinar com o padrão da fratura. Redução anatômica não deve ser perseguida ao preço de desperiostização excessiva.\n\n> **Na prova:** simples permite contato e compressão; cominutiva pede ponte e preservação biológica.",
+   "correta": "**C: compressão; ponte.** É a combinação explicitamente descrita. A primeira explora o contato entre fragmentos simples; a segunda transpõe a cominuição sem tentar comprimir uma área sem apoio adequado.",
+   "incorretas": {
+    "A": "**Reconhece a ponte na cominuição, mas perde a distinção inicial.** Uma montagem em ponte pode estabilizar fraturas, porém a recomendação perguntada para o traço simples é aproveitar suas superfícies para compressão. Não se responde “ponte para tudo”.",
+    "B": "**Troca as duas estratégias.** Deixa de usar o contato disponível no traço simples e propõe comprimir justamente a área fragmentada. A tentativa de fechar a cominuição pode encurtar o osso e aumentar a agressão aos fragmentos.",
+    "D": "**A segunda compressão é o problema.** Na fratura simples ela corresponde à recomendação; na cominutiva, a placa deve transpor a zona com uma montagem mais longa. Comprimir todos os fragmentos não equivale a reconstruir com segurança comprimento e alinhamento."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa: técnica, números e resultados."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Placa: técnica, números e resultados"
+    ],
+    "blocos": [
+     "placa-tecnica-numeros-e-resultados-e1956d15",
+     "placa-tecnica-numeros-e-resultados-541bf5d2",
+     "placa-tecnica-numeros-e-resultados-7281e01c",
+     "placa-tecnica-numeros-e-resultados-40bc40ff"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "4026cc8a4d9275f47a843f84f1eb21511ca3ace067f891481e6c405de0e14750"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1379": {
+  "questaoSha256": "5aaa7b309e961e266622cf62a177d77d18ecae5dad7c855b9808eb7559d04773",
+  "comentarioAnteriorSha256": "ccd76d8c3b1d702735a28e51ed7107a2bd8a49945e61ee364e655f9f81c28471",
+  "comentario": {
+   "conceito": "Sem parafuso interfragmentar, a recomendação convencional é **quatro parafusos bicorticais em cada fragmento principal**, isto é, **oito corticais por fragmento**, alternativa D. Um parafuso bicortical atravessa duas paredes do osso; quatro deles somam oito corticais.\n\nA expressão “sem parafuso interfragmentar” decide a pergunta. O resumo admite **três parafusos, ou seis corticais, de cada lado quando existe um bom parafuso de tração**. Esse parafuso adicional participa da estabilidade da redução e não pode ser presumido num enunciado que o exclui (Rockwood, 10ª ed., cap. 37, “Os números da placa”).\n\nA contagem também precisa ser lida com suas condições. Cominuição, osso ruim e pega inadequada exigem pensar em placa mais longa e mais ancoragem. Estudos com **parafusos bloqueados** descrevem montagens diferentes; o encaixe da cabeça do parafuso na placa muda a construção e não autoriza transportar seu número para toda placa convencional.\n\nO quadro técnico do resumo menciona mínimo de três e ideal de quatro parafusos por fragmento. O texto específico sem parafuso de tração recomenda quatro. Portanto, **oito corticais responde ao cenário descrito**, não representa uma garantia universal de estabilidade.",
+   "correta": "**D: 8 corticais.** São quatro parafusos bicorticais proximalmente e quatro distalmente, e não oito corticais somadas nos dois lados da fratura. Comprimento da placa e qualidade da pega continuam necessários.",
+   "incorretas": {
+    "A": "**Duas corticais correspondem a apenas um parafuso bicortical.** A sequência operatória pode começar prendendo a placa com um parafuso enquanto se confere a redução, mas essa etapa provisória não é a ancoragem definitiva recomendada.",
+    "B": "**Quatro corticais significam dois parafusos bicorticais.** O resumo discute dois bloqueados por segmento em estudos de osso osteoporótico. Essa construção não é a placa convencional sem parafuso interfragmentar solicitada.",
+    "C": "**Seis corticais são um número real, com outra condição.** Correspondem a três parafusos de cada lado quando existe um bom parafuso interfragmentar. A pergunta o exclui; usar esse número apagaria o detalhe que distingue as montagens."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa: técnica, números e resultados."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Placa: técnica, números e resultados"
+    ],
+    "blocos": [
+     "placa-tecnica-numeros-e-resultados-ba6923d9",
+     "placa-tecnica-numeros-e-resultados-94596767",
+     "placa-tecnica-numeros-e-resultados-7281e01c",
+     "placa-tecnica-numeros-e-resultados-40bc40ff"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "a85c223c57ea834957743b6fd8c31999f54c23686a47e8d9ab16e0a50fbbee81"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1380": {
+  "questaoSha256": "64aa9a299e20396d280cd2c2b2da1a0b020a1c956af2efba39af8f2fcfc4561c",
+  "comentarioAnteriorSha256": "3c3c607276baf224b27a7e9c819a769e37cc1baef19065cfd0e0b41221349a64",
+  "comentario": {
+   "conceito": "O bloqueio distal da haste anterógrada deve ser feito **aberto e à mão livre**, alternativa A. “À mão livre” descreve como se encontra o furo sem depender de um guia longo; “aberto” descreve a dissecção até o osso para proteger os tecidos. As duas características podem e devem coexistir.\n\nNa fluoroscopia, o furo da haste precisa aparecer perfeitamente redondo. A incisão é feita sobre ele, os tecidos são dissecados até o osso, e a broca e o parafuso são conduzidos sob visão. Os guias distais longos são pouco confiáveis pela distância, pelos furos estreitos e pela geometria do osso (Rockwood, 10ª ed., cap. 37, “Anterógrada: entrada, fresagem e bloqueio”).\n\n**Acertar o furo não basta para proteger o nervo.** O trajeto anteroposterior distal ameaça o musculocutâneo; o lateral ameaça o radial. Uma imagem fluoroscópica precisa mostra implante e osso, mas não transforma uma passagem cega pelas partes moles em passagem segura. Por isso o resumo pede via aberta nos parafusos próximos das estruturas vulneráveis.\n\nTambém não se resolve a dificuldade encravando uma haste grossa no canal para dispensar o bloqueio: essa manobra aumenta o risco de fratura na ponta. O bloqueio e o diâmetro precisam ser planejados juntos.",
+   "correta": "**A: aberta à mão livre.** Combina localização fluoroscópica do furo sem guia distal longo com dissecção até o osso. É a técnica preferida pelos autores para inserir o parafuso distal.",
+   "incorretas": {
+    "B": "**Acerta a localização do furo e perde a proteção dos tecidos.** À mão livre não exige perfuração percutânea. A dissecção aberta é escolhida justamente porque radial e musculocutâneo podem estar no trajeto.",
+    "C": "**A exposição está correta, o guia não.** Abrir o acesso protege os tecidos, mas não corrige a pouca confiabilidade do guia longo para alinhar os furos distais. A fonte recomenda localizar o furo à mão livre.",
+    "D": "**Reúne os dois problemas evitados.** Depende do guia longo pouco confiável e atravessa tecidos por via percutânea, sem a exposição recomendada junto aos nervos."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Haste intramedular."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Haste intramedular"
+    ],
+    "blocos": [
+     "haste-intramedular-97e7d24b",
+     "haste-intramedular-9f3a7a30",
+     "haste-intramedular-1a22f0c0"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "05211fdb2f7f653608c6619799115c07422ed53626be1b91de7f9de0c6ec9e39"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1381": {
+  "questaoSha256": "36cc2e1b1375fe9b4fded868acb529ce9ae239b792350c0c87c4d3bcc71e91fc",
+  "comentarioAnteriorSha256": "be153945f14c20b1c9456daec1e734f5e49170f0d1c973e64af585c4fec0f5d3",
+  "comentario": {
+   "conceito": "O parafuso proximal da haste é colocado numa região contornada pelo **nervo axilar**, alternativa B. Esse nervo passa de trás para a frente ao redor do úmero proximal, aproximadamente **4 a 7 cm da ponta do acrômio**, faixa anatômica descrita no resumo.\n\nA haste anterógrada entra pelo ombro e seus parafusos proximais atravessam tecidos dessa região. O guia acoplado facilita atingir o furo do implante, mas **não torna o trajeto livre de nervos**. O resumo alerta ainda para lesão do axilar e da cabeça longa do bíceps com o parafuso proximal anteroposterior oferecido por algumas hastes (Rockwood, 10ª ed., cap. 37, “Anatomia aplicada” e “Armadilhas e complicações da haste anterógrada”).\n\nA localização muda o risco: no bloqueio **distal**, a direção anteroposterior ameaça o musculocutâneo e a lateral ameaça o radial. No **proximal**, pensar em axilar. Não basta memorizar “nervo da haste”; é preciso saber em qual extremidade e por qual direção se está trabalhando.",
+   "correta": "**B: axilar.** Seu percurso ao redor do úmero proximal coincide com a região dos parafusos. O planejamento deve considerar o nervo mesmo quando o guia mostra o alinhamento correto do implante.",
+   "incorretas": {
+    "A": "**O ulnar não contorna o úmero proximal.** Ele segue medialmente, passa ao compartimento posterior na arcada de Struthers e chega ao túnel cubital. Seu risco em acessos mediais e pinos longos não define o bloqueio proximal.",
+    "C": "**O radial é central na diáfise e no bloqueio distal lateral.** Seu trajeto pelo sulco espiral e septo lateral explica esses riscos. A pergunta desloca o campo para a extremidade proximal, onde o axilar circunda o osso.",
+    "D": "**O musculocutâneo é a referência do bloqueio distal anteroposterior.** Ele corre longitudinalmente na região anterior distal e também exige proteção na janela distal da MIPO. Esse risco não deve ser transferido ao bloqueio proximal."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Haste intramedular."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Vias de acesso e os nervos em risco",
+     "Haste intramedular"
+    ],
+    "blocos": [
+     "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+     "vias-de-acesso-e-os-nervos-em-risco-b2a5306b",
+     "haste-intramedular-97e7d24b",
+     "haste-intramedular-a17be01e"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "20de56e36c5c593ec85adbc2231b5410b6eaf4019540bdfd99f5ba9f935dc776"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1382": {
+  "questaoSha256": "8c63c5f0a0cbf11047e0a70248909217e809afad16a33055d5b7f931a48e94f6",
+  "comentarioAnteriorSha256": "7dad00158e636ce413cc3e1e76105e170d42f2c30d1d2547cb105acad3517af5",
+  "comentario": {
+   "conceito": "Ao introduzir uma haste pelo úmero distal, a complicação óssea característica é a **fratura supracondiliana iatrogênica**, alternativa D. A entrada retrógrada precisa vencer um canal distal mais estreito e triangular; forçar um implante contra essa região pode romper o próprio portal ou o osso ao redor.\n\nO olécrano também dificulta alinhar a entrada. Um portal pequeno, excêntrico ou com teto que impede a progressão aumenta a resistência à passagem. O resumo recomenda portal posterior de pelo menos **10 por 20 a 25 mm**, bordas alisadas, teto proximal rebaixado, fresagem suave preferencialmente manual e **cotovelo além de 100 graus de flexão**. Não se trata de compensar dificuldade com mais força (Rockwood, 10ª ed., cap. 37, “Retrógrada: a fratura supracondiliana”).\n\nÉ útil separar as duas entradas: a anterógrada exige cuidado com manguito e protrusão na cabeça; a retrógrada desloca o problema de acesso para o úmero distal. Ambas exigem evitar distração e controlar redução, mas a questão pede a lesão óssea ligada à entrada retrógrada.\n\n> **Na prova:** canal distal estreito e portal excêntrico explicam a fratura supracondiliana na fresagem ou introdução.",
+   "correta": "**D: fratura na região supracondiliana.** Pode acontecer na fresagem ou na passagem da haste. Portal adequado, flexão suficiente do cotovelo e progressão suave reduzem a dificuldade mecânica que a produz.",
+   "incorretas": {
+    "A": "**Distração é um erro do foco, não a complicação óssea específica do portal.** Separar os fragmentos prejudica a consolidação e deve ser evitado, mas não identifica a fratura nova na região de entrada retrógrada.",
+    "B": "**A operação descrita usa haste, não fixação com placa.** Falha da ancoragem de uma placa pertence a outra montagem. Na haste retrógrada, o ponto solicitado é o risco de romper o osso distal durante sua introdução.",
+    "C": "**É a armadilha da entrada pelo ombro.** Haste anterógrada saliente na cabeça pode gerar impacto e dor. A alternativa não descreve a fratura supracondiliana associada ao portal retrógrado."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Haste intramedular."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Vias de acesso e os nervos em risco",
+     "Haste intramedular"
+    ],
+    "blocos": [
+     "vias-de-acesso-e-os-nervos-em-risco-187b9899",
+     "haste-intramedular-b253fd02",
+     "haste-intramedular-da0f4f6b",
+     "haste-intramedular-c21af717"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "361c3c1d488db0a77e2c3674d5e0b7f51b472e84c866acbe38132bced1d6129a"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1383": {
+  "questaoSha256": "b33a4bd06c8fc92313d857bda2e81c27bce895a30cf7096bd317df53922e4673",
+  "comentarioAnteriorSha256": "8338e6e731a7d1ff57534ee38729afc2f51077351275ce1b70cdd78fb02459d4",
+  "comentario": {
+   "conceito": "Uma pseudartrose do úmero com pouca resposta de formação óssea não precisa apenas de um implante mais forte: é preciso recuperar também a **biologia do foco**. O tipo predominante descrito é o **atrófico**, alternativa A.\n\nPseudartrose significa que a fratura não consolidou; “atrófica” destaca a resposta reparadora pobre. O resumo afirma que a maioria das pseudartroses umerais tem essa apresentação e orienta combinar **estabilidade mecânica com estímulo biológico**. A estratégia mais usada é redução aberta, desbridamento até osso que sangra, placa forte e enxerto autólogo (Rockwood, 10ª ed., cap. 37, “Pseudartrose: tratamento”).\n\nOs dois componentes precisam ser investigados. Distração ou fixação insuficiente deixam o foco mecanicamente desfavorável; tabagismo, diabetes, desnutrição, perda óssea e dano às partes moles também pesam. O enxerto não substitui estabilidade, assim como trocar o implante não recompõe sozinho um leito biológico ruim.\n\n**Infecção e osteoporose são outros eixos da avaliação.** A primeira exige cultura, antibiótico e desbridamento, com decisão sobre manter ou trocar a fixação conforme sua estabilidade. A segunda pode comprometer a pega dos parafusos e exigir outra construção. Elas não são sinônimos do padrão atrófico nem excluem sua coexistência.",
+   "correta": "**A: atrófica.** É o padrão predominante descrito no resumo, justificando atenção simultânea à estabilidade e ao leito biológico. Placa com enxerto autólogo é a opção mais usada, sem prometer consolidação em todos os casos.",
+   "incorretas": {
+    "B": "**Infecção muda o tratamento, mas não é o padrão predominante indicado.** O resumo a descreve como rara no úmero e exige abordagem cirúrgica quando profunda. Não se deve presumir infecção apenas porque a fratura não consolidou; é uma possibilidade que precisa ser investigada.",
+    "C": "**Não corresponde à resposta reparadora pobre destacada.** A forma hipertrófica é reconhecida no capítulo, inclusive entre as tratáveis com fixador circular, mas a afirmação sobre predominância é da atrófica. A ênfase biológica da pergunta ajuda a reconhecer essa distinção.",
+    "D": "**Qualidade do osso e tipo de pseudartrose não são a mesma classificação.** Osteoporose pode dificultar a fixação, levando a placa bloqueada, montagem mais longa e enxerto. Isso não transforma “associada à osteoporose” no padrão predominante definido pelo capítulo."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Pseudartrose; Situações especiais."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Pseudartrose",
+     "Situações especiais"
+    ],
+    "blocos": [
+     "pseudartrose-a02ba06f",
+     "pseudartrose-6427266b",
+     "pseudartrose-9719258c",
+     "pseudartrose-c68d4d26",
+     "pseudartrose-fc31c240",
+     "pseudartrose-b3011935",
+     "pseudartrose-6be5e28b",
+     "situacoes-especiais-ed4bfc68"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "5208ce39a9ae1cc2fd82b55fb664db7296e3fd1db20a41d911b42a91212da051"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1386": {
+  "questaoSha256": "d62efe4d08df064957f5bd6d9e75c4701cdbdab4cb6f99adf717bfdfb882302d",
+  "comentarioAnteriorSha256": "fe802448712607f3ea5ab4dec6058edb7697df7b2f5397aa64f45394528ad827",
+  "comentario": {
+   "conceito": "A fratura está ao redor de uma prótese cuja **haste está solta**. Fixar apenas o osso deixaria dentro dele um componente ainda instável; a conduta que aborda esse problema é a **revisão da haste**, alternativa A.\n\nNa fratura periprotética, o nível do traço importa, mas a estabilidade do implante muda a decisão. Com prótese estável, o resumo permite tentar tratamento sem cirurgia e operar se ele falhar. Com componente solto, recomenda **haste de revisão mais longa**, ultrapassando a fratura em pelo menos **dois diâmetros corticais**, frequentemente associada a placa e cerclagens (Rockwood, 10ª ed., cap. 37, “Fratura periprotética”).\n\nA lógica é procurar apoio além da região fraturada e tratar simultaneamente a soltura. A revisão pode ser cimentada ou não, cuidando para não deixar cimento entrar no foco. A presença de uma placa auxiliar não muda o princípio: **ela complementa a construção, não torna estável uma haste solta que foi simplesmente preservada**.\n\nÉ uma situação de alto risco, com osso e partes moles já submetidos a cirurgia. Portanto, revisão é a resposta dirigida à instabilidade descrita, sem significar que todas as fraturas periprotéticas precisem de troca do componente.",
+   "correta": "**A: revisão da haste.** Trata a soltura, além da fratura. A haste longa deve ultrapassar o foco e pode receber fixação complementar conforme nível e qualidade óssea.",
+   "incorretas": {
+    "B": "**A placa pode estabilizar o traço e deixar o componente solto.** Manter a prótese faz sentido quando ela está estável; no caso descrito, é necessário revisar a haste. Placa auxiliar após a revisão é uma combinação diferente da proposta da alternativa.",
+    "C": "**A órtese não corrige a interface instável da prótese.** O resumo admite tentativa conservadora com componente estável. Transportar essa conduta para uma haste solta ignora justamente o dado que muda o tratamento.",
+    "D": "**Observar preservando o componente mantém a causa mecânica.** A fratura periprotética exige avaliar estabilidade da prótese, nível e osso. Uma haste comprovadamente solta não se torna estável apenas pelo acompanhamento do traço."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Situações especiais."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "Situações especiais"
+    ],
+    "blocos": [
+     "situacoes-especiais-bbdbf206",
+     "situacoes-especiais-d2a2a16f"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "ebb679335e894bd9503774120fc25eff9d8bb47629d3c0ec4dfdf48fa8710755"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1371": {
+  "questaoSha256": "c9bffc302417bf7b554c675b8eb639b833eaffd171066ce00e26c8b0d6dfe506",
+  "comentarioAnteriorSha256": "af762a920cef607d31a90a2d440d966d2990bed90aa5a4d982d08043c6a4b9e9",
+  "comentario": {
+   "conceito": "O desenho mostra uma fratura **espiral no terço distal da diáfise**, com o nervo radial passando junto ao traço. É o padrão de **Holstein-Lewis**, alternativa B. A linha não corta o osso transversalmente: ela percorre um trajeto oblíquo e espiralado perto da extremidade distal do segmento diafisário.\n\nA relação com o radial explica por que o epônimo é relevante. O nervo percorre o sulco espiral, colado ao osso, e depois atravessa o septo lateral. Nessa região distal, o deslocamento dos fragmentos pode tensioná-lo ou prendê-lo; o resumo descreve a ponta do fragmento distal desviada para o lado radial e maior associação com paralisia (Rockwood, 10ª ed., cap. 37, “A lesão primária”).\n\n**Reconhecer o padrão não significa explorar automaticamente.** Holstein e Lewis recomendaram exploração quando havia paralisia, mas estudos posteriores sustentaram observação inicial na fratura fechada, inclusive nesse padrão. Lesão vascular, ferimento penetrante, fratura exposta ou dano importante de partes moles mudam a avaliação. A imagem ensina a vizinhança do nervo, mas não determina sozinha sua continuidade nem a conduta de um paciente real.\n\n> **Na prova:** Holstein-Lewis = espiral da diáfise distal; o radial é o nervo associado, sem indicação automática de exploração pela forma do traço.",
+   "correta": "**B: espiral; terço distal.** A combinação coincide com o desenho e com a definição independente do resumo. Trata-se da diáfise distal, não de uma fratura articular do úmero distal.",
+   "incorretas": {
+    "A": "**Reconhece a espiral, mas sobe o nível.** O traço representado e o padrão nomeado ficam no terço distal. Fraturas espirais podem ocorrer em outros níveis, porém isso não as torna Holstein-Lewis.",
+    "C": "**Erra forma e nível.** Transverso seria um traço que corta o eixo longo de modo aproximadamente perpendicular, e o terço médio fica acima da região indicada. Nenhum desses dois elementos define o desenho.",
+    "D": "**Acerta a região, mas transforma a espiral em transversa.** O risco ao radial não depende de qualquer traço distal receber o epônimo; a definição requer o padrão espiral descrito."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: O nervo radial."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-37-diafise-umero",
+    "titulo": "Fratura da diáfise do úmero",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+    "secoes": [
+     "O nervo radial"
+    ],
+    "blocos": [
+     "o-nervo-radial-01d076e8",
+     "o-nervo-radial-69792673",
+     "o-nervo-radial-c7126417",
+     "o-nervo-radial-860854a5"
+    ],
+    "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+    "trechosSha256": "8c80e561eee0e855cc1eb3483e570e3766be5e5eb49218e0273cae6cd4901ec2"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1371-1.jpeg"
+  ]
+ }
+}

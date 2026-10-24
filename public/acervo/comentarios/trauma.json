@@ -4430,49 +4430,127 @@
   "conferido": false
  },
  "trauma-0181": {
-  "conceito": "**Fratura do úmero proximal e a classificação AO.** A fratura do úmero proximal é típica de **mulheres idosas com osteoporose**, após queda da própria altura sobre o membro superior. A AO/OTA codifica o úmero como osso **1** e o segmento proximal como **1**, daí o prefixo **11**.\n\n**Classificação AO clássica (Müller) do úmero proximal.**\n\n| Tipo | Descrição | Subgrupos |\n|---|---|---|\n| 11A | Extra-articular **unifocal** | A1 tuberosidade isolada, A2 colo cirúrgico impactado, A3 colo cirúrgico não impactado |\n| **11B** | Extra-articular **bifocal** (colo cirúrgico **e** uma tuberosidade) | B1 com impacção metafisária, **B2 sem impacção metafisária**, B3 com luxação glenoumeral |\n| 11C | **Articular** (colo anatômico) | C1 pouco desviada, C2 impactada com desvio, C3 com luxação |\n\n**Lendo a imagem.** Há um traço no **colo cirúrgico**, com a diáfise desviada e sem engrenamento (sem impacção) entre a cabeça e a metáfise, e um segundo foco envolvendo a **tuberosidade maior**. A superfície articular da cabeça está preservada, sem traço no colo anatômico. São dois focos extra-articulares, sem impacção metafisária e sem luxação: **11B2**.\n\n**Por que a impacção importa.** A fratura impactada (B1, ou valgo impactada) é mais estável e preserva melhor a vascularização da cabeça (ramo posteromedial intacto quando a extensão metafisária posteromedial é longa, critérios de Hertel). A não impactada é instável e, com desvio, frequentemente indica fixação.\n\n**Atenção às versões.** Na revisão AO/OTA de 2018, os tipos do úmero proximal foram reorganizados (11A extra-articular unifocal ou bifocal, 11B extra-articular multifocal com quatro partes, 11C articular), de modo que a mesma fratura pode receber código diferente. A questão usa a versão clássica.\n\n**Tratamento.** Tipoia e mobilização precoce nas pouco desviadas; placa bloqueada ou haste nas desviadas em osso de boa qualidade; artroplastia (sobretudo a reversa em idosos) nas complexas irreconstruíveis.\n\n> 11B2: fratura bifocal extra-articular (colo cirúrgico e tuberosidade), sem impacção metafisária.",
-  "correta": "**B: 11B2.** A imagem mostra fratura do colo cirúrgico sem impacção metafisária associada a fratura da tuberosidade, com a superfície articular preservada: fratura extra-articular bifocal sem impacção, 11B2 na classificação AO clássica.",
+  "conceito": "As radiografias mostram uma fratura do colo cirúrgico **sem impacção**, associada a fragmento do **tubérculo maior**. Na **AO/OTA clássica**, essa combinação é **11B2**, alternativa B.\n\nO prefixo **11** identifica úmero proximal. A letra separa um padrão extra-articular unifocal (A), extra-articular bifocal (B) e articular (C). Dentro de B, o ponto que decide entre **B1 e B2** é a impacção do colo: B1 é impactado; B2, não impactado, com um tubérculo desviado (Rockwood, 10ª ed., cap. 36, “AO/OTA: o número 11 e as três letras”).\n\n“Articular” aqui não significa apenas fratura perto da articulação. Os grupos C apresentados no resumo envolvem cabeça ou colo anatômico. Não se deve trocar B2 por C apenas porque a fratura é proximal e está desviada.\n\n| Grupo clássico | Padrão do resumo |\n|---|---|\n| 11B1 | Colo cirúrgico impactado e um tubérculo desviado |\n| 11B2 | Colo cirúrgico não impactado e um tubérculo desviado |\n| 11C1 | Colo anatômico pouco desviado |\n| 11C2 | Colo anatômico muito desviado |\n\nA versão de 2018 foi simplificada; esta questão usa os subgrupos clássicos. A classificação organiza o padrão, mas o tratamento ainda exige avaliar osso, paciente e reconstrução.",
+  "correta": "**B: 11B2.** O colo cirúrgico não impactado com um tubérculo desviado é a descrição do grupo. As imagens devem ser lidas pelo nível do traço e pela ausência de impacção, sem medir um desvio não fornecido.",
   "incorretas": {
-   "A": "**11B1** é a fratura bifocal com **impacção metafisária**; na imagem, a diáfise está desviada, sem engrenamento na cabeça.",
-   "C": "**11C1** é fratura **articular** (colo anatômico) pouco desviada; a superfície articular está preservada na imagem.",
-   "D": "**11C2** é fratura articular impactada com desvio; não corresponde ao padrão extra-articular da imagem."
+   "A": "**B1 exige impacção.** O tubérculo associado mantém a fratura no grupo bifocal, mas o colo não impactado leva a B2. A diferença não é simplesmente ter mais ou menos fragmentos.",
+   "C": "**C1 muda a localização para o colo anatômico.** No esquema clássico, corresponde a padrão articular pouco desviado. O padrão mostrado é do colo cirúrgico com tubérculo, não essa separação articular.",
+   "D": "**C2 também é articular, com colo anatômico muito desviado.** O grau de desvio não converte por si uma fratura extra-articular do colo cirúrgico em C2. Primeiro é preciso acertar onde passa o traço."
   },
   "referencias": [
-   "Müller ME, Nazarian S, Koch P, Schatzker J. The comprehensive classification of fractures of long bones. Berlin: Springer-Verlag; 1990.",
-   "Meinberg EG, Agel J, Roberts CS, Karam MD, Kellam JF. Fracture and Dislocation Classification Compendium-2018. J Orthop Trauma. 2018;32 Suppl 1:S1-S170."
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-10b3d28f",
+      "neer-ao-e-os-padroes-de-fratura-f472f79e",
+      "neer-ao-e-os-padroes-de-fratura-54eebd91"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "39455daeccc2e776f549e419d45badf2166c6bcd3caffd915f8eeca69dba40b2"
+    }
+   ],
+   "questaoSha256": "35966a18c1fff1247fd4aea2a1fff66f3b01373174df486e03626d3347d37598",
+   "comentarioSha256": "4326af9d699408c1183a44451d469a5025971ccb6da4a39654f66dadbec83531"
+  }
  },
  "trauma-0183": {
-  "conceito": "**A imagem.** Radiografia do ombro com uma **placa bloqueada** no úmero proximal, com vários parafusos na cabeça e um **parafuso inferior**, que sobe do lado medial do colo até a porção inferomedial da cabeça: o **parafuso do calcar**.\n\n**A fratura do úmero proximal no idoso.** É uma das fraturas por fragilidade mais comuns, típica de **mulheres idosas** com osteoporose, após queda da própria altura. A maioria é tratada sem cirurgia. Quando se opera, a placa bloqueada é a opção mais usada nas fraturas desviadas.\n\n**O problema da cominuição medial.** O **calcar** é a cortical **inferomedial** do colo. Ele funciona como um pilar que sustenta a cabeça. Quando ele está **cominuído**, a cabeça perde o apoio e tende a cair em **varo**. O resultado é a falha mais comum da placa bloqueada: **colapso em varo**, com os parafusos **perfurando** a cabeça (cut-out) e saindo pela articulação.\n\n**O conceito de suporte medial (Gardner).** A estabilidade depende de restaurar o **apoio medial**:\n- **Redução** do calcar, com contato cortical medial.\n- **Parafusos do calcar** (parafusos oblíquos inferomediais): entram pela placa e chegam à porção **inferomedial da cabeça**, logo acima do calcar. Funcionam como uma **escora**.\n- **Enxerto estrutural** intramedular, como o **enxerto de fíbula** (aloenxerto), quando a cominuição é grande.\n- Impactação controlada da diáfise na cabeça, com leve encurtamento, para conseguir contato.\n\n**Os estudos clínicos e biomecânicos** mostram que, **sem suporte medial**, a perda da redução e a falha da fixação são muito mais frequentes. Com os parafusos do calcar, a estabilidade melhora de forma importante, mais do que pelo número total de parafusos ou pelo seu comprimento.\n\n**Outros detalhes da técnica.**\n- Placa posicionada **lateral** ao sulco bicipital e **abaixo** do tubérculo maior, para não causar impacto subacromial.\n- Parafusos com **distância segura** da cartilagem (sem perfuração primária).\n- **Suturas** no manguito rotador, passadas pela placa, para neutralizar a tração dos tubérculos.\n\n**Quando não fixar.** Em idosos com fraturas em 4 partes, cominuição grave e osso muito ruim, a **artroplastia reversa** dá resultados mais previsíveis.",
-  "correta": "**Correta: D (a colocação de parafuso no calcar).** Na fixação da fratura do úmero proximal com placa bloqueada, quando há **cominuição medial**, o fator mais importante de estabilidade é restaurar o **suporte medial**, sobretudo com o **parafuso no calcar** (inferomedial), que escora a cabeça e evita o colapso em varo.",
+  "conceito": "Na radiografia, um parafuso inferior é dirigido à região **inferomedial da cabeça**, onde se busca suporte do **calcar**. Quando a cortical medial está cominuída, esse apoio é o fator técnico destacado pela questão: **parafuso no calcar**, alternativa D.\n\nA cabeça precisa manter altura e orientação depois de reduzida. Se perde o apoio medial, tende a ceder; a placa lateral e seus parafusos bloqueados não impedem automaticamente esse colapso. O resumo relaciona ausência de suporte medial a perda de redução, perfuração e perda de altura, explicando a importância dos parafusos inferomediais (Rockwood, 10ª ed., cap. 36, “O que faz a placa perder a redução”).\n\n**Mais parafusos não substituem um parafuso bem dirigido.** A montagem precisa combinar redução, placa alinhada, apoio inferior e ancoragem articular. Parafuso comprido demais pode penetrar a articulação; o resumo orienta comprimentos menores que a medida subcondral e radioscopia em vários planos.\n\nQualidade óssea também pesa, sobretudo no idoso. Entretanto, a pergunta procura o elemento da fixação que recompõe o apoio perdido com a cominuição medial. A figura ilustra a montagem, sem permitir deduzir densidade óssea ou medir a distância subcondral do paciente.",
+  "correta": "**D: colocação de parafuso no calcar.** Ele sustenta a região inferomedial da cabeça quando o apoio cortical medial foi perdido. É um recurso dirigido ao mecanismo de colapso, integrado à redução e ao restante da montagem.",
   "incorretas": {
-   "A": "A **qualidade do osso** influencia a fixação, mas não pode ser mudada pelo cirurgião. O fator técnico mais importante, com cominuição medial, é o suporte medial.",
-   "B": "O **número total de parafusos** importa menos que a sua **posição**. Sem o apoio medial, mesmo muitos parafusos falham por colapso em varo.",
-   "C": "O **comprimento** dos parafusos deve respeitar uma distância segura da cartilagem. Não é o fator principal de estabilidade com cominuição medial."
+   "A": "**Osso ruim aumenta o risco, mas não é o recurso técnico que recompõe o apoio.** O capítulo lista osteoporose entre os fatores de falha. Reconhecê-la orienta reforço e escolha da construção, sem substituir o suporte inferomedial solicitado.",
+   "B": "**Contagem total não informa distribuição do suporte.** Vários parafusos superiores podem deixar a região inferomedial sem apoio. A técnica usa múltiplos parafusos, mas a questão destaca a posição no calcar na presença de cominuição medial.",
+   "C": "**Aumentar comprimento não é uma solução isolada.** Um parafuso longo pode furar a cabeça ou tornar-se intra-articular após colapso. A posição inferomedial e o comprimento seguro precisam coexistir; “mais longo” não equivale a melhor suporte."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Gardner MJ, Weil Y, Barker JU, Kelly BT, Helfet DL, Lorich DG. The importance of medial support in locked plating of proximal humerus fractures. J Orthop Trauma. 2007;21(3):185-191."
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Placa bloqueada: o parafuso, o calcar e a técnica."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Placa bloqueada: o parafuso, o calcar e a técnica"
+     ],
+     "blocos": [
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-38a4d747",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-5d9e8232",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-611f3a80",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-f402d68e"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "854b03d90e1d918e5543d118835b91e15df4b3c582ef0e13e491b423cb824fdc"
+    }
+   ],
+   "questaoSha256": "40c8aeb06011458d4e21688a1c04f406e017eea8e2e36439c08008604c3fb4bf",
+   "comentarioSha256": "8512c7912157ab9da271674252db7fc3ccde96ce8c63d7167d407843d4e8e2d6"
+  }
  },
  "trauma-0184": {
-  "conceito": "**Complicações da placa bloqueada no úmero proximal.** As placas bloqueadas (estabilidade angular) melhoraram a fixação em osso osteoporótico, mas suas complicações são frequentes, especialmente em idosos.\n\n**Lendo as imagens.** A cabeça umeral perdeu altura e **inclinou-se medialmente** em relação à diáfise (o ângulo cervicodiafisário diminuiu): **colapso em varo**. Com o afundamento da cabeça sobre os parafusos, as pontas dos parafusos **atravessam a superfície articular**, visíveis além do contorno da cabeça no perfil: **perfuração condral (cut-out)**.\n\n**Principais complicações.**\n\n| Complicação | Mecanismo |\n|---|---|\n| **Perfuração intra-articular dos parafusos** | Primária (parafuso longo) ou **secundária**, pelo colapso da cabeça sobre parafusos fixos; a mais comum |\n| **Colapso em varo, perda de redução** | Falta de **suporte medial** (calcar), cominuição, redução em varo |\n| Osteonecrose da cabeça | Lesão vascular pela fratura (colo anatômico, pouca extensão metafisária medial) e pela dissecção |\n| Impacto subacromial | Placa posicionada alta |\n| Pseudartrose, soltura | Má redução, osso fraco |\n\nSüdkamp e colaboradores, em estudo multicêntrico, mostraram complicações em cerca de um terço dos pacientes, com a perfuração dos parafusos como a mais frequente.\n\n**Prevenção.** Gardner e colaboradores mostraram a importância do **suporte medial**: redução anatômica do calcar ou impacção, **parafusos oblíquos inferomediais** (parafusos do calcar), enxerto (por exemplo, fíbula intramedular em casos selecionados), evitar redução em varo e usar parafusos 5 a 8 mm abaixo do osso subcondral.\n\n> Úmero proximal com placa: colapso em varo e perfuração articular dos parafusos são as complicações típicas; o suporte medial previne.",
-  "correta": "**B: colapso em varo e a perfuração condral dos parafusos.** A cabeça afundou e inclinou-se em varo, e os parafusos, fixos na placa, atravessaram a superfície articular.",
+  "conceito": "Nas duas incidências, a cabeça perdeu sua relação de apoio e **colapsou em varo**, enquanto pontas de parafusos ultrapassam o contorno articular. A combinação é **colapso em varo com perfuração condral dos parafusos**, alternativa B.\n\nA placa bloqueada fixa o ângulo entre parafuso e implante. Isso ajuda a montagem, mas cria uma armadilha: se a cabeça afunda ou perde altura, o parafuso **não recua junto com ela**. Sua ponta pode atravessar osso subcondral e cartilagem. O resumo chama essa perfuração de **secundária**; a primária ocorre quando o parafuso já foi colocado comprido demais (Rockwood, 10ª ed., cap. 36, “Por que a placa bloqueada falha”).\n\nA imagem mostra a complicação, mas não é uma sequência temporal da operação. Portanto, não se pode afirmar só por ela que todo parafuso estava adequado inicialmente. O mecanismo de colapso explica como pode surgir penetração tardia; a verificação em vários planos e o suporte medial ajudam a prevenir os diferentes modos de falha.\n\n**Osteonecrose é uma possível causa de colapso, não um sinônimo radiográfico obrigatório.** Chamar esta imagem de necrose sem outros dados troca uma hipótese etiológica pelo achado que está demonstrado: varo e parafusos penetrando a articulação. A penetração merece atenção porque pode lesar a glenoide.",
+  "correta": "**B: colapso em varo e perfuração condral dos parafusos.** São os achados representados. A montagem bloqueada explica por que a perda de altura da cabeça pode deixar pontas intra-articulares.",
   "incorretas": {
-   "A": "**Colapso em varo e osteonecrose**: o varo está presente, mas a imagem mostra principalmente os parafusos atravessando a cartilagem, sem os sinais de colapso necrótico da cabeça.",
-   "C": "**Colapso em valgo e osteonecrose** erra a direção do colapso: a cabeça inclinou-se em varo.",
-   "D": "**Colapso em valgo e perfuração**: a perfuração está presente, mas o colapso é em varo."
+   "A": "**Acerta o varo, mas substitui o achado dos parafusos por uma causa não comprovada.** Osteonecrose pode produzir colapso; a figura, porém, demonstra penetração e não estabelece sozinha a viabilidade prévia da cabeça.",
+   "C": "**Erra a direção e presume osteonecrose.** A perda de redução está em varo, não em valgo. Além disso, a complicação articular visível envolve as pontas dos parafusos, sem diagnóstico etiológico obrigatório de necrose.",
+   "D": "**Reconhece a perfuração e troca o alinhamento.** As pontas penetrantes estão presentes, mas o colapso mostrado é em varo. Na leitura da falha, direção da deformidade e relação parafuso-articulação devem ser avaliadas separadamente."
   },
   "referencias": [
-   "Südkamp N, Bayer J, Hepp P, et al. Open reduction and internal fixation of proximal humeral fractures with use of the locking proximal humerus plate. Results of a prospective, multicenter, observational study. J Bone Joint Surg Am. 2009;91(6):1320-1328.",
-   "Gardner MJ, Weil Y, Barker JU, Kelly BT, Helfet DL, Lorich DG. The importance of medial support in locked plating of proximal humerus fractures. J Orthop Trauma. 2007;21(3):185-191."
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Placa bloqueada: o parafuso, o calcar e a técnica; Irrigação da cabeça, Hertel e osteonecrose."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Placa bloqueada: o parafuso, o calcar e a técnica",
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-8fbd6fa9",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-89a2167f"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "8d0d032b86f0bf17e908a4405d81f52bae05793b2b9af48a9e21fe400a5ab61e"
+    }
+   ],
+   "questaoSha256": "142b46ecb91cfd682a1b085fe3f9a9da97fd227852f813e1deb0d6ce2bf4cefa",
+   "comentarioSha256": "e76d33a4fa71f23e2f3903336c63930899c46a8a72ef836429bd74a3e3b2257f"
+  }
  },
  "trauma-0185": {
   "conceito": "A incidência **AP com rotação interna de 15°** do tornozelo, conhecida como **incidência da mortalha** (\"mortise view\"), compensa a torção externa natural do tornozelo, alinhando o eixo transmaleolar perpendicularmente ao feixe de raios X. Isso permite visualizar simetricamente o espaço articular entre a tíbia, a fíbula e o tálus, sem a sobreposição que ocorre na incidência AP padrão, sendo essencial para avaliar a congruência da mortalha em fraturas maleolares como a **fratura bimaleolar** mostrada.",
@@ -10847,15 +10925,46 @@
   }
  },
  "trauma-0678": {
+  "conceito": "A paciente passou por uma fase de melhora, mas depois desenvolveu dor intensa; o exame mostra uma alteração **subcondral da cabeça umeral** na região indicada. Essa cronologia, associada ao achado cefálico, favorece **osteonecrose**, alternativa C.\n\nApós a fratura, o segmento articular pode perder parte de suas conexões vasculares. Se a viabilidade não se restabelece, a evolução pode ir de alterações de densidade a **colapso da superfície**, com dor, rigidez e perda de função depois de um período inicialmente bom. É a apresentação descrita no resumo do Rockwood, 10ª ed., cap. 36, “Quando a necrose aparece”.\n\n**O intervalo de melhora tem valor, sem ser prova isolada.** Na pseudartrose, a dor e a mobilidade do foco persistem porque não houve união. Na consolidação viciosa, o osso consolidou em posição alterada e pode limitar o movimento por impacto. A perda tardia da função com alteração subcondral da cabeça favorece um processo de osteonecrose sobre essas duas explicações.\n\nInfecção continua no diagnóstico diferencial de dor pós-fratura. O resumo orienta investigação e punção se houver suspeita; nem a história nem uma única imagem autorizam declarar que infecção é impossível. A questão pede o diagnóstico mais provável, não a exclusão definitiva de todas as outras causas.\n\nO tratamento posterior depende de sintomas, colapso, glenoide e tubérculos. Não se indica uma prótese específica apenas porque a alternativa correta é osteonecrose.",
+  "correta": "**C: osteonecrose.** O padrão de dor tardia depois de melhora e a alteração cefálica indicada são coerentes com a apresentação descrita na fonte. A resposta não depende de inventar um estágio ou uma medida que a imagem não fornece.",
   "incorretas": {
-   "A": "**Sem sinais infecciosos.** A osteomielite após tratamento conservador é rara, e o quadro não traz febre, fístula ou história cirúrgica.",
-   "B": "**Evolução diferente.** Na pseudartrose a dor e a mobilidade anormal persistem desde o início, sem consolidação, e não surgem após boa evolução.",
-   "D": "**Sem dor súbita.** A consolidação viciosa causa limitação e impacto, mas não dor intensa de início tardio com alteração da medula."
+   "A": "**Osteomielite é uma hipótese infecciosa e exige investigação própria.** A dor pode aparecer em infecção, mas o resumo destaca para osteonecrose a evolução após um período bom e a alteração da cabeça. Se surgirem elementos de suspeita infecciosa, a avaliação deve prosseguir, sem usar o gabarito para excluí-la.",
+   "B": "**Pseudartrose é falta de união, com foco ainda doloroso e móvel.** O capítulo descreve reabsorção no foco e possível subluxação inferior. O caso aponta para alteração subcondral tardia após boa evolução, favorecendo perda de viabilidade da cabeça.",
+   "D": "**Viciosa significa união em posição alterada.** Pode gerar impacto e limitação, sobretudo quando envolve tubérculos, mas não explica tão bem o novo quadro doloroso com alteração subcondral cefálica após melhora inicial."
   },
-  "conceito": "**A necrose depois da fratura do úmero proximal.** A irrigação da cabeça do úmero vem das **circunflexas**, principalmente a **posterior**, que entra pela região posteromedial, junto ao calcar. Fraturas que rompem a **dobradiça medial** e deixam pouco calcar preso à cabeça (os **critérios de Hertel**), fraturas do colo anatômico e fraturas em quatro partes têm maior risco de **osteonecrose**. Mesmo fraturas tratadas sem cirurgia podem evoluir para necrose.\n\n**Como ela aparece.** A necrose pode ser **silenciosa** no início. O quadro clássico é o de uma paciente que evoluía bem, com consolidação e ganho de movimento, e que meses depois (geralmente entre 6 meses e 2 anos) passa a ter **dor intensa**, noturna, refratária a analgésicos, com **perda de movimento**. A dor coincide com o **colapso** subcondral.\n\n**A imagem.** Na radiografia: **esclerose**, **sinal do crescente** (fratura subcondral), achatamento e colapso da cabeça. Na **ressonância**: alteração heterogênea do sinal medular, linha de interface serpiginosa (o sinal da dupla linha em T2) e colapso. A classificação de **Cruess** gradua de I (só na ressonância) a V (colapso com desgaste da glenoide).\n\n**O tratamento.** Muitos pacientes com necrose parcial têm função aceitável e são tratados com analgesia e fisioterapia. Com colapso e dor importante: **hemiartroplastia** (se a glenoide estiver preservada e o manguito íntegro), **artroplastia total** ou **reversa** (se houver sequela dos tubérculos ou lesão do manguito). As fraturas com necrose e consolidação viciosa dos tubérculos são as sequelas mais difíceis (classificação de **Boileau**).\n\n**Na prova:** dor intensa **meses depois** de uma fratura do úmero proximal que evoluía bem, com alteração da cabeça na imagem = **osteonecrose**.",
-  "correta": "**Osteonecrose.** A dor intensa de início tardio, após evolução inicial boa, com alteração de sinal e colapso da cabeça, é o quadro típico de necrose avascular.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Complicações: rigidez, viciosa, pseudartrose e tubérculos."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Irrigação da cabeça, Hertel e osteonecrose",
+      "Complicações: rigidez, viciosa, pseudartrose e tubérculos"
+     ],
+     "blocos": [
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-6e4e8145",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-97df1fc6",
+      "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "7fa04d9bb6134ea2f3c53402a9379c49219162178a8a5c238f02d38977219c99"
+    }
+   ],
+   "questaoSha256": "34d95d982aace3ebef7b7bc646c17c9d92b0d9f0c18e5fcfd441b5534cad4c04",
+   "comentarioSha256": "36bcb398977d569725cb67a199657959bb066e03679bef10430e80a3ecbb1f1d"
+  }
  },
  "trauma-0679": {
   "conceito": "Há um pilão **43C3**, deformidade e **edema acentuado** depois de queda de altura. Na urgência, a prioridade é devolver comprimento e alinhamento sem exigir da pele uma reconstrução definitiva extensa: **tratamento em etapas com ligamentotaxia e fixador transarticular**, alternativa C.\n\nFragmentos desviados pressionam a pele por dentro e podem causar necrose. A tração suave e a estabilização temporária retiram essa tensão e permitem que as partes moles se recuperem. A meta inicial é estabilidade, eixo e rotação; não é reconstruir toda a superfície articular no primeiro ato (Rockwood, 10ª ed., cap. 64, “Primeiro tempo: o fixador transarticular”).\n\n**O fixador também prepara a próxima decisão.** Com a fratura no comprimento, a TC mostra melhor a impacção e os fragmentos que orientarão as vias. O tratamento definitivo costuma ser adiado por pelo menos dez dias, até retorno das rugas e recuperação das flictenas e feridas. O calendário não substitui o exame da pele.\n\nA fíbula importa para a coluna lateral, mas fixá-la imediatamente exige redução anatômica e uma incisão compatível com a etapa seguinte. Se o cirurgião inicial não fará o definitivo, o capítulo recomenda fixador sem fixação interna. Isso é especialmente relevante na fíbula cominuída, em que uma redução ruim pode dificultar o resto da reconstrução.\n\nExistem casos selecionados de fixação aguda por equipes experientes, com pouco edema. Eles não devem ser transferidos para este C3 com partes moles muito comprometidas.\n\n> **Na prova:** no pilão C3 edemaciado, primeiro estabilize e proteja a pele; depois faça a TC e planeje a reconstrução.",
@@ -10968,15 +11077,49 @@
   "conferido": false
  },
  "trauma-0686": {
+  "conceito": "Uma fratura isolada do tubérculo maior não precisa de cirurgia só porque envolve a inserção do manguito. **A maioria é pouco desviada e pode ser tratada sem operar**, alternativa D; o que muda a decisão é a posição residual do fragmento e sua consequência funcional.\n\nO manguito posterossuperior puxa o tubérculo para trás e medial. Se ele consolidar fora de posição, pode gerar impacto e limitar elevação ou rotação externa. Por isso, numa fratura associada a luxação, primeiro se reduz a articulação e só depois se mede o desvio do tubérculo, com alguma rotação externa do ombro (Rockwood, 10ª ed., cap. 36, “Tubérculo maior e tubérculo menor”).\n\nO algoritmo do resumo usa **menos de 1 cm** para favorecer tratamento conservador e **mais de 1 cm ou sobreposição superior a 20%** para fixação; idosos podem tolerar mais se a perda funcional for aceitável. Esses são os limites desse capítulo e não devem ser confundidos com uma regra universal para todo paciente ou com os limites usados apenas para contar partes de Neer.\n\nQuando a fixação é indicada, o capítulo admite **suturas, inclusive por artroscopia**. A via deltopeitoral é utilizada para fixação proximal, embora a transdeltoide dê exposição mais direta ao tubérculo maior. Logo, o tratamento conservador frequente não significa impossibilidade técnica de operar.\n\n> **Na prova:** pouca translação permite observar; desvio com repercussão funcional muda a indicação, e artroscopia é uma opção de fixação.",
+  "correta": "**D: na maioria das vezes não precisa ser operada.** O resumo coloca a maioria das fraturas isoladas pouco desviadas no tratamento conservador. É necessário acompanhar a posição do fragmento e não confundir ausência de cirurgia inicial com ausência de seguimento.",
   "incorretas": {
-   "A": "**Pode.** A fixação artroscópica com âncoras e suturas é uma opção consagrada.",
-   "B": "**Nem sempre.** O fragmento é puxado pelo manguito, e a redução fechada estável é difícil quando há desvio significativo.",
-   "C": "**Pode.** A via deltopeitoral é uma das opções, embora a transdeltóidea dê acesso mais direto ao tubérculo."
+   "A": "**A artroscopia é expressamente admitida.** O capítulo descreve fixação por suturas inclusive por essa técnica. O que define a indicação é o desvio e o paciente, não uma proibição de abordagem artroscópica.",
+   "B": "**A redução fechada da luxação não garante a redução do tubérculo.** A orientação é medir o desvio residual depois de reduzir a articulação; se o fragmento continuar desviado, pode precisar de fixação. A tração do manguito ajuda a entender por que não se promete uma redução fácil para toda fratura isolada.",
+   "C": "**A palavra “não pode” é excessiva.** A deltopeitoral é uma via de fixação do úmero proximal descrita no capítulo. A transdeltoide oferece melhor exposição do tubérculo maior, mas essa vantagem não torna a deltopeitoral uma via proibida."
   },
-  "conceito": "**Uma fratura que costuma ser tratada sem cirurgia.** A fratura **isolada do tubérculo maior** acompanha frequentemente a **luxação anterior** do ombro (até cerca de um terço delas), ou ocorre por queda sobre o ombro. Na maioria dos casos o desvio é **mínimo**, e o tratamento é **conservador**: tipoia por pouco tempo, **mobilização passiva** precoce, e progressão para ativa entre a terceira e a sexta semana, evitando rotação externa e elevação **contra resistência** nas primeiras seis semanas, para não tracionar o fragmento.\n\n**Quanto desvio é aceitável.** O tubérculo maior é a inserção do **supraespinal**, do **infraespinal** e do redondo menor, que o puxam para **cima e para trás**. Um tubérculo consolidado alto bate no **acrômio** (impacto) e desequilibra o manguito. Por isso o limite de desvio é **muito menor** que o 1 cm de Neer: aceita-se cerca de **5 mm** de desvio superior, e apenas **3 mm** em atletas e trabalhadores com atividade acima da cabeça. Desvio posterior grande também é mal tolerado, pois bloqueia a rotação externa.\n\n**Como avaliar.** O desvio é subestimado no AP simples. Usar o **AP em rotação externa**, a **axilar** e, se necessário, **tomografia**. Também avaliar o **manguito** (lesões associadas) e o **nervo axilar**.\n\n**Como operar quando necessário.** **Redução aberta** pela via **transdeltóidea** (que dá acesso direto ao tubérculo) ou deltopeitoral, ou por **artroscopia**, com **parafusos**, **âncoras** e **suturas** em ponte (suture bridge), tratando o fragmento como uma lesão do manguito. A artroscopia tem a vantagem de tratar lesões intra-articulares associadas. Fragmentos cominutivos vão melhor com suturas do que com parafusos.\n\n**Na prova:** fratura isolada do tubérculo maior: **maioria conservadora**; operar se desvio **acima de 5 mm** (3 mm em atletas de arremesso); pode ser feita por artroscopia ou via aberta.",
-  "correta": "**Na maioria das vezes não precisa ser operada.** O desvio costuma ser mínimo, e o tratamento é tipoia breve com mobilização precoce, reservando a cirurgia para desvios acima de cerca de 5 mm.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Fratura isolada dos tubérculos e fratura-luxação; Neer, AO e os padrões de fratura; Anatomia aplicada e vias de acesso."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Fratura isolada dos tubérculos e fratura-luxação",
+      "Neer, AO e os padrões de fratura",
+      "Anatomia aplicada e vias de acesso"
+     ],
+     "blocos": [
+      "fratura-isolada-dos-tuberculos-e-fratura-luxacao-d4a73da9",
+      "fratura-isolada-dos-tuberculos-e-fratura-luxacao-4139e856",
+      "fratura-isolada-dos-tuberculos-e-fratura-luxacao-ac7d0cf6",
+      "fratura-isolada-dos-tuberculos-e-fratura-luxacao-ec60b9bf",
+      "neer-ao-e-os-padroes-de-fratura-defcf4d3",
+      "anatomia-aplicada-e-vias-de-acesso-c136f3ee",
+      "anatomia-aplicada-e-vias-de-acesso-f23bbbb5"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "6b36cc5b211fada2d29f8efaa9ef27cb661c60c2ef2df8f70d5e6d979f86cf85"
+    }
+   ],
+   "questaoSha256": "04db8c52a01651c64b8fbe3f4d798b010dd999facb5a4934b79c30735b912266",
+   "comentarioSha256": "424c5ed3f05caa392f0101e27f0434cc4a5192919a19a9b514fdd3ad9c8f6027"
+  }
  },
  "trauma-0687": {
   "conceito": "O perfil escapular mostra a deformidade entre os fragmentos da **borda lateral**. Essa borda participa do pilar que transmite a carga da glenoide; uma angulação importante altera a relação entre a superfície articular, o corpo e o trajeto dos músculos do ombro. Não se trata do ângulo glenopolar, que é outra medida, feita na AP verdadeira.\n\nNo resumo do capítulo, **angulação maior que 40° no perfil** é um dos critérios relativos que favorecem cirurgia nas fraturas extra-articulares do colo e do corpo. A pergunta oferece 15°, 30°, 45° e 60°: **45° é o primeiro valor apresentado acima desse limite**. Por isso o gabarito é compatível, embora o corte do capítulo não seja escrito como “45°” (resumo do Rockwood, 10ª ed., cap. 33, “Os critérios relativos de cirurgia”).\n\nEssas medidas não substituem a avaliação do paciente. Idade, demanda, outras lesões e condição das partes moles entram na decisão; uma angulação isolada não torna a operação obrigatória em qualquer pessoa. Para rever o plano da medida e os critérios relativos, consulte essa seção no resumo da Biblioteca.",
@@ -11801,15 +11944,42 @@
   "conferido": false
  },
  "trauma-0721": {
+  "conceito": "O gabarito da prova é **rádio distal**, alternativa A, mas a palavra **idoso** exige uma ressalva: no resumo, a fratura associada mais comum na série com **65 anos ou mais foi a do fêmur proximal**. Não se deve defender a resposta oficial escondendo essa diferença.\n\nNa série geral de Court-Brown, de 10 a 99 anos, 90% das fraturas do úmero proximal eram isoladas. Entre as associadas, rádio distal apareceu em **3%** e fêmur proximal em **2%**. Já no subgrupo com 65 anos ou mais, 16% tinham outra fratura, com **fêmur proximal em 7%**, rádio distal e pelve em 2% cada, e escápula e dedos em 1% cada (Rockwood, 10ª ed., cap. 36, “Outras fraturas e a pele”).\n\nO aprendizado é clínico e também de leitura de evidência: **uma frequência da população geral não deve ser transportada automaticamente para um subgrupo etário**. A fratura do ombro no idoso não encerra a avaliação após a queda; outra lesão pode coexistir, inclusive longe do membro superior.\n\n| População da série | Rádio distal | Fêmur proximal |\n|---|---|---|\n| Geral, 10 a 99 anos | 3% | 2% |\n| 65 anos ou mais | 2% | 7% |\n\nO rádio distal continua sendo uma associação relevante e é a resposta registrada da banca. Para a comparação específica no idoso, a fonte consultada favorece o fêmur proximal.",
+  "correta": "**A: rádio distal, conforme o gabarito oficial.** É a fratura associada mais frequente na série geral citada, mas perde essa posição para o fêmur proximal no subgrupo a partir de 65 anos. A letra é preservada com essa limitação explícita.",
   "incorretas": {
-   "B": "A fratura do úmero distal associada é menos frequente.",
-   "C": "A fratura do fêmur proximal associada é menos frequente.",
-   "D": "A fratura da escápula vem de alta energia, rara na queda do idoso."
+   "B": "**O úmero distal não lidera as associações descritas.** Estar no mesmo membro não determina a frequência. O capítulo destaca rádio distal e fêmur proximal, com a ordem mudando conforme a população estudada.",
+   "C": "**É defensável pela fonte para o idoso.** No subgrupo com 65 anos ou mais, o fêmur proximal foi a associação mais frequente, com 7%. Não é correto ensinar essa opção como falsa em termos médicos; ela diverge da letra escolhida pela banca.",
+   "D": "**Pode ocorrer, mas foi menos frequente nessa série.** A escápula apareceu em 1% nos pacientes com 65 anos ou mais, abaixo do fêmur proximal e do rádio distal. Uma associação possível não equivale à principal."
   },
-  "conceito": "A **fratura do úmero proximal** do idoso é uma fratura de **fragilidade**, típica da queda da própria altura, e muitas vezes vem acompanhada de outra.\n\n**A principal fratura associada**: a do **rádio distal**. Na queda, o idoso apoia a mão estendida (e quebra o punho) e bate o ombro, às vezes do mesmo lado.\n\n**O que essas fraturas significam**: as duas são **fraturas sentinela** da osteoporose. Uma fratura do punho ou do ombro depois dos 50 anos aumenta muito o risco de uma futura fratura do **quadril** e de vértebras.\n\n**A implicação prática**:\n\n**reabilitação**: com o punho e o ombro do mesmo lado fraturados, o paciente não consegue usar **andador** ou muleta; muitas vezes se fixa o punho para permitir apoio;\n\n**prevenção**: toda fratura de fragilidade deve levar à **investigação e ao tratamento da osteoporose** (densitometria, cálcio, vitamina D, antirreabsortivos) e à prevenção de quedas.\n\n**As outras opções**: o **úmero distal**, o **fêmur proximal** e a **escápula** se associam com menos frequência.\n\n**Na prova**: a principal fratura associada à do úmero proximal no idoso é a do **rádio distal**.",
-  "correta": "Na queda, o idoso apoia a mão e bate o ombro, e o rádio distal é a fratura associada mais comum.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Lesões associadas: nervos, artéria, manguito e outras fraturas."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito oficial A preservado. O resumo informa rádio distal 3% e fêmur proximal 2% na série geral, mas, nos pacientes com 65 anos ou mais, fêmur proximal 7% e rádio distal 2%. Para o recorte “idoso”, C é sustentada pelos dados consultados; não usar a frequência geral para negar essa opção.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+     ],
+     "blocos": [
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-2b032e13"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "49a20b9b6bfe862a6d116949c6c56d49c5a854177c0c9f81bd7dbea5f2337a1f"
+    }
+   ],
+   "questaoSha256": "7deae54905de47d0f0f802042e39a707040101dbc62e49c886650bfb6a5e6328",
+   "comentarioSha256": "ea25d8064e73325afdfb10273689f76e9670c8b3ddd73ad8f5e2a760c90dd422"
+  }
  },
  "trauma-0722": {
   "incorretas": {
@@ -12909,26 +13079,89 @@
   "conferido": false
  },
  "trauma-0786": {
+  "conceito": "A radiografia e o corte tomográfico mostram **colo cirúrgico fraturado e tubérculo maior separado**, enquanto cabeça e tubérculo menor permanecem como um conjunto. Pela classificação de **Neer**, a resposta é **três partes**, alternativa C.\n\nNeer não conta cada pequeno fragmento da imagem. Ele parte de quatro segmentos: cabeça, tubérculo maior, tubérculo menor e diáfise. Um segmento conta como parte desviada ao atingir **1 cm de translação ou 45 graus de angulação**. Na configuração de três partes com tubérculo maior, há o traço do colo cirúrgico e o desprendimento desse tubérculo (Rockwood, 10ª ed., cap. 36, “Os quatro segmentos de Codman e Neer”).\n\nA cabeça permanece ligada ao tubérculo menor, por onde o subescapular pode girá-la em rotação interna. Isso ajuda a compreender o padrão: o tubérculo que continua preso à cabeça influencia sua orientação, enquanto o maior é um segmento separado.\n\n**Uma medida exata não pode ser fabricada nesta reprodução.** As imagens sustentam a configuração usada pela questão, mas não fornecem escala para quantificar cada translação. A regra de Neer organiza a classificação e não é, sozinha, uma indicação automática de cirurgia.",
+  "correta": "**C: tipo 3, ou três partes.** O colo cirúrgico e o tubérculo maior desviado separam diáfise, tubérculo maior e o conjunto cabeça-tubérculo menor. A resposta conta segmentos, não todos os traços visíveis.",
   "incorretas": {
-   "A": "**Sem desvio.** Uma parte seria a fratura sem desvio acima de 1 cm ou 45 graus, o que não é o caso.",
-   "B": "**Falta um segmento.** Duas partes teriam apenas um segmento desviado, e aqui são dois.",
-   "D": "**Falta um segmento.** Nas quatro partes os dois tubérculos e a diáfise se separam da cabeça, e aqui o tubérculo menor continua preso a ela."
+   "A": "**Uma parte permite traços, mas sem segmentos desviados pelos critérios.** A configuração mostrada tem separação do colo e do tubérculo maior, não o padrão pouco desviado agrupado como uma parte.",
+   "B": "**Duas partes não incluem os dois níveis de separação destacados.** Pode haver fratura isolada do colo cirúrgico ou de um tubérculo como duas partes. Aqui, o tubérculo maior é separado além do traço que desconecta a diáfise.",
+   "D": "**Quatro partes exigiria separar também o outro tubérculo da cabeça.** A configuração apresentada mantém cabeça e tubérculo menor como conjunto. Não se deve promover a quatro partes apenas porque a imagem parece complexa."
   },
-  "conceito": "**A classificação de Neer.** Divide o úmero proximal em **quatro partes**, seguindo as linhas das fises antigas: **cabeça** (colo anatômico), **tubérculo maior**, **tubérculo menor** e **diáfise** (colo cirúrgico). Uma parte só \"conta\" como separada se estiver **desviada mais de 1 cm** ou **angulada mais de 45 graus**. Assim, uma fratura com vários traços mas sem desvio é \"uma parte\", por mais fragmentos que tenha.\n\n**Os tipos.** **Uma parte**: sem desvio significativo (cerca de 80% das fraturas). **Duas partes**: um segmento desviado (colo cirúrgico, tubérculo maior, tubérculo menor ou colo anatômico). **Três partes**: dois segmentos desviados, tipicamente o **colo cirúrgico** e **um tubérculo** (geralmente o maior); a cabeça fica presa ao tubérculo que resta e é **rodada** por ele (com o tubérculo menor preso, a cabeça roda internamente, puxada pelo subescapular). **Quatro partes**: os três segmentos desviados em relação à cabeça, que fica solta, com alto risco de **necrose**. Há ainda as **fraturas-luxações** e as fraturas com **divisão da cabeça** (head split) e **impressão**.\n\n**Como ler a imagem.** No AP e na tomografia axial, a **diáfise** está desviada no colo cirúrgico, o **tubérculo maior** está separado e desviado, e a **cabeça** permanece presa ao **tubérculo menor**: são **três partes**.\n\n**A concordância e o que importa hoje.** A reprodutibilidade de Neer é baixa, e a tomografia ajuda. Hoje, além do número de partes, pesam a **dobradiça medial** e o **calcar** (Hertel) para o risco de necrose, a **idade**, a qualidade óssea e a demanda. Três partes no jovem: **fixação** (placa bloqueada ou haste). No idoso: conservador, fixação ou **artroplastia reversa**.\n\n**Na prova:** Neer conta partes com desvio **acima de 1 cm** ou **45 graus**; colo cirúrgico + tubérculo maior desviados = **três partes**.",
-  "correta": "**3.** O colo cirúrgico e o tubérculo maior estão desviados, e a cabeça segue presa ao tubérculo menor: três partes de Neer.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-879552e1",
+      "neer-ao-e-os-padroes-de-fratura-23f72b4b",
+      "neer-ao-e-os-padroes-de-fratura-3d9e75c3",
+      "neer-ao-e-os-padroes-de-fratura-e828e985",
+      "neer-ao-e-os-padroes-de-fratura-c46dc7b7",
+      "neer-ao-e-os-padroes-de-fratura-d055caa9",
+      "neer-ao-e-os-padroes-de-fratura-e75305ee"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "cb0b26a82203869839e189bb8cc28d36b544c5762c10b35c5ca00fd98c62be62"
+    }
+   ],
+   "questaoSha256": "a61dc72a8e72034ff8f3f4dbdee49a260005e257fc1f00bf1faf2612f4c98b79",
+   "comentarioSha256": "917f56e45b9f32605073c3b71947afdc9ecf2b8d6f1ffefde2734a6da51c7d87"
+  }
  },
  "trauma-0787": {
+  "conceito": "As duas imagens mostram uma nova fratura próxima à **ponta distal de uma haste**, num segmento de canal estreito. A provável causa pedida é o erro de **espessura da haste**, alternativa B: uma haste apertada demais pode fraturar o osso ao ser encravada.\n\nO úmero muda de forma ao descer: sua secção passa de redonda a triangular e o canal afunila no terço distal. Tentar ganhar estabilidade pelo encaixe forçado, inclusive para dispensar o bloqueio distal, transforma a ponta do implante num ponto de concentração de esforço. O resumo descreve exatamente essa armadilha e uma nova fratura na ponta da haste “fixa” (Rockwood, 10ª ed., cap. 37, “Armadilhas e complicações da haste anterógrada”).\n\n**Espessura e bloqueio não são alternativas intercambiáveis.** O diâmetro precisa permitir passagem adequada, e a estabilidade distal deve vir da montagem planejada, não de bater uma haste excessivamente justa até ela prender. O capítulo recomenda bloqueio distal aberto e à mão livre nas hastes convencionais discutidas.\n\nA imagem localiza o problema, mas não permite medir com precisão o diâmetro original do canal nem reconstruir toda a operação. Assim, a espessura excessiva é a explicação provável coerente com o padrão e com a fonte, não um erro intraoperatório demonstrado por uma medida que a questão não forneceu.",
+  "correta": "**B: espessura da haste.** A haste excessivamente justa no canal distal aumenta o risco de fratura em sua ponta. O mecanismo combina afunilamento do osso com passagem forçada do implante.",
   "incorretas": {
-   "A": "**Não gera esse padrão.** Um erro de rotação altera o alinhamento, mas não abre o osso ao redor da ponta da haste.",
-   "C": "**Fratura em outro lugar.** Um ponto de entrada errado causa lesão do manguito, fratura do tubérculo ou desvio proximal, e não fratura no terço distal.",
-   "D": "**Traço diferente.** Um erro no bloqueio causaria fratura ou lesão no trajeto do parafuso, e não a abertura em cunha pela ponta da haste."
+   "A": "**Rotação inadequada produz outro problema de alinhamento.** O resumo pede conferir a rotação antes de bloquear, especialmente na fratura transversa. Isso não explica tão diretamente uma fratura nova junto à ponta encravada no canal distal.",
+   "C": "**O portal precisa ser correto, mas o achado é distal.** A entrada anterógrada deve alinhar o canal e respeitar o manguito. Lesão do manguito e impacto por haste saliente no ombro são armadilhas diferentes da fratura junto à ponta mostrada.",
+   "D": "**Não há imagem de uma perfuração explicando o traço.** Broca e parafuso de bloqueio exigem cuidado com tecidos e comprimento, mas o resumo atribui esse padrão à haste apertada no canal. A ponta e o afunilamento são os elementos decisivos, sem necessidade de inventar uma perfuração não mostrada."
   },
-  "conceito": "**O canal do úmero não é um cilindro.** O canal medular do úmero é largo no terço proximal e médio e se **estreita** progressivamente no terço **distal**, afunilando em direção à fossa olecraniana, com formato de **triângulo** achatado. Uma haste que passa folgada no meio do osso pode **encalhar** no terço distal.\n\n**O que a imagem mostra.** A haste anterógrada foi avançada até o terço distal do úmero, e sua ponta, **larga** para aquela região estreita, abriu o osso como uma cunha: é uma **fratura iatrogênica** do úmero distal, causada por uma haste de **espessura** (diâmetro) **excessiva** para o canal, às vezes também longa demais. É uma complicação clássica da haste umeral.\n\n**Como evitar.** Medir o **diâmetro do istmo** e do canal distal na radiografia pré-operatória. Escolher uma haste **1 a 1,5 mm mais fina** que o canal fresado. **Não forçar** a haste; se houver resistência, parar, verificar com radioscopia e fresar ou trocar por uma haste mais fina. Não avançar além de cerca de 2 a 3 cm acima da fossa olecraniana. **Não fresar** ou fresar com cuidado, porque o úmero tolera mal a fresagem agressiva (nervo radial e calor).\n\n**Outras complicações da haste umeral.** **Dor no ombro** e lesão do manguito pelo ponto de entrada, **impacto** da haste proeminente, lesão do **axilar** no bloqueio proximal, do **radial** e do **musculocutâneo** no bloqueio distal, **pseudartrose** (mais que com placa em algumas séries) e fratura por **distração** do foco. Por isso muitos preferem **placa** na diáfise do úmero, reservando a haste para fraturas segmentares, patológicas e politraumatizados.\n\n**Na prova:** fratura do úmero distal ao redor da ponta da haste = haste **grossa demais** para o canal que afunila distalmente.",
-  "correta": "**Espessura da haste.** A haste de diâmetro excessivo encalhou no canal que se estreita no terço distal e abriu o osso como uma cunha, causando a fratura.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Haste intramedular."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Vias de acesso e os nervos em risco",
+      "Haste intramedular"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-os-nervos-em-risco-187b9899",
+      "haste-intramedular-1a22f0c0",
+      "haste-intramedular-028a8d68",
+      "haste-intramedular-f1d487fa",
+      "haste-intramedular-97e7d24b"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "dd3e0b5e01eb005337d482f9febb2a88d1e46de39cfe0e9e82b2864e98a86c2a"
+    }
+   ],
+   "questaoSha256": "50ab053ff55d1cd82b2d8f7e290129b185a4aae42ee693191f9c44fac1ecbd18",
+   "comentarioSha256": "efc1c62ca144f13ecb3eaa57a23000587ceb19bbd56fdca8c6182b67a1e20d45"
+  }
  },
  "trauma-0788": {
   "conceito": "Na fixação do fragmento **medial** mostrado, a estrutura mais próxima e vulnerável é a **veia subclávia, posterior à clavícula**, alternativa B. A radiografia ajuda a localizar o segmento operado, mas não mostra diretamente a veia.\n\nO subclávio separa o osso do feixe profundo. A veia passa logo abaixo dele, acima da primeira costela, e fica em geral a menos de 1 cm da cortical posterior na metade medial. Mais atrás estão artéria subclávia e plexo, separados da veia pelo escaleno anterior na região medial (Rockwood, 10ª ed., cap. 34, “Nervos e vasos”).\n\n**O risco muda ao longo do osso.** O plexo se aproxima mais no terço médio; os vasos estão particularmente próximos da ponta medial. Por isso não basta escolher “plexo” em toda cirurgia da clavícula. A pergunta localiza a fixação no fragmento medial, onde a proximidade da veia é decisiva.\n\nA segurança depende de evitar que broca, macho e parafuso ultrapassem sem controle a cortical profunda. A placa antiga visível não permite inferir uma lesão vascular já presente nem medir sua distância neste paciente; os números anatômicos vêm do resumo, não da radiografia.\n\n> **Na prova:** medial pede atenção à veia posterior; no terço médio, o plexo também fica especialmente próximo.",
@@ -15819,15 +16052,49 @@
   "conferido": false
  },
  "trauma-0943": {
+  "conceito": "Entre os padrões oferecidos, a prova escolheu a **fratura impactada em valgo**, alternativa C, como a de menor osteonecrose. A explicação clássica é a preservação da **dobradiça medial** e de inserções periosteais em parte desses padrões, permitindo manter vias de irrigação apesar dos traços.\n\nO resumo cita Jakob ao descrever melhor prognóstico das impactadas em valgo **entre as fraturas de quatro partes**. Isso não significa que toda fratura em valgo tenha pouco risco, nem que ela seja melhor que qualquer fratura do úmero proximal. A integridade medial e a extensão metafisária presa à cabeça importam mais que usar “valgo” isoladamente como garantia de viabilidade (Rockwood, 10ª ed., cap. 36, “Quando a necrose aparece” e “Os critérios de Hertel”).\n\n**Os dados mais recentes do próprio capítulo limitam a regra clássica.** Na série Mayo/FJD, o padrão em valgo teve mais necrose que colo cirúrgico e varo posteromedial: mais de 10% sem cirurgia e, após placa, 12% contra 2% nesses outros padrões. São comparações diferentes das quatro alternativas desta prova.\n\nA cabeça recebe ramos posteromediais importantes. Separá-la dos dois tubérculos, fraturar o colo anatômico e romper a dobradiça podem comprometer esse aporte. Isquemia inicial, porém, não determina obrigatoriamente necrose tardia, porque pode ocorrer revascularização.\n\n> **Na prova:** preserve C nesta comparação clássica; na prática, examine o pedículo medial e o padrão completo, sem tratar “valgo” como proteção universal.",
+  "correta": "**C: impactada em valgo, pelo gabarito oficial.** É a resposta clássica apoiada na descrição de Jakob para as quatro partes com preservação medial. A fonte também documenta risco relevante de necrose no valgo, por isso a regra exige contexto.",
   "incorretas": {
-   "A": "**Alto risco.** Nas quatro partes clássicas, a cabeça fica solta e a necrose é frequente.",
-   "B": "**Alto risco.** As fraturas com divisão da cabeça desvascularizam fragmentos articulares.",
-   "D": "**Alto risco.** A fratura desviada do colo anatômico separa a cabeça de todas as inserções."
+   "A": "**Quatro partes não é sinônimo de valgo impactado favorável.** O grupo inclui padrões que isolam a cabeça dos tubérculos e comprometem suas conexões. A alternativa genérica não seleciona a preservação medial invocada na resposta clássica.",
+   "B": "**Lesão da própria cabeça não define menor risco.** Cabeça partida e outros padrões articulares exigem avaliar viabilidade e reconstrução, podendo levar à artroplastia. A opção não descreve a configuração com dobradiça preservada que explica o gabarito.",
+   "D": "**O colo anatômico é um preditor de isquemia.** Um traço nessa região pode separar o segmento articular das conexões metafisárias; ele integra os preditores independentes de Hertel. Não é a opção clássica de menor risco, embora isquemia não signifique necrose inevitável."
   },
-  "conceito": "**O que decide a necrose.** A cabeça do úmero é irrigada pelas **circunflexas**, sobretudo a **posterior**, que entra pela região **posteromedial**, junto ao **calcar**. O que define se a cabeça sobrevive após a fratura é se ela manteve uma **ponte de partes moles** capaz de perfundi-la, principalmente o **periósteo medial** (a dobradiça medial).\n\n**Os critérios de Hertel.** Três achados predizem a **isquemia** da cabeça: **extensão metafisária** posteromedial **menor que 8 mm** (pouco calcar preso à cabeça), **ruptura da dobradiça medial** com desvio **maior que 2 mm**, e traço no **colo anatômico**. Com os três, a chance de isquemia é muito alta. Fraturas em **quatro partes** desviadas, fraturas do **colo anatômico** e fraturas com **divisão da cabeça** (head split) têm as maiores taxas de necrose.\n\n**A fratura impactada em valgo.** É um tipo especial de fratura em **quatro partes**: a cabeça bascula em **valgo** e se impacta sobre a metáfise, e os tubérculos se afastam, mas a **dobradiça medial** e o **periósteo medial** permanecem **íntegros**. Com isso, a cabeça continua perfundida, e a taxa de **necrose é baixa** (bem menor que nas quatro partes clássicas). O tratamento pode ser conservador (se o desvio for aceitável) ou cirúrgico, **elevando** a cabeça e reduzindo os tubérculos por baixo dela, preservando a dobradiça medial.\n\n**Como isso muda a conduta.** No idoso com fratura de alto risco de necrose (quatro partes clássicas, head split), a **artroplastia reversa** é frequentemente preferida. No jovem, tenta-se a fixação mesmo com risco, porque a necrose parcial pode ser bem tolerada.\n\n**Na prova:** menor incidência de necrose no úmero proximal = fratura **impactada em valgo** (dobradiça medial íntegra); maior = quatro partes, colo anatômico, head split.",
-  "correta": "**Impactada em valgo.** A cabeça bascula sem se soltar da dobradiça medial, e o periósteo medial íntegro continua a perfundi-la.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Fixação percutânea, fixador externo e banda de tensão."
+  ],
+  "conferido": false,
+  "alerta": "C oficial preservada: segue a comparação clássica de Jakob entre fraturas de quatro partes. O resumo não sustenta menor risco universal do valgo: a série Mayo/FJD mostrou mais necrose nesse padrão que no colo cirúrgico ou varo posteromedial. Preservação da dobradiça medial e o grupo comparador precisam ser considerados.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Irrigação da cabeça, Hertel e osteonecrose",
+      "Fixação percutânea, fixador externo e banda de tensão"
+     ],
+     "blocos": [
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-947a14e4",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+      "fixacao-percutanea-fixador-externo-e-banda-de-te-abb4b062"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "df3de0fe9d393320401cb0ae071c5119f56c45bc737664e8b3581d4c56aa99b9"
+    }
+   ],
+   "questaoSha256": "1287e6e5d7dd4d5386d2aece65f6f80e3af3fabae8360c5eecb0da93a534c76e",
+   "comentarioSha256": "79911f560195c97810f921ea03e9381a80c742ebc3b85ad1f6afd08adee7fee0"
+  }
  },
  "trauma-0944": {
   "conceito": "A fratura de **Galeazzi** é a fratura da diáfise do rádio, tipicamente no terço distal, associada à lesão da articulação radioulnar distal. O mecanismo clássico é a queda sobre a mão espalmada (carga axial com o **punho em extensão**) e o antebraço em **pronação**, muitas vezes descrita como hiperpronação; existe ainda a variante por trauma direto sobre a face dorsorradial do punho.\n\nUma vez instalada, quatro forças deformam o fragmento distal do rádio e explicam por que o gesso falha no adulto: o pronador quadrado o roda em pronação e o traciona em direção à ulna; o braquiorradial, inserido no estiloide radial, encurta o rádio; o extensor longo do polegar acentua o desvio; e o peso da mão angula o foco.\n\nÉ a \"fratura da **necessidade**\" de Campbell: no adulto, a redução aberta com placa de compressão é obrigatória (pela via volar de Henry), restaurando comprimento, curvatura e rotação do rádio. Feito isso, **testa-se** a radioulnar distal no intraoperatório com a manobra da tecla de piano e o teste de gaveta comparativo.\n\nOs sinais radiográficos de alta suspeição de instabilidade são cinco:\n- Traço de fratura a **menos de 7,5 cm** da superfície articular distal do rádio\n- **Encurtamento** do rádio maior que 5 mm\n- **Alargamento** do espaço da radioulnar distal na incidência em frente\n- **Luxação** da ulna no perfil\n- Fratura da **base** do estiloide da ulna, que arranca a fóvea com a inserção profunda dos ligamentos radioulnares, ao contrário da fratura da ponta, que não significa instabilidade\n\nSe a articulação estiver instável mas redutível, imobiliza-se em **supinação** por quatro a seis semanas; se irredutível, explora-se, porque a estrutura habitualmente interposta é o tendão do extensor ulnar do carpo. Na criança, ao contrário do adulto, o tratamento incruento costuma bastar.",
@@ -19183,16 +19450,49 @@
   "conferido": false
  },
  "trauma-1101": {
-  "conceito": "### Dois parâmetros no calcar\n\nHertel estudou a perfusão da cabeça umeral durante a cirurgia e identificou dois parâmetros radiográficos que mais pesam: o comprimento da **extensão metafisária posteromedial** que continua presa à cabeça e a integridade da **dobradiça medial**, ou seja, se a cabeça ainda mantém contato com a diáfise pelo calcar.\n\nOs vasos que chegam pela cápsula posteromedial sobrevivem quando ==a dobradiça medial está mantida e a extensão metafisária passa de 8 mm==. Quando a extensão é menor que 8 mm e a dobradiça está rompida, com desvio acima de 2 mm, o risco de isquemia sobe muito, principalmente se o traço for no colo anatômico. Esses dados ajudam a decidir entre fixar e substituir a cabeça.\n\n> **Na prova:** Hertel olha a dobradiça medial e a extensão metafisária de 8 mm.",
-  "correta": "**Correta.** Os critérios de Hertel usam a dobradiça medial e a extensão metafisária de 8 mm; mantidas as duas, a cabeça conserva a perfusão.",
+  "conceito": "Os critérios de Hertel avaliam a **extensão metafisária presa à cabeça** e a **dobradiça medial**. A alternativa D reúne esses dois parâmetros no sentido **mais favorável**: contato medial mantido e extensão maior que 8 mm. Ela é a resposta oficial, mas não descreve a combinação de maior risco.\n\nOs preditores independentes de isquemia estudados foram **extensão metafisária de 8 mm ou menos**, **dobradiça medial rompida** e **traço no colo anatômico**. A explicação está nos ramos vasculares posteromediais: uma cabeça que mantém calcar e continuidade medial tem mais chance de preservar essas conexões (Rockwood, 10ª ed., cap. 36, “Os critérios de Hertel”).\n\n**O enunciado pergunta quais parâmetros os critérios consideram.** Não diz que a resposta deve trazer todos no sentido desfavorável. Essa leitura permite reconhecer D sem ensinar que contato preservado e calcar longo aumentam a isquemia. A radiografia mostra a fratura, mas não fornece aqui uma medida calibrada da extensão metafisária.\n\nCabeça partida faz parte da classificação LEGO, mas não foi um dos três preditores independentes destacados. Além disso, **isquemia intraoperatória não equivale a necrose tardia inevitável**: o acompanhamento teve correlação ruim entre os eventos, possivelmente por revascularização.\n\n> **Na prova:** os parâmetros são calcar e dobradiça; curto e rompida são desfavoráveis. A opção oficial D os apresenta no sentido protetor.",
+  "correta": "**D: manutenção do contato da dobradiça e extensão metafisária maior que 8 mm.** Identifica os dois parâmetros considerados. O sentido é de preservação vascular, não de risco aumentado; os achados desfavoráveis são ruptura e extensão curta.",
   "incorretas": {
-   "A": "**Errada: split não é critério central.** O split da cabeça agrava a lesão, mas os parâmetros de Hertel são a dobradiça e a extensão metafisária.",
-   "B": "**Errada: split não é critério central.** Mesmo com o valor de 8 mm, falta a dobradiça medial.",
-   "C": "**Errada: combinação incoerente.** Extensão menor que 8 mm é justamente o achado desfavorável, não o que acompanha a dobradiça mantida."
+   "A": "**Mistura um critério de risco verdadeiro com um item da classificação.** Extensão menor que 8 mm é desfavorável, mas head-split não integrou os preditores independentes de isquemia destacados. Falta a dobradiça medial no par.",
+   "B": "**Usa head-split e inverte o sentido da extensão.** Cabeça partida é importante para classificar e planejar tratamento, mas não substitui a dobradiça nos preditores citados; extensão maior que 8 mm é o lado mais favorável.",
+   "C": "**Também nomeia os dois parâmetros, com sentidos mistos.** Contato mantido é favorável e extensão menor que 8 mm é desfavorável. Por isso, se a pergunta for lida apenas como “quais parâmetros”, C também os contém. A preferência por D deve ser entendida como a combinação favorável completa escolhida pela banca, não como se C tratasse de critérios inexistentes."
   },
-  "referencias": [],
-  "geradoEm": "2026-09-26",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Neer, AO e os padrões de fratura."
+  ],
+  "conferido": false,
+  "alerta": "D oficial preservada. Ela apresenta os parâmetros no sentido protetor; os preditores de isquemia são extensão de 8 mm ou menos e dobradiça rompida, além do colo anatômico. Como C também nomeia dobradiça e extensão, a redação “consideram” permite ambiguidade. Não ensinar que a manutenção do contato ou extensão maior que 8 mm aumente o risco.",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Irrigação da cabeça, Hertel e osteonecrose",
+      "Neer, AO e os padrões de fratura"
+     ],
+     "blocos": [
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+      "neer-ao-e-os-padroes-de-fratura-a63a2d68"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "baf51aa3bab20ca5bd7bae5770c242be9a56f68ff6fbaa84a3b0336eef8de3f2"
+    }
+   ],
+   "questaoSha256": "787794f19a99682e2396ebd6672d5d598cb3b4eafcbb1745177287e32aa38541",
+   "comentarioSha256": "d7a311d8524ece2337f906e5c8ba39bf0a1d647a93e41a70eeadfee70643512c"
+  }
  },
  "trauma-1102": {
   "incorretas": {
@@ -20745,17 +21045,48 @@
   "conferido": false
  },
  "trauma-1177": {
+  "conceito": "Contar **quatro partes** não basta para concluir que a redução aberta com fixação interna produzirá o melhor resultado. A afirmação é ampla demais; a resposta **provável é B, errado**, sem gabarito oficial disponível no acervo.\n\nNeer conta segmentos desviados, mas seus limites foram escolhidos arbitrariamente e não foram feitos para indicar cirurgia. Nas quatro partes, viabilidade e reconstrução da cabeça, tamanho dos tubérculos, qualidade óssea, idade e demanda funcional mudam a escolha. Uma cabeça reconstruível num jovem e uma fratura complexa osteoporótica num idoso não são a mesma decisão (Rockwood, 10ª ed., cap. 36, “Os quatro segmentos de Codman e Neer” e “Fixar ou trocar”).\n\nO resumo descreve estudos sem vantagem funcional clara da placa contra tratamento conservador em três e quatro partes, além de situações em que **artroplastia** é preferida: cabeça partida, impacção extensa, cabeça luxada e solta, ou padrões complexos com osso fraco. Isso não proíbe fixar quatro partes; refuta dizer que a categoria inteira tem melhores resultados com uma única técnica.\n\nO ProFHER também exige cuidado: não demonstrou vantagem relevante da cirurgia nas fraturas desviadas do colo cirúrgico incluídas, mas **excluiu fraturas-luxações e casos considerados claramente cirúrgicos**. Não pode ser usado para dizer que nenhuma fratura complexa deve ser operada.\n\n> **Na prova:** quatro partes descreve o padrão; não determina sozinho qual tratamento é superior.",
+  "correta": "**B: errado, como resposta provável pela fonte.** A superioridade geral da fixação interna não é demonstrada. Há pacientes e padrões para fixação, outros para prótese e outros para tratamento conservador; a escolha depende de mais informações que a contagem de partes.",
   "incorretas": {
-   "A": "**Certo poderia ser em um paciente selecionado com fratura reconstruível.** Preservar a cabeça por fixação é objetivo razoável, mas não garante o melhor resultado em todos os casos."
+   "A": "**Transforma uma possibilidade em superioridade universal.** A fixação pode ser apropriada quando a cabeça é reconstruível e a montagem pode sustentar a redução. Contudo, o resumo relata comparações sem benefício claro da placa e indicações de artroplastia em padrões complexos. A frase não fornece as condições que permitiriam preferir a fixação."
   },
-  "conceito": "**O que significa quatro partes.** Na classificação de Neer, cabeça, tubérculo maior, tubérculo menor e diáfise tornam-se segmentos deslocados. Esse padrão pode interromper a irrigação da cabeça e dificultar redução estável, sobretudo em osso osteoporótico. A classificação descreve a anatomia, mas não escolhe sozinha a operação.\n\n**Fixação tem limites.** Redução aberta e placa bloqueada podem preservar a cabeça em pacientes selecionados, especialmente mais jovens, com osso e fragmentos reconstruíveis. Porém, falha em varo, penetração dos parafusos, pseudartrose tubercular e necrose avascular prejudicam o resultado. Charneira medial comprometida e extensão metafisária posteromedial da cabeça menor que 8 mm aumentam preocupação com perfusão, conforme critérios de Hertel.\n\n**Alternativas conforme o paciente.** Em pacientes idosos com fratura irreconstruível ou baixa qualidade óssea, artroplastia reversa pode ser opção; outros casos permitem tratamento não operatório ou outra reconstrução. Estudos não sustentam a afirmação de que toda fratura em quatro partes obtém resultado superior com redução aberta e fixação interna. Função prévia, demanda, manguito rotador e risco cirúrgico precisam entrar na decisão.",
-  "correta": "**Errado: não há superioridade universal da fixação aberta.** O padrão em quatro partes tem alto risco de falha ou necrose e requer escolha individualizada.",
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. III, p. 2992."
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura; Placa bloqueada: o parafuso, o calcar e a técnica; Quando operar: padrão, desvio e o ProFHER; Artroplastia: hemiartroplastia e reversa."
   ],
+  "conferido": false,
+  "alerta": "Sem gabarito oficial disponível. B é provável pelo resumo consultado; não representa resposta oficial da banca nem uma proibição de fixação interna de toda fratura em quatro partes.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
-  "conferido": false
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura",
+      "Placa bloqueada: o parafuso, o calcar e a técnica",
+      "Quando operar: padrão, desvio e o ProFHER",
+      "Artroplastia: hemiartroplastia e reversa"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-23f72b4b",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-b0611b94",
+      "quando-operar-padrao-desvio-e-o-profher-e2ac6522",
+      "quando-operar-padrao-desvio-e-o-profher-1c41a47b",
+      "artroplastia-hemiartroplastia-e-reversa-d059acac"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "5c0448f3696f97f0cad9ce85227c103dda4eee9b667a7bc177ed151b023c33ef"
+    }
+   ],
+   "questaoSha256": "ae8edf71819716a6b463bb20e2fba5c9f5b4d771ec94f7c89ecd77e6e6339a50",
+   "comentarioSha256": "7dfbdbf7c6298d63f926efddbbe0b31ba20d301c044f19d6765bd769fe1cbc9e"
+  }
  },
  "trauma-1178": {
   "incorretas": {
@@ -23695,19 +24026,46 @@
   "provavel": "A"
  },
  "trauma-1294": {
-  "conceito": "A fratura proximal do úmero pode lesar nervos por tração, contusão e deslocamento dos fragmentos. O exame clínico não detecta todas as lesões: dor e incapacidade de mobilizar o ombro dificultam distinguir fraqueza por fratura de desnervação. Estudos com eletromiografia documentam acometimento subclínico relevante.\n\nO axilar e o supraescapular foram os mais envolvidos em uma série prospectiva específica. O axilar inerva deltoide e redondo menor; o supraescapular, supraespinal e infraespinal. A resposta refere-se a essa distribuição, não a uma taxa universal de lesão grave. Neuropraxias podem recuperar, e lesão eletrofisiológica não significa indicação automática de exploração.",
-  "correta": "Axilar e supraescapular foram os mais atingidos na avaliação eletromiográfica prospectiva citada. A fraqueza pode envolver simultaneamente deltoide e manguito, prolongando a recuperação funcional. O achado exige acompanhamento e documentação, sem inferir que toda lesão é irreversível.",
+  "conceito": "Depois de uma fratura do úmero proximal, o par mais atingido nos dados eletromiográficos do resumo é **axilar e supraescapular**, alternativa C. As frequências citadas são **58% e 48%**, respectivamente, com lesões combinadas; não são categorias que precisem somar 100%.\n\nO axilar fica vulnerável a tração, contusão ou laceração pela diáfise desviada medialmente. Ele inerva deltoide e redondo menor e fornece sensibilidade à face lateral do braço. Por isso, o exame deve procurar alteração sensitiva nessa região e avaliar a contração isométrica do deltoide, sem confundir limitação dolorosa da fratura com paralisia já demonstrada (Rockwood, 10ª ed., cap. 36, “Lesões associadas: nervos”).\n\n**Detecção elétrica não equivale a perda motora completa no exame.** A eletromiografia encontra lesão em até dois terços das fraturas da série discutida; esses números descrevem esse método de investigação. A fratura desviada de alta energia aumenta o risco, mas queda da própria altura não o exclui.\n\nO radial é fundamental nas fraturas da diáfise; transferir essa associação ao úmero proximal troca o nível anatômico da pergunta. Sem gabarito oficial no acervo, C fica identificada como resposta provável sustentada pela fonte.",
+  "correta": "**C: axilar e supraescapular, como resposta provável.** São os dois nervos mais acometidos nos dados eletromiográficos citados no resumo, com possibilidade de lesões combinadas. A fonte permite escolher esse par sem criar uma resposta oficial.",
   "incorretas": {
-   "A": "O axilar é um nervo importante nesse cenário, mas o peitoral lateral não constitui o segundo mais frequentemente documentado na série que fundamenta a questão. O peitoral participa da inervação do peitoral maior, não do principal conjunto de músculos do manguito posterior.",
-   "B": "O supraescapular está corretamente incluído; o radial não é a associação mais típica para o úmero proximal. O radial merece atenção especial em fraturas da diáfise e determinadas lesões distais. A questão exige relacionar o nervo ao segmento anatômico fraturado.",
-   "D": "O axilar está correto, mas a associação com radial desloca o raciocínio para um padrão mais conhecido de fratura diafisária. Lesões radiais podem ocorrer, porém não são a segunda frequência que a questão cobra. A presença de dor não dispensa avaliação neurológica por território."
+   "A": "**Inclui o axilar, mas não o segundo nervo mais frequente descrito.** O resumo coloca o supraescapular nessa posição; não fornece uma frequência do peitoral lateral que permita promovê-lo ao par solicitado.",
+   "B": "**Reconhece o supraescapular e substitui o axilar pelo radial.** O radial tem forte associação com a diáfise umeral, enquanto a série proximal destaca o axilar como o mais acometido.",
+   "D": "**O axilar está correto, o radial não completa o par.** A localização proximal exige associar o supraescapular ao axilar. A conhecida vulnerabilidade do radial no sulco espiral pertence a outro segmento do úmero."
   },
   "referencias": [
-   "Nerve lesions in proximal humeral fractures. https://pubmed.ncbi.nlm.nih.gov/11641698/"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Lesões associadas: nervos, artéria, manguito e outras fraturas; Anatomia aplicada e vias de acesso."
   ],
-  "geradoEm": "2026-10-07",
   "conferido": false,
-  "provavel": "C"
+  "alerta": "Sem gabarito oficial disponível no acervo. C é a resposta provável pelos dados do resumo; 58% e 48% são achados eletromiográficos com lesões combinadas, não taxas de paralisias completas isoladas.",
+  "provavel": "C",
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Lesões associadas: nervos, artéria, manguito e outras fraturas",
+      "Anatomia aplicada e vias de acesso"
+     ],
+     "blocos": [
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-01451d2b",
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5",
+      "anatomia-aplicada-e-vias-de-acesso-f121538c"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "1c7ab9b610329b727004629434f8aa4d20d88c1bda7517629ac45020be88ef6b"
+    }
+   ],
+   "questaoSha256": "f9ba8d24aab825d517dd773756302e02a345b0283872eacf4354cb7d4ac62d78",
+   "comentarioSha256": "e89cb424c7770d32dc075c1fb8d73d892c9d9b66a4890aff3ac912ee61ad5035"
+  }
  },
  "trauma-1295": {
   "conceito": "**Após reconstruir coronoide e cabeça radial, ainda é necessário recuperar a contenção lateral.** Na tríade terrível, o complexo lateral costuma estar avulsionado de sua origem no epicôndilo. O roteiro do resumo o repara, testa em diferentes rotações e só então indica reparo medial se a instabilidade persistir.\n\nA cabeça radial deve ser preservada por fixação ou substituída, e o coronoide precisa receber tratamento compatível com o padrão. Essas etapas ósseas não dispensam o lateral; de modo semelhante, reparar o lateral não garante que o medial esteja competente. O teste entre as etapas decide se é necessário ampliar a reconstrução.\n\nSe o cotovelo continua instável após o tratamento necessário das contenções, o capítulo inclui estabilização adicional, como fixador externo estático, estabilizador interno articulado ou placa-ponte temporária. Esses recursos são suporte para um conjunto ainda insuficiente, não a primeira escolha automática antes de reconstruir o lateral.\n\nA alternativa C corresponde diretamente a esse roteiro. O acervo não tem gabarito oficial para a questão; por isso a resposta é registrada como **provável pela fonte**, sem transformar a inferência em resposta oficial da prova.\n\n**Leia “A ordem da cirurgia” no resumo da Biblioteca e acompanhe os verbos “reparar”, “testar” e “se continuar instável”.** As condições importam tanto quanto os nomes dos ligamentos: evitam operar o medial ou instalar suporte adicional de forma automática.",
@@ -26684,18 +27042,44 @@
   }
  },
  "trauma-1371": {
-  "conceito": "**O epônimo reúne morfologia e localização.** A fratura de HOLSTEIN-LEWIS é uma fratura espiral simples e desviada do terço distal da diáfise do úmero. O fragmento distal desvia para o lado radial. Não basta reconhecer uma espiral em qualquer segmento: a localização distal faz parte da descrição apresentada no capítulo. A figura 37-4 compara o trajeto do radial ao lado de um úmero íntegro e ao lado dessa fratura, mostrando sua proximidade com os fragmentos.\n\nA diáfise é a região entre o colo cirúrgico e a crista supracondiliana. Para descrever o nível de uma fratura, o capítulo a divide em terços proximal, médio e distal. A morfologia constitui outro atributo: fraturas simples têm dois fragmentos principais; nas fraturas em cunha existem fragmentos intermediários, mas os principais podem manter contato após a redução; nas complexas, esse contato não é restabelecido. A palavra espiral descreve o traço, enquanto terço distal descreve o nível. Confundir essas duas informações permite acertar metade de uma alternativa em pares e errar a resposta completa.\n\n**Por que o radial importa nesse padrão.** O radial percorre o compartimento posterior entre as cabeças longa e lateral do tríceps, passa pelo sulco espiral e segue junto ao osso em direção posterolateral. Depois, torna-se anterior na região distal do braço. Essa relação com o úmero explica tanto a vulnerabilidade à fratura como o cuidado exigido na dissecção e na passagem de implantes. O musculocutâneo também é relevante na diáfise, mas aparece especialmente no compartimento anterior e na janela distal da fixação minimamente invasiva.\n\nHOLSTEIN e LEWIS relacionaram esse padrão a maior frequência de paralisia radial e a possível aprisionamento do nervo na fratura. O texto informa que o padrão representa cerca de 7% das fraturas da diáfise. Esse número identifica a frequência do padrão, não a probabilidade de paralisia radial em cada paciente. Na avaliação inicial, é preciso examinar a extensão do punho e dos dedos e a sensibilidade dorsal da mão, documentando o que efetivamente foi possível testar.\n\n**Identificar a fratura não determina exploração obrigatória.** A descrição original recomendava explorar o nervo quando houvesse sintomas. Estudos posteriores mantiveram a associação com lesão radial, mas sustentaram tratamento não operatório mesmo com sintomas em casos selecionados, porque a recuperação espontânea é frequente. O capítulo separa essa situação das lesões abertas, penetrantes, com dano vascular ou importante comprometimento de partes moles, nas quais há motivos para exploração precoce.\n\nAssim, a questão cobra o reconhecimento de uma combinação anatômica, não uma regra cirúrgica absoluta. A figura permite localizar o traço distal e sua forma espiral; o rótulo do nervo ajuda a compreender o contexto, mas não substitui a leitura do desenho ósseo. O formato reproduz a lógica da banca: dois atributos reais do mesmo assunto são cruzados, exigindo que ambos coincidam com a descrição do livro.\n\n> **Na prova:** HOLSTEIN-LEWIS combina traço espiral e terço distal; a atenção ao radial não significa exploração automática.",
-  "correta": "**B: espiral; terço distal.** A descrição da página 4 associa uma fratura espiral simples, desviada, do úmero distal ao epônimo HOLSTEIN-LEWIS. A figura 37-4, na página 5 do PDF, mostra o traço no segmento distal e o radial junto aos fragmentos. Portanto, a alternativa reúne os dois atributos exigidos: forma espiral e terço distal.\n\nO dado adicional decisivo é a associação com maior risco de lesão radial, que não equivale a obrigatoriedade de exploração em toda fratura fechada. O capítulo relata a evolução da recomendação original para uma abordagem que considera recuperação espontânea e lesões associadas. Reconhecer o epônimo serve para aumentar a atenção ao exame neurológico, sem transformar a imagem em indicação cirúrgica isolada.",
+  "conceito": "O desenho mostra uma fratura **espiral no terço distal da diáfise**, com o nervo radial passando junto ao traço. É o padrão de **Holstein-Lewis**, alternativa B. A linha não corta o osso transversalmente: ela percorre um trajeto oblíquo e espiralado perto da extremidade distal do segmento diafisário.\n\nA relação com o radial explica por que o epônimo é relevante. O nervo percorre o sulco espiral, colado ao osso, e depois atravessa o septo lateral. Nessa região distal, o deslocamento dos fragmentos pode tensioná-lo ou prendê-lo; o resumo descreve a ponta do fragmento distal desviada para o lado radial e maior associação com paralisia (Rockwood, 10ª ed., cap. 37, “A lesão primária”).\n\n**Reconhecer o padrão não significa explorar automaticamente.** Holstein e Lewis recomendaram exploração quando havia paralisia, mas estudos posteriores sustentaram observação inicial na fratura fechada, inclusive nesse padrão. Lesão vascular, ferimento penetrante, fratura exposta ou dano importante de partes moles mudam a avaliação. A imagem ensina a vizinhança do nervo, mas não determina sozinha sua continuidade nem a conduta de um paciente real.\n\n> **Na prova:** Holstein-Lewis = espiral da diáfise distal; o radial é o nervo associado, sem indicação automática de exploração pela forma do traço.",
+  "correta": "**B: espiral; terço distal.** A combinação coincide com o desenho e com a definição independente do resumo. Trata-se da diáfise distal, não de uma fratura articular do úmero distal.",
   "incorretas": {
-   "A": "**Acerta o traço, troca o segmento.** Fraturas espirais podem ocorrer na diáfise, e o terço médio é o nível mais frequente das fraturas umerais diafisárias no panorama epidemiológico do capítulo. Essa frequência geral não define HOLSTEIN-LEWIS. O epônimo é descrito no terço distal, com desvio do fragmento distal para o lado radial e relação particular com o nervo. A alternativa usa uma localização verdadeira do assunto, mas a combina com o padrão errado para essa identificação.",
-   "C": "**É um padrão frequente da diáfise média.** A revisão epidemiológica citada no início do capítulo relaciona o terço médio principalmente a fraturas transversas. São traços simples importantes para o planejamento da compressão interfragmentar e para evitar distração na fixação. Entretanto, essa combinação não corresponde ao epônimo da figura. Aqui, o traço é espiral e distal. O distrator aproveita dois dados reais da distribuição das fraturas, mas pertence a outro padrão morfológico e topográfico.",
-   "D": "**Acerta o nível, substitui a morfologia.** O terço distal realmente faz parte da descrição de HOLSTEIN-LEWIS, e fraturas transversas da diáfise também são discutidas no capítulo como traços simples que exigem atenção à redução e à compressão. A presença de um traço distal, por si só, não autoriza o epônimo. É necessário identificar a espiral simples e desviada. Na figura, a linha oblíqua que contorna o osso diferencia esse padrão de uma interrupção transversal da diáfise."
+   "A": "**Reconhece a espiral, mas sobe o nível.** O traço representado e o padrão nomeado ficam no terço distal. Fraturas espirais podem ocorrer em outros níveis, porém isso não as torna Holstein-Lewis.",
+   "C": "**Erra forma e nível.** Transverso seria um traço que corta o eixo longo de modo aproximadamente perpendicular, e o terço médio fica acima da região indicada. Nenhum desses dois elementos define o desenho.",
+   "D": "**Acerta a região, mas transforma a espiral em transversa.** O risco ao radial não depende de qualquer traço distal receber o epônimo; a definição requer o padrão espiral descrito."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: O nervo radial."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "O nervo radial"
+     ],
+     "blocos": [
+      "o-nervo-radial-01d076e8",
+      "o-nervo-radial-69792673",
+      "o-nervo-radial-c7126417",
+      "o-nervo-radial-860854a5"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "8c80e561eee0e855cc1eb3483e570e3766be5e5eb49218e0273cae6cd4901ec2"
+    }
+   ],
+   "questaoSha256": "c9bffc302417bf7b554c675b8eb639b833eaffd171066ce00e26c8b0d6dfe506",
+   "comentarioSha256": "8397b914f928534c1b4c3ded3ae2976933041fda02115ddb9716b7fc637fca51"
+  }
  },
  "trauma-1372": {
   "conceito": "Numa fratura **fechada e isolada**, a paralisia radial que já estava presente no primeiro exame costuma ser manejada inicialmente com **observação clínica**, alternativa A. Ela não transforma, sozinha, toda fratura em indicação de exploração cirúrgica.\n\nO radial corre colado ao úmero no sulco espiral e depois atravessa o septo lateral. O deslocamento pode contundi-lo ou tracioná-lo; a frequência de lesão primária nas fechadas é de 10–12% no resumo. A política expectante preferida se baseia na recuperação espontânea frequente e na falta de benefício demonstrado da exploração rotineira precoce (Rockwood, 10ª ed., cap. 37, “Conduta: esperar, com exceções”).\n\n**Observar não é deixar sem assistência.** É preciso documentar força e sensibilidade, manter mobilidade, oferecer órtese funcional do punho e acompanhar a recuperação. O capítulo propõe eletroneuromiografia por volta de três meses se não houver melhora, admitindo investigação mais precoce em sintomas persistentes em outra seção. Sem recuperação em seis meses, discute reconstrução nervosa e/ou transferência.\n\nO cenário muda com lesão vascular, ferimento penetrante, exposta ou dano importante de partes moles. Se a fratura precisar ser operada por seus próprios critérios, o texto também recomenda explorar e proteger o nervo no ato. São exceções e contextos adicionais, não dados fornecidos por este enunciado.\n\n**Por que esta questão foi criada.** Ela separa o déficit primário da fratura fechada das situações em que há evidência ou suspeita forte de lesão que exige exploração precoce.",
@@ -26819,32 +27203,88 @@
   }
  },
  "trauma-1375": {
-  "conceito": "**A janela seleciona a estrutura em risco.** A osteossíntese minimamente invasiva com placa, ou MIPO, utiliza incisões separadas e um túnel para passar o implante, evitando exposição direta ampla do foco. Na diáfise umeral, a técnica anterior descrita no capítulo tem uma janela proximal e outra distal. Essa forma de acesso preserva tecidos do foco, mas não elimina o risco neural: a proximidade dos nervos exige dissecção cuidadosa em cada janela.\n\nA incisão proximal é feita entre a borda lateral da porção proximal do bíceps e a borda medial do deltoide. A distal acompanha a borda lateral do bíceps, aproximadamente 5 cm acima da prega do cotovelo. No intervalo entre bíceps e braquial, o cirurgião deve reconhecer e proteger o musculocutâneo antes de dividir o braquial longitudinalmente. A pequena extensão da pele não torna seguro trabalhar sem identificar a estrutura.\n\n**O braquial separa os territórios neurais.** Na técnica anterior, o musculocutâneo é afastado com a metade medial do braquial, enquanto a metade lateral protege o radial. Portanto, ambos importam para a segurança, mas a estrutura especificamente encontrada e protegida na janela distal anterior é o musculocutâneo. O radial torna-se especialmente relevante ao lateralizar instrumentos, passar a placa ou perfurar a cortical oposta. Nas vias lateral e posterior, a identificação e proteção do radial também são destacadas.\n\nO capítulo relaciona o musculocutâneo ao compartimento anterior e à passagem longitudinal no úmero distal, lateralmente ao conjunto mediano e artéria braquial. O mediano e a artéria percorrem a região medial do compartimento anterior. O ulnar muda do compartimento anterior para o posterior na região da arcada de STRUTHERS e segue para o túnel cubital. Essas relações explicam por que escolher um nervo só por sua frequência nas fraturas pode produzir a resposta errada para uma incisão específica.\n\n**Pouca exposição não significa ausência de complicação.** A página 31 alerta para lesão pelo implante, instrumentos de tunelização e parafusos. Recomenda identificar o musculocutâneo antes de dividir o braquial e proteger o radial nos acessos em que ele está vulnerável. O texto também desaconselha o uso de afastadores pontiagudos e destaca o perigo da perfuração anteroposterior na região média. Essas são precauções de técnica, não uma comparação universal de superioridade entre MIPO e redução aberta.\n\nO TEOT 2023 cobrou o musculocutâneo na técnica LIVANI-BELANGERO, e uma questão complementar do acervo especifica a incisão distal. Esta questão torna o recorte anatômico explícito para evitar ambiguidade. Embora a página 30 mencione supinação no contexto de proteção neural, o efeito isolado dessa manobra não é o fato perguntado. A resposta depende da janela anterior distal e do plano entre bíceps e braquial, que são descritos diretamente.\n\nOs autores ressaltam experiência e planejamento, inclusive excluir extensão metafisária duvidosa antes de selecionar a técnica. O benefício teórico de preservar o foco não permite sacrificar identificação neural ou estabilidade suficiente para mobilizar as articulações. A banca combina nome do procedimento, tempo da dissecção e nervo vulnerável; a leitura precisa desse contexto vale mais que responder radial para toda pergunta sobre o úmero.\n\n> **Na prova:** Janela distal anterior da MIPO: identificar o musculocutâneo antes de dividir o braquial.",
-  "correta": "**D: musculocutâneo.** A página 30 descreve a janela distal anterior entre bíceps e braquial e orienta evitar lesão do musculocutâneo. Em seguida, o braquial é dividido, com o musculocutâneo afastado junto à metade medial. A página 31 reforça que esse nervo precisa ser identificado e protegido antes da divisão muscular. O enunciado delimita exatamente esse tempo da técnica.\n\nO radial continua em risco, especialmente em abordagens lateral ou posterior, perfuração e passagem do material. Isso não o transforma na resposta à estrutura identificada nessa janela anterior. A proteção pelo braquial e o reconhecimento do musculocutâneo são medidas complementares. A resposta reproduz a tendência recente da banca com uma localização anatômica mais precisa.",
+  "conceito": "Na janela distal da placa minimamente invasiva anterior, o nervo que precisa ser identificado é o **musculocutâneo**, alternativa D. A incisão pequena não elimina o risco: ela pode justamente esconder uma estrutura que atravessa o campo.\n\nA janela é aberta junto à borda lateral do bíceps, perto do cotovelo. Ao encontrar o intervalo entre bíceps e braquial, identifica-se o musculocutâneo; a divisão longitudinal central do braquial permite afastá-lo **com a metade medial**. A metade lateral é mantida como proteção do radial. Essa anatomia explica por que o resumo recomenda **supinação completa do antebraço e exposição suficiente para ver o nervo**, em vez de insistir numa janela mínima a qualquer custo (Rockwood, 10ª ed., cap. 37, “A técnica anterior e o musculocutâneo”).\n\n**O radial continua em risco.** A placa passa por um túnel extraperiosteal e os parafusos podem ultrapassar a cortical oposta; logo, reconhecer o musculocutâneo na janela não torna segura toda a operação. O resumo relata proximidade importante do radial ao implante e recomenda evitar afastadores pontiagudos e trajetos perigosos de broca e parafusos.\n\n> **Na prova:** janela distal anterior: identificar o musculocutâneo, levá-lo com a metade medial do braquial e preservar a proteção lateral do radial.",
+  "correta": "**D: musculocutâneo.** Ele é identificado entre bíceps e braquial na janela distal. A supinação e uma abertura suficiente ajudam a protegê-lo durante a divisão muscular e a passagem do implante.",
   "incorretas": {
-   "A": "**É importante no trajeto medial e posterior distal.** O capítulo descreve o ulnar próximo ao mediano no compartimento anterior proximal, com passagem para o posterior na arcada de STRUTHERS e direção ao túnel cubital. Ele também precisa ser protegido em acesso medial e na colocação de pinos que possam alcançar a região medial. Esse trajeto é real, mas não corresponde ao intervalo distal entre bíceps e braquial da MIPO anterior. Nessa janela, a estrutura identificada é o musculocutâneo.",
-   "B": "**É vulnerável em outro plano da mesma operação.** O radial está próximo ao osso e aos implantes, sendo protegido pela metade lateral do braquial na técnica anterior. Sua importância aumenta na passagem lateral ou posterior da placa e na perfuração da cortical oposta. Na janela distal anterior descrita, porém, o livro orienta identificar o musculocutâneo antes de dividir o braquial. A armadilha é trocar o nervo mais associado à fratura pela estrutura encontrada no tempo específico da abordagem.",
-   "C": "**Acompanha a artéria braquial medialmente.** Na anatomia da página 14, mediano e artéria braquial percorrem juntos a porção medial do compartimento anterior; no cotovelo, situam-se entre pronador redondo e tendão do bíceps. A via anteromedial oferece acesso a esse conjunto em lesões associadas. Essa relação não define a janela distal anterior da MIPO, que entra pelo intervalo entre bíceps e braquial e exige identificação do musculocutâneo. A direção do acesso, não apenas o compartimento, distingue os nervos."
+   "A": "**O ulnar tem outro trajeto.** Ele passa ao compartimento posterior pela arcada de Struthers e segue para o túnel cubital. Exige atenção em acessos mediais e a pinos que atravessam demais, mas não é o nervo nomeado para a janela anterior entre bíceps e braquial.",
+   "B": "**É um risco real da montagem, mas não a identificação solicitada.** A metade lateral do braquial protege o radial; placa e parafusos continuam próximos dele. Não se deve trocar o nervo encontrado na janela pelo nervo frequentemente lesado na diáfise.",
+   "C": "**Está mais medial, junto à artéria braquial.** O musculocutâneo cruza longitudinalmente a região distal, lateral a esse conjunto. Proteger o mediano também é necessário em trajetos mediais, mas ele não substitui o musculocutâneo neste plano."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa minimamente invasiva (MIPO); Vias de acesso e os nervos em risco."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Placa minimamente invasiva (MIPO)",
+      "Vias de acesso e os nervos em risco"
+     ],
+     "blocos": [
+      "placa-minimamente-invasiva-mipo-260bfaa0",
+      "placa-minimamente-invasiva-mipo-18908699",
+      "placa-minimamente-invasiva-mipo-c66f8cf8",
+      "placa-minimamente-invasiva-mipo-91e6df51",
+      "placa-minimamente-invasiva-mipo-7bf9314d",
+      "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "ab4c35630c4fd1c8142218099abf2b06ee757b552e80300f0b731e25c9ffec84"
+    }
+   ],
+   "questaoSha256": "6e6d5bd4eabb71c7092a48020723401c7a4f8f8904dbb667735c22bf89ea920e",
+   "comentarioSha256": "7bbf6f2dbb784083efaf78dede488e686821893cd54fd13eb76ce6707a973575"
+  }
  },
  "trauma-1376": {
-  "conceito": "**O braquial é uma referência protetora do acesso.** O músculo braquial cobre a superfície anterior da diáfise umeral. No acesso anterolateral, o bíceps é mobilizado medialmente para expô-lo. O braquial é então dividido longitudinalmente na linha média, permitindo chegar ao osso. Essa divisão central tem uma razão neural: preservar os territórios de inervação das metades que permanecem de cada lado da exposição.\n\nA página 22 atribui a inervação da metade lateral ao radial e a da metade medial ao musculocutâneo. A metade lateral do braquial também constitui uma proteção para o radial. O cirurgião deve respeitar esse plano e reconhecer possíveis ramos neurológicos durante a divisão, sem presumir que cortar o músculo em qualquer posição produzirá o mesmo resultado. O capítulo alerta que um ramo significativo pode ser visto e precisa ser preservado.\n\n**A posição do nervo varia com o nível do braço.** O radial percorre o compartimento posterior, passa pelo sulco espiral e segue junto ao úmero antes de tornar-se anterior distalmente. Perto do cotovelo, sua relação com o braquial e o braquiorradial explica a necessidade de proteção na extensão distal do acesso. O musculocutâneo pertence ao compartimento anterior e percorre longitudinalmente a região distal, sendo relevante na janela distal anterior da MIPO e no bloqueio anteroposterior da haste.\n\nO acesso anterolateral é usado sobretudo nas fraturas dos terços médio e proximal. Proximalmente, desenvolve o intervalo deltopeitoral; mais distalmente, acompanha a borda lateral do bíceps. O capítulo destaca que ele pode ser extenso e ainda assim obter bons resultados por utilizar planos intermusculares e entre territórios neurais. Essa afirmação não dispensa proteção dos nervos: retração excessiva do deltoide pode lesar o axilar, e a progressão distal exige atenção ao radial e ao musculocutâneo.\n\n**A MIPO aproveita o mesmo princípio anatômico.** Na janela distal anterior, o musculocutâneo é identificado e afastado com a metade medial do braquial, enquanto a lateral protege o radial. Assim, a inervação não é uma informação isolada de anatomia decorativa. Ela fundamenta a direção da divisão muscular e a proteção durante o posicionamento de placa e parafusos. O TEOT 2023 perguntou qual nervo fica em risco na técnica minimamente invasiva; compreender o braquial ajuda a resolver esse fato por outro ângulo.\n\nO mediano aparece como distrator porque é um nervo verdadeiro do compartimento anterior, mas seu trajeto descrito acompanha a artéria braquial medialmente. A via anteromedial é usada para exposição desse conjunto e do ulnar, especialmente em lesões neurovasculares. Estar no mesmo compartimento não significa fornecer a inervação indicada para uma metade do braquial no trecho do capítulo.\n\nNesta pergunta, a palavra respectivamente impõe a ordem lateral e depois medial. Uma opção com os dois nervos corretos em ordem invertida continua errada. O estudante precisa associar lado, estrutura e função do plano cirúrgico, sem substituir a descrição por uma lista de nervos do braço. A resposta descreve a anatomia da via aberta, e o comentário mostra como ela orienta a via minimamente invasiva.\n\n> **Na prova:** No braquial: lateral, radial; medial, musculocutâneo. A divisão central preserva esses territórios.",
-  "correta": "**C: radial; musculocutâneo.** Na página 22, o capítulo afirma que a divisão mediana do braquial protege sua inervação pelo radial lateralmente e pelo musculocutâneo medialmente. Como o enunciado solicita primeiro a metade lateral e depois a medial, o par correto é radial; musculocutâneo. A ordem é parte do fato cobrado.\n\nO mesmo trecho orienta dividir cuidadosamente o músculo, preservar ramos significativos e proteger os nervos na progressão ao cotovelo. Na descrição da MIPO anterior, a página 30 reaplica esse princípio: a metade medial acompanha o afastamento do musculocutâneo, e a lateral protege o radial. O dado anatômico tem consequência direta na execução do acesso e na segurança do implante.",
+  "conceito": "Ao dividir o braquial no acesso anterolateral, o cirurgião procura preservar dois territórios: **radial na metade lateral e musculocutâneo na medial**, alternativa C. A ordem dos nervos segue a ordem das metades pedida no enunciado.\n\nDepois de afastar o bíceps medialmente, aparece o braquial cobrindo o osso. Ele é dividido longitudinalmente na linha média; a metade lateral permanece como proteção sobre o radial, e ramos nervosos encontrados durante a dissecção devem ser preservados. Não é uma licença para cortar o músculo em qualquer ponto: o plano central tem uma razão anatômica (Rockwood, 10ª ed., cap. 37, “Via anterolateral”).\n\nMais distalmente, o acesso passa entre **braquial medial e braquiorradial lateral**, onde radial e musculocutâneo exigem proteção. Na MIPO anterior, a mesma organização reaparece: o musculocutâneo acompanha a metade medial do braquial, e a lateral protege o radial. Saber quem inerva cada metade ajuda a entender o afastamento, em vez de apenas decorar dois nomes.\n\nO mediano, apesar de estar no compartimento anterior, segue medialmente com a artéria braquial. **Localização no compartimento e inervação de uma metade muscular são informações diferentes.**",
+  "correta": "**C: radial; musculocutâneo.** O radial corresponde à metade lateral e o musculocutâneo à medial, na descrição do acesso. Preservar esse plano e eventuais ramos evita transformar a exposição do osso numa lesão neural.",
   "incorretas": {
-   "A": "**Mantém o lado lateral, troca o medial.** O radial realmente corresponde à inervação lateral descrita para o braquial. O mediano, porém, percorre a região medial do compartimento anterior junto à artéria braquial, não sendo o nervo atribuído à metade medial nesse trecho. O capítulo identifica o musculocutâneo para essa metade. O distrator usa a localização medial verdadeira do mediano para induzir uma atribuição funcional diferente. Posição no compartimento e inervação do músculo não são sinônimos.",
-   "B": "**Usa nervos reais em relações diferentes.** O mediano é relevante no acesso anteromedial e acompanha a artéria braquial; o radial é importante junto ao osso e na metade lateral do braquial. A alternativa coloca o mediano lateralmente e o radial medialmente, sem corresponder à descrição da página 22. Além de trocar o lado do radial, omite o musculocutâneo, que é a inervação medial indicada. A avaliação do par exige verificar cada metade, não aceitar a opção por reconhecer um nervo conhecido.",
-   "D": "**Inverte os dois territórios.** Musculocutâneo e radial são exatamente os nervos descritos na divisão do braquial, mas a ordem pedida é lateral e depois medial. O musculocutâneo corresponde à metade medial, enquanto o radial corresponde à lateral. A página 30 ajuda a fixar a relação: na MIPO anterior, o musculocutâneo é afastado com a metade medial e a lateral protege o radial. A alternativa seria compatível com uma pergunta em ordem medial e lateral, porém não completa corretamente este enunciado."
+   "A": "**Acerta a metade lateral, troca a medial.** O radial é o primeiro nervo solicitado; para a metade medial, o resumo indica musculocutâneo. A posição medial do mediano ao lado da artéria braquial não lhe atribui essa inervação.",
+   "B": "**Nenhuma das posições corresponde ao par descrito.** O mediano não é o nervo da metade lateral neste acesso, e o radial pertence à lateral, não à medial. O musculocutâneo necessário para completar a resposta ficou ausente.",
+   "D": "**Inverte os dois territórios.** Os nomes estão corretos, mas musculocutâneo corresponde à medial e radial à lateral. Esse par responderia à ordem medial-lateral, enquanto a pergunta exige lateral-medial."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Placa minimamente invasiva (MIPO)."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Vias de acesso e os nervos em risco",
+      "Placa minimamente invasiva (MIPO)"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-os-nervos-em-risco-e5eff37e",
+      "vias-de-acesso-e-os-nervos-em-risco-9caef227",
+      "placa-minimamente-invasiva-mipo-18908699",
+      "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "9e75b9ffa62e239e0b5fe73d9bbf69bb9f938752d2a2c1dcf14f26048304ab0e"
+    }
+   ],
+   "questaoSha256": "0a837ce3d68b88ab9434c67d4cdeb68c4c2fbba5f8e512a8c8f7dc80e3e2bb76",
+   "comentarioSha256": "062c8a6e1e3b88af231c9995925f4af0d0986bf087f602476b8a518e0ecd9f41"
+  }
  },
  "trauma-1377": {
   "conceito": "Ao separar as cabeças longa e lateral do tríceps na via posterior, encontram-se juntos o **nervo radial e a artéria braquial profunda**, alternativa C. Eles percorrem o sulco espiral junto ao úmero.\n\nA exposição começa no plano entre as duas cabeças superficiais. Por baixo está a cabeça medial, cuja divisão longitudinal dá acesso ao periósteo posterior. O trajeto do radial precisa ser reconhecido antes de aprofundar e mobilizar os tecidos, evitando que a ampliação da via se transforme em tração do feixe (Rockwood, 10ª ed., cap. 37, “Via posterior”).\n\n**Braquial profunda e braquial não são nomes intercambiáveis.** A primeira acompanha o radial atrás do osso; a artéria braquial principal está com o mediano na face medial do compartimento anterior. A associação anatômica é que decide a alternativa, não apenas o fato de ambos serem vasos do braço.\n\nO resumo também descreve a variante paratricipital, que trabalha pelos lados do tríceps e pode exigir mobilização do radial ao subir. Ver o nervo diretamente facilita protegê-lo, mas não demonstra que toda via posterior tenha menor paralisia que qualquer outra; isso seria uma comparação clínica diferente.\n\n**Por que esta questão foi criada.** Ela faz o aluno seguir o plano profundo do tríceps e distinguir o feixe posterior do feixe mediano-braquial anterior.",
@@ -26887,88 +27327,250 @@
   }
  },
  "trauma-1378": {
-  "conceito": "**O traço define a função da placa.** A placa não tem a mesma tarefa em toda fratura diafisária. O capítulo orienta aplicar compressão nos padrões simples, por meio de orifícios de compressão ou de parafusos interfragmentares. Nas fraturas cominutivas, recomenda uma placa mais longa que transponha a área fragmentada, funcionando como ponte. A pergunta compara duas organizações do foco e exige associar o objetivo mecânico de cada montagem.\n\nNo traço simples, existem dois fragmentos principais e a redução permite estabelecer contato. A compressão aproxima as superfícies e é particularmente importante para não deixar distração no foco. O TARO 2010 já cobrou compressão interfragmentar como princípio da fixação de uma fratura transversa do úmero. O capítulo acrescenta que a redução e a fixação precisam ser verificadas, inclusive o comprimento dos parafusos e da placa, antes do fechamento.\n\n**Na cominuição, a preservação biológica muda a estratégia.** A placa em ponte abrange a área de múltiplos fragmentos e fixa os segmentos principais. O texto orienta evitar parafusos na zona cominutiva. Não se deve buscar redução anatômica de cada pequeno fragmento à custa de retirada extensa de partes moles ou periósteo, porque isso pode desvitalizar o osso e comprometer a consolidação. A redução indireta, por tração ou auxílio de dispositivos, preserva tecidos quando a manipulação direta seria prejudicial.\n\nO capítulo não impõe uma escolha entre estabilidade e biologia. Ambas precisam ser consideradas: a placa deve ser forte e suficientemente longa, a fixação dos fragmentos principais precisa ser adequada e o foco não pode ficar numa posição inaceitável. Uma montagem em ponte não justifica instabilidade grosseira, e uma montagem em compressão não autoriza dano indiscriminado às partes moles. A forma do traço orienta como obter estabilidade respeitando o suprimento dos fragmentos.\n\n**A localização também interfere no planejamento.** Nas fraturas próximas à metáfise, o segmento curto pode exigir placas periarticulares, fixação nos côndilos ou outra placa complementar. Nas diáfises estreitas, placas pequenas em disposição ortogonal são discutidas como alternativa. Esses são ajustes de implante e ancoragem, não uma razão para inverter a função mecânica entre traço simples e cominuição.\n\nA montagem definitiva é avaliada com fluoroscopia em várias direções, e as estruturas neurais devem ser protegidas durante redução, aplicação de pinças e perfuração. Quando um nervo cruza a placa, sua relação deve ser documentada. A ausência de um grande acesso no foco, como ocorre em MIPO, não dispensa conferir comprimento, rotação e alinhamento, pois uma fratura transversa pode ser difícil de reduzir por técnica fechada.\n\nAs opções cruzam duas funções reais. Ponte é a resposta para a área cominutiva, e compressão é a resposta para o traço simples descrito. A ordem do enunciado evita uma discussão genérica sobre qual implante é melhor. O objetivo é reconhecer que uma placa pode desempenhar papéis diferentes conforme a possibilidade de contato ósseo e o custo biológico de reconstruir os fragmentos.\n\n> **Na prova:** Traço simples: compressão. Área cominutiva: placa em ponte, preservando a biologia dos fragmentos.",
-  "correta": "**C: compressão; ponte.** As páginas 27 e 28 separam os padrões: a placa deve transpor a área cominutiva como ponte e, nos padrões simples, ser aplicada em compressão por orifícios próprios ou parafusos interfragmentares. O par correto segue a ordem do enunciado, traço simples primeiro e cominuição depois. É a extensão do princípio já cobrado para a fratura transversa no TARO 2010.\n\nA estratégia em ponte permite evitar dissecção excessiva de fragmentos intermediários. O capítulo recomenda não inserir parafusos na área cominutiva e obter fixação adequada nos segmentos principais. Já a compressão pressupõe redução apropriada do traço simples e evita deixar distração. A função do implante deve acompanhar a morfologia, e não ser repetida mecanicamente em todos os casos.",
+  "conceito": "Num traço simples, dois fragmentos principais podem ser aproximados para obter **compressão**. Numa zona cominutiva, a placa precisa atravessar a área fragmentada como **ponte**. Essa é a sequência da alternativa C.\n\nPense em duas situações distintas: no traço simples há superfícies que podem encostar; na cominuição, tentar comprimir todos os pequenos fragmentos pode encurtar o úmero e exigir uma dissecção que sacrifica vascularização. O resumo orienta compressão pelos furos dinâmicos ou por parafuso de tração nas simples, e placa mais longa transpondo a cominuição, sem parafusos na zona fragmentada (Rockwood, 10ª ed., cap. 37, “Os números da placa”).\n\n**A função da placa depende da montagem.** O nome do implante, sozinho, não diz se ele comprime ou faz ponte. Redução, comprimento, distribuição dos parafusos e preservação das inserções dos fragmentos precisam combinar com o padrão da fratura. Redução anatômica não deve ser perseguida ao preço de desperiostização excessiva.\n\n> **Na prova:** simples permite contato e compressão; cominutiva pede ponte e preservação biológica.",
+  "correta": "**C: compressão; ponte.** É a combinação explicitamente descrita. A primeira explora o contato entre fragmentos simples; a segunda transpõe a cominuição sem tentar comprimir uma área sem apoio adequado.",
   "incorretas": {
-   "A": "**Reconhece a cominuição, perde o traço simples.** A placa em ponte é indicada no capítulo para abranger a área cominutiva, com comprimento suficiente e fixação dos segmentos principais. Para o padrão simples tratado por placa, o texto orienta compressão, usando os orifícios do implante ou parafusos interfragmentares. Assim, a segunda metade é adequada, mas a primeira não corresponde ao princípio perguntado. O distrator generaliza uma função verdadeira de placa para uma morfologia com objetivo mecânico diferente.",
-   "B": "**Inverte as duas estratégias.** Ponte e compressão são funções reais discutidas na fixação umeral, porém o capítulo associa compressão ao traço simples e ponte à cominuição. Comprimir uma zona fragmentada não é a orientação geral apresentada, pois perseguir redução de todos os fragmentos pode exigir descolamento excessivo. A montagem em ponte protege a biologia local enquanto estabiliza os segmentos principais. A alternativa troca o raciocínio mecânico e o biológico nas duas metades do par.",
-   "D": "**Acerta a fratura simples, generaliza para a cominuição.** O uso de compressão no traço simples está de acordo com a página 28. Entretanto, para a área cominutiva, a página 27 recomenda uma placa mais longa em ponte, e os passos cirúrgicos orientam evitar parafusos na zona fragmentada. O princípio de manter contato não significa comprimir indiscriminadamente todos os fragmentos. A segunda parte elimina a distinção que o capítulo faz para preservar tecidos e fixar a fratura sem exposição excessiva."
+   "A": "**Reconhece a ponte na cominuição, mas perde a distinção inicial.** Uma montagem em ponte pode estabilizar fraturas, porém a recomendação perguntada para o traço simples é aproveitar suas superfícies para compressão. Não se responde “ponte para tudo”.",
+   "B": "**Troca as duas estratégias.** Deixa de usar o contato disponível no traço simples e propõe comprimir justamente a área fragmentada. A tentativa de fechar a cominuição pode encurtar o osso e aumentar a agressão aos fragmentos.",
+   "D": "**A segunda compressão é o problema.** Na fratura simples ela corresponde à recomendação; na cominutiva, a placa deve transpor a zona com uma montagem mais longa. Comprimir todos os fragmentos não equivale a reconstruir com segurança comprimento e alinhamento."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa: técnica, números e resultados."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Placa: técnica, números e resultados"
+     ],
+     "blocos": [
+      "placa-tecnica-numeros-e-resultados-e1956d15",
+      "placa-tecnica-numeros-e-resultados-541bf5d2",
+      "placa-tecnica-numeros-e-resultados-7281e01c",
+      "placa-tecnica-numeros-e-resultados-40bc40ff"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "4026cc8a4d9275f47a843f84f1eb21511ca3ace067f891481e6c405de0e14750"
+    }
+   ],
+   "questaoSha256": "6451b72f9d2d0af249c5bc27aea3177a1d29de606bc4e98886ecc6fdd61ef481",
+   "comentarioSha256": "84b45a3040daf1e6d0c91936a0164e959b9885188f4a807e9b65f5f97f5cc15f"
+  }
  },
  "trauma-1379": {
-  "conceito": "**A ancoragem conecta a placa aos dois segmentos principais.** Uma placa adequada só pode estabilizar a fratura se sua ligação ao osso for suficiente dos dois lados do foco. Na diáfise umeral, o capítulo descreve como método clássico a fixação de oito corticais proximalmente e oito distalmente. Um parafuso bicortical atravessa as duas corticais; quatro parafusos desse tipo, portanto, correspondem a oito corticais em cada fragmento principal.\n\nA pergunta restringe a situação a uma placa convencional sem parafuso interfragmentar, também chamado lag screw. Nesse recorte, a página 28 afirma que a maioria dos cirurgiões concordaria com pelo menos quatro parafusos proximalmente e quatro distalmente. Quando existe um parafuso interfragmentar sólido, o número pode ser reduzido para três parafusos, ou seis corticais, de cada lado. A presença desse recurso adicional muda a construção, e não pode ser presumida num enunciado que o exclui.\n\n**Uma contagem não substitui o planejamento.** O próprio capítulo considera controverso o número necessário, que depende do padrão e nível da fratura, comprimento da placa e qualidade óssea. Cominuição, baixa qualidade do osso ou compra inadequada devem estimular uso de placa mais longa e mais parafusos. Nem todos os orifícios precisam ser preenchidos. Uma placa suficiente para o traço simples pode não ter o comprimento necessário para transpor uma área extensa de cominuição.\n\nA recomendação tradicional utiliza placa estreita de compressão dinâmica de 4,5 mm ou placa de contato limitado. A placa de contato limitado é discutida pela facilidade de modelagem e pelo menor contato com o osso. Já nas fraturas próximas da articulação, podem ser necessários implantes periarticulares e estratégias para fixar um segmento curto. O número de corticais deve ser compreendido junto com a adequação do implante, em vez de decorar um valor para todo tipo de osso e fratura.\n\n**Parafusos bloqueados pertencem a outra montagem.** O parafuso com cabeça rosqueada prende-se ao orifício da placa e cria uma construção de ângulo fixo. Estudos biomecânicos citados no capítulo descrevem estabilidade suficiente com dois parafusos bloqueados por segmento em modelos osteoporóticos. Essa informação não equivale a recomendar quatro corticais para toda placa convencional. A diferença no modo de conexão parafuso-placa é justamente o motivo para o enunciado especificar o tipo de fixação.\n\nDurante a montagem, um ou dois parafusos podem ser inseridos para fixação provisória e verificação da redução antes de completar o restante. Esse tempo provisório também não define a quantidade final necessária. Em traços simples, compressão pode ser obtida pelos orifícios ou por parafusos interfragmentares; na cominuição, a placa funciona em ponte e se evita colocar parafusos na zona fragmentada. O capítulo pede conferir redução e comprimentos com fluoroscopia antes de fechar.\n\nA banca já explora função do implante e padrão do traço. Este item acrescenta um número com consequência mecânica clara, sem extrair uma estatística experimental como regra. O ponto decisivo é a expressão sem parafuso interfragmentar: ela impede transferir a montagem reduzida de seis corticais para o cenário convencional solicitado.\n\n> **Na prova:** Placa convencional sem lag screw: quatro parafusos bicorticais, oito corticais por fragmento principal.",
-  "correta": "**D: 8 corticais.** Na página 28, o capítulo distingue quatro parafusos bicorticais por fragmento quando não há lag screw de três quando existe um parafuso interfragmentar sólido. Quatro parafusos bicorticais correspondem a oito corticais. A pergunta solicita a recomendação convencional do primeiro cenário, e não o mínimo de uma construção bloqueada ou da fixação provisória.\n\nO texto reconhece que o número depende da fratura e da qualidade óssea. Fatores desfavoráveis podem justificar montagem mais longa e mais ancoragem. Portanto, oito corticais é a resposta ao recorte técnico descrito, sem afirmar que essa quantidade garanta estabilidade em qualquer situação ou dispense adequação do comprimento e da posição da placa.",
+  "conceito": "Sem parafuso interfragmentar, a recomendação convencional é **quatro parafusos bicorticais em cada fragmento principal**, isto é, **oito corticais por fragmento**, alternativa D. Um parafuso bicortical atravessa duas paredes do osso; quatro deles somam oito corticais.\n\nA expressão “sem parafuso interfragmentar” decide a pergunta. O resumo admite **três parafusos, ou seis corticais, de cada lado quando existe um bom parafuso de tração**. Esse parafuso adicional participa da estabilidade da redução e não pode ser presumido num enunciado que o exclui (Rockwood, 10ª ed., cap. 37, “Os números da placa”).\n\nA contagem também precisa ser lida com suas condições. Cominuição, osso ruim e pega inadequada exigem pensar em placa mais longa e mais ancoragem. Estudos com **parafusos bloqueados** descrevem montagens diferentes; o encaixe da cabeça do parafuso na placa muda a construção e não autoriza transportar seu número para toda placa convencional.\n\nO quadro técnico do resumo menciona mínimo de três e ideal de quatro parafusos por fragmento. O texto específico sem parafuso de tração recomenda quatro. Portanto, **oito corticais responde ao cenário descrito**, não representa uma garantia universal de estabilidade.",
+  "correta": "**D: 8 corticais.** São quatro parafusos bicorticais proximalmente e quatro distalmente, e não oito corticais somadas nos dois lados da fratura. Comprimento da placa e qualidade da pega continuam necessários.",
   "incorretas": {
-   "A": "**Pode representar um parafuso de fixação provisória.** Nos passos de osteossíntese, a placa pode ser presa inicialmente com um parafuso em um fragmento para avaliar alinhamento e redução antes de completar a montagem. Essa ancoragem temporária não é a recomendação definitiva por fragmento principal com placa convencional sem lag screw. A página 28 orienta quatro parafusos bicorticais de cada lado nesse contexto. O distrator confunde o início da sequência operatória com a quantidade final de fixação.",
-   "B": "**Remete a uma construção bloqueada diferente.** Dois parafusos bicorticais correspondem a quatro corticais, e o capítulo relata estudos em modelos osteoporóticos com estabilidade suficiente usando dois parafusos bloqueados em cada segmento. O enunciado especifica placa convencional, sem parafuso interfragmentar, cuja recomendação descrita é quatro parafusos bicorticais por fragmento. O número menor não pode ser transferido ignorando o mecanismo de ângulo fixo da conexão entre parafuso bloqueado e placa.",
-   "C": "**É a redução de ancoragem com lag screw sólido.** A página 28 admite três parafusos, ou seis corticais, de cada lado quando existe um parafuso interfragmentar sólido. Esse recurso acrescenta estabilidade e faz parte de uma montagem distinta. A pergunta o exclui expressamente, deixando o cenário convencional de quatro parafusos bicorticais por fragmento. A alternativa é plausível porque usa um número real da mesma página, mas depende de uma condição técnica ausente no enunciado."
+   "A": "**Duas corticais correspondem a apenas um parafuso bicortical.** A sequência operatória pode começar prendendo a placa com um parafuso enquanto se confere a redução, mas essa etapa provisória não é a ancoragem definitiva recomendada.",
+   "B": "**Quatro corticais significam dois parafusos bicorticais.** O resumo discute dois bloqueados por segmento em estudos de osso osteoporótico. Essa construção não é a placa convencional sem parafuso interfragmentar solicitada.",
+   "C": "**Seis corticais são um número real, com outra condição.** Correspondem a três parafusos de cada lado quando existe um bom parafuso interfragmentar. A pergunta o exclui; usar esse número apagaria o detalhe que distingue as montagens."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Placa: técnica, números e resultados."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Placa: técnica, números e resultados"
+     ],
+     "blocos": [
+      "placa-tecnica-numeros-e-resultados-ba6923d9",
+      "placa-tecnica-numeros-e-resultados-94596767",
+      "placa-tecnica-numeros-e-resultados-7281e01c",
+      "placa-tecnica-numeros-e-resultados-40bc40ff"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "a85c223c57ea834957743b6fd8c31999f54c23686a47e8d9ab16e0a50fbbee81"
+    }
+   ],
+   "questaoSha256": "5aaa7b309e961e266622cf62a177d77d18ecae5dad7c855b9808eb7559d04773",
+   "comentarioSha256": "b01f34c2b4c0ff6152b0fb829ddb294e2f76f5dd55c53fb34701b2ca646f7730"
+  }
  },
  "trauma-1380": {
-  "conceito": "**O bloqueio completa a estabilização pela haste.** A haste intramedular atravessa o canal do úmero e passa pelos fragmentos da fratura. Os parafusos de bloqueio ligam o implante aos segmentos e fornecem estabilidade para iniciar a mobilização. O capítulo orienta não deixar a haste sem bloqueio. Na técnica anterógrada, a introdução ocorre pelo úmero proximal; a fixação distal fica afastada desse portal e exige uma estratégia própria.\n\nO bloqueio proximal costuma ser realizado com um guia confiável fornecido pelo fabricante. Para o distal, o capítulo descreve a técnica à mão livre, com abertura suficiente para dissecar até o osso e perfurar sob visualização direta. A finalidade da abertura não é expor amplamente a fratura, mas reconhecer o trajeto e evitar inserir broca e parafuso sem controle das partes moles próximas.\n\n**O alvo radiográfico e a segurança anatômica são complementares.** Um assistente mantém o braço em posição, e o intensificador deve mostrar um círculo perfeito do orifício de bloqueio. A incisão é alinhada ao orifício, seguida de dissecção cuidadosa até o osso. A perfuração e a colocação do parafuso são realizadas com visão direta. Ver um círculo adequado na fluoroscopia ajuda a acertar o implante, mas não mostra todas as estruturas vulneráveis no caminho da broca.\n\nOs guias longos de bloqueio distal têm resultados inconsistentes. O capítulo relaciona essa dificuldade ao comprimento do dispositivo, aos pequenos orifícios das hastes umerais e à superfície arredondada e escorregadia do úmero distal. Isso explica por que um guia que funciona bem proximalmente não deve ser considerado automaticamente confiável no bloqueio distante. A técnica à mão livre resolve o alvo por imagem, e a abertura protege a etapa de passagem pelas partes moles.\n\n**Os nervos impõem o cuidado com a incisão.** A anatomia da página 14 destaca o musculocutâneo em risco no bloqueio anteroposterior distal da haste anterógrada. O radial também é uma estrutura vulnerável na região distal e nos trajetos de perfuração próximos ao osso. A recomendação geral do capítulo é evitar colocação cega de parafusos perto de estruturas importantes, utilizando incisões adequadas para permitir proteção direta.\n\nO encaixe apertado da ponta no canal não é um substituto seguro do bloqueio. A página 39 alerta que impactar a haste firmemente no úmero distal para evitar parafusos aumenta o risco de fratura iatrogênica na ponta. Além disso, a ponta proximal precisa permanecer enterrada na cabeça umeral, evitando protrusão e impacto. Esses são problemas de execução distintos: tamanho e posição da haste de um lado, bloqueio e proteção neural de outro.\n\nA prova complementar do acervo já cobrou bloqueio distal aberto à mão livre, e as questões de Ortopedia do assunto mostram foco recorrente em técnica e estrutura em risco. O item reforça essa lógica com uma etapa claramente delimitada. As alternativas cruzam duas decisões reais, abertura da abordagem e forma de orientar o orifício, mas só a combinação recomendada no capítulo satisfaz as duas.\n\n> **Na prova:** Bloqueio distal da haste anterógrada: abordagem aberta, à mão livre, com perfuração sob visão direta.",
-  "correta": "**A: aberta à mão livre.** A página 38 descreve bloqueio distal à mão livre por abordagem aberta: o braço é mantido imóvel, a fluoroscopia mostra o orifício circular e a dissecção segue até o osso, com perfuração e inserção sob visão direta. A página 36 também especifica bloqueio distal miniaberto à mão livre. Essa é a combinação solicitada.\n\nA lista de passos da haste anterógrada recomenda bloqueio distal aberto e afirma que os guias longos não são confiáveis. O cuidado não se resume a acertar o orifício: inclui proteger as estruturas que a broca encontra antes do osso. O uso da imagem e da visualização anatômica resolve problemas diferentes e necessários da mesma etapa.",
+  "conceito": "O bloqueio distal da haste anterógrada deve ser feito **aberto e à mão livre**, alternativa A. “À mão livre” descreve como se encontra o furo sem depender de um guia longo; “aberto” descreve a dissecção até o osso para proteger os tecidos. As duas características podem e devem coexistir.\n\nNa fluoroscopia, o furo da haste precisa aparecer perfeitamente redondo. A incisão é feita sobre ele, os tecidos são dissecados até o osso, e a broca e o parafuso são conduzidos sob visão. Os guias distais longos são pouco confiáveis pela distância, pelos furos estreitos e pela geometria do osso (Rockwood, 10ª ed., cap. 37, “Anterógrada: entrada, fresagem e bloqueio”).\n\n**Acertar o furo não basta para proteger o nervo.** O trajeto anteroposterior distal ameaça o musculocutâneo; o lateral ameaça o radial. Uma imagem fluoroscópica precisa mostra implante e osso, mas não transforma uma passagem cega pelas partes moles em passagem segura. Por isso o resumo pede via aberta nos parafusos próximos das estruturas vulneráveis.\n\nTambém não se resolve a dificuldade encravando uma haste grossa no canal para dispensar o bloqueio: essa manobra aumenta o risco de fratura na ponta. O bloqueio e o diâmetro precisam ser planejados juntos.",
+  "correta": "**A: aberta à mão livre.** Combina localização fluoroscópica do furo sem guia distal longo com dissecção até o osso. É a técnica preferida pelos autores para inserir o parafuso distal.",
   "incorretas": {
-   "B": "**Acerta a orientação, elimina a proteção aberta.** A técnica à mão livre é usada para localizar o orifício distal pela fluoroscopia, mas o capítulo recomenda incisão e dissecção até o osso para inserir o parafuso sob visão direta. A via percutânea aparece como alternativa técnica que deve ser evitada nesse cenário de estruturas vulneráveis. O alvo circular não garante proteção neural. O distrator mantém o método de mira correto, porém troca a forma de atravessar as partes moles junto ao úmero distal.",
-   "C": "**Mantém a abertura, troca o método de mira.** A abordagem aberta é adequada para proteger estruturas, mas os guias longos de bloqueio distal são descritos como pouco confiáveis. O capítulo diferencia o guia proximal, usualmente eficaz, do distal, cuja precisão é inconsistente pelo comprimento e pela geometria do alvo. Abrir a incisão não corrige essa limitação do dispositivo de mira. A recomendação reúne visualização direta e orientação à mão livre, em vez de transferir o guia proximal para a etapa distal.",
-   "D": "**Reúne dois elementos de outro contexto técnico.** A colocação percutânea e os dispositivos de guia são discutidos na evolução das hastes, mas o capítulo recomenda evitar abordagem cega perto de estruturas vulneráveis e ressalta a inconsistência dos guias distais longos. O bloqueio proximal com guia é normalmente confiável, enquanto o distal exige solução diferente. Esta combinação troca tanto a proteção das partes moles como a forma recomendada de localizar o orifício, que é aberta à mão livre."
+   "B": "**Acerta a localização do furo e perde a proteção dos tecidos.** À mão livre não exige perfuração percutânea. A dissecção aberta é escolhida justamente porque radial e musculocutâneo podem estar no trajeto.",
+   "C": "**A exposição está correta, o guia não.** Abrir o acesso protege os tecidos, mas não corrige a pouca confiabilidade do guia longo para alinhar os furos distais. A fonte recomenda localizar o furo à mão livre.",
+   "D": "**Reúne os dois problemas evitados.** Depende do guia longo pouco confiável e atravessa tecidos por via percutânea, sem a exposição recomendada junto aos nervos."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Haste intramedular."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Haste intramedular"
+     ],
+     "blocos": [
+      "haste-intramedular-97e7d24b",
+      "haste-intramedular-9f3a7a30",
+      "haste-intramedular-1a22f0c0"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "05211fdb2f7f653608c6619799115c07422ed53626be1b91de7f9de0c6ec9e39"
+    }
+   ],
+   "questaoSha256": "64aa9a299e20396d280cd2c2b2da1a0b020a1c956af2efba39af8f2fcfc4561c",
+   "comentarioSha256": "9b67b7cd4d224245caa27e6f9264a79dba3274d9b5c7e7358d6ccba5240fc27d"
+  }
  },
  "trauma-1381": {
-  "conceito": "**O bloqueio proximal está no território do ombro.** A haste anterógrada entra pela cabeça do úmero e atravessa a diáfise. Seus parafusos proximais cruzam partes moles próximas do ombro, numa região anatômica diferente daquela do bloqueio distal. O nervo axilar contorna o úmero proximal de posterior para anterior, e o capítulo o relaciona tanto à extensão de um acesso lateral proximal como à broca e aos parafusos de bloqueio da haste.\n\nA página 14 descreve distância de 4 a 7 cm da ponta do acrômio para esse trajeto. O número situa o nervo na região proximal, mas não constitui uma zona universalmente segura para perfuração cega. O próprio texto orienta considerar o desenho do implante e utilizar abordagem suficiente quando os parafusos passam próximos a estruturas vulneráveis. Um guia confiável pode orientar o orifício, mas não afasta automaticamente o nervo do trajeto.\n\n**A introdução e o bloqueio ameaçam estruturas diferentes.** Para entrar no canal, a técnica anterógrada atravessa o manguito rotador, com incisão longitudinal alinhada às fibras do supraespinal. O capítulo recomenda escolher o ponto cuidadosamente pela fluoroscopia e reparar o manguito ao final. Os parafusos proximais podem cruzar deltoide ou subescapular. Portanto, lesão do manguito no portal e lesão neural no bloqueio são problemas distintos, embora ambos se manifestem na região do ombro.\n\nA página 55 acrescenta que evitar um parafuso anteroposterior proximal pode reduzir risco à cabeça longa do bíceps e ao axilar em desenhos que oferecem esse parafuso. O texto orienta preferir trajetos mais seguros quando a configuração da haste permite escolha e inserir parafusos próximos a estruturas importantes com incisões adequadas para visualização. Esse raciocínio depende do implante e do trajeto, não de uma proibição indistinta de todo bloqueio proximal.\n\n**Distalmente, muda o conjunto em risco.** O musculocutâneo atravessa longitudinalmente a região anterior distal e pode ser lesado no bloqueio anteroposterior distal da haste. O radial acompanha a diáfise posterior e depois torna-se anterior distalmente; é relevante na fratura, na perfuração e na passagem de material. O ulnar dirige-se ao túnel cubital depois de mudar para o compartimento posterior na região medial. Todos são nervos reais do braço, mas não são o nervo que circunda o úmero proximal.\n\nA distinção ajuda a ler as questões oficiais. O TARO 2017 cobrou radial como complicação da fixação aberta anterolateral, e o TEOT 2023 cobrou musculocutâneo na técnica minimamente invasiva. Nenhum desses gabaritos deve ser transplantado para o bloqueio proximal de uma haste. A operação e o nível anatômico definem a estrutura solicitada.\n\nAlém da proteção neural, a haste precisa ficar enterrada na cabeça para evitar impacto, e os parafusos não devem migrar por má compra no osso esponjoso. O capítulo relata essas complicações especialmente em osso osteoporótico. São aspectos de posição e fixação que completam a segurança do ombro, mas a pergunta isola a relação anatômica do nervo com o úmero proximal.\n\n> **Na prova:** Bloqueio proximal da haste: axilar. Janela distal anterior e bloqueio distal anteroposterior: musculocutâneo.",
-  "correta": "**B: axilar.** A página 14 identifica o axilar como nervo que contorna o úmero proximal e pode ser lesado pela broca ou pelos parafusos de bloqueio proximal da haste. A alternativa corresponde ao nível anatômico explicitado. A referência de 4 a 7 cm a partir do acrômio ajuda a localizar essa relação, sem garantir segurança para um trajeto feito sem dissecção.\n\nO capítulo recomenda escolher parafusos mais seguros conforme o desenho do implante e usar incisões suficientes para proteger estruturas vulneráveis. Na página 55, a discussão do parafuso anteroposterior proximal inclui axilar e cabeça longa do bíceps. A questão cobra o nervo; o comentário diferencia esse risco da lesão do manguito pelo portal e do risco neural no bloqueio distal.",
+  "conceito": "O parafuso proximal da haste é colocado numa região contornada pelo **nervo axilar**, alternativa B. Esse nervo passa de trás para a frente ao redor do úmero proximal, aproximadamente **4 a 7 cm da ponta do acrômio**, faixa anatômica descrita no resumo.\n\nA haste anterógrada entra pelo ombro e seus parafusos proximais atravessam tecidos dessa região. O guia acoplado facilita atingir o furo do implante, mas **não torna o trajeto livre de nervos**. O resumo alerta ainda para lesão do axilar e da cabeça longa do bíceps com o parafuso proximal anteroposterior oferecido por algumas hastes (Rockwood, 10ª ed., cap. 37, “Anatomia aplicada” e “Armadilhas e complicações da haste anterógrada”).\n\nA localização muda o risco: no bloqueio **distal**, a direção anteroposterior ameaça o musculocutâneo e a lateral ameaça o radial. No **proximal**, pensar em axilar. Não basta memorizar “nervo da haste”; é preciso saber em qual extremidade e por qual direção se está trabalhando.",
+  "correta": "**B: axilar.** Seu percurso ao redor do úmero proximal coincide com a região dos parafusos. O planejamento deve considerar o nervo mesmo quando o guia mostra o alinhamento correto do implante.",
   "incorretas": {
-   "A": "**Pertence ao trajeto medial em direção ao cotovelo.** O capítulo descreve o ulnar inicialmente próximo ao mediano e sua passagem ao compartimento posterior na arcada de STRUTHERS, seguindo para o túnel cubital. Ele exige proteção em abordagens mediais e em pinos que possam alcançar a cortical medial distal. Não é o nervo que contorna o úmero proximal junto ao bloqueio da haste. O distrator usa uma estrutura importante do braço, mas de outro nível e outro trajeto anatômico.",
-   "C": "**É central na diáfise, não no contorno proximal indicado.** O radial percorre o sulco espiral e fica próximo ao osso, explicando seu risco na fratura, na fixação com placa e na perfuração em regiões média e distal. A pergunta desloca o foco para o bloqueio proximal da haste, onde o capítulo descreve o axilar contornando o úmero. O risco conhecido do radial não autoriza usá-lo para qualquer etapa da cirurgia umeral. A localização do parafuso e o trajeto neural são os dados que diferenciam as opções.",
-   "D": "**É destacado no bloqueio distal anteroposterior.** Na página 14, o musculocutâneo percorre longitudinalmente a região distal anterior, lateral ao mediano e à artéria braquial, podendo ser lesado pelo bloqueio distal da haste anterógrada ou pela janela distal da MIPO. Essa é uma relação verdadeira de técnica e nervo, mas não corresponde ao contorno do úmero proximal. A alternativa troca a etapa distal pela proximal. Para o bloqueio próximo ao ombro, o nervo circundante descrito é o axilar."
+   "A": "**O ulnar não contorna o úmero proximal.** Ele segue medialmente, passa ao compartimento posterior na arcada de Struthers e chega ao túnel cubital. Seu risco em acessos mediais e pinos longos não define o bloqueio proximal.",
+   "C": "**O radial é central na diáfise e no bloqueio distal lateral.** Seu trajeto pelo sulco espiral e septo lateral explica esses riscos. A pergunta desloca o campo para a extremidade proximal, onde o axilar circunda o osso.",
+   "D": "**O musculocutâneo é a referência do bloqueio distal anteroposterior.** Ele corre longitudinalmente na região anterior distal e também exige proteção na janela distal da MIPO. Esse risco não deve ser transferido ao bloqueio proximal."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Haste intramedular."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Vias de acesso e os nervos em risco",
+      "Haste intramedular"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+      "vias-de-acesso-e-os-nervos-em-risco-b2a5306b",
+      "haste-intramedular-97e7d24b",
+      "haste-intramedular-a17be01e"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "20de56e36c5c593ec85adbc2231b5410b6eaf4019540bdfd99f5ba9f935dc776"
+    }
+   ],
+   "questaoSha256": "36cc2e1b1375fe9b4fded868acb529ce9ae239b792350c0c87c4d3bcc71e91fc",
+   "comentarioSha256": "aabaca364df1ec896f8c01d8f5adf1e48b8a6c4d90bac810a402692bd887666c"
+  }
  },
  "trauma-1382": {
-  "conceito": "**A haste retrógrada entra pela região distal do úmero.** Diferentemente da técnica anterógrada, que entra pela cabeça umeral, a retrógrada utiliza a região supracondiliana posterior. O portal é feito acima da fossa do olécrano, após exposição por divisão do tendão e músculo do tríceps. Essa direção preserva o portal através do manguito rotador, mas impõe uma dificuldade mecânica própria no úmero distal.\n\nA anatomia da diáfise muda ao longo do osso. Proximalmente, a secção é arredondada; distalmente, torna-se triangular e o canal é mais estreito. A página 45 explica que o canal estreito, a dureza do osso nessa região e a introdução excêntrica da haste, condicionada pelo olécrano, favorecem fratura iatrogênica supracondiliana. Ela pode ocorrer durante a fresagem ou a passagem do implante e é apresentada como a armadilha mais importante desse acesso.\n\n**A prevenção começa no portal.** O capítulo recomenda abrir um portal de tamanho suficiente, alisar suas bordas e remover o teto ósseo na extremidade proximal para facilitar a passagem. A descrição técnica apresenta cerca de 10 mm de largura e 20 a 25 mm de comprimento, enquanto o quadro de passos resume 1 por 2 cm. O ponto consistente entre as descrições é a necessidade de acesso amplo o bastante para não forçar a haste contra uma abertura pequena.\n\nA ampliação cuidadosa do canal distal com fresas manuais também é indicada para facilitar a introdução. Isso não autoriza fresagem agressiva: o próprio capítulo destaca o risco de criar a fratura supracondiliana com os instrumentos. O cotovelo deve flexionar além de 100 graus durante a inserção, reduzindo a interferência do olécrano no trajeto. O suporte e o posicionamento precisam permitir essa flexão e imagens adequadas do úmero, ombro e cotovelo.\n\n**O bloqueio continua necessário.** O canal proximal é mais amplo, e o texto considera obrigatório o bloqueio proximal da haste retrógrada. A proximidade de estruturas do ombro exige incisão adequada, com atenção especial ao axilar. Esses cuidados tratam da estabilidade e das partes moles; não substituem as medidas de proteção óssea do portal distal. A rotação também precisa ser conferida antes do bloqueio, especialmente em fraturas transversas.\n\nO capítulo contrasta complicações específicas: a haste anterógrada apresenta problemas de portal e função do ombro, inclusive protrusão e impacto; a retrógrada destaca fratura supracondiliana na introdução; a placa pode perder fixação; o fixador externo pode ter infecção do trajeto de pinos e refratura depois da retirada. Reconhecer qual etapa e qual implante estão no enunciado impede responder uma complicação real de outro método.\n\nA distração no foco é um erro que pode ocorrer tanto na introdução anterógrada como na retrógrada, pois ambas exigem manutenção da redução. Ela é relevante para a consolidação, mas não é a complicação óssea específica do portal distal. A pergunta não pede qual método é superior, conclusão que o capítulo considera limitada pela evidência; pede uma armadilha anatômica e técnica com prevenção concreta.\n\n> **Na prova:** Na haste retrógrada, o risco ósseo de introdução é supracondiliano; portal adequado, fresagem cuidadosa e flexão protegem a passagem.",
-  "correta": "**D: fratura na região supracondiliana.** A página 45 identifica a criação de fratura supracondiliana durante fresagem ou introdução da haste como a armadilha mais importante da técnica retrógrada. O canal estreito, o osso resistente e a entrada excêntrica pela interferência do olécrano explicam o risco. A alternativa corresponde a uma complicação do próprio portal distal.\n\nAs medidas preventivas descritas incluem portal adequado, ampliação cuidadosa do canal com fresas manuais e flexão do cotovelo maior que 100 graus. O capítulo repete essa prevenção na seção de complicações específicas. Evitar forçar a haste e manter espaço para sua passagem é diferente de controlar distração no foco, que também importa, mas não resolve a dificuldade supracondiliana.",
+  "conceito": "Ao introduzir uma haste pelo úmero distal, a complicação óssea característica é a **fratura supracondiliana iatrogênica**, alternativa D. A entrada retrógrada precisa vencer um canal distal mais estreito e triangular; forçar um implante contra essa região pode romper o próprio portal ou o osso ao redor.\n\nO olécrano também dificulta alinhar a entrada. Um portal pequeno, excêntrico ou com teto que impede a progressão aumenta a resistência à passagem. O resumo recomenda portal posterior de pelo menos **10 por 20 a 25 mm**, bordas alisadas, teto proximal rebaixado, fresagem suave preferencialmente manual e **cotovelo além de 100 graus de flexão**. Não se trata de compensar dificuldade com mais força (Rockwood, 10ª ed., cap. 37, “Retrógrada: a fratura supracondiliana”).\n\nÉ útil separar as duas entradas: a anterógrada exige cuidado com manguito e protrusão na cabeça; a retrógrada desloca o problema de acesso para o úmero distal. Ambas exigem evitar distração e controlar redução, mas a questão pede a lesão óssea ligada à entrada retrógrada.\n\n> **Na prova:** canal distal estreito e portal excêntrico explicam a fratura supracondiliana na fresagem ou introdução.",
+  "correta": "**D: fratura na região supracondiliana.** Pode acontecer na fresagem ou na passagem da haste. Portal adequado, flexão suficiente do cotovelo e progressão suave reduzem a dificuldade mecânica que a produz.",
   "incorretas": {
-   "A": "**É um risco compartilhado pelas duas direções da haste.** Os passos de introdução anterógrada e retrógrada orientam manter redução e não permitir distração na fratura. O afastamento dos fragmentos pode prejudicar a consolidação e deve ser evitado. Entretanto, o enunciado solicita a complicação óssea específica mais importante da introdução retrógrada, que o capítulo localiza na região supracondiliana. O distrator usa um erro verdadeiro da haste, mas sem a particularidade anatômica do portal distal.",
-   "B": "**É uma complicação de outro implante.** A seção de complicações relaciona perda de fixação à placa, com contribuição de técnica inadequada, implante insuficiente e baixa compra no osso, especialmente osteoporótico. Isso é relevante na diáfise umeral, mas a cirurgia descrita utiliza haste retrógrada. O seu risco ósseo de introdução nasce do canal distal estreito e da passagem excêntrica pelo portal supracondiliano. A alternativa muda o tipo de montagem em vez de localizar a complicação do acesso perguntado.",
-   "C": "**É característica do problema de posição da haste anterógrada.** O capítulo orienta enterrar a haste anterógrada na cabeça umeral, pois a protrusão pode causar impacto e prejudicar a função do ombro. A pergunta trata da passagem retrógrada pelo úmero distal, cujo portal está relacionado ao risco de fratura supracondiliana. Ambas são complicações verdadeiras do tratamento com haste, mas de direções e etapas diferentes. O método e o momento da inserção distinguem a consequência específica."
+   "A": "**Distração é um erro do foco, não a complicação óssea específica do portal.** Separar os fragmentos prejudica a consolidação e deve ser evitado, mas não identifica a fratura nova na região de entrada retrógrada.",
+   "B": "**A operação descrita usa haste, não fixação com placa.** Falha da ancoragem de uma placa pertence a outra montagem. Na haste retrógrada, o ponto solicitado é o risco de romper o osso distal durante sua introdução.",
+   "C": "**É a armadilha da entrada pelo ombro.** Haste anterógrada saliente na cabeça pode gerar impacto e dor. A alternativa não descreve a fratura supracondiliana associada ao portal retrógrado."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco; Haste intramedular."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Vias de acesso e os nervos em risco",
+      "Haste intramedular"
+     ],
+     "blocos": [
+      "vias-de-acesso-e-os-nervos-em-risco-187b9899",
+      "haste-intramedular-b253fd02",
+      "haste-intramedular-da0f4f6b",
+      "haste-intramedular-c21af717"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "361c3c1d488db0a77e2c3674d5e0b7f51b472e84c866acbe38132bced1d6129a"
+    }
+   ],
+   "questaoSha256": "8c63c5f0a0cbf11047e0a70248909217e809afad16a33055d5b7f931a48e94f6",
+   "comentarioSha256": "b200f8946260ddabb0416335510a5ebdc1b3ac15740283364474194fb1022de6"
+  }
  },
  "trauma-1383": {
-  "conceito": "**Pseudartrose significa falha de consolidação que exige nova estratégia.** A fratura diafisária pode não consolidar após tratamento conservador ou operatório. O capítulo relaciona o problema a características do trauma, fatores do paciente, estabilidade insuficiente e distração do foco. A aparência e o contexto da pseudartrose ajudam a escolher o tratamento, mas não dispensam avaliar simultaneamente estabilidade mecânica e capacidade biológica local.\n\nA página 50 afirma que a maioria das pseudartroses da diáfise umeral é atrófica. Nesse padrão, a estratégia apresentada combina estabilidade com estímulo biológico. O tratamento mais utilizado é redução aberta e fixação com placa associada a enxerto ósseo autólogo. O capítulo não autoriza interpretar a palavra atrófica como prova de que todo osso do foco está morto; a revisão deve identificar e remover tecido desvitalizado e preservar tecido saudável.\n\n**A revisão prepara um foco capaz de consolidar.** A técnica tradicional começa por exposição do local e retirada dos implantes prévios quando necessário. O desbridamento remove fragmentos mortos e tecido fibroso até encontrar osso saudável com sangramento de ambos os lados. Em seguida, uma placa resistente proporciona fixação adequada. A montagem convencional descrita utiliza quatro parafusos acima e quatro abaixo; um parafuso interfragmentar sólido pode permitir três de cada lado.\n\nO paciente precisa ser informado sobre a possibilidade de enxerto autólogo, aloenxerto, outros estímulos biológicos ou encurtamento se houver defeito ósseo. O capítulo apresenta a matriz óssea desmineralizada como alternativa estudada ao enxerto da crista ilíaca, com o objetivo de evitar morbidade da área doadora. Aloenxertos estruturais e enxertos fibulares também aparecem em situações difíceis. Esses recursos não são necessários de forma idêntica em todos os pacientes, mas mostram que a revisão não se resume a trocar o metal.\n\n**Outras apresentações modificam o problema.** A pseudartrose hipertrófica é discutida em séries tratadas com fixação externa, enquanto as atróficas receberam também decorticação e enxerto. Se há infecção, identificar o microrganismo, desbridar e administrar antibióticos faz parte do tratamento. A estabilidade do material ajuda a decidir se pode ser mantido ou se precisa ser retirado e substituído por fixação externa. A osteoporose pode comprometer a compra de parafusos e demandar placa, enxerto estrutural ou outra estratégia.\n\nNa falha após haste intramedular, uma opção é preservar o implante e acrescentar placa de compressão com ou sem enxerto. O capítulo explica que a haste compartilha cargas e resiste a esforço axial e flexão, enquanto a placa melhora o controle rotacional. Esse exemplo mostra por que uma pseudartrose com aparência atrófica também pode ter um componente mecânico importante. Não é adequado separar biologia e estabilidade como se apenas uma pudesse estar comprometida.\n\nO acervo complementar já cobrou o par pseudartrose atrófica e tratamento com placa. A questão atual isola a predominância descrita no capítulo, mas o comentário ensina a consequência prática: a revisão deve criar estabilidade e favorecer a consolidação, verificando infecção, defeito ósseo e qualidade do osso. Não se generalizam as taxas de falha de séries heterogêneas nem se atribui a cirurgia, por si só, a causa de todas as pseudartroses.\n\n> **Na prova:** A maioria das pseudartroses diafisárias umerais é atrófica; a revisão combina estabilidade e estímulo biológico.",
-  "correta": "**A: atrófica.** A página 50 afirma que a maioria das pseudartroses diafisárias umerais é atrófica e relaciona seu tratamento à obtenção de estabilidade mecânica com estímulo biológico. Isso fundamenta a alternativa. O tratamento tradicional mais utilizado, apresentado no mesmo trecho, é fixação com placa e enxerto autólogo.\n\nA revisão exige avaliação do tecido no foco, desbridamento até osso saudável e montagem capaz de estabilizar os segmentos. Na revisão sistemática resumida na página 55, placa com enxerto autólogo aparece como opção com alta consolidação e complicações relativamente baixas. O comentário mantém a distinção entre a apresentação mais frequente e situações particulares, como infecção, osteoporose ou falha depois de uma haste.",
+  "conceito": "Uma pseudartrose do úmero com pouca resposta de formação óssea não precisa apenas de um implante mais forte: é preciso recuperar também a **biologia do foco**. O tipo predominante descrito é o **atrófico**, alternativa A.\n\nPseudartrose significa que a fratura não consolidou; “atrófica” destaca a resposta reparadora pobre. O resumo afirma que a maioria das pseudartroses umerais tem essa apresentação e orienta combinar **estabilidade mecânica com estímulo biológico**. A estratégia mais usada é redução aberta, desbridamento até osso que sangra, placa forte e enxerto autólogo (Rockwood, 10ª ed., cap. 37, “Pseudartrose: tratamento”).\n\nOs dois componentes precisam ser investigados. Distração ou fixação insuficiente deixam o foco mecanicamente desfavorável; tabagismo, diabetes, desnutrição, perda óssea e dano às partes moles também pesam. O enxerto não substitui estabilidade, assim como trocar o implante não recompõe sozinho um leito biológico ruim.\n\n**Infecção e osteoporose são outros eixos da avaliação.** A primeira exige cultura, antibiótico e desbridamento, com decisão sobre manter ou trocar a fixação conforme sua estabilidade. A segunda pode comprometer a pega dos parafusos e exigir outra construção. Elas não são sinônimos do padrão atrófico nem excluem sua coexistência.",
+  "correta": "**A: atrófica.** É o padrão predominante descrito no resumo, justificando atenção simultânea à estabilidade e ao leito biológico. Placa com enxerto autólogo é a opção mais usada, sem prometer consolidação em todos os casos.",
   "incorretas": {
-   "B": "**É um contexto importante, mas não a predominância indicada.** O capítulo dedica uma seção à pseudartrose infectada, com investigação microbiológica, antibióticos e desbridamento. Material estável pode ser mantido em situações selecionadas; se instável, deve ser retirado e substituído, frequentemente por fixação externa. Esse tratamento é verdadeiro para o contexto séptico, mas o texto não o descreve como apresentação predominante de toda pseudartrose umeral. Na página 50, a predominância apontada é atrófica.",
-   "C": "**Existe no capítulo como outra apresentação.** Na página 53, uma série trata pseudartroses hipertróficas com fixação externa, enquanto as atróficas recebem também decorticação e enxerto. Isso mostra uma diferença de estratégia, mas não transforma o padrão hipertrófico no mais comum da diáfise umeral. A página 50 identifica a maioria como atrófica e exige combinar estabilidade com estímulo biológico. O distrator usa um tipo real de pseudartrose, cuja presença não responde à pergunta sobre predominância.",
-   "D": "**Modifica a fixação, mas não define a apresentação mais frequente.** A osteoporose é discutida porque pode reduzir compra dos parafusos e aumentar a dificuldade da revisão. O capítulo apresenta placas bloqueadas, enxertos estruturais e haste como recursos em casos selecionados de osso frágil. Essa condição é um fator de planejamento, não a categoria predominante atribuída a todas as pseudartroses da diáfise. O enunciado pede a apresentação que fundamenta atenção à biologia, descrita como atrófica."
+   "B": "**Infecção muda o tratamento, mas não é o padrão predominante indicado.** O resumo a descreve como rara no úmero e exige abordagem cirúrgica quando profunda. Não se deve presumir infecção apenas porque a fratura não consolidou; é uma possibilidade que precisa ser investigada.",
+   "C": "**Não corresponde à resposta reparadora pobre destacada.** A forma hipertrófica é reconhecida no capítulo, inclusive entre as tratáveis com fixador circular, mas a afirmação sobre predominância é da atrófica. A ênfase biológica da pergunta ajuda a reconhecer essa distinção.",
+   "D": "**Qualidade do osso e tipo de pseudartrose não são a mesma classificação.** Osteoporose pode dificultar a fixação, levando a placa bloqueada, montagem mais longa e enxerto. Isso não transforma “associada à osteoporose” no padrão predominante definido pelo capítulo."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Pseudartrose; Situações especiais."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Pseudartrose",
+      "Situações especiais"
+     ],
+     "blocos": [
+      "pseudartrose-a02ba06f",
+      "pseudartrose-6427266b",
+      "pseudartrose-9719258c",
+      "pseudartrose-c68d4d26",
+      "pseudartrose-fc31c240",
+      "pseudartrose-b3011935",
+      "pseudartrose-6be5e28b",
+      "situacoes-especiais-ed4bfc68"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "5208ce39a9ae1cc2fd82b55fb664db7296e3fd1db20a41d911b42a91212da051"
+    }
+   ],
+   "questaoSha256": "b33a4bd06c8fc92313d857bda2e81c27bce895a30cf7096bd317df53922e4673",
+   "comentarioSha256": "e1ae362ca35340d6ce2be2367da2018eba1122dda4d09c9b26738728529c937f"
+  }
  },
  "trauma-1384": {
   "conceito": "Se a pseudartrose asséptica ocorreu com a haste mantida, a placa complementar acrescenta principalmente **controle rotacional**, alternativa B. Ela não atua como um enxerto nem apenas repete a função longitudinal da haste.\n\nA haste já compartilha carga e resiste à flexão e à carga axial. O resumo considera a instabilidade, sobretudo rotacional, uma causa central da pseudartrose asséptica nesse cenário. A placa de aumento procura neutralizar esse componente sem exigir retirar necessariamente a haste (Rockwood, 10ª ed., cap. 37, “Pseudartrose depois de haste”).\n\n**Resolver a rotação não apaga o restante da avaliação.** A reconstrução pode precisar de preparo do foco e enxerto, conforme a biologia e o defeito. A maioria das pseudartroses do úmero é descrita como atrófica; estabilizar e estimular a consolidação são tarefas relacionadas, mas não idênticas.\n\nA fonte também relata resultados variáveis da troca da haste e lembra que dinamização não funciona bem no membro superior. Não se deve transportar automaticamente para o úmero uma estratégia de outro osso, supondo que aumentar carga axial resolva toda pseudartrose com haste.\n\n**Por que esta questão foi criada.** Ela mostra a função complementar da placa: acrescentar resistência à torção a uma montagem que já oferece parte do suporte axial e em flexão.",
@@ -27049,18 +27651,42 @@
   }
  },
  "trauma-1386": {
-  "conceito": "**A estabilidade da prótese é uma decisão central.** Fraturas periprotéticas da diáfise umeral ocorrem ao redor ou além de componentes de artroplastias do ombro ou do cotovelo. O capítulo relaciona sua frequência ao aumento dessas operações e da longevidade. O planejamento precisa considerar localização da fratura, qualidade do osso e, especialmente, se o componente protético permanece estável. Uma prótese solta não representa o mesmo problema de uma haste firme atravessada por uma fratura.\n\nNas artroplastias do ombro, a classificação de WRIGHT-COFIELD descreve tipo A iniciando na ponta da prótese e estendendo proximalmente, tipo B ao redor da ponta e tipo C distal à ponta. Para artroplastia do cotovelo, O'DRISCOLL e MORREY classificam fraturas periarticulares ou metafisárias, ao nível da haste e além da ponta na diáfise. Esses sistemas organizam a localização, mas não substituem a avaliação da estabilidade do componente.\n\n**Se está solta, a haste precisa ser substituída.** A página 59 afirma que prótese solta ou instável deve ser removida e substituída por uma mais longa, cimentada ou não. A nova haste deve ultrapassar a fratura em pelo menos dois diâmetros corticais. Esse detalhe mostra que a revisão não é apenas recolocar uma peça semelhante: precisa obter fixação além do foco e contornar o problema mecânico do componente instável.\n\nPlaca lateral e fios de cerclagem podem ser necessários para complementar a estabilização da fratura depois da revisão. São recursos associados, não alternativas para ignorar uma prótese solta. Se for usado cimento, o capítulo orienta não permitir extravasamento para o foco que possa interferir na consolidação. Qualidade óssea, comprimento do componente e fixação dos fragmentos precisam ser planejados em conjunto.\n\n**O componente estável permite outra discussão.** O capítulo admite tentativa de tratamento não operatório em fratura com prótese estável, inclusive considerando o desvio. Se o tratamento conservador falha, indica-se cirurgia. A seção de indicações também caracteriza a fratura periprotética como indicação relativa de operação quando existe estabilidade protética, mas destaca a necessidade de revisão nos casos de componente solto ou falha do conservador. Portanto, o termo solta do enunciado é decisivo.\n\nA fixação preservando a haste pode ter sentido quando o componente é estável e a fratura exige estabilização. Observação e órtese pertencem à tentativa conservadora com componente estável. Essas condutas não resolvem a causa adicional de instabilidade na pergunta. A questão não depende de memorizar qual tipo tem maior falha, mas de separar dois problemas: a fratura ao redor da prótese e a fixação da própria prótese no osso.\n\nO capítulo alerta para infecção, problemas neurológicos, perda de fixação e falha de consolidação em cirurgias de revisão. Isso reforça a necessidade de planejamento e proteção de partes moles, sem mudar a resposta técnica à soltura. A lacuna tem formato de banca porque um único atributo do contexto, estabilidade da haste, muda a conduta e organiza distratores que seriam defensáveis se esse atributo fosse diferente.\n\n> **Na prova:** Fratura periprotética com haste solta exige revisão do componente; estabilidade permite considerar preservação.",
-  "correta": "**A: revisão da haste.** A página 59 determina remoção e substituição do componente quando ele está solto ou instável. A revisão deve utilizar haste mais longa, que ultrapasse o foco em pelo menos dois diâmetros corticais, com complementação da fratura conforme necessário. A alternativa trata diretamente da instabilidade protética fornecida pelo enunciado.\n\nPlaca e cerclagem podem auxiliar a estabilização, mas não substituem a revisão da haste solta. O capítulo admite tratamento conservador quando a prótese é estável e indica cirurgia após sua falha. Assim, é a estabilidade do componente, em associação à localização e à qualidade óssea, que impede escolher simplesmente manter a prótese neste caso.",
+  "conceito": "A fratura está ao redor de uma prótese cuja **haste está solta**. Fixar apenas o osso deixaria dentro dele um componente ainda instável; a conduta que aborda esse problema é a **revisão da haste**, alternativa A.\n\nNa fratura periprotética, o nível do traço importa, mas a estabilidade do implante muda a decisão. Com prótese estável, o resumo permite tentar tratamento sem cirurgia e operar se ele falhar. Com componente solto, recomenda **haste de revisão mais longa**, ultrapassando a fratura em pelo menos **dois diâmetros corticais**, frequentemente associada a placa e cerclagens (Rockwood, 10ª ed., cap. 37, “Fratura periprotética”).\n\nA lógica é procurar apoio além da região fraturada e tratar simultaneamente a soltura. A revisão pode ser cimentada ou não, cuidando para não deixar cimento entrar no foco. A presença de uma placa auxiliar não muda o princípio: **ela complementa a construção, não torna estável uma haste solta que foi simplesmente preservada**.\n\nÉ uma situação de alto risco, com osso e partes moles já submetidos a cirurgia. Portanto, revisão é a resposta dirigida à instabilidade descrita, sem significar que todas as fraturas periprotéticas precisem de troca do componente.",
+  "correta": "**A: revisão da haste.** Trata a soltura, além da fratura. A haste longa deve ultrapassar o foco e pode receber fixação complementar conforme nível e qualidade óssea.",
   "incorretas": {
-   "B": "**Depende de um componente que possa ser preservado.** Placa e cerclagem são recursos de estabilização da fratura periprotética e podem complementar a revisão. Quando a prótese está estável, fixar os fragmentos sem substituir o componente pode integrar o planejamento. O enunciado, porém, informa soltura, e a página 59 exige remover e trocar a haste por uma mais longa. Fixar apenas a fratura mantendo um componente instável deixa sem solução uma parte essencial do problema mecânico descrito.",
-   "C": "**Pode fazer parte de uma tentativa sem revisão quando o componente é estável.** O tratamento não operatório é considerado na presença de prótese estável, e a órtese é uma forma de manejo da fratura diafisária. Aqui, porém, o componente está solto, condição em que o capítulo recomenda revisão por haste mais longa. Conter o braço não corrige a fixação protética perdida. O distrator usa uma modalidade real de tratamento conservador, mas pressupõe estabilidade do componente que o enunciado expressamente exclui.",
-   "D": "**Pertence à possibilidade conservadora com estabilidade.** O capítulo admite tentativa de tratamento não operatório em fraturas ao redor de uma prótese estável, com acompanhamento e indicação de cirurgia se essa tentativa falhar. Esse contexto não deve ser transferido para uma haste solta. A soltura introduz instabilidade do próprio componente, além da fratura. A alternativa seria discutida com outra condição protética, mas não resolve a necessidade de remoção e substituição explicitada para o cenário apresentado."
+   "B": "**A placa pode estabilizar o traço e deixar o componente solto.** Manter a prótese faz sentido quando ela está estável; no caso descrito, é necessário revisar a haste. Placa auxiliar após a revisão é uma combinação diferente da proposta da alternativa.",
+   "C": "**A órtese não corrige a interface instável da prótese.** O resumo admite tentativa conservadora com componente estável. Transportar essa conduta para uma haste solta ignora justamente o dado que muda o tratamento.",
+   "D": "**Observar preservando o componente mantém a causa mecânica.** A fratura periprotética exige avaliar estabilidade da prótese, nível e osso. Uma haste comprovadamente solta não se torna estável apenas pelo acompanhamento do traço."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 37 (Humeral Shaft Fractures; Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau)"
+   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Situações especiais."
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-24",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-37-diafise-umero",
+     "titulo": "Fratura da diáfise do úmero",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+     "secoes": [
+      "Situações especiais"
+     ],
+     "blocos": [
+      "situacoes-especiais-bbdbf206",
+      "situacoes-especiais-d2a2a16f"
+     ],
+     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "trechosSha256": "ebb679335e894bd9503774120fc25eff9d8bb47629d3c0ec4dfdf48fa8710755"
+    }
+   ],
+   "questaoSha256": "d62efe4d08df064957f5bd6d9e75c4701cdbdab4cb6f99adf717bfdfb882302d",
+   "comentarioSha256": "ce75abee17c733aa42583409065686f5880a9a588850b230abf1106e3ff992e7"
+  }
  },
  "trauma-1387": {
   "conceito": "**O tamanho do componente ósseo muda a fratura.** O capitelo forma a porção lateral da superfície articular do úmero distal e articula com a cabeça radial. Suas fraturas por cisalhamento coronal pertencem ao grupo das fraturas articulares parciais. A superfície pode se separar como um fragmento com osso subcondral suficiente para fixação ou como uma lâmina osteocondral muito fina. Essa diferença fundamenta os tipos I e II de BRYAN-MORREY e ajuda a antecipar a dificuldade de obter uma montagem estável.\n\nNo tipo I, chamado HAHN-STEINTHAL, o fragmento inclui a superfície articular e uma grande porção de osso subcondral. Na figura 39-6A, o componente ósseo tem espessura apreciável. No tipo II, chamado KOCHER-LORENZ, a lesão é predominantemente osteocondral, com uma camada óssea fina, como na figura 39-6B. Os dois podem comprometer o capitelo, mas não oferecem a mesma quantidade de osso para receber implantes. O número romano identifica esse atributo, e não simplesmente a intensidade do desvio radiográfico.\n\n**Reconhecer o fragmento é mais útil que decorar um nome isolado.** A classificação apresentada nas páginas 12 e 13 também inclui o tipo III, cominuído, e a modificação tipo IV de MCKEE, na qual o fragmento envolve o capitelo e se estende à tróclea. Essas categorias acrescentam outros critérios: número de fragmentos e extensão medial. Portanto, espessura óssea, cominuição e participação troclear são informações diferentes. Um fragmento fino não deve ser chamado automaticamente de tipo III; a cominuição precisa estar presente para essa identificação.\n\nO mecanismo típico das fraturas articulares parciais é uma queda sobre a mão estendida. A avaliação deve procurar lesões associadas, especialmente da cabeça radial e dos ligamentos. O capítulo recomenda tomografia em padrões complexos para revelar fragmentação e extensão articular que podem não ficar claros nas radiografias. Essa investigação é relevante porque o fragmento observado de perfil pode não representar toda a lesão. A classificação inicial deve ser conferida diante da anatomia completa da fratura.\n\n**A espessura orienta a técnica, sem tornar a conduta automática.** Para fraturas do capitelo com osso suficiente, o objetivo é redução anatômica e fixação rígida que permita movimento precoce. A página 46 descreve parafusos sem cabeça ou convencionais com cabeça rebaixada, inseridos pela frente ou por trás conforme o padrão e a exposição. A montagem deve respeitar a superfície articular e a estabilidade ligamentar. O acesso lateral utiliza o intervalo de KOCHER e uma artrotomia anterior ao ligamento colateral ulnar lateral.\n\nA mesma página explica por que os fragmentos tipo II são difíceis de fixar: são finos e podem estar fragmentados. Entre as opções discutidas estão tentativa de fixação com pinos bioabsorvíveis, excisão do fragmento, enxerto osteocondral e artroplastia do capitelo. Não existe nesse trecho uma regra de que todo tipo II deve ser excisado. A descrição morfológica sustenta o planejamento, enquanto tamanho, reconstruibilidade e lesões associadas continuam relevantes para escolher a operação.\n\nA banca voltou à classificação no TARO 2026 ao cobrar o tipo com cominuição. Um item do acervo sem ano compara diretamente os tipos II e III. Aqui, a pergunta muda o ângulo para a quantidade de osso dos tipos I e II, preservando a lógica de combinar dois dados próximos. O candidato deve ler os dois componentes da alternativa; acertar o primeiro e inverter o segundo não completa corretamente a frase.\n\n> **Na prova:** BRYAN-MORREY I tem componente ósseo amplo; II é uma lâmina osteocondral fina.",
