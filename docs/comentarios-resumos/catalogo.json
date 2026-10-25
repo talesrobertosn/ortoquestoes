@@ -6,9 +6,9 @@
   "pendente": 591,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 260,
+  "pendente-fonte": 261,
   "pendente-inspecao-imagem": 85,
-  "revisada": 1336
+  "revisada": 1335
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -59,9 +59,9 @@
    "estados": {
     "duplicada": 4,
     "pendente": 11,
-    "pendente-fonte": 14,
+    "pendente-fonte": 15,
     "pendente-inspecao-imagem": 1,
-    "revisada": 64
+    "revisada": 63
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -25239,8 +25239,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "revisada",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo dos resumos33/36 sustenta o par axilar/circunflexa umeral posterior e o trajeto supraescapular, mas não descreve o intervalo triangular e a artéria braquial profunda(A) nem o percurso toracodorsal/subescapular(B). As justificativas publicadas apenas repetiam o par correto, sem análise anatômica própria desses distratores, como apontou a revisão automática do PR525. Falta fonte anatômica primária desses percursos antes de conferir A–D integralmente. Comentário anterior ao lote151 restaurado; D oficial preservada; baseResumo retirada. Não contar como revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25255,46 +25255,7 @@
     "rockwood10-36-umero-proximal"
    ],
    "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
-   "baseResumo": {
-    "tipo": "resumo",
-    "versao": 1,
-    "fontes": [
-     {
-      "resumo": "rockwood10-36-umero-proximal",
-      "titulo": "Fratura do úmero proximal",
-      "livro": "Rockwood and Green's Fractures in Adults",
-      "edicao": "10ª edição (2025)",
-      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-      "secoes": [
-       "Anatomia aplicada e vias de acesso",
-       "Irrigação da cabeça, Hertel e osteonecrose"
-      ],
-      "blocos": [
-       "anatomia-aplicada-e-vias-de-acesso-f121538c",
-       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
-      ],
-      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
-      "trechosSha256": "c4f74b5d4e027628c98665a4ddda7a4dbb8c92d028309a5a8214a7f0b19a02f8"
-     },
-     {
-      "resumo": "rockwood10-33-fratura-escapula",
-      "titulo": "Fratura da escápula",
-      "livro": "Rockwood and Green's Fractures in Adults",
-      "edicao": "10ª edição (2025)",
-      "capitulo": "Capítulo 33 · Scapular Fractures",
-      "secoes": [
-       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
-      ],
-      "blocos": [
-       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
-      ],
-      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
-      "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
-     }
-    ],
-    "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
-    "comentarioSha256": "9090126f2889476d7223ca679f36f7d9d906ec5babe6660b21ab72fd8d28cad5"
-   }
+   "pendencia": "O corpo dos resumos33/36 sustenta o par axilar/circunflexa umeral posterior e o trajeto supraescapular, mas não descreve o intervalo triangular e a artéria braquial profunda(A) nem o percurso toracodorsal/subescapular(B). As justificativas publicadas apenas repetiam o par correto, sem análise anatômica própria desses distratores, como apontou a revisão automática do PR525. Falta fonte anatômica primária desses percursos antes de conferir A–D integralmente. Comentário anterior ao lote151 restaurado; D oficial preservada; baseResumo retirada. Não contar como revisão concluída."
   },
   "ombro-cotovelo-0433": {
    "tema": "ombro-cotovelo",
