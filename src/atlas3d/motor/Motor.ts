@@ -1,5 +1,5 @@
 import {
-  ACESFilmicToneMapping, Box3, BufferGeometry, Color, DirectionalLight, DoubleSide, Group, HemisphereLight, Material, Mesh,
+  ACESFilmicToneMapping, Box3, BufferGeometry, Color, DirectionalLight, DoubleSide, Group, HemisphereLight, Line, LineDashedMaterial, Material, Mesh,
   MeshStandardMaterial, PerspectiveCamera, Plane, Raycaster, SRGBColorSpace, Scene, SphereGeometry, Vector2, Vector3, WebGLRenderer,
 } from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
@@ -12,6 +12,10 @@ export type Vista = 'anterior' | 'posterior' | 'direita' | 'esquerda' | 'superio
 export type EixoCorte = 'axial' | 'sagital' | 'coronal'
 export interface Corte { eixo: EixoCorte; posicao: number; inverter: boolean }
 export interface Passagem { id: string; faixa?: Faixa; x: number; y: number }
+/** Estrutura pintada por cima (origem, inserção, nervo, relacionada), sem mexer na seleção. */
+export interface Destaque { id: string; cor: string }
+/** Marcador num ponto anatômico validado do modelo (pontos.json); linhas ligam origem e inserção. */
+export interface Marco { p: [number, number, number]; cor: string }
 
 /** Direção da câmera para cada vista (Z para cima, esquerda do paciente = +X, anterior = −Y). */
 const DIRECOES: Record<Vista, [number, number, number]> = {
@@ -344,7 +348,8 @@ export class Motor {
     if (caixa.isEmpty()) return
     const centro = caixa.getCenter(new Vector3())
     const tamanho = caixa.getSize(new Vector3())
-    const raio = Math.max(tamanho.length() / 2, 30)
+    // estrutura pequena (ligamento, nervo curto) não enche a tela: mantém um pouco do entorno à vista
+    const raio = Math.max(tamanho.length() / 2, 60)
     const fov = (this.camera.fov * Math.PI) / 180
     const fovH = 2 * Math.atan(Math.tan(fov / 2) * this.camera.aspect)
     const dist = (raio / Math.sin(Math.min(fov, fovH) / 2)) * 1.25
@@ -468,6 +473,60 @@ export class Motor {
     this.pedirQuadro()
   }
 
+  // ---------- relações anatômicas: destaques, marcos e linhas ----------
+
+  private camadaRelacoes = new Group()
+  private relacoesNaCena = false
+  /**
+   * Pinta estruturas inteiras (ossos de origem e inserção, nervo, relacionadas) e põe marcadores nos
+   * pontos anatômicos validados, com linhas tracejadas entre origem e inserção. Só usa geometria que
+   * o modelo já tem: nada de coordenada inventada. Não reconstrói a cena; troca só esta camada.
+   */
+  mostrarRelacoes(destaques: Destaque[], marcos: Marco[] = [], linhas: [Marco['p'], Marco['p'], string][] = []) {
+    if (!this.relacoesNaCena) { this.raiz.add(this.camadaRelacoes); this.relacoesNaCena = true }
+    for (const o of [...this.camadaRelacoes.children]) {
+      this.camadaRelacoes.remove(o)
+      const m = o as Mesh
+      ;(m.material as Material).dispose()
+      if (o instanceof Line) o.geometry.dispose()
+    }
+    for (const d of destaques) {
+      const reg = this.registros.get(d.id)
+      if (!reg?.malha?.visible) continue
+      const cor = new Color(d.cor)
+      const mat = new MeshStandardMaterial({ color: cor, emissive: cor, emissiveIntensity: 0.3, roughness: 0.55, side: DoubleSide, transparent: true, opacity: 0.92, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 })
+      if (this.planoCorte) mat.clippingPlanes = [this.planoCorte]
+      const malha = new Mesh(reg.malha.geometry, mat)
+      malha.renderOrder = 2
+      malha.raycast = () => {}
+      this.camadaRelacoes.add(malha)
+    }
+    if (marcos.length) {
+      const geo = this.geoMarco ??= new SphereGeometry(3.2, 16, 12)
+      for (const k of marcos) {
+        // por cima de tudo: o marcador aparece de qualquer ângulo, mesmo atrás do músculo
+        const mat = new MeshStandardMaterial({ color: k.cor, emissive: k.cor, emissiveIntensity: 0.55, depthTest: false, transparent: true, opacity: 0.95 })
+        const m = new Mesh(geo, mat)
+        m.position.set(...k.p)
+        m.renderOrder = 6
+        m.raycast = () => {}
+        this.camadaRelacoes.add(m)
+      }
+    }
+    for (const [a, b, cor] of linhas) {
+      const g = new BufferGeometry().setFromPoints([new Vector3(...a), new Vector3(...b)])
+      const l = new Line(g, new LineDashedMaterial({ color: cor, dashSize: 6, gapSize: 4, depthTest: false, transparent: true, opacity: 0.85 }))
+      l.computeLineDistances()
+      l.renderOrder = 5
+      l.raycast = () => {}
+      this.camadaRelacoes.add(l)
+    }
+    this.pedirQuadro()
+  }
+  private geoMarco?: SphereGeometry
+  estaVisivel(id: string) { return !!this.registros.get(id)?.malha?.visible }
+  existe(id: string) { return this.registros.has(id) }
+
   descartar() {
     this.descartado = true
     cancelAnimationFrame(this.quadroPendente)
@@ -481,6 +540,7 @@ export class Motor {
     this.controles.dispose()
     const geos = new Set<BufferGeometry>()
     this.raiz.traverse((o) => { const m = o as Mesh; if (m.isMesh) geos.add(m.geometry) })
+    this.geoMarco?.dispose()
     for (const g of geos) g.dispose() // libera só a GPU: a geometria segue no cache do módulo para a próxima visita
     for (const m of this.materiais.values()) m.dispose()
     this.renderer.dispose()

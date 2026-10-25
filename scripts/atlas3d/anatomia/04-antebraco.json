@@ -1,0 +1,263 @@
+{
+  "lote": "04-antebraco",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [250, 251, 252, 253, 254, 255, 256, 257, 260, 261, 262, 263],
+  "registros": [
+    {
+      "chave": "pronador-redondo", "tipo": "musculo", "nome": "Pronador redondo", "en": "Pronator teres",
+      "ids": ["superficial_head_of_pronator_teres", "deep_head_of_pronator_teres"], "regiao": "antebraco", "grupo": "flexores-superficiais",
+      "origem": { "t": "Cabeça umeral no epicôndilo medial do úmero; cabeça ulnar na parte proximal da ulna (face anterior).", "m": ["humerus:Medial epicondyle of humerus", "ulna:Coronoid process of ulna"] },
+      "insercao": { "t": "Face lateral do terço médio do rádio.", "m": ["radius:Pronator tuberosity"] },
+      "nervos": ["mediano"],
+      "acao": "Pronação e flexão do antebraço.",
+      "clinica": "O nervo mediano passa entre as duas cabeças e pode ser comprimido ali (síndrome do pronador).",
+      "fonte": [{ "l": "netter-ao2", "p": [250, 252, 260] }], "status": "verificado",
+      "notas": "O Netter diz 'parte proximal da ulna'; o marco 3D usa o processo coronoide, que é a parte anterior da ulna proximal."
+    },
+    {
+      "chave": "flexor-radial-do-carpo", "tipo": "musculo", "nome": "Flexor radial do carpo", "en": "Flexor carpi radialis",
+      "ids": ["flexor_carpi_radialis"], "regiao": "antebraco", "grupo": "flexores-superficiais",
+      "origem": { "t": "Epicôndilo medial do úmero (tendão flexor comum).", "m": ["humerus:Medial epicondyle of humerus"] },
+      "insercao": { "t": "Base do 2º (e do 3º) metacarpal.", "o": ["second_metacarpal_bone", "third_metacarpal_bone"] },
+      "nervos": ["mediano"],
+      "acao": "Flexão do punho com desvio radial.",
+      "clinica": "A artéria radial fica logo lateral ao tendão, no punho.",
+      "fonte": [{ "l": "netter-ao2", "p": [252, 257] }], "status": "verificado"
+    },
+    {
+      "chave": "palmar-longo", "tipo": "musculo", "nome": "Palmar longo", "en": "Palmaris longus",
+      "ids": ["palmaris_longus_muscle"], "regiao": "antebraco", "grupo": "flexores-superficiais",
+      "origem": { "t": "Epicôndilo medial do úmero.", "m": ["humerus:Medial epicondyle of humerus"] },
+      "insercao": { "t": "Retináculo dos músculos flexores e aponeurose palmar." },
+      "nervos": ["mediano"],
+      "acao": "Flexão do punho.",
+      "clinica": "Tendão muito usado como enxerto em transferências e reconstruções; falta em cerca de 10% das pessoas.",
+      "fonte": [{ "l": "netter-ao2", "p": [252] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-ulnar-do-carpo", "tipo": "musculo", "nome": "Flexor ulnar do carpo", "en": "Flexor carpi ulnaris",
+      "ids": ["humeral_head_of_flexor_carpi_ulnaris", "ulnar_head_of_flexor_carpi_ulnaris"], "regiao": "antebraco", "grupo": "flexores-superficiais",
+      "origem": { "t": "Epicôndilo medial do úmero e face posterior da ulna.", "m": ["humerus:Medial epicondyle of humerus", "ulna:Olecranon"] },
+      "insercao": { "t": "Pisiforme, hâmulo do hamato e base do 5º metacarpal.", "m": ["hamate_bone:Hook of hamate bone"], "o": ["pisiform_bone", "fifth_metacarpal_bone"] },
+      "nervos": ["ulnar"],
+      "acao": "Flexão do punho com desvio ulnar.",
+      "clinica": "É o flexor mais forte do punho. O nervo ulnar entra no antebraço entre as suas cabeças e pode ser comprimido ali.",
+      "fonte": [{ "l": "netter-ao2", "p": [251, 252, 263] }], "status": "verificado",
+      "notas": "A tabela de origens e inserções põe a origem ulnar na parte posterior proximal da ulna; o marco 3D usa o olécrano."
+    },
+    {
+      "chave": "flexor-superficial-dos-dedos", "tipo": "musculo", "nome": "Flexor superficial dos dedos", "en": "Flexor digitorum superficialis",
+      "ids": ["humero_ulnar_head_of_flexor_digitorum_superficialis", "radial_head_of_flexor_digitorum_superficialis"], "regiao": "antebraco", "grupo": "flexores-intermedios",
+      "origem": { "t": "Cabeça umeroulnar no epicôndilo medial e na parte proximal da ulna; cabeça radial na face anterior da parte proximal do rádio.", "m": ["humerus:Medial epicondyle of humerus"] },
+      "insercao": { "t": "Falanges médias do 2º ao 5º dedo.", "o": ["middle_phalanx_of_second_finger_of_hand", "middle_phalanx_of_third_finger_of_hand", "middle_phalanx_of_fourth_finger_of_hand", "middle_phalanx_of_fifth_finger_of_hand"] },
+      "nervos": ["mediano"],
+      "acao": "Flexão da articulação interfalângica proximal; ajuda a fletir os dedos e o punho.",
+      "clinica": "Fica entre os flexores superficiais e os profundos ('flexor intermédio'). O teste do superficial (segurando os outros dedos em extensão) isola a sua função. O nervo mediano passa sob o arco do flexor superficial.",
+      "fonte": [{ "l": "netter-ao2", "p": [250, 253, 260] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-profundo-dos-dedos", "tipo": "musculo", "nome": "Flexor profundo dos dedos", "en": "Flexor digitorum profundus",
+      "ids": ["flexor_digitorum_profundus"], "regiao": "antebraco", "grupo": "flexores-profundos",
+      "origem": { "t": "Face anterior da ulna e membrana interóssea.", "m": ["ulna:Body of ulna"] },
+      "insercao": { "t": "Falanges distais do 2º ao 5º dedo.", "o": ["distal_phalanx_of_second_finger_of_hand", "distal_phalanx_of_third_finger_of_hand", "distal_phalanx_of_fourth_finger_of_hand", "distal_phalanx_of_fifth_finger_of_hand"] },
+      "nervos": ["interosseo-anterior", "ulnar"],
+      "acao": "Flexão da articulação interfalângica distal; ajuda a fletir os dedos e a mão.",
+      "clinica": "A avulsão do tendão é o 'dedo de Jersey'. O teste do profundo (segurar a falange média) isola a sua função. Junto com o flexor longo do polegar, é o mais suscetível à contratura isquêmica de Volkmann.",
+      "fonte": [{ "l": "netter-ao2", "p": [254, 261, 263] }], "status": "verificado",
+      "notas": "Indicador e médio pelo interósseo anterior (mediano); anular e mínimo pelo ulnar. O médio pode ter inervação dupla."
+    },
+    {
+      "chave": "flexor-longo-do-polegar", "tipo": "musculo", "nome": "Flexor longo do polegar", "en": "Flexor pollicis longus",
+      "ids": ["flexor_pollicis_longus"], "regiao": "antebraco", "grupo": "flexores-profundos",
+      "origem": { "t": "Face anterior do rádio e parte proximal da ulna." },
+      "insercao": { "t": "Falange distal do polegar.", "o": ["distal_phalanx_of_first_finger_of_hand"] },
+      "nervos": ["interosseo-anterior"],
+      "acao": "Flexão da articulação interfalângica do polegar.",
+      "clinica": "Com o flexor profundo dos dedos, é o mais suscetível à contratura de Volkmann.",
+      "fonte": [{ "l": "netter-ao2", "p": [254, 261] }], "status": "verificado"
+    },
+    {
+      "chave": "pronador-quadrado", "tipo": "musculo", "nome": "Pronador quadrado", "en": "Pronator quadratus",
+      "ids": ["pronator_quadratus"], "regiao": "antebraco", "grupo": "flexores-profundos",
+      "origem": { "t": "Face medial da parte distal da ulna." },
+      "insercao": { "t": "Face anterior da parte distal do rádio.", "m": ["radius:Anterior surface of radius"] },
+      "nervos": ["interosseo-anterior"],
+      "acao": "Pronação do antebraço; é o pronador primário, que inicia o movimento.",
+      "fonte": [{ "l": "netter-ao2", "p": [254, 261] }], "status": "verificado"
+    },
+    {
+      "chave": "anconeo", "tipo": "musculo", "nome": "Ancôneo", "en": "Anconeus",
+      "ids": ["anconeus_muscle"], "regiao": "antebraco", "grupo": "extensores-superficiais",
+      "origem": { "t": "Face posterior do epicôndilo lateral do úmero.", "m": ["humerus:Lateral epicondyle of humerus"] },
+      "insercao": { "t": "Face posterior da parte proximal da ulna.", "m": ["ulna:Olecranon"] },
+      "nervos": ["radial"],
+      "acao": "Extensão do antebraço.",
+      "clinica": "Forma um dos planos do acesso de Kocher ao cotovelo.",
+      "fonte": [{ "l": "netter-ao2", "p": [251, 255, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-dos-dedos", "tipo": "musculo", "nome": "Extensor dos dedos", "en": "Extensor digitorum",
+      "ids": ["extensor_digitorum"], "regiao": "antebraco", "grupo": "extensores-superficiais",
+      "origem": { "t": "Epicôndilo lateral do úmero (tendão extensor comum).", "m": ["humerus:Lateral epicondyle of humerus"] },
+      "insercao": { "t": "Aparelho extensor dos dedos: bandas sagitais na metacarpofalângica, banda central na falange média e inserção terminal na falange distal.", "o": ["middle_phalanx_of_second_finger_of_hand", "middle_phalanx_of_third_finger_of_hand", "middle_phalanx_of_fourth_finger_of_hand", "middle_phalanx_of_fifth_finger_of_hand", "distal_phalanx_of_second_finger_of_hand", "distal_phalanx_of_third_finger_of_hand", "distal_phalanx_of_fourth_finger_of_hand", "distal_phalanx_of_fifth_finger_of_hand"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão dos dedos.",
+      "clinica": "Lesão da banda central (falange média) leva ao dedo em botoeira; da inserção terminal (falange distal), ao dedo em martelo.",
+      "fonte": [{ "l": "netter-ao2", "p": [255, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-do-dedo-minimo", "tipo": "musculo", "nome": "Extensor do dedo mínimo", "en": "Extensor digiti minimi",
+      "ids": ["extensor_digiti_minimi"], "regiao": "antebraco", "grupo": "extensores-superficiais",
+      "origem": { "t": "Epicôndilo lateral do úmero.", "m": ["humerus:Lateral epicondyle of humerus"] },
+      "insercao": { "t": "Aparelho extensor do dedo mínimo, como o extensor dos dedos.", "o": ["middle_phalanx_of_fifth_finger_of_hand", "distal_phalanx_of_fifth_finger_of_hand"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão do dedo mínimo.",
+      "clinica": "Passa no 5º compartimento dorsal do punho.",
+      "fonte": [{ "l": "netter-ao2", "p": [255, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-ulnar-do-carpo", "tipo": "musculo", "nome": "Extensor ulnar do carpo", "en": "Extensor carpi ulnaris",
+      "ids": ["humeral_head_of_extensor_carpi_ulnaris", "ulnar_head_of_extensor_carpi_ulnaris"], "regiao": "antebraco", "grupo": "extensores-superficiais",
+      "origem": { "t": "Epicôndilo lateral do úmero.", "m": ["humerus:Lateral epicondyle of humerus"] },
+      "insercao": { "t": "Base do 5º metacarpal.", "o": ["fifth_metacarpal_bone"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão e adução (desvio ulnar) da mão.",
+      "clinica": "A instabilidade do tendão pode causar um ressalto doloroso sobre a ulna.",
+      "fonte": [{ "l": "netter-ao2", "p": [255, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "braquiorradial", "tipo": "musculo", "nome": "Braquiorradial", "en": "Brachioradialis",
+      "ids": ["brachioradialis_muscle"], "regiao": "antebraco", "grupo": "compartimento-movel",
+      "origem": { "t": "Crista supraepicondilar lateral do úmero.", "m": ["humerus:Lateral supracondylar ridge"] },
+      "insercao": { "t": "Face lateral da parte distal do rádio.", "m": ["radius:Radial styloid process"] },
+      "nervos": ["radial"],
+      "acao": "Flexão do antebraço.",
+      "clinica": "É uma força deformante nas fraturas do rádio distal. O ramo superficial do radial passa sob ele e pode ser comprimido sob o tendão.",
+      "fonte": [{ "l": "netter-ao2", "p": [255, 262] }], "status": "verificado",
+      "notas": "O Netter escreve 'côndilo, parte lateral'; corresponde à crista supraepicondilar lateral mostrada na prancha."
+    },
+    {
+      "chave": "extensor-radial-longo-do-carpo", "tipo": "musculo", "nome": "Extensor radial longo do carpo", "en": "Extensor carpi radialis longus",
+      "ids": ["extensor_carpi_radialis_longus"], "regiao": "antebraco", "grupo": "compartimento-movel",
+      "origem": { "t": "Crista supraepicondilar lateral do úmero.", "m": ["humerus:Lateral supracondylar ridge"] },
+      "insercao": { "t": "Base do 2º metacarpal.", "o": ["second_metacarpal_bone"] },
+      "nervos": ["radial"],
+      "acao": "Extensão da mão (punho).",
+      "fonte": [{ "l": "netter-ao2", "p": [255, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-radial-curto-do-carpo", "tipo": "musculo", "nome": "Extensor radial curto do carpo", "en": "Extensor carpi radialis brevis",
+      "ids": ["extensor_carpi_radialis_brevis"], "regiao": "antebraco", "grupo": "compartimento-movel",
+      "origem": { "t": "Epicôndilo lateral do úmero.", "m": ["humerus:Lateral epicondyle of humerus"] },
+      "insercao": { "t": "Base do 3º metacarpal.", "o": ["third_metacarpal_bone"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão da mão (punho).",
+      "clinica": "A sua origem degenera no cotovelo de tenista (epicondilite lateral).",
+      "fonte": [{ "l": "netter-ao2", "p": [255, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "supinador", "tipo": "musculo", "nome": "Supinador", "en": "Supinator",
+      "ids": ["supinator"], "regiao": "antebraco", "grupo": "extensores-profundos",
+      "origem": { "t": "Face posterior da ulna (crista do supinador).", "m": ["ulna:Supinator crest"] },
+      "insercao": { "t": "Face lateral da parte proximal do rádio." },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Supinação do antebraço.",
+      "clinica": "O nervo interósseo posterior atravessa o músculo e pode ser comprimido na arcada de Frohse (margem proximal) ou na margem distal.",
+      "fonte": [{ "l": "netter-ao2", "p": [250, 251, 256, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "abdutor-longo-do-polegar", "tipo": "musculo", "nome": "Abdutor longo do polegar", "en": "Abductor pollicis longus",
+      "ids": ["abductor_pollicis_longus"], "regiao": "antebraco", "grupo": "extensores-profundos",
+      "origem": { "t": "Face posterior do rádio e da ulna.", "m": ["radius:Posterior surface of radius", "ulna:Posterior surface of ulna"] },
+      "insercao": { "t": "Base do 1º metacarpal.", "o": ["first_metacarpal_bone"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Abdução e extensão do polegar na articulação carpometacarpal.",
+      "clinica": "No 1º compartimento dorsal, com o extensor curto do polegar: doença de De Quervain. Pode ter vários feixes.",
+      "fonte": [{ "l": "netter-ao2", "p": [256, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-curto-do-polegar", "tipo": "musculo", "nome": "Extensor curto do polegar", "en": "Extensor pollicis brevis",
+      "ids": ["extensor_pollicis_brevis"], "regiao": "antebraco", "grupo": "extensores-profundos",
+      "origem": { "t": "Face posterior do rádio.", "m": ["radius:Posterior surface of radius"] },
+      "insercao": { "t": "Base da falange proximal do polegar.", "o": ["proximal_phalanx_of_first_finger_of_hand"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão do polegar na metacarpofalângica.",
+      "clinica": "Forma a margem radial da tabaqueira anatômica.",
+      "fonte": [{ "l": "netter-ao2", "p": [256, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-longo-do-polegar", "tipo": "musculo", "nome": "Extensor longo do polegar", "en": "Extensor pollicis longus",
+      "ids": ["extensor_pollicis_longus"], "regiao": "antebraco", "grupo": "extensores-profundos",
+      "origem": { "t": "Face posterior da ulna.", "m": ["ulna:Posterior surface of ulna"] },
+      "insercao": { "t": "Base da falange distal do polegar.", "o": ["distal_phalanx_of_first_finger_of_hand"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão da interfalângica do polegar.",
+      "clinica": "O tendão contorna em cerca de 45° o tubérculo dorsal do rádio (de Lister).",
+      "relacoes": ["Muda de direção no tubérculo dorsal do rádio (de Lister), no 3º compartimento dorsal."],
+      "fonte": [{ "l": "netter-ao2", "p": [256, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-do-indicador", "tipo": "musculo", "nome": "Extensor do indicador", "en": "Extensor indicis",
+      "ids": ["extensor_indicis"], "regiao": "antebraco", "grupo": "extensores-profundos",
+      "origem": { "t": "Face posterior da ulna.", "m": ["ulna:Posterior surface of ulna"] },
+      "insercao": { "t": "Aparelho extensor do indicador, como o extensor dos dedos.", "o": ["middle_phalanx_of_second_finger_of_hand", "distal_phalanx_of_second_finger_of_hand"] },
+      "nervos": ["interosseo-posterior"],
+      "acao": "Extensão do indicador.",
+      "clinica": "O tendão fica medial (ulnar) ao do extensor dos dedos. É o último músculo inervado pelo interósseo posterior.",
+      "fonte": [{ "l": "netter-ao2", "p": [256, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "interosseo-anterior", "tipo": "nervo", "nome": "Nervo interósseo anterior", "en": "Anterior interosseous nerve",
+      "ids": ["anterior_interosseous_nerve_of_forearm"], "regiao": "antebraco",
+      "raizes": "Ramo do nervo mediano",
+      "trajeto": "Sai do mediano na parte proximal do antebraço e desce sobre a membrana interóssea com a artéria interóssea anterior, entre o flexor longo do polegar e o flexor profundo dos dedos.",
+      "sensitivo": "Face palmar da cápsula do punho.",
+      "clinica": "Inerva os três flexores profundos (flexor profundo do indicador e do médio, flexor longo do polegar e pronador quadrado); testa-se pedindo o sinal de 'OK'.",
+      "ver": ["mediano"],
+      "fonte": [{ "l": "netter-ao2", "p": [254, 261] }], "status": "verificado"
+    },
+    {
+      "chave": "ramo-profundo-do-radial", "tipo": "nervo", "nome": "Ramo profundo do nervo radial", "en": "Deep branch of radial nerve",
+      "ids": ["deep_branch_of_radial_nerve"], "regiao": "antebraco",
+      "raizes": "Ramo do nervo radial",
+      "trajeto": "Sai do radial no cotovelo, entre o braquiorradial e o braquial, e perfura o supinador, onde passa a se chamar nervo interósseo posterior.",
+      "ver": ["radial", "interosseo-posterior"],
+      "fonte": [{ "l": "netter-ao2", "p": [262] }], "status": "verificado"
+    },
+    {
+      "chave": "interosseo-posterior", "tipo": "nervo", "nome": "Nervo interósseo posterior", "en": "Posterior interosseous nerve",
+      "ids": ["posterior_interosseous_nerve_of_forearm"], "regiao": "antebraco",
+      "raizes": "Continuação do ramo profundo do nervo radial",
+      "trajeto": "Passa pela artéria recorrente radial (arcada de Henry) e pelo extensor radial curto do carpo, entra no supinador pela arcada de Frohse, sai pela margem distal e desce sobre a membrana interóssea, sob o extensor dos dedos, entre o abdutor longo e o extensor longo do polegar.",
+      "sensitivo": "Face posterior da cápsula do punho (no 4º compartimento dorsal).",
+      "clinica": "Pontos de compressão: arcada de Henry, margem do extensor radial curto do carpo, arcada de Frohse e margem distal do supinador.",
+      "ver": ["ramo-profundo-do-radial", "radial"],
+      "fonte": [{ "l": "netter-ao2", "p": [256, 257, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "ramo-superficial-do-radial", "tipo": "nervo", "nome": "Ramo superficial do nervo radial", "en": "Superficial branch of radial nerve",
+      "ids": ["superficial_branch_of_radial_nerve", "dorsal_digital_branches_of_radial_nerve"], "regiao": "antebraco",
+      "raizes": "Ramo sensitivo do nervo radial",
+      "trajeto": "Desce sob o braquiorradial, lateral à artéria radial, até o primeiro espaço intermetacarpal.",
+      "clinica": "Pode ser comprimido sob o tendão do braquiorradial.",
+      "ver": ["radial"],
+      "fonte": [{ "l": "netter-ao2", "p": [257, 262] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-medial-do-antebraco", "tipo": "nervo", "nome": "Nervo cutâneo medial do antebraço", "en": "Medial antebrachial cutaneous nerve",
+      "ids": ["medial_antebrachial_cutaneous_nerve", "anterior_branch_of_medial_antebrachial_cutaneous_nerve", "posterior_branch_of_medial_antebrachial_cutaneous_nerve"], "regiao": "antebraco",
+      "raizes": "C8–T1 (direto do fascículo medial)",
+      "trajeto": "Passa sob a pele à frente do epicôndilo medial e segue pela face medial do antebraço.",
+      "sensitivo": "Face medial do antebraço.",
+      "fonte": [{ "l": "netter-ao2", "p": [263] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-posterior-do-antebraco", "tipo": "nervo", "nome": "Nervo cutâneo posterior do antebraço", "en": "Posterior antebrachial cutaneous nerve",
+      "ids": ["posterior_antebrachial_cutaneous_nerve"], "regiao": "antebraco",
+      "raizes": "Ramo do nervo radial",
+      "sensitivo": "Face posterior do antebraço.",
+      "ver": ["radial"],
+      "fonte": [{ "l": "netter-ao2", "p": [262] }], "status": "verificado"
+    }
+  ]
+}

@@ -1,0 +1,1472 @@
+{
+ "lote": "06-quadril-coxa",
+ "fonte": "netter-ao2",
+ "paginas_lidas": [
+  368,
+  369,
+  370,
+  371,
+  372,
+  373,
+  374,
+  375,
+  411,
+  412,
+  413,
+  414,
+  415,
+  416,
+  417,
+  418
+ ],
+ "registros": [
+  {
+   "chave": "psoas-maior",
+   "tipo": "musculo",
+   "nome": "Psoas maior",
+   "en": "Psoas major",
+   "ids": [
+    "psoas_major"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "flexores-do-quadril",
+   "origem": {
+    "t": "Vértebras T XII a L V.",
+    "o": [
+     "T12-L5"
+    ]
+   },
+   "insercao": {
+    "t": "Trocanter menor do fêmur.",
+    "m": [
+     "femur:Lesser trochanter"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Flexão do quadril (com o ilíaco, forma o iliopsoas).",
+   "clinica": "O plexo lombar se forma dentro dele e fica coberto por ele.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      368,
+      371,
+      372
+     ]
+    }
+   ],
+   "status": "verificado",
+   "notas": "O Netter cita também o nervo obturatório acessório (inconstante) para o psoas."
+  },
+  {
+   "chave": "iliaco",
+   "tipo": "musculo",
+   "nome": "Ilíaco",
+   "en": "Iliacus",
+   "ids": [
+    "iliacus_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "flexores-do-quadril",
+   "origem": {
+    "t": "Fossa ilíaca e asa do sacro.",
+    "m": [
+     "hip_bone:Iliac fossa",
+     "sacrum:Ala of sacrum"
+    ]
+   },
+   "insercao": {
+    "t": "Trocanter menor do fêmur.",
+    "m": [
+     "femur:Lesser trochanter"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Flexão do quadril.",
+   "clinica": "Cobre a face interna (anterior) do ílio.",
+   "relacoes": [
+    "O nervo femoral desce entre o psoas maior e o ilíaco."
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      368,
+      372
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "tensor-da-fascia-lata",
+   "tipo": "musculo",
+   "nome": "Tensor da fáscia lata",
+   "en": "Tensor fasciae latae",
+   "ids": [
+    "tensor_fasciae_latae"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "abdutores-do-quadril",
+   "origem": {
+    "t": "Crista ilíaca e espinha ilíaca anterossuperior.",
+    "m": [
+     "hip_bone:Anterior superior iliac spine",
+     "hip_bone:Iliac crest"
+    ]
+   },
+   "insercao": {
+    "t": "Trato iliotibial, na parte proximal da tíbia.",
+    "m": [
+     "tibia:Tubercle of iliotibial tract"
+    ]
+   },
+   "nervos": [
+    "gluteo-superior"
+   ],
+   "acao": "Abdução, flexão e rotação medial da coxa.",
+   "clinica": "É um dos planos do acesso anterior ao quadril.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      374
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gluteo-medio",
+   "tipo": "musculo",
+   "nome": "Glúteo médio",
+   "en": "Gluteus medius",
+   "ids": [
+    "gluteus_medius_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "abdutores-do-quadril",
+   "origem": {
+    "t": "Face glútea do ílio, entre as linhas glúteas anterior e posterior.",
+    "m": [
+     "hip_bone:Gluteal surface of ilium",
+     "hip_bone:Anterior gluteal line",
+     "hip_bone:Posterior gluteal line"
+    ]
+   },
+   "insercao": {
+    "t": "Trocanter maior do fêmur (parte posterior).",
+    "m": [
+     "femur:Greater trochanter"
+    ]
+   },
+   "nervos": [
+    "gluteo-superior"
+   ],
+   "acao": "Abdução e rotação medial da coxa.",
+   "clinica": "Se ele não funciona, aparece a marcha de Trendelenburg.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      374
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gluteo-minimo",
+   "tipo": "musculo",
+   "nome": "Glúteo mínimo",
+   "en": "Gluteus minimus",
+   "ids": [
+    "gluteus_minimus_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "abdutores-do-quadril",
+   "origem": {
+    "t": "Face glútea do ílio, entre as linhas glúteas anterior e inferior.",
+    "m": [
+     "hip_bone:Anterior gluteal line",
+     "hip_bone:Inferior gluteal line"
+    ]
+   },
+   "insercao": {
+    "t": "Trocanter maior do fêmur (parte anterior).",
+    "m": [
+     "femur:Greater trochanter"
+    ]
+   },
+   "nervos": [
+    "gluteo-superior"
+   ],
+   "acao": "Abdução e rotação medial da coxa.",
+   "clinica": "Trabalha junto com o glúteo médio.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      374
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gluteo-maximo",
+   "tipo": "musculo",
+   "nome": "Glúteo máximo",
+   "en": "Gluteus maximus",
+   "ids": [
+    "gluteus_maximus_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "extensores-do-quadril",
+   "origem": {
+    "t": "Face posterior do ílio e face posterior do sacro.",
+    "m": [
+     "hip_bone:Posterior gluteal line",
+     "sacrum:Dorsal surface of sacrum"
+    ]
+   },
+   "insercao": {
+    "t": "Trato iliotibial e tuberosidade glútea do fêmur.",
+    "m": [
+     "femur:Gluteal tuberosity"
+    ]
+   },
+   "nervos": [
+    "gluteo-inferior"
+   ],
+   "acao": "Extensão e rotação lateral da coxa.",
+   "clinica": "É incisado (dividido no sentido das fibras) no acesso posterior ao quadril.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      374,
+      375
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "piriforme",
+   "tipo": "musculo",
+   "nome": "Piriforme",
+   "en": "Piriformis",
+   "ids": [
+    "piriformis_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "rotadores-laterais",
+   "origem": {
+    "t": "Face anterior (pélvica) do sacro.",
+    "m": [
+     "sacrum:Pelvic surface of sacrum"
+    ]
+   },
+   "insercao": {
+    "t": "Parte superior do trocanter maior.",
+    "m": [
+     "femur:Greater trochanter"
+    ]
+   },
+   "nervos": [
+    "nervo-do-piriforme"
+   ],
+   "acao": "Rotação lateral da coxa.",
+   "clinica": "É a referência da região glútea: o nervo glúteo superior sai acima dele, e a maioria dos outros nervos (incluindo o isquiático) sai abaixo.",
+   "relacoes": [
+    "Mnemônico POPI IQ para o que sai abaixo do piriforme: Pudendo, nervo do Obturador interno, cutâneo femoral Posterior, Isquiático, glúteo Inferior e nervo do Quadrado femoral.",
+    "O plexo sacral fica à frente do piriforme."
+   ],
+   "ver": [
+    "isquiatico",
+    "gluteo-superior"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      368,
+      369,
+      373,
+      374,
+      375
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gemeo-superior",
+   "tipo": "musculo",
+   "nome": "Gêmeo superior",
+   "en": "Superior gemellus",
+   "ids": [
+    "superior_gemellus_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "rotadores-laterais",
+   "origem": {
+    "t": "Espinha isquiática.",
+    "m": [
+     "hip_bone:Ischial spine"
+    ]
+   },
+   "insercao": {
+    "t": "Face medial do trocanter maior.",
+    "m": [
+     "femur:Greater trochanter"
+    ]
+   },
+   "nervos": [
+    "nervo-do-obturador-interno"
+   ],
+   "acao": "Rotação lateral da coxa.",
+   "clinica": "É desinserido no acesso posterior ao quadril; rebater os rotadores curtos protege o nervo isquiático.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      373,
+      375
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "obturador-interno",
+   "tipo": "musculo",
+   "nome": "Obturador interno",
+   "en": "Obturator internus",
+   "ids": [
+    "obturator_internus"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "rotadores-laterais",
+   "origem": {
+    "t": "Ramo isquiopúbico e membrana obturadora (face interna).",
+    "m": [
+     "hip_bone:Ischiopubic ramus",
+     "hip_bone:Obturator foramen"
+    ]
+   },
+   "insercao": {
+    "t": "Face medial do trocanter maior.",
+    "m": [
+     "femur:Greater trochanter"
+    ]
+   },
+   "nervos": [
+    "nervo-do-obturador-interno"
+   ],
+   "acao": "Rotação lateral e adução da coxa.",
+   "clinica": "Sai da pelve pelo forame isquiático menor.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      373
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gemeo-inferior",
+   "tipo": "musculo",
+   "nome": "Gêmeo inferior",
+   "en": "Inferior gemellus",
+   "ids": [
+    "inferior_gemellus_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "rotadores-laterais",
+   "origem": {
+    "t": "Túber isquiático.",
+    "m": [
+     "hip_bone:Ischial tuberosity"
+    ]
+   },
+   "insercao": {
+    "t": "Face medial do trocanter maior.",
+    "m": [
+     "femur:Greater trochanter"
+    ]
+   },
+   "nervos": [
+    "nervo-do-quadrado-femoral"
+   ],
+   "acao": "Rotação lateral da coxa.",
+   "clinica": "É desinserido no acesso posterior ao quadril.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      373
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "quadrado-femoral",
+   "tipo": "musculo",
+   "nome": "Quadrado femoral",
+   "en": "Quadratus femoris",
+   "ids": [
+    "quadratus_femoris_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "rotadores-laterais",
+   "origem": {
+    "t": "Túber isquiático.",
+    "m": [
+     "hip_bone:Ischial tuberosity"
+    ]
+   },
+   "insercao": {
+    "t": "Crista intertrocantérica.",
+    "m": [
+     "femur:Intertrochanteric crest",
+     "femur:Quadrate tubercle"
+    ]
+   },
+   "nervos": [
+    "nervo-do-quadrado-femoral"
+   ],
+   "acao": "Rotação lateral da coxa.",
+   "clinica": "O ramo ascendente da artéria circunflexa femoral medial passa logo abaixo dele.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      373
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "obturador-externo",
+   "tipo": "musculo",
+   "nome": "Obturador externo",
+   "en": "Obturator externus",
+   "ids": [
+    "obturator_externus"
+   ],
+   "regiao": "pelve-quadril",
+   "grupo": "rotadores-laterais",
+   "origem": {
+    "t": "Ramo isquiopúbico e membrana obturadora (face externa).",
+    "m": [
+     "hip_bone:Ischiopubic ramus",
+     "hip_bone:Obturator foramen"
+    ]
+   },
+   "insercao": {
+    "t": "Fossa trocantérica do fêmur.",
+    "m": [
+     "femur:Trochanteric fossa"
+    ]
+   },
+   "nervos": [
+    "obturatorio"
+   ],
+   "acao": "Rotação lateral da coxa.",
+   "clinica": "A inserção fica no ponto de entrada da haste intramedular do fêmur.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      412,
+      372
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "sartorio",
+   "tipo": "musculo",
+   "nome": "Sartório",
+   "en": "Sartorius",
+   "ids": [
+    "sartorius_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "coxa-anterior",
+   "origem": {
+    "t": "Espinha ilíaca anterossuperior.",
+    "m": [
+     "hip_bone:Anterior superior iliac spine"
+    ]
+   },
+   "insercao": {
+    "t": "Face medial da parte proximal da tíbia (pata de ganso).",
+    "m": [
+     "tibia:Medial surface of tibia"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Flexão e rotação lateral do quadril.",
+   "clinica": "Pode ser arrancado da espinha ilíaca anterossuperior (fratura por avulsão). O nervo safeno desce sob ele.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      411,
+      416
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "reto-femoral",
+   "tipo": "musculo",
+   "nome": "Reto femoral",
+   "en": "Rectus femoris",
+   "ids": [
+    "rectus_femoris_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "quadriceps",
+   "origem": {
+    "t": "Espinha ilíaca anteroinferior (cabeça direta) e margem superior do acetábulo (cabeça reflexa).",
+    "m": [
+     "hip_bone:Anterior inferior iliac spine",
+     "hip_bone:Supra-acetabular groove"
+    ]
+   },
+   "insercao": {
+    "t": "Patela e, pelo ligamento da patela, tuberosidade da tíbia.",
+    "m": [
+     "tibia:Tibial tuberosity"
+    ],
+    "o": [
+     "patella"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Flexão da coxa e extensão da perna.",
+   "clinica": "Pode ser arrancado da espinha ilíaca anteroinferior (fratura por avulsão).",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      411,
+      416,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "vasto-lateral",
+   "tipo": "musculo",
+   "nome": "Vasto lateral",
+   "en": "Vastus lateralis",
+   "ids": [
+    "vastus_lateralis_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "quadriceps",
+   "origem": {
+    "t": "Trocanter maior e lábio lateral da linha áspera.",
+    "m": [
+     "femur:Greater trochanter",
+     "femur:Lateral lip of linea aspera"
+    ]
+   },
+   "insercao": {
+    "t": "Lado lateral da patela e tuberosidade da tíbia.",
+    "m": [
+     "tibia:Tibial tuberosity"
+    ],
+    "o": [
+     "patella"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Extensão da perna.",
+   "clinica": "As fibras oblíquas influenciam o ângulo Q.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      411,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "vasto-intermedio",
+   "tipo": "musculo",
+   "nome": "Vasto intermédio",
+   "en": "Vastus intermedius",
+   "ids": [
+    "vastus_intermedius_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "quadriceps",
+   "origem": {
+    "t": "Parte proximal do corpo (diáfise) do fêmur, face anterior.",
+    "m": [
+     "femur:Body of femur"
+    ]
+   },
+   "insercao": {
+    "t": "Patela e tuberosidade da tíbia.",
+    "m": [
+     "tibia:Tibial tuberosity"
+    ],
+    "o": [
+     "patella"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Extensão da perna.",
+   "clinica": "Cobre o músculo articular do joelho.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      411,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "vasto-medial",
+   "tipo": "musculo",
+   "nome": "Vasto medial",
+   "en": "Vastus medialis",
+   "ids": [
+    "vastus_medialis_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "quadriceps",
+   "origem": {
+    "t": "Linha intertrocantérica e lábio medial da linha áspera.",
+    "m": [
+     "femur:Intertrochanteric line",
+     "femur:Medial lip of linea aspera"
+    ]
+   },
+   "insercao": {
+    "t": "Lado medial da patela e tuberosidade da tíbia.",
+    "m": [
+     "tibia:Tibial tuberosity"
+    ],
+    "o": [
+     "patella"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Extensão da perna.",
+   "clinica": "Fica fraco em muitas doenças patelofemorais.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      411,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "adutor-longo",
+   "tipo": "musculo",
+   "nome": "Adutor longo",
+   "en": "Adductor longus",
+   "ids": [
+    "adductor_longus"
+   ],
+   "regiao": "coxa",
+   "grupo": "adutores",
+   "origem": {
+    "t": "Corpo do púbis (parte inferior).",
+    "m": [
+     "hip_bone:Body of pubis"
+    ]
+   },
+   "insercao": {
+    "t": "Terço médio da linha áspera.",
+    "m": [
+     "femur:Linea aspera"
+    ]
+   },
+   "nervos": [
+    "obturatorio"
+   ],
+   "acao": "Adução da coxa.",
+   "clinica": "O tendão pode ossificar.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      412,
+      415
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "adutor-curto",
+   "tipo": "musculo",
+   "nome": "Adutor curto",
+   "en": "Adductor brevis",
+   "ids": [
+    "adductor_brevis"
+   ],
+   "regiao": "coxa",
+   "grupo": "adutores",
+   "origem": {
+    "t": "Corpo e ramo inferior do púbis.",
+    "m": [
+     "hip_bone:Body of pubis",
+     "hip_bone:Inferior pubic ramus"
+    ]
+   },
+   "insercao": {
+    "t": "Linha pectínea do fêmur e linha áspera.",
+    "m": [
+     "femur:Pectineal line of femur",
+     "femur:Linea aspera"
+    ]
+   },
+   "nervos": [
+    "obturatorio"
+   ],
+   "acao": "Adução da coxa.",
+   "clinica": "Fica mais profundo que o pectíneo. Recebe ramos das duas divisões do nervo obturatório.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      412,
+      415
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "adutor-magno",
+   "tipo": "musculo",
+   "nome": "Adutor magno",
+   "en": "Adductor magnus",
+   "ids": [
+    "adductor_magnus",
+    "adductor_minimus"
+   ],
+   "regiao": "coxa",
+   "grupo": "adutores",
+   "origem": {
+    "t": "Ramo do púbis (parte adutora) e túber isquiático (parte isquiotibial).",
+    "m": [
+     "hip_bone:Ischiopubic ramus",
+     "hip_bone:Ischial tuberosity"
+    ]
+   },
+   "insercao": {
+    "t": "Linha áspera e tubérculo do adutor.",
+    "m": [
+     "femur:Linea aspera",
+     "femur:Adductor tubercle"
+    ]
+   },
+   "nervos": [
+    "obturatorio",
+    "tibial"
+   ],
+   "acao": "Adução da coxa; a parte anterior flete e a posterior estende a coxa.",
+   "clinica": "Tem duas partes separadas, cada uma com o seu nervo: obturatório (adutora) e isquiático, pela divisão tibial (isquiotibial).",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      412,
+      413,
+      415
+     ]
+    }
+   ],
+   "status": "verificado",
+   "notas": "O adutor mínimo, que o modelo separa, é a parte superior do adutor magno (prancha da dissecação profunda)."
+  },
+  {
+   "chave": "gracil",
+   "tipo": "musculo",
+   "nome": "Grácil",
+   "en": "Gracilis",
+   "ids": [
+    "gracilis_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "adutores",
+   "origem": {
+    "t": "Corpo e ramo inferior do púbis.",
+    "m": [
+     "hip_bone:Body of pubis",
+     "hip_bone:Inferior pubic ramus"
+    ]
+   },
+   "insercao": {
+    "t": "Face medial da parte proximal da tíbia (pata de ganso).",
+    "m": [
+     "tibia:Medial surface of tibia"
+    ]
+   },
+   "nervos": [
+    "obturatorio"
+   ],
+   "acao": "Adução da coxa; flexão e rotação medial da perna.",
+   "clinica": "O tendão é usado em reconstruções ligamentares.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      412,
+      415
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "pectineo",
+   "tipo": "musculo",
+   "nome": "Pectíneo",
+   "en": "Pectineus",
+   "ids": [
+    "pectineus_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "adutores",
+   "origem": {
+    "t": "Linha pectínea do púbis.",
+    "m": [
+     "hip_bone:Pecten pubis"
+    ]
+   },
+   "insercao": {
+    "t": "Linha pectínea do fêmur.",
+    "m": [
+     "femur:Pectineal line of femur"
+    ]
+   },
+   "nervos": [
+    "femoral"
+   ],
+   "acao": "Flexão e adução da coxa.",
+   "clinica": "Forma parte do assoalho do trígono femoral.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      412,
+      372,
+      416
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "semitendineo",
+   "tipo": "musculo",
+   "nome": "Semitendíneo",
+   "en": "Semitendinosus",
+   "ids": [
+    "semitendinosus_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "isquiotibiais",
+   "origem": {
+    "t": "Túber isquiático.",
+    "m": [
+     "hip_bone:Ischial tuberosity"
+    ]
+   },
+   "insercao": {
+    "t": "Face medial da parte proximal da tíbia (pata de ganso).",
+    "m": [
+     "tibia:Medial surface of tibia"
+    ]
+   },
+   "nervos": [
+    "tibial"
+   ],
+   "acao": "Extensão da coxa e flexão da perna.",
+   "clinica": "O tendão é usado como enxerto na reconstrução do ligamento cruzado anterior.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      413,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "semimembranaceo",
+   "tipo": "musculo",
+   "nome": "Semimembranáceo",
+   "en": "Semimembranosus",
+   "ids": [
+    "semimembranosus_muscle"
+   ],
+   "regiao": "coxa",
+   "grupo": "isquiotibiais",
+   "origem": {
+    "t": "Túber isquiático.",
+    "m": [
+     "hip_bone:Ischial tuberosity"
+    ]
+   },
+   "insercao": {
+    "t": "Face posteromedial do côndilo medial da tíbia.",
+    "m": [
+     "tibia:Medial condyle of tibia"
+    ]
+   },
+   "nervos": [
+    "tibial"
+   ],
+   "acao": "Extensão da coxa e flexão da perna.",
+   "clinica": "É um dos limites no acesso medial (ao joelho).",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      413,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "biceps-femoral-cabeca-longa",
+   "tipo": "musculo",
+   "nome": "Bíceps femoral (cabeça longa)",
+   "en": "Biceps femoris, long head",
+   "ids": [
+    "long_head_of_biceps_femoris"
+   ],
+   "regiao": "coxa",
+   "grupo": "isquiotibiais",
+   "origem": {
+    "t": "Túber isquiático.",
+    "m": [
+     "hip_bone:Ischial tuberosity"
+    ]
+   },
+   "insercao": {
+    "t": "Cabeça da fíbula.",
+    "m": [
+     "fibula:Head of fibula"
+    ]
+   },
+   "nervos": [
+    "tibial"
+   ],
+   "acao": "Extensão da coxa e flexão da perna.",
+   "clinica": "Pode ser arrancado da origem (fratura por avulsão do túber isquiático).",
+   "ver": [
+    "biceps-femoral-cabeca-curta"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      413,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "biceps-femoral-cabeca-curta",
+   "tipo": "musculo",
+   "nome": "Bíceps femoral (cabeça curta)",
+   "en": "Biceps femoris, short head",
+   "ids": [
+    "short_head_of_biceps_femoris"
+   ],
+   "regiao": "coxa",
+   "grupo": "isquiotibiais",
+   "origem": {
+    "t": "Linha áspera e linha supracondilar lateral do fêmur.",
+    "m": [
+     "femur:Lateral lip of linea aspera",
+     "femur:Lateral supracondylar line"
+    ]
+   },
+   "insercao": {
+    "t": "Fíbula e face lateral da tíbia (junto com a cabeça longa).",
+    "m": [
+     "fibula:Head of fibula",
+     "tibia:Lateral condyle of tibia"
+    ]
+   },
+   "nervos": [
+    "fibular-comum"
+   ],
+   "acao": "Flexão da perna.",
+   "clinica": "É o único músculo da coxa inervado pela divisão fibular do isquiático.",
+   "ver": [
+    "biceps-femoral-cabeca-longa"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      413,
+      417,
+      418
+     ]
+    }
+   ],
+   "status": "verificado",
+   "notas": "O Netter dá 'extensão da coxa e flexão da perna' para as duas cabeças; a cabeça curta não cruza o quadril, então aqui fica só a flexão da perna."
+  },
+  {
+   "chave": "femoral",
+   "tipo": "nervo",
+   "nome": "Nervo femoral",
+   "en": "Femoral nerve",
+   "ids": [
+    "femoral_nerve",
+    "anterior_cutaneous_branches_of_femoral_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L2–L4 (plexo lombar, divisão posterior)",
+   "trajeto": "Desce entre o psoas maior e o ilíaco e se ramifica no trígono femoral; o nervo safeno continua sob o sartório.",
+   "sensitivo": "Face anteromedial da coxa, pelos ramos cutâneos anteriores.",
+   "ver": [
+    "safeno"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      372,
+      416,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "obturatorio",
+   "tipo": "nervo",
+   "nome": "Nervo obturatório",
+   "en": "Obturator nerve",
+   "ids": [
+    "obturator_nerve",
+    "anterior_branch_of_obturator_nerve",
+    "posterior_branch_of_obturator_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L2–L4 (plexo lombar, divisão anterior)",
+   "trajeto": "Sai da pelve pelo canal obturatório e se divide em ramos anterior e posterior.",
+   "sensitivo": "Face inferomedial da coxa, pelo ramo cutâneo.",
+   "clinica": "Pode ser lesado por afastadores colocados atrás do ligamento transverso do acetábulo. Ramo anterior: grácil, adutor longo e adutor curto; ramo posterior: adutor curto, adutor magno e obturador externo.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      372,
+      413,
+      415
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gluteo-superior",
+   "tipo": "nervo",
+   "nome": "Nervo glúteo superior",
+   "en": "Superior gluteal nerve",
+   "ids": [
+    "superior_gluteal_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L4–S1 (plexo sacral, divisão posterior)",
+   "trajeto": "Sai pelo forame isquiático maior, acima do piriforme, com a artéria glútea superior.",
+   "sensitivo": "Nenhum.",
+   "clinica": "A lesão enfraquece os abdutores: marcha de Trendelenburg.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      369,
+      374,
+      413
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "gluteo-inferior",
+   "tipo": "nervo",
+   "nome": "Nervo glúteo inferior",
+   "en": "Inferior gluteal nerve",
+   "ids": [],
+   "regiao": "pelve-quadril",
+   "raizes": "L5–S2 (plexo sacral, divisão posterior)",
+   "trajeto": "Sai pelo forame isquiático maior, abaixo do piriforme.",
+   "sensitivo": "Nenhum.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      374,
+      375
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "nervo-do-piriforme",
+   "tipo": "nervo",
+   "nome": "Nervo para o músculo piriforme",
+   "en": "Nerve to piriformis",
+   "ids": [
+    "nerve_to_piriformis_muscle"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "S1–S2 (plexo sacral)",
+   "sensitivo": "Nenhum.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      375
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "nervo-do-obturador-interno",
+   "tipo": "nervo",
+   "nome": "Nervo para o músculo obturador interno",
+   "en": "Nerve to obturator internus",
+   "ids": [],
+   "regiao": "pelve-quadril",
+   "raizes": "L5–S2 (plexo sacral, divisão anterior)",
+   "trajeto": "Sai pelo forame isquiático maior.",
+   "sensitivo": "Nenhum.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      373
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "nervo-do-quadrado-femoral",
+   "tipo": "nervo",
+   "nome": "Nervo para o músculo quadrado femoral",
+   "en": "Nerve to quadratus femoris",
+   "ids": [],
+   "regiao": "pelve-quadril",
+   "raizes": "L4–S1 (plexo sacral, divisão anterior)",
+   "trajeto": "Sai pelo forame isquiático maior.",
+   "sensitivo": "Nenhum.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      373
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "isquiatico",
+   "tipo": "nervo",
+   "nome": "Nervo isquiático",
+   "en": "Sciatic nerve",
+   "ids": [
+    "sciatic_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L4–S3 (plexo sacral)",
+   "trajeto": "O maior nervo do corpo. Sai pelo forame isquiático maior, abaixo do piriforme (pode passar através ou acima dele), desce na face posterior da coxa sob os isquiotibiais e sobre o adutor magno e se divide, na parte distal da coxa, em nervos tibial e fibular comum.",
+   "sensitivo": "Nenhum na pelve e na coxa.",
+   "clinica": "No acesso posterior ao quadril, rebater os rotadores laterais curtos protege o nervo.",
+   "ver": [
+    "tibial",
+    "fibular-comum",
+    "piriforme"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      375,
+      417
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "tibial",
+   "tipo": "nervo",
+   "nome": "Nervo tibial",
+   "en": "Tibial nerve",
+   "ids": [
+    "tibial_nerve"
+   ],
+   "regiao": "perna",
+   "raizes": "L4–S3 (divisão anterior do isquiático)",
+   "trajeto": "Na coxa, desce junto com o isquiático, profundo aos isquiotibiais e superficial ao adutor magno. Na perna, passa entre as cabeças do gastrocnêmio e desce atrás do tibial posterior, na parte profunda do compartimento posterior. No tornozelo, passa logo atrás do maléolo medial, entre os tendões do flexor longo do hálux e do flexor longo dos dedos, e no túnel do tarso se divide em nervos plantares medial e lateral.",
+   "sensitivo": "Parte proximal da face posterolateral da perna (nervo cutâneo sural medial) e parte medial do calcanhar (ramo calcâneo medial).",
+   "ver": [
+    "isquiatico",
+    "plantar-medial",
+    "plantar-lateral",
+    "sural"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      417,
+      494,
+      570
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "fibular-comum",
+   "tipo": "nervo",
+   "nome": "Nervo fibular comum",
+   "en": "Common fibular nerve",
+   "ids": [
+    "common_fibular_nerve",
+    "sural_communicating_branch_of_common_fibular_nerve"
+   ],
+   "regiao": "perna",
+   "raizes": "L4–S2 (divisão posterior do isquiático)",
+   "trajeto": "Nasce da divisão do isquiático na parte distal da coxa, desce atrás e abaixo do bíceps femoral e contorna o colo da fíbula, onde se divide nos nervos fibular profundo e superficial.",
+   "sensitivo": "Parte proximal da face lateral da perna, pelo nervo cutâneo sural lateral.",
+   "ver": [
+    "isquiatico",
+    "fibular-profundo",
+    "fibular-superficial"
+   ],
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      417,
+      418,
+      495
+     ]
+    }
+   ],
+   "status": "verificado",
+   "clinica": "No colo da fíbula, fica superficial e pode ser comprimido ou lesado."
+  },
+  {
+   "chave": "cutaneo-femoral-lateral",
+   "tipo": "nervo",
+   "nome": "Nervo cutâneo femoral lateral",
+   "en": "Lateral femoral cutaneous nerve",
+   "ids": [
+    "lateral_femoral_cutaneous_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L2–L3 (plexo lombar, divisão posterior)",
+   "trajeto": "Passa sobre o ilíaco e cruza logo abaixo da espinha ilíaca anterossuperior.",
+   "sensitivo": "Face lateral da coxa.",
+   "clinica": "Pode ser comprimido perto da espinha ilíaca anterossuperior: meralgia parestésica.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      372,
+      416
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "cutaneo-femoral-posterior",
+   "tipo": "nervo",
+   "nome": "Nervo cutâneo femoral posterior",
+   "en": "Posterior femoral cutaneous nerve",
+   "ids": [
+    "posterior_femoral_cutaneous_nerve",
+    "anterior_root_of_posterior_femoral_cutaneous_nerve",
+    "posterior_root_of_posterior_femoral_cutaneous_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "S1–S3",
+   "trajeto": "Sai pelo forame isquiático maior, abaixo do piriforme e medial ao nervo isquiático.",
+   "sensitivo": "Parte inferior da nádega (nervos clúnios inferiores), parte posterior do períneo e face posterior da coxa.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      375,
+      418
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "genitofemoral",
+   "tipo": "nervo",
+   "nome": "Nervo genitofemoral",
+   "en": "Genitofemoral nerve",
+   "ids": [
+    "genitofemoral_nerve",
+    "femoral_branch_of_genitofemoral_nerve",
+    "genital_branch_of_genitofemoral_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L1–L2",
+   "trajeto": "Perfura o psoas e corre sobre a sua face anterior; divide-se em ramos femoral e genital.",
+   "sensitivo": "Ramo femoral: pele sobre o trígono femoral; ramo genital: escroto ou lábio maior.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      372,
+      416
+     ]
+    }
+   ],
+   "status": "verificado",
+   "notas": "Motor: músculo cremaster (não representado no modelo)."
+  },
+  {
+   "chave": "ilio-hipogastrico",
+   "tipo": "nervo",
+   "nome": "Nervo ílio-hipogástrico",
+   "en": "Iliohypogastric nerve",
+   "ids": [
+    "iliohypogastric_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L1",
+   "trajeto": "Passa abaixo do psoas e perfura os músculos abdominais.",
+   "sensitivo": "Pele acima do púbis e região posterolateral da nádega.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      371,
+      372
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "ilioinguinal",
+   "tipo": "nervo",
+   "nome": "Nervo ilioinguinal",
+   "en": "Ilio-inguinal nerve",
+   "ids": [
+    "ilio_inguinal_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "L1",
+   "trajeto": "Passa abaixo do psoas e perfura os músculos abdominais.",
+   "sensitivo": "Região inguinal e parte proximal da coxa.",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      372
+     ]
+    }
+   ],
+   "status": "verificado"
+  },
+  {
+   "chave": "pudendo",
+   "tipo": "nervo",
+   "nome": "Nervo pudendo",
+   "en": "Pudendal nerve",
+   "ids": [
+    "pudendal_nerve"
+   ],
+   "regiao": "pelve-quadril",
+   "raizes": "S2–S4",
+   "trajeto": "Sai pelo forame isquiático maior e volta para a pelve pelo forame isquiático menor.",
+   "sensitivo": "Períneo (nervos perineal, retal inferior e dorsal do pênis ou do clitóris).",
+   "fonte": [
+    {
+     "l": "netter-ao2",
+     "p": [
+      373,
+      374
+     ]
+    }
+   ],
+   "status": "verificado",
+   "notas": "Motor: músculos do períneo e esfíncter externo do ânus."
+  }
+ ]
+}

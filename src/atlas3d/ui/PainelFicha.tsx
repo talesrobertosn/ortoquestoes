@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import { Icone } from '../../componentes/Icone'
 import { grupoDe } from '../config'
 import type { Estrutura, Faixa } from '../tipos'
@@ -19,6 +19,10 @@ interface Props {
   aoFavoritar: () => void
   aoFechar: () => void
   aoResponder: (titulo: string, ids: string[]) => void
+  /** ficha anatômica (músculo, nervo, ligamento) do banco conferido */
+  anatomia?: ReactNode
+  /** no osso: o que se origina e se insere nele */
+  fixacoes?: ReactNode
 }
 
 /** Ficha da estrutura selecionada: o que importa para a ortopedia, com as questões e as classificações. */
@@ -26,7 +30,7 @@ export function PainelFicha(p: Props) {
   const { estrutura: e, ficha, vinculo } = p
   const grupo = grupoDe(e)
   const titulo = ficha && p.faixa ? ficha.nome : nomeCompleto(e, p.faixa)
-  const [aba, definirAba] = useState<'classificacoes' | 'sobre'>(ficha?.biblioteca?.length ? 'classificacoes' : 'sobre')
+  const [aba, definirAba] = useState<'classificacoes' | 'insercoes' | 'sobre'>(ficha?.biblioteca?.length ? 'classificacoes' : p.fixacoes ? 'insercoes' : 'sobre')
   const secundario = [temNomePt(e) && e.la, !temNomePt(e) && e.la, e.en !== nomeDe(e) && e.en].filter(Boolean)[0] as string | undefined
   const nAnat = vinculo?.a.length ?? 0
   const nLes = vinculo?.l.length ?? 0
@@ -62,25 +66,26 @@ export function PainelFicha(p: Props) {
 
           <div className="at-abas" role="tablist">
             {ficha.biblioteca?.length ? <button type="button" role="tab" aria-selected={aba === 'classificacoes'} onClick={() => definirAba('classificacoes')}>Classificações</button> : null}
+            {p.fixacoes ? <button type="button" role="tab" aria-selected={aba === 'insercoes'} onClick={() => definirAba('insercoes')}>Inserções</button> : null}
             <button type="button" role="tab" aria-selected={aba === 'sobre'} onClick={() => definirAba('sobre')}>O que cai</button>
           </div>
           {aba === 'classificacoes' && ficha.biblioteca?.map((b) => b.s.length
             ? <SecaoBiblioteca key={b.c} capitulo={b.c} secoes={b.s} />
             : <SecaoBiblioteca key={b.c} capitulo={b.c} secoes={[]} />)}
+          {aba === 'insercoes' && p.fixacoes}
           {aba === 'sobre' && (
             <div className="at-sobre">
               <p>Os temas de prova ligados a esta parte do esqueleto:</p>
               <ul className="at-etiquetas">{ficha.lesoes.map((s) => <li key={s}>{s}</li>)}</ul>
-              <p className="at-nota">As fichas de músculos, nervos e vasos (origem, inserção, inervação e relevância cirúrgica) estão em preparação e entram só com fonte conferida.</p>
             </div>
           )}
         </>
-      ) : (
+      ) : p.anatomia ?? (p.fixacoes ? <>{p.fixacoes}</> : (
         <div className="at-sobre">
-          <p>{grupo === 'osso' ? 'A ficha ortopédica deste osso ainda está em preparação.' : 'A ficha ortopédica desta estrutura (origem, inserção, inervação, relações e relevância cirúrgica) ainda está em preparação: entra só com fonte conferida.'}</p>
+          <p>{grupo === 'osso' ? 'A ficha ortopédica deste osso ainda está em preparação.' : 'A ficha desta estrutura ainda está em preparação: entra só com fonte conferida.'}</p>
           {!temNomePt(e) && <p className="at-nota">Nome em português em revisão; por enquanto mostramos o termo do catálogo de origem.</p>}
         </div>
-      )}
+      ))}
     </div>
   )
 }

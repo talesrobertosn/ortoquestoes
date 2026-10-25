@@ -1,0 +1,209 @@
+{
+  "lote": "11-ligamentos-quadril-joelho",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [396, 397, 458, 459, 460, 461, 462, 463, 464, 465, 468, 469, 470, 471],
+  "registros": [
+    {
+      "chave": "labio-do-acetabulo", "tipo": "ligamento", "nome": "Lábio do acetábulo", "en": "Acetabular labrum",
+      "ids": ["acetabular_labrum"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Ao longo da margem do acetábulo, exceto na parte inferior.", "m": ["hip_bone:Acetabular margin"] },
+      "funcao": "Aprofunda o encaixe e aumenta a cobertura da cabeça do fêmur.",
+      "clinica": "Pode se romper e é causa de dor no quadril.",
+      "ver": ["lig-transverso-do-acetabulo"],
+      "fonte": [{ "l": "netter-ao2", "p": [396] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-transverso-do-acetabulo", "tipo": "ligamento", "nome": "Ligamento transverso do acetábulo", "en": "Transverse acetabular ligament",
+      "ids": ["transverse_acetabular_ligament"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Da parte anteroinferior à posteroinferior do acetábulo.", "m": ["hip_bone:Acetabular notch"] },
+      "funcao": "Fecha a incisura do acetábulo, na parte central e inferior.",
+      "clinica": "Afastadores colocados atrás dele podem lesar o nervo obturatório.",
+      "ver": ["obturatorio"],
+      "fonte": [{ "l": "netter-ao2", "p": [372, 396] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-da-cabeca-do-femur", "tipo": "ligamento", "nome": "Ligamento da cabeça do fêmur", "en": "Ligament of head of femur",
+      "ids": ["ligament_of_head_of_femur"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Fóvea da cabeça do fêmur.", "m": ["femur:Fovea for ligament of head of femur"] },
+      "insercao": { "t": "Incisura do acetábulo.", "m": ["hip_bone:Acetabular notch"] },
+      "funcao": "Leva uma pequena artéria para a cabeça do fêmur.",
+      "fonte": [{ "l": "netter-ao2", "p": [396] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-iliofemoral", "tipo": "ligamento", "nome": "Ligamento iliofemoral (em Y de Bigelow)", "en": "Iliofemoral ligament",
+      "ids": ["transverse_part_of_iliofemoral_ligament", "descending_part_of_iliofemoral_ligament"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Faixa superior na espinha ilíaca anterossuperior e no ílio; faixa inferior no ílio.", "m": ["hip_bone:Anterior inferior iliac spine"] },
+      "insercao": { "t": "Faixa superior no trocanter maior; faixa inferior na linha intertrocantérica, perto do trocanter menor.", "m": ["femur:Intertrochanteric line", "femur:Greater trochanter"] },
+      "funcao": "Dá forte suporte anterior ao quadril.",
+      "restringe": "Extensão do quadril.",
+      "fonte": [{ "l": "netter-ao2", "p": [396, 397] }], "status": "verificado",
+      "notas": "O Netter descreve a origem da faixa superior na espinha ilíaca anterossuperior e no ílio; o marco 3D usa a espinha ilíaca anteroinferior, logo abaixo, porque fica sobre a cápsula (prancha da articulação)."
+    },
+    {
+      "chave": "lig-pubofemoral", "tipo": "ligamento", "nome": "Ligamento pubofemoral", "en": "Pubofemoral ligament",
+      "ids": ["pubofemoral_ligament"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Ramo superior do púbis.", "m": ["hip_bone:Superior pubic ramus"] },
+      "insercao": { "t": "Linha intertrocantérica.", "m": ["femur:Intertrochanteric line"] },
+      "funcao": "Suporte inferior da articulação.",
+      "restringe": "Hiperextensão do quadril.",
+      "fonte": [{ "l": "netter-ao2", "p": [396, 397] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-isquiofemoral", "tipo": "ligamento", "nome": "Ligamento isquiofemoral", "en": "Ischiofemoral ligament",
+      "ids": ["ischiofemoral_ligament"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Parte posterior do acetábulo (ísquio).", "m": ["hip_bone:Body of ischium"] },
+      "insercao": { "t": "Parte superior do colo do fêmur.", "m": ["femur:Neck of femur"] },
+      "funcao": "Largo e relativamente fraco: suporte posterior mínimo.",
+      "clinica": "Não cobre toda a face posterior; do lado lateral para trás, parte do colo fica fora da cápsula.",
+      "fonte": [{ "l": "netter-ao2", "p": [396, 397] }], "status": "verificado"
+    },
+    {
+      "chave": "capsula-do-quadril", "tipo": "ligamento", "nome": "Cápsula da articulação do quadril", "en": "Hip joint capsule",
+      "ids": ["articular_capsule_of_hip_joint", "zona_orbicularis"], "regiao": "pelve-quadril", "articulacao": "Quadril",
+      "origem": { "t": "Margem do acetábulo.", "m": ["hip_bone:Acetabular margin"] },
+      "insercao": { "t": "Colo do fêmur.", "m": ["femur:Neck of femur"] },
+      "funcao": "Envolve a articulação; os ligamentos iliofemoral, pubofemoral e isquiofemoral são espessamentos dela.",
+      "fonte": [{ "l": "netter-ao2", "p": [396, 397] }], "status": "verificado"
+    },
+    {
+      "chave": "lca", "tipo": "ligamento", "nome": "Ligamento cruzado anterior (LCA)", "en": "Anterior cruciate ligament",
+      "ids": ["anterior_cruciate_ligament"], "regiao": "joelho", "articulacao": "Joelho (femorotibial)",
+      "origem": { "t": "Face posteromedial do côndilo lateral do fêmur (na fossa intercondilar).", "m": ["femur:Intercondylar fossa"] },
+      "insercao": { "t": "Região anterior da eminência intercondilar da tíbia.", "m": ["tibia:Anterior intercondylar area"] },
+      "funcao": "Restritor primário da translação anterior da tíbia; secundário do varo (em extensão) e da rotação medial. O feixe anteromedial fica tenso em flexão; o posterolateral, em extensão.",
+      "restringe": "Translação anterior da tíbia.",
+      "clinica": "O tendão do semitendíneo é usado como enxerto na reconstrução.",
+      "ver": ["lcp", "semitendineo"],
+      "fonte": [{ "l": "netter-ao2", "p": [413, 458] }], "status": "verificado"
+    },
+    {
+      "chave": "lcp", "tipo": "ligamento", "nome": "Ligamento cruzado posterior (LCP)", "en": "Posterior cruciate ligament",
+      "ids": ["posterior_cruciate_ligament"], "regiao": "joelho", "articulacao": "Joelho (femorotibial)",
+      "origem": { "t": "Face lateral do côndilo medial do fêmur (na fossa intercondilar).", "m": ["femur:Intercondylar fossa"] },
+      "insercao": { "t": "Região posterior e proximal da tíbia, abaixo da linha articular.", "m": ["tibia:Posterior intercondylar area"] },
+      "funcao": "Restritor primário da translação posterior da tíbia; secundário do varo, do valgo e da rotação lateral. O feixe anterolateral fica tenso em flexão; o posteromedial, em extensão.",
+      "restringe": "Translação posterior da tíbia.",
+      "relacoes": ["Os ligamentos meniscofemorais (de Humphrey, à frente; de Wrisberg, atrás) acompanham o LCP e contribuem para a sua função.", "A artéria poplítea passa atrás do LCP e pode ser lesada nessa região."],
+      "ver": ["lca"],
+      "fonte": [{ "l": "netter-ao2", "p": [459, 460, 497] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-transverso-do-joelho", "tipo": "ligamento", "nome": "Ligamento transverso do joelho", "en": "Transverse ligament of knee",
+      "ids": ["transverse_ligament_of_knee"], "regiao": "joelho", "articulacao": "Joelho (femorotibial)",
+      "funcao": "Liga os cornos anteriores dos dois meniscos e estabiliza os meniscos.",
+      "clinica": "Pode ser rompido.",
+      "ver": ["menisco-medial", "menisco-lateral"],
+      "fonte": [{ "l": "netter-ao2", "p": [458] }], "status": "verificado"
+    },
+    {
+      "chave": "corpo-adiposo-infrapatelar", "tipo": "ligamento", "nome": "Corpo adiposo infrapatelar", "en": "Infrapatellar fat pad",
+      "ids": ["infrapatellar_fat_pad"], "regiao": "joelho", "articulacao": "Joelho",
+      "funcao": "Coxim atrás do ligamento da patela, à frente da fossa intercondilar.",
+      "clinica": "Pode ficar fibrótico ou pinçado e causar dor (síndrome de Hoffa).",
+      "fonte": [{ "l": "netter-ao2", "p": [459] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-popliteo-obliquo", "tipo": "ligamento", "nome": "Ligamento poplíteo oblíquo", "en": "Oblique popliteal ligament",
+      "ids": ["oblique_popliteal_ligament"], "regiao": "joelho", "articulacao": "Joelho (canto posteromedial)",
+      "origem": { "t": "Inserção do semimembranáceo, na parte posterior da tíbia.", "m": ["tibia:Medial condyle of tibia"] },
+      "insercao": { "t": "Parte posterior da cápsula, por trás do ligamento colateral fibular." },
+      "funcao": "Tensiona a cápsula posterior quando o semimembranáceo contrai; faz parte do canto posteromedial.",
+      "ver": ["semimembranaceo"],
+      "fonte": [{ "l": "netter-ao2", "p": [460] }], "status": "verificado"
+    },
+    {
+      "chave": "lcf", "tipo": "ligamento", "nome": "Ligamento colateral fibular (LCF)", "en": "Fibular collateral ligament",
+      "ids": ["fibular_collateral_ligament"], "regiao": "joelho", "articulacao": "Joelho (canto posterolateral)",
+      "origem": { "t": "Epicôndilo lateral do fêmur.", "m": ["femur:Lateral epicondyle of femur"] },
+      "insercao": { "t": "Face lateral da cabeça da fíbula.", "m": ["fibula:Head of fibula"] },
+      "funcao": "Restritor primário ao varo; também resiste à rotação lateral.",
+      "restringe": "Varo.",
+      "clinica": "Com o poplíteo e o ligamento popliteofibular, é uma das estruturas mais constantes do canto posterolateral e o foco da reconstrução.",
+      "ver": ["lig-popliteofibular", "popliteo"],
+      "fonte": [{ "l": "netter-ao2", "p": [461, 462] }], "status": "conflito",
+      "notas": "O Netter escreve 'região medial da cabeça da fíbula'; a prancha mostra a inserção na face lateral, e a maioria dos textos descreve a face lateral."
+    },
+    {
+      "chave": "lig-popliteofibular", "tipo": "ligamento", "nome": "Ligamento popliteofibular", "en": "Popliteofibular ligament",
+      "ids": ["popliteofibular_ligament"], "regiao": "joelho", "articulacao": "Joelho (canto posterolateral)",
+      "origem": { "t": "Junção musculotendínea do poplíteo." },
+      "insercao": { "t": "Cabeça da fíbula.", "m": ["fibula:Head of fibula"] },
+      "funcao": "Restritor estático primário da rotação lateral.",
+      "restringe": "Rotação lateral da tíbia.",
+      "ver": ["popliteo", "lcf"],
+      "fonte": [{ "l": "netter-ao2", "p": [461] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-popliteo-arqueado", "tipo": "ligamento", "nome": "Ligamento poplíteo arqueado", "en": "Arcuate popliteal ligament",
+      "ids": ["arcuate_popliteal_ligament"], "regiao": "joelho", "articulacao": "Joelho (canto posterolateral)",
+      "origem": { "t": "Parte lateral na cabeça da fíbula.", "m": ["fibula:Head of fibula"] },
+      "insercao": { "t": "Região posterior do fêmur; a parte medial se junta ao ligamento poplíteo oblíquo." },
+      "funcao": "Em forma de Y; a parte lateral cobre o poplíteo e dá suporte posterolateral.",
+      "clinica": "Presença inconstante. Faz parte do complexo 'arqueado' (com o colateral fibular, o poplíteo e a cabeça lateral do gastrocnêmio).",
+      "fonte": [{ "l": "netter-ao2", "p": [461, 462] }], "status": "verificado"
+    },
+    {
+      "chave": "lct", "tipo": "ligamento", "nome": "Ligamento colateral tibial (LCT)", "en": "Tibial collateral ligament",
+      "ids": ["superficial_part_of_tibial_collateral_ligament", "deep_part_of_tibial_collateral_ligament"], "regiao": "joelho", "articulacao": "Joelho (estruturas mediais)",
+      "origem": { "t": "Epicôndilo medial do fêmur.", "m": ["femur:Medial epicondyle of femur"] },
+      "insercao": { "t": "Parte superficial: tíbia, sob a pata de ganso, numa inserção larga 5 a 7 cm abaixo da linha articular. Parte profunda: menisco medial e borda da tíbia (fibras meniscofemorais e meniscotibiais).", "m": ["tibia:Medial surface of tibia"] },
+      "funcao": "A parte superficial é o restritor primário ao valgo, sobretudo a 30° de flexão, e estabilizador secundário da translação anterior e da rotação medial. A parte profunda estabiliza o menisco medial.",
+      "restringe": "Valgo.",
+      "clinica": "A parte profunda também é chamada de ligamento capsular medial ou do terço médio.",
+      "ver": ["menisco-medial"],
+      "fonte": [{ "l": "netter-ao2", "p": [462, 463] }], "status": "verificado"
+    },
+    {
+      "chave": "menisco-medial", "tipo": "ligamento", "nome": "Menisco medial", "en": "Medial meniscus",
+      "ids": ["medial_meniscus", "anterior_meniscotibial_ligament_medial_meniscus", "posterior_meniscotibial_ligament_medial_meniscus"], "regiao": "joelho", "articulacao": "Joelho (femorotibial)",
+      "origem": { "t": "Firmemente preso à face articular medial da tíbia pelos ligamentos coronários.", "m": ["tibia:Articular surface of medial condyle"] },
+      "funcao": "Disco de fibrocartilagem em forma de C. O corno posterior é estabilizador secundário da translação anterior.",
+      "clinica": "É menos móvel (preso à tíbia e à parte profunda do colateral tibial). No joelho sem LCA, o corno posterior passa a ser o principal estabilizador da translação anterior. A periferia é vascularizada (zona vermelha, até 3 mm da cápsula), onde as lesões cicatrizam melhor.",
+      "ver": ["lct", "lca"],
+      "fonte": [{ "l": "netter-ao2", "p": [463, 465] }], "status": "verificado"
+    },
+    {
+      "chave": "menisco-lateral", "tipo": "ligamento", "nome": "Menisco lateral", "en": "Lateral meniscus",
+      "ids": ["lateral_meniscus", "anterior_meniscotibial_ligament_lateral_meniscus", "posterior_meniscotibial_ligament_lateral_meniscus"], "regiao": "joelho", "articulacao": "Joelho (femorotibial)",
+      "origem": { "t": "Preso à face articular lateral da tíbia pelo ligamento coronário.", "m": ["tibia:Superior articular surface of lateral condyle"] },
+      "funcao": "Dá concavidade ao platô tibial lateral, que é convexo.",
+      "clinica": "É quase circular e mais móvel, com fixações periféricas frouxas; não se fixa no hiato poplíteo, onde o tendão do poplíteo é intra-articular.",
+      "ver": ["popliteo"],
+      "fonte": [{ "l": "netter-ao2", "p": [462, 465] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-meniscopatelar", "tipo": "ligamento", "nome": "Ligamentos patelomeniscais", "en": "Meniscopatellar ligaments",
+      "ids": ["meniscopatellar_ligament"], "regiao": "joelho", "articulacao": "Joelho (patelofemoral)",
+      "origem": { "t": "Patela.", "o": ["patella"] },
+      "insercao": { "t": "Periferia dos meniscos." },
+      "funcao": "Estabilizadores secundários da patela.",
+      "fonte": [{ "l": "netter-ao2", "p": [469] }], "status": "verificado"
+    },
+    {
+      "chave": "capsula-do-joelho", "tipo": "ligamento", "nome": "Cápsula da articulação do joelho", "en": "Knee joint capsule",
+      "ids": ["articular_capsule_of_knee_joint"], "regiao": "joelho", "articulacao": "Joelho",
+      "origem": { "t": "Fêmur." },
+      "insercao": { "t": "Tíbia, até cerca de 15 mm abaixo da linha articular." },
+      "funcao": "Reforçada pelas estruturas mediais e laterais; a parte lateral resiste ao varo e à rotação lateral.",
+      "fonte": [{ "l": "netter-ao2", "p": [461, 463] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-da-cabeca-da-fibula", "tipo": "ligamento", "nome": "Ligamentos da cabeça da fíbula (tibiofibulares proximais)", "en": "Ligaments of fibular head",
+      "ids": ["anterior_ligament_of_fibular_head", "posterior_ligament_of_fibular_head", "articular_capsule_of_superior_tibiofibular_joint"], "regiao": "joelho", "articulacao": "Articulação tibiofibular proximal",
+      "origem": { "t": "Cabeça da fíbula.", "m": ["fibula:Head of fibula"] },
+      "insercao": { "t": "Faces anterolateral (ligamento anterior) e posterolateral (posterior) da tíbia.", "m": ["tibia:Lateral condyle of tibia"] },
+      "funcao": "O anterior é mais largo e mais forte que o posterior. A articulação quase não se move.",
+      "clinica": "Luxação ou ruptura dessa articulação indica trauma de alta energia no joelho.",
+      "fonte": [{ "l": "netter-ao2", "p": [470] }], "status": "verificado"
+    },
+    {
+      "chave": "membrana-interossea-da-perna", "tipo": "ligamento", "nome": "Membrana interóssea da perna", "en": "Interosseous membrane of leg",
+      "ids": ["interosseous_membrane_of_leg"], "regiao": "perna", "articulacao": "Tíbia e fíbula",
+      "origem": { "t": "Margem interóssea (lateral) da tíbia.", "m": ["tibia:Interosseous border of tibia"] },
+      "insercao": { "t": "Margem interóssea (medial) da fíbula.", "m": ["fibula:Interosseous crest of fibula"] },
+      "funcao": "Membrana fibrosa firme que separa os compartimentos anterior e posterior da perna.",
+      "clinica": "Rompe-se na fratura de Maisonneuve.",
+      "fonte": [{ "l": "netter-ao2", "p": [470] }], "status": "verificado"
+    }
+  ]
+}

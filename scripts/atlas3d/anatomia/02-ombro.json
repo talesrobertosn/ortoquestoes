@@ -1,0 +1,251 @@
+{
+  "lote": "02-ombro",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [148, 149, 150, 151, 152, 153, 154, 155],
+  "registros": [
+    {
+      "chave": "supraespinal", "tipo": "musculo", "nome": "Supraespinal", "en": "Supraspinatus",
+      "ids": ["supraspinatus_muscle"], "regiao": "ombro", "grupo": "manguito-rotador",
+      "origem": { "t": "Fossa supraespinal da escápula.", "m": ["scapula:Supraspinous fossa"] },
+      "insercao": { "t": "Parte superior do tubérculo maior do úmero.", "m": ["humerus:Greater tubercle"] },
+      "nervos": ["supraescapular"],
+      "acao": "Abdução do braço e estabilização da cabeça do úmero na cavidade glenoidal.",
+      "clinica": "É o tendão do manguito rotador que mais se rompe; fica comprimido no impacto subacromial.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 150] }], "status": "verificado"
+    },
+    {
+      "chave": "infraespinal", "tipo": "musculo", "nome": "Infraespinal", "en": "Infraspinatus",
+      "ids": ["infraspinatus_muscle"], "regiao": "ombro", "grupo": "manguito-rotador",
+      "origem": { "t": "Fossa infraespinal da escápula.", "m": ["scapula:Infraspinous fossa"] },
+      "insercao": { "t": "Parte média do tubérculo maior do úmero.", "m": ["humerus:Greater tubercle"] },
+      "nervos": ["supraescapular"],
+      "acao": "Rotação lateral do braço e estabilização da articulação do ombro.",
+      "clinica": "Rotação lateral fraca sugere ruptura do manguito ou compressão do nervo supraescapular na incisura espinoglenoidal.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 150, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "redondo-menor", "tipo": "musculo", "nome": "Redondo menor", "en": "Teres minor",
+      "ids": ["teres_minor_muscle"], "regiao": "ombro", "grupo": "manguito-rotador",
+      "origem": { "t": "Margem lateral da escápula.", "m": ["scapula:Lateral border of scapula"] },
+      "insercao": { "t": "Parte inferior do tubérculo maior do úmero.", "m": ["humerus:Greater tubercle"] },
+      "nervos": ["axilar"],
+      "acao": "Rotação lateral do braço e estabilização da articulação do ombro.",
+      "clinica": "Tendão do manguito que raramente se rompe. Forma a margem superior dos espaços triangular e quadrangular.",
+      "relacoes": ["Espaço quadrangular: entre redondo menor, redondo maior, cabeça longa do tríceps e úmero; por ele passam o nervo axilar e a artéria circunflexa posterior do úmero.", "Espaço triangular: entre redondo menor, redondo maior e cabeça longa do tríceps; contém a artéria circunflexa da escápula."],
+      "fonte": [{ "l": "netter-ao2", "p": [148, 149, 150] }], "status": "verificado"
+    },
+    {
+      "chave": "subescapular", "tipo": "musculo", "nome": "Subescapular", "en": "Subscapularis",
+      "ids": ["subscapularis_muscle"], "regiao": "ombro", "grupo": "manguito-rotador",
+      "origem": { "t": "Fossa subescapular, na face anterior da escápula.", "m": ["scapula:Subscapular fossa"] },
+      "insercao": { "t": "Tubérculo menor do úmero.", "m": ["humerus:Lesser tubercle"] },
+      "nervos": ["subescapular-superior", "subescapular-inferior"],
+      "acao": "Rotação medial e adução do braço; estabiliza a articulação do ombro.",
+      "clinica": "Fica em risco no acesso cirúrgico anterior (deltopeitoral) ao ombro.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 150, 155] }], "status": "verificado"
+    },
+    {
+      "chave": "deltoide", "tipo": "musculo", "nome": "Deltoide", "en": "Deltoid",
+      "ids": ["clavicular_part_of_deltoid_muscle", "acromial_part_of_deltoid_muscle", "scapular_spinal_part_of_deltoid_muscle"], "regiao": "ombro", "grupo": "ombro-superficial",
+      "origem": { "t": "Clavícula, acrômio e espinha da escápula.", "m": ["clavicle:Body of clavicle", "scapula:Acromion", "scapula:Spine of scapula"] },
+      "insercao": { "t": "Tuberosidade para o músculo deltoide, no corpo do úmero.", "m": ["humerus:Deltoid tuberosity"] },
+      "nervos": ["axilar"],
+      "acao": "Abdução do braço.",
+      "clinica": "A atrofia do deltoide indica lesão do nervo axilar, que corre por baixo dele cerca de 5 cm distal ao acrômio (risco nos acessos laterais e nas luxações).",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 150, 151, 155] }], "status": "verificado"
+    },
+    {
+      "chave": "redondo-maior", "tipo": "musculo", "nome": "Redondo maior", "en": "Teres major",
+      "ids": ["teres_major_muscle"], "regiao": "ombro", "grupo": "ombro-superficial",
+      "origem": { "t": "Ângulo inferior da escápula.", "m": ["scapula:Inferior angle of scapula"] },
+      "insercao": { "t": "Úmero, na margem medial do sulco intertubercular (das três inserções, é a mais medial).", "m": ["humerus:Crest of lesser tubercle"] },
+      "nervos": ["subescapular-inferior"],
+      "acao": "Rotação medial e adução do braço.",
+      "clinica": "No acesso posterior ao úmero, protege o nervo radial, que passa logo abaixo dele.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 150, 155] }], "status": "verificado",
+      "notas": "A marcação 3D usa a crista do tubérculo menor, que forma a margem medial do sulco intertubercular."
+    },
+    {
+      "chave": "peitoral-maior", "tipo": "musculo", "nome": "Peitoral maior", "en": "Pectoralis major",
+      "ids": ["clavicular_head_of_pectoralis_major_muscle", "sternocostal_head_of_pectoralis_major_muscle", "abdominal_part_of_pectoralis_major_muscle"], "regiao": "ombro", "grupo": "ombro-anterior",
+      "origem": { "t": "Clavícula (parte clavicular) e esterno (parte esternocostal).", "m": ["clavicle:Body of clavicle"], "o": ["manubrium_of_sternum", "body_of_sternum"] },
+      "insercao": { "t": "Úmero, na margem lateral do sulco intertubercular (das três inserções, é a mais lateral).", "m": ["humerus:Crest of greater tubercle"] },
+      "nervos": ["peitoral-lateral", "peitoral-medial"],
+      "acao": "Adução e rotação medial do braço.",
+      "clinica": "Pode romper na inserção umeral durante o levantamento de peso, deixando um defeito na prega axilar.",
+      "fonte": [{ "l": "netter-ao2", "p": [120, 148, 151, 154, 155] }], "status": "verificado"
+    },
+    {
+      "chave": "peitoral-menor", "tipo": "musculo", "nome": "Peitoral menor", "en": "Pectoralis minor",
+      "ids": ["pectoralis_minor_muscle"], "regiao": "ombro", "grupo": "ombro-anterior",
+      "origem": { "t": "Costelas III a V.", "m": [], "o": ["costelas:3-5"] },
+      "insercao": { "t": "Processo coracoide da escápula.", "m": ["scapula:Coracoid process"] },
+      "nervos": ["peitoral-medial", "peitoral-lateral"],
+      "acao": "Estabiliza a escápula.",
+      "clinica": "Passa à frente da artéria axilar e a divide em três partes.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 151, 154, 155] }], "status": "verificado"
+    },
+    {
+      "chave": "serratil-anterior", "tipo": "musculo", "nome": "Serrátil anterior", "en": "Serratus anterior",
+      "ids": ["serratus_anterior_muscle"], "regiao": "ombro", "grupo": "ombro-anterior",
+      "origem": { "t": "Face lateral das costelas I a VIII.", "m": [], "o": ["costelas:1-8"] },
+      "insercao": { "t": "Margem medial da escápula, pela face anterior.", "m": ["scapula:Medial border of scapula"] },
+      "nervos": ["toracico-longo"],
+      "acao": "Mantém a escápula junto à parede do tórax.",
+      "clinica": "A paralisia (lesão do nervo torácico longo) produz a escápula alada.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 151, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "subclavio", "tipo": "musculo", "nome": "Subclávio", "en": "Subclavius",
+      "ids": ["subclavius_muscle"], "regiao": "ombro", "grupo": "ombro-anterior",
+      "origem": { "t": "Costela I e sua cartilagem costal.", "m": [], "o": ["first_rib"] },
+      "insercao": { "t": "Face inferior do terço médio da clavícula.", "m": ["clavicle:Groove for subclavius muscle"] },
+      "nervos": ["subclavio-nervo"],
+      "acao": "Abaixa a clavícula.",
+      "clinica": "Protege os vasos subclávios.",
+      "fonte": [{ "l": "netter-ao2", "p": [151, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "trapezio", "tipo": "musculo", "nome": "Trapézio", "en": "Trapezius",
+      "ids": ["descending_part_of_trapezius_muscle", "transverse_part_of_trapezius_muscle", "ascending_part_of_trapezius_muscle"], "regiao": "ombro", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos espinhosos de C VII a T XII.", "m": [], "o": ["C7-T12"] },
+      "insercao": { "t": "Clavícula, acrômio e espinha da escápula.", "m": ["clavicle:Acromial end", "scapula:Acromion", "scapula:Spine of scapula"] },
+      "nervos": ["acessorio"],
+      "acao": "Eleva e roda a escápula.",
+      "clinica": "A fraqueza (lesão do nervo acessório) também deixa a escápula alada.",
+      "fonte": [{ "l": "netter-ao2", "p": [93, 148, 149, 152] }], "status": "verificado"
+    },
+    {
+      "chave": "latissimo-do-dorso", "tipo": "musculo", "nome": "Latíssimo do dorso", "en": "Latissimus dorsi",
+      "ids": ["latissimus_dorsi_muscle"], "regiao": "ombro", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos espinhosos de T VII a T XII (pela aponeurose toracolombar até o sacro) e crista ilíaca.", "m": ["hip_bone:Iliac crest"], "o": ["T7-T12"] },
+      "insercao": { "t": "Úmero, no sulco intertubercular, entre as inserções do peitoral maior e do redondo maior.", "m": ["humerus:Intertubercular sulcus"] },
+      "nervos": ["toracodorsal"],
+      "acao": "Adução, extensão e rotação medial do braço.",
+      "clinica": "Muito usado como retalho livre ou pediculado.",
+      "fonte": [{ "l": "netter-ao2", "p": [93, 148, 149, 155] }], "status": "verificado",
+      "notas": "As duas tabelas do Netter divergem no nível da origem (T VI–S V na tabela da coluna; T VII–T XII e crista ilíaca na do ombro). Mantidas as duas formas, que descrevem a mesma origem por fibras diretas e pela aponeurose."
+    },
+    {
+      "chave": "levantador-da-escapula", "tipo": "musculo", "nome": "Levantador da escápula", "en": "Levator scapulae",
+      "ids": ["levator_scapulae"], "regiao": "ombro", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos transversos de C I a C IV.", "m": [], "o": ["C1-C4"] },
+      "insercao": { "t": "Parte superior da margem medial da escápula.", "m": ["scapula:Superior angle of scapula"] },
+      "nervos": ["dorsal-da-escapula"],
+      "acao": "Eleva a escápula.",
+      "clinica": "Liga o membro superior à coluna vertebral. Recebe também ramos de C3 e C4.",
+      "fonte": [{ "l": "netter-ao2", "p": [93, 149, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "romboide-menor", "tipo": "musculo", "nome": "Romboide menor", "en": "Rhomboid minor",
+      "ids": ["rhomboid_minor_muscle"], "regiao": "ombro", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos espinhosos de C VII e T I.", "m": [], "o": ["C7-T1"] },
+      "insercao": { "t": "Margem medial da escápula, na altura da espinha.", "m": ["scapula:Medial border of scapula"] },
+      "nervos": ["dorsal-da-escapula"],
+      "acao": "Aduz (retrai) a escápula.",
+      "fonte": [{ "l": "netter-ao2", "p": [93, 149, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "romboide-maior", "tipo": "musculo", "nome": "Romboide maior", "en": "Rhomboid major",
+      "ids": ["rhomboid_major_muscle"], "regiao": "ombro", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos espinhosos de T II a T V.", "m": [], "o": ["T2-T5"] },
+      "insercao": { "t": "Margem medial da escápula, abaixo da espinha.", "m": ["scapula:Medial border of scapula"] },
+      "nervos": ["dorsal-da-escapula"],
+      "acao": "Aduz (retrai) a escápula.",
+      "fonte": [{ "l": "netter-ao2", "p": [93, 149, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "acessorio", "tipo": "nervo", "nome": "Nervo acessório (NC XI)", "en": "Accessory nerve",
+      "ids": ["accessory_nerve_xi"], "regiao": "ombro",
+      "raizes": "Nervo craniano XI (parte espinal)",
+      "trajeto": "A parte espinal desce no pescoço e cruza por cima do músculo levantador da escápula até o trapézio.",
+      "sensitivo": "Nenhum.",
+      "clinica": "Lesão (por exemplo, em cirurgia no trígono cervical lateral) enfraquece o trapézio e deixa a escápula alada.",
+      "fonte": [{ "l": "netter-ao2", "p": [149, 152] }], "status": "verificado"
+    },
+    {
+      "chave": "dorsal-da-escapula", "tipo": "nervo", "nome": "Nervo dorsal da escápula", "en": "Dorsal scapular nerve",
+      "ids": ["dorsal_scapular_nerve"], "regiao": "ombro",
+      "raizes": "C3–C5 (sai das raízes do plexo braquial)",
+      "trajeto": "Perfura o escaleno médio e desce por baixo do levantador da escápula.",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [153] }], "status": "verificado"
+    },
+    {
+      "chave": "toracico-longo", "tipo": "nervo", "nome": "Nervo torácico longo", "en": "Long thoracic nerve",
+      "ids": ["long_thoracic_nerve"], "regiao": "ombro",
+      "raizes": "C5–C7 (sai das raízes do plexo braquial)",
+      "trajeto": "Desce sobre a face externa do serrátil anterior, acompanhado da artéria torácica lateral.",
+      "sensitivo": "Nenhum.",
+      "clinica": "Lesão paralisa o serrátil anterior: escápula alada.",
+      "fonte": [{ "l": "netter-ao2", "p": [151, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "supraescapular", "tipo": "nervo", "nome": "Nervo supraescapular", "en": "Suprascapular nerve",
+      "ids": ["suprascapular_nerve"], "regiao": "ombro",
+      "raizes": "C5–C6 (tronco superior)",
+      "trajeto": "Passa sob o ligamento transverso superior, na incisura da escápula, e inerva o supraespinal; contorna a incisura espinoglenoidal e chega à fossa infraespinal para inervar o infraespinal.",
+      "sensitivo": "Cápsula da articulação do ombro.",
+      "clinica": "Pode ser comprimido na incisura espinoglenoidal; a lesão na incisura enfraquece a rotação lateral (infraespinal).",
+      "fonte": [{ "l": "netter-ao2", "p": [150, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "subclavio-nervo", "tipo": "nervo", "nome": "Nervo para o músculo subclávio", "en": "Subclavian nerve",
+      "ids": ["subclavian_nerve"], "regiao": "ombro",
+      "raizes": "C5–C6 (tronco superior)",
+      "trajeto": "Desce por trás da clavícula até o músculo subclávio.",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [153] }], "status": "verificado"
+    },
+    {
+      "chave": "peitoral-lateral", "tipo": "nervo", "nome": "Nervo peitoral lateral", "en": "Lateral pectoral nerve",
+      "ids": ["lateral_pectoral_nerve"], "regiao": "ombro",
+      "raizes": "C5–C7 (fascículo lateral)",
+      "trajeto": "Leva o nome do fascículo de origem e corre medial ao nervo peitoral medial, com a artéria peitoral.",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [154] }], "status": "verificado",
+      "notas": "Inerva a parte clavicular do peitoral maior e, por um ramo comunicante, o peitoral menor."
+    },
+    {
+      "chave": "peitoral-medial", "tipo": "nervo", "nome": "Nervo peitoral medial", "en": "Medial pectoral nerve",
+      "ids": ["medial_pectoral_nerve"], "regiao": "ombro",
+      "raizes": "C5–C7 segundo o Netter (fascículo medial)",
+      "trajeto": "Leva o nome do fascículo de origem e corre lateral ao nervo peitoral lateral.",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [155] }], "status": "conflito",
+      "notas": "O Netter atribui C5–C7; a maioria dos textos de anatomia dá C8–T1 para o nervo do fascículo medial. Rever antes de exibir as raízes como definitivas."
+    },
+    {
+      "chave": "subescapular-superior", "tipo": "nervo", "nome": "Nervo subescapular superior", "en": "Upper subscapular nerve",
+      "ids": ["superior_subscapular_nerve"], "regiao": "ombro",
+      "raizes": "C5–C6 (fascículo posterior)",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [155] }], "status": "verificado"
+    },
+    {
+      "chave": "subescapular-inferior", "tipo": "nervo", "nome": "Nervo subescapular inferior", "en": "Lower subscapular nerve",
+      "ids": ["inferior_subscapular_nerve"], "regiao": "ombro",
+      "raizes": "C5–C6 (fascículo posterior)",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [155] }], "status": "verificado"
+    },
+    {
+      "chave": "toracodorsal", "tipo": "nervo", "nome": "Nervo toracodorsal", "en": "Thoracodorsal nerve",
+      "ids": ["thoracodorsal_nerve"], "regiao": "ombro",
+      "raizes": "C7–C8 (fascículo posterior)",
+      "trajeto": "Desce com a artéria toracodorsal pela face profunda do latíssimo do dorso.",
+      "sensitivo": "Nenhum.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 155] }], "status": "verificado"
+    },
+    {
+      "chave": "axilar", "tipo": "nervo", "nome": "Nervo axilar", "en": "Axillary nerve",
+      "ids": ["axillary_nerve", "muscular_branches_of_axillary_nerve"], "regiao": "ombro",
+      "raizes": "C5–C6 (fascículo posterior)",
+      "trajeto": "Passa logo abaixo da cápsula do ombro, segue para trás pelo espaço quadrangular com a artéria circunflexa posterior do úmero e depois se volta para a frente, cerca de 5 cm distal ao acrômio.",
+      "sensitivo": "Pele da face lateral da parte proximal do braço, pelo nervo cutâneo lateral superior do braço.",
+      "clinica": "Pode ser lesionado nas luxações glenoumerais e nos acessos laterais ao ombro; a lesão causa atrofia do deltoide.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 149, 150, 155] }], "status": "verificado",
+      "notas": "Ramo profundo para o deltoide; ramo superficial para o redondo menor."
+    }
+  ]
+}

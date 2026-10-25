@@ -23,8 +23,15 @@ Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados
 - Conta grátis: ossos e músculos. Outras camadas aparecem por 3 s e então o convite (gentil) para assinar.
 - Assinante: todas as camadas.
 
+## Banco anatômico (25/10/2026)
+- Origem, inserção, inervação, ação, ligamentos e nervos, com o Netter de Anatomia Ortopédica como fonte, em lotes
+  conferidos por região: [BANCO-ANATOMICO.md](BANCO-ANATOMICO.md) e [COBERTURA-ANATOMIA.md](COBERTURA-ANATOMIA.md).
+- Ficha anatômica (`ui/FichaAnatomica.tsx`), relações no modelo (`dados/relacoes.ts`, `Motor.mostrarRelacoes`) e aba
+  Inserções na ficha dos ossos.
+
 ## Pendências
-- Fichas de músculos, nervos e vasos (origem, inserção, inervação, relevância cirúrgica): só com fonte conferida.
+- Vasos (artérias e veias) no banco anatômico; músculos do tronco e da cabeça (fora do livro de referência ortopédico).
+- Conflitos e pendências do banco: ver COBERTURA-ANATOMIA.md.
 - Nomes em português de vasos e de estruturas fora do foco ortopédico (ver NOMES.md).
-- Modo estudo ("o que é isso?"), comparação lado a lado, pontos anatômicos dos ossos na ficha (dados em pontos.json).
+- Modo estudo ("o que é isso?"), comparação lado a lado, comparação de lados.
 - Rádio distal do adulto: falta o capítulo do Rockwood na Biblioteca; hoje a ficha usa o resumo pediátrico.

@@ -1,0 +1,175 @@
+{
+  "lote": "05-mao",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [320, 321, 322, 324, 325, 326, 327, 328],
+  "registros": [
+    {
+      "chave": "abdutor-curto-do-polegar", "tipo": "musculo", "nome": "Abdutor curto do polegar", "en": "Abductor pollicis brevis",
+      "ids": ["abductor_pollicis_brevis"], "regiao": "punho-mao", "grupo": "tenar",
+      "origem": { "t": "Escafoide e trapézio.", "m": ["scaphoid_bone:Tubercle of scaphoid bone"], "o": ["trapezium_bone"] },
+      "insercao": { "t": "Face lateral da falange proximal do polegar.", "o": ["proximal_phalanx_of_first_finger_of_hand"] },
+      "nervos": ["recorrente-do-mediano"],
+      "acao": "Leva o polegar para a frente da palma (abdução palmar).",
+      "clinica": "É o principal músculo da oposição do polegar.",
+      "fonte": [{ "l": "netter-ao2", "p": [320, 326] }], "status": "verificado",
+      "notas": "O Netter descreve a ação como 'pronação palmar'; aqui escrita como abdução palmar, o termo usual."
+    },
+    {
+      "chave": "flexor-curto-do-polegar", "tipo": "musculo", "nome": "Flexor curto do polegar", "en": "Flexor pollicis brevis",
+      "ids": ["superficial_head_of_flexor_pollicis_brevis", "deep_head_of_flexor_pollicis_brevis"], "regiao": "punho-mao", "grupo": "tenar",
+      "origem": { "t": "Cabeça superficial no retináculo dos músculos flexores (ligamento carpal transverso); cabeça profunda no trapézio.", "o": ["trapezium_bone"] },
+      "insercao": { "t": "Base da falange proximal do polegar.", "o": ["proximal_phalanx_of_first_finger_of_hand"] },
+      "nervos": ["recorrente-do-mediano", "ramo-profundo-do-ulnar"],
+      "acao": "Flexão da metacarpofalângica do polegar.",
+      "clinica": "Tem inervação dupla: cabeça superficial pelo mediano e cabeça profunda pelo ulnar.",
+      "fonte": [{ "l": "netter-ao2", "p": [320, 325, 326] }], "status": "verificado"
+    },
+    {
+      "chave": "oponente-do-polegar", "tipo": "musculo", "nome": "Oponente do polegar", "en": "Opponens pollicis",
+      "ids": ["opponens_pollicis_muscle"], "regiao": "punho-mao", "grupo": "tenar",
+      "origem": { "t": "Trapézio.", "o": ["trapezium_bone"] },
+      "insercao": { "t": "Face lateral do metacarpal do polegar.", "o": ["first_metacarpal_bone"] },
+      "nervos": ["recorrente-do-mediano"],
+      "acao": "Oposição do polegar (flexão e abdução com rotação).",
+      "clinica": "Também estabiliza a metacarpofalângica do polegar.",
+      "fonte": [{ "l": "netter-ao2", "p": [320, 326] }], "status": "verificado"
+    },
+    {
+      "chave": "adutor-do-polegar", "tipo": "musculo", "nome": "Adutor do polegar", "en": "Adductor pollicis",
+      "ids": ["oblique_head_of_adductor_pollicis", "transverse_head_of_adductor_pollicis"], "regiao": "punho-mao", "grupo": "adutor",
+      "origem": { "t": "Cabeça oblíqua no capitato e nas bases do 2º e 3º metacarpais; cabeça transversa no 3º metacarpal.", "o": ["capitate_bone", "second_metacarpal_bone", "third_metacarpal_bone"] },
+      "insercao": { "t": "Base da falange proximal do polegar, lado ulnar.", "o": ["proximal_phalanx_of_first_finger_of_hand"] },
+      "nervos": ["ramo-profundo-do-ulnar"],
+      "acao": "Adução do polegar e flexão da sua metacarpofalângica.",
+      "clinica": "A sua função é testada pelo sinal de Froment.",
+      "fonte": [{ "l": "netter-ao2", "p": [320, 325] }], "status": "verificado"
+    },
+    {
+      "chave": "abdutor-do-dedo-minimo-da-mao", "tipo": "musculo", "nome": "Abdutor do dedo mínimo", "en": "Abductor digiti minimi (hand)",
+      "ids": ["abductor_digiti_minimi_of_hand"], "regiao": "punho-mao", "grupo": "hipotenar",
+      "origem": { "t": "Pisiforme (e tendão do flexor ulnar do carpo).", "o": ["pisiform_bone"] },
+      "insercao": { "t": "Base da falange proximal do dedo mínimo, lado ulnar.", "o": ["proximal_phalanx_of_fifth_finger_of_hand"] },
+      "nervos": ["ramo-profundo-do-ulnar"],
+      "acao": "Abdução do dedo mínimo.",
+      "relacoes": ["O nervo e a artéria ulnares passam por baixo dele."],
+      "fonte": [{ "l": "netter-ao2", "p": [320, 324] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-curto-do-dedo-minimo-da-mao", "tipo": "musculo", "nome": "Flexor curto do dedo mínimo", "en": "Flexor digiti minimi brevis (hand)",
+      "ids": ["flexor_digiti_minimi_of_hand"], "regiao": "punho-mao", "grupo": "hipotenar",
+      "origem": { "t": "Hâmulo do hamato e ligamento carpal transverso.", "m": ["hamate_bone:Hook of hamate bone"] },
+      "insercao": { "t": "Base da falange proximal do dedo mínimo.", "o": ["proximal_phalanx_of_fifth_finger_of_hand"] },
+      "nervos": ["ramo-profundo-do-ulnar"],
+      "acao": "Flexão da metacarpofalângica do dedo mínimo.",
+      "relacoes": ["Fica mais profundo que o abdutor do dedo mínimo e que o nervo ulnar."],
+      "fonte": [{ "l": "netter-ao2", "p": [320, 324] }], "status": "verificado"
+    },
+    {
+      "chave": "oponente-do-dedo-minimo-da-mao", "tipo": "musculo", "nome": "Oponente do dedo mínimo", "en": "Opponens digiti minimi (hand)",
+      "ids": ["opponens_digiti_minimi_muscle_of_hand"], "regiao": "punho-mao", "grupo": "hipotenar",
+      "origem": { "t": "Hâmulo do hamato e ligamento carpal transverso.", "m": ["hamate_bone:Hook of hamate bone"] },
+      "insercao": { "t": "Face medial do 5º metacarpal.", "o": ["fifth_metacarpal_bone"] },
+      "nervos": ["ramo-profundo-do-ulnar"],
+      "acao": "Oposição do dedo mínimo (flexão e supinação).",
+      "relacoes": ["É o mais profundo dos hipotenares."],
+      "fonte": [{ "l": "netter-ao2", "p": [320, 324] }], "status": "verificado"
+    },
+    {
+      "chave": "lumbricais-da-mao", "tipo": "musculo", "nome": "Lumbricais da mão", "en": "Lumbricals (hand)",
+      "ids": ["lumbrical_muscles_of_hand"], "regiao": "punho-mao", "grupo": "intrinsecos",
+      "origem": { "t": "Tendões do flexor profundo dos dedos (1º e 2º nos dois tendões laterais; 3º e 4º nos três mediais)." },
+      "insercao": { "t": "Bandas laterais do aparelho extensor." },
+      "nervos": ["mediano", "ramo-profundo-do-ulnar"],
+      "acao": "Estendem as interfalângicas e fletem as metacarpofalângicas.",
+      "clinica": "São os únicos músculos que se inserem no próprio antagonista (o flexor profundo). Passam à frente dos ligamentos metacarpais transversos profundos.",
+      "fonte": [{ "l": "netter-ao2", "p": [321, 325, 326] }], "status": "verificado",
+      "notas": "1º e 2º lumbricais pelo mediano; 3º e 4º pelo ramo profundo do ulnar."
+    },
+    {
+      "chave": "interosseos-dorsais-da-mao", "tipo": "musculo", "nome": "Interósseos dorsais da mão", "en": "Dorsal interossei (hand)",
+      "ids": ["dorsal_interossei_muscles_of_hand"], "regiao": "punho-mao", "grupo": "intrinsecos",
+      "origem": { "t": "Faces dos metacarpais vizinhos (cada um tem dois ventres).", "o": ["first_metacarpal_bone", "second_metacarpal_bone", "third_metacarpal_bone", "fourth_metacarpal_bone", "fifth_metacarpal_bone"] },
+      "insercao": { "t": "Falange proximal e expansão extensora (bandas laterais)." },
+      "nervos": ["ramo-profundo-do-ulnar"],
+      "acao": "Abdução dos dedos e flexão das metacarpofalângicas.",
+      "clinica": "Mnemônico: os Dorsais ABduzem (DAB). São peniformes, com inserção separada para cada ventre.",
+      "fonte": [{ "l": "netter-ao2", "p": [321, 322, 325] }], "status": "verificado"
+    },
+    {
+      "chave": "interosseos-palmares", "tipo": "musculo", "nome": "Interósseos palmares", "en": "Palmar interossei",
+      "ids": ["palmar_interossei_muscles"], "regiao": "punho-mao", "grupo": "intrinsecos",
+      "origem": { "t": "Faces dos metacarpais vizinhos." },
+      "insercao": { "t": "Expansão extensora (bandas laterais)." },
+      "nervos": ["ramo-profundo-do-ulnar"],
+      "acao": "Adução dos dedos.",
+      "clinica": "Mnemônico: os Palmares ADuzem (PAD). São semipeniformes.",
+      "fonte": [{ "l": "netter-ao2", "p": [321, 322, 325] }], "status": "verificado"
+    },
+    {
+      "chave": "recorrente-do-mediano", "tipo": "nervo", "nome": "Ramo recorrente (motor) do nervo mediano", "en": "Recurrent branch of median nerve",
+      "ids": [], "regiao": "punho-mao",
+      "raizes": "Ramo do nervo mediano",
+      "trajeto": "Sai do mediano logo depois do ligamento carpal transverso e volta para a eminência tenar. Pode sair através do ligamento ou abaixo dele.",
+      "clinica": "Quando atravessa o ligamento carpal transverso, fica em risco na liberação do túnel do carpo.",
+      "ver": ["mediano"],
+      "fonte": [{ "l": "netter-ao2", "p": [260, 320, 325, 326] }], "status": "conflito",
+      "notas": "O Netter atribui a esse ramo também os dois lumbricais laterais; a maioria dos textos põe os lumbricais nos ramos digitais palmares do mediano. A inervação dos lumbricais pelo mediano não muda."
+    },
+    {
+      "chave": "ramo-palmar-do-mediano", "tipo": "nervo", "nome": "Ramo palmar do nervo mediano", "en": "Palmar branch of median nerve",
+      "ids": ["palmar_branch_of_median_nerve"], "regiao": "punho-mao",
+      "raizes": "Ramo cutâneo do nervo mediano",
+      "trajeto": "Sai do mediano cerca de 5 cm acima do punho, antes do túnel do carpo, e corre junto ao flexor radial do carpo e ao palmar longo.",
+      "sensitivo": "Pele da palma, no lado radial.",
+      "clinica": "Como não passa pelo túnel, a sensibilidade da palma costuma estar preservada na síndrome do túnel do carpo.",
+      "ver": ["mediano"],
+      "fonte": [{ "l": "netter-ao2", "p": [260, 325] }], "status": "verificado"
+    },
+    {
+      "chave": "digitais-do-mediano", "tipo": "nervo", "nome": "Nervos digitais palmares do mediano", "en": "Palmar digital branches of median nerve",
+      "ids": ["common_palmar_digital_branches_of_median_nerve", "proper_palmar_digital_branches_of_median_nerve"], "regiao": "punho-mao",
+      "raizes": "Ramos terminais do nervo mediano",
+      "sensitivo": "Face palmar do polegar, do indicador, do médio e da metade radial do anular, e o dorso das falanges distais desses dedos.",
+      "ver": ["mediano"],
+      "fonte": [{ "l": "netter-ao2", "p": [325] }], "status": "verificado"
+    },
+    {
+      "chave": "ramo-dorsal-do-ulnar", "tipo": "nervo", "nome": "Ramo dorsal do nervo ulnar", "en": "Dorsal branch of ulnar nerve",
+      "ids": ["dorsal_branch_of_ulnar_nerve", "dorsal_digital_branches_of_ulnar_nerve"], "regiao": "punho-mao",
+      "raizes": "Ramo cutâneo do nervo ulnar",
+      "trajeto": "Sai do ulnar cerca de 5 cm acima do punho e passa para o dorso; continua como nervos digitais dorsais.",
+      "sensitivo": "Lado ulnar do dorso da mão e dorso do dedo mínimo e do anular.",
+      "clinica": "Como sai antes do canal de Guyon, a sensibilidade do dorso fica preservada na compressão ulnar no punho.",
+      "ver": ["ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [263, 324] }], "status": "verificado"
+    },
+    {
+      "chave": "ramo-palmar-do-ulnar", "tipo": "nervo", "nome": "Ramo palmar do nervo ulnar", "en": "Palmar branch of ulnar nerve",
+      "ids": ["palmar_branch_of_ulnar_nerve"], "regiao": "punho-mao",
+      "raizes": "Ramo cutâneo do nervo ulnar",
+      "sensitivo": "Parte proximal do lado ulnar da palma.",
+      "ver": ["ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [263, 324] }], "status": "verificado"
+    },
+    {
+      "chave": "ramo-superficial-do-ulnar", "tipo": "nervo", "nome": "Ramo superficial do nervo ulnar", "en": "Superficial branch of ulnar nerve",
+      "ids": ["superficial_branch_of_ulnar_nerve", "common_palmar_digital_branches_of_ulnar_nerve", "proper_palmar_digital_branches_of_ulnar_nerve"], "regiao": "punho-mao",
+      "raizes": "Ramo terminal sensitivo do nervo ulnar (no canal de Guyon)",
+      "trajeto": "Continua na face palmar como nervos digitais palmares.",
+      "sensitivo": "Parte distal do lado ulnar da palma e face palmar do dedo mínimo e do anular.",
+      "clinica": "Inerva um único músculo: o palmar curto.",
+      "ver": ["ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [324] }], "status": "verificado"
+    },
+    {
+      "chave": "ramo-profundo-do-ulnar", "tipo": "nervo", "nome": "Ramo profundo do nervo ulnar", "en": "Deep branch of ulnar nerve",
+      "ids": ["deep_branch_of_ulnar_nerve"], "regiao": "punho-mao",
+      "raizes": "Ramo terminal motor do nervo ulnar (no canal de Guyon)",
+      "trajeto": "Contorna o hâmulo do hamato e atravessa a palma junto com o arco palmar profundo.",
+      "sensitivo": "Nenhum.",
+      "clinica": "Inerva os hipotenares, o adutor do polegar, todos os interósseos, os dois lumbricais mediais e a cabeça profunda do flexor curto do polegar.",
+      "ver": ["ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [320, 324, 325] }], "status": "verificado"
+    }
+  ]
+}

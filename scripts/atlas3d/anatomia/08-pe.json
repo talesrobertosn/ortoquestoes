@@ -1,0 +1,139 @@
+{
+  "lote": "08-pe",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [561, 562, 563, 564, 565, 566, 567, 569, 570, 571, 572],
+  "registros": [
+    {
+      "chave": "abdutor-do-halux", "tipo": "musculo", "nome": "Abdutor do hálux", "en": "Abductor hallucis",
+      "ids": ["abductor_hallucis"], "regiao": "tornozelo-pe", "grupo": "planta-1a-camada",
+      "origem": { "t": "Processo medial da tuberosidade do calcâneo.", "m": ["calcaneus:Medial process of calcaneal tuberosity"] },
+      "insercao": { "t": "Do sesamoide medial até a falange proximal do hálux.", "o": ["proximal_phalanx_of_first_finger_of_foot"] },
+      "nervos": ["plantar-medial"],
+      "acao": "Abduz o hálux.",
+      "clinica": "A sua fáscia pode comprimir o nervo do abdutor do dedo mínimo (1º ramo do plantar lateral, 'nervo de Baxter').",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 562, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-curto-dos-dedos", "tipo": "musculo", "nome": "Flexor curto dos dedos", "en": "Flexor digitorum brevis",
+      "ids": ["flexor_digitorum_brevis"], "regiao": "tornozelo-pe", "grupo": "planta-1a-camada",
+      "origem": { "t": "Processo medial da tuberosidade do calcâneo.", "m": ["calcaneus:Medial process of calcaneal tuberosity"] },
+      "insercao": { "t": "Lados das falanges médias dos quatro dedos laterais.", "o": ["middle_phalanx_of_second_finger_of_foot", "middle_phalanx_of_third_finger_of_foot", "middle_phalanx_of_fourth_finger_of_foot", "middle_phalanx_of_fifth_finger_of_foot"] },
+      "nervos": ["plantar-medial"],
+      "acao": "Flete os quatro dedos laterais.",
+      "clinica": "Sustenta o arco longitudinal do pé.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 562, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "abdutor-do-dedo-minimo-do-pe", "tipo": "musculo", "nome": "Abdutor do dedo mínimo do pé", "en": "Abductor digiti minimi (foot)",
+      "ids": ["abductor_digiti_minimi_of_foot"], "regiao": "tornozelo-pe", "grupo": "planta-1a-camada",
+      "origem": { "t": "Processos medial e lateral da tuberosidade do calcâneo.", "m": ["calcaneus:Medial process of calcaneal tuberosity", "calcaneus:Lateral process of calcaneal tuberosity"] },
+      "insercao": { "t": "Lado lateral da base da falange proximal do 5º dedo.", "o": ["proximal_phalanx_of_fifth_finger_of_foot"] },
+      "nervos": ["plantar-lateral"],
+      "acao": "Abduz o dedo mínimo.",
+      "clinica": "O seu nervo (1º ramo do plantar lateral) pode ser comprimido pela fáscia do abdutor do hálux.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 562, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "quadrado-plantar", "tipo": "musculo", "nome": "Quadrado plantar", "en": "Quadratus plantae",
+      "ids": ["quadratus_plantae_muscle"], "regiao": "tornozelo-pe", "grupo": "planta-2a-camada",
+      "origem": { "t": "Faces medial e lateral da planta do calcâneo (duas cabeças).", "m": ["calcaneus:Medial process of calcaneal tuberosity", "calcaneus:Lateral process of calcaneal tuberosity"] },
+      "insercao": { "t": "Margem lateral do tendão do flexor longo dos dedos." },
+      "nervos": ["plantar-lateral"],
+      "acao": "Ajuda o flexor longo dos dedos a fletir os dedos.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 563, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "lumbricais-do-pe", "tipo": "musculo", "nome": "Lumbricais do pé", "en": "Lumbricals (foot)",
+      "ids": ["lumbrical_muscles_of_foot"], "regiao": "tornozelo-pe", "grupo": "planta-2a-camada",
+      "origem": { "t": "Tendões do flexor longo dos dedos (o 1º só no primeiro tendão)." },
+      "insercao": { "t": "Falanges proximais e expansão extensora." },
+      "nervos": ["plantar-medial", "plantar-lateral"],
+      "acao": "Fletem a metatarsofalângica e estendem a interfalângica.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 563, 570] }], "status": "conflito",
+      "notas": "O Netter traz duas divisões: na tabela de músculos, só o 1º lumbrical pelo plantar medial (2º a 4º pelo lateral); no texto dos nervos, os dois mediais pelo plantar medial. A segunda forma é a mais citada nos textos de anatomia."
+    },
+    {
+      "chave": "flexor-curto-do-halux", "tipo": "musculo", "nome": "Flexor curto do hálux", "en": "Flexor hallucis brevis",
+      "ids": ["medial_head_of_flexor_hallucis_brevis", "lateral_head_of_flexor_hallucis_brevis"], "regiao": "tornozelo-pe", "grupo": "planta-3a-camada",
+      "origem": { "t": "Cuboide e cuneiforme lateral.", "o": ["cuboid_bone", "lateral_cuneiform_bone"] },
+      "insercao": { "t": "Pelos sesamoides até a falange proximal do hálux.", "o": ["sesamoid_bones_of_foot", "proximal_phalanx_of_first_finger_of_foot"] },
+      "nervos": ["plantar-medial"],
+      "acao": "Ajuda a fletir o hálux na metatarsofalângica.",
+      "clinica": "Os sesamoides do hálux ficam dentro dos seus tendões.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 564, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "adutor-do-halux", "tipo": "musculo", "nome": "Adutor do hálux", "en": "Adductor hallucis",
+      "ids": ["oblique_head_of_adductor_hallucis", "transverse_head_of_adductor_hallucis"], "regiao": "tornozelo-pe", "grupo": "planta-3a-camada",
+      "origem": { "t": "Cabeça oblíqua nas bases do 2º ao 4º metatarsal; cabeça transversa ao lado da 4ª metatarsofalângica.", "o": ["second_metatarsal_bone", "third_metatarsal_bone", "fourth_metatarsal_bone"] },
+      "insercao": { "t": "Do sesamoide lateral até o lado lateral da falange proximal do hálux.", "o": ["sesamoid_bones_of_foot", "proximal_phalanx_of_first_finger_of_foot"] },
+      "nervos": ["plantar-lateral"],
+      "acao": "Aduz o hálux.",
+      "clinica": "As duas cabeças têm direções diferentes e contribuem para a deformidade do hálux valgo.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 564, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-curto-do-dedo-minimo-do-pe", "tipo": "musculo", "nome": "Flexor curto do dedo mínimo do pé", "en": "Flexor digiti minimi brevis (foot)",
+      "ids": ["flexor_digiti_minimi_of_foot"], "regiao": "tornozelo-pe", "grupo": "planta-3a-camada",
+      "origem": { "t": "Base do 5º metatarsal.", "o": ["fifth_metatarsal_bone"] },
+      "insercao": { "t": "Base da falange proximal do dedo mínimo.", "o": ["proximal_phalanx_of_fifth_finger_of_foot"] },
+      "nervos": ["plantar-lateral"],
+      "acao": "Flete o dedo mínimo.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 564, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "interosseos-plantares", "tipo": "musculo", "nome": "Interósseos plantares", "en": "Plantar interossei",
+      "ids": ["plantar_interossei_muscles"], "regiao": "tornozelo-pe", "grupo": "planta-4a-camada",
+      "origem": { "t": "Face medial do 3º, 4º e 5º metatarsais.", "o": ["third_metatarsal_bone", "fourth_metatarsal_bone", "fifth_metatarsal_bone"] },
+      "insercao": { "t": "Face medial das falanges proximais do 3º ao 5º dedo.", "o": ["proximal_phalanx_of_third_finger_of_foot", "proximal_phalanx_of_fourth_finger_of_foot", "proximal_phalanx_of_fifth_finger_of_foot"] },
+      "nervos": ["plantar-lateral"],
+      "acao": "Aduzem os dedos, fletem a metatarsofalângica e estendem a interfalângica.",
+      "clinica": "Mnemônico: os Plantares ADuzem (PAD); no pé, a referência para abdução e adução é o 2º dedo.",
+      "fonte": [{ "l": "netter-ao2", "p": [561, 565, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "interosseos-dorsais-do-pe", "tipo": "musculo", "nome": "Interósseos dorsais do pé", "en": "Dorsal interossei (foot)",
+      "ids": ["dorsal_interossei_muscles_of_foot"], "regiao": "tornozelo-pe", "grupo": "planta-4a-camada",
+      "origem": { "t": "Diáfises dos metatarsais vizinhos.", "o": ["first_metatarsal_bone", "second_metatarsal_bone", "third_metatarsal_bone", "fourth_metatarsal_bone", "fifth_metatarsal_bone"] },
+      "insercao": { "t": "Lado medial da falange proximal do 2º dedo e lado lateral das falanges proximais do 2º ao 4º dedo.", "o": ["proximal_phalanx_of_second_finger_of_foot", "proximal_phalanx_of_third_finger_of_foot", "proximal_phalanx_of_fourth_finger_of_foot"] },
+      "nervos": ["plantar-lateral"],
+      "acao": "Abduzem os dedos.",
+      "clinica": "São maiores que os plantares e peniformes. Mnemônico: os Dorsais ABduzem (DAB).",
+      "fonte": [{ "l": "netter-ao2", "p": [564, 565, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-curto-dos-dedos", "tipo": "musculo", "nome": "Extensor curto dos dedos", "en": "Extensor digitorum brevis",
+      "ids": ["extensor_digitorum_brevis"], "regiao": "tornozelo-pe", "grupo": "dorso-do-pe",
+      "nervos": ["fibular-profundo"],
+      "fonte": [{ "l": "netter-ao2", "p": [565, 566, 571, 572] }], "status": "verificado",
+      "notas": "O livro de referência mostra o músculo nas pranchas do dorso do pé e cita a inervação (ramo lateral do fibular profundo), sem tabela de origem e inserção."
+    },
+    {
+      "chave": "extensor-curto-do-halux", "tipo": "musculo", "nome": "Extensor curto do hálux", "en": "Extensor hallucis brevis",
+      "ids": ["extensor_hallucis_brevis"], "regiao": "tornozelo-pe", "grupo": "dorso-do-pe",
+      "nervos": ["fibular-profundo"],
+      "fonte": [{ "l": "netter-ao2", "p": [565, 566, 571] }], "status": "verificado",
+      "notas": "O livro de referência cita a inervação (ramo lateral do fibular profundo), sem tabela de origem e inserção."
+    },
+    {
+      "chave": "plantar-medial", "tipo": "nervo", "nome": "Nervo plantar medial", "en": "Medial plantar nerve",
+      "ids": ["medial_plantar_nerve", "common_plantar_digital_branches_of_medial_plantar_nerve", "proper_plantar_digital_branches_of_medial_plantar_nerve"], "regiao": "tornozelo-pe",
+      "raizes": "Ramo terminal do nervo tibial (no túnel do tarso)",
+      "trajeto": "Segue pelo lado medial da planta, na segunda camada.",
+      "sensitivo": "Lado medial da planta e dos dedos.",
+      "clinica": "A compressão pode causar dor no arco medial do pé, principalmente em corredores.",
+      "ver": ["tibial", "plantar-lateral"],
+      "fonte": [{ "l": "netter-ao2", "p": [563, 570] }], "status": "verificado"
+    },
+    {
+      "chave": "plantar-lateral", "tipo": "nervo", "nome": "Nervo plantar lateral", "en": "Lateral plantar nerve",
+      "ids": ["lateral_plantar_nerve", "common_plantar_digital_branches_of_lateral_plantar_nerve", "proper_plantar_digital_branches_of_lateral_plantar_nerve"], "regiao": "tornozelo-pe",
+      "raizes": "Ramo terminal do nervo tibial (no túnel do tarso)",
+      "trajeto": "Solta logo o ramo para o abdutor do dedo mínimo ('nervo de Baxter') e segue para o lado lateral da planta, na segunda camada.",
+      "sensitivo": "Lado lateral da planta e dos dedos.",
+      "clinica": "O 1º ramo pode ser comprimido pela fáscia do abdutor do hálux.",
+      "ver": ["tibial", "plantar-medial"],
+      "fonte": [{ "l": "netter-ao2", "p": [562, 563, 570] }], "status": "verificado"
+    }
+  ]
+}

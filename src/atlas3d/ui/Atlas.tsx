@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Motor, type Corte, type EixoCorte, type Passagem, type Vista } from '../motor/Motor'
-import { carregarCatalogo } from '../motor/carregador'
+import { carregarCatalogo, carregarPontos } from '../motor/carregador'
 import { GRUPOS, ORDEM_GRUPOS, grupoDe } from '../config'
-import type { Catalogo, Estrutura, Grupo, Selecao } from '../tipos'
+import type { Catalogo, Estrutura, Grupo, Ponto, Selecao } from '../tipos'
 import { REGIOES, caixasDaRegiao, regiaoPorId, type Lateralidade } from '../dados/regioes'
 import { LADO, nomeCompleto, nomeDe } from '../dados/nomes'
 import { fichaDe, carregarVinculos, type Vinculo } from '../dados/fichas'
@@ -18,6 +18,10 @@ import { usarConta } from '../../conta/ContextoConta'
 import { usarPremium } from '../../conta/premium'
 import { ConviteAtlas, type TipoConvite } from './ConviteAtlas'
 import { GuiaControles } from './GuiaControles'
+import { FichaAnatomica, FixacoesDoOsso } from './FichaAnatomica'
+import { carregarAnatomia, idNoLado, registroDaEstrutura, type IndiceAnatomico } from '../dados/anatomia'
+import { fixadosNoOsso, idsDoRegistro, indexarPontos, marcosNoOsso, montarRelacoes, relacionadosDe, type Mundo, type Relacao } from '../dados/relacoes'
+import { faixaPorAltura } from '../dados/faixas'
 import { corDaArea } from '../../dados/coresAreas'
 import '../../estilos/paginas/Atlas3D.css'
 
@@ -60,6 +64,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const nivel: 'visitante' | 'conta' | 'assinante' = !sessao ? 'visitante' : premium ? 'assinante' : 'conta'
   const [convite, definirConvite] = useState<TipoConvite | null>(null)
   const [guia, definirGuia] = useState(false)
+  // banco anatômico e pontos do modelo: baixados uma vez, quando o atlas abre
+  const [indice, definirIndice] = useState<IndiceAnatomico | null>(null)
+  const [pontos, definirPontos] = useState<Map<string, Ponto> | null>(null)
+  const [ativas, definirAtivas] = useState<Set<Relacao>>(new Set())
+  const [contexto, definirContexto] = useState(false)
+  const [pontosOsso, definirPontosOsso] = useState(false)
   const toque = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   const previa = useRef<ReturnType<typeof setTimeout> | null>(null)
   useEffect(() => () => { if (previa.current) clearTimeout(previa.current) }, [])
@@ -90,13 +100,20 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       if (r) m.definirRegiao(caixasDaRegiao(r, ladoInicial))
       m.posicionarImediato(r ? m.caixaDe([]).union(caixasDaRegiao(r, ladoInicial).reduce((a, b) => a.union(b))) : undefined)
       const e = consulta.get('e')
-      if (e && cat.estruturas.some((x) => x.id === e)) {
+      const alvo = e ? cat.estruturas.find((x) => x.id === e) : undefined
+      if (alvo) {
+        // link direto para um músculo: liga a camada (grátis); camadas de assinante seguem as regras do plano
+        const g = grupoDe(alvo)
+        if (!iniciais.includes(g) && GRATIS.has(g)) { definirLigados((atual) => new Set([...atual, g])); await m.ligarGrupo(g, true) }
+        if (!vivo) return
         const f = (consulta.get('f') as Selecao['faixa']) || undefined
-        m.selecionar({ id: e, faixa: f })
-        m.focar([e], f)
+        m.selecionar({ id: alvo.id, faixa: f })
+        m.focar([alvo.id], f)
       }
     }).catch(() => vivo && definirErro('Não foi possível abrir o atlas. Verifique a conexão e tente de novo.'))
     carregarVinculos().then((v) => vivo && definirVinculos(v)).catch(() => {})
+    carregarAnatomia().then((a) => vivo && definirIndice(a)).catch(() => {})
+    carregarPontos().then((p) => vivo && definirPontos(indexarPontos(p))).catch(() => {})
     return () => { vivo = false; m.descartar(); motorRef.current = null }
     // monta uma vez; o resto do estado conversa com o motor pelos efeitos abaixo
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -222,10 +239,74 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     return () => window.removeEventListener('keydown', tecla)
   })
 
+  // ---------- relações anatômicas no modelo ----------
+  const registro = estrutura && indice ? registroDaEstrutura(indice, estrutura) : undefined
+  const mundo: Mundo | null = motor ? { existe: (id) => motor.existe(id), estrutura: (id) => motor.estrutura(id), grupoDe: (id) => motor.grupoDe(id) } : null
+  // cada estrutura abre com a origem e a inserção acesas (quando existem); o resto a pessoa liga
+  useEffect(() => {
+    definirAtivas(new Set(registro && registro.tipo !== 'nervo' ? (['origem', 'insercao'] as const).filter((x) => registro[x]) : []))
+    definirPontosOsso(false)
+    if (contexto) { motorRef.current?.isolar(null); definirIsolado(false) }
+    definirContexto(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [estrutura?.id, registro?.chave])
+  const montagem = useMemo(() => (registro && indice && pontos && mundo && estrutura
+    ? montarRelacoes(registro, indice, estrutura.s, ativas, pontos, mundo) : null
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  ), [registro, indice, pontos, estrutura?.id, ativas, motor])
+  const fixados = useMemo(() => (estrutura && indice && pontos && grupoDe(estrutura) === 'osso'
+    ? fixadosNoOsso(indice, estrutura, selecao?.faixa, pontos, (z) => faixaPorAltura(estrutura, z)) : []
+  ), [estrutura, indice, pontos, selecao?.faixa])
+  useEffect(() => {
+    const m = motorRef.current
+    if (!m) return
+    if (montagem) m.mostrarRelacoes(montagem.destaques, montagem.marcos, montagem.linhas)
+    else if (fixados.length && pontosOsso && estrutura && pontos) m.mostrarRelacoes([], marcosNoOsso(fixados, estrutura, pontos))
+    else m.mostrarRelacoes([])
+    // as camadas recém-carregadas entram no desenho: depende de ligados e do progresso
+  }, [montagem, fixados, pontosOsso, estrutura, pontos, ligados, progresso])
+
+  const alternarRelacao = (x: Relacao) => {
+    const novo = new Set(ativas)
+    if (novo.has(x)) novo.delete(x); else novo.add(x)
+    definirAtivas(novo)
+    if (!novo.has(x) || !registro || !indice || !pontos || !mundo || !estrutura) return
+    // liga a camada que a relação precisa (nervos, por exemplo), com as regras do plano
+    const precisa = montarRelacoes(registro, indice, estrutura.s, new Set([x]), pontos, mundo).precisa
+    for (const g of precisa) if (!ligados.has(g)) mudarGrupo(g, true)
+  }
+  const alternarContexto = () => {
+    const m = motorRef.current
+    if (!m || !registro || !indice || !mundo || !estrutura || !selecao) return
+    if (contexto) { m.isolar(null); definirIsolado(false); definirContexto(false); return }
+    const ids = new Set<string>([selecao.id, ...relacionadosDe(registro, indice).flatMap((x) => idsDoRegistro(x, estrutura.s, mundo))])
+    for (const d of montagem?.destaques ?? []) ids.add(d.id)
+    for (const k of ['origem', 'insercao'] as const) for (const mk of registro[k]?.m ?? []) { const id = idNoLado(mk.split(':')[0], estrutura.s, mundo.existe); if (id) ids.add(id) }
+    m.isolar([...ids])
+    definirIsolado(true)
+    definirContexto(true)
+    m.focar([...ids].filter((id) => m.estaVisivel(id)))
+  }
+  const irParaChave = (chave: string) => {
+    const r = indice?.porChave.get(chave)
+    const m = motorRef.current
+    if (!r?.ids.length || !m) return
+    const id = idNoLado(r.ids[0], estrutura?.s ?? 'd', (x) => m.existe(x))
+    const e = id ? m.estrutura(id) : undefined
+    if (e) irPara(e)
+  }
+  const anatomia = registro && indice ? (
+    <FichaAnatomica registro={registro} indice={indice} ativas={ativas} semGeometria={montagem?.semGeometria ?? []} contexto={contexto}
+      aoAlternar={alternarRelacao} aoContexto={alternarContexto} aoIr={irParaChave} />
+  ) : undefined
+  const fixacoes = fixados.length && indice ? (
+    <FixacoesDoOsso itens={fixados} indice={indice} pontos={pontosOsso} aoPontos={() => definirPontosOsso((v) => !v)} aoIr={irParaChave} />
+  ) : undefined
+
   const painelDireito = estrutura ? (
     questoes
       ? <PainelQuestoes titulo={questoes.titulo} ids={questoes.ids} aoVoltar={() => definirQuestoes(null)} />
-      : <PainelFicha estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
+      : <PainelFicha key={`${estrutura.id}|${selecao?.faixa ?? ''}`} anatomia={anatomia} fixacoes={fixacoes} estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
           isolada={isolado} aoFocar={focarSelecao} aoIsolar={isolarSelecao} aoOcultar={ocultarSelecao} aoFavoritar={alternarFavorito}
           aoFechar={() => motorRef.current?.selecionar(null)} aoResponder={(titulo, ids) => { definirQuestoes({ titulo, ids }); definirAltura('inteira') }} />
   ) : null

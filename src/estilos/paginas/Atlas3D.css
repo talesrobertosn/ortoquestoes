@@ -318,3 +318,44 @@ body:has(.atlas) { overflow: hidden; }
 .atlas--estreita .gc__palco { padding: 0; }
 .atlas--estreita .gc__texto { min-height: 3em; }
 .atlas--estreita .gc__cartao { gap: var(--e-1, 0.3rem); padding: var(--e-3); }
+
+/* Ficha anatômica (25/10/2026): quadro curto com o essencial, cada relação com a cor que ela ganha no modelo. */
+.fa { display: grid; gap: var(--e-3); }
+.fa-revisao { display: flex; gap: 0.45rem; align-items: flex-start; margin: 0; padding: 0.55rem 0.7rem; border: 1px dashed color-mix(in srgb, #b7791f 55%, var(--traco)); border-radius: 6px; background: color-mix(in srgb, #f6c35c 14%, var(--superficie)); font-size: var(--meta); line-height: 1.45; }
+.fa-revisao svg { flex: none; margin-top: 0.1rem; color: #b7791f; }
+.fa-controles { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.fa-controles button { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.65rem; border: 2px solid var(--px-borda); border-radius: 999px; background: var(--superficie); color: var(--texto-2); font: inherit; font-size: var(--meta); font-weight: 700; cursor: pointer; box-shadow: 2px 2px 0 var(--px-sombra); }
+.fa-controles button i { width: 0.7rem; height: 0.7rem; border-radius: 50%; border: 2px solid var(--fa-cor, var(--verdete)); background: transparent; }
+.fa-controles button[aria-pressed="true"] { color: var(--texto); border-color: var(--fa-cor, var(--verdete)); background: color-mix(in srgb, var(--fa-cor, var(--verdete)) 12%, var(--superficie)); }
+.fa-controles button[aria-pressed="true"] i { background: var(--fa-cor, var(--verdete)); }
+.fa-controles__contexto { margin-left: auto; }
+.fa-nota { margin: -0.3rem 0 0; color: var(--texto-2); font-size: var(--meta); line-height: 1.45; }
+.fa-quadro { display: grid; gap: 0; margin: 0; border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); box-shadow: 4px 4px 0 var(--px-sombra); overflow: hidden; }
+.fa-linha { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr); gap: 0.6rem; padding: 0.55rem 0.75rem; border-top: 1px solid var(--traco); }
+.fa-linha:first-child { border-top: 0; }
+.fa-linha dt { display: flex; align-items: center; gap: 0.35rem; align-self: start; margin: 0; color: var(--texto-2); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.6; }
+.fa-linha dt i { flex: none; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--fa-cor); }
+.fa-linha dd { margin: 0; line-height: 1.5; }
+.fa-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.fa-chip { display: inline-flex; align-items: baseline; gap: 0.3rem; padding: 0.2rem 0.6rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie-2); color: var(--texto); font: inherit; font-size: var(--meta); font-weight: 650; cursor: pointer; }
+.fa-chip small { color: var(--texto-2); font-weight: 600; }
+.fa-chip:hover:not(:disabled) { border-color: var(--verdete); color: var(--verdete); }
+.fa-chip:disabled { cursor: default; opacity: 0.75; }
+.fa-chip--nervo { border-color: color-mix(in srgb, #d9a406 45%, var(--traco)); }
+.fa-chip--musculo { border-color: color-mix(in srgb, #c0533f 40%, var(--traco)); }
+.fa-chip--ligamento { border-color: color-mix(in srgb, #7a8ea8 45%, var(--traco)); }
+.fa-clinica { padding: 0.65rem 0.8rem; border-left: 4px solid var(--verdete); border-radius: 0 6px 6px 0; background: var(--verdete-veu); }
+.fa-clinica h3 { display: flex; align-items: center; gap: 0.35rem; margin: 0 0 0.3rem; color: var(--verdete); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.fa-clinica p { margin: 0; line-height: 1.55; }
+.fa-secao { border-bottom: 1px solid var(--traco); padding-bottom: 0.5rem; }
+.fa-secao summary { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; padding: 0.3rem 0; font-weight: 700; list-style: none; }
+.fa-secao summary::-webkit-details-marker { display: none; }
+.fa-secao summary::before { content: "▸"; color: var(--verdete); transition: transform var(--duracao-rapida); }
+.fa-secao[open] summary::before { transform: rotate(90deg); }
+.fa-secao summary small { color: var(--texto-2); font-weight: 600; }
+.fa-secao p { margin: 0.3rem 0 0.4rem; line-height: 1.55; }
+.fa-grupo h3 { display: flex; align-items: center; gap: 0.4rem; margin: 0 0 0.45rem; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texto-2); }
+.fa-grupo h3 i { width: 0.65rem; height: 0.65rem; border-radius: 50%; background: var(--fa-cor); }
+.fa-grupo h3 small { font-weight: 600; }
+.fa-fonte { margin: 0; color: var(--texto-2); font-size: 0.72rem; line-height: 1.45; }
+@media (max-width: 30rem) { .fa-linha { grid-template-columns: 1fr; gap: 0.15rem; } .fa-controles__contexto { margin-left: 0; } }

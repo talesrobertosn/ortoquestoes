@@ -1,0 +1,168 @@
+{
+  "lote": "13-ligamentos-punho",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [230, 231, 232, 233, 234, 235, 236],
+  "registros": [
+    {
+      "chave": "lig-radioescafocapitato", "tipo": "ligamento", "nome": "Ligamento radioescafocapitato", "en": "Radioscaphocapitate ligament",
+      "ids": ["radioscaphocapitate_ligament", "radiocapitate_ligament"], "regiao": "punho-mao", "articulacao": "Radiocarpal (extrínseco palmar superficial)",
+      "origem": { "t": "Processo estiloide do rádio.", "m": ["radius:Radial styloid process"] },
+      "insercao": { "t": "Escafoide e corpo do capitato.", "o": ["scaphoid_bone", "capitate_bone"] },
+      "funcao": "Estabiliza o polo proximal do escafoide e forma o fulcro em torno do qual ele gira. Junto com o ulnocapitato, forma a margem distal do espaço de Poirier.",
+      "ver": ["lig-ulnocapitato"],
+      "fonte": [{ "l": "netter-ao2", "p": [231] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-ulnocapitato", "tipo": "ligamento", "nome": "Ligamento ulnocapitato", "en": "Ulnocapitate ligament",
+      "ids": ["ulnocapitate_ligament"], "regiao": "punho-mao", "articulacao": "Radiocarpal (extrínseco palmar superficial)",
+      "origem": { "t": "Ulna e fibrocartilagem triangular.", "m": ["ulna:Head of ulna"] },
+      "insercao": { "t": "Capitato.", "o": ["capitate_bone"] },
+      "funcao": "Junta-se ao radioescafocapitato e forma a margem distal do espaço de Poirier. Com o ulnossemilunar e o ulnopiramidal, forma o complexo ligamentar ulnocarpal.",
+      "clinica": "O espaço de Poirier é o ponto fraco palmar por onde ocorrem as luxações perissemilunares.",
+      "fonte": [{ "l": "netter-ao2", "p": [231, 232] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-radiossemilunar", "tipo": "ligamento", "nome": "Ligamentos radiossemilunares longo e curto", "en": "Radiolunate ligaments",
+      "ids": ["radiate_carpal_ligament"], "regiao": "punho-mao", "articulacao": "Radiocarpal (extrínseco palmar)",
+      "funcao": "O longo (superficial) vai da face palmar do rádio ao semilunar e se junta ao ligamento semilunar-piramidal palmar; forma a margem proximal do espaço de Poirier. O curto (profundo) é resistente e vertical e impede a luxação na hiperextensão.",
+      "fonte": [{ "l": "netter-ao2", "p": [231, 232] }], "status": "pendente",
+      "notas": "O modelo 3D não separa esses dois ligamentos; o id ligado ('radiate_carpal_ligament', ligamento radiado do carpo) é a melhor aproximação disponível e precisa de conferência visual antes de virar 'verificado'."
+    },
+    {
+      "chave": "lig-ulnossemilunar", "tipo": "ligamento", "nome": "Ligamento ulnossemilunar", "en": "Ulnolunate ligament",
+      "ids": ["ulnolunate_ligament"], "regiao": "punho-mao", "articulacao": "Radiocarpal (extrínseco palmar profundo)",
+      "origem": { "t": "Fibrocartilagem triangular." },
+      "insercao": { "t": "Semilunar.", "o": ["lunate_bone"] },
+      "funcao": "Com o ulnopiramidal, junta-se ao ulnocapitato e ajuda a estabilizar a radiulnar distal.",
+      "clinica": "Alguns autores o consideram parte do complexo fibrocartilagíneo triangular (TFCC).",
+      "fonte": [{ "l": "netter-ao2", "p": [231, 236] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-ulnopiramidal", "tipo": "ligamento", "nome": "Ligamento ulnopiramidal", "en": "Ulnotriquetral ligament",
+      "ids": ["ulnotriquetral_ligament"], "regiao": "punho-mao", "articulacao": "Radiocarpal (extrínseco palmar profundo)",
+      "origem": { "t": "Fibrocartilagem triangular." },
+      "insercao": { "t": "Piramidal.", "o": ["triquetrum_bone"] },
+      "funcao": "Com o ulnossemilunar, ajuda a estabilizar a radiulnar distal.",
+      "clinica": "Alguns autores o consideram parte do TFCC.",
+      "fonte": [{ "l": "netter-ao2", "p": [232, 236] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-radiocarpal-dorsal", "tipo": "ligamento", "nome": "Ligamento radiocarpal dorsal", "en": "Dorsal radiocarpal ligament",
+      "ids": ["dorsal_radiocarpal_ligament"], "regiao": "punho-mao", "articulacao": "Radiocarpal (extrínseco dorsal)",
+      "origem": { "t": "Rádio (face dorsal).", "m": ["radius:Dorsal radial tubercle"] },
+      "insercao": { "t": "Semilunar e piramidal.", "o": ["lunate_bone", "triquetrum_bone"] },
+      "funcao": "Principal estabilizador dorsal do punho (também chamado radiossemilunar-piramidal). Os feixes superficial e profundo costumam ser indistinguíveis.",
+      "clinica": "A ruptura do ligamento semilunar-piramidal com lesão deste ligamento leva à instabilidade VISI.",
+      "fonte": [{ "l": "netter-ao2", "p": [232, 233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-escafocapitato", "tipo": "ligamento", "nome": "Ligamento escafocapitato", "en": "Scaphocapitate ligament",
+      "ids": ["scaphocapitate_ligament"], "regiao": "punho-mao", "articulacao": "Mediocarpal (intrínseco palmar)",
+      "origem": { "t": "Escafoide.", "o": ["scaphoid_bone"] },
+      "insercao": { "t": "Capitato.", "o": ["capitate_bone"] },
+      "funcao": "Estabiliza a parte distal do escafoide; é a parte radial do ligamento arqueado.",
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-piramidal-hamato-capitato", "tipo": "ligamento", "nome": "Ligamento piramidal-hamato-capitato", "en": "Triquetrohamate and triquetrocapitate ligaments",
+      "ids": ["triquetrohamate_ligament", "triquetrocapitate_ligament"], "regiao": "punho-mao", "articulacao": "Mediocarpal (intrínseco palmar)",
+      "origem": { "t": "Piramidal.", "o": ["triquetrum_bone"] },
+      "insercao": { "t": "Hamato e capitato.", "o": ["hamate_bone", "capitate_bone"] },
+      "funcao": "Parte ulnar (medial) do ligamento arqueado; curto e resistente, muitas vezes confluente com o ulnocapitato.",
+      "fonte": [{ "l": "netter-ao2", "p": [232, 233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-intercarpal-dorsal", "tipo": "ligamento", "nome": "Ligamento intercarpal dorsal", "en": "Dorsal intercarpal ligament",
+      "ids": ["dorsal_intercarpal_ligaments"], "regiao": "punho-mao", "articulacao": "Mediocarpal (intrínseco dorsal)",
+      "origem": { "t": "Piramidal.", "o": ["triquetrum_bone"] },
+      "insercao": { "t": "Trapézio e trapezoide.", "o": ["trapezium_bone", "trapezoid_bone"] },
+      "funcao": "Sustentação dorsal primária da mediocarpal.",
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-escafotrapeziotrapezoidal", "tipo": "ligamento", "nome": "Ligamento escafotrapeziotrapezoidal", "en": "Scaphotrapeziotrapezoidal ligament",
+      "ids": ["scaphotrapeziotrapezoidal_ligament"], "regiao": "punho-mao", "articulacao": "Escafotrapeziotrapezoidal",
+      "origem": { "t": "Escafoide.", "o": ["scaphoid_bone"] },
+      "insercao": { "t": "Trapézio e trapezoide.", "o": ["trapezium_bone", "trapezoid_bone"] },
+      "funcao": "Sustentação lateral (radial) e da articulação escafotrapeziotrapezoidal.",
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-escafossemilunar", "tipo": "ligamento", "nome": "Ligamento escafossemilunar", "en": "Scapholunate interosseous ligament",
+      "ids": ["scapholunate_interosseous_ligament"], "regiao": "punho-mao", "articulacao": "Interóssea da fileira proximal",
+      "origem": { "t": "Escafoide.", "o": ["scaphoid_bone"] },
+      "insercao": { "t": "Semilunar.", "o": ["lunate_bone"] },
+      "funcao": "Em forma de C, com ramos dorsal e palmar e uma parte membranácea; as fibras dorsais são as mais fortes; as palmares são mais frouxas e permitem a rotação do escafoide. O escafoide puxa o semilunar para a flexão.",
+      "clinica": "A ruptura causa instabilidade DISI.",
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-semilunar-piramidal", "tipo": "ligamento", "nome": "Ligamento semilunar-piramidal", "en": "Lunotriquetral interosseous ligament",
+      "ids": ["lunotriquetral_interosseous_ligament", "palmar_lunotriquetral_ligament"], "regiao": "punho-mao", "articulacao": "Interóssea da fileira proximal",
+      "origem": { "t": "Semilunar.", "o": ["lunate_bone"] },
+      "insercao": { "t": "Piramidal.", "o": ["triquetrum_bone"] },
+      "funcao": "As fibras palmares são as mais fortes. O piramidal puxa o semilunar para a extensão, e este ligamento transmite essa força.",
+      "clinica": "A ruptura, com lesão do radiocarpal dorsal, leva à instabilidade VISI.",
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-fileira-distal", "tipo": "ligamento", "nome": "Ligamentos interósseos da fileira distal", "en": "Distal row interosseous ligaments",
+      "ids": ["trapeziotrapezoidal_interosseous_ligament", "trapezoideocapitate_interosseous_ligament", "capitohamate_interosseous_ligament", "palmar_capitohamate_ligament", "palmar_trapezoideocapitate_ligament"], "regiao": "punho-mao", "articulacao": "Interósseas da fileira distal",
+      "funcao": "Trapeziotrapezoidal, trapezoidecapitato e capitato-hamato, cada um com partes palmar, dorsal e interóssea. São mais fortes que os da fileira proximal e fazem a fileira distal se mover como uma unidade; o capitato-hamato é o mais forte.",
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-piso-hamato", "tipo": "ligamento", "nome": "Ligamento piso-hamato", "en": "Pisohamate ligament",
+      "ids": ["pisohamate_ligament"], "regiao": "punho-mao", "articulacao": "Pisopiramidal",
+      "origem": { "t": "Pisiforme.", "o": ["pisiform_bone"] },
+      "insercao": { "t": "Hâmulo do hamato.", "m": ["hamate_bone:Hook of hamate bone"] },
+      "funcao": "Faz parte do canal de Guyon.",
+      "ver": ["ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [233] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-pisometacarpal", "tipo": "ligamento", "nome": "Ligamento pisometacarpal", "en": "Pisometacarpal ligament",
+      "ids": ["pisometacarpal_ligament"], "regiao": "punho-mao", "articulacao": "Pisopiramidal",
+      "origem": { "t": "Pisiforme.", "o": ["pisiform_bone"] },
+      "insercao": { "t": "Base do 5º metacarpal.", "o": ["fifth_metacarpal_bone"] },
+      "funcao": "Ajuda na flexão feita pelo flexor ulnar do carpo.",
+      "ver": ["flexor-ulnar-do-carpo"],
+      "fonte": [{ "l": "netter-ao2", "p": [233, 234] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-radiulnar-dorsal", "tipo": "ligamento", "nome": "Ligamento radiulnar dorsal", "en": "Dorsal radio-ulnar ligament",
+      "ids": ["dorsal_radio_ulnar_ligament"], "regiao": "punho-mao", "articulacao": "Radiulnar distal (TFCC)",
+      "origem": { "t": "Face dorsal do rádio.", "m": ["radius:Ulnar notch"] },
+      "insercao": { "t": "Fóvea da ulna (ligamentum subcruentum).", "m": ["ulna:Ulnar styloid process"] },
+      "funcao": "Ligamento periférico do TFCC; tenso na pronação e frouxo na supinação.",
+      "fonte": [{ "l": "netter-ao2", "p": [236] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-radiulnar-palmar", "tipo": "ligamento", "nome": "Ligamento radiulnar palmar", "en": "Palmar radio-ulnar ligament",
+      "ids": ["palmar_radio_ulnar_ligament"], "regiao": "punho-mao", "articulacao": "Radiulnar distal (TFCC)",
+      "origem": { "t": "Face palmar do rádio.", "m": ["radius:Ulnar notch"] },
+      "insercao": { "t": "Fóvea da ulna (ligamentum subcruentum).", "m": ["ulna:Ulnar styloid process"] },
+      "funcao": "Ligamento periférico do TFCC; tenso na supinação e frouxo na pronação.",
+      "fonte": [{ "l": "netter-ao2", "p": [236] }], "status": "verificado"
+    },
+    {
+      "chave": "disco-radiulnar-distal", "tipo": "ligamento", "nome": "Disco articular da radiulnar distal (fibrocartilagem triangular)", "en": "Articular disc of distal radio-ulnar joint",
+      "ids": ["articular_disc_of_distal_radio_ulnar_joint"], "regiao": "punho-mao", "articulacao": "Radiulnar distal (TFCC)",
+      "origem": { "t": "Margem da incisura ulnar do rádio.", "m": ["radius:Ulnar notch"] },
+      "insercao": { "t": "Fóvea e base do processo estiloide da ulna.", "m": ["ulna:Ulnar styloid process"] },
+      "funcao": "Disco central do TFCC: resiste à compressão e à tensão; é avascular e sem nervos. O TFCC fica entre a ulna distal e o piramidal e estabiliza a radiulnar distal.",
+      "clinica": "Pode romper por degeneração ou trauma: as lesões periféricas (vascularizadas, 10% a 25% da periferia) podem ser reparadas; as centrais precisam de desbridamento. Num punho com variância ulnar neutra, cerca de 20% da carga axial passa pela ulna.",
+      "ver": ["lig-radiulnar-dorsal", "lig-radiulnar-palmar"],
+      "fonte": [{ "l": "netter-ao2", "p": [236] }], "status": "verificado"
+    },
+    {
+      "chave": "membrana-interossea-do-antebraco", "tipo": "ligamento", "nome": "Membrana interóssea do antebraço", "en": "Interosseous membrane of forearm",
+      "ids": ["interosseous_membrane_of_forearm"], "regiao": "antebraco", "articulacao": "Rádio e ulna",
+      "origem": { "t": "Margem interóssea do rádio.", "m": ["radius:Interosseous border of radius"] },
+      "insercao": { "t": "Margem interóssea da ulna.", "m": ["ulna:Interosseous border of ulna"] },
+      "funcao": "Contribui para a estabilidade da radiulnar distal, junto com o extensor ulnar do carpo e o pronador quadrado.",
+      "relacoes": ["O nervo interósseo anterior desce sobre a face anterior da membrana; o posterior, sobre a face posterior."],
+      "fonte": [{ "l": "netter-ao2", "p": [236, 261, 262] }], "status": "verificado"
+    }
+  ]
+}
