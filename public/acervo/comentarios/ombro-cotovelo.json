@@ -5025,59 +5025,15 @@
   "conferido": false
  },
  "ombro-cotovelo-0429": {
-  "conceito": "No espaço quadrangular, o par que interessa é **nervo axilar e artéria circunflexa posterior do úmero**, alternativa D. Reconhecer apenas o nervo deixa a questão incompleta: duas opções trazem o axilar, mas só uma o combina com o vaso que o acompanha.\n\nO axilar sai do fascículo posterior do plexo, passa de anterior para posterior abaixo do colo anatômico e percorre o espaço junto da circunflexa umeral posterior. Depois retorna para a frente sob o deltoide. Inerva deltoide e redondo menor e participa da sensibilidade na face lateral do braço; esse trajeto conecta a síndrome da pergunta ao exame motor e sensitivo do ombro (Rockwood, 10ª ed., cap. 36, “O nervo axilar” e “De onde vem o sangue”).\n\nA circunflexa posterior também contribui para a vascularização posteromedial da cabeça. Portanto, o espaço não é apenas uma passagem de um nervo: nele se reconhece um feixe neurovascular. Isso não significa que uma compressão nesse local produza obrigatoriamente osteonecrose da cabeça, que recebe uma rede de contribuições.\n\n**Supraescapular é outro trajeto.** Ele atravessa a incisura da escápula, segue sob o supraespinal e contorna a base da espinha pela incisura espinoglenoidal até o infraespinal. Sua relação com vasos supraescapulares é anatomicamente coerente, mas pertence a outra passagem. A semelhança entre nomes de nervos e vasos não substitui a localização.\n\n> **Na prova:** quadrangular: axilar com circunflexa umeral posterior; incisuras da escápula: trajeto do supraescapular.",
-  "correta": "**D: axilar e circunflexa posterior do úmero.** É o feixe que atravessa o espaço quadrangular descrito na fonte. O exame deve considerar a função do deltoide/redondo menor e a sensibilidade lateral do braço.",
   "incorretas": {
-   "A": "**Acerta o nervo e erra o vaso acompanhante.** O axilar atravessa esse espaço com a circunflexa umeral posterior. A artéria braquial profunda não pode substituir o nome do vaso só porque a questão já oferece o nervo correto.",
-   "B": "**Não contém o feixe que percorre o espaço da pergunta.** O ponto anatômico descrito é o contorno do úmero pelo axilar e pela circunflexa posterior. Trocar os dois componentes por toracodorsal e subescapular perde a relação com o colo e o deltoide apresentada na fonte.",
-   "C": "**É um par de outra região da escápula.** O supraescapular acompanha o trajeto das incisuras da escápula e espinoglenoidal, profundo aos músculos supra e infraespinal. Essa localização explica por que um par plausível não corresponde ao espaço quadrangular."
+   "A": "O nervo axilar está certo, mas a artéria braquial profunda passa pelo intervalo triangular, junto com o nervo radial.",
+   "B": "O nervo toracodorsal e a artéria subescapular correm mais fundo na axila, indo para o grande dorsal. Não passam pelo espaço quadrangular.",
+   "C": "O nervo e a artéria supraescapulares passam por entalhes da escápula, na parte de cima e de trás, longe do espaço quadrangular."
   },
-  "referencias": [
-   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Anatomia aplicada e vias de acesso; Irrigação da cabeça, Hertel e osteonecrose.",
-   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
-  ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-36-umero-proximal",
-     "titulo": "Fratura do úmero proximal",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-     "secoes": [
-      "Anatomia aplicada e vias de acesso",
-      "Irrigação da cabeça, Hertel e osteonecrose"
-     ],
-     "blocos": [
-      "anatomia-aplicada-e-vias-de-acesso-f121538c",
-      "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
-     ],
-     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
-     "trechosSha256": "c4f74b5d4e027628c98665a4ddda7a4dbb8c92d028309a5a8214a7f0b19a02f8"
-    },
-    {
-     "resumo": "rockwood10-33-fratura-escapula",
-     "titulo": "Fratura da escápula",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 33 · Scapular Fractures",
-     "secoes": [
-      "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
-     ],
-     "blocos": [
-      "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
-     ],
-     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
-     "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
-    }
-   ],
-   "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
-   "comentarioSha256": "9090126f2889476d7223ca679f36f7d9d906ec5babe6660b21ab72fd8d28cad5"
-  }
+  "conceito": "Atrás do ombro, alguns músculos se cruzam e deixam pequenas passagens por onde nervos e vasos atravessam. Os músculos que formam essas passagens são o **redondo menor** (em cima), o **redondo maior** (logo abaixo), a **cabeça longa do tríceps** (que desce na vertical entre eles) e o **úmero**.\n\nO **espaço quadrangular** tem quatro lados: redondo menor em cima, redondo maior embaixo, cabeça longa do tríceps do lado de dentro e o colo do úmero do lado de fora. Por ele passam só duas estruturas: o **nervo axilar** e a **artéria circunflexa posterior do úmero**. É por ali que o nervo axilar contorna o úmero para chegar ao deltoide.\n\nPara comparar: o **espaço triangular**, do lado de dentro da cabeça longa do tríceps, deixa passar a artéria circunflexa da escápula. E o **intervalo triangular**, abaixo do redondo maior, deixa passar o nervo radial e a artéria braquial profunda.\n\nA **síndrome do espaço quadrangular** é a compressão do nervo axilar e da artéria nesse espaço, típica de atletas que arremessam ou jogam com o braço acima da cabeça. Músculos hipertrofiados ou faixas fibrosas apertam o espaço quando o braço é aberto e rodado para fora. O atleta sente dor mal localizada atrás do ombro, formigamento na parte de fora do braço e, com o tempo, pode ter atrofia do deltoide e do redondo menor.\n\nO diagnóstico é difícil. Ajudam a ressonância (que pode mostrar atrofia do redondo menor), a eletroneuromiografia e a arteriografia feita com o braço aberto e rodado para fora, posição que mostra a artéria sendo fechada.",
+  "correta": "Axilar e a artéria circunflexa posterior do úmero. São as duas únicas estruturas que passam pelo espaço quadrangular.",
+  "geradoEm": "2026-10-03",
+  "conferido": false
  },
  "ombro-cotovelo-0430": {
   "incorretas": {
