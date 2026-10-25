@@ -699,15 +699,62 @@
   "conferido": false
  },
  "ombro-cotovelo-0045": {
+  "conceito": "No perfil da escápula, a cabeça umeral normal fica **centrada no Y**, na projeção da glenoide. O Y é a referência escapular; a pergunta não pede para onde a cabeça pode luxar, mas onde ela deve estar quando a articulação está alinhada.\n\nA avaliação do trauma precisa responder a duas perguntas diferentes: como o osso quebrou e se a cabeça continua articulada com a glenoide. Uma radiografia isolada pode mostrar a fratura e esconder a luxação. A série do capítulo inclui AP do ombro, AP verdadeira da escápula ou Grashey, perfil em Y e axilar; a legenda independente da figura 36-3 explicita a cabeça centrada na glenoide (Rockwood, 10ª ed., cap. 36, “Radiografias e tomografia”).\n\n**As projeções se complementam.** O Grashey abre o espaço glenoumeral, o perfil fornece uma direção perpendicular e a axilar é destacada para verificar a relação cabeça–glenoide e os tubérculos. Se a dor impede a posição axilar usual, o capítulo apresenta as adaptações de Velpeau e Codman, sem exigir que o paciente force a abdução dolorosa.\n\nO perfil em Y também serve para angulação e translação de fraturas da escápula, mas essas medidas da borda lateral são outro problema. Uma cabeça que parece desviada deve motivar confirmação da congruência em mais de um plano; não se deve aceitar “anterior” ou “posterior” como posição normal só porque um desses deslocamentos é conhecido nas luxações.\n\n> **Na prova:** cabeça central no Y é a relação normal; a série completa evita perder uma luxação.",
+  "correta": "**D: central.** A cabeça se projeta centrada na glenoide, na referência do Y escapular. Essa é a posição normal pedida, e deve ser confirmada com as demais incidências quando houver dúvida.",
   "incorretas": {
-   "A": "**Posição de luxação anterior.** Cabeça à frente do centro do Y, para o lado do coracoide, é o achado da luxação anterior, não a posição normal.",
-   "B": "**Posição de luxação posterior.** Cabeça atrás do centro, para o lado do acrômio, indica luxação posterior, o diagnóstico que essa incidência mais ajuda a não perder.",
-   "C": "**Luxação inferior.** Cabeça abaixo da glenoide corresponde à luxatio erecta, rara e evidente pelo braço travado em abdução."
+   "A": "**Anterior é uma direção de deslocamento, não a referência normal.** O enunciado não descreve uma cabeça luxada para frente. Aceitar esse posicionamento como normal confundiria a localização de uma lesão com a congruência que o exame precisa verificar.",
+   "B": "**Posterior também descreve desvio em relação ao centro.** A série de trauma existe justamente para evitar que uma luxação passe despercebida numa projeção isolada. A posição esperada no perfil normal continua sendo central.",
+   "C": "**Inferior abandona a referência da glenoide.** A cabeça não deve ficar abaixo do centro do Y como relação normal. No trauma, um aparente deslocamento inferior precisa de avaliação do alinhamento, em vez de ser tomado como padrão anatômico."
   },
-  "conceito": "**Como a incidência é feita.** O **perfil da escápula**, também chamado incidência em **Y** ou transescapular, é obtido com o raio paralelo ao corpo da escápula, com o paciente girado cerca de 40 graus. Não exige mover o braço, o que a torna útil no ombro doloroso do trauma.\n\n**A letra Y.** Na imagem, o **corpo da escápula** forma a haste vertical do Y; o **processo coracoide** forma o ramo **anterior**; e a **espinha com o acrômio** forma o ramo **posterior**. O ponto de encontro dos três braços corresponde à **glenoide**, e a cabeça do úmero normal fica **centrada** sobre esse ponto.\n\n**Como ler a luxação.** Cabeça deslocada para o lado do coracoide, à frente do centro do Y, indica luxação **anterior**, geralmente subcoracoide. Cabeça deslocada para o lado do acrômio, atrás do centro, indica luxação **posterior**. Essa é a grande utilidade da incidência: a luxação posterior é a mais perdida da ortopedia, porque no AP simples a cabeça pode parecer quase no lugar. A luxação **inferior** (luxatio erecta), rara, é reconhecida pelo braço travado em abdução acima da cabeça.\n\n**A série trauma do ombro.** O perfil escapular faz parte da série básica com o **AP verdadeiro** (Grashey, inclinado cerca de 30 a 40 graus para ficar paralelo à glenoide, mostrando o espaço articular aberto) e o **perfil axilar**, o mais sensível para deslocamentos anteroposteriores e para fraturas da borda da glenoide. Quando a dor impede a abdução para o axilar, usa-se a incidência de **Velpeau**, com o paciente inclinado para trás sobre o chassi, sem mover o braço.\n\n**Na prova:** no perfil da escápula, a cabeça normal fica **central**, no encontro do Y; anterior ao centro é luxação anterior, posterior é luxação posterior.",
-  "correta": "**Central.** No ombro normal, a cabeça do úmero se projeta sobre o ponto de convergência do Y, que corresponde à glenoide. Qualquer desvio desse centro indica luxação.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Radiografias e tomografia.",
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Epidemiologia, mecanismo, lesões associadas e imagem."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Radiografias e tomografia"
+     ],
+     "blocos": [
+      "radiografias-e-tomografia-b85e69ff",
+      "radiografias-e-tomografia-413850ca",
+      "radiografias-e-tomografia-190db996",
+      "radiografias-e-tomografia-d315dddb",
+      "radiografias-e-tomografia-cb865953",
+      "radiografias-e-tomografia-2edd0b47"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "690c20ceec53a2c470882ff1fbb2a5b2f7de9ae1f7757b5d6844090f0ffc2c43"
+    },
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Epidemiologia, mecanismo, lesões associadas e imagem"
+     ],
+     "blocos": [
+      "epidemiologia-mecanismo-lesoes-associadas-e-imag-b84994ab"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "2ff892dbb0fc87f6cb9d2f243b1e0aca238441776e193805adfd06a64d17416f"
+    }
+   ],
+   "questaoSha256": "6a24db4d00f918c16da36b433ad6b880c80dcd59fd28392f680d185bcd0333c7",
+   "comentarioSha256": "1cac1b2b7934eedac0ca4601ea25daebaa1e10ddc3e6876f3c1b565173a6ea98"
+  }
  },
  "ombro-cotovelo-0046": {
   "incorretas": {
@@ -4978,15 +5025,59 @@
   "conferido": false
  },
  "ombro-cotovelo-0429": {
+  "conceito": "No espaço quadrangular, o par que interessa é **nervo axilar e artéria circunflexa posterior do úmero**, alternativa D. Reconhecer apenas o nervo deixa a questão incompleta: duas opções trazem o axilar, mas só uma o combina com o vaso que o acompanha.\n\nO axilar sai do fascículo posterior do plexo, passa de anterior para posterior abaixo do colo anatômico e percorre o espaço junto da circunflexa umeral posterior. Depois retorna para a frente sob o deltoide. Inerva deltoide e redondo menor e participa da sensibilidade na face lateral do braço; esse trajeto conecta a síndrome da pergunta ao exame motor e sensitivo do ombro (Rockwood, 10ª ed., cap. 36, “O nervo axilar” e “De onde vem o sangue”).\n\nA circunflexa posterior também contribui para a vascularização posteromedial da cabeça. Portanto, o espaço não é apenas uma passagem de um nervo: nele se reconhece um feixe neurovascular. Isso não significa que uma compressão nesse local produza obrigatoriamente osteonecrose da cabeça, que recebe uma rede de contribuições.\n\n**Supraescapular é outro trajeto.** Ele atravessa a incisura da escápula, segue sob o supraespinal e contorna a base da espinha pela incisura espinoglenoidal até o infraespinal. Sua relação com vasos supraescapulares é anatomicamente coerente, mas pertence a outra passagem. A semelhança entre nomes de nervos e vasos não substitui a localização.\n\n> **Na prova:** quadrangular: axilar com circunflexa umeral posterior; incisuras da escápula: trajeto do supraescapular.",
+  "correta": "**D: axilar e circunflexa posterior do úmero.** É o feixe que atravessa o espaço quadrangular descrito na fonte. O exame deve considerar a função do deltoide/redondo menor e a sensibilidade lateral do braço.",
   "incorretas": {
-   "A": "O nervo axilar está certo, mas a artéria braquial profunda passa pelo intervalo triangular, junto com o nervo radial.",
-   "B": "O nervo toracodorsal e a artéria subescapular correm mais fundo na axila, indo para o grande dorsal. Não passam pelo espaço quadrangular.",
-   "C": "O nervo e a artéria supraescapulares passam por entalhes da escápula, na parte de cima e de trás, longe do espaço quadrangular."
+   "A": "**Acerta o nervo e erra o vaso acompanhante.** O axilar atravessa esse espaço com a circunflexa umeral posterior. A artéria braquial profunda não pode substituir o nome do vaso só porque a questão já oferece o nervo correto.",
+   "B": "**Não contém o feixe que percorre o espaço da pergunta.** O ponto anatômico descrito é o contorno do úmero pelo axilar e pela circunflexa posterior. Trocar os dois componentes por toracodorsal e subescapular perde a relação com o colo e o deltoide apresentada na fonte.",
+   "C": "**É um par de outra região da escápula.** O supraescapular acompanha o trajeto das incisuras da escápula e espinoglenoidal, profundo aos músculos supra e infraespinal. Essa localização explica por que um par plausível não corresponde ao espaço quadrangular."
   },
-  "conceito": "Atrás do ombro, alguns músculos se cruzam e deixam pequenas passagens por onde nervos e vasos atravessam. Os músculos que formam essas passagens são o **redondo menor** (em cima), o **redondo maior** (logo abaixo), a **cabeça longa do tríceps** (que desce na vertical entre eles) e o **úmero**.\n\nO **espaço quadrangular** tem quatro lados: redondo menor em cima, redondo maior embaixo, cabeça longa do tríceps do lado de dentro e o colo do úmero do lado de fora. Por ele passam só duas estruturas: o **nervo axilar** e a **artéria circunflexa posterior do úmero**. É por ali que o nervo axilar contorna o úmero para chegar ao deltoide.\n\nPara comparar: o **espaço triangular**, do lado de dentro da cabeça longa do tríceps, deixa passar a artéria circunflexa da escápula. E o **intervalo triangular**, abaixo do redondo maior, deixa passar o nervo radial e a artéria braquial profunda.\n\nA **síndrome do espaço quadrangular** é a compressão do nervo axilar e da artéria nesse espaço, típica de atletas que arremessam ou jogam com o braço acima da cabeça. Músculos hipertrofiados ou faixas fibrosas apertam o espaço quando o braço é aberto e rodado para fora. O atleta sente dor mal localizada atrás do ombro, formigamento na parte de fora do braço e, com o tempo, pode ter atrofia do deltoide e do redondo menor.\n\nO diagnóstico é difícil. Ajudam a ressonância (que pode mostrar atrofia do redondo menor), a eletroneuromiografia e a arteriografia feita com o braço aberto e rodado para fora, posição que mostra a artéria sendo fechada.",
-  "correta": "Axilar e a artéria circunflexa posterior do úmero. São as duas únicas estruturas que passam pelo espaço quadrangular.",
-  "geradoEm": "2026-10-03",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Anatomia aplicada e vias de acesso; Irrigação da cabeça, Hertel e osteonecrose.",
+   "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Anatomia aplicada e vias de acesso",
+      "Irrigação da cabeça, Hertel e osteonecrose"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-vias-de-acesso-f121538c",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "c4f74b5d4e027628c98665a4ddda7a4dbb8c92d028309a5a8214a7f0b19a02f8"
+    },
+    {
+     "resumo": "rockwood10-33-fratura-escapula",
+     "titulo": "Fratura da escápula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 33 · Scapular Fractures",
+     "secoes": [
+      "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+     ],
+     "blocos": [
+      "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+     ],
+     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
+    }
+   ],
+   "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
+   "comentarioSha256": "9090126f2889476d7223ca679f36f7d9d906ec5babe6660b21ab72fd8d28cad5"
+  }
  },
  "ombro-cotovelo-0430": {
   "incorretas": {
@@ -6665,21 +6756,53 @@
   "conferido": false
  },
  "ombro-cotovelo-0535": {
+  "conceito": "A paciente tem 65 anos, osteoporose e uma fratura em quatro partes: cabeça, diáfise e os dois tubérculos perderam suas relações habituais. **D, artroplastia parcial, é o gabarito oficial**, mas o perfil descrito favorece a **reversa no algoritmo do resumo**. É preciso separar a resposta da prova da escolha discutida pela fonte.\n\nA hemiartroplastia substitui a cabeça e depende de reconstruir os tubérculos na altura e orientação adequadas. Eles carregam as inserções do manguito; se não consolidam, consolidam desviados ou reabsorvem, a prótese pode aliviar dor e ainda deixar o braço com pouca função. O osso osteoporótico e tubérculos pequenos ou cominutos tornam essa etapa menos previsível (Rockwood, 10ª ed., cap. 36, “Artroplastia: hemiartroplastia e reversa”).\n\nA reversa fornece um fulcro estável para o deltoide e depende menos da consolidação dos tubérculos para recuperar elevação. A consolidação do tubérculo maior continua valiosa, sobretudo para rotação externa; “depende menos” não significa que reconstruir o manguito e seus fragmentos seja irrelevante. O capítulo favorece reversa no paciente mais idoso, na mulher, na osteopenia e nos tubérculos cominutos, e hemiartroplastia no mais jovem, ativo e com osso e fragmentos melhores.\n\n**Quatro partes não é uma ordem automática de operar.** Estado geral, demanda, condição anestésica, padrão real e possibilidade de reconstrução importam. O ProFHER não provou vantagem geral da cirurgia nas fraturas selecionadas do colo cirúrgico, mas excluiu situações graves e não resolve sozinho esta comparação entre próteses. A ausência de head-split não elimina a discussão de artroplastia quando o osso e os tubérculos tornam a fixação pouco confiável.\n\n> **Na prova:** D oficial. Para discutir conduta, reconheça por que o capítulo favorece reversa nesse perfil, sem transformar idade isolada em indicação.",
+  "correta": "**D: artroplastia parcial do ombro.** É a resposta oficial preservada. A hemiartroplastia pode ser usada em fraturas complexas, mas sua função depende dos tubérculos; a fonte não a apresenta como preferência para toda paciente osteoporótica mais idosa.",
   "incorretas": {
-   "A": "**Tipoia.** Pode ser apropriada em alguns pacientes ou padrões de fratura, sobretudo conforme demanda e risco cirúrgico; o enunciado, porém, descreve uma fratura em quatro partes que a banca tratou como candidata a artroplastia.",
-   "B": "**Redução fechada e órtese.** Não oferecem controle confiável dos quatro fragmentos de uma fratura proximal complexa como estratégia definitiva habitual.",
-   "C": "**Placa e parafusos.** Seriam considerados se a fratura fosse reconstruível; a osteoporose e a fragmentação aumentam o risco de falha da fixação, mas não constituem contraindicação absoluta.",
-   "E": "**Artroplastia reversa.** É uma alternativa tecnicamente defensável e apoiada por ensaios em pacientes mais velhos com fraturas complexas; não foi a letra registrada como correta nesta prova."
+   "A": "**Imobilização não é necessariamente errada para todo idoso, mas não é a escolha da banca neste padrão.** Fragilidade clínica pode favorecer tratamento conservador. Sem essa contraindicação descrita, a decisão precisa enfrentar a fratura multifragmentada e os riscos funcionais, em vez de usar seis semanas de tipoia como solução universal.",
+   "B": "**Redução e órtese não resolvem, por si, a comparação reconstrutiva.** O capítulo decide pela orientação e estabilidade dos segmentos, contato e capacidade de obter uma reconstrução funcional. O nome de uma órtese não demonstra que cabeça e tubérculos permanecerão em posição aceitável neste osso osteoporótico.",
+   "C": "**A placa exige uma reconstrução que o osso precisa sustentar.** Pode ser adequada em fraturas selecionadas, mas a osteoporose e a complexidade aumentam o risco de perda do apoio medial, colapso e penetração dos parafusos. Não é apenas contar quatro partes e escolher um implante.",
+   "E": "**É incorreta pelo gabarito, mas favorecida pelo perfil no algoritmo da fonte.** A reversa permite ao deltoide recuperar elevação com menor dependência da consolidação dos tubérculos. O resumo a favorece no mais idoso, na mulher e na osteopenia; não se deve ensinar que ela é contraindicada apenas porque a banca marcou D."
   },
-  "alerta": "Mantido o gabarito oficial D, artroplastia parcial. A fratura em quatro partes numa paciente osteoporótica de 65 anos não torna a hemiartroplastia superior à reversa de modo inequívoco. Ensaio randomizado com pacientes a partir de 65 anos encontrou melhor função com artroplastia reversa quando a fratura não era passível de osteossíntese. A escolha individual depende da reconstruibilidade, das tuberosidades, do manguito, da função prévia e dos riscos cirúrgicos.",
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/38960139/",
-   "https://pubmed.ncbi.nlm.nih.gov/33301926/"
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura; Artroplastia: hemiartroplastia e reversa; Placa bloqueada: o parafuso, o calcar e a técnica; Quando operar: padrão, desvio e o ProFHER."
   ],
-  "conceito": "**O nome da operação não resolve a fratura sozinho.** Em fratura proximal do úmero em quatro partes, é preciso avaliar se a cabeça pode ser reconstruída e fixada com estabilidade no osso disponível. Se não for possível, consideram-se artroplastias. A hemiartroplastia substitui a cabeça, mas sua função depende muito da consolidação das tuberosidades e do manguito. A reversa usa o deltoide para elevar o braço e tende a oferecer resultado mais previsível em idosos selecionados com fraturas complexas. A idade de 65 anos, por si só, não decide entre essas técnicas, e o enunciado não fornece todos os elementos necessários para uma indicação individual definitiva.",
-  "correta": "**D, artroplastia parcial (gabarito oficial).** Representa a opção escolhida pela banca para a fratura complexa com osteoporose. Deve ser lida com a ressalva de que a artroplastia reversa também é forte candidata na prática contemporânea.",
-  "geradoEm": "2026-10-18",
-  "conferido": false
+  "conferido": false,
+  "alerta": "D oficial preservada. O resumo36 favorece reversa no perfil mais idoso, feminino e osteopênico e hemiartroplastia no mais jovem/ativo com osso e tubérculos melhores. Assim, E é favorecida pelo algoritmo para o perfil descrito; não ensinar que reversa é contraindicada nem que 65 anos ou quatro partes, isoladamente, obrigam uma técnica.",
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Neer, AO e os padrões de fratura",
+      "Artroplastia: hemiartroplastia e reversa",
+      "Placa bloqueada: o parafuso, o calcar e a técnica",
+      "Quando operar: padrão, desvio e o ProFHER"
+     ],
+     "blocos": [
+      "neer-ao-e-os-padroes-de-fratura-d055caa9",
+      "artroplastia-hemiartroplastia-e-reversa-260304ad",
+      "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+      "artroplastia-hemiartroplastia-e-reversa-50644c4b",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+      "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+      "quando-operar-padrao-desvio-e-o-profher-e2ac6522",
+      "artroplastia-hemiartroplastia-e-reversa-d059acac"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "2d0885abc5be2ead98a429984c8bf3e1f0d9736955fdbf501d282f1c4adf1be9"
+    }
+   ],
+   "questaoSha256": "16dbbe53628c839f68ad0dd2b85587b323b8663f398ddfbe70d1e9d644fb83f3",
+   "comentarioSha256": "c16a62591b46aeed364da6058809ee273d462ad6077c6ccaccb4d1331707fe37"
+  }
  },
  "ombro-cotovelo-0536": {
   "incorretas": {

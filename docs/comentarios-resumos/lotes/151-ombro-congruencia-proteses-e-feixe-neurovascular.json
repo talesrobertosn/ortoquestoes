@@ -1,0 +1,204 @@
+{
+  "ombro-cotovelo-0045": {
+    "questaoSha256": "6a24db4d00f918c16da36b433ad6b880c80dcd59fd28392f680d185bcd0333c7",
+    "comentarioAnteriorSha256": "d0646eaf8122babf70eb4ae1cef1a79a8d773b8075b90217f728b339200af5ce",
+    "comentario": {
+      "conceito": "No perfil da escápula, a cabeça umeral normal fica **centrada no Y**, na projeção da glenoide. O Y é a referência escapular; a pergunta não pede para onde a cabeça pode luxar, mas onde ela deve estar quando a articulação está alinhada.\n\nA avaliação do trauma precisa responder a duas perguntas diferentes: como o osso quebrou e se a cabeça continua articulada com a glenoide. Uma radiografia isolada pode mostrar a fratura e esconder a luxação. A série do capítulo inclui AP do ombro, AP verdadeira da escápula ou Grashey, perfil em Y e axilar; a legenda independente da figura 36-3 explicita a cabeça centrada na glenoide (Rockwood, 10ª ed., cap. 36, “Radiografias e tomografia”).\n\n**As projeções se complementam.** O Grashey abre o espaço glenoumeral, o perfil fornece uma direção perpendicular e a axilar é destacada para verificar a relação cabeça–glenoide e os tubérculos. Se a dor impede a posição axilar usual, o capítulo apresenta as adaptações de Velpeau e Codman, sem exigir que o paciente force a abdução dolorosa.\n\nO perfil em Y também serve para angulação e translação de fraturas da escápula, mas essas medidas da borda lateral são outro problema. Uma cabeça que parece desviada deve motivar confirmação da congruência em mais de um plano; não se deve aceitar “anterior” ou “posterior” como posição normal só porque um desses deslocamentos é conhecido nas luxações.\n\n> **Na prova:** cabeça central no Y é a relação normal; a série completa evita perder uma luxação.",
+      "correta": "**D: central.** A cabeça se projeta centrada na glenoide, na referência do Y escapular. Essa é a posição normal pedida, e deve ser confirmada com as demais incidências quando houver dúvida.",
+      "incorretas": {
+        "A": "**Anterior é uma direção de deslocamento, não a referência normal.** O enunciado não descreve uma cabeça luxada para frente. Aceitar esse posicionamento como normal confundiria a localização de uma lesão com a congruência que o exame precisa verificar.",
+        "B": "**Posterior também descreve desvio em relação ao centro.** A série de trauma existe justamente para evitar que uma luxação passe despercebida numa projeção isolada. A posição esperada no perfil normal continua sendo central.",
+        "C": "**Inferior abandona a referência da glenoide.** A cabeça não deve ficar abaixo do centro do Y como relação normal. No trauma, um aparente deslocamento inferior precisa de avaliação do alinhamento, em vez de ser tomado como padrão anatômico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Radiografias e tomografia.",
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Epidemiologia, mecanismo, lesões associadas e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Radiografias e tomografia"
+        ],
+        "blocos": [
+          "radiografias-e-tomografia-b85e69ff",
+          "radiografias-e-tomografia-413850ca",
+          "radiografias-e-tomografia-190db996",
+          "radiografias-e-tomografia-d315dddb",
+          "radiografias-e-tomografia-cb865953",
+          "radiografias-e-tomografia-2edd0b47"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "690c20ceec53a2c470882ff1fbb2a5b2f7de9ae1f7757b5d6844090f0ffc2c43"
+      },
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Epidemiologia, mecanismo, lesões associadas e imagem"
+        ],
+        "blocos": [
+          "epidemiologia-mecanismo-lesoes-associadas-e-imag-b84994ab"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "2ff892dbb0fc87f6cb9d2f243b1e0aca238441776e193805adfd06a64d17416f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0535": {
+    "questaoSha256": "16dbbe53628c839f68ad0dd2b85587b323b8663f398ddfbe70d1e9d644fb83f3",
+    "comentarioAnteriorSha256": "5313bb5279ef542a4618424c0391ff1f14b656e579c4e53ecfc055b4295b30a7",
+    "comentario": {
+      "conceito": "A paciente tem 65 anos, osteoporose e uma fratura em quatro partes: cabeça, diáfise e os dois tubérculos perderam suas relações habituais. **D, artroplastia parcial, é o gabarito oficial**, mas o perfil descrito favorece a **reversa no algoritmo do resumo**. É preciso separar a resposta da prova da escolha discutida pela fonte.\n\nA hemiartroplastia substitui a cabeça e depende de reconstruir os tubérculos na altura e orientação adequadas. Eles carregam as inserções do manguito; se não consolidam, consolidam desviados ou reabsorvem, a prótese pode aliviar dor e ainda deixar o braço com pouca função. O osso osteoporótico e tubérculos pequenos ou cominutos tornam essa etapa menos previsível (Rockwood, 10ª ed., cap. 36, “Artroplastia: hemiartroplastia e reversa”).\n\nA reversa fornece um fulcro estável para o deltoide e depende menos da consolidação dos tubérculos para recuperar elevação. A consolidação do tubérculo maior continua valiosa, sobretudo para rotação externa; “depende menos” não significa que reconstruir o manguito e seus fragmentos seja irrelevante. O capítulo favorece reversa no paciente mais idoso, na mulher, na osteopenia e nos tubérculos cominutos, e hemiartroplastia no mais jovem, ativo e com osso e fragmentos melhores.\n\n**Quatro partes não é uma ordem automática de operar.** Estado geral, demanda, condição anestésica, padrão real e possibilidade de reconstrução importam. O ProFHER não provou vantagem geral da cirurgia nas fraturas selecionadas do colo cirúrgico, mas excluiu situações graves e não resolve sozinho esta comparação entre próteses. A ausência de head-split não elimina a discussão de artroplastia quando o osso e os tubérculos tornam a fixação pouco confiável.\n\n> **Na prova:** D oficial. Para discutir conduta, reconheça por que o capítulo favorece reversa nesse perfil, sem transformar idade isolada em indicação.",
+      "correta": "**D: artroplastia parcial do ombro.** É a resposta oficial preservada. A hemiartroplastia pode ser usada em fraturas complexas, mas sua função depende dos tubérculos; a fonte não a apresenta como preferência para toda paciente osteoporótica mais idosa.",
+      "incorretas": {
+        "A": "**Imobilização não é necessariamente errada para todo idoso, mas não é a escolha da banca neste padrão.** Fragilidade clínica pode favorecer tratamento conservador. Sem essa contraindicação descrita, a decisão precisa enfrentar a fratura multifragmentada e os riscos funcionais, em vez de usar seis semanas de tipoia como solução universal.",
+        "B": "**Redução e órtese não resolvem, por si, a comparação reconstrutiva.** O capítulo decide pela orientação e estabilidade dos segmentos, contato e capacidade de obter uma reconstrução funcional. O nome de uma órtese não demonstra que cabeça e tubérculos permanecerão em posição aceitável neste osso osteoporótico.",
+        "C": "**A placa exige uma reconstrução que o osso precisa sustentar.** Pode ser adequada em fraturas selecionadas, mas a osteoporose e a complexidade aumentam o risco de perda do apoio medial, colapso e penetração dos parafusos. Não é apenas contar quatro partes e escolher um implante.",
+        "E": "**É incorreta pelo gabarito, mas favorecida pelo perfil no algoritmo da fonte.** A reversa permite ao deltoide recuperar elevação com menor dependência da consolidação dos tubérculos. O resumo a favorece no mais idoso, na mulher e na osteopenia; não se deve ensinar que ela é contraindicada apenas porque a banca marcou D."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Neer, AO e os padrões de fratura; Artroplastia: hemiartroplastia e reversa; Placa bloqueada: o parafuso, o calcar e a técnica; Quando operar: padrão, desvio e o ProFHER."
+      ],
+      "conferido": false,
+      "alerta": "D oficial preservada. O resumo36 favorece reversa no perfil mais idoso, feminino e osteopênico e hemiartroplastia no mais jovem/ativo com osso e tubérculos melhores. Assim, E é favorecida pelo algoritmo para o perfil descrito; não ensinar que reversa é contraindicada nem que 65 anos ou quatro partes, isoladamente, obrigam uma técnica."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Neer, AO e os padrões de fratura",
+          "Artroplastia: hemiartroplastia e reversa",
+          "Placa bloqueada: o parafuso, o calcar e a técnica",
+          "Quando operar: padrão, desvio e o ProFHER"
+        ],
+        "blocos": [
+          "neer-ao-e-os-padroes-de-fratura-d055caa9",
+          "artroplastia-hemiartroplastia-e-reversa-260304ad",
+          "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+          "artroplastia-hemiartroplastia-e-reversa-50644c4b",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+          "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+          "quando-operar-padrao-desvio-e-o-profher-e2ac6522",
+          "artroplastia-hemiartroplastia-e-reversa-d059acac"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "2d0885abc5be2ead98a429984c8bf3e1f0d9736955fdbf501d282f1c4adf1be9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0965": {
+    "questaoSha256": "48abe7096faea851137f002e1575ca9728d4df207f698290aca63ca19e91f146",
+    "comentarioAnteriorSha256": "9c0b15c2671512f54c2b007de43da90c5ece34d834ebe6bd297eb574d1cd63ce",
+    "comentario": {
+      "conceito": "A banca marcou **A, via de acesso lateral**, mas o resumo apresenta uma divergência real: a metanálise citada encontrou **menos necrose com a transdeltoide**, enquanto o padrão **impactado em valgo**, alternativa B, teve necrose mais frequente na série dos autores. O comentário precisa mostrar os dois dados, em vez de justificar uma relação oposta à fonte.\n\nA perfusão da cabeça depende das conexões vasculares que sobrevivem à fratura. Ramos das circunflexas alcançam a cabeça pelo lado medial e posteromedial; pouco calcar preso à cabeça, dobradiça medial rompida e traço no colo anatômico sinalizam maior risco de isquemia. Isquemia observada na cirurgia não é igual a necrose tardia inevitável, pois pode ocorrer revascularização (Rockwood, 10ª ed., cap. 36, “Irrigação da cabeça, Hertel e osteonecrose”).\n\nNa série Mayo/FJD resumida, após placa bloqueada houve necrose em 12% dos padrões em valgo contra 2% nos de colo cirúrgico e varo, diferença de seis vezes naquele conjunto. Isso **não autoriza dizer que todo valgo é avascular**, nem transportar a taxa para qualquer população. Explica por que B encontra sustentação direta na fonte desta revisão.\n\nA via lateral tem um risco próprio bem definido: o nervo axilar, que deve ser identificado e protegido quando a divisão do deltoide se estende. Esse risco neural não prova maior necrose da cabeça. Técnica cuidadosa e preservação de partes moles continuam importantes em qualquer abordagem; tampouco um resultado de metanálise torna toda via automaticamente segura.\n\n> **Na prova:** A é a oficial, com alerta. Pelo resumo, B é o fator sustentado, e a via lateral deve lembrar proteção do axilar.",
+      "correta": "**A: via de acesso lateral.** Mantém-se a resposta oficial, sem apresentar maior necrose como fato confirmado. A fonte descreve menor necrose na metanálise da via transdeltoide e destaca o nervo axilar como risco anatômico dessa abordagem.",
+      "incorretas": {
+        "B": "**Foi rejeitada pela banca, mas tem suporte direto no resumo.** A série dos autores registrou 12% de necrose no valgo após placa contra 2% em colo cirúrgico e varo. O achado é de uma comparação específica; não significa necrose obrigatória nem equivale à perda de perfusão em todo valgo.",
+        "C": "**Acrescenta uma lesão da cintura sem identificar o mecanismo vascular da cabeça.** Fraturas associadas devem ser avaliadas no trauma, mas a alternativa não é o fator que a fonte documenta na comparação de necrose após placa. Não se deve inventar um efeito protetor ou uma taxa de risco para fratura do acrômio.",
+        "D": "**Mistura o funcionamento dos tendões com a perfusão do osso.** Lesão do manguito é uma associação frequente e importante para reconstrução e função, mas não é o achado apresentado como preditor vascular nesta comparação. A fonte orienta reconhecer calcar, dobradiça e padrão, não equiparar toda lesão tendínea a necrose."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Anatomia aplicada e vias de acesso; Lesões associadas: nervos, artéria, manguito e outras fraturas."
+      ],
+      "conferido": false,
+      "alerta": "A oficial preservada, mas a fonte diverge: a metanálise resumida encontrou menos necrose com a transdeltoide. Na série dos autores, valgo após placa teve 12% contra 2% em colo cirúrgico/varo, sustentando B. Diferenciar esse risco vascular do risco de lesão do axilar na via lateral; não generalizar as taxas a todo paciente."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Irrigação da cabeça, Hertel e osteonecrose",
+          "Anatomia aplicada e vias de acesso",
+          "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+        ],
+        "blocos": [
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-40a7cd70",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-947a14e4",
+          "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+          "lesoes-associadas-nervos-arteria-manguito-e-outr-8cc48365"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "3819a416ae2e582fa547527e5351041e380b07c86b03208185dc62d679868188"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "ombro-cotovelo-0429": {
+    "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
+    "comentarioAnteriorSha256": "96414e6b1da9884d6cb4666819de9fc649c1b47d4498eed638b20810e02559b2",
+    "comentario": {
+      "conceito": "No espaço quadrangular, o par que interessa é **nervo axilar e artéria circunflexa posterior do úmero**, alternativa D. Reconhecer apenas o nervo deixa a questão incompleta: duas opções trazem o axilar, mas só uma o combina com o vaso que o acompanha.\n\nO axilar sai do fascículo posterior do plexo, passa de anterior para posterior abaixo do colo anatômico e percorre o espaço junto da circunflexa umeral posterior. Depois retorna para a frente sob o deltoide. Inerva deltoide e redondo menor e participa da sensibilidade na face lateral do braço; esse trajeto conecta a síndrome da pergunta ao exame motor e sensitivo do ombro (Rockwood, 10ª ed., cap. 36, “O nervo axilar” e “De onde vem o sangue”).\n\nA circunflexa posterior também contribui para a vascularização posteromedial da cabeça. Portanto, o espaço não é apenas uma passagem de um nervo: nele se reconhece um feixe neurovascular. Isso não significa que uma compressão nesse local produza obrigatoriamente osteonecrose da cabeça, que recebe uma rede de contribuições.\n\n**Supraescapular é outro trajeto.** Ele atravessa a incisura da escápula, segue sob o supraespinal e contorna a base da espinha pela incisura espinoglenoidal até o infraespinal. Sua relação com vasos supraescapulares é anatomicamente coerente, mas pertence a outra passagem. A semelhança entre nomes de nervos e vasos não substitui a localização.\n\n> **Na prova:** quadrangular: axilar com circunflexa umeral posterior; incisuras da escápula: trajeto do supraescapular.",
+      "correta": "**D: axilar e circunflexa posterior do úmero.** É o feixe que atravessa o espaço quadrangular descrito na fonte. O exame deve considerar a função do deltoide/redondo menor e a sensibilidade lateral do braço.",
+      "incorretas": {
+        "A": "**Acerta o nervo e erra o vaso acompanhante.** O axilar atravessa esse espaço com a circunflexa umeral posterior. A artéria braquial profunda não pode substituir o nome do vaso só porque a questão já oferece o nervo correto.",
+        "B": "**Não contém o feixe que percorre o espaço da pergunta.** O ponto anatômico descrito é o contorno do úmero pelo axilar e pela circunflexa posterior. Trocar os dois componentes por toracodorsal e subescapular perde a relação com o colo e o deltoide apresentada na fonte.",
+        "C": "**É um par de outra região da escápula.** O supraescapular acompanha o trajeto das incisuras da escápula e espinoglenoidal, profundo aos músculos supra e infraespinal. Essa localização explica por que um par plausível não corresponde ao espaço quadrangular."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Anatomia aplicada e vias de acesso; Irrigação da cabeça, Hertel e osteonecrose.",
+        "Conteúdo consultado no resumo “Fratura da escápula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 33 · Scapular Fractures. Seções: Anatomia aplicada: arquitetura, músculos e nervo supraescapular."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-36-umero-proximal",
+        "titulo": "Fratura do úmero proximal",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+        "secoes": [
+          "Anatomia aplicada e vias de acesso",
+          "Irrigação da cabeça, Hertel e osteonecrose"
+        ],
+        "blocos": [
+          "anatomia-aplicada-e-vias-de-acesso-f121538c",
+          "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
+        ],
+        "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+        "trechosSha256": "c4f74b5d4e027628c98665a4ddda7a4dbb8c92d028309a5a8214a7f0b19a02f8"
+      },
+      {
+        "resumo": "rockwood10-33-fratura-escapula",
+        "titulo": "Fratura da escápula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 33 · Scapular Fractures",
+        "secoes": [
+          "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+        ],
+        "blocos": [
+          "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+        ],
+        "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+        "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 610,
+  "pendente": 591,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 244,
-  "pendente-inspecao-imagem": 86,
-  "revisada": 1332
+  "pendente-fonte": 260,
+  "pendente-inspecao-imagem": 85,
+  "revisada": 1336
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -37,10 +37,10 @@
    "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
    "estados": {
     "duplicada": 4,
-    "pendente": 20,
-    "pendente-fonte": 7,
+    "pendente": 13,
+    "pendente-fonte": 13,
     "pendente-inspecao-imagem": 2,
-    "revisada": 103
+    "revisada": 104
    }
   },
   "rockwood10-34-fratura-clavicula": {
@@ -58,10 +58,10 @@
    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
-    "pendente": 25,
-    "pendente-fonte": 3,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 60
+    "pendente": 11,
+    "pendente-fonte": 14,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 64
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -23261,7 +23261,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -23284,7 +23284,50 @@
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "6a24db4d00f918c16da36b433ad6b880c80dcd59fd28392f680d185bcd0333c7"
+   "questaoSha256": "6a24db4d00f918c16da36b433ad6b880c80dcd59fd28392f680d185bcd0333c7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Radiografias e tomografia"
+      ],
+      "blocos": [
+       "radiografias-e-tomografia-b85e69ff",
+       "radiografias-e-tomografia-413850ca",
+       "radiografias-e-tomografia-190db996",
+       "radiografias-e-tomografia-d315dddb",
+       "radiografias-e-tomografia-cb865953",
+       "radiografias-e-tomografia-2edd0b47"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "690c20ceec53a2c470882ff1fbb2a5b2f7de9ae1f7757b5d6844090f0ffc2c43"
+     },
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Epidemiologia, mecanismo, lesões associadas e imagem"
+      ],
+      "blocos": [
+       "epidemiologia-mecanismo-lesoes-associadas-e-imag-b84994ab"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "2ff892dbb0fc87f6cb9d2f243b1e0aca238441776e193805adfd06a64d17416f"
+     }
+    ],
+    "questaoSha256": "6a24db4d00f918c16da36b433ad6b880c80dcd59fd28392f680d185bcd0333c7",
+    "comentarioSha256": "1cac1b2b7934eedac0ca4601ea25daebaa1e10ddc3e6876f3c1b565173a6ea98"
+   }
   },
   "ombro-cotovelo-0064": {
    "tema": "ombro-cotovelo",
@@ -25196,7 +25239,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25211,7 +25254,47 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc"
+   "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Anatomia aplicada e vias de acesso",
+       "Irrigação da cabeça, Hertel e osteonecrose"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-vias-de-acesso-f121538c",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "c4f74b5d4e027628c98665a4ddda7a4dbb8c92d028309a5a8214a7f0b19a02f8"
+     },
+     {
+      "resumo": "rockwood10-33-fratura-escapula",
+      "titulo": "Fratura da escápula",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 33 · Scapular Fractures",
+      "secoes": [
+       "Anatomia aplicada: arquitetura, músculos e nervo supraescapular"
+      ],
+      "blocos": [
+       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
+      ],
+      "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+      "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
+     }
+    ],
+    "questaoSha256": "e15bdb867eaa52cd7289c50dafb290761df60af34bdf7188baa523768125e3dc",
+    "comentarioSha256": "9090126f2889476d7223ca679f36f7d9d906ec5babe6660b21ab72fd8d28cad5"
+   }
   },
   "ombro-cotovelo-0433": {
    "tema": "ombro-cotovelo",
@@ -25271,8 +25354,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial (cabeça8–10mm acima do tubérculo maior) é compatível com média9mm/faixa6–10mm no corpo do resumo36. Porém o item também exige comparar raios glenoide/cabeça5–7mm, variação sexual do raio e versão glenoidal de10anteversão a15retroversão (E); esses dados e a exclusão de E não são apresentados nos resumos33/36. Raio25mm e arco160graus permitem refutar parte de B/D, mas não conferem todas as afirmações. Falta fonte anatômica primária das comparações e da versão glenoidal; C/comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25286,7 +25369,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "2bc9bf934a09cc3450dce23602354372913ed4401b456caaa4c4f5fa595d8152"
+   "questaoSha256": "2bc9bf934a09cc3450dce23602354372913ed4401b456caaa4c4f5fa595d8152",
+   "pendencia": "C oficial (cabeça8–10mm acima do tubérculo maior) é compatível com média9mm/faixa6–10mm no corpo do resumo36. Porém o item também exige comparar raios glenoide/cabeça5–7mm, variação sexual do raio e versão glenoidal de10anteversão a15retroversão (E); esses dados e a exclusão de E não são apresentados nos resumos33/36. Raio25mm e arco160graus permitem refutar parte de B/D, mas não conferem todas as afirmações. Falta fonte anatômica primária das comparações e da versão glenoidal; C/comentário preservados, sem baseResumo."
   },
   "ombro-cotovelo-0451": {
    "tema": "ombro-cotovelo",
@@ -25517,15 +25601,16 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O item sem gabarito oficial exige incidência apical oblíqua com raio45graus lateral e45caudal (D bibliográfica), versus25medial/caudal,25lateral/cranial e45medial/cranial. O corpo dos resumos33/36 descreve Neer I/II, Grashey e axilares, mas não a técnica apical oblíqua nem seus ângulos e direção. Falta descrição primária da incidência para sustentar uma resposta única e analisar A–D. Resposta bibliográfica e comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula",
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d63aa87dec853d4e101b61124dabcbb1c0bd72e08d9470ed8749a940f688975b"
+   "questaoSha256": "d63aa87dec853d4e101b61124dabcbb1c0bd72e08d9470ed8749a940f688975b",
+   "pendencia": "O item sem gabarito oficial exige incidência apical oblíqua com raio45graus lateral e45caudal (D bibliográfica), versus25medial/caudal,25lateral/cranial e45medial/cranial. O corpo dos resumos33/36 descreve Neer I/II, Grashey e axilares, mas não a técnica apical oblíqua nem seus ângulos e direção. Falta descrição primária da incidência para sustentar uma resposta única e analisar A–D. Resposta bibliográfica e comentário preservados."
   },
   "ombro-cotovelo-0481": {
    "tema": "ombro-cotovelo",
@@ -26051,7 +26136,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -26066,7 +26151,40 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "16dbbe53628c839f68ad0dd2b85587b323b8663f398ddfbe70d1e9d644fb83f3"
+   "questaoSha256": "16dbbe53628c839f68ad0dd2b85587b323b8663f398ddfbe70d1e9d644fb83f3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Neer, AO e os padrões de fratura",
+       "Artroplastia: hemiartroplastia e reversa",
+       "Placa bloqueada: o parafuso, o calcar e a técnica",
+       "Quando operar: padrão, desvio e o ProFHER"
+      ],
+      "blocos": [
+       "neer-ao-e-os-padroes-de-fratura-d055caa9",
+       "artroplastia-hemiartroplastia-e-reversa-260304ad",
+       "artroplastia-hemiartroplastia-e-reversa-b0de9bbb",
+       "artroplastia-hemiartroplastia-e-reversa-50644c4b",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-93d9c9ae",
+       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0",
+       "quando-operar-padrao-desvio-e-o-profher-e2ac6522",
+       "artroplastia-hemiartroplastia-e-reversa-d059acac"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "2d0885abc5be2ead98a429984c8bf3e1f0d9736955fdbf501d282f1c4adf1be9"
+     }
+    ],
+    "questaoSha256": "16dbbe53628c839f68ad0dd2b85587b323b8663f398ddfbe70d1e9d644fb83f3",
+    "comentarioSha256": "c16a62591b46aeed364da6058809ee273d462ad6077c6ccaccb4d1331707fe37"
+   }
   },
   "ombro-cotovelo-0536": {
    "tema": "ombro-cotovelo",
@@ -26179,8 +26297,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "E oficial repete redondo maior como limite superior e inferior do quadrangular. O corpo do resumo36 confirma trajeto axilar, mas não enumera todos os limites desse espaço; o reparo do limite superior aparece apenas no contexto da questão. A/D também requerem aferir inserções trocadas dos quatro músculos do manguito, não inteiramente enumeradas no corpo dos resumos33/36. Intervalo trapezoidal e musculocutâneo5,6cm/afastamento medial são sustentados, mas não conferem E/D integralmente. Falta anatomia primária dos limites e inserções, preservando E e registrando a duplicação sem defender a anatomia errada.",
    "temComentario": true,
    "citacoes": [
     {
@@ -26194,7 +26312,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "aa3bcc3c4ba3ad7583657d7730953023450e848b683e35d2fdcc1ce02d5994fc"
+   "questaoSha256": "aa3bcc3c4ba3ad7583657d7730953023450e848b683e35d2fdcc1ce02d5994fc",
+   "pendencia": "E oficial repete redondo maior como limite superior e inferior do quadrangular. O corpo do resumo36 confirma trajeto axilar, mas não enumera todos os limites desse espaço; o reparo do limite superior aparece apenas no contexto da questão. A/D também requerem aferir inserções trocadas dos quatro músculos do manguito, não inteiramente enumeradas no corpo dos resumos33/36. Intervalo trapezoidal e musculocutâneo5,6cm/afastamento medial são sustentados, mas não conferem E/D integralmente. Falta anatomia primária dos limites e inserções, preservando E e registrando a duplicação sem defender a anatomia errada."
   },
   "ombro-cotovelo-0549": {
    "tema": "ombro-cotovelo",
@@ -26296,8 +26415,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem resposta oficial ou bibliográfica registrada. O resumo36 dá topo da cabeça6–10mm acima do tubérculo, média9mm, e versão de5graus de anteversão a50de retroversão; B oferece5mm e D oferece0–55graus. Não há comparação de espessura da cartilagem cabeça/glenoide(C), e o plano do colo anatômico41graus não deve ser equiparado sem definição ao ângulo cervicodiafisário60graus(A). Falta anatomia primária com definições e faixas para uma resposta única. Não criar provável a partir de aproximações ou da antiga justificativa.",
    "temComentario": true,
    "citacoes": [
     {
@@ -26311,7 +26430,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d444962d65e1ed38a7e1ddc60836b41c2b8ed4ff9cd3794a592bb15b474e15f1"
+   "questaoSha256": "d444962d65e1ed38a7e1ddc60836b41c2b8ed4ff9cd3794a592bb15b474e15f1",
+   "pendencia": "Sem resposta oficial ou bibliográfica registrada. O resumo36 dá topo da cabeça6–10mm acima do tubérculo, média9mm, e versão de5graus de anteversão a50de retroversão; B oferece5mm e D oferece0–55graus. Não há comparação de espessura da cartilagem cabeça/glenoide(C), e o plano do colo anatômico41graus não deve ser equiparado sem definição ao ângulo cervicodiafisário60graus(A). Falta anatomia primária com definições e faixas para uma resposta única. Não criar provável a partir de aproximações ou da antiga justificativa."
   },
   "ombro-cotovelo-0575": {
    "tema": "ombro-cotovelo",
@@ -46992,8 +47112,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial exige que Stryker avalie a base do coracoide, distinguindo-a de Zanca e da avaliação do deslocamento posterior da clavícula. O corpo do resumo33 não nomeia Stryker nem descreve seu posicionamento ou comparação com Zanca; a ocorrência no contexto da própria questão não é fonte independente. Falta capítulo de imagem/AC com técnica e finalidade de ambas as incidências. Não usar TC como substituto bibliográfico da afirmação. Gabarito/comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -47007,7 +47127,8 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "b290b338ca3b714098f6f07c7641d3c87ab7337eda9be6ec0172bc9bd227d932"
+   "questaoSha256": "b290b338ca3b714098f6f07c7641d3c87ab7337eda9be6ec0172bc9bd227d932",
+   "pendencia": "C oficial exige que Stryker avalie a base do coracoide, distinguindo-a de Zanca e da avaliação do deslocamento posterior da clavícula. O corpo do resumo33 não nomeia Stryker nem descreve seu posicionamento ou comparação com Zanca; a ocorrência no contexto da própria questão não é fonte independente. Falta capítulo de imagem/AC com técnica e finalidade de ambas as incidências. Não usar TC como substituto bibliográfico da afirmação. Gabarito/comentário preservados, sem baseResumo."
   },
   "trauma-0059": {
    "tema": "trauma",
@@ -50051,8 +50172,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial exige que rigidez seja a complicação mais comum da fratura proximal, superando impacto, necrose e viciosa. O corpo do resumo36 explica contratura capsular e diz que viciosa é comum, com séries próprias, mas não fornece hierarquia global comparável entre as quatro complicações. Falta série com população/tratamento/critério de complicação que sustente a frequência pedida. Não usar o bloco da própria questão como prova nem trocar a pergunta pela complicação mais frequente da placa. B e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -50066,7 +50187,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "aef3562da42d5a9e5bd3b6aa5afd6c77e2cbc10dfcafc57aa4a2a1f0822a060c"
+   "questaoSha256": "aef3562da42d5a9e5bd3b6aa5afd6c77e2cbc10dfcafc57aa4a2a1f0822a060c",
+   "pendencia": "B oficial exige que rigidez seja a complicação mais comum da fratura proximal, superando impacto, necrose e viciosa. O corpo do resumo36 explica contratura capsular e diz que viciosa é comum, com séries próprias, mas não fornece hierarquia global comparável entre as quatro complicações. Falta série com população/tratamento/critério de complicação que sustente a frequência pedida. Não usar o bloco da própria questão como prova nem trocar a pergunta pela complicação mais frequente da placa. B e comentário preservados."
   },
   "trauma-0147": {
    "tema": "trauma",
@@ -51597,8 +51719,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial exige distância escápula-coluna1,5vez a contralateral, contra0,5/2/2,5. O corpo independente do resumo33 recomenda radiografia de tórax para a relação escápula-coluna, mas não define esse índice, seu modo de medir ou o limiar1,5. Falta fonte primária do índice radiográfico e critério diagnóstico; não confundir descrição de afastamento com confirmação quantitativa. Gabarito/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -51612,7 +51734,8 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "7f73e36236626a9043e3c148544aab49becce7de1a26645bde602265e785096e"
+   "questaoSha256": "7f73e36236626a9043e3c148544aab49becce7de1a26645bde602265e785096e",
+   "pendencia": "B oficial exige distância escápula-coluna1,5vez a contralateral, contra0,5/2/2,5. O corpo independente do resumo33 recomenda radiografia de tórax para a relação escápula-coluna, mas não define esse índice, seu modo de medir ou o limiar1,5. Falta fonte primária do índice radiográfico e critério diagnóstico; não confundir descrição de afastamento com confirmação quantitativa. Gabarito/comentário preservados."
   },
   "trauma-0195": {
    "tema": "trauma",
@@ -59196,8 +59319,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A oficial compara rigidez com pseudartrose, osteonecrose e viciosa após tratamento do úmero proximal. O resumo36 descreve todas, mas não oferece frequência comparativa numa população e tratamento comuns; a série de203sequelas encaminhadas para prótese tem seleção própria e não mede incidência de complicações em todas as fraturas. Falta fonte epidemiológica da hierarquia pedida. Gabarito A e comentário preservados, sem novo selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -59211,7 +59334,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "d9c70ee5616d8940f8fde8ef02d69d765f93559c4addf78d46f965a0536b6707"
+   "questaoSha256": "d9c70ee5616d8940f8fde8ef02d69d765f93559c4addf78d46f965a0536b6707",
+   "pendencia": "A oficial compara rigidez com pseudartrose, osteonecrose e viciosa após tratamento do úmero proximal. O resumo36 descreve todas, mas não oferece frequência comparativa numa população e tratamento comuns; a série de203sequelas encaminhadas para prótese tem seleção própria e não mede incidência de complicações em todas as fraturas. Falta fonte epidemiológica da hierarquia pedida. Gabarito A e comentário preservados, sem novo selo."
   },
   "trauma-0568": {
    "tema": "trauma",
@@ -62120,8 +62244,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial coloca rigidez acima de perda da redução, lesão cartilaginosa e lesão do manguito. O resumo36 discute mecanismos de rigidez e complicações de métodos específicos, mas não compara esses quatro eventos para o enunciado geral. A frequência de manguito associado já na fratura não é incidência de complicação do tratamento, e perfuração da placa não prova ranking global. Falta fonte que defina população, momento e frequência de cada evento. Gabarito D e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -62135,7 +62259,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "ea2b29e16411709068590ed7d9e760cc1f8e5801a23a58ea575aaeefd64d7dcf"
+   "questaoSha256": "ea2b29e16411709068590ed7d9e760cc1f8e5801a23a58ea575aaeefd64d7dcf",
+   "pendencia": "D oficial coloca rigidez acima de perda da redução, lesão cartilaginosa e lesão do manguito. O resumo36 discute mecanismos de rigidez e complicações de métodos específicos, mas não compara esses quatro eventos para o enunciado geral. A frequência de manguito associado já na fratura não é incidência de complicação do tratamento, e perfuração da placa não prova ranking global. Falta fonte que defina população, momento e frequência de cada evento. Gabarito D e comentário preservados."
   },
   "trauma-0734": {
    "tema": "trauma",
@@ -63217,8 +63342,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial pede a melhor incidência na fratura isolada do tubérculo maior: Grashey com rotação externa versus interna e Garth com ambas rotações. O corpo do resumo36 recomenda Grashey/Y em neutro ou externa e axial para tubérculos, mas não descreve Garth nem estabelece a superioridade específica pedida para o tubérculo maior. O contexto da própria questão não é fonte independente. Falta descrição primária de projeção do tubérculo e comparação das incidências/rotações. Gabarito/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63232,7 +63357,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "507f7818a56dc4ed7b6614b885a73abd9bc314a748b6b06e38d87f8266abe314"
+   "questaoSha256": "507f7818a56dc4ed7b6614b885a73abd9bc314a748b6b06e38d87f8266abe314",
+   "pendencia": "D oficial pede a melhor incidência na fratura isolada do tubérculo maior: Grashey com rotação externa versus interna e Garth com ambas rotações. O corpo do resumo36 recomenda Grashey/Y em neutro ou externa e axial para tubérculos, mas não descreve Garth nem estabelece a superioridade específica pedida para o tubérculo maior. O contexto da própria questão não é fonte independente. Falta descrição primária de projeção do tubérculo e comparação das incidências/rotações. Gabarito/comentário preservados."
   },
   "trauma-0779": {
    "tema": "trauma",
@@ -63417,8 +63543,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial (osteotomia do tubérculo piora prognóstico da artroplastia anatômica) está sustentada no corpo do resumo36, assim como uso de reversa em idosos selecionados. Contudo B exige julgar tuberculoplastia para maior desvio; o corpo não descreve tuberculoplastia nem seus limites versus osteotomia/prótese. Não é suficiente confirmar D e declarar B falsa por ausência de menção. Falta fonte primária do tratamento da viciosa que compare as quatro opções, incluindo tamanho/desvio e tuberculoplastia. D/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63432,7 +63558,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "4d5fd1aedc570a78fde038b3950b134c617a1aaad8430612e7e8f0652581f28c"
+   "questaoSha256": "4d5fd1aedc570a78fde038b3950b134c617a1aaad8430612e7e8f0652581f28c",
+   "pendencia": "D oficial (osteotomia do tubérculo piora prognóstico da artroplastia anatômica) está sustentada no corpo do resumo36, assim como uso de reversa em idosos selecionados. Contudo B exige julgar tuberculoplastia para maior desvio; o corpo não descreve tuberculoplastia nem seus limites versus osteotomia/prótese. Não é suficiente confirmar D e declarar B falsa por ausência de menção. Falta fonte primária do tratamento da viciosa que compare as quatro opções, incluindo tamanho/desvio e tuberculoplastia. D/comentário preservados."
   },
   "trauma-0786": {
    "tema": "trauma",
@@ -65453,8 +65580,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial pergunta interposição do bíceps na redução de fratura do tubérculo maior. O corpo do resumo36 descreve interposição de partes moles e cabeça longa do bíceps na pseudartrose/redução do colo cirúrgico, não especificamente no tubérculo maior nem a comparação com cápsula/supraespinal/subescapular. Não transferir a região anatômica para confirmar a alternativa. Falta descrição primária da interposição no padrão do enunciado. Gabarito/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -65468,7 +65595,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "c49d71e877ab0d1f768e146a7e176b9cf6e64857badfe7c77762fd5f7faa5ed0"
+   "questaoSha256": "c49d71e877ab0d1f768e146a7e176b9cf6e64857badfe7c77762fd5f7faa5ed0",
+   "pendencia": "D oficial pergunta interposição do bíceps na redução de fratura do tubérculo maior. O corpo do resumo36 descreve interposição de partes moles e cabeça longa do bíceps na pseudartrose/redução do colo cirúrgico, não especificamente no tubérculo maior nem a comparação com cápsula/supraespinal/subescapular. Não transferir a região anatômica para confirmar a alternativa. Falta descrição primária da interposição no padrão do enunciado. Gabarito/comentário preservados."
   },
   "trauma-0868": {
    "tema": "trauma",
@@ -68466,7 +68594,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68481,7 +68609,40 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "48abe7096faea851137f002e1575ca9728d4df207f698290aca63ca19e91f146"
+   "questaoSha256": "48abe7096faea851137f002e1575ca9728d4df207f698290aca63ca19e91f146",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-36-umero-proximal",
+      "titulo": "Fratura do úmero proximal",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+      "secoes": [
+       "Irrigação da cabeça, Hertel e osteonecrose",
+       "Anatomia aplicada e vias de acesso",
+       "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+      ],
+      "blocos": [
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-40a7cd70",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+       "irrigacao-da-cabeca-hertel-e-osteonecrose-947a14e4",
+       "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+       "lesoes-associadas-nervos-arteria-manguito-e-outr-8cc48365"
+      ],
+      "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+      "trechosSha256": "3819a416ae2e582fa547527e5351041e380b07c86b03208185dc62d679868188"
+     }
+    ],
+    "questaoSha256": "48abe7096faea851137f002e1575ca9728d4df207f698290aca63ca19e91f146",
+    "comentarioSha256": "1028cb2b9f21ff52164f704b30a1e0a7f84b815f3084ffa951d0a9925a322515"
+   }
   },
   "trauma-0966": {
    "tema": "trauma",
@@ -68863,8 +69024,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura trauma-0979-1.png aberta: radiografia de sequela com descontinuidade/deformidade proximal. O item exige classificar por BoileauI–IV e C oficial apontaIII. O corpo do resumo36 fornece percentuais de203sequelas (colapso/necrose, luxação irredutível, pseudartrose e viciosa), mas não associa cada entidade aos tiposI–IV nem apresenta a classificação completa. Falta fonte primária dos tipos para interpretar imagem e excluir todas as alternativas, sem inferir III da posição na lista ou do comentário antigo. Figura inspecionada; gabarito/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -68878,7 +69039,8 @@
    "resumosCandidatos": [
     "rockwood10-36-umero-proximal"
    ],
-   "questaoSha256": "3321ced965bbda67deded76f200d727f94c11be39c13afaea5de90453d9f3932"
+   "questaoSha256": "3321ced965bbda67deded76f200d727f94c11be39c13afaea5de90453d9f3932",
+   "pendencia": "Figura trauma-0979-1.png aberta: radiografia de sequela com descontinuidade/deformidade proximal. O item exige classificar por BoileauI–IV e C oficial apontaIII. O corpo do resumo36 fornece percentuais de203sequelas (colapso/necrose, luxação irredutível, pseudartrose e viciosa), mas não associa cada entidade aos tiposI–IV nem apresenta a classificação completa. Falta fonte primária dos tipos para interpretar imagem e excluir todas as alternativas, sem inferir III da posição na lista ou do comentário antigo. Figura inspecionada; gabarito/comentário preservados."
   },
   "trauma-0980": {
    "tema": "trauma",
@@ -74587,8 +74749,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A bibliográfica, sem oficial, afirma que angulação>40graus transforma compressão do manguito em cisalhamento. O resumo33 usa>40graus como critério relativo e discute trajeto do manguito/ritmo escapuloumeral, mas não demonstra essa conversão biomecânica nem um limiar para ela. Falta estudo ou descrição primária de vetores para julgar o C/E; não converter um critério de cirurgia em prova do mecanismo. Resposta e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -74602,7 +74764,8 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "68601704fed451336adfe949e98326d04419ea1e80c841067d8fff22a94c03ac"
+   "questaoSha256": "68601704fed451336adfe949e98326d04419ea1e80c841067d8fff22a94c03ac",
+   "pendencia": "A bibliográfica, sem oficial, afirma que angulação>40graus transforma compressão do manguito em cisalhamento. O resumo33 usa>40graus como critério relativo e discute trajeto do manguito/ritmo escapuloumeral, mas não demonstra essa conversão biomecânica nem um limiar para ela. Falta estudo ou descrição primária de vetores para julgar o C/E; não converter um critério de cirurgia em prova do mecanismo. Resposta e comentário preservados."
   },
   "trauma-1179": {
    "tema": "trauma",
@@ -77385,8 +77548,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A registrada combina fratura da base do coracoide com confirmação pela Stryker quando a AC está completamente luxada e a distânciaCC permanece normal. O corpo do resumo33 descreve associação de lesões e redução indireta do coracoide ao fixar AC, mas não descreve Stryker nem estabelece esse algoritmo diagnóstico com a distânciaCC normal. Falta fonte independente para as duas lacunas e para excluir West Point/clavícula distal. Não promover o contexto de treino do próprio resumo a autoridade. Questão/gabarito/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -77400,7 +77563,8 @@
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "2d212c78f94ea42b1464972324b5be6e9e2f066b2166f3a5217cf80bbf090e7a"
+   "questaoSha256": "2d212c78f94ea42b1464972324b5be6e9e2f066b2166f3a5217cf80bbf090e7a",
+   "pendencia": "A registrada combina fratura da base do coracoide com confirmação pela Stryker quando a AC está completamente luxada e a distânciaCC permanece normal. O corpo do resumo33 descreve associação de lesões e redução indireta do coracoide ao fixar AC, mas não descreve Stryker nem estabelece esse algoritmo diagnóstico com a distânciaCC normal. Falta fonte independente para as duas lacunas e para excluir West Point/clavícula distal. Não promover o contexto de treino do próprio resumo a autoridade. Questão/gabarito/comentário preservados."
   },
   "trauma-1264": {
    "tema": "trauma",
@@ -77410,14 +77574,15 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C registrada exige tratamento habitual conservador da luxaçãoAC com fratura do coracoide e CC íntegros e cirurgia na extensão glenoidal com desvio>=5mm. O corpo do resumo33 relata casos operados por lesões associadas, incluindo AC, e critérios articulares diferentes por grupo, mas não enuncia a regra habitual conservadora nem o limiar5mm nessa associação específica. Falta fonte primária do algoritmo para distinguir cirurgia/conservador e2/5mm, sem transplantar critérios de outra fratura. Questão/gabarito/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-33-fratura-escapula"
    ],
-   "questaoSha256": "3a976bc93e3d4285b9188f819d067c7e54f5273389a6eba3910be5b8e63e3fff"
+   "questaoSha256": "3a976bc93e3d4285b9188f819d067c7e54f5273389a6eba3910be5b8e63e3fff",
+   "pendencia": "C registrada exige tratamento habitual conservador da luxaçãoAC com fratura do coracoide e CC íntegros e cirurgia na extensão glenoidal com desvio>=5mm. O corpo do resumo33 relata casos operados por lesões associadas, incluindo AC, e critérios articulares diferentes por grupo, mas não enuncia a regra habitual conservadora nem o limiar5mm nessa associação específica. Falta fonte primária do algoritmo para distinguir cirurgia/conservador e2/5mm, sem transplantar critérios de outra fratura. Questão/gabarito/comentário preservados."
   },
   "trauma-1270": {
    "tema": "trauma",
