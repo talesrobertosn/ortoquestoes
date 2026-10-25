@@ -14,7 +14,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
-| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 69 | 3 | mao-2189 a mao-2257 | A 18, B 17, C 17, D 17 |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 79 | 2 | mao-2189 a mao-2267 | A 20, B 19, C 20, D 20 |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
@@ -563,8 +563,8 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 12 | Sinostose unilateral: posição do antebraço dominante | conduta | cap. 38, p. 1517 (pista) | mao / Outras malformações congênitas | 12 | mao-2244 | publicada |
 | 13 | Ossificação do carpo: primeiros centros e cronologia | afirmativas | cap. 41, p. 1618 (pista) | mao / Anatomia da mão e punho | 13 | mao-2251 | publicada |
 | 14 | Rádio distal: arcos vasculares volares | anatomia | cap. 15, página a localizar | mao / Fratura do rádio distal | 07 | mao-2218 | publicada |
-| 15 | Pseudocontratura de VOLKMANN: etiologia não isquêmica | mecanismo | cap. 51, p. 1968 (pista) | mao / Outros temas da mão | 16 |  | a fazer |
-| 16 | Artropatias: padrão simétrico e poliarticular | comparação | cap. 55, p. 2044 (pista) | mao / Mão reumatoide | 16 |  | a fazer |
+| 15 | Pseudocontratura de VOLKMANN: etiologia não isquêmica | mecanismo | cap. 51, p. 1968 (pista) | mao / Outros temas da mão | 16 | mao-2264 | publicada |
+| 16 | Artropatias: padrão simétrico e poliarticular | comparação | cap. 55, p. 2044 (pista) | mao / Mão reumatoide | 16 | mao-2267 | publicada |
 | 17 | Queimadura química: indicação de gluconato de cálcio | conduta | cap. 57, p. 2144 (pista) | mao / Queimaduras | 17 |  | a fazer |
 | 18 | Aneurisma ulnar traumático: camada arterial lesada | mecanismo | cap. 60, p. 2242 (pista) | mao / Outros temas da mão | 18 |  | a fazer |
 | 19 | DUPUYTREN: associação com índice de massa corporal baixo | associação | cap. 4, p. 149 | mao / Doença de Dupuytren | 02 | mao-2197 | publicada |
@@ -601,8 +601,8 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 50 | Plexo infantil: ultrassom dinâmico do ombro | imagem | cap. 40, p. 1582 (pista) | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2250 | publicada |
 | 51 | Enxerto de pele: pressão e contato com o leito | técnica | cap. 44, p. 1709 (pista) | mao / Cicatrização e enxertos de pele | 14 | mao-2254 | publicada |
 | 52 | Retalho lateral do braço: artéria nutridora | anatomia | cap. 45, p. 1756 (pista) | mao / Microcirurgia e retalhos livres | 14 | mao-2256 | publicada |
-| 53 | Amputação do raio médio: efeito na pinça de chave | mecanismo | cap. 49, p. 1923 (pista) | mao / Amputações e reimplantes | 15 |  | a fazer |
-| 54 | SDRC: dor, sono e rigidez como achados inespecíficos | diagnóstico | cap. 53, p. 2011 (pista) | mao / Síndrome da dor complexa regional | 16 |  | a fazer |
+| 53 | Amputação do raio médio: efeito na pinça de chave | mecanismo | cap. 49, p. 1923 (pista) | mao / Amputações e reimplantes | 15 | mao-2261 | publicada |
+| 54 | SDRC: dor, sono e rigidez como achados inespecíficos | diagnóstico | cap. 53, p. 2011 (pista) | mao / Síndrome da dor complexa regional | 16 | mao-2266 | publicada |
 | 55 | Fibroma digital infantil: localização habitual | fato | cap. 59, página a localizar | mao / Tumores da mão | 18 |  | a fazer |
 | 56 | Cápsula anterior do cotovelo: inervação | anatomia | cap. 24, página a localizar | ombro-cotovelo / Anatomia do cotovelo | 20 |  | a fazer |
 | 57 | SEYMOUR: fise exposta e risco infeccioso | conduta | cap. 41, p. 1602 (pista) | mao / Fraturas dos metacarpos e falanges | 13 | mao-2252 | publicada |
@@ -617,7 +617,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 66 | BAUER-FLATT: retalho dorsal na comissura da sindactilia | técnica | cap. 36, p. 1379 (pista) | mao / Sindactilia e polidactilia | 12 | mao-2243 | publicada |
 | 67 | BAYNE-KLUG: deficiência radial parcial | classificação | cap. 38, p. 1496 (pista) | mao / Deficiências longitudinais e mão torta | 12 | mao-2247 | publicada (enunciado segue a Tabela 38.2: falta a porção distal) |
 | 68 | Artrogripose: posição habitual do antebraço | fato | cap. 39, p. 1531 (pista) | mao / Outras malformações congênitas | 13 | mao-2248 | publicada |
-| 69 | TAMAI e ALLEN: nível com perda da matriz ungueal | classificação | cap. 49, p. 1908 (pista) | mao / Amputações e reimplantes | 15 |  | a fazer |
+| 69 | TAMAI e ALLEN: nível com perda da matriz ungueal | classificação | cap. 49, p. 1908 (pista) | mao / Amputações e reimplantes | 15 | mao-2262 | publicada |
 | 70 | Grande dorsal livre: suprimento arterial | anatomia | cap. 45, p. 1770 (pista) | mao / Microcirurgia e retalhos livres | 14 | mao-2257 | publicada |
 | 71 | MOBERG: contratura como complicação | complicação | cap. 44, p. 1719-1720 (pista) | mao / Retalhos e cobertura cutânea | 14 | mao-2255 | publicada |
 | 72 | Bíceps distal roto: testes e déficits com alternativas defeituosas | exame | cap. 25, p. 1033-1034 (pista) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer (original ambíguo; resolver pelo Green) |
@@ -631,8 +631,8 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 80 | Punho: fração de carga pela fossa semilunar | número | cap. 13, p. 496 (pista) | mao / Instabilidade do carpo | 05 | mao-2210 | publicada |
 | 81 | Membrana interóssea: bandas na figura | anatomia, figura | cap. 21, p. 21 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 |  | pendente: conferir figura |
 | 82 | Embriologia: contribuição do mesoderma somítico | origem | cap. 35, p. 35 (pista) | mao / Outras malformações congênitas | 11 | mao-2239 | publicada |
-| 83 | Retalho lateral do braço na modalidade fascial | classificação | cap. 45, p. 45 (pista) | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
-| 84 | Côndilo femoral medial: quadrante da retirada | técnica | cap. 46, p. 46 (pista) | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
+| 83 | Retalho lateral do braço na modalidade fascial | classificação | cap. 45, p. 45 (pista) | mao / Microcirurgia e retalhos livres | 15 | mao-2258 | publicada |
+| 84 | Côndilo femoral medial: quadrante da retirada | técnica | cap. 46, p. 46 (pista) | mao / Microcirurgia e retalhos livres | 15 | mao-2259 | publicada |
 | 85 | Escafoide proximal: portal de visualização | técnica | cap. 17, p. 796 (pista) | mao / Artrose do punho e artroscopia | 08 | mao-2224 | publicada |
 | 86 | EWAS IIIB: componente dorsal lesionado | classificação | cap. 13, página a localizar | mao / Instabilidade do carpo | 06 | mao-2213 | publicada |
 | 87 | ELSON: diagnóstico da lesão da banda central | exame | cap. 5, p. 184 e 200; cap. 6, p. 225 | mao / Lesões dos tendões extensores | 01 | mao-2190 | publicada (manobra especificada para distinguir ELSON de BOYES) |
@@ -646,8 +646,8 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 95 | Tetraplegia: ramo do ERCC para flexor longo do polegar | transferência | cap. 33, p. 33 (pista) | mao / Transferências tendinosas e paralisias | 10 | mao-2236 | publicada |
 | 96 | FELDON: pescoço de cisne rígido sem artrose | classificação | cap. 55, p. 55 (pista) | mao / Mão reumatoide | 17 |  | a fazer |
 | 97 | NALEBUFF: polegar reumatoide com flexão interfalângica | classificação | cap. 55, p. 55 (pista) | mao / Mão reumatoide | 17 |  | a fazer |
-| 98 | Compartimento volar superficial: músculos incluídos | anatomia | cap. 51, p. 1972 (pista) | mao / Outros temas da mão | 16 |  | a fazer |
-| 99 | Amputação do antebraço: comprimento para prótese | número | cap. 50, p. 50 (pista) | mao / Amputações e reimplantes | 16 |  | a fazer |
-| 100 | JUMPING MAN: composição da zetaplastia nos desenhos | técnica, figura | cap. 48, p. 1878 (pista) | mao / Retalhos e cobertura cutânea | 15 |  | pendente: conferir figura |
+| 98 | Compartimento volar superficial: músculos incluídos | anatomia | cap. 51, p. 1972 (pista) | mao / Outros temas da mão | 16 | mao-2265 | publicada |
+| 99 | Amputação do antebraço: comprimento para prótese | número | cap. 50, p. 50 (pista) | mao / Amputações e reimplantes | 16 | mao-2263 | publicada |
+| 100 | JUMPING MAN: composição da zetaplastia nos desenhos | técnica, figura | cap. 48, p. 1878 (pista) | mao / Retalhos e cobertura cutânea | 15 | mao-2260 | publicada (figura descrita em texto) |
 
 Lotes: 01 (1, 87, 2, 20, 39) · 02 (76, 77, 38, 19, 78) · 03 (91, 40, 79, 34, 37) · 04 (41, 58, 3, 21, 4) · 05 (22, 42, 59, 75, 80) · 06 (86, 23, 43, 92, 5) · 07 (14, 6, 24, 33, 44) · 08 (61, 85, 90, 46, 8) · 09 (89, 9, 26, 63, 27) · 10 (47, 64, 65, 95, 10) · 11 (28, 82, 11, 29, 48) · 12 (66, 12, 30, 49, 67) · 13 (68, 31, 50, 13, 57) · 14 (32, 51, 71, 52, 70) · 15 (83, 84, 100, 53, 69) · 16 (99, 15, 98, 54, 16) · 17 (35, 96, 97, 17, 36) · 18 (88, 55, 74, 18) · 19 (25, 45, 93, 60, 62) · 20 (81, 56, 7, 72, 73) · 21 (94).
