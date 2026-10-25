@@ -13,7 +13,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, marcarReservadas, opcoesComPuxado, proximoDiaParaPuxar, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, idsParaRecuperar, incluiSimulados, marcarReservadas, opcoesComPuxado, opcoesComRecuperado, proximoDiaParaPuxar, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
@@ -314,6 +314,38 @@ export function PlanoEstudo() {
     if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma' }))) return
     navegar('/sessao')
   }
+  /**
+   * Fazer um dia que passou (pedido do Tales, 25/10/2026): prende ao dia perdido as próximas
+   * questões do plano (as que ele deixou para trás e foram espalhadas pelos próximos dias), grava
+   * no plano e abre a sessão. O que a pessoa fizer conta para aquele dia, não para a meta de hoje.
+   */
+  async function recuperarDia(dia: string) {
+    if (ficticio) { convidar('puxar'); return }
+    if (!indice || !calculo || !plano) return
+    const ids = idsParaRecuperar(calculo, dia)
+    if (!ids.length) return
+    let novo = plano
+    const opcoes = opcoesComRecuperado(plano, dia, ids, hojeBR())
+    if (opcoes) {
+      novo = { ...plano, opcoes }
+      definirPlano(novo)
+      if (!DEMO) {
+        definirSalvandoOpcoes(true); definirErro('')
+        try { const salvo = await salvarOpcoes((atual) => opcoesComRecuperado(atual, dia, ids, hojeBR())); if (salvo) novo = salvo }
+        catch { definirPlano(plano); definirErro('Não foi possível guardar as questões desse dia agora. Confira a conexão e tente de novo.'); return }
+        finally { definirSalvandoOpcoes(false) }
+      }
+    }
+    if (!DEMO) { definirPreparando(true); await aguardarSincronia(8000); definirPreparando(false) }
+    const atuais = DEMO ? respondidas : ler<Respondidas>('respondidas', {})
+    const c = calcularPlano(indice, atuais, novo)
+    const presas = c.recuperaveis.find((r) => r.chave === dia)?.recuperado?.ids ?? ids
+    const sessaoIds = presas.filter((id) => !atuais[id]).slice(0, 100)
+    if (!sessaoIds.length) return
+    const temas = [...new Set(sessaoIds.map((id) => indice.temas[indice.questoes.find((q) => q.id === id)?.t ?? -1]?.slug).filter((x): x is string => !!x))]
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma' }))) return
+    navegar('/sessao')
+  }
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
   async function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
     if (ficticio) { convidar('outro'); return }
@@ -431,7 +463,7 @@ export function PlanoEstudo() {
     return (
       <div className="empilha-2 pe cp cr cf">
         <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto ficticio={{ nome, aoConvidar: convidar }}
-          aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} />
+          aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} aoRecuperar={recuperarDia} hub={hub} />
         {convite && <ConviteFicticio motivo={convite} nome={nome} area={area ? { slug: area.slug, nome: area.nome } : null}
           aoTreinar={(slug) => { definirConvite(null); void treinarGratis(slug) }} aoFechar={() => definirConvite(null)} />}
       </div>
@@ -451,7 +483,7 @@ export function PlanoEstudo() {
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} aoRecuperar={recuperarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
     </div>
   )
 }
@@ -554,7 +586,7 @@ export interface HubDados {
   salvandoOpcoes: boolean
 }
 
-export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar, ficticio = null }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; /** Puxar um dia ("AAAA-MM-DD"): abre a sessão com as questões dele. */ aoPuxar?: (dia: string) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void; /** Cenário fictício de quem não assina: o painel do assinante com um plano de exemplo (CronogramaFicticio.tsx). */ ficticio?: { nome: string; aoConvidar: (motivo: MotivoConvite) => void } | null }) {
+export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, aoPuxar, aoRecuperar, pendente = null, hub = null, aoAjustar, ficticio = null }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; /** Puxar um dia ("AAAA-MM-DD"): abre a sessão com as questões dele. */ aoPuxar?: (dia: string) => void; /** Fazer um dia que passou ("AAAA-MM-DD"). */ aoRecuperar?: (dia: string) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void; /** Cenário fictício de quem não assina: o painel do assinante com um plano de exemplo (CronogramaFicticio.tsx). */ ficticio?: { nome: string; aoConvidar: (motivo: MotivoConvite) => void } | null }) {
   // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
   // para ele aparecer sozinho na primeira visita depois de assinar.
   const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
@@ -688,7 +720,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
     {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
         o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
     {temCalendario && <CalendarioCronograma embutido ficticio={!!ficticio} nome={nome} plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
-      acoes={{ aoComecar, pendente, aoPuxar: podeAdiantar ? aoPuxar : undefined, proximo: proximoPuxar, salvando: hub?.salvandoOpcoes }} />}
+      acoes={{ aoComecar, pendente, aoPuxar: podeAdiantar ? aoPuxar : undefined, aoRecuperar: aberto && !calculo.naRetaFinal && !calculo.provaPassou ? aoRecuperar : undefined, proximo: proximoPuxar, salvando: hub?.salvandoOpcoes }} />}
 
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">

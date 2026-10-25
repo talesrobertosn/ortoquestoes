@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from 'react'
 import { createPortal } from 'react-dom'
 import type { Indice } from '../dados/tipos'
-import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
+import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type DiaRecuperavel, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
 import { formatarTempo } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
 import { Icone } from '../componentes/Icone'
@@ -39,6 +39,8 @@ interface DiaCalendario {
   feitas: number
   areasFeitas: Array<{ slug: string; nome: string; n: number }>
   marcos: string[]
+  /** Dia que passou sem a meta feita (últimos 7 dias): a meta que teve e o que já foi feito para ele. */
+  recuperavel: DiaRecuperavel | null
 }
 
 const mesDe = mesCivil
@@ -57,6 +59,8 @@ export interface AcoesCalendario {
   aoPuxar?: (dia: string) => void
   /** Hoje terminado: o próximo dia de estudo para puxar (o mesmo botão do cartão Hoje). */
   proximo?: DiaPlano | null
+  /** Faz um dia que passou ("AAAA-MM-DD"): abre a sessão com as questões dele, que contam para ele. */
+  aoRecuperar?: (dia: string) => void
   salvando?: boolean
 }
 
@@ -143,13 +147,15 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   }
 
   // O que foi feito em cada dia (todas as respostas, como na constância), por área.
+  // A primeira resposta de uma questão presa a um dia recuperado conta para aquele dia.
   const feitoPorDia = useMemo(() => {
     const temaDe = new Map(indice.questoes.map((q) => [q.id, q.t]))
+    const diaRecuperado = new Map(Object.entries(plano.opcoes?.recuperados ?? {}).flatMap(([dia, ids]) => (Array.isArray(ids) ? ids : []).map((id) => [id, dia] as const)))
     const mapa = new Map<string, { n: number; temas: Map<number, number> }>()
     for (const [id, r] of Object.entries(respondidas)) {
       const momentos = r.historico?.length ? r.historico.map((h) => h.em) : r.q !== undefined ? [r.q] : []
-      for (const em of momentos) {
-        const k = chaveDoDia(em)
+      for (const [i, em] of momentos.entries()) {
+        const k = (i === 0 ? diaRecuperado.get(id) : undefined) ?? chaveDoDia(em)
         const dia = mapa.get(k) ?? { n: 0, temas: new Map() }
         dia.n++
         const t = temaDe.get(id)
@@ -158,7 +164,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
       }
     }
     return mapa
-  }, [indice, respondidas])
+  }, [indice, respondidas, plano.opcoes?.recuperados])
 
   const porChave = useMemo(() => new Map(calculo.dias.map((d) => [chaveCivil(d.data), d])), [calculo])
   const inicioPassada = useMemo(() => {
@@ -183,7 +189,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
     const passada = inicioPassada.get(chave)
     if (passada) marcos.push(`Começa a ${ROTULO_PASSADA[passada].nome}`)
     if (extra && extra.data === chave) marcos.push(`Prova: ${extra.nome}`)
-    return { data, chave, fase, ehHoje, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos }
+    return { data, chave, fase, ehHoje, folga, plano: plano_, feitas: feito?.n ?? 0, areasFeitas, marcos, recuperavel: fase === 'passado' ? calculo.recuperaveis.find((r) => r.chave === chave) ?? null : null }
   }
 
   // A grade do mês: semanas de segunda a domingo; os dias de fora do mês ficam vazios.
@@ -518,9 +524,21 @@ function Detalhe({ ancora, dia: d, calculo, plano, minutos, revisoesHoje, acoes,
     if (d.fase === 'prova') linhas.push({ id: 'sim', titulo: 'Simulado cronometrado', texto: 'No horário e com a duração da prova' }, { id: 'erros', titulo: 'Os erros que importam', texto: 'O que mais cai e você errou' })
     if (d.fase === 'vespera') linhas.push({ id: 'aq', titulo: 'Aquecimento leve', texto: 'Poucas questões, só para entrar no ritmo' })
   } else if (d.fase === 'passado') {
-    titulo = d.folga && !d.feitas ? 'Folga' : d.feitas >= DIA_MINIMO ? 'Feito' : d.feitas > 0 ? 'Feito em parte' : 'Sem estudo'
-    sub = d.feitas ? `Você respondeu ${d.feitas} ${d.feitas === 1 ? 'questão' : 'questões'} neste dia${d.feitas >= DIA_MINIMO ? ', o bastante para manter a sequência' : ''}.` : d.folga ? 'Dia de descanso do seu plano.' : 'Nenhuma questão neste dia. O que ficou para trás já foi redistribuído pelos próximos dias.'
+    const r = d.recuperavel
+    titulo = d.folga && !d.feitas ? 'Folga' : r && r.falta > 0 ? (d.feitas > 0 ? 'Feito em parte' : 'Dia perdido') : d.feitas >= DIA_MINIMO ? 'Feito' : d.feitas > 0 ? 'Feito em parte' : 'Sem estudo'
+    sub = r && r.falta > 0
+      ? <>{r.feitas > 0 ? `${r.feitas} de ${r.meta} questões feitas para este dia. ` : `A meta deste dia era ${r.meta} questões. `}Dá para fazer {r.feitas > 0 ? 'o que faltou' : 'o dia'} agora: as questões contam para ele, não para a meta de hoje.</>
+      : r?.recuperado ? <>Dia recuperado: <b className="cc-verde">{r.feitas} de {r.meta} questões</b> feitas para ele.</>
+      : d.feitas ? `Você respondeu ${d.feitas} ${d.feitas === 1 ? 'questão' : 'questões'} neste dia${d.feitas >= DIA_MINIMO ? ', o bastante para manter a sequência' : ''}.` : d.folga ? 'Dia de descanso do seu plano.' : 'Nenhuma questão neste dia. O que ficou para trás já foi redistribuído pelos próximos dias.'
     for (const a of d.areasFeitas.slice(0, 6)) linhas.push({ id: a.slug, cor: corDaArea(a.slug), titulo: `${a.n} de ${a.nome}` })
+    if (r && r.falta > 0 && acoes.aoRecuperar) {
+      const comecado = !!r.recuperado && r.recuperado.ids.length > r.recuperado.livres.length
+      const n = r.recuperado ? r.recuperado.livres.length : r.falta
+      if (n > 0) acao = <button type="button" className="cp-botao cp-botao--ouro" disabled={acoes.salvando} onClick={() => { aoFechar(); acoes.aoRecuperar!(d.chave) }}>
+        {comecado ? <>Continuar <span className="cc-junto">{diaCurto(d.data)}</span></> : <>Fazer este dia agora</>}
+        <small>{n} {n === 1 ? 'questão' : 'questões'} · ~{formatarTempo(n * minutos)} · contam para {diaCurto(d.data)}, não para hoje</small>
+      </button>
+    }
   } else if (d.folga && (!p || p.tipo === 'folga')) {
     titulo = 'Folga'
     sub = d.fase === 'hoje' ? 'Dia de descanso no seu plano. Se quiser estudar, adiante o próximo dia de estudo no cartão Hoje.' : 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias.'
