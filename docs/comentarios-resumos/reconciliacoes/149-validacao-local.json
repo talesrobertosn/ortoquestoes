@@ -1,0 +1,150 @@
+{
+  "dataBrasilia": "2026-10-25T05:31:48.110396-03:00",
+  "base": "6ba28f91d3e73f7d2dd60a08a38874a1984ba649",
+  "lotes": [
+    148,
+    149
+  ],
+  "ids": [
+    "coluna-0023",
+    "coluna-0288",
+    "coluna-0310",
+    "coluna-0322",
+    "coluna-0463",
+    "coluna-0464",
+    "trauma-0142",
+    "trauma-1200",
+    "trauma-0662",
+    "coluna-0164",
+    "coluna-0159",
+    "coluna-0508",
+    "coluna-0533",
+    "coluna-0350",
+    "trauma-0287",
+    "trauma-0054",
+    "coluna-0146"
+  ],
+  "quantidade": 17,
+  "estados": {
+    "duplicada": 87,
+    "pendente": 617,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 240,
+    "pendente-inspecao-imagem": 88,
+    "revisada": 1327
+  },
+  "resumos": 33,
+  "prAnterior": {
+    "body": "Vinte comentários cervicais foram reescritos como miniaulas, em dois lotes de dez. O lote com figuras foi revisado após abertura individual das dez imagens. As aulas explicam medidas, estabilidade, redução, implantes, lesão vascular e classificação com análise própria de cada alternativa, a partir do corpo/tabelas do resumo do Rockwood, 10ª edição, capítulo 48.\n\nEnunciados, gabaritos, imagens e revisão médica preservados; conferido:false. Na questão 0529, a legenda independente do resumo identifica estágio 4; o comentário não inventa milímetros a partir de TC sem escala. Três lacunas precisas ficam pendentes: algoritmo canadense, 0511, Biffl/conduta, 0514 e identidade da imagem, 0078. Nenhuma delas recebeu baseResumo nem foi contada como revisão.\n\nValidação: 14fixtures, validar_acervo, npm test completo, build, diff-check e replay dos vinte comentários/avulsos com fontes, hashes e todas as alternativas. Vinte casos no celular e computador passaram com resposta, selo, links exatos e carregamento das imagens; capturas representativas inspecionadas. Base inclui c91be6b1, preservando o trabalho de conceitos básicos. Oito PRs alheios e seus commits conferidos. PR #519 anterior reconciliado com CI, guarda/deploy e produção.\n\nEvidência, IDs e hashes das figuras: docs/comentarios-resumos/reconciliacoes/147-validacao-local.json. Próximo lote livre: 148. Aguardar checks do head, merge e comparação de produção; revisão integral permanece incompleta.\n\n\nPublicação confirmada em 25/10/2026: head feafa2267bf3724abbab9715b99b44d2835101a7; CI 40172730141 passou; merge 6ba28f91d3e73f7d2dd60a08a38874a1984ba649. Pages 40172885254, head 6ba28f91d3e73f7d2dd60a08a38874a1984ba649, executou guarda e deploy no job 121107819784. Os vinte avulsos dos lotes 146–147 em produção foram comparados integralmente com os comentários validados, sem diferenças. O capítulo-fonte 48 e letras.json também foram comparados integralmente em produção. As dez figuras foram comparadas por SHA256, sem diferenças.\n\nPróximo lote livre: 148. Reconciliar este merge e não reaplicar 146–147. As lacunas de fonte continuam pendentes e não contam como revisão concluída. Catálogo: 1310 revisadas, 636 pendentes, 237 pendentes de fonte, 89 aguardando inspeção de imagem, 2 figuras ausentes, 9 anuladas e 87 duplicadas, em 33 resumos. A tarefa integral permanece incompleta. Checkpoint detalhado em docs/comentarios-resumos/RETOMADA-2026-10-20.md.\n",
+    "headRefOid": "feafa2267bf3724abbab9715b99b44d2835101a7",
+    "mergeCommit": {
+      "oid": "6ba28f91d3e73f7d2dd60a08a38874a1984ba649"
+    },
+    "state": "MERGED"
+  },
+  "remoto": [
+    {
+      "pr": 517,
+      "head": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+      "commits": [
+        "ba0f849dd5b2987732b4a735e917fcc903886a5c"
+      ]
+    },
+    {
+      "pr": 371,
+      "head": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+      "commits": [
+        "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+        "714323bcee21a533ea33cf7048a307a24deffc44",
+        "553b1041eafa4cf9b173ea616cc293537739eb08",
+        "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+      ]
+    },
+    {
+      "pr": 308,
+      "head": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+      "commits": [
+        "980b2d734b62cd5a28098224e8dbf0c11194a185",
+        "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+      ]
+    },
+    {
+      "pr": 253,
+      "head": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+      "commits": [
+        "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+        "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+        "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+        "94859424a3fa5fb70347baea0a2a831a26ddd622"
+      ]
+    },
+    {
+      "pr": 179,
+      "head": "86aeeb45a1284a4bab358ad66df593286e64876a",
+      "commits": [
+        "86aeeb45a1284a4bab358ad66df593286e64876a"
+      ]
+    },
+    {
+      "pr": 178,
+      "head": "c695d3d697b62de9cb1317922a61af543f4369a5",
+      "commits": [
+        "3c7daf1f481a22a119402544f44007696520ce1e",
+        "c695d3d697b62de9cb1317922a61af543f4369a5"
+      ]
+    },
+    {
+      "pr": 174,
+      "head": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+      "commits": [
+        "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+      ]
+    },
+    {
+      "pr": 93,
+      "head": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+      "commits": [
+        "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+        "97e77b073134af9277107123ff27e7cb369139b5",
+        "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+      ]
+    }
+  ],
+  "fontes": "Corpo, tabelas e legendas independentes dos resumos Rockwood 10ª edição, capítulos 48 e 49. Capítulo48 integralmente lido na passagem anterior, sem mudança; trechos pertinentes relidos. Capítulo49 inteiro, 619 linhas, lido nesta passagem, incluindo releitura separada de311–465 após truncamento do retorno combinado. Sem contexto de questão ou comentário antigo como autoridade; sem página impressa ou atribuição de leitura direta do livro.",
+  "figuras": {
+    "public/imagens/coluna/coluna-0164-1.jpeg": "f0a54d22a934cba624cc461452f20a7634cac2e5b5cdec84fbad174d08c3e2f1"
+  },
+  "outrasFigurasAbertasSemRevisao": [
+    "coluna-0216",
+    "trauma-1206"
+  ],
+  "alertas": [
+    "coluna-0288",
+    "trauma-0662",
+    "trauma-0287"
+  ],
+  "provaveisBibliograficosPreservados": {
+    "coluna-0322": "C",
+    "coluna-0350": "B"
+  },
+  "lacunasNovas": [
+    "coluna-0465",
+    "coluna-0467",
+    "coluna-0468"
+  ],
+  "validacao": [
+    "14fixtures",
+    "validar_acervo",
+    "npm test completo",
+    "build",
+    "git diff --check",
+    "replay de aplicar.preparar desde a base; fontes/hashes/todas alternativas/17avulsos",
+    "17casos UI celular390/computador1440, resposta/selo/links e figura",
+    "6capturas representativas abertas; alerta0287 final inspecionado",
+    "letras integrais iguais ao build"
+  ],
+  "ajusteFinal": "Apenas espaço em «30 graus» no alerta0287. Aplicação reconstruída com aplicar.preparar contra original sob lock; fixtures/acervo/build/replay/diff e UI0287 repetidos após o ajuste. npm test completo passou antes desse ajuste cosmético.",
+  "preservacao": "Enunciados, alternativas, IDs, áreas, gabaritos, imagens, revisão médica e membros alheios preservados; conferido:false. Aplicar.py e flock /tmp/claude-0/acervo.lock.",
+  "proximoLote": 150
+}

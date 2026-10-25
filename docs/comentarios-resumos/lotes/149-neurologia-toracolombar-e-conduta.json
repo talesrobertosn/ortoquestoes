@@ -1,0 +1,321 @@
+{
+  "coluna-0159": {
+    "questaoSha256": "98cc693debf3432156911c603f66517e06ca04ef7d8b4b4d3ab18fa5e9e18cb1",
+    "comentarioAnteriorSha256": "af868afb8287e8f5e97ae13e5c50b8bc6620d92614a6580d13b270cc162082bf",
+    "comentario": {
+      "conceito": "O paciente mantém força e percebe dor, mas não reconhece adequadamente a posição de uma articulação sem olhar para ela. Essa dissociação aponta para **síndrome medular posterior**, porque a propriocepção percorre as colunas dorsais.\n\nAs vias não transportam toda a sensibilidade por um único caminho. As colunas dorsais conduzem posição articular, vibração e tato discriminativo; dor e temperatura sobem pelo espinotalâmico. Por isso uma lesão posterior pode comprometer a noção da posição sem reproduzir a perda de força, dor e temperatura da síndrome anterior (Rockwood, 10ª ed., cap. 48, “As síndromes anterior e posterior”).\n\n**“Tato preservado” não deve ser transformado em toda sensibilidade posterior normal.** O enunciado usa tato de forma genérica. A pista que localiza a síndrome é a perda proprioceptiva com força e dor preservadas; modalidades como tato discriminativo pertencem ao sistema dorsal e precisam ser testadas separadamente.\n\nO cone medular envolve outro conjunto: sinais mistos motores nos membros inferiores, disfunção esfincteriana e anestesia em sela, descritos no capítulo toracolombar. Não é a síndrome definida pela perda proprioceptiva isolada da questão.\n\n> **Na prova:** propriocepção comprometida com força e dor preservadas remete à síndrome posterior.",
+      "correta": "**D: medular posterior.** A dissociação sugere comprometimento das colunas dorsais com preservação relativa das vias motoras e dolorosas. É preciso diferenciar tato genérico de tato discriminativo ao examinar.",
+      "incorretas": {
+        "A": "**Destaca a distribuição motora errada para o caso.** Na síndrome central clássica, braços e mãos ficam mais fracos que as pernas. A pergunta informa força preservada e destaca uma modalidade sensitiva posterior, não predomínio braquial de fraqueza.",
+        "B": "**Inverte o sistema preservado.** A síndrome anterior compromete motor, dor e temperatura e preserva propriocepção. Aqui o padrão é o oposto: a propriocepção está alterada e as funções motoras e dolorosas permanecem.",
+        "C": "**É um quadro da terminação da medula com outros sinais.** O cone pode produzir alterações motoras de primeiro e segundo neurônio, anestesia em sela e disfunção vesical/intestinal/sexual. Esses achados não foram descritos; a pista dada localiza as colunas posteriores."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas.",
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "A medula cervical e as síndromes incompletas"
+        ],
+        "blocos": [
+          "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+          "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+          "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "3e210b1bdde6ecf64cab339fbda9a754abd1d5c1a41d074219262f6f683accfb"
+      },
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "42decc5b92cbd321b2de733438075f2b17d65953b31a663790c827afef700b9d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0508": {
+    "questaoSha256": "de3bd85a14b92e475284a8a214e12935ef99db62b6f7d4d6e59c459329690521",
+    "comentarioAnteriorSha256": "5221d760e709e6e9c2cfbac726ef6eb83cb6b573fe85a1ac1c2d39d610485fca",
+    "comentario": {
+      "conceito": "A pressão está muito baixa e o coração, em vez de acelerar, bate a 48 por minuto num paciente com lesão cervical e tetraplegia. Essa **hipotensão com bradicardia** aponta para um componente de **choque neurogênico**, pela perda da resposta simpática.\n\nA falta de tônus vascular e de estímulo para acelerar o coração explica por que volume sozinho pode ser insuficiente. O resumo cervical descreve vasopressor e líquidos criteriosos, advertindo para edema pulmonar com reposição indiscriminada. O alvo de PAM acima de 85 mmHg é a referência cobrada no simulado (Rockwood, 10ª ed., cap. 48, “Choque neurogênico”).\n\n**O mecanismo não exclui hemorragia associada.** O capítulo toracolombar ressalta que muitos politraumatizados também têm componente hipovolêmico. A avaliação precisa procurar sangramento e ajustar a ressuscitação; não se deve atribuir automaticamente toda a hipotensão à medula. O mesmo capítulo discute incertezas do alvo pressórico e apresenta protocolo institucional de PAM de 80 ou mais, de modo que 85 não é uma fronteira universal independente do contexto.\n\nChoque medular é outro conceito: supressão transitória de reflexos e função neurológica abaixo da lesão. Não é o nome da vasoplegia e não se trata com corticoide como substituto do suporte circulatório.\n\n> **Na prova:** lesão medular, hipotensão e bradicardia: neurogênico; vasopressor, volume individualizado e busca de sangramento associado.\n\n**Por que esta questão foi criada.** Treina a distinção entre os dois choques e a necessidade de tratar perfusão sem ignorar hemorragia no politraumatizado.",
+      "correta": "**C: choque neurogênico, vasopressor e volume criterioso.** A perda simpática sustenta o diagnóstico e o suporte combinado. PAM acima de 85 é o alvo apresentado nesta alternativa e no resumo cervical, com limites e protocolos diferentes discutidos na fonte toracolombar.",
+      "incorretas": {
+        "A": "**Explica parte possível do politrauma, mas não todo o padrão.** Hemorragia deve ser procurada e pode coexistir. Entretanto, bradicardia paradoxal com lesão medular sugere componente neurogênico, e reposição agressiva sem individualização pode causar dano e não corrigir a vasoplegia.",
+        "B": "**Confunde a alteração neurológica reflexa com a hemodinâmica.** Choque medular não é sinônimo de hipotensão com perda do simpático. Metilprednisolona é discutida como opção controversa, não como tratamento que substitui vasopressor e ressuscitação.",
+        "D": "**Reconhece o diagnóstico e trata só uma parte do defeito.** Volume pode ser necessário, sobretudo se houver sangramento, mas a falta de tônus vascular pode exigir vasopressor. Evitá-lo de forma absoluta e insistir em volume não reproduz a orientação da fonte."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico.",
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atendimento inicial e exame neurológico"
+        ],
+        "blocos": [
+          "atendimento-inicial-e-exame-neurologico-cef312c6",
+          "atendimento-inicial-e-exame-neurologico-bcf22ac5"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "8ed3338738e8fb97c12268c4eff2d18838ff708f1e2d717eafc5cf1280e13a10"
+      },
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+          "exame-neurologico-choque-neurogenico-choque-medu-e94269cc",
+          "exame-neurologico-choque-neurogenico-choque-medu-63c9c09c",
+          "exame-neurologico-choque-neurogenico-choque-medu-717b321e"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "d6b801adec1583097d168393182c51b833ba58660584fd49e613a072e3d20371"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0533": {
+    "questaoSha256": "d2759ebbe1af11907d71c245c7a9290d49e05ecd0b0173e0ed3b3ca600253f59",
+    "comentarioAnteriorSha256": "e28692c516e5e59fd2e106679c8fe8125e93ffb3e52af60c8005887b3c993b5b",
+    "comentario": {
+      "conceito": "A fratura está em T12–L1 e o paciente tem anestesia em sela, retenção urinária e sinais motores mistos nos membros inferiores. O conjunto aponta para o **cone medular**, na transição entre medula e raízes.\n\nNo adulto, o resumo situa o afilamento final da medula entre T11 e L1 e a terminação medular em L1. A lesão nessa região pode combinar sinais de primeiro e segundo neurônio motor, déficits nos membros inferiores e alterações vesicais, intestinais e sexuais. É essa combinação, e não apenas o número de uma vértebra, que localiza o caso (Rockwood, 10ª ed., cap. 49, “O cone medular e a cauda equina”).\n\n**A cauda equina contém raízes, não medula.** Por isso chamá-la de lesão isolada não explica tão bem os sinais mistos apresentados. Os sintomas esfincterianos precisam ser pesquisados ativamente; o capítulo adverte que uma disfunção vesical pode passar despercebida quando o paciente já chega sondado.\n\nAs síndromes central e anterior são padrões de lesão medular incompleta definidos por outras dissociações: predomínio de fraqueza nos braços na central e perda motora/dolorosa/térmica com propriocepção preservada na anterior. Não são a melhor localização para o conjunto em sela e esfincteriano descrito.\n\n> **Na prova:** transição toracolombar, sinais mistos e anestesia em sela com disfunção vesical: cone medular.\n\n**Por que esta questão foi criada.** Treina a localização pela associação de achados, incluindo uma função vesical que pode ficar oculta pela sondagem.",
+      "correta": "**B: cone medular.** O nível de transição e os sinais mistos, sensitivos e esfincterianos correspondem à síndrome descrita na fonte.",
+      "incorretas": {
+        "A": "**Explica raízes e parte dos sintomas, mas não tão bem os sinais mistos.** A cauda equina é formada por raízes abaixo da medula. O enunciado destaca combinação de primeiro e segundo neurônio na região do cone, favorecendo comprometimento medular terminal.",
+        "C": "**Tem outra distribuição clínica típica.** A síndrome central cervical produz fraqueza maior em membros superiores, especialmente mãos. O caso localiza o problema na transição toracolombar com sintomas perineais e vesicais.",
+        "D": "**É definida por outra dissociação das vias.** Na anterior, comprometem-se motor, dor e temperatura com propriocepção preservada. O conjunto de sinais mistos, sela e retenção urinária na região terminal localiza melhor o cone."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Exame neurológico: choque neurogênico, choque medular e ASIA.",
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Exame neurológico: choque neurogênico, choque medular e ASIA"
+        ],
+        "blocos": [
+          "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd",
+          "exame-neurologico-choque-neurogenico-choque-medu-e82f8763"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "193386c115032948d7cabea6f59b1371391145f1936d659336d3f36b78af7750"
+      },
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "A medula cervical e as síndromes incompletas"
+        ],
+        "blocos": [
+          "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+          "a-medula-cervical-e-as-sindromes-incompletas-0d50e411"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "c3910fbc80a98b1ff34417f19674ea8463ee5d5672a8f961b97b3dacfcee319b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0350": {
+    "questaoSha256": "16a87eb875eb896b316175ebc497dc57fb54c84581c88f18a1d4145a0bd69fe1",
+    "comentarioAnteriorSha256": "837a736acd5e32360e972d67b487dae09359bc15c9b0f525b1c161b5021b126b",
+    "comentario": {
+      "conceito": "Na Chance clássica, a falha de flexão-distração atravessa **osso de uma única vértebra**. Chamar essa lesão puramente óssea de ruptura do ligamento longitudinal anterior troca o padrão B1 por uma descrição ligamentar que não o define. A afirmação é errada.\n\nO eixo de rotação fica à frente do corpo vertebral; por trás dele, o osso se abre em tensão. O traço pode atravessar elementos posteriores e corpo sem atravessar o disco. O resumo enfatiza que essa lesão de três colunas é **puramente óssea**, o que ajuda a explicar seu potencial de consolidação com alinhamento mantido (Rockwood, 10ª ed., cap. 49, “B1: a fratura de Chance”).\n\n**Flexão-distração não é sempre o mesmo subtipo.** Na B2, a falha ocorre no nível intervertebral e pode envolver osso, ligamento ou ambos. Transferir essa descrição para a Chance clássica elimina a distinção que a classificação procura fazer.\n\nA associação com lesão abdominal continua importante: o cinto pode funcionar como fulcro à frente da coluna. Reconhecer a lesão óssea não torna o restante do trauma benigno nem dispensa avaliar vísceras e vasos.\n\n> **Na prova:** Chance clássica é a falha transóssea B1; não é definida por ruptura do longitudinal anterior.",
+      "correta": "**B: Errado.** O padrão clássico descrito é puramente ósseo e atravessa uma vértebra. Lesão do longitudinal anterior não é o elemento que o define; mantém-se a resposta bibliográfica já existente, sem gabarito oficial registrado.",
+      "incorretas": {
+        "A": "**Atribuiria ao ligamento a falha que o texto descreve pelo osso.** A Chance clássica pode atingir três colunas por um trajeto transósseo, sem ser uma ruptura ligamentar anterior por definição. É preciso distingui-la da B2 intervertebral e da B3 por falha da banda anterior em hiperextensão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Flexão-distração e fratura de Chance (tipo B1 e B2); Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Flexão-distração e fratura de Chance (tipo B1 e B2)",
+          "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+        ],
+        "blocos": [
+          "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+          "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-a4dcbec6",
+          "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667",
+          "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "217885a50251a6a480299c9596940c11a3f2a2c0252581622d7bf7160743f5bd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0287": {
+    "questaoSha256": "320ebefcab90de088b072e72132e20b02193fcfc766bf186932bb8e42a4fc25f",
+    "comentarioAnteriorSha256": "44223e092411ab4de971d52b2c887315c4f9dc2e4c876e4b30dd61b72f952a95",
+    "comentario": {
+      "conceito": "A alternativa B reúne dois sinais de deformidade que pesam na decisão: **perda de altura acima de 50% e cifose acima de 30 graus**. Há, porém, um erro de unidade na opção registrada: cifose deve ser expressa em graus, não em porcentagem.\n\nA redução da altura do corpo e a angulação podem indicar perda importante de sustentação. O resumo as apresenta como indicações relativas no paciente neurologicamente intacto, enquanto déficit e ruptura confirmada do complexo posterior são motivos mais fortes para estabilização. O alinhamento e a contenção ligamentar importam além do número de colunas de Denis (Rockwood, 10ª ed., cap. 49, “Quando operar a explosão”).\n\n**Ocupação do canal isolada não decide cirurgia.** Um fragmento retropulsado sem déficit pode remodelar; a fonte não associa a porcentagem de canal, sozinha, a pior resultado. Por isso não se deve substituir instabilidade ou déficit por um corte automático de retropulsão.\n\nO escore TLICS também deve ser lido corretamente: 3 ou menos costuma orientar tratamento não cirúrgico, 4 é intermediário e 5 ou mais favorece cirurgia. Ter duas colunas atingidas não cancela os outros domínios nem torna “TLICS 3” um critério cirúrgico.\n\n> **Na prova:** B é o gabarito, lendo cifose em graus e reconhecendo que os números são critérios relativos no contexto clínico.",
+      "correta": "**B: perda de altura acima de 50% e cifose acima de 30 graus.** O gabarito é preservado com correção explicativa da unidade, sem alterar a opção original. No paciente intacto, são critérios relativos, integrados à estabilidade e aos demais achados.",
+      "incorretas": {
+        "A": "**Confunde uma descrição estrutural com o corte de um escore.** Explosões podem atingir colunas anterior e média sem exigir cirurgia se estiverem estáveis e sem déficit. Um TLICS de 3 favorece tratamento não cirúrgico, não confirma a indicação operatória.",
+        "C": "**Usa invasão do canal como atalho e um limiar angular que não é o descrito.** Retropulsão acima de 30%, isoladamente e sem déficit, não é indicação automática na fonte. A opção ainda expressa cifose em porcentagem, unidade inadequada.",
+        "D": "**Acerta a perda de altura e acrescenta uma relação sem critério cirúrgico isolado.** Retropulsão menor que 30% não se torna indicação para operar. É preciso avaliar déficit, complexo posterior, deformidade e capacidade de manter o alinhamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Fratura em explosão (A3 e A4); Classificações: estabilidade, Denis, AO Spine e TLICS."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada. A alternativa registrada escreve cifose em porcentagem; a fonte usa graus: perda de altura >50% e cifose de 30 graus ou mais são critérios relativos no paciente intacto. Déficit e ruptura confirmada do complexo posterior têm outro peso. A retropulsão isolada, sem déficit, não decide cirurgia."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-49-fratura-toracolombar",
+        "titulo": "Fraturas e luxações da coluna toracolombar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura em explosão (A3 e A4)",
+          "Classificações: estabilidade, Denis, AO Spine e TLICS"
+        ],
+        "blocos": [
+          "fratura-em-explosao-a3-e-a4-b87f9844",
+          "fratura-em-explosao-a3-e-a4-eb5b42b1",
+          "fratura-em-explosao-a3-e-a4-c49f544e",
+          "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b"
+        ],
+        "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+        "trechosSha256": "3819d0f2bce7cc59b02922b87a61c78d207324c8392ddd96e8aab6de9fc1dafd"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0054": {
+    "questaoSha256": "4c0a80b3e9c43b2e5501452a1157cbec80387b6692afd62824645bbe075e0684",
+    "comentarioAnteriorSha256": "ad6b847f8a14da48ae5ed01c1dfe2e15202746f84c15fefcdaec93494d857357",
+    "comentario": {
+      "conceito": "Uma vertebral está lesada e o paciente precisa de estabilização cervical baixa. O planejamento não pode colocar em risco a artéria que permaneceu patente. Entre as opções, o alerta do capítulo recai sobre **acesso posterior com parafusos de massa lateral**, alternativa C.\n\nA lesão unilateral pode produzir poucas sequelas e passar despercebida no exame neurológico. O problema surge se a montagem agride também o lado sadio, convertendo a situação em comprometimento bilateral. O resumo recomenda evitar ou redobrar o cuidado com parafusos de massa lateral e transarticulares no lado da vertebral patente (Rockwood, 10ª ed., cap. 48, “Lesão da artéria vertebral”).\n\n**Isso não equivale a proibir toda via posterior ou declarar todo implante anterior seguro.** A trajetória do parafuso e a anatomia individual decidem o risco. Na exposição anterior, o capítulo também orienta preservar a linha média e não ultrapassar lateralmente as articulações uncovertebrais para proteger a vertebral.\n\nO gabarito identifica a montagem que a fonte destaca como ameaça à circulação remanescente. Ele não dispensa avaliar os demais trajetos ou escolher a via de acordo com a lesão óssea, discal e ligamentar.\n\n> **Na prova:** vertebral lesada: atenção especial à patente do outro lado ao planejar massa lateral; o risco depende do trajeto.",
+      "correta": "**C: posterior com parafuso de massa lateral.** É o trajeto explicitamente destacado na fonte pelo risco de lesar a vertebral remanescente. A advertência é específica ao planejamento neurovascular da montagem.",
+      "incorretas": {
+        "A": "**A via anterior tem riscos, mas não é a montagem destacada pela questão.** A fonte orienta limitar a exposição às referências uncovertebrais e manter a linha média para proteger a vertebral. Placa anterior não significa ausência de risco, mas não corresponde ao alerta específico de massa lateral.",
+        "B": "**Usa um trajeto diferente, que não deve ser equiparado apenas pelo nome da via.** O alerta do resumo não é “toda fixação posterior”: ele se dirige aos trajetos de massa lateral ou transarticulares que ameaçam a vertebral patente. A segurança de uma montagem translaminar também requer planejamento individual.",
+        "D": "**Reconstrói a coluna pela frente e não reproduz o trajeto de risco destacado.** O uso de cage envolve outros critérios de suporte e alinhamento. Proteger a vertebral na exposição anterior continua necessário, mas o implante não é o parafuso de massa lateral perguntado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Lesão da artéria vertebral; Vias de acesso, fixação e complicações; Anatomia aplicada e biomecânica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Lesão da artéria vertebral",
+          "Vias de acesso, fixação e complicações",
+          "Anatomia aplicada e biomecânica"
+        ],
+        "blocos": [
+          "lesao-da-arteria-vertebral-e72216c9",
+          "vias-de-acesso-fixacao-e-complicacoes-e56df247",
+          "anatomia-aplicada-e-biomecanica-abd6af76"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "a4c21752bca010fc057179a1ef772fe5fd44fbbb5d4fc7793860301d7ea3b2d0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0146": {
+    "questaoSha256": "17f44dd4787687f4fd6fcf09a88e1086e7ecc7df143af7978c3c4ebe31c245aa",
+    "comentarioAnteriorSha256": "077147788f9177d4613e3069795bc276d2e4cb1edb0f1bca569d29d8df05e48d",
+    "comentario": {
+      "conceito": "Depois de uma fusão cervical anterior, a queixa mais frequente da lista é **dificuldade para engolir, ou disfagia**. Ela deve ser distinguida de problemas de ferida, de implante e de lesão de um nervo específico.\n\nA via anterior chega à coluna entre a bainha carotídea lateral e a traqueia com o esôfago mediais. Essa relação explica a necessidade de avaliar deglutição e voz depois da exposição. O resumo lista disfagia como complicação mais comum, em até 50%, quase sempre subclínica; esse número não significa disfagia grave ou persistente em metade dos pacientes (Rockwood, 10ª ed., cap. 48, “A via anterior de Smith-Robinson” e “As complicações da via anterior”).\n\n**Mais comum não quer dizer mais grave.** Uma infecção ou uma falha de montagem pode exigir tratamento importante sem ser a complicação que lidera a frequência. A pergunta pede comparar ocorrência, não escolher o problema de maior impacto potencial.\n\nO capítulo descreve separadamente disfonia por lesão do recorrente, Horner por agressão simpática e riscos esofágicos e vasculares. Identificar o mecanismo de uma complicação ajuda a não misturar todos os sintomas do pescoço sob um único rótulo.\n\n> **Na prova:** na via anterior cervical, a complicação mais comum apresentada é disfagia.",
+      "correta": "**A: disfagia.** É a complicação que lidera a lista do resumo. Pode ser discreta ou subclínica, e não deve ser confundida com toda alteração da voz ou com uma perfuração do esôfago.",
+      "incorretas": {
+        "B": "**É um problema de ferida, sem ocupar o primeiro lugar nesta comparação.** Infecção pode ser grave, mas a fonte coloca disfagia como mais comum na via anterior e relata mais problemas de infecção na posterior. Gravidade e frequência não são sinônimos.",
+        "C": "**Troca a comparação pela escolha de um nervo.** Os problemas neurais destacados na via anterior incluem recorrente, laríngeo superior e cadeia simpática, com manifestações próprias. O nome de outro nervo não substitui a complicação de deglutição explicitamente descrita como mais frequente.",
+        "D": "**Pertence ao funcionamento mecânico da montagem.** O suporte e a extensão da reconstrução precisam ser planejados para evitar falha. Isso não faz a soltura do implante superar a disfagia como ocorrência mais comum nesta pergunta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Vias de acesso, fixação e complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Vias de acesso, fixação e complicações"
+        ],
+        "blocos": [
+          "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+          "vias-de-acesso-fixacao-e-complicacoes-b201fbe8",
+          "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a",
+          "vias-de-acesso-fixacao-e-complicacoes-a35e7c44",
+          "vias-de-acesso-fixacao-e-complicacoes-508207a6",
+          "vias-de-acesso-fixacao-e-complicacoes-af7593e4",
+          "vias-de-acesso-fixacao-e-complicacoes-6daa51d4"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "5c0b45f1c968cb5f247856680cc6a07f0960ead8d6cd2cbb03ad2a487b55e456"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
