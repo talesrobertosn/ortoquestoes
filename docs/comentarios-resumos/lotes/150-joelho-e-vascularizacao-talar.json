@@ -1,0 +1,208 @@
+{
+  "joelho-0021": {
+    "questaoSha256": "9af4526afbee1335329352b0a35c12a1bcad2b6753197062fd0777fba55a97ea",
+    "comentarioAnteriorSha256": "d765e293f23fb0959b69848ac5afa5c589c5e0f82b230625ab27a615f6da37bf",
+    "comentario": {
+      "conceito": "O fragmento de Segond fica na **margem lateral da tíbia**. O ponto decisivo não é simplesmente haver um pequeno fragmento perto do joelho, mas de qual osso e de qual margem ele se desprendeu.\n\nO resumo relaciona a avulsão de Segond ao ligamento anterolateral e à cápsula anterolateral. Assim, o fragmento é uma pista óssea de lesão de partes moles: procurar apenas uma grande fratura e ignorar a pequena avulsão pode deixar escapar o padrão ligamentar associado (Rockwood, 10ª ed., cap. 61, “Radiografias”).\n\nÉ especialmente útil comparar com o **sinal arqueado**: nele, a avulsão é da cabeça da fíbula, e a suspeita recai sobre o canto posterolateral. O canto reúne colateral fibular, tendão do poplíteo e ligamento popliteofibular. Segond e sinal arqueado são laterais, mas não são o mesmo fragmento nem apontam para o mesmo conjunto anatômico.\n\nA eminência intercondilar ocupa outra região da tíbia, entre os planaltos; a margem medial está do lado oposto ao anterolateral. Localizar o fragmento antes de nomear a lesão evita tratar toda avulsão como sinônimo de Segond. A avaliação ligamentar e a RM completam a investigação quando indicada.\n\n> **Na prova:** Segond é tibial e lateral; cabeça da fíbula remete ao sinal arqueado.",
+      "correta": "**A: margem lateral da tíbia.** A avulsão acompanha a inserção do complexo anterolateral descrita no capítulo. O pequeno fragmento deve levar à investigação da lesão ligamentar, não ser lido apenas como uma fratura isolada.",
+      "incorretas": {
+        "B": "**Troca a lateralidade da lesão.** A margem medial da tíbia não é o local da avulsão anterolateral de Segond. Reconhecer o lado é indispensável antes de relacionar o fragmento às estruturas ligamentares.",
+        "C": "**Confunde a borda com a região entre os planaltos.** A eminência intercondilar é central, enquanto Segond é marginal e lateral. A proximidade no mesmo osso não torna as duas avulsões equivalentes.",
+        "D": "**Aponta para o sinal arqueado, não para Segond.** A avulsão da cabeça da fíbula é uma pista de lesão do canto posterolateral. O osso de origem já separa os dois achados: fíbula em D, tíbia na resposta correta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; Canto posterolateral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Imagem",
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "imagem-c89ac8ba",
+          "imagem-0472b462",
+          "imagem-54f5e9e5",
+          "canto-posterolateral-66452e25"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "d00b247f3e314f6a2d4f02a8a6fe5666a84effb94db7691c02ad85e9ed2ef571"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0294": {
+    "questaoSha256": "caa109b1efc085aa2dcf0a2d7ca1960ea97a37577d81d0652e11188fb9b0fa6b",
+    "comentarioAnteriorSha256": "62e6d38d942eafdaba35ca89df2ffad486984ca079be63411da61a97d2b9b512",
+    "comentario": {
+      "conceito": "Para reconstruir um canto posterolateral insuficiente, é preciso recuperar o controle do **varo, da rotação externa e da translação posterior**. O trio central é **colateral fibular, tendão do poplíteo e ligamento popliteofibular**, que corresponde à alternativa A.\n\nEsses nomes representam funções complementares. O colateral fibular é o principal estabilizador estático contra varo. A unidade do poplíteo participa do controle rotatório, e o popliteofibular liga o sistema à fíbula como estabilizador estático contra varo, rotação externa e deslocamento posterior. O músculo poplíteo roda a tíbia internamente, mas, como estabilizador, ajuda a resistir à rotação externa; ação muscular e movimento contido não são a mesma frase (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\nA reconstrução deve acompanhar **o que está efetivamente roto**. O resumo recomenda reconstruir as estruturas principais lesadas e permite combinar reconstrução com reparo de estruturas secundárias; não manda operar todo o canto de todo paciente apenas porque um de seus componentes falhou. A reparação isolada de lesões laterais tem resultados menos consistentes, salvo situações como avulsões ósseas fixáveis.\n\nNas outras opções, a inclusão do nome “arqueado” vem acompanhada da retirada de um dos três elementos fundamentais. É essa ausência que invalida os conjuntos. O resumo descreve o trio e técnicas anatômicas atuais, mas não documenta a atribuição histórica a Warren; não se deve fingir ter consultado o trabalho original.\n\n> **Na prova:** o conjunto é colateral fibular, poplíteo e popliteofibular; sem gabarito oficial no acervo, A permanece bibliográfica/provável.",
+      "correta": "**A: tendão do poplíteo, ligamentos popliteofibular e colateral lateral.** Reúne os três componentes principais descritos. Mantém-se A bibliográfica como provável, sem atribuir resposta oficial ou leitura de uma publicação de Warren.",
+      "incorretas": {
+        "B": "**Retira o tendão do poplíteo do conjunto.** Conserva os dois ligamentos da lista principal, mas não inclui a unidade musculotendínea importante no controle rotatório. Acrescentar “arqueado” não recompõe o elemento omitido.",
+        "C": "**Omite o ligamento popliteofibular.** Ele é o componente estático que liga o sistema poplíteo à fíbula e resiste às forças posteriores, ao varo e à rotação externa. A alternativa não contém o trio completo descrito na fonte.",
+        "D": "**Deixa de fora o colateral fibular.** Esse ligamento é o estabilizador estático primário contra varo, sobretudo nos primeiros graus de flexão. A presença dos componentes poplíteos não substitui a sua função."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral."
+      ],
+      "conferido": false,
+      "alerta": "Não há gabarito oficial publicado. A é a resposta provável pela bibliografia e não conta no desempenho. A anatomia a reconstruir deve ser individualizada; a tríade proposta identifica os principais estabilizadores do canto posterolateral, não exige enxertar todos em qualquer lesão parcial.",
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "Canto posterolateral"
+        ],
+        "blocos": [
+          "canto-posterolateral-66452e25",
+          "canto-posterolateral-474af362",
+          "canto-posterolateral-0b736828",
+          "canto-posterolateral-622a04b8",
+          "canto-posterolateral-ed823b43",
+          "canto-posterolateral-6aabb99f",
+          "canto-posterolateral-e1623413",
+          "canto-posterolateral-5cf8f764"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "d990e531d7e12680683f8b68b218a51e791bf44492cea64cb307342ce5d36cbf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "joelho-0373": {
+    "questaoSha256": "3fcc2529bd68d17d87d33a903507268afcca9fb63b4bc80ebe36cb09513b6b6e",
+    "comentarioAnteriorSha256": "e74f0e947ce58ee94c17c945611b66952641ac3172a447451cc19d28101c95f0",
+    "comentario": {
+      "conceito": "A seta está junto ao colo da fíbula, no trajeto de um nervo que contorna o osso antes de seguir para seus ramos. Essa relação identifica o **nervo fibular comum**, alternativa C. A referência útil é o colo da fíbula; não basta escolher um nome porque também aparece na perna.\n\nO capítulo descreve o fibular comum profundo e posterior ao tendão do bíceps, contornando a fíbula cerca de 1,5 a 2 cm abaixo da ponta do estiloide. Como o nervo fica preso nessa região e no septo intermuscular, forças que afastam os segmentos do joelho podem estirá-lo por um trecho extenso. Isso explica sua vulnerabilidade na lesão do canto posterolateral e nas luxações do joelho (Rockwood, 10ª ed., cap. 61, “O nervo fibular comum”).\n\n**O enunciado pede o tronco antes da divisão.** Fibular profundo é uma identificação distal, de ramo, e não o nome do tronco nesse ponto. O nervo tibial também é relevante no joelho, inclusive pelo risco durante o túnel tibial do cruzado posterior, mas não é a estrutura que contorna o colo fibular.\n\nA relação anatômica tem consequência prática: documentar a função nervosa antes de intervir e protegê-lo na abordagem lateral. Quando há paralisia, o capítulo destaca órtese e mobilização de pé e tornozelo desde o início, para evitar equino que prejudique a marcha e opções reconstrutivas futuras.\n\n> **Na prova:** nervo contornando o colo fibular, antes de se dividir: fibular comum.\n\n**Por que esta questão foi criada.** Treina a identificação anatômica que explica a lesão nervosa nas instabilidades laterais e sua proteção durante a reconstrução.",
+      "correta": "**C: fibular comum.** O trajeto indicado contorna o colo da fíbula ainda como tronco. A localização explica o risco de estiramento nas lesões posterolaterais e exige exame e proteção próprios.",
+      "incorretas": {
+        "A": "**O nome não corresponde ao tronco no ponto marcado.** A seta identifica a estrutura que segue junto ao colo da fíbula antes da divisão fibular. A escolha deve ser feita por esse trajeto e nível, sem chamar de sural todo nervo visível na perna.",
+        "B": "**Confunde o risco central posterior com o trajeto lateral.** O tibial integra o feixe ameaçado na perfuração do túnel do cruzado posterior. Aqui a referência é o nervo que contorna a fíbula, descrito no capítulo como fibular comum.",
+        "D": "**Escolhe um ramo quando a pergunta exige o tronco.** O ponto é proximal à divisão terminal; por isso ainda não deve ser denominado fibular profundo. O adjetivo “comum” é justamente o detalhe anatômico que resolve essa alternativa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O nervo fibular comum; Cruzado posterior: a pedra fundamental."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-61-luxacao-joelho",
+        "titulo": "Luxação do joelho e lesão multiligamentar",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 61 · Knee Dislocations",
+        "secoes": [
+          "O nervo fibular comum",
+          "Cruzado posterior: a pedra fundamental"
+        ],
+        "blocos": [
+          "o-nervo-fibular-comum-8a85bf5b",
+          "o-nervo-fibular-comum-05d3e14c",
+          "cruzado-posterior-a-pedra-fundamental-ad28ed59"
+        ],
+        "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+        "trechosSha256": "017161d99411bcb85803677c0c94594ef19e377c21e37d6e4d1ef68e71773bd3"
+      }
+    ],
+    "imagensConferidas": [
+      "joelho/joelho-0373-1.jpeg"
+    ]
+  },
+  "trauma-0570": {
+    "questaoSha256": "fcb973e2660151087d36ae9bf62bd3160664a93f521d58fea7700f7e613b31f7",
+    "comentarioAnteriorSha256": "43d06adcf3a1d50e4a7c6703705dfc9f9ae9ce77aeb574d268a3199e118147b7",
+    "comentario": {
+      "conceito": "A radiografia mostra um fragmento separado na região **superolateral da patela**, com contornos regulares. No paciente com pouca dor e extensão ativa preservada, esse padrão favorece **patela bipartida**, não uma fratura aguda obrigatoriamente causada pelo trauma de uma hora atrás.\n\nA bipartida resulta da fusão incompleta de centros de ossificação. O fragmento acessório costuma ficar superolateral, com bordas lisas e corticalizadas, e frequentemente existe também no outro joelho. O trauma pode motivar a radiografia e revelar uma variante que já estava lá; presença de um traço depois de uma queda não prova que o traço foi criado pela queda (Rockwood, 10ª ed., cap. 60, “Patela bipartida e outros simuladores”).\n\nA comparação com o joelho contralateral ajuda porque o padrão costuma ser bilateral. O exame também importa: extensão ativa preservada indica continuidade funcional dos retináculos e do mecanismo extensor, embora **não exclua toda fratura**. Uma fratura aguda com retináculos íntegros também pode estender; é o conjunto de localização, margens e clínica que sustenta a hipótese.\n\nO diagnóstico diferencial não deve apagar a história. Pseudartrose exige uma fratura que não consolidou, não apenas um fragmento visto no primeiro exame; uma lesão osteocondral envolve a superfície articular e deve ser investigada quando houver suspeita, especialmente após luxação. Nenhuma dessas alternativas explica melhor o padrão acessório superolateral mostrado.\n\n> **Na prova:** fragmento superolateral corticalizado, pouco sintoma e extensor íntegro: procure bipartida e compare o outro joelho.",
+      "correta": "**A: patela bipartida.** A posição superolateral e os contornos regulares favorecem um centro de ossificação não fusionado. O tempo curto do trauma não transforma a variante em fratura recente.",
+      "incorretas": {
+        "B": "**Troca uma variante de ossificação por um problema de viabilidade óssea.** O capítulo descreve risco de necrose do fragmento proximal após fratura pela perfusão retrógrada, mas isso não explica um fragmento acessório superolateral de margens regulares neste cenário.",
+        "C": "**Pressupõe falha de consolidação de uma fratura anterior.** O paciente relata trauma há uma hora, e a imagem tem o padrão descrito para bipartida. Uma separação óssea, sozinha, não documenta fratura antiga sem consolidação.",
+        "D": "**Leva a discussão para a superfície osteocondral sem a pista correspondente.** O achado dominante é o fragmento superolateral regular, e não um defeito articular demonstrado. Suspeita de lesão condral pode exigir RM, mas não supera a identificação da variante neste conjunto."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Patela bipartida e outros simuladores; Exame físico e fratura exposta oculta; Anatomia e biomecânica do mecanismo extensor; Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-60-patela-mecanismo-extensor",
+        "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+        "secoes": [
+          "Patela bipartida e outros simuladores",
+          "Exame físico e fratura exposta oculta",
+          "Anatomia e biomecânica do mecanismo extensor",
+          "Complicações"
+        ],
+        "blocos": [
+          "patela-bipartida-e-outros-simuladores-27cbef14",
+          "exame-fisico-e-fratura-exposta-oculta-845aa804",
+          "anatomia-e-biomecanica-do-mecanismo-extensor-705cc98b",
+          "patela-bipartida-e-outros-simuladores-f0b1afd4",
+          "complicacoes-3f5b04aa"
+        ],
+        "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+        "trechosSha256": "99aa9d187a89a7adedfa54f96b5bb10a283006597974d1a82cc9b6eaffb44ff6"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0570-1.jpeg"
+    ]
+  },
+  "pe-tornozelo-0422": {
+    "questaoSha256": "eb41269bd8a41e7d0445d8f0ea5aefe7222d44049b0469b02a12fe485e3c53ec",
+    "comentarioAnteriorSha256": "ebdfaa93710a322d301afd9cfcfd5c39b074aa8004a04ab0d88a5f5c28cd1162",
+    "comentario": {
+      "conceito": "A pergunta junta duas informações que precisam permanecer associadas: **artéria do canal do tarso** e **tibial posterior**. Trocar apenas o vaso ou apenas sua origem já desmonta a resposta. A alternativa D mantém o par correto.\n\nO tálus tem grande parte da superfície coberta por cartilagem, com poucas áreas disponíveis para entrada de vasos. A artéria do canal do tarso, ramo da tibial posterior, passa a integrar uma alça com a artéria do seio do tarso e é uma fonte importante para o corpo, incluindo os dois terços laterais. O ramo deltoide, também da tibial posterior, contribui para a parte medial; os ramos da dorsal do pé chegam sobretudo à face dorsal do colo e da cabeça (Rockwood, 10ª ed., cap. 66, “As portas de entrada do sangue”).\n\nIsso explica por que **corpo, colo e cabeça não devem ser usados como territórios intercambiáveis**. Na fratura desviada do colo, o corpo pode perder conexões vasculares; se o deltoide ainda o prende, o ramo que passa pelo ligamento pode ser uma fonte remanescente importante. Preservar essa ligação pode ser decisivo no acesso e na redução.\n\nA alça anastomótica não apaga a identidade de seus componentes. “Canal” e “seio” participam de uma rede, mas a origem nominal cobrada para a artéria do canal continua sendo a tibial posterior. A questão não exige uma porcentagem exata de necrose nem permite concluir que todo desvio necessariamente produza necrose.\n\n> **Na prova:** principal par do corpo talar: canal do tarso, da tibial posterior.",
+      "correta": "**D: artéria do canal do tarso e tibial posterior.** É a combinação explicitamente descrita como importante suprimento do corpo. A fonte distingue esse território da contribuição dorsal para colo e cabeça.",
+      "incorretas": {
+        "A": "**Substitui o vaso que a pergunta procura.** A artéria do seio participa da alça, mas não é o par canal do tarso–tibial posterior destacado para o corpo. Participar da rede não torna todos os nomes e origens intercambiáveis.",
+        "B": "**Mantém o nome da artéria e troca seu tronco.** A do canal do tarso vem da tibial posterior. A dorsal do pé participa do suprimento do colo e da cabeça e não deve ser usada como origem desse ramo específico.",
+        "C": "**Acerta um tronco importante e o associa ao componente errado do par.** Para o suprimento principal descrito do corpo, a fonte nomeia canal do tarso da tibial posterior. A ligação entre canal e seio é uma anastomose, não autorização para substituir seus nomes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-66-talus",
+        "titulo": "Fraturas e luxações do tálus",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+        "secoes": [
+          "Anatomia e vascularização"
+        ],
+        "blocos": [
+          "anatomia-e-vascularizacao-67b0e630",
+          "anatomia-e-vascularizacao-d9802b86",
+          "anatomia-e-vascularizacao-07f26b9a",
+          "anatomia-e-vascularizacao-b8a242e2",
+          "anatomia-e-vascularizacao-d570e842"
+        ],
+        "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+        "trechosSha256": "1be0b7686fe3421bb9df9a2dcce9387141ff2de1088424c54008f77f00b0ffd6"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

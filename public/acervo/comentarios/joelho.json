@@ -244,15 +244,45 @@
   "conferido": false
  },
  "joelho-0021": {
+  "conceito": "O fragmento de Segond fica na **margem lateral da tíbia**. O ponto decisivo não é simplesmente haver um pequeno fragmento perto do joelho, mas de qual osso e de qual margem ele se desprendeu.\n\nO resumo relaciona a avulsão de Segond ao ligamento anterolateral e à cápsula anterolateral. Assim, o fragmento é uma pista óssea de lesão de partes moles: procurar apenas uma grande fratura e ignorar a pequena avulsão pode deixar escapar o padrão ligamentar associado (Rockwood, 10ª ed., cap. 61, “Radiografias”).\n\nÉ especialmente útil comparar com o **sinal arqueado**: nele, a avulsão é da cabeça da fíbula, e a suspeita recai sobre o canto posterolateral. O canto reúne colateral fibular, tendão do poplíteo e ligamento popliteofibular. Segond e sinal arqueado são laterais, mas não são o mesmo fragmento nem apontam para o mesmo conjunto anatômico.\n\nA eminência intercondilar ocupa outra região da tíbia, entre os planaltos; a margem medial está do lado oposto ao anterolateral. Localizar o fragmento antes de nomear a lesão evita tratar toda avulsão como sinônimo de Segond. A avaliação ligamentar e a RM completam a investigação quando indicada.\n\n> **Na prova:** Segond é tibial e lateral; cabeça da fíbula remete ao sinal arqueado.",
+  "correta": "**A: margem lateral da tíbia.** A avulsão acompanha a inserção do complexo anterolateral descrita no capítulo. O pequeno fragmento deve levar à investigação da lesão ligamentar, não ser lido apenas como uma fratura isolada.",
   "incorretas": {
-   "B": "**Margem medial lembra Segond reverso.** Essa avulsão tem outra localização e exige investigação de um conjunto diferente de lesões associadas.",
-   "C": "**Eminência intercondilar é avulsão da inserção tibial do LCA.** A lesão costuma aparecer em pacientes esqueleticamente imaturos, não na borda lateral do platô.",
-   "D": "**Ápice fibular é o sinal arcuato.** Ele aponta para estruturas do canto posterolateral e não define Segond."
+   "B": "**Troca a lateralidade da lesão.** A margem medial da tíbia não é o local da avulsão anterolateral de Segond. Reconhecer o lado é indispensável antes de relacionar o fragmento às estruturas ligamentares.",
+   "C": "**Confunde a borda com a região entre os planaltos.** A eminência intercondilar é central, enquanto Segond é marginal e lateral. A proximidade no mesmo osso não torna as duas avulsões equivalentes.",
+   "D": "**Aponta para o sinal arqueado, não para Segond.** A avulsão da cabeça da fíbula é uma pista de lesão do canto posterolateral. O osso de origem já separa os dois achados: fíbula em D, tíbia na resposta correta."
   },
-  "conceito": "**O fragmento é lateral e tibial.** A fratura de Segond é uma pequena avulsão na borda anterolateral da tíbia proximal, logo abaixo do platô. O complexo capsuloligamentar anterolateral e fibras relacionadas ao trato iliotibial participam da região de inserção; não se deve pressupor que um único ligamento explique todos os casos. Na radiografia frontal, o pequeno fragmento pode passar despercebido.\n\n**Por que procurá-la.** Segond é uma pista forte de lesão do LCA e de possível dano meniscal ou anterolateral associado. O mecanismo costuma combinar rotação interna e varo. Identificar a avulsão não substitui exame ligamentar nem ressonância quando indicada, mas impede que o caso seja tratado como simples fratura periférica sem investigar a estabilidade do joelho.\n\n**Três avulsões que confundem.** O Segond reverso sai da margem medial da tíbia e sugere investigar lesões mediais e do LCP, embora suas associações não sejam invariáveis. A avulsão da eminência intercondilar corresponde à inserção tibial do LCA, especialmente em crianças. Já um fragmento no ápice da cabeça fibular é o sinal arcuato, marcador de lesão do canto posterolateral.",
-  "correta": "**Margem lateral da tíbia.** Essa é a localização óssea que define a fratura de Segond.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Imagem; Canto posterolateral."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Imagem",
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "imagem-c89ac8ba",
+      "imagem-0472b462",
+      "imagem-54f5e9e5",
+      "canto-posterolateral-66452e25"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "d00b247f3e314f6a2d4f02a8a6fe5666a84effb94db7691c02ad85e9ed2ef571"
+    }
+   ],
+   "questaoSha256": "9af4526afbee1335329352b0a35c12a1bcad2b6753197062fd0777fba55a97ea",
+   "comentarioSha256": "a776f5c5039de6b5759ae9851d01109598a627f70c463cbfeea2fe7dde8bac9a"
+  }
  },
  "joelho-0022": {
   "incorretas": {
@@ -4366,21 +4396,50 @@
   }
  },
  "joelho-0294": {
+  "conceito": "Para reconstruir um canto posterolateral insuficiente, é preciso recuperar o controle do **varo, da rotação externa e da translação posterior**. O trio central é **colateral fibular, tendão do poplíteo e ligamento popliteofibular**, que corresponde à alternativa A.\n\nEsses nomes representam funções complementares. O colateral fibular é o principal estabilizador estático contra varo. A unidade do poplíteo participa do controle rotatório, e o popliteofibular liga o sistema à fíbula como estabilizador estático contra varo, rotação externa e deslocamento posterior. O músculo poplíteo roda a tíbia internamente, mas, como estabilizador, ajuda a resistir à rotação externa; ação muscular e movimento contido não são a mesma frase (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\nA reconstrução deve acompanhar **o que está efetivamente roto**. O resumo recomenda reconstruir as estruturas principais lesadas e permite combinar reconstrução com reparo de estruturas secundárias; não manda operar todo o canto de todo paciente apenas porque um de seus componentes falhou. A reparação isolada de lesões laterais tem resultados menos consistentes, salvo situações como avulsões ósseas fixáveis.\n\nNas outras opções, a inclusão do nome “arqueado” vem acompanhada da retirada de um dos três elementos fundamentais. É essa ausência que invalida os conjuntos. O resumo descreve o trio e técnicas anatômicas atuais, mas não documenta a atribuição histórica a Warren; não se deve fingir ter consultado o trabalho original.\n\n> **Na prova:** o conjunto é colateral fibular, poplíteo e popliteofibular; sem gabarito oficial no acervo, A permanece bibliográfica/provável.",
+  "correta": "**A: tendão do poplíteo, ligamentos popliteofibular e colateral lateral.** Reúne os três componentes principais descritos. Mantém-se A bibliográfica como provável, sem atribuir resposta oficial ou leitura de uma publicação de Warren.",
   "incorretas": {
-   "B": "**Falta o tendão do poplíteo.** O arqueado pode participar da cápsula posterior, mas não substitui a função do complexo poplíteo no controle rotacional. Manter colateral e popliteofibular sem reconhecer a origem e o trajeto do poplíteo deixa incompleta a tríade principal.",
-   "C": "**Falta o ligamento popliteofibular.** Poplíteo e colateral lateral são importantes, porém a ligação do complexo poplíteo à fíbula dá estabilidade à rotação externa. Trocar essa estrutura pelo arqueado perde um freio anatômico descrito nos estudos biomecânicos.",
-   "D": "**Falta o colateral lateral.** Poplíteo e popliteofibular ajudam a controlar rotação, mas o colateral fibular é o principal restritor à abertura em varo. O arqueado não compensa sua ausência numa reconstrução destinada a restaurar estabilidade lateral."
+   "B": "**Retira o tendão do poplíteo do conjunto.** Conserva os dois ligamentos da lista principal, mas não inclui a unidade musculotendínea importante no controle rotatório. Acrescentar “arqueado” não recompõe o elemento omitido.",
+   "C": "**Omite o ligamento popliteofibular.** Ele é o componente estático que liga o sistema poplíteo à fíbula e resiste às forças posteriores, ao varo e à rotação externa. A alternativa não contém o trio completo descrito na fonte.",
+   "D": "**Deixa de fora o colateral fibular.** Esse ligamento é o estabilizador estático primário contra varo, sobretudo nos primeiros graus de flexão. A presença dos componentes poplíteos não substitui a sua função."
   },
-  "alerta": "Não há gabarito oficial publicado. A é a resposta provável pela bibliografia e não conta no desempenho. A anatomia a reconstruir deve ser individualizada; a tríade proposta identifica os principais estabilizadores do canto posterolateral, não exige enxertar todos em qualquer lesão parcial.",
   "referencias": [
-   "Veltri DM, Warren RF. Anatomy, biomechanics, and physical findings in posterolateral knee instability. Clin Sports Med. 1994;13(3):599-614. https://pubmed.ncbi.nlm.nih.gov/7954886/",
-   "Veltri DM et al. The role of the popliteofibular ligament in stability of the human knee. Am J Sports Med. 1996;24(1):19-27. https://pubmed.ncbi.nlm.nih.gov/8638748/"
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral."
   ],
-  "conceito": "**“Canto” é um complexo, não um único ligamento.** Na região posterolateral do joelho, estruturas fibrosas e tendíneas ligam fêmur, tíbia e fíbula. Elas contêm abertura em varo, rotação externa da tíbia e parte da translação posterolateral. Se falham junto de um cruzado, a instabilidade passa a ocorrer em vários planos; reconstruir só o cruzado pode deixar forças anormais sobre o enxerto.\n\n**Três componentes concentram as funções principais.** O ligamento colateral lateral, também chamado fibular, vai do fêmur à cabeça da fíbula e é o principal freio estático ao varo. O tendão do poplíteo participa do controle rotacional e integra o complexo poplíteo. O ligamento popliteofibular conecta essa unidade à fíbula e ajuda a restringir rotação externa e deslocamento posterolateral. Reconstruções anatômicas procuram restaurar essas funções nos pontos de inserção adequados.\n\n**O arqueado não substitui a tríade.** O ligamento arqueado e a cápsula posterolateral também contribuem, mas a identificação anatômica do arqueado é variável e ele não ocupa o papel biomecânico central dos três componentes acima. O exame combina varo a 30° e em extensão, rotação externa comparada ao outro lado e pesquisa de lesões cruzadas. Em lesões crônicas com varo, o alinhamento precisa entrar no planejamento, pois carga persistente em varo pode ameaçar a reconstrução.",
-  "correta": "**Provável A: poplíteo, popliteofibular e colateral lateral.** A opção reúne controle rotacional pelo complexo poplíteo e resistência ao varo pelo colateral fibular, cobrindo as funções decisivas do canto posterolateral. É a tríade anatômica associada a Warren e adotada em reconstruções modernas.",
+  "conferido": false,
+  "alerta": "Não há gabarito oficial publicado. A é a resposta provável pela bibliografia e não conta no desempenho. A anatomia a reconstruir deve ser individualizada; a tríade proposta identifica os principais estabilizadores do canto posterolateral, não exige enxertar todos em qualquer lesão parcial.",
   "provavel": "A",
-  "geradoEm": "2026-10-17",
-  "conferido": false
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "canto-posterolateral-66452e25",
+      "canto-posterolateral-474af362",
+      "canto-posterolateral-0b736828",
+      "canto-posterolateral-622a04b8",
+      "canto-posterolateral-ed823b43",
+      "canto-posterolateral-6aabb99f",
+      "canto-posterolateral-e1623413",
+      "canto-posterolateral-5cf8f764"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "d990e531d7e12680683f8b68b218a51e791bf44492cea64cb307342ce5d36cbf"
+    }
+   ],
+   "questaoSha256": "caa109b1efc085aa2dcf0a2d7ca1960ea97a37577d81d0652e11188fb9b0fa6b",
+   "comentarioSha256": "95bbe5912ca30b58d168e5ad6a4c67ee1d67b19fb6fed5da971dba49ce86833d"
+  }
  },
  "joelho-0295": {
   "incorretas": {
@@ -5737,18 +5796,44 @@
   "conferido": false
  },
  "joelho-0373": {
-  "conceito": "**A inervação da perna se organiza por compartimentos, mas os nervos cutâneos precisam ser estudados à parte.** O nervo fibular comum contorna o colo da fíbula e se divide em superficial e profundo. O superficial supre os fibulares longo e curto no compartimento lateral. O profundo acompanha o compartimento anterior e inerva seus dorsiflexores e extensores dos dedos.\n\nO nervo tibial desce pela região posterior e fornece os ramos motores para os compartimentos posterior superficial e profundo. Já o safeno é um ramo sensitivo do nervo femoral: atende à pele medial da perna e dá o ramo infrapatelar para a região anterior e medial do joelho. Seu trajeto abaixo do joelho não o transforma em ramo do tibial.\n\n| Nervo | Relação anatômica ou território |\n|---|---|\n| Fibular comum | Colo da fíbula, antes da divisão terminal |\n| Fibular profundo | Músculos do compartimento anterior |\n| Fibular superficial | Músculos do compartimento lateral |\n| Tibial | Músculos posteriores superficiais e profundos |\n| Safeno | Sensibilidade medial da perna e ramo infrapatelar |\n| Sural | Sensibilidade posterolateral distal da perna e região lateral do pé |\n\nO sural é cutâneo; não é o nervo motor do compartimento posterior. Sua formação apresenta variações, portanto o território e o trajeto superficial são referências mais constantes que uma origem única obrigatória. Na dissecção posterior do joelho, o tibial ocupa a região central, enquanto o fibular comum se dirige lateralmente à fíbula. Essa separação permite conferir qual tronco foi apontado antes de relacioná-lo à função.",
-  "correta": "**C: fibular comum.** Contorna o colo da fíbula e se divide nos ramos superficial e profundo. A localização proximal à bifurcação impede identificar o alvo como apenas um dos dois ramos terminais.",
+  "conceito": "A seta está junto ao colo da fíbula, no trajeto de um nervo que contorna o osso antes de seguir para seus ramos. Essa relação identifica o **nervo fibular comum**, alternativa C. A referência útil é o colo da fíbula; não basta escolher um nome porque também aparece na perna.\n\nO capítulo descreve o fibular comum profundo e posterior ao tendão do bíceps, contornando a fíbula cerca de 1,5 a 2 cm abaixo da ponta do estiloide. Como o nervo fica preso nessa região e no septo intermuscular, forças que afastam os segmentos do joelho podem estirá-lo por um trecho extenso. Isso explica sua vulnerabilidade na lesão do canto posterolateral e nas luxações do joelho (Rockwood, 10ª ed., cap. 61, “O nervo fibular comum”).\n\n**O enunciado pede o tronco antes da divisão.** Fibular profundo é uma identificação distal, de ramo, e não o nome do tronco nesse ponto. O nervo tibial também é relevante no joelho, inclusive pelo risco durante o túnel tibial do cruzado posterior, mas não é a estrutura que contorna o colo fibular.\n\nA relação anatômica tem consequência prática: documentar a função nervosa antes de intervir e protegê-lo na abordagem lateral. Quando há paralisia, o capítulo destaca órtese e mobilização de pé e tornozelo desde o início, para evitar equino que prejudique a marcha e opções reconstrutivas futuras.\n\n> **Na prova:** nervo contornando o colo fibular, antes de se dividir: fibular comum.\n\n**Por que esta questão foi criada.** Treina a identificação anatômica que explica a lesão nervosa nas instabilidades laterais e sua proteção durante a reconstrução.",
+  "correta": "**C: fibular comum.** O trajeto indicado contorna o colo da fíbula ainda como tronco. A localização explica o risco de estiramento nas lesões posterolaterais e exige exame e proteção próprios.",
   "incorretas": {
-   "A": "É um nervo cutâneo de trajeto posterolateral superficial, com formação variável. O tronco indicado no colo da fíbula é o fibular comum, antes da divisão em ramos motores e sensitivos.",
-   "B": "Segue pela região posterior da perna e fornece ramos para os músculos posteriores. Não contorna o colo fibular para formar os nervos fibular profundo e superficial.",
-   "D": "É um ramo terminal que entra no compartimento anterior. A seta está no tronco comum antes da separação; identificar o profundo exige seguir o ramo que passa ao plano anterior."
+   "A": "**O nome não corresponde ao tronco no ponto marcado.** A seta identifica a estrutura que segue junto ao colo da fíbula antes da divisão fibular. A escolha deve ser feita por esse trajeto e nível, sem chamar de sural todo nervo visível na perna.",
+   "B": "**Confunde o risco central posterior com o trajeto lateral.** O tibial integra o feixe ameaçado na perfuração do túnel do cruzado posterior. Aqui a referência é o nervo que contorna a fíbula, descrito no capítulo como fibular comum.",
+   "D": "**Escolhe um ramo quando a pergunta exige o tronco.** O ponto é proximal à divisão terminal; por isso ainda não deve ser denominado fibular profundo. O adjetivo “comum” é justamente o detalhe anatômico que resolve essa alternativa."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo 9, Joelho/Perna: Osteologia, Articulações, Músculos, Nervos e Artérias."
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O nervo fibular comum; Cruzado posterior: a pedra fundamental."
   ],
-  "geradoEm": "2026-10-11",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "O nervo fibular comum",
+      "Cruzado posterior: a pedra fundamental"
+     ],
+     "blocos": [
+      "o-nervo-fibular-comum-8a85bf5b",
+      "o-nervo-fibular-comum-05d3e14c",
+      "cruzado-posterior-a-pedra-fundamental-ad28ed59"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "017161d99411bcb85803677c0c94594ef19e377c21e37d6e4d1ef68e71773bd3"
+    }
+   ],
+   "questaoSha256": "3fcc2529bd68d17d87d33a903507268afcca9fb63b4bc80ebe36cb09513b6b6e",
+   "comentarioSha256": "c112cf45a0e8108500c070987fe96fee671c96237fbfe87ee492f9f50f16bbd6"
+  }
  },
  "joelho-0374": {
   "conceito": "**A circulação do joelho distingue a rede periférica da irrigação das estruturas centrais.** Ramos geniculares superiores e inferiores, mediais e laterais, contornam a articulação e participam da rede periarticular. A artéria genicular média, ramo da poplítea, penetra a cápsula posterior e alcança a região dos cruzados e a sinóvia central. Não é uma troca de nome da artéria tibial anterior.\n\nNa perna, os vasos principais acompanham planos musculares diferentes. A artéria tibial anterior passa para o compartimento anterior através de uma abertura proximal da membrana interóssea e acompanha o nervo fibular profundo. A tibial posterior permanece no plano posterior profundo, relacionada ao nervo tibial. A artéria fibular também pertence à circulação profunda posterior e emite ramos para a região lateral.\n\n| Artéria | Relação a reconhecer |\n|---|---|\n| Genicular média | Penetra a cápsula posterior e irriga estruturas centrais do joelho |\n| Tibial anterior | Compartimento anterior, junto ao fibular profundo |\n| Tibial posterior | Compartimento posterior profundo, junto ao tibial |\n| Fibular | Circulação profunda posterior e ramos laterais |\n\nO nome da artéria fibular não significa que ela seja o eixo que acompanha o nervo fibular superficial entre os fibulares. Da mesma forma, o nervo tibial não acompanha a artéria tibial anterior só porque ambos possuem tibial no nome. Para acertar os pares neurovasculares, o plano anatômico é a referência decisiva.",

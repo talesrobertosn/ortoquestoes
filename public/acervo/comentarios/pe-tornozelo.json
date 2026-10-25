@@ -4939,17 +4939,44 @@
     "conferido": false
   },
   "pe-tornozelo-0422": {
-    "conceito": "**O tálus recebe vasos de mais de um eixo arterial, com anastomoses extraósseas e intraósseas.** O corpo é coberto extensamente por cartilagem, o que limita os pontos de entrada vascular. O colo recebe entradas importantes, e a circulação comunica cabeça, colo e corpo.\n\nA artéria do canal do tarso, chamada artéria do túnel do tarso na tabela do atlas, é ramo da tibial posterior e representa um suprimento principal do corpo talar. Essa denominação vascular se refere ao canal entre tálus e calcâneo; não é o mesmo espaço que o túnel dos flexores e do nervo tibial atrás do maléolo medial.\n\n| Vaso talar | Origem ou região irrigada |\n|---|---|\n| Artéria do canal do tarso | Tibial posterior; corpo talar |\n| Ramo deltoide | Ligado à circulação do canal; região medial do corpo |\n| Ramos superomediais diretos | Dorsal do pé; cabeça e colo |\n| Artéria do seio do tarso | Dorsal do pé e/ou ramo perfurante fibular; colo e região lateral |\n| Ramos posteriores diretos | Circulação fibular; processo posterior e corpo |\n\nAs artérias do canal e do seio do tarso se anastomosam inferiormente ao colo. Por isso, canal e seio não são nomes intercambiáveis para um vaso de origem única. O ramo deltoide chega à região medial através do complexo ligamentar medial. Para identificar a origem arterial, primeiro distinga a área do tálus e o caminho de entrada, depois associe o vaso ao tronco tibial posterior, dorsal ou fibular.",
-    "correta": "**D: do canal do tarso e tibial posterior.** A artéria do canal do tarso nasce da tibial posterior e fornece suprimento importante ao corpo. Ela se anastomosa com a circulação do seio do tarso inferiormente ao colo.",
+    "conceito": "A pergunta junta duas informações que precisam permanecer associadas: **artéria do canal do tarso** e **tibial posterior**. Trocar apenas o vaso ou apenas sua origem já desmonta a resposta. A alternativa D mantém o par correto.\n\nO tálus tem grande parte da superfície coberta por cartilagem, com poucas áreas disponíveis para entrada de vasos. A artéria do canal do tarso, ramo da tibial posterior, passa a integrar uma alça com a artéria do seio do tarso e é uma fonte importante para o corpo, incluindo os dois terços laterais. O ramo deltoide, também da tibial posterior, contribui para a parte medial; os ramos da dorsal do pé chegam sobretudo à face dorsal do colo e da cabeça (Rockwood, 10ª ed., cap. 66, “As portas de entrada do sangue”).\n\nIsso explica por que **corpo, colo e cabeça não devem ser usados como territórios intercambiáveis**. Na fratura desviada do colo, o corpo pode perder conexões vasculares; se o deltoide ainda o prende, o ramo que passa pelo ligamento pode ser uma fonte remanescente importante. Preservar essa ligação pode ser decisivo no acesso e na redução.\n\nA alça anastomótica não apaga a identidade de seus componentes. “Canal” e “seio” participam de uma rede, mas a origem nominal cobrada para a artéria do canal continua sendo a tibial posterior. A questão não exige uma porcentagem exata de necrose nem permite concluir que todo desvio necessariamente produza necrose.\n\n> **Na prova:** principal par do corpo talar: canal do tarso, da tibial posterior.",
+    "correta": "**D: artéria do canal do tarso e tibial posterior.** É a combinação explicitamente descrita como importante suprimento do corpo. A fonte distingue esse território da contribuição dorsal para colo e cabeça.",
     "incorretas": {
-      "A": "É uma combinação válida para parte da circulação do seio e ajuda a irrigar colo e região lateral. O suprimento principal do corpo cobrado é a artéria do canal do tarso, originada da tibial posterior.",
-      "B": "O vaso está correto, mas a origem foi trocada. A dorsal contribui com ramos diretos e com a circulação do seio; a artéria do canal é ramo da tibial posterior.",
-      "C": "Troca o vaso e sua origem característica. O seio recebe contribuição da dorsal do pé e/ou da perfurante fibular; a relação com a tibial posterior é própria da artéria do canal."
+      "A": "**Substitui o vaso que a pergunta procura.** A artéria do seio participa da alça, mas não é o par canal do tarso–tibial posterior destacado para o corpo. Participar da rede não torna todos os nomes e origens intercambiáveis.",
+      "B": "**Mantém o nome da artéria e troca seu tronco.** A do canal do tarso vem da tibial posterior. A dorsal do pé participa do suprimento do colo e da cabeça e não deve ser usada como origem desse ramo específico.",
+      "C": "**Acerta um tronco importante e o associa ao componente errado do par.** Para o suprimento principal descrito do corpo, a fonte nomeia canal do tarso da tibial posterior. A ligação entre canal e seio é uma anastomose, não autorização para substituir seus nomes."
     },
     "referencias": [
-      "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo 10, Tornozelo/Pé: Osteologia, Articulações, Músculos, Nervos e Artérias."
+      "Conteúdo consultado no resumo “Fraturas e luxações do tálus”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 66 · Fractures and Dislocations of the Talus. Seções: Anatomia e vascularização."
     ],
-    "geradoEm": "2026-10-11",
-    "conferido": false
+    "conferido": false,
+    "geradoEm": "2026-10-25",
+    "baseResumo": {
+      "tipo": "resumo",
+      "versao": 1,
+      "fontes": [
+        {
+          "resumo": "rockwood10-66-talus",
+          "titulo": "Fraturas e luxações do tálus",
+          "livro": "Rockwood and Green's Fractures in Adults",
+          "edicao": "10ª edição (2025)",
+          "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+          "secoes": [
+            "Anatomia e vascularização"
+          ],
+          "blocos": [
+            "anatomia-e-vascularizacao-67b0e630",
+            "anatomia-e-vascularizacao-d9802b86",
+            "anatomia-e-vascularizacao-07f26b9a",
+            "anatomia-e-vascularizacao-b8a242e2",
+            "anatomia-e-vascularizacao-d570e842"
+          ],
+          "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+          "trechosSha256": "1be0b7686fe3421bb9df9a2dcce9387141ff2de1088424c54008f77f00b0ffd6"
+        }
+      ],
+      "questaoSha256": "eb41269bd8a41e7d0445d8f0ea5aefe7222d44049b0469b02a12fe485e3c53ec",
+      "comentarioSha256": "6d443b899f26d08fcededb4ad75833fa6cee06122a9d6a398517bafa66213574"
+    }
   }
 }

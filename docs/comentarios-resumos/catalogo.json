@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 617,
+  "pendente": 610,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 240,
-  "pendente-inspecao-imagem": 88,
-  "revisada": 1327
+  "pendente-fonte": 244,
+  "pendente-inspecao-imagem": 86,
+  "revisada": 1332
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -207,10 +207,10 @@
    "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
    "estados": {
     "duplicada": 14,
-    "pendente": 15,
-    "pendente-fonte": 15,
-    "pendente-inspecao-imagem": 2,
-    "revisada": 37
+    "pendente": 11,
+    "pendente-fonte": 19,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 38
    }
   },
   "rockwood10-61-luxacao-joelho": {
@@ -218,11 +218,11 @@
    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
    "estados": {
     "duplicada": 14,
-    "pendente": 39,
+    "pendente": 37,
     "pendente-anulada": 1,
     "pendente-fonte": 12,
-    "pendente-inspecao-imagem": 8,
-    "revisada": 49
+    "pendente-inspecao-imagem": 7,
+    "revisada": 52
    }
   },
   "rockwood10-62-planalto-tibial": {
@@ -275,9 +275,9 @@
    "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
    "estados": {
     "duplicada": 2,
-    "pendente": 20,
+    "pendente": 19,
     "pendente-fonte": 4,
-    "revisada": 27
+    "revisada": 28
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -8217,7 +8217,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -8232,7 +8232,34 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "9af4526afbee1335329352b0a35c12a1bcad2b6753197062fd0777fba55a97ea"
+   "questaoSha256": "9af4526afbee1335329352b0a35c12a1bcad2b6753197062fd0777fba55a97ea",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Imagem",
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "imagem-c89ac8ba",
+       "imagem-0472b462",
+       "imagem-54f5e9e5",
+       "canto-posterolateral-66452e25"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "d00b247f3e314f6a2d4f02a8a6fe5666a84effb94db7691c02ad85e9ed2ef571"
+     }
+    ],
+    "questaoSha256": "9af4526afbee1335329352b0a35c12a1bcad2b6753197062fd0777fba55a97ea",
+    "comentarioSha256": "a776f5c5039de6b5759ae9851d01109598a627f70c463cbfeea2fe7dde8bac9a"
+   }
   },
   "joelho-0026": {
    "tema": "joelho",
@@ -9939,8 +9966,8 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial especifica ruptura proximal com avulsão óssea, enquanto A oferece desinserção proximal sem especificar osso. O corpo independente do resumo60 sustenta a localização proximal e avulsão, mas não compara a frequência de avulsão com fragmento ósseo e desinserção sem osso. Falta fonte primária para julgar a distinção decisiva A/B. Não basta acertar proximal e explicar o fragmento como ressalva para conferir integralmente as opções. B oficial e comentário anterior preservados; sem baseResumo e sem revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -9954,7 +9981,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "fbacdc5f2e7aaa6d674a8c540d3542de690493b8ba3c345d7e46995e3158f409"
+   "questaoSha256": "fbacdc5f2e7aaa6d674a8c540d3542de690493b8ba3c345d7e46995e3158f409",
+   "pendencia": "B oficial especifica ruptura proximal com avulsão óssea, enquanto A oferece desinserção proximal sem especificar osso. O corpo independente do resumo60 sustenta a localização proximal e avulsão, mas não compara a frequência de avulsão com fragmento ósseo e desinserção sem osso. Falta fonte primária para julgar a distinção decisiva A/B. Não basta acertar proximal e explicar o fragmento como ressalva para conferir integralmente as opções. B oficial e comentário anterior preservados; sem baseResumo e sem revisão concluída."
   },
   "joelho-0260": {
    "tema": "joelho",
@@ -10365,7 +10393,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -10380,7 +10408,37 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "caa109b1efc085aa2dcf0a2d7ca1960ea97a37577d81d0652e11188fb9b0fa6b"
+   "questaoSha256": "caa109b1efc085aa2dcf0a2d7ca1960ea97a37577d81d0652e11188fb9b0fa6b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "Canto posterolateral"
+      ],
+      "blocos": [
+       "canto-posterolateral-66452e25",
+       "canto-posterolateral-474af362",
+       "canto-posterolateral-0b736828",
+       "canto-posterolateral-622a04b8",
+       "canto-posterolateral-ed823b43",
+       "canto-posterolateral-6aabb99f",
+       "canto-posterolateral-e1623413",
+       "canto-posterolateral-5cf8f764"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "d990e531d7e12680683f8b68b218a51e791bf44492cea64cb307342ce5d36cbf"
+     }
+    ],
+    "questaoSha256": "caa109b1efc085aa2dcf0a2d7ca1960ea97a37577d81d0652e11188fb9b0fa6b",
+    "comentarioSha256": "95bbe5912ca30b58d168e5ad6a4c67ee1d67b19fb6fed5da971dba49ce86833d"
+   }
   },
   "joelho-0308": {
    "tema": "joelho",
@@ -10888,8 +10946,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -10903,7 +10961,33 @@
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "3fcc2529bd68d17d87d33a903507268afcca9fb63b4bc80ebe36cb09513b6b6e"
+   "questaoSha256": "3fcc2529bd68d17d87d33a903507268afcca9fb63b4bc80ebe36cb09513b6b6e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-61-luxacao-joelho",
+      "titulo": "Luxação do joelho e lesão multiligamentar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 61 · Knee Dislocations",
+      "secoes": [
+       "O nervo fibular comum",
+       "Cruzado posterior: a pedra fundamental"
+      ],
+      "blocos": [
+       "o-nervo-fibular-comum-8a85bf5b",
+       "o-nervo-fibular-comum-05d3e14c",
+       "cruzado-posterior-a-pedra-fundamental-ad28ed59"
+      ],
+      "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+      "trechosSha256": "017161d99411bcb85803677c0c94594ef19e377c21e37d6e4d1ef68e71773bd3"
+     }
+    ],
+    "questaoSha256": "3fcc2529bd68d17d87d33a903507268afcca9fb63b4bc80ebe36cb09513b6b6e",
+    "comentarioSha256": "c112cf45a0e8108500c070987fe96fee671c96237fbfe87ee492f9f50f16bbd6"
+   }
   },
   "mao-0013": {
    "tema": "mao",
@@ -29127,7 +29211,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29142,7 +29226,34 @@
    "resumosCandidatos": [
     "rockwood10-66-talus"
    ],
-   "questaoSha256": "eb41269bd8a41e7d0445d8f0ea5aefe7222d44049b0469b02a12fe485e3c53ec"
+   "questaoSha256": "eb41269bd8a41e7d0445d8f0ea5aefe7222d44049b0469b02a12fe485e3c53ec",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-66-talus",
+      "titulo": "Fraturas e luxações do tálus",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
+      "secoes": [
+       "Anatomia e vascularização"
+      ],
+      "blocos": [
+       "anatomia-e-vascularizacao-67b0e630",
+       "anatomia-e-vascularizacao-d9802b86",
+       "anatomia-e-vascularizacao-07f26b9a",
+       "anatomia-e-vascularizacao-b8a242e2",
+       "anatomia-e-vascularizacao-d570e842"
+      ],
+      "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "trechosSha256": "1be0b7686fe3421bb9df9a2dcce9387141ff2de1088424c54008f77f00b0ffd6"
+     }
+    ],
+    "questaoSha256": "eb41269bd8a41e7d0445d8f0ea5aefe7222d44049b0469b02a12fe485e3c53ec",
+    "comentarioSha256": "6d443b899f26d08fcededb4ad75833fa6cee06122a9d6a398517bafa66213574"
+   }
   },
   "pediatria-0014": {
    "tema": "pediatria",
@@ -59212,8 +59323,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -59227,7 +59338,37 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "fcb973e2660151087d36ae9bf62bd3160664a93f521d58fea7700f7e613b31f7"
+   "questaoSha256": "fcb973e2660151087d36ae9bf62bd3160664a93f521d58fea7700f7e613b31f7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-60-patela-mecanismo-extensor",
+      "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+      "secoes": [
+       "Patela bipartida e outros simuladores",
+       "Exame físico e fratura exposta oculta",
+       "Anatomia e biomecânica do mecanismo extensor",
+       "Complicações"
+      ],
+      "blocos": [
+       "patela-bipartida-e-outros-simuladores-27cbef14",
+       "exame-fisico-e-fratura-exposta-oculta-845aa804",
+       "anatomia-e-biomecanica-do-mecanismo-extensor-705cc98b",
+       "patela-bipartida-e-outros-simuladores-f0b1afd4",
+       "complicacoes-3f5b04aa"
+      ],
+      "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+      "trechosSha256": "99aa9d187a89a7adedfa54f96b5bb10a283006597974d1a82cc9b6eaffb44ff6"
+     }
+    ],
+    "questaoSha256": "fcb973e2660151087d36ae9bf62bd3160664a93f521d58fea7700f7e613b31f7",
+    "comentarioSha256": "cfd300096873c0f5aabcb18e277a3b1308dacad0546291d8c2efd2dc51c2f4c9"
+   }
   },
   "trauma-0571": {
    "tema": "trauma",
@@ -70324,8 +70465,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A pergunta exige localizar a zona hipovascular do tendão quadricipital a1–2cm do polo superior (B oficial), contra <1cm,3–4cm e5–6cm. O corpo independente do resumo60 descreve rupturas na inserção ou no meio do tendão e reparos, mas não a zona hipovascular nem essas distâncias. Falta anatomia vascular primária com localização exata; a resposta no contexto da própria questão não serve de fonte. Gabarito e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70339,7 +70480,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "1a12004f42407bf9c978615cd7a4f7e52847ab94d6a28091a1ce55457531fd10"
+   "questaoSha256": "1a12004f42407bf9c978615cd7a4f7e52847ab94d6a28091a1ce55457531fd10",
+   "pendencia": "A pergunta exige localizar a zona hipovascular do tendão quadricipital a1–2cm do polo superior (B oficial), contra <1cm,3–4cm e5–6cm. O corpo independente do resumo60 descreve rupturas na inserção ou no meio do tendão e reparos, mas não a zona hipovascular nem essas distâncias. Falta anatomia vascular primária com localização exata; a resposta no contexto da própria questão não serve de fonte. Gabarito e comentário preservados, sem baseResumo."
   },
   "trauma-1035": {
    "tema": "trauma",
@@ -70389,8 +70531,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial exige incidência de lesão associada do LCA de até25% na ruptura traumática do patelar em atletas de alto rendimento, contra2,5%,12,5% e40%. O corpo do resumo60 recomenda procurar lesão do LCA, mas não quantifica essa associação na população perguntada. Falta série primária com denominador e frequência; não usar incidência de outro trauma ou comentário antigo. Questão/gabarito/comentário preservados, sem revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70404,7 +70546,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "d228ae377cf5c5f2af4ea4f9eaf27e9aabe451240e2725205bed120df35fc029"
+   "questaoSha256": "d228ae377cf5c5f2af4ea4f9eaf27e9aabe451240e2725205bed120df35fc029",
+   "pendencia": "C oficial exige incidência de lesão associada do LCA de até25% na ruptura traumática do patelar em atletas de alto rendimento, contra2,5%,12,5% e40%. O corpo do resumo60 recomenda procurar lesão do LCA, mas não quantifica essa associação na população perguntada. Falta série primária com denominador e frequência; não usar incidência de outro trauma ou comentário antigo. Questão/gabarito/comentário preservados, sem revisão concluída."
   },
   "trauma-1039": {
    "tema": "trauma",
@@ -70974,8 +71117,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial identifica Mandelbaum por reparo com zetaplastia e reforço com flexores autólogos. O resumo60 descreve tração, reforços, aloenxerto e Ecker para patelar crônico e Codivilla para quadríceps, mas não descreve Mandelbaum nem compara os quatro métodos do item. Falta descrição primária da técnica e material do enxerto para conferir A–D, sem atribuir epônimo pelo comentário antigo. Gabarito e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70989,7 +71132,8 @@
    "resumosCandidatos": [
     "rockwood10-60-patela-mecanismo-extensor"
    ],
-   "questaoSha256": "b1b1384887fa827bc317854a14cd176a5d0b755a0cbe03c19efc96563486785a"
+   "questaoSha256": "b1b1384887fa827bc317854a14cd176a5d0b755a0cbe03c19efc96563486785a",
+   "pendencia": "D oficial identifica Mandelbaum por reparo com zetaplastia e reforço com flexores autólogos. O resumo60 descreve tração, reforços, aloenxerto e Ecker para patelar crônico e Codivilla para quadríceps, mas não descreve Mandelbaum nem compara os quatro métodos do item. Falta descrição primária da técnica e material do enxerto para conferir A–D, sem atribuir epônimo pelo comentário antigo. Gabarito e comentário preservados."
   },
   "trauma-1059": {
    "tema": "trauma",
