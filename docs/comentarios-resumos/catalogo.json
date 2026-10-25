@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 591,
+  "pendente": 663,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 261,
-  "pendente-inspecao-imagem": 85,
-  "revisada": 1335
+  "pendente-fonte": 268,
+  "pendente-inspecao-imagem": 89,
+  "revisada": 1348
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -58,10 +58,10 @@
    "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
    "estados": {
     "duplicada": 4,
-    "pendente": 11,
+    "pendente": 10,
     "pendente-fonte": 15,
     "pendente-inspecao-imagem": 1,
-    "revisada": 63
+    "revisada": 64
    }
   },
   "rockwood10-37-diafise-umero": {
@@ -81,10 +81,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 78,
-    "pendente-fonte": 3,
+    "pendente": 64,
+    "pendente-fonte": 10,
     "pendente-inspecao-imagem": 15,
-    "revisada": 75
+    "revisada": 88
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -103,7 +103,7 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 179,
+    "pendente": 191,
     "pendente-figura-ausente": 1,
     "pendente-inspecao-imagem": 13
    }
@@ -113,7 +113,7 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 80,
+    "pendente": 86,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 18,
@@ -280,6 +280,16 @@
     "revisada": 28
    }
   },
+  "rockwoodcriancas10-01-epidemiologia-fraturas": {
+   "titulo": "Epidemiologia das fraturas na criança",
+   "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+   "estados": {
+    "pendente": 85,
+    "pendente-fonte": 2,
+    "pendente-inspecao-imagem": 4,
+    "revisada": 38
+   }
+  },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
    "titulo": "Avaliação do cotovelo da criança traumatizada",
    "sha256": "7df6e68412812210fc11bbbec70d5af1c4688b6b7649fda17098bfffc8a98e46",
@@ -309,8 +319,8 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente": 31,
-    "pendente-fonte": 4,
+    "pendente": 30,
+    "pendente-fonte": 5,
     "pendente-inspecao-imagem": 4,
     "revisada": 66
    }
@@ -22899,6 +22909,303 @@
    ],
    "questaoSha256": "9890b9f27c285056373b4ef1b24175f41032cd1fe52a32cef5ff9103c3176dfc"
   },
+  "mao-2200": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "607f4482358111078cc0a07de76031d9b0436cf2821578da213541b8da771097"
+  },
+  "mao-2201": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges",
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "6f41ad7de0f9fe814ddf61d62f6c685b83ffc5a9253545f8b16c727b88d15f30"
+  },
+  "mao-2203": {
+   "tema": "mao",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "b66a0f21d83620b61c99d73318686435c4e99074726a0a614305f1c0887d9187"
+  },
+  "mao-2207": {
+   "tema": "mao",
+   "subtemas": [
+    "Artrose do punho e artroscopia",
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "a1a0440b4a1a5835f83bbc6bd6e9b25f498fbac998c1f85af641e3929cb00acd"
+  },
+  "mao-2208": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Fratura do rádio distal"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "3e1cb9964ac2f411fde2f4ae7f4ae4fda65c27314d7c13e11807405f234b2fcc"
+  },
+  "mao-2209": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "e23b35af1638d69afd0b795efff82affaa6d79ff2717975562e1a6d6b99b736b"
+  },
+  "mao-2210": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "3d4b77b31431a73e0c0aa0f679c5e31f2000f075639aa84d6d876e5aa04b6687"
+  },
+  "mao-2211": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "f186b2c6865c7b4b43c7951da9270ebc20ba90753809ed0c5993d2f4e0cd0962"
+  },
+  "mao-2212": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Anatomia da mão e punho"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "a05d301067f1c45e348c54aea4ec58b39906da19f644860d0b80a5fa929b5806"
+  },
+  "mao-2213": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Artrose do punho e artroscopia"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "8bfa196dceaefd7b5c6c86ca0775d5b5519a1dd4765ce034ef71bcb5c6cec1da"
+  },
+  "mao-2219": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "ac1f2be5232959cebcf9db933d0ed961c7ee7453f0649c602e747b0b9e044796"
+  },
+  "mao-2220": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "dd423f68b368f2ee56dc1c0be0c733470e5d75b57aad5156bee3e5a0c171fae0"
+  },
+  "mao-2221": {
+   "tema": "mao",
+   "subtemas": [
+    "Microcirurgia e retalhos livres",
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "1cba8555fdf57a3bedbdd9296413887318e1af22e123ca4b33e4d185ffb24815"
+  },
+  "mao-2222": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "40ec3c45ed2153be3806e2ad12039a4323b45849f79bde08cbd2daa9059d1aa9"
+  },
+  "mao-2224": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo",
+    "Artrose do punho e artroscopia"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "8fb6e3979174feefb88ed632ae30c9a5c14037ce5355f72dc78acbe71439a9e4"
+  },
+  "mao-2251": {
+   "tema": "mao",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "740c05f12effd6ab3c8d47270febd6716d16e0cc37e2307116a00de4bf4d4283"
+  },
+  "mao-2252": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "06e993a26a137b3d99c0787916805fb59bce2cff86db0c1d3b6a3c9d97f382ad"
+  },
+  "mao-2277": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "024aa3ffd2f5975c7153d3aca8f379a7011f13f7f06a31d16e4efc8f4b4ddc2c"
+  },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
    "subtemas": [
@@ -25214,7 +25521,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25229,7 +25536,38 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "31467f09a346e3585d14fddbefa0b66092e0e5f35ad9e931a705136dbb61692f"
+   "questaoSha256": "31467f09a346e3585d14fddbefa0b66092e0e5f35ad9e931a705136dbb61692f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posteromedial em varo",
+       "Quem segura o cotovelo",
+       "Tríade terrível"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "quem-segura-o-cotovelo-e54d94bb",
+       "triade-terrivel-1483748a",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "13836b7c2f43e59b16a4e0656b6776150aa73906e2192d41026ad57164de83d6"
+     }
+    ],
+    "questaoSha256": "31467f09a346e3585d14fddbefa0b66092e0e5f35ad9e931a705136dbb61692f",
+    "comentarioSha256": "f9535695d8afc25d6a5e7343a3d4372c68af435fe77ed1e8cfb7375f3351dbbb"
+   }
   },
   "ombro-cotovelo-0429": {
    "tema": "ombro-cotovelo",
@@ -25432,8 +25770,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; D bibliográfica/provável preservada. O corpo do resumo40 descreve progressão lateral, cápsula, medial no mecanismo clássico, mas não ordena separadamente banda posterior versus anterior do medial (C/D). A função estabilizadora anterior contra valgo não prova que seja a última banda a romper. Falta descrição primária dos estágios de Horii e da sequência entre bandas; não usar a resposta contextual da questão como fonte independente. Preservar comentário e alerta antigos.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25455,7 +25793,8 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "cd8fd996f24b5f42c24a7df6065bd16eaa813dc6add98de0c3e4cf16ce746904"
+   "questaoSha256": "cd8fd996f24b5f42c24a7df6065bd16eaa813dc6add98de0c3e4cf16ce746904",
+   "pendencia": "Sem gabarito oficial; D bibliográfica/provável preservada. O corpo do resumo40 descreve progressão lateral, cápsula, medial no mecanismo clássico, mas não ordena separadamente banda posterior versus anterior do medial (C/D). A função estabilizadora anterior contra valgo não prova que seja a última banda a romper. Falta descrição primária dos estágios de Horii e da sequência entre bandas; não usar a resposta contextual da questão como fonte independente. Preservar comentário e alerta antigos."
   },
   "ombro-cotovelo-0474": {
    "tema": "ombro-cotovelo",
@@ -25513,7 +25852,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25528,7 +25867,34 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "1063179042248bea8b500c63f0876ca5049f57d332aef0ed69d54bffbf710e6b"
+   "questaoSha256": "1063179042248bea8b500c63f0876ca5049f57d332aef0ed69d54bffbf710e6b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-7e8453cb",
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "078bbf43fdbde5dd6c343cd8bdfd51edee9632d17cbb90338637c28b314affcf"
+     }
+    ],
+    "questaoSha256": "1063179042248bea8b500c63f0876ca5049f57d332aef0ed69d54bffbf710e6b",
+    "comentarioSha256": "a79db35a41e648fd985a70c409e613d8d21fe28fd3850d55e3eddcfc87163171"
+   }
   },
   "ombro-cotovelo-0477": {
    "tema": "ombro-cotovelo",
@@ -25537,7 +25903,7 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25552,7 +25918,36 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6ad0f2cb0274caaf7bedfe8f628237104d9016b8f7eca3610533a0501df5c213"
+   "questaoSha256": "6ad0f2cb0274caaf7bedfe8f628237104d9016b8f7eca3610533a0501df5c213",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posteromedial em varo",
+       "Fraturas do coronoide"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
+       "fraturas-do-coronoide-67ec539b"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "3333ccdf6bce58ae05b03326b13cbdb182b5d78831cd9465608754290d40d288"
+     }
+    ],
+    "questaoSha256": "6ad0f2cb0274caaf7bedfe8f628237104d9016b8f7eca3610533a0501df5c213",
+    "comentarioSha256": "32b8dfed3d2aaf3f0392b00777c590609bdbf47254edc055b66c4ae4764bb8f5"
+   }
   },
   "ombro-cotovelo-0478": {
    "tema": "ombro-cotovelo",
@@ -25817,7 +26212,7 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -25832,7 +26227,37 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "464c8d2c094eb1c2048a3c837188aada8e3a0a7c222cd9984cdc1d08f8c75151"
+   "questaoSha256": "464c8d2c094eb1c2048a3c837188aada8e3a0a7c222cd9984cdc1d08f8c75151",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-e54d94bb",
+       "quem-segura-o-cotovelo-2b1e3945",
+       "fratura-da-cabeca-do-radio-702c1386",
+       "fratura-da-cabeca-do-radio-0d86df08",
+       "fratura-da-cabeca-do-radio-fe207e21",
+       "fratura-da-cabeca-do-radio-8dbbe2b9",
+       "fratura-da-cabeca-do-radio-a6880686"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "30fe8b1bf50f2ad9ae553261263563ae2a4b64c28055b609e37152c790a83fb9"
+     }
+    ],
+    "questaoSha256": "464c8d2c094eb1c2048a3c837188aada8e3a0a7c222cd9984cdc1d08f8c75151",
+    "comentarioSha256": "17ad4935a2677d6c58de0701cfc295c561affd8ee66739af58be4db4c88cb41d"
+   }
   },
   "ombro-cotovelo-0510": {
    "tema": "ombro-cotovelo",
@@ -25881,8 +26306,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A bibliográfica/provável preservada, sem gabarito oficial. O corpo do resumo40 relaciona falha da porção ulnar lateral à instabilidade posterolateral e prefere reconstrução lateral com enxerto na forma crônica; não estabelece que reconstruir essa porção seja necessário em todo tratamento cirúrgico, como exige a redação absoluta. Falta fonte primária da indicação e das exceções, distinguindo reparo/reinserção de reconstrução, para julgar Certo/Errado sem converter preferência em obrigação universal. Comentário preservado, sem novo selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -25896,7 +26321,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "80bb53ef0317adf71ae03b81f1060256bfc50a5020968ff71fbce0c35312c22f"
+   "questaoSha256": "80bb53ef0317adf71ae03b81f1060256bfc50a5020968ff71fbce0c35312c22f",
+   "pendencia": "A bibliográfica/provável preservada, sem gabarito oficial. O corpo do resumo40 relaciona falha da porção ulnar lateral à instabilidade posterolateral e prefere reconstrução lateral com enxerto na forma crônica; não estabelece que reconstruir essa porção seja necessário em todo tratamento cirúrgico, como exige a redação absoluta. Falta fonte primária da indicação e das exceções, distinguindo reparo/reinserção de reconstrução, para julgar Certo/Errado sem converter preferência em obrigação universal. Comentário preservado, sem novo selo."
   },
   "ombro-cotovelo-0514": {
    "tema": "ombro-cotovelo",
@@ -28015,6 +28441,103 @@
    ],
    "questaoSha256": "52607e4fddf631f9e74909510f330052305f4b077d88f05719c2189ce61e83ac"
   },
+  "ombro-cotovelo-0676": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "71a5d89969442a78dc90545cd4fdf669c0441ad0e71a9a8112a46b348de6589d"
+  },
+  "ombro-cotovelo-0677": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "c79a928a4d07015c0e564755d1adb14376d55c0ed60f9311d5fcf0b662cf4fd3"
+  },
+  "ombro-cotovelo-0678": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "e3863ce212be0d28db24d0c030949c6cd69ccd5587207252965a0b0826267014"
+  },
+  "ombro-cotovelo-0679": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "f7b25d0a2c54fe0b96d7af0cb7de879086c9caea7c82dd467b4696da5341a7ec"
+  },
+  "ombro-cotovelo-0680": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "3ea47f30303816a8df1504f2cde579219815fc068e67a238363ee15157877e5b"
+  },
+  "ombro-cotovelo-0681": {
+   "tema": "ombro-cotovelo",
+   "subtemas": [
+    "Fraturas do cotovelo e antebraço",
+    "Anatomia do cotovelo"
+   ],
+   "prova": "SBCM",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-40-cotovelo-cabeca-radio"
+   ],
+   "questaoSha256": "752a98854895979ebbd5b572a41f4454f80f6f79240a6ec2fe2d7ee55497988f"
+  },
   "osteometabolicas-0013": {
    "tema": "osteometabolicas",
    "subtemas": [
@@ -29810,7 +30333,8 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-57-diafise-femur"
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "c2e055216e17288647fdf69c4a62c3d459305a4c62d0d34fe3d6cfb4363ebd3a"
   },
@@ -29942,6 +30466,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -29971,6 +30496,22 @@
     "questaoSha256": "6a54fd88f70c83284e213ff6fc7c2338ef6388499b1c3d014b8bce43cf782f5e",
     "comentarioSha256": "8d73bd1067b93a8c18d083699ef69a4feb33ade19d463cc88d49c281f9387379"
    }
+  },
+  "pediatria-0524": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2026,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "10c95f43cde4f28ac22f92b8a887a0ca423aae2d2f8f1b74d5622d9795282946"
   },
   "pediatria-0525": {
    "tema": "pediatria",
@@ -30126,9 +30667,44 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
    "questaoSha256": "23e7d5f7b957a492f33a320edf236220108545f42443432c2140b254be0ea89a"
+  },
+  "pediatria-0529": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Joelho da criança"
+   ],
+   "prova": "TARO",
+   "ano": 2025,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "3411925fdb5c6e94bddc0143cc1b390f80537f2d89758b2f03d4abce61259fb6"
+  },
+  "pediatria-0530": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2025,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "aee724f31ac1b7fd4e547b5e1ba95f277dbd509849c8524d40fd7985dfa2998e"
   },
   "pediatria-0532": {
    "tema": "pediatria",
@@ -30158,6 +30734,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
@@ -30197,6 +30774,57 @@
     "comentarioSha256": "f1ac073beee6389a9663aabb6d3ac6e2eaa06e30a9a4dade511b29ef27e25f61"
    }
   },
+  "pediatria-0533": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2025,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "20e8a2c1a13dad2e6bf420deb74d4bc0b04b642c814ba66d56036892a32f8495"
+  },
+  "pediatria-0535": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2024,
+   "estado": "pendente-inspecao-imagem",
+   "motivo": "Abrir imagens antes da revisão.",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434"
+  },
+  "pediatria-0537": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Outros temas de ortopedia pediátrica"
+   ],
+   "prova": "TARO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "561db1845b46f1dc174948ae843ed17bd83a3a62289ef5163c6a3ab5999f3a11"
+  },
   "pediatria-0539": {
    "tema": "pediatria",
    "subtemas": [
@@ -30210,6 +30838,7 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
@@ -30228,6 +30857,7 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
@@ -30286,6 +30916,39 @@
     "comentarioSha256": "3412f848d4120f4d13ece3aae49cd59a9d95358cd314325aa0470e0404d590ca"
    }
   },
+  "pediatria-0542": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "14c39d0137da931cd168dbdbd3e647c8780b1525b2aed7eab48a49752b39a8e9"
+  },
+  "pediatria-0545": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "710114f09293b7632ba6e39b610d81979484570aa970319ad9d3d31f9f29b289"
+  },
   "pediatria-0547": {
    "tema": "pediatria",
    "subtemas": [
@@ -30338,6 +31001,38 @@
     "comentarioSha256": "2fdb8ebc723fcd9420a77c0d49e1453dda196cf254a563dfbf47e3c0758ea5f6"
    }
   },
+  "pediatria-0549": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "f04edd837dbf4d53c22af66d2295638a120a066e18519d9cfaf4c4dc25dae664"
+  },
+  "pediatria-0550": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "4e5f905377d38cc4143f2840abc3b70981af2c23575fe95b5969b3d7eb10a67d"
+  },
   "pediatria-0554": {
    "tema": "pediatria",
    "subtemas": [
@@ -30358,6 +31053,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
    "questaoSha256": "e0660feee979c0c86af3f8df1dc590131b83ce7f8a6bdfcbf5ddefbd1364f26b",
@@ -30387,6 +31083,74 @@
     "comentarioSha256": "a49f5e4a0a46c911dd99280190d731e0ac25d0dca95e2d3b78f716f7d51d4418"
    }
   },
+  "pediatria-0556": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "3307d0f41de5c7c3169b4f6800f760ec72dd07a5d39be4594fe666b845de07c7"
+  },
+  "pediatria-0557": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do tornozelo na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "90b281975428c2ae627415b8600d474b22b87c8ceb3f53fedb2fcfe76620378a"
+  },
+  "pediatria-0560": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "01ea83e2bc1fee4e79f479b042a2fa5f30f128381813bae29ad017e52399ac12"
+  },
+  "pediatria-0561": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Outros temas de ortopedia pediátrica"
+   ],
+   "prova": "TEOT",
+   "ano": 2024,
+   "estado": "pendente-inspecao-imagem",
+   "motivo": "Abrir imagens antes da revisão.",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "f2888818a66e4cc08a457a9439339539364e81a1d053b2a4b7186f13900b9031"
+  },
   "pediatria-0562": {
    "tema": "pediatria",
    "subtemas": [
@@ -30409,6 +31173,7 @@
    ],
    "resumosCandidatos": [
     "rockwood10-44-carpo",
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -30427,6 +31192,7 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
@@ -30465,6 +31231,23 @@
    ],
    "questaoSha256": "776ed6c2d981b95ef63c8e86ea2aad753832229735dbcf5e8236193660f6964f"
   },
+  "pediatria-0567": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "ea3515053b3c733383a2a311b6059960ce585ff6f0e6ad42d9af1aa260851deb"
+  },
   "pediatria-0568": {
    "tema": "pediatria",
    "subtemas": [
@@ -30486,7 +31269,8 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-65-tornozelo"
+    "rockwood10-65-tornozelo",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "e4a2a983907409141d8ee9b77af6873b010ebfca2a60cf665986f5ae8b32dc61"
   },
@@ -30578,9 +31362,77 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
    "questaoSha256": "f75b8840b36f479409979a0a646e50f34c79d1f96f54a22f23c4efa8bf7d9f4b"
+  },
+  "pediatria-0576": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "34ddb8159c37aa7767b20ef2afb94d8105cabbb259874883cc75b28dad73e2b7"
+  },
+  "pediatria-0579": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "60d12c560657484980408189e15083e8575b6962c6a841ded414c2573aa89d8c"
+  },
+  "pediatria-0581": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "fbca6c99f444d0969d0e43db92ca6c92899704168ea7d587ae1f1d5bb2ff0030"
+  },
+  "pediatria-0582": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do pé na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2023,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "2cd581a8d280ef01c9f2a753906424ac7f495a8d3fad358dc3d3a83996f23ec1"
   },
   "pediatria-0584": {
    "tema": "pediatria",
@@ -30602,6 +31454,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "c62594a5eda4b82b00065bdb596f3095f58b56421fd607c2b3b1ccf1923951f5",
@@ -30735,6 +31588,23 @@
     "comentarioSha256": "c0b34eecb607fd1560aebc81285ccc94c6b24b9a78974073fc446d22058b59ee"
    }
   },
+  "pediatria-0589": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Joelho da criança"
+   ],
+   "prova": "TARO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "73ad7a7c41b60215deabe7a1411c6f3f73d86c85fdc88e51beb189f92151ce67"
+  },
   "pediatria-0592": {
    "tema": "pediatria",
    "subtemas": [
@@ -30756,6 +31626,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana"
    ],
    "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc",
@@ -30797,6 +31668,22 @@
     "questaoSha256": "3291018b687a9b6d7bceb2bdd5ff4aa8c7e4ba92211f17795480374a4f15c3bc",
     "comentarioSha256": "fa66c55736dd3cae3b530b532287e0b5c124cb20730b43095f6a33f365cf463b"
    }
+  },
+  "pediatria-0593": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "9c6b62c9d0bbfb0ea8401dd27f2f1574535c05bfd14cbf30fe7bc61b24c75314"
   },
   "pediatria-0594": {
    "tema": "pediatria",
@@ -30850,6 +31737,40 @@
     "comentarioSha256": "8a145f538e7e6fff12968ead49138518cce44bc644c1229aad3b7c5e863e8efe"
    }
   },
+  "pediatria-0595": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": "TARO",
+   "ano": 2021,
+   "estado": "pendente-inspecao-imagem",
+   "motivo": "Abrir imagens antes da revisão.",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10"
+  },
+  "pediatria-0596": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do pé na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2015,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "a57eaea4ccfaab49ad9d9a8f158b0314e3b973806421018aee9af8e27a735885"
+  },
   "pediatria-0597": {
    "tema": "pediatria",
    "subtemas": [
@@ -30871,7 +31792,8 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-24-fraturas-estresse"
+    "rockwood10-24-fraturas-estresse",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "310ca59f8e5cc9bd32fc9bd4de3900e9d05b78de71a712bf4d3a4e35a2d97f6c",
    "pendencia": "O capítulo é de adultos e descreve diáfise distal do corredor e base do segundo metatarso da bailarina. Falta a distribuição por sítio no pé da criança, especialmente colo do segundo versus terceiro e diáfises. Não converter dados adultos em ranking pediátrico."
@@ -30897,6 +31819,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -30950,6 +31873,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana"
    ],
    "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f",
@@ -30986,6 +31910,23 @@
     "questaoSha256": "d3af28861ec77510ba169ea45dc6f73a306ced0feb8d1646a6e9a9187010ba7f",
     "comentarioSha256": "56ad83cb98fe538e5b4daa13dd6650de6d9e3127ff6f6164cc1db97508039db2"
    }
+  },
+  "pediatria-0601": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2015,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "d6cd0fb8e251cf16e716781a59c195b45f9574bccfc5800279d84ed6aa1e16eb"
   },
   "pediatria-0604": {
    "tema": "pediatria",
@@ -31139,6 +32080,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -31237,6 +32179,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -31310,6 +32253,23 @@
     "comentarioSha256": "3bb824efed4b1ff07671d67ae27a9ef4bff56417e72871e34d92d3585530d6d4"
    }
   },
+  "pediatria-0618": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2017,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "a256a8f71a3cebc0a877c4194e80b9074325db700b66454d77c5b45bdf949dbe"
+  },
   "pediatria-0619": {
    "tema": "pediatria",
    "subtemas": [
@@ -31331,9 +32291,27 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-57-diafise-femur"
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "6a88e5b382908db681030fcfd0b02d08e7aa01dfa2f71ec75812271a137fd90e"
+  },
+  "pediatria-0620": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2017,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "c80e17b85be5895fa5bad129a9aab15a6e35eb69ceb02b47becf93e84d472c03"
   },
   "pediatria-0621": {
    "tema": "pediatria",
@@ -31348,10 +32326,27 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "7a76c3f8e289024fe0f036f4e8079feec077762d517c9740d4653dcde2d60b19"
+  },
+  "pediatria-0623": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "77be342aa7c1cca11df718a57e41bb709575b7949b9711af85a6b15464f8330b"
   },
   "pediatria-0626": {
    "tema": "pediatria",
@@ -31377,6 +32372,23 @@
     "rockwood10-66-talus"
    ],
    "questaoSha256": "e1741bdedc82377fba5e55d94a55796a4aaf1fecafa434ad54cf12340999f1b1"
+  },
+  "pediatria-0627": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Coluna e pescoço da criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "45143dce150780ea8dfacc032062023a0c7bda9dda87d3e23ad937568c8b113a"
   },
   "pediatria-0628": {
    "tema": "pediatria",
@@ -31518,6 +32530,40 @@
     "comentarioSha256": "95ace057f19a174f1d1e670e4515c36f425a6cc5efffa839930757053d7de661"
    }
   },
+  "pediatria-0630": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "238b785f02f6d9eb3c2735f2884e97d313cda496a3c3c5d8b6f9a7e24b5b323c"
+  },
+  "pediatria-0631": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Genuvaro, genuvalgo e torções",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "d97e199416cc553d5aabf1399668b13a6c9611a27483514ad17c4121ef50bd84"
+  },
   "pediatria-0632": {
    "tema": "pediatria",
    "subtemas": [
@@ -31569,6 +32615,40 @@
     "comentarioSha256": "3e8dc753ea0f1fdcfb0cc20bca6c6f8f08351f76bb359513ec47744a1e8d89f4"
    }
   },
+  "pediatria-0633": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "5fb374ebd15a1acbe16e46ef79daf2f7fded1a8149ea3f51f77d3190a341111c"
+  },
+  "pediatria-0634": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Outros temas de ortopedia pediátrica"
+   ],
+   "prova": "TARO",
+   "ano": 2018,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "b335afddaa8a1aba123cb872c5ef074eb310136881ec707a209b2497018b93d9"
+  },
   "pediatria-0636": {
    "tema": "pediatria",
    "subtemas": [
@@ -31615,6 +32695,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana"
    ],
    "questaoSha256": "bf493962cadad639c508fbb4e67e5e882dbdf25c359e1908db619e1b1acaf50f",
@@ -31717,7 +32798,8 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-34-fratura-clavicula"
+    "rockwood10-34-fratura-clavicula",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "64576b07ba8370abfda589615950419235c0733830f4fa47fab2650baf33e00f"
   },
@@ -31734,10 +32816,62 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "bb982d735743fa8c3b992f94a9ff110dfbfdf0a6820bd4382b1e77449e0a5dfa"
+  },
+  "pediatria-0645": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Outros temas de ortopedia pediátrica"
+   ],
+   "prova": "TARO",
+   "ano": 2019,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "7ecbf9307289005a8fd8c198d6d33c22bb4c9a8eba18eae111c525195c298c12"
+  },
+  "pediatria-0646": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Lesões fisárias",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2019,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "8f29a3fb9d166d5bbf90b22180591a2f105769556854313f3693d3a615cb0067"
+  },
+  "pediatria-0647": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2019,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "26d232937b63fe71d3082e73f5d59f3dfbb1d7466791655d303469a1510d5bc3"
   },
   "pediatria-0648": {
    "tema": "pediatria",
@@ -31883,6 +33017,23 @@
     "comentarioSha256": "e6ee843b46e3452a8eaaffd3f52492816f6cd177db3c78993ad412d86c9c57de"
    }
   },
+  "pediatria-0651": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2011,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "50f275831c6fce74a0704e81aea527349c515654d1fb65e5f4ee66c46b576ea4"
+  },
   "pediatria-0652": {
    "tema": "pediatria",
    "subtemas": [
@@ -31911,6 +33062,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
@@ -31999,6 +33151,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -32077,6 +33230,23 @@
    ],
    "questaoSha256": "af4282bd4db0df603a7ff2fbfe1ab7def78381b126a1d303c1f98727cd7b82e0"
   },
+  "pediatria-0657": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2012,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "535088fa14ab876b445f571ebba9ef145e5c2f125686a98632c02c9de049a659"
+  },
   "pediatria-0658": {
    "tema": "pediatria",
    "subtemas": [
@@ -32118,10 +33288,28 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
    "questaoSha256": "c84546fa685a8bb8483f2679c43f046c49ba7cf225ee75f2492397e477c11e06"
+  },
+  "pediatria-0660": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2012,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "20bc44fcdc8c0369c66e31bce35e11060f101040048a2de7f72ea8bf736b6a2a"
   },
   "pediatria-0664": {
    "tema": "pediatria",
@@ -32320,6 +33508,23 @@
     "comentarioSha256": "e8e9593f29c93d9c05c031e0af1145533bbefed54f4e0e62a46a8458b46c1bd7"
    }
   },
+  "pediatria-0667": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": "TARO",
+   "ano": 2012,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "1f616d0c0c8b2c96f29bea859e3003076f15b71b839a6908b864ce23769f530d"
+  },
   "pediatria-0668": {
    "tema": "pediatria",
    "subtemas": [
@@ -32474,6 +33679,22 @@
     "comentarioSha256": "564deebc62845d8a39df9e94d3003bc73ddfa2f0066311508371552b638af01e"
    }
   },
+  "pediatria-0673": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2013,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "b35a6d7eb69454ebe6b6252d60a52f1874ea9b463170ce7b868f6651e017ba11"
+  },
   "pediatria-0674": {
    "tema": "pediatria",
    "subtemas": [
@@ -32494,6 +33715,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "b787c563058d8d89908888ee26536ad0690d7aa6a330562f2a3fa170e00ed91b",
@@ -32524,6 +33746,23 @@
     "questaoSha256": "b787c563058d8d89908888ee26536ad0690d7aa6a330562f2a3fa170e00ed91b",
     "comentarioSha256": "e2e20ff7867fe95ddd787059343dbbd46e2011b11017b81989519a5fa7c2b983"
    }
+  },
+  "pediatria-0675": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2013,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "9f3d486851caa90f439da25dd5267d1f3f7292da44f9357ac6a40e3c5d20ccf4"
   },
   "pediatria-0682": {
    "tema": "pediatria",
@@ -32633,7 +33872,8 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-34-fratura-clavicula"
+    "rockwood10-34-fratura-clavicula",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "083e5961d9fdf405e8596132ed8f28f070c4609b7d83aaacd3dd0e66927f9101",
    "pendencia": "A pergunta exige prevalência pediátrica de fratura do terço médio (76–85% na opção D). O resumo 34 fornece 80–85% para as fraturas de clavícula em geral e discute epidemiologia adulta, mas não traz coorte pediátrica para confirmar o intervalo infantil e excluir as outras três faixas. Coincidência numérica não prova a população. Falta fonte pediátrica da frequência; D e comentário preservados, sem selo novo."
@@ -32766,6 +34006,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana"
    ],
    "questaoSha256": "6005b5d190c9248d1bfc2afb2bd5944248cd5504ad3552479c618000894f2578",
@@ -32852,6 +34093,40 @@
     "questaoSha256": "bac3a6b564a627104118e59f968c3b954b376c522ff35eff51bc5c0bccc400d7",
     "comentarioSha256": "0e924e69ab0ad31d5a4616052b2de67d8afc55ff31fa6baa02564b1d537f1f6a"
    }
+  },
+  "pediatria-0694": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2014,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "dbc8fe6c2d4e86ecfffb0d0762811e6a05618659efe9834cce2232b08abefbbd"
+  },
+  "pediatria-0695": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": "TARO",
+   "ano": 2014,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "d2b83c3afd01de9a2a8f964b276d7db0546a06d0f2779ffa242cc288aee9de83"
   },
   "pediatria-0696": {
    "tema": "pediatria",
@@ -33022,6 +34297,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral"
    ],
@@ -33215,6 +34491,23 @@
     "comentarioSha256": "741dfeaeb3e473dfb560edcc9abc7cf1176d090df534f4b5626acbc62817c8de"
    }
   },
+  "pediatria-0701": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "ba4b02ec20cd2579d566f34feb91b869464c2883d5975c4aeaebb0c031c3e846"
+  },
   "pediatria-0702": {
    "tema": "pediatria",
    "subtemas": [
@@ -33259,6 +34552,57 @@
     "comentarioSha256": "1e53d4bdd0b5d4d75407ee33d2ce1ce8355e55bc2a183accc3f382420602a2be"
    }
   },
+  "pediatria-0706": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da clavícula e do úmero proximal na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "28a307e8cf26678d4950ca6d0d6e3a649507f3493ca637830a911a9977267fca"
+  },
+  "pediatria-0707": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas da pelve e do quadril na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2022,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "549ac4e4fc76a51d697c6408f747f55d6066bd55941ad9a94cb874baa35804eb"
+  },
+  "pediatria-0708": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança",
+    "Ombro e cotovelo da criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2023,
+   "estado": "pendente-inspecao-imagem",
+   "motivo": "Abrir imagens antes da revisão.",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "9011bdceddb0409faad5b3dd123d5f16239ac1a6383627e0d3a68f736e281d61"
+  },
   "pediatria-0709": {
    "tema": "pediatria",
    "subtemas": [
@@ -33280,7 +34624,8 @@
     }
    ],
    "resumosCandidatos": [
-    "rockwood10-57-diafise-femur"
+    "rockwood10-57-diafise-femur",
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
    "questaoSha256": "90fc8bfefeedc7f0c7d4fc54fbd999f1360efd3cb4c92ad38bc8453e17afa543"
   },
@@ -33312,6 +34657,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
@@ -33410,6 +34756,23 @@
     "comentarioSha256": "df6069102e714f602184a8adfe80bcc1e725461dd33a0385a6f0260e6dc7b8f0"
    }
   },
+  "pediatria-0711": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Fraturas do fêmur e da perna na criança",
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "065923befaeb13a99e2e0b389a3d71af3b1241ec7b1e4715ad330a86eec17424"
+  },
   "pediatria-0712": {
    "tema": "pediatria",
    "subtemas": [
@@ -33423,6 +34786,7 @@
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -33731,6 +35095,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
@@ -33967,6 +35332,22 @@
     "rockwoodcriancas9-16-condilo-lateral"
    ],
    "questaoSha256": "8bb5e15a7e45054cce3b3b7237137a6160326ec9d35fdefc606fd887ae9ad9a7"
+  },
+  "pediatria-0746": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2007,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "cd6bcdee16f556e9e608bcf133d917991fee90ea945e743af404c2911e9ce0f0"
   },
   "pediatria-0747": {
    "tema": "pediatria",
@@ -34255,6 +35636,22 @@
     "comentarioSha256": "e2afc1a848cd930cefbcd7853d1d74ecb420f1a24c81e16128fa3349ce0d6755"
    }
   },
+  "pediatria-0756": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2008,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "18ad0a22ab89fb9b33f4f17b2edf56c3a508d4ac694658ca8350e85e85f50d2b"
+  },
   "pediatria-0766": {
    "tema": "pediatria",
    "subtemas": [
@@ -34342,6 +35739,38 @@
    ],
    "questaoSha256": "4db18b8358a87a35ca8acae522b8dafcbd3f8e8689954654ae6192ae98d7d661",
    "pendencia": "Resumo do capítulo 16 lido integralmente: no conjunto das fraturas consolidadas, varo é mais frequente; porém o alerta registra valgo na seção específica de consolidação viciosa. A pergunta exige a deformidade mais frequente da consolidação viciosa, não de todas as fraturas consolidadas. Falta esclarecer essa população e o trecho primário que sustenta a frequência; sem chave oficial, não promover a preferência interpretativa por B a resposta única. Conferir também a distinção de pseudartrose com valgo."
+  },
+  "pediatria-0769": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2009,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "794bf131c3d89b6490263bd430893ce10d246fa0f4e4478003cc0c6a6ae00121"
+  },
+  "pediatria-0770": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2009,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "db91b8bb8669cf560e6b24c3fd90d3d01db134753189f84a934ff907571fc806"
   },
   "pediatria-0772": {
    "tema": "pediatria",
@@ -34467,6 +35896,38 @@
     "comentarioSha256": "c4e29ac81b56e0fb2e82efa8a5e6f1236d6c2b263106bbe2ee3c7dd15b6ef3bd"
    }
   },
+  "pediatria-0780": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2009,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "a98d24b93d1bf9cd08d6195dc65260acb8c422eb8f75ba8ff6192834027b9ecc"
+  },
+  "pediatria-0790": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "3f9ce09d220957534d9c7a5342be1a1f63b54ecb62ae04c4238f96b431523549"
+  },
   "pediatria-0794": {
    "tema": "pediatria",
    "subtemas": [
@@ -34494,6 +35955,54 @@
     "wilkins9-09-diafise-antebraco-crianca"
    ],
    "questaoSha256": "2eb62398ae8cdc98c6e9dd6c869e195a334f1a2eb97261289039b5d4a0d98a87"
+  },
+  "pediatria-0798": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "e3606d7724dea3672a5e8f92f9a14dc80c8649308e9417a7aacee50b7807e2a3"
+  },
+  "pediatria-0800": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "873cf7067da702e0ced5c749cbf1340ad116af938e87120a98da16835f6c1201"
+  },
+  "pediatria-0801": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "77137dc6b5a39c44912466eef29a4ad6f26ee7f1e87b2c391fbdb72c9cd3708e"
   },
   "pediatria-0812": {
    "tema": "pediatria",
@@ -34547,6 +36056,22 @@
     "questaoSha256": "747922426d52fe797d019be43cb56986753f278a39d34c93b6a482058bb428c5",
     "comentarioSha256": "c9c480f1e3a0b89bcf93bc7a9288a1033f78113698533506307cc3c3e5c44379"
    }
+  },
+  "pediatria-0815": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "48c6d9257fbb0d3d01ac3c3229b61dd0ed7188f393fae2d3de572d6e8ad0f601"
   },
   "pediatria-0816": {
    "tema": "pediatria",
@@ -34719,6 +36244,22 @@
     "questaoSha256": "8c435cbd7caea0ef059db64d065248e2de40902fd98e5cd2778ff99bbcf56e24",
     "comentarioSha256": "f61681aa74468f72eaae5f81c09c39877553b7d093b5a6aaa611bc67cbff5f3d"
    }
+  },
+  "pediatria-0824": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "f646f136248309e0c3679528ed61be2e62610b5b040c97194049c79b1c5f3034"
   },
   "pediatria-0827": {
    "tema": "pediatria",
@@ -34972,6 +36513,22 @@
     "comentarioSha256": "ede11a1b25292f7557568421811d1f257d8f4c3f03a809742b28c646944acaeb"
    }
   },
+  "pediatria-0834": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TARO",
+   "ano": 2006,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "8ca5685288bcc264e1d4bf8e90cf991265c4058d7d556acecd895fb6444567a9"
+  },
   "pediatria-0839": {
    "tema": "pediatria",
    "subtemas": [
@@ -35184,6 +36741,22 @@
     "rockwood10-57-diafise-femur"
    ],
    "questaoSha256": "cd6cdf1692b65dc80c0dd70f5278d456362d2469a46c465c5e89da24d281bb4a"
+  },
+  "pediatria-0845": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": "TEOT",
+   "ano": 2021,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "4e6f12d13f7d33de9a46eb488087ea11e243cd78928313c791cbd1ecfa4c7f48"
   },
   "pediatria-0846": {
    "tema": "pediatria",
@@ -39505,6 +41078,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -39590,6 +41164,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "0ae32726cab1713f19ccd6a519f795163af489f4c5d4a62765fa91d49db6d360",
@@ -39678,6 +41253,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-12-avaliacao-cotovelo",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
@@ -39764,6 +41340,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "8319a82d69065bcf2287eb551fc759277a270cef5513397acc76da04550b19b3",
@@ -39852,6 +41429,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "a07b54cdb99a6b5412a09af619fefa6bed9fd2e28e940a8023f938e2f0814eb6",
@@ -39912,6 +41490,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "f1f97e9b4e1ef9b30924f3131909e005cbd0b3f5bee452c00f30da2840578172",
@@ -39972,6 +41551,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-17-fise-distal-umero"
    ],
    "questaoSha256": "6c028548a5231461da1b1138edf810b5cbc7cd8d80e3b82380b1e94aa8aefc14",
@@ -40067,6 +41647,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -40153,6 +41734,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -40238,6 +41820,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -40330,6 +41913,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial",
     "rockwoodcriancas9-16-condilo-lateral",
     "rockwoodcriancas9-17-fise-distal-umero"
@@ -40457,6 +42041,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40518,6 +42103,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40585,6 +42171,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40696,6 +42283,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40777,6 +42365,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40841,6 +42430,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40905,6 +42495,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -40967,6 +42558,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -41041,6 +42633,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -41113,6 +42706,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -41196,6 +42790,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -41274,6 +42869,7 @@
     }
    ],
    "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas",
     "rockwoodcriancas9-13-supracondiliana",
     "rockwoodcriancas9-14-fratura-em-t"
    ],
@@ -43124,6 +44720,270 @@
     "questaoSha256": "5efccb42f7ecbd8c7851d09031c1a8f4555ed155175116d94d257fdb9ceab49e",
     "comentarioSha256": "820e08db1ae9af156b3a5da3f7f9213f731979830c5bd5e7c6a5ac71f5ff5009"
    }
+  },
+  "pediatria-1083": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe",
+     "s": "Comece pela causa: acidental, não acidental ou patológica",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "64fd007e1024ba749d3e07f42d5bca6a7c71a69110535c32ddb31932017307e7"
+  },
+  "pediatria-1084": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "o-que-fratura-mais-osso-segmento-e-numero-a1071159",
+     "s": "O que fratura mais: osso, segmento e número",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "b2022c32ac26aa77d3b65150568875a49cbfd58c6b5aab9dbcff2e1e6784401a"
+  },
+  "pediatria-1085": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "o-que-fratura-mais-osso-segmento-e-numero-faf96c3c",
+     "s": "O que fratura mais: osso, segmento e número",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "922d67895e8a0ff1dab986aa60187bc8f59596bd45a53e684e3d4f18495f0a46"
+  },
+  "pediatria-1086": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "idade-sexo-e-o-desenho-das-curvas-ba6e795e",
+     "s": "Idade, sexo e o desenho das curvas",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "2280fa95b05d21cc8b539767cc26ae04c35db2576ec774041f756b4e1c5038d3"
+  },
+  "pediatria-1087": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "fise-e-fratura-exposta-frequencia-nao-acompanha--040c5566",
+     "s": "Fise e fratura exposta: frequência não acompanha risco",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "d76eb0f39a34034434092b48665caede396b8d80b420d79b7d6a34e868a7463e"
+  },
+  "pediatria-1088": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "idade-sexo-e-o-desenho-das-curvas-3aafa1ab",
+     "s": "Idade, sexo e o desenho das curvas",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "accfaa1d9ab9668cdbf3af2fd5958aaf523263e563707bfa1997cf8f8e4d27f4"
+  },
+  "pediatria-1089": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "ambiente-a-estacao-muda-a-oportunidade-de-cair-97e718e9",
+     "s": "Ambiente: a estação muda a oportunidade de cair",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "84774a1bd7153c63682d6e716dad9df528a66046b3ea6043194a5c800ebd0e4e"
+  },
+  "pediatria-1090": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "ambiente-a-estacao-muda-a-oportunidade-de-cair-a9ea78aa",
+     "s": "Ambiente: a estação muda a oportunidade de cair",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "2d6fc89f4cd2a124baa34463c859a3e98b37154bf05cdbe8b3904a8b7fdf9cf8"
+  },
+  "pediatria-1091": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "mudancas-de-exposicao-e-prevencao-17ceecfd",
+     "s": "Mudanças de exposição e prevenção",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "e419b0ac76fb5d6b601ae8d9a006c879ec02ce3ad863f944c65a6f4cc0b9212c"
+  },
+  "pediatria-1092": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "fise-e-fratura-exposta-frequencia-nao-acompanha--cb41356d",
+     "s": "Fise e fratura exposta: frequência não acompanha risco",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "7a3a942586ca942b715e30b0f7db6e90bb122981695844bc2b14692a3bf4144f"
+  },
+  "pediatria-1093": {
+   "tema": "pediatria",
+   "subtemas": [
+    "Outras fraturas na criança"
+   ],
+   "prova": null,
+   "ano": null,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [
+    {
+     "c": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "b": "o-que-fratura-mais-osso-segmento-e-numero-a1071159",
+     "s": "O que fratura mais: osso, segmento e número",
+     "t": "Epidemiologia das fraturas na criança",
+     "p": "treino"
+    }
+   ],
+   "resumosCandidatos": [
+    "rockwoodcriancas10-01-epidemiologia-fraturas"
+   ],
+   "questaoSha256": "5c7d3f2c1a8078e055b0790d0cdc1dd6f36732d2967d79d9d8b20ad5d2449d31"
   },
   "quadril-0035": {
    "tema": "quadril",
@@ -45231,7 +47091,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -45246,7 +47106,38 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "ad53fb8ba9f6cff67f2db03d6762b11ffd8e365d0c4874b9e3382bfa61fbb286"
+   "questaoSha256": "ad53fb8ba9f6cff67f2db03d6762b11ffd8e365d0c4874b9e3382bfa61fbb286",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-2a7b9a32",
+       "fraturas-do-coronoide-fd8d6fcf",
+       "fraturas-do-coronoide-e7ea3673",
+       "fraturas-do-coronoide-7e8453cb",
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "cb905be94a3e791408d7a679895f1ca46f27424fb40799b675e925b50887f14b"
+     }
+    ],
+    "questaoSha256": "ad53fb8ba9f6cff67f2db03d6762b11ffd8e365d0c4874b9e3382bfa61fbb286",
+    "comentarioSha256": "e5fd699a526576546aada52203dcf3e434e4113cd57904fc4c9a8fb99aa54695"
+   }
   },
   "trauma-0009": {
    "tema": "trauma",
@@ -46971,7 +48862,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46986,7 +48877,36 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "14296b35d0ad96d66287e8e0b6bcb2acf9c45992f9229ddb5b1e3f2053ba67da"
+   "questaoSha256": "14296b35d0ad96d66287e8e0b6bcb2acf9c45992f9229ddb5b1e3f2053ba67da",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Tríade terrível"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-7e8453cb",
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "triade-terrivel-2c2c5123",
+       "triade-terrivel-1483748a",
+       "triade-terrivel-fc91076c"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "5c889cfba83c9c062e0ff16fe1642a67b01189617b103f59b09fb59c94d99e45"
+     }
+    ],
+    "questaoSha256": "14296b35d0ad96d66287e8e0b6bcb2acf9c45992f9229ddb5b1e3f2053ba67da",
+    "comentarioSha256": "60251131d1c2d674a764fba17eb731586eac43fa72f71678a682fced926d197c"
+   }
   },
   "trauma-0056": {
    "tema": "trauma",
@@ -47098,7 +49018,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -47113,7 +49033,35 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "42c7c433f4d4bae8cd1bd5c76cf24e5a896008c4518386065315663c5476a011"
+   "questaoSha256": "42c7c433f4d4bae8cd1bd5c76cf24e5a896008c4518386065315663c5476a011",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível",
+       "Instabilidade rotatória posteromedial em varo",
+       "Luxação simples do cotovelo"
+      ],
+      "blocos": [
+       "triade-terrivel-2c2c5123",
+       "triade-terrivel-1483748a",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "luxacao-simples-do-cotovelo-d4159e35"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "4cfdc633ae62dad28cc598ab51acf592833d1ebc7395cd657528be6d15caee9a"
+     }
+    ],
+    "questaoSha256": "42c7c433f4d4bae8cd1bd5c76cf24e5a896008c4518386065315663c5476a011",
+    "comentarioSha256": "83b6330092d61d6bbd6d5c54a532241ee5c14cc97e071aba4b22771674a35e1d"
+   }
   },
   "trauma-0060": {
    "tema": "trauma",
@@ -49836,7 +51784,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49852,7 +51800,33 @@
     "rockwood10-36-umero-proximal",
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "ba9aeeeac2408c74a7efac5203edd90353e4ed26c57330772bebeb9bac6daee3"
+   "questaoSha256": "ba9aeeeac2408c74a7efac5203edd90353e4ed26c57330772bebeb9bac6daee3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+       "ulna-proximal-olecrano-e-monteggia-posterior-bb35369d",
+       "ulna-proximal-olecrano-e-monteggia-posterior-df272478",
+       "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "eca9a84feaefdd3a246c28cb2e4d608336f6b81c7c1175942d2b157555277cb4"
+     }
+    ],
+    "questaoSha256": "ba9aeeeac2408c74a7efac5203edd90353e4ed26c57330772bebeb9bac6daee3",
+    "comentarioSha256": "8c9539eb045cd92d40cf549d5f613c52f26cf0b854ef53a187010723eeb5addc"
+   }
   },
   "trauma-0136": {
    "tema": "trauma",
@@ -53970,7 +55944,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53985,7 +55959,37 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "28ff51c040cb92687bbc670216aee94db11963cf9ca761d55bb435418f32aff2"
+   "questaoSha256": "28ff51c040cb92687bbc670216aee94db11963cf9ca761d55bb435418f32aff2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio",
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-c1d3bcd9",
+       "quem-segura-o-cotovelo-e54d94bb",
+       "fratura-da-cabeca-do-radio-d9bc4253",
+       "fratura-da-cabeca-do-radio-da237d59",
+       "fratura-da-cabeca-do-radio-ea450acb",
+       "fratura-da-cabeca-do-radio-74811875",
+       "fratura-da-cabeca-do-radio-8dbbe2b9"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "0c386d9c181c0a639c845772a529bbbef11e1b08fcef7e3f12ca3e7aa62275d2"
+     }
+    ],
+    "questaoSha256": "28ff51c040cb92687bbc670216aee94db11963cf9ca761d55bb435418f32aff2",
+    "comentarioSha256": "b53e46e6fac0723e4a5af264ca2b2be4c38ff5bc58130c8af8f78a9ec42af502"
+   }
   },
   "trauma-0269": {
    "tema": "trauma",
@@ -60860,8 +62864,8 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A oficial exige diminuição da variância ulnar ipsilateral como sinal de sobrecomprimento da prótese radial. O corpo do resumo40 explica dimensionamento e abertura umeroulnar lateral em sobrecomprimento importante, mas não descreve a variância ulnar no punho nem compara as linhas umeral/radiocapitelar e o gap medial das alternativas. Falta fonte radiográfica primária que confira cada sinal e sua lateralidade. Não substituir a afirmação pedida por um sinal diferente; preservar A e comentário sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -60875,7 +62879,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "16fecf731c430a0ca6b8df81da2b5a60b525fe9b1de5ddadd71eebb44f1d3429"
+   "questaoSha256": "16fecf731c430a0ca6b8df81da2b5a60b525fe9b1de5ddadd71eebb44f1d3429",
+   "pendencia": "A oficial exige diminuição da variância ulnar ipsilateral como sinal de sobrecomprimento da prótese radial. O corpo do resumo40 explica dimensionamento e abertura umeroulnar lateral em sobrecomprimento importante, mas não descreve a variância ulnar no punho nem compara as linhas umeral/radiocapitelar e o gap medial das alternativas. Falta fonte radiográfica primária que confira cada sinal e sua lateralidade. Não substituir a afirmação pedida por um sinal diferente; preservar A e comentário sem baseResumo."
   },
   "trauma-0693": {
    "tema": "trauma",
@@ -64132,7 +66137,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -64147,7 +66152,38 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "80be03bd877a5db62a882c5704820820def667864a46f760cbc672254335c2af"
+   "questaoSha256": "80be03bd877a5db62a882c5704820820def667864a46f760cbc672254335c2af",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posteromedial em varo",
+       "Tríade terrível",
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+       "triade-terrivel-1483748a",
+       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+       "quem-segura-o-cotovelo-e54d94bb",
+       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "9e775c87967e831884b7157e3fc3e522a6ef776d37525b99f39ea39b381ba345"
+     }
+    ],
+    "questaoSha256": "80be03bd877a5db62a882c5704820820def667864a46f760cbc672254335c2af",
+    "comentarioSha256": "3e0182ad3fa342c0bea978d93c7c24385407a8997def6c31a2c81919b68cc9a0"
+   }
   },
   "trauma-0807": {
    "tema": "trauma",
@@ -64914,8 +66950,8 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A oficial combina pronação com flexão no acesso de Boyd; C combina a mesma pronação com extensão. O corpo do resumo40 sustenta pronação para afastar o interósseo posterior em acessos laterais, mas não descreve a proteção específica de Boyd em flexão versus extensão. Falta descrição anatômica primária desse acesso e das quatro combinações; não inferir a flexão a partir de protocolos de outras lesões. Preservar A e comentário sem novo selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64929,7 +66965,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "a8e256227f5f508b7f3c1d504d53ad5955113dccca5daf8e158f312a1708f84c"
+   "questaoSha256": "a8e256227f5f508b7f3c1d504d53ad5955113dccca5daf8e158f312a1708f84c",
+   "pendencia": "A oficial combina pronação com flexão no acesso de Boyd; C combina a mesma pronação com extensão. O corpo do resumo40 sustenta pronação para afastar o interósseo posterior em acessos laterais, mas não descreve a proteção específica de Boyd em flexão versus extensão. Falta descrição anatômica primária desse acesso e das quatro combinações; não inferir a flexão a partir de protocolos de outras lesões. Preservar A e comentário sem novo selo."
   },
   "trauma-0853": {
    "tema": "trauma",
@@ -68612,7 +70649,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -68627,7 +70664,40 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "79c68511318c897c302a7266a408eac48be3eceb79b213a79e1a63cf22066741"
+   "questaoSha256": "79c68511318c897c302a7266a408eac48be3eceb79b213a79e1a63cf22066741",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Tríade terrível",
+       "Instabilidade rotatória posteromedial em varo",
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "triade-terrivel-2c2c5123",
+       "triade-terrivel-1483748a",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+       "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad",
+       "triade-terrivel-fc91076c",
+       "triade-terrivel-7f75b022",
+       "triade-terrivel-fe3d9fe4",
+       "triade-terrivel-499f49dc"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "9bca1356eef2ec65463276c9d3765e4e4c568d725076713281f1946fa85efe79"
+     }
+    ],
+    "questaoSha256": "79c68511318c897c302a7266a408eac48be3eceb79b213a79e1a63cf22066741",
+    "comentarioSha256": "0a9208113ee0082f321c89977d676e40efaabaf2926bc4c957bf1689bdf4b755"
+   }
   },
   "trauma-0967": {
    "tema": "trauma",
@@ -68741,14 +70811,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial pede estresse em varo como manobra intraoperatória para indicar fixação no Regan-Morrey II. O corpo do resumo40 descreve testes gerais de congruência e teste em varo na faceta anteromedial, mas não compara pivot-shift, gaveta posterior, varo e valgo como algoritmo específico para o tipo II definido por altura. Falta fonte primária que estabeleça a manobra e sua interpretação nesse sistema. Não equiparar automaticamente Regan-Morrey II ao tipo II anteromedial de O’Driscoll. Preservar C e comentário.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "4cb6c3451a98bf62a6cb2c4edc58a8d714c8a6591cf644fe888b19cdfc9f9e32"
+   "questaoSha256": "4cb6c3451a98bf62a6cb2c4edc58a8d714c8a6591cf644fe888b19cdfc9f9e32",
+   "pendencia": "C oficial pede estresse em varo como manobra intraoperatória para indicar fixação no Regan-Morrey II. O corpo do resumo40 descreve testes gerais de congruência e teste em varo na faceta anteromedial, mas não compara pivot-shift, gaveta posterior, varo e valgo como algoritmo específico para o tipo II definido por altura. Falta fonte primária que estabeleça a manobra e sua interpretação nesse sistema. Não equiparar automaticamente Regan-Morrey II ao tipo II anteromedial de O’Driscoll. Preservar C e comentário."
   },
   "trauma-0972": {
    "tema": "trauma",
@@ -72941,7 +75012,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72956,7 +75027,36 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "e993d023d27512e7d3cc050fa46ccd82cdffe45a2b8daa9846857fedd7940f69"
+   "questaoSha256": "e993d023d27512e7d3cc050fa46ccd82cdffe45a2b8daa9846857fedd7940f69",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "quem-segura-o-cotovelo-2b1e3945",
+       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "f34e1bd301f089b4a75cc7e61699fecdf1cda5feb8f05d4cc0c4fa50138e7ab7"
+     }
+    ],
+    "questaoSha256": "e993d023d27512e7d3cc050fa46ccd82cdffe45a2b8daa9846857fedd7940f69",
+    "comentarioSha256": "610805360aca31ae6b84650027c0c4c3831891d364bf0dd2d5454aba66dbb7bf"
+   }
   },
   "trauma-1110": {
    "tema": "trauma",
@@ -73348,8 +75448,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; D bibliográfica e provável já registrada, com alerta de ambiguidade. O corpo do resumo40 contraindica ressecção isolada com lesão do medial OU lateral, não apenas medial. Não permite excluir B/C, os componentes laterais oferecidos. Falta fonte primária que distinga as rupturas isoladas e o contexto da recomendação original, comparando as quatro estruturas. Não transformar D em resposta única sustentada nem retirar o alerta; comentário e provável antigos preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -73363,7 +75463,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f2fb0bc50bea5284ae41894e542e4fdf68b5d32eb29d3af4efcda1f05dfb43d4"
+   "questaoSha256": "f2fb0bc50bea5284ae41894e542e4fdf68b5d32eb29d3af4efcda1f05dfb43d4",
+   "pendencia": "Sem gabarito oficial; D bibliográfica e provável já registrada, com alerta de ambiguidade. O corpo do resumo40 contraindica ressecção isolada com lesão do medial OU lateral, não apenas medial. Não permite excluir B/C, os componentes laterais oferecidos. Falta fonte primária que distinga as rupturas isoladas e o contexto da recomendação original, comparando as quatro estruturas. Não transformar D em resposta única sustentada nem retirar o alerta; comentário e provável antigos preservados, sem baseResumo."
   },
   "trauma-1125": {
    "tema": "trauma",
@@ -76295,14 +78396,15 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial pede a razão da interrupção precoce de um ensaio de idosos com olécrano estável: conservador versus banda/placa. O corpo do resumo40 descreve ensaio de placa versus banda com função semelhante e menos retirada de material na placa, não o ensaio conservador/cirúrgico nem sua interrupção. Faltam identificação do estudo, critérios e eventos que diferenciem complicação cirúrgica, pseudartrose, extensão ativa e superioridade funcional. Não transferir resultados de outro ensaio nem usar contexto da própria questão. Preservar B e comentário sem novo selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "398476f2b5151b2e1f46226ef2b7ab6e03b4686d0d90f0602e023bf9c48a499b"
+   "questaoSha256": "398476f2b5151b2e1f46226ef2b7ab6e03b4686d0d90f0602e023bf9c48a499b",
+   "pendencia": "B oficial pede a razão da interrupção precoce de um ensaio de idosos com olécrano estável: conservador versus banda/placa. O corpo do resumo40 descreve ensaio de placa versus banda com função semelhante e menos retirada de material na placa, não o ensaio conservador/cirúrgico nem sua interrupção. Faltam identificação do estudo, critérios e eventos que diferenciem complicação cirúrgica, pseudartrose, extensão ativa e superioridade funcional. Não transferir resultados de outro ensaio nem usar contexto da própria questão. Preservar B e comentário sem novo selo."
   },
   "trauma-1230": {
    "tema": "trauma",
@@ -77829,7 +79931,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -77844,7 +79946,30 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "413e48d4289940633a5b0ce5f99648be7ca4a819e2de3aadbaec7eb4eab0fbdb"
+   "questaoSha256": "413e48d4289940633a5b0ce5f99648be7ca4a819e2de3aadbaec7eb4eab0fbdb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-9e1dbc64"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "b14621ab715a02050924eeffac86f037109bbc8e871f1cbd2958a9f8eecf5b26"
+     }
+    ],
+    "questaoSha256": "413e48d4289940633a5b0ce5f99648be7ca4a819e2de3aadbaec7eb4eab0fbdb",
+    "comentarioSha256": "c7fb9ce9876c1088b842beae032ca0e3904a2b47a9c22d5177d71f4e54871e83"
+   }
   },
   "trauma-1297": {
    "tema": "trauma",
