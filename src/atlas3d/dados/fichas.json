@@ -1,0 +1,1256 @@
+[
+ {
+  "chave": "femur-proximal",
+  "nome": "Fêmur proximal",
+  "ossos": [
+   "femur"
+  ],
+  "faixa": "proximal",
+  "regiao": "pelve-quadril",
+  "lesoes": [
+   "Fratura do colo do fêmur",
+   "Fratura transtrocantérica",
+   "Fratura subtrocantérica",
+   "Luxação do quadril e fratura da cabeça femoral",
+   "Osteonecrose da cabeça femoral",
+   "Epifisiólise proximal do fêmur",
+   "Fraturas da pelve e do quadril na criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "termos": [
+    "colo femoral",
+    "colo do femur",
+    "cabeca femoral",
+    "cabeca do femur",
+    "trocanter",
+    "circunflexa femoral",
+    "femur proximal",
+    "calcar",
+    "intertrocanter",
+    "fovea",
+    "ligamento redondo",
+    "anteversao femoral"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-53-colo-femur",
+    "s": [
+     "classificacoes"
+    ]
+   },
+   {
+    "c": "rockwood10-54-transtrocanterica",
+    "s": [
+     "classificacao-ao-31a-e-a-parede-lateral"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "femur-diafise",
+  "nome": "Diáfise do fêmur",
+  "ossos": [
+   "femur"
+  ],
+  "faixa": "diafise",
+  "regiao": "coxa",
+  "lesoes": [
+   "Fratura da diáfise do fêmur",
+   "Fraturas do fêmur e da perna na criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do quadril",
+    "Anatomia do joelho"
+   ],
+   "termos": [
+    "diafise do femur",
+    "diafise femoral",
+    "linha aspera",
+    "canal medular do femur"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-57-diafise-femur",
+    "s": [
+     "classificacao"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "femur-distal",
+  "nome": "Fêmur distal",
+  "ossos": [
+   "femur"
+  ],
+  "faixa": "distal",
+  "regiao": "joelho",
+  "lesoes": [
+   "Fratura do fêmur distal"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "termos": [
+    "condilo femoral",
+    "condilo medial",
+    "condilo lateral",
+    "femur distal",
+    "troclea femoral",
+    "epicondilo femoral",
+    "intercondil",
+    "tuberculo adutor",
+    "fossa intercondilar",
+    "sulco troclear"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-58-femur-distal",
+    "s": [
+     "classificacao-ao-ota-e-hoffa"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "patela",
+  "nome": "Patela",
+  "ossos": [
+   "patella"
+  ],
+  "regiao": "joelho",
+  "lesoes": [
+   "Fratura da patela e lesão do aparelho extensor",
+   "Fratura da patela",
+   "Instabilidade femoropatelar",
+   "Ruptura dos tendões patelar e quadricipital"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "termos": [
+    "patela",
+    "patelar",
+    "femoropatelar",
+    "patelofemoral",
+    "retinaculo",
+    "lpfm",
+    "mpfl",
+    "quadricipital"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-60-patela-mecanismo-extensor",
+    "s": [
+     "classificacao"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "tibia-proximal",
+  "nome": "Tíbia proximal",
+  "ossos": [
+   "tibia"
+  ],
+  "faixa": "proximal",
+  "regiao": "joelho",
+  "lesoes": [
+   "Fratura do planalto tibial",
+   "Luxação do joelho e lesões ligamentares"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "termos": [
+    "planalto tibial",
+    "plato tibial",
+    "tuberosidade da tibia",
+    "tuberosidade anterior da tibia",
+    "tuberculo de gerdy",
+    "gerdy",
+    "tibia proximal",
+    "espinha tibial",
+    "eminencia intercondilar",
+    "pes anserin",
+    "pata de ganso"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-62-planalto-tibial",
+    "s": [
+     "classificacao-de-schatzker"
+    ]
+   },
+   {
+    "c": "rockwood10-61-luxacao-joelho",
+    "s": [
+     "classificacao-de-schenck"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "tibia-diafise",
+  "nome": "Diáfise da tíbia",
+  "ossos": [
+   "tibia"
+  ],
+  "faixa": "diafise",
+  "regiao": "perna",
+  "lesoes": [
+   "Fratura da diáfise da tíbia",
+   "Pseudartrose congênita da tíbia e deformidades da perna",
+   "Tíbia vara (Blount)"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do joelho",
+    "Anatomia do pé e tornozelo"
+   ],
+   "termos": [
+    "diafise da tibia",
+    "diafise tibial",
+    "compartimento anterior da perna",
+    "compartimento lateral",
+    "compartimento posterior profundo"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-63-diafise-tibia",
+    "s": [
+     "classificacao-ao-42-e-as-partes-moles"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "tibia-distal",
+  "nome": "Tíbia distal",
+  "ossos": [
+   "tibia"
+  ],
+  "faixa": "distal",
+  "regiao": "tornozelo-pe",
+  "lesoes": [
+   "Fratura do pilão tibial",
+   "Fratura do tornozelo",
+   "Fraturas do tornozelo e do pilão tibial",
+   "Fraturas do tornozelo na criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do pé e tornozelo"
+   ],
+   "termos": [
+    "pilao",
+    "maleolo medial",
+    "tibia distal",
+    "plafond",
+    "sindesmose",
+    "chaput",
+    "volkmann",
+    "deltoide"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-64-pilao-tibial",
+    "s": [
+     "classificacoes-e-prognostico"
+    ]
+   },
+   {
+    "c": "rockwood10-65-tornozelo",
+    "s": [
+     "a-classificacao-de-lauge-hansen-e-a-de-danis-web"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "fibula-proximal",
+  "nome": "Fíbula proximal",
+  "ossos": [
+   "fibula"
+  ],
+  "faixa": "proximal",
+  "regiao": "joelho",
+  "lesoes": [
+   "Luxação do joelho e lesões ligamentares",
+   "Canto posterolateral"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "termos": [
+    "cabeca da fibula",
+    "colo da fibula",
+    "fibular comum",
+    "fibula proximal",
+    "canto posterolateral",
+    "popliteofibular"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-61-luxacao-joelho",
+    "s": [
+     "classificacao-de-schenck"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "fibula-distal",
+  "nome": "Fíbula distal",
+  "ossos": [
+   "fibula"
+  ],
+  "faixa": "distal",
+  "regiao": "tornozelo-pe",
+  "lesoes": [
+   "Fratura do tornozelo",
+   "Fraturas do tornozelo e do pilão tibial",
+   "Entorse e instabilidade lateral do tornozelo"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do pé e tornozelo"
+   ],
+   "termos": [
+    "maleolo lateral",
+    "fibula distal",
+    "talofibular",
+    "calcaneofibular",
+    "tibiofibular",
+    "sindesmose"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-65-tornozelo",
+    "s": [
+     "a-classificacao-de-lauge-hansen-e-a-de-danis-web"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "fibula-diafise",
+  "nome": "Diáfise da fíbula",
+  "ossos": [
+   "fibula"
+  ],
+  "faixa": "diafise",
+  "regiao": "perna",
+  "lesoes": [
+   "Fratura da diáfise da tíbia"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do pé e tornozelo",
+    "Anatomia do joelho"
+   ],
+   "termos": [
+    "diafise da fibula"
+   ]
+  }
+ },
+ {
+  "chave": "umero-proximal",
+  "nome": "Úmero proximal",
+  "ossos": [
+   "humerus"
+  ],
+  "faixa": "proximal",
+  "regiao": "ombro",
+  "lesoes": [
+   "Fratura do úmero proximal",
+   "Fraturas do úmero proximal e da escápula",
+   "Fraturas da clavícula e do úmero proximal na criança",
+   "Osteonecrose da cabeça umeral"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do ombro"
+   ],
+   "termos": [
+    "umero proximal",
+    "cabeca umeral",
+    "cabeca do umero",
+    "tuberosidade maior",
+    "tuberosidade menor",
+    "tuberculo maior",
+    "tuberculo menor",
+    "colo cirurgico",
+    "colo anatomico",
+    "sulco intertubercular",
+    "circunflexa umeral",
+    "retroversao umeral"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-36-umero-proximal",
+    "s": [
+     "neer-ao-e-os-padroes-de-fratura",
+     "irrigacao-da-cabeca-hertel-e-osteonecrose"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "umero-diafise",
+  "nome": "Diáfise do úmero",
+  "ossos": [
+   "humerus"
+  ],
+  "faixa": "diafise",
+  "regiao": "braco",
+  "lesoes": [
+   "Fratura da diáfise do úmero"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do ombro",
+    "Anatomia do cotovelo"
+   ],
+   "termos": [
+    "diafise do umero",
+    "diafise umeral",
+    "sulco espiral",
+    "sulco do nervo radial",
+    "tuberosidade deltoidea",
+    "holstein"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-37-diafise-umero",
+    "s": [
+     "o-nervo-radial",
+     "quanto-se-tolera-e-quando-operar"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "umero-distal",
+  "nome": "Úmero distal",
+  "ossos": [
+   "humerus"
+  ],
+  "faixa": "distal",
+  "regiao": "cotovelo",
+  "lesoes": [
+   "Fratura do úmero distal",
+   "Fraturas supracondilianas do úmero",
+   "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "Fraturas do cotovelo e antebraço"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do cotovelo"
+   ],
+   "termos": [
+    "umero distal",
+    "epicondilo",
+    "capitulo",
+    "capitelo",
+    "troclea",
+    "fossa do olecrano",
+    "fossa coronoide",
+    "coluna medial",
+    "coluna lateral",
+    "supracondil",
+    "condilo umeral"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwoodcriancas9-13-supracondiliana",
+    "s": [
+     "classificacao-de-gartland-e-a-cominuicao-medial"
+    ]
+   },
+   {
+    "c": "rockwoodcriancas9-16-condilo-lateral",
+    "s": [
+     "classificacoes"
+    ]
+   },
+   {
+    "c": "rockwoodcriancas9-14-fratura-em-t",
+    "s": [
+     "classificacao"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "radio-proximal",
+  "nome": "Rádio proximal",
+  "ossos": [
+   "radius"
+  ],
+  "faixa": "proximal",
+  "regiao": "cotovelo",
+  "lesoes": [
+   "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "Instabilidade do cotovelo"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do cotovelo"
+   ],
+   "termos": [
+    "cabeca do radio",
+    "cabeca radial",
+    "colo do radio",
+    "tuberosidade do radio",
+    "tuberosidade radial",
+    "radioulnar proximal",
+    "ligamento anular",
+    "zona segura"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-40-cotovelo-cabeca-radio",
+    "s": [
+     "fratura-da-cabeca-do-radio",
+     "triade-terrivel"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "radio-diafise",
+  "nome": "Diáfise do rádio",
+  "ossos": [
+   "radius"
+  ],
+  "faixa": "diafise",
+  "regiao": "antebraco",
+  "lesoes": [
+   "Fraturas diafisárias do antebraço",
+   "Fraturas do antebraço e punho na criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do cotovelo",
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "diafise do radio",
+    "membrana interossea",
+    "arco radial",
+    "galeazzi"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-42-diafise-radio-ulna",
+    "s": [
+     "galeazzi-o-radio-quebrado-e-a-radioulnar-distal",
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "radio-distal",
+  "nome": "Rádio distal",
+  "ossos": [
+   "radius"
+  ],
+  "faixa": "distal",
+  "regiao": "punho-mao",
+  "lesoes": [
+   "Fratura do rádio distal",
+   "Fraturas do antebraço e punho na criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "radio distal",
+    "estiloide radial",
+    "fossa do escafoide",
+    "fossa semilunar",
+    "incisura sigmoide",
+    "tuberculo de lister",
+    "lister",
+    "inclinacao radial",
+    "inclinacao volar",
+    "linha divisora de aguas",
+    "watershed"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "wilkins9-08-radio-ulna-distal-crianca",
+    "s": [
+     "a-fise-distal-do-radio-salter-harris-e-thurston-"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "ulna-proximal",
+  "nome": "Ulna proximal",
+  "ossos": [
+   "ulna"
+  ],
+  "faixa": "proximal",
+  "regiao": "cotovelo",
+  "lesoes": [
+   "Fratura do olécrano",
+   "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "Instabilidade do cotovelo"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do cotovelo"
+   ],
+   "termos": [
+    "olecrano",
+    "coronoide",
+    "processo coronoide",
+    "incisura troclear",
+    "incisura semilunar",
+    "ulna proximal",
+    "tuberculo sublime",
+    "sublime"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-40-cotovelo-cabeca-radio",
+    "s": [
+     "fraturas-do-coronoide",
+     "ulna-proximal-olecrano-e-monteggia-posterior"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "ulna-diafise",
+  "nome": "Diáfise da ulna",
+  "ossos": [
+   "ulna"
+  ],
+  "faixa": "diafise",
+  "regiao": "antebraco",
+  "lesoes": [
+   "Fraturas diafisárias do antebraço"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do cotovelo",
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "diafise da ulna",
+    "monteggia",
+    "fratura do cassetete"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-42-diafise-radio-ulna",
+    "s": [
+     "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi",
+     "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "ulna-distal",
+  "nome": "Ulna distal",
+  "ossos": [
+   "ulna"
+  ],
+  "faixa": "distal",
+  "regiao": "punho-mao",
+  "lesoes": [
+   "Fibrocartilagem triangular e punho ulnar"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "estiloide ulnar",
+    "cabeca da ulna",
+    "radioulnar distal",
+    "fibrocartilagem triangular",
+    "tfcc",
+    "variancia ulnar",
+    "fovea ulnar"
+   ]
+  }
+ },
+ {
+  "chave": "clavicula",
+  "nome": "Clavícula",
+  "ossos": [
+   "clavicle"
+  ],
+  "regiao": "ombro",
+  "lesoes": [
+   "Fratura da clavícula",
+   "Luxação acromioclavicular",
+   "Luxação acromioclavicular e esternoclavicular"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do ombro"
+   ],
+   "termos": [
+    "clavicula",
+    "acromioclavicular",
+    "coracoclavicular",
+    "esternoclavicular",
+    "ligamento conoide",
+    "ligamento trapezoide"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-34-fratura-clavicula",
+    "s": [
+     "classificacoes-allman-neer-craig-robinson-e-ao"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "escapula",
+  "nome": "Escápula",
+  "ossos": [
+   "scapula"
+  ],
+  "regiao": "ombro",
+  "lesoes": [
+   "Fratura da escápula",
+   "Instabilidade anterior do ombro",
+   "Lesões SLAP e do lábio superior"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do ombro"
+   ],
+   "termos": [
+    "escapula",
+    "glenoide",
+    "acromio",
+    "coracoide",
+    "incisura escapular",
+    "incisura supraescapular",
+    "espinha da escapula",
+    "labio glenoidal",
+    "labrum",
+    "espaco quadrilatero",
+    "intervalo triangular",
+    "espaco triangular"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-33-fratura-escapula",
+    "s": [
+     "fraturas-da-glenoide",
+     "complexo-suspensor-superior-ombro-flutuante-e-co"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "osso-do-quadril",
+  "nome": "Osso do quadril (pelve e acetábulo)",
+  "ossos": [
+   "hip_bone"
+  ],
+  "regiao": "pelve-quadril",
+  "lesoes": [
+   "Fratura do acetábulo",
+   "Fratura do anel pélvico",
+   "Fratura do anel pélvico",
+   "Fraturas da pelve e do quadril na criança",
+   "Displasia do quadril no adulto",
+   "Displasia do desenvolvimento do quadril",
+   "Impacto femoroacetabular"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do quadril"
+   ],
+   "termos": [
+    "acetabulo",
+    "acetabular",
+    "ilio",
+    "isquio",
+    "pube",
+    "pubis",
+    "coluna anterior",
+    "coluna posterior",
+    "incisura isquiatica",
+    "labrum",
+    "corona mortis",
+    "espinha iliaca"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-50-anel-pelvico",
+    "s": [
+     "classificacao-de-young-e-burgess",
+     "classificacao-de-tile-e-as-outras"
+    ]
+   },
+   {
+    "c": "rockwood10-51-acetabulo",
+    "s": [
+     "classificacao-de-letournel"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "sacro",
+  "nome": "Sacro e cóccix",
+  "ossos": [
+   "sacrum",
+   "coccyx"
+  ],
+  "regiao": "pelve-quadril",
+  "lesoes": [
+   "Fratura do anel pélvico",
+   "Espondilólise e espondilolistese"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da coluna",
+    "Anatomia do quadril"
+   ],
+   "termos": [
+    "sacro",
+    "sacral",
+    "sacroiliac",
+    "forame sacral",
+    "denis",
+    "coccix"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-50-anel-pelvico",
+    "s": [
+     "classificacao-de-young-e-burgess"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "coluna-cervical",
+  "nome": "Coluna cervical",
+  "ossos": [
+   "atlas_c1",
+   "axis_c2",
+   "vertebra_c3",
+   "vertebra_c4",
+   "vertebra_c5",
+   "vertebra_c6",
+   "vertebra_c7"
+  ],
+  "regiao": "coluna",
+  "lesoes": [
+   "Fraturas da coluna cervical",
+   "Fraturas da coluna cervical alta",
+   "Fraturas da coluna cervical baixa",
+   "Hérnia de disco e mielopatia cervical",
+   "Coluna cervical da criança e torcicolo"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "termos": [
+    "atlas",
+    "axis",
+    "odontoide",
+    "dente do axis",
+    "cervical",
+    "occipitocervical",
+    "atlantoaxial",
+    "c1",
+    "c2",
+    "c7",
+    "arteria vertebral",
+    "forame transverso"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-48-coluna-cervical",
+    "s": [
+     "coluna-subaxial-classificacoes-e-estabilidade"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "coluna-toracica",
+  "nome": "Coluna torácica",
+  "ossos": [
+   "vertebra_t1",
+   "vertebra_t2",
+   "vertebra_t3",
+   "vertebra_t4",
+   "vertebra_t5",
+   "vertebra_t6",
+   "vertebra_t7",
+   "vertebra_t8",
+   "vertebra_t9",
+   "vertebra_t10",
+   "vertebra_t11",
+   "vertebra_t12"
+  ],
+  "regiao": "coluna",
+  "lesoes": [
+   "Fraturas da coluna toracolombar",
+   "Cifose e doença de Scheuermann",
+   "Escoliose idiopática"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "termos": [
+    "toracica",
+    "toracico",
+    "costovertebral",
+    "pediculo toracico",
+    "t12",
+    "adamkiewicz"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-49-fratura-toracolombar",
+    "s": [
+     "classificacoes-estabilidade-denis-ao-spine-e-tli"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "coluna-lombar",
+  "nome": "Coluna lombar",
+  "ossos": [
+   "vertebra_l1",
+   "vertebra_l2",
+   "vertebra_l3",
+   "vertebra_l4",
+   "vertebra_l5"
+  ],
+  "regiao": "coluna",
+  "lesoes": [
+   "Fraturas da coluna toracolombar",
+   "Hérnia de disco lombar",
+   "Espondilólise e espondilolistese",
+   "Estenose do canal lombar",
+   "Lombalgia"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da coluna"
+   ],
+   "termos": [
+    "lombar",
+    "pars interarticularis",
+    "pediculo",
+    "faceta articular",
+    "l4",
+    "l5",
+    "cauda equina",
+    "cone medular",
+    "forame intervertebral"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-49-fratura-toracolombar",
+    "s": [
+     "classificacoes-estabilidade-denis-ao-spine-e-tli"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "escafoide",
+  "nome": "Escafoide",
+  "ossos": [
+   "scaphoid_bone"
+  ],
+  "regiao": "punho-mao",
+  "lesoes": [
+   "Fratura do escafoide e do carpo",
+   "Fraturas do escafoide e do carpo",
+   "Instabilidade do carpo"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "escafoide",
+    "tabaqueira",
+    "escafolunar",
+    "polo proximal"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-44-carpo",
+    "s": [
+     "escafoide-classificacao-de-herbert-e-fisher"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "semilunar",
+  "nome": "Semilunar",
+  "ossos": [
+   "lunate_bone"
+  ],
+  "regiao": "punho-mao",
+  "lesoes": [
+   "Doença de Kienböck",
+   "Instabilidade do carpo",
+   "Fratura do escafoide e do carpo"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "semilunar",
+    "lunato",
+    "escafolunar",
+    "lunopiramidal",
+    "perilunar"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-44-carpo",
+    "s": []
+   }
+  ]
+ },
+ {
+  "chave": "carpo",
+  "nome": "Ossos do carpo",
+  "ossos": [
+   "capitate_bone",
+   "hamate_bone",
+   "pisiform_bone",
+   "trapezium_bone",
+   "trapezoid_bone",
+   "triquetrum_bone"
+  ],
+  "regiao": "punho-mao",
+  "lesoes": [
+   "Fratura do escafoide e do carpo",
+   "Fraturas do escafoide e do carpo",
+   "Instabilidade do carpo",
+   "Rizartrose e artrose da mão"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "capitato",
+    "hamato",
+    "hamulo",
+    "gancho do hamato",
+    "pisiforme",
+    "trapezio",
+    "trapezoide",
+    "piramidal",
+    "ossos do carpo",
+    "fileira proximal do carpo",
+    "fileira distal do carpo",
+    "mediocarpal",
+    "canal de guyon"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-44-carpo",
+    "s": []
+   }
+  ]
+ },
+ {
+  "chave": "mao-ossos",
+  "nome": "Metacarpos e falanges",
+  "prefixos": [
+   "metacarpal_bone",
+   "finger_of_hand"
+  ],
+  "regiao": "punho-mao",
+  "lesoes": [
+   "Fraturas dos metacarpos e falanges",
+   "Lesões ligamentares dos dedos",
+   "Mão da criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia da mão e punho"
+   ],
+   "termos": [
+    "metacarp",
+    "falange",
+    "interfalang",
+    "metacarpofalang",
+    "bennett",
+    "rolando",
+    "boxeador",
+    "placa volar"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-45-fraturas-mao",
+    "s": [
+     "base-do-polegar-bennett-rolando-e-a-luxacao-da-c",
+     "metacarpos-tolerancia-de-desvio-colo-do-quinto-e"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "talus",
+  "nome": "Tálus",
+  "ossos": [
+   "talus"
+  ],
+  "regiao": "tornozelo-pe",
+  "lesoes": [
+   "Fraturas do tálus e do calcâneo",
+   "Fraturas do retropé, mediopé e antepé",
+   "Coalizões tarsais"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do pé e tornozelo"
+   ],
+   "termos": [
+    "talus",
+    "talo",
+    "astragalo",
+    "subtalar",
+    "talonavicular",
+    "seio do tarso",
+    "processo lateral do talus"
+   ]
+  },
+  "biblioteca": [
+   {
+    "c": "rockwood10-66-talus",
+    "s": [
+     "classificacao"
+    ]
+   }
+  ]
+ },
+ {
+  "chave": "calcaneo",
+  "nome": "Calcâneo",
+  "ossos": [
+   "calcaneus"
+  ],
+  "regiao": "tornozelo-pe",
+  "lesoes": [
+   "Fraturas do tálus e do calcâneo",
+   "Fraturas do retropé, mediopé e antepé",
+   "Tendão calcâneo",
+   "Coalizões tarsais"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do pé e tornozelo"
+   ],
+   "termos": [
+    "calcaneo",
+    "sustentaculo",
+    "bohler",
+    "gissane",
+    "subtalar",
+    "calcaneocuboide"
+   ]
+  }
+ },
+ {
+  "chave": "mediope-antepe",
+  "nome": "Mediopé e antepé",
+  "ossos": [
+   "navicular_bone",
+   "cuboid_bone",
+   "medial_cuneiform_bone",
+   "intermediate_cuneiform_bone",
+   "lateral_cuneiform_bone",
+   "sesamoid_bones_of_foot"
+  ],
+  "prefixos": [
+   "metatarsal_bone",
+   "finger_of_foot"
+  ],
+  "regiao": "tornozelo-pe",
+  "lesoes": [
+   "Fraturas do mediopé e antepé",
+   "Fraturas do retropé, mediopé e antepé",
+   "Hálux valgo",
+   "Fraturas do pé na criança"
+  ],
+  "anatomia": {
+   "subtemas": [
+    "Anatomia do pé e tornozelo"
+   ],
+   "termos": [
+    "navicular",
+    "cuboide",
+    "cuneiforme",
+    "metatars",
+    "lisfranc",
+    "chopart",
+    "halux",
+    "sesamoide",
+    "jones",
+    "falange do pe"
+   ]
+  }
+ }
+]

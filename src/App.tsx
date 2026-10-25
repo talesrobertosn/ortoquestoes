@@ -58,6 +58,7 @@ const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ defau
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
 const Ligas = lazy(() => carregadores.Ligas().then(({ Ligas }) => ({ default: Ligas })))
 const Flashcards = lazy(() => carregadores.Flashcards().then(({ Flashcards }) => ({ default: Flashcards })))
+const Atlas3D = lazy(() => carregadores.Atlas3D().then(({ Atlas }) => ({ default: Atlas })))
 const AdminAssinaturas = lazy(() => carregadores.AdminAssinaturas().then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
@@ -100,6 +101,7 @@ const TITULOS: Record<string, string> = {
   '/flashcards/cripta': 'Torneio de Flashcards | Orto Questões',
   '/flashcards/torre': 'Torre do Título | Orto Questões',
   '/flashcards/biblioteca': 'Biblioteca de flashcards | Orto Questões',
+  '/atlas': 'Atlas Ortopédico 3D | Orto Questões',
 }
 
 /** A página de uma rota (o App desenha a do site e, por cima, a do jogo). */
@@ -206,6 +208,10 @@ function paginaDaRota(rota: Rota): ReactNode {
     case 'flashcards':
       pagina = FLASHCARDS_LIBERADO ? <Flashcards secao={segundo} /> : <NaoEncontrada />
       break
+    // Atlas Ortopédico 3D (25/10/2026): pop-up por cima do site, como os flashcards; fechar volta à página de origem.
+    case 'atlas':
+      pagina = <Atlas3D segmentos={rota.segmentos} consulta={rota.consulta} aoFechar={() => navegar(rotaDoFundo('/'), true)} />
+      break
     default:
       pagina = <NaoEncontrada />
   }
@@ -247,12 +253,13 @@ export function App() {
   const jogo = ehJogo(rota)
   // sem conta, o convite para criar a conta aparece na própria página, não num pop-up por baixo do site
   const barrado = jogo && EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !sessao
-  const popup = jogo && !barrado
+  const atlas = primeiro === 'atlas'
+  const popup = (jogo && !barrado) || atlas
   // fora do jogo, a página atual vira o fundo do pop-up; dentro dele, o fundo é a última página do site
   const textoRota = rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')
-  if (!jogo) lembrarFundo(textoRota)
-  const fundo = popup ? rotaDe(rotaDoFundo()) : rota
-  const pagina = paginaDaRota(popup && ehJogo(fundo) ? rotaDe('/flashcards') : fundo)
+  if (!jogo && !atlas) lembrarFundo(textoRota)
+  const fundo = popup ? rotaDe(rotaDoFundo(atlas ? '/' : undefined)) : rota
+  const pagina = paginaDaRota(popup && (ehJogo(fundo) || fundo.segmentos[0] === 'atlas') ? rotaDe(atlas ? '/' : '/flashcards') : fundo)
   const sobreposto = popup ? paginaDaRota(rota) : null
 
   // Abrir o pop-up e fechá-lo de volta para a mesma página não mexe na rolagem; ir para outra página começa do topo.
