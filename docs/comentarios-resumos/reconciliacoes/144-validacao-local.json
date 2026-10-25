@@ -179,5 +179,21 @@
     "revisada": 1280
   },
   "proximoLote": 145,
-  "publicacao": "Aguardar checks do head, merge e guarda/deploy; conferir trinta avulsos, três capítulos-fonte e índice de letras em produção. Registrar a prova no PR, sem commit artificial posterior."
+  "publicacao": "Aguardar checks do head, merge e guarda/deploy; conferir trinta avulsos, três capítulos-fonte e índice de letras em produção. Registrar a prova no PR, sem commit artificial posterior.",
+  "integracaoConcorrente": {
+    "base": "710255370e20b0e8a205f96e2fed9af94bc0a1e9",
+    "commits": [
+      "adbdd87a",
+      "71025537"
+    ],
+    "idsPreservados": [
+      "coluna-0558",
+      "coluna-0559",
+      "coluna-0560",
+      "coluna-0561",
+      "coluna-0562",
+      "coluna-0563"
+    ],
+    "conflito": "Apenas letras.json, resolvido pelo gerador oficial; comentários sem sobreposição. Repetir validações e CI do novo head."
+  }
 }
