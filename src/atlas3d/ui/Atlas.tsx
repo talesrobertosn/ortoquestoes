@@ -17,6 +17,7 @@ import { EsperaPixel } from '../../componentes/EsperaPixel'
 import { usarConta } from '../../conta/ContextoConta'
 import { usarPremium } from '../../conta/premium'
 import { ConviteAtlas, type TipoConvite } from './ConviteAtlas'
+import { GuiaControles } from './GuiaControles'
 import { corDaArea } from '../../dados/coresAreas'
 import '../../estilos/paginas/Atlas3D.css'
 
@@ -58,6 +59,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const { premium } = usarPremium()
   const nivel: 'visitante' | 'conta' | 'assinante' = !sessao ? 'visitante' : premium ? 'assinante' : 'conta'
   const [convite, definirConvite] = useState<TipoConvite | null>(null)
+  const [guia, definirGuia] = useState(false)
+  const toque = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   const previa = useRef<ReturnType<typeof setTimeout> | null>(null)
   useEffect(() => () => { if (previa.current) clearTimeout(previa.current) }, [])
 
@@ -194,6 +197,13 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const ficha = estrutura ? fichaDe(estrutura, selecao?.faixa) : undefined
   const vinculo = ficha && vinculos ? vinculos[ficha.chave] : undefined
   const carregando = ORDEM_GRUPOS.filter((g) => ligados.has(g) && (progresso[g] ?? 0) < 1)
+  // O que está aberto, para o "online agora" do painel do administrador (conta/aparelho.ts lê ao mandar o sinal).
+  useEffect(() => {
+    const e = selecao && catalogo ? catalogo.estruturas.find((x) => x.id === selecao.id) : undefined
+    const vendo = questoes ? `respondendo: ${questoes.titulo}` : e ? nomeCompleto(e, selecao?.faixa) : ''
+    try { if (vendo) sessionStorage.setItem('oq-atlas-vendo', vendo.slice(0, 80)); else sessionStorage.removeItem('oq-atlas-vendo') } catch { /* sem armazenamento: o painel mostra só a região */ }
+  }, [selecao, catalogo, questoes])
+  useEffect(() => () => { try { sessionStorage.removeItem('oq-atlas-vendo') } catch { /* idem */ } }, [])
   const nomePassagem = passagem && catalogo ? (() => { const e = catalogo.estruturas.find((x) => x.id === passagem.id); return e ? nomeCompleto(e, passagem.faixa) : '' })() : ''
 
   // Esc limpa a seleção; F foca; I isola; H esconde
@@ -231,6 +241,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         </button>
         <p className="atlas__marca tr-heroi__selo">Atlas 3D · Beta</p>
         <div className="atlas__acoes-topo">
+          <button type="button" className="at-botao-icone at-ajuda" onClick={() => definirGuia(true)} aria-label="Como usar" title="Como usar">?</button>
           <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => definirPersonalizar((v) => !v)} aria-label="Personalizar" title="Personalizar"><Icone nome="ajustes" tamanho={19} /></button>
           <button type="button" className="at-botao-icone" onClick={aoFechar} aria-label="Fechar o atlas" title="Fechar (volta à página anterior)"><Icone nome="fechar" tamanho={19} /></button>
         </div>
@@ -332,12 +343,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       {catalogo && carregando.length > 0 && <div className="atlas__aviso-carga">Carregando {carregando.map((g) => GRUPOS[g].rotulo.toLowerCase()).join(', ')}… {Math.round(Math.min(...carregando.map((g) => progresso[g] ?? 0)) * 100)}%</div>}
       {convite && <ConviteAtlas convite={convite} aoFechar={() => definirConvite(null)} />}
       {erro && <div className="atlas__carregando"><p>{erro}</p><button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button></div>}
-      {catalogo && !pref.dicasVistas && !selecao && (
-        <div className="atlas__boas-vindas">
-          <strong>Clique num osso para ver as fraturas, as classificações e as questões.</strong>
-          <span>{larga ? 'Arraste para girar, role para aproximar, botão direito para mover.' : 'Um dedo gira, dois dedos aproximam e movem.'}</span>
-          <button type="button" className="at-ouro at-ouro--curto" onClick={() => definirPref((p) => ({ ...p, dicasVistas: true }))}>Entendi</button>
-        </div>
+      {catalogo && (guia || !pref.dicasVistas) && (
+        <GuiaControles toque={toque} aoFechar={() => { definirGuia(false); definirPref((p) => ({ ...p, dicasVistas: true })) }} />
       )}
     </div>
   )

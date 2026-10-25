@@ -111,7 +111,7 @@ export function CentralFlashcards() {
       <Abas atual="central" />
       <section className="cfh-heroi" aria-labelledby="cfh-titulo">
         <div className="cfh-heroi__texto">
-          <p className="tr-heroi__selo">Flashcards · beta público</p>
+          <p className="tr-heroi__selo">Flashcards</p>
           <h1 id="cfh-titulo">Treine flashcards de Ortopedia.</h1>
           <p>Por área, tirados das questões comentadas das provas reais e dos OrtoQuestões Simulados. Revisão espaçada: o que você erra volta antes, o que você sabe espaça. E, se quiser, os mesmos flashcards em modo jogo.</p>
           <p className="cfh-heroi__pessoal"><strong>{pessoal.abertura}</strong> {pessoal.dados}</p>
@@ -187,7 +187,7 @@ export function CentralFlashcards() {
 
       <aside className="cf-aviso" role="note">
         <Icone nome="correio" tamanho={22} />
-        <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />O beta está aberto. Conte o que gostou e o que podemos melhorar: a sua opinião chega direto ao painel da equipe.</p>
+        <p><strong>Estamos construindo os próximos flashcards com você.</strong><br />Conte o que gostou e o que podemos melhorar: a sua opinião chega direto ao painel da equipe.</p>
         <button type="button" className="botao botao--principal" onClick={() => definirOpiniao('central')}>Enviar opinião</button>
       </aside>
 
@@ -280,7 +280,7 @@ export function DesempenhoFlashcards() {
     <article className="cf empilha-2">
       <Abas atual="desempenho" />
       <header className="cf-cabeca">
-        <p className="cf-selo"><span className="cf-beta">Beta</span> Flashcards</p>
+        <p className="cf-selo">Flashcards</p>
         <h1>Meu desempenho nos flashcards</h1>
         <p>O aprendizado conta junto o que você responde na Biblioteca e no Torneio. Andares, ouro e chefes do jogo ficam de fora destes números.</p>
       </header>
@@ -448,7 +448,7 @@ export function JanelaOpiniao({ origem, aoFechar }: { origem: OrigemOpiniao; aoF
         <div className="cf-opiniao__feito" role="status">
           <Icone nome="certo" tamanho={28} />
           <h2>Opinião recebida. Obrigado!</h2>
-          <p>Ela chegou ao painel do Tales e entra na próxima rodada de ajustes do beta.</p>
+          <p>Ela chegou ao painel do Tales e entra na próxima rodada de ajustes.</p>
           <button type="button" className="botao botao--principal" onClick={aoFechar}>Fechar</button>
         </div>
       ) : (
