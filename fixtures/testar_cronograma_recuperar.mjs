@@ -57,7 +57,9 @@ try {
   const deHoje = new Set(idsDe(base.dias[0]))
   assert.ok(ids.every((id) => !deHoje.has(id)), 'nenhuma é de hoje')
   const op = m.opcoesComRecuperado(plano(), ONTEM, ids, HOJE)
-  assert.deepEqual(op.recuperados, { [ONTEM]: ids })
+  assert.deepEqual(Object.keys(op.recuperados), [ONTEM])
+  assert.deepEqual(m.expandirIds(op.recuperados[ONTEM]), ids, 'guardado em forma compacta, sem perder nenhuma')
+  assert.ok(JSON.stringify(op).length < JSON.stringify(ids).length, 'e menor que a lista simples')
   const c1 = m.calcularPlano(indice, {}, plano(op), sp(HOJE, 10))
   // O que o dia perdido deixou para trás estava espalhado pelos próximos dias (hoje incluído): recuperar tira isso deles.
   assert.ok(c1.metaDiaria <= base.metaDiaria && c1.metaDiaria >= base.metaDiaria - 3, `a meta de hoje não sobe (era ${base.metaDiaria}, ficou ${c1.metaDiaria})`)
@@ -95,11 +97,49 @@ try {
   assert.equal(m.opcoesComRecuperado(plano(), HOJE, ids, HOJE), null, 'hoje não é dia perdido')
   assert.equal(m.opcoesComRecuperado(plano(), AMANHA, ids, HOJE), null, 'nem amanhã')
   assert.equal(m.opcoesComRecuperado(plano(op), ONTEM, ids, HOJE), null, 'o mesmo dia não é preso duas vezes')
-  const tres = m.opcoesComRecuperado(plano({ recuperados: { '2026-10-15': ['a'], '2026-10-16': ['b'], '2026-10-01': ['c'] } }), ONTEM, ids, HOJE)
+  const tres = m.opcoesComRecuperado(plano({ recuperados: { '2026-10-15': ['a-1'], '2026-10-16': ['b-2'], '2026-10-01': ['c-3'] } }), ONTEM, ids, HOJE)
   assert.deepEqual(Object.keys(tres.recuperados).sort(), ['2026-10-16', ONTEM], 'guarda no máximo os dois mais novos e descarta os velhos')
   // Depois de 10 dias, o registro deixa de valer e as questões voltam ao plano.
   const depois = m.calcularPlano(indice, {}, plano(op), sp('2026-10-31', 10))
   assert.ok(!depois.reservados.some((id) => ids.includes(id)), 'registro vencido não prende mais as questões')
+
+  // ── 6. Casos do Codex (PR #524) ──
+  // a) Questões de um dia puxado que passou sem ser feito podem ir para a recuperação dele.
+  const op20 = m.opcoesComPuxado(plano(), HOJE, m.idsParaPuxar(ontem, HOJE), ONTEM)
+  const em21 = m.calcularPlano(indice, {}, plano(op20), sp(AMANHA, 10))
+  const perdido20 = em21.recuperaveis.find((r) => r.chave === HOJE)
+  const ids20 = m.idsParaRecuperar(em21, HOJE)
+  const opRec20 = m.opcoesComRecuperado(plano(op20), HOJE, ids20, AMANHA)
+  const presas20 = m.calcularPlano(indice, {}, plano(opRec20), sp(AMANHA, 11)).recuperaveis.find((r) => r.chave === HOJE).recuperado
+  assert.equal(presas20.ids.length, perdido20.falta, 'o dia puxado que passou é recuperado inteiro')
+  // b) Recuperação começada há mais de 7 dias continua à mão enquanto as questões estão guardadas.
+  const D13 = '2026-10-13'
+  const em20 = m.calcularPlano(indice, {}, plano(), sp(HOJE, 10))
+  const op13 = m.opcoesComRecuperado(plano(), D13, m.idsParaRecuperar(em20, D13), HOJE)
+  const r13 = m.calcularPlano(indice, {}, plano(op13), sp(AMANHA, 10)).recuperaveis.find((r) => r.chave === D13)
+  assert.ok(r13?.recuperado && r13.recuperado.livres.length > 0, 'o dia 13 continua com o botão no dia 21')
+  // c) Dia já adiantado (meta do dia anterior + extra, sem registro guardado) não aparece como perdido.
+  const ids19 = ontem.dias[0].itens.flatMap((i) => i.ids)
+  const extra = ontem.dias.slice(1, 4).flatMap((d) => d.itens.flatMap((i) => i.ids)).slice(0, 100)
+  const rAdiantou = responder([...ids19.slice(0, ontem.metaDiaria), ...extra], sp(ONTEM, 10))
+  const adiantou = m.calcularPlano(indice, rAdiantou, plano(), sp(AMANHA, 10))
+  assert.ok(!adiantou.recuperaveis.some((r) => r.chave === HOJE), 'o dia 20, já adiantado no 19, não é dia perdido')
+  // d) Último dia antes da reta final: sem dias pela frente, a recuperação completa com as que faltam do acervo.
+  const fim = m.calcularPlano(indice, {}, plano(), sp('2026-12-26', 10))
+  const perdidoFim = fim.recuperaveis[0]
+  assert.ok(perdidoFim, 'há dias perdidos no fim do plano')
+  const idsFim = m.idsParaRecuperar(fim, perdidoFim.chave, { indice, respondidas: {}, simulados: true })
+  assert.equal(idsFim.length, perdidoFim.falta, 'e o dia perdido ganha as questões que faltavam')
+  assert.ok(idsFim.every((id) => !fim.reservados.includes(id)))
+  // e) Plano curto com dias grandes: dois dias recuperados cabem no limite do servidor.
+  const curto = (op = {}) => ({ ...plano(op), data_prova: '2026-11-20' })
+  const c17 = m.calcularPlano(indice, {}, curto(), sp(HOJE, 10))
+  const [d1, d2] = c17.recuperaveis
+  const op1 = m.opcoesComRecuperado(curto(), d1.chave, m.idsParaRecuperar(c17, d1.chave), HOJE)
+  const c18 = m.calcularPlano(indice, {}, curto(op1), sp(HOJE, 11))
+  const op2 = m.opcoesComRecuperado(curto(op1), d2.chave, m.idsParaRecuperar(c18, d2.chave), HOJE)
+  assert.ok(op2 && JSON.stringify(op2).length <= m.LIMITE_OPCOES, `dois dias de ${d1.falta} e ${d2.falta} questões cabem (${JSON.stringify(op2).length} caracteres)`)
+  assert.equal(Object.keys(op2.recuperados).length, 2)
 
   console.log(`recuperar dia perdido: ok (meta de ontem ${perdido.meta}, ${ids.length} questões presas, hoje ${base.metaDiaria})`)
 } finally {

@@ -280,7 +280,8 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     for (const [k, lista] of brutosRec) {
       const data = dataLocal(k)
       if (data >= hoje || data < criado || diasEntre(data, hoje) > DIAS_GUARDAR_RECUPERADO) continue
-      const ids = unicos(lista.filter((id) => typeof id === 'string' && doPlano.has(id) && !puxadoDe.has(id) && !recuperadoDe.has(id)))
+      // Questão de um dia puxado que já passou sem ser feita pode ir para o dia recuperado; a de um puxado que ainda vale, não.
+      const ids = unicos(expandirIds(lista).filter((id) => doPlano.has(id) && (puxadoDe.get(id) ?? -1) < hoje.getTime() && !recuperadoDe.has(id)))
       if (!ids.length) continue
       for (const id of ids) recuperadoDe.set(id, data.getTime())
       recuperados.set(data.getTime(), { chave: k, ids })
@@ -331,9 +332,10 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     const primeira = r?.historico?.[0]?.em ?? r?.q
     if (primeira === undefined) continue
     // Questão de um dia recuperado: conta para o dia que passou.
-    const dia = recuperadoDe.get(q.id) ?? (primeira >= inicioHoje ? hoje.getTime() : diaCivil(primeira).getTime())
+    const recuperadaPara = recuperadoDe.get(q.id)
+    const dia = recuperadaPara ?? (primeira >= inicioHoje ? hoje.getTime() : diaCivil(primeira).getTime())
     // Questão de um dia puxado, feita antes dele: conta para aquele dia, não para este.
-    if ((puxadoDe.get(q.id) ?? 0) > dia) continue
+    if (recuperadaPara === undefined && (puxadoDe.get(q.id) ?? 0) > dia) continue
     primeirasPorDia.set(dia, (primeirasPorDia.get(dia) ?? 0) + 1)
   }
   const feitasHoje = primeirasPorDia.get(hoje.getTime()) ?? 0
@@ -675,7 +677,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     metaDiaNormal, tipoHoje, miniHoje, dias, amanha, passadaAtual, inicioPassada, semanaNumero, semanasTotal, projecao,
     puxados: Object.fromEntries([...puxados.values()].map((p) => [p.chave, p.ids])),
     reservados: [...[...contaPuxado].filter(([t]) => t > hoje.getTime()).flatMap(([, c2]) => c2.livres), ...[...livresRecuperar.values()].flat()],
-    recuperaveis: hoje >= inicioRetaFinal ? [] : diasRecuperaveis(indice, respondidas, plano, hoje, criado, inicioRetaFinal, primeirasPorDia, recuperados, livresRecuperar),
+    recuperaveis: hoje >= inicioRetaFinal ? [] : diasRecuperaveis(indice, respondidas, plano, hoje, criado, inicioRetaFinal, primeirasPorDia, recuperados, livresRecuperar, anteriores),
   }
 }
 
@@ -689,15 +691,20 @@ export const DIAS_GUARDAR_RECUPERADO = 10
  * recente ao mais antigo, e os que já estão sendo recuperados. A meta é a que o dia
  * teve (metaDoDiaPassado); feitas, o que foi feito nele e para ele depois.
  */
-function diasRecuperaveis(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, hoje: Date, criado: Date, inicioRetaFinal: Date, primeirasPorDia: Map<number, number>, recuperados: Map<number, { chave: string; ids: string[] }>, livresRecuperar: Map<number, string[]>): DiaRecuperavel[] {
+function diasRecuperaveis(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, hoje: Date, criado: Date, inicioRetaFinal: Date, primeirasPorDia: Map<number, number>, recuperados: Map<number, { chave: string; ids: string[] }>, livresRecuperar: Map<number, string[]>, creditos: Map<number, number>): DiaRecuperavel[] {
   const lista: DiaRecuperavel[] = []
-  for (let k = 1; k <= DIAS_RECUPERAR; k++) {
+  // Dias novos só dos últimos DIAS_RECUPERAR; um já começado continua à mão enquanto as questões dele estão guardadas.
+  for (let k = 1; k <= DIAS_GUARDAR_RECUPERADO; k++) {
     const data = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
     if (data < criado) break
     if (data >= inicioRetaFinal || plano.folgas.includes(data.getDay())) continue
     const rec = recuperados.get(data.getTime())
-    const meta = metaDoDiaPassado(indice, respondidas, plano, data)
-    if (!Number.isFinite(meta) || meta <= 0) continue
+    if (k > DIAS_RECUPERAR && !rec) continue
+    // A meta que o dia teve, menos o que dias anteriores adiantaram para ele (registros guardados ou refeitos).
+    const metaDoDia = metaDoDiaPassado(indice, respondidas, plano, data)
+    if (!Number.isFinite(metaDoDia)) continue
+    const meta = Math.max(0, metaDoDia - (creditos.get(data.getTime()) ?? 0))
+    if (meta <= 0 && !rec) continue
     const feitas = primeirasPorDia.get(data.getTime()) ?? 0
     const falta = Math.max(0, meta - feitas)
     if (!falta && !rec) continue
@@ -978,11 +985,38 @@ export const MAX_RECUPERADOS = 2
  * próximas do plano (o que o dia perdido deixou para trás foi espalhado pelos próximos dias;
  * fazê-lo agora alivia esses dias), sem as de hoje e as dos dias puxados.
  */
-export function idsParaRecuperar(calculo: Pick<CalculoPlano, 'dias' | 'recuperaveis'>, dia: string): string[] {
+export function idsParaRecuperar(calculo: Pick<CalculoPlano, 'dias' | 'recuperaveis' | 'reservados'>, dia: string, extra?: { indice: Indice; respondidas: Record<string, unknown>; simulados: boolean }): string[] {
   const r = calculo.recuperaveis.find((x) => x.chave === dia)
   if (!r) return []
   if (r.recuperado) return r.recuperado.ids
-  return calculo.dias.slice(1).filter((d) => !d.puxado).flatMap((d) => d.itens.flatMap((i) => i.ids)).slice(0, r.falta)
+  const ids = calculo.dias.slice(1).filter((d) => !d.puxado).flatMap((d) => d.itens.flatMap((i) => i.ids)).slice(0, r.falta)
+  if (ids.length >= r.falta || !extra) return ids
+  // Sem dias de estudo pela frente (o último antes da reta final): completa com as que ainda não foram feitas,
+  // fora as de hoje e as já presas a outros dias.
+  const fora = new Set([...ids, ...calculo.reservados, ...(calculo.dias[0]?.itens.flatMap((i) => i.ids) ?? [])])
+  const mais = extra.indice.questoes.filter((q) => entraNoPlano(q, extra.simulados) && !extra.respondidas[q.id] && !fora.has(q.id)).map((q) => q.id)
+  return [...ids, ...mais].slice(0, r.falta)
+}
+
+/** Tamanho máximo, em caracteres de JSON, das opções do plano (o servidor recusa acima de ~4.000 bytes). */
+export const LIMITE_OPCOES = 3500
+
+/**
+ * Ids em forma compacta para caber nas opções do plano: ["trauma-0012", "trauma-0013", "mao-0001"] vira
+ * ["trauma:0012,0013", "mao:0001"]. expandirIds desfaz (e aceita também a lista simples).
+ */
+export function compactarIds(ids: string[]): string[] {
+  const grupos = new Map<string, string[]>()
+  for (const id of ids) {
+    const m = /^(.+)-(\d+)$/.exec(id)
+    const [prefixo, numero] = m ? [m[1], m[2]] : [id, '']
+    grupos.set(prefixo, [...(grupos.get(prefixo) ?? []), numero])
+  }
+  return [...grupos].map(([prefixo, numeros]) => numeros.every((n) => n) ? `${prefixo}:${numeros.join(',')}` : prefixo)
+}
+export function expandirIds(lista: unknown): string[] {
+  if (!Array.isArray(lista)) return []
+  return lista.flatMap((x) => typeof x !== 'string' ? [] : x.includes(':') ? x.slice(x.indexOf(':') + 1).split(',').filter(Boolean).map((n) => `${x.slice(0, x.indexOf(':'))}-${n}`) : [x])
 }
 
 /**
@@ -994,7 +1028,13 @@ export function opcoesComRecuperado(plano: Pick<PlanoSalvo, 'opcoes'>, dia: stri
   if (!ids.length || atuais[dia]?.length || dia >= hoje) return null
   const limite = somarDias(hoje, -DIAS_GUARDAR_RECUPERADO)
   const mantidos = Object.entries(atuais).filter(([k, v]) => k >= limite && Array.isArray(v) && v.length).sort(([x], [y]) => y.localeCompare(x)).slice(0, MAX_RECUPERADOS - 1)
-  return { ...(plano.opcoes ?? {}), recuperados: { ...Object.fromEntries(mantidos), [dia]: [...ids] } }
+  const novo = compactarIds(ids)
+  // Se não couber no limite do servidor, saem primeiro os outros dias guardados; se nem assim couber, nada é gravado.
+  for (let n = mantidos.length; n >= 0; n--) {
+    const opcoes = { ...(plano.opcoes ?? {}), recuperados: { ...Object.fromEntries(mantidos.slice(0, n)), [dia]: novo } }
+    if (JSON.stringify(opcoes).length <= LIMITE_OPCOES) return opcoes
+  }
+  return null
 }
 
 /** A sessão de um dia do plano com as questões dele que ainda faltam (a mistura espalhada, como na de hoje). */

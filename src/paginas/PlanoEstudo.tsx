@@ -322,10 +322,12 @@ export function PlanoEstudo() {
   async function recuperarDia(dia: string) {
     if (ficticio) { convidar('puxar'); return }
     if (!indice || !calculo || !plano) return
-    const ids = idsParaRecuperar(calculo, dia)
-    if (!ids.length) return
+    const ids = idsParaRecuperar(calculo, dia, { indice, respondidas, simulados: incluiSimulados(plano) })
+    if (!ids.length) { definirErro('Não há questões novas para fazer esse dia agora.'); return }
     let novo = plano
     const opcoes = opcoesComRecuperado(plano, dia, ids, hojeBR())
+    const jaGuardado = !!calculo.recuperaveis.find((r) => r.chave === dia)?.recuperado
+    if (!opcoes && !jaGuardado) { definirErro('Não deu para guardar as questões desse dia agora. Termine antes o outro dia que está recuperando.'); return }
     if (opcoes) {
       novo = { ...plano, opcoes }
       definirPlano(novo)

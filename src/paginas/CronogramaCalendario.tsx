@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from 'react'
 import { createPortal } from 'react-dom'
 import type { Indice } from '../dados/tipos'
-import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, type CalculoPlano, type DiaPlano, type DiaRecuperavel, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
+import { DIA_MINIMO, TAMANHO_MINI, ROTULO_PASSADA, expandirIds, type CalculoPlano, type DiaPlano, type DiaRecuperavel, type Passada, type PlanoSalvo } from '../dados/planoEstudo'
 import { formatarTempo } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
 import { Icone } from '../componentes/Icone'
@@ -150,7 +150,7 @@ export function CalendarioCronograma({ plano, calculo, indice, respondidas, minu
   // A primeira resposta de uma questão presa a um dia recuperado conta para aquele dia.
   const feitoPorDia = useMemo(() => {
     const temaDe = new Map(indice.questoes.map((q) => [q.id, q.t]))
-    const diaRecuperado = new Map(Object.entries(plano.opcoes?.recuperados ?? {}).flatMap(([dia, ids]) => (Array.isArray(ids) ? ids : []).map((id) => [id, dia] as const)))
+    const diaRecuperado = new Map(Object.entries(plano.opcoes?.recuperados ?? {}).flatMap(([dia, ids]) => expandirIds(ids).map((id) => [id, dia] as const)))
     const mapa = new Map<string, { n: number; temas: Map<number, number> }>()
     for (const [id, r] of Object.entries(respondidas)) {
       const momentos = r.historico?.length ? r.historico.map((h) => h.em) : r.q !== undefined ? [r.q] : []

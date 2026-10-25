@@ -1,7 +1,7 @@
 import type { Indice } from './tipos'
 import { diaCivil } from '../util/dia'
 import { AREAS, focoPorQuestao, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from './incidencia'
-import { DIA_MINIMO, dataLocal, entraNoPlano, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
+import { DIA_MINIMO, dataLocal, entraNoPlano, expandirIds, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
 
 /**
  * O que a página do cronograma mostra além do plano em si: a constância de
@@ -52,7 +52,7 @@ export interface Constancia {
  * presa a um dia recuperado (opcoes.recuperados) conta para aquele dia, não para o dia em que foi feita.
  */
 export function respostasPorDia(respondidas: Respondidas, recuperados: Record<string, string[]> = {}): Map<string, number> {
-  const diaRecuperado = new Map(Object.entries(recuperados).flatMap(([dia, ids]) => (Array.isArray(ids) && /^\d{4}-\d{2}-\d{2}$/.test(dia) ? ids : []).map((id) => [id, chave(dataLocal(dia))] as const)))
+  const diaRecuperado = new Map(Object.entries(recuperados).flatMap(([dia, ids]) => (/^\d{4}-\d{2}-\d{2}$/.test(dia) ? expandirIds(ids) : []).map((id) => [id, chave(dataLocal(dia))] as const)))
   const porDia = new Map<string, number>()
   for (const [id, r] of Object.entries(respondidas)) momentos(r).forEach((em, i) => {
     const k = (i === 0 ? diaRecuperado.get(id) : undefined) ?? chave(diaCivil(em))
