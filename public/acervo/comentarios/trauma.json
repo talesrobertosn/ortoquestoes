@@ -2084,19 +2084,43 @@
   "conferido": false
  },
  "trauma-0079": {
-  "conceito": "**Fratura do atlas e a regra de Spence.** A fratura do atlas (C1) por carga axial, a fratura de Jefferson, rompe o anel e afasta as **massas laterais**. A estabilidade depende do **ligamento transverso**, que mantém o dente do áxis contra o arco anterior de C1.\n\n**A regra de Spence.** Na radiografia **transoral** (AP de boca aberta), mede-se quanto cada massa lateral de C1 ultrapassa lateralmente a borda da faceta de C2 (overhang). Spence, Decker e Sell mostraram, em cadáveres, que a **soma dos dois afastamentos maior que 6,9 mm** indica ruptura do ligamento transverso. Considerando a magnificação radiográfica, alguns usam **8,1 mm**.\n\n**Lendo a imagem.** A radiografia transoral mostra as massas laterais de C1 deslocadas para fora em relação às facetas de C2, com a medida do afastamento em cada lado.\n\n**Avaliação atual.** A **ressonância** mostra o ligamento transverso diretamente. Dickman e colaboradores classificaram as lesões:\n\n| Tipo | Lesão do transverso | Tratamento |\n|---|---|---|\n| I | **Ruptura intrassubstancial** | Não cicatriza: artrodese C1-C2 |\n| II | **Avulsão óssea** do tubérculo da massa lateral | Pode consolidar com halo (cerca de 75%) |\n\n**Outros sinais de instabilidade.** Intervalo atlantodental maior que 3 mm no adulto (no perfil); maior que 5 mm sugere lesão do transverso; acima de 10 mm, também dos alares.\n\n**Tratamento da fratura de Jefferson.** Transverso íntegro: colar rígido ou halo. Transverso roto: halo (avulsão) ou artrodese ou osteossíntese de C1 (ruptura intrassubstancial).\n\n> Regra de Spence: soma do afastamento das massas laterais acima de 6,9 mm sugere ruptura do ligamento transverso.",
-  "correta": "**D: 6,9 mm.** Pela regra de Spence, a soma do afastamento das massas laterais de C1 sobre C2 maior que 6,9 mm na radiografia transoral sugere ruptura do ligamento transverso.",
+  "conceito": "As linhas e setas mostram quanto as massas laterais de C1 ultrapassam C2 em cada lado. A regra clássica soma essas duas distâncias: acima de **6,9 mm**, aumenta a suspeita de ruptura do **ligamento transverso**.\n\nO ligamento liga as massas laterais por trás do dente e é tensionado quando o anel do atlas se expande. Por isso o deslocamento lateral permite uma inferência sobre a contenção que não se vê diretamente nessa projeção (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**O número corresponde à soma, não a cada lado isolado.** Esperar 6,9 mm de cada lado duplicaria o critério. O capítulo também discute ampliação radiográfica, com proposta de 8,1 mm, e estudos em que a medida se correlacionou mal com a integridade do transverso.\n\nA ressonância pode mostrar diretamente o ligamento. Portanto, o sinal aumenta suspeita; um deslocamento menor não assegura integridade e uma medida não deve decidir sozinha tratamento ou estabilidade.\n\n> **Na prova:** Spence clássico: soma bilateral maior que 6,9 mm; na prática, integrar a avaliação ligamentar.",
+  "correta": "**D: 6,9 mm.** É o limiar clássico da soma do deslocamento das duas massas laterais. A figura ilustra os dois componentes que precisam ser adicionados.",
   "incorretas": {
-   "A": "**2,0 mm** está dentro da variação normal e não indica lesão ligamentar.",
-   "B": "**3,1 mm** também está abaixo do limiar; 3 mm é o valor normal máximo do intervalo atlantodental no adulto, outro parâmetro.",
-   "C": "**5,5 mm** ainda fica abaixo do limiar de Spence."
+   "A": "**Substitui a soma lateral por um valor baixo de outra ordem.** Dois milímetros não é o limiar clássico de Spence. A localização da medida na figura deve ser conservada antes de escolher um número.",
+   "B": "**Não corresponde ao corte do somatório bilateral.** Três vírgula um milímetros não é o valor apresentado para suspeita pelo critério clássico. Também não se deve aproximar a soma de Spence ao limite do ADI no perfil.",
+   "C": "**Anteciparia o limiar clássico sem manter sua definição.** Cinco vírgula cinco milímetros não é o corte de 6,9 mm perguntado. Isso não significa que um transverso não possa romper com deslocamento menor: a própria limitação da regra exige avaliação adicional."
   },
   "referencias": [
-   "Spence KF Jr, Decker S, Sell KW. Bursting atlantal fracture associated with rupture of the transverse ligament. J Bone Joint Surg Am. 1970;52(3):543-549.",
-   "Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery. 1996;38(1):44-50."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "f9fc567dd32b411fd031ffec9c5c114234b4516608d3dd856f764fd99860dbe7"
+    }
+   ],
+   "questaoSha256": "80ac386466b8e430fed7ce67ba5745d9bd794d521df8088dac13435ee9bdc1dd",
+   "comentarioSha256": "7dcea09b2957c590b80d8bc8ec43c65f330b378f8c8b8091dd66c45bfb9b6d2a"
+  }
  },
  "trauma-0080": {
   "conceito": "A faixa clara logo abaixo da cartilagem do domo talar aparece por volta da **sexta à oitava semana**, alternativa C. É o **sinal de Hawkins**, e sua presença é favorável: mostra que aquele osso participa da reabsorção associada à falta de carga (Rockwood, 10ª ed., cap. 66, “O sinal de Hawkins”).\n\nO raciocínio começa pela resposta do osso vivo. Durante o período sem carga, o pé e a tíbia distal ficam osteopênicos; sob o domo, essa perda de osso mineralizado produz a linha radiotransparente. O osso necrosado não participa da mesma resposta. Por isso, a faixa clara é sinal de **viabilidade**, enquanto a necrose pode produzir aumento da densidade do corpo.\n\n**Ausência do sinal não equivale a diagnóstico de necrose.** O resumo registra sinais parciais e acometimento variável do corpo. A presença é altamente específica de viabilidade, mas o raciocínio não pode ser simplesmente invertido. Também não se deve confundir essa janela radiográfica com a RM, que identifica alterações mais precocemente, nem com o período de 10–12 semanas sem carga usado no pós-operatório.\n\n> **Na prova:** Hawkins entre 6 e 8 semanas significa osso vivo; ausência exige acompanhamento, não uma sentença de necrose.",
@@ -5635,19 +5659,43 @@
   }
  },
  "trauma-0220": {
-  "conceito": "**Instabilidade da coluna cervical subaxial: o ângulo de White e Panjabi.** A coluna cervical subaxial (C3 a C7) é considerada **instável** quando, sob cargas fisiológicas, não consegue manter as relações entre as vértebras sem dano neurológico, dor ou deformidade progressiva. White, Panjabi e colaboradores estudaram a estabilidade em cadáveres, seccionando estruturas em sequência, e criaram um sistema de pontos.\n\n**Lendo a imagem.** São traçadas linhas paralelas às **placas terminais** de dois níveis adjacentes; o ângulo entre elas (marcado em vermelho) é a **angulação sagital** do segmento.\n\n**Os critérios radiográficos de instabilidade.**\n- **Translação sagital** maior que **3,5 mm** (ou 20% do corpo vertebral).\n- **Angulação sagital** maior que **11 graus** além da do segmento vizinho.\n\n**O checklist de White e Panjabi (cervical subaxial).**\n\n| Critério | Pontos |\n|---|---|\n| Elementos anteriores destruídos ou incapazes de funcionar | 2 |\n| Elementos posteriores destruídos ou incapazes de funcionar | 2 |\n| Teste de estiramento positivo | 2 |\n| **Translação sagital maior que 3,5 mm ou angulação maior que 11 graus** | 2 |\n| Lesão medular | 2 |\n| Lesão radicular | 1 |\n| Estreitamento anormal do disco | 1 |\n| Previsão de carga perigosa | 1 |\n\n**Soma de 5 ou mais pontos indica instabilidade clínica.**\n\n**Na prática atual.** O sistema **SLIC** (Subaxial Injury Classification) soma morfologia, complexo discoligamentar e estado neurológico para indicar cirurgia (4 ou mais pontos), mas os valores de White e Panjabi continuam sendo referência radiográfica.\n\n> Cervical subaxial instável: translação acima de 3,5 mm ou angulação acima de 11 graus em relação ao segmento vizinho.",
-  "correta": "**C: 11 graus.** A angulação sagital entre segmentos adjacentes maior que 11 graus (em relação ao segmento vizinho) é o critério de White e Panjabi para instabilidade da coluna cervical subaxial.",
+  "conceito": "As linhas azuis acompanham os platôs e desenham a angulação cifótica do segmento lesado. Não estão medindo uma distância entre corpos: o critério perguntado é **cifose maior que 11 graus**, sugestiva de lesão do complexo posterior e instabilidade.\n\nO método angular usa os platôs, no raciocínio de Cobb. Uma deformidade em cunha pode parecer apenas uma fratura do corpo, mas o aumento da cifose alerta para perda da contenção posterior. Por isso o alinhamento deve ser avaliado junto da morfologia óssea (Rockwood, 10ª ed., cap. 48, “White e Panjabi: 3,5 mm e 11 graus”).\n\n**Graus e milímetros respondem a perguntas diferentes.** O outro limiar clássico da seção é translação sagital maior que 3,5 mm, medida entre linhas das paredes posteriores. A alternativa com 3,5 graus troca a unidade e o tipo de deformidade.\n\nO sinal sugere gravidade, mas não define sozinho o déficit ou a operação. Exame neurológico, disco, ligamentos e outros achados de instabilidade completam a análise.\n\n> **Na prova:** o desenho é angular: 11 graus. Translação de 3,5 é em milímetros.",
+  "correta": "**C: 11 graus.** O ângulo de cifose segmentar acima desse limite sugere comprometimento posterior. A figura usa linhas de platôs, não uma régua de translação.",
   "incorretas": {
-   "A": "**3,5** é o valor da **translação** sagital em milímetros, não da angulação em graus.",
-   "B": "**7 graus** é valor abaixo do limite; angulações dessa ordem ainda podem ser fisiológicas na cervical.",
-   "D": "**20 graus** está muito acima do limite; o valor de 20% refere-se à translação em proporção ao corpo vertebral."
+   "A": "**Emprega o número da translação com unidade angular.** Três vírgula cinco é o limiar linear em milímetros para deslocamento sagital na fonte. Aplicá-lo em graus não corresponde à medida mostrada.",
+   "B": "**Não é o corte angular apresentado.** Sete graus não substitui 11 graus. É preciso reconhecer o método da figura antes de importar números de outras avaliações cervicais.",
+   "D": "**Aceitaria uma deformidade maior antes de reconhecer o sinal.** Vinte graus ultrapassa o limiar descrito e não é o valor de corte solicitado. O resumo já considera preocupante a cifose maior que 11 graus."
   },
   "referencias": [
-   "White AA 3rd, Johnson RM, Panjabi MM, Southwick WO. Biomechanical analysis of clinical stability in the cervical spine. Clin Orthop Relat Res. 1975;(109):85-96.",
-   "Vaccaro AR, Hulbert RJ, Patel AA, et al. The subaxial cervical spine injury classification system: a novel approach to recognize the importance of morphology, neurology, and integrity of the disco-ligamentous complex. Spine (Phila Pa 1976). 2007;32(21):2365-2374."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade",
+      "Compressão, explosão e teardrop"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
+      "compressao-explosao-e-teardrop-c61e3e01"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "eb50a5f1fbe9d068bba74a3aec925c0998316b27ded85450f975c2eb1d87ca29"
+    }
+   ],
+   "questaoSha256": "d82eaab66a1a09780a83a924553c2f3aed37967034380e0e1a228d51529f05d9",
+   "comentarioSha256": "939b7d89289599e69e12175f6e1f532176cab3eb7dfc9a6c1d4526ab6b0f3d7a"
+  }
  },
  "trauma-0221": {
   "conceito": "Na incidência transoral de uma fratura do atlas, as massas laterais de C1 ultrapassam as de C2. Somar quanto isso ocorre dos dois lados estima quanto o anel se abriu. Um deslocamento total acima de aproximadamente **7 mm sugere lesão do ligamento transverso**.\n\nO transverso passa de uma massa lateral à outra por trás do dente. A expansão radial de C1 o tensiona, relacionando a abertura do anel à possível perda dessa contenção. É a lógica da regra de Spence, cujo limiar clássico é 6,9 mm (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**Sugere não significa demonstra diretamente.** O resumo discute correção de ampliação para 8,1 mm e limitações dos estudos de correlação; rupturas podem ocorrer com deslocamentos menores. A ressonância complementa a análise ao mostrar o ligamento, e uma soma abaixo do corte não deve ser usada isoladamente para excluir lesão.\n\nTambém não se deve confundir essa soma lateral com o ADI medido no perfil entre o arco anterior e o dente. Ambos ajudam a avaliar C1–C2, mas medem relações diferentes.\n\n> **Na prova:** abertura das massas laterais na fratura de C1 remete ao transverso; Spence é um indício indireto.",
@@ -13653,15 +13701,44 @@
   }
  },
  "trauma-0755": {
+  "conceito": "Os cortes mostram translação entre vértebras e perda da relação das facetas, com luxação. Mesmo sem déficit neurológico, esse padrão pode somar pontos suficientes para tratamento cirúrgico no SLIC: **translação 4, complexo discoligamentar roto 2 e neurologia intacta 0, total 6**.\n\nO escore combina três domínios; não é uma escala apenas de força ou sensibilidade. A perda grosseira da relação facetária e o desalinhamento caracterizam a morfologia de rotação/translação e implicam falha da contenção discoligamentar no padrão mostrado (Rockwood, 10ª ed., cap. 48, “SLIC: a classificação que vira conduta”).\n\n**Um paciente pode estar neurologicamente íntegro e mecanicamente instável.** O exame intacto zera o componente neurológico, mas não apaga a luxação nem restaura os ligamentos. No sistema apresentado, 3 ou menos costuma orientar tratamento não cirúrgico; 4 é intermediário; 5 ou mais favorece cirurgia.\n\nO total descreve a indicação pelo escore. A imagem e a avaliação clínica também são necessárias para planejar redução, investigar disco e escolher a via de estabilização; os seis pontos não especificam sozinhos uma técnica operatória.\n\n> **Na prova:** fratura-luxação com translação e neurologia intacta pode somar 6 e ter indicação cirúrgica.",
+  "correta": "**B: cirúrgico, 6 pontos.** A soma mantém 4 pela translação, 2 pela ruptura discoligamentar do padrão luxado e 0 pelo exame intacto. Ausência de déficit não significa ausência de instabilidade.",
   "incorretas": {
-   "A": "**Soma errada.** A indicação cirúrgica está certa, mas a translação com ligamento roto soma 6, e não 5.",
-   "C": "**Subestima.** Uma lesão translacional não pontua apenas 3; a morfologia sozinha já soma 4.",
-   "D": "**Subestima.** Com 4 pela morfologia e 2 pelo complexo roto, o total é 6, indicação cirúrgica."
+   "A": "**Acerta a faixa cirúrgica e erra a conta do caso.** Cinco pontos já favorecem cirurgia, mas a translação com complexo roto soma 6 mesmo sem déficit. A indicação correta não corrige uma pontuação incorreta.",
+   "C": "**Diminui a gravidade morfológica e ligamentar.** Três pontos ou menos costuma orientar tratamento não cirúrgico, mas não é a soma da luxação com translação e ruptura mostradas. Não se pode zerar esses domínios porque o paciente move os membros.",
+   "D": "**Usa a zona intermediária sem corresponder à lesão.** Quatro pontos isolados não incluem os 2 do complexo roto, e o caso soma 6. Além disso, 4 é decisão por fatores associados, não sinônimo automático de tratamento conservador."
   },
-  "conceito": "**A classificação SLIC.** O **Subaxial Injury Classification and Severity** (Vaccaro) orienta o tratamento das lesões da coluna cervical **subaxial** (C3 a C7) somando três domínios. **Morfologia**: sem alteração (0), **compressão** (1), **explosão** (2), **distração** (3), **rotação ou translação** (4), como nas luxações e fraturas-luxações facetárias. **Complexo discoligamentar** (disco, ligamentos longitudinais, interespinhosos, cápsulas facetárias): **íntegro** (0), **indeterminado** (1), **roto** (2). **Estado neurológico**: intacto (0), lesão de **raiz** (1), lesão medular **completa** (2), lesão medular **incompleta** (3), e **mais 1** ponto se houver compressão contínua da medula com déficit.\n\n**A decisão.** **5 ou mais** pontos: **cirurgia**. **3 ou menos**: **conservador**. **4**: zona cinzenta, decisão individual.\n\n**Como aplicar ao caso.** Uma lesão com **translação ou rotação** na tomografia (como uma luxação facetária) soma **4** pela morfologia; o complexo discoligamentar necessariamente está **roto** para permitir esse deslocamento, somando **2**; sem déficit neurológico, **0**. Total de **6** pontos: **cirurgia**, mesmo sem déficit. É o ponto central da SLIC: a **instabilidade mecânica** sozinha já justifica a estabilização.\n\n**O tratamento das lesões translacionais.** Redução (fechada com tração no paciente acordado e colaborativo, ou aberta), e **artrodese** anterior (discectomia e placa), posterior (parafusos de massa lateral) ou combinada, conforme a lesão, a presença de **hérnia de disco** traumática e a qualidade do osso. A **ressonância** antes da redução é discutida, sobretudo em pacientes não cooperativos.\n\n**Na prova:** SLIC: morfologia (0 a 4) + discoligamentar (0 a 2) + neurológico (0 a 4); **5 ou mais** = cirurgia. Translação com ligamento roto sem déficit = **6**, **cirúrgico**.",
-  "correta": "**Cirúrgico, com 6 pontos.** A translação soma 4, o complexo discoligamentar roto soma 2 e o exame neurológico normal soma 0, totalizando 6, acima do limiar cirúrgico.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15",
+      "coluna-subaxial-classificacoes-e-estabilidade-63694d69",
+      "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
+      "coluna-subaxial-classificacoes-e-estabilidade-b5e7c0e5"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "5eb537ac8a6d6c070859d412ad5c2f58d45d0ad30408be87d4bd800a2baa251a"
+    }
+   ],
+   "questaoSha256": "ff10fc195a359656509c509b40751748e2fa2d1692b6c6d4fa6ed8af2393a57e",
+   "comentarioSha256": "73723066f96b604ddad390f8a5df0cc0ffb0f83873514575d222007626263d3a"
+  }
  },
  "trauma-0756": {
   "conceito": "A combinação escolhida é **homens e ruptura extraperitoneal**, alternativa B. Ela reúne duas informações relacionadas, mas distintas: a maior vulnerabilidade da uretra masculina e o tipo mais comum de ruptura da bexiga.\n\nO resumo descreve lesões de bexiga e uretra em **6% a 15%** das fraturas do anel, conforme a gravidade. No homem, a uretra posterior sofre sobretudo por **cisalhamento**; a uretra feminina é curta e protegida pela relação com a vagina. Nas rupturas vesicais, a **extraperitoneal representa cerca de 60%**, a intraperitoneal 30% e as combinadas 10% (Rockwood, 10ª ed., cap. 50, “Lesões urológicas”).\n\n**Extraperitoneal não descreve uma região da uretra.** É a ruptura vesical que comunica a urina com a área da fratura anterior. A intraperitoneal costuma envolver o teto da bexiga distendida e exige reparo urgente. Entender qual estrutura cada termo classifica evita decorar um par sem sentido anatômico.\n\nA investigação também é sequencial. Na suspeita de lesão uretral masculina, a uretrografia retrógrada avalia a uretra antes da sondagem vesical; com uretra íntegra, a cistografia estuda a bexiga. Se houver fixação interna anterior e ruptura extraperitoneal, o reparo conjunto ajuda a evitar urina no campo do implante.",
