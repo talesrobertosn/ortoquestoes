@@ -1,0 +1,39 @@
+{
+  "baseEditorial": "ddd4b61d9e0ecfd1a4db6c5670fe239f8af83a9a",
+  "lote": 156,
+  "comentarios": 8,
+  "lacunas": 2,
+  "fonte": "rockwoodcriancas10-01-epidemiologia-fraturas",
+  "leitura": "corpo independente completo do resumo e enunciado/alternativas/comentário dos candidatos; sem atribuir livro original/páginas impressas",
+  "validacao": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "passou",
+    "build": "passou",
+    "replay": "8/8 iguais a aplicar.preparar; fontes/blocos/hashes; todas alternativas",
+    "preservacao": "questões, enunciados, respostas, imagens e revisões médicas iguais à base; demais membros do comentário pediátrico e os dois comentários pendentes intactos",
+    "avulsosLocais": "8 iguais integralmente",
+    "ui": "8casos,390/1440px, links dos blocos; capturas1084cel e1092pc inspecionadas",
+    "publicacao": "conferir no PR após reconciliar531"
+  },
+  "inventario": {
+    "resumos": 34,
+    "questoes": 2466,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 653,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 270,
+      "pendente-inspecao-imagem": 89,
+      "revisada": 1356
+    }
+  },
+  "logsSha256": {
+    "check156-fixtures.log": "6f7a4ed16c9b32eeb8644961a537bfd8b86dede8f471e5d37c67d20259b33ca6",
+    "check156-acervo.log": "bde7691373f90f1a35a8298e6df8f7a1251946c46fe4a9c06d05b22fe0e8de68",
+    "check156-test.log": "e01ef37873619966aa028478e931d9144b73ded6b7d40889703c968607b5068d",
+    "check156-build.log": "07487d4c09bda10540d9c67df442270a430423d37d0d0b33b9482688bc78b602",
+    "ui156.log": "9c09202cd5774ef558372f708ca3facc643026300b3a91027101bba90d284550"
+  }
+}

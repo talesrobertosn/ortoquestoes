@@ -1,0 +1,44 @@
+{
+  "basePublicada": "50224f7e1592753663fe4a0a36f228c81c62c58c",
+  "baseEditorial": "423c7e96244f8475ff527ad63bdc2d1d07c29f62",
+  "lotes": [
+    154,
+    155
+  ],
+  "comentarios": 13,
+  "lacunasIndividuais": 7,
+  "resumosNoInventario": 34,
+  "questoesNoInventario": 2466,
+  "estados": {
+    "duplicada": 87,
+    "pendente": 663,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 268,
+    "pendente-inspecao-imagem": 89,
+    "revisada": 1348
+  },
+  "validacao": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "passou após reconciliar remoto; alteração posterior apenas de espaçamento, novamente validada em fixtures/acervo/build",
+    "build": "passou",
+    "replayContraBase": "13 comentários iguais ao resultado de aplicar.preparar",
+    "preservacao": "enunciados, alternativas, respostas, figuras, revisões médicas e membros alheios comparados com a base publicada",
+    "avulsosLocais": "13 iguais aos comentários integrais",
+    "ui": "13 casos em390/1440px, links exatos de bloco; três casos repetidos após ajuste de espaçamento; capturas inspecionadas",
+    "figuras": "nenhuma nos13itens; não alegar inspeção de figuras ausentes da fonte",
+    "producao": "conferir no PR após merge/deploy"
+  },
+  "logsSha256": {
+    "final154-fixtures.log": "bf0e470c1a6f6e66481989385efa329b18fdc2d2e7b407186bb0c969b2ccb1f6",
+    "final154-acervo.log": "26403ec7943fb5fbf930f965158d9a78332fe56fffa872404addfe89c700e200",
+    "final154-test.log": "07db66a503acc61da0423526eee85a67b66485e0ea18a8d24f6420eb5cbe8a8a",
+    "final154-build.log": "f0709de06cfa1aba928c54789fb11525affee55f378d36f338ded5f273b2ae3e",
+    "espacos154-fixtures.log": "0840cbe7e506cae8a6797112ea8e46ddd6ba3a8c70e1be63e6db10c7f48d02c2",
+    "espacos154-acervo.log": "26403ec7943fb5fbf930f965158d9a78332fe56fffa872404addfe89c700e200",
+    "espacos154-build.log": "9a10a2914f2b2ae9557eae40848b7aa68bd0e38b6aac8d742a6cfd47a1deb42b",
+    "ui154155.log": "53ac7c3729bb8a33d325365870711dbd6e6b9580bfdba3533b19cbd06364b3c8",
+    "ui154155-final.log": "17d7a615e366e5af9219f484e55bafa9a2e41ff448f84cac8d870b20a14cc95f"
+  }
+}
