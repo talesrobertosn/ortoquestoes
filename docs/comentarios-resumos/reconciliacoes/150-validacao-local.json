@@ -1,0 +1,139 @@
+{
+  "dataBrasilia": "2026-10-25T09:23:44.191132-03:00",
+  "baseInicial": "6f74d326e74fb8110534f6f7b2a1b399795e6394",
+  "baseIntegrada": "3dfaafdc97f4abca6be109b16ac9264f55773dc7",
+  "lote": 150,
+  "ids": [
+    "joelho-0021",
+    "joelho-0294",
+    "joelho-0373",
+    "trauma-0570",
+    "pe-tornozelo-0422"
+  ],
+  "quantidade": 5,
+  "estados": {
+    "duplicada": 87,
+    "pendente": 610,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 244,
+    "pendente-inspecao-imagem": 86,
+    "revisada": 1332
+  },
+  "resumos": 33,
+  "prAnterior": {
+    "body": "Dezessete comentários de coluna cervical e toracolombar foram reescritos como miniaulas com mecanismo, decisão clínica e análise própria de cada alternativa. Fontes: corpo/tabelas/legendas independentes dos resumos Rockwood10, capítulos48 e49; imagem0164 aberta antes da revisão. Lote148 com dez e149 com sete seguros, sem preenchimento sem fonte.\n\nPreservados enunciados, opções, IDs, áreas, respostas oficiais, figuras e revisão médica; conferido:false. Alertas0288 (limites de benefício da cirurgia),0662 (Harris não é soma) e0287 (unidade da cifose e critérios relativos). Sem gabarito oficial0322C/0350B permanecem bibliográficos/prováveis. Três candidatos continuam pendente-fonte por incidências/ranking não sustentados pelo resumo; não contam como revisão.\n\nValidação:14fixtures, validar_acervo, npm test completo, build, diff-check, replay desde6ba28f91 com fontes/hashes/todas alternativas e17avulsos integrais; letras iguais ao build. Dezessete casos no celular/computador, correção, selo, links exatos e figura; capturas representativas abertas. Após ajuste cosmético de espaço no alerta0287, fixtures/acervo/build/replay e seu caso UI foram repetidos. PR520 reconciliado com publicação/produção; oito PRs alheios e commits completos conferidos, sem sobreposição.\n\nIDs, fontes, figura, controles e continuidade: docs/comentarios-resumos/reconciliacoes/149-validacao-local.json e RETOMADA-2026-10-20.md. Próximo lote150. Catálogo1327 revisadas; revisão integral incompleta. Aguardar checks do head, merge e conferência do deploy/produção.\n\n\nPublicação confirmada em 25/10/2026: head cbc9f4d617b47a5e5030756a792db3bd1a421730; CI 40177001622 passou; merge 6f74d326e74fb8110534f6f7b2a1b399795e6394. Pages 40177131373, head 6f74d326e74fb8110534f6f7b2a1b399795e6394, executou guarda e deploy no job 121120714209. Os dezessete avulsos dos lotes 148–149 em produção foram comparados integralmente com os comentários validados, sem diferenças. Os capítulos-fonte 48 e 49 e letras.json também foram comparados integralmente em produção. A figura foi comparada por SHA256, sem diferenças.\n\nPróximo lote livre: 150. Reconciliar este merge e não reaplicar 148–149. As lacunas de fonte continuam pendentes e não contam como revisão concluída. Catálogo: 1327 revisadas, 617 pendentes, 240 pendentes de fonte, 88 aguardando inspeção de imagem, 2 figuras ausentes, 9 anuladas e 87 duplicadas, em 33 resumos. A tarefa integral permanece incompleta. Checkpoint detalhado em docs/comentarios-resumos/RETOMADA-2026-10-20.md.\n",
+    "headRefOid": "cbc9f4d617b47a5e5030756a792db3bd1a421730",
+    "mergeCommit": {
+      "oid": "6f74d326e74fb8110534f6f7b2a1b399795e6394"
+    },
+    "state": "MERGED"
+  },
+  "concorrencia": {
+    "baseAnterior": "6f74d326e74fb8110534f6f7b2a1b399795e6394",
+    "commitIncorporar": "3dfaafdc97f4abca6be109b16ac9264f55773dc7",
+    "idsRemotos": [
+      "pe-tornozelo-0423",
+      "pe-tornozelo-0424"
+    ],
+    "semSobreposicao": true
+  },
+  "remoto": [
+    {
+      "pr": 517,
+      "head": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+      "commits": [
+        "ba0f849dd5b2987732b4a735e917fcc903886a5c"
+      ]
+    },
+    {
+      "pr": 371,
+      "head": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+      "commits": [
+        "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+        "714323bcee21a533ea33cf7048a307a24deffc44",
+        "553b1041eafa4cf9b173ea616cc293537739eb08",
+        "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+      ]
+    },
+    {
+      "pr": 308,
+      "head": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+      "commits": [
+        "980b2d734b62cd5a28098224e8dbf0c11194a185",
+        "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+      ]
+    },
+    {
+      "pr": 253,
+      "head": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+      "commits": [
+        "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+        "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+        "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+        "94859424a3fa5fb70347baea0a2a831a26ddd622"
+      ]
+    },
+    {
+      "pr": 179,
+      "head": "86aeeb45a1284a4bab358ad66df593286e64876a",
+      "commits": [
+        "86aeeb45a1284a4bab358ad66df593286e64876a"
+      ]
+    },
+    {
+      "pr": 178,
+      "head": "c695d3d697b62de9cb1317922a61af543f4369a5",
+      "commits": [
+        "3c7daf1f481a22a119402544f44007696520ce1e",
+        "c695d3d697b62de9cb1317922a61af543f4369a5"
+      ]
+    },
+    {
+      "pr": 174,
+      "head": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+      "commits": [
+        "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+      ]
+    },
+    {
+      "pr": 93,
+      "head": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+      "commits": [
+        "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+        "97e77b073134af9277107123ff27e7cb369139b5",
+        "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+      ]
+    }
+  ],
+  "fontes": "Leitura integral dos resumos60(350linhas),61(566linhas),66(313linhas), com releitura separada dos intervalos truncados nos retornos combinados. Apenas corpo/tabelas/legendas independentes, não contexto de questão nem comentário antigo como autoridade. Fontes efetivamente aplicadas:60 em0570;61 em0021,0294,0373;66 em0422. Sem leitura direta de livro ou página impressa atribuída.",
+  "imagensConferidasSha256": {
+    "joelho/joelho-0373-1.jpeg": "7d186450389ec25da973cf2ff347b0766e263dd2fc58f7b310b7631515075c99",
+    "trauma/trauma-0570-1.jpeg": "4d8723ac87cb1a2d114fe5b2216cd55700a02d101b0cfd73ce02322304c8b084"
+  },
+  "imagensAdicionaisAbertasSemRevisao": [
+    "joelho-0044",
+    "trauma-1023"
+  ],
+  "provavelPreservado": {
+    "joelho-0294": "A bibliográfica, sem gabarito oficial. O trio é descrito no resumo, sem atribuir consulta a Warren."
+  },
+  "pendenciasNovas": [
+    "joelho-0259",
+    "trauma-1034",
+    "trauma-1037",
+    "trauma-1058"
+  ],
+  "controle0259": "Rascunho inicialmente aplicado apenas localmente foi retirado na auditoria: avulsão não prova frequência do fragmento ósseo versus desinserção. Comentário original restaurado integralmente com comparação de identidade, sem baseResumo; quatro lacunas continuam pendentes. Nenhuma versão intermediária foi publicada.",
+  "protecao1731": "Trauma-1731 tem area cirurgia-mao; o guard de autoria recusou. Não aplicada, sem mudança de área; requer fluxo Green local.",
+  "validacao": [
+    "aplicar.py --conferir e aplicação sob flock /tmp/claude-0/acervo.lock",
+    "14fixtures, validar_acervo, npm test completo, build e diff-check após seleção final e novamente após integração remota",
+    "replay desde3dfaafdc: fontes/hashes/todas alternativas/cinco avulsos integrais",
+    "demais comentários/questões/gabaritos/revisão médica/imagens preservados; conferido:false",
+    "letras regeneradas e iguais ao build",
+    "cinco casos celular390/computador1440, resposta/selo/link exato/figuras, repetidos após integração",
+    "três capturas representativas abertas:0373figura-cel,0570aula-pc,0422fonte-cel"
+  ],
+  "proximoLote": 151
+}
