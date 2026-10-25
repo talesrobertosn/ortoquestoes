@@ -1,0 +1,172 @@
+{
+  "lote": "12-ligamentos-tornozelo-pe",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [538, 539, 540, 541, 542, 543, 544, 545],
+  "registros": [
+    {
+      "chave": "lig-tibiofibular-anterior", "tipo": "ligamento", "nome": "Ligamento tibiofibular anterior (inferior)", "en": "Anterior tibiofibular ligament",
+      "ids": ["anterior_tibiofibular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Sindesmose tibiofibular",
+      "origem": { "t": "Face anterior da tíbia distal (tubérculo anterior).", "m": ["tibia:Fibular notch"] },
+      "insercao": { "t": "Parte distal da fíbula.", "m": ["fibula:Lateral malleolus"] },
+      "funcao": "Ligamento oblíquo e forte da sindesmose.",
+      "clinica": "A sua avulsão produz o fragmento de Tillaux. A sindesmose é lesada na fratura Weber C e nas entorses 'altas' do tornozelo; se ela se rompe, a pinça do tornozelo alarga e a fíbula, com o tálus, desvia para fora.",
+      "ver": ["lig-tibiofibular-posterior", "membrana-interossea-da-perna"],
+      "fonte": [{ "l": "netter-ao2", "p": [538] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-tibiofibular-posterior", "tipo": "ligamento", "nome": "Ligamento tibiofibular posterior (inferior)", "en": "Posterior tibiofibular ligament",
+      "ids": ["posterior_tibiofibular_ligament", "transverse_tibiofibular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Sindesmose tibiofibular",
+      "origem": { "t": "Face posterior da tíbia distal (maléolo posterior).", "m": ["tibia:Posterior malleolus"] },
+      "insercao": { "t": "Parte distal da fíbula.", "m": ["fibula:Malleolar fossa"] },
+      "funcao": "Mais fraco que o anterior. A parte transversa, profunda e inferior, dá suporte posterior à pinça do tornozelo.",
+      "fonte": [{ "l": "netter-ao2", "p": [538] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-talofibular-anterior", "tipo": "ligamento", "nome": "Ligamento talofibular anterior (LTFA)", "en": "Anterior talofibular ligament",
+      "ids": ["anterior_talofibular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Tornozelo (colateral lateral)",
+      "origem": { "t": "Maléolo lateral.", "m": ["fibula:Lateral malleolus"] },
+      "insercao": { "t": "Colo do tálus.", "m": ["talus:Neck of talus"] },
+      "funcao": "Resiste à translação anterior do tálus. É um espessamento da cápsula.",
+      "restringe": "Translação anterior do tálus (gaveta anterior).",
+      "clinica": "É o primeiro ligamento a ser lesado na entorse do tornozelo.",
+      "ver": ["lig-calcaneofibular", "lig-talofibular-posterior"],
+      "fonte": [{ "l": "netter-ao2", "p": [539] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-calcaneofibular", "tipo": "ligamento", "nome": "Ligamento calcaneofibular", "en": "Calcaneofibular ligament",
+      "ids": ["calcaneofibular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Tornozelo e subtalar (colateral lateral)",
+      "origem": { "t": "Maléolo lateral.", "m": ["fibula:Lateral malleolus"] },
+      "insercao": { "t": "Calcâneo.", "o": ["calcaneus"] },
+      "funcao": "Resiste à inversão. É também o principal suporte extrínseco da subtalar.",
+      "restringe": "Inversão.",
+      "clinica": "É o segundo ligamento lesado na entorse do tornozelo. Fica profundo aos tendões fibulares.",
+      "fonte": [{ "l": "netter-ao2", "p": [539, 542] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-talofibular-posterior", "tipo": "ligamento", "nome": "Ligamento talofibular posterior", "en": "Posterior talofibular ligament",
+      "ids": ["posterior_talofibular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Tornozelo (colateral lateral)",
+      "origem": { "t": "Maléolo lateral.", "m": ["fibula:Malleolar fossa"] },
+      "insercao": { "t": "Tubérculo lateral do processo posterior do tálus.", "m": ["talus:Lateral tubercle"] },
+      "funcao": "Forte; raramente se rompe.",
+      "fonte": [{ "l": "netter-ao2", "p": [539] }], "status": "verificado"
+    },
+    {
+      "chave": "deltoide-tibionavicular", "tipo": "ligamento", "nome": "Ligamento deltóideo: parte tibionavicular", "en": "Tibionavicular part of deltoid ligament",
+      "ids": ["tibionavicular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Tornozelo (colateral medial, camada superficial)",
+      "origem": { "t": "Colículo anterior do maléolo medial.", "m": ["tibia:Medial malleolus"] },
+      "insercao": { "t": "Tuberosidade do navicular.", "m": ["navicular_bone:Tuberosity of navicular bone"] },
+      "funcao": "Restringe a migração medial da cabeça do tálus. O deltóideo superficial resiste à eversão.",
+      "ver": ["deltoide-tibiocalcaneo", "deltoide-tibiotalar-posterior"],
+      "fonte": [{ "l": "netter-ao2", "p": [539] }], "status": "verificado"
+    },
+    {
+      "chave": "deltoide-tibiocalcaneo", "tipo": "ligamento", "nome": "Ligamento deltóideo: parte tibiocalcânea", "en": "Tibiocalcaneal part of deltoid ligament",
+      "ids": ["tibiocalcaneal_ligament"], "regiao": "tornozelo-pe", "articulacao": "Tornozelo (colateral medial, camada superficial)",
+      "origem": { "t": "Colículo anterior do maléolo medial.", "m": ["tibia:Medial malleolus"] },
+      "insercao": { "t": "Sustentáculo do tálus.", "m": ["calcaneus:Sustentaculum tali"] },
+      "funcao": "É a parte mais forte do deltóideo superficial; resiste ao valgo (eversão).",
+      "restringe": "Eversão.",
+      "fonte": [{ "l": "netter-ao2", "p": [539] }], "status": "verificado"
+    },
+    {
+      "chave": "deltoide-tibiotalar-posterior", "tipo": "ligamento", "nome": "Ligamento deltóideo: parte tibiotalar posterior (profunda)", "en": "Posterior tibiotalar part of deltoid ligament",
+      "ids": ["posterior_tibiotalar_ligament"], "regiao": "tornozelo-pe", "articulacao": "Tornozelo (colateral medial, camada profunda)",
+      "origem": { "t": "Colículo posterior do maléolo medial.", "m": ["tibia:Medial malleolus"] },
+      "insercao": { "t": "Face medial do tálus e tubérculo medial.", "m": ["talus:Medial tubercle"] },
+      "funcao": "Quase horizontal; é a parte mais forte do ligamento colateral medial. Resiste à rotação lateral e à migração lateral do tálus.",
+      "restringe": "Rotação lateral do tálus.",
+      "fonte": [{ "l": "netter-ao2", "p": [539] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-talocalcaneo-interosseo", "tipo": "ligamento", "nome": "Ligamento talocalcâneo interósseo", "en": "Talocalcaneal interosseous ligament",
+      "ids": ["talocalcaneal_interosseous_ligament"], "regiao": "tornozelo-pe", "articulacao": "Subtalar (talocalcânea)",
+      "origem": { "t": "No seio do tarso, entre o tálus e o calcâneo.", "m": ["calcaneus:Tarsal sinus"] },
+      "funcao": "Estabilizador forte da subtalar, no seio do tarso. O ligamento 'cervical', também no seio do tarso, é um estabilizador secundário mais fraco.",
+      "clinica": "A lesão pode causar instabilidade crônica da subtalar.",
+      "fonte": [{ "l": "netter-ao2", "p": [542] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-talocalcaneos-capsulares", "tipo": "ligamento", "nome": "Ligamentos talocalcâneos medial, lateral e posterior", "en": "Talocalcaneal ligaments",
+      "ids": ["medial_talocalcaneal_ligament", "lateral_talocalcaneal_ligament", "posterior_talocalcaneal_ligament", "anterior_talocalcaneal_ligament"], "regiao": "tornozelo-pe", "articulacao": "Subtalar (talocalcânea)",
+      "funcao": "Espessamentos da cápsula da subtalar; dão sustentação mínima. O medial vai ao tubérculo medial, junto ao sustentáculo do tálus; o lateral fica profundo ao calcaneofibular.",
+      "fonte": [{ "l": "netter-ao2", "p": [541, 542] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-mola", "tipo": "ligamento", "nome": "Ligamento calcaneonavicular plantar ('mola')", "en": "Plantar calcaneonavicular (spring) ligament",
+      "ids": ["plantar_calcaneonavicular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Talonavicular",
+      "origem": { "t": "Sustentáculo do tálus.", "m": ["calcaneus:Sustentaculum tali"] },
+      "insercao": { "t": "Navicular.", "o": ["navicular_bone"] },
+      "funcao": "Sustentação plantar forte para a cabeça do tálus.",
+      "fonte": [{ "l": "netter-ao2", "p": [541, 543] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-bifurcado", "tipo": "ligamento", "nome": "Ligamento bifurcado", "en": "Bifurcate ligament",
+      "ids": ["calcaneonavicular_ligament", "calcaneocuboid_ligament"], "regiao": "tornozelo-pe", "articulacao": "Transversa do tarso (Chopart)",
+      "origem": { "t": "Processo anterior do calcâneo.", "m": ["calcaneus:Anterior process of calcaneus"] },
+      "insercao": { "t": "Navicular (parte calcaneonavicular) e cuboide (parte calcaneocubóidea).", "o": ["navicular_bone", "cuboid_bone"] },
+      "funcao": "Suas duas metades reforçam as articulações talocalcaneonavicular e calcaneocubóidea.",
+      "fonte": [{ "l": "netter-ao2", "p": [540, 543] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-talonavicular", "tipo": "ligamento", "nome": "Ligamento talonavicular (dorsal)", "en": "Talonavicular ligament",
+      "ids": ["talonavicular_ligament"], "regiao": "tornozelo-pe", "articulacao": "Talonavicular",
+      "origem": { "t": "Colo do tálus.", "m": ["talus:Neck of talus"] },
+      "insercao": { "t": "Face dorsal do navicular.", "o": ["navicular_bone"] },
+      "funcao": "Sustentação dorsal da talonavicular, articulação esferóidea muito congruente ('acetábulo do pé').",
+      "fonte": [{ "l": "netter-ao2", "p": [543] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-calcaneocuboideo-dorsal", "tipo": "ligamento", "nome": "Ligamento calcaneocubóideo dorsal", "en": "Dorsal calcaneocuboid ligament",
+      "ids": ["dorsal_calcaneocuboid_ligament"], "regiao": "tornozelo-pe", "articulacao": "Calcaneocubóidea",
+      "origem": { "t": "Calcâneo.", "o": ["calcaneus"] },
+      "insercao": { "t": "Cuboide.", "o": ["cuboid_bone"] },
+      "funcao": "Sustentação dorsal, com resistência mínima.",
+      "fonte": [{ "l": "netter-ao2", "p": [543] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-plantar-curto", "tipo": "ligamento", "nome": "Ligamento calcaneocubóideo plantar ('plantar curto')", "en": "Plantar calcaneocuboid ligament",
+      "ids": ["plantar_calcaneocuboid_ligament"], "regiao": "tornozelo-pe", "articulacao": "Calcaneocubóidea",
+      "origem": { "t": "Face plantar do calcâneo.", "o": ["calcaneus"] },
+      "insercao": { "t": "Face plantar do cuboide.", "o": ["cuboid_bone"] },
+      "funcao": "Sustentação plantar forte da calcaneocubóidea.",
+      "fonte": [{ "l": "netter-ao2", "p": [541, 543] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-plantar-longo", "tipo": "ligamento", "nome": "Ligamento plantar longo", "en": "Long plantar ligament",
+      "ids": ["long_plantar_ligament"], "regiao": "tornozelo-pe", "articulacao": "Calcaneocubóidea e articulações vizinhas",
+      "origem": { "t": "Face plantar do calcâneo.", "o": ["calcaneus"] },
+      "insercao": { "t": "Várias inserções ao longo da planta." },
+      "funcao": "Cruza várias articulações da planta. O tendão do fibular longo também cruza essa região e aumenta a sustentação.",
+      "fonte": [{ "l": "netter-ao2", "p": [540, 543] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-lisfranc", "tipo": "ligamento", "nome": "Ligamento de Lisfranc (cuneometatarsal interósseo)", "en": "Lisfranc ligament",
+      "ids": ["cuneometatarsal_interosseous_ligaments"], "regiao": "tornozelo-pe", "articulacao": "Tarsometatarsal (Lisfranc)",
+      "origem": { "t": "Cuneiforme medial.", "o": ["medial_cuneiform_bone"] },
+      "insercao": { "t": "Base do 2º metatarsal.", "o": ["second_metatarsal_bone"] },
+      "funcao": "Estabilizador primário da articulação tarsometatarsal. A base do 2º metatarsal é o 'ponto-chave' do arco transverso.",
+      "clinica": "A avulsão do ligamento aparece como o sinal do 'fleck'. Não há ligamento intermetatarsal entre o 1º e o 2º metatarsais.",
+      "fonte": [{ "l": "netter-ao2", "p": [542, 544] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-metatarsal-transverso-profundo", "tipo": "ligamento", "nome": "Ligamento metatarsal transverso profundo", "en": "Deep transverse metatarsal ligament",
+      "ids": ["deep_transverse_metatarsal_ligament"], "regiao": "tornozelo-pe", "articulacao": "Metatarsofalângicas",
+      "funcao": "Liga as cabeças dos metatarsais; o do 1º e 2º também se fixa ao sesamoide lateral e o estabiliza.",
+      "clinica": "Pode comprimir o nervo digital: neuroma de Morton.",
+      "fonte": [{ "l": "netter-ao2", "p": [544] }], "status": "verificado"
+    },
+    {
+      "chave": "placa-plantar-mtf", "tipo": "ligamento", "nome": "Ligamento plantar (placa plantar) das metatarsofalângicas", "en": "Plantar plate of metatarsophalangeal joints",
+      "ids": ["plantar_metatarsophalangeal_ligaments", "intersesamoid_ligament"], "regiao": "tornozelo-pe", "articulacao": "Metatarsofalângicas",
+      "funcao": "Sustentação primária: origem frouxa no colo do metatarsal e inserção forte na falange proximal. Os sesamoides do hálux ficam aderidos a ela (no tendão do flexor curto do hálux); o ligamento intersesamóideo os estabiliza.",
+      "clinica": "É lesada nas hiperextensões do hálux ('turf toe').",
+      "fonte": [{ "l": "netter-ao2", "p": [544] }], "status": "verificado"
+    },
+    {
+      "chave": "colaterais-mtf", "tipo": "ligamento", "nome": "Ligamentos colaterais das metatarsofalângicas", "en": "Collateral metatarsophalangeal ligaments",
+      "ids": ["collateral_metatarsophalangeal_ligaments"], "regiao": "tornozelo-pe", "articulacao": "Metatarsofalângicas",
+      "funcao": "Forte sustentação medial e lateral; limitam o varo e o valgo.",
+      "fonte": [{ "l": "netter-ao2", "p": [544] }], "status": "verificado"
+    }
+  ]
+}

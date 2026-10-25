@@ -1,0 +1,201 @@
+{
+  "lote": "10-ligamentos-membro-superior",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [132, 133, 134, 135, 136, 182, 183, 184],
+  "registros": [
+    {
+      "chave": "lig-glenoumeral-superior", "tipo": "ligamento", "nome": "Ligamento glenoumeral superior", "en": "Superior glenohumeral ligament",
+      "ids": ["superior_glenohumeral_ligament"], "regiao": "ombro", "articulacao": "Articulação do ombro (glenoumeral)",
+      "origem": { "t": "Margem anterossuperior da cavidade glenoidal e do lábio glenoidal.", "m": ["scapula:Glenoid fossa"] },
+      "insercao": { "t": "Parte proximal do tubérculo menor do úmero.", "m": ["humerus:Lesser tubercle"] },
+      "funcao": "Resiste à translação inferior e à rotação lateral com o braço aduzido, e à translação posterior em 90° de flexão.",
+      "clinica": "Faz parte do intervalo rotador e da polia do bíceps, com o ligamento coracoumeral e o subescapular.",
+      "ver": ["lig-coracoumeral", "lig-glenoumeral-medio", "lig-glenoumeral-inferior"],
+      "fonte": [{ "l": "netter-ao2", "p": [134, 135] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-glenoumeral-medio", "tipo": "ligamento", "nome": "Ligamento glenoumeral médio", "en": "Middle glenohumeral ligament",
+      "ids": ["middle_glenohumeral_ligament"], "regiao": "ombro", "articulacao": "Articulação do ombro (glenoumeral)",
+      "origem": { "t": "Margem anterossuperior da cavidade glenoidal e do lábio, abaixo do superior.", "m": ["scapula:Glenoid fossa"] },
+      "insercao": { "t": "Face medial do tubérculo menor do úmero.", "m": ["humerus:Lesser tubercle"] },
+      "funcao": "Resiste à translação anteroposterior em 45° de abdução; restrição secundária à translação e à rotação lateral em adução.",
+      "clinica": "Complexo de Buford: ligamento médio espessado em forma de cordão com ausência do lábio anterossuperior.",
+      "fonte": [{ "l": "netter-ao2", "p": [134] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-glenoumeral-inferior", "tipo": "ligamento", "nome": "Ligamento glenoumeral inferior", "en": "Inferior glenohumeral ligament",
+      "ids": ["inferior_glenohumeral_ligament"], "regiao": "ombro", "articulacao": "Articulação do ombro (glenoumeral)",
+      "origem": { "t": "Banda anterior na margem anterior da glenoide (posição de 3 horas); banda posterior na margem posterior (9 horas).", "m": ["scapula:Glenoid fossa"] },
+      "insercao": { "t": "Parte inferior do colo do úmero.", "m": ["humerus:Anatomical neck of humerus"] },
+      "funcao": "É o ligamento mais importante do ombro: forma uma 'tipoia' que se tensiona em abdução com rotação lateral (banda anterior) ou medial (banda posterior). A banda anterior resiste à translação anterior e inferior em abdução e rotação lateral; a posterior, à translação posterior em rotação medial e 90° de flexão.",
+      "clinica": "A banda anterior precisa ser retensionada no tratamento da instabilidade anterior e da instabilidade multidirecional.",
+      "fonte": [{ "l": "netter-ao2", "p": [134] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-coracoumeral", "tipo": "ligamento", "nome": "Ligamento coracoumeral", "en": "Coracohumeral ligament",
+      "ids": ["coracohumeral_ligament"], "regiao": "ombro", "articulacao": "Articulação do ombro (glenoumeral)",
+      "origem": { "t": "Base do processo coracoide.", "m": ["scapula:Coracoid process"] },
+      "insercao": { "t": "Tubérculos menor e maior, dos dois lados do sulco intertubercular.", "m": ["humerus:Lesser tubercle", "humerus:Greater tubercle"] },
+      "funcao": "Com o glenoumeral superior, resiste à translação inferior em adução.",
+      "clinica": "Faz parte da polia que segura o tendão da cabeça longa do bíceps na articulação e no sulco.",
+      "fonte": [{ "l": "netter-ao2", "p": [134, 135] }], "status": "verificado"
+    },
+    {
+      "chave": "labio-glenoidal", "tipo": "ligamento", "nome": "Lábio glenoidal", "en": "Glenoid labrum",
+      "ids": ["glenoid_labrum"], "regiao": "ombro", "articulacao": "Articulação do ombro (glenoumeral)",
+      "origem": { "t": "Preso em toda a volta da cavidade glenoidal.", "m": ["scapula:Glenoid fossa"] },
+      "funcao": "Fibrocartilagem que aprofunda a glenoide, aumenta a área de contato e serve de 'para-choque' e de inserção para os ligamentos glenoumerais.",
+      "clinica": "Rupturas e desinserções do lábio tiram o 'para-choque' e afrouxam os ligamentos, levando à instabilidade.",
+      "fonte": [{ "l": "netter-ao2", "p": [132, 134] }], "status": "verificado"
+    },
+    {
+      "chave": "capsula-do-ombro", "tipo": "ligamento", "nome": "Cápsula da articulação do ombro", "en": "Glenohumeral joint capsule",
+      "ids": ["articular_capsule_of_glenohumeral_joint"], "regiao": "ombro", "articulacao": "Articulação do ombro (glenoumeral)",
+      "funcao": "Mantém a pressão intra-articular negativa. Os ligamentos glenoumerais são espessamentos da sua parte anterior e inferior.",
+      "clinica": "É fina na parte posterior; não há ligamentos glenoumerais posteriores nem superiores.",
+      "fonte": [{ "l": "netter-ao2", "p": [134] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-transverso-do-umero", "tipo": "ligamento", "nome": "Ligamento transverso do úmero", "en": "Transverse humeral ligament",
+      "ids": ["transverse_humeral_ligament"], "regiao": "ombro", "articulacao": "Sulco intertubercular",
+      "origem": { "t": "Tubérculo menor do úmero.", "m": ["humerus:Lesser tubercle"] },
+      "insercao": { "t": "Tubérculo maior do úmero, cruzando o sulco intertubercular.", "m": ["humerus:Greater tubercle"] },
+      "funcao": "Segura o tendão da cabeça longa do bíceps dentro do sulco intertubercular.",
+      "clinica": "Forma a face lateral do intervalo rotador.",
+      "fonte": [{ "l": "netter-ao2", "p": [136] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-transverso-superior-da-escapula", "tipo": "ligamento", "nome": "Ligamento transverso superior da escápula", "en": "Superior transverse scapular ligament",
+      "ids": ["superior_transverse_scapular_ligament"], "regiao": "ombro", "articulacao": "Incisura da escápula",
+      "origem": { "t": "Cruza a incisura da escápula.", "m": ["scapula:Scapular notch"] },
+      "funcao": "Fecha a incisura da escápula.",
+      "clinica": "O nervo supraescapular passa abaixo do ligamento; a artéria supraescapular passa acima.",
+      "ver": ["supraescapular"],
+      "fonte": [{ "l": "netter-ao2", "p": [136, 153] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-coracoacromial", "tipo": "ligamento", "nome": "Ligamento coracoacromial", "en": "Coraco-acromial ligament",
+      "ids": ["coraco_acromial_ligament"], "regiao": "ombro", "articulacao": "Arco coracoacromial",
+      "origem": { "t": "Extremidade do processo coracoide.", "m": ["scapula:Coracoid process"] },
+      "insercao": { "t": "Partes anterior e inferior do acrômio.", "m": ["scapula:Acromion"] },
+      "funcao": "Forma o arco coracoacromial; impede a subida da cabeça do úmero no ombro com o manguito rotador deficiente.",
+      "fonte": [{ "l": "netter-ao2", "p": [136] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-acromioclavicular", "tipo": "ligamento", "nome": "Ligamento acromioclavicular", "en": "Acromioclavicular ligament",
+      "ids": ["acromioclavicular_ligament", "articular_capsule_of_acromioclavicular_joint"], "regiao": "ombro", "articulacao": "Articulação acromioclavicular",
+      "origem": { "t": "Espessamento da parte superior da cápsula, entre a clavícula e o acrômio.", "m": ["clavicle:Acromial end", "scapula:Acromion"] },
+      "funcao": "Estabilidade anteroposterior e axial da articulação acromioclavicular.",
+      "restringe": "Translação anteroposterior da clavícula.",
+      "clinica": "É lesado, em algum grau, em todas as separações acromioclaviculares. A articulação é plana, quase não se move (cerca de 5° de rotação) e é sede comum de lesão e de degeneração dolorosa.",
+      "fonte": [{ "l": "netter-ao2", "p": [135] }], "status": "verificado"
+    },
+    {
+      "chave": "disco-acromioclavicular", "tipo": "ligamento", "nome": "Disco da articulação acromioclavicular", "en": "Articular disc of acromioclavicular joint",
+      "ids": ["articular_disc_of_acromioclavicular_joint"], "regiao": "ombro", "articulacao": "Articulação acromioclavicular",
+      "funcao": "Fica entre a clavícula e o acrômio e amortece em parte a articulação, que é incongruente.",
+      "fonte": [{ "l": "netter-ao2", "p": [136] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-conoide", "tipo": "ligamento", "nome": "Ligamento conoide", "en": "Conoid ligament",
+      "ids": ["conoid_ligament"], "regiao": "ombro", "articulacao": "Ligamento coracoclavicular",
+      "origem": { "t": "Base do processo coracoide.", "m": ["scapula:Coracoid process"] },
+      "insercao": { "t": "Face inferior da clavícula, na parte posteromedial (tubérculo conoide).", "m": ["clavicle:Conoid tubercle"] },
+      "funcao": "Parte do ligamento coracoclavicular, que dá a estabilidade vertical da clavícula; o conoide resiste mais à carga vertical do que o trapezoide.",
+      "ver": ["lig-trapezoide"],
+      "fonte": [{ "l": "netter-ao2", "p": [135, 136] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-trapezoide", "tipo": "ligamento", "nome": "Ligamento trapezoide", "en": "Trapezoid ligament",
+      "ids": ["trapezoid_ligament"], "regiao": "ombro", "articulacao": "Ligamento coracoclavicular",
+      "origem": { "t": "Base do processo coracoide.", "m": ["scapula:Coracoid process"] },
+      "insercao": { "t": "Face inferior da clavícula, na parte anterolateral (linha trapezóidea).", "m": ["clavicle:Trapezoid line"] },
+      "funcao": "Parte do ligamento coracoclavicular; resiste à carga axial sobre o ombro (fibras mais oblíquas).",
+      "ver": ["lig-conoide"],
+      "fonte": [{ "l": "netter-ao2", "p": [135, 136] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-esternoclavicular", "tipo": "ligamento", "nome": "Ligamentos esternoclaviculares anterior e posterior", "en": "Sternoclavicular ligaments",
+      "ids": ["anterior_sternoclavicular_ligament", "posterior_sternoclavicular_ligament", "articular_capsule_of_sternoclavicular_joint"], "regiao": "ombro", "articulacao": "Articulação esternoclavicular",
+      "origem": { "t": "Extremidade esternal da clavícula.", "m": ["clavicle:Sternal end"] },
+      "insercao": { "t": "Esterno (manúbrio).", "o": ["manubrium_of_sternum"] },
+      "funcao": "Estabilizadores primários da articulação esternoclavicular; a cápsula é estabilizador secundário.",
+      "clinica": "O posterior é mais forte, por isso a luxação anterior é a mais comum. A esternoclavicular é a única ligação verdadeira do membro superior com o esqueleto axial.",
+      "fonte": [{ "l": "netter-ao2", "p": [133] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-costoclavicular", "tipo": "ligamento", "nome": "Ligamento costoclavicular", "en": "Costoclavicular ligament",
+      "ids": ["costoclavicular_ligament"], "regiao": "ombro", "articulacao": "Articulação esternoclavicular",
+      "origem": { "t": "Face inferior da clavícula.", "m": ["clavicle:Impression for costoclavicular ligament"] },
+      "insercao": { "t": "Cartilagem costal da primeira costela.", "o": ["first_rib"] },
+      "funcao": "É o ligamento mais forte da região esternoclavicular.",
+      "fonte": [{ "l": "netter-ao2", "p": [133] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-interclavicular", "tipo": "ligamento", "nome": "Ligamento interclavicular", "en": "Interclavicular ligament",
+      "ids": ["interclavicular_ligament"], "regiao": "ombro", "articulacao": "Articulação esternoclavicular",
+      "origem": { "t": "Entre as extremidades esternais das duas clavículas.", "m": ["clavicle:Sternal end"] },
+      "funcao": "Estabilizador secundário da esternoclavicular.",
+      "fonte": [{ "l": "netter-ao2", "p": [133] }], "status": "verificado"
+    },
+    {
+      "chave": "disco-esternoclavicular", "tipo": "ligamento", "nome": "Disco da articulação esternoclavicular", "en": "Articular disc of sternoclavicular joint",
+      "ids": ["articular_disc_of_sternoclavicular_joint"], "regiao": "ombro", "articulacao": "Articulação esternoclavicular",
+      "funcao": "Disco de fibrocartilagem dentro da articulação.",
+      "fonte": [{ "l": "netter-ao2", "p": [133] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-colateral-ulnar", "tipo": "ligamento", "nome": "Ligamento colateral ulnar (medial) do cotovelo", "en": "Ulnar collateral ligament",
+      "ids": ["ulnar_collateral_ligament"], "regiao": "cotovelo", "articulacao": "Cotovelo",
+      "origem": { "t": "Epicôndilo medial do úmero (faixas anterior e posterior); olécrano (faixa transversa).", "m": ["humerus:Medial epicondyle of humerus"] },
+      "insercao": { "t": "Faixa anterior no tubérculo sublime do processo coronoide; faixa posterior na incisura troclear; faixa transversa no processo coronoide.", "m": ["ulna:Sublime tubercle", "ulna:Coronoid process of ulna"] },
+      "funcao": "A faixa anterior é a principal contenção ao estresse em valgo entre 20° e 120° de flexão e está sempre tensa; a posterior fica tensa acima de 90° de flexão; a transversa estabiliza a incisura troclear.",
+      "restringe": "Valgo.",
+      "clinica": "Costuma romper longe do processo coronoide. Forma o assoalho do túnel ulnar (cubital).",
+      "ver": ["ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [182, 184] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-colateral-radial", "tipo": "ligamento", "nome": "Ligamento colateral radial (lateral) do cotovelo", "en": "Radial collateral ligament",
+      "ids": ["radial_collateral_ligament"], "regiao": "cotovelo", "articulacao": "Cotovelo",
+      "origem": { "t": "Epicôndilo lateral do úmero.", "m": ["humerus:Lateral epicondyle of humerus"] },
+      "insercao": { "t": "Ligamento anular do rádio e crista do supinador da ulna.", "m": ["ulna:Supinator crest"] },
+      "funcao": "Contenção primária ao varo com o cotovelo fletido. A parte que vai à crista do supinador ('parte ulnar' ou colateral lateral ulnar) impede a subluxação da cabeça do rádio.",
+      "restringe": "Varo e subluxação posterolateral da cabeça do rádio.",
+      "clinica": "A lesão da parte ulnar causa instabilidade rotatória posterolateral.",
+      "fonte": [{ "l": "netter-ao2", "p": [183, 184] }], "status": "verificado",
+      "notas": "A divisão em 'parte radial', 'parte ulnar' e 'colateral lateral acessório' é usada na clínica, mas não é reconhecida pela terminologia anatômica (nota da revisão do próprio livro)."
+    },
+    {
+      "chave": "lig-anular", "tipo": "ligamento", "nome": "Ligamento anular do rádio", "en": "Annular ligament of radius",
+      "ids": ["annular_ligament_of_radius"], "regiao": "cotovelo", "articulacao": "Articulação radiulnar proximal",
+      "origem": { "t": "Margens anterior e posterior da incisura radial da ulna, envolvendo a cabeça do rádio.", "m": ["ulna:Radial notch"] },
+      "funcao": "Permite a rotação da cabeça do rádio e a mantém junto à ulna.",
+      "clinica": "Fica estirado ou rompido na subluxação ou luxação da cabeça do rádio.",
+      "fonte": [{ "l": "netter-ao2", "p": [183] }], "status": "verificado"
+    },
+    {
+      "chave": "lig-quadrado", "tipo": "ligamento", "nome": "Ligamento quadrado", "en": "Quadrate ligament",
+      "ids": ["quadrate_ligament"], "regiao": "cotovelo", "articulacao": "Articulação radiulnar proximal",
+      "origem": { "t": "Face anterolateral da ulna, abaixo do ligamento anular.", "m": ["ulna:Radial notch"] },
+      "insercao": { "t": "Face anterior do colo do rádio.", "m": ["radius:Neck of radius"] },
+      "funcao": "Tenso na supinação; estabiliza a radiulnar proximal.",
+      "fonte": [{ "l": "netter-ao2", "p": [183] }], "status": "verificado"
+    },
+    {
+      "chave": "corda-obliqua", "tipo": "ligamento", "nome": "Corda oblíqua", "en": "Oblique cord",
+      "ids": ["oblique_cord"], "regiao": "cotovelo", "articulacao": "Antebraço",
+      "origem": { "t": "Face lateral da parte proximal da ulna.", "m": ["ulna:Tuberosity of ulna"] },
+      "insercao": { "t": "Colo do rádio.", "m": ["radius:Neck of radius"] },
+      "funcao": "Estabiliza a articulação durante a pronossupinação.",
+      "fonte": [{ "l": "netter-ao2", "p": [183] }], "status": "verificado"
+    },
+    {
+      "chave": "capsula-do-cotovelo", "tipo": "ligamento", "nome": "Cápsula da articulação do cotovelo", "en": "Elbow joint capsule",
+      "ids": ["articular_capsule_of_elbow_joint"], "regiao": "cotovelo", "articulacao": "Cotovelo",
+      "funcao": "Estabilizador secundário ao varo e ao valgo (partes anterior e posterior).",
+      "clinica": "Tem tendência a contratura.",
+      "fonte": [{ "l": "netter-ao2", "p": [183, 184] }], "status": "verificado"
+    }
+  ]
+}

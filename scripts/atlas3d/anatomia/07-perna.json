@@ -1,0 +1,199 @@
+{
+  "lote": "07-perna",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [487, 488, 489, 490, 491, 492, 493, 494, 495, 496],
+  "registros": [
+    {
+      "chave": "tibial-anterior", "tipo": "musculo", "nome": "Tibial anterior", "en": "Tibialis anterior",
+      "ids": ["tibialis_anterior_muscle"], "regiao": "perna", "grupo": "perna-anterior",
+      "origem": { "t": "Parte proximal da face lateral da tíbia (tubérculo de Gerdy).", "m": ["tibia:Lateral surface of tibia"] },
+      "insercao": { "t": "Cuneiforme medial e base do 1º metatarsal, pela face plantar.", "o": ["medial_cuneiform_bone", "first_metatarsal_bone"] },
+      "nervos": ["fibular-profundo"],
+      "acao": "Flexão dorsal e inversão do pé.",
+      "clinica": "Serve para testar a função motora de L4.",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 489, 496] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-longo-do-halux", "tipo": "musculo", "nome": "Extensor longo do hálux", "en": "Extensor hallucis longus",
+      "ids": ["extensor_hallucis_longus"], "regiao": "perna", "grupo": "perna-anterior",
+      "origem": { "t": "Face medial da fíbula e membrana interóssea.", "m": ["fibula:Medial surface of fibula"] },
+      "insercao": { "t": "Base da falange distal do hálux.", "o": ["distal_phalanx_of_first_finger_of_foot"] },
+      "nervos": ["fibular-profundo"],
+      "acao": "Flexão dorsal do pé e extensão do hálux.",
+      "clinica": "Serve para testar a função motora de L5.",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 489, 496] }], "status": "verificado"
+    },
+    {
+      "chave": "extensor-longo-dos-dedos", "tipo": "musculo", "nome": "Extensor longo dos dedos", "en": "Extensor digitorum longus",
+      "ids": ["extensor_digitorum_longus", "tendon_of_extensor_digitorum_longus"], "regiao": "perna", "grupo": "perna-anterior",
+      "origem": { "t": "Côndilo lateral da tíbia e parte proximal da fíbula.", "m": ["tibia:Lateral condyle of tibia", "fibula:Anterior border of fibula"] },
+      "insercao": { "t": "Bases das falanges média e distal dos quatro dedos laterais.", "o": ["middle_phalanx_of_second_finger_of_foot", "middle_phalanx_of_third_finger_of_foot", "middle_phalanx_of_fourth_finger_of_foot", "middle_phalanx_of_fifth_finger_of_foot", "distal_phalanx_of_second_finger_of_foot", "distal_phalanx_of_third_finger_of_foot", "distal_phalanx_of_fourth_finger_of_foot", "distal_phalanx_of_fifth_finger_of_foot"] },
+      "nervos": ["fibular-profundo"],
+      "acao": "Flexão dorsal do pé e extensão dos quatro dedos laterais.",
+      "clinica": "Um único tendão que se divide em quatro.",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 489, 496] }], "status": "verificado"
+    },
+    {
+      "chave": "fibular-terceiro", "tipo": "musculo", "nome": "Fibular terceiro", "en": "Fibularis tertius",
+      "ids": ["fibularis_tertius_muscle"], "regiao": "perna", "grupo": "perna-anterior",
+      "origem": { "t": "Parte distal da fíbula e membrana interóssea.", "m": ["fibula:Anteromedial surface of fibula"] },
+      "insercao": { "t": "Base do 5º metatarsal.", "o": ["fifth_metatarsal_bone"] },
+      "nervos": ["fibular-profundo"],
+      "acao": "Flexão dorsal e eversão (fraca) do pé.",
+      "clinica": "Muitas vezes está unido ao extensor longo dos dedos.",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 489, 496] }], "status": "verificado"
+    },
+    {
+      "chave": "fibular-longo", "tipo": "musculo", "nome": "Fibular longo", "en": "Fibularis longus",
+      "ids": ["fibularis_longus_muscle"], "regiao": "perna", "grupo": "perna-lateral",
+      "origem": { "t": "Parte proximal da face lateral da fíbula.", "m": ["fibula:Head of fibula", "fibula:Lateral surface of fibula"] },
+      "insercao": { "t": "Cuneiforme medial e base do 1º metatarsal, pela face plantar.", "o": ["medial_cuneiform_bone", "first_metatarsal_bone"] },
+      "nervos": ["fibular-superficial"],
+      "acao": "Flexão plantar do pé, pelo 1º raio.",
+      "clinica": "Serve para testar a função motora de S1. O tendão cruza por baixo do pé (pela quarta camada da planta).",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 490, 496, 561, 565] }], "status": "verificado"
+    },
+    {
+      "chave": "fibular-curto", "tipo": "musculo", "nome": "Fibular curto", "en": "Fibularis brevis",
+      "ids": ["fibularis_brevis_muscle"], "regiao": "perna", "grupo": "perna-lateral",
+      "origem": { "t": "Parte distal da face lateral da fíbula." },
+      "insercao": { "t": "Base (tuberosidade) do 5º metatarsal.", "o": ["fifth_metatarsal_bone"] },
+      "nervos": ["fibular-superficial"],
+      "acao": "Eversão do pé.",
+      "clinica": "Pode causar fratura por avulsão da base do 5º metatarsal. Tem o ventre muscular que desce mais distal.",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 490, 496] }], "status": "verificado"
+    },
+    {
+      "chave": "gastrocnemio", "tipo": "musculo", "nome": "Gastrocnêmio", "en": "Gastrocnemius",
+      "ids": ["medial_head_of_gastrocnemius", "lateral_head_of_gastrocnemius"], "regiao": "perna", "grupo": "triceps-sural",
+      "origem": { "t": "Côndilos medial e lateral do fêmur.", "m": ["femur:Medial condyle of femur", "femur:Lateral condyle of femur"] },
+      "insercao": { "t": "Calcâneo, pelo tendão do calcâneo.", "m": ["calcaneus:Calcaneal tuberosity"] },
+      "nervos": ["tibial"],
+      "acao": "Flexão plantar.",
+      "clinica": "Serve para testar a função motora de S1. Tem duas cabeças; a fabela, quando existe, fica no tendão da cabeça lateral.",
+      "relacoes": ["O nervo tibial desce entre as duas cabeças."],
+      "ver": ["soleo", "tendao-do-calcaneo"],
+      "fonte": [{ "l": "netter-ao2", "p": [487, 491, 494] }], "status": "verificado"
+    },
+    {
+      "chave": "soleo", "tipo": "musculo", "nome": "Sóleo", "en": "Soleus",
+      "ids": ["soleus_muscle"], "regiao": "perna", "grupo": "triceps-sural",
+      "origem": { "t": "Face posterior da cabeça da fíbula e linha do músculo sóleo na tíbia.", "m": ["fibula:Head of fibula", "tibia:Soleal line"] },
+      "insercao": { "t": "Calcâneo, pelo tendão do calcâneo.", "m": ["calcaneus:Calcaneal tuberosity"] },
+      "nervos": ["tibial"],
+      "acao": "Flexão plantar.",
+      "clinica": "Une-se ao gastrocnêmio no tendão do calcâneo.",
+      "ver": ["gastrocnemio", "tendao-do-calcaneo"],
+      "fonte": [{ "l": "netter-ao2", "p": [487, 491, 494] }], "status": "verificado"
+    },
+    {
+      "chave": "plantar", "tipo": "musculo", "nome": "Plantar", "en": "Plantaris",
+      "ids": ["plantaris_muscle"], "regiao": "perna", "grupo": "triceps-sural",
+      "origem": { "t": "Linha supracondilar lateral do fêmur.", "m": ["femur:Lateral supracondylar line"] },
+      "insercao": { "t": "Calcâneo.", "m": ["calcaneus:Calcaneal tuberosity"] },
+      "nervos": ["tibial"],
+      "acao": "Flexão plantar (fraca).",
+      "clinica": "O tendão longo pode ser retirado como enxerto para reconstrução tendínea.",
+      "fonte": [{ "l": "netter-ao2", "p": [487, 491, 494] }], "status": "verificado"
+    },
+    {
+      "chave": "tendao-do-calcaneo", "tipo": "musculo", "nome": "Tendão do calcâneo (de Aquiles)", "en": "Calcaneal tendon",
+      "ids": ["calcaneal_tendon"], "regiao": "perna", "grupo": "triceps-sural",
+      "insercao": { "t": "Tuberosidade do calcâneo.", "m": ["calcaneus:Calcaneal tuberosity"] },
+      "acao": "Transmite a força do gastrocnêmio e do sóleo para o calcâneo (flexão plantar).",
+      "relacoes": ["O nervo sural cruza o tendão cerca de 10 cm acima da inserção."],
+      "ver": ["gastrocnemio", "soleo", "sural"],
+      "fonte": [{ "l": "netter-ao2", "p": [491, 496] }], "status": "verificado"
+    },
+    {
+      "chave": "popliteo", "tipo": "musculo", "nome": "Poplíteo", "en": "Popliteus",
+      "ids": ["popliteus_muscle"], "regiao": "joelho", "grupo": "perna-posterior-profunda",
+      "origem": { "t": "Côndilo lateral do fêmur, à frente e abaixo do ligamento colateral lateral.", "m": ["femur:Groove for popliteus muscle"] },
+      "insercao": { "t": "Face posterior da parte proximal da tíbia." },
+      "nervos": ["tibial"],
+      "acao": "Rotação medial da tíbia sobre o fêmur, na fase de balanço da marcha.",
+      "clinica": "A origem é intra-articular. É um restritor primário da rotação lateral do joelho.",
+      "fonte": [{ "l": "netter-ao2", "p": [492, 494] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-longo-do-halux", "tipo": "musculo", "nome": "Flexor longo do hálux", "en": "Flexor hallucis longus",
+      "ids": ["flexor_hallucis_longus"], "regiao": "perna", "grupo": "perna-posterior-profunda",
+      "origem": { "t": "Face posterior da fíbula.", "m": ["fibula:Posterior surface of fibula"] },
+      "insercao": { "t": "Base da falange distal do hálux.", "o": ["distal_phalanx_of_first_finger_of_foot"] },
+      "nervos": ["tibial"],
+      "acao": "Flexão plantar do hálux.",
+      "clinica": "Serve para testar a função motora de S1.",
+      "relacoes": ["O tendão passa entre os tubérculos do processo posterior do tálus, sob o sustentáculo do tálus, e cruza profundamente o flexor longo dos dedos no nó de Henry."],
+      "fonte": [{ "l": "netter-ao2", "p": [492, 494, 563] }], "status": "verificado"
+    },
+    {
+      "chave": "flexor-longo-dos-dedos", "tipo": "musculo", "nome": "Flexor longo dos dedos", "en": "Flexor digitorum longus",
+      "ids": ["flexor_digitorum_longus"], "regiao": "perna", "grupo": "perna-posterior-profunda",
+      "origem": { "t": "Face posterior da tíbia.", "m": ["tibia:Posterior surface of tibia"] },
+      "insercao": { "t": "Bases das falanges distais dos quatro dedos laterais.", "o": ["distal_phalanx_of_second_finger_of_foot", "distal_phalanx_of_third_finger_of_foot", "distal_phalanx_of_fourth_finger_of_foot", "distal_phalanx_of_fifth_finger_of_foot"] },
+      "nervos": ["tibial"],
+      "acao": "Flexão plantar dos quatro dedos laterais.",
+      "clinica": "No tornozelo, o tendão fica logo à frente da artéria tibial posterior.",
+      "fonte": [{ "l": "netter-ao2", "p": [492, 494] }], "status": "verificado"
+    },
+    {
+      "chave": "tibial-posterior", "tipo": "musculo", "nome": "Tibial posterior", "en": "Tibialis posterior",
+      "ids": ["tibialis_posterior_muscle"], "regiao": "perna", "grupo": "perna-posterior-profunda",
+      "origem": { "t": "Face posterior da tíbia, da fíbula e membrana interóssea.", "m": ["tibia:Interosseous border of tibia", "fibula:Interosseous crest of fibula"] },
+      "insercao": { "t": "Navicular, cuneiformes e bases dos metatarsais, pela face plantar.", "m": ["navicular_bone:Tuberosity of navicular bone"], "o": ["medial_cuneiform_bone", "intermediate_cuneiform_bone", "lateral_cuneiform_bone"] },
+      "nervos": ["tibial"],
+      "acao": "Flexão plantar e inversão do pé (na saída do calcanhar).",
+      "clinica": "A ruptura ou a degeneração do tendão pode levar ao pé plano adquirido.",
+      "fonte": [{ "l": "netter-ao2", "p": [492, 494] }], "status": "verificado",
+      "notas": "Os marcos 3D da origem ficam junto à membrana interóssea, nas margens interósseas da tíbia e da fíbula."
+    },
+    {
+      "chave": "safeno", "tipo": "nervo", "nome": "Nervo safeno", "en": "Saphenous nerve",
+      "ids": ["saphenous_nerve", "infrapatellar_branch_of_saphenous_nerve", "medial_crural_cutaneous_branches_of_saphenous_nerve"], "regiao": "perna",
+      "raizes": "L2–L4 (ramo do nervo femoral)",
+      "trajeto": "Desce sob o sartório, segue para a face posteromedial do joelho superficial à fáscia do sartório, solta o ramo infrapatelar e desce pela face medial da perna até passar à frente do maléolo medial, chegando ao arco longitudinal medial do pé.",
+      "sensitivo": "Região infrapatelar (ramo infrapatelar), face medial da perna e parte medial do tornozelo e do pé.",
+      "clinica": "Fica em risco no acesso medial direto ao joelho (menisco medial); o ramo infrapatelar, nos acessos anteromedial e pela linha média (como na reconstrução do LCA).",
+      "ver": ["femoral"],
+      "fonte": [{ "l": "netter-ao2", "p": [416, 493, 494, 569] }], "status": "verificado"
+    },
+    {
+      "chave": "fibular-profundo", "tipo": "nervo", "nome": "Nervo fibular profundo", "en": "Deep fibular nerve",
+      "ids": ["deep_fibular_nerve", "muscular_branches_of_deep_fibular_nerve", "dorsal_digital_branches_of_deep_fibular_nerve"], "regiao": "perna",
+      "raizes": "Ramo do nervo fibular comum",
+      "trajeto": "Desce no compartimento anterior da perna com a artéria tibial anterior, atrás do tibial anterior e sobre a membrana interóssea; passa sob o retináculo inferior dos músculos extensores e se divide em ramo lateral (motor) e medial (sensitivo).",
+      "sensitivo": "Primeiro espaço entre os dedos, pelo ramo medial.",
+      "clinica": "Pode ser comprimido sob o retináculo inferior dos músculos extensores.",
+      "ver": ["fibular-comum"],
+      "fonte": [{ "l": "netter-ao2", "p": [487, 495, 496, 571] }], "status": "verificado",
+      "notas": "O Netter cita '1º/2º espaços interdigitais'."
+    },
+    {
+      "chave": "fibular-superficial", "tipo": "nervo", "nome": "Nervo fibular superficial", "en": "Superficial fibular nerve",
+      "ids": ["superficial_fibular_nerve", "dorsal_digital_branches_of_superficial_fibular_nerve", "intermediate_dorsal_cutaneous_nerve_of_foot", "medial_dorsal_cutaneous_nerve_of_foot"], "regiao": "perna",
+      "raizes": "Ramo do nervo fibular comum",
+      "trajeto": "Desce no compartimento lateral da perna e cruza para a frente cerca de 12 cm acima do maléolo lateral, indo para o dorso do pé, onde se divide nos nervos cutâneos dorsais medial e intermédio.",
+      "sensitivo": "Face anterolateral da perna e dorso do pé.",
+      "clinica": "Pode ser lesado no acesso lateral ao tornozelo (fixação de fratura) e no portal anterolateral da artroscopia.",
+      "ver": ["fibular-comum"],
+      "fonte": [{ "l": "netter-ao2", "p": [487, 496, 572] }], "status": "verificado"
+    },
+    {
+      "chave": "sural", "tipo": "nervo", "nome": "Nervo sural", "en": "Sural nerve",
+      "ids": ["sural_nerve"], "regiao": "perna",
+      "raizes": "Formado pelos nervos cutâneo sural medial (do tibial) e cutâneo sural lateral (do fibular)",
+      "trajeto": "Corre sob a pele da face posterolateral da perna, cruza o tendão do calcâneo cerca de 10 cm acima da inserção e segue para o lado lateral do calcanhar e do pé.",
+      "sensitivo": "Parte distal da face posterolateral da perna, lado lateral do calcanhar e borda lateral do pé.",
+      "ver": ["cutaneo-sural-medial", "tendao-do-calcaneo"],
+      "fonte": [{ "l": "netter-ao2", "p": [496, 572] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-sural-medial", "tipo": "nervo", "nome": "Nervo cutâneo sural medial", "en": "Medial sural cutaneous nerve",
+      "ids": ["medial_sural_cutaneous_nerve"], "regiao": "perna",
+      "raizes": "Ramo do nervo tibial",
+      "sensitivo": "Parte proximal da face posterolateral da perna.",
+      "ver": ["tibial", "sural"],
+      "fonte": [{ "l": "netter-ao2", "p": [494, 496] }], "status": "verificado"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "lote": "01-coluna",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [89, 90, 91, 92, 93, 94, 95],
+  "registros": [
+    {
+      "chave": "platisma", "tipo": "musculo", "nome": "Platisma", "en": "Platysma",
+      "ids": ["platysma"], "regiao": "coluna", "grupo": "pescoco-anterior",
+      "origem": { "t": "Fáscia das regiões deltóidea e clavipeitoral." },
+      "insercao": { "t": "Mandíbula e pele da face inferior.", "o": ["mandible"] },
+      "nervos": ["facial"],
+      "acao": "Abaixa a mandíbula e tensiona a pele do pescoço.",
+      "fonte": [{ "l": "netter-ao2", "p": [89, 91] }], "status": "verificado"
+    },
+    {
+      "chave": "esternocleidomastoideo", "tipo": "musculo", "nome": "Esternocleidomastóideo", "en": "Sternocleidomastoid",
+      "ids": ["sternocleidomastoid_muscle"], "regiao": "coluna", "grupo": "pescoco-anterior",
+      "origem": { "t": "Manúbrio do esterno e clavícula.", "m": ["clavicle:Sternal end"], "o": ["manubrium_of_sternum"] },
+      "insercao": { "t": "Processo mastoide do temporal.", "o": ["temporal_bone"] },
+      "nervos": ["acessorio"],
+      "acao": "Gira a cabeça para o lado oposto.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "digastrico", "tipo": "musculo", "nome": "Digástrico", "en": "Digastric",
+      "ids": ["anterior_belly_of_digastric_muscle", "posterior_belly_of_digastric_muscle", "intermediate_tendon_of_digastric_muscle"], "regiao": "coluna", "grupo": "supra-hioideos",
+      "origem": { "t": "Ventre anterior na mandíbula; ventre posterior na incisura mastóidea do temporal.", "o": ["mandible", "temporal_bone"] },
+      "insercao": { "t": "Corpo do osso hioide, pelo tendão intermédio.", "o": ["hyoid_bone"] },
+      "nervos": ["milo-hioideo", "facial"],
+      "acao": "Eleva o hioide e abaixa a mandíbula.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado",
+      "notas": "Ventre anterior pelo nervo milo-hióideo (NC V); ventre posterior pelo nervo facial (NC VII)."
+    },
+    {
+      "chave": "milo-hioideo-musculo", "tipo": "musculo", "nome": "Milo-hióideo", "en": "Mylohyoid",
+      "ids": ["mylohyoid_muscle"], "regiao": "coluna", "grupo": "supra-hioideos",
+      "origem": { "t": "Face interna da mandíbula.", "o": ["mandible"] },
+      "insercao": { "t": "Rafe milo-hióidea e osso hioide.", "o": ["hyoid_bone"] },
+      "nervos": ["milo-hioideo"],
+      "acao": "Eleva o hioide e abaixa a mandíbula.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "estilo-hioideo", "tipo": "musculo", "nome": "Estilo-hióideo", "en": "Stylohyoid",
+      "ids": ["stylohyoid_muscle"], "regiao": "coluna", "grupo": "supra-hioideos",
+      "origem": { "t": "Processo estiloide do temporal.", "o": ["temporal_bone"] },
+      "insercao": { "t": "Corpo do osso hioide.", "o": ["hyoid_bone"] },
+      "nervos": ["facial"],
+      "acao": "Eleva o hioide.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "genio-hioideo", "tipo": "musculo", "nome": "Gênio-hióideo", "en": "Geniohyoid",
+      "ids": ["geniohyoid_muscle"], "regiao": "coluna", "grupo": "supra-hioideos",
+      "origem": { "t": "Espinha geniana da mandíbula.", "o": ["mandible"] },
+      "insercao": { "t": "Corpo do osso hioide.", "o": ["hyoid_bone"] },
+      "nervos": ["hipoglosso"],
+      "acao": "Eleva o hioide.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado",
+      "notas": "Fibras de C1 que seguem junto com o nervo hipoglosso (NC XII)."
+    },
+    {
+      "chave": "esterno-hioideo", "tipo": "musculo", "nome": "Esterno-hióideo", "en": "Sternohyoid",
+      "ids": ["sternohyoid_muscle"], "regiao": "coluna", "grupo": "infra-hioideos",
+      "origem": { "t": "Manúbrio do esterno e clavícula.", "o": ["manubrium_of_sternum"] },
+      "insercao": { "t": "Corpo do osso hioide.", "o": ["hyoid_bone"] },
+      "nervos": ["alca-cervical"],
+      "acao": "Abaixa o hioide.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "omo-hioideo", "tipo": "musculo", "nome": "Omo-hióideo", "en": "Omohyoid",
+      "ids": ["omohyoid_muscle"], "regiao": "coluna", "grupo": "infra-hioideos",
+      "origem": { "t": "Incisura da escápula (supraescapular).", "m": ["scapula:Scapular notch"] },
+      "insercao": { "t": "Corpo do osso hioide.", "o": ["hyoid_bone"] },
+      "nervos": ["alca-cervical"],
+      "acao": "Abaixa o hioide.",
+      "fonte": [{ "l": "netter-ao2", "p": [91, 148] }], "status": "verificado"
+    },
+    {
+      "chave": "tireo-hioideo", "tipo": "musculo", "nome": "Tíreo-hióideo", "en": "Thyrohyoid",
+      "ids": ["thyrohyoid_muscle"], "regiao": "coluna", "grupo": "infra-hioideos",
+      "origem": { "t": "Cartilagem tireóidea." },
+      "insercao": { "t": "Corno maior do osso hioide.", "o": ["hyoid_bone"] },
+      "nervos": ["hipoglosso"],
+      "acao": "Abaixa o hioide e a laringe.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado",
+      "notas": "Fibras de C1 que seguem junto com o nervo hipoglosso (NC XII)."
+    },
+    {
+      "chave": "esternotireoideo", "tipo": "musculo", "nome": "Esternotireóideo", "en": "Sternothyroid",
+      "ids": ["sternothyroid_muscle"], "regiao": "coluna", "grupo": "infra-hioideos",
+      "origem": { "t": "Manúbrio do esterno.", "o": ["manubrium_of_sternum"] },
+      "insercao": { "t": "Cartilagem tireóidea." },
+      "nervos": ["alca-cervical"],
+      "acao": "Abaixa e retrai o hioide e a laringe.",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "escaleno-anterior", "tipo": "musculo", "nome": "Escaleno anterior", "en": "Scalenus anterior",
+      "ids": ["scalenus_anterior_muscle"], "regiao": "coluna", "grupo": "escalenos",
+      "origem": { "t": "Processos transversos de C III a C VI.", "o": ["C3-C6"] },
+      "insercao": { "t": "Primeira costela.", "o": ["first_rib"] },
+      "nervos": ["raizes-cervicais"],
+      "acao": "Inclina o pescoço para o lado e eleva a primeira costela.",
+      "relacoes": ["As raízes do plexo braquial saem entre os escalenos anterior e médio, junto com a artéria subclávia."],
+      "fonte": [{ "l": "netter-ao2", "p": [92, 156] }], "status": "verificado"
+    },
+    {
+      "chave": "escaleno-medio", "tipo": "musculo", "nome": "Escaleno médio", "en": "Scalenus medius",
+      "ids": ["scalenus_medius_muscle"], "regiao": "coluna", "grupo": "escalenos",
+      "origem": { "t": "Processos transversos de C II a C VII.", "o": ["C2-C7"] },
+      "insercao": { "t": "Primeira costela.", "o": ["first_rib"] },
+      "nervos": ["raizes-cervicais"],
+      "acao": "Inclina o pescoço para o lado e eleva a primeira costela.",
+      "relacoes": ["É perfurado pelo nervo dorsal da escápula.", "As raízes do plexo braquial saem entre ele e o escaleno anterior."],
+      "fonte": [{ "l": "netter-ao2", "p": [92, 153, 156] }], "status": "verificado"
+    },
+    {
+      "chave": "escaleno-posterior", "tipo": "musculo", "nome": "Escaleno posterior", "en": "Scalenus posterior",
+      "ids": ["scalenus_posterior_muscle"], "regiao": "coluna", "grupo": "escalenos",
+      "origem": { "t": "Processos transversos de C IV a C VI.", "o": ["C4-C6"] },
+      "insercao": { "t": "Segunda costela.", "o": ["second_rib"] },
+      "nervos": ["raizes-cervicais"],
+      "acao": "Inclina o pescoço para o lado e eleva a segunda costela.",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "reto-posterior-maior-da-cabeca", "tipo": "musculo", "nome": "Reto posterior maior da cabeça", "en": "Rectus capitis posterior major",
+      "ids": ["rectus_posterior_major_capitis_muscle"], "regiao": "coluna", "grupo": "suboccipitais",
+      "origem": { "t": "Processo espinhoso do áxis.", "o": ["axis_c2"] },
+      "insercao": { "t": "Linha nucal inferior do occipital.", "m": ["occipital_bone:Inferior nuchal line"] },
+      "nervos": ["suboccipital"],
+      "acao": "Estende, gira e inclina a cabeça para o lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "reto-posterior-menor-da-cabeca", "tipo": "musculo", "nome": "Reto posterior menor da cabeça", "en": "Rectus capitis posterior minor",
+      "ids": ["rectus_posterior_minor_capitis_muscle"], "regiao": "coluna", "grupo": "suboccipitais",
+      "origem": { "t": "Tubérculo posterior do atlas.", "m": ["atlas_c1:Posterior tubercle of atlas"] },
+      "insercao": { "t": "Osso occipital.", "o": ["occipital_bone"] },
+      "nervos": ["suboccipital"],
+      "acao": "Estende a cabeça e a inclina para o lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "obliquo-superior-da-cabeca", "tipo": "musculo", "nome": "Oblíquo superior da cabeça", "en": "Obliquus capitis superior",
+      "ids": ["obliquus_superior_capitis_muscle"], "regiao": "coluna", "grupo": "suboccipitais",
+      "origem": { "t": "Processo transverso do atlas.", "o": ["atlas_c1"] },
+      "insercao": { "t": "Osso occipital.", "o": ["occipital_bone"] },
+      "nervos": ["suboccipital"],
+      "acao": "Estende, gira e inclina a cabeça para o lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "obliquo-inferior-da-cabeca", "tipo": "musculo", "nome": "Oblíquo inferior da cabeça", "en": "Obliquus capitis inferior",
+      "ids": ["obliquus_inferior_capitis_muscle"], "regiao": "coluna", "grupo": "suboccipitais",
+      "origem": { "t": "Processo espinhoso do áxis.", "o": ["axis_c2"] },
+      "insercao": { "t": "Processo transverso do atlas.", "o": ["atlas_c1"] },
+      "nervos": ["suboccipital"],
+      "acao": "Estende e gira a cabeça para o lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "serratil-posterior-superior", "tipo": "musculo", "nome": "Serrátil posterior superior", "en": "Serratus posterior superior",
+      "ids": ["serratus_posterior_superior_muscle"], "regiao": "coluna", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos espinhosos de C VII a T III.", "o": ["C7-T3"] },
+      "insercao": { "t": "Margens superiores da 2ª à 5ª costela.", "o": ["costelas:2-5"] },
+      "nervos": ["intercostais"],
+      "acao": "Eleva as costelas.",
+      "fonte": [{ "l": "netter-ao2", "p": [93] }], "status": "verificado",
+      "notas": "Nervos intercostais de T1 a T4."
+    },
+    {
+      "chave": "serratil-posterior-inferior", "tipo": "musculo", "nome": "Serrátil posterior inferior", "en": "Serratus posterior inferior",
+      "ids": ["serratus_posterior_inferior_muscle"], "regiao": "coluna", "grupo": "dorso-extrinseco",
+      "origem": { "t": "Processos espinhosos de T XI a L III.", "o": ["T11-L3"] },
+      "insercao": { "t": "Margens inferiores da 9ª à 12ª costela.", "o": ["costelas:9-12"] },
+      "nervos": ["intercostais"],
+      "acao": "Abaixa as costelas.",
+      "fonte": [{ "l": "netter-ao2", "p": [93] }], "status": "verificado",
+      "notas": "Nervos intercostais de T9 a T12."
+    },
+    {
+      "chave": "esplenio-da-cabeca", "tipo": "musculo", "nome": "Esplênio da cabeça", "en": "Splenius capitis",
+      "ids": ["splenius_capitis_muscle"], "regiao": "coluna", "grupo": "espinotransversais",
+      "origem": { "t": "Ligamento nucal." },
+      "insercao": { "t": "Processo mastoide e linha nucal.", "o": ["temporal_bone", "occipital_bone"] },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclina o pescoço e gira a cabeça para o mesmo lado da contração.",
+      "fonte": [{ "l": "netter-ao2", "p": [94] }], "status": "verificado",
+      "notas": "Ramos posteriores dos nervos espinais cervicais inferiores."
+    },
+    {
+      "chave": "esplenio-do-pescoco", "tipo": "musculo", "nome": "Esplênio do pescoço", "en": "Splenius cervicis",
+      "ids": ["splenius_colli_muscle"], "regiao": "coluna", "grupo": "espinotransversais",
+      "origem": { "t": "Processos espinhosos de T I a T VI.", "o": ["T1-T6"] },
+      "insercao": { "t": "Processos transversos de C I a C IV.", "o": ["C1-C4"] },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclina o pescoço e gira a cabeça para o mesmo lado da contração.",
+      "fonte": [{ "l": "netter-ao2", "p": [94] }], "status": "verificado"
+    },
+    {
+      "chave": "iliocostal", "tipo": "musculo", "nome": "Iliocostal", "en": "Iliocostalis",
+      "ids": ["iliocostalis_colli_muscle", "iliocostalis_thoracis_muscle", "iliocostalis_lumborum_muscle"], "regiao": "coluna", "grupo": "eretor-da-espinha",
+      "origem": { "t": "Origem comum do eretor da espinha: sacro, crista ilíaca e processos espinhosos lombares.", "m": ["hip_bone:Iliac crest"], "o": ["sacrum"] },
+      "insercao": { "t": "Costelas." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclinação lateral e extensão da coluna e da cabeça, para o mesmo lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [54, 94] }], "status": "verificado",
+      "notas": "Parte mais lateral do eretor da espinha; tem partes do lombo, do tórax e do pescoço.",
+      "clinica": "O uso excessivo e o espasmo do eretor da espinha são causas comuns de lombalgia."
+    },
+    {
+      "chave": "longuissimo", "tipo": "musculo", "nome": "Longuíssimo", "en": "Longissimus",
+      "ids": ["longissimus_capitis_muscle", "longissimus_colli_muscle", "longissimus_thoracis_muscle"], "regiao": "coluna", "grupo": "eretor-da-espinha",
+      "origem": { "t": "Origem comum do eretor da espinha: sacro, crista ilíaca e processos espinhosos lombares.", "m": ["hip_bone:Iliac crest"], "o": ["sacrum"] },
+      "insercao": { "t": "Processos das vértebras torácicas e cervicais e processo mastoide.", "o": ["temporal_bone"] },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclinação lateral e extensão da coluna e da cabeça, para o mesmo lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [94] }], "status": "verificado"
+    },
+    {
+      "chave": "espinal", "tipo": "musculo", "nome": "Espinal", "en": "Spinalis",
+      "ids": ["spinalis_capitis_muscle", "spinalis_colli_muscle", "spinalis_thoracis_muscle"], "regiao": "coluna", "grupo": "eretor-da-espinha",
+      "origem": { "t": "Origem comum do eretor da espinha: sacro, crista ilíaca e processos espinhosos lombares." },
+      "insercao": { "t": "Processos espinhosos das vértebras torácicas." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclinação lateral e extensão da coluna, para o mesmo lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [94] }], "status": "verificado",
+      "notas": "Parte mais medial do eretor da espinha."
+    },
+    {
+      "chave": "semiespinal", "tipo": "musculo", "nome": "Semiespinal", "en": "Semispinalis",
+      "ids": ["semispinalis_colli_muscle", "semispinalis_thoracis_muscle"], "regiao": "coluna", "grupo": "transversoespinais",
+      "origem": { "t": "Processos transversos." },
+      "insercao": { "t": "Processos espinhosos; a parte da cabeça vai à linha nucal." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Estende a cabeça e a coluna e gira para o lado oposto.",
+      "fonte": [{ "l": "netter-ao2", "p": [95] }], "status": "verificado",
+      "notas": "O semiespinal da cabeça (processos transversos de T I a T VI até a linha nucal) não tem malha própria no modelo."
+    },
+    {
+      "chave": "multifidos", "tipo": "musculo", "nome": "Multífidos", "en": "Multifidus",
+      "ids": ["multifidus_colli_muscle", "multifidus_thoracis_muscle", "multifidus_lumborum_muscle"], "regiao": "coluna", "grupo": "transversoespinais",
+      "origem": { "t": "Processos transversos (de C II a S IV)." },
+      "insercao": { "t": "Processos espinhosos." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclinação lateral e rotação para o lado oposto.",
+      "fonte": [{ "l": "netter-ao2", "p": [95] }], "status": "verificado"
+    },
+    {
+      "chave": "rotadores", "tipo": "musculo", "nome": "Rotadores", "en": "Rotatores",
+      "ids": ["rotatores"], "regiao": "coluna", "grupo": "transversoespinais",
+      "origem": { "t": "Processos transversos." },
+      "insercao": { "t": "Processo espinhoso da vértebra de cima (um ou dois níveis acima)." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Giram a vértebra de cima para o lado oposto.",
+      "fonte": [{ "l": "netter-ao2", "p": [95] }], "status": "verificado"
+    },
+    {
+      "chave": "levantadores-das-costelas", "tipo": "musculo", "nome": "Levantadores das costelas", "en": "Levatores costarum",
+      "ids": ["levatores_breves_costarum", "levatores_longi_costarum"], "regiao": "coluna", "grupo": "transversoespinais",
+      "origem": { "t": "Processos transversos." },
+      "insercao": { "t": "Curtos: costela logo abaixo; longos: duas costelas abaixo." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Elevam as costelas na inspiração.",
+      "fonte": [{ "l": "netter-ao2", "p": [95] }], "status": "verificado"
+    },
+    {
+      "chave": "interespinais", "tipo": "musculo", "nome": "Interespinais", "en": "Interspinales",
+      "ids": ["interspinales_colli_muscles", "interspinales_thoracis_muscles", "interspinales_lumborum_muscles"], "regiao": "coluna", "grupo": "transversoespinais",
+      "origem": { "t": "Processo espinhoso." },
+      "insercao": { "t": "Processo espinhoso da vértebra de cima." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Estendem a coluna.",
+      "fonte": [{ "l": "netter-ao2", "p": [95] }], "status": "verificado"
+    },
+    {
+      "chave": "intertransversarios", "tipo": "musculo", "nome": "Intertransversários", "en": "Intertransversarii",
+      "ids": ["dorsal_parts_of_lateral_intertransversarii_lumborum_muscles", "ventral_parts_of_lateral_intertransversarii_lumborum_muscles"], "regiao": "coluna", "grupo": "transversoespinais",
+      "origem": { "t": "Processo transverso." },
+      "insercao": { "t": "Processo transverso da vértebra de cima." },
+      "nervos": ["ramos-posteriores"],
+      "acao": "Inclinam a coluna para o lado.",
+      "fonte": [{ "l": "netter-ao2", "p": [95] }], "status": "verificado"
+    },
+    {
+      "chave": "facial", "tipo": "nervo", "nome": "Nervo facial (NC VII)", "en": "Facial nerve",
+      "ids": ["facial_nerve_vii"], "regiao": "coluna",
+      "raizes": "Nervo craniano VII",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "milo-hioideo", "tipo": "nervo", "nome": "Nervo milo-hióideo", "en": "Nerve to mylohyoid",
+      "ids": ["nerve_to_mylohyoid_muscle"], "regiao": "coluna",
+      "raizes": "Ramo do nervo trigêmeo (NC V)",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "hipoglosso", "tipo": "nervo", "nome": "Nervo hipoglosso (NC XII)", "en": "Hypoglossal nerve",
+      "ids": ["hypoglossal_nerve_xii"], "regiao": "coluna",
+      "raizes": "Nervo craniano XII; leva fibras de C1 para o gênio-hióideo e o tíreo-hióideo",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "alca-cervical", "tipo": "nervo", "nome": "Alça cervical", "en": "Ansa cervicalis",
+      "ids": [], "regiao": "coluna",
+      "raizes": "C1–C3",
+      "fonte": [{ "l": "netter-ao2", "p": [91] }], "status": "verificado"
+    },
+    {
+      "chave": "raizes-cervicais", "tipo": "nervo", "nome": "Ramos anteriores dos nervos espinais cervicais", "en": "Cervical spinal nerves (anterior rami)",
+      "ids": [], "regiao": "coluna",
+      "raizes": "C5–C8 para os escalenos",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "suboccipital", "tipo": "nervo", "nome": "Nervo suboccipital", "en": "Suboccipital nerve",
+      "ids": [], "regiao": "coluna",
+      "raizes": "Ramo posterior de C1",
+      "fonte": [{ "l": "netter-ao2", "p": [92] }], "status": "verificado"
+    },
+    {
+      "chave": "ramos-posteriores", "tipo": "nervo", "nome": "Ramos posteriores dos nervos espinais", "en": "Posterior rami of spinal nerves",
+      "ids": [], "regiao": "coluna",
+      "raizes": "Nervo espinal de cada nível",
+      "trajeto": "Cada nervo espinal se divide logo após o forame intervertebral; o ramo posterior segue para a musculatura própria do dorso.",
+      "fonte": [{ "l": "netter-ao2", "p": [94, 95, 98] }], "status": "verificado"
+    },
+    {
+      "chave": "intercostais", "tipo": "nervo", "nome": "Nervos intercostais", "en": "Intercostal nerves",
+      "ids": ["intercostal_nerves"], "regiao": "coluna",
+      "raizes": "Ramos anteriores dos nervos espinais torácicos",
+      "fonte": [{ "l": "netter-ao2", "p": [93] }], "status": "verificado"
+    }
+  ]
+}

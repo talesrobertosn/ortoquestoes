@@ -1,0 +1,122 @@
+{
+  "lote": "03-braco",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [200, 201, 202, 203, 204, 205],
+  "registros": [
+    {
+      "chave": "coracobraquial", "tipo": "musculo", "nome": "Coracobraquial", "en": "Coracobrachialis",
+      "ids": ["coracobrachialis_muscle"], "regiao": "braco", "grupo": "braco-anterior",
+      "origem": { "t": "Processo coracoide da escápula.", "m": ["scapula:Coracoid process"] },
+      "insercao": { "t": "Terço médio do úmero, na face medial.", "m": ["humerus:Medial border of humerus"] },
+      "nervos": ["musculocutaneo"],
+      "acao": "Flexão e adução do braço.",
+      "clinica": "Faz parte do tendão conjunto, junto com a cabeça curta do bíceps. O nervo musculocutâneo o perfura cerca de 6 a 8 cm abaixo do processo coracoide; a tração forte do tendão conjunto pode lesar o nervo.",
+      "fonte": [{ "l": "netter-ao2", "p": [148, 200, 201, 205] }], "status": "verificado",
+      "notas": "O Netter diz 'porção média do úmero'; a face medial vem da prancha da mesma página."
+    },
+    {
+      "chave": "braquial", "tipo": "musculo", "nome": "Braquial", "en": "Brachialis",
+      "ids": ["brachialis_muscle"], "regiao": "braco", "grupo": "braco-anterior",
+      "origem": { "t": "Face anterior da metade distal do úmero.", "m": ["humerus:Anterolateral surface of humerus", "humerus:Anteromedial surface of humerus"] },
+      "insercao": { "t": "Tuberosidade da ulna, na parte proximal da ulna.", "m": ["ulna:Tuberosity of ulna"] },
+      "nervos": ["musculocutaneo", "radial"],
+      "acao": "Flexão do antebraço (cotovelo).",
+      "clinica": "Tem inervação dupla: a parte medial pelo musculocutâneo e a lateral pelo radial. Por isso é dividido longitudinalmente no acesso anterior ao úmero.",
+      "fonte": [{ "l": "netter-ao2", "p": [200, 204, 205] }], "status": "verificado"
+    },
+    {
+      "chave": "biceps-braquial", "tipo": "musculo", "nome": "Bíceps braquial", "en": "Biceps brachii",
+      "ids": ["long_head_of_biceps_brachii", "short_head_of_biceps_brachii"], "regiao": "braco", "grupo": "braco-anterior",
+      "origem": { "t": "Cabeça longa no tubérculo supraglenoidal; cabeça curta no processo coracoide.", "m": ["scapula:Supraglenoid tubercle", "scapula:Coracoid process"] },
+      "insercao": { "t": "Tuberosidade do rádio (e aponeurose bicipital).", "m": ["radius:Radial tuberosity"] },
+      "nervos": ["musculocutaneo"],
+      "acao": "Supinação e flexão do antebraço.",
+      "clinica": "A ruptura da cabeça longa produz o 'sinal do Popeye'. A cabeça curta faz parte do tendão conjunto com o coracobraquial.",
+      "relacoes": ["O nervo mediano entra no antebraço por baixo da aponeurose bicipital, junto com a artéria braquial."],
+      "fonte": [{ "l": "netter-ao2", "p": [148, 200, 203] }], "status": "verificado"
+    },
+    {
+      "chave": "triceps-braquial", "tipo": "musculo", "nome": "Tríceps braquial", "en": "Triceps brachii",
+      "ids": ["long_head_of_triceps_brachii", "lateral_head_of_triceps_brachii", "medial_head_of_triceps_brachii"], "regiao": "braco", "grupo": "braco-posterior",
+      "origem": { "t": "Cabeça longa no tubérculo infraglenoidal; cabeça lateral na face posterior da parte proximal do úmero; cabeça medial na face posterior da parte distal do úmero.", "m": ["scapula:Infraglenoid tubercle", "humerus:Posterior surface of humerus"] },
+      "insercao": { "t": "Olécrano da ulna.", "m": ["ulna:Olecranon"] },
+      "nervos": ["radial"],
+      "acao": "Extensão do cotovelo.",
+      "clinica": "A cabeça longa delimita os espaços quadrangular e triangular e o intervalo triangular. A cabeça lateral é a margem do acesso lateral; a medial forma um plano muscular no acesso posterior ao úmero.",
+      "relacoes": ["Intervalo triangular: entre a cabeça longa, a cabeça lateral e o redondo maior; por ele passam o nervo radial e a artéria braquial profunda."],
+      "fonte": [{ "l": "netter-ao2", "p": [148, 149, 150, 201, 204] }], "status": "verificado",
+      "notas": "O Netter chama a cabeça lateral de 'cabeça curta' na tabela de espaços."
+    },
+    {
+      "chave": "musculocutaneo", "tipo": "nervo", "nome": "Nervo musculocutâneo", "en": "Musculocutaneous nerve",
+      "ids": ["musculocutaneous_nerve"], "regiao": "braco",
+      "raizes": "C5–C7 (fascículo lateral)",
+      "trajeto": "Perfura o coracobraquial cerca de 6 a 8 cm abaixo do processo coracoide e desce entre o bíceps e o braquial, inervando os dois. No cotovelo, continua como nervo cutâneo lateral do antebraço, entre o bíceps e o braquial.",
+      "sensitivo": "Nenhum no braço; no antebraço, pelo nervo cutâneo lateral do antebraço.",
+      "clinica": "A retração forte do tendão conjunto no acesso anterior ao ombro pode lesar o nervo.",
+      "ver": ["cutaneo-lateral-do-antebraco"],
+      "fonte": [{ "l": "netter-ao2", "p": [201, 205] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-lateral-do-antebraco", "tipo": "nervo", "nome": "Nervo cutâneo lateral do antebraço", "en": "Lateral antebrachial cutaneous nerve",
+      "ids": ["lateral_antebrachial_cutaneous_nerve"], "regiao": "braco",
+      "raizes": "Ramo terminal sensitivo do nervo musculocutâneo",
+      "trajeto": "Emerge entre o bíceps e o braquial no cotovelo e segue pela face lateral do antebraço.",
+      "sensitivo": "Pele da face lateral do antebraço.",
+      "ver": ["musculocutaneo"],
+      "fonte": [{ "l": "netter-ao2", "p": [201, 202, 205] }], "status": "verificado"
+    },
+    {
+      "chave": "radial", "tipo": "nervo", "nome": "Nervo radial", "en": "Radial nerve",
+      "ids": ["radial_nerve", "muscular_branches_of_radial_nerve"], "regiao": "braco",
+      "raizes": "C5–T1 (fascículo posterior)",
+      "trajeto": "Começa medial ao úmero e passa para trás pelo sulco do nervo radial, com a artéria braquial profunda; no terço distal fica entre o braquiorradial e o braquial e se divide em ramo profundo (motor, interósseo posterior) e superficial (sensitivo).",
+      "sensitivo": "Face posterior do braço (nervo cutâneo posterior do braço) e face lateral (nervo cutâneo lateral inferior do braço).",
+      "clinica": "Pode ficar preso numa fratura da diáfise do úmero, sobretudo no terço distal. No acesso posterior ao úmero, fica logo abaixo do redondo maior.",
+      "ver": ["ramo-profundo-do-radial", "ramo-superficial-do-radial"],
+      "fonte": [{ "l": "netter-ao2", "p": [150, 202, 203, 204] }], "status": "verificado"
+    },
+    {
+      "chave": "mediano", "tipo": "nervo", "nome": "Nervo mediano", "en": "Median nerve",
+      "ids": ["median_nerve", "muscular_branches_of_median_nerve"], "regiao": "braco",
+      "raizes": "C(5)6–T1 (raízes dos fascículos lateral e medial)",
+      "trajeto": "No braço, corre pela face medial, no compartimento anterior, inicialmente lateral à artéria braquial; cruza por cima dela e fica medial; entra no antebraço sob a aponeurose bicipital.",
+      "sensitivo": "Nenhum no braço.",
+      "fonte": [{ "l": "netter-ao2", "p": [202, 203] }], "status": "verificado",
+      "notas": "Não inerva músculos no braço; os ramos motores estão nos capítulos do antebraço e da mão."
+    },
+    {
+      "chave": "ulnar", "tipo": "nervo", "nome": "Nervo ulnar", "en": "Ulnar nerve",
+      "ids": ["ulnar_nerve", "muscular_branches_of_ulnar_nerve"], "regiao": "braco",
+      "raizes": "C(7)8–T1 (fascículo medial)",
+      "trajeto": "Passa do compartimento anterior para o posterior do braço sobre o septo intermuscular medial, segue sob a arcada de Struthers junto à cabeça medial do tríceps e atravessa o túnel ulnar (cubital), atrás do epicôndilo medial do úmero.",
+      "sensitivo": "Nenhum no braço.",
+      "clinica": "No cotovelo, fica superficial no túnel ulnar, atrás do epicôndilo medial.",
+      "fonte": [{ "l": "netter-ao2", "p": [202, 205] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-medial-do-braco", "tipo": "nervo", "nome": "Nervo cutâneo medial do braço", "en": "Medial brachial cutaneous nerve",
+      "ids": ["medial_brachial_cutaneous_nerve"], "regiao": "braco",
+      "raizes": "C8–T1 (fascículo medial)",
+      "trajeto": "Une-se ao nervo intercostobraquial e corre sob a pele da face medial do braço.",
+      "sensitivo": "Face medial do braço.",
+      "fonte": [{ "l": "netter-ao2", "p": [205] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-lateral-superior-do-braco", "tipo": "nervo", "nome": "Nervo cutâneo lateral superior do braço", "en": "Superior lateral brachial cutaneous nerve",
+      "ids": ["superior_lateral_brachial_cutaneous_nerve"], "regiao": "braco",
+      "raizes": "Ramo do nervo axilar",
+      "sensitivo": "Face lateral da parte proximal do braço.",
+      "ver": ["axilar"],
+      "fonte": [{ "l": "netter-ao2", "p": [155] }], "status": "verificado"
+    },
+    {
+      "chave": "cutaneo-lateral-inferior-do-braco", "tipo": "nervo", "nome": "Nervo cutâneo lateral inferior do braço", "en": "Inferior lateral brachial cutaneous nerve",
+      "ids": ["inferior_lateral_brachial_cutaneous_nerve"], "regiao": "braco",
+      "raizes": "Ramo do nervo radial",
+      "sensitivo": "Face lateral do braço.",
+      "ver": ["radial"],
+      "fonte": [{ "l": "netter-ao2", "p": [204] }], "status": "verificado"
+    }
+  ]
+}

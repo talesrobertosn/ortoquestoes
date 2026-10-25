@@ -33,3 +33,9 @@ vêm do pacote npm `three`.
 
 Este material é educativo. Não é ferramenta diagnóstica nem cirúrgica e não representa todas as
 estruturas ou variações anatômicas humanas.
+
+## Banco anatômico (anatomia.json)
+
+Texto próprio do Orto Questões. Os fatos anatômicos (origem, inserção, inervação, ação, fixações e funções de
+ligamentos, trajeto de nervos) foram conferidos em Thompson JC, *Netter Atlas de Anatomia Ortopédica*, 2ª ed.
+(Elsevier, 2012), citado em cada ficha. Nenhum texto, tabela ou ilustração do livro foi reproduzido.
