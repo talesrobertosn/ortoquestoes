@@ -21635,46 +21635,127 @@
   "conferido": false
  },
  "pediatria-1084": {
-  "conceito": "A tabela 1-2 organiza a incidência de fraturas dos ossos longos: **rádio e ulna, 59%**; úmero, 21%; tíbia e fíbula, 15%; fêmur, 5%. O predomínio do antebraço acompanha a maior frequência global de fraturas do membro superior na criança e não significa que toda fratura do rádio seja distal ou que dispense localizar o segmento.\n\n**Por que esta questão foi criada.** A proporção de 59% é o principal número comparativo da tabela 1-2. É uma lacuna com cara de prova, pois a banca costuma explorar o \"mais frequente\" com distratores formados pelos outros ossos longos.",
-  "correta": "**A: rádio e ulna.** A dupla rádio e ulna responde por 59% das fraturas de ossos longos na tabela, muito acima dos demais grupos.",
+  "conceito": "Se a pergunta é sobre **ossos longos**, pense primeiro no antebraço: **rádio e ulna representam 59%** na tabela resumida pelo capítulo. A alternativa A identifica o grupo que lidera a frequência; não está dizendo qual fratura é mais grave nem qual segmento do rádio foi atingido.\n\nA comparação precisa manter o mesmo denominador. Entre essas fraturas de ossos longos, o úmero participa com 21%, tíbia e fíbula com 15% e fêmur com 5%. São grupos anatômicos mutuamente comparados na mesma tabela, e não percentuais de todas as lesões pediátricas ou de pacientes de um centro de politrauma (Rockwood e Wilkins, 10ª ed., cap. 1,“Os ossos longos”).\n\n**Exposição ajuda a entender a distribuição.** Nas quedas e atividades recreativas, a criança usa os membros superiores para proteger-se; no playground, barras e estruturas de escalada também os expõem à carga. Isso explica o predomínio sem transformar o antebraço em osso biologicamente fraco. Já o fêmur chama atenção pela energia de certos acidentes, mas gravidade e frequência são perguntas diferentes.\n\nQuando o enunciado pedir o **local anatômico** mais comum, a resposta fica mais específica: rádio distal. Agrupar rádio e ulna é correto para esta tabela; transportar a mesma dupla para qualquer pergunta sobre sítio de fratura perde essa distinção.\n\n**Por que esta questão foi criada.** A tabela 1-2 oferece uma comparação objetiva com chance de cobrança, separando frequência e gravidade; não foi localizada questão oficial direta desse capítulo.\n\n> **Na prova:** ossos longos: rádio e ulna; sítio anatômico: rádio distal.",
+  "correta": "**A: rádio e ulna.** O grupo responde por 59% da tabela e supera todos os demais, refletindo o predomínio das fraturas do membro superior.",
   "incorretas": {
-   "B": "**Úmero e fêmur não formam o grupo predominante.** O úmero aparece isoladamente com 21%, e o fêmur é o menos frequente, com 5%.",
-   "C": "**Tíbia e fíbula são importantes no membro inferior, mas ficam atrás.** A tabela atribui 15% a esse grupo, menor que o valor do úmero e muito menor que o do antebraço.",
-   "D": "**A combinação inverte a hierarquia da tabela.** O fêmur tem 5% e a tíbia e fíbula 15%; juntos não representam a categoria mais frequente descrita."
+   "B": "**Reúne dois grupos que não lideram.** O úmero tem 21% e o fêmur 5%; mesmo somar esses valores não alcança os 59% de rádio e ulna. A tabela não os apresenta como uma dupla anatômica predominante.",
+   "C": "**É o grupo da perna, com 15%.** Esse valor fica abaixo dos 21% do úmero e dos 59% do antebraço. A importância clínica das lesões da perna não muda a comparação de incidências.",
+   "D": "**Mistura o fêmur com parte do grupo da perna.** O fêmur corresponde a 5%, enquanto os 15% agrupam tíbia e fíbula. Não se deve atribuir os 15% à tíbia isoladamente; mesmo o conjunto maior de todas essas fraturas do membro inferior fica abaixo do antebraço."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: O que fratura mais: osso, segmento e número; Comece pela causa: acidental, não acidental ou patológica."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "O que fratura mais: osso, segmento e número",
+      "Comece pela causa: acidental, não acidental ou patológica"
+     ],
+     "blocos": [
+      "o-que-fratura-mais-osso-segmento-e-numero-b169a25d",
+      "o-que-fratura-mais-osso-segmento-e-numero-a1071159",
+      "comece-pela-causa-acidental-nao-acidental-ou-pat-7bc46315",
+      "comece-pela-causa-acidental-nao-acidental-ou-pat-ae0845e3",
+      "o-que-fratura-mais-osso-segmento-e-numero-5f1732de"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "f4fe035fda9092f75916459f099f8e655246ad8fcd98d4545af145be37daafb7"
+    }
+   ],
+   "questaoSha256": "b2022c32ac26aa77d3b65150568875a49cbfd58c6b5aab9dbcff2e1e6784401a",
+   "comentarioSha256": "358102a7eac641bd2741ace46be62e62cc678cd1c4ca7bc7943dcb660b461f66"
+  }
  },
  "pediatria-1085": {
-  "conceito": "O capítulo diferencia os ossos longos dos **locais anatômicos**. Quando as séries passam a separar os segmentos, o local mais comum de fratura é o **rádio distal**. Depois aparecem mão, isto é, falanges e metacarpos, clavícula e úmero distal. A formulação da questão importa porque \"rádio\" e \"rádio distal\" não são sinônimos em epidemiologia.\n\n**Por que esta questão foi criada.** O capítulo destaca expressamente o rádio distal como o local mais frequente. É uma lacuna com cara de prova porque as alternativas trazem os quatro locais que o texto coloca na mesma lista.",
-  "correta": "**D: rádio distal.** É o sítio anatômico mais comum nas séries resumidas pelo capítulo.",
+  "conceito": "Quando você deixa de perguntar apenas “qual osso?” e passa a localizar o segmento, o **rádio distal** lidera as fraturas na criança. É a alternativa D. Mão, clavícula e úmero distal também são frequentes, mas vêm depois na lista do capítulo.\n\nA distinção evita comparar coisas diferentes. A tabela de ossos longos agrupa rádio e ulna; a distribuição por **região anatômica** separa punho, mão, clavícula e cotovelo. Assim, o predomínio do antebraço e a liderança do rádio distal são compatíveis, mas não são respostas intercambiáveis (Rockwood e Wilkins, 10ª ed., cap. 1,“O local anatômico”).\n\nO membro superior recebe cargas nas quedas e na proteção do corpo. Nas crianças, atividades e mecanismos mudam com a idade: antebraço distal tem pico tardio ligado a esporte e equipamentos, enquanto a supracondilar exemplifica pico precoce. Uma lesão ser muito típica de determinada idade não a transforma na mais frequente quando se reúne toda a população pediátrica.\n\nEssa frequência orienta a expectativa clínica, sem dispensar localizar dor e lesão nem permitir excluir outra fratura por ser menos comum.\n\n**Por que esta questão foi criada.** O ranking por região oferece distratores próximos e ensina a separar segmento anatômico de nome do osso, uma oportunidade de cobrança identificada no capítulo.\n\n> **Na prova:** o sítio mais frequente é o rádio distal.",
+  "correta": "**D: rádio distal.** É a região que lidera a distribuição por segmentos nas séries resumidas pelo capítulo, em vez do agrupamento mais amplo rádio/ulna.",
   "incorretas": {
-   "A": "**A clavícula é frequente, mas não lidera a lista.** Ela aparece depois do rádio distal e da mão quando os segmentos anatômicos são discriminados.",
-   "B": "**A mão vem logo entre os locais frequentes.** Falanges e metacarpos, porém, não ultrapassam o rádio distal no capítulo.",
-   "C": "**O úmero distal é um local clássico, sobretudo em certas idades.** Ainda assim, no panorama global de incidência, ele fica após o rádio distal, mão e clavícula."
+   "A": "**A clavícula é frequente, mas aparece depois do punho e da mão.** O capítulo também a situa num padrão etário bimodal; essa distribuição ao longo do crescimento não muda sua posição abaixo do rádio distal no ranking geral.",
+   "B": "**Mão reúne falanges e metacarpos.** É um grupo de lesões frequentes e aparece logo após o rádio distal. Reconhecer sua frequência não permite colocá-la à frente do sítio que lidera a lista.",
+   "C": "**Confunde uma lesão muito característica de certas idades com liderança global.** O úmero distal inclui a região da supracondilar, exemplo de pico precoce. Na comparação de todos os sítios, porém, está depois de rádio distal, mão e clavícula."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: O que fratura mais: osso, segmento e número; Idade, sexo e o desenho das curvas; Comece pela causa: acidental, não acidental ou patológica."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "O que fratura mais: osso, segmento e número",
+      "Idade, sexo e o desenho das curvas",
+      "Comece pela causa: acidental, não acidental ou patológica"
+     ],
+     "blocos": [
+      "o-que-fratura-mais-osso-segmento-e-numero-5f1732de",
+      "o-que-fratura-mais-osso-segmento-e-numero-faf96c3c",
+      "idade-sexo-e-o-desenho-das-curvas-8b407893",
+      "idade-sexo-e-o-desenho-das-curvas-3aafa1ab",
+      "comece-pela-causa-acidental-nao-acidental-ou-pat-7bc46315"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "cf412b1364a9a3e8ae7023fa9ef6a52c88f419b36417fc967487f8953aaf5c86"
+    }
+   ],
+   "questaoSha256": "922d67895e8a0ff1dab986aa60187bc8f59596bd45a53e684e3d4f18495f0a46",
+   "comentarioSha256": "5ceeb413d00d34a519ce4c84d9ce6681da3e1ae0b2f924da14c6af6dea279fe4"
+  }
  },
  "pediatria-1086": {
-  "conceito": "A figura 1-3 mostra picos etários diferentes: nos meninos, a incidência chega ao máximo aos **13 anos**; nas meninas, o pico é mais precoce, aos **12 anos**, e depois cai. O dado deve ser lido como padrão populacional, não como regra diagnóstica para uma criança individual.\n\n**Por que esta questão foi criada.** A diferença de um ano entre os picos é um dado objetivo da figura 1-3. É uma lacuna com cara de prova porque permite um par curto, no estilo de idade e sexo usado em epidemiologia.",
-  "correta": "**B: 13 e 12 anos.** A curva dos meninos atinge o pico aos 13 anos, enquanto a das meninas o atinge aos 12 anos.",
+  "conceito": "A curva de incidência atinge o pico **aos 13 anos nos meninos e aos 12 nas meninas**, nessa ordem. B mantém a associação correta entre idade e sexo. Memorizar somente “por volta da adolescência” não resolve a troca de um ano entre as alternativas.\n\nIncidência é uma medida populacional. O desenho da curva reflete mudanças de atividade, exposição e comportamento ao longo do crescimento; não significa que uma criança de outra idade tenha pouca chance de fraturar quando apresenta um mecanismo compatível. O resumo registra os picos descritos a partir da figura 1-3, sem que isso deva ser convertido em uma regra diagnóstica individual (Rockwood e Wilkins, 10ª ed., cap. 1,“O pico não é igual em meninos e meninas”).\n\nTambém não se deve confundir **idade do pico** com **razão entre os sexos**. A razão global de aproximadamente 1,5 menino para 1 menina, citada em várias séries, compara quantidades; as idades 13/12 localizam o máximo das curvas. A diferença entre os sexos muda com idade e atividade, e um dado não substitui o outro.\n\n**Por que esta questão foi criada.** O par de idades é uma informação objetiva do capítulo que permite testar a associação correta entre sexo e incidência, sem alegar uma questão oficial prévia.\n\n> **Na prova:** meninos 13, meninas 12; o pico feminino vem antes.",
+  "correta": "**B:13 e 12 anos.** O primeiro valor corresponde aos meninos; o segundo, às meninas. É o par descrito no resumo.",
   "incorretas": {
-   "A": "**O pico não ocorre tão cedo nos meninos.** A figura aponta 13 anos para eles; 12 anos é o pico feminino.",
-   "C": "**A alternativa troca os sexos.** O pico feminino é o mais precoce, não o masculino.",
-   "D": "**A idade feminina está superestimada.** Depois do pico aos 12 anos, a curva das meninas declina."
+   "A": "**Mantém o valor feminino, mas antecipa o masculino.** Aos meninos o resumo atribui 13, não 11 anos. A alternativa colocaria o pico masculino antes do feminino, invertendo a relação temporal descrita.",
+   "C": "**Troca a associação entre sexo e idade.** Usa os dois números corretos, mas oferece 12 para meninos e 13 para meninas. A ordem do enunciado é parte decisiva da resposta.",
+   "D": "**Mantém o valor masculino, mas atrasa o feminino.**14 anos não é o pico apresentado para as meninas; o valor indicado é 12. Não há um pico único comum aos dois sexos que permita esse deslocamento."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Idade, sexo e o desenho das curvas."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "Idade, sexo e o desenho das curvas"
+     ],
+     "blocos": [
+      "idade-sexo-e-o-desenho-das-curvas-b84deba0",
+      "idade-sexo-e-o-desenho-das-curvas-ba6e795e"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "7424a088628c0bf7df1b7886d7b8e79ca3d38081386a7ed729f01f12736e5762"
+    }
+   ],
+   "questaoSha256": "2280fa95b05d21cc8b539767cc26ae04c35db2576ec774041f756b4e1c5038d3",
+   "comentarioSha256": "86bf9d00c01bcafcfe6f5f3ece868ae512515ff6c90b659c7cbbe85ff9b10314"
+  }
  },
  "pediatria-1087": {
   "conceito": "A frequência de lesões fisárias varia entre as séries, mas o capítulo identifica a fratura fisária do **rádio distal** como a mais comum e informa **18%** de fechamento fisário precoce nesse local. Tíbia distal e fêmur distal entram no texto por suas complicações: na tíbia distal o fechamento precoce foi 13% e é maior no SALTER-HARRIS IV; no fêmur distal, a taxa total de complicações pode chegar a 40%, com parada fisária completa em 30%.\n\n**Por que esta questão foi criada.** O capítulo reúne três números que podem ser confundidos. É uma lacuna com cara de prova porque exige associar o local mais frequente ao seu próprio desfecho, sem transportar percentuais das físeis de maior risco.",
@@ -21691,74 +21772,195 @@
   "conferido": false
  },
  "pediatria-1088": {
-  "conceito": "O capítulo descreve três curvas epidemiológicas. Fraturas de pico tardio, como antebraço distal, falanges e úmero proximal, se relacionam a esporte e equipamentos. Padrões bimodais, como clavícula, fêmur e diáfises radioulnares, combinam trauma de menor energia no início da vida e mecanismos de maior energia na adolescência. Já o padrão de **pico precoce** tem a fratura supracondilar do úmero como exemplo clássico e se liga principalmente a quedas de alturas.\n\n**Por que esta questão foi criada.** A associação entre forma da curva, idade e mecanismo é uma síntese central da figura 1-4. É uma lacuna com cara de prova porque permite distratores verdadeiros, cada um pertencente a outra curva do próprio capítulo.",
-  "correta": "**C: úmero supracondilar após queda de altura.** É o exemplo clássico de pico precoce citado pelo capítulo, predominantemente relacionado a queda de níveis altos.",
+  "conceito": "O **pico precoce** tem como exemplo a **fratura supracondilar do úmero após queda de altura**, alternativa C. A pergunta cruza três informações: local da fratura, idade em que sua frequência aumenta e mecanismo predominante.\n\nHá três desenhos distintos. Um pico precoce concentra casos mais cedo; um tardio cresce com esporte e equipamentos; o padrão **bimodal** tem dois aumentos, um inicial com traumas de menor energia e outro na adolescência, com trânsito, recreação de maior energia e contato. Clavícula, fêmur e diáfises radioulnares são exemplos bimodais. Antebraço distal, falanges e úmero proximal exemplificam o tardio (Rockwood e Wilkins, 10ª ed., cap. 1,“Padrões precoce, tardio e bimodal”).\n\nPortanto, reconhecer um mecanismo possível não basta. Esporte de contato pode participar do pico tardio de uma curva bimodal; isso não torna toda a curva precoce. Da mesma forma, uma criança pequena pode fraturar o antebraço distal, apesar de o conjunto populacional ter pico tardio. Curva epidemiológica descreve predominância, não exclusividade.\n\n**Por que esta questão foi criada.** O capítulo permite comparar padrões etários usando exemplos verdadeiros de curvas diferentes, uma oportunidade de treinar mecanismo e população em conjunto.\n\n> **Na prova:** supracondilar: pico precoce; antebraço distal: tardio; clavícula/fêmur/diáfises radioulnares: bimodal.",
+  "correta": "**C: úmero supracondilar após queda de altura.** É a associação de lesão e mecanismo usada pelo capítulo como exemplo de pico precoce.",
   "incorretas": {
-   "A": "**A clavícula tem padrão bimodal.** O capítulo a associa a aumento inicial por trauma de menor energia e novo pico tardio com mecanismos de maior energia.",
-   "B": "**O fêmur também integra o grupo bimodal.** Trauma de maior energia na adolescência explica o pico tardio, mas não define o padrão precoce isolado.",
-   "D": "**O antebraço distal é exemplo de pico tardio.** O aumento acompanha atividades esportivas e recreacionais de idade escolar e adolescência."
+   "A": "**Aponta para o componente tardio de uma curva bimodal.** Na clavícula, o aumento inicial por menor energia é seguido por novo aumento na adolescência, com atividades de maior energia e contato. O exemplo oferecido não identifica a curva precoce isolada.",
+   "B": "**Seleciona alta energia no grupo bimodal do fêmur.** Esse mecanismo participa do aumento tardio na adolescência; o capítulo também descreve um componente precoce por menor energia. Confundir os dois apaga a característica bimodal.",
+   "D": "**O antebraço distal é exemplo de pico tardio.** Sua frequência acompanha esportes e equipamentos ao longo do crescimento. A associação com recreação é plausível, mas pertence a outra curva, não à supracondilar precoce."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Idade, sexo e o desenho das curvas."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "Idade, sexo e o desenho das curvas"
+     ],
+     "blocos": [
+      "idade-sexo-e-o-desenho-das-curvas-8b407893",
+      "idade-sexo-e-o-desenho-das-curvas-3aafa1ab"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "ae4de361db4988b0a430a95c826e7dd35c8934cebe73aceb1e6504db6e42d61d"
+    }
+   ],
+   "questaoSha256": "accfaa1d9ab9668cdbf3af2fd5958aaf523263e563707bfa1997cf8f8e4d27f4",
+   "comentarioSha256": "75047e08953958fcdafdfe44782dbb662b6977e3d8af278b04b3cd0edfbd7480"
+  }
  },
  "pediatria-1089": {
-  "conceito": "As fraturas pediátricas aumentam nos meses quentes porque cresce a exposição às atividades vigorosas fora da escola. No estudo citado pelo capítulo, o número médio de fraturas no verão foi **2,5 vezes** o observado no inverno. O texto também relaciona mais horas de sol a mais admissões, mas não transforma o clima em causa biológica isolada: ele é um marcador de oportunidade de exposição.\n\n**Por que esta questão foi criada.** O multiplicador sazonal é um número diretamente apresentado no capítulo e é útil para treinar a leitura de epidemiologia sem confundir associação ambiental com diagnóstico individual.",
-  "correta": "**D: 2,5 vezes maior que no inverno.** Esse é o valor apresentado para a média de fraturas no verão em comparação ao inverno.",
+  "conceito": "No estudo resumido pelo capítulo, a média de fraturas no verão foi **2,5 vezes a do inverno**, alternativa D. O ponto clínico por trás do número é a mudança de **exposição**: mais tempo ao ar livre e mais atividade vigorosa criam mais oportunidades de queda.\n\nA estação é um marcador do ambiente em que a criança se movimenta. Mais horas de sol se associaram a mais admissões, mas essa observação não demonstra que o sol tenha enfraquecido diretamente o osso. A prevenção se dirige às atividades e aos lugares de risco, e não a uma suposta alteração óssea instantânea determinada pelo clima (Rockwood e Wilkins, 10ª ed., cap. 1,“Ambiente: a estação muda a oportunidade de cair”).\n\nA comparação também deve manter o denominador: trata-se de **média de fraturas no verão dividida pela média no inverno** na série citada. Não é uma incidência universal para todos os locais, anos ou modalidades esportivas. O próprio capítulo mostra horários de pico diferentes em populações diferentes, reforçando a influência do contexto.\n\n**Por que esta questão foi criada.** O multiplicador sazonal testa um dado objetivo e a interpretação correta da associação entre ambiente e trauma.\n\n> **Na prova:** verão/inverno:2,5 na série citada; exposição não é fragilidade biológica.",
+  "correta": "**D:2,5 vezes maior que no inverno.** A formulação da alternativa corresponde à razão verão/inverno de 2,5 descrita no resumo.",
   "incorretas": {
-   "A": "**A incidência não é estável entre as estações.** O capítulo descreve aumento consistente nos meses de maior atividade ao ar livre.",
-   "B": "**O número subestima o efeito relatado.** Uma vez e meia não é o multiplicador informado pelo estudo citado.",
-   "C": "**Dobrar é uma aproximação plausível, mas imprecisa.** O capítulo especifica 2,5 vezes, e a questão pede o valor reportado."
+   "A": "**Supõe ausência de sazonalidade.** Uma razão igual a 1 significaria a mesma média nas duas estações. O aumento relatado acompanha a maior oportunidade de atividades externas, portanto essa hipótese não representa o estudo.",
+   "B": "**Oferece um aumento menor.** Uma razão de 1,5 reconheceria variação sazonal, mas não reproduz os 2,5 relatados. Não há, na fonte consultada, base para atribuir esse outro número à comparação pedida.",
+   "C": "**Troca o valor por um arredondamento.** A razão 2 indicaria duplicação; a questão pede o dado reportado,2,5. Reconhecer a direção do efeito é necessário, mas não torna os dois valores equivalentes."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Ambiente: a estação muda a oportunidade de cair; Mudanças de exposição e prevenção."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "Ambiente: a estação muda a oportunidade de cair",
+      "Mudanças de exposição e prevenção"
+     ],
+     "blocos": [
+      "ambiente-a-estacao-muda-a-oportunidade-de-cair-8fedf753",
+      "ambiente-a-estacao-muda-a-oportunidade-de-cair-97e718e9",
+      "mudancas-de-exposicao-e-prevencao-17ceecfd"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "65a351e97d767efa8f5840a31bb14116037571a2beec317d28ad224e3ed531fc"
+    }
+   ],
+   "questaoSha256": "84774a1bd7153c63682d6e716dad9df528a66046b3ea6043194a5c800ebd0e4e",
+   "comentarioSha256": "eee3c81bec270e5dbec4cbbcd27f19d1eaf930f778cc99473e6719b9e7316cd3"
+  }
  },
  "pediatria-1090": {
-  "conceito": "O texto contrasta criança e adulto nas quedas de altura. Adultos tendem a aterrissar nos membros inferiores, o que ajuda a explicar fraturas do calcâneo. Crianças tendem a cair de cabeça e usam os membros superiores para amortecer a queda, padrão que explica maior número de fraturas do crânio e do rádio. Mesmo em quedas relevantes, fraturas da coluna são raras nas crianças em comparação com o padrão adulto descrito.\n\n**Por que esta questão foi criada.** O contraste criança versus adulto transforma o mecanismo de queda em padrão anatômico. É uma lacuna com cara de prova porque os distratores são mecanismos e lesões reais, mas deslocados para a população errada.",
-  "correta": "**B: queda de cabeça com proteção pelos membros superiores e mais fraturas radiais.** É o mecanismo infantil resumido pelo capítulo para explicar a predominância de fraturas cranianas e radiais nas quedas de altura.",
+  "conceito": "Na comparação descrita, a criança que cai de altura tende a **cair de cabeça e usar os membros superiores para proteger-se**. Isso ajuda a explicar o padrão de fraturas cranianas e radiais da alternativa B. O padrão adulto de aterrissagem nos pés não deve ser simplesmente transferido para ela.\n\nO caminho da carga relaciona mecanismo e local da fratura. No adulto, o apoio inicial nos membros inferiores ajuda a explicar a associação com calcâneo; na criança, a proteção com os braços expõe o rádio enquanto a queda de cabeça expõe o crânio. O capítulo acrescenta que fraturas vertebrais são raras em crianças mesmo após quedas importantes (Rockwood e Wilkins, 10ª ed., cap. 1,“Queda de altura: criança não cai como adulto”).\n\n**Predomínio não é exclusão.** Uma fratura de calcâneo não torna impossível uma queda pediátrica, assim como uma fratura do rádio não prova, isoladamente, queda de grande altura. A epidemiologia organiza a história a investigar, sem substituir o exame e a avaliação de todo o mecanismo.\n\n**Por que esta questão foi criada.** A comparação entre criança e adulto permite treinar como o ponto inicial de contato distribui as lesões; é uma oportunidade do capítulo, sem alegação de cobrança oficial identificada.\n\n> **Na prova:** criança: cabeça e proteção pelos braços; adulto: apoio nos membros inferiores e calcâneo.",
+  "correta": "**B: queda de cabeça com proteção pelos membros superiores e mais fraturas radiais.** É o conjunto de mecanismo e distribuição descrito para a criança.",
   "incorretas": {
-   "A": "**Esse é o padrão atribuído aos adultos.** A aterrissagem nos membros inferiores explica a maior quantidade de fraturas de calcâneo no adulto, não o comportamento típico infantil.",
-   "C": "**A alternativa contraria a comparação do capítulo.** Fraturas vertebrais são raras em crianças que caem de grande altura, e o texto não descreve queda sentada como padrão dominante.",
-   "D": "**O joelho não é o ponto-chave dessa epidemiologia.** A explicação apresentada enfatiza queda de cabeça e uso dos membros superiores, não hiperextensão do joelho."
+   "A": "**Transporta o padrão adulto para a população infantil.** O apoio nos membros inferiores e o calcâneo são a comparação que o capítulo usa para o adulto. Isso não proíbe essa lesão numa criança, mas não responde ao padrão infantil predominante.",
+   "C": "**Coloca a coluna no centro de um predomínio que a fonte não descreve.** O capítulo destaca a raridade de fraturas vertebrais nessas quedas pediátricas; queda sentada com predomínio vertebral/pélvico não é o conjunto apresentado. Não se deve atribuir frequência a esse mecanismo sem outra fonte.",
+   "D": "**Muda o ponto de contato para o joelho.** A associação oferecida exigiria estabelecer predomínio de carga no joelho e de fratura tibial proximal. O padrão descrito aqui é outro: cabeça e proteção com os braços, expondo crânio e rádio, sem um ranking de lesões do joelho."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Ambiente: a estação muda a oportunidade de cair."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "Ambiente: a estação muda a oportunidade de cair"
+     ],
+     "blocos": [
+      "ambiente-a-estacao-muda-a-oportunidade-de-cair-6dbbfe68",
+      "ambiente-a-estacao-muda-a-oportunidade-de-cair-a9ea78aa"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "c92f68082ab027c0cf3c2c036edd05a68b82467d1e096d1585eeae0828f97341"
+    }
+   ],
+   "questaoSha256": "2d6fc89f4cd2a124baa34463c859a3e98b37154bf05cdbe8b3904a8b7fdf9cf8",
+   "comentarioSha256": "0a87288cd0d4641b90afda8b9d929f3444efbf723556c1b3a1f1563834b0221f"
+  }
  },
  "pediatria-1091": {
-  "conceito": "O capítulo trata a pandemia como uma alteração de exposição. Com playgrounds fechados e programas esportivos interrompidos, o volume global de fraturas pediátricas **diminuiu 2,5 vezes**. À medida que as restrições foram aliviadas, houve aumento correspondente no volume de trauma. O texto não afirma que o osso infantil mudou biologicamente; a variável central é a oportunidade de se expor a atividades de maior risco.\n\n**Por que esta questão foi criada.** A queda de 2,5 vezes é um dado recente destacado em seção própria do capítulo. É uma lacuna com cara de prova porque testa o mecanismo epidemiológico de mudança de exposição.",
-  "correta": "**A: diminuiu 2,5 vezes.** O capítulo atribui a redução à menor exposição a playgrounds e esportes durante os lockdowns.",
+  "conceito": "O fechamento de playgrounds e a interrupção do esporte durante os lockdowns reduziram as oportunidades de trauma. No dado descrito, o **volume global de fraturas pediátricas diminuiu 2,5 vezes**, alternativa A. A alteração principal foi da exposição, não uma transformação biológica do osso infantil.\n\nO capítulo usa a pandemia como um experimento epidemiológico involuntário: atividades de risco foram interrompidas e, com o alívio das restrições, o volume de trauma voltou a crescer. Essa sequência ajuda a enxergar por que história de atividade, ambiente e mecanismo importa tanto quanto saber qual osso fraturou (Rockwood e Wilkins, 10ª ed., cap. 1,“Mudanças de exposição e prevenção”).\n\nO desfecho é **volume global de fraturas**, não somente acidentes escolares. Um cenário doméstico ainda oferecer riscos não prova que tenha compensado a redução dos demais ambientes. Da mesma forma, o dado agregado não mede, por si só, o risco de cada brinquedo nem permite afirmar que todos os tipos de acidente caíram na mesma proporção.\n\n**Por que esta questão foi criada.** A mudança durante os lockdowns fornece um contraste concreto para testar a relação entre atividade e trauma, com um número explicitado pelo capítulo.\n\n> **Na prova:** menos exposição a esporte/playgrounds, menos fraturas no total; a série relata queda de 2,5 vezes.",
+  "correta": "**A: diminuiu 2,5 vezes.** É a redução do volume global descrita no resumo, acompanhando restrições de atividades e ambientes de risco.",
   "incorretas": {
-   "B": "**A redução não foi restrita ao ambiente escolar.** O capítulo a descreve como queda do volume global de fraturas pediátricas.",
-   "C": "**Não houve estabilidade global.** Embora mecanismos domésticos possam persistir, o dado reportado é redução importante do total de fraturas.",
-   "D": "**A direção está invertida.** A suspensão de atividades de risco reduziu, e não aumentou, a exposição global citada no texto."
+   "B": "**Restringe o efeito a um ambiente e diminui sua magnitude.** A interrupção também alcançou programas esportivos e playgrounds. O dado apresentado é global, e não uma redução discreta limitada às escolas.",
+   "C": "**Presume uma compensação que o total observado não mostra.** Menos esporte e manutenção de riscos domésticos não bastam para concluir estabilidade. Na série resumida, o resultado agregado foi redução importante.",
+   "D": "**Transforma um risco possível em aumento global.** Equipamentos em casa podem representar exposição, mas a alternativa precisaria que esse efeito superasse a redução dos demais ambientes. A observação relatada foi na direção contrária, com queda do volume total."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Mudanças de exposição e prevenção."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "Mudanças de exposição e prevenção"
+     ],
+     "blocos": [
+      "mudancas-de-exposicao-e-prevencao-64b2e998",
+      "mudancas-de-exposicao-e-prevencao-17ceecfd"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "661986cb664b94fe7c0e3d6095c97a61b8db3a0c5297d2e3585dd283f07b03d1"
+    }
+   ],
+   "questaoSha256": "e419b0ac76fb5d6b601ae8d9a006c879ec02ce3ad863f944c65a6f4cc0b9212c",
+   "comentarioSha256": "e703f60c1579343e950f0a1339fa3f17fbf4d00370092066d9320e7515e47d3e"
+  }
  },
  "pediatria-1092": {
-  "conceito": "A epidemiologia das fraturas expostas mudou entre as séries. Estudos mais antigos relatavam **1,5% a 2,6%**, enquanto os estudos mais recentes citados pelo capítulo mostram **0,7% a 1%**. Centros regionais de trauma podem observar números maiores porque concentram lesões mais graves, portanto a taxa não deve ser deslocada automaticamente de uma população para outra.\n\n**Por que esta questão foi criada.** O capítulo contrasta faixas histórica e recente para fratura exposta. É uma lacuna com cara de prova porque a alternativa antiga é um distrator verdadeiro, mas responde a outra época.",
-  "correta": "**C: 0,7% e 1%.** Essa é a faixa dos relatos recentes apresentada no capítulo.",
+  "conceito": "A alternativa C, **0,7% a 1%**, corresponde à faixa dos relatos mais recentes de fraturas expostas pediátricas citados no resumo. A faixa 1,5% a 2,6% também aparece no capítulo, mas pertence às séries **antigas**. O detalhe temporal muda a resposta.\n\nUma proporção depende de quem entra na contagem. Um centro regional de trauma recebe mais lesões graves e pode observar uma porcentagem maior que a descrita no panorama global. Portanto, não se deve transferir a taxa de um serviço selecionado para todas as fraturas pediátricas, nem misturar séries de épocas diferentes (Rockwood e Wilkins, 10ª ed., cap. 1,“Fraturas expostas”).\n\nO capítulo também separa frequência global e distribuição por segmento: no estudo urbano citado, a perna, tíbia e fíbula, liderou as fraturas expostas, seguida pelo antebraço. Isso não contradiz o predomínio de rádio e ulna entre as fraturas de ossos longos em geral; o grupo de lesões e o denominador são outros.\n\n**Por que esta questão foi criada.** A comparação entre faixas antigas e recentes permite treinar época, população e denominador, usando um distrator que é verdadeiro em outro contexto.\n\n> **Na prova:** relatos recentes:0,7–1%; séries antigas:1,5–2,6%.",
+  "correta": "**C:0,7% e 1%.** São os limites do intervalo recente apresentado, mantendo a época exigida pelo enunciado.",
   "incorretas": {
-   "A": "**A faixa é menor que a reportada.** O capítulo não informa 0,1% a 0,5% como intervalo geral das séries recentes.",
-   "B": "**O limite inferior está próximo, mas o intervalo não é o citado.** A faixa recente começa em 0,7% e chega a 1%.",
-   "D": "**Esse intervalo pertence às séries antigas.** Ele é justamente comparado com a redução observada em relatos mais recentes."
+   "A": "**Desloca todo o intervalo para baixo.** O limite superior proposto,0,5%,ainda está abaixo do início da faixa recente de 0,7%. Não é uma faixa equivalente nem um simples modo diferente de arredondar a mesma estimativa.",
+   "B": "**Usa o início da faixa correta como se fosse seu teto.**0,7% é o limite inferior recente; a faixa sobe até 1%. A opção descreve um intervalo inferior, em vez do reportado.",
+   "D": "**É um dado verdadeiro atribuído à época errada.**1,5% a 2,6% corresponde às séries antigas citadas. A alternativa não deve ser ensinada como número inventado; ela apenas não responde aos relatos mais recentes pedidos."
   },
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 1 (Epidemiology of Fractures in Children; Ryan J. Koehler e Benjamin J. Shore)"
+   "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Fise e fratura exposta: frequência não acompanha risco."
   ],
-  "geradoEm": "2026-10-24",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+     "titulo": "Epidemiologia das fraturas na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+     "secoes": [
+      "Fise e fratura exposta: frequência não acompanha risco"
+     ],
+     "blocos": [
+      "fise-e-fratura-exposta-frequencia-nao-acompanha--cb41356d"
+     ],
+     "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+     "trechosSha256": "ce9e3e2f5efd4c0ce65bb2c61d3fa42fcf6fda8fbdeb7ed52504651efef30298"
+    }
+   ],
+   "questaoSha256": "7a3a942586ca942b715e30b0f7db6e90bb122981695844bc2b14692a3bf4144f",
+   "comentarioSha256": "51ab2684fd5ba16370c9773cfe06f359cf7332a3f1b09c1a4454925c6af120c6"
+  }
  },
  "pediatria-1093": {
   "conceito": "No membro inferior, o capítulo diz que a **tíbia** é fraturada mais frequentemente que o fêmur. A tabela 1-2 agrupa tíbia e fíbula para frequência de ossos longos, mas a frase comparativa do texto é entre tíbia e fêmur. A pergunta usa a categoria anatômica que o capítulo destaca, sem transformar a fíbula em osso predominante isolado.\n\n**Por que esta questão foi criada.** A comparação tíbia versus fêmur é o principal contraste epidemiológico do membro inferior no capítulo. É uma lacuna com cara de prova porque explora a troca intuitiva pelo fêmur, que é mais lembrado por gravidade e não por frequência.",
