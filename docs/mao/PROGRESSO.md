@@ -14,7 +14,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
-| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 29 | 5 | mao-2189 a mao-2217 | A 8, B 7, C 7, D 7 |
+| SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 39 | 5 | mao-2189 a mao-2227 | A 10, B 10, C 9, D 10 |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
@@ -554,15 +554,15 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 3 | Artroplastia do punho: fragilidade óssea como contraindicação | conduta | cap. 12, p. 483 (pista) | mao / Artrose do punho e artroscopia | 04 | mao-2206 | publicada |
 | 4 | Instabilidade adaptativa após consolidação viciosa do rádio | mecanismo | cap. 13, p. 501 (pista) | mao / Instabilidade do carpo | 04 | mao-2208 | publicada |
 | 5 | SOONG: proeminência da placa e risco aos flexores | classificação | cap. 15, p. 628 (pista) | mao / Fratura do rádio distal | 06 | mao-2217 | publicada |
-| 6 | TEISEN-HJARBAEK: fratura sagital do semilunar | classificação | cap. 16, p. 724 (pista) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 6 | TEISEN-HJARBAEK: fratura sagital do semilunar | classificação | cap. 16, p. 724 (pista) | mao / Fraturas do escafoide e do carpo | 07 | mao-2219 | publicada |
 | 7 | Bíceps distal sem reparo: perda de supinação e flexão | número | cap. 25, p. 1034 (pista) | ombro-cotovelo / Lesões do bíceps | 20 |  | a fazer |
-| 8 | Triângulo interescalênico: limites e conteúdo | anatomia | cap. 29, p. 1130 (pista) | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 8 | Triângulo interescalênico: limites e conteúdo | anatomia | cap. 29, p. 1130 (pista) | mao / Neuropatia ulnar e outras compressões | 08 | mao-2227 | publicada |
 | 9 | Ulnar baixo: nível da lesão e preservação extrínseca | afirmativas | cap. 31, p. 1208 (pista) | mao / Transferências tendinosas e paralisias | 09 |  | a fazer (original ambíguo; resolver pelo Green) |
 | 10 | LEECHAVENGVONGS: identificação do axilar e divisão receptora | técnica | cap. 34, p. 34 (pista) | mao / Plexo braquial e paralisia obstétrica | 10 |  | a fazer |
 | 11 | FLATT: macrodactilia com hiperostose | classificação | cap. 36, p. 1438 (pista) | mao / Outras malformações congênitas | 11 |  | a fazer |
 | 12 | Sinostose unilateral: posição do antebraço dominante | conduta | cap. 38, p. 1517 (pista) | mao / Outras malformações congênitas | 12 |  | a fazer |
 | 13 | Ossificação do carpo: primeiros centros e cronologia | afirmativas | cap. 41, p. 1618 (pista) | mao / Anatomia da mão e punho | 13 |  | a fazer |
-| 14 | Rádio distal: arcos vasculares volares | anatomia | cap. 15, página a localizar | mao / Fratura do rádio distal | 07 |  | a fazer |
+| 14 | Rádio distal: arcos vasculares volares | anatomia | cap. 15, página a localizar | mao / Fratura do rádio distal | 07 | mao-2218 | publicada |
 | 15 | Pseudocontratura de VOLKMANN: etiologia não isquêmica | mecanismo | cap. 51, p. 1968 (pista) | mao / Outros temas da mão | 16 |  | a fazer |
 | 16 | Artropatias: padrão simétrico e poliarticular | comparação | cap. 55, p. 2044 (pista) | mao / Mão reumatoide | 16 |  | a fazer |
 | 17 | Queimadura química: indicação de gluconato de cálcio | conduta | cap. 57, p. 2144 (pista) | mao / Queimaduras | 17 |  | a fazer |
@@ -572,7 +572,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 21 | Fusão escafocapitato: indicação na pseudartrose | conduta | cap. 12, p. 443 (pista) | mao / Artrose do punho e artroscopia | 04 | mao-2207 | publicada |
 | 22 | Reconstrução ligamentar da fileira proximal pela figura | técnica, figura | cap. 13, p. 544 (pista) | mao / Instabilidade do carpo | 05 | mao-2211 | publicada (figura descrita em texto) |
 | 23 | ARUD: orientação coronal mais frequente | anatomia | cap. 14, p. 563 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2214 | publicada |
-| 24 | Incidência do escafoide: posição dos dedos e punho | imagem | cap. 16, p. 680 (pista) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 24 | Incidência do escafoide: posição dos dedos e punho | imagem | cap. 16, p. 680 (pista) | mao / Fraturas do escafoide e do carpo | 07 | mao-2220 | publicada |
 | 25 | Fratura do úmero distal: risco de necrose troclear na figura | figura | cap. 18, p. 865 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | pendente: conferir figura |
 | 26 | Radial acima do cotovelo: intervalo muscular | anatomia | cap. 31, p. 1226 (pista) | mao / Transferências tendinosas e paralisias | 09 |  | a fazer |
 | 27 | GREEN: tensionamento da transferência do flexor ulnar | técnica | cap. 32, p. 1232 (pista) | mao / Transferências tendinosas e paralisias | 09 |  | a fazer |
@@ -581,7 +581,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 30 | VICKERS: conexões do ligamento anômalo | anatomia | cap. 38, p. 1503 (pista) | mao / Deficiências longitudinais e mão torta | 12 |  | a fazer |
 | 31 | Osteotomia umeral na paralisia obstétrica: via e nível | técnica | cap. 40, p. 1586 (pista) | mao / Plexo braquial e paralisia obstétrica | 13 |  | a fazer |
 | 32 | KITE: nervo responsável pela sensibilidade do retalho | anatomia | cap. 44, p. 1718 (pista) | mao / Retalhos e cobertura cutânea | 14 |  | a fazer |
-| 33 | Enxerto do côndilo femoral medial: pedículo | anatomia | cap. 16, p. 706 (pista) | mao / Microcirurgia e retalhos livres | 07 |  | a fazer |
+| 33 | Enxerto do côndilo femoral medial: pedículo | anatomia | cap. 16, p. 706 (pista) | mao / Microcirurgia e retalhos livres | 07 | mao-2221 | publicada |
 | 34 | Tumor glômico: coloração subungueal e diagnóstico | afirmativas | cap. 9, p. 382 (pista) | mao / Tumores da mão | 03 | mao-2202 | publicada |
 | 35 | MANNERFELT: ruptura do flexor longo do polegar | epônimo | cap. 55, p. 2061 (pista) | mao / Mão reumatoide | 17 |  | a fazer |
 | 36 | Queimadura: profundidade de maior dor | comparação | cap. 57, p. 2123 (pista) | mao / Queimaduras | 17 |  | a fazer |
@@ -592,9 +592,9 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 41 | Prótese IFP de pirocarbono: quanto preservar dos colaterais | técnica | cap. 11, p. 417 (pista) | mao / Rizartrose e artrose da mão | 04 | mao-2204 | publicada |
 | 42 | GARCIA-ELIAS estágio 6: limites da reconstrução | conduta | cap. 13, p. 526 (pista) | mao / Instabilidade do carpo | 05 | mao-2209 | publicada |
 | 43 | Luxação volar isolada da ARUD: posição estável após redução | conduta | cap. 14, p. 576 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2215 | publicada |
-| 44 | Escafoide por via dorsal: flexão e risco de deslocamento | técnica | cap. 16, p. 685 (pista) | mao / Fraturas do escafoide e do carpo | 07 |  | a fazer |
+| 44 | Escafoide por via dorsal: flexão e risco de deslocamento | técnica | cap. 16, p. 685 (pista) | mao / Fraturas do escafoide e do carpo | 07 | mao-2222 | publicada |
 | 45 | Úmero distal: padrão transcolunar e superfície articular | classificação | cap. 18, p. 865 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
-| 46 | Descompressão ulnar: nervo cutâneo em risco | anatomia | cap. 28, p. 1107 (pista) | mao / Neuropatia ulnar e outras compressões | 08 |  | a fazer |
+| 46 | Descompressão ulnar: nervo cutâneo em risco | anatomia | cap. 28, p. 1107 (pista) | mao / Neuropatia ulnar e outras compressões | 08 | mao-2226 | publicada |
 | 47 | Tetraplegia: prioridade da extensão do cotovelo | conduta | cap. 33, p. 1272-1273 (pista) | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
 | 48 | Polidactilia central: dedo mais duplicado | fato | cap. 36, p. 1387 (pista) | mao / Sindactilia e polidactilia | 11 |  | a fazer |
 | 49 | Deficiência ulnar: lateralidade e associações | afirmativas | cap. 38, p. 1500 (pista) | mao / Deficiências longitudinais e mão torta | 12 |  | a fazer |
@@ -609,7 +609,7 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 58 | Artrodese do mínimo: posições das três articulações | número | cap. 11, p. 414 (pista) | mao / Rizartrose e artrose da mão | 04 | mao-2205 | publicada |
 | 59 | WATSON: momento do estalido do escafoide | exame | cap. 13, p. 508 a 510 (Fig. 13.22) | mao / Instabilidade do carpo | piloto_miniaula_59 | mao-2199 | publicada (piloto do modelo de miniaula de 22/10/2026) |
 | 60 | MONTEGGIA: restauração do alinhamento ulnar | conduta | cap. 20, p. 938 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
-| 61 | NAKAMURA: sutura transóssea na lesão foveal | técnica | cap. 17, p. 788 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 08 |  | a fazer |
+| 61 | NAKAMURA: sutura transóssea na lesão foveal | técnica | cap. 17, p. 788 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 08 | mao-2223 | publicada |
 | 62 | ESSEX-LOPRESTI: preservar ou substituir cabeça radial | conduta | cap. 21, p. 968 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
 | 63 | RIORDAN: inserção da oponentoplastia na figura | técnica, figura | cap. 31, p. 1194 (pista) | mao / Transferências tendinosas e paralisias | 09 |  | pendente: conferir figura |
 | 64 | Tetraplegia: músculo que separa grupos 2 e 3 | classificação | cap. 33, p. 1268 (pista) | mao / Transferências tendinosas e paralisias | 10 |  | a fazer |
@@ -633,12 +633,12 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 82 | Embriologia: contribuição do mesoderma somítico | origem | cap. 35, p. 35 (pista) | mao / Outras malformações congênitas | 11 |  | a fazer |
 | 83 | Retalho lateral do braço na modalidade fascial | classificação | cap. 45, p. 45 (pista) | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
 | 84 | Côndilo femoral medial: quadrante da retirada | técnica | cap. 46, p. 46 (pista) | mao / Microcirurgia e retalhos livres | 15 |  | a fazer |
-| 85 | Escafoide proximal: portal de visualização | técnica | cap. 17, p. 796 (pista) | mao / Artrose do punho e artroscopia | 08 |  | a fazer |
+| 85 | Escafoide proximal: portal de visualização | técnica | cap. 17, p. 796 (pista) | mao / Artrose do punho e artroscopia | 08 | mao-2224 | publicada |
 | 86 | EWAS IIIB: componente dorsal lesionado | classificação | cap. 13, página a localizar | mao / Instabilidade do carpo | 06 | mao-2213 | publicada |
 | 87 | ELSON: diagnóstico da lesão da banda central | exame | cap. 5, p. 184 e 200; cap. 6, p. 225 | mao / Lesões dos tendões extensores | 01 | mao-2190 | publicada (manobra especificada para distinguir ELSON de BOYES) |
 | 88 | Melanoma: lentigo maligno e exposição solar | fato | cap. 58, p. 58 (pista) | mao / Tumores da mão | 18 |  | a fazer (original ambíguo; resolver pelo Green) |
 | 89 | Extensor curto do polegar: divisão do interósseo posterior | anatomia | cap. 30, p. 28 (pista) | mao / Transferências tendinosas e paralisias | 09 |  | a fazer |
-| 90 | Quatro cantos artroscópica: portais para escafoidectomia | técnica | cap. 17, p. 17 (pista) | mao / Artrose do punho e artroscopia | 08 |  | a fazer |
+| 90 | Quatro cantos artroscópica: portais para escafoidectomia | técnica | cap. 17, p. 17 (pista) | mao / Artrose do punho e artroscopia | 08 | mao-2225 | publicada |
 | 91 | SWANSON: fratura exposta atendida após 24 horas | classificação | cap. 7, p. 7 (pista) | mao / Fraturas dos metacarpos e falanges | 03 | mao-2200 | publicada |
 | 92 | TFCC: funções da superfície articular e transmissão de carga | afirmativas | cap. 14, p. 14 (pista) | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2216 | publicada |
 | 93 | Úmero distal: tipo I da progressão articular | classificação | cap. 18, p. 18 (pista) | ombro-cotovelo / Fraturas do cotovelo e antebraço | 19 |  | a fazer |
