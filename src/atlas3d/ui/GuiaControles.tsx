@@ -63,7 +63,11 @@ function Dedos({ gesto }: { gesto: Gesto }) {
   )
 }
 
-/** Tutorial curto dos controles: abre na primeira visita e pelo botão "?" do topo. */
+/**
+ * Tutorial curto dos controles, num cartão no canto de cima (perto do botão "Como usar"), sem cobrir
+ * nem travar o modelo: a pessoa já pode girar enquanto lê (pedido do Tales, 25/10/2026). Abre sozinho
+ * na primeira visita; depois, só pelo botão "Como usar".
+ */
 export function GuiaControles({ toque, aoFechar }: { toque: boolean; aoFechar: () => void }) {
   const passos = toque ? PASSOS_TOQUE : PASSOS_MOUSE
   const [i, definirI] = useState(0)
@@ -79,9 +83,9 @@ export function GuiaControles({ toque, aoFechar }: { toque: boolean; aoFechar: (
     return () => window.removeEventListener('keydown', tecla)
   }, [passos.length, aoFechar])
   return (
-    <div className="gc" role="dialog" aria-modal="true" aria-labelledby="gc-titulo">
+    <div className="gc" role="dialog" aria-labelledby="gc-titulo">
       <div className="gc__cartao">
-        <button type="button" className="at-convite__fechar" onClick={aoFechar} aria-label="Pular o tutorial"><Icone nome="fechar" tamanho={18} /></button>
+        <button type="button" className="at-convite__fechar" onClick={aoFechar} aria-label="Fechar o tutorial" title="Fechar (abre de novo em Como usar)"><Icone nome="fechar" tamanho={18} /></button>
         <p className="tr-heroi__selo">{toque ? 'Como usar com os dedos' : 'Como usar com o mouse'} · {i + 1}/{passos.length}</p>
         <div className="gc__palco" key={i}>{p.mouse ? <Mouse destaque={p.mouse} movimento={p.movimento} /> : <Dedos gesto={p.dedo!} />}</div>
         <h2 id="gc-titulo">{p.titulo}</h2>
