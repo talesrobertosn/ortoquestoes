@@ -1,4 +1,5 @@
 import type { Estrutura, Faixa } from '../tipos'
+import { NOMES_PT } from './nomesPt'
 
 /**
  * Nomes em português (Terminologia Anatômica em português). Sem tradução automática:
@@ -40,12 +41,18 @@ function osso(base: string): string | undefined {
 
 export function baseDoId(id: string) { return id.replace(/_[lr]$/, '') }
 
+function partesMoles(e: Estrutura): string | undefined {
+  if (NOMES_PT[e.en]) return NOMES_PT[e.en]
+  const m = e.en.match(/^(Intervertebral disc|Nucleus pulposus) ([CTLS]\d+)-([CTLS]\d+)$/)
+  if (m) return `${m[1] === 'Intervertebral disc' ? 'Disco intervertebral' : 'Núcleo pulposo'} ${m[2]}-${m[3]}`
+  return EXTRAS[baseDoId(e.id)]
+}
+
 /** Nome principal em português, ou o inglês do catálogo quando ainda não há tradução revisada. */
 export function nomeDe(e: Estrutura): string {
-  const base = baseDoId(e.id)
-  return (e.k === 'bone' ? osso(base) : EXTRAS[base]) ?? e.en
+  return (e.k === 'bone' ? osso(baseDoId(e.id)) : partesMoles(e)) ?? e.en
 }
-export function temNomePt(e: Estrutura) { const base = baseDoId(e.id); return !!(e.k === 'bone' ? osso(base) : EXTRAS[base]) }
+export function temNomePt(e: Estrutura) { return !!(e.k === 'bone' ? osso(baseDoId(e.id)) : partesMoles(e)) }
 
 export const LADO: Record<string, string> = { e: 'esquerdo', d: 'direito', m: '' }
 

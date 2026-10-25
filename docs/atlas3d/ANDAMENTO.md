@@ -1,24 +1,30 @@
 # Atlas Ortopédico 3D: andamento
 
-## Feito (25/10/2026)
-- Auditoria: repositório em ~/OrtoQuestoes-Biblioteca/anatomy-atlas-3d-main (sem GLB). Assets obtidos do APK oficial
-  v0.1.3 (GitHub Releases do autor, autorizado pelo Tales) e extraídos em ~/oqsp/atlas-dl/ext.
-- `scripts/atlas3d/preparar_assets.mjs` gera `public/atlas3d/v1/`: 10 GLB Draco (29 MB, sem alteração), decodificador
-  Draco do three 0.170, `estruturas.json` (2.792 estruturas: id, camada, lado, EN, latim TA2, caixa em mm; 78 KB gzip),
-  `pontos.json` (1.385 pontos), `LICENCAS.md` (CC BY-SA 2.1 JP / 4.0, MIT).
-- Dependências: three@0.170.0 e @types/three@0.170.0.
+Rota `#/atlas[/<região>]?e=<id>&f=<proximal|diafise|distal>&lado=d|e&c=<camadas>`. Abre como pop-up por cima do
+site (como os flashcards; `App.tsx` trata `atlas` como sobreposto e o X volta à página de origem). Menu: grupo
+Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados, ui); estilos em
+`src/estilos/paginas/Atlas3D.css` e `src/estilos/componentes/VerNoAtlas.css`.
 
-## Fatos do modelo
-- Unidade mm; Z para cima (pés ~0, cabeça ~1.700); esquerda = +X; anterior = −Y; posição anatômica.
-- Cada nó do GLB = id estável do catálogo; só POSITION (calcular normais no carregamento); DoubleSide.
-- As correções por malha do visualizador original usam ids antigos (ZA*/FMA*) que não existem na v3: não se aplicam.
+## Como funciona
+- Assets em `public/atlas3d/v1/` (GLB Draco do Anatomy Atlas 3D 0.1.3, licenças em `LICENCAS.md`), preparados por
+  `scripts/atlas3d/preparar_assets.mjs`. Cada GLB é baixado só quando a camada é ligada e fica no Cache Storage
+  (`atlas3d-v1`); a geometria decodificada fica na memória enquanto a pessoa navega.
+- Motor (`motor/Motor.ts`): renderização sob demanda, resolução menor durante o giro, materiais compartilhados por
+  camada, seleção por raycast (clicar de novo no mesmo ponto pega a estrutura de baixo), destaque só da faixa do osso
+  longo (proximal, diáfise, distal), foco animado, vistas, cortes, margens de câmera para a ficha e a gaveta.
+- Fichas (`dados/fichas.json`): parte do esqueleto → subtemas de lesão, termos de anatomia, seções de classificação
+  dos resumos da Biblioteca (mostradas na ficha). `scripts/atlas3d/vincular_questoes.mjs` gera
+  `public/atlas3d/v1/questoes.json` (questões de anatomia e de lesão de cada ficha). Rodar de novo ao importar questões.
+- Questões dentro do atlas: `ui/PainelQuestoes.tsx` usa a `QuestaoDireta` (conta, limite e registro como no resto do site).
+- Na questão: `ui/VerNoAtlas.tsx` (osso em pixel art abaixo do livro da Biblioteca) abre o atlas na ficha ligada.
 
-## Próximos passos (ordem)
-1. `src/atlas3d/` com motor (renderer sob demanda, OrbitControls, pixel ratio adaptativo), carregador por camada com
-   Cache Storage, materiais compartilhados por camada, seleção por raycast (clique repetido alterna estruturas
-   sobrepostas), foco animado, vistas, cortes (plano axial/sagital/coronal).
-2. Página `#/atlas` (rota em App.tsx, preCarga, MenuGeral grupo Estudar), layout tela cheia, painéis desktop e bottom
-   sheets no celular; CSS em src/estilos/paginas/Atlas3D.css com os tokens do site.
-3. Regiões ortopédicas pelas caixas (ombro, cotovelo, punho e mão, coluna, pelve e quadril, joelho, tornozelo e pé).
-4. Nomes em português revisados (arquivo próprio; sem tradução automática), fichas anatômicas só com dados verificados.
-5. Orçamento de chunks: o three passa de 120 KB gzip; abrir exceção documentada em fixtures/testar_orcamento_chunks.mjs.
+## Acesso (pedido do Tales, 25/10/2026)
+- Sem conta: vê o atlas com os ossos; ligar ou desligar camadas abre o convite para criar a conta grátis.
+- Conta grátis: ossos e músculos. Outras camadas aparecem por 3 s e então o convite (gentil) para assinar.
+- Assinante: todas as camadas.
+
+## Pendências
+- Fichas de músculos, nervos e vasos (origem, inserção, inervação, relevância cirúrgica): só com fonte conferida.
+- Nomes em português de vasos e de estruturas fora do foco ortopédico (ver NOMES.md).
+- Modo estudo ("o que é isso?"), comparação lado a lado, pontos anatômicos dos ossos na ficha (dados em pontos.json).
+- Rádio distal do adulto: falta o capítulo do Rockwood na Biblioteca; hoje a ficha usa o resumo pediátrico.

@@ -13,9 +13,17 @@ import { usarArmazenado } from '../../estado/usarArmazenado'
 import { navegar } from '../../util/rotas'
 import { PainelFicha } from './PainelFicha'
 import { PainelQuestoes } from './PainelQuestoes'
+import { EsperaPixel } from '../../componentes/EsperaPixel'
+import { usarConta } from '../../conta/ContextoConta'
+import { usarPremium } from '../../conta/premium'
+import { ConviteAtlas, type TipoConvite } from './ConviteAtlas'
+import { corDaArea } from '../../dados/coresAreas'
 import '../../estilos/paginas/Atlas3D.css'
 
 type Altura = 'espiada' | 'meia' | 'inteira'
+/** Na conta grátis: ossos e músculos. O resto, para assinantes (aparece por alguns segundos e convida). */
+const GRATIS = new Set<Grupo>(['osso', 'musculo'])
+const PREVIA_MS = 3000
 interface Preferencias { recentes: string[]; favoritos: string[]; dicasVistas: boolean }
 const PREF_PADRAO: Preferencias = { recentes: [], favoritos: [], dicasVistas: false }
 
@@ -46,6 +54,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [vinculos, definirVinculos] = useState<Record<string, Vinculo> | null>(null)
   const [isolado, definirIsolado] = useState(false)
   const [pref, definirPref] = usarArmazenado<Preferencias>('atlas3d:preferencias', PREF_PADRAO)
+  const { sessao } = usarConta()
+  const { premium } = usarPremium()
+  const nivel: 'visitante' | 'conta' | 'assinante' = !sessao ? 'visitante' : premium ? 'assinante' : 'conta'
+  const [convite, definirConvite] = useState<TipoConvite | null>(null)
+  const previa = useRef<ReturnType<typeof setTimeout> | null>(null)
+  useEffect(() => () => { if (previa.current) clearTimeout(previa.current) }, [])
 
   const motor = motorRef.current
   const regiao = regiaoPorId(regiaoId)
@@ -98,16 +112,43 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selecao?.id, selecao?.faixa])
 
-  // ---------- ações ----------
-  const alternarGrupo = useCallback(async (g: Grupo) => {
+  // ---------- margens da câmera: o modelo fica no espaço que os painéis deixam livre ----------
+  useEffect(() => {
     const m = motorRef.current
     if (!m) return
-    const ligar = !ligados.has(g)
-    const novo = new Set(ligados)
-    if (ligar) novo.add(g); else novo.delete(g)
-    definirLigados(novo)
+    const raiz = palco.current?.parentElement
+    const medir = () => {
+      const ficha = raiz?.querySelector<HTMLElement>('.atlas__ficha')
+      const gaveta = raiz?.querySelector<HTMLElement>('.atlas__gaveta')
+      const direita = larga && ficha ? ficha.offsetWidth * 0.55 : 0
+      const inferior = !larga && gaveta ? Math.min(gaveta.offsetHeight, (raiz?.clientHeight ?? 0) * 0.55) * 0.85 : 0
+      m.definirMargens(direita, inferior)
+    }
+    medir()
+    const t = setTimeout(medir, 260) // depois da transição de altura da gaveta
+    return () => clearTimeout(t)
+  }, [estrutura?.id, larga, altura, questoes])
+
+  // ---------- ações ----------
+  /** Liga ou desliga uma camada respeitando o plano: sem conta, convida a criar a conta;
+   * na conta grátis, camada de assinante aparece por alguns segundos e depois convida. */
+  const mudarGrupo = useCallback(async (g: Grupo, ligar: boolean, depois?: () => void) => {
+    const m = motorRef.current
+    if (!m) return
+    if (nivel === 'visitante') { definirConvite({ tipo: 'conta' }); return }
+    definirLigados((atual) => { const novo = new Set(atual); if (ligar) novo.add(g); else novo.delete(g); return novo })
     await m.ligarGrupo(g, ligar)
-  }, [ligados])
+    depois?.()
+    if (ligar && nivel === 'conta' && !GRATIS.has(g)) {
+      if (previa.current) clearTimeout(previa.current)
+      previa.current = setTimeout(() => {
+        definirConvite({ tipo: 'assinante', grupo: g })
+        definirLigados((atual) => { const novo = new Set(atual); novo.delete(g); return novo })
+        motorRef.current?.ligarGrupo(g, false)
+      }, PREVIA_MS)
+    }
+  }, [nivel])
+  const alternarGrupo = useCallback((g: Grupo) => mudarGrupo(g, !ligados.has(g)), [ligados, mudarGrupo])
 
   const escolherRegiao = useCallback((id: string | null, novoLado: Lateralidade = lado) => {
     const m = motorRef.current
@@ -142,7 +183,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     const continuar = () => { m.selecionar({ id: e.id }); m.focar([e.id]) }
     // a estrutura pode estar fora da região atual ou numa camada desligada
     if (regiao && !caixasDaRegiao(regiao, lado).some((c) => c.intersectsBox(m.caixaDe([e.id])))) { definirRegiaoId(null); m.definirRegiao(null) }
-    if (!ligados.has(g)) { definirLigados(new Set([...ligados, g])); m.ligarGrupo(g, true).then(continuar) } else continuar()
+    if (!ligados.has(g)) mudarGrupo(g, true, continuar); else continuar()
     definirBusca('')
     if (!larga) definirExplorar(false)
   }
@@ -188,7 +229,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <button type="button" className={`at-chip${explorar ? ' at-chip--ativo' : ''}`} onClick={() => definirExplorar((v) => !v)} aria-expanded={explorar}>
           <Icone nome="mapa" tamanho={17} /><span>{regiao ? regiao.nome : 'Corpo inteiro'}{regiao?.membro && lado !== 'ambos' ? ` · ${lado === 'd' ? 'direito' : 'esquerdo'}` : ''}</span>
         </button>
-        <div className="atlas__marca"><Icone nome="cubo" tamanho={18} /><strong>Atlas 3D</strong><span className="at-beta">Beta</span></div>
+        <p className="atlas__marca tr-heroi__selo">Atlas 3D · Beta</p>
         <div className="atlas__acoes-topo">
           <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => definirPersonalizar((v) => !v)} aria-label="Personalizar" title="Personalizar"><Icone nome="ajustes" tamanho={19} /></button>
           <button type="button" className="at-botao-icone" onClick={aoFechar} aria-label="Fechar o atlas" title="Fechar (volta à página anterior)"><Icone nome="fechar" tamanho={19} /></button>
@@ -207,11 +248,11 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
             </ul>
           ) : (
             <>
-              <h2 className="at-titulo-secao">Regiões</h2>
+              <h2 className="at-titulo-secao"><Icone nome="mapa" tamanho={14} /> Regiões ortopédicas</h2>
               <div className="at-regioes">
-                <button type="button" className={`at-regiao${!regiao ? ' at-regiao--ativa' : ''}`} onClick={() => escolherRegiao(null)}><strong>Corpo inteiro</strong><small>Visão geral</small></button>
+                <button type="button" className={`at-regiao${!regiao ? ' at-regiao--ativa' : ''}`} style={{ ['--at-area' as string]: 'var(--verdete)' }} onClick={() => escolherRegiao(null)}><strong>Corpo inteiro</strong><small>Visão geral do esqueleto</small></button>
                 {REGIOES.map((r) => (
-                  <button type="button" key={r.id} className={`at-regiao${regiao?.id === r.id ? ' at-regiao--ativa' : ''}`} onClick={() => escolherRegiao(r.id)}>
+                  <button type="button" key={r.id} className={`at-regiao${regiao?.id === r.id ? ' at-regiao--ativa' : ''}`} style={{ ['--at-area' as string]: corDaArea(r.area) }} onClick={() => escolherRegiao(r.id)}>
                     <strong>{r.nome}</strong><small>{r.resumo}</small>
                   </button>
                 ))}
@@ -231,12 +272,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       {/* personalizar: cortes, opacidade, restaurar */}
       {personalizar && motor && (
         <aside className="atlas__personalizar" aria-label="Personalizar">
-          <h2 className="at-titulo-secao">Transparência das camadas</h2>
+          <h2 className="at-titulo-secao"><Icone nome="olho" tamanho={14} /> Transparência das camadas</h2>
           {ORDEM_GRUPOS.filter((g) => ligados.has(g)).map((g) => (
             <label key={g} className="at-faixa-opacidade"><span><i className="at-ponto" style={{ background: hex(GRUPOS[g].cor) }} />{GRUPOS[g].rotulo}</span>
               <input type="range" min={0.1} max={1} step={0.05} defaultValue={motor.opacidadeDe(g)} onChange={(ev) => motor.definirOpacidade(g, Number(ev.target.value))} /></label>
           ))}
-          <h2 className="at-titulo-secao">Corte</h2>
+          <h2 className="at-titulo-secao"><Icone nome="riscar" tamanho={14} /> Corte</h2>
           <div className="at-segmentos" role="group" aria-label="Plano de corte">
             {([null, 'axial', 'sagital', 'coronal'] as (EixoCorte | null)[]).map((e) => (
               <button key={e ?? 'nenhum'} type="button" aria-pressed={(corte?.eixo ?? null) === e} onClick={() => mudarCorte(e ? { eixo: e, posicao: 0.5, inverter: false } : null)}>{e ? e[0].toUpperCase() + e.slice(1) : 'Sem corte'}</button>
@@ -269,6 +310,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
           <button key={g} type="button" aria-pressed={ligados.has(g)} onClick={() => alternarGrupo(g)} title={GRUPOS[g].rotulo}>
             <span className="at-ponto" style={{ background: hex(GRUPOS[g].cor) }} />
             <span className="at-camada-rotulo">{GRUPOS[g].rotulo.split(' ')[0]}</span>
+            {nivel !== 'assinante' && !GRATIS.has(g) && <span className="at-cadeado" aria-label="para assinantes"><Icone nome="cadeado" tamanho={12} /></span>}
             {ligados.has(g) && (progresso[g] ?? 0) < 1 && <span className="at-mini-progresso" style={{ ['--p' as string]: `${Math.round((progresso[g] ?? 0) * 100)}%` }} />}
           </button>
         ))}
@@ -286,14 +328,15 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
           </section>)}
 
       {/* estados */}
-      {!catalogo && !erro && <div className="atlas__carregando"><div className="at-esqueleto-giro" /><p>Montando o esqueleto…</p></div>}
+      {!catalogo && !erro && <div className="atlas__carregando"><EsperaPixel rotulo="Montando o esqueleto" /></div>}
       {catalogo && carregando.length > 0 && <div className="atlas__aviso-carga">Carregando {carregando.map((g) => GRUPOS[g].rotulo.toLowerCase()).join(', ')}… {Math.round(Math.min(...carregando.map((g) => progresso[g] ?? 0)) * 100)}%</div>}
+      {convite && <ConviteAtlas convite={convite} aoFechar={() => definirConvite(null)} />}
       {erro && <div className="atlas__carregando"><p>{erro}</p><button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button></div>}
       {catalogo && !pref.dicasVistas && !selecao && (
         <div className="atlas__boas-vindas">
           <strong>Clique num osso para ver as fraturas, as classificações e as questões.</strong>
           <span>{larga ? 'Arraste para girar, role para aproximar, botão direito para mover.' : 'Um dedo gira, dois dedos aproximam e movem.'}</span>
-          <button type="button" className="botao botao--principal" onClick={() => definirPref((p) => ({ ...p, dicasVistas: true }))}>Entendi</button>
+          <button type="button" className="at-ouro at-ouro--curto" onClick={() => definirPref((p) => ({ ...p, dicasVistas: true }))}>Entendi</button>
         </div>
       )}
     </div>
@@ -305,14 +348,14 @@ function ListaRapida({ titulo, ids, catalogo, aoIr }: { titulo: string; ids: str
   if (!lista.length) return null
   return (
     <>
-      <h2 className="at-titulo-secao">{titulo}</h2>
+      <h2 className="at-titulo-secao"><Icone nome={titulo === 'Favoritas' ? 'estrela' : 'relogio'} tamanho={14} /> {titulo}</h2>
       <ul className="at-resultados at-resultados--curta">{lista.map((e) => <li key={e.id}><button type="button" onClick={() => aoIr(e)}><span className="at-ponto" style={{ background: hex(GRUPOS[grupoDe(e)].cor) }} />{nomeDe(e)}{e.s !== 'm' && <small>{LADO[e.s]}</small>}</button></li>)}</ul>
     </>
   )
 }
 
 function lerCamadas(consulta: URLSearchParams): Grupo[] {
-  const c = consulta.get('c')?.split(',').filter((g): g is Grupo => g in GRUPOS)
+  const c = consulta.get('c')?.split(',').filter((g): g is Grupo => g in GRUPOS && GRATIS.has(g as Grupo))
   return c?.length ? c : ['osso']
 }
 export const hex = (n: number) => `#${n.toString(16).padStart(6, '0')}`

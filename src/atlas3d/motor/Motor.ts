@@ -422,10 +422,21 @@ export class Motor {
     if (Math.abs(this.renderer.getPixelRatio() - alvo) > 0.01) this.renderer.setPixelRatio(alvo)
   }
 
+  private margens = { direita: 0, inferior: 0 }
+  /** Área coberta por painéis (ficha à direita, gaveta embaixo): o centro da cena vai para o espaço livre. */
+  definirMargens(direita: number, inferior: number) {
+    if (Math.abs(direita - this.margens.direita) < 1 && Math.abs(inferior - this.margens.inferior) < 1) return
+    this.margens = { direita, inferior }
+    this.redimensionar()
+  }
+
   private redimensionar() {
     const w = Math.max(1, this.recipiente.clientWidth)
     const h = Math.max(1, this.recipiente.clientHeight)
-    this.camera.aspect = w / h
+    const { direita, inferior } = this.margens
+    this.camera.aspect = (w + direita) / (h + inferior)
+    if (direita || inferior) this.camera.setViewOffset(w + direita, h + inferior, direita, inferior, w, h)
+    else this.camera.clearViewOffset()
     this.camera.updateProjectionMatrix()
     this.renderer.setSize(w, h)
     this.pedirQuadro()

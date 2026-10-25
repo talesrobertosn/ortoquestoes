@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Icone } from '../../componentes/Icone'
-import { GRUPOS, grupoDe } from '../config'
+import { grupoDe } from '../config'
 import type { Estrutura, Faixa } from '../tipos'
 import { LADO, SINGULAR, nomeCompleto, nomeDe, temNomePt } from '../dados/nomes'
 import type { Ficha, Vinculo } from '../dados/fichas'
@@ -35,11 +35,11 @@ export function PainelFicha(p: Props) {
     <div className="at-ficha">
       <header className="at-ficha__topo">
         <div className="at-ficha__titulos">
-          <span className="at-ficha__sobretitulo"><i className="at-ponto" style={{ background: `#${GRUPOS[grupo].cor.toString(16).padStart(6, '0')}` }} />{SINGULAR[grupo]}{e.s !== 'm' ? ` · lado ${LADO[e.s]}` : ''}</span>
+          <p className="tr-heroi__selo">{SINGULAR[grupo]}{e.s !== 'm' ? ` · lado ${LADO[e.s]}` : ''}</p>
           <h2>{titulo}</h2>
           {secundario && <p className="at-ficha__latim">{secundario}</p>}
         </div>
-        <button type="button" className="at-botao-icone" onClick={p.aoFechar} aria-label="Fechar a ficha"><Icone nome="fechar" tamanho={18} /></button>
+        <button type="button" className="at-ficha__fechar" onClick={p.aoFechar} aria-label="Fechar a ficha"><Icone nome="fechar" tamanho={18} /></button>
       </header>
 
       <div className="at-ficha__acoes" role="group" aria-label="Ações">
@@ -52,7 +52,7 @@ export function PainelFicha(p: Props) {
       {ficha ? (
         <>
           <div className="at-ficha__questoes">
-            <button type="button" className="at-cta" disabled={!nAnat} onClick={() => p.aoResponder(`Anatomia · ${ficha.nome}`, vinculo!.a)}>
+            <button type="button" className="at-ouro" disabled={!nAnat} onClick={() => p.aoResponder(`Anatomia · ${ficha.nome}`, vinculo!.a)}>
               <Icone nome="alvo" tamanho={20} /><span><strong>Responder questões de anatomia</strong><small>{nAnat ? `${nAnat} ${nAnat === 1 ? 'questão' : 'questões'} sobre ${ficha.nome.toLowerCase()}` : 'Nenhuma questão de anatomia ligada ainda'}</small></span><Icone nome="direita" tamanho={18} />
             </button>
             <button type="button" className="at-cta at-cta--secundario" disabled={!nLes} onClick={() => p.aoResponder(`Fraturas e lesões · ${ficha.nome}`, vinculo!.l)}>

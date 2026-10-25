@@ -1,7 +1,6 @@
 import FICHAS from './fichas.json'
 import { BASE_ASSETS } from '../config'
 import type { Estrutura, Faixa } from '../tipos'
-import { baseDoId } from './nomes'
 
 /** Ficha ortopédica: a parte do esqueleto com as suas lesões, classificações e questões. */
 export interface Ficha {
@@ -18,6 +17,8 @@ export interface Ficha {
   biblioteca?: { c: string; s: string[] }[]
 }
 export const LISTA_FICHAS = FICHAS as Ficha[]
+
+const baseDoId = (id: string) => id.replace(/_[lr]$/, '')
 
 /** A ficha de uma estrutura (e da faixa clicada, nos ossos longos). */
 export function fichaDe(e: Estrutura, faixa?: Faixa): Ficha | undefined {

@@ -23,6 +23,7 @@ import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import { usarTempoVisivel } from '../util/tempoVisivel'
 import { EstudarAssunto } from '../biblioteca/EstudarAssunto'
+import { VerNoAtlas } from '../atlas3d/ui/VerNoAtlas'
 import { FonteComentario } from './FonteComentario'
 import { semEco } from './ecoAlternativa'
 import { permutarQuestao } from '../dados/provaNacional'
@@ -657,6 +658,7 @@ function CartaoQuestaoExibida({
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} rolarParaMarcada={errouAgora && resposta?.correta === false} letrasDaProva={reordenado?.letrasDaProva && ordemExibida ? ordemExibida : null} />
             <EstudarAssunto questao={questao.id} subtemas={questao.subtemas} baseResumo={comentarioIA?.baseResumo} />
+            <VerNoAtlas questao={questao.id} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
             {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
