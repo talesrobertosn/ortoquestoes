@@ -1,7 +1,7 @@
 import type { Indice } from './tipos'
 import { diaCivil } from '../util/dia'
 import { AREAS, focoPorQuestao, idsDoFoco, type AreaIncidencia, type Foco, type Nivel } from './incidencia'
-import { DIA_MINIMO, entraNoPlano, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
+import { DIA_MINIMO, dataLocal, entraNoPlano, expandirIds, incluiSimulados, MINUTOS_POR_QUESTAO, TAMANHO_MINI, type CalculoPlano, type PlanoSalvo } from './planoEstudo'
 
 /**
  * O que a página do cronograma mostra além do plano em si: a constância de
@@ -47,13 +47,17 @@ export interface Constancia {
   minimo: number
 }
 
-/** Quantas respostas (novas e de revisão) cada dia teve. */
-export function respostasPorDia(respondidas: Respondidas): Map<string, number> {
+/**
+ * Quantas respostas (novas e de revisão) cada dia teve. A primeira resposta de uma questão
+ * presa a um dia recuperado (opcoes.recuperados) conta para aquele dia, não para o dia em que foi feita.
+ */
+export function respostasPorDia(respondidas: Respondidas, recuperados: Record<string, string[]> = {}): Map<string, number> {
+  const diaRecuperado = new Map(Object.entries(recuperados).flatMap(([dia, ids]) => (/^\d{4}-\d{2}-\d{2}$/.test(dia) ? expandirIds(ids) : []).map((id) => [id, chave(dataLocal(dia))] as const)))
   const porDia = new Map<string, number>()
-  for (const r of Object.values(respondidas)) for (const em of momentos(r)) {
-    const k = chave(diaCivil(em))
+  for (const [id, r] of Object.entries(respondidas)) momentos(r).forEach((em, i) => {
+    const k = (i === 0 ? diaRecuperado.get(id) : undefined) ?? chave(diaCivil(em))
     porDia.set(k, (porDia.get(k) ?? 0) + 1)
-  }
+  })
   return porDia
 }
 
@@ -61,7 +65,7 @@ export function calcularConstancia(respondidas: Respondidas, plano: PlanoSalvo, 
   // Dias de São Paulo (src/util/dia.ts), como datas civis.
   const hoje = diaCivil(agora)
   const criado = diaCivil(Date.parse(plano.criado_em))
-  const porDia = respostasPorDia(respondidas)
+  const porDia = respostasPorDia(respondidas, plano.opcoes?.recuperados ?? {})
   // Cumprir é chegar a 80% da média planejada (a meta do dia oscila; a média é estável).
   // Dia mínimo (reforma de 14/10/2026): 10 questões, novas ou de revisão, mantêm a sequência, mesmo em dia de plantão.
   const minimo = DIA_MINIMO
