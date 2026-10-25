@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 617 |
+| pendente | 610 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 240 |
-| pendente-inspecao-imagem | 88 |
-| revisada | 1327 |
+| pendente-fonte | 244 |
+| pendente-inspecao-imagem | 86 |
+| revisada | 1332 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -34,13 +34,13 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura transtrocantérica (`rockwood10-54-transtrocanterica`) | 34 | 0 | 11 |
 | Fratura da diáfise do fêmur (`rockwood10-57-diafise-femur`) | 47 | 0 | 26 |
 | Fratura do fêmur distal (`rockwood10-58-femur-distal`) | 27 | 0 | 12 |
-| Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 37 | 0 | 46 |
-| Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 49 | 0 | 74 |
+| Fratura da patela, luxação aguda da patela e lesões do aparelho extensor (`rockwood10-60-patela-mecanismo-extensor`) | 38 | 0 | 45 |
+| Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 52 | 0 | 71 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 31 | 0 | 14 |
 | Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 98 | 0 | 57 |
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 31 | 0 | 18 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
-| Fraturas e luxações do tálus (`rockwood10-66-talus`) | 27 | 0 | 26 |
+| Fraturas e luxações do tálus (`rockwood10-66-talus`) | 28 | 0 | 25 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 13 | 0 | 6 |

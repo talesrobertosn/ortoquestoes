@@ -11253,15 +11253,48 @@
   }
  },
  "trauma-0570": {
+  "conceito": "A radiografia mostra um fragmento separado na região **superolateral da patela**, com contornos regulares. No paciente com pouca dor e extensão ativa preservada, esse padrão favorece **patela bipartida**, não uma fratura aguda obrigatoriamente causada pelo trauma de uma hora atrás.\n\nA bipartida resulta da fusão incompleta de centros de ossificação. O fragmento acessório costuma ficar superolateral, com bordas lisas e corticalizadas, e frequentemente existe também no outro joelho. O trauma pode motivar a radiografia e revelar uma variante que já estava lá; presença de um traço depois de uma queda não prova que o traço foi criado pela queda (Rockwood, 10ª ed., cap. 60, “Patela bipartida e outros simuladores”).\n\nA comparação com o joelho contralateral ajuda porque o padrão costuma ser bilateral. O exame também importa: extensão ativa preservada indica continuidade funcional dos retináculos e do mecanismo extensor, embora **não exclua toda fratura**. Uma fratura aguda com retináculos íntegros também pode estender; é o conjunto de localização, margens e clínica que sustenta a hipótese.\n\nO diagnóstico diferencial não deve apagar a história. Pseudartrose exige uma fratura que não consolidou, não apenas um fragmento visto no primeiro exame; uma lesão osteocondral envolve a superfície articular e deve ser investigada quando houver suspeita, especialmente após luxação. Nenhuma dessas alternativas explica melhor o padrão acessório superolateral mostrado.\n\n> **Na prova:** fragmento superolateral corticalizado, pouco sintoma e extensor íntegro: procure bipartida e compare o outro joelho.",
+  "correta": "**A: patela bipartida.** A posição superolateral e os contornos regulares favorecem um centro de ossificação não fusionado. O tempo curto do trauma não transforma a variante em fratura recente.",
   "incorretas": {
-   "B": "**Rara e pós-cirúrgica.** A osteonecrose da patela é incomum e surge após cirurgias, sem esse aspecto.",
-   "C": "**Exige fratura prévia.** A pseudartrose pressupõe uma fratura antiga não consolidada, o que não se encaixa na história.",
-   "D": "**Lesão articular.** A osteocondrite dissecante acomete a superfície articular da patela, e não forma um fragmento periférico corticado."
+   "B": "**Troca uma variante de ossificação por um problema de viabilidade óssea.** O capítulo descreve risco de necrose do fragmento proximal após fratura pela perfusão retrógrada, mas isso não explica um fragmento acessório superolateral de margens regulares neste cenário.",
+   "C": "**Pressupõe falha de consolidação de uma fratura anterior.** O paciente relata trauma há uma hora, e a imagem tem o padrão descrito para bipartida. Uma separação óssea, sozinha, não documenta fratura antiga sem consolidação.",
+   "D": "**Leva a discussão para a superfície osteocondral sem a pista correspondente.** O achado dominante é o fragmento superolateral regular, e não um defeito articular demonstrado. Suspeita de lesão condral pode exigir RM, mas não supera a identificação da variante neste conjunto."
   },
-  "conceito": "**A patela bipartida.** É uma **variação anatômica**: um centro de ossificação acessório não se funde ao restante da patela. Ocorre em cerca de **1 a 2%** da população, é **bilateral** em cerca de metade dos casos e mais comum em homens. A classificação de **Saupe**: **tipo I**, no polo **inferior**; **tipo II**, na borda **lateral**; **tipo III**, no polo **superolateral**, o mais comum (cerca de 75%).\n\n**Como diferenciar da fratura.** A bipartida tem **bordas lisas, arredondadas e corticadas**, com espaço regular entre os fragmentos, e o fragmento acessório geralmente fica no **polo superolateral**. A fratura aguda tem bordas **irregulares**, **agudas** e sem cortical, traço em qualquer lugar (muitas vezes transverso) e hemartrose. A **radiografia do joelho contralateral** ajuda, pois a bipartida é bilateral com frequência. A **ressonância** mostra ausência de edema ósseo na bipartida assintomática.\n\n**Como ler o caso.** Um jovem com trauma direto, **pouca dor** e **aparelho extensor íntegro**, com um fragmento superolateral de bordas arredondadas, tem muito provavelmente uma **patela bipartida**, e não uma fratura. Às vezes, porém, o trauma **rompe a sincondrose**, e a bipartida fica **dolorosa**.\n\n**A bipartida sintomática.** Dor no local da sincondrose, em atletas ou após trauma. Tratamento conservador com repouso, anti-inflamatórios e fisioterapia. Nos casos refratários, **excisão** do fragmento pequeno, **liberação lateral** do retináculo (vasto lateral), ou fixação do fragmento grande.\n\n**Os distratores.** A **osteonecrose** da patela é rara e ocorre após cirurgias. A **pseudartrose** exige fratura prévia. A **osteocondrite dissecante** da patela acomete a superfície articular, visível no perfil e na axial.\n\n**Na prova:** fragmento **superolateral** de bordas **arredondadas**, pouca dor e extensor íntegro = **patela bipartida** (Saupe III); compare com o outro lado.",
-  "correta": "**Patela bipartida.** O fragmento de bordas lisas e corticadas, com pouca dor e aparelho extensor íntegro, sugere o centro de ossificação acessório não fundido, e não uma fratura aguda.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Patela bipartida e outros simuladores; Exame físico e fratura exposta oculta; Anatomia e biomecânica do mecanismo extensor; Complicações."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Patela bipartida e outros simuladores",
+      "Exame físico e fratura exposta oculta",
+      "Anatomia e biomecânica do mecanismo extensor",
+      "Complicações"
+     ],
+     "blocos": [
+      "patela-bipartida-e-outros-simuladores-27cbef14",
+      "exame-fisico-e-fratura-exposta-oculta-845aa804",
+      "anatomia-e-biomecanica-do-mecanismo-extensor-705cc98b",
+      "patela-bipartida-e-outros-simuladores-f0b1afd4",
+      "complicacoes-3f5b04aa"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "99aa9d187a89a7adedfa54f96b5bb10a283006597974d1a82cc9b6eaffb44ff6"
+    }
+   ],
+   "questaoSha256": "fcb973e2660151087d36ae9bf62bd3160664a93f521d58fea7700f7e613b31f7",
+   "comentarioSha256": "cfd300096873c0f5aabcb18e277a3b1308dacad0546291d8c2efd2dc51c2f4c9"
+  }
  },
  "trauma-0571": {
   "incorretas": {
