@@ -1,0 +1,153 @@
+{
+  "dataBrasilia": "2026-10-25T03:22:17.619507-03:00",
+  "base": "703d33bd3b55327b9e7ccff9d6ae005ded907a7e",
+  "lote": 145,
+  "ids": [
+    "trauma-0107",
+    "trauma-0239",
+    "trauma-0293",
+    "trauma-0325",
+    "trauma-0286",
+    "coluna-0320",
+    "coluna-0482",
+    "coluna-0333",
+    "trauma-0221",
+    "coluna-0436"
+  ],
+  "fonte": "Resumo 48 do Rockwood10 lido integralmente nesta passagem e relidos os trechos da pars, Levine/Edwards, Grauer, compressão do parafuso, tratamento do odontoide, Jefferson, transverso e via anterior. Apenas corpo/tabelas independentes; nenhum bloco contextual de questão ou comentário antigo usado como autoridade. Sem leitura direta do livro ou página impressa atribuída.",
+  "figuras": "Nenhuma das dez questões possui imagem ou figura pendente.",
+  "integridade": "aplicar.py sob lock de acervo; replay com aplicar.preparar desde a base, dez avulsos integrais, fontes/hashes e todas as alternativas conferidos. Questões/IDs/áreas/gabaritos oficiais e bibliográficos/revisão médica e membros alheios preservados; conferido:false.",
+  "checks": {
+    "work/check145-fixtures.log": "515b3c6e6bf351e64539c5bfd33f16dfec528ebe1ac405b1d5df2ddd67bbe230",
+    "work/check145-acervo.log": "63e598c519251a27ecd68762cf6d1afc41971a0149f55ea110d608f4149701c1",
+    "work/check145-test.log": "fb29a16ab1ea37dd2ad18cecc1d43ad981955aa5743a4e139ee72bddead43406",
+    "work/check145-build.log": "5fd33498e6bbd34f401cd04715d42ed53fddcdc781ceaad8e5b5b1704699d6bb",
+    "work/check145-letras.log": "93f4172fbfb5f595a41bbbf575ed496a476f4d1794aa94279b7bf32263dac8c0",
+    "work/ui145-total.log": "e5b3044ff7dd344ff06c2b4348fca7f3bdcc70e43b978362e6b4aced5f763a6d"
+  },
+  "interface": "Dez questões em 390/1440 passaram com resposta, comentário, selo e link exato para bloco. Três capturas abertas: geometria de Grauer computador, via esquerda/resposta bibliográfica celular e ressalva de Spence computador.",
+  "ressalvas": [
+    "coluna-0436: gabarito B preservado, mas 8 mm por Spence isoladamente não comprova ruptura nem dispensa RM/exame/alinhamento.",
+    "coluna-0320/0482: preferência esquerda pelo trajeto do recorrente não é garantia de redução de risco; fonte também cita série sem diferença entre lados."
+  ],
+  "naoOficiais": {
+    "coluna-0320": "C",
+    "coluna-0333": "C"
+  },
+  "notaNaoOficiais": "Mesmas respostas bibliográficas preexistentes, sustentadas no resumo; provável mantida, sem inventar gabarito oficial.",
+  "novasPendencias": [],
+  "concorrencia": [
+    {
+      "number": 517,
+      "title": "Prompt para o Codex: Rockwood crianças em simulados e resumos",
+      "headRefOid": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+      "headRefName": "claude/prompt-codex-rockwood-criancas",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "ba0f849dd5b2987732b4a735e917fcc903886a5c"
+      ]
+    },
+    {
+      "number": 371,
+      "title": "Instagram: câmara escura (feed) e player da prova (stories)",
+      "headRefOid": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+      "headRefName": "claude/post-18-10-b",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+        "714323bcee21a533ea33cf7048a307a24deffc44",
+        "553b1041eafa4cf9b173ea616cc293537739eb08",
+        "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+      ]
+    },
+    {
+      "number": 308,
+      "title": "Cartão: aviso de renovação com prazo de 7 dias para desistir com reembolso",
+      "headRefOid": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+      "headRefName": "claude/reembolso-7-dias",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "980b2d734b62cd5a28098224e8dbf0c11194a185",
+        "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+      ]
+    },
+    {
+      "number": 253,
+      "title": "Instagram: painel de partidas do Adiantar no Cronograma",
+      "headRefOid": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+      "headRefName": "claude/sharp-goodall-pl7kp7",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+        "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+        "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+        "94859424a3fa5fb70347baea0a2a831a26ddd622"
+      ]
+    },
+    {
+      "number": 179,
+      "title": "Marketing: modelos Cofre de duas chaves e Relojoaria anatômica",
+      "headRefOid": "86aeeb45a1284a4bab358ad66df593286e64876a",
+      "headRefName": "codex/instagram-cofre-relojoaria-20261011",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "86aeeb45a1284a4bab358ad66df593286e64876a"
+      ]
+    },
+    {
+      "number": 178,
+      "title": "Instagram: Mirels no modelo oficial Jornal",
+      "headRefOid": "c695d3d697b62de9cb1317922a61af543f4369a5",
+      "headRefName": "codex/instagram-mirels-20261010",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "3c7daf1f481a22a119402544f44007696520ce1e",
+        "c695d3d697b62de9cb1317922a61af543f4369a5"
+      ]
+    },
+    {
+      "number": 174,
+      "title": "Simulado Rockwood cap. 11: 21 questões comentadas de fixação externa",
+      "headRefOid": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+      "headRefName": "codex/simulado-fixacao-externa-cap11",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+      ]
+    },
+    {
+      "number": 93,
+      "title": "Aula de enxertos de pele: Cirurgia da Mão, UFG 2017",
+      "headRefOid": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+      "headRefName": "codex/aula-enxerto-mao-0853-20261004",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+        "97e77b073134af9277107123ff27e7cb369139b5",
+        "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+      ]
+    }
+  ],
+  "reconciliacaoAnterior": {
+    "pr": 518,
+    "head": "594c8590e687f05b8e9900f2bac91b9d82fe2933",
+    "ci": 40168359742,
+    "merge": "703d33bd3b55327b9e7ccff9d6ae005ded907a7e",
+    "pages": 40168481829,
+    "jobPublicar": 121094745395,
+    "guarda": "Conferir versão antes de publicar: success",
+    "deploy": "Run actions/deploy-pages@v4: success",
+    "producao": "Trinta avulsos integrais, três capítulos-fonte e letras.json comparados integralmente sem diferenças; prova no corpo do PR518. Seis comentários ENARE concorrentes preservados após integração e repetição de validações."
+  },
+  "contagens": {
+    "duplicada": 87,
+    "pendente": 648,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 234,
+    "pendente-inspecao-imagem": 100,
+    "revisada": 1290
+  },
+  "proximoLote": 146,
+  "publicacao": "Aguardar CI do head, merge, guarda/deploy e conferência integral dos dez avulsos, capítulo-fonte48 e letras.json em produção. Prova final no PR sem commit artificial posterior."
+}

@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 658 |
+| pendente | 648 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
 | pendente-fonte | 234 |
 | pendente-inspecao-imagem | 100 |
-| revisada | 1280 |
+| revisada | 1290 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -26,7 +26,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |
-| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 40 | 0 | 92 |
+| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 50 | 0 | 82 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 78 | 0 | 50 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 61 | 0 | 12 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 55 | 0 | 21 |

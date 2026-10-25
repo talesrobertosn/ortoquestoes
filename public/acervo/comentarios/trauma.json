@@ -2900,19 +2900,46 @@
   "conferido": false
  },
  "trauma-0107": {
-  "conceito": "**A fratura do enforcado.** É a **espondilolistese traumática do áxis** (C2). O nome vem dos enforcamentos judiciais, em que o nó sob o queixo causava **hiperextensão** com **distração** violenta do pescoço. Hoje, o mecanismo comum é a **hiperextensão com carga axial**, como nos acidentes automobilísticos em que a cabeça bate no para-brisa.\n\n**Onde está a lesão.** A fratura ocorre na **pars interarticularis** de C2 (a porção do arco entre as facetas articulares superior e inferior), geralmente **bilateral**. O corpo de C2 se separa do seu arco posterior e pode escorregar para a frente sobre C3.\n\n**Por que o canal costuma ficar livre.** Como o traço separa o corpo do arco, o canal vertebral **se alarga** em vez de se estreitar. Por isso, a maioria dos pacientes não tem déficit neurológico, apesar da gravidade aparente da fratura.\n\n**A classificação de Levine e Edwards (Effendi modificada).**\n\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| **I** | Desvio menor que **3 mm**, sem angulação | Colar cervical rígido |\n| **II** | Translação maior que 3 mm e **angulação** | Tração e redução em extensão, depois halo |\n| **IIA** | **Pouca translação e grande angulação**; mecanismo de flexão e distração | **Não usar tração** (piora); redução em extensão e halo |\n| **III** | Tipo II com **luxação das facetas** C2-C3 | **Cirurgia**: redução aberta e artrodese |\n\n**A armadilha do tipo IIA.** Nele, o disco C2-C3 está rompido e a lesão tem componente de **distração**. A tração **aumenta** a separação e pode causar lesão neurológica. Reconhecer o tipo IIA na radiografia (angulação desproporcional à translação) é essencial.\n\n**As outras fraturas de C2.**\n- **Fratura do odontoide** (Anderson e D'Alonzo): tipo I (ponta), II (base, a mais comum e de maior risco de pseudoartrose) e III (estende-se ao corpo).\n- Fraturas do **corpo** e da **massa lateral**.\n\n**A cirurgia.** Nos casos instáveis, faz-se a artrodese **anterior** C2-C3 (discectomia e placa) ou a fixação **posterior** com parafusos na pars de C2 e nas massas laterais de C3.",
-  "correta": "**Correta: C (na pars interarticularis).** Na fratura do enforcado (espondilolistese traumática do áxis), a lesão de C2 localiza-se na **pars interarticularis**, geralmente bilateral, separando o corpo do arco posterior. O canal se alarga, e por isso o déficit neurológico é incomum.",
+  "conceito": "Uma fratura bilateral interrompe a ligação entre as articulações de C2 e permite uma espondilolistese traumática do áxis. O local clássico dessa fratura, chamada de enforcado, é a **pars interarticularis**, alternativa C.\n\nA pars é o istmo entre as regiões articulares. Em C2, as articulações inferiores ficam mais posteriores que as superiores: essa disposição de transição entre a coluna alta e a subaxial submete a pars a cisalhamento sob carga. O nome da lesão ajuda menos que enxergar qual ponte óssea foi interrompida (Rockwood, 10ª ed., cap. 48, “Onde quebra e por quê”).\n\n**O disco C2–C3 muda a estabilidade do conjunto.** Na classificação de Levine e Edwards, o tipo I não apresenta lesão discal importante; o II combina angulação e translação com dano do disco; o IIa tem grande angulação com translação mínima; o III acrescenta luxação facetária. Localizar a pars é o começo da análise, não a conclusão de que todas as fraturas terão o mesmo tratamento.\n\nO capítulo também adverte sobre o nome histórico: a fratura era rara nas necropsias de enforcamento judicial. Não é necessário presumir esse mecanismo para reconhecer uma fratura da pars num acidente.\n\n> **Na prova:** enforcado clássico é fratura bilateral da pars de C2.",
+  "correta": "**C: pars interarticularis.** É a ponte óssea entre as articulações de C2 que sofre cisalhamento no padrão clássico. A relação com o disco e as facetas C2–C3 define os subtipos e a estabilidade.",
   "incorretas": {
-   "A": "A fratura da **massa lateral** de C2 é outro tipo de lesão, geralmente por carga axial com inclinação lateral.",
-   "B": "As fraturas do **corpo** de C2 são outra categoria. A fratura do enforcado separa o corpo do arco posterior através da pars.",
-   "D": "A fratura do **processo espinhoso** (como a fratura do cavador de argila, em C7) não define a fratura do enforcado."
+   "A": "**Troca o istmo pela região articular.** O padrão clássico não é definido por uma fratura da massa lateral. Mesmo quando existe luxação facetária associada no tipo III, a fratura da pars continua compondo a lesão.",
+   "B": "**Desloca o traço clássico para o corpo.** A parede posterior do corpo pode participar da variante Ia de Starr e Eismont, com maior risco de estreitar o canal. Essa exceção não muda a localização bilateral da pars no enforcado clássico.",
+   "D": "**Escolhe uma projeção posterior diferente.** O processo espinhoso não é o istmo entre as articulações de C2. A lesão perguntada depende da interrupção da pars, não de uma fratura isolada do espinhoso."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2)."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do enforcado (espondilolistese traumática de C2)"
+     ],
+     "blocos": [
+      "fratura-do-enforcado-espondilolistese-traumatica-785c3e9a",
+      "fratura-do-enforcado-espondilolistese-traumatica-678a4ddd",
+      "fratura-do-enforcado-espondilolistese-traumatica-78597036",
+      "fratura-do-enforcado-espondilolistese-traumatica-91ac3840",
+      "fratura-do-enforcado-espondilolistese-traumatica-ac421b17",
+      "fratura-do-enforcado-espondilolistese-traumatica-9bb667d7"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "41f8ae2e416af5ee31a1ec34aa5f3db8310945fb01b0ee1f2f059ce4345718d2"
+    }
+   ],
+   "questaoSha256": "e7120a035eb965004b0552a7a5865af51959e8157f7528bb661d6a0513eb184a",
+   "comentarioSha256": "9e7b5e8ac35456209afc7f2e993beb9200a49fc3e9aa370c78d1579cab3dc8e3"
+  }
  },
  "trauma-0108": {
   "incorretas": {
@@ -5623,15 +5650,47 @@
   "conferido": false
  },
  "trauma-0221": {
+  "conceito": "Na incidência transoral de uma fratura do atlas, as massas laterais de C1 ultrapassam as de C2. Somar quanto isso ocorre dos dois lados estima quanto o anel se abriu. Um deslocamento total acima de aproximadamente **7 mm sugere lesão do ligamento transverso**.\n\nO transverso passa de uma massa lateral à outra por trás do dente. A expansão radial de C1 o tensiona, relacionando a abertura do anel à possível perda dessa contenção. É a lógica da regra de Spence, cujo limiar clássico é 6,9 mm (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**Sugere não significa demonstra diretamente.** O resumo discute correção de ampliação para 8,1 mm e limitações dos estudos de correlação; rupturas podem ocorrer com deslocamentos menores. A ressonância complementa a análise ao mostrar o ligamento, e uma soma abaixo do corte não deve ser usada isoladamente para excluir lesão.\n\nTambém não se deve confundir essa soma lateral com o ADI medido no perfil entre o arco anterior e o dente. Ambos ajudam a avaliar C1–C2, mas medem relações diferentes.\n\n> **Na prova:** abertura das massas laterais na fratura de C1 remete ao transverso; Spence é um indício indireto.",
+  "correta": "**C: transverso.** O afastamento das massas laterais tensiona o ligamento que as une atrás do dente. O valor sugere ruptura e exige integração com os demais achados, não confirmação automática.",
   "incorretas": {
-   "A": "O ligamento alar se relaciona com a avulsão da ponta do dente.",
-   "B": "O ligamento nucal é posterior e não tem relação com essa medida.",
-   "D": "O interespinhoso faz parte do complexo posterior subaxial."
+   "A": "**Troca o ligamento avaliado pela abertura do anel.** Na regra de Spence, a ligação anatômica é entre o afastamento das massas e a tensão do transverso. Os alares entram em outra discussão de contenção C1–C2, inclusive quando o ADI ultrapassa 5 mm.",
+   "B": "**Escolhe um componente posterior diferente.** O ligamento nucal integra a descrição do complexo ligamentar posterior cervical. Não é a faixa entre as massas laterais de C1 cuja integridade a regra procura inferir.",
+   "D": "**Confunde o espaço entre espinhosos com a abertura lateral do atlas.** Afastamento interespinhoso sugere lesão posterior na subaxial. A medida da questão compara massas laterais de C1 com C2 e aponta para o transverso."
   },
-  "conceito": "A **fratura de Jefferson** é a fratura do **atlas** (C1) por **carga axial**: o crânio empurra as massas laterais, os arcos anterior e posterior se quebram, e as **massas laterais se afastam** para os lados.\n\n**A pergunta que importa**: o **ligamento transverso** está íntegro? Ele passa atrás do dente e mantém C1 preso a C2.\n\n**A regra de Spence**: na radiografia **transoral** (boca aberta), soma-se o quanto as massas laterais de C1 passam da borda de C2 dos dois lados. Uma soma **maior que 6,9 mm** (cerca de 7 mm; 8,1 mm considerando a ampliação da imagem) indica **ruptura do ligamento transverso** e **instabilidade C1-C2**.\n\n**Hoje**: a **RM** avalia o ligamento diretamente. **Dickman** separa a lesão **intrassubstancial** (tipo I, que não cicatriza e pede artrodese) da **avulsão óssea** (tipo II, que pode consolidar com imobilização).\n\n**O intervalo atlantodental**: no adulto, mais de 3 mm também sugere lesão do transverso.\n\n**O tratamento**: transverso íntegro, colar ou halo; transverso roto, halo (no tipo II) ou **artrodese C1-C2**.\n\n**Na prova**: o afastamento das massas laterais maior que 7 mm sugere lesão do **ligamento transverso**.",
-  "correta": "Pela regra de Spence, a soma do afastamento das massas laterais acima de cerca de 7 mm indica o transverso roto.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica; Imagem: rastreio, radiografia, tomografia e ressonância."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2",
+      "Anatomia aplicada e biomecânica",
+      "Imagem: rastreio, radiografia, tomografia e ressonância"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+      "anatomia-aplicada-e-biomecanica-cafff61f",
+      "imagem-rastreio-radiografia-tomografia-e-ressona-253dda60"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "a541e65f04058e5021c19e00f0b6fb312801adbcf747040bc66890a8cfc8be7f"
+    }
+   ],
+   "questaoSha256": "e7847961aa743c38d02ee40feefe021b1177bfa2cf556f77e79dffb39f843f95",
+   "comentarioSha256": "bee001e4635b97d79fffd52265fd1ffc09ed8f87e049159254b3f73705946da5"
+  }
  },
  "trauma-0222": {
   "conceito": "No **KD II**, encontram-se lesionados os **dois ligamentos cruzados**, com colaterais íntegros. B é a alternativa correta. “II” não quer dizer duas estruturas escolhidas livremente entre todos os ligamentos do joelho.\n\nO cruzado anterior e o posterior formam o componente central do controle anteroposterior. Quando ambos se rompem, o padrão de luxação pode existir apesar de os colaterais não estarem rompidos. A classificação de Schenck identifica essa combinação anatômica, em vez de exigir que a direção original da luxação seja conhecida (Rockwood, 10ª ed., cap. 61, “Classificação de Schenck”).\n\nIsso é útil porque muitos joelhos chegam já reduzidos. O alinhamento atual da radiografia não reconstrói, sozinho, tudo o que se rompeu; exame e RM ajudam a determinar o padrão. A classificação não deve transformar uma imagem reduzida em prova de que não houve luxação.\n\nPara comparar: KD I tem o cruzado posterior funcionando no esquema apresentado; KD III associa os dois cruzados a um colateral, e KD IV, aos dois colaterais. KD V inclui fratura periarticular. As letras M e L distinguem o lado no III; C e N registram, respectivamente, comprometimento circulatório e neurológico.\n\nOs distratores escolhem pares que parecem satisfazer a ideia de “duas lesões”, mas a regra não é aritmética. O critério é a associação específica dos cruzados com a preservação dos colaterais.",
@@ -6165,18 +6224,44 @@
   }
  },
  "trauma-0239": {
+  "conceito": "Ao procurar a fratura do enforcado na tomografia de C2, a região a examinar é a **pars interarticularis dos dois lados**. Confundi-la com o dente ou com o corpo leva a outra família de fraturas do áxis.\n\nC2 faz a transição entre as articulações da coluna alta e as da subaxial. Suas articulações inferiores ficam deslocadas para trás em relação às superiores; a carga pode produzir cisalhamento no istmo entre elas. É essa pars que se rompe bilateralmente no padrão clássico (Rockwood, 10ª ed., cap. 48, “Onde quebra e por quê”).\n\nA classificação acrescenta o que a localização sozinha não informa: angulação, translação, lesão do disco C2–C3 e luxação facetária mudam o tipo. A variante Ia merece atenção particular porque um traço atravessa a parede posterior do corpo e o fragmento pode estreitar o canal, diferente do alargamento habitual.\n\n**Não chamar toda fratura de C2 pelo mesmo nome.** O odontoide tem uma classificação própria, baseada em ponta, cintura e extensão ao corpo; a espondilolistese traumática do áxis clássica se reconhece pela pars.\n\n> **Na prova:** pars bilateral é enforcado; fratura do odontoide é outra lesão de C2.",
+  "correta": "**C: pars interarticularis.** O traço bilateral nessa região caracteriza a fratura clássica do enforcado, devendo-se avaliar também o alinhamento e a integridade de C2–C3.",
   "incorretas": {
-   "A": "\"Pedículo\" é um termo impreciso; o local anatômico é a pars.",
-   "B": "O traço no corpo vertebral é uma variante atípica.",
-   "D": "A fratura do odontoide é outra lesão de C2."
+   "A": "**É uma região vizinha, mas não o nome anatômico do traço clássico.** O capítulo identifica especificamente a pars, o istmo entre as articulações. Substituí-la por pedículo perde a distinção que a questão solicita.",
+   "B": "**Pode lembrar a variante que exige cautela.** No Ia, um traço entra na parede posterior do corpo de C2 e pode levar um fragmento para o canal. A pergunta geral sobre o enforcado clássico, porém, corresponde à pars bilateral.",
+   "D": "**É o dente do áxis.** Fraturas da ponta, cintura ou extensão do odontoide ao corpo seguem Anderson e D’Alonzo. Elas não definem a ruptura bilateral da pars da espondilolistese traumática."
   },
-  "conceito": "A **fratura do enforcado** é a fratura **bilateral** da **pars interarticularis** de **C2**, o istmo de osso entre a faceta articular superior e a inferior. É a **espondilolistese traumática do áxis**.\n\n**O que acontece**: o corpo de C2 se separa dos elementos posteriores e pode escorregar para a frente sobre C3.\n\n**O mecanismo atual**: hiperextensão com **carga axial** (acidente de carro, mergulho); o nome vem do enforcamento judicial, com hiperextensão e distração.\n\n**Por que o déficit é raro**: o desvio **alarga** o canal no nível de C2.\n\n**Levine e Edwards**: I sem desvio importante; II com desvio e angulação; IIA com angulação e pouco desvio (não tracionar); III com luxação das facetas C2-C3.\n\n**Os nomes que confundem**: \"pedículo\" é usado às vezes como sinônimo impreciso, mas o local anatômico é a **pars**; a fratura do **odontoide** e a do **corpo** de C2 são outras lesões.\n\n**Na prova**: a fratura do enforcado ocorre na **pars interarticularis** de C2.",
-  "correta": "A fratura do enforcado é bilateral na pars interarticularis de C2, entre as facetas superior e inferior.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 47"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2); Fratura do odontoide (C2)."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do enforcado (espondilolistese traumática de C2)",
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-enforcado-espondilolistese-traumatica-785c3e9a",
+      "fratura-do-enforcado-espondilolistese-traumatica-78597036",
+      "fratura-do-odontoide-c2-0213fd6f"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "5b35088dc60b8eff9180ccb6c051799efd8137600ba0a328d6544cb24ef2db40"
+    }
+   ],
+   "questaoSha256": "3fd2c9d18bc454e9d73d029742479ded03c7fe832353612cb3e91083c00a52cd",
+   "comentarioSha256": "4acad3bd108aa9af1221f8277d22b9aaf79dde4f7d53c1aa11cbe7eaff7537f2"
+  }
  },
  "trauma-0240": {
   "conceito": "Uma ferida sobre a patela pode comunicar com a articulação mesmo quando a exposição não é evidente. A conduta pedida é **aspirar o derrame e fazer carga salina, observando se o soro sai pelo ferimento**, alternativa C.\n\nO teste procura uma comunicação, e não apenas confirmar que existe líquido dentro do joelho. O resumo descreve aspiração e infusão de 150 mL de soro, com azul de metileno opcional; extravasamento pela ferida confirma comunicação e leva a irrigação e desbridamento urgentes (Rockwood, 10ª ed., cap. 60, “Exame físico e fratura exposta oculta”).\n\nLaceração e escoriação precisam ser interpretadas em relação ao trauma e à fratura. Uma abertura pequena não é necessariamente superficial, e a quantidade de derrame também pode mudar quando o sangue tem por onde sair. Portanto, a impressão visual isolada não resolve a dúvida de exposição ou artrotomia traumática.\n\nA questão se refere ao teste e à sequência descritos pelo capítulo. Não é uma demonstração de que a tomografia nunca tenha papel em trauma do joelho nem de que um teste negativo garanta exclusão em qualquer técnica ou contexto; essas conclusões não foram apresentadas na fonte. O achado positivo é o que sustenta a comunicação na situação proposta.\n\nNo resumo da Biblioteca, leia o exame junto do manejo da ferida. A finalidade é reconhecer o caso que precisa de tratamento urgente, e não converter uma exploração informal da lesão em substituto da avaliação adequada.",
@@ -7196,15 +7281,44 @@
   "conferido": false
  },
  "trauma-0286": {
+  "conceito": "Uma fratura do odontoide não se trata escolhendo uma técnica apenas pelo nome do osso. É preciso separar o tipo, o traço, o desvio e a condição do paciente. Entre as afirmações oferecidas, a sustentada é que **o parafuso anterior pode ser usado em traços transversos**.\n\nO parafuso comprime ao longo de seu eixo. Um traço transverso, ou o oblíquo de anterossuperior para posteroinferior, oferece geometria favorável para aproximar os fragmentos. O traço oblíquo inverso favorece deslizamento e contraindica esse método (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\n**Tipo II não significa cirurgia obrigatória.** A fonte admite imobilização em casos selecionados e descreve inclusive estabilidade fibrosa no idoso. Já o tipo III entra no corpo esponjoso e tem taxas favoráveis de consolidação com tratamento externo. Não se deve transferir ao III o problema de pseudartrose característico do II.\n\nA idade também não funciona como indicação automática de superioridade cirúrgica. O capítulo apresenta resultados diferentes conforme faixa etária e condição clínica, com riscos relevantes no idoso e particular cautela nos muito idosos.\n\n> **Na prova:** o parafuso anterior pode comprimir o traço transverso; tipo e idade, sozinhos, não resolvem toda a conduta.",
+  "correta": "**C: o parafuso anterior pode ser usado em fraturas transversas.** O eixo de compressão é favorável a esse traço. A possibilidade depende ainda de redução quase anatômica e trajetória adequada.",
   "incorretas": {
-   "A": "O tratamento conservador é aceito no tipo 2 em casos selecionados.",
-   "B": "Os resultados cirúrgicos não são melhores nos idosos, que têm mais complicações.",
-   "D": "O tipo 3 consolida bem com imobilização rígida."
+   "A": "**Transforma risco de pseudartrose em proibição do tratamento externo.** O tipo II tem consolidação menos previsível, mas a fonte aceita imobilização em pacientes selecionados. Avaliar desvio e condições clínicas é diferente de negar toda opção conservadora.",
+   "B": "**Generaliza resultados que variam dentro do próprio grupo idoso.** O resumo relata riscos operatórios e estudos com efeitos diferentes entre faixas etárias, inclusive pior resultado de sobrevida nos muito idosos em uma série. Não sustenta superioridade universal da cirurgia entre idosos.",
+   "D": "**Atribui ao tipo III o comportamento desfavorável do II.** No III, o traço entra no corpo esponjoso e a fonte descreve boa consolidação imobilizado. A elevada preocupação com pseudartrose pertence principalmente ao tipo II da cintura."
   },
-  "conceito": "O tratamento da **fratura do odontoide** depende do tipo (Anderson e D'Alonzo), da idade e dos fatores de risco:\n\n**tipo 1** (ponta): colar;\n\n**tipo 2** (base do dente): o mais difícil; o **conservador** (halo ou colar) é **aceito** em casos selecionados (jovens, pouco desvio), mas a pseudartrose chega a 36%; com fatores de risco (idade acima de 50 anos, desvio maior que 5 mm, angulação maior que 10°, cominução), prefere-se a cirurgia;\n\n**tipo 3** (corpo de C2): **consolida bem** com imobilização rígida.\n\n**O parafuso anterior**: entra pela borda anteroinferior de C2 e sobe até a ponta do dente. Funciona quando o traço é **transverso** ou **oblíquo posterior**, porque fica perpendicular ao parafuso e é comprimido. Contraindicado no traço **oblíquo anterior** (de anteroinferior para posterossuperior), na osteoporose importante e nas fraturas antigas.\n\n**A artrodese C1-C2 posterior**: a opção quando o parafuso não serve.\n\n**No idoso**: o halo é mal tolerado, e a cirurgia tem mais complicações; os resultados **não são melhores** que nos jovens. Muitos idosos evoluem com pseudartrose **estável**, aceitável.\n\n**Na prova**: o parafuso anterior **pode ser feito em fraturas transversas**.",
-  "correta": "No traço transverso, o parafuso anterior fica perpendicular à fratura e consegue comprimi-la.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-odontoide-c2-4660967c",
+      "fratura-do-odontoide-c2-e392c5c7",
+      "fratura-do-odontoide-c2-b73258e7",
+      "fratura-do-odontoide-c2-370a776e"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "3065b4b9999f64232952cfc052859cf7136f7bf14b31ca7a25f85c2b0d8fa98c"
+    }
+   ],
+   "questaoSha256": "824a6056dd4b014a775e2251fa6d12657d7aeb50e1afeae87b7be9dce3ca9c9a",
+   "comentarioSha256": "f29deb1f4bf64714f7e5ced91abd7c6fe208e21993cb9ba63c5e9e2c18b2e1a1"
+  }
  },
  "trauma-0287": {
   "incorretas": {
@@ -7321,15 +7435,46 @@
   "conferido": false
  },
  "trauma-0293": {
+  "conceito": "Duas fraturas da pars de C2 podem usar halo e ainda exigir manobras de redução opostas. No **tipo IIa do enforcado**, a angulação é importante e a translação pequena: **tração e flexão devem ser evitadas**. A redução descrita é por extensão e compressão.\n\nNo tipo II, há angulação e translação com lesão importante do disco C2–C3; a fonte descreve redução com tração e manutenção no halo. No IIa, a tração pode acentuar a deformidade. Entender o deslocamento importa mais que decorar “halo para enforcado” (Rockwood, 10ª ed., cap. 48, “Levine e Edwards” e “O tratamento por tipo”).\n\nO tipo I tem desvio mínimo, sem angulação ou translação importante e sem lesão discal relevante, e os autores usam colar rígido. No III, a luxação das facetas C2–C3 leva à redução aberta e artrodese. O nome da fratura não torna todas essas situações equivalentes.\n\n> **Na prova:** IIa não vai para tração; sua redução é em extensão e compressão.",
+  "correta": "**C: evitar tração e flexão para reduzir o tipo IIa.** Essas forças podem piorar o padrão angulado. A manobra descrita no resumo usa extensão e compressão no halo.",
   "incorretas": {
-   "A": "**Colar rígido.** O tipo I é estável, mas tratado com colar rígido, e não macio, e não tem lesão ligamentar significativa.",
-   "B": "**Compressão é do IIA.** O tipo II é reduzido com tração axial em leve extensão; a compressão é a manobra do IIA.",
-   "D": "**Exige cirurgia.** O tipo III tem luxação facetária C2-C3, que não se reduz nem se mantém de forma confiável com colar."
+   "A": "**Erra a lesão associada e a rigidez da órtese.** O tipo I não apresenta lesão discal importante na descrição e é tratado com colar rígido. “Colar macio” não reproduz a contenção indicada pelos autores para esse tipo.",
+   "B": "**Empresta ao II a manobra do IIa.** O tipo II, com angulação e translação, pode ser reduzido por tração e mantido no halo. Extensão e compressão são a distinção do IIa, no qual se evita tracionar.",
+   "D": "**Subestima a luxação facetária do III.** A perda de relação das facetas C2–C3 torna inadequado eleger redução fechada e colar como melhor solução. O resumo indica redução aberta e artrodese posterior, podendo haver necessidade de complementação anterior."
   },
-  "conceito": "**A fratura do enforcado.** A **espondilolistese traumática do áxis** é a fratura **bilateral da pars interarticularis** de C2, que separa o corpo de C2 dos seus elementos posteriores. Hoje é causada por **hiperextensão** com carga axial (acidentes de carro, mergulho), e não pelo mecanismo de distração do enforcamento judicial. Como a fratura **alarga o canal**, a lesão neurológica é pouco frequente.\n\n**A classificação de Levine e Edwards.** **Tipo I**: desvio **menor que 3 mm**, **sem angulação**; estável; tratada com **colar rígido**. **Tipo II**: desvio **maior que 3 mm** e **angulação** significativa, com lesão do disco C2-C3; mecanismo de hiperextensão e carga axial seguido de flexão de rebote; tratada com **tração** em leve extensão para reduzir e depois **halo** (ou cirurgia). **Tipo IIA**: **pouco desvio** e **grande angulação**, com traço mais horizontal; mecanismo de **flexão-distração**. **Tipo III**: tipo II com **luxação facetária** C2-C3 bilateral; instável, com mais lesão neurológica, exige **cirurgia**.\n\n**A armadilha do IIA.** Como o mecanismo é de flexão e distração, **tracionar** abre ainda mais o espaço C2-C3 e aumenta a angulação: a **tração é contraindicada**. A redução se faz com **extensão e leve compressão axial** no halo. Reconhecer o IIA pela angulação grande sem translação correspondente é a chave.\n\n**As opções cirúrgicas.** Parafusos na pars (osteossíntese direta de C2), artrodese anterior C2-C3 ou fixação posterior C1-C3. Indicadas no tipo III, na falha do halo e nas lesões com disco muito lesado.\n\n**Na prova:** Levine-Edwards **IIA** = angulação sem translação, **flexão-distração**: **não tracionar**; reduzir com extensão e compressão. Tipo III = luxação facetária, cirurgia.",
-  "correta": "**No tipo IIA, tração e flexão devem ser evitadas.** O mecanismo é de flexão-distração, e a tração aumentaria a distração e a angulação; reduz-se com extensão e compressão no halo.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do enforcado (espondilolistese traumática de C2)"
+     ],
+     "blocos": [
+      "fratura-do-enforcado-espondilolistese-traumatica-678a4ddd",
+      "fratura-do-enforcado-espondilolistese-traumatica-91ac3840",
+      "fratura-do-enforcado-espondilolistese-traumatica-ac421b17",
+      "fratura-do-enforcado-espondilolistese-traumatica-9bb667d7",
+      "fratura-do-enforcado-espondilolistese-traumatica-39545179",
+      "fratura-do-enforcado-espondilolistese-traumatica-e49447e8"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "d2a0ea46d772bbd3ff5bfedd09aad9273fc7430ff658c3149291ac3640b4c65d"
+    }
+   ],
+   "questaoSha256": "66f17d62876c8ba02bd155e87b67720467a0dc8948684bc70dbcacc4cb6772fd",
+   "comentarioSha256": "b589d7cd7e1e0b1fa13cc6601063bd2029c582f9125206dccb99323860cdb45a"
+  }
  },
  "trauma-0294": {
   "incorretas": {
@@ -8060,18 +8205,44 @@
   "conferido": false
  },
  "trauma-0325": {
+  "conceito": "Imagine apertar um parafuso que comprime os fragmentos ao longo do seu próprio eixo. Se o traço da fratura fica aproximadamente perpendicular a esse eixo, a compressão aproxima as superfícies. Se fica paralelo, o fragmento pode escorregar. Essa geometria explica a indicação do **parafuso anterior no odontoide**.\n\nO traço favorável é o **transverso ou oblíquo de anterossuperior para posteroinferior**, enquadrado como **Grauer IIb**. No sentido oposto, de anteroinferior para posterossuperior, o traço é IIc e a compressão tende a aumentar o desvio por deslizamento (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\n**Direção do traço e nome do subtipo precisam concordar.** A questão oferece tanto uma geometria inadequada com o nome de outro tipo quanto a geometria correta com a letra errada. Não basta reconhecer “IIb” sem desenhar a inclinação.\n\nMesmo no traço favorável, a técnica exige redução quase anatômica e uma trajetória anterior executável. Cifose acentuada e tórax em barril podem impedir o caminho do implante; por isso a indicação não se resume à letra da classificação.\n\n> **Na prova:** anterossuperior para posteroinferior, Grauer IIb, é o par favorável ao parafuso anterior.",
+  "correta": "**C: anterossuperior para posteroinferior, IIb.** A orientação permite que a compressão axial aproxime os fragmentos, desde que haja redução e trajetória adequadas.",
   "incorretas": {
-   "A": "**Traço desfavorável.** O traço de anteroinferior para posterossuperior faz o parafuso cruzá-lo quase paralelo; e esse padrão é o IIC, e não o IIB.",
-   "B": "**Contraindicação.** O IIC, com traço anteroinferior para posterossuperior, deixa o fragmento deslizar com o parafuso e é tratado com artrodese posterior.",
-   "D": "**Subtipo errado.** O traço está certo, mas corresponde ao IIB; o IIC é o padrão oposto ou cominuído."
+   "A": "**Combina um traço desfavorável com o subtipo favorável.** Anteroinferior para posterossuperior corresponde ao IIc; nele o parafuso tende a produzir deslizamento. Chamar esse desenho de IIb não muda sua mecânica.",
+   "B": "**Classifica corretamente o traço que contraindica a técnica.** O par anteroinferior para posterossuperior com IIc é coerente, mas a pergunta solicita o ideal para fixação anterior. Nesse sentido, a compressão aumenta o desvio em vez de controlar o foco.",
+   "D": "**Acerta o desenho e troca a letra.** O traço anterossuperior para posteroinferior é favorável, porém pertence ao IIb descrito na fonte. IIc é o sentido oposto ou o padrão cominutivo."
   },
-  "conceito": "**A fratura do odontoide.** **Anderson e D'Alonzo** dividem em **tipo I**, avulsão da **ponta** (ligamento alar), estável; **tipo II**, na **base** do dente, a mais comum e com maior taxa de **pseudartrose** (área de vascularização pobre e pouco osso esponjoso); **tipo III**, que se estende ao **corpo** de C2, com boa consolidação em órtese. Os fatores de risco de pseudartrose no tipo II: idade acima de 50 anos, desvio acima de 5 mm, desvio posterior, angulação e atraso no tratamento.\n\n**A subdivisão de Grauer para o tipo II.** Serve para decidir a fixação. **IIA**: fratura **sem desvio** ou com desvio mínimo, sem cominuição; tratada com órtese rígida ou halo. **IIB**: fratura **desviada**, transversa ou com traço **de anterossuperior para posteroinferior**; é a ideal para o **parafuso anterior**, que entra pela borda anteroinferior de C2 e cruza o traço de forma **perpendicular**, gerando compressão. **IIC**: traço **de anteroinferior para posterossuperior** ou **cominuição** significativa; o parafuso anterior cruzaria o traço quase paralelo, fazendo o fragmento **deslizar**, e a opção é a **artrodese posterior C1-C2**.\n\n**Os limites do parafuso anterior.** Além do traço, exige-se ligamento transverso íntegro, fratura redutível, osso de boa qualidade e anatomia que permita a trajetória (**tórax em barril**, cifose cervicotorácica e pescoço curto atrapalham). O parafuso preserva a rotação C1-C2, uma vantagem sobre a artrodese, que tira cerca de metade da rotação cervical.\n\n**No idoso.** O tipo II é muito comum após quedas da própria altura. O halo é mal tolerado. As opções são colar rígido aceitando união fibrosa estável, ou artrodese posterior nos pacientes em condições.\n\n**Na prova:** Grauer **IIB** = traço **anterossuperior para posteroinferior**, ideal para **parafuso anterior**; **IIC** = anteroinferior para posterossuperior ou cominuído, **artrodese posterior**.",
-  "correta": "**Anterossuperior para posteroinferior, IIB.** Nessa orientação o parafuso anterior cruza o traço perpendicularmente e comprime os fragmentos, o que torna o IIB o subtipo ideal.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 47"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-odontoide-c2-b60ceadc",
+      "fratura-do-odontoide-c2-dd277a76",
+      "fratura-do-odontoide-c2-95546c7a",
+      "fratura-do-odontoide-c2-4660967c"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "b8853449db304958743d7d837bc97304620c7f1f9d79269cd0919f80f89e3946"
+    }
+   ],
+   "questaoSha256": "412850a4747d7bf423470d62f56b1f4bf925e468b7ea01df21bae5ec931593bf",
+   "comentarioSha256": "6486e0d9a35992d113922053971704449017909be489269ea0544fbe038b3af0"
+  }
  },
  "trauma-0326": {
   "incorretas": {
