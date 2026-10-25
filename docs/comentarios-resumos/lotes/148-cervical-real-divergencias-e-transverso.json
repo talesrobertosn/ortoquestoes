@@ -1,0 +1,380 @@
+{
+  "coluna-0023": {
+    "questaoSha256": "7f7a411a65e01ba0658abb488fbd2399ac17b4b42e4f59fbf87fb1c0e1df0f9f",
+    "comentarioAnteriorSha256": "fe6a28cf46aeacb8c19d76723349c9a8ed82f8eaaf1b76f28a27ce2641f611d9",
+    "comentario": {
+      "conceito": "Ao expor o arco posterior de C1, avançar lateralmente não significa apenas encontrar mais osso. A **artéria vertebral passa pela borda superior do arco**, aproximando-se da região da dissecção. É ela que justifica o limite de cerca de **1,5 cm da linha média** perguntado.\n\nDepois de subir pelos forames transversos, a vertebral sai do forame de C1 e contorna o arco posterior. O resumo descreve sua posição a cerca de 1 cm da linha média na borda superior e a perfuração da membrana atlanto-occipital posterior perto de 1,5 cm. Por isso distingue o limite geral de 1,5 cm do cuidado ainda mais restrito, de 1 cm, na borda superior (Rockwood, 10ª ed., cap. 48, “A artéria vertebral e a dissecção de C1”).\n\n**O limite depende da superfície exposta.** O capítulo admite dissecção mais lateral pela borda inferior para acessar a massa lateral; não é uma licença para transferir essa margem à borda superior. Também alerta para o ponticulus posticus, uma ponte óssea sobre a artéria que não deve ser confundida com ponto de entrada de parafuso.\n\nA regra numérica ajuda a lembrar o perigo, mas conhecer a anatomia individual e a imagem continua essencial. Um limite decorado não elimina variantes vasculares.\n\n> **Na prova:** limite lateral do arco posterior de C1 protege a vertebral, especialmente vulnerável na borda superior.",
+      "correta": "**A: artéria vertebral.** Seu contorno sobre o arco posterior de C1 explica os limites de 1,5 cm em geral e cerca de 1 cm ao longo da borda superior.",
+      "incorretas": {
+        "B": "**Troca o risco vascular por uma raiz.** A distância pedida acompanha o trajeto da vertebral ao sair de C1 e contornar o arco. Não é uma medida definida pelo espaçamento entre raízes nervosas.",
+        "C": "**É outro cuidado da exposição cervical alta.** O resumo menciona a raiz C2 e a possível anestesia do couro cabeludo se ela for ligada. Isso não explica a restrição junto à borda superior do arco de C1, onde passa a artéria.",
+        "D": "**Não identifica a estrutura que contorna o arco.** O gânglio cervical não é o vaso descrito no sulco superior de C1. A pergunta associa o limite lateral ao caminho da vertebral, não a um limite de dissecção baseado no gânglio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Anatomia aplicada e biomecânica"
+        ],
+        "blocos": [
+          "anatomia-aplicada-e-biomecanica-764a919c"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "ab10086ea0c9e6553432f99a9a7b62900063b62fcc6e260209be1e2a8098b471"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0288": {
+    "questaoSha256": "027db6facaef1f616a58d6be4f465c5e87bb0d47ca2cd2c4520c7b0472576473",
+    "comentarioAnteriorSha256": "a609ade7d9f48706a56014b5a80e96465c15a6c8d996bb59fcebb1b015398e29",
+    "comentario": {
+      "conceito": "Um paciente jovem com síndrome medular central tende a recuperar melhor que um idoso com comorbidades, mas isso não resolve sozinho a comparação entre operar e não operar. A banca marcou **jovens tratados cirurgicamente**, alternativa B; o resumo sustenta com mais clareza a parte da **idade**, sem demonstrar superioridade universal da cirurgia no resultado final.\n\nO capítulo relaciona bom prognóstico à idade jovem, melhor função motora inicial, ausência de alteração de sinal medular e outros fatores. Comorbidades, instabilidade e estreitamento importante do canal pesam desfavoravelmente. É diferente de atribuir toda a evolução ao nome do tratamento escolhido (Rockwood, 10ª ed., cap. 48, “Quando operar a síndrome central”).\n\n**Recuperar mais rápido e terminar melhor são desfechos diferentes.** Uma das séries citadas mostrou melhora mais rápida com cirurgia precoce, mas sem diferença aos dois anos. Os autores descrevem uma estratégia de observar a recuperação e selecionar descompressão, em vez de operar obrigatoriamente todos os pacientes com o mesmo diagnóstico.\n\nAssim, o gabarito B permanece para a prova, com a limitação explícita: não deve ensinar que todo jovem operado terá evolução superior à de qualquer jovem tratado sem cirurgia, nem que idosos não possam se beneficiar de uma indicação bem selecionada.\n\n> **Na prova:** B é o gabarito; jovem é o fator favorável sustentado. O efeito da cirurgia exige contexto e definição do desfecho.",
+      "correta": "**B: jovens, cirúrgico, conforme gabarito oficial.** A idade jovem é fator favorável na fonte. A superioridade final do tratamento cirúrgico sobre o não cirúrgico não é demonstrada de modo universal pelos trechos consultados.",
+      "incorretas": {
+        "A": "**Mantém o fator etário favorável e não pode ser descartada por uma suposta obrigação de operar.** O resumo relata recuperação com observação em muitos pacientes. A opção é considerada incorreta pelo gabarito B, mas a fonte não autoriza ensinar que todo jovem não operado terá pior resultado final.",
+        "C": "**A idade está no sentido menos favorável da comparação.** O resumo considera juventude um fator de bom prognóstico e aponta comorbidades como desfavoráveis. Isso não torna o tratamento externo inadequado para todo idoso; idade e indicação são avaliações diferentes.",
+        "D": "**A cirurgia não anula os fatores associados à idade.** Um idoso pode ter indicação de descompressão, mas isso não o transforma automaticamente no grupo de melhor prognóstico. A fonte não sustenta compensar o perfil clínico apenas por ter sido operado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada. O resumo identifica idade jovem como fator de bom prognóstico, mas a série citada de cirurgia precoce mostra recuperação mais rápida sem diferença aos dois anos. Não concluir superioridade universal no resultado final nem inferioridade obrigatória do tratamento não cirúrgico em jovens. A escolha depende de déficit, recuperação, compressão, estabilidade e condições clínicas."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "A medula cervical e as síndromes incompletas"
+        ],
+        "blocos": [
+          "a-medula-cervical-e-as-sindromes-incompletas-a692e1e8",
+          "a-medula-cervical-e-as-sindromes-incompletas-86444940"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "2066394b670ccfbacec63d171d0ac5a045ee723fcc2d6a28f7136f4b8a7d60d2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0310": {
+    "questaoSha256": "edd9f44d07e15e196d1e5a3df23bc6f863ab895259707233ba6af7e38f2e9b9d",
+    "comentarioAnteriorSha256": "5136e0f9a341afabc0f8d327547d195de60f391fcc32e4c5adbb38822f832e49",
+    "comentario": {
+      "conceito": "O motociclista não sente dor cervical, mas tem uma fratura do fêmur. Uma lesão dolorosa importante pode desviar a atenção do exame do pescoço: no NEXUS, **lesão que distrai impede dispensar a imagem pelos critérios de baixo risco**. É a associação da alternativa A.\n\nO raciocínio não é que a fratura femoral prove uma fratura cervical. Ela retira uma condição necessária para confiar numa liberação exclusivamente clínica por essa regra. O resumo exige paciente alerta, sem intoxicação, sem lesão distrativa, sem dor ou sensibilidade cervical e sem sinais neurológicos para dispensar a imagem segundo o NEXUS (Rockwood, 10ª ed., cap. 48, “Quem precisa de imagem”).\n\n**Ausência de dor não equivale a exame confiável em qualquer contexto.** A avaliação considera também estado mental, exame neurológico e outras lesões. O mecanismo precisa ser analisado, e a regra canadense usa outro algoritmo; não se devem misturar critérios incompletos de sistemas diferentes para liberar a coluna.\n\nAs demais alternativas podem participar da história do acidente, mas não substituem o fator distrativo explicitamente cobrado. O tempo de chegada, por exemplo, não cria uma janela em que investigar a coluna deixe de ser necessário.\n\n> **Na prova:** fratura do fêmur pode ser lesão distrativa; sem dor cervical não basta para dispensar imagem pelo NEXUS.",
+      "correta": "**A: associação com fratura do fêmur.** Ela representa a lesão potencialmente distrativa que impede preencher os critérios de baixo risco do NEXUS, mesmo sem queixa cervical.",
+      "incorretas": {
+        "B": "**Informa gravidade do acidente, mas não substitui o exame deste paciente.** Óbito de outra pessoa merece contextualização do mecanismo. Não é o critério de lesão distrativa descrito pela fonte para a resposta desta questão.",
+        "C": "**Não transforma a avaliação num critério isolado de capacete.** O uso ou não de proteção faz parte da história, mas o NEXUS exige avaliar consciência, intoxicação, dor, neurologia e lesões que distraiam. A alternativa não fornece esse conjunto nem substitui a fratura femoral como pista distrativa.",
+        "D": "**Cria um corte de horas que a regra não contém.** Chegar antes de oito horas não decide sozinho a necessidade de imagem cervical. A indicação continua dependente de achados e confiabilidade do exame, sem uma janela de dispensa baseada apenas no relógio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Imagem: rastreio, radiografia, tomografia e ressonância."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Imagem: rastreio, radiografia, tomografia e ressonância"
+        ],
+        "blocos": [
+          "imagem-rastreio-radiografia-tomografia-e-ressona-f29e4abe"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "2ba91ede9a8f6ee2c7bc4be1215d9d8688e8b7190a6629efe49fad9e2cf226ee"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0322": {
+    "questaoSha256": "707dedfac7a2e5f3e19befc5d5f1223616bd1d850f0d5222f0ce60a0906236d0",
+    "comentarioAnteriorSha256": "77d1099d2ab60d120553af0b0c068ee8ec7fba1feb423d86f8d7c5d7da96f3bf",
+    "comentario": {
+      "conceito": "Na explosão do atlas, as massas laterais se afastam e tensionam a faixa que as une por trás do dente: o **ligamento transverso**. Sua integridade é o elemento que o resumo usa para distinguir a fratura de Jefferson estável da instável.\n\nO osso pode ter vários traços e ainda manter contenção ligamentar, ou a expansão do anel pode romper essa contenção. Por isso não basta contar fragmentos nem considerar tranquilizador um canal amplo; a expansão pode aumentar o canal sem preservar a estabilidade de C1–C2 (Rockwood, 10ª ed., cap. 48, “A fratura de Jefferson” e “O ligamento transverso decide a estabilidade”).\n\n**Spence é uma estimativa indireta.** A soma do deslocamento das massas laterais acima de 6,9 mm é o sinal clássico de possível ruptura. O próprio capítulo discute ampliação radiográfica e correlação imperfeita, de modo que a ressonância pode ser necessária para verificar diretamente o transverso.\n\nA identificação do ligamento ajuda a escolher o que investigar. Não significa que qualquer suspeita numérica determine, sozinha, um tratamento único.\n\n> **Na prova:** a estabilidade da Jefferson depende do transverso; canal amplo e ausência de déficit não comprovam ligamento íntegro.",
+      "correta": "**C: transverso.** Ele conecta as massas laterais atrás do dente e é tensionado pela abertura do anel. A resposta bibliográfica preexistente é preservada; não há gabarito oficial registrado.",
+      "incorretas": {
+        "A": "**Lembra outro estabilizador, mas não a faixa tensionada pela expansão do anel.** Os alares participam da contenção C1–C2 e da limitação do ADI mais amplo. O marcador específico da estabilidade na Jefferson descrito na fonte é o transverso.",
+        "B": "**Não corresponde à estrutura transversal entre as massas.** A pergunta não pede qualquer ligamento associado ao odontoide, mas o que pode falhar quando o anel de C1 se abre. A faixa descrita atrás do dente é o transverso.",
+        "D": "**Troca a contenção atlantoaxial pela estrutura posterior cervical.** O nucal integra a descrição do complexo posterior, junto aos ligamentos interespinhosos e amarelo. Não é o ligamento que une as massas laterais de C1 atrás do dente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica."
+      ],
+      "conferido": false,
+      "provavel": "C"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atlas, ligamento transverso e instabilidade C1–C2",
+          "Anatomia aplicada e biomecânica"
+        ],
+        "blocos": [
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-0c61dc67",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+          "anatomia-aplicada-e-biomecanica-cafff61f"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "35acf736991968e6e396f28c24f5ade2e06af2adef1822cd4a66b9fc9aba3ade"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0463": {
+    "questaoSha256": "682a3e028ae0df3fa5636f668fc4da1e2b005e2fe0bed629252c6ca8b62dc41c",
+    "comentarioAnteriorSha256": "fc853b51607f6a7d61c038f486d0338c55e79657c13ca90ea72a112e34cad739",
+    "comentario": {
+      "conceito": "A tomografia do caso foi descrita como fratura tipo II do odontoide. Isso localiza o traço na **cintura do dente, junto ao corpo de C2**, e não numa pequena avulsão da ponta. A afirmação deve ser julgada **errada**, alternativa B.\n\nAnderson e D’Alonzo separam três padrões: tipo I na ponta, tipo II na cintura e tipo III entrando no corpo esponjoso. Essa distinção anatômica vem antes de discutir o mecanismo exato ou o tratamento (Rockwood, 10ª ed., cap. 48, “Mecanismo e classificação”).\n\n**O item atribui ao tipo II uma descrição avulsiva de outra região.** A classificação do caso já informa que a fratura está na junção do processo com o corpo, não no ápice. Não é necessário aceitar a explicação de avulsão por ligamentos para reconhecer que ela não define o tipo II apresentado.\n\nNo idoso, a decisão terapêutica ainda considera desvio, neurologia, condição clínica e demanda. A letra da classificação não impõe automaticamente a mesma conduta a todas as fraturas.\n\n> **Na prova:** tipo I é ponta; II, cintura; III, corpo. Não deslocar o tipo II para uma avulsão do ápice.",
+      "correta": "**B: Errado.** O tipo II está na cintura do odontoide. A descrição de uma avulsão superior não corresponde à localização que define a fratura do caso.",
+      "incorretas": {
+        "A": "**Aceitaria uma troca de região anatômica.** Uma avulsão da ponta é o padrão tipo I da classificação, enquanto o enunciado informa tipo II. O ponto decisivo é distinguir ponta, cintura e corpo, sem transformar uma descrição ligamentar em definição de todo tipo II."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-odontoide-c2-0213fd6f",
+          "fratura-do-odontoide-c2-8f7d9c62",
+          "fratura-do-odontoide-c2-623f1b6d",
+          "fratura-do-odontoide-c2-bc203da4",
+          "fratura-do-odontoide-c2-3622166b"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "8ed0e1b8b9bf20d3ab0f4a823e64b3903b3451776b264477293ef09b775b5ff1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0464": {
+    "questaoSha256": "7227f16d10de8944ea1bea39c77c7337e1bf8b8aa1fa10fe8390ec569bea0fcf",
+    "comentarioAnteriorSha256": "9c06ab5d67576c7d2d2cbaaed6ea64c2f2909f7cb50300d7d50dee30122422b7",
+    "comentario": {
+      "conceito": "A frase reúne duas ideias: dizer que o tipo II é mais estável que o III e admitir tratamento conservador ou cirúrgico. A segunda possibilidade existe, mas **não torna correta a comparação genérica de estabilidade**. Por isso o item completo é errado.\n\nO tipo II atravessa a cintura do odontoide; o III entra no corpo esponjoso de C2. O resumo descreve consolidação menos previsível e risco importante de pseudartrose no II, enquanto o III costuma consolidar bem imobilizado. Não se deve apresentar o II como inerentemente mais favorável à contenção apenas pelo número da classificação (Rockwood, 10ª ed., cap. 48, “Por que o tipo II não consolida, e o tratamento sem cirurgia”).\n\n**Estabilidade e união óssea também não são sinônimos perfeitos.** O capítulo relata pacientes idosos com união fibrosa estável apesar de ausência de consolidação completa. A avaliação precisa considerar desvio, alinhamento e ligamentos, sem decretar que todo tipo II é instável ou todo III é estável.\n\nPara o tipo II, há situações selecionadas de imobilização e outras de cirurgia. Assim, a leitura correta não é rejeitar a possibilidade de ambos os tratamentos, mas localizar a generalização indevida na primeira parte da afirmação.\n\n> **Na prova:** o item é falso pela comparação de estabilidade; a existência de opções conservadoras e cirúrgicas é verdadeira.",
+      "correta": "**B: Errado.** O resumo não sustenta afirmar que o tipo II seja genericamente mais estável que o III. A escolha entre tratamento externo e cirurgia, contudo, é possível e depende do contexto.",
+      "incorretas": {
+        "A": "**Consideraria verdadeira uma frase parcialmente incorreta.** O tipo II pode receber tratamento conservador ou cirúrgico, mas isso não valida chamá-lo de mais estável que o III. A fonte descreve maior dificuldade de consolidação no II e exige avaliação individual de alinhamento e contenção."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-odontoide-c2-623f1b6d",
+          "fratura-do-odontoide-c2-bc203da4",
+          "fratura-do-odontoide-c2-e392c5c7",
+          "fratura-do-odontoide-c2-b73258e7",
+          "fratura-do-odontoide-c2-3622166b"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "24dda99949704a52ac224f1f647a4c90aec2a30f0842764b079ba118039890c7"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0142": {
+    "questaoSha256": "c02c3b72f51d7f1961a3756a16684a863ea690c41bfda435950016d2b5898650",
+    "comentarioAnteriorSha256": "7cd6189e1a3dffd46e6bee4f67c5f724e85bcd74e29c83b66a2157bb674f3c36",
+    "comentario": {
+      "conceito": "O traço vai de anteroinferior para posterossuperior. Nessa orientação, o parafuso anterior do odontoide pode comprimir ao longo do plano errado e **fazer o fragmento deslizar, aumentando o desvio**. É a contraindicação específica da alternativa D.\n\nO implante aplica compressão ao longo de seu eixo. O resumo considera favoráveis os traços transversos e os oblíquos de anterossuperior para posteroinferior; no oblíquo inverso, tipo IIc de Grauer, a geometria favorece escorregamento em vez de estabilização (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\n**Indicar cirurgia e escolher este parafuso são decisões diferentes.** Desvio maior que 5 mm, angulação maior que 10 graus e déficit neurológico aparecem entre indicações gerais de cirurgia no adulto jovem. Isso não prova que o parafuso anterior seja sempre a técnica adequada, mas também não os transforma, isoladamente, na contraindicação geométrica pedida.\n\nAlém do traço, a fixação anterior exige redução quase anatômica e uma trajetória executável. Uma fratura com indicação de operar pode precisar de outro método se essas condições não forem atendidas.\n\n> **Na prova:** no IIc de anteroinferior para posterossuperior, o parafuso pode deslizar o foco; essa é a contraindicação específica.",
+      "correta": "**D: traço de anteroinferior para posterossuperior.** A orientação desfavorável faz a compressão anterior tender ao deslizamento. É diferente de apenas haver desvio ou necessidade de operar.",
+      "incorretas": {
+        "A": "**É um critério geral para considerar cirurgia, não a geometria contraindicada do método.** Um desvio maior que 5 mm exige avaliação e redução. A possibilidade de usar o parafuso depende de conseguir alinhamento e de o traço permitir compressão estável.",
+        "B": "**Também aponta gravidade e possível indicação operatória.** Angulação maior que 10 graus aparece na seleção cirúrgica do resumo. O método anterior continua dependente da redução e da orientação do traço, não de uma proibição automática baseada só nesse número.",
+        "C": "**Muda a urgência e a necessidade de tratar a lesão, sem definir sozinho o implante.** O déficit neurológico figura nas indicações cirúrgicas gerais. Entre as opções, a contraindicação específica descrita para o parafuso é o traço que produz deslizamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-odontoide-c2-4660967c",
+          "fratura-do-odontoide-c2-3622166b",
+          "fratura-do-odontoide-c2-95546c7a"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "ae5c5a67a8c0c6692b4124d70c423e45cb7b2f7ec294986b0234bfcee2255c14"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-1200": {
+    "questaoSha256": "3364d97ad82b4b9622eff5ec36405fa704112072069549c76f48d360299b1dbf",
+    "comentarioAnteriorSha256": "3bba3ff5ebe9ec37333dbfc104477bcc845ebc8d6fc6862aae3fe12c60749769",
+    "comentario": {
+      "conceito": "A fratura de Jefferson foi descrita como instável, com abertura das massas laterais. O ligamento que precisa ser investigado nesse padrão é o **transverso**, que liga as massas de C1 passando atrás do dente: alternativa E.\n\nNa explosão do atlas, a expansão radial tensiona essa faixa. A regra de Spence procura inferir sua ruptura pela soma do deslocamento lateral sobre C2; o limite clássico é 6,9 mm. Entretanto, o próprio resumo discute ampliação radiográfica e correlação imperfeita, de modo que 7,5 mm isoladamente não substituem a avaliação direta do ligamento (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**A questão já informa a instabilidade; o número não deve virar uma prova infalível.** A resposta identifica a contenção envolvida, mas não autoriza dispensar ressonância ou escolher automaticamente uma cirurgia com base num único afastamento.\n\nTambém é preciso distinguir o transverso do complexo posterior subaxial e da banda anterior. Estar atrás do dente não faz dele apenas mais um ligamento posterior entre vértebras.\n\n> **Na prova:** Jefferson instável e abertura das massas laterais remetem ao transverso, com os limites de Spence reconhecidos.",
+      "correta": "**E: transverso.** A expansão do anel tensiona o ligamento entre as massas laterais atrás do dente. A confirmação da lesão deve ser integrada ao alinhamento e à investigação ligamentar.",
+      "incorretas": {
+        "A": "**Lembra estabilizadores secundários, mas troca o alvo da expansão do anel.** Os alares entram na contenção de C1–C2, especialmente na discussão de ADI mais amplo. O marcador da estabilidade na fratura de Jefferson descrito na fonte é o transverso.",
+        "B": "**Não é a faixa que une as duas massas laterais.** O caso pede a contenção tensionada quando C1 se abre lateralmente. A estrutura definida por esse trajeto posterior ao dente é o transverso.",
+        "C": "**Muda a contenção anatômica em discussão.** A banda anterior da coluna envolve longitudinal anterior e disco na descrição das lesões subaxiais. Ela não corresponde à ligação entre massas de C1 cuja falha explica o padrão da questão.",
+        "D": "**Um rótulo amplo de posterior não identifica o transverso.** O complexo posterior cervical inclui amarelo, interespinhosos e nucal, e tem outro arranjo. Na Jefferson, o ligamento específico passa atrás do dente de uma massa lateral à outra."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Coluna subaxial: classificações e estabilidade; Anatomia aplicada e biomecânica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atlas, ligamento transverso e instabilidade C1–C2",
+          "Coluna subaxial: classificações e estabilidade",
+          "Anatomia aplicada e biomecânica"
+        ],
+        "blocos": [
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+          "coluna-subaxial-classificacoes-e-estabilidade-629a7058",
+          "anatomia-aplicada-e-biomecanica-cafff61f"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "32416349fbd055033f853b0cbb7e7f32d4f1c0b193042f0e8bb9073bac7174fc"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0662": {
+    "questaoSha256": "8d7af8a4c4860e0918833c5498d4d724d2959e9d67995f955bc40c8b4077b687",
+    "comentarioAnteriorSha256": "73091e0d7a31a45a55ef520cc08c3d8dcbb406007961b8619d6511303759fff1",
+    "comentario": {
+      "conceito": "A banca marcou **12 mm**, mas a frase tem um problema: a regra de Harris não estabelece que a **soma** de dois espaços deva ser menor que 12 mm. O resumo descreve dois intervalos, **básio-áxis e básio-dente, cada um avaliado separadamente** com essa referência clássica.\n\nO básio-áxis relaciona a base do crânio à linha que prolonga a parede posterior de C2. O básio-dente vai do básio à ponta do odontoide. A medida da primeira relação não é simplesmente “básio/atlas”, como aparece no enunciado. Conhecer os pontos anatômicos evita decorar um número sem saber o que foi medido (Rockwood, 10ª ed., cap. 48, “Dissociação occipitocervical”).\n\n**Somar medidas mudaria a interpretação.** Dois intervalos individualmente abaixo do corte poderiam ter soma acima de 12, sem que isso represente um critério de instabilidade pela soma. Portanto, o número da alternativa A é mantido como gabarito oficial, mas a regra deve ser aprendida com os intervalos corretos.\n\nO resumo ainda registra um limite menor proposto para o básio-dente na tomografia. Isso também exige conservar modalidade e medida, sem misturar com o critério radiográfico clássico.\n\n> **Na prova:** A é o gabarito; Harris usa 12 mm para cada intervalo, não para a soma.",
+      "correta": "**A: 12 mm, conforme gabarito oficial.** O número coincide com a referência clássica de cada intervalo. A formulação como soma e a menção a básio/atlas não reproduzem a definição do resumo.",
+      "incorretas": {
+        "B": "**Excede a referência individual, mas a soma não tem esse corte validado no trecho.** Se a pergunta fosse corretamente formulada para cada intervalo, 14 mm não seria o limite normal descrito. Pela leitura literal de soma, tampouco há base para instituí-lo como critério.",
+        "C": "**Repete o problema com outro valor.** Dezesseis milímetros não é o corte individual de Harris apresentado. Isso não autoriza dizer que toda soma de 16 mm é instável, porque somar não é o método descrito.",
+        "D": "**Não corrige o erro de definição.** Dezoito milímetros excede o limiar individual de 12 mm, mas não existe no resumo um corte de 18 mm para a soma. Antes de julgar o número, é preciso definir cada medida separadamente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Junção occipitocervical e côndilo occipital."
+      ],
+      "conferido": false,
+      "alerta": "A oficial preservada. O resumo define Harris pelos intervalos básio-áxis e básio-dente, cada um separadamente menor que 12 mm no critério radiográfico clássico. Não estabelece soma abaixo de 12 mm; a primeira medida é básio-áxis, não simplesmente básio/atlas. Não ensinar a soma como critério de estabilidade."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Junção occipitocervical e côndilo occipital"
+        ],
+        "blocos": [
+          "juncao-occipitocervical-e-condilo-occipital-37f370ae"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "63ee6585bcf37fee53cfdf57a8a63bca19b39b28a1e264cf6e0075cc881fcbe8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0164": {
+    "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86",
+    "comentarioAnteriorSha256": "49ca36f076319c19171f9bb7ae5fce40e7b04e76e73f860eb75f93cfd4875931",
+    "comentario": {
+      "conceito": "A seta aponta para a faixa horizontal que cruza **por trás do dente**, conectando as massas laterais de C1. É o **ligamento transverso do atlas**, alternativa C. O formato e a relação com o dente permitem identificá-lo antes de pensar na lista de nomes.\n\nEssa faixa contém a relação entre atlas e áxis. Quando as massas laterais se afastam na fratura de Jefferson, o transverso é tensionado e pode romper; quando falha na instabilidade sagital, o intervalo anterior entre C1 e o dente pode aumentar (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade” e “O intervalo atlanto-odontoide”).\n\n**O dente é o marco ósseo, não a faixa apontada.** Reconhecer essa diferença separa o ligamento de um rótulo associado ao processo odontoide. A membrana tectória é outra estrutura: o resumo a descreve como continuação superior do ligamento longitudinal posterior, sem confundi-la com o feixe transversal curto entre as massas.\n\nO papel estabilizador explica a relevância clínica da identificação, mas a figura anatômica não demonstra uma ruptura. Aqui se pede nomear uma estrutura íntegra do desenho, não diagnosticar instabilidade apenas por ela estar visível.\n\n> **Na prova:** faixa horizontal atrás do dente, entre massas de C1: transverso.",
+      "correta": "**C: transverso do atlas.** A seta se dirige ao feixe horizontal posterior ao dente que une as massas laterais, exatamente o trajeto descrito na fonte.",
+      "incorretas": {
+        "A": "**Escolhe outro estabilizador sem acompanhar a seta.** Os alares participam da contenção atlantoaxial, mas o alvo mostrado é o feixe transversal entre as massas. Reconhecer a função de estabilização de um nome não basta para identificar qualquer ligamento de C1–C2.",
+        "B": "**Confunde o marco ósseo com o tecido apontado.** O odontoide é a projeção de C2 que aparece à frente da faixa. A seta não aponta para o dente, e sim para o ligamento que passa atrás dele.",
+        "D": "**Troca uma continuidade longitudinal por uma faixa transversal.** A membrana tectória continua superiormente o longitudinal posterior. O alvo da seta é o transverso do atlas, definido pelo trajeto de uma massa lateral à outra."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atlas, ligamento transverso e instabilidade C1–C2",
+          "Anatomia aplicada e biomecânica"
+        ],
+        "blocos": [
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+          "anatomia-aplicada-e-biomecanica-bb0e36ca",
+          "anatomia-aplicada-e-biomecanica-b1c9d54b"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "186e191ca4416da4c2fc55bc80e054cb2f7b80cc29e641fba0b58023f83e1867"
+      }
+    ],
+    "imagensConferidas": [
+      "coluna/coluna-0164-1.jpeg"
+    ]
+  }
+}

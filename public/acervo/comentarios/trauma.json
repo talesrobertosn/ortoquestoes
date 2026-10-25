@@ -1448,15 +1448,45 @@
   "conferido": false
  },
  "trauma-0054": {
+  "conceito": "Uma vertebral está lesada e o paciente precisa de estabilização cervical baixa. O planejamento não pode colocar em risco a artéria que permaneceu patente. Entre as opções, o alerta do capítulo recai sobre **acesso posterior com parafusos de massa lateral**, alternativa C.\n\nA lesão unilateral pode produzir poucas sequelas e passar despercebida no exame neurológico. O problema surge se a montagem agride também o lado sadio, convertendo a situação em comprometimento bilateral. O resumo recomenda evitar ou redobrar o cuidado com parafusos de massa lateral e transarticulares no lado da vertebral patente (Rockwood, 10ª ed., cap. 48, “Lesão da artéria vertebral”).\n\n**Isso não equivale a proibir toda via posterior ou declarar todo implante anterior seguro.** A trajetória do parafuso e a anatomia individual decidem o risco. Na exposição anterior, o capítulo também orienta preservar a linha média e não ultrapassar lateralmente as articulações uncovertebrais para proteger a vertebral.\n\nO gabarito identifica a montagem que a fonte destaca como ameaça à circulação remanescente. Ele não dispensa avaliar os demais trajetos ou escolher a via de acordo com a lesão óssea, discal e ligamentar.\n\n> **Na prova:** vertebral lesada: atenção especial à patente do outro lado ao planejar massa lateral; o risco depende do trajeto.",
+  "correta": "**C: posterior com parafuso de massa lateral.** É o trajeto explicitamente destacado na fonte pelo risco de lesar a vertebral remanescente. A advertência é específica ao planejamento neurovascular da montagem.",
   "incorretas": {
-   "A": "A placa anterior trabalha longe da artéria vertebral.",
-   "B": "O parafuso translaminar fica longe da artéria vertebral.",
-   "D": "O espaçador intersomático, colocado no centro, tem baixo risco para a vertebral."
+   "A": "**A via anterior tem riscos, mas não é a montagem destacada pela questão.** A fonte orienta limitar a exposição às referências uncovertebrais e manter a linha média para proteger a vertebral. Placa anterior não significa ausência de risco, mas não corresponde ao alerta específico de massa lateral.",
+   "B": "**Usa um trajeto diferente, que não deve ser equiparado apenas pelo nome da via.** O alerta do resumo não é “toda fixação posterior”: ele se dirige aos trajetos de massa lateral ou transarticulares que ameaçam a vertebral patente. A segurança de uma montagem translaminar também requer planejamento individual.",
+   "D": "**Reconstrói a coluna pela frente e não reproduz o trajeto de risco destacado.** O uso de cage envolve outros critérios de suporte e alinhamento. Proteger a vertebral na exposição anterior continua necessário, mas o implante não é o parafuso de massa lateral perguntado."
   },
-  "conceito": "A **artéria vertebral** sobe pelos **forames transversos** de C6 a C1, logo ao lado da massa lateral. Nas fraturas cervicais, ela pode ser lesada, sobretudo nas fraturas do **forame transverso**, nas **luxações facetárias** e nas lesões de C1 a C3.\n\n**Por que isso muda a cirurgia**: com uma vertebral lesada, a **do outro lado** passa a sustentar a circulação vertebrobasilar sozinha. Qualquer risco a ela é inaceitável.\n\n**O rastreamento**: **angiotomografia** nas fraturas que atravessam o forame transverso, nas luxações facetárias e nas lesões altas.\n\n**A escolha da técnica**: a banca considerou que se deve **evitar o acesso posterior com parafuso de massa lateral**, porque o parafuso passa perto do forame transverso. As técnicas **anteriores** (placa e espaçador central) e o **parafuso translaminar** ficam longe da artéria.\n\n**Os parafusos de pedículo** cervical são os de maior risco para a vertebral e exigem planejamento por TC.\n\n**Na prova**: com lesão da artéria vertebral, evitar o **acesso posterior com parafuso de massa lateral**.",
-  "correta": "A banca considerou que o parafuso de massa lateral passa perto do forame transverso e ameaça a vertebral que sobrou.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Lesão da artéria vertebral; Vias de acesso, fixação e complicações; Anatomia aplicada e biomecânica."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Lesão da artéria vertebral",
+      "Vias de acesso, fixação e complicações",
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "lesao-da-arteria-vertebral-e72216c9",
+      "vias-de-acesso-fixacao-e-complicacoes-e56df247",
+      "anatomia-aplicada-e-biomecanica-abd6af76"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "a4c21752bca010fc057179a1ef772fe5fd44fbbb5d4fc7793860301d7ea3b2d0"
+    }
+   ],
+   "questaoSha256": "4c0a80b3e9c43b2e5501452a1157cbec80387b6692afd62824645bbe075e0684",
+   "comentarioSha256": "2076caa0f8452873623e83a01cd137244d5ee3313f4c3d16e4668408aee0908e"
+  }
  },
  "trauma-0055": {
   "incorretas": {
@@ -3830,15 +3860,43 @@
   }
  },
  "trauma-0142": {
+  "conceito": "O traço vai de anteroinferior para posterossuperior. Nessa orientação, o parafuso anterior do odontoide pode comprimir ao longo do plano errado e **fazer o fragmento deslizar, aumentando o desvio**. É a contraindicação específica da alternativa D.\n\nO implante aplica compressão ao longo de seu eixo. O resumo considera favoráveis os traços transversos e os oblíquos de anterossuperior para posteroinferior; no oblíquo inverso, tipo IIc de Grauer, a geometria favorece escorregamento em vez de estabilização (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\n**Indicar cirurgia e escolher este parafuso são decisões diferentes.** Desvio maior que 5 mm, angulação maior que 10 graus e déficit neurológico aparecem entre indicações gerais de cirurgia no adulto jovem. Isso não prova que o parafuso anterior seja sempre a técnica adequada, mas também não os transforma, isoladamente, na contraindicação geométrica pedida.\n\nAlém do traço, a fixação anterior exige redução quase anatômica e uma trajetória executável. Uma fratura com indicação de operar pode precisar de outro método se essas condições não forem atendidas.\n\n> **Na prova:** no IIc de anteroinferior para posterossuperior, o parafuso pode deslizar o foco; essa é a contraindicação específica.",
+  "correta": "**D: traço de anteroinferior para posterossuperior.** A orientação desfavorável faz a compressão anterior tender ao deslizamento. É diferente de apenas haver desvio ou necessidade de operar.",
   "incorretas": {
-   "A": "O desvio maior que 5 mm indica cirurgia, mas não contraindica o parafuso.",
-   "B": "A angulação maior que 10° é fator de pseudartrose, não contraindicação.",
-   "C": "O déficit neurológico não contraindica o parafuso anterior."
+   "A": "**É um critério geral para considerar cirurgia, não a geometria contraindicada do método.** Um desvio maior que 5 mm exige avaliação e redução. A possibilidade de usar o parafuso depende de conseguir alinhamento e de o traço permitir compressão estável.",
+   "B": "**Também aponta gravidade e possível indicação operatória.** Angulação maior que 10 graus aparece na seleção cirúrgica do resumo. O método anterior continua dependente da redução e da orientação do traço, não de uma proibição automática baseada só nesse número.",
+   "C": "**Muda a urgência e a necessidade de tratar a lesão, sem definir sozinho o implante.** O déficit neurológico figura nas indicações cirúrgicas gerais. Entre as opções, a contraindicação específica descrita para o parafuso é o traço que produz deslizamento."
   },
-  "conceito": "O **parafuso anterior do odontoide** fixa a fratura do **tipo II** comprimindo o dente contra o corpo de C2 e preserva a rotação entre C1 e C2.\n\n**A condição para funcionar**: o parafuso entra pela borda anteroinferior de C2 e sobe para a ponta do dente. Para comprimir, o **traço** precisa ficar **perpendicular** ao parafuso.\n\n**O traço ideal**: **horizontal** ou **oblíquo posterior** (de posteroinferior para anterossuperior).\n\n**O traço que contraindica**: **oblíquo anterior**, de **anteroinferior para posterossuperior**. Ele fica **paralelo** ao parafuso: ao apertar, os fragmentos **deslizam** em vez de comprimir, e o dente desvia.\n\n**As outras contraindicações**: **osteoporose** importante, **fratura antiga** (mais de 6 meses), lesão do **ligamento transverso**, **tórax em barril** ou cifose que impeçam a trajetória.\n\n**Os fatores de pseudartrose** (idade acima de 50 anos, desvio maior que 5 mm, angulação maior que 10°) **indicam cirurgia**, mas não contraindicam o parafuso.\n\n**Na prova**: o parafuso é contraindicado no traço **de anteroinferior para posterossuperior**.",
-  "correta": "O traço anteroinferior para posterossuperior fica paralelo ao parafuso, e a compressão faz o dente deslizar.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-odontoide-c2-4660967c",
+      "fratura-do-odontoide-c2-3622166b",
+      "fratura-do-odontoide-c2-95546c7a"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "ae5c5a67a8c0c6692b4124d70c423e45cb7b2f7ec294986b0234bfcee2255c14"
+    }
+   ],
+   "questaoSha256": "c02c3b72f51d7f1961a3756a16684a863ea690c41bfda435950016d2b5898650",
+   "comentarioSha256": "8208f937ccd1de0f2e85a2f1d0ce7004fd936c7584e44696036ff184f8cc29b4"
+  }
  },
  "trauma-0143": {
   "conceito": "Imagine a fixação posterior curta sustentando uma vértebra cujo corpo está muito cominuído. Se a parte anterior não consegue compartilhar a carga, os implantes posteriores ficam mais expostos às forças de alavanca. A classificação **load sharing, de McCormack**, foi criada para avaliar esse problema.\n\nEla pontua **cominuição do corpo, aposição dos fragmentos e cifose a corrigir**, cada item de 1 a 3. Quanto maior a destruição e a dificuldade de apoio, maior a soma. No resumo, **6 ou menos** permite fixação posterior curta; **mais de 6** sinaliza insuficiência anterior importante e necessidade de montagem posterior longa ou reconstrução anterior e posterior combinada (resumo do Rockwood, 10ª ed., cap. 49, “A classificação de compartilhamento de carga”).\n\nA questão pede o corte associado à via anterior: **acima de 6**, portanto a alternativa D. Não convém transformar isso numa obrigação de via anterior isolada em todo paciente com 7 ou mais; o capítulo admite outras estratégias e lembra que a escala não avalia neurologia nem complexo ligamentar posterior.\n\nLeia a seção no resumo da Biblioteca comparando load sharing e TLICS: uma ajuda a pensar o suporte da montagem, a outra reúne domínios para orientar a conduta.",
@@ -7369,15 +7427,46 @@
   }
  },
  "trauma-0287": {
+  "conceito": "A alternativa B reúne dois sinais de deformidade que pesam na decisão: **perda de altura acima de 50% e cifose acima de 30 graus**. Há, porém, um erro de unidade na opção registrada: cifose deve ser expressa em graus, não em porcentagem.\n\nA redução da altura do corpo e a angulação podem indicar perda importante de sustentação. O resumo as apresenta como indicações relativas no paciente neurologicamente intacto, enquanto déficit e ruptura confirmada do complexo posterior são motivos mais fortes para estabilização. O alinhamento e a contenção ligamentar importam além do número de colunas de Denis (Rockwood, 10ª ed., cap. 49, “Quando operar a explosão”).\n\n**Ocupação do canal isolada não decide cirurgia.** Um fragmento retropulsado sem déficit pode remodelar; a fonte não associa a porcentagem de canal, sozinha, a pior resultado. Por isso não se deve substituir instabilidade ou déficit por um corte automático de retropulsão.\n\nO escore TLICS também deve ser lido corretamente: 3 ou menos costuma orientar tratamento não cirúrgico, 4 é intermediário e 5 ou mais favorece cirurgia. Ter duas colunas atingidas não cancela os outros domínios nem torna “TLICS 3” um critério cirúrgico.\n\n> **Na prova:** B é o gabarito, lendo cifose em graus e reconhecendo que os números são critérios relativos no contexto clínico.",
+  "correta": "**B: perda de altura acima de 50% e cifose acima de 30 graus.** O gabarito é preservado com correção explicativa da unidade, sem alterar a opção original. No paciente intacto, são critérios relativos, integrados à estabilidade e aos demais achados.",
   "incorretas": {
-   "A": "Lesão de duas colunas com TLICS 3 é tratada de forma conservadora.",
-   "C": "A retropulsão sozinha não indica cirurgia, e uma cifose de 10 é pequena.",
-   "D": "A perda de altura está certa, mas a retropulsão abaixo de 30% não é critério cirúrgico."
+   "A": "**Confunde uma descrição estrutural com o corte de um escore.** Explosões podem atingir colunas anterior e média sem exigir cirurgia se estiverem estáveis e sem déficit. Um TLICS de 3 favorece tratamento não cirúrgico, não confirma a indicação operatória.",
+   "C": "**Usa invasão do canal como atalho e um limiar angular que não é o descrito.** Retropulsão acima de 30%, isoladamente e sem déficit, não é indicação automática na fonte. A opção ainda expressa cifose em porcentagem, unidade inadequada.",
+   "D": "**Acerta a perda de altura e acrescenta uma relação sem critério cirúrgico isolado.** Retropulsão menor que 30% não se torna indicação para operar. É preciso avaliar déficit, complexo posterior, deformidade e capacidade de manter o alinhamento."
   },
-  "conceito": "Na **fratura toracolombar**, alguns parâmetros de imagem indicam **instabilidade** e favorecem a cirurgia:\n\n**perda de altura** do corpo vertebral maior que **50%**;\n\n**cifose** local maior que **30°** (a alternativa fala em 30%);\n\n**lesão do complexo ligamentar posterior**;\n\n**déficit neurológico**, sobretudo progressivo;\n\n**translação** ou luxação.\n\n**A retropulsão**: o fragmento do muro posterior dentro do canal assusta, mas a **ocupação do canal**, sozinha, não define cirurgia em paciente sem déficit: o fragmento tende a ser **reabsorvido** com o tempo. Critérios antigos usavam ocupação maior que 50%.\n\n**O TLICS**: soma morfologia (compressão 1, explosão 2, translação 3, distração 4), estado neurológico (0 a 3) e complexo ligamentar posterior (0 a 3); até 3, conservador; 5 ou mais, cirurgia. Um TLICS de 3 é **conservador**.\n\n**Denis**: a lesão de duas colunas (anterior e média) é a explosão, que pode ser estável e tratada sem cirurgia.\n\n**Na prova**: são critérios cirúrgicos a **perda de altura maior que 50%** e a **cifose maior que 30**.",
-  "correta": "O corpo que perde mais da metade da altura e a cifose acima de 30 indicam instabilidade e cirurgia.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Fratura em explosão (A3 e A4); Classificações: estabilidade, Denis, AO Spine e TLICS."
+  ],
+  "conferido": false,
+  "alerta": "B oficial preservada. A alternativa registrada escreve cifose em porcentagem; a fonte usa graus: perda de altura >50% e cifose de 30 graus ou mais são critérios relativos no paciente intacto. Déficit e ruptura confirmada do complexo posterior têm outro peso. A retropulsão isolada, sem déficit, não decide cirurgia.",
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-49-fratura-toracolombar",
+     "titulo": "Fraturas e luxações da coluna toracolombar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura em explosão (A3 e A4)",
+      "Classificações: estabilidade, Denis, AO Spine e TLICS"
+     ],
+     "blocos": [
+      "fratura-em-explosao-a3-e-a4-b87f9844",
+      "fratura-em-explosao-a3-e-a4-eb5b42b1",
+      "fratura-em-explosao-a3-e-a4-c49f544e",
+      "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b"
+     ],
+     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "trechosSha256": "3819d0f2bce7cc59b02922b87a61c78d207324c8392ddd96e8aab6de9fc1dafd"
+    }
+   ],
+   "questaoSha256": "320ebefcab90de088b072e72132e20b02193fcfc766bf186932bb8e42a4fc25f",
+   "comentarioSha256": "4dd6d6a20bc395f091f9c8b4571d3d2aa93c4aaa23573d9649a49a6807c2f157"
+  }
  },
  "trauma-0288": {
   "conceito": "A **zona I de Denis** fica na **porção lateral do sacro, na asa**, e é a **mais comum**. A alternativa C combina corretamente localização e frequência.\n\nA referência anatômica são os **forames sacrais**. Um traço lateral a eles é zona I; quando passa pelos forames, é zona II; quando alcança a região medial e o canal, é zona III. A asa lateral reúne quase metade dos casos na descrição do resumo, enquanto a zona III é a menos frequente, com aproximadamente 16% (Rockwood, 10ª ed., cap. 50, “Denis: as três zonas”).\n\nO risco neurológico segue o sentido oposto à frequência. A zona I tem risco baixo, mas não inexistente; a zona III ameaça raízes e cauda equina e chega a 60% de lesão neurológica. Não se deve confundir “mais comum” com “mais grave”.\n\nTambém não basta chamar toda lesão de asa de estável. O traço completo, da cortical anterior à posterior, a associação anterior e o desvio influenciam a estabilidade do anel.",
@@ -11468,18 +11557,42 @@
   }
  },
  "trauma-0662": {
+  "conceito": "A banca marcou **12 mm**, mas a frase tem um problema: a regra de Harris não estabelece que a **soma** de dois espaços deva ser menor que 12 mm. O resumo descreve dois intervalos, **básio-áxis e básio-dente, cada um avaliado separadamente** com essa referência clássica.\n\nO básio-áxis relaciona a base do crânio à linha que prolonga a parede posterior de C2. O básio-dente vai do básio à ponta do odontoide. A medida da primeira relação não é simplesmente “básio/atlas”, como aparece no enunciado. Conhecer os pontos anatômicos evita decorar um número sem saber o que foi medido (Rockwood, 10ª ed., cap. 48, “Dissociação occipitocervical”).\n\n**Somar medidas mudaria a interpretação.** Dois intervalos individualmente abaixo do corte poderiam ter soma acima de 12, sem que isso represente um critério de instabilidade pela soma. Portanto, o número da alternativa A é mantido como gabarito oficial, mas a regra deve ser aprendida com os intervalos corretos.\n\nO resumo ainda registra um limite menor proposto para o básio-dente na tomografia. Isso também exige conservar modalidade e medida, sem misturar com o critério radiográfico clássico.\n\n> **Na prova:** A é o gabarito; Harris usa 12 mm para cada intervalo, não para a soma.",
+  "correta": "**A: 12 mm, conforme gabarito oficial.** O número coincide com a referência clássica de cada intervalo. A formulação como soma e a menção a básio/atlas não reproduzem a definição do resumo.",
   "incorretas": {
-   "B": "**Limite alto demais.** Aceitar até 14 mm deixaria passar lesões instáveis.",
-   "C": "**Limite alto demais.** Com 16 mm a dissociação já seria evidente.",
-   "D": "**Limite alto demais.** O corte usado é 12 mm, bem abaixo de 18."
+   "B": "**Excede a referência individual, mas a soma não tem esse corte validado no trecho.** Se a pergunta fosse corretamente formulada para cada intervalo, 14 mm não seria o limite normal descrito. Pela leitura literal de soma, tampouco há base para instituí-lo como critério.",
+   "C": "**Repete o problema com outro valor.** Dezesseis milímetros não é o corte individual de Harris apresentado. Isso não autoriza dizer que toda soma de 16 mm é instável, porque somar não é o método descrito.",
+   "D": "**Não corrige o erro de definição.** Dezoito milímetros excede o limiar individual de 12 mm, mas não existe no resumo um corte de 18 mm para a soma. Antes de julgar o número, é preciso definir cada medida separadamente."
   },
-  "conceito": "**A dissociação occipitocervical.** É a lesão ligamentar entre o **occipital** e a coluna cervical alta (C1 e C2), geralmente por trauma de alta energia com **hiperextensão e distração**. É de altíssima mortalidade, muitas vezes fatal no local; os sobreviventes, cada vez mais frequentes com o atendimento pré-hospitalar, podem ter a lesão **perdida**, porque a radiografia parece quase normal e o paciente chega intubado. Mais comum em **crianças**, pela cabeça grande e côndilos pequenos.\n\n**As medidas de Harris.** A **regra dos 12**: no perfil cervical, o **intervalo básio-odontoide** (BDI, do básio à ponta do dente) e o **intervalo básio-axial** (BAI, do básio a uma linha ao longo da face posterior do corpo de C2) devem ser **menores que 12 mm** no adulto. Valores maiores sugerem dissociação. Na tomografia, o limite do BDI é menor, cerca de **8,5 a 10 mm**.\n\n**Outras medidas.** A **razão de Powers**: distância do básio ao arco posterior de C1 dividida pela distância do opístio ao arco anterior de C1; maior que **1** indica luxação **anterior**, mas ela não detecta as luxações posteriores e as distrações puras. O **intervalo côndilo-C1** alargado na tomografia (acima de cerca de 1,5 a 2 mm) é muito sensível. Edema pré-vertebral e hemorragia subaracnoide na base do crânio são pistas indiretas.\n\n**O tratamento.** **Imobilização** imediata (evitar tração, que distrai a lesão), estabilização com **artrodese occipitocervical** posterior. A classificação de **Traynelis** descreve a direção do deslocamento: I anterior, II distração vertical, III posterior.\n\n**Na prova:** regra de Harris = BDI e BAI **menores que 12 mm**; acima disso, suspeite de **dissociação occipitocervical**; não tracionar.",
-  "correta": "**12 mm.** Pela regra de Harris, os intervalos básio-odontoide e básio-axial devem ficar abaixo de 12 mm; valores maiores sugerem dissociação occipitocervical.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 41"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Junção occipitocervical e côndilo occipital."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "alerta": "A oficial preservada. O resumo define Harris pelos intervalos básio-áxis e básio-dente, cada um separadamente menor que 12 mm no critério radiográfico clássico. Não estabelece soma abaixo de 12 mm; a primeira medida é básio-áxis, não simplesmente básio/atlas. Não ensinar a soma como critério de estabilidade.",
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Junção occipitocervical e côndilo occipital"
+     ],
+     "blocos": [
+      "juncao-occipitocervical-e-condilo-occipital-37f370ae"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "63ee6585bcf37fee53cfdf57a8a63bca19b39b28a1e264cf6e0075cc881fcbe8"
+    }
+   ],
+   "questaoSha256": "8d7af8a4c4860e0918833c5498d4d724d2959e9d67995f955bc40c8b4077b687",
+   "comentarioSha256": "45d4cd515e1bcffeb39c6ae8b0ad205332bf4368268053e169148b932f6fee6b"
+  }
  },
  "trauma-0663": {
   "conceito": "Um projétil retido não é retirado automaticamente só porque contém chumbo. O risco muda quando ele está **dentro de uma articulação**: o capítulo destaca a absorção de chumbo pelo **líquido sinovial**, fundamento para a retirada intra-articular.\n\nEsse mecanismo é diferente da indicação de descompressão por um projétil no canal vertebral. No primeiro caso, a preocupação é a exposição ao ambiente articular e a absorção; no segundo, a decisão neurológica depende de compressão e evolução do déficit. Misturar essas razões pode levar à falsa regra de retirar qualquer fragmento em qualquer localização (resumo do Rockwood, 10ª ed., cap. 49, “Ferimento da coluna por arma de fogo”).\n\nA fonte também relata intoxicação sistêmica a partir da coluna como raríssima, em casos com fragmento no disco. Isso reforça a importância do ambiente onde o chumbo está, sem permitir declarar risco zero em todas as demais posições. A pergunta procura a localização que caracteriza a indicação pelo risco de intoxicação.\n\nO resumo da Biblioteca discute toxicidade e descompressão separadamente nessa seção.",
@@ -23674,20 +23787,48 @@
   "conferido": false
  },
  "trauma-1200": {
-  "conceito": "**Fratura de Jefferson (fratura explosão do atlas).** É causada por **compressão axial** (por exemplo, mergulho em água rasa, queda sobre a cabeça), que empurra os côndilos occipitais contra as massas laterais de C1 e rompe o anel em vários pontos (arcos anterior e posterior). As massas laterais se afastam lateralmente.\n\n**Estabilidade e o ligamento transverso.** O **ligamento transverso** do atlas mantém o dente de C2 encostado no arco anterior de C1 e impede o afastamento das massas laterais. A estabilidade da fratura depende dele.\n\n**Regra de Spence.** Na radiografia transoral (AP com boca aberta) ou na tomografia coronal, soma-se o deslocamento lateral das massas laterais de C1 em relação às facetas de C2, nos dois lados.\n- Soma **acima de cerca de 6,9 mm** (por magnificação radiográfica; cerca de 8,1 mm na radiografia sem correção) sugere **ruptura do ligamento transverso** e instabilidade.\n- O caso tem afastamento de 7,5 mm, compatível com lesão do transverso.\n\n**Outros sinais.** Intervalo atlas-dente acima de 3 mm em adultos na radiografia em perfil; avaliação direta do ligamento pela ressonância.\n\n**Classificação de Dickman.** Tipo I: ruptura intrassubstancial do ligamento (não cicatriza, indica cirurgia); tipo II: avulsão óssea da inserção (pode consolidar com imobilização).\n\n**Tratamento.** Fraturas estáveis: colar rígido ou halo. Instáveis: halo-colete ou fixação cirúrgica (C1-C2 ou occipitocervical, ou osteossíntese de C1 em casos selecionados).\n\n> Jefferson instável (afastamento acima de cerca de 7 mm pela regra de Spence): ruptura do ligamento transverso.",
-  "correta": "**E: transverso.** O afastamento das massas laterais de C1 acima de cerca de 6,9 a 8,1 mm (regra de Spence) indica ruptura do ligamento transverso do atlas, responsável pela estabilidade do complexo C1-C2. Com 7,5 mm de afastamento, a fratura de Jefferson é considerada instável.",
+  "conceito": "A fratura de Jefferson foi descrita como instável, com abertura das massas laterais. O ligamento que precisa ser investigado nesse padrão é o **transverso**, que liga as massas de C1 passando atrás do dente: alternativa E.\n\nNa explosão do atlas, a expansão radial tensiona essa faixa. A regra de Spence procura inferir sua ruptura pela soma do deslocamento lateral sobre C2; o limite clássico é 6,9 mm. Entretanto, o próprio resumo discute ampliação radiográfica e correlação imperfeita, de modo que 7,5 mm isoladamente não substituem a avaliação direta do ligamento (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**A questão já informa a instabilidade; o número não deve virar uma prova infalível.** A resposta identifica a contenção envolvida, mas não autoriza dispensar ressonância ou escolher automaticamente uma cirurgia com base num único afastamento.\n\nTambém é preciso distinguir o transverso do complexo posterior subaxial e da banda anterior. Estar atrás do dente não faz dele apenas mais um ligamento posterior entre vértebras.\n\n> **Na prova:** Jefferson instável e abertura das massas laterais remetem ao transverso, com os limites de Spence reconhecidos.",
+  "correta": "**E: transverso.** A expansão do anel tensiona o ligamento entre as massas laterais atrás do dente. A confirmação da lesão deve ser integrada ao alinhamento e à investigação ligamentar.",
   "incorretas": {
-   "A": "**Os ligamentos alares** ligam o dente aos côndilos occipitais e limitam a rotação; sua avulsão produz a fratura do odontoide tipo I, mas eles não determinam a estabilidade da fratura de Jefferson.",
-   "B": "**O ligamento apical** liga a ponta do dente ao forame magno e tem pouca importância mecânica.",
-   "C": "**O ligamento longitudinal anterior** (ou a membrana atlanto-occipital anterior) não é o responsável pela contenção das massas laterais de C1.",
-   "D": "**O ligamento longitudinal posterior** e a membrana tectória não são os determinantes da estabilidade da fratura de Jefferson."
+   "A": "**Lembra estabilizadores secundários, mas troca o alvo da expansão do anel.** Os alares entram na contenção de C1–C2, especialmente na discussão de ADI mais amplo. O marcador da estabilidade na fratura de Jefferson descrito na fonte é o transverso.",
+   "B": "**Não é a faixa que une as duas massas laterais.** O caso pede a contenção tensionada quando C1 se abre lateralmente. A estrutura definida por esse trajeto posterior ao dente é o transverso.",
+   "C": "**Muda a contenção anatômica em discussão.** A banda anterior da coluna envolve longitudinal anterior e disco na descrição das lesões subaxiais. Ela não corresponde à ligação entre massas de C1 cuja falha explica o padrão da questão.",
+   "D": "**Um rótulo amplo de posterior não identifica o transverso.** O complexo posterior cervical inclui amarelo, interespinhosos e nucal, e tem outro arranjo. Na Jefferson, o ligamento específico passa atrás do dente de uma massa lateral à outra."
   },
   "referencias": [
-   "Spence KF Jr, Decker S, Sell KW. Bursting atlantal fracture associated with rupture of the transverse ligament. J Bone Joint Surg Am. 1970;52(3):543-549.",
-   "Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery. 1996;38(1):44-50."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Coluna subaxial: classificações e estabilidade; Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2",
+      "Coluna subaxial: classificações e estabilidade",
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+      "coluna-subaxial-classificacoes-e-estabilidade-629a7058",
+      "anatomia-aplicada-e-biomecanica-cafff61f"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "32416349fbd055033f853b0cbb7e7f32d4f1c0b193042f0e8bb9073bac7174fc"
+    }
+   ],
+   "questaoSha256": "3364d97ad82b4b9622eff5ec36405fa704112072069549c76f48d360299b1dbf",
+   "comentarioSha256": "aa26f1ca8d7c9f7a584beec7f39a27c85e70d17fc29ddc4e683e6d15ecd55f1c"
+  }
  },
  "trauma-1201": {
   "conceito": "**Fraturas da diáfise do fêmur (AO/OTA 32).** A classificação divide em:\n- **32-A**: simples (espiral, oblíqua, transversa).\n- **32-B**: em cunha.\n- **32-C**: **multifragmentária** (segmentar ou cominutiva).\n\n**Tratamento padrão no adulto.** A **haste intramedular bloqueada**, geralmente fresada e introduzida de forma anterógrada (pela fossa piriforme ou pelo trocânter), é o tratamento de escolha para a grande maioria das fraturas diafisárias do fêmur.\n- Consolidação acima de 95%.\n- Técnica fechada, que preserva o hematoma e a biologia da fratura.\n- Estabilidade relativa que permite carga precoce.\n- O bloqueio proximal e distal controla o comprimento e a rotação, mesmo em fraturas cominutivas (32-C).\n\n**Idosos.** Pacientes idosos com comorbidades (diabetes, hipertensão) se beneficiam ainda mais de uma fixação estável que permita **mobilização e carga precoces**, reduzindo complicações (pneumonia, trombose, úlceras). A haste intramedular é minimamente invasiva e permite isso.\n\n**Outras opções.** Placa em ponte (fraturas próximas a implantes, canal estreito), fixador externo (controle de danos).\n\n**Por que não as outras alternativas.** DHS e DCS são implantes para fraturas da região trocantérica e do fêmur distal, respectivamente; artroplastias tratam fraturas do colo do fêmur, não da diáfise.\n\n> Fratura diafisária do fêmur no adulto (inclusive idoso): haste intramedular bloqueada.",

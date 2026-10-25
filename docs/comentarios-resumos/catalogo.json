@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 636,
+  "pendente": 617,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 237,
-  "pendente-inspecao-imagem": 89,
-  "revisada": 1310
+  "pendente-fonte": 240,
+  "pendente-inspecao-imagem": 88,
+  "revisada": 1327
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -125,11 +125,11 @@
    "titulo": "Fraturas e luxações da coluna cervical",
    "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
    "estados": {
-    "pendente": 49,
+    "pendente": 33,
     "pendente-anulada": 1,
-    "pendente-fonte": 6,
-    "pendente-inspecao-imagem": 6,
-    "revisada": 70
+    "pendente-fonte": 9,
+    "pendente-inspecao-imagem": 5,
+    "revisada": 84
    }
   },
   "rockwood10-49-fratura-toracolombar": {
@@ -137,10 +137,10 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente": 14,
+    "pendente": 9,
     "pendente-fonte": 27,
     "pendente-inspecao-imagem": 7,
-    "revisada": 78
+    "revisada": 83
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -464,7 +464,7 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -479,7 +479,30 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "7f7a411a65e01ba0658abb488fbd2399ac17b4b42e4f59fbf87fb1c0e1df0f9f"
+   "questaoSha256": "7f7a411a65e01ba0658abb488fbd2399ac17b4b42e4f59fbf87fb1c0e1df0f9f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Anatomia aplicada e biomecânica"
+      ],
+      "blocos": [
+       "anatomia-aplicada-e-biomecanica-764a919c"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "ab10086ea0c9e6553432f99a9a7b62900063b62fcc6e260209be1e2a8098b471"
+     }
+    ],
+    "questaoSha256": "7f7a411a65e01ba0658abb488fbd2399ac17b4b42e4f59fbf87fb1c0e1df0f9f",
+    "comentarioSha256": "e204d9ad62020558709913b489e3c48a66c60283b4a2010f4493624fcc7d89a6"
+   }
   },
   "coluna-0025": {
    "tema": "coluna",
@@ -1404,7 +1427,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1419,7 +1442,36 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "17f44dd4787687f4fd6fcf09a88e1086e7ecc7df143af7978c3c4ebe31c245aa"
+   "questaoSha256": "17f44dd4787687f4fd6fcf09a88e1086e7ecc7df143af7978c3c4ebe31c245aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+       "vias-de-acesso-fixacao-e-complicacoes-b201fbe8",
+       "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a",
+       "vias-de-acesso-fixacao-e-complicacoes-a35e7c44",
+       "vias-de-acesso-fixacao-e-complicacoes-508207a6",
+       "vias-de-acesso-fixacao-e-complicacoes-af7593e4",
+       "vias-de-acesso-fixacao-e-complicacoes-6daa51d4"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "5c0b45f1c968cb5f247856680cc6a07f0960ead8d6cd2cbb03ad2a487b55e456"
+     }
+    ],
+    "questaoSha256": "17f44dd4787687f4fd6fcf09a88e1086e7ecc7df143af7978c3c4ebe31c245aa",
+    "comentarioSha256": "d0ffc1b516945f9f56f6d782685c5e5eb7751e82e884f47d67581f79dadcf602"
+   }
   },
   "coluna-0152": {
    "tema": "coluna",
@@ -1548,7 +1600,7 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1563,7 +1615,47 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "98cc693debf3432156911c603f66517e06ca04ef7d8b4b4d3ab18fa5e9e18cb1"
+   "questaoSha256": "98cc693debf3432156911c603f66517e06ca04ef7d8b4b4d3ab18fa5e9e18cb1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "A medula cervical e as síndromes incompletas"
+      ],
+      "blocos": [
+       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+       "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "3e210b1bdde6ecf64cab339fbda9a754abd1d5c1a41d074219262f6f683accfb"
+     },
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "42decc5b92cbd321b2de733438075f2b17d65953b31a663790c827afef700b9d"
+     }
+    ],
+    "questaoSha256": "98cc693debf3432156911c603f66517e06ca04ef7d8b4b4d3ab18fa5e9e18cb1",
+    "comentarioSha256": "119b6d9adeb320ebbc7e36fedf837e9a39bf41c98575527f0caaf56268e933fa"
+   }
   },
   "coluna-0162": {
    "tema": "coluna",
@@ -1638,8 +1730,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -1653,7 +1745,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86"
+   "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atlas, ligamento transverso e instabilidade C1–C2",
+       "Anatomia aplicada e biomecânica"
+      ],
+      "blocos": [
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+       "anatomia-aplicada-e-biomecanica-bb0e36ca",
+       "anatomia-aplicada-e-biomecanica-b1c9d54b"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "186e191ca4416da4c2fc55bc80e054cb2f7b80cc29e641fba0b58023f83e1867"
+     }
+    ],
+    "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86",
+    "comentarioSha256": "aa0b346435cd60cdcbac71e3f7d0b2d21e8ff174a70ce83bb1a6dd75d885e98a"
+   }
   },
   "coluna-0165": {
    "tema": "coluna",
@@ -2193,7 +2312,7 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -2208,7 +2327,31 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "027db6facaef1f616a58d6be4f465c5e87bb0d47ca2cd2c4520c7b0472576473"
+   "questaoSha256": "027db6facaef1f616a58d6be4f465c5e87bb0d47ca2cd2c4520c7b0472576473",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "A medula cervical e as síndromes incompletas"
+      ],
+      "blocos": [
+       "a-medula-cervical-e-as-sindromes-incompletas-a692e1e8",
+       "a-medula-cervical-e-as-sindromes-incompletas-86444940"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "2066394b670ccfbacec63d171d0ac5a045ee723fcc2d6a28f7136f4b8a7d60d2"
+     }
+    ],
+    "questaoSha256": "027db6facaef1f616a58d6be4f465c5e87bb0d47ca2cd2c4520c7b0472576473",
+    "comentarioSha256": "50e1f6a6f74601ebddbd543aa1eac04deb4a6b1b8e850f0780e7aceca3d05cdb"
+   }
   },
   "coluna-0292": {
    "tema": "coluna",
@@ -2624,7 +2767,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -2640,7 +2783,30 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "edd9f44d07e15e196d1e5a3df23bc6f863ab895259707233ba6af7e38f2e9b9d"
+   "questaoSha256": "edd9f44d07e15e196d1e5a3df23bc6f863ab895259707233ba6af7e38f2e9b9d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Imagem: rastreio, radiografia, tomografia e ressonância"
+      ],
+      "blocos": [
+       "imagem-rastreio-radiografia-tomografia-e-ressona-f29e4abe"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "2ba91ede9a8f6ee2c7bc4be1215d9d8688e8b7190a6629efe49fad9e2cf226ee"
+     }
+    ],
+    "questaoSha256": "edd9f44d07e15e196d1e5a3df23bc6f863ab895259707233ba6af7e38f2e9b9d",
+    "comentarioSha256": "654c520327542e25bff94b0571a3df5c652b1716c597ca98d34fbbac160e001e"
+   }
   },
   "coluna-0315": {
    "tema": "coluna",
@@ -2724,7 +2890,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -2739,7 +2905,35 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "707dedfac7a2e5f3e19befc5d5f1223616bd1d850f0d5222f0ce60a0906236d0"
+   "questaoSha256": "707dedfac7a2e5f3e19befc5d5f1223616bd1d850f0d5222f0ce60a0906236d0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atlas, ligamento transverso e instabilidade C1–C2",
+       "Anatomia aplicada e biomecânica"
+      ],
+      "blocos": [
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-0c61dc67",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+       "anatomia-aplicada-e-biomecanica-cafff61f"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "35acf736991968e6e396f28c24f5ade2e06af2adef1822cd4a66b9fc9aba3ade"
+     }
+    ],
+    "questaoSha256": "707dedfac7a2e5f3e19befc5d5f1223616bd1d850f0d5222f0ce60a0906236d0",
+    "comentarioSha256": "49ffce1256ac5c69e47fdfd0cd2f6342232406546ef4c650b07a9d228f6a0805"
+   }
   },
   "coluna-0323": {
    "tema": "coluna",
@@ -2889,14 +3083,41 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "16a87eb875eb896b316175ebc497dc57fb54c84581c88f18a1d4145a0bd69fe1"
+   "questaoSha256": "16a87eb875eb896b316175ebc497dc57fb54c84581c88f18a1d4145a0bd69fe1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Flexão-distração e fratura de Chance (tipo B1 e B2)",
+       "Hiperextensão na coluna anquilosada (B3) e fratura-luxação (C)"
+      ],
+      "blocos": [
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-a4dcbec6",
+       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667",
+       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "217885a50251a6a480299c9596940c11a3f2a2c0252581622d7bf7160743f5bd"
+     }
+    ],
+    "questaoSha256": "16a87eb875eb896b316175ebc497dc57fb54c84581c88f18a1d4145a0bd69fe1",
+    "comentarioSha256": "e8557769c94369abc156c0a6e6f33cd5959a2f0b0f7760148cb5e3b90a89eb5e"
+   }
   },
   "coluna-0351": {
    "tema": "coluna",
@@ -3919,7 +4140,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3934,7 +4155,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "682a3e028ae0df3fa5636f668fc4da1e2b005e2fe0bed629252c6ca8b62dc41c"
+   "questaoSha256": "682a3e028ae0df3fa5636f668fc4da1e2b005e2fe0bed629252c6ca8b62dc41c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "fratura-do-odontoide-c2-0213fd6f",
+       "fratura-do-odontoide-c2-8f7d9c62",
+       "fratura-do-odontoide-c2-623f1b6d",
+       "fratura-do-odontoide-c2-bc203da4",
+       "fratura-do-odontoide-c2-3622166b"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "8ed0e1b8b9bf20d3ab0f4a823e64b3903b3451776b264477293ef09b775b5ff1"
+     }
+    ],
+    "questaoSha256": "682a3e028ae0df3fa5636f668fc4da1e2b005e2fe0bed629252c6ca8b62dc41c",
+    "comentarioSha256": "2868f2ad85e493ac8d4b7b32843a2becdad22f9ce66cab5500099cbb10662cd9"
+   }
   },
   "coluna-0464": {
    "tema": "coluna",
@@ -3944,7 +4192,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3959,7 +4207,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "7227f16d10de8944ea1bea39c77c7337e1bf8b8aa1fa10fe8390ec569bea0fcf"
+   "questaoSha256": "7227f16d10de8944ea1bea39c77c7337e1bf8b8aa1fa10fe8390ec569bea0fcf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "fratura-do-odontoide-c2-623f1b6d",
+       "fratura-do-odontoide-c2-bc203da4",
+       "fratura-do-odontoide-c2-e392c5c7",
+       "fratura-do-odontoide-c2-b73258e7",
+       "fratura-do-odontoide-c2-3622166b"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "24dda99949704a52ac224f1f647a4c90aec2a30f0842764b079ba118039890c7"
+     }
+    ],
+    "questaoSha256": "7227f16d10de8944ea1bea39c77c7337e1bf8b8aa1fa10fe8390ec569bea0fcf",
+    "comentarioSha256": "641b1fe570fa1aaec28ece403aa1f4b68aba5b4492578afc4efb74282c6b9fe3"
+   }
   },
   "coluna-0465": {
    "tema": "coluna",
@@ -3969,8 +4244,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 48 confirma risco relevante de pseudartrose do tipo II e apresenta séries com taxas próprias de união/não união, mas não informa a faixa de 26%–80% do item. Não converter taxas de consolidação de populações diferentes numa faixa publicada de pseudartrose nem usar o bloco contextual da própria questão como prova. Falta a fonte primária da faixa quantitativa e sua população/tratamento. A oficial e comentário preservados, sem revisão concluída.",
    "temComentario": true,
    "citacoes": [
     {
@@ -3984,7 +4259,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "7d22adc6f92776843b2f434a4401b6a8c28d56bb1d9bfe15c82050840251f127"
+   "questaoSha256": "7d22adc6f92776843b2f434a4401b6a8c28d56bb1d9bfe15c82050840251f127",
+   "pendencia": "O corpo do resumo 48 confirma risco relevante de pseudartrose do tipo II e apresenta séries com taxas próprias de união/não união, mas não informa a faixa de 26%–80% do item. Não converter taxas de consolidação de populações diferentes numa faixa publicada de pseudartrose nem usar o bloco contextual da própria questão como prova. Falta a fonte primária da faixa quantitativa e sua população/tratamento. A oficial e comentário preservados, sem revisão concluída."
   },
   "coluna-0466": {
    "tema": "coluna",
@@ -4019,8 +4295,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo 48 descreve a fratura do odontoide como cada vez mais típica do idoso que cai, mas não compara a frequência de todas as fraturas cervicais na população acima de 70 anos. Falta fonte epidemiológica que sustente ser a mais comum nessa faixa específica; frequência crescente ou caso ilustrado não demonstra ranking. A oficial e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -4034,7 +4310,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "b364f58f007073afd25567ae5d2ed7ae32b0706723e528b1ec8df9cbddb10e10"
+   "questaoSha256": "b364f58f007073afd25567ae5d2ed7ae32b0706723e528b1ec8df9cbddb10e10",
+   "pendencia": "O resumo 48 descreve a fratura do odontoide como cada vez mais típica do idoso que cai, mas não compara a frequência de todas as fraturas cervicais na população acima de 70 anos. Falta fonte epidemiológica que sustente ser a mais comum nessa faixa específica; frequência crescente ou caso ilustrado não demonstra ranking. A oficial e comentário preservados, sem baseResumo."
   },
   "coluna-0468": {
    "tema": "coluna",
@@ -4044,8 +4321,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo 48 não fornece a faixa de 2%–27% de envolvimento neurológico na fratura do odontoide do item. O percentual geral de déficit toracolombar do resumo 49 pertence a outra população e não comprova esse intervalo. Falta fonte primária da frequência e gravidade nessa fratura específica; não usar a resposta contextual como evidência. A oficial e comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -4059,7 +4336,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "7331f9711752ac179bfcca01e0e814c4f5d756fe852a767e22299675581c708b"
+   "questaoSha256": "7331f9711752ac179bfcca01e0e814c4f5d756fe852a767e22299675581c708b",
+   "pendencia": "O corpo do resumo 48 não fornece a faixa de 2%–27% de envolvimento neurológico na fratura do odontoide do item. O percentual geral de déficit toracolombar do resumo 49 pertence a outra população e não comprova esse intervalo. Falta fonte primária da frequência e gravidade nessa fratura específica; não usar a resposta contextual como evidência. A oficial e comentário preservados."
   },
   "coluna-0482": {
    "tema": "coluna",
@@ -4136,7 +4414,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4166,7 +4444,49 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "de3bd85a14b92e475284a8a214e12935ef99db62b6f7d4d6e59c459329690521"
+   "questaoSha256": "de3bd85a14b92e475284a8a214e12935ef99db62b6f7d4d6e59c459329690521",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atendimento inicial e exame neurológico"
+      ],
+      "blocos": [
+       "atendimento-inicial-e-exame-neurologico-cef312c6",
+       "atendimento-inicial-e-exame-neurologico-bcf22ac5"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "8ed3338738e8fb97c12268c4eff2d18838ff708f1e2d717eafc5cf1280e13a10"
+     },
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-e6bf2fc4",
+       "exame-neurologico-choque-neurogenico-choque-medu-e94269cc",
+       "exame-neurologico-choque-neurogenico-choque-medu-63c9c09c",
+       "exame-neurologico-choque-neurogenico-choque-medu-717b321e"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "d6b801adec1583097d168393182c51b833ba58660584fd49e613a072e3d20371"
+     }
+    ],
+    "questaoSha256": "de3bd85a14b92e475284a8a214e12935ef99db62b6f7d4d6e59c459329690521",
+    "comentarioSha256": "9aaa094c8a6c0025b873e9092efdc46a248cb45bd2c11387817f89c14c48585e"
+   }
   },
   "coluna-0509": {
    "tema": "coluna",
@@ -5354,7 +5674,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5369,7 +5689,47 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "d2759ebbe1af11907d71c245c7a9290d49e05ecd0b0173e0ed3b3ca600253f59"
+   "questaoSha256": "d2759ebbe1af11907d71c245c7a9290d49e05ecd0b0173e0ed3b3ca600253f59",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Exame neurológico: choque neurogênico, choque medular e ASIA"
+      ],
+      "blocos": [
+       "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd",
+       "exame-neurologico-choque-neurogenico-choque-medu-e82f8763"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "193386c115032948d7cabea6f59b1371391145f1936d659336d3f36b78af7750"
+     },
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "A medula cervical e as síndromes incompletas"
+      ],
+      "blocos": [
+       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "c3910fbc80a98b1ff34417f19674ea8463ee5d5672a8f961b97b3dacfcee319b"
+     }
+    ],
+    "questaoSha256": "d2759ebbe1af11907d71c245c7a9290d49e05ecd0b0173e0ed3b3ca600253f59",
+    "comentarioSha256": "87299faed80bad991a350362d6f7cf1316dcb76bf79434c83f72e1499df1b791"
+   }
   },
   "coluna-0534": {
    "tema": "coluna",
@@ -46368,7 +46728,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -46383,7 +46743,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "4c0a80b3e9c43b2e5501452a1157cbec80387b6692afd62824645bbe075e0684"
+   "questaoSha256": "4c0a80b3e9c43b2e5501452a1157cbec80387b6692afd62824645bbe075e0684",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Lesão da artéria vertebral",
+       "Vias de acesso, fixação e complicações",
+       "Anatomia aplicada e biomecânica"
+      ],
+      "blocos": [
+       "lesao-da-arteria-vertebral-e72216c9",
+       "vias-de-acesso-fixacao-e-complicacoes-e56df247",
+       "anatomia-aplicada-e-biomecanica-abd6af76"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "a4c21752bca010fc057179a1ef772fe5fd44fbbb5d4fc7793860301d7ea3b2d0"
+     }
+    ],
+    "questaoSha256": "4c0a80b3e9c43b2e5501452a1157cbec80387b6692afd62824645bbe075e0684",
+    "comentarioSha256": "2076caa0f8452873623e83a01cd137244d5ee3313f4c3d16e4668408aee0908e"
+   }
   },
   "trauma-0055": {
    "tema": "trauma",
@@ -49422,7 +49809,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -49437,7 +49824,32 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "c02c3b72f51d7f1961a3756a16684a863ea690c41bfda435950016d2b5898650"
+   "questaoSha256": "c02c3b72f51d7f1961a3756a16684a863ea690c41bfda435950016d2b5898650",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "fratura-do-odontoide-c2-4660967c",
+       "fratura-do-odontoide-c2-3622166b",
+       "fratura-do-odontoide-c2-95546c7a"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "ae5c5a67a8c0c6692b4124d70c423e45cb7b2f7ec294986b0234bfcee2255c14"
+     }
+    ],
+    "questaoSha256": "c02c3b72f51d7f1961a3756a16684a863ea690c41bfda435950016d2b5898650",
+    "comentarioSha256": "8208f937ccd1de0f2e85a2f1d0ce7004fd936c7584e44696036ff184f8cc29b4"
+   }
   },
   "trauma-0143": {
    "tema": "trauma",
@@ -53945,7 +54357,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -53960,7 +54372,34 @@
    "resumosCandidatos": [
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "320ebefcab90de088b072e72132e20b02193fcfc766bf186932bb8e42a4fc25f"
+   "questaoSha256": "320ebefcab90de088b072e72132e20b02193fcfc766bf186932bb8e42a4fc25f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-49-fratura-toracolombar",
+      "titulo": "Fraturas e luxações da coluna toracolombar",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura em explosão (A3 e A4)",
+       "Classificações: estabilidade, Denis, AO Spine e TLICS"
+      ],
+      "blocos": [
+       "fratura-em-explosao-a3-e-a4-b87f9844",
+       "fratura-em-explosao-a3-e-a4-eb5b42b1",
+       "fratura-em-explosao-a3-e-a4-c49f544e",
+       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b"
+      ],
+      "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+      "trechosSha256": "3819d0f2bce7cc59b02922b87a61c78d207324c8392ddd96e8aab6de9fc1dafd"
+     }
+    ],
+    "questaoSha256": "320ebefcab90de088b072e72132e20b02193fcfc766bf186932bb8e42a4fc25f",
+    "comentarioSha256": "4dd6d6a20bc395f091f9c8b4571d3d2aa93c4aaa23573d9649a49a6807c2f157"
+   }
   },
   "trauma-0288": {
    "tema": "trauma",
@@ -59136,7 +59575,7 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -59151,7 +59590,30 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "8d7af8a4c4860e0918833c5498d4d724d2959e9d67995f955bc40c8b4077b687"
+   "questaoSha256": "8d7af8a4c4860e0918833c5498d4d724d2959e9d67995f955bc40c8b4077b687",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Junção occipitocervical e côndilo occipital"
+      ],
+      "blocos": [
+       "juncao-occipitocervical-e-condilo-occipital-37f370ae"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "63ee6585bcf37fee53cfdf57a8a63bca19b39b28a1e264cf6e0075cc881fcbe8"
+     }
+    ],
+    "questaoSha256": "8d7af8a4c4860e0918833c5498d4d724d2959e9d67995f955bc40c8b4077b687",
+    "comentarioSha256": "45d4cd515e1bcffeb39c6ae8b0ad205332bf4368268053e169148b932f6fee6b"
+   }
   },
   "trauma-0663": {
    "tema": "trauma",
@@ -74417,7 +74879,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74432,7 +74894,36 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "3364d97ad82b4b9622eff5ec36405fa704112072069549c76f48d360299b1dbf"
+   "questaoSha256": "3364d97ad82b4b9622eff5ec36405fa704112072069549c76f48d360299b1dbf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atlas, ligamento transverso e instabilidade C1–C2",
+       "Coluna subaxial: classificações e estabilidade",
+       "Anatomia aplicada e biomecânica"
+      ],
+      "blocos": [
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+       "coluna-subaxial-classificacoes-e-estabilidade-629a7058",
+       "anatomia-aplicada-e-biomecanica-cafff61f"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "32416349fbd055033f853b0cbb7e7f32d4f1c0b193042f0e8bb9073bac7174fc"
+     }
+    ],
+    "questaoSha256": "3364d97ad82b4b9622eff5ec36405fa704112072069549c76f48d360299b1dbf",
+    "comentarioSha256": "aa26f1ca8d7c9f7a584beec7f39a27c85e70d17fc29ddc4e683e6d15ecd55f1c"
+   }
   },
   "trauma-1202": {
    "tema": "trauma",
