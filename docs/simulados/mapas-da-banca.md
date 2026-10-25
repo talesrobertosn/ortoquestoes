@@ -3680,3 +3680,29 @@ Lição: o agente do cap. 12 aplicou em paralelo os vasos do côndilo lateral (`
 do descolamento fisário (`0992`); as versões deste capítulo sobre esses pontos (`0997` e `1002`) foram trocadas depois de
 aplicadas, no próprio id, pela deformação plástica da cortical lateral e pelos fios enterrados contra expostos.
 Destino: tema Ortopedia pediátrica, subtema "Côndilo lateral, epicôndilo medial e rádio proximal na criança".
+
+## Epidemiologia das fraturas na criança, Rockwood and Wilkins 10ª ed., cap. 1
+
+**Recorte.** A busca por epidemiologia, incidência, fratura mais comum, trampolim, playground e fise em
+Ortopedia pediátrica encontrou nove questões oficiais TEOT/TARO de 2007 a 2023, mas nenhuma pergunta
+diretamente a epidemiologia geral do capítulo. As nove são de lesões específicas e foram lidas para estudar
+a forma. A busca em Trauma não acrescentou questão diretamente aplicável. Os simulados acrescentados na
+base atual sobre cotovelo e Perthes não duplicam o recorte de epidemiologia geral.
+
+**Forma.** Enunciado mediano de cerca de 110 caracteres, quatro alternativas, sem imagem e sem caso
+clínico. Aberturas predominantes: "A fratura" e "Na fratura"; finais em palavra. Há poucos pares 2 por 2 e
+nenhuma questão negativa. O lote usa esse formato sem reproduzir os capítulos de cotovelo já concluídos.
+
+**Lacunas com cara de prova.** As onze questões novas usam dados do capítulo: três causas etiológicas;
+rádio e uluna 59% das fraturas de ossos longos; rádio distal como sítio mais comum; picos aos 13 e 12 anos;
+fise distal do rádio 18%; curva precoce da supracondilar; verão 2,5 vezes inverno; padrão de queda de altura;
+redução de 2,5 vezes na COVID-19; fratura exposta recente em 0,7% a 1%; tíbia mais frequente que fêmur.
+Nenhuma recebeu figura: os gráficos não reproduzem sinal radiográfico ou classificação de prova.
+
+**Divergências e pendências.** Não há questão oficial diretamente citada no resumo para confronto de
+gabarito. A paginação impressa não é visível no PDF; as posições 25 a 61 permanecem na auditoria interna.
+Revisão médica e publicação permanecem pendentes.
+
+**Aproveitamento do capítulo 1:** `pediatria-1083` a `pediatria-1093`, 11 questões, sem imagem,
+gabarito A3/B2/C3/D3. O resumo `rockwoodcriancas10-01-epidemiologia-fraturas` cobre etiologia,
+frequência, idade e sexo, fise, ambiente, queda de altura, pandemia e prevenção.
