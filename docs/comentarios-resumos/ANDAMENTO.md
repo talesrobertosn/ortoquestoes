@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 691 |
+| pendente | 658 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 231 |
+| pendente-fonte | 234 |
 | pendente-inspecao-imagem | 100 |
-| revisada | 1250 |
+| revisada | 1280 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -26,8 +26,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |
-| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 11 | 0 | 121 |
-| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 76 | 0 | 52 |
+| Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 40 | 0 | 92 |
+| Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 78 | 0 | 50 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 61 | 0 | 12 |
 | Fraturas do acetábulo (`rockwood10-51-acetabulo`) | 55 | 0 | 21 |
 | Fratura do colo do fêmur (`rockwood10-53-colo-femur`) | 51 | 0 | 12 |
@@ -38,7 +38,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Luxação do joelho e lesão multiligamentar (`rockwood10-61-luxacao-joelho`) | 49 | 0 | 74 |
 | Fratura do planalto tibial (`rockwood10-62-planalto-tibial`) | 31 | 0 | 14 |
 | Fratura da diáfise da tíbia e da fíbula (`rockwood10-63-diafise-tibia`) | 98 | 0 | 57 |
-| Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 30 | 0 | 19 |
+| Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 31 | 0 | 18 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 27 | 0 | 26 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |

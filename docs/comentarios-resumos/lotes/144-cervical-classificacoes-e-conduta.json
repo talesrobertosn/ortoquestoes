@@ -1,0 +1,379 @@
+{
+  "coluna-0297": {
+    "questaoSha256": "ee2db923811cd832ad599157c3d03a00e4b47e62884e91ac61925df50e3e692e",
+    "comentarioAnteriorSha256": "0f0b3725c55a23a0a1e5748d28a0f23aaedfa957082c413dedfaafdd945ce8cc",
+    "comentario": {
+      "conceito": "Na imagem de uma lesão cervical baixa, o canto anteroinferior do corpo parece uma gota destacada e o restante da vértebra pode estar deslocado para trás. Esse padrão clássico de **teardrop em flexão** resulta de **flexão-compressão**.\n\nA carga comprime o corpo enquanto o segmento flete; o traço oblíquo forma o fragmento anterior, e a deformidade pode vir com retrolistese e ruptura do complexo posterior. Por isso o tamanho aparentemente pequeno da “gota” não traduz sozinho a gravidade da lesão. No resumo, a teardrop em flexão corresponde ao estágio 3 ou superior da sequência de compressão-flexão de Allen e Ferguson (Rockwood, 10ª ed., cap. 48, “Fratura em gota de lágrima em flexão”).\n\n**Há também uma teardrop em extensão, mas é outro padrão.** É uma pequena avulsão anteroinferior descrita no idoso, estável se não houver cifose. O uso da mesma palavra para o formato do fragmento não torna os mecanismos equivalentes. Nesta pergunta clássica da cervical baixa, a associação cobrada é a compressão-flexão.\n\nNa prática, alinhamento, disco, ligamentos e déficit precisam ser avaliados; não se decide estabilidade apenas por reconhecer uma silhueta em gota.\n\n> **Na prova:** teardrop em flexão é flexão-compressão; a avulsão em extensão deve ser distinguida.",
+      "correta": "**B: flexão-compressão.** É o mecanismo da teardrop clássica em flexão da coluna cervical baixa, com fragmento do corpo e possibilidade de retrolistese e dano posterior.",
+      "incorretas": {
+        "A": "**É a família das lesões facetárias por abertura posterior.** Em Allen e Ferguson, distração-flexão progride de subluxação para luxação unilateral e bilateral. A teardrop do corpo pertence à compressão-flexão.",
+        "C": "**Muda o padrão para abertura anterior em extensão.** Distração-extensão é descrita com alargamento anormal do disco e possível avulsão anterior. Não corresponde ao mecanismo da teardrop em flexão perguntada.",
+        "D": "**Desloca a carga para a sequência de extensão.** Compressão-extensão começa com fraturas do arco posterior e pode progredir para lesões bilaterais. Não é a sequência que produz a teardrop clássica do corpo em flexão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Compressão, explosão e teardrop; Coluna subaxial: classificações e estabilidade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Compressão, explosão e teardrop",
+          "Coluna subaxial: classificações e estabilidade"
+        ],
+        "blocos": [
+          "compressao-explosao-e-teardrop-13a89876",
+          "compressao-explosao-e-teardrop-a3e0c6bc",
+          "coluna-subaxial-classificacoes-e-estabilidade-8a83b113"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "df3152a68f4658de7f42989942558a2366f84c7518a99a99f7b3ba2ff3ddf45f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0323": {
+    "questaoSha256": "d2bf6e75bb58d7398008dba6f68434ef922e5deb32bd19f0ef4368f66c32f28f",
+    "comentarioAnteriorSha256": "2d0175593a36e44a8690a3e160a7d959a1160aeaf07b8a6cbe8e48baaa5b4d0a",
+    "comentario": {
+      "conceito": "Na imagem em perfil, dois corpos cervicais perderam o alinhamento e um ficou transladado em relação ao outro. Segundo o critério de White e Panjabi cobrado aqui, uma **translação sagital maior que 3,5 mm** sugere instabilidade.\n\nA medida compara as linhas que prolongam as paredes posteriores dos corpos. Ela descreve quanto um nível se deslocou em relação ao vizinho, e não quanto mede uma fratura ou o espaço entre C1 e o dente. O resumo a apresenta como medida reprodutível na radiografia e na tomografia (Rockwood, 10ª ed., cap. 48, “White e Panjabi: 3,5 mm e 11 graus”).\n\nO outro número importante da mesma seção é **cifose segmentar maior que 11 graus**, que sugere lesão do complexo ligamentar posterior. São dois tipos de deformidade: deslocamento linear em milímetros e angulação em graus. Acertar um número com a unidade errada muda completamente o critério.\n\nA medida é um sinal de gravidade e deve ser integrada ao estado neurológico e às lesões ósseas, discais e ligamentares. A questão não fornece dados para escolher uma cirurgia específica.\n\n> **Na prova:** translação sagital maior que 3,5 mm; angulação cifótica maior que 11 graus.",
+      "correta": "**B: 3,5 mm.** É a resposta sustentada pelo resumo e já registrada como bibliográfica no acervo; não há gabarito oficial registrado para este item. O limiar refere-se à translação relativa subaxial.",
+      "incorretas": {
+        "A": "**Antecipa o limiar solicitado.** Dois milímetros não é o corte de translação apresentado por White e Panjabi nessa seção. Não se deve substituir o número por limites usados para outras distâncias cervicais.",
+        "C": "**Exige um deslocamento maior do que o necessário para preencher o critério.** A partir de mais de 3,5 mm já existe o sinal descrito. Esperar ultrapassar 5 mm perderia casos que já satisfazem o limiar perguntado.",
+        "D": "**Atrasa ainda mais o reconhecimento da instabilidade.** Sete milímetros é superior ao corte subaxial de 3,5 mm. Valores próximos de 7 mm aparecem na regra de Spence, que mede outro deslocamento e em outra região."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Atlas, ligamento transverso e instabilidade C1–C2."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade",
+          "Atlas, ligamento transverso e instabilidade C1–C2"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "d5ee803e01c84281ca14d5a55faf54ed41b30d8b3a5fd090ae0295908894274b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0352": {
+    "questaoSha256": "aa799684b75f0915a6391d399127d6686669608cdd0f4637583b9ccf34a163ac",
+    "comentarioAnteriorSha256": "4854f483a81cd64bdd6469ecd54b790135cb51efc7584c949304406d07731630",
+    "comentario": {
+      "conceito": "Uma fratura tipo II do odontoide pode continuar sem união óssea mesmo depois de imobilizada. A afirmação é compatível com o resumo: **pseudartrose é uma preocupação importante no tratamento não cirúrgico do tipo II**.\n\nNa classificação de Anderson e D’Alonzo, o tipo II atravessa a cintura, na junção entre o dente e o corpo de C2. O tipo III entra no osso esponjoso do corpo, e os resultados de consolidação com imobilização são melhores. Essa diferença impede tratar todos os traços do odontoide como se tivessem o mesmo comportamento (Rockwood, 10ª ed., cap. 48, “Por que o tipo II não consolida, e o tratamento sem cirurgia”).\n\nAs séries citadas variam: uma encontrou 66% de consolidação do tipo II no halo, outra menos de 50%, e uma série de fraturas de C2 registrou pseudartrose do tipo II perto de 30%. Não são porcentagens intercambiáveis nem uma taxa universal aplicável a qualquer paciente.\n\n**Risco de pseudartrose não torna cirurgia obrigatória em todo tipo II.** O resumo admite tratamento externo em casos selecionados e observa que alguns idosos alcançam estabilidade fibrosa mesmo sem união óssea. Desvio, alinhamento, condição clínica e demanda mudam a decisão.\n\n> **Na prova:** o tipo II tem risco relevante de pseudartrose no tratamento conservador; isso não elimina a seleção individual da conduta.",
+      "correta": "**A: Certo.** A alta ocorrência de falta de união do tipo II está sustentada pelas séries do resumo. A resposta é bibliográfica, pois não há gabarito oficial registrado.",
+      "incorretas": {
+        "B": "**Negaria um problema bem documentado do tipo II.** O fato de alguns pacientes consolidarem, ou de uma pseudartrose fibrosa ser estável, não apaga o risco. Também não se pode transferir para a cintura do dente as taxas mais favoráveis do tipo III no corpo esponjoso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+      ],
+      "conferido": false,
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-odontoide-c2-623f1b6d",
+          "fratura-do-odontoide-c2-bc203da4",
+          "fratura-do-odontoide-c2-e392c5c7",
+          "fratura-do-odontoide-c2-b73258e7"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "11709a14e53090f7f2afc0daca485a03c85342e70429750202361a3e8df9885e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0354": {
+    "questaoSha256": "cab778a727e83bc641fae347b06902431d1713cb67fa34b160a94888d271b804",
+    "comentarioAnteriorSha256": "4217fe124ce7d0c78fad3465f67df37d2c715d0fc8d6e8178e2deb598c118429",
+    "comentario": {
+      "conceito": "Na luxação bifacetária cervical baixa, as duas articulações posteriores perderam a relação e o corpo vertebral pode avançar cerca de metade de sua largura. Essa descrição corresponde à **distração-flexão, estágio 3 de Allen e Ferguson**.\n\nA sequência mostra como a contenção posterior falha: no primeiro estágio há subluxação e afastamento interespinhoso; no segundo, luxação de uma faceta; no terceiro, luxação das duas, com translação de aproximadamente 50%; no quarto, a translação chega a 100%. O número descreve deslocamento relativo do corpo, não porcentagem de lesão medular (Rockwood, 10ª ed., cap. 48, “Allen e Ferguson: o mecanismo”).\n\n**Bifacetária e unifacetária ocupam estágios diferentes.** Reconhecer a bilateralidade impede usar o estágio 2 por associação automática com a palavra luxação. A posição relativa das vértebras pode estreitar o canal mesmo que partes do arco ósseo estejam inteiras.\n\nO exame neurológico e a investigação de disco e ligamentos continuam fundamentais. A classificação descreve o padrão de lesão, não permite presumir o déficit de um paciente que não foi examinado.\n\n> **Na prova:** luxação bilateral subaxial, distração-flexão 3 e translação de aproximadamente 50% formam a associação clássica.",
+      "correta": "**A: Certo.** Mecanismo, bilateralidade e translação aproximada concordam com o estágio 3 descrito. Trata-se da resposta bibliográfica preservada, sem gabarito oficial registrado.",
+      "incorretas": {
+        "B": "**Rejeitaria uma associação coerente na classificação.** Não confunda com a luxação unilateral do estágio 2 nem com a translação de 100% do estágio 4. O valor aproximado de 50% pertence justamente à luxação bilateral do estágio 3."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Luxação facetária: redução fechada e cirurgia."
+      ],
+      "conferido": false,
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade",
+          "Luxação facetária: redução fechada e cirurgia"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+          "luxacao-facetaria-reducao-fechada-e-cirurgia-8c151ee6"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "e615c1d561ca91834558df3dae9e230589d321c9eb7e8bb693ca54b2264edc5e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0356": {
+    "questaoSha256": "38a76e0aa306ff82991fed7119b282d434404d0973d6f826dc8968bfbf461b89",
+    "comentarioAnteriorSha256": "505d5851ee2a47490ae9dddc97f37d1bcc8b92773b0e5cbb24e5a81dae2fc264",
+    "comentario": {
+      "conceito": "O enunciado junta uma conduta possível para o tipo II do enforcado, o halo-colete, com uma contraindicação que pertence a outro subtipo. **No tipo II, a tração pode fazer parte da redução; a contraindicação é do IIa.** Por isso a afirmação inteira é errada.\n\nO tipo II de Levine e Edwards apresenta angulação e translação, com lesão importante do disco C2–C3. O resumo descreve redução com tração e manutenção no halo. Já o IIa tem angulação acentuada e pouca translação, em mecanismo de flexão, e a tração pode piorar a deformidade. Sua redução é feita por extensão e compressão no halo (Rockwood, 10ª ed., cap. 48, “Levine e Edwards” e “O tratamento por tipo”).\n\n**O sufixo muda a manobra.** Saber que ambos podem usar halo não autoriza realizar a mesma redução. O dispositivo de manutenção e a força aplicada para reduzir são decisões diferentes, e é essa troca que torna o item falso.\n\nNo tipo III há luxação facetária C2–C3 e a descrição passa para redução aberta e artrodese. Não se deve estender o tratamento de um tipo para toda fratura da pars de C2.\n\n> **Na prova:** II: tração e halo; IIa: evitar tração e reduzir com extensão e compressão.",
+      "correta": "**B: Errado.** O halo é compatível com o tratamento descrito para o tipo II, mas proibir a tração troca II por IIa. A resposta é bibliográfica, sem gabarito oficial registrado.",
+      "incorretas": {
+        "A": "**Aceitaria uma frase apenas parcialmente verdadeira.** A escolha do halo não salva a contraindicação incorreta. No tipo II, a fonte admite tração para reduzir; é no IIa, com angulação importante e translação mínima, que ela pode acentuar a deformidade."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2)."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do enforcado (espondilolistese traumática de C2)"
+        ],
+        "blocos": [
+          "fratura-do-enforcado-espondilolistese-traumatica-91ac3840",
+          "fratura-do-enforcado-espondilolistese-traumatica-ac421b17",
+          "fratura-do-enforcado-espondilolistese-traumatica-9bb667d7",
+          "fratura-do-enforcado-espondilolistese-traumatica-39545179",
+          "fratura-do-enforcado-espondilolistese-traumatica-e49447e8"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "f26dcd8564a3eddacf653e7a306f4fdd15258bb7aefbbc482239c9d21f7a3700"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0357": {
+    "questaoSha256": "e4b9058e36a952565dab317fdece4379d55082041b3b1ddb8d8352dd89c5e060",
+    "comentarioAnteriorSha256": "4ddc6ef7a9fb0eac71d409dac7aae96c7868899f02bbae3f4e824ad922f24226",
+    "comentario": {
+      "conceito": "O fragmento em gota na frente do corpo cervical não é apenas um pequeno pedaço de osso arrancado: no padrão em flexão, pode acompanhar uma lesão instável de todo o segmento. Em Allen e Ferguson, a **teardrop clássica aparece na compressão-flexão, estágio 3**.\n\nOs estágios anteriores preparam a distinção. No primeiro há arredondamento da margem anterossuperior; no segundo, um aspecto em bico, às vezes com traço sagital. No terceiro surge o traço oblíquo que destaca a gota. Os estágios seguintes acrescentam retrolistese e maior comprometimento do alinhamento; portanto, uma lesão mais grave ainda pode conter a teardrop que apareceu no estágio 3 (Rockwood, 10ª ed., cap. 48, “Allen e Ferguson: o mecanismo” e “Fratura em gota de lágrima em flexão”).\n\n**Distração-flexão é outra família.** Seu estágio 3 é a luxação bilateral com cerca de 50% de translação; o estágio 4 chega a 100%. Misturar a progressão das facetas com a progressão da fratura do corpo leva aos distratores.\n\n> **Na prova:** teardrop em flexão começa no estágio 3 de compressão-flexão; não confundir com a pequena avulsão em extensão.",
+      "correta": "**D: compressão-flexão no estágio III.** É onde aparece o traço oblíquo do corpo que forma a gota. A resposta é bibliográfica preservada; o acervo não registra gabarito oficial.",
+      "incorretas": {
+        "A": "**Usa o estágio da luxação bifacetária.** Distração-flexão 3 corresponde à lesão bilateral das facetas com aproximadamente 50% de translação. O fragmento teardrop do corpo nasce em outra sequência, compressão-flexão.",
+        "B": "**Escolhe a translação máxima da família errada.** No estágio 4 de distração-flexão, o corpo se desloca cerca de 100%. Isso não define o estágio em que aparece a gota de lágrima.",
+        "C": "**Para antes do traço que destaca a gota.** Compressão-flexão 2 produz o aspecto em bico, podendo haver traço sagital. O traço oblíquo característico da teardrop aparece no estágio 3."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
+      ],
+      "conferido": false,
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade",
+          "Compressão, explosão e teardrop"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+          "compressao-explosao-e-teardrop-13a89876",
+          "compressao-explosao-e-teardrop-a3e0c6bc"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "97a5dbaedc37695bd83b58fa2a92abec47de6f640a95d11e26564e46763e7e92"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0401": {
+    "questaoSha256": "ad2fae40dbd8fd14089a921acf19b52c8898fe48d831e37bd9f436a353af1f51",
+    "comentarioAnteriorSha256": "c24a13dca21f99247eb2f772332395db7f260d84f2a7f02c763d2a76fb4348cf",
+    "comentario": {
+      "conceito": "Para orientar o nível de uma abordagem anterior de C6, a referência de superfície pedida é o **anel cricoide**. Ele deve ser distinguido da cartilagem tireoide, do hioide e de outras estruturas próximas do pescoço.\n\nO resumo organiza os marcos assim: hioide em C3, cartilagem tireoide em C4–C5 e cricoide em C6. No mesmo nível de C6 há uma referência óssea vertebral, o tubérculo carotídeo de Chassaignac, formado pelo tubérculo anterior do processo transverso (Rockwood, 10ª ed., cap. 48, “A via anterior de Smith-Robinson” e “A vértebra subaxial”).\n\nEssas referências ajudam a planejar a exposição, mas o nome da estrutura importa. A questão solicita o marco anatômico associado ao nível: selecionar uma membrana da região em vez da cartilagem cricoide troca a referência descrita. Também não se deve responder pela estrutura mais fácil de palpar sem conferir qual nível ela representa.\n\n> **Na prova:** hioide, C3; tireoide, C4–C5; cricoide e tubérculo carotídeo, C6.",
+      "correta": "**D: anel cricoide.** É a referência de superfície descrita para C6 na via anterior, no mesmo nível vertebral indicado pelo tubérculo carotídeo.",
+      "incorretas": {
+        "A": "**Corresponde a um nível mais alto.** A cartilagem tireoide é situada em C4–C5 pelo resumo. Ela é útil para orientação, mas não substitui a cricoide como referência de C6.",
+        "B": "**É a referência de C3.** O hioide está na lista de marcos cervicais, porém associa-se ao nível mais cranial entre os citados. Confundir a sequência desloca a localização do acesso.",
+        "C": "**Troca a estrutura de referência.** O marco explicitamente associado a C6 na fonte é o anel cricoide. A presença de “crico” no nome da membrana não a torna a cartilagem que a questão procura."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Vias de acesso, fixação e complicações; Anatomia aplicada e biomecânica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Vias de acesso, fixação e complicações",
+          "Anatomia aplicada e biomecânica"
+        ],
+        "blocos": [
+          "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+          "anatomia-aplicada-e-biomecanica-43792d6a"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "3f3cc08ac5cc21b62e63f291cf6c2526281e496ac1b4014f6095083a3c3dab73"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0450": {
+    "questaoSha256": "429b6937fd41a6b86d378f2f7d583a5cf5a030803f5c6d089fba3db991a7df83",
+    "comentarioAnteriorSha256": "eefd7f4d62d5f08403de07ecf16f13759733937809d8d446c1f9f49a70329596",
+    "comentario": {
+      "conceito": "Tríceps fraco com reflexo tricipital alterado aponta para **C7**. A sensibilidade nos dedos acrescenta uma pista, mas o dado mais concordante do caso é o par motor e reflexo da mesma raiz.\n\nNa tabela cervical, C7 é representada por tríceps e flexão do punho, dedo médio e reflexo tricipital. C6, por sua vez, se relaciona a bíceps, extensão do punho, face lateral do antebraço, polegar e indicador, com reflexo braquiorradial (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\n**O enunciado mistura o segundo e o terceiro dedos.** O indicador aparece na referência de C6, enquanto o médio aparece em C7. Isso não torna C6 a melhor resposta, porque tríceps e tricipital fornecem dois achados específicos do conjunto C7. No exame clínico, sinais de diferentes modalidades devem ser confrontados, sem tratar a fronteira de cada território como um desenho rígido capaz de anular os demais achados.\n\nA radiografia degenerativa dá contexto, mas não define sozinha a raiz sintomática. É o exame neurológico descrito que sustenta a localização provável.\n\n> **Na prova:** tríceps e tricipital localizam C7; não trocar para C6 só pela menção ao indicador.",
+      "correta": "**D: C7.** O déficit do tríceps, a alteração do reflexo tricipital e o envolvimento do dedo médio convergem para essa raiz, apesar da extensão sensitiva também ao indicador.",
+      "incorretas": {
+        "A": "**Desloca o quadro para os intrínsecos.** T1 é representada por intrínsecos e abdução dos dedos, com sensibilidade medial do braço e axila. Não explica o conjunto tríceps e reflexo tricipital.",
+        "B": "**É o conjunto do deltoide e do bicipital.** C5 se associa à sensibilidade lateral do ombro e braço. Fraqueza de tríceps e alteração tricipital não reproduzem esse padrão.",
+        "C": "**Aproveita um dedo e ignora os achados mais concordantes.** C6 pode ser lembrada pelo indicador, mas seus marcadores são bíceps, extensão do punho e braquiorradial. O caso enfatiza tríceps e tricipital, favorecendo C7.",
+        "E": "**É o nível dos flexores dos dedos e intrínsecos.** A referência sensitiva de C8 inclui anular, mínimo e face medial do antebraço. Não é a distribuição principal nem o reflexo fornecido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atendimento inicial e exame neurológico"
+        ],
+        "blocos": [
+          "atendimento-inicial-e-exame-neurologico-d66ef39d"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0528": {
+    "questaoSha256": "33e3921d848461b7b1723b2de7dabf6422ae3b5ce36532b5769cd4df78859106",
+    "comentarioAnteriorSha256": "c9a01177e486872078605cf3cb21e35d7733d4eccba04cc5763f3d2c6015577a",
+    "comentario": {
+      "conceito": "Na variante Ia da fratura do enforcado, um fragmento pode avançar para dentro do canal em vez de simplesmente ampliar o espaço. É esse **estreitamento pelo traço que atravessa a parede posterior do corpo de C2** que explica a maior frequência de déficit neurológico.\n\nA fratura do enforcado clássica rompe bilateralmente a pars interarticularis de C2. No Ia de Starr e Eismont, um dos traços passa pelo corpo posterior e permanece em continuidade com um fragmento da pars. O complexo pode se deslocar para trás e ocupar o canal, ao contrário do alargamento habitual. A localização exata do traço, portanto, muda o risco neurológico (Rockwood, 10ª ed., cap. 48, “Levine e Edwards”).\n\n**Não confunda a variante Ia com o tipo IIa.** No IIa, o destaque é angulação acentuada com translação mínima, e a tração é evitada porque pode piorar a deformidade. Já o tipo III é identificado pela luxação facetária C2–C3. Letras e números próximos representam lesões distintas.\n\nOs autores descrevem colar rígido para I e Ia sem lesão medular; a presença de comprometimento neurológico muda essa seleção. Não se deve concluir que toda fratura denominada enforcado tenha canal amplo e seja neurologicamente inofensiva.\n\n> **Na prova:** Ia pode estreitar o canal porque um traço atravessa a parede posterior do corpo de C2.\n\n**Por que esta questão foi criada.** A variante mostra uma exceção anatômica que muda o risco medular: reconhecer o enforcado não basta, é preciso verificar o trajeto do traço e o canal.",
+      "correta": "**A: traço pela parede posterior do corpo de C2 e estreitamento do canal.** O fragmento ligado ao complexo posterior pode ocupar o canal, explicando o maior risco de déficit na variante Ia.",
+      "incorretas": {
+        "B": "**Define o tipo III.** Luxação das facetas C2–C3 é o achado que identifica esse tipo na classificação. Não é o mecanismo do maior risco medular específico do Ia.",
+        "C": "**Aproxima o raciocínio do IIa e do disco.** A variante Ia se define pelo traço que entra na parede posterior do corpo e pode estreitar o canal. O IIa tem angulação importante com translação mínima, e a contraindicação de tração é uma distinção própria dele.",
+        "D": "**Descreve outra região fraturada de C2.** Separar o odontoide do corpo remete à fratura da cintura do dente, tipo II de Anderson e D’Alonzo. A variante Ia do enforcado envolve a parede posterior do corpo em continuidade com a pars."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do enforcado (espondilolistese traumática de C2); Fratura do odontoide (C2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do enforcado (espondilolistese traumática de C2)",
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-enforcado-espondilolistese-traumatica-785c3e9a",
+          "fratura-do-enforcado-espondilolistese-traumatica-78597036",
+          "fratura-do-enforcado-espondilolistese-traumatica-ac421b17",
+          "fratura-do-enforcado-espondilolistese-traumatica-9bb667d7",
+          "fratura-do-enforcado-espondilolistese-traumatica-39545179",
+          "fratura-do-odontoide-c2-623f1b6d"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "b2356061b20c452c2e09d865ea79ddd92336f34e6f4734653168d56926644695"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0792": {
+    "questaoSha256": "7a33d8ba1492475ff15d5fc93be5e316fbc1d137aaff0e0f421bcec9e5077211",
+    "comentarioAnteriorSha256": "e5949f81ba10badf9f632ad2dab8e0df95b8943438beab1a62e50e2ae4992740",
+    "comentario": {
+      "conceito": "Uma lesão medular completa parece mais grave que uma incompleta, mas isso não significa que deva receber a maior pontuação em todo sistema. No domínio neurológico do **SLIC**, a maior pontuação entre as opções é a da **lesão medular incompleta**.\n\nO SLIC, classificação das lesões cervicais subaxiais, combina morfologia, integridade do complexo discoligamentar e estado neurológico. Na tabela, paciente intacto recebe 0, lesão de raiz 1, lesão medular completa 2 e incompleta 3. Há ainda 1 ponto adicional quando persiste compressão medular com déficit (Rockwood, 10ª ed., cap. 48, “SLIC: a classificação que vira conduta”, tabela da pontuação original).\n\n**Pontuar não é somente ordenar sofrimento ou incapacidade.** A comparação do domínio dá peso à presença de função medular remanescente; uma lesão incompleta com compressão persistente não deve ser considerada menos relevante para a decisão só porque alguma força ou sensibilidade permanece. O total, contudo, depende também dos outros dois domínios.\n\nA pergunta solicita apenas o maior peso neurológico entre quatro condições. Não é possível calcular o total de um paciente nem indicar uma operação sem conhecer morfologia e complexo ligamentar.\n\n> **Na prova:** no SLIC, incompleta vale 3 e completa 2; compressão contínua com déficit acrescenta 1.",
+      "correta": "**D: lesão medular incompleta.** Recebe 3 pontos no domínio neurológico, superando os 2 da completa. O ponto adicional por compressão contínua é uma informação separada, dependente do achado.",
+      "incorretas": {
+        "A": "**Não há déficit para pontuar nesse domínio.** O paciente intacto recebe 0 no neurológico. Ele ainda pode ter um total elevado por translação e ruptura ligamentar, mas isso vem dos outros componentes do SLIC.",
+        "B": "**É déficit de raiz, com peso menor.** A lesão radicular recebe 1 ponto. Não deve ser confundida com lesão medular incompleta apenas porque também pode causar fraqueza ou alteração sensitiva.",
+        "C": "**Confunde gravidade clínica com o maior peso do escore.** A lesão completa recebe 2 pontos, abaixo dos 3 da incompleta. A classificação não ordena o domínio apenas pela quantidade de função perdida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15",
+          "coluna-subaxial-classificacoes-e-estabilidade-63694d69",
+          "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "8b6471c000a31c8f5e39f986130daeba795d6ae8c4dca8e22650d0a78d795501"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
