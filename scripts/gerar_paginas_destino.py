@@ -102,7 +102,9 @@ PAGINAS = [
     ("cirurgia-da-mao", "Cirurgia da mão"),
 ]
 # Fora do menu do topo, mas com página própria (rodapé e sitemap).
-PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões")]
+PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões"),
+                  # Atlas 3D (25/10/2026): páginas próprias em paginas_atlas_seo.py, para quem busca "atlas 3D" e "anatomia 3D"
+                  ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D")]
 
 CRIAR_CONTA = "../#/conta?modo=criar&amp;voltar=%2Ftreinar"
 
@@ -427,7 +429,7 @@ def rodape() -> str:
     links = "".join(f'<a href="../{p}/">{esc(r)}</a>' for p, r in PAGINAS)
     return f"""</main>
 <footer><div class="env">
-<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../resumos/">Resumos de capítulos</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
+<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../resumos/">Resumos de capítulos</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../atlas-3d/">Atlas 3D de anatomia</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
 <p><strong>Orto Questões</strong> (também escrito OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e traumatologia
 feito para quem se prepara para as provas da especialidade. As questões de prova são transcritas dos cadernos originais e o gabarito é o da banca; as
 marcadas como OrtoQuestões Simulados são autorais, elaboradas a partir da bibliografia de referência, sem caráter oficial nem
@@ -1632,6 +1634,8 @@ def principal() -> int:
         return 1
     geradores = [pagina_banco, pagina_teot, pagina_curso_preparatorio, pagina_provas, pagina_r1, pagina_simulado,
                  pagina_flashcards, pagina_cirurgia_mao, pagina_sobre]
+    from paginas_atlas_seo import GERADORES_ATLAS  # importa este módulo; por isso fica aqui dentro
+    geradores += GERADORES_ATLAS
     paginas = []
     for gerar in geradores:
         texto, meta = gerar(d)

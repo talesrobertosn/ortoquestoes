@@ -11,6 +11,7 @@ import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
 import { bibliotecaVisivel } from '../biblioteca/recomendar'
 import { ChamaPixel } from '../componentes/ChamaPixel'
+import { QuadroAtlas } from '../componentes/QuadroAtlas'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { ChamadaSimuladoNacional } from '../componentes/ChamadaSimuladoNacional'
@@ -311,6 +312,7 @@ export function Inicio() {
         {vazio}
         <ConviteLimiteDoDia />
         <ChamadaSimuladoNacional />
+        <QuadroAtlas />
 
         <section className="ip-pilares ip-entra" aria-labelledby="ip-pilares-titulo" style={{ '--i': 1 } as CSSProperties}>
           <h2 id="ip-pilares-titulo" className="ip-pilares__titulo">O que o Orto Questões faz por você</h2>
@@ -425,7 +427,7 @@ export function Inicio() {
             <span><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span>
           </a>
           <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': urlCss('pixel/inicio/atalho-cripta.png') } as CSSProperties}>
-            <span><strong>Jogar o Torneio</strong><small>Flashcards · Beta</small></span>
+            <span><strong>Jogar o Torneio</strong><small>Flashcards no modo jogo</small></span>
           </a>
         </>}
         {bibliotecaVisivel() && <a className="ip-atalho ip-atalho--resumos" href={href('/resumos')}>
@@ -438,6 +440,7 @@ export function Inicio() {
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <ConviteLimiteDoDia />
       <ChamadaSimuladoNacional />
+      <QuadroAtlas />
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
       {vazio}
 
@@ -626,7 +629,7 @@ function QuadroFlashcards({ classe }: { classe: string }) {
         <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} loading="lazy" decoding="async" />
       </picture>
       <span className="inicio-flash__texto">
-        <span className="inicio-flash__selo">Flashcards · Beta público</span>
+        <span className="inicio-flash__selo">Flashcards</span>
         {/* o quadro todo leva à central; os botões vão direto (pedido do Tales, 15/10/2026: nem todo mundo quer o jogo) */}
         <a className="inicio-flash__capa" href={href('/flashcards')}><strong id={id}>Conhecimento que evolui com você.</strong></a>
         <span className="inicio-flash__desc">Flashcards de Ortopedia, revisão espaçada e uma jornada para testar o que você sabe.</span>

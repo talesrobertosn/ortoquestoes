@@ -150,6 +150,12 @@ const PAGINAS: Record<string, string> = {
   '/flashcards/cripta': 'Torneio de Flashcards: batalha na Cripta', '/flashcards/masmorra': 'Torneio de Flashcards: batalha na Cripta',
   '/flashcards/torre': 'Torneio de Flashcards: subindo a Torre', '/flashcards/biblioteca': 'Estudando flashcards (Biblioteca)',
   '/flashcards/estudo': 'Estudando flashcards (Biblioteca)', '/flashcards/ranking': 'Flashcards: vendo o ranking',
+  // Atlas 3D (25/10/2026): a região vem na rota; a estrutura aberta, no complemento
+  '/atlas': 'Atlas 3D: corpo inteiro',
+}
+const REGIOES_ATLAS: Record<string, string> = {
+  ombro: 'Ombro', cotovelo: 'Cotovelo', 'punho-mao': 'Punho e mão', coluna: 'Coluna', 'pelve-quadril': 'Pelve e quadril', joelho: 'Joelho',
+  'tornozelo-pe': 'Tornozelo e pé', braco: 'Braço', antebraco: 'Antebraço', coxa: 'Coxa', perna: 'Perna',
 }
 /** Títulos dos resumos da Biblioteca (o painel registra ao abrir), para "Lendo o resumo: Fratura do colo do fêmur". */
 const titulosResumos = new Map<string, string>()
@@ -163,7 +169,7 @@ export function resumoDaPagina(pagina: string | null | undefined): string | null
 /** Só o nome da página, sem o complemento ("Respondendo questões"). */
 function nomeDaRota(rota: string): string {
   const capitulo = resumoDaPagina(rota)
-  return capitulo ? `Lendo o resumo: ${tituloResumo(capitulo)}` : PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota)
+  return capitulo ? `Lendo o resumo: ${tituloResumo(capitulo)}` : PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota.startsWith('/flashcards') ? 'Flashcards' : rota.startsWith('/atlas/') ? `Atlas 3D: ${REGIOES_ATLAS[rota.slice(7)] ?? 'explorando'}` : rota)
 }
 /** "/sessao · 3 de 10" vira "Respondendo questões (3 de 10)". */
 export function rotuloPagina(pagina: string | null | undefined): string {

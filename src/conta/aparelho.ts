@@ -49,6 +49,12 @@ export function paginaAtual(): { pagina: string; questao: string | null } {
     const p = typeof leitura?.progresso === 'number' ? Math.min(100, Math.floor(leitura.progresso / 10) * 10) : null
     if (p !== null) return { pagina: `${rota} · ${p}% lido`, questao: null }
   }
+  // No Atlas 3D, a estrutura aberta (ou as questões dela): "Atlas 3D: Pelve e quadril (Fêmur proximal)".
+  if (/^\/atlas(\/|$)/.test(rota)) {
+    let vendo: string | null = null
+    try { vendo = sessionStorage.getItem('oq-atlas-vendo') } catch { /* sem armazenamento */ }
+    if (vendo) return { pagina: `${rota} · ${vendo.replace(/ · /g, ' - ')}`, questao: null }
+  }
   return { pagina: rota, questao: null }
 }
 

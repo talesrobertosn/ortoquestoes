@@ -40,8 +40,8 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
       // Biblioteca de resumos (16/10/2026): na aba Estudar, em chamas, para ninguém deixar de ver (pedido do Tales).
       { destino: '/resumos', rotulo: 'Resumos · Beta', texto: 'Os temas que mais caem, com as questões no meio do texto', icone: 'livro', destaque: true, fogo: true },
       // Atlas Ortopédico 3D (25/10/2026): clique no osso e veja fraturas, classificações e questões.
-      { destino: '/atlas', rotulo: 'Atlas 3D · Beta', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', destaque: true },
-      { destino: '/flashcards', rotulo: 'Flashcards · Beta', texto: 'Revisão espaçada em flashcards e o modo jogo', icone: 'raio', destaque: true },
+      { destino: '/atlas', rotulo: 'Atlas 3D · Novo', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', destaque: true, fogo: true },
+      { destino: '/flashcards', rotulo: 'Flashcards', texto: 'Revisão espaçada em flashcards e o modo jogo', icone: 'raio', destaque: true },
       { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' },
       { destino: '/flashcards/cripta', rotulo: 'Jogar o Torneio', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
       { destino: '/revisao', rotulo: 'Revisão', texto: 'As questões que voltam hoje para fixar', icone: 'reiniciar' },

@@ -1,0 +1,44 @@
+/* Atlas 3D na capa (25/10/2026): quadro verde-escuro com a grade do atlas, o esqueleto à direita
+   flutuando devagar e o fogo pixel em volta, como o atalho dos Resumos. */
+.qa {
+  position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: stretch;
+  margin-top: 3.2rem; border: 2px solid #0a1f19; border-radius: 22px; color: #f3ecd6;
+  background: #0f2a22; background-image: radial-gradient(rgba(159, 227, 212, 0.16) 1px, transparent 1.4px); background-size: 22px 22px;
+  box-shadow: 6px 6px 0 rgba(10, 31, 25, 0.35);
+}
+.qa::after { content: ""; position: absolute; inset: 6px; z-index: -1; border: 1px solid rgba(227, 184, 96, 0.3); border-radius: 17px; pointer-events: none; }
+.qa__texto { display: grid; align-content: center; gap: 0.85rem; padding: 2.2rem 0 2.2rem 2.2rem; }
+.qa__selo { justify-self: start; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.7rem; border-radius: 999px; background: #edd69f; color: #314031; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; }
+.qa__capa { color: inherit; text-decoration: none; }
+.qa__capa:hover { color: #fff; }
+.qa strong { display: block; font-family: var(--fonte-marca); font-size: 2.2rem; font-weight: 600; line-height: 1.08; text-wrap: balance; }
+.qa__desc { max-width: 34rem; color: #dedfcc; line-height: 1.55; }
+.qa__botoes { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.2rem; }
+.qa__botao { display: inline-flex; align-items: center; gap: 0.45rem; border-radius: 12px; text-decoration: none; }
+.botao.qa__botao--contorno { border-color: rgba(243, 236, 214, 0.45); background: transparent; color: #f3ecd6; }
+.botao.qa__botao--contorno:hover { border-color: #e3b860; color: #fff; }
+.qa__nota { color: rgba(222, 223, 204, 0.75); font-size: 0.82rem; }
+
+.qa__arte { position: relative; display: grid; place-items: center; min-height: 22rem; overflow: hidden; border-radius: 0 20px 20px 0; text-decoration: none;
+  background: radial-gradient(60% 55% at 50% 52%, rgba(47, 168, 140, 0.28), transparent 70%); }
+.qa__arte img { width: auto; height: 23rem; max-height: 100%; animation: qa-flutua 5s ease-in-out infinite; filter: drop-shadow(0 14px 14px rgba(0, 0, 0, 0.35)); transition: transform 0.4s var(--ip-mola, ease); }
+.qa__arte:hover img { transform: scale(1.04); }
+.qa__etiqueta { position: absolute; left: max(0.8rem, calc(50% - 12rem)); top: 44%; display: grid; gap: 0.1rem; max-width: 9.5rem; padding: 0.4rem 0.6rem; border: 2px solid #0a1f19; border-radius: 6px; background: #f6f1e3; color: #314031; font-size: 0.74rem; line-height: 1.25; box-shadow: 3px 3px 0 #0a1f19; }
+.qa__etiqueta b { color: #1d7a64; font-size: 0.82rem; }
+.qa__eixo { position: absolute; right: 0.9rem; bottom: 0.8rem; padding: 0 0.4rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-size: 0.8rem; box-shadow: 2px 2px 0 #072320; }
+@keyframes qa-flutua { 50% { translate: 0 -8px; } }
+@media (prefers-reduced-motion: reduce) { .qa__arte img { animation: none; } }
+
+@media (max-width: 52rem) {
+  .qa { grid-template-columns: minmax(0, 1fr) 8.5rem; margin-top: 2.6rem; }
+  .qa__texto { padding: 1.4rem 0 1.4rem 1.3rem; gap: 0.65rem; }
+  .qa strong { font-size: 1.6rem; }
+  .qa__desc { font-size: 0.9rem; }
+  .qa__arte { min-height: 0; }
+  .qa__arte img { height: auto; width: 100%; max-height: 19rem; object-fit: contain; }
+  .qa__etiqueta, .qa__eixo { display: none; }
+}
+@media (max-width: 30rem) {
+  .qa__botao { width: 100%; justify-content: center; }
+  .qa { grid-template-columns: minmax(0, 1fr) 6.5rem; }
+}

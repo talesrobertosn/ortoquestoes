@@ -12,12 +12,12 @@ import { MenuGeral } from './MenuGeral'
 // Os mesmos destinos em cima (computador) e embaixo (celular, até 40rem), na
 // mesma ordem e com os mesmos ícones. Entre 40 e 56rem a barra de baixo ainda
 // não aparece e o topo não comporta tudo: os secundários (Cronograma e
-// Ranking) saem e continuam no Menu. Flashcards (beta público, 13/10/2026)
-// leva o selo Beta. A Revisão continua no menu e na página inicial.
+// Ranking) saem e continuam no Menu. Flashcards saiu do beta em 25/10/2026 (pedido do Tales).
+// A Revisão continua no menu e na página inicial.
 interface Destino { destino: string; rotulo: string; icone: NomeIcone; secundario?: boolean; beta?: boolean; classe?: string }
 const LINKS: Destino[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro' },
-  { destino: '/flashcards', rotulo: 'Flashcards', icone: 'raio', beta: true },
+  { destino: '/flashcards', rotulo: 'Flashcards', icone: 'raio' },
   { destino: '/cronograma', rotulo: 'Cronograma', icone: 'calendario', secundario: true },
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico' },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', secundario: true, classe: 'ranking' },
