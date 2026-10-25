@@ -118,15 +118,49 @@
   "conferido": false
  },
  "trauma-0008": {
+  "conceito": "O tipo II de O’Driscoll não é uma forma de dizer “metade do coronoide”. Ele identifica **onde o fragmento está: a faceta anteromedial**. Essa localização se associa à **instabilidade rotatória posteromedial**, alternativa D.\n\nA classificação anatômica conecta o fragmento ao mecanismo. Com varo, pronação e carga axial, a tróclea comprime a faceta anteromedial, em geral com avulsão do colateral lateral. O apoio ósseo e a contenção ligamentar falham juntos; reparar apenas um componente pode deixar incongruência. Na ponta, tipo I, o padrão típico é a tríade terrível; na base, tipo III, predominam lesões da ulna proximal (Rockwood, 10ª ed., cap. 40, “O’Driscoll: o lugar, e o lugar diz o mecanismo”).\n\nA classificação de Regan-Morrey responde a outra pergunta: a altura do fragmento. Seus tiposII eIII usam o limite de 50% da altura, enquanto O’Driscoll separa ponta, faceta e base. Usar um número romano sem dizer qual sistema foi empregado pode trocar localização por tamanho e levar a uma decisão inadequada.\n\nNa prática, uma cabeça do rádio intacta junto de uma fratura do coronoide deve aumentar a atenção para a faceta anteromedial. A TC define a localização e a congruência, inclusive em lesões que chegaram reduzidas e parecem pequenas na radiografia.\n\n> **Na prova:** O’DriscollII: faceta anteromedial, padrão posteromedial em varo.",
+  "correta": "**D: faceta anteromedial e instabilidade rotatória posteromedial.** Une o local e o padrão de lesão corretos. A fratura deve ser entendida com os ligamentos e a congruência, não pelo tamanho isolado.",
   "incorretas": {
-   "A": "A base é o tipo 3, e a tríade terrível se associa à ponta.",
-   "B": "A faceta anteromedial está certa, mas o mecanismo é varo posteromedial, não a tríade.",
-   "C": "A base é o tipo 3 de O'Driscoll."
+   "A": "**Troca tanto a região quanto a associação característica.** Base é tipo III e se relaciona às fraturas-luxações da ulna proximal. A tríade terrível se associa mais à ponta, tipo I, e não define a fratura basal.",
+   "B": "**Acerta a faceta e troca o mecanismo associado.** A tríade é o conjunto luxação, cabeça do rádio e coronoide, geralmente da ponta. A faceta anteromedial aponta para varo/pronação e instabilidade posteromedial.",
+   "C": "**Acerta o nome da instabilidade e localiza a fratura no grupo errado.** O apoio anteromedial é o que a tróclea esmaga no mecanismo descrito. A base pertence ao tipo III; sua associação característica é a ulna proximal."
   },
-  "conceito": "O **processo coronoide** é o principal batente anterior do cotovelo. **O'Driscoll** classifica suas fraturas pelo **local**, porque cada local tem um **mecanismo** próprio:\n\n**tipo 1, ponta**: associada à **tríade terrível** (luxação, cabeça do rádio e coronoide), com mecanismo em **valgo e rotação posterolateral**;\n\n**tipo 2, faceta anteromedial**: associada à **instabilidade rotatória posteromedial em varo**;\n\n**tipo 3, base**: fratura de mais da metade da altura, em geral com fratura do olécrano (fratura-luxação transolecraniana).\n\n**A instabilidade posteromedial em varo**: uma queda com o cotovelo em **varo** e rotação fratura a **faceta anteromedial** e rompe o **ligamento colateral lateral**. A radiografia costuma **subestimar** o fragmento: pedir **TC**.\n\n**O tratamento**: fixar a faceta (placa de suporte medial) e reparar o colateral lateral. Fragmentos pequenos da faceta já deixam o cotovelo instável e evoluem para artrose se não tratados.\n\n**Na prova**: O'Driscoll 2 é a fratura da **faceta anteromedial**, associada à **instabilidade rotatória posteromedial**.",
-  "correta": "O tipo 2 acomete a faceta anteromedial, por mecanismo em varo, com instabilidade rotatória posteromedial.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Instabilidade rotatória posteromedial em varo."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fraturas do coronoide",
+      "Instabilidade rotatória posteromedial em varo"
+     ],
+     "blocos": [
+      "fraturas-do-coronoide-2a7b9a32",
+      "fraturas-do-coronoide-fd8d6fcf",
+      "fraturas-do-coronoide-e7ea3673",
+      "fraturas-do-coronoide-7e8453cb",
+      "fraturas-do-coronoide-261ac45a",
+      "fraturas-do-coronoide-67ec539b",
+      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+      "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "cb905be94a3e791408d7a679895f1ca46f27424fb40799b675e925b50887f14b"
+    }
+   ],
+   "questaoSha256": "ad53fb8ba9f6cff67f2db03d6762b11ffd8e365d0c4874b9e3382bfa61fbb286",
+   "comentarioSha256": "e5fd699a526576546aada52203dcf3e434e4113cd57904fc4c9a8fb99aa54695"
+  }
  },
  "trauma-0009": {
   "conceito": "A fíbula proximal quebrada pode ser a parte visível de uma lesão que atravessou o tornozelo. Na **Maisonneuve**, o mecanismo clássico é **pronação-rotação externa**, alternativa C.\n\nNa PER, o lado medial falha primeiro, depois a sindesmose anterior e então a fíbula sofre torção. O traço é geralmente suprassindesmal, oblíquo ou espiral, com espícula anterior. A variante de Maisonneuve alcança a fíbula proximal e associa lesão medial e sindesmótica, podendo deixar radiografias locais do tornozelo aparentemente pouco alteradas (Rockwood, 10ª ed., cap. 65, “Pronação-rotação externa e Maisonneuve”).\n\n**O exame precisa ir além do maléolo.** O resumo recomenda palpar a fíbula proximal e radiografar a perna inteira se houver dor. Olhar só o tornozelo pode perder a extensão da lesão, enquanto olhar só a fratura proximal pode levar a tratar como isolada uma lesão do encaixe instável.\n\nO foco terapêutico também muda: em geral não se expõe nem fixa a fíbula proximal, pois isso arrisca o fibular comum. Quando há diástase, a sindesmose precisa ser reduzida e estabilizada; o tratamento não é simplesmente colocar uma placa no osso mais distante do tornozelo.\n\n> **Na prova:** Maisonneuve é PER; procure a lesão medial e a sindesmose, não apenas a fíbula proximal.",
@@ -1489,15 +1523,47 @@
   }
  },
  "trauma-0055": {
+  "conceito": "Uma fratura da **ponta do coronoide**, tipo I de O’Driscoll, deve fazer procurar a outra lesão óssea da tríade terrível: **a cabeça do rádio**, alternativa D. O número da classificação é uma pista do conjunto que sofreu a carga, não apenas uma etiqueta do fragmento.\n\nNa queda com a mão espalmada, valgo, supinação e carga axial perto da extensão, a ulna gira posterolateralmente. A tróclea cisalha a ponta do coronoide e a cabeça do rádio pode fraturar ao impactar no capítulo. Quando isso se soma à luxação, forma-se a tríade: luxação, cabeça radial e coronoide (Rockwood, 10ª ed., cap. 40, “Tríade terrível”).\n\nÉ importante distinguir a ponta da base e da faceta anteromedial. A faceta é tipo II e se relaciona à instabilidade posteromedial em varo; a base é tipo III e se associa às fraturas-luxações do olécrano e da ulna proximal. A topografia ajuda a prever a lesão associada que precisa ser pesquisada nas imagens.\n\nO tamanho ainda importa no tratamento, mas não substitui o padrão. Um fragmento minúsculo pode dispensar reparo se o restante reconstruído estabilizar o cotovelo; isso não autoriza ignorar cabeça radial, ligamentos ou congruência. A investigação do conjunto é o que permite mobilização precoce com segurança.\n\n> **Na prova:** ponta do coronoide, O’DriscollI: procure a cabeça do rádio e a tríade terrível.",
+  "correta": "**D: cabeça do rádio.** É a outra fratura do padrão de tríade que tipicamente acompanha a lesão da ponta. A relação deriva do cisalhamento posterolateral e da carga transmitida à radiocapitelar.",
   "incorretas": {
-   "A": "A fratura da ulna com luxação da cabeça do rádio é a lesão de Monteggia.",
-   "B": "A fratura do olécrano se associa à base do coronoide, na fratura-luxação transolecraniana.",
-   "C": "A fratura da diáfise do rádio com lesão radioulnar distal é a de Galeazzi."
+   "A": "**É genérica e não identifica a associação procurada.** O próprio coronoide pertence à ulna; dizer apenas “fratura da ulna” não nomeia a outra lesão óssea característica da tríade. O achado a procurar é a cabeça radial fraturada.",
+   "B": "**É a associação que caracteriza uma fratura basal.** O tipo III.2 de O’Driscoll inclui a fratura transolecraniana. Não é a associação classificatória típica da ponta, tipo I, perguntada aqui.",
+   "C": "**Desloca a procura da articulação para a diáfise.** A lesão óssea do rádio que compõe a tríade é proximal, na cabeça que impacta no capítulo. Uma fratura diafisária não é o elemento que define esse conjunto."
   },
-  "conceito": "A **fratura do tipo 1 de O'Driscoll** é a fratura da **ponta do processo coronoide**. Ela é a marca da **tríade terrível** do cotovelo:\n\n**luxação posterior** do cotovelo;\n\n**fratura da cabeça do rádio**;\n\n**fratura da ponta do coronoide**.\n\n**O mecanismo**: queda com o antebraço em **supinação**, cotovelo em **valgo** e carga axial: é a **instabilidade rotatória posterolateral** levada ao extremo. O colateral lateral se solta do epicôndilo primeiro.\n\n**O tratamento cirúrgico, de dentro para fora**:\n\n**coronoide**: sutura em laço ou parafuso;\n\n**cabeça do rádio**: fixar ou trocar por prótese, nunca ressecar;\n\n**colateral lateral**: reinserir no epicôndilo lateral;\n\n**colateral medial** ou **fixador articulado**: se o cotovelo continuar instável.\n\n**As outras lesões**: fratura da ulna com luxação da cabeça do rádio é **Monteggia**; fratura do olécrano com luxação é a fratura-luxação **transolecraniana** (associada à base do coronoide, tipo 3); fratura da diáfise do rádio com lesão da radioulnar distal é **Galeazzi**.\n\n**Na prova**: o O'Driscoll tipo 1 se associa à fratura da **cabeça do rádio**, na tríade terrível.",
-  "correta": "A ponta do coronoide quebra junto com a cabeça do rádio na luxação posterior: a tríade terrível.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Tríade terrível."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fraturas do coronoide",
+      "Tríade terrível"
+     ],
+     "blocos": [
+      "fraturas-do-coronoide-7e8453cb",
+      "fraturas-do-coronoide-261ac45a",
+      "fraturas-do-coronoide-67ec539b",
+      "triade-terrivel-2c2c5123",
+      "triade-terrivel-1483748a",
+      "triade-terrivel-fc91076c"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "5c889cfba83c9c062e0ff16fe1642a67b01189617b103f59b09fb59c94d99e45"
+    }
+   ],
+   "questaoSha256": "14296b35d0ad96d66287e8e0b6bcb2acf9c45992f9229ddb5b1e3f2053ba67da",
+   "comentarioSha256": "60251131d1c2d674a764fba17eb731586eac43fa72f71678a682fced926d197c"
+  }
  },
  "trauma-0056": {
   "conceito": "**A fratura transtrocantérica (pertrocantérica).** É a fratura **extracapsular** da região entre os trocânteres, típica do **idoso** com osteoporose após queda da própria altura. Por ser extracapsular, tem **boa irrigação** e consolida bem; o risco de necrose da cabeça é baixo. O problema é a **instabilidade** e o colapso em **varo**.\n\n**Os músculos explicam a deformidade.** Na fratura transtrocantérica desviada, o membro fica **encurtado** e em **rotação externa**. Os músculos responsáveis:\n\n| Músculo | Inserção | Efeito |\n|---|---|---|\n| **Adutores** (adutor longo, curto e magno) | **Diáfise** do fêmur (linha áspera) | Puxam a diáfise para **medial e proximal**: **adução** e **encurtamento** |\n| **Iliopsoas** | Trocanter **menor** | Se o trocanter menor fica no fragmento proximal, flete o proximal; se fica com a diáfise, contribui para a rotação externa e o encurtamento |\n| **Glúteos médio e mínimo** | Trocanter **maior** | Puxam o fragmento proximal (ou o trocanter maior solto) para **abdução** |\n| Rotadores externos curtos | Região do trocanter maior | **Rotação externa** |\n| Gravidade (peso do membro) | | **Rotação externa** do membro deitado |\n\n**A diáfise e os adutores.** Quando a fratura separa a diáfise do maciço trocantérico, a **diáfise** fica sob a ação dos **adutores**, que a puxam para **medial** e para **cima**, encurtando o membro e fechando o ângulo cervicodiafisário (varo). Por isso, a redução exige **tração** e **leve abdução** e **rotação interna** do membro na mesa de tração.\n\n**A estabilidade.** As fraturas **instáveis** são as com:\n- cominuição da **parede posteromedial** (trocanter menor e calcar);\n- traço **reverso** (oblíquo invertido);\n- extensão **subtrocantérica**;\n- parede lateral fina ou fraturada.\n\n**O tratamento.** Cirurgia **precoce** (idealmente nas primeiras **24 a 48 horas**), para permitir a mobilização e reduzir a mortalidade.\n- Fraturas **estáveis**: **parafuso deslizante do quadril** (DHS) ou haste cefalomedular.\n- Fraturas **instáveis** e de traço reverso: **haste cefalomedular**.\n- O parafuso cefálico deve ficar **centrado** na cabeça, com a **distância ponta-ápice** menor que **25 mm**, para evitar o corte (cut-out).",
@@ -1569,15 +1635,46 @@
   "conferido": false
  },
  "trauma-0059": {
+  "conceito": "A tríade terrível costuma nascer de uma queda apoiada na mão, com o cotovelo **perto da extensão**, carga em **valgo** e o antebraço em **supinação**. A alternativa D reúne os componentes do padrão posterolateral.\n\nA carga axial se transmite pelo antebraço. Com a rotação posterolateral, a cabeça radial perde sua relação com o capítulo e pode fraturar, enquanto a tróclea cisalha a ponta do coronoide. Somadas à luxação, essas duas fraturas definem a tríade. A cápsula e o complexo lateral também participam da perda de contenção (Rockwood, 10ª ed., cap. 40, “Mecanismo e o que vem junto”).\n\n**Não é o mesmo mecanismo da fratura anteromedial.** Pronação com varo e carga axial esmaga a faceta anteromedial do coronoide e produz instabilidade posteromedial. Inverter o sentido da rotação e da carga muda o ponto que quebra e o conjunto ligamentar que precisa ser reconstruído.\n\n“Extensão” na opção é a posição típica de transmissão da carga, não uma exigência de que toda lesão ocorra com o cotovelo travado no último grau. O capítulo descreve cotovelo quase estendido. A avaliação clínica ainda precisa procurar as fraturas, a congruência e as lesões associadas; não se diagnostica a tríade apenas pela história da queda.\n\n> **Na prova:** tríade terrível: extensão, valgo e supinação, com carga axial.",
+  "correta": "**D: extensão, valgo e antebraço supinado.** Corresponde à descrição do deslocamento rotatório posterolateral que associa luxação e fraturas da cabeça radial e da ponta do coronoide.",
   "incorretas": {
-   "A": "Varo com pronação é o mecanismo da instabilidade posteromedial.",
-   "B": "O valgo e a supinação estão certos, mas o cotovelo está em extensão na queda.",
-   "C": "Varo com pronação não produz a tríade terrível."
+   "A": "**Reúne componentes do padrão posteromedial, não da tríade típica.** Varo e pronação direcionam a compressão para a faceta anteromedial. A flexão acrescentada não corrige a troca do mecanismo principal.",
+   "B": "**Acerta valgo e supinação, mas troca a posição típica do cotovelo.** A descrição do capítulo é com o cotovelo quase estendido, transmitindo carga axial na queda. A alternativa não reúne toda a combinação pedida.",
+   "C": "**Acerta a proximidade da extensão e inverte os vetores.** Varo e pronação pertencem ao mecanismo de instabilidade posteromedial. A tríade típica envolve o padrão posterolateral com valgo e supinação."
   },
-  "conceito": "A **tríade terrível** do cotovelo (luxação posterior, fratura da cabeça do rádio e fratura da ponta do coronoide) vem de uma **queda sobre a mão estendida**.\n\n**A posição do membro na queda**:\n\n**cotovelo em extensão** (ou quase estendido);\n\n**carga axial**;\n\n**valgo**;\n\n**antebraço em supinação**: a ulna roda para fora, por baixo do úmero.\n\n**A sequência das lesões** (círculo de Horii, descrito por O'Driscoll): a lesão começa no **lado lateral** (colateral lateral), passa pela **cápsula** anterior e posterior e, por último, chega ao **colateral medial**. É a **instabilidade rotatória posterolateral** levada até a luxação.\n\n**As fraturas**: ao luxar, a **cabeça do rádio** e a **ponta do coronoide** batem contra o úmero e quebram.\n\n**O contraste**: a **instabilidade rotatória posteromedial** vem do mecanismo oposto, em **varo** e pronação, com fratura da faceta anteromedial do coronoide.\n\n**Na prova**: a tríade terrível vem de queda com o cotovelo em **extensão**, **valgo** e o antebraço **supinado**.",
-  "correta": "A queda com o cotovelo estendido, em valgo e com o antebraço supinado produz a instabilidade posterolateral que luxa e fratura.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Tríade terrível; Instabilidade rotatória posteromedial em varo; Luxação simples do cotovelo."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Tríade terrível",
+      "Instabilidade rotatória posteromedial em varo",
+      "Luxação simples do cotovelo"
+     ],
+     "blocos": [
+      "triade-terrivel-2c2c5123",
+      "triade-terrivel-1483748a",
+      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+      "luxacao-simples-do-cotovelo-d4159e35"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "4cfdc633ae62dad28cc598ab51acf592833d1ebc7395cd657528be6d15caee9a"
+    }
+   ],
+   "questaoSha256": "42c7c433f4d4bae8cd1bd5c76cf24e5a896008c4518386065315663c5476a011",
+   "comentarioSha256": "83b6330092d61d6bbd6d5c54a532241ee5c14cc97e071aba4b22771674a35e1d"
+  }
  },
  "trauma-0060": {
   "conceito": "**O antebraço é uma articulação.** O rádio gira em torno da ulna na **pronação e supinação**. Para que esse movimento seja preservado, as fraturas da diáfise dos dois ossos do adulto precisam de **redução anatômica**, com restauração do **comprimento**, do alinhamento, da **rotação** e da **curvatura radial** (o arco do rádio). Pequenos desvios limitam a rotação.\n\n**O tratamento padrão: placa.** No adulto, a fratura dos dois ossos é tratada com **redução aberta e fixação com placa** (placas de compressão de 3,5 mm), com pelo menos **seis corticais** de cada lado da fratura. Os resultados são excelentes, com consolidação em mais de 95%.\n\n**Por que a haste é a exceção no adulto.**\n- A haste **não controla bem a rotação** nem restaura com precisão a curvatura do rádio.\n- As hastes mais antigas tinham mais pseudoartrose e consolidação viciosa.\n- Na **criança**, ao contrário, as **hastes flexíveis** são o tratamento padrão, porque o periósteo grosso e a remodelação compensam os desvios.\n\n**Quando a haste é indicada no adulto.**\n- **Fraturas segmentares** do rádio e da ulna: as placas teriam de ser muito longas, com grande descolamento de partes moles e risco à irrigação do segmento intermediário. A haste estabiliza o segmento todo por uma incisão pequena.\n- **Lesões graves de partes moles** ou queimaduras, em que uma via ampla seria arriscada.\n- **Fraturas patológicas** e osso de má qualidade.\n- **Politraumatizados** que precisam de cirurgia rápida.\n- **Pseudoartroses** e falhas de placas, em casos selecionados.\n\n**A haste da ulna isolada.** Na fratura **isolada** da ulna (fratura do cassetete), a maioria é tratada **sem cirurgia** ou com placa. A haste é pouco usada nesse cenário.\n\n**As hastes modernas para o antebraço** têm bloqueio e formatos que reproduzem melhor a curvatura do rádio, o que ampliou as indicações em alguns centros.",
@@ -3747,15 +3844,44 @@
   }
  },
  "trauma-0135": {
+  "conceito": "Os fios da banda de tensão podem estabilizar o olécrano e, ainda assim, atrapalhar a rotação do antebraço se seguirem lateralmente demais. A estrutura com que entram em conflito é a **tuberosidade do rádio**, chamada de tuberosidade bicipital na alternativa C.\n\nNa banda de tensão, os fios partem da ponta do olécrano e atravessam a ulna, associados à cerclagem em oito. O capítulo descreve saída pela cortical anteromedial e adverte que o desvio lateral dos fios irrita a tuberosidade radial. A consequência é um conflito mecânico com rigidez de rotação, podendo evoluir com sinostose (Rockwood, 10ª ed., cap. 40, “Banda de tensão”).\n\nO sentido do erro muda o risco. Lateralmente, a preocupação destacada é o contato ósseo com o rádio; medialmente, fios longos demais podem alcançar o ulnar ou o mediano. Por isso não basta conferir o alinhamento da fratura: também importa verificar a posição e a projeção dos implantes.\n\nA banda é descrita para fraturas simples, sem cominuição, proximais ao coronoide e com cotovelo estável. Cominuição ou instabilidade alteram a escolha da construção. Porém esta pergunta não está comparando métodos: está identificando a complicação ligada à direção lateral dos fios.\n\n> **Na prova:** fio lateral demais no olécrano: conflito com a tuberosidade radial e perda de rotação.",
+  "correta": "**C: impacto da tuberosidade bicipital.** Trata-se da tuberosidade do rádio. O contato com fios laterais demais explica a limitação mecânica da rotação e o risco de sinostose descritos no capítulo.",
   "incorretas": {
-   "A": "A perda da fixação se relaciona com cerclagem frouxa ou fios mal ancorados, não com a posição lateral.",
-   "B": "O atraso da consolidação não é a consequência da posição lateral dos fios.",
-   "D": "O risco ao interósseo anterior vem dos fios que saem demais na face anterior, não da posição lateral."
+   "A": "**Confunde posição do implante com falência da montagem.** Perder a fixação significa deixar de manter a fratura reduzida. O conflito aqui pode ocorrer mesmo enquanto a montagem mantém o olécrano: o problema é o fio projetado para o lado do rádio, que atrapalha a rotação.",
+   "B": "**Troca o conflito mecânico por um problema de união da fratura.** Atraso de consolidação diz respeito à evolução da união óssea. O achado específico da posição lateral é a irritação da tuberosidade radial; limitação da rotação não deve ser automaticamente atribuída à demora de consolidação.",
+   "D": "**Troca o risco ósseo lateral pelo risco neurológico.** Na advertência técnica do capítulo, fios mediais longos demais ameaçam ulnar ou mediano. Para o desvio lateral pedido, a complicação identificada é o impacto com a tuberosidade radial, e não uma lesão específica do interósseo anterior."
   },
-  "conceito": "A **banda de tensão** no olécrano usa a **tração do tríceps** a favor da fixação: com o cotovelo em flexão, a força que separaria os fragmentos vira **compressão** na superfície articular. Ela serve para a fratura **transversa simples**; nas cominutas, oblíquas e na Monteggia, usa-se **placa**.\n\n**A montagem**: dois **fios de Kirschner** paralelos, de proximal para distal, e um **fio de cerclagem** em oito, passando atrás dos fios e por um furo na ulna.\n\n**Os erros técnicos e suas consequências**:\n\n**fios muito laterais ou longos demais**, saindo pela cortical anterior: atingem a região da **tuberosidade bicipital** e o rádio proximal, com **bloqueio da pronação e da supinação**;\n\n**fios saindo anteriormente** de forma excessiva: risco ao **nervo interósseo anterior** e à artéria;\n\n**fios soltos** que migram para trás: dor e irritação da pele, a complicação mais comum (motivo de retirada do material);\n\n**cerclagem frouxa** ou fora do lugar: perda da redução.\n\n**A dica**: fios apoiados na **cortical anterior** (bicorticais), sem passar muito dela, e dobrados e enterrados no tríceps.\n\n**Na prova**: fios de Kirschner muito laterais causam **impacto na tuberosidade bicipital**.",
-  "correta": "Fios muito laterais saem perto do rádio proximal, batem na tuberosidade bicipital e bloqueiam a rotação do antebraço.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Ulna proximal: olécrano e Monteggia posterior."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Ulna proximal: olécrano e Monteggia posterior"
+     ],
+     "blocos": [
+      "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+      "ulna-proximal-olecrano-e-monteggia-posterior-bb35369d",
+      "ulna-proximal-olecrano-e-monteggia-posterior-df272478",
+      "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "eca9a84feaefdd3a246c28cb2e4d608336f6b81c7c1175942d2b157555277cb4"
+    }
+   ],
+   "questaoSha256": "ba9aeeeac2408c74a7efac5203edd90353e4ed26c57330772bebeb9bac6daee3",
+   "comentarioSha256": "8c9539eb045cd92d40cf549d5f613c52f26cf0b854ef53a187010723eeb5addc"
+  }
  },
  "trauma-0136": {
   "incorretas": {
@@ -6945,15 +7071,48 @@
   "conferido": false
  },
  "trauma-0268": {
+  "conceito": "Uma cabeça radial fraturada pode ser a marca de uma carga que também rompeu ligamentos. Na carga em **valgo**, a cabeça comprime o capítulo e o **ligamento colateral medial pode romper**. Essa é a relação descrita em B.\n\nO medial é um estabilizador primário contra valgo; a cabeça radial é secundária. Perder os dois apoios muda o significado da fratura: uma ressecção que poderia ser considerada numa lesão verdadeiramente isolada pode piorar muito um cotovelo com contenção medial insuficiente. A avaliação deve procurar as lesões associadas antes de decidir pelo fragmento ósseo sozinho (Rockwood, 10ª ed., cap. 40, “Três mecanismos, três lesões associadas”).\n\nTambém é necessário separar **dor** de **bloqueio da pronossupinação**. Dor por hemartrose pode dificultar o exame; o capítulo permite aspirar/anestesiar ou reavaliar depois. Bloqueio mecânico por fragmento ou cartilagem é uma informação decisiva para operar, enquanto um número de desvio isolado não determina a conduta de toda Mason II.\n\nAs classificações e a membrana interóssea completam a investigação. Mason II é marginal desviada; Mason III é cominutiva de toda a cabeça. A palavra “fragmentada” sozinha não define o tipo II nem faz toda fratura com mais de um fragmento ser III. Na Essex-Lopresti, a membrana interóssea e a radioulnar distal estão rompidas, razão para examinar também o punho.\n\n> **Na prova:** carga em valgo exige avaliar o medial; movimento do antebraço e estabilidade longitudinal também entram na decisão.",
+  "correta": "**B: a carga em valgo pode lesar o colateral medial.** A compressão radiocapitelar e a falha medial pertencem ao mesmo padrão de carga. A cabeça fraturada não deve ser analisada como lesão isolada antes dessa pesquisa.",
   "incorretas": {
-   "A": "A fratura fragmentada, cominutiva, é o Mason 3; o Mason 2 é parcial com desvio.",
-   "C": "O exame da rotação é essencial, porque o bloqueio mecânico indica cirurgia.",
-   "D": "Na lesão de Essex-Lopresti, a membrana interóssea se rompe."
+   "A": "**Usa fragmentação como se fosse a definição de Mason II.** O tipo II é a fratura marginal desviada; a cominuição de toda a cabeça caracteriza III. É preciso dizer extensão e padrão, não apenas contar pedaços ou usar “fragmentada” de forma vaga.",
+   "C": "**Descarta o dado que pode mudar a indicação.** A pronossupinação distingue limitação dolorosa de bloqueio mecânico. Se a dor impede testar, deve-se melhorar a avaliação; não concluir que o movimento é irrelevante.",
+   "D": "**Retira uma parte essencial da definição de Essex-Lopresti.** A lesão associa fratura da cabeça a ruptura da membrana interóssea e instabilidade da radioulnar distal. Sem reconhecer a perda de contenção longitudinal, pode-se agravar a migração radial ao ressecar a cabeça."
   },
-  "conceito": "A **fratura da cabeça do rádio** é a fratura mais comum do cotovelo do adulto. Com o cotovelo estendido, cerca de **60%** da carga axial passa pela articulação **radiocapitelar**; na queda com a mão espalmada, a cabeça do rádio recebe o impacto.\n\n**O componente em valgo**: a queda costuma ter um vetor em **valgo**. Ele age nos dois lados do cotovelo ao mesmo tempo:\n\n**lado lateral, compressão**: a cabeça do rádio é esmagada contra o capítulo e fratura;\n\n**lado medial, distração**: o **ligamento colateral medial** (o feixe anterior, principal freio ao valgo) é tracionado e pode **romper**.\n\n**A consequência**: toda fratura da cabeça do rádio pede o **teste em valgo**. Com o colateral medial roto, a cabeça do rádio vira o **único** freio ao valgo, e ressecá-la sem repor deixa o cotovelo instável.\n\n**Os outros pontos da questão**:\n\n**Mason 2** é a fratura **parcial com desvio**; a fragmentada (cominutiva) é o **Mason 3**;\n\no exame da **pronação e da supinação** é essencial: o **bloqueio mecânico** da rotação é a indicação absoluta de cirurgia;\n\nna lesão de **Essex-Lopresti**, a **membrana interóssea** se rompe, junto com a radioulnar distal.\n\n**Na prova**: o mecanismo com carga em **valgo** pode lesar o **ligamento colateral medial**.",
-  "correta": "O valgo comprime a cabeça do rádio contra o capítulo e, ao mesmo tempo, traciona e pode romper o colateral medial.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio; Quem segura o cotovelo."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio",
+      "Quem segura o cotovelo"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-c1d3bcd9",
+      "quem-segura-o-cotovelo-e54d94bb",
+      "fratura-da-cabeca-do-radio-d9bc4253",
+      "fratura-da-cabeca-do-radio-da237d59",
+      "fratura-da-cabeca-do-radio-ea450acb",
+      "fratura-da-cabeca-do-radio-74811875",
+      "fratura-da-cabeca-do-radio-8dbbe2b9"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "0c386d9c181c0a639c845772a529bbbef11e1b08fcef7e3f12ca3e7aa62275d2"
+    }
+   ],
+   "questaoSha256": "28ff51c040cb92687bbc670216aee94db11963cf9ca761d55bb435418f32aff2",
+   "comentarioSha256": "b53e46e6fac0723e4a5af264ca2b2be4c38ff5bc58130c8af8f78a9ec42af502"
+  }
  },
  "trauma-0269": {
   "incorretas": {
@@ -15011,18 +15170,49 @@
   "conferido": false
  },
  "trauma-0806": {
+  "conceito": "A tróclea esmaga a borda anteromedial do coronoide quando a carga axial se combina com **varo e pronação**, alternativa A. A rotação orienta o contato e o varo sobrecarrega justamente esse apoio ósseo.\n\nO coronoide é um estabilizador primário do cotovelo; a sua faceta anteromedial ajuda a resistir ao varo. Nesse mecanismo, chamado **instabilidade rotatória posteromedial em varo**, o complexo lateral costuma sofrer avulsão junto da fratura. A cabeça do rádio, ao contrário do que acontece na tríade terrível, quase nunca quebra. Portanto, cabeça radial intacta não afasta uma lesão importante do cotovelo (Rockwood, 10ª ed., cap. 40, “Instabilidade rotatória posteromedial em varo”).\n\nA diferença entre os mecanismos tem consequência prática. Na tríade terrível, valgo e supinação acompanham a carga axial e o deslocamento posterolateral, com fratura radial e da ponta do coronoide. Na lesão em varo, é preciso procurar a faceta anteromedial, às vezes discreta na radiografia. A TC com reconstrução 3D ajuda a mostrar o fragmento e a subluxação residual.\n\nMesmo um fragmento pequeno pode retirar um apoio decisivo. Se o cotovelo fica incongruente, reparar apenas o ligamento lateral não recompõe a borda óssea; pode ser necessária uma placa de suporte na faceta. A localização da fratura ensina mais sobre a estabilidade do que chamá-la apenas de uma lasca do coronoide.\n\n> **Na prova:** faceta anteromedial: carga axial, varo e pronação.",
+  "correta": "**A: varo e pronação.** A combinação comprime a faceta anteromedial e explica a instabilidade posteromedial, frequentemente acompanhada de avulsão lateral.",
   "incorretas": {
-   "B": "O varo está certo, mas o antebraço está em pronação.",
-   "C": "O valgo leva às lesões laterais, como a tríade terrível.",
-   "D": "Valgo com supinação é o mecanismo da tríade terrível."
+   "B": "**Acerta o varo, mas inverte a rotação.** Supinação é o componente rotatório do padrão posterolateral descrito na tríade terrível. Mantê-la junto do varo mistura partes de mecanismos diferentes e perde o movimento em pronação que esmaga a faceta anteromedial.",
+   "C": "**Acerta a pronação, mas troca o lado da sobrecarga.** O padrão pedido comprime o apoio anteromedial sob varo. Valgo exige contenção do colateral medial e da cabeça do rádio; não é o vetor angular que define essa fratura da faceta.",
+   "D": "**Descreve o padrão da tríade terrível.** Valgo e supinação com carga axial perto da extensão produzem rotação posterolateral, associada à cabeça radial e à ponta do coronoide. É a comparação útil para distinguir a localização anteromedial exigida aqui."
   },
-  "conceito": "A **fratura da faceta anteromedial do coronoide** (O'Driscoll tipo 2) tem um mecanismo próprio, diferente da tríade terrível:\n\n**compressão axial** do cotovelo;\n\n**varo**;\n\n**rotação posteromedial**, com o antebraço em **pronação**.\n\n**O que acontece**: o varo **abre** o lado lateral (rompendo o **colateral lateral**) e **comprime** o lado medial, onde a tróclea esmaga a **faceta anteromedial** do coronoide. É a **instabilidade rotatória posteromedial em varo**.\n\n**O contraste**: a **tríade terrível** vem de **valgo** com **supinação**, com fratura da **ponta** do coronoide e da cabeça do rádio.\n\n**Por que é traiçoeira**: a radiografia pode mostrar um fragmento pequeno e o cotovelo **reduzido**, mas a articulação está instável e evolui para **artrose** rápida. Pedir **TC**.\n\n**O tratamento**: fixar a faceta (placa de suporte medial ou parafusos) e reparar o **colateral lateral**.\n\n**Na prova**: a fratura da faceta anteromedial vem de compressão axial com **varo e pronação**.",
-  "correta": "Varo com pronação e carga axial fazem a tróclea esmagar a faceta anteromedial, enquanto o colateral lateral se rompe.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 40"
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Instabilidade rotatória posteromedial em varo; Tríade terrível; Quem segura o cotovelo."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Instabilidade rotatória posteromedial em varo",
+      "Tríade terrível",
+      "Quem segura o cotovelo"
+     ],
+     "blocos": [
+      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+      "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+      "triade-terrivel-1483748a",
+      "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
+      "quem-segura-o-cotovelo-e54d94bb",
+      "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+      "instabilidade-rotatoria-posteromedial-em-varo-28c9d117"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "9e775c87967e831884b7157e3fc3e522a6ef776d37525b99f39ea39b381ba345"
+    }
+   ],
+   "questaoSha256": "80be03bd877a5db62a882c5704820820def667864a46f760cbc672254335c2af",
+   "comentarioSha256": "3e0182ad3fa342c0bea978d93c7c24385407a8997def6c31a2c81919b68cc9a0"
+  }
  },
  "trauma-0807": {
   "conceito": "Para onde o cimento consegue escapar de uma vértebra fraturada? Uma rota é o platô vertebral rompido, que comunica o corpo com o **disco adjacente**. Essa é a direção mais frequente na descrição do capítulo: **discal 45%, paravertebral 35%, epidural 20% e pré-vertebral 18%** (resumo do Rockwood, 10ª ed., cap. 49, “As complicações do cimento”).\n\nA ordem de frequência não é uma escala de gravidade. O espaço epidural não é o destino mais comum, mas a complicação neurológica pode ser grave e exigir descompressão. Já o cimento no disco pode predispor o platô vizinho a uma nova fratura. Por isso uma resposta sobre “onde mais vaza” não deve ser trocada por “onde mais preocupa”.\n\nOs percentuais são os apresentados na fonte para as localizações; não devem ser somados como se fossem quatro categorias mutuamente exclusivas de uma única distribuição. O ponto decisivo é a comparação entre as rotas.\n\nLeia no resumo da Biblioteca a seção de complicações do cimento para ligar a anatomia aos riscos.",
@@ -18475,15 +18665,51 @@
   }
  },
  "trauma-0966": {
+  "conceito": "Na tríade terrível, o antebraço sofre uma **rotação posterolateral** em relação ao úmero. A ulna perde o encaixe com a tróclea e o conjunto da lesão inclui **luxação, fratura da cabeça do rádio e fratura do coronoide**. Esse é o padrão da alternativa C.\n\nImagine a carga chegando pela mão espalmada com o cotovelo quase estendido. Supinação e valgo se somam à compressão axial. A tróclea cisalha a ponta do coronoide, o complexo lateral falha e a cabeça do rádio pode fraturar. “Posterolateral” descreve o deslocamento do antebraço, não o nome da faceta fraturada (Rockwood, 10ª ed., cap. 40, “Tríade terrível”).\n\nA comparação que evita confusão é a instabilidade **posteromedial em varo**: nela, pronação e varo comprimem a faceta anteromedial, e a cabeça radial quase nunca quebra. Assim, não basta reconhecer uma fratura do coronoide; é preciso localizar se é ponta ou faceta e procurar as lesões associadas.\n\nO tratamento da tríade procura devolver os apoios ósseos e a contenção lateral. O capítulo descreve reparo do coronoide, reconstrução ou substituição da cabeça radial conforme a possibilidade de fixação, e reparo lateral; o medial é acrescentado se persistir instabilidade. O teste final de congruência é indispensável, porque o objetivo é recuperar um cotovelo estável que possa começar a mover.\n\n> **Na prova:** tríade terrível é o conjunto de luxação, cabeça radial e coronoide no padrão posterolateral.",
+  "correta": "**C: posterolateral.** É a direção do deslocamento rotatório da ulna no mecanismo de valgo, supinação e carga axial. A fratura da ponta e a lesão radial completam o padrão da tríade.",
   "incorretas": {
-   "A": "**Padrão raro.** A instabilidade anterolateral não é o mecanismo da tríade terrível.",
-   "B": "**Padrão raro.** Os padrões anteriores do cotovelo se associam a fraturas transolecranianas.",
-   "D": "**Outro padrão.** A instabilidade posteromedial em varo fratura a faceta anteromedial do coronoide, sem fratura da cabeça do rádio."
+   "A": "**A direção anterior inverte o deslocamento pedido.** “Lateral” isoladamente não basta: na tríade, a ulna roda para trás em relação ao úmero. O capítulo também descreve uma fratura-luxação anterior transolecraniana, em que o antebraço atravessa a fratura do olécrano; essa arquitetura é diferente da tríade.",
+   "B": "**Combina duas direções que não correspondem ao movimento da tríade.** Uma fratura anterior do coronoide não significa que a ulna tenha luxado anteriormente, e a localização anteromedial da faceta também não dá nome à direção da luxação. Aqui, a ponta é cisalhada durante a rotação posterior e lateral do antebraço.",
+   "D": "**É o padrão em varo da faceta anteromedial.** A rotação posteromedial envolve pronação, lesão anteromedial do coronoide e frequente avulsão lateral, habitualmente sem fratura radial. Esse conjunto difere da tríade, em que a cabeça do rádio é parte da definição."
   },
-  "conceito": "**A tríade terrível.** É a **luxação posterior** do cotovelo com fratura da **cabeça do rádio** e da **ponta do coronoide**. É chamada terrível porque, tratada de forma incompleta, evolui com **instabilidade** recorrente, rigidez e artrose.\n\n**O mecanismo posterolateral.** Descrito por **O'Driscoll**: queda sobre a mão espalmada, com **carga axial**, **valgo** e **supinação** sobre o cotovelo semifletido. A ulna e o rádio **rodam juntos** para fora e para trás em relação ao úmero: é a **instabilidade rotatória posterolateral**. As estruturas cedem em anel, de **lateral para medial** (círculo de Horii): primeiro o **colateral ulnar lateral**, depois a cápsula, e por fim o medial. No caminho, a **cabeça do rádio** bate no capítulo e fratura, e a **ponta do coronoide** é cisalhada pela tróclea.\n\n**O contraste posteromedial.** O padrão **posteromedial** em **varo** é outro: **varo**, rotação interna e carga axial, com fratura da **faceta anteromedial** do coronoide e lesão do colateral **lateral**, **sem** fratura da cabeça do rádio. Os padrões **anteriores** são raros (fraturas-luxações transolecranianas).\n\n**O tratamento da tríade.** Quase sempre **cirúrgico**, reconstruindo de dentro para fora: **coronoide** (sutura em laço pela cápsula anterior ou parafusos, conforme o tamanho), **cabeça do rádio** (fixação se possível; **prótese** se cominutiva; nunca ressecar sem substituir), **complexo lateral** (reinserção do colateral ulnar lateral no epicôndilo, no ponto isométrico). Testar a estabilidade de 30 a 130 graus; se instável, **colateral medial** ou **fixador articulado**. Mobilização **precoce**.\n\n**Na prova:** tríade terrível = instabilidade **posterolateral** (rotatória); o padrão **posteromedial** em varo é o da faceta anteromedial do coronoide.",
-  "correta": "**Posterolateral.** Sob carga axial, valgo e supinação, a ulna e o rádio rodam juntos para fora e para trás, e as estruturas cedem de lateral para medial, fraturando a cabeça do rádio e o coronoide.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Tríade terrível; Instabilidade rotatória posteromedial em varo; Ulna proximal: olécrano e Monteggia posterior."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Tríade terrível",
+      "Instabilidade rotatória posteromedial em varo",
+      "Ulna proximal: olécrano e Monteggia posterior"
+     ],
+     "blocos": [
+      "triade-terrivel-2c2c5123",
+      "triade-terrivel-1483748a",
+      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+      "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+      "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad",
+      "triade-terrivel-fc91076c",
+      "triade-terrivel-7f75b022",
+      "triade-terrivel-fe3d9fe4",
+      "triade-terrivel-499f49dc"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "9bca1356eef2ec65463276c9d3765e4e4c568d725076713281f1946fa85efe79"
+    }
+   ],
+   "questaoSha256": "79c68511318c897c302a7266a408eac48be3eceb79b213a79e1a63cf22066741",
+   "comentarioSha256": "0a9208113ee0082f321c89977d676e40efaabaf2926bc4c957bf1689bdf4b755"
+  }
  },
  "trauma-0967": {
   "conceito": "A **angulação sagital de 45 graus**, alternativa B, supera o limite de 40 graus do resumo e é um critério relativo de fixação. Há, porém, uma ressalva importante: os **17 mm de C** entram na faixa de 15–20 mm apresentada por um dos algoritmos do capítulo.\n\nO Rockwood, 10ª ed., cap. 33, diferencia GPA, angulação e translação. O GPA usa os polos da glenoide e o ângulo inferior da escápula; a angulação do corpo é medida no perfil. A TC 3D ajuda a entender se a aparente medialização é, na verdade, lateralização da porção infraespinal do corpo. Essas medidas não são nomes diferentes do mesmo desvio.\n\n**O próprio resumo usa dois limites para o deslocamento mediolateral.** O algoritmo 33-1 cita 15–20 mm, enquanto a figura 33-19 trabalha com mais de 20 mm. Assim, B é sustentada de forma direta, mas não se deve transformar C em uma medida seguramente irrelevante. D também não pode ser julgada apenas pelo número baixo de angulação: seus 15 mm tocam a faixa do outro critério.\n\nA indicação final continua relativa a idade, atividade, pele e estado geral. O objetivo é recuperar a relação glenoide-corpo e a função muscular, não operar automaticamente todo paciente que ultrapasse um corte.\n\n> **Na prova:** B é a resposta oficial e ultrapassa 40 graus; a ambiguidade dos milímetros pertence à fonte e precisa ficar explícita.",
@@ -21830,18 +22056,47 @@
   "conferido": false
  },
  "trauma-1109": {
+  "conceito": "O’Driscoll II.3 exige **faceta anteromedial e tubérculo sublime**. A ponta pode acompanhar o fragmento ou permanecer fora dele. Assim, C é a única alternativa que contém as estruturas obrigatórias do subtipo.\n\nO tipo II reúne as fraturas anteromediais. No subtipo 1, só a borda; no2, borda e ponta; no3, borda e tubérculo sublime, **com ou sem ponta**. O número do subtipo não é simplesmente uma escala de altura como a de Regan-Morrey: ele descreve a extensão anatômica da fratura (Rockwood, 10ª ed., cap. 40, “O’Driscoll: o lugar, e o lugar diz o mecanismo”).\n\nO tubérculo sublime não é apenas um ponto de referência no desenho. Nele se insere o feixe anterior do colateral medial, importante contra o valgo. Quando esse local vai junto ao fragmento anteromedial, pode haver instabilidade em valgo além da falha em varo do padrão posteromedial. O capítulo ressalta essa consequência no tratamento da faceta.\n\nPor isso é necessário identificar o que o fragmento leva, não apenas notar que há uma fratura do coronoide. A TC com reconstrução 3D ajuda a definir a borda, o tubérculo e a congruência. Uma descrição de “faceta e ponta” não garante que o tubérculo sublime esteja incluído e pode classificar o subtipo errado.\n\n> **Na prova:** II.3: faceta anteromedial mais sublime; a ponta é opcional.",
+  "correta": "**C: faceta anteromedial e tubérculo sublime.** São os componentes obrigatórios da definição. A inclusão do ponto de inserção medial explica por que o subtipo pode acrescentar instabilidade em valgo.",
   "incorretas": {
-   "A": "A base do coronoide é o tipo 3 de O'Driscoll.",
-   "B": "A ponta isolada é o tipo 1.",
-   "D": "A faceta anteromedial com a ponta é o subtipo 2."
+   "A": "**Troca a localização do grupo.** Base é o tipo III, relacionado às fraturas-luxações da ulna proximal. O subtipo II.3 continua sendo uma lesão da faceta anteromedial, com extensão ao sublime.",
+   "B": "**Transforma uma extensão possível em obrigatória.** A ponta pode estar incluída no II.3, mas a definição permite que fique preservada. Ela sozinha não identifica nem a faceta nem o tubérculo que caracterizam o subtipo.",
+   "D": "**Descreve a combinação do subtipo II.2.** Borda anteromedial com ponta não exige o sublime. No II.3, o ponto obrigatório acrescentado é o tubérculo sublime, haja ou não fratura da ponta."
   },
-  "conceito": "**O'Driscoll** classifica as fraturas do **coronoide** pela região e as subdivide em subtipos:\n\n**tipo 1, ponta**: subtipos 1 (até 2 mm) e 2 (mais de 2 mm);\n\n**tipo 2, faceta anteromedial**:\n\n**subtipo 1**: borda **anteromedial**;\n\n**subtipo 2**: borda anteromedial **e ponta**;\n\n**subtipo 3**: borda anteromedial **e tubérculo sublime** (com ou sem a ponta);\n\n**tipo 3, base**: subtipo 1 (corpo e base) e subtipo 2 (com fratura do olécrano).\n\n**O tubérculo sublime**: é a saliência na face medial do coronoide onde se insere o **feixe anterior do ligamento colateral medial**. O subtipo 3 leva junto essa inserção: o cotovelo perde o batente anteromedial **e** o freio medial ao valgo.\n\n**O mecanismo do tipo 2**: **varo** com rotação posteromedial e carga axial, com ruptura do **colateral lateral**: a instabilidade rotatória posteromedial.\n\n**O tratamento**: TC para planejar; fixação da faceta e do tubérculo sublime (placa de suporte medial) e reparo do colateral lateral.\n\n**Na prova**: o O'Driscoll tipo II, subtipo 3, acomete necessariamente a **faceta anteromedial e o tubérculo sublime**.",
-  "correta": "O subtipo 3 leva a faceta anteromedial junto com o tubérculo sublime, onde se insere o feixe anterior do colateral medial.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 39"
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Quem segura o cotovelo; Instabilidade rotatória posteromedial em varo."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fraturas do coronoide",
+      "Quem segura o cotovelo",
+      "Instabilidade rotatória posteromedial em varo"
+     ],
+     "blocos": [
+      "fraturas-do-coronoide-261ac45a",
+      "fraturas-do-coronoide-67ec539b",
+      "quem-segura-o-cotovelo-2b1e3945",
+      "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+      "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "f34e1bd301f089b4a75cc7e61699fecdf1cda5feb8f05d4cc0c4fa50138e7ab7"
+    }
+   ],
+   "questaoSha256": "e993d023d27512e7d3cc050fa46ccd82cdffe45a2b8daa9846857fedd7940f69",
+   "comentarioSha256": "610805360aca31ae6b84650027c0c4c3831891d364bf0dd2d5454aba66dbb7bf"
+  }
  },
  "trauma-1110": {
   "conceito": "**A suspeita de lesão da radioulnar distal aumenta com um traço radial próximo ao punho e fratura da base do estiloide ulnar.** O resumo situa o grupo de maior instabilidade a até **7,5 cm** da superfície articular e identifica a **base**, não a ponta, como o local relevante do estiloide. Entre as alternativas, isso sustenta C pela bibliografia.\n\nO significado é articular: a Galeazzi associa fratura diafisária radial e lesão distal. A base se relaciona à fixação dos estabilizadores do complexo distal; um traço radial próximo da articulação pede atenção especial à congruência e à estabilidade. Uma fotografia estática, contudo, não informa tudo sobre o comportamento depois de reconstruir o rádio.\n\nO capítulo apresenta a limitação dos parâmetros históricos. Estudos posteriores acharam distância de 7,5 cm e encurtamento de 5 mm pouco confiáveis quando usados sozinhos, recomendando o teste intraoperatório após a fixação. Por isso, os sinais da pergunta orientam **pesquisar**, não dispensam exame nem determinam reparo automático.\n\n**Na Biblioteca, leia “Quem tem a radioulnar distal lesada”, incluindo o contraponto aos números.** Não há gabarito oficial registrado no acervo desta prova; a resposta abaixo é provável pela fonte, preservando essa diferença.",
@@ -26536,19 +26791,42 @@
   }
  },
  "trauma-1296": {
-  "conceito": "A borda da cabeça radial articula com a incisura radial da ulna durante a pronossupinação. Colocar uma placa em uma região de contato pode bloquear a rotação e gerar impacto. A zona de segurança para implantes proeminentes é a parcela que não articula com a ulna.\n\nCaputo e colaboradores relacionaram um setor útil de 90° aos marcos distais palpáveis: estiloide radial e tubérculo de Lister. A projeção longitudinal desses marcos auxilia a localização proximal. O arco anatômico não articular médio do estudo foi maior que 90°, mas a região operacional garantida não deve ser confundida com toda essa média. Outra técnica utiliza marcas durante a rotação; ela precisa respeitar limites próprios.",
-  "correta": "Estiloide radial e tubérculo de Lister são os marcos corretos. Como ambos pertencem ao rádio, permitem transportar uma referência angular ao longo do mesmo osso. O setor de 90° assim localizado foi utilizado para posicionar implantes sem impedir a rotação nos espécimes estudados.",
+  "conceito": "Para reconhecer a zona segura de **Caputo**, procure duas referências distais: **processo estiloide do rádio e tubérculo de Lister**, alternativa B. O enunciado pede o método nomeado, não um número de graus isolado.\n\nA borda da cabeça radial gira em relação à incisura radial da ulna. Cerca de um terço da circunferência não é articular; uma placa precisa ocupar essa região para não bloquear a rotação. O capítulo descreve a identificação em posição neutra, logo à frente da linha média lateral, e distingue os métodos: Smith e Hotchkiss usam linhas com o antebraço em supinação, pronação e neutro; Caputo usa estiloide radial e Lister como guias (Rockwood, 10ª ed., cap. 40, “Anatomia: a zona segura”).\n\nA cabeça é elíptica e seu prato é deslocado em relação ao colo. Por isso não se pode escolher o lado da placa apenas supondo uma peça redonda e simétrica. É necessário relacionar a cabeça ao antebraço e conferir que a montagem não invada a articulação durante a pronossupinação.\n\n**Trocar o estiloide radial pelo ulnar muda o método.** Da mesma forma, atribuir a Caputo as três posições de Smith/Hotchkiss mistura referências diferentes. O resumo não precisa ser convertido numa confirmação de 110° ou 90°: esses números nas alternativas não são o detalhe que identifica Caputo na fonte consultada.\n\n> **Na prova:** Caputo: estiloide do rádio e Lister. B é provável pela bibliografia; não há gabarito oficial no acervo.",
+  "correta": "**B: entre o processo estiloide do rádio e o tubérculo de Lister.** É o par de referências explicitamente atribuído a Caputo no resumo. Mantém-se B como provável, sem criar gabarito oficial.",
   "incorretas": {
-   "A": "A medida aproximada de 110° lembra o arco não articular médio, mas a alternativa mistura essa medida com uma técnica de marcação rotacional diferente. Arco médio de anatomia e setor operacional para implante não são automaticamente equivalentes. O estudo solicitado enfatiza os marcos distais palpáveis.",
-   "C": "O estiloide ulnar pertence ao outro osso do antebraço e não substitui o estiloide radial nessa referência. Durante a rotação, rádio e ulna mudam sua relação espacial. A troca do marco torna a projeção inadequada, mesmo mantendo o tubérculo de Lister na descrição.",
-   "D": "Noventa graus é uma medida associada ao setor seguro, mas as marcas rotacionais não definem seus limites simplesmente como um diâmetro AP nas três posições. A opção combina partes de métodos diferentes. Para a referência de Caputo solicitada, a identificação pelos marcos distais é a resposta precisa."
+   "A": "**Atribui a Caputo outro modo de localizar a zona.** As linhas nas três posições do antebraço são descritas para Smith e Hotchkiss. O valor 110° não transforma esse método no par de referências anatômicas pedido.",
+   "C": "**Troca o osso de uma referência.** Caputo usa o estiloide do rádio, em conjunto com Lister; não o estiloide da ulna. A zona a localizar pertence à cabeça radial que gira em relação à ulna, e o par anatômico deve ser mantido.",
+   "D": "**Muda o ângulo, mas mantém a atribuição inadequada.** Neutro, supinação e pronação continuam sendo as três posições do método descrito para Smith/Hotchkiss. Reduzir o número para 90° não o torna a referência distal de Caputo."
   },
   "referencias": [
-   "The nonarticulating portion of the radial head: anatomic and clinical correlations for internal fixation. https://pubmed.ncbi.nlm.nih.gov/9848563/"
+   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
   ],
-  "geradoEm": "2026-10-07",
   "conferido": false,
-  "provavel": "B"
+  "provavel": "B",
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+     "secoes": [
+      "Fratura da cabeça do rádio"
+     ],
+     "blocos": [
+      "fratura-da-cabeca-do-radio-9e1dbc64"
+     ],
+     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "trechosSha256": "b14621ab715a02050924eeffac86f037109bbc8e871f1cbd2958a9f8eecf5b26"
+    }
+   ],
+   "questaoSha256": "413e48d4289940633a5b0ce5f99648be7ca4a819e2de3aadbaec7eb4eab0fbdb",
+   "comentarioSha256": "c7fb9ce9876c1088b842beae032ca0e3904a2b47a9c22d5177d71f4e54871e83"
+  }
  },
  "trauma-1297": {
   "conceito": "O **esporão** é patognomônico de **fratura de ambas as colunas** e aparece melhor na **oblíqua obturatriz**. O acervo não tem gabarito oficial; esse par sustenta **B como resposta provável pela bibliografia**.\n\nO esporão é a cortical externa da porção mais caudal do **ílio intacto**. Como toda a superfície articular se separou desse ílio e medializou com a cabeça, aquela ponta fica lateral ao conjunto deslocado. O sinal mostra a desconexão entre a articulação e seu suporte axial (Rockwood, 10ª ed., cap. 51, “Ambas as colunas”).\n\n**A alar responde a outra pergunta.** Ela perfila a coluna posterior e mostra as saídas dos traços na asa; a obturatriz é a melhor para o esporão. “Coluna posterior” e “sinal da dupla coluna” não precisam ter a mesma incidência preferida.\n\nTambém é preciso evitar confundir o esporão com uma ponta de fragmento intercalar da asa. O diagnóstico combina o sinal com a ausência de superfície articular presa ao ílio intacto, e não apenas qualquer projeção óssea pontiaguda.",

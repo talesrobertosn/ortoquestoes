@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 591 |
+| pendente | 663 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 261 |
-| pendente-inspecao-imagem | 85 |
-| revisada | 1335 |
+| pendente-fonte | 268 |
+| pendente-inspecao-imagem | 89 |
+| revisada | 1348 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -20,12 +20,12 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas por estresse (`rockwood10-24-fraturas-estresse`) | 37 | 0 | 31 |
 | Fratura da escápula (`rockwood10-33-fratura-escapula`) | 104 | 0 | 32 |
 | Fratura da clavícula (`rockwood10-34-fratura-clavicula`) | 61 | 0 | 12 |
-| Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 63 | 0 | 31 |
+| Fratura do úmero proximal (`rockwood10-36-umero-proximal`) | 64 | 0 | 30 |
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 38 | 0 | 14 |
-| Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 75 | 0 | 104 |
+| Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 88 | 0 | 97 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
-| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 195 |
-| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 122 |
+| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 207 |
+| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 128 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 84 | 0 | 48 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 83 | 0 | 45 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 61 | 0 | 12 |
@@ -41,6 +41,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura do pilão tibial (`rockwood10-64-pilao-tibial`) | 31 | 0 | 18 |
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 28 | 0 | 25 |
+| Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 38 | 0 | 91 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 13 | 0 | 6 |
