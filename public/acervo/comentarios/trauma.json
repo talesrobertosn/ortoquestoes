@@ -18427,15 +18427,52 @@
   }
  },
  "trauma-0965": {
+  "conceito": "A banca marcou **A, via de acesso lateral**, mas o resumo apresenta uma divergência real: a metanálise citada encontrou **menos necrose com a transdeltoide**, enquanto o padrão **impactado em valgo**, alternativa B, teve necrose mais frequente na série dos autores. O comentário precisa mostrar os dois dados, em vez de justificar uma relação oposta à fonte.\n\nA perfusão da cabeça depende das conexões vasculares que sobrevivem à fratura. Ramos das circunflexas alcançam a cabeça pelo lado medial e posteromedial; pouco calcar preso à cabeça, dobradiça medial rompida e traço no colo anatômico sinalizam maior risco de isquemia. Isquemia observada na cirurgia não é igual a necrose tardia inevitável, pois pode ocorrer revascularização (Rockwood, 10ª ed., cap. 36, “Irrigação da cabeça, Hertel e osteonecrose”).\n\nNa série Mayo/FJD resumida, após placa bloqueada houve necrose em 12% dos padrões em valgo contra 2% nos de colo cirúrgico e varo, diferença de seis vezes naquele conjunto. Isso **não autoriza dizer que todo valgo é avascular**, nem transportar a taxa para qualquer população. Explica por que B encontra sustentação direta na fonte desta revisão.\n\nA via lateral tem um risco próprio bem definido: o nervo axilar, que deve ser identificado e protegido quando a divisão do deltoide se estende. Esse risco neural não prova maior necrose da cabeça. Técnica cuidadosa e preservação de partes moles continuam importantes em qualquer abordagem; tampouco um resultado de metanálise torna toda via automaticamente segura.\n\n> **Na prova:** A é a oficial, com alerta. Pelo resumo, B é o fator sustentado, e a via lateral deve lembrar proteção do axilar.",
+  "correta": "**A: via de acesso lateral.** Mantém-se a resposta oficial, sem apresentar maior necrose como fato confirmado. A fonte descreve menor necrose na metanálise da via transdeltoide e destaca o nervo axilar como risco anatômico dessa abordagem.",
   "incorretas": {
-   "B": "A fratura impactada em valgo costuma preservar a dobradiça medial e os vasos.",
-   "C": "A fratura do acrômio não se relaciona com a irrigação da cabeça.",
-   "D": "A lesão do manguito não é fator de risco para a necrose."
+   "B": "**Foi rejeitada pela banca, mas tem suporte direto no resumo.** A série dos autores registrou 12% de necrose no valgo após placa contra 2% em colo cirúrgico e varo. O achado é de uma comparação específica; não significa necrose obrigatória nem equivale à perda de perfusão em todo valgo.",
+   "C": "**Acrescenta uma lesão da cintura sem identificar o mecanismo vascular da cabeça.** Fraturas associadas devem ser avaliadas no trauma, mas a alternativa não é o fator que a fonte documenta na comparação de necrose após placa. Não se deve inventar um efeito protetor ou uma taxa de risco para fratura do acrômio.",
+   "D": "**Mistura o funcionamento dos tendões com a perfusão do osso.** Lesão do manguito é uma associação frequente e importante para reconstrução e função, mas não é o achado apresentado como preditor vascular nesta comparação. A fonte orienta reconhecer calcar, dobradiça e padrão, não equiparar toda lesão tendínea a necrose."
   },
-  "conceito": "Na **osteossíntese do úmero proximal com placa**, a **osteonecrose da cabeça** depende da gravidade da fratura (critérios de Hertel) e também do que a **cirurgia** faz com a irrigação.\n\n**A irrigação da cabeça**: principalmente pela **circunflexa umeral posterior** (posteromedial) e pela **circunflexa anterior**, com o ramo arqueado de Laing entrando pelo sulco bicipital.\n\n**A via de acesso**: a banca considerou a **via lateral** (transdeltoidea, com divisão do deltoide) como fator de risco. Ela leva o cirurgião direto à face lateral e posterior da cabeça e dos tubérculos, e a manipulação ali pode lesar ramos que chegam à cabeça.\n\n**Os outros fatores cirúrgicos**: dissecção extensa de partes moles, desperiostização dos fragmentos e múltiplas tentativas de redução.\n\n**Os fatores da fratura**: calcar curto (menos de 8 mm), dobradiça medial rompida, fratura do colo anatômico, quatro partes e fratura-luxação.\n\n**O que protege**: a fratura **impactada em valgo**, em que a dobradiça medial costuma ficar íntegra e preserva os vasos posteromediais.\n\n**Na prova**: a banca indicou a **via de acesso lateral** como fator de risco para a osteonecrose.",
-  "correta": "A banca considerou a via lateral, que manipula a face lateral e posterior da cabeça, como fator de risco.",
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura do úmero proximal”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 36 · Proximal Humeral Fractures. Seções: Irrigação da cabeça, Hertel e osteonecrose; Anatomia aplicada e vias de acesso; Lesões associadas: nervos, artéria, manguito e outras fraturas."
+  ],
+  "conferido": false,
+  "alerta": "A oficial preservada, mas a fonte diverge: a metanálise resumida encontrou menos necrose com a transdeltoide. Na série dos autores, valgo após placa teve 12% contra 2% em colo cirúrgico/varo, sustentando B. Diferenciar esse risco vascular do risco de lesão do axilar na via lateral; não generalizar as taxas a todo paciente.",
+  "geradoEm": "2026-10-25",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-36-umero-proximal",
+     "titulo": "Fratura do úmero proximal",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
+     "secoes": [
+      "Irrigação da cabeça, Hertel e osteonecrose",
+      "Anatomia aplicada e vias de acesso",
+      "Lesões associadas: nervos, artéria, manguito e outras fraturas"
+     ],
+     "blocos": [
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-40a7cd70",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-9a0f7699",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-fadf6693",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-e7fd4ee6",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-f8037d4b",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
+      "irrigacao-da-cabeca-hertel-e-osteonecrose-947a14e4",
+      "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
+      "lesoes-associadas-nervos-arteria-manguito-e-outr-8cc48365"
+     ],
+     "sha256": "493a87ea55e0179d9373c6d4ff96f172f5d86b086341ec931df4baa1eb5834bb",
+     "trechosSha256": "3819a416ae2e582fa547527e5351041e380b07c86b03208185dc62d679868188"
+    }
+   ],
+   "questaoSha256": "48abe7096faea851137f002e1575ca9728d4df207f698290aca63ca19e91f146",
+   "comentarioSha256": "1028cb2b9f21ff52164f704b30a1e0a7f84b815f3084ffa951d0a9925a322515"
+  }
  },
  "trauma-0966": {
   "incorretas": {

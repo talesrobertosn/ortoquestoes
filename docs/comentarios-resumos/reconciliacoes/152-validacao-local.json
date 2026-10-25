@@ -1,0 +1,154 @@
+{
+  "dataBrasilia": "2026-10-25T10:22:32.598041-03:00",
+  "base": "c99255d74f9fcc6c5471d09479cb07f689d97a3c",
+  "loteAplicado": 151,
+  "avaliacoesCoberturaSeguintes": 152,
+  "idsRevisados": [
+    "ombro-cotovelo-0045",
+    "ombro-cotovelo-0535",
+    "trauma-0965",
+    "ombro-cotovelo-0429"
+  ],
+  "quantidadeRevisada": 4,
+  "lacunasNovas": [
+    "ombro-cotovelo-0478",
+    "trauma-0058",
+    "trauma-0194",
+    "trauma-1178",
+    "trauma-1263",
+    "trauma-1264",
+    "ombro-cotovelo-0442",
+    "ombro-cotovelo-0567",
+    "ombro-cotovelo-0542",
+    "trauma-0146",
+    "trauma-0566",
+    "trauma-0733",
+    "trauma-0778",
+    "trauma-0785",
+    "trauma-0867",
+    "trauma-0979"
+  ],
+  "quantidadeLacunas": 16,
+  "estados": {
+    "duplicada": 87,
+    "pendente": 591,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 260,
+    "pendente-inspecao-imagem": 85,
+    "revisada": 1336
+  },
+  "resumos": 33,
+  "prAnterior": {
+    "body": "Cinco comentários foram reescritos como miniaulas: Segond, reconstrução posterolateral, fibular comum, patela bipartida e vascularização talar. Cada opção foi conferida com o corpo dos resumos Rockwood10, capítulos60/61/66. Duas figuras abertas antes da revisão. Preservados enunciados, opções, IDs, áreas, respostas oficiais, imagens e revisão médica; conferido:false.0294 conserva A bibliográfica/provável, sem atribuir resposta oficial ou leitura de Warren.\n\nQuatro lacunas exatas continuam pendente-fonte, sem contar como revisão: zona hipovascular do quadríceps, frequência do LCA associado ao patelar, técnica de Mandelbaum e comparação avulsão óssea/desinserção proximal. O rascunho0259 foi retirado na auditoria e o comentário original restaurado integralmente; não basta acertar o local da ruptura para conferir A/B.1731 foi protegida pelo fluxo de mão. Lote parcial de cinco seguros, sem preencher dez com referências insuficientes.\n\nValidação final:14fixtures, validar_acervo, npm test completo, build, diff-check; replay dos cinco comentários/avulsos com fontes/hashes/todas alternativas e preservação dos demais membros. Cinco casos no celular/computador, fontes exatas e figuras, capturas representativas abertas. Commit remoto3dfaafdc incorporado, preservando ENARE0423/0424 e seus derivados; checks completos e UI repetidos após integração. Oito PRs alheios e commits completos conferidos; PR521 reconciliado até produção.\n\nEvidência e checkpoint: docs/comentarios-resumos/reconciliacoes/150-validacao-local.json e RETOMADA-2026-10-20.md. Próximo lote151. Catálogo1332 revisadas; tarefa integral incompleta. Aguardar checks do head, merge e conferência real do deploy/produção.\n\n\nPublicação confirmada em 25/10/2026: head a8df9996747bb028be1de8da55ce228147337b8b; CI 40192929845 passou; merge c99255d74f9fcc6c5471d09479cb07f689d97a3c. Pages 40193107572, head c99255d74f9fcc6c5471d09479cb07f689d97a3c, executou guarda e deploy no job 121168713958. Os cinco avulsos do lote150 em produção foram comparados integralmente com os comentários validados, sem diferenças. Os capítulos-fonte 60, 61 e 66 e letras.json também foram comparados integralmente em produção. As duas figuras foram comparadas por SHA256, sem diferenças.\n\nPróximo lote livre: 151. Reconciliar este merge e não reaplicar150. As lacunas de fonte continuam pendentes e não contam como revisão concluída. Catálogo: 1332 revisadas, 610 pendentes, 244 pendentes de fonte, 86 aguardando inspeção de imagem, 2 figuras ausentes, 9 anuladas e 87 duplicadas, em 33 resumos. A tarefa integral permanece incompleta. Checkpoint detalhado em docs/comentarios-resumos/RETOMADA-2026-10-20.md.\n",
+    "headRefOid": "a8df9996747bb028be1de8da55ce228147337b8b",
+    "mergeCommit": {
+      "oid": "c99255d74f9fcc6c5471d09479cb07f689d97a3c"
+    },
+    "state": "MERGED"
+  },
+  "remoto": [
+    {
+      "pr": 524,
+      "head": "3a5a332fb134c0b3681c6193ffff06244bbd57b4",
+      "commits": [
+        "3a5a332fb134c0b3681c6193ffff06244bbd57b4"
+      ]
+    },
+    {
+      "pr": 523,
+      "head": "afb6bb3519c2a2cbbd9fd7f3582f49afb690fa29",
+      "commits": [
+        "afb6bb3519c2a2cbbd9fd7f3582f49afb690fa29"
+      ]
+    },
+    {
+      "pr": 517,
+      "head": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+      "commits": [
+        "ba0f849dd5b2987732b4a735e917fcc903886a5c"
+      ]
+    },
+    {
+      "pr": 371,
+      "head": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+      "commits": [
+        "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+        "714323bcee21a533ea33cf7048a307a24deffc44",
+        "553b1041eafa4cf9b173ea616cc293537739eb08",
+        "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+      ]
+    },
+    {
+      "pr": 308,
+      "head": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+      "commits": [
+        "980b2d734b62cd5a28098224e8dbf0c11194a185",
+        "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+      ]
+    },
+    {
+      "pr": 253,
+      "head": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+      "commits": [
+        "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+        "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+        "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+        "94859424a3fa5fb70347baea0a2a831a26ddd622"
+      ]
+    },
+    {
+      "pr": 179,
+      "head": "86aeeb45a1284a4bab358ad66df593286e64876a",
+      "commits": [
+        "86aeeb45a1284a4bab358ad66df593286e64876a"
+      ]
+    },
+    {
+      "pr": 178,
+      "head": "c695d3d697b62de9cb1317922a61af543f4369a5",
+      "commits": [
+        "3c7daf1f481a22a119402544f44007696520ce1e",
+        "c695d3d697b62de9cb1317922a61af543f4369a5"
+      ]
+    },
+    {
+      "pr": 174,
+      "head": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+      "commits": [
+        "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+      ]
+    },
+    {
+      "pr": 93,
+      "head": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+      "commits": [
+        "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+        "97e77b073134af9277107123ff27e7cb369139b5",
+        "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+      ]
+    }
+  ],
+  "concorrencia": "PRs iniciais e commits inalterados; PR524 novo do cronograma preservado. PR523 novo capítulo pediátrico permanece separado, com conflitos/validação pendentes; não incorporado.",
+  "fontes": "Resumos33(574linhas) e36(603linhas) integralmente lidos nesta passagem; retornos truncados relidos em intervalos menores. Apenas corpo/tabelas e legenda independente36-3, não contexto de questões nem comentários anteriores como autoridade. Sem livro original ou página impressa atribuídos.",
+  "legendaSemFigura": "0045 usa legenda independente36-3, incluída por fonte() nos blocos. O bloco tem imagem:null; não se atribui abertura dessa imagem indisponível. Nenhuma das quatro questões aplicadas tem figura.",
+  "imagemAbertaNaoRevisada": {
+    "arquivo": "trauma/trauma-0979-1.png",
+    "sha256": "66c3b841389b612539ba9a38f2c16bfc8fb1ed6c37f6f34d3ba9be356a4529fc",
+    "resultado": "Falta classificação Boileau I–IV independente; pendente-fonte, não revisão concluída."
+  },
+  "alertas": [
+    "ombro-cotovelo-0535: D oficial, fonte favorece reversa no perfil, sem idade automática",
+    "trauma-0965: A oficial, fonte sustenta valgo/B e menos necrose na metanálise transdeltoide; proteger axilar"
+  ],
+  "preservacao": "Aplicar.py sob flock /tmp/claude-0/acervo.lock; enunciados, opções, IDs, áreas, gabaritos oficiais, imagens, revisão médica e membros alheios preservados; conferido:false. Os16comentários pendentes não mudaram e não receberam selo.",
+  "validacao": [
+    "14fixtures, validar_acervo, npm test completo, build e diff-check após quatro comentários/seis lacunas de151",
+    "Após dez anotações de152, repetir14fixtures e validar_acervo; nenhum comentário alterado nessa etapa",
+    "replay de aplicar.preparar desde a base, fontes/hashes/todas alternativas, quatro avulsos integrais e demais membros preservados",
+    "letras regeneradas e iguais ao build",
+    "quatro casos celular390/computador1440, resposta/selo/link exato e dois alertas",
+    "três capturas representativas abertas:0535alerta-pc,0965alerta-cel,0045aula-pc"
+  ],
+  "proximoLote": 153
+}
