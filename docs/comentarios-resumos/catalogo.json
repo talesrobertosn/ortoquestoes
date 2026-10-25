@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 653,
+  "pendente": 637,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 270,
-  "pendente-inspecao-imagem": 89,
-  "revisada": 1356
+  "pendente-fonte": 289,
+  "pendente-inspecao-imagem": 85,
+  "revisada": 1357
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -16,8 +16,7 @@
    "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
    "estados": {
     "duplicada": 3,
-    "pendente": 4,
-    "pendente-fonte": 10,
+    "pendente-fonte": 14,
     "pendente-inspecao-imagem": 1,
     "revisada": 52
    }
@@ -71,8 +70,8 @@
     "duplicada": 2,
     "pendente": 1,
     "pendente-anulada": 1,
-    "pendente-fonte": 8,
-    "pendente-inspecao-imagem": 2,
+    "pendente-fonte": 9,
+    "pendente-inspecao-imagem": 1,
     "revisada": 38
    }
   },
@@ -81,8 +80,8 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 64,
-    "pendente-fonte": 10,
+    "pendente": 63,
+    "pendente-fonte": 11,
     "pendente-inspecao-imagem": 15,
     "revisada": 88
    }
@@ -92,8 +91,8 @@
    "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
    "estados": {
     "duplicada": 8,
-    "pendente": 15,
-    "pendente-fonte": 9,
+    "pendente": 3,
+    "pendente-fonte": 21,
     "pendente-inspecao-imagem": 2,
     "revisada": 70
    }
@@ -220,8 +219,8 @@
     "duplicada": 14,
     "pendente": 37,
     "pendente-anulada": 1,
-    "pendente-fonte": 12,
-    "pendente-inspecao-imagem": 7,
+    "pendente-fonte": 15,
+    "pendente-inspecao-imagem": 4,
     "revisada": 52
    }
   },
@@ -240,9 +239,9 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 25,
+    "pendente": 21,
     "pendente-anulada": 2,
-    "pendente-fonte": 24,
+    "pendente-fonte": 28,
     "pendente-inspecao-imagem": 1,
     "revisada": 98
    }
@@ -284,10 +283,10 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 75,
+    "pendente": 74,
     "pendente-fonte": 4,
     "pendente-inspecao-imagem": 4,
-    "revisada": 46
+    "revisada": 47
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -7661,8 +7660,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura do gesso pendente aberta. O corpo do resumo37 sustenta correção do comprimento pela gravidade, porém não demonstra que encurtar a alça pescoço-antebraço produza VARO em vez de valgo, que separa A/B. Falta a descrição primária do capítulo10/figura10-14 e a relação da posição da alça com a angulação. A figura isolada e o bloco contextual não substituem esse mecanismo; B/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -7676,7 +7675,8 @@
    "resumosCandidatos": [
     "rockwood10-37-diafise-umero"
    ],
-   "questaoSha256": "efc1348f73a50eaeebddd6155314c9c01cbd5f34b12c9a04dde1a7b63aafdf02"
+   "questaoSha256": "efc1348f73a50eaeebddd6155314c9c01cbd5f34b12c9a04dde1a7b63aafdf02",
+   "pendencia": "Figura do gesso pendente aberta. O corpo do resumo37 sustenta correção do comprimento pela gravidade, porém não demonstra que encurtar a alça pescoço-antebraço produza VARO em vez de valgo, que separa A/B. Falta a descrição primária do capítulo10/figura10-14 e a relação da posição da alça com a angulação. A figura isolada e o bloco contextual não substituem esse mecanismo; B/comentário preservados."
   },
   "conceitos-basicos-0365": {
    "tema": "conceitos-basicos",
@@ -8540,14 +8540,15 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura AP/perfil aberta; há articulação reduzida e não se deve inferir de um alinhamento estático a integridade ligamentar. D oficial sugere LCP a partir de escoriação na tuberosidade, dor anterior às escadas e falseio leve. O corpo do resumo61 descreve função do LCP e avaliação multiligamentar, mas não desenvolve esse conjunto clínico da lesão isolada nem o diferencia integralmente de luxação reduzida, canto posterolateral e LCA. Falta fonte clínica específica do LCP e correlação com a figura; sem selo, D/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "a6df49302302222b00baa4d27fd03e999e2be02fedb45f194970e9d726df1d06"
+   "questaoSha256": "a6df49302302222b00baa4d27fd03e999e2be02fedb45f194970e9d726df1d06",
+   "pendencia": "Figura AP/perfil aberta; há articulação reduzida e não se deve inferir de um alinhamento estático a integridade ligamentar. D oficial sugere LCP a partir de escoriação na tuberosidade, dor anterior às escadas e falseio leve. O corpo do resumo61 descreve função do LCP e avaliação multiligamentar, mas não desenvolve esse conjunto clínico da lesão isolada nem o diferencia integralmente de luxação reduzida, canto posterolateral e LCA. Falta fonte clínica específica do LCP e correlação com a figura; sem selo, D/comentário preservados."
   },
   "joelho-0046": {
    "tema": "joelho",
@@ -8556,14 +8557,15 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "RM sagital aberta; a seta aponta a região posterior intercondilar, mas não mostra a posição do pé durante o trauma. C oficial exige queda com joelho fletido e pé em FLEXÃO PLANTAR, enquanto D difere apenas por dorsiflexão. O resumo61 ensina a contenção posterior e a cirurgia do LCP, mas não compara essas posições do pé no mecanismo isolado nem todos os mecanismos das alternativas. Falta fonte biomecânica primária; não deduzir flexão plantar da RM ou da resposta antiga. C/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "26dff1e6d4a6df5a860f7fba80aeef469e9ead903e061e6c04e0b7f5f6a0ef43"
+   "questaoSha256": "26dff1e6d4a6df5a860f7fba80aeef469e9ead903e061e6c04e0b7f5f6a0ef43",
+   "pendencia": "RM sagital aberta; a seta aponta a região posterior intercondilar, mas não mostra a posição do pé durante o trauma. C oficial exige queda com joelho fletido e pé em FLEXÃO PLANTAR, enquanto D difere apenas por dorsiflexão. O resumo61 ensina a contenção posterior e a cirurgia do LCP, mas não compara essas posições do pé no mecanismo isolado nem todos os mecanismos das alternativas. Falta fonte biomecânica primária; não deduzir flexão plantar da RM ou da resposta antiga. C/comentário preservados."
   },
   "joelho-0047": {
    "tema": "joelho",
@@ -37293,15 +37295,16 @@
    ],
    "prova": "TEOT",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial pede a complicação mais comum APÓS redução fechada e fixação percutânea da tuberosidade tibial na criança. O resumo17 ensina síndrome e risco de fraturas da tíbia em geral, mas não compara pseudartrose, viciosa, síndrome compartimental e Osgood-Schlatter nessa lesão e nesse tratamento. Falta fonte específica de tuberosidade pediátrica que separe complicação mais temida, lesão associada e complicação mais frequente. C/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "ac27cd307331a264b30a8fb44d020fe8906b588aa27f9402502b8d95ece91f5f"
+   "questaoSha256": "ac27cd307331a264b30a8fb44d020fe8906b588aa27f9402502b8d95ece91f5f",
+   "pendencia": "C oficial pede a complicação mais comum APÓS redução fechada e fixação percutânea da tuberosidade tibial na criança. O resumo17 ensina síndrome e risco de fraturas da tíbia em geral, mas não compara pseudartrose, viciosa, síndrome compartimental e Osgood-Schlatter nessa lesão e nesse tratamento. Falta fonte específica de tuberosidade pediátrica que separe complicação mais temida, lesão associada e complicação mais frequente. C/comentário preservados."
   },
   "pediatria-0919": {
    "tema": "pediatria",
@@ -44728,7 +44731,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -44743,7 +44746,33 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-01-epidemiologia-fraturas"
    ],
-   "questaoSha256": "64fd007e1024ba749d3e07f42d5bca6a7c71a69110535c32ddb31932017307e7"
+   "questaoSha256": "64fd007e1024ba749d3e07f42d5bca6a7c71a69110535c32ddb31932017307e7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+      "titulo": "Epidemiologia das fraturas na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+      "secoes": [
+       "Comece pela causa: acidental, não acidental ou patológica"
+      ],
+      "blocos": [
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-60d8a6ec",
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe",
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-7bc46315",
+       "comece-pela-causa-acidental-nao-acidental-ou-pat-ae0845e3"
+      ],
+      "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+      "trechosSha256": "41cfd900cdab4ab9e5f8fa5b622970ff95f4aaec0f5eb5b1affe72ee30ee7664"
+     }
+    ],
+    "questaoSha256": "64fd007e1024ba749d3e07f42d5bca6a7c71a69110535c32ddb31932017307e7",
+    "comentarioSha256": "d275db07b9acbd4fc38c1c1004d92f2e1326bcd3cceef9f003c30f9c52929d55"
+   }
   },
   "pediatria-1084": {
    "tema": "pediatria",
@@ -47237,14 +47266,15 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial exige supinação com110graus de flexão após redução fechada da Monteggia I. O corpo independente do resumo42 define o tipo I e ensina placa na ulna do adulto, mas não estabelece as combinações pronação/supinação e60/110graus no tratamento incruento. Falta protocolo primário por faixa etária e direção da luxação; não transferir a posição da Galeazzi ou da luxação simples do cotovelo. D e comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "f5d95e4e7d4ada1149c9dd7eb9a922627046e0ea5c89eb51fb86921256b4fffd"
+   "questaoSha256": "f5d95e4e7d4ada1149c9dd7eb9a922627046e0ea5c89eb51fb86921256b4fffd",
+   "pendencia": "D oficial exige supinação com110graus de flexão após redução fechada da Monteggia I. O corpo independente do resumo42 define o tipo I e ensina placa na ulna do adulto, mas não estabelece as combinações pronação/supinação e60/110graus no tratamento incruento. Falta protocolo primário por faixa etária e direção da luxação; não transferir a posição da Galeazzi ou da luxação simples do cotovelo. D e comentário preservados."
   },
   "trauma-0006": {
    "tema": "trauma",
@@ -50001,8 +50031,8 @@
    ],
    "prova": "TARO",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A oficial fala em baixa idade como preditor mais forte na perna da criança. O resumo17 destaca juventude no adulto e maior incidência nos adolescentes, sem comparar especificamente baixa idade, peso acima de50kg, déficit neurológico e cominuição numa mesma população pediátrica. Falta estudo pediátrico que defina os grupos e o preditor mais forte; não importar o ranking geral de adultos nem defender uma associação etária oposta. A/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -50017,7 +50047,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "ea5e3e68c84e17efecb5ba126c8173b1c05346175e1a096bedabf93e86c3544d"
+   "questaoSha256": "ea5e3e68c84e17efecb5ba126c8173b1c05346175e1a096bedabf93e86c3544d",
+   "pendencia": "A oficial fala em baixa idade como preditor mais forte na perna da criança. O resumo17 destaca juventude no adulto e maior incidência nos adolescentes, sem comparar especificamente baixa idade, peso acima de50kg, déficit neurológico e cominuição numa mesma população pediátrica. Falta estudo pediátrico que defina os grupos e o preditor mais forte; não importar o ranking geral de adultos nem defender uma associação etária oposta. A/comentário preservados."
   },
   "trauma-0082": {
    "tema": "trauma",
@@ -52279,14 +52310,15 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial pede a complicação nervosa mais frequente na própria lesão de Monteggia, comparando ramo dorsal ulnar, superficial radial e interósseos anterior/posterior. O resumo42 dá predominância do interósseo posterior em lesão CIRÚRGICA do antebraço, sobretudo após Thompson, não o ranking traumático da Monteggia. Falta série ou anatomia primária que sustente essa associação e os distratores no contexto pedido. Não transferir a frequência iatrogênica para o trauma; D/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "28f14ea494fdb9ebc36017ad97eaeed89e3636edb9e7f0bfff83225df5042886"
+   "questaoSha256": "28f14ea494fdb9ebc36017ad97eaeed89e3636edb9e7f0bfff83225df5042886",
+   "pendencia": "D oficial pede a complicação nervosa mais frequente na própria lesão de Monteggia, comparando ramo dorsal ulnar, superficial radial e interósseos anterior/posterior. O resumo42 dá predominância do interósseo posterior em lesão CIRÚRGICA do antebraço, sobretudo após Thompson, não o ranking traumático da Monteggia. Falta série ou anatomia primária que sustente essa associação e os distratores no contexto pedido. Não transferir a frequência iatrogênica para o trauma; D/comentário preservados."
   },
   "trauma-0145": {
    "tema": "trauma",
@@ -58238,14 +58270,15 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial exige que Bell-Tawse reconstrua o anular com tendão do tríceps, versus bíceps e reconstrução do colateral lateral. O corpo do resumo42 explica redução da Monteggia e papel do anular, mas não descreve Bell-Tawse, seu enxerto ou a técnica de reconstrução crônica. Falta descrição primária para diferenciar alvo e doador das quatro opções. Nome do procedimento e resposta antiga não são fontes; B/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "6ff58e667ee59aa8dc0a5f55aa0ed7dafb2966e48b7f71cf75088a476c856f10"
+   "questaoSha256": "6ff58e667ee59aa8dc0a5f55aa0ed7dafb2966e48b7f71cf75088a476c856f10",
+   "pendencia": "B oficial exige que Bell-Tawse reconstrua o anular com tendão do tríceps, versus bíceps e reconstrução do colateral lateral. O corpo do resumo42 explica redução da Monteggia e papel do anular, mas não descreve Bell-Tawse, seu enxerto ou a técnica de reconstrução crônica. Falta descrição primária para diferenciar alvo e doador das quatro opções. Nome do procedimento e resposta antiga não são fontes; B/comentário preservados."
   },
   "trauma-0333": {
    "tema": "trauma",
@@ -60041,14 +60074,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial pede osteotomia de ABERTURA da ulna na Monteggia crônica. O resumo42 descreve restauração da ulna/PUDA na lesão aguda, mas não compara osteotomias de abertura/fechamento com ressecção/prótese radial no adulto com lesão crônica. Faltam indicações por cronicidade, idade e estado articular; a regra da ulna anatômica não prova qual cunha usar nem exclui todas as cirurgias de salvamento. C/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "38252fb3b501af41d3962126141e7666a248406c66036a40009cc6fc6fe97e8f"
+   "questaoSha256": "38252fb3b501af41d3962126141e7666a248406c66036a40009cc6fc6fe97e8f",
+   "pendencia": "C oficial pede osteotomia de ABERTURA da ulna na Monteggia crônica. O resumo42 descreve restauração da ulna/PUDA na lesão aguda, mas não compara osteotomias de abertura/fechamento com ressecção/prótese radial no adulto com lesão crônica. Faltam indicações por cronicidade, idade e estado articular; a regra da ulna anatômica não prova qual cunha usar nem exclui todas as cirurgias de salvamento. C/comentário preservados."
   },
   "trauma-0471": {
    "tema": "trauma",
@@ -65338,14 +65372,15 @@
    ],
    "prova": "TEPOP",
    "ano": 2024,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Radiografia em perfil aberta; é preciso conferir a lesão óssea periarticular/distal femoral pediátrica e sua relação com a fise. O resumo61 de luxação multiligamentar não compara posição de redução da fratura, hiperflexão como mecanismo, frequência do desvio e risco neurovascular pediátrico, que compõem A/B/C/D. Falta fonte de fratura distal do fêmur na criança para interpretar o padrão e cada afirmação. Não tratar automaticamente a imagem como luxação ligamentar do adulto só pelo subtema. D/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-61-luxacao-joelho"
    ],
-   "questaoSha256": "2718ff4015efc35a2e34926a9e35016e3b18cffee90315c60efd0c6dc9560317"
+   "questaoSha256": "2718ff4015efc35a2e34926a9e35016e3b18cffee90315c60efd0c6dc9560317",
+   "pendencia": "Radiografia em perfil aberta; é preciso conferir a lesão óssea periarticular/distal femoral pediátrica e sua relação com a fise. O resumo61 de luxação multiligamentar não compara posição de redução da fratura, hiperflexão como mecanismo, frequência do desvio e risco neurovascular pediátrico, que compõem A/B/C/D. Falta fonte de fratura distal do fêmur na criança para interpretar o padrão e cada afirmação. Não tratar automaticamente a imagem como luxação ligamentar do adulto só pelo subtema. D/comentário preservados."
   },
   "trauma-0771": {
    "tema": "trauma",
@@ -66629,8 +66664,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial exige que o chamado septo intermuscular POSTERIOR separe medial e posterior da coxa. O corpo do resumo17 define os três compartimentos e nomeia septos medial/lateral, mas não define esse septo posterior nem seus limites. Falta anatomia primária ou figura rotulada da coxa para reconciliar a nomenclatura e diferenciar as quatro combinações. A regra da incisão lateral não prova o nome do septo pedido. C/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -66645,7 +66680,8 @@
     "rockwood10-17-sindrome-compartimental",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "7b85c468a02814585ae9811815d7d6c944cf8ce5f8a178421567c4279d27a097"
+   "questaoSha256": "7b85c468a02814585ae9811815d7d6c944cf8ce5f8a178421567c4279d27a097",
+   "pendencia": "C oficial exige que o chamado septo intermuscular POSTERIOR separe medial e posterior da coxa. O corpo do resumo17 define os três compartimentos e nomeia septos medial/lateral, mas não define esse septo posterior nem seus limites. Falta anatomia primária ou figura rotulada da coxa para reconciliar a nomenclatura e diferenciar as quatro combinações. A regra da incisão lateral não prova o nome do septo pedido. C/comentário preservados."
   },
   "trauma-0817": {
    "tema": "trauma",
@@ -67807,14 +67843,15 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial pergunta especificamente a aponeurose usada em Bell-Tawse: tríceps versus bíceps, braquial anterior e extensor longo dos dedos. O corpo independente do resumo42 não descreve o retalho aponeurótico nem compara doadores para o anular. Falta técnica primária com origem, preservação de inserção e trajeto, sem atribuir funções de enxerto a músculos apenas porque aparecem nas opções. B/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "c90c0f1150f2ff4fdc9c59230ab7a51dd3b5a059e53172ec1093c667d9deea5a"
+   "questaoSha256": "c90c0f1150f2ff4fdc9c59230ab7a51dd3b5a059e53172ec1093c667d9deea5a",
+   "pendencia": "B oficial pergunta especificamente a aponeurose usada em Bell-Tawse: tríceps versus bíceps, braquial anterior e extensor longo dos dedos. O corpo independente do resumo42 não descreve o retalho aponeurótico nem compara doadores para o anular. Falta técnica primária com origem, preservação de inserção e trajeto, sem atribuir funções de enxerto a músculos apenas porque aparecem nas opções. B/comentário preservados."
   },
   "trauma-0869": {
    "tema": "trauma",
@@ -68202,14 +68239,15 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial associa síndrome compartimental após projétil no antebraço ao grau de fragmentação, versus desvio, localização e metal livre. Os resumos42/17 discutem alta energia, partes moles e cominuição em outras populações, mas não oferecem essa comparação específica de fatores nos ferimentos por projétil do antebraço. Falta estudo com definição de síndrome e associações entre as quatro variáveis. Não converter plausibilidade de dano muscular em associação estatística significativa. C/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "5330268ae543893b380197df7557d8f2964862637a8df806735aed7f96dbdad1"
+   "questaoSha256": "5330268ae543893b380197df7557d8f2964862637a8df806735aed7f96dbdad1",
+   "pendencia": "C oficial associa síndrome compartimental após projétil no antebraço ao grau de fragmentação, versus desvio, localização e metal livre. Os resumos42/17 discutem alta energia, partes moles e cominuição em outras populações, mas não oferecem essa comparação específica de fatores nos ferimentos por projétil do antebraço. Falta estudo com definição de síndrome e associações entre as quatro variáveis. Não converter plausibilidade de dano muscular em associação estatística significativa. C/comentário preservados."
   },
   "trauma-0881": {
    "tema": "trauma",
@@ -68602,14 +68640,15 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial exige o nervo mais comprometido na lesão traumática de Monteggia, entre ulnar, mediano e interósseos anterior/posterior. O corpo do resumo42 descreve sobretudo neuropraxia iatrogênica do interósseo posterior após fixação proximal por Thompson; não estabelece o ranking traumático pedido nem permite aplicar os percentuais dessa cirurgia à luxação da cabeça radial. Falta fonte primária da Monteggia e sua lesão neural. D/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "5d21bef1ea7acb2ed0d11febfb4bae609c2f5ee403b2f5c45736a423b44465ee"
+   "questaoSha256": "5d21bef1ea7acb2ed0d11febfb4bae609c2f5ee403b2f5c45736a423b44465ee",
+   "pendencia": "D oficial exige o nervo mais comprometido na lesão traumática de Monteggia, entre ulnar, mediano e interósseos anterior/posterior. O corpo do resumo42 descreve sobretudo neuropraxia iatrogênica do interósseo posterior após fixação proximal por Thompson; não estabelece o ranking traumático pedido nem permite aplicar os percentuais dessa cirurgia à luxação da cabeça radial. Falta fonte primária da Monteggia e sua lesão neural. D/comentário preservados."
   },
   "trauma-0892": {
    "tema": "trauma",
@@ -71681,8 +71720,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial identifica Thompson como prolongamento distal de Kaplan; essa metade é explicitamente sustentada no corpo do resumo42. Entretanto o corpo não descreve os planos de Boyd, Kocher e Hotchkiss necessários para explicar individualmente esses distratores sem repetir apenas que a certa é Kaplan. Falta anatomia comparada primária dos acessos ao cotovelo e de suas extensões. Não usar o bloco da própria questão nem o comentário antigo para preencher esses planos; B/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -71696,7 +71735,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "cafff9902efe27cfefc12f72d10680f2f3f59f34a75f4d90bd1bd1709ccff020"
+   "questaoSha256": "cafff9902efe27cfefc12f72d10680f2f3f59f34a75f4d90bd1bd1709ccff020",
+   "pendencia": "B oficial identifica Thompson como prolongamento distal de Kaplan; essa metade é explicitamente sustentada no corpo do resumo42. Entretanto o corpo não descreve os planos de Boyd, Kocher e Hotchkiss necessários para explicar individualmente esses distratores sem repetir apenas que a certa é Kaplan. Falta anatomia comparada primária dos acessos ao cotovelo e de suas extensões. Não usar o bloco da própria questão nem o comentário antigo para preencher esses planos; B/comentário preservados."
   },
   "trauma-0991": {
    "tema": "trauma",
@@ -74468,8 +74508,8 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial pede incidência maior de sinostose na Monteggia IV, versus I/II/III. O corpo do resumo42 define os quatro tipos e relaciona sinostose a fraturas dos dois ossos/cominuição/trauma craniano, mas não compara incidências entre os tipos de Bado. O tipo IV ter os dois ossos fraturados é plausibilidade, não prova do ranking. Falta série com denominadores por tipo ou afirmação primária explícita. D/comentário preservados.",
    "temComentario": true,
    "citacoes": [
     {
@@ -74483,7 +74523,8 @@
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "c1a329c9f9b868db91a834d2aa1e8406fffa9a5f6cb1f37bcc85cb1ef6381b88"
+   "questaoSha256": "c1a329c9f9b868db91a834d2aa1e8406fffa9a5f6cb1f37bcc85cb1ef6381b88",
+   "pendencia": "D oficial pede incidência maior de sinostose na Monteggia IV, versus I/II/III. O corpo do resumo42 define os quatro tipos e relaciona sinostose a fraturas dos dois ossos/cominuição/trauma craniano, mas não compara incidências entre os tipos de Bado. O tipo IV ter os dois ossos fraturados é plausibilidade, não prova do ranking. Falta série com denominadores por tipo ou afirmação primária explícita. D/comentário preservados."
   },
   "trauma-1091": {
    "tema": "trauma",
@@ -75424,8 +75465,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C bibliográfica/provável antiga aponta flexor profundo dos dedos e flexor longo do polegar como os MAIS acometidos. Os corpos dos resumos17/42 localizam os músculos nos planos e mandam inspecionar cuidadosamente os flexores profundos, mas não demonstram uma frequência/vulnerabilidade comparativa desse par frente a superficial dos dedos e radial do carpo. Falta fonte primária da distribuição da necrose ou afirmação explícita do par predominante. Inspecionar um plano não prova o ranking; não criar gabarito oficial nem novo endosso à provável.",
    "temComentario": true,
    "citacoes": [
     {
@@ -75441,7 +75482,8 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "0fba63b947230056bd7a1f9a8f20aab107f8a866828fe2733797b31d64b6a0e0"
+   "questaoSha256": "0fba63b947230056bd7a1f9a8f20aab107f8a866828fe2733797b31d64b6a0e0",
+   "pendencia": "C bibliográfica/provável antiga aponta flexor profundo dos dedos e flexor longo do polegar como os MAIS acometidos. Os corpos dos resumos17/42 localizam os músculos nos planos e mandam inspecionar cuidadosamente os flexores profundos, mas não demonstram uma frequência/vulnerabilidade comparativa desse par frente a superficial dos dedos e radial do carpo. Falta fonte primária da distribuição da necrose ou afirmação explícita do par predominante. Inspecionar um plano não prova o ranking; não criar gabarito oficial nem novo endosso à provável."
   },
   "trauma-1118": {
    "tema": "trauma",
@@ -77359,15 +77401,16 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial usa Bell-Tawse para reconstruir o anular numa Monteggia IV com instabilidade residual, perguntando tríceps versus bíceps, ancôneo, palmar longo e extensor radial do carpo. Os resumos40/42 descrevem estabilidade e anular, mas não Bell-Tawse nem o retalho/doador e percurso da reconstrução. Falta descrição primária dessa técnica; presença de ancôneo na lista de interposições da redução aguda não confere seu papel como enxerto. D/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "203ba51b23b8d82fb3245fe8f411723cf599b006fbd81104f91c001859acbab5"
+   "questaoSha256": "203ba51b23b8d82fb3245fe8f411723cf599b006fbd81104f91c001859acbab5",
+   "pendencia": "D oficial usa Bell-Tawse para reconstruir o anular numa Monteggia IV com instabilidade residual, perguntando tríceps versus bíceps, ancôneo, palmar longo e extensor radial do carpo. Os resumos40/42 descrevem estabilidade e anular, mas não Bell-Tawse nem o retalho/doador e percurso da reconstrução. Falta descrição primária dessa técnica; presença de ancôneo na lista de interposições da redução aguda não confere seu papel como enxerto. D/comentário preservados."
   },
   "trauma-1195": {
    "tema": "trauma",
@@ -77505,14 +77548,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial exige tipoIIB da classificação Universal Rayhack/Cooney para rádio DISTAL extra-articular, desviado, redutível e instável. O resumo42 trata diáfise, Monteggia/Galeazzi e não define os tiposIIA/IIB/IIIA/IIIB/IVB da Universal. Falta tabela primária de rádio distal; não confundir segmento distal com diáfise distal nem transportar a classificação pediátrica. B/comentário preservados.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-42-diafise-radio-ulna"
    ],
-   "questaoSha256": "a047042a67169ac74d79fa1b349da59dab25681dfeddbffed0efff27d2c7319f"
+   "questaoSha256": "a047042a67169ac74d79fa1b349da59dab25681dfeddbffed0efff27d2c7319f",
+   "pendencia": "B oficial exige tipoIIB da classificação Universal Rayhack/Cooney para rádio DISTAL extra-articular, desviado, redutível e instável. O resumo42 trata diáfise, Monteggia/Galeazzi e não define os tiposIIA/IIB/IIIA/IIIB/IVB da Universal. Falta tabela primária de rádio distal; não confundir segmento distal com diáfise distal nem transportar a classificação pediátrica. B/comentário preservados."
   },
   "trauma-1204": {
    "tema": "trauma",

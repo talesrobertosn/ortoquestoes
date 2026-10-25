@@ -1,0 +1,54 @@
+{
+  "basePublicada": "e6616f0cff0a4e530794da4b56e6961569f803af",
+  "lotesAvaliados": [
+    157,
+    158
+  ],
+  "itensAvaliados": 20,
+  "comentariosReescritos": [
+    "pediatria-1083"
+  ],
+  "pendenciasIndividuais": 19,
+  "figurasAbertas": 4,
+  "validacao": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "passou",
+    "build": "passou",
+    "replay": "aplicar.preparar reproduz integralmente a miniaula; fontes, hashes e todas as alternativas conferidos",
+    "avulsoLocal": "igual integralmente",
+    "preservacao": "enunciados, opções, respostas, áreas, figuras, revisões médicas e membros alheios intactos;19comentários com lacuna preservados integralmente",
+    "ui": "390/1440px, link exato do bloco; duas capturas inspecionadas",
+    "publicacao": "conferir CI do head efetivo, guarda/deploy e avulso/fonte/letras em produção no PR"
+  },
+  "inventario": {
+    "resumos": 34,
+    "questoes": 2466,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 637,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 289,
+      "pendente-inspecao-imagem": 85,
+      "revisada": 1357
+    }
+  },
+  "logsSha256": {
+    "check157-fixtures.log": "0736928c5aabf473aa317ed4b2c37375e4c990bbff8d1881167ee150c14cd98f",
+    "check157-acervo.log": "187f159ba1fe9e12a9b2b114f6ec9e3b85f6c5388d471b8585ce31f6699feb2e",
+    "check157-test.log": "d39ef3f9c73cb6721f8176dd738db19d8c8a4d5bf54c3b41943d43a44793a51f",
+    "check157-build.log": "66f8d285e7d0308c160cc984d1f20ae9678e4bceecd259c2d56750a28db1a9bb",
+    "ui157.log": "ef72d9305f1ec1f906d51cafb2dd0304f5bf36f04d11c2dedd657173eeb1903a"
+  },
+  "baseEditorial": "6506571d8da3c04c174204ab01c0f6d989c068b6",
+  "reconciliacao": "PRs534/535 do Atlas3D incorporados integralmente; nenhum arquivo funcional alterado por este lote; dependências reinstaladas pelo lock existente e checks repetidos",
+  "logsSha256AposReconciliacao": {
+    "npm-ci157-remoto.log": "f763016074c303f16b9cd5d7017dc543ca0622d8f6709dfd68ec687646dbcfc0",
+    "final157-fixtures.log": "f9ea473cc170f3c6b2593beeb96170a9ca9ef41e13201c87a30c1c1678cdbfc3",
+    "final157-acervo.log": "187f159ba1fe9e12a9b2b114f6ec9e3b85f6c5388d471b8585ce31f6699feb2e",
+    "final157-test.log": "ee3deae6ae7466817d4e3a84edcb649c6d882faae1d1c5fda239b9be43a78e3d",
+    "final157-build.log": "f26fe456c44c6db05ffaab5216020e2f9018fa7422ae9a8cf67305cba1d979c7",
+    "ui157-remoto.log": "ef72d9305f1ec1f906d51cafb2dd0304f5bf36f04d11c2dedd657173eeb1903a"
+  }
+}

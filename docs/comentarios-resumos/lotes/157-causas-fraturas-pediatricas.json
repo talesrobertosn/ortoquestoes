@@ -1,0 +1,40 @@
+{
+  "pediatria-1083": {
+    "questaoSha256": "64fd007e1024ba749d3e07f42d5bca6a7c71a69110535c32ddb31932017307e7",
+    "comentarioAnteriorSha256": "edf3788f121f7e76f9ae9607c02601793f217820780eb59d2808ad4b0af4371f",
+    "comentario": {
+      "conceito": "Antes de atribuir uma fratura infantil à queda relatada, é preciso organizar suas possíveis causas. O capítulo separa três grandes grupos: **trauma acidental, trauma não acidental e condição patológica**. Maus-tratos correspondem ao segundo grupo, por isso C contém a divisão completa.\n\nNo trauma acidental, a força vem de situações como queda, esporte, bicicleta ou colisão. A história deve esclarecer o que a criança fazia e como recebeu a carga; chamar tudo apenas de “queda” perde informações sobre ambiente e mecanismo. Já o trauma não acidental exige considerar violência quando idade, padrão e contexto não combinam com a explicação apresentada. Uma história incompatível merece investigação, sem que um dado isolado autorize concluir maus-tratos (Rockwood e Wilkins, 10ª ed., cap. 1, “Comece pela causa: acidental, não acidental ou patológica”).\n\nNa terceira categoria, uma **doença ou alteração óssea participa da fratura**. A classificação usa esse termo abrangente, em vez de colocar cada diagnóstico em uma categoria do mesmo nível. A distinção é útil porque o raciocínio precisa contemplar tanto a força aplicada quanto a possibilidade de uma condição patológica, além da origem acidental ou não do trauma.\n\n**Uma classificação etiológica não é um diagnóstico individual.** Crianças pequenas podem sofrer acidentes e também ter doença; não se pode chamar toda fratura nessa idade de violência. Da mesma forma, conhecer o mecanismo habitual de uma lesão não encerra a investigação de um contexto que não combina com ele. A epidemiologia organiza as perguntas, mas não substitui história e exame.\n\n**Por que esta questão foi criada.** O capítulo começa por essa divisão de causas, que ajuda a estruturar a anamnese. É uma oportunidade de cobrança objetiva identificada no livro, sem questão oficial direta localizada na engenharia reversa.\n\n> **Na prova:** acidente, trauma não acidental e condição patológica são as três categorias; exemplos de mecanismos ou diagnósticos não substituem os grupos completos.",
+      "correta": "**C: trauma acidental, maus-tratos e doença patológica.** A alternativa conserva as três categorias etiológicas do capítulo. O termo maus-tratos nomeia o trauma não acidental, e condição patológica mantém a categoria clínica abrangente.",
+      "incorretas": {
+        "A": "**Deixa o trauma não acidental fora da classificação.** A sequência põe trauma acidental ao lado de dois rótulos clínicos, osteoporose e infecção, mas não reserva uma categoria para maus-tratos. Assim, não organiza a distinção entre um acidente compatível com a história e um possível trauma não acidental.",
+        "B": "**Enumera diagnósticos em vez de manter o nível da classificação.** Neoplasia e infecção não substituem a categoria abrangente de condição patológica nem representam o trauma não acidental que falta à lista. O capítulo pede três grandes causas, e não uma relação de doenças específicas.",
+        "D": "**Estreita duas categorias ao mesmo tempo.** Esporte é uma situação incluída no trauma acidental, que também abrange quedas, bicicleta e trânsito. “Doença metabólica” também restringe a formulação mais ampla de condição patológica. A presença correta de maus-tratos não corrige essas duas limitações."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Comece pela causa: acidental, não acidental ou patológica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "titulo": "Epidemiologia das fraturas na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+        "secoes": [
+          "Comece pela causa: acidental, não acidental ou patológica"
+        ],
+        "blocos": [
+          "comece-pela-causa-acidental-nao-acidental-ou-pat-60d8a6ec",
+          "comece-pela-causa-acidental-nao-acidental-ou-pat-9018e2fe",
+          "comece-pela-causa-acidental-nao-acidental-ou-pat-7bc46315",
+          "comece-pela-causa-acidental-nao-acidental-ou-pat-ae0845e3"
+        ],
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+        "trechosSha256": "41cfd900cdab4ab9e5f8fa5b622970ff95f4aaec0f5eb5b1affe72ee30ee7664"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
