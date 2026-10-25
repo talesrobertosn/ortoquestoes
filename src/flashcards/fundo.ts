@@ -23,9 +23,9 @@ export function lembrarFundo(caminho: string) {
   try { window.sessionStorage.setItem(CHAVE, caminho) } catch { /* sem armazenamento: fica na memória */ }
 }
 
-export function rotaDoFundo(): string {
+export function rotaDoFundo(padrao = PADRAO): string {
   if (fundo) return fundo
-  try { return window.sessionStorage.getItem(CHAVE) || PADRAO } catch { return PADRAO }
+  try { return window.sessionStorage.getItem(CHAVE) || padrao } catch { return padrao }
 }
 
 /** Fecha o jogo e volta para o site (a página que estava atrás), trocando a

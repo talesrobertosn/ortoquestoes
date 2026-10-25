@@ -39,6 +39,8 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
       { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia até a sua prova', icone: 'rota', assinante: true, destaque: true },
       // Biblioteca de resumos (16/10/2026): na aba Estudar, em chamas, para ninguém deixar de ver (pedido do Tales).
       { destino: '/resumos', rotulo: 'Resumos · Beta', texto: 'Os temas que mais caem, com as questões no meio do texto', icone: 'livro', destaque: true, fogo: true },
+      // Atlas Ortopédico 3D (25/10/2026): clique no osso e veja fraturas, classificações e questões.
+      { destino: '/atlas', rotulo: 'Atlas 3D · Beta', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', destaque: true },
       { destino: '/flashcards', rotulo: 'Flashcards · Beta', texto: 'Revisão espaçada em flashcards e o modo jogo', icone: 'raio', destaque: true },
       { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' },
       { destino: '/flashcards/cripta', rotulo: 'Jogar o Torneio', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
@@ -78,6 +80,7 @@ const SINONIMOS: Record<string, string> = {
   '/cronograma': 'plano de estudo calendario dia agenda meta',
   '/resumos': 'livro capitulo rockwood resumo biblioteca leitura ler classificacao',
   '/flashcards': 'cartas cards memorizar jogo',
+  '/atlas': 'anatomia 3d osso esqueleto classificacao fratura musculo nervo modelo tridimensional',
   '/revisao': 'revisar repeticao espacada voltar',
   '/erros': 'errei erradas erros',
   '/favoritas': 'estrela salvas marcadas',

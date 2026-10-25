@@ -26,11 +26,14 @@ const ORCAMENTO = {
   inicialTotal: 165 * KB,
   /** qualquer outro arquivo .js (páginas e pedaços compartilhados) */
   porArquivoJs: 120 * KB,
+  /** Atlas 3D (25/10/2026): o three.js (~150 KB gzip) vai num pedaço só, baixado apenas por quem abre o atlas. */
+  atlas3d: 190 * KB,
 }
 // Trechos de código que denunciam um módulo pesado de volta na entrada.
 const FORA_DA_ENTRADA = [
   ['src/estado/conquistas.ts (tabela de conquistas)', 'Sequência atual'],
   ['src/flashcards/motor/bestiario.ts', 'Golem de Gesso'],
+  ['three.js (Atlas 3D)', 'WebGLRenderer'],
 ]
 
 const saida = await mkdtemp(join(tmpdir(), 'orto-orcamento-'))
@@ -65,7 +68,8 @@ try {
   const arquivos = (await readdir(join(saida, 'assets'))).filter((f) => f.endsWith('.js'))
   for (const f of arquivos) {
     const tamanho = await gz(join('assets', f))
-    assert.ok(tamanho <= ORCAMENTO.porArquivoJs, `assets/${f} tem ${fmt(tamanho)} > teto ${fmt(ORCAMENTO.porArquivoJs)}`)
+    const teto = (await readFile(join(saida, 'assets', f), 'utf8')).includes('WebGLRenderer') ? ORCAMENTO.atlas3d : ORCAMENTO.porArquivoJs
+    assert.ok(tamanho <= teto, `assets/${f} tem ${fmt(tamanho)} > teto ${fmt(teto)}`)
   }
   console.log(`orçamento de chunks ok (${arquivos.length} arquivos JS)`)
 } finally {

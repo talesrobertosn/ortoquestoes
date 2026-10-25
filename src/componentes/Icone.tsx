@@ -55,6 +55,9 @@ export const CAMINHOS: Record<string, string> = {
   tocar: 'M8 5.5v13l10.5-6.5z',
   pausar: 'M9 5.5v13M15 5.5v13',
   ajustes: 'M4 7h9M17 7h3M15 4.5v5M4 17h3M11 17h9M9 14.5v5',
+  // Atlas 3D: um cubo em perspectiva e um osso longo
+  cubo: 'M12 3 20 7.5v9L12 21l-8-4.5v-9zM12 12l8-4.5M12 12v9M12 12 4 7.5',
+  osso: 'M8.5 6.2a2.4 2.4 0 1 0-3.3 3.3 2.4 2.4 0 1 0 3.3 3.3l6.3 6.3a2.4 2.4 0 1 0 3.3-3.3 2.4 2.4 0 1 0-3.3-3.3z',
   'olho-riscado':
     'M4 4l16 16M9.9 5.9A9.6 9.6 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3.3 4M6.3 8.1A17 17 0 0 0 2.5 12S6 18.5 12 18.5c1 0 1.9-.2 2.7-.5M9.9 9.9a3 3 0 0 0 4.2 4.2',
 }

@@ -44,6 +44,7 @@ export const carregadores = {
   Indicar: () => import('../paginas/Indicar'),
   Ligas: () => import('../paginas/Ligas'),
   Flashcards: () => import('../paginas/Flashcards'),
+  Atlas3D: () => import('../atlas3d/ui/Atlas'),
   AdminAssinaturas: () => import('../paginas/AdminAssinaturas'),
 } satisfies Record<string, Carregador>
 
@@ -57,7 +58,7 @@ const PAGINA_DA_ROTA: Record<string, Pagina> = {
   ranking: 'Ranking', conquistas: 'Ranking', termos: 'Termos', 'condicoes-assinatura': 'CondicoesAssinatura',
   assinatura: 'Assinatura', conta: 'Conta', entrar: 'Conta', emails: 'Emails',
   'simulado-nacional': 'SimuladoNacional', cronograma: 'PlanoEstudo', 'plano-de-estudo': 'PlanoEstudo',
-  'temas-que-mais-caem': 'TemasQueMaisCaem', resumao: 'Resumao', resumos: 'Resumos', indicar: 'Indicar', convite: 'Indicar',
+  'temas-que-mais-caem': 'TemasQueMaisCaem', resumao: 'Resumao', resumos: 'Resumos', atlas: 'Atlas3D', indicar: 'Indicar', convite: 'Indicar',
   ligas: 'Ligas', flashcards: 'Flashcards', admin: 'AdminAssinaturas',
 }
 
