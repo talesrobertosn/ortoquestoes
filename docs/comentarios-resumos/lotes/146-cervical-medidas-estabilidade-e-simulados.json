@@ -1,0 +1,385 @@
+{
+  "coluna-0516": {
+    "questaoSha256": "920c20c2c1c96717acb68606cd31055790b1f6650e8e1f0c464cd035bd640ac6",
+    "comentarioAnteriorSha256": "67749ece04779a183b627bc415931780de9e3f1bcd4752ac4b9dc041c54e8ffa",
+    "comentario": {
+      "conceito": "Depois de um trauma, o perfil cervical não serve apenas para procurar um traço no osso. Um aumento do tecido à frente das vértebras pode denunciar lesão subjacente: os limites cobrados são **mais de 6 mm em C2 e mais de 22 mm em C6**.\n\nA pergunta muda de nível porque a espessura esperada não é igual em toda a região cervical. Aplicar o mesmo número aos dois pontos, ou trocar a ordem, transforma uma medida anatômica em uma regra sem referência. O resumo descreve o sinal como muito específico, mas com sensibilidade de apenas 65% (Rockwood, 10ª ed., cap. 48, “A radiografia em perfil”).\n\n**Uma medida normal não exclui lesão.** Sensibilidade limitada significa que há lesões sem esse aumento visível. Por outro lado, encontrar a espessura aumentada pede correlação com alinhamento, exame neurológico e investigação do trauma; o sinal não identifica sozinho qual osso ou ligamento foi lesado.\n\nA tomografia substituiu a radiografia de rastreio em muitos centros de trauma, mas isso não torna sem valor os sinais que podem ser vistos num perfil já obtido. O erro é usá-los como uma liberação isolada da coluna.\n\n> **Na prova:** partes moles pré-vertebrais: C2, 6 mm; C6, 22 mm. Ausência de aumento não exclui lesão.\n\n**Por que esta questão foi criada.** Treina a leitura de um sinal de trauma nos dois níveis corretos e sua limitação como teste de exclusão.",
+      "correta": "**A: 6 mm e 22 mm.** A ordem acompanha C2 e C6. Ultrapassar esses valores sugere lesão subjacente, mas a sensibilidade limitada impede usar medidas menores como garantia de coluna íntegra.",
+      "incorretas": {
+        "B": "**Inverte os níveis.** Vinte e dois milímetros é o limite descrito em C6, não em C2. Transferi-lo para C2 deixaria de reconhecer aumentos que já ultrapassam o limiar correto de 6 mm.",
+        "C": "**Usa números de outras relações cervicais.** Três milímetros lembra o ADI adulto e 12 mm a regra de Harris, mas nenhum define as partes moles pré-vertebrais pedidas. Uma medida precisa conservar local, direção e significado.",
+        "D": "**Eleva os dois limiares sem fundamento na fonte.** Doze e 30 mm não são os cortes descritos para C2/C6. Aumentar o teto faz parecer aceitável uma espessura que já é anormal pelo critério apresentado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Imagem: rastreio, radiografia, tomografia e ressonância; Atlas, ligamento transverso e instabilidade C1–C2; Junção occipitocervical e côndilo occipital."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Imagem: rastreio, radiografia, tomografia e ressonância",
+          "Atlas, ligamento transverso e instabilidade C1–C2",
+          "Junção occipitocervical e côndilo occipital"
+        ],
+        "blocos": [
+          "imagem-rastreio-radiografia-tomografia-e-ressona-be0401de",
+          "imagem-rastreio-radiografia-tomografia-e-ressona-077945ef",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+          "juncao-occipitocervical-e-condilo-occipital-37f370ae"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "1197443e949925e9ffc08df19ae6de0597c7fecee1c34981174f1d45f4a40822"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0517": {
+    "questaoSha256": "bcfdd13d94db8250391f036325f796cce043f7cb50663c4e42953edb448cbff3",
+    "comentarioAnteriorSha256": "4b989abaeac22dabf90a54553f1b5751a48ae50a0fd2f0b312b26cb6cf55c400",
+    "comentario": {
+      "conceito": "No perfil cervical, uma vértebra está inclinada em cifose e deslocada em relação à seguinte. São duas deformidades diferentes: a **angulação maior que 11 graus** sugere lesão do complexo posterior, e a **translação sagital maior que 3,5 mm** sugere instabilidade.\n\nA cifose é medida pelo método de Cobb, usando os platôs; a translação compara as linhas que prolongam as paredes posteriores dos corpos. Uma medida é angular, em graus, e a outra é linear, em milímetros. Não se deve levar o número de uma para a unidade da outra (Rockwood, 10ª ed., cap. 48, “White e Panjabi: 3,5 mm e 11 graus”).\n\n**Uma cunha óssea pode esconder dano ligamentar.** A fratura por compressão sem parede posterior comprometida pode ser estável se não houver translação nem lesão posterior. Quando a cifose e o alinhamento sugerem falha dessa contenção, não basta chamá-la de fratura por compressão e pressupor estabilidade.\n\nEsses sinais devem ser integrados ao exame neurológico, ao disco e aos ligamentos. Eles indicam preocupação com instabilidade, mas não escolhem sozinhos o acesso e a técnica de uma operação.\n\n> **Na prova:** 11 graus de cifose e 3,5 mm de translação, nessa ordem.\n\n**Por que esta questão foi criada.** Treina a associação entre imagem, contenção ligamentar e instabilidade, incluindo a troca de unidades nos distratores.",
+      "correta": "**D: 11 graus e 3,5 mm.** A opção conserva o limiar angular da cifose e o limiar linear da translação subaxial, relacionando-os à contenção posterior e à estabilidade.",
+      "incorretas": {
+        "A": "**Anteciparia os dois cortes pedidos.** Cinco graus e 2 mm não são a dupla de White e Panjabi apresentada nessa seção. Não se devem substituir limites de instabilidade por números de seleção terapêutica ou de outras medidas.",
+        "B": "**Eleva os dois limites.** Vinte graus e 5 mm exigiriam deformidades maiores para reconhecer o critério, deixando de considerar os valores que já ultrapassam 11 graus ou 3,5 mm.",
+        "C": "**Acerta a cifose e troca a translação.** Onze graus é o limiar angular, mas a medida linear perguntada é 3,5 mm. A alternativa parcialmente correta exige conferir cada componente, sem misturar unidades."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade",
+          "Compressão, explosão e teardrop"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
+          "compressao-explosao-e-teardrop-c61e3e01"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "eb50a5f1fbe9d068bba74a3aec925c0998316b27ded85450f975c2eb1d87ca29"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0520": {
+    "questaoSha256": "9aaf09e894ea338438879a98f89d4516bcd2e1249f4bdfe0e3ac8036102ee3b1",
+    "comentarioAnteriorSha256": "71ba7a4a1f229b70acd9ee3687ddd48ba7704018b408afc38b3f6ef1cf316c5b",
+    "comentario": {
+      "conceito": "Ao instalar um halo, não basta apertar os pinos até o anel parecer firme. É preciso escolher uma zona de entrada e controlar o torque. No adulto, o resumo situa os pinos anteriores **cerca de 1 cm acima do terço lateral do rebordo orbital**, com torque final de **8 polegadas-libra**.\n\nA posição lateral procura poupar o nervo supraorbital. Os pinos são apertados em pares opostos, e a fonte recomenda reaperto em 24 a 48 horas. Isso mostra por que localizar e dosar o aperto são partes da mesma tarefa: a estabilidade inicial não dispensa conferir o sistema depois (Rockwood, 10ª ed., cap. 48, “Órteses, halo e tração”).\n\n**Halo e Gardner-Wells não usam a mesma referência anterior.** A pinça de tração tem os pinos alinhados com o meato acústico externo, aproximadamente 1 cm acima da orelha. O rebordo orbital é a referência dos pinos anteriores do halo; misturar os dispositivos produz uma resposta anatomicamente errada mesmo com o torque certo.\n\nOs valores aqui são os apresentados para o adulto no resumo. Não devem ser extrapolados automaticamente para uma criança ou para um dispositivo com instruções próprias.\n\n> **Na prova:** halo adulto: terço lateral do rebordo orbital, cerca de 1 cm acima, e 8 polegadas-libra.\n\n**Por que esta questão foi criada.** Diferencia dois dispositivos de imobilização e tração cujas referências anatômicas não podem ser intercambiadas.",
+      "correta": "**A: 1 cm acima do terço lateral do rebordo orbital; 8 polegadas-libra.** É a combinação de localização e torque descrita para os pinos anteriores do halo adulto, com cuidado para o nervo supraorbital.",
+      "incorretas": {
+        "B": "**Troca a zona lateral pela medial.** O torque está de acordo com o resumo, mas a localização não. A referência lateral é escolhida para poupar o supraorbital; não se corrige um ponto inadequado mantendo o mesmo aperto.",
+        "C": "**Acerta a entrada e exagera o torque indicado.** A fonte recomenda 8 polegadas-libra, não 20. O aperto deve ser controlado; não há fundamento para aumentar o valor apenas para tornar o anel aparentemente mais firme.",
+        "D": "**Emprega a referência da pinça de Gardner-Wells.** Alinhamento com o meato e posição acima da orelha pertencem à pinça de tração. A questão pede os pinos anteriores do halo, orientados pelo rebordo orbital."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Órteses, halo e tração; Luxação facetária: redução fechada e cirurgia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Órteses, halo e tração",
+          "Luxação facetária: redução fechada e cirurgia"
+        ],
+        "blocos": [
+          "orteses-halo-e-tracao-9034234b",
+          "luxacao-facetaria-reducao-fechada-e-cirurgia-a24fa746"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "5e108b0a6efd50696f771c6d5d3d4038eaf4e182750439683397511d819880f5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0521": {
+    "questaoSha256": "8c4ab561192d31cb92d74c6488410673707386f891b0e928812eeec93ff03eef",
+    "comentarioAnteriorSha256": "017d76f2789d56814fe444d71c35fd96854a9826ab201a18a00f2a43cefce2ae",
+    "comentario": {
+      "conceito": "A artéria vertebral direita está ocluída, mas o paciente não tem sintomas. Isso não autoriza relaxar o cuidado do lado esquerdo: na situação descrita, **é a vertebral esquerda patente que precisa ser especialmente protegida durante a fixação**.\n\nNas luxações e fraturas cervicais, a lesão vascular pode ser unilateral e produzir poucas sequelas. O risco cirúrgico muda porque lesar a artéria que permaneceu aberta pode converter um problema unilateral em comprometimento bilateral, que o resumo relaciona a infarto cerebelar. Por isso os parafusos de massa lateral ou transarticulares do lado sadio devem ser evitados ou realizados com cuidado redobrado (Rockwood, 10ª ed., cap. 48, “Lesão da artéria vertebral”).\n\n**A ausência de sintomas não é uma reserva de segurança para outro dano vascular.** A angiorressonância informa o planejamento: lado, trajeto e tipo de implante precisam ser reconsiderados conforme a anatomia e o achado vascular.\n\nO capítulo não transforma toda oclusão unilateral assintomática em obrigação de revascularizar antes da redução, nem proíbe universalmente qualquer montagem posterior. A implicação que a questão pede é mais específica: proteger a circulação que restou ao planejar os parafusos.\n\n> **Na prova:** vertebral ocluída de um lado exige atenção redobrada à patente do outro.\n\n**Por que esta questão foi criada.** Treina a consequência operatória de um achado vascular assintomático, evitando confundir ausência de sintomas com ausência de risco.",
+      "correta": "**D: redobrar o cuidado com os parafusos de massa lateral à esquerda.** A oclusão direita torna especialmente importante evitar agressão à vertebral esquerda patente. O achado vascular deve modificar o planejamento da montagem.",
+      "incorretas": {
+        "A": "**Torna absoluta uma cautela dirigida.** A fonte recomenda evitar ou redobrar o cuidado com determinados parafusos no lado patente, não proíbe toda fixação posterior. A escolha depende da lesão e da montagem possível.",
+        "B": "**Transforma um achado unilateral em urgência vascular obrigatória.** O resumo descreve muitas lesões unilaterais com poucas sequelas e possível recanalização; reserva a recanalização urgente para o comprometimento bilateral. O caso não sustenta exigir essa sequência em todos os pacientes.",
+        "C": "**Inverte o lado que concentra o cuidado adicional.** A oclusão direita não protege a esquerda contra um parafuso. Pelo contrário, danificar a artéria patente pode produzir comprometimento bilateral; não há licença para ampliar a agressividade do implante."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Lesão da artéria vertebral."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Lesão da artéria vertebral"
+        ],
+        "blocos": [
+          "lesao-da-arteria-vertebral-e72216c9"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "4ce714ebe309b3bd57bb3bfda2287dea32a01234b31f83e1c0bf99ecb986202c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0522": {
+    "questaoSha256": "c74e332c050867cc26cd2b56a714c8e1cbfa55f1c08508ebeb42c96f01c083bc",
+    "comentarioAnteriorSha256": "14a8661edfdd4ea051d18980a74d237e6c9b9e9542de10b89d2b05bf3b0e27ba",
+    "comentario": {
+      "conceito": "O ferimento atingiu a metade direita da medula. Para prever o exame abaixo da lesão, acompanhe três caminhos: **força e propriocepção ficam comprometidas à direita; dor e temperatura, à esquerda**. Esse é o desenho clássico de Brown-Séquard.\n\nO comando motor cruza no bulbo antes de descer pela medula. Portanto, o trato motor direito já está relacionado ao lado direito do corpo. A propriocepção sobe pelas colunas posteriores do mesmo lado e só cruza no bulbo; interrompê-la na medula direita também tira informação de posição do lado direito (Rockwood, 10ª ed., cap. 48, “Os tratos e para que lado cada um cruza”).\n\n**A via dolorosa e térmica muda de lado na medula.** Ao subir no espinotalâmico direito, carrega informação que veio do lado esquerdo. Por isso a hemilesão direita produz essa perda contralateral, em vez de colocar todas as modalidades do mesmo lado.\n\nNa avaliação clínica, testar separadamente força, posição articular e sensibilidade dolorosa ajuda a reconhecer o padrão. Um trauma pode produzir lesão incompleta e irregular, sem reproduzir uma hemissecção perfeita.\n\n> **Na prova:** hemimedula direita: motor e propriocepção direitos, dor e temperatura esquerdos.\n\n**Por que esta questão foi criada.** Aplica o cruzamento das vias a um lado definido da medula, sem depender de decorar apenas o nome da síndrome.",
+      "correta": "**B: perda motora e proprioceptiva à direita, com perda dolorosa e térmica à esquerda.** A combinação decorre dos cruzamentos diferentes das vias e corresponde à hemilesão direita descrita.",
+      "incorretas": {
+        "A": "**Agrupa dor e temperatura com a função motora.** As fibras dolorosas e térmicas que sobem à direita vieram do lado oposto. Quem acompanha o déficit motor direito é a propriocepção direita, pelas colunas posteriores.",
+        "C": "**Abandona a lateralidade do caso.** Comprometimento motor bilateral com propriocepção preservada lembra a síndrome anterior, não uma hemissecção direita. O tipo de dissociação sensitiva e a distribuição motora precisam concordar com a lesão.",
+        "D": "**Troca o lado motor e agrupa todas as sensibilidades.** A fraqueza deve ser ipsilateral, à direita. Propriocepção acompanha esse lado, enquanto dor e temperatura se alteram à esquerda; elas não formam um único conjunto sensitivo direito."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "A medula cervical e as síndromes incompletas"
+        ],
+        "blocos": [
+          "a-medula-cervical-e-as-sindromes-incompletas-a7183487",
+          "a-medula-cervical-e-as-sindromes-incompletas-5af3c74e",
+          "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+          "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc",
+          "a-medula-cervical-e-as-sindromes-incompletas-0d50e411"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "6745d148efa2640fef7b88b00e9626fc1488c6bb67f1863eb48da5101e5c0530"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0523": {
+    "questaoSha256": "f3b2e046ed2faea9cb51e3b97ec284f9687f2031c3b78a10d1cb64bff8342fb6",
+    "comentarioAnteriorSha256": "12beb6fd1f1948750552d3ba4aba9423369605fe63e96369f057242db0ba0549",
+    "comentario": {
+      "conceito": "As massas laterais de C1 se afastaram para os lados numa fratura de Jefferson. O ligamento transverso liga uma à outra por trás do dente e é tensionado pela abertura do anel. A soma dos deslocamentos acima de aproximadamente **7 mm** é o indício clássico de ruptura pela regra de Spence.\n\nNa incidência transoral, soma-se quanto C1 ultrapassa C2 em cada lado. O limiar original é 6,9 mm; o resumo também discute 8,1 mm quando se corrige a ampliação da radiografia. A medida é uma inferência da integridade ligamentar, não a imagem direta do ligamento (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**Uma soma pequena não assegura transverso íntegro.** Estudos citados no capítulo encontraram ruptura com deslocamentos menores e correlação imperfeita. A ressonância complementa a investigação ao demonstrar o ligamento diretamente, de modo que a regra não deve decidir sozinha estabilidade ou tratamento.\n\nTambém é necessário conservar o tipo de medida: somatório lateral de C1 sobre C2 não é o intervalo anterior entre atlas e dente, medido no perfil.\n\n> **Na prova:** Spence é cerca de 7 mm de soma lateral; resultado deve ser integrado à avaliação ligamentar.\n\n**Por que esta questão foi criada.** Distingue medidas da junção cervical alta e reforça que uma regra indireta não substitui a avaliação do ligamento.",
+      "correta": "**C: 7 mm.** É a aproximação do corte clássico de 6,9 mm para a soma bilateral. Sugere ruptura do transverso, sem demonstrá-la de modo infalível.",
+      "incorretas": {
+        "A": "**Lembra uma medida anterior, não a soma lateral.** Até 3 mm é a referência de ADI no adulto. Usar esse valor para Spence confunde a distância no perfil com o afastamento das massas laterais na incidência transoral.",
+        "B": "**Pertence à discussão dos limites da contenção do ADI.** O resumo usa 5 mm para a abertura possível com falha isolada do transverso, ainda contida pelos alares. Não é o limiar clássico do somatório lateral perguntado.",
+        "D": "**Confunde a avaliação de C1–C2 com medidas occipitocervicais.** Doze milímetros aparece na regra de Harris para cada intervalo básio-áxis e básio-dente. Não é o corte de Spence na fratura de Jefferson."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Junção occipitocervical e côndilo occipital."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atlas, ligamento transverso e instabilidade C1–C2",
+          "Junção occipitocervical e côndilo occipital"
+        ],
+        "blocos": [
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+          "juncao-occipitocervical-e-condilo-occipital-37f370ae"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "83d5ca55eace1574e0a0dc489a8e140257f0beb70e902852a6aa1fa3ae0bb9af"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0524": {
+    "questaoSha256": "511fe5ab6858eeb346de8a76b22fd5f6eb21825ee424fc6ccc5a0cb8f625c20d",
+    "comentarioAnteriorSha256": "e6496581fb6a3f967525bbfd1e489d7ea959a059a4f70ee3f76179d30834c47c",
+    "comentario": {
+      "conceito": "Um adulto tem ADI de 7 mm sem fratura: o espaço anterior entre atlas e dente está muito acima da referência normal. No modelo apresentado pelo resumo, **ultrapassar 5 mm indica falha do transverso e dos alares**, com indicação de estabilização por artrodese C1–C2.\n\nO transverso passa atrás do dente e mantém a relação com o arco anterior do atlas. Sua falha isolada permite abertura de até cerca de 5 mm; os alares ainda restringem o deslocamento adicional. Sete milímetros ultrapassa essa contenção secundária (Rockwood, 10ª ed., cap. 48, “O intervalo atlanto-odontoide”).\n\n**ADI anterior e espaço posterior não são a mesma medida.** O intervalo posterior informa quanto canal resta para a medula. A ausência de fratura não torna normal um desalinhamento ligamentar importante; os ligamentos podem ser o problema central da instabilidade.\n\nO resumo descreve ressonância para avaliar transverso e alares. Com abertura já acentuada, não é necessário provocar movimentos dinâmicos apenas para demonstrar mais deslocamento; não se deve transformar a investigação em manobra que agrave uma lesão instável.\n\n> **Na prova:** ADI adulto maior que 5 mm sugere falha do transverso e dos alares; 7 mm não representa uma lesão isolada discreta.\n\n**Por que esta questão foi criada.** Relaciona uma medida de instabilidade à contenção ligamentar que falhou e evita confundir artrodese atlantoaxial com occipitocervical.",
+      "correta": "**A: transverso e alares, com artrodese C1–C2.** A abertura de 7 mm excede o limite descrito para a falha isolada do transverso. É o cenário ligamentar que sustenta a indicação na fonte.",
+      "incorretas": {
+        "B": "**Subestima a abertura e a lesão associada.** Falha isolada do transverso é descrita com ADI de até 5 mm, não 7. A opção ainda oferece uma conduta simples e um prazo fixo sem contemplar a instabilidade maior do caso.",
+        "C": "**Poupa a principal contenção que já deveria ter falhado.** O alargamento importante do ADI não é interpretado como alares isolados com transverso íntegro. A progressão descrita começa com o transverso e ultrapassa 5 mm quando também falham os alares.",
+        "D": "**Muda a região e a lesão que está sendo medida.** A ruptura da membrana tectória pode indicar dissociação occipitocervical e artrodese dessa junção, como na discussão do côndilo occipital. O ADI de 7 mm do caso avalia instabilidade atlantoaxial, C1–C2."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Junção occipitocervical e côndilo occipital."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Atlas, ligamento transverso e instabilidade C1–C2",
+          "Junção occipitocervical e côndilo occipital"
+        ],
+        "blocos": [
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+          "atlas-ligamento-transverso-e-instabilidade-c1-c2-7236e480",
+          "juncao-occipitocervical-e-condilo-occipital-dc39d9e1"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "52f8f5b6a9e7d9e318767941707fcb03aa0e405a5d6f66f591979c2ba4085324"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0525": {
+    "questaoSha256": "4f4f7018a1f19a63d26b897c71e15ea14f765c242ac42190b247b6d4444eb674",
+    "comentarioAnteriorSha256": "d7c61678bd905bcbd85b68799c25561ced4b9b2e1cd822af6c756169c93e84d7",
+    "comentario": {
+      "conceito": "O traço do odontoide vai de anteroinferior para posterossuperior. Mesmo sendo redutível, ele oferece uma geometria desfavorável ao parafuso anterior: **a compressão ao longo do implante pode fazer o fragmento escorregar e aumentar o desvio**.\n\nUm parafuso de compressão aproxima melhor as superfícies quando seu eixo cruza o plano da fratura de modo adequado. No traço transverso ou no oblíquo de anterossuperior para posteroinferior, essa relação é favorável. No sentido inverso do caso, o eixo acompanha o traço e favorece deslizamento, razão da contraindicação (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\nNa subclassificação de Grauer, esse desenho é **IIc**, enquanto o IIb tem o sentido favorável. Isso não depende de o paciente ser jovem nem é corrigido apenas por conseguir reduzir a fratura: redução inicial e capacidade de manter compressão estável são questões diferentes.\n\n**Contraindicar um método não significa contraindicar toda cirurgia.** O resumo descreve a artrodese posterior C1–C2 como opção nos casos cirúrgicos, com seleção conforme lesão e condições clínicas.\n\n> **Na prova:** no traço IIc do caso, apertar o parafuso pode produzir deslizamento em vez de estabilizar.\n\n**Por que esta questão foi criada.** Treina a biomecânica da compressão e distingue fratura redutível de fratura adequada a um método específico.",
+      "correta": "**D: a compressão faria o fragmento deslizar ao longo do traço.** O sentido anteroinferior para posterossuperior é desfavorável à compressão anterior, mesmo após redução inicial.",
+      "incorretas": {
+        "A": "**Afirma uma extensão que o caso não descreve.** Pela proposta de Grauer, atingir a faceta superior de C2 muda a classificação para III. Entretanto, a contraindicação do enunciado decorre da inclinação do traço IIc; orientação oblíqua não prova extensão à faceta.",
+        "B": "**Inverte a limitação etária descrita.** A preocupação com osteopenia e soltura torna idade acima de 65 anos uma contraindicação relativa na fonte. Ter 35 anos não é a razão geométrica que impede este método.",
+        "C": "**Transforma uma possibilidade de seleção em garantia de consolidação.** O tipo II tem risco relevante de pseudartrose no tratamento externo. Mesmo quando o colar é escolhido em um caso específico, isso não explica por que o parafuso anterior desliza nesse traço."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-odontoide-c2-4660967c",
+          "fratura-do-odontoide-c2-b60ceadc",
+          "fratura-do-odontoide-c2-dd277a76",
+          "fratura-do-odontoide-c2-95546c7a",
+          "fratura-do-odontoide-c2-e392c5c7",
+          "fratura-do-odontoide-c2-feeecbd6"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "7d2a7c002edb30582ba7d56d29d551e8aacc7c07b602dac0b4436d1fc7953588"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0526": {
+    "questaoSha256": "d241d680b3102934c68d7339bf15b424642fcc6fe8fe3c27cda23b233988c718",
+    "comentarioAnteriorSha256": "f3b842af9862a064ca0e318feee36870ac3192504c9f1fec8266bd2aee859517",
+    "comentario": {
+      "conceito": "A paciente tem 84 anos, várias comorbidades e baixa demanda funcional, mas não tem déficit neurológico. A decisão não pode ser tomada apenas porque a fratura do odontoide é tipo II e está desviada. **No algoritmo dos autores, acima de 80 anos prefere-se imobilização externa, salvo déficit neurológico**, aceitando em casos selecionados uma pseudartrose estável.\n\nO objetivo não é buscar união óssea a qualquer custo. O resumo descreve idosos que não consolidaram completamente, mas alcançaram estabilidade radiográfica, e ressalta os riscos do halo e da cirurgia nessa população. Uma união fibrosa estável pode ser um resultado útil num paciente de baixa demanda, desde que não seja confundida com instabilidade progressiva ou comprometimento neurológico (Rockwood, 10ª ed., cap. 48, “O idoso e o algoritmo dos autores”).\n\n**Imobilização externa também não significa escolher automaticamente halo.** O capítulo associa o halo no idoso a complicações respiratórias e de deglutição e descreve resultados aceitáveis com colar. Os estudos são heterogêneos, e não fornecem uma taxa universal para toda pessoa de 84 anos.\n\nA alternativa B traduz a preferência dos autores para o perfil do caso. Essa preferência não deve ser estendida a um paciente com déficit, perda de alinhamento ou outra condição que mude o balanço entre proteção e risco terapêutico.\n\n> **Na prova:** idoso muito avançado, baixa demanda e sem déficit: o algoritmo favorece tratamento externo, sem exigir consolidação a qualquer custo.\n\n**Por que esta questão foi criada.** Treina a distinção entre união óssea e estabilidade útil, incluindo como fragilidade e demanda mudam a conduta.",
+      "correta": "**B: colar rígido, aceitando possível pseudartrose estável.** A proposta corresponde à preferência dos autores para o idoso acima de 80 anos sem déficit, ponderando estabilidade e riscos do tratamento.",
+      "incorretas": {
+        "A": "**Confunde maior rigidez com melhor resultado global.** O resumo não demonstra grande vantagem de consolidação do halo sobre órteses e relata complicações importantes no idoso. Imobilizar de forma mais agressiva não garante melhor evolução para esta paciente frágil.",
+        "C": "**Escolhe um método sem enfrentar as limitações geriátricas.** A fixação anterior exige geometria e redução adequadas; a idade avançada acrescenta preocupação com osteopenia e soltura. A vantagem de preservar rotação também é relativizada pelos resultados citados na fonte.",
+        "D": "**Torna a operação imediata a única via de sucesso.** O resumo admite estabilidade com colar e possível pseudartrose fibrosa estável. A artrodese pode ser necessária em outros cenários, mas não é a única opção que pode atingir o objetivo clínico neste perfil."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Fratura do odontoide (C2)"
+        ],
+        "blocos": [
+          "fratura-do-odontoide-c2-b04e93d3",
+          "fratura-do-odontoide-c2-370a776e",
+          "fratura-do-odontoide-c2-b73258e7",
+          "fratura-do-odontoide-c2-4660967c",
+          "fratura-do-odontoide-c2-7b5d651c"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "cf4303b7116fdbda9b7a1df74267a555d5d4035392aedea796255a49d2683198"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "coluna-0530": {
+    "questaoSha256": "1ff894800789a50200f059095ceac17d04f09d132b5db81f923a763e326893aa",
+    "comentarioAnteriorSha256": "f1fd8da868d4cdc00d279659bb96b3b6a793eeab476bdfd9839ba618d38d935b",
+    "comentario": {
+      "conceito": "A fratura de C5 é em explosão, mas o complexo discoligamentar está íntegro e o paciente não tem déficit. Ao somar os três domínios do SLIC, o resultado é **2 pontos: explosão 2, complexo íntegro 0 e exame neurológico intacto 0**.\n\nO SLIC combina morfologia, contenção discoligamentar e estado neurológico; uma imagem óssea impressionante não define sozinha o total. Com 3 pontos ou menos, a recomendação costuma ser não cirúrgica; 4 é a zona de decisão por fatores associados, e 5 ou mais favorece cirurgia na classificação original apresentada na tabela (Rockwood, 10ª ed., cap. 48, “SLIC: a classificação que vira conduta”).\n\n**Não cirúrgico não significa colar macio e alta sem seguimento.** Na explosão cervical selecionada para tratamento externo, os autores exigem paciente intacto, pouca cominuição, canal quase livre, cifose menor que 5 graus e complexo posterior íntegro. Descrevem imobilização rígida e controles radiográficos, porque o corpo pode colapsar. O escore orienta a decisão, mas não substitui verificar esses achados.\n\nA pergunta fornece um caso simplificado para calcular o escore e escolher a categoria de conduta. Não autoriza presumir que qualquer fratura em explosão com dois pontos possa ser tratada sem avaliar alinhamento e canal.\n\n> **Na prova:** explosão isolada, ligamentos íntegros e neurologia normal somam 2 no SLIC.\n\n**Por que esta questão foi criada.** Treina a soma do escore sem transformar uma classificação em substituto da avaliação de estabilidade e do seguimento.",
+      "correta": "**B: 2 pontos e tratamento não cirúrgico com órtese rígida.** É a soma dos três domínios apresentados. A seleção clínica para tratamento externo ainda deve confirmar alinhamento, canal e possibilidade de manter a redução.",
+      "incorretas": {
+        "A": "**Pontua a morfologia abaixo do valor da explosão e oferece proteção insuficiente.** Compressão vale 1, mas explosão vale 2 na tabela. O resumo não descreve colar macio por duas semanas como tratamento desse padrão.",
+        "C": "**Usa a faixa intermediária sem somar os domínios do caso.** Quatro pontos de fato exigem ponderar fatores associados, porém o complexo íntegro e a neurologia normal não acrescentam pontos à explosão isolada. O total informado é 2.",
+        "D": "**Acrescenta gravidade não descrita.** Cinco pontos favorecem cirurgia no escore, mas seria necessário outro comprometimento morfológico, ligamentar ou neurológico para alcançar esse total. Não se deve inventar lesão ligamentar ou déficit ausentes do enunciado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-48-coluna-cervical",
+        "titulo": "Fraturas e luxações da coluna cervical",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+        "secoes": [
+          "Coluna subaxial: classificações e estabilidade",
+          "Compressão, explosão e teardrop"
+        ],
+        "blocos": [
+          "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15",
+          "coluna-subaxial-classificacoes-e-estabilidade-63694d69",
+          "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
+          "compressao-explosao-e-teardrop-fdb87144"
+        ],
+        "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+        "trechosSha256": "030924c8a979a679183a73960c68b881794ce114c4bd4479ca020a0f75e6998e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

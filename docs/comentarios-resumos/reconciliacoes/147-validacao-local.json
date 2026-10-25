@@ -1,0 +1,173 @@
+{
+  "dataBrasilia": "2026-10-25T04:24:54.001520-03:00",
+  "base": "c91be6b1552db467d5005bc930d6c54049efd3c2",
+  "lotes": [
+    146,
+    147
+  ],
+  "ids": [
+    "coluna-0516",
+    "coluna-0517",
+    "coluna-0520",
+    "coluna-0521",
+    "coluna-0522",
+    "coluna-0523",
+    "coluna-0524",
+    "coluna-0525",
+    "coluna-0526",
+    "coluna-0530",
+    "coluna-0050",
+    "coluna-0515",
+    "coluna-0518",
+    "coluna-0519",
+    "coluna-0527",
+    "coluna-0529",
+    "coluna-0531",
+    "trauma-0079",
+    "trauma-0220",
+    "trauma-0755"
+  ],
+  "fonte": "Resumo 48 já integralmente lido na passagem anterior, sem mudança desde essa leitura (diff conferido). Relidos corpo e tabelas de medidas, SLIC, vias, coluna rígida, lesão vertebral, atlas/ADI/Spence, Grauer, odontoide no idoso, halo, luxação facetária e redução. Nenhum contexto de questão ou comentário antigo usado como autoridade. Não foi atribuída leitura primária nem página impressa.",
+  "fontesEspeciais": "0529 usa também a legenda independente do bloco figura48-51, que identifica estágio4. O bloco tem imagem:null; a TC disponível na própria questão foi aberta. Não inferir milímetros de uma TC sem escala nem alegar abertura da imagem indisponível do bloco. A legenda foi incluída na fonte com hash pela função fonte.",
+  "imagensInspecionadasSha256": {
+    "coluna/coluna-0050-1.jpeg": "a1d923f99efd74f4df5335626475b2851c57306a48c021055eed41d53f94506b",
+    "coluna/coluna-0515-1.jpeg": "d8dd8206f7d0955326116d1cb375ed3f1b12297f89b06633121b8d6f347191b0",
+    "coluna/coluna-0518-1.jpeg": "cfcba711af85ca5009259c6ef2d7c30487f85fa5d4d78c5bf82629e3b1b6c694",
+    "coluna/coluna-0519-1.jpeg": "5f716f93afc15ebeadcf23bf653602d04c99c01a0e6d0d4c2879c298c75bb6b9",
+    "coluna/coluna-0527-1.jpeg": "66f43ff9d430b80650273543c34df83f3338d00a1a0d7c316f3ba1a158e7fa43",
+    "coluna/coluna-0529-1.jpeg": "11a17435956b86d59b6b13bf6c4500ecd74f92d5addfddf5aa7226d74028e6e9",
+    "coluna/coluna-0531-1.jpeg": "a773608c9701b971653ee88d587991cfc93a9902d110f97d95d81e01a0beac02",
+    "trauma/trauma-0079-1.jpeg": "ebd1a85cbba53064e6efd9e711e5b806315d96c63a70a1bc709729d5702545cc",
+    "trauma/trauma-0220-1.jpeg": "876bc0465a42dbda057389cdcbdd807a74c385235adfdf37ba03a8b17fbb5ace",
+    "trauma/trauma-0755-1.jpeg": "6f02a9ead225725c19caf1a7f4532a29649c814d532e4ef7508bc0aa1bc1bd04"
+  },
+  "imagemBloqueada": "0078 também foi aberta, mas sua identidade não ficou inequívoca: área central/anterior com rótulo da artéria espinhal anterior. Preservados texto/gabarito/comentário, sem baseResumo. Lacuna precisa registrada.",
+  "integridade": "Aplicar.py sob flock /tmp/claude-0/acervo.lock; replay integral desde a base com aplicar.preparar, fontes/hashes/todas as alternativas e vinte avulsos comparados. Dezessete membros de coluna e três de trauma; demais membros e sua formatação externa preservados. Questões, opções, IDs, áreas, gabaritos, revisão médica e arquivos de imagem intactos. conferido:false.",
+  "checks": {
+    "work/check147-fixtures.log": "dfc93076530ce33398bbd825f93936956bf339028c9a042c77a133e5b6c96fc5",
+    "work/check147-acervo.log": "889acd89e03941ca280bd5aaf8048c71e72a9cb3c9453a5576bccd73845dd3b0",
+    "work/check147-test.log": "989c9847ce5b87f1d9fc7c0960d16de56f21fc9d2b97d7486102d29593996a10",
+    "work/check147-build.log": "da41b81457fe36f5e84ff2b72800f54e78021b58c4eeba7161636271abd6d25b",
+    "work/check147-letras.log": "be7b4b9904a969979ddd8f0b0f40b2df01d8704f5949cc8ac02da613066541e4",
+    "work/ui146-total.log": "271c0e9d421eab6c494ded1b8c5f1aa3363476ea98dcdb7fd56d0b639b7897b1"
+  },
+  "validacao": "14 fixtures, validar_acervo, npm test completo, build e diff-check passaram; letras.json regenerado e o arquivo integral do build confere. Vinte casos no celular390/computador1440 passaram com correção, selo, links exatos e carregamento das dez imagens. Cinco capturas representativas abertas: 0050 imagem celular,0518 imagem computador,0529 aula computador,0531 imagem celular e0516 aula celular.",
+  "simulados": "Todos os simulados revisados incluem motivo próprio de criação, sem inventar prova/ano. Enunciados e gabaritos preservados.",
+  "novasPendencias": [
+    "coluna-0511",
+    "coluna-0514",
+    "coluna-0078"
+  ],
+  "reconciliacaoAnterior": {
+    "pr": 519,
+    "head": "d929ebf3b63114040c26349a95f85329310001de",
+    "ci": 40168876683,
+    "merge": "28230f004e6f03e5719207a09be95ce2d0164a00",
+    "pages": 40168988166,
+    "jobPublicar": 121096106425,
+    "evidencia": "Corpo do PR519 confirma guarda/deploy, dez avulsos integrais, capítulo48 e letras.json em produção sem diferenças. Estado/head/merge reconfirmados nesta passagem. Não reaplicar145."
+  },
+  "concorrencia": [
+    {
+      "number": 517,
+      "title": "Prompt para o Codex: Rockwood crianças em simulados e resumos",
+      "headRefOid": "ba0f849dd5b2987732b4a735e917fcc903886a5c",
+      "headRefName": "claude/prompt-codex-rockwood-criancas",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "ba0f849dd5b2987732b4a735e917fcc903886a5c"
+      ]
+    },
+    {
+      "number": 371,
+      "title": "Instagram: câmara escura (feed) e player da prova (stories)",
+      "headRefOid": "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6",
+      "headRefName": "claude/post-18-10-b",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "40e7dcf07e16e513c62844ebf3438c9a90f7750c",
+        "714323bcee21a533ea33cf7048a307a24deffc44",
+        "553b1041eafa4cf9b173ea616cc293537739eb08",
+        "613c0d0d8d95dc3c438d6704e51f1c7ef479d3f6"
+      ]
+    },
+    {
+      "number": 308,
+      "title": "Cartão: aviso de renovação com prazo de 7 dias para desistir com reembolso",
+      "headRefOid": "fe9a664855fe013fbd69215a4f044cd9ddae804a",
+      "headRefName": "claude/reembolso-7-dias",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "980b2d734b62cd5a28098224e8dbf0c11194a185",
+        "fe9a664855fe013fbd69215a4f044cd9ddae804a"
+      ]
+    },
+    {
+      "number": 253,
+      "title": "Instagram: painel de partidas do Adiantar no Cronograma",
+      "headRefOid": "94859424a3fa5fb70347baea0a2a831a26ddd622",
+      "headRefName": "claude/sharp-goodall-pl7kp7",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "3c62e4ad3bd6f4c5f9310f02e114ede3772437bb",
+        "0f7dcf06557f2917665c7f1fe6aa36b54ae393fb",
+        "c9bff08f7663c0a1f08a43bfd4858277abc22d63",
+        "94859424a3fa5fb70347baea0a2a831a26ddd622"
+      ]
+    },
+    {
+      "number": 179,
+      "title": "Marketing: modelos Cofre de duas chaves e Relojoaria anatômica",
+      "headRefOid": "86aeeb45a1284a4bab358ad66df593286e64876a",
+      "headRefName": "codex/instagram-cofre-relojoaria-20261011",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "86aeeb45a1284a4bab358ad66df593286e64876a"
+      ]
+    },
+    {
+      "number": 178,
+      "title": "Instagram: Mirels no modelo oficial Jornal",
+      "headRefOid": "c695d3d697b62de9cb1317922a61af543f4369a5",
+      "headRefName": "codex/instagram-mirels-20261010",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "3c7daf1f481a22a119402544f44007696520ce1e",
+        "c695d3d697b62de9cb1317922a61af543f4369a5"
+      ]
+    },
+    {
+      "number": 174,
+      "title": "Simulado Rockwood cap. 11: 21 questões comentadas de fixação externa",
+      "headRefOid": "9ef7ce656eb878653eb5aeb0c5c5f97873922491",
+      "headRefName": "codex/simulado-fixacao-externa-cap11",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "9ef7ce656eb878653eb5aeb0c5c5f97873922491"
+      ]
+    },
+    {
+      "number": 93,
+      "title": "Aula de enxertos de pele: Cirurgia da Mão, UFG 2017",
+      "headRefOid": "992e1299fdcc0f796aff3bf77e68ae8ca9378848",
+      "headRefName": "codex/aula-enxerto-mao-0853-20261004",
+      "baseRefName": "claude/pdfs-questoes-tp64dr",
+      "commits": [
+        "39eab5599b3088e7137556e9e9f6a68a8f4482b2",
+        "97e77b073134af9277107123ff27e7cb369139b5",
+        "992e1299fdcc0f796aff3bf77e68ae8ca9378848"
+      ]
+    }
+  ],
+  "contagens": {
+    "duplicada": 87,
+    "pendente": 636,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 237,
+    "pendente-inspecao-imagem": 89,
+    "revisada": 1310
+  },
+  "proximoLote": 148,
+  "publicacao": "Aguardar CI do head atual, merge e guarda/deploy; comparar vinte avulsos, dez imagens, capítulo-fonte48 e letras.json em produção. Registrar prova final no PR sem commit artificial posterior."
+}
