@@ -907,3 +907,8 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 14 | Incisura sigmoide plana | reformulada | 14 | Radioulnar distal | 02 | mao-2473 | aplicada |
 | 17 | Síndrome da intersecção | reformulada | 56 | Tendinopatias | 02 | mao-2474 | aplicada |
 | 18 | Lesão de MANNERFELT | reformulada | 55 | Reumatoide | 02 | mao-2475 | aplicada |
+| 22 | Necrose da cabeça do rádio assintomática | reformulada | 19 | Cabeça do rádio | 03 | mao-2476 | aplicada |
+| 26 | Dissociação escafolunar aguda | reformulada | 13 | Carpo | 03 | mao-2477 | aplicada |
+| 27 | Lesões do nervo radial | reformulada | 31 | Transferências | 03 | mao-2478 | aplicada |
+| 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
+| 39 | Local da lesão do colateral ulnar | reformulada | 8 | Ligamentos | 03 | mao-2480 | aplicada |
