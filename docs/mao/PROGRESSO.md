@@ -902,3 +902,8 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 5 | LANZ: ramo motor do mediano | reformulada | 28 | Túnel do carpo | 01 | mao-2468 | aplicada |
 | 6 | Tumor de pele mais comum da mão | reformulada | 58 | Tumores de pele | 01 | mao-2469 | aplicada |
 | 8 | Zona 8 extensora | reformulada | 5 | Extensores | 01 | mao-2470 | aplicada |
+| 9 | Sindactilia e BMP | reformulada | 35 | Embriologia | 02 | mao-2471 | aplicada |
+| 12 | Profundo lesado com superficial íntegro | reformulada (princípio destacado pelo Green) | 6 | Flexores | 02 | mao-2472 | aplicada |
+| 14 | Incisura sigmoide plana | reformulada | 14 | Radioulnar distal | 02 | mao-2473 | aplicada |
+| 17 | Síndrome da intersecção | reformulada | 56 | Tendinopatias | 02 | mao-2474 | aplicada |
+| 18 | Lesão de MANNERFELT | reformulada | 55 | Reumatoide | 02 | mao-2475 | aplicada |
