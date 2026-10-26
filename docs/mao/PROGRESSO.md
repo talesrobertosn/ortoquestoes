@@ -722,7 +722,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 41 | Laceração parcial do extensor | reformulada (Green dá a regra para a zona 2) | 5 | Extensores | 07 | mao-2410 | aplicada |
 | 42 | Retalho inguinal | reformulada | 44 | Cobertura | 07 | mao-2411 | aplicada |
 | 43 | Colo do metacarpo e JAHSS | reformulada | 7 | Metacarpos | 07 | mao-2412 | aplicada |
-| 44 | Último músculo a recuperar no radial | reformulada | 31 | Transferências | - | - | pendente: sem fonte (ordem de reinervação não está no Green traduzido) |
+| 44 | Último músculo reinervado no radial | reformulada | 31 | Transferências | 13 | mao-2438 | aplicada |
 | 45 | Preditor de recontratura no DUPUYTREN | reformulada | 4 | Dupuytren | 08 | mao-2413 | aplicada |
 | 46 | DOYLE tipo I | reformulada | 5 | Extensores | 08 | mao-2414 | aplicada |
 | 47 | YAMAUCHI e TANABU tipo 4 | reformulada | 36 | Congênitas | 08 | mao-2415 | aplicada |
@@ -743,7 +743,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 62 | Fixador externo no metacarpo | reformulada | 7 | Metacarpos | 11 | mao-2428 | aplicada |
 | 63 | Resultados da artrodese escafocapitato | reformulada | 13 | Carpo | - | - | pendente: conferir à mão (opções não estão no cap. 13 traduzido) |
 | 64 | Anatomia do mediano | reformulada (Netter + Green) | 28 | Anatomia | 11 | mao-2429 | aplicada |
-| 65 | TSUGE moderado | reformulada | 51 | VOLKMANN | 12 | mao-2337 | publicada |
+| 65 | Algoritmo do polegar na artrogripose | reformulada | 39 | Artrogripose | 13 | mao-2439 | aplicada |
 | 66 | Epidemiologia dos aneurismas da mão | reformulada | 60 | Vascular | - | - | pendente: conferir à mão |
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
 | 68 | PANEVA-HOLEVICH | reformulada | 6 | Flexores | 11 | mao-2430 | aplicada |
@@ -752,11 +752,11 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 71 | GARCIA-ELIAS estágio 5 | reformulada | 13 | Carpo | 12 | mao-2433 | aplicada |
 | 72 | Idade para separar a 1ª comissura | reformulada | 36 | Sindactilia | 12 | mao-2434 | aplicada |
 | 73 | Grácil tipo II | reformulada | 44 | Cobertura | 12 | mao-2435 | aplicada |
-| 74 | DE QUERVAIN | reformulada | 56 | Tendinopatias | 16 | mao-2357 | publicada |
+| 74 | Tipo 3 do polegar na artrogripose | reformulada (pergunta direta pela tabela) | 39 | Artrogripose | 13 | mao-2440 | aplicada |
 | 75 | Ligamento de TESTUT | reformulada | 13 | Carpo | 12 | mao-2436 | aplicada |
-| 76 | Prognóstico na paralisia obstétrica | reformulada (inclui ERB) | 40 | Plexo obstétrico | 20 | mao-2373 | publicada |
+| 76 | Radial com mau prognóstico: transferir | reformulada | 31 | Transferências | 13 | mao-2441 | aplicada |
 | 77 | Zona segura da cabeça do rádio | reformulada | 19 | Cabeça do rádio | 12 | mao-2437 | aplicada |
-| 78 | Transferências do pé para a mão | reformulada | 47 | Dedo do pé | 17 | mao-2359 | publicada |
+| 78 | Angulação no 2º e 3º metacarpos | reformulada | 7 | Metacarpos | 13 | mao-2442 | aplicada |
 | 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | publicada |
 | 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | publicada |
 | 81 | Resultado ruim na camptodactilia | reformulada (WATERS e BAE) | Waters 6 | Congênitas | 20 | mao-2374 | publicada |
