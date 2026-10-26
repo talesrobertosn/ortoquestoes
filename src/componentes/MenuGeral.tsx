@@ -38,6 +38,7 @@ const PRINCIPAIS: Item[] = [
   { destino: '/revisao', rotulo: 'Revisão', texto: 'O que volta hoje', icone: 'reiniciar' },
   { destino: '/flashcards', rotulo: 'Flashcards', texto: 'Revisão rápida e jogo', icone: 'raio' },
   { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia', icone: 'rota', assinante: true },
+  { destino: '/cronograma-mao', rotulo: 'Cronograma da Mão', texto: 'Ingresso e título (SBCM e SIMÃO)', icone: 'calendario', assinante: true },
 ]
 /** Em destaque (pedido do Tales, 25/10/2026): os dois recursos novos ganham cartões próprios, com arte em pixel. */
 const DESTAQUES: (Item & { arte: 'livros' | 'osso' })[] = [
@@ -48,7 +49,7 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
   {
     titulo: 'Estudar o conteúdo',
     itens: [
-      { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
+      { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'TEOT, TARO e Cirurgia da Mão, prova por prova', icone: 'grafico', assinante: true },
       { destino: '/flashcards/cripta', rotulo: 'Torneio de Flashcards', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
     ],
   },
@@ -88,7 +89,8 @@ const SINONIMOS: Record<string, string> = {
   '/revisao': 'revisar repeticao espacada voltar',
   '/erros': 'errei erradas erros',
   '/favoritas': 'estrela salvas marcadas',
-  '/temas-que-mais-caem': 'incidencia mais cobrado o que cai ranking assuntos',
+  '/temas-que-mais-caem': 'incidencia mais cobrado o que cai ranking assuntos teot taro mao sbcm simao ingresso titulo',
+  '/cronograma-mao': 'cirurgia da mao plano estudo sbcm simao ingresso titulo residencia data da prova',
   '/simulado-nacional': 'prova simulado nota posicao',
   '/dados': 'estatistica acerto desempenho grafico',
   '/assinatura': 'assinar preco pagar pix cartao plano',

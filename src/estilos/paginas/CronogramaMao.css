@@ -1,0 +1,78 @@
+/* Cronograma de Cirurgia da Mão (27/10/2026): no mesmo traço pixel do site, com cartões compactos
+   para o celular (abrir, ver a meta e começar em poucos toques). */
+.cm { --cm-borda: 2px solid var(--px-borda); --cm-sombra: 5px 5px 0 var(--px-sombra); }
+.cm h1, .cm h2 { margin: 0; letter-spacing: -0.02em; text-wrap: balance; }
+.cm .numerico { font-variant-numeric: tabular-nums; }
+.cm-cartao { padding: var(--e-4); border: var(--cm-borda); background: var(--superficie); box-shadow: var(--cm-sombra); }
+.cm-rotulo { margin: 0; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--texto-2); }
+
+.cm-provas { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-4); }
+.cm-provas__rotulo { font-weight: 800; }
+.cm-provas [role="group"] { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.cm-provas button, .cm-opcoes button, .cm-dias button { min-height: 2.6rem; padding: 0 0.95rem; border: var(--cm-borda); background: var(--superficie); color: var(--texto); font: inherit; font-weight: 700; cursor: pointer; box-shadow: 2px 2px 0 var(--px-sombra); }
+.cm-provas button[aria-pressed="true"], .cm-opcoes button[aria-pressed="true"], .cm-dias button[aria-pressed="true"] { background: var(--verdete); border-color: var(--verdete); color: #fff; }
+.cm-provas__outro { margin-left: auto; display: inline-flex; align-items: center; gap: 0.3rem; color: var(--texto-2); font-size: var(--meta); font-weight: 650; }
+
+.cm-form { display: grid; gap: var(--e-4); max-width: 44rem; padding: var(--e-5); border: var(--cm-borda); background: var(--superficie); box-shadow: var(--cm-sombra); }
+.cm-form header { display: grid; gap: var(--e-2); }
+.cm-form h1 { font-family: var(--fonte-marca); font-size: clamp(1.6rem, 4vw, 2.2rem); }
+.cm-campo { display: grid; gap: 0.5rem; margin: 0; padding: 0; border: 0; min-width: 0; }
+.cm-campo > span, .cm-campo legend { display: grid; gap: 0.15rem; padding: 0; }
+.cm-campo small { color: var(--texto-2); font-size: var(--meta); font-weight: 500; }
+.cm-campo input[type="date"] { justify-self: start; min-height: 2.75rem; padding: 0 0.8rem; border: var(--cm-borda); background: var(--superficie); color: var(--texto); font: inherit; font-size: 1rem; }
+.cm-dias { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.cm-dias button { width: 2.75rem; padding: 0; }
+.cm-opcoes { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.cm-cobertura { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.5rem; }
+.cm-cobertura button { display: grid; gap: 0.2rem; text-align: left; padding: 0.8rem 0.9rem; border: var(--cm-borda); background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer; box-shadow: 2px 2px 0 var(--px-sombra); }
+.cm-cobertura button small { color: var(--texto-2); }
+.cm-cobertura button[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); box-shadow: 3px 3px 0 color-mix(in srgb, var(--verdete) 45%, transparent); }
+.cm-form__acoes { display: flex; gap: var(--e-3); flex-wrap: wrap; }
+.cm-nota { margin: 0; }
+
+.cm-heroi { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--e-3); padding: clamp(1.2rem, 3.4vw, 2rem); border-radius: var(--raio-cartao); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media); }
+.cm-heroi h1 { font-family: var(--fonte-marca); font-size: clamp(2rem, 6vw, 3rem); color: var(--sobre-heroi); }
+.cm-heroi p:not(.tr-heroi__selo) { margin: var(--e-2) 0 0; color: var(--sobre-heroi-2); }
+
+.cm-hoje { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-3); border-left: 6px solid var(--verdete); }
+.cm-hoje--simulado { border-left-color: var(--px-ouro); }
+.cm-hoje--reta-final { border-left-color: #c2410c; }
+.cm-hoje--folga { border-left-color: var(--traco-forte, var(--traco)); }
+.cm-hoje__texto { display: grid; gap: 0.3rem; min-width: 0; flex: 1 1 18rem; }
+.cm-hoje h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); }
+.cm-comecar { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; padding: 0 1.4rem; font-size: 1.05rem; }
+
+.cm-indicadores { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: var(--e-3); }
+.cm-indicador { display: grid; gap: 0.35rem; align-content: start; padding: var(--e-3) var(--e-4); border: 1px solid var(--traco); background: var(--superficie); }
+.cm-indicador strong { font-size: 1.7rem; line-height: 1; }
+.cm-indicador small { color: var(--texto-2); font-size: var(--meta); line-height: 1.4; }
+.cm-trilho { height: 6px; background: var(--superficie-2); overflow: hidden; }
+.cm-trilho span { display: block; height: 100%; background: var(--verdete); transition: width 0.4s ease; }
+
+.cm-cabeca { display: grid; gap: 0.2rem; margin-bottom: var(--e-3); }
+.cm-cabeca h2 { font-size: 1.2rem; }
+.cm-prioridades { list-style: none; margin: 0; padding: 0; display: grid; counter-reset: pr; }
+.cm-prioridades li { counter-increment: pr; display: grid; grid-template-columns: 1.8rem minmax(0, 1fr) auto; align-items: center; gap: 0.6rem; padding: 0.6rem 0; border-bottom: 1px solid color-mix(in srgb, var(--traco) 60%, transparent); }
+.cm-prioridades li::before { content: counter(pr) "º"; color: var(--texto-2); font-weight: 800; font-size: var(--meta); }
+.cm-prioridades__nome { display: grid; gap: 0.1rem; min-width: 0; }
+.cm-prioridades__nome small { color: var(--texto-2); font-size: var(--meta); }
+.cm-treinar { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 2.5rem; padding: 0 0.8rem; border: var(--cm-borda); background: var(--superficie); color: var(--texto); font: inherit; font-weight: 700; cursor: pointer; box-shadow: 2px 2px 0 var(--px-sombra); }
+.cm-treinar:hover { background: var(--verdete-veu); color: var(--verdete); }
+.cm-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: var(--e-3); color: var(--verdete); font-weight: 700; }
+.cm-dias-lista { list-style: none; margin: 0; padding: 0; display: grid; }
+.cm-dia { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0.6rem; padding: 0.5rem 0; border-bottom: 1px solid color-mix(in srgb, var(--traco) 60%, transparent); }
+.cm-dia__data { color: var(--texto-2); font-size: var(--meta); font-weight: 700; text-transform: capitalize; }
+.cm-dia--folga { color: var(--texto-2); }
+.cm-dia--simulado span:last-child { font-weight: 700; color: #8a5f12; }
+.cm-rodape { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-3); }
+.cm-atalho { display: flex; align-items: center; gap: var(--e-3); color: var(--texto); text-decoration: none; flex: 1 1 20rem; }
+.cm-atalho span { display: grid; flex: 1; }
+.cm-atalho small { color: var(--texto-2); }
+.cm-apagar { border: 0; background: none; color: var(--texto-2); font: inherit; text-decoration: underline; cursor: pointer; }
+@media (max-width: 40rem) {
+  .cm-provas__outro { margin-left: 0; }
+  .cm-form { padding: var(--e-4); }
+  .cm-dia { grid-template-columns: 6.5rem minmax(0, 1fr); }
+  .cm-comecar { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { .cm-trilho span { transition: none; } }
