@@ -710,13 +710,13 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 29 | Estiloidectomia na artrodese reumatoide | reformulada | 12 | Artrodese do punho | 05 | mao-2400 | aplicada |
 | 30 | Tempo da degeneração walleriana | reformulada (gabarito diverge do Green) | 30 | Nervos | 05 | mao-2401 | aplicada |
 | 31 | Camptodactilia e artrogripose | reformulada (WATERS e BAE) | 39 | Congênitas | 05 | mao-2402 | aplicada |
-| 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | publicada |
-| 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | publicada |
-| 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | publicada |
-| 35 | Efeito quadriga | reformulada | 6 | Flexores | 19 | mao-2370 | publicada |
+| 32 | Artéria do 4º compartimento e interósseo posterior | reformulada | 46 | Enxerto vascularizado | 06 | mao-2403 | aplicada |
+| 33 | Reimplante de vários dedos | reformulada | 42 | Reimplante | 06 | mao-2404 | aplicada |
+| 34 | Distância do ponto na microanastomose | reformulada | - | Microcirurgia | - | - | pendente: sem fonte (não está no Green traduzido) |
+| 35 | Encurtamento radial e ligamentos radioulnares | reformulada | 14 | Radioulnar distal | 06 | mao-2405 | aplicada |
 | 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | publicada |
-| 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | publicada |
-| 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
+| 37 | Epífise proximal da fíbula | reformulada | 46 | Enxerto vascularizado | 06 | mao-2406 | aplicada |
+| 38 | IFP do mínimo no DUPUYTREN | reformulada | 4 | Dupuytren | 06 | mao-2407 | aplicada |
 | 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
 | 40 | Radioulnar distal: estabilizadores secundários | anatomia | cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2297 | publicada |
 | 41 | Lágrima: projeção volar da faceta semilunar | afirmativas | cap. 15, p. 604, 608, 628 e 648 | mao / Fratura do rádio distal | 07 | mao-2310 | publicada |
