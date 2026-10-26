@@ -1,0 +1,207 @@
+{
+  "pediatria-0566": {
+    "questaoSha256": "776ed6c2d981b95ef63c8e86ea2aad753832229735dbcf5e8236193660f6964f",
+    "comentarioAnteriorSha256": "c773173e241ca6a7fef60197695a341200bf9adad8ed68f61c59a9698122becc",
+    "comentario": {
+      "conceito": "Ao pedir que a criança faça um círculo com as pontas do polegar e do indicador, o examinador está procurando um movimento específico, não apenas verificando se ela consegue aproximar os dedos. O **sinal de OK** exige o flexor longo do polegar e a porção do flexor profundo que atua no indicador. O resumo os coloca, junto do pronador quadrado, no território do **nervo interósseo anterior** (Rockwood e Wilkins, 9ª ed., cap. 9, “Nervos: pedra, papel, tesoura e OK”).\n\nPara enxergar o fundamento do teste, separe as ações: a ponta do polegar precisa fletir, e a ponta do indicador também. São os tendões flexores longos que permitem formar esse contato entre as pontas. Já abrir os dedos, estendê-los ou movimentar o cotovelo solicita outros grupos musculares. O aspecto lúdico facilita a colaboração, mas cada brincadeira só tem valor se o examinador souber qual ação está observando.\n\nO capítulo organiza o exame com **pedra, papel, tesoura e OK**. A pedra reúne ações do mediano; o papel solicita extensores do território radial; a tesoura observa os intrínsecos do território ulnar. Para o interósseo posterior, a avaliação inclui extensão dos dedos e do polegar. Por isso os nomes anterior e posterior não são detalhes intercambiáveis: aqui, anterior está ligado aos flexores do teste, enquanto posterior se relaciona à extensão. O gesso cobrindo os dedos pode dificultar essa última avaliação.\n\n**Um gesto não substitui o exame neurovascular.** O resumo recomenda avaliações seriadas e documentadas, incluindo pulsos radial e ulnar e enchimento capilar. A função observada na chegada precisa ser comparada com a função depois do tratamento, para distinguir uma lesão do trauma de uma alteração surgida durante a redução ou imobilização. Muitas lesões associadas são neuropraxias e melhoram, mas isso não dispensa registrar o déficit e acompanhá-lo.\n\nO musculocutâneo pertence a outro nível desse mapa: no braço, passa pelo compartimento anterior e se relaciona com o braquial, cuja metade medial recebe sua inervação. A flexão do cotovelo e a pinça entre as pontas dos dedos não são a mesma tarefa motora (Rockwood, 10ª ed., cap. 37, “Anatomia aplicada” e “Via anterolateral”).",
+      "correta": "**Correta: C, interósseo anterior.** O teste observa a ação conjunta do flexor longo do polegar e do flexor profundo do indicador. O pronador quadrado também integra o território listado pelo capítulo, embora não seja a aproximação das pontas que demonstre diretamente sua ação. O nome do nervo vem dos músculos recrutados, e não apenas do fato de o gesto ocorrer na mão.",
+      "incorretas": {
+        "A": "**O ulnar é avaliado por outra ação dos dedos.** No jogo descrito, a tesoura solicita os intrínsecos, com abertura dos dedos e posicionamento do polegar. Isso ajuda a distinguir controle dos intrínsecos de flexão pelas unidades longas do polegar e do indicador: conseguir abrir os dedos não demonstra, por si, a função motora necessária ao círculo do OK.",
+        "B": "**O musculocutâneo se relaciona ao braço e à flexão do cotovelo.** O resumo do capítulo 37 o situa no compartimento anterior e descreve a inervação da metade medial do braquial. Essa localização explica sua importância no exame e nas abordagens do úmero distal, mas não o coloca no território dos flexores longos que formam a pinça solicitada.",
+        "D": "**O interósseo posterior é procurado pela extensão.** O capítulo lista extensores dos dedos e do polegar, extensor ulnar do carpo e abdutor longo do polegar nesse território. Pedir extensão completa das articulações dos dedos avalia uma função diferente de fletir as pontas para fazer o OK; trocar anterior por posterior inverte justamente o grupo muscular investigado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: O exame: rotação, nervos e lesões associadas; Anatomia aplicada.",
+        "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Vias de acesso e os nervos em risco."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "O exame: rotação, nervos e lesões associadas",
+          "Anatomia aplicada"
+        ],
+        "blocos": [
+          "o-exame-rotacao-nervos-e-lesoes-associadas-910b4798",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-fdb47191",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-7a4779b5",
+          "o-exame-rotacao-nervos-e-lesoes-associadas-2d1fb028",
+          "anatomia-aplicada-32de73a0"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "afd192e2ffc3998ec77cac6bbd63ae61007eead8eda39722f4ba8e854d3242ba"
+      },
+      {
+        "resumo": "rockwood10-37-diafise-umero",
+        "titulo": "Fratura da diáfise do úmero",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+        "secoes": [
+          "Vias de acesso e os nervos em risco"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-os-nervos-em-risco-c8e58cf1",
+          "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+          "vias-de-acesso-e-os-nervos-em-risco-e5eff37e"
+        ],
+        "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+        "trechosSha256": "9784b4274b893b34592d7088884aa94129adaaa2daceb5e9ee98855f5f1c0685"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0612": {
+    "questaoSha256": "aaeea5fab7e6c7f3d7928a9558ae6da9ce0d2925106971adbf7f5569c1436036",
+    "comentarioAnteriorSha256": "d0f0bcba05ed00a9f243384e723a133a15affeef9c3bb39b11a03116543a7b04",
+    "comentario": {
+      "conceito": "A hiperpronação é uma força de torção, e os traços do rádio e da ulna ajudam a reconhecer esse componente. **Fraturas em níveis diferentes** são um sinal de rotação importante; quando os traços estão no mesmo nível, o capítulo descreve pouca rotação. Essa é a relação que sustenta a alternativa C da banca, mas há uma ressalva importante para a alternativa D.\n\nO antebraço funciona como uma unidade: o rádio gira em torno da ulna, e os dois ossos estão ligados pelas articulações radioulnares e pela membrana interóssea. No osso imaturo, a força pode produzir deformidade plástica ou galho verde, em vez de uma fratura completa. A deformidade angular de um galho verde pode ser a expressão visível de uma rotação; por isso corrigir só o ângulo, sem considerar a torção, pode deixar parte do problema (Rockwood e Wilkins, 9ª ed., cap. 9, “Galho verde: a angulação é uma rotação”).\n\nA regra do capítulo liga **ápice dorsal a hiperpronação**, corrigida por supinação; **ápice volar a hipersupinação**, corrigida por pronação. O recurso de rodar a palma para o ápice ajuda a lembrar a manobra. É preciso distinguir o ápice da direção para a qual o fragmento distal se deslocou: as expressões não nomeiam necessariamente o mesmo lado. Para traços no mesmo nível e com pouca torção, o molde de três pontos ganha importância.\n\n**Nem toda hiperpronação produz o mesmo padrão.** Ao discutir fratura de um osso só, o corpo do resumo associa forças importantes de hiperpronação a fratura isolada acompanhada de luxação radioulnar distal ou proximal. Assim, a alternativa D também tem apoio no texto consultado. Não é correto rejeitá-la dizendo que seria uma pronação dolorosa por tração: ela descreve uma fratura com luxação, uma lesão diferente.\n\nA consequência prática é examinar as duas extremidades do antebraço. Uma fratura isolada do rádio exige olhar a radioulnar distal; a fratura isolada da ulna pede conferir o alinhamento da cabeça radial. O gabarito C fica preservado, com a distinção entre o padrão rotacional dos dois ossos e as fraturas-luxações que a mesma família de forças também pode produzir.",
+      "correta": "**Correta: C, conforme o gabarito oficial.** O capítulo identifica traços do rádio e da ulna em níveis diferentes como sinal de componente rotacional importante. A hiperpronação pertence a esse mecanismo. Essa associação sustenta a escolha da banca, mas não significa que o mecanismo exclua fratura de um osso com luxação radioulnar.",
+      "incorretas": {
+        "A": "**Uma fratura isolada não caracteriza, sozinha, o padrão rotacional pedido.** O capítulo relaciona um golpe direto à fratura de um osso, tipicamente a ulna, e manda investigar as articulações nas lesões isoladas. A alternativa oferece apenas uma fratura transversa do rádio, sem descrever o componente articular que o texto liga às forças importantes de hiperpronação.",
+        "B": "**Traços no mesmo nível sugerem pouca torção.** Nesse padrão, a correção angular com manipulação e molde de três pontos tem destaque. Não é a relação entre os traços que o capítulo usa para reconhecer o mecanismo rotacional da pergunta; confundir nível com gravidade faria perder essa informação mecânica.",
+        "D": "**É uma fratura-luxação plausível, não uma simples pronação dolorosa.** O corpo do resumo associa hiperpronação importante à fratura de um osso com luxação radioulnar proximal ou distal. Portanto, não há base para tratar esta opção como impossível. A banca escolheu o padrão dos dois ossos em níveis diferentes, mas essa exclusão não é sustentada de forma absoluta pela fonte."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da diáfise do rádio e da ulna na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 9 · Diaphyseal Radius and Ulna Fractures. Seções: Galho verde: a angulação é uma rotação; Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida; Anatomia aplicada."
+      ],
+      "conferido": false,
+      "alerta": "C oficial preservada: traços em níveis diferentes indicam componente rotacional. Entretanto o corpo do resumo do capítulo 9 também associa hiperpronação importante à fratura isolada de um osso com luxação radioulnar proximal ou distal, dando apoio à alternativa D. Não confundir a fratura-luxação descrita em D com pronação dolorosa nem ensinar que ela seja incompatível com o mecanismo."
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-09-diafise-antebraco-crianca",
+        "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+        "secoes": [
+          "Galho verde: a angulação é uma rotação",
+          "Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida",
+          "Anatomia aplicada"
+        ],
+        "blocos": [
+          "galho-verde-a-angulacao-e-uma-rotacao-66f45baa",
+          "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+          "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-53627ef0",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-a20d74a9",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-c0d1d07e",
+          "fratura-de-um-osso-so-cassetete-blount-e-a-monte-eb4381de",
+          "anatomia-aplicada-874d813f"
+        ],
+        "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+        "trechosSha256": "0e9aee064e046c81c214040dd94bb66494892b148c8e7d3d0274177ebfb2cd75"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0574": {
+    "questaoSha256": "f75b8840b36f479409979a0a646e50f34c79d1f96f54a22f23c4efa8bf7d9f4b",
+    "comentarioAnteriorSha256": "88308ead5494300880eb1af74c5c6e07737686f5c1723f190d98de19e90b171c",
+    "comentario": {
+      "conceito": "Na baioneta do rádio distal, os fragmentos perderam o contato entre as pontas e cavalgam, com encurtamento. Para descobrir o tecido ameaçado, é preciso acompanhar **a direção do fragmento distal e a ponta do fragmento proximal**, que ocupam lados opostos do foco. O nome da deformidade, sem essa imagem espacial, pode induzir a uma justificativa invertida.\n\nO resumo chama de **baioneta reversa a baioneta volar**, com ápice dorsal. Nesse padrão, o periósteo volar permanece íntegro e o dorsal se rompe. A ponta distal do fragmento proximal pode atravessar os **tendões extensores** como uma casa de botão, deixando-os afastados para os lados. Essa descrição está no corpo e na legenda independente da figura 8-2 do resumo (Rockwood e Wilkins, resumo do cap. 8, “O periósteo na baioneta e o que se interpõe”).\n\nCompare com a **baioneta dorsal**, o padrão mais comum: o fragmento distal está dorsal, o ápice é volar, o periósteo dorsal fica íntegro e o volar se rompe. Se essa fratura não reduz, o tecido interposto costuma ser o periósteo volar ou o pronador quadrado; os flexores e as estruturas neurovasculares são interposições raras. Transferir esse risco anterior para a baioneta reversa troca os dois padrões.\n\nA manga de periósteo íntegra pode ajudar a redução como banda de tensão, enquanto um tecido preso no foco a impede. Por isso a fratura que não reduz não deve ser entendida apenas como falta de força na manobra. Tentativas repetidas também aumentam o edema; quando o alinhamento é inaceitável e há interposição, o resumo discute redução aberta cuidadosa, preservando a fise.\n\n**Há divergência com a resposta oficial.** A banca marcou flexores, alternativa B. Para a baioneta reversa definida no resumo, a estrutura frequentemente atravessada é o grupo extensor, alternativa C. O comentário mantém a letra oficial e explica a diferença, em vez de mudar a posição anatômica dos tendões para justificá-la. A edição do capítulo8 é catalogada como 9ª, mas o próprio resumo informa que essa identificação é provável.",
+      "correta": "**B, tendões flexores, é a resposta oficial preservada.** O resumo consultado não a sustenta para a baioneta reversa volar: descreve os extensores atravessados pela ponta proximal. Flexores aparecem como interposição rara no padrão com desvio distal dorsal. A distinção entre os padrões precisa acompanhar a leitura do gabarito.",
+      "incorretas": {
+        "A": "**O mediano pode se lesar, mas por mecanismos que não equivalem ao dado perguntado.** O resumo descreve contusão, pressão ou tração pelos fragmentos e compressão aguda associada ao edema, sobretudo no descolamento fisário. Isso exige exame antes e depois da redução, porém não identifica o nervo como a estrutura frequentemente atravessada na baioneta reversa da descrição anatômica.",
+        "C": "**É a alternativa sustentada pela descrição da baioneta reversa no resumo.** Com o fragmento distal para volar, o periósteo dorsal rompe e a ponta do proximal pode atravessar os tendões extensores. A legenda 8-2 os mostra descritos como afastados para os dois lados do fragmento. Assim, esta opção não deve ser ensinada como anatomicamente errada apenas porque a banca marcou B.",
+        "D": "**O ramo sensitivo radial tem um contexto de risco diferente no capítulo.** Ele deve ser protegido, junto dos extensores, na pequena incisão do estiloide radial para os fios percutâneos. Esse risco iatrogênico da entrada do fio não demonstra que seja a estrutura mais frequentemente atravessada pela ponta proximal no padrão de baioneta reversa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 8 · Fractures of the Distal Radius and Ulna. Seções: Toro, galho verde, completa e baioneta: o periósteo decide; Exame, nervos e imagem; Tratamento cirúrgico: quando e como. A edição está catalogada como 9ª; o corpo do resumo informa que a identificação é provável, sem confirmação impressa nas páginas consultadas pelos autores do resumo."
+      ],
+      "conferido": false,
+      "alerta": "B oficial (tendões flexores) preservada. No corpo e na legenda 8-2 do resumo consultado, baioneta reversa significa desvio distal volar, periósteo volar íntegro e dorsal rompido; a ponta proximal atravessa os tendões extensores, apoiando C. Não trocar volar e dorsal para defender a resposta da banca. A edição do resumo do capítulo 8 é identificada como provavelmente a 9ª edição pelo próprio texto."
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Toro, galho verde, completa e baioneta: o periósteo decide",
+          "Exame, nervos e imagem",
+          "Tratamento cirúrgico: quando e como"
+        ],
+        "blocos": [
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-65672b02",
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
+          "toro-galho-verde-completa-e-baioneta-o-periosteo-d1d845dc",
+          "exame-nervos-e-imagem-168b8922",
+          "tratamento-cirurgico-quando-e-como-f282f618"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "ea4783f919e488822ea39f91224883d175a12ad5f12cc67e7a6732739ad7a34b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0528": {
+    "questaoSha256": "23e7d5f7b957a492f33a320edf236220108545f42443432c2140b254be0ea89a",
+    "comentarioAnteriorSha256": "5f1a8d317b45b2d3c7247aa6b439bf0cd1945c8e42b45c7cbbdc46fa14059281",
+    "comentario": {
+      "conceito": "A fratura do rádio distal não encerra a avaliação do punho: é preciso conferir a **articulação radioulnar distal**, onde a cabeça da ulna se relaciona com a incisura sigmoide do rádio. Uma fratura do rádio acompanhada de lesão dessa articulação compõe a Galeazzi. Na criança, o equivalente pode ocorrer com fratura da **fise distal da ulna**, em vez de uma luxação ligamentar verdadeira (Rockwood e Wilkins, resumo do cap. 8, “O Galeazzi da criança”).\n\nA alternativa B aponta o **estiloide ulnar**. O complexo da fibrocartilagem triangular é um estabilizador importante da radioulnar distal e se insere na base desse estiloide. Sua avulsão pode, portanto, levantar a suspeita de comprometimento do conjunto estabilizador. O resumo do Rockwood para adultos, capítulo 42 lista especificamente a **fratura da base do estiloide ulnar** entre os sinais radiográficos de lesão da radioulnar distal; o detalhe da base torna o sinal mais preciso que a formulação genérica do enunciado.\n\n**Suspeitar não é diagnosticar apenas pelo estiloide.** O resumo pediátrico do capítulo 8 mostra que fraturas do estiloide acompanham muitas fraturas distais e não usa esse achado isolado para definir Galeazzi. É necessário conferir a congruência no perfil verdadeiro e a estabilidade da articulação. Uma fratura das duas metáfises também não prova, nem exclui, uma lesão radioulnar associada: o traço ósseo e a articulação precisam ser avaliados separadamente. No resumo do capítulo 42 para adultos, inclusive, a luxação distal é descrita raramente em fraturas dos dois ossos ou da ulna isolada.\n\nNa criança, a redução fechada e o gesso são a primeira linha em muitos casos; a rotação de imobilização acompanha a estabilidade e o sentido da luxação. O resumo distingue tipo de supinação, com ulna volar, e tipo de pronação, com ulna dorsal. Assim, reconhecer o nome Galeazzi não autoriza prescrever supinação para todos nem transferir automaticamente a indicação de placa do adulto. A fise ulnar do equivalente também merece acompanhamento pelo risco de parada de crescimento.\n\nA letra B é mantida como **combinação que levanta suspeita**, com duas qualificações: a base do estiloide é o sinal mais específico descrito na fonte adulta, e, na criança, o equivalente mais característico envolve a fise ulnar. A edição do resumo pediátrico do capítulo 8 é registrada como 9ª no catálogo, com identificação provável expressa no próprio texto.",
+      "correta": "**Correta: B, rádio e estiloide da ulna.** A associação alerta para possível lesão da inserção ulnar da fibrocartilagem triangular e da radioulnar distal. O sinal descrito mais precisamente no resumo do capítulo 42 para adultos é a fratura da base do estiloide. Na criança, isso motiva examinar a articulação; não substitui demonstrar sua lesão nem deve ser confundido com o equivalente fisário ulnar.",
+      "incorretas": {
+        "A": "**Troca o par ósseo que sustenta o sinal da questão.** A lesão da inserção ulnar da fibrocartilagem é procurada no estiloide da ulna, enquanto a alternativa oferece estiloide radial associado à metáfise ulnar. Isso não define a combinação clássica de fratura do rádio com lesão radioulnar distal. Também não autoriza chamar a lesão automaticamente de Monteggia: não foi descrita luxação da cabeça radial.",
+        "C": "**Duas metáfises fraturadas não equivalem a uma lesão da fise ulnar.** O equivalente pediátrico descrito pelo capítulo envolve justamente a placa de crescimento distal da ulna. A opção oferece uma fratura metafisária de cada osso; pode haver necessidade de investigar a articulação, mas a combinação não é o sinal do estiloide escolhido pela banca.",
+        "D": "**Repete, em ordem inversa, as duas metáfises da alternativa C.** Não há diferença anatômica a inventar entre essas duas formulações. Uma fratura metafisária ulnar junto da radial demonstra lesão dos dois ossos, sem informar, por si, se a radioulnar está reduzida e estável. Essa informação vem da avaliação articular, com destaque ao perfil verdadeiro no resumo pediátrico."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 8 · Fractures of the Distal Radius and Ulna. Seções: Anatomia que explica as regras; O Galeazzi da criança; Ulna distal, estiloide e fibrocartilagem triangular. A edição está catalogada como 9ª; o corpo do resumo informa que a identificação é provável, sem confirmação impressa nas páginas consultadas pelos autores do resumo.",
+        "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: Galeazzi: o rádio quebrado e a radioulnar distal."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada como sinal de suspeita. O resumo do capítulo 42 para adultos cita especificamente a BASE do estiloide ulnar; o enunciado não especifica a base. O resumo pediátrico do capítulo 8 define Galeazzi por lesão da radioulnar distal e seu equivalente por fratura fisária ulnar, não por fratura isolada do estiloide. Conferir congruência/estabilidade, sem tornar todo estiloide fraturado uma Galeazzi. C e D descrevem o mesmo par metafisário em ordem inversa."
+    },
+    "fontes": [
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "Anatomia que explica as regras",
+          "O Galeazzi da criança",
+          "Ulna distal, estiloide e fibrocartilagem triangular"
+        ],
+        "blocos": [
+          "anatomia-que-explica-as-regras-97004d60",
+          "o-galeazzi-da-crianca-fedb9977",
+          "o-galeazzi-da-crianca-9385ee8d",
+          "o-galeazzi-da-crianca-e451cffa",
+          "ulna-distal-estiloide-e-fibrocartilagem-triangul-605affb0"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "f6388ce5c8a310af284875d95c00cb207046d491fe1a40232e1b3bc12e123d84"
+      },
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Galeazzi: o rádio quebrado e a radioulnar distal"
+        ],
+        "blocos": [
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+          "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-1f1cb1bf"
+        ],
+        "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+        "trechosSha256": "372c8e1ce07d4a58f118e4a3085c5b1438f7756d7d7746a80202fdeb6ceb8c0a"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
