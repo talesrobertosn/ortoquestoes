@@ -62,6 +62,15 @@ recolhidos (constância, desempenho e prontidão, prioridades, semana a semana, 
 `src/dados/painelMao.ts` traduz o `PlanoMao` para `PlanoSalvo` e `CalculoPlano`; cada grande área da mão vira uma
 área com cor própria (`slug` em `GRANDES_AREAS_MAO`, cores em `src/dados/coresAreas.ts`). O motor continua o da mão.
 
+Funções iguais às de ortopedia (26/10/2026, Tales: "o sistema de calendário e todas as funcionalidades"):
+- adiantar: o que passa da meta de hoje fica em `adiantados` na configuração (sincroniza) e sai do próximo dia de estudo;
+- semana difícil: `semanasDificeis` (segundas-feiras), só o dia mínimo (`DIA_MINIMO`) e o resto espalhado;
+- dia em andamento: a meta do dia não muda e o botão abre só o que falta; o mini-simulado é sorteado uma vez por dia;
+- frases que caem da mão (`#/resumos/frases?tema=mao`), tour de 3 partes e resumo da semana (domingo e segunda);
+- resumos: a caixa e o convite "Antes das questões, leia o resumo" mostram só resumos com `especialidade: mao`.
+  Resumo novo da mão (capítulo do Green ou do Rockwood) entra sozinho, pelos `subtemas` do índice da Biblioteca:
+  basta gerar o resumo com `especialidade: mao`, como os de TEOT/TARO. "Ver a biblioteca" abre `#/resumos?area=mao`.
+
 ## Testes de navegador
 
 `node fixtures/e2e_mao.mjs` (celular e computador; `FOTOS=pasta` guarda as telas) e `node fixtures/e2e_atlas.mjs`.

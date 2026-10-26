@@ -2,13 +2,15 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { calcularPlanoMao, configInicial, itemConfigMao, lerConfig, MINUTOS_POR_QUESTAO_MAO, type ConfigMao, type ProvaMao, type TemaDoPlano } from '../dados/cronogramaMao'
-import { idsDoDiaMao, painelMao } from '../dados/painelMao'
+import { calcularPlanoMao, comAdiantado, comSemanaDificil, configInicial, itemConfigMao, lerConfig, MINUTOS_POR_QUESTAO_MAO, type ConfigMao, type ProvaMao, type TemaDoPlano } from '../dados/cronogramaMao'
+import { idsDoDiaMao, idsParaAdiantar, painelMao, resumoSemanaMao } from '../dados/painelMao'
 import { calcularConstancia, desempenhoPorArea, elogio, formatarTempo, prontidaoPorArea } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
 import { diaCurto } from '../dados/frasesAdiantar'
 import { usarConta } from '../conta/ContextoConta'
-import { CartaoHoje, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, Prontidao, Recolhido, type ItemChecklist } from './CronogramaPainel'
+import { CartaoHoje, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, PainelAdiantar, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
+import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
 import { CartaoConstancia, CartaoDesempenho } from './CronogramaHub'
 import { CalendarioCronograma } from './CronogramaCalendario'
 import { CaixaResumos } from '../biblioteca/CaixaResumos'
@@ -72,7 +74,7 @@ export function CronogramaMao({ consulta }: { consulta?: URLSearchParams }) {
       {!indice ? <Carregando linhas={5} rotulo="Montando o plano" />
         : !config || editando
           ? <Formulario prova={prova} inicial={config ?? configInicial(prova)} novo={!config} aoSalvar={salvar} aoCancelar={config ? () => definirEditando(false) : undefined} logado={logado} />
-          : <Painel prova={prova} config={config} premium={premium} indice={indice} respondidas={respondidas} aoEstudar={estudar} aoEditar={() => definirEditando(true)} aoApagar={() => { if (window.confirm('Apagar este plano? Suas respostas continuam salvas.')) salvar(null) }} />}
+          : <Painel prova={prova} config={config} premium={premium} indice={indice} respondidas={respondidas} aoEstudar={estudar} aoConfig={(c) => definirMapa((antes) => ({ ...antes, [itemConfigMao(prova)]: { ...c, em: Date.now() } }))} aoEditar={() => definirEditando(true)} aoApagar={() => { if (window.confirm('Apagar este plano? Suas respostas continuam salvas.')) salvar(null) }} />}
     </div>
   )
 }
@@ -119,7 +121,7 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
   )
 }
 
-interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; indice: NonNullable<ReturnType<typeof usarIndice>['indice']>; respondidas: Record<string, RegistroQuestao>; aoEstudar: (ids: string[]) => void; aoEditar: () => void; aoApagar: () => void }
+interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; indice: NonNullable<ReturnType<typeof usarIndice>['indice']>; respondidas: Record<string, RegistroQuestao>; aoEstudar: (ids: string[]) => void; aoConfig: (c: ConfigMao) => void; aoEditar: () => void; aoApagar: () => void }
 
 /**
  * O plano da mão na mesma arquitetura do cronograma de ortopedia (pedido do Tales, 26/10/2026): o topo
@@ -128,7 +130,7 @@ interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; in
  * prontidão por grande área, prioridades, semana a semana, levar para o calendário do celular). As peças são
  * as mesmas da página de ortopedia; o motor é o da mão (src/dados/cronogramaMao.ts, traduzido em painelMao.ts).
  */
-function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoEditar, aoApagar }: PropsPainel) {
+function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConfig, aoEditar, aoApagar }: PropsPainel) {
   const mao = useMemo(() => calcularPlanoMao(indice, respondidas, config), [indice, respondidas, config])
   const { plano, calculo } = useMemo(() => painelMao(mao), [mao])
   // a constância conta só as questões da mão (as de ortopedia têm o próprio cronograma)
@@ -142,6 +144,14 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoEdit
   const minutos = MINUTOS_POR_QUESTAO_MAO
   const { sessao: sessaoConta } = usarConta()
   const nome = String(sessaoConta?.user.user_metadata?.nome ?? '').trim().split(/\s+/)[0] ?? ''
+  const [resumaoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
+  const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
+  const semana = useMemo(() => resumoSemanaMao(mao, respondidasMao, calculo), [mao, respondidasMao, calculo])
+  // O que passou da meta de hoje fica guardado na conta: amanhã (em qualquer aparelho) o próximo dia vem mais leve.
+  const extraHoje = premium && !calculo.naRetaFinal ? calculo.extraHoje : 0
+  useEffect(() => {
+    if ((config.adiantados?.[mao.hoje.data] ?? 0) !== extraHoje) aoConfig(comAdiantado(config, mao.hoje.data, extraHoje))
+  }, [extraHoje]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (mao.encerrado) return (
     <section className="cp-bloco cm-cartao">
@@ -161,6 +171,8 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoEdit
   // ── a lista do dia, como no cronograma de ortopedia ──
   const lista: ItemChecklist[] = []
   if (!calculo.naRetaFinal) {
+    // As frases "Na prova" da mão, como o "Frases que caem do tema" do cronograma de ortopedia.
+    if (!folgaHoje) lista.push({ id: 'resumao', titulo: 'Frases que caem da mão', texto: 'As frases "Na prova" dos comentários de Cirurgia da Mão, para chegar às questões sabendo o que procurar.', minutos: 4, estado: lidoHoje(resumaoHoje, 'mao') ? 'feito' : 'afazer', acao: premium ? { rotulo: 'Ler', href: href('/resumos/frases?tema=mao') } : undefined })
     if (resumoHoje) {
       const l = leituras[resumoHoje.id]
       lista.push({ id: 'resumo-biblioteca', titulo: 'Resumo do capítulo', texto: <>{resumoHoje.titulo}: o capítulo na ordem em que a prova cobra.{l?.progresso && !l.concluidoEm ? ` ${l.progresso}% lido.` : ''}</>, minutos: Math.max(1, Math.round(resumoHoje.minutos * (1 - (l?.progresso ?? 0) / 100))), estado: l?.concluidoEm || (l?.progresso ?? 0) >= 95 ? 'feito' : 'afazer', acao: { rotulo: l?.progresso ? 'Continuar' : 'Ler', href: href(`/resumos/${resumoHoje.id}`) }, opcional: true, icone: 'livro' })
@@ -200,27 +212,34 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoEdit
   }
   const proximoDia = calculo.amanha ? chaveCivil(calculo.amanha.data) : null
   const acaoTopo = botao ?? (premium && proximoDia ? { rotulo: 'Adiantar o próximo dia', detalhe: `${diaCurto(calculo.amanha!.data)} · ${calculo.amanha!.total} questões`, aoClicar: () => aoEstudar(idsDoDiaMao(mao, proximoDia)), ouro: true } : null)
+  const podeAdiantar = premium && !calculo.naRetaFinal && calculo.restante > 0
+  const painelAdiantar = podeAdiantar ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} aoAdiantar={(n) => aoEstudar([...mao.idsHoje, ...idsParaAdiantar(mao, n)])} aoCancelar={() => undefined} /> : null
+  const resumoAviso = resumoHoje && !leituras[resumoHoje.id]?.concluidoEm
+    ? <a className="cp-hoje__resumo" href={href(`/resumos/${resumoHoje.id}`)}><Icone nome="livro" tamanho={16} /><span><strong>Antes das questões, leia o resumo</strong><small>{resumoHoje.titulo} · ~{resumoHoje.minutos} min · o que já caiu, ano a ano</small></span><Icone nome="direita" tamanho={15} /></a>
+    : undefined
+  const mostrarTour = premium && !tourVisto && !avisoVistoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour')
   const prioridades = mao.temas.slice(0, 8)
   const prontidao = prontidaoPorArea(calculo)
   const desempenho = desempenhoPorArea(calculo)
   const media = mao.acerto
 
   return <>
-    <OndeVoceEsta plano={plano} calculo={calculo} aoAjustar={aoEditar} acao={acaoTopo} nome={nome} recados={recados} />
+    {mostrarTour && <TourCronograma aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} />}
+    <OndeVoceEsta plano={plano} calculo={calculo} aoAjustar={aoEditar} acao={acaoTopo} nome={nome} recados={recados} rodape={premium && semana ? <ResumoSemana {...semana} /> : undefined} />
 
     <CalendarioCronograma embutido nome={nome} plano={plano} calculo={calculo} indice={indice} respondidas={respondidasMao} minutos={minutos}
       acoes={{ aoComecar: premium ? comecar : undefined, aoPuxar: premium ? (dia) => aoEstudar(idsDoDiaMao(mao, dia)) : undefined, proximo: calculo.amanha }} />
 
     <div className="cp-colunas">
       <div className="cp-col cp-col--principal">
-        <div className="cp-ordem-1"><CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corDaArea(principal?.slug ?? 'mao')}
-          aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : undefined} /></div>
+        <div className="cp-ordem-1"><CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corDaArea(principal?.slug ?? 'mao')} adiantar={painelAdiantar}
+          aviso={folgaHoje ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar os dias?</span><button type="button" className="botao" onClick={aoEditar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoAviso} /></div>
       </div>
       <div className="cp-col cp-col--lado">
-        {!calculo.naRetaFinal && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasHoje} /></div>}
+        {!calculo.naRetaFinal && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasHoje} especialidade="mao" /></div>}
         {!calculo.naRetaFinal && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
         <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={constancia} minutosQuestao={minutos} /></div>
-        {!calculo.naRetaFinal && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={constancia} compacta={false} /></div>}
+        {!calculo.naRetaFinal && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={constancia} compacta={false} aoSemanaDificil={premium ? (ativar) => aoConfig(comSemanaDificil(config, ativar)) : undefined} /></div>}
       </div>
     </div>
 
@@ -242,6 +261,8 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoEdit
           <li><b>Passadas:</b> primeiro os assuntos de prioridade máxima da {prova === 'titulo' ? 'prova de título' : 'prova de ingresso'}, depois os de prioridade alta e, por fim, o resto.</li>
           <li><b>{prova === 'titulo' ? 'Foco na SBCM e no SIMÃO:' : 'Todo tipo de questão:'}</b> {prova === 'titulo' ? 'as questões no padrão da prova vêm primeiro; as de ingresso dos mesmos assuntos entram só como reforço.' : 'as provas de ingresso e as questões no padrão SBCM e SIMÃO, misturadas em cada assunto.'}</li>
           <li><b>Se ajusta sozinho:</b> errou, o assunto sobe na fila; atrasou, a meta sobe no máximo 25% e o resto sai do fim da fila; mudou a data, o plano se refaz sem apagar o que você já fez.</li>
+          <li><b>Adiantar e semana difícil:</b> o que você fizer além da meta sai do próximo dia de estudo; numa semana corrida, a semana difícil deixa só 10 questões por dia e espalha o resto.</li>
+          <li><b>Resumos:</b> os resumos da Biblioteca de Cirurgia da Mão aparecem ao lado do dia; quando um ensina o assunto de hoje, ele vem primeiro, com o convite para ler antes das questões.</li>
           <li><b>Revisão e simulado:</b> até um quarto do dia é revisão dos seus erros; a cada 14 dias, um mini-simulado; nas duas últimas semanas, a reta final.</li>
         </ul>
       </Recolhido>

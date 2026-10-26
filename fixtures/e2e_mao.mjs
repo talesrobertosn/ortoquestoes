@@ -66,7 +66,7 @@ const BASE = site.resolvedUrls.local[0]
 const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium', args: ['--no-sandbox'] })
 const erros = []
 const FOTOS = process.env.FOTOS // pasta para guardar as telas (revisão visual)
-const foto = (p, n) => FOTOS ? p.screenshot({ path: `${FOTOS}/${n}.png` }) : null
+const foto = (p, n) => FOTOS ? p.screenshot({ path: `${FOTOS}/${n}.png`, fullPage: true }) : null
 const PREF = JSON.stringify({ recentes: [], favoritos: [], dicasVistas: true })
 async function aparelho(nome, viewport, movel) {
   const contexto = await navegador.newContext({ viewport, deviceScaleFactor: 1, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', hasTouch: movel, isMobile: movel })

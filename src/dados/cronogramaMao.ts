@@ -1,7 +1,7 @@
 import type { Indice } from './tipos'
 import { desempenhoEm, modalidadePorId, prioridade, rankingModalidade, type Ranking, type TemaRanking } from './modalidades'
 import { diaDaSemana, diasEntre, hojeBR, inicioDaChave, somarDias } from '../util/dia'
-import { TAMANHO_MINI } from './planoEstudo'
+import { DIA_MINIMO, TAMANHO_MINI } from './planoEstudo'
 
 /**
  * Cronograma de Cirurgia da Mão (27/10/2026): dois planos independentes, ingresso (provas de seleção
@@ -37,6 +37,10 @@ export interface ConfigMao {
   minutosDia: number
   /** essencial: só prioridade máxima e alta; completa: todos os assuntos */
   cobertura: 'essencial' | 'completa'
+  /** Segundas-feiras ("AAAA-MM-DD") das semanas difíceis: só o dia mínimo, como no cronograma de ortopedia. */
+  semanasDificeis?: string[]
+  /** Questões feitas além da meta em cada dia ("AAAA-MM-DD"): saem do próximo dia de estudo. */
+  adiantados?: Record<string, number>
   criadoEm: string
   /** última alteração (para a sincronização escolher a mais recente) */
   em: number
@@ -54,7 +58,7 @@ export type PassadaMao = 1 | 2 | 3
 export interface TemaDoPlano extends TemaRanking { pendentes: string[]; feitas: number; certas: number; validas: number; acerto: number | null; dominio: number; prioridade: number; passada: PassadaMao }
 /** Um assunto dentro de um dia: quantas questões novas dele e de que passada. */
 export interface ParteDia { nome: string; area: string; n: number; passada: PassadaMao; ids: string[] }
-export interface DiaMao { data: string; tipo: 'estudo' | 'simulado' | 'reta-final' | 'folga'; n: number; temas: string[]; partes: ParteDia[] }
+export interface DiaMao { data: string; tipo: 'estudo' | 'simulado' | 'reta-final' | 'folga'; n: number; temas: string[]; partes: ParteDia[]; /** dia de semana difícil (só o dia mínimo) */ dificil?: boolean; /** questões que a pessoa já fez antes, num dia anterior */ adiantado?: number }
 export type FaseMao = 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'passou'
 export interface PlanoMao {
   config: ConfigMao
@@ -156,20 +160,31 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
 
   const total = temas.reduce((s, t) => s + t.ids.length, 0)
   const feitas = temas.reduce((s, t) => s + t.feitas, 0)
-  const pendentes = total - feitas
+  // o que já foi feito hoje continua contando na meta de hoje: a meta do dia não muda enquanto a pessoa estuda
+  const inicioHoje = inicioDaChave(hoje)
+  const feitoHoje = (id: string) => (respondidas[id]?.q ?? 0) >= inicioHoje
+  const feitasHoje = temas.reduce((s, t) => s + t.ids.filter(feitoHoje).length, 0)
+  // o que foi adiantado no último dia de estudo sai do próximo (e volta à conta da meta, para não descontar duas vezes)
+  let anterior = somarDias(hoje, -1)
+  for (let i = 0; i < 14 && anterior >= config.criadoEm && !(config.dias.length ? config.dias : [1, 2, 3, 4, 5]).includes(diaDaSemana(anterior)); i++) anterior = somarDias(anterior, -1)
+  const creditoAnterior = anterior >= config.criadoEm ? Math.max(0, Math.round(config.adiantados?.[anterior] ?? 0)) : 0
+  const pendentes = total - feitas + feitasHoje + creditoAnterior
 
   // dias de hoje até a véspera da prova, separando a reta final (revisão forte e modo prova)
   const diasRetaFinal = diasEntre(config.criadoEm, config.dataProva) >= 6 * 7 ? DIAS_RETA_FINAL : DIAS_MODO_PROVA
-  const calendario: Array<{ data: string; estudo: boolean; reta: boolean }> = []
+  const dificeis = new Set(config.semanasDificeis ?? [])
+  const calendario: Array<{ data: string; estudo: boolean; reta: boolean; dificil: boolean }> = []
   for (let i = 0; i < Math.min(diasRestantes, 730); i++) {
     const data = somarDias(hoje, i)
-    calendario.push({ data, estudo: dias.includes(diaDaSemana(data)), reta: diasRestantes - i <= diasRetaFinal })
+    calendario.push({ data, estudo: dias.includes(diaDaSemana(data)), reta: diasRestantes - i <= diasRetaFinal, dificil: dificeis.has(segundaDaChave(data)) })
   }
   const faltam = diasRestantes
   const fase: FaseMao = encerrado ? 'passou' : faltam <= 1 ? 'vespera' : faltam <= DIAS_MODO_PROVA ? 'prova' : faltam <= diasRetaFinal ? 'revisao' : 'conteudo'
   const diasDeEstudo = calendario.filter((d) => d.estudo).length
-  const antesDaReta = calendario.filter((d) => d.estudo && !d.reta).length
-  const metaBase = antesDaReta ? Math.ceil(pendentes / antesDaReta) : pendentes
+  // a semana difícil leva só o dia mínimo; o resto se espalha pelos outros dias
+  const antesDaReta = calendario.filter((d) => d.estudo && !d.reta && !d.dificil).length
+  const naDificil = calendario.filter((d) => d.estudo && !d.reta && d.dificil).length * DIA_MINIMO
+  const metaBase = antesDaReta ? Math.ceil(Math.max(0, pendentes - naDificil) / antesDaReta) : pendentes
   const teto = Math.round(capacidadeDia * 1.25)
   const metaNormal = Math.max(Math.min(5, pendentes), Math.min(teto, metaBase || 0))
   const ehSimulado = (data: string, estudo: boolean) => estudo && diasEntre(config.criadoEm, data) > 0 && diasEntre(config.criadoEm, data) % INTERVALO_SIMULADO === 0
@@ -184,14 +199,21 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const agenda: DiaMao[] = []
   const inicioPassada: Partial<Record<PassadaMao, string>> = {}
   let idsHoje: string[] = [], revisaoHoje = 0, fimMaisCai: string | null = null
+  let credito = creditoAnterior
   for (const c of calendario) {
     let dia: DiaMao
     if (!c.estudo) dia = { data: c.data, tipo: 'folga', n: 0, temas: [], partes: [] }
     else if (c.reta) dia = { data: c.data, tipo: 'reta-final', n: capacidadeDia, temas: ['Erros e assuntos de prioridade máxima'], partes: [] }
     else if (ehSimulado(c.data, c.estudo)) dia = { data: c.data, tipo: 'simulado', n: TAMANHO_SIMULADO, temas: [`Mini-simulado de ${TAMANHO_SIMULADO} questões`], partes: [] }
     else {
-      const revisao = c.data === hoje ? Math.min(erros.length, Math.floor(metaNormal / 4)) : 0
-      let falta = metaNormal - revisao
+      const metaCheia = c.dificil ? Math.min(DIA_MINIMO, metaNormal) : metaNormal
+      const adiantado = Math.min(credito, metaCheia)
+      credito -= adiantado
+      const metaDia = metaCheia - adiantado
+      // hoje: só o que falta da meta (as já feitas hoje saíram da fila)
+      const resta = c.data === hoje ? Math.max(0, metaDia - feitasHoje) : metaDia
+      const revisao = c.data === hoje ? Math.min(erros.length, Math.floor(metaDia / 4), resta) : 0
+      let falta = resta - revisao
       const partes: ParteDia[] = []
       for (const f of filas) {
         if (falta <= 0) break
@@ -202,15 +224,18 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
         if (f.passada === 1 && !filas.some((x) => x.passada === 1 && x.fila.length)) fimMaisCai = fimMaisCai ?? c.data
       }
       const novas = partes.flatMap((x) => x.ids)
-      dia = { data: c.data, tipo: 'estudo', n: novas.length + revisao, temas: partes.map((x) => x.nome), partes }
+      dia = { data: c.data, tipo: 'estudo', n: c.data === hoje ? Math.min(metaDia, novas.length + revisao + feitasHoje) : novas.length + revisao, temas: partes.map((x) => x.nome), partes, dificil: c.dificil, adiantado }
       if (c.data === hoje) { idsHoje = intercalar(novas, erros.slice(0, revisao)); revisaoHoje = revisao }
     }
+    // o que passar da meta de hoje adianta os próximos dias de estudo
+    if (c.data === hoje && dia.tipo !== 'reta-final') credito += Math.max(0, feitasHoje - dia.n)
     agenda.push(dia)
   }
   const diaHoje = agenda[0]?.data === hoje ? agenda[0] : null
   const proximos = agenda.slice(diaHoje ? 1 : 0)
-  if (diaHoje?.tipo === 'simulado') { idsHoje = sortearSimulado(temas, respondidas, agora); revisaoHoje = 0 }
-  if (diaHoje?.tipo === 'reta-final') { idsHoje = [...erros.slice(0, Math.ceil(capacidadeDia / 2)), ...temas.filter((t) => t.nivel === 4).flatMap((t) => t.pendentes)].slice(0, capacidadeDia); revisaoHoje = Math.min(erros.length, Math.ceil(capacidadeDia / 2)) }
+  // o simulado do dia é sorteado uma vez por dia (a semente é o dia) e o que já foi feito hoje sai da lista
+  if (diaHoje?.tipo === 'simulado') { idsHoje = sortearSimulado(temas, (id) => !respondidas[id] || feitoHoje(id), inicioHoje).filter((id) => !feitoHoje(id)); revisaoHoje = 0 }
+  if (diaHoje?.tipo === 'reta-final') { idsHoje = [...erros.slice(0, Math.ceil(capacidadeDia / 2)), ...temas.filter((t) => t.nivel === 4).flatMap((t) => t.pendentes)].slice(0, Math.max(0, capacidadeDia - feitasHoje)); revisaoHoje = Math.min(erros.length, Math.ceil(capacidadeDia / 2), idsHoje.length) }
   const cortadas = filas.reduce((s2, f) => s2 + f.fila.length, 0)
   const maisCai = temas.filter((t) => t.passada === 1).reduce((s2, t) => s2 + t.ids.length, 0)
   const maisCaiFeitas = temas.filter((t) => t.passada === 1).reduce((s2, t) => s2 + t.feitas, 0)
@@ -218,12 +243,11 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const passadaAtual: PassadaMao | null = fase !== 'conteudo' ? null : (diaHoje?.partes[0]?.passada ?? proximos.find((d) => d.partes.length)?.partes[0]?.passada ?? null)
 
   // o que o plano previa até ontem (dias de estudo desde a criação, fora a reta final) e o que foi feito desde então
-  const inicioPlano = inicioDaChave(config.criadoEm), inicioHoje = inicioDaChave(hoje)
+  const inicioPlano = inicioDaChave(config.criadoEm)
   let diasPassados = 0
   for (let d = config.criadoEm; d < hoje; d = somarDias(d, 1)) if (dias.includes(diaDaSemana(d))) diasPassados++
   const noPlano = [...prioridadeDe.keys()]
   const feitasDesdeInicio = noPlano.filter((id) => (respondidas[id]?.q ?? 0) >= inicioPlano && (respondidas[id]?.q ?? 0) < inicioHoje).length
-  const feitasHoje = noPlano.filter((id) => (respondidas[id]?.q ?? 0) >= inicioHoje).length
 
   // ritmo: questões do plano feitas nos últimos 14 dias
   const desde = agora - 14 * 86400000
@@ -261,19 +285,19 @@ function intercalar(novas: string[], revisao: string[]): string[] {
 }
 
 /** Simulado: questões de todos os assuntos do plano na proporção do quanto caem; as já feitas também valem. */
-function sortearSimulado(temas: TemaDoPlano[], respondidas: Respondidas, semente: number): string[] {
+function sortearSimulado(temas: TemaDoPlano[], novaNoDia: (id: string) => boolean, semente: number): string[] {
   const soma = temas.reduce((s, t) => s + t.pctEdicao, 0) || 1
   const saida: string[] = []
   let x = semente % 2147483647
   const aleatorio = () => (x = (x * 48271) % 2147483647) / 2147483647
   for (const t of temas) {
     const quantas = Math.max(0, Math.round((TAMANHO_SIMULADO * t.pctEdicao) / soma))
-    const opcoes = [...t.pendentes, ...t.ids.filter((id) => respondidas[id])]
+    const opcoes = [...t.ids.filter(novaNoDia), ...t.ids.filter((id) => !novaNoDia(id))]
     for (let i = 0; i < quantas && opcoes.length; i++) saida.push(opcoes.splice(Math.floor(aleatorio() * opcoes.length), 1)[0])
   }
   // o arredondamento pode deixar faltando: completa pelos assuntos que mais caem
   const unicas = [...new Set(saida)]
-  for (const t of temas) for (const id of [...t.pendentes, ...t.ids]) { if (unicas.length >= TAMANHO_SIMULADO) break; if (!unicas.includes(id)) unicas.push(id) }
+  for (const t of temas) for (const id of t.ids) { if (unicas.length >= TAMANHO_SIMULADO) break; if (!unicas.includes(id)) unicas.push(id) }
   return unicas.slice(0, TAMANHO_SIMULADO)
 }
 
@@ -290,9 +314,27 @@ export function lerConfig(v: unknown): ConfigMao | null {
   return {
     tipo: 'pref', prova: c.prova, dataProva: c.dataProva!, dias: c.dias.filter((d) => Number.isInteger(d) && d >= 0 && d <= 6),
     minutosDia: Math.max(15, Math.min(300, Number(c.minutosDia) || 60)), cobertura: c.cobertura === 'essencial' ? 'essencial' : 'completa',
+    ...(c.adiantados && typeof c.adiantados === 'object' ? { adiantados: Object.fromEntries(Object.entries(c.adiantados).filter(([d, n]) => /^\d{4}-\d{2}-\d{2}$/.test(d) && Number.isFinite(n) && n > 0).slice(-14)) } : {}),
+    ...(Array.isArray(c.semanasDificeis) ? { semanasDificeis: c.semanasDificeis.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).slice(-20) } : {}),
     criadoEm: /^\d{4}-\d{2}-\d{2}$/.test(c.criadoEm ?? '') ? c.criadoEm! : c.dataProva!, em: Number(c.em) || 0,
   }
 }
 
 /** Item da conta onde cada plano fica (sincroniza entre aparelhos junto com a Biblioteca). */
+/** A segunda-feira ("AAAA-MM-DD") da semana de um dia. */
+export const segundaDaChave = (dia: string) => somarDias(dia, -((diaDaSemana(dia) + 6) % 7))
+
+/** Liga ou desliga a semana difícil da semana de hoje. */
+export function comSemanaDificil(config: ConfigMao, ativar: boolean, agora = Date.now()): ConfigMao {
+  const seg = segundaDaChave(hojeBR(agora))
+  const resto = (config.semanasDificeis ?? []).filter((d) => d !== seg && d >= somarDias(seg, -60))
+  return { ...config, semanasDificeis: ativar ? [...resto, seg] : resto }
+}
+
+/** Guarda o que foi feito além da meta hoje (o próximo dia de estudo fica mais leve, em qualquer aparelho). */
+export function comAdiantado(config: ConfigMao, dia: string, n: number): ConfigMao {
+  const resto = Object.entries(config.adiantados ?? {}).filter(([d]) => d !== dia && d >= somarDias(dia, -14))
+  return { ...config, adiantados: Object.fromEntries(n > 0 ? [...resto, [dia, n]] : resto) }
+}
+
 export const itemConfigMao = (prova: ProvaMao) => `c.mao-${prova}`

@@ -1,7 +1,7 @@
 import type { CalculoPlano, DiaPlano, ItemDia, Passada, PlanoSalvo, SemanaPlano, TemaPlano } from './planoEstudo'
 import type { DiaMao, PlanoMao, ProvaMao } from './cronogramaMao'
 import { slugDaAreaMao } from './modalidades'
-import { diaCivil, diasEntre, hojeBR, inicioDaChave } from '../util/dia'
+import { diaCivil, diasEntre, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 
 /**
  * O plano da mão no formato do cronograma de ortopedia (27/10/2026, pedido do Tales: "a arquitetura parecida
@@ -36,9 +36,9 @@ function itensDoDia(dia: DiaMao): ItemDia[] {
 function diaDoPlano(dia: DiaMao): DiaPlano {
   const itens = itensDoDia(dia)
   return {
-    data: diaCivil(dia.data), tipo: 'estudo', meta: dia.n, itens, total: dia.n,
+    data: diaCivil(dia.data), tipo: dia.dificil ? 'dificil' : 'estudo', meta: dia.n, itens, total: dia.n,
     passada: itens.length ? (Math.min(...itens.map((i) => i.passada)) as Passada) : null,
-    mini: dia.tipo === 'simulado', adiantado: 0, puxado: null,
+    mini: dia.tipo === 'simulado', adiantado: dia.adiantado ?? 0, puxado: null,
   }
 }
 
@@ -48,7 +48,7 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
   const prova = diaCivil(c.dataProva)
   const plano: PlanoSalvo = {
     data_prova: c.dataProva, intensidade: 'firme', folgas: [0, 1, 2, 3, 4, 5, 6].filter((d) => !c.dias.includes(d)),
-    prova: NOME_PROVA_MAO[c.prova], base_respondidas: 0, criado_em: new Date(inicioDaChave(c.criadoEm)).toISOString(), incluir_simulados: true, opcoes: null,
+    prova: NOME_PROVA_MAO[c.prova], base_respondidas: 0, criado_em: new Date(inicioDaChave(c.criadoEm)).toISOString(), incluir_simulados: true, opcoes: c.semanasDificeis?.length ? { semanasDificeis: c.semanasDificeis } : null,
   }
   // dias de estudo até a reta final (o calendário pinta a reta final pelas datas)
   const dias = p.agenda.filter((d) => d.tipo === 'estudo' || d.tipo === 'simulado').map(diaDoPlano)
@@ -58,7 +58,7 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
   const principal = itensHoje[0]
   const hojeDia = naRetaFinal || p.encerrado ? null : {
     slug: principal?.slug ?? 'mao-geral', nome: principal?.nome ?? (hojeMao.tipo === 'simulado' ? 'Mini-simulado' : 'Folga'), n: p.metaHoje,
-    focos: principal?.assuntos ?? [], itens: itensHoje, mini: hojeMao.tipo === 'simulado', tipo: hojeMao.tipo === 'folga' ? 'folga' as const : 'estudo' as const,
+    focos: principal?.assuntos ?? [], itens: itensHoje, mini: hojeMao.tipo === 'simulado', tipo: hojeMao.tipo === 'folga' ? 'folga' as const : hojeMao.dificil ? 'dificil' as const : 'estudo' as const,
   }
   const futuros = dias.filter((d) => d.data > hoje)
 
@@ -116,11 +116,11 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
     metaDiaria: p.metaHoje,
     feitasHoje: p.feitasHoje,
     faltaHoje: Math.max(0, p.metaHoje - p.feitasHoje),
-    adiantadoHoje: 0,
+    adiantadoHoje: hojeMao.adiantado ?? 0,
     extraHoje: Math.max(0, p.feitasHoje - p.metaHoje),
     adiantarPedido: 0,
     adiantarFalta: 0,
-    metaHojeSemAdiantar: p.metaHoje,
+    metaHojeSemAdiantar: p.metaHoje + (hojeMao.adiantado ?? 0),
     esperadoAteHoje: p.esperadoAteHoje,
     ritmo: p.esperadoAteHoje > 0 ? Math.round((100 * (p.feitasDesdeInicio - p.esperadoAteHoje)) / p.esperadoAteHoje) : 0,
     temas: [...porArea.values()].sort((a, b) => b.incidencia - a.incidencia),
@@ -129,7 +129,7 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
     naRetaFinal,
     provaPassou: p.encerrado,
     metaDiaNormal: p.metaNormal,
-    tipoHoje: hojeMao.tipo === 'folga' ? 'folga' : 'estudo',
+    tipoHoje: hojeMao.tipo === 'folga' ? 'folga' : hojeMao.dificil ? 'dificil' : 'estudo',
     miniHoje: hojeMao.tipo === 'simulado',
     dias,
     amanha: futuros[0] ?? null,
@@ -147,4 +147,42 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
 /** Os ids de um dia do plano ("AAAA-MM-DD"), para fazer as questões dele antes da hora. */
 export function idsDoDiaMao(p: PlanoMao, dia: string): string[] {
   return p.agenda.find((d) => d.data === dia)?.partes.flatMap((x) => x.ids) ?? []
+}
+
+type Respondidas = Record<string, { c: boolean | null; q?: number; historico?: Array<{ em: number; correta: boolean | null }> } | undefined>
+
+/**
+ * O resumo da semana que passou (domingo e segunda), como no cronograma de ortopedia, só com as questões do
+ * plano da mão; a área mais fraca é a grande área da mão com o menor acerto (8 respostas ou mais).
+ */
+export function resumoSemanaMao(p: PlanoMao, respondidas: Respondidas, calculo: CalculoPlano, agora = Date.now()) {
+  const hoje = diaCivil(hojeBR(agora))
+  if (hoje.getDay() !== 0 && hoje.getDay() !== 1) return null
+  const chaveFim = somarDias(hojeBR(agora), hoje.getDay() === 1 ? 0 : 1)
+  const fim = inicioDaChave(chaveFim)
+  const inicio = inicioDaChave(somarDias(chaveFim, -7))
+  const areaDe = new Map(p.temas.flatMap((t) => t.ids.map((id) => [id, t.area] as const)))
+  let feitas = 0, certas = 0, validas = 0
+  const dias = new Set<string>()
+  const porArea = new Map<string, { c: number; v: number }>()
+  for (const [id, area] of areaDe) {
+    const r = respondidas[id]
+    if (!r) continue
+    for (const h of r.historico ?? (r.q !== undefined ? [{ em: r.q, correta: r.c }] : [])) {
+      if (h.em < inicio || h.em >= fim) continue
+      feitas++; dias.add(hojeBR(h.em))
+      if (h.correta === null) continue
+      validas++; if (h.correta) certas++
+      const x = porArea.get(area) ?? { c: 0, v: 0 }; x.v++; if (h.correta) x.c++; porArea.set(area, x)
+    }
+  }
+  const fraca = [...porArea].filter(([, x]) => x.v >= 8).sort((a, b) => a[1].c / a[1].v - b[1].c / b[1].v)[0]
+  const proximos = calculo.dias.filter((d) => d.data.getTime() >= fim && d.data.getTime() < fim + 7 * 86_400_000)
+  const nomes = [...new Set(proximos.flatMap((d) => d.itens.filter((i) => !i.mistura).map((i) => i.nome)))]
+  return { feitas, dias: dias.size, acerto: validas >= 5 ? Math.round((certas / validas) * 100) : null, fraca: fraca?.[0] ?? null, proxima: nomes.length ? nomes.join(', ') : null }
+}
+
+/** As próximas questões do plano depois de hoje, na ordem da agenda (para adiantar). */
+export function idsParaAdiantar(p: PlanoMao, n: number): string[] {
+  return p.agenda.filter((d) => d.data > p.hoje.data).flatMap((d) => d.partes.flatMap((x) => x.ids)).slice(0, n)
 }

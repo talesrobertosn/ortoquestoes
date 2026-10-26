@@ -78,7 +78,7 @@ estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [
 id: rockwood10-53-colo-femur          # estável: é o endereço e a chave das marcações
 versao: 1                             # suba a cada revisão editorial do texto
 titulo: Fratura do colo do fêmur
-especialidade: trauma                 # slug de um tema do acervo
+especialidade: trauma                 # slug de um tema do acervo; "mao" leva o resumo ao cronograma da mão
 acesso: gratis                        # todos abertos desde 16/10/2026 (assinante fecha o leitor)
 livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
