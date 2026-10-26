@@ -26347,18 +26347,61 @@
   }
  },
  "mao-1681": {
-  "conceito": "**O gancho do hamato relaciona osso, nervo e tendões flexores.** Sua fratura é comum em esportes com raquete ou taco e pode passar despercebida em radiografias habituais. Dor palmar ulnar localizada, associada ao mecanismo, deve levar à investigação com incidências específicas e, se necessário, tomografia ou ressonância.\n\nO ramo profundo do nervo ulnar passa ao redor do hâmulo e pode ser lesionado ou comprimido. A tabela 44-15 também chama atenção para comprometimento tendíneo em apresentações crônicas: a pseudartrose pode causar dor persistente e lesão do tendão flexor do dedo mínimo. Assim, a queixa não deve ser reduzida ao desconforto de uma fratura que ainda não consolidou.\n\nAs oblíquas e a incidência do túnel do carpo aumentam a possibilidade de diagnóstico. É necessário diferenciar a fratura de um ossículo separado, o os hamulus proprium, e avaliar desvio e sintomas neurológicos. A ausência do gancho esperado ou mudanças de densidade e contorno podem levantar suspeita.\n\nO tratamento depende do padrão e da repercussão. Fraturas desviadas, pseudartrose dolorosa e compressão neural podem exigir excisão ou fixação, eventualmente com descompressão do canal de GUYON. A relação do ramo profundo com o osso é importante tanto na lesão original quanto no procedimento cirúrgico.",
-  "correta": "**C: ramo profundo do nervo ulnar.** É o ramo que contorna o gancho do hamato, conforme a tabela do capítulo. A identificação dessa relação permite compreender sintomas neurológicos e o cuidado necessário na excisão ou fixação do fragmento.",
+  "conceito": "O ramo profundo do nervo ulnar **contorna o hâmulo do hamato**. Essa relação explica por que uma fratura do gancho pode acrescentar comprometimento neural à dor mecânica, sobretudo quando a lesão persiste ou há desvio.\n\nO resumo descreve a fratura do hâmulo por compressão contra um objeto segurado ou avulsão ligamentar. Na evolução crônica, a pseudartrose também pode irritar e romper tendões flexores. Portanto, a avaliação precisa distinguir sintomas ósseos, tendíneos e neurais; não basta reconhecer um pequeno fragmento na radiografia.\n\nOs nervos interósseos do antebraço e o ramo superficial radial têm trajetos diferentes, descritos no resumo do antebraço. O nome do nervo e o ponto anatômico da lesão devem coincidir antes de atribuir uma neuropatia ao gancho do hamato. Conteúdo consultado nos resumos do Rockwood and Green, 10ª edição, capítulos 44 e 42, seções de hamato, Henry e músculos/compartimentos.",
+  "correta": "Correta: C (ramo profundo do ulnar). É a estrutura cujo trajeto contorna o gancho, segundo o resumo. A proximidade com a fratura dá o fundamento anatômico da possível lesão neural.",
   "incorretas": {
-   "A": "**Sua participação na inervação articular não define esse trajeto.** O interósseo anterior contribui para a inervação do punho, mas não é o ramo que contorna o hâmulo. Compartilhar um território articular não torna os trajetos anatômicos equivalentes.",
-   "B": "**Participa da inervação do carpo em outro território.** O interósseo posterior tem relação dorsal e pode ser considerado em procedimentos de denervação do punho. Ele não percorre a relação palmar com o hâmulo descrita no enunciado.",
-   "D": "**É uma estrutura de atenção no lado radial e nos acessos dorsais.** O capítulo orienta protegê-lo durante exposições do punho. O gancho do hamato situa-se palmarmente no lado ulnar, junto ao trajeto do ramo profundo ulnar."
+   "A": "O interósseo anterior é descrito na inervação do plano profundo anterior do antebraço, incluindo flexor longo do polegar, metade lateral do flexor profundo e pronador quadrado. Esse território não identifica o ramo que contorna o hâmulo na mão.",
+   "B": "O interósseo posterior é relacionado pela fonte à região do supinador e aos cuidados nos acessos ao rádio proximal. Não deve ser transportado para o trajeto palmar em torno do gancho, que o resumo atribui ao ramo profundo ulnar.",
+   "D": "O ramo superficial radial acompanha a região lateral junto ao braquiorradial na descrição da via de Henry. Ele não é o ramo profundo ulnar que contorna o hâmulo; confundir os dois troca lado, trajeto e estrutura neural da relação anatômica perguntada."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Fraturas dos outros ossos do carpo.",
+   "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: O antebraço como articulação: arco radial, forças e rotação; Vias de acesso e o nervo interósseo posterior."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Fraturas dos outros ossos do carpo"
+     ],
+     "blocos": [
+      "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
+      "fraturas-dos-outros-ossos-do-carpo-5577eb4e"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "f814c17372b34af4fa3e2e4cc7bff2fd3553ad7d7272682980c9f66db14b30fd"
+    },
+    {
+     "resumo": "rockwood10-42-diafise-radio-ulna",
+     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+     "secoes": [
+      "O antebraço como articulação: arco radial, forças e rotação",
+      "Vias de acesso e o nervo interósseo posterior"
+     ],
+     "blocos": [
+      "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+      "vias-de-acesso-e-o-nervo-interosseo-posterior-70016f08"
+     ],
+     "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+     "trechosSha256": "407096a8c80d9086a3f0a40da2ebbae70f636a22108c743cbaa29e866f08fd18"
+    }
+   ],
+   "questaoSha256": "74530b507eb2326a7fc0eae481c98a2f89ea52ed923292cfb0236ceced73c682",
+   "comentarioSha256": "f832204a11f2b2d46bff92dba63ee6487dbcb2a63c5ae5b7ae8e4a63356a6753"
+  }
  },
  "mao-1682": {
   "conceito": "A fratura do piramidal é, na grande maioria dos casos, uma pequena lesão **cortical dorsal**. O resumo atribui mais de 90% a esse padrão e o relaciona ao arrancamento capsular ou ao impacto local. Não se deve confundi-lo com fratura do corpo associada a uma desorganização importante do carpo.\n\nNa radiografia PA, o fragmento dorsal pode ficar oculto pela sobreposição; perfil e oblíqua pronada ajudam a mostrá-lo. A fonte descreve tratamento com tala curta e mobilização progressiva, enquanto dor persistente merece investigar lesões capsulares ou lunopiramidais associadas.\n\nOutros padrões existem e contam histórias diferentes: a avulsão volar sugere lesão lunopiramidal; a fratura transversal do corpo pode integrar uma perilunar; e a impacção pode envolver estiloide ulnar ou hamato. A pergunta pede o padrão predominante, não o único possível. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Fraturas dos outros ossos do carpo.",
@@ -26509,46 +26552,124 @@
   "conferido": false
  },
  "mao-1687": {
-  "conceito": "**A redutibilidade separa problemas diferentes na lesão escafolunar crônica.** Se o ligamento ainda tiver tecido adequado para reparo, a reinserção pode ser possível. Se ele for irreparável, é necessário considerar outra fonte de tecido. Mas a reconstrução precisa conseguir colocar o escafoide e o semilunar em uma relação anatômica e conservar superfícies articulares capazes de funcionar.\n\nNo estágio IV de GARCIA-ELIAS apresentado na tabela 44-19, há lesão completa irreparável, desalinhamento radiográfico e deformidade redutível. O capítulo lista reconstruções com enxerto, tenodeses e outras técnicas. A possibilidade de reduzir o carpo, aliada à cartilagem preservada, mantém espaço para reconstruir os estabilizadores.\n\nSe a deformidade não puder ser reduzida, o problema passa a exigir alternativas diferentes, frequentemente artrodeses limitadas ou salvamento. Se houver artrose, reconstruir o ligamento não restaura a cartilagem destruída. A decisão também depende de sintomas, demandas funcionais, tempo de lesão e estabilizadores secundários.\n\n**Não existe uma técnica de reconstrução superior para todos os casos.** O capítulo descreve várias opções e resultados variáveis. O ponto cobrado aqui é a categoria de tratamento coerente com ligamento irreparável, carpo redutível e cartilagem preservada, sem impor uma única tenodese.",
-  "correta": "**C: reconstrução ligamentar com enxerto.** Substitui o tecido insuficiente depois de restaurar o alinhamento. A redutibilidade permite a correção; a cartilagem preservada sustenta a intenção de manter a articulação. Esses critérios justificam considerar reconstrução sem afirmar que uma técnica específica é obrigatória.",
+  "conceito": "O estágio IV de Garcia-Elias descreve um problema em que ainda é possível preservar a articulação: o ligamento escafossemilunar é **irreparável**, mas a deformidade **reduz** e a cartilagem está preservada. A estratégia coerente é reconstruir a estabilidade com enxerto, mantendo o alinhamento recuperado.\n\nReparar e reconstruir são operações conceitualmente diferentes. O reparo utiliza o tecido ligamentar que ainda pode cicatrizar após sutura ou reinserção. A reconstrução cria uma contenção substituta quando esse tecido já não é aproveitável. A capacidade de reduzir a deformidade torna a reconstrução possível, mas não devolve reparabilidade ao ligamento original.\n\nAs fusões e outros salvamentos entram no algoritmo em cenários de deformidade fixa ou degeneração, conforme o estado articular. A ausência de artrose, isoladamente, também não decide tudo: reparabilidade e redutibilidade precisam ser avaliadas separadamente. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+  "correta": "Correta: C (reconstrução ligamentar com enxerto). O enxerto substitui a contenção irreparável em um carpo cuja deformidade ainda reduz e cujas superfícies articulares estão preservadas. É a combinação que caracteriza o IV no algoritmo apresentado.",
   "incorretas": {
-   "A": "**Sacrifica movimento além do que os dados exigem.** Pode ser uma opção em artrose grave ou em situações de salvamento. Um carpo redutível com cartilagem preservada mantém alternativas de reconstrução e não exige fusão total de rotina.",
-   "B": "**Exige remanescente reparável.** Na lesão aguda com tecido de qualidade, a reinserção pode ser indicada. O enunciado informa que o ligamento é irreparável, o que retira o fundamento para simplesmente suturá-lo de volta.",
-   "D": "**É uma opção de salvamento para outro cenário.** A tabela 44-19 inclui excisão do escafoide com fusão parcial quando há deformidade não redutível ou artrose. No estágio IV descrito, a redução é possível e a cartilagem está preservada, permitindo reconstruir a contenção sem fundir essas articulações."
+   "A": "A artrodese total é um salvamento para situações graves, com comprometimento articular que torne inadequada a preservação do movimento. O estágio descrito ainda permite reduzir o desalinhamento e não tem artrose; por isso, a fonte orienta reconstrução, não fusão total como primeira resposta.",
+   "B": "O reparo direto depende de ligamento aproveitável, condição do estágio II. No IV, a deformidade ser redutível não significa que o tecido seja reparável; suturar tecido inadequado não corresponde à reconstrução indicada.",
+   "D": "Excisão do escafoide com artrodese parcial aparece entre os procedimentos de salvamento das fases irredutíveis ou degeneradas. O caso oferece as condições para reconstrução preservadora, portanto não deve ser conduzido automaticamente à retirada do osso e à fusão."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Dissociação escafossemilunar"
+     ],
+     "blocos": [
+      "dissociacao-escafossemilunar-614919e2",
+      "dissociacao-escafossemilunar-8935e6ce",
+      "dissociacao-escafossemilunar-6cbb5bca"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "5d926a47260cd6b4dea90e5f885cd5621c554b75463e5c46299c8d865286fce8"
+    }
+   ],
+   "questaoSha256": "8fa5e9114dcfd76f4ac92ab35a7e551491bd80348063df55602f8615b4d1f4f7",
+   "comentarioSha256": "350cdb0d8bc7171b52c212702b5affd8f6f585db81685198a44ae854562fd094"
+  }
  },
  "mao-1688": {
-  "conceito": "**SLAC é o colapso avançado por insuficiência escafolunar.** A perda de alinhamento altera o contato entre os ossos e produz uma sequência de desgaste. No estágio I, a artrose envolve a estiloide radial e o escafoide distal. No II, compromete toda a articulação radioescafoide. No III, acrescenta-se artrose capitolunar, com preservação relativa da radiolunar.\n\nA carpectomia proximal remove escafoide, semilunar e piramidal. A cabeça do capitato passa a articular com a fossa do semilunar no rádio. Para o procedimento convencional funcionar, essas duas superfícies precisam estar preservadas. Se a artrose já atingiu a articulação capitolunar, a cartilagem da cabeça do capitato não oferece a superfície necessária.\n\nPor isso, o capítulo afirma que no estágio III a carpectomia proximal deixa de ser uma opção viável **sem interposição**. Essa ressalva é importante: existem modificações, mas elas não são a carpectomia convencional perguntada. A excisão do escafoide com artrodese parcial mediocárpica permanece entre as opções de salvamento.\n\nO estágio organiza a avaliação, mas a indicação também depende de dor, força, movimento, exigência funcional e estado real da cartilagem. A preservação radiolunar não significa que toda carpectomia seja possível: a cabeça do capitato é a outra metade da futura articulação.",
-  "correta": "**B: capitolunar.** A artrose dessa articulação indica comprometimento da cabeça do capitato, que seria uma superfície de contato após a carpectomia. É o achado que distingue o estágio III e inviabiliza a técnica convencional sem interposição.",
+  "conceito": "A carpectomia proximal convencional retira a fileira proximal e passa a depender da relação entre a **cabeça do capitato e a fossa do semilunar no rádio**. A operação exige superfícies aproveitáveis nessa nova interface; não basta retirar os ossos que participavam do colapso.\n\nNo SLAC III, a artrose já alcançou a **capitossemilunar**, chamada capitolunar na alternativa. A cabeça do capitato que seria utilizada na nova articulação está comprometida. Esse é o motivo pelo qual o resumo afasta a carpectomia convencional, sem interposição, e apresenta escafoidectomia com artrodese parcial como salvamento.\n\nA articulação radiolunar fica relativamente poupada no padrão descrito, o que não deve ser confundido com cabeça do capitato íntegra. Localizar o desgaste é mais útil que escolher a operação apenas pelo nome colapso avançado. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Artrose do colapso: SNAC e SLAC.",
+  "correta": "Correta: B (capitolunar). O comprometimento dessa interface inclui a superfície proximal do capitato, necessária à carpectomia convencional. A contraindicação discutida depende dessa cartilagem, não apenas da duração da lesão ligamentar.",
   "incorretas": {
-   "A": "**É relativamente preservada no padrão clássico do estágio III.** Essa preservação ajuda a manter possibilidades de salvamento. O impedimento cobrado é a cartilagem do capitato, e não a destruição obrigatória da fossa do semilunar.",
-   "C": "**Pertence a outro compartimento do punho.** Pode ter doença associada, mas não define o estágio III do SLAC nem constitui o contato entre capitato e rádio criado pela carpectomia proximal. Deve ser avaliada separadamente.",
-   "D": "**É o território inicial do SLAC.** Seu comprometimento caracteriza o estágio I e o escafoide seria removido na carpectomia. A progressão para o capitato é que retira uma das superfícies necessárias ao procedimento."
+   "A": "A radiolunar é a relação entre rádio e semilunar, relativamente poupada no padrão de colapso descrito. Sua preservação não impede a artrose capitossemilunar do estágio III nem garante que a cabeça do capitato possa ser usada na carpectomia.",
+   "C": "A radioulnar distal envolve rádio e ulna e não é a interface que a carpectomia proximal passa a utilizar. A pergunta é sobre a cartilagem do capitato em relação à fossa radial do semilunar, comprometida pela progressão mediocárpica.",
+   "D": "A relação da estiloide radial com o escafoide é o local inicial da artrose no estágio I. O marco que afasta a carpectomia convencional no III é a extensão à capitossemilunar, e não apenas aquele desgaste inicial."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Artrose do colapso: SNAC e SLAC; Mayfield e a luxação perilunar."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Artrose do colapso: SNAC e SLAC",
+      "Mayfield e a luxação perilunar"
+     ],
+     "blocos": [
+      "artrose-do-colapso-snac-e-slac-118d45f0",
+      "artrose-do-colapso-snac-e-slac-a82703f6",
+      "artrose-do-colapso-snac-e-slac-cbb1d7e8",
+      "mayfield-e-a-luxacao-perilunar-7a90dc33"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "cd4e900f329b49d26ad4a027c73ff42e3550122e7bd32a2e9c1479765b331e96"
+    }
+   ],
+   "questaoSha256": "89d673b5b231279effe7cb5299c119052ba92a887c49c69b4f45d9858cb7c445",
+   "comentarioSha256": "653b9d64603e8546ffff5165a1dff53a17a4f4e594373c599fb6c0e1bf6ae830"
+  }
  },
  "mao-1689": {
-  "conceito": "**MAYFIELD descreve a progressão da lesão ao redor do semilunar.** No mecanismo clássico, o punho sofre hiperextensão, desvio ulnar e supinação. A transmissão da força começa no lado radial e progride pelo carpo, com perda sucessiva das conexões que mantêm o semilunar relacionado aos ossos vizinhos.\n\n| Estágio | Evento principal |\n| --- | --- |\n| I | Dissociação escafolunar ou fratura do escafoide |\n| II | Luxação capitolunar |\n| III | Ruptura lunopiramidal |\n| IV | Luxação do semilunar |\n\nNo estágio III, a lesão chega ao lado ulnar e rompe a relação lunopiramidal. O capítulo destaca a falha do componente palmar desse ligamento e de expansões associadas. O semilunar ainda pode permanecer alojado na faceta do rádio, apesar de o restante do carpo ter perdido a organização ao seu redor.\n\nNo estágio IV, o capitato deslocado exerce pressão que força o semilunar a rodar e luxar para palmar, geralmente usando os ligamentos volares remanescentes como dobradiça. **Luxação perilunar e luxação do semilunar não são imagens equivalentes:** na primeira, o semilunar pode continuar alinhado ao rádio; na segunda, ele também abandona essa relação.",
-  "correta": "**B: lunopiramidal.** Sua ruptura completa a progressão para o lado ulnar no estágio III. É necessário distinguir esse evento da ruptura escafolunar inicial e da luxação do próprio semilunar, que caracteriza o estágio seguinte.",
+  "conceito": "Mayfield descreve a progressão da lesão em torno do semilunar. Depois da falha radial escafossemilunar e do deslocamento dorsal do capitato, a força chega ao lado ulnar e compromete o **lunopiramidal**. A ruptura da sua porção palmar completa o estágio III descrito na fonte.\n\nNesse ponto, o carpo pode estar deslocado enquanto o semilunar ainda permanece na fossa do rádio. Isso distingue a luxação perilunar da luxação do próprio semilunar, que ocorre no IV com a perda da contenção radiocárpica dorsal.\n\nOs ligamentos palmares não precisam desaparecer todos para que o último estágio aconteça: o radiolunar curto costuma permanecer como parte da dobradiça do semilunar. Reconhecer a sequência evita trocar uma estrutura preservada pela que define o estágio perguntado. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+  "correta": "Correta: B (lunopiramidal). É a ligação ulnar que falha no III; a fonte destaca a ruptura palmar e as expansões do radiolunar longo na conclusão desse passo. O semilunar ainda pode permanecer apoiado no rádio.",
   "incorretas": {
-   "A": "**É o evento do estágio I.** A perda da conexão radial inicia a sequência clássica. Uma lesão transescafoide pode transmitir a força pelo osso e poupar esse ligamento, mas não altera qual relação caracteriza o estágio III.",
-   "C": "**Pode permanecer como dobradiça volar.** O capítulo descreve sua preservação típica durante certas luxações do semilunar. Sua ruptura completa pode acompanhar lesões mais extremas, mas não define o estágio III de MAYFIELD.",
-   "D": "**Sua falha participa da luxação do semilunar no estágio IV.** O deslocamento palmar do semilunar exige perda de contenções adicionais. No III, o marco principal é a ruptura lunopiramidal."
+   "A": "A falha escafolunar é o marco inicial, estágio I. Embora faça parte da sequência cumulativa, não é a ruptura que acrescenta o passo ulnar e completa o III.",
+   "C": "O radiolunar curto costuma continuar íntegro inclusive na luxação palmar do semilunar do IV. Portanto, não deve ser apresentado como a estrutura que precisa romper para completar o III.",
+   "D": "A ruptura radiocárpica dorsal permite que o próprio semilunar gire para palmar no IV. Escolhê-la antecipa o estágio final, em vez de identificar a perda da ligação lunopiramidal do III."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Mayfield e a luxação perilunar"
+     ],
+     "blocos": [
+      "mayfield-e-a-luxacao-perilunar-07798063",
+      "mayfield-e-a-luxacao-perilunar-c96b9191",
+      "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+      "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "7e3590295536f6507593afee264077f1360585b4b1b80dd8ac1d06387a66f44c"
+    }
+   ],
+   "questaoSha256": "c55784eea1ddd52b99921d1cacc12745556407ce2697d81e3dcf2af620efa99c",
+   "comentarioSha256": "99da3abc9a11d41095a7185009c82c831150cb17856a467f4db6107536c05d94"
+  }
  },
  "mao-1690": {
   "conceito": "**É preciso localizar o semilunar, não apenas perceber que o carpo está desalinhado.** No perfil normal, rádio, semilunar e capitato mantêm uma relação longitudinal. Nas imagens apresentadas, o semilunar está deslocado e rodado para a face palmar, fora de sua relação habitual com a faceta do rádio.\n\nNa progressão de MAYFIELD, o estágio I envolve a relação escafolunar, o II acrescenta luxação capitolunar e o III completa a ruptura lunopiramidal. O estágio IV ocorre quando o semilunar também luxa. A posição palmar pode trazer o osso para a região do túnel do carpo e colocar o nervo mediano em risco.\n\nA distinção visual principal é entre **luxação perilunar com semilunar ainda na faceta radial** e **luxação do semilunar**. A primeira já é grave, mas não exige que o semilunar esteja luxado. A segunda demonstra progressão adicional da perda de contenção.\n\nO capítulo apresenta essa figura também como lesão HERZBERG IIB. As classificações respondem a critérios diferentes e seus números não podem ser trocados: MAYFIELD descreve a sequência de propagação; HERZBERG distingue a posição do semilunar e sua rotação. Na avaliação inicial, redução imediata e exame neurovascular são prioridades, independentemente de decorar o código.",
@@ -26565,46 +26686,122 @@
   "conferido": false
  },
  "mao-1691": {
-  "conceito": "**Pequeno e grande arco descrevem o caminho da lesão.** No pequeno arco, a força rompe as conexões ligamentares ao redor do semilunar sem produzir a fratura que define o grande arco. No grande arco, a propagação atravessa ossos e ligamentos, produzindo uma fratura-luxação.\n\nO padrão mais comum de grande arco é a fratura-luxação transescafoide perilunar. O prefixo “trans” identifica a passagem pelo osso fraturado; “peri” descreve a luxação ao redor do semilunar. Outros ossos e estiloides também podem integrar esse trajeto.\n\n**Grande arco não significa lesão apenas óssea.** Mesmo quando a força atravessa o escafoide, é necessário procurar rupturas ligamentares e instabilidade residual. O ligamento escafolunar pode estar preservado em alguns padrões transescafoides, mas essa possibilidade não garante integridade de todas as outras conexões.\n\nNo pequeno arco, a ausência de um traço pode facilitar o erro diagnóstico. A leitura dos arcos de GILULA e do perfil é fundamental. A redução fechada é uma medida inicial, mas a imobilização isolada costuma ser insuficiente para manter estabilidade em lesões perilunares completas; o capítulo recomenda restauração anatômica e estabilização operatória na maioria dos casos.",
-  "correta": "**C: ligamentos; ossos e ligamentos.** O pequeno arco é ligamentar; o grande arco combina o componente ósseo com ruptura ligamentar. Essa distinção descreve o trajeto, sem sugerir que uma fratura-luxação dispensa avaliação e tratamento dos ligamentos.",
+  "conceito": "Pequeno e grande arco descrevem **por onde a energia atravessa o carpo** nas lesões perilunares. No pequeno arco, a trajetória é ligamentar, contornando o semilunar. No grande arco, ela também passa por osso e produz fraturas associadas à perda das relações articulares.\n\nA distinção explica os nomes das lesões: trans indica uma fratura, enquanto peri descreve luxação ao redor da estrutura nomeada. A transescafoperilunar é um exemplo de grande arco, com fratura do escafoide e luxação perilunar. A existência de fratura não elimina a necessidade de investigar estabilidade e lesões ligamentares.\n\nA energia pode atravessar diferentes ossos e formar combinações. Assim, grande arco não significa exclusivamente uma fratura isolada, e pequeno arco não significa uma lesão sem importância só porque a radiografia não mostra osso quebrado. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+  "correta": "Correta: C (ligamentos; ossos e ligamentos). A primeira parte corresponde à trajetória do pequeno arco; a segunda inclui as fraturas que caracterizam o grande arco, sem excluir o componente de instabilidade ligamentar.",
   "incorretas": {
-   "A": "**Inverte e simplifica os dois padrões.** O pequeno arco não é definido pela fratura. O grande arco também não é puramente ligamentar: a passagem da força pelo osso é o que o diferencia.",
-   "B": "**A primeira parte está correta, mas omite a fratura do grande arco.** Uma lesão perilunar apenas ligamentar corresponde ao pequeno arco. A componente óssea precisa estar incluída no segundo termo.",
-   "D": "**Troca os nomes dos trajetos.** O primeiro termo descreve grande arco, e o segundo descreve pequeno arco. A posição das palavras é decisiva para relacionar o padrão à presença ou ausência de fratura."
+   "A": "Inverte os dois padrões. O pequeno arco é ligamentar, enquanto a inclusão de fraturas ósseas pertence ao grande arco. A troca também confundiria uma luxação pura com uma fratura-luxação.",
+   "B": "A primeira parte está correta, mas a segunda omite o componente ósseo. Lesão apenas ligamentar não diferencia o grande arco, cujo próprio conceito inclui fraturas no trajeto da energia.",
+   "D": "A primeira parte atribui fraturas ao pequeno arco e a segunda retira essas fraturas do grande arco. É a combinação oposta à definição de ambos, mesmo que as duas lesões possam gerar instabilidade grave."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Mayfield e a luxação perilunar"
+     ],
+     "blocos": [
+      "mayfield-e-a-luxacao-perilunar-3a52a44f",
+      "mayfield-e-a-luxacao-perilunar-a286746f",
+      "mayfield-e-a-luxacao-perilunar-9979fb84"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "eb77d2e6a025f3e1e0121a2b7b0154e44a503f5064277d97a9fe9edbf1ea03f1"
+    }
+   ],
+   "questaoSha256": "f1a05eca411c21999b174339ee3cb860e350e49b2fd139c06bc50ed32582e287",
+   "comentarioSha256": "6e358128ac8e49bba32b0d0e6c9782e3ddb514a1fd0e460d2223ec4cb7bd4aba"
+  }
  },
  "mao-1692": {
-  "conceito": "**A redução não encerra o exame neurovascular.** Uma luxação perilunar pode comprimir o nervo mediano pela deformidade, deslocamento ósseo e edema. A redução imediata restaura a anatomia e pode aliviar a pressão, de modo que muitos pacientes apresentam melhora dos sintomas depois dela.\n\nIsso explica por que a liberação imediata do túnel do carpo não é obrigatória em todo paciente apenas por existir luxação. Entretanto, se os sintomas não se resolvem, aparecem tardiamente ou pioram, é necessário considerar descompressão. O capítulo é explícito: neuropatia mediana ou ulnar grave ou progressiva é indicação de exploração cirúrgica.\n\nO acesso palmar pode permitir liberação do túnel do carpo, avaliação do nervo e reparo de estruturas volares, enquanto a estabilização da lesão cárpica pode exigir abordagem dorsal, palmar ou auxílio artroscópico. A seleção depende do padrão, da possibilidade de redução e das lesões associadas.\n\nA tomografia é útil para estudar fraturas e geralmente é obtida depois da redução, mas não deve transformar um déficit progressivo em espera prolongada. **O nervo precisa ser reavaliado após a manobra e ao longo do tratamento.** Não se pode interpretar a persistência dos sintomas como um efeito esperado que só será resolvido quando os ligamentos cicatrizarem.",
-  "correta": "**D: exploração cirúrgica com descompressão do nervo mediano.** A persistência ou progressão muda a conduta: a redução não resolveu adequadamente o comprometimento neural. A exploração e a descompressão devem ser consideradas junto com o tratamento definitivo da instabilidade, em vez de aguardar a evolução dentro do gesso.",
+  "conceito": "A redução imediata da luxação perilunar pode aliviar os sintomas do mediano, mas **persistência ou progressão da neuropatia** muda a conduta. A fonte indica exploração e descompressão quando os sintomas não melhoram depois da redução ou surgem posteriormente; comprometimento grave ou progressivo exige exploração.\n\nO objetivo não é apenas alinhar a radiografia: é também retirar a condição que ameaça a função neural. A ausência de indicação de descompressão rotineira para todos os casos não deve ser confundida com autorização para observar indefinidamente uma neuropatia persistente.\n\nA tomografia pode ajudar a identificar fraturas depois da redução, mas não substitui essa decisão clínica. Exame complementar e tratamento da compressão respondem a problemas diferentes e precisam ser ordenados pela situação neurovascular. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+  "correta": "Correta: D (exploração com descompressão do mediano). A persistência ou piora depois de reduzir é justamente a condição que afasta a simples expectativa de melhora espontânea descrita para os sintomas que se resolvem com a redução.",
   "incorretas": {
-   "A": "**A observação prolongada não responde a um déficit que persiste ou piora.** Monitorar é necessário, mas não significa esperar semanas diante de possível compressão mantida. O capítulo identifica neuropatia grave ou progressiva como indicação de exploração.",
-   "B": "**O exame ajuda no planejamento, mas não é uma condição universal para tratar o nervo.** Pode caracterizar fraturas associadas após a redução. A indicação de exploração deriva do déficit clínico e não deve ser condicionada a uma regra de repetir TC em todos os casos.",
-   "C": "**Protege a redução, mas não remove uma compressão persistente.** O tratamento da luxação e o tratamento do comprometimento neural são problemas relacionados, porém distintos. Esperar cicatrização não substitui descompressão quando os sintomas continuam ou progridem."
+   "A": "Esperar até a retirada do gesso deixa sem resposta uma neuropatia que persiste ou piora. A fonte diferencia esse cenário daquele em que a redução resolve os sintomas e recomenda exploração quando há progressão ou falta de melhora.",
+   "B": "A tomografia tem papel no levantamento das fraturas, mas o resumo não a impõe antes de toda intervenção. Torná-la uma etapa obrigatória para qualquer exploração pode atrasar a conduta guiada pela neuropatia grave ou progressiva.",
+   "C": "Imobilizar protege o tratamento do carpo, mas não equivale a descomprimir um nervo que continua sintomático depois da redução. Aguardar consolidação ligamentar trata outra escala temporal e não satisfaz a indicação neural apresentada."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Mayfield e a luxação perilunar"
+     ],
+     "blocos": [
+      "mayfield-e-a-luxacao-perilunar-61bf80f6",
+      "mayfield-e-a-luxacao-perilunar-d991b46c",
+      "mayfield-e-a-luxacao-perilunar-05a279d4",
+      "mayfield-e-a-luxacao-perilunar-dae12b7d"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "df992b6debee64d7a67ac959fab5da1fef0b5312ea9ff140c3df0f483650569c"
+    }
+   ],
+   "questaoSha256": "375849551aa4918dde5e5619a21def0347dbc291f8d8e7743b6af42e006e4ea6",
+   "comentarioSha256": "6591b27304aa089ed2436971f64963620a0fe980ea8a1ec85395daced60cdca0"
+  }
  },
  "mao-1693": {
-  "conceito": "**A teoria das colunas é um modelo para organizar a biomecânica do carpo.** Na descrição clássica, a coluna lateral ou radial é móvel e formada por escafoide, trapézio e trapezoide. A central é formada por semilunar, capitato e hamato, relacionada à flexão e extensão. A medial ou ulnar, com piramidal e pisiforme, é relacionada à rotação.\n\nO modelo ajuda a entender transmissão de carga, mas não explica sozinho todos os movimentos sincronizados. O capítulo apresenta modificações e a teoria do anel ou das fileiras para complementar essa leitura. O escafoide conecta funcionalmente as duas fileiras, e o semilunar recebe influências que equilibram tendências à flexão e à extensão.\n\n**É preciso preservar o nome do modelo na pergunta.** TALEISNIK modificou as colunas ao incluir trapézio e trapezoide na central e retirar o pisiforme da medial. Na modificação, o escafoide é um estabilizador essencial da articulação mediocárpica e o piramidal é o ponto de apoio para a rotação. O desvio radial e ulnar é facilitado pela rotação lateral do escafoide e medial do piramidal.\n\nNa prática, essas teorias fornecem uma base para compreender por que uma fratura do escafoide ou uma ruptura interóssea altera o comportamento do conjunto, e não apenas de um osso isolado. Elas são modelos explicativos, não substitutos da avaliação radiográfica e ligamentar da lesão.",
-  "correta": "**D: flexão e extensão do punho.** É a função principal atribuída à coluna central clássica, formada por semilunar, capitato e hamato. A resposta relaciona a composição da coluna ao movimento que ela organiza no modelo de NAVARRO.",
+  "conceito": "A coluna formada por **semilunar, capitato e hamato** é a central na teoria clássica das colunas e está relacionada à **flexão e extensão**. A divisão em colunas é longitudinal e funcional; ela não coincide com a separação transversal em fileiras proximal e distal.\n\nA coluna lateral móvel reúne escafoide, trapézio e trapezoide, enquanto a medial de rotação reúne piramidal e pisiforme. A fonte ainda descreve a modificação de Taleisnik, que muda a composição de algumas colunas, e o papel do escafoide na estabilidade mediocárpica.\n\nEssas descrições não significam que cada coluna só se mova de uma forma e não participe do restante da função do punho. A questão pede a função principal atribuída ao conjunto central no modelo clássico. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Anatomia ligamentar e cinemática do carpo.",
+  "correta": "Correta: D (flexão e extensão). É a função vinculada à coluna central semilunar-capitato-hamato na descrição clássica. A presença de ossos de fileiras diferentes reforça que coluna e fileira são maneiras distintas de organizar o carpo.",
   "incorretas": {
-   "A": "**É a função relacionada à coluna medial no modelo clássico.** Piramidal e pisiforme formam essa coluna. Na modificação de TALEISNIK, a articulação piramidal-hamato funciona como ponto de apoio para rotação, mantendo uma distinção em relação à coluna de flexão e extensão.",
-   "B": "**Depende da interação das colunas e da rotação de ossos laterais.** Na explicação de TALEISNIK, escafoide e piramidal facilitam esses desvios. Isso não substitui flexão e extensão como função principal da coluna central nomeada.",
-   "C": "**É um papel destacado para o escafoide.** A coluna lateral participa da estabilidade entre as fileiras. A pergunta, porém, identifica a coluna central e pede a função principal que a define na teoria clássica."
+   "A": "A rotação é a função atribuída à coluna medial clássica, formada por piramidal e pisiforme. Transferi-la para o conjunto central troca o grupo funcional que a fonte descreve.",
+   "B": "O desvio radial e ulnar envolve movimento coordenado das fileiras, com flexão ou extensão da fileira proximal. Não é a função principal que o modelo das colunas atribui ao trio central, descrito como de flexoextensão.",
+   "C": "A estabilização mediocárpica é discutida em relação ao escafoide na modificação de Taleisnik. Não deve substituir a função de flexoextensão atribuída à coluna central clássica do enunciado."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição, capítulo 44, Carpal Fractures and Dislocations (Eric R. Wagner, Sanjeev Kakar e Michael B. Gottschalk)."
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Anatomia ligamentar e cinemática do carpo."
   ],
-  "geradoEm": "2026-10-12",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Anatomia ligamentar e cinemática do carpo"
+     ],
+     "blocos": [
+      "anatomia-ligamentar-e-cinematica-do-carpo-ac6a12e3",
+      "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+      "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "d397fbc74a9cae170d94e35ad0ad3bbd000f4adafc1ad7206c53312b8067c2b8"
+    }
+   ],
+   "questaoSha256": "45ad55d91498d06ae31f7f7c3e5adb61980ff7f6caca2a3cba5d759a5bc2176f",
+   "comentarioSha256": "6c47c40660eaed9252250fd8182d76c930431b030edff6428ca6d4fe35f397e9"
+  }
  },
  "mao-1694": {
   "conceito": "**Uma fratura que também é uma lesão ungueal.** SEYMOUR envolve a região fisária da falange distal, associada à lesão do leito ungueal. O dedo pode parecer um martelo: a ponta fica fletida, mas o problema está na fratura, e não necessariamente na avulsão do extensor. A lâmina ungueal pode sair de sua posição habitual e ficar superficial à prega proximal.\n\nO leito ungueal lesionado pode entrar entre os fragmentos. Isso explica por que a redução fechada falha e por que apenas corrigir a angulação não resolve toda a lesão. É preciso examinar a unha e reconhecer a comunicação do foco com a ferida: tratar uma lesão aberta como uma fratura fechada aumenta o risco de infecção e de problemas de consolidação.\n\n**O tratamento tem mais de um objetivo.** Remover o tecido interposto, limpar a lesão, obter redução e estabilidade, reparar o leito e recolocar adequadamente a lâmina ungueal. O fio de KIRSCHNER pode ser necessário para uma redução instável. A escolha não é entre “cuidar do osso” e “cuidar da unha”; ambos fazem parte da mesma lesão.\n\nA diferença para o martelo ósseo é importante: neste, o fragmento está na base dorsal, relacionado à inserção do extensor terminal. Em SEYMOUR, a localização do traço e o deslocamento da unha orientam o diagnóstico.\n\n**Leia a seção “Falange distal: tufo, martelo ósseo, jersey e Seymour”** no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca, para conferir o mecanismo e suas implicações.",

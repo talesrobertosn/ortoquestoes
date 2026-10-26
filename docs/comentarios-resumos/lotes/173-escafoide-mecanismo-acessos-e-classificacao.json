@@ -1,0 +1,253 @@
+{
+  "trauma-0015": {
+    "questaoSha256": "cb50eaf8c6596a552f5adf698d5a591db6edd1225fa31e7ccd9b17a4fea21311",
+    "comentarioAnteriorSha256": "f31eb3b5c5be5438af72f985184cbf32ce97de114d7a728edd06469b932197b1",
+    "comentario": {
+      "conceito": "A fratura isolada do escafoide costuma ocorrer quando a carga axial chega ao punho em **hiperextensão e desvio radial**. Nessa posição, o polo proximal fica contido entre rádio, capitato, radioescafocapitato e cápsula volar, enquanto a carga dobra o osso.\n\nA cintura recebe o maior momento de flexão e tem menos trabéculas, o que ajuda a explicar por que é o local mais comum do traço. O mecanismo não deve ser confundido com o arco perilunar clássico, que associa hiperextensão, desvio ulnar e supinação intercarpal.\n\nA mesma queda sobre a mão pode produzir padrões diferentes conforme a posição do punho e a energia. Identificar qual lesão está sendo perguntada evita transferir a combinação da instabilidade ligamentar para a fratura isolada do escafoide. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de anatomia/mecanismo e Mayfield.",
+      "correta": "Correta: D (hiperextensão e desvio radial). É a combinação descrita para o cisalhamento do escafoide na mediocárpica, com o polo proximal contido e a carga produzindo flexão do osso, especialmente na cintura.",
+      "incorretas": {
+        "A": "Hiperflexão e desvio ulnar não reproduzem a combinação que prende o polo proximal e dobra o escafoide descrita no resumo. A alternativa troca tanto o sentido sagital do punho quanto o desvio lateral do mecanismo perguntado.",
+        "B": "O desvio radial está de acordo com o mecanismo, mas a hiperflexão inverte a posição sagital: a fonte descreve dorsiflexão máxima, isto é, hiperextensão. Um componente correto não torna equivalente a combinação inteira.",
+        "C": "A hiperextensão está correta, porém o desvio ulnar remete ao mecanismo perilunar clássico quando associado à supinação intercarpal. A fratura isolada do escafoide descrita na fonte é favorecida por desvio radial."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-ca12c5a0",
+          "mayfield-e-a-luxacao-perilunar-501fc79c"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "bb572beda7d241a1bd4b5db00d148689eb3bfa23e8a2255ba32d0473cf97289a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0041": {
+    "questaoSha256": "236bdcb1d2645c9554d075513662e02a6ac846fee308da74831f0f628e390d66",
+    "comentarioAnteriorSha256": "31224f369f4e2f8834c46cdbda87848abfc889521c7f26af41b083eb6e842282",
+    "comentario": {
+      "conceito": "No acesso volar descrito para o escafoide, a incisão acompanha o **flexor radial do carpo**, abre sua bainha e permite afastá-lo para ulnar. O ramo palmar superficial da artéria radial é mobilizado ou ligado, e a cápsula é aberta preservando o radioescafocapitato.\n\nO detalhe decisivo é entrar pela bainha do tendão de referência, não simplesmente escolher qualquer intervalo entre músculos anteriores. O flexor radial do carpo é superficial, enquanto o flexor longo do polegar está no plano profundo do antebraço. Nomear outro tendão muda o plano proposto.\n\nTambém é necessário distinguir esse acesso da via de Henry ao rádio: no terço distal do antebraço, Henry usa o intervalo entre braquiorradial e flexor radial do carpo. A proximidade regional não torna os dois planos intercambiáveis. Conteúdo consultado nos resumos do Rockwood and Green, 10ª edição, capítulos 44 e 42, seções de acesso volar ao escafoide, Henry e músculos/compartimentos.",
+      "correta": "Correta: A (através da bainha do flexor radial do carpo). É o plano descrito para a via volar do escafoide. A abertura da bainha e o afastamento ulnar do tendão distinguem a técnica de uma dissecção apenas intertendinosa.",
+      "incorretas": {
+        "B": "Troca o tendão de referência pelo flexor longo do polegar, situado no plano profundo na descrição do antebraço. A fonte não orienta abrir sua bainha para esse acesso; descreve a bainha do flexor radial do carpo.",
+        "C": "O intervalo braquiorradial–flexor radial do carpo pertence à via de Henry no antebraço distal, onde a fonte também situa a artéria radial. Esse é um acesso ao rádio, diferente de entrar na bainha do flexor radial para alcançar a cápsula volar do escafoide.",
+        "D": "Coloca o plano entre flexor radial e flexor longo do polegar, estruturas descritas em camadas superficial e profunda. Isso não equivale ao corredor intrabainha do flexor radial do carpo, que é o passo especificado para o escafoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda.",
+        "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: Vias de acesso e o nervo interósseo posterior; O antebraço como articulação: arco radial, forças e rotação."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-cca2266f"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "bf09a8ac2aab48b6daad5dac92de6c2c01cf164b2f84d973466b1b9efe4d28d8"
+      },
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "Vias de acesso e o nervo interósseo posterior",
+          "O antebraço como articulação: arco radial, forças e rotação"
+        ],
+        "blocos": [
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905",
+          "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-442d9fa8"
+        ],
+        "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+        "trechosSha256": "3b00de7471dab7cf513dc167dc2bbd505d56f0d801b878a3b0360cb29ce9735d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0122": {
+    "questaoSha256": "b3e4cbd76dc14b36a6b02013cb0739cf676bcd38183f9c8bdedc81b45531219f",
+    "comentarioAnteriorSha256": "d479f3026320f96b36769812eb10751d0eced611fdc82a4a8d51eae42f65074b",
+    "comentario": {
+      "conceito": "A técnica clássica de Matti-Russe usa **enxerto não vascularizado por via volar**, também chamada ventral. O resumo descreve enxerto acomodado em um leito preparado na cortical volar dos dois fragmentos da pseudartrose, com variações de composição cortical ou corticoesponjosa.\n\nSeu objetivo precisa ser relacionado à geometria do escafoide. A técnica clássica tem dificuldade para devolver comprimento quando a cortical volar está encurtada; deformidade importante pode exigir uma cunha estrutural, como na estratégia de Fisk-Fernandez. Portanto, o nome da técnica não elimina a avaliação de alinhamento e defeito ósseo.\n\nEnxertos vascularizados, dorsais ou volares, são outras opções discutidas para pseudartroses selecionadas. Tipo de irrigação do enxerto e lado do acesso são características separadas, e não sinônimos. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: consolidação viciosa e pseudartrose.",
+      "correta": "Correta: D (não vascularizado, ventral). Ventral e volar designam aqui o mesmo lado do acesso. É a associação descrita para Matti-Russe clássico, sem confundi-la com enxertos levados por pedículo vascular.",
+      "incorretas": {
+        "A": "Propõe um enxerto vascularizado dorsal, enquanto Matti-Russe clássico é não vascularizado e volar. A fonte descreve retalhos pediculados dorsais entre outras técnicas, mas não os identifica como esse procedimento clássico.",
+        "B": "O lado ventral está correto, mas a condição vascular não: a técnica clássica usa enxerto não vascularizado. Uma transferência vascularizada volar compartilha a região, porém tem outra forma de suprimento e não é equivalente a Matti-Russe.",
+        "C": "O tipo não vascularizado corresponde ao clássico, mas o acesso dorsal não. O resumo descreve o leito volar de Matti-Russe e trata separadamente a preferência por via dorsal em intervenções no pequeno polo proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-8b0f9bfb",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-c0273553",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "8a9532aa9532deff94732265e90b262725eeb2b862501b97aaca03dc63541f0e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0167": {
+    "questaoSha256": "9493e3b97cdeac946508027b93aa043f6beca82c036c631f934e3759b16285f8",
+    "comentarioAnteriorSha256": "abfc9d0a86ed96fc516d7e23aacf98fd3b11ff90930538674ab3984886e7794b",
+    "comentario": {
+      "conceito": "O desvio carpal associado à fratura do escafoide é uma alteração de **alinhamento**, avaliada no **perfil neutro**, ou incidência lateral. É nesse plano que se compara a orientação do escafoide, do semilunar, do capitato e do rádio para identificar padrões como DISI e VISI.\n\nA distinção é entre ver o traço da fratura e avaliar a posição do conjunto. Oblíquas e incidências adicionais ajudam a expor partes do escafoide que se sobrepõem nas imagens usuais. Já o perfil permite examinar a angulação sagital do semilunar e sua relação com os ossos vizinhos.\n\nNa PA, espaços e arcos de Gilula também informam sobre estabilidade, mas respondem a outra perspectiva geométrica. Nenhuma incidência substitui todas as demais. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de diagnóstico/imagem e Padrões de instabilidade.",
+      "correta": "Correta: A (lateral). O perfil neutro é a incidência indicada no resumo para o desalinhamento em DISI ou VISI. A pergunta trata do desvio do carpo, não apenas da visualização de um traço no escafoide.",
+      "incorretas": {
+        "B": "A oblíqua semipronada ajuda a mostrar fraturas oblíquas, da cintura e do tubérculo, inclusive o desvio do traço. Isso não a torna a incidência de referência para o alinhamento sagital do carpo perguntado.",
+        "C": "A oblíqua semissupinada pode ajudar na avaliação do polo proximal, de avulsões e de humpback. Sua utilidade para a morfologia do escafoide não substitui o perfil neutro na análise do padrão carpal DISI/VISI.",
+        "D": "A PA permite observar espaços e os arcos de Gilula, cujas quebras sugerem fratura ou instabilidade. Entretanto, a orientação sagital e os ângulos usados no desvio carpal são avaliados no perfil, não nessa projeção frontal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: diagnóstico e imagem; Padrões de instabilidade: DISI, VISI e o que é dissociativo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: diagnóstico e imagem",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
+        ],
+        "blocos": [
+          "escafoide-diagnostico-e-imagem-a2e36c9b",
+          "escafoide-diagnostico-e-imagem-3a4d76e9",
+          "escafoide-diagnostico-e-imagem-1eee7173",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-4c2e069a",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-22ed1a15"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "c56ff0bcf6e39cfaf510be1b514f3b1c4bb3f1c9156b9fdddd040ce0047df1c6"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0190": {
+    "questaoSha256": "8cfcf15d6d5a095bf3d92fc02f57b261fdd2f357d99cf9a8268a9f4cc5120e31",
+    "comentarioAnteriorSha256": "623c64934e87b0f4997f5663a8144adc765c4f332c6cab449603fb232c444443",
+    "comentario": {
+      "conceito": "A pseudartrose do escafoide pode interromper a ponte mecânica que equilibra o carpo. O fragmento distal flete, enquanto o proximal estende com o semilunar. O padrão de extensão do semilunar é o **DISI**, instabilidade dorsal do segmento intercalado.\n\nNormalmente, o semilunar equilibra a tendência flexora do escafoide com a extensora do piramidal. Ao perder a continuidade funcional do escafoide, predomina a influência extensora. O desalinhamento pode participar da progressão para SNAC, o colapso avançado da pseudartrose, sem significar que toda pseudartrose tenha apresentação clínica idêntica.\n\nIsso é diferente de uma translação do carpo inteiro sobre o rádio. A classificação do sentido de uma deformidade angular não deve ser confundida com o deslocamento global do conjunto para radial ou ulnar. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de pseudartrose, Padrões de instabilidade e Luxação radiocárpica.",
+      "correta": "Correta: B (DISI). A extensão do polo proximal com o semilunar e a flexão do fragmento distal explicam essa associação. É o padrão mecânico descrito para o colapso da pseudartrose do escafoide.",
+      "incorretas": {
+        "A": "VISI corresponde ao semilunar em flexão e é relacionado à perda do elo lunopiramidal, com participação de estabilizadores secundários para deformidade fixa. É o sentido oposto ao desequilíbrio extensor da pseudartrose escafóidea descrita.",
+        "C": "A translação ulnar é um deslocamento do carpo em relação ao rádio, com mudança global de posição. A fonte a discute na instabilidade radiocárpica; isso difere da extensão do semilunar causada pela perda da continuidade do escafoide.",
+        "D": "Translação radial também descreve um deslocamento linear global, em outra direção. Não é o nome da deformidade angular em que o fragmento proximal e o semilunar estendem, identificada como DISI no mecanismo da pseudartrose."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal; Luxação radiocárpica."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação lunopiramidal",
+          "Luxação radiocárpica"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+          "dissociacao-lunopiramidal-5eb7978d",
+          "luxacao-radiocarpica-ffe770be"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "0b24d133dbaa664fbf5beda46669c404c55f4aff37522e478943f8d467a0c0a9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0731": {
+    "questaoSha256": "720ef26151c1ebb5d89ae970e0a2d1a386d068a13116e268dc7e09a400ef5201",
+    "comentarioAnteriorSha256": "8e2ad6a9616ec818fd908a37ef5089ca12156b3607f8773dadac4cbc2af2c3be",
+    "comentario": {
+      "conceito": "Entre os subtipos agudos de Herbert e Fisher apresentados, o mais prevalente é **B2, fratura completa da cintura**. A tabela do resumo lhe atribui 36,4%, enquanto A1 tem 14,6%, A2 tem 16,5% e B1 tem 21,2%.\n\nA classificação distingue fraturas agudas estáveis do grupo A e agudas instáveis do B, além de retardo e pseudartrose. Frequência não é a mesma coisa que gravidade biológica: a maior dificuldade de consolidação do polo proximal não significa que ele seja o local mais frequente.\n\nA prevalência da cintura também é coerente com a explicação mecânica do resumo, que a descreve submetida ao maior momento de flexão e com menos trabéculas no mecanismo habitual de queda. Os percentuais citados pertencem à tabela resumida, sem pretensão de serem constantes de toda população. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de mecanismo e Herbert/Fisher.",
+      "correta": "Correta: D (B2). A cintura completa reúne a maior proporção na tabela, 36,4%. O código descreve o padrão agudo e não deve ser confundido com B3 proximal ou B4 fratura-luxação.",
+      "incorretas": {
+        "A": "A1 é a fratura da tuberosidade, incluída nas agudas estáveis. Na tabela consultada representa 14,6%, abaixo de B2; seu prognóstico geralmente favorável não lhe atribui maior frequência.",
+        "B": "A2 é a fratura incompleta/unicortical da cintura. A localização é semelhante, mas o padrão não é o mesmo de B2 completo, e a frequência apresentada é 16,5%.",
+        "C": "B1 é a fratura oblíqua do terço distal, com 21,2% na tabela. Compartilha o grupo agudo instável com B2, mas não é o subtipo de maior prevalência entre as opções."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: anatomia, irrigação e mecanismo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: classificação de Herbert e Fisher",
+          "Escafoide: anatomia, irrigação e mecanismo"
+        ],
+        "blocos": [
+          "escafoide-classificacao-de-herbert-e-fisher-2b766b57",
+          "escafoide-classificacao-de-herbert-e-fisher-e20cb2e5",
+          "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
+          "escafoide-anatomia-irrigacao-e-mecanismo-ca12c5a0"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "3f3600d5d4a6448b7c0e61b5fa413c95db733da5cd128d947331b70ce96564fe"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

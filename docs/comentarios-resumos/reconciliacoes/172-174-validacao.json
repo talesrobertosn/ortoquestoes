@@ -1,0 +1,99 @@
+{
+  "baseEditorial": "a86044aed39907f843e5b99adee88f5af90cd01b",
+  "baseIntegracao": "1b837e0de3a0892c49b1f7569a7fa19c3642dead",
+  "lotes": {
+    "172": {
+      "revisadas": [
+        "mao-1687",
+        "mao-1688",
+        "mao-1689",
+        "mao-1691",
+        "mao-1692",
+        "mao-1693"
+      ],
+      "pendencias": 4
+    },
+    "173": {
+      "revisadas": [
+        "trauma-0015",
+        "trauma-0041",
+        "trauma-0122",
+        "trauma-0167",
+        "trauma-0190",
+        "trauma-0731"
+      ],
+      "pendencias": 4
+    },
+    "174": {
+      "revisadas": [
+        "mao-1681",
+        "trauma-0811",
+        "trauma-0483",
+        "trauma-0484",
+        "trauma-0808",
+        "trauma-0344"
+      ],
+      "pendencias": 4
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks172174.log": "a66fbffb0c4f883943338859f7c4796966e15a4409e37d0c66e7fd714845d05e",
+    "checks172-integracao.log": "6f627b969ca560d7b4d5b7a2e19131266b69d651ba8713a01ca24c5983f6cf14",
+    "ui172.log": "12b75ba653cbd3843e0c0bc0d16ac187199f2a9cc1986a4d762643dce85be4a2",
+    "remotos172-final.json": "8e46b809943ad4a5ec626d019afa3818e8966c49f76c3b4212da962f39c927b7"
+  },
+  "replay": "18/18 comentários, alternativas, fontes, hashes e avulsos integrais",
+  "preservacao": "12 comentários pendentes intactos; demais membros dos dois temas e questões/índice/progresso/Biblioteca preservados",
+  "visual": {
+    "casos": 18,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alertas": [],
+    "semGabaritoOficial": [],
+    "capturasInspecionadas": [
+      "172-mao-1687-aula-cel.png",
+      "172-trauma-0344-aula-pc.png",
+      "172-trauma-0041-fonte-cel.png"
+    ]
+  },
+  "imagensConferidas": [
+    "public/imagens/trauma/trauma-0344-1.jpeg"
+  ],
+  "fontes": [
+    {
+      "id": "rockwood10-44-carpo",
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "leitura": "Resumo integral lido anteriormente sem alterações; releitura dos blocos independentes usados, sem notas contextuais como fonte clínica e sem atribuir leitura do livro primário."
+    },
+    {
+      "id": "rockwood10-42-diafise-radio-ulna",
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+      "leitura": "Resumo integral lido anteriormente sem alterações; releitura dos blocos independentes usados, sem notas contextuais como fonte clínica e sem atribuir leitura do livro primário."
+    }
+  ],
+  "inventario": {
+    "resumos": 34,
+    "ids": 2483,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 496,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 364,
+      "pendente-inspecao-imagem": 83,
+      "revisada": 1442
+    }
+  },
+  "proximoLote": 175,
+  "publicacao": "Conferir head/CI, revisão, merge, guarda/deploy e produção no PR; validação local não antecipa publicação."
+}
