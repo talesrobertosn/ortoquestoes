@@ -38,12 +38,15 @@ const PRINCIPAIS: Item[] = [
   { destino: '/flashcards', rotulo: 'Flashcards', texto: 'Revisão rápida e jogo', icone: 'raio' },
   { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia', icone: 'rota', assinante: true },
 ]
+/** Em destaque (pedido do Tales, 25/10/2026): os dois recursos novos ganham cartões próprios, com arte em pixel. */
+const DESTAQUES: (Item & { arte: 'livros' | 'osso' })[] = [
+  { destino: '/resumos', rotulo: 'Resumos', texto: 'Os temas que mais caem, com as questões no meio do texto', icone: 'livro', novo: 'Beta', arte: 'livros' },
+  { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', novo: 'Novo', arte: 'osso' },
+]
 const GRUPOS: { titulo: string; itens: Item[] }[] = [
   {
     titulo: 'Estudar o conteúdo',
     itens: [
-      { destino: '/resumos', rotulo: 'Resumos', texto: 'Os temas que mais caem, com as questões no texto', icone: 'livro', novo: 'Beta' },
-      { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', novo: 'Novo' },
       { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
       { destino: '/flashcards/cripta', rotulo: 'Torneio de Flashcards', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
     ],
@@ -135,7 +138,7 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
   const atualDe = (item: Item) => item.destino === caminho || (item.destino !== '/conta' && caminho.startsWith(item.destino + '/'))
   // A busca do topo acha estas páginas pelo nome, pelo texto e por sinônimos de quem procura.
   const paginasBusca: PaginaBusca[] = [
-    ...[...PRINCIPAIS, { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' as const }, ...grupos.flatMap((g) => g.itens)]
+    ...[...PRINCIPAIS, ...DESTAQUES, { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' as const }, ...grupos.flatMap((g) => g.itens)]
       .map((i) => ({ destino: i.destino, rotulo: i.rotulo, texto: i.texto, icone: i.icone, chaves: SINONIMOS[i.destino] })),
     ...EXTRAS_BUSCA,
   ]
@@ -161,6 +164,16 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
             <strong>{item.rotulo}</strong>
             <small>{item.texto}</small>
             {bloqueadoDe(item) && <span className="mn-principal__selo"><SeloAssinante /></span>}
+          </a>
+        ))}
+      </nav>
+
+      <nav className="mn-destaques" aria-label="Em destaque">
+        {DESTAQUES.map((item) => (
+          <a key={item.destino} className={`mn-destaque mn-destaque--${item.arte}`} href={href(item.destino)} onClick={aoFechar} aria-current={atualDe(item) ? 'page' : undefined}>
+            <span className={`ip-px ip-px--${item.arte}`} aria-hidden="true"><i /><i /><i /></span>
+            <span className="mn-destaque__texto"><strong>{item.rotulo} <SeloNovo texto={item.novo} /></strong><small>{item.texto}</small></span>
+            <span className="mn-destaque__seta" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span>
           </a>
         ))}
       </nav>

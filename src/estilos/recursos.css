@@ -505,3 +505,37 @@
 :root[data-tema="escuro"] .faixa-planos { background: linear-gradient(135deg, #2e2412, #3a2d12); color: #ffe9b8; }
 :root[data-tema="escuro"] .faixa-planos__texto small { color: #d9c79e; }
 @media (max-width: 36rem) { .faixa-planos { grid-template-columns: auto minmax(0, 1fr); } .faixa-planos__acao { grid-column: 1 / -1; justify-content: center; } }
+
+/* Ícones em pixel desenhados em CSS (40px), usados no menu e nos atalhos da página inicial. */
+.ip-px { position: relative; flex: none; display: block; width: 40px; height: 40px; }
+.ip-px i { position: absolute; display: block; box-shadow: 0 0 0 2px #1b1208; }
+.ip-px--cartas i { width: 22px; height: 28px; border-radius: 2px; }
+.ip-px--cartas i:nth-child(1) { left: 4px; top: 8px; background: #2f7d62; transform: rotate(-12deg); }
+.ip-px--cartas i:nth-child(2) { left: 10px; top: 5px; background: #f4cf7c; transform: rotate(-2deg); }
+.ip-px--cartas i:nth-child(3) { left: 15px; top: 6px; background: #f6f1e3; transform: rotate(10deg); }
+.ip-px--cartas i:nth-child(3)::after { content: ""; position: absolute; left: 6px; right: 6px; top: 9px; height: 3px; background: #b5523a; box-shadow: 0 6px 0 #b5523a; }
+.ip-px--livros i { bottom: 4px; width: 9px; box-shadow: 0 0 0 2px #1b1208, inset 0 5px 0 -3px rgba(244, 207, 124, 0.9); }
+.ip-px--livros i:nth-child(1) { left: 5px; height: 26px; background: #2f7d62; }
+.ip-px--livros i:nth-child(2) { left: 16px; height: 32px; background: #b5523a; }
+.ip-px--livros i:nth-child(3) { left: 27px; height: 22px; background: #3d6aa8; transform: rotate(12deg); transform-origin: bottom left; }
+.ip-px--osso { transform: rotate(-30deg); }
+.ip-px--osso i { background: #f1e6cd; }
+.ip-px--osso i:nth-child(1) { left: 9px; top: 17px; width: 22px; height: 6px; }
+.ip-px--osso i:nth-child(2), .ip-px--osso i:nth-child(3) { top: 12px; width: 9px; height: 16px; border-radius: 4px; background: linear-gradient(to bottom, #f1e6cd 0 45%, #cdbb93 45% 55%, #f1e6cd 55%); }
+.ip-px--osso i:nth-child(2) { left: 2px; }
+.ip-px--osso i:nth-child(3) { right: 2px; }
+:root[data-tema="escuro"] .ip-px i { box-shadow: 0 0 0 2px #050807; }
+
+/* Menu: Resumos e Atlas 3D em destaque (25/10/2026), cartões largos com arte e um fundo leve de cada cor. */
+.mn-destaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+.mn-destaque { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.8rem 0.95rem; border: 2px solid var(--px-borda); border-radius: 6px; color: var(--texto); text-decoration: none; box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, border-color 0.12s; }
+.mn-destaque--livros { background: linear-gradient(135deg, color-mix(in srgb, #b5523a 10%, var(--superficie)), var(--superficie)); }
+.mn-destaque--osso { background: linear-gradient(135deg, color-mix(in srgb, #1d8a7f 13%, var(--superficie)), var(--superficie)); }
+.mn-destaque:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--px-sombra); border-color: var(--verdete); }
+.mn-destaque:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
+.mn-destaque[aria-current="page"] { border-color: var(--verdete); }
+.mn-destaque__texto strong { display: flex; align-items: center; gap: 0.4rem; font-size: 1.05rem; font-weight: 700; }
+.mn-destaque__texto small { display: block; margin-top: 0.1rem; color: var(--texto-2); font-size: 0.8rem; line-height: 1.35; }
+.mn-destaque__seta { color: var(--texto-2); }
+.mn-destaque:hover .mn-destaque__seta { color: var(--verdete); }
+@media (max-width: 40rem) { .mn-destaques { grid-template-columns: 1fr; } }
