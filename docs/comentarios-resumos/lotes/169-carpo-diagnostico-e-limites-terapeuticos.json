@@ -1,0 +1,247 @@
+{
+  "mao-0993": {
+    "questaoSha256": "b63807bb0cc3687a9d4de197f99bb49667e8a46a873f0236b393c831a539650b",
+    "comentarioAnteriorSha256": "94acfddad338af6de3872f660034f9b0bf74686b6c616ad1ad2794964785a1db",
+    "comentario": {
+      "conceito": "O colapso do carpo depois de uma lesão escafossemilunar crônica muda o objetivo da cirurgia. Quando a anatomia já não pode ser restaurada e há desgaste articular, reconstruir o ligamento não equivale a oferecer uma articulação funcional. Entram então os procedimentos de salvamento, entre eles a carpectomia proximal.\n\nA escolha depende especialmente da **cabeça do capitato e da fossa do semilunar**, que precisam oferecer superfícies aproveitáveis para a carpectomia convencional. O resumo a admite até o estágio II do colapso; no III, a artrose capitossemilunar torna essa opção inadequada sem interposição, e a fonte aponta escafoidectomia com artrodese parcial. Portanto, a palavra avançado, sozinha, não confirma a condição da cartilagem.\n\nO gabarito escolhe carpectomia entre três reconstruções ligamentares. Isso não autoriza indicar a operação indiscriminadamente para qualquer colapso avançado: estágio, redutibilidade e cartilagem ainda precisam ser avaliados. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar, resultados perilunares e artrose do colapso.",
+      "correta": "Correta: A (carpectomia), conforme o gabarito. É o procedimento de salvamento oferecido, em contraste com as reconstruções ligamentares das outras opções. Sua adequação depende de superfícies articulares preservadas; o enunciado não fornece estadiamento suficiente para generalizar a indicação a todo colapso avançado.",
+      "incorretas": {
+        "B": "Miniâncoras permitem reinserir um ligamento quando há tecido reparável, como na lesão aguda completa. Uma sequela crônica com colapso não deve ser tratada automaticamente como simples desinserção recente; as âncoras não desfazem degeneração ou deformidade fixa.",
+        "C": "A ligamentoplastia de Garcia-Elias é uma reconstrução tendínea para situações em que o ligamento não pode ser reparado, mas ainda é possível reduzir o desalinhamento e preservar a articulação. O colapso avançado exige verificar se essas condições ainda existem; não basta reconhecer o ligamento originalmente lesionado.",
+        "D": "O Brunelli clássico usa uma tira do flexor radial do carpo para controlar a flexão do escafoide, com fixação dorsal no rádio. Atua na estabilidade e no alinhamento; não substitui o salvamento quando o problema já é deformidade irredutível ou artrose. Também não deve ser confundido com a modificação triligamentar que não se prende ao rádio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Artrose do colapso: SNAC e SLAC; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false,
+      "alerta": "A oficial preservada. O enunciado diz colapso avançado, mas não informa cartilagem ou estágio. O resumo admite carpectomia convencional com cabeça do capitato e fossa do semilunar aproveitáveis; no estágio III, com artrose capitossemilunar, ela perde a indicação sem interposição. A escolha entre as alternativas não deve virar indicação universal para qualquer colapso avançado."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Artrose do colapso: SNAC e SLAC",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-8935e6ce",
+          "artrose-do-colapso-snac-e-slac-db418f5b",
+          "artrose-do-colapso-snac-e-slac-118d45f0",
+          "mayfield-e-a-luxacao-perilunar-7a90dc33",
+          "dissociacao-escafossemilunar-65f85568",
+          "dissociacao-escafossemilunar-70e9de02",
+          "dissociacao-escafossemilunar-7503c999"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "a1450ce071eb24f987213221747a7e2125947a9f7d2afb885e8d95882e07e83b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1209": {
+    "questaoSha256": "7c015a321462c59f88a001667a3c8bb71230f4a3210edbf562c6787cfc8e49e5",
+    "comentarioAnteriorSha256": "10c06a2341f99d346da64d63dea9d5d7a6bb71b13518e8df1747cf25856105f3",
+    "comentario": {
+      "conceito": "O estágio III de Garcia-Elias combina dois dados que precisam ser separados: o ligamento escafossemilunar é **irreparável**, mas o alinhamento do escafoide e do semilunar ainda é normal. A falta de tecido para sutura não implica obrigatoriamente que o carpo já esteja deformado.\n\nO algoritmo avalia reparabilidade, posição dos ossos, redutibilidade de eventual deformidade e estado da cartilagem. No II, o ligamento ainda é reparável. No IV, o ligamento é irreparável e já há desalinhamento rotatório, mas ele pode ser reduzido. A deformidade irredutível constitui uma situação posterior no algoritmo terapêutico.\n\nEssa gradação explica por que nem toda lesão crônica recebe a mesma operação. Para o III, o resumo apresenta capsulodeses e ligamentoplastias, enquanto o desalinhamento redutível do IV exige reconstruir mantendo a redução. Não há gabarito oficial registrado; a resposta provável se baseia no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+      "correta": "Resposta provável: B (irreparável, com alinhamento normal). É a definição explícita de III na fonte. O acervo não registra resposta oficial, e a classificação sustenta essa alternativa como única entre as descrições oferecidas.",
+      "incorretas": {
+        "A": "Reparável corresponde ao estágio II da ruptura completa, em que ainda se pode realizar reparo direto. A palavra não descreve o III: nele, a aparência alinhada dos ossos não deve ser confundida com qualidade suficiente do tecido ligamentar.",
+        "C": "A irreparabilidade está correta, mas a subluxação rotatória redutível acrescenta desalinhamento e caracteriza o IV. A diferença para o III é a posição dos ossos, não apenas a possibilidade de reduzir uma deformidade já instalada.",
+        "D": "Uma subluxação rotatória irredutível significa que a deformidade já não volta à posição desejada pelas manobras de redução. Isso vai além do estágio III, que ainda tem alinhamento normal; no algoritmo de tratamento do resumo, a deformidade irredutível sem artrose é V."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-614919e2",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "dissociacao-escafossemilunar-f6a7a76b",
+          "dissociacao-escafossemilunar-fcaf9e16"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "31ac04afbc0af347365cebae18deeefa887c7e8b3137a32b95062261cd485c80"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1259": {
+    "questaoSha256": "115e90d55dd3d3503f171c08d3972f33e361140294782bedf44f04e49e711bb5",
+    "comentarioAnteriorSha256": "f2b72e223c436842e9800075501be885addece7160186a24b7926b834d5940b8",
+    "comentario": {
+      "conceito": "A incidência de **Ziter** é uma projeção adicional para estudar o escafoide, especialmente sua cintura. Faz-se AP com desvio ulnar e angulação do tubo de 20° em direção ao cotovelo. A orientação do feixe em relação ao eixo do osso ajuda a expor uma região que pode ficar sobreposta nas radiografias usuais.\n\nIsso importa porque uma fratura do escafoide sem desvio pode não aparecer inicialmente. Uma projeção adicional melhora a investigação, mas uma radiografia negativa não encerra a avaliação se a suspeita clínica persistir; o resumo descreve reavaliação e exames avançados nesses casos.\n\nAs incidências escolhidas para outros problemas respondem a perguntas diferentes: estresse comparativo para instabilidade dinâmica, túnel do carpo e oblíquas para o hâmulo e perfil em supinação/túnel para pisiforme. Não há gabarito oficial registrado; conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de diagnóstico do escafoide e fraturas dos outros ossos do carpo.",
+      "correta": "Resposta provável: A (fratura de escafoide). A posição e a angulação de Ziter são descritas para mostrar o escafoide, incluindo sua cintura. É uma incidência complementar, sem a promessa de excluir toda fratura oculta apenas com essa imagem.",
+      "incorretas": {
+        "B": "Na instabilidade escafossemilunar, a investigação procura diástase e perda de alinhamento, com comparação entre punhos e incidências de estresse quando necessário. Essa finalidade não deve ser confundida com a projeção adicional de Ziter orientada ao escafoide.",
+        "C": "Para o hâmulo do hamato, o resumo destaca a incidência do túnel do carpo e oblíquas, além de uma alternativa com desvio radial e abdução do polegar. O gancho exige um estudo diferente da AP em desvio ulnar de Ziter.",
+        "D": "O pisiforme é um sesamoide no flexor ulnar do carpo, no lado ulnar e palmar do punho. O resumo orienta perfil em 20° a 45° de supinação e túnel do carpo para sua fratura; isso difere da projeção de Ziter para o escafoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: diagnóstico e imagem; Dissociação escafossemilunar; Fraturas dos outros ossos do carpo."
+      ],
+      "conferido": false,
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: diagnóstico e imagem",
+          "Dissociação escafossemilunar",
+          "Fraturas dos outros ossos do carpo"
+        ],
+        "blocos": [
+          "escafoide-diagnostico-e-imagem-0643b185",
+          "escafoide-diagnostico-e-imagem-54713833",
+          "escafoide-diagnostico-e-imagem-8899eeb9",
+          "dissociacao-escafossemilunar-b886eabc",
+          "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
+          "fraturas-dos-outros-ossos-do-carpo-7938f85e"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "ed622cec6322547d75078eda7bbbf3a69766d5f2c1c4f357b601361aa217a45f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1319": {
+    "questaoSha256": "c6d0001c243c1c00b008c50f7c0f5d01efbd36884adabd772fb7ca6983ce96ea",
+    "comentarioAnteriorSha256": "dcb1ed027f05133b1fdac86959503886608a75c13b4968b417450b9ae2e4526a",
+    "comentario": {
+      "conceito": "O escafoide não tem um risco uniforme de não união. Desvio e localização proximal pioram o prognóstico, enquanto fraturas sem desvio podem consolidar em proporções muito altas. O resumo fala em pseudartrose de **até 10% no geral**, com números diferentes por padrão e tratamento.\n\nA banca escolheu a estimativa de 10% a15% de C. O trecho consultado não confirma seu limite superior, portanto a resposta oficial precisa ser estudada com essa ressalva. As outras opções trocam conceitos anatômicos e técnicos: o polo proximal é favorecido pelo acesso dorsal, a flexão usada nessa via pode desreduzir uma fratura instável e as radiografias iniciais deixam escapar 30% a 40%, segundo o resumo.\n\nNenhum desses valores deve ser transportado para uma população diferente sem cuidado. Taxa de pseudartrose não é taxa de necrose, e radiografia inicial negativa não significa ausência de fratura. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de diagnóstico, tratamento agudo e pseudartrose.",
+      "correta": "Correta: C (10%–15%), conforme o gabarito oficial. O resumo consultado informa até 10% de pseudartrose no geral e risco variável por padrão; ele não valida integralmente o intervalo da prova. A letra é preservada com essa diferença explícita, sem ensinar 15% como taxa universal.",
+      "incorretas": {
+        "A": "O resumo prefere miniacesso dorsal para a fixação do polo proximal. Essa trajetória facilita atingir e fixar o fragmento pequeno e exige preservar sua entrada vascular; a alternativa inverte a preferência ao impor a via volar.",
+        "B": "A flexão é usada para a entrada dorsal, mas pode desreduzir uma fratura instável. Assim, a posição necessária à passagem do fio não deve ser convertida em uma vantagem de redução para todos os padrões.",
+        "D": "O resumo informa 30% a 40% de fraturas não vistas na radiografia inicial, e não 50%. A limitação da radiografia é real, mas não autoriza trocar o percentual; persistindo suspeita clínica, a investigação deve continuar com reavaliação ou exame avançado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Escafoide: diagnóstico e imagem; Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false,
+      "alerta": "C oficial preservada. O resumo descreve até 10% de pseudartrose no geral e taxas distintas por padrão/tratamento, sem confirmar todo o intervalo 10%–15% da alternativa. Para D, a fonte informa 30%–40% de fraturas ocultas na radiografia inicial, não 50%. Essas proporções não são intercambiáveis com taxas de necrose."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Escafoide: diagnóstico e imagem",
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-74d9a418",
+          "escafoide-diagnostico-e-imagem-54713833",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49",
+          "escafoide-tratamento-da-fratura-aguda-594f812e"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "b34d52a9bad7f16b9d664a14439637b7253787f233970836e9c23165f1670655"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1434": {
+    "questaoSha256": "aa296e0124842750d05ab89826b4ddd346a369572c84626cc6f45c2fb97d8097",
+    "comentarioAnteriorSha256": "ab9e15c3261c65e569fb72724f9aa2c3b8ddfec817a5b10f3cda88e34bcec209",
+    "comentario": {
+      "conceito": "Na classificação de Herbert, o grupo **D** indica pseudartrose, e o subtipo **D2** corresponde à forma esclerótica, associada a instabilidade e deformidade progressiva. A alternativa que diz apenas pseudartrose é, portanto, a categoria correta, embora menos específica do que o código completo.\n\nÉ preciso separar a morfologia da fratura aguda de seu estado de consolidação. Uma cintura completa ou uma fratura-luxação perilunar pertence ao grupo B das lesões agudas instáveis. O grupo C representa retardo de consolidação. O D já expressa pseudartrose; D1 é a forma fibrosa e D2, a esclerótica.\n\nNa pseudartrose instável, a perda da continuidade do escafoide pode permitir flexão distal, extensão proximal e DISI, favorecendo colapso e artrose. O código não é apenas um número de desvio da fratura aguda. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Herbert e Fisher e pseudartrose.",
+      "correta": "Correta: D (pseudartrose do escafoide). D2 é mais especificamente a pseudartrose esclerótica; a opção oferece o grupo correto, enquanto os outros itens descrevem fraturas agudas ou retardo de consolidação.",
+      "incorretas": {
+        "A": "A fratura completa da cintura pertence ao grupo B, especialmente B2, das fraturas agudas instáveis. O desvio ou a completude do traço não transformam por si uma lesão aguda em pseudartrose D2.",
+        "B": "A fratura-luxação transescafoperilunar é B4. O comprometimento do alinhamento do carpo aumenta sua complexidade, mas o critério continua sendo o padrão agudo associado à luxação, diferente do estado de não união esclerótica.",
+        "C": "Retardo de consolidação é o grupo C, descrito com persistência do traço, alargamento e outros sinais de atraso. A classificação o separa da pseudartrose D, portanto não se deve tratar as duas fases como sinônimas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: classificação de Herbert e Fisher",
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
+          "escafoide-classificacao-de-herbert-e-fisher-15c87e8c",
+          "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "fd395b109ea1469c58a37ba975f69e2bba7baa1e972f49b67c7f8b203581a62f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1530": {
+    "questaoSha256": "c395605bbe8d1254ee45f050d33acecda22db83eb50ddad2c46f73a983fa3d98",
+    "comentarioAnteriorSha256": "750bbeabe3c3ae5cfaa85e0f9ec957c6446e941d5c82fa094ad4d43d9ecff17d",
+    "comentario": {
+      "conceito": "Na fixação percutânea volar do escafoide, o corredor descrito no resumo tem a vantagem de **não haver tendão no trajeto de entrada**. Isso não significa que a região palmar do punho inteira seja desprovida de tendões: a afirmação é sobre a trajetória planejada do procedimento.\n\nO punho fica estendido e em desvio ulnar, o que afasta o trapézio e ajuda a redução. A entrada é junto ao tubérculo, e a fonte aponta a menor centralidade do parafuso como uma limitação em comparação com a via dorsal. Já a via dorsal facilita uma trajetória central e melhor compra no polo proximal, embora a flexão necessária possa desreduzir um padrão instável.\n\nAssim, a escolha da via deve responder à localização e à geometria da fratura. Acesso, posição do punho e objetivo da trajetória são decisões relacionadas, mas diferentes. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: tratamento da fratura aguda.",
+      "correta": "Correta: B (não haver tendões na via de acesso). É a vantagem do corredor percutâneo descrito pela fonte, não uma negação da anatomia tendínea palmar. Planejar corretamente a entrada continua sendo necessário.",
+      "incorretas": {
+        "A": "O resumo atribui à via dorsal a maior facilidade de centralizar o parafuso e caracteriza o volar como menos central. Isso afasta A como a vantagem distintiva pretendida na comparação. O trecho não prova que qualquer trajetória central seja impossível pela via volar; ler permite como mera possibilidade torna a redação ampla, ressalva mantida no alerta.",
+        "C": "Para o pequeno fragmento do polo proximal, a fonte prefere a via dorsal, que facilita a compra do parafuso. Isso difere da vantagem do corredor volar e impede apresentá-lo como acesso principalmente indicado para esse polo.",
+        "D": "A posição descrita para a via volar é extensão com desvio ulnar, que ajuda a reduzir e afasta o trapézio. Trocar ulnar por radial inverte o componente do posicionamento que favorece esse acesso na técnica resumida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada: a ausência de tendão refere-se ao trajeto percutâneo descrito. A fonte compara a via volar como menos central e a dorsal como mais favorável à centralização, mas não demonstra impossibilidade absoluta de um parafuso central pela via volar. A expressão permite em A é mais ampla que a distinção técnica empregada pelo gabarito."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-c114353d",
+          "escafoide-tratamento-da-fratura-aguda-dcc89a77",
+          "escafoide-tratamento-da-fratura-aguda-594f812e",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "5d545bb0e9c16ca8c7fb79201fb0bd78cda96bf342204ea995abe2c487a4975e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
