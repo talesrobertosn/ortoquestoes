@@ -1,0 +1,119 @@
+/* Conquistas do dia (26/10/2026): cartão em pixel art que cai do alto, quica e mostra a arte girando
+   como moeda, com faíscas quadradas e raios no fundo. A cor do nível (bronze, prata, ouro, diamante)
+   vem em --cq-nivel; o resto usa os tokens do site e funciona no tema escuro. */
+.cq-vivo {
+  --cq-tinta: var(--px-tinta, #1b1208);
+  --cq-fundo: var(--superficie, #fff);
+  position: fixed;
+  z-index: 170;
+  top: calc(76px + env(safe-area-inset-top));
+  left: 50%;
+  width: min(430px, calc(100vw - 24px));
+  transform: translateX(-50%);
+  pointer-events: none;
+  font-family: var(--fonte-texto);
+}
+.cq {
+  --cq-nivel: #cd7f3e;
+  --cq-claro: #f2b27c;
+  position: relative;
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 10px 40px 14px 10px;
+  border: 3px solid var(--cq-tinta);
+  border-radius: 4px;
+  background: var(--cq-fundo);
+  color: var(--texto);
+  box-shadow: inset 0 0 0 3px color-mix(in srgb, var(--cq-nivel) 55%, transparent), 5px 5px 0 var(--cq-tinta);
+  overflow: hidden;
+  pointer-events: auto;
+  animation: cq-pulo 0.78s cubic-bezier(0.2, 0.9, 0.25, 1) both;
+}
+.cq--prata { --cq-nivel: #8d9aa6; --cq-claro: #e6edf2; }
+.cq--ouro { --cq-nivel: #e2a92b; --cq-claro: #fff1a6; }
+.cq--diamante { --cq-nivel: #3fb8d2; --cq-claro: #c9f6ff; }
+/* faixa de brilho que atravessa o cartão no ouro e no diamante */
+.cq--ouro::after, .cq--diamante::after {
+  content: ""; position: absolute; inset: -40% auto -40% -30%; width: 34%;
+  background: linear-gradient(100deg, transparent, color-mix(in srgb, var(--cq-claro) 70%, transparent), transparent);
+  transform: skewX(-18deg) translateX(-120%);
+  animation: cq-brilho 1.6s 0.75s ease-in-out both;
+  pointer-events: none;
+}
+.cq--saindo { animation: cq-sai 0.36s ease-in both; }
+
+/* ---------- Palco: raios, arte, sombra e faíscas ---------- */
+.cq__palco { position: relative; display: grid; place-items: center; width: 76px; height: 76px; }
+.cq__raios {
+  position: absolute; inset: -8px; border-radius: 50%;
+  background: repeating-conic-gradient(color-mix(in srgb, var(--cq-nivel) 34%, transparent) 0 14deg, transparent 14deg 30deg);
+  mask: radial-gradient(circle, #000 40%, transparent 71%);
+  animation: cq-raios 7s linear infinite;
+}
+.cq__arte { position: relative; display: block; line-height: 0; filter: drop-shadow(2px 2px 0 color-mix(in srgb, var(--cq-tinta) 30%, transparent)); animation: cq-moeda 0.9s 0.2s cubic-bezier(0.2, 0.7, 0.3, 1) both, cq-quica 1.15s 1.15s ease-in-out infinite; }
+.cq__arte svg { display: block; image-rendering: pixelated; }
+.cq__chao { position: absolute; bottom: 2px; width: 40px; height: 4px; background: color-mix(in srgb, var(--cq-tinta) 16%, transparent); animation: cq-sombra 1.15s 1.15s ease-in-out infinite; }
+.cq__faiscas { position: absolute; inset: 0; }
+.cq__faiscas i {
+  position: absolute; left: 50%; top: 50%; width: 5px; height: 5px; margin: -2.5px;
+  background: var(--cq-claro); box-shadow: 0 0 0 1px var(--cq-tinta);
+  opacity: 0;
+  animation: cq-faisca 0.75s var(--t) steps(6) both;
+}
+.cq__faiscas i:nth-child(3n) { background: var(--cq-nivel); }
+
+/* ---------- Texto ---------- */
+.cq__corpo { display: grid; gap: 2px; min-width: 0; }
+.cq__rotulo {
+  justify-self: start; padding: 1px 6px; background: var(--cq-tinta); color: var(--cq-claro);
+  font-family: var(--fonte-pixel, monospace); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.cq__titulo { margin-top: 3px; font-family: var(--fonte-pixel-titulo, var(--fonte-pixel, inherit)); font-size: 1.45rem; font-weight: 400; line-height: 1; letter-spacing: 0.01em; color: var(--texto); }
+.cq__texto { font-size: 0.86rem; line-height: 1.4; color: var(--texto-2); }
+.cq__marca { justify-self: start; margin-top: 4px; padding: 0 6px; border: 2px solid var(--cq-tinta); background: color-mix(in srgb, var(--cq-nivel) 28%, var(--cq-fundo)); font-family: var(--fonte-pixel, monospace); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+.cq__fechar {
+  position: absolute; top: 6px; right: 6px; display: grid; place-items: center; width: 30px; height: 30px;
+  border: 0; border-radius: 3px; background: transparent; color: var(--texto-2); cursor: pointer;
+}
+.cq__fechar:hover { background: color-mix(in srgb, var(--cq-nivel) 18%, transparent); color: var(--texto); }
+.cq__fechar:focus-visible { outline: 2px solid var(--verdete); outline-offset: 1px; }
+.cq__fechar path { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: square; }
+.cq__tempo { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--cq-nivel); transform-origin: left; animation: cq-tempo var(--duracao, 5600ms) linear both; }
+
+/* ---------- Movimento ---------- */
+/* cai do alto e quica duas vezes, como um bloco de jogo */
+@keyframes cq-pulo {
+  0% { transform: translateY(-150%) scale(0.86); opacity: 0; }
+  38% { transform: translateY(8px) scale(1.03, 0.93); opacity: 1; }
+  56% { transform: translateY(-12px) scale(0.99, 1.02); }
+  72% { transform: translateY(2px) scale(1.01, 0.98); }
+  84% { transform: translateY(-4px); }
+  100% { transform: none; }
+}
+@keyframes cq-sai { to { transform: translateY(-130%) scale(0.92); opacity: 0; } }
+@keyframes cq-moeda { 0% { transform: scale(0.2) rotateY(0); } 60% { transform: scale(1.12) rotateY(620deg); } 100% { transform: scale(1) rotateY(720deg); } }
+@keyframes cq-quica { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-7px); } 55% { transform: translateY(-7px); } 80% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes cq-sombra { 0%, 100% { transform: scaleX(1); opacity: 1; } 45% { transform: scaleX(0.7); opacity: 0.55; } }
+@keyframes cq-raios { to { transform: rotate(360deg); } }
+@keyframes cq-faisca {
+  0% { opacity: 1; transform: rotate(var(--a)) translateX(6px); }
+  100% { opacity: 0; transform: rotate(var(--a)) translateX(var(--d)); }
+}
+@keyframes cq-brilho { to { transform: skewX(-18deg) translateX(520%); } }
+@keyframes cq-tempo { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+
+@media (max-width: 640px) {
+  .cq-vivo { top: calc(64px + env(safe-area-inset-top)); }
+  .cq { grid-template-columns: 64px minmax(0, 1fr); padding: 8px 36px 12px 8px; }
+  .cq__palco { width: 64px; height: 64px; }
+  .cq__arte svg { width: 52px; height: 52px; }
+  .cq__titulo { font-size: 1.3rem; }
+  .cq__texto { font-size: 0.8rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cq, .cq *, .cq::after { animation: none !important; }
+  .cq__faiscas, .cq::after { display: none; }
+}
+@media print { .cq-vivo { display: none; } }
