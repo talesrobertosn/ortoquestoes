@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 496,
+  "pendente": 476,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 364,
+  "pendente-fonte": 379,
   "pendente-inspecao-imagem": 83,
-  "revisada": 1442
+  "revisada": 1447
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -102,11 +102,11 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 83,
+    "pendente": 63,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 42,
+    "pendente-fonte": 57,
     "pendente-inspecao-imagem": 11,
-    "revisada": 78
+    "revisada": 83
    }
   },
   "rockwood10-45-fraturas-mao": {
@@ -285,8 +285,8 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 69,
-    "pendente-fonte": 6,
+    "pendente": 68,
+    "pendente-fonte": 7,
     "pendente-inspecao-imagem": 4,
     "revisada": 50
    }
@@ -352,8 +352,8 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 10,
-    "pendente-fonte": 16,
+    "pendente": 9,
+    "pendente-fonte": 17,
     "pendente-inspecao-imagem": 2,
     "revisada": 53
    }
@@ -363,8 +363,8 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 9,
-    "pendente-fonte": 15,
+    "pendente": 8,
+    "pendente-fonte": 16,
     "pendente-inspecao-imagem": 2,
     "revisada": 50
    }
@@ -12004,14 +12004,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado pergunta conexão rádio distal–escafoide, mas a banca D nomeia o escafolunar, que o corpo44 descreve como interósseo entre escafoide e semilunar. A opção E, ligamento palmar, é inespecífica entre vários extrínsecos. Falta fonte/errata da questão original que resolva qual conexão era pretendida e permita comparar E com D, além de fonte para as opções bíceps e cruzado anterior; preservar texto/gabarito/alertas, sem fabricar resposta única e sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9a1996cd45dee78b9933074bff259c6000e3ae0dab79df7c3c3fafe4bbd5c009"
+   "questaoSha256": "9a1996cd45dee78b9933074bff259c6000e3ae0dab79df7c3c3fafe4bbd5c009",
+   "pendencia": "O enunciado pergunta conexão rádio distal–escafoide, mas a banca D nomeia o escafolunar, que o corpo44 descreve como interósseo entre escafoide e semilunar. A opção E, ligamento palmar, é inespecífica entre vários extrínsecos. Falta fonte/errata da questão original que resolva qual conexão era pretendida e permita comparar E com D, além de fonte para as opções bíceps e cruzado anterior; preservar texto/gabarito/alertas, sem fabricar resposta única e sem baseResumo."
   },
   "mao-0270": {
    "tema": "mao",
@@ -14435,14 +14436,15 @@
    ],
    "prova": "IAUPE",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Coincidência do subtema Instabilidade do carpo não cobre OSTEOMA OSTEOIDE. O resumo44 não ensina tumor/nidus, dor noturna e resposta à aspirina, predomínio em tíbia/fêmur/sexo masculino ou diferenciação de febre alta e deformidade. Falta capítulo de tumor ósseo que sustente cada afirmação A–E; não reclassificar o item para fazê-lo desaparecer da fila. Gabarito E e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "f92ea143fb20a103e3d338159cd7909940d10684556e2a50c343509ed65e5260"
+   "questaoSha256": "f92ea143fb20a103e3d338159cd7909940d10684556e2a50c343509ed65e5260",
+   "pendencia": "Coincidência do subtema Instabilidade do carpo não cobre OSTEOMA OSTEOIDE. O resumo44 não ensina tumor/nidus, dor noturna e resposta à aspirina, predomínio em tíbia/fêmur/sexo masculino ou diferenciação de febre alta e deformidade. Falta capítulo de tumor ósseo que sustente cada afirmação A–E; não reclassificar o item para fazê-lo desaparecer da fila. Gabarito E e comentário preservados, sem baseResumo."
   },
   "mao-0740": {
    "tema": "mao",
@@ -14539,14 +14541,63 @@
    ],
    "prova": "IAUPE",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687"
+   "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "A ginasta: lesão fisária por estresse"
+      ],
+      "blocos": [
+       "a-ginasta-lesao-fisaria-por-estresse-decda032"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "8a270d5802f1580167c48ea00a482cde29ba9fb44a817610ceaec980db8b3e56"
+     },
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Escafoide: classificação de Herbert e Fisher",
+       "Mayfield e a luxação perilunar",
+       "Dissociação escafossemilunar",
+       "Artrose do colapso: SNAC e SLAC"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+       "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
+       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+       "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "artrose-do-colapso-snac-e-slac-a82703f6"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "8ce740bf3882b59b60ab866a473b4a784df0db67ff317a154f3214e187ad5de5"
+     }
+    ],
+    "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687",
+    "comentarioSha256": "b10c54652fb12e05072cb8e7683d0845ce3d5e4c545ab8622bb6f980c1536e4d"
+   }
   },
   "mao-0743": {
    "tema": "mao",
@@ -14796,14 +14847,15 @@
    ],
    "prova": "INTO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte só compara indicações/resultado de curto prazo da escafocapitato e ETT. Não fornece arco residual30%/60%, força50%, taxa de não união40% nem liberação esportiva em2meses. A redação da taxa de não consolidação em relação ao lado oposto também exige conferir denominador no original. Falta série/tabela específica de resultados pós-artrodese escafocapitato com seguimento e retorno esportivo. Gabarito E preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "fc65c025681855319da3f66623d44f77b4f4dc0756eb1489b8082848a0aad547"
+   "questaoSha256": "fc65c025681855319da3f66623d44f77b4f4dc0756eb1489b8082848a0aad547",
+   "pendencia": "A fonte só compara indicações/resultado de curto prazo da escafocapitato e ETT. Não fornece arco residual30%/60%, força50%, taxa de não união40% nem liberação esportiva em2meses. A redação da taxa de não consolidação em relação ao lado oposto também exige conferir denominador no original. Falta série/tabela específica de resultados pós-artrodese escafocapitato com seguimento e retorno esportivo. Gabarito E preservado, sem baseResumo."
   },
   "mao-0776": {
    "tema": "mao",
@@ -14918,14 +14970,15 @@
    ],
    "prova": "INTO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo44 lista enxertos vascularizados pediculados/livres, mas não associa pedículo capsular dorsal ao epônimo Sotereanos nem compara os pedículos de Matholin, Zaidenberg, Higgins e Berger. Falta fonte anatômica/técnica de cada enxerto e respectiva autoria; não inferir autor a partir da palavra dorsal ou de capsulotomia de Berger. Gabarito D e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "5636a7e870eebf61e224e75a324150ee229851b628d0e2ddce352f0691251627"
+   "questaoSha256": "5636a7e870eebf61e224e75a324150ee229851b628d0e2ddce352f0691251627",
+   "pendencia": "O resumo44 lista enxertos vascularizados pediculados/livres, mas não associa pedículo capsular dorsal ao epônimo Sotereanos nem compara os pedículos de Matholin, Zaidenberg, Higgins e Berger. Falta fonte anatômica/técnica de cada enxerto e respectiva autoria; não inferir autor a partir da palavra dorsal ou de capsulotomia de Berger. Gabarito D e comentário preservados, sem baseResumo."
   },
   "mao-0782": {
    "tema": "mao",
@@ -15068,14 +15121,15 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Não há percentual de perda do arco de movimento especificamente após artrodese escafocapitato que permita comparar25/30/50/75/80%. A semelhança de resultado com ETT não fornece uma dessas porcentagens. Perda30–40% após luxação radiocárpica e arco residual de outras fusões não são intercambiáveis. Falta série de resultados com medida de perda e denominador do movimento; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "fe63ad37ba62e41c02b714c2ba507f38db235b9b5ea737fe7042176f6efab923"
+   "questaoSha256": "fe63ad37ba62e41c02b714c2ba507f38db235b9b5ea737fe7042176f6efab923",
+   "pendencia": "Não há percentual de perda do arco de movimento especificamente após artrodese escafocapitato que permita comparar25/30/50/75/80%. A semelhança de resultado com ETT não fornece uma dessas porcentagens. Perda30–40% após luxação radiocárpica e arco residual de outras fusões não são intercambiáveis. Falta série de resultados com medida de perda e denominador do movimento; gabarito C preservado, sem baseResumo."
   },
   "mao-0829": {
    "tema": "mao",
@@ -15411,14 +15465,15 @@
    ],
    "prova": "UFG",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A definição nominal de Preiser foi encontrada no corpo do resumo Wilkins8, mas nenhum dos dois corpos descreve os quatro estágios de HERBERT PARA PREISER. Herbert/Fisher de fraturas agudas A–D não classifica formato/fragmentação da osteonecrose idiopática. Falta tabela primária de estadiamento da doença com critérios dos tipos I–IV; não transferir números de outra classificação. Gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "67d3039bfa82a4601f5e9522c7124ed2320ce7b6c147d90148e6db33bef76b10"
+   "questaoSha256": "67d3039bfa82a4601f5e9522c7124ed2320ce7b6c147d90148e6db33bef76b10",
+   "pendencia": "A definição nominal de Preiser foi encontrada no corpo do resumo Wilkins8, mas nenhum dos dois corpos descreve os quatro estágios de HERBERT PARA PREISER. Herbert/Fisher de fraturas agudas A–D não classifica formato/fragmentação da osteonecrose idiopática. Falta tabela primária de estadiamento da doença com critérios dos tipos I–IV; não transferir números de outra classificação. Gabarito C preservado, sem baseResumo."
   },
   "mao-0901": {
    "tema": "mao",
@@ -16233,14 +16288,15 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte descreve SNAC/SLAC por Watson e Ballet, com artrose radioescafoide inicial, mas não a classificação de LICHTMAN da PSEUDARTROSE DO ESCAFOIDE e seus tipos I–IV. Não confundir com Lichtman de Kienböck nem transportar estágio I de Watson para outro sistema. Falta tabela independente de Lichtman para pseudartrose e distribuição da artrose em cada tipo; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a77ed973dc962d619b5f9a70cdb641f86f8a720f6a171f38d226cae956afe739"
+   "questaoSha256": "a77ed973dc962d619b5f9a70cdb641f86f8a720f6a171f38d226cae956afe739",
+   "pendencia": "A fonte descreve SNAC/SLAC por Watson e Ballet, com artrose radioescafoide inicial, mas não a classificação de LICHTMAN da PSEUDARTROSE DO ESCAFOIDE e seus tipos I–IV. Não confundir com Lichtman de Kienböck nem transportar estágio I de Watson para outro sistema. Falta tabela independente de Lichtman para pseudartrose e distribuição da artrose em cada tipo; gabarito C preservado, sem baseResumo."
   },
   "mao-0993": {
    "tema": "mao",
@@ -17340,14 +17396,15 @@
    ],
    "prova": "PUC-SP",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Não há classificação de Slade e Geissler da NÃO CONSOLIDAÇÃO do escafoide no corpo44. Geissler artroscópico de dissociação escafossemilunar usa passagem de probe/artroscópio e não define tipo4 por cistos1–5mm. Falta tabela de Slade/Geissler com esclerose, cistos, humpback e artrose para avaliar todas as opções, sem trocar classificações homônimas. Gabarito B preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "7b5fb32a6742c89861eda587098285b07809d56cf3f5c67ed3d8829b9390f874"
+   "questaoSha256": "7b5fb32a6742c89861eda587098285b07809d56cf3f5c67ed3d8829b9390f874",
+   "pendencia": "Não há classificação de Slade e Geissler da NÃO CONSOLIDAÇÃO do escafoide no corpo44. Geissler artroscópico de dissociação escafossemilunar usa passagem de probe/artroscópio e não define tipo4 por cistos1–5mm. Falta tabela de Slade/Geissler com esclerose, cistos, humpback e artrose para avaliar todas as opções, sem trocar classificações homônimas. Gabarito B preservado, sem baseResumo."
   },
   "mao-1062": {
    "tema": "mao",
@@ -17861,14 +17918,15 @@
    ],
    "prova": "PUC-SP",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 aponta cintura como local mais comum no adulto, mas não fornece distribuição de fratura do escafoide especificamente NA CRIANÇA para comparar proximal/cintura/distal/tubérculo. O resumoWilkins8 distingue lesões do carpo em adolescentes, sem esse ranking. Falta fonte pediátrica com faixa etária e separação entre polo distal e tubérculo; não transportar a predominância adulta nem usar o comentário antigo como fonte. Gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "49fa70e313aab95f17a998a23f63621664d48e55ff5eb61f63fbd2a56686fcd6"
+   "questaoSha256": "49fa70e313aab95f17a998a23f63621664d48e55ff5eb61f63fbd2a56686fcd6",
+   "pendencia": "O corpo44 aponta cintura como local mais comum no adulto, mas não fornece distribuição de fratura do escafoide especificamente NA CRIANÇA para comparar proximal/cintura/distal/tubérculo. O resumoWilkins8 distingue lesões do carpo em adolescentes, sem esse ranking. Falta fonte pediátrica com faixa etária e separação entre polo distal e tubérculo; não transportar a predominância adulta nem usar o comentário antigo como fonte. Gabarito C preservado, sem baseResumo."
   },
   "mao-1094": {
    "tema": "mao",
@@ -33358,8 +33416,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo44 descreve dorsiflexão no mecanismo da bigorna do capitato no adulto, mas não compara a frequência dos mecanismos especificamente em CRIANÇAS. Os outros três resumos candidatos foram pesquisados: não trazem esse dado pediátrico. Falta fonte pediátrica que sustente extensão como o mecanismo mais frequente e diferencie flexão/desvios; nota contextual da própria questão e comentário antigo não comprovam essa extrapolação. Gabarito B preservado; sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33376,7 +33434,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "c18b19681b0fd2ef57f680a48967b3474c544f1d710216bd607b40a2e246ffa5"
+   "questaoSha256": "c18b19681b0fd2ef57f680a48967b3474c544f1d710216bd607b40a2e246ffa5",
+   "pendencia": "O corpo do resumo44 descreve dorsiflexão no mecanismo da bigorna do capitato no adulto, mas não compara a frequência dos mecanismos especificamente em CRIANÇAS. Os outros três resumos candidatos foram pesquisados: não trazem esse dado pediátrico. Falta fonte pediátrica que sustente extensão como o mecanismo mais frequente e diferencie flexão/desvios; nota contextual da própria questão e comentário antigo não comprovam essa extrapolação. Gabarito B preservado; sem baseResumo."
   },
   "pediatria-0564": {
    "tema": "pediatria",
@@ -53025,8 +53084,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente44 sustenta avulsão escafossemilunar de pequenos fragmentos do polo proximal sem restringir à criança. Entretanto, não fornece a comparação anatômica própria das inserções radiocapitato e escafocapitato necessária às alternativas A/B. Não trocar radiocapitato por radioescafocapitato apenas pela semelhança do nome, nem importar a distribuição etária do comentário antigo. Falta descrição anatômica dessas inserções/avulsões e confirmação pediátrica; gabarito D preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -53040,7 +53099,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "d151af180a0176049f18284f86f50a6f498da43a2165c4789cd0b67069325a71"
+   "questaoSha256": "d151af180a0176049f18284f86f50a6f498da43a2165c4789cd0b67069325a71",
+   "pendencia": "O corpo independente44 sustenta avulsão escafossemilunar de pequenos fragmentos do polo proximal sem restringir à criança. Entretanto, não fornece a comparação anatômica própria das inserções radiocapitato e escafocapitato necessária às alternativas A/B. Não trocar radiocapitato por radioescafocapitato apenas pela semelhança do nome, nem importar a distribuição etária do comentário antigo. Falta descrição anatômica dessas inserções/avulsões e confirmação pediátrica; gabarito D preservado, sem baseResumo."
   },
   "trauma-0094": {
    "tema": "trauma",
@@ -54529,7 +54589,7 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -54544,7 +54604,36 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9"
+   "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Fraturas dos outros ossos do carpo",
+       "Mayfield e a luxação perilunar",
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "fraturas-dos-outros-ossos-do-carpo-bc810ef4",
+       "fraturas-dos-outros-ossos-do-carpo-fe223feb",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "anatomia-ligamentar-e-cinematica-do-carpo-ac6a12e3"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "d3561faa74394fe80d85f9d0257d630b0c18bed08eb38eb5c1ed36b02143a699"
+     }
+    ],
+    "questaoSha256": "08708ea0869b1f9a5bfd0f5d2b903366c19918d63a49312a5124d9d9344fc2d9",
+    "comentarioSha256": "cf88f79e28ea54df7251d01cc16615f09d9b79937d570aafeb455d73298c67f3"
+   }
   },
   "trauma-0137": {
    "tema": "trauma",
@@ -56782,8 +56871,8 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo chama mais de90% de avulsão cortical DORSAL, mas admite que esse padrão morfológico pode resultar de arrancamento capsular OU de impacção pelo hamato/estiloide ulnar. Não fornece proporção dos MECANISMOS para demonstrar avulsão mais frequente que impacção, como pede o enunciado. Falta estudo ou trecho primário que separe frequência do padrão dorsal e frequência etiológica; não converter90% de morfologia em90% de tração ligamentar. Gabarito A preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -56797,7 +56886,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "703af5651e3cb0192e96115e25bda354062c057d619b56c799a2be430a302373"
+   "questaoSha256": "703af5651e3cb0192e96115e25bda354062c057d619b56c799a2be430a302373",
+   "pendencia": "O resumo chama mais de90% de avulsão cortical DORSAL, mas admite que esse padrão morfológico pode resultar de arrancamento capsular OU de impacção pelo hamato/estiloide ulnar. Não fornece proporção dos MECANISMOS para demonstrar avulsão mais frequente que impacção, como pede o enunciado. Falta estudo ou trecho primário que separe frequência do padrão dorsal e frequência etiológica; não converter90% de morfologia em90% de tração ligamentar. Gabarito A preservado, sem baseResumo."
   },
   "trauma-0211": {
    "tema": "trauma",
@@ -58942,8 +59032,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 atribui à cabeça/colo do rádio a associação mais comum no conjunto geral de fraturas do escafoide, mas lista rádio DISTAL/perilunar/transescafoperilunar na ALTA ENERGIA sem ordenar frequências. O enunciado restringe a alta energia. Falta frequência comparativa desse subgrupo para escolher proximal ou distal e avaliar capitato/semilunar; nem transportar a primazia geral ao subgrupo, nem afirmar primazia distal apenas pelo comentário antigo. Gabarito D e alerta anterior preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -58957,7 +59047,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9b31bbe68f2633a3f6d9e2c1ad0c0cc1920f186e39a611a8357486f20219f807"
+   "questaoSha256": "9b31bbe68f2633a3f6d9e2c1ad0c0cc1920f186e39a611a8357486f20219f807",
+   "pendencia": "O corpo44 atribui à cabeça/colo do rádio a associação mais comum no conjunto geral de fraturas do escafoide, mas lista rádio DISTAL/perilunar/transescafoperilunar na ALTA ENERGIA sem ordenar frequências. O enunciado restringe a alta energia. Falta frequência comparativa desse subgrupo para escolher proximal ou distal e avaliar capitato/semilunar; nem transportar a primazia geral ao subgrupo, nem afirmar primazia distal apenas pelo comentário antigo. Gabarito D e alerta anterior preservados, sem baseResumo."
   },
   "trauma-0276": {
    "tema": "trauma",
@@ -58966,7 +59057,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -58981,7 +59072,40 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674"
+   "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar",
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-413534f6",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "dissociacao-escafossemilunar-4b14cd81",
+       "dissociacao-escafossemilunar-14203ef4",
+       "dissociacao-escafossemilunar-3c8bdf0f",
+       "dissociacao-escafossemilunar-0e26d2d4",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "4fd249ed32ba340ed5cd32eba9572fd97d0b5f52cb2e94ea8a41e11532065a25"
+     }
+    ],
+    "questaoSha256": "dc50dcdf824091b683986d5f63254c8e92999c6108b72c3b5c3e06331f67a674",
+    "comentarioSha256": "ab5ba2e7cfd2b47fd9068a19be9bc4fcb6447530ab596766a45e6cefa2384a45"
+   }
   },
   "trauma-0277": {
    "tema": "trauma",
@@ -63576,8 +63700,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A fonte44 sustenta claramente avulsão dorsal do semilunar pela tensão escafossemilunar, mas não detalha as inserções do colateral radial nem a estrutura chamada ulnocárpico dorsal para discutir D/B com fundamento anatômico próprio. O comentário antigo não comprova essas inserções e a lista geral de ligamentos não resolve a terminologia dorsal. Falta descrição anatômica independente dessas alternativas; gabarito C e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -63591,7 +63715,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "261ee8c17a4a56770e828556e64e739aeb966203d295c8f1e404b5a0ad437192"
+   "questaoSha256": "261ee8c17a4a56770e828556e64e739aeb966203d295c8f1e404b5a0ad437192",
+   "pendencia": "A fonte44 sustenta claramente avulsão dorsal do semilunar pela tensão escafossemilunar, mas não detalha as inserções do colateral radial nem a estrutura chamada ulnocárpico dorsal para discutir D/B com fundamento anatômico próprio. O comentário antigo não comprova essas inserções e a lista geral de ligamentos não resolve a terminologia dorsal. Falta descrição anatômica independente dessas alternativas; gabarito C e comentário preservados, sem baseResumo."
   },
   "trauma-0553": {
    "tema": "trauma",
@@ -64770,8 +64895,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A classificação independente do resumo44 só define D1 fibrosa e D2 esclerótica. A pergunta oferece D3/D4/D5/D6 e a banca registra D4 para pseudartrose com necrose proximal. Falta fonte da versão ampliada de Herbert com definição de cada subtipo, especialmente D3 versus D4; não inventar D3 como esclerótica nem afirmar inexistência universal de D5/D6 com base na versão abreviada. Gabarito B e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -64785,7 +64910,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "c4bb6fd6250726988a355042e4ab7c50ebfe30951952f121e0271309b974ae47"
+   "questaoSha256": "c4bb6fd6250726988a355042e4ab7c50ebfe30951952f121e0271309b974ae47",
+   "pendencia": "A classificação independente do resumo44 só define D1 fibrosa e D2 esclerótica. A pergunta oferece D3/D4/D5/D6 e a banca registra D4 para pseudartrose com necrose proximal. Falta fonte da versão ampliada de Herbert com definição de cada subtipo, especialmente D3 versus D4; não inventar D3 como esclerótica nem afirmar inexistência universal de D5/D6 com base na versão abreviada. Gabarito B e comentário preservados, sem baseResumo."
   },
   "trauma-0666": {
    "tema": "trauma",
@@ -66000,7 +66126,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66015,7 +66141,37 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a"
+   "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Dissociação escafossemilunar",
+       "Mayfield e a luxação perilunar",
+       "Fraturas dos outros ossos do carpo"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-6ca8aaf8",
+       "dissociacao-escafossemilunar-67e58eaf",
+       "mayfield-e-a-luxacao-perilunar-9979fb84",
+       "fraturas-dos-outros-ossos-do-carpo-fa72f090",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "4285b96b23c1a51bf8b820c41c0047a236a0af962d11320cd7fb552cd90b82f7"
+     }
+    ],
+    "questaoSha256": "0fc36b72d6fa4684bf92c164c9677fb1151ca51319e19e4e9d607261f1759e6a",
+    "comentarioSha256": "8addd6280bff3094c3efc40c360fa3f06c4ac049ebf74ffc34bdec725158b79c"
+   }
   },
   "trauma-0699": {
    "tema": "trauma",
@@ -69198,7 +69354,7 @@
    ],
    "prova": "Einstein",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -69213,7 +69369,39 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79"
+   "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Escafoide: tratamento da fratura aguda",
+       "Escafoide: consolidação viciosa e pseudartrose"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+       "escafoide-tratamento-da-fratura-aguda-056fbc49",
+       "escafoide-tratamento-da-fratura-aguda-867cbaae",
+       "escafoide-tratamento-da-fratura-aguda-3d1643fc",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-478ad42b",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "fd3ce0cee86bf8d4e5b86412f11b2877635efe0168f27a74cc9451716bdaaf2d"
+     }
+    ],
+    "questaoSha256": "7bf56418f31375032d8f4bd7c408e212cd546f4bfbc187e5cd005c516353cb79",
+    "comentarioSha256": "732cc183b10d9685ed5e589c0496e46ce35531aea675059bb5d53990ff45e74c"
+   }
   },
   "trauma-0811": {
    "tema": "trauma",

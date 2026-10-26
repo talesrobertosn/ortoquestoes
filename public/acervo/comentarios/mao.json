@@ -9840,20 +9840,69 @@
   }
  },
  "mao-0742": {
-  "conceito": "**A doença de Preiser é a necrose avascular idiopática do escafoide, sem fratura prévia.** É rara, e a irrigação retrógrada do escafoide (ramos dorsais da artéria radial entrando pelo dorso distal) explica a vulnerabilidade do polo proximal.\n\n**Classificação de Herbert e Lanzetta (pela radiografia e RM):**\n\n| Estágio | Achados |\n|---|---|\n| I | Radiografia normal, alteração na RM |\n| II | Aumento de densidade do polo proximal |\n| III | Fragmentação do polo proximal |\n| IV | Colapso com artrose |\n\nA classificação de Kalainov pela RM distingue o tipo 1 (necrose de todo o escafoide, pior prognóstico) do tipo 2 (necrose parcial, geralmente do polo proximal).\n\n**Para não confundir as necroses do punho e da mão:**\n- Preiser: escafoide;\n- Kienböck: semilunar;\n- Dieterich: cabeça dos metacarpos;\n- Thiemann: epífises das falanges.",
-  "correta": "**Necrose avascular do escafoide.** A doença de Preiser é a osteonecrose idiopática do escafoide, sem fratura prévia.",
+  "conceito": "A doença de **Preiser** é a **osteonecrose do escafoide**, também chamada necrose avascular nessa questão. O ponto inicial é separar um problema de viabilidade do osso de uma alteração do seu alinhamento, de um traço de fratura ou de uma lesão ligamentar.\n\nO resumo do punho pediátrico distingue nominalmente osteonecrose do escafoide, Preiser, e osteonecrose do semilunar, Kienböck, entre os diagnósticos diferenciais de dor no punho. O nome do osso importa: são estruturas vizinhas, mas os epônimos não são intercambiáveis.\n\nPara compreender a preocupação vascular do escafoide, o resumo do carpo descreve dois pedículos da artéria radial. O dorsal entra pela crista e atende a maior parte do osso, inclusive o polo proximal; o volar atende a região distal. O fluxo proximal depende de um trajeto intraósseo. Essa anatomia ajuda a entender por que viabilidade e união/alinhamento são perguntas diferentes, sem permitir chamar toda fratura ou toda interrupção temporária do fluxo de doença de Preiser.\n\nAqui a pergunta é a definição da doença. Luxação do semilunar, fratura oblíqua, artrose e ruptura escafossemilunar nomeiam alterações distintas e não substituem o diagnóstico de osteonecrose do escafoide. Conteúdo consultado nos resumos da Biblioteca: Rockwood and Wilkins, 9ª edição, capítulo 8, seção da ginasta/diagnóstico diferencial; Rockwood and Green, 10ª edição, capítulo 44, seções de irrigação, classificação, instabilidade e colapso.",
+  "correta": "Correta: A (necrose avascular do escafoide). Identifica o osso e o comprometimento de sua viabilidade. O resumo emprega expressamente Preiser para a osteonecrose do escafoide, em contraste com Kienböck no semilunar.",
   "incorretas": {
-   "B": "A luxação do semilunar é uma lesão traumática (estágio final da instabilidade perilunar de Mayfield), não a doença de Preiser.",
-   "C": "Fratura do escafoide não é Preiser; por definição, a doença ocorre sem fratura.",
-   "D": "Artrose radiocarpal pode ser o estágio final da doença, mas não a define.",
-   "E": "Ruptura do ligamento escafossemilunar leva à instabilidade e ao punho SLAC, não à doença de Preiser."
+   "B": "Luxação do semilunar é perda da posição desse osso em relação ao carpo. No estágio IV de Mayfield, ele gira para palmar e pode entrar no túnel do carpo. É um problema de posição de outro osso, não a definição de osteonecrose do escafoide.",
+   "C": "Uma fratura oblíqua descreve a orientação de um traço. A classificação de Russe usa a inclinação do traço para prever instabilidade, enquanto Preiser identifica osteonecrose. A aparência geométrica da fratura não é sinônimo do diagnóstico de viabilidade óssea.",
+   "D": "Artrose radiocarpal se refere ao desgaste de uma articulação. No padrão de colapso resumido, o desgaste começa entre estiloide radial e escafoide e pode progredir. Localizar desgaste articular é diferente de identificar a necrose do escafoide que define Preiser; artrose não é a definição do epônimo.",
+   "E": "Ruptura do escafolunar compromete o estabilizador primário entre escafoide e semilunar, permitindo desacoplamento e alargamento progressivo do intervalo. A falha de um ligamento não é a mesma alteração que a osteonecrose de um osso."
   },
   "referencias": [
-   "Herbert TJ, Lanzetta M. Idiopathic avascular necrosis of the scaphoid. J Hand Surg Br. 1994;19(2):174-82.",
-   "Kalainov DM, Cohen MS, Hendrix RW, Sweet S, Culp RW, Osterman AL. Preiser's disease: identification of two patterns. J Hand Surg Am. 2003;28(5):767-78."
+   "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 8 · Fractures of the Distal Radius and Ulna. Seções: A ginasta: lesão fisária por estresse.",
+   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: classificação de Herbert e Fisher; Mayfield e a luxação perilunar; Dissociação escafossemilunar; Artrose do colapso: SNAC e SLAC."
   ],
-  "geradoEm": "2026-10-04",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+     "titulo": "Fraturas do rádio e da ulna distais na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição (2020)",
+     "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+     "secoes": [
+      "A ginasta: lesão fisária por estresse"
+     ],
+     "blocos": [
+      "a-ginasta-lesao-fisaria-por-estresse-decda032"
+     ],
+     "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+     "trechosSha256": "8a270d5802f1580167c48ea00a482cde29ba9fb44a817610ceaec980db8b3e56"
+    },
+    {
+     "resumo": "rockwood10-44-carpo",
+     "titulo": "Fraturas e luxações do carpo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+     "secoes": [
+      "Escafoide: anatomia, irrigação e mecanismo",
+      "Escafoide: classificação de Herbert e Fisher",
+      "Mayfield e a luxação perilunar",
+      "Dissociação escafossemilunar",
+      "Artrose do colapso: SNAC e SLAC"
+     ],
+     "blocos": [
+      "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+      "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
+      "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+      "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
+      "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+      "dissociacao-escafossemilunar-67e58eaf",
+      "dissociacao-escafossemilunar-1f9a739d",
+      "artrose-do-colapso-snac-e-slac-a82703f6"
+     ],
+     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+     "trechosSha256": "8ce740bf3882b59b60ab866a473b4a784df0db67ff317a154f3214e187ad5de5"
+    }
+   ],
+   "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687",
+   "comentarioSha256": "b10c54652fb12e05072cb8e7683d0845ce3d5e4c545ab8622bb6f980c1536e4d"
+  }
  },
  "mao-0743": {
   "conceito": "**A posição intrínseca plus mantém as MCF em 70° a 90° de flexão.** As articulações metacarpofalângicas (MCF) unem os metacarpos às falanges proximais. Seus colaterais se originam dorsalmente na cabeça metacarpal, cuja forma faz com que fiquem mais tensionados em flexão. Essa relação anatômica explica a posição de proteção durante a imobilização.\n\nSe a MCF permanece estendida por longo período, o sistema colateral pode encurtar e dificultar a flexão depois da retirada da tala. Em 70° a 90°, o ligamento é mantido alongado. Nas interfalângicas a proteção usual é diferente: extensão para reduzir o risco de contratura da placa volar. Não se deve escolher um mesmo ângulo para todas as articulações do dedo.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, associa essa posição a punho em cerca de 30° de extensão e imobilização apenas das articulações necessárias. O objetivo não é manter a mão fechada indefinidamente: é proteger o tecido lesionado e permitir mobilização assim que a estabilidade da fratura autoriza.\n\n**Leia “Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”, para relacionar posição e prevenção de rigidez.",
