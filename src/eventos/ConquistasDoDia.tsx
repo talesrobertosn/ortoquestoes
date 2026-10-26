@@ -60,6 +60,8 @@ export default function ConquistasDoDia() {
     fecharRef.current = sair
     const dados = (ev: Event) => {
       const m = (ev as CustomEvent<MudancaDados>).detail
+      // começou um simulado ou uma sessão cronometrada: o cartão sai (a próxima conquista espera o fim)
+      if (m.chave === 'sessao:atual') { if (ocupada && !pode()) sair(); return }
       if (m.chave !== 'respondidas' || m.origem !== 'local' || m.usuario !== usuario || !eventosLigados()) return
       const agora = Date.now()
       const lembrancas = lerLembrancas(id)
@@ -73,6 +75,7 @@ export default function ConquistasDoDia() {
     }
     const desligar = () => { if (!eventosLigados()) { esperando = null; clearTimeout(fim); ocupada = false; definirAtual(null) } }
     const ocultar = () => { if (document.hidden && ocupada) sair() }
+    const rota = () => { if (ocupada && !pode()) sair() }
     // A conquista espera o fim de um simulado ou de uma sessão cronometrada (uma só, a mais recente).
     const relogio = setInterval(mostrar, 3_000)
     // Só no Vite DEV, para capturas: ?conquista=<id> mostra uma delas, sem limite.
@@ -84,10 +87,10 @@ export default function ConquistasDoDia() {
       const c = novasConquistas(vazio, cheio, (cid) => cid !== pedido)[0]
       if (c && REGRAS_CONQUISTA.some((r) => r.id === pedido)) { ocupada = true; definirAtual(c); fim = setTimeout(sair, 60_000) }
     }, 600)
-    window.addEventListener(EVENTO_DADOS, dados); window.addEventListener(AVISO_EVENTOS, desligar); document.addEventListener('visibilitychange', ocultar)
+    window.addEventListener(EVENTO_DADOS, dados); window.addEventListener(AVISO_EVENTOS, desligar); document.addEventListener('visibilitychange', ocultar); window.addEventListener('hashchange', rota)
     return () => {
       clearTimeout(fim); clearTimeout(teste); clearInterval(relogio)
-      window.removeEventListener(EVENTO_DADOS, dados); window.removeEventListener(AVISO_EVENTOS, desligar); document.removeEventListener('visibilitychange', ocultar)
+      window.removeEventListener(EVENTO_DADOS, dados); window.removeEventListener(AVISO_EVENTOS, desligar); document.removeEventListener('visibilitychange', ocultar); window.removeEventListener('hashchange', rota)
     }
   }, [usuario])
 
