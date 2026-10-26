@@ -2,10 +2,11 @@ import { memo } from 'react'
 import type { ArteConquista } from './conquistasDia'
 
 /**
- * As artes das conquistas do dia, no clima de jogo aconchegante (cozy game): vasinho com rosto,
- * planta que cresce, estrelinha, arco-íris entre nuvens e gatinho no almofadão. Pixel art 24 × 24
- * desenhada por código (sem arquivos para baixar): formas arredondadas com contorno marrom quente
- * (nunca preto), luz no alto à esquerda, bochechas rosadas e olhinhos.
+ * As artes das conquistas do dia, em pixel art 24 × 24 desenhada por código (sem arquivos para
+ * baixar). Tom de jogo aconchegante, mas de quem trabalha com ortopedia (Tales, 26/10/2026: "lembra
+ * que é um site para ortopedistas"): o filme de raio-X com a fratura consolidando, a placa com
+ * parafusos, o martelo de reflexo, a caneca do plantão e a prancheta da escala. Contorno marrom
+ * escuro, luz no alto à esquerda, cores sóbrias.
  */
 /** A grade tem 24 pixels; as formas são pensadas numa tela de 16 (E converte). */
 const N = 24
@@ -32,114 +33,102 @@ const volume = (cx: number, cy: number, claro: string, meio: string, escuro: str
   const d = (c(x) - cx) + (c(y) - cy)
   return d < -corte ? claro : d > corte ? escuro : meio
 }
-/** Rostinho fofo: olhos de dois pixels, bochechas e sorriso, centrado em x (pixels de 24). */
-function rosto(g: Grade, x: number, y: number, fechados = false) {
-  if (fechados) pintar(g, [[x - 3, y + 1], [x - 2, y], [x - 1, y + 1], [x + 2, y + 1], [x + 3, y], [x + 4, y + 1]], 'o')
-  else pintar(g, [[x - 2, y], [x - 2, y + 1], [x + 3, y], [x + 3, y + 1]], 'o')
-  pintar(g, [[x - 4, y + 2], [x - 3, y + 2], [x + 4, y + 2], [x + 5, y + 2]], 'r')
-  pintar(g, [[x - 1, y + 2], [x, y + 3], [x + 1, y + 3], [x + 2, y + 2]], 'o')
+/** Pinta sem contorno (o que fica dentro do filme de raio-X não tem traço). */
+function preencher(g: Grade, dentro: (x: number, y: number) => boolean, cor: (x: number, y: number) => string) {
+  for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) if (dentro(x, y)) g[y][x] = cor(x, y)
+}
+/** Distância do ponto ao segmento (a, b), na tela de 16. */
+function aoSegmento(x: number, y: number, ax: number, ay: number, bx: number, by: number) {
+  const px = c(x) - ax, py = c(y) - ay, dx = bx - ax, dy = by - ay
+  const t = Math.max(0, Math.min(1, (px * dx + py * dy) / (dx * dx + dy * dy)))
+  return Math.hypot(px - t * dx, py - t * dy)
 }
 
-/** O vasinho de terracota com rosto (base das quatro fases do jardim). */
-function vaso(g: Grade) {
-  const cor = (x: number) => (c(x) < 5 ? 's' : c(x) > 11.3 ? 'T' : 't')
-  forma(g, (x, y) => (c(y) >= 9.2 && c(y) <= 11 && c(x) >= 3 && c(x) <= 13) || (c(y) > 10.5 && c(y) <= 15.8 && c(x) >= 4 + (c(y) - 10.5) * 0.3 && c(x) <= 12 - (c(y) - 10.5) * 0.3), cor)
-  for (let x = 6; x <= 17; x++) pintar(g, [[x, 14]], 'e') // terra
-  for (let x = 5; x <= 18; x++) pintar(g, [[x, 16]], 'o') // borda da boca do vaso
-  rosto(g, 11, 18)
+/**
+ * O filme de raio-X com a diáfise (só o corpo do osso, sem as pontas) e a consolidação avançando:
+ * 0 traço de fratura, 1 calo mole, 2 ponte óssea, 3 consolidada (com o carimbo de alta).
+ */
+function radiografia(fase: 0 | 1 | 2 | 3): Grade {
+  const g = nova()
+  forma(g, (x, y) => c(x) >= 1.4 && c(x) <= 14.6 && c(y) >= 0.8 && c(y) <= 15.2, (_x, y) => (c(y) < 2.4 ? 'F' : 'f'))
+  const osso = (x: number, y: number) => c(y) > 1.4 && c(y) < 14.6 && Math.abs(c(x) - 8.4) <= 2.7
+  const foco = (x: number, y: number) => Math.abs(c(y) - (8 + (c(x) - 8.4) * 0.6)) <= 0.45
+  if (fase === 1) preencher(g, (x, y) => dist(x, y, 8.4, 8, 4.4, 2.2) <= 1 && !osso(x, y), () => 'c')
+  if (fase === 2) preencher(g, (x, y) => dist(x, y, 8.4, 8, 4.1, 2) <= 1 && !osso(x, y), () => 'B')
+  if (fase === 3) preencher(g, (x, y) => dist(x, y, 8.4, 8, 3.4, 1.5) <= 1 && !osso(x, y), () => 'm')
+  preencher(g, osso, (x) => (Math.abs(c(x) - 8.4) > 1.5 ? 'W' : 'm'))
+  if (fase < 3) preencher(g, (x, y) => osso(x, y) && foco(x, y), () => (fase === 0 ? 'f' : fase === 1 ? 'c' : 'B'))
+  // marcador de lado (R) no canto, como nos filmes de verdade
+  pintar(g, [[4, 3], [5, 3], [4, 4], [6, 4], [4, 5], [5, 5], [4, 6], [6, 6], [4, 7], [6, 7]], 'W')
+  if (fase === 3) {
+    forma(g, (x, y) => dist(x, y, 12.2, 12.2) <= 2.9, () => 'g')
+    pintar(g, [[15, 18], [16, 19], [17, 20], [18, 19], [19, 18], [20, 17], [21, 16]], 'W')
+  }
+  return g
 }
-const caule = (g: Grade, de: number, ate: number) => forma(g, (x, y) => c(y) >= de && c(y) <= ate && Math.abs(c(x) - 8) <= 0.75, (x) => (c(x) < 8 ? 'G' : 'g'))
-const folha = (g: Grade, cx: number, cy: number, rx: number, ry: number) => forma(g, (x, y) => dist(x, y, cx, cy, rx, ry) <= 1, volume(cx, cy, 'L', 'g', 'G', 0.8))
 
-function broto(): Grade {
-  const g = nova(); vaso(g)
-  caule(g, 5.6, 9.6)
-  folha(g, 5.5, 5.4, 2.8, 1.7); folha(g, 10.5, 4.6, 2.8, 1.7)
-  return g
-}
-function muda(): Grade {
-  const g = nova(); vaso(g)
-  caule(g, 2.2, 9.6)
-  folha(g, 5.1, 7, 2.8, 1.6); folha(g, 10.9, 6, 2.8, 1.6); folha(g, 5.7, 3.6, 2.4, 1.4); folha(g, 10.3, 2.4, 2.4, 1.4)
-  return g
-}
-function flor(): Grade {
-  const g = nova(); vaso(g)
-  caule(g, 4.6, 9.6)
-  folha(g, 5, 7.6, 2.5, 1.4); folha(g, 11, 7.2, 2.5, 1.4)
-  const centro = [8, 3.9] as const
-  forma(g, (x, y) => [[8, 1.6], [5.7, 3.4], [10.3, 3.4], [6.5, 6], [9.5, 6]].some(([px, py]) => dist(x, y, px, py) <= 1.8) || dist(x, y, ...centro) <= 2.3,
-    (x, y) => (dist(x, y, ...centro) <= 1.2 ? 'y' : volume(...centro, 'w', 'p', 'P', 1.8)(x, y)))
-  pintar(g, [[11, 5]], 'w')
-  return g
-}
-function arvore(): Grade {
-  const g = nova(); vaso(g)
-  forma(g, (x, y) => c(y) >= 7 && c(y) <= 9.6 && Math.abs(c(x) - 8) <= 1, (x) => (c(x) < 8 ? 'b' : 'B'))
-  forma(g, (x, y) => dist(x, y, 8, 4.6, 1.3, 1) <= 4.4, volume(8, 4.6, 'L', 'g', 'G', 2.2))
-  pintar(g, [[6, 4], [7, 4], [6, 5], [15, 3], [16, 3], [15, 4], [17, 8], [16, 8], [9, 9], [10, 9], [9, 10], [12, 1]], 'p') // florzinhas na copa
-  pintar(g, [[6, 4], [15, 3], [9, 9]], 'w')
-  pintar(g, [[4, 6], [5, 5]], 'L')
-  return g
-}
-function estrela(): Grade {
+/** Placa de osteossíntese com quatro parafusos, inclinada. */
+function placa(): Grade {
   const g = nova()
-  const pontas = Array.from({ length: 10 }, (_, i) => { const a = -Math.PI / 2 + (i * Math.PI) / 5, r = i % 2 ? 3.9 : 7.6; return [8 + Math.cos(a) * r, 8.8 + Math.sin(a) * r] })
-  const dentro = (x: number, y: number) => {
-    let sim = false
-    for (let i = 0, j = pontas.length - 1; i < pontas.length; j = i++) {
-      const [xi, yi] = pontas[i], [xj, yj] = pontas[j]
-      if ((yi > c(y)) !== (yj > c(y)) && c(x) < ((xj - xi) * (c(y) - yi)) / (yj - yi) + xi) sim = !sim
-    }
-    return sim
+  const a = -0.62, cos = Math.cos(a), sen = Math.sin(a)
+  const u = (x: number, y: number) => (c(x) - 8) * cos + (c(y) - 8.4) * sen
+  const v = (x: number, y: number) => -(c(x) - 8) * sen + (c(y) - 8.4) * cos
+  forma(g, (x, y) => aoSegmento(x, y, 8 - 5 * cos, 8.4 - 5 * sen, 8 + 5 * cos, 8.4 + 5 * sen) <= 2.25, (x, y) => (v(x, y) < -0.9 ? 'S' : v(x, y) > 0.9 ? 'D' : 's'))
+  for (const k of [-4.4, -1.5, 1.5, 4.4]) {
+    preencher(g, (x, y) => Math.hypot(u(x, y) - k, v(x, y)) <= 1.3, () => 'D')
+    preencher(g, (x, y) => Math.hypot(u(x, y) - k, v(x, y)) <= 0.62, () => 'o')
   }
-  forma(g, dentro, volume(8, 8.8, 'w', 'y', 'Y', 4.4))
-  rosto(g, 11, 12)
   return g
 }
-function arcoiris(): Grade {
+
+/** Martelo de reflexo de Taylor: cabeça triangular de borracha e cabo de metal. */
+function martelo(): Grade {
   const g = nova()
-  const faixas = ['R', 'A', 'Y', 'V', 'Z']
-  forma(g, (x, y) => c(y) <= 12.6 && dist(x, y, 8, 12.6) <= 7.6 && dist(x, y, 8, 12.6) >= 2.6, (x, y) => faixas[Math.min(4, Math.floor((7.6 - dist(x, y, 8, 12.6)) / 0.96))])
-  const nuvem = (cx: number) => forma(g, (x, y) => dist(x, y, cx, 13, 1.6, 1) <= 2 || dist(x, y, cx + (cx < 8 ? 1 : -1), 11.6) <= 1.5, (_x, y) => (c(y) > 13.8 ? 'n' : 'w'))
-  nuvem(3.3); nuvem(12.7)
-  pintar(g, [[3, 19], [6, 19], [17, 19], [20, 19]], 'o') // olhinhos das nuvens
-  pintar(g, [[2, 20], [7, 20], [16, 20], [21, 20]], 'r')
+  forma(g, (x, y) => aoSegmento(x, y, 6, 6.4, 14, 14.4) <= 0.95, (x, y) => (c(x) - c(y) > 0.2 ? 'D' : 's'))
+  const tri = [[0.9, 6.4], [6.6, 0.6], [9.6, 7.2]] as const
+  const lado = (x: number, y: number, [ax, ay]: readonly number[], [bx, by]: readonly number[]) => (bx - ax) * (c(y) - ay) - (by - ay) * (c(x) - ax)
+  forma(g, (x, y) => { const s1 = lado(x, y, tri[0], tri[1]), s2 = lado(x, y, tri[1], tri[2]), s3 = lado(x, y, tri[2], tri[0]); return (s1 >= 0 && s2 >= 0 && s3 >= 0) || (s1 <= 0 && s2 <= 0 && s3 <= 0) },
+    volume(5.6, 4.8, 'q', 'r', 'R', 1.6))
+  pintar(g, [[11, 11], [12, 12], [13, 13]], 'S')
   return g
 }
-function gato(coracao: boolean): Grade {
+
+/** A caneca do plantão, com a cruz do hospital e o vapor do café. */
+function caneca(): Grade {
   const g = nova()
-  forma(g, (x, y) => dist(x, y, 8, 14.2, 7.6, 1.8) <= 1, volume(8, 14.2, 'p', 'p', 'Q', 3)) // almofadão
-  const corpo = (x: number, y: number) =>
-    dist(x, y, 9.6, 11.2, 5.4, 3) <= 1 // corpo enroladinho
-    || dist(x, y, 5.6, 8.6, 3.5, 3.1) <= 1 // cabeça
-    || (c(y) >= 4 && c(y) <= 7 && Math.abs(c(x) - 3.5) <= (c(y) - 4) * 0.75 + 0.2) // orelhas
-    || (c(y) >= 4 && c(y) <= 7 && Math.abs(c(x) - 7.7) <= (c(y) - 4) * 0.75 + 0.2)
-    || dist(x, y, 13.9, 12.4, 1.5, 1.4) <= 1 // rabinho
-  forma(g, corpo, (x, y) => ((Math.round(c(x) * 2) === 21 || Math.round(c(x) * 2) === 24) && c(y) < 10.6 ? 'K' : volume(7, 9, 'l', 'k', 'K', 3.2)(x, y)))
-  pintar(g, [[5, 8], [5, 9], [11, 8], [11, 9]], 'p') // dentro das orelhas
-  rosto(g, 8, 12, true)
-  if (coracao) {
-    forma(g, (x, y) => dist(x, y, 12, 2.2, 1.1, 1.1) <= 1 || dist(x, y, 14, 2.2, 1.1, 1.1) <= 1 || (c(y) >= 2.4 && c(y) <= 5 && Math.abs(c(x) - 13) <= (5 - c(y)) * 0.85), (x, y) => (c(x) < 12.6 && c(y) < 2.6 ? 'w' : 'P'))
-  }
+  forma(g, (x, y) => (Math.hypot(c(x) - 11.4, c(y) - 10.4) <= 3 && Math.hypot(c(x) - 11.4, c(y) - 10.4) >= 1.3 && c(x) > 10.5), () => 'v')
+  forma(g, (x, y) => c(x) >= 3 && c(x) <= 11.4 && c(y) >= 5.6 && c(y) <= 15 && !(c(y) > 14.2 && (c(x) < 3.8 || c(x) > 10.6)), (x) => (c(x) < 4.6 ? 'V' : c(x) > 9.8 ? 'X' : 'v'))
+  for (let x = 5; x <= 16; x++) pintar(g, [[x, 9]], 'e') // café
+  pintar(g, [[10, 14], [11, 14], [10, 15], [11, 15], [10, 16], [11, 16], [8, 15], [9, 15], [12, 15], [13, 15]], 'w') // cruz
+  pintar(g, [[8, 1], [7, 2], [7, 3], [8, 4], [8, 5], [7, 6], [13, 2], [12, 3], [12, 4], [13, 5], [13, 6], [12, 7]], 'n') // vapor
+  return g
+}
+
+/** Prancheta com a escala da semana conferida. */
+function prancheta(): Grade {
+  const g = nova()
+  forma(g, (x, y) => c(x) >= 2.4 && c(x) <= 13.6 && c(y) >= 2 && c(y) <= 15.4, (x) => (c(x) > 12 ? 'M' : 'b'))
+  forma(g, (x, y) => c(x) >= 4 && c(x) <= 12 && c(y) >= 3.6 && c(y) <= 14.4, () => 'w')
+  for (const y of [8, 11, 14, 17]) for (let x = 7; x <= 16; x++) pintar(g, [[x, y]], 'n')
+  forma(g, (x, y) => c(x) >= 5.4 && c(x) <= 10.6 && c(y) >= 0.9 && c(y) <= 3.8, (x) => (c(x) < 7 ? 'S' : 's')) // presilha
+  pintar(g, [[8, 16], [9, 17], [10, 18], [11, 17], [12, 16], [13, 15], [14, 14], [15, 13]], 'G')
+  pintar(g, [[8, 17], [9, 18], [10, 19], [11, 18], [12, 17], [13, 16], [14, 15], [15, 14]], 'g')
   return g
 }
 
 const DESENHOS: Record<ArteConquista, () => Grade> = {
-  broto, muda, flor, arvore, estrela, arcoiris, gato: () => gato(false), gatoCoracao: () => gato(true),
+  fratura: () => radiografia(0), caloMole: () => radiografia(1), ponteOssea: () => radiografia(2), consolidada: () => radiografia(3),
+  placa, martelo, caneca, prancheta,
 }
-/** Paleta quente e suave, de jogo aconchegante. */
+/** Paleta sóbria e quente: filme azul-ardósia, osso marfim, aço, borracha do martelo, verde do site. */
 const CORES: Record<string, string> = {
-  o: '#5b3a29', // contorno marrom
-  t: '#e08e63', s: '#f4b48e', T: '#b9643f', e: '#7a5238', // vaso e terra
-  g: '#79c37b', L: '#b7e59d', G: '#4c955a', // folhas
-  b: '#a8754f', B: '#845436', // tronco
-  p: '#f7a8c0', P: '#e57a9a', Q: '#c95f82', w: '#fffaf0', y: '#ffd76a', Y: '#f2b23e', // flor e estrela
-  r: '#f6a5a0', // bochechas
-  R: '#f28b82', A: '#f7b267', V: '#a7d8a0', Z: '#9cc9f0', n: '#dbe6f2', // arco-íris e nuvem
-  k: '#f4b56f', l: '#fcd7a4', K: '#d98a49', // gatinho laranja
+  o: '#33261d', // contorno marrom-escuro
+  f: '#22364a', F: '#2d4760', W: '#eef2f4', m: '#b9c6d0', c: '#7d93a6', B: '#cfd9e1', // raio-X
+  s: '#c3ccd4', S: '#eef2f5', D: '#7f8c98', // aço
+  q: '#e48c79', r: '#c8604f', R: '#9c4538', // borracha do martelo
+  v: '#2f7d6d', V: '#4fa08f', X: '#215b50', e: '#5b3a29', w: '#fbf7ef', n: '#c9d2d9', // caneca
+  b: '#b07a4f', M: '#8a5a37', g: '#3f9a63', G: '#2b7149', // prancheta
 }
-
 /** As corridas horizontais de mesma cor viram um retângulo só (bem menos nós no SVG). */
 function retangulos(g: Grade) {
   const saida: Array<{ x: number; y: number; w: number; fill: string }> = []

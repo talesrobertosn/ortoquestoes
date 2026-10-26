@@ -1,17 +1,18 @@
 /**
- * Conquistas do dia (Tales, 26/10/2026), no clima de jogo aconchegante: um jardim que cresce com as
- * questões de hoje (broto, folhinhas, flor e árvore), uma estrelinha pelo acerto, o arco-íris depois
- * de uma sequência de erros e um gatinho que vem visitar quem estuda dias seguidos. Poucas e com
- * sentido, para nunca virar spam: quando várias valem juntas, só a mais especial aparece (as outras
- * ficam guardadas em silêncio), no máximo três cartões por dia e com intervalo entre eles.
- * Diferentes dos emblemas da página de Conquistas, que são difíceis e permanentes.
- * Regras puras: o histórico e o relógio entram por argumento.
+ * Conquistas do dia (Tales, 26/10/2026): pequenos cartões em pixel art, no tom de jogo aconchegante
+ * mas de quem trabalha com ortopedia. As questões de hoje consolidam uma fratura no raio-X (traço,
+ * calo mole, ponte óssea, consolidada); o acerto alto é a fixação estável (placa e parafusos); a
+ * virada depois de erros é o reflexo recuperado (martelo de reflexo); os dias seguidos são o plantão
+ * em dia (caneca) e a escala cumprida (prancheta). Poucas e com sentido, para nunca virar spam:
+ * quando várias valem juntas, só a mais especial aparece (as outras ficam guardadas em silêncio),
+ * no máximo três cartões por dia e com intervalo entre eles. Diferentes dos emblemas da página de
+ * Conquistas, que são difíceis e permanentes. Regras puras: o histórico e o relógio entram por argumento.
  */
 import { chaveDoDia, somarDias } from '../util/dia'
 
-export type ArteConquista = 'broto' | 'muda' | 'flor' | 'arvore' | 'estrela' | 'arcoiris' | 'gato' | 'gatoCoracao'
-/** O fundo do cartão: verde do jardim, dourado da estrela, azul do céu, rosa do gatinho. */
-export type TomConquista = 'jardim' | 'estrela' | 'ceu' | 'gato'
+export type ArteConquista = 'fratura' | 'caloMole' | 'ponteOssea' | 'consolidada' | 'placa' | 'martelo' | 'caneca' | 'prancheta'
+/** O fundo do cartão: azul-ardósia do raio-X, aço do instrumental, verde do plantão. */
+export type TomConquista = 'raiox' | 'metal' | 'plantao'
 export interface ConquistaDia { id: string; titulo: string; texto: string; arte: ArteConquista; tom: TomConquista; /** a linha pequena: "25 questões hoje" */ marca: string }
 
 /** Limites anti-spam: cartões por dia neste aparelho e o intervalo mínimo entre dois. */
@@ -82,16 +83,16 @@ const acerto = (e: EstudoDoDia) => (e.validas ? e.certas / e.validas : 0)
 const questoes = (n: number) => (e: EstudoDoDia) => `${Math.max(n, e.feitas)} questões hoje`
 
 export const REGRAS_CONQUISTA: readonly Regra[] = [
-  // o jardim cresce com as questões do dia
-  { id: 'broto', arte: 'broto', tom: 'jardim', peso: 1, vale: (e) => e.feitas >= 10, marca: questoes(10), titulos: ['Brotou!', 'Uma sementinha acordou'], textos: ['Dez questões regadas hoje. Já tem broto no vasinho.', 'As primeiras dez de hoje. O jardim agradece a visita.'] },
-  { id: 'muda', arte: 'muda', tom: 'jardim', peso: 2, vale: (e) => e.feitas >= 25, marca: questoes(25), titulos: ['Folhinhas novas', 'Crescendo bonito'], textos: ['Vinte e cinco questões. A mudinha está esticando as folhas.', 'Vinte e cinco por hoje. Dá para ver crescer.'] },
-  { id: 'flor', arte: 'flor', tom: 'jardim', peso: 4, vale: (e) => e.feitas >= 50, marca: questoes(50), titulos: ['Floresceu!', 'Primeira flor do dia'], textos: ['Cinquenta questões hoje. Seu vasinho ganhou uma flor.', 'Meia centena e uma flor nova. Que tal uma água e um alongamento?'] },
-  { id: 'arvore', arte: 'arvore', tom: 'jardim', peso: 6, vale: (e) => e.feitas >= 100, marca: questoes(100), titulos: ['Virou árvore', 'Uma sombra para descansar'], textos: ['Cem questões hoje. O broto virou árvore; agora descanse à sombra dela.', 'A centena chegou. Comemore e durma bem: é no sono que fixa.'] },
+  // a fratura consolida com as questões do dia
+  { id: 'fratura', arte: 'fratura', tom: 'raiox', peso: 1, vale: (e) => e.feitas >= 10, marca: questoes(10), titulos: ['Primeiro raio-X do dia', 'Atendimento iniciado'], textos: ['Dez questões. O traço está no filme; agora é deixar consolidar.', 'As primeiras dez de hoje. Todo tratamento começa pela primeira imagem.'] },
+  { id: 'calo', arte: 'caloMole', tom: 'raiox', peso: 2, vale: (e) => e.feitas >= 25, marca: questoes(25), titulos: ['Calo mole', 'Consolidação em curso'], textos: ['Vinte e cinco questões. O calo já começou a se formar.', 'Vinte e cinco por hoje. Biologia trabalhando a seu favor.'] },
+  { id: 'ponte', arte: 'ponteOssea', tom: 'raiox', peso: 4, vale: (e) => e.feitas >= 50, marca: questoes(50), titulos: ['Ponte óssea', 'Calo duro'], textos: ['Cinquenta questões. Já dá para ver a ponte óssea no filme.', 'Meia centena hoje. Vale uma água e um alongamento antes de seguir.'] },
+  { id: 'consolidada', arte: 'consolidada', tom: 'raiox', peso: 6, vale: (e) => e.feitas >= 100, marca: questoes(100), titulos: ['Consolidação completa', 'Alta do ambulatório'], textos: ['Cem questões hoje. Fratura consolidada; agora o descanso faz a remodelação.', 'A centena chegou. Comemore e durma bem: é no sono que fixa.'] },
   // acerto, virada e constância
-  { id: 'estrela', arte: 'estrela', tom: 'estrela', peso: 5, vale: (e) => e.validas >= 20 && acerto(e) > 0.75, marca: (e) => `${Math.round(acerto(e) * 100)}% de acerto`, titulos: ['Estrelinha', 'Brilhou hoje'], textos: ['Mais de 75% de acerto em vinte questões ou mais. Uma estrelinha veio conferir.', 'Vinte questões ou mais, e mais de 75% certas. Que dia bonito.'] },
-  { id: 'arcoiris', arte: 'arcoiris', tom: 'ceu', peso: 3, vale: (e) => e.virada, marca: () => 'três erros, três acertos', titulos: ['Depois da chuva', 'Arco-íris'], textos: ['Três erros seguidos e logo três acertos. Depois da chuva sempre aparece o arco-íris.', 'Errou três, acertou as três seguintes. É assim que se aprende.'] },
-  { id: 'gato', arte: 'gato', tom: 'gato', peso: 3, vale: (e) => e.diasSeguidos >= 3, marca: () => '3 dias seguidos', titulos: ['Visita do gatinho', 'Um gatinho apareceu'], textos: ['Três dias seguidos de estudo. Ele veio se enrolar perto de você.', 'Terceiro dia seguido. O gatinho gostou da rotina e ficou um pouco.'] },
-  { id: 'gato7', arte: 'gatoCoracao', tom: 'gato', peso: 7, vale: (e) => e.diasSeguidos >= 7, marca: () => '7 dias seguidos', titulos: ['O gatinho ficou', 'Uma semana inteira'], textos: ['Sete dias seguidos. Agora ele mora aqui e cochila do seu lado.', 'Uma semana inteira de estudo. O gatinho escolheu você.'] },
+  { id: 'fixacao', arte: 'placa', tom: 'metal', peso: 5, vale: (e) => e.validas >= 20 && acerto(e) > 0.75, marca: (e) => `${Math.round(acerto(e) * 100)}% de acerto`, titulos: ['Fixação estável', 'Redução anatômica'], textos: ['Mais de 75% de acerto em vinte questões ou mais. Montagem firme.', 'Vinte questões ou mais e mais de 75% certas. Nada a revisar no controle.'] },
+  { id: 'reflexo', arte: 'martelo', tom: 'metal', peso: 3, vale: (e) => e.virada, marca: () => 'três erros, três acertos', titulos: ['Reflexo recuperado', 'Resposta presente'], textos: ['Três erros seguidos e logo três acertos. O reflexo voltou.', 'Errou três e acertou as três seguintes. É assim que se aprende.'] },
+  { id: 'plantao', arte: 'caneca', tom: 'plantao', peso: 3, vale: (e) => e.diasSeguidos >= 3, marca: () => '3 dias seguidos', titulos: ['Plantão em dia', 'Rotina firme'], textos: ['Três dias seguidos de estudo. A constância ganha da intensidade.', 'Terceiro dia seguido. O café é por conta do hábito.'] },
+  { id: 'escala', arte: 'prancheta', tom: 'plantao', peso: 7, vale: (e) => e.diasSeguidos >= 7, marca: () => '7 dias seguidos', titulos: ['Escala cumprida', 'Uma semana sem faltar'], textos: ['Sete dias seguidos de estudo. Escala da semana fechada.', 'Uma semana inteira de estudo. Assim se chega pronto à prova.'] },
 ]
 
 /**
@@ -108,11 +109,11 @@ export function novasConquistas(antes: EstudoDoDia, depois: EstudoDoDia, ja: (id
 
 /**
  * Pode mostrar um cartão agora? `mostrados`: os instantes dos cartões de hoje neste aparelho.
- * A árvore das cem questões e o gatinho da semana sempre aparecem (são raros); o resto respeita
+ * A consolidação das cem questões e a escala da semana sempre aparecem (são raros); o resto respeita
  * o máximo do dia e o intervalo. O que não aparece fica guardado do mesmo jeito.
  */
 export function cabeHoje(c: ConquistaDia, mostrados: number[], agora: number): boolean {
-  if (c.id === 'arvore' || c.id === 'gato7') return true
+  if (c.id === 'consolidada' || c.id === 'escala') return true
   if (mostrados.length >= MAXIMO_POR_DIA) return false
   return !mostrados.some((t) => agora - t < INTERVALO_MINIMO && agora >= t)
 }

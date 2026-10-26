@@ -16,8 +16,8 @@ import './conquistasDia.css'
 const DURACAO = 5_200
 
 /**
- * Conquistas do dia (Tales, 26/10/2026), no clima de jogo aconchegante: quando uma resposta feita
- * agora libera uma marca de hoje, um cartão de papel com a arte em pixel art dá um pulinho no alto
+ * Conquistas do dia (Tales, 26/10/2026), aconchegantes mas sóbrias: quando uma resposta feita
+ * agora libera uma marca de hoje, um cartão de papel com a arte em pixel art desce no alto
  * da tela. Para não virar spam: só a mais especial de cada vez (as outras ficam guardadas), no máximo
  * três por dia e com intervalo entre elas. Segue a preferência de "pequenas visitas e surpresas" e
  * espera o fim de simulados e sessões cronometradas. Cada conquista vale uma vez por dia neste aparelho.
@@ -100,8 +100,6 @@ export default function ConquistasDoDia() {
         <span className="cq__palco" aria-hidden="true">
           <span className="cq__arte"><ArteConquistaPixel arte={atual.arte} tamanho={72} /></span>
           <span className="cq__sombra" />
-          <span className="cq__brilhos"><i /><i /><i /><i /></span>
-          {atual.tom === 'gato' && <span className="cq__coracoes"><i /><i /><i /></span>}
         </span>
         <span className="cq__corpo">
           <small className="cq__etiqueta">Conquista do dia</small>
