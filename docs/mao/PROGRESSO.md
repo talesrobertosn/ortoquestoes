@@ -704,6 +704,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | aplicada |
 | 30 | As três medidas da posição articular do rádio distal | imagem | cap. 15, p. 604 e 605 | mao / Fratura do rádio distal | 07 | mao-2309 | publicada (original com NÃO; reescrita direta) |
 | 31 | Falange proximal do polegar | reformulada (gabarito diverge do plano do Green) | 7 | Falanges | 14 | mao-2347 | aplicada |
+| 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | aplicada |
 | 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | aplicada |
 | 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | aplicada |
 | 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | aplicada |
@@ -718,9 +719,12 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 46 | FOWLER: técnica (até 35 graus) | técnica | cap. 5, p. 196 e 197 (Fig. 5.19) | mao / Lesões dos tendões extensores | 05 | mao-2299 | publicada (original sem resposta defensável; refeita com resposta única) |
 | 47 | FERNANDEZ radioulnar distal tipo III | classificação | cap. 15, p. 648 | mao / Fratura do rádio distal | 07 | mao-2312 | publicada |
 | 48 | Músculo de GANTZER | reformulada | 28 | Neuropatia ulnar | 08 | mao-2314 | aplicada |
+| 49 | LARSEN, DALE e EEK | reformulada | 55 | Reumatoide | 15 | mao-2349 | aplicada |
+| 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | aplicada |
 | 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | aplicada |
 | 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | aplicada |
 | 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
+| 54 | Neuropatia ulnar após úmero distal | reformulada | 18 | Úmero distal | 15 | mao-2352 | aplicada |
 | 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
 | 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | aplicada |
 | 60 | Fraturas pediátricas e síndrome compartimental | reformulada (oficial aceitou A e D) | 51 | Compartimental | 12 | mao-2335 | aplicada |
@@ -733,6 +737,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | aplicada |
 | 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | aplicada |
 | 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
+| 75 | Reperfusão no macrorreimplante | reformulada | 42 | Reimplante | 15 | mao-2351 | aplicada |
 | 77 | Colo do metacarpo: afirmações | reformulada | 7 | Metacarpos | 12 | mao-2333 | aplicada |
 | 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | aplicada |
 | 82 | CURTIS: retinaculares transversos para as bandas laterais subirem | técnica | cap. 5, p. 202 e 203 (Fig. 5.26) | mao / Lesões dos tendões extensores | 06 | mao-2303 | publicada |
