@@ -15,6 +15,8 @@ import { IconePixel } from '../componentes/IconePixel'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/TemasQueMaisCaem.css'
 import { VoltarAoTopo } from '../componentes/IndicePagina'
+import { MODALIDADES, modalidadePorId, type IdModalidade, type Modalidade } from '../dados/modalidades'
+import { RankingModalidade } from './RankingModalidade'
 
 const QUESTOES_POR_TREINO = 20
 type Respondidas = Record<string, RegistroQuestao>
@@ -94,12 +96,39 @@ function SeloNivel({ nivel }: { nivel: Nivel }) {
   )
 }
 
-export function TemasQueMaisCaem() {
+/** As provas da página (27/10/2026): a visão de sempre (ortopedia, todas as provas oficiais) e uma por prova. */
+const PROVAS: Array<{ id: IdModalidade | 'ortopedia'; rotulo: string; grupo: string }> = [
+  { id: 'ortopedia', rotulo: 'Todas as provas', grupo: 'Ortopedia' },
+  ...MODALIDADES.filter((m) => m.grupo === 'ortopedia').map((m) => ({ id: m.id, rotulo: m.curto, grupo: 'Ortopedia' })),
+  { id: 'mao-ingresso', rotulo: 'Ingresso (residência)', grupo: 'Cirurgia da Mão' },
+  { id: 'mao-titulo', rotulo: 'Título: SBCM e SIMÃO', grupo: 'Cirurgia da Mão' },
+]
+
+function SeletorProva({ atual, aoEscolher }: { atual: string; aoEscolher: (id: string) => void }) {
+  return (
+    <nav className="tq-provas" aria-label="Escolha a prova">
+      {['Ortopedia', 'Cirurgia da Mão'].map((g) => (
+        <div key={g} className="tq-provas__grupo" role="group" aria-label={g}>
+          <span className="tq-provas__rotulo">{g}</span>
+          <div className="tq-provas__opcoes">
+            {PROVAS.filter((p) => p.grupo === g).map((p) => <button key={p.id} type="button" aria-pressed={atual === p.id} onClick={() => aoEscolher(p.id)}>{p.rotulo}</button>)}
+          </div>
+        </div>
+      ))}
+    </nav>
+  )
+}
+
+export function TemasQueMaisCaem({ consulta }: { consulta?: URLSearchParams }) {
   const { premium, logado, carregado, pagamentos_ativos } = usarPremium()
   const { sessao: sessaoConta } = usarConta()
   const { indice } = usarIndice()
   const [respondidas] = usarArmazenado<Respondidas>('respondidas', {})
   const { iniciarComAviso } = usarSessao()
+  const [provaSalva, salvarProva] = usarArmazenado<string>('temas:prova', 'ortopedia')
+  const pedida = consulta?.get('prova')
+  const prova = pedida && (pedida === 'ortopedia' || modalidadePorId(pedida)) ? pedida : provaSalva
+  const escolherProva = (id: string) => { salvarProva(id); navegar(`/temas-que-mais-caem${id === 'ortopedia' ? '' : `?prova=${id}`}`, true) }
 
   if (logado && !carregado) return <Carregando linhas={4} rotulo="Carregando" />
   if (!indice) return <Carregando linhas={6} rotulo="Carregando o ranking" />
@@ -113,8 +142,22 @@ export function TemasQueMaisCaem() {
     navegar('/sessao')
   }
 
+  async function treinarModalidade(todos: string[], tema: string | null, m: Modalidade) {
+    const ids = ordemDeTreino(todos, respondidas, Date.now())
+    if (!ids.length) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, areas: [m.area], subtemas: tema ? [tema] : [], embaralhar: true, limite: ids.length }, ids))) return
+    navegar('/sessao')
+  }
+
   const nome = logado ? primeiroNome(sessaoConta?.user.user_metadata?.nome) : ''
-  return <><Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} logado={logado} nome={nome} vendasAbertas={!logado || !carregado || pagamentos_ativos} /><VoltarAoTopo /></>
+  const modalidade = modalidadePorId(prova)
+  return <>
+    <SeletorProva atual={modalidade ? modalidade.id : 'ortopedia'} aoEscolher={escolherProva} />
+    {modalidade
+      ? <RankingModalidade key={modalidade.id} modalidade={modalidade} indice={indice} respondidas={respondidas} aberto={premium} logado={logado} treinar={treinarModalidade} />
+      : <Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} logado={logado} nome={nome} vendasAbertas={!logado || !carregado || pagamentos_ativos} />}
+    <VoltarAoTopo />
+  </>
 }
 
 interface PropsRanking { indice: Indice; respondidas: Respondidas; treinar: (area: AreaIncidencia, foco?: Foco) => void; aberto: boolean; logado: boolean; nome: string; vendasAbertas: boolean }
