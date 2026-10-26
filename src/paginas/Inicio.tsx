@@ -10,7 +10,7 @@ import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
 import { IconePixel } from '../componentes/IconePixel'
 import { bibliotecaVisivel } from '../biblioteca/recomendar'
-import { ChamaPixel } from '../componentes/ChamaPixel'
+import { SeloNovo } from '../componentes/SeloNovo'
 import { QuadroAtlas } from '../componentes/QuadroAtlas'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
@@ -19,13 +19,13 @@ import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../compon
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { SecaoIndique } from '../componentes/SecaoIndique'
-import { CartaoPlanos } from '../componentes/CartaoPlanos'
+import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import { type DiaSequencia, PainelSequencia } from '../componentes/inicio/PainelSequencia'
 import { CaminhoConvite, CaminhoProva } from '../componentes/inicio/CaminhoProva'
 import { usarConquistas } from '../estado/usarConquistas'
 import { emblemasQuaseLa } from '../estado/conquistas'
-import { FLASHCARDS_NA_CAPA, fraseGratis, recurso, urlCss } from '../config'
+import { FLASHCARDS_NA_CAPA, fraseGratis, recurso } from '../config'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -311,6 +311,7 @@ export function Inicio() {
         {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
         {vazio}
         <ConviteLimiteDoDia />
+        <FaixaPlanos />
         <ChamadaSimuladoNacional />
         <QuadroAtlas />
 
@@ -412,6 +413,8 @@ export function Inicio() {
         {!cronograma.carregando && !calculo && <CaminhoConvite premium={cronograma.premium} />}
       </section>
 
+      {/* Atalhos (25/10/2026, pedido do Tales: harmonia): todos do mesmo jeito, ícone em pixel e uma linha de contexto.
+          Novidade ganha o selo fino, sem fogo. */}
       <nav className="ip-atalhos ip-entra" aria-label="Atalhos" style={{ '--i': 1 } as CSSProperties}>
         <a className="ip-atalho" href={href('/treinar')}>
           <IconePixel nome="treinar" tamanho={40} />
@@ -423,24 +426,31 @@ export function Inicio() {
           {revisarHoje > 0 && <b className="ip-atalho__contador numerico">{revisarHoje > 99 ? '99+' : revisarHoje}</b>}
         </a>
         {FLASHCARDS_NA_CAPA && <>
-          <a className="ip-atalho ip-atalho--arte" href={href('/flashcards/biblioteca')} style={{ '--arte': urlCss('pixel/inicio/atalho-biblioteca.png') } as CSSProperties}>
+          <a className="ip-atalho" href={href('/flashcards/biblioteca')}>
+            <span className="ip-px ip-px--cartas" aria-hidden="true"><i /><i /><i /></span>
             <span><strong>Estudar flashcards</strong><small>Revisão espaçada</small></span>
           </a>
-          <a className="ip-atalho ip-atalho--arte ip-atalho--jogo" href={href('/flashcards/cripta')} style={{ '--arte': urlCss('pixel/inicio/atalho-cripta.png') } as CSSProperties}>
+          <a className="ip-atalho" href={href('/flashcards/cripta')}>
+            <IconePixel nome="ranking" tamanho={40} />
             <span><strong>Jogar o Torneio</strong><small>Flashcards no modo jogo</small></span>
           </a>
         </>}
-        {bibliotecaVisivel() && <a className="ip-atalho ip-atalho--resumos" href={href('/resumos')}>
-          <ChamaPixel altura={50} lados={16} raio={16} />
-          <span className="ip-atalho__livros" aria-hidden="true"><i /><i /><i /></span>
-          <span><strong>Resumos</strong><small>Novos toda semana · Beta</small></span>
-        </a>}
+        {bibliotecaVisivel() && (
+          <a className="ip-atalho" href={href('/resumos')}>
+            <span className="ip-px ip-px--livros" aria-hidden="true"><i /><i /><i /></span>
+            <span><strong>Resumos <SeloNovo texto="Beta" /></strong><small>Novos toda semana</small></span>
+          </a>
+        )}
+        <a className="ip-atalho" href={href('/atlas')}>
+          <img className="ip-atlas-icone" src={recurso('atlas3d/icone-mao.png')} width={44} height={44} alt="" loading="lazy" decoding="async" />
+          <span><strong>Atlas 3D <SeloNovo /></strong><small>Clique no osso</small></span>
+        </a>
       </nav>
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <ConviteLimiteDoDia />
+      <FaixaPlanos />
       <ChamadaSimuladoNacional />
-      <QuadroAtlas />
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
       {vazio}
 
@@ -548,16 +558,6 @@ export function Inicio() {
           </section>
         </div>
 
-        <div className="ip-dupla">
-          <CaixasAssinante />
-          <VitrineAssinante />
-        </div>
-
-        {/* Depois do estudo do dia, não antes: a novidade não pode empurrar a ação principal para baixo.
-            O crachá do perfil fica no topo do site, uma vez por entrada (App.tsx). */}
-        {cronogramaNoPainel && <NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} />}
-        {!calculo && !cronograma.carregando && respondidasTotal < 30 && <AteAProva total={indice!.total} conta={Boolean(conta)} />}
-
         <section className="ip-temas" aria-labelledby="ip-temas-titulo">
           <header className="ip-secao-cabeca">
             <h2 id="ip-temas-titulo">Treinar por tema</h2>
@@ -582,6 +582,19 @@ export function Inicio() {
               })}
           </ul>
         </section>
+
+        <QuadroAtlas />
+
+        <div className="ip-dupla">
+          <CaixasAssinante />
+          <VitrineAssinante />
+        </div>
+
+        {/* Depois do estudo do dia, não antes: a novidade não pode empurrar a ação principal para baixo.
+            O crachá do perfil fica no topo do site, uma vez por entrada (App.tsx). */}
+        {cronogramaNoPainel && <NovidadeSimulados plano={cronograma.plano} aoMudarPlano={cronograma.definirPlano} />}
+        {!calculo && !cronograma.carregando && respondidasTotal < 30 && <AteAProva total={indice!.total} conta={Boolean(conta)} />}
+
 
         <div className="ip-dupla ip-dupla--rodape">
           <BlocoRanking conta={Boolean(conta)} conquistadas={conquistadas} totalConquistas={totalConquistas} sequencia={streak.atual} />

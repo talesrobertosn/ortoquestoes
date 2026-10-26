@@ -195,8 +195,11 @@ export class Motor {
 
   private dentroDaRegiao(e: Estrutura) {
     if (!this.regiao) return true
-    // basta a estrutura cruzar a região: nervos e vasos longos atravessam várias
-    return this.regiao.some((r) => e.b[3] >= r.min.x && e.b[0] <= r.max.x && e.b[4] >= r.min.y && e.b[1] <= r.max.y && e.b[5] >= r.min.z && e.b[2] <= r.max.z)
+    // Na altura, basta cruzar a região (nervos e vasos longos atravessam várias). Nos lados e na profundidade,
+    // o centro da estrutura precisa estar dentro: senão o antebraço e a mão, pendurados ao lado do quadril,
+    // entravam em "Pelve e quadril" e em "Coxa" (relato do Tales, 25/10/2026).
+    const cx = (e.b[0] + e.b[3]) / 2, cy = (e.b[1] + e.b[4]) / 2
+    return this.regiao.some((r) => cx >= r.min.x && cx <= r.max.x && cy >= r.min.y && cy <= r.max.y && e.b[5] >= r.min.z && e.b[2] <= r.max.z)
   }
 
   aplicarVisibilidade() {

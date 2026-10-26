@@ -195,11 +195,8 @@
 
 .jc__caixa.mn-janela { width: min(58rem, 100%); }
 .mn { display: grid; gap: 1.25rem; }
-.mn__cabeca {
-  position: relative; overflow: hidden; padding: 2rem 5.5rem 1.7rem 2.25rem; color: var(--sobre-heroi);
-  background: var(--heroi);
-}
-.mn__titulo { margin: 0; font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.02em; color: #fff; }
+.mn__cabeca { position: relative; padding: 1.6rem 5rem 0 2.25rem; }
+.mn__titulo { margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.6rem; letter-spacing: -0.01em; color: var(--texto); }
 .mn__cabeca p { margin: 0.35rem 0 0; color: var(--sobre-heroi-2); }
 .mn-janela .mn > :not(.mn__cabeca) { margin-inline: 2.25rem; }
 .mn-janela .mn { padding-bottom: 1.6rem; }
@@ -214,8 +211,29 @@
 .mn-retomar small { display: block; opacity: 0.88; font-size: var(--corpo-menor); }
 .mn-retomar__icone { display: grid; place-items: center; width: 2.3rem; height: 2.3rem; border-radius: 50%; background: rgba(255, 255, 255, 0.2); flex: none; }
 
-.mn__grupos { display: grid; gap: 1.25rem; }
-@media (min-width: 60rem) { .mn__grupos { display: block; columns: 2; column-gap: 2rem; } .mn-grupo { break-inside: avoid; margin-bottom: 1.4rem; } }
+.mn__grupos { display: grid; gap: 1.1rem; }
+@media (min-width: 60rem) { .mn__grupos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem 2rem; } }
+
+/* As quatro do dia a dia: cartões iguais, no estilo pixel do site (borda e sombra dura). */
+.mn-principais { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem; }
+.mn-principal { position: relative; display: grid; gap: 0.15rem; align-content: start; padding: 0.85rem 0.9rem; border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); color: var(--texto); text-decoration: none; box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, border-color 0.12s; }
+.mn-principal:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--px-sombra); border-color: var(--verdete); }
+.mn-principal:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
+.mn-principal[aria-current="page"] { border-color: var(--verdete); background: var(--verdete-veu); }
+.mn-principal__icone { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; margin-bottom: 0.35rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete); }
+.mn-principal strong { font-size: 1rem; font-weight: 700; }
+.mn-principal small { color: var(--texto-2); font-size: 0.78rem; line-height: 1.3; }
+.mn-principal__selo { position: absolute; top: 0.6rem; right: 0.6rem; }
+@media (max-width: 40rem) { .mn-principais { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Planos e indicação: no fim, discretos, lado a lado. */
+.mn-extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.6rem; }
+.mn-extra { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.65rem 0.8rem; border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie-2); color: var(--texto); text-decoration: none; }
+.mn-extra:hover { border-color: var(--ouro, #c9952f); }
+.mn-extra strong { display: block; font-size: 0.92rem; }
+.mn-extra small { display: block; color: var(--texto-2); font-size: 0.78rem; line-height: 1.3; }
+.mn-extra__icone { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: var(--raio-controle); background: linear-gradient(135deg, #fff0bf, #f7d77c); color: #6b4a06; }
+.mn-extra--indicar .mn-extra__icone { background: color-mix(in srgb, #1fa855 18%, var(--superficie)); color: #15803d; }
 .mn-grupo__titulo { margin: 0 0 0.35rem 0.7rem; color: var(--texto-2); font-size: 0.72rem; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
 .mn-grupo ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.15rem; }
 
@@ -460,3 +478,68 @@
 .mn-busca__tipo { font-size: 0.66rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texto-2); }
 .mn-busca__carregando { padding: 0.5rem 0.75rem; color: var(--texto-2); font-size: 0.8rem; }
 @media (max-width: 30rem) { .mn-busca__tipo { display: none; } }
+
+/* Selo de novidade (25/10/2026): pílula dourada fina, com um brilho que atravessa a cada poucos segundos. */
+.selo-novo { position: relative; display: inline-flex; align-items: center; overflow: hidden; padding: 0.08rem 0.45rem; border: 1px solid color-mix(in srgb, #c9952f 60%, transparent); border-radius: 999px; background: linear-gradient(135deg, #fff7df, #f6dfa1); color: #6b4a06; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; line-height: 1.4; text-transform: uppercase; vertical-align: middle; white-space: nowrap; }
+.selo-novo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.85) 50%, transparent 70%); transform: translateX(-120%); animation: selo-brilho 4.5s ease-in-out infinite; }
+:root[data-tema="escuro"] .selo-novo { background: linear-gradient(135deg, #4a3712, #6b4f17); color: #ffe2a0; border-color: #a9822e; }
+@keyframes selo-brilho { 0%, 70% { transform: translateX(-120%); } 100% { transform: translateX(120%); } }
+@media (prefers-reduced-motion: reduce) { .selo-novo::after { animation: none; display: none; } }
+
+.mn-planos-faixa { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; padding: 0.7rem 0.9rem; border: 2px solid #c9952f; border-radius: 6px; background: linear-gradient(135deg, #fffaf0, #fbefd2); color: #3b2604; text-decoration: none; box-shadow: 3px 3px 0 color-mix(in srgb, #c9952f 35%, transparent); }
+.mn-planos-faixa:hover { border-color: #a87a1d; }
+.mn-planos-faixa strong { display: block; font-size: 1rem; }
+.mn-planos-faixa small { display: block; color: #6b5a3a; font-size: 0.8rem; line-height: 1.35; }
+.mn-planos-faixa__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.45rem 0.85rem; border-radius: 999px; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; font-weight: 800; font-size: 0.82rem; white-space: nowrap; }
+:root[data-tema="escuro"] .mn-planos-faixa { background: linear-gradient(135deg, #2e2412, #3a2d12); color: #ffe9b8; }
+:root[data-tema="escuro"] .mn-planos-faixa small { color: #d9c79e; }
+@media (max-width: 30rem) { .mn-planos-faixa { grid-template-columns: auto minmax(0, 1fr); } .mn-planos-faixa__acao { grid-column: 1 / -1; justify-content: center; } }
+
+/* Faixa dos planos na página inicial (25/10/2026): fina, dourada, sempre no começo para quem não assina. */
+.faixa-planos { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; padding: 0.75rem 1rem; border: 2px solid #c9952f; border-radius: 6px; background: linear-gradient(135deg, #fffaf0, #fbefd2); color: #3b2604; text-decoration: none; box-shadow: 4px 4px 0 color-mix(in srgb, #c9952f 30%, transparent); }
+.faixa-planos:hover { border-color: #a87a1d; color: #3b2604; }
+.faixa-planos img { image-rendering: pixelated; }
+.faixa-planos__texto strong { display: block; font-size: 1.02rem; }
+.faixa-planos__texto small { display: block; color: #6b5a3a; font-size: 0.84rem; line-height: 1.4; }
+.faixa-planos__acao { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.55rem 1rem; border-radius: 999px; background: linear-gradient(135deg, #f4cf7c, #c9952f); color: #3b2604; font-weight: 800; white-space: nowrap; box-shadow: 0 2px 0 #8a6416; }
+:root[data-tema="escuro"] .faixa-planos { background: linear-gradient(135deg, #2e2412, #3a2d12); color: #ffe9b8; }
+:root[data-tema="escuro"] .faixa-planos__texto small { color: #d9c79e; }
+@media (max-width: 36rem) { .faixa-planos { grid-template-columns: auto minmax(0, 1fr); } .faixa-planos__acao { grid-column: 1 / -1; justify-content: center; } }
+
+/* Ícones em pixel desenhados em CSS (40px), usados no menu e nos atalhos da página inicial. */
+.ip-px { position: relative; flex: none; display: block; width: 40px; height: 40px; }
+.ip-px i { position: absolute; display: block; box-shadow: 0 0 0 2px #1b1208; }
+.ip-px--cartas i { width: 22px; height: 28px; border-radius: 2px; }
+.ip-px--cartas i:nth-child(1) { left: 4px; top: 8px; background: #2f7d62; transform: rotate(-12deg); }
+.ip-px--cartas i:nth-child(2) { left: 10px; top: 5px; background: #f4cf7c; transform: rotate(-2deg); }
+.ip-px--cartas i:nth-child(3) { left: 15px; top: 6px; background: #f6f1e3; transform: rotate(10deg); }
+.ip-px--cartas i:nth-child(3)::after { content: ""; position: absolute; left: 6px; right: 6px; top: 9px; height: 3px; background: #b5523a; box-shadow: 0 6px 0 #b5523a; }
+.ip-px--livros i { bottom: 4px; width: 9px; box-shadow: 0 0 0 2px #1b1208, inset 0 5px 0 -3px rgba(244, 207, 124, 0.9); }
+.ip-px--livros i:nth-child(1) { left: 5px; height: 26px; background: #2f7d62; }
+.ip-px--livros i:nth-child(2) { left: 16px; height: 32px; background: #b5523a; }
+.ip-px--livros i:nth-child(3) { left: 27px; height: 22px; background: #3d6aa8; transform: rotate(12deg); transform-origin: bottom left; }
+.ip-px--osso { transform: rotate(-30deg); }
+.ip-px--osso i { background: #f1e6cd; }
+.ip-px--osso i:nth-child(1) { left: 9px; top: 17px; width: 22px; height: 6px; }
+.ip-px--osso i:nth-child(2), .ip-px--osso i:nth-child(3) { top: 12px; width: 9px; height: 16px; border-radius: 4px; background: linear-gradient(to bottom, #f1e6cd 0 45%, #cdbb93 45% 55%, #f1e6cd 55%); }
+.ip-px--osso i:nth-child(2) { left: 2px; }
+.ip-px--osso i:nth-child(3) { right: 2px; }
+:root[data-tema="escuro"] .ip-px i { box-shadow: 0 0 0 2px #050807; }
+
+/* Menu: Resumos e Atlas 3D em destaque (25/10/2026), cartões largos com arte e um fundo leve de cada cor. */
+.mn-destaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+.mn-destaque { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.8rem 0.95rem; border: 2px solid var(--px-borda); border-radius: 6px; color: var(--texto); text-decoration: none; box-shadow: 3px 3px 0 var(--px-sombra); transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, border-color 0.12s; }
+.mn-destaque--livros { background: linear-gradient(135deg, color-mix(in srgb, #b5523a 10%, var(--superficie)), var(--superficie)); }
+.mn-destaque--osso { background: linear-gradient(135deg, color-mix(in srgb, #1d8a7f 13%, var(--superficie)), var(--superficie)); }
+.mn-destaque:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--px-sombra); border-color: var(--verdete); }
+.mn-destaque:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--px-sombra); }
+.mn-destaque[aria-current="page"] { border-color: var(--verdete); }
+.mn-destaque__texto strong { display: flex; align-items: center; gap: 0.4rem; font-size: 1.05rem; font-weight: 700; }
+.mn-destaque__texto small { display: block; margin-top: 0.1rem; color: var(--texto-2); font-size: 0.8rem; line-height: 1.35; }
+.mn-destaque__seta { color: var(--texto-2); }
+.mn-destaque:hover .mn-destaque__seta { color: var(--verdete); }
+@media (max-width: 40rem) { .mn-destaques { grid-template-columns: 1fr; } }
+/* Atlas 3D: a mão dissecada do próprio atlas no lugar do osso desenhado (pedido do Tales, 25/10/2026). */
+.mn-destaque__imagem, .ip-atlas-icone { flex: none; object-fit: contain; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.18)); }
+.mn-destaque__imagem { width: 52px; height: 52px; margin: -6px 0; }
+.ip-atlas-icone { width: 44px; height: 44px; margin: -4px 0; }

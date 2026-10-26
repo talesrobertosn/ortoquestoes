@@ -42,3 +42,12 @@
   .qa__botao { width: 100%; justify-content: center; }
   .qa { grid-template-columns: minmax(0, 1fr) 6.5rem; }
 }
+
+/* Compacto (25/10/2026): menos altura, sem o fogo em volta. */
+.qa { margin-top: 0; }
+.qa__texto { padding: 1.5rem 0 1.5rem 1.8rem; gap: 0.6rem; }
+.qa strong { font-size: 1.7rem; }
+.qa__arte { min-height: 15rem; }
+.qa__arte img { height: 15rem; }
+.qa__selo { background: transparent; color: #edd69f; padding: 0; letter-spacing: 0.06em; }
+@media (max-width: 52rem) { .qa strong { font-size: 1.35rem; } .qa__arte img { max-height: 13rem; } }
