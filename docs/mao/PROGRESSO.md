@@ -888,3 +888,27 @@ Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2022 SEM RESPOSTAS.pdf
 | 98 | Perfil para parafusos subcondrais | reformulada | 15 | Rádio distal | 17 | mao-2461 | publicada |
 | 99 | Supinadores da fileira distal | reformulada | 13 | Carpo | 17 | mao-2462 | publicada |
 | 100 | Tratamento do TSUGE moderado | reformulada (ângulo diferente do SIMÃO 2024) | 51 | VOLKMANN | 16 | mao-2457 | publicada |
+
+## SIMÃO 2021
+
+Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/bin/separa_simao.py` para
+`.oq/provas/simao-2021.json`. Respostas da correção em [dicas/simao-2021.md](dicas/simao-2021.md). Lotes em
+`~/OrtoQuestoes-Biblioteca/lotes/simao-2021/`, no modelo de miniaula.
+
+| Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
+|---|---|---|---|---|---|---|---|
+| 2 | Falange em delta dupla | reformulada | 36 | Congênitas | 01 | mao-2466 | aplicada |
+| 3 | Estiloidectomia e radioescafocapitato | reformulada | 13 | Carpo | 01 | mao-2467 | aplicada |
+| 5 | LANZ: ramo motor do mediano | reformulada | 28 | Túnel do carpo | 01 | mao-2468 | aplicada |
+| 6 | Tumor de pele mais comum da mão | reformulada | 58 | Tumores de pele | 01 | mao-2469 | aplicada |
+| 8 | Zona 8 extensora | reformulada | 5 | Extensores | 01 | mao-2470 | aplicada |
+| 9 | Sindactilia e BMP | reformulada | 35 | Embriologia | 02 | mao-2471 | aplicada |
+| 12 | Profundo lesado com superficial íntegro | reformulada (princípio destacado pelo Green) | 6 | Flexores | 02 | mao-2472 | aplicada |
+| 14 | Incisura sigmoide plana | reformulada | 14 | Radioulnar distal | 02 | mao-2473 | aplicada |
+| 17 | Síndrome da intersecção | reformulada | 56 | Tendinopatias | 02 | mao-2474 | aplicada |
+| 18 | Lesão de MANNERFELT | reformulada | 55 | Reumatoide | 02 | mao-2475 | aplicada |
+| 22 | Necrose da cabeça do rádio assintomática | reformulada | 19 | Cabeça do rádio | 03 | mao-2476 | aplicada |
+| 26 | Dissociação escafolunar aguda | reformulada | 13 | Carpo | 03 | mao-2477 | aplicada |
+| 27 | Lesões do nervo radial | reformulada | 31 | Transferências | 03 | mao-2478 | aplicada |
+| 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
+| 39 | Local da lesão do colateral ulnar | reformulada | 8 | Ligamentos | 03 | mao-2480 | aplicada |
