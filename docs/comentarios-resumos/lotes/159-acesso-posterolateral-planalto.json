@@ -1,0 +1,45 @@
+{
+  "trauma-1195": {
+    "questaoSha256": "8c036818ede7f065dc49d04f2fcebaebccbbe303db0dac8272cb557868ffcbc7",
+    "comentarioAnteriorSha256": "a1368fbc946e21924cf0273919029874fc14b0406e35918d8d4a5af0b09866ea",
+    "comentario": {
+      "conceito": "O problema operatório deste caso é alcançar um fragmento que ficou atrás do planalto lateral. Chamar a fratura de **Schatzker IV** informa que há comprometimento do planalto medial, mas não descreve todos os fragmentos posteriores. A tomografia e a orientação de cada traço continuam necessárias: uma classificação feita principalmente pela radiografia anteroposterior não garante que a via da frente permita reduzir e apoiar uma coluna posterior (Rockwood, 10ª ed., cap. 62, “Classificação de SCHATZKER” e “As três colunas de LUO”).\n\nImagine agora a região por trás e pelo lado de fora do joelho. A **cabeça lateral do gastrocnêmio e o bíceps femoral** delimitam a janela muscular superficial procurada na questão. O nervo fibular comum passa sob a borda medial do bíceps e depois contorna o colo da fíbula. Portanto, reconhecer o bíceps não serve apenas para nomear a alternativa: ajuda a localizar a estrutura nervosa que precisa ser identificada e protegida durante o acesso. O nervo é uma referência de risco, não um substituto para o músculo ao descrever o intervalo.\n\n**A janela de entrada não é toda a dissecção.** Na via em L invertido descrita no resumo, o braço vertical acompanha a borda lateral do gastrocnêmio. Em profundidade, desenvolve-se o plano entre gastrocnêmio lateral e sóleo; o gastrocnêmio e o feixe poplíteo são levados para medial, e fibras do sóleo são liberadas da fíbula. Isso explica por que uma pergunta sobre o intervalo superficial pode ter bíceps na resposta, enquanto a descrição dos passos profundos menciona sóleo. São níveis diferentes do mesmo acesso, não duas respostas concorrentes (cap. 62, “As vias posteriores e posterolaterais”).\n\nA dissecção também tem um limite vascular importante. Abaixo do sóleo, distal ao colo da fíbula, a abertura na membrana interóssea marca a passagem da **artéria tibial anterior**. O poplíteo pertence aos planos profundos; a artéria genicular inferior lateral passa superficialmente a ele, e o resumo recomenda trabalhar profundo ao músculo para proteger os vasos maiores. Não se deve prolongar a exposição supondo que todos esses planos tenham a mesma segurança.\n\nO objetivo da abordagem é chegar ao fragmento que precisa ser reduzido e sustentado. Um traço coronal posterior pode escapar ao controle de uma placa anterior ou lateral; insistir em uma janela que não o expõe deixa uma redução ou uma fixação insuficiente. A escolha da via deve acompanhar a anatomia real da fratura, preservando nervos e vasos, em vez de ser decidida apenas pelo número de Schatzker.",
+      "correta": "**B: gastrocnêmio lateral e bíceps femoral.** É a relação muscular superficial pedida para a entrada posterolateral. O bíceps ajuda a localizar o fibular comum sob sua borda medial; depois da identificação e proteção do nervo, a exposição prossegue em outro nível, entre gastrocnêmio lateral e sóleo. Assim se alcança a tíbia posterior sem confundir a janela inicial com a dissecção profunda.",
+      "incorretas": {
+        "A": "**Confunde a entrada com um plano mais profundo.** O poplíteo aparece na exposição posterior e tem relações vasculares próprias: a genicular inferior lateral passa superficialmente a ele. Na técnica descrita, a progressão após a janela superficial desenvolve primeiro o plano gastrocnêmio-sóleo. Trocar o bíceps pelo poplíteo mistura esses níveis e não identifica a janela muscular solicitada.",
+        "C": "**Reconhece o nervo de risco, mas omite seu marco muscular.** O fibular comum está sob a borda medial do bíceps e deve ser localizado antes de avançar. Pode orientar a proteção durante a dissecção, porém não equivale ao bíceps na descrição do intervalo muscular. A diferença importa porque o nervo precisa ser preservado, e não tratado como tecido que se afasta indiscriminadamente para ganhar exposição.",
+        "D": "**Reúne estruturas que também aparecem nas exposições laterais, sem definir a entrada descrita.** O colateral lateral acompanha a cabeça da fíbula nas abordagens transfibulares com osteotomia; o poplíteo, por sua vez, é uma referência profunda junto aos vasos geniculares. Essa relação não deve ser confundida com a janela superficial da via posterolateral sem que se especifique outra técnica de exposição.",
+        "E": "**Mistura uma estrutura profunda com o nervo que deve ser protegido mais superficialmente.** O trajeto do fibular é reconhecido junto ao bíceps e ao colo da fíbula; o poplíteo orienta outro nível, relacionado à exposição posterior e à proteção vascular. Nomear ambos não descreve o plano muscular inicial nem a sequência gastrocnêmio-sóleo que permite aprofundar o acesso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; AO/OTA, LUO, HOHL e MOORE e o planalto em zonas; Lado medial e vias posteriores."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-62-planalto-tibial",
+        "titulo": "Fratura do planalto tibial",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+        "secoes": [
+          "Classificação de SCHATZKER",
+          "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas",
+          "Lado medial e vias posteriores"
+        ],
+        "blocos": [
+          "classificacao-de-schatzker-d599fb64",
+          "classificacao-de-schatzker-a19af221",
+          "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-5cb9b6b2",
+          "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-f6e60936",
+          "lado-medial-e-vias-posteriores-bc5f6eec",
+          "lado-medial-e-vias-posteriores-e6f21b8f"
+        ],
+        "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+        "trechosSha256": "852ab461863f6782ca8caa492abd7dd85440bbddda2aa23e6af7e0ca2f08c4f2"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

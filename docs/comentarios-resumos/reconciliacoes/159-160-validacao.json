@@ -1,0 +1,66 @@
+{
+  "base": "497e8778989f830a77e6be29e9c780993fe55188",
+  "lotes": {
+    "159": {
+      "revisadas": [
+        "trauma-1195"
+      ],
+      "pendencias": 9
+    },
+    "160": {
+      "revisadas": [
+        "trauma-0723"
+      ],
+      "pendencias": 9
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logSha256": "7c14d4659448f6712120dad40fa0251a5de231f1dd6dd67fdffcf0c693384068",
+  "replay": "2/2, alternativas, fontes e hashes, avulsos integrais",
+  "preservacao": "18 comentários pendentes intactos; todos os membros alheios, questões, gabaritos e revisão médica preservados",
+  "visual": {
+    "casos": 2,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alerta0723": true,
+    "capturasInspecionadas": [
+      "159-trauma-1195-aula-cel.png",
+      "159-trauma-0723-alerta-pc.png"
+    ]
+  },
+  "inventario": {
+    "duplicada": 87,
+    "pendente": 617,
+    "pendente-anulada": 9,
+    "pendente-figura-ausente": 2,
+    "pendente-fonte": 307,
+    "pendente-inspecao-imagem": 85,
+    "revisada": 1359
+  },
+  "sincronizacaoLetras": {
+    "base": "bb58ceb04ad5e4688096a4d0a13a36e292cb8458",
+    "diferencas": [
+      "refs.trauma-1195",
+      "fixas.trauma-0723"
+    ],
+    "produzidoPor": "scripts/letras_alternativas.py",
+    "igualProducao541": true,
+    "testes": [
+      "testar_ordem_alternativas.mjs",
+      "14fixtures de comentários-resumos",
+      "validar_acervo sem erros",
+      "build",
+      "diff-check"
+    ],
+    "logSha256": "fe880a8ec66e860f45c751fbf14d4049fb760e9f7a775667cd2cb00804da8fec"
+  }
+}

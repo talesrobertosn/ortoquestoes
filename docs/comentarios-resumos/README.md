@@ -42,6 +42,7 @@ Checkpoint detalhado da passagem atual: [RETOMADA-2026-10-20.md](RETOMADA-2026-1
 8. O catálogo é atualizado depois da aplicação. Se resumo, questão ou comentário mudar, o item volta a `revalidar`. Reaplicar lote antigo deve falhar: exporte novamente e confira o que mudou. Não atualizar hashes para disfarçar falta de releitura.
 9. Validar e publicar em lotes revisáveis:
    ```bash
+   python3 scripts/letras_alternativas.py
    python3 fixtures/testar_comentarios_resumos.py
    python3 scripts/validar_acervo.py
    npm test
