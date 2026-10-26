@@ -45,5 +45,22 @@
     "pendente-fonte": 307,
     "pendente-inspecao-imagem": 85,
     "revisada": 1359
+  },
+  "sincronizacaoLetras": {
+    "base": "bb58ceb04ad5e4688096a4d0a13a36e292cb8458",
+    "diferencas": [
+      "refs.trauma-1195",
+      "fixas.trauma-0723"
+    ],
+    "produzidoPor": "scripts/letras_alternativas.py",
+    "igualProducao541": true,
+    "testes": [
+      "testar_ordem_alternativas.mjs",
+      "14fixtures de comentários-resumos",
+      "validar_acervo sem erros",
+      "build",
+      "diff-check"
+    ],
+    "logSha256": "fe880a8ec66e860f45c751fbf14d4049fb760e9f7a775667cd2cb00804da8fec"
   }
 }
