@@ -12,7 +12,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 0 | 0 | | |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
-| SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 0 | 0 | | |
+| SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 100 | 0 | mao-2278 a mao-2377 | A 27, B 25, C 25, D 23 |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
 | SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 99 | 1 | mao-2189 a mao-2277; ombro-cotovelo-0676 a ombro-cotovelo-0685 | A 25, B 25, C 25, D 24 |
 | SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
@@ -679,88 +679,103 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
-| 1 | Diagnósticos que imitam o túnel cubital | reformulada | 28 | Neuropatia ulnar | 08 | mao-2313 | aplicada |
+| 1 | Diagnósticos que imitam o túnel cubital | reformulada | 28 | Neuropatia ulnar | 08 | mao-2313 | publicada |
 | 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
-| 3 | Biomecânica trapeziometacarpal | reformulada | 11 | Rizartrose | 09 | mao-2322 | aplicada |
+| 3 | Biomecânica trapeziometacarpal | reformulada | 11 | Rizartrose | 09 | mao-2322 | publicada |
 | 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
 | 5 | FOWLER: indicação no martelo crônico | conduta | cap. 5, p. 196 e 197 | mao / Lesões dos tendões extensores | 05 | mao-2298 | publicada |
-| 6 | Colateral ulnar do polegar completo | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2338 | aplicada |
-| 7 | Enxerto total x parcial | reformulada | 44 | Cobertura | 13 | mao-2340 | aplicada |
+| 6 | Colateral ulnar do polegar completo | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2338 | publicada |
+| 7 | Enxerto total x parcial | reformulada | 44 | Cobertura | 13 | mao-2340 | publicada |
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
-| 9 | Anestésico do bloqueio de BIER | reformulada | 1 | Anestesia | 17 | mao-2361 | aplicada |
+| 9 | Anestésico do bloqueio de BIER | reformulada | 1 | Anestesia | 17 | mao-2361 | publicada |
 | 10 | PALMER 2C: perfuração com condromalácia | classificação | cap. 14, p. 571 e 572 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2296 | publicada |
 | 11 | Martelo tipo I: mais comum, agudo até 4 semanas, tala | afirmativas | cap. 5, p. 192 e 193 | mao / Lesões dos tendões extensores | 05 | mao-2302 | publicada |
-| 12 | Hanseníase: parasitização | reformulada | 3 | Infecções crônicas | 10 | mao-2325 | aplicada |
+| 12 | Hanseníase: parasitização | reformulada | 3 | Infecções crônicas | 10 | mao-2325 | publicada |
 | 13 | DOYLE III: aberta com perda de tecido | classificação | cap. 5, p. 192 a 194 | mao / Lesões dos tendões extensores | 05 | mao-2300 | publicada |
+| 14 | Arco palmar profundo | reformulada (oficial aceitou A e B) | 60 | Vascular | 19 | mao-2371 | publicada |
+| 15 | Colágeno tipo III no DUPUYTREN | reformulada (oficial aceitou A e C) | 4 | Dupuytren | 19 | mao-2368 | publicada |
 | 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
-| 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | aplicada |
-| 18 | Fisiopatologia da SDRC | reformulada (mecanismo do Green) | 53 | SDRC | 17 | mao-2362 | aplicada |
-| 19 | Objetivos no membro mutilado | reformulada (sem EXCETO) | 43 | Membro mutilado | 11 | mao-2330 | aplicada |
-| 20 | Ramos terminais da artéria radial | reformulada | 60 | Vascular | 14 | mao-2344 | aplicada |
+| 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | publicada |
+| 18 | Fisiopatologia da SDRC | reformulada (mecanismo do Green) | 53 | SDRC | 17 | mao-2362 | publicada |
+| 19 | Objetivos no membro mutilado | reformulada (sem EXCETO) | 43 | Membro mutilado | 11 | mao-2330 | publicada |
+| 20 | Ramos terminais da artéria radial | reformulada | 60 | Vascular | 14 | mao-2344 | publicada |
 | 21 | Deficiência ulnar: frequência da sindactilia | número | cap. 38, p. 1500 | mao / Deficiências longitudinais e mão torta | 02 | mao-2284 | publicada |
 | 22 | Pseudoartrose congênita da ulna: neurofibromatose | fato | cap. 38, p. 1520 | mao / Outras malformações congênitas | 02 | mao-2285 | publicada |
 | 23 | LICHTMAN IIIC: fratura coronal do semilunar | classificação | cap. 16, p. 731 e 732 | mao / Doença de Kienböck | 06 | mao-2305 | publicada |
 | 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
-| 25 | Indicação do MOBERG | reformulada | 44 | Cobertura | 13 | mao-2341 | aplicada |
+| 25 | Indicação do MOBERG | reformulada | 44 | Cobertura | 13 | mao-2341 | publicada |
 | 26 | Ligamentos extracapsulares do carpo (radioescafocapitato é intracapsular) | anatomia | cap. 13, p. 490 e 491 | mao / Anatomia da mão e punho | 03 | mao-2288 | publicada |
-| 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | aplicada |
+| 27 | Discrepância de calibre no reparo arterial | reformulada (figura virou texto) | 60 | Microcirurgia | 20 | mao-2377 | publicada |
+| 28 | Alongamento por distração do polegar | reformulada | 48 | Reconstrução do polegar | 19 | mao-2369 | publicada |
+| 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | publicada |
 | 30 | As três medidas da posição articular do rádio distal | imagem | cap. 15, p. 604 e 605 | mao / Fratura do rádio distal | 07 | mao-2309 | publicada (original com NÃO; reescrita direta) |
-| 31 | Falange proximal do polegar | reformulada (gabarito diverge do plano do Green) | 7 | Falanges | 14 | mao-2347 | aplicada |
-| 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | aplicada |
-| 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | aplicada |
-| 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | aplicada |
-| 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | aplicada |
+| 31 | Falange proximal do polegar | reformulada (gabarito diverge do plano do Green) | 7 | Falanges | 14 | mao-2347 | publicada |
+| 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | publicada |
+| 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | publicada |
+| 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | publicada |
+| 35 | Efeito quadriga | reformulada | 6 | Flexores | 19 | mao-2370 | publicada |
+| 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | publicada |
+| 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | publicada |
 | 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
 | 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
 | 40 | Radioulnar distal: estabilizadores secundários | anatomia | cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2297 | publicada |
 | 41 | Lágrima: projeção volar da faceta semilunar | afirmativas | cap. 15, p. 604, 608, 628 e 648 | mao / Fratura do rádio distal | 07 | mao-2310 | publicada |
-| 42 | Retalho no extravasamento de quimioterápico | reformulada | 44 | Cobertura | 11 | mao-2331 | aplicada |
+| 42 | Retalho no extravasamento de quimioterápico | reformulada | 44 | Cobertura | 11 | mao-2331 | publicada |
 | 43 | Placa da coluna radial: distal dorsal, proximal palmar | técnica | cap. 15, p. 643 | mao / Fratura do rádio distal | 07 | mao-2311 | publicada |
 | 44 | Escafolunar dorsal: translação e afastamento | anatomia | cap. 16, p. 678; cap. 13, p. 492 | mao / Instabilidade do carpo | 06 | mao-2307 | publicada (divergência: a correção marcou rotação; o Green dá rotação à porção palmar) |
 | 45 | Martelo tendíneo: a partir dos 11 anos | número | cap. 5, p. 191 | mao / Lesões dos tendões extensores | 05 | mao-2301 | publicada |
 | 46 | FOWLER: técnica (até 35 graus) | técnica | cap. 5, p. 196 e 197 (Fig. 5.19) | mao / Lesões dos tendões extensores | 05 | mao-2299 | publicada (original sem resposta defensável; refeita com resposta única) |
 | 47 | FERNANDEZ radioulnar distal tipo III | classificação | cap. 15, p. 648 | mao / Fratura do rádio distal | 07 | mao-2312 | publicada |
-| 48 | Músculo de GANTZER | reformulada | 28 | Neuropatia ulnar | 08 | mao-2314 | aplicada |
-| 49 | LARSEN, DALE e EEK | reformulada | 55 | Reumatoide | 15 | mao-2349 | aplicada |
-| 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | aplicada |
-| 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | aplicada |
-| 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | aplicada |
+| 48 | Músculo de GANTZER | reformulada | 28 | Neuropatia ulnar | 08 | mao-2314 | publicada |
+| 49 | LARSEN, DALE e EEK | reformulada | 55 | Reumatoide | 15 | mao-2349 | publicada |
+| 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | publicada |
+| 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | publicada |
+| 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | publicada |
 | 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
-| 54 | Neuropatia ulnar após úmero distal | reformulada | 18 | Úmero distal | 15 | mao-2352 | aplicada |
+| 54 | Neuropatia ulnar após úmero distal | reformulada | 18 | Úmero distal | 15 | mao-2352 | publicada |
+| 55 | Sinal da vela | reformulada | 19 | Cabeça do rádio | 18 | mao-2364 | publicada |
 | 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
-| 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | aplicada |
-| 59 | Rádio desalinhado após fixar a ulna | reformulada | 20 | Ulna proximal | 16 | mao-2355 | aplicada |
-| 60 | Fraturas pediátricas e síndrome compartimental | reformulada (oficial aceitou A e D) | 51 | Compartimental | 12 | mao-2335 | aplicada |
+| 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | publicada |
+| 58 | Classificação da sindactilia | reformulada (figura virou texto) | 36 | Sindactilia | 20 | mao-2376 | publicada |
+| 59 | Rádio desalinhado após fixar a ulna | reformulada | 20 | Ulna proximal | 16 | mao-2355 | publicada |
+| 60 | Fraturas pediátricas e síndrome compartimental | reformulada (oficial aceitou A e D) | 51 | Compartimental | 12 | mao-2335 | publicada |
+| 61 | Rigidez intrínseca | reformulada | 10 | Dedo rígido | 18 | mao-2365 | publicada |
 | 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
-| 64 | Lesão sentinela neonatal | reformulada | 51 | Compartimental | 12 | mao-2336 | aplicada |
-| 65 | TSUGE moderado | reformulada | 51 | VOLKMANN | 12 | mao-2337 | aplicada |
+| 63 | Tuberculose óssea no adulto | reformulada | 3 | Infecções crônicas | 18 | mao-2366 | publicada |
+| 64 | Lesão sentinela neonatal | reformulada | 51 | Compartimental | 12 | mao-2336 | publicada |
+| 65 | TSUGE moderado | reformulada | 51 | VOLKMANN | 12 | mao-2337 | publicada |
 | 66 | Portal 3-4: entre ELP e extensor dos dedos | anatomia | cap. 17, p. 761 | mao / Artrose do punho e artroscopia | 06 | mao-2304 | publicada |
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
+| 68 | Tala interna no radial | reformulada | 31 | Transferências | 18 | mao-2367 | publicada |
 | 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
-| 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | aplicada |
-| 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | aplicada |
+| 70 | Queimadura mais dolorosa | reformulada | 57 | Queimado | 19 | mao-2372 | publicada |
+| 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | publicada |
+| 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | publicada |
 | 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
-| 74 | DE QUERVAIN | reformulada | 56 | Tendinopatias | 16 | mao-2357 | aplicada |
-| 75 | Reperfusão no macrorreimplante | reformulada | 42 | Reimplante | 15 | mao-2351 | aplicada |
-| 77 | Colo do metacarpo: afirmações | reformulada | 7 | Metacarpos | 12 | mao-2333 | aplicada |
-| 78 | Transferências do pé para a mão | reformulada | 47 | Dedo do pé | 17 | mao-2359 | aplicada |
-| 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | aplicada |
-| 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | aplicada |
+| 74 | DE QUERVAIN | reformulada | 56 | Tendinopatias | 16 | mao-2357 | publicada |
+| 75 | Reperfusão no macrorreimplante | reformulada | 42 | Reimplante | 15 | mao-2351 | publicada |
+| 76 | Prognóstico na paralisia obstétrica | reformulada (inclui ERB) | 40 | Plexo obstétrico | 20 | mao-2373 | publicada |
+| 77 | Colo do metacarpo: afirmações | reformulada | 7 | Metacarpos | 12 | mao-2333 | publicada |
+| 78 | Transferências do pé para a mão | reformulada | 47 | Dedo do pé | 17 | mao-2359 | publicada |
+| 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | publicada |
+| 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | publicada |
+| 81 | Resultado ruim na camptodactilia | reformulada (WATERS e BAE) | Waters 6 | Congênitas | 20 | mao-2374 | publicada |
 | 82 | CURTIS: retinaculares transversos para as bandas laterais subirem | técnica | cap. 5, p. 202 e 203 (Fig. 5.26) | mao / Lesões dos tendões extensores | 06 | mao-2303 | publicada |
-| 83 | Posição do gesso no rádio distal | reformulada | 15 | Rádio distal | 08 | mao-2317 | aplicada |
-| 84 | Banda lateral na luxação rotatória da IFP | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2339 | aplicada |
-| 85 | Tenossinovite extensora reumatoide | reformulada | 56 | Tendinopatias | 17 | mao-2358 | aplicada |
+| 83 | Posição do gesso no rádio distal | reformulada | 15 | Rádio distal | 08 | mao-2317 | publicada |
+| 84 | Banda lateral na luxação rotatória da IFP | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2339 | publicada |
+| 85 | Tenossinovite extensora reumatoide | reformulada | 56 | Tendinopatias | 17 | mao-2358 | publicada |
 | 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
-| 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | aplicada |
-| 88 | Taxa de pseudartrose do escafoide | reformulada | 16 | Escafoide | 09 | mao-2320 | aplicada |
-| 89 | Estabilidade do cotovelo e coronoide | reformulada | 20 | Ulna proximal | 16 | mao-2356 | aplicada |
+| 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | publicada |
+| 88 | Taxa de pseudartrose do escafoide | reformulada | 16 | Escafoide | 09 | mao-2320 | publicada |
+| 89 | Estabilidade do cotovelo e coronoide | reformulada | 20 | Ulna proximal | 16 | mao-2356 | publicada |
 | 90 | Macrodactilia: histologia (menos glândulas sudoríparas) | fato | cap. 36, p. 1438 e 1439 | mao / Outras malformações congênitas | 01 | mao-2282 | publicada |
-| 92 | Pedículo do hálux | reformulada | 47 | Dedo do pé | 17 | mao-2360 | aplicada |
+| 91 | Transferência na polidactilia pré-axial | reformulada | 37 | Polegar congênito | 20 | mao-2375 | publicada |
+| 92 | Pedículo do hálux | reformulada | 47 | Dedo do pé | 17 | mao-2360 | publicada |
 | 93 | Fise em C (braquete epifisário longitudinal): clinodactilia | fato/imagem | cap. 36, p. 1433 | mao / Deformidades dos dedos | 02 | mao-2283 | publicada |
-| 94 | Falange média instável | reformulada | 7 | Falanges | 12 | mao-2334 | aplicada |
-| 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | aplicada |
-| 96 | Complicação da osteotomia e artrodese TMC | reformulada | 11 | Rizartrose | 10 | mao-2324 | aplicada |
-| 97 | VOCHE e MERLE no WARTENBERG | reformulada | 31 | Transferências | 09 | mao-2319 | aplicada |
+| 94 | Falange média instável | reformulada | 7 | Falanges | 12 | mao-2334 | publicada |
+| 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | publicada |
+| 96 | Complicação da osteotomia e artrodese TMC | reformulada | 11 | Rizartrose | 10 | mao-2324 | publicada |
+| 97 | VOCHE e MERLE no WARTENBERG | reformulada | 31 | Transferências | 09 | mao-2319 | publicada |
 | 98 | MADELUNG: resultados das osteotomias | afirmativas | cap. 38, p. 1503, 1506 e 1509 | mao / Outras malformações congênitas | 02 | mao-2287 | publicada |
-| 99 | Fratura associada ao leito ungueal | reformulada | 9 | Perioníquio | 16 | mao-2354 | aplicada |
-| 100 | Comportamento do basocelular | reformulada | 58 | Tumores de pele | 11 | mao-2328 | aplicada |
+| 99 | Fratura associada ao leito ungueal | reformulada | 9 | Perioníquio | 16 | mao-2354 | publicada |
+| 100 | Comportamento do basocelular | reformulada | 58 | Tumores de pele | 11 | mao-2328 | publicada |
