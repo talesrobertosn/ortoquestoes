@@ -1,0 +1,60 @@
+{
+  "pediatria-0689": {
+    "questaoSha256": "041eae0b585f4e2e92bee4a90e08a0a5dab74d80625be4a1e5d60f2fc65228cb",
+    "comentarioAnteriorSha256": "a32924992f2483baa96c71f4d71a5d40060f622fba042f4db613828f9256ceca",
+    "comentario": {
+      "conceito": "A pergunta é sobre a **localização mais comum de uma lesão fisária**, e a resposta é o **rádio distal**. O resumo do capítulo de epidemiologia afirma esse ranking explicitamente. Não é necessário inferi-lo da frequência geral das fraturas do punho nem decorar porcentagens para cada um dos distratores (Rockwood e Wilkins, 10ª ed., cap. 1, “Fise e fratura exposta: frequência não acompanha risco”).\n\nHá três perguntas próximas que precisam permanecer separadas: qual osso ou grupo de ossos mais fratura, qual segmento anatômico mais fratura e qual fise é mais atingida. Na tabela de ossos longos, rádio e ulna aparecem agrupados; ao separar os segmentos, o rádio distal lidera; ao considerar especificamente as lesões fisárias, o mesmo capítulo volta a apontar o rádio distal. As respostas coincidem aqui, mas uma tabela de todas as fraturas não prova automaticamente o ranking de uma categoria particular.\n\nO resumo do rádio distal ajuda a visualizar a lesão: muitas fraturas fisárias desse segmento são Salter-Harris II, com a epífise acompanhada de um fragmento **metafisário** de Thurston-Holland. No padrão habitual, ambos se deslocam para dorsal. Já a fratura metafisária distal, também muito comum na criança, não deve ser contada como descolamento fisário apenas por ficar perto da placa de crescimento (resumo do cap. 8, “A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND”).\n\n**Frequência não é prognóstico.** O capítulo de epidemiologia separa o rádio distal, frequente, das fises distais da tíbia e do fêmur, que concentram preocupação com parada de crescimento. Um local pode aparecer menos e ainda exigir acompanhamento cuidadoso. Do mesmo modo, um percentual de fechamento precoce entre crianças que já tiveram determinada lesão não é a proporção desse local entre todas as lesões fisárias.\n\nA utilidade clínica do ranking é organizar a suspeita, sem excluir as outras localizações. Uma criança com dor em outra fise precisa ser examinada pelo seu caso; a estatística da prova não funciona como teste diagnóstico individual. A edição do resumo do capítulo 8 está catalogada como 9ª, com identificação provável informada pelo próprio texto.",
+      "correta": "**Correta: C, terço distal do rádio.** O resumo de epidemiologia o identifica como a localização mais comum das fraturas fisárias. O capítulo específico do rádio distal descreve sua apresentação, mas o ranking entre os locais do corpo vem da fonte epidemiológica, não apenas da observação de que há muitas fraturas do punho.",
+      "incorretas": {
+        "A": "**Fraturas da mão são frequentes, mas esse conjunto não equivale ao ranking de descolamentos.** O capítulo coloca mão, falanges e metacarpos entre os locais comuns de fratura em geral, depois do rádio distal. Ao selecionar apenas as lesões fisárias, aponta novamente o rádio distal. Não se deve transportar uma proporção de todas as fraturas de falanges para o grupo dos descolamentos epifisários.",
+        "B": "**Tíbia distal merece atenção pelo risco de parada, o que é outra medida.** O capítulo a destaca entre as fises do membro inferior com preocupação de crescimento, mas não a coloca à frente do rádio distal em incidência. Confundir frequência da lesão com risco de complicação depois dela é o erro que torna esta alternativa atraente.",
+        "D": "**O grupo tíbia-fíbula não informa a frequência da fise distal da fíbula.** Na tabela geral, os dois ossos da perna são agrupados; a pergunta, porém, escolhe um osso, um segmento e uma categoria de lesão. Para essa comparação específica, o texto epidemiológico identifica o rádio distal como o mais comum, sem fornecer uma porcentagem própria para a fise fibular que autorize inventar um valor."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Epidemiologia das fraturas na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 1 · Epidemiology of Fractures in Children. Seções: Fise e fratura exposta: frequência não acompanha risco; O que fratura mais: osso, segmento e número.",
+        "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 8 · Fractures of the Distal Radius and Ulna. Seções: A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND; Epidemiologia e quem se machuca. A edição está catalogada como 9ª; o corpo do resumo informa que a identificação é provável."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+        "titulo": "Epidemiologia das fraturas na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+        "secoes": [
+          "Fise e fratura exposta: frequência não acompanha risco",
+          "O que fratura mais: osso, segmento e número"
+        ],
+        "blocos": [
+          "fise-e-fratura-exposta-frequencia-nao-acompanha--de4d679d",
+          "fise-e-fratura-exposta-frequencia-nao-acompanha--cd3ee08a",
+          "fise-e-fratura-exposta-frequencia-nao-acompanha--040c5566",
+          "o-que-fratura-mais-osso-segmento-e-numero-b169a25d",
+          "o-que-fratura-mais-osso-segmento-e-numero-5f1732de"
+        ],
+        "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+        "trechosSha256": "a38654ad63165bd0c38e048a37ee2796ec8b12f455f07775780e4ee6805d3b06"
+      },
+      {
+        "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+        "titulo": "Fraturas do rádio e da ulna distais na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "9ª edição (2020)",
+        "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+        "secoes": [
+          "A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND",
+          "Epidemiologia e quem se machuca"
+        ],
+        "blocos": [
+          "a-fise-distal-do-radio-salter-harris-e-thurston--a95d7027",
+          "epidemiologia-e-quem-se-machuca-b34362be"
+        ],
+        "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+        "trechosSha256": "9303fb28e3047f05791db1e4ab3ba99c3383f565e51e4b72051f8e231c3d62d7"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

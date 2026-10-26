@@ -1,0 +1,70 @@
+{
+  "base": "04f8385929dda56071ac9e9ee8733724e3d4d183",
+  "lotes": {
+    "161": {
+      "revisadas": [
+        "pediatria-0528",
+        "pediatria-0566",
+        "pediatria-0574",
+        "pediatria-0612"
+      ],
+      "pendencias": 6
+    },
+    "162": {
+      "revisadas": [
+        "pediatria-0689"
+      ],
+      "pendencias": 9
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado na base04f83859",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks161162.log": "405c097ef53fc1861217234fe50651b44592ace690eca68fe6c6c8897655c212",
+    "checks161162-final.log": "4a5d374e2b24ad7d3eae0f7431d533f6374cad769ff0711cc28a9de61ecc6072",
+    "checks161162-remoto.log": "12f2877c68847ffce362cf2556331a4d4f79e7d260060837ff9cddfd4e55e17d",
+    "checks161162-espacos.log": "a4be50c3753650922154704eae02ac590a0ae5161bde249f0b8cbc06bd363f14"
+  },
+  "replay": "5/5; todas alternativas, fontes, hashes e avulsos integrais",
+  "preservacao": "15 comentários pendentes intactos; demais membros e arquivos protegidos preservados",
+  "visual": {
+    "casos": 5,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alertas": [
+      "pediatria-0528",
+      "pediatria-0574",
+      "pediatria-0612"
+    ],
+    "capturasFinaisInspecionadas": [
+      "161-pediatria-0574-alerta-cel.png",
+      "161-pediatria-0528-alerta-pc.png"
+    ]
+  },
+  "fontes": {
+    "capitulos8e9": "leitura integral; capítulo8 com edição provável explicitada",
+    "capitulo1": "releitura integral",
+    "capitulos37e42": "leitura integral anterior, sem alteração desde6506571d; trechos usados relidos"
+  },
+  "inventario": {
+    "resumos": 34,
+    "ids": 2475,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 606,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 322,
+      "pendente-inspecao-imagem": 85,
+      "revisada": 1364
+    }
+  }
+}
