@@ -702,32 +702,32 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 21 | Contratura dorsal na queimadura | reformulada | 57 | Queimado | 04 | mao-2393 | aplicada |
 | 22 | Pisiforme ossifica por último | reformulada | 41 | Criança | 04 | mao-2394 | aplicada |
 | 23 | KIRNER | reformulada | 36 | Congênitas | 04 | mao-2395 | aplicada |
-| 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
+| 24 | Triplo golpe da hanseníase | reformulada (alternativa oficial com termo trocado) | 3 | Infecções crônicas | 05 | mao-2398 | aplicada |
 | 25 | AIJ oligoarticular | reformulada | 55 | Reumatoide | 04 | mao-2396 | aplicada |
 | 26 | Sinal do bocejo (gaveta anterior) | reformulada | 13 | Carpo | 04 | mao-2397 | aplicada |
-| 27 | Discrepância de calibre no reparo arterial | reformulada (figura virou texto) | 60 | Microcirurgia | 20 | mao-2377 | publicada |
-| 28 | Alongamento por distração do polegar | reformulada | 48 | Reconstrução do polegar | 19 | mao-2369 | publicada |
-| 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | publicada |
-| 30 | As três medidas da posição articular do rádio distal | imagem | cap. 15, p. 604 e 605 | mao / Fratura do rádio distal | 07 | mao-2309 | publicada (original com NÃO; reescrita direta) |
-| 31 | Falange proximal do polegar | reformulada (gabarito diverge do plano do Green) | 7 | Falanges | 14 | mao-2347 | publicada |
-| 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | publicada |
-| 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | publicada |
-| 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | publicada |
-| 35 | Efeito quadriga | reformulada | 6 | Flexores | 19 | mao-2370 | publicada |
+| 27 | Oponentoplastia de HUBER | reformulada | 31 | Transferências | 05 | mao-2399 | aplicada |
+| 28 | Objetivo na tetraplegia C5 | reformulada | 33 | Tetraplegia | - | - | pendente: conferir à mão (objetivo do nível C5 não fica claro no cap. 33) |
+| 29 | Estiloidectomia na artrodese reumatoide | reformulada | 12 | Artrodese do punho | 05 | mao-2400 | aplicada |
+| 30 | Tempo da degeneração walleriana | reformulada (gabarito diverge do Green) | 30 | Nervos | 05 | mao-2401 | aplicada |
+| 31 | Camptodactilia e artrogripose | reformulada (WATERS e BAE) | 39 | Congênitas | 05 | mao-2402 | aplicada |
+| 32 | Artéria do 4º compartimento e interósseo posterior | reformulada | 46 | Enxerto vascularizado | 06 | mao-2403 | aplicada |
+| 33 | Reimplante de vários dedos | reformulada | 42 | Reimplante | 06 | mao-2404 | aplicada |
+| 34 | Distância do ponto na microanastomose | reformulada | - | Microcirurgia | - | - | pendente: sem fonte (não está no Green traduzido) |
+| 35 | Encurtamento radial e ligamentos radioulnares | reformulada | 14 | Radioulnar distal | 06 | mao-2405 | aplicada |
 | 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | publicada |
-| 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | publicada |
-| 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
-| 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
-| 40 | Radioulnar distal: estabilizadores secundários | anatomia | cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2297 | publicada |
-| 41 | Lágrima: projeção volar da faceta semilunar | afirmativas | cap. 15, p. 604, 608, 628 e 648 | mao / Fratura do rádio distal | 07 | mao-2310 | publicada |
-| 42 | Retalho no extravasamento de quimioterápico | reformulada | 44 | Cobertura | 11 | mao-2331 | publicada |
-| 43 | Placa da coluna radial: distal dorsal, proximal palmar | técnica | cap. 15, p. 643 | mao / Fratura do rádio distal | 07 | mao-2311 | publicada |
-| 44 | Escafolunar dorsal: translação e afastamento | anatomia | cap. 16, p. 678; cap. 13, p. 492 | mao / Instabilidade do carpo | 06 | mao-2307 | publicada (divergência: a correção marcou rotação; o Green dá rotação à porção palmar) |
-| 45 | Martelo tendíneo: a partir dos 11 anos | número | cap. 5, p. 191 | mao / Lesões dos tendões extensores | 05 | mao-2301 | publicada |
-| 46 | FOWLER: técnica (até 35 graus) | técnica | cap. 5, p. 196 e 197 (Fig. 5.19) | mao / Lesões dos tendões extensores | 05 | mao-2299 | publicada (original sem resposta defensável; refeita com resposta única) |
-| 47 | FERNANDEZ radioulnar distal tipo III | classificação | cap. 15, p. 648 | mao / Fratura do rádio distal | 07 | mao-2312 | publicada |
-| 48 | Músculo de GANTZER | reformulada | 28 | Neuropatia ulnar | 08 | mao-2314 | publicada |
-| 49 | LARSEN, DALE e EEK | reformulada | 55 | Reumatoide | 15 | mao-2349 | publicada |
+| 37 | Epífise proximal da fíbula | reformulada | 46 | Enxerto vascularizado | 06 | mao-2406 | aplicada |
+| 38 | IFP do mínimo no DUPUYTREN | reformulada | 4 | Dupuytren | 06 | mao-2407 | aplicada |
+| 39 | CURTIS estágio IV | reformulada | 5 | Extensores | 07 | mao-2408 | aplicada |
+| 40 | Sinal de lesão pós-ganglionar | reformulada | 34 | Plexo | 07 | mao-2409 | aplicada |
+| 41 | Laceração parcial do extensor | reformulada (Green dá a regra para a zona 2) | 5 | Extensores | 07 | mao-2410 | aplicada |
+| 42 | Retalho inguinal | reformulada | 44 | Cobertura | 07 | mao-2411 | aplicada |
+| 43 | Colo do metacarpo e JAHSS | reformulada | 7 | Metacarpos | 07 | mao-2412 | aplicada |
+| 44 | Último músculo a recuperar no radial | reformulada | 31 | Transferências | - | - | pendente: sem fonte (ordem de reinervação não está no Green traduzido) |
+| 45 | Preditor de recontratura no DUPUYTREN | reformulada | 4 | Dupuytren | 08 | mao-2413 | aplicada |
+| 46 | DOYLE tipo I | reformulada | 5 | Extensores | 08 | mao-2414 | aplicada |
+| 47 | YAMAUCHI e TANABU tipo 4 | reformulada | 36 | Congênitas | 08 | mao-2415 | aplicada |
+| 48 | ALLEN zona 3 | reformulada | 49 | Amputações | 08 | mao-2416 | aplicada |
+| 49 | MONTEGGIA e interósseo posterior | reformulada | 20 | Ulna proximal | 08 | mao-2417 | aplicada |
 | 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | publicada |
 | 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | publicada |
 | 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | publicada |
