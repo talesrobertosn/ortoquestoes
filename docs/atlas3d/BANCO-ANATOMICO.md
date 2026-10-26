@@ -32,13 +32,14 @@ das estruturas do atlas. A cobertura atual está em [COBERTURA-ANATOMIA.md](COBE
 | Campo | Para quê |
 |---|---|
 | `chave` | identificador estável do registro (kebab-case) |
-| `tipo` | `musculo`, `nervo` ou `ligamento` (o esquema aceita osso, artéria, veia e fáscia para lotes futuros) |
+| `tipo` | `musculo`, `nervo`, `ligamento` ou `arteria` (o esquema aceita osso, veia e fáscia para lotes futuros) |
 | `ids` | malhas do modelo, sem `_l`/`_r` |
 | `origem`, `insercao` | `{ t: texto, m: ["osso:Marco"], o: ["osso", "C7-T12", "costelas:3-5"] }` |
 | `nervos` | chaves dos nervos que inervam (o nervo ganha `inerva` derivado) |
 | `acao`, `funcao`, `restringe`, `articulacao` | músculo e ligamento |
 | `raizes`, `trajeto`, `sensitivo` | nervo |
-| `relacoes`, `ver` | texto de relações e chaves de estruturas ligadas (navegáveis na ficha) |
+| `trajeto`, `ramos`, `irriga` | artéria |
+| `relacoes`, `ver` | texto de relações e chaves de estruturas ligadas (navegáveis na ficha); o script cria a relação de volta (`citado`) |
 | `clinica` | importância ortopédica, separada do fato anatômico |
 | `fonte` | `[{ l: "netter-ao2", p: [páginas do PDF] }]` |
 | `status` | `verificado`, `pendente` ou `conflito`; `conflito` exige `notas` explicando a divergência |
@@ -65,10 +66,20 @@ das estruturas do atlas. A cobertura atual está em [COBERTURA-ANATOMIA.md](COBE
 - O banco (cerca de 210 KB) só é baixado quando o atlas abre, junto com os pontos do modelo. Trocar a ficha não
   reconstrói a cena: o motor troca só a camada de destaques (`Motor.mostrarRelacoes`).
 
+## Visualizações prontas
+
+`src/atlas3d/dados/presets.ts`: conjuntos por região (manguito rotador, espaços do ombro, canto posterolateral,
+compartimentos da perna, colateral lateral do tornozelo etc.), feitos de chaves do banco. Ao abrir, o atlas vai para a
+região, isola o conjunto (o resto fica translúcido) e pinta cada item com uma cor da legenda. Só liga as camadas que a
+pessoa já pode usar; o que está em camada de outro plano aparece com cadeado na legenda, sem abrir convite sozinho.
+A montagem valida que toda chave citada existe.
+
 ## Para ampliar
 
 - Outra fonte: acrescente a chave em `FONTES` no script e use `fonte: [{ l: "chave", p: [...] }]`. Fatos que
   divergirem entre fontes ficam `conflito`, com as duas versões na nota.
 - Marcos novos (áreas de inserção mais precisas): entram primeiro em `pontos.json` com conferência visual; o lote
   passa a citá-los em `m`.
-- Pendências atuais: ver a seção "Pendentes e conflitos" do relatório de cobertura.
+- Pendências atuais: ver a seção "Pendentes e conflitos" do relatório de cobertura. Os conflitos foram procurados
+  nos outros livros locais (capítulos do Green e Pardini); o capítulo de plexo braquial confirma que o peitoral medial
+  sai do fascículo medial, mas nenhum traz as raízes nem resolve os demais. Ficam em revisão até uma segunda fonte.

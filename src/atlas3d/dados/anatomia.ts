@@ -34,6 +34,10 @@ export interface RegistroAnatomico {
   ver?: string[]
   /** derivado: músculos que o nervo inerva */
   inerva?: string[]
+  /** derivado: registros que citam este em "ver" */
+  citado?: string[]
+  ramos?: string
+  irriga?: string
   fonte: { l: string; p: number[] }[]
   status: StatusRegistro
   notas?: string

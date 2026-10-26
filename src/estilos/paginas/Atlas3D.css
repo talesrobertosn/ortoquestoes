@@ -343,6 +343,7 @@ body:has(.atlas) { overflow: hidden; }
 .fa-chip:disabled { cursor: default; opacity: 0.75; }
 .fa-chip--nervo { border-color: color-mix(in srgb, #d9a406 45%, var(--traco)); }
 .fa-chip--musculo { border-color: color-mix(in srgb, #c0533f 40%, var(--traco)); }
+.fa-chip--arteria { border-color: color-mix(in srgb, #c62f2f 45%, var(--traco)); }
 .fa-chip--ligamento { border-color: color-mix(in srgb, #7a8ea8 45%, var(--traco)); }
 .fa-clinica { padding: 0.65rem 0.8rem; border-left: 4px solid var(--verdete); border-radius: 0 6px 6px 0; background: var(--verdete-veu); }
 .fa-clinica h3 { display: flex; align-items: center; gap: 0.35rem; margin: 0 0 0.3rem; color: var(--verdete); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
@@ -359,3 +360,25 @@ body:has(.atlas) { overflow: hidden; }
 .fa-grupo h3 small { font-weight: 600; }
 .fa-fonte { margin: 0; color: var(--texto-2); font-size: 0.72rem; line-height: 1.45; }
 @media (max-width: 30rem) { .fa-linha { grid-template-columns: 1fr; gap: 0.15rem; } .fa-controles__contexto { margin-left: 0; } }
+
+/* Visualizações prontas (25/10/2026): cartões com as primeiras cores da legenda e a legenda flutuante. */
+.at-presets { display: grid; gap: 0.35rem; }
+.at-preset { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 0.55rem; align-items: center; text-align: left; padding: 0.5rem 0.65rem; border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer; box-shadow: 3px 3px 0 var(--px-sombra); }
+.at-preset:hover, .at-preset--ativo { border-color: var(--verdete); background: var(--verdete-veu); }
+.at-preset__cores { grid-row: span 2; display: grid; grid-template-columns: repeat(2, 0.55rem); gap: 2px; }
+.at-preset__cores i { width: 0.55rem; height: 0.55rem; }
+.at-preset strong { font-size: 0.92rem; line-height: 1.25; }
+.at-preset small { color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.at-resultados li button > svg { flex: none; color: var(--verdete); }
+.atlas__preset { position: absolute; z-index: 5; right: var(--e-3); bottom: 4.6rem; width: min(17rem, calc(100% - 2 * var(--e-3))); max-height: calc(100% - 15rem); overflow: auto; display: grid; gap: 0.45rem; padding: 0.7rem 0.8rem; border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie); box-shadow: 5px 5px 0 var(--px-sombra); }
+.atlas__preset header { display: flex; justify-content: space-between; align-items: center; }
+.atlas__preset header .tr-heroi__selo { margin: 0; }
+.atlas__preset header .at-botao-icone { width: 2rem; height: 2rem; }
+.atlas__preset h2 { margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.15rem; }
+.atlas__preset ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
+.atlas__preset li button { display: flex; align-items: center; gap: 0.5rem; width: 100%; padding: 0.3rem 0.35rem; border: 0; border-radius: 4px; background: none; color: var(--texto); font: inherit; font-size: var(--corpo-menor); text-align: left; cursor: pointer; }
+.atlas__preset li button:hover { background: var(--superficie-2); }
+.atlas__preset li i { flex: none; width: 0.8rem; height: 0.8rem; border-radius: 2px; }
+.atlas--estreita .atlas__preset { top: auto; bottom: calc(4rem + env(safe-area-inset-bottom)); left: var(--e-2); right: var(--e-2); width: auto; max-height: 38vh; }
+.atlas__preset li button.atlas__preset-fechado { color: var(--texto-2); }
+.atlas__preset li button svg { margin-left: auto; color: var(--texto-2); }

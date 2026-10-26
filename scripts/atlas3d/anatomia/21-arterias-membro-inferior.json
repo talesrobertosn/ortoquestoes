@@ -1,0 +1,154 @@
+{
+  "lote": "21-arterias-membro-inferior",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [376, 377, 378, 419, 420, 497, 498, 573, 574],
+  "registros": [
+    {
+      "chave": "art-iliaca-comum", "tipo": "arteria", "nome": "Artéria ilíaca comum", "en": "Common iliac artery",
+      "ids": ["common_iliac_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Nasce da bifurcação da aorta em L IV, à frente da coluna, e se divide em ilíacas interna e externa.",
+      "irriga": "Pelve e membros inferiores.",
+      "ver": ["art-iliaca-interna", "art-iliaca-externa"],
+      "fonte": [{ "l": "netter-ao2", "p": [376] }], "status": "verificado"
+    },
+    {
+      "chave": "art-iliaca-interna", "tipo": "arteria", "nome": "Artéria ilíaca interna", "en": "Internal iliac artery",
+      "ids": ["internal_iliac_artery", "anterior_division_of_internal_iliac_artery", "posterior_division_of_internal_iliac_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Desce por baixo do ureter em direção ao sacro e se divide em divisões anterior e posterior.",
+      "ramos": "Anterior: obturatória, glútea inferior, pudenda interna e ramos viscerais. Posterior: glútea superior, iliolombar e sacrais laterais.",
+      "irriga": "A maior parte da pelve e dos órgãos pélvicos.",
+      "ver": ["art-gluteas", "art-obturatoria"],
+      "fonte": [{ "l": "netter-ao2", "p": [376, 377] }], "status": "verificado"
+    },
+    {
+      "chave": "art-gluteas", "tipo": "arteria", "nome": "Artérias glúteas superior e inferior", "en": "Gluteal arteries",
+      "ids": ["superior_gluteal_artery", "inferior_gluteal_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Saem pelo forame isquiático maior: a superior acima do piriforme (divisão posterior da ilíaca interna), a inferior abaixo dele (divisão anterior).",
+      "irriga": "A glútea inferior irriga o glúteo máximo.",
+      "clinica": "A glútea superior pode ser lesada na incisura isquiática maior nas fraturas da coluna posterior do acetábulo e nas lesões do anel pélvico.",
+      "relacoes": ["Acompanham os nervos glúteos superior e inferior."],
+      "ver": ["piriforme", "gluteo-superior", "gluteo-inferior", "gluteo-maximo"],
+      "fonte": [{ "l": "netter-ao2", "p": [376, 377] }], "status": "verificado"
+    },
+    {
+      "chave": "art-obturatoria", "tipo": "arteria", "nome": "Artéria obturatória", "en": "Obturator artery",
+      "ids": ["obturator_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Passa pelo forame obturado junto com o nervo obturatório e se divide em ramos anterior e posterior.",
+      "clinica": "O ramo acetabular entra no ligamento da cabeça do fêmur (costuma ser muito pequeno).",
+      "ver": ["obturatorio", "lig-da-cabeca-do-femur"],
+      "fonte": [{ "l": "netter-ao2", "p": [376, 419, 420] }], "status": "verificado"
+    },
+    {
+      "chave": "art-iliolombar", "tipo": "arteria", "nome": "Artéria iliolombar", "en": "Iliolumbar artery",
+      "ids": ["iliolumbar_artery", "iliacus_branch_of_iliolumbar_artery", "lumbar_branch_of_iliolumbar_artery", "spinal_branch_of_iliolumbar_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Ramo da divisão posterior da ilíaca interna que segue superficialmente para a fossa ilíaca.",
+      "irriga": "Ílio, ilíaco e psoas.",
+      "ver": ["iliaco", "psoas-maior"],
+      "fonte": [{ "l": "netter-ao2", "p": [377] }], "status": "verificado"
+    },
+    {
+      "chave": "art-iliaca-externa", "tipo": "arteria", "nome": "Artéria ilíaca externa", "en": "External iliac artery",
+      "ids": ["external_iliac_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Corre sobre a face anterior do psoas até o ligamento inguinal, abaixo do qual continua como artéria femoral.",
+      "ramos": "Circunflexa ilíaca profunda, epigástrica inferior e femoral.",
+      "ver": ["art-femoral", "psoas-maior"],
+      "fonte": [{ "l": "netter-ao2", "p": [376, 378] }], "status": "verificado"
+    },
+    {
+      "chave": "art-femoral", "tipo": "arteria", "nome": "Artéria femoral", "en": "Femoral artery",
+      "ids": ["femoral_artery"], "regiao": "coxa",
+      "trajeto": "Continua a ilíaca externa abaixo do ligamento inguinal, cruza o trígono femoral e atravessa o canal dos adutores (sob o sartório, entre o vasto medial e o adutor longo); passa para trás pelo hiato dos adutores e vira artéria poplítea, atrás da parte distal do fêmur e do joelho.",
+      "ramos": "Circunflexa ilíaca superficial, epigástrica superficial, pudendas externas superficial e profunda, femoral profunda e descendente do joelho.",
+      "ver": ["art-iliaca-externa", "art-femoral-profunda", "art-poplitea", "sartorio", "adutor-magno"],
+      "fonte": [{ "l": "netter-ao2", "p": [378, 419] }], "status": "verificado"
+    },
+    {
+      "chave": "art-femoral-profunda", "tipo": "arteria", "nome": "Artéria femoral profunda", "en": "Deep femoral artery",
+      "ids": ["deep_femoral_artery", "perforating_femoral_arteries"], "regiao": "coxa",
+      "trajeto": "Corre entre o adutor longo e o pectíneo/adutor curto e solta as duas circunflexas e as perfurantes.",
+      "irriga": "Principal suprimento da coxa; as perfurantes irrigam a diáfise do fêmur e os músculos da coxa.",
+      "ver": ["art-femoral", "art-circunflexa-femoral-medial", "art-circunflexa-femoral-lateral", "adutor-longo"],
+      "fonte": [{ "l": "netter-ao2", "p": [378, 419, 420] }], "status": "verificado"
+    },
+    {
+      "chave": "art-circunflexa-femoral-medial", "tipo": "arteria", "nome": "Artéria circunflexa femoral medial", "en": "Medial circumflex femoral artery",
+      "ids": ["medial_circumflex_femoral_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Passa entre o pectíneo e o psoas e depois para trás do colo do fêmur, por baixo do quadrado femoral.",
+      "irriga": "Principal suprimento da cabeça do fêmur no adulto e principal contribuinte do anel arterial extracapsular.",
+      "clinica": "Pode ser lesada no acesso posterior ao quadril, logo abaixo do quadrado femoral.",
+      "ver": ["quadrado-femoral", "pectineo", "art-femoral-profunda"],
+      "fonte": [{ "l": "netter-ao2", "p": [378, 420] }], "status": "verificado"
+    },
+    {
+      "chave": "art-circunflexa-femoral-lateral", "tipo": "arteria", "nome": "Artéria circunflexa femoral lateral", "en": "Lateral circumflex femoral artery",
+      "ids": ["lateral_circumflex_femoral_artery", "descending_branch_of_lateral_circumflex_femoral_artery"], "regiao": "pelve-quadril",
+      "trajeto": "Passa lateral e profundamente ao sartório e ao reto femoral; tem ramos ascendente (à frente do colo), transverso (para o trocanter maior) e descendente (sob o reto femoral).",
+      "irriga": "Colo do fêmur e trocanter maior; contribui pouco para a cabeça do fêmur no adulto.",
+      "clinica": "O ramo descendente fica em risco no acesso anterolateral ao quadril.",
+      "ver": ["sartorio", "reto-femoral", "art-femoral-profunda"],
+      "fonte": [{ "l": "netter-ao2", "p": [378, 420] }], "status": "verificado"
+    },
+    {
+      "chave": "art-poplitea", "tipo": "arteria", "nome": "Artéria poplítea", "en": "Popliteal artery",
+      "ids": ["popliteal_artery"], "regiao": "joelho",
+      "trajeto": "Começa no hiato dos adutores, desce pela fossa poplítea atrás do LCP e se divide perto do poplíteo em tibiais anterior e posterior.",
+      "ramos": "Superiores lateral e medial do joelho, inferiores lateral e medial do joelho, média do joelho, tibial anterior e tibial posterior.",
+      "clinica": "Pode ser lesada atrás do LCP (luxação do joelho). As quatro artérias do joelho se anastomosam em volta do joelho e da patela.",
+      "ver": ["lcp", "art-femoral", "art-geniculares", "art-tibial-anterior", "art-tibial-posterior", "popliteo"],
+      "fonte": [{ "l": "netter-ao2", "p": [497] }], "status": "verificado"
+    },
+    {
+      "chave": "art-geniculares", "tipo": "arteria", "nome": "Artérias do joelho (geniculares)", "en": "Genicular arteries",
+      "ids": ["superior_lateral_genicular_artery", "superior_medial_genicular_artery", "inferior_lateral_genicular_artery", "inferior_medial_genicular_artery", "middle_genicular_artery", "patellar_anastomosis"], "regiao": "joelho",
+      "trajeto": "Ramos da poplítea que formam a rede em volta do joelho e da patela.",
+      "irriga": "A média irriga o LCA, o LCP e a sinovial.",
+      "clinica": "A superior lateral fica em risco na liberação lateral da patela; a inferior lateral separa as estruturas laterais da 3ª camada do joelho.",
+      "ver": ["art-poplitea", "lca", "lcp"],
+      "fonte": [{ "l": "netter-ao2", "p": [497] }], "status": "verificado"
+    },
+    {
+      "chave": "art-tibial-anterior", "tipo": "arteria", "nome": "Artéria tibial anterior", "en": "Anterior tibial artery",
+      "ids": ["anterior_tibial_artery"], "regiao": "perna",
+      "trajeto": "Passa entre o tibial anterior e o extensor longo dos dedos no compartimento anterior, sobre a membrana interóssea, junto com o nervo fibular profundo; continua como artéria dorsal do pé.",
+      "ramos": "Recorrente tibial anterior, ramo circunflexo fibular, maleolares anteriores medial e lateral e dorsal do pé.",
+      "irriga": "Músculos do compartimento anterior da perna.",
+      "ver": ["fibular-profundo", "tibial-anterior", "membrana-interossea-da-perna", "art-dorsal-do-pe"],
+      "fonte": [{ "l": "netter-ao2", "p": [497, 498, 574] }], "status": "verificado"
+    },
+    {
+      "chave": "art-dorsal-do-pe", "tipo": "arteria", "nome": "Artéria dorsal do pé", "en": "Dorsalis pedis artery",
+      "ids": ["dorsalis_pedis_artery", "arcuate_artery", "lateral_tarsal_artery", "deep_plantar_artery", "dorsal_metatarsal_arteries"], "regiao": "tornozelo-pe",
+      "trajeto": "Continua a tibial anterior no dorso do pé, junto com o nervo fibular profundo.",
+      "irriga": "Dorso do pé, por vários ramos.",
+      "ver": ["art-tibial-anterior", "fibular-profundo"],
+      "fonte": [{ "l": "netter-ao2", "p": [574] }], "status": "verificado"
+    },
+    {
+      "chave": "art-tibial-posterior", "tipo": "arteria", "nome": "Artéria tibial posterior", "en": "Posterior tibial artery",
+      "ids": ["posterior_tibial_artery", "calcaneal_branches_of_posterior_tibial_artery"], "regiao": "perna",
+      "trajeto": "Desce com o nervo tibial na parte profunda do compartimento posterior, atrás do tibial posterior, até o tornozelo, onde fica entre os tendões do flexor longo dos dedos e do flexor longo do hálux, atrás do maléolo medial; termina nas plantares medial e lateral.",
+      "ramos": "Recorrente tibial posterior, fibular, perfurantes, maleolar medial, calcâneos mediais e plantares lateral e medial.",
+      "irriga": "Músculos das partes superficial e profunda do compartimento posterior.",
+      "clinica": "O pulso é palpado atrás do maléolo medial.",
+      "ver": ["tibial", "tibial-posterior", "flexor-longo-dos-dedos", "flexor-longo-do-halux", "art-fibular", "art-plantares"],
+      "fonte": [{ "l": "netter-ao2", "p": [498, 574] }], "status": "verificado"
+    },
+    {
+      "chave": "art-fibular", "tipo": "arteria", "nome": "Artéria fibular", "en": "Fibular artery",
+      "ids": ["fibular_artery", "calcaneal_branches_of_fibular_artery"], "regiao": "perna",
+      "trajeto": "Ramo da tibial posterior que desce entre o tibial posterior e o flexor longo dos dedos, no compartimento posterior. O ramo perfurante atravessa a membrana interóssea até a frente do tornozelo e se une à maleolar anterior lateral.",
+      "ramos": "Maleolares laterais, calcâneos e perfurante.",
+      "irriga": "Compartimento lateral da perna, maléolo lateral, calcanhar e, pelo ramo perfurante, diretamente a região posterior do tálus.",
+      "ver": ["art-tibial-posterior", "membrana-interossea-da-perna"],
+      "fonte": [{ "l": "netter-ao2", "p": [498, 574] }], "status": "verificado"
+    },
+    {
+      "chave": "art-plantares", "tipo": "arteria", "nome": "Artérias plantares medial e lateral", "en": "Plantar arteries",
+      "ids": ["medial_plantar_artery", "lateral_plantar_artery", "superficial_branch_of_medial_plantar_artery", "plantar_arch", "plantar_metatarsal_arteries", "common_plantar_digital_arteries", "proper_plantar_digital_arteries"], "regiao": "tornozelo-pe",
+      "trajeto": "Ramos terminais da tibial posterior. A lateral, a maior, corre entre o quadrado plantar e o flexor curto dos dedos com o nervo plantar lateral e termina como arco plantar profundo. A medial corre entre o abdutor do hálux e o flexor curto dos dedos com o nervo plantar medial.",
+      "irriga": "A medial irriga o lado medial da planta do hálux (ramo superficial) e o centro da planta do mediopé (ramo profundo).",
+      "ver": ["plantar-medial", "plantar-lateral", "art-tibial-posterior", "abdutor-do-halux", "quadrado-plantar"],
+      "fonte": [{ "l": "netter-ao2", "p": [574] }], "status": "verificado"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ const SINONIMOS: [RegExp, string][] = [
 ]
 
 /** Busca por português (nome revisado), inglês, latim e sinônimos; mais relevante primeiro. */
-export function buscar(estruturas: Estrutura[], consulta: string, limite = 30): Estrutura[] {
+export function buscar(estruturas: Estrutura[], consulta: string, limite = 30, extras?: Map<string, string[]>): Estrutura[] {
   const q = normal(consulta.trim())
   if (q.length < 2) return []
   const traduzida = SINONIMOS.reduce((acc, [re, en]) => acc.replace(re, en), q)
@@ -32,7 +32,9 @@ export function buscar(estruturas: Estrutura[], consulta: string, limite = 30): 
   const vistos = new Set<string>()
   for (const e of estruturas) {
     const pt = normal(nomeDe(e))
-    const campos = [pt, normal(e.en), normal(e.la ?? ''), e.id.replace(/_/g, ' ')]
+    // nomes do banco anatômico (ex.: "Deltoide" para as três partes, "Ligamento de Lisfranc") entram como mais um nome
+    const doBanco = extras?.get(e.id.replace(/_[lr]$/, '')) ?? []
+    const campos = [pt, ...doBanco.map(normal), normal(e.en), normal(e.la ?? ''), e.id.replace(/_/g, ' ')]
     let p = 0
     for (const t of termos) {
       for (const [i, c] of campos.entries()) {

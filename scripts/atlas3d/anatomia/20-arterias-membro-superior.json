@@ -1,0 +1,184 @@
+{
+  "lote": "20-arterias-membro-superior",
+  "fonte": "netter-ao2",
+  "paginas_lidas": [158, 159, 206, 207, 265, 266, 327, 328],
+  "registros": [
+    {
+      "chave": "art-subclavia", "tipo": "arteria", "nome": "Artéria subclávia", "en": "Subclavian artery",
+      "ids": ["right_subclavian_artery", "left_subclavian_artery"], "regiao": "ombro",
+      "trajeto": "Nasce da aorta à esquerda e do tronco braquiocefálico à direita e passa entre os escalenos anterior e médio junto com o plexo braquial. Depois da primeira costela, continua como artéria axilar.",
+      "ramos": "Tronco tireocervical (com a artéria supraescapular) e artéria dorsal da escápula.",
+      "relacoes": ["Sai entre os escalenos anterior e médio junto com as raízes do plexo braquial."],
+      "ver": ["art-axilar", "art-supraescapular", "escaleno-anterior"],
+      "fonte": [{ "l": "netter-ao2", "p": [158] }], "status": "verificado"
+    },
+    {
+      "chave": "art-supraescapular", "tipo": "arteria", "nome": "Artéria supraescapular", "en": "Suprascapular artery",
+      "ids": ["suprascapular_artery"], "regiao": "ombro",
+      "trajeto": "Passa por cima do ligamento transverso superior da escápula (o nervo supraescapular passa por baixo) até os músculos do manguito; o ramo infraespinal contorna a incisura espinoglenoidal com o nervo.",
+      "irriga": "Supraespinal e infraespinal.",
+      "ver": ["supraescapular", "lig-transverso-superior-da-escapula"],
+      "fonte": [{ "l": "netter-ao2", "p": [136, 158] }], "status": "verificado"
+    },
+    {
+      "chave": "art-axilar", "tipo": "arteria", "nome": "Artéria axilar", "en": "Axillary artery",
+      "ids": ["axillary_artery"], "regiao": "ombro",
+      "trajeto": "Continua a subclávia a partir da primeira costela, atravessa a axila e vira artéria braquial na margem inferior do redondo maior. O peitoral menor a divide em três partes: a primeira (proximal) tem um ramo, a segunda (atrás do músculo) dois e a terceira (distal) três.",
+      "ramos": "1ª parte: torácica superior. 2ª parte: toracoacromial e torácica lateral. 3ª parte: subescapular, circunflexa anterior do úmero e circunflexa posterior do úmero.",
+      "clinica": "Pode ser lesada nas fraturas da clavícula e na cirurgia da região.",
+      "ver": ["art-subclavia", "art-braquial", "peitoral-menor"],
+      "fonte": [{ "l": "netter-ao2", "p": [158, 159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-toracoacromial", "tipo": "arteria", "nome": "Artéria toracoacromial", "en": "Thoraco-acromial artery",
+      "ids": ["thoraco_acromial_artery", "pectoral_branches_of_thoraco_acromial_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da 2ª parte da axilar; divide-se em ramos clavicular, acromial, deltóideo e peitoral.",
+      "clinica": "O ramo acromial corre junto ao ligamento coracoacromial e fica em risco na descompressão subacromial; o deltóideo acompanha a veia cefálica e fica em risco no acesso deltopeitoral. O ramo peitoral corre com o nervo peitoral lateral.",
+      "ver": ["lig-coracoacromial", "peitoral-lateral"],
+      "fonte": [{ "l": "netter-ao2", "p": [159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-toracica-lateral", "tipo": "arteria", "nome": "Artéria torácica lateral", "en": "Lateral thoracic artery",
+      "ids": ["lateral_thoracic_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da 2ª parte da axilar; desce sobre o serrátil anterior junto com o nervo torácico longo.",
+      "irriga": "Serrátil anterior.",
+      "ver": ["toracico-longo", "serratil-anterior"],
+      "fonte": [{ "l": "netter-ao2", "p": [153, 159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-subescapular", "tipo": "arteria", "nome": "Artéria subescapular", "en": "Subscapular artery",
+      "ids": ["subscapular_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da 3ª parte da axilar; tem dois ramos principais: a circunflexa da escápula e a toracodorsal.",
+      "ver": ["art-circunflexa-da-escapula", "art-toracodorsal"],
+      "fonte": [{ "l": "netter-ao2", "p": [159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-circunflexa-da-escapula", "tipo": "arteria", "nome": "Artéria circunflexa da escápula", "en": "Circumflex scapular artery",
+      "ids": ["circumflex_scapular_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da subescapular que passa para trás pelo espaço triangular.",
+      "relacoes": ["Espaço triangular: entre redondo menor, redondo maior e cabeça longa do tríceps."],
+      "ver": ["redondo-menor", "triceps-braquial"],
+      "fonte": [{ "l": "netter-ao2", "p": [148, 159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-toracodorsal", "tipo": "arteria", "nome": "Artéria toracodorsal", "en": "Thoracodorsal artery",
+      "ids": ["thoracodorsal_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da subescapular; corre com o nervo toracodorsal até o latíssimo do dorso.",
+      "clinica": "É o pedículo usado nos retalhos do latíssimo do dorso.",
+      "ver": ["toracodorsal", "latissimo-do-dorso"],
+      "fonte": [{ "l": "netter-ao2", "p": [148, 159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-circunflexa-anterior-do-umero", "tipo": "arteria", "nome": "Artéria circunflexa anterior do úmero", "en": "Anterior circumflex humeral artery",
+      "ids": ["anterior_circumflex_humeral_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da 3ª parte da axilar; o seu ramo ascendente continua como artéria arqueada.",
+      "irriga": "Pelo ramo ascendente, é o suprimento primário da cabeça do úmero segundo o livro.",
+      "clinica": "A lesão (por exemplo, nas fraturas do colo anatômico) leva à osteonecrose da cabeça do úmero.",
+      "fonte": [{ "l": "netter-ao2", "p": [159] }], "status": "conflito",
+      "notas": "O Netter traz as duas afirmações na mesma tabela: a circunflexa anterior (ramo ascendente) como suprimento primário da cabeça e a posterior como a que supre a maior parte da cabeça. Estudos de perfusão mais recentes dão a maior parte à circunflexa posterior."
+    },
+    {
+      "chave": "art-circunflexa-posterior-do-umero", "tipo": "arteria", "nome": "Artéria circunflexa posterior do úmero", "en": "Posterior circumflex humeral artery",
+      "ids": ["posterior_circumflex_humeral_artery"], "regiao": "ombro",
+      "trajeto": "Ramo da 3ª parte da axilar; passa para trás pelo espaço quadrangular com o nervo axilar.",
+      "irriga": "Grande parte da cabeça do úmero e os tubérculos.",
+      "relacoes": ["Espaço quadrangular: entre redondo menor, redondo maior, cabeça longa do tríceps e úmero, com o nervo axilar."],
+      "ver": ["axilar", "redondo-menor", "redondo-maior"],
+      "fonte": [{ "l": "netter-ao2", "p": [148, 159] }], "status": "verificado"
+    },
+    {
+      "chave": "art-braquial", "tipo": "arteria", "nome": "Artéria braquial", "en": "Brachial artery",
+      "ids": ["brachial_artery"], "regiao": "braco",
+      "trajeto": "Continua a axilar a partir da margem inferior do redondo maior. No braço, corre inicialmente lateral ao nervo mediano e depois cruza por baixo dele para ficar medial; no cotovelo, passa sob a aponeurose bicipital e se divide em radial e ulnar.",
+      "ramos": "Braquial profunda, nutrícia do úmero, colaterais ulnares superior e inferior, ramos musculares, radial e ulnar.",
+      "ver": ["art-axilar", "mediano", "art-braquial-profunda", "art-radial", "art-ulnar"],
+      "fonte": [{ "l": "netter-ao2", "p": [159, 202, 206] }], "status": "verificado"
+    },
+    {
+      "chave": "art-braquial-profunda", "tipo": "arteria", "nome": "Artéria braquial profunda", "en": "Deep brachial artery",
+      "ids": ["deep_brachial_artery"], "regiao": "braco",
+      "trajeto": "Desce no sulco do nervo radial junto com o nervo; divide-se em colateral radial e colateral média.",
+      "clinica": "Pode ser lesada junto com o nervo radial nessa região. A colateral média é usada como pedículo no retalho lateral do braço.",
+      "relacoes": ["Passa pelo intervalo triangular com o nervo radial."],
+      "ver": ["radial", "art-colateral-radial", "art-colateral-media"],
+      "fonte": [{ "l": "netter-ao2", "p": [149, 206, 207] }], "status": "verificado"
+    },
+    {
+      "chave": "art-colateral-radial", "tipo": "arteria", "nome": "Artéria colateral radial", "en": "Radial collateral artery",
+      "ids": ["radial_collateral_artery"], "regiao": "braco",
+      "trajeto": "Ramo da braquial profunda na face anterolateral do braço; une-se à recorrente radial.",
+      "ver": ["art-braquial-profunda"],
+      "fonte": [{ "l": "netter-ao2", "p": [206] }], "status": "verificado"
+    },
+    {
+      "chave": "art-colateral-media", "tipo": "arteria", "nome": "Artéria colateral média", "en": "Middle collateral artery",
+      "ids": ["middle_collateral_artery"], "regiao": "braco",
+      "trajeto": "Ramo da braquial profunda atrás do úmero; une-se à recorrente interóssea.",
+      "clinica": "Pedículo do retalho lateral do braço.",
+      "ver": ["art-braquial-profunda"],
+      "fonte": [{ "l": "netter-ao2", "p": [206, 207] }], "status": "verificado"
+    },
+    {
+      "chave": "art-colaterais-ulnares", "tipo": "arteria", "nome": "Artérias colaterais ulnares superior e inferior", "en": "Ulnar collateral arteries",
+      "ids": ["superior_ulnar_collateral_artery", "inferior_ulnar_collateral_artery"], "regiao": "braco",
+      "trajeto": "Ramos da braquial: a superior acompanha o nervo ulnar no meio do braço; a inferior sai na parte distal. Unem-se às recorrentes ulnares posterior e anterior.",
+      "ver": ["ulnar", "art-braquial"],
+      "fonte": [{ "l": "netter-ao2", "p": [206] }], "status": "verificado"
+    },
+    {
+      "chave": "art-radial", "tipo": "arteria", "nome": "Artéria radial", "en": "Radial artery",
+      "ids": ["radial_artery"], "regiao": "antebraco",
+      "trajeto": "No antebraço, passa sobre o pronador redondo, o flexor superficial dos dedos e o flexor longo do polegar, lateral ao tendão do flexor radial do carpo. No punho, curva-se para o dorso sob os tendões do abdutor longo e do extensor curto do polegar, passa entre as cabeças do 1º interósseo dorsal e termina como arco palmar profundo.",
+      "ramos": "Recorrente radial (arcada de Henry), musculares, carpais palmar e dorsal, palmar superficial (com ramo para o escafoide), ramo dorsal para o escafoide e arco palmar profundo.",
+      "irriga": "O ramo dorsal supre cerca de 75% do escafoide (parte proximal); o ramo palmar, cerca de 25% (parte distal).",
+      "clinica": "A recorrente radial (arcada de Henry) pode comprimir o nervo radial (interósseo posterior). O teste de Allen confere a permeabilidade da radial e da ulnar.",
+      "relacoes": ["O ramo superficial do nervo radial corre lateral à artéria no antebraço."],
+      "ver": ["art-braquial", "flexor-radial-do-carpo", "ramo-superficial-do-radial", "art-arco-palmar-profundo"],
+      "fonte": [{ "l": "netter-ao2", "p": [207, 257, 265, 266] }], "status": "verificado"
+    },
+    {
+      "chave": "art-ulnar", "tipo": "arteria", "nome": "Artéria ulnar", "en": "Ulnar artery",
+      "ids": ["ulnar_artery"], "regiao": "antebraco",
+      "trajeto": "Passa sob a cabeça ulnar do pronador redondo e desce sobre o flexor profundo dos dedos, ao lado do nervo ulnar. No punho, entra no canal de Guyon e se divide em ramo palmar profundo e superficial, que termina como arco palmar superficial.",
+      "ramos": "Recorrentes ulnares anterior e posterior, interóssea comum (com interósseas anterior e posterior), recorrente interóssea, musculares, carpais palmar e dorsal, palmar profundo e arco palmar superficial.",
+      "ver": ["ulnar", "art-braquial", "art-interossea-comum", "art-arco-palmar-superficial"],
+      "fonte": [{ "l": "netter-ao2", "p": [207, 265, 266] }], "status": "verificado"
+    },
+    {
+      "chave": "art-recorrente-ulnar", "tipo": "arteria", "nome": "Artéria recorrente ulnar", "en": "Ulnar recurrent artery",
+      "ids": ["ulnar_recurrent_artery"], "regiao": "antebraco",
+      "trajeto": "Ramos anterior e posterior da ulnar que sobem pela face medial do cotovelo e se unem às colaterais ulnares.",
+      "ver": ["art-colaterais-ulnares"],
+      "fonte": [{ "l": "netter-ao2", "p": [207] }], "status": "verificado"
+    },
+    {
+      "chave": "art-interossea-comum", "tipo": "arteria", "nome": "Artéria interóssea comum", "en": "Common interosseous artery",
+      "ids": ["common_interosseous_artery", "posterior_interosseous_artery", "recurrent_interosseous_artery"], "regiao": "antebraco",
+      "trajeto": "Tronco curto da ulnar que se divide em interósseas anterior e posterior, junto à membrana interóssea; a recorrente interóssea sobe atrás do cotovelo e se une à colateral média.",
+      "irriga": "Musculatura do antebraço.",
+      "relacoes": ["A interóssea anterior desce com o nervo interósseo anterior sobre a membrana interóssea."],
+      "ver": ["membrana-interossea-do-antebraco", "interosseo-anterior"],
+      "fonte": [{ "l": "netter-ao2", "p": [207, 261] }], "status": "verificado"
+    },
+    {
+      "chave": "art-arco-palmar-superficial", "tipo": "arteria", "nome": "Arco palmar superficial", "en": "Superficial palmar arch",
+      "ids": ["superficial_palmar_arch", "common_palmar_digital_arteries", "proper_palmar_digital_arteries"], "regiao": "punho-mao",
+      "trajeto": "Termina a artéria ulnar e se une ao ramo palmar superficial da radial; fica na altura da linha de Kaplan, distal ao arco profundo.",
+      "ramos": "Digital palmar própria do lado ulnar do mínimo, três digitais palmares comuns e digitais palmares próprias.",
+      "irriga": "A maior parte da mão e dos dedos; é o arco dominante em cerca de 2/3 das pessoas e está completo em cerca de 80%.",
+      "relacoes": ["Na palma, as artérias ficam à frente dos nervos; nos dedos, cruzam e ficam dorsais a eles."],
+      "ver": ["art-ulnar", "art-arco-palmar-profundo"],
+      "fonte": [{ "l": "netter-ao2", "p": [327, 328] }], "status": "verificado"
+    },
+    {
+      "chave": "art-arco-palmar-profundo", "tipo": "arteria", "nome": "Arco palmar profundo", "en": "Deep palmar arch",
+      "ids": ["deep_palmar_arch", "palmar_metacarpal_arteries"], "regiao": "punho-mao",
+      "trajeto": "Continua o ramo profundo da radial e passa à frente das bases dos metacarpais, proximal ao arco superficial; une-se ao ramo palmar profundo da ulnar.",
+      "ramos": "Principal do polegar, radial do indicador e metacarpais palmares.",
+      "irriga": "O polegar e o lado radial do indicador; está completo em cerca de 98% das pessoas.",
+      "relacoes": ["O ramo profundo do nervo ulnar atravessa a palma junto com o arco profundo."],
+      "ver": ["art-radial", "ramo-profundo-do-ulnar", "art-arco-palmar-superficial"],
+      "fonte": [{ "l": "netter-ao2", "p": [324, 327, 328] }], "status": "verificado"
+    }
+  ]
+}
