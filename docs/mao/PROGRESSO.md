@@ -9,7 +9,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 
 | Prova | Arquivo local | Questões | Publicadas | Pendentes | Ids | Gabarito (A/B/C/D) |
 |---|---|---|---|---|---|---|
-| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
+| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 93 | 7 | mao-2466 a mao-2558 | A 25, B 23, C 28, D 17 |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 88 | 12 | mao-2378 a mao-2465 | A 26, B 21, C 24, D 17 |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 100 | 0 | mao-2278 a mao-2377 | A 27, B 25, C 25, D 23 |
