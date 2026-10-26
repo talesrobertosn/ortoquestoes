@@ -931,9 +931,15 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 41 | Rigidez intrínseca: alongar e liberação intrínseca distal | reformulada, outro ângulo | 10, p. 393 e 403 | Rigidez dos dedos | 13 | mao-2538 | aplicada |
 | 42 | McGOWAN grau I | reformulada | 26, p. 1105 | Neuropatia ulnar | 13 | mao-2539 | aplicada |
 | 43 | Luxação congênita da cabeça do rádio dolorosa no adolescente | reformulada, outro ângulo | 38, p. 1512 e 1515 | Malformações congênitas | 13 | mao-2540 | aplicada |
+| 44 | Sarcoma sinovial: imagem, metástase e prognóstico | reformulada | 59, p. 2215 | Tumores | 14 | mao-2541 | aplicada |
 | 45 | Artrodese da MCF do polegar | reformulada (transcrita da imagem) | 11 | Artrose | 08 | mao-2501 | aplicada |
+| 46 | Por que ADSON, WRIGHT e HALSTEAD perderam valor | reformulada, outro ângulo | 29, p. 1133 | Desfiladeiro torácico | 14 | mao-2542 | aplicada |
 | 47 | Pseudartrose congênita da ulna | reformulada (transcrita da imagem) | 38 | Congênitas | 08 | mao-2502 | aplicada |
 | 48 | Local do gânglio volar | reformulada (transcrita da imagem) | 59 | Gânglios | 08 | mao-2503 | aplicada |
+| 49 | Epineuro interno amortece a compressão | reformulada | 30, p. 1150 | Nervos | 14 | mao-2543 | aplicada |
+| 50 | Grande dorsal para flexão do cotovelo na artrogripose | reformulada | 39, p. 1543 | Artrogripose | 14 | mao-2544 | aplicada |
+| 51 | Oblíqua pronada de 60 graus para o parafuso do escafoide | reformulada | 16, p. 687 | Escafoide | 14 | mao-2545 | aplicada |
+| 52 | Miofibroblasto persistente no DUPUYTREN | reformulada, outro ângulo | 4, p. 151 e 154 | Dupuytren | 14 | mao-2546 | aplicada |
 | 53 | Ligamento radiocárpico dorsal | reformulada | 13 | Carpo | 08 | mao-2504 | aplicada |
 | 54 | Critérios de LAFONTAINE | reformulada | 15 | Rádio distal | 08 | mao-2505 | aplicada |
 | 55 | Pseudartrose na artrodese total do punho (prevenção na 3ª CMC) | reformulada, outro ângulo | 12, p. 465 | Artrose do punho | 09 | mao-2506 | aplicada |
