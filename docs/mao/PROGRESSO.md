@@ -685,14 +685,14 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 4 | Classificação de LISTER do polegar | reformulada | 48 | Polegar | - | - | pendente: sem fonte (LISTER não está no Green nem nos livros locais) |
 | 5 | MATHES e NAHAI tipo III | reformulada (exemplo do Green) | 44 | Cobertura | 01 | mao-2381 | aplicada |
 | 6 | Mecanismo da fratura da cabeça do rádio | reformulada (original com alternativas repetidas) | 19 | Cabeça do rádio | 01 | mao-2382 | aplicada |
-| 7 | Enxerto total x parcial | reformulada | 44 | Cobertura | 13 | mao-2340 | publicada |
+| 7 | Pioderma gangrenoso | reformulada | 2 | Infecções | 02 | mao-2383 | aplicada |
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
-| 9 | Anestésico do bloqueio de BIER | reformulada | 1 | Anestesia | 17 | mao-2361 | publicada |
-| 10 | PALMER 2C: perfuração com condromalácia | classificação | cap. 14, p. 571 e 572 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2296 | publicada |
+| 9 | ZANCOLLI na paralisia cerebral | reformulada | 32 | PC | - | - | pendente: sem fonte (ZANCOLLI não está no cap. 32 traduzido) |
+| 10 | Sequência da lesão escafolunar | reformulada | 13 | Carpo | 02 | mao-2384 | aplicada |
 | 11 | Martelo tipo I: mais comum, agudo até 4 semanas, tala | afirmativas | cap. 5, p. 192 e 193 | mao / Lesões dos tendões extensores | 05 | mao-2302 | publicada |
-| 12 | Hanseníase: parasitização | reformulada | 3 | Infecções crônicas | 10 | mao-2325 | publicada |
-| 13 | DOYLE III: aberta com perda de tecido | classificação | cap. 5, p. 192 a 194 | mao / Lesões dos tendões extensores | 05 | mao-2300 | publicada |
-| 14 | Arco palmar profundo | reformulada (oficial aceitou A e B) | 60 | Vascular | 19 | mao-2371 | publicada |
+| 12 | Sanguessuga e Aeromonas | reformulada | 2 | Infecções | 02 | mao-2385 | aplicada |
+| 13 | Ápice dorsal no metacarpo | reformulada | 7 | Metacarpos | 02 | mao-2386 | aplicada |
+| 14 | Comissura mais afetada na sindactilia | reformulada | 36 | Sindactilia | 02 | mao-2387 | aplicada |
 | 15 | Colágeno tipo III no DUPUYTREN | reformulada (oficial aceitou A e C) | 4 | Dupuytren | 19 | mao-2368 | publicada |
 | 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
 | 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | publicada |
