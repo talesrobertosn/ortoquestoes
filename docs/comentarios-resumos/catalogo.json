@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 617,
+  "pendente": 606,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 307,
+  "pendente-fonte": 322,
   "pendente-inspecao-imagem": 85,
-  "revisada": 1359
+  "revisada": 1364
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -102,7 +102,7 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 191,
+    "pendente": 200,
     "pendente-figura-ausente": 1,
     "pendente-inspecao-imagem": 13
    }
@@ -283,10 +283,10 @@
    "titulo": "Epidemiologia das fraturas na criança",
    "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
    "estados": {
-    "pendente": 74,
-    "pendente-fonte": 4,
+    "pendente": 69,
+    "pendente-fonte": 6,
     "pendente-inspecao-imagem": 4,
-    "revisada": 47
+    "revisada": 50
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -309,8 +309,9 @@
    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
    "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
    "estados": {
-    "pendente": 5,
+    "pendente": 3,
     "pendente-anulada": 1,
+    "pendente-fonte": 2,
     "revisada": 13
    }
   },
@@ -318,8 +319,8 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente": 30,
-    "pendente-fonte": 5,
+    "pendente": 26,
+    "pendente-fonte": 9,
     "pendente-inspecao-imagem": 4,
     "revisada": 66
    }
@@ -328,8 +329,8 @@
    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
    "estados": {
-    "pendente": 22,
-    "pendente-fonte": 4,
+    "pendente": 18,
+    "pendente-fonte": 8,
     "pendente-inspecao-imagem": 3,
     "revisada": 58
    }
@@ -349,10 +350,10 @@
    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
    "estados": {
     "duplicada": 1,
-    "pendente": 30,
-    "pendente-fonte": 1,
+    "pendente": 10,
+    "pendente-fonte": 16,
     "pendente-inspecao-imagem": 2,
-    "revisada": 48
+    "revisada": 53
    }
   },
   "wilkins9-09-diafise-antebraco-crianca": {
@@ -360,10 +361,10 @@
    "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
    "estados": {
     "duplicada": 1,
-    "pendente": 25,
-    "pendente-fonte": 1,
+    "pendente": 9,
+    "pendente-fonte": 15,
     "pendente-inspecao-imagem": 2,
-    "revisada": 48
+    "revisada": 50
    }
   }
  },
@@ -23208,6 +23209,155 @@
    ],
    "questaoSha256": "024aa3ffd2f5975c7153d3aca8f379a7011f13f7f06a31d16e4efc8f4b4ddc2c"
   },
+  "mao-2288": {
+   "tema": "mao",
+   "subtemas": [
+    "Anatomia da mão e punho",
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "85989f50500029bbf4e0587f460c92373b393e09062547f049f64f5ecb2cc99a"
+  },
+  "mao-2289": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Biomecânica da mão"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "6bd90e986d85c8132a5fc83e9cd797533047c1dcb69b48f34ad415a20f1f929b"
+  },
+  "mao-2290": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "5b1732a713f59445d6030378fb3869d91c674211668650dfa09daa75e3718afd"
+  },
+  "mao-2291": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Biomecânica da mão"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "0a2487ba5d63e698bbab2a38289a3c1af035d4fcdc7310be7b1dc940a3053005"
+  },
+  "mao-2292": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "a83230301e0b9c1cf01dc8b30fa05ee7cbbbbd1895c9c0abe67040fb6df293ef"
+  },
+  "mao-2293": {
+   "tema": "mao",
+   "subtemas": [
+    "Imagem da mão e punho",
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "93909106f2ed779e984c9e07dfc3d6025a6b18e97bd944ec3d2b5970b4dddbe9"
+  },
+  "mao-2294": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "aa12ff173693e25ec616eff0f5dd20e03f64dd1b4ebf296cfa847872cf37009c"
+  },
+  "mao-2295": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "d1506df12901308d231c35478ef8c88128c05987ddbfb400d83a2783f36d90b2"
+  },
+  "mao-2307": {
+   "tema": "mao",
+   "subtemas": [
+    "Instabilidade do carpo",
+    "Anatomia da mão e punho"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "4367f6dcc435c258c1758fc7e89483cdfc446892f3e23cb2c87f1ae260c2f392"
+  },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
    "subtemas": [
@@ -30656,7 +30806,7 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -30672,7 +30822,52 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "23e7d5f7b957a492f33a320edf236220108545f42443432c2140b254be0ea89a"
+   "questaoSha256": "23e7d5f7b957a492f33a320edf236220108545f42443432c2140b254be0ea89a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Anatomia que explica as regras",
+       "O Galeazzi da criança",
+       "Ulna distal, estiloide e fibrocartilagem triangular"
+      ],
+      "blocos": [
+       "anatomia-que-explica-as-regras-97004d60",
+       "o-galeazzi-da-crianca-fedb9977",
+       "o-galeazzi-da-crianca-9385ee8d",
+       "o-galeazzi-da-crianca-e451cffa",
+       "ulna-distal-estiloide-e-fibrocartilagem-triangul-605affb0"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "f6388ce5c8a310af284875d95c00cb207046d491fe1a40232e1b3bc12e123d84"
+     },
+     {
+      "resumo": "rockwood10-42-diafise-radio-ulna",
+      "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+      "secoes": [
+       "Galeazzi: o rádio quebrado e a radioulnar distal"
+      ],
+      "blocos": [
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
+       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-1f1cb1bf"
+      ],
+      "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+      "trechosSha256": "372c8e1ce07d4a58f118e4a3085c5b1438f7756d7d7746a80202fdeb6ceb8c0a"
+     }
+    ],
+    "questaoSha256": "23e7d5f7b957a492f33a320edf236220108545f42443432c2140b254be0ea89a",
+    "comentarioSha256": "1f57dd536f6e74473747e9ee0d331f714187d743bf5fd5df45b7d9ccc5ad2fef"
+   }
   },
   "pediatria-0529": {
    "tema": "pediatria",
@@ -31208,7 +31403,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31231,7 +31426,52 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "776ed6c2d981b95ef63c8e86ea2aad753832229735dbcf5e8236193660f6964f"
+   "questaoSha256": "776ed6c2d981b95ef63c8e86ea2aad753832229735dbcf5e8236193660f6964f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "O exame: rotação, nervos e lesões associadas",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "o-exame-rotacao-nervos-e-lesoes-associadas-910b4798",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-fdb47191",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-7a4779b5",
+       "o-exame-rotacao-nervos-e-lesoes-associadas-2d1fb028",
+       "anatomia-aplicada-32de73a0"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "afd192e2ffc3998ec77cac6bbd63ae61007eead8eda39722f4ba8e854d3242ba"
+     },
+     {
+      "resumo": "rockwood10-37-diafise-umero",
+      "titulo": "Fratura da diáfise do úmero",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
+      "secoes": [
+       "Vias de acesso e os nervos em risco"
+      ],
+      "blocos": [
+       "vias-de-acesso-e-os-nervos-em-risco-c8e58cf1",
+       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
+       "vias-de-acesso-e-os-nervos-em-risco-e5eff37e"
+      ],
+      "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+      "trechosSha256": "9784b4274b893b34592d7088884aa94129adaaa2daceb5e9ee98855f5f1c0685"
+     }
+    ],
+    "questaoSha256": "776ed6c2d981b95ef63c8e86ea2aad753832229735dbcf5e8236193660f6964f",
+    "comentarioSha256": "92f8a024b548c6431049860c2a3ded9f13e927a9bea6945e030eae327274d6b8"
+   }
   },
   "pediatria-0567": {
    "tema": "pediatria",
@@ -31351,7 +31591,7 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -31367,7 +31607,37 @@
     "rockwoodcriancas10-01-epidemiologia-fraturas",
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "f75b8840b36f479409979a0a646e50f34c79d1f96f54a22f23c4efa8bf7d9f4b"
+   "questaoSha256": "f75b8840b36f479409979a0a646e50f34c79d1f96f54a22f23c4efa8bf7d9f4b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "Toro, galho verde, completa e baioneta: o periósteo decide",
+       "Exame, nervos e imagem",
+       "Tratamento cirúrgico: quando e como"
+      ],
+      "blocos": [
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-65672b02",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2ce3912b",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-2a8ed6c2",
+       "toro-galho-verde-completa-e-baioneta-o-periosteo-d1d845dc",
+       "exame-nervos-e-imagem-168b8922",
+       "tratamento-cirurgico-quando-e-como-f282f618"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "ea4783f919e488822ea39f91224883d175a12ad5f12cc67e7a6732739ad7a34b"
+     }
+    ],
+    "questaoSha256": "f75b8840b36f479409979a0a646e50f34c79d1f96f54a22f23c4efa8bf7d9f4b",
+    "comentarioSha256": "2f9526c14f938d22996af3f810a9924c238eac9d4c996345de7a503a116e7791"
+   }
   },
   "pediatria-0576": {
    "tema": "pediatria",
@@ -32168,7 +32438,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -32185,7 +32455,39 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "aaeea5fab7e6c7f3d7928a9558ae6da9ce0d2925106971adbf7f5569c1436036"
+   "questaoSha256": "aaeea5fab7e6c7f3d7928a9558ae6da9ce0d2925106971adbf7f5569c1436036",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "wilkins9-09-diafise-antebraco-crianca",
+      "titulo": "Fraturas da diáfise do rádio e da ulna na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 9 · Diaphyseal Radius and Ulna Fractures",
+      "secoes": [
+       "Galho verde: a angulação é uma rotação",
+       "Fratura de um osso só: cassetete, BLOUNT e a MONTEGGIA perdida",
+       "Anatomia aplicada"
+      ],
+      "blocos": [
+       "galho-verde-a-angulacao-e-uma-rotacao-66f45baa",
+       "galho-verde-a-angulacao-e-uma-rotacao-73d2dc1e",
+       "galho-verde-a-angulacao-e-uma-rotacao-b1db45dc",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-53627ef0",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-a20d74a9",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-c0d1d07e",
+       "fratura-de-um-osso-so-cassetete-blount-e-a-monte-eb4381de",
+       "anatomia-aplicada-874d813f"
+      ],
+      "sha256": "43dbe25b226f67d883a9ce0c6f2d9d82bb2592a1c8029b8d02bba5d82e831fe6",
+      "trechosSha256": "0e9aee064e046c81c214040dd94bb66494892b148c8e7d3d0274177ebfb2cd75"
+     }
+    ],
+    "questaoSha256": "aaeea5fab7e6c7f3d7928a9558ae6da9ce0d2925106971adbf7f5569c1436036",
+    "comentarioSha256": "59f06c2d98f2b548adf647a019e5ccdb5e129e0dca547081f6570db01815bc7a"
+   }
   },
   "pediatria-0614": {
    "tema": "pediatria",
@@ -32658,8 +32960,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial exige perda rotacional de30graus abaixo de6anos, versus50graus e angulações volar/dorsal de10graus. O resumo9 dá deformidade maior que10graus acima de6anos e função inaceitável, sem o limiar de30graus para os menores. Falta fonte desse corte etário/funcional; não trocar angulação por arco perdido nem usar o comentário antigo como prova. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32674,7 +32976,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "ad6e20f81a03fd10341d9f812c82c3ee6977804c2bf607f1d1177e8b7745ac5b"
+   "questaoSha256": "ad6e20f81a03fd10341d9f812c82c3ee6977804c2bf607f1d1177e8b7745ac5b",
+   "pendencia": "D oficial exige perda rotacional de30graus abaixo de6anos, versus50graus e angulações volar/dorsal de10graus. O resumo9 dá deformidade maior que10graus acima de6anos e função inaceitável, sem o limiar de30graus para os menores. Falta fonte desse corte etário/funcional; não trocar angulação por arco perdido nem usar o comentário antigo como prova. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0639": {
    "tema": "pediatria",
@@ -33321,8 +33624,8 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial pede a causa MAIS comum de sinostose após Monteggia entre alta energia exposta, enxerto, má redução e parafuso interósseo. O resumo9 lista riscos gerais e associação pós-operatória à placa, sem frequências dessas quatro causas em Monteggia. Falta série ou afirmação primária do ranking; risco e plausibilidade não demonstram predominância. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -33339,7 +33642,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "700afe28bb15f215da892515213f20cf839f4238d9bbf1e5b495e0cf8df4f85d"
+   "questaoSha256": "700afe28bb15f215da892515213f20cf839f4238d9bbf1e5b495e0cf8df4f85d",
+   "pendencia": "B oficial pede a causa MAIS comum de sinostose após Monteggia entre alta energia exposta, enxerto, má redução e parafuso interósseo. O resumo9 lista riscos gerais e associação pós-operatória à placa, sem frequências dessas quatro causas em Monteggia. Falta série ou afirmação primária do ranking; risco e plausibilidade não demonstram predominância. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0665": {
    "tema": "pediatria",
@@ -33887,7 +34191,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -33902,7 +34206,52 @@
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "041eae0b585f4e2e92bee4a90e08a0a5dab74d80625be4a1e5d60f2fc65228cb"
+   "questaoSha256": "041eae0b585f4e2e92bee4a90e08a0a5dab74d80625be4a1e5d60f2fc65228cb",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-01-epidemiologia-fraturas",
+      "titulo": "Epidemiologia das fraturas na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 1 · Epidemiology of Fractures in Children",
+      "secoes": [
+       "Fise e fratura exposta: frequência não acompanha risco",
+       "O que fratura mais: osso, segmento e número"
+      ],
+      "blocos": [
+       "fise-e-fratura-exposta-frequencia-nao-acompanha--de4d679d",
+       "fise-e-fratura-exposta-frequencia-nao-acompanha--cd3ee08a",
+       "fise-e-fratura-exposta-frequencia-nao-acompanha--040c5566",
+       "o-que-fratura-mais-osso-segmento-e-numero-b169a25d",
+       "o-que-fratura-mais-osso-segmento-e-numero-5f1732de"
+      ],
+      "sha256": "d900c2c12fb7477ccd7b7048fda6bfd415152b447e5a143d8671a3334ab51f5f",
+      "trechosSha256": "a38654ad63165bd0c38e048a37ee2796ec8b12f455f07775780e4ee6805d3b06"
+     },
+     {
+      "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+      "titulo": "Fraturas do rádio e da ulna distais na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "9ª edição (2020)",
+      "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+      "secoes": [
+       "A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND",
+       "Epidemiologia e quem se machuca"
+      ],
+      "blocos": [
+       "a-fise-distal-do-radio-salter-harris-e-thurston--a95d7027",
+       "epidemiologia-e-quem-se-machuca-b34362be"
+      ],
+      "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+      "trechosSha256": "9303fb28e3047f05791db1e4ab3ba99c3383f565e51e4b72051f8e231c3d62d7"
+     }
+    ],
+    "questaoSha256": "041eae0b585f4e2e92bee4a90e08a0a5dab74d80625be4a1e5d60f2fc65228cb",
+    "comentarioSha256": "30bea7ff7b1251b0df1ef75b4eb998dc4974dbf3ffc57ac486128980c68e505e"
+   }
   },
   "pediatria-0690": {
    "tema": "pediatria",
@@ -34783,8 +35132,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "D oficial identifica LettsB como ulna em galho verde com luxação radial anterior. As opções distinguem completa/anterior, completa/posterior e deformidade plástica/anterior. Os resumos8/9 não apresentam a classificação LettsA–E da lesão proximal. Falta tabela primária; não confundir a classificação de Galeazzi por direção ulnar do resumo8 com Letts de Monteggia. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -34792,7 +35141,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "c4d72f8abf842a23763da24f4e8e13e11c988da467253dff5d2a5e91e6e9b3e3"
+   "questaoSha256": "c4d72f8abf842a23763da24f4e8e13e11c988da467253dff5d2a5e91e6e9b3e3",
+   "pendencia": "D oficial identifica LettsB como ulna em galho verde com luxação radial anterior. As opções distinguem completa/anterior, completa/posterior e deformidade plástica/anterior. Os resumos8/9 não apresentam a classificação LettsA–E da lesão proximal. Falta tabela primária; não confundir a classificação de Galeazzi por direção ulnar do resumo8 com Letts de Monteggia. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0719": {
    "tema": "pediatria",
@@ -35084,8 +35434,8 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelB antiga diz ACIMA de12anos, enquanto o resumo9 diz criança mais velha POR VOLTA de12anos. O resumo contradiz a média de3meses e predominância distal/junção calo-osso das outras opções, mas não demonstra o corte estrito acima de12. Falta distribuição etária ou afirmação primária para endossar B como única, sem mudar a alternativa; proximidade não equivale a corte populacional. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35101,7 +35451,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "008202f839cae277e05c537cde72ab5564d6fa25c5fe73f2b7a96779a21b0c31"
+   "questaoSha256": "008202f839cae277e05c537cde72ab5564d6fa25c5fe73f2b7a96779a21b0c31",
+   "pendencia": "Sem gabarito oficial; provávelB antiga diz ACIMA de12anos, enquanto o resumo9 diz criança mais velha POR VOLTA de12anos. O resumo contradiz a média de3meses e predominância distal/junção calo-osso das outras opções, mas não demonstra o corte estrito acima de12. Falta distribuição etária ou afirmação primária para endossar B como única, sem mudar a alternativa; proximidade não equivale a corte populacional. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0731": {
    "tema": "pediatria",
@@ -35417,8 +35768,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelA antiga pede varo com supinação na técnica de Patterson para colo radial pediátrico. Os resumos8/9 não descrevem Patterson, posição do cotovelo, rotação ou contraste entre técnicas. Falta capítulo primário de rádio proximal; não transferir a redução derrotatória do galho verde diafisário para essa manobra. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -35427,7 +35778,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "b766cdee86322c6de55346785bc9baa89b8ddd637ec1706335064808f1502963"
+   "questaoSha256": "b766cdee86322c6de55346785bc9baa89b8ddd637ec1706335064808f1502963",
+   "pendencia": "Sem gabarito oficial; provávelA antiga pede varo com supinação na técnica de Patterson para colo radial pediátrico. Os resumos8/9 não descrevem Patterson, posição do cotovelo, rotação ou contraste entre técnicas. Falta capítulo primário de rádio proximal; não transferir a redução derrotatória do galho verde diafisário para essa manobra. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0750": {
    "tema": "pediatria",
@@ -35938,8 +36290,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelB antiga nega que associações da luxação congênita da cabeça radial sejam raras. Os corpos dos resumos8/9 não estabelecem frequência das anomalias associadas nem seus diagnósticos. Falta fonte de malformação congênita que compare isolada/associada; Monteggia perdida não cobre essa doença e a lista de síndromes do comentário não é fonte. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35956,7 +36308,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "2eb62398ae8cdc98c6e9dd6c869e195a334f1a2eb97261289039b5d4a0d98a87"
+   "questaoSha256": "2eb62398ae8cdc98c6e9dd6c869e195a334f1a2eb97261289039b5d4a0d98a87",
+   "pendencia": "Sem gabarito oficial; provávelB antiga nega que associações da luxação congênita da cabeça radial sejam raras. Os corpos dos resumos8/9 não estabelecem frequência das anomalias associadas nem seus diagnósticos. Falta fonte de malformação congênita que compare isolada/associada; Monteggia perdida não cobre essa doença e a lista de síndromes do comentário não é fonte. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0798": {
    "tema": "pediatria",
@@ -36271,8 +36624,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelB antiga compara gravidade nos flexores radial/ulnar do carpo com flexores profundos na contratura de Volkmann. O resumo9 reconhece a contratura e descreve fasciotomia, sem distribuição da necrose ou vulnerabilidade comparativa muscular. Falta fonte específica de Volkmann; plano a liberar não demonstra quais músculos são mais atingidos. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -36287,7 +36640,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "55c97b72267cc6b74b1091bbafaabb68f91b7f67841a94a5b30a645c5bb42dad"
+   "questaoSha256": "55c97b72267cc6b74b1091bbafaabb68f91b7f67841a94a5b30a645c5bb42dad",
+   "pendencia": "Sem gabarito oficial; provávelB antiga compara gravidade nos flexores radial/ulnar do carpo com flexores profundos na contratura de Volkmann. O resumo9 reconhece a contratura e descreve fasciotomia, sem distribuição da necrose ou vulnerabilidade comparativa muscular. Falta fonte específica de Volkmann; plano a liberar não demonstra quais músculos são mais atingidos. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0828": {
    "tema": "pediatria",
@@ -36346,8 +36700,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelB antiga depende de angulação DORSAL sem definir ápice ou fragmento distal. O resumo9 sustenta supinação com cortical preservada se for ápice dorsal e pronação se o distal estiver dorsal; os autores não completam o galho verde. Falta convenção do enunciado ou fonte original para resposta única. Ambiguidade não prova automaticamente Errado; alerta/provável antigos sem novo endosso. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -36362,7 +36716,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "77523da5f3d41a85e2159c9afd7c679c19fcd4c1e0fbfd574324e92f54da960d"
+   "questaoSha256": "77523da5f3d41a85e2159c9afd7c679c19fcd4c1e0fbfd574324e92f54da960d",
+   "pendencia": "Sem gabarito oficial; provávelB antiga depende de angulação DORSAL sem definir ápice ou fragmento distal. O resumo9 sustenta supinação com cortical preservada se for ápice dorsal e pronação se o distal estiver dorsal; os autores não completam o galho verde. Falta convenção do enunciado ou fonte original para resposta única. Ambiguidade não prova automaticamente Errado; alerta/provável antigos sem novo endosso. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0830": {
    "tema": "pediatria",
@@ -36626,8 +36981,8 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelC antiga pede movimento mais afetado após fratura do COLO radial pediátrico. O resumo9 compara pronação/supinação na rigidez da DIÁFISE; o8 é distal. Falta série de rádio proximal comparando flexão, extensão, pronação e supinação. Não transportar o ranking diafisário para outra lesão anatômica. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
@@ -36636,7 +36991,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "05717ebc1e87f4d96e717d008779ae14976cdf7d6406f7ba7b1cb06891e2d58f"
+   "questaoSha256": "05717ebc1e87f4d96e717d008779ae14976cdf7d6406f7ba7b1cb06891e2d58f",
+   "pendencia": "Sem gabarito oficial; provávelC antiga pede movimento mais afetado após fratura do COLO radial pediátrico. O resumo9 compara pronação/supinação na rigidez da DIÁFISE; o8 é distal. Falta série de rádio proximal comparando flexão, extensão, pronação e supinação. Não transportar o ranking diafisário para outra lesão anatômica. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0842": {
    "tema": "pediatria",
@@ -37068,8 +37424,8 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "C oficial tem apoio para objetivo de redução anatômica/fixação da Salter-HarrisIII desviada. A exige zona germinativa versus hipertrófica e frequência de distúrbio; D exige todas as camadas e risco geralIV. O resumo8 não fornece essa histologia geral nem torna obrigatoriamente aberta toda redução articular. Falta fonte geral para cada cláusula, distinguindo objetivo anatômico e via de acesso. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37091,7 +37447,8 @@
     "rockwoodcriancas9-14-fratura-em-t",
     "wilkins9-08-radio-ulna-distal-crianca"
    ],
-   "questaoSha256": "3d231c58b09e3114f8084c92505339e687f93d98b00a0e0d489e3e63c4b09479"
+   "questaoSha256": "3d231c58b09e3114f8084c92505339e687f93d98b00a0e0d489e3e63c4b09479",
+   "pendencia": "C oficial tem apoio para objetivo de redução anatômica/fixação da Salter-HarrisIII desviada. A exige zona germinativa versus hipertrófica e frequência de distúrbio; D exige todas as camadas e risco geralIV. O resumo8 não fornece essa histologia geral nem torna obrigatoriamente aberta toda redução articular. Falta fonte geral para cada cláusula, distinguindo objetivo anatômico e via de acesso. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0911": {
    "tema": "pediatria",
@@ -37364,8 +37721,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial e fragmento METAFISÁRIO de Thurston-Holland têm apoio no resumo8. O corpo não oferece classificação geral completa I–V para desenvolver os distratores, especialmente V por compressão e trajetos III/IV. Falta tabela primária geral; o comentário antigo explica os tipos, mas não é fonte independente para receber selo. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37388,7 +37745,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "19aa7f9538184d6532361ab56cc48d17589e97ef0c4b77ed27f589873f548b51"
+   "questaoSha256": "19aa7f9538184d6532361ab56cc48d17589e97ef0c4b77ed27f589873f548b51",
+   "pendencia": "B oficial e fragmento METAFISÁRIO de Thurston-Holland têm apoio no resumo8. O corpo não oferece classificação geral completa I–V para desenvolver os distratores, especialmente V por compressão e trajetos III/IV. Falta tabela primária geral; o comentário antigo explica os tipos, mas não é fonte independente para receber selo. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0924": {
    "tema": "pediatria",
@@ -37397,15 +37755,16 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelB antiga liga cotovelo fletido60graus e carga longitudinal a BadoII. O resumo9 remete Monteggia a capítulo próprio, sem associar esse ângulo/carga às direções de Bado. Falta mecanismo primário específico; definir luxação posterior não prova o valor de60graus. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "1c913d18301ca8dabf9647d074ba592693e8956c2347ab9e1ec04b7f2179f3b5"
+   "questaoSha256": "1c913d18301ca8dabf9647d074ba592693e8956c2347ab9e1ec04b7f2179f3b5",
+   "pendencia": "Sem gabarito oficial; provávelB antiga liga cotovelo fletido60graus e carga longitudinal a BadoII. O resumo9 remete Monteggia a capítulo próprio, sem associar esse ângulo/carga às direções de Bado. Falta mecanismo primário específico; definir luxação posterior não prova o valor de60graus. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0925": {
    "tema": "pediatria",
@@ -37473,15 +37832,16 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelA antiga combina raridade de BadoIV na criança com traço radial no mesmo nível ou DISTAL ao ulnar. O resumo9 não define essa frequência pediátrica nem o limite proximal/distal dos traços. Falta fonte de Monteggia infantil para ambas as cláusulas; dois ossos fraturados não demonstram a combinação. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "5b5d413b949fa587c2a00194a620f80eb18ee477c3b82fff8eba485eaaa94344"
+   "questaoSha256": "5b5d413b949fa587c2a00194a620f80eb18ee477c3b82fff8eba485eaaa94344",
+   "pendencia": "Sem gabarito oficial; provávelA antiga combina raridade de BadoIV na criança com traço radial no mesmo nível ou DISTAL ao ulnar. O resumo9 não define essa frequência pediátrica nem o limite proximal/distal dos traços. Falta fonte de Monteggia infantil para ambas as cláusulas; dois ossos fraturados não demonstram a combinação. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0930": {
    "tema": "pediatria",
@@ -37490,15 +37850,16 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Sem gabarito oficial; provávelA antiga combina varo com fratura ulnar proximal geralmente em galho verde no BadoIII. O resumo9 ensina galho verde em geral, sem mecanismo ou predominância incompleta/completa nesse subtipo. Falta fonte de BadoIII pediátrico; elasticidade infantil não prova qual padrão é mais comum. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "57f36ea24febd1a1f624988e7d3009d96bed932f09f8e4dd13fd150bd4ed447d"
+   "questaoSha256": "57f36ea24febd1a1f624988e7d3009d96bed932f09f8e4dd13fd150bd4ed447d",
+   "pendencia": "Sem gabarito oficial; provávelA antiga combina varo com fratura ulnar proximal geralmente em galho verde no BadoIII. O resumo9 ensina galho verde em geral, sem mecanismo ou predominância incompleta/completa nesse subtipo. Falta fonte de BadoIII pediátrico; elasticidade infantil não prova qual padrão é mais comum. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0931": {
    "tema": "pediatria",
@@ -39322,8 +39683,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "B oficial é sustentada no resumo8: parada radial por estresse causa variância positiva e impacto ulnocarpal. A e C também podem ser confrontadas com variância negativa/Kienbock e parada ulnar. Porém o corpo não descreve Madelung/subluxação volar do carpo, necessários para desenvolver D sem repetir só a certa. Falta fonte anatômica dessa deformidade e distinção do fechamento difuso por estresse; comentário bom anterior não é autoridade. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -39338,7 +39699,8 @@
     "wilkins9-08-radio-ulna-distal-crianca",
     "wilkins9-09-diafise-antebraco-crianca"
    ],
-   "questaoSha256": "31ea5118b64f8baf98ec83b42a254a6ff7fb5e02c0b9188d8503d4ef3d023256"
+   "questaoSha256": "31ea5118b64f8baf98ec83b42a254a6ff7fb5e02c0b9188d8503d4ef3d023256",
+   "pendencia": "B oficial é sustentada no resumo8: parada radial por estresse causa variância positiva e impacto ulnocarpal. A e C também podem ser confrontadas com variância negativa/Kienbock e parada ulnar. Porém o corpo não descreve Madelung/subluxação volar do carpo, necessários para desenvolver D sem repetir só a certa. Falta fonte anatômica dessa deformidade e distinção do fechamento difuso por estresse; comentário bom anterior não é autoridade. Questão, gabaritos, provável, alerta e comentário anterior preservados; sem novo baseResumo."
   },
   "pediatria-0983": {
    "tema": "pediatria",
