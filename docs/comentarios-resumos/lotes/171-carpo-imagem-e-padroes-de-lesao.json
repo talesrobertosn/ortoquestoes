@@ -1,0 +1,233 @@
+{
+  "mao-1673": {
+    "questaoSha256": "75953c38d82f62f5604ea53b016a6e77cd7f8b263e0463f72cddd2740e34cbf0",
+    "comentarioAnteriorSha256": "43eee4b31e91dc543b95bf5410e1700e3584e44d8c1c346055090007730060b3",
+    "comentario": {
+      "conceito": "A investigação responde a duas perguntas diferentes. Na suspeita de **fratura oculta do escafoide**, procura-se uma lesão que a radiografia inicial não mostrou; o resumo favorece ressonância precoce e a considera provavelmente o exame de referência para a fratura aguda. Para medir **desvio, forma e alinhamento ósseo**, a tomografia é destacada como a melhor opção.\n\nIsso não significa que a tomografia seja incapaz de diagnosticar uma fratura oculta. A fonte também descreve seu valor diagnóstico, mas prioriza a ressonância nesse cenário e reserva à tomografia a melhor caracterização do traço e do desvio, especialmente com cortes no plano do escafoide.\n\nA escolha depende da pergunta clínica, da suspeita pré-teste e da qualidade do exame. Um método útil para detectar a presença de lesão não é automaticamente o melhor para descrever sua geometria. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: diagnóstico e imagem.",
+      "correta": "Correta: A (ressonância; tomografia). A sequência distingue a busca da fratura oculta da avaliação do desvio ósseo. Reúne as preferências descritas para cada finalidade, sem excluir utilidade diagnóstica da tomografia.",
+      "incorretas": {
+        "B": "A tomografia pode revelar fratura oculta, porém a ordem proposta troca as preferências da fonte: a ressonância é favorecida na suspeita aguda e a tomografia, na forma e no desvio. A segunda tarefa não deve ser atribuída à ressonância como se fosse a melhor avaliação geométrica descrita.",
+        "C": "Além de colocar a tomografia primeiro na questão da fratura oculta, a opção usa cintilografia para o desvio. O resumo a descreve como sensível, porém menos específica e mais invasiva, enquanto atribui à tomografia a melhor avaliação de forma, traço e alinhamento; não apresenta cintilografia como método preferencial de desvio.",
+        "D": "A cintilografia pode ser sensível na detecção, mas não é a preferência precoce da fonte para a suspeita de fratura aguda. A segunda parte também não reproduz a comparação do resumo, que destaca a tomografia para caracterizar desvio e alinhamento em vez da ressonância."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: diagnóstico e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: diagnóstico e imagem"
+        ],
+        "blocos": [
+          "escafoide-diagnostico-e-imagem-2c167e09",
+          "escafoide-diagnostico-e-imagem-c1f614fc",
+          "escafoide-diagnostico-e-imagem-7fab1799",
+          "escafoide-diagnostico-e-imagem-456f44f5"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "86d0002879ab426b22d397db33c3d582e6ef88543060f3cc317416758776cc68"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1679": {
+    "questaoSha256": "b03a764a9e3a8a8dbebc0ecdfa1e25f3541e356967a7ea727aaff6bf8d68831b",
+    "comentarioAnteriorSha256": "75f98b3b81b881e54ed5bef70756a9f0554c9a548f1c4685dd9b7df8a3680eff",
+    "comentario": {
+      "conceito": "Na pseudartrose do escafoide, saber se o polo proximal está vivo é uma pergunta diferente de saber se o osso está torto ou se o traço permanece aberto. O critério intraoperatório de referência descrito é a **ausência de sangramento puntiforme no polo proximal depois de soltar o garrote**.\n\nA liberação do garrote é parte essencial da interpretação: enquanto a circulação está deliberadamente bloqueada, a ausência de sangramento não responde à mesma pergunta sobre viabilidade. O achado precisa ser observado no contexto cirúrgico adequado, e não inferido automaticamente de uma deformidade radiográfica.\n\nA imagem ajuda a estudar o foco, mas tem limitações para a biologia. O resumo informa que a esclerose na tomografia é muito específica, porém pouco sensível para necrose; portanto, nem toda necrose será reconhecida por esse sinal. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: consolidação viciosa e pseudartrose.",
+      "correta": "Correta: D (ausência de sangramento puntiforme após soltar o garrote). É o critério de referência intraoperatório apresentado na fonte. O momento após a liberação distingue avaliação de viabilidade da simples ausência de fluxo causada pelo próprio garrote.",
+      "incorretas": {
+        "A": "DISI descreve o semilunar em extensão, associado ao desequilíbrio mecânico do carpo. Ele pode acompanhar a pseudartrose, mas não demonstra por si só necrose do polo proximal; desalinhamento e viabilidade são dimensões diferentes.",
+        "B": "A esclerose proximal na tomografia é um achado de imagem que a fonte descreve com especificidade de 100% e sensibilidade de 60%. Sua utilidade não a transforma em critério intraoperatório de referência, e sua ausência não exclui todas as necroses.",
+        "C": "A abertura volar do foco na tomografia mostra a geometria da pseudartrose e pode ajudar a avaliar deformidade e necessidade de correção. Não é observação de perfusão nem o sinal intraoperatório de sangramento pedido no enunciado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Padrões de instabilidade: DISI, VISI e o que é dissociativo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-db28ea7d",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "aead05c4fb12889b09445416a1b617018a8556ee0d293e1e729913100fffdab9"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1680": {
+    "questaoSha256": "158f81478ea0d01aeca8540e259e4970b6fb5f9ea97fe647b332f0c1d0b41cdc",
+    "comentarioAnteriorSha256": "afb215fcc083a8f85015331f901eac3bc6c100bd91df0e944deb1bc5ba2347f3",
+    "comentario": {
+      "conceito": "No SNAC, o colapso avançado da pseudartrose do escafoide, a artrose começa na relação do fragmento distal fletido com a estiloide radial e progride para outras interfaces. A articulação **radiolunar** permanece relativamente poupada na descrição do resumo.\n\nEssa preservação ajuda a compreender os procedimentos de salvamento: o cirurgião procura uma interface ainda aproveitável para transmitir movimento e carga depois de retirar ou fundir regiões comprometidas. A capitossemilunar, por outro lado, pode se desgastar no estágio III, alterando a indicação da carpectomia proximal convencional.\n\nHá uma segunda preservação relativa que não deve ser confundida com toda a radioescafoide: no SNAC, o fragmento proximal do escafoide pode manter uma articulação relativamente poupada com o rádio, enquanto o fragmento distal está em conflito com a estiloide. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de pseudartrose e Artrose do colapso: SNAC e SLAC.",
+      "correta": "Correta: A (radiolunar). É a interface relativamente poupada ao longo da progressão descrita. A palavra relativamente é importante: a questão identifica o padrão de desgaste e não uma garantia de cartilagem normal em qualquer paciente.",
+      "incorretas": {
+        "B": "A capitolunar ou capitossemilunar é comprometida no estágio III. Essa degeneração importa porque a cabeça do capitato passaria a articular com a fossa do semilunar após uma carpectomia proximal; por isso, não é a superfície preservada pedida.",
+        "C": "Radioescafoide é uma denominação ampla, que inclui a interface radial onde começa o desgaste. A preservação relativa da articulação do fragmento proximal no SNAC não significa que toda a radioescafoide permaneça intacta, especialmente a relação distal com a estiloide.",
+        "D": "A estiloide radial com o escafoide distal é justamente o ponto inicial do desgaste no estágio I. A flexão do fragmento distal favorece esse conflito, portanto a opção descreve a interface inicialmente acometida, e não a poupada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Artrose do colapso: SNAC e SLAC; Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Artrose do colapso: SNAC e SLAC",
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "artrose-do-colapso-snac-e-slac-cbb1d7e8",
+          "artrose-do-colapso-snac-e-slac-a82703f6",
+          "artrose-do-colapso-snac-e-slac-118d45f0",
+          "artrose-do-colapso-snac-e-slac-75ec5c30",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-2d0f6a61"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "5a1e1b5a47d25e1b48d450b964e66f153d95cbf2e9326196c38b5c0f96fa0eba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1682": {
+    "questaoSha256": "4468d4d1dc0c8dcad3294a6c03f6994ff0b8e2e84d34e7cdc8930c6a31b5b4b4",
+    "comentarioAnteriorSha256": "f27a712cb699990cf8cd57e1cf4d1d65b48d31f2e4954c066f5305e7e555bf61",
+    "comentario": {
+      "conceito": "A fratura do piramidal é, na grande maioria dos casos, uma pequena lesão **cortical dorsal**. O resumo atribui mais de 90% a esse padrão e o relaciona ao arrancamento capsular ou ao impacto local. Não se deve confundi-lo com fratura do corpo associada a uma desorganização importante do carpo.\n\nNa radiografia PA, o fragmento dorsal pode ficar oculto pela sobreposição; perfil e oblíqua pronada ajudam a mostrá-lo. A fonte descreve tratamento com tala curta e mobilização progressiva, enquanto dor persistente merece investigar lesões capsulares ou lunopiramidais associadas.\n\nOutros padrões existem e contam histórias diferentes: a avulsão volar sugere lesão lunopiramidal; a fratura transversal do corpo pode integrar uma perilunar; e a impacção pode envolver estiloide ulnar ou hamato. A pergunta pede o padrão predominante, não o único possível. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Fraturas dos outros ossos do carpo.",
+      "correta": "Correta: B (avulsão cortical dorsal). É o padrão que responde por mais de 90% segundo a fonte. Sua localização e apresentação geralmente limitada a diferenciam das lesões do corpo e das avulsões volares com outra associação ligamentar.",
+      "incorretas": {
+        "A": "A avulsão cortical volar é um padrão distinto, relacionado no resumo à lesão lunopiramidal e tratado considerando essa instabilidade. Trocar dorsal por volar muda tanto a localização quanto a interpretação da lesão.",
+        "C": "A fratura transversal do corpo envolve uma porção estrutural diferente e pode fazer parte de lesão perilunar. Quando há desarranjo do carpo, a fonte descreve necessidade de fixação; não é o pequeno fragmento cortical dorsal predominante.",
+        "D": "A impacção piramidal-hamato é um mecanismo reconhecido, associado a dorsiflexão e desvio ulnar forçados com o antebraço pronado. Ser um mecanismo possível não lhe atribui a predominância do padrão cortical dorsal citada na questão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Fraturas dos outros ossos do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Fraturas dos outros ossos do carpo"
+        ],
+        "blocos": [
+          "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
+          "fraturas-dos-outros-ossos-do-carpo-a57392eb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "030c9f5ad9b91d2ce2686757bdb7811cd279357291ce2e183471763514e3fb61"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1683": {
+    "questaoSha256": "324d0fce56a4e4758ed937cbca86519edbc68c87d6edf2b3b5d12abf90ccb45a",
+    "comentarioAnteriorSha256": "9eeb38c56e6a83ba83ac0941144cdf7956c2dd2c7a184745d4146e79c13a2c96",
+    "comentario": {
+      "conceito": "Na síndrome escafocapitato clássica, a energia pode fraturar o escafoide e o colo do capitato. O **fragmento proximal do capitato** é o que pode girar de 90° a 180°, criando uma configuração que precisa ser reconhecida para restaurar o alinhamento.\n\nA rotação interessa também à biologia: a irrigação proximal do capitato é retrógrada, e a fratura pode comprometer a viabilidade do fragmento. O resumo associa o padrão à lesão perilunar e admite variantes em que o escafoide não fratura junto; o componente de rotação proximal do capitato continua sendo a distinção ensinada aqui.\n\nOutros pequenos ossos e apófises do carpo têm mecanismos próprios. Não se deve deslocar o nome do fragmento só porque uma fratura do hâmulo, uma avulsão dorsal do piramidal ou uma fratura do tubérculo do escafoide também podem ocorrer no punho. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de fraturas dos outros ossos e irrigação.",
+      "correta": "Correta: D (polo proximal do capitato). É o fragmento que pode sofrer a grande rotação após fratura do colo na síndrome escafocapitato. Sua orientação e sua viabilidade são problemas distintos, mas ambos precisam ser considerados.",
+      "incorretas": {
+        "A": "O gancho ou hâmulo pertence ao hamato. Sua fratura é relacionada no resumo a compressão contra objeto segurado ou avulsão do pisohamato; não é o fragmento articular proximal do capitato que gira na síndrome.",
+        "B": "O piramidal tem como padrão predominante a lesão cortical dorsal, enquanto a fratura do corpo pode acompanhar uma perilunar. Isso não o transforma no fragmento proximal do capitato com rotação característica do quadro escafocapitato.",
+        "C": "O tubérculo do escafoide pode fraturar por compressão ou avulsão e é um padrão diferente do traço no colo do capitato. A síndrome clássica pode incluir fratura do escafoide, mas a rotação descrita pertence ao fragmento proximal do capitato, não ao tubérculo escafóideo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Fraturas dos outros ossos do carpo; Escafoide: anatomia, irrigação e mecanismo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Fraturas dos outros ossos do carpo",
+          "Escafoide: anatomia, irrigação e mecanismo"
+        ],
+        "blocos": [
+          "fraturas-dos-outros-ossos-do-carpo-bc810ef4",
+          "escafoide-anatomia-irrigacao-e-mecanismo-52d9acbe",
+          "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
+          "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
+          "escafoide-anatomia-irrigacao-e-mecanismo-02f7a0bf"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "e28d1858c15234530be12ea5c722b58a3874f209988d2196d994419e64be05f5"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1685": {
+    "questaoSha256": "1c07cff37265b9472b416176b197be2a8f22e79c4a2adf83eb837d453b637f72",
+    "comentarioAnteriorSha256": "b2fed338ad2af2465553b164a1b965b29c0e50d089d66296ac8c1267b70c343e",
+    "comentario": {
+      "conceito": "Se o intervalo escafossemilunar está normal na radiografia comum e **só alarga sob estresse**, a instabilidade é dinâmica. O estresse evidencia a falha de contenção que não se manifestava na posição e nas condições da imagem de rotina.\n\nEssa classificação é pela constância da alteração. Na estática, o intervalo já está aberto na PA comum. Na pré-dinâmica, há lesão parcial sem abertura nem mesmo no estresse. Por isso, radiografia comum normal não exclui toda lesão escafossemilunar; o contexto clínico e os exames provocativos têm papel próprio.\n\nAdaptativa é outro eixo da descrição: refere-se ao desalinhamento decorrente de uma causa estrutural externa à falha ligamentar primária, como consolidação viciosa do rádio distal. Não é o nome dado simplesmente a um intervalo que abre quando se aplica estresse. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Dissociação escafossemilunar e Padrões de instabilidade.",
+      "correta": "Correta: A (dinâmica). O achado aparece apenas nas incidências sob estresse, apesar de não estar presente na radiografia comum. É a definição expressa dessa categoria no resumo.",
+      "incorretas": {
+        "B": "Na estática, a diástase já aparece na PA comum. O fato de depender do estresse para surgir afasta essa descrição; maior intensidade do teste não transforma, por si, uma lesão dinâmica em estática.",
+        "C": "A adaptativa é definida pela causa do desalinhamento, como uma consolidação viciosa do rádio distal. Ela não corresponde ao critério de aparecer somente sob estresse, que classifica a constância da instabilidade escafossemilunar como dinâmica.",
+        "D": "Na pré-dinâmica, a lesão parcial não abre o intervalo nem sob estresse. A questão descreve abertura demonstrável no exame provocativo, portanto ultrapassa essa condição e se enquadra na dinâmica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Padrões de instabilidade: DISI, VISI e o que é dissociativo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-719be38b",
+          "dissociacao-escafossemilunar-b886eabc",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "86a99400a1bee51c2370ff7c1c068eafb13a6bea92ad49993c9db8bf783597da"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 555 |
+| pendente | 525 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 340 |
+| pendente-fonte | 352 |
 | pendente-inspecao-imagem | 84 |
-| revisada | 1406 |
+| revisada | 1424 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -24,7 +24,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 38 | 0 | 14 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 88 | 0 | 97 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
-| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 42 | 0 | 175 |
+| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 60 | 0 | 157 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 105 | 0 | 131 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 84 | 0 | 48 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 83 | 0 | 45 |
