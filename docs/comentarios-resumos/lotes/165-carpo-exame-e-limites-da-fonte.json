@@ -1,0 +1,239 @@
+{
+  "mao-0239": {
+    "questaoSha256": "7101705d44d04595668d15bb07775f58eb101e9d18b4557bb6bf24bf020d3ecf",
+    "comentarioAnteriorSha256": "ebe4282b48e7d17b910b256491e16c52bb5e53ad0d67e98dfddf86b54580e75d",
+    "comentario": {
+      "conceito": "Uma luxação perilunar pode passar despercebida mesmo sendo uma lesão importante: o semilunar ainda pode permanecer na fossa radial, e a atenção pode ficar concentrada em outras lesões do trauma. O resumo informa que **16% a 25%** não são reconhecidas no primeiro atendimento, sobretudo as de pequeno arco, sem fratura evidente. Entre os valores oferecidos, aproximadamente um quarto corresponde a 25%.\n\nNa radiografia, deve-se procurar quebra dos arcos de Gilula na PA e perda do alinhamento entre rádio, semilunar e capitato no perfil. Quando o próprio semilunar gira para palmar, pode aparecer o sinal da xícara derramada. Não é necessário encontrar uma fratura para suspeitar de instabilidade grave.\n\nO número exprime uma proporção de diagnósticos inicialmente perdidos nas séries resumidas, não uma probabilidade universal para qualquer serviço. Sua utilidade clínica é lembrar que a anatomia precisa ser conferida sistematicamente. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+      "correta": "Correta: B (25%). Corresponde a um em quatro casos e ao limite superior da faixa de 16% a 25% citada no resumo. É a aproximação solicitada pela questão, sem necessidade de apresentar esse valor como constante de todos os atendimentos.",
+      "incorretas": {
+        "A": "5% corresponde a um em vinte, muito abaixo da faixa citada. Essa opção minimiza a frequência de perda inicial e pode favorecer falsa segurança quando não há uma fratura óbvia, justamente um contexto em que a luxação ligamentar escapa.",
+        "C": "35% é mais de um terço, acima dos 16% a 25% da fonte. A gravidade da lesão e a dificuldade diagnóstica não autorizam aumentar a proporção informada; o valor aproximado pedido é um quarto.",
+        "D": "50% significa metade dos casos, não a frequência de diagnósticos perdidos descrita. O resumo também apresenta porcentagens de artrose nas séries de seguimento, mas um desfecho tardio não pode ser transferido para a falha diagnóstica no primeiro atendimento.",
+        "E": "75% seria três em cada quatro casos. Isso é o triplo de um quarto e não corresponde à faixa da fonte; a alternativa altera intensamente a magnitude do problema, embora a recomendação de investigar o alinhamento continue válida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "mayfield-e-a-luxacao-perilunar-231a7265",
+          "mayfield-e-a-luxacao-perilunar-d991b46c",
+          "mayfield-e-a-luxacao-perilunar-69ef1e7a",
+          "mayfield-e-a-luxacao-perilunar-7a90dc33"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "cc811d94f9dc4140c4322e8890f22b14f7261a880b07003d5aed6df2137024df"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0345": {
+    "questaoSha256": "c39efb53102301ffa8c3189581f47dbb3ff770bf967df3d3977de94327092934",
+    "comentarioAnteriorSha256": "6b4aebe1d5e3091d7d30679c198b970f256cc53c49086043c69409a418217f53",
+    "comentario": {
+      "conceito": "O **escafoide** funciona como ponte entre as duas fileiras do carpo. A expressão do enunciado sobre pertencer às duas fileiras deve ser entendida como uma relação funcional: na descrição anatômica por fileiras, ele integra a proximal, mas sua disposição conecta e sincroniza os movimentos da proximal e da distal.\n\nNenhum tendão se insere diretamente no escafoide. Seu comportamento resulta das forças articulares e ligamentares. O radioescafocapitato cruza sua cintura como uma tipoia, sem se inserir no osso, e o escafoide gira nessa relação. No desvio radial, ele flete e se horizontaliza; no ulnar, a fileira proximal estende.\n\nO capitato tem outra função importante, que pode confundir: o eixo do movimento combinado passa por sua cabeça e seu colo. Ser centro de movimento não é o mesmo que ser a ponte entre as fileiras. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Escafoide: anatomia, irrigação e mecanismo e Anatomia ligamentar e cinemática do carpo.",
+      "correta": "Correta: C (escafoide). A fonte o descreve expressamente como ponte que sincroniza as fileiras. Isso não modifica sua inclusão anatômica na proximal; destaca a função de conexão que a questão pretende identificar.",
+      "incorretas": {
+        "A": "O capitato pertence à fileira distal, e a cabeça e o colo participam do eixo do movimento combinado. Esse papel central na cinemática não o transforma na ponte descrita para o escafoide; são propriedades mecânicas distintas.",
+        "B": "O semilunar integra o segmento intercalado proximal e articula-se com o capitato, mas seu equilíbrio depende das influências opostas do escafoide e do piramidal. Ele é a peça central desse equilíbrio, não a ponte escafóidea que sincroniza as fileiras.",
+        "D": "O hamato integra a fileira distal. A geometria de sua relação com o piramidal participa da extensão da fileira proximal no desvio ulnar, mas essa interação ulnar não corresponde ao papel de ponte atribuído ao escafoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Anatomia ligamentar e cinemática do carpo; Padrões de instabilidade: DISI, VISI e o que é dissociativo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Anatomia ligamentar e cinemática do carpo",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-485298b2",
+          "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+          "anatomia-ligamentar-e-cinematica-do-carpo-9c28029e",
+          "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "d5d581913530264e842caa19f07906948762fb3e7ebc7db7ef56f886fcc1f470"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0448": {
+    "questaoSha256": "388b87238bca71190205f342227352617b40b91224ca67ad8925c100fadf8087",
+    "comentarioAnteriorSha256": "246b48b752890a4f95b282b5bdec55fd9c7ccc0960ac477a3ddac37028105878",
+    "comentario": {
+      "conceito": "O limite temporal não é uniforme entre referências. Nesta prova, o gabarito considera a dissociação escafossemilunar crônica a partir de **6 semanas**. O resumo consultado adota outra divisão: aguda até 4 a 6 semanas, subaguda de 4–6 até 24 semanas e crônica depois de 6 meses.\n\nNa prática, o tempo é um indicador do estado do ligamento, mas não substitui a avaliação de tecido reparável, alinhamento, redutibilidade e cartilagem. Uma lesão completa recente pode permitir reparo direto; uma lesão irreparável com deformidade ainda redutível pede reconstrução. Não se pode escolher uma cirurgia apenas pelo número de semanas.\n\nAssim, a resposta oficial foi preservada, mas não foi apresentada como o corte adotado pelo Rockwood resumido. As demais durações oferecidas também ficam na faixa subaguda dessa fonte; nenhuma corresponde ao seu início da fase crônica. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+      "correta": "Correta: A (6 semanas), conforme o gabarito da prova. No resumo consultado, esse ponto está na transição do agudo para o subagudo, e não marca o início da fase crônica. A distinção de convenções precisa acompanhar a letra para não ensinar uma equivalência falsa.",
+      "incorretas": {
+        "B": "8 semanas já ultrapassam o limite agudo de 4 a 6 semanas do resumo, mas ainda se situam na fase subaguda. Portanto, não são o mínimo oficial de 6 semanas da prova nem o corte de mais de 6 meses da fonte consultada.",
+        "C": "12 semanas se encontram no intervalo subagudo de até 24 semanas usado pelo resumo. A duração pode aumentar a preocupação com reparabilidade, mas não equivale, nessa classificação temporal, ao começo da fase crônica.",
+        "D": "15 semanas também pertencem à faixa subaguda da fonte. Não há no trecho um marco específico em 15 semanas que justifique escolhê-lo como limite mínimo; a definição temporal crônica permanece além de 6 meses."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito A preservado: a banca usa 6 semanas. O resumo do Rockwood, 10ª edição, capítulo 44, afirma não haver consenso e propõe aguda até 4–6 semanas, subaguda até 24 semanas e crônica depois de 6 meses. As alternativas B, C e D também permanecem subagudas por essa convenção; nenhuma alternativa representa o corte crônico dessa fonte secundária."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-4fb44d8e",
+          "dissociacao-escafossemilunar-614919e2",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "dissociacao-escafossemilunar-65f85568"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "b65b7c28b82fd3be6f22eff0d28ccbfe2f01dcba18589744877bbc3d891b9d70"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0499": {
+    "questaoSha256": "2e0606626d79b3795acac78e2c476a40e9fdec4fe504a461c3dc2116f6738f62",
+    "comentarioAnteriorSha256": "eac7086de10eac02b34f2f2872207bd0c3ef2a4e012bc0725eb76f150d3b6c80",
+    "comentario": {
+      "conceito": "A lesão do **pequeno arco** é ligamentar: a força percorre o carpo em torno do semilunar sem precisar atravessar uma fratura. Embora o enunciado diga que ela é aguda e redutível, reduzir não significa que o punho ficará estável apenas com gesso. A contenção ligamentar pode continuar rompida e permitir nova perda do alinhamento.\n\nO gabarito escolhe **pinagem percutânea**. O resumo admite fios após redução fechada em situações selecionadas, como a lesão perilunar não luxada (PLIND), mas ressalta que a maioria das perilunares é irredutível ou instável e vai para exploração aberta e reparo. Portanto, não se deve estender a resposta desta questão a todas as lesões de pequeno arco.\n\nO tratamento começa com redução imediata sob anestesia adequada. O alinhamento e a estabilidade obtidos, além das estruturas lesadas, definem se fios fechados bastam ou se é necessário reparo aberto. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+      "correta": "Correta: B (pinagem percutânea), conforme a situação aguda e redutível proposta pela banca. Os fios mantêm o alinhamento depois da redução. A fonte a admite em casos selecionados; redutibilidade isolada não elimina a necessidade de avaliar instabilidade residual e eventual reparo aberto.",
+      "incorretas": {
+        "A": "O gesso isolado não recompõe os ligamentos que mantinham o carpo alinhado, e o resumo relata perda frequente da redução. Imobilização pode acompanhar o tratamento, mas não deve ser confundida com estabilização suficiente de uma lesão perilunar ligamentar instável.",
+        "C": "O reparo volar pode integrar uma operação: a fonte descreve a via palmar quando a redução dorsal não é possível ou há sintomas do mediano, além do fechamento da lesão no espaço de Poirier. Contudo, propor só reparo volar não especifica a estabilização do conjunto; para o caso selecionado da prova, a resposta é a pinagem, sem negar que outros padrões precisem de exploração e reparo.",
+        "D": "Uma capsuloplastia dorsal é uma proposta de reforço capsular, mas não é a estabilização percutânea escolhida para o cenário agudo e redutível. O resumo orienta restaurar o alinhamento, fixá-lo e reparar as estruturas necessárias quando a lesão é aberta; não sustenta substituir esse conjunto por capsuloplastia dorsal isolada para toda lesão do pequeno arco."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
+      ],
+      "conferido": false,
+      "alerta": "B oficial preservada. O resumo admite fios percutâneos após redução fechada em situações selecionadas, incluindo PLIND, mas recomenda exploração aberta e reparo para a maioria das perilunares irredutíveis ou instáveis. Não generalizar pinagem fechada a toda lesão do pequeno arco apenas porque reduziu inicialmente."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "mayfield-e-a-luxacao-perilunar-3a52a44f",
+          "mayfield-e-a-luxacao-perilunar-05a279d4",
+          "mayfield-e-a-luxacao-perilunar-45f502a1",
+          "mayfield-e-a-luxacao-perilunar-198892b5",
+          "mayfield-e-a-luxacao-perilunar-dae12b7d"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "33dc4b5f30cfb1985ac59582d997d506382074771039d94c321e74a48d342112"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0521": {
+    "questaoSha256": "aba5fcf283afc18a9bc5e6c221d53dfb2f71ef42c6f5530e85f27b8b2fdc3f0e",
+    "comentarioAnteriorSha256": "3e820eeb901f1567c30b069b99391cc62f8adb770945c9b4eca8d0be341d548a",
+    "comentario": {
+      "conceito": "No Watson, o examinador leva o punho do **desvio ulnar para o radial** enquanto pressiona o tubérculo do escafoide de palmar para dorsal. O início em ulnar coloca a fileira proximal mais estendida; ao avançar para radial, o escafoide deveria fletir e deitar.\n\nA pressão no tubérculo impede essa flexão. Quando a contenção escafossemilunar está insuficiente, o escafoide pode subluxar para dorsal; ao liberar a pressão, ele retorna com um ressalto. O teste depende da combinação entre direção do desvio e bloqueio do tubérculo, e não apenas de mexer o punho em qualquer plano.\n\nO achado é sugestivo, mas pouco específico: a fonte ressalta que punhos normais e frouxos também podem produzir resposta positiva. O resultado deve ser relacionado à história, à dor e aos demais exames. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar e cinemática do carpo.",
+      "correta": "Correta: D (desvio ulnar para desvio radial). É durante a necessidade de flexão do escafoide na chegada ao radial que a pressão no tubérculo provoca a subluxação dorsal. O retorno com ressalto ocorre com a liberação dessa pressão.",
+      "incorretas": {
+        "A": "Flexão para extensão é um movimento sagital do punho, mas não reproduz a sequência de desvios usada no Watson. A provocação exige impedir a flexão do escafoide que acompanha o desvio radial, e não simplesmente estender a mão.",
+        "B": "Extensão para flexão também descreve movimento global em outro plano. Apesar de a manobra envolver flexão do escafoide, ela é solicitada pelo desvio radial sob pressão no tubérculo, não por uma flexão livre do punho.",
+        "C": "Inverte o trajeto de provocação. Ao sair do radial para o ulnar, a fileira proximal tende à extensão; o Watson procura bloquear a flexão necessária no sentido oposto, de ulnar para radial, para provocar o deslocamento do escafoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Anatomia ligamentar e cinemática do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Anatomia ligamentar e cinemática do carpo"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-cade5531",
+          "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "8cce0668abfe790723bf7af45d86c63ae5df53946be79c818336e24495b77c19"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0587": {
+    "questaoSha256": "b482f612eb56aa2c733e1d1d61ca28805d3214cfa7ae0650b5c43f2fd64453e1",
+    "comentarioAnteriorSha256": "f2e5cee892bd0f98534663f78a903011d2ae92451445e9058cecabe741f21241",
+    "comentario": {
+      "conceito": "Na pseudartrose do escafoide, a continuidade mecânica do osso é perdida: o fragmento distal pode fletir, enquanto o proximal estende com o semilunar. O contato do fragmento distal fletido com a **estiloide radial** ajuda a explicar por que a artrose começa nessa interface.\n\nO colapso avançado da pseudartrose recebe a sigla SNAC. No estágio I, a degeneração é localizada entre estiloide radial e polo distal do escafoide. O resumo descreve a progressão para maior comprometimento da fossa escafoidea e depois para a capitossemilunar. Ressalta também que, no SNAC, a articulação do fragmento proximal com o rádio fica relativamente poupada, diferentemente de uma leitura simplificada de desgaste radioescafoide uniforme.\n\nReconhecer a superfície realmente comprometida importa para o salvamento: a fonte relaciona o estágio inicial à estiloidectomia e denervação parcial, enquanto a degeneração mediocárpica muda as opções. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de pseudartrose e Artrose do colapso: SNAC e SLAC.",
+      "correta": "Correta: D (processo estiloide do rádio). O estágio I começa no contato entre a estiloide e o polo distal do escafoide. A deformidade em flexão desse fragmento concentra o conflito local, em vez de produzir desde o começo desgaste de toda a superfície radial.",
+      "incorretas": {
+        "A": "O trapézio participa da mecânica que atua sobre o fragmento distal do escafoide, mas a fonte não o identifica como a superfície em que começa a artrose do SNAC. A força que deforma o osso e a interface que primeiro degenera são informações diferentes.",
+        "B": "O capitato integra a região mediocárpica, comprometida na progressão do colapso; o resumo identifica a artrose capitossemilunar no estágio III. Não é a interface inicial entre fragmento distal do escafoide e estiloide radial pedida para o estágio I.",
+        "C": "Falar em toda a fossa escafoidea do rádio amplia a lesão além do conflito localizado com a estiloide. No SNAC, o resumo ainda destaca a preservação relativa do contato do polo proximal com o rádio; por isso, não se deve substituir o ponto inicial específico por desgaste difuso dessa fossa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Artrose do colapso: SNAC e SLAC."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Artrose do colapso: SNAC e SLAC"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-2d0f6a61",
+          "artrose-do-colapso-snac-e-slac-a82703f6",
+          "artrose-do-colapso-snac-e-slac-db418f5b",
+          "artrose-do-colapso-snac-e-slac-118d45f0",
+          "artrose-do-colapso-snac-e-slac-75ec5c30"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "bae520f31df96e288d7788b029966ca4ded9206386edf9c5d172ec2fa12a7940"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

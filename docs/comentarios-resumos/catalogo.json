@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 608,
+  "pendente": 584,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 322,
+  "pendente-fonte": 328,
   "pendente-inspecao-imagem": 85,
-  "revisada": 1364
+  "revisada": 1388
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -102,9 +102,11 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 201,
+    "pendente": 171,
     "pendente-figura-ausente": 1,
-    "pendente-inspecao-imagem": 13
+    "pendente-fonte": 6,
+    "pendente-inspecao-imagem": 13,
+    "revisada": 24
    }
   },
   "rockwood10-45-fraturas-mao": {
@@ -112,12 +114,12 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 87,
+    "pendente": 91,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 18,
     "pendente-inspecao-imagem": 17,
-    "revisada": 101
+    "revisada": 103
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -11009,7 +11011,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11024,7 +11026,37 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "07902321abc2e054736cd7dd58a2bc9688708cf1a674e009469d00ef2d15e98a"
+   "questaoSha256": "07902321abc2e054736cd7dd58a2bc9688708cf1a674e009469d00ef2d15e98a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar",
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-1944a7ce",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "c8d6f10f07b9d142201df8a12d57671805444d1f3de09287ef421b7bc083934e"
+     }
+    ],
+    "questaoSha256": "07902321abc2e054736cd7dd58a2bc9688708cf1a674e009469d00ef2d15e98a",
+    "comentarioSha256": "57a7f25419a852b3b56ad5efa87f9c53c6e5f7c382a1329578f5708902c04327"
+   }
   },
   "mao-0018": {
    "tema": "mao",
@@ -11033,7 +11065,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11048,7 +11080,37 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "6a273df4298baf107dadd05bfe7d457a294a811e0444fe282a7c7780f9b551ac"
+   "questaoSha256": "6a273df4298baf107dadd05bfe7d457a294a811e0444fe282a7c7780f9b551ac",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+       "mayfield-e-a-luxacao-perilunar-3a52a44f",
+       "mayfield-e-a-luxacao-perilunar-a286746f",
+       "mayfield-e-a-luxacao-perilunar-9979fb84"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "31c499ffa53ccf164558ef8ebf7fea314fcda69af80bd0beb755535bb84374a2"
+     }
+    ],
+    "questaoSha256": "6a273df4298baf107dadd05bfe7d457a294a811e0444fe282a7c7780f9b551ac",
+    "comentarioSha256": "a37b31041f3fd5cbe411221278e537d2b4853a3c1bf7f3957d40fe358d60a375"
+   }
   },
   "mao-0028": {
    "tema": "mao",
@@ -11057,7 +11119,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11072,7 +11134,31 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "b946e415a41a94da7f0a2701d95260b7963212c47e70d33a700fd8c005ec95d0"
+   "questaoSha256": "b946e415a41a94da7f0a2701d95260b7963212c47e70d33a700fd8c005ec95d0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "55926929051f1460b8b3f768644a55090bb29cc5434b84ba8ef72b2e148c92d8"
+     }
+    ],
+    "questaoSha256": "b946e415a41a94da7f0a2701d95260b7963212c47e70d33a700fd8c005ec95d0",
+    "comentarioSha256": "f3c11a176ab685ba3980daf2368bfe9f27a8372d77a923f4416d3d50323e466b"
+   }
   },
   "mao-0049": {
    "tema": "mao",
@@ -11106,7 +11192,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11121,7 +11207,33 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "219f21d85e622545d2525afa3e040b33515b77533bc76eeeb15f34042d349293"
+   "questaoSha256": "219f21d85e622545d2525afa3e040b33515b77533bc76eeeb15f34042d349293",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
+       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+       "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
+       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "89190d7c3390915894797186e2555c3a24e9c28cd4d5c11b36fbd1ced8db15e3"
+     }
+    ],
+    "questaoSha256": "219f21d85e622545d2525afa3e040b33515b77533bc76eeeb15f34042d349293",
+    "comentarioSha256": "4458d21f683d66a4d94a1531e191c54509fad55c12f9c85425879ad929ae0c85"
+   }
   },
   "mao-0056": {
    "tema": "mao",
@@ -11130,7 +11242,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11145,7 +11257,34 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "53064e887fc844360b8280e5cbb65e9cf05f086ba023f8cd2fd30dfc7661bf0b"
+   "questaoSha256": "53064e887fc844360b8280e5cbb65e9cf05f086ba023f8cd2fd30dfc7661bf0b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
+     }
+    ],
+    "questaoSha256": "53064e887fc844360b8280e5cbb65e9cf05f086ba023f8cd2fd30dfc7661bf0b",
+    "comentarioSha256": "b25ec09533a00e18096da9280340c8bd5837fde31b5279ca2068b2d2cf752bc9"
+   }
   },
   "mao-0064": {
    "tema": "mao",
@@ -11220,7 +11359,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11235,7 +11374,35 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "f4e5d209ca6b385954b72da75c05ee31b9f570e3265423e5e700db713d501af0"
+   "questaoSha256": "f4e5d209ca6b385954b72da75c05ee31b9f570e3265423e5e700db713d501af0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar",
+       "Dissociação lunopiramidal",
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-cade5531",
+       "dissociacao-lunopiramidal-86b34ab3",
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "bee8cf9899fcf073ef836652146d2df0942a3ee8f3ad4eeef2623fe6f1eb68c1"
+     }
+    ],
+    "questaoSha256": "f4e5d209ca6b385954b72da75c05ee31b9f570e3265423e5e700db713d501af0",
+    "comentarioSha256": "031085a172f3fb0209ca297e919517c25f18826c91748278a9ab4a8928701acd"
+   }
   },
   "mao-0080": {
    "tema": "mao",
@@ -11244,7 +11411,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11259,7 +11426,38 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "b4edd5f070868d8393737dc4aad6325418e3023012848e73fc5a0eb742c5d3f8"
+   "questaoSha256": "b4edd5f070868d8393737dc4aad6325418e3023012848e73fc5a0eb742c5d3f8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+       "Dissociação lunopiramidal",
+       "Anatomia ligamentar e cinemática do carpo",
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+       "dissociacao-lunopiramidal-5eb7978d",
+       "anatomia-ligamentar-e-cinematica-do-carpo-09fa55ed",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "f7f13f45498747cfb43f9fad09d1be1ae4f2001418ebee92266bab1d459f1881"
+     }
+    ],
+    "questaoSha256": "b4edd5f070868d8393737dc4aad6325418e3023012848e73fc5a0eb742c5d3f8",
+    "comentarioSha256": "4f96961b01950c6f37a5486ab353253093428392cfbfbaaf8e8f524397788a47"
+   }
   },
   "mao-0101": {
    "tema": "mao",
@@ -11416,8 +11614,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo explica a ETT para estabilizar o escafoide e o salvamento nos estágios de artrose/colapso, mas não fundamenta todas as alternativas da contraindicação: falta estabelecer a indicação da ETT na artrose escafotrapeziotrapezoide e a relevância da metacarpofalangiana do polegar normal (D), além da indicação específica na pseudartrose do escafoide (A). Não basta inferir a alternativa C por exclusão ou usar o comentário antigo. Conferir fonte específica de indicações e contraindicações da artrodese ETT; comentário, questão e gabarito C preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -11431,7 +11629,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "8c79e4b4dbc1c599ec4923718076df4f333bd5d8eb507551d3c7bdf90cdad630"
+   "questaoSha256": "8c79e4b4dbc1c599ec4923718076df4f333bd5d8eb507551d3c7bdf90cdad630",
+   "pendencia": "O resumo explica a ETT para estabilizar o escafoide e o salvamento nos estágios de artrose/colapso, mas não fundamenta todas as alternativas da contraindicação: falta estabelecer a indicação da ETT na artrose escafotrapeziotrapezoide e a relevância da metacarpofalangiana do polegar normal (D), além da indicação específica na pseudartrose do escafoide (A). Não basta inferir a alternativa C por exclusão ou usar o comentário antigo. Conferir fonte específica de indicações e contraindicações da artrodese ETT; comentário, questão e gabarito C preservados, sem baseResumo."
   },
   "mao-0133": {
    "tema": "mao",
@@ -11525,8 +11724,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Falta no corpo independente do resumo o ângulo semilunopiramidal normal de 10–15 graus afirmado em B, gabarito oficial. A fonte permite rejeitar A (escafossemilunar normal 30–60, não 45–70), C (DISI acima de 60, não abaixo de 45) e D (VISI abaixo de 30, não acima de 70), mas isso não comprova a medida de outra articulação. Conferir referência radiográfica específica e convenção de medição semilunopiramidal; questão, gabarito e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -11540,7 +11739,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a51e3a62bf110750d1719fe2482c049a5f568115cf46103697b2e35962719fe4"
+   "questaoSha256": "a51e3a62bf110750d1719fe2482c049a5f568115cf46103697b2e35962719fe4",
+   "pendencia": "Falta no corpo independente do resumo o ângulo semilunopiramidal normal de 10–15 graus afirmado em B, gabarito oficial. A fonte permite rejeitar A (escafossemilunar normal 30–60, não 45–70), C (DISI acima de 60, não abaixo de 45) e D (VISI abaixo de 30, não acima de 70), mas isso não comprova a medida de outra articulação. Conferir referência radiográfica específica e convenção de medição semilunopiramidal; questão, gabarito e comentário preservados, sem baseResumo."
   },
   "mao-0143": {
    "tema": "mao",
@@ -11676,7 +11876,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11691,7 +11891,33 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "7101705d44d04595668d15bb07775f58eb101e9d18b4557bb6bf24bf020d3ecf"
+   "questaoSha256": "7101705d44d04595668d15bb07775f58eb101e9d18b4557bb6bf24bf020d3ecf",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-231a7265",
+       "mayfield-e-a-luxacao-perilunar-d991b46c",
+       "mayfield-e-a-luxacao-perilunar-69ef1e7a",
+       "mayfield-e-a-luxacao-perilunar-7a90dc33"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "cc811d94f9dc4140c4322e8890f22b14f7261a880b07003d5aed6df2137024df"
+     }
+    ],
+    "questaoSha256": "7101705d44d04595668d15bb07775f58eb101e9d18b4557bb6bf24bf020d3ecf",
+    "comentarioSha256": "2524c28547c4ac90323fd3c0f1af09a52beea81fc8ccabfefead1a90291c6df1"
+   }
   },
   "mao-0240": {
    "tema": "mao",
@@ -11700,7 +11926,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11715,7 +11941,35 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "61d89fd5a6d749273d27e68681fedebbf07af555a264936bee491cfd9be81132"
+   "questaoSha256": "61d89fd5a6d749273d27e68681fedebbf07af555a264936bee491cfd9be81132",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-614919e2",
+       "dissociacao-escafossemilunar-8935e6ce",
+       "dissociacao-escafossemilunar-65f85568",
+       "dissociacao-escafossemilunar-6cbb5bca",
+       "dissociacao-escafossemilunar-7503c999",
+       "dissociacao-escafossemilunar-2e41c596"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "b0cb736c2be44623c0445b3ef9acb8dc4b6f7b3f194d61a1439ec697eed833ea"
+     }
+    ],
+    "questaoSha256": "61d89fd5a6d749273d27e68681fedebbf07af555a264936bee491cfd9be81132",
+    "comentarioSha256": "c45e14a3b692d6ee328f1ad40a64c028497b305606472a9287eb6dbcc33c63f5"
+   }
   },
   "mao-0259": {
    "tema": "mao",
@@ -11724,8 +11978,8 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo do resumo define Dumontier I/II e Moneim I/II, mas não identifica os sistemas ou manobras Universal, Kapandji, Allis e Cotton, necessários à análise própria de A/C/D/E. A nota contextual da questão menciona alguns distratores, mas não serve como fonte independente. Falta fonte desses epônimos e suas aplicações; gabarito B, questão e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -11739,7 +11993,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "09792d8a464903340ce5d7dddfe3dae829a21d42dceb13afd72af41d4b689ce3"
+   "questaoSha256": "09792d8a464903340ce5d7dddfe3dae829a21d42dceb13afd72af41d4b689ce3",
+   "pendencia": "O corpo do resumo define Dumontier I/II e Moneim I/II, mas não identifica os sistemas ou manobras Universal, Kapandji, Allis e Cotton, necessários à análise própria de A/C/D/E. A nota contextual da questão menciona alguns distratores, mas não serve como fonte independente. Falta fonte desses epônimos e suas aplicações; gabarito B, questão e comentário preservados, sem baseResumo."
   },
   "mao-0269": {
    "tema": "mao",
@@ -11833,7 +12088,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -11848,7 +12103,34 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "d8968d5a4668f4b5363a805eb3b8b825319630ba093bae0c5cd8ec99cc7552c5"
+   "questaoSha256": "d8968d5a4668f4b5363a805eb3b8b825319630ba093bae0c5cd8ec99cc7552c5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
+     }
+    ],
+    "questaoSha256": "d8968d5a4668f4b5363a805eb3b8b825319630ba093bae0c5cd8ec99cc7552c5",
+    "comentarioSha256": "c8532d19fd28628bd636f57141b32ad4e72b6dd4f43a90de799df7f299b5b58c"
+   }
   },
   "mao-0304": {
    "tema": "mao",
@@ -11922,8 +12204,8 @@
    ],
    "prova": "TEOT",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo independente descreve baloteamento e cisalhamento lunopiramidais e Watson para escafoide, mas não associa essas manobras aos epônimos Masquelet (gabarito C), Linscheid e Kleinert-Latarjet. Não inventar a atribuição a partir da nota contextual ou comentário anterior. Falta fonte semiológica com esses epônimos e execução de cada teste; comentário, questão e gabarito preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -11937,7 +12219,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a98eecf4d6b3c6f34131fabb1434c1e96934cbfb4a0a00b618abb03b7006caf1"
+   "questaoSha256": "a98eecf4d6b3c6f34131fabb1434c1e96934cbfb4a0a00b618abb03b7006caf1",
+   "pendencia": "O corpo independente descreve baloteamento e cisalhamento lunopiramidais e Watson para escafoide, mas não associa essas manobras aos epônimos Masquelet (gabarito C), Linscheid e Kleinert-Latarjet. Não inventar a atribuição a partir da nota contextual ou comentário anterior. Falta fonte semiológica com esses epônimos e execução de cada teste; comentário, questão e gabarito preservados, sem baseResumo."
   },
   "mao-0328": {
    "tema": "mao",
@@ -12015,7 +12298,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12030,7 +12313,36 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "c39efb53102301ffa8c3189581f47dbb3ff770bf967df3d3977de94327092934"
+   "questaoSha256": "c39efb53102301ffa8c3189581f47dbb3ff770bf967df3d3977de94327092934",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Anatomia ligamentar e cinemática do carpo",
+       "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-485298b2",
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+       "anatomia-ligamentar-e-cinematica-do-carpo-9c28029e",
+       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "d5d581913530264e842caa19f07906948762fb3e7ebc7db7ef56f886fcc1f470"
+     }
+    ],
+    "questaoSha256": "c39efb53102301ffa8c3189581f47dbb3ff770bf967df3d3977de94327092934",
+    "comentarioSha256": "e0059e07cb8f2b679771a1b2b576f6351fe4e7bea4315b66efcb76848f0c2a73"
+   }
   },
   "mao-0354": {
    "tema": "mao",
@@ -12039,7 +12351,7 @@
    ],
    "prova": "CET-PR",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12054,7 +12366,36 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "d6671a795c2106267796f9c2e0e9976c439978528885778ebaad344c93e7fd43"
+   "questaoSha256": "d6671a795c2106267796f9c2e0e9976c439978528885778ebaad344c93e7fd43",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar",
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+       "dissociacao-escafossemilunar-4b14cd81"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "cce17099b6a404cc74c0cf642fec3df9f14f1eee1462150ca3f00de8150c5224"
+     }
+    ],
+    "questaoSha256": "d6671a795c2106267796f9c2e0e9976c439978528885778ebaad344c93e7fd43",
+    "comentarioSha256": "0ce8dcd35af2616f158a9f67a5315708f786eb029d02db3f2fb2409aad3ba970"
+   }
   },
   "mao-0432": {
    "tema": "mao",
@@ -12064,8 +12405,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A porção palmar mais grossa e forte do lunopiramidal está sustentada, assim como o contraste com o escafossemilunar dorsal. Porém falta descrição anatômica independente das porções proximal e distal desse ligamento para explicar individualmente B/D, especialmente a afirmação antiga de membrana proximal fina que perfura com a idade. Não transferir automaticamente a descrição do escafossemilunar para o lunopiramidal. Conferir anatomia segmentar primária; comentário e gabarito A preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12079,7 +12420,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "6ba89baef45c9bf0edc8e5fecfb390e07480ddc5249df8abd3036212077ce79a"
+   "questaoSha256": "6ba89baef45c9bf0edc8e5fecfb390e07480ddc5249df8abd3036212077ce79a",
+   "pendencia": "A porção palmar mais grossa e forte do lunopiramidal está sustentada, assim como o contraste com o escafossemilunar dorsal. Porém falta descrição anatômica independente das porções proximal e distal desse ligamento para explicar individualmente B/D, especialmente a afirmação antiga de membrana proximal fina que perfura com a idade. Não transferir automaticamente a descrição do escafossemilunar para o lunopiramidal. Conferir anatomia segmentar primária; comentário e gabarito A preservados, sem baseResumo."
   },
   "mao-0440": {
    "tema": "mao",
@@ -12104,7 +12446,7 @@
    ],
    "prova": "Einstein",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12119,7 +12461,33 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "388b87238bca71190205f342227352617b40b91224ca67ad8925c100fadf8087"
+   "questaoSha256": "388b87238bca71190205f342227352617b40b91224ca67ad8925c100fadf8087",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-4fb44d8e",
+       "dissociacao-escafossemilunar-614919e2",
+       "dissociacao-escafossemilunar-8935e6ce",
+       "dissociacao-escafossemilunar-65f85568"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "b65b7c28b82fd3be6f22eff0d28ccbfe2f01dcba18589744877bbc3d891b9d70"
+     }
+    ],
+    "questaoSha256": "388b87238bca71190205f342227352617b40b91224ca67ad8925c100fadf8087",
+    "comentarioSha256": "452c25af9679163eb825ba6b964b40b1617fdc42ee4964262b1a9b1e86a94fa5"
+   }
   },
   "mao-0449": {
    "tema": "mao",
@@ -12128,8 +12496,8 @@
    ],
    "prova": "Einstein",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo dá frequências dos padrões vasculares do semilunar (Y 59%, I 30%, X 10%) e proporção de entrada por uma ou duas faces, mas não compara o risco de osteonecrose por padrão I versus Y. Frequência anatômica não demonstra risco. Também faltam definições de Zapico II/III para C/D. Conferir fonte vascular/prognóstica e classificação de Zapico; questão, gabarito A e comentário preservados, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -12143,7 +12511,8 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "06bf0cf1da66020aec51a7c45a7f29103db08d8dff7719799951e46aa296085b"
+   "questaoSha256": "06bf0cf1da66020aec51a7c45a7f29103db08d8dff7719799951e46aa296085b",
+   "pendencia": "O resumo dá frequências dos padrões vasculares do semilunar (Y 59%, I 30%, X 10%) e proporção de entrada por uma ou duas faces, mas não compara o risco de osteonecrose por padrão I versus Y. Frequência anatômica não demonstra risco. Também faltam definições de Zapico II/III para C/D. Conferir fonte vascular/prognóstica e classificação de Zapico; questão, gabarito A e comentário preservados, sem baseResumo."
   },
   "mao-0463": {
    "tema": "mao",
@@ -12224,7 +12593,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12239,7 +12608,31 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "8b0d46d0cb9ed874a325bc5fd5a6a07a72b465dd89080abcdb76625de59ca399"
+   "questaoSha256": "8b0d46d0cb9ed874a325bc5fd5a6a07a72b465dd89080abcdb76625de59ca399",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "anatomia-ligamentar-e-cinematica-do-carpo-ac6a12e3",
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "b319aceb68cc17f1cb133133a2580e1d9288973dcff43c7fd9aadc8bad20cfa5"
+     }
+    ],
+    "questaoSha256": "8b0d46d0cb9ed874a325bc5fd5a6a07a72b465dd89080abcdb76625de59ca399",
+    "comentarioSha256": "42de0a0fff6811038f4c435bea2699d5d1cf50568a50bc6a13e4b369b49542be"
+   }
   },
   "mao-0499": {
    "tema": "mao",
@@ -12248,7 +12641,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12264,7 +12657,34 @@
     "rockwood10-44-carpo",
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "2e0606626d79b3795acac78e2c476a40e9fdec4fe504a461c3dc2116f6738f62"
+   "questaoSha256": "2e0606626d79b3795acac78e2c476a40e9fdec4fe504a461c3dc2116f6738f62",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-3a52a44f",
+       "mayfield-e-a-luxacao-perilunar-05a279d4",
+       "mayfield-e-a-luxacao-perilunar-45f502a1",
+       "mayfield-e-a-luxacao-perilunar-198892b5",
+       "mayfield-e-a-luxacao-perilunar-dae12b7d"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "33dc4b5f30cfb1985ac59582d997d506382074771039d94c321e74a48d342112"
+     }
+    ],
+    "questaoSha256": "2e0606626d79b3795acac78e2c476a40e9fdec4fe504a461c3dc2116f6738f62",
+    "comentarioSha256": "452e935d6e007d30d99fa54d07ec2a82bc0a81e4ab6581cf79bf1ed9cc531d7e"
+   }
   },
   "mao-0512": {
    "tema": "mao",
@@ -12321,7 +12741,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12336,7 +12756,32 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "aba5fcf283afc18a9bc5e6c221d53dfb2f71ef42c6f5530e85f27b8b2fdc3f0e"
+   "questaoSha256": "aba5fcf283afc18a9bc5e6c221d53dfb2f71ef42c6f5530e85f27b8b2fdc3f0e",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar",
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-cade5531",
+       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "8cce0668abfe790723bf7af45d86c63ae5df53946be79c818336e24495b77c19"
+     }
+    ],
+    "questaoSha256": "aba5fcf283afc18a9bc5e6c221d53dfb2f71ef42c6f5530e85f27b8b2fdc3f0e",
+    "comentarioSha256": "42b5dafef93d88e19cb996ee76264d3a59ec37c563bd62020235e016687b2c3c"
+   }
   },
   "mao-0526": {
    "tema": "mao",
@@ -12553,7 +12998,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12568,7 +13013,36 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "b482f612eb56aa2c733e1d1d61ca28805d3214cfa7ae0650b5c43f2fd64453e1"
+   "questaoSha256": "b482f612eb56aa2c733e1d1d61ca28805d3214cfa7ae0650b5c43f2fd64453e1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: consolidação viciosa e pseudartrose",
+       "Artrose do colapso: SNAC e SLAC"
+      ],
+      "blocos": [
+       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-2d0f6a61",
+       "artrose-do-colapso-snac-e-slac-a82703f6",
+       "artrose-do-colapso-snac-e-slac-db418f5b",
+       "artrose-do-colapso-snac-e-slac-118d45f0",
+       "artrose-do-colapso-snac-e-slac-75ec5c30"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "bae520f31df96e288d7788b029966ca4ded9206386edf9c5d172ec2fa12a7940"
+     }
+    ],
+    "questaoSha256": "b482f612eb56aa2c733e1d1d61ca28805d3214cfa7ae0650b5c43f2fd64453e1",
+    "comentarioSha256": "bab48af97a022a1f4dc4730b5d9e26d4c6319897f13ada62e1cbc6d5bcf2f7f6"
+   }
   },
   "mao-0588": {
    "tema": "mao",
@@ -12577,7 +13051,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12592,7 +13066,31 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "d961da0679a9c7d58d69cdf3803b94f6d417491ee4b54e73b726bc06a7caaf20"
+   "questaoSha256": "d961da0679a9c7d58d69cdf3803b94f6d417491ee4b54e73b726bc06a7caaf20",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "anatomia-ligamentar-e-cinematica-do-carpo-ac6a12e3",
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "b319aceb68cc17f1cb133133a2580e1d9288973dcff43c7fd9aadc8bad20cfa5"
+     }
+    ],
+    "questaoSha256": "d961da0679a9c7d58d69cdf3803b94f6d417491ee4b54e73b726bc06a7caaf20",
+    "comentarioSha256": "b9457439ccc4c858ef19c4578d95306bd13df820171872a3b92265b164728ae1"
+   }
   },
   "mao-0589": {
    "tema": "mao",
@@ -12625,7 +13123,7 @@
    ],
    "prova": "TARO",
    "ano": 2013,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -12640,7 +13138,34 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "4fd2312a1eb17cd751dbe9a2887329d3a2cdbca97884e48cea4653679ce728a6"
+   "questaoSha256": "4fd2312a1eb17cd751dbe9a2887329d3a2cdbca97884e48cea4653679ce728a6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
+     }
+    ],
+    "questaoSha256": "4fd2312a1eb17cd751dbe9a2887329d3a2cdbca97884e48cea4653679ce728a6",
+    "comentarioSha256": "7549bc34b26fad2b868872e598e09088d83023d461d5c567df190157ed4200bc"
+   }
   },
   "mao-0592": {
    "tema": "mao",
@@ -14087,7 +14612,7 @@
    ],
    "prova": "INTO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -14102,7 +14627,34 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "1797cb406b3c62447d66f9c67c7ffea5f1c1b213045e1ad5e62bd4043dc998d5"
+   "questaoSha256": "1797cb406b3c62447d66f9c67c7ffea5f1c1b213045e1ad5e62bd4043dc998d5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-614919e2",
+       "dissociacao-escafossemilunar-8935e6ce",
+       "dissociacao-escafossemilunar-f6a7a76b",
+       "dissociacao-escafossemilunar-7503c999",
+       "dissociacao-escafossemilunar-2e41c596"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "ef5783173ee18504e6f3485ff008c3497b54bcd517a36fd73974bb49ca0fd5af"
+     }
+    ],
+    "questaoSha256": "1797cb406b3c62447d66f9c67c7ffea5f1c1b213045e1ad5e62bd4043dc998d5",
+    "comentarioSha256": "824ea432fc554a0617d125b3847004dd4f570e6f5966698f96c2a123603d6f68"
+   }
   },
   "mao-0781": {
    "tema": "mao",
@@ -15314,7 +15866,7 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15329,7 +15881,31 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "29e75cf1ef58b32995a0066bb9766168948308423f939e940a94966adefb3f9d"
+   "questaoSha256": "29e75cf1ef58b32995a0066bb9766168948308423f939e940a94966adefb3f9d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Anatomia ligamentar e cinemática do carpo"
+      ],
+      "blocos": [
+       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "55926929051f1460b8b3f768644a55090bb29cc5434b84ba8ef72b2e148c92d8"
+     }
+    ],
+    "questaoSha256": "29e75cf1ef58b32995a0066bb9766168948308423f939e940a94966adefb3f9d",
+    "comentarioSha256": "d6dce68f5e4677e9ffdd94d45a025563bcc217e6e9a5dacf3823324f064dfee8"
+   }
   },
   "mao-0992": {
    "tema": "mao",
@@ -15512,7 +16088,7 @@
    ],
    "prova": "UFG",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15528,7 +16104,34 @@
     "rockwood10-44-carpo",
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "9ac45dd468d5baceda7dd8f983b74dd78a672957feae066eba899eb6e8860982"
+   "questaoSha256": "9ac45dd468d5baceda7dd8f983b74dd78a672957feae066eba899eb6e8860982",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
+     }
+    ],
+    "questaoSha256": "9ac45dd468d5baceda7dd8f983b74dd78a672957feae066eba899eb6e8860982",
+    "comentarioSha256": "3a4ffaf687b674694dd9089f817aa1c8d33b60cdb7f25d322a9ae9411ff0459d"
+   }
   },
   "mao-1001": {
    "tema": "mao",
@@ -15934,7 +16537,7 @@
    ],
    "prova": "UFG",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15949,7 +16552,38 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "51b671deaba5cae91e6b7a0ae2ddc2f5c3f2e770db18ca8c5b412b85e4f90525"
+   "questaoSha256": "51b671deaba5cae91e6b7a0ae2ddc2f5c3f2e770db18ca8c5b412b85e4f90525",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+       "Dissociação lunopiramidal",
+       "Escafoide: consolidação viciosa e pseudartrose",
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+       "dissociacao-lunopiramidal-5eb7978d",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+       "dissociacao-escafossemilunar-1f9a739d"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "95fcf4730bcca4aaae8498d9b8b8c99d46cca3e50b4f249279ff22351dcb076a"
+     }
+    ],
+    "questaoSha256": "51b671deaba5cae91e6b7a0ae2ddc2f5c3f2e770db18ca8c5b412b85e4f90525",
+    "comentarioSha256": "aec881da1bb91cc5ef38fb6ade683f58ed3efd23faf2afee6e6795f41489c65c"
+   }
   },
   "mao-1037": {
    "tema": "mao",
@@ -15958,7 +16592,7 @@
    ],
    "prova": "UFG",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -15973,7 +16607,34 @@
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "25f461292574741d4015b207085ee226bffcf9821ecfe33392087f05a3a44b54"
+   "questaoSha256": "25f461292574741d4015b207085ee226bffcf9821ecfe33392087f05a3a44b54",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "mayfield-e-a-luxacao-perilunar-501fc79c",
+       "mayfield-e-a-luxacao-perilunar-c96b9191",
+       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+       "mayfield-e-a-luxacao-perilunar-07798063",
+       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
+     }
+    ],
+    "questaoSha256": "25f461292574741d4015b207085ee226bffcf9821ecfe33392087f05a3a44b54",
+    "comentarioSha256": "48b001c196b6a3b1f4c53399b9beab18d57dfd4cc2338c8a1371e9bd55a240e0"
+   }
   },
   "mao-1038": {
    "tema": "mao",
@@ -23389,6 +24050,103 @@
     "rockwood10-45-fraturas-mao"
    ],
    "questaoSha256": "5a7c6e53acd6d9d6eda68df97f0c01e249461f28f3b12d2ced8a4762fd4dffc5"
+  },
+  "mao-2333": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "0db3f9b03773751b0934d4078270aaec1ebeb5acd9fe8c735fbe6bd5fdb20b58"
+  },
+  "mao-2334": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "3cdec50bb2dc15409f69f05c21b25cd5e1995c14299b1e8366f21994d74a64d1"
+  },
+  "mao-2338": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "f45930cf800ce958155cb59f9b712a7f8ee384c622152fe7f763aedb62273580"
+  },
+  "mao-2339": {
+   "tema": "mao",
+   "subtemas": [
+    "Lesões ligamentares dos dedos"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "7d02bcaa5fc05b9d0eaca929f5e90d1f4cb481889d7fa39bc1fe5dd59b856518"
+  },
+  "mao-2347": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "645b581d52069e32ca4a4946aee7853580ff138766184c5e0ccc362a9264d280"
+  },
+  "mao-2354": {
+   "tema": "mao",
+   "subtemas": [
+    "Infecções da mão",
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "7bc1822c1804b630ad6f7e51db025c7069afd71594ee672aecc2a2cb02381508"
   },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
