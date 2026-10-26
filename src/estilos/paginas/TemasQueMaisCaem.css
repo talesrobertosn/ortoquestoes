@@ -235,3 +235,42 @@ span.tq-acao { cursor: default; }
 .tq-mais { justify-self: start; margin: 0; }
 .tq-barra, .tq-acao, .tq-alternar, .tq-tabela__area { touch-action: manipulation; }
 .tq-barra:focus-visible, .tq-acao:focus-visible, .tq-alternar:focus-visible, .tq-tabela__area:focus-visible, .tq-proximo__cartao:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+
+/* ---------- Escolha da prova (27/10/2026): ortopedia e Cirurgia da Mão, cada uma com o seu ranking ---------- */
+.tq-provas { display: flex; flex-wrap: wrap; gap: var(--e-3) var(--e-5); margin-bottom: var(--e-4); padding: var(--e-3) var(--e-4); border: var(--tq-borda, 2px solid var(--px-borda)); background: var(--superficie); box-shadow: 4px 4px 0 var(--px-sombra); }
+.tq-provas__grupo { display: grid; gap: 0.35rem; min-width: 0; }
+.tq-provas__rotulo { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--texto-2); }
+.tq-provas__opcoes { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.tq-provas button, .tq-fontes button { min-height: 2.5rem; padding: 0 0.95rem; border: 2px solid var(--px-borda); background: var(--superficie); color: var(--texto); font: inherit; font-weight: 700; cursor: pointer; box-shadow: 2px 2px 0 var(--px-sombra); transition: transform 0.12s ease; }
+.tq-provas button:hover, .tq-fontes button:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--px-sombra); }
+.tq-provas button[aria-pressed="true"] { background: var(--verdete); border-color: var(--verdete); color: #fff; }
+@media (max-width: 40rem) {
+  .tq-provas { padding: var(--e-3); gap: var(--e-3); }
+  .tq-provas__opcoes { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--e-3)); padding: 0 var(--e-3) 4px; }
+  .tq-provas button { flex: none; white-space: nowrap; }
+}
+.tq-fontes { display: flex; flex-wrap: wrap; align-content: center; gap: 0.35rem; }
+.tq-fontes button { min-height: 2.2rem; padding: 0 0.75rem; background: rgba(6, 30, 27, 0.55); border-color: rgba(255, 255, 255, 0.18); color: var(--sobre-heroi); box-shadow: none; font-weight: 650; }
+.tq-fontes button[aria-pressed="true"] { background: var(--px-ouro); border-color: var(--px-ouro); color: #08201d; }
+
+.tq-mod .tq-foco { grid-template-columns: 2.2rem minmax(0, 1fr) auto; }
+.tq-mod .tq-foco__marca { width: auto; color: var(--texto-2); font-size: var(--meta); font-weight: 800; }
+.tq-mod .tq-foco--feito .tq-foco__marca { color: var(--acerto); }
+.tq-foco--fechado strong { color: var(--texto-2); display: inline-flex; align-items: center; gap: 0.3rem; }
+.tq-tendencia { display: inline-block; margin-left: 0.45rem; padding: 0.05rem 0.45rem; border-radius: 999px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.03em; vertical-align: 0.1em; }
+.tq-tendencia--alta { background: color-mix(in srgb, var(--px-ouro) 35%, transparent); color: #6b4a00; }
+.tq-tendencia--baixa { background: var(--superficie-2); color: var(--texto-2); }
+.tq-link { padding: 0; border: 0; background: none; color: var(--verdete); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+
+.tq-sugestao { padding: var(--e-4); border: 2px solid var(--px-borda); background: var(--superficie); box-shadow: 5px 5px 0 var(--px-sombra); }
+.tq-sugestao__lista { list-style: none; margin: var(--e-3) 0 0; padding: 0; display: grid; gap: 0.5rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); counter-reset: sug; }
+.tq-sugestao__lista li { counter-increment: sug; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "n a" "s a"; align-items: center; gap: 0.15rem 0.6rem; padding: 0.75rem 0.85rem 0.75rem 2.6rem; border: 1px solid var(--traco); background: color-mix(in srgb, var(--verdete) 5%, var(--superficie)); }
+.tq-sugestao__lista li::before { content: counter(sug); position: absolute; left: 0.75rem; top: 0.8rem; display: grid; place-items: center; width: 1.35rem; height: 1.35rem; background: var(--verdete); color: #fff; font-size: 0.75rem; font-weight: 800; }
+.tq-sugestao__lista strong { grid-area: n; line-height: 1.25; }
+.tq-sugestao__lista small { grid-area: s; color: var(--texto-2); }
+.tq-sugestao__lista .tq-acao { grid-area: a; }
+
+.tq-metodo { padding: var(--e-3) var(--e-4); border: 1px dashed var(--traco-forte, var(--traco)); background: var(--superficie); }
+.tq-metodo summary { cursor: pointer; font-weight: 800; }
+.tq-metodo ul { margin: var(--e-2) 0 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; line-height: 1.55; color: var(--texto-2); }
+.tq-metodo b { color: var(--texto); }
