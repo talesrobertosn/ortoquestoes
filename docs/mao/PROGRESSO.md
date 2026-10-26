@@ -679,6 +679,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
+| 1 | Diagnósticos que imitam o túnel cubital | reformulada | 28 | Neuropatia ulnar | 08 | mao-2313 | aplicada |
 | 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
 | 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
 | 5 | FOWLER: indicação no martelo crônico | conduta | cap. 5, p. 196 e 197 | mao / Lesões dos tendões extensores | 05 | mao-2298 | publicada |
@@ -702,6 +703,8 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 45 | Martelo tendíneo: a partir dos 11 anos | número | cap. 5, p. 191 | mao / Lesões dos tendões extensores | 05 | mao-2301 | publicada |
 | 46 | FOWLER: técnica (até 35 graus) | técnica | cap. 5, p. 196 e 197 (Fig. 5.19) | mao / Lesões dos tendões extensores | 05 | mao-2299 | publicada (original sem resposta defensável; refeita com resposta única) |
 | 47 | FERNANDEZ radioulnar distal tipo III | classificação | cap. 15, p. 648 | mao / Fratura do rádio distal | 07 | mao-2312 | publicada |
+| 48 | Músculo de GANTZER | reformulada | 28 | Neuropatia ulnar | 08 | mao-2314 | aplicada |
+| 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | aplicada |
 | 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
 | 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
 | 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
@@ -710,7 +713,9 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
 | 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
 | 82 | CURTIS: retinaculares transversos para as bandas laterais subirem | técnica | cap. 5, p. 202 e 203 (Fig. 5.26) | mao / Lesões dos tendões extensores | 06 | mao-2303 | publicada |
+| 83 | Posição do gesso no rádio distal | reformulada | 15 | Rádio distal | 08 | mao-2317 | aplicada |
 | 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
+| 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | aplicada |
 | 90 | Macrodactilia: histologia (menos glândulas sudoríparas) | fato | cap. 36, p. 1438 e 1439 | mao / Outras malformações congênitas | 01 | mao-2282 | publicada |
 | 93 | Fise em C (braquete epifisário longitudinal): clinodactilia | fato/imagem | cap. 36, p. 1433 | mao / Deformidades dos dedos | 02 | mao-2283 | publicada |
 | 98 | MADELUNG: resultados das osteotomias | afirmativas | cap. 38, p. 1503, 1506 e 1509 | mao / Outras malformações congênitas | 02 | mao-2287 | publicada |
