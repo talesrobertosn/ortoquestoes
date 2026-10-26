@@ -13429,16 +13429,45 @@
   "conferido": false
  },
  "trauma-0723": {
+  "conceito": "O enunciado informa que a fratura é exposta e causada por arma de fogo, mas não descreve a ferida, a energia transferida nem a cobertura óssea. **Isso não basta para definir o subtipo IIIB.** A letra D é o gabarito oficial preservado; o ponto clínico a aprender é que o instrumento causador não substitui a avaliação das partes moles.\n\nA classificação de Gustilo organiza informações diferentes. No tipo I, a ferida é limpa, menor que 1 cm e de baixa energia. No II, mede de 1 a 10 cm, sem dano extenso de partes moles nem padrão de alta energia. No III, a lesão supera esses critérios: uma ferida maior que 10 cm ou um padrão de alta energia pode colocá-la nesse grupo. Uma fratura segmentar de alta energia, por exemplo, pode ser IIIA mesmo com uma ferida pequena. Portanto, medir o orifício isoladamente também não resolve a classificação (Rockwood, 10ª ed., cap. 63, “TSCHERNE, GUSTILO e OTA-OFC”).\n\n**Dentro do tipo III, a cobertura faz a diferença.** No IIIA, o defeito ainda pode ser fechado por sutura ou enxerto. No IIIB, é necessário um retalho muscular ou cutâneo para cobrir o osso. O IIIC, que não aparece nas opções, exige reparo vascular para revascularizar a perna; uma lesão arterial isolada com pé bem perfundido não basta para esse rótulo. Cada subtipo descreve uma necessidade diferente da reconstrução, e não apenas uma ferida progressivamente maior.\n\nO próprio resumo comenta que fraturas por projéteis de baixa energia chegaram a ser tratadas como fechadas, mas apresentaram mais infecção e pseudartrose que o esperado. Esse dado pede atenção à ferida e ao tratamento; não autoriza classificar toda lesão por projétil como IIIB, nem afirmar que toda lesão de baixa energia seja automaticamente I ou II (cap. 63, “Haste na exposta”).\n\nNa prática, seria necessário conhecer o dano das partes moles e a possibilidade de cobertura após a avaliação da ferida. Se um retalho for necessário, IIIB torna-se uma classificação sustentada. Sem esse dado, permanece a insuficiência do enunciado, que deve ser lembrada junto da resposta histórica da banca.",
+  "correta": "**D: IIIB, conforme o gabarito oficial.** Esse subtipo se aplica quando a cobertura exige retalho muscular ou cutâneo. O enunciado não informa essa necessidade, portanto a alternativa foi preservada como resposta da banca, com ressalva explícita, sem ensinar que “arma de fogo” seja sinônimo de IIIB.",
   "incorretas": {
-   "A": "**Subestima.** O tipo I exige baixa energia e ferida limpa pequena; a banca considerou o dano do projétil maior.",
-   "B": "**Subestima.** O tipo II não contempla a alta energia e a cavitação atribuídas ao projétil.",
-   "C": "**Subtipo diferente.** O IIIA tem cobertura adequada com partes moles locais; a banca optou pelo IIIB."
+   "A": "**Tipo I depende de baixa energia e ferida limpa menor que 1 cm.** O enunciado não fornece esses critérios. Também não permite excluir o tipo I apenas pelo nome do instrumento: é preciso avaliar a lesão real, em vez de pressupor que todo projétil produza o mesmo dano.",
+   "B": "**Tipo II exige ferida de 1 a 10 cm sem dano extenso de partes moles nem padrão de alta energia.** Não há descrição suficiente para reconhecer ou descartar essa combinação. O tamanho do orifício, se fosse conhecido, ainda precisaria ser interpretado junto da energia e do envelope de partes moles.",
+   "C": "**IIIA pode representar uma lesão importante que conserva possibilidade de cobertura por sutura ou enxerto.** Uma fratura segmentar de alta energia pode pertencer a esse grupo qualquer que seja o tamanho da ferida. A distinção para IIIB é a necessidade de retalho, que não foi descrita; por isso a palavra projétil, sozinha, não afasta IIIA."
   },
-  "alerta": "Na descrição de Gustilo e Anderson, os ferimentos por projétil de alta velocidade são classificados como tipo III independentemente do tamanho da ferida, enquanto os de baixa velocidade costumam ser tratados como tipo I ou II. O gabarito (IIIB) foi mantido, mas o subtipo depende da cobertura de partes moles após o desbridamento.",
-  "conceito": "**A classificação de Gustilo e Anderson.** Gradua a **fratura exposta** pela **ferida**, pela **energia**, pelo **dano de partes moles** e pela **contaminação**. **Tipo I**: ferida limpa, **menor que 1 cm**, baixa energia. **Tipo II**: ferida de **1 a 10 cm**, sem grande dano de partes moles. **Tipo III**: ferida **maior que 10 cm** ou **alta energia**, com dano extenso, **independentemente do tamanho** da ferida quando há alta energia, contaminação agrícola, **projétil de alta velocidade**, fratura segmentar ou cominutiva, ou exposição há mais de 8 horas. **IIIA**: cobertura óssea adequada com partes moles locais. **IIIB**: **perda de partes moles** com exposição óssea, exigindo **retalho** para cobrir. **IIIC**: **lesão arterial** que exige reparo.\n\n**E o projétil?** A energia transferida depende da **velocidade**. Projéteis de **alta velocidade** (fuzis) criam **cavitação** e destruição muito além do orifício, e são tipo **III** por definição. Para a banca, a fratura exposta por arma de fogo foi classificada como **IIIB**, pelo dano de partes moles que costuma exigir cobertura. Os projéteis de **baixa velocidade** (armas de mão), com orifícios pequenos, costumam ser tratados como fraturas tipo I ou II, com limpeza local e antibiótico.\n\n**Classificar depois do desbridamento.** A classificação definitiva é feita **no centro cirúrgico**, após o desbridamento, quando se vê o real dano. A concordância entre observadores é apenas moderada.\n\n**O que ela orienta.** **Antibiótico** precoce (idealmente na primeira hora): cefalosporina de primeira geração para I e II; para III, acrescenta-se cobertura para gram-negativos (aminoglicosídeo), e penicilina em contaminação agrícola (clostrídio), conforme os protocolos. **Desbridamento** urgente, **estabilização** e **cobertura** definitiva em até 7 dias. Taxas de infecção e amputação sobem do tipo I ao IIIC.\n\n**Na prova:** fratura exposta por **projétil**: para a banca, **IIIB**; alta velocidade = tipo III por definição; baixa velocidade costuma ser tratada como I ou II.",
-  "correta": "**IIIB.** Para a banca, a fratura exposta por arma de fogo é tipo IIIB, pelo dano de partes moles que supera o aspecto da ferida e costuma exigir cobertura.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Classificação: AO 42 e as partes moles; Exposta da diáfise da tíbia: haste, placa, fixador e amputação."
+  ],
+  "conferido": false,
+  "alerta": "Gabarito oficial D (IIIB) preservado. O resumo consultado define IIIB pela necessidade de retalho, mas o enunciado informa apenas fratura exposta por arma de fogo. Sem descrição da energia, partes moles e cobertura, não se determina esse subtipo. Não interpretar a letra da banca como regra universal para ferimentos por projétil; o próprio resumo distingue lesões de baixa energia.",
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-63-diafise-tibia",
+     "titulo": "Fratura da diáfise da tíbia e da fíbula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+     "secoes": [
+      "Classificação: AO 42 e as partes moles",
+      "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+     ],
+     "blocos": [
+      "classificacao-ao-42-e-as-partes-moles-9e144c48",
+      "classificacao-ao-42-e-as-partes-moles-6a238635",
+      "exposta-da-diafise-da-tibia-haste-placa-fixador--d1c3ef4c"
+     ],
+     "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+     "trechosSha256": "b8321589119054604b426e5b9d84634f81a03d1d26d21fee3c406dd7773bda6b"
+    }
+   ],
+   "questaoSha256": "1493f05c038165cfbebec38fd2e645b5c5eccc0a82280e8462e44b5bb0460754",
+   "comentarioSha256": "556e61a6df0dc02c8c0e5f08981a4a6085f43e9c1b018d7bfa1f20fddd2eb875"
+  }
  },
  "trauma-0724": {
   "conceito": "No trauma torácico e lombar, a **tomografia** é o exame inicial de escolha para caracterizar a fratura. Ela mostra corpo, pedículos, lâminas e facetas, além de cominuição e invasão do canal. O capítulo descreve a TC como exame que substituiu a radiografia na triagem do trauma de alta energia.\n\nA ressonância acrescenta informações sobre medula, ligamentos, discos e partes moles. É particularmente útil diante de déficit ou piora neurológica, mas **complementa a TC**, em vez de substituí-la rotineiramente. Para o complexo posterior, sua sensibilidade vem acompanhada de menor especificidade e risco de superestimar a lesão (resumo do Rockwood, 10ª ed., cap. 49, “Imagem: radiografia, tomografia e ressonância”).\n\nA radiografia continua útil, especialmente em pé no acompanhamento e na avaliação do alinhamento sob carga. Ter uma função importante não a torna o exame de escolha para a investigação inicial pedida. No politrauma, o rastreio de toda a coluna também importa porque podem existir fraturas não contíguas.\n\nO resumo da Biblioteca compara o que cada modalidade responde e suas limitações.",
@@ -24005,20 +24034,49 @@
   "conferido": false
  },
  "trauma-1195": {
-  "conceito": "**Fraturas do planalto tibial e a coluna posterolateral.** A classificação de Schatzker descreve seis tipos (I a III no planalto lateral; IV no medial; V bicondilar; VI com dissociação metafisária). O conceito das **três colunas** (Luo) acrescentou a importância da **coluna posterior**, especialmente a posterolateral, que não é bem acessada pela via anterolateral clássica.\n\n**Tipo IV de Schatzker.** Fratura do planalto **medial**, por mecanismo de varo e alta energia; frequentemente associada a lesões ligamentares e a fraturas-luxações, com risco de lesão vascular e do nervo fibular. Pode haver fragmentos posteriores, inclusive posterolaterais.\n\n**Acesso posterolateral (Lobenhoffer e variantes).**\n- Paciente em decúbito ventral ou lateral.\n- Incisão posterolateral; identificação e proteção do **nervo fibular comum**, que passa medialmente ao tendão do **bíceps femoral**.\n- Intervalo entre a **cabeça lateral do gastrocnêmio** (medialmente) e o **bíceps femoral** (lateralmente), afastando o gastrocnêmio para medial e protegendo o fibular para lateral.\n- Desinserção parcial do sóleo e exposição da superfície posterolateral da tíbia; atenção à artéria tibial anterior, que atravessa a membrana interóssea abaixo.\n\n**Alternativas.** Osteotomia da fíbula (acesso transfibular) ou da epífise lateral (Frosch, com janela posterior ao ligamento colateral lateral) para fragmentos posterolaterais.\n\n> Acesso posterolateral do planalto tibial: entre a cabeça lateral do gastrocnêmio e o bíceps, protegendo o nervo fibular.",
-  "correta": "**B: o gastrocnêmico lateral e o bíceps.** O acesso posterolateral ao planalto tibial usa o intervalo entre a cabeça lateral do gastrocnêmio e o tendão do bíceps femoral, com identificação e proteção do nervo fibular comum. Permite tratar fragmentos posterolaterais que não são alcançados pela via anterolateral.",
+  "conceito": "O problema operatório deste caso é alcançar um fragmento que ficou atrás do planalto lateral. Chamar a fratura de **Schatzker IV** informa que há comprometimento do planalto medial, mas não descreve todos os fragmentos posteriores. A tomografia e a orientação de cada traço continuam necessárias: uma classificação feita principalmente pela radiografia anteroposterior não garante que a via da frente permita reduzir e apoiar uma coluna posterior (Rockwood, 10ª ed., cap. 62, “Classificação de SCHATZKER” e “As três colunas de LUO”).\n\nImagine agora a região por trás e pelo lado de fora do joelho. A **cabeça lateral do gastrocnêmio e o bíceps femoral** delimitam a janela muscular superficial procurada na questão. O nervo fibular comum passa sob a borda medial do bíceps e depois contorna o colo da fíbula. Portanto, reconhecer o bíceps não serve apenas para nomear a alternativa: ajuda a localizar a estrutura nervosa que precisa ser identificada e protegida durante o acesso. O nervo é uma referência de risco, não um substituto para o músculo ao descrever o intervalo.\n\n**A janela de entrada não é toda a dissecção.** Na via em L invertido descrita no resumo, o braço vertical acompanha a borda lateral do gastrocnêmio. Em profundidade, desenvolve-se o plano entre gastrocnêmio lateral e sóleo; o gastrocnêmio e o feixe poplíteo são levados para medial, e fibras do sóleo são liberadas da fíbula. Isso explica por que uma pergunta sobre o intervalo superficial pode ter bíceps na resposta, enquanto a descrição dos passos profundos menciona sóleo. São níveis diferentes do mesmo acesso, não duas respostas concorrentes (cap. 62, “As vias posteriores e posterolaterais”).\n\nA dissecção também tem um limite vascular importante. Abaixo do sóleo, distal ao colo da fíbula, a abertura na membrana interóssea marca a passagem da **artéria tibial anterior**. O poplíteo pertence aos planos profundos; a artéria genicular inferior lateral passa superficialmente a ele, e o resumo recomenda trabalhar profundo ao músculo para proteger os vasos maiores. Não se deve prolongar a exposição supondo que todos esses planos tenham a mesma segurança.\n\nO objetivo da abordagem é chegar ao fragmento que precisa ser reduzido e sustentado. Um traço coronal posterior pode escapar ao controle de uma placa anterior ou lateral; insistir em uma janela que não o expõe deixa uma redução ou uma fixação insuficiente. A escolha da via deve acompanhar a anatomia real da fratura, preservando nervos e vasos, em vez de ser decidida apenas pelo número de Schatzker.",
+  "correta": "**B: gastrocnêmio lateral e bíceps femoral.** É a relação muscular superficial pedida para a entrada posterolateral. O bíceps ajuda a localizar o fibular comum sob sua borda medial; depois da identificação e proteção do nervo, a exposição prossegue em outro nível, entre gastrocnêmio lateral e sóleo. Assim se alcança a tíbia posterior sem confundir a janela inicial com a dissecção profunda.",
   "incorretas": {
-   "A": "**O gastrocnêmio lateral e o poplíteo** são estruturas encontradas mais profundamente; o poplíteo fica junto à cápsula posterolateral e não define o intervalo superficial do acesso.",
-   "C": "**O gastrocnêmio lateral e o nervo fibular** não formam um intervalo seguro; o nervo deve ser identificado e protegido, não usado como limite de dissecção.",
-   "D": "**O poplíteo e o ligamento colateral lateral** são estruturas do canto posterolateral profundo; não definem o intervalo do acesso.",
-   "E": "**O poplíteo e o nervo fibular** também não são o intervalo do acesso posterolateral; a dissecção entre eles colocaria o nervo em risco."
+   "A": "**Confunde a entrada com um plano mais profundo.** O poplíteo aparece na exposição posterior e tem relações vasculares próprias: a genicular inferior lateral passa superficialmente a ele. Na técnica descrita, a progressão após a janela superficial desenvolve primeiro o plano gastrocnêmio-sóleo. Trocar o bíceps pelo poplíteo mistura esses níveis e não identifica a janela muscular solicitada.",
+   "C": "**Reconhece o nervo de risco, mas omite seu marco muscular.** O fibular comum está sob a borda medial do bíceps e deve ser localizado antes de avançar. Pode orientar a proteção durante a dissecção, porém não equivale ao bíceps na descrição do intervalo muscular. A diferença importa porque o nervo precisa ser preservado, e não tratado como tecido que se afasta indiscriminadamente para ganhar exposição.",
+   "D": "**Reúne estruturas que também aparecem nas exposições laterais, sem definir a entrada descrita.** O colateral lateral acompanha a cabeça da fíbula nas abordagens transfibulares com osteotomia; o poplíteo, por sua vez, é uma referência profunda junto aos vasos geniculares. Essa relação não deve ser confundida com a janela superficial da via posterolateral sem que se especifique outra técnica de exposição.",
+   "E": "**Mistura uma estrutura profunda com o nervo que deve ser protegido mais superficialmente.** O trajeto do fibular é reconhecido junto ao bíceps e ao colo da fíbula; o poplíteo orienta outro nível, relacionado à exposição posterior e à proteção vascular. Nomear ambos não descreve o plano muscular inicial nem a sequência gastrocnêmio-sóleo que permite aprofundar o acesso."
   },
   "referencias": [
-   "Frosch KH, Balcarek P, Walde T, Stürmer KM. A new posterolateral approach without fibula osteotomy for the treatment of tibial plateau fractures. J Orthop Trauma. 2010;24(8):515-520.",
-   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do planalto tibial."
+   "Conteúdo consultado no resumo “Fratura do planalto tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 62 · Tibial Plateau Fractures. Seções: Classificação de SCHATZKER; AO/OTA, LUO, HOHL e MOORE e o planalto em zonas; Lado medial e vias posteriores."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-26",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-62-planalto-tibial",
+     "titulo": "Fratura do planalto tibial",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 62 · Tibial Plateau Fractures",
+     "secoes": [
+      "Classificação de SCHATZKER",
+      "AO/OTA, LUO, HOHL e MOORE e o planalto em zonas",
+      "Lado medial e vias posteriores"
+     ],
+     "blocos": [
+      "classificacao-de-schatzker-d599fb64",
+      "classificacao-de-schatzker-a19af221",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-5cb9b6b2",
+      "ao-ota-luo-hohl-e-moore-e-o-planalto-em-zonas-f6e60936",
+      "lado-medial-e-vias-posteriores-bc5f6eec",
+      "lado-medial-e-vias-posteriores-e6f21b8f"
+     ],
+     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "trechosSha256": "852ab461863f6782ca8caa492abd7dd85440bbddda2aa23e6af7e0ca2f08c4f2"
+    }
+   ],
+   "questaoSha256": "8c036818ede7f065dc49d04f2fcebaebccbbe303db0dac8272cb557868ffcbc7",
+   "comentarioSha256": "4734e9ca1b1b5696618125c97c796261fded3f3c85fa6fa5bee8d352181a17bb"
+  }
  },
  "trauma-1196": {
   "conceito": "**Delta P é pressão arterial diastólica menos pressão intracompartimental.** Ele representa a margem de pressão disponível para perfundir o tecido: quando a pressão do compartimento sobe, ou quando a diastólica cai, essa margem diminui. Por isso a pressão absoluta do compartimento, isoladamente, não descreve toda a ameaça à perfusão.\n\nComo exemplo didático, diastólica de 60 mmHg e compartimento de 40 mmHg produzem delta P de 20 mmHg. Subtrair ao contrário gera −20, que já não representa o coeficiente da definição. Usar a sistólica também troca a referência do cálculo.\n\nNo protocolo descrito, delta P abaixo de 30 mmHg mantido por mais de duas horas sustenta fasciotomia no paciente monitorado sem sinais claros. A tendência importa, e um quadro clínico estabelecido exige cirurgia urgente. As seis horas mencionadas no caso são o intervalo do retorno, não um tempo a aguardar para descomprimir.\n\n**Há uma inversão na redação das alternativas.** O gabarito oficial é B, mas “subtração da pressão diastólica da intracompartimental”, lido literalmente, inverte os termos. A alternativa D expressa literalmente a fórmula do resumo. O gabarito da banca foi preservado, com a divergência explicitada.\n\n**Leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”, na Biblioteca.** Refaça um exemplo numérico e guarde a equação, em vez de memorizar a ordem de uma frase ambígua.",
