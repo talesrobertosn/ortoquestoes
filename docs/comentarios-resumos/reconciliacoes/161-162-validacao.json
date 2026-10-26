@@ -66,5 +66,52 @@
       "pendente-inspecao-imagem": 85,
       "revisada": 1364
     }
+  },
+  "reconciliacao546": {
+    "base": "9b0adab686f849c8c711414a791a2d2c360f2bd4",
+    "outroMerge": "189b03ef5ccc71419f9a6b38fab367aa458f2e89",
+    "preservacao": {
+      "base": "04f8385929dda56071ac9e9ee8733724e3d4d183",
+      "outro": "189b03ef5ccc71419f9a6b38fab367aa458f2e89",
+      "merge": "9b0adab686f849c8c711414a791a2d2c360f2bd4",
+      "headEditorial": "0068d224fb166e570a0ef6385b8c26002de3811b",
+      "arquivosConcorrentesPreservados": [
+        "docs/mao/PROGRESSO.md",
+        "public/acervo/busca.json",
+        "public/acervo/comentarios/mao.json",
+        "public/acervo/indice.json",
+        "public/acervo/progresso.json",
+        "public/acervo/temas/mao.json"
+      ],
+      "arquivosEditoriaisPreservados": [
+        "docs/comentarios-resumos/ANDAMENTO.md",
+        "docs/comentarios-resumos/RETOMADA-2026-10-20.md",
+        "docs/comentarios-resumos/catalogo.json",
+        "docs/comentarios-resumos/lotes/161-antebraco-pediatrico-exame-e-divergencias.json",
+        "docs/comentarios-resumos/lotes/162-epidemiologia-fisaria.json",
+        "docs/comentarios-resumos/reconciliacoes/161-162-validacao.json",
+        "docs/comentarios-resumos/reconciliacoes/161-lacunas-antebraco-pediatrico.json",
+        "docs/comentarios-resumos/reconciliacoes/162-lacunas-antebraco-pediatrico.json",
+        "public/acervo/comentarios/pediatria.json",
+        "public/acervo/letras.json"
+      ]
+    },
+    "checks": "14fixtures, acervo, npm test/build, diff-check, replay5/5 e UI5casos390/1440px aprovados novamente",
+    "logSha256": "fc337c3b0a9ca9121270bdebbdb094dfe592152e6a69f03d330b83ab4b94d646",
+    "novosIdsNoEscopo": 2,
+    "inventario": {
+      "resumos": 34,
+      "ids": 2477,
+      "estados": {
+        "duplicada": 87,
+        "pendente": 608,
+        "pendente-anulada": 9,
+        "pendente-figura-ausente": 2,
+        "pendente-fonte": 322,
+        "pendente-inspecao-imagem": 85,
+        "revisada": 1364
+      }
+    },
+    "comentariosClinicosModificados": 0
   }
 }

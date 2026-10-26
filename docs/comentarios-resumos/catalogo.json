@@ -3,7 +3,7 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 606,
+  "pendente": 608,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
   "pendente-fonte": 322,
@@ -102,7 +102,7 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 200,
+    "pendente": 201,
     "pendente-figura-ausente": 1,
     "pendente-inspecao-imagem": 13
    }
@@ -112,7 +112,7 @@
    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
    "estados": {
     "duplicada": 4,
-    "pendente": 86,
+    "pendente": 87,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
     "pendente-fonte": 18,
@@ -23357,6 +23357,38 @@
     "rockwood10-44-carpo"
    ],
    "questaoSha256": "4367f6dcc435c258c1758fc7e89483cdfc446892f3e23cb2c87f1ae260c2f392"
+  },
+  "mao-2320": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas do escafoide e do carpo"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-44-carpo"
+   ],
+   "questaoSha256": "d654b7065692ccd45762fba94329c434ed17d2392551352147ab8d7a7e38c49a"
+  },
+  "mao-2332": {
+   "tema": "mao",
+   "subtemas": [
+    "Fraturas dos metacarpos e falanges"
+   ],
+   "prova": "SIMÃO",
+   "ano": 2024,
+   "estado": "pendente",
+   "motivo": "",
+   "temComentario": true,
+   "citacoes": [],
+   "resumosCandidatos": [
+    "rockwood10-45-fraturas-mao"
+   ],
+   "questaoSha256": "5a7c6e53acd6d9d6eda68df97f0c01e249461f28f3b12d2ced8a4762fd4dffc5"
   },
   "ombro-cotovelo-0005": {
    "tema": "ombro-cotovelo",
