@@ -740,15 +740,15 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 59 | Macrodactilia tipo IV | reformulada | 36 | Congênitas | 10 | mao-2425 | aplicada |
 | 60 | Ligamento triangular | reformulada | 5 | Extensores | 10 | mao-2426 | aplicada |
 | 61 | MADELUNG | reformulada | 38 | Congênitas | 10 | mao-2427 | aplicada |
-| 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
-| 63 | Tuberculose óssea no adulto | reformulada | 3 | Infecções crônicas | 18 | mao-2366 | publicada |
-| 64 | Lesão sentinela neonatal | reformulada | 51 | Compartimental | 12 | mao-2336 | publicada |
+| 62 | Fixador externo no metacarpo | reformulada | 7 | Metacarpos | 11 | mao-2428 | aplicada |
+| 63 | Resultados da artrodese escafocapitato | reformulada | 13 | Carpo | - | - | pendente: conferir à mão (opções não estão no cap. 13 traduzido) |
+| 64 | Anatomia do mediano | reformulada (Netter + Green) | 28 | Anatomia | 11 | mao-2429 | aplicada |
 | 65 | TSUGE moderado | reformulada | 51 | VOLKMANN | 12 | mao-2337 | publicada |
-| 66 | Portal 3-4: entre ELP e extensor dos dedos | anatomia | cap. 17, p. 761 | mao / Artrose do punho e artroscopia | 06 | mao-2304 | publicada |
+| 66 | Epidemiologia dos aneurismas da mão | reformulada | 60 | Vascular | - | - | pendente: conferir à mão |
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
-| 68 | Tala interna no radial | reformulada | 31 | Transferências | 18 | mao-2367 | publicada |
-| 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
-| 70 | Queimadura mais dolorosa | reformulada | 57 | Queimado | 19 | mao-2372 | publicada |
+| 68 | PANEVA-HOLEVICH | reformulada | 6 | Flexores | 11 | mao-2430 | aplicada |
+| 69 | Ossos da braquidactilia | reformulada | 36 | Congênitas | 11 | mao-2431 | aplicada |
+| 70 | Carpo reumatoide | reformulada | 55 | Reumatoide | 11 | mao-2432 | aplicada |
 | 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | publicada |
 | 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | publicada |
 | 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
