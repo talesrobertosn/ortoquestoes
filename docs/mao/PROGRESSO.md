@@ -681,12 +681,17 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 |---|---|---|---|---|---|---|---|
 | 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
 | 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
+| 10 | PALMER 2C: perfuração com condromalácia | classificação | cap. 14, p. 571 e 572 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2296 | publicada |
 | 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
 | 21 | Deficiência ulnar: frequência da sindactilia | número | cap. 38, p. 1500 | mao / Deficiências longitudinais e mão torta | 02 | mao-2284 | publicada |
 | 22 | Pseudoartrose congênita da ulna: neurofibromatose | fato | cap. 38, p. 1520 | mao / Outras malformações congênitas | 02 | mao-2285 | publicada |
 | 26 | Ligamentos extracapsulares do carpo (radioescafocapitato é intracapsular) | anatomia | cap. 13, p. 490 e 491 | mao / Anatomia da mão e punho | 03 | mao-2288 | publicada |
 | 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
 | 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
+| 40 | Radioulnar distal: estabilizadores secundários | anatomia | cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2297 | publicada |
+| 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
+| 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
+| 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
 | 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
 | 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |

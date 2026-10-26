@@ -33285,5 +33285,80 @@
   ],
   "geradoEm": "2026-10-26",
   "conferido": false
+ },
+ "mao-2293": {
+  "conceito": "Na radiografia de um punho com KIENBÖCK avançado, o carpo parece \"afundado\": a mão está mais perto do rádio do que deveria. Para transformar essa impressão em número, usa-se o índice de altura do carpo.\n\n**O que se mede.** Altura do carpo é a distância entre a base do terceiro metacarpo e a superfície articular distal do rádio, medida ao longo do prolongamento do eixo do terceiro metacarpo (Green, cap. 13, p. 504). Ela sozinha varia com o tamanho da pessoa, então precisa ser comparada com algo do próprio esqueleto.\n\n**O índice original.** Divide-se a altura do carpo pelo comprimento do terceiro metacarpo. O Green dá o valor normal: a razão \"(altura do carpo ÷ comprimento do terceiro metacarpo) foi de 0,54 ± 0,03 em punhos normais\" (cap. 13, p. 504). Quando o carpo colapsa, o numerador encolhe e o índice cai.\n\n**A variação moderna.** Como muitas radiografias de punho não mostram o terceiro metacarpo inteiro, alguns autores trocaram o denominador pelo comprimento do capitato (altura do carpo ÷ comprimento do capitato), com normal de 1,57 ± 0,05; o Green diz que esse método tem maior precisão e pode ser calculado em filmes padrão do punho (p. 504, Fig. 13.19A). Repare que nas duas versões a altura do carpo fica sempre em cima.\n\n| Índice de altura do carpo (Green, p. 504) | Fórmula | Normal |\n|---|---|---|\n| Original | altura do carpo ÷ comprimento do 3º metacarpo | 0,54 ± 0,03 |\n| Modificado | altura do carpo ÷ comprimento do capitato | 1,57 ± 0,05 |\n\n**Por que esta questão foi criada.** Inspirada na questão 53 do SIMÃO 2024, que perguntou como se calcula o índice de altura do carpo. No original, tanto o método com o terceiro metacarpo quanto o método com o capitato apareciam corretos nas alternativas; aqui a pergunta foi refeita para o método original, com resposta única.\n\n> **Na prova:** altura do carpo SEMPRE no numerador: ÷ 3º metacarpo (0,54) ou ÷ capitato (1,57).",
+  "correta": "**B: divide-se a altura carpal pelo 3º metacarpo (comprimento).** É o índice original, normal de 0,54 ± 0,03 (Green, cap. 13, p. 504).",
+  "incorretas": {
+   "A": "**Fração de cabeça para baixo.** A altura do carpo vai no numerador; invertendo, o índice subiria quando o carpo colapsa, o contrário do que se quer medir (Green, cap. 13, p. 504).",
+   "C": "**Inverte o método modificado.** Na variação que usa o capitato, divide-se a altura do carpo pelo comprimento do capitato, e não o contrário (Green, cap. 13, p. 504).",
+   "D": "**Denominador inventado.** A largura do rádio distal não entra em nenhum dos dois métodos descritos; os denominadores são o terceiro metacarpo ou o capitato (Green, cap. 13, p. 504)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 504 (Fig. 13.19)"
+  ],
+  "geradoEm": "2026-10-26",
+  "conferido": false
+ },
+ "mao-2294": {
+  "conceito": "Uma jovem escorrega e cai sentada para trás, apoiando a mão espalmada atrás do corpo. Dias depois, a dor fica bem no lado ulnar do punho. Esse jeito de cair, com a mão atrás do corpo, é a chave da lesão lunotriquetral isolada.\n\n**Onde bate a força.** O Green descreve que a maioria das lesões isoladas do lunotriquetral vem de uma queda para trás sobre a mão estendida, com o braço em rotação externa, o antebraço supinado e o punho estendido e inclinado radialmente (cap. 13, p. 532). Nessa posição, o impacto se concentra na região hipotenar, sobretudo no pisiforme.\n\n**O que acontece por dentro.** O pisiforme funciona como um soco contra o piramidal estendido, empurrando-o para dorsal. O semilunar não acompanha, porque está preso pelo rádio e pelos ligamentos radiossemilunares longo e curto. Surge então um cisalhamento na articulação lunotriquetral, que alonga e finalmente rompe os três componentes do ligamento: volar, dorsal e proximal (Green, cap. 13, p. 532).\n\n**Como lembrar.** Compare com a perilunar, que começa no lado radial com extensão e desvio ulnar. Na lunotriquetral isolada a pancada vem por baixo, pelo pisiforme, com o punho inclinado para o lado radial.\n\n**Por que esta questão foi criada.** Inspirada na questão 56 do SIMÃO 2024, que cobrou o mecanismo de trauma mais comum da lesão lunotriquetral isolada.\n\n> **Na prova:** lunotriquetral isolada = queda PARA TRÁS, braço em ROTAÇÃO EXTERNA, antebraço SUPINADO, punho em extensão e desvio RADIAL; o PISIFORME golpeia o piramidal.",
+  "correta": "**C: queda para trás com o braço em rotação externa, antebraço supinado e punho estendido com desvio radial.** É o mecanismo descrito pelo Green, com o pisiforme golpeando o piramidal (cap. 13, p. 532).",
+  "incorretas": {
+   "A": "**Troca as três rotações.** Braço em rotação interna e antebraço pronado com desvio ulnar não reproduzem a carga hipotenar que rompe o lunotriquetral (Green, cap. 13, p. 532).",
+   "B": "**Quase, mas erra o desvio.** Braço em rotação externa e antebraço supinado estão certos; o punho, porém, está inclinado radialmente, não ulnarmente (Green, cap. 13, p. 532).",
+   "D": "**Acerta só o desvio.** O desvio radial confere, mas o braço está em rotação externa e o antebraço supinado (Green, cap. 13, p. 532)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 532"
+  ],
+  "geradoEm": "2026-10-26",
+  "conferido": false
+ },
+ "mao-2295": {
+  "conceito": "Uma mão foi esmagada numa prensa. A radiografia mostra o carpo partido em duas colunas que se afastam, como se o túnel do carpo tivesse se aberto ao meio. É a luxação axial, a lesão que parece a LISFRANC do pé, só que no punho.\n\n**Por que o carpo se parte assim.** O arco transverso do carpo só se mantém por causa do retináculo dos flexores e dos fortes ligamentos intercarpais transversos da fileira distal. Quando uma força dorsopalmar esmaga esse arco, esses ligamentos falham e o carpo se divide no sentido longitudinal, com o túnel se abrindo e colunas instáveis indo em direções divergentes (Green, cap. 13, p. 555).\n\n**Os dois grupos.** GARCIA-ELIAS separou as discordâncias **axiais-radiais**, com o segmento instável indo para radial (A a C), e as **axiais-ulnares**, indo para ulnar (D a F) (Green, cap. 13, Fig. 13.66). As radiais têm pior prognóstico (p. 555).\n\n**Como ler os nomes.** O prefixo conta se há fratura: **peri** quer dizer que o osso foi luxado inteiro, em volta dele; **trans** quer dizer que a linha passa através do osso, fraturando-o.\n\n| Fig. 13.66 | Subtipo | Tipo de lesão |\n|---|---|---|\n| A | peritrapezóide e peritrapézio | luxação pura |\n| B | peritrapézio | luxação pura |\n| C | transtrapézio | com fratura |\n| D | trans-hamato e peripisiforme | com fratura |\n| E | peri-hamato e peripisiforme | luxação pura |\n| F | peri-hamato e transpiramidal | com fratura |\n\n**Por que esta questão foi criada.** Inspirada na questão 62 do SIMÃO 2024, que perguntou quais subtipos das fraturas-luxações axiais de GARCIA-ELIAS são só luxações.\n\n> **Na prova:** \"PERI\" = luxação pura; \"TRANS\" = fratura. Puras: A, B e E.",
+  "correta": "**A: A, B e E.** São os subtipos só com prefixo \"peri\": peritrapezóide/peritrapézio, peritrapézio e peri-hamato/peripisiforme; nenhum tem osso fraturado (Green, cap. 13, Fig. 13.66, p. 555).",
+  "incorretas": {
+   "B": "**Entra uma com fratura.** O subtipo C é transtrapézio: a linha passa pelo trapézio (Green, cap. 13, Fig. 13.66).",
+   "C": "**Duas fraturas no meio.** D (trans-hamato) e F (transpiramidal) têm fratura; só o B é luxação pura nessa lista (Green, cap. 13, Fig. 13.66).",
+   "D": "**É justamente o grupo com fratura.** C, D e F são os subtipos com prefixo \"trans\", isto é, com osso do carpo fraturado (Green, cap. 13, Fig. 13.66)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 554 e 555 (Fig. 13.66)"
+  ],
+  "geradoEm": "2026-10-26",
+  "conferido": false
+ },
+ "mao-2296": {
+  "conceito": "Um homem de 45 anos com variância ulnar positiva tem dor no lado ulnar do punho há anos, pior ao girar uma chave. Na artroscopia, o disco da fibrocartilagem triangular tem um furo, e a cartilagem do semilunar está amolecida. Antes de classificar, é preciso decidir se isso é trauma ou desgaste.\n\n**As duas famílias de PALMER.** A classificação separa as lesões do complexo da fibrocartilagem triangular em **traumáticas (classe 1)** e **degenerativas (classe 2)**, estas ligadas à síndrome do impacto ulnar (Green, cap. 14, p. 571 e 572). Nas traumáticas, a letra diz onde rompeu: 1A perfuração central, 1B avulsão ulnar, 1C avulsão distal (do carpo), 1D avulsão radial.\n\n**As degenerativas contam uma progressão.** Na classe 2, cada letra acrescenta um passo do desgaste: 2A desgaste da fibrocartilagem; 2B desgaste mais condromalácia do semilunar ou da cabeça da ulna; **2C perfuração mais condromalácia**; 2D perfuração com condromalácia e perfuração do ligamento lunotriquetral; 2E tudo isso mais artrite ulnocarpal (Green, cap. 14, Tabela 14.1, p. 571). O Green lembra que, embora pareça uma progressão fixa, o estado do ligamento interósseo e da cabeça da ulna varia muito (p. 572).\n\n| PALMER classe 2 (Green, Tabela 14.1) | O que se acrescenta |\n|---|---|\n| 2A | desgaste |\n| 2B | + condromalácia |\n| 2C | perfuração + condromalácia |\n| 2D | + lesão lunotriquetral |\n| 2E | + artrite ulnocarpal |\n\n**Por que esta questão foi criada.** Inspirada na questão 10 do SIMÃO 2024, que cobrou o tipo de PALMER da perfuração com condromalácia.\n\n> **Na prova:** PALMER 2 é degenerativo e cresce em passos: A desgaste, B condromalácia, C PERFURAÇÃO, D lunotriquetral, E artrite.",
+  "correta": "**D: 2C.** Perfuração da fibrocartilagem com condromalácia do semilunar ou da cabeça da ulna é o tipo 2C de PALMER, degenerativo (Green, cap. 14, Tabela 14.1, p. 571).",
+  "incorretas": {
+   "A": "**Classe traumática.** O 1C é a avulsão distal, do lado do carpo, uma lesão aguda; não há condromalácia na definição (Green, cap. 14, Tabela 14.1).",
+   "B": "**Também traumático.** O 1D é a avulsão radial, com ou sem fratura do entalhe sigmóide (Green, cap. 14, Tabela 14.1).",
+   "C": "**Passa um degrau.** O 2D já acrescenta a perfuração do ligamento lunotriquetral à perfuração com condromalácia (Green, cap. 14, Tabela 14.1)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 14 (A articulação radioulnar distal), p. 571 e 572 (Tabela 14.1)"
+  ],
+  "geradoEm": "2026-10-26",
+  "conferido": false
+ },
+ "mao-2297": {
+  "conceito": "Um paciente com fratura de GALEAZZI tem a cabeça da ulna saltando para dorsal. Depois de fixar o rádio, o cirurgião testa a radioulnar distal e ela ainda está frouxa. A pergunta passa a ser quais estruturas, além dos ligamentos radioulnares, seguram essa articulação.\n\n**Quem segura primeiro.** Os estabilizadores primários são os ligamentos radioulnares dorsal e palmar, do complexo da fibrocartilagem triangular. Quando um deles é o dominante numa posição, o outro dá a contenção secundária, e ambos precisam ser lesados para a luxação completa (Green, cap. 14, p. 567).\n\n**Os estabilizadores secundários.** O Green lista estruturas de partes moles consideradas estabilizadores secundários: **o pronador quadrado, o extensor ulnar do carpo, a membrana interóssea e a cápsula da radioulnar distal** (cap. 14, p. 566). As contribuições relativas não estão bem definidas, mas há consenso de que a instabilidade grosseira exige a ruptura de várias delas. O pronador quadrado e o extensor ulnar do carpo dão estabilidade dinâmica: o pronador comprime a articulação na pronação ativa e na supinação passiva (p. 566).\n\n**Por que isso importa na sala.** Se o rádio foi reduzido e a articulação continua instável, é sinal de que os estabilizadores secundários também falharam, e a conduta muda (fixação temporária, reparo do complexo).\n\n**Por que esta questão foi criada.** Inspirada na questão 40 do SIMÃO 2024, que cobrou um estabilizador secundário da radioulnar distal.\n\n> **Na prova:** radioulnar distal, estabilizadores secundários: PRONADOR QUADRADO, EXTENSOR ULNAR DO CARPO, MEMBRANA INTERÓSSEA e CÁPSULA.",
+  "correta": "**B: cápsula da radioulnar distal.** O Green a inclui, com o pronador quadrado, o extensor ulnar do carpo e a membrana interóssea, entre os estabilizadores secundários da articulação (cap. 14, p. 566).",
+  "incorretas": {
+   "A": "**É da radioulnar proximal.** O ligamento anular segura a cabeça do rádio no cotovelo, não a articulação radioulnar distal (Green, cap. 14, p. 566).",
+   "C": "**Faz parte do complexo, mas não da lista.** O menisco homólogo integra o complexo da fibrocartilagem triangular, porém não é citado entre os estabilizadores secundários da radioulnar distal (Green, cap. 14, p. 566).",
+   "D": "**Troca o extensor pelo flexor.** O músculo citado como estabilizador dinâmico é o extensor ulnar do carpo, com sua bainha; o flexor ulnar do carpo não entra na lista (Green, cap. 14, p. 566)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 14 (A articulação radioulnar distal), p. 566"
+  ],
+  "geradoEm": "2026-10-26",
+  "conferido": false
  }
 }
