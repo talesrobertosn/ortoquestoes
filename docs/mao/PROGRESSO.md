@@ -689,13 +689,13 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
 | 9 | ZANCOLLI na paralisia cerebral | reformulada | 32 | PC | - | - | pendente: sem fonte (ZANCOLLI não está no cap. 32 traduzido) |
 | 10 | Sequência da lesão escafolunar | reformulada | 13 | Carpo | 02 | mao-2384 | aplicada |
-| 11 | Martelo tipo I: mais comum, agudo até 4 semanas, tala | afirmativas | cap. 5, p. 192 e 193 | mao / Lesões dos tendões extensores | 05 | mao-2302 | publicada |
+| 11 | Junção término-lateral de BURKHALTER | reformulada (gabarito diverge do Green) | 31 | Transferências | 16 | mao-2453 | aplicada |
 | 12 | Sanguessuga e Aeromonas | reformulada | 2 | Infecções | 02 | mao-2385 | aplicada |
 | 13 | Ápice dorsal no metacarpo | reformulada | 7 | Metacarpos | 02 | mao-2386 | aplicada |
 | 14 | Comissura mais afetada na sindactilia | reformulada | 36 | Sindactilia | 02 | mao-2387 | aplicada |
 | 15 | Retração do flexor longo do polegar | reformulada | 6 | Flexores | 03 | mao-2388 | aplicada |
 | 16 | Escafoide na criança | reformulada | 16 | Carpo | 03 | mao-2389 | aplicada |
-| 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | publicada |
+| 17 | Polidactilia central | reformulada | 36 | Polidactilia | 16 | mao-2454 | aplicada |
 | 18 | Colateral radial do polegar: pronação | reformulada | 8 | Ligamentos | 03 | mao-2390 | aplicada |
 | 19 | Portal 4-5 | reformulada | 17 | Artroscopia | 03 | mao-2391 | aplicada |
 | 20 | BAYNE tipo 2 | reformulada | 38 | Mão torta radial | 03 | mao-2392 | aplicada |
@@ -772,10 +772,10 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 91 | Transferência na polidactilia pré-axial | reformulada | 37 | Polegar congênito | 20 | mao-2375 | publicada |
 | 92 | Tumores malignos de pele | reformulada | 58 | Tumores de pele | 15 | mao-2451 | aplicada |
 | 93 | Enxertos de pele | reformulada | 44 | Cobertura | 15 | mao-2452 | aplicada |
-| 94 | Falange média instável | reformulada | 7 | Falanges | 12 | mao-2334 | publicada |
+| 94 | MONTEGGIA: cuidado com o interósseo posterior | reformulada (ângulo diferente do SIMÃO 2024) | 20 | Ulna proximal | 16 | mao-2455 | aplicada |
 | 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | publicada |
-| 96 | Complicação da osteotomia e artrodese TMC | reformulada | 11 | Rizartrose | 10 | mao-2324 | publicada |
+| 96 | Janela das malformações | reformulada (ângulo diferente do SIMÃO 2024) | 35 | Embriologia | 16 | mao-2456 | aplicada |
 | 97 | VOCHE e MERLE no WARTENBERG | reformulada | 31 | Transferências | 09 | mao-2319 | publicada |
 | 98 | MADELUNG: resultados das osteotomias | afirmativas | cap. 38, p. 1503, 1506 e 1509 | mao / Outras malformações congênitas | 02 | mao-2287 | publicada |
 | 99 | Fratura associada ao leito ungueal | reformulada | 9 | Perioníquio | 16 | mao-2354 | publicada |
-| 100 | Comportamento do basocelular | reformulada | 58 | Tumores de pele | 11 | mao-2328 | publicada |
+| 100 | Tratamento do TSUGE moderado | reformulada (ângulo diferente do SIMÃO 2024) | 51 | VOLKMANN | 16 | mao-2457 | aplicada |
