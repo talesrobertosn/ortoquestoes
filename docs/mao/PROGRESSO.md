@@ -938,6 +938,15 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 61 | Interescalênico bilateral contraindicado (frênico) | reformulada, outro ângulo | 1, p. 1 e 2 | Anestesia | 09 | mao-2510 | aplicada |
 | 62 | Mecanismo do sinal de WARTENBERG | reformulada | 31, p. 1210 | Exame físico | 09 | mao-2511 | aplicada |
 | 63 | GARCIA-ELIAS 4: o que segura o semilunar | reformulada, uma só correta | 13, p. 513, 518 e 519 | Instabilidade do carpo | 09 | mao-2512 | aplicada |
+| 64 | Subluxação simples da metacarpofalângica | reformulada | 8, p. 345 | Lesões ligamentares dos dedos | 10 | mao-2513 | aplicada |
+| 65 | PALMER degenerativa: primeira classe com perfuração | reformulada | 14, p. 571 e 572 | Fibrocartilagem triangular | 10 | mao-2514 | aplicada |
+| 66 | Polegar empalmado complexo (McCARROLL e MIH) | reformulada | 37, p. 1488 | Malformações congênitas | 10 | mao-2515 | aplicada |
+| 67 | Toracodorsal como doador de transferência | reformulada, outro ângulo | 34, p. 1304, 1332 e 1333 | Plexo braquial | 10 | mao-2516 | aplicada |
+| 68 | Localização do gânglio da raiz dorsal | reformulada | 34, p. 1304 e 1310 | Plexo braquial | 10 | mao-2517 | aplicada |
+| 69 | Arco articular de CHEN no dedo do pé | — | 47 | Microcirurgia | — | — | pendente: sem fonte no Green |
+| 70 | Síndrome da pele escaldada estafilocócica | reformulada | 2, p. 17 | Infecções | 10 | mao-2518 | aplicada |
+| 71 | Abscesso do espaço tenar: postura do polegar | reformulada | 2, p. 35 e 36 | Infecções | 10 | mao-2519 | aplicada |
+| 72 | Primeira manifestação da hanseníase | reformulada | 3, p. 126 e 127 | Infecções | 10 | mao-2520 | aplicada |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
