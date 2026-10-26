@@ -15,8 +15,8 @@ import '../estilos/paginas/CronogramaMao.css'
 import { TrocaCronograma } from '../componentes/TrocaCronograma'
 
 const PROVAS: Record<ProvaMao, { titulo: string; curto: string; texto: string }> = {
-  ingresso: { titulo: 'Ingresso em Cirurgia da Mão', curto: 'Ingresso (residência)', texto: 'Para as provas de seleção da residência e dos programas de Cirurgia da Mão. Prioriza o que essas provas mais cobram, inclusive cirurgia plástica e anatomia.' },
-  titulo: { titulo: 'Título de Cirurgia da Mão: SBCM e SIMÃO', curto: 'Título: SBCM e SIMÃO', texto: 'Para o exame de título da SBCM e o SIMÃO, o simulado do exame. Usa as questões no padrão da prova, escritas a partir de cada questão da SBCM e do SIMÃO, e completa com questões oficiais da mão.' },
+  ingresso: { titulo: 'Ingresso em Cirurgia da Mão', curto: 'Ingresso (residência)', texto: 'Para as provas de seleção da residência e dos programas de Cirurgia da Mão. Você estuda todas as questões da mão; a ordem segue o que as provas de ingresso mais cobram, inclusive cirurgia plástica e anatomia.' },
+  titulo: { titulo: 'Título de Cirurgia da Mão: SBCM e SIMÃO', curto: 'Título: SBCM e SIMÃO', texto: 'Para o exame de título da SBCM e o SIMÃO, o simulado do exame. Você estuda todas as questões da mão; a ordem segue o que a prova de título mais cobra, começando pelas questões no padrão da SBCM e do SIMÃO.' },
 }
 const SEMANA = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
 const NOME_SEMANA = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado']
@@ -95,8 +95,8 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
       <fieldset className="cm-campo">
         <legend><b>Até onde ir?</b></legend>
         <div className="cm-cobertura">
-          <button type="button" aria-pressed={c.cobertura === 'completa'} onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><small>Todos os assuntos{prova === 'titulo' ? ', com as questões oficiais da mão como reforço' : ''}.</small></button>
-          <button type="button" aria-pressed={c.cobertura === 'essencial'} onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><small>Só os assuntos de prioridade máxima e alta. Bom para pouco tempo.</small></button>
+          <button type="button" aria-pressed={c.cobertura === 'completa'} onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><small>Todos os assuntos da mão, das provas de ingresso e do título.</small></button>
+          <button type="button" aria-pressed={c.cobertura === 'essencial'} onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><small>Só os assuntos de prioridade máxima e alta desta prova. Bom para pouco tempo.</small></button>
         </div>
       </fieldset>
       <div className="cm-form__acoes">

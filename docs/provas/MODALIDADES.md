@@ -43,8 +43,10 @@ e do dia. Por isso ele se adapta a erro, atraso e mudança de data sem apagar hi
 - prioridade: fatia por prova × (1 + erro) × (1 + o que falta fazer);
 - até um quarto do dia é revisão de erros com 3 dias ou mais;
 - simulado a cada 14 dias; duas últimas semanas de reta final;
-- no título, as questões no padrão SBCM e SIMÃO vêm primeiro e as oficiais de ingresso do mesmo assunto completam
-  (só na cobertura completa);
+- os dois planos usam todas as questões da mão, de ingresso e do padrão SBCM e SIMÃO, porque as provas cobram coisas
+  parecidas (Tales, 26/10/2026). O que muda é a prioridade: segue o ranking da prova escolhida, e dentro de cada assunto
+  as questões da própria prova vêm primeiro. Assunto que só a outra prova cobra entra com metade do peso (prioridade baixa);
+  a cobertura essencial fica com os assuntos de prioridade máxima e alta da prova escolhida, com as questões das duas provas;
 - "Prontidão estimada" é estimativa pedagógica (domínio pesado pelo quanto cai), nunca chance de aprovação.
 
 A configuração fica na conta, no mapa sincronizado da Biblioteca (itens `c.mao-ingresso` e `c.mao-titulo`, tipo
