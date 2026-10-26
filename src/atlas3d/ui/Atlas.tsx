@@ -18,6 +18,8 @@ import { usarConta } from '../../conta/ContextoConta'
 import { usarPremium } from '../../conta/premium'
 import { ConviteAtlas, type TipoConvite } from './ConviteAtlas'
 import { GuiaControles } from './GuiaControles'
+import { CartaoRapido } from './CartaoRapido'
+import { ModalDetalhes } from './ModalDetalhes'
 import { FichaAnatomica, FixacoesDoOsso } from './FichaAnatomica'
 import { carregarAnatomia, idNoLado, registroDaEstrutura, type IndiceAnatomico } from '../dados/anatomia'
 import { fixadosNoOsso, idsDoRegistro, indexarPontos, marcosNoOsso, montarRelacoes, relacionadosDe, type Mundo, type Relacao } from '../dados/relacoes'
@@ -26,7 +28,6 @@ import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
 import { corDaArea } from '../../dados/coresAreas'
 import '../../estilos/paginas/Atlas3D.css'
 
-type Altura = 'espiada' | 'meia' | 'inteira'
 /** Na conta grátis: ossos e músculos. O resto, para assinantes (aparece por alguns segundos e convida). */
 const GRATIS = new Set<Grupo>(['osso', 'musculo'])
 const PREVIA_MS = 3000
@@ -47,14 +48,21 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [progresso, definirProgresso] = useState<Record<string, number>>({})
   const [ligados, definirLigados] = useState<Set<Grupo>>(() => new Set(lerCamadas(consulta)))
   const [selecao, definirSelecao] = useState<Selecao | null>(null)
-  const [passagem, definirPassagem] = useState<Passagem | null>(null)
+  // o nome sob o cursor vive num componente à parte: passar o mouse não redesenha o atlas inteiro
+  const avisarPassagem = useRef<((p: Passagem | null) => void) | null>(null)
+  const registrarPassagem = useCallback((f: ((p: Passagem | null) => void) | null) => { avisarPassagem.current = f }, [])
   const [regiaoId, definirRegiaoId] = useState<string | null>(segmentos[1] ?? null)
   const [lado, definirLado] = useState<Lateralidade>((consulta.get('lado') as Lateralidade) || 'ambos')
   // no celular o modelo vem primeiro: as regiões ficam no botão do topo
   const [explorar, definirExplorar] = useState(() => window.matchMedia('(min-width: 56rem)').matches && !consulta.get('e'))
   const [personalizar, definirPersonalizar] = useState(false)
   const [questoes, definirQuestoes] = useState<{ titulo: string; ids: string[] } | null>(null)
-  const [altura, definirAltura] = useState<Altura>('espiada')
+  // detalhes: no computador, o painel lateral aberto (ou recolhido no cartão); no celular, o modal
+  const [detalhes, definirDetalhes] = useState(() => window.matchMedia('(min-width: 56rem)').matches)
+  // estruturas vistas nesta visita, para voltar e avançar sem procurar de novo
+  const trilha = useRef<Selecao[]>([])
+  const [posTrilha, definirPosTrilha] = useState(-1)
+  const andandoNaTrilha = useRef(false)
   const [busca, definirBusca] = useState('')
   const [corte, definirCorteUI] = useState<Corte | null>(null)
   const [vinculos, definirVinculos] = useState<Record<string, Vinculo> | null>(null)
@@ -85,7 +93,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (!palco.current) return
     const m = new Motor(palco.current, {
       aoSelecionar: (s) => definirSelecao(s),
-      aoPassar: (p) => definirPassagem(p),
+      aoPassar: (p) => avisarPassagem.current?.(p),
       aoCarregar: (g, f) => definirProgresso((atual) => ({ ...atual, [g]: f })),
     })
     motorRef.current = m
@@ -128,8 +136,15 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
 
   // ---------- seleção → ficha, endereço, recentes ----------
   useEffect(() => {
-    if (!selecao) { definirQuestoes(null); return }
-    definirAltura((a) => (a === 'espiada' ? 'meia' : a))
+    if (!selecao) { definirQuestoes(null); if (!larga) definirDetalhes(false); return }
+    if (andandoNaTrilha.current) andandoNaTrilha.current = false
+    else {
+      const atual = trilha.current[posTrilha]
+      if (!atual || atual.id !== selecao.id || atual.faixa !== selecao.faixa) {
+        trilha.current = [...trilha.current.slice(0, posTrilha + 1), selecao].slice(-30)
+        definirPosTrilha(trilha.current.length - 1)
+      }
+    }
     definirPref((p) => ({ ...p, recentes: [selecao.id, ...p.recentes.filter((r) => r !== selecao.id)].slice(0, 12) }))
     definirQuestoes(null)
     const q = new URLSearchParams(consulta)
@@ -145,16 +160,18 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (!m) return
     const raiz = palco.current?.parentElement
     const medir = () => {
+      // no celular, o modal fica por cima sem mexer na câmera: só o cartão compacto conta
+      if (!larga && detalhes) return
       const ficha = raiz?.querySelector<HTMLElement>('.atlas__ficha')
-      const gaveta = raiz?.querySelector<HTMLElement>('.atlas__gaveta')
+      const cartao = raiz?.querySelector<HTMLElement>('.at-rapido')
       const direita = larga && ficha ? ficha.offsetWidth * 0.55 : 0
-      const inferior = !larga && gaveta ? Math.min(gaveta.offsetHeight, (raiz?.clientHeight ?? 0) * 0.55) * 0.85 : 0
+      const inferior = !larga && cartao ? Math.min(cartao.offsetHeight, (raiz?.clientHeight ?? 0) * 0.3) * 0.8 : 0
       m.definirMargens(direita, inferior)
     }
     medir()
-    const t = setTimeout(medir, 260) // depois da transição de altura da gaveta
+    const t = setTimeout(medir, 260) // depois da transição de entrada do cartão e do painel
     return () => clearTimeout(t)
-  }, [estrutura?.id, larga, altura, questoes])
+  }, [estrutura?.id, larga, detalhes, questoes])
 
   // ---------- ações ----------
   /** Liga ou desliga uma camada respeitando o plano: sem conta, convida a criar a conta;
@@ -238,7 +255,6 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     try { if (vendo) sessionStorage.setItem('oq-atlas-vendo', vendo.slice(0, 80)); else sessionStorage.removeItem('oq-atlas-vendo') } catch { /* sem armazenamento: o painel mostra só a região */ }
   }, [selecao, catalogo, questoes])
   useEffect(() => () => { try { sessionStorage.removeItem('oq-atlas-vendo') } catch { /* idem */ } }, [])
-  const nomePassagem = passagem && catalogo ? (() => { const e = catalogo.estruturas.find((x) => x.id === passagem.id); return e ? nomeCompleto(e, passagem.faixa) : '' })() : ''
 
   // Esc limpa a seleção; F foca; I isola; H esconde
   useEffect(() => {
@@ -246,7 +262,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       if ((ev.target as HTMLElement)?.closest('input, textarea, [contenteditable]')) return
       const m = motorRef.current
       if (!m) return
-      if (ev.key === 'Escape') { if (questoes) definirQuestoes(null); else m.selecionar(null) }
+      if (ev.key === 'Escape') { if (!larga && detalhes) definirDetalhes(false); else if (questoes) definirQuestoes(null); else m.selecionar(null) }
       else if (ev.key === 'f' || ev.key === 'F') focarSelecao()
       else if (ev.key === 'i' || ev.key === 'I') isolarSelecao()
       else if (ev.key === 'h' || ev.key === 'H') ocultarSelecao()
@@ -352,11 +368,30 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       ? <PainelQuestoes titulo={questoes.titulo} ids={questoes.ids} aoVoltar={() => definirQuestoes(null)} />
       : <PainelFicha key={`${estrutura.id}|${selecao?.faixa ?? ''}`} anatomia={anatomia} fixacoes={fixacoes} estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
           isolada={isolado} aoFocar={focarSelecao} aoIsolar={isolarSelecao} aoOcultar={ocultarSelecao} aoFavoritar={alternarFavorito}
-          aoFechar={() => motorRef.current?.selecionar(null)} aoResponder={(titulo, ids) => { definirQuestoes({ titulo, ids }); definirAltura('inteira') }} />
+          aoFechar={larga ? () => motorRef.current?.selecionar(null) : () => definirDetalhes(false)} aoRecolher={larga ? () => definirDetalhes(false) : undefined}
+          aoResponder={(titulo, ids) => { definirQuestoes({ titulo, ids }); definirDetalhes(true) }} />
+  ) : null
+
+  const irNaTrilha = (passo: number) => {
+    const alvo = trilha.current[posTrilha + passo]
+    const m = motorRef.current
+    if (!alvo || !m || !m.existe(alvo.id)) return
+    andandoNaTrilha.current = true
+    definirPosTrilha(posTrilha + passo)
+    const g = m.grupoDe(alvo.id)
+    const ir = () => { m.selecionar(alvo); m.focar([alvo.id], alvo.faixa) }
+    if (g && !ligados.has(g)) mudarGrupo(g, true, ir); else ir()
+  }
+  const cartao = estrutura ? (
+    <CartaoRapido estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} registro={registro} indice={indice} isolada={isolado}
+      podeVoltar={posTrilha > 0} podeAvancar={posTrilha < trilha.current.length - 1}
+      aoDetalhes={() => definirDetalhes(true)} aoFocar={focarSelecao} aoIsolar={isolarSelecao}
+      aoVoltar={() => irNaTrilha(-1)} aoAvancar={() => irNaTrilha(1)}
+      aoFechar={() => motorRef.current?.selecionar(null)} aoIr={irParaChave} />
   ) : null
 
   return (
-    <div className={`atlas${larga ? ' atlas--larga' : ' atlas--estreita'}${questoes && larga ? ' atlas--questoes' : ''}`} role="dialog" aria-modal="true" aria-label="Atlas Ortopédico 3D">
+    <div className={`atlas${larga ? ' atlas--larga' : ' atlas--estreita'}${questoes && larga ? ' atlas--questoes' : ''}${estrutura ? ' atlas--selecao' : ''}`} role="dialog" aria-modal="true" aria-label="Atlas Ortopédico 3D">
       <div className="atlas__palco" ref={palco} />
 
       {/* topo */}
@@ -489,16 +524,13 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         </aside>
       )}
 
-      {/* nome sob o cursor */}
-      {passagem && !selecao && larga && <div className="atlas__dica" style={{ left: passagem.x + 14, top: passagem.y + 14 }}>{nomePassagem}</div>}
+      {/* nome sob o cursor (só no computador, sem redesenhar o atlas a cada movimento) */}
+      {larga && catalogo && !selecao && <DicaPassagem catalogo={catalogo} registrar={registrarPassagem} />}
 
-      {/* ficha: painel à direita (computador) ou gaveta (celular) */}
-      {painelDireito && (larga
-        ? <aside className="atlas__ficha" aria-label="Ficha da estrutura">{painelDireito}</aside>
-        : <section className={`atlas__gaveta atlas__gaveta--${altura}`} aria-label="Ficha da estrutura">
-            <button type="button" className="atlas__alca" onClick={() => definirAltura((a) => (a === 'espiada' ? 'meia' : a === 'meia' ? 'inteira' : 'espiada'))} aria-label="Mudar a altura da ficha"><span /></button>
-            {painelDireito}
-          </section>)}
+      {/* seleção: cartão compacto; detalhes no painel lateral (computador) ou num modal (celular) */}
+      {estrutura && (larga
+        ? (detalhes ? <aside className="atlas__ficha" aria-label="Ficha da estrutura">{painelDireito}</aside> : cartao)
+        : <>{cartao}{detalhes && <ModalDetalhes rotulo={questoes ? questoes.titulo : `Ficha: ${nomeCompleto(estrutura, selecao?.faixa)}`} alto={!!questoes} aoFechar={() => definirDetalhes(false)}>{painelDireito}</ModalDetalhes>}</>)}
 
       {/* estados */}
       {!catalogo && !erro && <div className="atlas__carregando"><EsperaPixel rotulo="Montando o esqueleto" /></div>}
@@ -528,3 +560,12 @@ function lerCamadas(consulta: URLSearchParams): Grupo[] {
   return c?.length ? c : ['osso']
 }
 export const hex = (n: number) => `#${n.toString(16).padStart(6, '0')}`
+
+/** O nome da estrutura sob o cursor, com estado próprio: só este rótulo muda quando o mouse passa. */
+function DicaPassagem({ catalogo, registrar }: { catalogo: Catalogo; registrar: (f: ((p: Passagem | null) => void) | null) => void }) {
+  const [passagem, definirPassagem] = useState<Passagem | null>(null)
+  useEffect(() => { registrar(definirPassagem); return () => registrar(null) }, [registrar])
+  if (!passagem) return null
+  const e = catalogo.estruturas.find((x) => x.id === passagem.id)
+  return e ? <div className="atlas__dica" style={{ left: passagem.x + 14, top: passagem.y + 14 }}>{nomeCompleto(e, passagem.faixa)}</div> : null
+}
