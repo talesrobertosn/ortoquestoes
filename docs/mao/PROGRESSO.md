@@ -717,11 +717,11 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | publicada |
 | 37 | Epífise proximal da fíbula | reformulada | 46 | Enxerto vascularizado | 06 | mao-2406 | aplicada |
 | 38 | IFP do mínimo no DUPUYTREN | reformulada | 4 | Dupuytren | 06 | mao-2407 | aplicada |
-| 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
-| 40 | Radioulnar distal: estabilizadores secundários | anatomia | cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2297 | publicada |
-| 41 | Lágrima: projeção volar da faceta semilunar | afirmativas | cap. 15, p. 604, 608, 628 e 648 | mao / Fratura do rádio distal | 07 | mao-2310 | publicada |
-| 42 | Retalho no extravasamento de quimioterápico | reformulada | 44 | Cobertura | 11 | mao-2331 | publicada |
-| 43 | Placa da coluna radial: distal dorsal, proximal palmar | técnica | cap. 15, p. 643 | mao / Fratura do rádio distal | 07 | mao-2311 | publicada |
+| 39 | CURTIS estágio IV | reformulada | 5 | Extensores | 07 | mao-2408 | aplicada |
+| 40 | Sinal de lesão pós-ganglionar | reformulada | 34 | Plexo | 07 | mao-2409 | aplicada |
+| 41 | Laceração parcial do extensor | reformulada (Green dá a regra para a zona 2) | 5 | Extensores | 07 | mao-2410 | aplicada |
+| 42 | Retalho inguinal | reformulada | 44 | Cobertura | 07 | mao-2411 | aplicada |
+| 43 | Colo do metacarpo e JAHSS | reformulada | 7 | Metacarpos | 07 | mao-2412 | aplicada |
 | 44 | Escafolunar dorsal: translação e afastamento | anatomia | cap. 16, p. 678; cap. 13, p. 492 | mao / Instabilidade do carpo | 06 | mao-2307 | publicada (divergência: a correção marcou rotação; o Green dá rotação à porção palmar) |
 | 45 | Martelo tendíneo: a partir dos 11 anos | número | cap. 5, p. 191 | mao / Lesões dos tendões extensores | 05 | mao-2301 | publicada |
 | 46 | FOWLER: técnica (até 35 graus) | técnica | cap. 5, p. 196 e 197 (Fig. 5.19) | mao / Lesões dos tendões extensores | 05 | mao-2299 | publicada (original sem resposta defensável; refeita com resposta única) |
