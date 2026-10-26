@@ -64,6 +64,8 @@ export function FichaAnatomica({ registro: r, indice, ativas, semGeometria, cont
         {r.restringe && <Linha rotulo="Restringe">{r.restringe}</Linha>}
         {r.raizes && r.tipo === 'nervo' && <Linha rotulo="Raízes">{r.raizes}</Linha>}
         {r.sensitivo && <Linha rotulo="Sensitivo">{r.sensitivo}</Linha>}
+        {r.ramos && <Linha rotulo="Ramos">{r.ramos}</Linha>}
+        {r.irriga && <Linha rotulo="Irriga">{r.irriga}</Linha>}
       </dl>
 
       {r.clinica && (
@@ -80,7 +82,7 @@ export function FichaAnatomica({ registro: r, indice, ativas, semGeometria, cont
         </details>
       )}
       {r.trajeto && (
-        <details className="fa-secao" open={r.tipo === 'nervo'}>
+        <details className="fa-secao" open={r.tipo === 'nervo' || r.tipo === 'arteria'}>
           <summary>Trajeto</summary>
           <p>{r.trajeto}</p>
         </details>
@@ -143,7 +145,7 @@ function Linha({ rotulo, cor, children }: { rotulo: string; cor?: string; childr
   )
 }
 
-const TIPO: Record<string, string> = { musculo: 'músculo', nervo: 'nervo', ligamento: 'ligamento' }
+const TIPO: Record<string, string> = { musculo: 'músculo', nervo: 'nervo', ligamento: 'ligamento', arteria: 'artéria' }
 function Chip({ r, aoIr, extra }: { r: RegistroAnatomico; aoIr: (c: string) => void; extra?: string }) {
   return (
     <button type="button" className={`fa-chip fa-chip--${r.tipo}`} onClick={() => aoIr(r.chave)} title={`Ir até: ${r.nome} (${TIPO[r.tipo] ?? r.tipo})`} disabled={!r.ids.length}>

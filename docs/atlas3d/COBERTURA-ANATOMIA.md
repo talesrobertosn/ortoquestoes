@@ -1,6 +1,6 @@
 # Cobertura do banco anatômico do Atlas 3D
 
-Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 12 lote(s). Não editar à mão.
+Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 14 lote(s). Não editar à mão.
 
 ## Totais
 
@@ -9,22 +9,23 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 12 lote(s). Não ed
 | musculo | 131 | 130 | 0 | 1 | 131 |
 | nervo | 63 | 61 | 0 | 2 | 55 |
 | ligamento | 84 | 82 | 1 | 1 | 84 |
+| arteria | 38 | 37 | 0 | 1 | 38 |
 
 ## Por região
 
-| Região | Músculos | Nervos | Ligamentos | Outros |
+| Região | Músculos | Nervos | Ligamentos | Artérias |
 |---|---|---|---|---|
 | coluna | 30 | 8 | 0 | 0 |
-| ombro | 15 | 11 | 17 | 0 |
-| braco | 4 | 8 | 0 | 0 |
+| ombro | 15 | 11 | 17 | 10 |
+| braco | 4 | 8 | 0 | 5 |
 | cotovelo | 0 | 0 | 6 | 0 |
-| antebraco | 20 | 6 | 1 | 0 |
-| punho-mao | 10 | 7 | 18 | 0 |
-| pelve-quadril | 12 | 14 | 7 | 0 |
-| coxa | 14 | 0 | 0 | 0 |
-| joelho | 1 | 0 | 14 | 0 |
-| perna | 13 | 7 | 1 | 0 |
-| tornozelo-pe | 12 | 2 | 20 | 0 |
+| antebraco | 20 | 6 | 1 | 4 |
+| punho-mao | 10 | 7 | 18 | 2 |
+| pelve-quadril | 12 | 14 | 7 | 8 |
+| coxa | 14 | 0 | 0 | 2 |
+| joelho | 1 | 0 | 14 | 2 |
+| perna | 13 | 7 | 1 | 3 |
+| tornozelo-pe | 12 | 2 | 20 | 2 |
 
 ## Campos preenchidos (músculos)
 
@@ -48,6 +49,7 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 12 lote(s). Não ed
 - **Lumbricais do pé** (conflito): O Netter traz duas divisões: na tabela de músculos, só o 1º lumbrical pelo plantar medial (2º a 4º pelo lateral); no texto dos nervos, os dois mediais pelo plantar medial. A segunda forma é a mais citada nos textos de anatomia.
 - **Ligamento colateral fibular (LCF)** (conflito): O Netter escreve 'região medial da cabeça da fíbula'; a prancha mostra a inserção na face lateral, e a maioria dos textos descreve a face lateral.
 - **Ligamentos radiossemilunares longo e curto** (pendente): O modelo 3D não separa esses dois ligamentos; o id ligado ('radiate_carpal_ligament', ligamento radiado do carpo) é a melhor aproximação disponível e precisa de conferência visual antes de virar 'verificado'.
+- **Artéria circunflexa anterior do úmero** (conflito): O Netter traz as duas afirmações na mesma tabela: a circunflexa anterior (ramo ascendente) como suprimento primário da cabeça e a posterior como a que supre a maior parte da cabeça. Estudos de perfusão mais recentes dão a maior parte à circunflexa posterior.
 
 ## Malhas de músculo ainda sem registro (78)
 

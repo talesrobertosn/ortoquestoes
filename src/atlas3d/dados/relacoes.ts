@@ -34,7 +34,7 @@ export function idsDoRegistro(r: RegistroAnatomico, lado: Estrutura['s'], mundo:
 
 /** Estruturas citadas pelo registro: ossos de origem e inserção, nervos e relações "ver". */
 export function relacionadosDe(r: RegistroAnatomico, indice: IndiceAnatomico) {
-  const chaves = new Set<string>([...(r.nervos ?? []), ...(r.ver ?? []), ...(r.inerva ?? [])])
+  const chaves = new Set<string>([...(r.nervos ?? []), ...(r.ver ?? []), ...(r.inerva ?? []), ...(r.citado ?? [])])
   chaves.delete(r.chave)
   return [...chaves].map((c) => indice.porChave.get(c)).filter(Boolean) as RegistroAnatomico[]
 }

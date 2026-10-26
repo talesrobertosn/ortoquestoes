@@ -66,6 +66,7 @@ const CAMPOS = {
   musculo: [...COMUNS, 'origem', 'insercao', 'nervos', 'acao'],
   nervo: [...COMUNS, 'raizes', 'trajeto', 'sensitivo'],
   ligamento: [...COMUNS, 'articulacao', 'origem', 'insercao', 'funcao', 'restringe'],
+  arteria: [...COMUNS, 'trajeto', 'ramos', 'irriga'],
 }
 const porChave = new Map()
 const donoDoId = new Map()
@@ -116,6 +117,13 @@ for (const r of registros) {
   }
 }
 
+// Visualizações prontas (src/atlas3d/dados/presets.ts): toda chave citada precisa existir no banco
+const fontePresets = readFileSync(join(RAIZ, 'src/atlas3d/dados/presets.ts'), 'utf8')
+for (const m of fontePresets.matchAll(/id: '([^']+)'[^\n]*regiao: '([^']+)', chaves: \[([^\]]+)\]/g)) {
+  if (!REGIOES.includes(m[2])) erros.push(`presets.ts › ${m[1]}: região desconhecida "${m[2]}"`)
+  for (const c of m[3].match(/'([^']+)'/g).map((x) => x.slice(1, -1))) if (!porChave.has(c)) erros.push(`presets.ts › ${m[1]}: chave inexistente "${c}"`)
+}
+
 // Derivados
 const inerva = new Map()
 const noOsso = new Map()
@@ -133,7 +141,14 @@ for (const r of registros) {
   }
 }
 
-const limpo = registros.map(({ _lote, ...r }) => ({ ...r, ...(r.tipo === 'nervo' && inerva.get(r.chave) ? { inerva: inerva.get(r.chave) } : {}) }))
+// relação de volta: quem cita este registro em "ver" (a artéria circunflexa posterior aparece na ficha do nervo axilar)
+const citadoPor = new Map()
+for (const r of registros) for (const v of r.ver ?? []) if (!(porChave.get(v)?.ver ?? []).includes(r.chave)) citadoPor.set(v, [...(citadoPor.get(v) ?? []), r.chave])
+const limpo = registros.map(({ _lote, ...r }) => ({
+  ...r,
+  ...(r.tipo === 'nervo' && inerva.get(r.chave) ? { inerva: inerva.get(r.chave) } : {}),
+  ...(citadoPor.get(r.chave) ? { citado: citadoPor.get(r.chave) } : {}),
+}))
 const saida = {
   versao: 1,
   fontes: FONTES,
@@ -152,11 +167,11 @@ for (const t of Object.keys(TIPOS)) {
   if (!n) continue
   linhas.push(`| ${t} | ${n} | ${contar((r) => r.tipo === t && r.status === 'verificado')} | ${contar((r) => r.tipo === t && r.status === 'pendente')} | ${contar((r) => r.tipo === t && r.status === 'conflito')} | ${contar((r) => r.tipo === t && r.ids?.length)} |`)
 }
-linhas.push('', '## Por região', '', '| Região | Músculos | Nervos | Ligamentos | Outros |', '|---|---|---|---|---|')
+linhas.push('', '## Por região', '', '| Região | Músculos | Nervos | Ligamentos | Artérias |', '|---|---|---|---|---|')
 for (const g of REGIOES) {
   const d = registros.filter((r) => r.regiao === g)
   if (!d.length) continue
-  linhas.push(`| ${g} | ${d.filter((r) => r.tipo === 'musculo').length} | ${d.filter((r) => r.tipo === 'nervo').length} | ${d.filter((r) => r.tipo === 'ligamento').length} | ${d.filter((r) => !['musculo', 'nervo', 'ligamento'].includes(r.tipo)).length} |`)
+  linhas.push(`| ${g} | ${d.filter((r) => r.tipo === 'musculo').length} | ${d.filter((r) => r.tipo === 'nervo').length} | ${d.filter((r) => r.tipo === 'ligamento').length} | ${d.filter((r) => r.tipo === 'arteria').length} |`)
 }
 const musculos = registros.filter((r) => r.tipo === 'musculo')
 const campos = [['origem', (r) => r.origem?.t], ['inserção', (r) => r.insercao?.t], ['inervação', (r) => r.nervos?.length], ['ação', (r) => r.acao], ['importância ortopédica', (r) => r.clinica], ['relações', (r) => r.relacoes?.length], ['marco 3D da origem', (r) => r.origem?.m?.length], ['marco 3D da inserção', (r) => r.insercao?.m?.length], ['origem marcada no modelo (marco ou osso)', (r) => r.origem?.m?.length || r.origem?.o?.length], ['inserção marcada no modelo (marco ou osso)', (r) => r.insercao?.m?.length || r.insercao?.o?.length]]

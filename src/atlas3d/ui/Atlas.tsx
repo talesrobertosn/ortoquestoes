@@ -4,7 +4,7 @@ import { carregarCatalogo, carregarPontos } from '../motor/carregador'
 import { GRUPOS, ORDEM_GRUPOS, grupoDe } from '../config'
 import type { Catalogo, Estrutura, Grupo, Ponto, Selecao } from '../tipos'
 import { REGIOES, caixasDaRegiao, regiaoPorId, type Lateralidade } from '../dados/regioes'
-import { LADO, nomeCompleto, nomeDe } from '../dados/nomes'
+import { LADO, nomeCompleto, nomeDe, registrarNomes } from '../dados/nomes'
 import { fichaDe, carregarVinculos, type Vinculo } from '../dados/fichas'
 import { buscar } from '../dados/busca'
 import { Icone } from '../../componentes/Icone'
@@ -22,6 +22,7 @@ import { FichaAnatomica, FixacoesDoOsso } from './FichaAnatomica'
 import { carregarAnatomia, idNoLado, registroDaEstrutura, type IndiceAnatomico } from '../dados/anatomia'
 import { fixadosNoOsso, idsDoRegistro, indexarPontos, marcosNoOsso, montarRelacoes, relacionadosDe, type Mundo, type Relacao } from '../dados/relacoes'
 import { faixaPorAltura } from '../dados/faixas'
+import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
 import { corDaArea } from '../../dados/coresAreas'
 import '../../estilos/paginas/Atlas3D.css'
 
@@ -70,6 +71,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [ativas, definirAtivas] = useState<Set<Relacao>>(new Set())
   const [contexto, definirContexto] = useState(false)
   const [pontosOsso, definirPontosOsso] = useState(false)
+  const [preset, definirPreset] = useState<Preset | null>(null)
   const toque = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   const previa = useRef<ReturnType<typeof setTimeout> | null>(null)
   useEffect(() => () => { if (previa.current) clearTimeout(previa.current) }, [])
@@ -112,7 +114,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       }
     }).catch(() => vivo && definirErro('Não foi possível abrir o atlas. Verifique a conexão e tente de novo.'))
     carregarVinculos().then((v) => vivo && definirVinculos(v)).catch(() => {})
-    carregarAnatomia().then((a) => vivo && definirIndice(a)).catch(() => {})
+    carregarAnatomia().then((a) => {
+      // nomes do banco valem como nome em português onde o catálogo ainda não tem tradução (artérias, por exemplo);
+      // só para registro de uma malha, para não dar o nome do grupo a cada parte
+      registrarNomes(Object.fromEntries(a.registros.filter((r) => r.ids.length === 1).map((r) => [r.ids[0], r.nome])))
+      if (vivo) definirIndice(a)
+    }).catch(() => {})
     carregarPontos().then((p) => vivo && definirPontos(indexarPontos(p))).catch(() => {})
     return () => { vivo = false; m.descartar(); motorRef.current = null }
     // monta uma vez; o resto do estado conversa com o motor pelos efeitos abaixo
@@ -193,7 +200,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (m.estaIsolado) { m.isolar(null); definirIsolado(false) } else { m.isolar([selecao.id]); definirIsolado(true); m.focar([selecao.id], selecao.faixa) }
   }
   const ocultarSelecao = () => { if (selecao) motorRef.current?.ocultar(selecao.id) }
-  const restaurar = () => { const m = motorRef.current; if (!m) return; m.isolar(null); m.mostrarTodas(); definirIsolado(false); m.definirCorte(null); definirCorteUI(null) }
+  const restaurar = () => { const m = motorRef.current; if (!m) return; definirPreset(null); m.isolar(null); m.mostrarTodas(); definirIsolado(false); m.definirCorte(null); definirCorteUI(null) }
   const alternarFavorito = () => { if (!selecao) return; definirPref((p) => ({ ...p, favoritos: p.favoritos.includes(selecao.id) ? p.favoritos.filter((f) => f !== selecao.id) : [selecao.id, ...p.favoritos] })) }
 
   const irPara = (e: Estrutura) => {
@@ -210,7 +217,17 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
 
   const mudarCorte = (c: Corte | null) => { definirCorteUI(c); motorRef.current?.definirCorte(c) }
 
-  const resultados = useMemo(() => (catalogo && busca.trim().length >= 2 ? buscar(catalogo.estruturas, busca, 30) : []), [catalogo, busca])
+  // nomes do banco anatômico entram na busca ("Deltoide", "Ligamento de Lisfranc", "LCA")
+  const extrasBusca = useMemo(() => {
+    const m = new Map<string, string[]>()
+    for (const r of indice?.registros ?? []) for (const id of r.ids) m.set(id, [...(m.get(id) ?? []), r.nome, r.en])
+    return m
+  }, [indice])
+  const resultados = useMemo(() => (catalogo && busca.trim().length >= 2 ? buscar(catalogo.estruturas, busca, 30, extrasBusca) : []), [catalogo, busca, extrasBusca])
+  const normalBusca = busca.trim().normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+  const semAcento = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+  const regioesAchadas = normalBusca.length >= 2 ? REGIOES.filter((r) => semAcento(r.nome).includes(normalBusca)) : []
+  const presetsAchados = normalBusca.length >= 2 ? PRESETS.filter((p) => semAcento(`${p.nome} ${p.resumo}`).includes(normalBusca)) : []
   const ficha = estrutura ? fichaDe(estrutura, selecao?.faixa) : undefined
   const vinculo = ficha && vinculos ? vinculos[ficha.chave] : undefined
   const carregando = ORDEM_GRUPOS.filter((g) => ligados.has(g) && (progresso[g] ?? 0) < 1)
@@ -254,6 +271,15 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     ? montarRelacoes(registro, indice, estrutura.s, ativas, pontos, mundo) : null
     // eslint-disable-next-line react-hooks/exhaustive-deps
   ), [registro, indice, pontos, estrutura?.id, ativas, motor])
+  const ladoPreset: Estrutura['s'] = lado === 'e' ? 'e' : 'd'
+  const destaquesPreset = useMemo(() => {
+    if (!preset || !indice || !motor) return []
+    const existe = (id: string) => motor.existe(id)
+    return preset.chaves.flatMap((c, i) => {
+      const r = indice.porChave.get(c)
+      return (r?.ids ?? []).map((b) => idNoLado(b, ladoPreset, existe)).filter(Boolean).map((id) => ({ id: id as string, cor: CORES_PRESET[i % CORES_PRESET.length] }))
+    })
+  }, [preset, indice, motor, ladoPreset])
   const fixados = useMemo(() => (estrutura && indice && pontos && grupoDe(estrutura) === 'osso'
     ? fixadosNoOsso(indice, estrutura, selecao?.faixa, pontos, (z) => faixaPorAltura(estrutura, z)) : []
   ), [estrutura, indice, pontos, selecao?.faixa])
@@ -262,9 +288,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (!m) return
     if (montagem) m.mostrarRelacoes(montagem.destaques, montagem.marcos, montagem.linhas)
     else if (fixados.length && pontosOsso && estrutura && pontos) m.mostrarRelacoes([], marcosNoOsso(fixados, estrutura, pontos))
-    else m.mostrarRelacoes([])
+    else m.mostrarRelacoes(preset ? destaquesPreset : [])
     // as camadas recém-carregadas entram no desenho: depende de ligados e do progresso
-  }, [montagem, fixados, pontosOsso, estrutura, pontos, ligados, progresso])
+  }, [montagem, fixados, pontosOsso, estrutura, pontos, ligados, progresso, preset, destaquesPreset])
 
   const alternarRelacao = (x: Relacao) => {
     const novo = new Set(ativas)
@@ -295,6 +321,24 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     const e = id ? m.estrutura(id) : undefined
     if (e) irPara(e)
   }
+  // ---------- visualizações prontas ----------
+  const aplicarPreset = (p: Preset) => {
+    const m = motorRef.current
+    if (!m || !indice) return
+    escolherRegiao(p.regiao, lado === 'ambos' ? 'd' : lado)
+    definirPreset(p)
+    const existe = (id: string) => m.existe(id)
+    const lado1: Estrutura['s'] = lado === 'e' ? 'e' : 'd'
+    const ids = p.chaves.flatMap((c) => indice.porChave.get(c)?.ids ?? []).map((b) => idNoLado(b, lado1, existe)).filter(Boolean) as string[]
+    // liga só as camadas que a pessoa já pode usar sem convite; o que é de outro plano aparece com cadeado na legenda
+    const grupos = new Set(ids.map((id) => m.grupoDe(id)).filter(Boolean) as Grupo[])
+    for (const g of grupos) if (!ligados.has(g) && podeLigar(g)) mudarGrupo(g, true)
+    m.isolar(ids)
+    definirIsolado(true)
+  }
+  const podeLigar = (g: Grupo) => nivel === 'assinante' || (nivel === 'conta' && GRATIS.has(g))
+  const sairDoPreset = () => { motorRef.current?.isolar(null); definirIsolado(false); definirPreset(null) }
+
   const anatomia = registro && indice ? (
     <FichaAnatomica registro={registro} indice={indice} ativas={ativas} semGeometria={montagem?.semGeometria ?? []} contexto={contexto}
       aoAlternar={alternarRelacao} aoContexto={alternarContexto} aoIr={irParaChave} />
@@ -334,9 +378,11 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
           <label className="at-busca"><Icone nome="busca" tamanho={17} /><input type="search" value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder="Buscar: fêmur, nervo radial, ulnar…" aria-label="Buscar estrutura" /></label>
           {busca.trim().length >= 2 ? (
             <ul className="at-resultados">
+              {regioesAchadas.map((r) => <li key={`r-${r.id}`}><button type="button" onClick={() => { escolherRegiao(r.id); definirBusca('') }}><Icone nome="mapa" tamanho={14} />{r.nome}<small>região</small></button></li>)}
+              {presetsAchados.map((p) => <li key={`p-${p.id}`}><button type="button" onClick={() => { aplicarPreset(p); definirBusca('') }}><Icone nome="olho" tamanho={14} />{p.nome}<small>visualização</small></button></li>)}
               {resultados.length ? resultados.map((e) => (
                 <li key={e.id}><button type="button" onClick={() => irPara(e)}><span className="at-ponto" style={{ background: hex(GRUPOS[grupoDe(e)].cor) }} />{nomeDe(e)}{e.s !== 'm' && <small>{LADO[e.s]}</small>}</button></li>
-              )) : <li className="at-vazio">Nada encontrado com esse nome.</li>}
+              )) : !regioesAchadas.length && !presetsAchados.length && <li className="at-vazio">Nada encontrado com esse nome.</li>}
             </ul>
           ) : (
             <>
@@ -353,6 +399,20 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
                 <div className="at-segmentos" role="group" aria-label="Lado">
                   {(['ambos', 'd', 'e'] as Lateralidade[]).map((l) => <button key={l} type="button" aria-pressed={lado === l} onClick={() => escolherRegiao(regiao.id, l)}>{l === 'ambos' ? 'Ambos' : l === 'd' ? 'Direito' : 'Esquerdo'}</button>)}
                 </div>
+              )}
+              {indice && (
+                <>
+                  <h2 className="at-titulo-secao"><Icone nome="olho" tamanho={14} /> Visualizações prontas{regiao ? ` · ${regiao.nome}` : ''}</h2>
+                  <div className="at-presets">
+                    {(regiao ? PRESETS.filter((p) => p.regiao === regiao.id) : PRESETS).map((p) => (
+                      <button type="button" key={p.id} className={`at-preset${preset?.id === p.id ? ' at-preset--ativo' : ''}`} onClick={() => aplicarPreset(p)}>
+                        <span className="at-preset__cores" aria-hidden="true">{p.chaves.slice(0, 4).map((c, i) => <i key={c} style={{ background: CORES_PRESET[i] }} />)}</span>
+                        <strong>{p.nome}</strong><small>{p.resumo}</small>
+                      </button>
+                    ))}
+                    {regiao && !PRESETS.some((p) => p.regiao === regiao.id) && <p className="at-nota">Ainda não há visualização pronta para esta região.</p>}
+                  </div>
+                </>
               )}
               {catalogo && pref.favoritos.length > 0 && <ListaRapida titulo="Favoritas" ids={pref.favoritos} catalogo={catalogo} aoIr={irPara} />}
               {catalogo && pref.recentes.length > 0 && <ListaRapida titulo="Recentes" ids={pref.recentes} catalogo={catalogo} aoIr={irPara} />}
@@ -407,6 +467,27 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
           </button>
         ))}
       </div>
+
+      {/* legenda da visualização pronta */}
+      {preset && indice && !estrutura && (
+        <aside className="atlas__preset" aria-label={`Visualização: ${preset.nome}`}>
+          <header><p className="tr-heroi__selo">Visualização</p><button type="button" className="at-botao-icone" onClick={sairDoPreset} aria-label="Sair da visualização" title="Sair da visualização"><Icone nome="fechar" tamanho={16} /></button></header>
+          <h2>{preset.nome}</h2>
+          <ul>{preset.chaves.map((c, i) => {
+            const r = indice.porChave.get(c)
+            if (!r) return null
+            const g = r.ids[0] && motor ? motor.grupoDe(idNoLado(r.ids[0], ladoPreset, (x) => motor.existe(x)) ?? '') : undefined
+            const fechado = !!g && !ligados.has(g)
+            return <li key={c}><button type="button" onClick={() => irParaChave(c)} className={fechado ? 'atlas__preset-fechado' : undefined}><i style={{ background: CORES_PRESET[i % CORES_PRESET.length] }} />{r.nome}{fechado && <Icone nome="cadeado" tamanho={12} />}</button></li>
+          })}</ul>
+          <p className="at-nota">{(() => {
+            const fechados = new Set(preset.chaves.flatMap((c) => { const r = indice.porChave.get(c); const id = r?.ids[0] && motor ? idNoLado(r.ids[0], ladoPreset, (x) => motor.existe(x)) : undefined; const g = id ? motor?.grupoDe(id) : undefined; return g && !ligados.has(g) ? [g] : [] }))
+            if (!fechados.size) return 'Toque num nome para abrir a ficha.'
+            if (nivel === 'visitante' && [...fechados].some((g) => GRATIS.has(g))) return 'Com a conta grátis, os músculos também aparecem aqui. Toque num nome para abrir a ficha.'
+            return 'Os itens com cadeado ficam nas camadas de assinante.'
+          })()}</p>
+        </aside>
+      )}
 
       {/* nome sob o cursor */}
       {passagem && !selecao && larga && <div className="atlas__dica" style={{ left: passagem.x + 14, top: passagem.y + 14 }}>{nomePassagem}</div>}
