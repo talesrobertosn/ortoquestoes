@@ -904,9 +904,11 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 6 | Tumor de pele mais comum da mão | reformulada | 58 | Tumores de pele | 01 | mao-2469 | aplicada |
 | 8 | Zona 8 extensora | reformulada | 5 | Extensores | 01 | mao-2470 | aplicada |
 | 9 | Sindactilia e BMP | reformulada | 35 | Embriologia | 02 | mao-2471 | aplicada |
+| 10 | Categoria mais frequente de lesão medular | reformulada | 33 | Tetraplegia | 07 | mao-2496 | aplicada |
 | 12 | Profundo lesado com superficial íntegro | reformulada (princípio destacado pelo Green) | 6 | Flexores | 02 | mao-2472 | aplicada |
 | 13 | FOWLER e ligamento triangular | reformulada | 5 | Extensores | 06 | mao-2492 | aplicada |
 | 14 | Incisura sigmoide plana | reformulada | 14 | Radioulnar distal | 02 | mao-2473 | aplicada |
+| 16 | Entrada do nervo obturador no grácil | reformulada (ângulo diferente do SIMÃO 2022) | 34 | Plexo | 07 | mao-2499 | aplicada |
 | 17 | Síndrome da intersecção | reformulada | 56 | Tendinopatias | 02 | mao-2474 | aplicada |
 | 18 | Lesão de MANNERFELT | reformulada | 55 | Reumatoide | 02 | mao-2475 | aplicada |
 | 19 | Organogênese e cirurgia na gestante | reformulada | 1 | Anestesia | 04 | mao-2481 | aplicada |
@@ -919,11 +921,28 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 27 | Lesões do nervo radial | reformulada | 31 | Transferências | 03 | mao-2478 | aplicada |
 | 29 | Diáfise do metacarpo | reformulada | 7 | Metacarpos | 06 | mao-2493 | aplicada |
 | 30 | Intramedular nas falanges | reformulada | 7 | Falanges | 06 | mao-2494 | aplicada |
+| 32 | TSUGE grave | reformulada (ângulo diferente) | 51 | VOLKMANN | 07 | mao-2500 | aplicada |
 | 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
 | 39 | Local da lesão do colateral ulnar | reformulada | 8 | Ligamentos | 03 | mao-2480 | aplicada |
+| 45 | Artrodese da MCF do polegar | reformulada (transcrita da imagem) | 11 | Artrose | 08 | mao-2501 | aplicada |
+| 47 | Pseudartrose congênita da ulna | reformulada (transcrita da imagem) | 38 | Congênitas | 08 | mao-2502 | aplicada |
+| 48 | Local do gânglio volar | reformulada (transcrita da imagem) | 59 | Gânglios | 08 | mao-2503 | aplicada |
+| 53 | Ligamento radiocárpico dorsal | reformulada | 13 | Carpo | 08 | mao-2504 | aplicada |
+| 54 | Critérios de LAFONTAINE | reformulada | 15 | Rádio distal | 08 | mao-2505 | aplicada |
+| 55 | Pseudartrose na artrodese total do punho (prevenção na 3ª CMC) | reformulada, outro ângulo | 12, p. 465 | Artrose do punho | 09 | mao-2506 | aplicada |
+| 56 | Artrodese total com carpectomia proximal (radiocapitato e 3ª CMC) | reformulada, outro ângulo | 12, p. 463 e 465 | Artrose do punho | 09 | mao-2507 | aplicada |
+| 57 | Lesão de nervos periféricos (afirmações) | — | 30 | Nervos | — | — | pendente: sem gabarito e sem fonte para a alternativa do radial |
+| 58 | Garra mais acentuada na lesão ulnar baixa | reformulada, outro ângulo | 31, p. 1192, 1208 e 1209 | Transferências e paralisias | 09 | mao-2508 | aplicada |
+| 59 | Anatomia vascular (axila e arcos) | — | 60 | Anatomia | — | — | pendente: anatomia da axila fora do Green |
+| 60 | Contraindicação relativa ao reimplante | reformulada, outro ângulo | 42, p. 1653 | Amputações e reimplantes | 09 | mao-2509 | aplicada |
+| 61 | Interescalênico bilateral contraindicado (frênico) | reformulada, outro ângulo | 1, p. 1 e 2 | Anestesia | 09 | mao-2510 | aplicada |
+| 62 | Mecanismo do sinal de WARTENBERG | reformulada | 31, p. 1210 | Exame físico | 09 | mao-2511 | aplicada |
+| 63 | GARCIA-ELIAS 4: o que segura o semilunar | reformulada, uma só correta | 13, p. 513, 518 e 519 | Instabilidade do carpo | 09 | mao-2512 | aplicada |
+| 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
 | 95 | FCU proibido na paralisia do interósseo posterior | reformulada | 31 | Transferências | 06 | mao-2495 | aplicada |
 | 97 | TUBIANA estágio 2 | reformulada | 4 | Dupuytren | 04 | mao-2484 | aplicada |
 | 98 | Botoeira traumática | reformulada | 5 | Extensores | 04 | mao-2485 | aplicada |
+| 99 | Neurotizações no plexo braquial | reformulada | 34 | Plexo | 07 | mao-2498 | aplicada |
 | 100 | Irrigação do grande dorsal | reformulada | 45 | Retalhos livres | 05 | mao-2490 | aplicada |
