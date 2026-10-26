@@ -9,7 +9,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 
 | Prova | Arquivo local | Questões | Publicadas | Pendentes | Ids | Gabarito (A/B/C/D) |
 |---|---|---|---|---|---|---|
-| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 0 | 0 | | |
+| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 93 | 7 | mao-2466 a mao-2558 | A 25, B 23, C 28, D 17 |
 | SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 88 | 12 | mao-2378 a mao-2465 | A 26, B 21, C 24, D 17 |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 100 | 0 | mao-2278 a mao-2377 | A 27, B 25, C 25, D 23 |
@@ -900,14 +900,18 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 1 | Artroplastia da placa volar | reformulada (passo descrito no Green) | 8 | Ligamentos | 06 | mao-2491 | aplicada |
 | 2 | Falange em delta dupla | reformulada | 36 | Congênitas | 01 | mao-2466 | aplicada |
 | 3 | Estiloidectomia e radioescafocapitato | reformulada | 13 | Carpo | 01 | mao-2467 | aplicada |
+| 4 | KIENBÖCK: descarga com variância neutra (encurtar capitato) | reformulada, outro ângulo | 16, p. 735 | Kienböck | 16 | mao-2551 | aplicada |
 | 5 | LANZ: ramo motor do mediano | reformulada | 28 | Túnel do carpo | 01 | mao-2468 | aplicada |
 | 6 | Tumor de pele mais comum da mão | reformulada | 58 | Tumores de pele | 01 | mao-2469 | aplicada |
+| 7 | Rigidez após fratura-luxação do cotovelo: perde extensão | reformulada | 22, p. 990 | Cotovelo | 16 | mao-2552 | aplicada |
 | 8 | Zona 8 extensora | reformulada | 5 | Extensores | 01 | mao-2470 | aplicada |
 | 9 | Sindactilia e BMP | reformulada | 35 | Embriologia | 02 | mao-2471 | aplicada |
 | 10 | Categoria mais frequente de lesão medular | reformulada | 33 | Tetraplegia | 07 | mao-2496 | aplicada |
+| 11 | Braquidactilia do pseudo-hipoparatireoidismo | reformulada, outro ângulo | 36, p. 1392 e 1393 | Malformações congênitas | 16 | mao-2553 | aplicada |
 | 12 | Profundo lesado com superficial íntegro | reformulada (princípio destacado pelo Green) | 6 | Flexores | 02 | mao-2472 | aplicada |
 | 13 | FOWLER e ligamento triangular | reformulada | 5 | Extensores | 06 | mao-2492 | aplicada |
 | 14 | Incisura sigmoide plana | reformulada | 14 | Radioulnar distal | 02 | mao-2473 | aplicada |
+| 15 | Indicações da cirurgia de ZANCOLLI (bíceps pronador) | reformulada, outro ângulo | 33, p. 1278 | Tetraplegia | 16 | mao-2554 | aplicada |
 | 16 | Entrada do nervo obturador no grácil | reformulada (ângulo diferente do SIMÃO 2022) | 34 | Plexo | 07 | mao-2499 | aplicada |
 | 17 | Síndrome da intersecção | reformulada | 56 | Tendinopatias | 02 | mao-2474 | aplicada |
 | 18 | Lesão de MANNERFELT | reformulada | 55 | Reumatoide | 02 | mao-2475 | aplicada |
@@ -915,13 +919,18 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 20 | PHALEN e MILLER | reformulada | 31 | Transferências | 05 | mao-2486 | aplicada |
 | 21 | Ramo do retalho paraescapular | reformulada (ramos como no Green) | 45 | Retalhos livres | 05 | mao-2487 | aplicada |
 | 22 | Necrose da cabeça do rádio assintomática | reformulada | 19 | Cabeça do rádio | 03 | mao-2476 | aplicada |
+| 23 | Martelo agudo: tala volar ou dorsal, IFP livre | reformulada | 5, p. 193 | Tendões extensores | 16 | mao-2555 | aplicada |
 | 24 | Vasos fibulares na fíbula vascularizada | reformulada | 46 | Enxerto vascularizado | 04 | mao-2482 | aplicada |
 | 25 | WATERS tipo IV (falsa glenoide) | reformulada | 40 | Plexo obstétrico | 05 | mao-2488 | aplicada |
 | 26 | Dissociação escafolunar aguda | reformulada | 13 | Carpo | 03 | mao-2477 | aplicada |
 | 27 | Lesões do nervo radial | reformulada | 31 | Transferências | 03 | mao-2478 | aplicada |
+| 28 | Enxerto de veia invertido (válvulas) | reformulada, outro ângulo | 43, p. 1681 e 1683 | Microcirurgia | 15 | mao-2547 | aplicada |
 | 29 | Diáfise do metacarpo | reformulada | 7 | Metacarpos | 06 | mao-2493 | aplicada |
 | 30 | Intramedular nas falanges | reformulada | 7 | Falanges | 06 | mao-2494 | aplicada |
+| 31 | Fratura da cabeça do metacarpo: cominutiva é a mais comum | reformulada | 7, p. 260 e 261 | Metacarpos e falanges | 15 | mao-2548 | aplicada |
 | 32 | TSUGE grave | reformulada (ângulo diferente) | 51 | VOLKMANN | 07 | mao-2500 | aplicada |
+| 33 | Falhas de retalho livre em 72 horas (CHEN) | reformulada, outro ângulo | 45, p. 1754 | Microcirurgia | 15 | mao-2549 | aplicada |
+| 34 | Indicação da tenodese ulnocarpal (HUI e LINSCHEID) | reformulada, outro ângulo | 14, p. 579 | Radioulnar distal | 15 | mao-2550 | aplicada |
 | 35 | Desalinhamento adaptativo do carpo no rádio viciado | reformulada | 13, p. 544 e 545 | Instabilidade do carpo | 13 | mao-2535 | aplicada |
 | 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
 | 37 | De QUERVAIN: atividade de risco | — | 56 | Tenossinovites | — | — | pendente: tema já no acervo; atividade da alternativa oficial sem fonte no Green |
@@ -931,9 +940,15 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 41 | Rigidez intrínseca: alongar e liberação intrínseca distal | reformulada, outro ângulo | 10, p. 393 e 403 | Rigidez dos dedos | 13 | mao-2538 | aplicada |
 | 42 | McGOWAN grau I | reformulada | 26, p. 1105 | Neuropatia ulnar | 13 | mao-2539 | aplicada |
 | 43 | Luxação congênita da cabeça do rádio dolorosa no adolescente | reformulada, outro ângulo | 38, p. 1512 e 1515 | Malformações congênitas | 13 | mao-2540 | aplicada |
+| 44 | Sarcoma sinovial: imagem, metástase e prognóstico | reformulada | 59, p. 2215 | Tumores | 14 | mao-2541 | aplicada |
 | 45 | Artrodese da MCF do polegar | reformulada (transcrita da imagem) | 11 | Artrose | 08 | mao-2501 | aplicada |
+| 46 | Por que ADSON, WRIGHT e HALSTEAD perderam valor | reformulada, outro ângulo | 29, p. 1133 | Desfiladeiro torácico | 14 | mao-2542 | aplicada |
 | 47 | Pseudartrose congênita da ulna | reformulada (transcrita da imagem) | 38 | Congênitas | 08 | mao-2502 | aplicada |
 | 48 | Local do gânglio volar | reformulada (transcrita da imagem) | 59 | Gânglios | 08 | mao-2503 | aplicada |
+| 49 | Epineuro interno amortece a compressão | reformulada | 30, p. 1150 | Nervos | 14 | mao-2543 | aplicada |
+| 50 | Grande dorsal para flexão do cotovelo na artrogripose | reformulada | 39, p. 1543 | Artrogripose | 14 | mao-2544 | aplicada |
+| 51 | Oblíqua pronada de 60 graus para o parafuso do escafoide | reformulada | 16, p. 687 | Escafoide | 14 | mao-2545 | aplicada |
+| 52 | Miofibroblasto persistente no DUPUYTREN | reformulada, outro ângulo | 4, p. 151 e 154 | Dupuytren | 14 | mao-2546 | aplicada |
 | 53 | Ligamento radiocárpico dorsal | reformulada | 13 | Carpo | 08 | mao-2504 | aplicada |
 | 54 | Critérios de LAFONTAINE | reformulada | 15 | Rádio distal | 08 | mao-2505 | aplicada |
 | 55 | Pseudartrose na artrodese total do punho (prevenção na 3ª CMC) | reformulada, outro ângulo | 12, p. 465 | Artrose do punho | 09 | mao-2506 | aplicada |
@@ -972,9 +987,12 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 88 | Grácil livre funcional: ordem dos passos e vasos receptores | reformulada | 34, p. 1336 e 1338 | Microcirurgia / plexo | 12 | mao-2534 | aplicada |
 | 89 | Espessura do fio 10-0 | — | — | Microcirurgia | — | — | pendente: sem fonte no Green |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
+| 91 | Macrodactilia estática x progressiva | reformulada, outro ângulo | 36, p. 1438 | Malformações congênitas | 16 | mao-2556 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
+| 93 | Tendinite calcificante no flexor ulnar do carpo | reformulada | 56, p. 2116; 2, p. 30 | Tenossinovites | 16 | mao-2557 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
 | 95 | FCU proibido na paralisia do interósseo posterior | reformulada | 31 | Transferências | 06 | mao-2495 | aplicada |
+| 96 | DOYLE: tipo I mais comum; crônico após 4 semanas | reformulada | 5, p. 192 e 193 | Tendões extensores | 16 | mao-2558 | aplicada |
 | 97 | TUBIANA estágio 2 | reformulada | 4 | Dupuytren | 04 | mao-2484 | aplicada |
 | 98 | Botoeira traumática | reformulada | 5 | Extensores | 04 | mao-2485 | aplicada |
 | 99 | Neurotizações no plexo braquial | reformulada | 34 | Plexo | 07 | mao-2498 | aplicada |
