@@ -1,133 +1,147 @@
 import { memo } from 'react'
-import type { ArteConquista, NivelConquista } from './conquistasDia'
+import type { ArteConquista } from './conquistasDia'
 
 /**
- * As artes das conquistas do dia, em pixel art 16 × 16 desenhada por código (sem arquivos para
- * baixar): cada desenho é uma grade de letras, e cada letra uma cor. O metal muda com o nível
- * (bronze, prata, ouro, diamante). As formas redondas saem de círculos na grade, com contorno
- * escuro e luz no alto à esquerda, como nos outros desenhos do site.
+ * As artes das conquistas do dia, no clima de jogo aconchegante (cozy game): vasinho com rosto,
+ * planta que cresce, estrelinha, arco-íris entre nuvens e gatinho no almofadão. Pixel art 24 × 24
+ * desenhada por código (sem arquivos para baixar): formas arredondadas com contorno marrom quente
+ * (nunca preto), luz no alto à esquerda, bochechas rosadas e olhinhos.
  */
-const N = 16
+/** A grade tem 24 pixels; as formas são pensadas numa tela de 16 (E converte). */
+const N = 24
+const E = N / 16
 type Grade = string[][]
 const nova = (): Grade => Array.from({ length: N }, () => Array<string>(N).fill('.'))
-const centro = (i: number) => i + 0.5
-const dist = (x: number, y: number, cx: number, cy: number) => Math.hypot(centro(x) - cx, centro(y) - cy)
+/** Centro do pixel, na tela de 16. */
+const c = (i: number) => (i + 0.5) / E
+const dist = (x: number, y: number, cx: number, cy: number, rx = 1, ry = 1) => Math.hypot((c(x) - cx) / rx, (c(y) - cy) / ry)
+const dentroDe = (x: number, y: number) => x >= 0 && y >= 0 && x < N && y < N
 
-/** Pinta onde `dentro` vale, com contorno (k) nas bordas e luz/sombra no metal. */
+/** Pinta onde `dentro` vale, com contorno marrom (o) só na borda de fora da forma. */
 function forma(g: Grade, dentro: (x: number, y: number) => boolean, cor: (x: number, y: number) => string) {
   for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) {
     if (!dentro(x, y)) continue
-    const borda = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => { const a = x + dx, b = y + dy; return a < 0 || b < 0 || a >= N || b >= N || !dentro(a, b) })
-    g[y][x] = borda ? 'k' : cor(x, y)
+    const borda = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => !dentroDe(x + dx, y + dy) || !dentro(x + dx, y + dy))
+    g[y][x] = borda ? 'o' : cor(x, y)
   }
 }
-const pintar = (g: Grade, pontos: Array<[number, number]>, cor: string) => { for (const [x, y] of pontos) if (x >= 0 && y >= 0 && x < N && y < N) g[y][x] = cor }
-/** Metal com volume: claro no alto à esquerda, escuro embaixo à direita. */
-const metal = (cx: number, cy: number) => (x: number, y: number) => {
-  const d = (centro(x) - cx) + (centro(y) - cy)
-  return d < -3 ? 'l' : d > 2.5 ? 'd' : 'm'
+/** Detalhes à mão (olhos, bochechas, brilhos), em pixels da grade de 24. */
+const pintar = (g: Grade, pontos: Array<[number, number]>, cor: string) => { for (const [x, y] of pontos) if (dentroDe(x, y)) g[y][x] = cor }
+/** Luz suave: claro no alto à esquerda, sombra embaixo à direita. */
+const volume = (cx: number, cy: number, claro: string, meio: string, escuro: string, corte = 2.2) => (x: number, y: number) => {
+  const d = (c(x) - cx) + (c(y) - cy)
+  return d < -corte ? claro : d > corte ? escuro : meio
+}
+/** Rostinho fofo: olhos de dois pixels, bochechas e sorriso, centrado em x (pixels de 24). */
+function rosto(g: Grade, x: number, y: number, fechados = false) {
+  if (fechados) pintar(g, [[x - 3, y + 1], [x - 2, y], [x - 1, y + 1], [x + 2, y + 1], [x + 3, y], [x + 4, y + 1]], 'o')
+  else pintar(g, [[x - 2, y], [x - 2, y + 1], [x + 3, y], [x + 3, y + 1]], 'o')
+  pintar(g, [[x - 4, y + 2], [x - 3, y + 2], [x + 4, y + 2], [x + 5, y + 2]], 'r')
+  pintar(g, [[x - 1, y + 2], [x, y + 3], [x + 1, y + 3], [x + 2, y + 2]], 'o')
 }
 
-function medalha(): Grade {
-  const g = nova()
-  // fita em V, com contorno: vermelha à esquerda, azul à direita
-  const fita = (lado: 1 | -1) => (x: number, y: number) => centro(y) <= 8 && Math.abs(centro(x) - (8 - lado * (5 - centro(y) * 0.5))) <= 2.1
-  forma(g, (x, y) => fita(1)(x, y) || fita(-1)(x, y), (x) => (centro(x) < 8 ? 'r' : 'b'))
-  forma(g, (x, y) => dist(x, y, 8, 10.4) <= 5.4, (x, y) => ((centro(x) - 8) + (centro(y) - 10.4) > 2.8 ? 'd' : 'm'))
-  // estrela clara no centro
-  pintar(g, [[7, 7], [8, 7], [7, 8], [8, 8], [5, 9], [6, 9], [7, 9], [8, 9], [9, 9], [10, 9], [6, 10], [7, 10], [8, 10], [9, 10], [6, 11], [7, 11], [8, 11], [9, 11], [5, 12], [6, 12], [9, 12], [10, 12]], 'l')
+/** O vasinho de terracota com rosto (base das quatro fases do jardim). */
+function vaso(g: Grade) {
+  const cor = (x: number) => (c(x) < 5 ? 's' : c(x) > 11.3 ? 'T' : 't')
+  forma(g, (x, y) => (c(y) >= 9.2 && c(y) <= 11 && c(x) >= 3 && c(x) <= 13) || (c(y) > 10.5 && c(y) <= 15.8 && c(x) >= 4 + (c(y) - 10.5) * 0.3 && c(x) <= 12 - (c(y) - 10.5) * 0.3), cor)
+  for (let x = 6; x <= 17; x++) pintar(g, [[x, 14]], 'e') // terra
+  for (let x = 5; x <= 18; x++) pintar(g, [[x, 16]], 'o') // borda da boca do vaso
+  rosto(g, 11, 18)
+}
+const caule = (g: Grade, de: number, ate: number) => forma(g, (x, y) => c(y) >= de && c(y) <= ate && Math.abs(c(x) - 8) <= 0.75, (x) => (c(x) < 8 ? 'G' : 'g'))
+const folha = (g: Grade, cx: number, cy: number, rx: number, ry: number) => forma(g, (x, y) => dist(x, y, cx, cy, rx, ry) <= 1, volume(cx, cy, 'L', 'g', 'G', 0.8))
+
+function broto(): Grade {
+  const g = nova(); vaso(g)
+  caule(g, 5.6, 9.6)
+  folha(g, 5.5, 5.4, 2.8, 1.7); folha(g, 10.5, 4.6, 2.8, 1.7)
   return g
 }
-
-const TROFEU = [
-  '................',
-  '..kkkkkkkkkkkk..',
-  'kkkllmmmmmmmdkkk',
-  'k.klmmmmmmmmdk.k',
-  'k.klmmmmmmmmdk.k',
-  'kk.kmmmmmmmdk.kk',
-  '.kk.kmmmmmdk.kk.',
-  '...kkmmmmmdkk...',
-  '.....kmmmdk.....',
-  '......kmdk......',
-  '......kmdk......',
-  '.....kmmmdk.....',
-  '....kkkkkkkk....',
-  '....krrrrrrk....',
-  '...kkkkkkkkkk...',
-  '................',
-]
-const trofeu = (): Grade => TROFEU.map((l) => l.split(''))
-
-function alvo(): Grade {
-  const g = nova()
-  forma(g, (x, y) => dist(x, y, 8, 8.5) <= 7.2, (x, y) => { const d = dist(x, y, 8, 8.5); return d < 1.8 ? 'r' : d < 3.5 ? 'w' : d < 5.3 ? 'r' : 'w' })
-  // flecha cravada no centro, vinda do alto à direita
-  for (let i = 0; i < 6; i++) pintar(g, [[8 + i, 8 - i]], 'k')
-  pintar(g, [[13, 1], [14, 2], [14, 1], [15, 0], [13, 0], [15, 2]], 'y')
+function muda(): Grade {
+  const g = nova(); vaso(g)
+  caule(g, 2.2, 9.6)
+  folha(g, 5.1, 7, 2.8, 1.6); folha(g, 10.9, 6, 2.8, 1.6); folha(g, 5.7, 3.6, 2.4, 1.4); folha(g, 10.3, 2.4, 2.4, 1.4)
   return g
 }
-
-function chama(): Grade {
+function flor(): Grade {
+  const g = nova(); vaso(g)
+  caule(g, 4.6, 9.6)
+  folha(g, 5, 7.6, 2.5, 1.4); folha(g, 11, 7.2, 2.5, 1.4)
+  const centro = [8, 3.9] as const
+  forma(g, (x, y) => [[8, 1.6], [5.7, 3.4], [10.3, 3.4], [6.5, 6], [9.5, 6]].some(([px, py]) => dist(x, y, px, py) <= 1.8) || dist(x, y, ...centro) <= 2.3,
+    (x, y) => (dist(x, y, ...centro) <= 1.2 ? 'y' : volume(...centro, 'w', 'p', 'P', 1.8)(x, y)))
+  pintar(g, [[11, 5]], 'w')
+  return g
+}
+function arvore(): Grade {
+  const g = nova(); vaso(g)
+  forma(g, (x, y) => c(y) >= 7 && c(y) <= 9.6 && Math.abs(c(x) - 8) <= 1, (x) => (c(x) < 8 ? 'b' : 'B'))
+  forma(g, (x, y) => dist(x, y, 8, 4.6, 1.3, 1) <= 4.4, volume(8, 4.6, 'L', 'g', 'G', 2.2))
+  pintar(g, [[6, 4], [7, 4], [6, 5], [15, 3], [16, 3], [15, 4], [17, 8], [16, 8], [9, 9], [10, 9], [9, 10], [12, 1]], 'p') // florzinhas na copa
+  pintar(g, [[6, 4], [15, 3], [9, 9]], 'w')
+  pintar(g, [[4, 6], [5, 5]], 'L')
+  return g
+}
+function estrela(): Grade {
   const g = nova()
-  const gota = (cx: number, base: number, r: number, topo: number) => (x: number, y: number) => {
-    if (centro(y) >= base) return dist(x, y, cx, base) <= r
-    const hw = (r * (centro(y) - topo)) / (base - topo)
-    return hw > 0 && Math.abs(centro(x) - cx) <= hw
+  const pontas = Array.from({ length: 10 }, (_, i) => { const a = -Math.PI / 2 + (i * Math.PI) / 5, r = i % 2 ? 3.9 : 7.6; return [8 + Math.cos(a) * r, 8.8 + Math.sin(a) * r] })
+  const dentro = (x: number, y: number) => {
+    let sim = false
+    for (let i = 0, j = pontas.length - 1; i < pontas.length; j = i++) {
+      const [xi, yi] = pontas[i], [xj, yj] = pontas[j]
+      if ((yi > c(y)) !== (yj > c(y)) && c(x) < ((xj - xi) * (c(y) - yi)) / (yj - yi) + xi) sim = !sim
+    }
+    return sim
   }
-  const fora = gota(8, 10.5, 5.4, 0.6), meio = gota(8, 11.4, 3.2, 4.6), nucleo = (x: number, y: number) => dist(x, y, 8, 12.4) <= 1.6
-  forma(g, fora, (x, y) => (nucleo(x, y) ? 'w' : meio(x, y) ? 'y' : 'o'))
+  forma(g, dentro, volume(8, 8.8, 'w', 'y', 'Y', 4.4))
+  rosto(g, 11, 12)
   return g
 }
-
-function seta(): Grade {
+function arcoiris(): Grade {
   const g = nova()
-  forma(g, (x, y) => {
-    const cx = centro(x), cy = centro(y)
-    if (cy >= 1 && cy <= 8) return Math.abs(cx - 8) <= (cy - 1) * 0.95 + 0.6
-    return cy > 8 && cy <= 15 && cx >= 5.5 && cx <= 10.5
-  }, (x) => (x >= 8 ? 'h' : 'g'))
-  pintar(g, [[6, 9], [6, 10], [6, 11], [6, 12]], 'w')
+  const faixas = ['R', 'A', 'Y', 'V', 'Z']
+  forma(g, (x, y) => c(y) <= 12.6 && dist(x, y, 8, 12.6) <= 7.6 && dist(x, y, 8, 12.6) >= 2.6, (x, y) => faixas[Math.min(4, Math.floor((7.6 - dist(x, y, 8, 12.6)) / 0.96))])
+  const nuvem = (cx: number) => forma(g, (x, y) => dist(x, y, cx, 13, 1.6, 1) <= 2 || dist(x, y, cx + (cx < 8 ? 1 : -1), 11.6) <= 1.5, (_x, y) => (c(y) > 13.8 ? 'n' : 'w'))
+  nuvem(3.3); nuvem(12.7)
+  pintar(g, [[3, 19], [6, 19], [17, 19], [20, 19]], 'o') // olhinhos das nuvens
+  pintar(g, [[2, 20], [7, 20], [16, 20], [21, 20]], 'r')
   return g
 }
-
-function bussola(): Grade {
+function gato(coracao: boolean): Grade {
   const g = nova()
-  forma(g, (x, y) => dist(x, y, 8, 8) <= 7.4, (x, y) => (dist(x, y, 8, 8) > 5.6 ? metal(8, 8)(x, y) : 'c'))
-  // agulha: norte vermelho, sul azul
-  for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) if (Math.abs(centro(x) - 8) / 1.9 + Math.abs(centro(y) - 8) / 5.2 <= 1) g[y][x] = centro(y) < 8 ? 'r' : 'b'
-  pintar(g, [[7, 7], [8, 8]], 'k')
-  pintar(g, [[3, 8], [12, 8]], 'd')
+  forma(g, (x, y) => dist(x, y, 8, 14.2, 7.6, 1.8) <= 1, volume(8, 14.2, 'p', 'p', 'Q', 3)) // almofadão
+  const corpo = (x: number, y: number) =>
+    dist(x, y, 9.6, 11.2, 5.4, 3) <= 1 // corpo enroladinho
+    || dist(x, y, 5.6, 8.6, 3.5, 3.1) <= 1 // cabeça
+    || (c(y) >= 4 && c(y) <= 7 && Math.abs(c(x) - 3.5) <= (c(y) - 4) * 0.75 + 0.2) // orelhas
+    || (c(y) >= 4 && c(y) <= 7 && Math.abs(c(x) - 7.7) <= (c(y) - 4) * 0.75 + 0.2)
+    || dist(x, y, 13.9, 12.4, 1.5, 1.4) <= 1 // rabinho
+  forma(g, corpo, (x, y) => ((Math.round(c(x) * 2) === 21 || Math.round(c(x) * 2) === 24) && c(y) < 10.6 ? 'K' : volume(7, 9, 'l', 'k', 'K', 3.2)(x, y)))
+  pintar(g, [[5, 8], [5, 9], [11, 8], [11, 9]], 'p') // dentro das orelhas
+  rosto(g, 8, 12, true)
+  if (coracao) {
+    forma(g, (x, y) => dist(x, y, 12, 2.2, 1.1, 1.1) <= 1 || dist(x, y, 14, 2.2, 1.1, 1.1) <= 1 || (c(y) >= 2.4 && c(y) <= 5 && Math.abs(c(x) - 13) <= (5 - c(y)) * 0.85), (x, y) => (c(x) < 12.6 && c(y) < 2.6 ? 'w' : 'P'))
+  }
   return g
 }
 
-function calendario(): Grade {
-  const g = nova()
-  forma(g, (x, y) => x >= 1 && x <= 14 && y >= 2 && y <= 14, (_x, y) => (y <= 5 ? 'r' : 'w'))
-  pintar(g, [[4, 1], [4, 2], [4, 3], [11, 1], [11, 2], [11, 3]], 'k')
-  pintar(g, [[2, 6], [3, 6], [4, 6], [5, 6], [6, 6], [7, 6], [8, 6], [9, 6], [10, 6], [11, 6], [12, 6], [13, 6]], 'k')
-  // um visto grande, de dia cumprido
-  pintar(g, [[4, 10], [5, 11], [6, 12], [7, 11], [8, 10], [9, 9], [10, 8], [11, 7]], 'g')
-  pintar(g, [[4, 11], [5, 12], [6, 13], [7, 12], [8, 11], [9, 10], [10, 9], [11, 8]], 'h')
-  return g
+const DESENHOS: Record<ArteConquista, () => Grade> = {
+  broto, muda, flor, arvore, estrela, arcoiris, gato: () => gato(false), gatoCoracao: () => gato(true),
 }
-
-const DESENHOS: Record<ArteConquista, () => Grade> = { medalha, trofeu, alvo, chama, seta, bussola, calendario }
-
-const METAL: Record<NivelConquista, [string, string, string]> = {
-  bronze: ['#f2b27c', '#cd7f3e', '#7d451f'],
-  prata: ['#f4f8fb', '#b8c3cd', '#66727e'],
-  ouro: ['#fff1a6', '#f2bf45', '#a5701a'],
-  diamante: ['#e4fdff', '#72d9ea', '#2b88a3'],
-}
+/** Paleta quente e suave, de jogo aconchegante. */
 const CORES: Record<string, string> = {
-  k: '#1b1208', r: '#d9473a', b: '#3d6fd6', w: '#fff7e9', y: '#f7cf4a', o: '#f08a2c', g: '#47b86f', h: '#25844a', c: '#fbf1d9',
+  o: '#5b3a29', // contorno marrom
+  t: '#e08e63', s: '#f4b48e', T: '#b9643f', e: '#7a5238', // vaso e terra
+  g: '#79c37b', L: '#b7e59d', G: '#4c955a', // folhas
+  b: '#a8754f', B: '#845436', // tronco
+  p: '#f7a8c0', P: '#e57a9a', Q: '#c95f82', w: '#fffaf0', y: '#ffd76a', Y: '#f2b23e', // flor e estrela
+  r: '#f6a5a0', // bochechas
+  R: '#f28b82', A: '#f7b267', V: '#a7d8a0', Z: '#9cc9f0', n: '#dbe6f2', // arco-íris e nuvem
+  k: '#f4b56f', l: '#fcd7a4', K: '#d98a49', // gatinho laranja
 }
 
 /** As corridas horizontais de mesma cor viram um retângulo só (bem menos nós no SVG). */
-function retangulos(g: Grade, nivel: NivelConquista) {
-  const [l, m, d] = METAL[nivel]
-  const cor = (k: string) => (k === 'l' ? l : k === 'm' ? m : k === 'd' ? d : CORES[k])
+function retangulos(g: Grade) {
   const saida: Array<{ x: number; y: number; w: number; fill: string }> = []
   g.forEach((linha, y) => {
     let x = 0
@@ -136,17 +150,17 @@ function retangulos(g: Grade, nivel: NivelConquista) {
       if (k === '.') { x++; continue }
       let w = 1
       while (x + w < N && linha[x + w] === k) w++
-      saida.push({ x, y, w, fill: cor(k) })
+      saida.push({ x, y, w, fill: CORES[k] })
       x += w
     }
   })
   return saida
 }
 
-export const ArteConquistaPixel = memo(function ArteConquistaPixel({ arte, nivel, tamanho = 64 }: { arte: ArteConquista; nivel: NivelConquista; tamanho?: number }) {
+export const ArteConquistaPixel = memo(function ArteConquistaPixel({ arte, tamanho = 64 }: { arte: ArteConquista; tamanho?: number }) {
   return (
-    <svg viewBox="0 0 16 16" width={tamanho} height={tamanho} shapeRendering="crispEdges" aria-hidden="true" focusable="false">
-      {retangulos(DESENHOS[arte](), nivel).map((r, i) => <rect key={i} x={r.x} y={r.y} width={r.w} height={1} fill={r.fill} />)}
+    <svg viewBox={`0 0 ${N} ${N}`} width={tamanho} height={tamanho} shapeRendering="crispEdges" aria-hidden="true" focusable="false">
+      {retangulos(DESENHOS[arte]()).map((r, i) => <rect key={i} x={r.x} y={r.y} width={r.w} height={1} fill={r.fill} />)}
     </svg>
   )
 })

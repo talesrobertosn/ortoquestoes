@@ -99,32 +99,37 @@ try {
   m.registrarAparicao(agora + 5); assert.equal(m.ultimaAparicao(), agora + 5, 'sem disco, o limite vale na memória da aba')
   const app = await readFile('src/App.tsx', 'utf8')
   assert.match(app, /lazy\(\(\) => import\('\.\/eventos\/Encontros'\)\)/)
-  // Conquistas do dia: 10, 20, 40, 50, 75 e 100 questões; acerto; sequência; virada; áreas; dias seguidos
+  // Conquistas do dia (jardim aconchegante): poucas, só a mais especial de cada vez, no máximo 3 por dia
   {
     const T = Date.parse('2026-10-26T15:00:00Z')
     const respostas = (lista, area = 'trauma', inicio = T - 3_600_000) => Object.fromEntries(lista.map((c, i) => [`${area}-${String(i).padStart(4, '0')}`, { c, q: inicio + i * 1000 }]))
     const est = (r) => m.estudoDoDia(r, T)
-    const novas = (a, d) => m.novasConquistas(est(a), est(d), () => false, 0.3).map((c) => c.id)
-    const nove = respostas(Array(9).fill(true)), dez = respostas(Array(10).fill(true))
-    assert.deepEqual(novas(nove, dez).sort(), ['a75', 'q10', 's10'], 'a décima certa libera volume, acerto e dez seguidas (a de cinco já valia antes)')
-    for (const marca of [20, 40, 50, 75, 100]) assert.ok(novas(respostas(Array(marca - 1).fill(false)), respostas(Array(marca).fill(false))).includes(`q${marca}`), `marca ${marca}`)
-    // acerto: 10 com mais de 75% e 20 com mais de 70% (exatamente 75% não vale)
+    const novas = (a, d, ja = () => false) => m.novasConquistas(est(a), est(d), ja, 0.3).map((c) => c.id)
+    // o jardim cresce: 10 broto, 25 folhinhas, 50 flor, 100 árvore
+    for (const [n, id] of [[10, 'broto'], [25, 'muda'], [50, 'flor'], [100, 'arvore']]) assert.deepEqual(novas(respostas(Array(n - 1).fill(false)), respostas(Array(n).fill(false))), [id], `jardim ${n}`)
+    // a estrelinha: mais de 75% em 20 ou mais (exatamente 75% não vale)
     const mistura = (n, certas) => Array.from({ length: n }, (_, i) => i < certas)
-    assert.ok(!novas({}, respostas(mistura(12, 9))).includes('a75'), '75% exatos não passam de 75%')
-    assert.ok(novas({}, respostas(mistura(12, 10))).includes('a75'))
-    assert.ok(novas({}, respostas(mistura(20, 15))).includes('a70') && !novas({}, respostas(mistura(20, 14))).includes('a70'))
-    // virada: três erros seguidos e logo três acertos
+    assert.ok(!novas({}, respostas(mistura(20, 15))).includes('estrela'))
+    assert.ok(novas({}, respostas(mistura(20, 16))).includes('estrela'))
+    assert.ok(!novas({}, respostas(mistura(12, 12))).includes('estrela'), 'menos de 20 questões não dá estrela')
+    // várias juntas: a mais especial vem primeiro (é a única que vira cartão)
+    assert.deepEqual(novas({}, respostas(mistura(25, 24))), ['estrela', 'muda', 'broto'])
+    assert.deepEqual(novas({}, respostas(mistura(25, 24)), (id) => id === 'estrela'), ['muda', 'broto'], 'a já guardada hoje não volta')
+    // arco-íris: três erros seguidos e logo três acertos (erros intercalados não contam)
     assert.ok(est(respostas([false, false, false, true, true, true])).virada)
-    assert.ok(!est(respostas([false, true, false, false, true, true, true])).virada, 'erros intercalados não contam')
-    // áreas diferentes e só uma vez por dia
-    const quatro = { ...respostas([true], 'trauma'), ...respostas([true], 'mao'), ...respostas([true], 'coluna'), ...respostas([true], 'joelho') }
-    assert.equal(est(quatro).areas, 4)
-    assert.deepEqual(m.novasConquistas(est(nove), est(dez), (id) => id === 'q10', 0).map((c) => c.id), ['a75', 's10'], 'a já mostrada hoje não volta')
-    // dias seguidos com 10 ou mais (resposta de ontem não conta em hoje)
+    assert.ok(!est(respostas([false, true, false, false, true, true, true])).virada)
+    // gatinho: dias seguidos com 10 ou mais (resposta de ontem não conta em hoje)
     const dia = (d) => respostas(Array(10).fill(true), `d${d}`, T - d * 86_400_000)
     assert.equal(est({ ...dia(0), ...dia(1), ...dia(2) }).diasSeguidos, 3)
     assert.equal(est({ ...dia(1), ...dia(2) }).feitas, 0)
-    // o texto sorteado nunca fica vazio e não usa travessão
+    // anti-spam: no máximo 3 por dia e 15 minutos entre elas; árvore e gatinho da semana sempre aparecem
+    const c = (id) => ({ id })
+    assert.ok(m.cabeHoje(c('broto'), [], T))
+    assert.ok(!m.cabeHoje(c('muda'), [T - 60_000], T), 'intervalo de 15 minutos')
+    assert.ok(m.cabeHoje(c('muda'), [T - 16 * 60_000], T))
+    assert.ok(!m.cabeHoje(c('flor'), [T - 3 * 3_600_000, T - 2 * 3_600_000, T - 3_600_000], T), 'máximo de 3 por dia')
+    assert.ok(m.cabeHoje(c('arvore'), [T - 3 * 3_600_000, T - 2 * 3_600_000, T - 60_000], T))
+    // os textos sorteados nunca ficam vazios e não usam travessão
     for (const r of m.REGRAS_CONQUISTA) for (const t of [...r.titulos, ...r.textos]) assert.ok(t && !/[\u2014\u2013]/.test(t), r.id)
     const app2 = await readFile('src/App.tsx', 'utf8')
     assert.match(app2, /lazy\(\(\) => import\('\.\/eventos\/ConquistasDoDia'\)\)/)
