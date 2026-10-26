@@ -1,0 +1,104 @@
+{
+  "base": "0caeb3e1856f61af8b02ab80c81ce4a66777728a",
+  "lotes": {
+    "166": {
+      "revisadas": [
+        "mao-0512",
+        "mao-0513",
+        "mao-0592",
+        "mao-0594",
+        "mao-0606",
+        "mao-0620"
+      ],
+      "pendencias": 4
+    },
+    "167": {
+      "revisadas": [
+        "mao-0646",
+        "mao-0660",
+        "mao-0776",
+        "mao-0917",
+        "mao-0918",
+        "mao-1520"
+      ],
+      "pendencias": 4
+    },
+    "168": {
+      "revisadas": [
+        "mao-0998",
+        "mao-1035",
+        "mao-1038",
+        "mao-1040",
+        "mao-1041",
+        "mao-1074"
+      ],
+      "pendencias": 4
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks166167.log": "b638b1f36d6cd250d43a11ad2f8dcbb05c2e0fc48b0ed7535f86245a444f1e3e",
+    "checks166168.log": "5002a394424f33847bffd8d9574b0ec8c8f0342374964b30f3d1487a99d406a5",
+    "ui166.log": "187ebdc847ba1fe73f4a2a5b1f6e4a55bf873b3d16951e15bc6362d46cf8b684",
+    "remotos166-final.json": "0ac8c10979bea31782b4f5ff888f71da9a839ad94a90a80239312dc3bee7190a"
+  },
+  "replay": "18/18 comentários, alternativas, fontes, hashes e avulsos integrais",
+  "preservacao": "12 comentários pendentes intactos; demais membros do JSON e questões/índice/progresso/Biblioteca preservados",
+  "visual": {
+    "casos": 18,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alertas": [
+      "mao-0513",
+      "mao-0660",
+      "mao-0776"
+    ],
+    "semGabaritoOficial": [
+      "mao-0606",
+      "mao-0620",
+      "mao-0646"
+    ],
+    "capturasInspecionadas": [
+      "166-mao-0513-alerta-cel.png",
+      "166-mao-0660-alerta-pc.png",
+      "166-mao-1520-figura-0-pc.png"
+    ]
+  },
+  "imagensConferidas": [
+    {
+      "id": "mao-1520",
+      "arquivo": "mao/usp-sp-2024-q118-1.webp",
+      "sha256": "8794281f790fbc591c7b17524eec583ace85e095c2b0158c2bb85d5c6144c1df",
+      "observacao": "Montagem PA/perfil direito e PA comparativas; afastamento escafossemilunar direito, placa ulna contralateral; sem inventar medidas. Aberta antes da escrita e conferida na interface."
+    }
+  ],
+  "fonte": {
+    "id": "rockwood10-44-carpo",
+    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+    "leitura": "Leitura integral anterior de761linhas sem mudanças; releitura dos trechos e blocos usados; sem notas contextuais como fonte, sem leitura atribuída do livro primário"
+  },
+  "inventario": {
+    "resumos": 34,
+    "ids": 2483,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 555,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 340,
+      "pendente-inspecao-imagem": 84,
+      "revisada": 1406
+    }
+  },
+  "proximoLote": 169,
+  "publicacao": "Conferir head/CI, revisão, merge, guarda/deploy e produção no PR; validação local não antecipa publicação."
+}

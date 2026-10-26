@@ -1,0 +1,244 @@
+{
+  "mao-0512": {
+    "questaoSha256": "4e333a05e36e9bbc887758f63d09e02e51738ce25815f99985c5099c41de8e66",
+    "comentarioAnteriorSha256": "6300912584d9680e23dae0e3e0f5541ac291002706f894246b6d03fd6667ad4f",
+    "comentario": {
+      "conceito": "O estágio III de Watson e Ballet já compromete a articulação **capitossemilunar**, além do desgaste que começou no lado radioescafoide. Na pseudartrose, a perda da continuidade do escafoide permite que seu fragmento distal fleta e o proximal estenda com o semilunar. O carpo colapsa, e a sobrecarga progride para a mediocárpica: é o SNAC, colapso avançado da pseudartrose do escafoide.\n\nA escolha deixa de ser apenas unir a pseudartrose ou estabilizar o escafoide. É preciso tratar articulações degeneradas. O resumo indica **escafoidectomia associada à artrodese parcial em quatro cantos** no estágio III, aproveitando a preservação relativa da articulação radiolunar. A carpectomia proximal convencional, sem interposição, perde a indicação porque colocaria a cabeça desgastada do capitato contra a fossa do semilunar.\n\nA lição é localizar a cartilagem comprometida antes de escolher a fusão. Um procedimento para instabilidade sem artrose não resolve automaticamente um colapso com degeneração mediocárpica. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de pseudartrose e Artrose do colapso: SNAC e SLAC.",
+      "correta": "Correta: D (dos quatro cantos). É a artrodese parcial indicada pelo resumo para o estágio III, associada à retirada do escafoide. A decisão se apoia no comprometimento capitossemilunar e na possibilidade de conservar a relação relativamente preservada entre rádio e semilunar.",
+      "incorretas": {
+        "A": "A triescafoide estabiliza o polo distal do escafoide e pode tratar sua instabilidade rotatória em situações selecionadas. Aqui, porém, já há artrose mediocárpica do estágio III; estabilizar e conservar o escafoide não corresponde ao salvamento com escafoidectomia e fusão parcial recomendado para esse padrão.",
+        "B": "A radioescafoide propõe fundir o escafoide ao rádio. O problema do caso já inclui a capitossemilunar degenerada, portanto não se resume à interface radioescafoide. Essa proposta não reproduz o procedimento de salvamento do estágio III descrito no resumo.",
+        "C": "A escafocapitato aparece como artrodese para certas instabilidades do escafoide, com indicação semelhante à triescafoide. Não deve ser transposta automaticamente para o SNAC III: neste, a fonte orienta retirar o escafoide e realizar o salvamento em quatro cantos para a degeneração estabelecida."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Artrose do colapso: SNAC e SLAC; Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Artrose do colapso: SNAC e SLAC",
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+          "artrose-do-colapso-snac-e-slac-118d45f0",
+          "artrose-do-colapso-snac-e-slac-75ec5c30",
+          "dissociacao-escafossemilunar-dea04ab1"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "f33447e10883db9b977c78f6932784df8e53999502e04fefec9b299f6eb8cf6d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0513": {
+    "questaoSha256": "3f68287fcddaaec9dcc187bba7b36ed9882b415c02eb2fb31e5b649a9c3a1d7e",
+    "comentarioAnteriorSha256": "409ef57e8c8b329073cb703da288053c78dd554dd0e2fcde496e9e5d2f145229",
+    "comentario": {
+      "conceito": "A classificação pelo padrão pergunta **onde a continuidade do carpo foi perdida**. A instabilidade dissociativa, CID, ocorre dentro de uma fileira, especialmente por falha escafossemilunar ou lunopiramidal. A não dissociativa, CIND, ocorre entre fileiras ou entre carpo e rádio, mantendo a organização interna das fileiras. Quando as duas falhas se combinam, o padrão é complexo, CIC.\n\nA subluxação rotatória do escafoide é um exemplo de desacoplamento dentro da fileira proximal. Nas lesões perilunares, a progressão inclui falhas intrínsecas e deslocamento entre as fileiras; o corpo do resumo as classifica como complexas.\n\nHá, portanto, divergência nesta questão: o gabarito oficial é D, mas a alternativa C é o exemplo dissociativo sustentado pelo corpo independente da fonte consultada. Não é adequado ensinar que uma perilunar deixa de ser complexa para defender a letra oficial. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Padrões de instabilidade e Mayfield e a luxação perilunar.",
+      "correta": "Resposta oficial: D (perilunar do carpo), preservada. Pela descrição do resumo, a lesão perilunar reúne dissociação dentro da fileira e deslocamento entre fileiras, sendo complexa. O exemplo dissociativo mais direto entre as opções é C; a divergência deve acompanhar o estudo desta resposta oficial.",
+      "incorretas": {
+        "A": "A radiocárpica envolve a relação entre o carpo e o rádio. O resumo a inclui entre as não dissociativas, porque essa localização da falha não equivale à separação entre dois ossos da mesma fileira.",
+        "B": "A instabilidade mediocárpica compromete a relação entre as fileiras, e a fonte a apresenta como não dissociativa. O qualificativo ulnar localiza o problema, mas não o converte em uma ruptura intrínseca dentro da fileira proximal.",
+        "C": "A subluxação rotatória do escafoide decorre do seu desacoplamento na fileira proximal, relacionado à falha escafossemilunar. Por isso, é compatível com CID e não deve ser ensinada como clinicamente falsa. Ela é a resposta sustentada pelo padrão anatômico do corpo do resumo, apesar da letra D oficial."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação escafossemilunar; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D preservado. O corpo independente do resumo classifica a lesão perilunar como complexa (falha dentro e entre as fileiras), enquanto a subluxação rotatória do escafoide, C, representa dissociação dentro da fileira proximal. A aula explica essa divergência sem declarar C clinicamente falsa nem atribuir conferência da tabela do livro original."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação escafossemilunar",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-8638f558",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-ae523a5b",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-48fd364d",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "mayfield-e-a-luxacao-perilunar-501fc79c"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "0cdc7e364bbb7046bde054d5f67ed4377abfe85c2b8f790385eb63336b679355"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0592": {
+    "questaoSha256": "6b6acdf8c797d49c434368c1c41c9bbc6dd59385bceb9126d61855bdaf4e50f8",
+    "comentarioAnteriorSha256": "2834908632273fada2453c2df4b66f8d013dd642e924b960e6c3679ee085effa",
+    "comentario": {
+      "conceito": "Uma fratura instável do escafoide pode desfazer a ponte mecânica entre as fileiras do carpo. Seu fragmento distal flete, enquanto o proximal estende acompanhando o semilunar. Esse desequilíbrio produz **DISI**, instabilidade dorsal do segmento intercalado, na qual o semilunar está em extensão.\n\nO semilunar normalmente equilibra a tendência flexora do escafoide com a extensora do piramidal. A ruptura escafossemilunar ou a interrupção da continuidade do escafoide permite predomínio do lado do piramidal. Já a falha lunopiramidal retira a influência extensora e favorece **VISI**, com o semilunar em flexão; a deformidade fixa exige também perda de contenção secundária.\n\nA correlação da questão deve ser lida com essa condição de instabilidade. Não significa que qualquer fratura alinhada do escafoide apresente DISI, nem que toda fratura do rádio determine um único padrão de desalinhamento. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de pseudartrose, Padrões de instabilidade e Dissociação lunopiramidal.",
+      "correta": "Correta: B (fratura do escafoide e DISI). A associação é explicada pela perda da continuidade mecânica do escafoide: fragmento distal em flexão, proximal e semilunar em extensão. É especialmente pertinente à fratura instável ou à pseudartrose com deformidade, sem transformar o DISI em achado obrigatório de toda fratura.",
+      "incorretas": {
+        "A": "Fratura do rádio, sem informar localização, alinhamento ou lesões associadas, não estabelece por si só VISI. A fonte reconhece desalinhamento adaptativo após consolidação viciosa do rádio distal, mas não autoriza transformar a expressão genérica desta opção em uma correlação universal com semilunar fletido.",
+        "C": "Na dissociação escafolunar, perde-se o vínculo que transmite a influência flexora do escafoide ao semilunar. O piramidal passa a favorecer extensão, isto é, DISI. A alternativa troca a deformidade pela oposta, VISI.",
+        "D": "A dissociação lunopiramidal compromete o elo ulnar que transmite a tendência extensora do piramidal. O resultado favorecido é VISI, com flexão do semilunar; para ficar estático, também depende de estabilizadores secundários. Não é a correlação típica com DISI proposta aqui."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação lunopiramidal"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb",
+          "dissociacao-lunopiramidal-5eb7978d"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "8dddd85d7907f88ec32fcdf07bc888d5d69400fbb5016aee97dfd027723a0216"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0594": {
+    "questaoSha256": "7eeb6db1763a45796ac880b4c00e93387c082c5b0c89e9283d7eee10c1ff011f",
+    "comentarioAnteriorSha256": "7ba19e85a43132499f3f98ccbe0cf69cbcf5d65760194b764bf97b8c824ab4a2",
+    "comentario": {
+      "conceito": "A artrodese triescafoide, ou escafotrapeziotrapezoide, procura **estabilizar o escafoide** pela sua porção distal e mantê-lo apoiado adequadamente contra a fossa do rádio. Entre as situações oferecidas, a subluxação rotatória do escafoide corresponde a esse objetivo mecânico.\n\nIsso não torna a fusão a resposta para toda instabilidade escafossemilunar. Se o ligamento é reparável, há espaço para reparo; se é irreparável, mas a deformidade reduz e a cartilagem está normal, o resumo apresenta reconstruções com enxerto. As artrodeses parciais entram em situações selecionadas de deformidade fixa, tecido insuficiente ou demanda e condições articulares que orientem o salvamento.\n\nA lesão lunopiramidal com VISI é outro mecanismo: o semilunar flete pela perda da influência extensora do piramidal. Antes de indicar uma fusão, deve-se definir qual elo falhou e quais articulações ainda podem ser preservadas. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar, lunopiramidal e Padrões de instabilidade.",
+      "correta": "Correta: D (subluxação rotatória do escafoide). A triescafoide atua sobre o escafoide instável, fixando sua relação distal. A indicação exige seleção pelo alinhamento, reparabilidade e estado articular; o nome do diagnóstico não dispensa essa avaliação.",
+      "incorretas": {
+        "A": "Ruptura do ligamento palmar é uma descrição inespecífica: não identifica qual ligamento rompeu nem demonstra instabilidade rotatória do escafoide. Os ligamentos palmares têm diferentes relações com as fileiras; essa expressão isolada não estabelece o alvo mecânico específico da triescafoide.",
+        "B": "Na instabilidade não dissociativa, a falha está entre fileiras ou entre carpo e rádio, com as fileiras internamente preservadas. Isso difere do escafoide desacoplado dentro da fileira proximal, para o qual a fonte descreve a estabilização por ETT.",
+        "C": "A lesão lunopiramidal com VISI afeta a ligação entre semilunar e piramidal e favorece flexão do semilunar. O resumo discute para ela imobilização, pinagem, reparo, reconstrução e outras opções próprias; não se deve aplicar automaticamente uma fusão centrada no escafoide a um elo ulnar diferente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação lunopiramidal"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-dea04ab1",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-ae523a5b",
+          "dissociacao-lunopiramidal-5eb7978d",
+          "dissociacao-lunopiramidal-776fb4a9"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "ad80f0c011fce4f99eb38e1b2c3579da3565a18b9eb43d800b52252034a1f647"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0606": {
+    "questaoSha256": "ec7bc3844a4b3d9d567fa16c07aaf89af128c8d0e5ea9727160eafef08645f0d",
+    "comentarioAnteriorSha256": "0027b4f227da941ba87941a1785a5b397f22598d77b8ec133473815d09af4524",
+    "comentario": {
+      "conceito": "A luxação do semilunar em relação ao rádio ocorre no **estágio IV de Mayfield**. A expressão em relação ao rádio é decisiva: nos estágios anteriores, o carpo pode se deslocar ao redor do semilunar, enquanto ele permanece na fossa radial.\n\nA sequência começa no lado escafossemilunar, estágio I, passa pelo deslocamento dorsal do capitato no II e alcança a ruptura lunopiramidal no III. No IV, o capitato dorsal é puxado para proximal, empurra o dorso do semilunar e, com a ruptura radiocárpica dorsal, faz o semilunar girar para palmar em direção ao túnel do carpo. O radiolunar curto costuma permanecer como parte da dobradiça palmar.\n\nNão há gabarito oficial registrado para esta prova. A resposta D é sustentada pela descrição independente do resumo, sem atribuir a esta revisão a leitura da página de Browner indicada no registro histórico da questão. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+      "correta": "Resposta provável: D (IV), sustentada pelo resumo. É o passo em que o semilunar sai da fossa radial e gira para palmar, após perda da contenção radiocárpica dorsal. A bibliografia histórica do acervo já aponta D, mas isso permanece distinto de um gabarito oficial da banca.",
+      "incorretas": {
+        "A": "O I é a falha escafossemilunar, fratura do escafoide ou ambas, iniciando a sequência pelo lado radial. Não corresponde à perda da relação do semilunar com o rádio.",
+        "B": "O II é o deslocamento dorsal do capitato em relação ao semilunar pelo espaço de Poirier. A alternativa troca qual articulação se desfez: o capitato saiu da relação mediocárpica, enquanto o semilunar ainda pode estar na fossa radial.",
+        "C": "No III, rompe a ligação lunopiramidal e se completa tipicamente a luxação mediocárpica/perilunar com o semilunar ainda na fossa. É o último passo antes da luxação do próprio semilunar, não a luxação radiolunar perguntada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
+      ],
+      "conferido": false,
+      "provavel": "D"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+          "mayfield-e-a-luxacao-perilunar-07798063",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "a75097597a7384f2f500c7d5a0fa47b3085337c37711369b9650bd5eaeb3d0ba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0620": {
+    "questaoSha256": "c4b9269d3a6d1cf0293c2b77cd63980ee493401e9add749dfdef91e1888bef6f",
+    "comentarioAnteriorSha256": "07c2705e7a3aa23806b192de7014ced726517746e19ff288298d29cff97af76f",
+    "comentario": {
+      "conceito": "Na lesão escafossemilunar aguda, o padrão habitual descrito no resumo é o ligamento **desinserido do escafoide e ainda preso ao semilunar**. Identificar essa extremidade importa porque reparo e reconstrução são decisões diferentes: um tecido recente aproveitável pode ser reinserido, enquanto tecido irreparável exige outra estratégia.\n\nO escafossemilunar é um ligamento interósseo em C. Sua porção dorsal é a mais grossa e forte, a palmar participa da contenção rotacional e a proximal membranosa é mais fina e fraca. A ruptura desacopla os dois ossos; o alargamento do intervalo é progressivo, e o desalinhamento estático também depende de falha dos estabilizadores secundários.\n\nNa técnica aberta de reparo agudo descrita, o escafoide é reavivado, recebe âncoras e a redução é protegida por fios escafossemilunar e escafocapitato. Esse trajeto é coerente com o local habitual da desinserção. Não há gabarito oficial registrado; a resposta provável é baseada no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+      "correta": "Resposta provável: A (desinserção no escafoide). O corpo do resumo afirma que o ligamento costuma estar arrancado do escafoide e preso ao semilunar, sustentando uma resposta única para o padrão habitual perguntado. Não se está atribuindo leitura direta da página da edição antiga registrada na questão.",
+      "incorretas": {
+        "B": "A desinserção no semilunar inverteria a extremidade habitualmente solta. O resumo a descreve como rara, enquanto o padrão usual conserva o ligamento preso ao semilunar e o destaca do escafoide.",
+        "C": "Arrancamento ósseo acrescenta a avulsão de um fragmento de osso. Isso não é sinônimo obrigatório da desinserção ligamentar indicada em A: localizar a extremidade solta não exige que exista fragmento ósseo. A fonte aponta como usual o ligamento destacado do escafoide, sem exigir esse componente ósseo adicional.",
+        "D": "Uma ruptura no corpo corresponde à falha dentro da substância do ligamento, em vez de separá-lo do ponto de inserção. Não é o padrão predominante descrito, que deixa o ligamento preso ao semilunar e desinserido no escafoide; o resumo também qualifica a ruptura oblíqua como rara."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false,
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-67e58eaf",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "dissociacao-escafossemilunar-65f85568"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "cee886fecf07c48dc444dd75d9daf68aec3649683626f4feb62d5396d065c162"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
