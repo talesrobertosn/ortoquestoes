@@ -709,6 +709,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | aplicada |
 | 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | aplicada |
 | 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | aplicada |
+| 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | aplicada |
 | 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | aplicada |
 | 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
 | 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
@@ -727,15 +728,19 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | aplicada |
 | 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
 | 54 | Neuropatia ulnar após úmero distal | reformulada | 18 | Úmero distal | 15 | mao-2352 | aplicada |
+| 55 | Sinal da vela | reformulada | 19 | Cabeça do rádio | 18 | mao-2364 | aplicada |
 | 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
 | 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | aplicada |
 | 59 | Rádio desalinhado após fixar a ulna | reformulada | 20 | Ulna proximal | 16 | mao-2355 | aplicada |
 | 60 | Fraturas pediátricas e síndrome compartimental | reformulada (oficial aceitou A e D) | 51 | Compartimental | 12 | mao-2335 | aplicada |
+| 61 | Rigidez intrínseca | reformulada | 10 | Dedo rígido | 18 | mao-2365 | aplicada |
 | 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
+| 63 | Tuberculose óssea no adulto | reformulada | 3 | Infecções crônicas | 18 | mao-2366 | aplicada |
 | 64 | Lesão sentinela neonatal | reformulada | 51 | Compartimental | 12 | mao-2336 | aplicada |
 | 65 | TSUGE moderado | reformulada | 51 | VOLKMANN | 12 | mao-2337 | aplicada |
 | 66 | Portal 3-4: entre ELP e extensor dos dedos | anatomia | cap. 17, p. 761 | mao / Artrose do punho e artroscopia | 06 | mao-2304 | publicada |
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
+| 68 | Tala interna no radial | reformulada | 31 | Transferências | 18 | mao-2367 | aplicada |
 | 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
 | 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | aplicada |
 | 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | aplicada |
