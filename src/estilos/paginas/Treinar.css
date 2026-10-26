@@ -301,3 +301,15 @@
 .seletor__etiqueta span { font-size: 1.1em; line-height: 1; opacity: 0.8; }
 .seletor__etiqueta:hover { background: var(--verdete); color: var(--sobre-destaque); }
 .seletor__etiqueta--sub { background: var(--superficie); }
+
+/* Gaveta do celular (25/10/2026): o mesmo bilhete escuro, com quantas questões e o modo, aberto pela barra de baixo. */
+.tn-gaveta { margin: 0; }
+.tn-gaveta__resumo { margin: 0 0 var(--e-3); color: var(--sobre-heroi-2, #cfe3dc); font-size: var(--corpo-menor); line-height: 1.4; }
+.botao.tn-gaveta__comecar { width: 100%; border: 0; border-radius: 4px; background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra); }
+@media (max-width: 40rem) {
+  .tn-barra__resumo { all: unset; display: grid; flex: 0 1 auto; min-width: 0; line-height: 1.2; cursor: pointer; padding: 0.2rem 0.4rem; margin-left: -0.4rem; border-radius: 6px; }
+  .tn-barra__resumo:focus-visible { outline: 2px solid var(--verdete); }
+  .tn-barra__resumo strong { display: inline-flex; align-items: center; gap: 0.3rem; font-size: var(--corpo-menor); }
+  .tn-barra__resumo strong svg { color: var(--verdete); }
+  .tn-barra__resumo span { color: var(--verdete); font-size: var(--meta); font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}

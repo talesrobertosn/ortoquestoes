@@ -1,20 +1,19 @@
 import { href } from '../util/rotas'
 import { recurso } from '../config'
 import { Icone } from './Icone'
-import { ChamaPixel } from './ChamaPixel'
+import { SeloNovo } from './SeloNovo'
 import '../estilos/componentes/QuadroAtlas.css'
 
 /**
  * Atlas 3D com muito destaque na capa (pedido do Tales, 25/10/2026), para visitantes e para quem tem
  * conta. É só uma imagem do esqueleto (gerada pelo próprio atlas, com o fêmur proximal aceso), então
- * a capa não carrega o motor 3D; o fogo é o mesmo do atalho dos Resumos.
+ * a capa não carrega o motor 3D. Sem fogo desde 25/10/2026 (pedido do Tales: mais elegante e compacto).
  */
 export function QuadroAtlas() {
   return (
     <section className="qa ip-entra" aria-labelledby="qa-titulo">
-      <ChamaPixel altura={44} lados={14} raio={18} />
       <div className="qa__texto">
-        <span className="qa__selo"><Icone nome="cubo" tamanho={14} /> Novo · Atlas 3D em beta</span>
+        <span className="qa__selo"><Icone nome="cubo" tamanho={14} /> Atlas 3D <SeloNovo /></span>
         <a className="qa__capa" href={href('/atlas')}><strong id="qa-titulo">Clique no osso. Veja a fratura.</strong></a>
         <span className="qa__desc">Um esqueleto inteiro em 3D para girar, aproximar e clicar. Cada osso abre as classificações de fratura daquela região e as questões de anatomia da estrutura.</span>
         <span className="qa__botoes">

@@ -1,7 +1,7 @@
 import { usarConta } from '../conta/ContextoConta'
 import { lazy, Suspense } from 'react'
 import type { PaginaBusca } from './BuscaMenu'
-import { ChamaPixel } from './ChamaPixel'
+import { SeloNovo } from './SeloNovo'
 import { contasDisponiveis } from '../conta/supabase'
 import { usarAdministrador } from '../conta/administrador'
 import { usarPremium } from '../conta/premium'
@@ -9,8 +9,6 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { href } from '../util/rotas'
-import { recurso } from '../config'
-import { IconePixel } from './IconePixel'
 import { Icone, type NomeIcone } from './Icone'
 import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Painel } from './Painel'
@@ -25,44 +23,46 @@ interface Item {
   icone: NomeIcone
   /** Recurso do assinante: quem não assina vê o selo e abre a prévia. */
   assinante?: boolean
-  destaque?: boolean
-  /** Em chamas (fogo em pixel art em volta): o recurso novo que ninguém pode deixar de ver. */
-  fogo?: boolean
+  /** Selo discreto de novidade ("Novo", "Beta"). */
+  novo?: string
 }
 
-/** Do que mais se usa para o que menos se usa, dentro de cada grupo e entre os grupos. */
+/**
+ * Menu reorganizado (pedido do Tales, 25/10/2026: "o menu está uma bagunça"). Em cima, as quatro coisas
+ * do dia a dia em cartões; embaixo, os grupos pelo que a pessoa quer fazer; planos e indicação no fim,
+ * discretos. Novidade ganha um selo fino, sem fogo.
+ */
+const PRINCIPAIS: Item[] = [
+  { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte uma sessão', icone: 'livro' },
+  { destino: '/revisao', rotulo: 'Revisão', texto: 'O que volta hoje', icone: 'reiniciar' },
+  { destino: '/flashcards', rotulo: 'Flashcards', texto: 'Revisão rápida e jogo', icone: 'raio' },
+  { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia', icone: 'rota', assinante: true },
+]
 const GRUPOS: { titulo: string; itens: Item[] }[] = [
   {
-    titulo: 'Estudar',
+    titulo: 'Estudar o conteúdo',
     itens: [
-      { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte uma sessão por tema, prova ou ano', icone: 'livro' },
-      { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia até a sua prova', icone: 'rota', assinante: true, destaque: true },
-      // Biblioteca de resumos (16/10/2026): na aba Estudar, em chamas, para ninguém deixar de ver (pedido do Tales).
-      { destino: '/resumos', rotulo: 'Resumos · Beta', texto: 'Os temas que mais caem, com as questões no meio do texto', icone: 'livro', destaque: true, fogo: true },
-      // Atlas Ortopédico 3D (25/10/2026): clique no osso e veja fraturas, classificações e questões.
-      { destino: '/atlas', rotulo: 'Atlas 3D · Novo', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', destaque: true, fogo: true },
-      { destino: '/flashcards', rotulo: 'Flashcards', texto: 'Revisão espaçada em flashcards e o modo jogo', icone: 'raio', destaque: true },
-      { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' },
-      { destino: '/flashcards/cripta', rotulo: 'Jogar o Torneio', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
-      { destino: '/revisao', rotulo: 'Revisão', texto: 'As questões que voltam hoje para fixar', icone: 'reiniciar' },
-      { destino: '/erros', rotulo: 'Caderno de erros', texto: 'Tudo o que você errou, pronto para refazer', icone: 'alerta' },
-      { destino: '/favoritas', rotulo: 'Favoritas', texto: 'As questões que você marcou com estrela', icone: 'estrela' },
-    ],
-  },
-  {
-    titulo: 'Rumo à prova',
-    itens: [
+      { destino: '/resumos', rotulo: 'Resumos', texto: 'Os temas que mais caem, com as questões no texto', icone: 'livro', novo: 'Beta' },
+      { destino: '/atlas', rotulo: 'Atlas 3D', texto: 'Clique no osso e veja fraturas, classificações e questões', icone: 'cubo', novo: 'Novo' },
       { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
-      { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: '50 questões oficiais, 2 horas, ranking nacional', icone: 'alvo', assinante: true },
+      { destino: '/flashcards/cripta', rotulo: 'Torneio de Flashcards', texto: 'Os mesmos flashcards em forma de jogo', icone: 'trofeu' },
     ],
   },
   {
-    titulo: 'Acompanhar',
+    titulo: 'Provas e disputa',
+    itens: [
+      { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: '50 questões oficiais, ranking nacional', icone: 'alvo', assinante: true },
+      { destino: '/ranking', rotulo: 'Ranking', texto: 'Sua posição, emblemas e missões', icone: 'trofeu' },
+      { destino: '/ligas', rotulo: 'Liga da residência', texto: 'Dispute com os colegas do seu serviço', icone: 'grupo', assinante: true },
+      { destino: '/conquistas', rotulo: 'Conquistas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha' },
+    ],
+  },
+  {
+    titulo: 'Seu progresso',
     itens: [
       { destino: '/dados', rotulo: 'Seu desempenho', texto: 'Acerto por tema e a sua evolução', icone: 'grafico' },
-      { destino: '/ranking', rotulo: 'Ranking', texto: 'Sua posição, emblemas e missões', icone: 'trofeu' },
-      { destino: '/conquistas', rotulo: 'Conquistas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha' },
-      { destino: '/ligas', rotulo: 'Liga da residência', texto: 'Dispute com os colegas do seu serviço', icone: 'grupo', assinante: true },
+      { destino: '/erros', rotulo: 'Caderno de erros', texto: 'Tudo o que você errou, pronto para refazer', icone: 'alerta' },
+      { destino: '/favoritas', rotulo: 'Favoritas', texto: 'As questões que você marcou com estrela', icone: 'estrela' },
       { destino: '/conta', rotulo: 'Relatório do mês', texto: 'Todo dia 1º, a sua evolução no e-mail', icone: 'correio', assinante: true },
     ],
   },
@@ -124,46 +124,53 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
         ? { destino: '/conta', rotulo: 'Minha conta', texto: 'Perfil, preferências e backup', icone: 'usuario' as const }
         : { destino: '/conta?modo=entrar', rotulo: 'Entrar ou criar conta', texto: 'Guarde o progresso em qualquer aparelho', icone: 'usuario' as const }]
       : []),
-    premium
-      ? { destino: '/conta/assinatura', rotulo: 'Minha assinatura', texto: 'Plano, renovação e pagamentos', icone: 'medalha' }
-      : { destino: '/assinatura', rotulo: 'Planos e assinatura', texto: `Pix ou cartão, a partir de ${A_PARTIR_DE}/mês`, icone: 'medalha' },
+    // sem assinatura, os planos ficam no cartão do fim do menu (não repetem aqui)
+    ...(premium ? [{ destino: '/conta/assinatura', rotulo: 'Minha assinatura', texto: 'Plano, renovação e pagamentos', icone: 'medalha' as const }] : []),
     { destino: '/contato', rotulo: 'Suporte e contato', texto: 'Dúvida, sugestão ou problema', icone: 'interrogacao' },
     { destino: '/sobre', rotulo: 'O projeto', texto: 'Quem faz e como os comentários são feitos', icone: 'bandeira' },
     ...(administrador ? [{ destino: '/admin', rotulo: 'Painel do administrador', texto: 'Usuários, avaliações e pagamentos', icone: 'cadeado' as const }] : []),
   ]
   const grupos = [...GRUPOS, { titulo: 'Conta e ajuda', itens: conta }]
+  const bloqueadoDe = (item: Item) => !!item.assinante && !premium && !(nacionalAberto && item.destino === '/simulado-nacional')
+  const atualDe = (item: Item) => item.destino === caminho || (item.destino !== '/conta' && caminho.startsWith(item.destino + '/'))
   // A busca do topo acha estas páginas pelo nome, pelo texto e por sinônimos de quem procura.
   const paginasBusca: PaginaBusca[] = [
-    ...grupos.flatMap((g) => g.itens.map((i) => ({ destino: i.destino, rotulo: i.rotulo, texto: i.texto, icone: i.icone, chaves: SINONIMOS[i.destino] }))),
+    ...[...PRINCIPAIS, { destino: '/flashcards/biblioteca', rotulo: 'Estudar flashcards', texto: 'Direto para a Biblioteca: revisão calma, sem jogo', icone: 'livro' as const }, ...grupos.flatMap((g) => g.itens)]
+      .map((i) => ({ destino: i.destino, rotulo: i.rotulo, texto: i.texto, icone: i.icone, chaves: SINONIMOS[i.destino] })),
     ...EXTRAS_BUSCA,
   ]
 
   return (
     <div className="mn">
       <header className="mn__cabeca">
-        <h2 className="mn__titulo">Tudo o que tem aqui</h2>
-        <p>Do que mais ajuda no estudo ao que você usa de vez em quando.</p>
+        <h2 className="mn__titulo">Menu</h2>
       </header>
       <Suspense fallback={<CampoBuscaVazio />}><BuscaMenu paginas={paginasBusca} aoIr={aoFechar} /></Suspense>
-
-      {!premium && (
-        <a className="mn-planos" href={href('/assinatura')} onClick={aoFechar}>
-          <IconePixel nome="planos" tamanho={48} />
-          <span><strong>Planos e assinatura</strong><small>Cronograma, Simulado Nacional e mais · a partir de {A_PARTIR_DE}/mês · Pix ou cartão</small></span>
-          <span className="mn-planos__acao">Ver planos <Icone nome="direita" tamanho={14} /></span>
-        </a>
-      )}
-
-      <a className="mn-indicar" href={href('/indicar')} onClick={aoFechar}>
-        <img src={recurso('ranking/mensageiro.png')} width={38} height={48} alt="" draggable={false} />
-        <span><strong>Indique e ganhe</strong><small>Chame um colega da residência: 7 dias do plano completo para cada um</small></span>
-        <span className="mn-indicar__acao">Meu link <Icone nome="direita" tamanho={14} /></span>
-      </a>
 
       {pendente && (
         <a className="mn-retomar" href={href('/sessao')} onClick={aoFechar}>
           <span className="mn-retomar__icone" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>
           <span><strong>Continuar de onde parei</strong><small>{sessaoLocal?.origem === 'cronograma' ? 'Sessão do cronograma' : 'Sua última sessão'} · {pendente.feitas} de {pendente.total} respondidas</small></span>
+        </a>
+      )}
+
+      <nav className="mn-principais" aria-label="O dia a dia">
+        {PRINCIPAIS.map((item) => (
+          <a key={item.destino} className="mn-principal" href={href(item.destino)} onClick={aoFechar} aria-current={atualDe(item) ? 'page' : undefined}>
+            <span className="mn-principal__icone" aria-hidden="true"><Icone nome={item.icone} tamanho={22} /></span>
+            <strong>{item.rotulo}</strong>
+            <small>{item.texto}</small>
+            {bloqueadoDe(item) && <span className="mn-principal__selo"><SeloAssinante /></span>}
+          </a>
+        ))}
+      </nav>
+
+      {/* Planos logo abaixo do dia a dia (pedido do Tales, 25/10/2026: tem de ser fácil de achar) */}
+      {!premium && (
+        <a className="mn-planos-faixa" href={href('/assinatura')} onClick={aoFechar}>
+          <span className="mn-extra__icone" aria-hidden="true"><Icone nome="medalha" tamanho={18} /></span>
+          <span><strong>Planos e assinatura</strong><small>Cronograma, Simulado Nacional e todas as camadas do Atlas · a partir de {A_PARTIR_DE}/mês</small></span>
+          <span className="mn-planos-faixa__acao">Ver planos <Icone nome="direita" tamanho={14} /></span>
         </a>
       )}
 
@@ -173,21 +180,19 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
             <p className="mn-grupo__titulo">{grupo.titulo}</p>
             <ul>
               {grupo.itens.map((item) => {
-                const bloqueado = item.assinante && !premium && !(nacionalAberto && item.destino === '/simulado-nacional')
+                const bloqueado = bloqueadoDe(item)
                 // Relatório do mês é só por e-mail: quem não assina vai para os planos.
                 const destino = bloqueado && item.rotulo === 'Relatório do mês' ? '/assinatura' : item.destino
-                const atual = item.destino === caminho || (item.destino !== '/conta' && caminho.startsWith(item.destino + '/'))
                 return (
                   <li key={item.rotulo}>
                     <a
-                      className={'mn-item' + (item.destaque ? ' mn-item--destaque' : '') + (item.assinante ? ' mn-item--assinante' : '') + (item.fogo ? ' mn-item--fogo' : '')}
+                      className={'mn-item' + (item.assinante ? ' mn-item--assinante' : '')}
                       href={href(destino)}
                       onClick={aoFechar}
-                      aria-current={atual && item.rotulo !== 'Relatório do mês' ? 'page' : undefined}
+                      aria-current={atualDe(item) && item.rotulo !== 'Relatório do mês' ? 'page' : undefined}
                     >
-                      {item.fogo && <ChamaPixel altura={22} lados={8} forca={0.85} raio={12} />}
-                      <span className="mn-item__icone" aria-hidden="true"><Icone nome={item.icone} tamanho={19} /></span>
-                      <span className="mn-item__texto"><strong>{item.rotulo}</strong><small>{item.texto}</small></span>
+                      <span className="mn-item__icone" aria-hidden="true"><Icone nome={item.icone} tamanho={18} /></span>
+                      <span className="mn-item__texto"><strong>{item.rotulo}{item.novo && <> <SeloNovo texto={item.novo} /></>}</strong><small>{item.texto}</small></span>
                       {bloqueado ? <SeloAssinante /> : <span className="mn-item__seta" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span>}
                     </a>
                   </li>
@@ -196,6 +201,14 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
             </ul>
           </nav>
         ))}
+      </div>
+
+      <div className="mn-extras">
+        <a className="mn-extra mn-extra--indicar" href={href('/indicar')} onClick={aoFechar}>
+          <span className="mn-extra__icone" aria-hidden="true"><Icone nome="grupo" tamanho={18} /></span>
+          <span><strong>Indique e ganhe</strong><small>7 dias do plano completo para você e o colega</small></span>
+          <Icone nome="direita" tamanho={16} />
+        </a>
       </div>
 
       <p className="mn__rodape">

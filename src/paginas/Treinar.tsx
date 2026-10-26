@@ -28,6 +28,7 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { confirmar, pedirTexto } from '../componentes/Confirmar'
 import { usarArmazenado } from '../estado/usarArmazenado'
+import { Painel } from '../componentes/Painel'
 import '../estilos/paginas/Treinar.css'
 
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "Ortopedia" (antes "TEOT/TARO", troca pedida
@@ -331,6 +332,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     )
   }
 
+  // a gaveta do celular com quantas questões e o modo
+  const [gaveta, definirGaveta] = useState(false)
   if (carregando) return <Carregando linhas={6} rotulo="Carregando os filtros" />
 
   if (indice && indice.total === 0) {
@@ -388,6 +391,45 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     <button type="button" className={'botao botao--grande tr-comecar ' + classe} disabled={total === 0 || carregandoBusca} onClick={comecar} title={rotuloComecar} aria-label={rotuloComecar}>
       {conteudoComecar}
     </button>
+  )
+  // Quantas questões e como responder: no bilhete (computador) e na gaveta que sobe da barra (celular).
+  const escolhas = (sufixo: string) => (
+    <>
+    <div className="tn-bilhete__grupo">
+      <span className="tn-bilhete__rotulo" id={`tn-quantas${sufixo}`}>Quantas</span>
+      <div className="tn-quantas" role="group" aria-labelledby={`tn-quantas${sufixo}`} id={`filtro-limite${sufixo}`}>
+        {LIMITES.map((n) => (
+          <button key={n} type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
+        ))}
+        <button type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
+        <label className="tn-outra">
+          <span className="so-leitor">Quantidade personalizada</span>
+          <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? (filtros.limite !== null && !LIMITES.includes(filtros.limite) ? filtros.limite : '')} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
+        </label>
+      </div>
+    </div>
+
+    <div className="tn-bilhete__grupo">
+      <span className="tn-bilhete__rotulo" id={`tn-modo${sufixo}`}>Como</span>
+      <div className="tn-modos" role="radiogroup" aria-labelledby={`tn-modo${sufixo}`}>
+        <button type="button" role="radio" aria-checked={!simulado} className="tn-modo" onClick={() => definirSimulado(false)}>
+          <Icone nome="livro" tamanho={18} />
+          <span><strong>Estudo</strong><small>Comentário a cada resposta</small></span>
+        </button>
+        <button type="button" role="radio" aria-checked={simulado} className="tn-modo" onClick={() => definirSimulado(true)}>
+          <Icone nome="relogio" tamanho={18} />
+          <span><strong>Prova</strong><small>Cronômetro e gabarito no fim</small></span>
+        </button>
+      </div>
+      {simulado && (
+        <div className="tn-quantas" id={`filtro-duracao${sufixo}`} role="group" aria-label="Tempo de prova">
+          {DURACOES.map(([valor, rotulo]) => (
+            <button key={valor} type="button" className="tn-vidro" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
+          ))}
+        </div>
+      )}
+    </div>
+    </>
   )
   const totalSituacao = contagens?.porSituacao[filtros.situacao] ?? 0
   const areasPresentes = porArea?.map((p) => p.area) ?? []
@@ -672,40 +714,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               </dl>
             </header>
 
-            <div className="tn-bilhete__grupo">
-              <span className="tn-bilhete__rotulo" id="tn-quantas">Quantas</span>
-              <div className="tn-quantas" role="group" aria-labelledby="tn-quantas" id="filtro-limite">
-                {LIMITES.map((n) => (
-                  <button key={n} type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === n} disabled={total < n && filtros.limite !== n} onClick={() => atualizar({ limite: n })}>{n}</button>
-                ))}
-                <button type="button" className="tn-vidro tn-vidro--quadrado" aria-pressed={filtros.limite === null} onClick={() => atualizar({ limite: null })}>Todas</button>
-                <label className="tn-outra">
-                  <span className="so-leitor">Quantidade personalizada</span>
-                  <input className="entrada" type="number" min="1" step="1" max={Math.max(total, 1)} value={rascunhoQtd ?? (filtros.limite !== null && !LIMITES.includes(filtros.limite) ? filtros.limite : '')} placeholder="Outra" onChange={(e) => definirRascunhoQtd(e.target.value)} onBlur={() => { if (rascunhoQtd === null) return; const n = Math.floor(Number(rascunhoQtd)); atualizar({ limite: rascunhoQtd && n > 0 ? Math.max(1, Math.min(total || 1, n)) : null }); definirRascunhoQtd(null) }} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
-                </label>
-              </div>
-            </div>
-
-            <div className="tn-bilhete__grupo">
-              <span className="tn-bilhete__rotulo" id="tn-modo">Como</span>
-              <div className="tn-modos" role="radiogroup" aria-labelledby="tn-modo">
-                <button type="button" role="radio" aria-checked={!simulado} className="tn-modo" onClick={() => definirSimulado(false)}>
-                  <Icone nome="livro" tamanho={18} />
-                  <span><strong>Estudo</strong><small>Comentário a cada resposta</small></span>
-                </button>
-                <button type="button" role="radio" aria-checked={simulado} className="tn-modo" onClick={() => definirSimulado(true)}>
-                  <Icone nome="relogio" tamanho={18} />
-                  <span><strong>Prova</strong><small>Cronômetro e gabarito no fim</small></span>
-                </button>
-              </div>
-              {simulado && (
-                <div className="tn-quantas" id="filtro-duracao" role="group" aria-label="Tempo de prova">
-                  {DURACOES.map(([valor, rotulo]) => (
-                    <button key={valor} type="button" className="tn-vidro" aria-pressed={minutos === valor} onClick={() => definirMinutos(valor)}>{rotulo}</button>
-                  ))}
-                </div>
-              )}
-            </div>
+            {escolhas('')}
 
             {tambemValem.length > 0 && (
               <ul className="tn-valem" aria-label="Filtros que também valem">
@@ -736,13 +745,21 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </aside>
       </div>
 
+      {/* Celular (pedido do Tales, 25/10/2026: "quantas questões fica muito difícil de encontrar"): a barra de baixo
+          mostra a escolha atual e, num toque, abre a gaveta com quantas questões e o modo. */}
       <div className="tn-barra" role="region" aria-label="Começar a sessão">
-        <p className="tn-barra__resumo">
-          <strong>{total === 0 ? 'Nenhuma questão' : <><span className="tn-num">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>}</strong>
-          {total > 0 && <span>cerca de {estimativaMinutos} min · {simulado ? 'prova' : 'estudo'}</span>}
-        </p>
+        <button type="button" className="tn-barra__resumo" onClick={() => definirGaveta(true)} aria-haspopup="dialog" aria-label="Ajustar quantas questões e o modo">
+          <strong>{total === 0 ? 'Nenhuma questão' : <><span className="tn-num">{quantidadeSessao}</span> {quantidadeSessao === 1 ? 'questão' : 'questões'}</>} <Icone nome="ajustes" tamanho={14} /></strong>
+          <span>{simulado ? 'Prova' : 'Estudo'} · ajustar</span>
+        </button>
         {comecarBotao('tn-barra__comecar')}
       </div>
+      <Painel titulo="Sua sessão" aberto={gaveta} aoFechar={() => definirGaveta(false)} rodape={comecarBotao('tn-gaveta__comecar')}>
+        <div className="tn-bilhete tn-gaveta">
+          <p className="tn-gaveta__resumo">{nomeArea} · {selecionados ? rotuloOQue(filtros) : 'todos os assuntos'} · {ROTULO_SITUACAO[filtros.situacao].toLowerCase()}</p>
+          {escolhas('-gaveta')}
+        </div>
+      </Painel>
     </div>
   )
 }
