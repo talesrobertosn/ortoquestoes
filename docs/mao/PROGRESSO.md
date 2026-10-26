@@ -757,13 +757,13 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 76 | Radial com mau prognóstico: transferir | reformulada | 31 | Transferências | 13 | mao-2441 | aplicada |
 | 77 | Zona segura da cabeça do rádio | reformulada | 19 | Cabeça do rádio | 12 | mao-2437 | aplicada |
 | 78 | Angulação no 2º e 3º metacarpos | reformulada | 7 | Metacarpos | 13 | mao-2442 | aplicada |
-| 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | publicada |
+| 79 | Transferências nervosas no radial | reformulada | 31 | Transferências | 14 | mao-2443 | aplicada |
 | 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | publicada |
-| 81 | Resultado ruim na camptodactilia | reformulada (WATERS e BAE) | Waters 6 | Congênitas | 20 | mao-2374 | publicada |
+| 81 | Contratura grave da IFP no DUPUYTREN | reformulada (alternativa ambígua trocada) | 4 | Dupuytren | 14 | mao-2444 | aplicada |
 | 82 | CURTIS: retinaculares transversos para as bandas laterais subirem | técnica | cap. 5, p. 202 e 203 (Fig. 5.26) | mao / Lesões dos tendões extensores | 06 | mao-2303 | publicada |
-| 83 | Posição do gesso no rádio distal | reformulada | 15 | Rádio distal | 08 | mao-2317 | publicada |
-| 84 | Banda lateral na luxação rotatória da IFP | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2339 | publicada |
-| 85 | Tenossinovite extensora reumatoide | reformulada | 56 | Tendinopatias | 17 | mao-2358 | publicada |
+| 83 | Anatomia e epidemiologia do DE QUERVAIN | reformulada | 56 | Tendinopatias | 14 | mao-2445 | aplicada |
+| 84 | Alongamento do tendão terminal | reformulada | 5 | Extensores | 14 | mao-2446 | aplicada |
+| 85 | HUI e LINSCHEID | reformulada | 14 | Radioulnar distal | 14 | mao-2447 | aplicada |
 | 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
 | 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | publicada |
 | 88 | Taxa de pseudartrose do escafoide | reformulada | 16 | Escafoide | 09 | mao-2320 | publicada |
