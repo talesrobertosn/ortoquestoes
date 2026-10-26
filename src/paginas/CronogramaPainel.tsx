@@ -24,6 +24,8 @@ const FORMATO_CURTA = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 
 const FORMATO_SEMANA = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' })
 const curta = (d: Date) => FORMATO_CURTA.format(d)
 const semanaDia = (d: Date) => FORMATO_SEMANA.format(d).replace('-feira', '')
+/** "Na sexta", "No sábado". */
+const naSemana = (d: Date) => `${d.getDay() === 0 || d.getDay() === 6 ? 'No' : 'Na'} ${semanaDia(d)}`
 const SEMANA_CURTA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const meiaNoite = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate())
 const juntar = (nomes: string[]) => nomes.length <= 1 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}`
@@ -340,11 +342,11 @@ export function EstaSemana({ calculo, plano, constancia, aoSemanaDificil, salvan
   let anterior = calculo.hoje ? principalDe(calculo.hoje.itens)?.slug : undefined
   for (const x of plano7.filter((y) => y.d > hoje && y.itens.length)) {
     const atual = principalDe(x.itens)
-    if (anterior && atual && atual.slug !== anterior) { frases.push(`Na ${semanaDia(x.d)} a área principal muda: entra ${atual.nome}.`); break }
+    if (anterior && atual && atual.slug !== anterior) { frases.push(`${naSemana(x.d)} a área principal muda: entra ${atual.nome}.`); break }
     anterior = atual?.slug
   }
   const mini = plano7.find((x) => x.d >= hoje && x.mini)
-  if (mini) frases.push(`Na ${semanaDia(mini.d)}: mini-simulado de ${TAMANHO_MINI} questões.`)
+  if (mini) frases.push(`${naSemana(mini.d)}: mini-simulado de ${TAMANHO_MINI} questões.`)
   const areasSemana = new Map<string, string>()
   for (const x of plano7) for (const i of x.itens) areasSemana.set(i.slug, i.nome)
   const ROTULO = { feito: 'feito', hoje: 'hoje', futuro: '', folga: 'folga', atrasado: 'atrasado', parcial: 'parcial', antes: '–' }

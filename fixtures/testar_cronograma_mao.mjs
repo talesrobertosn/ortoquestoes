@@ -77,8 +77,8 @@ try {
 
   // simulado a cada 14 dias e reta final nas duas últimas semanas
   const sim = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA)
-  assert.equal(sim.hoje.tipo, 'simulado'); assert.ok(sim.idsHoje.length >= 30 && sim.idsHoje.length <= 40)
-  const reta = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, 10) }), AGORA)
+  assert.equal(sim.hoje.tipo, 'simulado'); assert.equal(sim.idsHoje.length, m.TAMANHO_SIMULADO)
+  const reta = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, 6) }), AGORA)
   assert.equal(reta.hoje.tipo, 'reta-final')
   const passou = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, -1) }), AGORA)
   assert.ok(passou.encerrado)
@@ -101,6 +101,39 @@ try {
   assert.ok(essencial.total < tit.total)
   assert.notDeepEqual(tit.temas.slice(0, 5).map((t) => t.nome), p.temas.slice(0, 5).map((t) => t.nome), 'título e ingresso com a mesma prioridade')
 
+  // dia em andamento: a meta não muda e o botão abre só o que falta
+  const meio = Object.fromEntries(p.idsHoje.slice(0, 10).map((id) => [id, { c: true, q: AGORA - 3600000 }]))
+  const andamento = m.calcularPlanoMao(indice, meio, cfg(), AGORA)
+  assert.equal(andamento.metaHoje, p.metaHoje, 'a meta mudou no meio do dia')
+  assert.equal(andamento.idsHoje.length, p.metaHoje - 10, 'o dia em andamento abriu questões demais')
+  assert.ok(andamento.idsHoje.every((id) => !meio[id]))
+
+  // mini-simulado: o mesmo sorteio o dia todo, e o que já foi feito sai
+  const s1 = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA)
+  const s2 = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA + 3600000)
+  assert.deepEqual(s1.idsHoje, s2.idsHoje, 'o simulado mudou no mesmo dia')
+  const s3 = m.calcularPlanoMao(indice, { [s1.idsHoje[0]]: { c: true, q: AGORA } }, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA + 60000)
+  assert.deepEqual(s3.idsHoje, s1.idsHoje.slice(1))
+
+  // semana difícil: só o dia mínimo nesta semana, o resto se espalha
+  const dificil = m.calcularPlanoMao(indice, {}, m.comSemanaDificil(cfg(), true, AGORA), AGORA)
+  assert.ok(dificil.metaHoje <= 10 && dificil.hoje.dificil, `semana difícil com ${dificil.metaHoje}`)
+  assert.ok(dificil.metaNormal >= p.metaNormal)
+  assert.equal(m.comSemanaDificil(m.comSemanaDificil(cfg(), true, AGORA), false, AGORA).semanasDificeis.length, 0)
+
+  // adiantar: o que passou da meta ontem sai do dia de hoje
+  const ontem = m.somarDias(hoje, -1)
+  const comCredito = m.calcularPlanoMao(indice, {}, m.comAdiantado(cfg({ criadoEm: m.somarDias(hoje, -3) }), ontem, 12), AGORA)
+  const semCredito = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -3) }), AGORA)
+  assert.equal(comCredito.hoje.adiantado, Math.min(12, comCredito.metaNormal))
+  assert.equal(comCredito.metaHoje, comCredito.metaNormal - comCredito.hoje.adiantado)
+  assert.ok(Math.abs(comCredito.metaNormal - semCredito.metaNormal) <= 1)
+  // e o que passa da meta hoje deixa o próximo dia mais leve
+  const alem = Object.fromEntries([...p.idsHoje, ...p.agenda[1].partes.flatMap((x) => x.ids).slice(0, 5)].map((id) => [id, { c: true, q: AGORA - 60000 }]))
+  const adiantou = m.calcularPlanoMao(indice, alem, cfg(), AGORA)
+  assert.equal(adiantou.agenda[1].adiantado, 5)
+  assert.deepEqual(Object.keys(m.lerConfig({ ...cfg(), adiantados: { [hoje]: 5, x: 3, [ontem]: -2 } }).adiantados), [hoje])
+
   // prontidão e progresso nunca passam de 100 e não se confundem
   for (const x of [p, depois, comRevisao, tit]) { assert.ok(x.prontidao >= 0 && x.prontidao <= 100); assert.ok(x.cobertura >= 0 && x.cobertura <= 100) }
 
@@ -110,5 +143,5 @@ try {
   const lida = m.lerConfig({ tipo: 'pref', prova: 'titulo', dataProva: '2027-03-10', dias: [1, 9, 3], minutosDia: 9999, cobertura: 'x', em: 5 })
   assert.deepEqual([lida.dias, lida.minutosDia, lida.cobertura], [[1, 3], 300, 'completa'])
   assert.equal(m.itemConfigMao('ingresso'), 'c.mao-ingresso')
-  console.log('Cronograma da mão: data, folga, pouco tempo, feito, revisão, prioridade, atraso, simulado, reta final e título: OK')
+  console.log('Cronograma da mão: data, folga, pouco tempo, feito, revisão, prioridade, atraso, simulado, reta final e título, dia em andamento, semana difícil e adiantar: OK')
 } finally { await rm(pasta, { recursive: true, force: true }) }

@@ -24,24 +24,25 @@ function estadoLeitura(c: ResumoCapitulo, l: Leitura | undefined): string {
  * o tema de hoje vem em destaque, com o convite para ler antes das questões; abaixo, outros da estante
  * (os que a pessoa está lendo primeiro, depois uma ordem que muda a cada dia) e o caminho para a Biblioteca.
  */
-export function CaixaResumos({ subtemasHoje }: { subtemasHoje: Set<string> }) {
+export function CaixaResumos({ subtemasHoje, especialidade }: { subtemasHoje: Set<string>; /** Só os resumos desta área (o cronograma da mão mostra só os da mão). */ especialidade?: string }) {
   const biblioteca = usarIndiceBiblioteca()
   const { leituras } = usarBiblioteca()
   const { premium } = usarPremium()
   const dia = hojeBR()
   const { combina, outros } = useMemo(() => {
-    const combina = resumosDosSubtemas(biblioteca, subtemasHoje)[0] ?? null
-    const resto = (biblioteca?.capitulos ?? []).filter((c) => c.id !== combina?.id)
+    const daArea = (c: ResumoCapitulo) => !especialidade || c.especialidade === especialidade
+    const combina = resumosDosSubtemas(biblioteca, subtemasHoje).filter(daArea)[0] ?? null
+    const resto = (biblioteca?.capitulos ?? []).filter((c) => c.id !== combina?.id && daArea(c))
     const lendo = resto.filter((c) => leituras[c.id]?.progresso && !leituras[c.id]?.concluidoEm).sort((a, b) => (leituras[b.id]?.em ?? 0) - (leituras[a.id]?.em ?? 0))
     const outros = [...lendo, ...ordemDoDia(resto.filter((c) => !lendo.includes(c)), dia)].slice(0, combina ? 2 : 3)
     return { combina, outros }
-  }, [biblioteca, subtemasHoje, leituras, dia])
-  if (!biblioteca?.capitulos.length) return null
+  }, [biblioteca, subtemasHoje, leituras, dia, especialidade])
+  if (!combina && !outros.length) return null
   const fechado = (c: ResumoCapitulo) => c.acesso !== 'gratis' && !premium
 
   return (
     <section className="cp-bloco" aria-labelledby="bib-caixa-titulo">
-      <p className="cp-rotulo"><span id="bib-caixa-titulo">Resumos <span className="cp-tag">Beta</span></span><a className="bib-caixa__todos" href={href('/resumos')}>Ver a biblioteca</a></p>
+      <p className="cp-rotulo"><span id="bib-caixa-titulo">Resumos <span className="cp-tag">Beta</span></span><a className="bib-caixa__todos" href={href(especialidade ? `/resumos?area=${especialidade}` : '/resumos')}>Ver a biblioteca</a></p>
       <div className="bib-caixa">
         {combina && <div className="bib-destaque-fogo"><ChamaPixel altura={30} lados={10} forca={0.9} raio={14} /><a className={'bib-destaque' + (fechado(combina) ? ' bib-destaque--fechado' : '')} href={href(`/resumos/${combina.id}`)} style={estiloArea(combina)}>
           <span className="bib-destaque__lombada" aria-hidden="true" />
