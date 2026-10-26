@@ -702,14 +702,14 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 21 | Contratura dorsal na queimadura | reformulada | 57 | Queimado | 04 | mao-2393 | aplicada |
 | 22 | Pisiforme ossifica por último | reformulada | 41 | Criança | 04 | mao-2394 | aplicada |
 | 23 | KIRNER | reformulada | 36 | Congênitas | 04 | mao-2395 | aplicada |
-| 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
+| 24 | Triplo golpe da hanseníase | reformulada (alternativa oficial com termo trocado) | 3 | Infecções crônicas | 05 | mao-2398 | aplicada |
 | 25 | AIJ oligoarticular | reformulada | 55 | Reumatoide | 04 | mao-2396 | aplicada |
 | 26 | Sinal do bocejo (gaveta anterior) | reformulada | 13 | Carpo | 04 | mao-2397 | aplicada |
-| 27 | Discrepância de calibre no reparo arterial | reformulada (figura virou texto) | 60 | Microcirurgia | 20 | mao-2377 | publicada |
-| 28 | Alongamento por distração do polegar | reformulada | 48 | Reconstrução do polegar | 19 | mao-2369 | publicada |
-| 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | publicada |
-| 30 | As três medidas da posição articular do rádio distal | imagem | cap. 15, p. 604 e 605 | mao / Fratura do rádio distal | 07 | mao-2309 | publicada (original com NÃO; reescrita direta) |
-| 31 | Falange proximal do polegar | reformulada (gabarito diverge do plano do Green) | 7 | Falanges | 14 | mao-2347 | publicada |
+| 27 | Oponentoplastia de HUBER | reformulada | 31 | Transferências | 05 | mao-2399 | aplicada |
+| 28 | Objetivo na tetraplegia C5 | reformulada | 33 | Tetraplegia | - | - | pendente: conferir à mão (objetivo do nível C5 não fica claro no cap. 33) |
+| 29 | Estiloidectomia na artrodese reumatoide | reformulada | 12 | Artrodese do punho | 05 | mao-2400 | aplicada |
+| 30 | Tempo da degeneração walleriana | reformulada (gabarito diverge do Green) | 30 | Nervos | 05 | mao-2401 | aplicada |
+| 31 | Camptodactilia e artrogripose | reformulada (WATERS e BAE) | 39 | Congênitas | 05 | mao-2402 | aplicada |
 | 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | publicada |
 | 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | publicada |
 | 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | publicada |
