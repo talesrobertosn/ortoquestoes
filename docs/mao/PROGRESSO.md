@@ -679,12 +679,12 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
-| 1 | Diagnósticos que imitam o túnel cubital | reformulada | 28 | Neuropatia ulnar | 08 | mao-2313 | publicada |
-| 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
-| 3 | Biomecânica trapeziometacarpal | reformulada | 11 | Rizartrose | 09 | mao-2322 | publicada |
-| 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
-| 5 | FOWLER: indicação no martelo crônico | conduta | cap. 5, p. 196 e 197 | mao / Lesões dos tendões extensores | 05 | mao-2298 | publicada |
-| 6 | Colateral ulnar do polegar completo | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2338 | publicada |
+| 1 | Ligamentos de contenção da IFP | reformulada | 10 | Dedo rígido | 01 | mao-2378 | aplicada |
+| 2 | McGOWAN grau II | reformulada | 28 | Neuropatia ulnar | 01 | mao-2379 | aplicada |
+| 3 | Sarcoma na falange média | reformulada | 59 | Tumores | 01 | mao-2380 | aplicada |
+| 4 | Classificação de LISTER do polegar | reformulada | 48 | Polegar | - | - | pendente: sem fonte (LISTER não está no Green nem nos livros locais) |
+| 5 | MATHES e NAHAI tipo III | reformulada (exemplo do Green) | 44 | Cobertura | 01 | mao-2381 | aplicada |
+| 6 | Mecanismo da fratura da cabeça do rádio | reformulada (original com alternativas repetidas) | 19 | Cabeça do rádio | 01 | mao-2382 | aplicada |
 | 7 | Enxerto total x parcial | reformulada | 44 | Cobertura | 13 | mao-2340 | publicada |
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
 | 9 | Anestésico do bloqueio de BIER | reformulada | 1 | Anestesia | 17 | mao-2361 | publicada |
