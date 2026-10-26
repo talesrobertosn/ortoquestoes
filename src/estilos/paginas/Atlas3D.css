@@ -212,19 +212,6 @@ body:has(.atlas) { overflow: hidden; }
 .atlas--estreita .atlas__camadas { bottom: calc(var(--e-2) + env(safe-area-inset-bottom)); left: var(--e-2); right: var(--e-2); transform: none; max-width: none; justify-content: flex-start; }
 .atlas--estreita .at-camada-rotulo { font-size: var(--meta); }
 .atlas--estreita .atlas__explorar, .atlas--estreita .atlas__personalizar { left: var(--e-2); right: var(--e-2); width: auto; top: 3.6rem; bottom: calc(4.2rem + env(safe-area-inset-bottom)); }
-.atlas__gaveta {
-  position: absolute; z-index: 4; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column;
-  border-radius: var(--raio-cartao) var(--raio-cartao) 0 0; border-top: 1px solid var(--traco);
-  background: var(--superficie); box-shadow: 0 -10px 30px rgba(18, 24, 26, 0.16);
-  padding-bottom: env(safe-area-inset-bottom); transition: height var(--duracao) var(--curva);
-  overflow: hidden;
-}
-.atlas__gaveta--espiada { height: 9.5rem; }
-.atlas__gaveta--meia { height: 52%; }
-.atlas__gaveta--inteira { height: calc(100% - 3.5rem); }
-.atlas__gaveta > :not(.atlas__alca) { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
-.atlas__alca { flex: 0 0 auto; display: grid; place-items: center; height: 1.4rem; border: 0; background: none; cursor: pointer; }
-.atlas__alca span { width: 2.6rem; height: 0.3rem; border-radius: 3px; background: var(--traco-forte); }
 .atlas--estreita .at-ficha { padding: 0 var(--e-4) var(--e-4); }
 .atlas--estreita .at-ficha h2 { font-size: 1.25rem; }
 .atlas--estreita .at-questoes__corpo { padding: 0 var(--e-3) var(--e-3); }
@@ -453,3 +440,94 @@ body:has(.atlas) { overflow: hidden; }
 .atlas__dica { border-radius: 8px; background: rgba(11, 43, 39, 0.92); box-shadow: var(--at-sombra); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 /* a ficha tem texto longo: vidro quase opaco para ler bem por cima do modelo */
 .atlas__ficha, .atlas__explorar, .atlas__personalizar { background: color-mix(in srgb, var(--superficie) 94%, transparent); }
+
+/* ================= Seleção em dois tempos (27/10/2026) =================
+   1º toque: cartão compacto (nome, tipo, uma linha de contexto, atalhos). 2º: detalhes no painel
+   lateral (computador) ou num modal centralizado (celular). O modelo nunca é empurrado. */
+.atlas { height: 100dvh; }
+@media (min-width: 56rem) { .atlas { height: auto; } }
+.at-rapido {
+  position: absolute; z-index: 6; left: var(--e-2); right: var(--e-2); bottom: calc(3.7rem + env(safe-area-inset-bottom));
+  display: grid; gap: 0.55rem; padding: 0.35rem 0.85rem 0.75rem; max-height: 32dvh; overflow: hidden;
+  border: 1px solid var(--at-borda); border-radius: 18px; background: color-mix(in srgb, var(--superficie) 90%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.35); backdrop-filter: blur(20px) saturate(1.35); box-shadow: var(--at-sombra-forte);
+  animation: at-subir 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) both; touch-action: pan-x; transition: transform 0.18s ease;
+}
+.atlas--larga .at-rapido { left: auto; right: var(--e-3); bottom: 4.6rem; width: min(24rem, 40vw); padding-top: 0.75rem; }
+.atlas--larga .at-rapido__alca { display: none; }
+@keyframes at-subir { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
+.at-rapido__alca { justify-self: center; width: 2.4rem; height: 0.28rem; border-radius: 3px; background: color-mix(in srgb, var(--texto) 18%, transparent); }
+.at-rapido__linha { display: flex; align-items: flex-start; gap: 0.6rem; }
+.at-rapido__titulos { flex: 1; min-width: 0; animation: at-trocar 0.16s ease both; }
+@keyframes at-trocar { from { opacity: 0.35; } }
+.at-rapido__selo { display: flex; align-items: center; gap: 0.4rem; margin: 0 0 0.15rem; color: var(--texto-2); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.at-rapido__selo i { width: 0.55rem; height: 0.55rem; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15); }
+.at-rapido h2 { margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.22rem; line-height: 1.15; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.at-rapido__contexto, .at-rapido__latim { margin: 0.2rem 0 0; color: var(--texto-2); font-size: var(--meta); line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.at-rapido__latim { font-style: italic; }
+.at-rapido__fechar { flex: none; display: grid; place-items: center; width: 2.5rem; height: 2.5rem; margin: -0.2rem -0.3rem 0 0; border: 0; border-radius: 50%; background: color-mix(in srgb, var(--texto) 6%, transparent); color: var(--texto-2); cursor: pointer; }
+.at-rapido__fechar:hover { background: color-mix(in srgb, var(--texto) 11%, transparent); color: var(--texto); }
+.at-rapido__atalhos { display: flex; gap: 0.35rem; overflow-x: auto; scrollbar-width: none; margin: 0 -0.85rem; padding: 0 0.85rem; }
+.at-rapido__atalhos .fa-chip { flex: none; min-height: 2rem; white-space: nowrap; background: var(--superficie); }
+.at-rapido__acoes { display: flex; align-items: center; gap: 0.35rem; }
+.at-rapido__detalhes { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 2.75rem; padding: 0 1rem; border: 0; border-radius: 12px; background: var(--verdete); color: var(--sobre-destaque); font: inherit; font-weight: 750; cursor: pointer; box-shadow: 0 6px 16px -6px color-mix(in srgb, var(--verdete) 70%, transparent); transition: transform 0.12s ease, background 0.15s ease; }
+.at-rapido__detalhes:hover { background: var(--verdete-tinta); }
+.at-rapido__detalhes:active, .at-rapido__icone:active:not(:disabled) { transform: scale(0.97); }
+.at-rapido__icone { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--at-borda); border-radius: 12px; background: var(--superficie); color: var(--texto-2); cursor: pointer; transition: transform 0.12s ease, color 0.15s ease; }
+.at-rapido__icone:hover:not(:disabled), .at-rapido__icone[aria-pressed="true"] { color: var(--verdete); border-color: color-mix(in srgb, var(--verdete) 40%, transparent); }
+.at-rapido__icone:disabled { opacity: 0.35; cursor: default; }
+.at-rapido__trilha { display: flex; gap: 0.35rem; margin-left: 0.15rem; padding-left: 0.5rem; border-left: 1px solid var(--at-borda); }
+@media (max-width: 22.5rem) { .at-rapido__trilha { display: none; } }
+/* com o cartão aberto no celular, as vistas saem do caminho (os dedos giram o modelo) */
+.atlas--estreita.atlas--selecao .atlas__vistas { display: none; }
+.atlas--estreita.atlas--selecao .atlas__preset { display: none; }
+
+/* modal de detalhes (celular) */
+.at-modal { position: absolute; inset: 0; z-index: 9; display: grid; place-items: center; padding: calc(env(safe-area-inset-top) + 0.75rem) 0.6rem calc(env(safe-area-inset-bottom) + 0.75rem); }
+.at-modal__fundo { position: absolute; inset: 0; background: rgba(10, 22, 20, 0.32); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); animation: at-esmaecer 0.18s ease both; }
+.at-modal__caixa {
+  position: relative; display: flex; flex-direction: column; width: min(34rem, 100%); max-height: min(86dvh, 100%); overflow: hidden;
+  border-radius: 22px; background: var(--superficie); box-shadow: 0 30px 80px -20px rgba(8, 20, 18, 0.55), 0 0 0 1px var(--at-borda);
+  animation: at-abrir 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) both; transition: transform 0.18s ease;
+}
+.at-modal__caixa--alta { height: min(92dvh, 100%); max-height: none; }
+@keyframes at-abrir { from { opacity: 0; transform: translateY(18px) scale(0.97); } }
+.at-modal__alca { position: absolute; z-index: 3; top: 0; left: 30%; right: 30%; height: 1.3rem; display: grid; place-items: center; cursor: grab; touch-action: none; }
+.at-modal__alca span { width: 2.6rem; height: 0.3rem; border-radius: 3px; background: rgba(255, 255, 255, 0.45); }
+.at-modal__caixa--alta .at-modal__alca span { background: color-mix(in srgb, var(--texto) 20%, transparent); }
+.at-modal__conteudo { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.at-modal__caixa--alta .at-modal__conteudo { display: flex; flex-direction: column; overflow: hidden; }
+.at-modal .at-ficha { padding: 0 1.1rem 1.25rem; gap: 1rem; }
+.at-modal .at-ficha__topo { position: sticky; top: 0; z-index: 2; padding: 1.35rem 1.1rem 1.1rem; margin: 0 -1.1rem; }
+.at-modal .at-ficha h2 { font-size: 1.4rem; }
+.at-modal .at-questoes { height: 100%; }
+.at-modal .at-questoes__topo { padding-top: 1.4rem; }
+
+/* ficha: dois botões no cabeçalho (recolher e fechar) */
+.at-ficha__botoes { display: flex; gap: 0.35rem; }
+.at-ficha__fechar { width: 2.5rem; height: 2.5rem; }
+
+/* leitura mais confortável nos detalhes */
+.fa-linha dd { font-size: 0.95rem; }
+.fa-clinica p { font-size: 0.95rem; }
+.fa-secao summary { min-height: 2.5rem; }
+.fa-chip { min-height: 1.9rem; align-items: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .at-rapido, .at-rapido__titulos, .at-modal__caixa, .at-modal__fundo { animation: none; transition: none; }
+}
+.at-rapido__detalhes { white-space: nowrap; padding: 0 0.7rem; min-width: 0; }
+/* o painel do computador tem a altura do conteúdo (ficha curta não vira uma coluna vazia) */
+.atlas--larga .atlas__ficha { bottom: auto; max-height: calc(100% - 3.9rem - 4.6rem); }
+.atlas--larga.atlas--questoes .atlas__ficha { bottom: 4.6rem; max-height: none; }
+/* nome da região no topo do celular em uma linha */
+.atlas--estreita .atlas__topo .at-chip span { max-width: 8.5rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* celular deitado: o cartão vai para o canto direito e o modelo fica com a maior parte da tela */
+@media (orientation: landscape) and (max-height: 32rem) {
+  .atlas--estreita .at-rapido { left: auto; right: calc(var(--e-2) + env(safe-area-inset-right)); width: min(22rem, 52vw); max-height: none; bottom: calc(3.4rem + env(safe-area-inset-bottom)); gap: 0.4rem; padding-bottom: 0.6rem; }
+  .atlas--estreita .at-rapido__atalhos, .atlas--estreita .at-rapido__alca { display: none; }
+  .at-modal__caixa { max-height: 100%; }
+}
+/* celular estreito: o selo "Atlas 3D" sai do topo para o X de fechar o atlas nunca ficar fora da tela */
+@media (max-width: 26rem) { .atlas--estreita .atlas__topo .atlas__marca { display: none; } .atlas--estreita .atlas__topo { grid-template-columns: auto 1fr auto; } }
+@media (orientation: landscape) and (max-height: 32rem) { .atlas--estreita .at-rapido { width: min(25rem, 58vw); } }

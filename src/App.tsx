@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'rea
 import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
 import { navegar, rotaDe, usarRota, type Rota } from './util/rotas'
+import { TrocaCronograma } from './componentes/TrocaCronograma'
 import { carregadores } from './util/preCarga'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
@@ -25,6 +26,7 @@ import { AvisoCookies } from './componentes/AvisoCookies'
 // termos, conta e planos. Os carregadores vêm de util/preCarga, que adianta o
 // download quando o dedo chega num link ou o aparelho fica ocioso.
 const Encontros = lazy(() => import('./eventos/Encontros'))
+const ConquistasDoDia = lazy(() => import('./eventos/ConquistasDoDia'))
 const ConviteAssinar = lazy(() => import('./convite/ConviteAssinar'))
 const CompletarPerfil = lazy(() => import('./componentes/CompletarPerfil'))
 
@@ -53,6 +55,7 @@ const Emails = lazy(() => carregadores.Emails().then(({ Emails }) => ({ default:
 const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
 const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
+const CronogramaMao = lazy(() => carregadores.CronogramaMao().then(({ CronogramaMao }) => ({ default: CronogramaMao })))
 const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
@@ -92,6 +95,7 @@ const TITULOS: Record<string, string> = {
   '/ligas': 'Liga da residência | Orto Questões',
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
+  '/cronograma-mao': 'Cronograma de Cirurgia da Mão | Orto Questões',
   '/resumos/frases': 'Frases que caem | Biblioteca | Orto Questões',
   '/resumos': 'Biblioteca de resumos | Orto Questões',
   '/flashcards': 'Flashcards | Orto Questões',
@@ -183,10 +187,14 @@ function paginaDaRota(rota: Rota): ReactNode {
       break
     case 'cronograma':
     case 'plano-de-estudo':
-      pagina = <div className="empilha-2"><PlanoEstudo /></div>
+      pagina = <div className="empilha-2"><TrocaCronograma atual="ortopedia" /><PlanoEstudo /></div>
+      break
+    // Cronograma de Cirurgia da Mão (27/10/2026): ingresso e título, cada um com o seu plano.
+    case 'cronograma-mao':
+      pagina = <CronogramaMao key={rota.consulta.get('prova') ?? ''} consulta={rota.consulta} />
       break
     case 'temas-que-mais-caem':
-      pagina = <TemasQueMaisCaem />
+      pagina = <TemasQueMaisCaem consulta={rota.consulta} />
       break
     // O Resumão virou adendo da Biblioteca (16/10/2026): o endereço antigo leva às frases.
     case 'resumao':
@@ -313,7 +321,7 @@ export function App() {
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
       <HospedeConfirmacao />
-      {encontrosProntos && <Suspense fallback={null}><Encontros /></Suspense>}
+      {encontrosProntos && <Suspense fallback={null}><Encontros /><ConquistasDoDia /></Suspense>}
       {encontrosProntos && <Suspense fallback={null}><ConviteAssinar caminho={rota.caminho} /></Suspense>}
     </div>
   )

@@ -1,0 +1,76 @@
+# Provas, temas que mais caem e cronogramas por modalidade (27/10/2026)
+
+Pedido do Tales: deixar de tratar todas as provas como uma só. Cada objetivo tem o próprio ranking e,
+na Cirurgia da Mão, o próprio cronograma.
+
+## Modalidades
+
+| Modalidade | Questões contadas | Onde aparece |
+|---|---|---|
+| Ortopedia, todas as provas | provas oficiais da área base (TEOT, TARO, TECOC, ENARE R4 e outras), como antes | `#/temas-que-mais-caem` (visão de sempre) e `#/cronograma` |
+| TEOT | só TEOT | `#/temas-que-mais-caem?prova=teot` |
+| TARO | só TARO (nunca somado ao TEOT) | `?prova=taro` |
+| Ingresso em Cirurgia da Mão | questões oficiais da área `mao` que não são SBCM nem SIMÃO (USP-SP, ENARE Mão, UFG, PUC-SP, INTO, Einstein, FMRP-USP, IAUPE, UERJ e qualquer prova nova da área) | `?prova=mao-ingresso` e `#/cronograma-mao?prova=ingresso` |
+| Título da Mão: SBCM e SIMÃO | OrtoQuestões Simulados por engenharia reversa da SBCM e do SIMÃO (uma questão nossa por questão da prova) | `?prova=mao-titulo` e `#/cronograma-mao?prova=titulo` |
+
+O SIMÃO é o simulado do exame; o exame oficial é da SBCM. As questões do título no site **não são as
+oficiais**: mostram os assuntos que a prova cobrou. A página diz isso com todas as letras.
+
+## Como o ranking se atualiza sozinho
+
+`src/dados/modalidades.ts` calcula tudo no navegador, a partir de `public/acervo/indice.json` (prova,
+ano, área, assunto, anulada, cópia, simulado). Questão nova, prova nova, reclassificação, anulação ou
+remoção entram na próxima publicação do acervo, sem número escrito à mão e sem script extra. Uma prova
+nova de ingresso da mão entra sozinha se for importada na área `mao` (`scripts/adicionar_prova.py`).
+
+Regras (testadas em `fixtures/testar_modalidades.mjs`):
+- cópias e anuladas não contam; questão sem assunto fica fora e aparece como "sem classificação";
+- cada questão conta uma vez, pelo assunto principal (o primeiro subtema);
+- a ordem usa a fatia média por prova (cada edição pesa igual) e mostra em quantas provas o assunto apareceu;
+- "em alta" ou "em queda" só com três anos ou mais e cinco questões do assunto, diferença de 3 pontos;
+- grandes áreas da mão vêm de `GRANDES_AREAS_MAO`, sem mudar a classificação das questões;
+- é incidência observada no acervo, não previsão.
+
+A página pública `/cirurgia-da-mao/` (gerada a cada publicação por `scripts/gerar_paginas_destino.py`)
+usa as mesmas regras, com ingresso e título separados.
+
+## Cronograma da mão
+
+`src/dados/cronogramaMao.ts` (testes em `fixtures/testar_cronograma_mao.mjs`). O plano é recalculado a cada
+abertura a partir da configuração (data da prova, dias da semana, minutos por dia, cobertura), das respostas
+e do dia. Por isso ele se adapta a erro, atraso e mudança de data sem apagar histórico.
+- meta do dia: o que falta dividido pelos dias de estudo até a reta final, no máximo 25% acima do tempo da pessoa;
+- prioridade: fatia por prova × (1 + erro) × (1 + o que falta fazer);
+- até um quarto do dia é revisão de erros com 3 dias ou mais;
+- três passadas (prioridade máxima, alta, o resto), mini-simulado de 30 questões a cada 14 dias e reta final nas duas
+  últimas semanas (uma, se o plano tiver menos de seis), com modo prova na última e véspera leve;
+- ingresso: a pessoa faz de tudo. O plano usa todas as questões da mão (provas de ingresso e padrão SBCM e SIMÃO),
+  misturadas em cada assunto, na ordem do ranking do ingresso; assunto que só o título cobra entra com metade do peso;
+- título: o foco é a SBCM e o SIMÃO (Tales, 26/10/2026). O plano segue o ranking do título; questões de ingresso dos
+  mesmos assuntos entram só como reforço, no máximo uma para cada quatro (`REFORCO_TITULO`), e nenhuma no essencial;
+- "Prontidão estimada" é estimativa pedagógica (domínio pesado pelo quanto cai), nunca chance de aprovação.
+
+A configuração fica na conta, no mapa sincronizado da Biblioteca (itens `c.mao-ingresso` e `c.mao-titulo`, tipo
+`pref`, vale a mais recente), sem tabela nova no banco. Respostas e histórico continuam onde sempre estiveram.
+Acesso: qualquer pessoa monta e vê o plano; começar as sessões do plano é do assinante, como no cronograma de ortopedia.
+
+### Tela (26/10/2026, pedido do Tales: "a arquitetura parecida com o cronograma" de ortopedia)
+
+A página da mão usa os mesmos componentes do cronograma de ortopedia: "Onde você está" com as passadas e o botão do
+dia, o calendário da semana e do mês, o cartão Hoje com a lista do dia, amanhã, como você está indo, esta semana e os
+recolhidos (constância, desempenho e prontidão, prioridades, semana a semana, levar para o calendário, como funciona).
+`src/dados/painelMao.ts` traduz o `PlanoMao` para `PlanoSalvo` e `CalculoPlano`; cada grande área da mão vira uma
+área com cor própria (`slug` em `GRANDES_AREAS_MAO`, cores em `src/dados/coresAreas.ts`). O motor continua o da mão.
+
+Funções iguais às de ortopedia (26/10/2026, Tales: "o sistema de calendário e todas as funcionalidades"):
+- adiantar: o que passa da meta de hoje fica em `adiantados` na configuração (sincroniza) e sai do próximo dia de estudo;
+- semana difícil: `semanasDificeis` (segundas-feiras), só o dia mínimo (`DIA_MINIMO`) e o resto espalhado;
+- dia em andamento: a meta do dia não muda e o botão abre só o que falta; o mini-simulado é sorteado uma vez por dia;
+- frases que caem da mão (`#/resumos/frases?tema=mao`), tour de 3 partes e resumo da semana (domingo e segunda);
+- resumos: a caixa e o convite "Antes das questões, leia o resumo" mostram só resumos com `especialidade: mao`.
+  Resumo novo da mão (capítulo do Green ou do Rockwood) entra sozinho, pelos `subtemas` do índice da Biblioteca:
+  basta gerar o resumo com `especialidade: mao`, como os de TEOT/TARO. "Ver a biblioteca" abre `#/resumos?area=mao`.
+
+## Testes de navegador
+
+`node fixtures/e2e_mao.mjs` (celular e computador; `FOTOS=pasta` guarda as telas) e `node fixtures/e2e_atlas.mjs`.

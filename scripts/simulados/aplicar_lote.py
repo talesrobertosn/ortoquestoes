@@ -163,7 +163,12 @@ for m, q in QS:
         "alternativas": [{"letra": l, "texto": t} for l, t in zip("ABCD", q["alts"])],
         "gabarito": q["gab"], "comentario": None, "comentariosComunidade": [], "referencias": [],
         "anulada": False, "figuraPendente": False, "revisado": False, "subtemasPendentes": False,
-        "origem": {"arquivo": m.ARQ, "pagina": q["pag"], "numeroOriginal": q.get("num")}})
+        # `pagina` é o fólio impresso quando ele foi efetivamente conferido. Alguns
+        # e-books não têm fólio: nesses casos, não converter a posição digital em
+        # página bibliográfica; guardá-la separadamente só para auditoria interna.
+        "origem": {"arquivo": m.ARQ, "pagina": q["pag"],
+                   **({"posicaoPdf": q["pos_pdf"]} if q.get("pos_pdf") is not None else {}),
+                   "numeroOriginal": q.get("num")}})
     if q.get("id"):
         T["questoes"][pos[qid]] = nova
     else:

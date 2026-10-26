@@ -39,6 +39,7 @@ export const carregadores = {
   SimuladoNacional: () => import('../paginas/SimuladoNacional'),
   PlanoEstudo: () => import('../paginas/PlanoEstudo'),
   TemasQueMaisCaem: () => import('../paginas/TemasQueMaisCaem'),
+  CronogramaMao: () => import('../paginas/CronogramaMao'),
   Resumao: () => import('../paginas/Resumao'),
   Resumos: () => import('../paginas/Resumos'),
   Indicar: () => import('../paginas/Indicar'),
@@ -58,7 +59,7 @@ const PAGINA_DA_ROTA: Record<string, Pagina> = {
   ranking: 'Ranking', conquistas: 'Ranking', termos: 'Termos', 'condicoes-assinatura': 'CondicoesAssinatura',
   assinatura: 'Assinatura', conta: 'Conta', entrar: 'Conta', emails: 'Emails',
   'simulado-nacional': 'SimuladoNacional', cronograma: 'PlanoEstudo', 'plano-de-estudo': 'PlanoEstudo',
-  'temas-que-mais-caem': 'TemasQueMaisCaem', resumao: 'Resumao', resumos: 'Resumos', atlas: 'Atlas3D', indicar: 'Indicar', convite: 'Indicar',
+  'temas-que-mais-caem': 'TemasQueMaisCaem', 'cronograma-mao': 'CronogramaMao', resumao: 'Resumao', resumos: 'Resumos', atlas: 'Atlas3D', indicar: 'Indicar', convite: 'Indicar',
   ligas: 'Ligas', flashcards: 'Flashcards', admin: 'AdminAssinaturas',
 }
 

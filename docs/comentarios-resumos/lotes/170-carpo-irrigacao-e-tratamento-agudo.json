@@ -1,0 +1,234 @@
+{
+  "mao-1669": {
+    "questaoSha256": "01df92afccb3ead9c167e6c4c990f46e2fb3463e3235d73fcbe9754ad9be7882",
+    "comentarioAnteriorSha256": "09c01f9bf2dcc223d20d69b0dc1f3c0338e4102d9494e116c6e71192d60752c6",
+    "comentario": {
+      "conceito": "O polo proximal do escafoide recebe sangue que entra principalmente **pela crista dorsal**, a partir de ramos da artéria radial, e percorre o osso até a região proximal. Por isso, o fluxo é chamado retrógrado: o ponto de entrada não fica diretamente na extremidade que depende dessa irrigação.\n\nO resumo descreve dois pedículos. O dorsal alcança a maior parte do osso, incluindo o polo proximal; o volar entra pelo tubérculo e atende a porção distal. A cintura tem poucas ou nenhuma perfuração vascular, e a cartilagem proximal não oferece uma entrada alternativa direta.\n\nUma fratura pode, assim, separar o polo proximal do caminho intraósseo que o nutre. Isso explica risco de pseudartrose e necrose, mas não significa que toda interrupção vascular termine em necrose definitiva: a fonte admite revascularização após estabilização. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de anatomia/irrigação e tratamento agudo do escafoide.",
+      "correta": "Correta: C (retrógrado, em ramos da radial). A alternativa reúne o sentido do percurso intraósseo até o polo proximal e a artéria de origem dos pedículos descritos. Entrada dorsal e irrigação proximal não são posições contraditórias: o vaso alcança o polo por dentro do osso.",
+      "incorretas": {
+        "A": "Retrógrado descreve corretamente o trajeto para o polo proximal, mas a origem ulnar não corresponde aos pedículos do escafoide apresentados. A fonte os identifica como ramos da radial; acertar a direção do fluxo não corrige a troca da artéria.",
+        "B": "A opção troca tanto a origem quanto o sentido. O resumo descreve ramos radiais e fluxo retrógrado para o polo proximal, não um percurso anterógrado originado na ulnar.",
+        "D": "A radial é a origem correta, mas o fluxo para o polo proximal é retrógrado. A alternativa confunde a artéria que fornece o sangue com a direção em que ele percorre o osso após a entrada dorsal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
+          "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+          "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
+          "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "8c5b52e4a6273493d6d020bf1d1f014ec3a6a82e2e908f5cbfcbacf45a36e526"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1670": {
+    "questaoSha256": "fc3fe8adf8fba47b24f4ec76e8ff0a66856e631ebad7579f6536663255180e52",
+    "comentarioAnteriorSha256": "ed9e3599ee843b2d77b0371a2defd6eecf8574764dd1340268df895b71a24bf1",
+    "comentario": {
+      "conceito": "Os ligamentos escafossemilunar e lunopiramidal unem os ossos da fileira proximal, mas suas partes mais resistentes ficam em lados **opostos**: dorsal no escafossemilunar e palmar no lunopiramidal. Decorar apenas dorsal para todo ligamento interósseo leva à inversão cobrada aqui.\n\nO escafossemilunar tem forma de C. Sua parte dorsal é espessa e forte, a palmar participa da contenção rotacional e a membrana proximal é mais fina e fraca. Já o resumo destaca que a parte palmar do lunopiramidal é a mais grossa e forte e se entrelaça com ligamentos palmares vizinhos.\n\nA diferença é útil para compreender falhas e reparos, mas não transforma a lesão de uma única porção em deformidade estática obrigatória. A fonte relaciona o desalinhamento fixo também à perda dos estabilizadores secundários. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar e lunopiramidal.",
+      "correta": "Correta: B (dorsal; palmar). A sequência acompanha a ordem do enunciado: primeiro o escafossemilunar, cuja parte forte é dorsal, e depois o lunopiramidal, cuja parte forte é palmar.",
+      "incorretas": {
+        "A": "A primeira parte está correta para o escafossemilunar, mas repete indevidamente dorsal para o lunopiramidal. Neste, a fonte localiza a maior espessura e resistência na porção palmar.",
+        "C": "Inverte as duas relações: palmar não é a porção mais resistente do escafossemilunar, e dorsal não é a mais resistente do lunopiramidal. A assimetria entre os ligamentos é justamente o dado decisivo.",
+        "D": "Palmar é correto apenas para o segundo ligamento, o lunopiramidal. No primeiro, a fonte distingue a porção dorsal forte da palmar mais fina e oblíqua, relacionada à contenção da rotação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Dissociação lunopiramidal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Dissociação lunopiramidal"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-67e58eaf",
+          "dissociacao-lunopiramidal-5e703a79",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "dissociacao-lunopiramidal-5eb7978d"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "ae40254d0d73acbe9fd91e1be65e28e82f47dc0bc10160062d264a234dc685e1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1672": {
+    "questaoSha256": "a003aacb1efe54f920974c89cdca9f1463ef6525aad7983496415a5810912baa",
+    "comentarioAnteriorSha256": "410ab3a9c6b89920743b0f619c2de827bff8221119973498f6c8362bc8645313",
+    "comentario": {
+      "conceito": "AP com desvio ulnar e feixe angulado 20° em direção ao cotovelo identifica a incidência de **Ziter**, também chamada banana no resumo. O posicionamento orienta o feixe em relação ao eixo do escafoide para mostrar melhor sua cintura.\n\nA descrição precisa combinar projeção, desvio e angulação do tubo. A radiografia de rotina já inclui PA neutra, perfil e oblíquas; a incidência adicional modifica a geometria para reduzir limitações de sobreposição. Ela ajuda a procurar o traço, mas não exclui toda fratura oculta quando é negativa.\n\nO perfil neutro responde a outra pergunta importante, o alinhamento do carpo em DISI ou VISI. Portanto, uma boa imagem para procurar a cintura do escafoide não é automaticamente a melhor para todos os ângulos do punho. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: diagnóstico e imagem.",
+      "correta": "Correta: B (Ziter). É a incidência nomeada pela combinação exata de AP, desvio ulnar e angulação de 20° para o cotovelo, que ajuda a mostrar a cintura do escafoide.",
+      "incorretas": {
+        "A": "A lateral ou perfil permite examinar o alinhamento sagital do carpo. Ela não corresponde a uma projeção AP em desvio ulnar com a angulação do tubo descrita, ainda que também faça parte do estudo radiográfico do punho.",
+        "C": "A PA neutra integra o estudo inicial e permite avaliar espaços e alinhamento, mas mantém o punho neutro. Não reproduz o desvio ulnar nem a orientação adicional do feixe que definem Ziter.",
+        "D": "A oblíqua semipronada é outra incidência útil para traços oblíquos, cintura e tubérculo do escafoide. Seu caráter oblíquo não é equivalente à AP com desvio ulnar e tubo angulado para o cotovelo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: diagnóstico e imagem."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: diagnóstico e imagem"
+        ],
+        "blocos": [
+          "escafoide-diagnostico-e-imagem-0643b185",
+          "escafoide-diagnostico-e-imagem-b1203433",
+          "escafoide-diagnostico-e-imagem-3a4d76e9",
+          "escafoide-diagnostico-e-imagem-a2e36c9b",
+          "escafoide-diagnostico-e-imagem-54713833"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "e3f74078e70ea0efdd2b832c976f6536bca7d620a90c9b4bacfdc6a1d482fd82"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1674": {
+    "questaoSha256": "2f7c3cfb1ce6476a3b12cd4fe6a51fa0df8e4b79d7913467a6185dcaddceb861",
+    "comentarioAnteriorSha256": "f999b8439ce5af47fcacdf3f789e22dba3f65ced87d3c2ad47ea4884f1401199",
+    "comentario": {
+      "conceito": "Uma fratura-luxação transescafoide perilunar aguda não se resume a um traço no escafoide: ela ocorre com perda de estabilidade e alinhamento do carpo em torno do semilunar. O prefixo trans indica fratura, e peri indica a luxação ao redor da estrutura nomeada.\n\nHerbert e Fisher agrupam as fraturas agudas instáveis em B. Dentro desse grupo, **B4** identifica a associação transescafoperilunar. B1, B2 e B3 descrevem outros padrões ou localizações, sem substituir esse subtipo específico para a fratura-luxação.\n\nA lesão integra o grande arco, em que a trajetória de energia atravessa ligamentos e ossos. O tipo de associação importa para a classificação, e não apenas o nível do traço no escafoide. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de Herbert e Fisher e Mayfield.",
+      "correta": "Correta: D (B4). É o subtipo explicitamente reservado à fratura-luxação transescafoperilunar aguda. O componente de luxação determina a escolha entre os subtipos oferecidos.",
+      "incorretas": {
+        "A": "B1 corresponde à fratura oblíqua do terço distal. Localiza e descreve um padrão do traço, mas não nomeia a associação com luxação perilunar do enunciado.",
+        "B": "B2 é a fratura completa da cintura. Mesmo que uma fratura-luxação atravesse a cintura, a associação perilunar tem o código próprio B4 e não deve ser reduzida à localização isolada.",
+        "C": "B3 é a fratura do polo proximal. Seu risco biológico e sua localização não definem a fratura-luxação transescafoperilunar; o subtipo específico desta é B4."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: classificação de Herbert e Fisher",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
+          "mayfield-e-a-luxacao-perilunar-a286746f"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "e2322b1c28413c4ae1fc0d953ca38a3fc1a03eb089f8cf7609fea097b8f299ba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1675": {
+    "questaoSha256": "277a488d21b927d97f45c05089320239443dd699308ee06459c29dbd1a4400b3",
+    "comentarioAnteriorSha256": "f6dad75449bf9a55460f56508919c9f3daccda0587faae46e89aac15dd7a6d87",
+    "comentario": {
+      "conceito": "Para a fratura aguda da cintura do escafoide com menos de 2 mm de desvio, o SWIFFT recomenda **iniciar com gesso** e operar as que evoluírem para pseudartrose. O resumo descreve diferença mínima de resultado em um ano entre as estratégias comparadas, sem sustentar que cirurgia imediata seja obrigatória para toda cintura com pequeno desvio.\n\nA cirurgia pode encurtar a recuperação e o tempo até a união, mas também acrescenta complicações. Por isso, a decisão envolve padrão da fratura, controle do alinhamento, evolução da consolidação e expectativas da pessoa; não basta concluir que parafuso sempre é melhor porque é um tratamento mais invasivo.\n\nA resposta se refere à população e ao cenário do ensaio. Não deve ser aplicada indistintamente ao polo proximal, a uma fratura-luxação ou a uma pseudartrose com deformidade e dificuldade biológica. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de tratamento agudo e pseudartrose do escafoide.",
+      "correta": "Correta: A (imobilização com gesso). É a estratégia inicial indicada pelo ensaio para a cintura aguda com desvio inferior a 2 mm. Acompanhamento é parte do tratamento: falha de união pode mudar a conduta para cirurgia.",
+      "incorretas": {
+        "B": "A fixação percutânea imediata é uma alternativa discutida, com possibilidade de retorno mais rápido em alguns cenários, mas não foi a estratégia inicial recomendada pelo SWIFFT para todo o grupo descrito. Benefício de recuperação precoce e resultado final são medidas diferentes.",
+        "C": "Redução aberta com enxerto responde a necessidades como correção de deformidade e preenchimento de defeito na pseudartrose ou em padrões específicos. O enunciado não descreve esse problema; propô-la como rotina para a cintura aguda com pequeno desvio extrapola o cenário do ensaio.",
+        "D": "Enxerto vascularizado é discutido para pseudartrose selecionada, como suspeita de necrose ou baixa capacidade de cura proximal. Não é o complemento de rotina da fixação imediata da cintura aguda com desvio inferior a 2 mm estudada aqui."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda; Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda",
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-ba8d8b1a",
+          "escafoide-tratamento-da-fratura-aguda-010810c7",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "9a35852eb431a7f42699c900a915a295bb1e2c6fdef301da4eec7b37fe94660e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1678": {
+    "questaoSha256": "ca54989f03fa915f05569880b388d8eba08a08944de374cac152679e609ce645",
+    "comentarioAnteriorSha256": "1978c6a2535c39aa614b879493b19640e24dc297956698a3e1cb251f6e35bd01",
+    "comentario": {
+      "conceito": "Matti-Russe é uma técnica clássica de enxertia da pseudartrose do escafoide por **via volar**, com enxerto **não vascularizado**. A descrição envolve preparar um leito através da cortical volar dos fragmentos e acomodar o enxerto, distinguindo-a de transferências que levam um pedículo vascular.\n\nA escolha da técnica também depende do problema mecânico. O resumo ressalta que a técnica clássica é limitada para recuperar comprimento quando a cortical volar está encurtada; serve quando não há encurtamento importante a corrigir. Deformidade em humpback pode exigir uma cunha estrutural, como na estratégia de Fisk-Fernandez.\n\nAssim, tipo de enxerto, acesso e objetivo de correção precisam ser considerados separadamente. Via volar não significa enxerto vascularizado, e enxerto não vascularizado não define sozinho por onde ele será inserido em qualquer operação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: consolidação viciosa e pseudartrose.",
+      "correta": "Correta: C (não vascularizado; volar). Esse é o par descrito para Matti-Russe clássico. Ele identifica a técnica, sem dispensar avaliar alinhamento, comprimento e viabilidade antes de indicá-la.",
+      "incorretas": {
+        "A": "Mantém a via volar, mas troca o enxerto clássico por um vascularizado. O resumo descreve retalhos pediculados volares como outras opções de enxertia; compartilhar o lado do acesso não os torna Matti-Russe clássico.",
+        "B": "Troca tanto a condição vascular quanto o lado do acesso. Enxertos vascularizados dorsais existem entre as opções apresentadas para pseudartrose selecionada, porém não correspondem ao enxerto não vascularizado volar da técnica perguntada.",
+        "D": "O tipo não vascularizado está correto, mas a via dorsal não é a de Matti-Russe clássico. O resumo reserva atenção ao acesso dorsal especialmente no polo proximal, enquanto a preparação do leito da técnica aqui descrita é volar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-8b0f9bfb",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-c0273553",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "8a9532aa9532deff94732265e90b262725eeb2b862501b97aaca03dc63541f0e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

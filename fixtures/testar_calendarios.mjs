@@ -54,6 +54,7 @@ try {
     assert.ok(!curto.includes('SUMMARY:Orto Questões: começa a reta final'))
     const emReta = m.gerarIcs(calculo, plano, 7, Date.parse('2026-10-28T15:00:00Z')).replace(/\r\n /g, '')
     assert.ok(!emReta.includes('SUMMARY:Orto Questões: começa a reta final'), 'não reintroduzir alarme de marco passado')
+    assert.ok(m.gerarIcs(calculo, plano, 19, Date.parse('2026-10-16T15:00:00Z'), '/cronograma-mao?prova=titulo').includes('URL:https://ortoquestoes.com.br/#/cronograma-mao?prova=titulo'), 'link do evento do cronograma da mão')
     const h23 = m.gerarIcs(calculo, plano, 23, Date.parse('2026-10-16T15:00:00Z')).replace(/\r\n /g, '')
     assert.match(h23, /DTEND:20261103T000000/)
     assert.deepEqual({ plano, calculo }, copia, 'exportação não grava nem altera o plano')

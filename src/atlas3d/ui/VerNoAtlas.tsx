@@ -61,7 +61,14 @@ export function VerNoAtlas({ questao }: { questao: string }) {
   return (
     <aside className={`va-convite${girando ? ' va-convite--girando' : ''}`} style={{ ['--va-area' as string]: corDaArea(area) }} aria-label="Ver esta estrutura no Atlas 3D">
       <a className="va-convite__palco" href={href(destino)} onClick={abrir} tabIndex={-1} aria-hidden="true">
-        <span className="va-convite__flutua"><span className="va-osso"><span className="va-osso__ponta va-osso__ponta--a" /><span className="va-osso__corpo" /><span className="va-osso__ponta va-osso__ponta--b" /></span></span>
+        <span className="va-convite__flutua"><svg className="va-cubo" viewBox="0 0 120 120" width="120" height="120" shapeRendering="crispEdges" focusable="false">
+          {/* Cubo isométrico com a malha do modelo 3D (Tales, 26/10/2026: o osso antigo lembrava outra coisa). */}
+          <path className="va-cubo__topo" d="M60 16 102 39 60 62 18 39Z" />
+          <path className="va-cubo__esq" d="M18 39 60 62V108L18 85Z" />
+          <path className="va-cubo__dir" d="M60 62 102 39V85L60 108Z" />
+          <path className="va-cubo__malha" d="M39 27.5 81 50.5M81 27.5 39 50.5M18 62 60 85M39 50.5V96.5M102 62 60 85M81 50.5V96.5" />
+          <path className="va-cubo__borda" d="M60 16 102 39 60 62 18 39ZM18 39V85L60 108 102 85V39M60 62V108" />
+        </svg></span>
         <span className="va-convite__chao" />
         <span className="va-convite__eixo">3D</span>
       </a>

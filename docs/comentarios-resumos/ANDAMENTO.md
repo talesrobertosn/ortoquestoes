@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 608 |
+| pendente | 496 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 322 |
-| pendente-inspecao-imagem | 85 |
-| revisada | 1364 |
+| pendente-fonte | 364 |
+| pendente-inspecao-imagem | 83 |
+| revisada | 1442 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -24,8 +24,8 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 38 | 0 | 14 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 88 | 0 | 97 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
-| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 0 | 0 | 217 |
-| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 101 | 0 | 129 |
+| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 78 | 0 | 139 |
+| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 105 | 0 | 131 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 84 | 0 | 48 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 83 | 0 | 45 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 61 | 0 | 12 |

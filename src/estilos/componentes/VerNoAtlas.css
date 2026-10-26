@@ -1,11 +1,9 @@
 /* Atlas 3D: convite no fim da questão (25/10/2026), irmão do livro da Biblioteca.
-   Um osso em pixel art (medido em --u, o "pixel" do desenho) que flutua e gira devagar sobre um palco
-   quadriculado; no clique, dá uma volta inteira antes de abrir o atlas. Com "reduzir movimento", parado. */
+   Um cubo isométrico em pixel art, com a malha do modelo 3D (medido em --u, o "pixel" do desenho), que flutua
+   e balança devagar sobre um palco quadriculado (até 26/10/2026 era um osso, que o Tales pediu para trocar); no clique, dá uma volta inteira antes de abrir o atlas. Com "reduzir movimento", parado. */
 .va-convite {
   --u: 4px;
   --va-tinta: #1b1208;
-  --va-osso: #f1e6cd;
-  --va-osso-sombra: #cdbb93;
   --va-palco: color-mix(in srgb, var(--va-area) 9%, var(--superficie-2, #f3f4f1));
   display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 1.6rem; align-items: center;
   margin: 1.25rem 0; padding: 0.7rem 1.6rem 0.7rem 0.7rem;
@@ -19,26 +17,15 @@
   background-size: 18px 18px; background-position: 9px 9px; text-decoration: none; cursor: pointer; overflow: hidden; -webkit-tap-highlight-color: transparent;
 }
 .va-convite__flutua { display: block; animation: va-flutua 4.4s ease-in-out infinite; }
-.va-osso { position: relative; display: block; width: calc(var(--u) * 34); height: calc(var(--u) * 12); transform: rotate(-24deg); animation: va-gira 6s ease-in-out infinite; }
-.va-osso > span { position: absolute; display: block; }
-.va-osso__corpo {
-  left: calc(var(--u) * 6); top: calc(var(--u) * 4); width: calc(var(--u) * 22); height: calc(var(--u) * 4);
-  background: linear-gradient(to bottom, var(--va-osso) 0 60%, var(--va-osso-sombra) 60%); box-shadow: 0 0 0 2px var(--va-tinta);
-}
-.va-osso__ponta { top: 0; width: calc(var(--u) * 8); height: calc(var(--u) * 12); }
-.va-osso__ponta::before, .va-osso__ponta::after {
-  content: ""; position: absolute; left: 0; width: calc(var(--u) * 7); height: calc(var(--u) * 6);
-  background: linear-gradient(to bottom, var(--va-osso) 0 62%, var(--va-osso-sombra) 62%); box-shadow: 0 0 0 2px var(--va-tinta);
-  border-radius: 50%;
-}
-.va-osso__ponta::before { top: 0; }
-.va-osso__ponta::after { bottom: 0; }
-.va-osso__ponta--a { left: 0; }
-.va-osso__ponta--b { right: 0; }
-.va-osso__ponta--b::before, .va-osso__ponta--b::after { left: auto; right: 0; }
+.va-cubo { display: block; width: calc(var(--u) * 30); height: auto; overflow: visible; animation: va-gira 6s ease-in-out infinite; }
+.va-cubo__topo { fill: color-mix(in srgb, var(--va-area) 28%, #fff); }
+.va-cubo__esq { fill: color-mix(in srgb, var(--va-area) 72%, #fff); }
+.va-cubo__dir { fill: color-mix(in srgb, var(--va-area) 88%, #000); }
+.va-cubo__malha { fill: none; stroke: var(--va-tinta); stroke-width: 2; opacity: 0.28; }
+.va-cubo__borda { fill: none; stroke: var(--va-tinta); stroke-width: 4; stroke-linejoin: miter; }
 .va-convite__chao { position: absolute; bottom: 22%; width: calc(var(--u) * 26); height: calc(var(--u) * 2); background: color-mix(in srgb, var(--va-tinta) 18%, transparent); box-shadow: calc(var(--u) * 3) 0 0 color-mix(in srgb, var(--va-tinta) 10%, transparent), calc(var(--u) * -3) 0 0 color-mix(in srgb, var(--va-tinta) 10%, transparent); animation: va-sombra 4.4s ease-in-out infinite; }
 .va-convite__eixo { position: absolute; right: 0.6rem; bottom: 0.5rem; padding: 0 0.35rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-size: 0.72rem; box-shadow: 2px 2px 0 #072320; }
-.va-convite--girando .va-osso { animation: va-volta 0.62s cubic-bezier(0.3, 0, 0.2, 1) forwards; }
+.va-convite--girando .va-cubo { animation: va-volta 0.62s cubic-bezier(0.3, 0, 0.2, 1) forwards; }
 
 .va-convite__texto { display: grid; gap: 0.5rem; justify-items: start; }
 .va-convite__selo { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--verdete); }
@@ -49,8 +36,8 @@
 
 @keyframes va-flutua { 50% { transform: translateY(-7px); } }
 @keyframes va-sombra { 50% { transform: scaleX(0.85); opacity: 0.7; } }
-@keyframes va-gira { 0%, 100% { transform: rotate(-24deg) scaleX(1); } 50% { transform: rotate(-24deg) scaleX(0.55); } }
-@keyframes va-volta { to { transform: rotate(-24deg) rotateY(360deg) scale(1.15); } }
+@keyframes va-gira { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes va-volta { to { transform: rotateY(360deg) scale(1.15); } }
 @media (prefers-reduced-motion: reduce) { .va-convite *, .va-convite { animation: none !important; } }
 @media (max-width: 40rem) {
   .va-convite { grid-template-columns: 1fr; padding: 0.7rem; gap: 0.9rem; }

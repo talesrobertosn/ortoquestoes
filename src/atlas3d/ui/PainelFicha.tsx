@@ -18,6 +18,8 @@ interface Props {
   aoOcultar: () => void
   aoFavoritar: () => void
   aoFechar: () => void
+  /** no computador: recolhe o painel no cartão compacto, sem perder a seleção */
+  aoRecolher?: () => void
   aoResponder: (titulo: string, ids: string[]) => void
   /** ficha anatômica (músculo, nervo, ligamento) do banco conferido */
   anatomia?: ReactNode
@@ -43,7 +45,10 @@ export function PainelFicha(p: Props) {
           <h2>{titulo}</h2>
           {secundario && <p className="at-ficha__latim">{secundario}</p>}
         </div>
-        <button type="button" className="at-ficha__fechar" onClick={p.aoFechar} aria-label="Fechar a ficha"><Icone nome="fechar" tamanho={18} /></button>
+        <span className="at-ficha__botoes">
+          {p.aoRecolher && <button type="button" className="at-ficha__fechar" onClick={p.aoRecolher} aria-label="Recolher a ficha" title="Recolher"><Icone nome="baixo" tamanho={18} /></button>}
+          <button type="button" className="at-ficha__fechar" onClick={p.aoFechar} aria-label={p.aoRecolher ? 'Limpar a seleção' : 'Fechar os detalhes'} title="Fechar"><Icone nome="fechar" tamanho={18} /></button>
+        </span>
       </header>
 
       <div className="at-ficha__acoes" role="group" aria-label="Ações">

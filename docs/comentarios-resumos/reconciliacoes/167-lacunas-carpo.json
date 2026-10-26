@@ -1,0 +1,54 @@
+[
+  {
+    "id": "mao-0648",
+    "estadoAnterior": "pendente",
+    "questaoSha256": "c4b7832213ce447a7999b4698fcf98a65dd828974ca51cc07b580fb44ffc5f75",
+    "comentarioAnteriorSha256": "869e5d7bb2239bfe4e156e8ba0111ea6e454cf706a3020cfdbb8c5ada478ebef",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "pendencia": "Sem gabarito oficial; gabaritoBibliografia/provavel A e alerta antigos preservados sem novo endosso. O resumo agrupa escafoide/capitato como de risco maior, usando a expressão vaso único e irrigação retrógrada, mas descreve dois pedículos de entrada no escafoide e não define se suprimento único significa osso inteiro ou território de fragmento. Para julgar Certo/Errado sem ambiguidade, falta esclarecer a anatomia e a convenção da afirmação original, distinguindo número de entradas, anastomoses e trajeto retrógrado. Não basta confirmar risco maior para validar literalmente toda a justificativa vascular da frase; sem baseResumo."
+  },
+  {
+    "id": "mao-0747",
+    "estadoAnterior": "pendente",
+    "questaoSha256": "0f4d31f19bed04ab776bb4bd448af6668ac2970491736ef513a6a3becca8b2c0",
+    "comentarioAnteriorSha256": "fd60e9cafcc15406248278d5b617faf5d4053b94aa844878767a0d6064be6249",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "pendencia": "O resumo sustenta menor risco na região distal/tubérculo, risco do polo proximal e do desvio. Porém, a alternativa C exige comparar atraso de início do tratamento acima de QUATRO semanas, limiar ausente no corpo, e D refere tabagismo em fratura aguda, enquanto a discussão explícita de tabagismo no resumo é falha de cirurgia da pseudartrose. Falta fonte de fatores prognósticos da fratura aguda, com temporalidade e população, para análise completa sem transportar estudos. Gabarito E e comentário preservados, sem baseResumo."
+  },
+  {
+    "id": "mao-0786",
+    "estadoAnterior": "pendente",
+    "questaoSha256": "b586cbceca6b38059453a936d18fb2a878ee5e660a64dc95fdca6d09fd7c62ba",
+    "comentarioAnteriorSha256": "5e2afaa03e4619c2a0bfd8b883f3b67e85d92b49993a42573765c4e4f41f1567",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "pendencia": "O sinal radiográfico da gaivota não é descrito no corpo independente nem nas legendas do resumo44. Saber que lesão lunopiramidal pode produzir VISI ou quebra de Gilula não demonstra qual achado é denominado gaivota nem permite comparar todas as estruturas listadas. Falta fonte radiográfica com definição/figura e associação ligamentar do sinal; gabarito B, questão e comentário preservados, sem baseResumo."
+  },
+  {
+    "id": "mao-0832",
+    "estadoAnterior": "pendente",
+    "questaoSha256": "883c3bf4d168ea9b58628b64065bb0343b6ee5ca264f38a1ed369deb6a42e64e",
+    "comentarioAnteriorSha256": "20db6fb7d40c588cf63950caeafdbd2cbccd6ce680fe94eb6453e6a62ee32b70",
+    "resumosConsultados": [
+      {
+        "id": "rockwood10-44-carpo",
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0"
+      }
+    ],
+    "pendencia": "Falta a incidência aproximada de osteonecrose especificamente nas fraturas DESVIADAS DO POLO PROXIMAL, necessária para escolher entre5/10/50/75/90%. O corpo do resumo explica interrupção vascular, revascularização possível e pseudartrose, mas não fornece o percentual de necrose dessa população. Não converter interrupção temporária quase certa em90%, taxa de pseudartrose em50% de necrose ou percentual da nota contextual em fonte. Gabarito C e comentário preservados, sem baseResumo."
+  }
+]

@@ -1,0 +1,254 @@
+{
+  "mao-1681": {
+    "questaoSha256": "74530b507eb2326a7fc0eae481c98a2f89ea52ed923292cfb0236ceced73c682",
+    "comentarioAnteriorSha256": "44aaf8097a3905995722e626aa179356639800845a8ce1b1ccf88523710d0e07",
+    "comentario": {
+      "conceito": "O ramo profundo do nervo ulnar **contorna o hâmulo do hamato**. Essa relação explica por que uma fratura do gancho pode acrescentar comprometimento neural à dor mecânica, sobretudo quando a lesão persiste ou há desvio.\n\nO resumo descreve a fratura do hâmulo por compressão contra um objeto segurado ou avulsão ligamentar. Na evolução crônica, a pseudartrose também pode irritar e romper tendões flexores. Portanto, a avaliação precisa distinguir sintomas ósseos, tendíneos e neurais; não basta reconhecer um pequeno fragmento na radiografia.\n\nOs nervos interósseos do antebraço e o ramo superficial radial têm trajetos diferentes, descritos no resumo do antebraço. O nome do nervo e o ponto anatômico da lesão devem coincidir antes de atribuir uma neuropatia ao gancho do hamato. Conteúdo consultado nos resumos do Rockwood and Green, 10ª edição, capítulos 44 e 42, seções de hamato, Henry e músculos/compartimentos.",
+      "correta": "Correta: C (ramo profundo do ulnar). É a estrutura cujo trajeto contorna o gancho, segundo o resumo. A proximidade com a fratura dá o fundamento anatômico da possível lesão neural.",
+      "incorretas": {
+        "A": "O interósseo anterior é descrito na inervação do plano profundo anterior do antebraço, incluindo flexor longo do polegar, metade lateral do flexor profundo e pronador quadrado. Esse território não identifica o ramo que contorna o hâmulo na mão.",
+        "B": "O interósseo posterior é relacionado pela fonte à região do supinador e aos cuidados nos acessos ao rádio proximal. Não deve ser transportado para o trajeto palmar em torno do gancho, que o resumo atribui ao ramo profundo ulnar.",
+        "D": "O ramo superficial radial acompanha a região lateral junto ao braquiorradial na descrição da via de Henry. Ele não é o ramo profundo ulnar que contorna o hâmulo; confundir os dois troca lado, trajeto e estrutura neural da relação anatômica perguntada."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Fraturas dos outros ossos do carpo.",
+        "Conteúdo consultado no resumo “Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna. Seções: O antebraço como articulação: arco radial, forças e rotação; Vias de acesso e o nervo interósseo posterior."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Fraturas dos outros ossos do carpo"
+        ],
+        "blocos": [
+          "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
+          "fraturas-dos-outros-ossos-do-carpo-5577eb4e"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "f814c17372b34af4fa3e2e4cc7bff2fd3553ad7d7272682980c9f66db14b30fd"
+      },
+      {
+        "resumo": "rockwood10-42-diafise-radio-ulna",
+        "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
+        "secoes": [
+          "O antebraço como articulação: arco radial, forças e rotação",
+          "Vias de acesso e o nervo interósseo posterior"
+        ],
+        "blocos": [
+          "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
+          "vias-de-acesso-e-o-nervo-interosseo-posterior-70016f08"
+        ],
+        "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+        "trechosSha256": "407096a8c80d9086a3f0a40da2ebbae70f636a22108c743cbaa29e866f08fd18"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0811": {
+    "questaoSha256": "917dd41d6cb1f8bf418ab29c903f1ff66edc7fc659425ccf028de8547de73d03",
+    "comentarioAnteriorSha256": "b99b1a45ceac13effd6ca1db67069f33f498f01e618d4b5d0821cd125de1e4b1",
+    "comentario": {
+      "conceito": "O código D2 de Herbert descreve a **pseudartrose esclerótica do escafoide**. A opção que diz apenas pseudartrose é a categoria correta entre as alternativas; o subtipo acrescenta uma característica que a diferencia da forma fibrosa D1.\n\nA classificação mistura eixos que precisam ser reconhecidos: B identifica fraturas agudas instáveis, C indica retardo de consolidação e D, pseudartrose. Por isso, um traço completo ou uma luxação associada não bastam para chamar uma lesão aguda de D2.\n\nNa não união instável, a perda da continuidade mecânica pode permitir que o fragmento distal fleta e o proximal estenda com o semilunar, levando a DISI e progressão do colapso. A esclerose e a evolução da união são informações diferentes da localização anatômica de uma fratura recente. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Herbert/Fisher e pseudartrose.",
+      "correta": "Correta: B (pseudartrose). O grupo D corresponde à não união, e D2 especifica a forma esclerótica. A alternativa é genérica, mas pertence à categoria correta, ao contrário das descrições agudas ou de retardo.",
+      "incorretas": {
+        "A": "A fratura completa da cintura é B2 no grupo agudo instável. Desvio ou completude do traço não demonstram pseudartrose, portanto não a transformam em D2 por si sós.",
+        "C": "A fratura-luxação transescafoperilunar corresponde a B4. É uma associação aguda complexa entre fratura e luxação, diferente do estado de não união esclerótica definido por D2.",
+        "D": "O retardo é C, descrito como atraso na evolução da consolidação. O resumo o separa da pseudartrose D; confundir as categorias elimina justamente a informação que o código D2 comunica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: classificação de Herbert e Fisher",
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
+          "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
+          "escafoide-classificacao-de-herbert-e-fisher-15c87e8c",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "aec403a8ec470d5b4370e9eae094112dd3f3768cfc8791334513775c80e94a60"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0483": {
+    "questaoSha256": "c128a44c5baa2b9c7de3e6def657e093c94f7b107c62d4c1f3ec6eb38f521e87",
+    "comentarioAnteriorSha256": "d47f586086b66b2ff40b22b5254273ed74b6fc224540ab3fd23d0a45d335ee55",
+    "comentario": {
+      "conceito": "Na classificação de Herbert, a letra **C** descreve retardo de consolidação. Ela informa o estado de evolução da fratura, e não simplesmente o local do traço ou a viabilidade do polo proximal.\n\nO resumo separa as fraturas agudas estáveis do grupo A, as agudas instáveis do B, o retardo C e a pseudartrose D. Na forma C, descreve persistência do traço, alargamento e alterações como cistos; na D, distingue a pseudartrose fibrosa da esclerótica.\n\nUma localização proximal aumenta a preocupação com a biologia da união, mas não basta para classificar uma lesão como retardo. Da mesma forma, investigar necrose é uma pergunta de viabilidade que não substitui o critério temporal e de evolução da consolidação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de Herbert/Fisher e pseudartrose.",
+      "correta": "Correta: E (retardo de consolidação). É a definição expressa do tipo C. A classificação distingue atraso de união, pseudartrose e localização anatômica, evitando usá-los como sinônimos.",
+      "incorretas": {
+        "A": "A pseudartrose fibrosa corresponde a D1 no resumo. Ela pertence ao grupo D de não união, e não ao C de retardo; a alternativa troca a categoria de evolução da consolidação.",
+        "B": "Necrose avascular é um problema de viabilidade do fragmento. A fonte discute sua avaliação separadamente, inclusive pelo sangramento intraoperatório, mas não define C como necrose.",
+        "C": "Fratura do polo proximal é B3 na descrição das fraturas agudas. A localização pode influenciar o risco de não união, mas não equivale ao diagnóstico de retardo C.",
+        "D": "Polo distal informa onde ocorreu a fratura, sem demonstrar atraso de consolidação. O tipo C exige considerar a evolução da união, e não apenas nomear uma extremidade do osso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: classificação de Herbert e Fisher",
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-classificacao-de-herbert-e-fisher-15c87e8c",
+          "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
+          "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "537ec8e56072b3b570e32609b97854fcfea4c8a16843392be4b0891fa6b20ebf"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0484": {
+    "questaoSha256": "f7f3472b488bc15e8d2be43c1b48f884296898dd92984202dcc0e91150c6c6a7",
+    "comentarioAnteriorSha256": "8bebb7f4728a2787d91629b5bb5a5337ba5097485f202451b7ff928c75110c6b",
+    "comentario": {
+      "conceito": "O escafoide fratura mais frequentemente na **cintura**, que corresponde à sua região média. No mecanismo habitual de carga com o punho em dorsiflexão máxima e desvio radial, o polo proximal fica contido e a força dobra o osso; a cintura recebe o maior momento de flexão e tem menos trabéculas.\n\nLocalização frequente e prognóstico não são a mesma pergunta. O polo proximal tem particular dificuldade de irrigação e consolidação, mas isso não o torna o local mais comum. Fraturas do tubérculo e do polo distal também têm mecanismos e condutas próprios.\n\nA classificação por localização se organiza em polo proximal, cintura e polo distal. Radial e ulnar são direções do punho e não substituem a identificação da região média que a fonte aponta como predominante. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de mecanismo e classificação do escafoide.",
+      "correta": "Correta: E (meio do osso). Corresponde à cintura, local de maior frequência descrito. O mecanismo de flexão do escafoide e a arquitetura local fornecem a explicação, além da simples memorização do nome.",
+      "incorretas": {
+        "A": "O polo proximal importa pelo risco biológico, já que depende de fluxo intraósseo retrógrado. Maior dificuldade de cura não significa maior incidência: a fonte situa a predominância na cintura.",
+        "B": "A porção distal inclui padrões como fraturas do tubérculo por compressão ou avulsão. Elas existem e têm particularidades, mas não ocupam o lugar da cintura como localização mais comum na descrição consultada.",
+        "C": "Radial nomeia uma direção lateral e aparece no desvio do punho que participa do mecanismo. Não é uma forma de substituir cintura ou região média na classificação longitudinal da fratura.",
+        "D": "Ulnar também é uma direção do punho, não a região longitudinal que a questão procura. Confundir o sentido do desvio com o local do traço deixa de identificar a cintura, explicitamente descrita como mais comum."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: classificação de Herbert e Fisher."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Escafoide: classificação de Herbert e Fisher"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-ca12c5a0",
+          "escafoide-anatomia-irrigacao-e-mecanismo-02f7a0bf",
+          "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
+          "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+          "escafoide-anatomia-irrigacao-e-mecanismo-004adf59"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "2e11b52ea072f5f68eff5aea6424cd347bb523e13a091074b0aa2afbe0fbc052"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0808": {
+    "questaoSha256": "52b72ce9122085f110d0d2e7358e5a9e424402c3f0b02ae42853a668ae1818b2",
+    "comentarioAnteriorSha256": "b7836c571fa86bf8465d7defa75d1991ade360bb095249c6835aec6a88ddfc1b",
+    "comentario": {
+      "conceito": "Na técnica de fixação do escafoide descrita pelo resumo, mede-se o fio e **subtraem-se 4 mm** para selecionar o comprimento do parafuso. A medida obtida é o ponto de partida; ela não deve ser transferida diretamente como comprimento final do implante.\n\nA escolha do tamanho integra uma técnica que também exige conferir a trajetória em várias incidências, brocar mesmo com parafuso autoperfurante para evitar afastar o traço e usar controle antirrotatório quando houver instabilidade. O eixo central oferece maior rigidez, e uma trajetória perpendicular ao traço favorece estabilidade.\n\nA recomendação numérica não autoriza inventar uma margem diferente nem substitui o controle real da posição do implante. O trecho consultado informa a subtração total, sem detalhar sua distribuição por cada extremidade; não é necessário presumir margens locais não descritas para responder. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: tratamento da fratura aguda.",
+      "correta": "Correta: C (4 mm). É a redução total expressamente recomendada a partir do comprimento mensurado no fio. O valor não foi derivado de uma estimativa de tamanho médio do escafoide.",
+      "incorretas": {
+        "A": "Subtrair 2 mm produziria um parafuso 2 mm mais longo que o obtido com a subtração de 4 mm para a mesma medida inicial. Não corresponde à redução total especificada no protocolo descrito.",
+        "B": "Subtrair 3 mm deixa 1 mm a mais de comprimento em relação à recomendação. A proximidade numérica não torna a escolha equivalente: o trecho estabelece 4 mm, sem apresentar uma faixa de 3 a 4 mm.",
+        "D": "Subtrair 5 mm faria o implante 1 mm mais curto que o cálculo recomendado para a mesma medida. A fonte não orienta maximizar a subtração, e sim usar a redução total de 4 mm com controle da posição."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-9cdac99f"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "21bc33e96d097f1af6ec52f21d7b31e7b26dd953d5e194d669ccb22da0675161"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "trauma-0344": {
+    "questaoSha256": "50a507737c1f6536ee3ce73eb239e2962a05e792cd4390b51bb9b007903ca778",
+    "comentarioAnteriorSha256": "fb94134668149620f44ca73668d92badbba1c16c4f5e66309b16a80c934b4313",
+    "comentario": {
+      "conceito": "A imagem é um **esquema**, não uma radiografia. Ela representa pseudartrose do escafoide com áreas de desgaste destacadas no lado radioescafoide e na região **capitossemilunar**, enquanto a interface radiolunar não aparece como o centro do comprometimento. O envolvimento capitossemilunar é o dado que sustenta o estágio III da classificação apresentada.\n\nNa progressão resumida de Watson e Ballet, o estágio I começa entre estiloide radial e escafoide distal; o II amplia o desgaste no lado escafoide; o III acrescenta a capitossemilunar. Não basta ver um traço de pseudartrose ou colapso para escolher o estágio: é preciso localizar quais superfícies degeneraram.\n\nEsse detalhe altera o salvamento. A carpectomia proximal convencional depende de cabeça do capitato aproveitável e perde indicação quando essa cartilagem está gasta, sem interposição. A fonte apresenta escafoidectomia com artrodese parcial para o III. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Artrose do colapso: SNAC e SLAC; esquema da questão inspecionado.",
+      "correta": "Correta: C (III). O esquema destaca comprometimento que alcança a relação capitossemilunar, marco do III no resumo. O gabarito foi preservado e não foi inferida uma medida angular ou um achado radiográfico que o desenho não fornece.",
+      "incorretas": {
+        "A": "O I é restrito ao início do desgaste entre estiloide radial e escafoide distal. Ele não contempla o comprometimento capitossemilunar representado no esquema.",
+        "B": "O II corresponde à progressão no lado escafoide antes do marco capitossemilunar do III. A presença desse comprometimento mediocárpico impede limitar a imagem ao II na classificação resumida.",
+        "D": "O resumo apresenta IV como artrose pancárpica, mais difusa. A inclusão da capitossemilunar, por si só, é o critério do III e não transforma automaticamente o caso em IV. Também não se deve decidir III versus IV apenas pela radiolunar, que a fonte descreve como relativamente poupada no padrão de colapso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Artrose do colapso: SNAC e SLAC."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Artrose do colapso: SNAC e SLAC"
+        ],
+        "blocos": [
+          "artrose-do-colapso-snac-e-slac-118d45f0",
+          "artrose-do-colapso-snac-e-slac-a82703f6",
+          "artrose-do-colapso-snac-e-slac-db418f5b",
+          "artrose-do-colapso-snac-e-slac-9a5fe18c",
+          "artrose-do-colapso-snac-e-slac-cbb1d7e8",
+          "artrose-do-colapso-snac-e-slac-75ec5c30"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "048b60dab6d5d29e1c80d2191cb016d1fb1465c4376943b215c40355e14d0857"
+      }
+    ],
+    "imagensConferidas": [
+      "trauma/trauma-0344-1.jpeg"
+    ]
+  }
+}

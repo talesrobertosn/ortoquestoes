@@ -44,7 +44,7 @@ export function Resumos({ segmentos, consulta }: { segmentos: string[]; consulta
   if (sub === 'caderno') return <Caderno />
   if (sub === 'frases') return <Suspense fallback={<Carregando linhas={6} rotulo="Carregando as frases" />}><FrasesQueCaem /></Suspense>
   if (sub) return <LeitorResumo id={sub} consulta={consulta} />
-  return <Estante />
+  return <Estante areaInicial={consulta.get('area')} />
 }
 
 function usarIndiceBiblioteca() {
@@ -66,7 +66,7 @@ function historicoCobranca(indice: Indice | null, ids: string[]): string {
   return [...porProva].sort((a, b) => b[1].length - a[1].length).slice(0, 3).map(([p, anos]) => anos.length ? `${p} ${Math.min(...anos)}${Math.max(...anos) !== Math.min(...anos) ? `–${Math.max(...anos)}` : ''}` : p).join(' · ')
 }
 
-function Estante() {
+function Estante({ areaInicial = null }: { areaInicial?: string | null }) {
   const dados = usarIndiceBiblioteca()
   const { indice } = usarIndice()
   const { leituras, marcas } = usarBiblioteca()
@@ -74,7 +74,7 @@ function Estante() {
   const { sessao } = usarConta()
   const visitante = contasDisponiveis && !sessao
   const [busca, definirBusca] = useState('')
-  const [area, definirArea] = useState<string | null>(null)
+  const [area, definirArea] = useState<string | null>(areaInicial)  // #/resumos?area=mao abre já filtrado (cronograma da mão)
   if (dados === undefined) return <Carregando linhas={6} rotulo="Abrindo a biblioteca" />
   if (dados === null) return <Estado titulo="Não foi possível abrir a biblioteca." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>
   const q = normalizar(busca.trim())

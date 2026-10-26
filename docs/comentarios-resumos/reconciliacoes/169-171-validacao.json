@@ -1,0 +1,95 @@
+{
+  "base": "96278e588f9fac10b674bab116695ef0cde6c47d",
+  "lotes": {
+    "169": {
+      "revisadas": [
+        "mao-0993",
+        "mao-1209",
+        "mao-1259",
+        "mao-1319",
+        "mao-1434",
+        "mao-1530"
+      ],
+      "pendencias": 4
+    },
+    "170": {
+      "revisadas": [
+        "mao-1669",
+        "mao-1670",
+        "mao-1672",
+        "mao-1674",
+        "mao-1675",
+        "mao-1678"
+      ],
+      "pendencias": 4
+    },
+    "171": {
+      "revisadas": [
+        "mao-1673",
+        "mao-1679",
+        "mao-1680",
+        "mao-1682",
+        "mao-1683",
+        "mao-1685"
+      ],
+      "pendencias": 4
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks169171.log": "087c4c73e745b42a080092fcf672c6fca7188f34934b9aab8e11921c79215245",
+    "ui169.log": "f1490eb19906a3e322b631db4cd91c61a510c8203f8587bd8d29b9729942edc6",
+    "remotos169-final.json": "df3860e8e18499acebe6c5f87c209d1393bcfea7f1359cd15544e96274930aff"
+  },
+  "replay": "18/18 comentários, alternativas, fontes, hashes e avulsos integrais",
+  "preservacao": "12 comentários pendentes intactos; demais membros do JSON e questões/índice/progresso/Biblioteca preservados",
+  "visual": {
+    "casos": 18,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alertas": [
+      "mao-0993",
+      "mao-1319",
+      "mao-1530"
+    ],
+    "semGabaritoOficial": [
+      "mao-1209",
+      "mao-1259"
+    ],
+    "capturasInspecionadas": [
+      "169-mao-0993-alerta-cel.png",
+      "169-mao-1319-alerta-pc.png",
+      "169-mao-1530-alerta-cel.png"
+    ]
+  },
+  "imagensConferidas": [],
+  "fonte": {
+    "id": "rockwood10-44-carpo",
+    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+    "leitura": "Leitura integral anterior de761linhas sem mudanças; releitura dos trechos e blocos usados; sem notas contextuais como fonte clínica ou leitura atribuída do livro primário; questões aplicadas sem imagens"
+  },
+  "inventario": {
+    "resumos": 34,
+    "ids": 2483,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 525,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 352,
+      "pendente-inspecao-imagem": 84,
+      "revisada": 1424
+    }
+  },
+  "proximoLote": 172,
+  "publicacao": "Conferir head/CI, revisão, merge, guarda/deploy e produção no PR; validação local não antecipa publicação."
+}

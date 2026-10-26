@@ -257,6 +257,8 @@ export default function Encontros() {
       dataTeot = p?.prova === 'TEOT' && p.data_prova ? p.data_prova : DATA_TEOT
     }
     const armazenou = () => { lembrancas = lerLembrancas(id); preferencia() }
+    // Outro componente (as conquistas do dia) gravou lembranças nesta aba: relê para não apagar o que ele marcou.
+    const relerLembrancas = () => { lembrancas = lerLembrancas(id) }
     const iniciarTeste = () => {
       if (!import.meta.env.DEV) return
       const pedido = new URLSearchParams(location.hash.split('?')[1]).get('encontro')
@@ -281,6 +283,7 @@ export default function Encontros() {
     window.addEventListener('dblclick', martelo); window.addEventListener('oq:eventos:gato', gato); window.addEventListener('oq:eventos:arquivo', abrirArquivo)
     window.addEventListener(AVISO_EVENTOS, preferencia); window.addEventListener('storage', armazenou); window.addEventListener('hashchange', rota)
     window.addEventListener('ortoquestoes:plano', plano); document.addEventListener('visibilitychange', ocultar)
+    window.addEventListener('oq:eventos:lembrancas', relerLembrancas)
     try {
       if (permitido(contexto()) && !sessionStorage.getItem('oq:eventos:console')) { console.info('Orto Questões · Plantão do navegador: por aqui também tem gente curiosa. Bom estudo!'); sessionStorage.setItem('oq:eventos:console', '1') }
     } catch { /* o console também é dispensável */ }
@@ -290,6 +293,7 @@ export default function Encontros() {
       window.removeEventListener('dblclick', martelo); window.removeEventListener('oq:eventos:gato', gato); window.removeEventListener('oq:eventos:arquivo', abrirArquivo)
       window.removeEventListener(AVISO_EVENTOS, preferencia); window.removeEventListener('storage', armazenou); window.removeEventListener('hashchange', rota)
       window.removeEventListener('ortoquestoes:plano', plano); document.removeEventListener('visibilitychange', ocultar)
+      window.removeEventListener('oq:eventos:lembrancas', relerLembrancas)
     }
   }, [id, nascimento, criadaEm, conta?.user.id])
 

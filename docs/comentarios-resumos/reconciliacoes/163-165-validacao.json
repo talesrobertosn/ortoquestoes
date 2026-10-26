@@ -1,0 +1,98 @@
+{
+  "base": "806ce0c15e1fd18cd86b1115855ffb403c0b92a0",
+  "lotes": {
+    "163": {
+      "revisadas": [
+        "mao-0013",
+        "mao-0018",
+        "mao-0028",
+        "mao-0052",
+        "mao-0056",
+        "mao-0076",
+        "mao-0080",
+        "mao-0240"
+      ],
+      "pendencias": 2
+    },
+    "164": {
+      "revisadas": [
+        "mao-0299",
+        "mao-0354",
+        "mao-0590",
+        "mao-1000",
+        "mao-1037",
+        "mao-0492",
+        "mao-0588",
+        "mao-0991",
+        "mao-1036",
+        "mao-0777"
+      ],
+      "pendencias": 0
+    },
+    "165": {
+      "revisadas": [
+        "mao-0239",
+        "mao-0345",
+        "mao-0448",
+        "mao-0499",
+        "mao-0521",
+        "mao-0587"
+      ],
+      "pendencias": 4
+    }
+  },
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks163165.log": "6d07ac824b7e38ef0a3b23d13e6559618dff4406af418d1c8e63268b9a6cfb44",
+    "ui163.log": "95c61349c707c56524a041b588c03a032aae1ad93a89603accad7388afe77e66",
+    "ui165.log": "30cd41ef6b3970c498ebc5bcbbbbfc4324603aa12604ba7ec74bfea67747e93a",
+    "remotos163-final.json": "7df4bf9ef246954f91addbbbaeadd4bd05fe15db17b9e06c9a6337619a343883"
+  },
+  "replay": "24/24 comentários, alternativas, fontes, hashes e avulsos integrais",
+  "preservacao": "6 comentários pendentes intactos; demais membros do JSON e questões/índice/progresso/Biblioteca preservados",
+  "visual": {
+    "casos": 24,
+    "larguras": [
+      390,
+      1440
+    ],
+    "linksExatos": true,
+    "alertas": [
+      "mao-1037",
+      "mao-0777",
+      "mao-0448",
+      "mao-0499"
+    ],
+    "capturasInspecionadas": [
+      "163-mao-1037-alerta-cel.png",
+      "163-mao-0777-alerta-pc.png",
+      "163-mao-0448-alerta-cel.png"
+    ]
+  },
+  "fonte": {
+    "id": "rockwood10-44-carpo",
+    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+    "leitura": "761 linhas integralmente; blocos independentes compilados; sem leitura atribuída do livro primário; sem figuras nas questões selecionadas"
+  },
+  "inventario": {
+    "resumos": 34,
+    "ids": 2483,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 584,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 328,
+      "pendente-inspecao-imagem": 85,
+      "revisada": 1388
+    }
+  },
+  "proximoLote": 166,
+  "publicacao": "Conferir head/CI, revisão, merge, guarda/deploy e produção no PR; este arquivo registra validação local e não antecipa publicação."
+}

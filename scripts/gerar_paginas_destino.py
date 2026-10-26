@@ -1296,8 +1296,15 @@ def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
     n_sim = Counter(q.get("prova") for q in simulados)
     provas = [p for p in PROVAS_MAO if p in por_prova] + sorted(p for p in por_prova if p not in PROVAS_MAO)
     nomes_provas = ", ".join(provas[:-1]) + " e " + provas[-1] if len(provas) > 1 else "".join(provas)
-    subtemas = Counter(s for q in oficiais + simulados if not q.get("anulada")
-                       for s in (q.get("subtemas") or []) if not s.startswith("Outr"))
+    # Temas que mais caem (27/10/2026): ingresso e título separados, cada questão pelo assunto principal,
+    # a mesma regra do ranking do site (src/dados/modalidades.ts). Recontado a cada publicação.
+    def principais(lista: list[dict]) -> Counter:
+        return Counter((q.get("subtemas") or [""])[0] for q in lista
+                       if not q.get("anulada") and not q.get("duplicataDe") and (q.get("subtemas") or [""])[0]
+                       and not (q.get("subtemas") or [""])[0].startswith("Outr"))
+    sub_ingresso = principais([q for q in oficiais if q.get("prova") not in ("SBCM", "SIMÃO")])
+    sub_titulo = principais([q for q in simulados if q.get("prova") in ("SBCM", "SIMÃO")])
+    subtemas = sub_ingresso
     treino = link_treino(area="mao")
 
     faq = [
@@ -1327,8 +1334,11 @@ def pagina_cirurgia_mao(d: dict) -> tuple[str, dict]:
          "residência em cirurgia da mão e cirurgiões da mão que querem revisar. Os pré-requisitos de cada seleção estão no edital "
          "de cada serviço."),
         ("Quais assuntos mais caem na prova de cirurgia da mão?",
-         "No acervo, os assuntos com mais questões são " + ", ".join(n.lower() if i else n for i, (n, _) in enumerate(subtemas.most_common(5)))
-         + ". A lista completa, com a contagem, está nesta página."),
+         "Depende da prova. Nas seleções para a residência, os assuntos com mais questões no acervo são "
+         + ", ".join(n.lower() if i else n for i, (n, _) in enumerate(sub_ingresso.most_common(5)))
+         + ". No padrão do título (SBCM e SIMÃO), são "
+         + ", ".join(n.lower() for n, _ in sub_titulo.most_common(5))
+         + ". As duas listas, com a contagem, estão nesta página, e o site tem o ranking completo de cada prova."),
         ("O Orto Questões é gratuito?",
          "Criar a conta é grátis e já permite treinar, ver os comentários e usar a revisão dos erros. Os planos acrescentam recursos "
          "como o cronograma até a prova. Os limites atuais e o que cada plano inclui estão na página de planos do site."),
@@ -1401,18 +1411,26 @@ alt="Questão de cirurgia da mão no Orto Questões: compressão do nervo ulnar 
 <li><strong>O que errou volta sozinho</strong> na revisão espaçada, em outro dia.</li>
 <li><strong>Veja o desempenho por assunto</strong> e o que a turma marcou em cada alternativa.</li>
 </ul></div></section>""")
-    if subtemas:
-        top = subtemas.most_common(12)
-        maximo = top[0][1] or 1
-        itens = "".join(
+    def lista_rank(contagem: Counter) -> str:
+        top = contagem.most_common(10)
+        maximo = (top[0][1] if top else 1) or 1
+        return "".join(
             f'<li><span class="mao-rank__nome">{esc(n)}</span><span class="mao-rank__n">{num(c)}</span>'
             f'<span class="mao-rank__barra" aria-hidden="true"><i style="width:{max(4, round(c * 100 / maximo))}%"></i></span></li>'
             for n, c in top
         )
+    if sub_ingresso or sub_titulo:
         corpo.append(f"""<section class="mao-assuntos"><div class="env-interno"><h2>Os assuntos que mais caem</h2>
-<p class="mao-sub">Questões de cirurgia da mão do acervo por assunto, somando as provas de seleção e os OrtoQuestões Simulados, sem as
-anuladas. Comece por cima.</p>
-<ol class="mao-rank">{itens}</ol></div></section>""")
+<p class="mao-sub">Ingresso e título têm rankings próprios: cada questão conta uma vez, pelo assunto principal, sem as anuladas.
+No site, cada ranking se atualiza sozinho quando entram questões novas e vira um cronograma até a data da sua prova.</p>
+<div class="mao-titulo__grade">
+<div><h3>Provas de ingresso (residência)</h3><ol class="mao-rank">{lista_rank(sub_ingresso)}</ol>
+<p><a class="mao-link" href="../#/temas-que-mais-caem?prova=mao-ingresso">Ranking completo do ingresso</a></p></div>
+<div><h3>Título: SBCM e SIMÃO</h3><ol class="mao-rank">{lista_rank(sub_titulo)}</ol>
+<p class="mao-sub">Contados nas questões no padrão da prova, escritas a partir de cada questão da SBCM e do SIMÃO.</p>
+<p><a class="mao-link" href="../#/temas-que-mais-caem?prova=mao-titulo">Ranking completo do título</a></p></div>
+</div>
+<p><a class="mao-botao" href="../#/cronograma-mao">Montar o cronograma de cirurgia da mão</a></p></div></section>""")
     corpo.append("""<section class="mao-estudo"><div class="mao-estudo__texto"><h2>Onde estudar para a prova</h2>
 <p>A base de qualquer preparação é a bibliografia indicada no edital da SBCM do ano, com os grandes tratados de cirurgia da mão e
 microcirurgia. O que separa ler de acertar é treinar a decisão de prova: classificação, indicação, técnica e complicação, no formato das

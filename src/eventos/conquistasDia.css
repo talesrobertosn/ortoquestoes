@@ -1,0 +1,111 @@
+/* Conquistas do dia (26/10/2026): cartão de papel creme com costura tracejada discreta, etiqueta de
+   madeira e um palco redondo na cor do tema (raio-X, instrumental de aço, plantão). Aconchegante, mas
+   sóbrio, para um site de ortopedistas: o cartão desce com um quique curto e a arte dá um pulo só.
+   Funciona no tema escuro. */
+.cq-vivo {
+  --cq-tinta: #5b3a29;
+  --cq-papel: #fffaf0;
+  --cq-texto: #7a5a48;
+  --cq-madeira: #c98b5b;
+  position: fixed;
+  z-index: 170;
+  top: calc(78px + env(safe-area-inset-top));
+  left: 50%;
+  width: min(410px, calc(100vw - 24px));
+  transform: translateX(-50%);
+  pointer-events: none;
+  font-family: var(--fonte-texto);
+}
+:root[data-tema="escuro"] .cq-vivo { --cq-tinta: #1d140f; --cq-papel: #2f2620; --cq-texto: #d9c3b0; --cq-madeira: #a86f45; }
+.cq {
+  --cq-tom: #6f8aa3;
+  --cq-fundo: #e4ebf1;
+  position: relative;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 12px 40px 16px 12px;
+  border: 3px solid var(--cq-tinta);
+  border-radius: 14px;
+  background: var(--cq-papel);
+  color: var(--cq-tinta);
+  box-shadow: 0 4px 0 var(--cq-tinta), 0 14px 28px -10px rgba(91, 58, 41, 0.35);
+  overflow: hidden;
+  pointer-events: auto;
+  animation: cq-chega 0.62s cubic-bezier(0.25, 0.9, 0.3, 1.2) both;
+}
+/* costura tracejada por dentro, discreta */
+.cq::before { content: ""; position: absolute; inset: 5px; border: 1px dashed color-mix(in srgb, var(--cq-tom) 55%, transparent); border-radius: 9px; pointer-events: none; }
+.cq--metal { --cq-tom: #8c99a5; --cq-fundo: #eceff2; }
+.cq--plantao { --cq-tom: #2f7d6d; --cq-fundo: #dff0ea; }
+:root[data-tema="escuro"] .cq { --cq-fundo: color-mix(in srgb, var(--cq-tom) 22%, #2f2620); box-shadow: 0 4px 0 var(--cq-tinta), 0 14px 28px -10px rgba(0, 0, 0, 0.6); }
+.cq--saindo { animation: cq-vai 0.34s ease-in both; }
+
+/* ---------- Palco ---------- */
+.cq__palco {
+  position: relative; display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, #fff 55%, var(--cq-fundo)), var(--cq-fundo) 70%);
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--cq-tom) 45%, transparent);
+}
+.cq__arte { position: relative; z-index: 1; display: block; line-height: 0; animation: cq-pulo 0.6s 0.3s ease-out both; transform-origin: 50% 100%; }
+.cq__arte svg { display: block; image-rendering: pixelated; }
+.cq__sombra { position: absolute; bottom: 10px; width: 38px; height: 5px; border-radius: 50%; background: color-mix(in srgb, var(--cq-tinta) 18%, transparent); animation: cq-sombra 0.6s 0.3s ease-out both; }
+/* ---------- Texto ---------- */
+.cq__corpo { position: relative; display: grid; gap: 3px; min-width: 0; }
+.cq__etiqueta {
+  justify-self: start; padding: 1px 8px 1px 14px; position: relative;
+  border: 2px solid var(--cq-tinta); border-radius: 4px; background: var(--cq-madeira); color: #fffaf0;
+  font-family: var(--fonte-pixel, monospace); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase;
+}
+/* o preguinho da etiqueta */
+.cq__etiqueta::before { content: ""; position: absolute; left: 5px; top: 50%; width: 4px; height: 4px; margin-top: -2px; background: var(--cq-tinta); }
+.cq__titulo { margin-top: 2px; font-family: var(--fonte-pixel-titulo, var(--fonte-pixel, inherit)); font-size: 1.5rem; font-weight: 400; line-height: 1; color: var(--cq-tinta); }
+:root[data-tema="escuro"] .cq__titulo { color: #fbe9d4; }
+.cq__texto { font-size: 0.86rem; line-height: 1.42; color: var(--cq-texto); }
+.cq__marca {
+  justify-self: start; margin-top: 3px; padding: 0 8px; border-radius: 999px;
+  background: var(--cq-fundo); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--cq-tom) 60%, transparent);
+  font-family: var(--fonte-pixel, monospace); font-size: 0.76rem; color: var(--cq-tinta); font-variant-numeric: tabular-nums;
+}
+:root[data-tema="escuro"] .cq__marca { color: #fbe9d4; }
+.cq__fechar {
+  position: absolute; top: 9px; right: 9px; display: grid; place-items: center; width: 28px; height: 28px;
+  border: 0; border-radius: 8px; background: transparent; color: var(--cq-texto); cursor: pointer;
+}
+.cq__fechar:hover { background: var(--cq-fundo); color: var(--cq-tinta); }
+.cq__fechar:focus-visible { outline: 2px solid var(--cq-tom); outline-offset: 1px; }
+.cq__fechar path { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.cq__tempo { position: absolute; left: 14px; right: 14px; bottom: 6px; height: 3px; border-radius: 2px; background: color-mix(in srgb, var(--cq-tom) 75%, transparent); transform-origin: left; animation: cq-tempo var(--duracao, 5200ms) linear both; }
+
+/* ---------- Movimento ---------- */
+@keyframes cq-chega {
+  0% { transform: translateY(-28px) scale(0.9); opacity: 0; }
+  55% { transform: translateY(4px) scale(1.02, 0.97); opacity: 1; }
+  80% { transform: translateY(-2px); }
+  100% { transform: none; }
+}
+@keyframes cq-vai { to { transform: translateY(-16px) scale(0.96); opacity: 0; } }
+/* um pulo curto, com um leve amassado ao cair */
+@keyframes cq-pulo {
+  0% { transform: none; }
+  20% { transform: scale(1.06, 0.94); }
+  50% { transform: translateY(-9px) scale(0.97, 1.03); }
+  80% { transform: scale(1.03, 0.97); }
+  100% { transform: none; }
+}
+@keyframes cq-sombra { 30% { transform: scaleX(0.65); opacity: 0.5; } 60% { transform: scaleX(0.85); } 100% { transform: none; } }
+@keyframes cq-tempo { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+
+@media (max-width: 640px) {
+  .cq-vivo { top: calc(66px + env(safe-area-inset-top)); }
+  .cq { grid-template-columns: 70px minmax(0, 1fr); gap: 12px; padding: 10px 36px 14px 10px; }
+  .cq__palco { width: 70px; height: 70px; }
+  .cq__arte svg { width: 60px; height: 60px; }
+  .cq__titulo { font-size: 1.32rem; }
+  .cq__texto { font-size: 0.8rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cq, .cq * { animation: none !important; }
+}
+@media print { .cq-vivo { display: none; } }

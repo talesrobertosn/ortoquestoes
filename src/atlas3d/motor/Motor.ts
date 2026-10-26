@@ -114,6 +114,7 @@ export class Motor {
     canvas.addEventListener('pointerdown', this.aoApertar)
     canvas.addEventListener('pointerup', this.aoSoltar)
     canvas.addEventListener('pointerleave', this.aoSair)
+    canvas.addEventListener('pointercancel', this.aoCancelar)
     canvas.addEventListener('dblclick', this.aoDuploClique)
     this.observador = new ResizeObserver(() => this.redimensionar())
     this.observador.observe(recipiente)
@@ -294,12 +295,25 @@ export class Motor {
     return e && ehOssoLongo(e) ? faixaPorAltura(e, z) : undefined
   }
 
-  private inicioToque: { x: number; y: number; t: number } | null = null
-  private aoApertar = (ev: PointerEvent) => { this.inicioToque = { x: ev.clientX, y: ev.clientY, t: performance.now() } }
+  private inicioToque: { x: number; y: number; t: number; id: number } | null = null
+  /** Dedos na tela agora; um gesto que teve dois dedos (pinça, giro) nunca vira toque de seleção. */
+  private dedos = new Set<number>()
+  private gestoMulti = false
+  private aoApertar = (ev: PointerEvent) => {
+    this.dedos.add(ev.pointerId)
+    if (this.dedos.size > 1) { this.gestoMulti = true; this.inicioToque = null; return }
+    this.gestoMulti = false
+    this.inicioToque = { x: ev.clientX, y: ev.clientY, t: performance.now(), id: ev.pointerId }
+  }
+  private aoCancelar = (ev: PointerEvent) => { this.dedos.delete(ev.pointerId); if (!this.dedos.size) this.inicioToque = null }
   private aoSoltar = (ev: PointerEvent) => {
+    this.dedos.delete(ev.pointerId)
     const i = this.inicioToque
     this.inicioToque = null
-    if (!i || Math.hypot(ev.clientX - i.x, ev.clientY - i.y) > 6) return // foi arraste, não clique
+    if (this.gestoMulti) { if (!this.dedos.size) this.gestoMulti = false; return }
+    // arraste (passou de 6 px no mouse, 10 px no dedo) ou toque longo não selecionam
+    const folga = ev.pointerType === 'mouse' ? 6 : 10
+    if (!i || i.id !== ev.pointerId || Math.hypot(ev.clientX - i.x, ev.clientY - i.y) > folga || performance.now() - i.t > 600) return
     const lista = this.acertos(ev)
     const ids = [...new Set(lista.map((a) => a.object.userData.id as string))]
     if (!ids.length) { this.ultimoClique = null; this.selecionar(null); return }
@@ -431,6 +445,7 @@ export class Motor {
   }
 
   private margens = { direita: 0, inferior: 0 }
+  private tamanhoAtual = new Vector2()
   /** Área coberta por painéis (ficha à direita, gaveta embaixo): o centro da cena vai para o espaço livre. */
   definirMargens(direita: number, inferior: number) {
     if (Math.abs(direita - this.margens.direita) < 1 && Math.abs(inferior - this.margens.inferior) < 1) return
@@ -446,7 +461,9 @@ export class Motor {
     if (direita || inferior) this.camera.setViewOffset(w + direita, h + inferior, direita, inferior, w, h)
     else this.camera.clearViewOffset()
     this.camera.updateProjectionMatrix()
-    this.renderer.setSize(w, h)
+    // só as margens mudaram (painel abriu ou fechou): o canvas fica do mesmo tamanho, sem realocar o buffer
+    const tamanho = this.renderer.getSize(this.tamanhoAtual)
+    if (tamanho.x !== w || tamanho.y !== h) this.renderer.setSize(w, h)
     this.pedirQuadro()
   }
 
@@ -539,6 +556,7 @@ export class Motor {
     c.removeEventListener('pointerdown', this.aoApertar)
     c.removeEventListener('pointerup', this.aoSoltar)
     c.removeEventListener('pointerleave', this.aoSair)
+    c.removeEventListener('pointercancel', this.aoCancelar)
     c.removeEventListener('dblclick', this.aoDuploClique)
     this.controles.dispose()
     const geos = new Set<BufferGeometry>()
