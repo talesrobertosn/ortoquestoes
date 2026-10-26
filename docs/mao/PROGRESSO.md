@@ -954,6 +954,16 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 77 | Margem do melanoma até 1 mm de Breslow | reformulada | 58, p. 2172 | Tumores | 11 | mao-2525 | aplicada |
 | 78 | Reconstrução do polegar (limites de 1,5 cm² e 2,5 cm) | — | 48 | Polegar | — | — | pendente: limites sem fonte no Green |
 | 79 | MONTEGGIA no adulto: princípio do tratamento | reformulada, outro ângulo | 20, p. 938, 945 e 946.e4 | Ulna proximal | 11 | mao-2526 | aplicada |
+| 80 | Embriologia: dedos separados aos 52 a 53 dias | reformulada, outro ângulo | 35, p. 1363 | Malformações congênitas | 12 | mao-2527 | aplicada |
+| 81 | Paralisia cerebral: transferência para extensão dos dedos | — | 32 | Paralisia cerebral | — | — | pendente: FCU para extensor comum sem fonte no Green |
+| 82 | Pioderma gangrenoso: reação patérgica | reformulada, outro ângulo | 3, p. 75; 2, p. 57 | Infecções | 12 | mao-2528 | aplicada |
+| 83 | Círculo de HORII: banda anterior do LCM pode ficar íntegra | reformulada, outro ângulo | 22, p. 979 | Cotovelo | 12 | mao-2529 | aplicada |
+| 84 | Regra 1:1 do retalho aleatório | reformulada | 44, p. 1712 | Retalhos | 12 | mao-2530 | aplicada |
+| 85 | LEDDY e PACKER tipo I: por que é urgente | reformulada, outro ângulo | 6, p. 216 | Tendões flexores | 12 | mao-2531 | aplicada |
+| 86 | Alça de WEILBY (metade do FCR) | reformulada | 11, p. 427 | Rizartrose | 12 | mao-2532 | aplicada |
+| 87 | Epidemiologia da polidactilia pré-axial | reformulada | 37, p. 1470 | Polidactilia | 12 | mao-2533 | aplicada |
+| 88 | Grácil livre funcional: ordem dos passos e vasos receptores | reformulada | 34, p. 1336 e 1338 | Microcirurgia / plexo | 12 | mao-2534 | aplicada |
+| 89 | Espessura do fio 10-0 | — | — | Microcirurgia | — | — | pendente: sem fonte no Green |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
