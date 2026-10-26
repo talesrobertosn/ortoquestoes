@@ -687,12 +687,14 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 6 | Colateral ulnar do polegar completo | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2338 | aplicada |
 | 7 | Enxerto total x parcial | reformulada | 44 | Cobertura | 13 | mao-2340 | aplicada |
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
+| 9 | Anestésico do bloqueio de BIER | reformulada | 1 | Anestesia | 17 | mao-2361 | aplicada |
 | 10 | PALMER 2C: perfuração com condromalácia | classificação | cap. 14, p. 571 e 572 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2296 | publicada |
 | 11 | Martelo tipo I: mais comum, agudo até 4 semanas, tala | afirmativas | cap. 5, p. 192 e 193 | mao / Lesões dos tendões extensores | 05 | mao-2302 | publicada |
 | 12 | Hanseníase: parasitização | reformulada | 3 | Infecções crônicas | 10 | mao-2325 | aplicada |
 | 13 | DOYLE III: aberta com perda de tecido | classificação | cap. 5, p. 192 a 194 | mao / Lesões dos tendões extensores | 05 | mao-2300 | publicada |
 | 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
 | 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | aplicada |
+| 18 | Fisiopatologia da SDRC | reformulada (mecanismo do Green) | 53 | SDRC | 17 | mao-2362 | aplicada |
 | 19 | Objetivos no membro mutilado | reformulada (sem EXCETO) | 43 | Membro mutilado | 11 | mao-2330 | aplicada |
 | 20 | Ramos terminais da artéria radial | reformulada | 60 | Vascular | 14 | mao-2344 | aplicada |
 | 21 | Deficiência ulnar: frequência da sindactilia | número | cap. 38, p. 1500 | mao / Deficiências longitudinais e mão torta | 02 | mao-2284 | publicada |
@@ -741,16 +743,19 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 74 | DE QUERVAIN | reformulada | 56 | Tendinopatias | 16 | mao-2357 | aplicada |
 | 75 | Reperfusão no macrorreimplante | reformulada | 42 | Reimplante | 15 | mao-2351 | aplicada |
 | 77 | Colo do metacarpo: afirmações | reformulada | 7 | Metacarpos | 12 | mao-2333 | aplicada |
+| 78 | Transferências do pé para a mão | reformulada | 47 | Dedo do pé | 17 | mao-2359 | aplicada |
 | 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | aplicada |
 | 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | aplicada |
 | 82 | CURTIS: retinaculares transversos para as bandas laterais subirem | técnica | cap. 5, p. 202 e 203 (Fig. 5.26) | mao / Lesões dos tendões extensores | 06 | mao-2303 | publicada |
 | 83 | Posição do gesso no rádio distal | reformulada | 15 | Rádio distal | 08 | mao-2317 | aplicada |
 | 84 | Banda lateral na luxação rotatória da IFP | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2339 | aplicada |
+| 85 | Tenossinovite extensora reumatoide | reformulada | 56 | Tendinopatias | 17 | mao-2358 | aplicada |
 | 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
 | 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | aplicada |
 | 88 | Taxa de pseudartrose do escafoide | reformulada | 16 | Escafoide | 09 | mao-2320 | aplicada |
 | 89 | Estabilidade do cotovelo e coronoide | reformulada | 20 | Ulna proximal | 16 | mao-2356 | aplicada |
 | 90 | Macrodactilia: histologia (menos glândulas sudoríparas) | fato | cap. 36, p. 1438 e 1439 | mao / Outras malformações congênitas | 01 | mao-2282 | publicada |
+| 92 | Pedículo do hálux | reformulada | 47 | Dedo do pé | 17 | mao-2360 | aplicada |
 | 93 | Fise em C (braquete epifisário longitudinal): clinodactilia | fato/imagem | cap. 36, p. 1433 | mao / Deformidades dos dedos | 02 | mao-2283 | publicada |
 | 94 | Falange média instável | reformulada | 7 | Falanges | 12 | mao-2334 | aplicada |
 | 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | aplicada |
