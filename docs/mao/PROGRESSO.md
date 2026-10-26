@@ -733,13 +733,13 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 52 | Círculo de HORII | reformulada | 22 | Cotovelo | 09 | mao-2420 | aplicada |
 | 53 | Tenossinovectomia no túnel do carpo | reformulada | 28 | Túnel do carpo | 09 | mao-2421 | aplicada |
 | 54 | Associações da mão torta ulnar | reformulada | 38 | Mão torta | 09 | mao-2422 | aplicada |
-| 55 | Sinal da vela | reformulada | 19 | Cabeça do rádio | 18 | mao-2364 | publicada |
-| 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
-| 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | publicada |
-| 58 | Classificação da sindactilia | reformulada (figura virou texto) | 36 | Sindactilia | 20 | mao-2376 | publicada |
-| 59 | Rádio desalinhado após fixar a ulna | reformulada | 20 | Ulna proximal | 16 | mao-2355 | publicada |
-| 60 | Fraturas pediátricas e síndrome compartimental | reformulada (oficial aceitou A e D) | 51 | Compartimental | 12 | mao-2335 | publicada |
-| 61 | Rigidez intrínseca | reformulada | 10 | Dedo rígido | 18 | mao-2365 | publicada |
+| 55 | Biópsia da melanoníquia | reformulada | 58 | Tumores de pele | 10 | mao-2423 | aplicada |
+| 56 | Complicação da transferência do dedo do pé | reformulada | 47 | Dedo do pé | - | - | pendente: conferir à mão (complicação mais comum não aparece explícita no cap. 47) |
+| 57 | Comprimento do retalho da comissura | reformulada | 36 | Sindactilia | - | - | pendente: sem fonte (medida não está no cap. 36 traduzido) |
+| 58 | Divisão posterior do tronco superior | reformulada | 34 | Plexo | 10 | mao-2424 | aplicada |
+| 59 | Macrodactilia tipo IV | reformulada | 36 | Congênitas | 10 | mao-2425 | aplicada |
+| 60 | Ligamento triangular | reformulada | 5 | Extensores | 10 | mao-2426 | aplicada |
+| 61 | MADELUNG | reformulada | 38 | Congênitas | 10 | mao-2427 | aplicada |
 | 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
 | 63 | Tuberculose óssea no adulto | reformulada | 3 | Infecções crônicas | 18 | mao-2366 | publicada |
 | 64 | Lesão sentinela neonatal | reformulada | 51 | Compartimental | 12 | mao-2336 | publicada |
