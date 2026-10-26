@@ -681,6 +681,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 |---|---|---|---|---|---|---|---|
 | 1 | Diagnósticos que imitam o túnel cubital | reformulada | 28 | Neuropatia ulnar | 08 | mao-2313 | aplicada |
 | 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
+| 3 | Biomecânica trapeziometacarpal | reformulada | 11 | Rizartrose | 09 | mao-2322 | aplicada |
 | 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
 | 5 | FOWLER: indicação no martelo crônico | conduta | cap. 5, p. 196 e 197 | mao / Lesões dos tendões extensores | 05 | mao-2298 | publicada |
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
@@ -694,6 +695,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
 | 26 | Ligamentos extracapsulares do carpo (radioescafocapitato é intracapsular) | anatomia | cap. 13, p. 490 e 491 | mao / Anatomia da mão e punho | 03 | mao-2288 | publicada |
 | 30 | As três medidas da posição articular do rádio distal | imagem | cap. 15, p. 604 e 605 | mao / Fratura do rádio distal | 07 | mao-2309 | publicada (original com NÃO; reescrita direta) |
+| 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | aplicada |
 | 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
 | 39 | GARCIA-ELIAS: RASL no estágio 4 | classificação/conduta | cap. 13, p. 513, 518 e 523 | mao / Instabilidade do carpo | 03 | mao-2290 | publicada |
 | 40 | Radioulnar distal: estabilizadores secundários | anatomia | cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2297 | publicada |
@@ -716,6 +718,9 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 83 | Posição do gesso no rádio distal | reformulada | 15 | Rádio distal | 08 | mao-2317 | aplicada |
 | 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
 | 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | aplicada |
+| 88 | Taxa de pseudartrose do escafoide | reformulada | 16 | Escafoide | 09 | mao-2320 | aplicada |
 | 90 | Macrodactilia: histologia (menos glândulas sudoríparas) | fato | cap. 36, p. 1438 e 1439 | mao / Outras malformações congênitas | 01 | mao-2282 | publicada |
 | 93 | Fise em C (braquete epifisário longitudinal): clinodactilia | fato/imagem | cap. 36, p. 1433 | mao / Deformidades dos dedos | 02 | mao-2283 | publicada |
+| 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | aplicada |
+| 97 | VOCHE e MERLE no WARTENBERG | reformulada | 31 | Transferências | 09 | mao-2319 | aplicada |
 | 98 | MADELUNG: resultados das osteotomias | afirmativas | cap. 38, p. 1503, 1506 e 1509 | mao / Outras malformações congênitas | 02 | mao-2287 | publicada |
