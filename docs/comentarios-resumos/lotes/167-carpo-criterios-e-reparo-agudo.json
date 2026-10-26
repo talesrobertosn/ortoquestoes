@@ -1,0 +1,244 @@
+{
+  "mao-0646": {
+    "questaoSha256": "20b84a7b6b7154f4260fe79c8ef9cb02bf90f6a9a04cefabcfc2971d0b9327ed",
+    "comentarioAnteriorSha256": "f9cd4c53754ed65aaf82f0520aac7e121b999c1ce9f7120b82d77962922558f9",
+    "comentario": {
+      "conceito": "O ligamento escafossemilunar liga dois ossos da fileira proximal que precisam se mover de forma coordenada. Na lesão aguda típica, a fonte descreve o ligamento **arrancado do escafoide e ainda preso ao semilunar**, apoiando a afirmação da questão.\n\nA informação é anatômica e também orienta o reparo. Na lesão aguda completa reparável, o resumo descreve reavivar o escafoide, fixar âncoras nesse osso, reduzir a relação entre os ossos e proteger com fios. Isso difere de uma lesão irreparável que precise de reconstrução com enxerto.\n\nA perda do ligamento não obriga o intervalo a aparecer imediatamente muito aberto: o alargamento pode progredir e a deformidade estática depende de contenções secundárias. Assim, conhecer o local da avulsão ajuda a entender a lesão, mas não substitui avaliar sua extensão e estabilidade. Não há gabarito oficial registrado; conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+      "correta": "Resposta provável: A (Certo). O corpo independente da fonte afirma que o ligamento habitualmente se destaca do escafoide, mantendo inserção no semilunar. A avulsão aqui identifica a desinserção ligamentar; a afirmação não exige um fragmento ósseo arrancado.",
+      "incorretas": {
+        "B": "Marcar Errado negaria o padrão de desinserção descrito como usual. Existem outras formas de falha, mas a fonte cita a desinserção no semilunar e a ruptura oblíqua como raras; sua existência não invalida a afirmação de que a avulsão no escafoide é a apresentação típica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false,
+      "provavel": "A"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-1f9a739d",
+          "dissociacao-escafossemilunar-67e58eaf",
+          "dissociacao-escafossemilunar-65f85568"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "684bdf5927e9f286c7889887009776b0b440d41b97114b75ffafef7e1552410d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0660": {
+    "questaoSha256": "9f2eea3fc552c0d80879c990298e58df4610e6af131b017840bb0f30ec58d83a",
+    "comentarioAnteriorSha256": "ef7b4f179e7ff7dc67931c7ee21125ec2ae72157bb460528f76d4138c0a5adb6",
+    "comentario": {
+      "conceito": "O sinal de Terry Thomas é o **alargamento do intervalo escafossemilunar** na radiografia. Ele expressa a perda da contenção que mantém os dois ossos próximos. A questão procura um limiar diagnóstico, não apenas um afastamento que já desperte suspeita, e adota **5 mm ou mais** no gabarito.\n\nÉ importante separar essa convenção da redação exata da fonte consultada. O resumo considera até 2 mm normal, mais de 3 mm sugestivo e **mais de 5 mm, associado ao sinal do anel**, diagnóstico. O anel é a projeção do tubérculo do escafoide fletido. A fonte também recomenda comparar os dois punhos e usar estresse para investigar instabilidade dinâmica.\n\nPortanto, suspeita, confirmação e limite numérico não são termos intercambiáveis. Não se deve converter uma medida isolada de exatamente 5 mm em confirmação automática com base em um trecho que diz mais de 5 mm e acrescenta outro sinal. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+      "correta": "Correta: B (>= 5), conforme o gabarito oficial. É o limiar escolhido pela prova. O resumo usa mais de 5 mm associado ao sinal do anel; o limite inclusivo e o diagnóstico por gap isolado não são confirmados com a mesma precisão pelo trecho, ressalva preservada no alerta.",
+      "incorretas": {
+        "A": "Um intervalo de 4 mm já ultrapassa a faixa sugestiva descrita, mas a fonte não o apresenta como o limiar diagnóstico adotado na questão. Um achado suspeito pede investigação do alinhamento e da estabilidade, não a equivalência automática com o critério mais estrito.",
+        "C": "A faixa em torno de 3 mm pertence à distinção entre normalidade e suspeita; o resumo formula mais de 3 mm como sugestivo. Essa medida não deve ser confundida com o critério diagnóstico mais alto e associado ao anel descrito na mesma fonte.",
+        "D": "Um gap de 6 mm ultrapassa o valor indicado pela banca e também o limite maior que 5 mm da fonte, mas a alternativa desloca o limiar para cima. A pergunta procura o corte adotado, não um exemplo de afastamento mais intenso; a necessidade de integrar os outros achados permanece."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito B (>=5 mm) preservado. O resumo consultado descreve até 2 mm normal, >3 mm sugestivo e >5 mm associado ao sinal do anel como diagnóstico, com comparação contralateral. Isso não confirma literalmente o limite inclusivo de exatamente 5 mm nem autoriza diagnosticar toda lesão aguda pelo gap isolado. A distinção entre o corte da prova e a formulação do resumo foi mantida."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-4b14cd81",
+          "dissociacao-escafossemilunar-14203ef4",
+          "dissociacao-escafossemilunar-b886eabc",
+          "dissociacao-escafossemilunar-719be38b"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "d2bff24427d36ffbf2ba319926b88eefd86911833fb489fee03a72c1c47c958d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0776": {
+    "questaoSha256": "d0d017e7d2ba92c17bab43e59fdf7df0d6254c2b0826e7667cd72771d17616b8",
+    "comentarioAnteriorSha256": "986b900943f0168a5b628399358e975a11788b5131da90fbf4e9edae0bc94e82",
+    "comentario": {
+      "conceito": "O VISI é a instabilidade volar do segmento intercalado: o semilunar fica em **flexão**. O escafoide normalmente exerce influência flexora e o piramidal, extensora. Se a ligação lunopiramidal falha, perde-se parte da influência extensora, favorecendo o predomínio do lado do escafoide.\n\nNa sequência de Mayfield, a falha lunopiramidal é o **estágio III**. Antes dela, a lesão começa no escafossemilunar e alcança a relação capitato-semilunar. Depois, no IV, o próprio semilunar gira para palmar para fora da fossa do rádio.\n\nA correlação não significa que todo estágio III apresente obrigatoriamente VISI estático. O resumo ressalta que a lesão lunopiramidal isolada não gera deformidade fixa: também precisam ceder estabilizadores secundários. A prova está relacionando o padrão de flexão do semilunar ao passo da sequência que compromete esse elo ulnar. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de Mayfield, Padrões de instabilidade e Dissociação lunopiramidal.",
+      "correta": "Correta: D (III). É o estágio da ruptura lunopiramidal, cujo desequilíbrio favorece VISI. A presença de deformidade estática depende da extensão das lesões associadas; a letra não deve ser convertida em regra de que toda ruptura isolada produza o mesmo desalinhamento.",
+      "incorretas": {
+        "A": "A sequência de Mayfield apresentada na fonte tem quatro estágios, I a IV. Não há um estágio 0 definido para receber VISI; além disso, a deformidade exige uma falha mecânica que o simples rótulo0 não descreve.",
+        "B": "O I envolve a ligação escafossemilunar ou a fratura do escafoide. A perda da influência flexora do escafoide favorece o padrão oposto, DISI, e não localiza a ruptura lunopiramidal associada ao VISI.",
+        "C": "O II corresponde ao deslocamento dorsal do capitato em relação ao semilunar. É uma falha mediocárpica na progressão, mas não identifica o compromisso lunopiramidal que retira a influência extensora do piramidal.",
+        "E": "O IV é a luxação do próprio semilunar para palmar, após ruptura da contenção radiocárpica dorsal. Esse deslocamento para fora da fossa não deve ser confundido com o padrão de flexão do semilunar ainda discutido como VISI na correlação do estágio III."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false,
+      "alerta": "A correlação oficial com o estágio III foi preservada porque ele envolve a ruptura lunopiramidal. O resumo não permite afirmar que VISI estático seja obrigatório em todo estágio III: a lesão isolada lunopiramidal não deforma, e o desalinhamento fixo depende também de falha dos estabilizadores secundários."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação lunopiramidal",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+          "dissociacao-lunopiramidal-5eb7978d",
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+          "mayfield-e-a-luxacao-perilunar-07798063",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "abaec9fe61dd3e9fada7765d5dc9347441199cb5171772b5f57abf488d8f823b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0917": {
+    "questaoSha256": "692fc154cd6307f425a944467393171733a0bf3aa3af907526489bd43f6fff6a",
+    "comentarioAnteriorSha256": "f0114d8b76cc5236654bffad94807137ccff99e52dd8719c3a03e16d889abaf5",
+    "comentario": {
+      "conceito": "Fraturas **estáveis e sem desvio** do escafoide preservam melhor o contato entre os fragmentos e têm prognóstico de consolidação diferente das desviadas ou proximais. O resumo informa que as fraturas sem desvio consolidam **acima de 90%** sem cirurgia; entre os números oferecidos, 90% é a aproximação compatível.\n\nA localização também orienta a conduta. O polo distal e o tubérculo podem ser imobilizados quando não há desvio, enquanto o polo proximal merece atenção especial pela irrigação retrógrada e pela maior dificuldade de união. Não se deve transferir o risco de uma fratura proximal instável para a cintura estável ou para a região distal descritas no enunciado.\n\nO tratamento adequado inclui conferir se o alinhamento se mantém e se a união ocorreu, em vez de liberar apenas pelo tempo transcorrido. Para a cintura sem desvio, a fonte descreve seguimento com imagem e tomografia quando necessário para avaliar ponte óssea. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: tratamento da fratura aguda.",
+      "correta": "Correta: D (90%). A fonte descreve consolidação acima de 90% nas fraturas sem desvio; 90% representa a aproximação esperada entre as alternativas. Não é uma garantia individual e não deve ser aplicada a qualquer localização ou padrão instável.",
+      "incorretas": {
+        "A": "60% implicaria uma falha de união muito maior do que a esperada para o grupo estável e sem desvio. Usar esse número misturaria o prognóstico favorável do enunciado com populações de maior risco, sem apoio na fonte.",
+        "B": "70% ainda fica bem abaixo da taxa descrita para as fraturas sem desvio. O resumo reconhece a importância do desvio e do polo proximal para o risco de pseudartrose, mas essas condições não podem ser presumidas no caso apresentado.",
+        "C": "80% é a opção mais próxima depois de 90%, porém ainda subestima o valor acima de 90% informado para o padrão estável. O critério é a população definida no enunciado, e não uma média de todas as fraturas do escafoide."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-tratamento-da-fratura-aguda-8de112b2",
+          "escafoide-tratamento-da-fratura-aguda-867cbaae",
+          "escafoide-tratamento-da-fratura-aguda-bc676235",
+          "escafoide-tratamento-da-fratura-aguda-ace416a4",
+          "escafoide-tratamento-da-fratura-aguda-056fbc49"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "a118b10e67ebec88343698f7a36234c5f2fb55f9b04dd39bc19b7a97e0db1a4f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0918": {
+    "questaoSha256": "c142328f8ac8c1ffbd2750f9f16c11a99d01ed472898d908f32a5de9733d2b65",
+    "comentarioAnteriorSha256": "0d675236156cc43b1b2c57862973f8ba67ac3b2a453af27db2a12acdae02eb70",
+    "comentario": {
+      "conceito": "A técnica clássica de **Matti-Russe** usa enxerto não vascularizado por via volar em um leito preparado através dos fragmentos da pseudartrose. O ponto decisivo desta questão é o **comprimento do escafoide**: a técnica clássica é apropriada quando não há encurtamento a corrigir.\n\nQuando o fragmento distal flete e o proximal estende, forma-se a deformidade em corcunda, ou humpback. A coluna volar encurta e o carpo pode cair em DISI. Nesse cenário, apenas preencher o foco não resolve necessariamente a perda de comprimento e alinhamento; a fonte descreve enxerto estrutural e cunha volar, como na técnica de Fisk-Fernandez, para corrigir o defeito mecânico.\n\nBiologia e mecânica são problemas relacionados, mas diferentes. Polo proximal pequeno e suspeita de necrose exigem avaliar acesso, viabilidade e tipo de enxerto. A fonte discute enxertos vascularizados nesses casos, sem afirmar superioridade universal ou transformar necrose em indicação automática da técnica clássica de Matti-Russe. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: consolidação viciosa e pseudartrose.",
+      "correta": "Correta: A (quando não houver encurtamento). É a condição expressamente descrita para a técnica clássica, cuja capacidade de restaurar o comprimento é limitada. O resumo distingue a modificação alada de Russe, que tenta alongar, da técnica clássica perguntada.",
+      "incorretas": {
+        "B": "Angulação ventral com humpback implica um problema de alinhamento e frequentemente de comprimento da cortical volar. A fonte recomenda correção mecânica com enxerto estrutural/cunha para a pseudartrose deformada, em vez de pressupor que o Matti-Russe clássico corrija essa perda por si só.",
+        "C": "A localização no polo proximal exige atenção à viabilidade e ao tamanho do fragmento. O resumo prefere acesso dorsal para esse polo e discute opções de enxertia conforme a capacidade de cura; a localização isolada não é a indicação específica do enxerto volar clássico descrito na pergunta.",
+        "D": "Necrose óssea acrescenta uma dificuldade biológica, avaliada pela viabilidade do polo e pelo sangramento intraoperatório. A fonte discute enxertos vascularizados quando há suspeita de necrose, com resultados e controvérsias próprios. Isso não equivale a indicar automaticamente o enxerto não vascularizado clássico de Matti-Russe; também não autoriza dizer que todo enxerto não vascularizado seja proibido."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: consolidação viciosa e pseudartrose"
+        ],
+        "blocos": [
+          "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-8b0f9bfb",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-c0273553",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-478ad42b",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
+          "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "1feb3937fac7e4e68f07e28ceed21365f36c5760952ae03fecb28c9131f243ba"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-1520": {
+    "questaoSha256": "63e9dae604b0d052b3aff76c9d6489895310b559a0362a33e8f7709dee735d01",
+    "comentarioAnteriorSha256": "0ff4b5c3dd464bdfeff5b0a50c9e72b5cd5d565a76e0ee3b864c78c14dc2d043",
+    "comentario": {
+      "conceito": "O caso combina trauma de alta energia há 12 horas com radiografias que mostram **afastamento escafossemilunar no punho direito**. A montagem inclui PA, perfil e comparação bilateral com punhos cerrados; a placa na ulna contralateral corresponde ao antecedente do enunciado e não é o alvo do tratamento perguntado. Não é necessário atribuir uma medida em milímetros ou um ângulo não traçado para reconhecer a perda de relação entre escafoide e semilunar.\n\nO ligamento escafossemilunar coordena esses ossos; sua ruptura pode permitir que o escafoide fleta e o semilunar estenda. A extensão da lesão e os estabilizadores secundários determinam a instabilidade. No contexto agudo completo e reparável, o resumo favorece **reparo direto com proteção temporária por fios**, em vez de substituir imediatamente o ligamento por uma reconstrução destinada a tecido irreparável.\n\nOs fios mantêm a redução enquanto o ligamento reparado cicatriza. O reparo não é escolhido só pelo relógio: a inspeção deve confirmar a lesão e a qualidade do tecido. Imagem com diástase após trauma recente difere da lesão parcial estável que pode receber desbridamento ou tratamento menos reconstrutivo. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar; radiografia da questão aberta nesta revisão.",
+      "correta": "Correta: B (reparação ligamentar e fixação temporária escafolunar). Associa tratamento da estrutura rompida à proteção mecânica do alinhamento. O quadro muito recente e a dissociação demonstrada sustentam buscar reparo direto quando o tecido é aproveitável, com estabilização temporária em vez de fios como único tratamento.",
+      "incorretas": {
+        "A": "A fixação percutânea mantém os ossos aproximados, mas, isoladamente, não descreve a reparação do ligamento agudamente rompido. A fonte apresenta reparo direto com fios na lesão completa reparável; o objetivo é restaurar a contenção e protegê-la, não apenas obter aproximação provisória.",
+        "C": "Desbridamento e radiofrequência aparecem no resumo para lesões incompletas ou pré-dinâmicas, com contextos como Geissler I/II. O caso mostra diástase após trauma de alta energia, e esse tratamento não substitui o reparo de uma lesão completa reparável com perda de contenção.",
+        "D": "A capsulodese pode reforçar um reparo e também aparece entre opções para lesões irreparáveis ainda sem desalinhamento. Porém, descrevê-la isoladamente não equivale a reparar diretamente a lesão aguda e proteger sua redução. A própria técnica artroscópica pode incluir reparo e capsulodese; o contraste é o objetivo proposto, não uma proibição da via artroscópica."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-1f9a739d",
+          "dissociacao-escafossemilunar-b886eabc",
+          "dissociacao-escafossemilunar-719be38b",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "dissociacao-escafossemilunar-79d4b223",
+          "dissociacao-escafossemilunar-65f85568",
+          "dissociacao-escafossemilunar-fcaf9e16"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "240ea575399c26ced3e095569f85b4013e88129c03423ceebd855638c6dec25a"
+      }
+    ],
+    "imagensConferidas": [
+      "mao/usp-sp-2024-q118-1.webp"
+    ]
+  }
+}
