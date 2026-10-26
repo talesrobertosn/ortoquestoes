@@ -699,12 +699,12 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 18 | Colateral radial do polegar: pronação | reformulada | 8 | Ligamentos | 03 | mao-2390 | aplicada |
 | 19 | Portal 4-5 | reformulada | 17 | Artroscopia | 03 | mao-2391 | aplicada |
 | 20 | BAYNE tipo 2 | reformulada | 38 | Mão torta radial | 03 | mao-2392 | aplicada |
-| 21 | Deficiência ulnar: frequência da sindactilia | número | cap. 38, p. 1500 | mao / Deficiências longitudinais e mão torta | 02 | mao-2284 | publicada |
-| 22 | Pseudoartrose congênita da ulna: neurofibromatose | fato | cap. 38, p. 1520 | mao / Outras malformações congênitas | 02 | mao-2285 | publicada |
-| 23 | LICHTMAN IIIC: fratura coronal do semilunar | classificação | cap. 16, p. 731 e 732 | mao / Doença de Kienböck | 06 | mao-2305 | publicada |
+| 21 | Contratura dorsal na queimadura | reformulada | 57 | Queimado | 04 | mao-2393 | aplicada |
+| 22 | Pisiforme ossifica por último | reformulada | 41 | Criança | 04 | mao-2394 | aplicada |
+| 23 | KIRNER | reformulada | 36 | Congênitas | 04 | mao-2395 | aplicada |
 | 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
-| 25 | Indicação do MOBERG | reformulada | 44 | Cobertura | 13 | mao-2341 | publicada |
-| 26 | Ligamentos extracapsulares do carpo (radioescafocapitato é intracapsular) | anatomia | cap. 13, p. 490 e 491 | mao / Anatomia da mão e punho | 03 | mao-2288 | publicada |
+| 25 | AIJ oligoarticular | reformulada | 55 | Reumatoide | 04 | mao-2396 | aplicada |
+| 26 | Sinal do bocejo (gaveta anterior) | reformulada | 13 | Carpo | 04 | mao-2397 | aplicada |
 | 27 | Discrepância de calibre no reparo arterial | reformulada (figura virou texto) | 60 | Microcirurgia | 20 | mao-2377 | publicada |
 | 28 | Alongamento por distração do polegar | reformulada | 48 | Reconstrução do polegar | 19 | mao-2369 | publicada |
 | 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | publicada |
