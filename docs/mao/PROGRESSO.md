@@ -922,8 +922,15 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 29 | Diáfise do metacarpo | reformulada | 7 | Metacarpos | 06 | mao-2493 | aplicada |
 | 30 | Intramedular nas falanges | reformulada | 7 | Falanges | 06 | mao-2494 | aplicada |
 | 32 | TSUGE grave | reformulada (ângulo diferente) | 51 | VOLKMANN | 07 | mao-2500 | aplicada |
+| 35 | Desalinhamento adaptativo do carpo no rádio viciado | reformulada | 13, p. 544 e 545 | Instabilidade do carpo | 13 | mao-2535 | aplicada |
 | 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
+| 37 | De QUERVAIN: atividade de risco | — | 56 | Tenossinovites | — | — | pendente: tema já no acervo; atividade da alternativa oficial sem fonte no Green |
+| 38 | Fóvea da ulna | reformulada, outro ângulo | 14, p. 563 e 564 | Fibrocartilagem triangular | 13 | mao-2536 | aplicada |
 | 39 | Local da lesão do colateral ulnar | reformulada | 8 | Ligamentos | 03 | mao-2480 | aplicada |
+| 40 | Achados anatômicos na deficiência radial | reformulada, outro ângulo | 38, p. 1496 | Mão torta radial | 13 | mao-2537 | aplicada |
+| 41 | Rigidez intrínseca: alongar e liberação intrínseca distal | reformulada, outro ângulo | 10, p. 393 e 403 | Rigidez dos dedos | 13 | mao-2538 | aplicada |
+| 42 | McGOWAN grau I | reformulada | 26, p. 1105 | Neuropatia ulnar | 13 | mao-2539 | aplicada |
+| 43 | Luxação congênita da cabeça do rádio dolorosa no adolescente | reformulada, outro ângulo | 38, p. 1512 e 1515 | Malformações congênitas | 13 | mao-2540 | aplicada |
 | 45 | Artrodese da MCF do polegar | reformulada (transcrita da imagem) | 11 | Artrose | 08 | mao-2501 | aplicada |
 | 47 | Pseudartrose congênita da ulna | reformulada (transcrita da imagem) | 38 | Congênitas | 08 | mao-2502 | aplicada |
 | 48 | Local do gânglio volar | reformulada (transcrita da imagem) | 59 | Gânglios | 08 | mao-2503 | aplicada |
@@ -938,6 +945,32 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 61 | Interescalênico bilateral contraindicado (frênico) | reformulada, outro ângulo | 1, p. 1 e 2 | Anestesia | 09 | mao-2510 | aplicada |
 | 62 | Mecanismo do sinal de WARTENBERG | reformulada | 31, p. 1210 | Exame físico | 09 | mao-2511 | aplicada |
 | 63 | GARCIA-ELIAS 4: o que segura o semilunar | reformulada, uma só correta | 13, p. 513, 518 e 519 | Instabilidade do carpo | 09 | mao-2512 | aplicada |
+| 64 | Subluxação simples da metacarpofalângica | reformulada | 8, p. 345 | Lesões ligamentares dos dedos | 10 | mao-2513 | aplicada |
+| 65 | PALMER degenerativa: primeira classe com perfuração | reformulada | 14, p. 571 e 572 | Fibrocartilagem triangular | 10 | mao-2514 | aplicada |
+| 66 | Polegar empalmado complexo (McCARROLL e MIH) | reformulada | 37, p. 1488 | Malformações congênitas | 10 | mao-2515 | aplicada |
+| 67 | Toracodorsal como doador de transferência | reformulada, outro ângulo | 34, p. 1304, 1332 e 1333 | Plexo braquial | 10 | mao-2516 | aplicada |
+| 68 | Localização do gânglio da raiz dorsal | reformulada | 34, p. 1304 e 1310 | Plexo braquial | 10 | mao-2517 | aplicada |
+| 69 | Arco articular de CHEN no dedo do pé | — | 47 | Microcirurgia | — | — | pendente: sem fonte no Green |
+| 70 | Síndrome da pele escaldada estafilocócica | reformulada | 2, p. 17 | Infecções | 10 | mao-2518 | aplicada |
+| 71 | Abscesso do espaço tenar: postura do polegar | reformulada | 2, p. 35 e 36 | Infecções | 10 | mao-2519 | aplicada |
+| 72 | Primeira manifestação da hanseníase | reformulada | 3, p. 126 e 127 | Infecções | 10 | mao-2520 | aplicada |
+| 73 | Retalho romboide: LIMBERG x DUFOURMENTEL | reformulada, sem figura, outro ângulo | 44, p. 1715 e 1716 | Retalhos | 11 | mao-2521 | aplicada |
+| 74 | Classificação de DUBBERLEY (tipo II) | reformulada | 18, p. 866 e 867 | Úmero distal | 11 | mao-2522 | aplicada |
+| 75 | Tendão flexor aderido: terapia antes da tenólise | reformulada, outro ângulo | 6, p. 227 e 228 | Tendões flexores | 11 | mao-2523 | aplicada |
+| 76 | Polo proximal do escafoide: fixar sempre | reformulada | 16, p. 682 e 683 | Escafoide | 11 | mao-2524 | aplicada |
+| 77 | Margem do melanoma até 1 mm de Breslow | reformulada | 58, p. 2172 | Tumores | 11 | mao-2525 | aplicada |
+| 78 | Reconstrução do polegar (limites de 1,5 cm² e 2,5 cm) | — | 48 | Polegar | — | — | pendente: limites sem fonte no Green |
+| 79 | MONTEGGIA no adulto: princípio do tratamento | reformulada, outro ângulo | 20, p. 938, 945 e 946.e4 | Ulna proximal | 11 | mao-2526 | aplicada |
+| 80 | Embriologia: dedos separados aos 52 a 53 dias | reformulada, outro ângulo | 35, p. 1363 | Malformações congênitas | 12 | mao-2527 | aplicada |
+| 81 | Paralisia cerebral: transferência para extensão dos dedos | — | 32 | Paralisia cerebral | — | — | pendente: FCU para extensor comum sem fonte no Green |
+| 82 | Pioderma gangrenoso: reação patérgica | reformulada, outro ângulo | 3, p. 75; 2, p. 57 | Infecções | 12 | mao-2528 | aplicada |
+| 83 | Círculo de HORII: banda anterior do LCM pode ficar íntegra | reformulada, outro ângulo | 22, p. 979 | Cotovelo | 12 | mao-2529 | aplicada |
+| 84 | Regra 1:1 do retalho aleatório | reformulada | 44, p. 1712 | Retalhos | 12 | mao-2530 | aplicada |
+| 85 | LEDDY e PACKER tipo I: por que é urgente | reformulada, outro ângulo | 6, p. 216 | Tendões flexores | 12 | mao-2531 | aplicada |
+| 86 | Alça de WEILBY (metade do FCR) | reformulada | 11, p. 427 | Rizartrose | 12 | mao-2532 | aplicada |
+| 87 | Epidemiologia da polidactilia pré-axial | reformulada | 37, p. 1470 | Polidactilia | 12 | mao-2533 | aplicada |
+| 88 | Grácil livre funcional: ordem dos passos e vasos receptores | reformulada | 34, p. 1336 e 1338 | Microcirurgia / plexo | 12 | mao-2534 | aplicada |
+| 89 | Espessura do fio 10-0 | — | — | Microcirurgia | — | — | pendente: sem fonte no Green |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
