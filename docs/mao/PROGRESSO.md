@@ -714,7 +714,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 33 | Reimplante de vários dedos | reformulada | 42 | Reimplante | 06 | mao-2404 | aplicada |
 | 34 | Distância do ponto na microanastomose | reformulada | - | Microcirurgia | - | - | pendente: sem fonte (não está no Green traduzido) |
 | 35 | Encurtamento radial e ligamentos radioulnares | reformulada | 14 | Radioulnar distal | 06 | mao-2405 | aplicada |
-| 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | publicada |
+| 36 | Trapézio poupado na paralisia de ERB | reformulada | 40 | Plexo obstétrico | 17 | mao-2458 | aplicada |
 | 37 | Epífise proximal da fíbula | reformulada | 46 | Enxerto vascularizado | 06 | mao-2406 | aplicada |
 | 38 | IFP do mínimo no DUPUYTREN | reformulada | 4 | Dupuytren | 06 | mao-2407 | aplicada |
 | 39 | CURTIS estágio IV | reformulada | 5 | Extensores | 07 | mao-2408 | aplicada |
@@ -760,7 +760,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 79 | Transferências nervosas no radial | reformulada | 31 | Transferências | 14 | mao-2443 | aplicada |
 | 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | publicada |
 | 81 | Contratura grave da IFP no DUPUYTREN | reformulada (alternativa ambígua trocada) | 4 | Dupuytren | 14 | mao-2444 | aplicada |
-| 82 | CURTIS: retinaculares transversos para as bandas laterais subirem | técnica | cap. 5, p. 202 e 203 (Fig. 5.26) | mao / Lesões dos tendões extensores | 06 | mao-2303 | publicada |
+| 82 | Anatomia radiográfica do rádio distal | reformulada | 15 | Rádio distal | 17 | mao-2459 | aplicada |
 | 83 | Anatomia e epidemiologia do DE QUERVAIN | reformulada | 56 | Tendinopatias | 14 | mao-2445 | aplicada |
 | 84 | Alongamento do tendão terminal | reformulada | 5 | Extensores | 14 | mao-2446 | aplicada |
 | 85 | HUI e LINSCHEID | reformulada | 14 | Radioulnar distal | 14 | mao-2447 | aplicada |
@@ -769,13 +769,13 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 88 | Ausência congênita dos dedos | reformulada | 36 | Congênitas | - | - | pendente: conferir à mão |
 | 89 | Tempo da fasciotomia | reformulada | 51 | Compartimental | - | - | pendente: conferir à mão (o cap. 51 não fixa 8 horas) |
 | 90 | Portal mediocárpico ulnar | reformulada | 17 | Artroscopia | 15 | mao-2450 | aplicada |
-| 91 | Transferência na polidactilia pré-axial | reformulada | 37 | Polegar congênito | 20 | mao-2375 | publicada |
+| 91 | Instabilidade carpal adaptativa | reformulada (alternativa oficial sem apoio no Green) | 13 | Carpo | 17 | mao-2460 | aplicada |
 | 92 | Tumores malignos de pele | reformulada | 58 | Tumores de pele | 15 | mao-2451 | aplicada |
 | 93 | Enxertos de pele | reformulada | 44 | Cobertura | 15 | mao-2452 | aplicada |
 | 94 | MONTEGGIA: cuidado com o interósseo posterior | reformulada (ângulo diferente do SIMÃO 2024) | 20 | Ulna proximal | 16 | mao-2455 | aplicada |
 | 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | publicada |
 | 96 | Janela das malformações | reformulada (ângulo diferente do SIMÃO 2024) | 35 | Embriologia | 16 | mao-2456 | aplicada |
 | 97 | VOCHE e MERLE no WARTENBERG | reformulada | 31 | Transferências | 09 | mao-2319 | publicada |
-| 98 | MADELUNG: resultados das osteotomias | afirmativas | cap. 38, p. 1503, 1506 e 1509 | mao / Outras malformações congênitas | 02 | mao-2287 | publicada |
-| 99 | Fratura associada ao leito ungueal | reformulada | 9 | Perioníquio | 16 | mao-2354 | publicada |
+| 98 | Perfil para parafusos subcondrais | reformulada | 15 | Rádio distal | 17 | mao-2461 | aplicada |
+| 99 | Supinadores da fileira distal | reformulada | 13 | Carpo | 17 | mao-2462 | aplicada |
 | 100 | Tratamento do TSUGE moderado | reformulada (ângulo diferente do SIMÃO 2024) | 51 | VOLKMANN | 16 | mao-2457 | aplicada |
