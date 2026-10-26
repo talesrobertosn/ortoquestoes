@@ -764,14 +764,14 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 83 | Anatomia e epidemiologia do DE QUERVAIN | reformulada | 56 | Tendinopatias | 14 | mao-2445 | aplicada |
 | 84 | Alongamento do tendão terminal | reformulada | 5 | Extensores | 14 | mao-2446 | aplicada |
 | 85 | HUI e LINSCHEID | reformulada | 14 | Radioulnar distal | 14 | mao-2447 | aplicada |
-| 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
-| 87 | Pronador redondo para ERCC | reformulada | 31 | Transferências | 08 | mao-2316 | publicada |
-| 88 | Taxa de pseudartrose do escafoide | reformulada | 16 | Escafoide | 09 | mao-2320 | publicada |
-| 89 | Estabilidade do cotovelo e coronoide | reformulada | 20 | Ulna proximal | 16 | mao-2356 | publicada |
-| 90 | Macrodactilia: histologia (menos glândulas sudoríparas) | fato | cap. 36, p. 1438 e 1439 | mao / Outras malformações congênitas | 01 | mao-2282 | publicada |
+| 86 | Pedículo do grácil | reformulada | 34 | Plexo | 15 | mao-2448 | aplicada |
+| 87 | Manobra de EICHHOFF | reformulada | 56 | Tendinopatias | 15 | mao-2449 | aplicada |
+| 88 | Ausência congênita dos dedos | reformulada | 36 | Congênitas | - | - | pendente: conferir à mão |
+| 89 | Tempo da fasciotomia | reformulada | 51 | Compartimental | - | - | pendente: conferir à mão (o cap. 51 não fixa 8 horas) |
+| 90 | Portal mediocárpico ulnar | reformulada | 17 | Artroscopia | 15 | mao-2450 | aplicada |
 | 91 | Transferência na polidactilia pré-axial | reformulada | 37 | Polegar congênito | 20 | mao-2375 | publicada |
-| 92 | Pedículo do hálux | reformulada | 47 | Dedo do pé | 17 | mao-2360 | publicada |
-| 93 | Fise em C (braquete epifisário longitudinal): clinodactilia | fato/imagem | cap. 36, p. 1433 | mao / Deformidades dos dedos | 02 | mao-2283 | publicada |
+| 92 | Tumores malignos de pele | reformulada | 58 | Tumores de pele | 15 | mao-2451 | aplicada |
+| 93 | Enxertos de pele | reformulada | 44 | Cobertura | 15 | mao-2452 | aplicada |
 | 94 | Falange média instável | reformulada | 7 | Falanges | 12 | mao-2334 | publicada |
 | 95 | LICHTMAN IIIA | reformulada (alinhamento do carpo) | 16 | Kienböck | 09 | mao-2321 | publicada |
 | 96 | Complicação da osteotomia e artrodese TMC | reformulada | 11 | Rizartrose | 10 | mao-2324 | publicada |
