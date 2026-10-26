@@ -722,12 +722,12 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 41 | Laceração parcial do extensor | reformulada (Green dá a regra para a zona 2) | 5 | Extensores | 07 | mao-2410 | aplicada |
 | 42 | Retalho inguinal | reformulada | 44 | Cobertura | 07 | mao-2411 | aplicada |
 | 43 | Colo do metacarpo e JAHSS | reformulada | 7 | Metacarpos | 07 | mao-2412 | aplicada |
-| 44 | Escafolunar dorsal: translação e afastamento | anatomia | cap. 16, p. 678; cap. 13, p. 492 | mao / Instabilidade do carpo | 06 | mao-2307 | publicada (divergência: a correção marcou rotação; o Green dá rotação à porção palmar) |
-| 45 | Martelo tendíneo: a partir dos 11 anos | número | cap. 5, p. 191 | mao / Lesões dos tendões extensores | 05 | mao-2301 | publicada |
-| 46 | FOWLER: técnica (até 35 graus) | técnica | cap. 5, p. 196 e 197 (Fig. 5.19) | mao / Lesões dos tendões extensores | 05 | mao-2299 | publicada (original sem resposta defensável; refeita com resposta única) |
-| 47 | FERNANDEZ radioulnar distal tipo III | classificação | cap. 15, p. 648 | mao / Fratura do rádio distal | 07 | mao-2312 | publicada |
-| 48 | Músculo de GANTZER | reformulada | 28 | Neuropatia ulnar | 08 | mao-2314 | publicada |
-| 49 | LARSEN, DALE e EEK | reformulada | 55 | Reumatoide | 15 | mao-2349 | publicada |
+| 44 | Último músculo a recuperar no radial | reformulada | 31 | Transferências | - | - | pendente: sem fonte (ordem de reinervação não está no Green traduzido) |
+| 45 | Preditor de recontratura no DUPUYTREN | reformulada | 4 | Dupuytren | 08 | mao-2413 | aplicada |
+| 46 | DOYLE tipo I | reformulada | 5 | Extensores | 08 | mao-2414 | aplicada |
+| 47 | YAMAUCHI e TANABU tipo 4 | reformulada | 36 | Congênitas | 08 | mao-2415 | aplicada |
+| 48 | ALLEN zona 3 | reformulada | 49 | Amputações | 08 | mao-2416 | aplicada |
+| 49 | MONTEGGIA e interósseo posterior | reformulada | 20 | Ulna proximal | 08 | mao-2417 | aplicada |
 | 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | publicada |
 | 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | publicada |
 | 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | publicada |
