@@ -1,0 +1,41 @@
+{
+  "trauma-0723": {
+    "questaoSha256": "1493f05c038165cfbebec38fd2e645b5c5eccc0a82280e8462e44b5bb0460754",
+    "comentarioAnteriorSha256": "6a0b3431f201267cd20dadba5c83f8acc5b3c17856185c95c1689b147762838f",
+    "comentario": {
+      "conceito": "O enunciado informa que a fratura é exposta e causada por arma de fogo, mas não descreve a ferida, a energia transferida nem a cobertura óssea. **Isso não basta para definir o subtipo IIIB.** A letra D é o gabarito oficial preservado; o ponto clínico a aprender é que o instrumento causador não substitui a avaliação das partes moles.\n\nA classificação de Gustilo organiza informações diferentes. No tipo I, a ferida é limpa, menor que 1 cm e de baixa energia. No II, mede de 1 a 10 cm, sem dano extenso de partes moles nem padrão de alta energia. No III, a lesão supera esses critérios: uma ferida maior que 10 cm ou um padrão de alta energia pode colocá-la nesse grupo. Uma fratura segmentar de alta energia, por exemplo, pode ser IIIA mesmo com uma ferida pequena. Portanto, medir o orifício isoladamente também não resolve a classificação (Rockwood, 10ª ed., cap. 63, “TSCHERNE, GUSTILO e OTA-OFC”).\n\n**Dentro do tipo III, a cobertura faz a diferença.** No IIIA, o defeito ainda pode ser fechado por sutura ou enxerto. No IIIB, é necessário um retalho muscular ou cutâneo para cobrir o osso. O IIIC, que não aparece nas opções, exige reparo vascular para revascularizar a perna; uma lesão arterial isolada com pé bem perfundido não basta para esse rótulo. Cada subtipo descreve uma necessidade diferente da reconstrução, e não apenas uma ferida progressivamente maior.\n\nO próprio resumo comenta que fraturas por projéteis de baixa energia chegaram a ser tratadas como fechadas, mas apresentaram mais infecção e pseudartrose que o esperado. Esse dado pede atenção à ferida e ao tratamento; não autoriza classificar toda lesão por projétil como IIIB, nem afirmar que toda lesão de baixa energia seja automaticamente I ou II (cap. 63, “Haste na exposta”).\n\nNa prática, seria necessário conhecer o dano das partes moles e a possibilidade de cobertura após a avaliação da ferida. Se um retalho for necessário, IIIB torna-se uma classificação sustentada. Sem esse dado, permanece a insuficiência do enunciado, que deve ser lembrada junto da resposta histórica da banca.",
+      "correta": "**D: IIIB, conforme o gabarito oficial.** Esse subtipo se aplica quando a cobertura exige retalho muscular ou cutâneo. O enunciado não informa essa necessidade, portanto a alternativa foi preservada como resposta da banca, com ressalva explícita, sem ensinar que “arma de fogo” seja sinônimo de IIIB.",
+      "incorretas": {
+        "A": "**Tipo I depende de baixa energia e ferida limpa menor que 1 cm.** O enunciado não fornece esses critérios. Também não permite excluir o tipo I apenas pelo nome do instrumento: é preciso avaliar a lesão real, em vez de pressupor que todo projétil produza o mesmo dano.",
+        "B": "**Tipo II exige ferida de 1 a 10 cm sem dano extenso de partes moles nem padrão de alta energia.** Não há descrição suficiente para reconhecer ou descartar essa combinação. O tamanho do orifício, se fosse conhecido, ainda precisaria ser interpretado junto da energia e do envelope de partes moles.",
+        "C": "**IIIA pode representar uma lesão importante que conserva possibilidade de cobertura por sutura ou enxerto.** Uma fratura segmentar de alta energia pode pertencer a esse grupo qualquer que seja o tamanho da ferida. A distinção para IIIB é a necessidade de retalho, que não foi descrita; por isso a palavra projétil, sozinha, não afasta IIIA."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da diáfise da tíbia e da fíbula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 63 · Tibia and Fibula Shaft Fractures. Seções: Classificação: AO 42 e as partes moles; Exposta da diáfise da tíbia: haste, placa, fixador e amputação."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial D (IIIB) preservado. O resumo consultado define IIIB pela necessidade de retalho, mas o enunciado informa apenas fratura exposta por arma de fogo. Sem descrição da energia, partes moles e cobertura, não se determina esse subtipo. Não interpretar a letra da banca como regra universal para ferimentos por projétil; o próprio resumo distingue lesões de baixa energia."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-63-diafise-tibia",
+        "titulo": "Fratura da diáfise da tíbia e da fíbula",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 63 · Tibia and Fibula Shaft Fractures",
+        "secoes": [
+          "Classificação: AO 42 e as partes moles",
+          "Exposta da diáfise da tíbia: haste, placa, fixador e amputação"
+        ],
+        "blocos": [
+          "classificacao-ao-42-e-as-partes-moles-9e144c48",
+          "classificacao-ao-42-e-as-partes-moles-6a238635",
+          "exposta-da-diafise-da-tibia-haste-placa-fixador--d1c3ef4c"
+        ],
+        "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
+        "trechosSha256": "b8321589119054604b426e5b9d84634f81a03d1d26d21fee3c406dd7773bda6b"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
