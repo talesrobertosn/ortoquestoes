@@ -115,6 +115,10 @@ try {
   const s3 = m.calcularPlanoMao(indice, { [s1.idsHoje[0]]: { c: true, q: AGORA } }, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA + 60000)
   assert.deepEqual(s3.idsHoje, s1.idsHoje.slice(1))
 
+  // mini-simulado de um dia futuro: dá para fazer antes, pelo calendário (as questões vêm sorteadas para ele)
+  const futuroSim = p.agenda.find((d) => d.tipo === 'simulado')
+  assert.ok(futuroSim && m.idsDoSimulado(p, futuroSim.data).length === m.TAMANHO_SIMULADO, 'mini-simulado futuro sem questões')
+
   // semana difícil: só o dia mínimo nesta semana, o resto se espalha
   const dificil = m.calcularPlanoMao(indice, {}, m.comSemanaDificil(cfg(), true, AGORA), AGORA)
   assert.ok(dificil.metaHoje <= 10 && dificil.hoje.dificil, `semana difícil com ${dificil.metaHoje}`)

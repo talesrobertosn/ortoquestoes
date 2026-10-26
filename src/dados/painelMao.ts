@@ -1,5 +1,5 @@
 import type { CalculoPlano, DiaPlano, ItemDia, Passada, PlanoSalvo, SemanaPlano, TemaPlano } from './planoEstudo'
-import type { DiaMao, PlanoMao, ProvaMao } from './cronogramaMao'
+import { idsDoSimulado, type DiaMao, type PlanoMao, type ProvaMao } from './cronogramaMao'
 import { slugDaAreaMao } from './modalidades'
 import { diaCivil, diasEntre, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 
@@ -146,7 +146,9 @@ export function painelMao(p: PlanoMao, agora = Date.now()): { plano: PlanoSalvo;
 
 /** Os ids de um dia do plano ("AAAA-MM-DD"), para fazer as questões dele antes da hora. */
 export function idsDoDiaMao(p: PlanoMao, dia: string): string[] {
-  return p.agenda.find((d) => d.data === dia)?.partes.flatMap((x) => x.ids) ?? []
+  const d = p.agenda.find((x) => x.data === dia)
+  if (d?.tipo === 'simulado') return idsDoSimulado(p, dia)
+  return d?.partes.flatMap((x) => x.ids) ?? []
 }
 
 type Respondidas = Record<string, { c: boolean | null; q?: number; historico?: Array<{ em: number; correta: boolean | null }> } | undefined>

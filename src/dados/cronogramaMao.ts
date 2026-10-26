@@ -277,6 +277,12 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   }
 }
 
+/** As questões do mini-simulado de um dia ("AAAA-MM-DD"), para fazê-lo antes da hora pelo calendário. */
+export function idsDoSimulado(p: PlanoMao, dia: string): string[] {
+  const pendentes = new Set(p.temas.flatMap((t) => t.pendentes))
+  return sortearSimulado(p.temas, (id) => pendentes.has(id), inicioDaChave(dia))
+}
+
 /** Revisão espalhada entre as novas (uma a cada quatro), para não virar um bloco de erros no fim. */
 function intercalar(novas: string[], revisao: string[]): string[] {
   const r = [...revisao], saida: string[] = []

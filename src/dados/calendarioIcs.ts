@@ -12,7 +12,8 @@ export function dobrarLinhaIcs(linha: string): string {
   }
   return resultado
 }
-export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number, agora = Date.now()): string {
+/** `rota`: a página que os eventos abrem (o cronograma da mão passa a dele). */
+export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number, agora = Date.now(), rota = '/cronograma'): string {
   const p2 = (n: number) => String(n).padStart(2, '0')
   const data = (d: Date) => chaveCivil(d).replace(/-/g, '')
   const carimbo = new Date(agora).toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '')
@@ -22,7 +23,7 @@ export function gerarIcs(calculo: CalculoPlano, plano: PlanoSalvo, hora: number,
     const fim = new Date(d.getFullYear(), d.getMonth(), d.getDate(), hora + 1)
     linhas.push('BEGIN:VEVENT', `UID:${id}@ortoquestoes.com.br`, `DTSTAMP:${carimbo}`,
       `DTSTART:${data(d)}T${p2(hora)}0000`, `DTEND:${data(fim)}T${p2(fim.getHours())}0000`,
-      `SUMMARY:${escapar(titulo)}`, `DESCRIPTION:${escapar(descricao)}`, 'URL:https://ortoquestoes.com.br/#/cronograma')
+      `SUMMARY:${escapar(titulo)}`, `DESCRIPTION:${escapar(descricao)}`, `URL:https://ortoquestoes.com.br/#${rota}`)
     if (alarme) linhas.push('BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${escapar(titulo)}`, 'TRIGGER:PT0M', 'END:VALARM')
     linhas.push('END:VEVENT')
   }

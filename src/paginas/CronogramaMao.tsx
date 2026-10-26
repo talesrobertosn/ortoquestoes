@@ -255,7 +255,7 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
         <a className="cm-link" href={href(`/temas-que-mais-caem?prova=${prova === 'titulo' ? 'mao-titulo' : 'mao-ingresso'}`)}>Ver o ranking completo<Icone nome="direita" tamanho={14} /></a>
       </Recolhido>
       {!calculo.naRetaFinal && <Recolhido titulo="Até a prova, semana a semana" icone="rota"><Depois calculo={calculo} plano={plano} maximo={8} /></Recolhido>}
-      <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>
+      <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} rota={`/cronograma-mao?prova=${prova}`} /></Recolhido>
       <Recolhido titulo="Como este plano funciona" icone="interrogacao">
         <ul className="cm-como">
           <li><b>Passadas:</b> primeiro os assuntos de prioridade máxima da {prova === 'titulo' ? 'prova de título' : 'prova de ingresso'}, depois os de prioridade alta e, por fim, o resto.</li>
