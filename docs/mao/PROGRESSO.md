@@ -693,12 +693,12 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 12 | Sanguessuga e Aeromonas | reformulada | 2 | Infecções | 02 | mao-2385 | aplicada |
 | 13 | Ápice dorsal no metacarpo | reformulada | 7 | Metacarpos | 02 | mao-2386 | aplicada |
 | 14 | Comissura mais afetada na sindactilia | reformulada | 36 | Sindactilia | 02 | mao-2387 | aplicada |
-| 15 | Colágeno tipo III no DUPUYTREN | reformulada (oficial aceitou A e C) | 4 | Dupuytren | 19 | mao-2368 | publicada |
-| 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
+| 15 | Retração do flexor longo do polegar | reformulada | 6 | Flexores | 03 | mao-2388 | aplicada |
+| 16 | Escafoide na criança | reformulada | 16 | Carpo | 03 | mao-2389 | aplicada |
 | 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | publicada |
-| 18 | Fisiopatologia da SDRC | reformulada (mecanismo do Green) | 53 | SDRC | 17 | mao-2362 | publicada |
-| 19 | Objetivos no membro mutilado | reformulada (sem EXCETO) | 43 | Membro mutilado | 11 | mao-2330 | publicada |
-| 20 | Ramos terminais da artéria radial | reformulada | 60 | Vascular | 14 | mao-2344 | publicada |
+| 18 | Colateral radial do polegar: pronação | reformulada | 8 | Ligamentos | 03 | mao-2390 | aplicada |
+| 19 | Portal 4-5 | reformulada | 17 | Artroscopia | 03 | mao-2391 | aplicada |
+| 20 | BAYNE tipo 2 | reformulada | 38 | Mão torta radial | 03 | mao-2392 | aplicada |
 | 21 | Deficiência ulnar: frequência da sindactilia | número | cap. 38, p. 1500 | mao / Deficiências longitudinais e mão torta | 02 | mao-2284 | publicada |
 | 22 | Pseudoartrose congênita da ulna: neurofibromatose | fato | cap. 38, p. 1520 | mao / Outras malformações congênitas | 02 | mao-2285 | publicada |
 | 23 | LICHTMAN IIIC: fratura coronal do semilunar | classificação | cap. 16, p. 731 e 732 | mao / Doença de Kienböck | 06 | mao-2305 | publicada |
