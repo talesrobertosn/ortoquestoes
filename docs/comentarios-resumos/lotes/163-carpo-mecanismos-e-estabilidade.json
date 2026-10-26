@@ -1,0 +1,323 @@
+{
+  "mao-0013": {
+    "questaoSha256": "07902321abc2e054736cd7dd58a2bc9688708cf1a674e009469d00ef2d15e98a",
+    "comentarioAnteriorSha256": "823f099ed77d900e41925e6c10b483aad40b54cbeae7fa206a2a3765f7882f3f",
+    "comentario": {
+      "conceito": "A dissociação escafossemilunar começa quando dois ossos vizinhos deixam de transmitir a força como uma unidade. Na hiperextensão com desvio ulnar e supinação intercarpal, a fileira distal força o escafoide a estender, enquanto o semilunar é contido pelos ligamentos palmares que o prendem ao antebraço. Essa diferença de movimento tensiona o ligamento entre eles e pode rompê-lo. É a primeira etapa da instabilidade perilunar progressiva de Mayfield.\n\nA supinação citada é **intercarpal**: descreve a torção entre partes do carpo. Não basta trocar mentalmente o movimento pela posição do antebraço. No mecanismo invertido, a combinação muda para hiperextensão, desvio radial e pronação, e a lesão começa do lado lunopiramidal.\n\nCom o escafossemilunar rompido, o escafoide tende a fletir, mas a deformidade estática depende também dos estabilizadores secundários. Assim, o mecanismo orienta a suspeita, sem dispensar o estudo da estabilidade. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar e Mayfield.",
+      "correta": "Correta: B (ulnar e supinação do carpo). Os dois componentes acompanham a hiperextensão no mecanismo clássico. A torção força o escafoide contra a contenção do semilunar, concentrando tensão na ligação escafossemilunar.",
+      "incorretas": {
+        "A": "O desvio ulnar pertence ao mecanismo clássico, mas a pronação inverte seu componente rotacional. O mecanismo invertido descrito no resumo associa pronação a desvio radial e inicia a ruptura no lunopiramidal; não é a combinação desta alternativa.",
+        "C": "Desvio radial e pronação formam justamente o par da perilunar invertida. Essa sequência começa pela ligação entre semilunar e piramidal, enquanto a dissociação escafossemilunar é o início radial da sequência clássica.",
+        "D": "A supinação intercarpal está de acordo com a sequência clássica, porém o desvio radial substitui indevidamente o ulnar. Os componentes precisam ser considerados em conjunto: manter a rotação correta não torna qualquer direção de desvio equivalente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-1944a7ce",
+          "dissociacao-escafossemilunar-1f9a739d",
+          "mayfield-e-a-luxacao-perilunar-501fc79c",
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+          "mayfield-e-a-luxacao-perilunar-07798063",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "c8d6f10f07b9d142201df8a12d57671805444d1f3de09287ef421b7bc083934e"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0018": {
+    "questaoSha256": "6a273df4298baf107dadd05bfe7d457a294a811e0444fe282a7c7780f9b551ac",
+    "comentarioAnteriorSha256": "6a04985b01cf651fc9a06ed648cd5c243d5d40eec84250418157679ff1f3c66a",
+    "comentario": {
+      "conceito": "Na fratura-luxação perissemilunar, a energia percorre o carpo em volta do semilunar. O padrão clássico resulta de **hiperextensão, desvio ulnar e supinação intercarpal**. O semilunar inicialmente permanece contido pelos ligamentos palmares, enquanto o escafoide e a fileira distal são forçados a se mover. A falha progride do lado radial para o ulnar.\n\nA palavra fratura diferencia o **grande arco**, em que a trajetória passa por ossos e ligamentos, do pequeno arco, predominantemente ligamentar. Uma fratura do escafoide pode substituir a ruptura escafossemilunar na trajetória da força; por isso, não se deve presumir que toda fratura-luxação rompa obrigatoriamente esse ligamento.\n\nExiste uma sequência invertida, com desvio radial e pronação, que começa pela ligação lunopiramidal. Distinguir os dois sentidos explica as alternativas melhor do que decorar apenas um dos movimentos. Fonte secundária: resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+      "correta": "Correta: C (ulnar e supinação intercarpal). A combinação acrescenta à hiperextensão os dois componentes do arco perilunar clássico. Na fratura-luxação, a força pode atravessar a cintura do escafoide em vez de se limitar aos ligamentos.",
+      "incorretas": {
+        "A": "O desvio ulnar foi mantido, mas a rotação foi trocada por pronação. Isso não corresponde ao mecanismo clássico, no qual a supinação intercarpal integra a força que se propaga do lado radial para o ulnar.",
+        "B": "Desvio radial com pronação descreve o mecanismo invertido. Ele também pode produzir lesão perilunar, mas inicia a sequência pelo lunopiramidal; o enunciado e o gabarito tratam do padrão clássico, sem qualificação de invertido.",
+        "D": "A supinação é compatível com o padrão clássico, mas o desvio radial não completa esse mesmo mecanismo. Também não descreve a forma invertida, que associa o desvio radial à pronação, e não à supinação."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "mayfield-e-a-luxacao-perilunar-501fc79c",
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+          "mayfield-e-a-luxacao-perilunar-07798063",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a",
+          "mayfield-e-a-luxacao-perilunar-3a52a44f",
+          "mayfield-e-a-luxacao-perilunar-a286746f",
+          "mayfield-e-a-luxacao-perilunar-9979fb84"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "31c499ffa53ccf164558ef8ebf7fea314fcda69af80bd0beb755535bb84374a2"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0028": {
+    "questaoSha256": "b946e415a41a94da7f0a2701d95260b7963212c47e70d33a700fd8c005ec95d0",
+    "comentarioAnteriorSha256": "8669ddb84dea303de3a9f4a7460f0a4692bfde135b187ab4fed8dfb324195cc1",
+    "comentario": {
+      "conceito": "Quando a mão passa do desvio radial para o ulnar, a fileira proximal do carpo **estende, girando para dorsal**. A pergunta muda o foco do movimento visível da mão para o movimento dos ossos que ficam interpostos entre o rádio e a fileira distal.\n\nEscafoide, semilunar e piramidal formam esse segmento intercalado, sem inserção direta de tendões. No desvio radial, o escafoide precisa deitar e a fileira proximal flete para acomodar a aproximação do trapézio e do trapezoide ao rádio. Na passagem para ulnar, a geometria helicoidal da articulação piramidal-hamato empurra o piramidal para extensão, e o semilunar o acompanha.\n\nPortanto, **desviar a mão para ulnar** e **estender a fileira proximal** são movimentos relacionados, descritos em planos diferentes. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Anatomia ligamentar e cinemática do carpo.",
+      "correta": "Correta: C (dorsal). A passagem para o desvio ulnar leva a fileira proximal à extensão. O mecanismo começa na interação entre piramidal e hamato e é transmitido ao semilunar, compondo o movimento coordenado da fileira.",
+      "incorretas": {
+        "A": "Ulnar é a direção do desvio global solicitado ao punho. Ela não responde em que sentido a fileira proximal gira durante esse deslocamento: o acoplamento descrito é uma extensão, portanto dorsal.",
+        "B": "Radial indica a direção de partida do movimento da mão. Nesse ponto, a fileira proximal está mais fletida; conforme o punho vai para ulnar, ela abandona essa posição e estende, sem que o sentido de sua rotação seja denominado radial.",
+        "D": "O giro palmar corresponde à flexão da fileira proximal, observada ao levar o punho para o desvio radial. A alternativa descreve o comportamento do movimento oposto ao trajeto radial para ulnar perguntado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Anatomia ligamentar e cinemática do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Anatomia ligamentar e cinemática do carpo"
+        ],
+        "blocos": [
+          "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+          "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "55926929051f1460b8b3f768644a55090bb29cc5434b84ba8ef72b2e148c92d8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0052": {
+    "questaoSha256": "219f21d85e622545d2525afa3e040b33515b77533bc76eeeb15f34042d349293",
+    "comentarioAnteriorSha256": "8e48977a2370d606850d48453576fc2761abad7c9003b503bce60545296a3a7b",
+    "comentario": {
+      "conceito": "O polo proximal do escafoide depende principalmente de sangue que **entra pela crista dorsal e percorre o osso internamente até a região proximal**. Esse trajeto retrógrado ajuda a entender por que uma fratura pode separar um fragmento pequeno justamente de seu caminho de irrigação.\n\nO resumo descreve dois pedículos provenientes da artéria radial. O dorsal penetra pelos forames do sulco espiral e da crista dorsal e irriga a maior parte do escafoide, inclusive o polo proximal. O volar entra pelo tubérculo e atende a porção distal. A posição do polo irrigado, portanto, não deve ser confundida com a face pela qual o vaso entra.\n\nA cintura tem poucas ou nenhuma perfuração vascular, e não há entrada pela cartilagem dorsal proximal nem pelo ligamento escafossemilunar. Isso torna importante preservar as estruturas de entrada vascular e reconhecer o risco biológico das fraturas proximais, sem concluir que toda fratura produzirá necrose. Fonte: conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: anatomia, irrigação e mecanismo.",
+      "correta": "Correta: C (dorsal). É a crista dorsal, juntamente com o sulco espiral, que recebe o principal pedículo para a região proximal. O vaso não precisa entrar diretamente no polo proximal para irrigá-lo: chega a ele por um percurso intraósseo retrógrado.",
+      "incorretas": {
+        "A": "Medial não é a crista descrita como porta de entrada do pedículo dominante. A irrigação proximal é identificada pelo ponto dorsal de penetração e pelo trajeto intraósseo, e não por uma suposta entrada medial próxima ao semilunar.",
+        "B": "Lateral não substitui a identificação anatômica da crista dorsal. Embora a artéria de origem seja a radial, o nome da artéria não transforma sua porta de entrada em uma crista lateral; são informações anatômicas distintas.",
+        "D": "Há de fato um pedículo palmar ou volar, mas ele entra pelo tubérculo e irriga a parte distal. A alternativa troca a entrada do território distal pela que sustenta a maior parte do polo proximal."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
+          "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
+          "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
+          "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "89190d7c3390915894797186e2555c3a24e9c28cd4d5c11b36fbd1ced8db15e3"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0056": {
+    "questaoSha256": "53064e887fc844360b8280e5cbb65e9cf05f086ba023f8cd2fd30dfc7661bf0b",
+    "comentarioAnteriorSha256": "e48c2da0cd6eb92b3ddb9af8b268b91d474ff5e93c8989ac0c161fa6b707fdef",
+    "comentario": {
+      "conceito": "No estágio III de Mayfield, a lesão chegou ao lado ulnar do semilunar: ocorre falha **lunopiramidal**, também chamada semilunopiramidal ou piramidal-semilunar. A ordem dos nomes não muda os dois ossos conectados.\n\nA sequência começa no lado radial, com a dissociação escafossemilunar ou a fratura do escafoide. No estágio II, o capitato se desloca para dorsal em relação ao semilunar, pelo espaço de Poirier. Com a progressão para o III, rompe a contenção ulnar, e o padrão resultante mais comum é a luxação mediocárpica: o carpo está deslocado, mas o semilunar continua na fossa do rádio.\n\nA ruptura radiocárpica dorsal é o passo seguinte, permitindo que o próprio semilunar gire para palmar no estágio IV. Essa é a distinção decisiva entre luxação **ao redor do semilunar** e luxação **do semilunar**. Fonte secundária: resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
+      "correta": "Correta: D (piramidal-semilunar). O ligamento nomeia a conexão ulnar da fileira proximal que cede no estágio III. Nessa fase, a ruptura lunopiramidal palmar completa a progressão, enquanto o semilunar pode permanecer apoiado na fossa radial.",
+      "incorretas": {
+        "A": "A falha escafossemilunar corresponde ao estágio I. É a abertura inicial do lado radial, antes do deslocamento dorsal do capitato e antes de a força alcançar o lunopiramidal.",
+        "B": "A separação capitato-semilunar caracteriza o estágio II. O capitato já saiu para dorsal, mas isso ainda não identifica a ruptura da contenção ulnar que define o passo III.",
+        "C": "A ruptura do radiocárpico dorsal permite a luxação palmar do próprio semilunar no estágio IV. Indicá-la no III antecipa um passo: a lesão perilunar pode estar completa com o semilunar ainda na fossa."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "mayfield-e-a-luxacao-perilunar-501fc79c",
+          "mayfield-e-a-luxacao-perilunar-c96b9191",
+          "mayfield-e-a-luxacao-perilunar-2b1b5c96",
+          "mayfield-e-a-luxacao-perilunar-07798063",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0076": {
+    "questaoSha256": "f4e5d209ca6b385954b72da75c05ee31b9f570e3265423e5e700db713d501af0",
+    "comentarioAnteriorSha256": "35b9fcd731867ee54a403044d3a110a2c5dd65b5beac667f8de01e59e891a6c5",
+    "comentario": {
+      "conceito": "O teste de Watson provoca o **deslocamento do escafoide**, investigando sua instabilidade na relação com o semilunar. O examinador pressiona o tubérculo do escafoide de palmar para dorsal e conduz o punho do desvio ulnar para o radial.\n\nNo desvio radial normal, o escafoide precisa fletir. A pressão sobre o tubérculo impede esse movimento; quando a contenção ligamentar falha, o osso pode subluxar para dorsal e voltar com um ressalto ao liberar a pressão. Entender a manobra permite identificar qual osso está sendo provocado, em vez de associar o epônimo a qualquer instabilidade do punho.\n\nUm ressalto isolado não confirma ruptura: o resumo ressalta a baixa especificidade do teste e os falsos positivos em punhos frouxos. Já a investigação lunopiramidal usa baloteamento entre semilunar e piramidal ou cisalhamento, outra forma de aplicação da força. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar e lunopiramidal.",
+      "correta": "Correta: C (escafoide). O dedo do examinador atua no seu tubérculo, bloqueando a flexão que deveria ocorrer durante o desvio radial. O deslocamento dorsal e o ressalto de retorno são a resposta mecânica pesquisada, interpretada junto aos demais achados.",
+      "incorretas": {
+        "A": "O capitato participa da mecânica do carpo e pode se deslocar nas lesões perilunares, mas não é o osso cujo tubérculo é contido nessa manobra. Watson provoca diretamente o deslocamento do escafoide, e não a luxação capitato-semilunar.",
+        "B": "O semilunar é o vizinho unido ao escafoide pelo ligamento investigado, porém não é o osso pressionado e deslocado pelo teste. Confundir a relação escafossemilunar com a peça mobilizada muda a resposta pedida pelo enunciado.",
+        "D": "O piramidal é mobilizado em relação ao semilunar no baloteamento lunopiramidal. Essa avaliação da ligação ulnar da fileira proximal difere de bloquear o tubérculo do escafoide durante o desvio radial."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar; Dissociação lunopiramidal; Anatomia ligamentar e cinemática do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar",
+          "Dissociação lunopiramidal",
+          "Anatomia ligamentar e cinemática do carpo"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-cade5531",
+          "dissociacao-lunopiramidal-86b34ab3",
+          "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
+          "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "bee8cf9899fcf073ef836652146d2df0942a3ee8f3ad4eeef2623fe6f1eb68c1"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0080": {
+    "questaoSha256": "b4edd5f070868d8393737dc4aad6325418e3023012848e73fc5a0eb742c5d3f8",
+    "comentarioAnteriorSha256": "aa6cdb85e53623c65b28c4f0dc8d995f9d06c109acfef8641a6b5dbfc1580f3f",
+    "comentario": {
+      "conceito": "VISI é a instabilidade volar do segmento intercalado: o semilunar fica **fletido** no perfil. Ele normalmente equilibra duas tendências, a flexão transmitida pelo escafoide e a extensão transmitida pelo piramidal. Ao perder a conexão com o piramidal, predomina a tração flexora do lado do escafoide.\n\nA conexão envolvida é o ligamento **semilunopiramidal**. Há uma ressalva importante no termo estática: segundo o resumo, uma lesão lunopiramidal isolada não basta para criar deformidade fixa; também precisam falhar estabilizadores como o radiopiramidal dorsal ou os ulnocárpicos palmares. A resposta identifica o ligamento intrínseco necessário, sem dizer que sua ruptura isolada sempre produz VISI.\n\nO padrão oposto, DISI, corresponde ao semilunar em extensão após perda da ligação funcional com o escafoide. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções Padrões de instabilidade e Dissociação lunopiramidal.",
+      "correta": "Correta: D (semilunopiramidal). A falha desse elo retira a influência extensora do piramidal sobre o semilunar. Para que o desalinhamento seja estático, a fonte também exige comprometimento de estabilizadores secundários; não é correto ensinar uma relação automática entre ruptura isolada e VISI fixo.",
+      "incorretas": {
+        "A": "Os ligamentos radiolunares pertencem à contenção extrínseca entre rádio e semilunar. Não substituem a ligação intrínseca lunopiramidal cuja perda desequilibra a fileira para a flexão. No mecanismo perilunar avançado, o radiolunar curto pode inclusive permanecer como dobradiça do semilunar.",
+        "B": "A separação entre semilunar e capitato é um evento mediocárpico, descrito no estágio II de Mayfield. Nomear essa relação não identifica a perda da influência extensora do piramidal, fundamento do VISI perguntado.",
+        "C": "A ruptura escafossemilunar remove a influência flexora do escafoide e permite predomínio do piramidal, produzindo o padrão DISI. Troca, portanto, tanto o lado da falha quanto o sentido do desalinhamento do semilunar."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal; Anatomia ligamentar e cinemática do carpo; Mayfield e a luxação perilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação lunopiramidal",
+          "Anatomia ligamentar e cinemática do carpo",
+          "Mayfield e a luxação perilunar"
+        ],
+        "blocos": [
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
+          "dissociacao-lunopiramidal-5eb7978d",
+          "anatomia-ligamentar-e-cinematica-do-carpo-09fa55ed",
+          "mayfield-e-a-luxacao-perilunar-fdfdb76a"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "f7f13f45498747cfb43f9fad09d1be1ae4f2001418ebee92266bab1d459f1881"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-0240": {
+    "questaoSha256": "61d89fd5a6d749273d27e68681fedebbf07af555a264936bee491cfd9be81132",
+    "comentarioAnteriorSha256": "5acceb8db420e585f932eb5062749e9242624bf23472af977cdafa350eac8409",
+    "comentario": {
+      "conceito": "O enunciado já fornece os dados que separam uma reconstrução de um procedimento de salvamento: a subluxação rotatória do escafoide é **redutível** e a cartilagem está **íntegra**. No estágio IV de Garcia-Elias, o ligamento escafossemilunar é irreparável, mas ainda se pode recuperar o alinhamento e reconstruir a contenção com enxerto.\n\nUm ligamento reparável permitiria sutura ou reinserção, como no estágio II. Quando o tecido não serve mais para reparo, apenas aproximar os ossos com fios não cria uma nova estrutura ligamentar. A reconstrução precisa manter a redução por meio de um substituto tendíneo.\n\nNa tenodese de três ligamentos descrita no resumo, utiliza-se o flexor radial do carpo, levado ao semilunar e retornado sobre si, sem fixação ao rádio. Já as artrodeses parciais entram no algoritmo para situações irredutíveis ou com degeneração, conforme o estágio. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Dissociação escafossemilunar.",
+      "correta": "Correta: D (tenodese triligamentar). Reconstrói com tendão uma ligação que não pode ser reparada diretamente, aproveitando a possibilidade de reduzir o escafoide e a preservação da cartilagem. É uma das reconstruções listadas para o estágio IV.",
+      "incorretas": {
+        "A": "A pinagem aberta pode manter os ossos reduzidos temporariamente, como proteção de um reparo. Isoladamente, porém, não substitui o ligamento irreparável do estágio IV, deixando sem resposta a necessidade de reconstrução descrita no caso.",
+        "B": "O reparo ligamentar depende de tecido aproveitável. Essa é a condição do estágio II; no IV, a deformidade ainda reduz, mas o ligamento já é irreparável. Cartilagem preservada não significa que o ligamento possa ser suturado.",
+        "C": "A ajuda artroscópica modifica como a redução ou a fixação é realizada, mas pinagem isolada continua sem fornecer um substituto ao ligamento perdido. O resumo admite reconstruções artroscópicas; o problema desta opção é propor só fios, e não a reconstrução exigida.",
+        "E": "A artrodese em quatro cantos é um recurso de salvamento incluído no algoritmo das fases irredutíveis ou degeneradas. O estágio IV ainda permite redução e tem cartilagem íntegra, características que favorecem reconstruir a estabilidade em vez de escolher essa fusão como resposta ao caso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-614919e2",
+          "dissociacao-escafossemilunar-8935e6ce",
+          "dissociacao-escafossemilunar-65f85568",
+          "dissociacao-escafossemilunar-6cbb5bca",
+          "dissociacao-escafossemilunar-7503c999",
+          "dissociacao-escafossemilunar-2e41c596"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "b0cb736c2be44623c0445b3ef9acb8dc4b6f7b3f194d61a1439ec697eed833ea"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
