@@ -692,6 +692,8 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 11 | Martelo tipo I: mais comum, agudo até 4 semanas, tala | afirmativas | cap. 5, p. 192 e 193 | mao / Lesões dos tendões extensores | 05 | mao-2302 | publicada |
 | 12 | Hanseníase: parasitização | reformulada | 3 | Infecções crônicas | 10 | mao-2325 | aplicada |
 | 13 | DOYLE III: aberta com perda de tecido | classificação | cap. 5, p. 192 a 194 | mao / Lesões dos tendões extensores | 05 | mao-2300 | publicada |
+| 14 | Arco palmar profundo | reformulada (oficial aceitou A e B) | 60 | Vascular | 19 | mao-2371 | aplicada |
+| 15 | Colágeno tipo III no DUPUYTREN | reformulada (oficial aceitou A e C) | 4 | Dupuytren | 19 | mao-2368 | aplicada |
 | 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
 | 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | aplicada |
 | 18 | Fisiopatologia da SDRC | reformulada (mecanismo do Green) | 53 | SDRC | 17 | mao-2362 | aplicada |
@@ -703,12 +705,14 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
 | 25 | Indicação do MOBERG | reformulada | 44 | Cobertura | 13 | mao-2341 | aplicada |
 | 26 | Ligamentos extracapsulares do carpo (radioescafocapitato é intracapsular) | anatomia | cap. 13, p. 490 e 491 | mao / Anatomia da mão e punho | 03 | mao-2288 | publicada |
+| 28 | Alongamento por distração do polegar | reformulada | 48 | Reconstrução do polegar | 19 | mao-2369 | aplicada |
 | 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | aplicada |
 | 30 | As três medidas da posição articular do rádio distal | imagem | cap. 15, p. 604 e 605 | mao / Fratura do rádio distal | 07 | mao-2309 | publicada (original com NÃO; reescrita direta) |
 | 31 | Falange proximal do polegar | reformulada (gabarito diverge do plano do Green) | 7 | Falanges | 14 | mao-2347 | aplicada |
 | 32 | Polegar reumatoide de NALEBUFF | reformulada (gabarito diverge da tabela do Green) | 55 | Reumatoide | 15 | mao-2348 | aplicada |
 | 33 | Artrodeses dos dedos | reformulada (gabarito diverge do Green) | 11 | Artrose | 10 | mao-2323 | aplicada |
 | 34 | Achado de lesão pré-ganglionar | reformulada (oficial aceitou C e D) | 34 | Plexo braquial | 14 | mao-2343 | aplicada |
+| 35 | Efeito quadriga | reformulada | 6 | Flexores | 19 | mao-2370 | aplicada |
 | 36 | NAKAMURA transóssea | reformulada | 17 | Artroscopia | 18 | mao-2363 | aplicada |
 | 37 | Sinal de PITRES-TESTUT | reformulada | 31 | Transferências | 09 | mao-2318 | aplicada |
 | 38 | Luxação perilunar: mecanismo e músculos pronadores/supinadores | afirmativas | cap. 13, p. 497 a 499 | mao / Instabilidade do carpo | 03 | mao-2289 | publicada |
@@ -742,6 +746,7 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
 | 68 | Tala interna no radial | reformulada | 31 | Transferências | 18 | mao-2367 | aplicada |
 | 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
+| 70 | Queimadura mais dolorosa | reformulada | 57 | Queimado | 19 | mao-2372 | aplicada |
 | 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | aplicada |
 | 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | aplicada |
 | 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
