@@ -929,6 +929,15 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 48 | Local do gânglio volar | reformulada (transcrita da imagem) | 59 | Gânglios | 08 | mao-2503 | aplicada |
 | 53 | Ligamento radiocárpico dorsal | reformulada | 13 | Carpo | 08 | mao-2504 | aplicada |
 | 54 | Critérios de LAFONTAINE | reformulada | 15 | Rádio distal | 08 | mao-2505 | aplicada |
+| 55 | Pseudartrose na artrodese total do punho (prevenção na 3ª CMC) | reformulada, outro ângulo | 12, p. 465 | Artrose do punho | 09 | mao-2506 | aplicada |
+| 56 | Artrodese total com carpectomia proximal (radiocapitato e 3ª CMC) | reformulada, outro ângulo | 12, p. 463 e 465 | Artrose do punho | 09 | mao-2507 | aplicada |
+| 57 | Lesão de nervos periféricos (afirmações) | — | 30 | Nervos | — | — | pendente: sem gabarito e sem fonte para a alternativa do radial |
+| 58 | Garra mais acentuada na lesão ulnar baixa | reformulada, outro ângulo | 31, p. 1192, 1208 e 1209 | Transferências e paralisias | 09 | mao-2508 | aplicada |
+| 59 | Anatomia vascular (axila e arcos) | — | 60 | Anatomia | — | — | pendente: anatomia da axila fora do Green |
+| 60 | Contraindicação relativa ao reimplante | reformulada, outro ângulo | 42, p. 1653 | Amputações e reimplantes | 09 | mao-2509 | aplicada |
+| 61 | Interescalênico bilateral contraindicado (frênico) | reformulada, outro ângulo | 1, p. 1 e 2 | Anestesia | 09 | mao-2510 | aplicada |
+| 62 | Mecanismo do sinal de WARTENBERG | reformulada | 31, p. 1210 | Exame físico | 09 | mao-2511 | aplicada |
+| 63 | GARCIA-ELIAS 4: o que segura o semilunar | reformulada, uma só correta | 13, p. 513, 518 e 519 | Instabilidade do carpo | 09 | mao-2512 | aplicada |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
