@@ -679,32 +679,32 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
-| 1 | Diagnósticos que imitam o túnel cubital | reformulada | 28 | Neuropatia ulnar | 08 | mao-2313 | publicada |
-| 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
-| 3 | Biomecânica trapeziometacarpal | reformulada | 11 | Rizartrose | 09 | mao-2322 | publicada |
-| 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
-| 5 | FOWLER: indicação no martelo crônico | conduta | cap. 5, p. 196 e 197 | mao / Lesões dos tendões extensores | 05 | mao-2298 | publicada |
-| 6 | Colateral ulnar do polegar completo | reformulada | 8 | Ligamentos dos dedos | 13 | mao-2338 | publicada |
-| 7 | Enxerto total x parcial | reformulada | 44 | Cobertura | 13 | mao-2340 | publicada |
+| 1 | Ligamentos de contenção da IFP | reformulada | 10 | Dedo rígido | 01 | mao-2378 | aplicada |
+| 2 | McGOWAN grau II | reformulada | 28 | Neuropatia ulnar | 01 | mao-2379 | aplicada |
+| 3 | Sarcoma na falange média | reformulada | 59 | Tumores | 01 | mao-2380 | aplicada |
+| 4 | Classificação de LISTER do polegar | reformulada | 48 | Polegar | - | - | pendente: sem fonte (LISTER não está no Green nem nos livros locais) |
+| 5 | MATHES e NAHAI tipo III | reformulada (exemplo do Green) | 44 | Cobertura | 01 | mao-2381 | aplicada |
+| 6 | Mecanismo da fratura da cabeça do rádio | reformulada (original com alternativas repetidas) | 19 | Cabeça do rádio | 01 | mao-2382 | aplicada |
+| 7 | Pioderma gangrenoso | reformulada | 2 | Infecções | 02 | mao-2383 | aplicada |
 | 8 | LAFONTAINE: idade como preditor mais importante | afirmativas | cap. 15, p. 610 e 611 | mao / Fratura do rádio distal | 07 | mao-2308 | publicada |
-| 9 | Anestésico do bloqueio de BIER | reformulada | 1 | Anestesia | 17 | mao-2361 | publicada |
-| 10 | PALMER 2C: perfuração com condromalácia | classificação | cap. 14, p. 571 e 572 | mao / Fibrocartilagem triangular e punho ulnar | 04 | mao-2296 | publicada |
+| 9 | ZANCOLLI na paralisia cerebral | reformulada | 32 | PC | - | - | pendente: sem fonte (ZANCOLLI não está no cap. 32 traduzido) |
+| 10 | Sequência da lesão escafolunar | reformulada | 13 | Carpo | 02 | mao-2384 | aplicada |
 | 11 | Martelo tipo I: mais comum, agudo até 4 semanas, tala | afirmativas | cap. 5, p. 192 e 193 | mao / Lesões dos tendões extensores | 05 | mao-2302 | publicada |
-| 12 | Hanseníase: parasitização | reformulada | 3 | Infecções crônicas | 10 | mao-2325 | publicada |
-| 13 | DOYLE III: aberta com perda de tecido | classificação | cap. 5, p. 192 a 194 | mao / Lesões dos tendões extensores | 05 | mao-2300 | publicada |
-| 14 | Arco palmar profundo | reformulada (oficial aceitou A e B) | 60 | Vascular | 19 | mao-2371 | publicada |
-| 15 | Colágeno tipo III no DUPUYTREN | reformulada (oficial aceitou A e C) | 4 | Dupuytren | 19 | mao-2368 | publicada |
-| 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
+| 12 | Sanguessuga e Aeromonas | reformulada | 2 | Infecções | 02 | mao-2385 | aplicada |
+| 13 | Ápice dorsal no metacarpo | reformulada | 7 | Metacarpos | 02 | mao-2386 | aplicada |
+| 14 | Comissura mais afetada na sindactilia | reformulada | 36 | Sindactilia | 02 | mao-2387 | aplicada |
+| 15 | Retração do flexor longo do polegar | reformulada | 6 | Flexores | 03 | mao-2388 | aplicada |
+| 16 | Escafoide na criança | reformulada | 16 | Carpo | 03 | mao-2389 | aplicada |
 | 17 | Anatomia do acessório espinhal | reformulada | 34 | Plexo braquial | 13 | mao-2342 | publicada |
-| 18 | Fisiopatologia da SDRC | reformulada (mecanismo do Green) | 53 | SDRC | 17 | mao-2362 | publicada |
-| 19 | Objetivos no membro mutilado | reformulada (sem EXCETO) | 43 | Membro mutilado | 11 | mao-2330 | publicada |
-| 20 | Ramos terminais da artéria radial | reformulada | 60 | Vascular | 14 | mao-2344 | publicada |
-| 21 | Deficiência ulnar: frequência da sindactilia | número | cap. 38, p. 1500 | mao / Deficiências longitudinais e mão torta | 02 | mao-2284 | publicada |
-| 22 | Pseudoartrose congênita da ulna: neurofibromatose | fato | cap. 38, p. 1520 | mao / Outras malformações congênitas | 02 | mao-2285 | publicada |
-| 23 | LICHTMAN IIIC: fratura coronal do semilunar | classificação | cap. 16, p. 731 e 732 | mao / Doença de Kienböck | 06 | mao-2305 | publicada |
+| 18 | Colateral radial do polegar: pronação | reformulada | 8 | Ligamentos | 03 | mao-2390 | aplicada |
+| 19 | Portal 4-5 | reformulada | 17 | Artroscopia | 03 | mao-2391 | aplicada |
+| 20 | BAYNE tipo 2 | reformulada | 38 | Mão torta radial | 03 | mao-2392 | aplicada |
+| 21 | Contratura dorsal na queimadura | reformulada | 57 | Queimado | 04 | mao-2393 | aplicada |
+| 22 | Pisiforme ossifica por último | reformulada | 41 | Criança | 04 | mao-2394 | aplicada |
+| 23 | KIRNER | reformulada | 36 | Congênitas | 04 | mao-2395 | aplicada |
 | 24 | ZAPICO tipo 1 (30%) e KIENBÖCK | classificação | cap. 16, p. 727 | mao / Doença de Kienböck | 06 | mao-2306 | publicada |
-| 25 | Indicação do MOBERG | reformulada | 44 | Cobertura | 13 | mao-2341 | publicada |
-| 26 | Ligamentos extracapsulares do carpo (radioescafocapitato é intracapsular) | anatomia | cap. 13, p. 490 e 491 | mao / Anatomia da mão e punho | 03 | mao-2288 | publicada |
+| 25 | AIJ oligoarticular | reformulada | 55 | Reumatoide | 04 | mao-2396 | aplicada |
+| 26 | Sinal do bocejo (gaveta anterior) | reformulada | 13 | Carpo | 04 | mao-2397 | aplicada |
 | 27 | Discrepância de calibre no reparo arterial | reformulada (figura virou texto) | 60 | Microcirurgia | 20 | mao-2377 | publicada |
 | 28 | Alongamento por distração do polegar | reformulada | 48 | Reconstrução do polegar | 19 | mao-2369 | publicada |
 | 29 | Diagnóstico do DUPUYTREN | reformulada | 4 | Dupuytren | 14 | mao-2345 | publicada |
