@@ -749,13 +749,13 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 68 | PANEVA-HOLEVICH | reformulada | 6 | Flexores | 11 | mao-2430 | aplicada |
 | 69 | Ossos da braquidactilia | reformulada | 36 | Congênitas | 11 | mao-2431 | aplicada |
 | 70 | Carpo reumatoide | reformulada | 55 | Reumatoide | 11 | mao-2432 | aplicada |
-| 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | publicada |
-| 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | publicada |
-| 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
+| 71 | GARCIA-ELIAS estágio 5 | reformulada | 13 | Carpo | 12 | mao-2433 | aplicada |
+| 72 | Idade para separar a 1ª comissura | reformulada | 36 | Sindactilia | 12 | mao-2434 | aplicada |
+| 73 | Grácil tipo II | reformulada | 44 | Cobertura | 12 | mao-2435 | aplicada |
 | 74 | DE QUERVAIN | reformulada | 56 | Tendinopatias | 16 | mao-2357 | publicada |
-| 75 | Reperfusão no macrorreimplante | reformulada | 42 | Reimplante | 15 | mao-2351 | publicada |
+| 75 | Ligamento de TESTUT | reformulada | 13 | Carpo | 12 | mao-2436 | aplicada |
 | 76 | Prognóstico na paralisia obstétrica | reformulada (inclui ERB) | 40 | Plexo obstétrico | 20 | mao-2373 | publicada |
-| 77 | Colo do metacarpo: afirmações | reformulada | 7 | Metacarpos | 12 | mao-2333 | publicada |
+| 77 | Zona segura da cabeça do rádio | reformulada | 19 | Cabeça do rádio | 12 | mao-2437 | aplicada |
 | 78 | Transferências do pé para a mão | reformulada | 47 | Dedo do pé | 17 | mao-2359 | publicada |
 | 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | publicada |
 | 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | publicada |
