@@ -42,7 +42,8 @@ e do dia. Por isso ele se adapta a erro, atraso e mudança de data sem apagar hi
 - meta do dia: o que falta dividido pelos dias de estudo até a reta final, no máximo 25% acima do tempo da pessoa;
 - prioridade: fatia por prova × (1 + erro) × (1 + o que falta fazer);
 - até um quarto do dia é revisão de erros com 3 dias ou mais;
-- simulado a cada 14 dias; duas últimas semanas de reta final;
+- três passadas (prioridade máxima, alta, o resto), mini-simulado de 30 questões a cada 14 dias e reta final nas duas
+  últimas semanas (uma, se o plano tiver menos de seis), com modo prova na última e véspera leve;
 - ingresso: a pessoa faz de tudo. O plano usa todas as questões da mão (provas de ingresso e padrão SBCM e SIMÃO),
   misturadas em cada assunto, na ordem do ranking do ingresso; assunto que só o título cobra entra com metade do peso;
 - título: o foco é a SBCM e o SIMÃO (Tales, 26/10/2026). O plano segue o ranking do título; questões de ingresso dos
@@ -52,6 +53,14 @@ e do dia. Por isso ele se adapta a erro, atraso e mudança de data sem apagar hi
 A configuração fica na conta, no mapa sincronizado da Biblioteca (itens `c.mao-ingresso` e `c.mao-titulo`, tipo
 `pref`, vale a mais recente), sem tabela nova no banco. Respostas e histórico continuam onde sempre estiveram.
 Acesso: qualquer pessoa monta e vê o plano; começar as sessões do plano é do assinante, como no cronograma de ortopedia.
+
+### Tela (26/10/2026, pedido do Tales: "a arquitetura parecida com o cronograma" de ortopedia)
+
+A página da mão usa os mesmos componentes do cronograma de ortopedia: "Onde você está" com as passadas e o botão do
+dia, o calendário da semana e do mês, o cartão Hoje com a lista do dia, amanhã, como você está indo, esta semana e os
+recolhidos (constância, desempenho e prontidão, prioridades, semana a semana, levar para o calendário, como funciona).
+`src/dados/painelMao.ts` traduz o `PlanoMao` para `PlanoSalvo` e `CalculoPlano`; cada grande área da mão vira uma
+área com cor própria (`slug` em `GRANDES_AREAS_MAO`, cores em `src/dados/coresAreas.ts`). O motor continua o da mão.
 
 ## Testes de navegador
 

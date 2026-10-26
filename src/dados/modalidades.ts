@@ -66,19 +66,21 @@ export const modalidadePorId = (id: string | null | undefined) => MODALIDADES.fi
  * Grandes áreas da Cirurgia da Mão, a partir dos assuntos que o acervo já usa (nenhuma questão muda de
  * classificação). Assunto de outro tema (cotovelo, pediatria, trauma) vai para "Ortopedia geral".
  */
-export const GRANDES_AREAS_MAO: Array<{ nome: string; assuntos: string[] }> = [
-  { nome: 'Fraturas e lesões do punho e da mão', assuntos: ['Fratura do rádio distal', 'Fraturas do escafoide e do carpo', 'Fraturas dos metacarpos e falanges', 'Instabilidade do carpo', 'Fibrocartilagem triangular e punho ulnar', 'Lesões ligamentares dos dedos', 'Doença de Kienböck', 'Artrose do punho e artroscopia'] },
-  { nome: 'Tendões', assuntos: ['Lesões dos tendões flexores', 'Lesões dos tendões extensores', 'Deformidades dos dedos', 'Tenossinovite de De Quervain', 'Dedo em gatilho e outras tenossinovites', 'Transferências tendinosas e paralisias'] },
-  { nome: 'Nervos e plexo braquial', assuntos: ['Síndrome do túnel do carpo', 'Neuropatia ulnar e outras compressões', 'Lesões de nervos periféricos', 'Plexo braquial e paralisia obstétrica', 'Síndrome da dor complexa regional'] },
-  { nome: 'Microcirurgia, retalhos e reimplantes', assuntos: ['Microcirurgia e retalhos livres', 'Retalhos e cobertura cutânea', 'Amputações e reimplantes'] },
-  { nome: 'Cirurgia plástica, pele e queimaduras', assuntos: ['Cirurgia plástica geral', 'Cicatrização e enxertos de pele', 'Queimaduras'] },
-  { nome: 'Congênitas', assuntos: ['Sindactilia e polidactilia', 'Deficiências longitudinais e mão torta', 'Outras malformações congênitas'] },
-  { nome: 'Degenerativas, inflamatórias e Dupuytren', assuntos: ['Doença de Dupuytren', 'Mão reumatoide', 'Rizartrose e artrose da mão'] },
-  { nome: 'Infecções e tumores', assuntos: ['Infecções da mão', 'Tumores da mão', 'Cistos sinoviais e gangliões'] },
-  { nome: 'Anatomia, exame, imagem e anestesia', assuntos: ['Anatomia da mão e punho', 'Biomecânica da mão', 'Exame físico da mão e punho', 'Imagem da mão e punho', 'Anestesia em cirurgia da mão', 'Outros temas da mão'] },
+export const GRANDES_AREAS_MAO: Array<{ slug: string; nome: string; assuntos: string[] }> = [
+  { slug: 'mao-fraturas', nome: 'Fraturas e lesões do punho e da mão', assuntos: ['Fratura do rádio distal', 'Fraturas do escafoide e do carpo', 'Fraturas dos metacarpos e falanges', 'Instabilidade do carpo', 'Fibrocartilagem triangular e punho ulnar', 'Lesões ligamentares dos dedos', 'Doença de Kienböck', 'Artrose do punho e artroscopia'] },
+  { slug: 'mao-tendoes', nome: 'Tendões', assuntos: ['Lesões dos tendões flexores', 'Lesões dos tendões extensores', 'Deformidades dos dedos', 'Tenossinovite de De Quervain', 'Dedo em gatilho e outras tenossinovites', 'Transferências tendinosas e paralisias'] },
+  { slug: 'mao-nervos', nome: 'Nervos e plexo braquial', assuntos: ['Síndrome do túnel do carpo', 'Neuropatia ulnar e outras compressões', 'Lesões de nervos periféricos', 'Plexo braquial e paralisia obstétrica', 'Síndrome da dor complexa regional'] },
+  { slug: 'mao-microcirurgia', nome: 'Microcirurgia, retalhos e reimplantes', assuntos: ['Microcirurgia e retalhos livres', 'Retalhos e cobertura cutânea', 'Amputações e reimplantes'] },
+  { slug: 'mao-plastica', nome: 'Cirurgia plástica, pele e queimaduras', assuntos: ['Cirurgia plástica geral', 'Cicatrização e enxertos de pele', 'Queimaduras'] },
+  { slug: 'mao-congenitas', nome: 'Congênitas', assuntos: ['Sindactilia e polidactilia', 'Deficiências longitudinais e mão torta', 'Outras malformações congênitas'] },
+  { slug: 'mao-degenerativas', nome: 'Degenerativas, inflamatórias e Dupuytren', assuntos: ['Doença de Dupuytren', 'Mão reumatoide', 'Rizartrose e artrose da mão'] },
+  { slug: 'mao-infeccoes-tumores', nome: 'Infecções e tumores', assuntos: ['Infecções da mão', 'Tumores da mão', 'Cistos sinoviais e gangliões'] },
+  { slug: 'mao-anatomia', nome: 'Anatomia, exame, imagem e anestesia', assuntos: ['Anatomia da mão e punho', 'Biomecânica da mão', 'Exame físico da mão e punho', 'Imagem da mão e punho', 'Anestesia em cirurgia da mão', 'Outros temas da mão'] },
 ]
 const AREA_DO_ASSUNTO_MAO = new Map(GRANDES_AREAS_MAO.flatMap((g) => g.assuntos.map((a) => [a, g.nome] as const)))
 export const ORTOPEDIA_GERAL = 'Ortopedia geral'
+/** Identificador de cada grande área da mão (cor no cronograma e no calendário). */
+export const slugDaAreaMao = (nome: string) => GRANDES_AREAS_MAO.find((g) => g.nome === nome)?.slug ?? 'mao-geral'
 
 export type Nivel = 1 | 2 | 3 | 4
 export interface TemaRanking {

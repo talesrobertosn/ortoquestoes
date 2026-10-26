@@ -16,6 +16,17 @@ export const COR_AREA: Record<string, string> = {
   tumores: '#8b5a2b',
   'conceitos-basicos': '#5f6b73',
   osteometabolicas: '#a0522d',
+  // Grandes áreas da Cirurgia da Mão (cronograma da mão, 27/10/2026): tons próprios, sem dourado.
+  'mao-fraturas': '#c8513c',
+  'mao-tendoes': '#2e64a8',
+  'mao-nervos': '#6b4fa0',
+  'mao-microcirurgia': '#b5527a',
+  'mao-plastica': '#a0522d',
+  'mao-congenitas': '#1f8a70',
+  'mao-degenerativas': '#7a8b2e',
+  'mao-infeccoes-tumores': '#8b5a2b',
+  'mao-anatomia': '#12a1a8',
+  'mao-geral': '#5f6b73',
 }
 
 export const corDaArea = (slug: string | null | undefined): string => (slug && COR_AREA[slug]) || '#5f6b73'

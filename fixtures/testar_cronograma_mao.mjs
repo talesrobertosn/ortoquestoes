@@ -77,8 +77,8 @@ try {
 
   // simulado a cada 14 dias e reta final nas duas últimas semanas
   const sim = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA)
-  assert.equal(sim.hoje.tipo, 'simulado'); assert.ok(sim.idsHoje.length >= 30 && sim.idsHoje.length <= 40)
-  const reta = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, 10) }), AGORA)
+  assert.equal(sim.hoje.tipo, 'simulado'); assert.equal(sim.idsHoje.length, m.TAMANHO_SIMULADO)
+  const reta = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, 6) }), AGORA)
   assert.equal(reta.hoje.tipo, 'reta-final')
   const passou = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, -1) }), AGORA)
   assert.ok(passou.encerrado)

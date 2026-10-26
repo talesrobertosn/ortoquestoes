@@ -121,12 +121,12 @@ for (const [nome, viewport, movel] of [['celular', { width: 390, height: 844 }, 
 
   // ---------- cronograma da mão ----------
   await p.goto(`${BASE}#/cronograma-mao?prova=ingresso`)
-  await p.waitForSelector('.cm-form, .cm-heroi', { timeout: 60_000 })
+  await p.waitForSelector('.cm-form, .cp-onde', { timeout: 60_000 })
   if (nome === 'computador') {
     // o plano montado no celular chegou pela conta (mesmo usuário, outro aparelho)
-    assert.ok(await p.locator('.cm-heroi').count(), 'o plano do celular não chegou ao computador')
-    assert.match(await p.locator('.cm-heroi h1').innerText(), /Faltam 40 dias/)
-    await p.locator('.cm-heroi button', { hasText: 'Ajustar' }).click()
+    assert.ok(await p.locator('.cp-onde').count(), 'o plano do celular não chegou ao computador')
+    assert.match(await p.locator('.cp-onde h1').innerText(), /altam 40 dias/)
+    await p.locator('.cp-onde__ajustar').click()
   }
   await p.waitForSelector('.cm-form')
   await foto(p, `${nome}-cron-form`)
@@ -134,25 +134,28 @@ for (const [nome, viewport, movel] of [['celular', { width: 390, height: 844 }, 
   await p.locator('.cm-form input[type="date"]').fill(data)
   await p.locator('.cm-opcoes button', { hasText: '1h30' }).click()
   await p.locator('.cm-form button[type="submit"]').click()
-  await p.waitForSelector('.cm-heroi')
-  assert.match(await p.locator('.cm-heroi h1').innerText(), /Faltam/)
+  await p.waitForSelector('.cp-onde')
+  assert.match(await p.locator('.cp-onde h1').innerText(), /altam/)
+  // a mesma arquitetura do cronograma de ortopedia: calendário, cartão Hoje, colunas e blocos que abrem
+  for (const sel of ['.cc-janela', '.cp-hoje', '.cp-indo', '.cp-recolhidos']) assert.ok(await p.locator(sel).count(), `faltou ${sel}`)
+  await p.locator('.cp-recolhidos summary', { hasText: 'Prioridades agora' }).click()
   assert.ok(await p.locator('.cm-prioridades li').count() >= 3)
   assert.ok(await semRolagemLateral(p), 'rolagem lateral no cronograma')
   await foto(p, `${nome}-cron-painel`)
   // recarregar: o plano continua (fica na conta)
-  await p.reload(); await p.waitForSelector('.cm-heroi', { timeout: 60_000 })
+  await p.reload(); await p.waitForSelector('.cp-onde', { timeout: 60_000 })
   // ajustar a data muda o plano sem perder nada
-  await p.locator('.cm-heroi button', { hasText: 'Ajustar' }).click()
+  await p.locator('.cp-onde__ajustar').click()
   await p.locator('.cm-form input[type="date"]').fill(new Date(Date.now() + 40 * 86400000).toISOString().slice(0, 10))
   await p.locator('.cm-form button[type="submit"]').click()
-  await p.waitForSelector('.cm-heroi')
+  await p.waitForSelector('.cp-onde')
   // título tem o próprio plano (ainda vazio)
   await p.locator('.troca-cron a', { hasText: 'título' }).click()
   await p.waitForSelector('.cm-form'); assert.match(await p.locator('.cm-form h1').innerText(), /Título/)
   await p.locator('.troca-cron a', { hasText: 'ingresso' }).click()
-  await p.waitForSelector('.cm-heroi')
+  await p.waitForSelector('.cp-onde')
   // começar o dia abre a sessão com as questões do plano
-  const comecar = p.locator('.cm-comecar')
+  const comecar = p.locator('.cp-hoje .cp-botao')
   if (await comecar.count()) { await comecar.click(); await p.waitForFunction(() => location.hash.startsWith('#/sessao'), null, { timeout: 30_000 }) }
   // o cronograma de ortopedia mostra a troca
   await p.goto(`${BASE}#/cronograma`); await p.waitForSelector('.troca-cron')
