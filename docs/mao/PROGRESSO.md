@@ -919,9 +919,13 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 25 | WATERS tipo IV (falsa glenoide) | reformulada | 40 | Plexo obstétrico | 05 | mao-2488 | aplicada |
 | 26 | Dissociação escafolunar aguda | reformulada | 13 | Carpo | 03 | mao-2477 | aplicada |
 | 27 | Lesões do nervo radial | reformulada | 31 | Transferências | 03 | mao-2478 | aplicada |
+| 28 | Enxerto de veia invertido (válvulas) | reformulada, outro ângulo | 43, p. 1681 e 1683 | Microcirurgia | 15 | mao-2547 | aplicada |
 | 29 | Diáfise do metacarpo | reformulada | 7 | Metacarpos | 06 | mao-2493 | aplicada |
 | 30 | Intramedular nas falanges | reformulada | 7 | Falanges | 06 | mao-2494 | aplicada |
+| 31 | Fratura da cabeça do metacarpo: cominutiva é a mais comum | reformulada | 7, p. 260 e 261 | Metacarpos e falanges | 15 | mao-2548 | aplicada |
 | 32 | TSUGE grave | reformulada (ângulo diferente) | 51 | VOLKMANN | 07 | mao-2500 | aplicada |
+| 33 | Falhas de retalho livre em 72 horas (CHEN) | reformulada, outro ângulo | 45, p. 1754 | Microcirurgia | 15 | mao-2549 | aplicada |
+| 34 | Indicação da tenodese ulnocarpal (HUI e LINSCHEID) | reformulada, outro ângulo | 14, p. 579 | Radioulnar distal | 15 | mao-2550 | aplicada |
 | 35 | Desalinhamento adaptativo do carpo no rádio viciado | reformulada | 13, p. 544 e 545 | Instabilidade do carpo | 13 | mao-2535 | aplicada |
 | 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
 | 37 | De QUERVAIN: atividade de risco | — | 56 | Tenossinovites | — | — | pendente: tema já no acervo; atividade da alternativa oficial sem fonte no Green |
