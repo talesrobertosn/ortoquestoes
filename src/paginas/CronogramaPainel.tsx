@@ -558,10 +558,10 @@ export function ResumoSemana({ feitas, acerto, dias, fraca, proxima }: { feitas:
 
 // ─── Exportar para o calendário ────────────────────────────────────────────
 
-export function ExportarCalendario({ calculo, plano }: { calculo: CalculoPlano; plano: PlanoSalvo }) {
+export function ExportarCalendario({ calculo, plano, rota }: { calculo: CalculoPlano; plano: PlanoSalvo; /** A página que os eventos abrem (padrão: o cronograma de ortopedia). */ rota?: string }) {
   const [hora, definirHora] = useState(7)
   function baixar() {
-    const blob = new Blob([gerarIcs(calculo, plano, hora)], { type: 'text/calendar;charset=utf-8' })
+    const blob = new Blob([gerarIcs(calculo, plano, hora, Date.now(), rota)], { type: 'text/calendar;charset=utf-8' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url; a.download = 'cronograma-orto-questoes.ics'
