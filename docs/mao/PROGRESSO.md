@@ -728,11 +728,11 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 47 | YAMAUCHI e TANABU tipo 4 | reformulada | 36 | Congênitas | 08 | mao-2415 | aplicada |
 | 48 | ALLEN zona 3 | reformulada | 49 | Amputações | 08 | mao-2416 | aplicada |
 | 49 | MONTEGGIA e interósseo posterior | reformulada | 20 | Ulna proximal | 08 | mao-2417 | aplicada |
-| 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | publicada |
-| 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | publicada |
-| 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | publicada |
-| 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
-| 54 | Neuropatia ulnar após úmero distal | reformulada | 18 | Úmero distal | 15 | mao-2352 | publicada |
+| 50 | Irrigação retrógrada do escafoide | reformulada | 16 | Carpo | 09 | mao-2418 | aplicada |
+| 51 | STELLING e TUREK tipo II | reformulada | 36 | Polidactilia | 09 | mao-2419 | aplicada |
+| 52 | Círculo de HORII | reformulada | 22 | Cotovelo | 09 | mao-2420 | aplicada |
+| 53 | Tenossinovectomia no túnel do carpo | reformulada | 28 | Túnel do carpo | 09 | mao-2421 | aplicada |
+| 54 | Associações da mão torta ulnar | reformulada | 38 | Mão torta | 09 | mao-2422 | aplicada |
 | 55 | Sinal da vela | reformulada | 19 | Cabeça do rádio | 18 | mao-2364 | publicada |
 | 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
 | 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | publicada |
