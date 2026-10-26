@@ -728,34 +728,34 @@ script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [
 | 47 | YAMAUCHI e TANABU tipo 4 | reformulada | 36 | Congênitas | 08 | mao-2415 | aplicada |
 | 48 | ALLEN zona 3 | reformulada | 49 | Amputações | 08 | mao-2416 | aplicada |
 | 49 | MONTEGGIA e interósseo posterior | reformulada | 20 | Ulna proximal | 08 | mao-2417 | aplicada |
-| 50 | Isquemia quente no reimplante digital | reformulada | 42 | Reimplante | 15 | mao-2350 | publicada |
-| 51 | Posição da tala no túnel do carpo | reformulada | 28 | Túnel do carpo | 08 | mao-2315 | publicada |
-| 52 | Local do cisto sinovial | reformulada | 59 | Gânglios | 10 | mao-2326 | publicada |
-| 53 | Índice de altura do carpo (método original) | número/imagem | cap. 13, p. 504 | mao / Imagem da mão e punho | 04 | mao-2293 | publicada (original com duas respostas aceitáveis; refeita pelo método original) |
-| 54 | Neuropatia ulnar após úmero distal | reformulada | 18 | Úmero distal | 15 | mao-2352 | publicada |
-| 55 | Sinal da vela | reformulada | 19 | Cabeça do rádio | 18 | mao-2364 | publicada |
-| 56 | Lesão lunotriquetral isolada: mecanismo | mecanismo | cap. 13, p. 532 | mao / Instabilidade do carpo | 04 | mao-2294 | publicada |
-| 57 | Indicações no colo do metacarpo | reformulada (sem NÃO) | 7 | Metacarpos | 11 | mao-2332 | publicada |
-| 58 | Classificação da sindactilia | reformulada (figura virou texto) | 36 | Sindactilia | 20 | mao-2376 | publicada |
-| 59 | Rádio desalinhado após fixar a ulna | reformulada | 20 | Ulna proximal | 16 | mao-2355 | publicada |
-| 60 | Fraturas pediátricas e síndrome compartimental | reformulada (oficial aceitou A e D) | 51 | Compartimental | 12 | mao-2335 | publicada |
-| 61 | Rigidez intrínseca | reformulada | 10 | Dedo rígido | 18 | mao-2365 | publicada |
-| 62 | Luxações axiais de GARCIA-ELIAS: subtipos puros (peri) | classificação/figura | cap. 13, p. 554 e 555 (Fig. 13.66) | mao / Instabilidade do carpo | 04 | mao-2295 | publicada |
-| 63 | Tuberculose óssea no adulto | reformulada | 3 | Infecções crônicas | 18 | mao-2366 | publicada |
-| 64 | Lesão sentinela neonatal | reformulada | 51 | Compartimental | 12 | mao-2336 | publicada |
+| 50 | Irrigação retrógrada do escafoide | reformulada | 16 | Carpo | 09 | mao-2418 | aplicada |
+| 51 | STELLING e TUREK tipo II | reformulada | 36 | Polidactilia | 09 | mao-2419 | aplicada |
+| 52 | Círculo de HORII | reformulada | 22 | Cotovelo | 09 | mao-2420 | aplicada |
+| 53 | Tenossinovectomia no túnel do carpo | reformulada | 28 | Túnel do carpo | 09 | mao-2421 | aplicada |
+| 54 | Associações da mão torta ulnar | reformulada | 38 | Mão torta | 09 | mao-2422 | aplicada |
+| 55 | Biópsia da melanoníquia | reformulada | 58 | Tumores de pele | 10 | mao-2423 | aplicada |
+| 56 | Complicação da transferência do dedo do pé | reformulada | 47 | Dedo do pé | - | - | pendente: conferir à mão (complicação mais comum não aparece explícita no cap. 47) |
+| 57 | Comprimento do retalho da comissura | reformulada | 36 | Sindactilia | - | - | pendente: sem fonte (medida não está no cap. 36 traduzido) |
+| 58 | Divisão posterior do tronco superior | reformulada | 34 | Plexo | 10 | mao-2424 | aplicada |
+| 59 | Macrodactilia tipo IV | reformulada | 36 | Congênitas | 10 | mao-2425 | aplicada |
+| 60 | Ligamento triangular | reformulada | 5 | Extensores | 10 | mao-2426 | aplicada |
+| 61 | MADELUNG | reformulada | 38 | Congênitas | 10 | mao-2427 | aplicada |
+| 62 | Fixador externo no metacarpo | reformulada | 7 | Metacarpos | 11 | mao-2428 | aplicada |
+| 63 | Resultados da artrodese escafocapitato | reformulada | 13 | Carpo | - | - | pendente: conferir à mão (opções não estão no cap. 13 traduzido) |
+| 64 | Anatomia do mediano | reformulada (Netter + Green) | 28 | Anatomia | 11 | mao-2429 | aplicada |
 | 65 | TSUGE moderado | reformulada | 51 | VOLKMANN | 12 | mao-2337 | publicada |
-| 66 | Portal 3-4: entre ELP e extensor dos dedos | anatomia | cap. 17, p. 761 | mao / Artrose do punho e artroscopia | 06 | mao-2304 | publicada |
+| 66 | Epidemiologia dos aneurismas da mão | reformulada | 60 | Vascular | - | - | pendente: conferir à mão |
 | 67 | Dissociação SL: fileira distal dorsal e em pronação | mecanismo | cap. 13, p. 505 e 508 | mao / Instabilidade do carpo | 03 | mao-2291 | publicada |
-| 68 | Tala interna no radial | reformulada | 31 | Transferências | 18 | mao-2367 | publicada |
-| 69 | BAYNE e KLUG: tipo 2 (rádio hipoplásico proximal e distal) | classificação | cap. 38, p. 1495 (Tabela 38.2) | mao / Deficiências longitudinais e mão torta | 02 | mao-2286 | publicada |
-| 70 | Queimadura mais dolorosa | reformulada | 57 | Queimado | 19 | mao-2372 | publicada |
-| 71 | Ângulos de artrodese do anelar | reformulada | 11 | Artrose | 11 | mao-2329 | publicada |
-| 72 | Recidiva do tumor de células gigantes | reformulada | 59 | Tumores | 10 | mao-2327 | publicada |
-| 73 | Instabilidade não dissociativa: translocação ulnar do carpo | classificação | cap. 13, p. 501 | mao / Instabilidade do carpo | 03 | mao-2292 | publicada |
+| 68 | PANEVA-HOLEVICH | reformulada | 6 | Flexores | 11 | mao-2430 | aplicada |
+| 69 | Ossos da braquidactilia | reformulada | 36 | Congênitas | 11 | mao-2431 | aplicada |
+| 70 | Carpo reumatoide | reformulada | 55 | Reumatoide | 11 | mao-2432 | aplicada |
+| 71 | GARCIA-ELIAS estágio 5 | reformulada | 13 | Carpo | 12 | mao-2433 | aplicada |
+| 72 | Idade para separar a 1ª comissura | reformulada | 36 | Sindactilia | 12 | mao-2434 | aplicada |
+| 73 | Grácil tipo II | reformulada | 44 | Cobertura | 12 | mao-2435 | aplicada |
 | 74 | DE QUERVAIN | reformulada | 56 | Tendinopatias | 16 | mao-2357 | publicada |
-| 75 | Reperfusão no macrorreimplante | reformulada | 42 | Reimplante | 15 | mao-2351 | publicada |
+| 75 | Ligamento de TESTUT | reformulada | 13 | Carpo | 12 | mao-2436 | aplicada |
 | 76 | Prognóstico na paralisia obstétrica | reformulada (inclui ERB) | 40 | Plexo obstétrico | 20 | mao-2373 | publicada |
-| 77 | Colo do metacarpo: afirmações | reformulada | 7 | Metacarpos | 12 | mao-2333 | publicada |
+| 77 | Zona segura da cabeça do rádio | reformulada | 19 | Cabeça do rádio | 12 | mao-2437 | aplicada |
 | 78 | Transferências do pé para a mão | reformulada | 47 | Dedo do pé | 17 | mao-2359 | publicada |
 | 79 | Embriologia: pontos críticos | reformulada | 35 | Embriologia | 14 | mao-2346 | publicada |
 | 80 | Fratura do capítulo tipo IV | reformulada | 18 | Úmero distal | 16 | mao-2353 | publicada |
