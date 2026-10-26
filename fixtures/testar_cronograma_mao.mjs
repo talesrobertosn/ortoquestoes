@@ -24,10 +24,13 @@ try {
   const p = m.calcularPlanoMao(indice, {}, cfg(), AGORA)
   assert.equal(p.hoje.tipo, 'estudo')
   assert.ok(p.metaHoje >= 5 && p.idsHoje.length === p.metaHoje, `meta ${p.metaHoje}, ids ${p.idsHoje.length}`)
-  assert.ok(p.idsHoje.every((id) => poolIngresso.has(id)), 'o dia do ingresso não começou pelas questões de ingresso')
-  // todo mundo estuda tudo: o plano de ingresso também tem as questões no padrão do título
-  const idsIngresso = new Set(p.temas.flatMap((t) => t.ids))
-  assert.ok([...poolTitulo].every((id) => idsIngresso.has(id)), 'o ingresso deixou de fora questões do título')
+  // ingresso: a pessoa faz de tudo; o plano tem todas as questões da mão, misturadas em cada assunto
+  assert.ok(p.idsHoje.every((id) => poolIngresso.has(id) || poolTitulo.has(id)), 'questão de fora da mão')
+  const idsIngresso = p.temas.flatMap((t) => t.ids)
+  assert.equal(new Set(idsIngresso).size, idsIngresso.length, 'questão repetida no plano')
+  assert.ok([...poolTitulo].every((id) => idsIngresso.includes(id)) && [...poolIngresso].every((id) => idsIngresso.includes(id)), 'o ingresso deixou questões de fora')
+  const anat = p.temas[0]
+  assert.ok(anat.ids.slice(0, 20).some((id) => poolTitulo.has(id)) || !anat.ids.some((id) => poolTitulo.has(id)), 'no ingresso, os tipos não se misturam no assunto')
   assert.equal(new Set(p.idsHoje).size, p.idsHoje.length, 'questão repetida no dia')
   assert.equal(p.feitas, 0)
   assert.equal(p.proximos.length, 7)
@@ -82,15 +85,19 @@ try {
 
   // título: questões no padrão da prova primeiro; o essencial não usa as de ingresso
   const tit = m.calcularPlanoMao(indice, {}, { ...m.configInicial('titulo', AGORA), dias: todosOsDias, criadoEm: hoje }, AGORA)
-  assert.ok(tit.idsHoje.every((id) => poolTitulo.has(id)), 'título começou por questão de ingresso')
-  const idsTitulo = new Set(tit.temas.flatMap((t) => t.ids))
-  assert.ok([...poolIngresso].every((id) => idsTitulo.has(id)), 'o título deixou de fora questões de ingresso')
-  assert.equal(tit.total, p.total, 'os dois planos completos cobrem as mesmas questões')
-  // dentro de cada assunto, as da própria prova vêm primeiro
-  for (const t of tit.temas) { const k = t.ids.findIndex((id) => !poolTitulo.has(id)); assert.ok(k < 0 || t.ids.slice(k).every((id) => !poolTitulo.has(id)), `${t.nome}: ordem das provas`) }
+  // título: foco na SBCM e no SIMÃO; ingresso só como reforço (no máximo uma para cada quatro), nos mesmos assuntos
+  const idsTitulo = tit.temas.flatMap((t) => t.ids)
+  assert.equal(new Set(idsTitulo).size, idsTitulo.length, 'questão repetida no título')
+  assert.ok([...poolTitulo].every((id) => idsTitulo.includes(id)), 'o título deixou questões SBCM/SIMÃO de fora')
+  for (const t of tit.temas) {
+    const proprias = t.ids.filter((id) => poolTitulo.has(id)).length, reforco = t.ids.length - proprias
+    assert.ok(proprias > 0 && reforco <= Math.ceil(proprias * m.REFORCO_TITULO), `${t.nome}: reforço demais`)
+  }
+  const doTituloHoje = tit.idsHoje.filter((id) => poolTitulo.has(id)).length
+  assert.ok(doTituloHoje >= tit.idsHoje.length * 0.75, `título com pouco SBCM/SIMÃO no dia: ${doTituloHoje}/${tit.idsHoje.length}`)
+  assert.ok(tit.total < p.total, 'o título ficou do tamanho do ingresso')
   const essencial = m.calcularPlanoMao(indice, {}, { ...m.configInicial('titulo', AGORA), dias: todosOsDias, criadoEm: hoje, cobertura: 'essencial' }, AGORA)
-  assert.ok(essencial.temas.every((t) => t.nivel >= 3), 'essencial com assunto de prioridade baixa')
-  assert.ok(essencial.temas.some((t) => t.ids.some((id) => poolIngresso.has(id))), 'essencial sem as questões de ingresso dos mesmos assuntos')
+  assert.ok(essencial.temas.every((t) => t.nivel >= 3 && t.ids.every((id) => poolTitulo.has(id))), 'essencial do título com questão de ingresso')
   assert.ok(essencial.total < tit.total)
   assert.notDeepEqual(tit.temas.slice(0, 5).map((t) => t.nome), p.temas.slice(0, 5).map((t) => t.nome), 'título e ingresso com a mesma prioridade')
 

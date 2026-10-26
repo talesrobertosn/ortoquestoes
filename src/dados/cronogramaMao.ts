@@ -17,10 +17,11 @@ import { diaDaSemana, diasEntre, hojeBR, somarDias } from '../util/dia'
  * - até um quarto do dia é revisão dos erros com pelo menos 3 dias (espaçamento);
  * - a cada 14 dias de plano, num dia de estudo, um simulado; as duas últimas semanas são reta final
  *   (erros, assuntos de prioridade máxima e um simulado);
- * - os dois planos usam todas as questões da mão (provas de ingresso e padrão SBCM e SIMÃO): no fim, as
- *   provas cobram coisas parecidas (Tales, 26/10/2026). O que muda é a prioridade, que segue o ranking da
- *   prova escolhida; dentro de cada assunto, as questões da própria prova vêm primeiro. Assunto que só
- *   aparece na outra prova entra com metade do peso e prioridade baixa.
+ * - ingresso: a pessoa faz de tudo (Tales, 26/10/2026). O plano usa todas as questões da mão, das provas de
+ *   ingresso e do padrão SBCM e SIMÃO, misturadas em cada assunto; a ordem dos assuntos segue o ranking do
+ *   ingresso, e assunto que só o título cobra entra com metade do peso, como prioridade baixa;
+ * - título: o foco é a SBCM e o SIMÃO. O plano segue o ranking do título, e as questões de ingresso entram só
+ *   como reforço nos mesmos assuntos (no máximo uma para cada quatro do título, e nenhuma no essencial).
  */
 export type ProvaMao = 'ingresso' | 'titulo'
 export interface ConfigMao {
@@ -73,15 +74,36 @@ export interface PlanoMao {
   encerrado: boolean
 }
 
-/**
- * Assuntos do plano: o ranking da prova escolhida dá a prioridade; as questões vêm das duas provas da mão,
- * as da própria prova primeiro. Assunto que só a outra prova cobra entra com metade do peso, como prioridade baixa.
- */
-function rankingDoPlano(indice: Indice, prova: ProvaMao): { ranking: Ranking; temas: TemaRanking[] } {
+/** Reforço do título: no máximo uma questão de ingresso para cada quatro do padrão SBCM e SIMÃO. */
+export const REFORCO_TITULO = 0.25
+
+/** Junta duas listas espalhando a segunda pela primeira, na proporção dos tamanhos. */
+function misturar(a: string[], b: string[]): string[] {
+  if (!b.length) return a
+  if (!a.length) return b
+  const saida: string[] = []
+  const passo = (a.length + b.length) / b.length
+  let j = 0
+  for (let i = 0; i < a.length + b.length; i++) {
+    if (j < b.length && (i + 1) >= Math.round((j + 1) * passo)) saida.push(b[j++])
+    else saida.push(a[i - j] ?? b[j++])
+  }
+  return saida
+}
+
+/** Assuntos e questões do plano, pela regra de cada prova (ver o comentário do topo). */
+function rankingDoPlano(indice: Indice, prova: ProvaMao, cobertura: ConfigMao['cobertura']): { ranking: Ranking; temas: TemaRanking[] } {
   const ranking = rankingModalidade(indice, modalidadePorId(prova === 'titulo' ? 'mao-titulo' : 'mao-ingresso')!)
   const outra = rankingModalidade(indice, modalidadePorId(prova === 'titulo' ? 'mao-ingresso' : 'mao-titulo')!)
   const daOutra = new Map(outra.temas.map((t) => [t.nome, t]))
-  const temas: TemaRanking[] = ranking.temas.map((t) => ({ ...t, ids: [...t.ids, ...(daOutra.get(t.nome)?.ids ?? [])] }))
+  if (prova === 'titulo') {
+    const temas = ranking.temas.map((t) => {
+      const reforco = cobertura === 'essencial' ? [] : (daOutra.get(t.nome)?.ids ?? []).slice(0, Math.ceil(t.ids.length * REFORCO_TITULO))
+      return { ...t, ids: misturar(t.ids, reforco) }
+    })
+    return { ranking, temas }
+  }
+  const temas: TemaRanking[] = ranking.temas.map((t) => ({ ...t, ids: misturar(t.ids, daOutra.get(t.nome)?.ids ?? []) }))
   const proprios = new Set(ranking.temas.map((t) => t.nome))
   for (const t of outra.temas) if (!proprios.has(t.nome)) temas.push({ ...t, pctEdicao: Math.round(t.pctEdicao * 5) / 10, nivel: 1, tendencia: null })
   return { ranking, temas }
@@ -92,7 +114,7 @@ const dominioDe = (certas: number, validas: number) => (certas + 1) / (validas +
 
 export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, config: ConfigMao, agora = Date.now()): PlanoMao {
   const hoje = hojeBR(agora)
-  const { ranking, temas: doPlano } = rankingDoPlano(indice, config.prova)
+  const { ranking, temas: doPlano } = rankingDoPlano(indice, config.prova, config.cobertura)
   const dias = config.dias.length ? config.dias : [1, 2, 3, 4, 5]
   const diasRestantes = Math.max(0, diasEntre(hoje, config.dataProva))
   const encerrado = diasRestantes <= 0
