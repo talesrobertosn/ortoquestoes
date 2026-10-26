@@ -947,6 +947,13 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 70 | Síndrome da pele escaldada estafilocócica | reformulada | 2, p. 17 | Infecções | 10 | mao-2518 | aplicada |
 | 71 | Abscesso do espaço tenar: postura do polegar | reformulada | 2, p. 35 e 36 | Infecções | 10 | mao-2519 | aplicada |
 | 72 | Primeira manifestação da hanseníase | reformulada | 3, p. 126 e 127 | Infecções | 10 | mao-2520 | aplicada |
+| 73 | Retalho romboide: LIMBERG x DUFOURMENTEL | reformulada, sem figura, outro ângulo | 44, p. 1715 e 1716 | Retalhos | 11 | mao-2521 | aplicada |
+| 74 | Classificação de DUBBERLEY (tipo II) | reformulada | 18, p. 866 e 867 | Úmero distal | 11 | mao-2522 | aplicada |
+| 75 | Tendão flexor aderido: terapia antes da tenólise | reformulada, outro ângulo | 6, p. 227 e 228 | Tendões flexores | 11 | mao-2523 | aplicada |
+| 76 | Polo proximal do escafoide: fixar sempre | reformulada | 16, p. 682 e 683 | Escafoide | 11 | mao-2524 | aplicada |
+| 77 | Margem do melanoma até 1 mm de Breslow | reformulada | 58, p. 2172 | Tumores | 11 | mao-2525 | aplicada |
+| 78 | Reconstrução do polegar (limites de 1,5 cm² e 2,5 cm) | — | 48 | Polegar | — | — | pendente: limites sem fonte no Green |
+| 79 | MONTEGGIA no adulto: princípio do tratamento | reformulada, outro ângulo | 20, p. 938, 945 e 946.e4 | Ulna proximal | 11 | mao-2526 | aplicada |
 | 90 | Onde se prendem os checkrein | reformulada | 10 | Dedo rígido | 07 | mao-2497 | aplicada |
 | 92 | GEISSLER grau III | reformulada | 17 | Artroscopia | 04 | mao-2483 | aplicada |
 | 94 | Transferência de falange antes de 15 meses | reformulada | 36 | Congênitas | 05 | mao-2489 | aplicada |
