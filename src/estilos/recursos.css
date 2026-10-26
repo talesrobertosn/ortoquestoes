@@ -539,3 +539,7 @@
 .mn-destaque__seta { color: var(--texto-2); }
 .mn-destaque:hover .mn-destaque__seta { color: var(--verdete); }
 @media (max-width: 40rem) { .mn-destaques { grid-template-columns: 1fr; } }
+/* Atlas 3D: a mão dissecada do próprio atlas no lugar do osso desenhado (pedido do Tales, 25/10/2026). */
+.mn-destaque__imagem, .ip-atlas-icone { flex: none; object-fit: contain; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.18)); }
+.mn-destaque__imagem { width: 52px; height: 52px; margin: -6px 0; }
+.ip-atlas-icone { width: 44px; height: 44px; margin: -4px 0; }

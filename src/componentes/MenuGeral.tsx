@@ -9,6 +9,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { href } from '../util/rotas'
+import { recurso } from '../config'
 import { Icone, type NomeIcone } from './Icone'
 import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Painel } from './Painel'
@@ -171,7 +172,9 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
       <nav className="mn-destaques" aria-label="Em destaque">
         {DESTAQUES.map((item) => (
           <a key={item.destino} className={`mn-destaque mn-destaque--${item.arte}`} href={href(item.destino)} onClick={aoFechar} aria-current={atualDe(item) ? 'page' : undefined}>
-            <span className={`ip-px ip-px--${item.arte}`} aria-hidden="true"><i /><i /><i /></span>
+            {item.arte === 'osso'
+              ? <img className="mn-destaque__imagem" src={recurso('atlas3d/icone-mao.png')} width={52} height={52} alt="" loading="lazy" decoding="async" />
+              : <span className={`ip-px ip-px--${item.arte}`} aria-hidden="true"><i /><i /><i /></span>}
             <span className="mn-destaque__texto"><strong>{item.rotulo} <SeloNovo texto={item.novo} /></strong><small>{item.texto}</small></span>
             <span className="mn-destaque__seta" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span>
           </a>

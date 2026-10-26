@@ -442,7 +442,7 @@ export function Inicio() {
           </a>
         )}
         <a className="ip-atalho" href={href('/atlas')}>
-          <span className="ip-px ip-px--osso" aria-hidden="true"><i /><i /><i /></span>
+          <img className="ip-atlas-icone" src={recurso('atlas3d/icone-mao.png')} width={44} height={44} alt="" loading="lazy" decoding="async" />
           <span><strong>Atlas 3D <SeloNovo /></strong><small>Clique no osso</small></span>
         </a>
       </nav>

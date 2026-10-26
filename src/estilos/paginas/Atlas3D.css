@@ -382,3 +382,9 @@ body:has(.atlas) { overflow: hidden; }
 .atlas--estreita .atlas__preset { top: auto; bottom: calc(4rem + env(safe-area-inset-bottom)); left: var(--e-2); right: var(--e-2); width: auto; max-height: 38vh; }
 .atlas__preset li button.atlas__preset-fechado { color: var(--texto-2); }
 .atlas__preset li button svg { margin-left: auto; color: var(--texto-2); }
+
+/* Segmentos (lado, corte) nunca saem da caixa: cada botão divide o espaço e encolhe o texto se preciso. */
+.at-segmentos button { flex: 1 1 0; min-width: 0; padding: 0 0.3rem; overflow: hidden; text-overflow: ellipsis; }
+.atlas__personalizar .at-segmentos { flex-wrap: wrap; border-radius: 10px; }
+.atlas__personalizar .at-segmentos button { flex: 1 1 calc(50% - 0.2rem); border-radius: 8px; }
+.atlas__personalizar { overflow-x: hidden; }

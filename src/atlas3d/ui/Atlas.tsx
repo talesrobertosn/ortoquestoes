@@ -367,7 +367,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <p className="atlas__marca tr-heroi__selo">Atlas 3D · Beta</p>
         <div className="atlas__acoes-topo">
           <button type="button" className={`at-chip at-ajuda${guia || !pref.dicasVistas ? ' at-chip--ativo' : ''}`} onClick={() => definirGuia((v) => !v)} aria-expanded={guia || !pref.dicasVistas} title="Como usar o atlas"><Icone nome="interrogacao" tamanho={17} /><span>Como usar</span></button>
-          <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => definirPersonalizar((v) => !v)} aria-label="Personalizar" title="Personalizar"><Icone nome="ajustes" tamanho={19} /></button>
+          <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => { definirPersonalizar((v) => !v); if (guia || !pref.dicasVistas) { definirGuia(false); definirPref((p) => ({ ...p, dicasVistas: true })) } }} aria-label="Personalizar" title="Personalizar"><Icone nome="ajustes" tamanho={19} /></button>
           <button type="button" className="at-botao-icone" onClick={aoFechar} aria-label="Fechar o atlas" title="Fechar (volta à página anterior)"><Icone nome="fechar" tamanho={19} /></button>
         </div>
       </header>
