@@ -922,8 +922,15 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 29 | Diáfise do metacarpo | reformulada | 7 | Metacarpos | 06 | mao-2493 | aplicada |
 | 30 | Intramedular nas falanges | reformulada | 7 | Falanges | 06 | mao-2494 | aplicada |
 | 32 | TSUGE grave | reformulada (ângulo diferente) | 51 | VOLKMANN | 07 | mao-2500 | aplicada |
+| 35 | Desalinhamento adaptativo do carpo no rádio viciado | reformulada | 13, p. 544 e 545 | Instabilidade do carpo | 13 | mao-2535 | aplicada |
 | 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
+| 37 | De QUERVAIN: atividade de risco | — | 56 | Tenossinovites | — | — | pendente: tema já no acervo; atividade da alternativa oficial sem fonte no Green |
+| 38 | Fóvea da ulna | reformulada, outro ângulo | 14, p. 563 e 564 | Fibrocartilagem triangular | 13 | mao-2536 | aplicada |
 | 39 | Local da lesão do colateral ulnar | reformulada | 8 | Ligamentos | 03 | mao-2480 | aplicada |
+| 40 | Achados anatômicos na deficiência radial | reformulada, outro ângulo | 38, p. 1496 | Mão torta radial | 13 | mao-2537 | aplicada |
+| 41 | Rigidez intrínseca: alongar e liberação intrínseca distal | reformulada, outro ângulo | 10, p. 393 e 403 | Rigidez dos dedos | 13 | mao-2538 | aplicada |
+| 42 | McGOWAN grau I | reformulada | 26, p. 1105 | Neuropatia ulnar | 13 | mao-2539 | aplicada |
+| 43 | Luxação congênita da cabeça do rádio dolorosa no adolescente | reformulada, outro ângulo | 38, p. 1512 e 1515 | Malformações congênitas | 13 | mao-2540 | aplicada |
 | 45 | Artrodese da MCF do polegar | reformulada (transcrita da imagem) | 11 | Artrose | 08 | mao-2501 | aplicada |
 | 47 | Pseudartrose congênita da ulna | reformulada (transcrita da imagem) | 38 | Congênitas | 08 | mao-2502 | aplicada |
 | 48 | Local do gânglio volar | reformulada (transcrita da imagem) | 59 | Gânglios | 08 | mao-2503 | aplicada |
