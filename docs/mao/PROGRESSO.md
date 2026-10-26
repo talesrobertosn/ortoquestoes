@@ -669,3 +669,18 @@ Não há gabarito oficial extraído do caderno: as letras nas dicas são da corr
 | 100 | JUMPING MAN: composição da zetaplastia nos desenhos | técnica, figura | cap. 48, p. 1878 (pista) | mao / Retalhos e cobertura cutânea | 15 | mao-2260 | publicada (figura descrita em texto) |
 
 Lotes: 01 (1, 87, 2, 20, 39) · 02 (76, 77, 38, 19, 78) · 03 (91, 40, 79, 34, 37) · 04 (41, 58, 3, 21, 4) · 05 (22, 42, 59, 75, 80) · 06 (86, 23, 43, 92, 5) · 07 (14, 6, 24, 33, 44) · 08 (61, 85, 90, 46, 8) · 09 (89, 9, 26, 63, 27) · 10 (47, 64, 65, 95, 10) · 11 (28, 82, 11, 29, 48) · 12 (66, 12, 30, 49, 67) · 13 (68, 31, 50, 13, 57) · 14 (32, 51, 71, 52, 70) · 15 (83, 84, 100, 53, 69) · 16 (99, 15, 98, 54, 16) · 17 (35, 96, 97, 17, 36) · 18 (88, 55, 74, 18) · 19 (25, 45, 93, 60, 62) · 20 (81, 56, 7, 72, 73) · 21 (94).
+
+## SIMÃO 2024
+
+Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2024 - sem resposta.pdf` (texto com marcas bidi; separado por
+script próprio) para `.oq/provas/simao-2024.json`. Respostas da correção em [dicas/simao-2024.md](dicas/simao-2024.md);
+14, 15, 34, 46 e 60 sem resposta única no material (resolver pelo Green). Lotes em
+`~/OrtoQuestoes-Biblioteca/lotes/simao-2024/`, no modelo de miniaula.
+
+| Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
+|---|---|---|---|---|---|---|---|
+| 2 | Braquidactilia: segundo osso mais encurtado | número/fato | cap. 36, p. 1392 a 1394 | mao / Outras malformações congênitas | 01 | mao-2278 | publicada |
+| 4 | PATTERSON: tipo IV (amputação) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2279 | publicada |
+| 16 | Polidactilia central: dedo mais envolvido | fato | cap. 36, p. 1387 e 1389 | mao / Sindactilia e polidactilia | 01 | mao-2280 | publicada |
+| 86 | PATTERSON: acrossindactilia pelo achado clínico (2º ângulo) | classificação | cap. 36, p. 1404 e 1421 | mao / Outras malformações congênitas | 01 | mao-2281 | publicada |
+| 90 | Macrodactilia: histologia (menos glândulas sudoríparas) | fato | cap. 36, p. 1438 e 1439 | mao / Outras malformações congênitas | 01 | mao-2282 | publicada |
