@@ -12,6 +12,10 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
   figura ou tabela, sem página. No lote, `pag=None`.
 - **Liberdade total (26/10/2026):** ordem, quantidade e formato flexíveis; não pedir confirmação.
 - O comentário pode citar o resumo, o livro e o capítulo e orientar o aluno a fazer a questão oficial.
+- **Página para o Google (27/10/2026):** todo resumo ganha página pública em `/resumos/<id>/`, gerada no deploy por
+  `scripts/gerar_resumos_seo.py`. O título, a descrição, o JSON-LD (`keywords`) e o parágrafo "Para quem é" trazem as
+  buscas do residente: "resumo Rockwood infantil/adulto", "resumo de ortopedia", "residência em ortopedia", TEOT, TARO e
+  R4. Nada a fazer por capítulo além de publicar o resumo; livro novo pede ajuste em `livro_curto()`.
 
 ## Onde estão as coisas
 
