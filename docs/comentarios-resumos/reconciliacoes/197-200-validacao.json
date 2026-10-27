@@ -1,0 +1,412 @@
+{
+  "base": "60060d9c89fccde96787e8389275c68ee5b42506",
+  "lotes": {
+    "197": {
+      "revisadas": [
+        "mao-1782",
+        "mao-1783",
+        "mao-1786",
+        "mao-1951"
+      ],
+      "lacunas": [
+        "mao-1773",
+        "mao-1779",
+        "mao-1785",
+        "mao-1946",
+        "mao-1947",
+        "mao-1949"
+      ]
+    },
+    "198": {
+      "revisadas": [
+        "mao-1954",
+        "mao-2035",
+        "mao-2046"
+      ],
+      "lacunas": [
+        "mao-1952",
+        "mao-1953",
+        "mao-1955",
+        "mao-2036",
+        "mao-2037",
+        "mao-2038",
+        "mao-2045"
+      ]
+    },
+    "199": {
+      "revisadas": [
+        "mao-2047",
+        "mao-2048",
+        "mao-2199",
+        "mao-2208"
+      ],
+      "lacunas": [
+        "mao-2124",
+        "mao-2125",
+        "mao-2129",
+        "mao-2130",
+        "mao-2131",
+        "mao-2207"
+      ]
+    },
+    "200": {
+      "revisadas": [
+        "mao-2209",
+        "mao-2213",
+        "mao-2222"
+      ],
+      "lacunas": [
+        "mao-2210",
+        "mao-2211",
+        "mao-2212",
+        "mao-2219",
+        "mao-2220",
+        "mao-2221",
+        "mao-2224"
+      ]
+    }
+  },
+  "fonteConsultada": {
+    "resumo": "rockwood10-44-carpo",
+    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+    "markdownSha256": "ec093a84cf7e02d91d3cd95633d53bb4210ab58a9bbaa92a300b190d7854dc35",
+    "leitura": "Resumo inteiro de761linhas relido em cinco intervalos consecutivos1–145,146–285,286–440,441–595,596–761. Corpos,tabelas e legendas separados das notas contextuais. Nenhum livro primário consultado nesta passagem."
+  },
+  "referenciasHistoricas": {
+    "mao-1773": {
+      "comentarioAnteriorSha256": "349b7b7ae0e926f78ae12f0719f7562de994a3040acba5f26031014d78823dc5",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 716 e 717",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 545"
+      ]
+    },
+    "mao-1779": {
+      "comentarioAnteriorSha256": "f011eb9c6abba8be546f634a94529a902d93d1e7c21640ca6aabe64db946110c",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 497, 508 e 510"
+      ]
+    },
+    "mao-1782": {
+      "comentarioAnteriorSha256": "2e66aacb46822092222f87e853ae6b0a0b170e0f491ee5a71a2f0a9d065eed61",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 679, 695 e 697"
+      ]
+    },
+    "mao-1783": {
+      "comentarioAnteriorSha256": "d4ca9c8d3f13762bb5281a8dd813b19b4979d0151db1a506e28b9ab0a52cfcad",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 513, 518, 519, 524 e 526"
+      ]
+    },
+    "mao-1785": {
+      "comentarioAnteriorSha256": "39225d8be8263b73c92419ca19dfc3456d0be24aff04d0d51405bd62a4ae9d71",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 508, 509 e 510"
+      ]
+    },
+    "mao-1786": {
+      "comentarioAnteriorSha256": "0a05833f079c37ece3102ef1687531b932498e8b64cb6606f16b0deeafebab2c",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 682 e 683",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 41 (Fraturas da mão, punho e antebraço na criança), p. 1616 e 1621"
+      ]
+    },
+    "mao-1946": {
+      "comentarioAnteriorSha256": "0764e9fc9da4adc3a1909719876ab1b637c177fca5a54866b71d99786b4b92ad",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 677 a 680"
+      ]
+    },
+    "mao-1947": {
+      "comentarioAnteriorSha256": "61ccd5f8fbe16fd57da66c26d4b60ddbfba6c3bd96ae2a78ae94d973497c6f8d",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 678 a 682"
+      ]
+    },
+    "mao-1949": {
+      "comentarioAnteriorSha256": "e15217640fefc83a292831ee9e26fd6082fd737fe5be94fca44ae97da835e148",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 678"
+      ]
+    },
+    "mao-1951": {
+      "comentarioAnteriorSha256": "967ae6205ab96654a8de002da2ddfa9ec3723644e5e17583b53245cebf0aa51e",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade Carpal), p. 512 a 514"
+      ]
+    },
+    "mao-1952": {
+      "comentarioAnteriorSha256": "fcb6e749f0b9e1e6e16a7670e874fec0cebfdfdac758f4de4cd3ec84c7c011ff",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade Carpal), p. 537 a 539"
+      ]
+    },
+    "mao-1953": {
+      "comentarioAnteriorSha256": "47e2b95d046e35d5efc5c542d0c9626cb06568bdff6bc65a14f92625c27a79c0",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade Carpal), p. 491, 492, 499 e 500"
+      ]
+    },
+    "mao-1954": {
+      "comentarioAnteriorSha256": "a3c0a8ac56150008b3bed4f7ae638c1278b3f175ae8a4ddd9f9e316e0b309f64",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade Carpal), p. 492 e 514"
+      ]
+    },
+    "mao-1955": {
+      "comentarioAnteriorSha256": "707c65f63f42783f9d531e222a806def5480cc932d1e97958df2276d51d5de39",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade Carpal), p. 491 a 493 e 512 a 514"
+      ]
+    },
+    "mao-2035": {
+      "comentarioAnteriorSha256": "26ce2ca588d2963de1e5a56f8a9bd96b38940ea7bca41199a209017492afc7fc",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 12 (Artrodese e artroplastia do punho), p. 443, 446, 450 e 453"
+      ]
+    },
+    "mao-2036": {
+      "comentarioAnteriorSha256": "c9ec4c180aec4830dd3974cc9da1466cc9a0a0c4dc48cd5e2f3fc8cb72cc2cb3",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501, 537 e 541"
+      ]
+    },
+    "mao-2037": {
+      "comentarioAnteriorSha256": "020afc687d3cfab04e61260390b0be6205e32d661633627aef80ace968730261",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 512 a 514"
+      ]
+    },
+    "mao-2038": {
+      "comentarioAnteriorSha256": "3fbf1eefc8d6a8b984ca70c31229f2d920f68da838b387dd60f2a5858294ed64",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501 e 502"
+      ]
+    },
+    "mao-2045": {
+      "comentarioAnteriorSha256": "7515671fd024fd078a9e94f53e43e96ced6849efd619fbc94dcdd235be2e57e7",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 696"
+      ]
+    },
+    "mao-2046": {
+      "comentarioAnteriorSha256": "b0ac4bf6c7048e3ecae3ad4ca15ad5766b0f40426c4675c563d7df7662beda05",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 680 a 682"
+      ]
+    },
+    "mao-2047": {
+      "comentarioAnteriorSha256": "505e3850ff07f6633099075d92f8775f97475bc82d4810dc2f9b5854faaebe77",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 689"
+      ]
+    },
+    "mao-2048": {
+      "comentarioAnteriorSha256": "f676e0509a5c03f413c41a80e86deefb8f042f921ce7766483d869ec8ae6fe34",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 712 (Tabela 16.5)"
+      ]
+    },
+    "mao-2124": {
+      "comentarioAnteriorSha256": "e37f27f68b159342b05462787cbcfc2227aac53cf35194d598d91e61f056b478",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501 e 539 (Fig. 13.50)"
+      ]
+    },
+    "mao-2125": {
+      "comentarioAnteriorSha256": "7f2c54e8bacb41d5e078c775a207a991bad37b84221d9c07fb18dbb24fb37446",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501 e 539"
+      ]
+    },
+    "mao-2129": {
+      "comentarioAnteriorSha256": "5fe2fcc2d8959559a0584d75e955fc0ab9563c7519af03114ef77d5061415e00",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 15 (Fraturas do rádio distal), p. 607, 608 e 615 (Fig. 15.15)"
+      ]
+    },
+    "mao-2130": {
+      "comentarioAnteriorSha256": "768d8b1afbb45f5817281d13a594999e5a6f880ff32a9b4ffc8d119b81dd16b3",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 696 (Tabelas 16.2 e 16.4)"
+      ]
+    },
+    "mao-2131": {
+      "comentarioAnteriorSha256": "5b84cd307a76c00a350c7ca7e5d9d43852986b42880bb931df5831b6316c93c7",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas dos ossos do carpo), p. 712, 714, 718, 719, 720 e 723 (Fig. 16.46)"
+      ]
+    },
+    "mao-2199": {
+      "comentarioAnteriorSha256": "588eb9e20af2ab5c1ad7517e42088c1fdf56f785120575b5ebe10919c651ce58",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 508 a 510, Fig. 13.22"
+      ]
+    },
+    "mao-2207": {
+      "comentarioAnteriorSha256": "c581051d5b8980986dd78fbb462a00ab6989b239a356a5ebf51aedcf0a350867",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 12 (Artrodese e artroplastia do punho), p. 443 e 444"
+      ]
+    },
+    "mao-2208": {
+      "comentarioAnteriorSha256": "ba2cff9b862e9ebbf8c47817508699a6bc9dc43c87bc364406a6b583d90c733d",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 501 e 502"
+      ]
+    },
+    "mao-2209": {
+      "comentarioAnteriorSha256": "b7fe9e1458c72f59c6164f3751a762ca48dda59b74ec1abc0fed1c9cea9a5ec4",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 525 e 526"
+      ]
+    },
+    "mao-2210": {
+      "comentarioAnteriorSha256": "e1260c4f65544430f1edd221bdf737ed1a45bf7a1785c8b908d63544d7b06dbd",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 496"
+      ]
+    },
+    "mao-2211": {
+      "comentarioAnteriorSha256": "7aa9aba39405d1d993a2aeef0b5910a057883582223688ff0f6603cb080abbe4",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 544 (Fig. 13.54)"
+      ]
+    },
+    "mao-2212": {
+      "comentarioAnteriorSha256": "a28976dafa50118acf1eb4f4ddaabdc9c84d12c7e25ffe2e79a4a327ca4eef26",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 490 (Fig. 13.3)"
+      ]
+    },
+    "mao-2213": {
+      "comentarioAnteriorSha256": "2dbb94b0e9e9d4bf6abee253896d50a41e2978015bba86d2be6209ce7522c37c",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 13 (Instabilidade do carpo), p. 512 a 514 (Tabela 13.5)"
+      ]
+    },
+    "mao-2219": {
+      "comentarioAnteriorSha256": "945fbe0f3f71fee9542e9e480d8634474a41a94ddfb3cea8bdffba8636184089",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas do escafoide e dos outros ossos do carpo), p. 724 (Fig. 16.52)"
+      ]
+    },
+    "mao-2220": {
+      "comentarioAnteriorSha256": "80d8d102383ffc1aa35b66f562c17bf21938c0c182b9195a4476a9d5d772c1ce",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas do escafoide e dos outros ossos do carpo), p. 680 (Fig. 16.7)"
+      ]
+    },
+    "mao-2221": {
+      "comentarioAnteriorSha256": "d4f8b50c5e18231f0f4ce53c9da1915d64a00c13d033aa285e415bfd60647bec",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas do escafoide e dos outros ossos do carpo), p. 706",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 46 (Enxerto ósseo vascularizado), p. 1801 e 1802"
+      ]
+    },
+    "mao-2222": {
+      "comentarioAnteriorSha256": "068f662779757a90a28190de4aafd6d85cf59d600ddd159cbe54e49e32b96136",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 16 (Fraturas do escafoide e dos outros ossos do carpo), p. 683 a 685 (Fig. 16.10)"
+      ]
+    },
+    "mao-2224": {
+      "comentarioAnteriorSha256": "e68fd0c801efd048dd70116366522897ad05d6d044775aa803f988aa239b160f",
+      "referenciasAnterioresNaoConferidasNestaPassagem": [
+        "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução)",
+        "Green's Operative Hand Surgery, 8ª ed., cap. 17 (Artroscopia do punho e da mão), p. 762 e 796"
+      ]
+    }
+  },
+  "escopo": "As140candidatas restantes deSIMÃO/SBCM pertencem ao inventário solicitado. A instrução atual do dono pede revisão de TODAS as questões por resumos, com baseResumo e sem páginas inventadas; aplicada como revisão secundária de conteúdo existente. Não são simulados novos nem conferência doGreen; referências anteriores ficam documentadas como histórico não verificado, sem serem usadas como prova.",
+  "preservacao": "Apenas14membros demao.json;demais bytes,IDs,enunciados,opções,gabaritos,revisão médica,59comentários concorrentes e26comentários sem cobertura preservados. Nenhuma figura nos40casos.",
+  "validacao": {
+    "fixtures": 14,
+    "acervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "replay": "14/14;26lacunas intactas;catálogo alheio e demais temas preservados",
+    "ui": {
+      "casos": 14,
+      "larguras": [
+        390,
+        1440
+      ],
+      "respostasELinksExatos": true
+    },
+    "logsSha256": {
+      "checks197199.log": "9e571118bc7fff70bea67983e51550e3e09ac91c757513e163002a42cc4c1781",
+      "checks197200.log": "7fd3e1971dc34f8c25e25e8201bf3c353868dbe32c5750394dbd9a78686b1584",
+      "ui197200.log": "b53c2ae5be5b3a936eb48f547a8c07fc225790fbe83a8cd7fcc9abc69a5ce948",
+      "aplicacao197199-fontes-completas.log": "fff28525d91992014ad145d2fd07549c6b8922b1a609b508bd81a43685d9f750",
+      "aplicacao200.log": "602403d64ff9fd987707e90cbcef1cee35d6f52b41389fe1bf24ba1950b8ff4b",
+      "preservacao197200.log": "2a1dc2160fa413169b5c84096dddde4abf0df48a4d78c1828c6f830d2b3abfdd",
+      "remotos196-inicial.json": "8a5f65dad202365dd2d9881a7443e086fca614d81c3ff6845a1e865d22a6a383",
+      "checks197200-final.log": "5b1e1676e3d8403a7aa63b01455be05d7ccfc7fb8a846f4bc48fe6480c3b7876",
+      "ui197200-mao-2046-final.log": "5877ba502386fb65b39b04c96122afc0580d516e0ffc1bb7ab896932c7e37e43",
+      "ajuste2046.log": "c9e472bd0cc8717237fd50322ebb72f8685a61d801b33491f2d21884a3931eeb",
+      "remotos197200-final.json": "8a5f65dad202365dd2d9881a7443e086fca614d81c3ff6845a1e865d22a6a383"
+    },
+    "ajusteFinal2046": "Redação do alerta e da aula sem instruções editoriais ao aluno;fixtures,acervo,build,replay14/14 eUI2046 nas duas larguras repetidos após o ajuste. npm test aprovado antes desse ajuste apenas textual."
+  },
+  "decisoes": [
+    "2046:25% do gabarito diverge dos30–40% do resumo;alerta e explicação de todas as alternativas,letra preservada.",
+    "2047:alternativa4–5mm contém4mm,valor que a fonte efetivamente sustenta;sem atribuir recomendação adicional de5mm.",
+    "1783/2209:duas tabelas deGarcia-Elias com numeração distinta;versão explicitada e tabelas incluídas nos blocos.",
+    "1779/1785:escafoide fletido/DISI não prova componente de pronação ausente do corpo.",
+    "1947:ausência de opioides no resumo não prova ausência de associação com não união.",
+    "196:3casos já revisados e7lacunas nosPRs concorrentes;nenhuma reaplicação."
+  ],
+  "inventario": {
+    "resumos": 38,
+    "ids": 2623,
+    "estados": {
+      "revisada": 1668,
+      "pendente-fonte": 766,
+      "duplicada": 87,
+      "pendente-figura-ausente": 2,
+      "pendente": 100
+    }
+  },
+  "proximo": 201,
+  "publicacao": "Validação local;CI do head,merge,guarda/deploy e produção ainda serão conferidos noPR."
+}

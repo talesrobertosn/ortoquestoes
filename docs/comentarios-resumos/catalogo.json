@@ -3,10 +3,10 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 140,
+  "pendente": 100,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 740,
-  "revisada": 1654
+  "pendente-fonte": 766,
+  "revisada": 1668
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -86,10 +86,10 @@
    "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
    "estados": {
     "duplicada": 2,
-    "pendente": 68,
+    "pendente": 28,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 72,
-    "revisada": 92
+    "pendente-fonte": 98,
+    "revisada": 106
    }
   },
   "rockwood10-45-fraturas-mao": {
@@ -25022,14 +25022,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 descreve fratura transversal da cintura do capitato, síndrome escafocapitato e associação com lesão perilunar; não estabelece qual traço é o MAIS FREQUENTE entre corpo transverso, polo proximal transverso, coronal oblíquo e parassagital, nem ranking quantitativo dessas alternativas. A descrição de um padrão possível não prova sua primazia. Falta comparação epidemiológica independente dos padrões; conservar D sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e991ec75ce334f2fd71e9fa764a0795c750d38232d4285a1b53c3f3f7d2fd28b"
+   "questaoSha256": "e991ec75ce334f2fd71e9fa764a0795c750d38232d4285a1b53c3f3f7d2fd28b",
+   "pendencia": "O corpo44 descreve fratura transversal da cintura do capitato, síndrome escafocapitato e associação com lesão perilunar; não estabelece qual traço é o MAIS FREQUENTE entre corpo transverso, polo proximal transverso, coronal oblíquo e parassagital, nem ranking quantitativo dessas alternativas. A descrição de um padrão possível não prova sua primazia. Falta comparação epidemiológica independente dos padrões; conservar D sem selo."
   },
   "mao-1779": {
    "tema": "mao",
@@ -25039,14 +25040,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 sustenta escafoide fletido, semilunar estendido pelo piramidal e aumento do ângulo escafossemilunar (DISI). Não explicita a PRONAÇÃO do escafoide na dissociação crônica, que integra a alternativaB. A pronação do fragmento distal mencionada como deformidade menos comum da consolidação viciosa e a supinação intercarpal do mecanismo de lesão são situações diferentes e não demonstram esse componente crônico. Falta cinemática tridimensional independente para conferir toda a alternativaB; letra intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "bb0f8c6a634cd6b94f26f18f8ec883e39ed48deb38557a6d0c1045b9145e7f06"
+   "questaoSha256": "bb0f8c6a634cd6b94f26f18f8ec883e39ed48deb38557a6d0c1045b9145e7f06",
+   "pendencia": "O corpo44 sustenta escafoide fletido, semilunar estendido pelo piramidal e aumento do ângulo escafossemilunar (DISI). Não explicita a PRONAÇÃO do escafoide na dissociação crônica, que integra a alternativaB. A pronação do fragmento distal mencionada como deformidade menos comum da consolidação viciosa e a supinação intercarpal do mecanismo de lesão são situações diferentes e não demonstram esse componente crônico. Falta cinemática tridimensional independente para conferir toda a alternativaB; letra intacta."
   },
   "mao-1782": {
    "tema": "mao",
@@ -25056,14 +25058,43 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "749645090a31cf9acd8c63e3a653b8064d76af88324955ac0b96af9452737c4f"
+   "questaoSha256": "749645090a31cf9acd8c63e3a653b8064d76af88324955ac0b96af9452737c4f",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: consolidação viciosa e pseudartrose"
+      ],
+      "blocos": [
+       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-700a724b",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-7dd29aa9",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-734985f3"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "9e62da65424ff8ec6147eef60a332b89cb3072cf48d31e918fed898e092d38ca"
+     }
+    ],
+    "questaoSha256": "749645090a31cf9acd8c63e3a653b8064d76af88324955ac0b96af9452737c4f",
+    "comentarioSha256": "c771eab540f94e4530c83471725fd5fc759ab0f3fbb0339bb7ff31a726acf315"
+   }
   },
   "mao-1783": {
    "tema": "mao",
@@ -25072,14 +25103,42 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "345ebac55ed36a06f6359359a407b62391f68cb8586d62e422f9ea4a8bfc6c00"
+   "questaoSha256": "345ebac55ed36a06f6359359a407b62391f68cb8586d62e422f9ea4a8bfc6c00",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-614919e2",
+       "dissociacao-escafossemilunar-f6a7a76b",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "dissociacao-escafossemilunar-6cbb5bca",
+       "dissociacao-escafossemilunar-dea04ab1",
+       "dissociacao-escafossemilunar-8935e6ce"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "bc916e182511cf7f9a9dfccda4354c8a2197530d4a479f6c51b5c35c20ff1d1a"
+     }
+    ],
+    "questaoSha256": "345ebac55ed36a06f6359359a407b62391f68cb8586d62e422f9ea4a8bfc6c00",
+    "comentarioSha256": "2d62f1166654009ddfd872566b0bc1b546da15fd1c3c14901634d9f6b016e182"
+   }
   },
   "mao-1785": {
    "tema": "mao",
@@ -25089,14 +25148,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 mostra o radioescafocapitato como tipoia, o escafoide que flete e a subluxação dorsal produzida pelo teste de Watson, além de limiares radiográficos e falsos positivos. Não descreve explicitamente PRONAÇÃO do escafoide nem permite equiparar sem ressalva subluxação provocada no teste à combinação cinemática espontânea da alternativaC. Falta fundamento independente desses componentes, não apenas o subtema em comum; C preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "fde287124f1310ba64582e4cd27ff4e1b2b392d41a778a21b727dcc4d932cf3a"
+   "questaoSha256": "fde287124f1310ba64582e4cd27ff4e1b2b392d41a778a21b727dcc4d932cf3a",
+   "pendencia": "O corpo44 mostra o radioescafocapitato como tipoia, o escafoide que flete e a subluxação dorsal produzida pelo teste de Watson, além de limiares radiográficos e falsos positivos. Não descreve explicitamente PRONAÇÃO do escafoide nem permite equiparar sem ressalva subluxação provocada no teste à combinação cinemática espontânea da alternativaC. Falta fundamento independente desses componentes, não apenas o subtema em comum; C preservada."
   },
   "mao-1786": {
    "tema": "mao",
@@ -25105,14 +25165,46 @@
    ],
    "prova": "SIMÃO",
    "ano": 2026,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "ad4533af9e3611aac3e5676c85c5d18e06e4420b98d90541d5d26e5b5216fc63"
+   "questaoSha256": "ad4533af9e3611aac3e5676c85c5d18e06e4420b98d90541d5d26e5b5216fc63",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: tratamento da fratura aguda",
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Escafoide: classificação de Herbert e Fisher",
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "escafoide-tratamento-da-fratura-aguda-867cbaae",
+       "escafoide-tratamento-da-fratura-aguda-3d1643fc",
+       "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
+       "escafoide-tratamento-da-fratura-aguda-056fbc49",
+       "escafoide-classificacao-de-herbert-e-fisher-adb2321c",
+       "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
+       "mayfield-e-a-luxacao-perilunar-05a279d4"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "cc1cb1b276f0c62b8bc92806a521288e55900f3af00631f6b46c6064229c31d6"
+     }
+    ],
+    "questaoSha256": "ad4533af9e3611aac3e5676c85c5d18e06e4420b98d90541d5d26e5b5216fc63",
+    "comentarioSha256": "75c489f31e18e3d722f749a465878cacf3e76802ee1eccf879f85773ff5239f4"
+   }
   },
   "mao-1795": {
    "tema": "mao",
@@ -25502,14 +25594,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 afirma que cintura é a localização mais comum. Não oferece comparação geral entre frequência do polo PROXIMAL e do DISTAL que sustente a ordem D. A tabela de Herbert distribui tipos diferentes (inclui oblíqua distal, cintura incompleta/completa etc.) e não deve ser convertida em ranking topográfico sem denominadores e agrupamentos equivalentes. Falta distribuição por região na mesma população; sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "0332db2477660123f41b3537acc60195343f3b6754eed36e3eb11c2fcbaed523"
+   "questaoSha256": "0332db2477660123f41b3537acc60195343f3b6754eed36e3eb11c2fcbaed523",
+   "pendencia": "O corpo44 afirma que cintura é a localização mais comum. Não oferece comparação geral entre frequência do polo PROXIMAL e do DISTAL que sustente a ordem D. A tabela de Herbert distribui tipos diferentes (inclui oblíqua distal, cintura incompleta/completa etc.) e não deve ser convertida em ranking topográfico sem denominadores e agrupamentos equivalentes. Falta distribuição por região na mesma população; sem selo."
   },
   "mao-1947": {
    "tema": "mao",
@@ -25518,14 +25611,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 sustenta instabilidade do carpo, desvio, polo proximal, atraso e tabagismo como fatores de não união e descreve bons resultados em lesões distais estáveis. Não avalia USO CRÔNICO DE OPIOIDES, alternativaC, nem permite concluir que sua associação com não união é inexistente só porque não o cita. Falta evidência independente para comparar esse fator com a instabilidade e conferir todas as alternativas; A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9ebca5a7f0de80cf2ef99348254b42547fb6d090f2b55cdd662235e18d6b1571"
+   "questaoSha256": "9ebca5a7f0de80cf2ef99348254b42547fb6d090f2b55cdd662235e18d6b1571",
+   "pendencia": "O corpo44 sustenta instabilidade do carpo, desvio, polo proximal, atraso e tabagismo como fatores de não união e descreve bons resultados em lesões distais estáveis. Não avalia USO CRÔNICO DE OPIOIDES, alternativaC, nem permite concluir que sua associação com não união é inexistente só porque não o cita. Falta evidência independente para comparar esse fator com a instabilidade e conferir todas as alternativas; A intacta."
   },
   "mao-1949": {
    "tema": "mao",
@@ -25534,14 +25628,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 descreve hiperextensão/desvio radial, cisalhamento da cintura, fragmentos proximais por avulsão escafossemilunar e supinação no arco perilunar clássico. Não fundamenta a afirmaçãoB de fratura do polo proximal POR SUBLUXAÇÃO DORSAL durante hiperextensão, nem detalha a distribuição cortical de tensão/compressão da opçãoA. Não transferir a subluxação do Watson para mecanismo de fratura. Falta biomecânica independente dessas afirmações; B preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "5468b4ace0127fbe72763602ba11f21c898a5385eca5ead7d36b23563bcc8638"
+   "questaoSha256": "5468b4ace0127fbe72763602ba11f21c898a5385eca5ead7d36b23563bcc8638",
+   "pendencia": "O corpo44 descreve hiperextensão/desvio radial, cisalhamento da cintura, fragmentos proximais por avulsão escafossemilunar e supinação no arco perilunar clássico. Não fundamenta a afirmaçãoB de fratura do polo proximal POR SUBLUXAÇÃO DORSAL durante hiperextensão, nem detalha a distribuição cortical de tensão/compressão da opçãoA. Não transferir a subluxação do Watson para mecanismo de fratura. Falta biomecânica independente dessas afirmações; B preservada."
   },
   "mao-1951": {
    "tema": "mao",
@@ -25550,14 +25645,39 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "66d3c03943a5a9ee9da7c2826edcf555cd5686cd968473cc7312701af5c5f1ec"
+   "questaoSha256": "66d3c03943a5a9ee9da7c2826edcf555cd5686cd968473cc7312701af5c5f1ec",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-614919e2",
+       "dissociacao-escafossemilunar-79d4b223",
+       "dissociacao-escafossemilunar-8935e6ce"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "6bb5a5cfe68c38ae4800c1f96644fb7b10e407c26fb9f7bb2deb98119d549e94"
+     }
+    ],
+    "questaoSha256": "66d3c03943a5a9ee9da7c2826edcf555cd5686cd968473cc7312701af5c5f1ec",
+    "comentarioSha256": "9a3a7e6d8f1a8e5fa992ff136d3c88992ed1a5dbaa1cf63df474885fb8e9db13"
+   }
   },
   "mao-1952": {
    "tema": "mao",
@@ -25566,14 +25686,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 define CIND pela integridade dentro das fileiras e falha entre elas ou entre carpo e rádio, mas não compara frequência da forma mediocárpica PURA com as formas radiocárpica e mista nem detalha a classificação da instabilidade da fileira proximal em mista. A ausência de ranking impede conferir plenamente B e a taxonomia exigida em C. Falta classificação/frequência independente; C preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "5222b3de24807984c7f0112fc30ef2043c8ac758dbb6c213170cb50360f1c633"
+   "questaoSha256": "5222b3de24807984c7f0112fc30ef2043c8ac758dbb6c213170cb50360f1c633",
+   "pendencia": "O corpo44 define CIND pela integridade dentro das fileiras e falha entre elas ou entre carpo e rádio, mas não compara frequência da forma mediocárpica PURA com as formas radiocárpica e mista nem detalha a classificação da instabilidade da fileira proximal em mista. A ausência de ranking impede conferir plenamente B e a taxonomia exigida em C. Falta classificação/frequência independente; C preservada."
   },
   "mao-1953": {
    "tema": "mao",
@@ -25582,14 +25703,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 identifica o mecanismo reverso e seu começo pelo lunopiramidal, mas não descreve a sequência radioescafolunar/Testut mais porção dorsal versus volar do escafolunar que separa as quatro opções. A sequência do Mayfield clássico não prova automaticamente a sequência final do reverso. Falta descrição independente desses ligamentos no padrão reverso; D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "be8f376785d55635255544868435e920ee6526a9655f9c445f812f4f5b0eed40"
+   "questaoSha256": "be8f376785d55635255544868435e920ee6526a9655f9c445f812f4f5b0eed40",
+   "pendencia": "O corpo44 identifica o mecanismo reverso e seu começo pelo lunopiramidal, mas não descreve a sequência radioescafolunar/Testut mais porção dorsal versus volar do escafolunar que separa as quatro opções. A sequência do Mayfield clássico não prova automaticamente a sequência final do reverso. Falta descrição independente desses ligamentos no padrão reverso; D intacta."
   },
   "mao-1954": {
    "tema": "mao",
@@ -25598,14 +25720,39 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "ed016acf6a308bdd0bcc94a026dc2df344e91cf2f2921d24d140c7526606c910"
+   "questaoSha256": "ed016acf6a308bdd0bcc94a026dc2df344e91cf2f2921d24d140c7526606c910",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-67e58eaf",
+       "dissociacao-escafossemilunar-1f9a739d",
+       "dissociacao-escafossemilunar-65f85568"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "cee886fecf07c48dc444dd75d9daf68aec3649683626f4feb62d5396d065c162"
+     }
+    ],
+    "questaoSha256": "ed016acf6a308bdd0bcc94a026dc2df344e91cf2f2921d24d140c7526606c910",
+    "comentarioSha256": "37de5ac1b2640a08710b84884cd3a2799a5bd63d90c5b201658824c296477d5e"
+   }
   },
   "mao-1955": {
    "tema": "mao",
@@ -25614,14 +25761,15 @@
    ],
    "prova": "SIMÃO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 define DCSS como confluência da cápsula dorsal, intercarpal dorsal e escafossemilunar. Isso não identifica de qual ligamento o septo SE ORIGINA, como pede a questão, nem distingue origem de estrutura participante da confluência (A e D participam). Falta descrição anatômica da origem/inserção independente, não apenas a lista de componentes; D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "5fd206da44c519e0a019254675a7c2c5a62e146d39cad1a316e0a79307d6820e"
+   "questaoSha256": "5fd206da44c519e0a019254675a7c2c5a62e146d39cad1a316e0a79307d6820e",
+   "pendencia": "O corpo44 define DCSS como confluência da cápsula dorsal, intercarpal dorsal e escafossemilunar. Isso não identifica de qual ligamento o septo SE ORIGINA, como pede a questão, nem distingue origem de estrutura participante da confluência (A e D participam). Falta descrição anatômica da origem/inserção independente, não apenas a lista de componentes; D intacta."
   },
   "mao-2027": {
    "tema": "mao",
@@ -25696,14 +25844,46 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e1c90a74af482919a3a9160e01a58e1d88a932477e59c9af08856919c701e7f1"
+   "questaoSha256": "e1c90a74af482919a3a9160e01a58e1d88a932477e59c9af08856919c701e7f1",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Artrose do colapso: SNAC e SLAC",
+       "Escafoide: consolidação viciosa e pseudartrose",
+       "Dissociação escafossemilunar",
+       "Mayfield e a luxação perilunar"
+      ],
+      "blocos": [
+       "artrose-do-colapso-snac-e-slac-cbb1d7e8",
+       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
+       "dissociacao-escafossemilunar-dea04ab1",
+       "artrose-do-colapso-snac-e-slac-a82703f6",
+       "artrose-do-colapso-snac-e-slac-db418f5b",
+       "artrose-do-colapso-snac-e-slac-118d45f0",
+       "mayfield-e-a-luxacao-perilunar-7a90dc33"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "6c03118b48e7f3e4560c313d164a5e34ba7a780774f70cd680b75cb74ef98395"
+     }
+    ],
+    "questaoSha256": "e1c90a74af482919a3a9160e01a58e1d88a932477e59c9af08856919c701e7f1",
+    "comentarioSha256": "ca3d3970a62bf4479c1ca209c18468fd103a09419b54b68b71348ad38cc9ea8b"
+   }
   },
   "mao-2036": {
    "tema": "mao",
@@ -25712,14 +25892,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A integridade dos ligamentos interósseos na CIND está coberta pelo corpo44. Contudo, ele não demonstra a frequência da forma mediocárpica PURA (C), a habitual ausência de sintomas (B) ou a divisão da instabilidade da fileira proximal em VISI/DISI/neutra (D). Não basta explicar A e contornar as outras afirmações como meras não definições. Falta fonte independente para essa comparação; A mantida sem selo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "7f1f0ec4ac506998ec4ee6cb7d07d74b74aa7b3fffb099fb75cc0da2bd505d37"
+   "questaoSha256": "7f1f0ec4ac506998ec4ee6cb7d07d74b74aa7b3fffb099fb75cc0da2bd505d37",
+   "pendencia": "A integridade dos ligamentos interósseos na CIND está coberta pelo corpo44. Contudo, ele não demonstra a frequência da forma mediocárpica PURA (C), a habitual ausência de sintomas (B) ou a divisão da instabilidade da fileira proximal em VISI/DISI/neutra (D). Não basta explicar A e contornar as outras afirmações como meras não definições. Falta fonte independente para essa comparação; A mantida sem selo."
   },
   "mao-2037": {
    "tema": "mao",
@@ -25729,14 +25910,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 apresenta a classificação EWAS e opções gerais para lesões parciais, mas não define em quais tipos o TREINO PROPRIOCEPTIVO DOS SUPINADORES é indicado ou contraindicado. Saber que IIIA é palmar e IIIB dorsal não prova a recomendação de reabilitação II/IIIA nem exclui os demais grupos. Falta protocolo biomecânico/terapêutico independente; C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "21a95e65f2f34d4e958fff03bb118e030f1f5caf0aa357b674386fb178fd1de8"
+   "questaoSha256": "21a95e65f2f34d4e958fff03bb118e030f1f5caf0aa357b674386fb178fd1de8",
+   "pendencia": "O corpo44 apresenta a classificação EWAS e opções gerais para lesões parciais, mas não define em quais tipos o TREINO PROPRIOCEPTIVO DOS SUPINADORES é indicado ou contraindicado. Saber que IIIA é palmar e IIIB dorsal não prova a recomendação de reabilitação II/IIIA nem exclui os demais grupos. Falta protocolo biomecânico/terapêutico independente; C intacta."
   },
   "mao-2038": {
    "tema": "mao",
@@ -25746,14 +25928,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 define instabilidade adaptativa e cita consolidação viciosa do rádio e Kienböck; não aborda PARALISIA CEREBRAL nem demonstra qual padrão se associa a ela entre as quatro opções. Definição geral de causa externa não autoriza atribuir a doença neuromuscular a uma categoria sem fonte clínica. Falta associação específica independente; D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "56d4f77bd648ec7fa288ed634a945fa62343141c500ef5fc8d0222db5c79bca1"
+   "questaoSha256": "56d4f77bd648ec7fa288ed634a945fa62343141c500ef5fc8d0222db5c79bca1",
+   "pendencia": "O corpo44 define instabilidade adaptativa e cita consolidação viciosa do rádio e Kienböck; não aborda PARALISIA CEREBRAL nem demonstra qual padrão se associa a ela entre as quatro opções. Definição geral de causa externa não autoriza atribuir a doença neuromuscular a uma categoria sem fonte clínica. Falta associação específica independente; D intacta."
   },
   "mao-2045": {
    "tema": "mao",
@@ -25762,14 +25945,15 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A classificação de SLADE E GEISSLER da pseudartrose e seu tipo com união fibrosa/linha mínima não aparecem no corpo44. HerbertD1 fibroso não equivale ao tipo2 de outro sistema. Falta quadro independente de Slade/Geissler que compare os tipos1–4; B preservada.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "8dfbcbf23732435516155ac9e6c2f26c99db2ba1d2b97c9896b05cd8a5ba887b"
+   "questaoSha256": "8dfbcbf23732435516155ac9e6c2f26c99db2ba1d2b97c9896b05cd8a5ba887b",
+   "pendencia": "A classificação de SLADE E GEISSLER da pseudartrose e seu tipo com união fibrosa/linha mínima não aparecem no corpo44. HerbertD1 fibroso não equivale ao tipo2 de outro sistema. Falta quadro independente de Slade/Geissler que compare os tipos1–4; B preservada."
   },
   "mao-2046": {
    "tema": "mao",
@@ -25779,14 +25963,41 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946"
+   "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: diagnóstico e imagem"
+      ],
+      "blocos": [
+       "escafoide-diagnostico-e-imagem-54713833",
+       "escafoide-diagnostico-e-imagem-b1203433",
+       "escafoide-diagnostico-e-imagem-8899eeb9",
+       "escafoide-diagnostico-e-imagem-2c167e09",
+       "escafoide-diagnostico-e-imagem-c1f614fc"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "ae56c93b2af8c822d3838dcc42c4ae90465077605a8a8a160bf2087ed7ae6111"
+     }
+    ],
+    "questaoSha256": "55a77f20c7ef16ee66c74bcbfddd3b95ce6f851a9b385f1cef96f963a67ae946",
+    "comentarioSha256": "961d8e052db0215ddfd68b7e2415ed82a70cff09e8ce1b200e48085c3b5f83c3"
+   }
   },
   "mao-2047": {
    "tema": "mao",
@@ -25795,14 +26006,39 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "5613a445db4d3204dd62343a1720b23d8d756d1fd414139b3d9e34681833ef1d"
+   "questaoSha256": "5613a445db4d3204dd62343a1720b23d8d756d1fd414139b3d9e34681833ef1d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: anatomia, irrigação e mecanismo",
+       "Escafoide: tratamento da fratura aguda"
+      ],
+      "blocos": [
+       "escafoide-anatomia-irrigacao-e-mecanismo-9df32e5e",
+       "escafoide-tratamento-da-fratura-aguda-9cdac99f"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "07573bebd2f769b069206e17640b30208edfea24af60cea1bf2443a250772465"
+     }
+    ],
+    "questaoSha256": "5613a445db4d3204dd62343a1720b23d8d756d1fd414139b3d9e34681833ef1d",
+    "comentarioSha256": "98b18bfecc31c8518fe77f50fc55de304e1cdeadf28ac9baa8d7d665721fe26f"
+   }
   },
   "mao-2048": {
    "tema": "mao",
@@ -25811,14 +26047,43 @@
    ],
    "prova": "SBCM",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "3139a0cb3d9310cb1602305210bcda4f93274f8adc33d6bc8c06b34adec83ff2"
+   "questaoSha256": "3139a0cb3d9310cb1602305210bcda4f93274f8adc33d6bc8c06b34adec83ff2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Como ler este capítulo",
+       "Fraturas dos outros ossos do carpo"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-6da1ccc3",
+       "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
+       "fraturas-dos-outros-ossos-do-carpo-a57392eb",
+       "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
+       "fraturas-dos-outros-ossos-do-carpo-7938f85e",
+       "fraturas-dos-outros-ossos-do-carpo-cade88e0"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "609bedae71b5d594069bef6bed8ec07c27d18a7b0424dbb3bedca8f8de90ca0f"
+     }
+    ],
+    "questaoSha256": "3139a0cb3d9310cb1602305210bcda4f93274f8adc33d6bc8c06b34adec83ff2",
+    "comentarioSha256": "d475996acd25ded4312718e425bf80674d2d731e1473a54c5bb91123718f61a9"
+   }
   },
   "mao-2114": {
    "tema": "mao",
@@ -25878,14 +26143,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 não descreve a graduação do teste de deslocamento mediocarpal de LICHTMAN. O Watson e a descrição geral de CIND não demonstram o grauIV como subluxação palmar que persiste após retirar a força, nem distinguem retorno espontâneo e controle voluntário. Falta descrição independente dos graus; C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "2c9e61f53017f8766b8204bbbb4ca8d91ed08162436d268c27480e3f99638c4c"
+   "questaoSha256": "2c9e61f53017f8766b8204bbbb4ca8d91ed08162436d268c27480e3f99638c4c",
+   "pendencia": "O corpo44 não descreve a graduação do teste de deslocamento mediocarpal de LICHTMAN. O Watson e a descrição geral de CIND não demonstram o grauIV como subluxação palmar que persiste após retirar a força, nem distinguem retorno espontâneo e controle voluntário. Falta descrição independente dos graus; C intacta."
   },
   "mao-2125": {
    "tema": "mao",
@@ -25894,14 +26160,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 relaciona frouxidão a falso positivo do Watson e instabilidade mediocárpica e define CIND, mas não estabelece que frouxidão seja a associação MAIS FREQUENTE da CIND entre os fatores oferecidos. Uma associação clínica não prova ranking. Falta comparação independente de frequência/etiologia da CIND; B mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "02cd5a3fd1ab29fc72e714443f2b7e9c727e03eb8c5dbea53f95c2e68407028b"
+   "questaoSha256": "02cd5a3fd1ab29fc72e714443f2b7e9c727e03eb8c5dbea53f95c2e68407028b",
+   "pendencia": "O corpo44 relaciona frouxidão a falso positivo do Watson e instabilidade mediocárpica e define CIND, mas não estabelece que frouxidão seja a associação MAIS FREQUENTE da CIND entre os fatores oferecidos. Uma associação clínica não prova ranking. Falta comparação independente de frequência/etiologia da CIND; B mantida."
   },
   "mao-2129": {
    "tema": "mao",
@@ -25911,14 +26178,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 descreve associações de lesão escafossemilunar com rádio distal e ressalvas sobre estiloide, mas não apresenta os tipos de FERNANDEZ da fratura distal do rádio nem a ligação do tipoII com a suspeita ligamentar. Falta classificação e associação independente para discriminar I/II/III/IV; C mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "c59e029fcd9fcce782d6b7a99205ca022307e887505018a6cabf740ed0becbf1"
+   "questaoSha256": "c59e029fcd9fcce782d6b7a99205ca022307e887505018a6cabf740ed0becbf1",
+   "pendencia": "O corpo44 descreve associações de lesão escafossemilunar com rádio distal e ressalvas sobre estiloide, mas não apresenta os tipos de FERNANDEZ da fratura distal do rádio nem a ligação do tipoII com a suspeita ligamentar. Falta classificação e associação independente para discriminar I/II/III/IV; C mantida."
   },
   "mao-2130": {
    "tema": "mao",
@@ -25927,14 +26195,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 não contém a classificação de SLADE E GEISSLER nem sua graduação pelos cistos de1–5mm. A descrição geral de cistos na pseudartrose não prova o tipo4 ou distingue3/5/6. Falta quadro independente de tipos e limites; A intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "bf91de0100ac7fd72c1cdad084f801c6abd3097b1c88f6e9eb576a1ce31d22c4"
+   "questaoSha256": "bf91de0100ac7fd72c1cdad084f801c6abd3097b1c88f6e9eb576a1ce31d22c4",
+   "pendencia": "O corpo44 não contém a classificação de SLADE E GEISSLER nem sua graduação pelos cistos de1–5mm. A descrição geral de cistos na pseudartrose não prova o tipo4 ou distingue3/5/6. Falta quadro independente de tipos e limites; A intacta."
   },
   "mao-2131": {
    "tema": "mao",
@@ -25943,14 +26212,15 @@
    ],
    "prova": "SBCM",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 sustenta fratura do hâmulo por raquete ou taco de golfe, mas não especifica DOMINANTE NO TÊNIS versus NÃO DOMINANTE NO GOLFE E BEISEBOL. Falta a comparação de dominância por modalidade, parte decisiva do enunciado; não acrescentá-la de memória ao reconhecer hamato. B mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "268ef81d99fcb508d7d901ef58b3bda699fa63d4a0450c3797f29b6a568d5552"
+   "questaoSha256": "268ef81d99fcb508d7d901ef58b3bda699fa63d4a0450c3797f29b6a568d5552",
+   "pendencia": "O corpo44 sustenta fratura do hâmulo por raquete ou taco de golfe, mas não especifica DOMINANTE NO TÊNIS versus NÃO DOMINANTE NO GOLFE E BEISEBOL. Falta a comparação de dominância por modalidade, parte decisiva do enunciado; não acrescentá-la de memória ao reconhecer hamato. B mantida."
   },
   "mao-2164": {
    "tema": "mao",
@@ -25992,14 +26262,37 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "9890b9f27c285056373b4ef1b24175f41032cd1fe52a32cef5ff9103c3176dfc"
+   "questaoSha256": "9890b9f27c285056373b4ef1b24175f41032cd1fe52a32cef5ff9103c3176dfc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-cade5531"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "7c814dcd494183078877c9d1a1b68f99afc3a2a5c65eaf28bd7fc8d02665c152"
+     }
+    ],
+    "questaoSha256": "9890b9f27c285056373b4ef1b24175f41032cd1fe52a32cef5ff9103c3176dfc",
+    "comentarioSha256": "852cd15c5b5685ab20ef9dae01df3e78793c703d6421d877dc6fa0f10dfd0877"
+   }
   },
   "mao-2200": {
    "tema": "mao",
@@ -26059,14 +26352,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O enunciado pede indicação da fusão escafocapitato NO GREEN. O resumo Rockwood44 descreve essa fusão em deformidade fixa escafossemilunar, mas não apresenta a lista de indicações do Green, nem compara pseudartrose do escafoide, Preiser, necrose do capitato e SLACII para esse procedimento. Falta fonte primária correspondente ou resumo que traga a comparação; D mantida, sem converter outra indicação em prova.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a1a0440b4a1a5835f83bbc6bd6e9b25f498fbac998c1f85af641e3929cb00acd"
+   "questaoSha256": "a1a0440b4a1a5835f83bbc6bd6e9b25f498fbac998c1f85af641e3929cb00acd",
+   "pendencia": "O enunciado pede indicação da fusão escafocapitato NO GREEN. O resumo Rockwood44 descreve essa fusão em deformidade fixa escafossemilunar, mas não apresenta a lista de indicações do Green, nem compara pseudartrose do escafoide, Preiser, necrose do capitato e SLACII para esse procedimento. Falta fonte primária correspondente ou resumo que traga a comparação; D mantida, sem converter outra indicação em prova."
   },
   "mao-2208": {
    "tema": "mao",
@@ -26076,14 +26370,44 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "3e1cb9964ac2f411fde2f4ae7f4ae4fda65c27314d7c13e11807405f234b2fcc"
+   "questaoSha256": "3e1cb9964ac2f411fde2f4ae7f4ae4fda65c27314d7c13e11807405f234b2fcc",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+       "Dissociação lunopiramidal"
+      ],
+      "blocos": [
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-c0065304",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-8638f558",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-ae523a5b",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-48fd364d",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb",
+       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+       "dissociacao-lunopiramidal-5eb7978d"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "948a5256e1637f964cbac95ff9525dbcd3712251ff12c8f262a00c8ce87d2619"
+     }
+    ],
+    "questaoSha256": "3e1cb9964ac2f411fde2f4ae7f4ae4fda65c27314d7c13e11807405f234b2fcc",
+    "comentarioSha256": "fd22a88af904a9f0ddd1eaacfa5a90413e31b5b19718286af797fe5f839bf4e1"
+   }
   },
   "mao-2209": {
    "tema": "mao",
@@ -26092,14 +26416,41 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "e23b35af1638d69afd0b795efff82affaa6d79ff2717975562e1a6d6b99b736b"
+   "questaoSha256": "e23b35af1638d69afd0b795efff82affaa6d79ff2717975562e1a6d6b99b736b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-614919e2",
+       "dissociacao-escafossemilunar-8935e6ce",
+       "dissociacao-escafossemilunar-f6a7a76b",
+       "dissociacao-escafossemilunar-6cbb5bca",
+       "dissociacao-escafossemilunar-dea04ab1"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "a2b143a796890c13175c9ac63a5d1d0fc97c4ebae1128b5847de91a959bf73a5"
+     }
+    ],
+    "questaoSha256": "e23b35af1638d69afd0b795efff82affaa6d79ff2717975562e1a6d6b99b736b",
+    "comentarioSha256": "ba0426c1f4b67c937add65f80f3f93634558f8cb0ffbeed164712b4d4bfba229"
+   }
   },
   "mao-2210": {
    "tema": "mao",
@@ -26108,14 +26459,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 não quantifica a distribuição de CARGA entre fossa do semilunar, fossa do escafoide, radioulnar distal e CFCT. As porcentagens que traz sobre flexoextensão medem contribuição de MOVIMENTO, não carga. Falta biomecânica independente para os35% e comparação das quatro estruturas; D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "3d4b77b31431a73e0c0aa0f679c5e31f2000f075639aa84d6d876e5aa04b6687"
+   "questaoSha256": "3d4b77b31431a73e0c0aa0f679c5e31f2000f075639aa84d6d876e5aa04b6687",
+   "pendencia": "O corpo44 não quantifica a distribuição de CARGA entre fossa do semilunar, fossa do escafoide, radioulnar distal e CFCT. As porcentagens que traz sobre flexoextensão medem contribuição de MOVIMENTO, não carga. Falta biomecânica independente para os35% e comparação das quatro estruturas; D intacta."
   },
   "mao-2211": {
    "tema": "mao",
@@ -26124,14 +26476,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 descreve reconstruções escafossemilunares e princípios de CIND, mas não a tenodese de extensor radial CURTO presa distalmente com túneis em capitato/piramidal para o braço ulnar arqueado e radiocárpico dorsal. Não confundir com Brunelli, que usa flexor radial. Falta técnica e indicação específica independente; A mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "f186b2c6865c7b4b43c7951da9270ebc20ba90753809ed0c5993d2f4e0cd0962"
+   "questaoSha256": "f186b2c6865c7b4b43c7951da9270ebc20ba90753809ed0c5993d2f4e0cd0962",
+   "pendencia": "O corpo44 descreve reconstruções escafossemilunares e princípios de CIND, mas não a tenodese de extensor radial CURTO presa distalmente com túneis em capitato/piramidal para o braço ulnar arqueado e radiocárpico dorsal. Não confundir com Brunelli, que usa flexor radial. Falta técnica e indicação específica independente; A mantida."
   },
   "mao-2212": {
    "tema": "mao",
@@ -26141,14 +26494,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 lista radioescafocapitato, radiolunares e ulnocapitato, mas não detalha a relação superficial e ANTERIOR de cada trajeto que permite escolher radiolunar longo versus curto na segunda descrição. Identificar o primeiro nome ou o ligamento ao capitato não confere toda a sequência. Falta anatomia topográfica independente dessas relações; C mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "a05d301067f1c45e348c54aea4ec58b39906da19f644860d0b80a5fa929b5806"
+   "questaoSha256": "a05d301067f1c45e348c54aea4ec58b39906da19f644860d0b80a5fa929b5806",
+   "pendencia": "O corpo44 lista radioescafocapitato, radiolunares e ulnocapitato, mas não detalha a relação superficial e ANTERIOR de cada trajeto que permite escolher radiolunar longo versus curto na segunda descrição. Identificar o primeiro nome ou o ligamento ao capitato não confere toda a sequência. Falta anatomia topográfica independente dessas relações; C mantida."
   },
   "mao-2213": {
    "tema": "mao",
@@ -26158,14 +26512,38 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "8bfa196dceaefd7b5c6c86ca0775d5b5519a1dd4765ce034ef71bcb5c6cec1da"
+   "questaoSha256": "8bfa196dceaefd7b5c6c86ca0775d5b5519a1dd4765ce034ef71bcb5c6cec1da",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Dissociação escafossemilunar"
+      ],
+      "blocos": [
+       "dissociacao-escafossemilunar-67e58eaf",
+       "dissociacao-escafossemilunar-2039b898"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "207181b9f4d2aad23e21247e82dd301ecb6698c26767e56442602a994fc5ee2a"
+     }
+    ],
+    "questaoSha256": "8bfa196dceaefd7b5c6c86ca0775d5b5519a1dd4765ce034ef71bcb5c6cec1da",
+    "comentarioSha256": "e4f68a2805902c5f3d96996097e5781d01aa8878e6ee41c40b237efb656c6627"
+   }
   },
   "mao-2219": {
    "tema": "mao",
@@ -26174,14 +26552,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 enumera Teisen/Hjarbaek como frontal palmar, osteocondral proximal, frontal dorsal, transversal do corpo e frontal transarticular. Não relaciona a fratura SAGITAL do corpo descrita na pergunta com o grupoIV nem esclarece equivalência dos planos com a nomenclatura da questão. Não trocar silenciosamente sagital por transversal a partir do gabarito. Falta classificação ilustrada independente ou definição dos planos; C intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "ac1f2be5232959cebcf9db933d0ed961c7ee7453f0649c602e747b0b9e044796"
+   "questaoSha256": "ac1f2be5232959cebcf9db933d0ed961c7ee7453f0649c602e747b0b9e044796",
+   "pendencia": "O corpo44 enumera Teisen/Hjarbaek como frontal palmar, osteocondral proximal, frontal dorsal, transversal do corpo e frontal transarticular. Não relaciona a fratura SAGITAL do corpo descrita na pergunta com o grupoIV nem esclarece equivalência dos planos com a nomenclatura da questão. Não trocar silenciosamente sagital por transversal a partir do gabarito. Falta classificação ilustrada independente ou definição dos planos; C intacta."
   },
   "mao-2220": {
    "tema": "mao",
@@ -26190,14 +26569,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 descreve PA com desvio ulnar e incidências especiais, mas não exige MÃO FECHADA em vez de dedos estendidos na incidência própria do escafoide. Punho cerrado com lápis é apresentado para estresse escafossemilunar e não prova o posicionamento da fratura do escafoide. Falta protocolo radiográfico independente que discrimine B/D; D intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "dd423f68b368f2ee56dc1c0be0c733470e5d75b57aad5156bee3e5a0c171fae0"
+   "questaoSha256": "dd423f68b368f2ee56dc1c0be0c733470e5d75b57aad5156bee3e5a0c171fae0",
+   "pendencia": "O corpo44 descreve PA com desvio ulnar e incidências especiais, mas não exige MÃO FECHADA em vez de dedos estendidos na incidência própria do escafoide. Punho cerrado com lápis é apresentado para estresse escafossemilunar e não prova o posicionamento da fratura do escafoide. Falta protocolo radiográfico independente que discrimine B/D; D intacta."
   },
   "mao-2221": {
    "tema": "mao",
@@ -26207,14 +26587,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 cita o côndilo femoral medial como fonte de enxerto vascularizado, mas não define seu PEDÍCULO arterial nem compara genicular descendente/ramo articular com genicular inferior, femoral profunda e poplítea. Falta anatomia vascular independente do enxerto; C mantida.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "1cba8555fdf57a3bedbdd9296413887318e1af22e123ca4b33e4d185ffb24815"
+   "questaoSha256": "1cba8555fdf57a3bedbdd9296413887318e1af22e123ca4b33e4d185ffb24815",
+   "pendencia": "O corpo44 cita o côndilo femoral medial como fonte de enxerto vascularizado, mas não define seu PEDÍCULO arterial nem compara genicular descendente/ramo articular com genicular inferior, femoral profunda e poplítea. Falta anatomia vascular independente do enxerto; C mantida."
   },
   "mao-2222": {
    "tema": "mao",
@@ -26223,14 +26604,40 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "40ec3c45ed2153be3806e2ad12039a4323b45849f79bde08cbd2daa9059d1aa9"
+   "questaoSha256": "40ec3c45ed2153be3806e2ad12039a4323b45849f79bde08cbd2daa9059d1aa9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-44-carpo",
+      "titulo": "Fraturas e luxações do carpo",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+      "secoes": [
+       "Escafoide: tratamento da fratura aguda"
+      ],
+      "blocos": [
+       "escafoide-tratamento-da-fratura-aguda-c114353d",
+       "escafoide-tratamento-da-fratura-aguda-594f812e",
+       "escafoide-tratamento-da-fratura-aguda-dcc89a77",
+       "escafoide-tratamento-da-fratura-aguda-056fbc49"
+      ],
+      "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+      "trechosSha256": "62d3f9d7115e3a740a63b4aac362b6f5167436bd58ea01b525052e853f6e54a6"
+     }
+    ],
+    "questaoSha256": "40ec3c45ed2153be3806e2ad12039a4323b45849f79bde08cbd2daa9059d1aa9",
+    "comentarioSha256": "2f629720ec732b694acacc28d12390f9cb26acd4f96e7222eb78446749b35c7e"
+   }
   },
   "mao-2224": {
    "tema": "mao",
@@ -26240,14 +26647,15 @@
    ],
    "prova": "SBCM",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo44 descreve artroscopia seca com portal mediocárpico ulnar para ver e radial para trabalhar na redução do escafoide, mas não compara especificamente a visão do POLO PROXIMAL por MCU com6R,6U eMCR. Uma orientação geral não prova melhor visualização desse fragmento entre os quatro portais. Falta descrição/figura artroscópica específica; B intacta.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-44-carpo"
    ],
-   "questaoSha256": "8fb6e3979174feefb88ed632ae30c9a5c14037ce5355f72dc78acbe71439a9e4"
+   "questaoSha256": "8fb6e3979174feefb88ed632ae30c9a5c14037ce5355f72dc78acbe71439a9e4",
+   "pendencia": "O corpo44 descreve artroscopia seca com portal mediocárpico ulnar para ver e radial para trabalhar na redução do escafoide, mas não compara especificamente a visão do POLO PROXIMAL por MCU com6R,6U eMCR. Uma orientação geral não prova melhor visualização desse fragmento entre os quatro portais. Falta descrição/figura artroscópica específica; B intacta."
   },
   "mao-2251": {
    "tema": "mao",

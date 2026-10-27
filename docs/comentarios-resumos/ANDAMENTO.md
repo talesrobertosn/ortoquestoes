@@ -5,10 +5,10 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 140 |
+| pendente | 100 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 740 |
-| revisada | 1654 |
+| pendente-fonte | 766 |
+| revisada | 1668 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -22,7 +22,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fratura da diáfise do úmero (`rockwood10-37-diafise-umero`) | 39 | 0 | 13 |
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 106 | 0 | 79 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 72 | 0 | 32 |
-| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 92 | 0 | 143 |
+| Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 106 | 0 | 129 |
 | Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 123 | 0 | 124 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 107 | 0 | 25 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 86 | 0 | 42 |

@@ -1,0 +1,174 @@
+{
+  "baseAnterior": "b3123e4bc5be203360f931b40e8748f952f7737a",
+  "baseAtual": "60060d9c89fccde96787e8389275c68ee5b42506",
+  "prs": [
+    588,
+    589
+  ],
+  "commitsConferidos": {
+    "588": [
+      "365adbd1f224e0ca8befc8c86b2f2392022061dc",
+      "36e056b94116520f8ab89f5c2e7d38ed4e695b27",
+      "597e2f32ac4060570896f23fa0aa0b1c29eb9735",
+      "cc976907861ebbd9e753d742cc6cc47adb0b1fe3",
+      "649170edfd8f9914075767bf0e0630497fecb9e9",
+      "82e3f3c48303fc1fa29405b53095e6bf4cb7dbf3"
+    ],
+    "589": [
+      "3248d25b216d26821f44d8c14590418f86e8bf58"
+    ]
+  },
+  "publicacaoConferida": {
+    "588": {
+      "head": "82e3f3c48303fc1fa29405b53095e6bf4cb7dbf3",
+      "merge": "da0747e0d5a5dc90f38ebb0044556fb944fa35bd"
+    },
+    "589": {
+      "head": "3248d25b216d26821f44d8c14590418f86e8bf58",
+      "merge": "60060d9c89fccde96787e8389275c68ee5b42506"
+    }
+  },
+  "pagesAtual": 40546547536,
+  "comentariosPreservados": {
+    "coluna": [
+      "coluna-0165",
+      "coluna-0216",
+      "coluna-0281"
+    ],
+    "conceitos-basicos": [
+      "conceitos-basicos-0329"
+    ],
+    "joelho": [
+      "joelho-0057",
+      "joelho-0284"
+    ],
+    "mao": [
+      "mao-0720",
+      "mao-0770",
+      "mao-0823",
+      "mao-1026",
+      "mao-1046",
+      "mao-1137",
+      "mao-1192",
+      "mao-1462",
+      "mao-1528"
+    ],
+    "ombro-cotovelo": [
+      "ombro-cotovelo-0306",
+      "ombro-cotovelo-0510",
+      "ombro-cotovelo-0549"
+    ],
+    "pe-tornozelo": [
+      "pe-tornozelo-0096",
+      "pe-tornozelo-0247",
+      "pe-tornozelo-0282",
+      "pe-tornozelo-0295",
+      "pe-tornozelo-0348"
+    ],
+    "pediatria": [
+      "pediatria-0066",
+      "pediatria-0585",
+      "pediatria-0643",
+      "pediatria-0846",
+      "pediatria-1079"
+    ],
+    "quadril": [
+      "quadril-0229",
+      "quadril-0232",
+      "quadril-0418",
+      "quadril-0515"
+    ],
+    "trauma": [
+      "trauma-0038",
+      "trauma-0126",
+      "trauma-0148",
+      "trauma-0193",
+      "trauma-0267",
+      "trauma-0280",
+      "trauma-0320",
+      "trauma-0472",
+      "trauma-0541",
+      "trauma-0664",
+      "trauma-0763",
+      "trauma-0812",
+      "trauma-0828",
+      "trauma-0905",
+      "trauma-0949",
+      "trauma-1015",
+      "trauma-1033",
+      "trauma-1061",
+      "trauma-1064",
+      "trauma-1074",
+      "trauma-1102",
+      "trauma-1148",
+      "trauma-1206",
+      "trauma-1720",
+      "trauma-1729",
+      "trauma-1730",
+      "trauma-1731"
+    ]
+  },
+  "lote196JaTratadoRemotamente": {
+    "pediatria-0478": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida (lesão metafisária do canto na tíbia distal do lactente). O resumo de fise distal do úmero trata maus-tratos só no descolamento do úmero distal; a lesão metafisária clássica (corner fracture), Looser e raquitismo não estão nos resumos."
+    },
+    "pediatria-0561": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "f2888818a66e4cc08a457a9439339539364e81a1d053b2a4b7186f13900b9031",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida (manobra de redução do quadril). Luxação traumática do quadril na criança e as manobras de Allis, Stimson e Bigelow não estão nos resumos publicados."
+    },
+    "pediatria-0595": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida (úmero proximal do adolescente com desvio total). Indicações de tratamento da fratura do úmero proximal na criança não estão nos resumos (o de epidemiologia só cita a curva de incidência)."
+    },
+    "pediatria-0708": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "9011bdceddb0409faad5b3dd123d5f16239ac1a6383627e0d3a68f736e281d61",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida (técnica de redução do colo do rádio). Metaizeau, Israeli, Jeffrey e Wallace não estão descritos em nenhum resumo publicado."
+    },
+    "pediatria-0846": {
+      "estado": "revisada",
+      "questaoSha256Atual": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e",
+      "hashSelecaoPreservado": true,
+      "pendencia": null
+    },
+    "pediatria-0925": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "75ee8ffb4dee87b4e1913d60e94c5a885e83cde20802b856578a668b4bf69bf6",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida (Monteggia infantil). A classificação de Letts não está nos resumos publicados; sem gabarito no acervo."
+    },
+    "pediatria-0927": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "26ba136d331050866f65dc331b48f68e83e66e4be5d29fa96ba4996edda2fc59",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida, mas de baixa resolução e sem gabarito no acervo; o resumo de côndilo lateral não permite reconhecer a lesão mostrada nem sustenta resposta única entre tróclea, côndilo lateral, olécrano e supracondiliana."
+    },
+    "pediatria-0934": {
+      "estado": "pendente-fonte",
+      "questaoSha256Atual": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c",
+      "hashSelecaoPreservado": true,
+      "pendencia": "Imagem conferida (manobra de redução do colo do rádio). Patterson, Kaufman, Jeffrey e Israeli não estão descritos nos resumos; sem gabarito no acervo."
+    },
+    "trauma-1074": {
+      "estado": "revisada",
+      "questaoSha256Atual": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a",
+      "hashSelecaoPreservado": true,
+      "pendencia": null
+    },
+    "ombro-cotovelo-0306": {
+      "estado": "revisada",
+      "questaoSha256Atual": "a3152357098bff400af3b3549c0d1125db9b1c235cae31d41b5573e8c9bbd23a",
+      "hashSelecaoPreservado": true,
+      "pendencia": null
+    }
+  },
+  "reaplicacao196": false
+}

@@ -1,0 +1,157 @@
+{
+  "mao-2047": {
+    "questaoSha256": "5613a445db4d3204dd62343a1720b23d8d756d1fd414139b3d9e34681833ef1d",
+    "comentarioAnteriorSha256": "505e3850ff07f6633099075d92f8775f97475bc82d4810dc2f9b5854faaebe77",
+    "comentario": {
+      "conceito": "Na fixação do escafoide, o comprimento medido com o fio-guia não deve ser transferido integralmente para o parafuso. O resumo orienta **subtrair 4 mm** da medida. Entre as faixas oferecidas, esse valor está em **4 a 5 mm**, a alternativa C (Rockwood adultos, 10ª ed., cap. 44, fixação percutânea).\n\nO cuidado decorre da geometria do osso: mais de 80% de sua superfície é cartilagem, e o parafuso precisa permanecer dentro dos limites ósseos, sem ficar saliente na articulação. A medida do fio informa o trajeto; a escolha do implante precisa reservar espaço para enterrá-lo de maneira adequada. Não é uma autorização para encostar a extremidade na cartilagem.\n\nA técnica também exige controle em várias incidências para conferir trajetória e limites. O resumo recomenda pelo menos AP, perfil e oblíquas em pronação e supinação, além de broquear mesmo com parafuso autoperfurante, evitando afastar o traço. Nas instáveis, pode-se acrescentar um fio antirrotatório. Esses cuidados protegem a redução enquanto se obtém compressão.\n\nA faixa da alternativa não deve ampliar a regra da fonte: o número efetivamente lido foi **4 mm**, não uma recomendação indistinta de retirar qualquer valor entre 4 e 5 mm. O objetivo é combinar segurança articular com compra óssea e estabilidade, usando a medida e a posição real de cada fragmento.",
+      "correta": "**Correta: C (4 a 5 mm menor).** A faixa inclui os 4 mm que o resumo manda subtrair da medida do fio-guia. O fundamento é deixar o implante dentro do osso; a fonte consultada sustenta especificamente 4 mm, sem estabelecer 5 mm como regra adicional.",
+      "incorretas": {
+        "A": "Usar a medida integral elimina a reserva indicada e aproxima a extremidade do implante do limite cartilaginoso. “Chegar ao limite” não é sinônimo de fixação segura: o escafoide articula com vários ossos e uma saliência pode causar conflito. A orientação lida exige uma subtração.",
+        "B": "Retirar apenas 2 a 3 mm não reproduz a margem de 4 mm indicada no resumo. Não se deve escolher a opção só porque o parafuso ficaria um pouco menor que o fio. A pergunta cobra a diferença numérica da técnica descrita.",
+        "D": "A subtração de 8 a 10 mm é bem maior que a indicada e pode reduzir desnecessariamente o comprimento de implante disponível para fixação. O resumo não recomenda compensar o risco articular com um parafuso arbitrariamente curto: orienta medir, subtrair 4 mm e conferir o trajeto por imagem."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: tratamento da fratura aguda."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Escafoide: anatomia, irrigação e mecanismo",
+          "Escafoide: tratamento da fratura aguda"
+        ],
+        "blocos": [
+          "escafoide-anatomia-irrigacao-e-mecanismo-9df32e5e",
+          "escafoide-tratamento-da-fratura-aguda-9cdac99f"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "07573bebd2f769b069206e17640b30208edfea24af60cea1bf2443a250772465"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2048": {
+    "questaoSha256": "3139a0cb3d9310cb1602305210bcda4f93274f8adc33d6bc8c06b34adec83ff2",
+    "comentarioAnteriorSha256": "f676e0509a5c03f413c41a80e86deefb8f042f921ce7766483d869ec8ae6fe34",
+    "comentario": {
+      "conceito": "Excluindo o escafoide, o osso do carpo mais fraturado é o **piramidal**. O resumo o descreve como a segunda fratura mais comum do carpo, e escafoide e piramidal, juntos, representam mais de 90% dessas fraturas. A resposta depende de comparar frequência, não de escolher o osso cuja fratura parece mais grave (Rockwood adultos, 10ª ed., cap. 44, outros ossos do carpo).\n\nO padrão habitual do piramidal é uma **avulsão cortical dorsal**, responsável por mais de 90% de suas fraturas. Pode ocorrer arrancamento capsular ou impacção contra estruturas vizinhas. O pequeno fragmento pode se esconder na PA pela sobreposição com o semilunar e aparecer melhor no perfil ou em uma oblíqua pronada.\n\nNa forma dorsal isolada, o tratamento descrito costuma ser uma tala curta, seguida de movimento ativo. Isso não transforma toda fratura do piramidal em lesão simples: fratura do corpo com desarranjo do carpo pode fazer parte de uma perilunar, e a avulsão volar deve levantar a possibilidade de lesão lunopiramidal. O padrão e as relações articulares continuam importantes.\n\nHamato, pisiforme e trapézio também fraturam, mas pertencem ao grupo menos frequente. Reconhecer seus mecanismos próprios ajuda a não trocar a frequência geral por uma associação marcante, como hâmulo e esportes com raquete ou taco.",
+      "correta": "**Correta: B (piramidal).** É o segundo osso do carpo mais fraturado no resumo, atrás do escafoide. A apresentação predominante é a pequena avulsão cortical dorsal, que pode ser discreta na radiografia inicial.",
+      "incorretas": {
+        "A": "O pisiforme é um sesamoide no tendão do flexor ulnar do carpo e pode fraturar por avulsão, impacto ou golpe direto. Esses mecanismos explicam a lesão, mas não o colocam acima do piramidal em frequência. Ele integra o grupo raro de fraturas do carpo descrito no panorama do capítulo.",
+        "C": "O hamato se associa a mecanismos bem reconhecíveis: o hâmulo pode sofrer compressão por raquete ou taco, e o corpo pode fraturar em trauma de alta energia com lesão carpometacarpal. Apesar dessas associações, o resumo atribui ao piramidal a segunda posição em frequência.",
+        "D": "O trapézio pode apresentar fraturas do corpo, da crista e lesões carpometacarpais do polegar. Isso não o torna o mais fraturado depois do escafoide. A comparação epidemiológica do resumo coloca o piramidal à frente desse grupo de ossos menos frequentemente lesionados."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Como ler este capítulo; Fraturas dos outros ossos do carpo."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Como ler este capítulo",
+          "Fraturas dos outros ossos do carpo"
+        ],
+        "blocos": [
+          "como-ler-este-capitulo-6da1ccc3",
+          "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
+          "fraturas-dos-outros-ossos-do-carpo-a57392eb",
+          "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
+          "fraturas-dos-outros-ossos-do-carpo-7938f85e",
+          "fraturas-dos-outros-ossos-do-carpo-cade88e0"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "609bedae71b5d594069bef6bed8ec07c27d18a7b0424dbb3bedca8f8de90ca0f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2199": {
+    "questaoSha256": "9890b9f27c285056373b4ef1b24175f41032cd1fe52a32cef5ff9103c3176dfc",
+    "comentarioAnteriorSha256": "588eb9e20af2ab5c1ad7517e42088c1fdf56f785120575b5ebe10919c651ce58",
+    "comentario": {
+      "conceito": "O estalido de **redução** no teste de Watson aparece ao **retirar a pressão sobre o tubérculo do escafoide**. É preciso distinguir o momento em que o examinador provoca a subluxação daquele em que o osso volta à posição. São fases do mesmo teste, com efeitos opostos (Rockwood adultos, 10ª ed., cap. 44, exame escafossemilunar).\n\nO polegar do examinador pressiona o tubérculo de palmar para dorsal enquanto o punho vai do desvio ulnar para o radial. No desvio radial, o escafoide precisa fletir. Se a pressão o segura pela frente e a contenção ligamentar é insuficiente, ele pode escapar para dorsal, saindo de sua relação normal com a fossa do rádio.\n\nQuando o examinador solta a pressão, essa contenção artificial desaparece e o escafoide pode voltar com um ressalto. A pergunta cobra esse retorno, não o gesto de pressionar nem simplesmente a direção do desvio. Separar **provocação** e **redução** evita escolher uma manobra tecnicamente presente no teste, mas no momento errado.\n\nUm ressalto sugestivo não confirma sozinho a lesão escafossemilunar. O resumo relata baixa especificidade, com positividade em até 30% de punhos normais e falsos positivos em pessoas com frouxidão ligamentar. O resultado precisa ser relacionado à dor, à história e aos exames que avaliam alinhamento e ligamentos.",
+      "correta": "**Correta: C (retirar a pressão).** Ao soltar o tubérculo, o examinador permite que o escafoide subluxado dorsalmente volte à posição. O ressalto desse retorno é o estalido de redução que a pergunta especifica.",
+      "incorretas": {
+        "A": "O movimento do desvio ulnar ao radial com pressão mantida é a fase de provocação. O escafoide tenta fletir e encontra o polegar que o bloqueia, podendo subluxar dorsalmente. A alternativa descreve parte do teste, mas não o instante de liberação que permite a redução.",
+        "B": "O teste descrito no resumo vai do desvio ulnar para o radial, e não no sentido inverso. Além disso, a opção mantém a pressão, enquanto a redução perguntada ocorre quando ela é retirada. Há tanto uma troca de direção quanto uma troca de fase do teste.",
+        "D": "Aumentar a pressão mantém ou intensifica o obstáculo à flexão normal do escafoide. Não corresponde a liberar a contenção para o osso retornar. A pergunta usa “redução”, e esse retorno exige distinguir o bloqueio provocado da retirada do bloqueio."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Dissociação escafossemilunar."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Dissociação escafossemilunar"
+        ],
+        "blocos": [
+          "dissociacao-escafossemilunar-cade5531"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "7c814dcd494183078877c9d1a1b68f99afc3a2a5c65eaf28bd7fc8d02665c152"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "mao-2208": {
+    "questaoSha256": "3e1cb9964ac2f411fde2f4ae7f4ae4fda65c27314d7c13e11807405f234b2fcc",
+    "comentarioAnteriorSha256": "ba2cff9b862e9ebbf8c47817508699a6bc9dc43c87bc364406a6b583d90c733d",
+    "comentario": {
+      "conceito": "Uma fratura do rádio distal que consolidou com deformidade pode produzir **desalinhamento adaptativo do carpo**. A causa inicial está fora dos ligamentos que unem os ossos do carpo: o carpo se reorganiza sobre uma base óssea deformada. É a instabilidade **CIA**, adaptativa, na classificação por padrão (Rockwood adultos, 10ª ed., cap. 44, padrões de instabilidade).\n\nA classificação separa o lugar e a causa do problema. Na forma **dissociativa**, falha um elo dentro de uma fileira, como o escafossemilunar ou o lunopiramidal. Na **não dissociativa**, os elos dentro das fileiras permanecem e a falha se dá entre fileiras ou entre carpo e rádio. Na **complexa**, existem componentes dentro e entre fileiras.\n\nA forma adaptativa exige outro raciocínio: o desalinhamento aparece em resposta a uma alteração externa ao sistema ligamentar inicialmente considerado, e o resumo cita especificamente a consolidação viciosa do rádio distal. Ver o semilunar ou o escafoide em posição anormal não prova, por si só, que o primeiro evento foi a ruptura de um ligamento intrínseco.\n\nA distinção tem consequência para avaliar o caso: é necessário examinar a geometria do rádio e o conjunto do carpo, em vez de atribuir todo desalinhamento a uma dissociação. O enunciado não pede o tratamento de uma lesão específica; pede reconhecer quando o carpo se adaptou a uma deformidade óssea que lhe mudou o apoio.",
+      "correta": "**Correta: B (rádio distal consolidado com deformidade).** É o exemplo explícito de causa externa ao carpo que pode levar a desalinhamento adaptativo. A deformidade do apoio ósseo precede e condiciona a posição do carpo.",
+      "incorretas": {
+        "A": "A ruptura escafossemilunar é um exemplo clássico de instabilidade dissociativa: o elo entre dois ossos da fileira proximal foi lesado. O desalinhamento decorre de uma falha ligamentar dentro do carpo, e não da adaptação a uma deformidade consolidada do rádio.",
+        "C": "A lesão lunopiramidal também está dentro da fileira proximal e é dissociativa. Ela pode permitir flexão do semilunar e um padrão de VISI quando outras contenções falham, mas esse mecanismo continua diferente da resposta do carpo a uma base radial deformada.",
+        "D": "Uma lesão ligamentar carpometacarpal descreve dano no próprio sistema articular e ligamentar que conecta o carpo à mão. A alternativa não apresenta a alteração óssea externa que define o exemplo adaptativo pedido. Não se deve usar “adaptativa” como sinônimo de qualquer instabilidade com desalinhamento."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-44-carpo",
+        "titulo": "Fraturas e luxações do carpo",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
+        "secoes": [
+          "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
+          "Dissociação lunopiramidal"
+        ],
+        "blocos": [
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-c0065304",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-8638f558",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-ae523a5b",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-48fd364d",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb",
+          "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
+          "dissociacao-lunopiramidal-5eb7978d"
+        ],
+        "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
+        "trechosSha256": "948a5256e1637f964cbac95ff9525dbcd3712251ff12c8f262a00c8ce87d2619"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
