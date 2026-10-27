@@ -571,6 +571,92 @@
    "fonte": "e930f85f723e"
   },
   {
+   "id": "fc-coluna-0022-cl1",
+   "questao": "coluna-0022",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Lenke, quando uma curva é considerada estrutural?",
+   "resposta": "não corrige abaixo de 25°",
+   "explicacao": "Estrutural: **não corrige abaixo de 25°** nas radiografias em inclinação (bending) ou tem cifose de 20° ou mais.",
+   "opcoes": [
+    "não corrige abaixo de 25°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "0406e8d7026b",
+   "origem": "autoral",
+   "trecho": "Estrutural é a curva que não corrige abaixo de 25° nas radiografias com inclinação (bending), ou que tem cifose de 20° ou mais.",
+   "criadoEm": "2026-10-27",
+   "alerta": "A classificação exige radiografias de coluna inteira e avaliação dos critérios de estruturalidade; a leitura de uma reprodução pequena pode limitar a certeza."
+  },
+  {
+   "id": "fc-coluna-0022-cl2",
+   "questao": "coluna-0022",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Lenke: a linha central sacral vertical passa entre os pedículos da vértebra apical lombar. Qual é o modificador lombar?",
+   "resposta": "A",
+   "explicacao": "**A**: entre os pedículos. **B**: toca o corpo apical. **C**: completamente medial ao corpo.",
+   "opcoes": [
+    "A",
+    "B",
+    "C"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "0406e8d7026b",
+   "origem": "autoral",
+   "trecho": "a linha passa **entre os pedículos** da vértebra apical lombar",
+   "criadoEm": "2026-10-27",
+   "alerta": "A classificação exige radiografias de coluna inteira e avaliação dos critérios de estruturalidade; a leitura de uma reprodução pequena pode limitar a certeza."
+  },
+  {
+   "id": "fc-coluna-0022-co1",
+   "questao": "coluna-0022",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Lenke tipo 1 (torácica principal, sem outras estruturais): o que a artrodese costuma incluir?",
+   "resposta": "só a curva torácica principal",
+   "explicacao": "Artrodese **seletiva**: **só a curva torácica principal**; a lombar compensatória corrige espontaneamente.",
+   "opcoes": [
+    "só a curva torácica principal"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "0406e8d7026b",
+   "origem": "autoral",
+   "trecho": "a artrodese costuma incluir **só a curva torácica principal** (seletiva)",
+   "criadoEm": "2026-10-27",
+   "alerta": "A classificação exige radiografias de coluna inteira e avaliação dos critérios de estruturalidade; a leitura de uma reprodução pequena pode limitar a certeza."
+  },
+  {
    "id": "fc-coluna-0023-co1",
    "questao": "coluna-0023",
    "area": "Coluna",
@@ -1615,6 +1701,116 @@
    "prova": "TARO",
    "ano": 2022,
    "fonte": "c586cbb75d4a"
+  },
+  {
+   "id": "fc-coluna-0060-ar1",
+   "questao": "coluna-0060",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Abaixo da vértebra C7, como se chama o disco intervertebral (não existe C7-C8)?",
+   "resposta": "C7-T1",
+   "explicacao": "São 7 vértebras e 8 raízes cervicais: abaixo de C7 vem T1, e o disco é **C7-T1** (comprime a raiz C8).",
+   "opcoes": [
+    "C7-T1"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "01fe73bc4509",
+   "origem": "autoral",
+   "trecho": "não existe disco \"C7-C8\": abaixo de C7 vem T1, e o disco é C7-T1.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0060-co1",
+   "questao": "coluna-0060",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual nervo inerva o bíceps braquial, e de quais raízes vêm suas fibras?",
+   "resposta": "musculocutâneo",
+   "explicacao": "O **musculocutâneo** vem de **C5 e C6**: por isso hérnia C4-C5 ou C5-C6 enfraquece o bíceps.",
+   "opcoes": [
+    "musculocutâneo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "01fe73bc4509",
+   "origem": "autoral",
+   "trecho": "Seu nervo é o **musculocutâneo**, formado por fibras das raízes **C5 e C6**.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0060-co2",
+   "questao": "coluna-0060",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Fraqueza nova de deltoide e bíceps após descompressão cervical: qual é o mecanismo?",
+   "resposta": "estiramento da raiz C5",
+   "explicacao": "A **paralisia de C5** pós-descompressão vem do **estiramento da raiz C5** e costuma ser transitória.",
+   "opcoes": [
+    "estiramento da raiz C5"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "01fe73bc4509",
+   "origem": "autoral",
+   "trecho": "por estiramento da raiz C5 (paralisia de C5), geralmente transitória",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0060-pc1",
+   "questao": "coluna-0060",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Radiculopatia cervical com fraqueza do deltoide além do bíceps e reflexo bicipital diminuído: qual raiz?",
+   "resposta": "C5",
+   "explicacao": "**C5**: deltoide e bíceps, reflexo **bicipital**, face lateral do ombro. **C6**: bíceps e extensores radiais do punho, reflexo braquiorradial, polegar e indicador.",
+   "opcoes": [
+    "C5",
+    "C6",
+    "C7"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "01fe73bc4509",
+   "origem": "autoral",
+   "trecho": "A **C5** dá fraqueza do **deltoide** (o paciente não consegue abrir o braço para o lado) além do bíceps, diminui o reflexo **bicipital**",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-coluna-0064-q",
@@ -3408,6 +3604,34 @@
    "fonte": "ac04a113cd6f"
   },
   {
+   "id": "fc-coluna-0184-ar1",
+   "questao": "coluna-0184",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Curva que surge depois dos 40 anos numa coluna antes reta, por desgaste assimétrico de disco e faceta: como a literatura a chama?",
+   "resposta": "escoliose degenerativa",
+   "explicacao": "**Degenerativa** ou **de novo**: curva curta, lombar, com subluxação rotatória e estenose. A **idiopática do adulto** é a do adolescente que envelheceu com o paciente.",
+   "opcoes": [
+    "escoliose degenerativa"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "ccd2305f55d5",
+   "origem": "autoral",
+   "trecho": "A segunda é a **escoliose degenerativa**, também chamada **de novo**",
+   "criadoEm": "2026-10-27",
+   "alerta": "Os dois termos existem e nomeiam coisas diferentes. Escoliose IDIOPÁTICA DO ADULTO é a curva que começou na adolescência e envelheceu junto com o paciente. Escoliose DEGENERATIVA, ou DE NOVO, é a que surge depois da quarta ou quinta década numa coluna que era reta, nasce da degeneração assimétrica do disco e da faceta, tem curva curta, geralmente lombar, com subluxação rotatória e estenose associada. O enunciado descreve exatamente essa segunda, e a alternativa que a nomeia é a A, marcada como errada. Se você respondeu \"de novo\", o erro não foi seu."
+  },
+  {
    "id": "fc-coluna-0187-q",
    "questao": "coluna-0187",
    "area": "Coluna",
@@ -4710,6 +4934,91 @@
    "prova": "TARO",
    "ano": 2010,
    "fonte": "ef92ed760673"
+  },
+  {
+   "id": "fc-coluna-0259-co1",
+   "questao": "coluna-0259",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Escoliose idiopática infantil progressiva: qual é o tratamento inicial que, começado cedo, pode até corrigir a curva?",
+   "resposta": "gessos seriados",
+   "explicacao": "**Gessos seriados** de Mehta, depois colete; nas graves, hastes de crescimento.",
+   "opcoes": [
+    "gessos seriados"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "383a18065398",
+   "origem": "autoral",
+   "trecho": "As curvas progressivas são tratadas com **gessos seriados** de Mehta",
+   "criadoEm": "2026-10-27",
+   "alerta": "A progressão não é frequente em toda a escoliose infantil: muitas curvas resolvem. C deve ser entendida como referência ao subgrupo progressivo; ângulo costovertebral e evolução seriada definem prognóstico."
+  },
+  {
+   "id": "fc-coluna-0259-co2",
+   "questao": "coluna-0259",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na escoliose idiopática infantil, a partir de que magnitude se recomenda ressonância do neuroeixo?",
+   "resposta": "cerca de 20 graus",
+   "explicacao": "Curvas maiores se associam a Chiari, siringomielia e tumores: ressonância a partir de **cerca de 20 graus**.",
+   "opcoes": [
+    "cerca de 20 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "383a18065398",
+   "origem": "autoral",
+   "trecho": "a ressonância é recomendada a partir de cerca de 20 graus",
+   "criadoEm": "2026-10-27",
+   "alerta": "A progressão não é frequente em toda a escoliose infantil: muitas curvas resolvem. C deve ser entendida como referência ao subgrupo progressivo; ângulo costovertebral e evolução seriada definem prognóstico."
+  },
+  {
+   "id": "fc-coluna-0259-pc1",
+   "questao": "coluna-0259",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Escoliose idiopática infantil (antes dos 3 anos): qual é a curva típica?",
+   "resposta": "torácica à esquerda",
+   "explicacao": "Infantil: **meninos**, curva **torácica à esquerda**. Adolescente: meninas, torácica à direita.",
+   "opcoes": [
+    "torácica à esquerda",
+    "torácica à direita"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "383a18065398",
+   "origem": "autoral",
+   "trecho": "Predomina em **meninos**, e a curva típica é **torácica à esquerda**",
+   "criadoEm": "2026-10-27",
+   "alerta": "A progressão não é frequente em toda a escoliose infantil: muitas curvas resolvem. C deve ser entendida como referência ao subgrupo progressivo; ângulo costovertebral e evolução seriada definem prognóstico."
   },
   {
    "id": "fc-coluna-0260-q",
@@ -6060,6 +6369,168 @@
    "fonte": "3fb8edd5a672"
   },
   {
+   "id": "fc-coluna-0316-ar1",
+   "questao": "coluna-0316",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No ensaio de Carette, a infiltração epidural na hérnia lombar diminuiu as cirurgias a longo prazo?",
+   "resposta": "sem reduzir a necessidade de cirurgia a longo prazo",
+   "explicacao": "Alivia dor e função **a curto prazo** (semanas), **sem reduzir a necessidade de cirurgia** a longo prazo: é uma ponte para a melhora natural.",
+   "opcoes": [
+    "sem reduzir a necessidade de cirurgia a longo prazo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "6afa0c401aef",
+   "origem": "autoral",
+   "trecho": "**alívio da dor e da função a curto prazo** (semanas), sem reduzir a necessidade de cirurgia a longo prazo",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0316-co1",
+   "questao": "coluna-0316",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na infiltração transforaminal lombar, que tipo de corticoide se prefere, pelo risco de embolia?",
+   "resposta": "corticoides não particulados",
+   "explicacao": "Preferem-se **corticoides não particulados**: os particulados podem embolizar, com complicações graves sobretudo no cervical e torácico.",
+   "opcoes": [
+    "corticoides não particulados"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "6afa0c401aef",
+   "origem": "autoral",
+   "trecho": "No lombar, preferem-se corticoides não particulados.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0316-np1",
+   "questao": "coluna-0316",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Infiltração epidural de corticoide na hérnia lombar: melhor resultado na {{c1::dor ciática subaguda ou crônica}} sem déficit motor.",
+   "resposta": "dor ciática subaguda ou crônica",
+   "explicacao": "O corticoide age na inflamação química da raiz: funciona melhor quando domina a **dor radicular**, nas fases **subaguda ou crônica**, sem déficit motor.",
+   "opcoes": [
+    "dor ciática subaguda ou crônica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "6afa0c401aef",
+   "origem": "autoral",
+   "trecho": "> Infiltração epidural: melhor resultado na dor ciática subaguda ou crônica sem déficit motor; alívio a curto prazo.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0317-ar1",
+   "questao": "coluna-0317",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Escoliose idiopática do adolescente com curva de 45 graus ou mais: colete ainda resolve?",
+   "resposta": "Cirurgia",
+   "explicacao": "Com **45 graus ou mais**, o colete não controla: a indicação é **cirurgia** (artrodese). Colete é para 25 a 40 graus em esqueleto imaturo.",
+   "opcoes": [
+    "Cirurgia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "d7b8eeec920f",
+   "origem": "autoral",
+   "trecho": "| Curva de **45 graus ou mais** | **Cirurgia** (artrodese), o colete não controla |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0317-co1",
+   "questao": "coluna-0317",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Colete na escoliose idiopática do adolescente: quantas horas por dia de uso?",
+   "resposta": "16 a 23 horas por dia",
+   "explicacao": "De **16 a 23 horas por dia** até a maturidade; coletes noturnos são opção para curvas lombares ou toracolombares menores.",
+   "opcoes": [
+    "16 a 23 horas por dia"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "d7b8eeec920f",
+   "origem": "autoral",
+   "trecho": "De **16 a 23 horas por dia**, até a maturidade.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0317-co2",
+   "questao": "coluna-0317",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Escoliose idiopática"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O que o estudo BrAIST mostrou sobre as horas de uso do colete na escoliose idiopática?",
+   "resposta": "relação dose-resposta",
+   "explicacao": "O colete reduz a progressão até o limiar cirúrgico, com **relação dose-resposta**: quanto mais horas de uso, maior o benefício.",
+   "opcoes": [
+    "relação dose-resposta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "d7b8eeec920f",
+   "origem": "autoral",
+   "trecho": "com **relação dose-resposta**: quanto mais horas de uso, maior o benefício",
+   "criadoEm": "2026-10-27"
+  },
+  {
    "id": "fc-coluna-0321-co1",
    "questao": "coluna-0321",
    "area": "Coluna",
@@ -6114,6 +6585,311 @@
    "origem": "autoral",
    "trecho": "As fibras do **terço externo** do anel ancoram-se firmemente no anel apofisário do corpo vertebral (fibras de Sharpey).",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-coluna-0328-ar1",
+   "questao": "coluna-0328",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que a laminectomia simples foi abandonada no tratamento da hérnia de disco torácica?",
+   "resposta": "retrair a medula",
+   "explicacao": "A medula fica anterior ao acesso e apoiada na hérnia: alcançar o disco por trás obrigava a **retrair a medula**, com altas taxas de paraplegia.",
+   "opcoes": [
+    "retrair a medula"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "4104581de3a5",
+   "origem": "autoral",
+   "trecho": "seria necessário **retrair a medula**, o que historicamente causou altas taxas de paraplegia",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0328-co1",
+   "questao": "coluna-0328",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que segmento a hérnia de disco torácica sintomática é mais comum?",
+   "resposta": "entre T8 e T12",
+   "explicacao": "É rara (menos de 1% das hérnias operadas), mais comum **entre T8 e T12**, muitas vezes calcificada e aderida à dura-máter.",
+   "opcoes": [
+    "entre T8 e T12"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "4104581de3a5",
+   "origem": "autoral",
+   "trecho": "mais comum entre T8 e T12",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0328-np1",
+   "questao": "coluna-0328",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hérnia de disco torácica central: acesso anterior {{c1::transtorácico}}; nunca laminectomia simples.",
+   "resposta": "transtorácico",
+   "explicacao": "O acesso **transtorácico** (toracotomia ou toracoscopia) vê a face ventral da medula e a hérnia, sobretudo calcificada, sem retrair a medula.",
+   "opcoes": [
+    "transtorácico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "4104581de3a5",
+   "origem": "autoral",
+   "trecho": "> Hérnia de disco torácica central: acesso anterior transtorácico; nunca laminectomia simples.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0329-ar1",
+   "questao": "coluna-0329",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Imagem da coluna",
+    "Escoliose idiopática"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em relação ao pico de velocidade de crescimento, quando aparece o sinal de Risser?",
+   "resposta": "depois",
+   "explicacao": "O Risser aparece **depois** do pico: um paciente Risser 0 com trirradiada aberta é o de maior risco de progressão.",
+   "opcoes": [
+    "depois"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "398fd0ddbd0e",
+   "origem": "autoral",
+   "trecho": "O Risser, embora popular, aparece **depois** do pico",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0329-tb1",
+   "questao": "coluna-0329",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Imagem da coluna",
+    "Escoliose idiopática"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em relação ao pico de velocidade de crescimento, quando ocorre a menarca?",
+   "resposta": "Cerca de 1 ano após o pico",
+   "explicacao": "Trirradiada fecha **no pico**; menarca **cerca de 1 ano depois**; Risser 1 já na desaceleração.",
+   "opcoes": [
+    "Cerca de 1 ano após o pico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "398fd0ddbd0e",
+   "origem": "autoral",
+   "trecho": "| Menarca | Cerca de 1 ano após o pico |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0329-tb2",
+   "questao": "coluna-0329",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Escoliose idiopática",
+   "subtemas": [
+    "Imagem da coluna",
+    "Escoliose idiopática"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Sanders (radiografia da mão), qual estágio coincide com o pico de crescimento?",
+   "resposta": "Estágio 3",
+   "explicacao": "Sanders **estágio 3** coincide com o pico e é hoje o melhor preditor de progressão.",
+   "opcoes": [
+    "Estágio 3"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "398fd0ddbd0e",
+   "origem": "autoral",
+   "trecho": "| Classificação de Sanders (mão) | Estágio 3 coincide com o pico; o melhor preditor atual |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0331-co1",
+   "questao": "coluna-0331",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hérnia C6-C7, que comprime a raiz C7: qual músculo do punho costuma ficar fraco?",
+   "resposta": "flexor radial do carpo",
+   "explicacao": "**C7**: tríceps, **flexor radial do carpo** e extensores dos dedos, reflexo tricipital, dedo médio. Os extensores radiais do carpo são de C6.",
+   "opcoes": [
+    "flexor radial do carpo",
+    "extensor radial longo do carpo",
+    "braquiorradial",
+    "bíceps braquial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "6f627db6841e",
+   "origem": "autoral",
+   "trecho": "> Hérnia C6-C7: raiz C7, com fraqueza do tríceps e do flexor radial do carpo e reflexo tricipital diminuído.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0331-tb1",
+   "questao": "coluna-0331",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Radiculopatia C7: qual é o território sensitivo?",
+   "resposta": "Dedo médio",
+   "explicacao": "**C6**: polegar e indicador. **C7**: **dedo médio**. **C8**: anular e mínimo.",
+   "opcoes": [
+    "Dedo médio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "6f627db6841e",
+   "origem": "autoral",
+   "trecho": "| Sensibilidade | **Dedo médio** |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0331-tb2",
+   "questao": "coluna-0331",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual reflexo diminui na radiculopatia C7?",
+   "resposta": "Tricipital",
+   "explicacao": "C5: bicipital. C6: estilorradial. **C7: tricipital**. C8: nenhum confiável.",
+   "opcoes": [
+    "Tricipital"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "6f627db6841e",
+   "origem": "autoral",
+   "trecho": "| Reflexo | **Tricipital** |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0345-co1",
+   "questao": "coluna-0345",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrodese intersomática posterior (PLIF), o que impede retirar todo o disco?",
+   "resposta": "Raízes nervosas e saco dural restringem o acesso",
+   "explicacao": "As **raízes e o saco dural** limitam o corredor posterior; o acesso anterior expõe mais o disco e aceita implantes maiores.",
+   "opcoes": [
+    "Raízes nervosas e saco dural restringem o acesso"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "f99e3bb43438",
+   "origem": "autoral",
+   "trecho": "Raízes nervosas e saco dural restringem o acesso ao espaço anterior e lateral.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-coluna-0348-ar1",
+   "questao": "coluna-0348",
+   "area": "Coluna",
+   "areaId": "coluna",
+   "assunto": "Hérnia de disco lombar",
+   "subtemas": [
+    "Anatomia da coluna",
+    "Hérnia de disco lombar"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hérnia de disco lombar primária, sem instabilidade, com indicação cirúrgica: a discectomia deve ser associada à artrodese?",
+   "resposta": "Não é componente obrigatório",
+   "explicacao": "Retirar o fragmento e descomprimir basta. Artrodese **não é obrigatória**: entra com instabilidade, deformidade ou certas recidivas.",
+   "opcoes": [
+    "Não é componente obrigatório"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "1eeb901280e5",
+   "origem": "autoral",
+   "trecho": "Não é componente obrigatório da primeira cirurgia para hérnia simples.",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-coluna-0359-q",

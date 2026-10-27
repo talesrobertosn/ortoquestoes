@@ -259,6 +259,8 @@
 :root[data-tema="escuro"] .bib-convite a.bib-convite__botao { box-shadow: 0 0 0 2px #000, 4px 4px 0 2px var(--px-ouro-sombra); }
 :root[data-tema="escuro"] .bib-convite a.bib-convite__botao:hover { box-shadow: 0 0 0 2px #000, 5px 5px 0 2px var(--px-ouro-sombra); }
 .bib-convite__acoes small { font-size: 0.82rem; color: var(--texto-2); font-variant-numeric: tabular-nums; }
+.bib-convite__fc { font-size: 0.85rem; font-weight: 600; color: var(--texto-2); text-decoration: underline; text-underline-offset: 2px; }
+.bib-convite__fc:hover { color: var(--texto); }
 
 /* ---------- Celular: o livro em cima, no palco largo; o texto embaixo ---------- */
 @media (max-width: 40rem) {

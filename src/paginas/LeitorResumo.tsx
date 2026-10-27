@@ -9,7 +9,7 @@ import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
 import { Icone } from '../componentes/Icone'
 import { Carregando, Estado } from '../componentes/Estados'
-import { href, navegar } from '../util/rotas'
+import { href, navegar, usarRota } from '../util/rotas'
 import { usarPremium } from '../conta/premium'
 import { ConvitePremium } from '../componentes/Premium'
 import { usarSessao } from '../estado/sessao'
@@ -19,6 +19,7 @@ import { contasDisponiveis } from '../conta/supabase'
 import { calcularPorta, linkDaPorta, SECOES_ABERTAS } from '../biblioteca/porta'
 import { PortaLeitura } from '../biblioteca/PortaLeitura'
 import { usarSemCopia } from '../biblioteca/semCopia'
+import { flashcardsDosSubtemas, linkFlashcards, usarAreasDosFlashcards } from '../biblioteca/ligacoes'
 import '../estilos/paginas/Resumos.css'
 
 const QuestaoDireta = lazy(() => import('./QuestaoDireta').then((m) => ({ default: m.QuestaoDireta })))
@@ -84,6 +85,11 @@ function ResumoFechado({ capitulo }: { capitulo: Capitulo }) {
 }
 
 function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: string | null }) {
+  // Resumo → flashcards do mesmo tema (pelos subtemas do resumo; sem flashcard publicado, nada aparece).
+  const areasFc = usarAreasDosFlashcards()
+  const alvoFc = useMemo(() => flashcardsDosSubtemas(areasFc, capitulo.subtemas ?? [], capitulo.especialidade), [areasFc, capitulo])
+  // Com os flashcards abertos por cima (pop-up do jogo), o leitor vira fundo e desce para baixo deles.
+  const deFundo = usarRota().segmentos[0] !== 'resumos'
   const { indice } = usarIndice()
   // Resumos abertos para todos (pedido do Tales, 16/10/2026); resolver as questões citadas é do assinante.
   const { premium } = usarPremium()
@@ -457,7 +463,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   }, [progresso, capitulo.secoes, ordem]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className={`lr lr--${pref.tema}${painel ? ' lr--com-painel' : ''}${foco ? ' lr--foco' : ''}${paginado ? ' lr--paginado' : ''}${pref.fonteFamilia === 'sem-serifa' ? ' lr--sem-serifa' : ''}${pref.justificar ? ' lr--justificado' : ''}${pref.prova ? '' : ' lr--sem-prova'}`} data-tema-leitor={pref.tema}>
+    <div className={`lr lr--${pref.tema}${painel ? ' lr--com-painel' : ''}${foco ? ' lr--foco' : ''}${paginado ? ' lr--paginado' : ''}${pref.fonteFamilia === 'sem-serifa' ? ' lr--sem-serifa' : ''}${pref.justificar ? ' lr--justificado' : ''}${pref.prova ? '' : ' lr--sem-prova'}${deFundo ? ' lr--fundo' : ''}`} data-tema-leitor={pref.tema}>
       <header className="lr-barra">
         <a className="lr-botao" href={href('/resumos')} aria-label="Voltar à biblioteca" title="Biblioteca"><Icone nome="esquerda" tamanho={20} /></a>
         <div className="lr-barra__titulo">
@@ -483,7 +489,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
             <p className="lr-capa__selo">Resumo OrtoQuestões · {indice?.temas.find((t) => t.slug === capitulo.especialidade)?.nome ?? capitulo.especialidade}</p>
             <h1>{capitulo.titulo}</h1>
             <p className="lr-capa__ref">A partir de <cite>{capitulo.livro}</cite>, {capitulo.edicao}. {capitulo.capitulo}. {capitulo.autores}.</p>
-            <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}</p>
+            <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}{alvoFc && <a className="lr-capa__fc" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={14} /> Estudar flashcards deste tema</a>}</p>
             <p className="lr-capa__dica">Selecione qualquer trecho para destacar ou anotar. Tudo fica salvo na sua conta.</p>
             {porta.fechado && <p className="lr-capa__porta">Sem conta, você lê as {SECOES_ABERTAS} primeiras das {capitulo.secoes.length} partes. A leitura completa é grátis com a conta: <a href={href(linkDaPorta('criar', capitulo.id, porta))}>criar conta grátis</a>.</p>}
           </header>
@@ -508,6 +514,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
             </div>
             <div className="lr-fim__acoes">
               {idsDoCapitulo.length > 0 && <button type="button" className="botao botao--principal" onClick={treinarCapitulo}><Icone nome={premium ? 'alvo' : 'cadeado'} tamanho={16} /> Treinar as {idsDoCapitulo.length} questões do capítulo</button>}
+              {alvoFc && <a className="botao" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={16} /> Estudar flashcards deste tema <small className="numerico">{alvoFc.total}</small></a>}
               <a className="botao" href={href('/resumos/caderno')}><Icone nome="lapis" tamanho={16} /> Meu caderno de estudo</a>
               <a className="botao" href={href('/resumos')}>Outros resumos</a>
             </div>

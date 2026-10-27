@@ -562,6 +562,434 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0051-co1",
+   "questao": "pediatria-0051",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome de Morquio (MPS IV), o que avaliar antes de qualquer anestesia?",
+   "resposta": "coluna cervical",
+   "explicacao": "Avaliar a **coluna cervical** com radiografia dinâmica e ressonância: a instabilidade C1-C2 pode causar mielopatia e morte súbita. Se instável, artrodese occipitocervical.",
+   "opcoes": [
+    "coluna cervical"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "332adde1991d",
+   "origem": "autoral",
+   "trecho": "- **Morquio**: avaliar a **coluna cervical** (radiografia dinâmica e ressonância) antes de qualquer anestesia",
+   "criadoEm": "2026-10-27",
+   "alerta": "A frequência relativa das mucopolissacaridoses varia conforme o país, a triagem neonatal e o critério diagnóstico."
+  },
+  {
+   "id": "fc-pediatria-0051-co2",
+   "questao": "pediatria-0051",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual deformidade da coluna é típica da síndrome de Hurler (MPS I)?",
+   "resposta": "cifose toracolombar (giba)",
+   "explicacao": "Na **Hurler**, a vértebra em bico anteroinferior produz **cifose toracolombar (giba)**. Também há displasia do quadril e túnel do carpo na criança pequena.",
+   "opcoes": [
+    "cifose toracolombar (giba)"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "332adde1991d",
+   "origem": "autoral",
+   "trecho": "- **Hurler**: **cifose** toracolombar (giba) pela vértebra em \"bico\" anteroinferior",
+   "criadoEm": "2026-10-27",
+   "alerta": "A frequência relativa das mucopolissacaridoses varia conforme o país, a triagem neonatal e o critério diagnóstico."
+  },
+  {
+   "id": "fc-pediatria-0051-co3",
+   "questao": "pediatria-0051",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome de Hurler, até que idade se faz o transplante de células-tronco hematopoéticas para preservar a cognição?",
+   "resposta": "antes dos 2 anos",
+   "explicacao": "Transplante **antes dos 2 anos** preserva a cognição, mas **não impede** as alterações esqueléticas.",
+   "opcoes": [
+    "antes dos 2 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "332adde1991d",
+   "origem": "autoral",
+   "trecho": "**transplante de células-tronco hematopoéticas** na Hurler antes dos 2 anos, que preserva a cognição, mas não impede as alterações esqueléticas",
+   "criadoEm": "2026-10-27",
+   "alerta": "A frequência relativa das mucopolissacaridoses varia conforme o país, a triagem neonatal e o critério diagnóstico."
+  },
+  {
+   "id": "fc-pediatria-0051-tb1",
+   "questao": "pediatria-0051",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual mucopolissacaridose tem herança ligada ao X e não causa opacidade de córnea?",
+   "resposta": "Hunter",
+   "explicacao": "**Hunter (MPS II)**: ligada ao X, só meninos, **sem** opacidade de córnea. As demais MPS são autossômicas recessivas.",
+   "opcoes": [
+    "Hurler",
+    "Hunter",
+    "Sanfilippo",
+    "Morquio"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "332adde1991d",
+   "origem": "autoral",
+   "trecho": "| **II, Hunter** | **Ligada ao X** (meninos); **sem** opacidade de córnea |",
+   "criadoEm": "2026-10-27",
+   "alerta": "A frequência relativa das mucopolissacaridoses varia conforme o país, a triagem neonatal e o critério diagnóstico."
+  },
+  {
+   "id": "fc-pediatria-0058-co1",
+   "questao": "pediatria-0058",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nos registros populacionais de paralisia cerebral, qual nível do GMFCS é o mais frequente?",
+   "resposta": "nível I",
+   "explicacao": "O **nível I** reúne cerca de um terço a 40% das crianças, porque predominam as formas espásticas hemiplégica e diplégica, que geralmente andam.",
+   "opcoes": [
+    "nível I",
+    "nível II",
+    "nível III",
+    "nível IV"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "6699eec44f28",
+   "origem": "autoral",
+   "trecho": "o **nível I** é o mais frequente",
+   "criadoEm": "2026-10-27",
+   "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova."
+  },
+  {
+   "id": "fc-pediatria-0062-co1",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é a manifestação ortopédica mais comum da neurofibromatose tipo 1?",
+   "resposta": "Escoliose",
+   "explicacao": "A **escoliose** é a mais comum. Também: pseudartrose congênita da tíbia, hipercrescimento de membros e lesões ósseas.",
+   "opcoes": [
+    "Escoliose",
+    "Pseudartrose congênita da tíbia",
+    "Protrusão acetabular"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "- **Escoliose**: a mais comum.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0062-co2",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Como é a curva da escoliose distrófica da neurofibromatose tipo 1?",
+   "resposta": "curva curta e angulada",
+   "explicacao": "Distrófica: **curva curta e angulada**, vértebras escavadas, costelas em lápis; progride rápido e pede cirurgia precoce.",
+   "opcoes": [
+    "curva curta e angulada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "**distrófica**: curva curta e angulada, vértebras escavadas, costelas \"em lápis\"",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0062-co3",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na escoliose da neurofibromatose tipo 1, o que significa o termo modulação?",
+   "resposta": "a não distrófica pode se tornar distrófica",
+   "explicacao": "**Modulação**: uma curva que começou **não distrófica** (como a idiopática) pode **se tornar distrófica**, por isso o seguimento é próximo.",
+   "opcoes": [
+    "a não distrófica pode se tornar distrófica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "**modulação** (a não distrófica pode se tornar distrófica)",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0062-co4",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Neurofibroma plexiforme na NF1 com dor nova e crescimento rápido: qual transformação se teme?",
+   "resposta": "tumor maligno da bainha do nervo periférico",
+   "explicacao": "Risco de **tumor maligno da bainha do nervo periférico**, cerca de 8% a 13% ao longo da vida.",
+   "opcoes": [
+    "tumor maligno da bainha do nervo periférico"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "podem se transformar em **tumor maligno da bainha do nervo periférico** (cerca de 8% a 13% ao longo da vida)",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0062-co5",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No critério diagnóstico da NF1, as seis ou mais manchas café com leite devem ser maiores que quanto antes da puberdade?",
+   "resposta": "5 mm",
+   "explicacao": "Seis ou mais manchas maiores que **5 mm** antes da puberdade e **15 mm** depois.",
+   "opcoes": [
+    "5 mm"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "Seis ou mais **manchas café com leite** (maiores que 5 mm antes da puberdade e 15 mm depois)",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0062-pc1",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual cromossomo fica o gene da neurofibromatose tipo 1 (periférica)?",
+   "resposta": "17",
+   "explicacao": "**NF1** (periférica, von Recklinghausen): cromossomo **17**, neurofibromina. **NF2** (central): cromossomo 22.",
+   "opcoes": [
+    "17",
+    "22"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "NF1, cromossomo **17**",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0062-pc2",
+   "questao": "pediatria-0062",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o tumor característico da neurofibromatose tipo 2 (central)?",
+   "resposta": "Schwannomas vestibulares bilaterais",
+   "explicacao": "A **NF2** (cromossomo 22) dá **schwannomas vestibulares bilaterais** e meningiomas, com poucas manifestações ortopédicas, ao contrário da NF1.",
+   "opcoes": [
+    "Schwannomas vestibulares bilaterais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fde6ae07b3cd",
+   "origem": "autoral",
+   "trecho": "| **NF2** (central) | NF2, cromossomo **22** | **Schwannomas vestibulares bilaterais**, meningiomas; poucas manifestações ortopédicas |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0072-co1",
+   "questao": "pediatria-0072",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na DDQ, qual tendão cruza a frente da cápsula e a estrangula em forma de ampulheta, bloqueando a redução?",
+   "resposta": "Iliopsoas",
+   "explicacao": "O **iliopsoas** cruza a frente da cápsula e a estrangula (ampulheta). Na redução aberta, ele é liberado junto com o lábio invertido, o ligamento redondo e o pulvinar.",
+   "opcoes": [
+    "Iliopsoas",
+    "Adutores",
+    "Ligamento transverso",
+    "Pulvinar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "841ec8488821",
+   "origem": "autoral",
+   "trecho": "| **Iliopsoas** | Seu tendão cruza a frente da cápsula e a **estrangula** (forma de ampulheta) |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Há ambiguidade no enunciado da questão de origem: a cápsula constrita é obstáculo relevante, mas não é intra-articular em sentido estrito; o lábio invertido também é bloqueio mecânico intra-articular."
+  },
+  {
+   "id": "fc-pediatria-0072-co2",
+   "questao": "pediatria-0072",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na DDQ, qual sinal clínico mostra o joelho do lado luxado mais baixo que o outro?",
+   "resposta": "Galeazzi",
+   "explicacao": "Sinal de **Galeazzi**: com quadris e joelhos fletidos, o joelho do lado luxado fica mais baixo (encurtamento da coxa).",
+   "opcoes": [
+    "Galeazzi",
+    "Ortolani",
+    "Barlow",
+    "Trendelenburg"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "841ec8488821",
+   "origem": "autoral",
+   "trecho": "sinal de **Galeazzi**: o joelho do lado luxado fica mais baixo",
+   "criadoEm": "2026-10-27",
+   "alerta": "Há ambiguidade no enunciado da questão de origem: a cápsula constrita é obstáculo relevante, mas não é intra-articular em sentido estrito; o lábio invertido também é bloqueio mecânico intra-articular."
+  },
+  {
+   "id": "fc-pediatria-0072-co3",
+   "questao": "pediatria-0072",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na redução fechada da DDQ, que procedimento de partes moles permite abdução segura, sem forçar a cabeça contra o acetábulo?",
+   "resposta": "tenotomia dos adutores",
+   "explicacao": "A **tenotomia dos adutores** evita abdução forçada, que comprime a cabeça contra o acetábulo e causa necrose avascular.",
+   "opcoes": [
+    "tenotomia dos adutores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "841ec8488821",
+   "origem": "autoral",
+   "trecho": "faz-se a **tenotomia dos adutores** para permitir uma abdução segura, sem forçar a cabeça contra o acetábulo (que causaria necrose avascular)",
+   "criadoEm": "2026-10-27",
+   "alerta": "Há ambiguidade no enunciado da questão de origem: a cápsula constrita é obstáculo relevante, mas não é intra-articular em sentido estrito; o lábio invertido também é bloqueio mecânico intra-articular."
+  },
+  {
    "id": "fc-pediatria-0076-cl1",
    "questao": "pediatria-0076",
    "area": "Ortopedia pediátrica",
@@ -724,6 +1152,62 @@
    "origem": "autoral",
    "trecho": "| Menor que 45° | Tende a **corrigir espontaneamente**; observar |",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0093-co1",
+   "questao": "pediatria-0093",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Gesso pelvipodálico na posição humana de Salter, na DDQ: em que posição fica o quadril?",
+   "resposta": "flexão de cerca de 100° e abdução moderada",
+   "explicacao": "Posição **humana** de Salter: **flexão de cerca de 100°** e **abdução moderada**, dentro da zona segura de Ramsey, para manter a redução sem necrose avascular.",
+   "opcoes": [
+    "flexão de cerca de 100° e abdução moderada"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "e2b0af3574e0",
+   "origem": "autoral",
+   "trecho": "O gesso pelvipodálico é feito na posição \"**humana**\" de Salter (flexão de cerca de 100° e abdução moderada, dentro da zona segura de Ramsey).",
+   "criadoEm": "2026-10-27",
+   "alerta": "Protocolos atuais descrevem 90 a 100 graus de flexão e abdução controlada abaixo de 60 graus; o princípio essencial é evitar a abdução extrema."
+  },
+  {
+   "id": "fc-pediatria-0093-co2",
+   "questao": "pediatria-0093",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No gesso da DDQ, a abdução moderada deve ficar dentro de qual zona, para evitar necrose avascular?",
+   "resposta": "zona segura de Ramsey",
+   "explicacao": "A **zona segura de Ramsey** é o arco entre a abdução que mantém a redução e a que passa a comprimir a cabeça femoral.",
+   "opcoes": [
+    "zona segura de Ramsey"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "e2b0af3574e0",
+   "origem": "autoral",
+   "trecho": "flexão de cerca de 100° e abdução moderada, dentro da zona segura de Ramsey",
+   "criadoEm": "2026-10-27",
+   "alerta": "Protocolos atuais descrevem 90 a 100 graus de flexão e abdução controlada abaixo de 60 graus; o princípio essencial é evitar a abdução extrema."
   },
   {
    "id": "fc-pediatria-0096-cl1",
@@ -1000,6 +1484,283 @@
    "origem": "autoral",
    "trecho": "| **Posteromedial** | **Pé calcâneo valgo** | **Benigna**: corrige espontaneamente em grande parte |",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0107-co1",
+   "questao": "pediatria-0107",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em qual incidência radiográfica se mede o ângulo centro-borda anterior de Lequesne (cobertura anterior da cabeça femoral)?",
+   "resposta": "falso perfil",
+   "explicacao": "O centro-borda **anterior** (Lequesne) se mede no **falso perfil**, e não no AP; o AP mostra a cobertura lateral (Wiberg).",
+   "opcoes": [
+    "falso perfil",
+    "AP"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "281f721c252c",
+   "origem": "autoral",
+   "trecho": "O **centro-borda anterior** (Lequesne) é medido no **falso perfil**, e não no AP",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0107-co2",
+   "questao": "pediatria-0107",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na radiografia em falso perfil de Lequesne, a bacia fica girada cerca de quantos graus em relação ao filme?",
+   "resposta": "65°",
+   "explicacao": "Paciente em pé, bacia girada cerca de **65°** e pé do lado examinado paralelo ao filme: o acetábulo aparece de perfil.",
+   "opcoes": [
+    "65°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "281f721c252c",
+   "origem": "autoral",
+   "trecho": "a bacia girada cerca de **65°** em relação ao filme",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0107-co3",
+   "questao": "pediatria-0107",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Displasia sintomática do quadril no adulto jovem, com articulação preservada: qual osteotomia reorienta o acetábulo?",
+   "resposta": "osteotomia periacetabular",
+   "explicacao": "A **osteotomia periacetabular** (Ganz) reorienta o acetábulo e corrige o Tönnis e o centro-borda.",
+   "opcoes": [
+    "osteotomia periacetabular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "281f721c252c",
+   "origem": "autoral",
+   "trecho": "a **osteotomia periacetabular** (Ganz) reorienta o acetábulo e corrige o Tönnis e o centro-borda",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0107-pc1",
+   "questao": "pediatria-0107",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Ângulo de Tönnis negativo (teto inclinado para baixo): o que indica?",
+   "resposta": "cobertura excessiva",
+   "explicacao": "Tönnis **menor que 0°** é o oposto da displasia: **cobertura excessiva**, com impacto em pinça. Displasia é Tönnis maior que 10°.",
+   "opcoes": [
+    "cobertura excessiva"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "281f721c252c",
+   "origem": "autoral",
+   "trecho": "| Menor que 0° | Teto inclinado para baixo: **cobertura excessiva** (impacto em pinça) |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0107-tb1",
+   "questao": "pediatria-0107",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual é o valor normal do ângulo de Tönnis (inclinação do teto de carga do acetábulo)?",
+   "resposta": "0 a 10°",
+   "explicacao": "Tönnis **0 a 10°**: normal. **Maior que 10°**: teto oblíquo, displasia. **Menor que 0°**: cobertura excessiva (impacto em pinça).",
+   "opcoes": [
+    "0 a 10°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "281f721c252c",
+   "origem": "autoral",
+   "trecho": "| **0 a 10°** | Normal |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0107-tb2",
+   "questao": "pediatria-0107",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que índice de extrusão da cabeça femoral, no AP da bacia, indica displasia?",
+   "resposta": "Maior que 25%",
+   "explicacao": "Índice de extrusão: normal **menor que 25%**; displasia **maior que 25%**.",
+   "opcoes": [
+    "Maior que 25%",
+    "Menor que 25%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "281f721c252c",
+   "origem": "autoral",
+   "trecho": "| Índice de extrusão da cabeça | Menor que 25% | Maior que 25% |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0114-cl1",
+   "questao": "pediatria-0114",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ultrassonografia de Graf, qual ângulo alfa define o quadril maduro (tipo I)?",
+   "resposta": "60° ou mais",
+   "explicacao": "Graf **I**: alfa de **60° ou mais**, maduro. Tipo II: alfa de 43 a 59°. Tipos III e IV: alfa menor que 43°.",
+   "opcoes": [
+    "60° ou mais"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b79177afbf17",
+   "origem": "autoral",
+   "trecho": "| I | Alfa de 60° ou mais | **Maduro**, normal |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Os intervalos da questão de origem agrupam subtipos do tipo II de Graf; a classificação detalhada considera a idade do lactente e os valores exatos de alfa e beta."
+  },
+  {
+   "id": "fc-pediatria-0114-cl2",
+   "questao": "pediatria-0114",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Graf, com alfa de 43 a 49°, qual ângulo beta define o quadril descentrado (tipo D)?",
+   "resposta": "beta maior que 77°",
+   "explicacao": "Com alfa de 43 a 49°: beta **menor que 77°** é IIc (crítico, centrado); beta **maior que 77°** é D (**descentrado**).",
+   "opcoes": [
+    "beta maior que 77°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b79177afbf17",
+   "origem": "autoral",
+   "trecho": "| D | Alfa 43 a 49°, **beta maior que 77°** | **Descentrado** |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Os intervalos da questão de origem agrupam subtipos do tipo II de Graf; a classificação detalhada considera a idade do lactente e os valores exatos de alfa e beta."
+  },
+  {
+   "id": "fc-pediatria-0114-co1",
+   "questao": "pediatria-0114",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Graf IIa em lactente com menos de 3 meses: qual é a conduta?",
+   "resposta": "nova ultrassonografia em 4 a 6 semanas",
+   "explicacao": "O **IIa** antes de 3 meses é imaturo fisiológico: **nova ultrassonografia em 4 a 6 semanas**, porque a maioria amadurece sozinha. IIb, IIc e D vão para o Pavlik.",
+   "opcoes": [
+    "nova ultrassonografia em 4 a 6 semanas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b79177afbf17",
+   "origem": "autoral",
+   "trecho": "- **IIa** antes de 3 meses: **nova ultrassonografia** em 4 a 6 semanas; a maioria amadurece sozinha.",
+   "criadoEm": "2026-10-27",
+   "alerta": "Os intervalos da questão de origem agrupam subtipos do tipo II de Graf; a classificação detalhada considera a idade do lactente e os valores exatos de alfa e beta."
+  },
+  {
+   "id": "fc-pediatria-0114-pc1",
+   "questao": "pediatria-0114",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Graf III e IV têm alfa menor que 43°. Que achado da cartilagem acetabular define o tipo IV?",
+   "resposta": "lábio invertido",
+   "explicacao": "Graf **III**: luxado, lábio **evertido**. Graf **IV**: luxado, lábio **invertido** (interposto no acetábulo).",
+   "opcoes": [
+    "lábio invertido",
+    "lábio evertido"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "b79177afbf17",
+   "origem": "autoral",
+   "trecho": "| IV | Alfa menor que 43° | Luxado, lábio invertido |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Os intervalos da questão de origem agrupam subtipos do tipo II de Graf; a classificação detalhada considera a idade do lactente e os valores exatos de alfa e beta."
   },
   {
    "id": "fc-pediatria-0132-co1",
@@ -1511,6 +2272,90 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0172-tb1",
+   "questao": "pediatria-0172",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "subtemas": [
+    "Displasia do desenvolvimento do quadril"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Qual ângulo centro-borda lateral (Wiberg) caracteriza a displasia do quadril no adulto jovem?",
+   "resposta": "Menor que 20°",
+   "explicacao": "Centro-borda lateral: normal **25 a 40°**; displasia **menor que 20°**, em geral com Tönnis maior que 10°.",
+   "opcoes": [
+    "Menor que 20°"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "10dd1b3c69b6",
+   "origem": "autoral",
+   "trecho": "| Centro-borda lateral (Wiberg) | 25 a 40° | Menor que 20° |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Os pontos de corte para displasia limítrofe variam entre estudos: centro-borda lateral menor que 20 graus é displasia franca; de 20 a 25 graus pede avaliação de vários parâmetros."
+  },
+  {
+   "id": "fc-pediatria-0177-cl1",
+   "questao": "pediatria-0177",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "GMFCS: criança que não deambula de forma funcional, mas consegue mobilizar a própria cadeira (em geral motorizada). Qual nível?",
+   "resposta": "IV",
+   "explicacao": "**IV**: mobilidade limitada, autolocomoção com cadeira motorizada. No **V**, é transportada por outra pessoa; no **III**, anda com andador ou muletas.",
+   "opcoes": [
+    "III",
+    "IV",
+    "V"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "f1e242787353",
+   "origem": "autoral",
+   "trecho": "| **IV** | **Mobilidade limitada**: na maioria dos ambientes, **não anda**; tem autolocomoção, geralmente com **cadeira motorizada** |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0177-co1",
+   "questao": "pediatria-0177",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na paralisia cerebral nível V do GMFCS, a incidência de deslocamento do quadril chega a cerca de quanto?",
+   "resposta": "90%",
+   "explicacao": "O risco cresce com o nível: quase nulo no I e cerca de **90%** no V. Por isso a vigilância radiográfica do quadril é guiada pelo GMFCS.",
+   "opcoes": [
+    "90%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "f1e242787353",
+   "origem": "autoral",
+   "trecho": "a incidência de deslocamento do quadril chega a cerca de **90%** no nível V",
+   "criadoEm": "2026-10-27"
+  },
+  {
    "id": "fc-pediatria-0393-cl1",
    "questao": "pediatria-0393",
    "area": "Ortopedia pediátrica",
@@ -1646,6 +2491,34 @@
    "origem": "autoral",
    "trecho": "O tipo **A** de Aitken, em que o defeito ossifica, aproxima-se do tipo **1b**.",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0409-co1",
+   "questao": "pediatria-0409",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Paralisia cerebral espástica com rotação interna do quadril que prejudica a marcha: qual cirurgia corrige a torção?",
+   "resposta": "osteotomia derrotativa do fêmur",
+   "explicacao": "A **osteotomia derrotativa do fêmur** (proximal ou distal) corrige a anteversão persistente, depois de confirmar o nível da deformidade no exame em prono e na análise da marcha.",
+   "opcoes": [
+    "osteotomia derrotativa do fêmur"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "e0df6bb270c5",
+   "origem": "autoral",
+   "trecho": "faz-se a **osteotomia derrotativa do fêmur** (proximal ou distal)",
+   "criadoEm": "2026-10-27",
+   "alerta": "A nomenclatura da rotação pélvica na hemiplegia varia: muitos laboratórios descrevem retração (rotação posterior) da hemipelve acometida. A banca considerou rotação medial, acompanhando a rotação interna do quadril."
   },
   {
    "id": "fc-pediatria-0410-co1",
@@ -8676,6 +9549,62 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-pediatria-0733-co1",
+   "questao": "pediatria-0733",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes",
+    "Coluna e pescoço da criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Torcicolo doloroso na criança após amigdalite ou adenoamigdalectomia (síndrome de Grisel): qual é a lesão?",
+   "resposta": "subluxação rotatória atlantoaxial",
+   "explicacao": "Grisel: **subluxação rotatória atlantoaxial** não traumática, pela inflamação que chega aos ligamentos de C1-C2. A maioria reduz com tratamento conservador precoce.",
+   "opcoes": [
+    "subluxação rotatória atlantoaxial"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "fbce527b169c",
+   "origem": "autoral",
+   "trecho": "É a **subluxação rotatória atlantoaxial** (C1 sobre C2) não traumática que surge após **infecção da cabeça e do pescoço**",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0733-co2",
+   "questao": "pediatria-0733",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes",
+    "Coluna e pescoço da criança"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome de Grisel, de que lado fica o esternocleidomastoideo contraído?",
+   "resposta": "do lado para o qual o queixo aponta",
+   "explicacao": "Contraído **do lado para o qual o queixo aponta**, tentando corrigir a posição de cock-robin (cabeça inclinada para um lado e rodada para o outro).",
+   "opcoes": [
+    "do lado para o qual o queixo aponta"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "fbce527b169c",
+   "origem": "autoral",
+   "trecho": "com o **esternocleidomastoideo contraído do lado para o qual o queixo aponta**",
+   "criadoEm": "2026-10-27"
+  },
+  {
    "id": "fc-pediatria-0735-co1",
    "questao": "pediatria-0735",
    "area": "Ortopedia pediátrica",
@@ -8701,6 +9630,114 @@
    "origem": "autoral",
    "trecho": "colide com o teto do intercôndilo",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0736-co1",
+   "questao": "pediatria-0736",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Sinostose radioulnar congênita unilateral: em que posição se deixa o antebraço na osteotomia derrotativa?",
+   "resposta": "posição neutra ou leve pronação (10 a 20 graus)",
+   "explicacao": "Unilateral: **neutra ou leve pronação (10 a 20 graus)**. Bilateral: o dominante em leve pronação e o outro em neutro ou leve supinação.",
+   "opcoes": [
+    "posição neutra ou leve pronação (10 a 20 graus)"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "9e36f02d25ad",
+   "origem": "autoral",
+   "trecho": "- **Unilateral**: posição neutra ou leve pronação (10 a 20 graus).",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0736-np1",
+   "questao": "pediatria-0736",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Osteotomia derrotativa na sinostose radioulnar: correções acima de {{c1::60 graus}} aumentam o risco de síndrome compartimental.",
+   "resposta": "60 graus",
+   "explicacao": "Grandes rotações num só tempo estiram os vasos e comprimem os compartimentos. Limitar a correção, fazer em dois tempos e vigiar.",
+   "opcoes": [
+    "60 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "9e36f02d25ad",
+   "origem": "autoral",
+   "trecho": "> Osteotomia derrotativa na sinostose radioulnar: correções acima de 60 graus aumentam o risco de síndrome compartimental.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0741-co1",
+   "questao": "pediatria-0741",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No quadril luxado da paralisia cerebral, por que o trocânter menor fica aumentado e proeminente?",
+   "resposta": "tração contínua do iliopsoas",
+   "explicacao": "A **tração contínua do iliopsoas** espástico sobre a apófise em crescimento aumenta o trocânter menor. Junto vêm coxa valga, anteversão aumentada e acetábulo raso.",
+   "opcoes": [
+    "tração contínua do iliopsoas"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "e0aa1a8bf79b",
+   "origem": "autoral",
+   "trecho": "| **Trocânter menor** | **Aumentado e proeminente**, pela tração contínua do iliopsoas |",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0741-co2",
+   "questao": "pediatria-0741",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na vigilância do quadril na paralisia cerebral, acima de qual índice de migração de Reimers se indica liberação de adutores e iliopsoas?",
+   "resposta": "30% a 40%",
+   "explicacao": "Acima de **30% a 40%**: liberação de partes moles. Acima de 50% a 60% ou luxação: reconstrução com osteotomia femoral varizante e derrotativa e acetabuloplastia.",
+   "opcoes": [
+    "30% a 40%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2007,
+   "fonte": "e0aa1a8bf79b",
+   "origem": "autoral",
+   "trecho": "Acima de 30% a 40%: liberação de adutores e iliopsoas",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-pediatria-0742-co1",
@@ -8867,6 +9904,145 @@
    "origem": "autoral",
    "trecho": "Israeli | Cotovelo fletido, pronação com pressão sobre a cabeça",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0755-co1",
+   "questao": "pediatria-0755",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Trauma da coluna na criança",
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A SCIWORA (lesão medular sem alteração radiográfica) é mais comum em crianças abaixo de qual idade?",
+   "resposta": "abaixo de 8 anos",
+   "explicacao": "**Abaixo de 8 anos**: a coluna infantil é muito mais elástica que a medula e se deforma sem fratura visível. Lesões mais altas e mais graves.",
+   "opcoes": [
+    "abaixo de 8 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "528c8fb617ed",
+   "origem": "autoral",
+   "trecho": "Mais comum em crianças **abaixo de 8 anos**",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0755-co2",
+   "questao": "pediatria-0755",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Trauma da coluna na criança",
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na SCIWORA, qual exame é essencial para o diagnóstico e o prognóstico?",
+   "resposta": "ressonância magnética",
+   "explicacao": "A **ressonância magnética** mostra edema, hemorragia ou lesão ligamentar; normal, indica melhor prognóstico. Até metade tem sintomas de início tardio.",
+   "opcoes": [
+    "ressonância magnética"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "528c8fb617ed",
+   "origem": "autoral",
+   "trecho": "A **ressonância magnética** é essencial",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0760-co1",
+   "questao": "pediatria-0760",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Epifisiólise proximal do fêmur",
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que idades sugerem epifisiólise atípica, com causa endócrina a investigar?",
+   "resposta": "abaixo de 10 anos ou acima de 16 anos",
+   "explicacao": "Atípica: idade **abaixo de 10 ou acima de 16 anos**, criança magra, baixa estatura ou bilateral. Procurar hipotireoidismo, hormônio do crescimento, hipogonadismo, osteodistrofia renal.",
+   "opcoes": [
+    "abaixo de 10 anos ou acima de 16 anos"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "c1d3fb7d96b3",
+   "origem": "autoral",
+   "trecho": "- Idade **abaixo de 10 anos** ou **acima de 16 anos**.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0760-np1",
+   "questao": "pediatria-0760",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Epifisiólise proximal do fêmur",
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 1,
+   "frente": "Epifisiólise proximal do fêmur na síndrome de Down: associada ao {{c1::hipotireoidismo}}.",
+   "resposta": "hipotireoidismo",
+   "explicacao": "O **hipotireoidismo** é frequente na Down e deixa a zona hipertrófica alargada e frágil. Investigar TSH e T4 livre e pensar na fixação profilática contralateral.",
+   "opcoes": [
+    "hipotireoidismo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "c1d3fb7d96b3",
+   "origem": "autoral",
+   "trecho": "> Epifisiólise na síndrome de Down: associada ao hipotireoidismo.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0765-np1",
+   "questao": "pediatria-0765",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Displasias esqueléticas e síndromes",
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "{{c1::Morquio}} (MPS IV): platispondilia grave, odontoide hipoplásico e inteligência normal.",
+   "resposta": "Morquio",
+   "explicacao": "Na **Morquio**, a platispondilia é universal; a instabilidade C1-C2 é a principal causa de morbidade e morte.",
+   "opcoes": [
+    "Morquio"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "a54be6f2b579",
+   "origem": "autoral",
+   "trecho": "> Morquio (MPS IV): platispondilia grave, odontoide hipoplásico e inteligência normal.",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-pediatria-0766-co1",
@@ -9037,6 +10213,114 @@
    "origem": "autoral",
    "trecho": "| Necrose ou parada de crescimento da tróclea | Deformidade em \"rabo de peixe\" |",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-pediatria-0774-co1",
+   "questao": "pediatria-0774",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na hemiplegia espástica com punho fletido, qual tendão se transfere para o extensor radial curto do carpo?",
+   "resposta": "flexor ulnar do carpo",
+   "explicacao": "Transferir o **flexor ulnar do carpo** para o extensor radial curto do carpo tira um flexor e dá extensão ativa ao punho (Green).",
+   "opcoes": [
+    "flexor ulnar do carpo"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "99acde4f5742",
+   "origem": "autoral",
+   "trecho": "transferindo o flexor ulnar do carpo para o extensor radial curto do carpo",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0774-np1",
+   "questao": "pediatria-0774",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "{{c1::Hemiplegia espástica}}, com padrão previsível e boa sensibilidade, é o melhor cenário para a cirurgia do membro superior.",
+   "resposta": "Hemiplegia espástica",
+   "explicacao": "A espasticidade dá deformidade **constante**; no atetoide, o tônus flutua e a mesma transferência pode gerar a deformidade oposta.",
+   "opcoes": [
+    "Hemiplegia espástica"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "99acde4f5742",
+   "origem": "autoral",
+   "trecho": "> Hemiplegia espástica, com padrão previsível e boa sensibilidade, é o melhor cenário para a cirurgia do membro superior.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0791-co1",
+   "questao": "pediatria-0791",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Que proteína do complexo SNARE a toxina botulínica tipo A cliva na terminação nervosa?",
+   "resposta": "SNAP-25",
+   "explicacao": "Sem a **SNAP-25**, as vesículas não se fundem e a liberação de acetilcolina **diminui**: denervação química temporária e fraqueza focal.",
+   "opcoes": [
+    "SNAP-25"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "29952f95d7ab",
+   "origem": "autoral",
+   "trecho": "**cliva a proteína SNAP-25**",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-pediatria-0791-co2",
+   "questao": "pediatria-0791",
+   "area": "Ortopedia pediátrica",
+   "areaId": "pediatria",
+   "assunto": "Paralisia cerebral",
+   "subtemas": [
+    "Paralisia cerebral"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quanto tempo dura o efeito da toxina botulínica aplicada para espasticidade?",
+   "resposta": "3 a 6 meses",
+   "explicacao": "Pico em 2 a 4 semanas e duração de cerca de **3 a 6 meses**, até que brotamentos nervosos restabeleçam a transmissão. Não corrige contratura fixa.",
+   "opcoes": [
+    "3 a 6 meses"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "29952f95d7ab",
+   "origem": "autoral",
+   "trecho": "dura cerca de **3 a 6 meses**",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-pediatria-0794-co1",

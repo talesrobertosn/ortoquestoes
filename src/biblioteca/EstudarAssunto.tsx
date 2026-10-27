@@ -6,6 +6,7 @@ import { Icone } from '../componentes/Icone'
 import { corDaArea } from '../dados/coresAreas'
 import { href, navegar } from '../util/rotas'
 import { bibliotecaVisivel, resumosDosSubtemas, usarIndiceBiblioteca } from './recomendar'
+import { flashcardsDosSubtemas, linkFlashcards, usarAreasDosFlashcards } from './ligacoes'
 import '../estilos/componentes/BibliotecaConvite.css'
 
 /** Questão → trecho do resumo que a ensina (public/biblioteca/questoes.json, gerado pelo script da Biblioteca). */
@@ -35,6 +36,7 @@ export function EstudarAssunto({ questao, subtemas = [], baseResumo }: { questao
   const [no, definirNo] = useState<HTMLElement | null>(null)
   const relogio = useRef<number | undefined>(undefined)
   const biblioteca = usarIndiceBiblioteca()
+  const areasFc = usarAreasDosFlashcards()
   const { premium } = usarPremium()
   const ativo = bibliotecaVisivel()
   useEffect(() => {
@@ -66,6 +68,8 @@ export function EstudarAssunto({ questao, subtemas = [], baseResumo }: { questao
   const livroCurto = nomeCurtoDoLivro(capitulo.livro)
   const tema = capitulo.titulo.toLowerCase()
   const tituloLongo = capitulo.titulo.length > 34
+  // Questão → flashcards do tema (discreto, embaixo do convite): os subtemas da questão; sem eles, os do resumo.
+  const alvoFc = flashcardsDosSubtemas(areasFc, subtemas.length ? subtemas : capitulo.subtemas ?? [], capitulo.especialidade)
 
   const abrir = (e: MouseEvent<HTMLAnchorElement>) => {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
@@ -127,6 +131,7 @@ export function EstudarAssunto({ questao, subtemas = [], baseResumo }: { questao
             {citada ? 'Ler o trecho que explica' : 'Ler o resumo'}
           </a>
           <small>~{capitulo.minutos} min · {numero ? `Cap. ${numero}` : capitulo.capitulo.split('·')[0].trim()} do {livroCurto}{fechado ? ' · para assinantes' : ''}</small>
+          {alvoFc && <a className="bib-convite__fc" href={href(linkFlashcards(alvoFc, capitulo.titulo))}>Revisar em flashcards</a>}
         </div>
       </div>
     </aside>

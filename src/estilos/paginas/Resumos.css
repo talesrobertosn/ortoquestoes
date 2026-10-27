@@ -58,6 +58,9 @@
 .lr-capa__ref { margin: 0; font-size: 0.82em; line-height: 1.5; color: var(--lr-suave); }
 .lr-capa__meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0.8rem 0 0; font-family: var(--fonte-texto, system-ui); font-size: 0.78rem; color: var(--lr-suave); }
 .lr-capa__ok { display: inline-flex; align-items: center; gap: 0.25rem; color: #3e9c6a; font-weight: 700; }
+.lr.lr--fundo { z-index: 60; }
+.lr-capa__fc { display: inline-flex; align-items: center; gap: 0.25rem; color: inherit; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.lr-capa__fc:hover { color: var(--lr-texto, inherit); }
 
 .lr-secao { margin-bottom: 2.4rem; }
 .lr-pagina h2 { margin: 2.6rem 0 0.3rem; font-size: 1.42em; line-height: 1.2; font-weight: 700; letter-spacing: -0.005em; scroll-margin-top: 80px; }

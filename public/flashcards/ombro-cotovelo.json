@@ -953,6 +953,60 @@
    "fonte": "f4e547dc487a"
   },
   {
+   "id": "fc-ombro-cotovelo-0016-co1",
+   "questao": "ombro-cotovelo-0016",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais são os estabilizadores estáticos primários do cotovelo?",
+   "resposta": "o processo coronoide e os ligamentos colaterais medial e lateral",
+   "explicacao": "Primários: **coronoide**, **colateral medial** e **colateral lateral**. Secundários: cápsula, radiocapitelar e origens dos flexores e extensores.",
+   "opcoes": [
+    "o processo coronoide e os ligamentos colaterais medial e lateral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0fe2c8250fc1",
+   "origem": "autoral",
+   "trecho": "Entre os **primários** estão o processo coronoide e os ligamentos colaterais medial e lateral.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0016-pc1",
+   "questao": "ombro-cotovelo-0016",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Coronoide e colaterais são os estabilizadores primários do cotovelo. Quais são os secundários?",
+   "resposta": "a cápsula, a articulação radiocapitelar e as origens comuns dos flexores e extensores",
+   "explicacao": "Os **secundários** ganham importância quando um primário falha: por isso a cabeça do rádio não deve ser retirada sem repor o apoio se o colateral medial rompeu.",
+   "opcoes": [
+    "a cápsula, a articulação radiocapitelar e as origens comuns dos flexores e extensores"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "0fe2c8250fc1",
+   "origem": "autoral",
+   "trecho": "Entre os **secundários**, a cápsula, a articulação radiocapitelar e as origens comuns dos flexores e extensores.",
+   "criadoEm": "2026-10-27"
+  },
+  {
    "id": "fc-ombro-cotovelo-0017-co1",
    "questao": "ombro-cotovelo-0017",
    "area": "Ombro e cotovelo",
@@ -12613,6 +12667,198 @@
    "origem": "autoral",
    "trecho": "| Ventre muscular | Tratamento conservador |",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0498-co1",
+   "questao": "ombro-cotovelo-0498",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em que parte do arco de movimento a banda ulnar do colateral lateral do cotovelo permanece tensa?",
+   "resposta": "tanto em extensão quanto em flexão",
+   "explicacao": "Ela segue funcionalmente tensa **tanto em extensão quanto em flexão**, o que evita a subluxação rotatória posterolateral em todo o arco.",
+   "opcoes": [
+    "tanto em extensão quanto em flexão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "5841496fa025",
+   "origem": "autoral",
+   "trecho": "continue funcionalmente tensionada tanto em extensão quanto em flexão",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0498-co2",
+   "questao": "ombro-cotovelo-0498",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Instabilidade rotatória posterolateral do cotovelo: em que gesto do dia a dia o paciente costuma sentir falseio?",
+   "resposta": "ao se levantar de uma cadeira apoiando a mão",
+   "explicacao": "Falseio **ao se levantar de uma cadeira apoiando a mão** (carga axial com antebraço supinado), o mesmo mecanismo do teste do pivô.",
+   "opcoes": [
+    "ao se levantar de uma cadeira apoiando a mão"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "5841496fa025",
+   "origem": "autoral",
+   "trecho": "O paciente pode sentir falseio ao se levantar de uma cadeira apoiando a mão",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0508-ar1",
+   "questao": "ombro-cotovelo-0508",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Luxação do cotovelo com pulsos distais ausentes: isso contraindica a tentativa de redução fechada?",
+   "resposta": "não é uma contraindicação automática",
+   "explicacao": "A redução costuma devolver o fluxo da braquial: **não é contraindicação**. Documentar o pulso antes e depois; se o comprometimento persistir, exploração urgente.",
+   "opcoes": [
+    "não é uma contraindicação automática"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "5bc05422d7ef",
+   "origem": "autoral",
+   "trecho": "por isso, pulso ausente não é uma contraindicação automática à tentativa fechada",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0509-np1",
+   "questao": "ombro-cotovelo-0509",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Lesões do manguito rotador",
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Na prova",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Cabeça do rádio cominutiva com colateral medial roto ou lesão de Essex-Lopresti: {{c1::não ressecar}} sem restabelecer o apoio.",
+   "resposta": "não ressecar",
+   "explicacao": "Com o medial roto, a cabeça radial é o apoio contra o **valgo**; na Essex-Lopresti, contra a migração proximal do rádio. Fixar ou trocar por prótese, nunca ressecar isolada.",
+   "opcoes": [
+    "não ressecar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "e911f0f85103",
+   "origem": "autoral",
+   "trecho": "> **Na prova:** cabeça radial com medial roto ou Essex-Lopresti: não ressecar sem restabelecer o apoio.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0513-co1",
+   "questao": "ombro-cotovelo-0513",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade rotatória posterolateral crônica do cotovelo, qual é o elemento central do tratamento cirúrgico?",
+   "resposta": "reconstrução anatômica da porção ulnar com enxerto",
+   "explicacao": "O tecido antigo não sustenta reparo simples: faz-se a **reconstrução anatômica da porção ulnar** do colateral lateral **com enxerto**.",
+   "opcoes": [
+    "reconstrução anatômica da porção ulnar com enxerto"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "260027b0fc25",
+   "origem": "autoral",
+   "trecho": "A reconstrução anatômica da porção ulnar com enxerto",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0516-ar1",
+   "questao": "ombro-cotovelo-0516",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Exame físico do cotovelo",
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Por que o estresse em valgo do cotovelo em extensão completa pode enganar?",
+   "resposta": "o olécrano encaixado na fossa pode mascarar frouxidão ligamentar",
+   "explicacao": "Em extensão, **o olécrano encaixado na fossa** dá estabilidade óssea e **mascara a frouxidão** do colateral medial.",
+   "opcoes": [
+    "o olécrano encaixado na fossa pode mascarar frouxidão ligamentar"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "ff98c89de10f",
+   "origem": "autoral",
+   "trecho": "Em extensão completa, o olécrano encaixado na fossa pode mascarar frouxidão ligamentar.",
+   "criadoEm": "2026-10-27"
+  },
+  {
+   "id": "fc-ombro-cotovelo-0516-co1",
+   "questao": "ombro-cotovelo-0516",
+   "area": "Ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "assunto": "Instabilidade do cotovelo",
+   "subtemas": [
+    "Exame físico do cotovelo",
+    "Instabilidade do cotovelo"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para avaliar o colateral medial do cotovelo no estresse em valgo, com quanto de flexão se faz o teste?",
+   "resposta": "30 graus",
+   "explicacao": "Com cerca de **30 graus** de flexão, o olécrano sai da fossa e o teste isola o colateral medial. Fazer sempre antes de aceitar a ressecção da cabeça do rádio.",
+   "opcoes": [
+    "30 graus"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2006,
+   "fonte": "ff98c89de10f",
+   "origem": "autoral",
+   "trecho": "Com aproximadamente 30 graus de flexão, esse bloqueio ósseo diminui e o estresse em valgo avalia melhor o ligamento colateral medial",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-ombro-cotovelo-0520-q",

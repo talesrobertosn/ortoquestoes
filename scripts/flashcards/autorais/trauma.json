@@ -659,6 +659,62 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0081-co1",
+   "questao": "trauma-0081",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas fraturas da tíbia da criança, com que frequência ocorre síndrome compartimental?",
+   "resposta": "2 a 11%",
+   "explicacao": "Na tíbia da criança, a síndrome compartimental ocorre em **2 a 11%**, mais do que se pensava; abrir o gesso até a pele e reavaliar com frequência.",
+   "opcoes": [
+    "2 a 11%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "ba8f9e1838bf",
+   "origem": "autoral",
+   "trecho": "nas fraturas da **tíbia** da criança, a síndrome compartimental ocorre em **2 a 11%**",
+   "criadoEm": "2026-10-27",
+   "alerta": "Séries de fraturas da tíbia em crianças (como a de Shore) apontam idade acima de 14 anos e peso acima de 50 kg como os preditores mais fortes; a banca da questão de origem indicou a baixa idade."
+  },
+  {
+   "id": "fc-trauma-0081-co2",
+   "questao": "trauma-0081",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas séries de fratura da tíbia na infância (Shore), quais são os preditores mais fortes de síndrome compartimental?",
+   "resposta": "idade acima de 14 anos e o peso acima de 50 kg",
+   "explicacao": "**Idade acima de 14 anos** e **peso acima de 50 kg**: o adolescente já tem fáscia menos complacente e musculatura maior, como o adulto.",
+   "opcoes": [
+    "idade acima de 14 anos e o peso acima de 50 kg"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2021,
+   "fonte": "ba8f9e1838bf",
+   "origem": "autoral",
+   "trecho": "estudos como o de Shore apontam a **idade acima de 14 anos** e o **peso acima de 50 kg** como os mais fortes",
+   "criadoEm": "2026-10-27",
+   "alerta": "A banca da questão de origem considerou a baixa idade o preditor mais forte, pela dificuldade de avaliar a criança pequena; as séries de Shore apontam idade acima de 14 anos e peso acima de 50 kg."
+  },
+  {
    "id": "fc-trauma-0089-cl1",
    "questao": "trauma-0089",
    "area": "Trauma adulto",
@@ -794,6 +850,97 @@
    "origem": "autoral",
    "trecho": "**O sinal da covinha (dimple sign).**",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0116-ar1",
+   "questao": "trauma-0116",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental",
+    "Fraturas expostas"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na fratura exposta da tíbia, a ferida aberta alivia de forma confiável a pressão dos compartimentos da perna?",
+   "resposta": "não descomprime",
+   "explicacao": "A ferida **não descomprime** de forma confiável: a fáscia costuma ficar íntegra ou abrir num ponto pequeno. Fratura exposta também pode precisar de fasciotomia dos quatro compartimentos.",
+   "opcoes": [
+    "não descomprime"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5f9f5ee54b2e",
+   "origem": "autoral",
+   "trecho": "A ferida aberta **não descomprime** o compartimento de forma confiável",
+   "criadoEm": "2026-10-27",
+   "alerta": "O enunciado de origem fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas de Tscherne."
+  },
+  {
+   "id": "fc-trauma-0116-cl1",
+   "questao": "trauma-0116",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental",
+    "Fraturas expostas"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na classificação de Tscherne das fraturas fechadas, qual grau inclui a síndrome compartimental estabelecida?",
+   "resposta": "3",
+   "explicacao": "Tscherne fechada: **grau 2** tem contusão profunda com **risco iminente**; **grau 3** inclui a síndrome compartimental **estabelecida**, esmagamento ou lesão vascular.",
+   "opcoes": [
+    "1",
+    "2",
+    "3"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5f9f5ee54b2e",
+   "origem": "autoral",
+   "trecho": "| **3** | Contusão extensa, esmagamento, descolamento subcutâneo, lesão muscular grave, **síndrome compartimental estabelecida** ou lesão vascular |",
+   "criadoEm": "2026-10-27",
+   "alerta": "O enunciado de origem fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas de Tscherne."
+  },
+  {
+   "id": "fc-trauma-0116-cl2",
+   "questao": "trauma-0116",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental",
+    "Fraturas expostas"
+   ],
+   "tipo": "Classificação",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Tscherne, fratura fechada: qual grau tem contusão profunda e contaminada, com risco iminente de síndrome compartimental?",
+   "resposta": "2",
+   "explicacao": "**Grau 2**: contusão profunda, **risco iminente**. Quando a síndrome já se instalou, a lesão passa ao grau 3.",
+   "opcoes": [
+    "1",
+    "2",
+    "3"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "5f9f5ee54b2e",
+   "origem": "autoral",
+   "trecho": "| 2 | Contusão **profunda** e contaminada, com **risco iminente** de síndrome compartimental |",
+   "criadoEm": "2026-10-27",
+   "alerta": "O enunciado de origem fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas de Tscherne."
   },
   {
    "id": "fc-trauma-0125-cl1",
@@ -2296,6 +2443,33 @@
    "origem": "autoral",
    "trecho": "Na revascularização, faz-se **fasciotomia** profilática.",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-0306-ar1",
+   "questao": "trauma-0306",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Armadilha",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O rádio distal responde por parte relevante dos casos de síndrome compartimental. Mas qual fração das fraturas do rádio distal desenvolve a síndrome?",
+   "resposta": "0,25%",
+   "explicacao": "Fratura muito comum pesa na estatística dos **casos**, mas a chance individual é baixa: cerca de **0,25%** das fraturas do rádio distal.",
+   "opcoes": [
+    "0,25%"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "Ortopedia",
+   "ano": null,
+   "fonte": "6a0d3edadec6",
+   "origem": "autoral",
+   "trecho": "somente cerca de 0,25% das fraturas cursam com síndrome",
+   "criadoEm": "2026-10-27"
   },
   {
    "id": "fc-trauma-0310-cl1",
@@ -4440,6 +4614,33 @@
    "criadoEm": "2026-10-15"
   },
   {
+   "id": "fc-trauma-0983-co1",
+   "questao": "trauma-0983",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Conceito",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na monitorização contínua da pressão compartimental, a que distância do foco de fratura fica a ponta do cateter?",
+   "resposta": "a até 5 cm do foco",
+   "explicacao": "A ponta fica **a até 5 cm do foco**, onde a pressão é mais alta; medir longe dele subestima o pico.",
+   "opcoes": [
+    "a até 5 cm do foco"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "d69ec42a60de",
+   "origem": "autoral",
+   "trecho": "A ponta é colocada a até 5 cm do foco para captar o pico",
+   "criadoEm": "2026-10-27"
+  },
+  {
    "id": "fc-trauma-0990-co1",
    "questao": "trauma-0990",
    "area": "Trauma adulto",
@@ -5296,6 +5497,130 @@
    "origem": "autoral",
    "trecho": "pode evoluir para contratura isquêmica de Volkmann",
    "criadoEm": "2026-10-15"
+  },
+  {
+   "id": "fc-trauma-1142-pc1",
+   "questao": "trauma-1142",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Par confundível",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hipoestesia no dorso do pé, território do nervo fibular superficial: qual compartimento da perna?",
+   "resposta": "Lateral",
+   "explicacao": "O **fibular superficial** corre no compartimento **lateral** (fibulares longo e curto) e sensibiliza o dorso do pé. Não confundir com a face dorsolateral (sural, posterior superficial).",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "9fd3a6f64c70",
+   "origem": "autoral",
+   "trecho": "| Lateral | Fibular superficial; dorso do pé |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "id": "fc-trauma-1142-tb1",
+   "questao": "trauma-1142",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na síndrome compartimental da perna, hipoestesia no primeiro espaço interdigital (nervo fibular profundo) indica qual compartimento?",
+   "resposta": "Anterior",
+   "explicacao": "O **fibular profundo** corre no compartimento **anterior** e sensibiliza o primeiro espaço interdigital. Sensibilidade normal não exclui a síndrome.",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "9fd3a6f64c70",
+   "origem": "autoral",
+   "trecho": "| Anterior | Fibular profundo; primeiro espaço interdigital |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "id": "fc-trauma-1142-tb2",
+   "questao": "trauma-1142",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Hipoestesia na planta do pé (nervo tibial) na síndrome compartimental da perna aponta para qual compartimento?",
+   "resposta": "Posterior profundo",
+   "explicacao": "O **nervo tibial** corre no **posterior profundo** e sensibiliza a planta do pé.",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "9fd3a6f64c70",
+   "origem": "autoral",
+   "trecho": "| Posterior profundo | Tibial; planta do pé |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
+  },
+  {
+   "id": "fc-trauma-1142-tb3",
+   "questao": "trauma-1142",
+   "area": "Trauma adulto",
+   "areaId": "trauma",
+   "assunto": "Síndrome compartimental",
+   "subtemas": [
+    "Síndrome compartimental"
+   ],
+   "tipo": "Tabela",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Perda de sensibilidade na face dorsolateral do pé, pelo nervo sural: qual compartimento da perna está sofrendo?",
+   "resposta": "Posterior superficial",
+   "explicacao": "Face **dorsolateral** do pé é território do **sural**, ligado ao **posterior superficial** (gastrocnêmio, sóleo e plantar). O dorso do pé é do fibular superficial (lateral).",
+   "opcoes": [
+    "Anterior",
+    "Lateral",
+    "Posterior superficial",
+    "Posterior profundo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "9fd3a6f64c70",
+   "origem": "autoral",
+   "trecho": "| Posterior superficial | Sural; face dorsolateral do pé |",
+   "criadoEm": "2026-10-27",
+   "alerta": "Não há gabarito oficial disponível; a resposta segue a tabela de compartimentos do resumo. A localização sensitiva se interpreta com o restante do exame, sem esperar déficit neurológico."
   },
   {
    "id": "fc-trauma-1194-cl1",
