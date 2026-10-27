@@ -75,3 +75,14 @@ Tratar como uma nova fase de fonte primária. Conferir edição e página impres
 ## Continuidade automática (20/10/2026)
 
 Depois do pedido explícito de continuar sem depender de novas mensagens, foi ativada uma tarefa de retomada por hora (maior frequência da ferramenta). Cada execução deve consultar o remoto e os PRs abertos antes de selecionar IDs, executar a revisão e a publicação, e continuar de um checkpoint durável. Não é apenas um lembrete. Não encerrar depois de um lote se houver capacidade de seguir; não confundir revisão incompleta com conclusão integral. Enquanto houver só pendências reais de fonte, verificar material novo sem commits nem notificações repetitivas. O estado efetivo e as eventuais falhas de cada execução precisam ser conferidos; a existência da tarefa não substitui o catálogo nem comprova publicação.
+
+## Passagem de 27/10/2026 (Claude): lotes `cNN`
+
+Pedido do Tales: usar os resumos publicados para aprofundar os comentários de todas as questões ligadas a eles, em miniaula, com cada alternativa explicada e o resumo como fonte registrada. Para não colidir com os lotes numerados do Codex (que seguem na pediatria), esta passagem usa o prefixo `c` (`c01`, `c02`...).
+
+- `scripts/comentarios-resumos/montar.py rascunho.json lote.json` monta o lote a partir de um rascunho escrito à mão (comentário e blocos lidos): calcula os hashes e a fonte, acrescenta a referência padrão e não mexe no texto.
+- Temas: os capítulos de adulto mais cobrados e com mais pendências, começando por cotovelo (`rockwood10-40`) e coluna cervical (`rockwood10-48`). SIMÃO e SBCM ficam fora, pela regra da mão (Green com página, só com os livros).
+- Questão cuja resposta depende de dado ausente do resumo vai para `pendente-fonte`, com a frase exata que falta; não recebe `baseResumo`.
+- O link para o resumo exato já aparece no fim da questão: o convite da Biblioteca abre o trecho registrado em `baseResumo`, e o selo "Comentário baseado em resumo" leva à seção.
+
+Próximos: o resto do cotovelo (questões que pedem outras fontes já estão anotadas), luxação do joelho (`rockwood10-61`), patela (`rockwood10-60`), tálus (`rockwood10-66`), escápula (`rockwood10-33`), toracolombar (`rockwood10-49`).

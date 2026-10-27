@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 485,
+  "pendente": 426,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 423,
+  "pendente-fonte": 452,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1553
+  "revisada": 1583
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -80,10 +80,10 @@
    "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
    "estados": {
     "duplicada": 8,
-    "pendente": 63,
-    "pendente-fonte": 11,
+    "pendente": 37,
+    "pendente-fonte": 25,
     "pendente-inspecao-imagem": 15,
-    "revisada": 88
+    "revisada": 100
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -91,10 +91,10 @@
    "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
    "estados": {
     "duplicada": 8,
-    "pendente": 3,
-    "pendente-fonte": 21,
+    "pendente": 1,
+    "pendente-fonte": 22,
     "pendente-inspecao-imagem": 2,
-    "revisada": 70
+    "revisada": 71
    }
   },
   "rockwood10-44-carpo": {
@@ -126,11 +126,10 @@
    "titulo": "Fraturas e luxações da coluna cervical",
    "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
    "estados": {
-    "pendente": 33,
     "pendente-anulada": 1,
-    "pendente-fonte": 9,
+    "pendente-fonte": 24,
     "pendente-inspecao-imagem": 5,
-    "revisada": 84
+    "revisada": 102
    }
   },
   "rockwood10-49-fratura-toracolombar": {
@@ -138,10 +137,10 @@
    "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
    "estados": {
     "duplicada": 2,
-    "pendente": 9,
-    "pendente-fonte": 27,
+    "pendente": 6,
+    "pendente-fonte": 28,
     "pendente-inspecao-imagem": 7,
-    "revisada": 83
+    "revisada": 85
    }
   },
   "rockwood10-50-anel-pelvico": {
@@ -241,11 +240,11 @@
    "sha256": "87d6d3801acd0a898f9f495f32c425d9f1ef46cec55654703b3ee18fd0210521",
    "estados": {
     "duplicada": 5,
-    "pendente": 3,
+    "pendente": 2,
     "pendente-anulada": 2,
     "pendente-fonte": 45,
     "pendente-inspecao-imagem": 1,
-    "revisada": 99
+    "revisada": 100
    }
   },
   "rockwood10-64-pilao-tibial": {
@@ -361,8 +360,8 @@
    "titulo": "Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança",
    "sha256": "83ca2a9dfa93570e61a4fad89d751425e33499f473900970f8738dc6165e403d",
    "estados": {
-    "pendente": 26,
-    "pendente-fonte": 9,
+    "pendente": 25,
+    "pendente-fonte": 10,
     "pendente-inspecao-imagem": 4,
     "revisada": 66
    }
@@ -418,7 +417,7 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -441,7 +440,31 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "f1402b0b3e7414f40bec7a156c4795a17cdadf3d31437459528b26f230b2a94b"
+   "questaoSha256": "f1402b0b3e7414f40bec7a156c4795a17cdadf3d31437459528b26f230b2a94b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atendimento inicial e exame neurológico"
+      ],
+      "blocos": [
+       "atendimento-inicial-e-exame-neurologico-cef312c6",
+       "atendimento-inicial-e-exame-neurologico-ca374b67"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "68e272d6ea3e8e7e4980162d51817d687826a727492a894782932ea5341bbea7"
+     }
+    ],
+    "questaoSha256": "f1402b0b3e7414f40bec7a156c4795a17cdadf3d31437459528b26f230b2a94b",
+    "comentarioSha256": "5ad8a410c1a92bc63b5da765b310371fdd8e1d754dcbb49fe34b580bb1c345dc"
+   }
   },
   "coluna-0009": {
    "tema": "coluna",
@@ -492,7 +515,7 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -507,7 +530,35 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "1c3afee7bcbe98b58867ed873b716a53b4ce62a89349daf5ba50f9f2307162c8"
+   "questaoSha256": "1c3afee7bcbe98b58867ed873b716a53b4ce62a89349daf5ba50f9f2307162c8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "A medula cervical e as síndromes incompletas"
+      ],
+      "blocos": [
+       "a-medula-cervical-e-as-sindromes-incompletas-a7183487",
+       "a-medula-cervical-e-as-sindromes-incompletas-5af3c74e",
+       "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+       "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "c4ea1066421801a0bcd384f61f448282464cb0bc7b2f0f8f91af052f18448232"
+     }
+    ],
+    "questaoSha256": "1c3afee7bcbe98b58867ed873b716a53b4ce62a89349daf5ba50f9f2307162c8",
+    "comentarioSha256": "d6784a031e731d8fe92eace5285b8a5daf4d261c93bcb971bf8e635c02ebe85c"
+   }
   },
   "coluna-0023": {
    "tema": "coluna",
@@ -1454,7 +1505,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2023,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -1469,7 +1520,31 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "41069d969356cb1b4e60e0ab748794aa8afef234b113d0804fd955c5bd859d8c"
+   "questaoSha256": "41069d969356cb1b4e60e0ab748794aa8afef234b113d0804fd955c5bd859d8c",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atendimento inicial e exame neurológico"
+      ],
+      "blocos": [
+       "atendimento-inicial-e-exame-neurologico-d66ef39d",
+       "atendimento-inicial-e-exame-neurologico-8258b091"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "0b4aca1fa122b3f3f7f295f01585dc8975583f658efe613318e9a7c775857cb4"
+     }
+    ],
+    "questaoSha256": "41069d969356cb1b4e60e0ab748794aa8afef234b113d0804fd955c5bd859d8c",
+    "comentarioSha256": "4d8dcd9c346419eef490c1f3df440855e203a2baec7f6ac163f964f1b9bc702f"
+   }
   },
   "coluna-0146": {
    "tema": "coluna",
@@ -1628,8 +1703,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) explica o mecanismo simpático do choque neurogênico, mas não dá o nível medular (a banca usa a parte superior da coluna dorsal). Falta fonte que localize o nível acima do qual a lesão desencadeia o choque.",
    "temComentario": true,
    "citacoes": [
     {
@@ -1643,7 +1718,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "a1f9395c39543087f4539ebae536f267f55156aa7f0e2fc13202ef9380ea5b2a"
+   "questaoSha256": "a1f9395c39543087f4539ebae536f267f55156aa7f0e2fc13202ef9380ea5b2a",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) explica o mecanismo simpático do choque neurogênico, mas não dá o nível medular (a banca usa a parte superior da coluna dorsal). Falta fonte que localize o nível acima do qual a lesão desencadeia o choque."
   },
   "coluna-0159": {
    "tema": "coluna",
@@ -1857,8 +1933,8 @@
    ],
    "prova": "TARO",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) diz que a síndrome central é a lesão habitual da coluna espondilótica sem instabilidade, mas não dá a frequência relativa das síndromes incompletas. Falta fonte epidemiológica.",
    "temComentario": true,
    "citacoes": [
     {
@@ -1872,7 +1948,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "9d5e84678c9aa46a41badd337d6cbf29567628436ffe24e5e7ff71d05b78ded2"
+   "questaoSha256": "9d5e84678c9aa46a41badd337d6cbf29567628436ffe24e5e7ff71d05b78ded2",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) diz que a síndrome central é a lesão habitual da coluna espondilótica sem instabilidade, mas não dá a frequência relativa das síndromes incompletas. Falta fonte epidemiológica."
   },
   "coluna-0179": {
    "tema": "coluna",
@@ -2069,7 +2146,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -2084,7 +2161,33 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "1fde239c90e33a36132c6f957189df1f5123d472ae97dce3307bab91ae49546a"
+   "questaoSha256": "1fde239c90e33a36132c6f957189df1f5123d472ae97dce3307bab91ae49546a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "A medula cervical e as síndromes incompletas"
+      ],
+      "blocos": [
+       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+       "a-medula-cervical-e-as-sindromes-incompletas-568b3953",
+       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+       "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "ad1e9df069b56836bf4761da00526200fd42462393773634911dc2f7d386d834"
+     }
+    ],
+    "questaoSha256": "1fde239c90e33a36132c6f957189df1f5123d472ae97dce3307bab91ae49546a",
+    "comentarioSha256": "b97f40846f01e313d19fd393cdccb54e17b672f55fb958eb630644d64ed7a98b"
+   }
   },
   "coluna-0254": {
    "tema": "coluna",
@@ -2599,15 +2702,16 @@
    ],
    "prova": "TARO",
    "ano": 2023,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) não trata das sincondroses do atlas na criança nem da idade de fusão dos arcos. Precisa de fonte de coluna pediátrica.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "af171c93a43e383edcd01bab8ccb9867260281b3eb6853fcbe78ad8ca2e72fc2"
+   "questaoSha256": "af171c93a43e383edcd01bab8ccb9867260281b3eb6853fcbe78ad8ca2e72fc2",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) não trata das sincondroses do atlas na criança nem da idade de fusão dos arcos. Precisa de fonte de coluna pediátrica."
   },
   "coluna-0300": {
    "tema": "coluna",
@@ -2868,8 +2972,8 @@
    ],
    "prova": "TARO",
    "ano": 2020,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) traz só os limites de 3,5 mm e 11 graus, não a lista de pontos de WHITE e PANJABI. Precisa da tabela original de pontuação.",
    "temComentario": true,
    "citacoes": [
     {
@@ -2883,7 +2987,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "11c01f31e9ac134fb4b0d1fec4b8b2d75620092e9726d3feefee54360949ed03"
+   "questaoSha256": "11c01f31e9ac134fb4b0d1fec4b8b2d75620092e9726d3feefee54360949ed03",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) traz só os limites de 3,5 mm e 11 graus, não a lista de pontos de WHITE e PANJABI. Precisa da tabela original de pontuação."
   },
   "coluna-0320": {
    "tema": "coluna",
@@ -3045,8 +3150,8 @@
    ],
    "prova": "TARO",
    "ano": 2008,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) destaca infecção (com enxerto ou implante) e edema que obriga a adiar a extubação, sem dizer qual é a complicação mais grave da via transoral. Falta fonte que hierarquize.",
    "temComentario": true,
    "citacoes": [
     {
@@ -3060,7 +3165,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "d768098f7ff8d799a5b4a9b6d176542b93950ada4b8cef073ffadc88b8cccfe6"
+   "questaoSha256": "d768098f7ff8d799a5b4a9b6d176542b93950ada4b8cef073ffadc88b8cccfe6",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) destaca infecção (com enxerto ou implante) e edema que obriga a adiar a extubação, sem dizer qual é a complicação mais grave da via transoral. Falta fonte que hierarquize."
   },
   "coluna-0333": {
    "tema": "coluna",
@@ -3464,7 +3570,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3479,7 +3585,35 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "0f9d039beda1d5ca634347908e77d80a9da1153bdea92704c15c203c3a659776"
+   "questaoSha256": "0f9d039beda1d5ca634347908e77d80a9da1153bdea92704c15c203c3a659776",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "fratura-do-odontoide-c2-0213fd6f",
+       "fratura-do-odontoide-c2-b60ceadc",
+       "fratura-do-odontoide-c2-dd277a76",
+       "fratura-do-odontoide-c2-95546c7a",
+       "fratura-do-odontoide-c2-4660967c",
+       "fratura-do-odontoide-c2-dd2df648"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "a0c72f2f1ca9f3d2f8984e619591e4d7951b8a06fe65d4d0b43d7f4d6b94d9ce"
+     }
+    ],
+    "questaoSha256": "0f9d039beda1d5ca634347908e77d80a9da1153bdea92704c15c203c3a659776",
+    "comentarioSha256": "a7858a90122a2970cf8379cacd0f5ed7b4da55231e4455ffd42187d18a0c2f14"
+   }
   },
   "coluna-0361": {
    "tema": "coluna",
@@ -3489,14 +3623,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) é de trauma; não trata da radiculopatia por hérnia de disco cervical nem do tratamento conservador. Precisa de fonte de doença degenerativa cervical.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "74bbf28441888db8cf499cfa09cb4b2dd32878918b383a7cf8ed5ec065c091a5"
+   "questaoSha256": "74bbf28441888db8cf499cfa09cb4b2dd32878918b383a7cf8ed5ec065c091a5",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) é de trauma; não trata da radiculopatia por hérnia de disco cervical nem do tratamento conservador. Precisa de fonte de doença degenerativa cervical."
   },
   "coluna-0364": {
    "tema": "coluna",
@@ -3505,7 +3640,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3528,7 +3663,33 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-49-fratura-toracolombar"
    ],
-   "questaoSha256": "09290f74d04cc07ddff572eeab5217e94d1881fb6db9217b0c0f0ded8c3821e4"
+   "questaoSha256": "09290f74d04cc07ddff572eeab5217e94d1881fb6db9217b0c0f0ded8c3821e4",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atendimento inicial e exame neurológico"
+      ],
+      "blocos": [
+       "atendimento-inicial-e-exame-neurologico-d4ba34ec",
+       "atendimento-inicial-e-exame-neurologico-2975f211",
+       "atendimento-inicial-e-exame-neurologico-a0387c5a",
+       "atendimento-inicial-e-exame-neurologico-da838d62"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "9db9cd32e286721218ab51126e90e6fb616ff13c5fc12192d12c7e98a565e115"
+     }
+    ],
+    "questaoSha256": "09290f74d04cc07ddff572eeab5217e94d1881fb6db9217b0c0f0ded8c3821e4",
+    "comentarioSha256": "6a5ac442c8b27a6b0d97d8ac4a995fc7eeb878614df8d6796e8355fef3078786"
+   }
   },
   "coluna-0371": {
    "tema": "coluna",
@@ -3847,7 +4008,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3862,7 +4023,32 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "fa1ec5debdd9dff510e14cff385162b8c2d5d929dbf084eaa90ad365aa97f1a2"
+   "questaoSha256": "fa1ec5debdd9dff510e14cff385162b8c2d5d929dbf084eaa90ad365aa97f1a2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+       "vias-de-acesso-fixacao-e-complicacoes-d94d5621",
+       "vias-de-acesso-fixacao-e-complicacoes-fe37fb3c"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "fcc490e8ecdb11e507c6293505811692641319daee858611fd5fcb6954267939"
+     }
+    ],
+    "questaoSha256": "fa1ec5debdd9dff510e14cff385162b8c2d5d929dbf084eaa90ad365aa97f1a2",
+    "comentarioSha256": "8be47eb8f36714b00c5f1d93fbe7458f2c8b71f1d2b844a94da2dbf3465750c4"
+   }
   },
   "coluna-0401": {
    "tema": "coluna",
@@ -3922,7 +4108,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -3937,7 +4123,31 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "b00e76b505f3d969c67ca5c2c5846b6805b4c24c879182cc75abf4a043c243c6"
+   "questaoSha256": "b00e76b505f3d969c67ca5c2c5846b6805b4c24c879182cc75abf4a043c243c6",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "vias-de-acesso-fixacao-e-complicacoes-af7593e4",
+       "vias-de-acesso-fixacao-e-complicacoes-52f2b60f"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "a3cacdeccdad203986df4057ab0c657a6fd358f5f13aecf6e3cc400b5139c259"
+     }
+    ],
+    "questaoSha256": "b00e76b505f3d969c67ca5c2c5846b6805b4c24c879182cc75abf4a043c243c6",
+    "comentarioSha256": "ddb99c94a7d11105ede45a6e47eea8dbceaa1fb68de7bc44d76507357d79cf8a"
+   }
   },
   "coluna-0409": {
    "tema": "coluna",
@@ -4013,7 +4223,7 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -4028,7 +4238,35 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "985e26f743b1f0d84b3282847b832ad2c4fb570acbff0439620669de23e510ab"
+   "questaoSha256": "985e26f743b1f0d84b3282847b832ad2c4fb570acbff0439620669de23e510ab",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do enforcado (espondilolistese traumática de C2)",
+       "Atlas, ligamento transverso e instabilidade C1–C2",
+       "Coluna subaxial: classificações e estabilidade"
+      ],
+      "blocos": [
+       "fratura-do-enforcado-espondilolistese-traumatica-785c3e9a",
+       "fratura-do-enforcado-espondilolistese-traumatica-cee55778",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-0c61dc67",
+       "coluna-subaxial-classificacoes-e-estabilidade-e46c437b"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "2b33ae6ebad91b4de523eb176e6e6919fb46dc46958f57bffd68090cfc6e60ee"
+     }
+    ],
+    "questaoSha256": "985e26f743b1f0d84b3282847b832ad2c4fb570acbff0439620669de23e510ab",
+    "comentarioSha256": "6306a55240c954235d1df40a5ef0bb17b921be6b905c551707ab0ddcee0764e2"
+   }
   },
   "coluna-0449": {
    "tema": "coluna",
@@ -4038,14 +4276,15 @@
    ],
    "prova": "R4 Coluna Joinville",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) não trata da síndrome de Klippel-Feil. Precisa de fonte de malformações congênitas da coluna.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "3d4269deb70d930378808155171ec4bfa455c45bb9bc28fa24ddabb46139d877"
+   "questaoSha256": "3d4269deb70d930378808155171ec4bfa455c45bb9bc28fa24ddabb46139d877",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) não trata da síndrome de Klippel-Feil. Precisa de fonte de malformações congênitas da coluna."
   },
   "coluna-0450": {
    "tema": "coluna",
@@ -4322,8 +4561,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) usa 5 mm e 10 graus como limites cirúrgicos e cita 6 mm, mas não menciona o retardo no diagnóstico como fator de risco de pseudartrose, que o item julga certo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -4337,7 +4576,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "519bb72405d914a93864c2e56d4c27492b3fbcba7e0a5ab171fdbac9f5d6b197"
+   "questaoSha256": "519bb72405d914a93864c2e56d4c27492b3fbcba7e0a5ab171fdbac9f5d6b197",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) usa 5 mm e 10 graus como limites cirúrgicos e cita 6 mm, mas não menciona o retardo no diagnóstico como fator de risco de pseudartrose, que o item julga certo."
   },
   "coluna-0467": {
    "tema": "coluna",
@@ -5701,7 +5941,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -5716,7 +5956,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "1562e5a9d5c65ed9dc8d1468e9033bb9575e01126aa4461b604ebd51caa17b46"
+   "questaoSha256": "1562e5a9d5c65ed9dc8d1468e9033bb9575e01126aa4461b604ebd51caa17b46",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "A medula cervical e as síndromes incompletas"
+      ],
+      "blocos": [
+       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
+       "a-medula-cervical-e-as-sindromes-incompletas-568b3953",
+       "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
+       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
+       "a-medula-cervical-e-as-sindromes-incompletas-5cd2ecb0"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "18fc1957f04e2277cf605e95e5fd5c2b49338a58e15d175f32c18246502f4317"
+     }
+    ],
+    "questaoSha256": "1562e5a9d5c65ed9dc8d1468e9033bb9575e01126aa4461b604ebd51caa17b46",
+    "comentarioSha256": "1a75b59a9afd80f829079d8eac2c5fbf5d2402601ed365ae81afb3d47d6c0d97"
+   }
   },
   "coluna-0533": {
    "tema": "coluna",
@@ -28151,14 +28418,15 @@
    ],
    "prova": "TARO",
    "ano": 2010,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) não trata da luxação inveterada nem do papel do bíceps na limitação da pronação. Precisa de fonte sobre luxação crônica do cotovelo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "8af434db4ae2d02211ba638ccfaaa005d0e95e472a9c01a72250766b7f93c6c4"
+   "questaoSha256": "8af434db4ae2d02211ba638ccfaaa005d0e95e472a9c01a72250766b7f93c6c4",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) não trata da luxação inveterada nem do papel do bíceps na limitação da pronação. Precisa de fonte sobre luxação crônica do cotovelo."
   },
   "ombro-cotovelo-0363": {
    "tema": "ombro-cotovelo",
@@ -28539,14 +28807,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) diz que o coronoide é o primário contra o varo e que o complexo lateral é o principal estabilizador contra o varo, sem distinguir o cotovelo em extensão. Para decidir entre B (superfície articular) e C, falta fonte com a contribuição de cada estrutura em extensão.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "8200d5d320608ea058e0d4178dbc743e1adae7009e0e3afb07e0be925009fc2a"
+   "questaoSha256": "8200d5d320608ea058e0d4178dbc743e1adae7009e0e3afb07e0be925009fc2a",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) diz que o coronoide é o primário contra o varo e que o complexo lateral é o principal estabilizador contra o varo, sem distinguir o cotovelo em extensão. Para decidir entre B (superfície articular) e C, falta fonte com a contribuição de cada estrutura em extensão."
   },
   "ombro-cotovelo-0428": {
    "tema": "ombro-cotovelo",
@@ -29094,7 +29363,7 @@
    ],
    "prova": "TARO",
    "ano": 2009,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29109,7 +29378,37 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "a311b97c2fa57dedf9d0267aaf057ec660aef1d6051a69bbc599be82258ae3db"
+   "questaoSha256": "a311b97c2fa57dedf9d0267aaf057ec660aef1d6051a69bbc599be82258ae3db",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-e54d94bb",
+       "fratura-da-cabeca-do-radio-c1d3bcd9",
+       "fratura-da-cabeca-do-radio-ea450acb",
+       "fratura-da-cabeca-do-radio-0d86df08",
+       "fratura-da-cabeca-do-radio-fe207e21",
+       "fratura-da-cabeca-do-radio-510692ed",
+       "fratura-da-cabeca-do-radio-702c1386"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "3152a9f3868ad2bf28379830e693314c23f31ab3e9dc3ff7e8f5034521424029"
+     }
+    ],
+    "questaoSha256": "a311b97c2fa57dedf9d0267aaf057ec660aef1d6051a69bbc599be82258ae3db",
+    "comentarioSha256": "6bb7d8e04e64b2194e554b88aa4d2d858b0ae9c12e29629b043789244f919b5c"
+   }
   },
   "ombro-cotovelo-0495": {
    "tema": "ombro-cotovelo",
@@ -29508,7 +29807,7 @@
    ],
    "prova": "PUC-SP",
    "ano": 2022,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29523,7 +29822,36 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "4a8b4eafbd25fc2b771798f8def65b2447afb18a60753e189c0f593b22f9a212"
+   "questaoSha256": "4a8b4eafbd25fc2b771798f8def65b2447afb18a60753e189c0f593b22f9a212",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Instabilidade rotatória posteromedial em varo"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-7e8453cb",
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "fraturas-do-coronoide-611c2d1d",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "ea7ee8b7504f86dc59bd5ff6163b41f824dcf093ff5613960361cd227e7c308a"
+     }
+    ],
+    "questaoSha256": "4a8b4eafbd25fc2b771798f8def65b2447afb18a60753e189c0f593b22f9a212",
+    "comentarioSha256": "91d2320f0f98066bfc3d8bd97fe9efbdfc1d7349c6a39d7ddddfaccb9be23d6a"
+   }
   },
   "ombro-cotovelo-0529": {
    "tema": "ombro-cotovelo",
@@ -29615,7 +29943,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29630,7 +29958,36 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "89f01ee255f5784f83abb61774f7533ab55f6e80aae42dbdb06b5c82a1a86129"
+   "questaoSha256": "89f01ee255f5784f83abb61774f7533ab55f6e80aae42dbdb06b5c82a1a86129",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Instabilidade rotatória posterolateral crônica",
+       "Quem segura o cotovelo",
+       "Luxação simples do cotovelo"
+      ],
+      "blocos": [
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "instabilidade-rotatoria-posterolateral-cronica-6af0e518",
+       "quem-segura-o-cotovelo-d2f0137f",
+       "quem-segura-o-cotovelo-7b7c7f11",
+       "luxacao-simples-do-cotovelo-5adb2600"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "da92ecb506d4513834a94f405f238e2ad0872d630a4e382d495efcdd09751980"
+     }
+    ],
+    "questaoSha256": "89f01ee255f5784f83abb61774f7533ab55f6e80aae42dbdb06b5c82a1a86129",
+    "comentarioSha256": "e99192dd0c4bf53769e6dc6e8dc16b47678344d2787a08750bd07c58cde434c7"
+   }
   },
   "ombro-cotovelo-0537": {
    "tema": "ombro-cotovelo",
@@ -29693,7 +30050,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -29708,7 +30065,38 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "d10e3a77925dfd604271273b771b852f5b7bb42c4025a32d1e636c900d804dd8"
+   "questaoSha256": "d10e3a77925dfd604271273b771b852f5b7bb42c4025a32d1e636c900d804dd8",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posteromedial em varo",
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-e54d94bb",
+       "quem-segura-o-cotovelo-920cec40",
+       "quem-segura-o-cotovelo-2b1e3945",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
+       "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1",
+       "ulna-proximal-olecrano-e-monteggia-posterior-e821e601"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "b9d11b33d59241cd343afb8c79d7e4631c1128aa224bfe30c87d2d99e8597756"
+     }
+    ],
+    "questaoSha256": "d10e3a77925dfd604271273b771b852f5b7bb42c4025a32d1e636c900d804dd8",
+    "comentarioSha256": "7d0c04eaa77a2b664e21ef9f009d0127c191e9fa3ccd8007a9e6cc2d51c2edf5"
+   }
   },
   "ombro-cotovelo-0542": {
    "tema": "ombro-cotovelo",
@@ -57169,8 +57557,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) diz apenas que o tipo I isolado é raríssimo; não traz o ligamento (alar) nem a frequência de 1% cobrados. Precisa da fonte com essas cifras.",
    "temComentario": true,
    "citacoes": [
     {
@@ -57184,7 +57572,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "a1932ba1964fd10639b0f64685cd464d02b9028668d876ae10f9fd641f5bedda"
+   "questaoSha256": "a1932ba1964fd10639b0f64685cd464d02b9028668d876ae10f9fd641f5bedda",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) diz apenas que o tipo I isolado é raríssimo; não traz o ligamento (alar) nem a frequência de 1% cobrados. Precisa da fonte com essas cifras."
   },
   "trauma-0027": {
    "tema": "trauma",
@@ -57193,7 +57582,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57208,7 +57597,34 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "2e26821c3cd8e83759fba0703f5d9a0a4ab28e5e593595c05bf77ecb5c3ae536"
+   "questaoSha256": "2e26821c3cd8e83759fba0703f5d9a0a4ab28e5e593595c05bf77ecb5c3ae536",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-c4d889b2",
+       "fratura-da-cabeca-do-radio-3e116d65",
+       "fratura-da-cabeca-do-radio-c6ab590d",
+       "fratura-da-cabeca-do-radio-5c3c5627",
+       "fratura-da-cabeca-do-radio-8dbbe2b9"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "e8e0aca82c0714f2a65effc50c4d7606f115dbf9d3b0cdf8f9e0d95a6c36595d"
+     }
+    ],
+    "questaoSha256": "2e26821c3cd8e83759fba0703f5d9a0a4ab28e5e593595c05bf77ecb5c3ae536",
+    "comentarioSha256": "5ec6f9d0a5b601f55950ea6f67026d89a08869a932822a908aa30821336f88a9"
+   }
   },
   "trauma-0028": {
    "tema": "trauma",
@@ -57217,7 +57633,7 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -57232,7 +57648,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "400d31e8b3c288ec55af9eb3cdfc865c78bfa1c6cf8aaa097c62409557bda3aa"
+   "questaoSha256": "400d31e8b3c288ec55af9eb3cdfc865c78bfa1c6cf8aaa097c62409557bda3aa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-8dbbe2b9",
+       "fratura-da-cabeca-do-radio-a6880686",
+       "fratura-da-cabeca-do-radio-e729e04e",
+       "fratura-da-cabeca-do-radio-8b978969"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "cb91cc33bf99ac545f48361ddc530bf2f1f6c7853396f2fc7974c0918e6f4e58"
+     }
+    ],
+    "questaoSha256": "400d31e8b3c288ec55af9eb3cdfc865c78bfa1c6cf8aaa097c62409557bda3aa",
+    "comentarioSha256": "7cfa4b9530885f3a33379b57b6407f059fa90eb5b43f5e8c191e2977ed24ffbc"
+   }
   },
   "trauma-0029": {
    "tema": "trauma",
@@ -58162,8 +58604,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) descreve o tipo II de LEVINE e EDWARDS como presumidamente por extensão, sem diferenciar compressão de distração; o gabarito (extensão e compressão) depende dessa distinção.",
    "temComentario": true,
    "citacoes": [
     {
@@ -58177,7 +58619,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "0651da26f814d541efde948926972b2ae0f2c42b32bbc14efacf298029c81173"
+   "questaoSha256": "0651da26f814d541efde948926972b2ae0f2c42b32bbc14efacf298029c81173",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) descreve o tipo II de LEVINE e EDWARDS como presumidamente por extensão, sem diferenciar compressão de distração; o gabarito (extensão e compressão) depende dessa distinção."
   },
   "trauma-0054": {
    "tema": "trauma",
@@ -59712,8 +60155,8 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) não traz a classificação anatômica do atlas nem o sinal de cock robin. Precisa de fonte com essa classificação.",
    "temComentario": true,
    "citacoes": [
     {
@@ -59727,7 +60170,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "5ea13781da26b4ab0882cedd4fa6dbbc43577b00660f984cc083b0fb1c3c9af9"
+   "questaoSha256": "5ea13781da26b4ab0882cedd4fa6dbbc43577b00660f984cc083b0fb1c3c9af9",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) não traz a classificação anatômica do atlas nem o sinal de cock robin. Precisa de fonte com essa classificação."
   },
   "trauma-0093": {
    "tema": "trauma",
@@ -60108,7 +60552,7 @@
    ],
    "prova": "TARO",
    "ano": 2017,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60123,7 +60567,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "2b43bac005101a87c2689b1507321e78ddea12e940f05c3f6cb29de51b7374b3"
+   "questaoSha256": "2b43bac005101a87c2689b1507321e78ddea12e940f05c3f6cb29de51b7374b3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-8dbbe2b9",
+       "fratura-da-cabeca-do-radio-a6880686",
+       "fratura-da-cabeca-do-radio-e729e04e",
+       "fratura-da-cabeca-do-radio-f2b0249f"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "18a990cfc95204030bb31a542c04433a6792a5549b8b26ec884a93d3c36e1d49"
+     }
+    ],
+    "questaoSha256": "2b43bac005101a87c2689b1507321e78ddea12e940f05c3f6cb29de51b7374b3",
+    "comentarioSha256": "6870e3ca9d9014cdfad85dee39b99924cf04f587ce5c1ba1cc3e9ebf34fca938"
+   }
   },
   "trauma-0107": {
    "tema": "trauma",
@@ -60740,7 +61210,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -60755,7 +61225,36 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "e3274090e21fa34271bc5f5c1c8d89101023428c8b87222d43cb288cd8181181"
+   "questaoSha256": "e3274090e21fa34271bc5f5c1c8d89101023428c8b87222d43cb288cd8181181",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Como ler este capítulo",
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-793dbcb8",
+       "fratura-do-odontoide-c2-8f7d9c62",
+       "fratura-do-odontoide-c2-623f1b6d",
+       "fratura-do-odontoide-c2-bc203da4",
+       "fratura-do-odontoide-c2-e392c5c7",
+       "fratura-do-odontoide-c2-e7ea3a69"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "94b59afb8dd73735487a6d6d9247767d694784c7b0ff818b1219558fbddfd049"
+     }
+    ],
+    "questaoSha256": "e3274090e21fa34271bc5f5c1c8d89101023428c8b87222d43cb288cd8181181",
+    "comentarioSha256": "0aac16457f8eca25584ae6064fca8f362404f3da8cc89fe6427b61b90d74b9df"
+   }
   },
   "trauma-0124": {
    "tema": "trauma",
@@ -61730,7 +62229,7 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -61745,7 +62244,31 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "392e79bb55c0cbf90856b557e2e7d083d254f8a688f3133bd68d52466676ffb2"
+   "questaoSha256": "392e79bb55c0cbf90856b557e2e7d083d254f8a688f3133bd68d52466676ffb2",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Coluna subaxial: classificações e estabilidade"
+      ],
+      "blocos": [
+       "coluna-subaxial-classificacoes-e-estabilidade-734c3145",
+       "coluna-subaxial-classificacoes-e-estabilidade-1430ef80"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "0bf86f0c0dd11d1c694be5883e1ad927dcd212bd5e98befd84fdf6d7ec4dc649"
+     }
+    ],
+    "questaoSha256": "392e79bb55c0cbf90856b557e2e7d083d254f8a688f3133bd68d52466676ffb2",
+    "comentarioSha256": "abc829963f283fc3f59b53f361fa39fac19c7cc2833c933c67a784a05b1845a3"
+   }
   },
   "trauma-0153": {
    "tema": "trauma",
@@ -62068,7 +62591,7 @@
    ],
    "prova": "TARO",
    "ano": 2016,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -62083,7 +62606,36 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "86543549bdd4a8a3a32edef4a226af4da2387a66e30a6e161c8dd02ec7717524"
+   "questaoSha256": "86543549bdd4a8a3a32edef4a226af4da2387a66e30a6e161c8dd02ec7717524",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Como ler este capítulo",
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "como-ler-este-capitulo-793dbcb8",
+       "fratura-do-odontoide-c2-623f1b6d",
+       "fratura-do-odontoide-c2-bc203da4",
+       "fratura-do-odontoide-c2-e392c5c7",
+       "fratura-do-odontoide-c2-b73258e7",
+       "fratura-do-odontoide-c2-e7ea3a69"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "86e70a97e880d20e9f533c3da1f3013c8c6cf39cd95198780ea4b54935850c56"
+     }
+    ],
+    "questaoSha256": "86543549bdd4a8a3a32edef4a226af4da2387a66e30a6e161c8dd02ec7717524",
+    "comentarioSha256": "73e9932db7b3a4d5e95377a250f4b6b670096ee715850309e4a7671f3ab86c09"
+   }
   },
   "trauma-0163": {
    "tema": "trauma",
@@ -62199,8 +62751,8 @@
    ],
    "prova": "TARO",
    "ano": 2014,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O gabarito (Broberg e Morrey incluíram a fratura do colo do rádio) depende de uma informação que o resumo do Rockwood cap. 40 não traz: a modificação é descrita só pelo tamanho e pelo desvio do fragmento (alerta do próprio resumo). Precisa do artigo de Broberg e Morrey ou de outra fonte primária que descreva a inclusão do colo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -62214,7 +62766,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "b446663817ada6227566e2de489eb9cdec0e8734ff9645c84ca878f377413eb1"
+   "questaoSha256": "b446663817ada6227566e2de489eb9cdec0e8734ff9645c84ca878f377413eb1",
+   "pendencia": "O gabarito (Broberg e Morrey incluíram a fratura do colo do rádio) depende de uma informação que o resumo do Rockwood cap. 40 não traz: a modificação é descrita só pelo tamanho e pelo desvio do fragmento (alerta do próprio resumo). Precisa do artigo de Broberg e Morrey ou de outra fonte primária que descreva a inclusão do colo."
   },
   "trauma-0167": {
    "tema": "trauma",
@@ -65498,14 +66051,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) não descreve a lesão do aparelho extensor na fratura do olécrano nem o exame da extensão ativa. Precisa de fonte da seção de olécrano que trate do mecanismo extensor.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "60db98fa8fcda3f434b2b804bbccdda89daf792a35e2d021693bbe785abe40cd"
+   "questaoSha256": "60db98fa8fcda3f434b2b804bbccdda89daf792a35e2d021693bbe785abe40cd",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) não descreve a lesão do aparelho extensor na fratura do olécrano nem o exame da extensão ativa. Precisa de fonte da seção de olécrano que trate do mecanismo extensor."
   },
   "trauma-0271": {
    "tema": "trauma",
@@ -66257,7 +66811,7 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -66272,7 +66826,35 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "31cd685e5c297a624fec221f800e10b9ad1ec64999e00be4702a24464fe04875"
+   "questaoSha256": "31cd685e5c297a624fec221f800e10b9ad1ec64999e00be4702a24464fe04875",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Coluna subaxial: classificações e estabilidade",
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+       "coluna-subaxial-classificacoes-e-estabilidade-e46c437b",
+       "coluna-subaxial-classificacoes-e-estabilidade-d3f60495",
+       "vias-de-acesso-fixacao-e-complicacoes-b201fbe8",
+       "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "8e572130fdd7cbc21745373baaa80bfdd0878a77446e8803fd59b7211d71183c"
+     }
+    ],
+    "questaoSha256": "31cd685e5c297a624fec221f800e10b9ad1ec64999e00be4702a24464fe04875",
+    "comentarioSha256": "1e5bdf849eb2fa278429386b128cffa533c8bc847af0593f2a6c8bba7713fca0"
+   }
   },
   "trauma-0293": {
    "tema": "trauma",
@@ -68015,14 +68597,15 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) diz que a maioria das luxações é posterior ou posterolateral, mas não informa qual fratura-luxação é a mais comum. Falta fonte com a frequência dos padrões.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f54204709a5638f9f340e3c52c8084d3a7e1571d5f203ac97df9c9d4e323758d"
+   "questaoSha256": "f54204709a5638f9f340e3c52c8084d3a7e1571d5f203ac97df9c9d4e323758d",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) diz que a maioria das luxações é posterior ou posterolateral, mas não informa qual fratura-luxação é a mais comum. Falta fonte com a frequência dos padrões."
   },
   "trauma-0415": {
    "tema": "trauma",
@@ -69384,14 +69967,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) dá a altura da prótese (cerca de 2 mm abaixo da ponta do coronoide), mas não um alongamento máximo tolerado em cotovelos com medial insuficiente. Precisa de fonte com esse limite.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "78302e8ca98f2fdb3e11e71f25c92fbe6c12803fd423bbd8964111b56ffdeb59"
+   "questaoSha256": "78302e8ca98f2fdb3e11e71f25c92fbe6c12803fd423bbd8964111b56ffdeb59",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) dá a altura da prótese (cerca de 2 mm abaixo da ponta do coronoide), mas não um alongamento máximo tolerado em cotovelos com medial insuficiente. Precisa de fonte com esse limite."
   },
   "trauma-0454": {
    "tema": "trauma",
@@ -72174,14 +72758,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) lista rigidez e ossificação heterotópica como complicações comuns a todo o capítulo, sem apontar a complicação mais frequente da fratura do coronoide. Falta fonte específica.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "cf7a34c9f6753d505b69624bcca0f1a1af3570b4583a842aa1411d833b5e91f1"
+   "questaoSha256": "cf7a34c9f6753d505b69624bcca0f1a1af3570b4583a842aa1411d833b5e91f1",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) lista rigidez e ossificação heterotópica como complicações comuns a todo o capítulo, sem apontar a complicação mais frequente da fratura do coronoide. Falta fonte específica."
   },
   "trauma-0683": {
    "tema": "trauma",
@@ -72190,14 +72775,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) não descreve a manobra de exposição (distração com varo ou valgo e rotação) para implantar a prótese. Precisa de fonte de técnica cirúrgica.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "da95d28e41afc66f892f830338d340476d3aaf268299ee1ef2594d17bc23183e"
+   "questaoSha256": "da95d28e41afc66f892f830338d340476d3aaf268299ee1ef2594d17bc23183e",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) não descreve a manobra de exposição (distração com varo ou valgo e rotação) para implantar a prótese. Precisa de fonte de técnica cirúrgica."
   },
   "trauma-0684": {
    "tema": "trauma",
@@ -72206,7 +72792,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -72221,7 +72807,39 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "3137057f2879673906150b5cc33b7236da2b828cc5c655cecdf5cc6d8d695b22"
+   "questaoSha256": "3137057f2879673906150b5cc33b7236da2b828cc5c655cecdf5cc6d8d695b22",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Tríade terrível",
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-67ec539b",
+       "fraturas-do-coronoide-611c2d1d",
+       "triade-terrivel-ed2e0665",
+       "triade-terrivel-fc91076c",
+       "triade-terrivel-7f75b022",
+       "triade-terrivel-9e6a5bba",
+       "triade-terrivel-625087ee",
+       "fratura-da-cabeca-do-radio-8dbbe2b9"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "75e9c4e01db528a6a6e7728651be9a402e6c0032abdbb5849e6e1dd10da3d256"
+     }
+    ],
+    "questaoSha256": "3137057f2879673906150b5cc33b7236da2b828cc5c655cecdf5cc6d8d695b22",
+    "comentarioSha256": "b9837ec61632fbf1b35f28452d74d63617a1ff13a5f7684f24bcb80d0e05673b"
+   }
   },
   "trauma-0686": {
    "tema": "trauma",
@@ -72412,8 +73030,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 explica o cisalhamento da porção anterior da cabeça na subluxação posterolateral, mas não nomeia o quadrante anterolateral. Para sustentar A contra B (anteromedial), falta fonte que localize a fratura parcial no quadrante anterolateral.",
    "temComentario": true,
    "citacoes": [
     {
@@ -72427,7 +73045,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0521bbd28f1f082d16aef280c362e2523c111e0042edbde63b5c04ba00843483"
+   "questaoSha256": "0521bbd28f1f082d16aef280c362e2523c111e0042edbde63b5c04ba00843483",
+   "pendencia": "O resumo do Rockwood cap. 40 explica o cisalhamento da porção anterior da cabeça na subluxação posterolateral, mas não nomeia o quadrante anterolateral. Para sustentar A contra B (anteromedial), falta fonte que localize a fratura parcial no quadrante anterolateral."
   },
   "trauma-0691": {
    "tema": "trauma",
@@ -73534,7 +74153,7 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -73549,7 +74168,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "a5e536ee1686350c22c1fc611f479c66f70a86c880ca0f42816ac0bcdc74f3f5"
+   "questaoSha256": "a5e536ee1686350c22c1fc611f479c66f70a86c880ca0f42816ac0bcdc74f3f5",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-d98ded18",
+       "luxacao-simples-do-cotovelo-d4159e35",
+       "luxacao-simples-do-cotovelo-68cf7694",
+       "luxacao-simples-do-cotovelo-3a54e8f0"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "2a682ea82896703f96e0ce42b50878ec418f962a504f8e5d66f7cf7850619045"
+     }
+    ],
+    "questaoSha256": "a5e536ee1686350c22c1fc611f479c66f70a86c880ca0f42816ac0bcdc74f3f5",
+    "comentarioSha256": "6f09647ed097f121e030532b5efb569a984885ed8d87efed47808015ad12b8eb"
+   }
   },
   "trauma-0723": {
    "tema": "trauma",
@@ -73943,14 +74588,15 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) escolhe a via pelo estado do colateral lateral (Kocher se roto, divisão do extensor comum se íntegro), sem comparar a visibilidade de Henry, Kaplan, Kocher e over the top. Falta fonte com essa comparação.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "11edc99fb42e5d1d407255ca43622ccd5b1685ff08e899f391cf3f315f98a5cf"
+   "questaoSha256": "11edc99fb42e5d1d407255ca43622ccd5b1685ff08e899f391cf3f315f98a5cf",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) escolhe a via pelo estado do colateral lateral (Kocher se roto, divisão do extensor comum se íntegro), sem comparar a visibilidade de Henry, Kaplan, Kocher e over the top. Falta fonte com essa comparação."
   },
   "trauma-0735": {
    "tema": "trauma",
@@ -74968,7 +75614,7 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -74983,7 +75629,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "544616a812563410c78075f34123ea0dcbf9c82e2753b35f4d2b55af5e116987"
+   "questaoSha256": "544616a812563410c78075f34123ea0dcbf9c82e2753b35f4d2b55af5e116987",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Luxação simples do cotovelo"
+      ],
+      "blocos": [
+       "luxacao-simples-do-cotovelo-d98ded18",
+       "luxacao-simples-do-cotovelo-84abf4fe",
+       "luxacao-simples-do-cotovelo-5adb2600",
+       "luxacao-simples-do-cotovelo-68cf7694"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "f5700b5b9f9dd95e1b1fe8c89b011e7e549000d6141ffdb457f61c030f0b7987"
+     }
+    ],
+    "questaoSha256": "544616a812563410c78075f34123ea0dcbf9c82e2753b35f4d2b55af5e116987",
+    "comentarioSha256": "3c0f8fcbc9f53c400603856263bb9876a76fff9f73869571d578640f1fa73237"
+   }
   },
   "trauma-0777": {
    "tema": "trauma",
@@ -75822,8 +76494,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Mesma lacuna da trauma-0690: o resumo do Rockwood cap. 40 fala da porção anterior, sem o quadrante anterolateral. Falta fonte que diferencie anterolateral de anteromedial.",
    "temComentario": true,
    "citacoes": [
     {
@@ -75837,7 +76509,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "4c05d43cfe6be38380ec8cbf82e8190d14e457498b26f9d69f638d45c2f82d73"
+   "questaoSha256": "4c05d43cfe6be38380ec8cbf82e8190d14e457498b26f9d69f638d45c2f82d73",
+   "pendencia": "Mesma lacuna da trauma-0690: o resumo do Rockwood cap. 40 fala da porção anterior, sem o quadrante anterolateral. Falta fonte que diferencie anterolateral de anteromedial."
   },
   "trauma-0806": {
    "tema": "trauma",
@@ -76192,7 +76865,7 @@
    ],
    "prova": "TARO",
    "ano": 2012,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -76207,7 +76880,32 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "e03c79060f6d20c9e0ad00078f4cc13e378476dd6507c28eee5366c6c2eb5bfe"
+   "questaoSha256": "e03c79060f6d20c9e0ad00078f4cc13e378476dd6507c28eee5366c6c2eb5bfe",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atlas, ligamento transverso e instabilidade C1–C2"
+      ],
+      "blocos": [
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-71f3d5fe",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-99ce5a47",
+       "atlas-ligamento-transverso-e-instabilidade-c1-c2-886f7ba0"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "c0b6a9523a7a956dc5b54e421bf80790c5d8a8f9b28134c3592c749ac903c9c3"
+     }
+    ],
+    "questaoSha256": "e03c79060f6d20c9e0ad00078f4cc13e378476dd6507c28eee5366c6c2eb5bfe",
+    "comentarioSha256": "695e04d27d99147dc7ac870b1d533555184e85e80d0c0d993214c6c574de6352"
+   }
   },
   "trauma-0816": {
    "tema": "trauma",
@@ -77045,7 +77743,7 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -77060,7 +77758,34 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "fe2971d5f255eff5839b112d7735352346dd112c8d334d8bf8c86229380741d9"
+   "questaoSha256": "fe2971d5f255eff5839b112d7735352346dd112c8d334d8bf8c86229380741d9",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Fratura do odontoide (C2)"
+      ],
+      "blocos": [
+       "fratura-do-odontoide-c2-b60ceadc",
+       "fratura-do-odontoide-c2-dd277a76",
+       "fratura-do-odontoide-c2-95546c7a",
+       "fratura-do-odontoide-c2-4660967c",
+       "fratura-do-odontoide-c2-dd2df648"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "492f4f63fbfd56e097ffab3bfe766188f7a0c715300e6dae10546043bb3ea1ac"
+     }
+    ],
+    "questaoSha256": "fe2971d5f255eff5839b112d7735352346dd112c8d334d8bf8c86229380741d9",
+    "comentarioSha256": "ac8b25fe6f269fbf8399a029ec256b79f0330979020990f3bccae9683fbeb7d4"
+   }
   },
   "trauma-0860": {
    "tema": "trauma",
@@ -77627,14 +78352,46 @@
    ],
    "prova": "TARO",
    "ano": 2011,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "7a49a47a1e96ecb6b9a9991d71eef1a089e66cb483b01ee9a569ab45ae31588d"
+   "questaoSha256": "7a49a47a1e96ecb6b9a9991d71eef1a089e66cb483b01ee9a569ab45ae31588d",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fraturas do coronoide",
+       "Instabilidade rotatória posteromedial em varo",
+       "Ulna proximal: olécrano e Monteggia posterior",
+       "Tríade terrível"
+      ],
+      "blocos": [
+       "fraturas-do-coronoide-7e8453cb",
+       "fraturas-do-coronoide-261ac45a",
+       "fraturas-do-coronoide-67ec539b",
+       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
+       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
+       "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad",
+       "triade-terrivel-1483748a"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "9720f7b84df55b4242bb09799223bd27c4fe28699abffed5fcc3c91c97909be7"
+     }
+    ],
+    "questaoSha256": "7a49a47a1e96ecb6b9a9991d71eef1a089e66cb483b01ee9a569ab45ae31588d",
+    "comentarioSha256": "de40a4621aede4451432732f8a8fa10ccc488674b7617a70a1a4bdb5a0ab7148"
+   }
   },
   "trauma-0875": {
    "tema": "trauma",
@@ -79181,8 +79938,8 @@
    ],
    "prova": "SBOT-SP",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) descreve a trajetória de MAGERL, mas não o ponto de entrada (o ponto de 1 mm medial e inferior ao centro é o dos autores). Precisa da descrição original de MAGERL.",
    "temComentario": true,
    "citacoes": [
     {
@@ -79196,7 +79953,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "03ff49360d67af3658799ebb9725f26d6f21e70cf3a88fa624767fb5ef918bbd"
+   "questaoSha256": "03ff49360d67af3658799ebb9725f26d6f21e70cf3a88fa624767fb5ef918bbd",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) descreve a trajetória de MAGERL, mas não o ponto de entrada (o ponto de 1 mm medial e inferior ao centro é o dos autores). Precisa da descrição original de MAGERL."
   },
   "trauma-0919": {
    "tema": "trauma",
@@ -80131,8 +80889,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A manobra de Parvin (decúbito ventral, cotovelo fletido) não aparece no resumo do Rockwood cap. 40, que descreve a redução com tração a cerca de 30 graus de flexão e pressão no olécrano. Precisa de fonte que descreva a técnica de Parvin.",
    "temComentario": true,
    "citacoes": [
     {
@@ -80147,7 +80905,8 @@
     "rockwood10-40-cotovelo-cabeca-radio",
     "rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial"
    ],
-   "questaoSha256": "5e710bdd500a257dc911d538e935c7bfe4ff4a0da1c94f5077ecef5df1114471"
+   "questaoSha256": "5e710bdd500a257dc911d538e935c7bfe4ff4a0da1c94f5077ecef5df1114471",
+   "pendencia": "A manobra de Parvin (decúbito ventral, cotovelo fletido) não aparece no resumo do Rockwood cap. 40, que descreve a redução com tração a cerca de 30 graus de flexão e pressão no olécrano. Precisa de fonte que descreva a técnica de Parvin."
   },
   "trauma-0960": {
    "tema": "trauma",
@@ -80626,8 +81385,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 sustenta a resposta (D, não usar o maior diâmetro) e as alternativas B e C, mas não discute as próteses de teste (alternativa A). Falta fonte de técnica que trate do uso das próteses de prova. Comentário anterior restaurado sem baseResumo (achado do Codex no PR 585).",
    "temComentario": true,
    "citacoes": [
     {
@@ -80641,7 +81400,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "62881157023ef7feeb663bc9747449a7b352fdf6b91f5717aa614a45256731de"
+   "questaoSha256": "62881157023ef7feeb663bc9747449a7b352fdf6b91f5717aa614a45256731de",
+   "pendencia": "O resumo do Rockwood cap. 40 sustenta a resposta (D, não usar o maior diâmetro) e as alternativas B e C, mas não discute as próteses de teste (alternativa A). Falta fonte de técnica que trate do uso das próteses de prova. Comentário anterior restaurado sem baseResumo (achado do Codex no PR 585)."
   },
   "trauma-0973": {
    "tema": "trauma",
@@ -81258,14 +82018,15 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 48 (coluna cervical) é do adulto; não traz a classificação de HOSALKAR das fraturas do odontoide na criança. Precisa de fonte pediátrica.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "1ee1b2e733048f2999ce07f151cc41bae35070f27682ce4edcddd20eebd9fed0"
+   "questaoSha256": "1ee1b2e733048f2999ce07f151cc41bae35070f27682ce4edcddd20eebd9fed0",
+   "pendencia": "O resumo do Rockwood cap. 48 (coluna cervical) é do adulto; não traz a classificação de HOSALKAR das fraturas do odontoide na criança. Precisa de fonte pediátrica."
   },
   "trauma-0990": {
    "tema": "trauma",
@@ -81933,14 +82694,15 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo do Rockwood cap. 40 (cotovelo) não traz a classificação AO/OTA (2U1B1d) nem a correspondência com o tipo de fratura. Precisa da classificação AO/OTA para identificar o traço antes de discutir o implante.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "027a34f4b08849c29a89f403162c0a4c7f274bbd79dc1abb211865db396ced06"
+   "questaoSha256": "027a34f4b08849c29a89f403162c0a4c7f274bbd79dc1abb211865db396ced06",
+   "pendencia": "O resumo do Rockwood cap. 40 (cotovelo) não traz a classificação AO/OTA (2U1B1d) nem a correspondência com o tipo de fratura. Precisa da classificação AO/OTA para identificar o traço antes de discutir o implante."
   },
   "trauma-1014": {
    "tema": "trauma",
@@ -85278,7 +86040,7 @@
    ],
    "prova": "TARO",
    "ano": 2007,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -85293,7 +86055,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "c6753d6ee61f20cebcdf612c952f3d567e06382fa981e2072ca611750615b3fa"
+   "questaoSha256": "c6753d6ee61f20cebcdf612c952f3d567e06382fa981e2072ca611750615b3fa",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Ulna proximal: olécrano e Monteggia posterior"
+      ],
+      "blocos": [
+       "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
+       "ulna-proximal-olecrano-e-monteggia-posterior-ebd7fd25",
+       "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52",
+       "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "3fabb01ef2449ff6f836adce01adf6651f9fa6329b3c0c6e15c842367c34aa3f"
+     }
+    ],
+    "questaoSha256": "c6753d6ee61f20cebcdf612c952f3d567e06382fa981e2072ca611750615b3fa",
+    "comentarioSha256": "64859b6e625f596526ed4529d9fcdea5a759ae35250b9b35bbf69de4c7220d75"
+   }
   },
   "trauma-1126": {
    "tema": "trauma",
@@ -87157,7 +87945,7 @@
    ],
    "prova": "ENARE R4 Ortopedia",
    "ano": 2025,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -87173,7 +87961,32 @@
     "rockwood10-48-coluna-cervical",
     "rockwood10-63-diafise-tibia"
    ],
-   "questaoSha256": "a000e0759fa2566f42f241885edc49ff23a8aaa26590e07601c3b055ab5245ae"
+   "questaoSha256": "a000e0759fa2566f42f241885edc49ff23a8aaa26590e07601c3b055ab5245ae",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Atendimento inicial e exame neurológico"
+      ],
+      "blocos": [
+       "atendimento-inicial-e-exame-neurologico-3729e45a",
+       "atendimento-inicial-e-exame-neurologico-f5824e02",
+       "atendimento-inicial-e-exame-neurologico-a5563a74"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "ca1dbad86c3e107155b1c3155d42c45c615f03c43e9e32020f2af779e80be4bd"
+     }
+    ],
+    "questaoSha256": "a000e0759fa2566f42f241885edc49ff23a8aaa26590e07601c3b055ab5245ae",
+    "comentarioSha256": "b8993d9ba48a6f2db8790631f3eb71c8b29912a18526a89cf29a26d86d1f2859"
+   }
   },
   "trauma-1206": {
    "tema": "trauma",
@@ -87207,8 +88020,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A questão pede a classificação AO a partir de uma tomografia que não está no acervo (sem imagem cadastrada). Sem a figura, não se pode descrever o desalinhamento que define o tipo C. Precisa da imagem original.",
    "temComentario": true,
    "citacoes": [
     {
@@ -87223,7 +88036,8 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "a76158212d7f1057754e89bc38d123d8a4a1d1e44a9da3173cc41ea29ed740a5"
+   "questaoSha256": "a76158212d7f1057754e89bc38d123d8a4a1d1e44a9da3173cc41ea29ed740a5",
+   "pendencia": "A questão pede a classificação AO a partir de uma tomografia que não está no acervo (sem imagem cadastrada). Sem a figura, não se pode descrever o desalinhamento que define o tipo C. Precisa da imagem original."
   },
   "trauma-1208": {
    "tema": "trauma",
@@ -87250,8 +88064,8 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "A melhor opção depende do padrão da fratura de C6 visto na tomografia, que não está no acervo. Sem a figura, não se pode justificar a via combinada com corpectomia. Precisa da imagem original.",
    "temComentario": true,
    "citacoes": [
     {
@@ -87265,7 +88079,8 @@
    "resumosCandidatos": [
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "ca3fea339b82bebce30e1a2cb607ed3c9b62bb01a75757ba54ddfe5428c41078"
+   "questaoSha256": "ca3fea339b82bebce30e1a2cb607ed3c9b62bb01a75757ba54ddfe5428c41078",
+   "pendencia": "A melhor opção depende do padrão da fratura de C6 visto na tomografia, que não está no acervo. Sem a figura, não se pode justificar a via combinada com corpectomia. Precisa da imagem original."
   },
   "trauma-1210": {
    "tema": "trauma",
@@ -87274,7 +88089,7 @@
    ],
    "prova": "R4 Coluna SES-DF",
    "ano": 2024,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -87290,7 +88105,34 @@
     "rockwood10-42-diafise-radio-ulna",
     "rockwood10-48-coluna-cervical"
    ],
-   "questaoSha256": "7540383b7fe19c465cd6787939dfd740fa09c8e7df93991510f88446b51821b7"
+   "questaoSha256": "7540383b7fe19c465cd6787939dfd740fa09c8e7df93991510f88446b51821b7",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-48-coluna-cervical",
+      "titulo": "Fraturas e luxações da coluna cervical",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+      "secoes": [
+       "Compressão, explosão e teardrop",
+       "Vias de acesso, fixação e complicações"
+      ],
+      "blocos": [
+       "compressao-explosao-e-teardrop-13a89876",
+       "compressao-explosao-e-teardrop-a3e0c6bc",
+       "compressao-explosao-e-teardrop-d1474e43",
+       "vias-de-acesso-fixacao-e-complicacoes-6daa51d4"
+      ],
+      "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+      "trechosSha256": "1f184ca977e21731b53360d624cd4ce2d6a85ad4c2d952f422d5d4640566a02a"
+     }
+    ],
+    "questaoSha256": "7540383b7fe19c465cd6787939dfd740fa09c8e7df93991510f88446b51821b7",
+    "comentarioSha256": "1f0765197a322073d111b11460a2e031718e54b76387c61de2250a86f3c5c27c"
+   }
   },
   "trauma-1211": {
    "tema": "trauma",
