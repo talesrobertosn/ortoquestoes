@@ -19,6 +19,9 @@ Ligar o resumo a todas as questões do tema (convite "Leia o resumo" no fim de c
 Consultar o acervo atual, usar os scripts de aplicação/validação, preservar o
 gabarito e salvar em branches e PRs revisáveis conforme o pedido.
 
+**Questões novas ou resumos novos → corrigir os comentários pelos resumos:** siga [docs/comentarios-resumos/FLUXO.md](docs/comentarios-resumos/FLUXO.md)
+(fila do capítulo com `--com-lacunas`, triagem, miniaula com o primeiro bloco na seção exata, lacunas anotadas, print de conferência e publicação).
+
 **Provas de Cirurgia da Mão (SIMÃO e título da SBCM) com os livros locais (Green):** siga [docs/mao/PROTOCOLO.md](docs/mao/PROTOCOLO.md)
 e o andamento em [docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md). Comando para colar na outra conta:
 [docs/prompts/claude-mao-provas.md](docs/prompts/claude-mao-provas.md). Livros, resumos enviados e provas originais nunca vão para o git. Só SBCM e SIMÃO viram OrtoQuestões Simulados; as outras bancas (ABC, Unesp etc.) entram com o nome real, conferindo antes se já estão no site.

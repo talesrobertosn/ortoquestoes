@@ -25,6 +25,8 @@ Preservar enunciado, opções e resposta oficial. Divergências vão em `alerta`
 
 ## Retomar o trabalho
 
+Roteiro prático para cada nova rodada (questões ou resumos novos): [FLUXO.md](FLUXO.md).
+
 Checkpoint detalhado da passagem atual: [RETOMADA-2026-10-20.md](RETOMADA-2026-10-20.md). Conferir o catálogo e o remoto, pois o checkpoint não substitui o estado de publicação.
 
 1. Ler `AGENTS.md`, `docs/padrao-editorial-comentarios.md`, este protocolo e `ANDAMENTO.md`. O piloto está em `docs/mao/rockwood-piloto-comentario.md` e no lote `000-piloto.json`.
