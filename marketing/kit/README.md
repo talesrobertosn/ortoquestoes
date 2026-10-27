@@ -50,7 +50,7 @@ Primeira vez numa máquina nova: `npm ci` e, se o Chromium de `/opt/pw-browsers`
 | `var` | feed 5 + stories 3 | alternativas em pares ou combinações | [VAR-DA-QUESTAO](../instagram/estilos/VAR-DA-QUESTAO.md) |
 | `cofre-duas-chaves` | feed, 6 | duas identificações que precisam coincidir, com imagem | [COFRE-E-MECANICA-FINA](../instagram/estilos/COFRE-E-MECANICA-FINA.md) |
 | `cupom-fiscal` | stories, 3 | questão curta primeiro, propaganda leve no fim | [SNELLEN-E-CUPOM](../instagram/estilos/SNELLEN-E-CUPOM.md) |
-| `mecanica-fina` | stories, 6 | identificar na imagem: origem, inserção, trajeto, posição | [COFRE-E-MECANICA-FINA](../instagram/estilos/COFRE-E-MECANICA-FINA.md) |
+| ~~`mecanica-fina`~~ (aposentado em 27/10/2026; o kit recusa: trocar o estilo dos posts 06, 12, 18, 24 e 30 da fila) | stories, 6 | identificar na imagem: origem, inserção, trajeto, posição | [COFRE-E-MECANICA-FINA](../instagram/estilos/COFRE-E-MECANICA-FINA.md) |
 | `treine-gratis` | story de propaganda, 1 | convite para criar a conta (figurinha de link com utm) | [TREINE-GRATIS](../instagram/estilos/TREINE-GRATIS.md) |
 
 Os modelos ficam em [modelos/](modelos/) e têm o **CSS dos modelos aprovados sem mudança** (conferido

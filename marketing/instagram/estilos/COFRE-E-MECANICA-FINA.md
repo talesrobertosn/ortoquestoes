@@ -18,6 +18,8 @@ Não forçar a metáfora quando ela não ajuda a resolver a questão. Alternar c
 - Seletores devem manter proporção circular, com flex-shrink:0; nunca comprimir a geometria para encaixar texto.
 
 ## Mecânica fina / Relojoaria anatômica
+
+> **Aposentado em 27/10/2026, a pedido do Tales** ("nunca mais usar esse tema, já foi usado tipo 8 vezes"). Fica só como registro; não usar em post novo.
 - Stories: seis PNGs individuais, 1080×1920; conteúdo essencial entre y=250 e y=1700, margem lateral preferencial de 80 px.
 - Azul-petróleo como variação temática aprovada, prata e dourado; marca oficial preservada. Caixa de instrumento de precisão em CSS, cantos arredondados e mostradores discretos.
 - Referência principal aprovada: mão, mao-1644, origem dos lumbricais. A primeira versão de coluna foi substituída a pedido do dono; usar a versão de mão como referência final deste conjunto.

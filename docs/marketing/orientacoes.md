@@ -92,6 +92,9 @@ Para os simulados de questões, o roteiro é [docs/prompts/codex-simulados.md](.
 4. Registrar em `marketing/instagram/estilos/historico.json`.
 5. Commit, push e mandar as imagens e a legenda para o dono.
 
+## Mecânica fina aposentada (27/10/2026)
+Tales pediu para **nunca mais usar** o tema Mecânica fina / Relojoaria anatômica (repetido demais). Saiu do rodízio de stories; o Cofre de duas chaves continua.
+
 ## Novos modelos aprovados em 11/10/2026
 Tales aprovou **Cofre de duas chaves** (feed) e **Mecânica fina / Relojoaria anatômica** (stories, versão final com questão de mão) para reutilização futura por Claude e Codex. São opções do arsenal, não padrão obrigatório. Preservar acabamento profissional, cantos arredondados, imagem médica original e metáfora ligada ao raciocínio. [Guia completo e modelos executáveis](../../marketing/instagram/estilos/COFRE-E-MECANICA-FINA.md). A aprovação visual não significa revisão médica nem publicação no Instagram.
 
