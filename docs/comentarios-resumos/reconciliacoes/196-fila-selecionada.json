@@ -1,0 +1,116 @@
+{
+  "proximoLote": 196,
+  "revisaoAplicada": false,
+  "candidatos": {
+    "pediatria-0478": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "5a6dc7e0c74500adec578580c3b35a01b4568ce7e329bb079bc7fe1f8abb18eb",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0478-1.png",
+          "sha256": "8ba9ebe2fec26213056c5068d9cdfa487bae45e5c32d5dbb746f6f5c0259e353",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0561": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "f2888818a66e4cc08a457a9439339539364e81a1d053b2a4b7186f13900b9031",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0561-1.jpeg",
+          "sha256": "9a6be106dd5929a366b8fc9c80ad638a83a0d2f07058a791bfbdcfd6dcd11429",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0595": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "9f99c372fc6a88a932a58742bd2461a74711a7d4aa2c0de84b6e086a17532d10",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0595-1.jpeg",
+          "sha256": "ccb214c5cb6a71317bd462e2ed415a2120896b1076c243701e3877561bd9d474",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0708": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "9011bdceddb0409faad5b3dd123d5f16239ac1a6383627e0d3a68f736e281d61",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0708-1.jpeg",
+          "sha256": "9a7793589997d734bd877dbb184008e0265b08f0b0de4c31776592ae42f703de",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0846": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "0080c8b4304ea4599206872f47e49ddb5d07224c63a7eecff4fab5bd0cf1dd0e",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0846-m1.png",
+          "sha256": "c7101d7961cc2895b69585b7e6b623846682ac1f0cf4562df0f4b9497f054a79",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0925": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "75ee8ffb4dee87b4e1913d60e94c5a885e83cde20802b856578a668b4bf69bf6",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-125.png",
+          "sha256": "1cc67217e6142738351cf809209fdff95c7e1dfba860333fbc99f80f92fd7c0e",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0927": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "26ba136d331050866f65dc331b48f68e83e66e4be5d29fa96ba4996edda2fc59",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-192.png",
+          "sha256": "4297369e97507c6c66cea580234d21382a66e5183c700c4595734ca0798a2eda",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "pediatria-0934": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "b4b8597976e08bda5afad1b2a9f944e26169cc9bf748e5d9a9b991f0fc468c7c",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-238.png",
+          "sha256": "1c3c50edee8c9a19c3dbc584be39879b60e21989c32e440abd8e812e1de51e9d",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "trauma-1074": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-1074-1.jpeg",
+          "sha256": "e5b79e8f0b5110baa3a8c9f3c9162f6f96976daaeee818e64ea2bd2ff6f6cabf",
+          "abertaNestaSelecao": false
+        }
+      ]
+    },
+    "ombro-cotovelo-0306": {
+      "estado": "pendente-inspecao-imagem",
+      "questaoSha256": "a3152357098bff400af3b3549c0d1125db9b1c235cae31d41b5573e8c9bbd23a",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0437-1.jpeg",
+          "sha256": "b51bb2e4b470be4fe158050dc99321750fc04e8ee040e05ce6a62ac0585eaca1",
+          "abertaNestaSelecao": false
+        }
+      ]
+    }
+  }
+}

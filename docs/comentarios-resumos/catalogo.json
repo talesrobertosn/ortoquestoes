@@ -6,9 +6,9 @@
   "pendente": 416,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 473,
-  "pendente-inspecao-imagem": 44,
-  "revisada": 1592
+  "pendente-fonte": 480,
+  "pendente-inspecao-imagem": 34,
+  "revisada": 1595
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -81,9 +81,9 @@
    "estados": {
     "duplicada": 8,
     "pendente": 37,
-    "pendente-fonte": 28,
-    "pendente-inspecao-imagem": 10,
-    "revisada": 102
+    "pendente-fonte": 34,
+    "pendente-inspecao-imagem": 1,
+    "revisada": 105
    }
   },
   "rockwood10-42-diafise-radio-ulna": {
@@ -187,8 +187,7 @@
    "estados": {
     "duplicada": 3,
     "pendente": 10,
-    "pendente-fonte": 7,
-    "pendente-inspecao-imagem": 1,
+    "pendente-fonte": 8,
     "revisada": 52
    }
   },
@@ -27449,8 +27448,8 @@
    ],
    "prova": "TEOT",
    "ano": 2023,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -27464,7 +27463,31 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549"
+   "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-2b1e3945",
+       "quem-segura-o-cotovelo-49b9c486"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "f26a2e9a99f165c145dd79ddc33c2c36895972d360e74f8c790d708a7fb3402d"
+     }
+    ],
+    "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549",
+    "comentarioSha256": "f64e711d64fdef8ae57c456cb80e7f72a4c735a9802299b9f195f4291c3cec9e"
+   }
   },
   "ombro-cotovelo-0125": {
    "tema": "ombro-cotovelo",
@@ -28009,8 +28032,8 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura medial numerada aberta: 2 cruza do epicôndilo medial à ulna anterior, 3 ocupa o leque posterior e 4 a faixa inferior ulnar; 1 é outra faixa próxima da região anterior da articulação. O corpo40 sustenta feixe anterior como principal restritor do VALGO, mas não fornece anatomia independente para identificar com segurança a estrutura1 e discriminar todos os quatro componentes numerados. O enunciado também diz estabilidade sem direção; o próprio corpo40 ressalva que a primazia medial depende do valgo e que o lateral importa nas atividades comuns. Falta legenda anatômica independente dos quatro números e contextualização da direção da força; preservar oficialB sem selo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -28024,7 +28047,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "6cabc36ab5e2f41a923bb9ce3e00a3dbbe18dc1a9668c9a4b7ec60b98b831f3a"
+   "questaoSha256": "6cabc36ab5e2f41a923bb9ce3e00a3dbbe18dc1a9668c9a4b7ec60b98b831f3a",
+   "pendencia": "Figura medial numerada aberta: 2 cruza do epicôndilo medial à ulna anterior, 3 ocupa o leque posterior e 4 a faixa inferior ulnar; 1 é outra faixa próxima da região anterior da articulação. O corpo40 sustenta feixe anterior como principal restritor do VALGO, mas não fornece anatomia independente para identificar com segurança a estrutura1 e discriminar todos os quatro componentes numerados. O enunciado também diz estabilidade sem direção; o próprio corpo40 ressalva que a primazia medial depende do valgo e que o lateral importa nas atividades comuns. Falta legenda anatômica independente dos quatro números e contextualização da direção da força; preservar oficialB sem selo."
   },
   "ombro-cotovelo-0296": {
    "tema": "ombro-cotovelo",
@@ -28086,14 +28110,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Duas fotografias operatórias abertas mostram exposição lateral e manipulação da cabeça radial. Corpo40 descreve Kocher ou divisão do tendão extensor conforme integridade do complexo lateral e proteção do interósseo posterior, mas não estabelece qual combinação de distração longitudinal, VARO/VALGO e PRONAÇÃO/SUPINAÇÃO produz especificamente a exposição mostrada. A regra de pronação para proteger o nervo ou estabilizar lesão lateral não prova manobra para abrir a articulação. Falta descrição operatória independente que discrimine as quatro combinações; oficialB mantido.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0c5f8219439a512d960768d1ea15e986d2b1780570e9e722fcef63ccaad89263"
+   "questaoSha256": "0c5f8219439a512d960768d1ea15e986d2b1780570e9e722fcef63ccaad89263",
+   "pendencia": "Duas fotografias operatórias abertas mostram exposição lateral e manipulação da cabeça radial. Corpo40 descreve Kocher ou divisão do tendão extensor conforme integridade do complexo lateral e proteção do interósseo posterior, mas não estabelece qual combinação de distração longitudinal, VARO/VALGO e PRONAÇÃO/SUPINAÇÃO produz especificamente a exposição mostrada. A regra de pronação para proteger o nervo ou estabilizar lesão lateral não prova manobra para abrir a articulação. Falta descrição operatória independente que discrimine as quatro combinações; oficialB mantido."
   },
   "ombro-cotovelo-0305": {
    "tema": "ombro-cotovelo",
@@ -28102,8 +28127,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -28117,7 +28142,30 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63"
+   "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Fratura da cabeça do rádio"
+      ],
+      "blocos": [
+       "fratura-da-cabeca-do-radio-9e1dbc64"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "b14621ab715a02050924eeffac86f037109bbc8e871f1cbd2958a9f8eecf5b26"
+     }
+    ],
+    "questaoSha256": "0c9042d661bf9888098db5c995284730895938fdff39aad4cce14a8083d51c63",
+    "comentarioSha256": "ca1254f281d200f8b8d6bf6acc6a6c9c4fc118049c14343ea385487490b7ee59"
+   }
   },
   "ombro-cotovelo-0306": {
    "tema": "ombro-cotovelo",
@@ -29084,8 +29132,8 @@
    ],
    "prova": "TARO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -29099,7 +29147,33 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3"
+   "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-40-cotovelo-cabeca-radio",
+      "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
+      "secoes": [
+       "Quem segura o cotovelo",
+       "Instabilidade rotatória posterolateral crônica"
+      ],
+      "blocos": [
+       "quem-segura-o-cotovelo-d2f0137f",
+       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
+       "quem-segura-o-cotovelo-7b7c7f11"
+      ],
+      "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+      "trechosSha256": "ff0c043396cf44f89e0a2c8bbd95e6789afcd97caa4461905f6bc89a60561c3e"
+     }
+    ],
+    "questaoSha256": "70a53f51fe4df6eec6b1f03d7cc9371b11c2f764d6bacff3f8a006d1926effc3",
+    "comentarioSha256": "6cb74e861faf94d6c0382dde438a9a2c6f4339d93461a3d6b1490d3588cca415"
+   }
   },
   "ombro-cotovelo-0461": {
    "tema": "ombro-cotovelo",
@@ -70108,8 +70182,8 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Perfil aberto mostra fratura desviada e cominutiva do olécrano. Corpo40 define MayoI/II/III e A/B, mas não relaciona esse padrão ao ângulo de flexão do cotovelo NO MOMENTO DO TRAUMA (90° versus120°). O ângulo radiográfico atual não demonstra retrospectivamente o ângulo da lesão. Falta fundamento biomecânico independente para discriminar90/120 associado ao padrão; oficialB preservado, sem ensinar ângulo por memória.",
    "temComentario": true,
    "citacoes": [
     {
@@ -70123,7 +70197,8 @@
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "e766c796e652c660fac18e5345e7fd66ed7af6bd9fb4f734c3a72467823738d4"
+   "questaoSha256": "e766c796e652c660fac18e5345e7fd66ed7af6bd9fb4f734c3a72467823738d4",
+   "pendencia": "Perfil aberto mostra fratura desviada e cominutiva do olécrano. Corpo40 define MayoI/II/III e A/B, mas não relaciona esse padrão ao ângulo de flexão do cotovelo NO MOMENTO DO TRAUMA (90° versus120°). O ângulo radiográfico atual não demonstra retrospectivamente o ângulo da lesão. Falta fundamento biomecânico independente para discriminar90/120 associado ao padrão; oficialB preservado, sem ensinar ângulo por memória."
   },
   "trauma-0451": {
    "tema": "trauma",
@@ -79994,14 +80069,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Ilustração de acesso posterior/lateral ao fêmur distal com duas janelas abertas; setas apontam um ventre muscular em relação ao fêmur e estruturas posteriores. Corpo61 descreve bíceps no canto posterolateral e janelas de Terry/LaPrade, mas não define acessos OSBORNE e BOSWORTH nem os compara, e não fundamenta a identificação da cabeça longa versus curta do bíceps nessa exposição. Falta fonte cirúrgica e legenda anatômica independente para ambas as partes das quatro opções; oficialD intacto.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-57-diafise-femur"
    ],
-   "questaoSha256": "25567da4beae0b165bc6df5c00d1fdfe4837880d072f0260a32152eb1b2f7731"
+   "questaoSha256": "25567da4beae0b165bc6df5c00d1fdfe4837880d072f0260a32152eb1b2f7731",
+   "pendencia": "Ilustração de acesso posterior/lateral ao fêmur distal com duas janelas abertas; setas apontam um ventre muscular em relação ao fêmur e estruturas posteriores. Corpo61 descreve bíceps no canto posterolateral e janelas de Terry/LaPrade, mas não define acessos OSBORNE e BOSWORTH nem os compara, e não fundamenta a identificação da cabeça longa versus curta do bíceps nessa exposição. Falta fonte cirúrgica e legenda anatômica independente para ambas as partes das quatro opções; oficialD intacto."
   },
   "trauma-0913": {
    "tema": "trauma",
@@ -81778,14 +81854,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Corte transversal rotulado aberto: A passa na região extensora lateral, B entre ancôneo e extensor ulnar, C contorna posteriormente a ulna. Corpo40 identifica Kocher entre ancôneo e extensor ulnar e descreve divisão do tendão extensor, mas não mapeia Kaplan, Boyd, Morrey e Hotchkiss aos intervalos A/B/C. Reconhecer apenasB/Kocher não distingue alternativaA deC. Falta descrição independente dos acessos restantes e sua relação com o corte; oficialA mantido.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "3b5b1e51c2f894daa54e41ff6ba1d52fc15af8c3350034e0d6b2dd647ebf9797"
+   "questaoSha256": "3b5b1e51c2f894daa54e41ff6ba1d52fc15af8c3350034e0d6b2dd647ebf9797",
+   "pendencia": "Corte transversal rotulado aberto: A passa na região extensora lateral, B entre ancôneo e extensor ulnar, C contorna posteriormente a ulna. Corpo40 identifica Kocher entre ancôneo e extensor ulnar e descreve divisão do tendão extensor, mas não mapeia Kaplan, Boyd, Morrey e Hotchkiss aos intervalos A/B/C. Reconhecer apenasB/Kocher não distingue alternativaA deC. Falta descrição independente dos acessos restantes e sua relação com o corte; oficialA mantido."
   },
   "trauma-0977": {
    "tema": "trauma",
@@ -81846,14 +81923,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Imagem aberta mostra POSICIONAMENTO do braço e antebraço para a incidência oblíqua interna, sem radiografia do resultado. Corpo40 cita AP/perfil e radiocapitelar, mas não compara oblíqua interna para olécrano versus capítulo, colo e tuberosidade radial. Não transferir indicação da radiocapitelar para essa projeção nem inferir lesão na fotografia de posicionamento. Falta definição radiográfica independente da incidência e comparação das quatro estruturas; oficialB intacto.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "0ea7deeb5d7b768264146bfc17cbceb2e8c30917ed2c54373e98b79e85695886"
+   "questaoSha256": "0ea7deeb5d7b768264146bfc17cbceb2e8c30917ed2c54373e98b79e85695886",
+   "pendencia": "Imagem aberta mostra POSICIONAMENTO do braço e antebraço para a incidência oblíqua interna, sem radiografia do resultado. Corpo40 cita AP/perfil e radiocapitelar, mas não compara oblíqua interna para olécrano versus capítulo, colo e tuberosidade radial. Não transferir indicação da radiocapitelar para essa projeção nem inferir lesão na fotografia de posicionamento. Falta definição radiográfica independente da incidência e comparação das quatro estruturas; oficialB intacto."
   },
   "trauma-0979": {
    "tema": "trauma",
@@ -81887,14 +81965,15 @@
    ],
    "prova": "TECOC/SBCOC Ombro e Cotovelo",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Perfil esquemático aberto mostra fio e duas distâncias A/B na técnica de banda de tensão. Corpo40 explica saída anteromedial dos fios, túnel distal ao coronoide e riscos de trajetos laterais/mediais, mas não estabelece limites numéricos máximo de A e mínimo de B nem define seus pontos de medição como no desenho. Faltam os10/15/20mm e referências anatômicas independentes de cada medida; não obter escala pela imagem. OficialA mantido.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-40-cotovelo-cabeca-radio"
    ],
-   "questaoSha256": "00eb27b5d7f5fafa3aa12eb567fca413e81613600f1f0eaf246a2ebb1b729778"
+   "questaoSha256": "00eb27b5d7f5fafa3aa12eb567fca413e81613600f1f0eaf246a2ebb1b729778",
+   "pendencia": "Perfil esquemático aberto mostra fio e duas distâncias A/B na técnica de banda de tensão. Corpo40 explica saída anteromedial dos fios, túnel distal ao coronoide e riscos de trajetos laterais/mediais, mas não estabelece limites numéricos máximo de A e mínimo de B nem define seus pontos de medição como no desenho. Faltam os10/15/20mm e referências anatômicas independentes de cada medida; não obter escala pela imagem. OficialA mantido."
   },
   "trauma-0981": {
    "tema": "trauma",
