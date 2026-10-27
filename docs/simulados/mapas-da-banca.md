@@ -3751,3 +3751,23 @@ IV ou V com cortical posterior rompida; perfil com rotação interna.
 sistemática do capítulo dá 0% e aponta a irritação do material (56%). Gabarito mantido, alerta no resumo e no simulado `pediatria-1116`.
 
 **Aproveitamento:** `pediatria-1108` a `pediatria-1121`, 14 questões, gabarito A4/B3/C4/D3, mediana de 3.063 caracteres.
+
+## Fratura da diáfise do fêmur na criança, Rockwood and Wilkins 10ª ed., cap. 25
+
+**Recorte.** Busca por diáfise do fêmur, gesso pelvipodálico, PAVLIK, hastes flexíveis, placa submuscular e fossa piriforme em Ortopedia
+pediátrica, todas as provas. A banca cobra sobretudo o método pela idade (TARO 2022 `pediatria-0565`, TEOT 2025 `0912`, TARO 2015 `0603`),
+o método pelo peso e pela estabilidade (TARO 2019 `0647`, CET-PR `0907`, TEPOP 2024 `0951`), a Tabela 25-2 (ENARE 2025 `0863`), a síndrome
+compartimental no gesso (TARO 2024 `0541`), o desvio pelos músculos (TARO 2017 `0619`, TEOT 2024 `0556`), o preenchimento do canal
+(TARO 2018 `0623`), a necrose com a entrada piriforme (TEOT 2023 `0709`, TEOT 2021 `0844`) e a remodelação (TARO 2021 `0591`).
+
+**Forma.** Enunciados curtos de "tratamento indicado para esta idade", com quatro alternativas de método; uma de cinco alternativas com
+números da tabela (ENARE).
+
+**Lacunas com cara de prova (projeção).** Fatores de BALDWIN e maus-tratos abaixo de 18 meses; telescopagem de THOMPSON acima de 3 cm;
+gesso de marcha (45 e 45 graus, 15 graus de rotação externa, molde em valgo, deriva de 5 graus de varo e 10 de procurvato); diâmetro da
+haste = 0,4 do canal; acima de 11 anos e 49 kg; artéria cervical ascendente lateral; haste trocantérica fina e segura após 8 anos; valgo
+distal com placa a 20 mm ou menos da fise; fixador retirado com três ou quatro corticais; hipercrescimento de 0,9 cm entre 2 e 10 anos.
+
+**Sem gabarito.** TARO 2007 `0743`, SBOT-SP `0935`, TARO 2008 `0749`, TARO 2006 `0813`: alertas no resumo.
+
+**Aproveitamento:** `pediatria-1122` a `pediatria-1136`, 15 questões, gabarito A4/B4/C4/D3, mediana de 3.513 caracteres.
