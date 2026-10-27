@@ -38,3 +38,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | quadril-0019 | Ruptura do glúteo médio: mulheres acima de 50 anos (TARO 2016) | posts/2026-10-22-busca-quadril (stories) |
 | trauma-0338 | Síndrome compartimental: nervo altera a partir de 30 minutos, Matsen (TARO 2014) | posts/2026-10-23-box-isquemia (feed) |
 | coluna-0049 | Choque medular termina em 24 a 48 horas, bulbocavernoso (TEOT 2022) | posts/2026-10-23-box-isquemia (stories) |
+| coluna-0281 | Longo do pescoço afastado na via anterior C6-C7, cadeia simpática (TARO 2026) | posts/2026-10-27-mecanica-longo-do-pescoco (stories) |
