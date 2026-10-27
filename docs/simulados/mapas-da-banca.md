@@ -3730,3 +3730,24 @@ espícula medial leva a valgo; ressecção da ponte menor que 50% com 2 anos de 
 (`0641`, causa de ponte com melhor resultado) não é discutido no capítulo.
 
 **Aproveitamento:** `pediatria-1094` a `pediatria-1107`, 14 questões, gabarito A3/B4/C3/D4, mediana de 3.356 caracteres.
+
+## Fratura da fise proximal e da tuberosidade da tíbia na criança, Rockwood and Wilkins 10ª ed., cap. 27
+
+**Recorte.** Busca por tíbia proximal, tuberosidade, WATSON-JONES, OGDEN e COZEN em Ortopedia pediátrica, todas as provas.
+A banca cobra sobretudo a tuberosidade: quem tem (TARO 2024 `pediatria-0542`), mecanismo (TARO 2024 `0544`, TEPOP 2024 `0948`),
+correspondência OGDEN e SALTER-HARRIS (TARO 2025 `0529`, TARO 2015 `0602`, TARO 2012 `0661`, TEOT 2021 com figura `0847`,
+SBOT-SP `0580`), artéria da síndrome compartimental (TEOT 2024 `0560`) e complicação (TEOT 2025 `0918`). Na fise: valgo no tipo II
+(TEPOP 2024 `0946`) e hiperextensão com lesão vascular (TARO 2017 `0616`). A metafisária (COZEN) aparece muito, mas é do cap. 29.
+
+**Forma.** Enunciados curtos, quatro alternativas de número de tipo ou mecanismo curto; uma figura no TEOT 2021.
+
+**Lacunas com cara de prova (projeção).** OGDEN modificada em cinco tipos (IV fise inteira, V avulsão do tendão); ângulo de 30 graus
+e epífise; ordem de fechamento (posterior para anterior, medial para lateral); contrafortes (colateral medial na metáfise, fíbula);
+poplítea e recorrente tibial anterior lado a lado; recurvato após lesão fisária e da tuberosidade; complicações da revisão de 336
+fraturas; internação mesmo sem desvio; desvio residual acima de 2 a 3 mm; garrote prende o quadríceps; fasciotomia profilática só no
+IV ou V com cortical posterior rompida; perfil com rotação interna.
+
+**Divergência.** TEOT 2025 (`0918`): gabarito síndrome compartimental como complicação mais comum após fixação percutânea; a revisão
+sistemática do capítulo dá 0% e aponta a irritação do material (56%). Gabarito mantido, alerta no resumo e no simulado `pediatria-1116`.
+
+**Aproveitamento:** `pediatria-1108` a `pediatria-1121`, 14 questões, gabarito A4/B3/C4/D3, mediana de 3.063 caracteres.
