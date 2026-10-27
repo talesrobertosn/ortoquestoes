@@ -21,6 +21,8 @@ import { DiarioBiblioteca, EstanteDaSessao } from './DiarioBiblioteca'
 import { CHAVE_PLANO, calcularCronograma, migrarPlano, rotuloTempo, sessaoDoCronograma, type Cronograma } from '../cronograma'
 import { ehAcerto, horaDaSessao, HORAS_BIBLIOTECA } from '../biblioteca/horas'
 import { FundoBiblioteca } from './FundoBiblioteca'
+import { FiltroAssuntos } from './FiltroAssuntos'
+import { arvoreFlashcards, caminhoDoFiltro, casaFiltro, filtroAtivo, filtroDaConsulta, FILTRO_VAZIO, normalizarFiltro, type FiltroAssunto } from '../biblioteca/filtroAssunto'
 import '../../estilos/paginas/BibliotecaEstudo.css'
 
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
@@ -48,6 +50,8 @@ const pendente = (r?: RegistroFlashcard) => !!r && revisarHoje(r)
 const TAMANHOS = [10, 20, 30] as const
 const CHAVE_ALTERNATIVAS = 'flashcards:estudo-alternativas'
 const TIPOS = ['Na prova', 'Relâmpago', 'Imagem', 'Anatomia'] as const
+/** O assunto escolhido na Biblioteca (área, grupo, assuntos): fica na conta e volta ao reabrir. */
+const CHAVE_FILTRO_ASSUNTO = 'flashcards:filtro-assunto'
 
 /**
  * Modo Estudo: a Biblioteca escolhe o que revisar (por área, revisões
@@ -75,6 +79,13 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
   const [soNovos, definirSoNovos] = useState(false)
   const [filtrosAbertos, definirFiltrosAbertos] = useState(() => typeof matchMedia === 'undefined' || !matchMedia('(max-width: 640px)').matches)
   const filtrosAtivos = tipos.length + Number(dificuldade !== null) + Number(soNovos)
+  // Estudar por assunto (27/10/2026): #/flashcards/biblioteca?area=pediatria&grupo=fraturas&assunto=... (sem
+  // categoria) já abre com o recorte; senão volta o último escolhido.
+  const [filtroBruto, definirFiltroBruto] = useState<Partial<FiltroAssunto>>(() => {
+    const q = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
+    return (!q.get('categoria') && filtroDaConsulta(q)) || ler<Partial<FiltroAssunto>>(CHAVE_FILTRO_ASSUNTO, FILTRO_VAZIO)
+  })
+  const mudarFiltro = useCallback((f: FiltroAssunto) => { definirFiltroBruto(f); gravar(CHAVE_FILTRO_ASSUNTO, f) }, [])
 
   const categorias = useMemo<Categoria[]>(() => {
     const indice = indiceDoAcervo()
@@ -92,9 +103,15 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
     ]
   }, [cartas])
 
-  const filtrosExtras = useCallback((c: Flashcard) => (!tipos.length || tipos.includes(c.tipo)) && (dificuldade === null || c.dificuldade === dificuldade) && (!soNovos || !registros[c.id]), [tipos, dificuldade, soNovos, registros])
+  const aceitaExtras = useCallback((c: Flashcard) => (!tipos.length || tipos.includes(c.tipo)) && (dificuldade === null || c.dificuldade === dificuldade) && (!soNovos || !registros[c.id]), [tipos, dificuldade, soNovos, registros])
+  const nomesArea = useMemo(() => Object.fromEntries(Object.entries(indiceDoAcervo()?.areas ?? {}).map(([id, a]) => [id, a.nome])), [cartas]) // eslint-disable-line react-hooks/exhaustive-deps
+  const arvore = useMemo(() => arvoreFlashcards(cartas, nomesArea, aceitaExtras), [cartas, nomesArea, aceitaExtras])
+  const filtro = useMemo(() => normalizarFiltro(filtroBruto, arvore), [filtroBruto, arvore])
+  const comAssunto = filtroAtivo(filtro)
+  // o recorte do assunto vale para tudo na Biblioteca: revisões, erros, nunca estudados e o botão "Estudar"
+  const filtrosExtras = useCallback((c: Flashcard) => aceitaExtras(c) && casaFiltro(c, filtro), [aceitaExtras, filtro])
 
-  const resumo = useMemo(() => categorias.map((cat) => {
+  const resumo = useMemo(() => categorias.filter((cat) => !comAssunto || !cat.id.startsWith('area:')).map((cat) => {
     let total = 0, estudados = 0, dom = 0, pend = 0
     for (const c of cartas) {
       const r = registros[c.id]
@@ -105,17 +122,17 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
       if (pendente(r)) pend++
     }
     return { cat, total, estudados, dominio: estudados ? Math.round((100 * dom) / total) : 0, pendentes: pend }
-  }), [categorias, cartas, registros, filtrosExtras])
+  }), [categorias, cartas, registros, filtrosExtras, comAssunto])
 
   /** Monta a fila: pendentes e errados, depois nunca vistos, depois o resto; sem repetir. */
-  const montar = useCallback((cat: Categoria, limite?: number) => {
-    const lista = cartas.filter((c) => cat.filtro(c, registros[c.id]) && filtrosExtras(c))
+  const montar = useCallback((cat: Categoria, limite?: number, semAssunto = false) => {
+    const lista = cartas.filter((c) => cat.filtro(c, registros[c.id]) && (semAssunto ? aceitaExtras(c) : filtrosExtras(c)))
     const peso = (c: Flashcard) => { const r = registros[c.id]; return r?.c === false ? 0 : pendente(r) ? 1 : !r ? 2 : 3 }
     // embaralha dentro de cada grupo para variar entre sessões
     const ordenada = lista.map((c) => ({ c, k: peso(c) + Math.random() * 0.9 })).sort((a, b) => a.k - b.k).map((x) => x.c)
     const n = limite ?? (tamanho === 'pendentes' ? ordenada.filter((c) => peso(c) <= 1).length || Math.min(10, ordenada.length) : tamanho)
     return ordenada.slice(0, n).map((c) => c.id)
-  }, [cartas, registros, filtrosExtras, tamanho])
+  }, [cartas, registros, filtrosExtras, aceitaExtras, tamanho])
 
   // Link direto (central, revisões de hoje, cronograma): #/flashcards/biblioteca?categoria=pendentes&area=mao&n=20
   // abre a sessão na hora. "area" pode repetir; com categoria=plano usa as áreas e a meta do cronograma.
@@ -137,7 +154,8 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
     }
     const assunto = q.get('assunto')
     const naArea = (c: Flashcard) => (!areas.length || areas.includes(c.areaId ?? c.area ?? '')) && (!assunto || c.assunto === assunto)
-    const ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }, n)
+    // o link traz o próprio recorte (área e assunto): não mistura com o assunto escolhido antes na Biblioteca
+    const ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }, n, true)
     if (ids.length) definirSessao({ titulo: assunto ?? base.nome, ids })
   }, [linkUsado, cartas, categorias, montar, seguirCronograma, definirSessao])
 
@@ -145,6 +163,17 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
   useEffect(() => {
     if (primeiro.length) definirSessao({ titulo: 'Os que te derrubaram na Batalha', ids: [...new Set(primeiro)].filter((id) => todasAsCartas().some((c) => c.id === id)) })
   }, [primeiro, definirSessao])
+
+  // Estudar o recorte do assunto: a mesma fila da Biblioteca (erros e revisões primeiro), só com ele.
+  const todosCat = categorias.find((c) => c.id === 'todos')
+  const encontrados = resumo.find((x) => x.cat.id === 'todos')?.total ?? 0
+  const naSessao = useMemo(() => (comAssunto && todosCat ? montar(todosCat).length : 0), [comAssunto, todosCat, montar])
+  const caminho = caminhoDoFiltro(filtro, arvore)
+  const estudarRecorte = () => {
+    if (!todosCat) return
+    const ids = montar(todosCat)
+    if (ids.length) { tocar('abrir'); definirSessao({ titulo: caminho[caminho.length - 1] ?? 'Assunto', ids }) }
+  }
 
   if (sessao && sessao.ids.length) {
     return <Sessao key={sessao.chave} titulo={sessao.titulo} ids={sessao.ids} aoAmpliar={aoAmpliar} reduzido={reduzido} aoHumor={aoHumor} aoTranquilo={aoTranquilo}
@@ -176,7 +205,9 @@ export function Estudo({ primeiro, aoAmpliar, reduzido, aoHumor, aoTranquilo }: 
           </div>
         </div>
       </header>
-      {crono && <CartaoCronogramaEstudo c={crono} sugerido={!ler<unknown>(CHAVE_PLANO, null)} aoSeguir={seguirCronograma} />}
+      {arvore.length > 0 && <FiltroAssuntos arvore={arvore} filtro={filtro} aoMudar={mudarFiltro} encontrados={encontrados} naSessao={naSessao} aoEstudar={estudarRecorte} />}
+      {crono && !comAssunto && <CartaoCronogramaEstudo c={crono} sugerido={!ler<unknown>(CHAVE_PLANO, null)} aoSeguir={seguirCronograma} />}
+      {comAssunto && <p className="fa__escopo">As listas abaixo estão só em <b>{caminho.join(' › ')}</b>.</p>}
       <div className="fc-categorias">
         {resumo.map(({ cat, total, estudados, dominio, pendentes }) => (
           <button key={cat.id} type="button" className="fc-categoria" style={{ ['--cor' as string]: cat.cor }} disabled={!total}

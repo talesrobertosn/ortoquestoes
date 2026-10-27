@@ -6,6 +6,8 @@
 
 **Resumo de 14/10/2026:** [RESUMO-14-10.md](RESUMO-14-10.md): estado atual, o que falta, conquistas, aviso do topo, conta grátis com 10 flashcards na Biblioteca e uma vida na Cripta a cada 24 horas (parte 19 do SQL) e herói adulto.
 
+**Estudar por assunto (27/10/2026):** [FILTRO-ASSUNTOS.md](FILTRO-ASSUNTOS.md), área > grupo > assunto na Biblioteca, com busca, chips e sessão só do recorte.
+
 **Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
 
 Ponto de partida para quem for continuar este projeto: Claude, ChatGPT Codex ou outro agente.
