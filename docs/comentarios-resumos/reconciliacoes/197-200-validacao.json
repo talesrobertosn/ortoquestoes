@@ -384,9 +384,13 @@
       "checks197200-final.log": "5b1e1676e3d8403a7aa63b01455be05d7ccfc7fb8a846f4bc48fe6480c3b7876",
       "ui197200-mao-2046-final.log": "5877ba502386fb65b39b04c96122afc0580d516e0ffc1bb7ab896932c7e37e43",
       "ajuste2046.log": "c9e472bd0cc8717237fd50322ebb72f8685a61d801b33491f2d21884a3931eeb",
-      "remotos197200-final.json": "8a5f65dad202365dd2d9881a7443e086fca614d81c3ff6845a1e865d22a6a383"
+      "remotos197200-final.json": "8a5f65dad202365dd2d9881a7443e086fca614d81c3ff6845a1e865d22a6a383",
+      "checks197200-origens.log": "2bc6502b2576bc8a386a23b05e85c2ce7f96ed87731ccbc4b1345b44e3309541",
+      "ui197200-origens.log": "b53c2ae5be5b3a936eb48f547a8c07fc225790fbe83a8cd7fcc9abc69a5ce948",
+      "origens197200-aplicacao.log": "392dc905d5a4b58331c209bfd4981b2a4bf2aeaa45aa828c424066ebc8b9f89e",
+      "auditoria197200-origens.log": "f568ccd8f927502dbe8f685010c63db8fb30e948a50f1f41ff287d9f74c77b00"
     },
-    "ajusteFinal2046": "Redação do alerta e da aula sem instruções editoriais ao aluno;fixtures,acervo,build,replay14/14 eUI2046 nas duas larguras repetidos após o ajuste. npm test aprovado antes desse ajuste apenas textual."
+    "ajusteFinal2046": "Redação clínica sem instruções editoriais; após restaurar motivos de criação,todos fixtures/acervo/npm test/build/replay14/UI14 foram repetidos."
   },
   "decisoes": [
     "2046:25% do gabarito diverge dos30–40% do resumo;alerta e explicação de todas as alternativas,letra preservada.",
@@ -408,5 +412,175 @@
     }
   },
   "proximo": 201,
-  "publicacao": "Validação local;CI do head,merge,guarda/deploy e produção ainda serão conferidos noPR."
+  "publicacao": "Validação local;CI do head,merge,guarda/deploy e produção ainda serão conferidos noPR.",
+  "origensRestauradas": {
+    "mao-1782": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 56,
+        "numeroOriginal": 56
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 56 do SIMÃO 2026, que cobrou a estratégia para a pseudoartrose do escafoide com deformidade em corcunda e DISI.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 56 do SIMÃO 2026, que cobrou a estratégia para a pseudoartrose do escafoide com deformidade em corcunda e DISI."
+    },
+    "mao-1783": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 62,
+        "numeroOriginal": 62
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 62 do SIMÃO 2026, que cobrou o critério que separa a tenodese da artrodese intercarpal no algoritmo de Garcia-Elias.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 62 do SIMÃO 2026, que cobrou o critério que separa a tenodese da artrodese intercarpal no algoritmo de Garcia-Elias."
+    },
+    "mao-1786": {
+      "origem": {
+        "arquivo": "SIMAO-2026-Questoes.docx",
+        "pagina": 89,
+        "numeroOriginal": 89
+      },
+      "prova": "SIMÃO",
+      "ano": 2026,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 89 do SIMÃO 2026, que cobrou em qual situação o gesso é a escolha para a fratura do escafoide.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 89 do SIMÃO 2026, que cobrou em qual situação o gesso é a escolha para a fratura do escafoide."
+    },
+    "mao-1951": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 26,
+        "numeroOriginal": 44
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 44 do SIMÃO 2023, em que a banca pediu o estágio de Garcia-Elias da lesão parcial, reparável e com ângulo radiossemilunar normal. O fato volta com os estágios em outra ordem; aqui o ângulo foi escrito como no Green, radioescafoide.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 44 do SIMÃO 2023, sobre a classificação de Garcia-Elias da lesão parcial escafossemilunar."
+    },
+    "mao-1954": {
+      "origem": {
+        "arquivo": "SIMAO 2023",
+        "pagina": 27,
+        "numeroOriginal": 82
+      },
+      "prova": "SIMÃO",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 82 do SIMÃO 2023, em que a banca perguntou o padrão mais comum de lesão do ligamento SL na dissociação aguda pela classificação de Andersson. O fato volta com os quatro padrões em outra ordem.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 82 do SIMÃO 2023, em que a banca perguntou o padrão mais comum de lesão do ligamento SL na dissociação aguda pela classificação de Andersson."
+    },
+    "mao-2035": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 4,
+        "numeroOriginal": 4
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 4 da SBCM 2024, que perguntou o tratamento de escolha da artrose mediocarpal secundária ao SNAC ou ao SLAC. O ponto é reconhecer que as artrodeses que mantêm o escafoide não tratam uma mediocarpal doente.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 4 da SBCM 2024, que perguntou o tratamento de escolha da artrose mediocarpal secundária ao SNAC ou ao SLAC."
+    },
+    "mao-2046": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 67,
+        "numeroOriginal": 67
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 67 da SBCM 2024, que perguntou que proporção das fraturas do escafoide não aparece nas radiografias iniciais. As alternativas são todas porcentagens plausíveis; só uma é a do Green.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 67 da SBCM 2024, que perguntou que proporção das fraturas do escafoide não aparece nas radiografias iniciais."
+    },
+    "mao-2047": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 68,
+        "numeroOriginal": 68
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 68 da SBCM 2024, que perguntou como escolher o comprimento do parafuso na fixação do escafoide em relação à medida do fio-guia.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 68 da SBCM 2024, que perguntou como escolher o comprimento do parafuso na fixação do escafoide em relação à medida do fio-guia."
+    },
+    "mao-2048": {
+      "origem": {
+        "arquivo": "SBCM 2024",
+        "pagina": 85,
+        "numeroOriginal": 85
+      },
+      "prova": "SBCM",
+      "ano": 2024,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 85 da SBCM 2024, que perguntou qual osso do carpo é o mais fraturado depois do escafoide. A original tinha só três alternativas; aqui entrou o trapézio, que é o terceiro na série de Garcia-Elias.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 85 da SBCM 2024, que perguntou qual osso do carpo é o mais fraturado depois do escafoide."
+    },
+    "mao-2199": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 59,
+        "numeroOriginal": 59
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 59 da SBCM 2023, que cobrou o momento do estalido no teste de WATSON.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 59 da SBCM 2023, que cobrou o momento do estalido no teste de WATSON."
+    },
+    "mao-2208": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 4,
+        "numeroOriginal": 4
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 4 da SBCM 2023, que perguntou a origem das instabilidades adaptativas e ofereceu consolidação viciosa do rádio distal entre lesões ligamentares.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 4 da SBCM 2023, que perguntou a origem das instabilidades adaptativas e ofereceu consolidação viciosa do rádio distal entre lesões ligamentares."
+    },
+    "mao-2209": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 42,
+        "numeroOriginal": 42
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 42 da SBCM 2023, que cobrou o comportamento das reconstruções ligamentares no estágio 6 de GARCIA-ELIAS.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 42 da SBCM 2023, que cobrou o comportamento das reconstruções ligamentares no estágio 6 de GARCIA-ELIAS."
+    },
+    "mao-2213": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 86,
+        "numeroOriginal": 86
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 86 da SBCM 2023, que cobrou a porção do ligamento lesada no tipo IIIB da EWAS.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 86 da SBCM 2023, que cobrou a porção do ligamento lesada no tipo IIIB da EWAS."
+    },
+    "mao-2222": {
+      "origem": {
+        "arquivo": "SBCM 2023",
+        "pagina": 44,
+        "numeroOriginal": 44
+      },
+      "prova": "SBCM",
+      "ano": 2023,
+      "paragrafoAnterior": "**Por que esta questão foi criada.** Inspirada na questão 44 da SBCM 2023, que cobrou as características da fixação do escafoide pela via dorsal.",
+      "paragrafoRestaurado": "**Por que esta questão foi criada.** Inspirada na questão 44 da SBCM 2023, que cobrou as características da fixação do escafoide pela via dorsal."
+    }
+  },
+  "revisaoPR590": {
+    "headAnterior": "43cc41fd0a1418c8e7b14e5964308128a623d90d",
+    "achados": [
+      {
+        "id": 4392074936,
+        "tratamento": "AGENTS e protocolo explicitam a instrução atual do dono: TODAS as candidatas existentes, fontes Markdown/JSON, revisão secundária com baseResumo. Mantida a regra doGreen para novos simulados e fonte primária;sem páginas inventadas nem referências antigas como evidência nova."
+      },
+      {
+        "id": 4392074950,
+        "tratamento": "Restaurados os14motivos específicos de criação,com prova,ano e número conferidos nos metadados de origem. Complementos clínicos não reconsultados não foram copiados como fonte."
+      }
+    ],
+    "novaRevisao": "Aguardar verificação do novo head antes do merge."
+  }
 }
