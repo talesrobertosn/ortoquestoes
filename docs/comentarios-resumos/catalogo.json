@@ -3,12 +3,12 @@
  "criterio": "Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.",
  "estados": {
   "duplicada": 87,
-  "pendente": 495,
+  "pendente": 485,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 416,
+  "pendente-fonte": 423,
   "pendente-inspecao-imagem": 64,
-  "revisada": 1550
+  "revisada": 1553
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -295,40 +295,40 @@
    "titulo": "Fratura da diáfise do fêmur na criança",
    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
    "estados": {
-    "pendente": 14,
-    "pendente-fonte": 12,
+    "pendente": 10,
+    "pendente-fonte": 14,
     "pendente-inspecao-imagem": 3,
-    "revisada": 78
+    "revisada": 80
    }
   },
   "rockwoodcriancas10-26-fise-distal-femur": {
    "titulo": "Fratura da fise distal do fêmur na criança",
    "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
    "estados": {
-    "pendente": 20,
-    "pendente-fonte": 13,
+    "pendente": 10,
+    "pendente-fonte": 20,
     "pendente-inspecao-imagem": 3,
-    "revisada": 83
+    "revisada": 86
    }
   },
   "rockwoodcriancas10-27-fise-proximal-tibia": {
    "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
    "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
    "estados": {
-    "pendente": 14,
-    "pendente-fonte": 19,
+    "pendente": 10,
+    "pendente-fonte": 21,
     "pendente-inspecao-imagem": 3,
-    "revisada": 80
+    "revisada": 82
    }
   },
   "rockwoodcriancas10-29-diafise-tibia": {
    "titulo": "Fraturas da tíbia e da fíbula na criança",
    "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
    "estados": {
-    "pendente": 14,
-    "pendente-fonte": 13,
+    "pendente": 10,
+    "pendente-fonte": 15,
     "pendente-inspecao-imagem": 3,
-    "revisada": 77
+    "revisada": 79
    }
   },
   "rockwoodcriancas9-12-avaliacao-cotovelo": {
@@ -32972,8 +32972,8 @@
    ],
    "prova": "TARO",
    "ano": 2015,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "Os resumos25/26 relacionam mielomeningocele a osteopenia,fratura com pouco trauma e lesão fisária femoral,mas não comparam a FREQUÊNCIA das extremidades distal femoral,distal tibial,proximal femoral eproximal tibial nessa doença. Falta distribuição anatômica específica para confirmarA e conferir os quatro distratores;exemplo de lesão distal não prova ser o local mais frequente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -32987,7 +32987,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "e4c3d732753c51d255c9aa182015626c7decd4ad0f57ffe86ba8f6f417839634"
+   "questaoSha256": "e4c3d732753c51d255c9aa182015626c7decd4ad0f57ffe86ba8f6f417839634",
+   "pendencia": "Os resumos25/26 relacionam mielomeningocele a osteopenia,fratura com pouco trauma e lesão fisária femoral,mas não comparam a FREQUÊNCIA das extremidades distal femoral,distal tibial,proximal femoral eproximal tibial nessa doença. Falta distribuição anatômica específica para confirmarA e conferir os quatro distratores;exemplo de lesão distal não prova ser o local mais frequente."
   },
   "pediatria-0066": {
    "tema": "pediatria",
@@ -33045,7 +33046,7 @@
    ],
    "prova": "TEOT",
    "ano": 2021,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -33060,7 +33061,46 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "7db62158404770e49dca325011ea2abbaa526534b9ab5bdd917ae499719e0133"
+   "questaoSha256": "7db62158404770e49dca325011ea2abbaa526534b9ab5bdd917ae499719e0133",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "Por que essa fise é diferente"
+      ],
+      "blocos": [
+       "por-que-essa-fise-e-diferente-f2f28d85",
+       "por-que-essa-fise-e-diferente-08e430bb"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "9d9845d9b6360d9913da10c24ac20ec63371ea59c53eb3501475f863dc7efbfa"
+     },
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "Por que a fise proximal da tíbia quebra pouco"
+      ],
+      "blocos": [
+       "por-que-a-fise-proximal-da-tibia-quebra-pouco-57154d24"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "21b296254f6f9767815aa0fad0b15329c03ef7446745a3138aabb3020e996d95"
+     }
+    ],
+    "questaoSha256": "7db62158404770e49dca325011ea2abbaa526534b9ab5bdd917ae499719e0133",
+    "comentarioSha256": "c1a55276a80db4819e086044492d2492377555b93bf2b7671a799ad8d27f4673"
+   }
   },
   "pediatria-0123": {
    "tema": "pediatria",
@@ -35015,8 +35055,8 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo26 explica irrigação rica e caráter extrassinovial do fêmur distal,mas os pares fêmurPROXIMAL+rádioPROXIMAL e as outras fises constam apenas da nota contextual de questão. Falta anatomia vascular independente comparativa que demonstre a interrupção da irrigação germinativa especificamente nesses dois locais após separação,refutando os paresA/B/C. Não usar nota de prova ou comentário antigo como fonte deD.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35030,7 +35070,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "58238d249fdb83d7053d949a17336f698f2418cd0ed05fb5ae9698f4ca64fadc"
+   "questaoSha256": "58238d249fdb83d7053d949a17336f698f2418cd0ed05fb5ae9698f4ca64fadc",
+   "pendencia": "O corpo26 explica irrigação rica e caráter extrassinovial do fêmur distal,mas os pares fêmurPROXIMAL+rádioPROXIMAL e as outras fises constam apenas da nota contextual de questão. Falta anatomia vascular independente comparativa que demonstre a interrupção da irrigação germinativa especificamente nesses dois locais após separação,refutando os paresA/B/C. Não usar nota de prova ou comentário antigo como fonte deD."
   },
   "pediatria-0570": {
    "tema": "pediatria",
@@ -35039,8 +35080,8 @@
    ],
    "prova": "TARO",
    "ano": 2022,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo26 quantifica distúrbio de crescimento após fratura distal femoral,inclusiveIII/IV,mas não fornece comparação direta do MESMO desfecho apósIII/IV no maléolo medial,tíbia proximal e fêmur proximal. Falta base comparativa para o superlativo mais comumente deB;taxa alta num único local não comprova a hierarquia pedida.",
    "temComentario": true,
    "citacoes": [
     {
@@ -35054,7 +35095,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "8b9e7d69072600107b0f9f8666dc00e0879b9b3cbd40c5349f1e13cb26d9df6d"
+   "questaoSha256": "8b9e7d69072600107b0f9f8666dc00e0879b9b3cbd40c5349f1e13cb26d9df6d",
+   "pendencia": "O corpo26 quantifica distúrbio de crescimento após fratura distal femoral,inclusiveIII/IV,mas não fornece comparação direta do MESMO desfecho apósIII/IV no maléolo medial,tíbia proximal e fêmur proximal. Falta base comparativa para o superlativo mais comumente deB;taxa alta num único local não comprova a hierarquia pedida."
   },
   "pediatria-0572": {
    "tema": "pediatria",
@@ -36723,8 +36765,8 @@
    ],
    "prova": "TARO",
    "ano": 2018,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo26 atribui reforço periférico ao anel pericondral e estabilidade adicional às ondulações,mas faltam definições e funções próprias da zona deRanvier,dos processos mamilares e da camada periosteal na junção osso-cartilagem. A nota contextual de questão não é fonte independente para distinguirRanvier. Necessário trecho anatômico que confiraD e explique cada distrator sem negar genericamente sua participação na estabilidade.",
    "temComentario": true,
    "citacoes": [
     {
@@ -36738,7 +36780,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "de6e5cc69a4e8ba5482cf4c4e97abebec2772a873de7936d728885659aaf39a9"
+   "questaoSha256": "de6e5cc69a4e8ba5482cf4c4e97abebec2772a873de7936d728885659aaf39a9",
+   "pendencia": "O corpo26 atribui reforço periférico ao anel pericondral e estabilidade adicional às ondulações,mas faltam definições e funções próprias da zona deRanvier,dos processos mamilares e da camada periosteal na junção osso-cartilagem. A nota contextual de questão não é fonte independente para distinguirRanvier. Necessário trecho anatômico que confiraD e explique cada distrator sem negar genericamente sua participação na estabilidade."
   },
   "pediatria-0623": {
    "tema": "pediatria",
@@ -37316,8 +37359,8 @@
    ],
    "prova": "TARO",
    "ano": 2019,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo26 fornece indicação de ressecção da ponte por tamanho,crescimento restante e deformidade,mas não compara resultados conforme causa:trauma,tumor,infecção e irradiação. A própria nota admite ausência dessa comparação. Faltam prognósticos e mecanismo diferencial por etiologia para confirmarB;indicação pós-traumática não prova melhor resultado entre as quatro causas.",
    "temComentario": true,
    "citacoes": [
     {
@@ -37331,7 +37374,8 @@
    "resumosCandidatos": [
     "rockwoodcriancas10-26-fise-distal-femur"
    ],
-   "questaoSha256": "ff58cc27334636213aafa2a8971b0a21f05af2f7aa985d6a057f39e350870764"
+   "questaoSha256": "ff58cc27334636213aafa2a8971b0a21f05af2f7aa985d6a057f39e350870764",
+   "pendencia": "O corpo26 fornece indicação de ressecção da ponte por tamanho,crescimento restante e deformidade,mas não compara resultados conforme causa:trauma,tumor,infecção e irradiação. A própria nota admite ausência dessa comparação. Faltam prognósticos e mecanismo diferencial por etiologia para confirmarB;indicação pós-traumática não prova melhor resultado entre as quatro causas."
   },
   "pediatria-0643": {
    "tema": "pediatria",
@@ -41263,8 +41307,8 @@
    ],
    "prova": "TARO",
    "ano": 2006,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O corpo25 descreve hipercrescimento e fatores controversos,mas não compara placa com fixação intramedular nem diferencia exposição aberta de placa submuscular. Falta comparação controlada ou afirmação explícita da fonte paraCerto/Errado. Sem oficial,preservar provávelA e alerta antigos sem reafirmá-los,sem selo novo. Comentário antigo não comprova a alegação histórica nem a comparação recente.",
    "temComentario": true,
    "citacoes": [
     {
@@ -41281,7 +41325,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "41565f37fdf1170d584c468b922c374ea5b0615bf6248bd7d3b69a1fe5972557"
+   "questaoSha256": "41565f37fdf1170d584c468b922c374ea5b0615bf6248bd7d3b69a1fe5972557",
+   "pendencia": "O corpo25 descreve hipercrescimento e fatores controversos,mas não compara placa com fixação intramedular nem diferencia exposição aberta de placa submuscular. Falta comparação controlada ou afirmação explícita da fonte paraCerto/Errado. Sem oficial,preservar provávelA e alerta antigos sem reafirmá-los,sem selo novo. Comentário antigo não comprova a alegação histórica nem a comparação recente."
   },
   "pediatria-0814": {
    "tema": "pediatria",
@@ -51284,7 +51329,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51302,7 +51347,35 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "d3e522b548b978cf2f413fde7cf3034def271d5eb07aaed3cce3e58d302ace30"
+   "questaoSha256": "d3e522b548b978cf2f413fde7cf3034def271d5eb07aaed3cce3e58d302ace30",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+      "titulo": "Fratura da fise distal do fêmur na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+      "secoes": [
+       "O mecanismo: o ligamento é mais forte que a fise",
+       "Por que essa fise é diferente",
+       "As lesões que vêm junto"
+      ],
+      "blocos": [
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-927b59dc",
+       "o-mecanismo-o-ligamento-e-mais-forte-que-a-fise-72e0078c",
+       "por-que-essa-fise-e-diferente-32875fe6",
+       "as-lesoes-que-vem-junto-8d3f421c"
+      ],
+      "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+      "trechosSha256": "cc8993827ad5b10232f9284452ba690c79d42ff1083d2df7fe06145843805d03"
+     }
+    ],
+    "questaoSha256": "d3e522b548b978cf2f413fde7cf3034def271d5eb07aaed3cce3e58d302ace30",
+    "comentarioSha256": "f55f19da0fa533376a139148c39f3047ee98b5d41fc2ff422b80dc442bcb794a"
+   }
   },
   "pediatria-1097": {
    "tema": "pediatria",
@@ -51897,7 +51970,7 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
+   "estado": "revisada",
    "motivo": "",
    "temComentario": true,
    "citacoes": [
@@ -51915,7 +51988,31 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "4a990eaa953e24fad99bf3d8fb7b3a961c36742d770a9da2f81c73888d04547a"
+   "questaoSha256": "4a990eaa953e24fad99bf3d8fb7b3a961c36742d770a9da2f81c73888d04547a",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+      "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+      "livro": "Rockwood and Wilkins' Fractures in Children",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+      "secoes": [
+       "A classificação de OGDEN modificada"
+      ],
+      "blocos": [
+       "a-classificacao-de-ogden-modificada-288154c9",
+       "a-classificacao-de-ogden-modificada-54560a75"
+      ],
+      "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+      "trechosSha256": "7c2e6e24187144100ab9bd574229df4b508b2669c9ddb8569e072529b8da492f"
+     }
+    ],
+    "questaoSha256": "4a990eaa953e24fad99bf3d8fb7b3a961c36742d770a9da2f81c73888d04547a",
+    "comentarioSha256": "e984af1f157c59e80fe6b89c7809410b1fb6a041d77c1ce122228cde0bc699bb"
+   }
   },
   "pediatria-1109": {
    "tema": "pediatria",
@@ -51925,8 +52022,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente",
-   "motivo": "",
+   "estado": "pendente-fonte",
+   "motivo": "O resumo27 classifica avulsão pura do tendão sem fratura comoV,mas a seção de fasciotomia usaV com cortical posterior rompida. Falta conferir a versão da classificação na fonte primária e a distinção dos padrõesI/II/IV/V antes de confirmarD com selo. A ausência de fragmento na radiografia e patela alta também exigem diferenciar ruptura tendínea de lesão pouco ossificada,não apenas atribuir classificação pela nota contextual.",
    "temComentario": true,
    "citacoes": [
     {
@@ -51943,7 +52040,8 @@
     "rockwoodcriancas10-27-fise-proximal-tibia",
     "rockwoodcriancas10-29-diafise-tibia"
    ],
-   "questaoSha256": "0a037c02c9c7659e26a7833a6bf3672140a0e945e88f26458993fd819e2edc7d"
+   "questaoSha256": "0a037c02c9c7659e26a7833a6bf3672140a0e945e88f26458993fd819e2edc7d",
+   "pendencia": "O resumo27 classifica avulsão pura do tendão sem fratura comoV,mas a seção de fasciotomia usaV com cortical posterior rompida. Falta conferir a versão da classificação na fonte primária e a distinção dos padrõesI/II/IV/V antes de confirmarD com selo. A ausência de fragmento na radiografia e patela alta também exigem diferenciar ruptura tendínea de lesão pouco ossificada,não apenas atribuir classificação pela nota contextual."
   },
   "pediatria-1110": {
    "tema": "pediatria",

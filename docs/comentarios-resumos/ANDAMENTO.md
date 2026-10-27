@@ -5,12 +5,12 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | Estado | Questões |
 | --- | ---: |
 | duplicada | 87 |
-| pendente | 495 |
+| pendente | 485 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 416 |
+| pendente-fonte | 423 |
 | pendente-inspecao-imagem | 64 |
-| revisada | 1550 |
+| revisada | 1553 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -42,10 +42,10 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Fraturas do tornozelo (`rockwood10-65-tornozelo`) | 39 | 0 | 27 |
 | Fraturas e luxações do tálus (`rockwood10-66-talus`) | 28 | 0 | 25 |
 | Epidemiologia das fraturas na criança (`rockwoodcriancas10-01-epidemiologia-fraturas`) | 70 | 0 | 66 |
-| Fratura da diáfise do fêmur na criança (`rockwoodcriancas10-25-diafise-femur`) | 78 | 0 | 29 |
-| Fratura da fise distal do fêmur na criança (`rockwoodcriancas10-26-fise-distal-femur`) | 83 | 0 | 36 |
-| Fratura da fise proximal e da tuberosidade da tíbia na criança (`rockwoodcriancas10-27-fise-proximal-tibia`) | 80 | 0 | 36 |
-| Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 77 | 0 | 30 |
+| Fratura da diáfise do fêmur na criança (`rockwoodcriancas10-25-diafise-femur`) | 80 | 0 | 27 |
+| Fratura da fise distal do fêmur na criança (`rockwoodcriancas10-26-fise-distal-femur`) | 86 | 0 | 33 |
+| Fratura da fise proximal e da tuberosidade da tíbia na criança (`rockwoodcriancas10-27-fise-proximal-tibia`) | 82 | 0 | 34 |
+| Fraturas da tíbia e da fíbula na criança (`rockwoodcriancas10-29-diafise-tibia`) | 79 | 0 | 28 |
 | Avaliação do cotovelo da criança traumatizada (`rockwoodcriancas9-12-avaliacao-cotovelo`) | 25 | 0 | 2 |
 | Fratura supracondiliana do úmero na criança (`rockwoodcriancas9-13-supracondiliana`) | 52 | 0 | 3 |
 | Fratura em T (intercondiliana) do úmero distal na criança (`rockwoodcriancas9-14-fratura-em-t`) | 13 | 0 | 6 |
