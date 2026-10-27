@@ -591,3 +591,51 @@
 }
 .ip-trio--um { grid-template-columns: 1fr; }
 .ip-trio--dois { grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+
+/* ---------- Indique e ganhe (botão, 27/10/2026) ---------- */
+/* Bilhete escuro com filete de ouro, o baú em pixel flutuando com três brilhos e o selo dos dias em Jersey 10. */
+.ip-indique {
+  position: relative; isolation: isolate; display: flex; align-items: center; gap: var(--e-4);
+  padding: var(--e-3) var(--e-5) var(--e-3) var(--e-4);
+  border: 2px solid var(--px-tinta); border-radius: var(--ip-raio);
+  background: radial-gradient(120% 140% at 0% 50%, #0e3a33 0%, var(--ip-noite) 60%);
+  color: #fff; text-decoration: none; box-shadow: 5px 5px 0 var(--px-ouro-sombra);
+  transition: transform var(--duracao-rapida) var(--ip-mola), box-shadow var(--duracao-rapida) var(--ip-mola);
+}
+.ip-indique::after { content: ""; position: absolute; inset: 5px; z-index: -1; border: 1px solid rgba(244, 207, 124, 0.32); border-radius: 3px; pointer-events: none; }
+.ip-indique:hover { color: #fff; transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--px-ouro-sombra); }
+.ip-indique:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--px-ouro-sombra); }
+.ip-indique:focus-visible { outline: 3px solid var(--ip-ouro-claro); outline-offset: 4px; }
+.ip-indique__bau { position: relative; flex: none; display: grid; place-items: center; width: 64px; height: 64px; }
+.ip-indique__bau img { image-rendering: pixelated; animation: ip-bau 2.4s steps(4) infinite; filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.35)); }
+.ip-indique:hover .ip-indique__bau img { animation: pixel-pulo 0.5s steps(3) 1; }
+/* Brilhos em cruz, como os do baú, piscando fora de fase. */
+.ip-indique__bau i { position: absolute; width: 6px; height: 6px; background: var(--px-ouro); clip-path: polygon(33% 0, 67% 0, 67% 33%, 100% 33%, 100% 67%, 67% 67%, 67% 100%, 33% 100%, 33% 67%, 0 67%, 0 33%, 33% 33%); animation: ip-brilha 1.8s steps(2) infinite; }
+.ip-indique__bau i:nth-child(2) { top: 2px; left: 4px; }
+.ip-indique__bau i:nth-child(3) { top: 8px; right: 0; animation-delay: 0.6s; }
+.ip-indique__bau i:nth-child(4) { bottom: 6px; right: 2px; width: 4px; height: 4px; animation-delay: 1.2s; }
+.ip-indique__texto { display: grid; gap: 2px; min-width: 0; }
+.ip-indique__texto small { color: var(--px-ouro); font-size: var(--meta); font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; }
+.ip-indique__texto strong { font-family: var(--fonte-marca); font-size: clamp(1.15rem, 2.2vw, 1.4rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
+.ip-indique__texto > span { color: rgba(255, 255, 255, 0.82); font-size: var(--meta); }
+.ip-indique__selo {
+  flex: none; margin-left: auto; padding: 0.15rem 0.6rem 0.25rem; background: var(--px-ouro); color: var(--px-tinta);
+  font-family: var(--fonte-pixel-titulo); font-size: 1.6rem; line-height: 1; white-space: nowrap;
+  box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra); transform: rotate(-2deg);
+}
+.ip-indique__seta { flex: none; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; background: var(--px-tinta); color: var(--px-ouro); transition: transform var(--duracao-rapida) var(--ip-mola); }
+.ip-indique:hover .ip-indique__seta { transform: translateX(3px); }
+@keyframes ip-bau { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes ip-brilha { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+@media (max-width: 40rem) {
+  .ip-indique { gap: var(--e-3); padding: var(--e-3); }
+  .ip-indique__bau { width: 52px; height: 52px; }
+  .ip-indique__bau img { width: 46px; height: 46px; }
+  .ip-indique__seta { display: none; }
+  .ip-indique__selo { position: absolute; top: -0.9rem; right: var(--e-3); font-size: 1.25rem; }
+  .ip-indique__texto small { font-size: 0.72rem; letter-spacing: 0.04em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ip-indique, .ip-indique__seta { transition: none; }
+  .ip-indique__bau img, .ip-indique__bau i, .ip-indique:hover .ip-indique__bau img { animation: none; }
+}

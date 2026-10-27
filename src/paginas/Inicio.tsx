@@ -19,6 +19,7 @@ import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../compon
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { SecaoIndique } from '../componentes/SecaoIndique'
+import { BotaoIndique } from '../componentes/BotaoIndique'
 import { CartaoPlanos, FaixaPlanos } from '../componentes/CartaoPlanos'
 import { AmostraRespondivel } from '../componentes/inicio/AmostraRespondivel'
 import { type DiaSequencia, PainelSequencia } from '../componentes/inicio/PainelSequencia'
@@ -315,6 +316,7 @@ export function Inicio() {
         <ChamadaSimuladoNacional />
         <QuadroAtlas />
 
+        <BotaoIndique />
         <section className="ip-pilares ip-entra" aria-labelledby="ip-pilares-titulo" style={{ '--i': 1 } as CSSProperties}>
           <h2 id="ip-pilares-titulo" className="ip-pilares__titulo">O que o Orto Questões faz por você</h2>
           <div className="ip-pilares__grade">
@@ -446,6 +448,7 @@ export function Inicio() {
           <span><strong>Atlas 3D <SeloNovo /></strong><small>Clique no osso</small></span>
         </a>
       </nav>
+      <BotaoIndique />
 
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
       <ConviteLimiteDoDia />
