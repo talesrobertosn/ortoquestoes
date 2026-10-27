@@ -51,7 +51,7 @@ mapa das oficiais na seção "Mapa para correção" abaixo e em `docs/simulados/
 | 20 | Clavicle and Scapula | 1944 a 2072 | A fazer |
 | 21 | Cervical Spine | 2073 a 2164 | A fazer |
 | 22 | Thoracolumbar Spine | 2165 a 2226 | A fazer |
-| 23 | Pelvic and Acetabular | 2227 a 2334 | A fazer |
+| 23 | Pelvic and Acetabular | 2227 a 2334 | Feito em 27/10/2026: `rockwoodcriancas10-23-pelve-acetabulo`, `pediatria-1168` a `1181` |
 | 24 | Hip | 2335 a 2436 | A fazer |
 | 25 | Femoral Shaft | 2437 a 2555 | Feito em 26/10/2026: `rockwoodcriancas10-25-diafise-femur`, `pediatria-1122` a `1136` |
 | 26 | Distal Femoral Physis | 2556 a 2642 | Feito em 26/10/2026: `rockwoodcriancas10-26-fise-distal-femur`, `pediatria-1094` a `1107` |
@@ -91,3 +91,4 @@ Para a revisão futura dos comentários das oficiais com estes resumos.
 | 25 | `pediatria-0863`, `0912`, `0541`, `0556`, `0951`, `0709`, `0565`, `0591`, `0844`, `0647`, `0623`, `0619`, `0603`, `0907`, `0743`, `0749`, `0813`, `0935` | Sem gabarito: `0935` (capítulo sustenta gesso), `0749` (sustenta mais dor), `0743` (mais próxima: até 3 cm), `0813` (não sustentada). `0951`: alternativa B fala em varo, o capítulo descreve valgo após placa distal. |
 | 29 | `pediatria-0549`, `0752`, `0516`, `0545`, `0601`, `0579`, `0705`, `0646`, `0621`, `0716`, `0818`, `0630`, `0916`, `0950` | `0549` (TARO 2023): gabarito na cortical lateral, o capítulo diz medial. Sem gabarito: `0752` (lateral em extensão), `0716` (3 a 6 anos e valgo), `0818` (Certo). Espinha tibial (`0535`, `0700`, `0711`, `0735`, `0949`) fica para o cap. 28. |
 | 30 | `pediatria-0910`, `0650`, `0557`, `0955`, `0923`, `0543`, `0546`, `0568`, `0842`, `0686`, `0905`, `0615`, `0588`, `0662`, `0867`, `0517`, `0637`, `0820`, `0928`, `1081`, `0531`, `0570` | `0531` (TARO 2025): valgo como complicação mais comum; o capítulo dá varo para a ponte medial e valgo para a parada da fíbula. `0615` (SBOT-SP): TILLAUX "III ou IV", o capítulo diz III. Sem gabarito: `0820` (Certo), `0928` (III e II), `0923` (figura). |
+| 23 | `pediatria-0613`, `0947`, `0567`, `0620`, `0645`, `0660`, `0845`, `0694` | `0567` (TARO 2022): IIIB e IV instáveis; o capítulo chama o IIIB de estável, mas grave. `0694` (TARO 2014): o capítulo não dá a complicação mais frequente do tipo III; aponta a consolidação viciosa do anel como principal desfecho adverso em geral. |
