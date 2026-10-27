@@ -3706,3 +3706,27 @@ Revisão médica e publicação permanecem pendentes.
 **Aproveitamento do capítulo 1:** `pediatria-1083` a `pediatria-1093`, 11 questões, sem imagem,
 gabarito A3/B2/C3/D3. O resumo `rockwoodcriancas10-01-epidemiologia-fraturas` cobre etiologia,
 frequência, idade e sexo, fise, ambiente, queda de altura, pandemia e prevenção.
+
+## Fratura da fise distal do fêmur na criança, Rockwood and Wilkins 10ª ed., cap. 26
+
+**Recorte.** Busca por fêmur distal, fise distal do fêmur e côndilo femoral em Ortopedia pediátrica e no subtema Lesões
+fisárias (todas as provas). Oficiais diretas: TARO 2011 tipo mais comum (II, `pediatria-0654`), TARO 2019 forças no
+adolescente (varo e valgo, `0635`), TARO 2016 lesão associada (ligamentar, `0608`), TARO 2021 tipo III do côndilo medial e
+cruzado anterior (`0590`), TARO 2023 estrutura que transmite o valgo (colateral tibial, `0552`), TARO 2022 parada após III e IV
+(fêmur distal, `0570`), TARO 2022 irrigação nas fises intra-articulares (`0569`), TEOT 2021 fise que mais cresce (`0111`),
+TEOT 2023 MENELAUS (`0174`), TARO 2015 mielomeningocele (`0065`), TARO 2024 PARK-HARRIS (`0538`), TEOT 2024 RANG VI (`0559`),
+TARO 2018 anel pericondral (`0622`) e TARO 2006 sem gabarito (`0825`).
+
+**Forma.** Enunciados curtos de uma frase, sem caso clínico, quatro alternativas de palavra única ou par curto; a banca
+pergunta "o mais comum", "a lesão associada" e "o mecanismo". Nada de figura.
+
+**Lacunas com cara de prova (projeção, 10ª edição).** Ordem de frequência dos tipos (II 57%, I 15%, IV 12%, III 10%, V 3%);
+distúrbio do crescimento por tipo (I 36%, II 58%, III 49%, IV 64%); classificação por idade (2 a 11 anos pior); desvio
+anterior e artéria poplítea; sequência no pé sem perfusão (reduzir e fixar, 15 a 20 minutos, explorar); fibular por tração
+(6 a 12 semanas, ENMG aos 3 meses); pinos lisos por até 4 semanas; remanipular até 10 dias; leitura da linha de PARK-HARRIS;
+espícula medial leva a valgo; ressecção da ponte menor que 50% com 2 anos de crescimento; fratura do canto e maus-tratos.
+
+**Divergências.** Nenhuma contra gabarito oficial. TARO 2006 (`0825`) sem gabarito: o capítulo sustenta Errado. TARO 2019
+(`0641`, causa de ponte com melhor resultado) não é discutido no capítulo.
+
+**Aproveitamento:** `pediatria-1094` a `pediatria-1107`, 14 questões, gabarito A3/B4/C3/D4, mediana de 3.356 caracteres.
