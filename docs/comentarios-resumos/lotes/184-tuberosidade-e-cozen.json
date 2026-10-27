@@ -1,0 +1,226 @@
+{
+  "pediatria-0661": {
+    "questaoSha256": "ef30f8e051b45b741c8c1088754feb0a46c8951869eaac3dc57f5ad355456ae7",
+    "comentarioAnteriorSha256": "0718447b18c2159241a1af942434c2f8f178679556fba0e12ec1678114d97347",
+    "comentario": {
+      "conceito": "O tipo III da avulsão da tuberosidade tibial alcança a articulação através da epífise. A comparação com Salter-Harris deve seguir esse trajeto: o padrão III percorre a fise e sai pela epífise para a superfície articular, enquanto o IV acrescentaria uma passagem pela metáfise (Rockwood crianças, 10ª ed., caps.27, A classificação de OGDEN modificada, e 26, Os tipos de SALTER-HARRIS).\n\nNa classificação da tuberosidade, o tipo I é apofisário; o II envolve a epífise sem atingir a articulação; o III é intra-articular. Watson-Jones descreveu os três tipos iniciais e Ogden acrescentou subtipos de desvio e cominuição. O avanço do traço até a articulação é o que muda o problema: além de recuperar a inserção do aparelho extensor, é necessário avaliar a congruência articular e as lesões internas associadas.\n\nNão se deve responder pela simples igualdade dos números. O raciocínio é anatômico: há saída epifisária articular e não foi acrescentado ao padrão descrito um componente metafisário. Isso o relaciona a Salter-Harris III. Classificações expandidas com outros tipos da tuberosidade não devem ser automaticamente convertidas em Salter-Harris do mesmo número.\n\nSe o tipo III da tuberosidade tem desvio, o resumo descreve redução aberta. A relação com a articulação explica essa exigência; não é apenas um nome de classificação sem consequência para o tratamento.",
+      "correta": "**Correta: B (III).** O padrão da tuberosidade descrito envolve epífise e articulação, sem o trajeto metafisário do tipo IV. Essa relação corresponde ao Salter-Harris III. A comparação é sustentada pela anatomia do traço, e não pela coincidência numérica entre os nomes.",
+      "incorretas": {
+        "A": "Salter-Harris II sai da fise pela metáfise e forma um fragmento metafisário. Não descreve a saída epifisária intra-articular da fratura da tuberosidade apresentada. É necessário distinguir o lado metafisário do lado epifisário da placa de crescimento.",
+        "C": "Salter-Harris IV atravessa metáfise, fise e epífise. Embora também entre na articulação, exige um componente metafisário que não foi atribuído ao padrão III da tuberosidade. Não basta reconhecer envolvimento articular para escolher IV, porque III também o apresenta.",
+        "D": "Salter-Harris V é a lesão por compressão da fise, que pode ter radiografia inicial normal e ser reconhecida depois pela parada do crescimento. Não é o traço epifisário até a articulação descrito na avulsão da tuberosidade. A alternativa troca um padrão visível de avulsão por um mecanismo compressivo diferente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: A classificação de OGDEN modificada; Tratamento.",
+        "Conteúdo consultado no resumo “Fratura da fise distal do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 26 · Fractures of the Distal Femoral Physis. Seções: Os tipos de SALTER-HARRIS."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "A classificação de OGDEN modificada",
+          "Tratamento"
+        ],
+        "blocos": [
+          "a-classificacao-de-ogden-modificada-f48d44f8",
+          "a-classificacao-de-ogden-modificada-288154c9",
+          "tratamento-5adb23a3"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "0e309f7536eb87dc04e78b940c0a6abac40af600072c3683e832b7d20e15288d"
+      },
+      {
+        "resumo": "rockwoodcriancas10-26-fise-distal-femur",
+        "titulo": "Fratura da fise distal do fêmur na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
+        "secoes": [
+          "Os tipos de SALTER-HARRIS"
+        ],
+        "blocos": [
+          "os-tipos-de-salter-harris-77cf0c10"
+        ],
+        "sha256": "519f15c6c4cd2f5bcc09fd606d5a242bb6bd0e68c0ce919d0d23cff30ec05a67",
+        "trechosSha256": "9e78b4575705fb226ddc46fa81a11541db107ccc2edab5f4a492462da1bd668a"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0705": {
+    "questaoSha256": "9d5c6c4d03f3249237894a6ba90a2e510fa86be32e9dc196a8be2f3bf88fa0f0",
+    "comentarioAnteriorSha256": "174526e713c759f4c4d7c0d489ec1800f0e77793917d5188679ff425cec6338c",
+    "comentario": {
+      "conceito": "A sequela clássica da fratura metafisária proximal da tíbia na criança é o **valgo progressivo de Cozen**. O alinhamento pode se modificar meses depois, inclusive após uma fratura sem desvio ou inicialmente bem reduzida. Por isso, uma boa radiografia de consolidação não exclui essa evolução (Rockwood crianças, 10ª ed., cap. 29, O valgo pós-fratura).\n\nEntre as explicações propostas estão interposição de partes moles, redução perdida, alterações da contenção pela pata de ganso e crescimento fisário assimétrico. A ocorrência em fraturas sem desvio e a recidiva após osteotomia sustentam o papel do crescimento desigual como causa da maioria dos casos. O problema é de **assimetria do crescimento**, não apenas do aumento global do comprimento da tíbia.\n\nA deformidade fica evidente por volta de seis meses, pode progredir até 18 a 24 meses e depois corrigir gradualmente. A órtese não modifica a história natural descrita, e osteotomia precoce pode recidivar; observação e orientação da família são centrais. O resumo também reconhece que deformidades clinicamente importantes podem ser menos comuns do que as séries antigas sugeriam.\n\nÉ preciso localizar a lesão. O recurvato por parada da fise anterior pertence à lesão fisária ou da tuberosidade, enquanto o valgo de Cozen é associado à metáfise proximal da criança pequena. Proximidade anatômica não torna suas sequelas intercambiáveis.",
+      "correta": "**Correta: C (valgo progressivo).** É a sequela tardia característica da fratura metafisária proximal. Pode surgir mesmo sem perda inicial do alinhamento e depende da evolução do crescimento; não prova, por si só, que a fratura foi mal reduzida ou que ficou tecido interposto.",
+      "incorretas": {
+        "A": "Encurtamento não é a sequela característica apontada para essa fratura. Ele é uma alteração de comprimento, enquanto o fenômeno de Cozen descreve uma mudança do eixo em valgo. A pergunta não trata da parada completa de uma fise que explicaria perda de crescimento longitudinal.",
+        "B": "Hiperextensão, como deformidade sagital em recurvato, deve ser diferenciada do valgo metafisário. O resumo liga recurvato à parada da parte anterior da fise proximal, sobretudo em lesões fisárias ou da tuberosidade. A região é próxima, mas a estrutura e o plano da deformidade são outros.",
+        "D": "Pode existir estímulo de crescimento associado às fraturas da tíbia, e o hipercrescimento tibial é descrito no capítulo. Porém, a sequela característica da metáfise proximal é a assimetria que produz valgo progressivo, não apenas aumento uniforme do comprimento do membro. Crescer mais e entortar por crescer desigualmente são problemas diferentes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN; Complicações.",
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: Complicações."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN",
+          "Complicações"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+          "metafise-proximal-a-fratura-de-cozen-663056eb",
+          "metafise-proximal-a-fratura-de-cozen-d5af459b",
+          "complicacoes-626eb77b"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "4ad3c54f441c47f42da274a480a2b69b37c120a3e59670ff7bd43b4bbe43dac9"
+      },
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "Complicações"
+        ],
+        "blocos": [
+          "complicacoes-5c26d8e8",
+          "complicacoes-58867aa4"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "3d132e6f115759eafba30d89cd7095c654d34e93294755d18b367242cd562c0b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0716": {
+    "questaoSha256": "dffb7996f82b4e7d4e9c7a61c1b66b2d5c12b9a9ed415aae3ae45ba7b0486553",
+    "comentarioAnteriorSha256": "4ed51c620acd358fd9e7d0ed84d4b445e14dd70124ee81007e7ceea5485aa1fc",
+    "comentario": {
+      "conceito": "A combinação típica da fratura metafisária proximal da tíbia é **criança de três a seis anos e tendência ao valgo**. O resumo descreve baixa energia aplicada à face lateral do joelho em extensão, com tensão e falha da cortical medial, frequentemente em galho verde (Rockwood crianças, 10ª ed., cap. 29, Metáfise proximal: a fratura de COZEN).\n\nA deformidade tardia pode aparecer depois de uma fratura bem alinhada. Interposição medial e perda de redução estão entre as hipóteses, mas o crescimento fisário assimétrico explica por que também há valgo após fraturas sem desvio. A identificação do padrão não permite atribuir toda evolução a um erro de redução.\n\nA história natural inclui aparecimento meses depois, progressão e possibilidade de correção espontânea. A família deve ser orientada desde o início, e a observação evita tratar automaticamente a deformidade com osteotomia precoce, que pode recidivar.\n\nO enunciado está sem gabarito oficial registrado. Entre as alternativas, o par três a seis anos com valgo é o único que reúne a faixa etária e a deformidade descritas na fonte. Essa é uma resposta provável bibliográfica, sem criar uma letra oficial para a prova.",
+      "correta": "**Resposta provável: B (3 a 6 anos e deformidade em valgo).** Os dois elementos estão explicitamente associados à fratura metafisária proximal no resumo. A ausência de gabarito oficial é preservada: B é a conclusão pela fonte, não uma resposta atribuída à banca.",
+      "incorretas": {
+        "A": "A faixa de três a seis anos está correta, mas o varo inverte a deformidade típica. O molde em varo utilizado no gesso procura combater a tendência ao valgo; não deve ser confundido com a complicação tardia característica.",
+        "C": "Erra os dois componentes: o pico descrito é de três a seis anos, e o padrão tardio é valgo, não varo. A idade maior não pode ser tomada como a faixa típica apenas porque há outras fraturas proximais da tíbia na criança e no adolescente.",
+        "D": "O valgo é a deformidade correta, mas nove a doze anos não é a faixa de pico apresentada para essa fratura metafisária. A opção combina uma consequência verdadeira com a idade de outro grupo; a resposta precisa satisfazer as duas partes."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false,
+      "provavel": "B"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-d74e22ac",
+          "metafise-proximal-a-fratura-de-cozen-06e1bebc",
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+          "metafise-proximal-a-fratura-de-cozen-d5af459b"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "b27055cc55c90553c804116defc1a2447c6a3c3a329136b0203da92942248753"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0779": {
+    "questaoSha256": "649886d2e5d9df87ccda9b4dd14cb35466b3eb8b5e6e018e728ca223b353e697",
+    "comentarioAnteriorSha256": "24702f57aaa0c856b3c5d926f02183539a1388dba15f18eb7724d95ef943f113",
+    "comentario": {
+      "conceito": "Na classificação de Ogden da avulsão da tuberosidade tibial, a progressão dos tipos iniciais acompanha o caminho do traço: **I na apófise, II com epífise sem entrar na articulação e III com extensão intra-articular**. O envolvimento articular cobrado é, portanto, o tipo III (Rockwood crianças, 10ª ed., cap. 27, A classificação de OGDEN modificada).\n\nA tuberosidade transmite a força do aparelho extensor. Quando o traço avança pela epífise até a superfície articular, a lesão deixa de ser apenas um problema da inserção tendínea. É preciso avaliar a congruência e possíveis lesões internas do joelho; o resumo recomenda redução aberta para o tipo III desviado.\n\nNa classificação expandida, o tipo IV envolve toda a fise proximal, com ou sem fragmento metafisário posterior. Esse trajeto não deve ser confundido com a saída epifisária que define o III. O número maior não torna uma lesão automaticamente mais articular.\n\nA questão não tem gabarito oficial no acervo. A descrição anatômica sustenta uma resposta única entre as opções: tipo 3, identificado como provável pela bibliografia. Isso não muda o registro oficial da prova.",
+      "correta": "**Resposta provável: C (3).** É o padrão que inclui a saída até a articulação na classificação descrita. A fonte distingue claramente o II extra-articular do III intra-articular e do IV fisário completo. A letra é uma conclusão bibliográfica, pois não há gabarito oficial registrado.",
+      "incorretas": {
+        "A": "O tipo 1 fica na apófise junto à inserção patelar. Não é o padrão que avança à superfície articular e, por isso, não corresponde ao envolvimento perguntado. O fato de a tuberosidade pertencer ao aparelho extensor não torna sua avulsão necessariamente intra-articular.",
+        "B": "O tipo 2 envolve apófise e epífise, mas não entra na articulação. Esse é o limite que o separa do III: alcançar epífise não é sinônimo de alcançar superfície articular. A alternativa para um passo antes do trajeto cobrado.",
+        "D": "O tipo 4 percorre toda a fise proximal, podendo levar um fragmento metafisário posterior. Não é a definição da extensão epifisária intra-articular do III. Confundir a separação fisária completa com entrada na articulação troca os trajetos que a classificação pretende distinguir."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: A classificação de OGDEN modificada; Tratamento."
+      ],
+      "conferido": false,
+      "provavel": "C"
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "A classificação de OGDEN modificada",
+          "Tratamento"
+        ],
+        "blocos": [
+          "a-classificacao-de-ogden-modificada-288154c9",
+          "a-classificacao-de-ogden-modificada-54560a75",
+          "tratamento-5adb23a3"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "2e5171179ac1938ee6473fc0278dc046ed578332caca0aa2ef83f1ffd9f100e8"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0948": {
+    "questaoSha256": "18210da08907c00983625960fd1351803161127f2657eedd928ae2578432f390",
+    "comentarioAnteriorSha256": "92393da651d4bdab4e29ded4b442356c99df66a3239f8e24cc98e2c984dcc24b",
+    "comentario": {
+      "conceito": "O mecanismo pedido combina **velocidade do movimento, resistência do quadríceps e fase do salto**. O resumo descreve a flexão passiva rápida do joelho contra o quadríceps contraído **na aterrissagem** como um dos dois mecanismos mais relatados de avulsão da tuberosidade tibial (Rockwood crianças, 10ª ed., cap. 27, A tuberosidade: quem quebra e como).\n\nA força é transmitida pelo tendão patelar à tuberosidade. Se o joelho dobra rapidamente enquanto o aparelho extensor resiste, a tração pode arrancar a apófise. Não basta responder flexão: rapidez e resistência muscular explicam a carga do mecanismo descrito.\n\nO outro mecanismo reconhecido é a contração forte do quadríceps durante a extensão. Assim, a impulsão também pode participar de uma avulsão, mas pela descrição correspondente; isso não permite deslocar automaticamente para a impulsão o mecanismo de flexão passiva rápida que o resumo situa na aterrissagem.\n\nA fonte não fornece uma taxa comparativa que obrigue esse mecanismo em todo paciente. O gabarito C é compatível com a formulação explícita do resumo, sem negar a outra possibilidade ou inventar um relato de queda para o enunciado.",
+      "correta": "**Correta: C (rápida flexão passiva contra o quadríceps durante a aterrissagem).** É a combinação descrita pelo resumo para esse mecanismo. A tração do aparelho extensor resiste à flexão rápida e se transmite à tuberosidade, que pode avulsionar. A resposta não transforma a aterrissagem no único contexto possível de avulsão.",
+      "incorretas": {
+        "A": "Mantém a rapidez e a resistência muscular, mas muda a fase para a impulsão. O resumo associa à impulsão/extensão a contração forte do quadríceps, enquanto situa a flexão passiva rápida contra a resistência na aterrissagem. Não se devem trocar as duas descrições só porque ambas carregam o aparelho extensor.",
+        "B": "Além de colocar a fase na impulsão, muda o movimento para lento. O mecanismo destacado é a flexão passiva rápida contra a contração do quadríceps; a rapidez da carga é parte da descrição, não um detalhe intercambiável.",
+        "D": "A aterrissagem está correta para o mecanismo perguntado, mas a flexão lenta não reproduz a carga rápida descrita. Acertar a fase do salto não basta se a alternativa modifica a velocidade do movimento que caracteriza o mecanismo de avulsão."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fratura da fise proximal e da tuberosidade da tíbia na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 27 · Proximal Tibial Physeal Fractures. Seções: A tuberosidade: quem quebra e como."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-27-fise-proximal-tibia",
+        "titulo": "Fratura da fise proximal e da tuberosidade da tíbia na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 27 · Proximal Tibial Physeal Fractures",
+        "secoes": [
+          "A tuberosidade: quem quebra e como"
+        ],
+        "blocos": [
+          "a-tuberosidade-quem-quebra-e-como-7b1686ef",
+          "a-tuberosidade-quem-quebra-e-como-add351b6"
+        ],
+        "sha256": "4d5ac73ddbf800aa77686e9cbcaa0914f7d29ae7f993ea83c6e42935756a1b6c",
+        "trechosSha256": "a6ef5e0770dc1fdf5d84affe8f45343175567558a3ce4806036dec2fbdc4379e"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}

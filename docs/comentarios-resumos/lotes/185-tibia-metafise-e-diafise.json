@@ -1,0 +1,329 @@
+{
+  "pediatria-0549": {
+    "questaoSha256": "f04edd837dbf4d53c22af66d2295638a120a066e18519d9cfaf4c4dc25dae664",
+    "comentarioAnteriorSha256": "ab3582fda81975911e7d66075c0c27ea2ee94b5986bf01a75df9497d46741cf1",
+    "comentario": {
+      "conceito": "O gabarito oficial é C, mas a mecânica descrita no resumo corresponde à **alternativa D: valgo com tensão da cortical medial**. Na fratura metafisária proximal típica, a força atua na face lateral do joelho em extensão; o lado medial abre e falha em tensão, frequentemente em galho verde (Rockwood crianças, 10ª ed., cap. 29, Metáfise proximal: a fratura de COZEN).\n\nÉ importante separar o nome da força do lado que abre. No valgo, o lado medial está sob tensão; no varo, a abertura é lateral. A alternativa C combina uma força compatível com o padrão habitual e a cortical oposta à que deveria romper em tensão. Essa associação não corresponde à abertura medial produzida pelo valgo.\n\nA fíbula costuma permanecer íntegra nessa lesão de baixa energia. O varo é menos comum, possivelmente pela proteção lateral da fíbula. Mais tarde pode surgir valgo de Cozen mesmo após boa redução, com participação de crescimento assimétrico; esse fenômeno tardio não muda qual cortical sofreu tensão no trauma inicial.\n\nO objetivo é reconhecer a discordância e aprender o mecanismo correto: **valgo abre medialmente**. A letra oficial permanece registrada como C, enquanto a interpretação anatômica sustentada pela fonte é D.",
+      "correta": "**Gabarito oficial: C (valgo com tensão da cortical lateral).** A força em valgo é compatível com o padrão típico, mas a cortical lateral em tensão diverge do resumo. A fonte descreve falha medial em tensão, correspondente à alternativa D. A letra é preservada sem apresentar como verdadeira a combinação anatômica incorreta.",
+      "incorretas": {
+        "A": "Varo com abertura lateral é uma combinação mecânica coerente, mas não o padrão usual que o resumo descreve para essa fratura. A fonte destaca valgo por força lateral no joelho em extensão e considera o varo raro, possivelmente pela proteção da fíbula.",
+        "B": "A cortical medial em tensão pertence à abertura em valgo, não à força em varo indicada. A alternativa mistura a cortical do padrão habitual com a direção oposta da força. É necessário conferir os dois elementos em conjunto.",
+        "D": "Esta é a descrição sustentada pela fonte: valgo com falha em tensão da cortical medial. A força aplicada lateralmente abre o lado medial na fratura típica em galho verde. Embora não seja a letra oficial registrada, é a interpretação anatômica que deve ser ensinada, conforme o alerta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false,
+      "alerta": "Gabarito oficial C preservado. O resumo descreve força em valgo com falha em tensão da cortical medial, correspondente à alternativa D. A cortical lateral em tensão da alternativa C diverge desse mecanismo. A interpretação anatômica pela fonte é D, enquanto a letra oficial da prova permanece C."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-d74e22ac"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "6a080ba29070a7bb31b4cee30abb0a60712d28d38f0db694a0ca2bca1facb08d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-0950": {
+    "questaoSha256": "9d6894c9aa42eb995995422fa95feb72ada73edb7e1ffdc10641e76f7d3fc8d7",
+    "comentarioAnteriorSha256": "40922d0694c57c3d01cb8189cd03f66e474662f1bc6abac29b9277f165372a46",
+    "comentario": {
+      "conceito": "Abaixo de 11 anos, o resumo descreve como padrão predominante a fratura diafisária da tíbia por **torção no terço distal**, geralmente oblíqua ou espiral. O corpo gira sobre o pé fixo, produzindo um esforço rotacional transmitido à diáfise (Rockwood crianças, 10ª ed., cap. 29, Diáfise: o desvio depende da fíbula).\n\nA direção do esforço ajuda a entender o traço: torção tende ao padrão oblíquo ou espiral descrito. Já fraturas transversas e cominutas isoladas são relacionadas a trauma direto. Portanto, a resposta não depende apenas de memorizar uma localização; ela combina mecanismo e morfologia esperada.\n\nA regra é de predominância, não exclusividade. Crianças dessa faixa também podem sofrer trauma direto ou outros padrões, e a avaliação deve incluir joelho e tornozelo. O capítulo recomenda essa investigação porque pode haver lesão associada fora do foco mais evidente.\n\nA pergunta pede a combinação mais comum no recorte etário. Não autoriza afirmar que toda fratura antes dos 11 anos seja distal ou torcional, nem transportar automaticamente o mesmo padrão para adolescentes de maior energia.",
+      "correta": "**Correta: C (torcional no terço distal).** É a combinação predominante descrita para crianças abaixo de 11 anos, com traço frequentemente oblíquo ou espiral. O caráter predominante deve ser preservado: não é uma distribuição universal de todas as fraturas dessa idade.",
+      "incorretas": {
+        "A": "A localização distal está de acordo com o padrão descrito, mas o mecanismo predominante é torcional, não axial. O giro do corpo sobre o pé fixo explica a fratura oblíqua ou espiral destacada pelo resumo.",
+        "B": "Troca os dois componentes da combinação predominante: a fonte destaca torção e terço distal. Um trauma axial ou uma fratura proximal pode existir, mas não representa o padrão mais comum apresentado para o recorte abaixo de 11 anos.",
+        "D": "Reconhece corretamente a torção, mas desloca a localização predominante para o terço proximal. O resumo associa o mecanismo ao terço distal; para acertar, é preciso manter mecanismo e localização, sem tomar uma metade correta como suficiente."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false,
+      "alerta": "A associação torção/distal é clássica na criança pequena; não deve ser generalizada como distribuição universal de todas as fraturas diafisárias até 11 anos."
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-6221cf6c",
+          "diafise-o-desvio-depende-da-fibula-4b0512cb"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "0c4d771d9247099426ba2e58f387a06cef00105908026e0ab4ab26791bdff42b"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1137": {
+    "questaoSha256": "278fab954fa0f8b64e75153788fdea377f4f96ee8a38d8e14b8225d2f3adda9f",
+    "comentarioAnteriorSha256": "23a0c1c9f15a4c61c70e7dc7babdd93dc0bcfe3657631c5df261317c15578201",
+    "comentario": {
+      "conceito": "Oito meses depois de uma fratura metafisária proximal da tíbia, o valgo progressivo pode estar na fase esperada do fenômeno de Cozen. O resumo descreve aparecimento evidente por volta de seis meses, progressão até 18 a 24 meses e correção gradual posterior. Nessa criança de quatro anos, sem outro problema apresentado, a conduta é **observar e orientar a família** (Rockwood crianças, 10ª ed., cap. 29, O valgo pós-fratura).\n\nA deformidade pode surgir mesmo depois de bom alinhamento inicial. Crescimento fisário assimétrico é uma explicação importante e evita culpar automaticamente a redução. Ao mesmo tempo, a possibilidade de remodelação torna inadequado tratar toda progressão inicial como falha que exige correção imediata.\n\nA órtese não modifica a história natural descrita. A osteotomia precoce, na criança com crescimento restante, pode recidivar e já foi associada a complicações importantes. O capítulo reserva a discussão cirúrgica para depois de 18 meses e desvio relevante do eixo, preferindo hemiepifisiodese medial.\n\nA vigilância acompanha evolução do eixo e sintomas, sem prometer correção obrigatória em cada paciente. Avisar a família desde o início ajuda a compreender por que observar pode ser a melhor decisão mesmo enquanto o valgo aumenta.\n\n**Por que esta questão foi criada.** Transforma a história natural do valgo de Cozen em uma decisão de conduta, distinguindo progressão inicial de indicação cirúrgica tardia.",
+      "correta": "**Correta: A (observação clínica com orientação sobre a correção esperada).** Aos oito meses, a criança ainda pode estar na fase de progressão. A história natural inclui correção posterior, e o enunciado não acrescenta motivo para antecipar cirurgia. Acompanhamento não é abandonar a deformidade, mas avaliar sua evolução sem uma intervenção precoce inadequada.",
+      "incorretas": {
+        "B": "A órtese noturna não altera a história natural segundo o resumo. A expectativa de que uma contenção externa guie essa correção não é sustentada pela fonte; acrescentaria um tratamento sem o benefício proposto.",
+        "C": "A osteotomia precoce pode recidivar enquanto persiste o mecanismo de crescimento assimétrico e tem riscos descritos. O capítulo não a indica simplesmente pela progressão aos oito meses; o momento e a magnitude do desvio precisam ser considerados depois da fase inicial.",
+        "D": "Além de antecipar uma cirurgia não indicada pelo caso, escolhe o lado oposto ao descrito para crescimento guiado. A fonte prefere hemiepifisiodese medial no valgo persistente selecionado. Conter lateralmente não corresponde à estratégia destinada a reduzir a assimetria que produz o valgo."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-d5af459b",
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "6e264a598d8244e984f693878a08ce244e0df3fa889117baec7faa424190a8be"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1138": {
+    "questaoSha256": "07468600b88f2a6815dcb339fa573bdb78bacc72a51536c10715e2d84f2515a2",
+    "comentarioAnteriorSha256": "97bfd7e59024ccec16b575749eac37c90a69f49e0217cbaaf1379719a60278b9",
+    "comentario": {
+      "conceito": "A fratura metafisária proximal típica da criança pequena é uma lesão de **baixa energia**, causada por força na face lateral do joelho em extensão. A carga em valgo abre o lado medial, cuja cortical falha em tensão, geralmente em galho verde (Rockwood crianças, 10ª ed., cap. 29, Metáfise proximal: a fratura de COZEN).\n\nEssa sequência explica a combinação da alternativa B. Não se trata de escolher isoladamente uma cortical ou a posição do joelho: direção da força, tensão medial e padrão incompleto precisam ser coerentes.\n\nO resumo também admite carga axial e fraturas sutis, nas quais o perfil pode revelar aumento da inclinação anterior da fise. Toro e fratura completa são menos comuns. Por isso, reconhecer o padrão usual não equivale a negar todas as outras apresentações.\n\nLesão da poplítea pode ocorrer numa fratura completamente desviada, mas é incomum nessa idade e não define o mecanismo mais frequente. A gravidade de uma possibilidade não a transforma na descrição epidemiológica habitual.\n\n**Por que esta questão foi criada.** Reúne direção da força e cortical em tensão para ensinar a mecânica correta, inclusive diante de questões oficiais com discordância entre cortical medial e lateral.",
+      "correta": "**Correta: B (baixa energia lateral, joelho em extensão e tensão medial).** O valgo abre a cortical medial e produz o padrão em galho verde destacado pelo resumo. Os três elementos formam uma descrição mecânica coerente do caso habitual.",
+      "incorretas": {
+        "A": "Varo com abertura lateral é o oposto da direção usual descrita. O resumo considera o varo raro, possivelmente pela proteção lateral da fíbula, e situa o mecanismo típico com o joelho em extensão. Não é a combinação mais comum perguntada.",
+        "C": "Carga axial pode produzir uma fratura sutil, mas o resumo não a define como joelho fletido com toro posterior predominante. O galho verde com tensão medial é o padrão mais comum; toro é menos frequente. A opção amplia uma possibilidade real com características que não formam a descrição habitual.",
+        "D": "Fratura completa muito desviada pode ameaçar a poplítea, mas é incomum na criança pequena. O padrão habitual é de baixa energia e frequentemente incompleto. A alternativa descreve uma situação grave possível como se fosse o mecanismo mais comum."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-d74e22ac"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "6a080ba29070a7bb31b4cee30abb0a60712d28d38f0db694a0ca2bca1facb08d"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1139": {
+    "questaoSha256": "8936e29ffa70f37d2d18cafe1a01d6791fd349dd5c9831e26420fa71bc4fcf4b",
+    "comentarioAnteriorSha256": "be302b9eb051c851840db944c3282ed3354f4a54212f94f736b5900d70e1bf8b",
+    "comentario": {
+      "conceito": "Na fratura metafisária proximal da tíbia, o gesso deve combater a tendência ao valgo. O resumo recomenda **leve molde em varo e joelho próximo da extensão**, posição que facilita tanto a moldagem quanto a avaliação radiográfica do alinhamento (Rockwood crianças, 10ª ed., cap. 29, O tratamento).\n\nO varo aqui é uma medida de controle, não a deformidade tardia característica. Abrir ainda mais o lado medial com molde em valgo faria o oposto do objetivo. Essa distinção evita confundir a posição do tratamento com o fenômeno de Cozen.\n\nSem desvio, o tratamento habitual é gesso bem acolchoado por quatro a seis semanas. Se houver desvio, a redução é feita sob sedação ou anestesia e fluoroscopia, com controle da posição. Uma redução que não se obtém ou não se mantém faz pensar em interposição medial, não em insistir indefinidamente na moldagem.\n\nA fonte diz que a maioria aceita carga conforme tolerado. Isso é diferente de prometer carga irrestrita em qualquer montagem ou de proibi-la em todos os casos. Estabilidade e características da lesão continuam relevantes.\n\n**Por que esta questão foi criada.** Liga o sentido do molde e a posição do joelho à tendência mecânica da fratura, incluindo a diferença entre uma conduta habitual e regras absolutas de carga.",
+      "correta": "**Correta: C (leve varo com joelho perto da extensão).** O molde contraria a tendência ao valgo e a posição facilita moldar e medir o alinhamento. O objetivo é manter a redução, sem transformar um varo de molde na sequela que se espera da fratura.",
+      "incorretas": {
+        "A": "Molde em valgo para abrir a cortical medial contraria a orientação. A lesão típica já apresenta abertura medial, e o tratamento procura controlar essa tendência com varo leve, não acentuá-la.",
+        "B": "O resumo recomenda proximidade da extensão para facilitar moldagem e avaliação radiográfica, não flexão a 90 graus. A posição da alternativa inverte justamente a justificativa técnica apresentada pelo capítulo.",
+        "D": "A proibição de carga em todos os casos não corresponde à fonte, que admite carga conforme tolerado na maioria. Isso também não autoriza carga indiscriminada: a decisão acompanha a estabilidade e o contexto da fratura, sem a regra absoluta proposta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-06e1bebc",
+          "metafise-proximal-a-fratura-de-cozen-2fd51d05"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "d0fb8d9e7d4ae9b616f0a6dfa430b70ae8b656163e82575b63936383036fe27c"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1140": {
+    "questaoSha256": "61fdfb670e902f3e44f26325e175bd712fe80d3fab93ed407b120c8fc9c5fc5f",
+    "comentarioAnteriorSha256": "ccfbdb631ba5b704e121e4713a6a83a5d224b6d3e95d115fc2ef94caa34e710b",
+    "comentario": {
+      "conceito": "Se o valgo aparece depois de uma fratura sem desvio e volta após uma osteotomia corretiva, a explicação não pode se limitar ao alinhamento inicial. O resumo usa essas observações para sustentar o **crescimento fisário assimétrico**, com predomínio medial, como causa da maioria dos valgos pós-fratura metafisária proximal da tíbia (Rockwood crianças, 10ª ed., cap. 29, O valgo pós-fratura).\n\nA diferença entre os lados produz angulação enquanto o osso cresce. Corrigir a forma com uma osteotomia não necessariamente encerra o estímulo desigual, o que ajuda a compreender a recidiva. Da mesma maneira, uma fratura inicialmente alinhada pode começar a deformar meses depois.\n\nA tabela do resumo reúne outras hipóteses: redução inadequada ou perdida, interposição de partes moles, perda da contenção da pata de ganso, amarração pela fíbula e carga precoce. Elas não precisam ser negadas para reconhecer que não explicam igualmente bem as duas observações do enunciado.\n\nEsse mecanismo dá sentido à história natural e à preferência por observação inicial. Uma correção cirúrgica precoce da geometria pode recidivar se o crescimento continuar assimétrico; quando há indicação tardia selecionada, o capítulo discute crescimento guiado medial.\n\n**Por que esta questão foi criada.** Pede escolher a hipótese que explica duas observações concretas, em vez de decorar que várias teorias já foram propostas para Cozen.",
+      "correta": "**Correta: D (crescimento fisário assimétrico com hipercrescimento medial).** Explica a deformidade que surge sem desvio inicial e pode continuar depois da correção por osteotomia. É a premissa sustentada pelo resumo para a maioria dos casos, sem exigir que todas as outras hipóteses sejam inexistentes.",
+      "incorretas": {
+        "A": "Perda ou inadequação da redução pode produzir valgo residual e faz parte das causas propostas. Entretanto, não explica satisfatoriamente a deformidade que surge após uma fratura sem desvio nem a recidiva depois de uma osteotomia que corrigiu o eixo.",
+        "B": "Carga precoce é uma hipótese listada, mas o resumo destaca crescimento assimétrico para integrar os dois achados. Apontar apenas a carga não esclarece por que a deformidade pode continuar após uma correção óssea ou aparecer sem desalinhamento inicial.",
+        "C": "A amarração pela fíbula também consta entre as hipóteses. A pergunta, porém, destaca a evolução com crescimento e a recidiva após mudar o eixo, observações usadas pelo capítulo para defender o crescimento fisário assimétrico. Estar na lista de hipóteses não torna todas igualmente explicativas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-663056eb",
+          "metafise-proximal-a-fratura-de-cozen-e5a4d866",
+          "metafise-proximal-a-fratura-de-cozen-d5af459b"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "75d664f748d6a78fed86efbf03ad218f098d8dc64c45e5ad77d79d5805ad520f"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1141": {
+    "questaoSha256": "e3cd86964c7ff3fd7c7c45dc3c17246e817c41e2fcdbd6157da8cdfb368443f9",
+    "comentarioAnteriorSha256": "e550b2079db76bca0b59ea1a2444ce517f817bc158212e4560e0f0b264b0b8e2",
+    "comentario": {
+      "conceito": "Quando a fratura metafisária proximal da tíbia não reduz por interposição, o obstáculo habitual está **do lado medial**: periósteo, colateral medial ou pata de ganso podem permanecer presos no foco. O resumo recomenda via **anteromedial**, que permite resolver o bloqueio e reparar a pata de ganso, mantendo distância das estruturas neurovasculares destacadas (Rockwood crianças, 10ª ed., cap. 29, O tratamento).\n\nA cirurgia é rara porque a maioria das fraturas pode ser tratada com redução e gesso. O problema aqui não é escolher uma operação para toda fratura proximal, mas reconhecer uma indicação específica: não obter ou não manter a redução pela presença de tecido interposto.\n\nA anatomia orienta o acesso. A poplítea está na região posterior; o fibular comum contorna o colo da fíbula; a tibial anterior atravessa para o compartimento anterior. A via indicada procura o bloqueio medial sem transformar essas estruturas em caminho desnecessário de exposição.\n\nA fratura é metafisária. Abordar o tendão patelar para visualizar a fise não resolve, por si só, uma interposição medial no foco. Identificar a estrutura e o local do obstáculo é mais útil que escolher uma via apenas porque ela fica perto do joelho.\n\n**Por que esta questão foi criada.** Transforma a interposição medial já cobrada nas provas numa decisão anatômica de acesso, com a justificativa da via anteromedial.",
+      "correta": "**Correta: A (anteromedial).** É a via preferida descrita para retirar a interposição medial e permitir reparo da pata de ganso. Seu benefício está em alcançar o problema do caso e evitar as estruturas neurovasculares que não precisam ser expostas para esse bloqueio.",
+      "incorretas": {
+        "B": "A opção dirige o acesso para a região posterior junto à poplítea, enquanto o obstáculo descrito está medialmente no foco. Não é a via preferida para essa interposição, e acrescenta aproximação desnecessária do feixe posterior.",
+        "C": "Um acesso lateral sobre o colo da fíbula aproxima o fibular comum, que contorna essa região, e não procura diretamente a interposição medial descrita. Estar perto da fratura proximal não torna esse caminho o mais adequado para reparar a pata de ganso.",
+        "D": "A via transpatelar proposta busca visualizar a fise, mas a lesão do caso é metafisária com bloqueio por partes moles mediais. O objetivo é liberar o foco e reparar a estrutura interposta pela via anteromedial, não mudar o alvo anatômico para a fise."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Metáfise proximal: a fratura de COZEN; Epidemiologia e anatomia."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Metáfise proximal: a fratura de COZEN",
+          "Epidemiologia e anatomia"
+        ],
+        "blocos": [
+          "metafise-proximal-a-fratura-de-cozen-2fd51d05",
+          "epidemiologia-e-anatomia-499cf5ae"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "5e81c2334bcffb02fba98b7c044977570f87868ff82e850b978b8bffb2cb19ce"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1142": {
+    "questaoSha256": "1c4571ec395a05c6d461692c64fca96f804a1a2c5a60478dc6f33f74637e54d6",
+    "comentarioAnteriorSha256": "1ce4de051fa8c670e23a9f23aee1e916ee96f03ef2af01b96333ef4eeacb14ec",
+    "comentario": {
+      "conceito": "A fíbula íntegra muda o resultado das forças numa fratura isolada da diáfise da tíbia. O resumo descreve **varo nas primeiras duas semanas em cerca de 60%** dessas fraturas: a fíbula converte a tração dos flexores longos em um momento angular (Rockwood crianças, 10ª ed., cap. 29, Diáfise: o desvio depende da fíbula).\n\nEssa é uma previsão de evolução precoce, não uma medida de deformidade tardia obrigatória. Uma fratura pode parecer alinhada logo após a redução e começar a angular depois, razão para acompanhar o alinhamento nas primeiras semanas.\n\nSe a fíbula também fratura e desvia, a mecânica muda. A perda do contraforte lateral e a musculatura anterolateral favorecem valgo. Não é correto decorar apenas que tíbia da criança vai para varo sem verificar a fíbula.\n\nNo tratamento conservador, o molde e os controles radiográficos acompanham essa tendência. O capítulo recomenda controles semanais nas primeiras duas ou três semanas. A estabilidade de uma transversa com fíbula íntegra não elimina a necessidade de vigilância angular.\n\n**Por que esta questão foi criada.** Delimita o período precoce e a função mecânica da fíbula, evitando transformar uma tendência em uma regra universal para qualquer fratura tibial.",
+      "correta": "**Correta: B (varo pela tração convertida em momento angular).** O mecanismo e o intervalo de duas semanas estão descritos na fonte. A fíbula está íntegra, condição decisiva para essa tendência, diferente da fratura conjunta com perda do contraforte lateral.",
+      "incorretas": {
+        "A": "A ação anterolateral e a tendência ao valgo são destacadas quando a fíbula também está fraturada e desviada. A alternativa transfere esse mecanismo para a situação oposta, de fíbula íntegra, e por isso inverte a previsão.",
+        "C": "Recurvato é um desvio sagital; a pergunta seleciona o efeito coronal da fíbula íntegra, que favorece varo. A tíbia também exige controle sagital, mas isso não permite substituir a relação mecânica descrita por uma atribuição ao tríceps sural não sustentada para este padrão.",
+        "D": "A premissa de ausência do contraforte lateral não corresponde à fíbula íntegra do caso. O resumo afirma que nessa condição não há encurtamento importante, embora possa haver varo. A alternativa usa a perda de suporte de outro cenário para prever o desfecho errado."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-4b0512cb",
+          "diafise-o-desvio-depende-da-fibula-bcdab43f"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "98210fc0b62813c429de5b19faeff92032a25d2d372aa138c5a8f0c0c83e1634"
+      }
+    ],
+    "imagensConferidas": []
+  },
+  "pediatria-1143": {
+    "questaoSha256": "196ea9961d3b20d5a6a716c788382f8aa9a81d2c6bcef7c612f4f1884a8f5757",
+    "comentarioAnteriorSha256": "74fa8fb2a23943a71671261fe57507313ec0e50e3d4dcb10e9c6e4b194f6311f",
+    "comentario": {
+      "conceito": "Tíbia e fíbula estão fraturadas, e a fíbula apresenta desvio. O contraforte lateral foi perdido; a musculatura anterolateral passa a favorecer **valgo**, tendência que precisa ser combatida na redução e na moldagem do gesso (Rockwood crianças, 10ª ed., cap. 29, Diáfise: o desvio depende da fíbula).\n\nO contraste é a fratura isolada da tíbia com fíbula íntegra, que tende a varo. Não basta reconhecer que houve fratura tibial: a integridade e o alinhamento da fíbula mudam a previsão. O resumo destaca que até a deformidade plástica da fíbula deve ser corrigida quando participa do desalinhamento.\n\nO gesso também precisa controlar rotação e alinhamento sagital. Nas instáveis, o capítulo descreve flexão do joelho para ajudar o controle rotacional e vigilância radiográfica nas primeiras semanas. Esses cuidados não substituem a direção coronal específica prevista neste caso.\n\nEncurtamento aceitável varia com a idade. Para oito anos ou mais, a Tabela 29-5 dá 5 mm, e não uma tolerância universal de 2 cm. Um adolescente exige critérios mais rígidos que os de uma criança menor.\n\n**Por que esta questão foi criada.** Inverte a situação da fíbula íntegra para testar se o aluno entende o contraforte lateral, em vez de repetir varo para toda fratura da tíbia.",
+      "correta": "**Correta: C (valgo pela musculatura anterolateral e perda do contraforte).** A fíbula fraturada e desviada deixa de exercer o suporte lateral que ajudaria a manter o alinhamento. O molde deve considerar essa tendência, e a redução da fíbula participa do controle do conjunto.",
+      "incorretas": {
+        "A": "O comportamento de tirante que favorece varo pertence à fíbula íntegra. Na fratura desviada da fíbula, o suporte lateral foi perdido; aplicar a mesma previsão troca os dois cenários mecânicos.",
+        "B": "A expressão sempre aceitável até 2 cm é incompatível com os limites por idade. Na Tabela 29-5, pacientes com oito anos ou mais têm limite de 5 mm de encurtamento. Além disso, a direção coronal destacada pelo estado da fíbula é valgo, não uma autorização para aceitar encurtamento.",
+        "D": "A rotação precisa ser controlada na redução, mas a fonte destaca valgo como a tendência produzida pela fíbula fraturada e pela musculatura anterolateral. Não há sustentação para substituir essa previsão pela atribuição de rotação interna ao tibial posterior como efeito principal do caso."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas da tíbia e da fíbula na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula. Seções: Diáfise: o desvio depende da fíbula."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwoodcriancas10-29-diafise-tibia",
+        "titulo": "Fraturas da tíbia e da fíbula na criança",
+        "livro": "Rockwood and Wilkins' Fractures in Children",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 29 · Fractures of the Shaft of the Tibia and Fibula",
+        "secoes": [
+          "Diáfise: o desvio depende da fíbula"
+        ],
+        "blocos": [
+          "diafise-o-desvio-depende-da-fibula-4b0512cb",
+          "diafise-o-desvio-depende-da-fibula-bcdab43f",
+          "diafise-o-desvio-depende-da-fibula-65256445"
+        ],
+        "sha256": "c3a5dde6846c41adc4f14212b57989347165bbf736ff345f60d787ebedf8aaa7",
+        "trechosSha256": "4f0b513731dbd6f6537106c8a75f0c2e7c1d6298dbe48c6c20d6fa0abe87e6da"
+      }
+    ],
+    "imagensConferidas": []
+  }
+}
