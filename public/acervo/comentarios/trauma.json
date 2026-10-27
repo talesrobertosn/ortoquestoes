@@ -15314,15 +15314,43 @@
   "conferido": false
  },
  "trauma-0763": {
+  "conceito": "**O que a imagem mostra.** É um corte axial de C2 em tomografia. Dois parafusos entram pela base do processo espinhoso e seguem cruzados, em X, cada um por dentro de uma das lâminas. Não atravessam pedículo nem articulação: ficam inteiros no osso laminar. São os **parafusos translaminares** (ou intralaminares) de C2.\n\n**A artrodese C1–C2 e suas montagens.** O Rockwood (10ª ed., cap. 48) descreve três famílias para fundir o atlas ao áxis:\n- **Fios sublaminares** (Brooks, Gallie): menos complicações, mas exigem halo depois e podem acentuar fraturas desviadas para trás.\n- **Parafusos transarticulares**: atravessam a articulação C1–C2 e exigem redução razoável para que as massas laterais se sobreponham no trajeto.\n- **Massa lateral em C1 e parafuso em C2**: a montagem **mais versátil**, que não exige redução anatômica e ainda ajuda a reduzir. Em C2, o parafuso pode ser pedicular, de istmo ou intralaminar; num estudo biomecânico, o pedicular foi o mais forte, seguido do intralaminar.\n\n**De onde vêm os nomes.** O capítulo descreve a montagem sem os epônimos. O resumo registra a convenção que a banca usa: **Harms** para massa lateral em C1 com parafuso **pedicular** em C2; **Wright** para o parafuso **translaminar** em C2; **Magerl** para o transarticular. A imagem com lâminas atravessadas em X aponta para Wright.\n\n**Na prova:** parafusos cruzados nas lâminas de C2 = Wright; parafuso pelo pedículo = Harms; parafuso atravessando C1–C2 = Magerl; fio sob o arco com enxerto = Gallie.\n\nA seção de artrodese posterior C1–C2, no resumo de coluna cervical, mostra as três montagens lado a lado.",
+  "correta": "**D: Wright.** A montagem combina massa lateral em C1 com parafusos translaminares em C2, que é exatamente o desenho em X da tomografia. É uma variante da montagem mais versátil do capítulo.",
   "incorretas": {
-   "A": "**Pedicular em C2.** A técnica de Harms usa parafusos no pedículo ou na pars de C2, e não nas lâminas.",
-   "B": "**Fio.** A técnica de Gallie usa amarria com fio e enxerto, sem parafusos.",
-   "C": "**Transarticular.** Magerl descreveu parafusos que atravessam a articulação C1-C2."
+   "A": "**Harms também usa massa lateral em C1, mas o parafuso de C2 vai pelo pedículo.** A diferença está toda em C2: na imagem, os parafusos estão dentro das lâminas, cruzando a linha média, e não seguindo o pedículo para o corpo vertebral.",
+   "B": "**Gallie é a técnica com fio sublaminar.** Um fio passa sob o arco de C1 e prende um enxerto ao processo espinhoso de C2. Não há parafuso, e o capítulo lembra que essas técnicas exigem halo depois.",
+   "C": "**\"Margel\" é Magerl, o parafuso transarticular C1–C2.** Ele cruza a articulação entre as massas laterais de C1 e C2 e exige redução razoável. Não é o parafuso que corre dentro da lâmina de C2."
   },
-  "conceito": "**Por que fundir C1 e C2.** A articulação **atlantoaxial** é responsável por cerca de metade da **rotação** do pescoço. É fundida em situações de **instabilidade**: pseudartrose ou fratura instável do **odontoide** (tipo II), lesão do **ligamento transverso**, artrite reumatoide com subluxação, os odontoideum e tumores.\n\n**As técnicas com fios.** **Gallie**: fio passado sob o arco posterior de C1 e amarrado ao processo espinhoso de C2, com enxerto em bloco; fixação fraca em rotação. **Brooks-Jenkins**: fios sublaminares em C1 e C2 com dois enxertos em cunha; melhor estabilidade. Exigem halo ou colar rígido por meses.\n\n**As técnicas com parafusos.** **Magerl**: parafusos **transarticulares** de C2 para C1, através da articulação atlantoaxial; muito estáveis, mas exigem redução prévia e têm risco para a **artéria vertebral** em até 20% das anatomias desfavoráveis. **Harms (Goel-Harms)**: parafusos na **massa lateral de C1** e nos **pedículos** (ou pars) de C2, unidos por hastes; permite reduzir durante a cirurgia e é hoje a mais usada. **Wright**: parafusos na massa lateral de C1 e parafusos **translaminares** em C2, que **cruzam** dentro das lâminas de C2; útil quando o **pedículo de C2** é estreito ou a **artéria vertebral** tem trajeto alto (ponte arterial), porque não passa perto dela.\n\n**Como reconhecer na imagem.** Parafusos que entram pela base do processo espinhoso de C2 e correm **cruzados** dentro das duas lâminas caracterizam a técnica de **Wright**.\n\n**Na prova:** C1 massa lateral + C2 **translaminar** = **Wright**; C1 massa lateral + C2 pedicular = **Harms**; transarticular = **Magerl**; fio = **Gallie** e Brooks.",
-  "correta": "**Wright.** A técnica combina parafusos de massa lateral em C1 com parafusos translaminares cruzados em C2, evitando o trajeto próximo à artéria vertebral.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+  ],
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Fratura do odontoide (C2)"
+     ],
+     "blocos": [
+      "fratura-do-odontoide-c2-0a216035",
+      "fratura-do-odontoide-c2-feeecbd6",
+      "fratura-do-odontoide-c2-ed2832d8"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "497ee711afdb5d9988e1906e59612ee33f794597b81f0c604fea619e18c7a9a2"
+    }
+   ],
+   "questaoSha256": "40d94054ef4eb7b4adb650267ebd3ed6e37d281d4a44d95c7899714efc42b588",
+   "comentarioSha256": "8e08f70dd286ea0d76e5f9f9806a8b4849c64d320b5ec68047021853a5a8a187"
+  }
  },
  "trauma-0764": {
   "conceito": "Na radiografia em perfil, o traço separa o **colo do tálus**, e o corpo perdeu suas relações normais tanto com a subtalar quanto com a pinça tibiotalar. A resposta é **colo do tálus, Hawkins III**, alternativa B.\n\nHá duas perguntas para resolver. Primeiro, localizar o traço: no colo, ele sai à frente da faceta posterior; uma fratura do corpo prossegue para trás do processo lateral e alcança essa faceta. Depois, identificar quais articulações perderam a congruência. Hawkins é uma classificação da **fratura do colo**, não um nome aplicável a toda fratura talar (Rockwood, 10ª ed., cap. 66, “Classificação”).\n\nNo tipo II, a subtalar está subluxada ou luxada, mas o tornozelo permanece congruente. No III, soma-se a luxação tibiotalar; no IV, também a talonavicular. Nesta imagem, a posição do corpo em relação à tíbia afasta a interpretação de um II. Não é necessário inventar uma lesão talonavicular que a reprodução não demonstra para subir ao IV.\n\nO estágio traduz uma agressão importante às ligações vasculares e às partes moles. O corpo luxado, frequentemente posteromedial no tipo III, pode comprimir o feixe tibial posterior e ameaçar a pele; sua redução é urgente. A fixação definitiva depende das condições do paciente e dos tecidos, e a TC ajuda a detalhar o padrão depois de controlar a ameaça imediata.\n\n> **Na prova:** localize colo versus corpo e conte as articulações; subtalar mais tornozelo é Hawkins III.",
@@ -18655,15 +18683,43 @@
   }
  },
  "trauma-0905": {
+  "conceito": "**O que as imagens mostram.** Na foto, a unha de um dedo da criança está levantada na base, saindo por cima da prega ungueal proximal, com sangue e o dedo levemente fletido na ponta. Na radiografia, a falange distal desse dedo está angulada na região da base, onde fica a fise. Essa combinação, unha luxada da prega mais fratura na base da falange distal, é a **fratura de Seymour**.\n\n**Por que ela é exposta.** No Rockwood (10ª ed., cap. 45), a fratura transversa da base da falange distal é típica da criança. A base da unha sai por cima da prega, e o **leito ungueal lacerado fica interposto no foco**. Esse tecido entre os fragmentos faz duas coisas: comunica a fratura com o meio externo, tornando-a **exposta**, e impede a redução fechada. Parece um dedo em martelo com a unha solta, mas tratá-la só com tala deixa o leito preso e a fratura contaminada.\n\n**Por que é instável.** O extensor terminal puxa a epífise, e o flexor profundo puxa o fragmento distal. As duas forças mantêm a angulação, por isso quase sempre se usa fio.\n\n**O roteiro do capítulo:** retirar o tecido interposto por via dorsal, reduzir, pinar, reparar o leito e recolocar a unha sob a prega; tala até a consolidação, em cerca de 4 semanas.\n\n**Na prova:** unha saindo da prega + fratura fisária da falange distal = Seymour, e é exposta.\n\nO trecho sobre a fratura epifisária de Seymour, no resumo de fraturas da mão, traz o roteiro do tratamento.",
+  "correta": "**B: aberta, descrita por Seymour.** O leito ungueal lacerado fica interposto no foco da fratura fisária da falange distal, o que comunica a fratura com o exterior. O epônimo é Seymour.",
   "incorretas": {
-   "A": "**Nome errado.** A fratura é aberta, mas a descrição é de Seymour, e não de Simmons.",
-   "C": "**Classificação e nome errados.** Não é fechada, e o autor é Seymour.",
-   "D": "**Não é fechada.** O nome está certo, mas o leito ungueal lacerado torna a fratura exposta."
+   "A": "**A classificação como aberta está certa, mas o nome não.** O epônimo da fratura com leito ungueal interposto é Seymour; Simmons não é o autor associado a essa lesão no capítulo.",
+   "C": "**Erra nas duas partes.** A fratura não é fechada, porque o leito ungueal lacerado comunica o foco com o exterior, e o epônimo não é Simmons.",
+   "D": "**O nome está certo, a classificação não.** Chamar a fratura de Seymour de fechada é a armadilha que o resumo destaca: o leito ungueal interposto faz dela uma fratura exposta, com retirada do tecido, redução e reparo do leito."
   },
-  "conceito": "**A fratura de Seymour.** É uma fratura **fisária** da **falange distal** na criança (geralmente Salter-Harris I ou II), com **desvio em flexão** do fragmento distal, associada a **laceração do leito ungueal**. A base da unha sai de baixo da prega ungueal proximal (eponíquio), e o **leito ungueal** fica **interposto** no foco de fratura. O dedo parece um \"dedo em martelo\" com a unha levantada e sangramento sob a prega.\n\n**Por que é uma fratura aberta.** Embora pareça só um trauma de unha, o foco de fratura **comunica** com o meio externo através da laceração do leito ungueal. É, portanto, uma **fratura exposta**, com risco de **osteomielite** e de **parada de crescimento** da fise se tratada como uma simples lesão fechada. O erro clássico é apenas reposicionar a unha ou imobilizar sem limpeza.\n\n**O tratamento.** **Antibiótico**, **remoção da unha**, **desbridamento** e **irrigação** do foco, **retirada do leito ungueal interposto**, **redução** da fratura, **reparo do leito ungueal** com fio absorvível fino, e fixação com **fio de Kirschner** longitudinal quando a redução é instável. A unha (ou uma lâmina) é recolocada sob o eponíquio para manter o espaço. Diagnósticos tardios, já com infecção, exigem desbridamento e antibiótico por mais tempo.\n\n**O nome e o distrator.** **Seymour** descreveu essa lesão em 1966. **Simmons** não dá nome a essa fratura da falange distal.\n\n**Na prova:** fratura fisária da falange distal com **leito ungueal interposto** = **Seymour**, fratura **aberta**; desbridar, retirar o leito interposto, reduzir e reparar o leito.",
-  "correta": "**Aberta, descrita por Seymour.** A laceração do leito ungueal comunica o foco fisário com o exterior, o que a torna uma fratura exposta que exige desbridamento.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Falange distal: tufo, martelo ósseo, jersey e Seymour."
+  ],
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-45-fraturas-mao",
+     "titulo": "Fraturas e luxações da mão",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+     "secoes": [
+      "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+     ],
+     "blocos": [
+      "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea",
+      "falange-distal-tufo-martelo-osseo-jersey-e-seymo-bac437c1",
+      "falange-distal-tufo-martelo-osseo-jersey-e-seymo-aad9a8fa"
+     ],
+     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+     "trechosSha256": "2529379402c57a79fbeb67f95d8fdb95f7812707816a726627f0006087a3e6e8"
+    }
+   ],
+   "questaoSha256": "e85b0948cf25193a5ff45c062fe477e25012a669e535331dc4f1e934a6d06f31",
+   "comentarioSha256": "407d59a977134374668720ba1522d93ccb08e50f1a1a837ce24a1671178f1308"
+  }
  },
  "trauma-0906": {
   "conceito": "**As fraturas periprotéticas da patela.** Ocorrem após a **artroplastia total do joelho**, sobretudo quando a patela foi **recapeada** (com componente patelar). A patela fica mais fina e frágil, e a irrigação pode ter sido prejudicada pela via de acesso medial e pela liberação lateral. Outras causas são o mau alinhamento do componente, o excesso de ressecção óssea e o trauma.\n\n**O que define o tratamento.** Três perguntas:\n1. O **aparelho extensor** está íntegro?\n2. O **componente patelar** está **fixo** ou **solto**?\n3. Há **estoque ósseo** suficiente na patela?\n\n**A classificação de Ortiguera e Berry.**\n\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| I | Componente **fixo**, aparelho extensor **íntegro** | **Conservador** (imobilização em extensão) |\n| II | Aparelho extensor **rompido** | **Cirurgia**: reparo do aparelho extensor e fixação, com ou sem remoção do componente |\n| **III** | **Componente patelar solto**, aparelho extensor íntegro | **IIIa** (bom estoque ósseo): revisão ou **remoção do componente**; **IIIb** (osso pobre): remoção do componente com patelectomia parcial ou patelaplastia |\n\n**O raciocínio para o caso.** No tipo **III**, o componente patelar está **solto**. A imobilização (alternativas A e B) não resolve um componente solto numa fratura desviada. A troca do componente (alternativa C) exige um estoque ósseo que geralmente não existe numa patela fraturada e desviada, e a fixação de um novo componente sobre o foco tende a falhar. Por isso, a conduta mais sensata é **remover o componente patelar** e fazer a **osteossíntese** dos fragmentos, deixando a patela sem recapeamento (patelaplastia).\n\n**Os resultados.** As fraturas periprotéticas da patela têm **altas taxas de complicação** após a cirurgia: pseudoartrose, falha da fixação, infecção e perda da extensão ativa. Por isso, sempre que possível, prefere-se o tratamento conservador (tipo I). Quando a cirurgia é necessária, o objetivo é preservar um aparelho extensor funcional.",
@@ -21701,18 +21757,46 @@
   "conferido": false
  },
  "trauma-1033": {
+  "conceito": "**Comece pela lista de fraturas.** O enunciado descreve uma 44B, a fratura da fíbula na altura da sindesmose, no subgrupo que soma lesão medial e fragmento posterior. Na prática, um padrão **trimaleolar**: fíbula, maléolo medial e maléolo posterior. A pergunta é quantas incisões, e quais, resolvem os três de uma vez.\n\n**Lendo o corte.** A figura é um corte axial do tornozelo com seis setas. **A** entra pela frente; **B** é anterolateral; **C** vai direto à fíbula; **D** passa atrás da fíbula, entre os **fibulares** e o **flexor longo do hálux**, perto do sural; **E** é posteromedial, junto ao feixe tibial; **F** chega ao **maléolo medial**, ao lado da safena magna.\n\n**A lógica do Rockwood.** No capítulo de tornozelo (10ª ed., cap. 65), a placa de suporte posterior é colocada em decúbito ventral pela **via posterolateral**: com a gravidade a favor, expõe-se o maléolo posterior afastando o flexor longo do hálux, e a fíbula é fixada pela mesma incisão afastando os fibulares. Os autores costumam tratar o posterior antes da fíbula, porque a placa lateral atrapalha a radioscopia. Fica faltando o maléolo medial, que se aborda pela **via medial**.\n\n**Na prova:** trimaleolar = posterolateral + medial. A via lateral pura e a anterolateral não chegam ao fragmento posterior.\n\nO trecho sobre o maléolo posterior, no resumo de tornozelo, explica quando cada fragmento pede a via posterolateral, a posteromedial ou parafusos de frente.",
+  "correta": "**D: D e F.** A posterolateral (D) fixa a fíbula e o maléolo posterior pela mesma incisão; a medial (F) completa com o maléolo medial. É o par que cobre todas as fraturas.",
   "incorretas": {
-   "A": "**Não alcança o posterior.** A anterolateral (B) não expõe bem o maléolo posterior.",
-   "B": "**Sem acesso medial nem posterior.** B e C são laterais e deixam o maléolo medial e o posterior sem abordagem adequada.",
-   "C": "**Sem acesso medial adequado.** A lateral direta e a posteromedial não fixam bem o maléolo medial e a fíbula juntos com o posterior."
+   "A": "**B e F deixam o fragmento posterior sem acesso.** A anterolateral trata a fíbula e a face anterior, e a medial trata o maléolo medial, mas nenhuma das duas alcança a parte de trás da tíbia.",
+   "B": "**B e C são ambas laterais.** Fixam a fíbula por dois caminhos e esquecem o medial e o posterior. O resumo destaca justamente essa combinação como armadilha.",
+   "C": "**C e E separam o que a posterolateral junta.** A lateral trata a fíbula e a posteromedial é a via do fragmento posteromedial, mas o fragmento mais comum é o posterolateral, que sai pela via D junto com a fíbula. E o maléolo medial continua sem a exposição própria da via F."
   },
-  "conceito": "**A fratura trimaleolar.** O código **44B** indica fratura da fíbula no nível da **sindesmose** (Weber B), e o subgrupo com lesão **medial** e **posterior** descreve a fratura **trimaleolar**: maléolo **lateral**, **medial** e **posterior** (Volkmann). O fragmento posterior, preso ao ligamento tibiofibular posteroinferior, é hoje fixado com mais frequência, porque restaura a **sindesmose** e a congruência articular posterior, e evita parafusos transsindesmais.\n\n**As vias na imagem.** O corte transversal mostra as vias ao redor do tornozelo. **A**: anterior, junto ao tibial anterior e ao feixe tibial anterior (fibular profundo), para o pilão. **B**: anterolateral, entre os extensores e a fíbula, perto do **fibular superficial**. **C**: lateral direta, sobre a fíbula. **D**: **posterolateral**, entre os **tendões fibulares** e o **flexor longo do hálux**, lateral ao tendão calcâneo, com o **nervo sural** e a veia safena parva no subcutâneo. **E**: posteromedial, entre o flexor longo do hálux e os flexores mediais, com o feixe tibial posterior. **F**: **medial**, sobre o maléolo medial, junto à veia safena magna.\n\n**As duas vias que resolvem tudo.** A via **posterolateral (D)**, com o paciente em decúbito ventral ou lateral, expõe o **maléolo posterior** (afastando o flexor longo do hálux para medial) e, pela mesma incisão, a **fíbula** (afastando os fibulares), permitindo placa posterior na fíbula e placa ou parafusos no fragmento posterior. A via **medial (F)** fixa o **maléolo medial** com parafusos ou banda de tensão. Assim, as vias **D e F** reduzem e fixam os três maléolos.\n\n**Os princípios.** Aguardar as **partes moles** (sinal da ruga, bolhas epitelizadas), restaurar o **comprimento e a rotação da fíbula**, reduzir o maléolo posterior (o que reduz a sindesmose), fixar o medial, e testar a **sindesmose** no final.\n\n**Na prova:** trimaleolar: via **posterolateral** (fíbula e maléolo posterior, entre fibulares e flexor longo do hálux) + via **medial** (maléolo medial).",
-  "correta": "**D e F.** A posterolateral (D) aborda a fíbula e o maléolo posterior pela mesma incisão, e a medial (F) fixa o maléolo medial, cobrindo as três fraturas.",
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 64"
+   "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: O maléolo posterior; As vias de acesso e o nervo em risco."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-65-tornozelo",
+     "titulo": "Fraturas do tornozelo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 65 · Ankle Fractures",
+     "secoes": [
+      "O maléolo posterior",
+      "As vias de acesso e o nervo em risco"
+     ],
+     "blocos": [
+      "o-maleolo-posterior-118ede3c",
+      "o-maleolo-posterior-9b0b9f4d",
+      "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf",
+      "as-vias-de-acesso-e-o-nervo-em-risco-e704e500",
+      "o-maleolo-posterior-3f959be3"
+     ],
+     "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+     "trechosSha256": "a4d58b926538297b0bbea4e8440e71c12e318ea5961e7071216b1e1c016e4f78"
+    }
+   ],
+   "questaoSha256": "992d50fbb6cda1a98235107785e81f56b95da4c81a64ec1bd7635ddb8f46175f",
+   "comentarioSha256": "f425dfdbad5dc096e369046f2b8555833e8add3a7ac298f2a43b67f0b2a062ac"
+  }
  },
  "trauma-1034": {
   "incorretas": {
@@ -22306,6 +22390,53 @@
    "comentarioSha256": "7e0422ece97b1360789199ff6042849dd00045e7470b9a202eba1ab4b7122e2b"
   }
  },
+ "trauma-1061": {
+  "alerta": "Questão anulada pela banca, sem gabarito divulgado no acervo. A figura aponta a faixa oblíqua da cápsula posterior que sai do lado medial, junto ao tendão do semimembranáceo, em direção lateral e proximal: o ligamento poplíteo oblíquo. Mas o resumo do Rockwood and Green, 10ª edição, capítulo 61, descreve duas expansões do semimembranáceo, uma para o ligamento oblíquo posterior e outra que forma o poplíteo oblíquo, e o enunciado pede a \"primeira\" sem critério que as ordene. C e D ficam discutíveis.",
+  "conceito": "**O que a figura mostra.** É a face posterior do joelho, com os músculos cortados. Do lado medial, embaixo, sai o tendão do semimembranáceo; dele parte uma faixa que cruza a cápsula posterior em diagonal, para cima e para fora, rumo ao côndilo lateral. A seta aponta essa faixa: o **ligamento poplíteo oblíquo**.\n\n**O semimembranáceo e suas expansões.** No Rockwood (10ª ed., cap. 61), o semimembranáceo tem várias inserções no canto posteromedial. Duas importam aqui:\n- uma expansão que vai ao **ligamento oblíquo posterior**, estrutura própria, atrás do colateral medial superficial, que se abre em leque com três braços e é o restritor primário da rotação interna;\n- outra que forma o **ligamento poplíteo oblíquo**, um espessamento da cápsula posterior que nasce da confluência dessa expansão com um braço do oblíquo posterior, mede cerca de 48 mm e se alarga até a inserção lateral, na fabela e na tíbia posterior.\n\n**Para que serve.** Num estudo em cadáver citado pelo capítulo, o poplíteo oblíquo foi o principal restritor ligamentar da **hiperextensão**; o cruzado posterior é restritor secundário nesse movimento.\n\n**Por que a questão foi anulada.** A figura é coerente com o poplíteo oblíquo, mas a palavra \"primeira\" pressupõe uma ordem entre as expansões que a fonte não estabelece. Como o semimembranáceo também manda uma expansão ao oblíquo posterior, as alternativas C e D podiam ser defendidas.\n\nA seção sobre a cápsula posterior, no resumo de luxação do joelho, descreve as medidas do poplíteo oblíquo.",
+  "correta": "**Questão anulada, sem gabarito divulgado.** A estrutura apontada na figura é o ligamento poplíteo oblíquo, expansão do semimembranáceo que cruza a cápsula posterior. Como o semimembranáceo também envia uma expansão ao oblíquo posterior, o termo \"primeira expansão\" deixou duas respostas defensáveis.",
+  "incorretas": {
+   "A": "**O tendão do poplíteo é lateral e não vem do semimembranáceo.** O músculo nasce na face posteromedial da tíbia, vira tendão, passa pelo hiato poplíteo e se insere no côndilo lateral, à frente e abaixo do colateral fibular. É peça do canto posterolateral.",
+   "B": "**O ligamento arqueado fica no canto posterolateral.** É uma estrutura do lado lateral da cápsula posterior, sem origem no semimembranáceo. A faixa da figura nasce do lado medial, junto ao tendão do semimembranáceo.",
+   "C": "**É a estrutura que a figura aponta.** O poplíteo oblíquo sai da expansão do semimembranáceo e cruza a cápsula posterior em diagonal até o lado lateral. Fica discutível apenas porque a fonte não define qual expansão seria a \"primeira\".",
+   "D": "**O oblíquo posterior também recebe uma expansão do semimembranáceo, por isso entrou na discussão.** Mas ele é uma estrutura capsuloligamentar própria, medial, atrás do colateral superficial, e não a faixa que cruza a cápsula posterior na figura."
+  },
+  "conferido": false,
+  "referencias": [
+   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; O lado medial; Canto posterolateral."
+  ],
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-61-luxacao-joelho",
+     "titulo": "Luxação do joelho e lesão multiligamentar",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 61 · Knee Dislocations",
+     "secoes": [
+      "Cruzado posterior: a pedra fundamental",
+      "O lado medial",
+      "Canto posterolateral"
+     ],
+     "blocos": [
+      "cruzado-posterior-a-pedra-fundamental-cc74f408",
+      "o-lado-medial-b8a9097e",
+      "o-lado-medial-0800da36",
+      "cruzado-posterior-a-pedra-fundamental-cd462063",
+      "cruzado-posterior-a-pedra-fundamental-d4cd29c1",
+      "canto-posterolateral-0b736828",
+      "canto-posterolateral-792b81bb"
+     ],
+     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+     "trechosSha256": "ea4a42a1110b4c02479ba2eca5a116aff453a51f70f31a11b5468e3694a09290"
+    }
+   ],
+   "questaoSha256": "cb2c0ff9f4ed49668c6c777dbff96291d7f5e5450a3dfbb22a4af393b5435603",
+   "comentarioSha256": "5caa86428c5b02e75d00c5759cb147148309f1a0d6ea3054a677885c1b28015e"
+  }
+ },
  "trauma-1062": {
   "incorretas": {
    "A": "**A magnitude é a da questão, o lado não.** O compartimento lateral pode ser sobrecarregado em joelho valgo, mas na marcha habitual a distribuição tende a favorecer o medial.",
@@ -22357,6 +22488,49 @@
    ],
    "questaoSha256": "78bb139a71a4d911f6bb2ab69f3d1468ece5f55cff8a138bbe5e335f480e71c3",
    "comentarioSha256": "c1645d1c83c91851b7826b2d540ef5fbdd05dfc8e5da03c74bd84f9b15750c8b"
+  }
+ },
+ "trauma-1064": {
+  "alerta": "Questão anulada pela banca, sem gabarito divulgado no acervo. O resumo do Rockwood and Wilkins, 9ª edição, capítulo 14, não indica a transposição anterior do ulnar de rotina: manda considerá-la quando o nervo fica instável na flexoextensão ou quando há risco de impacto do material. Nenhuma das quatro alternativas descreve essa indicação.",
+  "conceito": "**O nervo que mais sofre no úmero distal.** O ulnar passa no túnel cubital, logo atrás do epicôndilo medial, preso ao úmero pela fáscia de Osborne. É o nervo mais acometido pela própria fratura e o **mais em risco na cirurgia**, tanto na exposição quanto na fixação. O capítulo de fratura em T do Rockwood and Wilkins (9ª ed., cap. 14) registra, num estudo recente, 16% de lesão neurológica pré-operatória em adolescentes, predominantemente do ulnar, e lembra que a neuropatia ulnar é a complicação neurológica mais comum do tratamento cirúrgico do úmero distal.\n\n**Transpor ou deixar no lugar.** Entre os passos da técnica está uma decisão explícita: **o nervo ulnar fica no lugar ou é transposto**. O capítulo **não indica a transposição anterior de rotina**. Ele manda considerá-la em duas situações: quando o nervo fica **instável**, subluxando na flexoextensão depois da fixação, ou quando há **risco de impacto** do material sobre ele.\n\n**Por que a questão foi anulada.** O enunciado pede quando a transposição está indicada \"rotineiramente\" e oferece quatro situações: neuropraxia prévia, placa medial, fratura da tróclea e do capítulo, placas paralelas. Nenhuma corresponde ao critério da fonte, que é funcional (nervo instável ou em contato com o implante) e não depende do tipo de placa ou da fratura.\n\n**Para a prova:** o ulnar é sempre identificado e protegido; a transposição é decisão individual, por instabilidade do nervo ou risco de contato com o material.\n\nA seção sobre o nervo ulnar, no resumo de fratura em T, junta os números das lesões e a decisão cirúrgica.",
+  "correta": "**Questão anulada, sem gabarito divulgado.** A fonte não indica a transposição de rotina: ela é considerada quando o ulnar fica instável na flexoextensão ou em risco de impacto do material. Nenhuma alternativa traduz esse critério.",
+  "incorretas": {
+   "A": "**Neuropraxia prévia exige proteger e documentar o nervo, não transpô-lo por regra.** O capítulo registra que lesões pré-operatórias do ulnar são frequentes no adolescente, mas não transforma esse achado em indicação automática de transposição.",
+   "B": "**A placa medial é a situação em que o material fica mais perto do nervo, mas a regra da fonte é o contato real.** A transposição é considerada se houver risco de impacto do implante sobre o ulnar; a simples presença da placa medial não basta para torná-la rotina.",
+   "C": "**Fratura da tróclea e do capítulo descreve o padrão articular, não o comportamento do nervo.** O critério do capítulo para transpor é a instabilidade do ulnar ou o contato com o material, independentemente de quais fragmentos articulares foram fixados.",
+   "D": "**Placas paralelas, ou a 90 graus, descrevem a montagem.** O capítulo discute a configuração das placas na fixação das colunas, mas não liga nenhuma delas à transposição obrigatória do ulnar. A decisão continua individual."
+  },
+  "conferido": false,
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura em T (intercondiliana) do úmero distal na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 14 · T-Condylar Fractures of the Distal Humerus. Seções: Complicações; Técnica: articulação primeiro, colunas depois."
+  ],
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-14-fratura-em-t",
+     "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Complicações",
+      "Técnica: articulação primeiro, colunas depois"
+     ],
+     "blocos": [
+      "complicacoes-02e95725",
+      "complicacoes-90956356",
+      "complicacoes-d2ac5d62",
+      "tecnica-articulacao-primeiro-colunas-depois-262a3251"
+     ],
+     "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+     "trechosSha256": "7b1bcada76e1b9aaf8d3e2fbae795e5ddcdf13a2c33a8a3ca30258effd49630a"
+    }
+   ],
+   "questaoSha256": "630529b7633fa32bb5c0cb83bbe0145dcc332cc627752fec7a8e50f8e5ef76d6",
+   "comentarioSha256": "d9bf8d42ad09ee7d96ee901d002e360c2551d37df546a1719337347112db44a0"
   }
  },
  "trauma-1065": {
@@ -22510,18 +22684,45 @@
   "conferido": false
  },
  "trauma-1074": {
+  "conceito": "**O que a figura mostra.** Em três tempos: no primeiro, o tendão quadricipital roto e retraído, com uma falha acima da patela, e um **V invertido** desenhado em tracejado no tendão proximal. No segundo, o V foi cortado e os cotos da ruptura suturados. No terceiro, o retalho em V desceu para cobrir a junção, e a parte superior do V foi fechada lado a lado, deixando a configuração de Y. É o **alongamento de Codivilla**.\n\n**Por que alongar.** A ruptura crônica do quadricipital, com mais de **2 semanas**, retrai o músculo, e a falha pode chegar a **5 cm**. O Rockwood (10ª ed., cap. 60) descreve uma escada: se o coto alcança a patela, reparo primário; se não, eleva-se o músculo do fêmur e liberam-se aderências; se ainda falta, o **V invertido de espessura total** no segmento proximal, com a margem inferior a 1,3 a 2 cm acima da ruptura. O V empresta comprimento ao tendão; o fechamento lado a lado transforma o V em Y.\n\n**O detalhe que a banca explora.** Há um retalho de **espessura parcial**, rebatido para distal, que a banca chama de técnica de Scuderi. Ele **reforça** uma sutura, mas não alonga. Quem ganha comprimento é o V de espessura total. Os resultados no crônico são piores que no agudo.\n\n**Na prova:** quadricipital crônico, retraído, com V invertido virando Y = Codivilla.\n\nO trecho sobre rupturas crônicas, no resumo de patela e mecanismo extensor, traz as medidas do V.",
+  "correta": "**D: Codivilla.** O V invertido de espessura total no tendão proximal, rebatido para distal e fechado lado a lado em Y, é o alongamento que cobre a falha da ruptura crônica retraída.",
   "incorretas": {
-   "A": "**Scuderi é um reforço com retalho.** Embora também utilize tecido do quadríceps, não corresponde ao avanço em V-Y mostrado nos três quadros.",
-   "B": "**Kelikian não identifica este desenho.** A pergunta pede o nome da sequência visual de alongamento em V-Y, associada a Codivilla.",
-   "C": "**Krackow é uma sutura bloqueada.** Pode fixar tendões, mas não nomeia a plastia de avanço proximal desenhada na figura."
+   "A": "**Scuderi usa um retalho de espessura parcial para reforçar a sutura.** O retalho invertido do quadríceps cobre o reparo, mas não ganha comprimento. A figura mostra o V cortado e o fechamento em Y, que é alongamento.",
+   "B": "**Kelikian não é a técnica de alongamento do quadricipital descrita no capítulo.** O resumo cita, no crônico, Codivilla para o quadricipital e reconstruções com semitendíneo e grácil, como a de Ecker, para o patelar. A figura não mostra enxerto tendíneo.",
+   "C": "**Krackow é um ponto de sutura, não um alongamento.** É o ponto bloqueado usado para segurar o tendão no reparo agudo transósseo. Não cria retalho nem ganha comprimento."
   },
-  "conceito": "**A imagem mostra avanço em V-Y.** No primeiro quadro, a linha pontilhada desenha um V no tendão ou aponeurose proximal do quadríceps. O quadro seguinte mostra a liberação e o avanço distal do tecido em direção à patela. No último, a sutura fecha o defeito proximal e a configuração final lembra um Y. Esse ganho de comprimento permite aproximar uma ruptura crônica com retração.\n\n**Onde entra Codivilla.** O alongamento ou avanço quadricipital em V-Y é a técnica clássica associada a Codivilla. Scuderi emprega um retalho de reforço quadricipital, enquanto Krackow designa um padrão de pontos bloqueados no tendão, não o desenho de avanço ilustrado. A escolha de qualquer reconstrução crônica depende do tamanho do defeito, da qualidade do tecido e da altura da patela.",
-  "correta": "**D: Codivilla.** A sequência da figura, V proximal, avanço distal e fechamento em Y, identifica o alongamento do mecanismo extensor.",
+  "conferido": false,
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
+   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Tratamento das rupturas tendíneas."
   ],
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-60-patela-mecanismo-extensor",
+     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
+     "secoes": [
+      "Tratamento das rupturas tendíneas"
+     ],
+     "blocos": [
+      "tratamento-das-rupturas-tendineas-97b0cab5",
+      "tratamento-das-rupturas-tendineas-6b7ec609",
+      "tratamento-das-rupturas-tendineas-daf84498",
+      "tratamento-das-rupturas-tendineas-f4316214",
+      "tratamento-das-rupturas-tendineas-5ce92f76"
+     ],
+     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "trechosSha256": "948e4bdf62a39ff044203b41703cfcf69bf036adbb2959925e65155be8ad85b8"
+    }
+   ],
+   "questaoSha256": "db1e02ed30b6aa44338231d455c6a3deb92d803f21133c999183343d8af0ad5a",
+   "comentarioSha256": "66dc9dbb3b4304d01058f8a80338d23b96235aaef37f2c09ea77978be3142395"
+  }
  },
  "trauma-1075": {
   "conceito": "Ao passar uma haste por acesso infrapatelar numa fratura proximal da tíbia, o fragmento curto tende a ficar em **valgo e antecurvato**, alternativa C. Antecurvato, procurvato e ápice anterior descrevem aqui o mesmo componente sagital.\n\nOs dois planos têm causas diferentes. O **ponto medial demais**, ou a fresa que deriva de medial para lateral, cria um trajeto que inclina o fragmento em valgo. A patela e seu tendão podem dificultar a lateralização adequada do ponto na via medial (Rockwood, 10ª ed., cap. 63, “Por que a fratura proximal vai para valgo e ápice anterior”).\n\nNo perfil, a flexão do joelho aumenta a tração do aparelho extensor sobre o fragmento proximal. Um fio dirigido para posterior acrescenta outro mecanismo para o **ápice anterior**. A direção posterior do fio não deve ser confundida com ápice posterior da deformidade.\n\nO canal metafisário largo explica por que a haste não se autocentraliza como na diáfise. Reduzir antes de fresar, conferir ponto e direção nos dois planos e usar auxiliares de redução evita tentar corrigir com os bloqueios uma trajetória já errada.",
@@ -25841,19 +26042,47 @@
   "conferido": false
  },
  "trauma-1206": {
-  "conceito": "**Classificação de Allen e Ferguson das lesões da coluna cervical subaxial.** Baseia-se no **mecanismo** (posição do pescoço e força predominante no momento do trauma), dividido em seis grupos, cada um com estágios de gravidade crescente.\n\n| Mecanismo | Padrão típico |\n|---|---|\n| **Flexão-compressão** | Achatamento anterior do corpo, \"bico\" anteroinferior, **fratura em gota de lágrima (teardrop)** nos estágios avançados, com retrolistese do corpo |\n| Compressão vertical | Fratura explosão do corpo |\n| Flexão-distração | Subluxação e luxação facetária uni ou bilateral |\n| Extensão-compressão | Fraturas do arco posterior (lâminas, pedículos, massas laterais) |\n| Extensão-distração | Ruptura do ligamento longitudinal anterior e do disco, com abertura anterior |\n| Flexão lateral | Compressão assimétrica do corpo e lesão do lado oposto |\n\n**Flexão-compressão em estágios.**\n1. Arredondamento do bordo anterossuperior.\n2. Perda de altura anterior com \"bico\".\n3. Traço do bico até a placa inferior.\n4. Deslocamento posterior menor que 3 mm do corpo.\n5. Deslocamento posterior maior que 3 mm, com ruptura dos ligamentos posteriores (teardrop instável).\n\n**Na tomografia.** O corte sagital mostra fratura do corpo de C6 com perda de altura anterior e fragmento anteroinferior, compatível com mecanismo de **flexão-compressão**, típico de acidentes com impacto da cabeça em flexão.\n\n**Importância.** As fraturas em teardrop por flexão-compressão costumam associar lesão medular grave (síndrome medular anterior) e exigem estabilização, frequentemente por via anterior com corpectomia.\n\n> Fratura do corpo cervical com bico anteroinferior e perda de altura anterior: flexão-compressão (Allen e Ferguson).",
-  "correta": "**B: Flexão/compressão segundo Allen e Ferguson.** A tomografia mostra fratura do corpo de C6 com perda de altura anterior e fragmento anteroinferior, padrão produzido por compressão axial com o pescoço em flexão. Nos estágios mais graves, esse mecanismo produz a fratura em gota de lágrima, com retrolistese do corpo para o canal.",
+  "conceito": "**A pergunta é de mecanismo.** A tomografia, com cortes sagital, coronal e axial centrados em C6, mostra uma lesão do **corpo vertebral** num jovem de 20 anos em acidente de moto, de alta energia. O resumo, ao tratar este mesmo caso da SES-DF 2024 em outra questão, descreve a fratura de C6 como **flexão-compressão com desalinhamento**.\n\n**Como Allen e Ferguson pensam.** A classificação agrupa as lesões de C3 a C7 em seis mecanismos, cada um com estágios de gravidade que se somam. O raciocínio é lembrar o que cada força faz com a vértebra:\n- **compressão-flexão**: o corpo anterior é esmagado; do arredondamento da margem anterossuperior ao bico, ao traço oblíquo do corpo até o platô inferior (a **gota de lágrima**, estágio 3) e à retrolistese (estágios 4 e 5);\n- **distração-flexão**: o que falha são as facetas e os ligamentos posteriores, até as luxações facetárias;\n- **compressão-extensão**: o arco posterior quebra primeiro (massa lateral, lâminas);\n- **distração-extensão**: o disco abre na frente.\n\n**Por que importa.** No Rockwood (10ª ed., cap. 48), a teardrop é lesão do jovem, de alta energia, com déficit frequente e alta taxa de lesão medular completa. Estágio 3 ou mais vai para cirurgia, com corpectomia anterior; no estágio 5, com translação grande, soma-se a fixação posterior. O paciente da questão, intubado e inconsciente, é o perfil típico.\n\n**Na prova:** lesão do corpo de C6 por alta energia, com fragmento anterior e desalinhamento, é flexão-compressão. Distração-flexão produz luxações facetárias; as extensões começam pelo arco posterior ou pelo disco anterior.\n\nA tabela de Allen e Ferguson, no resumo de coluna cervical, mostra os estágios que mais caem.",
+  "correta": "**B: flexão-compressão.** É o mecanismo que esmaga o corpo vertebral anterior e, nos estágios avançados, produz a gota de lágrima e a retrolistese com desalinhamento, como neste caso de C6.",
   "incorretas": {
-   "A": "**Flexão-distração** produz principalmente lesões ligamentares posteriores, com subluxação ou luxação das facetas, e não o achatamento anterior do corpo vertebral.",
-   "C": "**Extensão-distração** causa ruptura anterior (disco e ligamento longitudinal anterior), com abertura do espaço discal anterior e, às vezes, fragmento avulsionado do bordo anteroinferior, mas sem perda de altura do corpo.",
-   "D": "**Extensão-compressão** lesa os elementos posteriores (lâminas, pedículos, massas laterais), que recebem a carga em extensão. Não corresponde à fratura do corpo vista na imagem. (O texto \"Prova aplicada\" é resquício da diagramação.)"
+   "A": "**Flexão-distração falha atrás, nas facetas e nos ligamentos.** Seus estágios vão da subluxação facetária às luxações uni e bilateral. O corpo vertebral não é o foco da lesão, e a gota de lágrima não pertence a esse grupo.",
+   "C": "**Extensão-distração abre o disco na frente.** O primeiro estágio é o alargamento anormal do espaço discal, às vezes com avulsão pequena da margem anterior; o segundo soma translação posterior. Não esmaga o corpo vertebral.",
+   "D": "**Extensão-compressão quebra o arco posterior primeiro.** A sequência começa pela massa lateral e pelas lâminas, chega à massa lateral flutuante e só nos estágios finais desloca o corpo para a frente. A lesão aqui está no corpo de C6."
   },
+  "conferido": false,
   "referencias": [
-   "Allen BL Jr, Ferguson RL, Lehmann TR, O'Brien RP. A mechanistic classification of closed, indirect fractures and dislocations of the lower cervical spine. Spine. 1982;7(1):1-27.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Fraturas da coluna cervical subaxial."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Coluna subaxial: classificações e estabilidade",
+      "Compressão, explosão e teardrop"
+     ],
+     "blocos": [
+      "coluna-subaxial-classificacoes-e-estabilidade-8a83b113",
+      "coluna-subaxial-classificacoes-e-estabilidade-29b5888a",
+      "coluna-subaxial-classificacoes-e-estabilidade-e46c437b",
+      "compressao-explosao-e-teardrop-13a89876",
+      "compressao-explosao-e-teardrop-a3e0c6bc",
+      "coluna-subaxial-classificacoes-e-estabilidade-734c3145"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "fc999fa284ddedd9065af124b4cfcf20636f447d10cc3454102cb10d96c0b054"
+    }
+   ],
+   "questaoSha256": "9d27f1febc0492773f748ebd335feba362a9b0b6b24ca053fa29e3458522ad8d",
+   "comentarioSha256": "36a691d5c5dea7d463e2e8acd9bfde081af540215bf66c734c10ad43190fc26d"
+  }
  },
  "trauma-1207": {
   "conceito": "**Classificação AO Spine da coluna cervical subaxial (2016).** Segue a mesma lógica da toracolombar: morfologia (A, B, C), além de lesão facetária (F), estado neurológico (N) e modificadores.\n\n| Tipo | Descrição |\n|---|---|\n| A | Compressão do corpo vertebral, com banda de tensão íntegra (A0 a A4) |\n| B1 | Lesão transóssea da banda de tensão posterior |\n| B2 | Lesão da banda de tensão posterior ligamentar ou osteoligamentar |\n| B3 | Lesão da banda de tensão anterior (hiperextensão) |\n| **C** | **Translação** ou deslocamento de um corpo vertebral em relação ao adjacente, em qualquer direção |\n\n**Fratura em gota de lágrima por flexão-compressão.** Nos estágios mais graves de Allen e Ferguson (4 e 5), o corpo vertebral fraturado sofre **deslocamento posterior (retrolistese)** em direção ao canal, com ruptura dos ligamentos posteriores e do disco. Esse desalinhamento entre os corpos vertebrais é uma **translação**, e por isso a lesão é classificada como **tipo C** pela AO, a forma mais instável.\n\n**Consequências.** Alta taxa de lesão medular (frequentemente síndrome medular anterior ou lesão completa). O tratamento costuma ser cirúrgico, com corpectomia anterior e artrodese, às vezes associada a fixação posterior.\n\n**No caso.** O paciente de 20 anos, inconsciente após acidente de moto, tem fratura de C6 por flexão-compressão com desalinhamento do corpo vertebral, compatível com tipo C.\n\n> Fratura cervical com translação (retrolistese do corpo no teardrop grave): AO tipo C.",

@@ -3742,19 +3742,43 @@
   "conferido": false
  },
  "conceitos-basicos-0329": {
+  "conceito": "**O que a imagem mostra.** Em A, uma clavícula fixada com placa superior e parafusos, consolidada, com 12 meses de pós-operatório. Em B, a mesma clavícula **refraturada nove dias depois** da retirada da placa, com o traço novo passando pela região dos furos e do osso que estava sob o implante.\n\n**Por que o osso sob a placa é frágil.** A fixação com compressão e estabilidade absoluta consolida por remodelação direta, com pouco calo visível. Durante esse tempo, a placa carrega parte da carga e o osso logo abaixo dela trabalha menos. Ao tirar o implante, ficam os furos dos parafusos, que concentram tensão, num osso que ainda não recuperou toda a resistência. A refratura da figura é o retrato desse período de vulnerabilidade.\n\n**O que o Rockwood recomenda.** No capítulo de clavícula (10ª ed., cap. 34), a **retirada de rotina não é recomendada**. Se for necessária, deve esperar **pelo menos 1 ano depois da consolidação**, o que corresponde a **1 a 2 anos depois da fixação**, justamente para reduzir a refratura. O caso da figura, operado havia um ano e com a placa retirada, mostra o que acontece quando se fica no limite inferior.\n\n**Na prova:** retirada de placa da clavícula não é rotina; se indicada, espera-se até 2 anos depois da fixação.\n\nO parágrafo do pós-operatório, no resumo de clavícula, junta o prazo de retirada com a reabilitação e o retorno ao esporte.",
+  "correta": "**D: 2 anos.** O capítulo situa a retirada, quando necessária, entre 1 e 2 anos depois da fixação, pelo menos 1 ano após a consolidação. Adiar até o limite de 2 anos é a forma de reduzir a refratura mostrada em B.",
   "incorretas": {
-   "A": "**Seis meses é cedo para inferir segurança pela aparência radiográfica.** Mesmo quando a clavícula parece alinhada e o traço pouco nítido, a remodelação direta pode não ter recuperado resistência plena. Esse prazo seria ainda menor que os 12 meses do caso que refraturou; não corresponde à recomendação específica do livro.",
-   "B": "**Um ano é justamente o tempo ilustrado em A.** A placa foi retirada após 12 meses e a radiografia B registra refratura nove dias depois. O caso não prova que toda retirada nesse prazo terminará assim, mas demonstra por que a alternativa não é a orientação conservadora cobrada.",
-   "C": "**Dezoito meses pode ser considerado em avaliação individual, mas não é o prazo citado na fonte da questão.** O capítulo indica adiar por até dois anos após cirurgia com consolidação direta. Nem mesmo esse número garante risco zero: persistem os efeitos dos orifícios e fatores próprios do paciente e da fratura."
+   "A": "**Seis meses é cedo demais.** Nesse prazo, o osso consolidado sob a placa ainda não remodelou o suficiente e os furos funcionam como pontos fracos. O capítulo pede pelo menos 1 ano após a consolidação.",
+   "B": "**Um ano depois da fixação é o início da faixa, não o prazo a buscar.** A figura mostra exatamente isso: placa retirada com 12 meses e refratura em nove dias. A recomendação estende o adiamento até 2 anos depois da cirurgia.",
+   "C": "**Dezoito meses está dentro da faixa, mas não é o limite que a questão pede.** O enunciado fala em adiar \"por até\", e o teto do capítulo é de 2 anos depois da fixação. A alternativa fica no meio do intervalo."
   },
+  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª ed., capítulo 1, Primary Bone Healing, figura 1-17. https://user-biackli.cld.bz/Tornetta-Rockwood-Adults-9781975137298-FINAL-VERSION/24/",
-   "Refracture after plate removal of midshaft clavicle fractures after bone union: incidence, risk factors, management and outcomes. BMC Musculoskelet Disord. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10114427/"
+   "Conteúdo consultado no resumo “Fratura da clavícula”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 34 · Clavicle Fractures. Seções: Placa e haste no terço médio."
   ],
-  "conceito": "**A placa protege, mas também esconde o progresso.** Na fixação com compressão e estabilidade absoluta, a consolidação pode ocorrer por remodelação direta, com pouco ou nenhum calo periosteal visível. Osteoclastos atravessam o traço em cones de corte e osteoblastos refazem a estrutura; a radiografia sem calo exuberante não informa bem quanta resistência mecânica já foi recuperada. Esse processo difere da consolidação relativa com ponte de calo, usada em placas em ponte, hastes e outros construtos que permitem movimento controlado.\n\n**O que a figura efetivamente mostra.** Em A, há uma clavícula com placa aos 12 meses, sem calo externo evidente. Em B, nove dias após a retirada, a clavícula está refraturada. A imagem ilustra o perigo de equiparar aparência radiográfica a resistência suficiente para dispensar o implante. A remoção também deixa orifícios de parafusos e pode expor osso que passou tempo protegido da carga, fatores adicionais para refratura.\n\n**O número pedido pertence ao livro, não a uma regra universal.** Para consolidação primária após placa de compressão, o capítulo de biomecânica do Rockwood recomenda adiar a remoção por até dois anos para permitir união completa. Isso não significa retirar rotineiramente toda placa no segundo aniversário: a retirada deve ter indicação, e o prazo depende de sintomas, localização, qualidade óssea e avaliação individual. Estudos clínicos da clavícula identificaram maior risco com intervalos curtos, inclusive até 12 meses, mas não definem um limiar de segurança absoluto.",
-  "correta": "**Dois anos, conforme a recomendação do capítulo.** A figura usada pela questão mostra que 12 meses não garantiram resistência suficiente: houve refratura nove dias após retirar a placa. Na consolidação direta o progresso é pouco visível pela ausência de calo, por isso o livro propõe postergar a retirada, sem transformá-la em procedimento obrigatório.",
-  "geradoEm": "2026-10-11",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-34-fratura-clavicula",
+     "titulo": "Fratura da clavícula",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 34 · Clavicle Fractures",
+     "secoes": [
+      "Placa e haste no terço médio"
+     ],
+     "blocos": [
+      "placa-e-haste-no-terco-medio-f8e45aa8",
+      "placa-e-haste-no-terco-medio-6f62e979",
+      "placa-e-haste-no-terco-medio-702825bf"
+     ],
+     "sha256": "419dedcf2ae1b697efad15c562180862e233b2417862d4330e5311c42a2f3d5d",
+     "trechosSha256": "4cda7c1dda9e0253ef568a47eed3b2db79fa7f211147f36fe332b98f23920b29"
+    }
+   ],
+   "questaoSha256": "a32c7582fa0bb41130b78ef4bf35d33bc4ff44680e5a3fe621b090434368ce9e",
+   "comentarioSha256": "e0af223a26bf2d84a03c1c09969efb3d08a55a0b1084a02fedf934e6c781ee12"
+  }
  },
  "conceitos-basicos-0330": {
   "incorretas": {

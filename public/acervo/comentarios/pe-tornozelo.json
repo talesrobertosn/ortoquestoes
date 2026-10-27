@@ -2493,15 +2493,46 @@
   "conferido": false
  },
  "pe-tornozelo-0247": {
-  "conceito": "### A imagem\nCorte **axial** do tornozelo distal com as vias de acesso marcadas por setas (A a F):\n- **A:** anterior;\n- **B:** anterolateral;\n- **C:** lateral direta (fíbula);\n- ==D:== ==posterolateral==, entre os **fibulares** e o **FLH**, perto do **sural**;\n- **E:** posteromedial;\n- ==F:== ==medial==, sobre o maléolo medial, perto da **safena magna**.\n\n### Por que D + F\n- **Posterolateral (D):**\n  - acessa a **fíbula** (placa posterior anti-deslizamento);\n  - acessa o **maléolo posterior** (fragmento posterolateral / Volkmann) pela **mesma incisão**.\n- **Medial (F):**\n  - fixa o **maléolo medial**;\n  - ou repara o deltoide / remove interposição.\n- **Resultado:** **duas incisões** tratam os **três focos** (trimaleolar), respeitando as partes moles.\n\n### Classificação\nNa AO / OTA, o grupo **44B** é a fratura **transsindesmótica** da fíbula. Os subgrupos acrescentam lesão **medial** e fratura do **maléolo posterior**. A questão pressupõe essas lesões associadas.\n\n### Cuidados\n- **Posterolateral:** **sural** e safena parva no plano superficial.\n- **Medial:** **safena magna** e nervo safeno.\n- **Posteromedial (E):** para fragmentos **posteromediais** grandes.\n\n> **Na prova:** fixar fíbula, maléolo posterior e medial = ==D (posterolateral) + F (medial)==.",
-  "correta": "**D e F** (posterolateral + medial).",
+  "conceito": "**O que a figura mostra.** É um corte axial do tornozelo, logo acima da articulação, com seis vias marcadas por setas. Lendo pela anatomia: **A** chega pela frente, junto ao tibial anterior; **B** é anterolateral, ao lado do extensor longo dos dedos e do nervo fibular superficial; **C** vai direto à fíbula; **D** entra por trás da fíbula, entre os **tendões fibulares e o flexor longo do hálux**, perto do nervo sural; **E** é posteromedial, junto ao feixe tibial; **F** chega ao **maléolo medial**, ao lado da veia safena magna.\n\n**O que precisa ser fixado.** A 44B da AO é a fratura da fíbula na altura da sindesmose; no subgrupo do enunciado há também lesão medial e fragmento posterior, ou seja, um padrão trimaleolar. São três alvos: fíbula, maléolo medial e maléolo posterior.\n\n**Como duas vias resolvem três fraturas.** O Rockwood (10ª ed., cap. 65) descreve a **via posterolateral** em decúbito ventral, no meio entre o maléolo lateral e o tendão calcâneo, pelo intervalo entre fibulares e flexor longo do hálux. Afastado o flexor para medial, expõe-se o **maléolo posterior**; afastados os fibulares, a **fíbula** é fixada pela mesma incisão. O que falta é o lado medial, alcançado pela **via medial**, sobre o maléolo, com a safena magna e o nervo safeno em risco.\n\n**Na prova:** posterolateral (fíbula e maléolo posterior) mais medial (maléolo medial). O resumo marca como armadilha juntar duas vias laterais, que deixam o medial e o posterior sem acesso adequado.\n\nA tabela das vias de acesso, no resumo de tornozelo, traz o intervalo e o nervo em risco de cada uma.",
+  "correta": "**D: D e F.** D é a posterolateral, que trata a fíbula e o maléolo posterior pela mesma incisão; F é a medial, para o maléolo medial. Juntas, cobrem as três fraturas.",
   "incorretas": {
-   "A": "**B e F.**\n- O anterolateral não dá acesso ao **maléolo posterior**.",
-   "B": "**B e C.**\n- Duas vias laterais, sem acesso ao **maléolo medial**.",
-   "C": "**C e E.**\n- Lateral direta + posteromedial: combinação menos eficiente que D + F."
+   "A": "**B e F cobrem a fíbula pela frente e o medial, mas deixam o posterior sem acesso.** A via anterolateral não alcança o maléolo posterior, que fica atrás da tíbia. Seria preciso uma terceira incisão.",
+   "B": "**B e C são duas vias laterais.** Ambas tratam a fíbula, e nenhuma chega ao maléolo medial nem ao fragmento posterior. É exatamente a armadilha que o resumo aponta.",
+   "C": "**C e E dividem em duas incisões o que a posterolateral faz numa só, e ainda deixam o medial de fora.** A posteromedial é a via do fragmento posteromedial; o mais comum é o posterolateral único (o tipo 1 de Haraguchi, em 66%), tratado junto com a fíbula pela via D. O maléolo medial continua pedindo sua própria exposição."
   },
-  "geradoEm": "2026-09-23",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: As vias de acesso e o nervo em risco; O maléolo posterior."
+  ],
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-65-tornozelo",
+     "titulo": "Fraturas do tornozelo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 65 · Ankle Fractures",
+     "secoes": [
+      "As vias de acesso e o nervo em risco",
+      "O maléolo posterior"
+     ],
+     "blocos": [
+      "as-vias-de-acesso-e-o-nervo-em-risco-f4faabaf",
+      "o-maleolo-posterior-118ede3c",
+      "o-maleolo-posterior-9b0b9f4d",
+      "as-vias-de-acesso-e-o-nervo-em-risco-e704e500",
+      "o-maleolo-posterior-3f959be3"
+     ],
+     "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+     "trechosSha256": "1cd15556ebd23d862b71448919e154c5c1e4470f64515102688a2621e8af3ced"
+    }
+   ],
+   "questaoSha256": "d80493a3caa82d60dd3fcacb5f8974e0462e2a72fedd211652d45fabb07204d0",
+   "comentarioSha256": "39b374b0c5df93f31bf5e878af623b8fff1b46bf29ca7c4bc1f3d94eed86f313"
+  }
  },
  "pe-tornozelo-0248": {
   "incorretas": {
@@ -2986,15 +3017,43 @@
   "conferido": false
  },
  "pe-tornozelo-0295": {
-  "conceito": "### Anatomia do deltoide\n- Complexo ligamentar **medial** do tornozelo, em forma de leque a partir do maléolo medial.\n- Duas camadas:\n\n| Camada | Feixes | Função principal |\n|---|---|---|\n| superficial | tibionavicular, tibiospring, tibiocalcâneo, tibiotalar superficial | contém o valgo do retropé |\n| profunda | tibiotalar anterior profundo, ==tibiotalar posterior profundo== | contém a rotação externa e a translação lateral do tálus |\n\n### O feixe mais forte\n- O ==tibiotalar posterior profundo== é o mais **espesso e resistente** de todo o complexo.\n- Vai da face posterior do colículo medial ao tálus, é intra-articular e curto.\n- É o principal restritor da **rotação externa** e da **translação lateral** do tálus.\n\n### Consequências clínicas\n- Por ser tão forte, raramente rompe na substância; com frequência avulsiona o **colículo** do maléolo medial.\n- Na fratura de Weber B com lesão do deltoide, o alargamento do **espaço claro medial** (acima de 4 a 5 mm) indica lesão da camada profunda: tornozelo instável.\n\n> **Na prova:** feixe mais forte do deltoide = ==tibiotalar posterior (profundo)==.",
-  "correta": "**É o feixe profundo, espesso e curto.**\n- O tibiotalar posterior liga o colículo posterior do maléolo medial diretamente ao tálus.\n- É o principal estabilizador contra rotação externa e translação lateral do tálus.\n- Sua robustez faz com que ele avulsione osso antes de romper na substância.",
+  "conceito": "**O deltoide são duas camadas com trabalhos diferentes.** O ligamento colateral medial do tornozelo nasce no maléolo medial, mas não é uma faixa única. A camada **superficial** sai do **colículo anterior** e se abre em leque para o tálus, o navicular e o sustentáculo do calcâneo. A camada **profunda** é **intra-articular** e vai do **colículo posterior** (e do sulco entre os colículos) até a cúpula do tálus.\n\n**Qual é o mais forte e por quê.** O Rockwood (10ª ed., cap. 65) considera o deltoide profundo, o **tibiotalar posterior profundo**, o freio do tálus contra o **desvio lateral e a rotação**. Por ser curto, espesso e ir direto ao tálus, ele é o componente mais forte do complexo. A consequência prática: com ele e a sindesmose rotos, o tálus desliza para fora no estresse, e é isso que separa a fratura estável da instável no lado medial.\n\n**Os três estabilizadores.** O capítulo resume a estabilidade estática do tornozelo em complexo medial, complexo lateral e sindesmose; dois dos três precisam estar íntegros. Ele lembra também que os músculos que cruzam o tornozelo dão boa parte da estabilidade na marcha, por isso os números de cadáver devem ser lidos com cautela.\n\n**Na prova:** o mais forte do deltoide é o tibiotalar posterior (profundo); tibionavicular e tibiocalcâneo são feixes do leque superficial.\n\nA figura que acompanha esta questão no acervo é uma dissecção da perna e não ajuda a responder; a pergunta se resolve pela anatomia das duas camadas. No resumo de tornozelo, a seção do deltoide e dos ligamentos laterais traz o desenho de cada camada.",
+  "correta": "**D: tibiotalar posterior.** É o feixe profundo, intra-articular, do colículo posterior ao tálus. Curto e espesso, é o componente mais forte e o que segura o tálus contra o desvio lateral.",
   "incorretas": {
-   "A": "**Feixe superficial e fino.**\n- O tibionavicular vai do maléolo ao navicular e integra a camada superficial.\n- Ajuda a conter o valgo, mas é um dos componentes mais delgados do complexo.",
-   "B": "**Relevante, mas não o mais forte.**\n- O tibiocalcâneo desce até o sustentáculo do tálus e é importante contra a eversão do calcâneo.\n- Ainda assim, é superficial e menos espesso que o tibiotalar posterior profundo.",
-   "C": "**Menos resistente que o posterior.**\n- O tibiotalar anterior é mais fino e contém sobretudo a flexão plantar com abdução.\n- A força do complexo está concentrada no feixe profundo posterior."
+   "A": "**O tibionavicular é superficial.** Faz parte do leque que nasce no colículo anterior e vai ao navicular. Contribui para conter o valgo do retropé, mas não é o freio principal do tálus.",
+   "B": "**O tibiocalcâneo também pertence à camada superficial.** Vai ao sustentáculo do calcâneo e cruza duas articulações. Não é intra-articular nem tem a espessura do feixe profundo posterior.",
+   "C": "**O tibiotalar anterior é a porção anterior, menor, da ligação ao tálus.** O componente que o capítulo destaca como freio do tálus é o profundo que sai do colículo posterior. A alternativa troca anterior por posterior."
   },
-  "geradoEm": "2026-09-24",
-  "conferido": false
+  "conferido": false,
+  "referencias": [
+   "Conteúdo consultado no resumo “Fraturas do tornozelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 65 · Ankle Fractures. Seções: Anatomia aplicada: o encaixe, a sindesmose e o deltoide."
+  ],
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-65-tornozelo",
+     "titulo": "Fraturas do tornozelo",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 65 · Ankle Fractures",
+     "secoes": [
+      "Anatomia aplicada: o encaixe, a sindesmose e o deltoide"
+     ],
+     "blocos": [
+      "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-f7386500",
+      "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-1360e2ec",
+      "anatomia-aplicada-o-encaixe-a-sindesmose-e-o-del-27378c7e"
+     ],
+     "sha256": "bdd4cef4702d170f3dc9ab7744b22b20a0f0554f4e876af59aeb2eb517abb73a",
+     "trechosSha256": "1a5c8d2113e1dbeaf2a732a16ad6c7eae3fc5c04eae5e27d2304f07c078fc09b"
+    }
+   ],
+   "questaoSha256": "0fdd4d7d44d475d6b4bdd1ebe005a4407894934d5feee6413f23041d537c0c6c",
+   "comentarioSha256": "35e05e7797c584a870ca37845aab6e6dba2aac114dbb276ca3990bc72df1e449"
+  }
  },
  "pe-tornozelo-0296": {
   "incorretas": {

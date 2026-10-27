@@ -2469,19 +2469,46 @@
   }
  },
  "coluna-0165": {
-  "conceito": "### Nervo laríngeo recorrente (NLR)\n- **Trajeto:** sobe no ==sulco traqueoesofágico==, junto à traqueia, como na figura, para inervar a laringe (todas as cordas vocais, exceto o cricotireóideo).\n- **À esquerda:** contorna o **arco aórtico**. Tem trajeto **mais longo** e **mais previsível**, protegido no sulco traqueoesofágico.\n- **À direita:** contorna a **artéria subclávia**, mais alto. Tem trajeto **mais curto e oblíquo**, cruzando o campo cirúrgico nos níveis cervicais baixos. Raramente é **não recorrente** (anomalia vascular).\n\n### Na prática\n- Por esse raciocínio anatômico, o **acesso pela esquerda** é classicamente considerado de **menor risco** ao NLR. Estudos comparativos mostram taxas semelhantes, e a escolha do lado muitas vezes segue a preferência do cirurgião.\n- A lesão (ou tração) do NLR causa **rouquidão / disfonia**, geralmente **transitória**. Reduzir a **pressão do cuff** do tubo após posicionar os afastadores diminui a neuropraxia.\n- **Reoperação pelo lado oposto:** avaliar antes as **cordas vocais** (laringoscopia). Uma paralisia bilateral compromete a via aérea.\n\n### Os outros nervos\n- **Vago:** dentro da **bainha carotídea**.\n- **Frênico:** sobre o **escaleno anterior**, lateral.\n- **Hipoglosso:** alto, cruzando a carótida perto de C2-C3.\n\n> **Na prova:** nervo no sulco traqueoesofágico, protegido pelo acesso à esquerda = ==laríngeo recorrente==.",
-  "correta": "**Laríngeo recorrente.**",
+  "conceito": "**O que a figura mostra.** É uma vista anterior do pescoço baixo, com a traqueia à esquerda do desenho e os grandes vasos à direita. A seta aponta um nervo fino que sobe colado à traqueia, no sulco entre ela e o esôfago. Esse trajeto, rente à via aérea e longe da bainha carotídea, é o do **nervo laríngeo recorrente**.\n\n**Por que o lado importa.** A via anterior da coluna cervical baixa, a de **Smith-Robinson**, entra entre o esternocleidomastóideo e os infra-hióideos e depois passa entre a bainha carotídea, que fica lateral, e o conjunto traqueia-esôfago, que fica medial e é afastado. É justamente nesse afastamento que o recorrente corre perigo, porque ele vai junto com a traqueia. Os autores do Rockwood (10ª ed., cap. 48) preferem o **lado esquerdo** pelo trajeto mais previsível do recorrente desse lado.\n\n**O que o próprio capítulo pondera.** Numa série de 418 pacientes, o lado escolhido não mudou a incidência de lesão do recorrente. A preferência pela esquerda continua sendo a resposta de prova, mas o fator que mais pesa na prática é a retração: o capítulo dá de 2% a 30% de disfonia ou paralisia de corda vocal, conforme o cuidado com que se procura.\n\n**Na prova:** nervo que sobe no sulco traqueoesofágico e justifica a via pela esquerda é o laríngeo recorrente. O vago está dentro da bainha carotídea, dos dois lados, e não decide o lado.\n\nA tabela das complicações da via anterior, no resumo de coluna cervical, ajuda a fixar quais nervos sofrem em cada nível.",
+  "correta": "**D: laríngeo recorrente.** É o nervo que corre junto à traqueia, como na figura, e fica no caminho quando traqueia e esôfago são afastados para medial. O trajeto mais previsível do lado esquerdo é o argumento clássico para a via por esse lado.",
   "incorretas": {
-   "A": "**Vago.**\n- Dentro da bainha carotídea.",
-   "B": "**Frênico.**\n- Sobre o escaleno anterior, mais lateral.",
-   "C": "**Hipoglosso.**\n- Cruza a região carotídea alta; não desce no sulco traqueoesofágico."
+   "A": "**O vago não é o nervo da figura nem o motivo do lado.** Ele desce dentro da bainha carotídea, lateral ao campo, dos dois lados do pescoço. Na via de Smith-Robinson a bainha é afastada para lateral e protegida; o argumento da esquerda é o ramo recorrente, não o tronco do vago.",
+   "B": "**O frênico desce sobre o escaleno anterior, bem lateral à traqueia.** Ele não aparece colado à via aérea e não fica no plano entre a bainha carotídea e o esôfago. O capítulo não o lista entre os nervos que justificam a escolha do lado.",
+   "C": "**O hipoglosso é um nervo do pescoço alto, junto à base da língua.** Não sobe no sulco traqueoesofágico do pescoço baixo. Nas vias cervicais altas o risco é outro; quem tem nível típico citado no capítulo é o laríngeo superior, em C3–C4, que tira a fonação aguda."
   },
+  "conferido": false,
   "referencias": [
-   "Kline DG, Fox IK. Surgical anatomy of the recurrent laryngeal nerve.",
-   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Vias de acesso, fixação e complicações."
   ],
-  "geradoEm": "2026-09-23",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Vias de acesso, fixação e complicações"
+     ],
+     "blocos": [
+      "vias-de-acesso-fixacao-e-complicacoes-d94d5621",
+      "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+      "vias-de-acesso-fixacao-e-complicacoes-e9530706",
+      "vias-de-acesso-fixacao-e-complicacoes-fe37fb3c",
+      "vias-de-acesso-fixacao-e-complicacoes-d4fdd49a",
+      "vias-de-acesso-fixacao-e-complicacoes-a35e7c44"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "f8744b20b1b8464a305514fe10ac1ae33cd273c1e57af306bba2522d8e8334cc"
+    }
+   ],
+   "questaoSha256": "3e3015a8ecd8904fc36b3c9bc999811bfd468e71168a2b46e07a48012c99b8ef",
+   "comentarioSha256": "f113a7ecd720e64921d1c135de32d5831cc62c16ee528bc012f4305e28f36535"
+  }
  },
  "coluna-0166": {
   "conceito": "### Acesso de Wiltse (paraespinhal)\nCorte **axial** em L5. A linha tracejada marca o **plano de dissecção** entre dois músculos:\n- **Seta 1:** o músculo **lateral** ao plano, o ==longuíssimo==, do grupo eretor da espinha.\n- **Seta 2:** o músculo **medial**, junto à lâmina e ao espinhoso, o ==multífido==.\n\n### Técnica e usos\n- **Técnica:** incisão (ou fáscia) a ~4 a 5 cm da linha média. O plano é desenvolvido **com o dedo**, até as **facetas** e os **processos transversos**.\n- **Usos:**\n  - hérnia **foraminal / extraforaminal**;\n  - artrodese **intertransversária**;\n  - **parafusos pediculares** (inclusive percutâneos / minimamente invasivos);\n  - descompressão foraminal na espondilolistese ístmica.\n- **Vantagens:** menos descolamento muscular e sangramento; preserva a inserção do multífido e sua inervação (ramo medial).\n\n### Posições relativas\nDe medial para lateral: **multífido** (junto às lâminas) → **longuíssimo** → **iliocostal**.\n\n> **Na prova:** Wiltse: 1 = ==longuíssimo== (lateral); 2 = ==multífido== (medial).",
@@ -2956,19 +2983,47 @@
   "conferido": false
  },
  "coluna-0216": {
-  "conceito": "### O ligamento indicado\nVista **posterior** da junção craniocervical, com a membrana tectória e o cruciforme parcialmente removidos. A seta aponta a banda que vai da **face lateral do dente** ao **côndilo occipital**: o ==ligamento alar==.\n\n### Ligamentos alares\n- **Trajeto:** um de cada lado, do dente aos côndilos occipitais, em direção **oblíqua / lateral**.\n- **Função:** limitam a **rotação** axial (o alar contralateral fica tenso) e a **inclinação lateral** da cabeça sobre C2.\n\n### Os outros ligamentos\n- **Transverso:** **horizontal**, atrás do dente, entre as massas laterais de C1. Controla a **translação anterior**.\n- **Apical:** da ponta do dente ao forame magno.\n- **Membrana tectória:** continuação do LLP, do corpo de C2 ao clivo.\n- **Membrana atlanto-occipital anterior:** na face **anterior**.\n- **Interespinhoso:** entre os processos espinhosos, na região posterior subaxial.\n\n### Relevância\n**Fratura do côndilo occipital tipo III** (Anderson-Montesano): avulsão do alar, potencialmente instável.\n\n> **Na prova:** banda do dente ao côndilo occipital = ==alar==.",
-  "correta": "**Alar.**",
+  "conceito": "**O que a figura mostra.** É a junção craniocervical vista por trás, com os elementos posteriores e as membranas retiradas para expor o dente de C2. A seta aponta a faixa que sai da ponta do dente e vai para os lados, em direção aos côndilos do occipital. Essa faixa oblíqua, que prende o dente ao crânio, é o **ligamento alar** (um de cada lado).\n\n**Os dois ligamentos que seguram o dente.** O **transverso** passa **atrás do dente**, de uma massa lateral de C1 à outra, e é o principal contentor da translação anterior do atlas. Os **alares** ficam acima, ligando o dente ao occipital: limitam a **rotação** e seguram a translação além de certo ponto. O Rockwood (10ª ed., cap. 48) traduz isso no intervalo atlanto-odontoide (ADI): normal até 3 mm no adulto; com o transverso roto sozinho, o intervalo abre **no máximo 5 mm**, porque os alares seguram o resto; **acima de 5 mm**, os alares também se romperam.\n\n**Por que reconhecer pela direção.** O que diferencia os dois na imagem é a orientação: o transverso é horizontal e cruza por trás do dente; o alar sobe da ponta do dente para fora e para cima. Ligamentos da linha média posterior, como os interespinhosos, ficam entre os processos espinhosos, longe do dente.\n\n**Na prova:** faixa da ponta do dente para o côndilo occipital é o alar; faixa horizontal atrás do dente, entre as massas laterais, é o transverso.\n\nNo resumo de coluna cervical, a seção do ligamento transverso e do ADI mostra como os dois trabalham juntos.",
+  "correta": "**A: alar.** A seta marca a faixa que parte da ponta do dente em direção ao occipital. É o ligamento que limita a rotação e só cede quando o ADI passa de 5 mm.",
   "incorretas": {
-   "B": "**Transverso.**\n- Horizontal, atrás do dente.",
-   "C": "**Interespinhoso.**\n- Entre os espinhosos, posterior.",
-   "D": "**Atlanto-occipital anterior.**\n- Face **anterior** da articulação."
+   "B": "**O transverso é horizontal e passa atrás do dente.** Ele vai de uma massa lateral de C1 à outra, abraçando o dente por trás; não sobe da ponta do dente para o crânio. Seu rompimento isolado deixa o ADI chegar a 5 mm, enquanto os alares seguram o restante.",
+   "C": "**O interespinhoso está entre os processos espinhosos.** Faz parte do complexo ligamentar posterior, com o amarelo e o supraespinhoso. Não tem relação com o dente de C2 nem com a junção do atlas com o occipital.",
+   "D": "**O atlanto-occipital anterior fica na frente, do arco anterior de C1 ao forame magno.** A figura é posterior e aponta uma estrutura que sai do dente, não do arco do atlas. A orientação e o ponto de origem descartam a alternativa."
   },
+  "conferido": false,
   "referencias": [
-   "Gray's Anatomy. Craniocervical ligaments.",
-   "Panjabi MM et al. Three-dimensional biomechanical analysis of the upper cervical spine. Spine."
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica."
   ],
-  "geradoEm": "2026-09-23",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Atlas, ligamento transverso e instabilidade C1–C2",
+      "Anatomia aplicada e biomecânica"
+     ],
+     "blocos": [
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-3b446794",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
+      "atlas-ligamento-transverso-e-instabilidade-c1-c2-7236e480",
+      "anatomia-aplicada-e-biomecanica-cafff61f",
+      "anatomia-aplicada-e-biomecanica-b1c9d54b"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "3755b393353f74241632b6997b06dec89dc6e3d7a473c41823e31cde50a67962"
+    }
+   ],
+   "questaoSha256": "22ea9014d11b31577823ba074d54e6a7646b5cb90d319ca3725aecfc39fc39ed",
+   "comentarioSha256": "b540260166fffc5f5a8b05a4ae1cf89e44760dfa8a573f0d4f03c05a5a2ed7b6"
+  }
  },
  "coluna-0219": {
   "incorretas": {
@@ -3790,20 +3845,45 @@
   "conferido": false
  },
  "coluna-0281": {
-  "conceito": "### A imagem\nCorte **axial** do pescoço, com as fáscias coloridas. A seta aponta o músculo sobre a face **anterolateral do corpo vertebral**, logo atrás da **fáscia pré-vertebral** (em laranja) e medial à bainha carotídea: o ==longus colli== (longo do pescoço).\n\n### Acesso anterior (Smith-Robinson)\n1. Incisão; **platisma**.\n2. Plano entre a **bainha carotídea** (lateral) e o conjunto **traqueia / esôfago** (medial).\n3. **Fáscia pré-vertebral.**\n4. ==Longus colli==: descolado **subperiostealmente** e afastado **lateralmente**. Ali se ancoram os afastadores autostáticos. Isso expõe o disco e as **uncovertebrais** (limite lateral seguro da descompressão).\n\n### Riscos\n- **Cadeia simpática** sobre o longus colli (lateralmente). Dissecção lateral agressiva causa **síndrome de Horner**.\n- **Artéria vertebral**, lateral à uncovertebral.\n- **Laríngeo recorrente**, sobretudo à **direita** e em níveis baixos.\n- **Esôfago.**\n\n### As outras opções\n- **Omo-hióideo:** mais superficial; é cortado ou afastado em níveis baixos.\n- **Esplênio:** musculatura **posterior**.\n- **Escaleno anterior:** lateral, sobre o plexo e o frênico.\n\n> **Na prova:** músculo afastado lateralmente para expor a uncovertebral = ==longus colli==.",
-  "correta": "**Longus colli.**",
+  "conceito": "**O que a figura mostra.** É um corte axial do pescoço com as fáscias coloridas. Na frente estão a traqueia e o esôfago; dos lados, as bainhas carotídeas; atrás deles, a fáscia pré-vertebral, em laranja. A seta aponta o músculo que fica colado à face anterolateral do corpo vertebral, logo atrás dessa fáscia e medial à bainha carotídea. É o **longo do pescoço** (longus colli).\n\n**Onde ele entra na via anterior.** Na via de **Smith-Robinson**, o plano superficial fica entre o esternocleidomastóideo e os infra-hióideos, e o profundo entre a bainha carotídea, lateral, e a traqueia com o esôfago, mediais. Afastadas as fáscias alar e pré-vertebral, chega-se à coluna, coberta lateralmente pelos dois longos do pescoço. Para ver o disco inteiro e alcançar o limite lateral, os processos uncinados e a articulação uncovertebral, o cirurgião eleva esse músculo e o afasta para os lados.\n\n**O cuidado que o Rockwood destaca.** Sobre a parte lateral do longo do pescoço corre a **cadeia simpática**. Retração ou cautério agressivos ali causam **síndrome de Horner** (ptose, miose e anidrose do mesmo lado). Por isso a elevação é feita junto ao osso, e os afastadores ficam sob a borda do músculo.\n\n**Na prova:** músculo sobre a face anterolateral do corpo vertebral, afastado para expor a uncovertebral, é o longo do pescoço; o risco dele é a cadeia simpática.\n\nA lista da vértebra subaxial, no resumo de coluna cervical, junta uncinados, tubérculo carotídeo e longo do pescoço numa só leitura.",
+  "correta": "**B: longus colli.** É o músculo pré-vertebral que cobre a face anterolateral das vértebras, como na seta. Elevado e afastado para lateral, expõe o disco até os uncinados, o limite lateral do corpo na cirurgia anterior.",
   "incorretas": {
-   "A": "**Omo-hióideo.**\n- Superficial; não fica sobre a coluna.",
-   "C": "**Esplênio do pescoço.**\n- Posterior; fora do acesso anterior.",
-   "D": "**Escaleno anterior.**\n- Lateral ao campo."
+   "A": "**O omo-hióideo é um músculo superficial, da alça infra-hióidea.** Ele aparece no plano superficial da via e pode ser seccionado ou afastado para abrir caminho, mas está longe da coluna. Não cobre a face do corpo vertebral nem esconde a uncovertebral.",
+   "C": "**O esplênio do pescoço é um músculo da nuca.** Fica atrás, entre os grupos musculares posteriores da coluna, e nem aparece no campo da via anterior. O corte da figura mostra a seta na frente da vértebra.",
+   "D": "**O escaleno anterior é lateral, sobre os processos transversos.** Ele fica para fora da bainha carotídea, não medial a ela sobre o corpo vertebral. Afastá-lo não exporia a uncovertebral e colocaria em risco estruturas que a via anterior padrão não precisa visitar."
   },
+  "conferido": false,
   "referencias": [
-   "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022.",
-   "Gray's Anatomy. Anterior cervical surgical anatomy.",
-   "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 2"
+   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Anatomia aplicada e biomecânica; Vias de acesso, fixação e complicações."
   ],
-  "geradoEm": "2026-09-23",
-  "conferido": false
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwood10-48-coluna-cervical",
+     "titulo": "Fraturas e luxações da coluna cervical",
+     "livro": "Rockwood and Green's Fractures in Adults",
+     "edicao": "10ª edição (2025)",
+     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
+     "secoes": [
+      "Anatomia aplicada e biomecânica",
+      "Vias de acesso, fixação e complicações"
+     ],
+     "blocos": [
+      "anatomia-aplicada-e-biomecanica-08887344",
+      "anatomia-aplicada-e-biomecanica-abd6af76",
+      "vias-de-acesso-fixacao-e-complicacoes-e3e02fe1",
+      "vias-de-acesso-fixacao-e-complicacoes-e9530706"
+     ],
+     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "trechosSha256": "55c0a25e89d56343a5fcf488e7f3a365b4356d23568f1a95a464e24ae00cefb0"
+    }
+   ],
+   "questaoSha256": "78f79597ae53300356cdd706e17a1268d1136bdc2114690c275eda7975d7c766",
+   "comentarioSha256": "b3f6fe5d0749b53f0b62b3e0a935650180f49b1a3d0bec54aff619ff4f51b043"
+  }
  },
  "coluna-0282": {
   "incorretas": {

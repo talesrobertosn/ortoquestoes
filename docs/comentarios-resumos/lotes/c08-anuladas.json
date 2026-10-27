@@ -1,0 +1,90 @@
+{
+ "trauma-1064": {
+  "questaoSha256": "630529b7633fa32bb5c0cb83bbe0145dcc332cc627752fec7a8e50f8e5ef76d6",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "alerta": "Questão anulada pela banca, sem gabarito divulgado no acervo. O resumo do Rockwood and Wilkins, 9ª edição, capítulo 14, não indica a transposição anterior do ulnar de rotina: manda considerá-la quando o nervo fica instável na flexoextensão ou quando há risco de impacto do material. Nenhuma das quatro alternativas descreve essa indicação.",
+   "conceito": "**O nervo que mais sofre no úmero distal.** O ulnar passa no túnel cubital, logo atrás do epicôndilo medial, preso ao úmero pela fáscia de Osborne. É o nervo mais acometido pela própria fratura e o **mais em risco na cirurgia**, tanto na exposição quanto na fixação. O capítulo de fratura em T do Rockwood and Wilkins (9ª ed., cap. 14) registra, num estudo recente, 16% de lesão neurológica pré-operatória em adolescentes, predominantemente do ulnar, e lembra que a neuropatia ulnar é a complicação neurológica mais comum do tratamento cirúrgico do úmero distal.\n\n**Transpor ou deixar no lugar.** Entre os passos da técnica está uma decisão explícita: **o nervo ulnar fica no lugar ou é transposto**. O capítulo **não indica a transposição anterior de rotina**. Ele manda considerá-la em duas situações: quando o nervo fica **instável**, subluxando na flexoextensão depois da fixação, ou quando há **risco de impacto** do material sobre ele.\n\n**Por que a questão foi anulada.** O enunciado pede quando a transposição está indicada \"rotineiramente\" e oferece quatro situações: neuropraxia prévia, placa medial, fratura da tróclea e do capítulo, placas paralelas. Nenhuma corresponde ao critério da fonte, que é funcional (nervo instável ou em contato com o implante) e não depende do tipo de placa ou da fratura.\n\n**Para a prova:** o ulnar é sempre identificado e protegido; a transposição é decisão individual, por instabilidade do nervo ou risco de contato com o material.\n\nA seção sobre o nervo ulnar, no resumo de fratura em T, junta os números das lesões e a decisão cirúrgica.",
+   "correta": "**Questão anulada, sem gabarito divulgado.** A fonte não indica a transposição de rotina: ela é considerada quando o ulnar fica instável na flexoextensão ou em risco de impacto do material. Nenhuma alternativa traduz esse critério.",
+   "incorretas": {
+    "A": "**Neuropraxia prévia exige proteger e documentar o nervo, não transpô-lo por regra.** O capítulo registra que lesões pré-operatórias do ulnar são frequentes no adolescente, mas não transforma esse achado em indicação automática de transposição.",
+    "B": "**A placa medial é a situação em que o material fica mais perto do nervo, mas a regra da fonte é o contato real.** A transposição é considerada se houver risco de impacto do implante sobre o ulnar; a simples presença da placa medial não basta para torná-la rotina.",
+    "C": "**Fratura da tróclea e do capítulo descreve o padrão articular, não o comportamento do nervo.** O critério do capítulo para transpor é a instabilidade do ulnar ou o contato com o material, independentemente de quais fragmentos articulares foram fixados.",
+    "D": "**Placas paralelas, ou a 90 graus, descrevem a montagem.** O capítulo discute a configuração das placas na fixação das colunas, mas não liga nenhuma delas à transposição obrigatória do ulnar. A decisão continua individual."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura em T (intercondiliana) do úmero distal na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 14 · T-Condylar Fractures of the Distal Humerus. Seções: Complicações; Técnica: articulação primeiro, colunas depois."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas9-14-fratura-em-t",
+    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "9ª edição",
+    "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+    "secoes": [
+     "Complicações",
+     "Técnica: articulação primeiro, colunas depois"
+    ],
+    "blocos": [
+     "complicacoes-02e95725",
+     "complicacoes-90956356",
+     "complicacoes-d2ac5d62",
+     "tecnica-articulacao-primeiro-colunas-depois-262a3251"
+    ],
+    "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+    "trechosSha256": "7b1bcada76e1b9aaf8d3e2fbae795e5ddcdf13a2c33a8a3ca30258effd49630a"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-1061": {
+  "questaoSha256": "cb2c0ff9f4ed49668c6c777dbff96291d7f5e5450a3dfbb22a4af393b5435603",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "alerta": "Questão anulada pela banca, sem gabarito divulgado no acervo. A figura aponta a faixa oblíqua da cápsula posterior que sai do lado medial, junto ao tendão do semimembranáceo, em direção lateral e proximal: o ligamento poplíteo oblíquo. Mas o resumo do Rockwood and Green, 10ª edição, capítulo 61, descreve duas expansões do semimembranáceo, uma para o ligamento oblíquo posterior e outra que forma o poplíteo oblíquo, e o enunciado pede a \"primeira\" sem critério que as ordene. C e D ficam discutíveis.",
+   "conceito": "**O que a figura mostra.** É a face posterior do joelho, com os músculos cortados. Do lado medial, embaixo, sai o tendão do semimembranáceo; dele parte uma faixa que cruza a cápsula posterior em diagonal, para cima e para fora, rumo ao côndilo lateral. A seta aponta essa faixa: o **ligamento poplíteo oblíquo**.\n\n**O semimembranáceo e suas expansões.** No Rockwood (10ª ed., cap. 61), o semimembranáceo tem várias inserções no canto posteromedial. Duas importam aqui:\n- uma expansão que vai ao **ligamento oblíquo posterior**, estrutura própria, atrás do colateral medial superficial, que se abre em leque com três braços e é o restritor primário da rotação interna;\n- outra que forma o **ligamento poplíteo oblíquo**, um espessamento da cápsula posterior que nasce da confluência dessa expansão com um braço do oblíquo posterior, mede cerca de 48 mm e se alarga até a inserção lateral, na fabela e na tíbia posterior.\n\n**Para que serve.** Num estudo em cadáver citado pelo capítulo, o poplíteo oblíquo foi o principal restritor ligamentar da **hiperextensão**; o cruzado posterior é restritor secundário nesse movimento.\n\n**Por que a questão foi anulada.** A figura é coerente com o poplíteo oblíquo, mas a palavra \"primeira\" pressupõe uma ordem entre as expansões que a fonte não estabelece. Como o semimembranáceo também manda uma expansão ao oblíquo posterior, as alternativas C e D podiam ser defendidas.\n\nA seção sobre a cápsula posterior, no resumo de luxação do joelho, descreve as medidas do poplíteo oblíquo.",
+   "correta": "**Questão anulada, sem gabarito divulgado.** A estrutura apontada na figura é o ligamento poplíteo oblíquo, expansão do semimembranáceo que cruza a cápsula posterior. Como o semimembranáceo também envia uma expansão ao oblíquo posterior, o termo \"primeira expansão\" deixou duas respostas defensáveis.",
+   "incorretas": {
+    "A": "**O tendão do poplíteo é lateral e não vem do semimembranáceo.** O músculo nasce na face posteromedial da tíbia, vira tendão, passa pelo hiato poplíteo e se insere no côndilo lateral, à frente e abaixo do colateral fibular. É peça do canto posterolateral.",
+    "B": "**O ligamento arqueado fica no canto posterolateral.** É uma estrutura do lado lateral da cápsula posterior, sem origem no semimembranáceo. A faixa da figura nasce do lado medial, junto ao tendão do semimembranáceo.",
+    "C": "**É a estrutura que a figura aponta.** O poplíteo oblíquo sai da expansão do semimembranáceo e cruza a cápsula posterior em diagonal até o lado lateral. Fica discutível apenas porque a fonte não define qual expansão seria a \"primeira\".",
+    "D": "**O oblíquo posterior também recebe uma expansão do semimembranáceo, por isso entrou na discussão.** Mas ele é uma estrutura capsuloligamentar própria, medial, atrás do colateral superficial, e não a faixa que cruza a cápsula posterior na figura."
+   },
+   "conferido": false,
+   "referencias": [
+    "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; O lado medial; Canto posterolateral."
+   ]
+  },
+  "fontes": [
+   {
+    "resumo": "rockwood10-61-luxacao-joelho",
+    "titulo": "Luxação do joelho e lesão multiligamentar",
+    "livro": "Rockwood and Green's Fractures in Adults",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 61 · Knee Dislocations",
+    "secoes": [
+     "Cruzado posterior: a pedra fundamental",
+     "O lado medial",
+     "Canto posterolateral"
+    ],
+    "blocos": [
+     "cruzado-posterior-a-pedra-fundamental-cc74f408",
+     "o-lado-medial-b8a9097e",
+     "o-lado-medial-0800da36",
+     "cruzado-posterior-a-pedra-fundamental-cd462063",
+     "cruzado-posterior-a-pedra-fundamental-d4cd29c1",
+     "canto-posterolateral-0b736828",
+     "canto-posterolateral-792b81bb"
+    ],
+    "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
+    "trechosSha256": "ea4a42a1110b4c02479ba2eca5a116aff453a51f70f31a11b5468e3694a09290"
+   }
+  ],
+  "imagensConferidas": [
+   "trauma/trauma-1061-1.jpeg"
+  ]
+ }
+}
