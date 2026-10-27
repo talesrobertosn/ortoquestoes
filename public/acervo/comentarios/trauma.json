@@ -7609,15 +7609,50 @@
   }
  },
  "trauma-0267": {
+  "conceito": "Para fixar uma fratura do úmero distal, o cirurgião precisa expor as duas colunas do osso por trás, e no caminho de uma delas há um nervo deitado sobre o osso. É esse nervo que a questão pergunta.\n\n**Os nervos em volta do úmero distal.** No Rockwood and Wilkins (9ª ed., cap. 14), o **ulnar** passa no **túnel cubital**, logo atrás do epicôndilo medial, **preso ao úmero distal pela fáscia de Osborne**. É o nervo que mais precisa ser identificado e protegido na redução aberta e na fixação, e também o mais acometido pela própria fratura. O **radial** fica mais alto, do lado lateral, atravessando o septo intermuscular; ele fica vulnerável quando a exposição sobe pela coluna lateral e é quem limita a extensão proximal da via com divisão do tríceps.\n\n**Por que o ulnar sofre mais.** A via aceita para as fraturas do úmero distal é a **posterior extensa**. Por ela, a coluna medial só é exposta depois de soltar e afastar o ulnar, que está preso ao osso e cruza o campo da placa medial. O nervo é manipulado, tracionado e às vezes fica em contato com o material. Num estudo citado pelo capítulo, **16%** dos adolescentes com essas fraturas já tinham lesão neurológica antes da cirurgia, **predominantemente do ulnar**, e o ulnar é também o **mais em risco na cirurgia**, com lesões documentadas durante a fixação. A transposição deve ser considerada quando o nervo fica instável na flexo-extensão ou corre risco de atrito com o material.\n\n**Os outros nervos.** O mediano e o radial podem ser lesados, mas aparecem em menor proporção; na tabela de complicações do capítulo, a lesão nervosa é \"ulnar sobretudo; também radial e mediano\".\n\n> **Na prova:** na cirurgia do úmero distal, o nervo mais acometido é o ulnar: identificar, proteger e considerar transpor.\n\nNo resumo da fratura em T do úmero distal, a seção sobre o nervo ulnar e a de nervos em risco detalham a proteção na via posterior.",
+  "correta": "**B: neuropatia do nervo ulnar.** O ulnar, preso ao úmero distal no túnel cubital, cruza o campo da coluna medial na via posterior e precisa ser solto, afastado e protegido; é o nervo mais lesado pela fratura e o mais em risco na fixação.",
   "incorretas": {
-   "A": "**Pouco exposto.** O mediano fica na frente do cotovelo, longe da via posterior e das placas colunares.",
-   "C": "**Pouco exposto.** O musculocutâneo corre na frente do braço, fora do campo da fixação do úmero distal.",
-   "D": "**Outra cirurgia.** O interósseo posterior está em risco nas vias do rádio proximal, e não na fixação do úmero distal."
+   "A": "**Aparece, mas atrás.** O mediano corre na frente do cotovelo, longe da via posterior. O capítulo o cita entre os nervos que podem ser lesados, sempre depois do ulnar.",
+   "C": "**Fora do campo.** O musculocutâneo segue na frente do braço, entre o bíceps e o braquial, e não é exposto na via posterior das fraturas do úmero distal.",
+   "D": "**Nervo do antebraço.** O interósseo posterior contorna o colo do rádio, abaixo do cotovelo, e corre risco nas vias laterais do rádio proximal. Na fixação do úmero distal, o nervo do lado lateral que preocupa é o radial, no septo intermuscular, e mesmo ele vem depois do ulnar."
   },
-  "conceito": "**O nervo mais exposto.** Na fratura do **úmero distal** operada, a complicação neurológica mais comum é a **neuropatia ulnar**, com incidência que varia muito nas séries (de poucos a mais de 20%). O nervo corre no **túnel cubital**, colado ao epicôndilo medial e à coluna medial, exatamente onde se faz a redução e onde se apoia a placa medial.\n\n**Por que ele sofre.** Na **via posterior** (osteotomia do olécrano, divisão ou elevação do tríceps, paratricipital), o ulnar precisa ser **identificado e protegido** do início ao fim. Tração prolongada, desvascularização pela dissecção, compressão pelo material de síntese, fibrose e o próprio trauma inicial explicam a neuropatia. Muitos pacientes já chegam com alguma disfunção ulnar pelo trauma, que deve ser documentada antes da cirurgia.\n\n**A transposição.** Se o nervo fica em contato com a placa ou instável, faz-se a **transposição anterior** subcutânea. Ela não é obrigatória: estudos mostram resultados conflitantes, e alguns sugerem mais neurite com a transposição de rotina. A decisão é individual, mas o nervo deve sempre ser **liberado e protegido**.\n\n**Os outros nervos.** O **radial** está em risco em placas laterais longas, que sobem acima de cerca de 10 cm do epicôndilo, onde ele cruza o septo lateral. O **mediano** e o **musculocutâneo** estão na frente, raramente abordados nessa cirurgia. O **interósseo posterior** é risco nas vias laterais do rádio proximal, e não do úmero distal.\n\n**As outras complicações.** **Rigidez** (a mais comum de todas), ossificação heterotópica, pseudartrose da osteotomia do olécrano, falha da fixação e artrose. A fixação com **placas duplas** (paralelas ou ortogonais) estável o bastante para mobilizar cedo é a chave.\n\n**Na prova:** complicação neurológica mais comum da cirurgia do úmero distal = **neuropatia ulnar**; o nervo deve ser identificado e protegido sempre.",
-  "correta": "**Neuropatia do nervo ulnar.** O nervo corre junto à coluna medial, onde se faz a redução e se apoia a placa, e sofre com tração, desvascularização e contato com o implante.",
-  "geradoEm": "2026-09-30",
-  "conferido": false
+  "referencias": [
+   "Conteúdo consultado no resumo “Fratura em T (intercondiliana) do úmero distal na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 14 · T-Condylar Fractures of the Distal Humerus. Seções: Complicações; Anatomia aplicada."
+  ],
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-14-fratura-em-t",
+     "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+     "secoes": [
+      "Complicações",
+      "Anatomia aplicada"
+     ],
+     "blocos": [
+      "complicacoes-d2ac5d62",
+      "complicacoes-90956356",
+      "complicacoes-cb2c0548",
+      "complicacoes-7ab5b751",
+      "complicacoes-91fbc481",
+      "anatomia-aplicada-3b10f9d0",
+      "anatomia-aplicada-152901f5",
+      "anatomia-aplicada-db66eed1",
+      "anatomia-aplicada-02ffb154"
+     ],
+     "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+     "trechosSha256": "f7e91d781134e90064cea091b95c9ab2db35bb4a6c3fb1a902efc2df965437cb"
+    }
+   ],
+   "questaoSha256": "8ef7783fb259e44fb759e21652b20313e12e213de83b4f8757d0e941f87be516",
+   "comentarioSha256": "6bc823a65337a3d8537f839251fd25cae54c34b095e7e6ba7d5861b14c21ca91"
+  }
  },
  "trauma-0268": {
   "conceito": "Uma cabeça radial fraturada pode ser a marca de uma carga que também rompeu ligamentos. Na carga em **valgo**, a cabeça comprime o capítulo e o **ligamento colateral medial pode romper**. Essa é a relação descrita em B.\n\nO medial é um estabilizador primário contra valgo; a cabeça radial é secundária. Perder os dois apoios muda o significado da fratura: uma ressecção que poderia ser considerada numa lesão verdadeiramente isolada pode piorar muito um cotovelo com contenção medial insuficiente. A avaliação deve procurar as lesões associadas antes de decidir pelo fragmento ósseo sozinho (Rockwood, 10ª ed., cap. 40, “Três mecanismos, três lesões associadas”).\n\nTambém é necessário separar **dor** de **bloqueio da pronossupinação**. Dor por hemartrose pode dificultar o exame; o capítulo permite aspirar/anestesiar ou reavaliar depois. Bloqueio mecânico por fragmento ou cartilagem é uma informação decisiva para operar, enquanto um número de desvio isolado não determina a conduta de toda Mason II.\n\nAs classificações e a membrana interóssea completam a investigação. Mason II é marginal desviada; Mason III é cominutiva de toda a cabeça. A palavra “fragmentada” sozinha não define o tipo II nem faz toda fratura com mais de um fragmento ser III. Na Essex-Lopresti, a membrana interóssea e a radioulnar distal estão rompidas, razão para examinar também o punho.\n\n> **Na prova:** carga em valgo exige avaliar o medial; movimento do antebraço e estabilidade longitudinal também entram na decisão.",
@@ -16497,20 +16532,53 @@
   }
  },
  "trauma-0812": {
-  "conceito": "**A fratura do capítulo.** É uma fratura articular por cisalhamento no plano coronal (AO 13-B3), produzida pela cabeça do rádio que bate no capítulo com o cotovelo em semiflexão. O fragmento desloca-se para a frente e para cima, para a fossa radial, e pode ficar praticamente **sem inserções de partes moles**.\n\n**Por que a irrigação é frágil.** O capítulo é irrigado por vasos que entram pela face **posterior**, a partir de ramos das artérias recorrentes. O fragmento fraturado, que é anterior e articular, perde quase toda a ligação com essa irrigação. Por isso, a **necrose avascular** do fragmento é uma complicação temida, especialmente:\n- nos fragmentos grandes com osso subcondral (tipo I de Hahn-Steinthal);\n- após dissecção extensa para redução aberta;\n- quando o fragmento está completamente livre.\n\n**As complicações descritas.**\n\n| Complicação | Comentário |\n|---|---|\n| **Necrose avascular** | Temida pela ausência de inserções; a banca considerou a mais frequente |\n| Rigidez (perda de extensão) | Muito citada nas séries cirúrgicas |\n| Artrose pós-traumática | Pela lesão da cartilagem e incongruência |\n| Pseudartrose | Pouco frequente após fixação estável |\n| Instabilidade | Rara, salvo lesões ligamentares associadas |\n\n**Tratamento.** Tomografia para avaliar a extensão para a tróclea e a cominuição. Fragmentos desviados: redução aberta e fixação com **parafusos sem cabeça**, de anterior para posterior ou de posterior para anterior, com mobilização precoce para evitar rigidez. Fragmentos pequenos ou muito cominutivos podem ser excisados; em idosos com cominuição grave, considera-se artroplastia.\n\n**Na prova.** O dado que justifica a resposta oficial é a vulnerabilidade vascular do fragmento livre: o capítulo fraturado é um fragmento articular sem partes moles, e a necrose é a complicação mais associada a ele nas fontes da banca.",
-  "correta": "**Correta: B (necrose avascular).** O gabarito oficial indica a necrose avascular, justificada pela irrigação posterior do capítulo e pela ausência de inserções de partes moles no fragmento anterior deslocado.",
+  "alerta": "O gabarito oficial é a necrose avascular, que o capítulo 16 do Rockwood and Wilkins chama de complicação principal da fratura do capítulo. O mesmo capítulo avisa que muitos pacientes perdem algum movimento, com ou sem cirurgia, e outras questões e fontes adotam a limitação articular como a complicação mais comum. Mantemos o gabarito e explicamos as duas leituras.",
+  "conceito": "O capítulo é a parte arredondada do úmero distal onde a cabeça do rádio desliza. Quando uma queda empurra a cabeça do rádio contra ele, um pedaço da superfície articular pode ser cisalhado para a frente, como uma casca. Para entender a complicação que a questão cobra, é preciso olhar de onde esse pedaço recebe sangue.\n\n**O que é a fratura.** No Rockwood and Wilkins (9ª ed., cap. 16), a fratura do capítulo envolve só a **superfície articular verdadeira** do côndilo lateral, às vezes com a crista lateral da tróclea, e o fragmento costuma vir da parte **anterior**. É rara na criança e mais provável no **adolescente mais velho**. O mecanismo mais aceito é o **cisalhamento da superfície anterior pela cabeça do rádio**; não por acaso, lesões do rádio proximal acompanham 31% dos casos. A forma mais comum é a de **Hahn-Steinthal**, que leva uma porção grande de osso esponjoso; a de **Kocher-Lorenz** é quase só cartilagem.\n\n**Por que o fragmento pode morrer.** O fragmento anterior é quase todo superfície articular, coberto de cartilagem, e sai da fratura com pouquíssimo tecido ligado a ele. Separado do úmero, ele fica dependente de ser reinserido e revascularizado através do foco. Por isso o capítulo diz que a complicação principal é a **osteonecrose**, e acrescenta um detalhe decisivo: ela **só ocorre quando o fragmento é mantido**. Fragmento excisado não necrosa, porque não está mais lá.\n\n**O tratamento e o preço de cada escolha.** Sem desvio, imobilização. A redução fechada raramente funciona. No adolescente com fragmento agudo e grande, os autores reinserem com dois parafusos canulados pequenos de posterior para anterior; fragmento antigo, cominuído ou com pouco osso vai para excisão, microfratura e movimento precoce. A artrose pode vir com o fragmento mantido ou excisado, e **muitos perdem algum movimento**, com ou sem cirurgia, nem sempre com importância funcional; os pais devem ser avisados.\n\n> **Na prova:** fratura do capítulo é do adolescente; Hahn-Steinthal é a mais comum; a complicação principal é a osteonecrose do fragmento mantido, e a perda de movimento é frequente.\n\nNo resumo de côndilo lateral e capítulo, a seção da fratura do capítulo no adolescente traz a classificação e as opções de tratamento.",
+  "correta": "**B: necrose avascular.** O capítulo chama a osteonecrose de complicação principal da fratura do capítulo: o fragmento anterior, quase todo articular e com pouco tecido ligado, depende de revascularizar depois de reinserido, e só necrosa quando é mantido.",
   "incorretas": {
-   "A": "A **pseudartrose** é incomum, sobretudo após fixação estável com parafusos sem cabeça.",
-   "C": "A **limitação articular** é muito citada nas séries cirúrgicas, como explica o alerta, mas o gabarito oficial considerou a necrose avascular como a mais frequente.",
-   "D": "A **instabilidade** é rara, porque os ligamentos colaterais costumam estar preservados nessa fratura isolada."
+   "A": "**O fragmento reinserido costuma consolidar.** O capítulo não destaca a pseudartrose; o problema do fragmento mantido é a necrose, e o excisado não tem como evoluir para pseudartrose.",
+   "C": "**Frequente, mas não a eleita.** Muitos pacientes perdem algum movimento, com ou sem cirurgia, e o capítulo manda avisar os pais. Mas ele chama a osteonecrose de complicação principal, e foi ela que a banca marcou. Veja o alerta.",
+   "D": "**Não parece ser problema.** O capítulo observa que, mesmo excisando fragmentos grandes, a instabilidade não parece ser problema. O capítulo é superfície articular, não um estabilizador ligamentar do cotovelo."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas do úmero distal",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Conteúdo consultado no resumo “Fraturas do côndilo lateral e do capítulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Seções: Fratura do capítulo no adolescente."
   ],
-  "alerta": "A complicação mais citada na literatura após a fratura do capítulo é a perda de mobilidade (rigidez), e outra questão deste acervo (trauma-0103) adota essa resposta. A necrose avascular é temida, mas pouco frequente. A banca indicou B.",
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "conferido": false,
+  "geradoEm": "2026-10-27",
+  "baseResumo": {
+   "tipo": "resumo",
+   "versao": 1,
+   "fontes": [
+    {
+     "resumo": "rockwoodcriancas9-16-condilo-lateral",
+     "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+     "livro": "Rockwood and Wilkins' Fractures in Children",
+     "edicao": "9ª edição",
+     "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+     "secoes": [
+      "Fratura do capítulo no adolescente"
+     ],
+     "blocos": [
+      "fratura-do-capitulo-no-adolescente-3148b36a",
+      "fratura-do-capitulo-no-adolescente-3bda4c9f",
+      "fratura-do-capitulo-no-adolescente-193d0317",
+      "fratura-do-capitulo-no-adolescente-fb89ac0c",
+      "fratura-do-capitulo-no-adolescente-d50ee436",
+      "fratura-do-capitulo-no-adolescente-3b00209d",
+      "fratura-do-capitulo-no-adolescente-707b3ae8",
+      "fratura-do-capitulo-no-adolescente-2b6677d0",
+      "fratura-do-capitulo-no-adolescente-daf48ee9",
+      "fratura-do-capitulo-no-adolescente-ccbd432c",
+      "fratura-do-capitulo-no-adolescente-16b52e75",
+      "fratura-do-capitulo-no-adolescente-4ccdc058"
+     ],
+     "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+     "trechosSha256": "8b567ff131eaa723443c54cf3aff9a81458f3bfd85e098649394fc89e9e516f0"
+    }
+   ],
+   "questaoSha256": "d8f1cccfdba0b1d56e95ec3b401327e0be6ed59de395dcfdf5276b1ba2f72a4c",
+   "comentarioSha256": "20287b3908aea2b7ae766d561ddf4454bde1b500166da2beb14b234e779e2cbf"
+  }
  },
  "trauma-0813": {
   "incorretas": {

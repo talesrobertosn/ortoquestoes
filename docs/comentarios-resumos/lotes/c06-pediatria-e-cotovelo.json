@@ -1,0 +1,188 @@
+{
+ "trauma-0812": {
+  "questaoSha256": "d8f1cccfdba0b1d56e95ec3b401327e0be6ed59de395dcfdf5276b1ba2f72a4c",
+  "comentarioAnteriorSha256": "0ca2e12a9be7dbf9c7e6cabe1dd62de09cc1a0d7446a0d690a5f0bf36246d685",
+  "comentario": {
+   "alerta": "O gabarito oficial é a necrose avascular, que o capítulo 16 do Rockwood and Wilkins chama de complicação principal da fratura do capítulo. O mesmo capítulo avisa que muitos pacientes perdem algum movimento, com ou sem cirurgia, e outras questões e fontes adotam a limitação articular como a complicação mais comum. Mantemos o gabarito e explicamos as duas leituras.",
+   "conceito": "O capítulo é a parte arredondada do úmero distal onde a cabeça do rádio desliza. Quando uma queda empurra a cabeça do rádio contra ele, um pedaço da superfície articular pode ser cisalhado para a frente, como uma casca. Para entender a complicação que a questão cobra, é preciso olhar de onde esse pedaço recebe sangue.\n\n**O que é a fratura.** No Rockwood and Wilkins (9ª ed., cap. 16), a fratura do capítulo envolve só a **superfície articular verdadeira** do côndilo lateral, às vezes com a crista lateral da tróclea, e o fragmento costuma vir da parte **anterior**. É rara na criança e mais provável no **adolescente mais velho**. O mecanismo mais aceito é o **cisalhamento da superfície anterior pela cabeça do rádio**; não por acaso, lesões do rádio proximal acompanham 31% dos casos. A forma mais comum é a de **Hahn-Steinthal**, que leva uma porção grande de osso esponjoso; a de **Kocher-Lorenz** é quase só cartilagem.\n\n**Por que o fragmento pode morrer.** O fragmento anterior é quase todo superfície articular, coberto de cartilagem, e sai da fratura com pouquíssimo tecido ligado a ele. Separado do úmero, ele fica dependente de ser reinserido e revascularizado através do foco. Por isso o capítulo diz que a complicação principal é a **osteonecrose**, e acrescenta um detalhe decisivo: ela **só ocorre quando o fragmento é mantido**. Fragmento excisado não necrosa, porque não está mais lá.\n\n**O tratamento e o preço de cada escolha.** Sem desvio, imobilização. A redução fechada raramente funciona. No adolescente com fragmento agudo e grande, os autores reinserem com dois parafusos canulados pequenos de posterior para anterior; fragmento antigo, cominuído ou com pouco osso vai para excisão, microfratura e movimento precoce. A artrose pode vir com o fragmento mantido ou excisado, e **muitos perdem algum movimento**, com ou sem cirurgia, nem sempre com importância funcional; os pais devem ser avisados.\n\n> **Na prova:** fratura do capítulo é do adolescente; Hahn-Steinthal é a mais comum; a complicação principal é a osteonecrose do fragmento mantido, e a perda de movimento é frequente.\n\nNo resumo de côndilo lateral e capítulo, a seção da fratura do capítulo no adolescente traz a classificação e as opções de tratamento.",
+   "correta": "**B: necrose avascular.** O capítulo chama a osteonecrose de complicação principal da fratura do capítulo: o fragmento anterior, quase todo articular e com pouco tecido ligado, depende de revascularizar depois de reinserido, e só necrosa quando é mantido.",
+   "incorretas": {
+    "A": "**O fragmento reinserido costuma consolidar.** O capítulo não destaca a pseudartrose; o problema do fragmento mantido é a necrose, e o excisado não tem como evoluir para pseudartrose.",
+    "C": "**Frequente, mas não a eleita.** Muitos pacientes perdem algum movimento, com ou sem cirurgia, e o capítulo manda avisar os pais. Mas ele chama a osteonecrose de complicação principal, e foi ela que a banca marcou. Veja o alerta.",
+    "D": "**Não parece ser problema.** O capítulo observa que, mesmo excisando fragmentos grandes, a instabilidade não parece ser problema. O capítulo é superfície articular, não um estabilizador ligamentar do cotovelo."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do côndilo lateral e do capítulo na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus. Seções: Fratura do capítulo no adolescente."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas9-16-condilo-lateral",
+    "titulo": "Fraturas do côndilo lateral e do capítulo na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "9ª edição",
+    "capitulo": "Capítulo 16 · Lateral Condylar and Capitellar Fractures of the Distal Humerus",
+    "secoes": [
+     "Fratura do capítulo no adolescente"
+    ],
+    "blocos": [
+     "fratura-do-capitulo-no-adolescente-3148b36a",
+     "fratura-do-capitulo-no-adolescente-3bda4c9f",
+     "fratura-do-capitulo-no-adolescente-193d0317",
+     "fratura-do-capitulo-no-adolescente-fb89ac0c",
+     "fratura-do-capitulo-no-adolescente-d50ee436",
+     "fratura-do-capitulo-no-adolescente-3b00209d",
+     "fratura-do-capitulo-no-adolescente-707b3ae8",
+     "fratura-do-capitulo-no-adolescente-2b6677d0",
+     "fratura-do-capitulo-no-adolescente-daf48ee9",
+     "fratura-do-capitulo-no-adolescente-ccbd432c",
+     "fratura-do-capitulo-no-adolescente-16b52e75",
+     "fratura-do-capitulo-no-adolescente-4ccdc058"
+    ],
+    "sha256": "e27c739d1ef5844b2144af32bf5442872057d8ea8d695d739bfd3db4f17823bb",
+    "trechosSha256": "8b567ff131eaa723443c54cf3aff9a81458f3bfd85e098649394fc89e9e516f0"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "trauma-0267": {
+  "questaoSha256": "8ef7783fb259e44fb759e21652b20313e12e213de83b4f8757d0e941f87be516",
+  "comentarioAnteriorSha256": "8398b5540b9880dc533b0f52c2f674f897e43c60cb226e04576f36d1b48aaf29",
+  "comentario": {
+   "conceito": "Para fixar uma fratura do úmero distal, o cirurgião precisa expor as duas colunas do osso por trás, e no caminho de uma delas há um nervo deitado sobre o osso. É esse nervo que a questão pergunta.\n\n**Os nervos em volta do úmero distal.** No Rockwood and Wilkins (9ª ed., cap. 14), o **ulnar** passa no **túnel cubital**, logo atrás do epicôndilo medial, **preso ao úmero distal pela fáscia de Osborne**. É o nervo que mais precisa ser identificado e protegido na redução aberta e na fixação, e também o mais acometido pela própria fratura. O **radial** fica mais alto, do lado lateral, atravessando o septo intermuscular; ele fica vulnerável quando a exposição sobe pela coluna lateral e é quem limita a extensão proximal da via com divisão do tríceps.\n\n**Por que o ulnar sofre mais.** A via aceita para as fraturas do úmero distal é a **posterior extensa**. Por ela, a coluna medial só é exposta depois de soltar e afastar o ulnar, que está preso ao osso e cruza o campo da placa medial. O nervo é manipulado, tracionado e às vezes fica em contato com o material. Num estudo citado pelo capítulo, **16%** dos adolescentes com essas fraturas já tinham lesão neurológica antes da cirurgia, **predominantemente do ulnar**, e o ulnar é também o **mais em risco na cirurgia**, com lesões documentadas durante a fixação. A transposição deve ser considerada quando o nervo fica instável na flexo-extensão ou corre risco de atrito com o material.\n\n**Os outros nervos.** O mediano e o radial podem ser lesados, mas aparecem em menor proporção; na tabela de complicações do capítulo, a lesão nervosa é \"ulnar sobretudo; também radial e mediano\".\n\n> **Na prova:** na cirurgia do úmero distal, o nervo mais acometido é o ulnar: identificar, proteger e considerar transpor.\n\nNo resumo da fratura em T do úmero distal, a seção sobre o nervo ulnar e a de nervos em risco detalham a proteção na via posterior.",
+   "correta": "**B: neuropatia do nervo ulnar.** O ulnar, preso ao úmero distal no túnel cubital, cruza o campo da coluna medial na via posterior e precisa ser solto, afastado e protegido; é o nervo mais lesado pela fratura e o mais em risco na fixação.",
+   "incorretas": {
+    "A": "**Aparece, mas atrás.** O mediano corre na frente do cotovelo, longe da via posterior. O capítulo o cita entre os nervos que podem ser lesados, sempre depois do ulnar.",
+    "C": "**Fora do campo.** O musculocutâneo segue na frente do braço, entre o bíceps e o braquial, e não é exposto na via posterior das fraturas do úmero distal.",
+    "D": "**Nervo do antebraço.** O interósseo posterior contorna o colo do rádio, abaixo do cotovelo, e corre risco nas vias laterais do rádio proximal. Na fixação do úmero distal, o nervo do lado lateral que preocupa é o radial, no septo intermuscular, e mesmo ele vem depois do ulnar."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fratura em T (intercondiliana) do úmero distal na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 14 · T-Condylar Fractures of the Distal Humerus. Seções: Complicações; Anatomia aplicada."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas9-14-fratura-em-t",
+    "titulo": "Fratura em T (intercondiliana) do úmero distal na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "9ª edição",
+    "capitulo": "Capítulo 14 · T-Condylar Fractures of the Distal Humerus",
+    "secoes": [
+     "Complicações",
+     "Anatomia aplicada"
+    ],
+    "blocos": [
+     "complicacoes-d2ac5d62",
+     "complicacoes-90956356",
+     "complicacoes-cb2c0548",
+     "complicacoes-7ab5b751",
+     "complicacoes-91fbc481",
+     "anatomia-aplicada-3b10f9d0",
+     "anatomia-aplicada-152901f5",
+     "anatomia-aplicada-db66eed1",
+     "anatomia-aplicada-02ffb154"
+    ],
+    "sha256": "69efe6a0c0c46f25c693d82ebcfaede8aae79fa4e66a14c0be2d802d1c04cf01",
+    "trechosSha256": "f7e91d781134e90064cea091b95c9ab2db35bb4a6c3fb1a902efc2df965437cb"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-0066": {
+  "questaoSha256": "96baada145340605b1aa0236d64ea7c1d84672f4bbcd5ff92dcd1d008e746c79",
+  "comentarioAnteriorSha256": "1386e7c4a65c411acc7ac760aa0ca3fd25c15e3e8635024906ea061d050d0cef",
+  "comentario": {
+   "conceito": "Um lactente de oito meses chega com o cotovelo inchado e a história de que \"rolou do sofá\". A pergunta que todo ortopedista pediátrico precisa se fazer é se aquela fratura combina com aquele mecanismo naquela idade. Algumas fraturas quase nunca acontecem por acidente, e a questão pede a mais sugestiva delas.\n\n**Onde procurar.** No Rockwood and Wilkins (9ª ed., cap. 17), diante da suspeita de maus-tratos, o capítulo indica **cintilografia óssea e inventário esquelético**, à procura de **fraturas metafisárias em canto** (ou em **alça de balde**), **fraturas de costela** e **fraturas em diferentes fases de consolidação**. São essas as lesões que as provas cobram como de alta especificidade.\n\n**Por que a fratura do canto pesa tanto.** É uma lesão da borda da metáfise, junto da fise, que as quedas comuns do lactente não explicam. Na radiografia, aparece como um pequeno fragmento no canto da metáfise; vista de outro ângulo, a mesma lesão desenha uma **alça de balde**. Numa série de 16 descolamentos do úmero distal avaliados por ultrassom, 10 tinham outra fratura no mesmo úmero, cinco delas em alça de balde. Encontrar esse padrão obriga a procurar o resto: costelas, fraturas em fases diferentes e trauma craniano.\n\n**E as fraturas de diáfise.** Fraturas de diáfise são comuns tanto no trauma acidental quanto no não acidental, e por isso são menos específicas. O capítulo de fêmur da criança (10ª ed., cap. 25) mostra que, antes da marcha, até 80% das fraturas do fêmur podem ser não acidentais, e acrescenta um dado que contraria o senso comum: **a fratura transversa prediz maus-tratos melhor que a espiral**. O que pesa é a idade abaixo de 18 meses, a história suspeita e a evidência de lesão anterior (fatores de Baldwin), e não o desenho espiral do traço.\n\n> **Na prova:** a fratura de extremidade mais sugestiva de maus-tratos é a metafisária do canto (alça de balde); costelas e fraturas em fases diferentes reforçam. Espiral do fêmur não é a mais específica.\n\nNo resumo de descolamento do úmero distal, a seção sobre maus-tratos lista o que pedir e o que procurar.",
+   "correta": "**A: do canto.** A fratura metafisária do canto, que também aparece como alça de balde, é a primeira lesão que o capítulo manda procurar no inventário esquelético quando se suspeita de abuso; as quedas comuns da criança pequena não a explicam.",
+   "incorretas": {
+    "B": "**O traço espiral não é o mais suspeito.** O capítulo de fêmur da criança mostra que a fratura transversa prediz maus-tratos melhor que a espiral; o que pesa é a idade abaixo de 18 meses, a história suspeita e lesões anteriores. Fraturas de diáfise acontecem em acidentes e em abusos, por isso são pouco específicas.",
+    "C": "**Diáfise, pouco específica.** A fratura transversa do úmero pode ocorrer por abuso, mas também por queda, e as fraturas diafisárias aparecem nos distratores como se fossem específicas. O capítulo aponta as metafisárias e as de costela.",
+    "D": "**Típica de trauma acidental.** As fraturas do antebraço são as mais comuns da criança e, cominutivas, sugerem energia alta. Não estão entre as lesões de alta especificidade que o capítulo manda procurar."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição, Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures. Seções: Descolamento do úmero distal e maus-tratos.",
+    "Conteúdo consultado no resumo “Fratura da diáfise do fêmur na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 10ª edição (2025), Capítulo 25 · Femoral Shaft Fractures. Seções: Epidemiologia e diagnóstico."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "rockwoodcriancas9-17-fise-distal-umero",
+    "titulo": "Descolamento epifisário do úmero distal, côndilo medial, epicôndilo lateral e outras fraturas raras do cotovelo",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "9ª edição",
+    "capitulo": "Capítulo 17 · Distal Humeral Physeal, Medial Condyle, Lateral Epicondylar, and Other Uncommon Elbow Fractures",
+    "secoes": [
+     "Descolamento do úmero distal e maus-tratos"
+    ],
+    "blocos": [
+     "descolamento-do-umero-distal-e-maus-tratos-9eedbd35",
+     "descolamento-do-umero-distal-e-maus-tratos-93a00088",
+     "descolamento-do-umero-distal-e-maus-tratos-ed743cf1",
+     "descolamento-do-umero-distal-e-maus-tratos-f5056d2c"
+    ],
+    "sha256": "b5017e80e7bd12b2d5a847e780a8d0235c1d2e20a42d5db2be9aae6ab346f59e",
+    "trechosSha256": "aaa3df27fbaaecc872828a4934f07055e5cd1ce93582bdd339a0034c166a51b8"
+   },
+   {
+    "resumo": "rockwoodcriancas10-25-diafise-femur",
+    "titulo": "Fratura da diáfise do fêmur na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "10ª edição (2025)",
+    "capitulo": "Capítulo 25 · Femoral Shaft Fractures",
+    "secoes": [
+     "Epidemiologia e diagnóstico"
+    ],
+    "blocos": [
+     "epidemiologia-e-diagnostico-7edaa162",
+     "epidemiologia-e-diagnostico-a2d443e7"
+    ],
+    "sha256": "3fbc064cb64d7c6899f2ee080251caa4a79a391a04765388c7fbe976e891ae6a",
+    "trechosSha256": "43dc26946e1bca1434f125486a37957070d0d20775a49c527573c38662b73a02"
+   }
+  ],
+  "imagensConferidas": []
+ },
+ "pediatria-1079": {
+  "questaoSha256": "dce16cd0c34bfdd2794f9a5b2065fb7879f9b520484c593817926e0ce5ea7625",
+  "comentarioAnteriorSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "comentario": {
+   "conceito": "Uma criança de 10 anos cai sobre a mão espalmada e quebra o rádio distal pela fise. A fise é uma placa de cartilagem entre a epífise e a metáfise, e a classificação de Salter-Harris descreve por onde o traço a atravessa: só pela fise (I), pela fise saindo na metáfise (II), pela fise saindo na epífise e na articulação (III), atravessando as três (IV) ou esmagando a fise (V). A pergunta é quais tipos dominam no punho.\n\n**O que o capítulo mostra.** O Wilkins (9ª ed., cap. 8) diz que as fraturas fisárias do rádio distal seguem a classificação de Salter-Harris e que **a maioria é do tipo II**. No padrão comum, com ápice volar, a epífise e o **fragmento metafisário dorsal de Thurston-Holland** vão para dorsal. O **tipo I** também costuma desviar para dorsal e, sem desvio, pode ter como único sinal o deslocamento do coxim gorduroso do pronador quadrado ou a dor à palpação da fise. Já o **tipo III** é **raro**, por compressão, cisalhamento ou avulsão dos ligamentos radiocárpicos volares, e as equivalentes à triplanar também são raras.\n\n**Por que o II domina.** O padrão típico do punho é a queda sobre a mão espalmada, que leva a epífise para dorsal. Quando o traço sai pela metáfise de um lado, arranca o fragmento de Thurston-Holland e é tipo II; quando não sai, é tipo I. Os tipos que entram na articulação dependem de compressão, cisalhamento ou avulsão sobre a epífise, que o capítulo descreve como raros.\n\n**O tratamento acompanha.** O descolamento desviado dos tipos I e II é reduzido de forma fechada e **atraumática**, com tração suave e flexão da epífise sobre a metáfise, usando o **periósteo dorsal íntegro** como banda de tensão.\n\n> **Na prova:** fratura fisária do rádio distal é quase sempre Salter-Harris II (fragmento de Thurston-Holland dorsal); o I vem atrás; o III é raro.\n\nNo resumo de fraturas do rádio e da ulna distais na criança, a seção da fise distal do rádio descreve os tipos e a redução.",
+   "correta": "**A: I e II.** O capítulo diz que a maioria das fraturas fisárias do rádio distal é do tipo II, com o fragmento de Thurston-Holland, e descreve o tipo I como o outro padrão de descolamento que desvia para dorsal; os tipos III e equivalentes à triplanar são raros.",
+   "incorretas": {
+    "B": "**O III é raro.** O tipo I acompanha o II, mas o III, que entra na articulação, é raro no rádio distal e nasce de compressão, cisalhamento ou avulsão dos ligamentos volares.",
+    "C": "**O II certo, o III raro.** O tipo II é o mais comum, mas o par certo é com o I; o III é raro no punho da criança.",
+    "D": "**O IV não é comum no punho.** O tipo IV atravessa metáfise, fise e epífise e pede redução anatômica; não aparece no capítulo como padrão frequente do rádio distal.",
+    "E": "**O V é excepcional.** O esmagamento da fise é raro e costuma ser diagnosticado só depois, pela parada de crescimento. Não é o padrão habitual da fratura do rádio distal."
+   },
+   "referencias": [
+    "Conteúdo consultado no resumo “Fraturas do rádio e da ulna distais na criança”, Biblioteca do OrtoQuestões, baseado em Rockwood and Wilkins' Fractures in Children, 9ª edição (2020), Capítulo 8 · Fractures of the Distal Radius and Ulna. Seções: A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND."
+   ],
+   "conferido": false
+  },
+  "fontes": [
+   {
+    "resumo": "wilkins9-08-radio-ulna-distal-crianca",
+    "titulo": "Fraturas do rádio e da ulna distais na criança",
+    "livro": "Rockwood and Wilkins' Fractures in Children",
+    "edicao": "9ª edição (2020)",
+    "capitulo": "Capítulo 8 · Fractures of the Distal Radius and Ulna",
+    "secoes": [
+     "A fise distal do rádio: SALTER-HARRIS e THURSTON-HOLLAND"
+    ],
+    "blocos": [
+     "a-fise-distal-do-radio-salter-harris-e-thurston--a95d7027",
+     "a-fise-distal-do-radio-salter-harris-e-thurston--388fae88",
+     "a-fise-distal-do-radio-salter-harris-e-thurston--9c362b91",
+     "a-fise-distal-do-radio-salter-harris-e-thurston--8a9356c8",
+     "a-fise-distal-do-radio-salter-harris-e-thurston--8e434c26"
+    ],
+    "sha256": "846bc145b9e85a96f64fd597f7e206bb187ec1b0c05c179e07bc549976a948d7",
+    "trechosSha256": "c6c8bdc89bf1c8fe8e0cd39ec63e9d144245f4e80e62eb39fc40df8d0edb487d"
+   }
+  ],
+  "imagensConferidas": []
+ }
+}
