@@ -1,0 +1,72 @@
+{
+  "base": "8024a27ba83608afa8606000cde4ce1ff3a99546",
+  "revisadas": [
+    "mao-1351",
+    "mao-1542",
+    "mao-1711",
+    "mao-1717"
+  ],
+  "lacunas": [
+    "mao-0238",
+    "mao-0586",
+    "mao-0816",
+    "mao-0820",
+    "mao-0826",
+    "trauma-0177"
+  ],
+  "checks": {
+    "fixtures": 14,
+    "validarAcervo": "sem erros",
+    "npmTest": "aprovado",
+    "build": "aprovado",
+    "diffCheck": "aprovado"
+  },
+  "logsSha256": {
+    "checks178.log": "5ab07e6efc30c6e8d8ce10118965e33d349f7fd8fcc34a1b6502805d435037f4",
+    "ui178.log": "f6f5d854ec4c6586604ad0d4e32d767f562169a5ae0ef6a00e191c3e10e05506",
+    "aplicacao178.log": "e69a635b9165780216d43b05833e8cbb7c69095c2834cf37b112a66406e9652d",
+    "remotos178-final.json": "34facf828e5cf3855b6b5a24ca79025b613ac8e00ecf36c4aaec022411980195"
+  },
+  "preservacao": "Replay4/4;6comentários pendentes e demais membros/importações preservados. Questões, gabaritos, revisão médica, fontes e imagens intactos; conferido:false.",
+  "figuras": {
+    "arquivosAbertos": 11,
+    "questoesRevisadas": 4,
+    "arquivosDasRevisadas": 5,
+    "questoesPendentesFonte": 6,
+    "semMedidasInventadas": true
+  },
+  "visual": {
+    "casos": 4,
+    "larguras": [
+      390,
+      1440
+    ],
+    "todasFigurasCarregadas": true,
+    "fontesExatas": true,
+    "capturasInspecionadas": [
+      "178-mao-1351-figura-1-0-cel.png",
+      "178-mao-1542-aula-pc.png",
+      "178-mao-1717-aula-cel.png"
+    ]
+  },
+  "fonte": {
+    "id": "rockwood10-45-fraturas-mao",
+    "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+    "leitura": "Resumo integral de674linhas lido nesta passagem e blocos independentes de cada alternativa relidos; sem usar notas contextuais ou comentários antigos como fonte clínica, nem atribuir leitura do livro primário."
+  },
+  "inventario": {
+    "resumos": 37,
+    "ids": 2607,
+    "estados": {
+      "duplicada": 87,
+      "pendente": 599,
+      "pendente-anulada": 9,
+      "pendente-figura-ausente": 2,
+      "pendente-fonte": 388,
+      "pendente-inspecao-imagem": 64,
+      "revisada": 1458
+    }
+  },
+  "proximoLote": 179,
+  "publicacao": "Conferir head/CI, revisão, merge, guarda/deploy e produção no PR; validação local não antecipa publicação."
+}

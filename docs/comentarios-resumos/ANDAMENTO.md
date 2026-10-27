@@ -8,9 +8,9 @@ Gerado por `python3 scripts/comentarios-resumos/catalogo.py atualizar`. Contagen
 | pendente | 599 |
 | pendente-anulada | 9 |
 | pendente-figura-ausente | 2 |
-| pendente-fonte | 382 |
-| pendente-inspecao-imagem | 74 |
-| revisada | 1454 |
+| pendente-fonte | 388 |
+| pendente-inspecao-imagem | 64 |
+| revisada | 1458 |
 
 Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` representa leitura e revisão editorial individual com fonte registrada.
 
@@ -25,7 +25,7 @@ Os capítulos se sobrepõem: não somar as linhas abaixo. Só `revisada` represe
 | Luxação do cotovelo, cabeça do rádio e tríade terrível (`rockwood10-40-cotovelo-cabeca-radio`) | 88 | 0 | 97 |
 | Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi (`rockwood10-42-diafise-radio-ulna`) | 70 | 0 | 34 |
 | Fraturas e luxações do carpo (`rockwood10-44-carpo`) | 90 | 0 | 145 |
-| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 105 | 0 | 142 |
+| Fraturas e luxações da mão (`rockwood10-45-fraturas-mao`) | 109 | 0 | 138 |
 | Fraturas e luxações da coluna cervical (`rockwood10-48-coluna-cervical`) | 84 | 0 | 48 |
 | Fraturas e luxações da coluna toracolombar (`rockwood10-49-fratura-toracolombar`) | 83 | 0 | 45 |
 | Lesões do anel pélvico (`rockwood10-50-anel-pelvico`) | 61 | 0 | 12 |

@@ -6,9 +6,9 @@
   "pendente": 599,
   "pendente-anulada": 9,
   "pendente-figura-ausente": 2,
-  "pendente-fonte": 382,
-  "pendente-inspecao-imagem": 74,
-  "revisada": 1454
+  "pendente-fonte": 388,
+  "pendente-inspecao-imagem": 64,
+  "revisada": 1458
  },
  "resumos": {
   "rockwood10-17-sindrome-compartimental": {
@@ -117,9 +117,9 @@
     "pendente": 98,
     "pendente-anulada": 2,
     "pendente-figura-ausente": 1,
-    "pendente-fonte": 20,
-    "pendente-inspecao-imagem": 17,
-    "revisada": 105
+    "pendente-fonte": 26,
+    "pendente-inspecao-imagem": 7,
+    "revisada": 109
    }
   },
   "rockwood10-48-coluna-cervical": {
@@ -11890,14 +11890,15 @@
    ],
    "prova": "Ortopedia",
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: diagrama palmar do carpo com faixa transversal marcada6. A fonte45 não define ligamento transverso retinacular do punho nem suas inserções para identificar6 e comparar arqueado/pisohamato/intercarpal dorsal/intercarpal palmar. O corpo44 distingue conjuntos palmares/dorsais e arqueado, mas não traz o mapeamento da faixa6 ou anatomia retinacular exigida. Falta fonte anatômica com legenda e inserções completas; gabarito E preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "a1393b50ac04a058706967bab98526e8ff93ffdcc54e1b8de189a1df1f86b848"
+   "questaoSha256": "a1393b50ac04a058706967bab98526e8ff93ffdcc54e1b8de189a1df1f86b848",
+   "pendencia": "Figura aberta: diagrama palmar do carpo com faixa transversal marcada6. A fonte45 não define ligamento transverso retinacular do punho nem suas inserções para identificar6 e comparar arqueado/pisohamato/intercarpal dorsal/intercarpal palmar. O corpo44 distingue conjuntos palmares/dorsais e arqueado, mas não traz o mapeamento da faixa6 ou anatomia retinacular exigida. Falta fonte anatômica com legenda e inserções completas; gabarito E preservado, sem baseResumo."
   },
   "mao-0239": {
    "tema": "mao",
@@ -13063,8 +13064,8 @@
    ],
    "prova": "TARO",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Ressonância aberta: estruturas assinaladas junto à MCF do polegar e complexo colateral. A fonte45 descreve Stener e a interposição da aponeurose do adutor, mas não define Hibbs/Aiche/Gerber para análise própria de A/B/D. Não usar nomes do comentário antigo para inventar lesões ou transferir automaticamente epônimos de outro contexto. Falta fonte comparativa das alternativas e correlação radiológica completa; gabarito C preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -13078,7 +13079,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "34e6f9315ec9081d3206941b039b954aef25e597fad69d53df24c2fc7bf7d296"
+   "questaoSha256": "34e6f9315ec9081d3206941b039b954aef25e597fad69d53df24c2fc7bf7d296",
+   "pendencia": "Ressonância aberta: estruturas assinaladas junto à MCF do polegar e complexo colateral. A fonte45 descreve Stener e a interposição da aponeurose do adutor, mas não define Hibbs/Aiche/Gerber para análise própria de A/B/D. Não usar nomes do comentário antigo para inventar lesões ou transferir automaticamente epônimos de outro contexto. Falta fonte comparativa das alternativas e correlação radiológica completa; gabarito C preservado, sem baseResumo."
   },
   "mao-0587": {
    "tema": "mao",
@@ -15069,8 +15071,8 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Esquema aberto: base do quinto ressecada e fixação transversal entre quarto e quinto metacarpos, compatível com a descrição independente de Dubert. Porém, a fonte45 não descreve os procedimentos Green/Jupiter/Gilbert/Weckesser para comparar A/C/D/E individualmente. Reconhecer o desenho correto não valida os quatro epônimos restantes. Falta fonte técnica com autoria e diferenças de cada procedimento listado; gabarito B preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -15084,7 +15086,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "815c6eaa0cadaf54e467b532a5226cf378d6e592bfc5a1c2dd165d04bed29066"
+   "questaoSha256": "815c6eaa0cadaf54e467b532a5226cf378d6e592bfc5a1c2dd165d04bed29066",
+   "pendencia": "Esquema aberto: base do quinto ressecada e fixação transversal entre quarto e quinto metacarpos, compatível com a descrição independente de Dubert. Porém, a fonte45 não descreve os procedimentos Green/Jupiter/Gilbert/Weckesser para comparar A/C/D/E individualmente. Reconhecer o desenho correto não valida os quatro epônimos restantes. Falta fonte técnica com autoria e diferenças de cada procedimento listado; gabarito B preservado, sem baseResumo."
   },
   "mao-0820": {
    "tema": "mao",
@@ -15094,14 +15097,15 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Figura aberta: perfil esquemático da MCF fletida, trajetória penetrante e relação entre pele/aparelho extensor/cápsula/osso. O resumo45 não descreve a migração relativa dessas lesões ao estender a MCF após soco na boca, necessária à ordem proximal–distal das cinco opções. Não confundir profundidade inicial dos planos com posição das lesões após extensão; séries de fratura exposta da mão em geral não fundamentam mordida humana. Falta fonte específica de fight bite com anatomia dinâmica da ferida; gabarito B preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "795cb1bfba21f0e98185df19146f149b698de6b9b2df26945839ee7a57f902a4"
+   "questaoSha256": "795cb1bfba21f0e98185df19146f149b698de6b9b2df26945839ee7a57f902a4",
+   "pendencia": "Figura aberta: perfil esquemático da MCF fletida, trajetória penetrante e relação entre pele/aparelho extensor/cápsula/osso. O resumo45 não descreve a migração relativa dessas lesões ao estender a MCF após soco na boca, necessária à ordem proximal–distal das cinco opções. Não confundir profundidade inicial dos planos com posição das lesões após extensão; séries de fratura exposta da mão em geral não fundamentam mordida humana. Falta fonte específica de fight bite com anatomia dinâmica da ferida; gabarito B preservado, sem baseResumo."
   },
   "mao-0823": {
    "tema": "mao",
@@ -15135,14 +15139,15 @@
    ],
    "prova": "INTO",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Fotografia cirúrgica aberta: reconstrução com tecido tendíneo na região trapeziometacarpiana. A fonte45 menciona artroplastia como salvamento, mas não detalha Weilby/Eaton/Zancolli/Thompson/Burton–Pellegrini, seus tendões, túneis e interposições. A imagem isolada não prova autoria nem permite completar os distratores. Falta fonte operatória comparativa e legenda primária; gabarito B preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [],
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "5d3997c528b05b63899000a16d362789a807bc2c1cdfc8ac0d4fc10feb90a2b9"
+   "questaoSha256": "5d3997c528b05b63899000a16d362789a807bc2c1cdfc8ac0d4fc10feb90a2b9",
+   "pendencia": "Fotografia cirúrgica aberta: reconstrução com tecido tendíneo na região trapeziometacarpiana. A fonte45 menciona artroplastia como salvamento, mas não detalha Weilby/Eaton/Zancolli/Thompson/Burton–Pellegrini, seus tendões, túneis e interposições. A imagem isolada não prova autoria nem permite completar os distratores. Falta fonte operatória comparativa e legenda primária; gabarito B preservado, sem baseResumo."
   },
   "mao-0828": {
    "tema": "mao",
@@ -19548,8 +19553,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2025,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -19563,7 +19568,31 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "278e1d886ec1d5591b8604db0bbcd854bc57ea615112535b2d33f0a6ec3df2a0"
+   "questaoSha256": "278e1d886ec1d5591b8604db0bbcd854bc57ea615112535b2d33f0a6ec3df2a0",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "75d3ca0386d22bdef6eb3abd9a1f21eb3a0f2fb1ca31649aaa4f4d002c20bf67"
+     }
+    ],
+    "questaoSha256": "278e1d886ec1d5591b8604db0bbcd854bc57ea615112535b2d33f0a6ec3df2a0",
+    "comentarioSha256": "659dd7f521bbaedb51d683998190fe420f178dbb9e69e816f4d7a9dd9e0c834c"
+   }
   },
   "mao-1365": {
    "tema": "mao",
@@ -20813,8 +20842,8 @@
    ],
    "prova": "USP-SP",
    "ano": 2026,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -20828,7 +20857,32 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "85fb7279c170b8286d7fef0a2199525ad05d514a09a91b1a49b700cae8c0dc71"
+   "questaoSha256": "85fb7279c170b8286d7fef0a2199525ad05d514a09a91b1a49b700cae8c0dc71",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Fratura-luxação da IFP e base da falange média"
+      ],
+      "blocos": [
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+       "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "52a963f05b272af91b09b243a295096cf7317e5939ed4213780e8cca5524a269"
+     }
+    ],
+    "questaoSha256": "85fb7279c170b8286d7fef0a2199525ad05d514a09a91b1a49b700cae8c0dc71",
+    "comentarioSha256": "2e164330a04a61bb8e926ec361bee7e699ebe4958493a4f1bdee488c8939ca6a"
+   }
   },
   "mao-1543": {
    "tema": "mao",
@@ -23685,8 +23739,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -23700,7 +23754,35 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "b2815b21e3b8e605d20c4618a8581f75d95d9505b7061c03ea9a2acc1bbcb87b"
+   "questaoSha256": "b2815b21e3b8e605d20c4618a8581f75d95d9505b7061c03ea9a2acc1bbcb87b",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "O que vale para a mão inteira",
+       "Metacarpos: tolerância de desvio, colo do quinto e fixação",
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "o-que-vale-para-a-mao-inteira-efc0ddd3",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+       "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "5b236451b654ab2f6fab234d3166a3027b9719b038cd47df7912ec4c32e09fbd"
+     }
+    ],
+    "questaoSha256": "b2815b21e3b8e605d20c4618a8581f75d95d9505b7061c03ea9a2acc1bbcb87b",
+    "comentarioSha256": "c57e9e1af8722399fbba4059ed607ca5222c7b11c4bf0f5fcbe46a140775b8c3"
+   }
   },
   "mao-1712": {
    "tema": "mao",
@@ -24007,8 +24089,8 @@
    ],
    "prova": null,
    "ano": null,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "revisada",
+   "motivo": "",
    "temComentario": true,
    "citacoes": [
     {
@@ -24022,7 +24104,35 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "9bc72d9404ea6c185b6654a6e3ac64403734bb0122b4db2a914ec3e6dd14fe66"
+   "questaoSha256": "9bc72d9404ea6c185b6654a6e3ac64403734bb0122b4db2a914ec3e6dd14fe66",
+   "baseResumo": {
+    "tipo": "resumo",
+    "versao": 1,
+    "fontes": [
+     {
+      "resumo": "rockwood10-45-fraturas-mao",
+      "titulo": "Fraturas e luxações da mão",
+      "livro": "Rockwood and Green's Fractures in Adults",
+      "edicao": "10ª edição (2025)",
+      "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+      "secoes": [
+       "Base do polegar: Bennett, Rolando e a luxação da CMC",
+       "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+      ],
+      "blocos": [
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+       "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+       "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea"
+      ],
+      "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+      "trechosSha256": "2ed0737db9d99888c80b957ed60ca92542d08eef54716eaf7be563425d09d306"
+     }
+    ],
+    "questaoSha256": "9bc72d9404ea6c185b6654a6e3ac64403734bb0122b4db2a914ec3e6dd14fe66",
+    "comentarioSha256": "6f5ebcfcae64966a5db3937b7392126ccd0af010480659cc6ccc967507e15fe4"
+   }
   },
   "mao-1718": {
    "tema": "mao",
@@ -59133,8 +59243,8 @@
    ],
    "prova": "TEOT",
    "ano": 2022,
-   "estado": "pendente-inspecao-imagem",
-   "motivo": "Abrir imagens antes da revisão.",
+   "estado": "pendente-fonte",
+   "motivo": "Radiografia aberta: fratura na base do primeiro metacarpo. A fonte45 descreve padrões Bennett e Rolando, mas não a classificação de GREEN pedida, nem a correspondência dos tipos I–IV com esses padrões. Não atribuir um número por inferência a partir do aspecto articular ou do comentário antigo. Falta a tabela da versão de Green adotada pela prova com os quatro tipos e correlação radiográfica; gabarito A preservado, sem baseResumo.",
    "temComentario": true,
    "citacoes": [
     {
@@ -59148,7 +59258,8 @@
    "resumosCandidatos": [
     "rockwood10-45-fraturas-mao"
    ],
-   "questaoSha256": "73c6e1ae9d90f0396abf3638fcb2d1a76057256710ba02f97c238db83dc50473"
+   "questaoSha256": "73c6e1ae9d90f0396abf3638fcb2d1a76057256710ba02f97c238db83dc50473",
+   "pendencia": "Radiografia aberta: fratura na base do primeiro metacarpo. A fonte45 descreve padrões Bennett e Rolando, mas não a classificação de GREEN pedida, nem a correspondência dos tipos I–IV com esses padrões. Não atribuir um número por inferência a partir do aspecto articular ou do comentário antigo. Falta a tabela da versão de Green adotada pela prova com os quatro tipos e correlação radiográfica; gabarito A preservado, sem baseResumo."
   },
   "trauma-0178": {
    "tema": "trauma",

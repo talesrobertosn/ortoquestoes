@@ -1,0 +1,164 @@
+{
+  "mao-1351": {
+    "questaoSha256": "278e1d886ec1d5591b8604db0bbcd854bc57ea615112535b2d33f0a6ec3df2a0",
+    "comentarioAnteriorSha256": "f2d4c6e87ed15a2fd36cc4f7ea4f6100137dc238efe722b6f6be4f889841e36a",
+    "comentario": {
+      "conceito": "As duas fotografias mostram a unha traumatizada, com deslocamento da sua região proximal e ferida na prega ungueal. Depois do esmagamento na porta, não se trata apenas de cobrir um hematoma: é preciso **expor e avaliar o leito ungueal, reparando a laceração**. Entre as opções, isso corresponde à retirada da unha para exploração e sutura.\n\nA unha e o leito têm funções diferentes. O leito precisa de continuidade reparada; a placa ungueal pode depois ser recolocada sob a prega, ajudando a mantê-la aberta e servindo de suporte. Retirar a unha e deixá-la de fora, sem tratar o leito, não cumpre esse objetivo.\n\nO resumo descreve lesões da polpa e do leito após esmagamento e recomenda radiografia quando há suspeita de lesão óssea. Aqui foram fornecidas fotografias clínicas, não radiografias: não se confirmou uma fratura nem se inventou seu tipo a partir delas. A conduta oferecida trata a lesão ungueal visível, sem dispensar a avaliação das lesões associadas. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 45, seção Tufo, diáfise e leito ungueal.",
+      "correta": "Correta: D (retirada da unha para exploração e sutura do leito ungueal). Permite identificar a extensão da lesão e reparar a estrutura que não é tratada por curativo isolado. A fonte também descreve recolocar a unha sob a prega depois do reparo.",
+      "incorretas": {
+        "A": "Curativo protege a superfície, mas não expõe nem aproxima um leito lacerado sob uma unha deslocada. Seria insuficiente para o padrão aberto e ungueal mostrado; não deve ser confundido com o tratamento de uma lesão fechada e alinhada.",
+        "B": "A retirada melhora o acesso, mas parar no curativo deixa a lesão do leito sem tratamento. A sequência descrita pela fonte inclui lavar, explorar, suturar o leito e reposicionar a unha, conforme as estruturas atingidas.",
+        "C": "Reposicionar o leito não substitui inspecionar e suturar suas lacerações. A palavra apenas omite o reparo da continuidade e a avaliação sob a placa ungueal, que são o motivo da exploração neste trauma."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Falange distal: tufo, martelo ósseo, jersey e Seymour."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+        ],
+        "blocos": [
+          "falange-distal-tufo-martelo-osseo-jersey-e-seymo-472e9a70",
+          "falange-distal-tufo-martelo-osseo-jersey-e-seymo-c5ef72de"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "75d3ca0386d22bdef6eb3abd9a1f21eb3a0f2fb1ca31649aaa4f4d002c20bf67"
+      }
+    ],
+    "imagensConferidas": [
+      "mao/usp-sp-2025-q069-1.webp",
+      "mao/usp-sp-2025-q069-2.webp"
+    ]
+  },
+  "mao-1542": {
+    "questaoSha256": "85fb7279c170b8286d7fef0a2199525ad05d514a09a91b1a49b700cae8c0dc71",
+    "comentarioAnteriorSha256": "29ff3b996429e721fca2ade898e3e8044974c1c2821acd59d2439ce967094e3c",
+    "comentario": {
+      "conceito": "As radiografias mostram uma **fratura articular cominutiva da base da falange média**, com desorganização da interfalângica proximal. A reconstrução precisa buscar uma articulação estável que volte a deslizar, sem acrescentar dissecção excessiva às partes moles. O resumo indica preferencialmente **tração esquelética dinâmica** para o padrão em pilão.\n\nCom carga axial de alta energia, a base pode sofrer depressão, cominuição e alargamento. A ligamentotaxia usa a tração transmitida pelas partes moles para ajudar a recuperar a relação dos fragmentos, enquanto o sistema permite movimento. É uma estratégia diferente de tentar fixar diretamente cada pequeno fragmento.\n\nA fonte ressalva que uma imagem simples pode subestimar a gravidade e que a tomografia ajuda a definir o padrão. Não foi calculada porcentagem de superfície articular nem um ângulo na imagem apresentada. A indicação decorre do padrão cominutivo e articular, não de uma medida inventada. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 45, seções Fratura em pilão e Quando a borda volar não tem conserto.",
+      "correta": "Correta: B (tração esquelética dinâmica com fios e elásticos ou mini fixadores). A distração por ligamentotaxia ajuda a reduzir os fragmentos e permite mobilização da IFP. É a preferência descrita para a fratura em pilão com grande desorganização articular.",
+      "incorretas": {
+        "A": "Fios podem fixar padrões e fragmentos selecionados, mas prender apenas os maiores não garante reconstruir a superfície cominutiva nem permitir o deslizamento. O resumo reserva a fixação direta para situações adequadas ao tamanho e à organização dos fragmentos e prefere a tração dinâmica no pilão.",
+        "C": "Placas fornecem fixação rígida e há séries favoráveis, mas a redução aberta do pilão é evitada pelos autores pelo risco para as partes moles. Não é uma proibição universal de placas: entre as opções, a estratégia preferida evita impor ampla dissecção a essa cominuição.",
+        "D": "A imobilização isolada não recupera de forma previsível a relação articular desse padrão. A fonte relata mau resultado conservador do pilão, com desvio e rotação residuais. Estabilidade suficiente para mobilizar difere de simplesmente manter o dedo parado entre talas."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Fratura-luxação da IFP e base da falange média."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Fratura-luxação da IFP e base da falange média"
+        ],
+        "blocos": [
+          "fratura-luxacao-da-ifp-e-base-da-falange-media-b5aafe3f",
+          "fratura-luxacao-da-ifp-e-base-da-falange-media-bfa71382",
+          "fratura-luxacao-da-ifp-e-base-da-falange-media-00dae763"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "52a963f05b272af91b09b243a295096cf7317e5939ed4213780e8cca5524a269"
+      }
+    ],
+    "imagensConferidas": [
+      "mao/usp-sp-2026-q020-1.png"
+    ]
+  },
+  "mao-1711": {
+    "questaoSha256": "b2815b21e3b8e605d20c4618a8581f75d95d9505b7061c03ea9a2acc1bbcb87b",
+    "comentarioAnteriorSha256": "f79c533a9f33e18fd8a29fe45076a8e56b52b5d5da2b57899b21a28ba4e4a95f",
+    "comentario": {
+      "conceito": "As fotografias mostram **cruzamento dos dedos na flexão composta**, o scissoring. Esse é o achado que revela malrotação. O exame da mão aberta pode esconder o problema; fechar os dedos torna visível que um deles invade a trajetória do vizinho.\n\nO resumo recomenda comparar a cascata dos dedos, o perfil das unhas e a mão contralateral. Na flexão, os dedos devem apontar para o tubérculo do escafoide. Quando a dor impede a flexão ativa, bloqueio digital e efeito tenodese podem ajudar a avaliar o alinhamento.\n\nEncurtamento, angulação e rotação não são deformidades equivalentes. O encurtamento pode gerar déficit de extensão; a angulação sagital pode produzir pseudogarra. A rotação, por sua vez, faz o dedo cruzar outro na função. A imagem permite reconhecer esse sinal, sem medir um grau de rotação ou inventar o nível exato de uma fratura. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 45, seções Como examinar a rotação, Tolerância de desvio e Pseudogarra.",
+      "correta": "Correta: A (malrotação). O cruzamento durante a flexão é a manifestação funcional da rotação inadequada. A avaliação precisa considerar a mão oposta e a cascata, sem depender apenas do aspecto em extensão.",
+      "incorretas": {
+        "B": "O encurtamento altera o equilíbrio de comprimento dos tendões e pode causar déficit de extensão. Isso não explica, isoladamente, a mudança de trajetória com sobreposição entre dedos vista na flexão.",
+        "C": "A angulação sagital muda a posição da cabeça e pode levar a hiperextensão compensatória da MCF com flexão da IFP, a pseudogarra. Esse desequilíbrio no plano de flexão e extensão é diferente do cruzamento lateral próprio da malrotação.",
+        "D": "A falha do extensor terminal produz queda da interfalângica distal por ação do flexor profundo sem oposição, como no dedo em martelo. Não é o mecanismo de um dedo atravessar a trajetória do vizinho durante a flexão composta."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: O que vale para a mão inteira; Metacarpos: tolerância de desvio, colo do quinto e fixação; Falange distal: tufo, martelo ósseo, jersey e Seymour."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "O que vale para a mão inteira",
+          "Metacarpos: tolerância de desvio, colo do quinto e fixação",
+          "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+        ],
+        "blocos": [
+          "o-que-vale-para-a-mao-inteira-efc0ddd3",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
+          "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
+          "falange-distal-tufo-martelo-osseo-jersey-e-seymo-fe9ef15c"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "5b236451b654ab2f6fab234d3166a3027b9719b038cd47df7912ec4c32e09fbd"
+      }
+    ],
+    "imagensConferidas": [
+      "mao/mao-1711-1.jpeg"
+    ]
+  },
+  "mao-1717": {
+    "questaoSha256": "9bc72d9404ea6c185b6654a6e3ac64403734bb0122b4db2a914ec3e6dd14fe66",
+    "comentarioAnteriorSha256": "744947907122416cc2c60e57ea40cdd4534383c66719894db89641dd5753627f",
+    "comentario": {
+      "conceito": "No painel **B**, a superfície articular da base do primeiro metacarpo está dividida em fragmentos e separada da diáfise: é o padrão de **Rolando**, uma fratura articular completa. O painel A ilustra o contraste com o padrão parcial de Bennett.\n\nNa Bennett, um fragmento volar-ulnar permanece preso ao trapézio pelo ligamento oblíquo anterior, enquanto o restante do metacarpo se desloca. Na Rolando, o traço em Y ou T e a cominuição tornam completa a separação da superfície em relação à diáfise. O mecanismo da base do polegar envolve carga axial com o polegar fletido; na Rolando, o resumo destaca maior energia.\n\nA classificação anatômica ajuda a planejar a redução, mas a figura é um esquema e não permite medir desvio ou decidir um implante específico. O objetivo terapêutico descrito é redução concêntrica da CMC, com técnica escolhida conforme o tamanho dos fragmentos e a cominuição. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 45, seções Bennett, Rolando e Tratamento das fraturas da base.",
+      "correta": "Correta: B (Rolando). O traço envolve a base articular completa, sem continuidade entre a superfície e a diáfise. Essa é a diferença decisiva em relação à Bennett parcial do outro painel.",
+      "incorretas": {
+        "A": "Bennett é articular parcial: o pequeno fragmento volar-ulnar fica preso e o restante do metacarpo sai da articulação. Esse arranjo não corresponde ao painel B, no qual a superfície está dividida e separada da diáfise.",
+        "C": "Seymour envolve a base da falange distal, tipicamente com lesão epifisária e interposição do leito ungueal. Sua anatomia e a relação com a unha são distintas da fratura da base do metacarpo junto à CMC mostrada aqui.",
+        "D": "Uma fratura extra-articular preservaria a superfície articular como parte não atravessada pelo traço. No esquema B, o traço divide justamente a superfície da base; chamar o padrão de extra-articular perderia sua característica central."
+      },
+      "referencias": [
+        "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Base do polegar: Bennett, Rolando e a luxação da CMC; Falange distal: tufo, martelo ósseo, jersey e Seymour."
+      ],
+      "conferido": false
+    },
+    "fontes": [
+      {
+        "resumo": "rockwood10-45-fraturas-mao",
+        "titulo": "Fraturas e luxações da mão",
+        "livro": "Rockwood and Green's Fractures in Adults",
+        "edicao": "10ª edição (2025)",
+        "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
+        "secoes": [
+          "Base do polegar: Bennett, Rolando e a luxação da CMC",
+          "Falange distal: tufo, martelo ósseo, jersey e Seymour"
+        ],
+        "blocos": [
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-423d0f0d",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-cb64e904",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-f09898ea",
+          "base-do-polegar-bennett-rolando-e-a-luxacao-da-c-07e9aa40",
+          "falange-distal-tufo-martelo-osseo-jersey-e-seymo-00e7e3ea"
+        ],
+        "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
+        "trechosSha256": "2ed0737db9d99888c80b957ed60ca92542d08eef54716eaf7be563425d09d306"
+      }
+    ],
+    "imagensConferidas": [
+      "mao/mao-1717-1.jpeg"
+    ]
+  }
+}
