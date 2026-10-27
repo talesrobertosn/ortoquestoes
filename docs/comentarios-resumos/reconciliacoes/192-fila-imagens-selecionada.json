@@ -1,0 +1,121 @@
+{
+  "proximoLote": 192,
+  "revisaoAplicada": false,
+  "candidatos": {
+    "pediatria-0535": {
+      "questaoSha256": "909d0f5779bf64bf39fba9ce3214bb873ac587b635c87a54c4a8af52d4f7b434",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0535-1.jpeg",
+          "sha256": "d4aae712109cc00ea270cbd1d80cfbcadeff6f246e5853d841de3ffd1d5f34e2",
+          "aberta": true
+        }
+      ],
+      "observacao": "Desenho de avulsão da eminência tibial com elevação anterior e continuidade posterior aparente;fíbula à direita. Resumos25/26/27/29 não definem todos os tiposMeyersMcKeever;sem revisão concluída."
+    },
+    "pediatria-0847": {
+      "questaoSha256": "5f68706cdb430c733ada15340d20b22dca78be7ea2744aff9ee2b0ea67eb1bbd",
+      "imagens": [
+        {
+          "arquivo": "pediatria/pediatria-0847-m1.png",
+          "sha256": "ab19a5fd227924ee654cad79f13cb2dba6a4bfbec4acea6954ccb1ffa3a89d18",
+          "aberta": true
+        }
+      ],
+      "observacao": "Perfil do joelho com fragmento avulsionado da tuberosidade e prolongamento epifisário;oficialC. Necessário documentar com segurança a extensão articular e os quatro tiposI–IV antes de selar;inspeção feita,sem aplicação."
+    },
+    "pediatria-0959": {
+      "questaoSha256": "c5b7a055472ca98f6aebb338134906e2db792103c3b8d1bc79bd506f69e832bc",
+      "imagens": [
+        {
+          "arquivo": "tepop-2024-061.png",
+          "sha256": "df420cb692a6e1a115c0acd2265a5293437814a6ea41617581d5fbc14a6c1e04",
+          "aberta": true
+        }
+      ],
+      "observacao": "Montagem de quatro radiografias:Iperna de3anos,IItórax de9meses,IIIcotovelo de5anos,IVúmero de4meses. Demanda fonte própria para correlacionar cada lesão e contexto com mecanismo/maus-tratos;fêmur e tíbia não bastam. Sem novo diagnóstico de abuso por imagem isolada."
+    },
+    "joelho-0101": {
+      "questaoSha256": "bc2b22179fe0c7dfe4a635bd08bc28f94f997038c954cb4c94ac3047948c3dad",
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0101-1.jpeg",
+          "sha256": "5e2f12a4e9e3a45e2b90ae9b7a743ca908851444b90a9d6300f807c59fd94abd",
+          "aberta": true
+        }
+      ],
+      "observacao": "Desenho em dois painéis de reconstrução lateral,com trajetos femorais,fibular e tibial;comparar detalhes deLaPrade comLarson/Clancy/Hughston em fonte independente antes de selar."
+    },
+    "trauma-1023": {
+      "questaoSha256": "076263f30e98518717ba810ef90fe7d6406ae737ff4af203d5db5265f1f88de0",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-1023-1.jpeg",
+          "sha256": "1669cc62dec89c0d581e265c0ddb5ea9fe7eaef11f1dd1fa8a7b4e514dd4831d",
+          "aberta": true
+        }
+      ],
+      "observacao": "Vista posterior da perna;seta amarela aponta área triangular azul na tíbia proximal,acima da área extensa vermelha. Necessária fonte para inserção do poplíteo e anatomia própria dos três distratores."
+    },
+    "trauma-1026": {
+      "questaoSha256": "493424075bae5053fb0cb3815d5e17e162032ed46213267d6c28598c76e20adf",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-1026-1.jpeg",
+          "sha256": "d132fc5b6c03b3dc3599df587ef0decc58e22d7631fbec2346d35d44462286cf",
+          "aberta": true
+        }
+      ],
+      "observacao": "Vista posterior do joelho;seta1em tendão delgado medial,2em estrutura medial mais larga/profunda com expansões. Conferirsemite/semimembrana e diferenças de grácil/sartório pela fonte,sem usar comentário antigo."
+    },
+    "trauma-1035": {
+      "questaoSha256": "75f6838e7c086f4945926b4e1ce7d63063cbecb098f405320344006bb505183b",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-1035-1.jpeg",
+          "sha256": "495d1988d98ec94b8fbad0bd69718f2bcc83afee4c76acd18594a80dd33526fc",
+          "aberta": true
+        }
+      ],
+      "observacao": "Fotografia de posicionamento em pé,joelhos fletidos;figura indica45graus e feixe10graus. CompararRosenberg versusInsall/Merchant/Hughston com fonte que defina incidências,e não só nota de prova."
+    },
+    "mao-1298": {
+      "questaoSha256": "065fe5c86aa3d52d242d6c6cf5623988197bb77165f15b58fde5a1e6c5c4c3ec",
+      "imagens": [
+        {
+          "arquivo": "mao/usp-sp-2025-q016-2.webp",
+          "sha256": "d4a4f853bbc49a7eddf2b31b4b64d5962c0ad236c005ece2219368ffea5d9018",
+          "aberta": true
+        },
+        {
+          "arquivo": "mao/usp-sp-2025-q016-3.webp",
+          "sha256": "64c5b1fc3d4be028c90a86fdc615de4fed0a08b95ebf99e93e1379e840f81fb1",
+          "aberta": true
+        }
+      ],
+      "observacao": "Duas radiografias abertas:PA com alteração da congruência daMCP do indicador;perfil com luxação dorsal da falange proximal em relação à cabeça metacarpiana. ConferirKaplan,interposição,polias e lado do feixe digital na fonte45."
+    },
+    "mao-1508": {
+      "questaoSha256": "637c79bd98858d2b37f30298a06c6cecb0360ee9f098a84a54a7528f40218b5b",
+      "imagens": [
+        {
+          "arquivo": "mao/usp-sp-2024-q106-1.webp",
+          "sha256": "8d501a3b3b80984d8ed362d626203ddbdb601b7e0e4ba84d01df33f5255c69eb",
+          "aberta": true
+        }
+      ],
+      "observacao": "Fotografia intraoperatória palmar do indicador com detalhe ampliado;seta preta aponta superfície branca arredondada cartilaginosa na ferida. Diferenciar cabeça do segundo metacarpiano de placa volar,poliaA1 e banda pré-tendinosa usando fonte45."
+    },
+    "mao-1550": {
+      "questaoSha256": "a56012e01f003fbbfb5de1744160b1d9d3d637c8a3e491bb31b762f795d1bb7e",
+      "imagens": [
+        {
+          "arquivo": "mao/usp-sp-2026-q028-1.png",
+          "sha256": "4aefcccfc32b0ab6d8ef2cfd14189bae04a7d74fcc050fbf07dfff14bfef4f22",
+          "aberta": true
+        }
+      ],
+      "observacao": "PA eperfil do punho direito abertos;diástase escafossemilunar visível emPA sem estresse indicado,alteração do alinhamento no perfil. Não inferirredutibilidade ouestado cartilaginoso completo só da foto. Fonte44 deve sustentar estático/dinâmico e escolha reconstrutiva versusartrodese."
+    }
+  }
+}
