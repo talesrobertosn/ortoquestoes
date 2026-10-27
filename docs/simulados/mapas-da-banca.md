@@ -3810,3 +3810,20 @@ de grama.
 da fíbula. SBOT-SP (`0615`): TILLAUX "III ou IV"; o capítulo diz III.
 
 **Aproveitamento:** `pediatria-1153` a `pediatria-1167`, 15 questões, gabarito A4/B4/C4/D3, mediana de 3.047 caracteres.
+
+## Fraturas da pelve e do acetábulo na criança, Rockwood and Wilkins 10ª ed., cap. 23
+
+**Recorte.** Busca por pelve, acetábulo, trirradiada, TORODE e ZIEG, avulsões, sínfise e sacro em Ortopedia pediátrica, todas as provas.
+A banca cobra quase só TORODE e ZIEG (TARO 2022 `pediatria-0567`, TARO 2017 `0620`, TARO 2019 `0645`, TARO 2012 `0660`, TARO 2014 `0694`),
+a avulsão da espinha anteroinferior (TEOT 2021 `0845`), a fusão da trirradiada (TARO 2017 `0613`) e generalidades (TEPOP 2024 `0947`).
+
+**Forma.** Enunciados curtos de classificação e de idade.
+
+**Lacunas com cara de prova (projeção).** IIIB estável mas grave; frequência das avulsões; avulsão isquiática e cirurgia; BUCHOLZ; displasia
+pós-traumática (lateralização e retroversão); morte pelo traumatismo craniano; sínfise (2,5 cm, 15 graus); straddle sem cinta; assimetria
+de 1,1 cm (SMITH); inlet e outlet; ressonância no acetábulo; VAN NECK; SILBER e FLYNN; vias do acetábulo.
+
+**Divergências.** TARO 2022 (`0567`): gabarito IIIB e IV instáveis; o capítulo chama o IIIB de estável, embora grave. TARO 2014 (`0694`): o
+capítulo não dá a complicação mais frequente do tipo III.
+
+**Aproveitamento:** `pediatria-1168` a `pediatria-1181`, 14 questões, gabarito A4/B4/C3/D3, mediana de 2.895 caracteres.
