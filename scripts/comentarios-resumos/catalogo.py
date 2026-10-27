@@ -119,7 +119,9 @@ def gravar_catalogo():
 def exportar(a):
     qs, cs, bib, caps, mapa = dados()
     d = inventario()
-    fila = [(i,x) for i,x in d['questoes'].items() if x['estado'] in ('pendente','revalidar') and (not a.capitulo or a.capitulo in x['resumosCandidatos'])]
+    # --com-lacunas reabre as pendências já anotadas (fonte, imagem, anulada): é o caminho quando chega resumo novo.
+    estados = ('pendente','revalidar') + (('pendente-fonte','pendente-inspecao-imagem','pendente-anulada') if a.com_lacunas else ())
+    fila = [(i,x) for i,x in d['questoes'].items() if x['estado'] in estados and (not a.capitulo or a.capitulo in x['resumosCandidatos'])]
     fila.sort(key=lambda par:(bool(cs.get(par[0])), not bool(par[1]['citacoes']), par[0]))
     itens = [{'id':i,'questao':qs[i][1],'comentarioAtual':cs.get(i),'catalogo':x} for i,x in fila[:a.limite]]
     ids = sorted({c for x in itens for c in x['catalogo']['resumosCandidatos']})
@@ -132,7 +134,7 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     sub=ap.add_subparsers(dest='acao',required=True)
     sub.add_parser('atualizar')
-    exp=sub.add_parser('exportar'); exp.add_argument('--capitulo'); exp.add_argument('--limite',type=int,default=10); exp.add_argument('--saida',type=Path,required=True)
+    exp=sub.add_parser('exportar'); exp.add_argument('--capitulo'); exp.add_argument('--limite',type=int,default=10); exp.add_argument('--saida',type=Path,required=True); exp.add_argument('--com-lacunas',action='store_true')
     a=ap.parse_args()
     if a.acao=='atualizar': gravar_catalogo()
     else: exportar(a)
